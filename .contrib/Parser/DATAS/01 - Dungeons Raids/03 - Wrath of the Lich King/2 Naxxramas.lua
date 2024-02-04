@@ -62,6 +62,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },
 					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },
 					["cost"] = {
 						{ "i", 12363, 5 },	-- 5x Arcane Crystal
@@ -80,6 +81,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
 					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },
 					["cost"] = {
 						{ "i", 12363, 2 },	-- 2x Arcane Crystal
@@ -106,55 +108,56 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				ach(18557),	-- Never Bothered, Anyway
 				ach(18616, {	-- Putting Wilhelm Out of Business
-					crit(1, {	-- Omarion's Notes - Pages 1 & 2
+					crit(60649, {	-- Omarion's Notes - Pages 1 & 2
 						["_quests"] = { 76291 },
 					}),
-					crit(2, {	-- Omarion's Notes - Pages 3 & 4
+					crit(60650, {	-- Omarion's Notes - Pages 3 & 4
 						["_quests"] = { 76292 },
 					}),
-					crit(3, {	-- Omarion's Notes - Pages 5 & 6
+					crit(60651, {	-- Omarion's Notes - Pages 5 & 6
 						["_quests"] = { 76293 },
 					}),
-					crit(4, {	-- Omarion's Notes - Pages 7 & 8
+					crit(60652, {	-- Omarion's Notes - Pages 7 & 8
 						["_quests"] = { 76294 },
 					}),
-					crit(5, {	-- Omarion's Notes - Pages 9 & 10
+					crit(60653, {	-- Omarion's Notes - Pages 9 & 10
 						["_quests"] = { 76295 },
 					}),
-					crit(6, {	-- Omarion's Notes - Pages 11 & 12
+					crit(60654, {	-- Omarion's Notes - Pages 11 & 12
 						["_quests"] = { 76296 },
 					}),
-					crit(7, {	-- Omarion's Notes - Pages 13 & 14
+					crit(60655, {	-- Omarion's Notes - Pages 13 & 14
 						["_quests"] = { 76297 },
 					}),
-					crit(8, {	-- Omarion's Notes - Pages 15 & 16
+					crit(60656, {	-- Omarion's Notes - Pages 15 & 16
 						["_quests"] = { 76298 },
 					}),
-					crit(9, {	-- Omarion's Notes - Pages 17 & 18
+					crit(60657, {	-- Omarion's Notes - Pages 17 & 18
 						["_quests"] = { 76299 },
 					}),
-					crit(10, {	-- Omarion's Notes - Pages 19 & 20
+					crit(60658, {	-- Omarion's Notes - Pages 19 & 20
 						["_quests"] = { 76300 },
 					}),
-					crit(11, {	-- Omarion's Notes - Pages 21 & 22
+					crit(60659, {	-- Omarion's Notes - Pages 21 & 22
 						["_quests"] = { 76301 },
 					}),
-					crit(12, {	-- Omarion's Notes - Pages 23 & 24
+					crit(60660, {	-- Omarion's Notes - Pages 23 & 24
 						["_quests"] = { 76302 },
 					}),
-					crit(13, {	-- Omarion's Notes - Pages 25 & 26
+					crit(60661, {	-- Omarion's Notes - Pages 25 & 26
 						["_quests"] = { 76303 },
 					}),
-					crit(14, {	-- Omarion's Notes - Pages 27 & 28
+					crit(60662, {	-- Omarion's Notes - Pages 27 & 28
 						["_quests"] = { 76304 },
 					}),
-					crit(15, {	-- Omarion's Notes - Pages 29 & 30
+					crit(60663, {	-- Omarion's Notes - Pages 29 & 30
 						["_quests"] = { 76305 },
 					}),
-					crit(16, {	-- Omarion's Notes - Pages 31 & 32
+					crit(60664, {	-- Omarion's Notes - Pages 31 & 32
 						["_quests"] = { 76306 },
 					}),
 				}),
+				ach(11750, {["timeline"] = {ADDED_7_2_0}}),	-- Undying Aesthetic (Naxxramas)
 			})),
 			n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				i(206375, {	-- Corruptor's Scourgestone
@@ -215,6 +218,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["repeatable"] = true,
 					["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+					["g"] = {
+						i(DEATHS_BARGAINING_CHIP),
+					},
+				}),
+				q(77245, {	-- Many Invader's Scourgestones
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
+					["repeatable"] = true,
+					["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
 					["g"] = {
 						i(DEATHS_BARGAINING_CHIP),
 					},
@@ -1175,48 +1187,64 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["g"] = {
 						i(206573, {	-- Dented Raider's Belt
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206609),	-- Lamented Crusader's Belt
 							},
 						}),
 						i(206575, {	-- Dented Raider's Boots
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
+								i(10402),	-- Blackened Defias Boots
 								i(206611),	-- Lamented Crusader's Boots
+								i(7187),	-- VanCleef's Boots
+							--	i(4660),	-- Walking Boots					Added to original Source in 10.1.7
 							},
 						}),
 						i(206571, {	-- Dented Raider's Bracers
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206607),	-- Lamented Crusader's Bracers
 							},
 						}),
 						i(206570, {	-- Dented Raider's Chestpiece
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206606),	-- Lamented Crusader's Chestpiece
+								i(3019),	-- Noble's Robe
 							},
 						}),
 						i(206572, {	-- Dented Raider's Gauntlets
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206608),	-- Lamented Crusader's Gauntlets
+							--	i(1944),	-- Metalworking Gloves				Added to original Source in 10.1.7
+							--	i(1945),	-- Woodworking Gloves				Added to original Source in 10.1.7
 							},
 						}),
 						i(206568, {	-- Dented Raider's Helmet
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206604),	-- Lamented Crusader's Helmet
 							},
 						}),
 						i(206574, {	-- Dented Raider's Leggings
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
+							--	i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
+							--	i(2978),	-- Veteran Leggings 				-- Likely added back. Add when confirmed
 								i(206610),	-- Lamented Crusader's Leggings
 							},
 						}),
 						i(206569, {	-- Dented Raider's Spaulders
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206605),	-- Lamented Crusader's Spaulders
 							},
@@ -1237,7 +1265,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
 						}),
-						i(206579),	-- Phylacterweave
+						i(206579, {	-- Phylacterweave
+							-- Dont symlink it Dented tokens, makes it too spammy
+							["description"] = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
+						}),
 						i(206565, {	-- Plagued Grain (TOY!)
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 15 }},
 						}),
@@ -1338,7 +1369,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 					n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 						n(206712, {	-- Valiance
-							["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the obedience to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.",
+							["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
+							["questID"] = 76378,
 							["cost"] = {{ "i", 208068, 1 }},	-- 1x Rotten Delicious
 							["g"] = {
 								i(206585),	-- Valiance (MOUNT!)
@@ -1941,9 +1973,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								}),
 								ach(5016, {	-- Just Can't Get Enough - Guild Edition
 									["timeline"] = { "added 4.0.3" },
-								}),
-								ach(1658, {	-- Champion of the Frozen Wastes
-									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 6802,	-- Kel'Thuzad slain
@@ -2796,9 +2825,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								}),
 								ach(5016, {	-- Just Can't Get Enough - Guild Edition
 									["timeline"] = { "added 4.0.3" },
-								}),
-								ach(1658, {	-- Champion of the Frozen Wastes
-									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7172,	-- Kel'Thuzad slain

@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			ach(14773),		-- Explosive Extermination
 			ach(14778, {	-- Extremely Ravenous
 				i(170540, {	-- Ravenous Anima Cell
-					crit(1, {	-- Dark Armaments
+					crit(49974, {	-- Dark Armaments
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["description"] = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
 						["crs"] = {
@@ -31,22 +31,22 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							156219,	-- Coldheart Scout
 						},
 					}),
-					crit(2, {	-- Deadsoul Hound Harness
+					crit(49976, {	-- Deadsoul Hound Harness
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = { 151816 },	-- Deadsoul Scavenger
 					}),
-					crit(3, {	-- Maw Seeker Mount
+					crit(49977, {	-- Maw Seeker Mount
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = { 152708 },	-- Mawsworn Seeker
 					}),
-					crit(4, {	-- Mawrat Harness
+					crit(49991, {	-- Mawrat Harness
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							151353,	-- Mawrat
 							154030,	-- Oddly Large Mawrat
 						},
 					}),
-					crit(5, {	-- Warden's Authority
+					crit(49979, {	-- Warden's Authority
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							157634,	-- Flameforge Enforcer
@@ -55,21 +55,21 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							157819,	-- Mawsworn Shadestalker
 						},
 					}),
-					crit(6, {	-- Pocketed Soulcage
+					crit(49981, {	-- Pocketed Soulcage
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							153878,	-- Mawsworn Archer
 							150959,	-- Mawsworn Interceptor
 						},
 					}),
-					crit(7, {	-- Shackle Keys
+					crit(49982, {	-- Shackle Keys
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							155798,	-- Mawsworn Shackler (not sure if this version exists?)
 							150965,	-- Mawsworn Shackler (this is the one i got the criteria from, in Twisting Corridors)
 						},
 					}),
-					crit(8, {	-- Purifier's Flame
+					crit(49984, {	-- Purifier's Flame
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							152644,	-- Deadsoul Drifter
@@ -81,7 +81,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							153882,	-- Deadsoul Spirit
 						},
 					}),
-					crit(9, {	-- Flamestarved Cinders
+					crit(49985, {	-- Flamestarved Cinders
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							154128,	-- Blazing Elemental
@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							157571,	-- Mawsworn Flametender
 						},
 					}),
-					crit(10, {	-- Glasswing Charm
+					crit(49986, {	-- Glasswing Charm
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							155225,	-- Faeleaf Grovesinger
@@ -104,7 +104,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							155226,	-- Verdant Keeper
 						},
 					}),
-					crit(11, {	-- Marrow Scooper
+					crit(49987, {	-- Marrow Scooper
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = {
 							155824,	-- Lumbering Creation
@@ -115,11 +115,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							153552,	-- Weeping Wraith
 						},
 					}),
-					crit(12, {	-- Skeletal Ward
+					crit(49988, {	-- Skeletal Ward
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["crs"] = { 155793 },	-- Skeletal Remains
 					}),
-					crit(13, {	-- Prisoner's Concord
+					crit(49989, {	-- Prisoner's Concord
 						["achievementID"] = 14778,	-- Extremely Ravenous
 						["description"] = "Can be spawned from creatures within the 'The Upper Reaches' tower.",
 						["crs"] = {
@@ -153,91 +153,91 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			})),
 			ach(14776),		-- For the Hoarder!
 			ach(14498, {	-- Gatekeepers of Torghast
-				crit(1,  {		-- Dark Aspirant Corrus
+				crit(49158,  {		-- Dark Aspirant Corrus
 					["crs"] = { 156239 },	-- Dark Aspirant Corrus
 					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
-				crit(2,  {		-- Arch-Suppressor Laguas
+				crit(49159,  {		-- Arch-Suppressor Laguas
 					["crs"] = { 171422 },	-- Arch-Suppressor Laguas
 					["description"] = "This boss can be found in The Soulforges and The Upper Reaches.",
 				}),
-				crit(3,  {		-- Goxul the Devourer
+				crit(49160,  {		-- Goxul the Devourer
 					["crs"] = { 170418 },	-- Goxul the Devourer
 					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
-				crit(4,  {		-- Observer Zelgar
+				crit(49161,  {		-- Observer Zelgar
 					["crs"] = { 169859 },	-- Observer Zelgar <The Third Eye>
 					["description"] = "This boss can be found in The Soulforges.",
 				}),
-				crit(5,  {		-- Custodian Thonar
+				crit(49162,  {		-- Custodian Thonar
 					["crs"] = { 153165 },	-- Custodian Thonar
 					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
-				crit(6,  {		-- Warden Skoldus
+				crit(49163,  {		-- Warden Skoldus
 					["crs"] = { 151329 },	-- Warden Skoldus
 					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
-				crit(7,  {		-- Writhing Soulmass
+				crit(49164,  {		-- Writhing Soulmass
 					["crs"] = { 156015 },	-- Writhing Soulmass
 					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
-				crit(8,  {		-- Kosarus the Fallen
+				crit(49165,  {		-- Kosarus the Fallen
 					["crs"] = { 153451 },	-- Kosarus the Fallen
 					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
-				crit(9,  {		-- The Grand Malleare
+				crit(49166,  {		-- The Grand Malleare
 					["crs"] = { 159755 },	-- The Grand Malleare
 					["description"] = "This boss can be found in The Soulforges.",
 				}),
-				crit(10, {		-- Gherus the Chained
+				crit(49167, {		-- Gherus the Chained
 					["crs"] = { 155945 },	-- Gherus the Chained
 					["description"] = "This boss can be found in Skoldus Hall, The Upper Reaches, and Fracture Chambers.",
 				}),
-				crit(11, {		-- Cellblock Sentinel
+				crit(49168, {		-- Cellblock Sentinel
 					["crs"] = { 151331 },	-- Cellblock Sentinel
 					["description"] = "This boss can be found in Skoldus Hall and The Soulforges.",
 				}),
-				crit(12, {		-- Warden of Souls
+				crit(49169, {		-- Warden of Souls
 					["crs"] = { 152995 },	-- Warden of Souls
 					["description"] = "This boss can be found in Mort'regar.",
 				}),
-				crit(13, {		-- Binder Baritas
+				crit(49170, {		-- Binder Baritas
 					["crs"] = { 153011 },	-- Binder Baritas
 					["description"] = "This boss can be found in Mort'regar.",
 				}),
-				crit(14, {		-- Maw of the Maw
+				crit(49171, {		-- Maw of the Maw
 					["crs"] = { 153382 },	-- Maw of the Maw
 					["description"] = "This boss can be found in Mort'regar.",
 				}),
-				crit(15, {		-- Synod
+				crit(49172, {		-- Synod
 					["crs"] = { 159190 },	-- Synod
 					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
-				crit(16, {		-- Patrician Cromwell
+				crit(49173, {		-- Patrician Cromwell
 					["crs"] = { 157122 },	-- Patrician Cromwell
 					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
-				crit(17, {		-- Watchers of Death
+				crit(49515, {		-- Watchers of Death
 					["crs"] = { 153174 },	-- Watchers of Death
 					["description"] = "This boss can be found in Mort'regar.",
 				}),
-				crit(18, {		-- Elder Longbranch
+				crit(49516, {		-- Elder Longbranch
 					["crs"] = { 155251 },	-- Elder Longbranch
 					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
-				crit(19, {		-- Decayspeaker
+				crit(49517, {		-- Decayspeaker
 					["crs"] = { 155250 },	-- Decayspeaker
 					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 			}),
 			ach(15075, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Infiltrators
-				crit(1, {	-- Karthazel
+				crit(52170, {	-- Karthazel
 					["cr"] = 179136,	-- Karthazel
 				}),
-				crit(2, {	-- Sath'zuul
+				crit(52171, {	-- Sath'zuul
 					["cr"] = 179135,	-- Sath'zuul
 				}),
-				crit(3, {	-- Vil'thras
+				crit(52172, {	-- Vil'thras
 					["cr"] = 179133,	-- Vil'thras
 				}),
 			})),
@@ -271,19 +271,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						ach(14488),		-- Mort'regar
 						ach(14493),		-- The Upper Reaches
 					}),
-					crit(1),	-- Skoldus Hall
-					crit(2),	-- Fracture Chambers
-					crit(3),	-- The Soulforges
-					crit(4),	-- Coldheart Interstitia
-					crit(5),	-- Mort'regar
-					crit(6),	-- The Upper Reaches
+					crit(48160),	-- Skoldus Hall
+					crit(48161),	-- Fracture Chambers
+					crit(48162),	-- The Soulforges
+					crit(48164),	-- Coldheart Interstitia
+					crit(48163),	-- Mort'regar
+					crit(48165),	-- The Upper Reaches
 				}),
-				crit(1),	-- Skoldus Hall
-				crit(2),	-- Fracture Chambers
-				crit(3),	-- The Soulforges
-				crit(4),	-- Coldheart Interstitia
-				crit(5),	-- Mort'regar
-				crit(6),	-- The Upper Reaches
+				crit(48160),	-- Skoldus Hall
+				crit(48161),	-- Fracture Chambers
+				crit(48162),	-- The Soulforges
+				crit(48164),	-- Coldheart Interstitia
+				crit(48163),	-- Mort'regar
+				crit(48165),	-- The Upper Reaches
 			}),
 			ach(14754, {	-- The Forgotten One
 				["sourceQuests"] = { 60272 },	-- The Weak Link

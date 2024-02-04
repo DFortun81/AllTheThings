@@ -111,6 +111,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
+							["g"] = {
+								i(173531, {	-- Blasted Lands Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
+								i(137676),	-- Coded Message (QI!)
+							},
 						}),
 						q(42502, {	-- No Sanctuary
 							["sourceQuests"] = {
@@ -345,6 +351,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sourceQuest"] = 43829,	-- Spy vs. Spy
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
+						["groups"] = {
+							i(140395),	-- Stylish Spy Glasses (QI!)
+						},
 					}),
 					q(44116, {	-- Mystery at Citrine Bay
 						["sourceQuest"] = 44041,	-- The Bloody Truth
@@ -751,7 +760,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
+							mount(231434),	-- Shadowblade's Murderous Omen (MOUNT!)
 						},
 					})),
 					q(46178, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Hiding in Plain Sight (H)
@@ -760,17 +769,18 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
+							mount(231434),	-- Shadowblade's Murderous Omen (MOUNT!)
 						},
 					})),
 					-- Side Quest
 					q(47591, {	-- Wanna Buy a Lamp?
-						["sourceQuests"] = {
-							42504,	-- The Unseen Blade (A)
-							42627,	-- The Unseen Blade (H)
-							40849,	-- The Dreadblades
-							41924,	-- Fangs of the Devourer
-						},
+						-- TODO: Determine actual sourceQuests 3 Retail-Errors reports with these not being completed
+						-- ["sourceQuests"] = {
+						-- 	42504,	-- The Unseen Blade (A)
+						-- 	42627,	-- The Unseen Blade (H)
+						-- 	40849,	-- The Dreadblades
+						-- 	41924,	-- Fangs of the Devourer
+						-- },
 						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["timeline"] = { "added 7.2.5" },
@@ -981,7 +991,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(34249),	-- Hula Girl Doll
-							i(138954, {	-- Illusion: Poisoned
+							i(138954, {	-- Illusion: Poisoned (ILLUSION!)
 								["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
 							}),
 							i(120434, {	-- Immaculate White Mask
@@ -1077,7 +1087,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					n(105982, {	-- Smudge Thunderwood <Herbal Concoctions>
 						["coord"] = { 64.6, 44.2, THE_HALL_OF_SHADOWS },
 						["g"] = {
-							i(18160),	-- Recipe: Thistle Tea
+							i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 						},
 					}),
 					n(121282, {	-- Zan Shivsproket

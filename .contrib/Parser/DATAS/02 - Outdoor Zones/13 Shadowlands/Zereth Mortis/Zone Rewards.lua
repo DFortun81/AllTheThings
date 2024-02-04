@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				i(190363),	-- Enigmatic Chain
 				i(190357),	-- Enigmatic Chainmail
 				i(190360),	-- Enigmatic Cowl
-				i(190362),	-- Enigmatic Epaulettes
+				i(190362),	-- Enigmatic Epaulets
 				i(190358),	-- Enigmatic Footguards
 				i(190359),	-- Enigmatic Gauntlets
 				i(190361),	-- Enigmatic Legguards

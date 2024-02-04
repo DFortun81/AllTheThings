@@ -16,22 +16,22 @@ root(ROOTS.Zones, {
 				q(45068),	-- Barrels o' Fun
 				q(41493, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41492, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41491, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41447, {	-- Burning Felslate Deposits
 					["requireSkill"] = MINING,
 				}),
 				q(41990),	-- Chopped
 				q(45307, {	-- Claws for Alarm!
-					crit(3, {	-- Claws for Alarm!
+					crit(34848, {	-- Claws for Alarm!
 						["achievementID"] = 11427,	-- No Shellfish Endeavor
 					}),
 				}),

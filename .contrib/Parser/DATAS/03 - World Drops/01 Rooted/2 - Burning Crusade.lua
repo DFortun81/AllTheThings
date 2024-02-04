@@ -1125,13 +1125,13 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		}),
 		-- #endif
 		prof(ALCHEMY, {
-			i(22914),	-- Recipe: Destruction Potion
-			i(22926),	-- Recipe: Elixir of Empowerment (BoE version)
-			i(22919),	-- Recipe: Elixir of Major Mageblood
-			i(22904),	-- Recipe: Elixir of the Searching Eye
-			i(22913),	-- Recipe: Haste Potion (BoE version)
-			i(22912),	-- Recipe: Heroic Potion
-			i(22903),	-- Recipe: Insane Strength Potion
+			i(22914),	-- Recipe: Destruction Potion (RECIPE!)
+			i(22926),	-- Recipe: Elixir of Empowerment (BoE version) (RECIPE!)
+			i(22919),	-- Recipe: Elixir of Major Mageblood (RECIPE!)
+			i(22904),	-- Recipe: Elixir of the Searching Eye (RECIPE!)
+			i(22913),	-- Recipe: Haste Potion (BoE version) (RECIPE!)
+			i(22912),	-- Recipe: Heroic Potion (RECIPE!)
+			i(22903),	-- Recipe: Insane Strength Potion (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
 			i(33186, {["timeline"]={"added 2.3.0"}}),	-- Plans: Adamantite Weapon Chain (RECIPE!)
@@ -1290,24 +1290,24 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			-- #endif
 		}),
 		prof(LEATHERWORKING, {
-			i(29724),	-- Pattern: Cobrascale Gloves (BoE version)
-			i(29723),	-- Pattern: Cobrascale Hood
-			i(29714, {	-- Pattern: Drums of Restoration
-				["timeline"] = { "removed 2.3.0" },
+			i(29724),	-- Pattern: Cobrascale Gloves (RECIPE!) (BoE version)
+			i(29723),	-- Pattern: Cobrascale Hood (RECIPE!)
+			i(29714, {	-- Pattern: Drums of Restoration (RECIPE!)
+				["timeline"] = { REMOVED_2_3_0 },
 			}),
-			i(29718, {	-- Pattern: Drums of Speed
-				["timeline"] = { "removed 2.3.0" },
+			i(29718, {	-- Pattern: Drums of Speed (RECIPE!)
+				["timeline"] = { REMOVED_2_3_0 },
 			}),
-			i(29730),	-- Pattern: Earthen Netherscale Boots
-			i(29727),	-- Pattern: Gloves of the Living Touch (BoE version)
-			i(29726),	-- Pattern: Hood of Primal Life
-			i(29729),	-- Pattern: Living Dragonscale Helm
+			i(29730),	-- Pattern: Earthen Netherscale Boots (RECIPE!)
+			i(29727),	-- Pattern: Gloves of the Living Touch (RECIPE!) (BoE version)
+			i(29726),	-- Pattern: Hood of Primal Life (RECIPE!)
+			i(29729),	-- Pattern: Living Dragonscale Helm (RECIPE!)
 			i(29733),	-- Pattern: Netherdrake Gloves (BoE version)
-			i(29732),	-- Pattern: Netherdrake Helm
-			i(29734),	-- Pattern: Thick Netherscale Breastplate
-			i(29725),	-- Pattern: Windscale Hood
-			i(29728),	-- Pattern: Windslayer Wraps
-			i(29731),	-- Pattern: Windstrike Gloves (BoE version)
+			i(29732),	-- Pattern: Netherdrake Helm (RECIPE!)
+			i(29734),	-- Pattern: Thick Netherscale Breastplate (RECIPE!)
+			i(29725),	-- Pattern: Windscale Hood (RECIPE!)
+			i(29728),	-- Pattern: Windslayer Wraps (RECIPE!)
+			i(29731),	-- Pattern: Windstrike Gloves (RECIPE!) (BoE version)
 		}),
 		prof(TAILORING, {
 			i(24298),	-- Pattern: Blackstrike Bracers

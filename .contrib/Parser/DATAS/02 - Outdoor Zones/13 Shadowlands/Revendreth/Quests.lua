@@ -49,6 +49,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, REVENDRETH },
+					["g"] = {
+						i(174102),	-- Anima Canister (QI!)
+					},
 				}),
 				q(56955, {	-- Rebels on the Road
 					["sourceQuests"] = { 56942 },	-- On The Road Again
@@ -108,6 +111,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["provider"] = { "n", 156823 },	-- Lord Chamberlain
 					["coord"] = { 64.7, 49.9, REVENDRETH },
+					["g"] = {
+						i(174998),	-- Avowed Crypt Key (QI!)
+						i(174930),	-- Inquisitor Stelia's Sinstone (QI!)
+					},
 				}),
 				q(58932, {	-- Temel, the Sin Herald
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
@@ -201,6 +208,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59014 },	-- King of the Hill
 					["provider"] = { "n", 168664 },	-- The Fearstalker
 					["coord"] = { 47.8, 70.1, REVENDRETH },
+					["g"] = {
+						i(178994),	-- Hollowed Dredbat Fang (QI!)
+					},
 				}),
 				q(57164, {	-- Devour This
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
@@ -238,6 +248,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 168217 },	-- The Accuser
 					["coord"] = { 43.2, 73.8, REVENDRETH },
 					["g"] = {
+						i(178873),	-- Concentrated Anima Vial (QI!)
 						i(177648),	-- Honed Dredglaive
 						i(177651),	-- Nimble Hopebreaker's Rapier
 						i(177652),	-- Splinterball Morningstar
@@ -288,6 +299,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57240 },	-- Where is Prince Renathal?
 					["provider"] = { "n", 157199 },	-- Stonehead
 					["coord"] = { 38.9, 66.0, REVENDRETH },
+					["g"] = {
+						i(171343),	-- Blank Parchment (QI!)
+						i(171345),	-- Forged Letter of Condemnation (QI!)
+						i(171344),	-- Venthyr Calligraphy Set (QI!)
+					},
 				}),
 				q(57405, {	-- Chasing Madness
 					["sourceQuests"] = { 57380 },	-- Sign Your Own Death Warrant
@@ -452,11 +468,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
+					["g"] = {
+						i(177765),	-- Witherfall Special Reserve (QI!)
+					},
 				}),
 				q(59713, {	-- Active Ingredients
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
+					["g"] = {
+						i(177713),	-- Pristine Venom Gland (QI!)
+						i(177714),	-- Scythe Bloom Pollen (QI!)
+					},
 				}),
 				q(59715, {	-- Message for Matyas
 					["sourceQuests"] = {
@@ -835,6 +858,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57136 },	-- The Penitent Hunt
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.5, REVENDRETH },
+				["g"] = {
+					i(174957),	-- Abel's Rapier (QI!)
+				},
 			}),
 			q(57928, {	-- Atonement Crypt Key
 				["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
@@ -845,6 +871,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57098 },	-- The Grove of Terror
 				["provider"] = { "o", 355296 },	-- Bounty: Beast Control
 				["coord"] = { 49.6, 75.9, REVENDRETH },
+				["g"] = {
+					i(179719),	-- Anima Lure (QI!)
+				},
 			}),
 			q(58717, {	-- Bell of Remembrance
 				["provider"] = { "i", 174674 },	-- Bell of Remembrance
@@ -856,6 +885,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 59014 },	-- King of the Hill
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.4, REVENDRETH },
+				["g"] = {
+					i(179316),	-- Doomfang Skull (QI!)
+					i(178996),	-- Pristine Deathwalker Paw (QI!)
+					i(178997),	-- Prized Fearspinner Fangs (QI!)
+				},
 			}),
 			q(60487, {	-- It Used to Be Quiet Here
 				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
@@ -884,6 +918,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 39.2, 65.2, REVENDRETH },
 				["g"] = {
 					ach(14272),	-- Best Bud With Benefits
+					i(175840),	-- A Light Snack (QI!)
+					i(175826),	-- Ash Crisps (QI!)
+					i(175829),	-- Gooey Bug Bites (QI!)
+					i(175828),	-- Mirror Candy (QI!)
 				},
 			}),
 			q(60480, {	-- The Endmire
@@ -965,7 +1003,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2 },
 			}, {
 				q(62781, {	-- Ash You Like It [Pre-60]
 					["coord"] = { 36.6, 56.0, REVENDRETH },

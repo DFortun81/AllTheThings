@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_azuremystisle_01",
 		-- #endif
+		["timeline"] = { "added 2.0.1.6180" },
 		["groups"] = {
 			m(AMMEN_VALE, {
 				["lore"] = "Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",
@@ -62,7 +63,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Corrupted Flower
-									["provider"] = { "i", 24416 },	-- Corrupted Flower
+									["providers"] = {
+										{ "i",  24416 },	-- Corrupted Flower
+										{ "o", 182127 },	-- Corrupted Flower
+									},
 								}),
 							},
 						}),
@@ -156,7 +160,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Disperse the Neutralizing Agent
-									["provider"] = { "i", 22955 },	-- Neutralizing Agent
+									["providers"] = {
+										{ "i", 22955 },	-- Neutralizing Agent
+										{ "o", 181433 },	-- Irradiated Power Crystal
+									},
 									-- #if AFTER MOP
 									["coord"] = { 45.2, 64.9, AMMEN_VALE },
 									-- #else
@@ -368,7 +375,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/4 Emitter Spare Part
-									["provider"] = { "i", 22978 },	-- Emitter Spare Part
+									["providers"] = {
+										{ "i",  22978 },	-- Emitter Spare Part
+										{ "o", 181283 },	-- Emitter Spare Part
+									},
 									-- #if AFTER MOP
 									["coord"] = { 64.6, 84.4, AMMEN_VALE },
 									-- #else
@@ -391,7 +401,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/4 Emitter Spare Part
-									["provider"] = { "i", 22978 },	-- Emitter Spare Part
+									["providers"] = {
+										{ "i",  22978 },	-- Emitter Spare Part
+										{ "o", 181283 },	-- Emitter Spare Part
+									},
 									["coord"] = { 64.6, 84.4, AMMEN_VALE },
 								}),
 								i(24423),	-- Beaten Plate Leggings
@@ -692,11 +705,17 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Nautical Compass
-							["provider"] = { "i", 23738 },	-- Nautical Compass
+							["providers"] = {
+								{ "i",  23738 },	-- Nautical Compass
+								{ "o", 181675 },	-- Nautical Compass
+							},
 							["coord"] = { 59.6, 67.7, AZUREMYST_ISLE },
 						}),
 						objective(2, {	-- 0/1 Nautical Map
-							["provider"] = { "i", 23739 },	-- Nautical Map
+							["providers"] = {
+								{ "i",  23739 },	-- Nautical Map
+								{ "o", 181674 },	-- Nautical Map
+							},
 							["coord"] = { 58.6, 66.4, AZUREMYST_ISLE },
 						}),
 					},
@@ -725,7 +744,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Azure Snapdragon Bulb
-							["provider"] = { "i", 23692 },	-- Azure Snapdragon Bulb
+							["providers"] = {
+								{ "i", 23692 },	-- Azure Snapdragon Bulb
+								{ "o", 181644 },	-- Azure Snapdragon
+							},
 						}),
 					},
 				}),
@@ -770,6 +792,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9675, {	-- Beast Training
 					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9593,	-- Taming the Beast (3/3)
 					["coord"] = { 24.2, 54.4, AZUREMYST_ISLE },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { THE_EXODAR },
@@ -1002,7 +1025,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					--["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear?
+					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9453, {	-- Find Acteon!
@@ -1053,10 +1076,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(6, 6, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Hollowed Out Tree
-							["provider"] = { "i", 23790 },	-- Hollowed Out Tree
+							["providers"] = {
+								{ "i",  23790 },	-- Hollowed Out Tree
+								{ "o", 181696 },	-- Hollowed Out Tree
+							},
 						}),
 						objective(2, {	-- 0/5 Pile of Leaves
-							["provider"] = { "i", 23791 },	-- Pile of Leaves
+							["providers"] = {
+								{ "i",  23791 },	-- Pile of Leaves
+								{ "o", 181697 },	-- Pile of Leaves
+							},
 						}),
 					},
 				}),
@@ -1096,7 +1125,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Stillpine Grain
-							["provider"] = { "i", 23849 },	-- Stillpine Grain
+							["providers"] = {
+								{ "i",  23849 },	-- Stillpine Grain
+								{ "o", 181757 },	-- Stillpine Grain
+							},
 							["crs"] = {
 								17475,	-- Murgurgula
 								17192,	-- Siltfin Hunter
@@ -1142,7 +1174,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(6, 6, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Ancient Relic
-							["provider"] = { "i", 23779 },	-- Ancient Relic
+							["providers"] = {
+								{ "i",  23779 },	-- Ancient Relic
+								{ "o", 181683 },	-- Ancient Relic
+							},
 						}),
 					},
 				}),
@@ -1170,7 +1205,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Red Snapper
-							["provider"] = { "i", 23614 },	-- Red Snapper
+							["providers"] = {
+								{ "i",  23614 },	-- Red Snapper
+								{ "o", 181616 },	-- School of Red Snapper
+							},
 							["cost"] = { { "i", 23654, 1 } },	-- Draenei Fishing Net
 						}),
 					},
@@ -1187,6 +1225,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 46.6, 20.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
+				}),
+				q(9757, {	-- Seek Huntress Kella Nightbow
+					["qg"] = 17110,	-- Acteon <Hunter Trainer>
+					["coord"] = { 49.8, 51.8, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
 				}),
 				q(9537, {	-- Show Gnomercy
 					["qg"] = 17240,	-- Admiral Odesyus
@@ -1249,6 +1295,62 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 					},
 				}),
+				q(9591, {	-- Taming the Beast (1/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9757,	-- Seek Huntress Kella Nightbow
+					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Barbed Crawler
+							["providers"] = {
+								{ "n", 17217 },	-- Barbed Crawler
+								{ "i", 23896 },	-- Taming Totem
+							},
+						}),
+					},
+				}),
+				q(9592, {	-- Taming the Beast (2/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9591,	-- Taming the Beast (1/3)
+					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Greater Timberstrider
+							["providers"] = {
+								{ "n", 17374 },	-- Greater Timberstrider
+								{ "i", 23897 },	-- Taming Totem
+							},
+						}),
+					},
+				}),
+				q(9593, {	-- Taming the Beast (3/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9592,	-- Taming the Beast (2/3)
+					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Nightstalker
+							["providers"] = {
+								{ "n", 17203 },	-- Nightstalker
+								{ "i", 23898 },	-- Taming Totem
+							},
+						}),
+						-- #if BEFORE CATA
+						recipe(883),	-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
+						-- #endif
+					},
+				}),
 				q(9454, {	-- The Great Moongraze Hunt (1/2)
 					["qg"] = 17110,	-- Acteon
 					["coord"] = { 49.8, 51.9, AZUREMYST_ISLE },
@@ -1258,7 +1360,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
-						i(27686),	-- Recipe: Roasted Moongraze Tenderloin
+						i(27686),	-- Recipe: Roasted Moongraze Tenderloin (RECIPE!)
 					},
 				}),
 				q(10324, {	-- The Great Moongraze Hunt (2/2)
@@ -1331,7 +1433,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Stillpine Captive Freed
-							["provider"] = { "i", 23801 },	-- Bristlelimb Key
+							["providers"] = {
+								{ "i", 23801 },	-- Bristlelimb Key
+								{ "o", 181714 },	-- Bristlelimb Cage
+							},
 							["cr"] = 17375,	-- Stillpine Captive
 						}),
 						i(23801, {	-- Bristlelimb Key
@@ -1508,6 +1613,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 
 -- Add the items that aren't marked with a phase.
 appendGroups({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }, COOKIE_GROUPS);

@@ -17,22 +17,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4910, {	-- Searing Gorge Quests
 					["timeline"] = { "added 4.0.1" },
 					["groups"] = {
-						crit(1, {	-- Thorium Advance
+						crit(38257, {	-- Thorium Advance
 							["sourceQuest"] = 27964,	-- Dig-Boss Dinwhisker
 						}),
-						crit(2, {	-- The Seat of the Brotherhood
-							["sourceQuests"] = {
-								27979,	-- Dark Ministry
-								28099,	-- Rasha'krak
-								--[[ TODO:: possibly needed:
-								27981,	-- Heat That Just Don't Quit
-								]]--
-							},
+						crit(38264, {	-- The Seat of the Brotherhood 1/2
+							["sourceQuest"] = 27979,	-- Dark Ministry
 						}),
-						crit(3, {	-- In the Hall of the Mountain-Lord
+						crit(38261, {	-- The Seat of the Brotherhood 2/2
+							["sourceQuest"] = 28099,	-- Rasha'krak
+						}),
+						crit(38266, {	-- In the Hall of the Mountain-Lord
 							["sourceQuest"] = 28035,	-- The Mountain-Lord's Support
 						}),
-						crit(4, {	-- Into the Gorge
+						crit(38267, {	-- Into the Gorge
 							["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
 						}),
 					},
@@ -80,6 +77,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 3305,	-- Grisha <Wind Rider Master>
 					["coord"] = { 34.8, 30.6, SEARING_GORGE },
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7868, {	-- Sarah Tanner <Master Elemental Leatherworker>
+						["coord"] = { 63.6, 75.8, SEARING_GORGE },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_ELEMENTAL,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -223,24 +230,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.4, 16.2, IRONFORGE },
 					["timeline"] = { "removed 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 40,
-				}),
-				q(5144, {	-- Elemental Leatherworking (A)
-					["qg"] = 7868,	-- Sarah Tanner
-					["altQuests"] = {
-						5141,	-- Dragonscale Leatherworking
-						5143,	-- Tribal Leatherworking
-					},
-					["coord"] = { 63.6, 76.0, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 7081, 2 },	-- Breath of Wind
-						{ "i", 7075, 2 },	-- Core of Earth
-						{ "i", 7079, 2 },	-- Globe of Water
-						{ "i", 7077, 2 },	-- Heart of Fire
-					},
 					["lvl"] = 40,
 				}),
 				q(7724, {	-- Fiery Menace!
@@ -1139,7 +1128,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Secret Plans: Fiery Flux
-							["provider"] = { "i", 18922 },	-- Secret Plans: Fiery Flux
+							["providers"] = {
+								{ "i",  18922 },	-- Secret Plans: Fiery Flux
+								{ "o", 179826 },	-- Secret Plans: Fiery Flux
+							},
 							["coord"] = { 40.6, 35.7, SEARING_GORGE },
 						}),
 					},
@@ -1332,6 +1324,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.0, 52.0, SEARING_GORGE },
 				}),
 			}),
+			-- #if AFTER 7.1.5.23360
+			n(TREASURES, {
+				o(266289, {	-- Time Lost Chest
+					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
+					["coord"] = { 37.0, 48.9, SEARING_GORGE },
+					["timeline"] = { "added 7.1.5.23360" },
+					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
+					["groups"] = {
+						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
+							["timeline"] = { "added 7.1.5.23360" },
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(11818, {	-- Grimesilt Outhouse Key
 					["timeline"] = { "removed 4.0.3" },
@@ -1382,23 +1389,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 5840,	-- Dark Iron Steamsmith
 				}),
 				-- #endif
-				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower
-					["timeline"] = { "removed 4.0.1" },
+				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower (RECIPE!)
 					["crs"] = {
 						5844,	-- Dark Iron Slaver
 						5846,	-- Dark Iron Taskmaster
 						8637,	-- Dark Iron Watchman
 					},
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 41.6, 42.2, SEARING_GORGE },
+						{ 37.0, 42.8, SEARING_GORGE },
+						{ 43.6, 27.6, SEARING_GORGE },
+						{ 39.0, 50.8, SEARING_GORGE },
+						{ 63.6, 59.0, SEARING_GORGE },
+						{ 65.4, 65.6, SEARING_GORGE },
+					},
 				})),
-				o(266289, {	-- Time Lost Chest
-					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
-					["coord"] = { 37.0, 48.9, SEARING_GORGE },
-					["timeline"] = { "added 7.1.5.23360" },
-					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
-					["groups"] = {
-						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
-						}),
+				i(2274, {	-- Sapper's Gloves
+					["timeline"] = { ADDED_10_1_7 },
+					["cr"] = 5840,  -- Dark Iron Steamsmith
+					["coords"] = {
+						{ 42.8, 51.6, SEARING_GORGE },
+						{ 38.0, 49.8, SEARING_GORGE },
 					},
 				}),
 			}),

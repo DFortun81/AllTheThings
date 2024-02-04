@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(255, {	-- The Black Morass
 		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
+		["zone-text-areaID"] = 2366,	-- The Black Morass
 		["sins"] = {
 			"Caverns of Time: The Black Morass",
 			"Opening of the Dark Portal",
@@ -59,7 +60,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10297, {	-- The Opening of the Dark Portal
 					["qg"] = 20201,	-- Sa'at
+					-- TODO Confirm if required in classic
+					-- #if ANYCLASSIC
 					["sourceQuest"] = 10296,	-- The Black Morass
+					-- #endif
 					["cost"] = {
 						{ "i", 24289, 1 },	-- Chrono-beacon
 					},
@@ -102,8 +106,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
-						i(29675, {	-- Pattern: Arcane Armor Kit
-							["timeline"] = { "removed 5.0.4" },
+						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -198,8 +202,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
-							i(29675, {	-- Pattern: Arcane Armor Kit
-								["timeline"] = { "removed 5.0.4" },
+							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),

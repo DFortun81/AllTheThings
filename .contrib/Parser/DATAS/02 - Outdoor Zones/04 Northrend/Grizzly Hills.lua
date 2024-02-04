@@ -29,22 +29,22 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- Ursoc, the Bear God
+							crit(39108, {	-- Ursoc, the Bear God
 								["sourceQuest"] = 12249,	-- Ursoc, the Bear God
 							}),
-							crit(2, {	-- The Iron Thane
+							crit(39109, {	-- The Iron Thane
 								["sourceQuest"] = 12153,	-- The Iron Thane and His Anvil
 							}),
-							crit(3, {	-- Loken's Orders
+							crit(39110, {	-- Loken's Orders
 								["sourceQuest"] = 12185,	-- Put on Your Best Face for Loken
 							}),
-							crit(4, {	-- Revelation!
+							crit(39111, {	-- Revelation!
 								["sourceQuest"] = 12068,	-- Voices From the Dust
 							}),
-							crit(5, {	-- Hour of the Worg
+							crit(39112, {	-- Hour of the Worg
 								["sourceQuest"] = 12164,	-- Hour of the Worg
 							}),
-							crit(6, {	-- Eons of Misery
+							crit(39113, {	-- Eons of Misery
 								["sourceQuest"] = 12152,	-- Jin'arrak's End
 							}),
 						},
@@ -71,25 +71,25 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- Ursoc, the Bear God
+							crit(39114, {	-- Ursoc, the Bear God
 								["sourceQuest"] = 12236,	-- Ursoc, the Bear God
 							}),
-							crit(2, {	-- The Final Showdown
+							crit(39115, {	-- The Final Showdown
 								["sourceQuest"] = 12431,	-- The Conquest Pit: Final Showdown
 							}),
-							crit(3, {	-- The Iron Thane
+							crit(39116, {	-- The Iron Thane
 								["sourceQuest"] = 12199,	-- Bringing Down the Iron Thane
 							}),
-							crit(4, {	-- Loken's Orders
+							crit(39117, {	-- Loken's Orders
 								["sourceQuest"] = 12203,	-- Loken's Orders
 							}),
-							crit(5, {	-- Hour of the Worg
+							crit(39112, {	-- Hour of the Worg
 								["sourceQuest"] = 12164,	-- Hour of the Worg
 							}),
-							crit(6, {	-- Revelation!
+							crit(39111, {	-- Revelation!
 								["sourceQuest"] = 12068,	-- Voices From the Dust
 							}),
-							crit(7, {	-- Eons of Misery
+							crit(39113, {	-- Eons of Misery
 								["sourceQuest"] = 12152,	-- Jin'arrak's End
 							}),
 						},
@@ -252,6 +252,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12131,	-- We Have the Power
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(36936),	-- Golem Control Unit (QI!)
+						},
 					}),
 					q(12198, {	-- ... Or Maybe We Don't (H)
 						["qg"] = 27227,	-- Prospector Rokar
@@ -404,6 +407,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12138,	-- ... Or Maybe We Don't
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(36935),	-- Raegar's Explosives (QI!)
+						},
 					}),
 					pvp(q(12170, {	-- Blackriver Brawl
 						["qg"] = 27120,	-- Raider Captain Kronn
@@ -1158,6 +1164,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.4, 15.2, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(35837),	-- Portable Seismograph (QI!)
+							o(188367, {	-- Portable Seismograph
+								["groups"] = {
+									i(35819),	-- Thor Modan Stability Profile (QI!)
+								},
+							}),
 							i(38717),	-- Dusty Miner's Leggings
 							i(39021),	-- Ectoplasm Stained Wristguards
 							i(39050),	-- Ghostridden Waistguard
@@ -1212,7 +1224,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12180, {	-- The Captive Prospectors
 						["qg"] = 26885,	-- Mountaineer Kilian
-						["sourceQuest"] = 12014,	-- Steady as a Rock?
+						["sourceQuest"] = 12128,	-- Check Up on Raegar
 						["coord"] = { 76.9, 48.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1320,6 +1332,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(36865),	-- Golem Control Unit (QI!)
 							i(39015),	-- Crackpot Spaulders
 							i(39076),	-- Golem-Rider's Greaves
 							i(38711),	-- Grounded Gloves
@@ -1337,6 +1350,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12128,	-- Check Up on Raegar
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(36848),	-- War Golem Blueprint (QI!) Obtained from combining all three sections
+							i(36849),	-- Golem Blueprint Section 1 (QI!)
+							i(36850),	-- Golem Blueprint Section 2 (QI!)
+							i(36851),	-- Golem Blueprint Section 3 (QI!)
+						}
 					}),
 					q(11988, {	-- The Runic Keystone
 						["qg"] = 26361,	-- Torthen Deepdig
@@ -1549,6 +1568,20 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12130,	-- Why Fabricate When You Can Appropriate
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							n(26409, {	-- Rune-Smith Durar
+								["coord"] = { 74.9, 57.0, GRIZZLY_HILLS },
+								["groups"] = {
+									i(36857),	-- Durar's Power Cell
+								},
+							}),
+							n(26410, {	-- Rune-Smith Kathorn
+								["coord"] = { 76.8, 59.3, GRIZZLY_HILLS },
+								["groups"] = {
+									i(36858),	-- Kathorn's Power Cell
+								},
+							}),
+						},
 					}),
 					q(12197, {	-- We Have the Power (H)
 						["qg"] = 27227,	-- Prospector Rokar
@@ -1561,6 +1594,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12129,	-- The Perfect Plan
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o_repeated({
+								i(36852),	-- War Golem Part (QI!)
+								o(188501),	-- War Golem Part
+								o(188502),	-- War Golem Part
+								o(188503),	-- War Golem Part
+							}),
+						},
 					}),
 					q(12307, {	-- Wolfsbane Root
 						["qg"] = 27545,	-- Katja
@@ -1701,8 +1742,8 @@ root(ROOTS.Zones, {
 							["coord"] = { 22.6, 66.0, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(21219),	-- Recipe: Sagefish Delight
-								i(21099),	-- Recipe: Smoked Sagefish
+								i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+								i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 							},
 						}),
 						n(27730, {	-- Purkom <Venture Coin Vendor>

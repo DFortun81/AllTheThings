@@ -167,72 +167,69 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						-- NOTE: Blizzard shifted a bunch of the criteriaIDs between alliance/horde, so this looks a bit messy but it is correct
-						crit(1, {	-- Defending K3
-							["sourceQuests"] = {
-								12824,	-- Demolitionist Extraordinaire
-								--12822,	-- Know No Fear -- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
-							},
+						crit(39058, {	-- Defending K3
+							["sourceQuest"] = 12822,	-- Know No Fear
 						}),
-						crit(2, {	-- The Harpy Problem
+						crit(39059, {	-- Defending K3
+							["sourceQuest"] = 12824,	-- Demolitionist Extraordinaire
+						}),
+						crit(39060, {	-- The Harpy Problem
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								12867,	-- Baby Stealers
-								12868,	-- Sirana Iceshriek
-							},
+							["sourceQuest"] = 12867,	-- Baby Stealers
 						}),
-						crit(2, {	-- Norgannon's Shell (H)
+						crit(39061, {	-- The Harpy Problem
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 12868,	-- Sirana Iceshriek
+						}),
+						crit(39063, {	-- Norgannon's Shell (H)
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 12928,	-- Norgannon's Shell (H)
 						}),
-						crit(3, {	-- Norgannon's Shell (A)
+						crit(39062, {	-- Norgannon's Shell (A)
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 12872,	-- Norgannon's Shell (A)
 						}),
-						crit(3, {	-- Bringing Down the Iron Colossus (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								12978,	-- Facing the Storm
-								12965,	-- The Gifts of Loken
-								13007,	-- The Iron Colossus
-							},
+						crit(39064, {	-- Bringing Down the Iron Colossus
+							["sourceQuest"] = 12965,	-- The Gifts of Loken
 						}),
-						crit(4, {	-- Bringing Down the Iron Colossus (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								12978,	-- Facing the Storm
-								12965,	-- The Gifts of Loken
-								13007,	-- The Iron Colossus
-							},
+						crit(39065, {	-- Bringing Down the Iron Colossus
+							["sourceQuest"] = 12978,	-- Facing the Storm
 						}),
-						crit(4, {	-- Pursuing a Legend
+						crit(39066, {	-- Bringing Down the Iron Colossus
+							["sourceQuest"] = 13007,	-- The Iron Colossus
+						}),
+						crit(39069, {	-- Pursuing a Legend
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 13285,	-- Forging the Keystone
 						}),
-						crit(5, {	-- For the Frostborn King
+						crit(39067, {	-- For the Frostborn King
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								12973,	-- The Brothers Bronzebeard
-								12876,	-- Unwelcome Guests
-							},
+							["sourceQuest"] = 12973,	-- The Brothers Bronzebeard
 						}),
-						crit(5, {	-- The Story of Stormhoof
+						crit(39068, {	-- For the Frostborn King
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 12876,	-- Unwelcome Guests
+						}),
+						crit(39070, {	-- The Story of Stormhoof
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 13058,	-- Changing the Wind's Course
 						}),
-						crit(6, {	-- Bearly Ready
+						crit(39071, {	-- Bearly Ready
 							["sourceQuest"] = 12972,	-- You'll Need a Bear
 						}),
-						crit(7, {	-- Heartbreak
+						crit(39072, {	-- Heartbreak
 							["sourceQuest"] = 13064,	-- Sibling Rivalry
 						}),
-						crit(8, {	-- The Sons of Hodir
-							["sourceQuests"] = {
-								12976,	-- A Monument to the Fallen
-								12987,	-- Mounting Hodir's Helm
-								13001,	-- Raising Hodir's Spear
-							},
+						crit(39073, {	-- The Sons of Hodir
+							["sourceQuest"] = 12976,	-- A Monument to the Fallen
 						}),
-						crit(9, {	-- Loken
+						crit(39074, {	-- The Sons of Hodir
+							["sourceQuest"] = 12987,	-- Mounting Hodir's Helm
+						}),
+						crit(39075, {	-- The Sons of Hodir
+							["sourceQuest"] = 13001,	-- Raising Hodir's Spear
+						}),
+						crit(39076, {	-- Loken
 							["sourceQuest"] = 13047,	-- Loken
 						}),
 						-- #endif
@@ -347,6 +344,20 @@ root(ROOTS.Zones, {
 						["qg"] = 30105,	-- King Jokkum
 						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
+						["groups"] = {
+							objective(1, {	-- 0/1 Jorcuttar slain
+								["provider"] = { "n", 30340 },	-- Jorcuttar
+								["coord"] = { 54.6, 60.8, THE_STORM_PEAKS },
+								["cost"] = {{ "i", 42733, 1 }},	-- Icemaw Bear Flank
+							}),
+							i(42733, {	-- Icemaw Bear Flank
+								["providers"] = {
+									{ "n", 30292 },	-- Dead Icemaw Bear
+									{ "i", 42732 },	-- Everfrost Razor
+								},
+								["coord"] = { 55.0, 61.8, THE_STORM_PEAKS },
+							}),
+						},
 					}),
 					q(13006, {	-- A Viscous Cleaning
 						["provider"] = { "o", 192080 },	-- Hodir's Helm
@@ -446,9 +457,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12821,	-- Cell Block Tango
 					}),
 					q(12976, {	-- A Monument to the Fallen
-						["qg"] = 30105,	-- King Jokkum
-						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
+						["providers"] = {
+							{ "n", 30105 },	-- King Jokkum
+							{ "i", 42163 },	-- Horn Fragments
+						},
 						["sourceQuest"] = 12975,	-- In Memoriam
+						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
 					}),
 					q(13009, {	-- A New Beginning
 						["qg"] = 30127,	-- Njormeld
@@ -721,10 +735,24 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12930,	-- Rare Earth
 					}),
 					q(12985, {	-- Forging a Head
-						["minReputation"] = { 1119, FRIENDLY },
+						["qg"] = 30127,	-- Njormeld
 						["sourceQuest"] = 12967,	-- Battling the Elements
 						["coord"] = { 63.2, 63.2, THE_STORM_PEAKS },
-						["qg"] = 30127,	-- Njormeld
+						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
+						["groups"] = {
+							objective(1, {	-- 0/8 Stormforged Eye
+								["providers"] = {
+									{ "i", 42423 },	-- Stormforged Eye
+									{ "n", 30208 },	-- Stormforged Ambusher
+									{ "i", 42424 },	-- Diamond Tipped Pick
+								},
+								["coord"] = { 70.0, 60.2, THE_STORM_PEAKS },
+								["crs"] = {
+									29914,	-- Dead Iron Giant
+									30163,	-- Dead Iron Giant
+								},
+							}),
+						},
 					}),
 					q(12924, {	-- Forging an Alliance
 						["qg"] = 29445,	-- Thorim
@@ -739,6 +767,30 @@ root(ROOTS.Zones, {
 							i(42805),	-- Njormeld's Pauldrons
 							i(42817),	-- Reforged Chain Leggings
 							i(42830),	-- Ring of Jokkum
+						},
+					}),
+					q(13001, {	-- Forging Hodir's Spear
+						["qg"] = 30252,	-- Lorekeeper Randvir
+						["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
+						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["groups"] = {
+							objective(1, {	-- 0/3 Everfrost Shard
+								["providers"] = {
+									{ "i",  42541 },	-- Everfrost Shard
+									{ "o", 192187 },	-- Everfrost Shard
+									{ "o", 192188 },	-- Everfrost Shard
+									{ "o", 192189 },	-- Everfrost Shard
+									{ "o", 192190 },	-- Everfrost Shard
+									{ "o", 192191 },	-- Everfrost Shard
+									{ "o", 192192 },	-- Everfrost Shard
+								},
+								["coord"] = { 54.7, 60.8, THE_STORM_PEAKS },
+							}),
+							objective(2, {	-- 0/3 Stoic Mammoth Hide
+								["provider"] = { "i", 42542 },	-- Stoic Mammoth Hide
+								["coord"] = { 58.6, 62.6, THE_STORM_PEAKS },
+								["cr"] = 30260,	-- Stoic Mammoth
+							}),
 						},
 					}),
 					q(13285, {	-- Forging the Keystone
@@ -777,9 +829,18 @@ root(ROOTS.Zones, {
 					}),
 					q(12975, {	-- In Memoriam
 						["qg"] = 30105,	-- King Jokkum
+						["sourceQuest"] = 12924,	-- Forging an Alliance	-- SQ needs verification
 						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
-						["sourceQuest"] = 12924,	-- Forging an Alliance
-						-- SQ needs verification
+						["groups"] = {
+							objective(1, {	-- 0/8 Horn Fragment
+								["providers"] = {
+									{ "i",  42162 },	-- Horn Fragment
+									{ "o", 192081 },	-- Horn Fragment
+									{ "o", 192082 },	-- Horn Fragment
+								},
+								["coord"] = { 72.1, 49.5, THE_STORM_PEAKS },
+							}),
+						},
 					}),
 					q(12997, {	-- Into the Pit
 						["qg"] = 29839,	-- Astrid Bjornrittar
@@ -1003,11 +1064,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.
 					}),
-					q(13001, {	-- Forging Hodir's Spear
-						["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
-						["minReputation"] = { 1119, HONORED },
-						["qg"] = 30252,	-- Lorekeeper Randvir
-					}),
 					q(12930, {	-- Rare Earth
 						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
@@ -1028,7 +1084,7 @@ root(ROOTS.Zones, {
 					q(12888, {	-- SCRAP-E
 						["qg"] = 29724,	-- Library Guardian
 						["coord"] = { 39.2, 42.0, THE_STORM_PEAKS },	-- general area
-						["itemID"] = 41267,	-- SCRAP-E Access Card
+						["provider"] = {"i",41267},	-- SCRAP-E Access Card
 						["requireSkill"] = ENGINEERING,
 					}),
 					q(13064, {	-- Sibling Rivalry
@@ -1094,12 +1150,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 29.1, 74.9, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 12864,	-- Missing Scouts
-					}),
-					q(29863, {	-- Stormherald Eljrrin
-						["qg"] = 30105,	-- King Jokkum
-						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
-						["isBreadcrumb"] = true,
-						["sourceQuest"] = 13047,	-- The Reckoning
 					}),
 					q(12971, {	-- Taking on All Challengers
 						["qg"] = 29975,	-- Lok'lira the Crone
@@ -1618,10 +1668,15 @@ root(ROOTS.Zones, {
 								["filterID"] = CONSUMABLES,
 							}),
 							i(42184),	-- Pattern: Glacial Bag
-							i(44510),	-- Pattern: Mammoth Mining Bag
+							i(44510),	-- Pattern: Mammoth Mining Bag (RECIPE!)
 							i(44190),	-- Spaulders of Frozen Knives
 							i(44195),	-- Spaulders of the Giant Lords
 							i(44192),	-- Stalactite Chopper
+							-- #if ANYCLASSIC
+							i(206392, {	-- Tabard of the Sons of Hodir
+								["factionID"] = 1119,	-- The Sons of Hodir
+							}),
+							-- #endif
 						},
 					}),
 					n(30472, {	-- Olut Alegut

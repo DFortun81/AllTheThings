@@ -30,6 +30,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60657),	-- Aid From Above
 			q(61619, {	-- Alchemy: Elixir of Humility
 				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					r(338204, {["u"]=TRAINING}),	-- Bramblethorn Juice
+					r(338202, {["u"]=TRAINING}),	-- Elixir of Humility
+					r(338203, {["u"]=TRAINING}),	-- Refined Submission
+					i(182072),	-- Bramblethorn Juice (QI!)
+					i(181857),	-- Elixir of Humility (QI!)
+					i(182073),	-- Fresh Bramblethorn Trimmings (QI!)
+					i(182071),	-- Refined Submission (QI!)
+				},
 			}),
 			q(60658),	-- An Endless Appetite
 			q(61879),	-- Ashes Will Fall
@@ -37,21 +46,31 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61620, {	-- Blacksmithing: Prideful Manacles
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(338097,{["u"]=15}),	-- Binding Cuffs
-					r(338094,{["u"]=15}),	-- Prideful Manacles
-					r(338096,{["u"]=15}),	-- Soft Manacle Chains
-					r(338095,{["u"]=15}),	-- Tempered Manacle Chains
-					i(182090),	-- Binding Cuffs
-					i(182091),	-- Borrowed Sinvyr Bar
-					i(182094),	-- Borrowed Sinvyr Rod
-					i(182089),	-- Enchanted Rivets
-					i(181378),	-- Prideful Manacles
-					i(182093),	-- Soft Manacle Chains
-					i(182092),	-- Tempered Manacle Chains
+					r(338097, {["u"]=TRAINING}),	-- Binding Cuffs
+					r(338094, {["u"]=TRAINING}),	-- Prideful Manacles
+					r(338096, {["u"]=TRAINING}),	-- Soft Manacle Chains
+					r(338095, {["u"]=TRAINING}),	-- Tempered Manacle Chains
+					i(182090),	-- Binding Cuffs (QI!)
+					i(182091),	-- Borrowed Sinvyr Bar (QI!)
+					i(182094),	-- Borrowed Sinvyr Rod (QI!)
+					i(182089),	-- Enchanted Rivets (QI!)
+					i(181378),	-- Prideful Manacles (QI!)
+					i(182093),	-- Soft Manacle Chains (QI!)
+					i(182092),	-- Tempered Manacle Chains (QI!)
 				},
 			}),
 			q(61621, {	-- Cooking: Skewered Meats
 				["requireSkill"] = COOKING,
+				["g"] = {
+					r(338115, {["u"]=TRAINING}),	-- Ember Sauce
+					r(338117, {["u"]=TRAINING}),	-- Seared Cutlets
+					r(338116, {["u"]=TRAINING}),	-- Skewered Meats
+					i(182096),	-- Ember Chilis (QI!)
+					i(182068),	-- Ember Sauce (QI!)
+					i(182070),	-- Fresh Beast Steak (QI!)
+					i(182069),	-- Seared Cutlets (QI!)
+					i(181947),	-- Skewered Meats (QI!)
+				},
 			}),
 			q(60532),	-- Destroy the Dominant
 			q(57443),	-- Dirty Job: Demolition Detail
@@ -59,18 +78,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61630, {	-- Enchanting: Everburning Brand
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(338125,{["u"]=15}),	-- Everburning Brand
-					i(182067),	-- Antique Duelist's Rapier
-					i(181950),	-- Everburning Brand
-					i(182066),	-- Sanguine Crystal
+					r(338125, {["u"]=TRAINING}),	-- Everburning Brand
+					i(182067),	-- Antique Duelist's Rapier (QI!)
+					i(181950),	-- Everburning Brand (QI!)
+					i(182066),	-- Sanguine Crystal (QI!)
 				},
 			}),
 			q(61622, {	-- Engineering: Duelist's Pistol
 				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					r(338220, {["u"]=TRAINING}),-- Duelist's Pistol
+					r(338222, {["u"]=TRAINING}),-- Sinvyr Barrel
+					r(338223, {["u"]=TRAINING}),-- Sinvyr Trigger Mechanism
+					i(181953),	-- Duelist's Pistol (QI!)
+					i(182064),	-- Machined Sinvyr Bar (QI!)
+					i(182062),	-- Sinvyr Barrel (QI!)
+					i(182063),	-- Sinvyr Trigger Mechanism (QI!)
+				},
 			}),
 			q(61885),	-- Eyegor's Special Friends
 			q(61623, {	-- Fishing: Bloodthroated Grouper
 				["requireSkill"] = FISHING,
+				["g"] = {
+					i(181956),	-- Bloodthroated Grouper (QI!)
+				},
 			}),
 			q(59803),	-- For Honor
 			q(61544, {	-- Herbalism: Lush Widowbloom
@@ -79,12 +110,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61624, {	-- Inscription: Catalog of Sins
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					r(338234, {["u"]=15}),	-- Catalog of Sins
-					i(181959),	-- Catalog of Sins
-					r(338236, {["u"]=15}),	-- Prideful Ink
-					i(182060),	-- Prideful Ink
-					r(338235, {["u"]=15}),	-- Scroll of Calming Lyrics
-					i(182059),	-- Scroll of Castigation
+					r(338234, {["u"]=TRAINING}),	-- Catalog of Sins
+					r(338236, {["u"]=TRAINING}),	-- Prideful Ink
+					r(338235, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
+					i(181959),	-- Catalog of Sins (QI!)
+					i(182060),	-- Prideful Ink (QI!)
+					i(182061),	-- Prideful Pigment (QI!)
+					i(182309),	-- Rigid Vellum (QI!)
+					i(182059),	-- Scroll of Castigation (QI!)
 				},
 			}),
 			q(59643, {	-- It's Race Day in the Ramparts!
@@ -95,9 +128,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61625, {	-- Jewelcrafting: Sinister Choker
 				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					r(338247, {["u"]=TRAINING}),	-- Sinister Choker
+					r(338248, {["u"]=TRAINING}),	-- Brilliant Bauble
+					r(338249, {["u"]=TRAINING}),	-- Fine Sinvyr Chain
+					i(182056),	-- Brilliant Bauble (QI!)
+					i(182057),	-- Fine Sinvyr Chain (QI!)
+					i(182308),	-- Garnet Shard (QI!)
+					i(182058),	-- Polished Sinvyr Bar (QI!)
+					i(181964),	-- Sinister Choker (QI!)
+				},
 			}),
 			q(61626, {	-- Leatherworking: Courtly Leather Boots
 				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					r(338263, {["u"]=TRAINING}),	-- Courtly Leather Boots
+					r(338265, {["u"]=TRAINING}),	-- Softened Leather
+					r(338264, {["u"]=TRAINING}),	-- Tortured Sole
+					i(181967),	-- Courtly Leather Boots (QI!)
+					i(182055),	-- Ragged Sinrunner Leather (QI!)
+					i(182054),	-- Softened Leather (QI!)
+					i(182053),	-- Tortured Sole (QI!)
+				},
 			}),
 			q(60659),	-- Light Defense
 			q(59855),	-- Major Mirror Disruptions
@@ -145,31 +197,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(183730),	-- Sinstone-Studded Greathelm
 					},
 				}),
-				i(180298),	-- Amalgamation of Sin
-				i(180299),	-- Amalgamation of Sin
-				i(180300),	-- Amalgamation of Sin
-				i(180301),	-- Amalgamation of Sin
-				i(180302),	-- Amalgamation of Sin
-				i(180303),	-- Amalgamation of Sin
-				i(180304),	-- Amalgamation of Sin
-				i(180305),	-- Amalgamation of Sin
-				i(180306),	-- Amalgamation of Sin
-				i(180357),	-- Amalgamation of Sin
-				i(180358),	-- Amalgamation of Sin
-				i(180359),	-- Amalgamation of Sin
-				i(180360),	-- Amalgamation of Sin
-				i(180361),	-- Amalgamation of Sin
-				i(180362),	-- Amalgamation of Sin
-				i(180363),	-- Amalgamation of Sin
-				i(180364),	-- Amalgamation of Sin
-				i(180365),	-- Amalgamation of Sin
-				i(180366),	-- Amalgamation of Sin
-				i(180367),	-- Amalgamation of Sin
-				i(180368),	-- Amalgamation of Sin
-				i(180369),	-- Amalgamation of Sin
-				i(180370),	-- Amalgamation of Sin
-				i(180371),	-- Amalgamation of Sin
-				i(180373),	-- Amalgamation of Sin
+				i(180298),	-- Amalgamation of Sin (QI!)
+				i(180299),	-- Amalgamation of Sin (QI!)
+				i(180300),	-- Amalgamation of Sin (QI!)
+				i(180301),	-- Amalgamation of Sin (QI!)
+				i(180302),	-- Amalgamation of Sin (QI!)
+				i(180303),	-- Amalgamation of Sin (QI!)
+				i(180304),	-- Amalgamation of Sin (QI!)
+				i(180305),	-- Amalgamation of Sin (QI!)
+				i(180306),	-- Amalgamation of Sin (QI!)
+				i(180357),	-- Amalgamation of Sin (QI!)
+				i(180358),	-- Amalgamation of Sin (QI!)
+				i(180359),	-- Amalgamation of Sin (QI!)
+				i(180360),	-- Amalgamation of Sin (QI!)
+				i(180361),	-- Amalgamation of Sin (QI!)
+				i(180362),	-- Amalgamation of Sin (QI!)
+				i(180363),	-- Amalgamation of Sin (QI!)
+				i(180364),	-- Amalgamation of Sin (QI!)
+				i(180365),	-- Amalgamation of Sin (QI!)
+				i(180366),	-- Amalgamation of Sin (QI!)
+				i(180367),	-- Amalgamation of Sin (QI!)
+				i(180368),	-- Amalgamation of Sin (QI!)
+				i(180369),	-- Amalgamation of Sin (QI!)
+				i(180370),	-- Amalgamation of Sin (QI!)
+				i(180371),	-- Amalgamation of Sin (QI!)
+				i(180372),	-- Amalgamation of Sin (QI!)
+				i(180373),	-- Amalgamation of Sin (QI!)
+				i(180374),	-- Amalgamation of Sin (QI!)
+				i(180376),	-- Amalgamation of Sin (QI!)
 			}),
 			q(60654, {	-- Swarming Souls
 				n(170048, {	-- Manifestation of Wrath
@@ -185,6 +240,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61628, {	-- Tailoring: Looming Tapestry
 				["requireSkill"] = TAILORING,
+				["g"] = {
+					r(338279, {["u"]=TRAINING}),	-- Bolt of Prideweave
+					r(338278, {["u"]=TRAINING}),	-- Looming Tapestry
+					r(338280, {["u"]=TRAINING}),	-- Prideweave Cloth
+					i(182051),	-- Bolt of Prideweave (QI!)
+					i(181973),	-- Looming Tapestry (QI!)
+					i(182050),	-- Prideweave Cloth (QI!)
+					i(182052),	-- Thread of Pride (QI!)
+				}
 			}),
 			q(59852, {	-- Tea Tales: Gubbins and Tubbins
 				i(177235, {	-- Tubbins's Lucky Teapot (EC!)
@@ -196,7 +260,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59850),	-- Tea Tales: Vulca
 			q(61886),	-- The Mind Games of Addius
 			q(59581),	-- The Strength of Sinfall
-			q(59789),	-- Tithe and Taxes
+			q(59789, {	-- Tithe and Taxes
+				["g"] = {
+					i(177839),	-- Anima Siphon (QI!)
+				},
+			}),
 			q(57328),	-- Trashin' the Camp
 		})),
 	}),

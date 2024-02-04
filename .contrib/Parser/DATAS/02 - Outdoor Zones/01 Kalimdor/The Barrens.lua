@@ -121,6 +121,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Drops from fishing in the Sludge Fen.",
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
+						["coord"] = { 63.6, 49.2, THE_BARRENS },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							3384,	-- Southsea Privateer
+							3383,	-- Southsea Cutthroat
+							3381,	-- Southsea Brigand
+							3382,	-- Southsea Cannoneer
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(1153, {	-- A New Ore Sample
 					["qg"] = 3433,	-- Tatternack Steelforge
@@ -982,6 +999,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78266, {	-- Dark Iron Ordinance
+					["qg"] = 211653,	-- Grizzby
+					["sourceQuest"] = 78284,	-- Grizzby HQT
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { WETLANDS, ARATHI_HIGHLANDS },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/20 Dark Iron Ordinance
+							["provider"] = { "i", 210138 },	-- Dark Iron Ordinance
+							["coord"] = { 61.4, 29.6, WETLANDS },
+							["crs"] = {
+								1051,	-- Dark Iron Dwarf
+								1052,	-- Dark Iron Saboteur
+								1053,	-- Dark Iron Tunneler
+								1054,	-- Dark Iron Demolitionist
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(1069, {	-- Deepmoss Spider Eggs
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.37, 37.32, THE_BARRENS },
@@ -992,10 +1031,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/15 Deepmoss Egg
 							["providers"] = {
 								{ "i", 5570 },	-- Deepmoss Egg
-								{ "i", 19542 },	-- Deepmoss Eggs
+								{ "o", 19542 },	-- Deepmoss Eggs
 							},
 						}),
 					},
+				}),
+				q(1716, {	-- Devourer of Souls [Stormwind City]
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1717,	-- Gakin's Summons (Succubus)
+					-- #if AFTER WRATH
+					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
 				}),
 				q(862, {	-- Dig Rat Stew
 					["qg"] = 3443,	-- Grub
@@ -1010,7 +1063,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(5478),	-- Dig Rat Stew
-						i(5487, {	-- Recipe: Dig Rat Stew
+						i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "removed 4.3.0" },
 						}),
 					},
@@ -1144,6 +1197,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78265, {	-- Fish Oil
+					["qg"] = 211653,	-- Grizzby
+					["sourceQuest"] = 78284,	-- Grizzby HQT
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
+					["maps"] = { ARATHI_HIGHLANDS, BLACKFATHOM_DEEPS, DESOLACE, DUSTWALLOW_MARSH, FERALAS, HILLSBRAD_FOOTHILLS, STRANGLETHORN_VALE, SWAMP_OF_SORROWS, WETLANDS },
+					["lvl"] = 20,
+				})),
+				-- #endif
 				q(1503, {	-- Forged Steel
 					["qg"] = 5878,	-- Thun'grim Firegaze
 					["sourceQuest"] = 1502,	-- Thun'grim Firegaze
@@ -1267,75 +1331,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(3634, {	-- Gnome Engineering
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						3633,	-- Goblin Engineering
-						--3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(3637, {	-- Gnome Engineering
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						3633,	-- Goblin Engineering
-						3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						--3637,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(3633, {	-- Goblin Engineering
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						--3633,	-- Goblin Engineering
-						3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-				}),
 				q(875, {	-- Harpy Lieutenants
 					["qg"] = 3449,	-- Darsok Swiftdagger
 					["sourceQuest"] = 867,	-- Harpy Raiders
@@ -1393,7 +1388,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Heartswood
-							["provider"] = { "i", 6912 },	-- Heartswood
+							["providers"] = {
+								{ "i", 6912 },	-- Heartswood
+								{ "o", 93192 },	-- Heartswood
+							},
 							["coord"] = { 31, 31, ASHENVALE },
 						}),
 					},
@@ -1667,6 +1665,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78287, {	-- Let Me Make You An Offer [A]
+					["providers"] = {
+						{ "n", 211653 },	-- Grizzby
+						{ "i", 211447 },	-- Arms Shipment
+					},
+					["sourceQuests"] = {
+						78265,	-- Fish Oil
+						78266,	-- Dark Iron Ordinance
+						78267,	-- Shredder Turbochargers
+					},
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78288, {	-- Let Me Make You An Offer [H]
+					["providers"] = {
+						{ "n", 211653 },	-- Grizzby
+						{ "i", 211447 },	-- Arms Shipment
+					},
+					["sourceQuests"] = {
+						78265,	-- Fish Oil
+						78266,	-- Dark Iron Ordinance
+						78267,	-- Shredder Turbochargers
+					},
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
+				})),
+				-- #endif
 				q(1060, {	-- Letter to Jin'Zil
 					["providers"] = {
 						{ "n", 3449 },	-- Darsok Swiftdagger
@@ -1786,7 +1818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
 						}),
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					}
 				}),
 				q(3301, {	-- Mura Runetotem
@@ -2022,6 +2054,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78702, {	-- Raszel Ander
+					["qg"] = 6247,	-- Doan Karhan
+					["sourceQuest"] = 78684,	-- Mysterious Traveler
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						i(210980, {	-- Rune of Metamorphosis
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403938),	-- Engrave Gloves - Metamorphosis
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(5046, {	-- Razorhide
 					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
@@ -2175,6 +2225,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5341),	-- Spore-Covered Tunic
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78680, {	-- Rumors Abound
+					["qg"] = 6247,	-- Doan Karhan
+					["sourceQuest"] = 1740,	-- The Orb of Soran'ruk
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["description"] = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { REDRIDGE_MOUNTAINS, DARKSHORE },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Orb of Des
+							["providers"] = {
+								{ "i", 210765 },	-- Orb of Des
+								{ "o", 411710 },	-- Orb of Des
+							},
+							["coord"] = { 80.2, 49.5, REDRIDGE_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/1 Bough of Altek
+							["providers"] = {
+								{ "i", 210763 },	-- Bough of Altek
+								{ "o", 411715 },	-- Bough of Altek
+							},
+							["coord"] = { 56.3, 26.4, DARKSHORE },
+						}),
+					},
+				})),
+				-- #endif
 				q(894, {	-- Samophlange (1/4)
 					["providers"] = {
 						{ "n", 3442 },	-- Sputtervalve
@@ -2400,6 +2478,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78909, {	-- Shifting Scale Talisman
+					["qg"] = 214208,	-- N'ora Anyheart <Scholar of Exotic Fauna>
+					["sourceQuest"] = 78908,	--  Speak to N'ora
+					["coord"] = { 62.0, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+					["cost"] = {
+						{ "i", 10940, 40 },	-- Strange Dust
+						{ "i", 10939, 5 },	-- Greater Magic Essence
+						{ "i", 10978, 2 },	-- Small Glimmering Shard
+						{ "i", 211419, 1 },	-- Handful of Shifting Scales
+						{ "g", 50000 },		-- 5g
+					},
+					["groups"] = {
+						i(211420, {	-- Shifting Scale Talisman
+							["timeline"] = { "removed 2.0.1" },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78267, {	-- Shredder Turbochargers
+					["qg"] = 211653,	-- Grizzby
+					["sourceQuest"] = 78284,	-- Grizzby HQT
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STONETALON_MOUNTAINS },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/16 Shredder Turbocharger
+							["provider"] = { "i", 210146 },	-- Shredder Turbocharger
+							["coord"] = { 62.6, 52.8, STONETALON_MOUNTAINS },
+							["cost"] = { { "i", 210147, 25 } },	-- Shredder Autosalvage Unit
+							["description"] = "This may take a more than 25 salvage units. It's ~50% chance to salvage the right item.",
+							["cr"] = 214129,	-- Venture Co. Light Shredder
+						}),
+					},
+				})),
+				-- #endif
 				q(887, {	-- Southsea Freebooters
 					-- #if AFTER CATA
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
@@ -2428,6 +2544,55 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to Grizzby
+					readable = "Speak to Grizzby",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to Grizzby",
+						es = "Habla con el Grizzby",
+						de = "Sprich mit Grizzby",
+						fr = "Parlez à Grizzby",
+						it = "Parla con Grizzby",
+						pt = "Fale com o Grizzby",
+						ru = "Поговорите с Grizzby",
+						ko = "그리즈비와 대화",
+						cn = "与灰熊交谈",
+					},
+				}), {
+					["questID"] = 78284,	-- Grizzby HQT
+					["qg"] = 211653,	-- Grizzby
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["lvl"] = 20,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to N'ora
+					readable = "Speak to N'ora",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to N'ora",
+						es = "Habla con el N'ora",
+						de = "Sprich mit N'ora",
+						fr = "Parlez à N'ora",
+						it = "Parla con N'ora",
+						pt = "Fale com o N'ora",
+						ru = "Поговорите с Н'ора",
+						ko = "노라와 대화",
+						cn = "与奈奥拉谈",
+					},
+				}), {
+					["providers"] = {
+						{ "i", 211419 },	-- Handful of Shifting Scales
+						{ "n", 214208 },	-- N'ora Anyheart <Scholar of Exotic Fauna>
+					},
+					["questID"] = 78908,	-- N'ora HQT
+					["coord"] = { 62.0, 39.4, THE_BARRENS },
+					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
+					["timeline"] = { "removed 2.0.1" },
+					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+					["lvl"] = 20,
+				})),
+				-- #endif
 				q(1823, {	-- Speak with Ruga
 					["qgs"] = {
 						3354,	-- Sorek
@@ -2706,12 +2871,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4964, {	-- The Completed Orb of Dar'Orahil
 					["qg"] = 6266,	-- Menara Voidrender
-					["altQuests"] = { 4975 },	-- The Completed Orb of Noh'Orahil
 					["sourceQuests"] = {
 						4976,	-- Returning the Cleansed Orb
 						4962,	-- Shard of a Felhound
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["lockCriteria"] = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -2726,12 +2891,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4975, {	-- The Completed Orb of Noh'Orahil
 					["qg"] = 6266,	-- Menara Voidrender
-					["altQuests"] = { 4964 },	-- The Completed Orb of Dar'Orahil
 					["sourceQuests"] = {
 						4976,	-- Returning the Cleansed Orb
 						4963,	-- Shard of an Infernal
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["lockCriteria"] = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -2757,6 +2922,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78681, {	-- The Conjuring
+					["providers"] = {
+						{ "n",   6247 },	-- Doan Karhan
+						{ "o", 412224 },	-- Dark Ritual Stone
+					},
+					["sourceQuest"] = 78680,	-- Rumors Abound
+					["description"] = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
+					["coords"] = {
+						{ 49.2, 57.2, THE_BARRENS },
+						{ 79.0, 80.3, ASHENVALE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/10 Blood of the Legion
+							["provider"] = { "i", 210966 },	-- Blood of the Legion
+							["coord"] = { 84.2, 71.6, ASHENVALE },
+							["crs"] = {
+								11697,	-- Mannoroc Lasher
+								6115,	-- Felguard
+								6073,	-- Searing Infernal
+								6071,	-- Legion Hound
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(872, {	-- The Disruption Ends / The Far Watch Offensive [CATA+]
 					-- #if AFTER CATA
 					["qg"] = 3337,	-- Kargal Battlescar
@@ -3431,8 +3625,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 					["groups"] = {
-						i(5423),  -- Boahn's Fang
-						i(5422),  -- Brambleweed Leggings
+						i(5423),	-- Boahn's Fang
+						i(5422),	-- Brambleweed Leggings
 					},
 				}),
 				n(5838, {	-- Brokespear
@@ -3455,7 +3649,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(7559, {	-- Runic Cane
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3476,6 +3670,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209797, {	-- Bruuz
+					["coord"] = { 64.8, 39.8, THE_BARRENS },
+					["cost"] = {{ "i", 208773, 1 }},	-- Fishing Harpoon
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5851, {	-- Captain Gerogg Hammertoe <Bael'dun Captain of the Guard>
 					-- #if AFTER CATA
 					["coord"] = { 49.8, 89.6, SOUTHERN_BARRENS },
@@ -3484,6 +3700,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209742, {	-- Desert Mirage
+					["description"] = "Cast Dispel or Purge on it.",
+					["coord"] = { 55.0, 35.4, THE_BARRENS },
+					["classes"] = { PRIEST, SHAMAN },
+					["groups"] = {
+						i(208758, {	-- Earthen Rune
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410107),	-- Engrave Pants - Way of Earth
+							},
+						}),
+						i(205932, {	-- Prophecy of a King's Demise
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5849, {	-- Digger Flameforge <Excavation Specialist>
 					-- #if AFTER CATA
 					["coord"] = { 47.8, 88.2, SOUTHERN_BARRENS },
@@ -3496,7 +3735,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),
@@ -3530,10 +3769,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(4768, {	-- Adept's Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(4771, {	-- Harvest Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3567,7 +3806,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1539, {	-- Gnarled Hermit's Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3579,10 +3818,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5183, {	-- Pulsating Hydra Heart
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5182, {	-- Shiver Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -3612,8 +3851,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2035, {	-- Sword of the Night Sky
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+							-- #else
+							["description"] = "The mob dropping this item is friendly to the alliance.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3624,6 +3865,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.0, 33.6, THE_BARRENS },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209607, {	-- Lieutenant Stonebrew
+					["providers"] = {
+						{ "i", 208739 },	-- Horde Warbanner
+						{ "o", 407291 },	-- Alliance Warbanner
+					},
+					["coord"] = { 62.6, 56.2, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
 					-- #if AFTER CATA
 					["coord"] = { 47.4, 85.8, SOUTHERN_BARRENS },
@@ -3632,6 +3891,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209524, {	-- Patrolling Cheetah
+					["description"] = "Drop a trap in its path to remove its speed buff.",
+					["coord"] = { 44.4, 55.4, THE_BARRENS },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(3470, {	-- Rathorian
 					-- #if AFTER CATA
 					["coord"] = { 41.6, 39.6, NORTHERN_BARRENS },
@@ -3640,10 +3914,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5111, {  -- Rathorian's Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5112, {  -- Ritual Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3725,7 +3999,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1355, {	-- Buckskin Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3812,6 +4086,135 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(208682, {	-- Abandoned Snapjaw Egg
+					["provider"] = { "o", 407117 },	-- Abandoned Snapjaw Nest
+					["coord"] = { 44, 22, THE_BARRENS },
+					["classes"] = { DRUID },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209847, {	-- Arcanic Systems Manual
+					["provider"] = { "o", 409700 },	-- Manual
+					["coord"] = { 56.3, 8.8, THE_BARRENS },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208800, {	-- Baxtan: On Destructive Magics
+					["provider"] = { "o", 407566 },	-- Goblin Tome
+					["coord"] = { 62.7, 36.3, THE_BARRENS },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, o(407510, {	-- Etched Carving
+					["provider"] = { "o", 407505 },	-- Etched Carving
+					["description"] = "Stand on the green dot and read the inscription to activate the hidden path. Blink from green dot to green dot without taking any steps or losing the Path of no Steps debuff.\n\nOnce you've reached the last green dot, you'll see another large carving. Blink to it and quickly read the inscription before the buff falls off to earn the Rune.",
+					["coord"] = { 45.5, 80.0, THE_BARRENS },
+					["classes"] = { MAGE },
+					["groups"] = {
+						i(208799, {	-- Spell Notes: Living Bomb
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415936),	-- Engrave Gloves - Living Bomb
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208739, {	-- Horde Warbanner
+					["provider"] = { "o", 407289 },	-- Horde Warbanner
+					["coord"] = { 52.2, 31.1, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 407454 },	-- Gunpowder Keg
+						{ "i", 208768 },	-- Buccaneer's Matchbox
+						{ "o", 407453 },	-- Southsea Loot Stash
+					},
+					["coord"] = { 62, 45, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
+					["provider"] = { "o", 407347 },	-- Altar of Thorns
+					["description"] = "Channel Health Funnel to 0 health while standing on the Altar of Thorns. You will be healed to full and granted the Rune.",
+					["coord"] = { 58.2, 26.7, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						recipe(403932),	-- Engrave Chest - Master Channeler
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
+					["providers"] = {
+						{ "i", 208682 },	-- Abandoned Snapjaw Egg
+						{ "o", 407120 },	-- Empty Snapjaw Nest
+						{ "n", 209511 },	-- Oasis Snapjaw Hatchling
+					},
+					["description"] = "Bring the Abandoned Snapjaw Egg to an empty nest and interact with the hatchling afterward.",
+					["coord"] = { 48, 40, THE_BARRENS },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 407457 },	-- Stable Hand's Trunk
+					["description"] = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
+					--["coord"] = { , THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
+					["providers"] = {
+						{ "i", 208743 },	-- Soul of Greed
+						{ "o", 407312 },	-- Hungry Idol
+					},
+					["coord"] = { 57.08, 9.73, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+					},
+				})),
+			}),
+			-- #endif
+			n(TREASURES, {
+				o(3642, {	-- Kolkars' Booty
+					-- #if SEASON_OF_DISCOVERY
+					["providers"] = {
+						{ "o", 152618 },	-- Kolkars' Booty
+						{ "o", 152608 },	-- Kolkars' Booty
+					},
+					-- #endif
+					["description"] = "Contains random low level greens.",
+					["coords"] = {
+						{ 43.0, 23.5, THE_BARRENS },
+						{ 52.8, 41.8, THE_BARRENS },
+						{ 44.3, 37.7, THE_BARRENS },
+					},
+					["cost"] = {{ "i", 5020, 1 }},	-- Kolkar Booty Key
+					-- #if SEASON_OF_DISCOVERY
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410023),	-- Engrave Pants - Savage Roar
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+							["classes"] = { MAGE },
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(206382, {	-- Tempest Icon
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410097),	-- Engrave Gloves - Water Shield
+							},
+						})),
+					},
+					-- #endif
+				}),
+			}),
 			n(VENDORS, {
 				n(3495, {	-- Gagsprocket <Engineering Goods>
 					-- #if AFTER CATA
@@ -3863,6 +4266,81 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211653, {	-- Grizzby
+					["sourceQuests"] = {
+						78297,	-- You've Got Yourself A Deal [A]
+						78304,	-- You've Got Yourself A Deal [H]
+					},
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["lvl"] = 20,
+					["groups"] = {
+						i(210822, {	-- Harmonious Epiphany
+							["classes"] = { PRIEST },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(415995),	-- Engrave Chest - Serendipity
+							},
+						}),
+						i(210820, {	-- Rune of Sacrifice
+							["cost"] = 50000,	-- 5g
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410010),	-- Engrave Pants - Divine Sacrifice
+							},
+						}),
+						i(210654, {	-- Spell Notes: Rewind Time
+							["classes"] = { MAGE },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(401761),	-- Engrave Gloves - Rewind Time
+							},
+						}),
+						i(210818, {	-- Rune of Lone Wolf
+							["classes"] = { HUNTER },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(410122),	-- Engrave Chest - Lone Wolf
+							},
+						}),
+						i(210817, {	-- Rune of Survival
+							["classes"] = { DRUID },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(416042),	-- Engrave Chest - Survival of the Fittest
+							},
+						}),
+						i(210825, {	-- Rune of the Warbringer
+							["classes"] = { WARRIOR },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(425445),	-- Engrave Chest - Warbringer
+							},
+						}),
+						i(210824, {	-- Rune of the Pact
+							["classes"] = { WARLOCK },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(425476),	-- Engrave Pants - Demonic Pact
+							},
+						}),
+						i(210653, {	-- Rune of Main Gauche
+							["classes"] = { ROGUE },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(424990),	-- Engrave Gloves - Main Gauche
+							},
+						}),
+						i(210823, {	-- Rune of Dual Wield Specialization
+							["classes"] = { SHAMAN },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(410096),	-- Engrave Chest - Dual Wield Specialization
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if AFTER 3.1.0.9626
 				n(3443, {	-- Grub
 					-- #if AFTER CATA
@@ -3873,7 +4351,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5051),	-- Dig Rat
-						i(44977, {	-- Recipe: Dig Rat Stew
+						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 						}),
 					},
@@ -3886,10 +4364,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 31.8, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					}},
 					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Gray Shirt
-						i(16060),	-- Common White Shirt
 						i(4790, {	-- Inferno Cloak
 							["isLimited"] = true,
 						}),
@@ -3918,7 +4398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3949,8 +4429,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.8, 38.2, THE_BARRENS },
 					-- #endif
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(208773, {	-- Fishing Harpoon
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR, HUNTER },
+							["cost"] = 526,	-- 5s 26c
+						})),
+						-- #endif
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
 				}),
 				n(3658, {	-- Lizzarik <Weapon Dealer>
@@ -4014,7 +4501,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(44977, {	-- Recipe: Dig Rat Stew
+						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 						}),
 					},
@@ -4037,7 +4524,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4050,8 +4537,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
@@ -4062,8 +4549,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5488),	-- Recipe: Crispy Lizard Tail
-						i(5486),	-- Recipe: Strider Stew
+						i(5488),	-- Recipe: Crispy Lizard Tail (RECIPE!)
+						i(5486),	-- Recipe: Strider Stew (RECIPE!)
 					},
 				}),
 				n(3488, {	-- Uthrok <Bowyer & Gunsmith>
@@ -4175,7 +4662,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(3735),	-- Recipe: Hot Lion Chops
+						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 					},
 				}),
 			}),
@@ -4189,8 +4676,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 3458,	-- Razormane Seer
+					["coords"] = {
+						{ 42.6, 79.0, THE_BARRENS },
+						{ 43.0, 83.2, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37661,	-- Razormane Seer
+					["coords"] = {
+						{ 41.8, 82.8, SOUTHERN_BARRENS },
+						{ 43.2, 84.4, SOUTHERN_BARRENS },
+						{ 23.4, 35.4, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				i(5107, {	-- Deckhand's Shirt
 					-- #if AFTER 4.0.3
@@ -4212,19 +4712,79 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.8, 84.8, THE_BARRENS },
 					["cr"] = 3444,	-- Dig Rat
 				}),
+				i(5020, {	-- Kolkar Booty Key
+					["coords"] = {
+						{ 44.4, 23.6, THE_BARRENS },
+						{ 47.4, 41.8, THE_BARRENS },
+						{ 53.6, 40.0, THE_BARRENS },
+					},
+					["crs"] = {
+						3272,	-- Kolkar Wrangler
+						3273,	-- Kolkar Stormer
+						3394,	-- Barak Kodobane
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208765, {	-- Helping Hand (Closed)
+					["provider"] = { "i", 208766 },	-- Helping Hand (Open)
+					["description"] = "The hand will open when you ressurect another player.",
+					["coord"] = { 55.6, 27.2, THE_BARRENS },
+					["classes"] = { PRIEST },
+					["crs"] = {
+						3268,	-- Razormane Thornweaver
+						3267,	-- Razormane Water Seeker
+						3266,	-- Razormane Defender
+						3265,	-- Razormane Hunter
+					},
+					["groups"] = {
+						i(205905, {	-- Memory of a Devout Champion
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425215),	-- Engrave Chest - Twisted Faith
+							},
+						}),
+					},
+				})),
+				-- #endif
 				i(5093, {	-- Razormane Backstabber
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						3457,	-- Razormane Stalker
 						3456,	-- Razormane Pathfinder
 					},
+					["coords"] = {
+						{ 41.8, 79.6, THE_BARRENS },
+						{ 43.8, 83.2, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37560,	-- Razormane Pathfinder
+					["coords"] = {
+						{ 43.4, 82.0, SOUTHERN_BARRENS },
+						{ 41.6, 81.4, SOUTHERN_BARRENS },
+						{ 43.6, 86.2, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				i(5094, {	-- Razormane War Shield
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 3459,	-- Razormane Warfrenzy
+					["coords"] = {
+						{ 41.6, 79.0, THE_BARRENS },
+						{ 42.2, 81.6, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37660,	-- Razormane Warfrenzy
+					["coords"] = {
+						{ 38.0, 81.8, SOUTHERN_BARRENS },
+						{ 43.6, 82.6, SOUTHERN_BARRENS },
+						{ 44.6, 87.8, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				-- #if AFTER 4.2.0.10000
-				i(44977, {	-- Recipe: Dig Rat Stew
+				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 					["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 					["crs"] = {
 						39153,	-- Excavation Raider
@@ -4234,12 +4794,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				i(6663, {	-- Recipe: Elixir of Giant Growth
+				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
-				i(6661, {	-- Recipe: Savory Deviate Delight
+				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208743, {	-- Soul of Greed
+					["description"] = "Use Drain Soul on him.",
+					["coord"] = { 56.2, 8.6, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["cr"] = 3445,	-- Supervisor Lugwizzle
+				})),
+				-- #endif
 			}),
 		},
 	}),

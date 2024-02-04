@@ -150,7 +150,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				-- ["crs"] = { 168647 },	-- Valfir the Unrelenting
 			}),
 			pvp(q(63604, {	-- Shoveltusk Soul
-				["description"] = "Drops from PvP.",			-- Comp Stomp 2 Nov 2021
+				["description"] = "Drops from PvP.",	-- Comp Stomp 2 Nov 2021
 				["provider"] = { "i", 185048 },	-- Shoveltusk Soul
 			})),
 			q(62436, {	-- Shrieker Soul
@@ -250,5 +250,5 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(65029),	-- when learning about 'random' soulshape selection option
+	q(65029),	-- when learning about 'random' soulshape selection option (spellID 360630)
 });

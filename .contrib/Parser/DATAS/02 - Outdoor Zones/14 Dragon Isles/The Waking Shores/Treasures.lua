@@ -16,6 +16,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(198475),	-- Broken Banding
 				},
 			}),
+			o(381071, {	-- Box of Rocks
+				["description"] = "Can almost be anywhere in the zone, wont show up via treasure tracking.",
+				["g"] = {
+					i(199216),	-- A Box of Rocks
+				},
+			}),
 			o(381065, {	-- Broken Waygate
 				["description"] = "In a cave.",
 				["coord"] = { 34.7, 45.8, THE_WAKING_SHORES },
@@ -40,6 +46,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202190),	-- Dead Man's Chains
 					i(202192),	-- Dead Man's Leathers
 					i(202193),	-- Dead Man's Tunic
+				},
+			}),
+			o(380518, {	-- Dislodged Dragoneye
+				["coord"] = { 60.5, 57.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(198626),	-- Dislodged Dragoneye
 				},
 			}),
 			o(385022, {	-- Eroded Fossil
@@ -98,6 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(378857, {	-- Lost Obsidian Cache
 				["description"] = "Collect a Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse.",
 				["coord"] = { 45, 70, THE_WAKING_SHORES },
+				["crs"] = { 191851 },	-- Blacktalon Shadowclaw
 				["questID"] = 70018,
 				["cost"] = {
 					{ "i", 198085, 1 },	-- 1x Lost Obsidian Cache Key

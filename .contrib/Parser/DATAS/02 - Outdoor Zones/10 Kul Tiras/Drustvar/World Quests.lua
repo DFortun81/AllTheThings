@@ -47,10 +47,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			q(48808, {	-- Thesis Statement
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(53273, {	-- Winter's Kiss Cluster
-				["isWorldQuest"] = true,
-				["lvl"] = { 50 },
-			}),
 ]]--
 			q(53701, {	-- A Drust Cause (Faction Assault WQ)
 				["lvl"] = 110,
@@ -692,6 +688,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = { 50 },
+			}),
+			q(53273, {	-- Winter's Kiss Cluster
+				["lvl"] = { 50 },
+				["isWorldQuest"] = true,
+				["requireSkill"] = HERBALISM,
 			}),
 			q(52424, {	-- Work Order: Battle Flag: Rallying Swiftness
 				["lvl"] = { 50 },

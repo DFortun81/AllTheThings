@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["coord"] = { 45.36, 13.52, GORGROND },
 		["lvl"] = 92,
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(2),	-- Skulloc, Son of Gruul
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1235, {	-- Fleshrender Nok'gar
 					["crs"] = {
@@ -106,7 +98,13 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, FINGER},
 					},
 					["g"] = {
-						ach(9083),	-- Militaristic, Expansionist
+						ach(9083, {	-- Militaristic, Expansionist
+							["crs"] = {
+								83026,	-- Siegemaster Olugar
+								84520,	-- Pitwarden Gwarnok
+								81603,	-- Champion Druna
+							},
+						}),
 						i(110055),	-- Gutwrench Goreaxe
 						i(110002),	-- Fleshrender's Meathook
 					},

@@ -296,6 +296,14 @@
 387323@@@X-51 Nether-Rocket
 388516@@@Hao-Yue, River Foreseer
 394209@@@Festering Emerald Drake
+3.4.3.51126
+34767@@@Thalassian Charger
+34769@@@Thalassian Warhorse
+55164@@@Swift Spectral Gryphon
+55531@@@Mechano-Hog
+3.4.3.52237
+416158@@@Nightmarish Emerald Drake
+423869@@@Avatar of Flame
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -354,9 +362,7 @@
 51960@@@Frost Wyrm Mount
 54726@@@Winged Steed of the Ebon Blade
 54727@@@Winged Steed of the Ebon Blade
-55164@@@Swift Spectral Gryphon
 55293@@@Amani War Bear
-55531@@@Mechano-Hog
 58819@@@Swift Brown Steed
 58997@@@Big Blizzard Bear
 58999@@@Big Blizzard Bear
@@ -582,8 +588,6 @@
 153489@@@Iron Chimaera
 7.3.0.24473
 16081@@@Arctic Wolf
-34767@@@Thalassian Charger
-34769@@@Thalassian Warhorse
 69820@@@Sunwalker Kodo
 69826@@@Great Sunwalker Kodo
 73629@@@Exarch's Elekk
@@ -1674,9 +1678,100 @@
 412088@@@Grotto Netherwing Drake
 10.1.5.50379
 397406@@@Wonderous Wavewhisker
-10.1.7.50442
+10.1.5.50504
 171840@@@Coldflame Infernal
 213349@@@Flarecore Infernal
+10.1.5.50747
+417245@@@Ancestral Clefthoof
+10.1.7.50442
 419002@@@Whelpling
 419567@@@Ginormous Grrloc
 420097@@@Azure Worldchiller
+10.1.7.50505
+419345@@@Eve's Ghastly Rider
+10.1.7.50793
+408654@@@Sandy Shalewing
+10.1.7.51261
+374278@@@Renewed Magmammoth
+385262@@@Duskwing Ohuna
+424082@@@Mimiron's Jumpjets
+10.1.7.51754
+358072@@@Bound Blizzard
+10.1.7.51972
+400976@@@Gleaming Moonbeast
+10.2.0.51239
+397406@@@Wondrous Wavewhisker
+422486@@@Verdant Armoredon
+423871@@@Blossoming Dreamstag
+423873@@@Suntouched Dreamstag
+423877@@@Rekindled Dreamstag
+423891@@@Lunar Dreamstag
+424474@@@[PH] Purple Dreamsaber
+424476@@@[PH] Blue Dreamsaber
+424479@@@[PH] Yellow Dreamsaber
+424482@@@[PH] Green Dreamsaber
+424484@@@[PH] Mythic Fire Owl
+424534@@@Vicious Moonbeast
+424535@@@Vicious Moonbeast
+424601@@@[PH] Brown-Furred Spiky Bakar
+424607@@@[PH] Red-Furred Bakar
+424608@@@[PH] White-Furred Bakar
+424610@@@[PH] Yellow-Furred Spiky Bakar
+424611@@@[PH] YellowBlack-Furred Bakar
+425338@@@Flourishing Whimsydrake
+425416@@@Verdant Gladiator's Slitherdrake
+10.2.0.51297
+424474@@@Shadow Dusk Dreamsaber
+424476@@@Winter Night Dreamsaber
+424479@@@Evening Sun Dreamsaber
+424482@@@Morning Flourish Dreamsaber
+424484@@@Anu'relos, Flame's Guidance
+426955@@@Springtide Dreamtalon
+427041@@@Ochre Dreamtalon
+427043@@@Snowfluff Dreamtalon
+10.2.0.51425
+427222@@@Delugen
+427224@@@Talont
+427226@@@Stargrazer
+427435@@@Crimson Glimmerfur
+427546@@@Mammyth
+427549@@@Imagiwing
+427724@@@Salatrancer
+10.2.0.51521
+428005@@@Jeweled Copper Scarab
+428013@@@Deathbringer's Shadowcycle
+428060@@@Golden Regal Scarab
+428062@@@Jeweled Saphire Scarab
+428065@@@Jeweled Jade Scarab
+428067@@@Shadowflame Hellbike
+428068@@@Felreaver Deathcycle
+10.2.0.51685
+10.2.0.52038
+417888@@@Algarian Stormrider
+10.2.0.52095
+424009@@@Runebound Firelord
+10.2.0.52808
+418286@@@Auspicious Arborwyrm
+10.2.5.52206
+374204@@@Explorer's Stonehide Packbeast
+422588@@@Prototype Dynamic Ground Mount [DNT]
+423789@@@Prototype Dynamic BC Flight Mount [DNT]
+427777@@@Heartseeker Mana Ray
+430747@@@Soar
+430833@@@Soar
+431049@@@Grotto Netherwing Drake
+431050@@@Flourishing Whimsydrake
+431357@@@Fur-endship Fox
+431360@@@Twilight Sky Prowler
+431992@@@Compass Rose
+432455@@@Noble Flying Carpet
+432558@@@Majestic Azure Peafowl
+432610@@@PH Red Hornstrider
+10.2.5.52330
+432610@@@Clayscale Hornstrider
+433281@@@Savage Blue Battle Turtle
+10.2.5.52554
+278966@@@Fiery Hearthsteed
+10.2.5.52902
+10.2.5.52968
+430225@@@Gilnean Prowler

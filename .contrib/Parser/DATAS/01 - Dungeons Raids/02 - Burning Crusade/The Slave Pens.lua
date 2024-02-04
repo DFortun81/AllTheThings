@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(260, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
+		["zone-text-areaID"] = 3717,	-- The Slave Pens
 		["sins"] = {
 			"Coilfang: Slave Pens",
 			"Coilfang: The Slave Pens",
@@ -171,8 +172,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27545),	-- Mennu's Scaled Leggings
 						-- #endif
 						i(24359),	-- Princely Reign Leggings
-						i(29674, {	-- Pattern: Nature Armor Kit
-							["timeline"] = { "removed 5.0.4" },
+						i(29674, {	-- Pattern: Nature Armor Kit (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -294,8 +295,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
-							i(29674, {	-- Pattern: Nature Armor Kit
-								["timeline"] = { "removed 5.0.4" },
+							i(29674, {	-- Pattern: Nature Armor Kit (RECIPE!)
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),

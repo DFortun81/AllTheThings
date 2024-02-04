@@ -11,16 +11,16 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6689, {	-- Terrace of Endless Spring
-					crit(1, {	-- Protectors of the Endless
+					crit(19518, {	-- Protectors of the Endless
 						["_encounter"] = { 683, 7 },
 					}),
-					crit(2, {	-- Tsulong
+					crit(19519, {	-- Tsulong
 						["_encounter"] = { 742, 7 },
 					}),
-					crit(3, {	-- Lei Shi
+					crit(19520, {	-- Lei Shi
 						["_encounter"] = { 729, 7 },
 					}),
-					crit(4, {	-- Sha of Fear
+					crit(19521, {	-- Sha of Fear
 						["_encounter"] = { 709, 7 },
 					}),
 				}),
@@ -43,7 +43,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["crs"] = { 62983 },	-- Lei Shi
 					["timeline"] = { ADDED_8_1_5 },
 				}),
-				i(138805, {	-- Illusion: Jade Spirit
+				i(138805, {	-- Illusion: Jade Spirit (ILLUSION!)
 					["crs"] = { 60999 },	-- Sha of Fear
 					["timeline"] = { ADDED_7_0_3 },
 				}),
@@ -52,11 +52,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 			}),
-			d(7, {	-- LFR Queue NPC
+			d(RAID_FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(7, {	-- LFR
+			d(RAID_FINDER, {
 				["ignoreBonus"] = true,
 				["g"] = {
 					i(95617, {	-- Dividends of the Everlasting Spring
@@ -182,18 +182,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							60999,	-- Sha of Fear
 						},
 						["g"] = {
-							i(86238),	-- Pattern: Chestguard of Nemeses
-							i(86272),	-- Pattern: Fists of Lightning
-							i(86279),	-- Pattern: Liferuned Leather Gloves
-							i(86280),	-- Pattern: Murderer's Gloves
-							i(86281),	-- Pattern: Nightfire Robe
-							i(86283),	-- Pattern: Raiment of Blood and Bone
-							i(86284),	-- Pattern: Raven Lord's Gloves
-							i(86297),	-- Pattern: Stormbreaker Chestguard
-							i(86379),	-- Pattern: Robe of Eternal Rule
-							i(86380),	-- Pattern: Imperial Silk Gloves
-							i(86381),	-- Pattern: Legacy of the Emperor
-							i(86382),	-- Pattern: Touch of the Light
+							i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+							i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+							i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+							i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+							i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+							i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+							i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+							i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+							i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+							i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+							i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+							i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
 							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
@@ -210,13 +210,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						},
 						["g"] = {
 							ach(6717, {	-- Power Overwhelming
-								crit(1, {	-- Protector Kaolan defeated last
+								crit(19624, {	-- Protector Kaolan defeated last
 									["cr"] = 60583,	-- Protector Kaolan
 								}),
-								crit(2, {	-- Elder Regail defeated last
+								crit(19625, {	-- Elder Regail defeated last
 									["cr"] = 60585,	-- Elder Regail
 								}),
-								crit(3, {	-- Elder Asani defeated last
+								crit(19626, {	-- Elder Asani defeated last
 									["cr"] = 60586,	-- Elder Asani
 								}),
 							}),
@@ -351,18 +351,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							60999,	-- Sha of Fear
 						},
 						["g"] = {
-							i(86238),	-- Pattern: Chestguard of Nemeses
-							i(86272),	-- Pattern: Fists of Lightning
-							i(86279),	-- Pattern: Liferuned Leather Gloves
-							i(86280),	-- Pattern: Murderer's Gloves
-							i(86281),	-- Pattern: Nightfire Robe
-							i(86283),	-- Pattern: Raiment of Blood and Bone
-							i(86284),	-- Pattern: Raven Lord's Gloves
-							i(86297),	-- Pattern: Stormbreaker Chestguard
-							i(86379),	-- Pattern: Robe of Eternal Rule
-							i(86380),	-- Pattern: Imperial Silk Gloves
-							i(86381),	-- Pattern: Legacy of the Emperor
-							i(86382),	-- Pattern: Touch of the Light
+							i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+							i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+							i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+							i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+							i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+							i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+							i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+							i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+							i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+							i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+							i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+							i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
 							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)

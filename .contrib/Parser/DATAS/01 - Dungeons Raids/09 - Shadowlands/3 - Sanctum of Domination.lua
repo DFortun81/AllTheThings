@@ -17,104 +17,104 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(15122, {	-- The Jailer's Vanguard
-					crit(1, { -- The Tarragrue
+					crit(52470, {	-- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
-					crit(2, { -- The Eye of the Jailer
+					crit(52472, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, LFR_RAID },
 					}),
-					crit(3, { -- The Nine
+					crit(52474, {	-- The Nine
 						["_encounter"] = { 2439, LFR_RAID },
 					}),
 				}),
 				ach(15123, {	-- The Dark Bastille
-					crit(1, { -- Remnant of Ner'zhul
+					crit(52476, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, LFR_RAID },
 					}),
-					crit(2, { -- Soulrender Dormazain
+					crit(52478, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, LFR_RAID },
 					}),
-					crit(3, { -- Painsmith Raznal
+					crit(52480, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, LFR_RAID },
 					}),
 				}),
 				ach(15124, {	-- Shackles of Fate
-					crit(1, { -- Guardian of the First Ones
+					crit(52482, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, LFR_RAID },
 					}),
-					crit(2, { -- Fatescribe Roh-Kalo
+					crit(52484, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, LFR_RAID },
 					}),
-					crit(3, { -- Kel'Thuzad
+					crit(52486, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, LFR_RAID },
 					}),
 				}),
 				ach(15125, {	-- The Reckoning
-					crit(1, {-- Sylvanas Windrunner
+					crit(52488, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				}),
 				ach(15126, {	-- Sanctum of Domination
-					crit(1, { -- The Tarragrue
+					crit(52471, {	-- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
-					crit(2, { -- The Eye of the Jailer
+					crit(52473, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, LFR_RAID },
 					}),
-					crit(3, { -- The Nine
+					crit(52475, {	-- The Nine
 						["_encounter"] = { 2439, LFR_RAID },
 					}),
-					crit(4, { -- Remnant of Ner'zhul
+					crit(52477, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, LFR_RAID },
 					}),
-					crit(5, { -- Soulrender Dormazain
+					crit(52479, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, LFR_RAID },
 					}),
-					crit(6, { -- Painsmith Raznal
+					crit(52481, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, LFR_RAID },
 					}),
-					crit(7, { -- Guardian of the First Ones
+					crit(52483, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, LFR_RAID },
 					}),
-					crit(8, { -- Fatescribe Roh-Kalo
+					crit(52485, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, LFR_RAID },
 					}),
-					crit(9, { -- Kel'Thuzad
+					crit(52487, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, LFR_RAID },
 					}),
-					crit(10, {-- Sylvanas Windrunner
+					crit(52489, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				}),
 				ach(15127, {	-- Heroic: Sanctum of Domination
-					crit(1, { -- The Tarragrue
+					crit(52344, {	-- The Tarragrue
 						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
-					crit(2, { -- The Eye of the Jailer
+					crit(52345, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, HEROIC_RAID },
 					}),
-					crit(3, { -- The Nine
+					crit(52346, {	-- The Nine
 						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
-					crit(4, { -- Remnant of Ner'zhul
+					crit(52348, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
-					crit(5, { -- Soulrender Dormazain
+					crit(52347, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, HEROIC_RAID },
 					}),
-					crit(6, { -- Painsmith Raznal
+					crit(52349, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, HEROIC_RAID },
 					}),
-					crit(7, { -- Guardian of the First Ones
+					crit(52350, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, HEROIC_RAID },
 					}),
-					crit(8, { -- Fatescribe Roh-Kalo
+					crit(52351, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, HEROIC_RAID },
 					}),
-					crit(9, { -- Kel'Thuzad
+					crit(52352, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, HEROIC_RAID },
 					}),
-					crit(10, {-- Sylvanas Windrunner
+					crit(52353, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				}),
@@ -159,100 +159,100 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				-- Fated
 				ach(15667,	-- Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
-					crit(1, { -- The Tarragrue
+					crit(53547, {	-- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
-					crit(2, { -- The Eye of the Jailer
+					crit(53548, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, LFR_RAID },
 					}),
-					crit(3, { -- The Nine
+					crit(53549, {	-- The Nine
 						["_encounter"] = { 2439, LFR_RAID },
 					}),
-					crit(4, { -- Remnant of Ner'zhul
+					crit(53550, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, LFR_RAID },
 					}),
-					crit(5, { -- Soulrender Dormazain
+					crit(53551, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, LFR_RAID },
 					}),
-					crit(6, { -- Painsmith Raznal
+					crit(53552, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, LFR_RAID },
 					}),
-					crit(7, { -- Guardian of the First Ones
+					crit(53553, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, LFR_RAID },
 					}),
-					crit(8, { -- Fatescribe Roh-Kalo
+					crit(53554, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, LFR_RAID },
 					}),
-					crit(9, { -- Kel'Thuzad
+					crit(53555, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, LFR_RAID },
 					}),
-					crit(10, {-- Sylvanas Windrunner
+					crit(53556, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				})),
 				ach(15668,	-- Heroic: Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
-					crit(1, { -- The Tarragrue
+					crit(53558, {	-- The Tarragrue
 						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
-					crit(2, { -- The Eye of the Jailer
+					crit(53559, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, HEROIC_RAID },
 					}),
-					crit(3, { -- The Nine
+					crit(53560, {	-- The Nine
 						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
-					crit(4, { -- Soulrender Dormazain
+					crit(53612, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, HEROIC_RAID },
 					}),
-					crit(5, { -- Remnant of Ner'zhul
+					crit(53562, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
-					crit(6, { -- Painsmith Raznal
+					crit(53563, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, HEROIC_RAID },
 					}),
-					crit(7, { -- Guardian of the First Ones
+					crit(53564, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, HEROIC_RAID },
 					}),
-					crit(8, { -- Fatescribe Roh-Kalo
+					crit(53565, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, HEROIC_RAID },
 					}),
-					crit(9, { -- Kel'Thuzad
+					crit(53566, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, HEROIC_RAID },
 					}),
-					crit(10, {-- Sylvanas Windrunner
+					crit(53567, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				})),
 				ach(15669,	-- Mythic: Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
-					crit(1, { -- The Tarragrue
+					crit(53570, {	-- The Tarragrue
 						["_encounter"] = { 2435, MYTHIC_RAID },
 					}),
-					crit(2, { -- The Eye of the Jailer
+					crit(53571, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, MYTHIC_RAID },
 					}),
-					crit(3, { -- The Nine
+					crit(53572, {	-- The Nine
 						["_encounter"] = { 2439, MYTHIC_RAID },
 					}),
-					crit(4, { -- Soulrender Dormazain
+					crit(53561, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, MYTHIC_RAID },
 					}),
-					crit(5, { -- Remnant of Ner'zhul
+					crit(53573, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, MYTHIC_RAID },
 					}),
-					crit(6, { -- Painsmith Raznal
+					crit(53574, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, MYTHIC_RAID },
 					}),
-					crit(7, { -- Guardian of the First Ones
+					crit(53575, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, MYTHIC_RAID },
 					}),
-					crit(8, { -- Fatescribe Roh-Kalo
+					crit(53576, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, MYTHIC_RAID },
 					}),
-					crit(9, { -- Kel'Thuzad
+					crit(53577, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, MYTHIC_RAID },
 					}),
-					crit(10, {-- Sylvanas Windrunner
+					crit(53578, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, MYTHIC_RAID },
 					}),
 				})),
@@ -632,8 +632,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 							i(186550),	-- Mawsworn Minion (PET!)
 							i(187542),	-- Jaithys, the Prison Blade
 							i(186410, {	-- Jaithys, the Prison Blade
-								["description"] = "Only availabe in the great Vault.",
-								["timeline"] = { REMOVED_10_0_2_LAUNCH },
+								-- #if BEFORE 10.0.2
+								["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
+								-- #endif
 							}),
 							i(186406),	-- Maledict Opus
 							i(187056, {	-- The Devouring Cold
@@ -663,7 +664,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 							i(186398),	-- Edge of Night
 							i(186417),	-- Guard of the Sundered Defender
 							i(186325),	-- Veil of the Banshee Queen
-							i(186342),	-- Epaulettes of the Master Ranger
+							i(186342),	-- Epaulets of the Master Ranger
 							i(186349),	-- Spires of Broken Hope
 							i(186439),	-- Dark Ranger's Quiver
 							i(186334),	-- Witherheart Studded Breastplate
@@ -680,6 +681,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						["g"] = {
+							i(187529),	-- Phylactery Shard (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -717,8 +721,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					},
 					["g"] = {
 						ach(15065, {	-- Eye Wish You Were Here
-							crit(1),	-- All players have Photoflash!
-							crit(2),	-- Eye of the Jailer has Photoflash!
+							crit(52128),	-- All players have Photoflash!
+							crit(52129),	-- Eye of the Jailer has Photoflash!
 						}),
 						i(186554),	-- Eye of Allseeing (PET!)
 						i(186403),	-- Stygian Lance of Passage
@@ -854,8 +858,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "Only availabe in the great Vault.",
-							["timeline"] = { REMOVED_10_0_2_LAUNCH },
+							-- #if BEFORE 10.0.2
+							["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
+							-- #endif
 						}),
 						i(186406),	-- Maledict Opus
 						i(187056, {	-- The Devouring Cold
@@ -885,7 +890,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
-						i(186342),	-- Epaulettes of the Master Ranger
+						i(186342),	-- Epaulets of the Master Ranger
 						i(186349),	-- Spires of Broken Hope
 						i(186439),	-- Dark Ranger's Quiver
 						i(186334),	-- Witherheart Studded Breastplate
@@ -894,6 +899,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186353),	-- Greaves of Haunting Ruination
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
+						i(199181, {	-- Tips of Penitent Steel (Upgrade Legendary)(Fated)
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						}),
 					},
 				}),
 			}),
@@ -901,6 +909,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						["g"] = {
+							i(187530),	-- Phylactery Shard (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1063,8 +1074,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "Only availabe in the great Vault.",
-							["timeline"] = { REMOVED_10_0_2_LAUNCH },
+							-- #if BEFORE 10.0.2
+							["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
+							-- #endif
 						}),
 						i(186406),	-- Maledict Opus
 						i(187056, {	-- The Devouring Cold
@@ -1094,7 +1106,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
-						i(186342),	-- Epaulettes of the Master Ranger
+						i(186342),	-- Epaulets of the Master Ranger
 						i(186349),	-- Spires of Broken Hope
 						i(186439),	-- Dark Ranger's Quiver
 						i(186334),	-- Witherheart Studded Breastplate
@@ -1105,6 +1117,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186438),	-- Old Warrior's Soul
 						i(187592),	-- Wraithwisp Sinew (Upgrade Legendary)
 						i(182177),	-- Owlcat Soul (SS!)
+						i(199182, {	-- Fractured Soulsight (Upgrade Legendary) (Fated)
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						}),
 					},
 				}),
 			}),
@@ -1112,6 +1127,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				n(QUESTS, {
 					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						["g"] = {
+							i(187531),	-- Phylactery Shard (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1285,8 +1303,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "Only availabe in the great Vault.",
-							["timeline"] = { REMOVED_10_0_2_LAUNCH },
+							-- #if BEFORE 10.0.2
+							["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
+							-- #endif
 						}),
 						i(186406),	-- Maledict Opus
 						i(187056, {	-- The Devouring Cold
@@ -1333,7 +1352,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
-						i(186342),	-- Epaulettes of the Master Ranger
+						i(186342),	-- Epaulets of the Master Ranger
 						i(186349),	-- Spires of Broken Hope
 						i(186439),	-- Dark Ranger's Quiver
 						i(186334),	-- Witherheart Studded Breastplate
@@ -1344,29 +1363,15 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186438),	-- Old Warrior's Soul
 						i(187593),	-- Ethereal Fletching (Upgrade Legendary)
 						i(182177),	-- Owlcat Soul (SS!)
+						i(199183, {	-- Condemned Queen's Grip (Upgrade Legendary)(fated)
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						}),
 					},
 				}),
 			}),
 		},
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		inst(1193, {	-- Sanctum of Domination
-			i(181374),	-- Sylvanas Shadowlands Bow
-			i(186414, {	-- Rae'shalare, Death's Whisper (LFR)
-				["bonusID"] = 451,
-			}),
-			i(186414, {	-- Rae'shalare, Death's Whisper (Heroic)
-				["bonusID"] = 1,
-			}),
-			i(186414, {	-- Rae'shalare, Death's Whisper (Mythic)
-				["bonusID"] = 450,
-			}),
-		}),
-	}),
-});
 
 root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1193, {	-- Sanctum of Domination
@@ -1466,7 +1471,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(70479),	-- Soulrender Dormazain - Fated - Rep/Flux
 		q(70480),	-- Soulrender Dormazain - Fated - Rep/Flux
 
-		q(64608),	-- Garrosh cinematic (Normal / Heroic)
+		q(64608),	-- Garrosh cinematic (Normal / Heroic) (spellID 358664)
 
 		q(64477),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
 		q(64478),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)

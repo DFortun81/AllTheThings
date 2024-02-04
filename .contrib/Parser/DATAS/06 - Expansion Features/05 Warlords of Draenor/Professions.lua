@@ -7,368 +7,368 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "adde
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(9409),	-- Draenor Archaeologist
 			ach(9414, {	-- Ogre Observer
-				crit(1, {	-- Eye of Har'gunn the Blind
+				crit(25692, {	-- Eye of Har'gunn the Blind
 					["provider"] = { "i", 114191 },	-- Eye of Har'gunn the Blind
 				}),
-				crit(2, {	-- Gladiator's Shield
+				crit(25693, {	-- Gladiator's Shield
 					["provider"] = { "i", 114189 },	-- Gladiator's Shield
 				}),
-				crit(3, {	-- Imperial Decree Stele
+				crit(25694, {	-- Imperial Decree Stele
 					["provider"] = { "i", 114194 },	-- Imperial Decree Stele
 				}),
-				crit(4, {	-- Mortar and Pestle
+				crit(25695, {	-- Mortar and Pestle
 					["provider"] = { "i", 114190 },	-- Mortar and Pestle
 				}),
-				crit(5, {	-- Ogre Figurine
+				crit(25696, {	-- Ogre Figurine
 					["provider"] = { "i", 114185 },	-- Ogre Figurine
 				}),
-				crit(6, {	-- Pictogram Carving
+				crit(25697, {	-- Pictogram Carving
 					["provider"] = { "i", 114187 },	-- Pictogram Carving
 				}),
-				crit(7, {	-- Rylak Riding Harness
+				crit(25698, {	-- Rylak Riding Harness
 					["provider"] = { "i", 114193 },	-- Rylak Riding Harness
 				}),
-				crit(8, {	-- Stone Dentures
+				crit(25699, {	-- Stone Dentures
 					["provider"] = { "i", 114192 },	-- Stone Dentures
 				}),
-				crit(9, {	-- Stone Manacles
+				crit(25700, {	-- Stone Manacles
 					["provider"] = { "i", 114183 },	-- Stone Manacles
 				}),
-				crit(10, {	-- Stonemaul Succession Stone
+				crit(25701, {	-- Stonemaul Succession Stone
 					["provider"] = { "i", 114181 },	-- Stonemaul Succession Stone
 				}),
 			}),
 			ach(9415, {	-- Secrets of Skettis
-				crit(1, {	-- Dreamcatcher
+				crit(25702, {	-- Dreamcatcher
 					["provider"] = { "i", 114197 },	-- Dreamcatcher
 				}),
-				crit(2, {	-- Burial Urn
+				crit(25703, {	-- Burial Urn
 					["provider"] = { "i", 114198 },	-- Burial Urn
 				}),
-				crit(3, {	-- Decree Scrolls
+				crit(25704, {	-- Decree Scrolls
 					["provider"] = { "i", 114199 },	-- Decree Scrolls
 				}),
-				crit(4, {	-- Solar Orb
+				crit(25705, {	-- Solar Orb
 					["provider"] = { "i", 114200 },	-- Solar Orb
 				}),
-				crit(5, {	-- Sundial
+				crit(25706, {	-- Sundial
 					["provider"] = { "i", 114201 },	-- Sundial
 				}),
-				crit(6, {	-- Talonpriest Mask
+				crit(25707, {	-- Talonpriest Mask
 					["provider"] = { "i", 114202 },	-- Talonpriest Mask
 				}),
-				crit(7, {	-- Outcast Dreamcatcher
+				crit(25708, {	-- Outcast Dreamcatcher
 					["provider"] = { "i", 114203 },	-- Outcast Dreamcatcher
 				}),
-				crit(8, {	-- Apexis Crystal
+				crit(25709, {	-- Apexis Crystal
 					["provider"] = { "i", 114204 },	-- Apexis Crystal
 				}),
-				crit(9, {	-- Apexis Hieroglyph
+				crit(25710, {	-- Apexis Hieroglyph
 					["provider"] = { "i", 114205 },	-- Apexis Hieroglyph
 				}),
-				crit(10, {	-- Apexis Scroll
+				crit(25711, {	-- Apexis Scroll
 					["provider"] = { "i", 114206 },	-- Apexis Scroll
 				}),
 			}),
 			ach(9413, {	-- Strength and Honor
-				crit(1, {	-- Ancestral Talisman
+				crit(25673, {	-- Ancestral Talisman
 					["provider"] = { "i", 114171 },	-- Ancestral Talisman
 				}),
-				crit(2, {	-- Barbed Fishing Hook
+				crit(25674, {	-- Barbed Fishing Hook
 					["provider"] = { "i", 114163 },	-- Barbed Fishing Hook
 				}),
-				crit(3, {	-- Blackrock Razor
+				crit(25675, {	-- Blackrock Razor
 					["provider"] = { "i", 114157 },	-- Blackrock Razor
 				}),
-				crit(4, {	-- Calcified Eye in a Jar
+				crit(25676, {	-- Calcified Eye in a Jar
 					["provider"] = { "i", 114165 },	-- Calcified Eye in a Jar
 				}),
-				crit(5, {	-- Ceremonial Tattoo Needles
+				crit(25677, {	-- Ceremonial Tattoo Needles
 					["provider"] = { "i", 114167 },	-- Ceremonial Tattoo Needles
 				}),
-				crit(6, {	-- Cracked Ivory Idol
+				crit(25678, {	-- Cracked Ivory Idol
 					["provider"] = { "i", 114169 },	-- Cracked Ivory Idol
 				}),
-				crit(7, {	-- Doomsday Prophecy
+				crit(25679, {	-- Doomsday Prophecy
 					["provider"] = { "i", 114177 },	-- Doomsday Prophecy
 				}),
-				crit(8, {	-- Elemental Bellows
+				crit(25680, {	-- Elemental Bellows
 					["provider"] = { "i", 114155 },	-- Elemental Bellows
 				}),
-				crit(9, {	-- Fang-Scarred Frostwolf Axe
+				crit(25681, {	-- Fang-Scarred Frostwolf Axe
 					["provider"] = { "i", 114141 },	-- Fang-Scarred Frostwolf Axe
 				}),
-				crit(10, {	-- Flask of Blazegrease
+				crit(25682, {	-- Flask of Blazegrease
 					["provider"] = { "i", 114173 },	-- Flask of Blazegrease
 				}),
-				crit(11, {	-- Frostwolf Ancestry Scrimshaw
+				crit(25683, {	-- Frostwolf Ancestry Scrimshaw
 					["provider"] = { "i", 114143 },	-- Frostwolf Ancestry Scrimshaw
 				}),
-				crit(12, {	-- Gronn-Tooth Necklace
+				crit(25684, {	-- Gronn-Tooth Necklace
 					["provider"] = { "i", 114175 },	-- Gronn-Tooth Necklace
 				}),
-				crit(13, {	-- Hooked Dagger
+				crit(25685, {	-- Hooked Dagger
 					["provider"] = { "i", 114161 },	-- Hooked Dagger
 				}),
-				crit(14, {	-- Metalworker's Hammer
+				crit(25686, {	-- Metalworker's Hammer
 					["provider"] = { "i", 114153 },	-- Metalworker's Hammer
 				}),
-				crit(15, {	-- Screaming Bullroarer
+				crit(25687, {	-- Screaming Bullroarer
 					["provider"] = { "i", 114149 },	-- Screaming Bullroarer
 				}),
-				crit(16, {	-- Warsinger's Drums
+				crit(25688, {	-- Warsinger's Drums
 					["provider"] = { "i", 114147 },	-- Warsinger's Drums
 				}),
-				crit(17, {	-- Warsong Ceremonial Pike
+				crit(25689, {	-- Warsong Ceremonial Pike
 					["provider"] = { "i", 114151 },	-- Warsong Ceremonial Pike
 				}),
-				crit(18, {	-- Weighted Chopping Axe
+				crit(25690, {	-- Weighted Chopping Axe
 					["provider"] = { "i", 114159 },	-- Weighted Chopping Axe
 				}),
-				crit(19, {	-- Wolfskin Snowshoes
+				crit(25691, {	-- Wolfskin Snowshoes
 					["provider"] = { "i", 114145 },	-- Wolfskin Snowshoes
 				}),
 			}),
 			ach(9412, {	-- Arakkoa Archivist
-				crit(1, {	-- Pristine Dreamcatcher
+				crit(25663, {	-- Pristine Dreamcatcher
 					["_quests"] = { 36771 },
 				}),
-				crit(2, {	-- Pristine Burial Urn
+				crit(25664, {	-- Pristine Burial Urn
 					["_quests"] = { 36772 },
 				}),
-				crit(3, {	-- Pristine Decree Scrolls
+				crit(25665, {	-- Pristine Decree Scrolls
 					["_quests"] = { 36773 },
 				}),
-				crit(4, {	-- Pristine Solar Orb
+				crit(25666, {	-- Pristine Solar Orb
 					["_quests"] = { 36774 },
 				}),
-				crit(5, {	-- Pristine Sundial
+				crit(25667, {	-- Pristine Sundial
 					["_quests"] = { 36775 },
 				}),
-				crit(6, {	-- Pristine Talonpriest Mask
+				crit(25668, {	-- Pristine Talonpriest Mask
 					["_quests"] = { 36776 },
 				}),
-				crit(7, {	-- Pristine Outcast Dreamcatcher
+				crit(25669, {	-- Pristine Outcast Dreamcatcher
 					["_quests"] = { 36777 },
 				}),
-				crit(8, {	-- Pristine Apexis Crystal
+				crit(25670, {	-- Pristine Apexis Crystal
 					["_quests"] = { 36778 },
 				}),
-				crit(9, {	-- Pristine Apexis Hieroglyph
+				crit(25671, {	-- Pristine Apexis Hieroglyph
 					["_quests"] = { 36779 },
 				}),
-				crit(10, {	-- Pristine Apexis Scroll
+				crit(25672, {	-- Pristine Apexis Scroll
 					["_quests"] = { 36780 },
 				}),
 			}),
 			ach(9419, {	-- Draenor Curator
-				crit(1, {	-- Pristine Dreamcatcher
+				crit(25663, {	-- Pristine Dreamcatcher
 					["_quests"] = { 36771 },
 				}),
-				crit(2, {	-- Pristine Burial Urn
+				crit(25664, {	-- Pristine Burial Urn
 					["_quests"] = { 36772 },
 				}),
-				crit(3, {	-- Pristine Decree Scrolls
+				crit(25665, {	-- Pristine Decree Scrolls
 					["_quests"] = { 36773 },
 				}),
-				crit(4, {	-- Pristine Solar Orb
+				crit(25666, {	-- Pristine Solar Orb
 					["_quests"] = { 36774 },
 				}),
-				crit(5, {	-- Pristine Sundial
+				crit(25667, {	-- Pristine Sundial
 					["_quests"] = { 36775 },
 				}),
-				crit(6, {	-- Pristine Talonpriest Mask
+				crit(25668, {	-- Pristine Talonpriest Mask
 					["_quests"] = { 36776 },
 				}),
-				crit(7, {	-- Pristine Outcast Dreamcatcher
+				crit(25669, {	-- Pristine Outcast Dreamcatcher
 					["_quests"] = { 36777 },
 				}),
-				crit(8, {	-- Pristine Apexis Crystal
+				crit(25670, {	-- Pristine Apexis Crystal
 					["_quests"] = { 36778 },
 				}),
-				crit(9, {	-- Pristine Apexis Hieroglyph
+				crit(25671, {	-- Pristine Apexis Hieroglyph
 					["_quests"] = { 36779 },
 				}),
-				crit(10, { -- Pristine Apexis Scroll
+				crit(25672, {	-- Pristine Apexis Scroll
 					["_quests"] = { 36780 },
 				}),
-				crit(11, { -- Pristine Fang-Scarred Frostwolf Axe
+				crit(25634, {	-- Pristine Fang-Scarred Frostwolf Axe
 					["_quests"] = { 36725 },
 				}),
-				crit(12, { -- Pristine Frostwolf Ancestry Scrimshaw
+				crit(25635, {	-- Pristine Frostwolf Ancestry Scrimshaw
 					["_quests"] = { 36743 },
 				}),
-				crit(13, { -- Pristine Wolfskin Snowshoes
+				crit(25636, {	-- Pristine Wolfskin Snowshoes
 					["_quests"] = { 36744 },
 				}),
-				crit(14, { -- Pristine Warsinger's Drums
+				crit(25637, {	-- Pristine Warsinger's Drums
 					["_quests"] = { 36745 },
 				}),
-				crit(15, { -- Pristine Screaming Bullroarer
+				crit(25638, {	-- Pristine Screaming Bullroarer
 					["_quests"] = { 36746 },
 				}),
-				crit(16, { -- Pristine Warsong Ceremonial Pike
+				crit(25639, {	-- Pristine Warsong Ceremonial Pike
 					["_quests"] = { 36747 },
 				}),
-				crit(17, { -- Pristine Metalworker's Hammer
+				crit(25640, {	-- Pristine Metalworker's Hammer
 					["_quests"] = { 36748 },
 				}),
-				crit(18, { -- Pristine Elemental Bellows
+				crit(25641, {	-- Pristine Elemental Bellows
 					["_quests"] = { 36749 },
 				}),
-				crit(19, { -- Pristine Blackrock Razor
+				crit(25642, {	-- Pristine Blackrock Razor
 					["_quests"] = { 36750 },
 				}),
-				crit(20, { -- Pristine Weighted Chopping Axe
+				crit(25643, {	-- Pristine Weighted Chopping Axe
 					["_quests"] = { 36751 },
 				}),
-				crit(21, { -- Pristine Hooked Dagger
+				crit(25644, {	-- Pristine Hooked Dagger
 					["_quests"] = { 36752 },
 				}),
-				crit(22, { -- Pristine Barbed Fishing Hook
+				crit(25645, {	-- Pristine Barbed Fishing Hook
 					["_quests"] = { 36753 },
 				}),
-				crit(23, { -- Pristine Calcified Eye In A Jar
+				crit(25646, {	-- Pristine Calcified Eye In A Jar
 					["_quests"] = { 36754 },
 				}),
-				crit(24, { -- Pristine Ceremonial Tattoo Needles
+				crit(25647, {	-- Pristine Ceremonial Tattoo Needles
 					["_quests"] = { 36755 },
 				}),
-				crit(25, { -- Pristine Ancestral Talisman
+				crit(25648, {	-- Pristine Ancestral Talisman
 					["_quests"] = { 36756 },
 				}),
-				crit(26, { -- Pristine Cracked Ivory Idol
+				crit(25649, {	-- Pristine Cracked Ivory Idol
 					["_quests"] = { 36757 },
 				}),
-				crit(27, { -- Pristine Flask of Blazegrease
+				crit(25650, {	-- Pristine Flask of Blazegrease
 					["_quests"] = { 36758 },
 				}),
-				crit(28, { -- Pristine Gronn-Tooth Necklace
+				crit(25651, {	-- Pristine Gronn-Tooth Necklace
 					["_quests"] = { 36759 },
 				}),
-				crit(29, { -- Pristine Doomsday Prophecy
+				crit(25652, {	-- Pristine Doomsday Prophecy
 					["_quests"] = { 36760 },
 				}),
-				crit(30, { -- Pristine Stonemaul Succession Stone
+				crit(25653, {	-- Pristine Stonemaul Succession Stone
 					["_quests"] = { 36761 },
 				}),
-				crit(31, { -- Pristine Stone Manacles
+				crit(25654, {	-- Pristine Stone Manacles
 					["_quests"] = { 36762 },
 				}),
-				crit(32, { -- Pristine Ogre Figurine
+				crit(25655, {	-- Pristine Ogre Figurine
 					["_quests"] = { 36763 },
 				}),
-				crit(33, { -- Pristine Pictogram Carving
+				crit(25656, {	-- Pristine Pictogram Carving
 					["_quests"] = { 36764 },
 				}),
-				crit(34, { -- Pristine Gladiator's Shield
+				crit(25657, {	-- Pristine Gladiator's Shield
 					["_quests"] = { 36765 },
 				}),
-				crit(35, { -- Pristine Mortar and Pestle
+				crit(25658, {	-- Pristine Mortar and Pestle
 					["_quests"] = { 36766 },
 				}),
-				crit(36, { -- Pristine Eye of Har'guun the Blind
+				crit(25659, {	-- Pristine Eye of Har'guun the Blind
 					["_quests"] = { 36767 },
 				}),
-				crit(37, { -- Pristine Stone Dentures
+				crit(25660, {	-- Pristine Stone Dentures
 					["_quests"] = { 36768 },
 				}),
-				crit(38, { -- Pristine Rylak Riding Harness
+				crit(25661, {	-- Pristine Rylak Riding Harness
 					["_quests"] = { 36769 },
 				}),
-				crit(39, { -- Pristine Imperial Decree Stele
+				crit(25662, {	-- Pristine Imperial Decree Stele
 					["_quests"] = { 36770 },
 				}),
 			}),
 			ach(9411, {	-- Highmaul Historian
-				crit(1, { -- Pristine Stonemaul Succession Stone
+				crit(25653, {	-- Pristine Stonemaul Succession Stone
 					["_quests"] = { 36761 },
 				}),
-				crit(2, { -- Pristine Stone Manacles
+				crit(25654, {	-- Pristine Stone Manacles
 					["_quests"] = { 36762 },
 				}),
-				crit(3, { -- Pristine Ogre Figurine
+				crit(25655, {	-- Pristine Ogre Figurine
 					["_quests"] = { 36763 },
 				}),
-				crit(4, { -- Pristine Pictogram Carving
+				crit(25656, {	-- Pristine Pictogram Carving
 					["_quests"] = { 36764 },
 				}),
-				crit(5, { -- Pristine Gladiator's Shield
+				crit(25657, {	-- Pristine Gladiator's Shield
 					["_quests"] = { 36765 },
 				}),
-				crit(6, { -- Pristine Mortar and Pestle
+				crit(25658, {	-- Pristine Mortar and Pestle
 					["_quests"] = { 36766 },
 				}),
-				crit(7, { -- Pristine Eye of Har'guun the Blind
+				crit(25659, {	-- Pristine Eye of Har'guun the Blind
 					["_quests"] = { 36767 },
 				}),
-				crit(8, { -- Pristine Stone Dentures
+				crit(25660, {	-- Pristine Stone Dentures
 					["_quests"] = { 36768 },
 				}),
-				crit(9, { -- Pristine Rylak Riding Harness
+				crit(25661, {	-- Pristine Rylak Riding Harness
 					["_quests"] = { 36769 },
 				}),
-				crit(10, {	-- Pristine Imperial Decree Stele
+				crit(25662, {	-- Pristine Imperial Decree Stele
 					["_quests"] = { 36770 },
 				}),
 			}),
 			ach(9422),	-- The Search For Fact, Not Truth (30)
 			ach(9410, {	-- Unite the Clans
-				crit(1, {	-- Pristine Fang-Scarred Frostwolf Axe
+				crit(25634, {	-- Pristine Fang-Scarred Frostwolf Axe
 					["_quests"] = { 36725 },
 				}),
-				crit(2, {	-- Pristine Frostwolf Ancestry Scrimshaw
+				crit(25635, {	-- Pristine Frostwolf Ancestry Scrimshaw
 					["_quests"] = { 36743 },
 				}),
-				crit(3, {	-- Pristine Wolfskin Snowshoes
+				crit(25636, {	-- Pristine Wolfskin Snowshoes
 					["_quests"] = { 36744 },
 				}),
-				crit(4, {	-- Pristine Warsinger's Drums
+				crit(25637, {	-- Pristine Warsinger's Drums
 					["_quests"] = { 36745 },
 				}),
-				crit(5, {	-- Pristine Screaming Bullroarer
+				crit(25638, {	-- Pristine Screaming Bullroarer
 					["_quests"] = { 36746 },
 				}),
-				crit(6, {	-- Pristine Warsong Ceremonial Pike
+				crit(25639, {	-- Pristine Warsong Ceremonial Pike
 					["_quests"] = { 36747 },
 				}),
-				crit(7, {	-- Pristine Metalworker's Hammer
+				crit(25640, {	-- Pristine Metalworker's Hammer
 					["_quests"] = { 36748 },
 				}),
-				crit(8, {	-- Pristine Elemental Bellows
+				crit(25641, {	-- Pristine Elemental Bellows
 					["_quests"] = { 36749 },
 				}),
-				crit(9, {	-- Pristine Blackrock Razor
+				crit(25642, {	-- Pristine Blackrock Razor
 					["_quests"] = { 36750 },
 				}),
-				crit(10, {	-- Pristine Weighted Chopping Axe
+				crit(25643, {	-- Pristine Weighted Chopping Axe
 					["_quests"] = { 36751 },
 				}),
-				crit(11, {	-- Pristine Hooked Dagger
+				crit(25644, {	-- Pristine Hooked Dagger
 					["_quests"] = { 36752 },
 				}),
-				crit(12, {	-- Pristine Barbed Fishing Hook
+				crit(25645, {	-- Pristine Barbed Fishing Hook
 					["_quests"] = { 36753 },
 				}),
-				crit(13, {	-- Pristine Calcified Eye In A Jar
+				crit(25646, {	-- Pristine Calcified Eye In A Jar
 					["_quests"] = { 36754 },
 				}),
-				crit(14, {	-- Pristine Ceremonial Tattoo Needles
+				crit(25647, {	-- Pristine Ceremonial Tattoo Needles
 					["_quests"] = { 36755 },
 				}),
-				crit(15, {	-- Pristine Ancestral Talisman
+				crit(25648, {	-- Pristine Ancestral Talisman
 					["_quests"] = { 36756 },
 				}),
-				crit(16, {	-- Pristine Cracked Ivory Idol
+				crit(25649, {	-- Pristine Cracked Ivory Idol
 					["_quests"] = { 36757 },
 				}),
-				crit(17, {	-- Pristine Flask of Blazegrease
+				crit(25650, {	-- Pristine Flask of Blazegrease
 					["_quests"] = { 36758 },
 				}),
-				crit(18, {	-- Pristine Gronn-Tooth Necklace
+				crit(25651, {	-- Pristine Gronn-Tooth Necklace
 					["_quests"] = { 36759 },
 				}),
-				crit(19, {	-- Pristine Doomsday Prophecy
+				crit(25652, {	-- Pristine Doomsday Prophecy
 					["_quests"] = { 36760 },
 				}),
 			}),
@@ -601,7 +601,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "adde
 			}),
 		})),
 		prof(FIRST_AID, {
-			ach(9505, { -- Draenor Medic (700)
+			ach(9505, {	-- Draenor Medic (700)
 				["timeline"] = { "added 6.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),

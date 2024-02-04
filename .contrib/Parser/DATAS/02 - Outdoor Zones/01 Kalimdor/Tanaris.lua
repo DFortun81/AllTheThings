@@ -2810,6 +2810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4935, {	-- Tanaris Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Southsea Pirates (A)
 							["races"] = ALLIANCE_ONLY,
@@ -2847,6 +2848,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25107,	-- The Grand Goblet (H)
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -3110,7 +3112,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25018, {	-- Andoren Will Know
 					["qg"] = 38849,	-- Megs Dreadshredder
 					["sourceQuests"] = {
-						25001,	-- Sandscraper
 						25014,	-- Sandscraper's Treasure
 					},
 					["coord"] = { 44.5, 52.6, TANARIS },
@@ -3283,7 +3284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
 						-- #if AFTER WRATH
-						recipe(64054),	-- Clamlette Magnifique
+						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -3292,11 +3293,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
 					["coord"] = { 52.63, 28.12, TANARIS },
 					["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
-					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique
+					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)
 					["requireSkill"] = COOKING,
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
-						recipe(64054),	-- Clamlette Magnifique
+						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 					},
 				}),
 				q(2882, {	-- Cuergo's Gold
@@ -3869,6 +3870,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4507, {	-- Pawn Captures Queen
 					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
+					["sourceQuest"] = 4496,	-- Bungle in the Jungle
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { UNGORO_CRATER },
@@ -4411,7 +4413,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25421, {	-- The Grand Tablet (A)
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within  ?? Ancient Obstacles
 					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -4429,7 +4430,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25107, {	-- The Grand Tablet (H)
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within
 					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -5048,7 +5048,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(17055, {	-- Changuk Smasher
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 12.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -5114,13 +5114,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 27.0, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(9303),	-- Recipe: Philosopher's Stone
-						i(12958),	-- Recipe: Transmute Arcanite
-						i(9304),	-- Recipe: Transmute Iron to Gold
-						i(9305, {	-- Recipe: Transmute Mithril to Truesilver
+						i(9303),	-- Recipe: Philosopher's Stone (RECIPE!)
+						i(12958),	-- Recipe: Transmute Arcanite (RECIPE!)
+						i(9304),	-- Recipe: Transmute Iron to Gold (RECIPE!)
+						i(9305, {	-- Recipe: Transmute Mithril to Truesilver (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5176,14 +5176,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.6, 29.0, TANARIS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(8125, {	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 28.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -5199,16 +5199,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.6, 22.1, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(13939, {	-- Recipe: Spotted Yellowtail
+						i(13939, {	-- Recipe: Spotted Yellowtail (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13942, {	-- Recipe: Grilled Squid
+						i(13942, {	-- Recipe: Grilled Squid (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13945, {	-- Recipe: Nightfin Soup
+						i(13945, {	-- Recipe: Nightfin Soup (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13946, {	-- Recipe: Poached Sunscale Salmon
+						i(13946, {	-- Recipe: Poached Sunscale Salmon (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 					},
@@ -5241,7 +5241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.6, 27.0, TANARIS },
 					["timeline"] = { "added 7.0.3.22396" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
@@ -5251,14 +5251,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.4, 27.8, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(8139, {	-- Jabbey <General Goods>
 					["coord"] = { 67.0, 22.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5334,10 +5334,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(71714, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						5623,	-- Wastewander Assassin
@@ -5345,47 +5345,47 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				i(72028, {	-- Pattern: Tough Scorpid Boots
-					["timeline"] = { "added 4.0.3" },
+				i(72028, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(8399, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5615,	-- Wastewander Rogue
 					-- #endif
 				}),
-				i(72026, {	-- Pattern: Tough Scorpid Bracers
-					["timeline"] = { "added 4.0.3" },
+				i(72026, {	-- Pattern: Tough Scorpid Bracers (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(8397, {	-- Pattern: Tough Scorpid Bracers (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5617,	-- Wastewander Shadow Mage
 					-- #endif
 				}),
-				i(72029, {	-- Pattern: Tough Scorpid Breastplate
-					["timeline"] = { "added 4.0.3" },
+				i(72029, {	-- Pattern: Tough Scorpid Breastplate (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(8395, {	-- Pattern: Tough Scorpid Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5618,	-- Wastewander Bandit
 					-- #endif
 				}),
-				i(72025, {	-- Pattern: Tough Scorpid Gloves
-					["timeline"] = { "added 4.0.3" },
+				i(72025, {	-- Pattern: Tough Scorpid Gloves (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(8398, {	-- Pattern: Tough Scorpid Gloves (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5616,	-- Wastewander Thief
 					-- #endif
 				}),
-				i(72033, {	-- Pattern: Tough Scorpid Helm
-					["timeline"] = { "added 4.0.3" },
+				i(72033, {	-- Pattern: Tough Scorpid Helm (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(8402, {	-- Pattern: Tough Scorpid Helm (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						7883,	-- Andre Firebeard
@@ -5394,20 +5394,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				i(72030, {	-- Pattern: Tough Scorpid Leggings
-					["timeline"] = { "added 4.0.3" },
+				i(72030, {	-- Pattern: Tough Scorpid Leggings (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(8401, {	-- Pattern: Tough Scorpid Leggings (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5615,	-- Wastewander Rogue
 					-- #endif
 				}),
-				i(72027, {	-- Pattern: Tough Scorpid Shoulders
-					["timeline"] = { "added 4.0.3" },
+				i(72027, {	-- Pattern: Tough Scorpid Shoulders (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(8400, {	-- Pattern: Tough Scorpid Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						7883,	-- Andre Firebeard
@@ -5444,14 +5444,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(8483, {	-- Wastewander Water Pouch
-					["timeline"] = { "deleted 4.0.3" },
 					["crs"] = {
+						-- #if AFTER 4.0.3
+						44613,	-- Wastewander Darkcaster
+						44612,	-- Wastewander Tracker
+						44611,	-- Wastewander Survivalist
+						-- #else
 						5623,	-- Wastewander Assassin
 						5618,	-- Wastewander Bandit
 						5615,	-- Wastewander Rogue
 						7805,	-- Wastewander Scofflaw
 						5617,	-- Wastewander Shadow Mage
 						5616,	-- Wastewander Thief
+						-- #endif
 					},
 				}),
 			}),

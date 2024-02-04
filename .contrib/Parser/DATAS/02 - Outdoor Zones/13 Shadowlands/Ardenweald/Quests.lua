@@ -62,6 +62,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, ARDENWEALD },
+					["g"] = {
+						i(179389),	-- Animacone (QI!)
+					},
 				}),
 				q(60575, {	-- Belly Full of Fae
 					["sourceQuests"] = {
@@ -84,6 +87,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 169202 },	-- Dreamweaver
 					["coord"] = { 61.4, 40.9, ARDENWEALD },
+					["g"] = {
+						i(179922),	-- Animacone (QI!)
+					},
 				}),
 				q(60594, {	-- One Special Spirit
 					["sourceQuests"] = {
@@ -149,6 +155,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 					["provider"] = { "n", 169686 },	-- Niya
 					["coord"] = { 66.9, 26.5, ARDENWEALD },
+					["g"] = {
+						i(180126),	-- Drained Wildseed (QI!)
+					},
 				}),
 				q(60637, {	-- The End of Former Friends
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
@@ -166,6 +175,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ "n", 169868 },	-- Niya	(post-pickup)
 					},
 					["coord"] = { 68.4, 24.5, ARDENWEALD },
+					["g"] = {
+						i(180172),	-- Animacone (QI!)
+					},
 				}),
 				q(60648, {	-- Survivors of Heartwood Grove
 					["sourceQuests"] = {
@@ -256,6 +268,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60632 },	-- I Know Your Face
 					["provider"] = { "n", 169935 },	-- Ara'lon
 					["coord"] = { 51.3, 34.0, ARDENWEALD },
+					["g"] = {
+						i(180207),	-- Spirit Cradle (QI!)
+					},
 				}),
 				q(60520, {	-- Nightmares Manifest
 					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
@@ -676,6 +691,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "o", 349515 },	-- Battered Journal
 					["coord"] = { 72.2, 33.9, ARDENWEALD },
 					["g"] = {
+						i(173798),	-- Battered Journal (QI!)
+						i(173873),	-- Crumpled Journal Page (QI!)
+						i(155876),	-- Stained Journal Page (QI!)
+						i(173872),	-- Torn Journal Page (QI!)
 						i(183851),	-- Withergrove Shardling
 					},
 				}),
@@ -707,6 +726,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59802 },	-- The Crumbling Village
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, ARDENWEALD },
+					["g"] = {
+						i(177878),	-- Animacone (QI!)
+					},
 				}),
 				q(58166, {	-- Unknown Assailants
 					["sourceQuests"] = {
@@ -733,6 +755,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58265 },	-- Blooming Villains
 					["provider"] = { "n", 160749 },	-- Primrose
 					["coord"] = { 53.4, 58.7, ARDENWEALD },
+					["g"] = {
+						i(174078),	-- Primrose's Pyrotechnic Powder (QI!)
+					},
 				}),
 				q(58264, {	-- Wake Up, Get Up, Get Out There
 					["sourceQuests"] = { 58265 },	-- Blooming Villains
@@ -815,6 +840,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 				["provider"] = { "n", 160894 },	-- Droman Aliothe
 				["coord"] = { 60.0, 53.9, ARDENWEALD },
+				["g"] = {
+					i(184157),	-- Hibernal Hollow Supplies (QI!)
+				},
 			}),
 			q(59120, {	-- Renny the Vulpin
 				["sourceQuests"] = { 59087 },	-- That Darn Fox!
@@ -852,6 +880,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 165382 },	-- Gormsmith Cavina
 				["coord"] = { 51.5, 34.0, ARDENWEALD },
 				["g"] = {
+					i(176760),	-- Buzzkill's Stinger (QI!)
 					i(180474),	-- Culexwood Dagger
 					i(178022),	-- Culexwood Knife
 					i(178021),	-- Culexwood Longbow
@@ -873,7 +902,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2 },
 			}, {
 				q(62773, {	-- Dreamshrine Basin [Pre-60]
 					["coord"] = { 62.0, 52.8, ARDENWEALD },
@@ -893,18 +922,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62775, {	-- The Waning Grove [Pre-60]
 					["coord"] = { 69.0, 22.4, ARDENWEALD },
 					["g"] = {
+						i(184101),	-- Drained Wildseed (QI!)
 						i(181415),	-- Faemoss Leggings
-						i(181417),	-- Runetender Pants
 						i(181416),	-- Gormhusk Kilt
+						i(181417),	-- Runetender Pants
 						i(181414),	-- Sapsteel Legplates
 					},
 				}),
 				q(62774, {	-- Tranquil Pools [Pre-60]
 					["coord"] = { 63.3, 39.3, ARDENWEALD },
 					["g"] = {
+						i(172948),	-- Animacone (QI!)
 						i(181420),	-- Faemoss Amice
-						i(181418),	-- Runetender Shoulderguards
 						i(181421),	-- Gormhusk Mantle
+						i(181418),	-- Runetender Shoulderguards
 						i(181419),	-- Sapsteel Pauldrons
 					},
 				}),
@@ -945,10 +976,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(QUESTS, {
-				q(62936),	-- some quest/story RP w/ Bwonsamdi about Rezan
-				q(63427),	-- Intro Skip
+				q(62936),	-- Saw Bwonsamdi (spellID 345430)
 				q(63007),	-- Intro Skip
-				q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in ardenweald)
+				q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in Ardenweald) (spellID 356055)
 			}),
 		}),
 	}),

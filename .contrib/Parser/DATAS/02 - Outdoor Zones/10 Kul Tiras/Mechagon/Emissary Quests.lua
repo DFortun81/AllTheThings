@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		n(EMISSARY_QUESTS, {
-			q(55348, {	-- Supplies from the Rustbolt Resistance
+			q(55348, bubbleDownSelf({ ["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, EXALTED } }, {	-- Supplies from the Rustbolt Resistance
 				["repeatable"] = true,
 				["lvl"] = 120,
 				["g"] = {
@@ -30,10 +30,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 						i(168906),	-- Blueprint: Holographic Digitalization Relay
 						i(169171),	-- Blueprint: Microbot XD
 						i(168494),	-- Blueprint: Rustbolt Resistance Insignia
-						i(168368),	-- Recipe: Famine Evaluator And Snack Table (Rank 3)
+						i(168368),	-- Recipe: Famine Evaluator And Snack Table [Rank 3] (RECIPE!)
 					}),
 				},
-			}),
+			})),
 		}),
 	}),
 })));

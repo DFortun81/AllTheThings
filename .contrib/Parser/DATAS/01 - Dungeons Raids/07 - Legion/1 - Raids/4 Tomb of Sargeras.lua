@@ -18,45 +18,61 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(11787, {    -- The Gates of Hell
-                    crit(1, {    -- Goroth
+                    crit(36469, {    -- Goroth
                         ["_encounter"] = { 1862, LFR_RAID },
                     }),
-                    crit(2, {    -- Harjatan
+                    crit(36470, {    -- Harjatan
                         ["_encounter"] = { 1856, LFR_RAID },
                     }),
-                    crit(3, {    -- Mistress Sassz'ine
+                    crit(36471, {    -- Mistress Sassz'ine
                         ["_encounter"] = { 1861, LFR_RAID },
                     }),
                 }),
 				ach(11788, {    -- Wailing Halls
-                    crit(1, {    -- Demonic Inquisition
+                    crit(36472, {    -- Demonic Inquisition
                         ["_encounter"] = { 1867, LFR_RAID },
                     }),
-                    crit(2, {    -- Sisters of the Moon
+                    crit(36473, {    -- Sisters of the Moon
                         ["_encounter"] = { 1903, LFR_RAID },
                     }),
-                    crit(3, {    -- The Desolate Host
+                    crit(36474, {    -- The Desolate Host
                         ["_encounter"] = { 1896, LFR_RAID },
                     }),
                 }),
 				ach(11789, {    -- Chamber of the Avatar
-                    crit(1, {    -- Maiden of Vigilance
+                    crit(36475, {    -- Maiden of Vigilance
                         ["_encounter"] = { 1897, LFR_RAID },
                     }),
-                    crit(2, {    -- Fallen Avatar
+                    crit(36476, {    -- Fallen Avatar
                         ["_encounter"] = { 1873, LFR_RAID },
                     }),
                 }),
 				ach(11790, {    -- Deceiver's Fall
-                    crit(1, {    -- Kil'jaeden
+                    crit(36477, {    -- Kil'jaeden
                         ["_encounter"] = { 1898, LFR_RAID },
                     }),
                 }),
-				-- TODO: meta-achievement symlink
 				ach(11763, {	-- Glory of the Tomb Raider
-					title(362),	-- <Name> the Tomb Raider
-					i(101426),	-- Micronax (PET!)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						11724,	-- Fel Turkey!
+						11696,	-- Grin and Bear It
+						11683,	-- Bingo!
+						11676,	-- Five Course Seafood Buffet
+						11675,	-- Sky Walker
+						11674,	-- Great Soul, Great Purpose
+						11773,	-- Wax On, Wax Off
+						11770,	-- Dark Souls
+						11699,	-- Grand Fin-ale
+					}},
+					["groups"] = {
+						title(362, {	-- , the Tomb Raider
+							["style"] = 3,
+						}),
+						i(101426),		-- Micronax (PET!)
+					},
 				}),
+				ach(11760, {["timeline"] = {ADDED_7_2_0}}),	-- Retro Trend (Tomb of Sargeras)
 				ach(11782),	-- Tomb of Sargeras Guild Run
 			}),
 			n(WORLD_QUESTS, {
@@ -93,6 +109,14 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				n(118930, {	-- Ixallon the Soulbreaker
+					["description"] = "Last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick acess to him.",
+					["g"] = {
+						i(212779),	-- Grimoire of the Bloodrage Tyrant (CI!)
+					},
+				}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * confirmed in HEROIC MODE (jic they somehow vary in each difficulty)
@@ -123,42 +147,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
 			d(LFR_RAID, {
-				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(147518, {	-- Cache of Fel Treasures [Raid Finder]
-							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(147497, {	-- Encrusted Naga Scale [Raid Finder]
-							["repeatable"] = true,
-							["questID"] = 47114,	-- Tomb of Sargeras: The Tomb's Mistress [Raid Finder]
-							["g"] = {
-								i(147518),	-- Cache of Fel Treasures [Raid Finder]
-							},
-						}),
-						i(147509, {	-- Seal of the Deceiver [Raid Finder]
-							["repeatable"] = true,
-							["questID"] = 47126,	-- Tomb of Sargeras: The Deceiver [Raid Finder]
-							["g"] = {
-								i(147518),	-- Cache of Fel Treasures [Raid Finder]
-							},
-						}),
-						i(147505, {	-- Wailing Soul [Raid Finder]
-							["repeatable"] = true,
-							["questID"] = 47122,	-- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
-							["g"] = {
-								i(147518),	-- Cache of Fel Treasures [Raid Finder]
-							},
-						}),
-						i(147501, {	-- Worshipper's Scrawlings [Raid Finder]
-							["repeatable"] = true,
-							["questID"] = 47118,	-- Tomb of Sargeras: Free The Tormented [Raid Finder]
-							["g"] = {
-								i(147518),	-- Cache of Fel Treasures [Raid Finder]
-							},
-						}),
-					},
-				}),
 				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
@@ -228,6 +216,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					e(1861, {	-- Mistress Sassz'ine
 						["creatureID"] = 115767,	-- Mistress Sassz'ine
 						["g"] = {
+							i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
+								["timeline"] = { ADDED_10_2_5 },
+							}),
 							i(143643),	-- Abyss Worm (MOUNT!)
 							i(147049),	-- Azure Squallshaper's Helm
 							i(146990),	-- Hundred-Fathom Veil
@@ -445,50 +436,34 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					}),
 				}),
 			}),
-			d(NORMAL_RAID, {
-				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
+			d(NORMAL_PLUS_RAID, {
+				e(1861, {	-- Mistress Sassz'ine
+					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
-						i(147519, {	-- Cache of Fel Treasures (Normal)
-							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(147498, {	-- Encrusted Naga Scale (Normal)
-							["questID"] = 47115,	-- Tomb of Sargeras: The Tomb's Mistress (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(147519),	-- Cache of Fel Treasures (Normal)
-							},
-						}),
-						i(147510, {	-- Seal of the Deceiver (Normal)
-							["questID"] = 47127,	-- Tomb of Sargeras: The Deceiver (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(147519),	-- Cache of Fel Treasures (Normal)
-							},
-						}),
-						q(47725, {	-- Tomb of Sargeras: Aegwynn's Path (Normal)
-							["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-							["altQuests"] = {
-								47726,	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
-								47727,	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-							},
-							["provider"] = { "n", 119723 },	-- Image of Aegwynn
-						}),
-						i(147506, {	-- Wailing Soul (Normal)
-							["questID"] = 47123,	-- Tomb of Sargeras: The Fallen Avatar (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(147519),	-- Cache of Fel Treasures (Normal)
-							},
-						}),
-						i(147502, {	-- Worshipper's Scrawlings (Normal)
-							["questID"] = 47119,	-- Tomb of Sargeras: Free The Tormented (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(147519),	-- Cache of Fel Treasures (Normal)
-							},
+						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
 						}),
 					},
+				}),
+				e(1898, {	-- Kil'jaeden
+					["creatureID"] = 117269,	-- Kil'jaeden
+					["g"] = {
+						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
+							["timeline"] = { "added 7.2.5" },
+						}),
+					},
+				}),
+			}),
+			d(NORMAL_RAID, {
+				n(QUESTS, {
+					q(47725, {	-- Tomb of Sargeras: Aegwynn's Path (Normal)
+						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["altQuests"] = {
+							47726,	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
+							47727,	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+						},
+						["provider"] = { "n", 119723 },	-- Image of Aegwynn
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
@@ -564,7 +539,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1856, {	-- Harjatan
 					["creatureID"] = 116407,	-- Harjatan
 					["g"] = {
-						ach(11699),	-- Grand Fin-ale
+						ach(11699, {	-- Grand Fin-ale
+							["crs"] = { 121071 },	-- Elder Murk-Eye
+						}),
 						i(147037),	-- Dripping Arcfin Shoulderpads
 						i(147043),	-- Hauberk of Frozen Mist
 						i(146994),	-- Robe of Aqueous Command
@@ -599,7 +576,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
 					},
 					["g"] = {
-						ach(11773),	-- Wax On, Wax Off
+						ach(11773, {	-- Wax On, Wax Off
+							["crs"] = { 121498 },	-- Twilight Soul
+						}),
 						i(147033),	-- Lunar-Wrath Headgear
 						i(147054),	-- Mantle of Waning Radiance
 						i(146997),	-- Shoulderpads of Whispering Twilight
@@ -752,9 +731,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1898, {	-- Kil'jaeden
 					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
-						ach(11770),	-- Dark Souls
-						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
-							["timeline"] = { "added 7.2.5" },
+						ach(11770, {	-- Dark Souls
+							["crs"] = { 121193 },	-- Shadowsoul
 						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
@@ -779,45 +757,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(HEROIC_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(147520, {	-- Cache of Fel Treasures (Heroic)
-							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(147499, {	-- Encrusted Naga Scale (Heroic)
-							["questID"] = 47116,	-- Tomb of Sargeras: The Tomb's Mistress (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147520),	-- Cache of Fel Treasures (Heroic)
-							},
-						}),
-						i(147511, {	-- Seal of the Deceiver (Heroic)
-							["questID"] = 47128,	-- Tomb of Sargeras: The Deceiver (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147520),	-- Cache of Fel Treasures (Heroic)
-							},
-						}),
-						q(47726, {	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
-							["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-							["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-							["provider"] = { "n", 119723 },	-- Image of Aegwynn
-						}),
-						i(147507, {	-- Wailing Soul (Heroic)
-							["questID"] = 47124,	-- Tomb of Sargeras: The Fallen Avatar (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147520),	-- Cache of Fel Treasures (Heroic)
-							},
-						}),
-						i(147503, {	-- Worshipper's Scrawlings (Heroic)
-							["questID"] = 47120,	-- Tomb of Sargeras: Free The Tormented (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147520),	-- Cache of Fel Treasures (Heroic)
-							},
-						}),
-					},
+					q(47726, {	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
+						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+						["provider"] = { "n", 119723 },	-- Image of Aegwynn
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
@@ -1076,9 +1020,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						ach(11874, {	-- Ahead of the Curve: Kil'jaeden
 							["u"] = REMOVED_FROM_GAME,
 						}),
-						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
-							["timeline"] = { "added 7.2.5" },
-						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
 						i(147048),	-- Vicegrip of the Unrepentant
@@ -1102,45 +1043,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(MYTHIC_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(147521, {	-- Cache of Fel Treasures (Mythic)
-							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(147500, {	-- Encrusted Naga Scale (Mythic)
-							["questID"] = 47117,	-- Tomb of Sargeras: The Tomb's Mistress (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147521),	-- Cache of Fel Treasures (Mythic)
-							},
-						}),
-						i(147512, {	-- Seal of the Deceiver (Mythic)
-							["questID"] = 47129,	-- Tomb of Sargeras: The Deceiver (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147521),	-- Cache of Fel Treasures (Mythic)
-							},
-						}),
-						q(47727, {	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-							["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
-							["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-							["provider"] = { "n", 119723 },	-- Image of Aegwynn
-						}),
-						i(147508, {	-- Wailing Soul (Mythic)
-							["questID"] = 47125,	-- Tomb of Sargeras: The Fallen Avatar (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147521),	-- Cache of Fel Treasures (Mythic)
-							},
-						}),
-						i(147504, {	-- Worshipper's Scrawlings (Mythic)
-							["questID"] = 47121,	-- Tomb of Sargeras: Free The Tormented (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(147521),	-- Cache of Fel Treasures (Mythic)
-							},
-						}),
-					},
+					q(47727, {	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
+						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+						["provider"] = { "n", 119723 },	-- Image of Aegwynn
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
@@ -1414,9 +1321,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							title(357),	-- %s the Darkener
 						}),
 						ach(11784),	-- Mythic: Kil'jaeden Guild Run
-						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
-							["timeline"] = { "added 7.2.5" },
-						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
 						i(147048),	-- Vicegrip of the Unrepentant
@@ -1465,13 +1369,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46332),	-- [DNT]Shadow Priests - Elune Death Enabled — for trying to use Xal'atath to absorb Elune's power after Sisters of the Moon
 	}),
 });
-root(ROOTS.NeverImplemented, tier(LEGION_TIER, {
-	inst(875, {	-- Tomb of Sargeras
-		i(147036),	-- Fel-Stippled Legguards		(removed Beta)
-		i(147058),	-- Chaos-Calming Wristguards	(removed Beta)
-		i(147074),	-- Vambraces of Resoulte Justice
-		i(157761),	-- Barbaric Mindslaver
-		i(157763),	-- Engine of Eradication
-		i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
-	}),
-}));

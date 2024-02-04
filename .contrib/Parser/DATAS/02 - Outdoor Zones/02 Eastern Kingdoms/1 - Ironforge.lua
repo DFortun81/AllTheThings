@@ -26,6 +26,7 @@ local COOKING_AWARD_GROUPS = {
 local FISHING_AWARD_GROUPS = {
 	i(67414, {	-- Bag of Shiny Things
 		["timeline"] = { "added 4.0.1.12984" },
+		["sym"] = {{"fill"}},
 	}),
 };
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
@@ -48,45 +49,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Cold Water Fishing
-							["_quests"] = { 29342 },	-- Cold Water Fishing
-						}),
-						crit(2, {	-- One fer the Ages
-							["_quests"] = { 29343 },	-- One fer the Ages
-						}),
-						crit(3, {	-- Fish fer Squrky
-							["_quests"] = { 29344 },	-- Fish fer Squrky
-						}),
-						crit(4, {	-- Live Bait
-							["_quests"] = { 29347 },	-- Live Bait
-						}),
-						crit(5, {	-- The Gnomish Bait-o-Matic
-							["_quests"] = { 29350 },	-- The Gnomish Bait-o-Matic
-						}),
-					},
+					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5841, {	-- Let's Do Lunch: Ironforge
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(1, {	-- A Round for the Guards
-							["_quests"] = { 29351 },	-- A Round for the Guards
-						}),
-						crit(2, {	-- A Fowl Shortage
-							["_quests"] = { 29352 },	-- A Fowl Shortage
-						}),
-						crit(3, {	-- Keepin' the Haggis Flowin'
-							["_quests"] = { 29353 },	-- Keepin' the Haggis Flowin'
-						}),
-						crit(4, {	-- Can't Get Enough Spice Bread
-							["_quests"] = { 29355 },	-- Can't Get Enough Spice Bread
-						}),
-						crit(5, {	-- I Need to Cask a Favor
-							["_quests"] = { 29356 },	-- I Need to Cask a Favor
-						}),
-					},
+					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(TBC_PHASE_ONE, ach(1837, {	-- Old Ironjaw
 					["provider"] = { "i", 34484 },	-- Old Ironjaw
@@ -303,7 +272,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/5 Alterac Granite
-							["provider"] = { "i", 4521 },	-- Alterac Granite
+							["providers"] = {
+								{ "i", 4521 },	-- Alterac Granite
+								{ "o", 2714 },	-- Alterac Granite
+							},
+							["coord"] = { 43.2, 27.9, HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -319,6 +292,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
+				}),
+				q(5641, {	-- A Lack of Fear
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["coord"] = { 25, 8.2, IRONFORGE },
+					["altQuests"] = {
+						5647,	-- A Lack of Fear [Darnassus]
+						5645,	-- A Lack of Fear [Stormwind City]
+					},
+					["timeline"] = { "removed 2.3.0" },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF },
+					["lvl"] = 20,
+					-- #if BEFORE 2.3.0
+					["groups"] = {
+						recipe(6346),	-- Fear Ward
+					},
+					-- #endif
 				}),
 				q(4512, {	-- A Little Slime Goes a Long Way (1/2)
 					["qg"] = 9616,	-- Laris Geardawdle
@@ -465,6 +455,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						5570,	-- Bruuk Barleybeard <Bartender>
+						209004,	-- Bruart
+					},
+					["coord"] = { 72.2, 76.6, IRONFORGE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN, WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+						i(205683, {	-- Rune of Rebuke
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425621),	-- Engrave Pants - Rebuke
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(29355, {	-- Can't Get Enough Spice Bread
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
@@ -533,52 +550,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 						}),
 					},
-				}),
-				q(3632, {	-- Gnome Engineering
-					["providers"] = {
-						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						--3632,	-- Gnome Engineering
-						3633,	-- Goblin Engineering
-						3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 68.8, 45.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.1.2000" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(4181, {	-- Goblin Engineering
-					["providers"] = {
-						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						3633,	-- Goblin Engineering
-						3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-						--4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 68.8, 45.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.1.2000" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
 				}),
 				q(1682, {	-- Grey Iron Weapons
 					["qg"] = 6031,	-- Tormus Deepforge
@@ -994,27 +965,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				q(5283, {	-- The Art of the Armorsmith (A)
-					["qg"] = 5164,	-- Grumnus Steelshaper
-					["altQuests"] = {
-						5301,	-- The Art of the Armorsmith (H)
-						5284,	-- The Way of the Weaponsmith (A)
-						5302,	-- The Way of the Weaponsmith (H)
-					},
-					-- #if BEFORE 4.0.3
-					["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
-					-- #endif
-					["coord"] = { 50.2, 42.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 7937, 4 },	-- Ornate Mithril Helm
-						{ "i", 7936, 2 },	-- Ornate Mithril Boots
-						{ "i", 7935, 1 },	-- Ornate Mithril Breastplate
-					},
-					["lvl"] = 40,
-				}),
 				q(29350, {	-- The Gnomish Bait-o-Matic
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
@@ -1070,25 +1020,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
-				q(1789, {	-- The Symbol of Life
-					["qg"] = 6179,	-- Tiza Battleforge
-					-- #if BEFORE 4.0.3
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"The Tome of Divinity\" (Quest #1783) in your quest log.",
-					-- #endif
-					["coord"] = { 27.4, 12, IRONFORGE },
+				q(2997, {	-- The Tome of Divinity [Dun Morogh]
+					["qg"] = 1232,	-- Azar Stronghammer <Paladin Trainer>
+					["coord"] = { 47.6, 52, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
-					["repeatable"] = true,
+					["isBreadcrumb"] = true,
 					["lvl"] = 12,
-					-- #if BEFORE 4.0.3
-					["groups"] = {
-						i(6866),	-- Symbol of Life
-					},
-					-- #endif
+				}),
+				q(2999, {	-- The Tome of Divinity [Ironforge]
+					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+					["coord"] = { 23.4, 6.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DWARF },
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 12,
+				}),
+				q(3000, {	-- The Tome of Divinity [Stormwind City]
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["coord"] = { 37.2, 33, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DWARF },
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 12,
 				}),
 				q(1645, {	-- The Tome of Divinity (1a/8)
 					["qg"] = 6179,	-- Tiza Battleforge
+					["sourceQuests"] = {
+						2997,	-- The Tome of Divinity [Dun Morogh]
+						2999,	-- The Tome of Divinity [Ironforge]
+						3000,	-- The Tome of Divinity [Stormwind City]
+					},
 					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
@@ -1148,16 +1113,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1783, {	-- The Tome of Divinity (6/8)
-					["providers"] = {
-						{ "n", 6178 },	-- Muiredon Battleforge
-						{ "i", 6866 },	-- Symbol of Life
-					},
+					["qg"] = 6178,	-- Muiredon Battleforge
 					["sourceQuest"] = 1779,	-- The Tome of Divinity (5/8)
 					["coord"] = { 23.6, 8.6, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
+					["groups"] = {
+						q(1789, {	-- The Symbol of Life
+							["qg"] = 6179,	-- Tiza Battleforge
+							["coord"] = { 27.4, 12, IRONFORGE },
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Symbol of Life
+									["questID"] = 1783,	-- The Tome of Divinity (5/8)
+									["provider"] = { "i", 6866 },	-- Symbol of Life
+								}),
+							},
+						}),
+					},
 				}),
 				q(1784, {	-- The Tome of Divinity (7/8)
 					["qg"] = 6177,	-- Narm Faulk
@@ -1188,28 +1164,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						--recipe(7328),	-- Redemption [Rank 1]
 					},
 					-- #endif
-				}),
-				q(5284, {	-- The Way of the Weaponsmith (A)
-					["qg"] = 11146,	-- Ironus Coldsteel
-					["altQuests"] = {
-						5283,	-- The Art of the Armorsmith (A)
-						5301,	-- The Art of the Armorsmith (H)
-						5302,	-- The Way of the Weaponsmith (H)
-					},
-					-- #if BEFORE 4.0.3
-					["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
-					-- #endif
-					["coord"] = { 49.8, 45, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 3853, 4 },	-- Moonsteel Broadsword
-						{ "i", 3855, 4 },	-- Massive Iron Axe
-						{ "i", 7941, 2 },	-- Heavy Mithril Axe
-						{ "i", 7945, 2 },	-- Big Black Mace
-					},
-					["lvl"] = 40,
 				}),
 				q(1680, {	-- Tormus Deepforge
 					["qg"] = 6114,	-- Muren Stormpike
@@ -1272,6 +1226,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(203754, {	-- Archmage Antonidas: The Unabridged Autobiography
+					["provider"] = { "o", 386691 },	-- Library Book
+					["coord"] = { 75.7, 10.5, IRONFORGE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 405946 },	-- Dusty Chest
+					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
+					["coord"] = { 51.9, 12.8, IRONFORGE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400081),	-- Engrave Pants - Between the Eyes
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -1440,8 +1412,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "common_recipes_vendor", 49701}}, -- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
@@ -1455,7 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 						i(16041, {	-- Schematic: Thorium Grenade
@@ -1896,6 +1868,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 32.6, 58.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Gray Shirt
+						16060,	-- Common White Shirt
 						837,    -- Heavy Weave Armor
 						3589,    -- Heavy Weave Belt
 						3590,    -- Heavy Weave Bracers
@@ -1909,11 +1884,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						846,    -- Tanned Leather Jerkin
 						845,    -- Tanned Leather Pants
 					}},
-					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Gray Shirt
-						i(16060),	-- Common White Shirt
-					},
 				}),
 				n(5122, {	-- Skolmin Goldfury <Bow Merchant>
 					["coord"] = { 71.6, 66.2, IRONFORGE },
@@ -1938,10 +1908,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.6, 54.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(13478, {	-- Recipe: Elixir of Superior Defense
+						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1950,10 +1920,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 47.8, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(7976, {	-- Thalgus Thunderfist

@@ -13,6 +13,9 @@
 .contrib/Source Code/Parser/.vs/
 .contrib/Source Code/ATT/bin
 .contrib/Source Code/Parser/obj/
+.contrib/Source Code/Item DB Compare Tool/bin/
+.contrib/Source Code/Blizzard API Harvester/packages/
+.contrib/Source Code/Parser/packages/
 .contrib/Harvesters/API.key
 .contrib/Parser/ATT.pdb
 .contrib/Source Code/Blizzard API Harvester/bin/
@@ -39,5 +42,4 @@ __pycache__
 /.vscode/settings.json
 .venv
 .contrib/Parser/*.txt
-.contrib/Source Code/Item DB Compare Tool/bin/
-.contrib/Source Code/Blizzard API Harvester/packages/
+.contrib/.source/Spell Learned At/bin/

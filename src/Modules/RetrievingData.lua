@@ -22,13 +22,21 @@ local RETRIEVING = strsplit(" ", RETRIEVING_DATA);
 local api = {};
 app.Modules.RetrievingData = api;
 -- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
-api.IsRetrieving = function(s)
-	return (not s
-		or s == ""
-		or s == RETRIEVING_DATA
-		or s == RETRIEVING_ITEM_INFO
-		or s:find(RETRIEVING)
-		or s:find("^%[%]"))
+api.IsRetrieving = function(text)
+	return (not text
+		or text == ""
+		or text == RETRIEVING_DATA
+		or text == RETRIEVING_ITEM_INFO
+		or text:find(RETRIEVING)
+		or text:find("^%[%]"))
+		-- make sure regardless of conditional return we return a true here for consistency
+		and true;
+end
+-- Returns whether the provided string is empty or equals RETRIEVING_DATA which indicates the data is not yet loaded in the Client (not used for Items or in general)
+api.IsRetrievingData = function(text)
+	return (not text
+		or text == ""
+		or text == RETRIEVING_DATA)
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end

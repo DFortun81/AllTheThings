@@ -1,53 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	m(BORALUS, {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
-				q(54463, {	-- Alchemical Equations
-					["requireSkill"] = ALCHEMY,
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.60, BORALUS },
+				n(132228, {	-- Elric Whalgrene <Alchemy Trainer>
+					["coord"] = { 74.2, 6.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(50121, {	-- Casting the First Stone (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50122, {	-- Ocular Extracts (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuest"] = 50121,	-- Casting the First Stone (A)
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50124, {	-- Changing the Scenery (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuest"] = 50121,	-- Casting the First Stone (A)
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50125, {	-- A Possible Solution (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuests"] = {
-						50122,	-- Ocular Extracts (A)
-						50124,	-- Changing the Scenery (A)
-					},
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
+					["g"] = appendGroups(BFA_ALCHEMY, {
+						r(264255),	-- Kul Tiran Alchemy
+					}),
 				}),
 			}),
 			prof(BLACKSMITHING, {
@@ -71,7 +34,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			prof(ENCHANTING, {
 				n(136041, {	-- Emily Fairweather <Enchanting Trainer>
-					--["coord"] = { }
+					["coord"] = { 74.1, 11.5, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_ENCHANTING, {
 						r(264473),	-- Kul Tiran Enchanting
@@ -87,40 +50,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				}),
 			}),
 			prof(ENGINEERING, {
-				q(54475, {	-- Engineered Blueprints
-					["requireSkill"] = ENGINEERING,
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
+			}),
+			prof(HERBALISM, {
+				n(136096, {	-- Declan Senal <Herbalism Trainer>
+					["coord"] = { 71.5, 4.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(55028, {	-- It's Scrap Work... (A)
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
-					["description"] = "Requires 150 Kul Tiran Engineering.",
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53947, {	-- In the Dunes (A)
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
-					["sourceQuest"] = 55028,	-- It's Scrap Work... (A)
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53949, {	-- The Ub3r-Spanner (A)
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
-					["sourceQuest"] = 53948,	-- Vengeful Venture (A)
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(282975), -- Schematic: The Ub3r-Spanner
-					},
+					["g"] = appendGroups(BFA_HERBALISM, {
+						r(265831),	-- Herb Gathering (Kul Tiran)
+					}),
 				}),
 			}),
 			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
@@ -193,6 +130,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 			})),
+			prof(LEATHERWORKING, {
+				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
+					["coord"] = { 75.5, 12.6, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_LEATHERWORKING, {
+						r(264592),	-- Kul Tiran Leatherworking
+					}),
+				}),
+			}),
 			prof(JEWELCRAFTING, {
 				q(54479, {	-- Jeweled Designs
 					["requireSkill"] = JEWELCRAFTING,
@@ -311,196 +257,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 			}),
-			prof(LEATHERWORKING, {
-				q(54481, {	-- Leathered Patterns
-					["requireSkill"] = LEATHERWORKING,
-					["provider"] = { "n", 136063 },	-- Cassandra Brennor
-					["coord"] = { 75.5, 12.6, BORALUS },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(55227, {	-- The Aeonian Artisan
-					["provider"] = { "n", 136063 },	-- Cassandra Brennor
-					["coord"] = { 75.5, 12.6, BORALUS },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55228, {	-- The Audition (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55227,	-- The Aeonian Artisan
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55229, {	-- Repaying the Debt
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55230, {	-- Telonis' Prized Leather
-					["provider"] = { "n", 151287 },	-- Telonis
-					["coord"] = { 42.6, 60.6, STORMWIND_CITY },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55231, {	-- The Other Ghostdancer
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55232, {	-- Mevris' Menace
-					["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
-					["coord"] = { 53.6, 54.4, VALSHARAH },
-					["sourceQuest"] = 55231,	-- The Other Ghostdancer
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55233, {	-- Picking Bones (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55234, {	-- Make Some Noise (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuests"] = {
-						55230,	-- Telonis' Prized Leather
-						55232,	-- Mevris' Menace
-						55233,	-- Picking Bones (A)
-					},
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						un(15, recipe(293135)),	-- Recipe: Drum of Primal Might
-					},
-				}),
-				q(55235, {	-- Instruments of Destruction (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55234,	-- Make Some Noise
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(293076),	-- Recipe: Mallet of Thunderous Skins
-					},
-				}),
-			}),
 			prof(MINING, {
-				-- Monelite Deposit
-				q(48752, {	-- A Need For Coal
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 50 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
+				n(136091, {	-- Myra Cabot <Mining Trainer>
+					["coord"] = { 75.2, 7.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253334),	-- Monelite Deposit (Rank 2)
-					},
-				}),
-				q(48761, {	-- Spiderphobia
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 130 Kul'Tiran Mining.",
-					["sourceQuest"] = 48752,	-- A Need For Coal
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253335),	-- Monelite Deposit (Rank 3)
-					},
-				}),
-				-- Monelite Seam
-				q(48764, {	-- Don't Pick a Fight
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 50 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253343),	-- Monelite Seam (Rank 2)
-					},
-				}),
-				-- Storm Silver Deposit
-				q(51568, {	-- Ritualistic Preparations (A)
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coords"] = {
-						{ 75.0, 7.6, BORALUS },	-- Trainer Location
-						{ 73.4, 8.4, BORALUS },	-- Forge
-						{ 41.8, 30.0, BORALUS },	-- Ingot Blessing
-					},
-					["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253337),	-- Storm Silver Deposit (Rank 2)
-					},
-				}),
-				q(48768, {	-- Brined Justice (A)
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["sourceQuest"] = 51568,	-- Ritualistic Preparations (A)
-					["description"] = "Requires 135 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253338),	-- Storm Silver Deposit Rank 3
-					},
-				}),
-				-- Storm Silver Seam
-				q(48770, {	-- Three Sheets to the Wind
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = MINING,
-					["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
-					["coords"] = {
-						{ 75.0, 7.61, BORALUS },	-- Trainer Location
-						{ 75.2, 14.3, BORALUS },	-- Harold Atkey
-						{ 75.5, 23.2, BORALUS },	-- Franklin The Drunk
-					},
-					["g"] = {
-						recipe(253346),	-- Storm Silver Seam (Rank 2)
-					},
-				}),
-				q(51380, {	-- Back to Franklin
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["sourceQuest"] = 48770,	-- Three Sheets to the Wind (A)
-					["description"] = "Requires 150 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51889, {	-- The Wrath of Grapes (A)
-					["provider"] = { "n", 139375 },	-- Franklin the Drunk
-					["coords"] = {
-						{ 75.6, 23.5, BORALUS },	-- Franklin the Drunk
-						{ 69.3, 13.0, BORALUS },	-- Hilock of Eggs
-						{ 74.0, 12.7, BORALUS },	-- Jar of Pickle Juice [Inside Inn]
-						{ 70.4, 9.67, BORALUS },	-- Mountain of Bacon
-						{ 72.5, 11.6, BORALUS },	-- Pile of Sausages
-					},
-					["sourceQuest"] = 51380,	-- Back to Franklin
-					["description"] = "Requires 150 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253347),	-- Storm Silver Seam (Rank 3)
-					},
+					["g"] = appendGroups(BFA_MINING, {
+						r(265851),	-- Mining (Kul Tiran)
+					}),
 				}),
 			}),
 			prof(SKINNING, {

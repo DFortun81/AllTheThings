@@ -84,6 +84,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, BASTION },
+					["g"] = {
+						i(172518),	-- Adrima's Lily (QI!)
+					},
 				}),
 				q(59920, {	-- Light the Forge, Forgelite
 					["sourceQuests"] = {
@@ -342,11 +345,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, BASTION },
+					["g"] = {
+						i(178092),	-- Battered Scroll (QI!)
+						i(178046),	-- Locus Manual (QI!)
+					},
 				}),
 				q(58799, {	-- The Prime's Directive
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, BASTION },
+					["g"] = {
+						i(178094),	-- Centurion Core (QI!)
+					},
 				}),
 				q(58800, {	-- The Mnemonic Locus
 					["sourceQuests"] = {
@@ -363,6 +373,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58800 },	-- The Mnemonic Locus
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 57.5, 61.8, BASTION },
+					["g"] = {
+						i(183802),	-- Memory of the Forsworn (QI!)
+					},
 				}),
 				q(58978, {	-- Lysonia's Truth
 					["sourceQuests"] = { 58977 },	-- What's In a Memory?
@@ -384,6 +397,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58979 },	-- I MADE You!
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
 					["coord"] = { 57.2, 55.2, BASTION },
+					["g"] = {
+						i(178146),	-- Carved Kyrian Idol (QI!)
+						i(178145),	-- Ceremonial Offering (QI!)
+					},
 				}),
 				q(58843, {	-- The Vault of the Archon
 					["sourceQuests"] = { 58980 },	-- Mnemis, At Your Service
@@ -466,6 +483,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60006 },	-- Now or Never
 					["provider"] = { "n", 167135 },	-- Mikanikos
 					["coord"] = { 40.7, 55.5, BASTION },
+					["g"] = {
+						i(178043),	-- Anima Conflux (QI!)
+						i(178041),	-- Archonic Resonator (QI!)
+						i(178042),	-- Eternity Plating (QI!)
+					},
 				}),
 				q(60053, {	-- Clear as Crystal
 					["sourceQuests"] = {
@@ -483,6 +505,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						60007,	-- Stay Scrappy
 					},
 					["provider"] = { "n", 167164 },	-- Thanikos
+					["g"] = {
+						i(178140),	-- Archonic Resonator (QI!)
+					},
 				}),
 				q(60054, {	-- The Final Countdown
 					["sourceQuests"] = {
@@ -571,6 +596,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
+					["g"] = {
+						i(175791),	-- Ariella's Wing (QI!)
+					},
 				}),
 				q(59263, {	-- Feathers of Flight
 					["sourceQuests"] = { 59262 },	-- Broken Wings
@@ -586,6 +614,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
+					['g'] = {
+						i(175968),	-- Animyllis Bloom (QI!)
+					},
 				}),
 				q(59351, {	-- Strings and Things
 					["sourceQuests"] = { 60660 },	-- Flight Test
@@ -600,6 +631,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
 					["g"] = {
+						i(176812),	-- Animyllis Bloom (QI!)
 						i(180839),	-- Helpful Glimmerfly (PET!)
 					},
 				}),
@@ -792,6 +824,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 159609 },	-- Hopo
 					["coord"] = { 54.7, 41.2, BASTION },
+					["g"] = {
+						i(173691),	-- Anima Drainer (QI!)
+					},
 				}),
 				q(57933, {	-- We Can Rebuild Him
 					["sourceQuests"] = {
@@ -865,11 +900,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60466 },	-- The Old Ways
 				["provider"] = { "n", 160598 },	-- Klystere
 				["coord"] = { 47.8, 73.2, BASTION },
+				["g"] = {
+					i(183966),	-- Klystere's Gift (QI!)
+				},
 			}),
 			q(62715, {	-- More Than A Gift
 				["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 				["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 				["coord"] = { 47.8, 73.2, BASTION },
+				["g"] = {
+					i(183967),	-- Cultivated Windblossom (QI!)
+				},
 			}),
 			------ Miscellaneous ------
 			q(57444, {	-- An Inspired Moral Inventory
@@ -895,6 +936,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 				["provider"] = { "n", 157138 },	-- Aspirant Akimos
 				["coord"] = { 55.3, 83.4, BASTION },
+				["g"] = {
+					i(173023),	-- Bear Witness: The Watcher's Code (QI!)
+					i(173025),	-- The Infinite Treatises (QI!)
+					i(173024),	-- Worlds Beyond Counting (QI!)
+				},
 			}),
 			q(62733, {	-- The Sweetest Tribute
 				["sourceQuests"] = { 62730 },	-- Fruit of the Gods
@@ -958,15 +1004,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}, {
 				q(62737, {	-- Aspirant For a Day [Pre-60]
 					["coord"] = { 54.1, 80.4, BASTION },
 					["g"] = {
+						i(172518),	-- Adrima's Lily (QI!)
 						i(181571),	-- Spiritmender's Handwraps
 						i(181580),	-- Soulbearer's Gloves
 						i(181596),	-- Forgehand's Handguards
 						i(181608),	-- Shieldguard's Gauntlets
+						i(184043),	-- Lost Scroll (QI!)
 					},
 				}),
 				q(62735, {	-- Hostile Recollection [Pre-60]

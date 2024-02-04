@@ -20,17 +20,21 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 				})),
 				ach(9928, {	-- Don't Call Me Junior (A)
+					["sym"] = {{"meta_achievement",
+						9825,	-- Master Relic Hunter (A)
+					}},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
-						crit(1),	-- Master Relic Hunter
 					},
 				}),
 				ach(9901, {	-- Don't Call Me Junior (H)
+					["sym"] = {{"meta_achievement",
+						9836,	-- Master Relic Hunter (H)
+					}},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
-						crit(1),	-- Master Relic Hunter
 					},
 				}),
 				petbattle(ach(9264)),	-- Draenor Pet Brawler
@@ -49,91 +53,47 @@ root(ROOTS.ExpansionFeatures,
 						ach(9110),	-- Following Up
 					},
 				}),
-				ach(10015, sharedDataSelf({	-- Full Discography (A)
+				ach(9828, {	-- Ten Hit Tunes (Alliance) (10)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = ALLIANCE_ONLY,
-				},{
-					crit(1),	-- The Burning Legion (Black Temple - Illidan Stormrage)
-					crit(2),	-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
-					crit(3),	-- Legends of Azeroth (Blackwind Descent - Nefarian)
-					crit(4),	-- The Shattering (Dragon Soul - Deathwing)
-					crit(5),	-- Heart of Pandaria (Terrace of Endless Spring - Sha of Fear)
-					crit(6),	-- A Siege of Worlds (Blackrock Foundry - Blackhand)
-					crit(7),	-- Stormwind (Garrison quest reward - Bringing the Bass)
-					crit(8),	-- High Seas (Krasarang Wilds - Proveditor Grantley - 500 Domination points)
-					crit(9),	-- Ironforge (Garrison quest reward - Bringing the Bass)
-					crit(10),	-- Cold Mountain (Fishing - Ironforge)
-					crit(11),	-- Night Song (Garrison quest reward - Bringing the Bass)
-					crit(12),	-- Gnomeregan (Garrison quest reward - Bringing the Bass)
-					crit(13),	-- Tinkertown (Garrison quest reward - Bringing the Bass)
-					crit(14),	-- Exodar (Garrison quest reward - Bringing the Bass)
-					crit(15),	-- Curse of the Worgen (Garrison quest reward - Bringing the Bass)
-					crit(16),	-- Angelic (The Cape of Stranglethorn, Stranglethorn Vale - Arena Treasure Chest)
-					crit(17),	-- Ghost (Duskwood - Forlorn Composer)
-					crit(18),	-- Mountains (Winterspring - Frozen Supplies)
-					crit(19),	-- Magic (Ashenvale - Lost Sentinel's Pouch)
-					crit(20),	-- The Black Temple (Shadowmoon Valley - Warden's Scroll Case)
-					crit(21),	-- Invincible (Icecrown Citadel - The Lich King)
-					crit(22),	-- Karazhan Opera House (Karazhan - The Big Bad Wolf, Romulo, The Crone, Julianne)
-					crit(23),	-- The Argent Tournament (Argent Tourament - Faction Vendors)
-					crit(24),	-- Lament of the Highborne (Undercity - Sylvanas' Strongbox)
-					crit(25),	-- Faerie Dragon (Tirisfal Glades - Faerie Dragon Nest)
-					crit(26),	-- Totems of the Grizzlemaw (Grizzly Hills - Remington Brode)
-					crit(27),	-- Mountains of Thunder (Halls of Lighting - Loken)
-					crit(28),	-- Darkmoon Carousel (Darkmoon Island - Chester - 90 Darkmoon Prize Tickets)
-					crit(29),	-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
-					crit(30),	-- Way of the Monk (Garrison quest reward - Bringing the Bass)
-					crit(31),	-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
-					ach(9912, {	-- Azeroth's Top Twenty Tunes (Alliance) (20)
+				}),
+				ach(9912, {	-- Azeroth's Top Twenty Tunes (Alliance) (20)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
 						i(122700),	-- Portable Audiophone (TOY!)
-					}),
-					ach(9828),	-- Ten Hit Tunes (Alliance) (10)
-				})),
-				ach(10016, sharedDataSelf({	-- Full Discography (H)
+					},
+				}),
+				ach(10015, {	-- Full Discography (A)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(9897, {	-- Ten Hit Tunes (Horde) (10)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = HORDE_ONLY,
-				},{
-					crit(1),	-- The Burning Legion (Black Temple - Illidan Stormrage)
-					crit(2),	-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
-					crit(3),	-- Legends of Azeroth (Blackwind Descent - Nefarian)
-					crit(4),	-- The Shattering (Dragon Soul - Deathwing)
-					crit(5),	-- Heart of Pandaria (Terrace of Endless Spring - Sha of Fear)
-					crit(6),	-- A Siege of Worlds (Blackrock Foundry - Blackhand)
-					crit(7),	-- Orgrimmar (Garrison quest reward - Bringing the Bass)
-					crit(8),	-- War March (Krasarang Wilds - Ongrom Black Tooth - 500 Lion's Landing Commissions)
-					crit(9),	-- Thunder Bluff (Garrison quest reward - Bringing the Bass)
-					crit(10),	-- Mulgore Plains (Fishing - Thunder Bluff)
-					crit(11),	-- Undercity (Garrison quest reward - Bringing the Bass)
-					crit(12),	-- Zul'Gurub Voo Doo (Garrison quest reward - Bringing the Bass)
-					crit(13),	-- The Zandalari (Garrison quest reward - Bringing the Bass)
-					crit(14),	-- Silvermoon (Garrison quest reward - Bringing the Bass)
-					crit(15),	-- Rescue the Warchief (Garrison quest reward - Bringing the Bass)
-					crit(16),	-- Angelic (The Cape of Stranglethorn, Stranglethorn Vale - Arena Treasure Chest)
-					crit(17),	-- Ghost (Duskwood - Forlorn Composer)
-					crit(18),	-- Mountains (Winterspring - Frozen Supplies)
-					crit(19),	-- Magic (Ashenvale - Lost Sentinel's Pouch)
-					crit(20),	-- The Black Temple (Shadowmoon Valley - Warden's Scroll Case)
-					crit(21),	-- Invincible (Icecrown Citadel - The Lich King)
-					crit(22),	-- Karazhan Opera House (Karazhan - The Big Bad Wolf, Romulo, The Crone, Julianne)
-					crit(23),	-- The Argent Tournament (Argent Tourament - Faction Vendors)
-					crit(24),	-- Lament of the Highborne (Undercity - Sylvanas' Strongbox)
-					crit(25),	-- Faerie Dragon (Tirisfal Glades - Faerie Dragon Nest)
-					crit(26),	-- Totems of the Grizzlemaw (Grizzly Hills - Remington Brode)
-					crit(27),	-- Mountains of Thunder (Halls of Lighting - Loken)
-					crit(28),	-- Darkmoon Carousel (Darkmoon Island - Chester - 90 Darkmoon Prize Tickets)
-					crit(29),	-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
-					crit(30),	-- Way of the Monk (Garrison quest reward - Bringing the Bass)
-					crit(31),	-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
-					ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
+				}),
+				ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = HORDE_ONLY,
+					["groups"] = {
 						i(122700),	-- Portable Audiophone (TOY!)
-					}),
-					ach(9897),	-- Ten Hit Tunes (Horde) (10)
-				})),
+					},
+				}),
+				ach(10016, {	-- Full Discography (H)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = HORDE_ONLY,
+				}),
 				ach(9094, {	-- Garrison Architect
-					title(260),		-- Architect
-					crit(1),		-- Draftsman
-					crit(2),		-- Grand Master Draftsman
-					crit(3),		-- Master Draftsman
-					crit(4),		-- Master Builder
-					crit(5),		-- Keepin' Busy
+					["sym"] = {{"meta_achievement",
+						9125,	-- Draftsman
+						9128,	-- Grand Master Draftsman
+						9126,	-- Master Draftsman
+						9097,	-- Keepin' Busy
+						9096,	-- Master Builder
+					}},
+					["groups"] = {
+						title(260),		-- Architect
+					},
 				}),
 				ach(9210, {	-- Garrison Buddies (A)
 					["races"] = ALLIANCE_ONLY,
@@ -152,42 +112,42 @@ root(ROOTS.ExpansionFeatures,
 					ach(9125),		-- Draftsman (20)
 				}),
 				a(ach(10067, {	-- In Pursuit of Gul'dan (Garrison) [A]
-					crit(1, { -- All Hands On Deck
+					crit(28291, {	-- All Hands On Deck
 						["_quests"] = { 38259 },
 					}),
-					crit(2, { -- The Invasion of Tanaan
+					crit(28292, {	-- The Invasion of Tanaan
 						["_quests"] = { 38445 },
 					}),
-					crit(3, { -- Bane of the Bleeding Hollow
+					crit(28293, {	-- Bane of the Bleeding Hollow
 						["_quests"] = { 38274 },
 					}),
-					crit(4, { -- Dark Ascension
+					crit(28295, {	-- Dark Ascension
 						["_quests"] = { 38223 },
 					}),
-					crit(5, { -- The Fate of Teron'gor
+					crit(28296, {	-- The Fate of Teron'gor
 						["_quests"] = { 38562 },	-- Secrets of the Sargerei (A)
 					}),
-					crit(6, { -- The Cipher of Damnation
+					crit(28408, {	-- The Cipher of Damnation
 						["_quests"] = { 39394 },
 					}),
 				})),
 				h(ach(10074, {	-- In Pursuit of Gul'dan (Garrison) [H]
-					crit(1, { -- All Hands On Deck
+					crit(28306, {	-- All Hands On Deck
 						["_quests"] = { 38574 },
 					}),
-					crit(2, { -- The Invasion of Tanaan
+					crit(28307, {	-- The Invasion of Tanaan
 						["_quests"] = { 37935 },
 					}),
-					crit(3, { -- Bane of the Bleeding Hollow
+					crit(28293, {	-- Bane of the Bleeding Hollow
 						["_quests"] = { 38274 },
 					}),
-					crit(4, { -- Dark Ascension
+					crit(28295, {	-- Dark Ascension
 						["_quests"] = { 38223 },
 					}),
-					crit(5, { -- The Fate of Teron'gor
+					crit(28308, {	-- The Fate of Teron'gor
 						["_quests"] = { 38416 },	-- Secrets of the Sargerei (H)
 					}),
-					crit(6, { -- The Cipher of Damnation
+					crit(28305, {	-- The Cipher of Damnation
 						["_quests"] = { 38463 },
 					}),
 				})),
@@ -197,86 +157,150 @@ root(ROOTS.ExpansionFeatures,
 					ach(9211),	-- My Item Level Is Higher than Yours (1 - lvl 625)
 				}),
 				ach(9097, {	-- Keepin' Busy
-					crit(1),		-- Mine
-					crit(2),		-- Fishing Shack
-					crit(3),		-- Herb Garden
-					crit(4),		-- Pet Menagerie
+					crit(25212),		-- Mine
+					crit(25210),		-- Fishing Shack
+					crit(25211),		-- Herb Garden
+					crit(25213),		-- Pet Menagerie
 				}),
 				ach(9096, {	-- Master Builder
-					crit(1),		-- At least 3 small buildings activated
-					crit(2),		-- At least 2 medium buildings activated
-					crit(3),		-- At least 2 large buildings activated
+					crit(25226),		-- At least 3 small buildings activated
+					crit(25237),		-- At least 3 small buildings activated
+					crit(25238),		-- At least 3 small buildings activated
+					crit(25239),		-- At least 3 small buildings activated
+					crit(25240),		-- At least 3 small buildings activated
+					crit(25241),		-- At least 3 small buildings activated
+					crit(25242),		-- At least 3 small buildings activated
+					crit(25243),		-- At least 3 small buildings activated
+					crit(25233),		-- At least 3 small buildings activated
+					crit(25244),		-- At least 3 small buildings activated
+					crit(25245),		-- At least 2 medium buildings activated
+					crit(25246),		-- At least 2 medium buildings activated
+					crit(25247),		-- At least 2 medium buildings activated
+					crit(25248),		-- At least 2 medium buildings activated
+					crit(25249),		-- At least 2 medium buildings activated
+					crit(25250),		-- At least 2 large buildings activated
+					crit(25251),		-- At least 2 large buildings activated
+					crit(25252),		-- At least 2 large buildings activated
+					crit(25253),		-- At least 2 large buildings activated
+					crit(25225),		-- At least 2 large buildings activated
 					ach(9095, {		-- Builder
-						crit(1),		-- At least 2 small buildings activated
-						crit(2),		-- At least 2 medium buildings activated
-						crit(3),		-- At least 1 large building activated
+						crit(25236),		-- At least 2 small buildings activated
+						crit(25227),		-- At least 2 small buildings activated
+						crit(25228),		-- At least 2 small buildings activated
+						crit(25229),		-- At least 2 small buildings activated
+						crit(25235),		-- At least 2 small buildings activated
+						crit(25230),		-- At least 2 small buildings activated
+						crit(25231),		-- At least 2 small buildings activated
+						crit(25232),		-- At least 2 small buildings activated
+						crit(25233),		-- At least 2 small buildings activated
+						crit(25234),		-- At least 2 small buildings activated
+						crit(25216),		-- At least 2 medium buildings activated
+						crit(25220),		-- At least 2 medium buildings activated
+						crit(25217),		-- At least 2 medium buildings activated
+						crit(25218),		-- At least 2 medium buildings activated
+						crit(25219),		-- At least 2 medium buildings activated
+						crit(25221),		-- At least 1 large building activated
+						crit(25222),		-- At least 1 large building activated
+						crit(25223),		-- At least 1 large building activated
+						crit(25224),		-- At least 1 large building activated
+						crit(27941),		-- At least 1 large building activated
 					}),
 				}),
-				ach(9246),		-- Master Draenor Crafter
+				ach(9246, {		-- Master Draenor Crafter
+					["_noautomation"] = true,
+				}),
 				ach(9265),		-- Master of Apexis
 				ach(9825, {	-- Master Relic Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),		-- The Blessing of Beasts
-						crit(2),		-- Breaching the Barrier
-						crit(3),		-- The Apexis Device
-						crit(4),		-- The Spirit Forge
-						crit(5),		-- Taking from the Taker
-						crit(6),		-- The Crystal Reborn
+						crit(27579),		-- The Blessing of Beasts
+						crit(27580),		-- Breaching the Barrier
+						crit(27581),		-- The Apexis Device
+						crit(27582),		-- The Spirit Forge
+						crit(27584),		-- Taking from the Taker
+						crit(27599),		-- The Crystal Reborn
 					},
 				}),
 				ach(9836, {	-- Master Relic Hunter
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1),	-- The Blessing of Beasts
-						crit(2),	-- Breaching the Barrier
-						crit(3),	-- The Apexis Device
-						crit(5),	-- Taking from the Taker
-						crit(4),	-- The Spirit Forge
-						crit(6),	-- The Crystal Reborn
+						crit(27600),	-- The Blessing of Beasts
+						crit(27601),	-- Breaching the Barrier
+						crit(27602),	-- The Apexis Device
+						crit(27603),	-- Taking from the Taker
+						crit(27604),	-- The Spirit Forge
+						crit(27605),	-- The Crystal Reborn
 					},
 				}),
 				ach(9098, {	-- Movin' On Up (Lvl 3)
 					ach(9099),		-- Time for an Upgrade (Lvl 2)
 				}),
+				a(ach(9564, {	-- Securing Draenor [A]
+					crit(26244),		-- Assault on the Iron Siegeworks
+					crit(26245),		-- Assault on Stonefury Cliffs
+					crit(26247),		-- Assault on Magnarok
+					crit(26248),		-- Assault on the Pit
+					crit(26249),		-- Assault on the Everbloom Wilds
+					crit(26250),		-- Assault on the Broken Precipice
+					crit(26252),		-- Assault on Mok'gol Watchpost
+					crit(26253),		-- Assault on Socrethar's Rise
+					crit(26254),		-- Assault on Darktide Roost
+					crit(26255),		-- Assault on Skettis
+					crit(26256),		-- Assault on Pillars of Fate
+					crit(26258),		-- Assault on Shattrath Harbor
+				})),
+				h(ach(9562, {	-- Securing Draenor [H]
+					crit(26225),		-- Assault on the Iron Siegeworks
+					crit(26226),		-- Assault on Stonefury Cliffs
+					crit(26228),		-- Assault on Magnarok
+					crit(26229),		-- Assault on the Pit
+					crit(26232),		-- Assault on the Everbloom Wilds
+					crit(26233),		-- Assault on the Broken Precipice
+					crit(26242),		-- Assault on Shattrath Harbor
+					crit(26237),		-- Assault on Mok'gol Watchpost
+					crit(26238),		-- Assault on Socrethar's Rise
+					crit(26239),		-- Assault on Darktide Roost
+					crit(26240),		-- Assault on Pillars of Fate
+					crit(26243),		-- Assault on Skettis
+				})),
 				ach(8933),		-- Staying Regular
 				ach(9491, {	-- The Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1, { -- The Warlord's Council
+						crit(25856, {	-- The Warlord's Council
 							["_quests"] = { 35841 },	-- Putting Down the Packleader
 						}),
-						crit(2, { -- The Sargerei
+						crit(25857, {	-- The Sargerei
 							["_quests"] = { 35196 },	-- Forging Ahead
 						}),
-						crit(3, { -- Darktide Roost
+						crit(25858, {	-- Darktide Roost
 							["_quests"] = { 34450 },	-- Rylak Rescue
 						}),
-						crit(4, {	-- Iron Siegeworks
+						crit(25859, {	-- Iron Siegeworks
 							["_quests"] = { 34033 },	-- And The Mole You Rode In On
 						}),
-						crit(5, { -- The Ring of Blood
+						crit(25860, {	-- The Ring of Blood
 							["_quests"] = { 36289 },	-- Out of the Shadows
 						}),
-						crit(6, { -- The Fall of Shattrath
+						crit(25863, {	-- The Fall of Shattrath
 							["_quests"] = { 35685 },	-- Socrethar's Demise
 						}),
-						crit(7, { -- Bloodmaul Compound
+						crit(25864, {	-- Bloodmaul Compound
 							["_quests"] = { 34289 },	-- Soulgrinder Survivor
 						}),
-						crit(8, { -- Broken Precipice
+						crit(27305, {	-- Broken Precipice
 							["_quests"] = { 37517 },	-- News for Nixxie
 						}),
-						crit(9, { -- The Exarch's Call
+						crit(25866, {	-- The Exarch's Call
 							["_quests"] = { 36169 },	-- The Trial of Champions
 						}),
-						crit(10, { -- Heart of the Breakers
+						crit(25861, {	-- Heart of the Breakers
 							["_quests"] = { 34410 },	-- The Beating Heart
 						}),
-						crit(11, { -- A Strike at the Heart
+						crit(25862, {	-- A Strike at the Heart
 							["_quests"] = { 36162 },	-- A Stolen Heart
 						}),
-						crit(12, { -- Primal Fury
+						crit(25867, {	-- Primal Fury
 							["_quests"] = { 36341 },	-- Primal Fury
 						}),
 					},
@@ -284,40 +308,40 @@ root(ROOTS.ExpansionFeatures,
 				ach(9492, {	-- The Garrison Campaign
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1, { -- The Warlord's Council
+						crit(25870, {	-- The Warlord's Council
 							["_quests"] = { 35842 },	-- Putting Down the Packleader
 						}),
-						crit(2, { -- The Sargerei
+						crit(25871, {	-- The Sargerei
 							["_quests"] = { 35197 },	-- Forging Ahead
 						}),
-						crit(3, { -- Darktide Roost
+						crit(25858, {	-- Darktide Roost
 							["_quests"] = { 34450 },	-- Rylak Rescue
 						}),
-						crit(4, { -- Iron Siegeworks
+						crit(25872, {	-- Iron Siegeworks
 							["_quests"] = { 34078 },	-- Payment Due for Services Rendered
 						}),
-						crit(5, { -- The Ring of Blood
+						crit(25873, {	-- The Ring of Blood
 							["_quests"] = { 36290 },	-- Out of the Shadows
 						}),
-						crit(6, { -- The Fall of Shattrath
+						crit(27442, {	-- The Fall of Shattrath
 							["_quests"] = { 35687 },	-- Socrethar's Demise
 						}),
-						crit(7, { -- Bloodmaul Compound
+						crit(25876, {	-- Bloodmaul Compound
 							["_quests"] = { 34319 },	-- Soulgrinder Survivor
 						}),
-						crit(8, { -- Broken Precipice
+						crit(27306, {	-- Broken Precipice
 							["_quests"] = { 37516 },	-- News for Nixxie
 						}),
-						crit(9, { -- Ours is the Fury
+						crit(24518, {	-- Ours is the Fury
 							["_quests"] = { 33427 }, -- Ours is the Fury
 						}),
-						crit(10, { -- Heart of the Breakers
+						crit(25874, {	-- Heart of the Breakers
 							["_quests"] = { 34341 },	-- The Beating Heart
 						}),
-						crit(11, { -- A Strike at the Heart
+						crit(25875, {	-- A Strike at the Heart
 							["_quests"] = { 36248 },	-- A Stolen Heart
 						}),
-						crit(12, { -- Primal Fury
+						crit(25878, {	-- Primal Fury
 							["_quests"] = { 36342 },	-- Primal Fury
 						}),
 					},

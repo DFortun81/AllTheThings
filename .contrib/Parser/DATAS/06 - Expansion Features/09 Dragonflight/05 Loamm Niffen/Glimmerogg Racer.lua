@@ -7,23 +7,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			n(ACHIEVEMENTS, {
 				ach(17741, {	-- Slow and Steady Wins the Race
 					i(205231),	-- Roggy (PET!)
-					crit(1, {	-- Bashful wins
+					crit(59148, {	-- Bashful wins
 						["sourceQuests"] = { 75662 },	-- A Race To The Finish
 					}),
-					crit(2, {	-- Tricky wins
+					crit(59149, {	-- Tricky wins
 						["sourceQuests"] = { 75706 },	-- A Race To The Finish
 					}),
-					crit(3, {	-- Brulee wins
+					crit(59150, {	-- Brulee wins
 						["sourceQuests"] = { 75707 },	-- A Race To The Finish
 					}),
-					crit(4, {	-- Roggy wins
+					crit(59151, {	-- Roggy wins
 						["sourceQuests"] = { 75708 },	-- A Race To The Finish
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(74787, {	-- Come Snail Away
-					["sourceQuests"] = { 73711 },	-- Marked Champion
+					["sourceQuests"] = {
+						73709,	-- Favor on the Side
+						73708,	-- Pay to Play
+					},
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 					["g"] = {
@@ -76,8 +79,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(74515),	-- Snail Mail
 				q(74514, {	-- The Slowest Fan Club
 					i(204178),	-- Snailcatcher Net
+					n(201875),	-- Aimless Snail
 				}),
-
 			})),
 			n(QUESTS, sharedData({
 				["sourceQuests"] = {

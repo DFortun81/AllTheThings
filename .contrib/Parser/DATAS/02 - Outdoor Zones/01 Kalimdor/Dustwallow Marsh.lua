@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	--	Disgrace the Defectors
 							["sourceQuest"] = 27213,	-- The End of the Deserters
@@ -42,10 +43,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27411,	-- Challenge to the Black Flight
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4978, {	-- Dustwallow Marsh Quests (Horde)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Wild Threats
 							["sourceQuests"] = {
@@ -89,6 +92,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27411,	-- Challenge to the Black Dragonflight
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(850, {	-- Explore Dustwallow Marsh
 					-- #if BEFORE WRATH
@@ -3075,6 +3079,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			prof(FISHING, {
+				o(207724),	-- Shipwreck Debris
+				-- Somebody made an Error Report the Debris only in Tol Bard, so I put it here too, idk.
+			}),
 			n(RARES, {
 				n(50784, {	-- Anith
 					["coord"] = { 32.6, 30.8, DUSTWALLOW_MARSH },
@@ -3304,6 +3312,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16084, {	-- Expert First Aid - Under Wraps
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 						i(16112, {	-- Manual: Heavy Silk Bandage
@@ -3320,8 +3336,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.8, 45.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				-- #endif
@@ -3373,9 +3389,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(12239),	-- Recipe: Dragonbreath Chili
-						i(12233),	-- Recipe: Mystery Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
+						i(12233),	-- Recipe: Mystery Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer> [CATA+] / <Bowyer>
@@ -3424,10 +3440,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.6, 31.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(12232),	-- Recipe: Carrion Surprise
-						i(12239),	-- Recipe: Dragonbreath Chili
-						i(20075),	-- Recipe: Heavy Crocolisk Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
+						i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
+						i(20075),	-- Recipe: Heavy Crocolisk Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>
@@ -3507,11 +3523,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 4834,	-- Theramore Infiltrator
 				}),
 				i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						4368,	-- Strashaz Myrmidon
 						16072,	-- Tidelord Rrurgaz
 					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 70.2, 50.0, DUSTWALLOW_MARSH },
+						{ 69.0, 47.0, DUSTWALLOW_MARSH },
+						{ 67.6, 44.4, DUSTWALLOW_MARSH },
+						{ 66.4, 43.4, DUSTWALLOW_MARSH },
+						{ 65.4, 44.4, DUSTWALLOW_MARSH },
+					},
+					["crs"] = {
+						44390,	-- Spiny Rock Crab
+					},
+					-- #endif
 				}),
 				-- #if BEFORE 4.3.0
 				i(12714, {	-- Plans: Runic Plate Helm (RECIPE!)

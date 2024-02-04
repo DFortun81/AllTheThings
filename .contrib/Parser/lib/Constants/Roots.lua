@@ -22,6 +22,7 @@ ROOTS = {
 	["Professions"] = "Professions",
 	["Promotions"] = "Promotions",
 	["RecipeDB"] = "RecipeDB",
+	["SeasonOfDiscovery"] = "SeasonOfDiscovery",
 	["Secrets"] = "Secrets",
 	["TradingPost"] = "TradingPost",
 	["Uncollectible"] = "Uncollectible",

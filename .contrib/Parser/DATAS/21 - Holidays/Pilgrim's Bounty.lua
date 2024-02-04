@@ -80,7 +80,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					}),
 				},
 			}),
-			-- #if BEFORE MOP
 			ach(3656, {	-- Pilgrim
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
@@ -96,7 +95,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						3559,				-- Turkey Lurkey
 					},
 				},
-				["timeline"] = { "added 3.2.2.10505", "deleted 5.0.1" },
+				["timeline"] = { "added 3.2.2.10505", "removed 5.0.4" },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
@@ -107,7 +106,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					}),
 				},
 			}),
-			-- #endif
 			ach(3579, {	-- "FOOD FIGHT!"
 				["timeline"] = { "added 3.2.2.10505" },
 				["maps"] = ALL_PILGIM_MAPS,
@@ -117,58 +115,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Candied Sweet Potato
-					crit(2),	-- Cranberry Chutney
-					crit(3),	-- Pumpkin Pie
-					crit(4),	-- Slow-Roasted Turkey
-					crit(5),	-- Spice Bread Stuffing
-				},
-				]]--
 			}),
 			ach(3577, {	-- Now We're Cookin' (H)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Candied Sweet Potato
-					crit(2),	-- Cranberry Chutney
-					crit(3),	-- Pumpkin Pie
-					crit(4),	-- Slow-Roasted Turkey
-					crit(5),	-- Spice Bread Stuffing
-				},
-				]]--
 			}),
 			ach(3556, {	-- Pilgrim's Paunch (A)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Darnassus
-					crit(2),	-- The Exodar
-					crit(3),	-- Ironforge
-					crit(4),	-- Stormwind
-				},
-				]]--
 			}),
 			ach(3557, {	-- Pilgrim's Paunch (H)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Orgrimmar
-					crit(2),	-- Silvermoon City
-					crit(3),	-- Thunder Bluff
-					crit(4),	-- Undercity
-				},
-				]]--
 			}),
 			ach(3580, {	-- Pilgrim's Peril (A)
 				["timeline"] = { "added 3.2.2.10505" },
@@ -180,14 +144,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					{ "i", 46824, 1 },	-- Pilgrim's Robe
 				},
 				["races"] = ALLIANCE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Orgrimmar
-					crit(2),	-- Silvermoon City
-					crit(3),	-- Thunder Bluff
-					crit(4),	-- Undercity
-				},
-				]]--
 			}),
 			ach(3581, {	-- Pilgrim's Peril (H)
 				["timeline"] = { "added 3.2.2.10505" },
@@ -199,14 +155,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					{ "i", 46824, 1 },	-- Pilgrim's Robe
 				},
 				["races"] = HORDE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Darnassus
-					crit(2),	-- The Exodar
-					crit(3),	-- Ironforge
-					crit(4),	-- Stormwind
-				},
-				]]--
 			}),
 			ach(3596, {	-- Pilgrim's Progress (A)
 				["timeline"] = { "added 3.2.2.10505" },
@@ -256,15 +204,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALL_PILGIM_MAPS,
-				--[[
-				["groups"] = {
-					crit(1),	-- Candied Sweet Potatoes
-					crit(2),	-- Cranberry Chutney
-					crit(3),	-- Pumpkin Pie
-					crit(4),	-- Slow-Roasted Turkey
-					crit(5),	-- Spice Bread Stuffing
-				},
-				]]--
 			}),
 			ach(3582, {	-- Terokkar Turkey Time
 				["timeline"] = { "added 3.2.2.10505" },
@@ -294,20 +233,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
-				--[[
-				["groups"] = {
-					crit(1),	-- Blood Elf Rogue
-					crit(2),	-- Dwarf Rogue
-					crit(3),	-- Gnome Rogue
-					crit(4),	-- Goblin Rogue
-					crit(5),	-- Human Rogue
-					crit(6),	-- Night Elf Rogue
-					crit(7),	-- Orc Rogue
-					crit(8),	-- Troll Rogue
-					crit(9),	-- Undead Rogue
-					crit(10),	-- Worgen Rogue
-				},
-				]]--
 			}),
 		}),
 		-- #endif
@@ -513,15 +438,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 			}),
 			q(14064, {	-- Sharing a Bountiful Feast (Alliance)
 				["qg"] = 34653,	-- Bountiful Table Hostess
+				["coords"] = {
+					{ 34.1, 51.0, ELWYNN_FOREST },
+				},
 				["maps"] = {
 					DARNASSUS,
 					DUN_MOROGH,
-					ELWYNN_FOREST,
 					-- #if AFTER BFA
 					DARKSHORE,
 					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 			}),
 			q(14065, {	-- Sharing a Bountiful Feast (Horde)
 				["qg"] = 34654,	-- Bountiful Feast Hostess
@@ -532,6 +460,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					HELLFIRE_PENINSULA,
 				},
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 			}),
 			q(14055, {	-- She Says Potato (Alliance)
 				["qg"] = 34744,	-- Jasper Moore
@@ -742,21 +671,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					i(46809, {	-- Bountiful Cookbook
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(44859),	-- Recipe: Candied Sweet Potato
-							i(44858),	-- Recipe: Cranberry Chutney
-							i(44862),	-- Recipe: Pumpkin Pie
-							i(44861),	-- Recipe: Slow-Roasted Turkey
-							i(44860),	-- Recipe: Spice Bread Stuffing
+							i(44859),	-- Recipe: Candied Sweet Potato (RECIPE!)
+							i(44858),	-- Recipe: Cranberry Chutney (RECIPE!)
+							i(44862),	-- Recipe: Pumpkin Pie (RECIPE!)
+							i(44861),	-- Recipe: Slow-Roasted Turkey (RECIPE!)
+							i(44860),	-- Recipe: Spice Bread Stuffing (RECIPE!)
 						},
 					}),
 					i(46810, {	-- Bountiful Cookbook
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(46806),	-- Recipe: Candied Sweet Potato
-							i(46805),	-- Recipe: Cranberry Chutney
-							i(46804),	-- Recipe: Pumpkin Pie
-							i(46807),	-- Recipe: Slow-Roasted Turkey
-							i(46803),	-- Recipe: Spice Bread Stuffing
+							i(46806),	-- Recipe: Candied Sweet Potato (RECIPE!)
+							i(46805),	-- Recipe: Cranberry Chutney (RECIPE!)
+							i(46804),	-- Recipe: Pumpkin Pie (RECIPE!)
+							i(46807),	-- Recipe: Slow-Roasted Turkey (RECIPE!)
+							i(46803),	-- Recipe: Spice Bread Stuffing (RECIPE!)
 						},
 					}),
 					i(44853),	-- Honey

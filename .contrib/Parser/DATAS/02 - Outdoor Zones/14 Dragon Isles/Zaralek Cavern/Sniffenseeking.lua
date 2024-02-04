@@ -9,6 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				{ "i", 205982, 1 },	-- 1x Lost Dig Map
 				{ "i", 205984, 1 },	-- 1x Bartered Dig Map
 			},
+			["crs"] = { 201426 },	-- Myrrit
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(18284, {	-- A Niffen's Best Buddy
@@ -22,31 +23,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					ach(18257),	-- Can You Dig It?
-					ach(18271),	-- He'sSss All Mine
+					ach(18271, {	-- He'sSss All Mine
+						["provider"] = { "i", 205151 },	-- Salverun
+					}),
 					ach(18255, {	-- Proof of Myrrit [_quests handled by AchievementDB]
-						crit(1),	-- Vertical Anomaly
-						crit(2),	-- Flapping and Screaming
-						crit(3),	-- Scratch and Sniff
-						crit(4),	-- Element Whispers
-						crit(5),	-- Successful Interventions
-						crit(6),	-- Those Rascally Worms
-						crit(7),	-- Your Weight in Gold
-						crit(8),	-- Sneak and Sniff
-						crit(9),	-- The Living Drill
-						crit(10),	-- Thieving Critters
-						crit(11),	-- Making Scents
-						crit(12),	-- Living Statue
-						crit(13),	-- Heart of Iron
-						crit(14),	-- Liars in Light
-						crit(15),	-- Frostfire Finesse
-						crit(16),	-- Liars of Spirit
+						crit(59744),	-- Vertical Anomaly
+						crit(59745),	-- Flapping and Screaming
+						crit(59746),	-- Scratch and Sniff
+						crit(59755),	-- Element Whispers
+						crit(59747),	-- Successful Interventions
+						crit(59749),	-- Those Rascally Worms
+						crit(59750),	-- Your Weight in Gold
+						crit(59751),	-- Sneak and Sniff
+						crit(59752),	-- The Living Drill
+						crit(59754),	-- Thieving Critters
+						crit(59753),	-- Making Scents
+						crit(59756),	-- Living Statue
+						crit(59757),	-- Heart of Iron
+						crit(59758),	-- Liars in Light
+						crit(59759),	-- Frostfire Finesse
+						crit(59760),	-- Liars of Spirit
 					}),
 					ach(17832, {	-- Sniffen Around
-						-- identical criteria as full achievement
-						["sym"] = {{"select","achievementID",17833},{"pop"} },	--  Sniffen Sage Criteria
+						-- not using partial_achievement since there are not actual Criteria generated for Sniffen Sage
+						["sym"] = {{"select","achievementID",17833},{"pop"}},	--  Sniffen Sage
 					}),
 					ach(17833, {	-- Sniffen Sage
-						-- No longer individual criteria here...
 						["sym"] = {{"select","questID",
 							75765,	-- Liquid Art
 							75766,	-- Ruby in the Rough
@@ -137,7 +139,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(76027, {	-- Flapping and Screaming
 						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
 						["g"] = {
-							i(205969),	-- Glowing Key
+							o(402578, {	-- Glowing Key
+								i(205969),	-- Glowing Key
+							}),
 						},
 					}),
 					q(76016, {  -- The Living Drill
@@ -179,8 +183,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(74877, {	-- Best Friends
 						["sourceQuests"] = {
 							74876,	-- The Buddy System
-							75459,	-- Brand New Digs
+							DF_ACCOUNT_ZC_UNLOCK_QUEST,
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 201426 },	-- Myrrit
 						["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
 						["cost"] = { { "i", 204791, 1 } },	-- 1x Squishy Snack
@@ -324,6 +329,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest
 		q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
 		q(75883),	-- 3rd charge (map) for adventure / unflagged when 3rd map completed
+		q(76109),	-- Salverun (spellID 411721) [Summon Salverun as a battle pet]
 
 		q(75904),	-- Unknown [When going to Those Rascally Wroms (75397)] /Unflagged after complete
 		q(75880),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..

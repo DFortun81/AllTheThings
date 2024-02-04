@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 	inst(750, {	-- The Battle for Mount Hyjal
 		["lore"] = "The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",
+		["zone-text-areaID"] = 3606,	-- Hyjal Summit
 		["sins"] = { "The Battle for Mount Hyjal" },
 		["coords"] = {
 			{ 36.0, 16.1, CAVERNS_OF_TIME },	-- raid entrance
@@ -953,56 +954,25 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				},
 			}),
 			n(ZONE_DROPS, {
-				-- #IF ANYCLASSIC
-				["crs"] = {
-					17898,	-- Abomination
-					17905,	-- Banshee
-					17897,	-- Crypt Fiend
-					17916,	-- Fel Stalker
-					17907,	-- Frost Wyrm
-					17906,	-- Gargoyle
-					17895,	-- Ghoul
-					17908,	-- Giant Infernal
-					17899,	-- Shadowy Necromancer
-				},
-				-- #ENDIF
-				["groups"] = {
-					i(32748, {	-- Pattern: Bindings of Lightning Reflexes
-						["spellID"] = 41161,	-- Bindings of Lightning Reflexes
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32751, {	-- Pattern: Living Earth Shoulders
-						["spellID"] = 41164,	-- Living Earth Shoulders
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32755),	-- Pattern: Mantle of Nimble Thought
-					i(32745, {	-- Pattern: Shoulderpads of Renewed Life
-						["spellID"] = 41157,	-- Shoulderpads of Renewed Life
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32752),	-- Pattern: Swiftheal Wraps
-					i(32746, {	-- Pattern: Swiftstrike Bracers
-						["spellID"] = 41158,	-- Swiftstrike Bracers
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32736),	-- Plans: Swiftsteel Bracers (RECIPE!)
-					i(32739),	-- Plans: Dawnsteel Shoulders (RECIPE!)
-					i(32609),	-- Boots of the Divine Light
-					i(32592),	-- Chestguard of Relentless Storms
-					i(32591),	-- Choker of Serrated Blades
-					i(32946),	-- Claw of Molten Fury
-					i(32945),	-- Fist of Molten Fury
-					i(34009),	-- Hammer of Judgement
-					i(32589),	-- Hellfire-Encased Pendant
-					i(32590),	-- Nethervoid Cloak
-					i(34010),	-- Pepe's Shroud of Pacification
-					i(32428),	-- Heart of Darkness
-					i(32897),	-- Mark of the Illidari
-				},
+				i(32748),	-- Pattern: Bindings of Lightning Reflexes (RECIPE!)
+				i(32751),	-- Pattern: Living Earth Shoulders (RECIPE!)
+				i(32755),	-- Pattern: Mantle of Nimble Thought
+				i(32745),	-- Pattern: Shoulderpads of Renewed Life (RECIPE!)
+				i(32752),	-- Pattern: Swiftheal Wraps
+				i(32746),	-- Pattern: Swiftstrike Bracers (RECIPE!)
+				i(32736),	-- Plans: Swiftsteel Bracers (RECIPE!)
+				i(32739),	-- Plans: Dawnsteel Shoulders (RECIPE!)
+				i(32609),	-- Boots of the Divine Light
+				i(32592),	-- Chestguard of Relentless Storms
+				i(32591),	-- Choker of Serrated Blades
+				i(32946),	-- Claw of Molten Fury
+				i(32945),	-- Fist of Molten Fury
+				i(34009),	-- Hammer of Judgement
+				i(32589),	-- Hellfire-Encased Pendant
+				i(32590),	-- Nethervoid Cloak
+				i(34010),	-- Pepe's Shroud of Pacification
+				i(32428),	-- Heart of Darkness
+				i(32897),	-- Mark of the Illidari
 			}),
 			e(1577, {	-- Rage Winterchill
 				["creatureID"] = 17767,

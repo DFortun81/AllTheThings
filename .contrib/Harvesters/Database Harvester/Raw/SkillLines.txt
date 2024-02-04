@@ -222,6 +222,10 @@
 1.13.0.28211
 270@@@Pet - Generic
 758@@@Pet - Event - Remote Control
+1.15.0.52124
+2851@@@Engraving
+2853@@@Runes
+2885@@@Meditation
 2.0.0.6080
 755@@@Jewelcrafting
 756@@@Blood Elf Racial
@@ -615,3 +619,5 @@
 2855@@@Language: Furbolg
 10.1.7.50442
 2870@@@Shipment Prototype
+10.2.0.51239
+2886@@@Supply Shipments

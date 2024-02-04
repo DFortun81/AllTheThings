@@ -19,37 +19,65 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61948),	-- Airborne Defense Force
 			q(61595, {	-- Alchemy: Potion of Hibernal Rest
 				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					r(338191, {["u"]=TRAINING}),	-- Liquid Sleep
+					r(338190, {["u"]=TRAINING}),	-- Potion of Hibernal Rest
+					r(338192, {["u"]=TRAINING}),	-- Powdered Dreamroot
+					i(181985),	-- Fresh Dreamroot Trimmings (QI!)
+					i(181983),	-- Liquid Sleep (QI!)
+					i(181375),	-- Potion of Hibernal Rest (QI!)
+					i(181984),	-- Powdered Dreamroot (QI!)
+				},
 			}),
 			q(61949),	-- Ardenweald's Tricksters
 			q(61435, {	-- Blacksmithing: Stalker Arrowheads
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(337427,{["u"]=15}),	-- Bundle of Stalker Arrowheads
-					r(337374,{["u"]=15}),	-- Molten Phaedrum
-					r(337426,{["u"]=15}),	-- Unrefined Arrowheads
-					i(181783),	-- Borrowed Phaedrum Ore
-					i(181860),	-- Borrowed Twilight Bark
-					i(181784),	-- Bundle of Stalker Arrowheads
-					i(181787),	-- Molten Phaedrum
-					i(181788),	-- Unrefined Arrowheads
-					i(181789),	-- Wooden Arrowhead Mold
+					r(337427, {["u"]=TRAINING}),	-- Bundle of Stalker Arrowheads
+					r(337374, {["u"]=TRAINING}),	-- Molten Phaedrum
+					r(337426, {["u"]=TRAINING}),	-- Unrefined Arrowheads
+					i(181783),	-- Borrowed Phaedrum Ore (QI!)
+					i(181860),	-- Borrowed Twilight Bark (QI!)
+					i(181784),	-- Bundle of Stalker Arrowheads (QI!)
+					i(181787),	-- Molten Phaedrum (QI!)
+					i(181788),	-- Unrefined Arrowheads (QI!)
+					i(181789),	-- Wooden Arrowhead Mold (QI!)
 				},
 			}),
 			q(61631),	-- Drust Between You and Me
 			q(61596, {	-- Cooking: Arden Apple Pie
 				["requireSkill"] = COOKING,
+				["g"] = {
+					r(338100, {["u"]=TRAINING}),	-- Arden Apple Pie
+					r(338101, {["u"]=TRAINING}),	-- Oat Pie Crust
+					r(338102, {["u"]=TRAINING}),	-- Sliced Arden Apples
+					i(181381),	-- Arden Apple Pie (QI!)
+					i(181987),	-- Fresh Arden Apples (QI!)
+					i(182101),	-- Oat Pie Crust (QI!)
+					i(181988),	-- Sack of Arden Oats (QI!)
+					i(181986),	-- Sliced Arden Apples (QI!)
+				},
 			}),
 			q(61440, {	-- Enchanting: Boundless Basket
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(346026,{["u"]=15}),	-- Boundless Basket
-					i(181991),	-- Antique Stalker's Bow
-					i(181384),	-- Boundless Basket
-					i(181990),	-- Twilight Dust
+					r(346026, {["u"]=TRAINING}),	-- Boundless Basket
+					i(181991),	-- Antique Stalker's Bow (QI!)
+					i(181384),	-- Boundless Basket (QI!)
+					i(181990),	-- Twilight Dust (QI!)
 				},
 			}),
 			q(61597, {	-- Engineering: Bug Zapifier
 				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					r(338119, {["u"]=TRAINING}),	-- Bug Zapifier
+					r(338212, {["u"]=TRAINING}),	-- Electro Cable
+					r(338210, {["u"]=TRAINING}),	-- Energized Battery
+					i(181385),	-- Bug Zapifier (QI!)
+					i(181992),	-- Electro Cable (QI!)
+					i(181993),	-- Energized Battery (QI!)
+					i(181994),	-- Machined Phaedrum Bar (QI!)
+				},
 			}),
 			q(61598, {	-- Fishing: Speckled Flametail
 				["requireSkill"] = FISHING,
@@ -61,20 +89,42 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61599, {	-- Inscription: Hymnal of Reprise
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					r(338227, {["u"]=15}),	-- Ardenberry Ink
-					i(181996),	-- Ardenberry Ink
-					r(338225, {["u"]=15}),	-- Hymnal of Respite
-					i(181397),	-- Hymnal of Respite
-					r(338226, {["u"]=15}),	-- Scroll of Calming Lyrics
-					i(181995),	-- Scroll of Calming Lyrics
+					r(338227, {["u"]=TRAINING}),	-- Ardenberry Ink
+					r(338225, {["u"]=TRAINING}),	-- Hymnal of Respite
+					r(338226, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
+					i(181996),	-- Ardenberry Ink (QI!)
+					i(181997),	-- Ardenberry Pigment (QI!)
+					i(181397),	-- Hymnal of Respite (QI!)
+					i(181995),	-- Scroll of Calming Lyrics (QI!)
+					i(182286),	-- Twilight Parchment (QI!)
 				},
 			}),
 			q(61303),	-- It's Raining Sparkles
 			q(61601, {	-- Jewelcrafting: Gem Studded Bangle
 				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					r(338239, {["u"]=TRAINING}),	-- Engraved Phaedrum Band
+					r(338238, {["u"]=TRAINING}),	-- Gem Studded Bangle
+					r(338240, {["u"]=TRAINING}),	-- Polished Gemstones
+					i(181998),	-- Engraved Phaedrum Band (QI!)
+					i(181431),	-- Gem Studded Bangle (QI!)
+					i(182289),	-- Handful of Glimmering Gemstones (QI!)
+					i(181999),	-- Polished Gemstones (QI!)
+					i(182000),	-- Polished Phedrum Rod (QI!)
+				},
 			}),
 			q(61602, {	-- Leatherworking: Stalker's Leather Quiver
 				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					r(338253, {["u"]=TRAINING}),	-- Dyed Runestag Leather
+					r(338254, {["u"]=TRAINING}),	-- Runestag Leather Strap
+					r(338255, {["u"]=TRAINING}),	-- Stalker's Leather Quiver
+					i(182290),	-- Bottle of Leather Dye (QI!)
+					i(182002),	-- Dyed Runestag Leather (QI!)
+					i(182003),	-- Runestag Leather (QI!)
+					i(182001),	-- Runestag Leather Strap (QI!)
+					i(181434),	-- Stalker's Leather Quiver (QI!)
+				},
 			}),
 			q(61947),	-- Lurking In The Shadows
 			q(61530, {	-- Mining: Ligneous Phaedrum Cluster
@@ -83,7 +133,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61946),	-- Natural Defenders
 			q(61411),	-- Our Heart Will Go On
 			q(58975),	-- Pest Removal
-			q(60337),	-- Pupa Trooper
+			q(60337, {	-- Pupa Trooper
+				["g"] = {
+					i(178717),	-- Ardenmoth Cocoon (QI!)
+				},
+			}),
 			q(59600),	-- Rotbriar Trouble
 			q(59825),	-- Seed Hunting
 			q(60574),	-- Shaking 'Shrooms
@@ -97,6 +151,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60786),	-- Swarm Defense
 			q(61604, {	-- Tailoring: Cloak of Camouflage
 				["requireSkill"] = TAILORING,
+				["g"] = {
+					r(338270, {["u"]=TRAINING}),	-- Ardensilk Cloth
+					r(338269, {["u"]=TRAINING}),	-- Bolt of Ardensilk Cloth
+					r(338267, {["u"]=TRAINING}),	-- Cloak of Camouflage
+					i(182005),	-- Ardensilk Cloth (QI!)
+					i(182004),	-- Bolt of Ardensilk Cloth (QI!)
+					i(181453),	-- Cloak of Camouflage (QI!)
+					i(182006),	-- Spool of Ardensilk (QI!)
+				}
 			}),
 			q(60533),	-- Terrors in Tirna Scithe
 			q(60564),	-- Three Gorm Enter, No One Leaves
@@ -114,27 +177,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				ach(14672, {	-- A Bit of This, A Bit of That
 					["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies then talking to all 6 NPCs.",
 					["g"] = {
-						crit(1, {	-- Faerie Pomander
+						crit(49570, {	-- Faerie Pomander
 							["crs"] = { 158345 },	-- Lady of the Falls
 							["coord"] = { 51.1, 33.9, ARDENWEALD },
 						}),
-						crit(2, {	-- Slumberweb
+						crit(49571, {	-- Slumberweb
 							["crs"] = { 165704 },	-- Elder Gwenna
 							["coord"] = { 50.4, 33.0, ARDENWEALD },
 						}),
-						crit(3, {	-- Vorkai War Paint
+						crit(49572, {	-- Vorkai War Paint
 							["crs"] = { 158519 },	-- Sorcha
 							["coord"] = { 51.1, 33.7, ARDENWEALD },
 						}),
-						crit(4, {	-- Gorm Whisperer
+						crit(49573, {	-- Gorm Whisperer
 							["crs"] = { 165382 },	-- Gormsmith Cavina
 							["coord"] = { 51.6, 34.0, ARDENWEALD },
 						}),
-						crit(5, {	-- Tirnenn Resilience
+						crit(49574, {	-- Tirnenn Resilience
 							["crs"] = { 165705 },	-- Groonoomcrooek
 							["coord"] = { 51.8, 32.0, ARDENWEALD },
 						}),
-						crit(6, {	-- Finnan's Luck
+						crit(49575, {	-- Finnan's Luck
 							["crs"] = { 165703 },	-- Elder Finnan
 							["coord"] = { 51.7, 34.0, ARDENWEALD },
 						}),

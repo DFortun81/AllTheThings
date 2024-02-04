@@ -11,13 +11,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_badlands_01",
 		-- #endif
-		-- #if NOT ANYCLASSIC
-		["maps"] = { 16 },	-- Uldaman
-		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4900, {	-- Badlands Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Rhea
 							["sourceQuest"] = 27769,	-- Rhea Revealed
@@ -38,6 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27715,	-- The Day that Deathwing Came: What Really Happened
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(765, {	-- Explore Badlands
 					-- #if BEFORE WRATH
@@ -133,6 +132,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 4.0, 44.8, BADLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7867, {	-- Thorkaf Dragoneye <Master Dragonscale Leatherworker>
+						["coord"] = { 62.6, 57.6, BADLANDS },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_DRAGONSCALE,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -361,7 +370,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 33,
 					["groups"] = {
 						i(4457),	-- Barbecued Buzzard Wing
-						i(4609),	-- Recipe: Barbecued Buzzard Wing (available from a vendor still)
+						i(4609),	-- Recipe: Barbecued Buzzard Wing (available from a vendor still) (RECIPE!)
 					},
 				}),
 				q(27881, {	-- Bloodwatcher Point
@@ -456,23 +465,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,
-				}),
-				q(5145, {	-- Dragonscale Leatherworking (H)
-					["qg"] = 7867,	-- Thorkaf Dragoneye
-					["altQuests"] = {
-						5146,	-- Elemental Leatherworking
-						5148,	-- Tribal Leatherworking
-					},
-					["coord"] = { 62.6, 57.4, BADLANDS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
-						{ "i", 8204, 2 },	-- Tough Scorpid Gloves
-						{ "i", 8165, 10 },	-- Worn Dragonscale
-					},
-					["lvl"] = 40,
 				}),
 				q(3821, {	-- Dreadmaul Rock
 					["qg"] = 9082,	-- Thal'trak Proudtusk
@@ -733,7 +725,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 35,
 					["groups"] = {
-						i(4624, {	-- Recipe: Lesser Stoneshield Potion
+						i(4624, {	-- Recipe: Lesser Stoneshield Potion (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(4623, {	-- Lesser Stoneshield Potion
@@ -1862,9 +1854,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.0, 38.8, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1880,16 +1872,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(9393, {	-- Beacon of Hope
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
 				i(2621, {	-- Cowl of Necromancy
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2740,	-- Shadowforge Darkweaver
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 53.6, 31.8, BADLANDS },
+						{ 52.4, 33.6, BADLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 47.0, 26.0, BADLANDS },
+						{ 47.2, 32.4, BADLANDS },
+					},
+					-- #endif
 				}),
 				i(10822, {	-- Dark Whelpling (PET!)
 					-- #if AFTER CATA
@@ -1902,16 +1898,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2725,	-- Scalding Whelp
 					-- #endif
 				}),
-				i(9386, {	-- Excavator's Brand
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
 				i(1521, {	-- Lumbering Ogre Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2719,	-- Dustbelcher Lord
+					["coords"] = {
+						{ 10.0, 92.6, BADLANDS },
+						{ 7.6, 89.4, BADLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						46928,	-- Dustbelcher Butcher
+						46929,	-- Dustbelcher Merchant
+					},
+					-- #endif
 				}),
 				-- #if BEFORE 4.0.3
 				i(1993, {	-- Ogremind Ring
@@ -1920,43 +1920,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(4616, {	-- Ryedol's Lucky Pick
 					["timeline"] = { "removed 4.0.3" },
+					["collectible"] = false,	-- This is a quest item where you have to be on the quest to get it, keep it, and not turn it in for several years to get the transmog for.
 					["crs"] = {
 						2740,	-- Shadowforge Darkweaver
 						2739,	-- Shadowforge Tunneler
 						2743,	-- Shadowforge Warrior
 					},
 				}),
-				i(9406, {	-- Spirewind Fetter
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
-				i(9384, {	-- Stonevault Shiv
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
-				i(9391, {	-- The Shoveler
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
 				i(2624, {	-- Thinking Cap
 					["timeline"] = { "removed 4.0.3", "added 8.0.0" },
 					["cr"] = 2718,	-- Dustbelcher Shaman
-				}),
-				i(9428, {	-- Unearthed Bands
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
 				}),
 			}),
 		},

@@ -688,8 +688,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						["g"] = {
-							i(143502, {	-- Highlord's Golden Charger (MOUNT!)
-									}),
+							mount(231435),	-- Highlord's Golden Charger (MOUNT!)
 						},
 					}),
 					q(42377, {	-- The Brother's Trail

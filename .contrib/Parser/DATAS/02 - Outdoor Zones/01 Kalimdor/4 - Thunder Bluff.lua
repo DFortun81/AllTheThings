@@ -38,19 +38,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Pond Predators
+						crit(17759, {	-- Pond Predators
 							["_quests"] = { 29345 },
 						}),
-						crit(2, {	-- The Ring's the Thing
+						crit(17760, {	-- The Ring's the Thing
 							["_quests"] = { 29346 },
 						}),
-						crit(3, {	-- The Race to Restock
+						crit(17761, {	-- The Race to Restock
 							["_quests"] = { 29348 },
 						}),
-						crit(4, {	-- Craving Crayfish
+						crit(17762, {	-- Craving Crayfish
 							["_quests"] = { 29349 },
 						}),
-						crit(5, {	-- Shiny Baubles
+						crit(17763, {	-- Shiny Baubles
 							["_quests"] = { 29354 },
 						}),
 					},
@@ -60,19 +60,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(2, {	-- "Magic" Mushrooms
+						crit(17734, {	-- "Magic" Mushrooms
 							["_quests"] = { 29362 },
 						}),
-						crit(4, {	-- Corn Mash
+						crit(17736, {	-- Corn Mash
 							["_quests"] = { 29364 },
 						}),
-						crit(3, {	-- Mulgore Spice Bread
+						crit(17735, {	-- Mulgore Spice Bread
 							["_quests"] = { 29363 },
 						}),
-						crit(5, {	-- Perfectly Picked Portions
+						crit(17737, {	-- Perfectly Picked Portions
 							["_quests"] = { 29365 },
 						}),
-						crit(1, {	-- Pining for Nuts
+						crit(17733, {	-- Pining for Nuts
 							["_quests"] = { 29358 },
 						}),
 					},
@@ -226,6 +226,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						207743,	-- Netali Proudwind <General Goods>
+						207754,	-- Mooart
+					},
+					["coord"] = { 28.8, 19.2, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(1844, {	-- Chimaeric Horn
 					["qg"] = 6410,	-- Orm Stonehoof
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
@@ -505,6 +526,78 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(76156, {	-- Stalk With The Earthmother (1/3)
+					["providers"] = {
+						{ "n", 205729 },	-- Boarton Shadetotem <Rogue Trainer?>
+						{ "i", 206159 },	-- Venture Co Disguise
+					},
+					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { MULGORE },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/5 Seaforium Mining Charge
+							["providers"] = {
+								{ "i", 206157 },	-- Seaforium Mining Charge
+								{ "o", 403041 },	-- Blasting Supplies
+							},
+							["coord"] = { 61, 47, MULGORE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(76160, {	-- Stalk With The Earthmother (2/3)
+					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+					["sourceQuest"] = 76156,	-- Stalk With The Earthmother (1/3)
+					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { MULGORE },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/1 Pine Salve
+							["providers"] = {
+								{ "i", 206175 },	-- Pine Salve
+								{ "o", 403105 },	-- Windfury Cone
+							},
+							["cost"] = {
+								{ "i", 206176, 1 },	-- Mortar and Pestle
+								{ "i", 206170, 8 },	-- Windfury Cone
+							},
+							["coord"] = { 53.48, 9.37, MULGORE },
+						}),
+						i(206177),	-- Pine Nut Butter
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(76240, {	-- Stalk With The Earthmother (3/3)
+					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+					["sourceQuest"] = 76160,	-- Stalk With The Earthmother (2/3)
+					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fish Chunks
+							["providers"] = {
+								{ "i", 206345 },	-- Fish Chunks
+								{ "i", 206344 },	-- Knife Set
+							},
+							["cost"] = {{ "i", 6291, 1 }},	-- Raw Brilliant Smallfish
+							["coord"] = { 53.48, 9.37, THUNDER_BLUFF },
+						}),
+						recipe(674, {	-- Dual Wield
+							["classes"] = { SHAMAN },
+						}),
+						recipe(410104, {	-- Engrave Gloves - Lava Lash
+							["classes"] = { SHAMAN },
+						}),
+					},
+				})),
+				-- #endif
 				q(1131, {	-- Steelsnap
 					["qg"] = 3441,	-- Melor Stonehoof
 					["sourceQuest"] = 1130,	-- Melor Sends Word
@@ -573,6 +666,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = {
 						i(67414),	-- Bag of Shiny Things
+						i(69956),	-- Blind Cavefish
 					},
 				}),
 				q(1195, {	-- The Sacred Flame (1/3)
@@ -718,7 +812,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
-				n(8359, {	-- Ahanu
+				n(8359, {	-- Ahanu <Leather Armor Merchant>
 					["coord"] = { 45.6, 55.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -777,6 +871,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						853,	-- Hatchet
 						12249,	-- Merciless Axe
 						1196,	-- Tabar
+						37,     -- Worn Axe
 					}},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
@@ -784,7 +879,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(8360, {	-- Elki
+				n(8360, {	-- Elki <Mail Armor Merchant>
 					["coord"] = { 45.2, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -806,7 +901,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1202,	-- Wall Shield
 					}},
 				}),
-				n(3020, {	-- Etu Ragetotem
+				n(3020, {	-- Etu Ragetotem <Mace & Staff Merchant>
 					["coord"] = { 58.2, 52.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -817,6 +912,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						928,	-- Long Staff
 						852,	-- Mace
 						924,	-- Maul
+						20981,  -- Neophyte's Mace
 						854,	-- Quarter Staff
 						2026,	-- Rock Hammer
 					}},
@@ -862,7 +958,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}},
 				}),
 				-- #endif
-				n(3093, {	-- Grod
+				n(3093, {	-- Grod <Leather Armor Merchant>
 					["coord"] = { 42.4, 43.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -897,6 +993,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.6, 56.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
 						837,	-- Heavy Weave Armor
 						3589,	-- Heavy Weave Belt
 						3590,	-- Heavy Weave Bracers
@@ -910,13 +1009,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						202,	-- Thick Cloth Shoes
 						200,	-- Thick Cloth Vest
 					}},
-					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Grey Shirt
-						i(16060),	-- Common White Shirt
-					},
 				}),
-				n(3018, {	-- Hogor Thunderhoof
+				n(3018, {	-- Hogor Thunderhoof <Guns Merchant>
 					["coord"] = { 55.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -929,7 +1023,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2510),	-- Solid Blunderbuss
 					},
 				}),
-				n(2997, {	-- Jyn Stonehoof
+				n(2997, {	-- Jyn Stonehoof <Weapons Merchant>
 					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -946,6 +1040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2488,	-- Gladius
 						2030,	-- Gnarled Staff
 						1197,	-- Giant Mace
+						2028,	-- Hammer
 						2134,	-- Hand Axe
 						853,	-- Hatchet
 						2511,	-- Hunter's Boomstick
@@ -961,9 +1056,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2132,	-- Short Staff
 						2131,	-- Shortsword
 						2494,	-- Stiletto
+						1196,	-- Tabar
+						2490,	-- Tomahawk
+						2489,	-- Two-Handed Sword
+						2495,	-- Walking Stick
+						2493,	-- Wooden Mallet
 					}},
 				}),
-				n(3021, {	-- Kard Ragetotem
+				n(3021, {	-- Kard Ragetotem <Sword & Dagger Merchant>
 					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -978,8 +1078,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						923,	-- Longsword
 						2526,	-- Main Gauche
 						2208,	-- Poniad
+						20977,	-- Recruit's Shortsword
 						2534,	-- Rondel
 						2027,	-- Scimitar
+						20982,	-- Sharp Dagger
 					}},
 				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
@@ -1053,10 +1155,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
@@ -1081,15 +1183,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(8398, {	-- Ohanko <Blade Vendor>
+				n(8398, {	-- Ohanko <Two Handed Weapon Merchant>
 					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
+						23346,	-- Battleworn Claymore
+						52557,	-- Battleworn Hammer
 						2523,	-- Bullova
 						2531,	-- Great Axe
 						2521,	-- Flamberge
+						73210,	-- Trainee's Sword
 						2525,	-- War Hammer
 						2533,	-- War Maul
+						57244,	-- Warder's Spear
+						12282,	-- Worn Battleaxe
+						49778,	-- Worn Greatsword
+						57243,	-- Worn Spear
+						52532,	-- Worn Wood Chopper
 						2529,	-- Zweihander
 					}},
 				}),
@@ -1130,7 +1240,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18647, {	-- Schematic: Red Firework
 							["isLimited"] = true,
 						}),
-						i(22729, {	-- Steam Tonk Controller
+						i(22729, {	-- Schematic: Steam Tonk Controller
 							["isLimited"] = true,
 						}),
 					},
@@ -1139,8 +1249,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6330),	-- Recipe: Bristle Whisker Catfish
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					},
 				}),
 				n(8363, {	-- Shadi Mistrunner <Trade Supplies>
@@ -1154,7 +1264,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				n(3022, {	-- Sunn Ragetotem
+				n(3022, {	-- Sunn Ragetotem <Staff Merchant>
 					["coord"] = { 49.6, 49.8, THUNDER_BLUFF },
 					["sym"] = {{"select","itemID",
 						2527,	-- Battle Staff
@@ -1171,7 +1281,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6524,	-- Studded Leather Harness
 					}},
 				}),
-				n(3092, {	-- Tagain
+				n(3092, {	-- Tagain <Cloth Armor Merchant>
 					["coord"] = { 43.4, 43.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -1238,7 +1348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = { {"sub", "common_recipes_vendor", 3356} },	-- Sumi <Blacksmithing Supplies>
 					["races"] = HORDE_ONLY,
 				}),
-				n(5189, {	-- Thrumn
+				n(5189, {	-- Thrumn <Tabard Vendor>
 					["coord"] = { 38.0, 63.0, THUNDER_BLUFF },
 					["sym"] = { {"sub", "common_vendor", 5188} },	-- Garyl <Tabard Vendor>
 					["races"] = HORDE_ONLY,

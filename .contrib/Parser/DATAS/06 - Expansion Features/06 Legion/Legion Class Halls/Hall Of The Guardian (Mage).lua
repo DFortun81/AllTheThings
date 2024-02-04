@@ -1,6 +1,24 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+DAILY_EVENT_ROLL = createHeader({
+	readable = "Daily Event Roll",
+	icon = "Interface\\Icons\\Achievement_Zone_Frostfire",
+	text = {
+		en = "Event Roll",
+		es = "Rollo de eventos",
+		de = "Ereignisliste",
+		fr = "Rouleau d'événement",
+		it = "Rotolo di eventi",
+		pt = "Lista de Eventos",
+		ru = "Ролл События",
+		ko = "이벤트 롤",
+		cn = "事件投骰",
+	},
+	description = {
+		en = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
+	},
+});
 
 root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
@@ -105,16 +123,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						gt(386, {		-- Teleportation Nexus
 							["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
 							["g"] = {
-								n(-159, {	-- Daily Event Roll
-									["isDaily"] = true,
-									["isBreadcrumb"] = true,
+								n(DAILY_EVENT_ROLL, {
 									["questID"] = 44384,	-- "Daily Portal Event Roll" on WoWHead
-									["description"] = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
-									["icon"] = "Interface\\Icons\\Achievement_Zone_Frostfire",
+									["isBreadcrumb"] = true,
+									["isDaily"] = true,
 								}),
 								n(113513, {	-- Asher <Fury of Frostfire>
 									["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
-									["sourceQuests"] = { 44384 },	-- Daily Portal Event Roll
+									["sourceQuest"] = 44384,	-- Daily Portal Event Roll
 									["g"] = {
 										i(139560, {	-- Everburning Crystal
 											artifact(180),	-- Ebonchill
@@ -285,6 +301,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["sourceQuest"] = 42452,	-- Finding Ebonchill
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["coord"] = { 59.1, 43.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+							["g"] = {
+								i(173699, {	-- Blasted Lands Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
+								i(141330),	-- Demon Stone (QI!)
+							},
 						}),
 						q(42479, {	-- The Mage Hunter
 							["sourceQuests"] = {
@@ -313,6 +335,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							11997,	-- The Frozen Flame
 							42479,	-- The Mage Hunter
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 112440 },	-- Jackson Watkins
 						["coord"] = { 44.8, 57.8, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 						["g"] = {
@@ -337,7 +360,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 					-- Choose Zone
 					q(41112, {	-- The Great Akazamzarak
+						-- #if BEFORE 8.0.1
 						["sourceQuests"] = { 41125 },	-- Unlocked Potential
+						-- #endif
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["coord"] = { 56.5, 33.8, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 					}),

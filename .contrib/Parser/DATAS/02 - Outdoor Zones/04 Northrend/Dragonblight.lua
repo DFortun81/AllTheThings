@@ -39,17 +39,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\Achievement_zone_dragonblight_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(30, {	-- Okrut Dragonwaste
-								["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-								["cr"] = 66638,	-- Okrut Dragonwaste <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1265),	-- Explore Dragonblight
 					ach(35, {	-- Might of Dragonblight (A)
 						["races"] = ALLIANCE_ONLY,
@@ -79,38 +68,40 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- The Warden's Task
+							crit(39007, {	-- The Warden's Task
 								["sourceQuest"] = 12169,	-- The High Cultist
 							}),
-							crit(2, {	-- Redirecting the Ley Lines
+							crit(39008, {	-- Redirecting the Ley Lines
 								["sourceQuest"] = 12107,	-- The End of the Line
 							}),
-							crit(3, {	-- Informing the Queen
+							crit(39009, {	-- Informing the Queen
 								["sourceQuest"] = 12123,	-- Informing the Queen
 							}),
-							crit(4, {	-- The Dragonflights
-								["sourceQuests"] = {
-									13343,	-- Mystery of the Infinite, Redux
-									12459,	-- That Which Creates Can Also Destroy
-									-- TODO:: confirm below
-									12266,	-- Tales of Destruction
-									12419,	-- The Fate of the Ruby Dragonshrine
-									12456,	-- The Plume of Alystros
-								},
+							crit(39010, {	-- The Dragonflights
+								["sourceQuest"] = 12266,	-- Tales of Destruction
 							}),
-							crit(5, {	-- Angrathar the Wrathgate
+							crit(39011, {	-- The Dragonflights
+								["sourceQuest"] = 12459,	-- That Which Creates Can Also Destroy
+							}),
+							crit(39012, {	-- The Dragonflights
+								["sourceQuest"] = 12456,	-- The Plume of Alystros
+							}),
+							crit(39013, {	-- The Dragonflights
+								["sourceQuest"] = 13343,	-- Mystery of the Infinite, Redux
+							}),
+							crit(285, {	-- Angrathar the Wrathgate
 								["sourceQuest"] = 12499,	-- Return to Angrathar
 							}),
-							crit(6, {	-- Frostmourne
+							crit(39014, {	-- Frostmourne
 								["sourceQuest"] = 12478,	-- Frostmourne Cavern
 							}),
-							crit(7, {	-- "Strategic Alliance"
-								["sourceQuests"] = {
-									12080,	-- Really Big Worm
-									12078,	-- Worm Wrangler
-								},
+							crit(39016, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12078,	-- Worm Wrangler
 							}),
-							crit(8, {	-- Oacha'noa
+							crit(39017, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12080,	-- Really Big Worm
+							}),
+							crit(39024, {	-- Oacha'noa
 								["sourceQuest"] = 12032,	-- Conversing With the Depths
 							}),
 						},
@@ -146,44 +137,46 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- The Taunka
+							crit(39018, {	-- The Taunka
 								["sourceQuest"] = 12008,	-- Agmar's Hammer
 							}),
-							crit(2, {	-- Traitors to the Horde
+							crit(39021, {	-- Traitors to the Horde
 								["sourceQuest"] = 12136,	-- The Translated Tome
 							}),
-							crit(3, {	-- Redirecting the Ley Lines
+							crit(39019, {	-- Redirecting the Ley Lines
 								["sourceQuest"] = 12110,	-- The End of the Line
 							}),
-							crit(4, {	-- Containing the Rot
+							crit(39022, {	-- Containing the Rot
 								["sourceQuest"] = 12111,	-- Where the Wild Things Roam
 							}),
-							crit(5, {	-- Angrathar the Wrathgate
+							crit(286, {	-- Angrathar the Wrathgate
 								["sourceQuest"] = 12500,	-- Return To Angrathar
 							}),
-							crit(6, {	-- Informing the Queen
+							crit(39020, {	-- Informing the Queen
 								["sourceQuest"] = 12124,	-- Informing the Queen
 							}),
-							crit(7, {	-- The Dragonflights
-								["sourceQuests"] = {
-									13343,	-- Mystery of the Infinite, Redux
-									12459,	-- That Which Creates Can Also Destroy
-									-- TODO:: confirm below
-									12266,	-- Tales of Destruction
-									12419,	-- The Fate of the Ruby Dragonshrine
-									12456,	-- The Plume of Alystros
-								},
+							crit(39010, {	-- The Dragonflights
+								["sourceQuest"] = 12266,	-- Tales of Destruction
 							}),
-							crit(8, {	-- "Strategic Alliance"
-								["sourceQuests"] = {
-									12080,	-- Really Big Worm
-									12078,	-- Worm Wrangler
-								},
+							crit(39011, {	-- The Dragonflights
+								["sourceQuest"] = 12459,	-- That Which Creates Can Also Destroy
 							}),
-							crit(9, {	-- The Scarlet Onslaught
+							crit(39012, {	-- The Dragonflights
+								["sourceQuest"] = 12456,	-- The Plume of Alystros
+							}),
+							crit(39013, {	-- The Dragonflights
+								["sourceQuest"] = 13343,	-- Mystery of the Infinite, Redux
+							}),
+							crit(39016, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12078,	-- Worm Wrangler
+							}),
+							crit(39017, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12080,	-- Really Big Worm
+							}),
+							crit(39023, {	-- The Scarlet Onslaught
 								["sourceQuest"] = 12285,	-- Do Unto Others
 							}),
-							crit(10, {	-- Oacha'noa
+							crit(39024, {	-- Oacha'noa
 								["sourceQuest"] = 12032,	-- Conversing With the Depths
 							}),
 						},
@@ -325,6 +318,11 @@ root(ROOTS.Zones, {
 					fp(252, {	-- Wyrmrest Temple
 						["cr"] = 26851,	-- Nethestrasz <Flight Master>
 						["coord"] = { 60.2, 51.4, DRAGONBLIGHT },
+					}),
+				}),
+				petbattles({
+					n(66638, {	-- Okrut Dragonwaste <Master Pet Tamer>
+						["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 					}),
 				}),
 				spell(921, {	-- Pickpocketing
@@ -913,7 +911,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 13.0, 49.3, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26181,	-- Emissary Brighthoof
-						["sourceQuest"] = 11979,	-- The Taunka and the Tauren
+						-- TODO: ShadowBrooks only one required need some reports though
+						["sourceQuests"] = {
+							11977,	-- A Tauren Among Taunka
+							11979,	-- The Taunka and the Tauren
+						},
 					}),
 					q(12167, {	-- Kill the Cultists
 						["coord"] = { 29.1, 55.6, DRAGONBLIGHT },
@@ -1837,6 +1839,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
+						["altQuests"] = {
+							12487,	-- To Conquest Hold, But Be Careful!
+							-- #if AFTER 6.2.0.19953
+							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
+						},
 						["isBreadcrumb"] = true,
 					}),
 					q(12511, {	-- The Hills Have Us
@@ -2041,6 +2049,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
+						["altQuests"] = {
+							12488,	-- The High Executor Needs You
+							-- #if AFTER 6.2.0.19953
+							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
+						},
 						["isBreadcrumb"] = true,
 					}),
 					q(12095, {	-- To Dragon's Fall
@@ -2379,11 +2393,11 @@ root(ROOTS.Zones, {
 							i(44723, {	-- Pengu (PET!)
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1" },
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack
+							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 							i(44061),	-- Pigment-Stained Robes
 							i(44052),	-- Totemic Purification Rod
 							i(44051),	-- Traditional Flensing Knife

@@ -42,6 +42,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 									["provider"] = { "n", 157710 },	-- Cortinarius
 									["coord"] = { 33.2, 36.3, ARDENWEALD },
+									["g"] = {
+										i(171989),	-- Pouch of Spores (QI!)
+									},
 								}),
 								q(57463, {	-- My Way or the Hyphae
 									["sourceQuests"] = { 57459 },	-- Fighting For Fungus
@@ -70,7 +73,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 								["isDaily"] = true,
 							}, {
-								q(62606),	-- A Blackthorn Blend
+								q(62606, {	-- A Blackthorn Blend
+									["g"] = {
+										i(183840),	-- Blackthorn Clay (QI!)
+									},
+								}),
 								q(62608),	-- A Royal Treat
 								q(60175),	-- A Taste of Tirna Noch
 								q(62607),	-- Glittering Gritty Goodness
@@ -185,9 +192,3 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(62958),	-- triggered during Marasmius dailies
-	q(62962),	-- triggered when turning in 'Into the Unknown' (62296)
-	q(62963),	-- triggered when turning in 'Go Beyond' (??)
-});

@@ -19,6 +19,20 @@ local RemappedEventToMapID = {
 	[376] = 1952,	-- Terrokar Forest
 };
 
+-- Event ID Remapping by Region
+local remapping = L.EVENT_REMAPPING;
+if GetCVar("portal") == "EU" then
+	remapping[622] = 559; -- EU BC Timewalking
+	remapping[616] = 562; -- EU Wrath Timewalking
+	remapping[628] = 587; -- EU Cata Timewalking
+	remapping[652] = 643; -- EU MoP Timewalking
+	remapping[1063] = 1056; -- EU WoD Timewalking
+	remapping[1265] = 1263;	-- EU Legion Timewalking
+	remapping[1398] = 1396;	-- EU Secrets of Azeroth
+elseif GetCVar("portal") == "KO" then
+	remapping[1399] = 1396;	-- KO Secrets of Azeroth
+end
+
 -- Event Cache
 -- Determine if the Calendar is implemented or not.
 local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= "";
@@ -50,7 +64,7 @@ local SessionEventCache;
 local function GetEventCache()
 	-- app.PrintDebug("GetEventCache")
 	local now = C_DateAndTime_GetServerTimeLocal();
-	local cache = AllTheThingsSavedVariables.EventCache;
+	local cache = SessionEventCache or AllTheThingsSavedVariables.EventCache;
 	if cache and (cache.lease or 0) > now then
 		-- If our cache is still leased, then simply return it.
 		-- app.PrintDebug("GetEventCache.lease")
@@ -78,7 +92,7 @@ local function GetEventCache()
 						if event then -- If this is nil, then attempting to index it on the same line will toss an error.
 							if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
 								local eventID = event.eventID;
-								local remappedID = L.EVENT_REMAPPING[eventID] or eventID;
+								local remappedID = remapping[eventID] or eventID;
 								if remappedID then
 									local t = cache[remappedID];
 									if not t then
@@ -125,30 +139,38 @@ local function GetEventCache()
 end
 
 -- Event Helpers
+local CustomEventHelpers = {
+	[1271] = { 559,562,587,643,1056,1263 },	-- EVENTS.TIMEWALKING
+	[133701] = { 1395, 1400, 1407, 1429, 1430, 1431 },	-- EVENTS.DRAGONRIDING_CUP
+};
+local SortByStart = function(a, b)
+	return a.start < b.start;
+end;
 setmetatable(EventInformation, { __index = function(t, id)
 	-- app.PrintDebug("EventInformation.__index",id)
 	local info = (SessionEventCache or GetEventCache())[id];
 	if info and info.times then
 		t[id] = info;
 		return info;
-	elseif id == 1271 then	-- EVENTS.TIMEWALKING
-		local times = {};
-		for i,eventID in ipairs({ 559,562,587,643,1056,1263 }) do
-			local subinfo = EventInformation[eventID];
-			if subinfo and subinfo.times then
-				for j,schedule in ipairs(subinfo.times) do
-					schedule.subEventID = eventID;
-					tinsert(times, schedule);
+	else
+		local customEvent = CustomEventHelpers[id];
+		if customEvent then
+			local times = {};
+			for i,eventID in ipairs(customEvent) do
+				local subinfo = EventInformation[eventID];
+				if subinfo and subinfo.times then
+					for j,schedule in ipairs(subinfo.times) do
+						schedule.subEventID = eventID;
+						tinsert(times, schedule);
+					end
 				end
 			end
-		end
-		if #times > 0 then
-			app.Sort(times, function(a, b)
-				return a.start < b.start;
-			end);
-			info = { name = times[1].name, icon = times[1].icon, times = times };
-			t[id] = info;
-			return info;
+			if #times > 0 then
+				app.Sort(times, SortByStart);
+				info = { name = times[1].name, icon = times[1].icon, times = times };
+				t[id] = info;
+				return info;
+			end
 		end
 	end
 	return app.EmptyTable;
@@ -308,8 +330,9 @@ local function GetEventTimeStrings(nextEvent)
 		end
 		if nextEvent.remappedID then
 			local mapID = RemappedEventToMapID[nextEvent.remappedID];
-			local info = C_Map.GetMapInfo(mapID);
-			tinsert(schedule, "Where:`" .. (info.name or ("Map ID #" .. mapID)));
+			if mapID then
+				tinsert(schedule, "Where:`" .. (app.GetMapName(mapID) or ("Map ID #" .. mapID)));
+			end
 		end
 		return schedule;
 	end

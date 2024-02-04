@@ -90,6 +90,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.4, 34.7, SANCTUM_OF_BINDING },
 				["g"] = {
+					i(184561),	-- Anima Embers (QI!)
 					i(181372),	-- Tribute of the Ascended
 				},
 			}),

@@ -218,444 +218,270 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["races"] = HORDE_ONLY,
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(4596, {	-- The Sword in the Skull
-					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.",
-					["maps"] = {
-						NORTHREND_DALARAN,
-						ISLE_OF_QUELDANAS,
+					["sourceQuests"] = {
+						24796,	-- A Victory For The Silver Covenant (A)
+						24795,	-- A Victory For The Silver Covenant [A - Maces]
+						24801,	-- A Victory For The Sunreavers (H)
+						24799,	-- A Victory For The Sunreavers [H - Maces]
+						24800,	-- A Victory For The Sunreavers [Blood Elves]
+						24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
 					},
+					["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
+					["maps"] = { NORTHREND_DALARAN },
 					["groups"] = {
-						a(q(14443, {	-- The Battered Hilt (A)
-							["provider"] = { "i", 50379 },	-- Battered Hilt (A)
-						})),
-						h(q(24554, {	-- The Battered Hilt (H)
-							["provider"] = { "i", 50380 },	-- Battered Hilt (H)
-						})),
-						q(14444, {	-- What The Dragons Know (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 14443,	-- The Battered Hilt (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24555, {	-- What The Dragons Know (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24554,	-- The Battered Hilt (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(14457, {	-- The Sunreaver Plan
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 14444,	-- What The Dragons Know (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24557, {	-- The Silver Covenant's Scheme
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24555,	-- What The Dragons Know
-							["races"] = HORDE_ONLY,
-						}),
-						q(20438, {	-- A Suitable Disguise (A)
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 14457,	-- The Sunreaver Plan
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24556, {	-- A Suitable Disguise (H)
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(20439, {	-- A Meeting With The Magister
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 20438,	-- A Suitable Disguise (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24451, {	-- An Audience With The Arcanist
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24556,	-- A Suitable Disguise (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24454, {	-- Return To Caladis Brightspear
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24558, {	-- Return To Myralion Sunblaze
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24461, {	-- Reforging The Sword (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24454,	-- Return To Caladis Brightspear (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24559, {	-- Reforging The Sword (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24476, {	-- Tempering The Blade (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24461,	-- Reforging The Sword (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24560, {	-- Tempering The Blade (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24559,	-- Reforging The Sword (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24480, {	-- The Halls Of Reflection (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24476,	-- Tempering The Blade (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24561, {	-- The Halls Of Reflection (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24560,	-- Tempering The Blade (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24522, {	-- Journey To The Sunwell (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24562, {	-- Journey To The Sunwell (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24535, {	-- Thalorien Dawnseeker (A)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24522,	-- Journey To The Sunwell
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24563, {	-- Thalorien Dawnseeker (H)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24562,	-- Journey To The Sunwell
-							["races"] = HORDE_ONLY,
-						}),
-						q(24553, {	-- The Purification of Quel'Delar (A)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24595, {	-- The Purification of Quel'Delar (A — Maces)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24564, {	-- The Purification of Quel'Delar (H)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-						}),
-						q(24598, {	-- The Purification of Quel'Delar (H — Maces)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-						}),
-						q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = { BLOODELF },
-						}),
-						q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = { BLOODELF },
-						}),
-						q(24796, {	-- A Victory For The Silver Covenant (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24553,	-- The Purification of Quel'Delar (A)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = ALLIANCE_ONLY,
-							["_drop"] = { "g" },
-						}),
-						q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [A - Maces]
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = ALLIANCE_ONLY,
-							["_drop"] = { "g" },
-						}),
-						q(24801, {	-- A Victory For The Sunreavers (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24564,	-- The Purification of Quel'Delar (H)
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-							["_drop"] = { "g" },
-						}),
-						q(24799, {	-- A Victory For The Sunreavers [H - Maces]
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [H - Maces]
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-							["_drop"] = { "g" },
-						}),
-						q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
-							["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = { BLOODELF },
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["_drop"] = { "g" },
-						}),
-						q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
-							["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = { BLOODELF },
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["_drop"] = { "g" },
-						}),
-
+						i(50050),	-- Cudgel of Furious Justice
+						i(50051),	-- Hammer of Purified Flame
+						i(50052),	-- Lightborn Spire
+						i(50046),	-- Quel'Delar, Cunning of the Shadows
+						i(50049),	-- Quel'Delar, Ferocity of the Scorned
+						i(50047),	-- Quel'Delar, Lens of the Mind
+						i(50048),	-- Quel'Delar, Might of the Faithful
 					},
 				})),
 				ach(2772),	-- Tilted!
-				n(FACTION_HEADER_ALLIANCE, {
+				n(FACTION_HEADER_ALLIANCE, sharedDataSelf({
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						ach(2817, {	-- Exalted Argent Champion of the Alliance
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								947,	-- The Argent Crusade
-								2760,	-- Exalted Champion of Darnassus
-								2762,	-- Exalted Champion of Gnomeregan
-								2763,	-- Exalted Champion of Ironforge
-								2764,	-- Exalted Champion of Stormwind
-								2761,	-- Exalted Champion of the Exodar
-							}},
-							["groups"] = {
-								title(123),	-- Crusader
-							},
+				},{
+					ach(2817, {	-- Exalted Argent Champion of the Alliance
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							947,	-- The Argent Crusade
+							2760,	-- Exalted Champion of Darnassus
+							2762,	-- Exalted Champion of Gnomeregan
+							2763,	-- Exalted Champion of Ironforge
+							2764,	-- Exalted Champion of Stormwind
+							2761,	-- Exalted Champion of the Exodar
+						}},
+						["groups"] = {
+							title(123),	-- Crusader
+						},
+					}),
+					ach(2770, {	-- Exalted Champion of the Alliance
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							2760,	-- Exalted Champion of Darnassus
+							2762,	-- Exalted Champion of Gnomeregan
+							2763,	-- Exalted Champion of Ironforge
+							2764,	-- Exalted Champion of Stormwind
+							2761,	-- Exalted Champion of the Exodar
+						}},
+					}),
+					ach(2782, {	-- Champion of the Alliance
+						["sym"] = {{"meta_achievement",
+							2777,	-- Champion of Darnassus
+							2779,	-- Champion of Gnomeregan
+							2780,	-- Champion of Ironforge
+							2781,	-- Champion of Stormwind
+							2778,	-- Champion of the Exodar
+						}},
+					}),
+					ach(2777, {	-- Champion of Darnassus
+						["sourceQuest"] = 13735,	-- A Champion Rises (A) (Darnassus)
+					}),
+					ach(2779, {	-- Champion of Gnomeregan
+						["sourceQuest"] = 13733,	-- A Champion Rises (A) (Gnomeregan)
+					}),
+					ach(2780, {	-- Champion of Ironforge
+						["sourceQuest"] = 13732,	-- A Champion Rises (A) (Ironforge)
+					}),
+					ach(2781, {	-- Champion of Stormwind
+						["sourceQuest"] = 13702,	-- A Champion Rises (A) (Stormwind City)
+					}),
+					ach(2778, {	-- Champion of the Exodar
+						["sourceQuest"] = 13734,	-- A Champion Rises (A) (The Exodar)
+					}),
+					ach(2760, {	-- Exalted Champion of Darnassus
+						crit(5328, {	-- Exalted with Darnassus
+							["_factions"] = { 69 },
 						}),
-						ach(2770, {	-- Exalted Champion of the Alliance
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								2760,	-- Exalted Champion of Darnassus
-								2762,	-- Exalted Champion of Gnomeregan
-								2763,	-- Exalted Champion of Ironforge
-								2764,	-- Exalted Champion of Stormwind
-								2761,	-- Exalted Champion of the Exodar
-							}},
+						-- #if ANYCLASSIC
+						crit(9773, {	-- Champion of Darnassus
+							["_achievements"] = { 2777 },
 						}),
-						ach(2782, {	-- Champion of the Alliance
-							["sym"] = {{"meta_achievement",
-								2777,	-- Champion of Darnassus
-								2779,	-- Champion of Gnomeregan
-								2780,	-- Champion of Ironforge
-								2781,	-- Champion of Stormwind
-								2778,	-- Champion of the Exodar
-							}},
+						-- #else
+						crit(11320, {	-- Champion of Darnassus
+							["_achievements"] = { 2777 },
 						}),
-						ach(2777, {	-- Champion of Darnassus
-							["sourceQuest"] = 13735,	-- A Champion Rises (A) (Darnassus)
+						-- #endif
+						title(114),	-- of Darnassus
+					}),
+					ach(2761, {	-- Exalted Champion of the Exodar
+						crit(5332, {	-- Exalted with Exodar
+							["_factions"] = { 930 },
 						}),
-						ach(2779, {	-- Champion of Gnomeregan
-							["sourceQuest"] = 13733,	-- A Champion Rises (A) (Gnomeregan)
+						-- #if ANYCLASSIC
+						crit(9774, {	-- Champion of Exodar
+							["_achievements"] = { 2778 },
 						}),
-						ach(2780, {	-- Champion of Ironforge
-							["sourceQuest"] = 13732,	-- A Champion Rises (A) (Ironforge)
+						-- #else
+						crit(11321, {	-- Champion of Exodar
+							["_achievements"] = { 2778 },
 						}),
-						ach(2781, {	-- Champion of Stormwind
-							["sourceQuest"] = 13702,	-- A Champion Rises (A) (Stormwind City)
+						-- #endif
+						title(113),	-- of the Exodar
+					}),
+					ach(2762, {	-- Exalted Champion of Gnomeregan
+						crit(5329, {	-- Exalted with Gnomeregan
+							["_factions"] = { 54 },
 						}),
-						ach(2778, {	-- Champion of the Exodar
-							["sourceQuest"] = 13734,	-- A Champion Rises (A) (The Exodar)
+						-- #if ANYCLASSIC
+						crit(9775, {	-- Champion of Gnomeregan
+							["_achievements"] = { 2779 },
 						}),
-						ach(2760, {	-- Exalted Champion of Darnassus
-							crit(5328, {	-- Exalted with Darnassus
-								["_factions"] = { 69 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9773, {	-- Champion of Darnassus
-								["_achievements"] = { 2777 },
-							}),
-							-- #else
-							crit(11320, {	-- Champion of Darnassus
-								["_achievements"] = { 2777 },
-							}),
-							-- #endif
-							title(114),	-- of Darnassus
+						-- #else
+						crit(11322, {	-- Champion of Gnomeregan
+							["_achievements"] = { 2779 },
 						}),
-						ach(2761, {	-- Exalted Champion of the Exodar
-							crit(5332, {	-- Exalted with Exodar
-								["_factions"] = { 930 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9774, {	-- Champion of Exodar
-								["_achievements"] = { 2778 },
-							}),
-							-- #else
-							crit(11321, {	-- Champion of Exodar
-								["_achievements"] = { 2778 },
-							}),
-							-- #endif
-							title(113),	-- of the Exodar
+						-- #endif
+						title(81),	-- of Gnomeregan
+					}),
+					ach(2764, {	-- Exalted Champion of Stormwind
+						crit(5331, {	-- Exalted with Stormwind
+							["_factions"] = { 72 },
 						}),
-						ach(2762, {	-- Exalted Champion of Gnomeregan
-							crit(5329, {	-- Exalted with Gnomeregan
-								["_factions"] = { 54 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9775, {	-- Champion of Gnomeregan
-								["_achievements"] = { 2779 },
-							}),
-							-- #else
-							crit(11322, {	-- Champion of Gnomeregan
-								["_achievements"] = { 2779 },
-							}),
-							-- #endif
-							title(81),	-- of Gnomeregan
+						-- #if ANYCLASSIC
+						crit(9777, {	-- Champion of Stormwind
+							["_achievements"] = { 2781 },
 						}),
-						ach(2764, {	-- Exalted Champion of Stormwind
-							crit(5331, {	-- Exalted with Stormwind
-								["_factions"] = { 72 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9777, {	-- Champion of Stormwind
-								["_achievements"] = { 2781 },
-							}),
-							-- #else
-							crit(11324, {	-- Champion of Stormwind
-								["_achievements"] = { 2781 },
-							}),
-							-- #endif
-							title(116),	-- of Stormwind
+						-- #else
+						crit(11324, {	-- Champion of Stormwind
+							["_achievements"] = { 2781 },
 						}),
-						ach(2763, {	-- Exalted Champion of Ironforge
-							crit(5330, {	-- Exalted with Ironforge
-								["_factions"] = { 47 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9776, {	-- Champion of Ironforge
-								["_achievements"] = { 2780 },
-							}),
-							-- #else
-							crit(11323, {	-- Champion of Ironforge
-								["_achievements"] = { 2780 },
-							}),
-							-- #endif
-							title(115),	-- of Ironforge
+						-- #endif
+						title(116),	-- of Stormwind
+					}),
+					ach(2763, {	-- Exalted Champion of Ironforge
+						crit(5330, {	-- Exalted with Ironforge
+							["_factions"] = { 47 },
 						}),
-					},
-				}),
-				n(FACTION_HEADER_HORDE, {
+						-- #if ANYCLASSIC
+						crit(9776, {	-- Champion of Ironforge
+							["_achievements"] = { 2780 },
+						}),
+						-- #else
+						crit(11323, {	-- Champion of Ironforge
+							["_achievements"] = { 2780 },
+						}),
+						-- #endif
+						title(115),	-- of Ironforge
+					}),
+				})),
+				n(FACTION_HEADER_HORDE, sharedDataSelf({
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						ach(2816, {	-- Exalted Argent Champion of the Horde
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								947,	-- The Argent Crusade
-								2765,	-- Exalted Champion of Orgrimmar
-								2766,	-- Exalted Champion of Sen'jin
-								2767,	-- Exalted Champion of Silvermoon City
-								2769,	-- Exalted Champion of the Undercity
-								2768,	-- Exalted Champion of Thunder Bluff
-							}},
-							["groups"] = {
-								title(123),	-- Crusader
-							},
+				},{
+					ach(2816, {	-- Exalted Argent Champion of the Horde
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							947,	-- The Argent Crusade
+							2765,	-- Exalted Champion of Orgrimmar
+							2766,	-- Exalted Champion of Sen'jin
+							2767,	-- Exalted Champion of Silvermoon City
+							2769,	-- Exalted Champion of the Undercity
+							2768,	-- Exalted Champion of Thunder Bluff
+						}},
+						["groups"] = {
+							title(123),	-- Crusader
+						},
+					}),
+					ach(2771, {	-- Exalted Champion of the Horde
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							2765,	-- Exalted Champion of Orgrimmar
+							2766,	-- Exalted Champion of Sen'jin
+							2767,	-- Exalted Champion of Silvermoon City
+							2769,	-- Exalted Champion of the Undercity
+							2768,	-- Exalted Champion of Thunder Bluff
+						}},
+					}),
+					ach(2788, {	-- Champion of the Horde
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							2783,	-- Champion of Orgrimmar
+							2784,	-- Champion of Sen'jin
+							2785,	-- Champion of Silvermoon City
+							2787,	-- Champion of the Undercity
+							2786,	-- Champion of Thunder Bluff
+						}},
+					}),
+					ach(2783, {	-- Champion of Orgrimmar
+						["sourceQuest"] = 13736,	-- A Champion Rises (H) (Orgrimmar)
+					}),
+					ach(2784, {	-- Champion of Sen'jin
+						["sourceQuest"] = 13737,	-- A Champion Rises (H) (Darkspear Trolls)
+					}),
+					ach(2785, {	-- Champion of Silvermoon City
+						["sourceQuest"] = 13740,	-- A Champion Rises (H) (Silvermoon City)
+					}),
+					ach(2787, {	-- Champion of the Undercity
+						["sourceQuest"] = 13739,	-- A Champion Rises (H) (Undercity)
+					}),
+					ach(2786, {	-- Champion of Thunder Bluff
+						["sourceQuest"] = 13738,	-- A Champion Rises (H) (Thunder Bluff)
+					}),
+					ach(2765, {	-- Exalted Champion of Orgrimmar
+						crit(5314, {	-- Exalted with Orgrimmar
+							["_factions"] = { 76 },
 						}),
-						ach(2771, {	-- Exalted Champion of the Horde
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								2765,	-- Exalted Champion of Orgrimmar
-								2766,	-- Exalted Champion of Sen'jin
-								2767,	-- Exalted Champion of Silvermoon City
-								2769,	-- Exalted Champion of the Undercity
-								2768,	-- Exalted Champion of Thunder Bluff
-							}},
+						crit(9783, {	-- Champion of Orgrimmar
+							["_achievements"] = { 2783 },
 						}),
-						ach(2788, {	-- Champion of the Horde
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								2783,	-- Champion of Orgrimmar
-								2784,	-- Champion of Sen'jin
-								2785,	-- Champion of Silvermoon City
-								2787,	-- Champion of the Undercity
-								2786,	-- Champion of Thunder Bluff
-							}},
+						title(117),	-- of Orgrimmar
+					}),
+					ach(2766, {	-- Exalted Champion of Sen'jin
+						crit(5313, {	-- Exalted with Darkspear Trolls
+							["_factions"] = { 530 },
 						}),
-						ach(2783, {	-- Champion of Orgrimmar
-							["sourceQuest"] = 13736,	-- A Champion Rises (H) (Orgrimmar)
+						-- #if ANYCLASSIC
+						crit(9784, {	-- Champion of Sen'jin
+							["_achievements"] = { 2784 },
 						}),
-						ach(2784, {	-- Champion of Sen'jin
-							["sourceQuest"] = 13737,	-- A Champion Rises (H) (Darkspear Trolls)
+						-- #else
+						crit(11326, {	-- Champion of Sen'jin
+							["_achievements"] = { 2784 },
 						}),
-						ach(2785, {	-- Champion of Silvermoon City
-							["sourceQuest"] = 13740,	-- A Champion Rises (H) (Silvermoon City)
+						-- #endif
+						title(118),	-- of Sen'jin
+					}),
+					ach(2767, {	-- Exalted Champion of Silvermoon City
+						crit(5317, {	-- Exalted with Silvermoon City
+							["_factions"] = { 911 },
 						}),
-						ach(2787, {	-- Champion of the Undercity
-							["sourceQuest"] = 13739,	-- A Champion Rises (H) (Undercity)
+						crit(9785, {	-- Champion of Silvermoon City
+							["_achievements"] = { 2785 },
 						}),
-						ach(2786, {	-- Champion of Thunder Bluff
-							["sourceQuest"] = 13738,	-- A Champion Rises (H) (Thunder Bluff)
+						title(119),	-- of Silvermoon
+					}),
+					ach(2769, {	-- Exalted Champion of the Undercity
+						crit(5316, {	-- Exalted with Undercity
+							["_factions"] = { 68 },
 						}),
-						ach(2765, {	-- Exalted Champion of Orgrimmar
-							crit(5314, {	-- Exalted with Orgrimmar
-								["_factions"] = { 76 },
-							}),
-							crit(9783, {	-- Champion of Orgrimmar
-								["_achievements"] = { 2783 },
-							}),
-							title(117),	-- of Orgrimmar
+						-- #if ANYCLASSIC
+						crit(9787, {	-- Champion of the Undercity
+							["_achievements"] = { 2787 },
 						}),
-						ach(2766, {	-- Exalted Champion of Sen'jin
-							crit(5313, {	-- Exalted with Darkspear Trolls
-								["_factions"] = { 530 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9784, {	-- Champion of Sen'jin
-								["_achievements"] = { 2784 },
-							}),
-							-- #else
-							crit(11326, {	-- Champion of Sen'jin
-								["_achievements"] = { 2784 },
-							}),
-							-- #endif
-							title(118),	-- of Sen'jin
+						-- #else
+						crit(11329, {	-- Champion of the Undercity
+							["_achievements"] = { 2787 },
 						}),
-						ach(2767, {	-- Exalted Champion of Silvermoon City
-							crit(5317, {	-- Exalted with Silvermoon City
-								["_factions"] = { 911 },
-							}),
-							crit(9785, {	-- Champion of Silvermoon City
-								["_achievements"] = { 2785 },
-							}),
-							title(119),	-- of Silvermoon
+						-- #endif
+						title(121),	-- of the Undercity
+					}),
+					ach(2768, {	-- Exalted Champion of Thunder Bluff
+						crit(5315, {	-- Exalted with Thunder Bluff
+							["_factions"] = { 81 },
 						}),
-						ach(2769, {	-- Exalted Champion of the Undercity
-							crit(5316, {	-- Exalted with Undercity
-								["_factions"] = { 68 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9787, {	-- Champion of the Undercity
-								["_achievements"] = { 2787 },
-							}),
-							-- #else
-							crit(11329, {	-- Champion of the Undercity
-								["_achievements"] = { 2787 },
-							}),
-							-- #endif
-							title(121),	-- of the Undercity
+						-- #if ANYCLASSIC
+						crit(9786, {	-- Champion of Thunder Bluff
+							["_achievements"] = { 2786 },
 						}),
-						ach(2768, {	-- Exalted Champion of Thunder Bluff
-							crit(5315, {	-- Exalted with Thunder Bluff
-								["_factions"] = { 81 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9786, {	-- Champion of Thunder Bluff
-								["_achievements"] = { 2786 },
-							}),
-							-- #else
-							crit(11328, {	-- Champion of Thunder Bluff
-								["_achievements"] = { 2786 },
-							}),
-							-- #endif
-							title(120),	-- of Thunder Bluff
+						-- #else
+						crit(11328, {	-- Champion of Thunder Bluff
+							["_achievements"] = { 2786 },
 						}),
-					},
-				}),
+						-- #endif
+						title(120),	-- of Thunder Bluff
+					}),
+				})),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
@@ -1048,6 +874,46 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					},
 				}),
 
+				applyclassicphase(WRATH_PHASE_FOUR, q(20439, {	-- A Meeting With The Magister
+					["qg"] = 36669,	-- Arcanist Tybalin
+					["sourceQuest"] = 20438,	-- A Suitable Disguise (A)
+					["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ancient Dragonforged Blades
+							["provider"] = { "i", 49698 },	-- Ancient Dragonforged Blades
+							["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+							["cr"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(20438, {	-- A Suitable Disguise (A)
+					["qg"] = 36669,	-- Arcanist Tybalin
+					["sourceQuest"] = 14457,	-- The Sunreaver Plan
+					["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Borrowed Tabard
+							["provider"] = { "i", 49648 },	-- Borrowed Tabard
+							["coord"] = { 44.4, 47.6, NORTHREND_DALARAN },
+							["cr"] = 36856,	-- Shandy Glossgleam
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24556, {	-- A Suitable Disguise (H)
+					["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+					["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme (H)
+					["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Borrowed Tabard
+							["provider"] = { "i", 49648 },	-- Borrowed Tabard
+							["coord"] = { 44.4, 47.6, NORTHREND_DALARAN },
+							["cr"] = 36856,	-- Shandy Glossgleam
+						}),
+					},
+				})),
+
 				q(13689, {	-- A Valiant Of Darnassus
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
@@ -1271,6 +1137,78 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						VALIANTS_SEAL,
 					},
 				}),
+
+				applyclassicphase(WRATH_PHASE_FOUR, q(24796, {	-- A Victory For The Silver Covenant (A)
+					["providers"] = {
+						{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+						{ "i", 49871 },	-- Restored Quel'Delar
+					},
+					["sourceQuest"] = 24553,	-- The Purification of Quel'Delar (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { NORTHREND_DALARAN },
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
+					["providers"] = {
+						{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+						{ "i", 49871 },	-- Restored Quel'Delar
+					},
+					["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [A - Maces]
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { NORTHREND_DALARAN },
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24801, {	-- A Victory For The Sunreavers (H)
+					["providers"] = {
+						{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+						{ "i", 49871 },	-- Restored Quel'Delar
+					},
+					["sourceQuest"] = 24564,	-- The Purification of Quel'Delar (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { NORTHREND_DALARAN },
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24799, {	-- A Victory For The Sunreavers [H - Maces]
+					["providers"] = {
+						{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+						{ "i", 49871 },	-- Restored Quel'Delar
+					},
+					["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [H - Maces]
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { NORTHREND_DALARAN },
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
+					["providers"] = {
+						{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+						{ "i", 49871 },	-- Restored Quel'Delar
+					},
+					["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { NORTHREND_DALARAN },
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = { BLOODELF },
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
+					["providers"] = {
+						{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+						{ "i", 49871 },	-- Restored Quel'Delar
+					},
+					["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { NORTHREND_DALARAN },
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = { BLOODELF },
+					["_drop"] = { "g" },
+				})),
 
 				q(13669, {	-- A Worthy Weapon (A) (The Silver Covenant, Aspirant)
 					["qg"] = 33625,	-- Arcanist Taelis
@@ -1601,6 +1539,20 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_PURSE,
 					},
 				}),
+
+				applyclassicphase(WRATH_PHASE_FOUR, q(24451, {	-- An Audience With The Arcanist
+					["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+					["sourceQuest"] = 24556,	-- A Suitable Disguise (H)
+					["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ancient Dragonforged Blades
+							["provider"] = { "i", 49698 },	-- Ancient Dragonforged Blades
+							["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+							["cr"] = 36669,	-- Arcanist Tybalin
+						}),
+					},
+				})),
 
 				q(13855, {	-- At The Enemy's Gates (A) (Darnassus, Valiant)
 					["providers"] = {
@@ -2070,6 +2022,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					},
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["isBreadcrumb"] = true,	-- [Possible to not have this quest completed and still pick up following dailies...]
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14108, {	-- Get Kraken!
 					["qg"] = 35094,	-- Crusader Silverdawn
@@ -2153,6 +2106,26 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24522, {	-- Journey To The Sunwell (A)
+					["providers"] = {
+						{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+						{ "i", 49870 },	-- Tempered Quel'Delar
+					},
+					["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { ISLE_OF_QUELDANAS },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24562, {	-- Journey To The Sunwell (H)
+					["providers"] = {
+						{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+						{ "i", 49870 },	-- Tempered Quel'Delar
+					},
+					["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { ISLE_OF_QUELDANAS },
+					["races"] = HORDE_ONLY,
+				})),
 				{	-- Learning The Reins
 					["allianceQuestData"] = q(13625, {	-- Learning The Reins (A)
 						["providers"] = {
@@ -2317,6 +2290,42 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_SEAL,
 					},
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24461, {	-- Reforging The Sword (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24454,	-- Return To Caladis Brightspear (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { PIT_OF_SARON },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Reforged Quel'Delar
+							["provider"] = { "i", 49739 },	-- Reforged Quel'Delar
+							["cost"] = {
+								{ "i", 49718, 5 },	-- Infused Saronite Bar
+								{ "i", 49740, 1 },	-- Remnants of Quel'Delar
+								{ "i", 49723, 1 },	-- The Forgemaster's Hammer
+							},
+							["cr"] = 36494,	-- Forgemaster Garfrost
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24559, {	-- Reforging The Sword (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { PIT_OF_SARON },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Reforged Quel'Delar
+							["provider"] = { "i", 49739 },	-- Reforged Quel'Delar
+							["cost"] = {
+								{ "i", 49718, 5 },	-- Infused Saronite Bar
+								{ "i", 49740, 1 },	-- Remnants of Quel'Delar
+								{ "i", 49723, 1 },	-- The Forgemaster's Hammer
+							},
+							["cr"] = 36494,	-- Forgemaster Garfrost
+						}),
+					},
+				})),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Rescue at Sea
 					["allianceQuestData"] = q(14152, {	-- Rescue at Sea (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
@@ -2345,6 +2354,24 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_SEAL,
 					},
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24454, {	-- Return To Caladis Brightspear
+					["providers"] = {
+						{ "n", 36669 },	-- Arcanist Tybalin
+						{ "i", 49698 },	-- Ancient Dragonforged Blades
+					},
+					["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
+					["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24558, {	-- Return To Myralion Sunblaze
+					["providers"] = {
+						{ "n", 36670 },	-- Magister Hathorel <The Sunreavers>
+						{ "i", 49698 },	-- Ancient Dragonforged Blades
+					},
+					["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
+					["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+					["races"] = HORDE_ONLY,
+				})),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Stop The Aggressors
 					["allianceQuestData"] = q(14080, {	-- Stop The Aggressors (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
@@ -2453,6 +2480,68 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_PURSE,
 					},
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24476, {	-- Tempering The Blade (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24461,	-- Reforging The Sword (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { THE_FORGE_OF_SOULS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Tempered Quel'Delar
+							["providers"] = {
+								{ "i", 49750 },	-- Tempered Quel'Delar
+								{ "i", 49920 },	-- Reforged Quel'Delar
+								{ "n", 37094 },	-- Crucible of Souls
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24560, {	-- Tempering The Blade (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24559,	-- Reforging The Sword (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { THE_FORGE_OF_SOULS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Tempered Quel'Delar
+							["providers"] = {
+								{ "i", 49750 },	-- Tempered Quel'Delar
+								{ "i", 49920 },	-- Reforged Quel'Delar
+								{ "n", 37094 },	-- Crucible of Souls
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24535, {	-- Thalorien Dawnseeker (A)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24522,	-- Journey To The Sunwell
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Thalorien's Blessing obtained
+							["providers"] = {
+								{ "n", 37552 },	-- Thalorien Dawnseeker's Remains
+								{ "n", 37205 },	-- Thalorien Dawnseeker
+							},
+							["coord"] = { 53.0, 80.2, ISLE_OF_QUELDANAS },
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24563, {	-- Thalorien Dawnseeker (H)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24562,	-- Journey To The Sunwell
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Thalorien's Blessing obtained
+							["providers"] = {
+								{ "n", 37552 },	-- Thalorien Dawnseeker's Remains
+								{ "n", 37205 },	-- Thalorien Dawnseeker
+							},
+							["coord"] = { 53.0, 80.2, ISLE_OF_QUELDANAS },
+						}),
+					},
+				})),
 				q(13667, {	-- The Argent Tournament (A)
 					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["coord"] = { 69.6, 22.8, ICECROWN },
@@ -2484,6 +2573,14 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				},
+				applyclassicphase(WRATH_PHASE_FOUR, a(q(14443, {	-- The Battered Hilt (A)
+					["provider"] = { "i", 50379 },	-- Battered Hilt (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+				}))),
+				applyclassicphase(WRATH_PHASE_FOUR, h(q(24554, {	-- The Battered Hilt (H)
+					["provider"] = { "i", 50380 },	-- Battered Hilt (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+				}))),
 				q(13634, {	-- The Black Knight of Silverpine?
 					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13668,	-- The Argent Tournament (H)
@@ -3133,6 +3230,38 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						VALIANTS_SEAL,
 					},
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24480, {	-- The Halls Of Reflection (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24476,	-- Tempering The Blade (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { HALLS_OF_REFLECTION },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Subdued Quel'Delar
+							["providers"] = {
+								{ "i", 50254 },	-- Subdued Quel'Delar
+								{ "i", 49766 },	-- Tempered Quel'Delar
+								{ "n", 37158 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24561, {	-- The Halls Of Reflection (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24560,	-- Tempering The Blade (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { HALLS_OF_REFLECTION },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Subdued Quel'Delar
+							["providers"] = {
+								{ "i", 50254 },	-- Subdued Quel'Delar
+								{ "i", 49766 },	-- Tempered Quel'Delar
+								{ "n", 37158 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- The Light's Mercy
 					["allianceQuestData"] = q(14077, {	-- The Light's Mercy (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
@@ -3161,6 +3290,104 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_SEAL,
 					},
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24553, {	-- The Purification of Quel'Delar (A)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["maps"] = { 336 },	-- Shrine of the Eclipse, Sunwell Plataeu
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Restored Quel'Delar
+							["providers"] = {
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24595, {	-- The Purification of Quel'Delar (A — Maces)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["maps"] = { 336 },	-- Shrine of the Eclipse, Sunwell Plataeu
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Restored Quel'Delar
+							["providers"] = {
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24564, {	-- The Purification of Quel'Delar (H)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+					["groups"] = {
+						objective(1, {	-- 0/1 Restored Quel'Delar
+							["providers"] = {
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24598, {	-- The Purification of Quel'Delar (H — Maces)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+					["groups"] = {
+						objective(1, {	-- 0/1 Restored Quel'Delar
+							["providers"] = {
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = { BLOODELF },
+					["groups"] = {
+						objective(1, {	-- 0/1 Restored Quel'Delar
+							["providers"] = {
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = { BLOODELF },
+					["groups"] = {
+						objective(1, {	-- 0/1 Restored Quel'Delar
+							["providers"] = {
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
+							},
+						}),
+					},
+				})),
 				q(13795, {	-- The Scourgebane
 					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["sourceQuests"] = {
@@ -3194,6 +3421,20 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24557, {	-- The Silver Covenant's Scheme
+					["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+					["sourceQuest"] = 24555,	-- What The Dragons Know
+					["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+					["maps"] = { NORTHREND_THE_UNDERBELLY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Silver Covenant Orders
+							["provider"] = { "i", 49872 },	-- Silver Covenant Orders
+							["coord"] = { 36.0, 53.8, NORTHREND_THE_UNDERBELLY },
+							["cr"] = 36774,	-- Silver Covenant Agent
+						}),
+					},
+				})),
 				q(13643, {	-- The Stories Dead Men Tell
 					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13641,	-- The Seer's Crystal
@@ -3225,6 +3466,19 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(14457, {	-- The Sunreaver Plan
+					["qg"] = 36669,	-- Arcanist Tybalin
+					["sourceQuest"] = 14444,	-- What The Dragons Know (A)
+					["coord"] = { 39.6, 57.6, NORTHREND_THE_UNDERBELLY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sunreaver Orders
+							["provider"] = { "i", 49536 },	-- Sunreaver Orders
+							["coord"] = { 62.6, 15.0, NORTHREND_THE_UNDERBELLY },
+							["cr"] = 36776,	-- Sunreaver Agent
+						}),
+					},
+				})),
 				q(13725, {	-- The Valiant's Challenge (A) (Darnassus)
 					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuest"] = 13717,	-- The Valiant's Charge (A) (Darnassus)
@@ -3800,6 +4054,32 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_SEAL,
 					},
 				}, true),
+				applyclassicphase(WRATH_PHASE_FOUR, q(14444, {	-- What The Dragons Know (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 14443,	-- The Battered Hilt (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { DRAGONBLIGHT },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Ask Krasus about the hilt's origins
+							["provider"] = { "n", 27990 },	-- Krasus
+							["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24555, {	-- What The Dragons Know (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24554,	-- The Battered Hilt (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { DRAGONBLIGHT },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Ask Krasus about the hilt's origins
+							["provider"] = { "n", 27990 },	-- Krasus
+							["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
+						}),
+					},
+				})),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- You've Really Done It This Time, Kul
 					["allianceQuestData"] = q(14096, {	-- You've Really Done It This Time, Kul (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
@@ -3830,26 +4110,6 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					},
 				}, true),
 			}),
-			applyclassicphase(WRATH_PHASE_FOUR, n(REWARDS, {
-				["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
-				["sourceQuests"] = {
-					24796,	-- A Victory For The Silver Covenant (A)
-					24795,	-- A Victory For The Silver Covenant [A - Maces]
-					24801,	-- A Victory For The Sunreavers (H)
-					24799,	-- A Victory For The Sunreavers [H - Maces]
-					24800,	-- A Victory For The Sunreavers [Blood Elves]
-					24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
-				},
-				["groups"] = {
-					i(50050),	-- Cudgel of Furious Justice
-					i(50051),	-- Hammer of Purified Flame
-					i(50052),	-- Lightborn Spire
-					i(50046),	-- Quel'Delar, Cunning of the Shadows
-					i(50049),	-- Quel'Delar, Ferocity of the Scorned
-					i(50047),	-- Quel'Delar, Lens of the Mind
-					i(50048),	-- Quel'Delar, Might of the Faithful
-				},
-			})),
 			n(VENDORS, {
 				n(COMMON_VENDOR_ITEMS, {
 					champ(150, i(45725, {	-- Argent Hippogryph (MOUNT!)
@@ -4455,30 +4715,30 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
-							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin
-							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak
-							epicurean(3, i(43029)),	-- Recipe: Critter Bites
-							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak
-							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet
-							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast
-							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast
-							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino
-							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak
-							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal
-							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs
-							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin
-							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak
-							epicurean(3, i(43506)),	-- Recipe: Small Feast
-							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme
-							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats
-							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger
-							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish
-							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring
-							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak
-							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks
-							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare
+							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
+							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak (RECIPE!)
+							epicurean(3, i(43029)),	-- Recipe: Critter Bites (RECIPE!)
+							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
+							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
+							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
+							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
+							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
+							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
+							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal (RECIPE!)
+							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs (RECIPE!)
+							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin (RECIPE!)
+							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak (RECIPE!)
+							epicurean(3, i(43506)),	-- Recipe: Small Feast (RECIPE!)
+							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme (RECIPE!)
+							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats (RECIPE!)
+							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger (RECIPE!)
+							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish (RECIPE!)
+							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring (RECIPE!)
+							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
+							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
+							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
+							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
 					},
 				}),
 				n(33650, {	-- Rillie Spindlenut <Gnomeregan Quartermaster>

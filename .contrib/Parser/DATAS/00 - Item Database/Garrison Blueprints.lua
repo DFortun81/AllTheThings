@@ -1,7 +1,7 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, questID)
-	Items[itemID] = { ["questID"] = questID, ["type"] = "TODO" };
+	Items[itemID] = { ["questID"] = questID, ["type"] = "characterUnlockQuestID" };
 end
 
 -----------------

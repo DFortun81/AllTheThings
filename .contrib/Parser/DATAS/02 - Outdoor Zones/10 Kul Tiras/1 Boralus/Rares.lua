@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["g"] = {
 					i(155273),	-- Shartook Hatchet
-					crit(22, {	-- Sawtooth
+					crit(41830, {	-- Sawtooth
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},

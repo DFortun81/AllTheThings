@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 67.6, 29.3, NAZMIR },
 				["g"] = {
 					i(161113),	-- Incessantly Ticking Clock
-					crit(1, {	-- Ancient Jawbreaker
+					crit(41440, {	-- Ancient Jawbreaker
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 				},
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50569,
 				["coord"] = { 54.0, 80.9, NAZMIR },
 				["g"] = {
-					crit(2, {	-- Azerite-Infused Elemental
+					crit(41444, {	-- Azerite-Infused Elemental
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 				},
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50563,
 				["coord"] = { 32.98, 26.80, NAZMIR },
 				["g"] = {
-					crit(3, {	-- Azerite-Infused Slag
+					crit(41447, {	-- Azerite-Infused Slag
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161100),	-- Fused-Slag Girdle
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48439,
 				["coord"] = { 42.6, 60.4, NAZMIR },
 				["g"] = {
-					crit(20, {	-- Bajiatha
+					crit(41466, {	-- Bajiatha
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161093),	-- Clutch Mother Wristwraps
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48541,
 				["coord"] = { 43.1, 90.4, NAZMIR },
 				["g"] = {
-					crit(4, {	-- Blood Priest Xak'lar
+					crit(41448, {	-- Blood Priest Xak'lar
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161217),	-- Tainted Blood Vambraces
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48057,
 				["coord"] = { 81.9, 30.6, NAZMIR },
 				["g"] = {
-					crit(9, {	-- Cursed Chest
+					crit(41454, {	-- Cursed Chest
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161115),	-- Cursed Captain's Charm
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48462,
 				["coord"] = { 41.4, 53.4, NAZMIR },
 				["g"] = {
-					crit(8, {	-- Corpse Bringer Yal'kar
+					crit(41453, {	-- Corpse Bringer Yal'kar
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161102),	-- Corpseblood Belt
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50361,
 				["coord"] = { 68.5, 57.4, NAZMIR },
 				["g"] = {
-					crit(11, {	-- Glompmaw
+					crit(41456, {	-- Glompmaw
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(160985),	-- Glompmaw's Ring
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49231,
 				["coord"] = { 32.8, 43.1, NAZMIR },
 				["g"] = {
-					crit(12, {	-- Gutrip the Hungry
+					crit(41457, {	-- Gutrip the Hungry
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161041),	-- Gutrip's Tramplers
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48638,
 				["coord"] = { 33.4, 87.1, NAZMIR },
 				["g"] = {
-					crit(10, {	-- Gwugnug the Cursed
+					crit(41455, {	-- Gwugnug the Cursed
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(162614),	-- Gwugnug's Cursed Wraps
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 47877,
 				["coord"] = { 24.9, 77.7, NAZMIR },
 				["g"] = {
-					crit(14, {	-- Infected Direhorn
+					crit(41459, {	-- Infected Direhorn
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161218),	-- Direhorn Studded Belt
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50307,
 				["coord"] = { 45.1, 51.9, NAZMIR },
 				["g"] = {
-					crit(15, {	-- Jax'teb the Reanimated
+					crit(41460, {	-- Jax'teb the Reanimated
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(160969),	-- Reanimated Necromancer's Blade
@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50342,
 				["coord"] = { 28.2, 33.8, NAZMIR },
 				["g"] = {
-					crit(16, {	-- Juba the Scarred
+					crit(41461, {	-- Juba the Scarred
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(160950),	-- Nicked Nazmani Greataxe
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 47843,
 				["coord"] = { 52.8, 13.6, NAZMIR },
 				["g"] = {
-					crit(17, {	-- Kal'draxa
+					crit(41462, {	-- Kal'draxa
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161018),	-- Winged Terror Wristwraps
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49317,
 				["coord"] = { 53.1, 42.8, NAZMIR },
 				["g"] = {
-					crit(6, {	-- King Kooba
+					crit(41451, {	-- King Kooba
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161221),	-- Jungle King Mudtossers
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48052,
 				["coord"] = { 75.8, 36.3, NAZMIR },
 				["g"] = {
-					crit(18, {	-- Krubbs
+					crit(41463, {	-- Krubbs
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161110),	-- Crusty Chitin Armguards
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50355,
 				["coord"] = { 77.5, 45.3, NAZMIR },
 				["g"] = {
-					crit(31, {	-- Lo'kuno
+					crit(41478, {	-- Lo'kuno
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161111),	-- Marshqueen's Crushers
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50565,
 				["coord"] = { 81.7, 61.1, NAZMIR },
 				["g"] = {
-					crit(19, {	-- Lost Scroll
+					crit(41464, {	-- Lost Scroll
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161045, {	-- Scrollbound Hurricane Slippers
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50567,
 				["coord"] = { 68.0, 19.8, NAZMIR },
 				["g"] = {
-					crit(7, {	-- Chag's Challenge
+					crit(41452, {	-- Chag's Challenge
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161046, {	-- Scrollbound Arachnid Gloves
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50040,
 				["coord"] = { 52.9, 54.6, NAZMIR },
 				["g"] = {
-					crit(32, {	-- Mala'kili and Rohnkor
+					crit(41479, {	-- Mala'kili and Rohnkor
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(163703, {	-- Crawag Gnawed Femur
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49312,
 				["coord"] = { 57.81, 67.52, NAZMIR },
 				["g"] = {
-					crit(13, {	-- Queen Tzxi'kik
+					crit(41458, {	-- Queen Tzxi'kik
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(160963),	-- Blood Jungle Stinger
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48972,
 				["coord"] = { 59.1, 38.9, NAZMIR },
 				["g"] = {
-					crit(21, {	-- Scout Skrasniss
+					crit(41467, {	-- Scout Skrasniss
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(160951),	-- Evergreen Scout's Bow
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48980,
 				["coord"] = { 58.0, 9.10, NAZMIR },
 				["g"] = {
-					crit(22, {	-- Scrounger Patriarch
+					crit(41468, {	-- Scrounger Patriarch
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161219),	-- Raptor Patriarch Gloves
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48508,
 				["coord"] = { 31.4, 38.1, NAZMIR },
 				["g"] = {
-					crit(23, {	-- Tainted Guardian
+					crit(41469, {	-- Tainted Guardian
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(162621),	-- Nazmani Golem's Greathelm
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48406,
 				["coord"] = { 49.4, 37.2, NAZMIR },
 				["g"] = {
-					crit(24, {	-- Totem Maker Jash'ga
+					crit(41470, {	-- Totem Maker Jash'ga
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(162618),	-- Totem Matriarch's Headdress
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["icon"] = "Interface\\Icons\\INV_Misc_Urn_01",
 				--["crs"] = { 135565 },	-- Guardian of Agussu
 				["g"] = {
-					crit(25, {	-- Urn of Agussu
+					crit(41472, {	-- Urn of Agussu
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 				},
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49305,
 				["coord"] = { 44.2, 48.9, NAZMIR },
 				["g"] = {
-					crit(5, {	-- Uroku the Bound
+					crit(41450, {	-- Uroku the Bound
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161094),	-- Voodoo-Bound Handwraps
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48626,
 				["coord"] = { 29.5, 50.8, NAZMIR },
 				["g"] = {
-					crit(26, {	-- Venomjaw
+					crit(41473, {	-- Venomjaw
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161028),	-- Noxious Crocolisk Trousers
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48623,
 				["coord"] = { 48.7, 50.8, NAZMIR },
 				["g"] = {
-					crit(27, {	-- Wardrummer Zurula
+					crit(41474, {	-- Wardrummer Zurula
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(160961),	-- Warmother's Drummer
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50348,
 				["coord"] = { 36.6, 50.6, NAZMIR },
 				["g"] = {
-					crit(28, {	-- Xu'ba the Bone Collector
+					crit(41475, {	-- Xu'ba the Bone Collector
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(162619),	-- Bone Collector's Chestcage
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					-- { 38.7, 26.7, NAZMIR },	-- mob (if we ever have ability to add descriptions to coords)
 				},
 				["g"] = {
-					crit(29, {	-- Za'amar the Queen's Blade
+					crit(41476, {	-- Za'amar the Queen's Blade
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161095),	-- Queensguard Specter Legwraps
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50423,
 				["coord"] = { 38.8, 71.3, NAZMIR },
 				["g"] = {
-					crit(30, {	-- Zanxib the Engorged
+					crit(41477, {	-- Zanxib the Engorged
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
 					}),
 					i(161092),	-- Rivermarsh Quickclaw Buckle

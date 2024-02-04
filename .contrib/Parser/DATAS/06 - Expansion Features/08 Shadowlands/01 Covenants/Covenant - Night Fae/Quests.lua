@@ -77,6 +77,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = {
 					59071,	-- Mending a Broken Hart
 					60272,	-- The Weak Link (not 100% on this, but it's as far in the chain at which I am able to accept this)
+					62899,	-- The Endless Forest
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
@@ -443,6 +444,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 8.",
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
 				["maps"] = { 1917 },	-- De Other Side (scenario)
+				["g"] = {
+					i(177904),	-- Deathstone (QI!)
+				},
 			}),
 			q(59811, {	-- Taking Inventory
 				["sourceQuests"] = { 59809 },	-- On De Other Side
@@ -452,6 +456,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			q(59812, {	-- Following the Trail
 				["sourceQuests"] = { 59811 },	-- Taking Inventory
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+				["g"] = {
+					i(180167),	-- Death God Mask (QI!)
+				},
 			}),
 			q(59813, {	-- Minions of Mueh'zala
 				["sourceQuests"] = { 59812 },	-- Following the Trail
@@ -576,6 +583,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					62560,	-- Growing in Power (can be pre-completed due to covenant skip)
 					59071,	-- Mending a Broken Hart
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 158544 },	-- Lord Herne
 				["coord"] = { 40.9, 72.4, THE_TRUNK },
 			}),
@@ -583,17 +591,24 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 43.2, 40.1, ARDENWEALD },
+				["g"] = {
+					i(180462),	-- Mask of Possession (QI!)
+				},
 			}),
 			q(60928, {	-- Blackthorn Captives
 				["sourceQuests"] = { 60910 },	-- Masks of Deception
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 43.2, 40.1, ARDENWEALD },
+				["g"] = {
+					i(180523),	-- Disguise Mask (QI!)
+				},
 			}),
 			q(60934, {	-- Report to Lord Herne
 				["sourceQuests"] = { 60928 },	-- Blackthorn Captives
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 41.1, 31.6, ARDENWEALD },
 				["g"] = {
+					i(180606),	-- Ara'lon's Report (QI!)
 					i(175603),	-- Faewoven Cuffs
 					i(179772),	-- Oakheart Bracers
 					i(179894),	-- Queensguard Vambraces
@@ -660,6 +675,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61703 },	-- Nox Root
 				["provider"] = { "o", 357726 },	-- Broken Spear
 				["coord"] = { 33.8, 54.4, ARDENWEALD },
+				["g"] = {
+					i(182966),	-- Broken Spear (QI!)
+				},
 			}),
 			q(61711, {	-- Ritual of Purification
 				["sourceQuests"] = {
@@ -675,6 +693,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["coord"] = { 46.2, 56.7, ARDENWEALD },
 				["g"] = {
 					i(175597),	-- Faewoven Amice
+					i(180832),	-- Lord Herne's Report (QI!)
 					i(179770),	-- Oakheart Mantle
 					i(179892),	-- Queensguard Pauldrons
 					i(181914),	-- Runewarden's Spaulders
@@ -712,6 +731,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 58447 },	-- Monster Hunting
 				["provider"] = { "n", 165841 },	-- Huln Highmountain
 				["coord"] = { 35.3, 51.2, ARDENWEALD },
+				["g"] = {
+					i(174467),	-- Bulging Digestive Sac (QI!)
+					i(174645),	-- Gormherd Branch (QI!)
+				},
 			}),
 			q(58450, {	-- Anima Instincts
 				["sourceQuests"] = { 58447 },	-- Monster Hunting
@@ -929,8 +952,4 @@ root(ROOTS.NeverImplemented, {
 			i(176036),	-- Ardenweald Quest Sword
 		}),
 	}),
-});
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(62961),	-- Completed after doing Go Beyond! by Marasmius
 });

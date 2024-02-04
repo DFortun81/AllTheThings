@@ -33,6 +33,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
 				}),
 				q(74847, {	-- Emberthal Awaits
+					["timeline"] = { REMOVED_10_1_0 },
 					["sourceQuests"] = {
 						75050,	-- An Eclectic Accord
 						74769,	-- Stemming the Irontide
@@ -45,7 +46,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(72712, {	-- The Best We Have
-					["sourceQuests"] = { 74847 },	-- Emberthal Awaits
+					["sourceQuests"] = { 73076 },	-- Return to the Reach
 					["provider"] = { "n", 199532 },	-- Scalecommander Emberthal
 					["coord"] = { 32.6, 60.3, THE_FORBIDDEN_REACH },
 				}),
@@ -58,6 +59,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72713 },	-- Inheritance
 					["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
 					["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(203692),	-- Horn Signet of Arrosh (QI!)
+						i(203697),	-- Horn Signet of Ekrati (QI!)
+						i(203698),	-- Horn Signet of Talon Hermin (QI!)
+						i(203689),	-- Horn Signet of Tetsos (QI!)
+					},
 				}),
 				q(73094, {	-- Aiding the Expedition
 					["sourceQuests"] = { 72545 },	-- Creche Fallen
@@ -105,6 +112,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
 				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(203463),	-- Atrenosh's Journal (QI!)
+				},
 			}),
 			q(74379, {	-- Still Within Reach
 				["sourceQuests"] = {
@@ -116,7 +126,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
 			}),
 			-- Evoker Tablets
-			q(74866, { -- Journal Entry: Experiments (A)
+			q(74866, {	-- Journal Entry: Experiments (A)
 				["provider"] = { "i", 204200 },	-- Journal Entry: Experiments [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -124,7 +134,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 202329 },	-- Journal Entry: Experiments [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(73113, { -- Journal Entry: Relics (A)
+			q(73113, {	-- Journal Entry: Relics (A)
 				["provider"] = { "i", 202335 },	-- Journal Entry: Relics [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -132,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 204221 },	-- Journal Entry: Relics [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(73109, { -- Receiving Stone: Final Warning (A)
+			q(73109, {	-- Receiving Stone: Final Warning (A)
 				["provider"] = { "i", 202328 },	-- Receiving Stone: Final Warning [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -140,7 +150,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 204250 },	-- Receiving Stone: Final Warning [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(73107, { -- Sending Stone: Initial Report (A)
+			q(73107, {	-- Sending Stone: Initial Report (A)
 				["provider"] = { "i", 202326 },	-- Sending Stone: Initial Report [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -148,7 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 204252 },	-- Sending Stone: Initial Report [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(72944, { -- Sending Stone: Protest (A)
+			q(72944, {	-- Sending Stone: Protest (A)
 				["provider"] = { "i", 202203 },	-- Sending Stone: Protest [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -198,6 +208,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 200562 },	-- Turik
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
+				["g"] = {
+					i(204093),	-- Lunker Morsel (QI!)
+				},
 			}),
 			-- Maruuk
 			q(74910, {	-- New Foes
@@ -244,10 +257,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
-			n(BONUS_OBJECTIVES, {
-				q(74377, {	-- Capsize a Crab
-					["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
-				}),
+			-- Augmentation Evoker questline
+			q(72513, {	-- Our Destiny
+				["timeline"] = { ADDED_10_1_5 },
+				["description"] = "You get this anywhere in the Dragon Isles when you specialize in Augmentation for the first time.",
+			}),
+			q(72514, {	-- The High Creche
+				["sourceQuests"] = { 72513 },	-- Our Destiny
+				["provider"] = { "n", 199135 },	-- Scalecommander Emberthal
+				["coord"] = { 58.6, 68.5, THE_FORBIDDEN_REACH },
+				["timeline"] = { ADDED_10_1_5 },
+			}),
+			q(72515, {	-- Augmenting a Dragon
+				["sourceQuests"] = { 72514 },	-- The High Creche
+				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
+				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					i(205162),	-- Nelthara (PET!)
+				},
+			}),
+		}),
+		n(BONUS_OBJECTIVES, {
+			q(74377, {	-- Capsize a Crab
+				["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
 			}),
 		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true, ["sourceQuests"] = { 74381 } }, {
@@ -258,6 +291,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73142, {	-- Busting Blues
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202362),	-- Arcane Focus (QI!)
+				},
 			}),
 			q(73189, {	-- Creche Cache
 				["provider"] = { "n", 200727 },	-- Volethi

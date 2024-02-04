@@ -20,7 +20,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(412, {	-- Blizzcon 2007 - Murloc Costume
-		["provider"] = { "i", 20371 },	-- Murloc Costume (TOY!)
+		["provider"] = { "i", 33079 },	-- Murloc Costume (TOY!)
 		["timeline"] = { "added 3.0.1" },
 	}),
 	i(33079, {	-- Murloc Costume (TOY!)
@@ -176,5 +176,30 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 	ach(14904, {	-- Netherwhelp Online
 		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
+	}),
+
+	-- Blizzcon 2023 Collection
+	mount(358072, {	-- Bound Blizzard (MOUNT!)
+		["description"] = "Received after buying the Blizzcon Collection: Legendary Pack",
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+		["REMOVED_FROM_GAME"] = IGNORED_VALUE,
+	}),
+	i(210042, {		-- Chilling Celebration Banner (TOY!)
+		["description"] = "Received after buying the Blizzcon Collection: Epic Pack",
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+		["REMOVED_FROM_GAME"] = IGNORED_VALUE,
+	}),
+	pet(3579, {		-- Ysergle The Dreamurk (PET!)
+		["description"] = "Received after buying the Blizzcon Collection: Epic Pack",
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+		["REMOVED_FROM_GAME"] = IGNORED_VALUE,
+	}),
+	ach(18250, {	-- Ysergle The Dreamurk
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+		["REMOVED_FROM_GAME"] = IGNORED_VALUE,
 	}),
 })));

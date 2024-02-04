@@ -26,24 +26,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Deadwind Pass, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(22, {	-- Lydia Accoste
-							["coord"] = { 40.2, 76.6, DEADWIND_PASS },
-							["cr"] = 66522,	-- Lydia Accoste <Grand Master Pet Tamer>
-						}),
-					},
-				})),
 			}),
 			battlepets({
 				pet(1160, {	-- Arcane Eye (PET!)
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				pet(439, {	-- Restless Shadeling (PET!)
-					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight PST for a very limited amount of time.",
+					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight server time for a very limited amount of time.",
 				}),
 			}),
 			-- #if ANYCLASSIC
@@ -62,6 +51,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				]]--
 			}),
 			-- #endif
+			petbattles({
+				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
+					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
+				}),
+			}),
 			-- #if AFTER 7.0.3.21796
 			n(QUESTS, {
 				q(44154, {	-- The Rite of the Executioner
@@ -77,37 +71,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.0.3.21796" },
 					["lvl"] = 110,
 					["groups"] = {
-						crit(1, {	-- Waterlogged Tome
+						crit(33145, {	-- Waterlogged Tome
 							["achievementID"] = 11240,	-- Harbinger
 						}),
 					},
 				}),
 			}),
 			-- #endif
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				--o(xxxxx, {	-- Carved Eye
+					["coord"] = { 43.9, 72.8, DEADWIND_PASS },
+					["g"] = {
+						i(212989),	-- Grimoire of the Mana-Gorged Observer (CI!)
+					},
+				--}),
+			})),
 			-- #if AFTER TBC
 			n(VENDORS, {
 				applyclassicphase(TBC_PHASE_ONE, n(18255, {  -- Mage Darius
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["groups"] = {
 						i(31401),	-- Design: The Frozen Eye
-						applyclassicphase(TBC_PHASE_THREE, i(33165, {["timeline"]={"added 2.3.0"}})),	-- Formula: Enchant Weapon - Greater Agility (RECIPE!)
-						applyclassicphase(TBC_PHASE_THREE, i(33124, {	-- Pattern: Cloak of Darkness
-							["spellID"] = 42546,	-- Cloak of Darkness
-							["requireSkill"] = LEATHERWORKING,
-							["filterID"] = RECIPES,
-						})),
-						applyclassicphase(TBC_PHASE_THREE, i(33205, {	-- Pattern: Shadowprowler's Chestguard
-							["spellID"] = 42731,	-- Shadowprowler's Chestguard
-							["requireSkill"] = LEATHERWORKING,
-							["filterID"] = RECIPES,
-						})),
-						applyclassicphase(TBC_PHASE_THREE, i(33209, {	-- Recipe: Flask of Chromatic Wonder
+						applyclassicphase(TBC_PHASE_THREE, i(33165, {["timeline"] = {ADDED_2_3_0}})),	-- Formula: Enchant Weapon - Greater Agility (RECIPE!)
+						applyclassicphase(TBC_PHASE_THREE, i(33124, {["timeline"] = {ADDED_2_2_0}})),	-- Pattern: Cloak of Darkness (RECIPE!)
+						applyclassicphase(TBC_PHASE_THREE, i(33205, {["timeline"] = {ADDED_2_2_0}})),	-- Pattern: Shadowprowler's Chestguard (RECIPE!)
+						applyclassicphase(TBC_PHASE_THREE, i(33209, {	-- Recipe: Flask of Chromatic Wonder (RECIPE!)
 							-- #if BEFORE MOP
 							["spellID"] = 42736,	-- Flask of Chromatic Wonder
 							["requireSkill"] = ALCHEMY,
 							["f"] = RECIPES,
-							-- #else
-							["spellID"] = 0,
 							-- #endif
 							["timeline"] = { "removed 5.0.1.20000" },
 						})),

@@ -7,12 +7,15 @@ root(ROOTS.Zones, {
 		m(LEGION_DALARAN, {
 			n(ACHIEVEMENTS, {
 				ach(10585, {	-- Fel-Smelter
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_7_0_3, REMOVED_9_1_0 },
 					["g"] = {
-						crit(1, {	-- Firing Up the Forge
-							["u"] = REMOVED_FROM_GAME,
+						crit(29873, {	-- Firing Up the Forge
+							["timeline"] = { ADDED_7_0_3, REMOVED_9_1_0 },
 						}),
 					}
+				}),
+				ach(10586, {	-- Mass Obliteration
+					["timeline"] = { ADDED_7_0_3, REMOVED_9_1_0 },
 				}),
 			}),
 		}),

@@ -67,6 +67,22 @@ REMOVED_2_4_2 = "removed 2.4.2.8209";					-- The Burning Crusade 2.4.2 Launch on
 CREATED_2_4_3 = "created 2.4.3.8606";					-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
 ADDED_2_4_3 = "added 2.4.3.8606";						-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
 REMOVED_2_4_3 = "removed 2.4.3.8606";					-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
+--- CLASSIC TIMELINES ---
+CREATED_2_5_1 = "created 2.5.1.38707";					-- The Burning Crusade Classic 2.5.1 Launch on May 18th, 2021 and Launch on June 1st, 2021
+ADDED_2_5_1 = "added 2.5.1.38707";						-- The Burning Crusade Classic 2.5.1 Launch on May 18th, 2021 and Launch on June 1st, 2021
+REMOVED_2_5_1 = "removed 2.5.1.38707";					-- The Burning Crusade Classic 2.5.1 Launch on May 18th, 2021 and Launch on June 1st, 2021
+CREATED_2_5_2 = "created 2.5.2.39926";					-- The Burning Crusade Classic 2.5.2 Launch on August 31th, 2021
+ADDED_2_5_2 = "added 2.5.2.39926";						-- The Burning Crusade Classic 2.5.2 Launch on August 31th, 2021
+REMOVED_2_5_2 = "removed 2.5.2.39926";					-- The Burning Crusade Classic 2.5.2 Launch on August 31th, 2021
+CREATED_2_5_3 = "created 2.5.3.41812";					-- The Burning Crusade Classic 2.5.3 Launch on January 18th, 2022
+ADDED_2_5_3 = "added 2.5.3.41812";						-- The Burning Crusade Classic 2.5.3 Launch on January 18th, 2022
+REMOVED_2_5_3 = "removed 2.5.3.41812";					-- The Burning Crusade Classic 2.5.3 Launch on January 18th, 2022
+CREATED_2_5_4 = "created 2.5.4.42800";					-- The Burning Crusade Classic 2.5.4 Launch on March 22nd, 2022
+ADDED_2_5_4 = "added 2.5.4.42800";						-- The Burning Crusade Classic 2.5.4 Launch on March 22nd, 2022
+REMOVED_2_5_4 = "removed 2.5.4.42800";					-- The Burning Crusade Classic 2.5.4 Launch on March 22nd, 2022
+CREATED_2_5_4_A = "created 2.5.4.43638";				-- The Burning Crusade Classic 2.5.4a Launch on May 12th, 2022
+ADDED_2_5_4_A = "added 2.5.4.43638";					-- The Burning Crusade Classic 2.5.4a Launch on May 12th, 2022
+REMOVED_2_5_4_A = "removed 2.5.4.43638";				-- The Burning Crusade Classic 2.5.4a Launch on May 12th, 2022
 
 ----------------------------
 -- WRATH OF THE LICH KING --
@@ -110,6 +126,19 @@ REMOVED_3_3_3 = "removed 3.3.3.11685";					-- Wrath of the Lich King 3.3.3 Launc
 CREATED_3_3_5 = "created 3.3.5.12213";					-- Wrath of the Lich King 3.3.5 Launch on June 22nd, 2010
 ADDED_3_3_5 = "added 3.3.5.12213";						-- Wrath of the Lich King 3.3.5 Launch on June 22nd, 2010
 REMOVED_3_3_5 = "removed 3.3.5.12213";					-- Wrath of the Lich King 3.3.5 Launch on June 22nd, 2010
+--- CLASSIC TIMELINES ---
+CREATED_3_4_0 = "created 3.4.0.45327";					-- Wrath of the Lich King Classic 3.4.0 Launch on August 30th, 2022
+ADDED_3_4_0 = "added 3.4.0.45327";						-- Wrath of the Lich King Classic 3.4.0 Launch on August 30th, 2022
+REMOVED_3_4_0 = "removed 3.4.0.45327";					-- Wrath of the Lich King Classic 3.4.0 Launch on August 30th, 2022
+CREATED_3_4_1 = "created 3.4.1.47612";					-- Wrath of the Lich King Classic 3.4.1 Launch on January 17th, 2023
+ADDED_3_4_1 = "added 3.4.1.47612";						-- Wrath of the Lich King Classic 3.4.1 Launch on January 17th, 2023
+REMOVED_3_4_1 = "removed 3.4.1.47612";					-- Wrath of the Lich King Classic 3.4.1 Launch on January 17th, 2023
+CREATED_3_4_2 = "created 3.4.2.50664";					-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
+ADDED_3_4_2 = "added 3.4.2.50664";						-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
+REMOVED_3_4_2 = "removed 3.4.2.50664";					-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
+CREATED_3_4_3 = "created 3.4.3.51666";					-- Wrath of the Lich King Classic 3.4.3 Launch on October 10th, 2023
+ADDED_3_4_3 = "added 3.4.3.51666";						-- Wrath of the Lich King Classic 3.4.3 Launch on October 10th, 2023
+REMOVED_3_4_3 = "removed 3.4.3.51666";					-- Wrath of the Lich King Classic 3.4.3 Launch on October 10th, 2023
 
 ---------------
 -- CATACLYSM --
@@ -141,6 +170,8 @@ REMOVED_4_3_0 = "removed 4.3.0.15005";					-- Cataclysm 4.3.0 Launch on November
 CREATED_4_3_2 = "created 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 31st, 2012
 ADDED_4_3_2 = "added 4.3.2.15211";						-- Cataclysm 4.3.2 Launch on January 31st, 2012
 REMOVED_4_3_2 = "removed 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 31st, 2012
+--- CLASSIC TIMELINES ---
+
 
 -----------------------
 -- MISTS OF PANDARIA --
@@ -309,9 +340,25 @@ REMOVED_10_1_0 = "removed 10.1.0.49407";				-- Dragonflight 10.1.0 Launch on May
 CREATED_10_1_5 = "created 10.1.5.50401";				-- Dragonflight 10.1.5 Launch on July 11th, 2023
 ADDED_10_1_5 = "added 10.1.5.50401";					-- Dragonflight 10.1.5 Launch on July 11th, 2023
 REMOVED_10_1_5 = "removed 10.1.5.50401";				-- Dragonflight 10.1.5 Launch on July 11th, 2023
-CREATED_10_1_7 = "created 10.1.7";						-- Dragonflight 10.1.7 Launch on
-ADDED_10_1_7 = "added 10.1.7";							-- Dragonflight 10.1.7 Launch on
-REMOVED_10_1_7 = "removed 10.1.7";						-- Dragonflight 10.1.7 Launch on
-CREATED_10_2_0 = "created 10.2.0";						-- Dragonflight 10.2.0 Launch on
-ADDED_10_2_0 = "added 10.2.0";							-- Dragonflight 10.2.0 Launch on
-REMOVED_10_2_0 = "removed 10.2.0";						-- Dragonflight 10.2.0 Launch on
+CREATED_10_1_7 = "created 10.1.7.51187";				-- Dragonflight 10.1.7 Launch on September 5th, 2023
+ADDED_10_1_7 = "added 10.1.7.51187";					-- Dragonflight 10.1.7 Launch on September 5th, 2023
+REMOVED_10_1_7 = "removed 10.1.7.51187";				-- Dragonflight 10.1.7 Launch on September 5th, 2023
+CREATED_10_2_0 = "created 10.2.0.52068";				-- Dragonflight 10.2.0 Launch on November 7th, 2023
+ADDED_10_2_0 = "added 10.2.0.52068";					-- Dragonflight 10.2.0 Launch on November 7th, 2023
+REMOVED_10_2_0 = "removed 10.2.0.52068";				-- Dragonflight 10.2.0 Launch on November 7th, 2023
+CREATED_10_2_5 = "created 10.2.5.52902";				-- Dragonflight 10.2.5 Launch on January 16th, 2023
+ADDED_10_2_5 = "added 10.2.5.52902";					-- Dragonflight 10.2.5 Launch on January 16th, 2023
+REMOVED_10_2_5 = "removed 10.2.5.52902";				-- Dragonflight 10.2.5 Launch on January 16th, 2023
+CREATED_10_2_6 = "created 10.2.6";						-- Dragonflight 10.2.6 Launch on
+ADDED_10_2_6 = "added 10.2.6";							-- Dragonflight 10.2.6 Launch on
+REMOVED_10_2_6 = "removed 10.2.6";						-- Dragonflight 10.2.6 Launch on
+CREATED_10_2_7 = "created 10.2.7";						-- Dragonflight 10.2.7 Launch on
+ADDED_10_2_7 = "added 10.2.7";							-- Dragonflight 10.2.7 Launch on
+REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on
+
+--------------------
+-- THE WAR WITHIN --
+--------------------
+CREATED_11_0_0 = "created 11.0.0";						-- The War Within 11.0.0/Pre-Patch Launch on
+ADDED_11_0_0 = "added 11.0.0";							-- The War Within 11.0.0/Pre-Patch Launch on
+REMOVED_11_0_0 = "removed 11.0.0.";						-- The War Within 11.0.0/Pre-Patch Launch on

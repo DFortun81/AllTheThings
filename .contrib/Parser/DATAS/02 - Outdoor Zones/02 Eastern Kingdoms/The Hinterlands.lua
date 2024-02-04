@@ -17,59 +17,184 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4897, {	-- Hinterlands Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
-						crit(1, {	-- Quel'Danil Lodge
+						crit(38375, {	-- Quel'Danil Lodge
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								26532,	-- Shadra the Venom Queen
+							},
+						}),
+						crit(38376, {	-- Quel'Danil Lodge
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
 								26643,	-- Starvation Diet
 							},
 						}),
-						crit(2, {	-- Jintha'Alor
+						crit(38371, {	-- Jintha'Alor
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
-								26524,	-- Dark Vessels
-								26526,	-- Hunt the Keeper
-								26516,	-- It's Ours Now
 								26525,	-- Venomous Secrets
 							},
 						}),
-						crit(3, {	-- Stormfeather Outpost
+						crit(38370, {	-- Jintha'Alor
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26526,	-- Hunt the Keeper
+							},
+						}),
+						crit(38372, {	-- Jintha'Alor
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26516,	-- It's Ours Now
+							},
+						}),
+						crit(38374, {	-- Jintha'Alor
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26521,	-- Faces of Evil
+							},
+						}),
+						crit(38373, {	-- Jintha'Alor
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26524,	-- Dark Vessels
+							},
+						}),
+						crit(38377, {	-- Stormfeather Outpost
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26492,	-- Skulk Rock Supplies
+							},
+						}),
+						crit(38378, {	-- Stormfeather Outpost
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26491,	-- Skulk Rock Clean-Up
+							},
+						}),
+						crit(38379, {	-- Stormfeather Outpost
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26490,	-- Prime Slime
+							},
+						}),
+						crit(38380, {	-- Stormfeather Outpost
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								26486,	-- 99 Bottles of Booze on the Beach
-								26490,	-- Prime Slime
-								26491,	-- Skulk Rock Clean-Up
-								26492,	-- Skulk Rock Supplies
+							},
+						}),
+						crit(38381, {	-- Stormfeather Outpost
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
 								26485,	-- Snapjaws, Lad!
 							},
 						}),
-						crit(1, {	-- Jintha'Alor
-							["races"] = HORDE_ONLY,
+						crit(38382, {	-- Stormfeather Outpost
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
-								26357,	-- Faces of Evil
-								26369,	-- Hunt the Keeper
-								26368,	-- Venomous Secrets
+								26462,	-- The Wicked Revantusk
 							},
 						}),
-						crit(2, {	-- Hiri'watha
+						crit(38384, {	-- Hiri'watha
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
-								26419,	-- Shadra the Venom Queen
 								26387,	-- Starvation Diet
 							},
 						}),
-						crit(3, {	-- Revantusk Village
+						crit(38383, {	-- Hiri'watha
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
-								26210,	-- Gammerita, Mon! (TODO: Verify if needed)
-								26224,	-- Hunt the Savages
-								26212,	-- Lard Lost His Lunch (TODO: Verify if needed)
-								26283,	-- Prime Slime
+								26419,	-- Shadra the Venom Queen
+							},
+						}),
+						crit(38385, {	-- 	Jintha'Alor
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26308,	-- It's Ours Now
+							},
+						}),
+						crit(38386, {	-- 	Jintha'Alor
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26369,	-- Hunt the Keeper
+							},
+						}),
+						crit(38387, {	-- 	Jintha'Alor
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26357,	-- Faces of Evil
+							},
+						}),
+						crit(38388, {	-- 	Jintha'Alor
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26368,	-- Venomous Secrets
+							},
+						}),
+						crit(45292, {	-- 	Jintha'Alor
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26309,	-- Dark Vessels
+							},
+						}),
+						crit(38390, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26238,	-- The Savage Dwarves
+							},
+						}),
+						crit(38391, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26240,	-- Stomp To My Beat
+							},
+						}),
+						crit(38392, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26212,	-- Lard Lost His Lunch
+							},
+						}),
+						crit(38393, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
 								26225,	-- Pupellyverbos Port
+							},
+						}),
+						crit(38389, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26224,	-- Hunt the Savages
+							},
+						}),
+						crit(38394, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26211,	-- Snapjaws, Mon!
+							},
+						}),
+						crit(38395, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26210,	-- Gammerita, Mon!
+							},
+						}),
+						crit(38396, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
 								26267,	-- Skulk Rock Clean-Up
+							},
+						}),
+						crit(38397, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26283,	-- Prime Slime
+							},
+						}),
+						crit(38398, {	-- Revantusk Village
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
 								26268,	-- Skulk Rock Supplies
-								26211,	-- Snapjaws, Mon! (TODO: Verify if needed)
-								26240,	-- Stomp To My Beat (TODO: Verify if needed)
 							},
 						}),
 					},
@@ -147,6 +272,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.6, 44.8, THE_HINTERLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(11097, {	-- Drakk Stonehand <Master Leatherworking Trainer>
+						["coord"] = { 13.4, 43.4, THE_HINTERLANDS },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						-- #endif
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -801,7 +937,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26515, {	-- Ongo'longo's Revenge (A)
 					["qg"] = 43157,	-- Doran Steelwing
 					["sourceQuests"] = {
-						26498,	-- Death to the Vilebranch (A)
 						26518,	-- Heads Up (A)
 					},
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
@@ -1742,7 +1877,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
-							["timeline"] = { "removed 4.0.3", REMOVED_9_0_1 },
+							["timeline"] = { "removed 4.0.3", "added 9.0.1" },
 						}),
 					},
 				}),
@@ -1889,8 +2024,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
@@ -1905,7 +2040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 14.4, 42.3, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 			}),
@@ -1944,8 +2079,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Can drop off of any mob in the zone. Much higher chance to drop from the elites.",
 				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2644,	-- Vilebranch Hideskinner
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 68.2, 75.0, THE_HINTERLANDS },
+						{ 63.8, 73.6, THE_HINTERLANDS },
+						{ 61.2, 68.4, THE_HINTERLANDS },
+					},
 				}),
 				i(9259, {	-- Troll Tribal Necklace
 					-- #if BEFORE 4.0.3
@@ -1956,6 +2096,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
+				-- #if BEFORE 4.0.3
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+					["timeline"] = { "removed 4.0.1" },
+				}),
+				-- #endif
 			}),
 		},
 	}),

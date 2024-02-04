@@ -745,6 +745,7 @@ root(ROOTS.Zones, {
 				}),
 				q(45271, {	-- Insurrection
 					["u"] = REMOVED_FROM_GAME, -- provided by the adventure journal in 7.1
+					["isBreadcrumb"] = true,
 				}),
 				q(45278, {	-- Insurrection: An Elven Problem
 					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
@@ -999,6 +1000,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 30.3, 30.8, SURAMAR },
 					["provider"] = { "n", 103571 },	-- Solendra Featherdown
 					["sourceQuest"] = 41478,	-- The Final Blessing
+					["g"] = {
+						i(136605),	-- Solendra's Compassion (QI!)
+					},
 				}),
 				q(44723, {	-- More Like Me
 					["coord"] = { 52.0, 79.1, SURAMAR },
@@ -1325,7 +1329,6 @@ root(ROOTS.Zones, {
 						41426,	-- Against Their Will
 						41709,	-- Breaking Down the Big Guns
 						41425,	-- Sunken Foes
-						41409,	-- Timing Is Everything
 					},
 				}),
 				q(44842, {	-- Shield, Meet Spell
@@ -1388,7 +1391,6 @@ root(ROOTS.Zones, {
 						41426,	-- Against Their Will
 						41709,	-- Breaking Down the Big Guns
 						41425,	-- Sunken Foes
-						41409,	-- Timing Is Everything
 					},
 				}),
 				q(45316, {	-- Stabilizing Suramar
@@ -1622,7 +1624,7 @@ root(ROOTS.Zones, {
 				q(40266, {	-- The Lost Advisor
 					["coord"] = { 45.6, 40.8, SURAMAR },
 					["provider"] = { "n", 99065 },	-- Thaedris Feathersong
-					["sourceQuest"] = 42230,	-- The Valewalker's Burden
+					-- ["sourceQuest"] = 42230,	-- The Valewalker's Burden [Not Required, Discord 2023-7-31]
 				}),
 				q(41834, {	-- The Masks We Wear
 					["coord"] = { 40.1, 70.7, SURAMAR },
@@ -1786,7 +1788,6 @@ root(ROOTS.Zones, {
 						41426,	-- Against Their Will
 						41709,	-- Breaking Down the Big Guns
 						41425,	-- Sunken Foes
-						41409,	-- Timing Is Everything
 					},
 				}),
 				q(40368, {	-- Turtle Powered

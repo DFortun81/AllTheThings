@@ -31,6 +31,7 @@ namespace ATT
         private static HttpClient _client;
         static HttpClient Client => _client ?? (_client = InitClient());
         static ConcurrentQueue<string> DataResults { get; } = new ConcurrentQueue<string>();
+        static ConcurrentQueue<Tuple<int, string>> APIRequests { get; } = new ConcurrentQueue<Tuple<int, string>>();
         static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
         static ConcurrentQueue<string> ParseDatas { get; } = new ConcurrentQueue<string>();
         /// <summary>
@@ -38,7 +39,7 @@ namespace ATT
         /// </summary>
         static ConcurrentQueue<Action> ThrottleQueue { get; } = new ConcurrentQueue<Action>();
         static readonly object ThrottleLock = new object();
-        static string DateStamp { get; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
+        static string DateStamp { get; set; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
         /// <summary>
         /// Represents how long to wait between API calls on average over an hour (since it will take more than an hour to retrieve all item IDs)
         /// 3,600,000ms / hour / 36,000 API / hour ==> 100ms / API
@@ -54,6 +55,7 @@ namespace ATT
         static int MaxItemID { get; set; } = 185000;
         static int MaxQuestID { get; set; } = 60000;
         static bool WaitForAPI { get; set; }
+        static bool WaitForRequests { get; set; }
         static bool WaitForData { get; set; }
         static bool WaitForParseQueue { get; set; }
         static bool WaitForParsingData { get; set; }
@@ -74,16 +76,23 @@ namespace ATT
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Harvester Started!");
+            // can tell harvester to only parse existing datas for a certain date
+            string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
+
+            if (parseOnlyDate != null)
+            {
+                DateStamp = parseOnlyDate;
+            }
+
+            Console.WriteLine("Harvester Started using Date:" + DateStamp);
+
+            AppDomain.CurrentDomain.UnhandledException += UnHandledExceptionCapture;
 
             ObjType[] parseTypes = (ObjType[])Enum.GetValues(typeof(ObjType));
             foreach (ObjType parseType in parseTypes)
             {
                 ProcessObjects[parseType] = false;
             }
-
-            // can tell harvester to only parse existing datas for a certain date
-            string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
 
             // optionally do only specific API pull types
             if (args != null && args.Length > 0)
@@ -109,13 +118,13 @@ namespace ATT
             // pre-determine which IDs will exist in the API for each type
             //DetermineAvailableIDs();
 
-            // start thread for simply writing data
-            Thread threadDataWriter = new Thread(SaveFiles)
+            // start thread for sending API requests
+            Thread threadAPISender = new Thread(SendAPIRequests)
             {
                 IsBackground = true,
-                Name = "DataWriter.Thread",
+                Name = "APISender.Thread",
             };
-            threadDataWriter.Start();
+            threadAPISender.Start();
 
             // start thread for handling API responses
             Thread threadAPIReceiver = new Thread(CaptureAPIResults)
@@ -124,6 +133,17 @@ namespace ATT
                 Name = "APIReceiver.Thread",
             };
             threadAPIReceiver.Start();
+
+            // start thread for simply writing data
+            Thread threadDataWriter = new Thread(SaveFiles)
+            {
+                IsBackground = true,
+                Name = "DataWriter.Thread",
+            };
+            threadDataWriter.Start();
+
+            // ensure that both API receiver and data writer threads were created before continuing, otherwise can get stuck
+            while (!WaitForData || !WaitForAPI || !WaitForRequests) { Thread.Sleep(50); }
 
             if (ProcessObjects[ObjType.item] && parseOnlyDate == null)
             {
@@ -134,7 +154,7 @@ namespace ATT
             }
 
             // dont switch to quest harvest until items are done
-            while (APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
+            while (APIRequests.Count > 0 || APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
 
             if (ProcessObjects[ObjType.quest] && parseOnlyDate == null)
             {
@@ -144,14 +164,14 @@ namespace ATT
                 HarvestQuests();
             }
 
-            // ensure that both API receiver and data writer threads were created before continuing, otherwise can get stuck
-            while (!WaitForData || !WaitForAPI) { Thread.Sleep(50); }
+            // wait for all queues to clear
+            while (APIRequests.Count > 0 || APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
 
-            // stop waiting to capture API results
-            WaitForAPI = false;
+            // stop waiting to send API requests
+            WaitForRequests = false;
 
-            // parse any RAW files once completed
-            while (WaitForData || DataResults.Count > 0) { Thread.Sleep(50); }
+            // make sure threads are done
+            while (WaitForData || WaitForAPI || WaitForRequests) { Thread.Sleep(50); }
 
             if (!string.IsNullOrEmpty(Error))
             {
@@ -159,11 +179,17 @@ namespace ATT
                 //Console.ReadKey();
                 return;
             }
-            Parse(parseOnlyDate);
+            Parse();
 
             while (WaitForParseQueue || WaitForParsingData || ParseDatas.Count > 0) { Thread.Sleep(50); }
 
-            //Console.ReadLine();
+            Console.WriteLine("Harvester Complete!");
+        }
+
+        private static void UnHandledExceptionCapture(object sender, UnhandledExceptionEventArgs e)
+        {
+            Console.WriteLine($"Exception!");
+            Console.WriteLine(MiniJSON.Json.Serialize(e.ExceptionObject));
         }
 
         private static void DetermineAvailableIDs()
@@ -289,32 +315,32 @@ namespace ATT
                             if (string.IsNullOrEmpty(data)) Console.WriteLine("[" + id.ToString() + "]: NULL");
                             else
                             {
-                                Console.WriteLine("[" + id.ToString() + "]: FOUND");
+                                Console.WriteLine("[" + id.ToString() + "]: FOUND @" + API_ExpectedThrottle + ":" + APIResults.Count);
                                 QueueAPIData(data);
                             }
                         }
                         // queried too fast!
                         else if ((int)response.StatusCode == 429)
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: TOO FAST!");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: TOO FAST! @" + API_ExpectedThrottle + ":" + APIResults.Count);
                             QueueAPIRequestForID(responseData.Item1, true);
                         }
                         // item doesn't exist -- save a raw file for it so re-parsing/testing is faster, ugh
                         else if ((int)response.StatusCode == 404)
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS!");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS! @" + API_ExpectedThrottle + ":" + APIResults.Count);
                             //DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
                         }
                         // forbidden??
                         else if (response.StatusCode == HttpStatusCode.Forbidden)
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: FORBIDDEN");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: FORBIDDEN @" + API_ExpectedThrottle + ":" + APIResults.Count);
                         }
                         // authorization ran out
                         else if (response.StatusCode == HttpStatusCode.Unauthorized)
                         {
                             // dont worry about auth errors i suppose...
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED @" + API_ExpectedThrottle + ":" + APIResults.Count);
                         }
                         else
                         {
@@ -331,11 +357,63 @@ namespace ATT
                 else
                 {
                     // wait for more API captures to show up
-                    Thread.Sleep(10);
+                    Thread.Sleep(5);
                 }
             }
 
             WaitForData = false;
+        }
+
+        /// <summary>
+        /// A dynamically-throttled-sender thread for API requests
+        /// </summary>
+        private static void SendAPIRequests()
+        {
+            WaitForRequests = true;
+            while (WaitForRequests || APIRequests.Count > 0)
+            {
+                // only send new requests if waiting for less than 25
+                if (APIResults.Count < 25 && APIRequests.TryDequeue(out Tuple<int, string> request))
+                {
+                    // throttle each API Request
+                    Thread.Sleep(API_ExpectedThrottle);
+
+                    //Console.WriteLine($"API @{API_ExpectedThrottle}: {request.Item2}");
+                    APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(request.Item1, Client.GetAsync(request.Item2)));
+                    // when sending a new request, slightly reduce the throttle
+                    lock (ThrottleLock)
+                    {
+                        API_ExpectedThrottle = Math.Max(10, API_ExpectedThrottle - 2);
+                    }
+                }
+                else
+                {
+                    Thread.Sleep(5);
+                }
+            }
+
+            WaitForAPI = false;
+        }
+
+        private static void QueueAPIRequestForID(int i, bool retry = false)
+        {
+            // maximum API limits is 100/sec so throttle to that at least
+            // dont allow more than 50 simultaneous requests
+            // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
+
+            // if retrying, increment the expected throttle slightly
+            if (retry)
+            {
+                lock (ThrottleLock)
+                {
+                    API_ExpectedThrottle = Math.Min(1000, API_ExpectedThrottle + 10);
+                }
+            }
+
+            // if the API request queue is 'full' then continue to wait for a throttle and try again to queue
+            while (!retry && APIRequests.Count > 25) { Thread.Sleep(API_ExpectedThrottle); }
+
+            APIRequests.Enqueue(new Tuple<int, string>(i, string.Format(RawAPICallFormat, i)));
         }
 
         private static void QueueAPIData(string data)
@@ -512,17 +590,6 @@ namespace ATT
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             return client;
-        }
-
-        private static void QueueAPIRequestForID(int i, bool retry = false)
-        {
-            // maximum API limits is 100/sec so throttle to that at least
-            // dont allow more than 50 simultaneous requests
-            // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
-            int delay = Math.Max(API_ExpectedThrottle, APIResults.Count);
-            while (!retry && APIResults.Count > 49) { Thread.Sleep(delay); }
-            Thread.Sleep(delay);
-            APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(i, Client.GetAsync(string.Format(RawAPICallFormat, i))));
         }
 
         private static Task<HttpResponseMessage> QueueAPIRequest(string url)
@@ -757,10 +824,10 @@ namespace ATT
             }
         }
 
-        static void Parse(string parseOnlyDate)
+        static void Parse()
         {
             WaitForParseQueue = true;
-            Console.WriteLine("Queueing all of the raw data for " + (parseOnlyDate ?? DateStamp));
+            Console.WriteLine("Queueing all of the raw data for " + DateStamp);
 
             // create a separate thread that will handle parsing the individual items
             Thread threadDataParser = new Thread(ParseData)
@@ -769,19 +836,19 @@ namespace ATT
                 Name = "DataParser.Thread",
             };
             threadDataParser.Start();
-            ProcessObjType(ObjType.item, parseOnlyDate);
-            ProcessObjType(ObjType.quest, parseOnlyDate);
+            ProcessObjType(ObjType.item);
+            ProcessObjType(ObjType.quest);
 
             WaitForParseQueue = false;
             Console.WriteLine("Done Queueing the raw data.");
         }
 
-        private static void ProcessObjType(ObjType objtype, string parseOnlyDate)
+        private static void ProcessObjType(ObjType objtype)
         {
             // items
             if (ProcessObjects[objtype])
             {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/" + objtype.ToString() + "s." + (parseOnlyDate ?? DateStamp));
+                var rawDataDirectory = Directory.CreateDirectory("RAW/" + objtype.ToString() + "s." + DateStamp);
                 var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
                 allFiles.ForAll(EnqueueFileContents);
             }
@@ -1248,6 +1315,24 @@ namespace ATT
                 list.Sort();
                 dict["classes"] = list;
             }
+            if (requirements.TryGetValue("classes", out object classes))
+            {
+                if (!(classes is IEnumerable<object> classesSet))
+                {
+                    Console.WriteLine($"Bad 'classes': {MiniJSON.Json.Serialize(classes)}");
+                }
+                else
+                {
+                    var list = new List<int>();
+                    foreach (object entry in classesSet)
+                    {
+                        if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+                    }
+                    list.Sort();
+                    //Console.WriteLine($"'classes':{MiniJSON.Json.Serialize(list)}");
+                    dict["classes"] = list;
+                }
+            }
             // 2020-08-19 Blizz seems to have relegated to simply showing ALLIANCE or HORDE for a faction tag instead of listing all races within a given faction
             if (requirements.TryGetValue("faction", out d))
             {
@@ -1430,12 +1515,26 @@ namespace ATT
                                 if (parsed.TryGetValue("itemID", out object itemID) && int.TryParse(itemID.ToString(), out int itemVal))
                                 {
                                     Console.WriteLine("Parsed Item : " + itemID.ToString() + "\t\tQueue: " + ParseDatas.Count.ToString());
-                                    dataItems.Add(itemVal, parsed);
+                                    try
+                                    {
+                                        dataItems.Add(itemVal, parsed);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"Failed adding parsed Item {itemVal}. {ex.Message}");
+                                    }
                                 }
                                 else if (parsed.TryGetValue("questID", out object questID) && int.TryParse(questID.ToString(), out int questVal))
                                 {
                                     Console.WriteLine("Parsed Quest: " + questID.ToString() + "\t\tQueue: " + ParseDatas.Count.ToString());
-                                    dataQuests.Add(questVal, parsed);
+                                    try
+                                    {
+                                        dataQuests.Add(questVal, parsed);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"Failed adding parsed Quest {questVal}. {ex.Message}");
+                                    }
                                 }
                             }
                         }

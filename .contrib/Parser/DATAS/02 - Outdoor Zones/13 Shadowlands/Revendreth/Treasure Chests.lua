@@ -755,14 +755,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(352703, {	-- The Harvest
-				["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n– 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r\n– 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
+				["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n- 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r / |cFFFFFFFF41.6, 41.2|r\n- 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
 				["coord"] = { 38.5, 39.9, REVENDRETH },
+				["cost"] = {{"i",179823,1}},	-- The Harvest Key
 				["questID"] = 60579,
 				["isDaily"] = true,
 				["g"] = {
 					i(180379),	-- Exquisitely Woven Rug
 					i(180401),	-- Noble Justice
 					i(182723),	-- Mail Courier's Shoulderguards
+					i(179823, {	-- The Harvest Key
+						["coords"] = {
+							-- ref https://www.wowhead.com/object=352703/the-harvest#comments:id=5222656
+							{ 38.2, 43.7, REVENDRETH },
+							{ 43.9, 41.5, REVENDRETH },
+							{ 42.9, 41.5, REVENDRETH },
+							{ 43.6, 38.1, REVENDRETH },
+							{ 41.4, 38.5, REVENDRETH },
+							{ 43.3, 44.7, REVENDRETH },
+							{ 44.7, 38.8, REVENDRETH },
+							{ 44.2, 44.1, REVENDRETH },
+						},
+					}),
 				},
 			}),
 			o(353792, {	-- Village Strongbox

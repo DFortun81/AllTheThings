@@ -8,12 +8,63 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["modID"] = 3,
 		["lvl"] = 110,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(11786, {	-- Terrors of the Shore
+					crit(36550, {	-- Brutallus
+						["_npcs"] = { 117239 },
+					}),
+					crit(36551, {	-- Malificus
+						["_npcs"] = { 117303 },
+					}),
+					crit(36552, {	-- Si'vash
+						["_npcs"] = { 117470 },
+					}),
+					crit(36553, {	-- Apocron
+						["_npcs"] = { 121124 },
+					}),
+				}),
+				ach(11160, {	-- Unleashed Monstrosities
+					crit(32097, {	-- Na'zak the Fiend
+						["_npcs"] = { 110321 },
+					}),
+					crit(32096, {	-- Nithogg
+						["_npcs"] = { 107544 },
+					}),
+					crit(32099, {	-- Humongris
+						["_npcs"] = { 108879 },
+					}),
+					crit(32095, {	-- Flotsam
+						["_npcs"] = { 99929 },
+					}),
+					crit(32100, {	-- Ana-Mouz
+						["_npcs"] = { 109943 },
+					}),
+					crit(32102, {	-- Levantus
+						["_npcs"] = { 108829 },
+					}),
+					crit(32094, {	-- Drugon the Frostblood
+						["_npcs"] = { 110378 },
+					}),
+					crit(32889, {	-- The Soultakers (there was also 32890 and 32891)
+						["_quests"] = { 42269 },
+					}),
+					crit(32101, {	-- Calamir
+						["_npcs"] = { 109331 },
+					}),
+					crit(32098, {	-- Shar'thos
+						["_npcs"] = { 108678 },
+					}),
+					crit(35022, {	-- Withered J'im
+						["_npcs"] = { 112350 },
+					}),
+				}),
+			}),
 			e(1790, {	-- Ana-Mouz
-				["isWeekly"] = true,
-				["questID"] = 43512,	-- Ana-Mouz (WQ)
-				["isRaid"] = true,
 				["coord"] = { 31.0, 65.5, SURAMAR },
 				["creatureID"] = 109943,	-- Ana-Mouz
+				["questID"] = 43512,	-- Ana-Mouz (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(137778, {	-- Vantus Rune Technique: Tichondrius [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
@@ -28,11 +79,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1956, {	-- Apocron
-				["isWeekly"] = true,
-				["questID"] = 47061,	-- Apocron (WQ)
-				["isRaid"] = true,
 				["coord"] = { 59.2, 62.6, BROKEN_SHORE },
 				["creatureID"] = 121124,	-- Apocron
+				["questID"] = 47061,	-- Apocron (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
@@ -45,11 +96,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1883, {	-- Brutallus
-				["isWeekly"] = true,
-				["questID"] = 46947,	-- Brutallus (WQ)
-				["isRaid"] = true,
 				["coord"] = { 59.2, 28.4, BROKEN_SHORE },
 				["creatureID"] = 117239,	-- Brutallus
+				["questID"] = 46947,	-- Brutallus (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(147749),	-- Polished Felfury Helmet
 					i(147765),	-- Clasp of Burning Demise
@@ -63,11 +114,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1774, {	-- Calamir
-				["isWeekly"] = true,
-				["questID"] = 43193,	-- Calamitous Intent (WQ)
-				["isRaid"] = true,
 				["coord"] = { 37.7, 83.6, AZSUNA },
 				["creatureID"] = 109331,	-- Calamir
+				["questID"] = 43193,	-- Calamitous Intent (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3]
 					i(141438),	-- Pendant of Cold Flame
@@ -80,11 +131,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1789, {	-- Drugon the Frostblood
-				["isWeekly"] = true,
-				["questID"] = 43448,	-- The Frozen King (WQ)
-				["isRaid"] = true,
 				["coord"] = { 58.4, 72.6, HIGHMOUNTAIN },
 				["creatureID"] = 110378,	-- Drugon the Frostblood
+				["questID"] = 43448,	-- The Frozen King (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(142108, {	-- Vantus Rune Technique: Guarm [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
@@ -99,11 +150,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1795, {	-- Flotsam
-				["isWeekly"] = true,
-				["questID"] = 43985,	-- A Dark Tide (WQ)
-				["isRaid"] = true,
 				["coord"] = { 49.2, 7.60, HIGHMOUNTAIN },
 				["creatureID"] = 99929,	-- Flotsam
+				["questID"] = 43985,	-- A Dark Tide (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						-- ["sourceQuest"] = , TODO
@@ -118,11 +169,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1770, {	-- Humongris <The Wizard>
-				["isWeekly"] = true,
-				["questID"] = 42819,	-- Pocket Wizard (WQ)
-				["isRaid"] = true,
 				["coord"] = { 24.6, 69.6, VALSHARAH },
 				["creatureID"] = 108879,	-- Humongris
+				["questID"] = 42819,	-- Pocket Wizard (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(139895),	-- Skinning Technique: Legion Butchery
 					i(141540),	-- Coerced Wizard's Cloak
@@ -135,11 +186,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1769, {	-- Levantus
-				["isWeekly"] = true,
-				["questID"] = 43192,	-- Terror of the Deep (WQ)
-				["isRaid"] = true,
 				["coord"] = { 43.0, 67.6, AZSUNA },
 				["creatureID"] = 108829,	-- Levantus
+				["questID"] = 43192,	-- Terror of the Deep (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(142109, {	-- Vantus Rune Technique: Helya [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
@@ -157,11 +208,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1884, {	-- Malificus
-				["isWeekly"] = true,
-				["questID"] = 46948,	-- Malificus (WQ)
-				["isRaid"] = true,
 				["coord"] = { 59.8, 27.8, BROKEN_SHORE },
 				["creatureID"] = 117303,	-- Malificus
+				["questID"] = 46948,	-- Malificus (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(147740),	-- Plague-Resistant Headcover
 					i(147764),	-- Cloak of Growing Mistrust
@@ -176,11 +227,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1783, {	-- Na'zak the Fiend
-				["isWeekly"] = true,
-				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
-				["isRaid"] = true,
 				["coord"] = { 36.0, 66.4, 685 },	-- Shattered Locus (Floor #2)
 				["creatureID"] = 110321,	-- Na'zak the Fiend
+				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
+				["maps"] = { SURAMAR },
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(142121),	-- Recipe: Potion of Prolonged Power [Rank 3]
 					i(141425),	-- Avalanche Resistant Legplates
@@ -193,11 +245,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1749, {	-- Nithogg
-				["isWeekly"] = true,
-				["questID"] = 42270,	-- Scourge of the Skies (WQ)
-				["isRaid"] = true,
 				["coord"] = { 46.6, 30.0, STORMHEIM },
 				["creatureID"] = 107544,	-- Nithogg
+				["questID"] = 42270,	-- Scourge of the Skies (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(142107, {	-- Vantus Rune Technique: Odyn [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
@@ -213,11 +265,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1763, {	-- Shar'thos
-				["isWeekly"] = true,
-				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
-				["isRaid"] = true,
 				["coord"] = { 55.6, 43.2, VALSHARAH },
 				["creatureID"] = 108678,	-- Shar'thos
+				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(140659),	-- Skull of Shar'thos
 					i(141547),	-- Choker of Dreamthorns
@@ -230,11 +282,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1885, {	-- Si'vash
-				["isWeekly"] = true,
-				["questID"] = 46945,	-- Si'vash (WQ)
-				["isRaid"] = true,
 				["coord"] = { 89.6, 33.0, BROKEN_SHORE },
 				["creatureID"] = 117470,	-- Si'vash
+				["questID"] = 46945,	-- Si'vash (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(147731),	-- Cowl of Plumbed Depths
 					i(147752),	-- Pauldrons of the Engulfing Tide
@@ -248,15 +300,15 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1756, {	-- The Soultakers
-				["isWeekly"] = true,
-				["questID"] = 42269,	-- The Soultakers (WQ)
-				["isRaid"] = true,
-				["coord"] = { 78.2, 8.60, STORMHEIM },
 				["crs"] = {
 					106981,	-- Captain Hring
 					106982,	-- Reaver Jdorn
 					106984,	-- Soultrapper Mevra
 				},
+				["coord"] = { 78.2, 8.60, STORMHEIM },
+				["questID"] = 42269,	-- The Soultakers (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 						["sourceQuest"] = 38990,	-- The Call of Icecrown
@@ -271,11 +323,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(1796, {	-- Withered J'im
-				["isWeekly"] = true,
-				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
-				["isRaid"] = true,
 				["coord"] = { 52.6, 80.8, AZSUNA },
 				["creatureID"] = 112350,	-- Withered J'im
+				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					i(141455),	-- Cave Skulker's Helm
 					i(141453),	-- Magic-Warped Hood
@@ -285,55 +337,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(141492),	-- Dingy Suramar Mercantile Signet
 					i(141482),	-- Unstable Arcanocrystal
 				},
-			}),
-			ach(11786, {	-- Terrors of the Shore
-				crit(1, { -- Brutallus
-					["_npcs"] = { 117239 },
-				}),
-				crit(2, { -- Malificus
-					["_npcs"] = { 117303 },
-				}),
-				crit(3, { -- Si'vash
-					["_npcs"] = { 117470 },
-				}),
-				crit(4, { -- Apocron
-					["_npcs"] = { 121124 },
-				}),
-			}),
-			ach(11160, {	-- Unleashed Monstrosities
-				crit(1, { -- Na'zak the Fiend
-					["_npcs"] = { 110321 },
-				}),
-				crit(2, { -- Nithogg
-					["_npcs"] = { 107544 },
-				}),
-				crit(3, { -- Humongris
-					["_npcs"] = { 108879 },
-				}),
-				crit(4, { -- Flotsam
-					["_npcs"] = { 99929 },
-				}),
-				crit(5, { -- Ana-Mouz
-					["_npcs"] = { 109943 },
-				}),
-				crit(6, { -- Levantus
-					["_npcs"] = { 108829 },
-				}),
-				crit(7, { -- Drugon the Frostblood
-					["_npcs"] = { 110378 },
-				}),
-				crit(8, { -- The Soultakers
-					["_quests"] = { 42269 },
-				}),
-				crit(9, { -- Calamir
-					["_npcs"] = { 109331 },
-				}),
-				crit(10, { -- Shar'thos
-					["_npcs"] = { 108678 },
-				}),
-				crit(11, { -- Withered J'im
-					["_npcs"] = { 112350 },
-				}),
 			}),
 		},
 	}),

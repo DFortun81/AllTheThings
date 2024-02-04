@@ -15,8 +15,7 @@ root(ROOTS.Zones, {
 								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", AZSUNA},
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", ZONE_REWARDS },
+								{"find", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 							},
 							["groups"] = {
@@ -45,6 +44,36 @@ root(ROOTS.Zones, {
 						})),
 					},
 				}),
+				q(46745, bubbleDownSelf({ ["minReputation"] = { FACTION_COURT_OF_FARONDIS, EXALTED }}, {	-- Supplies from the Court
+					["repeatable"] = true,
+					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
+					["g"] = {
+						i(152102, {	-- Farondis Chest
+							i(147806),	-- Cloudwing Hippogryph (MOUNT!)
+						}),
+						un(REMOVED_FROM_GAME,  i(146897, {	-- Farondis Chest
+							["sym"] = {
+								{"select", "itemID", 152102},	-- Farondis Chest
+								{"pop"},
+							},
+						})),
+					},
+				})),
+				q(46749, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_WARDENS, EXALTED }}, {	-- Supplies From the Wardens
+					["repeatable"] = true,
+					["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
+					["g"] = {
+						i(152107, {	-- Warden's Supply Kit
+							i(147843),	-- Sira's Extra Cloak (TOY!)
+						}),
+						un(REMOVED_FROM_GAME, i(146902, {	-- Warden's Supply Kit
+							["sym"] = {
+								{"select", "itemID", 152107},	-- Warden's Supply Kit
+								{"pop"},
+							},
+						})),
+					},
+				})),
 				q(42422, {	-- The Wardens
 					["repeatable"] = true,
 					["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
@@ -54,8 +83,7 @@ root(ROOTS.Zones, {
 								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", AZSUNA},
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", ZONE_REWARDS },
+								{"find", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 							},
 						}),
@@ -77,36 +105,6 @@ root(ROOTS.Zones, {
 						un(REMOVED_FROM_GAME, i(154908, {	-- Warden's Field Kit
 							["sym"] = {
 								{"select", "itemID", 157827},	-- Warden's Field Kit
-							},
-						})),
-					},
-				}),
-				q(46745, {	-- Supplies from the Court
-					["repeatable"] = true,
-					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
-					["g"] = {
-						i(152102, {	-- Farondis Chest
-							i(147806),	-- Cloudwing Hippogryph (MOUNT!)
-						}),
-						un(REMOVED_FROM_GAME,  i(146897, {	-- Farondis Chest
-							["sym"] = {
-								{"select", "itemID", 152102},	-- Farondis Chest
-								{"pop"},
-							},
-						})),
-					},
-				}),
-				q(46749, {	-- Supplies From the Wardens
-					["repeatable"] = true,
-					["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
-					["g"] = {
-						i(152107, {	-- Warden's Supply Kit
-							i(147843),	-- Sira's Extra Cloak (TOY!)
-						}),
-						un(REMOVED_FROM_GAME, i(146902, {	-- Warden's Supply Kit
-							["sym"] = {
-								{"select", "itemID", 152107},	-- Warden's Supply Kit
-								{"pop"},
 							},
 						})),
 					},

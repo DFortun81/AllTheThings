@@ -65,20 +65,60 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					-]]
 				}),
-				i(202091, {	-- Dragonscale Expedition Insignia
-					["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renonwn 25
+				i(209036, {	-- Cache of Amirdrassil Treasures (N)
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+					--[[
+					["sym"] = {
+						{"select", "instanceID", 1207},			-- Amirdrassil, the Dream's Hope
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						{"is","encounterID"},					-- Only Encounter Headers
+						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						{"is", "itemID"},						-- Only Items!
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					},
+					-]]
+				}),
+				i(209037, {	-- Cache of Amirdrassil Treasures (H)
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+					--[[
+					["sym"] = {
+						{"select", "instanceID", 1207},			-- Amirdrassil, the Dream's Hope
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
+						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						{"is","encounterID"},					-- Only Encounter Headers
+						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						{"is", "itemID"},						-- Only Items!
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					},
+					-]]
+				}),
+				i(202091, {	-- Dragonscale Expedition Insignia [Epic 2.5k]
+					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-				i(202092, {	-- Iskaara Tuskarr Insignia
+				i(202092, {	-- Iskaara Tuskarr Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-				i(202094, {	-- Maruuk Centaur Insignia
+				i(202094, {	-- Maruuk Centaur Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-				i(202093, {	-- Valdrakken Accord Insignia
+				i(202093, {	-- Valdrakken Accord Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(210422, {	-- Loamm Niffen Insignia [Epic 2.5k]
+					["timeline"] = { ADDED_10_2_0 },
+					["minReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(210423, {	-- Dream Wardens Insignia [Epic 2.5k]
+					["timeline"] = { ADDED_10_2_0 },
+					["minReputation"] = { FACTION_DREAM_WARDENS, 20 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 			}),
@@ -105,8 +145,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isWeekly"] = true,
 				["_drop"] = { "g" },	-- Drop Trash
 			}, {
-				pvp(q(47148, {			-- Something Different
+				-- #IF AFTER DF
+				pvp(q(47148, {	-- Something Different
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				})),
+				-- #ENDIF
+				pvp(q(78128, {	-- Gotta Go Fast
+					["timeline"] = { ADDED_10_2_0 },
+				})),
+				pvp(q(78129, {	-- Gotta Go Faster
+					["timeline"] = { ADDED_10_2_0 },
+					["sourceQuests"] = { 78128 },
 				})),
 			})),
 		}),

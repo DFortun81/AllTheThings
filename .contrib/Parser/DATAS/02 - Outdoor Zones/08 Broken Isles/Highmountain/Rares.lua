@@ -12,12 +12,12 @@ root(ROOTS.Zones, {
 						["crs"] = { 109155 },	-- Malefica
 						["coord"] = { 32.8, 66.6, HIGHMOUNTAIN },
 					}),
-					n(109059, { -- Dareer
+					n(109059, {	-- Dareer
 						["questID"] = 42826,
 						["coord"] = { 39.8, 52.4, HIGHMOUNTAIN },
 						["crs"] = { 109062 },    -- Dareer
 					}),
-					n(109159, { -- Holk the Wanderer
+					n(109159, {	-- Holk the Wanderer
 						["questID"] = 42863,
 						["coord"] = { 39.6, 58.2, 750 },
 						["crs"] = { 109161 },    -- Holk the Wanderer
@@ -36,9 +36,6 @@ root(ROOTS.Zones, {
 							["displayID"] = 65118,
 							["g"] = {
 								i(131781),	-- Plate Hiking Boots
-								crit(16, {	-- Amateur Hunters
-									["achievementID"] = 11264,	-- Adventurer of Highmountain
-								}),
 							},
 						}),
 					},
@@ -53,9 +50,6 @@ root(ROOTS.Zones, {
 					["g"] = {
 						o(244473, {	-- Thunder Totem Stolen Goods (No Model)
 							i(131756),	-- Fletcher's Nimble Grips
-							crit(10, {	-- Beastmaster Pao'lek
-								["achievementID"] = 11264,	-- Adventurer of Highmountain
-							}),
 						}),
 					},
 				}),
@@ -67,10 +61,7 @@ root(ROOTS.Zones, {
 					["questID"] = 40084,
 					["coord"] = { 36.6, 16.6, HIGHMOUNTAIN },
 					["g"] = {
-						i(131799),	-- Zugdug's Piece of Paradise
-						crit(14, {	-- Bodash the Hoarder
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
+						i(131799),	-- Zugdug's Piece of Paradis
 					},
 				}),
 				n(97449,  {	-- Bristlemaul
@@ -78,9 +69,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 37.7, 45.7, HIGHMOUNTAIN },
 					["g"] = {
 						i(131761),	-- Thick Bristly Hood
-						crit(12, {	-- Bristlemaul
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(94877,  {	-- Brogrul the Mighty
@@ -98,9 +86,6 @@ root(ROOTS.Zones, {
 					},
 					["g"] = {
 						i(131798),	-- Faded Swashbuckler's Jerkin
-						crit(3, {	-- Crab Rider Grmlrml
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(97345,  {	-- Crawshuk the Hungry
@@ -108,9 +93,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 48.3, 40.4, HIGHMOUNTAIN },
 					["g"] = {
 						i(131809),	-- Gleaming Roc Feather
-						crit(4, {	-- Crawshuk the Hungry
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(100495, {	-- Devouring Darkness
@@ -122,9 +104,6 @@ root(ROOTS.Zones, {
 					["questID"] = 40414,
 					["g"] = {
 						i(131780),	-- Void Slippers
-						crit(18, {	-- Devouring Darkness
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(96072,  {	-- Durguth
@@ -157,9 +136,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 56.5, 60.7, HIGHMOUNTAIN },
 					["g"] = {
 						i(131775),	-- Da Basher's Toy Armor
-						crit(5, {	-- Gurbog da Basher
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(97326,  {	-- Hartli the Snatcher
@@ -167,9 +143,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 51.0, 48.5, HIGHMOUNTAIN },
 					["g"] = {
 					--	i(129190),	-- Rope of Friendship
-						crit(6, {	-- Hartli the Snatcher
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(98024,  {	-- Luggut the Eggeater
@@ -180,9 +153,6 @@ root(ROOTS.Zones, {
 					},
 					["g"] = {
 						i(131776),	-- Scale Cord of the Eggeater
-						crit(19, {	-- Luggut the Eggeater
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(96410,  {	-- Majestic Elderhorn
@@ -196,19 +166,11 @@ root(ROOTS.Zones, {
 					},
 					["g"] = {
 						i(131900),	-- Magestic Elderhorn Hoof (TOY!)
-						crit(11, {	-- Majestic Elderhorn
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(96621,  {	-- Mellok, Son of Torok
 					["questID"] = 40242,
 					["coord"] = { 48.9, 27.0, HIGHMOUNTAIN },
-					["g"] = {
-						crit(17, {	-- Mellok, Son of Torok
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
-					},
 				}),
 				n(98311,  {	-- Mrrklr
 					["questID"] = 40096,
@@ -216,9 +178,6 @@ root(ROOTS.Zones, {
 					["crs"] = { 98754 },	-- Sloppy "Sloppy Joe" Joe
 					["g"] = {
 						i(131797),	-- Swamprock Salvage Band
-						crit(21, {	-- Captured Survivor
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(95204,  {	-- Oubdob da Smasher
@@ -244,20 +203,12 @@ root(ROOTS.Zones, {
 						i(140681),	-- Jak's Gloves
 						i(140680),	-- Lysander's Lovindle Bracers
 						i(131767),	-- Xander's Gauntlets
-						crit(8, {	-- Unethical Adventurers
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(97102,  {	-- Ram'Pag <The Treasure Worm>
 					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
 					["questID"] = 39766,
 					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
-					["g"] = {
-						crit(15, {	-- Totally Safe Treasure Chest
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
-					},
 				}),
 				n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
 					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
@@ -265,9 +216,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 54.5, 40.5, HIGHMOUNTAIN },
 					["g"] = {
 						i(131792),	-- Harefoot Pinnacle Wrap
-						crit(13, {	-- Scout Harefoot
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(97093,  {	-- Shara Felbreath
@@ -275,9 +223,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 51.0, 25.8, HIGHMOUNTAIN },
 					["g"] = {
 						i(131791),	-- Felbreath Bloodsinger Robe
-						crit(20, {	-- Shara Felbreath
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(101077, {	-- Sekhan
@@ -285,9 +230,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 45.5, 55.2, HIGHMOUNTAIN },
 					["g"] = {
 						i(131730),	-- Darksaber Leather Belt
-						crit(1, {	-- Sekhan
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(95872,  {	-- Skullhat
@@ -295,9 +237,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 50.9, 32.0, HIGHMOUNTAIN },
 					["g"] = {
 						i(131769),	-- The Taskmaster's Wristwraps
-						crit(7, {	-- Skywhisker Taskmasker
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(98890,  {	-- Slumber
@@ -305,9 +244,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 41.4, 31.9, HIGHMOUNTAIN },
 					["g"] = {
 						i(131921),	-- Dreamflow Collar
-						crit(22, {	-- Slumbering Bear
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 				n(97653,  {	-- Taurson
@@ -318,9 +254,6 @@ root(ROOTS.Zones, {
 							["displayID"] = 65118,
 							["g"] = {
 								i(131800),	-- Taurson's Champion Belt
-								crit(2, {	-- The Beastly Boxer
-									["achievementID"] = 11264,	-- Adventurer of Highmountain
-								}),
 							},
 						}),
 					},
@@ -330,9 +263,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 41.9, 41.5, HIGHMOUNTAIN },
 					["g"] = {
 						i(129175),	-- Crispin (PET!)
-						crit(9, {	-- The Exiled Shaman
-							["achievementID"] = 11264,	-- Adventurer of Highmountain
-						}),
 					},
 				}),
 			}),

@@ -13,7 +13,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75285, true),
 					i(203307),	-- Winding Slitherdrake: Plated Brow (DM!)
-					i(205306),	-- Aquiferous Raiment
 					i(205318),	-- Guardian Golem's Legplates
 					i(205309),	-- Loyal Attendant's Gaze
 				},
@@ -24,6 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75271, true),
 					i(205154),	-- Aquapo (PET!)
+					i(205306),	-- Aquiferous Raiment
 					i(205295),	-- Sediment Sifters
 				},
 			}),
@@ -32,13 +32,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75325,
 				["g"] = {
 					bo(75326, true),
-					i(205114, {	-- Brul (PET!)
-						["description"] = "After defeating Brullo, eat Rocks on the Rocks to transform then open the chest.",
-						["cost"] = { { "i", 204845, 1 } },	-- 1x Rocks on the Rocks
+					o(398828, {	-- Chest of Massive Gains
+						i(205114, {	-- Brul (PET!)
+							["description"] = "After defeating Brullo, eat Rocks on the Rocks to transform then open the chest.",
+							["cost"] = { { "i", 204845, 1 } },	-- 1x Rocks on the Rocks
+						}),
+						i(204847),	-- Recipe: Rocks on the Rocks (RECIPE!)
+						i(205313),	-- Brullo's Wristbraces
+						i(205320),	-- Greatbelt of the Stronk
 					}),
-					i(204847),	-- Recipe: Rocks on the Rocks (RECIPE!)
-					i(205313),	-- Brullo's Wristbraces
-					i(205320),	-- Greatbelt of the Stronk
 				},
 			}),
 			n(204093, {	-- Colossian
@@ -120,7 +122,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75335,	-- Old QuestID: 75558
 				["g"] = {
 					bo(75336, true),
-					i(205796),	-- Molten Lava Pack (TOY!)
+					i(205796, {	-- Molten Lava Pack (TOY!)
+					--	["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
+					--	Fixed 4 months into the patch (and 4 days after the note was added to ATT).
+					}),
 					i(203328),	-- Winding Slitherdrake: White Horns (DM!)
 					i(205297),	-- Flamewielder's Trousers
 					i(205329),	-- Loop of Burning Invocation
@@ -240,7 +245,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75360, true),
 					i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
-					i(205328),	-- Earthen Emissasry's Edge
+					i(205328),	-- Earthen Emissary's Edge
 					i(205314),	-- Greathelm of the Emissary
 					i(205312),	-- Subterrax's Stout Waistguard
 				},

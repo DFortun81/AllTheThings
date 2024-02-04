@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["lore"] = "Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",
 		["maps"] = {
 			29,		-- The Grizzled Den
+			31,		-- Gol'Balar Quarry
 			470,	-- Frostmane Hold
 		},
 		-- #if AFTER WRATH
@@ -19,12 +20,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
 				-- #endif
+				-- #if BEFORE 6.0.0
+				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				["zone-text-areas"] = {
+					132,	-- Coldridge Valley
+					800,	-- Coldridge Pass
+					77,		-- Anvilmar
+				},
+				-- #endif
 				["maps"] = {
 					28,		-- Coldridge Pass
-					31,		-- Coldridge Valley
 					428,	-- Frostmane Hovel (Coldridge Valley)
 				},
 				["groups"] = {
+					spell(921, {	-- Pickpocketing
+						i(2109, {	-- Frostmane Chain Vest
+							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
+							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
+							--	["cr"] = 706,	-- Frostmane Troll Whelp
+							["coords"] = {
+								{ 32.4, 75.8, DUN_MOROGH },
+							},
+						}),
+					}),
 					n(QUESTS, {
 						q(170, {	-- A New Threat
 							["qg"] = 713,	-- Balir Frosthammer
@@ -62,15 +80,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = lvlsquish(3, 3, 1),
 							["groups"] = {
 								objective(1, {	-- 0/1 Felix's Box
-									["provider"] = { "i", 10438 },	-- Felix's Box
+									["providers"] = {
+										{ "i",  10438 },	-- Felix's Box
+										{ "o", 148499 },	-- Felix's Box
+									},
 									["coord"] = { 20.9, 76.1, DUN_MOROGH },
 								}),
 								objective(2, {	-- 0/1 Felix's Chest
-									["provider"] = { "i", 16313 },	-- Felix's Chest
+									["providers"] = {
+										{ "i",  16313 },	-- Felix's Chest
+										{ "o", 178084 },	-- Felix's Chest
+									},
 									["coord"] = { 22.8, 79.9, DUN_MOROGH },
 								}),
 								objective(3, {	-- 0/1 Felix's Bucket of Bolts
-									["provider"] = { "i", 16314 },	-- Felix's Bucket of Bolts
+									["providers"] = {
+										{ "i",  16314 },	-- Felix's Bucket of Bolts
+										{ "o", 178085 },	-- Felix's Bucket of Bolts
+									},
 									["coord"] = { 26.3, 79.2, DUN_MOROGH },
 								}),
 							},
@@ -103,45 +130,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
 						}),
-						q(384, {	-- Beer Basted Boar Ribs
-							["qg"] = 1267,	-- Ragnar Thunderbrew
-							["races"] = ALLIANCE_ONLY,
-							-- #if AFTER CATA
-							["coord"] = { 53.9, 50.6, DUN_MOROGH },
-							["cost"] = {
-								{ "i", 2894, 1 },	-- Rhapsody Malt
-								{ "i", 60496, 4 },	-- Tender Boar Ribs
-							},
-							-- #else
-							["requireSkill"] = COOKING,
-							["coord"] = { 46.8, 52.4, DUN_MOROGH },
-							["cost"] = {
-								{ "i", 2894, 1 },	-- Rhapsody Malt
-								{ "i", 2886, 6 },	-- Crag Boar Rib
-							},
-							-- #endif
-							["lvl"] = 5,
-							["groups"] = {
-								i(2888),	-- Beer Basted Boar Ribs
-								i(2889),	-- Recipe: Beer Basted Boar Ribs
-							},
-						}),
 						q(1599, {	-- Beginnings
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["coord"] = { 28.6, 66.1, DUN_MOROGH },
 							["altQuests"] = { 1598 },	-- The Stolen Tome
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 3.3.0" },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
+							-- #if BEFORE 3.3.0
 							["groups"] = {
 								objective(1, {	-- 0/3 Feather Charm
 									["provider"] = { "i", 6753 },	-- Feather Charm
 									["cr"] = 946,	-- Frostmane Novice
 								}),
-								-- #if BEFORE 4.0.3
 								recipe(688),	-- Summon Imp
-								-- #endif
 							},
+							-- #endif
 						}),
 						q(3365, {	-- Bring Back the Mug
 							["providers"] = {
@@ -470,6 +474,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77661, {	-- Meditation on the Light
+							["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
+							["coord"] = { 28.6, 66.4, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
+									["providers"] = {
+										{ "i", 205951 },	-- Memory of a Troubled Acolyte
+										{ "n", 208565 },	-- Altar of the Light
+									},
+									["coord"] = { 28.8, 66.6, DUN_MOROGH },
+									["description"] = "Kneel (/kneel) at the Altar of the Light to gain a Meditation buff, then use the Rune to complete the quest.",
+								}),
+								recipe(402862),	-- Engrave Gloves - Penance
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(24492, {	-- Pack Your Bags
 							["qg"] = 37113,	-- Milo Geartwinge
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
@@ -490,6 +516,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77657, {	-- Relics of the Light
+							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
+							["coord"] = { 28.8, 68.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PALADIN },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Crusader Strike
+									["provider"] = { "i", 205420 },	-- Libram of Judgement
+									["cr"] = 706,	-- Frostmane Troll Whelp
+								}),
+								recipe(410002),	-- Engrave Gloves - Crusader Strike
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(3364, {	-- Scalding Mornbrew Delivery
 							["providers"] = {
 								{ "n", 12738 },	-- Nori Pridedrift
@@ -557,8 +601,64 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "removed 7.0.3" },
-							["races"] = { DWARF, NIGHT_ELF },
+							["races"] = { DWARF, NIGHTELF },
 							["classes"] = { WARRIOR },
+						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77667, {	-- Spell Research
+							["providers"] = {
+								{ "n", 944 },	-- Marryk Nurribit <Mage Trainer>
+								{ "i", 211809 },	-- Comprehension Primer
+							},
+							["coord"] = { 28.6, 66.4, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { MAGE },
+							["races"] = { GNOME },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
+									["provider"] = { "i", 203745 },	-- Spell Notes: Ice Lance
+								}),
+								recipe(401760),	-- Engrave Gloves - Ice Lance
+								i(211779),	-- Comprehension Charm
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77666, {	-- Stolen Power
+							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
+							["coord"] = { 28.6, 66.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARLOCK },
+							["races"] = { GNOME },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
+									["provider"] = { "i", 205230 },	-- Rune of Haunting
+								}),
+								recipe(403919),	-- Engrave Gloves - Haunt
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
+						q(2160, {	-- Supplies to Tannok
+							["providers"] = {
+								{ "n", 6782 },	-- Hands Springsprocket
+								{ "i", 7646 },	-- Crate of Inn Supplies
+							},
+							["coord"] = { 33.8, 72.2, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(57537, {	-- Frosthammer Bracer
+									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+								}),
+								i(57538, {	-- Kharanos Belt
+									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+								}),
+								i(57539, {	-- Snow Stomping Boots
+									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+								}),
+							},
 						}),
 						q(3115, {	-- Tainted Memorandum
 							["providers"] = {
@@ -596,6 +696,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77655, {	-- The Lost Rune [Dwarf]
+							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
+							["coord"] = { 28.8, 67.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
+									["cr"] = 706,	-- Frostmane Troll Whelp
+									-- TODO: Confirm if drops from Troll Whelps.
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77656, {	-- The Lost Rune [Gnome]
+							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
+							["coord"] = { 28.8, 67.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { GNOME },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
+									["cr"] = 706,	-- Frostmane Troll Whelp
+									-- TODO: Confirm if drops from Troll Whelps.
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(24528, {	-- The Power of the Light
 							["qg"] = 926,	-- Bromos Grummner
 							["sourceQuest"] = 3107,	-- Consecrated Rune
@@ -647,6 +783,65 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(961),	-- Healing Herb
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77658, {	-- Thrice Stolen [Dwarf]
+							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
+							["coord"] = { 28.4, 67.6, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 405628 },	-- Frostmane Loot Cache
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77659, {	-- Thrice Stolen [Gnome]
+							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
+							["coord"] = { 28.4, 67.6, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 405628 },	-- Frostmane Loot Cache
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77660, {	-- Trek Through the Caves
+							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
+							["coord"] = { 29, 67.4, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { HUNTER },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
+									["providers"] = {
+										{ "o", 405628 },	-- Frostmane Loot Cache
+										{ "i", 206168 },	-- Rune of the Chimera
+									},
+									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+								}),
+								recipe(410121),	-- Engrave Gloves - Chimera Shot
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(24489, {	-- Trolling for Information
 							["qg"] = 1354,	-- Apprentice Soren
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
@@ -672,30 +867,128 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					n(TREASURES, {
+						applyclassicphase(SOD_PHASE_ONE, o(405633, {	-- Rockjaw Footlocker
+							["coord"] = { 26.8, 72.6, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(205951, {	-- Memory of a Troubled Acolyte
+									["classes"] = { PRIEST },
+								}),
+								i(205230, {	-- Rune of Haunting
+									["classes"] = { WARLOCK },
+								}),
+								i(203751, {	-- Spell Notes: CALE ENCI
+									["classes"] = { MAGE },
+								}),
+							},
+						})),
+					}),
+					-- #endif
 					n(ZONE_DROPS, {
+						-- #if BEFORE 10.1.7
+						-- Added to Gnolls in Elwynn Forest via Pickpocket (not trolling)
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 808,	-- Grik'nir the Cold
 						}),
-						i(2108, {	-- Frostmane Leather Vest
-							["timeline"] = { "removed 4.0.3" },
+						-- #endif
+						-- #if AFTER 10.1.7
+						i(2259, {	-- Frostmane Club
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 706,	-- Frostmane Troll Whelp
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 21.2, 66.2, COLDRIDGE_VALLEY },
+								{ 30.6, 84.8, COLDRIDGE_VALLEY },
+								{ 49.2, 80.2, COLDRIDGE_VALLEY },
+								-- #else
+								{ 37.4, 78.2, DUN_MOROGH },
+								{ 33.4, 77.6, DUN_MOROGH },
+								{ 28.4, 75.6, DUN_MOROGH },
+								-- #endif
+							},
 						}),
+						-- #endif
+						i(2108, {	-- Frostmane Leather Vest
+							["cr"] = 706,	-- Frostmane Troll Whelp
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 21.2, 66.2, COLDRIDGE_VALLEY },
+								{ 30.6, 84.8, COLDRIDGE_VALLEY },
+								{ 49.2, 80.2, COLDRIDGE_VALLEY },
+								-- #else
+								{ 37.4, 78.2, DUN_MOROGH },
+								{ 33.4, 77.6, DUN_MOROGH },
+								{ 28.4, 75.6, DUN_MOROGH },
+								-- #endif
+							},
+						}),
+						-- #if AFTER 10.1.7
+						i(2258, {	-- Frostmane Shortsword
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["cr"] = 37507,	-- Frostmane Blade
+							["coords"] = {
+								{ 36.8, 77.4, DUN_MOROGH },
+								{ 35.9, 79.8, DUN_MOROGH },
+							},
+						}),
+						-- #endif
 						i(2110, {	-- Light Magesmith Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 946,	-- Frostmane Novice
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 70.2, 30.2, 428 },
+								-- #elseif AFTER CATA
+								{ 37.0, 78.4, DUN_MOROGH },
+								-- #else
+								{ 30.4, 81.0, DUN_MOROGH },
+								-- #endif
+							},
 						}),
+						-- #if AFTER 10.1.7
+						i(2065, {	-- Rockjaw Blade
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["cr"] = 1718,	-- Rockjaw Raider
+							["coords"] = {
+								{ 42.6, 66.0, DUN_MOROGH },
+								{ 42.0, 67.8, DUN_MOROGH },
+							},
+						}),
+						-- #endif
 						i(2787, {	-- Trogg Dagger
+							-- #if AFTER 4.0.3
+							["crs"] = {
+								37073,	-- Rockjaw Goon
+								37105,	-- Rockjaw Scavenger
+							},
+							["coords"] = {
+								{ 55.0, 44.6, COLDRIDGE_VALLEY },
+								{ 61.6, 59.2, COLDRIDGE_VALLEY },
+								{ 73.0, 56.6, COLDRIDGE_VALLEY },
+								{ 47.0, 43.4, COLDRIDGE_VALLEY },
+							},
+							-- #else
 							["cr"] = 724,	-- Burly Rockjaw Trogg
+							["coords"] = {
+								{ 21.8, 72.6, DUN_MOROGH },
+								{ 27.6, 72.8, DUN_MOROGH },
+								{ 31.0, 76.0, DUN_MOROGH },
+							},
+							-- #endif
 						}),
 						i(2054, {	-- Trogg Hand Axe
+							["timeline"] = { "removed 4.0.3", ADDED_10_0_7 },
+							["cr"] = 1718,	-- Rockjaw Raider
 							-- #if AFTER CATA
 							["coord"] = { 42.6, 66.0, DUN_MOROGH },
 							-- #else
 							["coord"] = { 35.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 4.0.3", ADDED_10_0_7 },
-							["cr"] = 1718,	-- Rockjaw Raider
 						}),
 					}),
 				},
@@ -1204,6 +1497,79 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if AFTER 10.1.7
+			spell(921, {	-- Pickpocketing
+				i(2109, {	-- Frostmane Chain Vest
+					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
+					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
+					--	["cr"] = 41122,	-- Frostmane Snowstrider
+					["coords"] = {
+						{ 49.0, 35.4, DUN_MOROGH },
+					},
+				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
+						["coord"] = { 78.2, 59.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 6123,	-- Dark Iron Spy
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cost"] = {
+							{ "i", 208219, 1 },	-- Bottom-Left Map Piece
+							{ "i", 208218, 1 },	-- Bottom-Right Map Piece
+							{ "i", 208215, 1 },	-- Top-Left Map Piece
+							{ "i", 208213, 1 },	-- Top-Right Map Piece
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
+						["coord"] = { 78.2, 59.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 6123,	-- Dark Iron Spy
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
+						["coord"] = { 26.0, 41.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 1211,	-- Leper Gnome
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
+						["coord"] = { 69.8, 59.0, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1116,	-- Rockjaw Ambusher
+							1718,	-- Rockjaw Raider
+							724,	-- Burly Rockjaw Trogg
+							707,	-- Rockjaw Trogg
+							1115,	-- Rockjaw Skullthumper
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
+						["coord"] = { 23.4, 53.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1124,	-- Frostmane Shadowcaster
+							1122,	-- Frostmane Hideskinner
+							946,	-- Frostmane Novice
+							1397,	-- Frostmane Seer
+							706,	-- Frostmane Troll Whelp
+							1123,	-- Frostmane Headhunter
+							1121,	-- Frostmane Snowstrider
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["qg"] = 1374,	-- Rejold Barleybrew
@@ -1299,9 +1665,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rumbleshot's Ammo
-							["provider"] = { "i", 13850 },	-- Rumbleshot's Ammo
+							["providers"] = {
+								{ "i",  13850 },	-- Rumbleshot's Ammo
+								{ "o", 176785 },	-- Ammo Crate
+							},
 							["coord"] = { 44.13, 56.95, DUN_MOROGH },
 						}),
+					},
+				}),
+				q(384, {	-- Beer Basted Boar Ribs
+					["qg"] = 1267,	-- Ragnar Thunderbrew
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER CATA
+					["coord"] = { 53.9, 50.6, DUN_MOROGH },
+					["cost"] = {
+						{ "i", 2894, 1 },	-- Rhapsody Malt
+						{ "i", 60496, 4 },	-- Tender Boar Ribs
+					},
+					-- #else
+					["requireSkill"] = COOKING,
+					["coord"] = { 46.8, 52.4, DUN_MOROGH },
+					["cost"] = {
+						{ "i", 2894, 1 },	-- Rhapsody Malt
+						{ "i", 2886, 6 },	-- Crag Boar Rib
+					},
+					-- #endif
+					["lvl"] = 5,
+					["groups"] = {
+						i(2888),	-- Beer Basted Boar Ribs
+						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 					},
 				}),
 				q(310, {	-- Bitter Rivals
@@ -1313,6 +1705,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
+					["groups"] = {
+						q(308, {	-- Distracting Jarven
+							["qg"] = 1373,	-- Jarven Thunderbrew
+							["coord"] = { 47.6, 52.6, DUN_MOROGH },
+							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["repeatable"] = true,
+							["groups"] = {
+								q(311, {	-- Return to Marleth
+									["providers"] = {
+										{ "o", 270 },	-- Unguarded Thunder Ale Barrel
+										{ "i", 2666 },	-- Barrel of Thunder Ale
+									},
+									["sourceQuest"] = 310,	-- Bitter Rivals
+									["coord"] = { 47.7, 52.7, DUN_MOROGH },
+									["timeline"] = { "removed 4.0.3" },
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 2,
+								}),
+							},
+						}),
+						q(403, {	-- Guarded Thunderbrew Barrel
+							["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
+							["coord"] = { 47.7, 52.7, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["repeatable"] = true,
+						}),
+					},
 				}),
 				q(7674, {	-- Black Ram Exchange
 					["qg"] = 1261,	-- Veron Amberstill
@@ -1382,15 +1804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(308, {	-- Distracting Jarven
-					["qg"] = 1373,	-- Jarven Thunderbrew
-					["altQuests"] = { 310 },	-- Bitter Rivals
-					["coord"] = { 47.6, 52.6, DUN_MOROGH },
-					["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-				}),
+
 				q(25840, {	-- Eliminate the Resistance
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
@@ -1537,15 +1951,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(403, {	-- Guarded Thunderbrew Barrel
-					["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
-					["sourceQuest"] = 310,	-- Bitter Rivals
-					["altQuests"] = { 311 },	-- Return to Marleth
-					["coord"] = { 47.7, 52.7, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-				}),
 				q(25933, {	-- Help for the Quarry
 					["qg"] = 41578,	-- Sergeant Flinterhammer
 					["sourceQuests"] = {
@@ -1626,7 +2031,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest is available to Gnomes upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1641,7 +2046,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest is available to Dwarves upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1822,8 +2227,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Fang of Vagash
 							["provider"] = { "i", 3627 },	-- Fang of Vagash
-							["cr"] = 1388,	-- Vagash
 							["coord"] = { 62.65, 46.08, DUN_MOROGH },
+							["cr"] = 1388,	-- Vagash
 						}),
 						i(10549),	-- Rancher's Trousers
 						i(2817),	-- Soft Leather Tunic / Hard Leather Tunic [CATA+]
@@ -1880,6 +2285,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49.4, 48.4, DUN_MOROGH },
 						{ 46, 51.6, DUN_MOROGH },
 					},
+					-- #if BEFORE 4.0.3
+					["description"] = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1903,17 +2311,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1010),	-- Gnarled Short Staff
 						i(10547),	-- Camping Knife
 					},
-				}),
-				q(311, {	-- Return to Marleth
-					["providers"] = {
-						{ "o", 270 },	-- Unguarded Thunder Ale Barrel
-						{ "i", 2666 },	-- Barrel of Thunder Ale
-					},
-					["sourceQuest"] = 310,	-- Bitter Rivals
-					["coord"] = { 47.7, 52.7, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 2,
 				}),
 				-- #if AFTER 4.0.3
 				q(6391, {	-- Ride to Ironforge
@@ -1958,10 +2355,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1374 },	-- Rejold Barleybrew
 						{ "i", 3085 },	-- Barrel of Shimmer Stout
 					},
+					-- #if AFTER CATA
+					["sourceQuest"] = 315,	-- The Perfect Stout
+					-- #else
 					["sourceQuests"] = {
 						415,	-- Rejold's New Brew
 						315,	-- The Perfect Stout
 					},
+					-- #endif
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -2032,26 +2433,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(2160, {	-- Supplies to Tannok
-					["providers"] = {
-						{ "n", 6782 },	-- Hands Springsprocket
-						{ "i", 7646 },	-- Crate of Inn Supplies
-					},
-					["coord"] = { 33.8, 72.2, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(57537, {	-- Frosthammer Bracer
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-						}),
-						i(57538, {	-- Kharanos Belt
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-						}),
-						i(57539, {	-- Snow Stomping Boots
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-						}),
-					},
 				}),
 				q(6064, {	-- Taming the Beast (1/3)
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
@@ -2162,7 +2543,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(315, {	-- The Perfect Stout
 					["qg"] = 1374,	-- Rejold Barleybrew
-					["sourceQuest"] = 415,	-- Rejold's New Brew
 					-- #if AFTER CATA
 					["coord"] = { 54.1, 51.1, DUN_MOROGH },
 					-- #else
@@ -2172,7 +2552,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/6 Shimmerweed (7 after CATA)
-							["provider"] = { "i", 2676 },	-- Shimmerweed
+							["providers"] = {
+								{ "i", 2676 },	-- Shimmerweed
+								{ "o", 276 },	-- Shimmerweed Basket
+							},
 							["cr"] = 1397,	-- Frostmane Seer
 						}),
 						i(2326),	-- Ivy-weave Bracers
@@ -2245,22 +2628,69 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP, BLACKFATHOM_DEEPS },
+					["maps"] = { BLACKFATHOM_DEEPS, DARKSHORE, DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Whitestone Oak Lumber
 							["provider"] = { "i", 6994 },	-- Whitestone Oak Lumber
-						}),
-						objective(2, {	-- 0/1 Jordan's Refined Ore Shipment
-							["provider"] = { "i", 6993 },	-- Jordan's Refined Ore Shipment
+							["cr"] = 641,	-- Goblin Woodcarver
 						}),
 						objective(3, {	-- 0/1 Jordan's Smithing Hammer
-							["provider"] = { "i", 6895 },	-- Jordan's Smithing Hammer
+							["providers"] = {
+								{ "i", 6895 },	-- Jordan's Smithing Hammer
+								{ "o", 91138 },	-- Jordan's Hammer
+							},
 						}),
-						objective(4, {	-- 0/1 Purified Kor Gem
-							["provider"] = { "i", 7083 },	-- Purified Kor Gem
+						q(1655, {	-- Bailor's Ore Shipment
+							["qg"] = 6241,	-- Bailor Stonehand
+							["coord"] = { 36.0, 45.0, LOCH_MODAN },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { PALADIN },
+							["repeatable"] = true,
+							["lvl"] = 20,
+							["groups"] = {
+								objective(1, {	-- 0/1 Jordan's Ore Shipment
+									["providers"] = {
+										{ "i", 6992 },	-- Jordan's Ore Shipment
+										{ "o", 92420 },	-- Bailor's Ore
+									},
+									["coord"] = { 71.6, 21.4, LOCH_MODAN },
+								}),
+								objective(2, {	-- 0/1 Jordan's Refined Ore Shipment
+									["provider"] = { "i", 6993 },	-- Jordan's Refined Ore Shipment
+									["questID"] = 1654,	-- The Test of Righteousness (2/3)
+								}),
+							},
+						}),
+						q(1442, {	-- Seeking the Kor Gem
+							["qg"] = 3649,	-- Thundris Windweaver
+							["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
+							["coord"] = { 37.4, 40.2, DARKSHORE },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { PALADIN },
+							["repeatable"] = true,
+							["lvl"] = 20,
+							["groups"] = {
+								objective(1, {	-- 0/1 Corrupted Kor Gem
+									["provider"] = { "i", 6995 },	-- Corrupted Kor Gem
+									["crs"] = {
+										4803,	-- Blackfathom Oracle
+										4805,	-- Blackfathom Sea Witch
+										4802,	-- Blackfathom Tide Priestess
+										-- #if SEASON_OF_DISCOVERY
+										216661,	-- Blackfathom Tide Priestess
+										-- #endif
+									},
+								}),
+								objective(4, {	-- 0/1 Purified Kor Gem
+									["provider"] = { "i", 7083 },	-- Purified Kor Gem
+									["questID"] = 1654,	-- The Test of Righteousness (2/3)
+								}),
+							},
 						}),
 					},
 				}),
@@ -2365,7 +2795,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 7,
 					["groups"] = {
 						objective(1, {	-- 0/1 MacGrann's Dried Meats
-							["provider"] = { "i", 2667 },	-- MacGrann's Dried Meats
+							["providers"] = {
+								{ "i", 2667 },	-- MacGrann's Dried Meats
+								{ "o", 272 },	-- MacGrann's Meat Locker
+							},
 							["coord"] = { 38.5, 53.93, DUN_MOROGH },
 						}),
 						i(6177, {	-- Ironwrought Bracers
@@ -2411,12 +2844,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2069, {	-- Black Bear Hide Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
 				n(1137, {	-- Edan the Howler
-					-- #if AFTER CATA
+					-- #if AFTER 10.1.7
+					["coord"] = { 32.3, 52.26, 29 },	-- Grizzled Den
+					-- #elseif AFTER CATA
 					["coord"] = { 46.4, 47.6, DUN_MOROGH },
 					-- #else
 					["coords"] = {
@@ -2425,15 +2860,58 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 42.2, 46.4, DUN_MOROGH },
 					},
 					-- #endif
+					["description"] = "Located in the Grizzled Den.",
 					["groups"] = {
 						i(3225, {	-- Bloodstained Knife
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 						i(3008, {	-- Wendigo Fur Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208752, {	-- Frozen Trogg
+					["coord"] = { 69.2, 58.2, DUN_MOROGH },
+					["classes"] = { MAGE, WARLOCK },
+					["groups"] = {
+						i(205228, {	-- Rune of Chaos Bolt
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403925),	-- Engrave Gloves - Chaos Bolt
+							},
+						}),
+						i(203748, {	-- Spell Notes: Burnout
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(401759),	-- Engrave Chest - Burnout
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(208638, {	-- Fyodi
+					["description"] = "The runes he drops can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 31.6, 40.0, DUN_MOROGH },
+					["classes"] = { HUNTER, MAGE, WARRIOR },
+					["groups"] = {
+						i(206169, {	-- Rune of Explosive Shot
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410123),	-- Engrave Gloves - Explosive Shot
+							},
+						}),
+						i(204809, {	-- Rune of Furious Thunder
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403476),	-- Engrave Pants - Furious Thunder
+							},
+						}),
+						i(203753, {	-- Spell Notes: RING SEFF OSTROF
+							["classes"] = { MAGE },
+						}),
+					},
+				})),
+				-- #endif
 				n(8503, {	-- Gibblewilt
 					-- #if AFTER CATA
 					["coord"] = { 40.8, 45.2, NEW_TINKERTOWN },
@@ -2445,16 +2923,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(10554, {	-- Foreman Pants
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 						i(10553, {	-- Foreman Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
 				n(1260, {	-- Great Father Arctikus
 					-- #if AFTER CATA
-					["coord"] = { 29.8, 67.8, NEW_TINKERTOWN },
+					["coords"] = {
+						{ 29.8, 67.8, NEW_TINKERTOWN },
+						{ 49.07, 37.12, DUN_MOROGH },
+					},
 					-- #else
 					["coords"] = {
 						{ 23.8, 53.4, DUN_MOROGH },
@@ -2463,10 +2944,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3223, {	-- Frostmane Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2546, {	-- Royal Frostmane Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2485,22 +2966,77 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(763, {	-- Ice-covered Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(2254, {	-- Icepane Warhammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208812, {	-- Jorul
+					["description"] = "You can tame him and you still get the rune!",
+					["coord"] = { 37.78, 42.55, DUN_MOROGH },
+					["cost"] = {{ "i", 208192, 1 }},	-- Dun Morogh Pig Meat
+					["groups"] = {
+						i(205979, {	-- Rune of Flanking
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425762),	-- Engrave Pants - Flanking Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1271, {	-- Old Icebeard
+					-- #if AFTER 10.1.7
+					["coord"] = { 31.4, 27.2, 29 },	-- Grizzled Den
+					["description"] = "Located in the Grizzled Den.",
+					-- #else
 					["coord"] = { 38.4, 54.0, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					-- #endif
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 					["groups"] = {
 						i(2899, {	-- Wengido Collar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
+					["provider"] = { "n", 208975 },	-- Rustling Bush
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
+					["coord"] = { 28.8, 49.6, DUN_MOROGH },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(206155, {	-- Rune of Marksmanship
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410113),	-- Engrave Chest - Master Marksman
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
+					-- TODO: Try to get an objectID for this.
+					--["provider"] = { "o",  },	-- Summoning Circle
+					["coord"] = { 42.2, 35.6, DUN_MOROGH },
+					["cost"] = {
+						{ "i", 208139, 1 },	-- Ominous Tome
+						{ "i", 208140, 1 },	-- Wendigo Blood
+						{ "i", 204907, 1 },	-- Wolf Jawbone
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204912, {	-- Rune of Grace
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(425477),	-- Engrave Pants - Demonic Grace
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1132, {	-- Timber
 					-- #if AFTER CATA
 					["coord"] = { 67.8, 37.4, NEW_TINKERTOWN },
@@ -2513,13 +3049,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3224, {	-- Silver-lined Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(1965, {	-- White Wolf Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
+					["provider"] = { "o", 392029 },	-- Swordsman's Reward
+					["coord"] = { 53.8, 47.2, DUN_MOROGH },
+					["groups"] = {
+						i(204441, {	-- Rune of Blood Frenzy
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403474),	-- Engrave Chest - Blood Frenzy
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(107431, {	-- Weaponized Rabbot
 					["coord"] = { 66.0, 27.0, NEW_TINKERTOWN },
 					["timeline"] = { "added 7.0.3.22290" },
@@ -2530,7 +3080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(7954, {	-- Binjy Featherwhistle <Mechanostrider Pilot>
 					["coord"] = { 49.2, 48.0, DUN_MOROGH },
 					["races"] = { DWARF, GNOME },
-					
+
 					-- Available to Gnomes without faction requirements.
 					["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
 					["OnInit"] = [[function(t)
@@ -2549,7 +3099,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4772, {	-- Ultham Ironhorn <Ram Riding Instructor>
 					["coord"] = { 63.8, 50.2, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					
+
 					-- Available to Dwarves without faction requirements.
 					["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
 					["OnInit"] = [[function(t)
@@ -2567,7 +3117,90 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
+					["provider"] = { "n", 204827 },	-- Adventurer's Remains
+					["coord"] = { 43.0, 49.6, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(210589, {	-- Echo of the Ancestors
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410099),	-- Engrave Pants - Ancestral Guidance
+							},
+						}),
+						i(205944, {	-- Reciprocal Epiphany
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402848),	-- Engrave Pants - Prayer of Mending
+							},
+						}),
+						i(206264, {	-- Rune of Inspiration
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410011),	-- Engrave Pants - Inspiration Exemplar
+							},
+						}),
+						i(206970, {	-- Rune of Life
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410033),	-- Engrave Pants - Lifebloom
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
+					["provider"] = { "o", 387466 },	-- Rusty Lockbox
+					["coord"] = { 47.0, 52.0, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
+					["provider"] = { "o", 386675 },	-- Buried Treasure
+					["coord"] = { 46.96, 43.73, DUN_MOROGH },
+					["cost"] = {{ "i", 208220, 1 }},	-- Dun Morogh Treasure Map
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400095),	-- Engrave Chest - Quick Draw
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(208802, {	-- Wounded Adventurer
+					["coord"] = { 25.6, 43.6, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(205685, {	-- Rune of Aegis
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425619),	-- Engrave Chest - Aegis
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208886, {	-- Blackrat
+					["coord"] = { 57.2, 45.2, DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(203990, {	-- Rune of Mutilation
+							["cost"] = {{ "i", 208205, 1 }},	-- Blackrat's Note
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400094),	-- Engrave Gloves - Mutilate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(8508, {	-- Gretta Ganter <Fisherman Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 51.6, 50.0, NEW_TINKERTOWN },
@@ -2576,7 +3209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					},
 				}),
 				n(1247, {	-- Innkeeper Belm <Innkeeper>
@@ -2614,6 +3247,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208711, {	-- Toby
+					["description"] = "Use the musk and tame a Rabbit and then bring it to Toby.",
+					["coord"] = { 63.6, 50.2, DUN_MOROGH },
+					["cost"] = {{ "i", 208180, 1 }},	-- Rabbit Musk
+					["crs"] = { 721 },	-- Rabbit
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
 					-- #if AFTER CATA
 					["coord"] = { 70.6, 48.9, DUN_MOROGH },
@@ -2651,58 +3301,332 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 46.6, 59.8, DUN_MOROGH },
+					["crs"] = {
+						1689,	-- Scarred Crag Boar
+						1127,	-- Elder Crag Boar
+						1126,	-- Large Crag Boar
+						1125,	-- Crag Boar
+						-- #if SEASON_OF_DISCOVERY
+						208638,	-- Fyodi
+						-- #endif
+					},
+				}),
+				-- #endif
 				i(2886),	-- Crag Boar Rib
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208192, {	-- Dun Morogh Pig Meat
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						208638,	-- Fyodi
+						1125,	-- Crag Boar
+						1126,	-- Large Crag Boar
+						1127,	-- Elder Crag Boar
+						1689,	-- Scarred Crag Boar
+					},
+				})),
+				-- #endif
 				i(2067, {	-- Frostbit Staff
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 79.2, 48.4, DUN_MOROGH },
+						{ 78.0, 54.2, DUN_MOROGH },
+					},
 				}),
+				-- #if BEFORE 10.1.7
+				-- Moved to the starting area.
 				i(2259, {	-- Frostmane Club
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1121,	-- Frostmane Snowstrider
+					["coords"] = {
+						{ 29.6, 79.0, DUN_MOROGH },
+						{ 26.0, 79.8, DUN_MOROGH },
+						{ 21.6, 77.0, DUN_MOROGH },
+					},
 				}),
+				-- #endif
 				i(2260, {	-- Frostmane Hand Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1123,	-- Frostmane Headhunter
 						1122,	-- Frostmane Hideskinner
 					},
+					["coords"] = {
+						{ 26.6, 50.6, DUN_MOROGH },
+						{ 27.2, 52.8, DUN_MOROGH },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 41122,	-- Frostmane Snowstrider
+					["coords"] = {
+						{ 49.0, 35.4, DUN_MOROGH },
+						{ 48.6, 42.6, DUN_MOROGH },
+						{ 50.6, 39.2, DUN_MOROGH },
+						{ 47.2, 39.4, DUN_MOROGH },
+					},
+					-- #endif
 				}),
+				-- #if BEFORE 10.1.7
 				i(2258, {	-- Frostmane Shortsword
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1120,	-- Frostmane Troll
+					["coords"] = {
+						{ 26.6, 50.6, DUN_MOROGH },
+						{ 27.2, 52.8, DUN_MOROGH },
+					},
 				}),
+				-- #endif
 				i(2257, {	-- Frostmane Staff
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1124,	-- Frostmane Shadowcaster
+					["coords"] = {
+						{ 26.6, 50.6, DUN_MOROGH },
+						{ 27.2, 52.8, DUN_MOROGH },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						41121,	-- Frostmane Seer
+						1117,	-- Rockjaw Bonesnapper
+					},
+					["coords"] = {
+						{ 49.0, 35.4, DUN_MOROGH },
+						{ 48.6, 42.6, DUN_MOROGH },
+						{ 50.6, 39.2, DUN_MOROGH },
+						{ 47.2, 39.4, DUN_MOROGH },
+						{ 77.7, 55.0, DUN_MOROGH },
+						{ 79.2, 48.4, DUN_MOROGH },
+					},
+					-- #endif
 				}),
 				i(2112, {	-- Lumberjack Jerkin
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1689,	-- Scarred Crag Boar
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 88.6, 51.4, DUN_MOROGH },
+						{ 81.6, 49.0, DUN_MOROGH },
+					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
+					["coord"] = { 26.0, 41.8, DUN_MOROGH },
+					["classes"] = { PRIEST },
+					["cr"] = 1211,	-- Leper Gnome
+					["groups"] = {
+						recipe(425216),	-- Engrave Chest - Void Plague
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 78.6, 62.0, DUN_MOROGH },
+					["classes"] = { PRIEST },
+					["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
+					["groups"] = {
+						recipe(402854),	-- Engrave Pants - Shared Pain
+					},
+				})),
+				-- #endif
 				i(2898, {	-- Mountaineer Chestpiece
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1196,	-- Ice Claw Bear
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 30.8, 40.4, DUN_MOROGH },
+						{ 37.2, 44.8, DUN_MOROGH },
+						{ 67.0, 50.2, DUN_MOROGH },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 71.2, 52.8, DUN_MOROGH },
+						{ 67.6, 59.0, DUN_MOROGH },
+						{ 67.6, 59.1, DUN_MOROGH },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208139, {	-- Ominous Tome
+					["coords"] = {
+						{ 23.2, 53.6, DUN_MOROGH },
+						{ 42.4, 35.8, DUN_MOROGH },
+						{ 42.0, 44.6, DUN_MOROGH },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1124,	-- Frostmane Shadowcaster
+						1397,	-- Frostmane Seer
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208158, {	-- Pristine Trogg Heart
+					["coord"] = { 70.6, 59.2, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1116,	-- Rockjaw Ambusher
+						1117,	-- Rockjaw Bonesnapper
+						1115,	-- Rockjaw Skullthumper
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
+					["coords"] = {
+						{ 23.2, 53.6, DUN_MOROGH },
+						{ 42.4, 35.8, DUN_MOROGH },
+						{ 42.0, 44.6, DUN_MOROGH },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						1124,	-- Frostmane Shadowcaster
+						1397,	-- Frostmane Seer
+					},
+					["groups"] = {
+						recipe(402852),	-- Engrave Pants - Homunculi
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208180, {	-- Rabbit Musk
+					["coords"] = {
+						{ 70.8, 56.0, DUN_MOROGH },
+						{ 68.8, 58.2, DUN_MOROGH },
+						{ 80.4, 57.2, DUN_MOROGH },
+					},
+					["classes"] = { HUNTER },
+					["crs"] = {
+						1115,	-- Rockjaw Skullthumper
+						1117,	-- Rockjaw Bonesnapper
+						1118,	-- Rockjaw Backbreaker
+						1116,	-- Rockjaw Ambusher
+					},
+				})),
+				-- #endif
+				-- #if BEFORE 10.1.7
 				i(2065, {	-- Rockjaw Blade
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1116,	-- Rockjaw Ambusher
+					["coords"] = {
+						{ 72.6, 54.0, DUN_MOROGH },
+						{ 77.6, 59.6, DUN_MOROGH },
+					},
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208159, {	-- Severed Troll Head
+					["coord"] = { 26.6, 50.6, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1123,	-- Frostmane Headhunter
+						1397,	-- Frostmane Seer
+						1124,	-- Frostmane Shadowcaster
+						1121,	-- Frostmane Snowstrider
+						1120,	-- Frostmane Troll
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Severed Wendigo Paw
+					["coord"] = { 42.6, 55.0, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1135,	-- Wendigo
+						1134,	-- Young Wendigo
+					},
+				})),
+				-- #endif
 				i(2066, {	-- Skull Hatchet
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 78.2, 52.2, DUN_MOROGH },
+						{ 76.6, 58.0, DUN_MOROGH },
+					},
 					["cr"] = 1115,	-- Rockjaw Skullthumper
 				}),
 				i(2114, {	-- Snowy Robe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1133,	-- Starving Winter Wolf
+					["coords"] = {
+						{ 36.0, 38.8, DUN_MOROGH },
+						{ 33.0, 45.0, DUN_MOROGH },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 42290,	-- Winter Wolf
+					["coords"] = {
+						{ 68.6, 30.0, NEW_TINKERTOWN },
+						{ 67.8, 45.6, NEW_TINKERTOWN },
+						{ 53.8, 57.2, NEW_TINKERTOWN },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
+					["coords"] = {
+						{ 23.2, 53.6, DUN_MOROGH },
+						{ 42.4, 35.8, DUN_MOROGH },
+						{ 42.0, 44.6, DUN_MOROGH },
+					},
+					["classes"] = { MAGE },
+					["crs"] = {
+						1124,	-- Frostmane Shadowcaster
+						1397,	-- Frostmane Seer
+					},
+				})),
+				-- #endif
 				i(2064, {	-- Trogg Club
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 80.0, 57.6, DUN_MOROGH },
+						{ 69.4, 58.8, DUN_MOROGH },
+					},
+					-- #if BEFORE 4.0.3
 					["cr"] = 1118,	-- Rockjaw Backbreaker
+					-- #elseif AFTER 10.1.7
+					["cr"] = 1115,	-- Rockjaw Skullthumper
+					-- #endif
 				}),
 				i(5767, {	-- Violet Robes
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 49.8, 37.2, DUN_MOROGH },
+						{ 46.6, 40.6, DUN_MOROGH },
+						{ 49.0, 42.6, DUN_MOROGH },
+					},
+					-- #if BEFORE 4.0.3
 					["cr"] = 1397,	-- Frostmane Seer
+					-- #elseif AFTER 10.1.7
+					["cr"] = 41121,	-- Frostmane Seer
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Wendigo Blood
+					["coord"] = { 42.6, 55.0, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1135,	-- Wendigo
+						1134,	-- Young Wendigo
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(204907, {	-- Wolf Jawbone
+					["coords"] = {
+						{ 27.6, 77.0, DUN_MOROGH },
+						{ 34.8, 43.6, DUN_MOROGH },
+						{ 50.0, 49.4, DUN_MOROGH },
+						{ 45.6, 44.0, DUN_MOROGH },
+						{ 44.4, 47.6, DUN_MOROGH },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						704,	-- Ragged Timber Wolf
+						705,	-- Ragged Young Wolf
+						1131,	-- Winter Wolf
+						1133,	-- Starving Winter Wolf
+						1138,	-- Snow Tracker Wolf
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),

@@ -328,9 +328,6 @@ root(ROOTS.NeverImplemented, {
 					n(WAIST, {
 						i(49534),	-- Goblin Primitive's Belt
 					}),
-					n(FEET, {
-						i(57254),	-- Runner's Boots
-					}),
 				}),
 				filter(MAIL, {
 					n(WRIST, {
@@ -362,7 +359,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				filter(DAGGERS, {
 					i(49605),	-- Battlescarred Dagger
-					i(49395),	-- Rigging Slicer
 				}),
 				filter(FIST_WEAPONS, {
 					i(56090),	-- Monster, Controller
@@ -510,7 +506,6 @@ root(ROOTS.NeverImplemented, {
 					}),
 					n(HANDS, {
 						i(131854),	-- Rockbitten Gloves
-						i(131626),	-- Shrouded Gauntlets
 						i(131925),	-- Wanderer's Grips
 					}),
 					n(FEET, {

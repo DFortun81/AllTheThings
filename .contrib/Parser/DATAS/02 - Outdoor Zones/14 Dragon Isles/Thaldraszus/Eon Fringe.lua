@@ -6,6 +6,14 @@ EON_FRINGE = createHeader({
 	icon = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
 	text = {
 		en = "Eon's Fringe",
+		de = "Grenze des Äons",
+		es = "Margen del Eón",
+        fr = "marges des Éons",
+		it = "Confine degli Eoni",
+		pt = "Orla do Eon",
+        ru = "Грань Эпохи",
+		ko = "영겁의 끝자락",
+        cn = "纪元边界",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
@@ -45,17 +53,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205679 },	-- Ironus Coldsteel
 					["coord"] = { 52.5, 80.4, THALDRASZUS },
 					["g"] = {
-						i(208469),	-- At-a-Stall Crystal
-						i(208466),	-- Celestial Carrot
-						i(208463),	-- Helm of Somnation
-						i(208053),	-- Ironus's Prized Possessions
-						i(208468),	-- L4WG1V3R Mechakey
-						i(208467),	-- Larval Quintessence
-						i(208461),	-- Some Book of Medivh
-						i(208465),	-- The Cheers of Elune
-						i(208460),	-- The Coffee Stained Skull of Dul'gan
-						i(208464),	-- The Firestone Containment Jar
-						i(208462),	-- Vial of the Funswell
+						i(208469),	-- At-a-Stall Crystal (QI!)
+						i(208466),	-- Celestial Carrot (QI!)
+						i(208463),	-- Helm of Somnation (QI!)
+						i(208053),	-- Ironus's Prized Possessions (QI!)
+						i(208468),	-- L4WG1V3R Mechakey (QI!)
+						i(208467),	-- Larval Quintessence (QI!)
+						i(208461),	-- Some Book of Medivh (QI!)
+						i(208465),	-- The Cheers of Elune (QI!)
+						i(208460),	-- The Coffee Stained Skull of Dul'gan (QI!)
+						i(208464),	-- The Firestone Containment Jar (QI!)
+						i(208462),	-- Vial of the Funswell (QI!)
 					}
 				}),
 				q(76355, {	-- If a Hammer Can Break a Lock...
@@ -72,7 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 52.2, 80.6, THALDRASZUS },
 					["g"] = {
 						i(206763),	-- Kabluey (PET!)
-						i(208482),	-- The Heart of the Timeforge
+						i(208482),	-- The Heart of the Timeforge (QI!)
 					}
 				}),
 				q(76356, {	-- Sword Stealing Searers
@@ -80,7 +88,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 208825 },	-- Ironus Coldsteel
 					["coord"] = { 52.2, 80.6, THALDRASZUS },
 					["g"] = {
-						i(208100),	-- Seashellamayne the Shattered
+						i(208100),	-- Seashellamayne the Shattered (QI!)
 					}
 				}),
 
@@ -90,8 +98,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 52.3, 81.8, THALDRASZUS },
 					["g"] = {
-						i(206524),	-- Eonized Latte
-						i(206523),	-- Five-Eon Energy
+						i(206520),	-- Beverage for Pedgi (QI!)
+						i(206524),	-- Eonized Latte (QI!)
+						i(206523),	-- Five-Eon Energy (QI!)
 						i(206521),	-- Single Black Coffee
 					},
 				}),
@@ -100,8 +109,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 52.3, 81.8, THALDRASZUS },
 					["g"] = {
-						i(208236),	-- Melly's Metronographer
-						i(208235),	-- Pedgi's Spare Sunglasses
+						i(208236),	-- Melly's Metronographer (QI!)
+						i(208235),	-- Pedgi's Spare Sunglasses (QI!)
 					},
 				}),
 				q(75966, {	-- Compose Yourself
@@ -114,7 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 204987 },	-- Pedgi
 					["coord"] = { 53.8, 87.7, THALDRASZUS },
 					["g"] = {
-						i(204263),	-- Time Grime
+						i(204263),	-- Time Grime (QI!)
 					},
 				}),
 				q(74476, {	-- Slime Dies When You're Having Fun
@@ -130,7 +139,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 53.7, 87.7, THALDRASZUS },
 					["g"] = {
-						i(208401),	-- Melly's Metronographer++
+						i(208401),	-- Melly's Metronographer++ (QI!)
 					},
 				}),
 				q(75986, {	-- Feats Per Minute
@@ -139,7 +148,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 53.7, 87.7, THALDRASZUS },
 					["g"] = {
 						i(206997),	-- Gilded Sunglasses (COSMETIC!)
-						i(208401),	-- Melly's Metronographer++
+						i(208401),	-- Melly's Metronographer++ (QI!)
 					},
 				}),
 			}),
@@ -149,12 +158,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
-						i(206394),	-- Red Dragon Egg
+						i(206394),	-- Red Dragon Egg (QI!)
 					},
 				}),
 				q(76266, {	-- A Multitude of Tasks
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
+					["g"] = {
+						i(206447),	-- Task List for Adventurers (QI!)
+					},
 				}),
 				q(76251, {	-- Fowl Beasts
 					["provider"] = { "n", 206072 },	-- Nathanox Matris
@@ -164,7 +176,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
 					["g"] = {
-						i(204989),	-- Eric's Camera
+						i(204989),	-- Eric's Camera (QI!)
+					},
+				}),
+				q(75988, {	-- Lucky Hearthsone Card
+					["provider"] = { "n", 205604 },	-- Anduin Wrynn
+					["coord"] = { 52.1, 81.5, THALDRASZUS },
+					["g"] = {
+						i(206022),	-- Anduin's Lucky Hearthstone Card (QI!)
 					},
 				}),
 				q(76246, {	-- Manastorm Mystique
@@ -175,7 +194,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205793 },	-- Vol'jin
 					["coord"] = { 52.3, 81.6, THALDRASZUS },
 					["g"] = {
-						i(206171),	-- Vol'jin's Mojo
+						i(206171),	-- Vol'jin's Mojo (QI!)
 					},
 				}),
 				q(76244, {	-- Prince in Peril
@@ -190,21 +209,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
-						i(206695),	-- Pale Duskblossom
+						i(206695),	-- Pale Duskblossom (QI!)
 					},
 				}),
 				q(75971, {	-- Squeaky Toy of Time and Space
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
-						i(206161),	-- Time-Displaced Toy
+						i(206161),	-- Time-Displaced Toy (QI!)
 					},
 				}),
 				q(75989, {	-- The Black Prince Parade
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
 					["g"] = {
-						i(206683),	-- Wrathion's Tab
+						i(206683),	-- Wrathion's Tab (QI!)
 					},
 				}),
 				q(75657, {	-- Time-Lost Trio
@@ -223,7 +242,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
-						i(206368),	-- Wand of Mass Polymorph
+						i(206368),	-- Wand of Mass Polymorph (QI!)
 					},
 				}),
 			})),
@@ -231,6 +250,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(205865, {	-- Zal'kir the Chosen <The Maw of K'Tanth>
 					["coord"] = { 59.8, 70.6, THALDRASZUS },
 					["questID"] = 76170,
+					["isDaily"] = true,
 					["g"] = {
 						i(208168),	-- Black Blade of K'tanth
 						i(208172),	-- Bloodstained Runecrook
@@ -240,22 +260,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(201664, {	-- Temporal Investi-gator
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
 					["description"] = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
+					["cost"] = {{"i",208448,1}},	-- Infinitea
 					["coords"] = {
 						{ 52.3, 81.4, THALDRASZUS },	-- Everywhere Inn
 						{ 54.6, 85.9, THALDRASZUS },	-- Rare summon spot
 					},
 					["questID"] = 75479,
+					["isDaily"] = true,
 					["g"] = {
-						i(208449),	-- Melly's Metronographer+++
-						--loot commented out until someone confirm it
-						--i(206993),	-- Investi-gator's Pocketwatch
+						i(206993),	-- Investi-gator's Pocketwatch (TOY!) / confirmed in discord #errors report
 					},
 				}),
 			}),
 			n(VENDORS, {
-				n(207463, { -- Bartender Blob
+				n(207463, {	-- Bartender Blob
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
 					["coord"] = { 52.1, 81.4, THALDRASZUS },
+					["provider"] = {"i",208449},	-- Melly's Metronographer+++ (QI!)
 					["g"] = {
 						i(208448, {	-- Infinitea
 							["description"] = "Timer start right after you buy it"
@@ -301,6 +322,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 					},
 				}),
+				n(204990, {	-- Melly Teletone
+					["coord"] = { 52.2, 81.4, THALDRASZUS },
+					["g"] = {
+						i(208449, {	-- Melly's Metronographer+++ (QI!)
+							["description"] = "Use next to 'Bartender Bob'.",
+						}),
+					},
+				}),
 			}),
 		})),
 	}),
@@ -309,5 +338,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
 
-	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> first kill; either this or 76170 is daily lockout
+	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> kill, keep pop with 76170 on every kill
+	q(78094),	-- when toy Investi-gator's Pocketwatch (itemID 206993) was looted
 }));

@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				ach(18208),	-- The Small Disruptions
 			}),
 			n(RARES, sharedData({ ["isWeekly"] = true }, {
-				n(202270, { -- Animated Contaminant
+				n(202270, {	-- Animated Contaminant
 					["coord"] = { 45.5, 61.6, ZARALEK_CAVERN },
 					["questID"] = 75946,
 					["groups"] = {

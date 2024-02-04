@@ -1,22 +1,26 @@
-local ItemDB = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID)
 	-- This is necessary because Blizzard sometimes tells us that things are Toys when they are not Toys.
 	-- So we cannot trust them and have to do it ourselves.
-	ItemDB[itemID] = { ["type"] = "toyID" };
+	Items[itemID] = { ["type"] = "toyID" };
 end
 
--- #if ANYCLASSIC
 -----------------
---   CLASSIC   --
+-- CLASSIC WOW --
 -----------------
--- #if AFTER TBC
+-- TBC Classic --
 i(184871);	-- Dark Portal
+-- #if BEFORE MOP
 i(38233);	-- Path of Illidan
 -- #endif
--- #if AFTER WRATH
-i(40110);	-- Haunted Momento
-i(198647);	-- Fishspeaker's Lucky Lure
+
+-- Wrath Classic --
+-- #if BEFORE MOP
+i(40110);	-- Haunted Momento	-- TODO: It would be neat if Retail ATT could detect items manually in your inventory as toys you should keep
 -- #endif
+i(198647);	-- Fishspeaker's Lucky Lure
+-- #if ANYCLASSIC
+i(38506);	-- Don Carlos' Famous Hat -- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
 -- #endif
 
 -----------------
@@ -85,6 +89,7 @@ i(37710);	-- Crashin' Thrashin' Racer Controller
 -- PATCH 3.0.3 --
 -----------------
 i(36863);	-- Decahedral Dwarven Dice
+i(38578);	-- Flag of Ownership
 i(44719);	-- Frenzyheart Brew
 i(40895);	-- Gnomish X-Ray Specs
 i(43499);	-- Iron Boot Flask
@@ -1027,8 +1032,6 @@ i(187793);	-- Personal Containment Trap
 i(190457);	-- Protopological Cube
 i(190177);	-- Sphere of Enlightened Cogitation
 i(190238);	-- Xy'rath's Booby-Trapped Cache
---- NYI ---
-i(190196);	-- Enlightened Hearthstone
 
 -----------------
 -- PATCH 9.2.5 --
@@ -1045,7 +1048,6 @@ i(187958);	-- Shrouded Banner of the Opportune
 i(200142);	-- Generous Goblin Grenade
 i(199111);	-- Maestro Duck's Orchestrion
 i(199926);	-- Portable J.A.M.
-i(197961);	-- Whelps on Strings
 
 ------------------
 -- PATCH 10.0.2 --
@@ -1188,24 +1190,82 @@ i(205904);	-- Vibrant Clacking Claw
 --- NYI ---
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
-i(205463);	-- Skornak's Lava Ball
 
 ------------------
 -- PATCH 10.1.5 --
 ------------------
 i(208186);	-- Boffins
 i(140192);	-- Dalaran Hearthstone
+i(206268);	-- Ethereal Transmogrifier
 i(208096);	-- Familiar Journal
 i(110560);	-- Garrison Hearthstone
+i(207730);	-- Idol of Ohn'ahra
+i(206993);	-- Investi-gator's Pocketwatch
 i(208058);	-- Minute Glass
 i(206565);	-- Plagued Grain
 i(208057);	-- Smoldering Banner of the Aspects
 i(208415);	-- Stasis Sand
 i(207099);	-- Tiny Box of Tiny Rocks
---- NYI ---
-i(206268);	-- Ethereal Transmogrifier
-i(206993);	-- Investi-gator's Pocketwatch
+i(208092);	-- Torch of Pyrreth
+i(206696);	-- Tricked-Out Thinking Cap
+i(197961);	-- Whelps on Strings
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+i(209052);	-- Brew Barrel
+i(208433);	-- Bronze Racer's Pennant
+i(210042);	-- Chilling Celebration Banner
+i(208421);	-- Compendium of the New Moon
+i(208704);	-- Deepdwellers Earthen Hearthstone
+i(209858);	-- Dreamsurge Remnant
+i(209944);	-- Friendsurge Defenders
+i(208658);	-- Mirror of Humility
 i(206195);	-- Path of the Naaru
-i(206696);	-- Unknown
-i(207730);	-- Unknown
-i(208092);	-- Unknown
+i(208883);	-- Sandbox Storm Gryphon
+i(201931);  -- Warcraft Rumble Toy: Maiev
+i(202862);  -- Warcraft Rumble Toy: Murloc
+i(202851);  -- Warcraft Rumble Toy: Night Elf Huntress
+i(202261);  -- Warcraft Rumble Toy: Sneed
+i(202856);  -- Warcraft Rumble Toy: Stonehoof Tauren
+i(202859);  -- Warcraft Rumble Toy: Undead Ghoul
+i(202865);  -- Warcraft Rumble Toy: Whelp Egg
+--- NYI ---
+i(208880);	-- Brewhahat
+i(208229);	-- Honor of the Forsaken
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+i(210411);	-- Fast Growing Seed
+i(209035);	-- Hearthstone of the Flame
+i(210864);	-- Improvised Leafbed
+i(208825);	-- Junior Timekeeper's Racing Belt
+i(205463);	-- Molten Lava Ball
+i(210725);	-- Owl Post
+i(207092);	-- Portable Party Platter
+i(208798);	-- Recorded Memories of Tyr's Guard
+i(210497);	-- Verdant Legend's Pennant
+i(209859);	-- Festive Trans-Dimensional Bird Whistle
+i(210656);	-- Winter Veil Socks
+--- NYI ---
+i(211424);	-- Dreaming Banner of the Aspects
+i(208087);	-- Unknown
+
+------------------
+-- PATCH 10.2.5 --
+------------------
+i(210975);	-- Date Simulation Modulator
+i(212524);	-- Delicate Crimson Parasol
+i(212525);	-- Delicate Ebony Parasol
+i(212523);	-- Delicate Jade Parasol
+i(212500);	-- Delicate Silk Parasol
+i(190196);	-- Enlightened Hearthstone
+i(211864);	-- Exquisite Love Boat
+i(210974);	-- Eyes For You Only
+i(211946);	-- Hearthstone Game Table
+i(210467);	-- Magical Murkmorpher
+i(206347);	-- Mannequin Charm
+i(212337);	-- Stone of the Hearth
+i(211788);	-- Tess's Peacebloom
+i(212518);	-- Vial of Endless Draconic Scales

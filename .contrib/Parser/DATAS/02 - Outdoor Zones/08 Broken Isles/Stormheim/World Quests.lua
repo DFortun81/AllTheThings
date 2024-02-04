@@ -28,15 +28,15 @@ root(ROOTS.Zones, {
 				}),
 				q(41490, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41489, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41488, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41938),	-- Brothers of Skovald
 				q(46011),	-- Colossal Infernal (Invasion wq)
@@ -133,7 +133,7 @@ root(ROOTS.Zones, {
 				q(46016),	-- Magdrezoth (Invasion wq)
 				q(40278),	-- My Beasts's Bidding
 				q(44943, {	-- Now That's Just Clawful!
-					crit(1, {	-- Now That's Just Clawful!
+					crit(34847, {	-- Now That's Just Clawful!
 						["achievementID"] = 11427,	-- No Shellfish Endeavor
 					}),
 				}),

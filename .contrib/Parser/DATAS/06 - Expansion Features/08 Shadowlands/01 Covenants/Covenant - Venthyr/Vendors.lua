@@ -3,10 +3,7 @@
 -------------------------------------------------------------------
 local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 	["sym"] = {
-		{ "select", "tierID", SL_TIER },	-- SL Tier
-		{ "pop" },							-- pop the Tier header
 		{ "select", "headerID", LEGENDARIES },	-- Legendary header
-		{ "pop" },							-- pop header
 		{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
 		{ "exclude", "itemID",
 			190584,	-- Memory of Unity (DK)
@@ -72,7 +69,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					i(183716, {	-- Venthyr Sinstone (TOY!)
 						["cost"] = { { "c", ANIMA, 750 } },
 					}),
-					i(182204, {	-- Illusion: Sinwrath
+					i(182204, {	-- Illusion: Sinwrath (ILLUSION!)
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					i(182433, {	-- Barbedged Dredblade
@@ -1393,62 +1390,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(62024),	-- unlocking Fearstalker's Ebony Battlegear set (TransmogSetID 2071, Fearstalker's Ebony items)
 	q(62027),	-- unlocking Fearstalker's Crimson Battlegear set (TransmogSetID 2074, Fearstalker's Crimson items)
 	q(62016),	-- unlocking Dread Sentinel's Ebony Battleplate set (TransmogSetID 2075, Dread Sentinel's Ebony items)
-});
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		n(VENTHYR, {
-			n(ARMOR, {
-				filter(CLOTH, {
-					i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head
-					i(179467),	-- 9.0 Covenant - Revendreth - Cloth - Chest
-					i(179468),	-- 9.0 Covenant - Revendreth - Cloth - Feet
-					i(179469),	-- 9.0 Covenant - Revendreth - Cloth - Hands
-					i(179470),	-- 9.0 Covenant - Revendreth - Cloth - Legs
-					i(179471),	-- 9.0 Covenant - Revendreth - Cloth - Shoulders
-					i(179472),	-- 9.0 Covenant - Revendreth - Cloth - Waist
-					i(179473),	-- 9.0 Covenant - Revendreth - Cloth - Wrists
-				}),
-				filter(LEATHER, {
-					i(179457),	-- 9.0 Covenant - Revendreth - Leather - Head
-					i(179458),	-- 9.0 Covenant - Revendreth - Leather - Chest
-					i(179459),	-- 9.0 Covenant - Revendreth - Leather - Feet
-					i(179460),	-- 9.0 Covenant - Revendreth - Leather - Hands
-					i(179461),	-- 9.0 Covenant - Revendreth - Leather - Legs
-					i(179462),	-- 9.0 Covenant - Revendreth - Leather - Shoulders
-					i(179463),	-- 9.0 Covenant - Revendreth - Leather - Waist
-					i(179464),	-- 9.0 Covenant - Revendreth - Leather - Wrists
-				}),
-				filter(MAIL, {
-					i(179475),	-- 9.0 Covenant - Revendreth - Mail Head
-					i(179476),	-- 9.0 Covenant - Revendreth - Mail Chest
-					i(179477),	-- 9.0 Covenant - Revendreth - Mail Feet
-					i(179478),	-- 9.0 Covenant - Revendreth - Mail Hands
-					i(179479),	-- 9.0 Covenant - Revendreth - Mail Legs
-					i(179480),	-- 9.0 Covenant - Revendreth - Mail Shoulders
-					i(179481),	-- 9.0 Covenant - Revendreth - Mail Waist
-					i(179482),	-- 9.0 Covenant - Revendreth - Mail Wrists
-				}),
-				filter(PLATE, {
-					i(174198),	-- 9.0 Covenant - Revendreth - Plate Head
-					i(174199),	-- 9.0 Covenant - Revendreth - Plate Chest
-					i(174200),	-- 9.0 Covenant - Revendreth - Plate Feet
-					i(174201),	-- 9.0 Covenant - Revendreth - Plate Hands
-					i(174202),	-- 9.0 Covenant - Revendreth - Plate Legs
-					i(174203),	-- 9.0 Covenant - Revendreth - Plate Shoulders
-					i(174204),	-- 9.0 Covenant - Revendreth - Plate Waist
-					i(174205),	-- 9.0 Covenant - Revendreth - Plate Wrists
-				}),
-				n(BACK, {
-					i(174206),	-- 9.0 Covenant - Revendreth - Plate Cloak
-					i(179465),	-- 9.0 Covenant - Revendreth - Leather - Cloak
-					i(179474),	-- 9.0 Covenant - Revendreth - Cloth - Cloak
-					i(179483),	-- 9.0 Covenant - Revendreth - Mail Cloak
-					i(181812),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 1 - Red
-					i(181813),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 2 - Black
-					i(181814),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 3 - Red
-				}),
-			}),
-		}),
-	}),
 });

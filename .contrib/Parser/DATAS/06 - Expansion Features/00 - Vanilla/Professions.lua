@@ -5,15 +5,15 @@
 root(ROOTS.ExpansionFeatures, tier(CLASSIC_TIER, {
 	n(PROFESSIONS, {
 		prof(FIRST_AID, {
-			ach(131, { -- Journeyman Medic (150)
+			ach(131, {	-- Journeyman Medic (150)
 				["timeline"] = { "added 1.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),
-			ach(132, { -- Expert Medic (225)
+			ach(132, {	-- Expert Medic (225)
 				["timeline"] = { "added 1.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),
-			ach(133, { -- Artisan Medic (300)
+			ach(133, {	-- Artisan Medic (300)
 				["timeline"] = { "added 1.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),

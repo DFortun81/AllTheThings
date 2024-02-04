@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(262, {	-- The Underbog
 		["lore"] = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
+		["zone-text-areaID"] = 3716,	-- The Underbog
 		["sins"] = {
 			"Coilfang: Underbog",
 			"Coilfang: The Underbog",
@@ -78,7 +79,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(63, 63, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Underspore Frond
-							["provider"] = { "i", 24247 },	-- Underspore Frond
+							["providers"] = {
+								{ "i",  24247 },	-- Underspore Frond
+								{ "o", 182054 },	-- The Underspore
+							},
 							["coord"] = { 71.5, 86.9, COILFANG_RESERVOIR_UNDERBOG },
 						}),
 						i(28111),	-- Everlasting Underspore Frond
@@ -103,6 +107,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
+							["cr"] = 17882,	-- The Black Stalker
 						}),
 						i(28109),	-- Essence-Infused Mushroom
 						i(28108),	-- Power-Infused Mushroom
@@ -116,6 +121,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
+							["cr"] = 17882,	-- The Black Stalker
 						}),
 						i(28109),	-- Essence-Infused Mushroom
 						i(28108),	-- Power-Infused Mushroom
@@ -123,7 +129,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(24246),	-- Sanguine Hibiscus
+				i(24246, {	-- Sanguine Hibiscus
+					["provider"] = { "o", 183385 },	-- Sanguine Hibiscus
+				}),
 			}),
 			d(NORMAL_DUNGEON, {
 				e(576, {	-- Hungarfen
@@ -240,7 +248,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27896),	-- Alembic of Infernal Power
 						i(27770),	-- Argussian Compass
 						-- #endif
-						i(24248),	-- Brain of the Black Stalker
 					},
 				}),
 			}),
@@ -372,7 +379,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27896),	-- Alembic of Infernal Power
 							i(27770),	-- Argussian Compass
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
-							i(24248),	-- Brain of the Black Stalker
 							i(33826),	-- Black Stalker Egg
 						},
 					}),

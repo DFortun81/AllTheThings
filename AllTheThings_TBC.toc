@@ -1,0 +1,130 @@
+## Title: AllTheThings |cfd9b9b9b(TBC)|r
+## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
+## Name: AllTheThings
+## Notes: Addon for Tracking Collections & Account Completion
+## Author: Crieve-Sargeras
+## Version: @project-version@
+## Interface: 20504
+## X-Interface: 20504
+## X-Wago-ID: yQKyY5K7
+## X-Curse-Project-ID: 267285
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
+## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
+## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
+## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
+## AddonCompartmentFuncOnLeave: AllTheThings_MinimapButtonOnLeave
+lib\LibStub\LibStub.lua
+lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+db\RaceDB.lua
+src\base.lua
+lib\Callback.lua
+lib\Colors.lua
+# lib\Runner.lua
+lib\Audio.lua
+lib\Refresh.lua
+lib\Sort.lua
+lib\Table.lua
+
+# Load localization modules
+# locales\en.lua
+# locales\es.lua
+# locales\de.lua
+# locales\fr.lua
+# locales\it.lua
+# locales\ko.lua
+# locales\pt.lua
+# locales\ru.lua
+# locales\cn.lua
+classic\locales.lua
+
+# Search Cache
+src\Cache.lua
+
+# Helper Modules
+src\Modules\RetrievingData.lua
+src\Modules\FactionData.lua
+src\Modules\Color.lua
+# src\Modules\Costs.lua
+src\Modules\Events.lua
+src\Modules\Filter.lua
+src\Modules\Social.lua
+src\Modules\Tooltip.lua
+# src\Modules\Upgrade.lua
+
+# Expansion specific localization files
+db\TBC\ExplorationDB.lua
+db\TBC\LocalizationDB.lua
+# db\TBC\en_auto.lua
+# db\TBC\ReagentsDB.lua
+db\Presets.lu
+
+# Load object class templates
+src\Classes\base.lua
+src\Classes\CharacterClass.lua
+src\Classes\Quests.lua
+src\Classes\Objects.lua
+src\Classes\Category.lua
+src\Classes\Deaths.lua
+src\Classes\Dynamic Categories.lua
+src\Classes\Filter Types.lua
+src\Classes\Illusions.lua
+# src\Classes\Miscellaneous.lua
+src\Classes\PVP Ranks.lua
+src\Classes\Title.lua
+# src\Classes\CharacterUnlock.lua
+
+# Load primary addon source files
+# Settings.lua
+# AllTheThings.lua
+classic\Settings.lua
+classic\ATT-Classic.lua
+src\UI\Game Tooltip.lua
+src\UI\Minimap Button.lua
+
+# Window Logic Overhaul
+src\UI\Shared Window Logic.lua
+src\UI\Classic Window Logic.lua
+
+# Load expansion specific category database.
+db\TBC\Categories.lua
+
+# Window Definitions
+src\UI\Windows\Prime.lua
+src\UI\Windows\Achievements.lua
+src\UI\Windows\Attunements.lua
+src\UI\Windows\Auctions.lua
+src\UI\Windows\Battle Pets.lua
+src\UI\Windows\Bounty.lua
+src\UI\Windows\Breadcrumbs.lua
+src\UI\Windows\Dailies.lua
+src\UI\Windows\Exploration.lua
+src\UI\Windows\Factions.lua
+src\UI\Windows\Find.lua
+src\UI\Windows\Flight Paths.lua
+# src\UI\Windows\Heirlooms.lua
+src\UI\Windows\Hidden Achievement Triggers.lua
+src\UI\Windows\Hidden Quest Triggers.lua
+src\UI\Windows\Illusions.lua
+src\UI\Windows\Locked.lua
+src\UI\Windows\Maps.lua
+src\UI\Windows\Mini List.lua
+src\UI\Windows\Missing Quests.lua
+src\UI\Windows\Mounts.lua
+src\UI\Windows\Never Implemented.lua
+src\UI\Windows\Objects.lua
+src\UI\Windows\Quests.lua
+src\UI\Windows\Raid Assistant.lua
+src\UI\Windows\Random.lua
+src\UI\Windows\Removed From Game.lua
+src\UI\Windows\Removed With Patch Drops.lua
+src\UI\Windows\Removed With Patch Loot.lua
+src\UI\Windows\Soft Reserves.lua
+src\UI\Windows\Sync.lua
+src\UI\Windows\Titles.lua
+src\UI\Windows\Toys.lua
+src\UI\Windows\Tradeskills.lua
+src\UI\Windows\Unsorted.lua
+
+# Finally, prepare the Data Cache
+src\Root.lua

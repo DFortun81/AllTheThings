@@ -1,11 +1,21 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
 root(ROOTS.NeverImplemented, {
+	-- TODO: Sort this file
 	n(WEAPONS, {
 		filter(BOWS, {
+			tier(CLASSIC_TIER, {
+				i(19490),	-- 2800 Test Bow 63 Blue
+				i(20313),	-- 63 Green Rogue Bow
+				i(20278),	-- 90 Epic Rogue Bow
+				i(20299),	-- 90 Green Rogue Bow
+				i(5748),	-- Centaur Longbow
+				i(20368),	-- Bland Bow of Steadiness
+				i(19868),	-- Mandokir's Sting DEPRECATED
+				i(19966),	-- Thrice Strung Longbow DEPRECATED
+				i(20488),	-- Rhok'delar, Longbow of the Ancient Keepers DEP
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189689),	-- 10.0 Dungeon Template - Bows - Ranged
@@ -30,7 +40,8 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(DAGGERS, {
 			tier(CLASSIC_TIER, {
-				i(3222),	-- Wicked Dagger
+				i(24071),	-- Bland Dagger
+				i(17142),	-- Shard of the Defiler
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -48,6 +59,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
+		-- #if AFTER 10.0.1
 		filter(PROFESSION_EQUIPMENT, {
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -55,6 +67,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
+		-- #endif
 		filter(FIST_WEAPONS, {
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -78,6 +91,9 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
+			tier(CLASSIC_TIER, {
+				i(19989),	-- Tome of Devouring Shadows
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189672),	-- 10.0 Dungeon Template - Generic - Holdable
@@ -128,14 +144,7 @@ root(ROOTS.NeverImplemented, {
 		filter(ONE_HANDED_MACES, {
 			tier(CLASSIC_TIER, {
 				i(17733),	-- Fist of Stone
-			}),
-			tier(BFA_TIER, {
-				tier(BFA_TIER, 0.1, {
-					i(161118),	-- Marrow Shatter
-				}),
-				tier(BFA_TIER, 1.0, {
-					i(166405),	-- Blindside
-				}),
+				i(16792),	-- Giant Club
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -157,10 +166,13 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(ONE_HANDED_SWORDS, {
-			tier(BFA_TIER, {
-				tier(BFA_TIER, 1.0, {
-					i(166364),	-- Song of the Fallen
-				}),
+			tier(CLASSIC_TIER, {
+				i(9380),	-- Jang'thraze the Protector
+				i(22805),	-- Naxxramas Sword 1H 1 PH
+				i(17802),	-- Thunderfury, Blessed Blade of the Windseeker DEPRECATED
+				i(18582),	-- The Twin Blades of Azzinoth
+				i(18583),	-- Warglaive of Azzinoth (Right)
+				i(18584),	-- Warglaive of Azzinoth (Left)
 			}),
 			tier(SL_TIER, {
 				tier(SL_TIER, 1.5, {
@@ -203,6 +215,8 @@ root(ROOTS.NeverImplemented, {
 		filter(SHIELDS, {
 			tier(CLASSIC_TIER, {
 				i(7748),	-- Forcestone Buckler
+				i(20502),	-- Ironbark Shield [NPC Shield]
+				i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -215,6 +229,10 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(STAVES, {
+			tier(CLASSIC_TIER, {
+				i(3738),	-- Brewing Rod
+				i(20522),	-- Feral Staff
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189674),	-- 10.0 Dungeon Template - Staff - Agi - 2 Hand
@@ -229,6 +247,11 @@ root(ROOTS.NeverImplemented, {
 					i(201231),	-- Bident of Hallucinations
 					i(201237),	-- Dreamer's Creator
 				}),
+			}),
+		}),
+		filter(THROWN, {
+			tier(CLASSIC_TIER, {
+				i(21135),	-- Broken Assassin's Throwing Axe
 			}),
 		}),
 		filter(TWO_HANDED_AXES, {
@@ -256,14 +279,16 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
+			tier(CLASSIC_TIER, {
+				i(13262),	-- Ashbringer
+				i(913),		-- Huge Ogre Sword
+				i(12469),	-- Mutilator
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189355),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
 					i(189358),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
 				}),
-			}),
-			tier(CLASSIC_TIER, {
-				i(13262),	-- Ashbringer
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -287,6 +312,9 @@ root(ROOTS.NeverImplemented, {
 					i(201246),	-- Coiled Green Draketail
 					i(201775),	-- Crimson Aspirant's Wand
 				}),
+				tier(DF_TIER, 2.0, {
+					i(210317),	-- Verdant Aspirant's Wand
+				}),
 			}),
 		}),
 		filter(WARGLAIVES, {
@@ -302,6 +330,42 @@ root(ROOTS.NeverImplemented, {
 		}),
 	}),
 	n(WEAPONS, {
+		-- 9.0.1
+		i(179501),	-- Ardenweald Dagger
+		i(179606),	-- Ardenweald Quest Shield
+		i(172461),	-- Eternal Twilight Wand
+		i(178028),	-- Gormwrought Shield
+		i(178026),	-- Gormwrought Staff
+		i(175991),	-- Grove Defender's Focus
+		i(180492),	-- Nethrezim Spire
+		i(178401),	-- UNUSED - Rated - Weapon - 1H Mace Caster
+		i(176011),	-- UNUSED - Rated - Weapon - 1H Mace Caster
+		i(176001),	-- UNUSED - Rated - Weapon - 1H Mace Melee
+		i(178391),	-- UNUSED - Rated - Weapon - 1H Mace Melee
+		i(176005),	-- UNUSED - Rated - Weapon - 2H Axe Melee
+		i(178395),	-- UNUSED - Rated - Weapon - 2H Axe Melee
+		i(176006),	-- UNUSED - Rated - Weapon - 2H Sword Melee
+		i(178396),	-- UNUSED - Rated - Weapon - 2H Sword Melee
+		i(178400),	-- UNUSED - Rated - Weapon - Dagger Caster
+		i(176010),	-- UNUSED - Rated - Weapon - Dagger Caster
+		i(178666),	-- UNUSED - Unrated - Weapon - 1H Mace Melee
+		i(178667),	-- UNUSED - Unrated - Weapon - 2H Mace STR
+		i(178669),	-- UNUSED - Unrated - Weapon - Staff AGI
+		i(173044),	-- Wreathed Fishing Pole
+		i(178449),	-- zzzRated - Weapon - 1H Axe Melee
+		i(178462),	-- zzzRated - Weapon - 1H Mace Caster
+		i(178452),	-- zzzRated - Weapon - 1H Mace Melee
+		i(178455),	-- zzzRated - Weapon - 1H Sword Melee
+		i(178456),	-- zzzRated - Weapon - 2H Axe Melee
+		i(178457),	-- zzzRated - Weapon - 2H Sword Melee
+		i(178450),	-- zzzRated - Weapon - Bow
+		i(178451),	-- zzzRated - Weapon - Dagger Agi
+		i(178461),	-- zzzRated - Weapon - Dagger Caster
+		i(178459),	-- zzzRated - Weapon - Offhand
+		i(178453),	-- zzzRated - Weapon - Polearm Agi
+		i(178458),	-- zzzRated - Weapon - Shield
+		i(178454),	-- zzzRated - Weapon - Staff Caster
+		i(178460),	-- zzzRated - Weapon - Warglaive
 		-- 9.2.0
 		i(190392),	-- Pocopoc Shield
 		i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
@@ -328,7 +392,6 @@ root(ROOTS.NeverImplemented, {
 		i(25497),	-- Broken Balanced Stone Dirk
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
 		i(25641),	-- Broken Fitz's Throwing Axe
-		i(21135),	-- Broken Assassin's Throwing Axe
 		i(178480),	-- Sinful Aspirant's Keris
 		i(178665),	-- Sinful Aspirant's Fang
 		i(183434),	-- Sinful Aspirant's Spellmace
@@ -338,8 +401,6 @@ root(ROOTS.NeverImplemented, {
 		i(178673),	-- Sinful Aspirant's Weapon - Offhand
 		filter(BOWS, {
 			-- Load In Game
-			i(5748),	-- Centaur Longbow
-			i(115294),	-- Spectral Longbow
 			i(182563),	-- NPE Weapon Bow
 			i(182563, {	-- NPE Weapon Bow
 				["bonusID"] = 6895,
@@ -358,12 +419,8 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(DAGGERS, {
 			-- Load In Game
-			i(2664),	-- Spinner Fang
-			i(17142),	-- Shard of the Defiler
 			i(62329),	-- Dire Slasher (never added)
-			i(115295),	-- Spectral Dagger
 			i(115446),	-- Brianium Dagger
-			i(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade (added i BFA)
 			i(182564),	-- NPE Weapon Dagger AGI
 			i(182573),	-- NPE Weapon Dagger AGI 2
 			-- ItemID/Retrieving
@@ -412,8 +469,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			-- ItemID/Retrieving
-			i(18316),	-- Obsidian Bauble
-			i(19989),	-- Tome of Devouring Shadows
 			i(108810),	-- 7.0 PH Offhand - Offhand Int
 			i(109273),	-- QA Combat Test Caster Offhand 1
 			i(109301),	-- QA Combat Test Caster Offhand 2
@@ -424,13 +479,10 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_AXES, {
 			-- Load In Game
-			i(5255),	-- Quilboar Tomahawk
 			i(68050),	-- Shatterscale Mightfish
 			i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 			i(115292),	-- Spectral Axe
 			i(117010),	-- Forester's Axe	(Never added in Game)
-			i(134586),	-- Vanguard Hatchet
-			i(134755),	-- Covert Hatchet
 			i(182562),	-- NPE Weapon 1H Axe AGI
 			i(182577),	-- NPE Weapon 1H Axe AGI 2
 			-- ItemID/Retrieving
@@ -448,11 +500,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_MACES, {
 			-- Load In Game
-			i(107390),	-- Obliterator Firing Lever
-			i(115296),	-- Spectral Warmace
-			i(115299),	-- Spectral Scepter
-			i(163930),	-- Kovork's Rattle
-			i(174228),	-- Gavel of the Oasis
 			i(182578),	-- NPE Weapon 1H Mace AGI
 			-- ItemID/Retrieving
 			i(38468),	-- Kalu'ak Peacebringer
@@ -471,10 +518,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_SWORDS, {
 			-- Load In Game
-			i(18582),	-- The Twin Blades of Azzinoth
-			i(18583),	-- Warglaive of Azzinoth (Right)
-			i(18584),	-- Warglaive of Azzinoth (Left)
-			i(134613),	-- Scorching Quickblade
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(162447),	-- Marrow Render
 			i(182567),	-- NPE Weapon 1H Sword AGI
@@ -500,8 +543,6 @@ root(ROOTS.NeverImplemented, {
 			i(171401),	-- Phaeweald Rapier
 		}),
 		filter(POLEARMS, {
-			-- Load In Game
-			i(115297),	-- Spectral Polearm
 			-- ItemID/Retrieving
 			i(54965),	-- Stormwind Spear
 			i(108797),	-- 7.0 PH Weapon - 2H Polearm Agi
@@ -562,12 +603,10 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(SHIELDS, {
 			-- Load In Game
-			i(18303),	-- Nimble Buckler
-			i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
 			i(182570),	-- NPE Weapon Shield
 			i(182576),	-- NPE Weapon Shield 2
 			-- ItemID/Retrieving
-			i(20502),	-- Ironbark Shield [NPC Shield]
+
 			i(34415),	-- Crystaline Shard Shield
 			i(60220),	-- Theodore's Heirloom Buckler
 			i(108808),	-- 7.0 PH Shield - Shield Str
@@ -583,13 +622,11 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(STAVES, {
 			-- Load In Game
-			i(115298),	-- Spectral Spire
 			i(182566),	-- NPE Weapon Staff AGI
 			i(182572),	-- NPE Weapon Staff INT
 			i(180491),	-- Wingdancer's Spire
 			-- ItemID/Retrieving
-			i(3738),	-- Brewing Rod
-			i(20522),	-- Feral Staff
+
 			i(38245),	-- Crystalline Providence
 			i(38248),	-- Torch of the Fallen Souls
 			i(49458),	-- Insight of the Water
@@ -619,7 +656,6 @@ root(ROOTS.NeverImplemented, {
 			i(69916),	-- Trollbane (Daakara)
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			i(80984),	-- Expropriator's Greataxe
-			i(115293),	-- Spectral Greataxe
 			i(182568),	-- NPE Weapon 2H Axe STR
 			-- ItemID/Retrieving
 			i(23420),	-- Engraved Axe
@@ -652,8 +688,8 @@ root(ROOTS.NeverImplemented, {
 			i(81703),	-- Glorenzelg, High-Blade of the Silver Hand, added in 5.0.1 ??
 			i(182337),	-- Unholy Weapon
 			-- ItemID/Retrieving
-			i(913),		-- Huge Ogre Sword
-			i(12469),	-- Mutilator
+
+
 			i(23432),	-- Engraved Greatsword
 			i(49457),	-- Fury of the Flame
 			i(108806),	-- 7.0 PH Weapon - 2H Sword Str
@@ -687,9 +723,301 @@ root(ROOTS.NeverImplemented, {
 		}),
 		tier(SL_TIER, {
 			tier(SL_TIER, 2.0, {
-				i(189996),	-- Elegantly Balanced Axe
 				i(188133),	-- Owen Test
 			}),
+		}),
+	}),
+	n(WEAPONS, {
+		-- 10.1.0
+		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+			i(204638),	-- Sunder Wing
+		})),
+
+		-- 10.1.5
+		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
+			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
+			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
+			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
+			i(207984),	-- Chroniton Wand
+			i(208001),	-- Timewalker's Cudgel
+			i(206931),	-- Truesilver Champion
+		})),
+
+		-- 10.1.7
+		tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+			i(208987),	-- The Horseman's Sinister Slicer [Hallow's End]
+			i(209022),	-- The Horseman's Sinister Slicer [Hallow's End]
+		})),
+
+		-- 10.2.0
+		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
+			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
+		})),
+	}),
+	n(WEAPONS, {
+		i(77559),	-- Replica Grand Marshal's left Hand Blade
+		i(77583),	-- Replica High Warlords Left Claw
+		i(77588),	-- Replica High Warlord's Quickblade
+		i(77586),	-- Replica High Warlord's Spellblade
+		i(77570),	-- Replica High Warlord's Battle Mace
+		i(77587),	-- Replica High Warlord's Destroyer
+		i(32187),	-- Chancellor's Heavy Crossbow
+		i(32188),	-- Chancellor's Fleshslicer
+		i(32189),	-- Chancellor's Ripper
+		i(32191),	-- Chancellor's Battletome
+		i(32185),	-- Chancellor's War Staff
+		i(32178),	-- Chancellor's Shanker
+		i(32184),	-- Chancellor's Painsaw
+		i(32181),	-- Chancellor's Bonegrinder
+		i(32174),	-- Chancellor's Cleaver
+		i(32182),	-- Chancellor's Decapitator
+		i(32177),	-- Chancellor's Quickblade
+		i(32180),	-- Chancellor's Slicer
+		i(32192),	-- Chancellor's Barricade
+		i(32175),	-- Chancellor's Hacker
+		i(32190),	-- Chancellor's Spellblade
+		i(32183),	-- Chancellor's Maul
+		i(32186),	-- Chancellor's Warblade
+		i(32173),	-- Chancellor's Bonecracker
+		i(32176),	-- Chancellor's Pummeler
+		i(32179),	-- Chancellor's Shiv
+		i(23458),	-- High Warlord's Spellblade
+		i(23462),	-- High Warlord's Tome of Destruction
+		i(23463),	-- High Warlord's Tome of Mending
+		i(23457),	-- High Warlord's Destroyer
+		i(23461),	-- High Warlord's Quickblade
+		i(23459),	-- High Warlord's Battle Mace
+		i(120272),	-- High Warlord's Razor
+		i(120273),	-- High Warlord's Razor
+	}),
+	n(WEAPONS, {
+		tier(WOTLK_TIER, {
+			n(SEASON_DEADLY, {
+				-- #if NOT ANYCLASSIC
+				i(42444),	-- Savage Gladiator's War Edge (Throw Wep)
+				-- #endif
+				i(42523),	-- Savage Gladiator's Endgame
+				i(42529),	-- Savage Gladiator's Reprieve
+				i(42535),	-- Savage Gladiator's Grimoire
+				-- #if NOT ANYCLASSIC
+				i(42574),	-- Savage Gladiator's Idol of Resolve
+				i(42575),	-- Savage Gladiator's Idol of Steadfastness
+				i(42576),	-- Savage Gladiator's Idol of Tenacity
+				i(42611),	-- Savage Gladiator's Libram of Fortitude
+				i(42612),	-- Savage Gladiator's Libram of Justice
+				i(42618),	-- Savage Gladiator's Sigil of Strife
+				i(42593),	-- Savage Gladiator's Totem of Indomitability
+				i(42594),	-- Savage Gladiator's Totem of Survival
+				i(42595),	-- Savage Gladiator's Totem of the Third Wind
+				-- #endif
+			}),
+		}),
+		tier(CATA_TIER, {
+			n(SEASON_VICIOUS, {
+				i(64693),	-- Bloodthirsty Gladiator's Barrier
+				i(64694),	-- Bloodthirsty Gladiator's Baton of Light
+				i(64695),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
+				i(64700),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
+				i(64701),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta)
+				i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
+				i(64726),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta)
+				i(64743),	-- Bloodthirsty Gladiator's Endgame
+				i(64744),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
+				i(64775),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta)
+				i(64755),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta)
+				i(64752),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
+				i(64758),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta)
+				i(64760),	-- Bloodthirsty Gladiator's Heavy Crossbow (Epic BG item never made it out of beta)
+				i(64783),	-- Bloodthirsty Gladiator's Longbow (Epic BG item never made it out of beta)
+				i(64810),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)
+				i(64816),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta)
+				i(64817),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
+				i(64818),	-- Bloodthirsty Gladiator's Redoubt
+				i(64823),	-- Bloodthirsty Gladiator's Reprieve
+				i(64824),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta)
+				i(64825),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta)
+				i(64826),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta)
+				i(64848),	-- Bloodthirsty Gladiator's Shanker (Epic BG Item, never made it out of beta)
+				i(64849),	-- Bloodthirsty Gladiator's Shield Wall
+				i(64850),	-- Bloodthirsty Gladiator's Shiv
+				i(64774),	-- Bloodthirsty Gladiator's Slasher (Epic BG item never made it out of beta)
+				i(64858),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta)
+				i(64859),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta)
+				i(64860),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta)
+				i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
+			}),
+			i(65878),	-- Charbelching Wand
+			i(52969),	-- Heartache Dagger
+			--
+			i(54554),	-- Bejeweled Ship's Wheel
+			i(54553),	-- Kliklak's Fearsome Greatsword
+		}),
+		tier(WOD_TIER, {
+			n(SEASON_PRIMAL, {
+				i(180460),	-- Primal Combatant's Decapitator
+				i(111076),	-- Primal Gladiator's Staff (H), none elite
+				i(115603),	-- Primal Gladiator's Staff (A), none elite
+				i(115854),	-- Primal Gladiator's Staff
+				i(111073),	-- Primal Gladiator's Heavy Crossbow
+				i(115600),	-- Primal Gladiator's Heavy Crossbow
+			}),
+			--
+			i(114946),	-- Admiral Taylor's Spellguard
+			i(119408),	-- Foereaver Polearm
+			i(117994),	-- RENAME Karabor Honor Guard Axe
+			i(117993),	-- RENAME Rangari Boot Knife
+		}),
+		tier(LEGION_TIER, {
+			n(ARTIFACTS, {
+				i(137661),	-- Truthguard
+				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
+				i(134562),	-- Odyns Fury
+				i(139439),	-- The Highkeeper's Ward
+				i(132474),	-- Scythe of Elune
+				i(132475),	-- Scythe of Elune
+				i(132476),	-- Scythe of Elune
+				i(132477),	-- Scythe of Elune
+				i(132478),	-- Scythe of Elune
+				i(132479),	-- G'Hanir, the Mother Tree
+				i(132480),	-- G'Hanir, the Mother Tree
+				i(132481),	-- G'Hanir, the Mother Tree
+				i(132482),	-- G'Hanir, the Mother Tree
+				i(132483),	-- G'Hanir, the Mother Tree
+				i(118180),	-- Aluneth
+				i(129752),	-- Aluneth
+				i(129753),	-- Aluneth
+				i(129754),	-- Aluneth
+				i(129755),	-- Aluneth
+				i(129967),	-- Sheilun
+				i(129968),	-- Sheilun
+				i(129969),	-- Sheilun
+				i(129970),	-- Sheilun
+				i(136858),	-- Darkened T'uure
+				i(139275),	-- Aluneth
+				i(139891),	-- Aluneth
+				i(137660),	-- The Silver Hand
+				i(137581),	-- Test Artifact 1
+				i(139621),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
+				i(137582),	-- Ashbringer
+				i(131738),	-- Ashbringer
+				i(131739),	-- Ashbringer
+				i(131741),	-- Ashbringer
+				i(131742),	-- Ashbringer
+				i(122747),	-- Ashbringer
+				i(129738),	-- Verus
+				i(129735),	-- Verus
+				i(129736),	-- Verus
+				i(129737),	-- Verus
+				i(129899),	-- The Eagle Spear
+				i(128824),	-- Tome of the Silver Hand
+			}),
+			i(150611),	-- Guardian's Oaken Spear
+			i(150584),	-- Pike of Feral Rage
+			i(150613),	-- Survivalist's Hunting Spear
+			i(146304),	-- Fel Titan Hammer
+			i(147374, {	-- Wooden Toy Shield [Alliance]
+				["timeline"] = { "created 7.3.0.24484" },
+			}),
+			i(147377, {	-- Wooden Toy Shield [Horde]
+				["timeline"] = { "created 7.3.0.24484" },
+			}),
+		}),
+		tier(BFA_TIER, {
+			n(SEASON_DREAD, {
+				i(159941),	-- Honorable Combatant's Inked Vessel
+				i(161937),	-- Honorable Combatant's Inked Vessel
+				i(159923),	-- Honorable Combatant's Salutary Scepter
+				i(161929),	-- Honorable Combatant's Salutary Scepter
+			}),
+			n(SEASON_SINISTER, {
+				i(165036),	-- Sinister Gladiator's Halberd (A)
+				i(165201),	-- Sinister Aspirant's Halberd (A)
+			}),
+			n(SEASON_NOTORIOUS, {
+				i(167522),	-- Notorious Aspirant's Shield Wall (A)
+				i(167521),	-- Notorious Aspirant's Shield Wall (H)
+				--i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- in NYI Sourceless
+				--i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- in NYI Sourceless
+			}),
+			n(WAR_EFFORT, {
+				n(WEAPONS, {
+					i(165617),	-- UNUSED - PH Horde Warfront Protectorate
+					i(177114),	-- Honorbound Longbow
+					i(177128),	-- 7th Legionnaire's Longbow
+					i(177118),	-- Honorbound Pigsticker
+					i(177132),	-- 7th Legionnaire's Halberd
+					i(177113),	-- Honorbound Skullcleaver
+					i(177143),	-- 7th Legionnaire's Skullcleaver
+					i(177115),	-- Honorbound Dagger
+					i(177129),	-- 7th Legionnaire's Dagger
+					i(177116),	-- Honorbound Skullcrusher
+					i(177130),	-- 7th Legionnaire's Warhammer
+					i(177141),	-- 7th Legionnaire's Spellhammer
+					i(177144),	-- Honorbound Warhammer
+					i(177117),	-- Honorbound Bonebreaker
+					i(177131),	-- 7th Legionnaire's Battle Hammer
+					i(177119),	-- Honorbound War Staff
+					i(177133),	-- 7th Legionnaire's Stave
+					i(177120),	-- Honorbound Wand
+					i(177135),	-- 7th Legionnaire's Wand
+					i(177122),	-- Honorbound Protectorate
+					i(177125),	-- Honorbound Barrier
+					i(177138),	-- 7th Legionnaire's Aegis
+					i(177142),	-- 7th Legionnaire's Shield
+					i(177123),	-- Honorbound Focus
+					i(177139),	-- 7th Legionnaire's Censer
+					i(177124),	-- Honorbound Warglaive
+					i(177140),	-- 7th Legionnaire's Warglaive
+					i(177126),	-- Honorbound Portable Cannon
+					i(177136),	-- 7th Legionnaire's Hand Cannon
+					i(177127),	-- Honorbound Gladius
+					i(177134),	-- 7th Legionnaire's Longsword
+					i(177137),	-- 7th Legionnaire's Claymore
+					i(177121),	-- Honorbound Decapitator
+				}),
+			}),
+			i(167998, {	-- Dark Iron Tankard
+				["timeline"] = { "created 8.1.5.29701" },
+			}),
+			i(159538),	-- Coldscale Cudgel
+			i(159498),	-- Coldscale Pistol
+			i(159586),	-- Coralshell Blade
+			i(159559),	-- Coralshell Halberd
+			i(159513),	-- Deepwarden Fangs
+			i(159603),	-- Deepwarden Spark
+			i(159541),	-- Dockyard Mace
+			i(159500),	-- Dockyard Sidearm
+			i(159591),	-- Gnarlwood Cutlass
+			i(159553),	-- Gnarlwood Hammer
+			i(159567),	-- Gnarlwood Staff
+			i(159512),	-- Gol Osigr Handblade
+			i(159801),	-- Gol Osigr Targe
+			i(159817),	-- Gol Osigr Torch
+			i(159499),	-- Ironcrest Longrifle
+			i(159552),	-- Shipwrecker Maul
+			i(159588),	-- Stagheart Falchion
+			i(159542),	-- Stagheart Gavel
+			i(159472),	-- Stagheart Hatchet
+			i(159561),	-- Stagheart Poleaxe
+			i(159562),	-- Tideguard Pike
+			i(159503),	-- Tideguard Slicers
+			i(159565),	-- Tideguard Spire
+			i(159495),	-- Wavecaller Speargun
+			i(159526),	-- Wintersail Dirk
+			i(159554),	-- Wintersail Hammer
+			i(159592),	-- Wintersail Sabre
+			i(159510),	-- Wintersail Strikers
+		}),
+		tier(SL_TIER, {
+			inst(1193, {	-- Sanctum of Domination
+				i(181374),	-- Sylvanas Shadowlands Bow
+			}),
+			i(182350),	-- Ardenweald Raid Mace STR
+			i(180152),	-- Drust 2H Axe
+			--
+			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
 		}),
 	}),
 });

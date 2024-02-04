@@ -8,17 +8,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\Achievement_zone_zuldrak_03",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(18, {	-- Gutretch
-								["coord"] = { 13.2, 66.8, ZULDRAK },
-								["cr"] = 66639,	-- Gutretch <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1267),	-- Explore Zul'Drak
 					ach(1596, {	-- Guru of Drakuru
 						crit(5805, {	-- Betrayal
@@ -63,50 +52,59 @@ root(ROOTS.Zones, {
 						["rank"] = 100,
 						-- #endif
 						-- #else
-						crit(1, {	-- Sseratus
+						crit(39098, {	-- Sseratus
 							["sourceQuest"] = 12516,	-- Too Much of a Good Thing
 						}),
-						crit(2, {	-- Quetz'lun
+						crit(39099, {	-- Quetz'lun
 							["sourceQuest"] = 12685,	-- You Reap What You Sow
 						}),
-						crit(3, {	-- Akali
+						crit(39100, {	-- Akali
 							["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
 						}),
-						crit(4, {	-- The Amphitheater of Anguish
+						crit(5799, {	-- The Amphitheater of Anguish
 							["sourceQuest"] = 12948,	-- The Champion of Anguish
 						}),
-						crit(5, {	-- Finding Allies
-							["sourceQuests"] = {
-								12861,	-- Trolls Is Gone Crazy!
-								-- TODO: verify below:
-								12902,	-- In Search of Answers
-								12859,	-- This Just In: Fire Still Hot!
-							},
+						crit(39083, {	-- Finding Allies
+							["sourceQuest"] = 12859,	-- This Just In: Fire Still Hot!
 						}),
-						crit(6, {	-- The Storm King's Crusade
-							["sourceQuests"] = {
-								12904,	-- Light Won't Grant Me Vengeance
-								12919,	-- The Storm King's Crusade
-								-- TODO: verify below:
-								12901,	-- Making Something Out Of Nothing
-								12903,	-- That's What Friends Are For...
-							},
+						crit(39084, {	-- Finding Allies
+							["sourceQuest"] = 12861,	-- Trolls Is Gone Crazy!
 						}),
-						crit(7, {	-- Betrayal
+						crit(39086, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12903,	-- That's What Friends Are For...
+						}),
+						crit(39087, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12901,	-- Making Something Out Of Nothing
+						}),
+						crit(39088, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12904,	-- Light Won't Grant Me Vengeance
+						}),
+						crit(39089, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12919,	-- The Storm King's Crusade
+						}),
+						crit(5805, {	-- Betrayal
 							["sourceQuest"] = 12713,	-- Betrayal
 						}),
-						crit(8, {	-- The Argent Patrol
-							["sourceQuests"] = {
-								12584,	-- Pure Evil
-								12506,	-- Trouble at the Altar of Sseratus
-								-- TODO: confirm the following:
-								12555,	-- A Tangled Skein
-								12504,	-- Argent Crusade, We Are Leaving!
-								12606,	-- Cocooned!
-								12512,	-- Leave No One Behind
-								12554,	-- Malas the Corrupter
-								12508,	-- Mopping Up
-							},
+						crit(39090, {	-- The Argent Patrol
+							["sourceQuest"] = 12504,	-- Argent Crusade, We Are Leaving!
+						}),
+						crit(39091, {	-- The Argent Patrol
+							["sourceQuest"] = 12508,	-- Mopping Up
+						}),
+						crit(39092, {	-- The Argent Patrol
+							["sourceQuest"] = 12584,	-- Pure Evil
+						}),
+						crit(39093, {	-- The Argent Patrol
+							["sourceQuest"] = 12554,	-- Malas the Corrupter
+						}),
+						crit(39094, {	-- The Argent Patrol
+							["sourceQuest"] = 12555,	-- A Tangled Skein
+						}),
+						crit(39095, {	-- The Argent Patrol
+							["sourceQuest"] = 12506,	-- Trouble at the Altar of Sseratus
+						}),
+						crit(39096, {	-- The Argent Patrol
+							["sourceQuest"] = 12512,	-- Leave No One Behind
 						}),
 						-- #endif
 					}),
@@ -182,6 +180,11 @@ root(ROOTS.Zones, {
 					fp(307, {	-- Zim'Torga
 						["cr"] = 28624,	-- Maaka <Flight Master>
 						["coord"] = { 60.0, 56.8, ZULDRAK },
+					}),
+				}),
+				petbattles({
+					n(66639, {	-- Gutretch <Master Pet Tamer>
+						["coord"] = { 13.2, 66.8, ZULDRAK },
 					}),
 				}),
 				n(QUESTS, {
@@ -411,7 +414,7 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 12713 },	-- Betrayal
 						["sourceQuest"] = 12649,	-- Suit Up!
 						["coord"] = { 19.8, 75.4, ZULDRAK },
-						["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
+						["description"] = "Must be on |cFFFFD700Suit Up!|r or |cFFFFD700Dressing Down|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
 						["groups"] = {
 							i(39812),	-- Soiled Trousers
 							i(39876),	-- Aged Abomination Tripe
@@ -971,12 +974,12 @@ root(ROOTS.Zones, {
 					}),
 					q(12587, {	-- Troll Patrol
 						-- almost certainly the removed version, will check in Wrath Classic
+						-- confirmed available 2023-7-30 [70/Human/Paladin/Revered]
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(12588, {	-- Troll Patrol: Can You Dig It?
 						["coord"] = { 48.7, 78.8, ZULDRAK },

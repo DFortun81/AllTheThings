@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9691,	-- Return to Silvermoon
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
-					["maps"] = { GHOSTLANDS, BLACKFATHOM_DEEPS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
+					["maps"] = { BLACKFATHOM_DEEPS, GHOSTLANDS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
 					["cost"] = { { "i", 24223, 1 } },	-- Bloodvalor's Notes
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
@@ -361,12 +361,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Corrupted Kor Gem
 							["provider"] = { "i", 6995 },	-- Corrupted Kor Gem
+							["crs"] = {
+								4803,	-- Blackfathom Oracle
+								4805,	-- Blackfathom Sea Witch
+								4802,	-- Blackfathom Tide Priestess
+							},
 						}),
 						objective(2, {	-- 0/1 Crate of Bloodforged Ingots
-							["provider"] = { "i", 24224 },	-- Crate of Bloodforged Ingots
+							["providers"] = {
+								{ "i",  24224 },	-- Crate of Bloodforged Ingots
+								{ "o", 182011 },	-- Crate of Ingots
+							},
 						}),
 						objective(3, {	-- 0/1 Blood of the Wrathful
-							["provider"] = { "i", 24225 },	-- Blood of the Wrathful
+							["providers"] = {
+								{ "i",  24225 },	-- Blood of the Wrathful
+								{ "o", 182024 },	-- Blood Filled Orb
+							},
+							["cr"] = 17830,	-- Zelemar the Wrathful
 						}),
 						objective(4, {	-- 0/1 Blood Knight Insignia
 							["provider"] = { "i", 24226 },	-- Blood Knight Insignia
@@ -606,17 +618,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						285,    -- Scalemail Vest
 					}},
 				}),
-				--[[ Crieve has to approve but these the tabards should have timelines
 				n(16610, {	-- Kredis <Tabard Vendor>
 					["coord"] = { 78.6, 84.6, SILVERMOON_CITY },
+					["sym"] = {{"sub", "common_vendor", 5188}}, -- Garyl <Tabard Vendor>
 					["races"] = HORDE_ONLY,
-					-- #if AFTER WRATH
-					["sym"] = {
-						{"sub", "common_vendor", 5188}, -- Garyl <Tabard Vendor>
-					},
-					-- #endif
 				}),
-				--]]
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -639,10 +645,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(22900, {	-- Recipe: Elixir of Camouflage
+						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23574, {	-- Recipe: Transmute Primal Might
+						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -696,20 +702,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						17190,    -- Ornate Buckler
 					}},
 					["groups"] = {
-						i(2424),    -- Brigandine Belt
-						i(2426),    -- Brigandine Boots
-						i(2427),    -- Brigandine Bracers
-						i(2428),    -- Brigandine Gloves
-						i(3894),    -- Brigandine Helm
-						i(2425),    -- Brigandine Leggings
-						i(2423),    -- Brigandine Vest
-						i(8094),    -- Platemail Armor
-						i(8088),    -- Platemail Belt
-						i(8089),    -- Platemail Boots
-						i(8090),    -- Platemail Bracers
-						i(8091),    -- Platemail Gloves
-						i(8092),    -- Platemail Helm
-						i(8093),    -- Platemail Leggings
+						i(2424),	-- Brigandine Belt
+						i(2426),	-- Brigandine Boots
+						i(2427),	-- Brigandine Bracers
+						i(2428),	-- Brigandine Gloves
+						i(3894),	-- Brigandine Helm
+						i(2425),	-- Brigandine Leggings
+						i(2423),	-- Brigandine Vest
+						i(8094),	-- Platemail Armor
+						i(8088),	-- Platemail Belt
+						i(8089),	-- Platemail Boots
+						i(8090),	-- Platemail Bracers
+						i(8091),	-- Platemail Gloves
+						i(8092),	-- Platemail Helm
+						i(8093),	-- Platemail Leggings
 					},
 				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
@@ -804,9 +810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
-							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
-							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["timeline"] = { "removed 3.2.0"},
@@ -817,7 +821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				n(16636, {	-- Zathanna
-					["coord"] = { 69.8, 65.8, SHATTRATH_CITY },
+					["coord"] = { 69.8, 65.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						5239,    -- Blackbone Wand
@@ -873,8 +877,8 @@ for i,o in ipairs({
 	i(16060),	-- Common White Shirt
 }) do table.insert(ANDRA_ZYANDREL_GROUPS, o); end
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(QUELIS_GROUPS, o); end
 for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

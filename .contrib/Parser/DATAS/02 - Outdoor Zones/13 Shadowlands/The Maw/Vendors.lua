@@ -58,28 +58,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(183870, {	-- Recipe: Crafter's Mark II (RECIPE!)
 						["cost"] = { { "c", STYGIA, 300 } },
 						["g"] = {
-							recipe(343678, {	-- Crafter's Mark II
+							r(343678, {	-- Crafter's Mark II (RECIPE!)
 								["requireSkill"] = ALCHEMY,
 							}),
-							recipe(343696, {	-- Crafter's Mark II
-								["requireSkill"] = JEWELCRAFTING,
-							}),
-							recipe(343202, {	-- Crafter's Mark II
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(343185, {	-- Crafter's Mark II
+							r(343185, {	-- Crafter's Mark II (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(343193, {	-- Crafter's Mark II
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							recipe(343100, {	-- Crafter's Mark II
-								["requireSkill"] = ENGINEERING,
-							}),
-							recipe(343683, {	-- Crafter's Mark II
+							r(343683, {	-- Crafter's Mark II (RECIPE!)
 								["requireSkill"] = ENCHANTING,
 							}),
-							recipe(343689),	-- Crafter's Mark II [INSCRIPTION]
+							r(343100, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = ENGINEERING,
+							}),
+							r(343689, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = INSCRIPTION,
+							}),
+							r(343696, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							r(343193, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							r(343202, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = TAILORING,
+							}),
 						},
 					}),
 					i(184621, {	-- Ritual Prism of Fortune
@@ -120,19 +122,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 root(ROOTS.HiddenQuestTriggers, {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			q(61600),	-- Animaflow Stabilizer
-			q(63217),	-- Animated Levitating Chain
-			q(63193),	-- Bangle of Seniority
-			q(63523),	-- Broker Traversal Enhancer
-			q(63177),	-- Encased Riftwalker Essence
-			q(63183),	-- Extradimensional Pockets
-			q(63201),	-- Loupe of Unusual Charm
-			q(61144),	-- Possibility Matrix
-			q(63200),	-- Rank Insignia: Acquisitionist
-			q(63204),	-- Ritual Prism of Fortune
-			q(63092),	-- Sigil of the Unseen
-			q(63091),	-- Soul-Stabilizing Talisman
-			q(63202),	-- Vessel of Unfortunate Spirits
+			q(61600),	-- Animaflow Stabilizer (spellID 341097)
+			q(63217),	-- Animated Levitating Chain (spellID 347241)
+			q(63193),	-- Bangle of Seniority (spellID 347108)
+			q(63523),	-- Broker Traversal Enhancer (spellID 349397)
+			q(63177),	-- Encased Riftwalker Essence (spellID 347080)
+			q(63183),	-- Extradimensional Pockets (spellID 347107)
+			q(63201),	-- Loupe of Unusual Charm (spellID 347109)
+			q(61144),	-- Possibility Matrix (spellID 342815)
+			q(63200),	-- Rank Insignia: Acquisitionist (spellID 347110)
+			q(63204),	-- Ritual Prism of Fortune (spellID 347113)
+			q(63092),	-- Sigil of the Unseen (spellID 347020)
+			q(63091),	-- Soul-Stabilizing Talisman (spellID 346917)
+			q(63202),	-- Vessel of Unfortunate Spirits (spellID 347111)
 		}),
 	}),
 });

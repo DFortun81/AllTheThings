@@ -9,10 +9,11 @@ local ANACHRONOS_COORD = { 65, 50, TANARIS };
 root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 	inst(744, {	-- Temple of Ahn'Qiraj
 		["lore"] = "Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3428,	-- Ahn'Qiraj
+		-- #endif
 		["sins"] = {
-			-- #if ANYCLASSIC
 			"Temple of Ahn'Qiraj",	-- In Classic the map name is actually just "Ahn'Qiraj", not sure which expansion this changes.
-			-- #endif
 			"Ahn'Qiraj Temple",	-- In Retail the full name is actually Temple of Ahn'Qiraj, but the saved instance data is wrong.
 		},
 		["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },
@@ -25,6 +26,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["lvl"] = 50,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(11743, {["timeline"] = {ADDED_7_2_0}}),	-- Accessor-Eyes (Temple of Ahn'Qiraj)
 				achWithRep(956, 910, {	-- Brood of Nozdormu
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
@@ -1501,6 +1503,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(20927),	-- Ouro's Intact Hide
 					i(20931),	-- Skin of the Great Sandworm
 					i(23557),	-- Larvae of the Great Worm
+					i(21613, {	-- Wormhide Boots
+						["timeline"] = { ADDED_10_1_7 },
+					}),
 					i(21610),	-- Wormscale Blocker
 					i(21615),	-- Don Rigoberto's Lost Hat
 					i(21611),	-- Burrower Bracers

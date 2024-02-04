@@ -40,49 +40,49 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(188174, {	-- Unchained Equipment Cache [PvP S2]
 						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 						["cost"] = {{ "c", CONQUEST, 375 }},
-						--[[
+						-- #IF BEFORE 9.2.0
+						["skipFill"] = true,
 						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_UNCHAINED },			-- Unchained Gladiator: Shadowlands Season 2
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"select", "headerID", SEASON_UNCHAINED },	-- Select Unchained Gladiator: Shadowlands Season 2
+							{"find", "headerID", PVP_GLADIATOR },		-- Gladiator Header
+							{"pop"},									-- Discard the Header and acquire all of the children.
 						},
-						--]]
+						-- #ENDIF
+						-- #IF AFTER 9.2.0
+						["groups"] = {
+							i(188759),	-- Sealed Vintage Darkmoon Deck
+						},
+						-- #ENDIF
 					}),
 					i(194118, {	-- Cosmic Equipment Chest [PvP S3]
 						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 						["cost"] = {{ "c", CONQUEST, 375 }},
-						--[[
+						-- #IF BEFORE 9.2.5
+						["skipFill"] = true,
 						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_COSMIC },	-- Cosmic Gladiator: Shadowlands Season 3
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
+							{"select", "headerID", SEASON_COSMIC },	-- Select Cosmic Gladiator: Shadowlands Season 3
+							{"find", "headerID", PVP_GLADIATOR },	-- Gladiator Header
 							{"pop"},								-- Discard the Header and acquire all of the children.
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(201355, {	-- Eternal Equipment Chest [PvP S4]
 						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "c", CONQUEST, 375 }},
-						--[[
+						-- #IF BEFORE 10.0.2
+						["skipFill"] = true,
 						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_ETERNAL },	-- Eternal Gladiator: Shadowlands Season 4
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"select", "headerID", SEASON_ETERNAL },	-- Select Eternal Gladiator: Shadowlands Season 4
+							{"find", "headerID", PVP_GLADIATOR },		-- Gladiator Header
+							{"pop"},									-- Discard the Header and acquire all of the children.
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(188173, {	-- Valorous Equipment Cache [M+ S2]
 						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 						["cost"] = {{ "c", VALOR, 500 }},
-						--[[
+						-- #IF BEFORE 9.2.0
+						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
 							-- Dungeons
 							1188,	-- De Other Side
@@ -97,17 +97,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(194334, {	-- Encrypted Equipment Chest [M+ S3]
 						["timeline"] = { ADDED_9_2_5, REMOVED_9_2_7 },
 						["cost"] = {{ "c", VALOR, 500 }},
-						--[[
+						-- #IF BEFORE 9.2.7
+						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
 							-- Dungeons
 							1188,	-- De Other Side
@@ -122,17 +121,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 						},
-						-]]
+						-- #ENDIF
 					}),
 					i(201362, {	-- Fated Equipment Chest [M+ S4]
 						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "c", VALOR, 500 }},
-						--[[
+						-- #IF BEFORE 10.0.2
+						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
 							-- Dungeons
 							1188,	-- De Other Side
@@ -147,12 +145,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(188198, {	-- Travlers Anima Cache
 						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",
@@ -176,8 +172,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["questID"] = 65623,
 						["cost"] = 5000000,	-- 500g
 						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+							{"select","tierID",SL_TIER},	-- SL Tier
+							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
 					i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)
@@ -314,12 +310,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							i(186017),	-- Korthite Crystal
 						},
 					})),
-					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Korthite Crystal Geode
+					i(187817, {	-- Korthite Crystal Geode
+						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "c", VALOR, 1500 }},
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
-					})),
+					}),
 					i(191303, {	-- Overflowing Chest of Riches
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
 						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }
@@ -346,12 +343,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							i(173204),	-- Lightless Silk
 						},
 					})),
-					i(187221, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Soul Ash Cache
+					i(187221, {	-- Soul Ash Cache
+						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							currency(1828),	-- Soul Ash
 						},
-					})),
+					}),
 					i(187222, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Stygic Singularity
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {

@@ -2670,3 +2670,13 @@
 2875@@@Old Loamm Road, Zaralek Cavern
 2876@@@Lookout Breach, Zaralek Cavern
 2877@@@Lookout Breach, Azure Span
+10.1.7.51237
+2887@@@Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)
+2892@@@Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)
+10.2.0.51239
+2902@@@Central Encampment, The Emerald Dream
+2903@@@Verdant Landing, The Emerald Dream
+2904@@@Eye of Ysera, The Emerald Dream
+2905@@@Wellspring Overlook, The Emerald Dream
+10.2.5.52432
+2915@@@Bel'ameth, Amirdrassil

@@ -5,7 +5,6 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(STORMSONG_VALLEY, {
 		n(ZONE_REWARDS, {
-			un(45, i(165685)),	-- House of Nobles Cape
 			i(158033),	-- Squallshaper Hood
 			i(158035),	-- Squallshaper Mantle
 			i(158058),	-- Squallshaper Vestments

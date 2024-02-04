@@ -3,142 +3,132 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 } }, {
 	inst(669, {	-- Hellfire Citadel
-		["isRaid"] = true,
-		["lvl"] = 100,
 		["mapID"] = 661,
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
 		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
+		["isRaid"] = true,
+		["lvl"] = 100,
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(11631, {["timeline"] = {ADDED_7_2_0}}),	-- Extreme Makeover: Fel Edition (Hellfire Citadel)
+				ach(10149, {	-- Glory of the Hellfire Raider
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						10026,	-- Nearly Indestructible
+						10057,	-- Turning the Tide
+						10013,	-- Waves Came Crashing Down All Around
+						10054,	-- Don't Fear the Reaper
+						9972,	-- A Race Against Slime
+						9979,	-- Get In My Belly!
+						9988,	-- Pro Toss
+						10086,	-- I'm a Soul Man
+						10012,	-- This Land Was Green and Good Until...
+						10087,	-- You Gotta Keep 'em Separated
+						9989,	-- Non-Lethal Enforcer
+						10030,	-- Bad Manner(oth)
+						10073,	-- Echoes of Doomfire
+					}},
+					["groups"] = {
+						i(127140),	-- Infernal Direwolf (MOUNT!)
+					},
+				}),
 				ach(10023, {	-- Hellbreach
-					crit(1, {	-- Hellfire Assault
+					crit(28075, {	-- Hellfire Assault
 						["_encounter"] = { 1426, LFR_RAID },
 					}),
-					crit(2, {	-- Iron Reaver
+					crit(28076, {	-- Iron Reaver
 						["_encounter"] = { 1425, LFR_RAID },
 					}),
-					crit(3, {	-- Kormrok
+					crit(28077, {	-- Kormrok
 						["_encounter"] = { 1392, LFR_RAID },
 					}),
 				}),
 				ach(10024, {	-- Halls of Blood
-					crit(1, {	-- Hellfire High Council
+					crit(28078, {	-- Hellfire High Council
 						["_encounter"] = { 1432, LFR_RAID },
 					}),
-					crit(2, {	-- Kilrogg Deadeye
+					crit(28079, {	-- Kilrogg Deadeye
 						["_encounter"] = { 1396, LFR_RAID },
 					}),
-					crit(3, {	-- Gorefiend
+					crit(28080, {	-- Gorefiend
 						["_encounter"] = { 1372, LFR_RAID },
 					}),
 				}),
 				ach(10025, {	-- Bastion of Shadows
-					crit(1, {	-- Shadow-Lord Iskar
+					crit(28081, {	-- Shadow-Lord Iskar
 						["_encounter"] = { 1433, LFR_RAID },
 					}),
-					crit(2, {	-- Socrethar the Eternal
+					crit(28082, {	-- Socrethar the Eternal
 						["_encounter"] = { 1427, LFR_RAID },
 					}),
-					crit(3, {	-- Tyrant Velhari
+					crit(28083, {	-- Tyrant Velhari
 						["_encounter"] = { 1394, LFR_RAID },
 					}),
 				}),
 				ach(10020, {	-- Destructor's Rise
-					crit(1, {	-- Fel Lord Zakuun
+					crit(28067, {	-- Fel Lord Zakuun
 						["_encounter"] = { 1391, LFR_RAID },
 					}),
-					crit(2, {	-- Xhul'horac
+					crit(28068, {	-- Xhul'horac
 						["_encounter"] = { 1447, LFR_RAID },
 					}),
-					crit(3, {	-- Mannoroth
+					crit(28069, {	-- Mannoroth
 						["_encounter"] = { 1395, LFR_RAID },
 					}),
 				}),
 				ach(10019, {	-- The Black Gate
-					crit(1, {	-- Archimonde
+					crit(28066, {	-- Archimonde
+						["provider"] = { "n", 91331 },	-- Archimonde
 						["_encounter"] = { 1438, LFR_RAID },
 					}),
 				}),
-				-- TODO: symlink meta achieve
-				ach(10149, {	-- Glory of the Hellfire Raider
-					i(127140),	-- Infernal Direwolf (MOUNT!)
-					ach(10026, {	-- Nearly Indestructible
-						["crs"] = { 95068 },	-- Hellfire Assault
+			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					95068,	-- Hellfire Assault
+					90284,	-- Iron Reaver
+					90435,	-- Kormrok
+					92146,	-- Hellfire High Council
+					90378,	-- Kilrogg
+					90199,	-- Gorefiend
+					90316,	-- Shadow-Lord Iskar
+					92330,	-- Socrethar
+					90269,	-- Tyrant Velhari
+					89890,	-- Fel Lord Zakuun
+					93068,	-- Xhul
+					91349,	-- Manno
+					91331,	-- Archi
+				},
+				["groups"] = {
+					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
+
+					})),
+				},
+			}),
+			d(ALL_DIFFICULTIES_RAID, {
+				cr(90284, e(1425, {	-- Iron Reaver
+					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 					}),
-					ach(10057, {	-- Turning the Tide
-						["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at max level.",
-						["crs"] = { 90284 },	-- Iron Reaver
+				})),
+				cr(90378, e(1396, {	-- Kilrogg Deadeye
+					ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
 					}),
-					ach(10013, {	-- Waves Came Crashing Down All Around
-						["crs"] = { 90435 },	-- Kormrok
+				})),
+				cr(90316, e(1433, {	-- Shadow-Lord Iskar
+					ig(127749),	-- Corrupted Nest Guardian (PET!)
+					i(127771, {	-- Gemcutter Module: Critical Strike
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["requireSkill"] = JEWELCRAFTING,
+						["f"] = MISC,
 					}),
-					ach(10054, {	-- Don't Fear the Reaper
-						["crs"] = {
-							-- Hellfire High Council
-							92142,	-- Blademaster Jubei'thos
-							92144,	-- Dia Darkwhisper
-							92146,	-- Gurtogg Bloodboil
-						},
-					}),
-					ach(9972, {	-- A Race Against Slime
-						["crs"] = {
-							90378,	-- Kilrogg
-							90980,	-- Ariok
-						},
-						["g"] = {
-							follower(474),	-- Ariok
-						},
-					}),
-					ach(9979, {	-- Get In My Belly!
-						["crs"] = { 90199 },	-- Gorefiend
-					}),
-					ach(9988, {	-- Pro Toss
-						["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
-						["crs"] = { 90316 },	-- Shadow-Lord Iskar
-					}),
-					ach(10086, {	-- I'm a Soul Man
-						["crs"] = { 92330 },	-- Socrethar
-					}),
-					ach(10012, {	-- This Land Was Green and Good Until...
-						["crs"] = { 89890 },	-- Fel Lord Zakuun
-					}),
-					ach(10087, {	-- You Gotta Keep 'em Separated
-						["crs"] = { 93068 },	-- Xhul'horac
-					}),
-					ach(9989, {	-- Non-Lethal Enforcer
-						["crs"] = { 90269 },	-- Tyrant Velhari
-					}),
-					ach(10030, {	-- Bad Manner(oth)
-						["crs"] = { 91349 },	-- Mannoroth
-					}),
-					ach(10073, {	-- Echoes of Doomfire
-						["crs"] = { 91331 },	-- Archimonde
-					}),
-				}),
+				})),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
 			d(LFR_RAID, {
-				n(ZONE_DROPS, {
-					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
-						["crs"] = {
-							95068,	-- Hellfire Assault
-							90284,	-- Iron Reaver
-							90435,	-- Kormrok
-							92146,	-- Hellfire High Council
-							90378,	-- Kilrogg
-							90199,	-- Gorefiend
-							90316,	-- Shadow-Lord Iskar
-							92330,	-- Socrethar
-							90269,	-- Tyrant Velhari
-							89890,	-- Fel Lord Zakuun
-							93068,	-- Xhul
-							91349,	-- Manno
-							91331,	-- Archi
-						},
-					})),
-				}),
 				header(HEADERS.Achievement, 10023, {	-- Hellbreach
 					cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 						i(128092),	-- Wicked Bonecarver's Knife
@@ -156,10 +146,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 						i(128142),	-- Pledge of Iron Loyalty
 					})),
 					cr(90284, e(1425, {	-- Iron Reaver
-						i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-							["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-							["description"] = "Drops in all difficulties.",
-						}),
 						i(128094),	-- Spiked Torque Wrench
 						i(128118),	-- Demonhorn Buckler
 						i(128053),	-- Liquid-Cooled Mantle
@@ -216,7 +202,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 						},
 					}),
 					cr(90378, e(1396, {	-- Kilrogg Deadeye
-						ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 						i(128093),	-- Demonhorn Spike
 						i(128192),	-- Balanced Machete
 						i(128074),	-- Hollowheart Helm
@@ -250,12 +235,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				}),
 				header(HEADERS.Achievement, 10025, {	-- Bastion of Shadows
 					cr(90316, e(1433, {	-- Shadow-Lord Iskar
-						i(127771, {	-- Gemcutter Module: Critical Strike
-							["requireSkill"] = JEWELCRAFTING,
-							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-							["f"] = MISC,
-						}),
-						ig(127749),	-- Corrupted Nest Guardian (PET!)
 						i(128096),	-- Demonspine Wand
 						i(128041),	-- Beaked Hood of Betrayal
 						i(128186),	-- Cursefeather Cloak
@@ -342,6 +321,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				}),
 				header(HEADERS.Achievement, 10019, {	-- The Black Gate
 					cr(91331, e(1438, {	-- Archimonde
+						i(212780, {	-- Grimoire of the Felbrute Tyrant (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
 						i(128199),	-- Fractured Soulgem Staff
 						i(128201),	-- Greatsword of Chaos
 						i(128044),	-- Voidsight Hood
@@ -359,6 +341,81 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 						i(128153),	-- Unquenchable Doomfire Censer
 					})),
 				}),
+			}),
+			d(NORMAL_PLUS_RAID, {
+				cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
+					ach(10026, {	-- Nearly Indestructible
+						["crs"] = { 90018 },	-- Hellfire Cannon
+					}),
+				})),
+				cr(90284, e(1425, {	-- Iron Reaver
+					ach(10057, {	-- Turning the Tide
+						["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at max level.",
+						["crs"] = { 94808 },	-- Hellfire Guardian
+					}),
+				})),
+				cr(90435, e(1392, {	-- Kormrok
+					ach(10013),	-- Waves Came Crashing Down All Around
+				})),
+				e(1432, {	-- Hellfire High Council
+					["crs"] = {
+						92142,	-- Blademaster Jubei'thos
+						92144,	-- Dia Darkwhisper
+						92146,	-- Gurtogg Bloodboil
+					},
+					["g"] = {
+						ach(10054),	-- Don't Fear the Reaper
+					},
+				}),
+				cr(90378, e(1396, {	-- Kilrogg Deadeye
+					ach(9972, {	-- A Race Against Slime
+						["crs"] = { 90980 },	-- Ariok
+						["g"] = {
+							follower(474),	-- Ariok
+						},
+					}),
+				})),
+				cr(90199, e(1372, {	-- Gorefiend
+					ach(9979, {	-- Get In My Belly!
+						["crs"] = { 93145 },	-- Soul of the Crone
+					}),
+				})),
+				cr(90316, e(1433, {	-- Shadow-Lord Iskar
+					ach(9988, {	-- Pro Toss
+						["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
+					}),
+				})),
+				cr(92330, e(1427, {	-- Socrethar the Eternal
+					ach(10086, {	-- I'm a Soul Man
+						["crs"] = { 91938 },	-- Haunting Soul
+					}),
+				})),
+				cr(90269, e(1394, {	-- Tyrant Velhari
+					ach(9989, {	-- Non-Lethal Enforcer
+						["crs"] = { 90270 },	-- Ancient Enforcer
+					}),
+				})),
+				cr(89890, e(1391, {	-- Fel Lord Zakuun
+					ach(10012),	-- This Land Was Green and Good Until...
+				})),
+				cr(93068, e(1447, {	-- Xhul'horac
+					ach(10087),	-- You Gotta Keep 'em Separated
+				})),
+				cr(91349, e(1395, {	-- Mannoroth
+					ach(10030, {	-- Bad Manner(oth)
+						["crs"] = { 91241 },	-- Doom Lord
+					}),
+				})),
+				cr(91331, e(1438, {	-- Archimonde
+					ach(10073),	-- Echoes of Doomfire
+					ach(9680, {	-- Time is a Flat Circle
+						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
+					}),
+					i(212780, {	-- Grimoire of the Felbrute Tyrant (CI!)
+						["timeline"] = { ADDED_10_2_5 },
+					}),
+					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
+				})),
 			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
@@ -390,23 +447,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124252),	-- Jungle Assassin's Footpads
 					i(124288),	-- Unhallowed Voidlink Boots
 					i(118840),	-- Firecrystal Chain
-					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
-						["crs"] = {
-							95068,	-- Hellfire Assault
-							90284,	-- Iron Reaver
-							90435,	-- Kormrok
-							92146,	-- Hellfire High Council
-							90378,	-- Kilrogg
-							90199,	-- Gorefiend
-							90316,	-- Shadow-Lord Iskar
-							92330,	-- Socrethar
-							90269,	-- Tyrant Velhari
-							89890,	-- Fel Lord Zakuun
-							93068,	-- Xhul
-							91349,	-- Manno
-							91331,	-- Archi
-						},
-					})),
 				}),
 				cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 					i(124365),	-- Blackfuse Company Utility Knife
@@ -453,7 +493,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -462,7 +502,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -471,7 +511,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -529,7 +569,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					},
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
-					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 					i(124379),	-- Bite of the Bleeding Hollow
 					i(124364),	-- Fallen Warlord's Mindcarver
 					i(124366),	-- Ruinous Gutripper
@@ -554,7 +593,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -563,7 +602,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -572,7 +611,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -603,12 +642,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124236),	-- Unending Hunger
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
-					i(127771, {	-- Gemcutter Module: Critical Strike
-						["requireSkill"] = JEWELCRAFTING,
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["f"] = MISC,
-					}),
-					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					i(124387),	-- Shadowrend Talonblade
 					i(124390),	-- Deceiver's Felbeak Wand
 					i(124294),	-- Coif of Untrue Sight
@@ -634,7 +667,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -643,7 +676,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -652,7 +685,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -723,7 +756,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1447 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -732,7 +765,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -741,7 +774,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -776,7 +809,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1395 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -785,7 +818,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -794,7 +827,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -825,35 +858,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124230),	-- Prophecy of Fear
 				})),
 				cr(91331, e(1438, {	-- Archimonde
-					ach(9680, {	-- Time is a Flat Circle
-						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
-					}),
-					i(124389),	-- Calamity's Edge
-					i(124382),	-- Edict of Argus
-					i(124372),	-- Gavel of the Eredar
-					i(124159),	-- Demon Prince's Ascendant Crown
-					i(124210),	-- Choker of the Great Betrayer
-					i(124222),	-- World Ender's Gorget
-					i(124343),	-- Doomcrier's Shoulderplates
-					i(124176),	-- Mantle of the Eredar Lord
-					i(124144),	-- Cloak of Incendiary Wrath
-					i(124291),	-- Eredar Fel-Chain Gloves
-					i(124254),	-- Felfinger Runegloves
-					i(124200),	-- Demonbuckle Sash of Argus
-					i(124276),	-- Waistwrap of Banishment
-					i(124322),	-- Treads of the Defiler
-					i(139630),	-- Etching of Sargeras
-					i(124522),	-- Fragment of the Dark Star
-					i(124518),	-- Libram of Vindication
-					i(124519),	-- Repudiation of War
-					i(124521),	-- Core of the Primal Elements
-					i(124517),	-- Sacred Draenic Incense
-					i(124515),	-- Talisman of the Master Tracker
-					i(124523),	-- Worldbreaker's Resolve
-					i(124520),	-- Bleeding Hollow Toxin Vessel
-					i(124513),	-- Reaper's Harvest
-					i(124514),	-- Seed of Creation
-					i(124516),	-- Tome of Shifting Words
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1438 },	-- This encounter
@@ -881,7 +885,32 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
+					i(124389),	-- Calamity's Edge
+					i(124382),	-- Edict of Argus
+					i(124372),	-- Gavel of the Eredar
+					i(124159),	-- Demon Prince's Ascendant Crown
+					i(124210),	-- Choker of the Great Betrayer
+					i(124222),	-- World Ender's Gorget
+					i(124343),	-- Doomcrier's Shoulderplates
+					i(124176),	-- Mantle of the Eredar Lord
+					i(124144),	-- Cloak of Incendiary Wrath
+					i(124291),	-- Eredar Fel-Chain Gloves
+					i(124254),	-- Felfinger Runegloves
+					i(124200),	-- Demonbuckle Sash of Argus
+					i(124276),	-- Waistwrap of Banishment
+					i(124322),	-- Treads of the Defiler
+					i(139630),	-- Etching of Sargeras
+					i(124522),	-- Fragment of the Dark Star
+					i(124518),	-- Libram of Vindication
+					i(124519),	-- Repudiation of War
+					i(124521),	-- Core of the Primal Elements
+					i(124517),	-- Sacred Draenic Incense
+					i(124515),	-- Talisman of the Master Tracker
+					i(124523),	-- Worldbreaker's Resolve
+					i(124520),	-- Bleeding Hollow Toxin Vessel
+					i(124513),	-- Reaper's Harvest
+					i(124514),	-- Seed of Creation
+					i(124516),	-- Tome of Shifting Words
 				})),
 			}),
 			d(HEROIC_RAID, {
@@ -925,23 +954,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124252),	-- Jungle Assassin's Footpads
 					i(124288),	-- Unhallowed Voidlink Boots
 					i(118840),	-- Firecrystal Chain
-					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
-						["crs"] = {
-							95068,	-- Hellfire Assault
-							90284,	-- Iron Reaver
-							90435,	-- Kormrok
-							92146,	-- Hellfire High Council
-							90378,	-- Kilrogg
-							90199,	-- Gorefiend
-							90316,	-- Shadow-Lord Iskar
-							92330,	-- Socrethar
-							90269,	-- Tyrant Velhari
-							89890,	-- Fel Lord Zakuun
-							93068,	-- Xhul
-							91349,	-- Manno
-							91331,	-- Archi
-						},
-					})),
 				}),
 				cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 					i(124365),	-- Blackfuse Company Utility Knife
@@ -988,7 +1000,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -997,7 +1009,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1006,7 +1018,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1064,7 +1076,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					},
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
-					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 					i(124379),	-- Bite of the Bleeding Hollow
 					i(124364),	-- Fallen Warlord's Mindcarver
 					i(124366),	-- Ruinous Gutripper
@@ -1089,7 +1100,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1098,7 +1109,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1107,7 +1118,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1138,12 +1149,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124236),	-- Unending Hunger
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
-					i(127771, {	-- Gemcutter Module: Critical Strike
-						["requireSkill"] = JEWELCRAFTING,
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["f"] = MISC,
-					}),
-					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					i(124387),	-- Shadowrend Talonblade
 					i(124390),	-- Deceiver's Felbeak Wand
 					i(124294),	-- Coif of Untrue Sight
@@ -1169,7 +1174,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1178,7 +1183,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1187,7 +1192,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1258,7 +1263,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1447 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1267,7 +1272,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1276,7 +1281,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1299,7 +1304,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124260),	-- Hood of Unknowable Secrets
 					i(124295),	-- Sinister Felborne Helmet
 					i(124212),	-- Vial of Immiscible Liquid
-										i(124147),	-- Void Lord's Wizened Cloak
+					i(124147),	-- Void Lord's Wizened Cloak
 					i(124353),	-- Breach-Scarred Wristplates
 					i(124199),	-- Loop of Beckoned Shadows
 					i(124189),	-- Portal Key Signet
@@ -1311,7 +1316,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1395 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1320,7 +1325,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1329,7 +1334,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1364,32 +1369,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(133762, {	-- Remnant of Chaos
 						["timeline"] = { "removed 7.0.3" },
 					}),
-					i(124389),	-- Calamity's Edge
-					i(124382),	-- Edict of Argus
-					i(124372),	-- Gavel of the Eredar
-					i(124159),	-- Demon Prince's Ascendant Crown
-					i(124210),	-- Choker of the Great Betrayer
-					i(124222),	-- World Ender's Gorget
-					i(124343),	-- Doomcrier's Shoulderplates
-					i(124176),	-- Mantle of the Eredar Lord
-					i(124144),	-- Cloak of Incendiary Wrath
-					i(124291),	-- Eredar Fel-Chain Gloves
-					i(124254),	-- Felfinger Runegloves
-					i(124200),	-- Demonbuckle Sash of Argus
-					i(124276),	-- Waistwrap of Banishment
-					i(124322),	-- Treads of the Defiler
-					i(139630),	-- Etching of Sargeras
-					i(124522),	-- Fragment of the Dark Star
-					i(124518),	-- Libram of Vindication
-					i(124519),	-- Repudiation of War
-					i(124521),	-- Core of the Primal Elements
-					i(124517),	-- Sacred Draenic Incense
-					i(124515),	-- Talisman of the Master Tracker
-					i(124523),	-- Worldbreaker's Resolve
-					i(124520),	-- Bleeding Hollow Toxin Vessel
-					i(124513),	-- Reaper's Harvest
-					i(124514),	-- Seed of Creation
-					i(124516),	-- Tome of Shifting Words
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1438 },	-- This encounter
@@ -1417,19 +1396,44 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
+					i(124389),	-- Calamity's Edge
+					i(124382),	-- Edict of Argus
+					i(124372),	-- Gavel of the Eredar
+					i(124159),	-- Demon Prince's Ascendant Crown
+					i(124210),	-- Choker of the Great Betrayer
+					i(124222),	-- World Ender's Gorget
+					i(124343),	-- Doomcrier's Shoulderplates
+					i(124176),	-- Mantle of the Eredar Lord
+					i(124144),	-- Cloak of Incendiary Wrath
+					i(124291),	-- Eredar Fel-Chain Gloves
+					i(124254),	-- Felfinger Runegloves
+					i(124200),	-- Demonbuckle Sash of Argus
+					i(124276),	-- Waistwrap of Banishment
+					i(124322),	-- Treads of the Defiler
+					i(139630),	-- Etching of Sargeras
+					i(124522),	-- Fragment of the Dark Star
+					i(124518),	-- Libram of Vindication
+					i(124519),	-- Repudiation of War
+					i(124521),	-- Core of the Primal Elements
+					i(124517),	-- Sacred Draenic Incense
+					i(124515),	-- Talisman of the Master Tracker
+					i(124523),	-- Worldbreaker's Resolve
+					i(124520),	-- Bleeding Hollow Toxin Vessel
+					i(124513),	-- Reaper's Harvest
+					i(124514),	-- Seed of Creation
+					i(124516),	-- Tome of Shifting Words
 				})),
 			}),
 			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(39505, {	-- The Fel Spire (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.\n",
-						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
+						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",
 					}),
 					q(39501, {	-- Well of Souls (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.\n",
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1442,23 +1446,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124252),	-- Jungle Assassin's Footpads
 					i(124288),	-- Unhallowed Voidlink Boots
 					i(118840),	-- Firecrystal Chain
-					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
-						["crs"] = {
-							95068,	-- Hellfire Assault
-							90284,	-- Iron Reaver
-							90435,	-- Kormrok
-							92146,	-- Hellfire High Council
-							90378,	-- Kilrogg
-							90199,	-- Gorefiend
-							90316,	-- Shadow-Lord Iskar
-							92330,	-- Socrethar
-							90269,	-- Tyrant Velhari
-							89890,	-- Fel Lord Zakuun
-							93068,	-- Xhul
-							91349,	-- Manno
-							91331,	-- Archi
-						},
-					})),
 				}),
 				cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 					ach(10027),	-- Mythic: Hellfire Assault
@@ -1503,6 +1490,33 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				})),
 				cr(90435, e(1392, {	-- Kormrok
 					ach(10033),	-- Mythic: Kormrok
+					un(REMOVED_FROM_GAME, i(127956, {	-- Helm of Hellfire's Conqueror
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127966, {	-- Helm of Hellfire's Protector
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127959, {	-- Helm of Hellfire's Vanquisher
+						["sym"] = {
+							{ "select", "encounterID", 1392 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
+					})),
 					i(124162),	-- Deathrattle Mask (Warlock)
 					i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
 					i(124161),	-- Pious Cowl (Priest)
@@ -1529,33 +1543,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124187),	-- Pit-Extracted Stone Signet
 					i(124239),	-- Imbued Stone Sigil
 					i(124235),	-- Rumbling Pebble
-					un(REMOVED_FROM_GAME, i(127956, {	-- Helm of Hellfire's Conqueror
-						["sym"] = {
-							{ "select", "encounterID", 1392 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127966, {	-- Helm of Hellfire's Protector
-						["sym"] = {
-							{ "select", "encounterID", 1392 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127959, {	-- Helm of Hellfire's Vanquisher
-						["sym"] = {
-							{ "select", "encounterID", 1392 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
-						},
-					})),
 				})),
 				e(1432, {	-- Hellfire High Council
 					["crs"] = {
@@ -1586,7 +1573,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
 					ach(10035),	-- Mythic: Kilrogg Deadeye
-					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 					i(124379),	-- Bite of the Bleeding Hollow
 					i(124364),	-- Fallen Warlord's Mindcarver
 					i(124366),	-- Ruinous Gutripper
@@ -1607,6 +1593,33 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				})),
 				cr(90199, e(1372, {	-- Gorefiend
 					ach(10253),	-- Mythic: Gorefiend
+					un(REMOVED_FROM_GAME, i(127955, {	-- Leggings of Hellfire's Conqueror
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127965, {	-- Leggings of Hellfire's Protector
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127960, {	-- Leggings of Hellfire's Vanquisher
+						["sym"] = {
+							{ "select", "encounterID", 1372 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
+					})),
 					i(124167),	-- Deathrattle Leggings (Warlock)
 					i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
 					i(124166),	-- Pious Leggings (Priest)
@@ -1632,42 +1645,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124348),	-- Ravenous Girdle
 					i(124188),	-- Serrated Demontooth Ring
 					i(124236),	-- Unending Hunger
-					un(REMOVED_FROM_GAME, i(127955, {	-- Leggings of Hellfire's Conqueror
-						["sym"] = {
-							{ "select", "encounterID", 1372 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127965, {	-- Leggings of Hellfire's Protector
-						["sym"] = {
-							{ "select", "encounterID", 1372 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127960, {	-- Leggings of Hellfire's Vanquisher
-						["sym"] = {
-							{ "select", "encounterID", 1372 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
-						},
-					})),
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					ach(10037),	-- Mythic: Shadow-Lord Iskar
-					i(127771, {	-- Gemcutter Module: Critical Strike
-						["requireSkill"] = JEWELCRAFTING,
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["f"] = MISC,
-					}),
-					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					i(124387),	-- Shadowrend Talonblade
 					i(124390),	-- Deceiver's Felbeak Wand
 					i(124294),	-- Coif of Untrue Sight
@@ -1689,6 +1669,33 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				})),
 				cr(92330, e(1427, {	-- Socrethar the Eternal
 					ach(10040),	-- Mythic: Socrethar the Eternal
+					un(REMOVED_FROM_GAME, i(127954, {	-- Gauntlets of Hellfire's Conqueror
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127964, {	-- Gauntlets of Hellfire's Protector
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127958, {	-- Gauntlets of Hellfire's Vanquisher
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
+					})),
 					i(124156),	-- Deathrattle Gloves (Warlock)
 					i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
 					i(124155),	-- Pious Handwraps (Priest)
@@ -1715,33 +1722,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124191),	-- Seal of the Traitorous Councilor
 					i(124233),	-- Demonic Phylactery
 					i(124225),	-- Soul Capacitor
-					un(REMOVED_FROM_GAME, i(127954, {	-- Gauntlets of Hellfire's Conqueror
-						["sym"] = {
-							{ "select", "encounterID", 1427 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127964, {	-- Gauntlets of Hellfire's Protector
-						["sym"] = {
-							{ "select", "encounterID", 1427 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127958, {	-- Gauntlets of Hellfire's Vanquisher
-						["sym"] = {
-							{ "select", "encounterID", 1427 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
-						},
-					})),
 				})),
 				cr(90269, e(1394, {	-- Tyrant Velhari
 					ach(10041),	-- Mythic: Tyrant Velhari
@@ -1781,6 +1761,33 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				})),
 				cr(93068, e(1447, {	-- Xhul'horac
 					ach(10039),	-- Mythic: Xhul'horac
+					un(REMOVED_FROM_GAME, i(127957, {	-- Shoulders of Hellfire's Conqueror
+						["sym"] = {
+							{ "select", "encounterID", 1447 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127967, {	-- Shoulders of Hellfire's Protector
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127961, {	-- Shoulders of Hellfire's Vanquisher
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
+					})),
 					i(124179),	-- Deathrattle Shoulderpads (Warlock)
 					i(124178),	-- Pious Mantle (Priest)
 					i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
@@ -1805,36 +1812,36 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124199),	-- Loop of Beckoned Shadows
 					i(124189),	-- Portal Key Signet
 					i(124234),	-- Unstable Felshadow Emulsion
-					un(REMOVED_FROM_GAME, i(127957, {	-- Shoulders of Hellfire's Conqueror
-						["sym"] = {
-							{ "select", "encounterID", 1447 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127967, {	-- Shoulders of Hellfire's Protector
-						["sym"] = {
-							{ "select", "encounterID", 1427 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127961, {	-- Shoulders of Hellfire's Vanquisher
-						["sym"] = {
-							{ "select", "encounterID", 1427 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
-						},
-					})),
 				})),
 				cr(91349, e(1395, {	-- Mannoroth
 					ach(10042),	-- Mythic: Mannoroth
+					un(REMOVED_FROM_GAME, i(127953, {	-- Chest of Hellfire's Conqueror
+						["sym"] = {
+							{ "select", "encounterID", 1395 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127963, {	-- Chest of Hellfire's Protector
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
+						},
+					})),
+					un(REMOVED_FROM_GAME, i(127962, {	-- Chest of Hellfire's Vanquisher
+						["sym"] = {
+							{ "select", "encounterID", 1427 },	-- This encounter
+							{ "pop" },							-- pop the encounter Headers
+							{ "where", "modID", 6 },			-- only keep this difficulty
+							{ "is", "sourceID" },						-- only items with a sourceID
+							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
+						},
+					})),
 					i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
 					i(124173),	-- Deathrattle Robe (Warlock)
 					i(124172),	-- Pious Raiment (Priest)
@@ -1860,33 +1867,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(124204),	-- Mannoroth's Calcified Eye
 					i(124238),	-- Empty Drinking Horn
 					i(124230),	-- Prophecy of Fear
-					un(REMOVED_FROM_GAME, i(127953, {	-- Chest of Hellfire's Conqueror
-						["sym"] = {
-							{ "select", "encounterID", 1395 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127963, {	-- Chest of Hellfire's Protector
-						["sym"] = {
-							{ "select", "encounterID", 1427 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(127962, {	-- Chest of Hellfire's Vanquisher
-						["sym"] = {
-							{ "select", "encounterID", 1427 },	-- This encounter
-							{ "pop" },							-- pop the encounter Headers
-							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
-							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
-						},
-					})),
 				})),
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
@@ -1900,32 +1880,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					i(133762, {	-- Remnant of Chaos
 						["timeline"] = { "removed 7.0.3" },
 					}),
-					i(124389),	-- Calamity's Edge
-					i(124382),	-- Edict of Argus
-					i(124372),	-- Gavel of the Eredar
-					i(124159),	-- Demon Prince's Ascendant Crown
-					i(124210),	-- Choker of the Great Betrayer
-					i(124222),	-- World Ender's Gorget
-					i(124343),	-- Doomcrier's Shoulderplates
-					i(124176),	-- Mantle of the Eredar Lord
-					i(124144),	-- Cloak of Incendiary Wrath
-					i(124291),	-- Eredar Fel-Chain Gloves
-					i(124254),	-- Felfinger Runegloves
-					i(124200),	-- Demonbuckle Sash of Argus
-					i(124276),	-- Waistwrap of Banishment
-					i(124322),	-- Treads of the Defiler
-					i(139630),	-- Etching of Sargeras
-					i(124522),	-- Fragment of the Dark Star
-					i(124518),	-- Libram of Vindication
-					i(124519),	-- Repudiation of War
-					i(124521),	-- Core of the Primal Elements
-					i(124517),	-- Sacred Draenic Incense
-					i(124515),	-- Talisman of the Master Tracker
-					i(124523),	-- Worldbreaker's Resolve
-					i(124520),	-- Bleeding Hollow Toxin Vessel
-					i(124513),	-- Reaper's Harvest
-					i(124514),	-- Seed of Creation
-					i(124516),	-- Tome of Shifting Words
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1438 },	-- This encounter
@@ -1953,7 +1907,32 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
+					i(124389),	-- Calamity's Edge
+					i(124382),	-- Edict of Argus
+					i(124372),	-- Gavel of the Eredar
+					i(124159),	-- Demon Prince's Ascendant Crown
+					i(124210),	-- Choker of the Great Betrayer
+					i(124222),	-- World Ender's Gorget
+					i(124343),	-- Doomcrier's Shoulderplates
+					i(124176),	-- Mantle of the Eredar Lord
+					i(124144),	-- Cloak of Incendiary Wrath
+					i(124291),	-- Eredar Fel-Chain Gloves
+					i(124254),	-- Felfinger Runegloves
+					i(124200),	-- Demonbuckle Sash of Argus
+					i(124276),	-- Waistwrap of Banishment
+					i(124322),	-- Treads of the Defiler
+					i(139630),	-- Etching of Sargeras
+					i(124522),	-- Fragment of the Dark Star
+					i(124518),	-- Libram of Vindication
+					i(124519),	-- Repudiation of War
+					i(124521),	-- Core of the Primal Elements
+					i(124517),	-- Sacred Draenic Incense
+					i(124515),	-- Talisman of the Master Tracker
+					i(124523),	-- Worldbreaker's Resolve
+					i(124520),	-- Bleeding Hollow Toxin Vessel
+					i(124513),	-- Reaper's Harvest
+					i(124514),	-- Seed of Creation
+					i(124516),	-- Tome of Shifting Words
 				})),
 			}),
 		},

@@ -23,12 +23,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 189021 },	-- Thaelin Darkanvil
 					["coord"] = { 82.1, 31.9, THE_WAKING_SHORES },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(198398),	-- Primal Proto-Whelp Scale (QI!)
+					},
 				}),
 				q(65451, {	-- Practice Materials [H]
 					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 					["provider"] = { "n", 184844 },	-- Boss Magor
 					["coord"] = { 80.6, 27.7, THE_WAKING_SHORES },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(189565),	-- Primal Proto-Whelp Scale (QI!)
+					},
 				}),
 				q(70123, {	-- Primal Pests [A]
 					["sourceQuests"] = { 67700 },		-- To The Dragon Isles! [A]
@@ -45,8 +51,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70125, {	-- Where is Wrathion? [A]
 					["sourceQuests"] = {
 						70122,	-- Explorers in Peril [A]
-						-- 70124,	-- Practice Materials [A]
-						-- 70123,	-- Primal Pests [A]
 					},
 					["provider"] = { "n", 187251 },	-- Toddy Whiskers
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
@@ -55,8 +59,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(69910, {	-- Where is Wrathion? [H]
 					["sourceQuests"] = {
 						65452,	-- Explorers in Peril [H]
-						-- 65451,	-- Practice Materials [H]
-						-- 65453,	-- Primal Pests [H]
 					},
 					["provider"] = { "n", 184870 },	-- Naleidea Rivergleam
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
@@ -71,7 +73,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 				}),
 				q(69912, {	-- My First Real Emergency!
-					["sourceQuests"] = { 69911 },	-- Excuse the Mess
+					["sourceQuests"] = {
+						69911,	-- Excuse the Mess
+						70123,	-- Primal Pests [A]
+						65453,	-- Primal Pests [H]
+						70124,	-- Practice Materials [A]
+						65451,	-- Practice Materials [H]
+					},
 					["provider"] = { "n", 193362 },	-- Sendrax
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 				}),
@@ -161,6 +169,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65997 },	-- Chasing Sendrax
 					["provider"] = { "o", 377499 },	-- On the Origin of Draconic Species
 					["coord"] = { 55.3, 24.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(192754),	-- Dracuixote (QI!)
+						i(192757),	-- Pride and Protodrakes (QI!)
+						i(192755),	-- The Lord of the Wings (QI!)
+						i(192756),	-- The Red and the Black Flights (QI!)
+						i(192753),	-- The Scales of Wrath (QI!)
+						i(192745),	-- The Titanic Comedy (QI!)
+					},
 				}),
 				q(65999, {	-- Red in Tooth and Claw
 					["sourceQuests"] = { 65997 },	-- Chasing Sendrax
@@ -222,6 +238,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
 					["g"] = {
 						i(188169),	-- Bronze Timepiece
+					},
+				}),
+				q(77345, {	-- The Need For Higher Velocities
+					["sourceQuests"] = { 65133 },	-- How to Use Momentum with Your Dragon
+					["provider"] = { "n", 193287 },	-- Lord Andestrasz
+					["timeline"] = { ADDED_10_1_7 },
+					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
+					["g"] = {
+						i(208182),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(68796, {	-- The Skytop Observatory
@@ -411,6 +436,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 186493 },	-- Forgemaster Bazentus
 					["coord"] = { 27.3, 62.8, THE_WAKING_SHORES },
+					["g"] = {
+						i(192548),	-- Cindershard Coal (QI!)
+					},
 				}),
 				q(66354, {	-- The Spark
 					["sourceQuests"] = { 66056 },	-- Forging A New Future
@@ -529,6 +557,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
 					["g"] = {
 						i(194367),	-- Band of Focused Elements
+						i(192562),	-- Orb of Primal Waves (QI!)
 					},
 				}),
 				q(66438, {	-- Lofty Goals
@@ -539,6 +568,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 188503 },	-- Examiner Tae'Shara Bloodwatcher
 					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(192524),	-- Orb of Primal Gales (QI!)
+					},
 				}),
 				q(66439, {	-- Rapid Fire Plans
 					["sourceQuests"] = {
@@ -548,6 +580,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 188053 },	-- Acadia Chistlestone
 					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(192546),	-- Orb of Primal Flames (QI!)
+						i(192545),	-- Primal Flame Fragment (QI!)
+					},
 				}),
 				q(66442, {	-- Let's Get Theoretical
 					["sourceQuests"] = {
@@ -566,6 +602,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(194393),	-- Expedition Guard's Cudgel
 						i(194371),	-- Expedition Guard's Shield
 						i(194379),	-- Field Scout's Longblade
+						i(192480),	-- Fragmented Record Rubbing (QI!)
 						i(194386),	-- League Mercenary's Mace
 						i(194416),	-- Titan Lightning Generator
 						i(194372),	-- Vault Guardian's Missive
@@ -812,14 +849,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66104 },	-- Forensic Ecology
 					["provider"] = { "n", 186428 },	-- Ecologist Tharu
 					["coord"] = { 74.5, 42.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(191549),	-- Water-Infused Shell (QI!)
+						i(191546),	-- Wind-Infused Shell (QI!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16401.06, {	-- The Shadow of His Wings
 				q(65690, {	-- A Cultist's Misgivings
 					["sourceQuests"] = {
-						66079,	-- Wrathion Awaits
-						70125,	-- Where is Wrathion? (A)
-						69910,	-- Where is Wrathion? (H)
+						65444,	-- To the Dragon Isles! (H)
+						67700,  -- To the Dragon Isles! (A)
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -830,12 +870,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65690 },	-- A Cultist's Misgivings
 					["provider"] = { "n", 185628 },	-- Ayasanth
 					["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(190612),	-- Worldbreaker Cell Key (QI!)
+					},
 				}),
 				q(65687, {	-- Punching Up
 					["sourceQuests"] = {
-						66079,	-- Wrathion Awaits
-						70125,	-- Where is Wrathion? (A)
-						69910,	-- Where is Wrathion? (H)
+						65444,	-- To the Dragon Isles! (H)
+						67700,  -- To the Dragon Isles! (A)
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -892,7 +934,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16406.02, {	-- Duroz & Kolgar
 				q(70239, {	-- Untold Regrets
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = {
+						66114,	-- For the Benefit of the Queen
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 194801 },	-- Kolgar Flameguard
 					["coord"] = { 58.7, 67.8, THE_WAKING_SHORES },
 				}),
@@ -901,7 +947,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 194805 },	-- Bathoras
 					["coord"] = { 57.4, 65.7, THE_WAKING_SHORES },
 					["g"] = {
+						i(198668),	-- Blooming Shallowlily (QI!)
 						i(198673),	-- Empty Life Pool Vial
+						i(200109),	-- Medicative Potion (QI!)
+						i(198666),	-- Milky Snapflower (QI!)
 					},
 				}),
 				q(70241, {	-- The Bitter End
@@ -914,11 +963,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70241 },	-- The Bitter End
 					["provider"] = { "n", 194805 },	-- Bathoras
 					["coord"] = { 56.8, 64.4, THE_WAKING_SHORES },
+					["g"] = {
+						i(198701),	-- Inert Vessel (QI!)
+					},
 				}),
 				q(70708, {	-- Hallow
 					["sourceQuests"] = { 70242 },	-- Life After Life
 					["provider"] = { "n", 194801 },	-- Bathoras
 					["coord"] = { 58.4, 67.5, THE_WAKING_SHORES },
+					["g"] = {
+						i(200129),	-- Kolgar's Pack (QI!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16406.03, {	-- Tarjin the Blind
@@ -927,7 +982,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 16.1, 62.6, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 					["g"] = {
-						i(200143),	-- Fenistrasza's Skull
+						i(199822),	-- Impressive Dragon Skull (QI!)
 					},
 				}),
 			}),
@@ -947,6 +1002,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 					["g"] = {
 						i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
+						i(198979),	-- Time Capsule Letter
+						i(198430),	-- Time Capsule (QI!)
 					},
 				}),
 				q(70268, {	-- Memories Revived
@@ -1037,14 +1094,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
 				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren
 				["coord"] = { 54.4, 30.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(198511),	-- Building Materials (QI!)
+				},
 			}),
 			q(66112, {	-- Always Be Crafting
 				["sourceQuests"] = { 66110 },	-- Give Peace a Chance
 				["provider"] = { "n", 187261 },	-- Grun Ashbeard
 				["coord"] = { 76.4, 34.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(190386),	-- Primal Earthen Core (QI!)
+					i(194548),	-- Primal Molten Core (QI!)
+				},
 			}),
 			q(66612, {	-- Crabtender's Quandry
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["sourceQuests"] = {
+					65439,	-- To the Dragon Isles! (H)
+					67700,	-- To the Dragon Isles! (A)
+				},
 				["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
 				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
@@ -1076,7 +1143,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 193955 },	-- Lillistazsa
 				["coord"] = { 59.9, 70.4, THE_WAKING_SHORES },
 				["g"] = {
+					i(198345),	-- Glass Bead (QI!)
 					i(198857),	-- Lucky Duck (TOY!)
+					i(198344),	-- Scrap of Fabric (QI!)
+					i(198343),	-- Soft Ruby Feather (QI!)
 				},
 			}),
 			q(66101, {	-- From Such Great Heights
@@ -1097,7 +1167,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(71141, {	-- Gills with Gall
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["sourceQuests"] = {
+					65439,	-- To the Dragon Isles! (H)
+					67700,	-- To the Dragon Isles! (A)
+				},
 				["provider"] = { "n", 193304 },	-- Ru'Kroszk
 				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
@@ -1119,6 +1192,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
 				["sourceQuestNumRequired"] = 1,
 				["classes"] = { ROGUE },
+				["g"] = {
+					i(198133),	-- Golden Expedition Compass (QI!
+					i(198135),	-- Jeb's Supply Pack (QI!)
+					i(198139),	-- Jeb's Underwear
+					i(198134),	-- Shiny Surveyor Scope (QI!)
+				},
 			}),
 			q(69965, {	-- Quality Assurance
 				["sourceQuests"] = { 66110 },	-- Give Peace a Chance
@@ -1130,6 +1209,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
 				["g"] = {
 					i(194384),	-- Elemental Binding Ring
+					i(191278),	-- Molten Binding Rings (QI!)
 				},
 			}),
 			q(70414, {	-- Shaky Grounds
@@ -1160,6 +1240,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_HORDE },
+				["g"] = {
+					i(198447),	-- Bilgewater-Imported Imitation Crab (QI!)
+					i(198445),	-- Charred Zandali Chilis (QI!)
+					i(198446),	-- Fine Suramar Vintage (QI!)
+					i(198530),	-- Raw Zandali Chilis (QI!)
+				},
 			}),
 			q(70164, {	-- A Tinker's Chance
 				["provider"] = { "n", 194136 },	-- Eralshek
@@ -1168,6 +1254,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
 			q(70742, {	-- Runs in the Family
+				["sourceQuests"] = { 70446 },	-- A Personal History
 				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
 				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
 				["classes"] = { EVOKER },
@@ -1218,27 +1305,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["lockCriteria"] = { 1, "questID", 66244 },	-- To Valdrakken
 				["isBreadcrumb"] = true,
 			}),
-
-			-- #if AFTER 10.1.5
-			-- Evoker Storyline?
-			q(72513, {	-- Our Destiny
-				-- ["sourceQuests"] = {  },	--
-			}),
-			q(72514, {	-- The High Creche
-				["sourceQuests"] = { 72513 },	-- Our Destiny
-				["provider"] = { "n", 199135 },	-- Scalecommander Emberthal
-				["coord"] = { 58.6, 68.5, THE_FORBIDDEN_REACH },
-			}),
-			q(72515, {	-- Augmenting a Dragon
-				["sourceQuests"] = { 72514 },	-- The High Creche
-				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
-				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
-				["g"] = {
-					i(205162),	-- Nelthara (PET!)
-				},
-			}),
-			-- #endif
-
 			n(BONUS_OBJECTIVES, {
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
@@ -1507,6 +1573,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 			["name"] = "To Skytop Observatory",
 			["provider"] = { "n", 193287 },	-- Lord Andestrasz
 			["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
+		}),
+		o(404260, {	-- Riddle Solved!
+			["questID"] = 76451,
+			["coord"] = { 67.1, 56.8, THE_WAKING_SHORES},
 		}),
 	}),
 })));

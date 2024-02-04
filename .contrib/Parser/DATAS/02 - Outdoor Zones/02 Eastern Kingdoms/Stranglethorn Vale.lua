@@ -265,6 +265,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(BLACKSMITHING, {
+					n(2836, {	-- Brikk Keencraft <Master Blacksmith>
+						["coord"] = { 29.0, 75.4, STRANGLETHORN_VALE },
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_BLACKSMITHING,
+						-- #endif
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
+						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(610, {	-- "Pretty Boy" Duncan
 					["qg"] = 2542,	-- Catelyn the Blade
@@ -390,15 +407,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19024),	-- Arena Grand Master
 					},
 				})),
-				q(7810, {	-- Arena Master
+				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					["altQuests"] = { 7908 },	-- Arena Master
 					-- #if AFTER CATA
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
 					-- #endif
-				}),
+				})),
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
@@ -2143,22 +2159,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(30, 30, 1),
 				}),
-				q(5148, {	-- Tribal Leatherworking (H)
-					["qg"] = 7871,	-- Se'Jib
-					["altQuests"] = {
-						5145,	-- Dragonscale Leatherworking
-						5146,	-- Elemental Leatherworking
-					},
-					["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 8214, 1 },	-- Wild Leather Helmet
-						{ "i", 8211, 1 },	-- Wild Leather Vest
-					},
-					["lvl"] = 40,
-				}),
 				q(205, {	-- Troll Witchery
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207,	-- Kurzen's Mystery
@@ -2376,10 +2376,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5028, {	-- Lord Sakrasis' Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5029, {	-- Talisman of the Naga Lord
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2457,13 +2457,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					}},
 				}),
-				n(2836, {	-- Brikk Keencraft <Master Blacksmith>
-					["coord"] = { 29.0, 75.4, STRANGLETHORN_VALE },
-					-- #if BEFORE 2.1.0
-					["requireSkill"] = BLACKSMITHING,
-					["g"] = ARTISAN_BLACKSMITHING,
-					-- #endif
-				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					-- #if AFTER CATA
 					["coord"] = { 47.2, 10.2, NORTHERN_STRANGLETHORN },
@@ -2472,8 +2465,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
@@ -2519,10 +2512,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.0, 78.0, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2588,14 +2581,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(13940),	-- Recipe: Cooked Glossy Mightfish
-						i(13941),	-- Recipe: Filet of Redgill
-						i(6039),	-- Recipe: Giant Clam Scorcho
-						i(13943),	-- Recipe: Hot Smoked Bass
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
+						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
+						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
+						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
@@ -2665,9 +2658,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(21943, {	-- Design: Truesilver Crab
 							["isLimited"] = true,
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
@@ -2679,6 +2672,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 					},
@@ -2706,7 +2707,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
@@ -2879,9 +2880,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
+				-- #if BEFORE 4.0.3
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
+				-- #endif
 				i(1624, {	-- Skullsplitter Helm
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["crs"] = {
@@ -2894,11 +2897,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 676,	-- Venture Co. Surveyor
 				}),
 				i(1652, {	-- Sturdy Lunchbox
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if AFTER 10.1.7
+					["cr"] = 921,	-- Venture Co. Lumberjack
+					-- #else
 					["crs"] = {
 						675,	-- Venture Co. Foreman
 						14492,	-- Verifonix <The Surveyor>
 					},
+					-- #endif
 				}),
 				i(1996, {	-- Voodoo Band
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
@@ -2909,6 +2916,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 		},
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
+	m(STRANGLETHORN_VALE, {
+		q(7908),	-- triggered when completing 7810 'Arena Master'
 	}),
 }));
 -- #endif

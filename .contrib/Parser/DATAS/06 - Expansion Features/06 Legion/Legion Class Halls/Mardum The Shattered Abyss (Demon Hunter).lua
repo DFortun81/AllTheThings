@@ -548,7 +548,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					q(42754, {	-- Jump-Capable
 						["sourceQuests"] = {
 							42733,	-- A Very Special Kind of Fuel
-							42732,	-- Deadlier Warglaives
+							-- 42732,	-- Deadlier Warglaives
 						},
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 74.0, 721 },
@@ -576,7 +576,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["lvl"] = 103,
 					}),
 					q(46333, {	-- Livin' on the Ledge
-						["sourceQuests"] = { 46251 },	-- Shard Times
+						["sourceQuests"] = {
+							46734,	-- Assault on Broken Shore
+							47137,	-- Champions of Legionfall
+						},
 						["provider"] = { "n", 118316 },	-- Illidari Enforcer
 						["coord"] = { 44.0, 62.7, BROKEN_SHORE },
 					}),
@@ -975,7 +978,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								["cost"] = { { "c", 1220, 10000 }, },	-- 10,000x Order Resources
 							}),
 							i(139721, {	-- Belt of the Shattered Abyss
 								["cost"] = 5000000,	-- 500g

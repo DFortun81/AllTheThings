@@ -118,6 +118,67 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
+				q(9551, {	-- Call of Air (1/4) [The Exodar]
+					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
+					["coord"] = { 32.6, 24.2, THE_EXODAR },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(9547, {	-- Call of Air (1/4) [Ironforge]
+					["qg"] = 23127,	-- Farseer Javad <Shaman Trainer>
+					["coord"] = { 55.2, 29.6, IRONFORGE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(10491, {	-- Call of Air (1/4) [Stormwind City]
+					["qg"] = 20407,	-- Farseer Umbrua <Shaman Trainer>
+					["coord"] = { 61.8, 83.8, STORMWIND_CITY },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(9552, {	-- Call of Air (2/4)
+					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
+					["sourceQuests"] = {
+						9551,	-- Call of Air (1/4) [The Exodar]
+						9547,	-- Call of Air (1/4) [Ironforge]
+						10491,	-- Call of Air (1/4) [Stormwind City]
+					},
+					["coord"] = { 31, 27.8, THE_EXODAR },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["maps"] = { AZUREMYST_ISLE },
+					["races"] = { DRAENEI },
+					["lvl"] = 30,
+				}),
+				q(9553, {	-- Call of Air (3/4)
+					["qg"] = 17431,	-- Velaada
+					["sourceQuest"] = 9552,	-- Call of Air (2/4)
+					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["lvl"] = 30,
+				}),
+				q(9554, {	-- Call of Air (4/4)
+					["providers"] = {
+						{ "n", 17435 },	-- Susurrus
+						{ "i", 23843 },	-- Whorl of Air
+					},
+					["sourceQuest"] = 9553,	-- Call of Air (3/4)
+					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["lvl"] = 30,
+					["groups"] = {
+						i(5178, {	-- Air Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+				}),
 				q(9605, {	-- Hippogryph Master Stephanos
 					["qg"] = 16768,	-- Nurguni
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
@@ -145,7 +206,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20914,	-- Aalun <Riding Trainer>
 					["coord"] = { 81.4, 52.6, THE_EXODAR },
 					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["DisablePartySync"] = true,
@@ -226,10 +287,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 28.1, 61.9, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(22900, {	-- Recipe: Elixir of Camouflage
+						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23574, {	-- Recipe: Transmute Primal Might
+						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -402,9 +463,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
-							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
-							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["timeline"] = { "removed 3.2.0"},
@@ -416,10 +475,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(16766, {	-- Issca <Tabard Vendor>
 					["coord"] = { 53.8, 67.2, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER WRATH
 					["sym"] = { { "sub", "common_vendor", 5193 } },	-- Rebecca Laughlin <Tabard Designer>
-					-- #endif
+					["races"] = ALLIANCE_ONLY,
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
 					["coord"] = { 54.8, 36.8, THE_EXODAR },
@@ -613,8 +670,8 @@ for i,o in ipairs({
 	i(16060),	-- Common White Shirt
 }) do table.insert(GORNII_GROUPS, o); end
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(PHEA_GROUPS, o); end
 for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

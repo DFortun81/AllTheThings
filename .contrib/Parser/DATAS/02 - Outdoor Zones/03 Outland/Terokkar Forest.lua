@@ -131,50 +131,50 @@ root(ROOTS.Zones, {
 						["rank"] = 63,
 						-- #endif
 						-- #else
-						["groups"] = {
-							crit(1, {	-- The Skettis Offensive
-								["sourceQuest"] = 10879,	-- The Skettis Offensive
-							}),
-							crit(2, {	-- Refugee Caravan
-								["sourceQuests"] = {
-									10878,	-- Before Darkness Falls
-									10031,	-- Helping the Lost Find Their Way
-									10852,	-- Missing Friends
-									10896,	-- The Infested Protectors
-									10881,	-- The Shadow Tomb
-									10842,	-- Vengeful Souls
-								},
-							}),
-							crit(3, {	-- Sha'tari Base Camp
-								["sourceQuests"] = {
-									10915,	-- The Fallen Exarch
-									10926,	-- Return to Sha'tari Base Camp
-									10930,	-- The Big Bone Worm
-									-- TODO: verify below:
-									10923,	-- Evil Draws Near
-									10873,	-- Taken in the Night
-								},
-							}),
-							crit(4, {	-- The Warden's Secret
-								["sourceQuests"] = {
-									9951,	-- It's Watching You!
-									10005,	-- Letting Earthbinder Tavgren Know
-								},
-							}),
-							crit(5, {	-- Allerian Stronghold
-								["sourceQuests"] = {
-									10042,	-- Kill the Shadow Council!
-									10035,	-- Torgos!
-									10022,	-- The Elusive Ironjaw
-									-- TODO: not 100% sure if every quest below is required
-									10012,	-- Fel Orc Plans
-									10007,	-- Thinning the Ranks
-									10869,	-- Thin the Flock
-									9986,	-- Stymying the Arakkoa
-									10028,	-- Vessels of Power
-								},
-							}),
-						},
+						-- ["groups"] = {
+						-- 	crit(1, {	-- The Skettis Offensive
+						-- 		["sourceQuest"] = 10879,	-- The Skettis Offensive
+						-- 	}),
+						-- 	crit(2, {	-- Refugee Caravan
+						-- 		["sourceQuests"] = {
+						-- 			10878,	-- Before Darkness Falls
+						-- 			10031,	-- Helping the Lost Find Their Way
+						-- 			10852,	-- Missing Friends
+						-- 			10896,	-- The Infested Protectors
+						-- 			10881,	-- The Shadow Tomb
+						-- 			10842,	-- Vengeful Souls
+						-- 		},
+						-- 	}),
+						-- 	crit(3, {	-- Sha'tari Base Camp
+						-- 		["sourceQuests"] = {
+						-- 			10915,	-- The Fallen Exarch
+						-- 			10926,	-- Return to Sha'tari Base Camp
+						-- 			10930,	-- The Big Bone Worm
+						-- 			-- TODO: verify below:
+						-- 			10923,	-- Evil Draws Near
+						-- 			10873,	-- Taken in the Night
+						-- 		},
+						-- 	}),
+						-- 	crit(4, {	-- The Warden's Secret
+						-- 		["sourceQuests"] = {
+						-- 			9951,	-- It's Watching You!
+						-- 			10005,	-- Letting Earthbinder Tavgren Know
+						-- 		},
+						-- 	}),
+						-- 	crit(5, {	-- Allerian Stronghold
+						-- 		["sourceQuests"] = {
+						-- 			10042,	-- Kill the Shadow Council!
+						-- 			10035,	-- Torgos!
+						-- 			10022,	-- The Elusive Ironjaw
+						-- 			-- TODO: not 100% sure if every quest below is required
+						-- 			10012,	-- Fel Orc Plans
+						-- 			10007,	-- Thinning the Ranks
+						-- 			10869,	-- Thin the Flock
+						-- 			9986,	-- Stymying the Arakkoa
+						-- 			10028,	-- Vessels of Power
+						-- 		},
+						-- 	}),
+						-- },
 						-- #endif
 					}),
 					ach(1272, {	-- Terror of Terokkar (H)
@@ -225,49 +225,49 @@ root(ROOTS.Zones, {
 						["rank"] = 68,
 						-- #endif
 						-- #else
-						["groups"] = {
-							crit(1, {	-- The Skettis Offensive
-								["sourceQuest"] = 10879,	-- The Skettis Offensive
-							}),
-							crit(2, {	-- Refugee Caravan
-								["sourceQuests"] = {
-									10878,	-- Before Darkness Falls
-									10031,	-- Helping the Lost Find Their Way
-									10852,	-- Missing Friends
-									10896,	-- The Infested Protectors
-									10881,	-- The Shadow Tomb
-									10842,	-- Vengeful Souls
-								},
-							}),
-							crit(3, {	-- Sha'tari Base Camp
-								["sourceQuests"] = {
-									10915,	-- The Fallen Exarch
-									10926,	-- Return to Sha'tari Base Camp
-									10930,	-- The Big Bone Worm
-									-- TODO: verify below:
-									10923,	-- Evil Draws Near
-									10873,	-- Taken in the Night
-								},
-							}),
-							crit(4, {	-- The Warden's Secret
-								["sourceQuests"] = {
-									9951,	-- It's Watching You!
-									10005,	-- Letting Earthbinder Tavgren Know
-								},
-							}),
-							crit(5, {	-- Stonebreaker Hold
-								["sourceQuests"] = {
-									10013,	-- An Unseen Hand
-									10043,	-- Kill the Shadow Council
-									10791,	-- Welcoming the Wolf Spirit
-									-- TODO: Verify below:
-									10201,	-- And Now, the Moment of Truth
-									10868,	-- Arakkoa War Path
-									9987,	-- Stymying the Arakkoa
-									10036,	-- Torgos!
-								},
-							}),
-						},
+						-- ["groups"] = {
+						-- 	crit(1, {	-- The Skettis Offensive
+						-- 		["sourceQuest"] = 10879,	-- The Skettis Offensive
+						-- 	}),
+						-- 	crit(2, {	-- Refugee Caravan
+						-- 		["sourceQuests"] = {
+						-- 			10878,	-- Before Darkness Falls
+						-- 			10031,	-- Helping the Lost Find Their Way
+						-- 			10852,	-- Missing Friends
+						-- 			10896,	-- The Infested Protectors
+						-- 			10881,	-- The Shadow Tomb
+						-- 			10842,	-- Vengeful Souls
+						-- 		},
+						-- 	}),
+						-- 	crit(3, {	-- Sha'tari Base Camp
+						-- 		["sourceQuests"] = {
+						-- 			10915,	-- The Fallen Exarch
+						-- 			10926,	-- Return to Sha'tari Base Camp
+						-- 			10930,	-- The Big Bone Worm
+						-- 			-- TODO: verify below:
+						-- 			10923,	-- Evil Draws Near
+						-- 			10873,	-- Taken in the Night
+						-- 		},
+						-- 	}),
+						-- 	crit(4, {	-- The Warden's Secret
+						-- 		["sourceQuests"] = {
+						-- 			9951,	-- It's Watching You!
+						-- 			10005,	-- Letting Earthbinder Tavgren Know
+						-- 		},
+						-- 	}),
+						-- 	crit(5, {	-- Stonebreaker Hold
+						-- 		["sourceQuests"] = {
+						-- 			10013,	-- An Unseen Hand
+						-- 			10043,	-- Kill the Shadow Council
+						-- 			10791,	-- Welcoming the Wolf Spirit
+						-- 			-- TODO: Verify below:
+						-- 			10201,	-- And Now, the Moment of Truth
+						-- 			10868,	-- Arakkoa War Path
+						-- 			9987,	-- Stymying the Arakkoa
+						-- 			10036,	-- Torgos!
+						-- 		},
+						-- 	}),
+						-- },
 						-- #endif
 					}),
 				}),
@@ -391,7 +391,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Blackfin Darter
 								["provider"] = { "i", 34865 },	-- Blackfin Darter
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(11665, {  -- Crocolisks in the City
@@ -417,7 +417,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Monstrous Felblood Snapper
 								["provider"] = { "i", 34867 },	-- Monstrous Felblood Snapper
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(11668, {	-- Shrimpin' Ain't Easy
@@ -430,7 +430,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/10 Giant Freshwater Shrimp
 								["provider"] = { "i", 34866 },	-- Giant Freshwater Shrimp
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(11667, {	-- The One That Got Away
@@ -443,7 +443,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 World's Largest Mudfish
 								["provider"] = { "i", 34868 },	-- World's Largest Mudfish
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11885, {	-- Adversarial Blood
@@ -663,6 +663,14 @@ root(ROOTS.Zones, {
 					q(9971, {	-- Clues in the Thicket
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
+					}),
+					q(10104, {	-- Concerns About Tuurem
+						["qg"] = 18008,	-- Ikuti
+						["altQuests"] = { 9793 },	-- The Fate of Tuurem
+						["coord"] = { 41.8, 27.2, ZANGARMARSH },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(10922, {	-- Digging Through Bones -- aa
 						["qg"] = 22458,	-- Chief Archaeologist Letoll
@@ -1019,6 +1027,17 @@ root(ROOTS.Zones, {
 							i(31794),	-- Sha'tari Vindicator's Legplates
 						},
 					}),
+					q(9793, {	-- The Fate of Tuurem
+						["providers"] = {
+							{ "n", 18004 },	-- Vindicator Idaar
+							{ "i", 24415 },	-- Vindicator Idaar's Letter
+						},
+						["altQuests"] = { 10104 },	-- Concerns About Tuurem
+						["coord"] = { 68.2, 50.0, ZANGARMARSH },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
+					}),
 					q(10446, {	-- The Final Code (A)
 						["qg"] = 21006,	-- Lieutenant Meridian
 						["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
@@ -1168,7 +1187,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10849,	-- Seek Out Kirrik
 					}),
 					q(10842, {	-- Vengeful Souls
-						["qg"] = 21465,	-- High Priest Orglum
+						["qg"] = 22278,	-- High Priest Orglum
 						["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
 						--["sourceQuest"] = 10852,	-- Missing Friends
@@ -1495,7 +1514,8 @@ root(ROOTS.Zones, {
 					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
 						["groups"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(34828),	-- Antique Silver Cufflinks
 							i(34837),	-- The 2 Ring
 							i(35350),	-- Chuck (PET!)
 							i(34826),	-- Gold Wedding Band
@@ -1511,7 +1531,8 @@ root(ROOTS.Zones, {
 					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(34828),	-- Antique Silver Cufflinks
 							i(34831),	-- Eye of the Sea
 							i(34826),	-- Gold Wedding Band
 							i(34827),	-- Noble's Monocle
@@ -1555,26 +1576,26 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
+							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)
 						},
 					}),
 					n(18957, {	-- Innkeeper Grilka <Innkeeper>
 						["coord"] = { 48.8, 45.0, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							i(27690),	-- Recipe: Blackened Basilisk (RECIPE!)
+							i(27692),	-- Recipe: Warp Burger (RECIPE!)
 						},
 					}),
 					n(19042, {	-- Leeli Longhaggle <Trade Goods>
 						["coord"] = { 57.6, 53.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22911, {	-- Recipe: Major Dreamless Sleep Potion
+							i(22911, {	-- Recipe: Major Dreamless Sleep Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22901, {	-- Recipe: Sneaking Potion
+							i(22901, {	-- Recipe: Sneaking Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1586,8 +1607,8 @@ root(ROOTS.Zones, {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
 								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 							}),
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
+							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)
 						},
 					}),
 					n(19772, {	-- Spirit Sage Gartok
@@ -1684,19 +1705,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.8, 53.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							i(27690),	-- Recipe: Blackened Basilisk (RECIPE!)
+							i(27692),	-- Recipe: Warp Burger (RECIPE!)
 						},
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(34491, {    -- Pattern: Bag of Many Hides
+					i(34491, {    -- Pattern: Bag of Many Hides (RECIPE!)
 						["crs"] = {
 							22143,    -- Gordunni Back-Breaker
 							22144,    -- Gordunni Elementalist
 							22148,    -- Gordunni Head-Splitter
 							23022,    -- Gordunni Soulreaper
 						},
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, i(34255, {	-- Razorthorn Flayer Gland
 						["cr"] = 24920,	-- Razorthorn Flayer
@@ -1728,10 +1750,3 @@ appendGroups({
 
 -- Remove the phase flag.
 UNHOLY_ENCHANT.u = nil;
-
--- #if AFTER TBC
--- These quests trigger after specific events occur in the zone.
-root(ROOTS.HiddenQuestTriggers, {
-	q(10925),	-- Evil Draws Near - completed with quest 10923
-	q(11072),	-- Adversarial Blood - completed with quest 11885
-});

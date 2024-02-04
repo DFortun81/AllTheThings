@@ -19,46 +19,46 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(8069, {	-- Last Stand of the Zandalari
-					crit(1, {	-- Jin'rokh the Breaker
+					crit(22912, {	-- Jin'rokh the Breaker
 						["_encounter"] = { 827, 7 },
 					}),
-					crit(2, {	-- Horridon
+					crit(22984, {	-- Horridon
 						["_encounter"] = { 819, 7 },
 					}),
-					crit(3, {	-- Council of Elders
+					crit(22963, {	-- Council of Elders
 						["_encounter"] = { 816, 7 },
 					}),
 				}),
 				ach(8070, {	-- Forgotten Depths
-					crit(1, {	-- Tortos
+					crit(22985, {	-- Tortos
 						["_encounter"] = { 825, 7 },
 					}),
-					crit(2, {	-- Megaera
+					crit(22986, {	-- Megaera
 						["_encounter"] = { 821, 7 },
 					}),
-					crit(3, {	-- Ji-Kun
+					crit(22987, {	-- Ji-Kun
 						["_encounter"] = { 828, 7 },
 					}),
 				}),
 				ach(8071, {	-- Halls of Flesh-Shaping
-					crit(1, {	-- Durumu the Forgotten
+					crit(22988, {	-- Durumu the Forgotten
 						["_encounter"] = { 818, 7 },
 					}),
-					crit(2, {	-- Primordius
+					crit(22989, {	-- Primordius
 						["_encounter"] = { 820, 7 },
 					}),
-					crit(3, {	-- Dark Animus
+					crit(22990, {	-- Dark Animus
 						["_encounter"] = { 824, 7 },
 					}),
 				}),
 				ach(8072, {	-- Pinnacle of Storms
-					crit(1, {	-- Iron Qon
+					crit(22991, {	-- Iron Qon
 						["_encounter"] = { 817, 7 },
 					}),
-					crit(2, {	-- Twin Empyreans
+					crit(22965, {	-- Twin Empyreans
 						["_encounter"] = { 829, 7 },
 					}),
-					crit(3, {	-- Lei Shen
+					crit(23317, {	-- Lei Shen
 						["_encounter"] = { 832, 7 },
 					}),
 				}),
@@ -94,6 +94,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					},
 				}),
 				ach(11758),	-- Thunderwear
+				ach(8210),	-- Shado-Pan Assault
 
 				-- Guild Achievements
 				ach(8140),	-- Throne of Thunder Guild Run
@@ -104,6 +105,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				i(94593),	-- Secrets of the Empire
 				i(94594),	-- Titan Runestone
 			})),
+			n(FACTIONS, {
+				faction(1435),	-- Shado-Pan Assault
+			}),
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
@@ -171,6 +175,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 					["crs"] = { 68220 },	-- Gastropod
 				}),
+				i(212750, {	-- Grimoire of the Ancient Observer (CI!)
+					["description"] = "Guide TBW...",
+					["timeline"] = { ADDED_10_2_5 },
+				}),
 				i(94125, {	-- Living Sandling (PET!)
 					["crs"] = { 69944 },	-- Sand Elemental
 				}),
@@ -228,11 +236,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					i(96340),	-- Vaultwalker Sabatons
 				}),
 			}),
-			d(7, {	-- LFR Queue NPC
+			d(RAID_FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(7, {	-- LFR
+			d(RAID_FINDER, {
 				i(95343, {	-- Treasures of the Thunder
 					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 					["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },
@@ -877,13 +885,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						},
 						["g"] = {
 							ach(8082, {	-- Head Case
-								crit(1, {	-- Flaming
+								crit(22744, {	-- Flaming
 									["crs"] = { 70212 },
 								}),
-								crit(2, {	-- Frozen
+								crit(22746, {	-- Frozen
 									["crs"] = { 70235 },
 								}),
-								crit(3, {	-- Venomous
+								crit(22747, {	-- Venomous
 									["crs"] = { 70247 },
 								}),
 							}),
@@ -1068,76 +1076,76 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						},
 						["g"] = {
 							ach(8081, {	-- Ritualist Who?
-								crit(1, {	-- Aridian
+								crit(22765, {	-- Aridian
 									["cr"] = 69726,
 								}),
-								crit(2, {	-- Auton
+								crit(22766, {	-- Auton
 									["cr"] = 69718,
 								}),
-								crit(3, {	-- Bandril
+								crit(22767, {	-- Bandril
 									["cr"] = 69728,
 								}),
-								crit(4, {	-- Drahvin
+								crit(22768, {	-- Drahvin
 									["cr"] = 69727,
 								}),
-								crit(5, {	-- Drashig
+								crit(22769, {	-- Drashig
 									["cr"] = 69731,
 								}),
-								crit(6, {	-- Fendahl
+								crit(22770, {	-- Fendahl
 									["cr"] = 69734,
 								}),
-								crit(7, {	-- Gond
+								crit(22771, {	-- Gond
 									["cr"] = 69729,
 								}),
-								crit(8, {	-- Jagaroth
+								crit(22772, {	-- Jagaroth
 									["cr"] = 69721,
 								}),
-								crit(9, {	-- Kroll
+								crit(22773, {	-- Kroll
 									["cr"] = 69710,
 								}),
-								crit(10, {	-- Kitling
+								crit(22774, {	-- Kitling
 									["cr"] = 69716,
 								}),
-								crit(11, {	-- Malus
+								crit(22775, {	-- Malus
 									["cr"] = 69733,
 								}),
-								crit(12, {	-- Mandrel
+								crit(22776, {	-- Mandrel
 									["cr"] = 69737,
 								}),
-								crit(13, {	-- Megara
+								crit(22777, {	-- Megara
 									["cr"] = 69719,
 								}),
-								crit(14, {	-- Morok
+								crit(22778, {	-- Morok
 									["cr"] = 69722,
 								}),
-								crit(15, {	-- Ogri
+								crit(22779, {	-- Ogri
 									["cr"] = 69735,
 								}),
-								crit(16, {	-- Ogron
+								crit(22780, {	-- Ogron
 									["cr"] = 69730,
 								}),
-								crit(17, {	-- Rill
+								crit(22781, {	-- Rill
 									["cr"] = 69725,
 								}),
-								crit(18, {	-- Rutan
+								crit(22782, {	-- Rutan
 									["cr"] = 69736,
 								}),
-								crit(19, {	-- Sirian
+								crit(22783, {	-- Sirian
 									["cr"] = 69720,
 								}),
-								crit(20, {	-- Tetrap
+								crit(22784, {	-- Tetrap
 									["cr"] = 69738,
 								}),
-								crit(21, {	-- Thal
+								crit(22785, {	-- Thal
 									["cr"] = 69709,
 								}),
-								crit(22, {	-- Voord
+								crit(22786, {	-- Voord
 									["cr"] = 69723,
 								}),
-								crit(23, {	-- Wirrn
+								crit(22787, {	-- Wirrn
 									["cr"] = 69732,
 								}),
-								crit(24, {	-- Xeron
+								crit(22789, {	-- Xeron
 									["cr"] = 69724,
 								}),
 							}),
@@ -1179,15 +1187,15 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						},
 						["g"] = {
 							ach(8087, {	-- Can't Touch This
-								crit(1, {	-- Burning Cinders
+								crit(22791, {	-- Burning Cinders
 								}),
-								crit(2, {	-- Frozen Blood
+								crit(22792, {	-- Frozen Blood
 								}),
-								crit(3, {	-- Storm Cloud
+								crit(22793, {	-- Storm Cloud
 								}),
-								crit(4, {	-- Frozen Solid!
+								crit(22794, {	-- Frozen Solid!
 								}),
-								crit(5, {	-- Rushing Winds
+								crit(22795, {	-- Rushing Winds
 								}),
 							}),
 							i(95578),	-- Shoulders of the Crackling Conqueror
@@ -1259,13 +1267,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 68397 },	-- Lei Shen
 						["g"] = {
 							ach(8090, {	-- A Complete Circuit
-								crit(1, {	-- Static Shock Conduit Disabled First
+								crit(22797, {	-- Static Shock Conduit Disabled First
 								}),
-								crit(2, {	-- Diffusion Chain Conduit Disabled First
+								crit(22996, {	-- Diffusion Chain Conduit Disabled First
 								}),
-								crit(3, {	-- Overcharge Conduit Disabled First
+								crit(22997, {	-- Overcharge Conduit Disabled First
 								}),
-								crit(4, {	-- Bouncing Bolt Conduit Disabled First
+								crit(22998, {	-- Bouncing Bolt Conduit Disabled First
 								}),
 							}),
 							ach(8249, {	-- Ahead of the Curve: Lei Shen

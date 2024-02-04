@@ -74,7 +74,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14331),	-- Eternal Cloak
 		i(15309),	-- Feral Cloak
 		i(12979),	-- Firebane Cloak
-		i(2652),	-- Flimsy Chain Cloak
+		i(2652, {	-- Flimsy Chain Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(4710),	-- Forest Cloak
 		i(15632),	-- Formidable Cape
 		i(9812),	-- Fortified Cloak
@@ -140,11 +142,15 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14665),	-- Keeper's Cloak
 		i(14781),	-- Khan's Cloak
 		i(7460),	-- Knight's Cloak
-		i(1741),	-- Laced Cloak
+		i(1741, {	-- Laced Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(4706),	-- Lambent Scale Cloak
 		i(3995),	-- Laminated Scale Cloak
 		i(1749),	-- Linked Chain Cloak
-		i(2644),	-- Loose Chain Cloak
+		i(2644, {	-- Loose Chain Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(10079),	-- Lord's Cape
 		i(14251),	-- Lunar Cloak
 		i(15015),	-- Lupine Cloak
@@ -170,7 +176,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15501),	-- Outrunner's Cloak
 		i(4003),	-- Overlinked Chain Cloak
 		i(14161),	-- Pagan Cape
-		i(1790),	-- Patched Cloak
+		i(1790, {	-- Patched Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(1429),	-- Patchwork Cloak
 		i(15340),	-- Pathfinder Cloak
 		i(15427),	-- Peerless Cloak
@@ -252,7 +260,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15483),	-- War Torn Cape
 		i(14602),	-- Warden's Cloak
 		i(9959),	-- Warmonger's Cloak
-		i(1505),	-- Warped Cloak
+		i(1505, {	-- Warped Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(4658),	-- Warrior's Cloak
 		i(14813),	-- Warstrike Cape
 		i(14179),	-- Watcher's Cape
@@ -261,8 +271,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14430),	-- Windchaser Cloak
 		i(13121),	-- Wing of the Whelpling
 		i(15371),	-- Wolf Rider's Cloak
-		i(1733),	-- Worn Cloak
-		i(1421),	-- Worn Hide Cloak
+		i(1733, {	-- Worn Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
+		i(1421, {	-- Worn Hide Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(15333),	-- Wrangler's Cloak
 	}),
 	filter(CLOTH, {
@@ -2054,10 +2068,6 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15524),	-- Sentry's Surcoat
 		i(12982),	-- Silver-Linked Footguards [CATA+] / Silver-linked Footguards
 		i(13132),	-- Skeletal Shoulders
-		i(120952, {	-- Slarkhide
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-			["timeline"] = { "added 6.1.0.19445", "removed 7.0.1" },
-		}),
 		i(14750),	-- Slayer's Cuffs
 		i(14754),	-- Slayer's Gloves
 		i(14757),	-- Slayer's Pants
@@ -2120,7 +2130,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(3213),	-- Veteran Bracers
 		i(4678),	-- Veteran Girdle
 		i(2980),	-- Veteran Gloves
-		i(2978),	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
+		i(2978, {	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
+			["timeline"] = { "removed 6.1.0.19445" },	-- Likely unobtainable since adding of Vetaran Legguards
+		}),
 		i(120953, {	-- Veteran Legguards
 			["timeline"] = { "added 6.1.0.19445" },
 		}),
@@ -2622,6 +2634,15 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(2078),	-- Northern Shortsword
 			i(727),		-- Notched Shortsword
 			i(15210),	-- Raider Shortsword
+			i(9718, {	-- Reforged Blade of Heroes
+				["cost"] = {
+					{ "i", 9719, 1 },	-- Broken Blade of Heroes
+					{ "i", 7068, 2 },	-- Elemental Fire
+					{ "i", 3486, 2 },	-- Heavy Grinding Stone
+					{ "i", 3859, 4 },	-- Steel Bar
+					{ "i", 3466, 4 },	-- Strong Flux
+				},
+			}),
 			i(15216),	-- Rune Sword
 			i(1265),	-- Scorpion Sting
 			i(13035),	-- Serpent Slicer
@@ -3261,7 +3282,6 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(17963),	-- Green Sack of Gems
 		i(17969),	-- Red Sack of Gems
 		i(17965, {	-- Yellow Sack of Gems
-			i(12363),	-- Arcane Crystal
 		}),
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23197, {	-- Idol of the Moon [Phase 5/6]
@@ -3310,6 +3330,40 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(11406, {	-- Rotting Bear Carcass
 			["description"] = "Drops from bears in Classic zones.",
 		}),
+		-- #endif
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_ONE, i(211786, {	-- Scroll: CHAP BALK WELLES
+			["description"] = "'Black Sheep Wall'",
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_ONE, i(211785, {	-- Scroll: CWAL
+			["description"] = "'Claw'",
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_ONE, i(211780, {	-- Scroll: KWYJIBO
+			["description"] = "This might just be a Simpsons quote.",
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_ONE, i(211787, {	-- Scroll: LOWER PING WHOMEVER
+			["description"] = "'Overwhelming Power'",
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_ONE, i(211854, {	-- Scroll: OMIT KESA
+			["description"] = "'Time Soak'",
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_ONE, i(211855, {	-- Scroll: STHENIC LUNATE
+			["description"] = "'Ancient Hustle'",
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_ONE, i(211853, {	-- Scroll: VOCE WELL
+			["description"] = "'Cow Level'",
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_ONE, i(211784, {	-- Scroll: WUBBA WUBBA
+			["description"] = "This might just be a Pee Wee Herman quote.",
+			["classes"] = { MAGE },
+		})),
 		-- #endif
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23199, {	-- Totem of the Storm [Phase 5/6]
@@ -3408,46 +3462,55 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			-- #if AFTER 8.0.1.10000
 			i(6454),	-- Manual: Strong Anti-Venom
 			-- #endif
-			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
-			i(9297),	-- Recipe: Elixir of Dream Vision
-			i(3830),	-- Recipe: Elixir of Fortitude
-			i(9298),	-- Recipe: Elixir of Giants
-			i(3396),	-- Recipe: Elixir of Lesser Agility
-			i(2553),	-- Recipe: Elixir of Minor Agility
-			i(6211),	-- Recipe: Elixir of Ogre's Strength
+			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
+			i(9297),	-- Recipe: Elixir of Dream Vision (RECIPE!)
+			i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
+			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
+			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
+			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
+			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
 			-- #if BEFORE TBC
-			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+]
+			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+] (RECIPE!)
 			-- #endif
 			-- #if BEFORE 3.2.0
-			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+]
+			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+] (RECIPE!)
 			-- #endif
-			i(13493, {	-- Recipe: Greater Arcane Elixir
+			i(13493, {	-- Recipe: Greater Arcane Elixir (RECIPE!)
 				["timeline"] = { "removed 2.0.1" },
 			}),
-			i(13490),	-- Recipe: Greater Stoneshield Potion
-			i(9295),	-- Recipe: Invisibility Potion
-			i(3395),	-- Recipe: Limited Invulnerability Potion
-			i(9293, {	-- Recipe: Magic Resistance Potion
+			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
+			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
+			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
+			i(9293, {	-- Recipe: Magic Resistance Potion (RECIPE!)
 				["timeline"] = { "deleted 5.0.4" },
 			}),
-			i(3831),	-- Recipe: Mighty Troll's Blood Potion / Recipe: Major Troll's Blood Elixir [Wrath+]
-			i(3393, {	-- Recipe: Minor Magic Resistance Potion
+			i(3831),	-- Recipe: Mighty Troll's Blood Potion / Recipe: Major Troll's Blood Elixir [Wrath+] (RECIPE!)
+			i(3393, {	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
 				["timeline"] = { "deleted 5.0.4" },
 			}),
 			-- #if AFTER TBC
-			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance
+			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance (RECIPE!)
 			-- #endif
 			-- #if AFTER 3.2.0
-			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification
+			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification (RECIPE!)
 			-- #endif
-			i(13492, {	-- Recipe: Purification Potion
+			i(13492, {	-- Recipe: Purification Potion (RECIPE!)
 				["timeline"] = { "removed 3.0.1" },
 			}),
-			i(2555),	-- Recipe: Swiftness Potion
-			i(13489),	-- Recipe: Transmute Earth to Life
-			i(13488),	-- Recipe: Transmute Life to Earth
-			i(13486),	-- Recipe: Transmute Undeath to Water
-			i(13487),	-- Recipe: Transmute Water to Undeath
+			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
+			i(13489),	-- Recipe: Transmute Earth to Life (RECIPE!)
+			i(13488),	-- Recipe: Transmute Life to Earth (RECIPE!)
+			i(13486),	-- Recipe: Transmute Undeath to Water (RECIPE!)
+			i(13487),	-- Recipe: Transmute Water to Undeath (RECIPE!)
+			-- #if AFTER 4.0.3
+			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+				-- #if AFTER 10.1.7
+				["description"] = "Can drop from any troll in Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
+				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
+				-- #endif
+				["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+			}),
+			-- #endif
 		}),
 		prof(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
@@ -3614,21 +3677,21 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
 			i(4296),	-- Pattern: Dark Leather Shoulders (RECIPE!)
 			i(2409),	-- Pattern: Dark Leather Tunic (RECIPE!)
-			i(7452),	-- Pattern: Dusky Boots
+			i(7452),	-- Pattern: Dusky Boots (RECIPE!)
 			i(7449),	-- Pattern: Dusky Leather Leggings (RECIPE!)
 			i(2406),	-- Pattern: Fine Leather Boots (RECIPE!)
 			i(2408),	-- Pattern: Fine Leather Gloves (RECIPE!)
 			i(5972),	-- Pattern: Fine Leather Pants (RECIPE!)
-			i(7450),	-- Pattern: Green Whelp Armor
+			i(7450),	-- Pattern: Green Whelp Armor (RECIPE!)
 			i(4299),	-- Pattern: Guardian Armor (RECIPE!)
 			i(4298),	-- Pattern: Guardian Belt (RECIPE!)
 			i(5974),	-- Pattern: Guardian Cloak (RECIPE!)
 			i(4300),	-- Pattern: Guardian Leather Bracers (RECIPE!)
-			i(7364),	-- Pattern: Heavy Earthen Gloves
+			i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
 			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
-			i(7363),	-- Pattern: Pilferer's Gloves
+			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
 			i(15745, {	-- Pattern: Runic Leather Belt (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer

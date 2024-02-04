@@ -200,8 +200,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 75.5, 12.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168028, {	-- Pattern: Mallet of Thunderous Skins
+					i(168028, {	-- Pattern: Mallet of Thunderous Skins (RECIPE!)
 						["sourceQuests"] = { 55235 },	-- Instruments of Destruction
+						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),
@@ -282,7 +283,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 74.1, 6.75, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(166422, {	-- Recipe: Silas' Sphere of Transmutation
+					i(166422, {	-- Recipe: Silas' Sphere of Transmutation (RECIPE!)
 						["sourceQuests"] = { 50129 },	-- A Recipe for Success
 					}),
 				},
@@ -302,8 +303,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
-						["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner
-						["spellID"] = 0,
+						["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner (A)
 						["f"] = MISC,
 					}),
 				},
@@ -1329,7 +1329,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			n(149045, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
+			n(149045, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 				["coord"] = { 71.7, 13.7, BORALUS },
 				["g"] = {
 					i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)

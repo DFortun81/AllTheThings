@@ -1,39 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
-local Recipes = root(ROOTS.RecipeDB);
-local ProfessionID = INSCRIPTION;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	elseif itemID == 0 then
-		local recipe = { ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				recipe.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				recipe.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				recipe.timeline = unobtainStatus;
-			end
-		end
-		Recipes[recipeID] = recipe;
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
+local i = GetRecipeHelperForProfession(INSCRIPTION);
 
 -----------------
 -- PATCH 3.0.2 --
@@ -728,7 +693,6 @@ i(0, 124447);	--
 i(0, 124456);	--
 i(0, 112468);	--
 i(0, 57037);	--
-i(0, 110955);	--
 i(0, 126153);	--
 i(0, 112450);	--
 i(0, 124444);	--
@@ -902,6 +866,9 @@ i(141062, 225554);	-- Glyph of the Inquisitor's Eye
 i(141063, 225555);	-- Grimoire of the Observer
 i(137738, 192846);	-- Glyph of the Queen
 i(137734, 192842);	-- Glyph of the Sentinel
+-- #if AFTER 10.1.5
+i(141061, 225553);	-- Grimoire of the Abyssal
+-- #endif
 i(141064, 225556);	-- Grimoire of the Shivarra
 i(137736, 192844);	-- Glyph of the Spectral Raptor
 i(141051, 225543);	-- Glyph of the Trident
@@ -948,7 +915,9 @@ i(141050, 225542);	-- Glyph of the Skullseye (8.0.1)
 i(141034, 225526);	-- Glyph of the Unholy Wraith (8.0.1)
 i(137740, 192848);	-- Glyph of the Wraith Walker (8.0.1)
 -- NYI --
+-- #if BEFORE 10.1.5
 i(141061, 225553);	-- Grimoire of the Abyssal
+-- #endif
 i(141065, 225557);	-- Grimoire of the Terrorguard
 
 i(137742, 0);	-- Glyph of Crackling Flames
@@ -1251,85 +1220,98 @@ i(172011, 299673);	-- Contract: Uldum Accord
 -----------------
 -- PATCH 9.0.1 --
 -----------------
-i(0, 338227);	-- Ardenberry Ink
-i(0, 338234);	-- Catalog of Sins
-i(0, 343691);	-- Crafter's Mark I
-i(0, 343689);	-- Crafter's Mark II (item:183870)
-i(0, 311441);	-- Darkmoon Card of Death
-i(0, 324037);	-- Darkmoon Card of Putrescence
-i(0, 324036);	-- Darkmoon Card of Repose
-i(0, 324039);	-- Darkmoon Card of the Indomitable
-i(0, 324035);	-- Darkmoon Card of Voracity
-i(0, 338225);	-- Hymnal of Respite
-i(0, 338228);	-- Invocation of Duty
-i(0, 338231);	-- Litany of Might
-i(0, 311406);	-- Luminous Ink
-i(0, 311413);	-- Mass Mill Deathblossom
-i(0, 311416);	-- Mass Mill Marrowroot
-i(0, 311418);	-- Mass Mill Nightshade
-i(0, 311417);	-- Mass Mill Rising Glory
-i(0, 311414);	-- Mass Mill Vigil's Torch
-i(0, 311415);	-- Mass Mill Widowbloom
-i(0, 324197);	-- Missive of Critical Strike
-i(0, 324198);	-- Missive of Haste
-i(0, 324196);	-- Missive of Mastery
-i(0, 324195);	-- Missive of Versatility
-i(0, 338233);	-- Necrotic Ink
-i(0, 311408);	-- Newly Departed Codex
-i(0, 343686);	-- Novice Crafter's Mark
-i(0, 338230);	-- Opalescent Ink
-i(0, 338229);	-- Poem on Duty
-i(0, 338236);	-- Prideful Ink
-i(0, 338226);	-- Scroll of Calming Lyrics
-i(0, 338235);	-- Scroll of Castigation
-i(0, 338232);	-- Scroll of Unyielding Strength
-i(0, 309805);	-- Shadowlands Inscription
-i(0, 311688);	-- Soul Keeper's Column
-i(0, 311689);	-- Soul Keeper's Spire
-i(0, 311425);	-- Tome of the Still Mind
-i(0, 321029);	-- Tranquil Ink
-i(0, 311405);	-- Umbral Ink
-i(0, 311423);	-- Writ of Grave Robbing
--- ITEMS --
+--- ITEM ---
+i(184099, 344341);	-- Glyph of the Aerial Chameleon
+i(184098, 344340);	-- Glyph of the Aquatic Chameleon
+i(184095, 344335);	-- Glyph of the Swift Chameleon
+--- NYI ---
+i(0, 343688);		-- Crafter's Mark III
+i(0, 343687);		-- Crafter's Mark IV
+i(0, 311407);		-- Deathbound Codex
+i(0, 311687);		-- Redeemer's Column
+i(0, 311690);		-- Redeemer's Spire
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
+--- TRAINER ---
+i(0, 343691);		-- Crafter's Mark I
+i(0, 311441);		-- Darkmoon Card of Death
+i(0, 324037);		-- Darkmoon Card of Putrescence
+i(0, 324036);		-- Darkmoon Card of Repose
+i(0, 324039);		-- Darkmoon Card of the Indomitable
+i(0, 324035);		-- Darkmoon Card of Voracity
+i(0, 311406);		-- Luminous Ink
+i(0, 311413);		-- Mass Mill Deathblossom
+i(0, 311416);		-- Mass Mill Marrowroot
+i(0, 311418);		-- Mass Mill Nightshade
+i(0, 311417);		-- Mass Mill Rising Glory
+i(0, 311414);		-- Mass Mill Vigil's Torch
+i(0, 311415);		-- Mass Mill Widowbloom
+i(0, 324197);		-- Missive of Critical Strike
+i(0, 324198);		-- Missive of Haste
+i(0, 324196);		-- Missive of Mastery
+i(0, 324195);		-- Missive of Versatility
+i(0, 311408);		-- Newly Departed Codex
+i(0, 343686);		-- Novice Crafter's Mark
+i(0, 309805);		-- Shadowlands Inscription
+i(0, 311688);		-- Soul Keeper's Column
+i(0, 311689);		-- Soul Keeper's Spire
+i(0, 311425);		-- Tome of the Still Mind
+i(0, 321029);		-- Tranquil Ink
+i(0, 311405);		-- Umbral Ink
+i(0, 311423);		-- Writ of Grave Robbing
+--- ITEM ---
 i(183098, 311424);	-- Codex of the Still Mind
 i(183102, 311412);	-- Contract: Court of Harvesters
 i(183103, 311409);	-- Contract: The Ascended
 i(183104, 311411);	-- Contract: The Undying Army
 i(183093, 311410);	-- Contract: The Wild Hunt
+i(0, 343689);		-- Crafter's Mark II (item:183870)
 i(180782, 334537);	-- Fae Revel Masque
-i(184099, 344341);	-- Glyph of the Aerial Chameleon
-i(184098, 344340);	-- Glyph of the Aquatic Chameleon
-i(184095, 344335);	-- Glyph of the Swift Chameleon
 i(173068, 311453);	-- Vantus Rune: Castle Nathria
--- NYI --
-i(0, 343688);	-- Crafter's Mark III
-i(0, 343687);	-- Crafter's Mark IV
-i(0, 311407);	-- Deathbound Codex
-i(0, 311687);	-- Redeemer's Column
-i(0, 311690);	-- Redeemer's Spire
+--- QUEST ---
+i(0, 338227);		-- Ardenberry Ink
+i(0, 338234);		-- Catalog of Sins
+i(0, 338225);		-- Hymnal of Respite
+i(0, 338228);		-- Invocation of Duty
+i(0, 338231);		-- Litany of Might
+i(0, 338230);		-- Opalescent Ink
+i(0, 338233);		-- Necrotic Ink
+i(0, 338229);		-- Poem on Duty
+i(0, 338236);		-- Prideful Ink
+i(0, 338226);		-- Scroll of Calming Lyrics
+i(0, 338235);		-- Scroll of Castigation
+i(0, 338232);		-- Scroll of Unyielding Strength
 
 -----------------
 -- PATCH 9.1.0 --
 -----------------
+--- ITEM ---
 i(186724, 354000);	-- Contract: Death's Advance
 i(186671, 354394);	-- Vantus Rune: Sanctum of Domination
 
 -----------------
 -- PATCH 9.1.5 --
 -----------------
+--- TRAINER ---
 i(0, 362412);		-- Glyph of the Wild Mushroom
-i(0, 360545);		-- Mark of the Shimmering Ardenmoth
+--- ITEM ---
 i(187886, 360542);	-- Mark of the Gloomstalker Dredbat
 i(187935, 360885);	-- Mark of the Midnight Runestag
 i(187930, 360880);	-- Mark of the Regal Dredbat
 i(187937, 360899);	-- Mark of the Sable Ardenmoth
 i(187932, 360882);	-- Mark of the Duskwing Raven
 i(187883, 360539);	-- Mark of the Twilight Runestag
+--- SPECIAL ---
+i(0, 360545);		-- Mark of the Shimmering Ardenmoth
 
 -----------------
 -- PATCH 9.2.0 --
 -----------------
+--- TRAINER ---
 i(0, 359490);		-- Mass Mill First Flower
+--- ITEM ---
 i(187797, 359786);	-- Contract: Enlightened Brokers
 i(190379, 367389);	-- Glyph of the Spectral Lupine
 i(190381, 367393);	-- Glyph of the Spectral Vulpine
@@ -1338,8 +1320,8 @@ i(187806, 359890);	-- Vantus Rune: Sepulcher of the First Ones
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- LATER --
 i(0, 382982);	-- Shadowlands Milling
+-- LATER --
 i(0, 382984);	-- Kul Tiras and Zandalar Milling
 i(0, 382986);	-- Legion Milling
 i(0, 382987);	-- Draenor Milling
@@ -1348,38 +1330,109 @@ i(0, 382989);	-- Cataclysm Milling
 i(0, 382990);	-- Northrend Milling
 i(0, 382991);	-- Outland Milling
 i(0, 382994);	-- Classic Milling
--- TRAINER --
-i(0, 366251);	-- Dragon Isles Inscription
-i(0, 382981);	-- Dragon Isles Milling
-i(0, 383549);	-- Alchemist's Sturdy Mixing Rod
-i(0, 383563);	-- Blazing Fortune
-i(0, 383786);	-- Blazing Ink
-i(0, 383791);	-- Burnished Ink
-i(0, 383527);	-- Buzzing Rune
-i(0, 383551);	-- Chef's Smooth Rolling Pin
-i(0, 383531);	-- Chilled Rune
-i(0, 383525);	-- Chirping Rune
-i(0, 383539);	-- Core Explorer's Compendium
-i(0, 383790);	-- Cosmic Ink
-i(0, 383554);	-- Draconic Missive of the Aurora
-i(0, 383555);	-- Draconic Missive of the Feverflare
-i(0, 383556);	-- Draconic Missive of the Fireflash
-i(0, 383560);	-- Draconic Missive of the Harmonious
-i(0, 383561);	-- Draconic Missive of the Peerless
-i(0, 383562);	-- Draconic Missive of the Quickblade
-i(0, 384948);	-- Flourishing Fortune
-i(0, 383787);	-- Flourishing Ink
-i(0, 383529);	-- Howling Rune
-i(0, 383572);	-- Illusion Parchment: Spell Shield
-i(0, 383543);	-- Overseer's Writhebark Stave
-i(0, 383544);	-- Pioneer's Writhebark Stave
-i(0, 389193);	-- Recraft Equipment
-i(0, 383530);	-- Runed Writhebark
-i(0, 383547);	-- Scribe's Fastened Quill
-i(0, 384949);	-- Serene Fortune
-i(0, 383788);	-- Serene Ink
-i(0, 383546);	-- Vantus Rune: Vault of the Incarnates
--- ITEM --
+--- NYI ---
+i(0, 382583);		-- Opening
+i(0, 391783);		-- Wisp of Tyr
+i(0, 388458);		-- Unknown
+i(198944, 371340);	-- Mixing Rod I
+i(198945, 371376);	-- Mixing Rod II
+i(198948, 371341);	-- Rolling Pin I
+i(198949, 371375);	-- Rolling Pin II
+i(198890, 381545);	-- to change \\ Scroll of Sales
+i(198942, 0);		-- Alchemist's Sturdy Mixing Rod
+i(198922, 0);		-- Azurescale Sigil
+i(198915, 0);		-- Blazing Fortune
+i(198934, 0);		-- Blazing Ink
+i(198925, 0);		-- Bronzescale Sigil
+i(198882, 0);		-- Bundle O' Cards: Dragon Isles
+i(198932, 0);		-- Burnished Ink
+i(198917, 0);		-- Buzzing Rune
+i(198946, 0);		-- Chef's Smooth Rolling Pin
+i(198913, 0);		-- Chilled Rune
+i(198919, 0);		-- Chirping Rune
+i(198939, 0);		-- Contract: Dragonscale Expedition
+i(198958, 0);		-- Core Explorer's Compendium
+i(198933, 0);		-- Cosmic Ink
+i(198957, 0);		-- Cracking Codex of the Isles
+i(198952, 0);		-- Darkmoon Deck Box: Dance
+i(198955, 0);		-- Darkmoon Deck Box: Inferno
+i(198954, 0);		-- Darkmoon Deck Box: Rime
+i(198953, 0);		-- Darkmoon Deck Box: Watcher
+i(198928, 0);		-- Draconic Missive of the Aurora
+i(198931, 0);		-- Draconic Missive of the Feverflare
+i(198920, 0);		-- Draconic Missive of the Fireflash
+i(198929, 0);		-- Draconic Missive of the Harmonious
+i(198921, 0);		-- Draconic Missive of the Peerless
+i(198927, 0);		-- Draconic Missive of the Quickblade
+i(198879, 0);		-- Draconic Treatise on Alchemy
+i(198881, 0);		-- Draconic Treatise on Blacksmithing
+i(198883, 0);		-- Draconic Treatise on Enchanting
+i(198880, 0);		-- Draconic Treatise on Engineering
+i(198884, 0);		-- Draconic Treatise on Herbalism
+i(198885, 0);		-- Draconic Treatise on Inscription
+i(198886, 0);		-- Draconic Treatise on Jewelcrafting
+i(198887, 0);		-- Draconic Treatise on Leatherworking
+i(198888, 0);		-- Draconic Treatise on Mining
+i(201026, 0);		-- Draconic Treatise on Skinning
+i(198889, 0);		-- Draconic Treatise on Tailoring
+i(198924, 0);		-- Emberscale Sigil
+i(198898, 0);		-- Explorer's Barding Manuscript
+i(198914, 0);		-- Flourishing Fortune
+i(198935, 0);		-- Flourishing Ink
+i(198918, 0);		-- Howling Rune
+i(198875, 0);		-- Illuminating Pillar of the Isles
+i(198911, 0);		-- Illusion Parchment: Spell Shield
+i(198926, 0);		-- Jetscale Sigil
+i(198874, 0);		-- Kinetic Pillar of the Isles
+i(198878, 0);		-- Overseer's Writhebark Stave
+i(198877, 0);		-- Pioneer's Writhebark Stave
+i(198787, 0);		-- Red Haired Renewed Proto-Drake Manuscript
+i(198897, 0);		-- Regal Barding Manuscript
+i(198900, 0);		-- Renewed Proto Drake Manuscript: Red Hair
+i(198930, 0);		-- Runed Writhebark
+i(198923, 0);		-- Sagescale Sigil
+i(198950, 0);		-- Scribe's Fastened Quill
+i(198951, 0);		-- Scribe's Resplendent Quill
+i(198916, 0);		-- Serene Fortune
+i(198936, 0);		-- Serene Ink
+i(198956, 0);		-- Vantus Rune: Vault of the Incarnates
+i(198786, 0);		-- Wrathion Darkmoon Deckbox
+
+------------------
+-- PATCH 10.0.2 --
+------------------
+--- TRAINER ---
+i(0, 366251);		-- Dragon Isles Inscription
+i(0, 382981);		-- Dragon Isles Milling
+i(0, 383549);		-- Alchemist's Sturdy Mixing Rod
+i(0, 383563);		-- Blazing Fortune
+i(0, 383786);		-- Blazing Ink
+i(0, 383791);		-- Burnished Ink
+i(0, 383527);		-- Buzzing Rune
+i(0, 383551);		-- Chef's Smooth Rolling Pin
+i(0, 383531);		-- Chilled Rune
+i(0, 383525);		-- Chirping Rune
+i(0, 383539);		-- Core Explorer's Compendium
+i(0, 383790);		-- Cosmic Ink
+i(0, 383554);		-- Draconic Missive of the Aurora
+i(0, 383555);		-- Draconic Missive of the Feverflare
+i(0, 383556);		-- Draconic Missive of the Fireflash
+i(0, 383560);		-- Draconic Missive of the Harmonious
+i(0, 383561);		-- Draconic Missive of the Peerless
+i(0, 383562);		-- Draconic Missive of the Quickblade
+i(0, 384948);		-- Flourishing Fortune
+i(0, 383787);		-- Flourishing Ink
+i(0, 383529);		-- Howling Rune
+i(0, 383572);		-- Illusion Parchment: Spell Shield
+i(0, 383543);		-- Overseer's Writhebark Stave
+i(0, 383544);		-- Pioneer's Writhebark Stave
+i(0, 389193);		-- Recraft Equipment
+i(0, 383530);		-- Runed Writhebark
+i(0, 383547);		-- Scribe's Fastened Quill
+i(0, 384949);		-- Serene Fortune
+i(0, 383788);		-- Serene Ink
+i(0, 383546);		-- Vantus Rune: Vault of the Incarnates
+--- ITEM ---
 i(198943, 383550);	-- Alchemist's Brilliant Mixing Rod
 i(198947, 383552);	-- Chef's Splendid Rolling Pin
 i(198891, 383574);	-- Cliffside Wylderdrake: Conical Head
@@ -1423,111 +1476,45 @@ i(198903, 383584);	-- Windborne Velocidrake: Spined Head
 i(201743, 391832);	-- Windborne Velocidrake: Silver and Blue Armor
 i(201739, 391848);	-- Windborne Velocidrake: Steel and Orange Armor
 i(198904, 383585);	-- Windborne Velocidrake: Windswept Pattern
--- DISCOVERY --
-i(0, 383522);	-- Draconic Treatise on Alchemy
-i(0, 383517);	-- Draconic Treatise on Blacksmithing
-i(0, 383523);	-- Draconic Treatise on Enchanting
-i(0, 383844);	-- Draconic Treatise on Engineering
-i(0, 383515);	-- Draconic Treatise on Herbalism
-i(0, 383524);	-- Draconic Treatise on Jewelcrafting
-i(0, 383519);	-- Draconic Treatise on Leatherworking
-i(0, 383516);	-- Draconic Treatise on Mining
-i(0, 392944);	-- Draconic Treatise on Skinning
-i(0, 383520);	-- Draconic Treatise on Tailoring
--- SPECIALIZATION --
-i(0, 383533);	-- Azurescale Sigil
-i(0, 383536);	-- Bronzescale Sigil
-i(0, 383512);	-- Bundle O' Cards: Dragon Isles
-i(0, 383540);	-- Cracking Codex of the Isles
-i(0, 383770);	-- Darkmoon Deck Box: Dance
-i(0, 383325);	-- Darkmoon Deck Box: Inferno
-i(0, 383767);	-- Darkmoon Deck Box: Rime
-i(0, 383772);	-- Darkmoon Deck Box: Watcher
-i(0, 383759);	-- Draconic Treatise on Inscription
-i(0, 383535);	-- Emberscale Sigil
-i(0, 388282);	-- Extraction: Awakened Air
-i(0, 388281);	-- Extraction: Awakened Earth
-i(0, 388274);	-- Extraction: Awakened Fire
-i(0, 388280);	-- Extraction: Awakened Frost
-i(0, 383541);	-- Illuminating Pillar of the Isles
-i(0, 391781);	-- Illustrious Insight
-i(0, 383538);	-- Jetscale Sigil
-i(0, 383542);	-- Kinetic Pillar of the Isles
-i(0, 383534);	-- Sagescale Sigil
-i(0, 383548);	-- Scribe's Resplendent Quill
--- QUEST --
-i(0, 377985);	-- Heart in a Bottle
--- NYI --
-i(0, 382583);	-- Opening
-i(0, 391783);	-- Wisp of Tyr
-i(0, 388458);	-- Unknown
-i(198944, 371340);	-- Mixing Rod I
-i(198945, 371376);	-- Mixing Rod II
-i(198948, 371341);	-- Rolling Pin I
-i(198949, 371375);	-- Rolling Pin II
-i(198890, 381545);	-- to change \\ Scroll of Sales
-i(198942, 0);	-- Alchemist's Sturdy Mixing Rod
-i(198922, 0);	-- Azurescale Sigil
-i(198915, 0);	-- Blazing Fortune
-i(198934, 0);	-- Blazing Ink
-i(198925, 0);	-- Bronzescale Sigil
-i(198882, 0);	-- Bundle O' Cards: Dragon Isles
-i(198932, 0);	-- Burnished Ink
-i(198917, 0);	-- Buzzing Rune
-i(198946, 0);	-- Chef's Smooth Rolling Pin
-i(198913, 0);	-- Chilled Rune
-i(198919, 0);	-- Chirping Rune
-i(198939, 0);	-- Contract: Dragonscale Expedition
-i(198958, 0);	-- Core Explorer's Compendium
-i(198933, 0);	-- Cosmic Ink
-i(198957, 0);	-- Cracking Codex of the Isles
-i(198952, 0);	-- Darkmoon Deck Box: Dance
-i(198955, 0);	-- Darkmoon Deck Box: Inferno
-i(198954, 0);	-- Darkmoon Deck Box: Rime
-i(198953, 0);	-- Darkmoon Deck Box: Watcher
-i(198928, 0);	-- Draconic Missive of the Aurora
-i(198931, 0);	-- Draconic Missive of the Feverflare
-i(198920, 0);	-- Draconic Missive of the Fireflash
-i(198929, 0);	-- Draconic Missive of the Harmonious
-i(198921, 0);	-- Draconic Missive of the Peerless
-i(198927, 0);	-- Draconic Missive of the Quickblade
-i(198879, 0);	-- Draconic Treatise on Alchemy
-i(198881, 0);	-- Draconic Treatise on Blacksmithing
-i(198883, 0);	-- Draconic Treatise on Enchanting
-i(198880, 0);	-- Draconic Treatise on Engineering
-i(198884, 0);	-- Draconic Treatise on Herbalism
-i(198885, 0);	-- Draconic Treatise on Inscription
-i(198886, 0);	-- Draconic Treatise on Jewelcrafting
-i(198887, 0);	-- Draconic Treatise on Leatherworking
-i(198888, 0);	-- Draconic Treatise on Mining
-i(201026, 0);	-- Draconic Treatise on Skinning
-i(198889, 0);	-- Draconic Treatise on Tailoring
-i(198924, 0);	-- Emberscale Sigil
-i(198898, 0);	-- Explorer's Barding Manuscript
-i(198914, 0);	-- Flourishing Fortune
-i(198935, 0);	-- Flourishing Ink
-i(198918, 0);	-- Howling Rune
-i(198875, 0);	-- Illuminating Pillar of the Isles
-i(198911, 0);	-- Illusion Parchment: Spell Shield
-i(198926, 0);	-- Jetscale Sigil
-i(198874, 0);	-- Kinetic Pillar of the Isles
-i(198878, 0);	-- Overseer's Writhebark Stave
-i(198877, 0);	-- Pioneer's Writhebark Stave
-i(198787, 0);	-- Red Haired Renewed Proto-Drake Manuscript
-i(198897, 0);	-- Regal Barding Manuscript
-i(198900, 0);	-- Renewed Proto Drake Manuscript: Red Hair
-i(198930, 0);	-- Runed Writhebark
-i(198923, 0);	-- Sagescale Sigil
-i(198950, 0);	-- Scribe's Fastened Quill
-i(198951, 0);	-- Scribe's Resplendent Quill
-i(198916, 0);	-- Serene Fortune
-i(198936, 0);	-- Serene Ink
-i(198956, 0);	-- Vantus Rune: Vault of the Incarnates
-i(198786, 0);	-- Wrathion Darkmoon Deckbox
+--- DISCOVERY ---
+i(0, 383522);		-- Draconic Treatise on Alchemy
+i(0, 383517);		-- Draconic Treatise on Blacksmithing
+i(0, 383523);		-- Draconic Treatise on Enchanting
+i(0, 383844);		-- Draconic Treatise on Engineering
+i(0, 383515);		-- Draconic Treatise on Herbalism
+i(0, 383524);		-- Draconic Treatise on Jewelcrafting
+i(0, 383519);		-- Draconic Treatise on Leatherworking
+i(0, 383516);		-- Draconic Treatise on Mining
+i(0, 392944);		-- Draconic Treatise on Skinning
+i(0, 383520);		-- Draconic Treatise on Tailoring
+--- SPECIALIZATION ---
+i(0, 383533);		-- Azurescale Sigil
+i(0, 383536);		-- Bronzescale Sigil
+i(0, 383512);		-- Bundle O' Cards: Dragon Isles
+i(0, 383540);		-- Cracking Codex of the Isles
+i(0, 383770);		-- Darkmoon Deck Box: Dance
+i(0, 383325);		-- Darkmoon Deck Box: Inferno
+i(0, 383767);		-- Darkmoon Deck Box: Rime
+i(0, 383772);		-- Darkmoon Deck Box: Watcher
+i(0, 383759);		-- Draconic Treatise on Inscription
+i(0, 383535);		-- Emberscale Sigil
+i(0, 388282);		-- Extraction: Awakened Air
+i(0, 388281);		-- Extraction: Awakened Earth
+i(0, 388274);		-- Extraction: Awakened Fire
+i(0, 388280);		-- Extraction: Awakened Frost
+i(0, 383541);		-- Illuminating Pillar of the Isles
+i(0, 391781);		-- Illustrious Insight
+i(0, 383538);		-- Jetscale Sigil
+i(0, 383542);		-- Kinetic Pillar of the Isles
+i(0, 383534);		-- Sagescale Sigil
+i(0, 383548);		-- Scribe's Resplendent Quill
+--- QUEST ---
+i(0, 377985);		-- Heart in a Bottle
 
 ------------------
 -- PATCH 10.0.5 --
 ------------------
+--- ITEM ---
 i(203380, 400028);	-- Crimson Combatant's Emblem
 i(203379, 400027);	-- Crimson Combatant's Insignia of Alacrity
 i(203378, 400026);	-- Crimson Combatant's Medallion
@@ -1537,6 +1524,7 @@ i(202237, 397867);	-- Remarkable Weapon Crystal
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+--- ITEM ---
 i(203425, 400811);	-- Arcane Dispelling Rune
 i(203841, 402142);	-- Gurubashi Ceremonial Staff
 i(203839, 402140);	-- Gurubashi Hoodoo Stick
@@ -1545,6 +1533,7 @@ i(203840, 402141);	-- Judgment of the Gurubashi
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+--- ITEM ---
 i(205136, 408278);	-- Contract: Loamm Niffen
 i(205132, 408277);	-- Glyph of the Chosen Glaive
 i(205133, 408273);	-- Glyph of the Heaved Armament
@@ -1564,7 +1553,22 @@ i(205128, 408220);	-- Winding Slitherdrake: Yellow and Silver Armor
 ------------------
 --- ITEM ---
 i(206548, 413748);	-- Encased Frigid Heart
-i(207088, 416137);	-- Glyph of the Shath'Yar
+i(207091, 416137);	-- Glyph of the Shath'Yar
 i(206528, 413515);	-- Shifting Sliver
 i(206532, 413519);	-- Soulscryer
 i(207575, 416690);	-- Wanderer's Guide
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210243, 425263);	-- Contract: Dream Wardens
+i(211399, 429149);	-- Glyph of the Lunar Chameleon
+i(210492, 425961);	-- Grotto Netherwing Drake: Chin Tendrils
+i(210493, 425959);	-- Grotto Netherwing Drake: Spiked Jaw
+i(211065, 427956);	-- Mark of the Auric Dreamstag
+i(210490, 425954);	-- Vantus Rune: Amirdrassil, the Dream's Hope
+i(208312, 419041);	-- Verdant Combatant's Emblem
+i(208311, 419040);	-- Verdant Combatant's Insignia of Alacrity
+i(208310, 419039);	-- Verdant Combatant's Medallion
+i(210491, 425958);	-- Winding Slitherdrake: Hairy Chin

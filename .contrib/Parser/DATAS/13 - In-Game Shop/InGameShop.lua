@@ -7,95 +7,89 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	n(ACHIEVEMENTS, {
 		ach(8917, {	-- Collector's Edition: Dread Hatchling
 			["provider"] = { "i", 109014 },	-- Dread Hatchling
-			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0", "added 10.1.0" },
 		}),
 		ach(8916, {	-- Collector's Edition: Dread Raven
 			["provider"] = { "i", 109013 },	-- Dread Raven
-			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0", "added 10.1.0" },
 		}),
 		ach(12230, {	-- Collector's Edition: Gilded Ravasaur
 			["provider"] = { "i", 153540 },	-- Gilded Ravasaur
-			["timeline"] = {
-					"added 7.3.5.25937",
-				-- "removed 10.0.7.48999,"
-			},
-			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+			["timeline"] = { "added 7.3.5.25937", "removed 10.1.0" },	-- 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),
 		ach(10320, {	-- Collector's Edition: Illidari Felstalker
 			["provider"] = { "i", 128425 },	-- Illidari Felstalker
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		ach(6849, {	-- Collector's Edition: Imperial Quilen
 			["provider"] = { "i", 85870 },	-- Imperial Quilen
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { "added 5.0.1.15662", "removed 5.4.7", "added 8.3.0" },
 		}),
 		ach(6848, {	-- Collector's Edition: Lucky Quilen Cub
 			["provider"] = { "i", 85871 },	-- Lucky Quilen Cub
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { "added 5.0.1.15662", "removed 5.4.7", "added 8.3.0" },
 		}),
 		ach(10321, {	-- Collector's Edition: Nibbles
 			["provider"] = { "i", 128426 },	-- Nibbles
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		ach(12229, {	-- Collector's Edition: Seabraid Stallion
 			["provider"] = { "i", 153539 },	-- Seabraid Stallion
-			["timeline"] = {
-					"added 7.3.5.25937",
-				-- "removed 10.0.7.48999,"
-			},
-			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+			["timeline"] = { "added 7.3.5.25937", "removed 10.1.0" },	-- 17th April 2023
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(12232, {	-- Collector's Edition: Tottle
 			["provider"] = { "i", 153541 },	-- Tottle
-			["timeline"] = { "added 7.3.5.25937" },
+			["timeline"] = { "added 7.3.5.25937", "removed 10.1.7" },	-- Removed Sep 17th, 2023
+		}),
+		ach(14283, {	-- Heroic Edition: Ensorcelled Everwyrm
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
+		ach(17314,	{	-- Heroic Edition: Tangled Dreamweaver
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
+		ach(19029, {	-- Lil' Maggz
+			["timeline"] = { "added 10.1.7.51313", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 	}),
 	-- #endif
 	filter(MOUNTS, {
 		mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
-			["timeline"] = {
-					"added 8.2.5.31958",
-				-- "removed 10.0.7.48999,"
-			},
-			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+			["timeline"] = { "added 8.2.5.31958", "removed 10.1.0" },	-- 17th April 2023
 			["races"] = ALLIANCE_ONLY,
 		}),
 		mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
-			["timeline"] = {
-					"added 8.2.5.31958",
-				-- "removed 10.0.7.48999,"
-			},
-			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+			["timeline"] = { "added 8.2.5.31958", "removed 10.1.0" },	-- 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
 			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
 		}),
-		mount(302362, {	-- Armored Siege Kodo(MOUNT!)
-			["timeline"] = { "added 10.1.5" },
+		mount(367875, {	-- Armored Siege Kodo (MOUNT!)
+			["timeline"] = { ADDED_10_1_5 },
+		}),
+		mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
+			["timeline"] = { "added 10.2.0" },
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
-			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.47213" },
+			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
-			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0", "added 10.1.0" },
 		}),
 		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
 			["timeline"] = { "added 5.3.0.16758" },
 		}),
-		--Probably later in the Shop
+		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
+		--Maybe later in the Shop
 		--[[mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(153540, {	-- Gilded Ravasaur (MOUNT!)
-			["timeline"] = {
-					"added 7.3.5.25937",
-				-- "removed 10.0.7.48999,"
-			},
-			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+			["timeline"] = { "added 7.3.5.25937", "removed 10.1.0" },	-- 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),
 		i(112327, {	-- Grinning Reaver (MOUNT!)
@@ -108,13 +102,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.1.0.29139" },
 		}),
 		i(128425, {	-- Illidari Felstalker (MOUNT!)
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		i(85870, {	-- Imperial Quilen (MOUNT!)
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { "added 8.3.0" },
 		}),
 		i(107951, {	-- Iron Skyreaver (MOUNT!)
-			["timeline"] = { "added 5.4.2.17585" },
+			["timeline"] = { "added 5.4.2.17585", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		mount(369451, {	-- Jade, Bright Foreseer (MOUNT!)
 			["timeline"] = { "added 10.0.2.47631" },
@@ -135,11 +129,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 9.0.5.37862" },
 		}),
 		i(153539, {	-- Seabraid Stallion (MOUNT!)
-			["timeline"] = {
-					"added 7.3.5.25937",
-				-- "removed 10.0.7.48999,"
-			},
-			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+			["timeline"] = { "added 7.3.5.25937", "removed 10.1.0" },	-- 17th April 2023
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)
@@ -160,12 +150,18 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(166776, {	-- Sylverian Dreamer (MOUNT!)
 			["timeline"] = { "added 8.2.0.30948" },
 		}),
-		--Probably later in the Shop
+		--Maybe later in the Shop
 		--[[mount(381529, {	-- Telix the Stormhorn (MOUNT!)
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
+		mount(359843, {	-- Tangled Dreamweaver (MOUNT!)
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
 		i(160589, {	-- The Dreadwake (MOUNT!)
-			["timeline"] = { "added 8.0.1.27602" },
+			["timeline"] = { "added 8.0.1.27602", "removed 10.1.7" },	-- Removed Sep 17th, 2023
+		}),
+		i(212229, {	-- Twilight Sky Prowler (MOUNT!)
+			["timeline"] = { "added 10.2.5.53162", "removed 10.2.5.99999" },	-- Removed Feb 29th, 2024
 		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },	-- removed from the store again on Jan 2 2023
@@ -176,17 +172,12 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { "added 8.1.0.28724" },
 		}),
-		i(112326, {	-- Warforged Nightmare (MOUNT!)
-			["timeline"] = { "added 6.0.1.18297" },
-			["groups"] = {
-				i(112324, {	-- Nightmarish Hitching Post (TOY!)
-					["timeline"] = { "added 6.0.1.18297" },
-				}),
-			},
-		}),
+		i(112326,	-- Warforged Nightmare (MOUNT!)
+			bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18297", "removed 10.1.7.51886" } }, {	-- removed on Oct 31, 2023
+				i(112324),	-- Nightmarish Hitching Post (TOY!)
+		})),
 		i(69846, {	-- Winged Guardian (MOUNT!)
-			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.47213" },
+			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
@@ -199,10 +190,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(106240, {	-- Alterac Brew-Pup (PET!)
 			["timeline"] = { "added 5.4.1.17481" },
 		}),
+		pet(2779, {	-- Anima Wyrmling (PET!)
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
 		i(118516, {	-- Argi (PET!)
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
-		battlepet(156, {	-- Bananas
+		pet(156, {	-- Bananas
 			["timeline"] = { ADDED_9_0_5, REMOVED_9_1_5 },
 		}),
 		pet(3153, {	-- Blinky
@@ -215,7 +209,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_6_2_3 },
 		}),
 		i(160588, {	-- Cap'n Crackers (PET!)
-			["timeline"] = { "added 8.0.1.27602" },
+			["timeline"] = { "added 8.0.1.27602", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(70099, {	-- Cenarion Hatchling (PET!)
 			["timeline"] = { "added 4.1.0.13850", "removed 8.3.0" },
@@ -223,17 +217,17 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = { "added 5.1.0.16309" },
 		}),
-		pet(3253, {	-- Crushhoof
+		i(190608, {	-- Crushhoof
 			["timeline"] = { "added 10.1.5" },
 		}),
 		pet(2780, {	-- Daisy (PET!)
 			["timeline"] = { ADDED_9_0_5 },
 		}),
 		pet(2623, {	-- Dottie (PET!)
-			["timeline"] = { "added 8.3.0.33062" },
+			["timeline"] = { "added 8.3.0.33062", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(109014, {	-- Dread Hatchling (PET!)
-			["timeline"] = { ADDED_5_4_7, "removed 8.3.0" },
+			["timeline"] = { ADDED_5_4_7, "removed 8.3.0", "added 10.1.0" },
 		}),
 		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)
 			["timeline"] = { "added 4.1.0.13793", "removed 4.2.0.14313" },
@@ -245,9 +239,14 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 		}),
+		i(213556, {	-- Hoplet (PET!)
+			["timeline"] = { "added 10.2.5", "removed 10.2.5.99999" },	-- Removed Feb 29th, 2024
+		}),
 		i(49693, {	-- Lil' K.T.
-			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },
+			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+		}),
+		pet(4267, {	-- Lil' Maggz (PET!)
+			["timeline"] = { "added 10.1.7.51313", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		pet(3249, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { ADDED_9_2_5 },
@@ -259,10 +258,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 4.0.3.13286" },
 		}),
 		i(85871, {	-- Lucky Quilen Cub (PET!)
-			["timeline"] = { ADDED_5_0_4 },
+			["timeline"] = { "added 8.3.0" },
 		}),
 		i(141893, {	-- Mischief (PET!)
-			["timeline"] = { "added 7.1.0.22996" },
+			["timeline"] = { "added 7.1.0.22996", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
@@ -275,12 +274,14 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = HORDE_ONLY,
 		}),
+		pet(3175, {	-- Murkastrasza (PET!)
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
 		i(128426, {	-- Nibbles (PET!)
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		i(49665, {	-- Pandaren Monk
-			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 3.2.2.10468", "removed 10.0.2.47213" },
+			["timeline"] = { "added 3.2.2.10468", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
 		i(151234, {	-- Shadow (PET!)
 			["timeline"] = { "added 7.3.0.25021" },
@@ -288,8 +289,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
+		i(190601, {	-- Sunny
+			["timeline"] = { "added 10.1.5", "removed 10.1.7" },	-- Aug 29th, 2023
+		}),
 		i(153541, {	-- Tottle (PET!)
-			["timeline"] = { "added 7.3.5.25937" },
+			["timeline"] = { "added 7.3.5.25937",  "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(147900, {	-- Twilight (PET!)
 			["timeline"] = { "added 7.3.0.24781" },
@@ -307,13 +311,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "Only available in the Asian In-Game Shop.",
 		["groups"] = {
 			i(103557, {	-- Enduring Elixir of Wisdom
-				["timeline"] = { "added 5.4.0.17153" },
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
 			}),
 			i(105911, {	-- Pouch of Enduring Wisdom
-				["timeline"] = { "added 5.4.0.17153" },
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
 			}),
 			i(105912, {	-- Pouch of Enduring Wisdom (5)
-				["timeline"] = { "added 5.4.0.17153" },
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
 			}),
 		},
 	}),
@@ -441,32 +445,71 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		})),
 		i(190216, {	-- Feathered Cowl of the Guardian
 			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
-			["description"] = "Will be available from Trading Post later in 2023.",
 		}),
 		i(190200, {	-- Feathered Drape of the Guardian
 			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
-			["description"] = "Will be available from Trading Post later in 2023.",
 		}),
 		i(190220, {	-- Standard of the Guardian
 			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
-			["description"] = "Will be available from Trading Post later in 2023.",
 		}),
+		i(200925,	-- Ensemble: Solemn Watchman's Garb
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, "removed 10.1.7.51886" } }, {
+			i(190091),	-- Fanciful Corsage
+			i(190728),	-- Gothic Corsage
+			i(190694),	-- Solemn Watchman's Belt
+			i(190695),	-- Solemn Watchman's Boots
+			i(190872),	-- Solemn Watchman's Cuirass
+			i(190152),	-- Solemn Watchman's Gauntlets
+			i(190901),	-- Solemn Watchman's Helm
+			i(190896),	-- Solemn Watchman's Spaulders
+			i(190845),	-- Solemn Watchman's Trousers
+		})),
+		i(208412,	-- High Scholar's Arcana
+			bubbleDownSelf({ ["timeline"] = { "added 10.1.5.51130", "removed 10.1.7.51886" } }, {	-- Removed Oct 31st, 2023
+			i(208406),	-- High Scholar's Circlet
+			i(208613),	-- High Scholar's Drape
+			i(208410),	-- High Scholar's Gloves
+			i(208411),	-- High Scholar's Gown
+			i(208407),	-- High Scholar's Mantle
+			i(208408),	-- High Scholar's Sash
+			i(208409),	-- High Scholar's Slippers
+		})),
+		i(210079, -- Sky-Captain's Masquerade Attire
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.52649" } }, {	-- Removed Jan 1st, 2024
+			i(210073),	-- Sky-Captain's Masquerade Boots
+			i(210076),	-- Sky-Captain's Masquerade Cape
+			i(210074),	-- Sky-Captain's Masquerade Coat
+			i(210072),	-- Sky-Captain's Masquerade Hat
+			i(210075),	-- Sky-Captain's Masquerade Pants
+		})),
+		i(212222,	-- Ensemble: Twilight Witch's Attire
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53162", "removed 10.2.5.99999" } }, {	-- Removed Feb 29th, 2024
+			i(212211),	-- Twilight Witch's Blouse
+			i(212212),	-- Twilight Witch's Boots
+			i(212213),	-- Twilight Witch's Gloves
+			i(212214),	-- Twilight Witch's Hat
+			i(212217),	-- Twilight Witch's Sash
+			i(212216),	-- Twilight Witch's Shoulders
+			i(212215),	-- Twilight Witch's Skirt
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
 	filter(TOYS, {
+		i(172179, {	-- Eternal Traveler's Hearthstone (TOY!)
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
 		i(166778, {	-- Horde's Might Firework (TOY!)
-			["timeline"] = {
-					"added 8.1.5.29737",
-				-- "removed 10.0.7.48999,"
-			},
-			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+			["timeline"] = { "added 8.1.5.29737", "removed 10.1.0" },	-- 17th April 2023
 		}),
 		i(166777, {	-- Lion's Pride Firework (TOY!)
-			["timeline"] = {
-					"added 8.1.5.29737",
-				-- "removed 10.0.7.48999,"
-			},
+			["timeline"] = { "added 8.1.5.29737", "removed 10.1.0" },	-- 17th April 2023
+		}),
+		i(210467, {	-- Magical Murkmorpher (TOY!)
+			["timeline"] = { "added 10.2.5.53162" }
+		}),
+		i(193588, {	-- Timewalker's Hearthstone (TOY!)
+			["timeline"] = { "added 10.2.0.52301" },
 		}),
 		i(166779, {	-- Transmorpher Beacon (TOY!)
 			["timeline"] = { "added 8.1.5.29737" },

@@ -41,12 +41,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					{ 45.4, 39.6, DUSKWOOD },
 					{ 94.2, 35.7, ASHENVALE },
 				},
-				["crs"] = {
-					14889,	-- Emeriss
-					14888,	-- Lethon
-					14890,	-- Taerar
-					14887,	-- Ysondre
-				},
 				["isRaid"] = true,
 				["lvl"] = 60,
 				["groups"] = {
@@ -66,19 +60,27 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
-						i(20644),	-- Nightmare Engulfed Object
-						i(20619),	-- Acid Inscribed Greaves
-						i(20617),	-- Ancient Corroded Leggings
-						i(20616),	-- Dragonbone Wristguards
-						i(20615),	-- Dragonspur Wraps
-						i(20618),	-- Gloves of Delusional Power
-						i(20579),	-- Green Dragonskin Cloak
-						i(20580),	-- Hammer of Bestial Fury
-						i(20581),	-- Staff of Rampant Growth
-						i(20582),	-- Trance Stone
-						prof(SKINNING, {
-							i(20381),	-- Dreamscale
-						}),
+						["crs"] = {
+							14889,	-- Emeriss
+							14888,	-- Lethon
+							14890,	-- Taerar
+							14887,	-- Ysondre
+						},
+						["groups"] = {
+							i(20644),	-- Nightmare Engulfed Object
+							i(20619),	-- Acid Inscribed Greaves
+							i(20617),	-- Ancient Corroded Leggings
+							i(20616),	-- Dragonbone Wristguards
+							i(20615),	-- Dragonspur Wraps
+							i(20618),	-- Gloves of Delusional Power
+							i(20579),	-- Green Dragonskin Cloak
+							i(20580),	-- Hammer of Bestial Fury
+							i(20581),	-- Staff of Rampant Growth
+							i(20582),	-- Trance Stone
+							prof(SKINNING, {
+								i(20381),	-- Dreamscale
+							}),
+						},
 					}),
 					n(14889, {	-- Emeriss
 						-- #if ANYCLASSIC

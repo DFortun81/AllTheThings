@@ -168,7 +168,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #if AFTER 3.1.0.9733
 	n(ACHIEVEMENTS, {
-		-- #if BEFORE MOP
 		ach(2797, {	-- Noble Gardener (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -181,13 +180,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2421,	-- Noble Garden (A)
 				2422,	-- Shake Your Bunny-Maker
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(122),	-- <Name> the Noble
 			},
 		}),
-		-- #endif
 		ach(2798, {	-- Noble Gardener (H)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -350,7 +348,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 	}),
 	n(QUESTS, {
-		q(74120, {	-- A Spring Awakening [Alliance]
+		q(74120, {	-- A Spring Awakening (A)
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["timeline"] = { ADDED_10_0_7 },
@@ -358,7 +356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
-		q(74875, {	-- A Spring Awakening [Horde]
+		q(74875, {	-- A Spring Awakening (H)
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coord"] = { 31.6, 63.1, VALDRAKKEN },
 			["timeline"] = { ADDED_10_0_7 },
@@ -366,7 +364,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
-		q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket [Alliance]
+		q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket (A)
 			["qg"] = 32836,	-- Noblegarden Vendor
 			["coords"] = {
 				{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
@@ -399,7 +397,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 			},
 		}),
-		q(13503, {	-- A Tisket, a Tasket, a Noblegarden Basket [Horde]
+		q(13503, {	-- A Tisket, a Tasket, a Noblegarden Basket (H)
 			["qg"] = 32837,	-- Noblegarden Merchant
 			["coords"] = {
 				-- #if AFTER CATA
@@ -433,7 +431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 			},
 		}),
-		q(13484, {	-- Spring Gathers [Alliance]
+		q(13484, {	-- Spring Gathers (A)
 			["qgs"] = {
 				19171,	-- Draenei Commoner
 				19148,	-- Dwarf Commoner
@@ -467,7 +465,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
-		q(13483, {	-- Spring Gathers [Horde]
+		q(13483, {	-- Spring Gathers (H)
 			["qgs"] = {
 				19169,	-- Blood Elf Commoner
 				19178,	-- Forsaken Commoner
@@ -501,9 +499,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
-		q(13480, {	-- The Great Egg Hunt [Alliance]
+		q(13480, {	-- The Great Egg Hunt (A)
 			["qg"] = 32799,	-- Spring Collector
-			["sourceQuest"] = 13484,	-- Spring Gathers [Alliance]
+			["sourceQuests"] = {
+				13484,	-- Spring Gathers (A)
+				-- #if AFTER DF
+				74120,	-- A Spring Awakening (A)
+				-- #endif
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 49.07, 51.25, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
@@ -529,9 +532,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 			},
 		}),
-		q(13479, {	-- The Great Egg Hunt [Horde]
+		q(13479, {	-- The Great Egg Hunt (H)
 			["qg"] = 32798,	-- Spring Gatherer
-			["sourceQuest"] = 13483,	-- Spring Gathers [Horde]
+			["sourceQuests"] = {
+				13483,	-- Spring Gathers (H)
+				-- #if AFTER DF
+				74875,	-- A Spring Awakening (H)
+				-- #endif
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 46.92, 59.53, MULGORE },	-- Bloodhoof Village
@@ -597,11 +605,3 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #endif
 })));
-
-root(ROOTS.NeverImplemented, {
-	n(NOBLEGARDEN_HEADER, {
-		i(6834, {	-- Black Tuxedo
-			["timeline"] = { "created 1.12.1.11159" },
-		}),
-	}),
-});

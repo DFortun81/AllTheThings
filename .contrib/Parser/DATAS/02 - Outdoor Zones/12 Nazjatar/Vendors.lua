@@ -66,11 +66,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 				i(169352, {	-- Pearlescent Glimmershell (PET!)
 					["cost"] = { { "c", 1721, 150 }, },	-- 150x Prismatic Manapearl
-					["g"] = {
-						crit(6, {	-- Pearlescent Glimmershell
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
 				}),
 				i(170204, {	-- Symbol of Gral (TOY!)
 					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
@@ -307,17 +302,36 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 				i(169352, {	-- Pearlescent Glimmershell (PET!)
 					["cost"] = { { "c", 1721, 150 }, },	-- 150x Prismatic Manapearl
-					["g"] = {
-						crit(6, {	-- Pearlescent Glimmershell
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
 				}),
 				i(170204, {	-- Symbol of Gral (TOY!)
 					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
 				}),
 				i(167170, {	-- Unshackled Waveray (MOUNT!)
 					["cost"] = { { "c", 1721, 250 }, },	-- 250x Prismatic Manapearl
+				}),
+			},
+		}),
+		n(151953, {	-- Hurlgrl
+		-- TODO: Can't use faction-data in non-quest objects...
+		-- ["allianceQuestData"] = {
+		-- 	["sourceQuest"] = 55983,	-- A Safer Place (A)
+		-- 	["coords"] = {
+		-- 		{ 38.6, 54.6, NAZJATAR },
+		-- 	},
+		-- },
+		-- ["hordeQuestData"] = {
+		-- 	["sourceQuest"] = 55530,	-- A Safer Place (H)
+		-- 	["coords"] = {
+		-- 		{ 47.8, 63.0, NAZJATAR },
+		-- 	},
+		-- },
+			["coords"] = {
+				{ 38.6, 54.6, NAZJATAR },
+				{ 47.8, 63.0, NAZJATAR },
+			},
+			["groups"] = {
+				i(167915, {	-- Sweet Sea Vegetable
+					["cost"] = 10000,	-- 1g
 				}),
 			},
 		}),
@@ -330,7 +344,52 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			--	i(163975),	-- Sir Snips -- Listed under PvP w/ CRS
 			},
 		}),
+		n(151950, {	-- Mrrglrlr
+			-- TODO: Can't use faction-data in non-quest objects...
+			-- ["allianceQuestData"] = {
+			-- 	["sourceQuest"] = 55983,	-- A Safer Place (A)
+			-- 	["coords"] = {
+			-- 		{ 39.0, 53.8, NAZJATAR },
+			-- 	},
+			-- },
+			-- ["hordeQuestData"] = {
+			-- 	["sourceQuest"] = 55530,	-- A Safer Place (H)
+			-- 	["coords"] = {
+			-- 		{ 48.6, 62.4, NAZJATAR },
+			-- 	},
+			-- },
+			["sourceQuests"] = {
+				55983,	-- A Safer Place (A)
+				55530,	-- A Safer Place (H)
+			},
+			["coords"] = {
+				{ 39.0, 53.8, NAZJATAR },	-- Alliance
+				{ 48.6, 62.4, NAZJATAR },	-- Horde
+			},
+			["groups"] = {
+				i(167903, {	-- Disintegrating Sand Sculpture
+					["cost"] = {{"i",167915,4}},	-- Sweet Sea Vegetable
+				}),
+			},
+		}),
 		n(152084, {	-- Mrrl
+			-- TODO: Can't use faction-data in non-quest objects...
+			-- ["allianceQuestData"] = {
+			-- 	["sourceQuest"] = 55983,	-- A Safer Place (A)
+			-- 	["coords"] = {
+			-- 		{ 39.1, 54.4, NAZJATAR },	-- Alliance
+			-- 	},
+			-- },
+			-- ["hordeQuestData"] = {
+			-- 	["sourceQuest"] = 55530,	-- A Safer Place (H)
+			-- 	["coords"] = {
+			-- 		{ 47.0, 61.5, NAZJATAR },	-- Horde
+			-- 	},
+			-- },
+			["sourceQuests"] = {
+				55983,	-- A Safer Place (A)
+				55530,	-- A Safer Place (H)
+			},
 			["coords"] = {
 				{ 39.1, 54.4, NAZJATAR },	-- Alliance
 				{ 47.0, 61.5, NAZJATAR },	-- Horde
@@ -393,7 +452,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["description"] = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
 					["g"] = {
 						i(166888),	-- Germinating Seed
-						i(167012),	-- Brinestone Pickaxe
 						i(167059),	-- Chum
 					},
 				}),

@@ -213,6 +213,7 @@ local RARE_GROUP_TIME = {
 	193241,	-- Lord Epochbrgl <Time-Lost>
 	193210,	-- Phleep <Time-Lost, Mind-Lost>
 	193176,	-- Sandana the Tempest <Timesand Thief>
+	201664,	-- Temporal Investi-gator
 };
 local RARE_GROUP_BEOGOKA = {
 	193116,	-- Beogoka
@@ -323,10 +324,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200195),	-- Thunderscale Legguards
 				i(200880),	-- Wind-Sealed Mana Capsule
 					-- Insignias @ Max Renown
-				i(200289),	-- Valdrakken Accord Insignia
-				i(200285),	-- Dragonscale Expedition Insignia
-				i(200287),	-- Iskaara Tuskarr Insignia
-				i(200288),	-- Maruuk Centaur Insingia
+				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
+				i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
+				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
+				i(200288),	-- Maruuk Centaur Insingia [Uncommon]
 			},
 		}),
 		-- Any Items listed here should meet the following criteria:
@@ -534,9 +535,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200126, {	-- Mantle of Copious Chronologies
 					["crs"] = RARE_GROUP_TIME,
 				}),
-				i(200293, {	-- Primal Scion's Twinblade
-					["crs"] = RARE_GROUP_FIVE,
-				}),
 				i(200228, {	-- Protoscale Pauldrons
 					["crs"] = RARE_GROUP_DRAGONKIN,
 				}),
@@ -634,6 +632,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				i(200233, {	-- Paradox Saber
 					["crs"] = RARE_GROUP_DRAGON,
+				}),
+				i(200293, {	-- Primal Scion's Twinblade
+					["crs"] = RARE_GROUP_FIVE,
 				}),
 				i(200169, {	-- Protector's Molten Cudgel
 					["crs"] = RARE_GROUP_DJARADIN,

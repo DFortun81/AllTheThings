@@ -38,25 +38,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					i(187409, {	-- Cloak of the Korthian Scholar
 						["cost"] = { { "c", CATALOGED_RESEARCH, 500 } },
 					}),
-					i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle
+					i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle (RECIPE!)
 						["cost"] = { { "c", CATALOGED_RESEARCH, 2500 } },
 						["g"] = {
-							recipe(343676, {	-- Crafter's Mark of the Chained Isle
+							r(343676, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
 								["requireSkill"] = ALCHEMY,
 							}),
-							recipe(343189, {	-- Crafter's Mark of the Chained Isle
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							recipe(343188, {	-- Crafter's Mark of the Chained Isle
+							r(343188, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(343103, {	-- Crafter's Mark of the Chained Isle
+							r(343103, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
 								["requireSkill"] = ENGINEERING,
 							}),
-							recipe(343694, {	-- Crafter's Mark of the Chained Isle
+							r(343694, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
 								["requireSkill"] = JEWELCRAFTING,
 							}),
-							recipe(343200, {	-- Crafter's Mark of the Chained Isle
+							r(343189, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							r(343200, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
 								["requireSkill"] = TAILORING,
 							}),
 						},
@@ -128,10 +128,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
 						["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 						["sym"] = {
-							{ "select", "tierID", SL_TIER },	-- SL Tier
-							{ "pop" },							-- pop the Tier header
 							{ "select", "headerID", LEGENDARIES },	-- Legendary header
-							{ "pop" },							-- pop header
 							{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
 							{ "exclude", "itemID",
 								190584,	-- Memory of Unity (DK)
@@ -193,20 +190,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["customCollect"] = "SL_COV_NFA",	-- Night Fae
 						["cost"] = { { "c", STYGIA, 1000 } },
 					}),
-					i(187218, {	-- Tome of Origins
+					i(187218, {	-- Tome of Origins (RECIPE!)
 						["cost"] = { { "c", STYGIA, 2000 } },
 						["g"] = {
-							recipe(352443, {	-- Vestige of Origins
-								["requireSkill"] = JEWELCRAFTING,
-							}),
-							recipe(352445, {	-- Vestige of Origins
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(352439, {	-- Vestige of Origins
+							r(352439, {	-- Vestige of Origins (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(352444, {	-- Vestige of Origins
+							r(352443, {	-- Vestige of Origins (RECIPE!)
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							r(352444, {	-- Vestige of Origins (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
+							}),
+							r(352445, {	-- Vestige of Origins (RECIPE!)
+								["requireSkill"] = TAILORING,
 							}),
 						},
 					}),
@@ -410,7 +407,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"select", "itemID", 187187 },		-- Korthian Armaments
-							{"pop"},							-- Discard Header
+							{"pop"},							-- Discard Header (includes symlink of the item)
 							{"where", "headerID", WEAPONS },	-- Weapons only
 							{"pop"},							-- Discard Header
 						},
@@ -515,26 +512,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					i(187411, {	-- Mantle of Death's Advance
 						["cost"] = { { "c", STYGIA, 500 } },
 					}),
-					i(186598, {	-- Recipe: Crafter's Mark III
+					i(186598, {	-- Recipe: Crafter's Mark III (RECIPE!)
 						["cost"] = { { "c", STYGIA, 2000 } },
 						["g"] = {
-							recipe(343677, {	-- Crafter's Mark III
+							r(343677, {	-- Crafter's Mark III (RECIPE!)
 								["requireSkill"] = ALCHEMY,
 							}),
-							recipe(343695, {	-- Crafter's Mark III
-								["requireSkill"] = JEWELCRAFTING,
-							}),
-							recipe(343192, {	-- Crafter's Mark III
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							recipe(343201, {	-- Crafter's Mark III
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(343186, {	-- Crafter's Mark III
+							r(343186, {	-- Crafter's Mark III (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(343102, {	-- Crafter's Mark III
+							r(343102, {	-- Crafter's Mark III (RECIPE!)
 								["requireSkill"] = ENGINEERING,
+							}),
+							r(343695, {	-- Crafter's Mark III (RECIPE!)
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							r(343192, {	-- Crafter's Mark III (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							r(343201, {	-- Crafter's Mark III (RECIPE!)
+								["requireSkill"] = TAILORING,
 							}),
 						},
 					}),
@@ -558,12 +555,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(63597),	-- learning Ensemble: Garb of Fall's Promise
 	q(63631),	-- learning Ensemble: Renathal's Battlefield Attire
 	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
-});
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		filter(MISC, {
-			i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)
-		}),
-	}),
 });

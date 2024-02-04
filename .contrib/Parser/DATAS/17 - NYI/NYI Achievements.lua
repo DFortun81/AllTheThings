@@ -2,7 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-
+-- #if AFTER WRATH
 root(ROOTS.NeverImplemented, {
 	n(ACHIEVEMENTS, {
 		tier(WOTLK_TIER, {
@@ -156,7 +156,6 @@ root(ROOTS.NeverImplemented, {
 				ach(752),	-- Deaths in Naxxramas NYI \\ Deaths in Naxxramas
 				ach(754),	-- Longest Arena winning streak
 				ach(755),	-- Longest Battleground winning streak NYI \\ Longest Battleground winning streak
-				ach(760),	-- Explore Alterac Mountains NYI \\ Explore Alterac Mountains
 				ach(788),	-- Number of groups formed NYI \\ Number of groups formed
 				ach(789),	-- Number of 40-player groups NYI \\ Number of 40-person groups
 				ach(790),	-- Number of 25-player groups NYI \\ Number of 25-person groups
@@ -201,7 +200,6 @@ root(ROOTS.NeverImplemented, {
 				ach(935),	-- Kel'Thuzad attempts
 				ach(936),	-- Kel'Thuzad kills
 				ach(954),	-- What is a Feat of Strength?
-				ach(970),	-- Tricks and Treats of Azeroth
 				ach(1016),	-- Plethora of Pets
 				ach(1018),	-- Pandemic of Pets
 				ach(1019),	-- Shop Smart. Shop Pet... Smart
@@ -229,14 +227,12 @@ root(ROOTS.NeverImplemented, {
 				ach(1156),	-- Test Pets Chared Criteria <NYI>
 				ach(1158),	-- Duel Identity <NYI>
 				ach(1163),	-- Hot Hot Hot Streak <NYI>
-				ach(1187),	-- The Keymaster
 				ach(1202),	-- Weapon skills at maximum skill \\ Weapon skills at maximum NYI
 				ach(1227),	-- Death in the Nexus NYI
 				ach(1228),	-- Death in Utgarde Keep NYI
 				ach(1230),	-- Prince Keleseth kills (Utgarde Keep)
 				ach(1253),	-- Raised as a ghoul
 				ach(1256),	-- Solo Onyxia
-				ach(1274),	-- Loremaster of Outland \\ Champion of Outland
 				ach(1290),	-- Who Sharted?
 				ach(1316),	-- $gOmar:Omara;'s Test Localization Achievement <PH><NYI>
 				ach(1338),	-- Total killing blows
@@ -247,15 +243,12 @@ root(ROOTS.NeverImplemented, {
 				ach(1500),	-- Deaths in Strand of the Ancients
 				ach(1520),	-- Items pickpocketed
 				ach(1551),	-- World Honorable Kills
-				ach(1681),	-- The Loremaster
-				ach(1682),	-- The Loremaster
 				ach(1716),	-- Battleground with the most Killing Blows
 				ach(1719),	-- Battleground with the most Honorable Kills
 				ach(1731),	-- Industrial Warfare
 				ach(1739),	-- Against the Odds
 				ach(1759),	-- Lich King 25-player different bosses defeated \\ Lich King 25-player different bosses killed
 				ach(1771),	-- Lich King 10-player different bosses defeated \\ Lich King 10-player different bosses killed
-				ach(1784),	-- Hail to the Chef
 				ach(1818),	-- Emblem of Heroism
 				ach(1819),	-- Emblem of Valor
 				ach(1820),	-- 25 Emblems of Heroism
@@ -277,7 +270,6 @@ root(ROOTS.NeverImplemented, {
 				ach(2219),	-- Total deaths in 5-player Heroic dungeons \\ Total deaths in 5-player heroic dungeons
 				ach(2396),	-- Battleground played the most
 				ach(2397),	-- Battleground won the most
-				ach(2797),	-- Noble Gardener
 				ach(2896),	-- Emblem of Conquest
 				ach(2897),	-- 25 Emblems of Conquest
 				ach(2898),	-- 50 Emblems of Conquest
@@ -322,19 +314,10 @@ root(ROOTS.NeverImplemented, {
 				ach(3410),	-- Yogg-Saron + 1 Keeper attempts (Ulduar 25 player) (TRACKING ONLY)
 				ach(3411),	-- Yogg-Saron + 0 Keepers attempts (Ulduar 25 player) (TRACKING ONLY)
 				ach(3516),	-- Deaths in Ulduar
-				ach(3656),	-- Pilgrim
-				ach(3838),	-- Dungeon & Raid Emblem
-				ach(3839),	-- 25 Dungeon & Raid Emblems
-				ach(3840),	-- 50 Dungeon & Raid Emblems
-				ach(3841),	-- 100 Dungeon & Raid Emblems
-				ach(3842),	-- 250 Dungeon & Raid Emblems
-				ach(3843),	-- 500 Dungeon & Raid Emblems
-				ach(3876),	-- 1500 Dungeon & Raid Emblems
 				ach(4778),	-- Disenchant rolls made on loot
 				ach(4780),	-- Deaths in Trial of the Crusader
 				ach(4781),	-- Deaths in Icecrown Citadel
-				ach(4784),	-- Emblematic
-				ach(4785),	-- Emblematic
+				ach(18602),	-- Defense Protocol Beta: Trial of The Champion
 			}),
 		}),
 		tier(CATA_TIER, {
@@ -477,6 +460,23 @@ root(ROOTS.NeverImplemented, {
 			-- 8.3.0
 			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
 				ach(14025),	-- <new achievement>
+				ach(14116),	-- All Bridges Burned
+				ach(14121),	-- Daring Defender
+				ach(14113),	-- Imagine a Dark, Dark World
+				ach(14122),	-- Long Trek Through Darkness
+				ach(14088),	-- Orgrimmar - Pained
+				ach(14090),	-- Orgrimmar - Dark Imagination
+				ach(14092),	-- Orgrimmar - Burned Bridge
+				ach(14099),	-- Orgrimmar - Daredevil
+				ach(14100),	-- Orgrimmar - Long Night
+				ach(14106),	-- Pained Expression
+				ach(14083),	-- Stormwind - Pained
+				ach(14084),	-- Stormwind - Dark Imagination
+				ach(14085),	-- Stormwind - Burned Bridge
+				ach(14086),	-- Stormwind - Daredevil
+				ach(14087),	-- Stormwind - Long Night
+				ach(13996),	-- The Dark Horde
+				ach(13995),	-- Twilight over the White City
 			})),
 		}),
 		tier(SL_TIER, {
@@ -580,6 +580,7 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				ach(15644),	-- Good Things Come in Small Packages
 				ach(15517),	-- Solo Shuffle rounds participated in
 				ach(15516),	-- Solo Shuffle rounds won
 				ach(15798),	-- Winding Slitherdrake
@@ -599,6 +600,41 @@ root(ROOTS.NeverImplemented, {
 				ach(17317),	-- Dragon Isles Crafting Order Journeyman
 				ach(17318),	-- Dragon Isles Crafting Order Master
 			})),
+
+			-- 10.0.7
+			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+				ach(17500),	-- Renowned Tribal Leatherworker
+				ach(17501),	-- Renowned Mooncloth Tailor
+				ach(17502),	-- Renowned Spellfire Tailor
+				ach(17503),	-- Renowned Shadoweave Tailor
+				ach(17322),	-- <DNT> Hearthfire Fellowship Rank 1
+				ach(17323),	-- <DNT> Hearthfire Fellowship Rank 2
+				ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
+				ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
+			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+				ach(18542),	-- Dragonflight Keystone Master: Season Two	-- shows as completed together with ach(17844), but this version is NYI
+			})),
+
+			--10.1.7
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
+				ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
+				ach(10705),	-- HS Achievement Fixup
+				ach(11266),	-- Overwatch Spray Unlock
+				ach(11295),	-- Movie Promotion Transmog Fixup
+				ach(14958),	-- [DNT] Charity Pet 2021 - Bananas (account level)
+				ach(14960),	-- [DNT] Charity Pet 2021 - Bananas (character level)
+				ach(19028),	-- Lil' Frostwing
+			})),
+
+			--10.2.5
+			tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+				ach(19696),	-- Hearthstone Anniversary Mail
+			})),
 		}),
 	}),
 });
+-- #endif

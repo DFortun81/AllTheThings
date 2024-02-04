@@ -171,6 +171,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
 					["g"] = {
 						i(204387),	-- Buzzing Orb Core
+						i(204833),	-- Buzzing Orb Core (QI!)
 					},
 				}),
 				q(72962, {	-- Open That Door!
@@ -274,6 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 37.0, 47.0, ZARALEK_CAVERN },
 					["g"] = {
 						i(204386),	-- Pocket Darkened Elemental Core
+						i(203682),	-- Darkened Elemental Core (QI!)
 					},
 				}),
 				q(72915, {	-- Alliance of Convenience
@@ -456,6 +458,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
 					["provider"] = { "n", 200101 },	-- Wrathion
 					["coord"] = { 47.2, 27.8, ZARALEK_CAVERN },
+					["g"] = {
+						i(204877),	-- 'The Resting Blade' (QI!)
+						i(204184),	-- Ebon Eviscerator (QI!)
+					},
 				}),
 				q(72928, {	-- Wipe Them Out
 					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
@@ -498,7 +504,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(74521, {	-- A Flame, Extinguished
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
-					-- also Requires kill of Sarkareth
+					-- also requires kill of Sarkareth
 					["provider"] = { "n", 201727 },	-- Ebyssian
 					["coord"] = { 48.0, 11.8, ZARALEK_CAVERN },
 				}),
@@ -562,6 +568,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 76101 },	-- Tougher Down Under
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_10_2_0 },
 				["g"] = {
 					i(202171),	-- Obsidian Flightstone
 				},
@@ -570,6 +577,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 72658 },	-- Flightstones
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_10_2_0 },
 				["g"] = {
 					i(204728),	-- Friendship Censer
 					i(202171),	-- Obsidian Flightstone
@@ -579,6 +587,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75506 },	-- Shadowflame Crests
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_10_2_0 },
 				["_drop"] = { "g" },	-- Drop Crest
 				["g"] = {
 					i(202171),	-- Obsidian Flightstone
@@ -702,7 +711,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			------ Glimmerogg Storyline ------
 			q(73707, {	-- TICKET: Glimmerogg Games
-				["sourceQuests"] = { 72979 },	-- The Earth Gives Way
+				["sourceQuests"] = {
+					72979,	-- The Earth Gives Way
+					DF_ACCOUNT_ZC_UNLOCK_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
@@ -828,7 +841,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			q(74495, {	-- The Tale of Hraxian
 				["description"] = "Available on next day after Dragonscale Camp quest chain finished.",
-				["sourceQuests"] = { 73045 },	-- Stain Removal
+				["sourceQuests"] = {
+					73045,	-- Stain Removal
+					74996,	-- A Difficult Legacy
+				},
 				["provider"] = { "n", 200298 },	-- Veritistrasz
 				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
 			}),
@@ -861,6 +877,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 55.6, 57.0, ZARALEK_CAVERN },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
+				["g"] = {
+					i(204436),	-- Chipped Horn Signet (QI!)
+				},
 			}),
 			------ Miscellaneous ------
 			q(75232, {	-- Fallen Effects
@@ -879,6 +898,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204805),	-- Suspended Sulfuric Droplet
 					i(204810),	-- Drogbar Rocks
 					i(204811),	-- Drogbar Stones
+					i(205031),	-- Broodmother Venom (QI!)
+					i(205030),	-- Crawler Venom (QI!)
 				},
 			}),
 		}),
@@ -890,7 +911,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- Various
 		q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion (spellID 411772)
 		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
-		q(75642),	-- Allows you to sense rare fish in high-altitude lakes (spellID 387827)
 		q(75658, {["name"] = "Zaralek Cavern Unlocked [Account]"}),	-- Zaralek Cavern World Quests (spellID 408876)
 		q(75511),	-- Tracking Quest (that's the name)
 		q(75764),	-- Current Patch - Login Video - Watched (spellID 409608)

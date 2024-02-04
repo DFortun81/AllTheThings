@@ -240,6 +240,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61230 },	-- Outside Influence
 				["provider"] = { "n", 173343 },	-- Ascended Bearer
 				["coord"] = { 54.2, 16.2, MALDRAXXUS },
+				["g"] = {
+					i(181162),	-- Beacon Trigger (QI!)
+				},
 			}),
 			q(58833, {	-- Calling in All Favors
 				["sourceQuests"] = { 62391 },	-- Mobilize Maldraxxus
@@ -316,6 +319,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 59910 },	-- Fight and Flight
 				["provider"] = { "o", 357246 },	-- Tattered Scroll
 				["coord"] = { 33.5, 24.1, MALDRAXXUS },
+				['g'] = {
+					i(181285),	-- Abhorrent Design (QI!)
+				},
 			}),
 			q(59645, {	-- Death Rains
 				["sourceQuests"] = { 59625 },	-- The Only Cure
@@ -339,6 +345,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				},
 				["provider"] = { "n", 173172 },	-- Balmedar
 				["coord"] = { 66.2, 32.1, MALDRAXXUS },
+				["g"] = {
+					i(182779),	-- Bundle of "Modified" Reagents (QI!)
+				},
 			}),
 			q(59922, {	-- Do Not Forget
 				["sourceQuests"] = { 59921 },	-- All I Ever Will Be
@@ -534,11 +543,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61753 },	-- Explosive Schemes
 				["provider"] = { "n", 173422 },	-- Balmedar's Oculus
 				["_drop"] = { "g" },	-- make items stop showing up that are not actually rewarded by this quest
+				["g"] = {
+					i(182734),	-- Assorted Curios (QI!)
+					i(182735),	-- Domination Blade (QI!)
+				},
 			}),
 			q(57644, {	-- No Friend Left Behind
 				["sourceQuests"] = { 61226 },	-- Extra Limbs
 				["provider"] = { "n", 158604 },	-- Navigator Xennir
 				["coord"] = { 52.0, 16.9, MALDRAXXUS },
+				["g"] = {
+					i(183118),	-- Venomous Solvent (QI!)
+					i(181237),	-- Venomous Solvent (QI!)
+				},
 			}),
 			q(59650, {	-- No Hesitation, No Surrender
 				["sourceQuests"] = { 59625 },	-- The Only Cure
@@ -624,11 +641,17 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 57530 },	-- Gharmal's Tower
 				["provider"] = { "n", 173194 },	-- Alexandros Mograine
 				["coord"] = { 27.3, 23.8, MALDRAXXUS },
+				["g"]= {
+					i(182658),	-- Mantle of Eternal Victory (QI!)
+				},
 			}),
 			q(59265, {	-- Prying Eyes
 				["sourceQuests"] = { 58007 },	-- Eyes on the Problem
 				["provider"] = { "n", 164619 },	-- Baroness Vashj
 				["coord"] = { 50.8, 24.4, MALDRAXXUS },
+				["g"] = {
+					i(175795),	-- Betrayer's Eye (QI!)
+				},
 			}),
 			q(60067, {	-- Pursuit of Justice
 				["sourceQuests"] = { 60098 },	-- The End is Now
@@ -648,6 +671,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					i(183401, {	-- Amethystine Dye
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
+					i(183400),	-- Amethystine Powder (QI!)
 				},
 			}),
 			q(61983, {	-- Replenish the Reservoir
@@ -686,6 +710,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158529 },	-- Whisperer Vyn
 				["coord"] = { 49.9, 17.8, MALDRAXXUS },
 				["g"] = {
+					i(181162),	-- Beacon Trigger (QI!)
 					i(182265),	-- Bladesworn Wraith's Belt
 					i(182274),	-- Bladesworn Conjurer's Cinch
 					i(182283),	-- Bladesworn Tactician's Girdle
@@ -696,6 +721,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 60112 },	-- Cut to the Bone
 				["provider"] = { "n", 172573 },	-- Khaliiq
 				["coord"] = { 27.2, 45.2, MALDRAXXUS },
+				["g"] = {
+					i(181785),	-- Ossein Key (QI!)
+				},
 			}),
 			q(65165, {	-- Soul Support
 				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
@@ -756,6 +784,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					i(182252),	-- Bladesworn Harbinger's Stompers
 					i(182279),	-- Bladesworn Tactician's Sabatons
 					i(182261),	-- Bladesworn Wraith's Boots
+					i(182679),	-- Bundle of Reagents (QI!)
 				},
 			}),
 			q(59894, {	-- The Golden Dawn
@@ -773,6 +802,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				},
 				["provider"] = { "n", 172924 },	-- Baroness Ninadar
 				["coord"] = { 66.3, 26.3, MALDRAXXUS },
+				["g"] = {
+					i(182645),	-- Binding of the Banished One (QI!)
+					i(182644),	-- Greater Wards and Barriers, Volume IV (QI!)
+					i(182643),	-- Paths of the First Ones (QI!)
+					i(182642),	-- Winged Arcanum (QI!)
+				},
 			}),
 			q(63032, {	-- The Highlord Calls
 				["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -886,6 +921,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 58007 },	-- Eyes on the Problem
 				["provider"] = { "n", 164619 },	-- Baroness Vashj
 				["coord"] = { 50.8, 24.4, MALDRAXXUS },
+				["g"] = {
+					i(172371),	-- Mark of Vashj (QI!)
+				},
 			}),
 			q(59698, {	-- Wipe the Slate Clean
 				["sourceQuests"] = {

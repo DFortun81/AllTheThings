@@ -51,28 +51,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		ach(17321, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Elders of the Dragon Isles
-			crit(1, {
+			crit(57843, {
 				["_quests"] = { 73848 },	-- Iskaara Elder Shomkol
 			}),
-			crit(2, {
+			crit(57840, {
 				["_quests"] = { 73716 },	-- Aylaag Elder
 			}),
-			crit(3, {
+			crit(57841, {
 				["_quests"] = { 73172 },	-- Shikaar Elder
 			}),
-			crit(4, {
+			crit(57842, {
 				["_quests"] = { 73717 },	-- Ohn'ir Elder
 			}),
-			crit(5, {
+			crit(57839, {
 				["_quests"] = { 73858 },	-- Iskaara Elder Nemaglek
 			}),
-			crit(6, {
+			crit(57844, {
 				["_quests"] = { 73860 },	-- Elder Dekidig
 			}),
-			crit(7, {
+			crit(57845, {
 				["_quests"] = { 73859 },	-- Iskaara Elder Sik'ek
 			}),
-			crit(8, {
+			crit(57846, {
 				["_quests"] = { 73861 },	-- Elder Stormdrifter
 			}),
 		})),
@@ -389,6 +389,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				8873,	-- The Lunar Festival (H)
 				8874,	-- The Lunar Festival (H)
 				8875,	-- The Lunar Festival (H)
+				-- #if AFTER DF
+				73169,	-- The Lunar Festival (A)
+				73170,	-- The Lunar Festival (H)
+				-- #endif
 			},
 			["maps"] = {
 				ELWYNN_FOREST,
@@ -1409,6 +1413,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["timeline"] = { "added 8.1.0.28724" },
 					["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 				}),
+				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor
+					["timeline"] = { ADDED_10_2_5 },
+					["cost"] = 500000000,	-- 50k
+				}),
 			},
 		}),
 		n(15898, {	-- Lunar Festival Vendor
@@ -1436,6 +1444,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				i(21576),	-- Red Rocket Cluster
 				i(21721),	-- Moonglow
 				i(21747),	-- Festival Firecracker
+				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor
+					["timeline"] = { ADDED_10_2_5 },
+					["cost"] = 500000000,	-- 50k
+				}),
 			},
 		}),
 		n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
@@ -1494,6 +1506,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["cost"] = { { "i", 21100, 1 } },	-- 1x Coin of Ancestry
 				}),
 				i(21713),	-- Elune's Candle
+				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor
+					["timeline"] = { ADDED_10_2_5 },
+					["cost"] = 500000000,	-- 50k
+				}),
 			},
 		}),
 	}),

@@ -2,10 +2,6 @@
 --     C U S T O M   H E A D E R S       --
 -------------------------------------------
 -- Expansion Features
-	-- WoD
-	GARRISONS = -9966;
-	-- Legion
-	CLASS_HALL = -9965;
 	-- BFA
 	ISLAND_EXPEDITIONS = -3338;
 	-- SL
@@ -50,9 +46,7 @@
 	SNIFFENSEEKING = -1203;
 
 
-ALLIED_RACES = -254;
 HERITAGE = -255;
-NEW_CHARACTER = -211;
 LEVEL_NINETY = -137;
 LEVEL_HUNDRED = -138;
 LEVEL_HUNDRED_TEN = -149;
@@ -64,10 +58,12 @@ LEVEL_SIXTY = -156;
 LEVEL_SIXTY_TRIAL = -160;
 
 -- Special
-SOURCELESS = -219;
 AVAILABLE = -1204;
 UNAVAILABLE = -1205;
 EXPANSION_PRELAUNCH = -520;
+
+-- NYI
+TRADING_POST_NYI = -11111;
 --------------------------
 --     T H E  E N D     --
 --------------------------

@@ -30,15 +30,15 @@ root(ROOTS.Zones, {
 				}),
 				q(41481, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41482, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41483, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41529, {	-- Bushy Aethril
 					["requireSkill"] = HERBALISM,

@@ -15,6 +15,18 @@ struct = function(field, id, t)
 	t[field] = id;
 	return t;
 end
+-- Clone a piece of data as a separate table
+clone = function(t, c)
+	c = c or {};
+	if type(c) ~= "table" then error("clone is only necessary for 'table' types!") end
+
+	for key,value in pairs(t) do
+		if not c[key] then
+			c[key] = type(value) == "table" and clone(value) or value;
+		end
+	end
+	return c;
+end
 
 -- Helper Functions
 isarray = function(t)
@@ -35,7 +47,7 @@ addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
--- Appends a common groups set into the groups for this object
+-- Appends a common groups set into the groups for this object. The last element is the one to append into.
 appendGroups = function(...)
 	local data = { ... };
 	local count = #data;
@@ -57,12 +69,12 @@ appendGroups = function(...)
 		return groups;
 	end
 end
--- Appends together multiple sets of groups. This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
-appendAllGroups = function(...)
+-- Appends together multiple arrays of groups (into the first provided group). This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
+appendAllGroups = function(g, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then
-		local g = {};
-		local i, select, a = #g + 1, select;
+		g = g or {};
+		local i, a = #g + 1;
 		for n=1,arrs do
 			a = select(n, ...);
 			if a then
@@ -72,8 +84,8 @@ appendAllGroups = function(...)
 				end
 			end
 		end
-		return g;
 	end
+	return g;
 end
 -- Simply applies keys from 'data' into 't' where each key does not already exist
 applyData = function(data, t)
@@ -322,6 +334,11 @@ applyevent = function(eventID, data)
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
 		print(CurrentSubFileName or CurrentFileName);
 	end
+	-- Force Root Event object type for event headers to ensure they parse as Events
+	if data.npcID and data.npcID < 0 then
+		data._eventHeaderID = data.npcID;
+		data.type = "eventHeader";
+	end
 	return bubbleDown({ ["e"] = eventID }, data);
 end
 -- #if ANYCLASSIC
@@ -353,6 +370,9 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 	-- #endif
 	return lvl;
 end
+Sym_PvPWeaponsArsenal = function(TIER, SEASON, PVPSET)
+	return {{"sub","pvp_weapons_ensemble",TIER,SEASON,PVPSET}}
+end
 
 -- Cost Helper Functions
 applycost = function(item, ...)
@@ -380,6 +400,20 @@ chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's A
 end
 daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter's Token cost to an item.
 	applycost(item, { "c", 61, cost });
+	return item;
+end
+darkmoondaggermaw = function(cost, item)				-- Assign a Darkmoon Daggermaw cost to an item.
+	applycost(item, { "i", 124669, cost });	-- Darkmoon Daggermaw
+	return item;
+end
+darkmoonprizeticket = function(cost, item)				-- Assign a Darkmoon Prize Ticket cost to an item.
+	applycost(item, { "c", 515, cost });	-- Darkmoon Prize Ticket
+	return item;
+end
+defilersscourgestone = function(cost, item)				-- Assign a Defiler's Scourgestone (Defense Protocol Gamma - Wrath Classic) cost to an item with proper timeline requirements.
+	-- #if ANYCLASSIC
+	applycost(item, { "c", DEFILERS_SCOURGESTONE, cost });
+	-- #endif
 	return item;
 end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
@@ -481,10 +515,10 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
 	t.AllSourceQuestsRequiredForAchievement = nil;
 	if not t.OnUpdate then
-		if t.providers then
+		if t.provider or t.providers then
 			-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
 			t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
-		elseif t.sourceQuests then
+		elseif t.sourceQuest or t.sourceQuests then
 			-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
 			t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
 		end
@@ -549,6 +583,9 @@ achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object wi
 end
 achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
+	if t.sym then
+		error("Do not use 'sym' on achievement: "..id..". It causes criteria to be placed under Hidden Quest Triggers")
+	end
 	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
 	-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard
 	-- but for now prevent the Criteria from disappearing into the Unsorted window
@@ -649,21 +686,24 @@ cr = creature;											-- Create a CREATURE Object (alternative shortcut)
 crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (localized automatically)
 	if not t then t = {};
 	elseif not t.groups then
-		if not isarray(t) then
-			-- DO NOT do that lol
-			if t.achievementID then
-				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-			end
-			if t.questID then
-				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))
-			end
-		else
+		if isarray(t) then
 			t = { ["groups"] = t };
 		end
 	end
+	if (t.groups or t.g) and #(t.groups or t.g) > 0 and false then
+		error(table.concat({"Do not nest content (g/groups) inside Achievement Criteria:",criteriaUID}))
+	end
+	if t.achievementID then
+		-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+		-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+	end
+	if t.questID then
+		error(table.concat({"Do not use 'questID' in crit(",criteriaUID,") ==> [\"_quests\"]={",t.questID,"}"}))
+	end
+	if t.creatureID or t.npcID then
+		error(table.concat({"Do not use 'creatureID' or 'npcID' in crit(",criteriaUID,") ==> [\"crs\"]={",t.creatureID or t.npcID,"}"}))
+	end
 	t.criteriaID = criteriaUID;
-	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
 	return t;
 end
 currency = function(id, t)								-- Create a CURRENCY Object
@@ -806,7 +846,17 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	end
 	local i = i(itemID, t);
 	-- use ModID/BonusID combination to represent the new Item available via Upgrading
-	i.up = ((tonumber(modID) or 0) / 100) + ((tonumber(bonusID) or 0) / 1000000);
+	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 10000);
+	return i;
+end
+iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (specified by ModID/BonusID)
+	local i = i(itemID, t);
+	if modID and modID ~= 0 then
+		i.modID = modID;
+	end
+	if bonusID and bonusID ~= 0 then
+		i.bonusID = bonusID;
+	end
 	return i;
 end
 inst = function(id, t)									-- Create an INSTANCE Object
@@ -826,7 +876,7 @@ inst = function(id, t)									-- Create an INSTANCE Object
 						t.maps = nil;
 					end
 				else
-					error("Instance Missing a MapID.");
+					--error("Instance Missing a MapID: " .. id);
 				end
 				return t;
 			end
@@ -840,6 +890,12 @@ inst = function(id, t)									-- Create an INSTANCE Object
 	end
 end
 map = function(id, t)									-- Create a MAP Object
+	if t then
+		-- do not attach achievements to maps
+		if t.achievementID then
+			error("Do not attach 'achievementID' to a map.")
+		end
+	end
 	return struct("mapID", id, t);
 end
 m = map;												-- Create a MAP Object (alternative shortcut)
@@ -881,10 +937,11 @@ obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, 
 	return struct("objectID", id, t);
 end
 o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
-o_repeated = function(t)								-- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS
+o_repeated = function(t, o)								-- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS
 	if t[1] then
 		-- move the raw array of objects into a .g group
-		t = { g = t };
+		-- include o as a separate array so we can list the shared contents/objects separately for easier data application
+		t = { g = appendAllGroups(t, o) };
 	end
 	if t.groups or t.g then
 		for i,group in ipairs(t.groups or t.g) do
@@ -1010,16 +1067,23 @@ end
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
 end
-title_gendered = function(id_m, id_f, t)				-- Create a TITLE Object which is 'the same' but changes the wording based on gender
-	if t then
-		t.titleIDs = { id_m, id_f };
-	else
-		t = { ["titleIDs"]={ id_m, id_f }};
-	end
-	return struct("titleID", id_m * id_f * 100, t);		-- Arbitrary titleID from the combination of both titleID's
+title_female = function(id, t)							-- Create a TITLE Object for Female Characters
+	t = struct("titleID", id, t);
+	t.gender = 3;
+	return t;
+end
+title_male = function(id, t)							-- Create a TITLE Object for Male Characters
+	t = struct("titleID", id, t);
+	t.gender = 2;
+	return t;
 end
 v = function(id, t)										-- Create a VIGNETTE Object
 	t.type = "vignetteID";
+	if t.cr or t.creatureID or t.qg or t.qgs then
+		error("Vignetts don't use cr, creatureID, qg, or qgs!", id);
+	elseif not t.crs then
+		error("Vignettes must supply a crs list!", id);
+	end
 	return struct("questID", id, t);
 end
 
@@ -1027,6 +1091,7 @@ end
 dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragonriding Race
 	t = q(id, t);
 	t.repeatable = true;
+	t.collectible = false;	-- quest literally cannot be completed
 	t.sourceQuestNumRequired = 1;
 	t.sourceQuests = {
 		68795,	-- Dragonriding
@@ -1042,6 +1107,13 @@ battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet
 		timeline = { ADDED_5_0_4 };
 	end
 	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+end
+petbattles = function(timeline, t)						-- Creates a PET_BATTLE header with pet battle filter on it. Use this with Outdoor Zones.
+	if not t then
+		t = timeline;
+		timeline = { ADDED_5_0_4 };
+	end
+	return petbattle(n(PET_BATTLE, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
@@ -1111,7 +1183,14 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 
 -- Create a Header. Returns a UNIQUE ID, starting at 0.
 (function()
-local customHeaders,nextHeaderID = {},-1000000;	-- TODO: Change this to 0.
+if not NextHeaderID then
+	-- Once we've eliminated all of the old style NPC IDs, we can change this value and
+	-- delete the Dynamic Header IDs file to reassign easier to manage header IDs.
+	NextHeaderID = -1000000; -- TODO: Change this to 0. (when the above task is done)
+	HeaderAssignments = {};
+end
+local customHeaders = {};
+local customHeadersByReadable, customHeadersByConstant = {}, {};
 CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
 local concatKeyPairs = function(t)
 	local keys = {};
@@ -1145,6 +1224,18 @@ createHeader = function(data)
 	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
 		print("INVALID HEADER", data.readable, data.text);
 	else
+		if data.constant then
+			if customHeadersByConstant[data.constant] then
+				error("ERROR: HEADER CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. customHeadersByConstant[data.constant].text.en .. ". Please double check that the header definitions are unique or reuse the same header.");
+			else
+				customHeadersByConstant[data.constant] = data;
+			end
+		end
+		if customHeadersByReadable[data.readable] then
+			error("ERROR: HEADER READABLE " .. data.readable .. " ALREADY ASSIGNED TO " .. customHeadersByReadable[data.readable].text.en .. ". Please double check that the header definitions are unique or reuse the same header.");
+		else
+			customHeadersByReadable[data.readable] = data;
+		end
 		if data.eventSchedule then
 			local schedule = "{";
 			local currentDate = os.date("*t");
@@ -1304,9 +1395,17 @@ createHeader = function(data)
 			data.eventSchedule = schedule .. "\n}";
 		end
 
-		local headerID = nextHeaderID;
+		-- Try to find the headerID assignment from the readable table.
+		local headerID = HeaderAssignments[data.readable];
+		if not headerID then
+			headerID = NextHeaderID;
+			NextHeaderID = NextHeaderID - 1;
+		end
+		if customHeaders[headerID] then
+			error("ERROR: HEADER ID " .. headerID .. " ALREADY ASSIGNED TO " .. customHeaders[headerID].readable .. ", but attempting to assign to " .. data.readable .. ". Please double check that the header definitions are different");
+			return;
+		end
 		customHeaders[headerID] = data;
-		nextHeaderID = nextHeaderID - 1;
 		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("HEADER", headerID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 		return headerID;
@@ -1327,4 +1426,140 @@ CRIEVES_SUPER_COOL_HEADER = createHeader({
 	},
 });
 ]]--
+local temporaryHeaderAssignments = {};
+translate = function(data, key)
+	if not data then
+		print("INVALID TRANSLATION: You must pass data into the translate function.");
+	else
+		if type(data) == "number" then
+			if key then data = data .. ":" .. key; end
+			return "~H:" .. data;
+		else
+			if not data.en then
+				print("INVALID TRANSLATION (missing 'en')", data.en or (type(data.text) == "table" and data.text) or data);
+			else
+				-- We want to reuse this headerID for things that use the same translation data.
+				local headerID = temporaryHeaderAssignments[data.en];
+				if not headerID then
+					headerID = createHeader({ readable = data.en, temporary = true, text = data });
+					temporaryHeaderAssignments[data.en] = headerID;
+				end
+				return "~H:" .. headerID;
+			end
+		end
+	end
+end
 end)();
+
+-- Create a Custom Object. Returns a UNIQUE ID, starting at 100000000.
+(function()
+local nextCustomObjectID = 100000000;
+createCustomObject = function(data)
+	if not data then
+		print("INVALID OBJECT: You must pass data into the createCustomObject function.");
+	elseif not data.readable then
+		print("INVALID OBJECT (missing 'readable')", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
+		print("INVALID OBJECT", data.readable, data.text);
+	else
+		local objectID = nextCustomObjectID;
+		ObjectDB[objectID] = data;
+		nextCustomObjectID = objectID + 1;
+		return objectID;
+	end
+end
+end)();
+
+do
+local itemDBConditional = ItemDBConditional;
+local CurrentProfessionID = ALCHEMY;
+local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill)
+	-- Cache the object.
+	local object;
+	if itemID == 0 then
+		-- The RecipeDB table isn't setup to always return a value.
+		object = RecipeDB[recipeID];
+	else
+		-- Cache the object as an item
+		object = itemDBConditional[itemID];
+
+		-- Update the recipeID.
+		local originalSpellID = object.spellID;
+		local originalRecipeID = object.recipeID;
+		if not originalRecipeID then
+			object.recipeID = recipeID;
+		elseif originalRecipeID ~= recipeID then
+			-- Replace it, but also show a warning.
+			print("Item", itemID, "recipeID changed", originalRecipeID, ">", recipeID);
+			object.recipeID = recipeID;
+		end
+
+		-- Check for a spellID.
+		if originalSpellID then
+			object.spellID = nil;
+			if not (originalSpellID == originalRecipeID or originalSpellID == recipeID) then
+				print("Item", itemID, "spellID changed", originalSpellID, "> nil");
+			end
+		end
+	end
+
+	-- Mark it as a recipe.
+	object.f = RECIPES;
+
+	-- Update the skill requirement.
+	requireSkill = requireSkill or CurrentProfessionID;
+	local originalRequireSkill = object.requireSkill;
+	if not originalRequireSkill then
+		if itemID ~= 0 then
+			RecipeDB[recipeID].requireSkill = requireSkill;
+		end
+		object.requireSkill = requireSkill;
+	elseif originalRequireSkill ~= requireSkill then
+		-- Replace it, but also show a warning.
+		if itemID == 0 then
+			print("Recipe", recipeID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
+		else
+			print("Item", itemID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
+			RecipeDB[recipeID].requireSkill = requireSkill;
+		end
+		object.requireSkill = requireSkill;
+	end
+
+	-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
+	local unobtainType = unobtainStatus and type(unobtainStatus);
+	if unobtainType then
+		if unobtainType == "number" then
+			object.u = unobtainStatus;
+		elseif unobtainType == "string" then
+			object.timeline = { unobtainStatus };
+		elseif unobtainType == "table" then
+			object.timeline = unobtainStatus;
+		end
+	end
+	return object;
+end
+GetRecipeHelperForProfession = function(professionID)
+	CurrentProfessionID = professionID;
+	return ItemRecipeHelper;
+end
+
+
+--[[
+-- Proof of Concept:
+-- If you assign new partial data to the item, it'll retain its previous data instead of discarding it.
+local disgustingOozeling = ItemDBConditional[20769];
+disgustingOozeling.spellID = 25162;
+disgustingOozeling.speciesID = 114;
+
+ItemDBConditional[20769] = { description = "What a shame it would be to lose this data..." };
+
+print("Disgusting Oozeling contains:");
+for key,value in pairs(ItemDBConditional[20769]) do
+	print(" " .. key .. ": " .. value);
+end
+]]--
+end
+
+function Harvest(things)
+	root("Items.HARVESTSOURCES", things);
+end

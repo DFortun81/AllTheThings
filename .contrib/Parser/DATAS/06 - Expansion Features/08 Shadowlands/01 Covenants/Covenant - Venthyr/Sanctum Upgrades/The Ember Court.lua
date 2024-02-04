@@ -146,337 +146,337 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							achraw(14723, {	-- Be Our Guest
-								crit(1, {	-- Baroness Vashj
+								crit(49730, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
-								crit(2, {	-- Lady Moonberry
+								crit(49731, {	-- Lady Moonberry
 									["_npcs"] = { 171830 },
 								}),
-								crit(3, {	-- Mikanikos
+								crit(49732, {	-- Mikanikos
 									["_npcs"] = { 171831 },
 								}),
-								crit(4, {	-- The Countess
+								crit(49733, {	-- The Countess
 									["_npcs"] = { 165269 },
 								}),
-								crit(5, {	-- Alexandros Mograine
+								crit(49734, {	-- Alexandros Mograine
 									["_npcs"] = { 171833 },
 								}),
-								crit(6, {	-- Hunt-Captain Korayn
+								crit(49735, {	-- Hunt-Captain Korayn
 									["_npcs"] = { 171836 },
 								}),
-								crit(7, {	-- Polemarch Adrestes
+								crit(49736, {	-- Polemarch Adrestes
 									["_npcs"] = { 168447 },
 								}),
-								crit(8, {	-- Rendle and Cudgelface
+								crit(49737, {	-- Rendle and Cudgelface
 									["_npcs"] = { 171839 },	-- Rendle
 								}),
-								crit(9, {	-- Choofa
+								crit(49738, {	-- Choofa
 									["_npcs"] = { 168449 },
 								}),
-								crit(10, {	-- Cryptkeeper Kassir
+								crit(49739, {	-- Cryptkeeper Kassir
 									["_npcs"] = { 168450 },
 								}),
-								crit(11, {	-- Droman Aliothe
+								crit(49740, {	-- Droman Aliothe
 									["_npcs"] = { 171847 },
 								}),
-								crit(12, {	-- Grandmaster Vole
+								crit(49741, {	-- Grandmaster Vole
 									["_npcs"] = { 171848 },
 								}),
-								crit(13, {	-- Kleia and Pelagos
+								crit(49742, {	-- Kleia and Pelagos
 									["_npcs"] = { 171850 },	-- Kleia
 								}),
-								crit(14, {	-- Plague Deviser Marileth
+								crit(49743, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },
 								}),
-								crit(15, {	-- Sika
+								crit(49744, {	-- Sika
 									["_npcs"] = { 171854 },
 								}),
-								crit(16, {	-- Stonehead
+								crit(49745, {	-- Stonehead
 									["_npcs"] = { 171856 },
 								}),
 							}),
 							ach(14678, {	-- Court Favors
-								crit(1, {	-- Anima-Infused Water
+								crit(49630, {	-- Anima-Infused Water
 									["_quests"] = { 59681 },
 								}),
-								crit(2, {	-- Crown of Honor
+								crit(49631, {	-- Crown of Honor
 									["_quests"] = { 59682 },
 								}),
-								crit(3, {	-- Bewitched Wardrobe
+								crit(49632, {	-- Bewitched Wardrobe
 									["_quests"] = { 59683 },
 								}),
-								crit(4, {	-- Bounding Shroom Seeds
+								crit(49633, {	-- Bounding Shroom Seeds
 									["_quests"] = { 59684 },
 								}),
-								crit(5, {	-- Rally Bell
+								crit(49634, {	-- Rally Bell
 									["_quests"] = { 59685 },
 								}),
-								crit(6, {	-- Tubbins's Lucky Teapot
+								crit(49635, {	-- Tubbins's Lucky Teapot
 									["_quests"] = { 59686 },
 								}),
-								crit(7, {	-- Dog Bone's Bone
+								crit(49636, {	-- Dog Bone's Bone
 									["_quests"] = { 59687 },
 								}),
-								crit(8, {	-- Dredger Party Supplies
+								crit(49637, {	-- Dredger Party Supplies
 									["_quests"] = { 59688 },
 								}),
-								crit(9, {	-- Generous Gift
+								crit(49638, {	-- Generous Gift
 									["_quests"] = { 59689 },
 								}),
-								crit(10, {	-- Racing Permit
+								crit(49639, {	-- Racing Permit
 									["_quests"] = { 59690 },
 								}),
-								crit(11, {	-- Necrolord Arsenal
+								crit(49640, {	-- Necrolord Arsenal
 									["_quests"] = { 59691 },
 								}),
-								crit(12, {	-- Venthyr Arsenal
+								crit(49641, {	-- Venthyr Arsenal
 									["_quests"] = { 59692 },
 								}),
-								crit(13, {	-- Kyrian Arsenal
+								crit(49642, {	-- Kyrian Arsenal
 									["_quests"] = { 59693 },
 								}),
-								crit(14, {	-- Night Fae Arsenal
+								crit(49643, {	-- Night Fae Arsenal
 									["_quests"] = { 59694 },
 								}),
-								crit(15, {	-- Maldraxxi Challenge Banner
+								crit(49644, {	-- Maldraxxi Challenge Banner
 									["_quests"] = { 59695 },
 								}),
-								crit(16, {	-- Vanity Mirror
+								crit(49645, {	-- Vanity Mirror
 									["_quests"] = { 61452 },
 								}),
-								crit(17, {	-- Training Dummies
+								crit(49646, {	-- Training Dummies
 									["_quests"] = { 61453 },
 								}),
-								crit(18, {	-- The Wild Drum
+								crit(49647, {	-- The Wild Drum
 									["_quests"] = { 61454 },
 								}),
-								crit(19, {	-- Protective Braziers
+								crit(49648, {	-- Protective Braziers
 									["_quests"] = { 61455 },
 								}),
-								crit(20, {	-- Slippery Muck
+								crit(49649, {	-- Slippery Muck
 									["_quests"] = { 61456 },
 								}),
-								crit(21, {	-- Altar of Accomplishment
+								crit(49650, {	-- Altar of Accomplishment
 									["_quests"] = { 61457 },
 								}),
 							}),
 							ach(14681, {	-- Dredger Academy
-								crit(1, {	-- Ardenweald Etiquette
+								crit(49652, {	-- Ardenweald Etiquette
 									["_quests"] = { 62206 },	-- Ardenweald Etiquette
 								}),
-								crit(2, {	-- Bastion Etiquette
+								crit(49653, {	-- Bastion Etiquette
 									["_quests"] = { 62207 },	-- Bastion Etiquette
 								}),
-								crit(3, {	-- Maldraxxus Etiquette
+								crit(49654, {	-- Maldraxxus Etiquette
 									["_quests"] = { 62208 },	-- Maldraxxi Protocols
 								}),
-								crit(4, {	-- Revendreth Etiquette
+								crit(49655, {	-- Revendreth Etiquette
 									["_quests"] = { 62205 },	-- Venthyr Ettiquette
 								}),
-								crit(5, {	-- Sinrunner Riding
+								crit(50027, {	-- Sinrunner Riding
 									["_quests"] = { 62221 },	-- My Own Death Pony!
 								}),
-								crit(6, {	-- Dredbat Riding
+								crit(50028, {	-- Dredbat Riding
 									["_quests"] = { 62222 },	-- On Silver Wings
 								}),
 							}),
 							ach(14683, {	-- Dredger Style
-								crit(1, {	-- Black Muck Armor Dye
+								crit(49651, {	-- Black Muck Armor Dye
 									["_quests"] = { 62178 },	-- Black Muck Dye
 								}),
-								crit(2, {	-- Blue Muck Armor Dye
+								crit(50018, {	-- Blue Muck Armor Dye
 									["_quests"] = { 62179 },	-- Blue Muck Dye
 								}),
-								crit(3, {	-- Green Muck Armor Dye
+								crit(50019, {	-- Green Muck Armor Dye
 									["_quests"] = { 62180 },	-- Green Muck Dye
 								}),
-								crit(4, {	-- Bubbling Muck Armor Dye
+								crit(50020, {	-- Bubbling Muck Armor Dye
 									["_quests"] = { 62181 },	-- Bubbling Red Muck Dye
 								}),
-								crit(5, {	-- Thin Hair Cut
+								crit(50021, {	-- Thin Hair Cut
 									["_quests"] = { 62177 },	-- A Memorable Look
 								}),
-								crit(6, {	-- Spikey Hair Cut
+								crit(50022, {	-- Spikey Hair Cut
 									["_quests"] = { 62176 },	-- The Spikey Look
 								}),
-								crit(7, {	-- Full Flowing Hair Cut
+								crit(50023, {	-- Full Flowing Hair Cut
 									["_quests"] = { 62175 },	-- Looking Fabulous
 								}),
-								crit(8, {	-- Dredger Lether Coif
+								crit(50024, {	-- Dredger Lether Coif
 									["_quests"] = { 62174 },	-- A Proper Cover
 								}),
-								crit(9, {	-- Short Sleeved Doublet
+								crit(50025, {	-- Short Sleeved Doublet
 									["_quests"] = { 62172 },	-- Shortsleeved Doublet
 								}),
-								crit(10, {	-- Long Sleeved Doublet
+								crit(50026, {	-- Long Sleeved Doublet
 									["_quests"] = { 62173 },	-- Long Sleeved Doublet
 								}),
 							}),
 							achraw(14726, {	-- It's Certainly Never Boring
-								crit(1),	-- Messy
-								crit(2),	-- Clean
-								crit(3),	-- Safe
-								crit(4),	-- Dangerous
-								crit(5),	-- Humble
-								crit(6),	-- Decadent
-								crit(7),	-- Relaxing
-								crit(8),	-- Exciting
-								crit(9),	-- Casual
-								crit(10),	-- Formal
+								crit(49770),	-- Messy
+								crit(49771),	-- Clean
+								crit(49772),	-- Safe
+								crit(49773),	-- Dangerous
+								crit(49774),	-- Humble
+								crit(49775),	-- Decadent
+								crit(49776),	-- Relaxing
+								crit(49777),	-- Exciting
+								crit(49778),	-- Casual
+								crit(49779),	-- Formal
 							}),
 							ach(14727),		-- Master of Ceremonies
 							ach(14679, {	-- Party Palace
-								crit(1, {	-- Building: Dredger Pool
+								crit(49613, {	-- Building: Dredger Pool
 									["_quests"] = { 61493 },
 								}),
-								crit(2, {	-- Building: Guardhouse
+								crit(49612, {	-- Building: Guardhouse
 									["_quests"] = { 61494 },
 								}),
-								crit(3, {	-- Staff: Dredger Decorators
+								crit(49614, {	-- Staff: Dredger Decorators
 									["_quests"] = { 59435 },
 								}),
-								crit(4, {	-- Staff: Stage Crew
+								crit(49615, {	-- Staff: Stage Crew
 									["_quests"] = { 59436 },
 								}),
-								crit(5, {	-- Staff: Waiters
+								crit(49616, {	-- Staff: Waiters
 									["_quests"] = { 59433 },
 								}),
-								crit(6, {	-- Staff: Bouncers
+								crit(49617, {	-- Staff: Bouncers
 									["_quests"] = { 59437 },
 								}),
-								crit(7, {	-- Staff: Revendreth Ambassador
+								crit(49621, {	-- Staff: Revendreth Ambassador
 									["_quests"] = { 61501 },
 								}),
-								crit(8, {	-- Staff: Ardenweald Ambassador
+								crit(49622, {	-- Staff: Ardenweald Ambassador
 									["_quests"] = { 61502 },
 								}),
-								crit(9, {	-- Staff: Maldraxxus Ambassador
+								crit(49623, {	-- Staff: Maldraxxus Ambassador
 									["_quests"] = { 61887 },
 								}),
-								crit(10, {	-- Staff: Bastion Ambassador
+								crit(49624, {	-- Staff: Bastion Ambassador
 									["_quests"] = { 61888 },
 								}),
-								crit(11, {	-- Stock: Greeting Kits
+								crit(49625, {	-- Stock: Greeting Kits
 									["_quests"] = { 61497 },
 								}),
-								crit(12, {	-- Stock: Appetizers
+								crit(49626, {	-- Stock: Appetizers
 									["_quests"] = { 61498 },
 								}),
-								crit(13, {	-- Stock: Anima Samples
+								crit(49627, {	-- Stock: Anima Samples
 									["_quests"] = { 61499 },
 								}),
-								crit(14, {	-- Stock: Comfy Chairs
+								crit(49628, {	-- Stock: Comfy Chairs
 									["_quests"] = { 61500 },
 								}),
-								crit(15, {	-- Second Guest List Page
+								crit(49618, {	-- Second Guest List Page
 									["_quests"] = { 61504 },
 								}),
-								crit(16, {	-- Third Guest List Page
+								crit(49619, {	-- Third Guest List Page
 									["_quests"] = { 61505 },
 								}),
-								crit(17, {	-- Fourth Guest List Page
+								crit(49620, {	-- Fourth Guest List Page
 									["_quests"] = { 61506 },
 								}),
 							}),
 							achraw(14724, {	-- People Pleaser
-								crit(1, {	-- Baroness Vashj
+								crit(49748, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
-								crit(2, {	-- Lady Moonberry
+								crit(49749, {	-- Lady Moonberry
 									["_npcs"] = { 171830 },
 								}),
-								crit(3, {	-- Mikanikos
+								crit(49750, {	-- Mikanikos
 									["_npcs"] = { 171831 },
 								}),
-								crit(4, {	-- The Countess
+								crit(49751, {	-- The Countess
 									["_npcs"] = { 165269 },
 								}),
-								crit(5, {	-- Alexandros Mograine
+								crit(49752, {	-- Alexandros Mograine
 									["_npcs"] = { 171833 },
 								}),
-								crit(6, {	-- Hunt-Captain Korayn
+								crit(49753, {	-- Hunt-Captain Korayn
 									["_npcs"] = { 171836 },
 								}),
-								crit(7, {	-- Polemarch Adrestes
+								crit(49754, {	-- Polemarch Adrestes
 									["_npcs"] = { 168447 },
 								}),
-								crit(8, {	-- Rendle and Cudgelface
+								crit(49755, {	-- Rendle and Cudgelface
 									["_npcs"] = { 171839 },	-- Rendle
 								}),
-								crit(9, {	-- Choofa
+								crit(49756, {	-- Choofa
 									["_npcs"] = { 168449 },
 								}),
-								crit(10, {	-- Cryptkeeper Kassir
+								crit(49757, {	-- Cryptkeeper Kassir
 									["_npcs"] = { 168450 },
 								}),
-								crit(11, {	-- Droman Aliothe
+								crit(49758, {	-- Droman Aliothe
 									["_npcs"] = { 171847 },
 								}),
-								crit(12, {	-- Grandmaster Vole
+								crit(49759, {	-- Grandmaster Vole
 									["_npcs"] = { 171848 },
 								}),
-								crit(13, {	-- Kleia and Pelagos
+								crit(49760, {	-- Kleia and Pelagos
 									["_npcs"] = { 171850 },	-- Kleia
 								}),
-								crit(14, {	-- Plague Deviser Marileth
+								crit(49761, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },
 								}),
-								crit(15, {	-- Sika
+								crit(49762, {	-- Sika
 									["_npcs"] = { 171854 },
 								}),
-								crit(16, {	-- Stonehead
+								crit(49763, {	-- Stonehead
 									["_npcs"] = { 171856 },
 								}),
 							}),
 							achraw(14749, {	-- Rendle's Big Day
-								crit(1, {	-- Crown of the Righteous
+								crit(49880, {	-- Crown of the Righteous
 									["_quests"] = { 62559 },	-- Sootible Hat: Crown of the Righteous
 								}),
-								crit(2, {	-- Fae Revel Masque
+								crit(49879, {	-- Fae Revel Masque
 									["_quests"] = { 62558 },	-- Sootible Hat: Fae Revel Masque
 								}),
-								crit(3, {	-- Pink Party Hat
+								crit(49878, {	-- Pink Party Hat
 									["_quests"] = { 62556 },	-- Sootible Hat: Pink Party Hat
 								}),
-								crit(4, {	-- Red Noggin Candle
+								crit(49877, {	-- Red Noggin Candle
 									["_quests"] = { 62554 },	-- Sootible Hat: Red Noggin Candle
 								}),
 							}),
 							ach(14680, {	-- Something for Everyone
-								crit(1, {	-- Atoning Rituals
+								crit(49599, {	-- Atoning Rituals
 									["_quests"] = { 59494 },
 								}),
-								crit(2, {	-- Glimpse of the Wilds
+								crit(49600, {	-- Glimpse of the Wilds
 									["_quests"] = { 59491 },
 								}),
-								crit(3, {	-- Lost Chalice Band
+								crit(49601, {	-- Lost Chalice Band
 									["_quests"] = { 59488 },
 								}),
-								crit(4, {	-- Tubbins's Tea Party
+								crit(49603, {	-- Tubbins's Tea Party
 									["_quests"] = { 59506 },
 								}),
-								crit(5, {	-- Divine Desserts
+								crit(49604, {	-- Divine Desserts
 									["_quests"] = { 59503 },
 								}),
-								crit(6, {	-- Mushroom Surprise
+								crit(49605, {	-- Mushroom Surprise
 									["_quests"] = { 59500 },
 								}),
-								crit(7, {	-- Traditional Decorations
+								crit(49595, {	-- Traditional Decorations
 									["_quests"] = { 59473 },
 								}),
-								crit(8, {	-- Mortal Reminders
+								crit(49596, {	-- Mortal Reminders
 									["_quests"] = { 59476 },
 								}),
-								crit(9, {	-- Mystery Mirrors
+								crit(49597, {	-- Mystery Mirrors
 									["_quests"] = { 59479 },
 								}),
-								crit(10, {	-- Venthyr Volunteers
+								crit(49607, {	-- Venthyr Volunteers
 									["_quests"] = { 59518 },
 								}),
-								crit(11, {	-- Stoneborn Reserves
+								crit(49608, {	-- Stoneborn Reserves
 									["_quests"] = { 59515 },
 								}),
-								crit(12, {	-- Maldraxxian Army
+								crit(49609, {	-- Maldraxxian Army
 									["_quests"] = { 59512 },
 								}),
 							}),
@@ -637,11 +637,14 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								}),
 							})),
 						}),
-						n(QUESTS, sharedData({["isWeekly"] = true,},{
+						n(QUESTS, sharedData({["isWeekly"] = true},{
 							q(61524),	-- The Ember Court
+							q(62628, {	-- Vole's Voucher
+								["provider"] = {"i",181761},	-- The Grandmaster's Voucher
+							}),
 						})),
 						-- Repeatable Event quests within Ember Court
-						n(QUESTS, sharedData({["isDaily"] = true,},{
+						n(QUESTS, sharedData({["isDaily"] = true},{
 							applyevent(EVENTS.NOBLEGARDEN, q(63721, {	-- Lord Garridan's Egg
 								["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
 							})),
@@ -653,13 +656,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							})),
 							applyevent(EVENTS.NOBLEGARDEN, q(63719, {	-- Temel's Egg
 								["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
-							})),
-							applyevent(EVENTS.HALLOWS_END, q(64546, {	-- Visions of Sire Denathrius
-								["provider"] = { "n", 180458 },	-- Vision of Sire Denathrius
-								["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
-								["g"] = {
-									i(181442),	-- Vision of Sire Denathrius
-								},
 							})),
 							q(62146),	-- A Little More Comfortable
 							q(62130),	-- A Quiet Moment
@@ -770,10 +766,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								o(356700, {	-- Grandmaster Vole's Extravagant Tribute
 									["crs"] = { 171848 },	-- Grandmaster Vole
 									["g"] = appendGroups(VOLE_GROUP, {
-										i(181761, {	-- The Grandmaster's Voucher
-											["isWeekly"] = true,
-											["questID"] = 62628,	-- Vole's Voucher
-										}),
+										i(181761),	-- The Grandmaster's Voucher
 										i(181765),	-- Marcel Mullby's Marker
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(181767),	-- Small Coin Purse
@@ -1015,6 +1008,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(176132, {	-- Contract: Lost Chalice Band (EC!)
 											["questID"] = 59488,
 										}),
+										i(182302),	-- Band Promotional Posters (QI!)
+										i(182310),	-- Confiscated Instruments (QI!)
+										i(182311),	-- Confiscated Stage Lights (QI!)
+										i(182312),	-- Confiscated Stage Props (QI!)
 									},
 								}),
 								q(61403, {	-- Ember Court: Maldraxxus Army
@@ -1045,6 +1042,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(176136, {	-- Contract: Mushroom Surprise! (EC!)
 											["questID"] = 59500,
 										}),
+										i(181828),	-- Disgusting Foraging Bag (QI!)
+										i(181829),	-- Feather Cap (QI!)
+										i(181830),	-- Lacy Bell Morel (QI!)
+										i(181839),	-- Violet Frill (QI!)
 									},
 								}),
 								q(61400, {	-- Ember Court: Mystery Mirrors
@@ -1511,10 +1512,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["coord"] = { 52.7, 82.6, BASTION },
 									["g"] = {
 										i(176125),	-- RSVP: Sika
-										i(180965),	-- Adonas's Promissory Note
-										i(180967),	-- Ikaran's Promissory Note
-										i(180966),	-- Leda's Promissory Note
-										i(180968),	-- Sophone's Promissory Note
+										i(180965),	-- Adonas's Promissory Note (QI!)
+										i(180967),	-- Ikaran's Promissory Note (QI!)
+										i(180966),	-- Leda's Promissory Note (QI!)
+										i(180968),	-- Sophone's Promissory Note (QI!)
 									},
 								}),
 								q(60916, {	-- RSVP: Stonehead
@@ -1523,6 +1524,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["coord"] = { 38.9, 66.0, REVENDRETH },
 									["g"] = {
 										i(178686),	-- RSVP: Stonehead
+										i(171343),	-- Blank Parchment (QI!)
+										i(171344),	-- Venthyr Calligraphy Set (QI!)
+										i(180466),	-- Forged Permission Slip (QI!)
 									},
 								}),
 								q(61139, {	-- RSVP: Choofa
@@ -1551,6 +1555,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(181532, {	-- Stock: Appetizers (EC!)
 											["questID"] = 61498,
 										}),
+										i(182356),	-- Aged Windcheese (QI!)
+										i(182355),	-- Forgotten Sweetcheese (QI!)
+										i(182357),	-- Soggy Kelpcheese (QI!)
+										i(182365),	-- Sourbread Yeast Starter (QI!)
 									},
 								}),
 								q(63700, {	-- Stonehead's Best Friend
@@ -1716,6 +1724,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, REVENDRETH },
+									["g"] = {
+										i(184448),	-- Spicy Scorchshrooms (QI!)
+									},
 								}),
 								q(62222, {	-- On Silver Wings
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1950,7 +1961,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["provider"] = { "n", 172098 },	-- Lady Moonberry
 									["coord"] = { 48.9, 51.0, ARDENWEALD },
 									["g"] = {
+										i(181251),	-- Blooming Lasher Spur (QI!)
+										i(181250),	-- Gorm Pheromone Gland (QI!)
 										i(176112),	-- RSVP: Lady Moonberry
+										i(181252),	-- Silverheart Vine Leaves (QI!)
 									},
 								}),
 								q(61173, {	-- RSVP: Mikanikos
@@ -1958,6 +1972,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["provider"] = { "n", 171647 },	-- Mikanikos
 									["coord"] = { 50.1, 21.0, BASTION },
 									["g"] = {
+										i(180895),	-- Potentially Perfect Part (QI!)
 										i(176113),	-- RSVP: Mikanikos
 										i(182114),	-- Assorted Parts and 'Things'
 									},
@@ -2240,9 +2255,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["cost"] = { { "c", ANIMA, 25 } },
 										["questID"] = 61457,
 									}),
-									applyevent(EVENTS.HALLOWS_END, i(187133, {	-- Bewitching Little Hat
-										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
-									})),
 									i(181517, {	-- Building: Dredger Pool (EC!)
 										["cost"] = { { "c", ANIMA, 100 } },
 										["questID"] = 61493,
@@ -2317,11 +2329,11 @@ end
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- Dredger Butler Appearance
-		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
-		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
-		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
-		q(61580),	-- Choosing Red during 'Shades of Muck' (61851)
-		q(61583),	-- When completing 'Shades of Muck' (61851) with Purple chosen
+		q(61581),	-- Choosing Purple during "Shades of Muck" (questID 61851)
+		q(61584),	-- Choosing Blue during "Shades of Muck" (questID 61851)
+		q(61579),	-- Choosing Green during "Shades of Muck" (questID 61851)
+		q(61580),	-- Choosing Red during "Shades of Muck" (questID 61851)
+		q(61583),	-- When completing "Shades of Muck" (questID 61851) with Purple chosen (spellID 348799)
 		q(61793),	-- Choosing name 'Rogi' during 'Dredging up a Name' (61764)
 		q(61794),	-- Choosing name 'Grubber' during 'Dredging up a Name' (61764)
 		q(61795),	-- Choosing name 'Jeebs' during 'Dredging up a Name' (61764)
@@ -2342,7 +2354,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
 		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
 		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
-		q(61582),	-- Let's get your hair sorted. > Let's trim it off ...
+		q(61582),	-- Let's get your hair sorted. > Let's trim it off ... (spellID 348799)
 		q(61572),	-- Let's get your hair sorted. > A little grease and the proper Igor cut.
 		q(61571),	-- Let's get your hair sorted. > How about you grow it out full?
 		q(61573),	-- Let's get your hair sorted. > Let's go wild and spikey!
@@ -2351,7 +2363,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(63927),	-- Let's get your hair sorted. > It's time to don the Bewitching Little Hat
 		q(61575),	-- Let's update your clothes. > How about we try the long sleeved doublet.
 		q(61574),	-- Let's update your clothes. > Why don't you try on the short sleeved doublet.
-		q(61585),	-- It's time to dye your clothes. > Let's dye them black.
+		q(61585),	-- It's time to dye your clothes. > Let's dye them black. (spellID 348799)
 		q(61578),	-- It's time to dye your clothes. > Let's dye them green.
 		q(61576),	-- It's time to dye your clothes. > Let's dye them red.
 
@@ -2450,7 +2462,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(61938),	-- unflagged when completing Restock: My Favorite Table (62065)
-			q(61922),	-- seems to be an indicator that Restock: Stolen Rugs will be required for the next Ember Court
+			q(61922),	-- seems to be an indicator that Restock: Stolen Rugs will be required for the next Ember Court (spellID 345206)
 			q(61937),	-- seems to be an indicator that Restock: Statues will be required for the next Ember Court
 			q(61925),	-- completed when completing a 'Restock' quest
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
@@ -2470,7 +2482,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			--q(61941),	-- Maybe Etiquette?
 			q(61926),	-- Maybe Revendreth Etiquette?
 			q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day
-			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
 
 		-- Baroness Vashj Decrees

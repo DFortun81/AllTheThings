@@ -96,8 +96,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 			}),
 			ach(15500, {	-- Keystone Hero: Tazavesh, the Veiled Market
 				spell(367416),	-- Path of the Streetwise Merchant
-				crit(1),	-- Tazavesh: Streets of Wonder
-				crit(2),	-- Tazavesh: So'leah's Gambit
+				crit(53264),	-- Tazavesh: Streets of Wonder
+				crit(53266),	-- Tazavesh: So'leah's Gambit
 			}),
 			ach(15045, {	-- Keystone Hero: The Necrotic Wake
 				spell(354462),	-- Path of the Courageous
@@ -128,18 +128,18 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 			}),
 			ach(15693, {	-- Keystone Hero: Operation: Mechagon
 				spell(373274),	-- Path of the Scrappy Prince
-				crit(1),	-- Operation: Mechagon - Junkyard
-				crit(2),	-- Operation: Mechagon - Workshop
+				crit(53624),	-- Operation: Mechagon - Junkyard
+				crit(53625),	-- Operation: Mechagon - Workshop
 			}),
 			ach(15692, {	-- Keystone Hero: Return to Karazhan
 				spell(373262),	-- Path of the Fallen Guardian
-				crit(1),	-- Return to Karazhan: Lower
-				crit(2),	-- Return to Karazhan: Upper
+				crit(53622),	-- Return to Karazhan: Lower
+				crit(53623),	-- Return to Karazhan: Upper
 			}),
 			ach(15500, {	-- Keystone Hero: Tazavesh, the Veiled Market
 				spell(367416),	-- Path of the Streetwise Merchant
-				crit(1),	-- Tazavesh: Streets of Wonder
-				crit(2),	-- Tazavesh: So'leah's Gambit
+				crit(53264),	-- Tazavesh: Streets of Wonder
+				crit(53266),	-- Tazavesh: So'leah's Gambit
 			}),
 		})),
 	}),

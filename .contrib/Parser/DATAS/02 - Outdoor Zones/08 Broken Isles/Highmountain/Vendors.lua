@@ -68,9 +68,11 @@ root(ROOTS.Zones, {
 						}),
 						i(142408, {	-- Pattern: Drums of the Mountain [Rank 2] (RECIPE!)
 							["cost"] = 5500000,		-- 550g
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142409, {	-- Pattern: Drums of the Mountain [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(136697, {	-- Plans: Gleaming Iron Spike (RECIPE!)
 							["cost"] = 5500000,		-- 550g
@@ -93,26 +95,28 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				n(115887, {	-- Trinket
-					["coord"] = { 32.4, 66.8, HIGHMOUNTAIN },
-					["g"] = pvp({
-						i(142364),	-- Bag of Twigs
-						i(142368, {	-- Cracked Falcosaur Beak
-							["cost"] = 10000000,	-- 1,000g
-						}),
-						i(142367, {	-- Ivory Feather
-							i(142363),	-- Mark of Prey
-						}),
-						i(142369, {	-- Ivory Hawkstrider (MOUNT!)
-							["cost"] = 100000000,	-- 10,000g
-						}),
-						i(142361, {	-- Ivory Talon
-							i(142363),	-- Mark of Prey
-							title(346, {	-- <Name>, Talon's Vengeance
-								["collectible"] = false,
+				faction(2018, {	-- Talon's Vengeance
+					n(115887, {	-- Trinket
+						["coord"] = { 32.4, 66.8, HIGHMOUNTAIN },
+						["g"] = pvp({
+							i(142364),	-- Bag of Twigs
+							i(142368, {	-- Cracked Falcosaur Beak
+								["cost"] = 10000000,	-- 1,000g
 							}),
+							i(142367, {	-- Ivory Feather
+								i(142363),	-- Mark of Prey
+							}),
+							i(142369, {	-- Ivory Hawkstrider (MOUNT!)
+								["cost"] = 100000000,	-- 10,000g
+							}),
+							i(142361, {	-- Ivory Talon
+								i(142363),	-- Mark of Prey
+								title(346, {	-- <Name>, Talon's Vengeance
+									["collectible"] = false,
+								}),
+							}),
+							i(142366),	-- Regurgitated Leaf
 						}),
-						i(142366),	-- Regurgitated Leaf
 					}),
 				}),
 			}),

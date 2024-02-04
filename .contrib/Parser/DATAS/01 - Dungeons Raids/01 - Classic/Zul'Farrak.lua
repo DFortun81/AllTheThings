@@ -6,6 +6,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",
 		-- #endif
+		["zone-text-areaID"] = 978,	-- Zul'Farrak
 		["mapID"] = ZULFARRAK,
 		-- #if AFTER CATA
 		["coord"] = { 39.21, 21.29, TANARIS },
@@ -259,7 +260,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(9372, {	-- Sul'thraze the Lasher
 					["description"] = "You must take both of the swords and combine them to form this weapon.",
 					["cost"] = {
-						{ "i", 11086, 1 },	-- Jan'thraze the Protector
+						{ "i", 11086, 1 },	-- Jang'thraze the Protector
 						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
 					},
 					["crs"] = {
@@ -373,7 +374,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 			}),
 			n(7607, {	-- Weegli Blastfuse
+			-- #if BEFORE 10.0.5
 				["description"] = "You must talk to this mob in order to enter the room with the last boss! If you are not fast enough, their whole party hearthstones out of the instance.",
+			-- #else
+				["description"] = "This NPC no longer needs manually triggered to open the final boss door. You can move out of his vicinity (and also fight the group), and he will run to the door.",
+			-- #endif
 			}),
 			n(7604, {	-- Sergeant Bly
 				["description"] = "These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",
@@ -398,7 +403,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(5048, {	-- Zul'Farrak Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					i(11086),	-- Jan'thraze the Protector
+					i(11086),	-- Jang'thraze the Protector
 					i(9478),	-- Ripsaw
 					i(9477),	-- The Chief's Enforcer
 					i(9479),	-- Embrace of the Lycan

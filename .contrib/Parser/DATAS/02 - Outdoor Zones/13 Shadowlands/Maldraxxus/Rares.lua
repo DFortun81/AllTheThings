@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184154),	-- Grungy Containment Pack
 				},
 			}),
-			n(159105, { -- Collector Kash
+			n(159105, {	-- Collector Kash
 				["coord"] = { 49.8, 24.6, MALDRAXXUS },
 				["questID"] = 58005,
 				["g"] = {
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184182),	-- Strengthened Abomination Hook
 				},
 			}),
-			n(157058, { -- Corspecutter Moroc
+			n(157058, {	-- Corspecutter Moroc
 				["coord"] = { 26.6, 27.2, MALDRAXXUS },
 				["questID"] = 58335,
 				["g"] = {
@@ -147,14 +147,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182191),	-- Slobber-Soaked Chew Toy
 				},
 			}),
-			n(162669, { -- Devour'us
+			n(162669, {	-- Devour'us
 				["coord"] = { 45.6, 28.4, MALDRAXXUS },
 				["questID"] = 58835,
 				["g"] = {
 					i(184178),	-- Worldrending Claymore
 				},
 			}),
-			n(162588, { -- Gristlebeak
+			n(162588, {	-- Gristlebeak
 				["description"] = "Kill the Unusual Eggs and Gristled Hatchlings to lure Gristlebeak.",
 				["crs"] = {
 					168258,	-- Gristled Hatchling
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182196),	-- Arbalest of the Colossal Predator
 				},
 			}),
-			n(161105, { -- Indomitable Schmitd
+			n(161105, {	-- Indomitable Schmitd
 				["coord"] = { 39.8, 43.4, MALDRAXXUS },
 				["questID"] = 58332,
 				["g"] = {
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(174070),	-- Indomitable Hide
 				},
 			}),
-			n(174108, { -- Necromantic Anomaly
+			n(174108, {	-- Necromantic Anomaly
 				["coord"] = { 73.0, 29.2, MALDRAXXUS },
 				["questID"] = 62369,
 				["g"] = {
@@ -201,26 +201,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 
-			n(159753, { -- Ravenomous
+			n(159753, {	-- Ravenomous
 				["description"] = "Crush Boneweave Spiderlings in the area for a chance to spawn the rare.  After flying around for a little while, it will land and be attackable.",
 				["coord"] = { 54.0, 18.4, MALDRAXXUS },
+				["crs"] = { 159901 },	-- Boneweave Spiderling
 				["questID"] = 58004,
 				["g"] = {
 					i(181283),	-- Foulwing Buzzer (PET!)
 					i(184184),	-- Ravenomous's Acid-Tipped Stinger
 				},
 			}),
-			n(158406, { -- Scunner
+			n(158406, {	-- Scunner
 				["coord"] = { 62.1, 75.8, MALDRAXXUS },
 				["questID"] = 58006,
 				["g"] = {
 					i(181267),	-- Writhing Spine (PET!)
 					i(183833),	-- Kash's Bag of Junk
-					i(184287),	-- Scum-Caked Epaulettes
+					i(184287),	-- Scum-Caked Epaulets
 					i(181797),	-- Strange Cloth
 				},
 			}),
-			n(159886, { -- Sister Chelicerae
+			n(159886, {	-- Sister Chelicerae
 				["description"] = "Destroy the Intricate Webbing and defeat waves of Chelicerae's Children.",
 				["crs"] = {
 					159895,	-- Chelicerae's Children
@@ -233,7 +234,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184289),	-- Spindlefang Spellblade
 				},
 			}),
-			n(162528, { -- Smorgas the Feaster
+			n(162528, {	-- Smorgas the Feaster
 				["description"] = "Click the |cFFFFFFFFBloody Lump|r for a chance to spawn the rare.  Clicking the object will aggro all the Peaceful Bloodlice in the area.",
 				["coord"] = { 42.5, 53.4, MALDRAXXUS },
 				["questID"] = 58768,
@@ -247,7 +248,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				},
 			}),
-			n(162586, { -- Tahonta
+			n(162586, {	-- Tahonta
 				["coord"] = { 44.6, 52.0, MALDRAXXUS },
 				["questID"] = 58783,
 				["description"] = "You must be a Necrolord & have the Abomination building construct \"Neena\" with you otherwise the |cFFFFFFFFBonehoof Tauralus Mount|r can't drop. It's not required to use the extra action button to loot Tahonta.",
@@ -259,7 +260,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182190),	-- Tauralus Hide Collar
 				},
 			}),
-			n(160059, { -- Taskmaster Xox <Master Taskmaster>
+			n(160059, {	-- Taskmaster Xox <Master Taskmaster>
 				["description"] = "Kill non-rare taskmasters (Bloata, Joyless, and Mortis) and Xox has a chance to spawn in their place.",
 				["crs"] = {
 					160204,	-- Taskmaster Bloata
@@ -276,7 +277,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 
-			n(162180, { -- Thread Mistress Leeda
+			n(162180, {	-- Thread Mistress Leeda
 				["description"] = "Kill the Razorthread Weavers in Leeda's room, and there is a chance that she will spawn in their place.",
 				["crs"] = { 162220 },	-- Razorthread Weaver
 				["coord"] = { 24.0, 43.1, MALDRAXXUS },
@@ -285,7 +286,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184180),	-- Leeda's Unrefined Mask
 				},
 			}),
-			n(162819, { -- Warbringer Mal'Korak
+			n(162819, {	-- Warbringer Mal'Korak
 				["crs"] = { 162818 },	-- Wartusk
 				["coord"] = { 34.4, 79.4, MALDRAXXUS },
 				["questID"] = 58889,
@@ -294,7 +295,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184288),	-- Ruthless Warlord's Barrier
 				},
 			}),
-			n(157125, { -- Zargox the Reborn
+			n(157125, {	-- Zargox the Reborn
 				["description"] = "Get an |cFFFFFFFFAni-Matter Orb|r from Synder Sixfold at |cFFFFFFFF26.3, 42.7|r (either while doing the weekly quest |cFF349cffAni-Matter Animator|r, or speak to Synder afterward to get another orb from him).  Use it to reanimate soldiers near the rare's spawnpoint until a yellow dot appears on your minimap, indicating that Zargox is available to summon.",
 				["crs"] = { 157124 },	-- Bone Mass
 				["coord"] = { 29.0, 51.6, MALDRAXXUS },

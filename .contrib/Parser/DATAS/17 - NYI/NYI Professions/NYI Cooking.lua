@@ -4,6 +4,16 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(COOKING, {
 		n(CRAFTABLES, {
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+					i(172064),	-- zzOldArdenweald Zonewich
+					i(172065),	-- zzOldBastion Zonewich
+					i(172066),	-- zzOldMaldraxxus Zonewich
+					i(172060),	-- Quiethounds
+					i(172067),	-- zzOldRevendreth Zonewich
+				})),
+			}),
 			tier(DF_TIER, {
 				-- 10.0.0
 				tier(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
@@ -20,9 +30,24 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(206191),	-- Roquefort-Stuffed Peppers
 					i(206190),	-- Venrik's Goat Milk
 				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+					i(210495),	-- Slumbering Peacebloom Tea
+				})),
 			}),
 		}),
 		filter(RECIPES, {
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+					r(308421),	-- Ardenweald Zonewich
+					r(308422),	-- Bastion Zonewich
+					r(308423),	-- Maldraxxus Zonewich
+					r(308416),	-- Quiethounds
+					r(308424),	-- Revendreth Zonewich
+				})),
+			}),
 			tier(DF_TIER, {
 				-- 10.0.0
 				tier(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
@@ -60,6 +85,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(412537),	-- Picante Pomfruit Cake (RECIPE!)
 					r(412536),	-- Roquefort-Stuffed Peppers (RECIPE!)
 					r(412535),	-- Venrik's Goat Milk (RECIPE!)
+				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+					-- Without SpellID attached
+					i(210496),	-- Recipe: Slumbering Peacebloom Tea
 				})),
 			}),
 		}),

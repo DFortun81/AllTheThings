@@ -4,16 +4,8 @@ q(615),	-- The Captain's Cutlass	 CLASSIC:The Captain's Cutlass	 TBC:The Captain
 q(618),	-- Facing Negolash	 CLASSIC:Facing Negolash	 TBC:Facing Negolash	 WOTLK:Facing Negolash
 q(620),	-- The Monogrammed Sash	 CLASSIC:The Monogrammed Sash	 TBC:The Monogrammed Sash	 WOTLK:The Monogrammed Sash
 q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Earth	 WOTLK:Crown of the Earth
-q(1288),	-- Vimes's Report	 CLASSIC:Vimes's Report	 TBC:Vimes's Report	 WOTLK:Vimes's Report
-q(1531),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(1532),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
 q(2000),	-- Rokar Bladeshadow	 CLASSIC:Rokar Bladeshadow	 TBC:Rokar Bladeshadow	 WOTLK:Rokar Bladeshadow
 q(2018),	-- Rokar's Test	 CLASSIC:Rokar's Test
-q(2019),	-- Tools of the Trade	 CLASSIC:Tools of the Trade
-q(2358),	-- Horns of Nez'ra	 CLASSIC:Horns of Nez'ra	 WOTLK:Horns of Nez'ra
-q(2997),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity
-q(2999),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity
-q(3000),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!	 CLASSIC:Lee's Ultimate Test Quest... of Doom!	 TBC:Lee's Ultimate Test Quest... of Doom!	 WOTLK:Lee's Ultimate Test Quest... of Doom!
 q(5628),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
 q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
@@ -27,13 +19,10 @@ q(5637),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WO
 q(5638),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
 q(5639),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
 q(5640),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
-q(5641),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear
 q(5642),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard
 q(5643),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard
 q(5644),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague
-q(5645),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear
 q(5646),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague
-q(5647),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear
 q(5654),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness
 q(5655),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness
 q(5656),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness
@@ -47,59 +36,20 @@ q(5674),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune
 q(5675),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace
 q(5677),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback
 q(5678),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback
-q(6606),	-- A Little Luck	 CLASSIC:A Little Luck	 TBC:A Little Luck	 WOTLK:A Little Luck
 q(6843),	-- Da Foo	 CLASSIC:Da Foo
 q(7487),	-- Attunement to the Core	 CLASSIC:Attunement to the Core	 TBC:Attunement to the Core	 WOTLK:Attunement to the Core
 q(7521),	-- Thunderaan the Windseeker	 CLASSIC:Thunderaan the Windseeker
 q(7522),	-- Examine the Vessel	 CLASSIC:Examine the Vessel
 q(7561),	-- Rise, Thunderfury!	 CLASSIC:Rise, Thunderfury!
-q(7637),	-- Emphasis on Sacrifice	 CLASSIC:Emphasis on Sacrifice	 TBC:Emphasis on Sacrifice	 WOTLK:Emphasis on Sacrifice
-q(7638),	-- Lord Grayson Shadowbreaker	 CLASSIC:Lord Grayson Shadowbreaker	 TBC:Lord Grayson Shadowbreaker	 WOTLK:Lord Grayson Shadowbreaker
-q(7639),	-- To Show Due Judgment	 CLASSIC:To Show Due Judgment	 TBC:To Show Due Judgment	 WOTLK:To Show Due Judgment
-q(7640),	-- Exorcising Terrordale	 CLASSIC:Exorcising Terrordale	 TBC:Exorcising Terrordale	 WOTLK:Exorcising Terrordale
-q(7641),	-- The Work of Grimand Elmore	 CLASSIC:The Work of Grimand Elmore	 TBC:The Work of Grimand Elmore	 WOTLK:The Work of Grimand Elmore
-q(7642),	-- Collection of Goods	 CLASSIC:Collection of Goods	 TBC:Collection of Goods	 WOTLK:Collection of Goods
-q(7643),	-- Ancient Equine Spirit	 CLASSIC:Ancient Equine Spirit	 TBC:Ancient Equine Spirit	 WOTLK:Ancient Equine Spirit
-q(7644),	-- Blessed Arcanite Barding	 CLASSIC:Blessed Arcanite Barding	 TBC:Blessed Arcanite Barding	 WOTLK:Blessed Arcanite Barding
-q(7645),	-- Manna-Enriched Horse Feed	 CLASSIC:Manna-Enriched Horse Feed	 TBC:Manna-Enriched Horse Feed	 WOTLK:Manna-Enriched Horse Feed
-q(7646),	-- The Divination Scryer	 CLASSIC:The Divination Scryer	 TBC:The Divination Scryer	 WOTLK:The Divination Scryer
-q(7648),	-- Grimand's Finest Work	 CLASSIC:Grimand's Finest Work	 TBC:Grimand's Finest Work	 WOTLK:Grimand's Finest Work
-q(7670),	-- Lord Grayson Shadowbreaker	 CLASSIC:Lord Grayson Shadowbreaker	 TBC:Lord Grayson Shadowbreaker	 WOTLK:Lord Grayson Shadowbreaker
-q(7788),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7789),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7871),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7872),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7873),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7874),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7875),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7876),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8080),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8123),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8154),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8155),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8156),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8160),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8161),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8162),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8266),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice
-q(8268),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice
-q(8290),	-- Vanquish the Invaders	 CLASSIC:Vanquish the Invaders	 TBC:Vanquish the Invaders	 WOTLK:Vanquish the Invaders
-q(8291),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(8294),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8295),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8297),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8299),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8411),	-- [DEPRECATED] Mastering the Elements	 CLASSIC:Mastering the Elements	 TBC:Mastering the Elements	 WOTLK:Mastering the Elements
 q(8530),	-- The Alliance Needs Singed Corestones!	 CLASSIC:The Alliance Needs Singed Corestones!	 TBC:The Alliance Needs Singed Corestones!	 WOTLK:The Alliance Needs Singed Corestones!
 q(8617),	-- The Horde Needs Singed Corestones!	 CLASSIC:The Horde Needs Singed Corestones!	 TBC:The Horde Needs Singed Corestones!	 WOTLK:The Horde Needs Singed Corestones!
 q(8869),	-- Sweet Serenity	 CLASSIC:Sweet Serenity	 TBC:Sweet Serenity	 WOTLK:Sweet Serenity
-q(9065),	-- The Pattymac Special	 CLASSIC:The "Chow" Quest (123)aa	 TBC:The "Chow" Quest (123)aa	 WOTLK:The Pattymac Special
 q(9378),	-- DND FLAG The Dread Citadel - Naxxramas
 q(9556),	-- To The Victor...	 CLASSIC:To The Victor...	 TBC:To The Victor...	 WOTLK:To The Victor...
 1.13.2.30073
 q(55296),	--
 1.13.5.34713
-q(60860),	--
+q(60860),	-- WOTLK:Your Reward has Arrived!
 q(60863),	-- TBC:[Never used]	 WOTLK:[Never used]
 q(60864),	-- TBC:[Never used]	 WOTLK:[Never used]
 q(60865),	-- TBC:[Never used]	 WOTLK:[Never used]
@@ -138,53 +88,197 @@ q(66294),	--
 q(66295),	--
 q(66317),	--
 q(66318),	--
+1.14.4.50252
+q(73193),	--
+q(74584),	--
+q(75300),	--
+1.14.4.51395
+q(78647),	--
+q(78650),	--
+q(78651),	--
+q(78652),	--
+q(78653),	--
+q(78654),	--
+1.15.0.52124
+q(75939),	--
+q(75940),	--
+q(75969),	--
+q(76156),	--
+q(76160),	--
+q(76240),	--
+q(77568),	--
+q(77571),	--
+q(77573),	--
+q(77574),	--
+q(77575),	--
+q(77582),	--
+q(77583),	--
+q(77584),	--
+q(77585),	--
+q(77586),	--
+q(77587),	--
+q(77588),	--
+q(77590),	--
+q(77592),	--
+q(77616),	--
+q(77617),	--
+q(77618),	--
+q(77619),	--
+q(77620),	--
+q(77621),	--
+q(77642),	--
+q(77643),	--
+q(77648),	--
+q(77649),	--
+q(77651),	--
+q(77652),	--
+q(77655),	--
+q(77656),	--
+q(77657),	--
+q(77658),	--
+q(77659),	--
+q(77660),	--
+q(77661),	--
+q(77666),	--
+q(77667),	--
+q(77668),	--
+q(77669),	--
+q(77670),	--
+q(77671),	--
+q(77672),	--
+q(77690),	--
+q(78023),	--
+q(78024),	--
+q(78088),	--
+q(78089),	--
+q(78090),	--
+q(78091),	--
+q(78092),	--
+q(78093),	--
+q(78114),	--
+q(78121),	--
+q(78124),	--
+q(78127),	--
+q(78132),	--
+q(78133),	--
+q(78134),	--
+q(78142),	--
+q(78143),	--
+q(78144),	--
+q(78145),	--
+q(78146),	--
+q(78147),	--
+q(78148),	--
+q(78149),	--
+q(78150),	--
+q(78192),	--
+q(78193),	--
+q(78194),	--
+q(78195),	--
+q(78196),	--
+q(78197),	--
+q(78198),	--
+q(78199),	--
+q(78229),	--
+q(78242),	--
+q(78261),	--
+q(78265),	--
+q(78266),	--
+q(78267),	--
+q(78277),	--
+q(78280),	--
+q(78284),	--
+q(78287),	--
+q(78288),	--
+q(78295),	--
+q(78296),	--
+q(78297),	--
+q(78304),	--
+q(78306),	--
+q(78307),	--
+q(78506),	--
+q(78537),	--
+q(78561),	--
+q(78575),	--
+q(78675),	--
+q(78676),	--
+q(78680),	--
+q(78681),	--
+q(78682),	--
+q(78684),	--
+q(78699),	--
+q(78702),	--
+q(78832),	--
+q(78907),	--
+q(78908),	--
+q(78909),	--
+q(78910),	--
+q(78916),	--
+q(78917),	--
+q(78919),	--
+q(78920),	--
+q(78921),	--
+q(78922),	--
+q(78923),	--
+q(78924),	--
+q(78925),	--
+q(78926),	--
+q(78927),	--
+q(78994),	--
+q(79077),	--
+q(79078),	--
+q(79079),	--
+q(79080),	--
+q(79090),	--
+q(79091),	--
+q(79092),	--
+q(79093),	--
+q(79094),	--
+q(79095),	--
+q(79096),	--
+q(79097),	--
+q(79098),	--
+q(79099),	--
+1.15.0.52610
+q(79482),	-- CLASSIC:Stolen Winter Veil Treats
+q(79483),	-- CLASSIC:Stolen Winter Veil Treats
+q(79484),	-- CLASSIC:You're a Mean One...
+q(79485),	-- CLASSIC:You're a Mean One...
+q(79486),	-- CLASSIC:A Smokywood Pastures' Thank You!
+q(79487),	-- CLASSIC:A Smokywood Pastures' Thank You!
+q(79492),	-- CLASSIC:Metzen the Reindeer
+q(79495),	-- CLASSIC:Metzen the Reindeer
+q(79501),	--
+q(79502),	--
+q(79637),	--
 2.5.1.38043
 q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source
-q(9168),	-- Heart of Deatholme	 TBC:Heart of Deatholme	 WOTLK:Heart of Deatholme
 q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild
 q(9348),	-- Ravager Roundup	 TBC:Ravager Roundup	 WOTLK:Ravager Roundup
 q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:A Peon's Work is Never Done
 q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials
-q(9357),	-- Report to Aeldon Sunbrand	 TBC:Report to Aeldon Sunbrand	 WOTLK:Report to Aeldon Sunbrand
 q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter
 q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar
-q(9460),	-- Combining Forces	 TBC:Combining Forces	 WOTLK:Combining Forces
 q(9484),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9485),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9486),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9497),	-- Emblem of the Fel Horde	 TBC:Emblem of the Fel Horde	 WOTLK:Emblem of the Fel Horde
-q(9532),	-- Find Keltus Darkleaf	 TBC:Find Keltus Darkleaf	 WOTLK:Find Keltus Darkleaf
 q(9546),	-- Fulfilling a Promise
-q(9547),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9551),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9552),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9553),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9554),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9568),	-- On the Offensive	 TBC:On the Offensive	 WOTLK:On the Offensive
-q(9591),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9592),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9593),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9617),	-- Seek the Farstriders	 TBC:Seek the Farstriders	 WOTLK:Seek the Farstriders
-q(9618),	-- Return the Reports	 TBC:Return the Reports	 WOTLK:Return the Reports
 q(9712),	-- The Thalassian Warhorse	 TBC:The Thalassian Warhorse	 WOTLK:The Thalassian Warhorse
 q(9713),	-- Glowcap Harvesting Enabling Flag
-q(9757),	-- Seek Huntress Kella Nightbow	 TBC:Seek Huntress Kella Nightbow	 WOTLK:Seek Huntress Kella Nightbow
 q(9767),	-- Know Your Enemy	 TBC:Know Your Enemy	 WOTLK:Know Your Enemy
 q(9768),	-- Coilfang Spellbooks	 TBC:Coilfang Spellbooks	 WOTLK:Coilfang Spellbooks
 q(10080),	-- Forge Camps of the Legion	 TBC:Forge Camps of the Legion	 WOTLK:Forge Camps of the Legion
 q(10083),	-- The Legion's Plans	 TBC:The Legion's Plans	 WOTLK:The Legion's Plans
 q(10217),	-- Fossil Fuel
 q(10219),	-- Walk the Dog
-q(10260),	-- Netherologist Coppernickels	 TBC:Netherologist Coppernickels	 WOTLK:Netherologist Coppernickels
-q(10292),	-- More Power!	 TBC:More Power!	 WOTLK:More Power!
 q(10364),	-- Caedmos	 TBC:Caedmos	 WOTLK:Caedmos
 q(10376),	-- Symbol of Hope	 WOTLK:Symbol of Hope
 q(10377),	-- Nothing to Fear	 TBC:Nothing to Fear	 WOTLK:Nothing to Fear
 q(10378),	-- Consume Magic	 WOTLK:Consume Magic
 q(10379),	-- Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
 q(10383),	-- This is a Breadcrumb!	 TBC:This is a Breadcrumb!	 WOTLK:This is a Breadcrumb!
-q(10404),	-- Against the Legion	 TBC:Against the Legion	 WOTLK:Against the Legion
-q(10491),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
 q(10529),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
 q(10530),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
 q(10532),	-- Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
@@ -196,7 +290,6 @@ q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business
 q(10779),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
 q(10789),	-- Return to Carendin Halgar	 TBC:Return to Carendin Halgar	 WOTLK:Return to Carendin Halgar
 q(10790),	-- Return to Mordak Darkfist	 TBC:Return to Gan'rul Bloodeye	 WOTLK:Return to Gan'rul Bloodeye
-q(10844),	-- Forge Camp: Anger	 TBC:Forge Camp: Anger	 WOTLK:Forge Camp: Anger
 q(10931),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
 q(10932),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
 q(10933),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon
@@ -210,6 +303,8 @@ q(11339),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:C
 q(11340),	-- Call to Arms: Alterac Valley	 TBC:Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
 q(11341),	-- Call to Arms: Eye of the Storm	 TBC:Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm
 q(11342),	-- Call to Arms: Warsong Gulch	 TBC:Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
+q(11691),	-- Summon Ahune	 TBC:Summon Ahune	 WOTLK:Summon Ahune
+q(11883),	-- Fire Dancing?	 TBC:Fire Dancing?	 WOTLK:Fire Dancing?
 q(63448),	-- TBC:A Deluxe Delivery	 WOTLK:A Deluxe Delivery
 q(63450),	-- TBC:A Deluxe Delivery	 WOTLK:A Deluxe Delivery
 q(63546),	-- TBC:[NEVER USED]	 WOTLK:[NEVER USED]
@@ -260,7 +355,6 @@ q(64275),	--
 2.5.1.38548
 q(64319),	-- TBC:A Study in Power	 WOTLK:A Study in Power
 2.5.1.39399
-q(9298),	-- reuse	 TBC:reuse	 WOTLK:reuse
 q(10549),	-- REUSE
 2.5.3.41402
 q(65284),	-- TBC:Goblin Gumbo Kettle	 WOTLK:Goblin Gumbo Kettle
@@ -278,6 +372,8 @@ q(11462),	-- Handsome Terry	 WOTLK:Handsome Terry
 q(11463),	-- Pirates of the North Seas	 WOTLK:Pirates of the North Seas
 q(11578),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY
 q(11579),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY
+q(11621),	-- The Tablet of Leviroth	 WOTLK:The Tablet of Leviroth
+q(11622),	-- Secrets of Riplash	 WOTLK:Secrets of Riplash
 q(11934),	-- Unlocking Your Potential [PH]
 q(11992),	-- Navigation Charts (Deprecated)	 WOTLK:Navigation Charts (Deprecated)
 q(11994),	-- Juno's Flag Tester
@@ -298,15 +394,18 @@ q(12426),	-- DEPRECATED	 WOTLK:DEPRECATED
 q(12445),	--
 q(12493),	-- PvP Test	 WOTLK:PvP Test
 q(12586),	-- In Search of Bigger Game	 WOTLK:In Search of Bigger Game
+q(12590),	-- Blahblah[PH]	 WOTLK:Blahblah[PH]
 q(12601),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice
 q(12602),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice
 q(12625),	-- Dominion Over Acherus	 WOTLK:Dominion Over Acherus
-q(12626),	-- Company of the Damned
+q(12626),	-- Company of the Damned	 WOTLK:Company of the Damned
 q(12682),	-- Uncharted Territory (DEPRECATED)	 WOTLK:Uncharted Territory (DEPRECATED)
 q(12731),	--
 q(12764),	-- The Secret to Kungaloosh
 q(12765),	-- Kungaloosh
 q(12780),	-- DEPRICATED>>Enemy of Our Enemy	 WOTLK:DEPRICATED>>Enemy of Our Enemy
+q(12816),	-- Investigate the Scourge of Silvermoon	 WOTLK:Investigate the Scourge of Silvermoon
+q(12817),	-- Investigate the Scourge of Exodar	 WOTLK:Investigate the Scourge of Exodar
 q(12825),	-- Expressions of Gratitude	 WOTLK:Expressions of Gratitude
 q(12834),	-- Not Rain, Nor Snow, Nor Exploding Plane	 WOTLK:Not Rain, Nor Snow, Nor Exploding Plane
 q(12835),	-- All Grown Up	 WOTLK:All Grown Up
@@ -321,7 +420,6 @@ q(13317),	-- ----	 WOTLK:----
 q(13378),	-- Chief Engineer Copperclaw	 WOTLK:Chief Engineer Copperclaw
 q(13404),	-- Static Shock Troops: the Bombardment	 WOTLK:Static Shock Troops: the Bombardment
 q(13405),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients
-q(13406),	-- Riding the Wavelength: The Bombardment	 WOTLK:Riding the Wavelength: The Bombardment
 q(13407),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients
 q(13427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
 q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
@@ -343,18 +441,10 @@ q(14180),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
 q(14181),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
 q(14182),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm
 q(14183),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(14185),	-- FLAG: Riding Trainer Advertisement (40)
-q(14186),	-- FLAG: Riding Trainer Advertisement (60)
-q(14187),	-- FLAG: Riding Trainer Advertisement (70)
 q(14200),	-- Kickoff Mail Marker
 q(14349),	-- The Call to Command	 WOTLK:The Call to Command
 q(14350),	-- The Crimson Courier	 WOTLK:The Crimson Courier
-q(14351),	-- [DEPRECATED] Battle of Hillsbrad	 WOTLK:Battle of Hillsbrad
-q(14418),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14419),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14420),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14421),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14441),	-- Garrosh's Autograph
+q(14441),	-- Garrosh's Autograph	 WOTLK:Garrosh's Autograph
 q(24216),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
 q(24217),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
 q(24218),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
@@ -369,22 +459,10 @@ q(24226),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
 q(24227),	-- DEPRECATED
 q(24426),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
 q(24427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
-q(24508),	-- Temp Quest Record
-q(24509),	-- Temp Quest Record
+q(24508),	-- Temp Quest Record	 WOTLK:Temp Quest Record
+q(24509),	-- Temp Quest Record	 WOTLK:Temp Quest Record
 q(24746),	-- REUSE	 WOTLK:REUSE
-q(24869),	-- Deprogramming	 WOTLK:Deprogramming
-q(24870),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24871),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24872),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul
-q(24873),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous
-q(24874),	-- Blood Quickening	 WOTLK:Blood Quickening
-q(24875),	-- Deprogramming	 WOTLK:Deprogramming
-q(24876),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24877),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24878),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous
-q(24879),	-- Blood Quickening	 WOTLK:Blood Quickening
-q(24880),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul
-q(25238),	-- Strength Ring Flag
+q(25286),	-- Words for Delivery
 3.4.0.44729
 q(70349),	--
 3.4.0.46158
@@ -420,7 +498,7 @@ q(70681),	--
 q(70682),	--
 q(70683),	--
 q(70684),	--
-q(70685),	--
+q(70685),	-- WOTLK:Tuskarr Kite
 q(70686),	--
 q(70687),	--
 q(70688),	--
@@ -495,6 +573,41 @@ q(72522),	-- WOTLK:Festering Emerald Drake
 q(72523),	-- WOTLK:Festering Emerald Drake
 3.4.2.49311
 q(76175),	--
+3.4.3.51126
+q(78165),	--
+3.4.3.51278
+q(78505),	-- WOTLK:Daily Protocol Gamma Random (1st)
+q(78509),	-- WOTLK:Daily Non-Protocol Gamma Heroic Random (1st)
+3.4.3.51470
+q(78752),	-- WOTLK:Proof of Demise: Titan Rune Protocol Gamma
+q(78753),	-- WOTLK:Proof of Demise: Allies of The Lich King
+3.4.3.52237
+q(74940),	-- WOTLK:Flurky
+q(74941),	-- WOTLK:Flurky
+q(75491),	-- WOTLK:Glub
+q(75492),	-- WOTLK:Glub
+q(77167),	--
+q(77168),	--
+q(78135),	--
+q(78136),	-- WOTLK:A New Beginning
+q(78137),	-- WOTLK:A New Beginning
+q(78138),	--
+q(78139),	--
+q(78140),	-- WOTLK:Tools for Survival
+q(78151),	-- WOTLK:Tools for Survival
+q(78157),	-- WOTLK:Combat Training
+q(78158),	-- WOTLK:Combat Training
+q(78164),	-- WOTLK:Talented
+q(78166),	-- WOTLK:To Northrend
+q(78167),	-- WOTLK:Talented
+q(78168),	-- WOTLK:To Northrend
+q(78219),	-- WOTLK:A New Beginning
+q(78220),	-- WOTLK:Tools for Survival
+q(78221),	-- WOTLK:Combat Training
+q(78222),	-- WOTLK:Talented
+q(78223),	--
+q(78224),	-- WOTLK:Talented
+q(78225),	-- WOTLK:To Northrend
 5.0.3.15890
 q(13574),	-- Peering Into the Vortex (DEPRECATED)
 q(13608),	-- Along for the Ride
@@ -538,8 +651,20 @@ q(14426),	-- The Second Quest
 q(14427),	-- Item Quest
 q(14450),	-- Random Drop Test Progressive
 q(14451),	-- Random Drop Flat Rate
+q(14454),	-- The Captured Warrior
+q(24443),	-- The Captured Hunter
+q(24444),	-- The Captured Shaman
+q(24445),	-- The Captured Druid
+q(24446),	-- The Captured Sunwalker
+q(24447),	-- The Captured Seer
 q(24460),	-- Out of Order
 q(24462),	-- Operation Item Get
+q(24464),	-- Track Beasts
+q(24465),	-- Mark of the Wild
+q(24466),	-- Battle Shout
+q(24481),	-- Rockbiter Weapon
+q(24482),	-- Power Word: Fortitude
+q(24485),	-- Seal of Righteousness
 q(24494),	-- Empowered Rune
 q(24526),	-- Filling Up the Spellbook
 q(24527),	-- Your Path Begins Here
@@ -608,8 +733,12 @@ q(25376),	-- Gordunni Cobalt
 q(25501),	-- Poaching for Dummies
 q(25508),	-- A Brilliant Idea
 q(25557),	-- Chief Ukorz
+q(25571),	-- A Natural Occurrence
 q(25604),	-- Hammering It Out
 q(25625),	-- Piercing the Ruins
+q(25639),	-- [DND] Test Rifts
+q(25738),	-- Shallow End of the Gene Pool
+q(25773),	-- A Natural Occurrence
 q(25789),	-- Hammering It Out
 q(25827),	-- Lo'Gosh is Ready for Battle
 q(25828),	-- Goldrinn's Message to Ysera
@@ -617,6 +746,7 @@ q(25831),	-- Hamuul's Message to Ysera
 q(25833),	-- Aviana's Message to Ysera
 q(25902),	-- Your First Totem!
 q(25903),	-- It's Hot and it Might Explode
+q(26054),	-- Water They Up To?
 q(26104),	-- Our Aquatic Neigh-Bors
 q(26109),	-- Land Ho!
 q(26123),	-- When in Vashj'ir...
@@ -663,6 +793,7 @@ q(26945),	-- Learning New Techniques
 q(26946),	-- A Rogue's Advantage
 q(26947),	-- A Woodsman's Training
 q(26948),	-- Moonfire
+q(26990),	-- Water They Up To?
 q(27020),	-- The First Lesson
 q(27021),	-- The Hunter's Path
 q(27022),	-- Extinguishing the Idol
@@ -673,10 +804,15 @@ q(27052),	-- Lingering Twilight
 q(27066),	-- Learning the Word
 q(27067),	-- Moonfire
 q(27081),	-- [DEPRECATED]Trusting the Traitor
+q(27122),	-- Fired Up and Not So Good To Go.
+q(27127),	-- Fired Up and Not So Good To Go.
 q(27137),	-- Earth Girls Aren't So Easy
 q(27138),	-- Earth Girls Aren't So Easy
 q(27149),	-- School of the Damned
+q(27207),	-- This Blows
+q(27209),	-- This Blows
 q(27250),	-- REUSE - BAD COPY
+q(27546),	-- Speak with Captain Anton
 q(27678),	-- The Platinum Discs
 q(27723),	-- Kyle's Test Quest
 q(27819),	-- TEST - RVM
@@ -761,6 +897,8 @@ q(29277),	-- Druid Tree, Stage 3 Tracking
 q(29294),	-- Animate Embers
 q(29372),	-- Trouble in Podunk
 q(29373),	-- Trouble in Podunk
+q(29382),	-- Thanks, But No Thanks
+q(29383),	-- Thanks, But No Thanks
 q(29441),	-- From the Belly of the Beast
 q(29459),	-- A Captured Banner
 q(29460),	-- The Enemy's Insignia
@@ -770,6 +908,7 @@ q(29532),	-- Dark Tidings
 q(29533),	-- Dark Tidings
 q(29569),	-- Warlord Kalithresh's Prized Possession
 q(29671),	-- The Black Morass
+q(29820),	-- Into the Nexus
 q(29853),	-- Champion of the King
 q(30119),	-- Well of Eternity RP Tracker
 q(30173),	-- War Pigs!
@@ -788,6 +927,7 @@ q(37527),	--
 q(37529),	--
 q(37643),	--
 q(37846),	--
+q(37847),	--
 q(37854),	--
 q(37929),	--
 q(37931),	--
@@ -797,9 +937,13 @@ q(37971),	--
 q(38011),	--
 q(38012),	--
 q(38016),	--
+q(38017),	--
+q(38019),	--
 q(38027),	--
+q(38033),	--
 q(38055),	--
 q(38056),	--
+q(38062),	--
 q(38063),	-- Unlock "Legends of Azeroth."
 q(38064),	-- Unlock "The Burning Legion."
 q(38065),	-- Unlock "Wrath of the Lich King."
@@ -846,6 +990,7 @@ q(38105),	-- Gossip Test Case 3
 q(38106),	-- Greeting Text Test Case 1
 q(38107),	-- Greeting Text Test Case 2
 q(38108),	-- Greeting Text Test Case 3
+q(38216),	--
 q(38228),	--
 q(38230),	--
 q(38233),	--
@@ -882,7 +1027,9 @@ q(38554),	--
 q(38555),	--
 q(38556),	--
 q(38590),	--
+q(38598),	-- TEST: Craft Some Legplates
 q(38606),	--
+q(38619),	--
 q(38625),	-- Hook & Sinker
 q(38627),	-- Worgen Stalkers (Horde Only)
 q(38630),	-- Horde Kill Squad (Alliance Only)
@@ -891,11 +1038,14 @@ q(38636),	--
 q(38651),	--
 q(38652),	--
 q(38653),	--
+q(38659),	--
 q(38706),	--
 q(38824),	--
 q(38835),	--
 q(38846),	--
 q(38848),	--
+q(38849),	--
+q(38851),	--
 q(38859),	--
 q(38875),	--
 q(38879),	--
@@ -941,6 +1091,7 @@ q(39291),	--
 q(39298),	--
 q(39319),	--
 q(39320),	--
+q(39492),	--
 q(39715),	-- Menacing Grumplings
 q(39747),	--
 q(39754),	--
@@ -950,6 +1101,7 @@ q(39778),	--
 q(39779),	--
 q(39784),	-- Beastmaster Pao'lek
 q(39797),	-- Aponi Brightmane Slotted
+q(39833),	--
 q(39838),	-- Fire!
 q(39839),	-- Mysterious Dust
 q(39840),	-- The Council's Approval
@@ -957,12 +1109,19 @@ q(39841),	-- Friends in Low Places
 q(39844),	-- Cold Hard Coin
 q(39845),	-- The Obliterum Forge
 q(39863),	-- Trial By Fel Fire
+q(39885),	--
+q(39886),	--
+q(39887),	--
 q(39888),	--
+q(39890),	--
+q(39892),	--
 q(39893),	--
 q(39894),	--
+q(39895),	--
 q(39897),	--
 q(39898),	--
 q(39899),	--
+q(39900),	--
 q(39901),	--
 q(39902),	--
 q(39908),	--
@@ -972,6 +1131,7 @@ q(39912),	--
 q(39913),	--
 q(39915),	--
 q(39917),	--
+q(39919),	--
 q(39922),	--
 q(39924),	--
 q(40027),	--
@@ -979,8 +1139,12 @@ q(40098),	--
 q(40101),	--
 q(40128),	--
 q(40150),	--
+q(40174),	--
 q(40226),	--
 q(40239),	--
+q(40257),	-- Demon Hunter Choice 1
+q(40259),	-- Demon Hunter Choice 2
+q(40261),	-- Demon Hunter Choice 3
 q(40271),	--
 q(40275),	--
 q(40281),	--
@@ -1013,24 +1177,27 @@ q(40563),	--
 q(40564),	-- Shoe Shine Kit Tracking Quest
 q(40566),	--
 q(40592),	--
+q(40602),	--
 q(40648),	--
+q(40660),	--
+q(40665),	--
+q(40677),	--
+q(40679),	--
+q(40682),	--
 q(40789),	--
 q(40799),	--
 q(40800),	--
+q(40801),	--
 q(40802),	--
 q(40809),	--
 q(40826),	--
 q(40836),	--
 q(40887),	--
-q(40895),	-- The Haunted Mire
 q(40899),	--
 q(40903),	--
 q(40926),	--
 q(40928),	--
 q(40948),	--
-q(40979),	--
-q(40981),	--
-q(40984),	--
 q(40999),	--
 q(41015),	-- Artifacts Need Artificers
 q(41017),	-- Empowering Your Artifact
@@ -1039,10 +1206,6 @@ q(41046),	--
 q(41061),	--
 q(41088),	--
 q(41092),	-- Forge Guards Move
-q(41130),	--
-q(41131),	--
-q(41132),	--
-q(41133),	--
 q(41236),	--
 q(41245),	--
 q(41247),	--
@@ -1057,7 +1220,6 @@ q(41403),	--
 q(41404),	--
 q(41417),	--
 q(41419),	--
-q(41429),	--
 q(41456),	--
 q(41476),	--
 q(41477),	--
@@ -1074,14 +1236,8 @@ q(41593),	--
 q(41594),	--
 q(41595),	--
 q(41683),	--
-q(41693),	--
 q(41698),	--
-q(41757),	--
-q(41758),	--
-q(41765),	--
-q(41827),	--
-q(41830),	--
-q(41843),	--
+q(41774),	-- The Rival Lords of Fire
 q(41887),	--
 q(41894),	--
 q(41902),	--
@@ -1100,16 +1256,17 @@ q(41974),	--
 q(41975),	--
 q(41976),	--
 q(41977),	--
+q(41981),	-- Traversing the Heavens
 q(42057),	--
 q(42059),	--
 q(42060),	--
 q(42066),	--
 q(42073),	-- Boros Tracker Two
-q(42095),	--
 q(42099),	--
 q(42109),	--
 q(42121),	--
 q(42122),	--
+q(42130),	--
 q(42144),	--
 q(42152),	--
 q(42153),	--
@@ -1203,13 +1360,11 @@ q(42760),	--
 q(42761),	--
 q(42793),	--
 q(42794),	--
-q(42923),	--
-q(42925),	--
+q(43181),	-- Tracking Down the Scepter
 q(43278),	-- Felforged Plate Armor
 q(43279),	-- Fel-Chain Mail Armor
 q(43280),	-- Felshroud Leather Armor
 q(43281),	-- Fel-Infused Cloth Armor
-q(43308),	-- Treasure 071 - Outskirts
 q(43320),	--
 q(43321),	--
 q(43322),	--
@@ -1250,6 +1405,14 @@ q(44131),	-- Druids of the Scythe - 4
 q(44132),	-- Druids of the Scythe - 5
 q(44133),	-- Druids of the Scythe - 6
 q(44141),	-- Tracking Quest
+q(44196),	--
+q(44197),	--
+q(44198),	--
+q(44199),	--
+q(44201),	--
+q(44236),	-- Essence of Fate
+q(44241),	--
+q(44242),	--
 q(44313),	-- Tracking Quest
 q(44314),	-- Tracking Quest
 q(44315),	-- Tracking Quest
@@ -1261,8 +1424,11 @@ q(44320),	-- Tracking Quest
 q(44321),	-- Tracking Quest
 q(44322),	-- Tracking Quest
 q(44494),	--
+q(44578),	-- Honor the Flame
 q(44648),	-- Tracking Quest: 7.0 Class Hall - Paladin - Pacing Mission 2B
-q(44649),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)
+q(44747),	--
+q(44749),	--
+q(44750),	--
 q(44755),	--
 q(44757),	--
 q(44774),	--
@@ -1276,23 +1442,33 @@ q(44826),	--
 q(44848),	-- Ch 5 Available Tracking Quest
 q(44852),	--
 q(44855),	--
+q(44883),	--
 q(44886),	-- Unwanted Evidence
 q(44887),	-- Uncovering Orders
 q(44912),	-- 7.1 Dungeon - Karazhan - Quest Item Reward
 q(44942),	--
 q(44944),	-- Aura of Uncertainty
 q(45029),	-- Talon's Vengeance - Intro Complete
+q(45030),	--
 q(45031),	--
+q(45033),	--
+q(45037),	--
 q(45077),	--
 q(45078),	--
+q(45098),	--
+q(45099),	--
 q(45100),	--
+q(45101),	--
 q(45124),	--
 q(45129),	-- Appearance
 q(45130),	-- Appearance
 q(45131),	-- Appearance
+q(45132),	--
+q(45133),	--
 q(45161),	-- 7.1.5 Special - 850 - Special - Brawlers - Fight 01 - Tracking Quest
 q(45164),	-- 7.1.5 Special - 850 - Special - Brawlers - Fight 02 - Tracking Quest
 q(45165),	-- 7.1.5 Class Hall - Brawlers - Fight 01 - Overmax Reward Credit - Tracking Quest
+q(45167),	-- REUSE ME
 q(45170),	-- Tracking Quest
 q(45303),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 03 - Tracking Quest
 q(45309),	-- 7.1.5 Class Hall - Brawlers - Fight 02 - Overmax Reward Credit - Tracking Quest
@@ -1302,16 +1478,23 @@ q(45336),	--
 q(45338),	--
 q(45352),	-- Touch of a Titan
 q(45371),	--
+q(45386),	--
+q(45397),	-- Fire the Cannons!
 q(45422),	-- Edict of the God-King
+q(45438),	-- Armies of Legionfall [DEPRECATED]
+q(45458),	--
 q(45517),	-- Brinebeard the Risen
 q(45519),	--
 q(45521),	--
+q(45527),	-- Eyir's Forgiveness
 q(45529),	--
+q(45534),	-- A Common Enemy
 q(45546),	-- Free Attempt Used
 q(45558),	--
 q(45606),	--
 q(45636),	-- Dual Boss - Free Attempt Used [DNT]
 q(45745),	-- Legion 110 PvP
+q(45746),	-- Salvation
 q(45768),	--
 q(45775),	-- FLAG (DNT)
 q(45832),	--
@@ -1332,7 +1515,6 @@ q(46181),	--
 q(46289),	--
 q(46303),	--
 q(46306),	--
-q(46307),	--
 q(46706),	--
 q(46803),	--
 q(46806),	--
@@ -1390,12 +1572,15 @@ q(46925),	--
 q(46934),	--
 q(46936),	--
 q(46937),	--
+q(47029),	-- Holy: A Threat in Val'sharah
 q(47149),	-- Legion Season 3 and 4 - Gladiator's Plate Armor
 q(47187),	--
 q(47190),	--
 q(47192),	--
 q(47265),	--
 q(47417),	--
+q(47593),	--
+q(47608),	--
 q(47626),	--
 q(47655),	--
 q(47658),	-- DNT
@@ -1406,398 +1591,252 @@ q(47886),	--
 q(47893),	--
 q(48220),	--
 q(48457),	-- Tracking Quest
+7.3.0.24608
+q(48796),	--
+q(48798),	--
+q(48937),	-- Create Netherwalker's Portal Generator
 7.3.5.25928
 q(49760),	--
 q(49761),	--
 q(49762),	--
 q(49763),	--
 q(49764),	--
-10.1.0.49890
-q(75059),	--
-10.1.5.49516
-q(73121),	--
-q(73122),	--
-q(73123),	--
-q(75211),	--
-q(75460),	--
-q(75479),	--
-q(75536),	--
-q(75605),	--
-q(76170),	--
-q(76198),	--
-q(76218),	--
-q(76219),	--
-q(76220),	--
-q(76221),	--
-q(76222),	--
-q(76223),	--
-q(76224),	--
-q(76225),	--
-q(76226),	--
-q(76227),	--
-q(76228),	--
-q(76229),	--
-q(76230),	--
-q(76231),	--
-q(76232),	--
-q(76233),	--
-q(76234),	--
-q(76235),	--
-q(76236),	--
-q(76237),	--
-q(76238),	--
-q(76239),	--
-q(76267),	--
-q(76289),	--
-q(76360),	--
-q(76371),	--
-q(76374),	--
-q(76378),	--
-10.1.5.49595
-q(76555),	--
-10.1.5.49719
-q(76561),	--
-q(76563),	--
-q(76602),	--
-q(76636),	--
-q(76664),	--
-q(76675),	--
-q(76682),	--
-q(76693),	--
-q(76694),	--
-q(76716),	--
-q(76717),	--
-q(76718),	--
-q(76719),	--
-q(76720),	--
-q(76721),	--
-q(76722),	--
-q(76723),	--
-q(76724),	--
-q(76725),	--
-q(76726),	--
-q(76727),	--
-q(76728),	--
-q(76729),	--
-q(76730),	--
-q(76731),	--
-q(76732),	--
-q(76981),	--
-10.1.5.49824
-q(77174),	--
-q(77179),	--
-q(77184),	--
-q(77185),	--
-q(77199),	--
-10.1.5.49908
-q(77213),	--
-q(77221),	--
-q(77306),	--
-q(77307),	--
-q(77308),	--
-10.1.5.50006
-q(77335),	--
-q(77358),	--
-q(77364),	--
-q(77397),	--
-q(77401),	--
-q(77402),	--
-q(77403),	--
-q(77404),	--
-q(77405),	--
-q(77406),	--
-q(77407),	--
-q(77418),	--
-q(77419),	--
-q(77421),	--
-10.1.5.50130
-q(77435),	--
-q(77506),	--
-q(77513),	--
-q(77520),	--
-q(77521),	--
-q(77522),	--
-q(77523),	--
-q(77524),	--
-q(77567),	--
-q(77576),	--
-q(77577),	--
-q(77578),	--
-q(77579),	--
-q(77580),	--
-q(77595),	--
-q(77596),	--
-q(77597),	--
-q(77598),	--
-q(77599),	--
-q(77600),	--
-q(77601),	--
-q(77602),	--
-q(77603),	--
-q(77604),	--
-q(77605),	--
-q(77606),	--
-q(77607),	--
-q(77608),	--
-q(77609),	--
-q(77610),	--
-q(77611),	--
-q(77622),	--
-q(77623),	--
-q(77624),	--
-q(77625),	--
-q(77626),	--
-q(77627),	--
-q(77628),	--
-q(77629),	--
-q(77630),	--
-q(77631),	--
-q(77632),	--
-q(77633),	--
-q(77634),	--
-q(77635),	--
-q(77636),	--
-q(77637),	--
-q(77638),	--
-q(77639),	--
-q(77640),	--
-q(77641),	--
-10.1.5.50199
-q(77687),	--
-q(77688),	--
-q(77689),	--
-q(77691),	--
-10.1.5.50355
-q(76157),	--
-10.1.5.50438
-q(77850),	--
-q(77851),	--
-q(77852),	--
-q(77853),	--
-q(77854),	--
-10.1.5.50469
-q(77883),	--
-10.1.7.50442
-q(75604),	--
-q(75776),	-- PTR:Ruby Lifeshrine Loop - Challenge
-q(75777),	-- PTR:Ruby Lifeshrine Loop - Reverse Challenge
-q(75778),	-- PTR:Wild Preserve Slalom - Challenge
-q(75779),	-- PTR:Wild Preserve Slalom - Reverse Challenge
-q(75780),	-- PTR:Emberflow Flight - Challenge
-q(75781),	-- PTR:Emberflow Flight - Reverse Challenge
-q(75782),	-- PTR:Apex Canopy River Run - Challenge
-q(75783),	-- PTR:Apex Canopy River Run - Reverse Challenge
-q(75784),	-- PTR:Garden Gallivant - Challenge
-q(75785),	-- PTR:Uktulut Coaster - Challenge
-q(75786),	-- PTR:Uktulut Coaster - Reverse Challenge
-q(75787),	-- PTR:Wingrest Roundabout - Challenge
-q(75788),	-- PTR:Wingrest Roundabout - Reverse Challenge
-q(75789),	-- PTR:Flashfrost Flyover - Challenge
-q(75790),	-- PTR:Flashfrost Flyover - Reverse Challenge
-q(75791),	-- PTR:Wild Preserve Circuit - Challenge
-q(75792),	-- PTR:Wild Preserve Circuit - Reverse Challenge
-q(75793),	-- PTR:Sundapple Copse Circuit - Challenge
-q(75794),	-- PTR:Sundapple Copse Circuit - Reverse Challenge
-q(75795),	-- PTR:Fen Flythrough - Challenge
-q(75796),	-- PTR:Fen Flythrough - Reverse Challenge
-q(75797),	-- PTR:Ravine River Run - Challenge
-q(75798),	-- PTR:Ravine River Run - Reverse Challenge
-q(75799),	-- PTR:Emerald Garden Ascent - Challenge
-q(75800),	-- PTR:Emerald Garden Ascent - Reverse Challenge
-q(75801),	-- PTR:Maruukai Dash - Challenge
-q(75802),	-- PTR:Mirror of Sky Dash - Challenge
-q(75803),	-- PTR:River Rapids Route - Challenge
-q(75804),	-- PTR:River Rapids Route - Reverse Challenge
-q(75805),	-- PTR:Azure Span Sprint - Challenge
-q(75806),	-- PTR:Azure Span Sprint - Reverse Challenge
-q(75807),	-- PTR:Azure Span Slalom - Challenge
-q(75808),	-- PTR:Azure Span Slalom - Reverse Challenge
-q(75809),	-- PTR:Vakthros Ascent - Challenge
-q(75810),	-- PTR:Vakthros Ascent - Reverse Challenge
-q(75811),	-- PTR:Iskaara Tour - Challenge
-q(75812),	-- PTR:Iskaara Tour - Reverse Challenge
-q(75813),	-- PTR:Frostland Flyover - Challenge
-q(75815),	-- PTR:Frostland Flyover - Reverse Challenge
-q(75816),	-- PTR:Archive Ambit - Challenge
-q(75817),	-- PTR:Archive Ambit - Reverse Challenge
-q(75820),	-- PTR:Flowing Forest Flight - Challenge
-q(75821),	-- PTR:Flowing Forest Flight - Reverse Challenge
-q(75822),	-- PTR:Tyrhold Trial - Challenge
-q(75823),	-- PTR:Tyrhold Trial - Reverse Challenge
-q(75824),	-- PTR:Cliffside Circuit - Challenge
-q(75825),	-- PTR:Cliffside Circuit - Reverse Challenge
-q(75826),	-- PTR:Academy Ascent - Challenge
-q(75827),	-- PTR:Academy Ascent - Reverse Challenge
-q(75828),	-- PTR:Garden Gallivant - Reverse Challenge
-q(75829),	-- PTR:Caverns Criss-Cross - Challenge
-q(75830),	-- PTR:Caverns Criss-Cross - Reverse Challenge
-q(75938),	-- PTR:Test
-q(75954),	-- PTR:Stormsunder Crater Circuit - Challenge
-q(75955),	-- PTR:Stormsunder Crater Circuit - Reverse Challenge
-q(75956),	-- PTR:Morqut Ascent - Challenge
-q(75957),	-- PTR:Morqut Ascent - Reverse Challenge
-q(75958),	-- PTR:Aerie Chasm Cruise - Challenge
-q(75959),	-- PTR:Aerie Chasm Cruise - Reverse Challenge
-q(75960),	-- PTR:Southern Reach Route - Challenge
-q(75961),	-- PTR:Southern Reach Route - Reverse Challenge
-q(75962),	-- PTR:Caldera Coaster - Challenge
-q(75963),	-- PTR:Caldera Coaster - Reverse Challenge
-q(75964),	-- PTR:Forbidden Reach Rush - Challenge
-q(75965),	-- PTR:Forbidden Reach Rush - Reverse Challenge
-q(75972),	-- PTR:Crystal Circuit - Challenge
-q(75973),	-- PTR:Crystal Circuit - Reverse Challenge
-q(75974),	-- PTR:Caldera Cruise - Challenge
-q(75975),	-- PTR:Caldera Cruise - Reverse Challenge
-q(75976),	-- PTR:Brimstone Scramble - Challenge
-q(75977),	-- PTR:Brimstone Scramble - Reverse Challenge
-q(75978),	-- PTR:Shimmering Slalom - Challenge
-q(75979),	-- PTR:Shimmering Slalom - Reverse Challenge
-q(75980),	-- PTR:Loamm Roamm - Challenge
-q(75981),	-- PTR:Loamm Roamm - Reverse Challenge
-q(75982),	-- PTR:Sulfur Sprint - Challenge
-q(75983),	-- PTR:Sulfur Sprint - Reverse Challenge
-q(76026),	--
-q(76032),	--
-q(76033),	-- PTR:Felwood Flyover - Challenge
-q(76034),	-- PTR:Felwood Flyover - Reverse Challenge
-q(76035),	-- PTR:Winter Wander - Challenge
-q(76036),	-- PTR:Winter Wander - Reverse Challenge
-q(76037),	-- PTR:Nordrassil Spiral - Challenge
-q(76040),	-- PTR:Nordrassil Spiral - Reverse Challenge
-q(76041),	-- PTR:Hyjal Hotfoot - Challenge
-q(76042),	-- PTR:Hyjal Hotfoot - Reverse Challenge
-q(76043),	-- PTR:Rocketway Ride - Challenge
-q(76044),	-- PTR:Rocketway Ride - Reverse Challenge
-q(76045),	-- PTR:Ashenvale Ambit - Challenge
-q(76046),	-- PTR:Ashenvale Ambit - Reverse Challenge
-q(76047),	-- PTR:Durotar Tour - Challenge
-q(76048),	-- PTR:Durotar Tour - Reverse Challenge
-q(76049),	-- PTR:Webwinder Weave - Challenge
-q(76050),	-- PTR:Webwinder Weave - Reverse Challenge
-q(76051),	-- PTR:Desolace Drift - Challenge
-q(76052),	-- PTR:Desolace Drift - Reverse Challenge
-q(76053),	-- PTR:Barrens Divide Dive - Challenge
-q(76054),	-- PTR:Barrens Divide Dive - Reverse Challenge
-q(76055),	-- PTR:Razorfen Roundabout - Challenge
-q(76056),	-- PTR:Razorfen Roundabout - Reverse Challenge
-q(76057),	-- PTR:Thousand Needles Thread - Challenge
-q(76058),	-- PTR:Thousand Needles Thread - Reverse Challenge
-q(76059),	-- PTR:Feralas Ruins Ramble - Challenge
-q(76060),	-- PTR:Feralas Ruins Ramble - Reverse Challenge
-q(76061),	-- PTR:Ahn'Qiraj Circuit - Challenge
-q(76062),	-- PTR:Ahn'Qiraj Circuit - Reverse Challenge
-q(76063),	-- PTR:Uldum Tour - Challenge
-q(76064),	-- PTR:Uldum Tour - Reverse Challenge
-q(76065),	-- PTR:Un'Goro Crater Circuit - Challenge
-q(76066),	-- PTR:Un'Goro Crater Circuit - Reverse Challenge
-q(76531),	-- PTR:Bar Tab Barrel
-q(76545),	--
-q(76577),	--
-q(76579),	--
-q(76591),	--
-q(77095),	-- PTR:Bar Tab Barrel
-q(77096),	-- PTR:Bar Tab Barrel
-q(77097),	-- PTR:Bar Tab Barrel
-q(77099),	-- PTR:Bar Tab Barrel
-q(77100),	--
-q(77102),	-- PTR:Hellfire Hustle
-q(77103),	-- PTR:Hellfire Hustle - Advanced
-q(77104),	-- PTR:Hellfire Hustle - Reverse
-q(77151),	--
-q(77152),	-- PTR:Bar Tab Barrel
-q(77153),	-- PTR:Bar Tab Barrel
-q(77154),	--
-q(77155),	-- PTR:Bar Tab Barrel
-q(77163),	--
-q(77169),	-- PTR:Coilfang Caper
-q(77170),	-- PTR:Coilfang Caper - Advanced
-q(77171),	-- PTR:Coilfang Caper - Reverse
-q(77205),	-- PTR:Blade's Edge Brawl
-q(77206),	-- PTR:Blade's Edge Brawl - Advanced
-q(77207),	-- PTR:Blade's Edge Brawl - Reverse
-q(77208),	--
-q(77238),	-- PTR:Telaar Tear
-q(77239),	-- PTR:Telaar Tear - Advanced
-q(77240),	-- PTR:Telaar Tear - Reverse
-q(77251),	-- PTR:Shaping the Dreamsurge
-q(77260),	-- PTR:Razorthorn Rise Rush
-q(77261),	-- PTR:Razorthorn Rise Rush - Advanced
-q(77262),	-- PTR:Razorthorn Rise Rush - Reverse
-q(77264),	-- PTR:Auchindoun Coaster
-q(77265),	-- PTR:Auchindoun Coaster - Advanced
-q(77266),	-- PTR:Auchindoun Coaster - Reverse
-q(77267),	--
-q(77268),	--
-q(77278),	-- PTR:Tempest Keep Sweep
-q(77279),	-- PTR:Tempest Keep Sweep - Advanced
-q(77280),	-- PTR:Tempest Keep Sweep - Reverse
-q(77322),	-- PTR:Shattrath City Sashay
-q(77323),	-- PTR:Shattrath City Sashay - Advanced
-q(77324),	-- PTR:Shattrath City Sashay - Reverse
-q(77325),	--
-q(77327),	--
-q(77328),	--
-q(77331),	--
-q(77345),	-- PTR:The Need For Higher Velocities
-q(77346),	-- PTR:Shadowmoon Slam
-q(77347),	-- PTR:Shadowmoon Slam - Advanced
-q(77348),	-- PTR:Shadowmoon Slam - Reverse
-q(77398),	-- PTR:Eco-Dome Excursion
-q(77399),	-- PTR:Eco-Dome Excursion - Advanced
-q(77400),	-- PTR:Eco-Dome Excursion - Reverse
-q(77414),	-- PTR:Shaping the Dreamsurge
-q(77423),	-- PTR:Surging Dreams
-q(77433),	--
-q(77434),	--
-q(77483),	--
-q(77484),	--
-q(77485),	--
-q(77486),	--
-q(77487),	--
-q(77488),	--
-q(77589),	-- PTR:Warmaul Wingding
-q(77591),	-- PTR:Warmaul Wingding - Advanced
-q(77593),	-- PTR:Warmaul Wingding - Reverse
-q(77615),	--
-q(77645),	-- PTR:Skettis Scramble
-q(77646),	-- PTR:Skettis Scramble - Advanced
-q(77647),	-- PTR:Skettis Scramble - Reverse
-q(77654),	--
-q(77678),	--
-q(77684),	-- PTR:Fel Pit Fracas
-q(77685),	-- PTR:Fel Pit Fracas - Advanced
-q(77686),	-- PTR:Fel Pit Fracas - Reverse
-q(77698),	-- PTR:Candy Bucket
-q(77699),	--
-q(77700),	--
-q(77701),	--
-q(77702),	--
-q(77703),	--
-q(77704),	--
-q(77705),	--
-q(77706),	--
-q(77707),	--
-q(77708),	--
-q(77709),	--
-q(77710),	--
-q(77725),	--
-q(77744),	-- PTR:Bar Tab Barrel
-q(77745),	-- PTR:Bar Tab Barrel
-q(77746),	-- PTR:Bar Tab Barrel
-q(77747),	-- PTR:Bar Tab Barrel
-q(77760),	--
-q(77763),	--
-q(77766),	--
-q(77774),	--
-q(77775),	--
-q(77779),	--
-q(77790),	--
-q(77792),	--
-q(77796),	--
-q(77797),	--
-q(77798),	--
-q(77839),	--
-q(77840),	--
-q(77861),	--
-q(77875),	--
-q(77876),	--
+8.0.1.26567
+q(52781),	--
+8.1.5.29418
+q(55631),	--
+10.1.0.48537
+q(75642),	--
+10.2.0.52301
+q(77980),	--
+q(77993),	--
+q(78001),	-- [DEPRECATED] 10.2 Enchanting
+q(78004),	--
+q(78009),	--
+q(78010),	--
+q(78012),	--
+q(78013),	--
+q(78122),	--
+q(78956),	--
+q(78957),	--
+q(78958),	--
+q(78959),	--
+q(78960),	--
+q(78961),	--
+q(78962),	--
+q(78963),	--
+q(78964),	--
+q(78965),	--
+q(78966),	--
+q(78967),	--
+q(78968),	--
+q(78969),	--
+q(78970),	--
+q(78971),	--
+10.2.5.52206
+q(76391),	--
+q(76392),	--
+q(76393),	--
+q(76911),	--
+q(77362),	--
+q(77424),	--
+q(77764),	-- Curious Find: Apprentice Astrologist Homework
+q(78174),	--
+q(78272),	-- Interrupting Duck
+q(78274),	--
+q(78328),	--
+q(78329),	--
+q(78332),	--
+q(78337),	--
+q(78369),	--
+q(78379),	--
+q(78475),	--
+q(78476),	--
+q(78565),	--
+q(78591),	--
+q(78594),	--
+q(78649),	--
+q(78661),	--
+q(78662),	--
+q(78664),	--
+q(78674),	--
+q(78679),	--
+q(78683),	--
+q(78724),	--
+q(78726),	--
+q(78727),	--
+q(78729),	--
+q(78734),	--
+q(78735),	--
+q(78736),	--
+q(78893),	--
+q(78894),	--
+q(78903),	--
+q(78912),	--
+q(78976),	--
+q(78978),	--
+q(78979),	--
+q(78980),	--
+q(78981),	--
+q(78982),	--
+q(78983),	--
+q(78984),	--
+q(78985),	--
+q(78986),	--
+q(78987),	--
+q(78988),	--
+q(78989),	--
+q(78990),	--
+q(78991),	--
+q(78992),	--
+q(78993),	--
+q(79104),	--
+q(79125),	--
+q(79126),	--
+q(79130),	--
+q(79131),	--
+q(79132),	--
+q(79133),	--
+q(79134),	--
+q(79135),	--
+q(79136),	--
+q(79143),	--
+q(79144),	--
+q(79155),	--
+q(79178),	-- Play Hearthstone!
+q(79186),	--
+q(79189),	--
+q(79207),	--
+q(79208),	--
+q(79209),	--
+q(79210),	--
+q(79211),	--
+q(79278),	--
+q(79314),	--
+q(79322),	-- What the Duck?
+q(79323),	--
+q(79330),	--
+q(79331),	--
+10.2.5.52330
+q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
+q(79353),	--
+q(79378),	--
+q(79384),	--
+q(79385),	--
+q(79389),	--
+q(79390),	--
+q(79391),	--
+q(79392),	--
+q(79393),	--
+q(79394),	--
+q(79395),	--
+q(79396),	--
+q(79397),	--
+q(79398),	--
+q(79399),	--
+q(79400),	--
+q(79401),	--
+q(79402),	--
+q(79403),	--
+q(79404),	--
+q(79405),	--
+q(79406),	--
+q(79407),	--
+q(79408),	--
+q(79409),	--
+q(79410),	--
+q(79416),	--
+q(79417),	--
+q(79418),	--
+q(79419),	--
+q(79420),	--
+q(79421),	--
+q(79422),	--
+q(79423),	--
+q(79424),	--
+q(79425),	--
+q(79426),	--
+q(79427),	--
+q(79428),	--
+q(79429),	--
+q(79430),	--
+q(79431),	--
+q(79441),	--
+q(79451),	--
+q(79452),	--
+q(79459),	--
+q(79460),	--
+10.2.5.52432
+q(79467),	--
+q(79468),	--
+q(79517),	--
+q(79537),	-- Jrz Test Currency Quest
+q(79558),	-- Feathered Fiend
+q(79575),	-- What the Duck?
+q(79576),	--
+q(79577),	--
+q(79578),	--
+q(79582),	--
+q(79583),	--
+q(79618),	--
+q(79619),	--
+q(79620),	--
+q(79621),	--
+10.2.5.52554
+q(79672),	--
+q(79674),	--
+q(79675),	--
+q(79676),	--
+q(79684),	--
+q(79693),	-- Play Hearthstone!
+q(79694),	-- Play Hearthstone!
+10.2.5.52902
+q(79708),	--
+q(79709),	--
+10.2.5.52968
+q(77868),	--
+q(77869),	--
+q(77870),	--
+q(77871),	--
+q(77873),	--
+q(77874),	--
+q(77877),	--
+q(77879),	--
+q(77880),	--
+q(77881),	--
+q(77882),	--
+q(77894),	--
+q(77898),	--
+q(77899),	--
+q(77900),	--
+q(77901),	--
+q(77902),	--
+q(77903),	--
+q(77904),	--
+q(77905),	--
+q(77906),	--
+q(77907),	--
+q(78068),	-- Q1 Breadcrumb to Exodar
+q(78069),	--
+q(78070),	--
+q(78071),	--
+q(78072),	--
+q(78073),	--
+q(78074),	--
+q(78075),	--
+q(78076),	--
+q(78077),	--
+q(78078),	--
+q(78079),	--
+q(78080),	--
+q(78081),	--
+q(78082),	--
+q(78083),	--
+q(78179),	--
+q(79474),	--
+q(80059),	--
+q(80060),	--
+q(80061),	--
+q(80064),	--
+q(80065),	--
+q(80066),	--

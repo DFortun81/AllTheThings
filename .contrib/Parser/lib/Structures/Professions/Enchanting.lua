@@ -1,8 +1,6 @@
 ----------------
 -- ENCHANTING --
 ----------------
-local WEAPON_ENCHANTMENTS = 652;
-local ARMOR_ENCHANTMENTS = 657;
 local HEAVENLY_SHARD = 52721;
 local MAELSTORM_CRYSTAL = 52722
 local SECRET_OF_DRAENOR_ENCHANTING = 119293;
@@ -10,36 +8,48 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = {
 	r(7411, {	-- Enchanting (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
 		-- #endif
 		["rank"] = 1,
 	}),
 	r(7412, {	-- Enchanting (Journeyman)
-		["timeline"]={ "removed 8.0.1" },
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
 		-- #endif
 		["rank"] = 2,
 	}),
 	r(7413, {	-- Enchanting (Expert)
-		["timeline"]={ "removed 8.0.1" },
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+		end]],
+		-- #else
+		["lvl"] = 20,
+		-- #endif
 		-- #endif
 		["rank"] = 3,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264455, {["timeline"]={"added 8.0.1"}})),	-- Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264455, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Enchanting
 	applyclassicphase(BFA_PHASE_ONE, r(300381, {	-- Disenchant
 		["collectible"] = false,
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 	})),
 	r(13262, {	-- Disenchant
 		["collectible"] = false,
 	}),
-	cat(ARMOR_ENCHANTMENTS, {
+	n(ARMOR_ENCHANTMENTS, {
 		r(7857),	-- Health
 		r(13538),	-- Lesser Absorption
-		applyclassicphase(WRATH_PHASE_ONE, r(63746, {["timeline"]={"added 3.1.0"}})),	-- Lesser Accuracy
-		r(7861, {["timeline"]={"removed 5.0.4"}}),	-- Lesser Fire Resistance
+		applyclassicphase(WRATH_PHASE_ONE, r(63746, {["timeline"] = {ADDED_3_1_0}})),	-- Lesser Accuracy
+		r(7861, {["timeline"] = {REMOVED_5_0_4}}),	-- Lesser Fire Resistance
 		r(7748),	-- Lesser Health
 		r(13622),	-- Lesser Intellect
 		r(13421),	-- Lesser Protection
@@ -51,7 +61,7 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = {
 		r(7418),	-- Minor Health[Bracer]
 		r(7420),	-- Minor Health[Chest]
 		r(7771),	-- Minor Protection
-		r(7454, {["timeline"]={"removed 5.0.4"}}),	-- Minor Resistance
+		r(7454, {["timeline"] = {REMOVED_5_0_4}}),	-- Minor Resistance
 		r(7863),	-- Minor Stamina[Boot]
 		r(7457),	-- Minor Stamina[Bracer]
 		r(13626),	-- Minor Stats
@@ -59,7 +69,7 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = {
 		r(20023),	-- Greater Agility[Boot]
 		r(20012),	-- Greater Agility[Glove]
 		r(20008),	-- Greater Intellect
-		r(20014, {["timeline"]={"removed 5.0.4"}}),	-- Greater Resistance
+		r(20014, {["timeline"] = {REMOVED_5_0_4}}),	-- Greater Resistance
 		r(20013),	-- Greater Strength
 		r(20028),	-- Major Mana
 		-- #endif
@@ -69,15 +79,15 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = {
 	}),
 	filter(MISC, {
 		r(7421),	-- Runed Copper Rod
-		r(13628, {["timeline"]={"removed 5.0.4"}}),	-- Runed Gold Rod
-		r(7795, {["timeline"]={"removed 5.0.4"}}),	-- Runed Silver Rod
-		applyclassicphase(LEGION_PHASE_ONE, r(217637, {["timeline"]={"added 7.0.3"}})),	-- Tome of Illusions: Azeroth
+		r(13628, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Gold Rod
+		r(7795, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Silver Rod
+		applyclassicphase(LEGION_PHASE_ONE, r(217637, {["timeline"] = {ADDED_7_0_3_LAUNCH}})),	-- Tome of Illusions: Azeroth
 	}),
 	n(WEAPONS, {
 		r(14807),	-- Greater Magic Wand
 		r(14293),	-- Lesser Magic Wand
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(13529),	-- Lesser Impact
 		r(13485),	-- Lesser Spirit / Lesser Versatility[LEGION+]
 		r(13503),	-- Lesser Striking
@@ -91,17 +101,25 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = {
 };
 EXPERT_ARTISAN_ENCHANTING = {
 	r(13920, {	-- Enchanting (Artisan)
-		["timeline"]={ "removed 8.0.1" },
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+		end]],
+		-- #else
+		["lvl"] = 35,
+		-- #endif
 		-- #endif
 		["rank"] = 4,
 	}),
-	cat(ARMOR_ENCHANTMENTS, {
+	n(ARMOR_ENCHANTMENTS, {
 		r(13935),	-- Agility[Boot]
 		r(13815),	-- Agility[Glove]
 		r(13635),	-- Defense
-		r(13657, {["timeline"]={"removed 5.0.4"}}),	-- Fire Resistance
+		r(13657, {["timeline"] = {REMOVED_5_0_4}}),	-- Fire Resistance
 		r(13746),	-- Greater Defense
 		r(13640),	-- Greater Health
 		r(13663),	-- Greater Mana
@@ -112,7 +130,7 @@ EXPERT_ARTISAN_ENCHANTING = {
 		r(13700),	-- Lesser Stats
 		r(13948),	-- Minor Haste
 		r(13890),	-- Minor Speed
-		r(13794, {["timeline"]={"removed 5.0.4"}}),	-- Resistance
+		r(13794, {["timeline"] = {REMOVED_5_0_4}}),	-- Resistance
 		r(13642),	-- Spirit / Versatility[LEGION+]
 		r(13836),	-- Stamina[Boot]
 		r(13648),	-- Stamina[Bracer]
@@ -125,13 +143,13 @@ EXPERT_ARTISAN_ENCHANTING = {
 	filter(MISC, {
 		r(17181),	-- Enchanted Leather
 		r(17180),	-- Enchanted Thorium Bar
-		r(13702, {["timeline"]={"removed 5.0.4"}}),	-- Runed Truesilver Rod
+		r(13702, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Truesilver Rod
 	}),
 	n(WEAPONS, {
 		r(14810),	-- Greater Mystic Wand
 		r(14809),	-- Lesser Mystic Wand
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(13937),	-- Greater Impact
 		r(13905),	-- Greater Spirit / Greater Versatility[LEGION+]
 		r(13943),	-- Greater Striking
@@ -148,20 +166,22 @@ EXPERT_ARTISAN_ENCHANTING
 	{}
 -- #endif
 );
-TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, {
+TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28029, {	-- Enchanting (Master)
-		["timeline"]={ "added 2.0.1", "removed 8.0.1" },
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
 		-- #endif
 		["rank"] = 5,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264460, {["timeline"]={"added 8.0.1"}})),	-- Outland Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264460, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Enchanting
 	applyclassicphase(BFA_PHASE_ONE, r(300382, {	-- Disenchant
 		["collectible"] = false,
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 	})),
-	cat(ARMOR_ENCHANTMENTS, {
+	n(ARMOR_ENCHANTMENTS, {
 		r(33996),	-- Assault
 		r(33993),	-- Blasting
 		r(27899),	-- Brawn
@@ -176,35 +196,37 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		r(27905),	-- Stats
 	}),
 	filter(MISC, {
-		r(42615, {["timeline"]={"added 2.2.0"}}),	-- Small Prismatic Shard
-		r(42613, {["timeline"]={"added 2.2.0","removed 7.3.5"}}),	-- Nexus Transformation
+		r(42615, {["timeline"] = {ADDED_2_2_0}}),	-- Small Prismatic Shard
+		r(42613, {["timeline"] = {ADDED_2_2_0, REMOVED_7_3_5}}),	-- Nexus Transformation
 		r(28027),	-- Prismatic Sphere
-		r(32664, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Runed Fel Iron Rod
-		applyclassicphase(LEGION_PHASE_ONE, r(217641, {["timeline"]={"added 7.0.3"}})),	-- Tome of Illusions: Outland
+		r(32664, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Fel Iron Rod
+		applyclassicphase(LEGION_PHASE_ONE, r(217641, {["timeline"] = {ADDED_7_0_3_LAUNCH}})),	-- Tome of Illusions: Outland
 		r(28028),	-- Void Sphere
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
-		r(44383, {["timeline"]={"added 2.3.0"}}),	-- Resilience / Armor[MOP+]
+	n(WEAPON_ENCHANTMENTS, {
+		r(44383, {["timeline"] = {ADDED_2_3_0}}),	-- Resilience / Armor[MOP+]
 		r(27944),	-- Tough Shield / Lesser Dodge[CATA+]
 	}),
 }));
-WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
+WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
 	r(51313, {	-- Enchanting (Grand Master)
-		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
+		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 65,
 		-- #endif
 		["rank"] = 6,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264462, {["timeline"]={"added 8.0.1"}})),	-- Northrend Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264462, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Enchanting
 	applyclassicphase(BFA_PHASE_ONE, r(302690, {	-- Disenchant
 		["collectible"] = false,
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 	})),
-	cat(ARMOR_ENCHANTMENTS, {
-		r(60606, {["timeline"]={"added 3.1.0"}}),	-- Assault[Boot]
-		r(44645, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Assault[Ring]
-		r(60668, {["timeline"]={"added 3.1.0"}}),	-- Crusher
+	n(ARMOR_ENCHANTMENTS, {
+		r(60606, {["timeline"] = {ADDED_3_1_0}}),	-- Assault[Boot]
+		r(44645, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Assault[Ring]
+		r(60668, {["timeline"] = {ADDED_3_1_0}}),	-- Crusher
 		r(44555),	-- Exceptional Intellect
 		r(27958),	-- Exceptional Mana
 		r(44592),	-- Exceptional Spellpower
@@ -216,56 +238,56 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(44528),	-- Greater Fortitude
 		r(44509),	-- Greater Mana Restoration / Greater Versatility[LEGION+]
 		r(44635),	-- Greater Spellpower[Bracer]
-		r(44636, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Greater Spellpower[Ring]
+		r(44636, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Greater Spellpower[Ring]
 		r(44508),	-- Greater Spirit / Greater Versatility[LEGION+]
 		r(44616),	-- Greater Stats
 		r(44584),	-- Greater Vitality
-		r(60623, {["timeline"]={"added 3.1.0"}}),	-- Icewalker
-		r(60663, {["timeline"]={"added 3.1.0"}}),	-- Major Agility[Cloak]
+		r(60623, {["timeline"] = {ADDED_3_1_0}}),	-- Icewalker
+		r(60663, {["timeline"] = {ADDED_3_1_0}}),	-- Major Agility[Cloak]
 		r(44529),	-- Major Agility[Glove]
 		r(44593),	-- Major Spirit / Major Versatility[LEGION+]
 		r(44492),	-- Mighty Health
 		r(44582),	-- Minor Power
 		r(44488),	-- Precision
-		r(60609, {["timeline"]={"added 3.1.0"}}),	-- Speed
-		r(59636, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Stamina[Ring]
-		r(60616, {["timeline"]={"added 3.1.0"}}),	-- Striking / Assault[MOP+]
-		r(47900, {["timeline"]={"added 3.1.0"}}),	-- Super Health
+		r(60609, {["timeline"] = {ADDED_3_1_0}}),	-- Speed
+		r(59636, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Stamina[Ring]
+		r(60616, {["timeline"] = {ADDED_3_1_0}}),	-- Striking / Assault[MOP+]
+		r(47900, {["timeline"] = {ADDED_3_1_0}}),	-- Super Health
 		r(44623),	-- Super Stats
 		r(44589),	-- Superior Agility[Boot]
 		r(44500),	-- Superior Agility[Cloak]
 	}),
 	filter(MISC, {
-		applyclassicphase(WRATH_PHASE_THREE, r(69412, {["timeline"]={"added 3.2.2"}})),	-- Abyssal Shatter
-		r(60619, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Runed Titanium Rod
-		applyclassicphase(LEGION_PHASE_ONE, r(217644, {["timeline"]={"added 7.0.3"}})),	-- Tome of Illusions: Northrend
+		applyclassicphase(WRATH_PHASE_THREE, r(69412, {["timeline"] = {ADDED_3_2_2}})),	-- Abyssal Shatter
+		r(60619, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Runed Titanium Rod
+		applyclassicphase(LEGION_PHASE_ONE, r(217644, {["timeline"] = {ADDED_7_0_3_LAUNCH}})),	-- Tome of Illusions: Northrend
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(44489),	-- Defense / Dodge[CATA+]
 		r(44633),	-- Exceptional Agility
 		r(44629),	-- Exceptional Spellpower
 		r(44510),	-- Exceptional Spirit / Exceptional Versatility[LEGION+]
-		r(60653, {["timeline"]={"added 3.1.0"}}),	-- Greater Intellect
-		r(60621, {["timeline"]={"added 3.1.0"}}),	-- Greater Potency
+		r(60653, {["timeline"] = {ADDED_3_1_0}}),	-- Greater Intellect
+		r(60621, {["timeline"] = {ADDED_3_1_0}}),	-- Greater Potency
 		r(44630),	-- Greater Savagery
-		r(62959, {["timeline"]={"added 3.1.0"}}),	-- Spellpower
+		r(62959, {["timeline"] = {ADDED_3_1_0}}),	-- Spellpower
 	}),
 }));
-CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
+CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3 } }, {
 	r(74258, {	-- Enchanting (Illustrious)
-		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
+		["timeline"] = { ADDED_4_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 7,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264464, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264464, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Enchanting
 	applyclassicphase(BFA_PHASE_ONE, r(302691, {	-- Disenchant
 		["collectible"] = false,
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 	})),
-	cat(ARMOR_ENCHANTMENTS, {
-		r(74216, {["timeline"]={"added 4.0.3","removed 6.0.2"}}),	-- Agility
+	n(ARMOR_ENCHANTMENTS, {
+		r(74216, {["timeline"] = {ADDED_4_0_3, REMOVED_6_0_2}}),	-- Agility
 		r(74201),	-- Critical Strike[Bracer]
 		r(74230),	-- Critical Strike[Cloak]
 		r(74189),	-- Earthen Vitality
@@ -275,11 +297,11 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = 
 		r(74239),	-- Greater Haste[Bracer]
 		r(74220),	-- Greater Haste[Glove]
 		r(74240),	-- Greater Intellect
-		r(74218, {["timeline"]={"added 4.0.3","removed 6.0.2"}}),	-- Greater Stamina
+		r(74218, {["timeline"] = {ADDED_4_0_3, REMOVED_6_0_2}}),	-- Greater Stamina
 		r(74199),	-- Haste[Boot]
 		r(74198),	-- Haste[Glove]
 		r(74202),	-- Intellect[Cloak]
-		r(74217, {["timeline"]={"added 4.0.3","removed 6.0.2"}}),	-- Intellect[Ring]
+		r(74217, {["timeline"] = {ADDED_4_0_3, REMOVED_6_0_2}}),	-- Intellect[Ring]
 		r(74192),	-- Lesser Power
 		r(74213),	-- Major Agility
 		r(74238),	-- Mastery[Boot]
@@ -291,14 +313,14 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = 
 		r(74234),	-- Protection
 		r(74193),	-- Speed
 		r(74200),	-- Stamina
-		r(74215, {["timeline"]={"added 4.0.3","removed 6.0.2"}}),	-- Strength
+		r(74215, {["timeline"] = {ADDED_4_0_3, REMOVED_6_0_2}}),	-- Strength
 		r(74229),	-- Superior Dodge
 	}),
 	filter(MISC, {
-		r(104698, {["timeline"]={"added 4.3.0"}}),	-- Maelstrom Shatter
-		r(217645, {["timeline"]={"added 7.0.3"}}),	-- Tome of Illusions: Cataclysm
+		r(104698, {["timeline"] = {ADDED_4_0_3}}),	-- Maelstrom Shatter
+		r(217645, {["timeline"] = {ADDED_7_0_3}}),	-- Tome of Illusions: Cataclysm
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(74197),	-- Avalanche
 		r(74211),	-- Elemental Slayer
 		r(74225),	-- Heartsong
@@ -310,73 +332,73 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = 
 		r(74235),	-- Superior Intellect
 	}),
 }));
-COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { "added 4.0.3" } }, {
+COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3 } }, {
 	i(64411, {	-- Formula: Enchant Boots - Assassin's Step (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(64412, {	-- Formula: Enchant Boots - Lavawalker (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(64413, {	-- Formula: Enchant Bracer - Greater Speed (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(52740, {	-- Formula: Enchant Chest - Greater Stamina (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(52739, {	-- Formula: Enchant Chest - Peerless Stats (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(64414, {	-- Formula: Enchant Gloves - Greater Mastery (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(64415, {	-- Formula: Enchant Gloves - Mighty Strength (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 5 }},
 	}),
 	i(52736, {	-- Formula: Enchant Weapon - Landslide (RECIPE!)
-		["cost"] = { { "i", MAELSTORM_CRYSTAL, 5 } },
+		["cost"] = {{ "i", MAELSTORM_CRYSTAL, 5 }},
 	}),
 	i(52733, {	-- Formula: Enchant Weapon - Power Torrent (RECIPE!)
-		["cost"] = { { "i", MAELSTORM_CRYSTAL, 5 } },
+		["cost"] = {{ "i", MAELSTORM_CRYSTAL, 5 }},
 	}),
 	i(52735, {	-- Formula: Enchant Weapon - Windwalk (RECIPE!)
-		["cost"] = { { "i", MAELSTORM_CRYSTAL, 5 } },
+		["cost"] = {{ "i", MAELSTORM_CRYSTAL, 5 }},
 	}),
 	i(65359, {	-- Formula: Runed Elementium Rod (RECIPE!)
-		["cost"] = { { "i", HEAVENLY_SHARD, 1 } },
-		["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+		["cost"] = {{ "i", HEAVENLY_SHARD, 1 }},
+		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 }));
-MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
+MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110400, {	-- Enchanting (Zen Master)
-		["timeline"]={ "added 5.0.4", "removed 8.0.1" },
+		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 8,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264467, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264467, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Enchanting
 	applyclassicphase(BFA_PHASE_ONE, r(302692, {	-- Disenchant
 		["collectible"] = false,
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 	})),
-	cat(ARMOR_ENCHANTMENTS, {
+	n(ARMOR_ENCHANTMENTS, {
 		r(104398),	-- Accuracy
 		r(104409),	-- Blurred Speed
 		r(104395),	-- Glorious Stats
-		r(103461, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Agility
+		r(103461, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Greater Agility
 		r(104407),	-- Greater Haste[Boot]
 		r(104416),	-- Greater Haste[Glove]
-		r(103462, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Intellect
+		r(103462, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Greater Intellect
 		r(104408),	-- Greater Precision
 		r(104401),	-- Greater Protection
-		r(103463, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Stamina
-		r(103465, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Strength
+		r(103463, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Greater Stamina
+		r(103465, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Greater Strength
 		r(104385),	-- Major Dodge
 		r(104338),	-- Mastery
 		r(104393),	-- Mighty Versatility
@@ -396,9 +418,9 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		r(116497),	-- Mysterious Essence
 		r(116499),	-- Sha Crystal
 		r(118239),	-- Sha Shatter
-		r(217650, {["timeline"]={"added 7.0.3"}}),	-- Tome of Illusions: Pandaria
+		r(217650, {["timeline"] = {ADDED_7_0_3}}),	-- Tome of Illusions: Pandaria
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(104440),	-- Colossus
 		r(104430),	-- Elemental Force
 		r(130758),	-- Greater Parry
@@ -406,26 +428,26 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		r(104425),	-- Windsong
 	}),
 }));
-DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 	["filterID"] = MISC,
 	["g"] = {
 		r(158716, {	-- Enchanting (Draenor Master)
-			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #endif
 			["rank"] = 9,
 		}),
-		applyclassicphase(BFA_PHASE_ONE, r(264469, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
+		applyclassicphase(BFA_PHASE_ONE, r(264469, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Enchanting
 		applyclassicphase(BFA_PHASE_ONE, r(302693, {	-- Disenchant
-		["collectible"] = false,
-		["timeline"] = { "added 8.0.1" },
-	})),
+			["collectible"] = false,
+			["timeline"] = { ADDED_8_0_1_LAUNCH },
+		})),
 		r(158907),	-- Breath of Critical Strike
 		r(158908),	-- Breath of Haste
 		r(158909),	-- Breath of Mastery
-		r(158910, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+		r(158910, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Breath of Multistrike
 		r(158911),	-- Breath of Versatility
 		r(162948),	-- Enchanted Dust
 		r(169091),	-- Luminous Shard
@@ -434,113 +456,113 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 		r(159236),	-- Mark of the Shattered Hand
 	},
 })));
-COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { "added 6.0.2" } }, {
+COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	i(118394, {	-- Formula: Enchant Cloak - Breath of Critical Strike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118429, {	-- Formula: Enchant Cloak - Breath of Haste (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118430, {	-- Formula: Enchant Cloak - Breath of Mastery (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118431, {	-- Formula: Enchant Cloak - Breath of Multistrike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
-		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 },
 	}),
 	i(118432, {	-- Formula: Enchant Cloak - Breath of Versatility (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118433, {	-- Formula: Enchant Cloak - Gift of Critical Strike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118434, {	-- Formula: Enchant Cloak - Gift of Haste (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118435, {	-- Formula: Enchant Cloak - Gift of Mastery (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118436, {	-- Formula: Enchant Cloak - Gift of Multistrike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
-		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 },
 	}),
 	i(118437, {	-- Formula: Enchant Cloak - Gift of Versatility (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118438, {	-- Formula: Enchant Neck - Breath of Critical Strike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118439, {	-- Formula: Enchant Neck - Breath of Haste (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118440, {	-- Formula: Enchant Neck - Breath of Mastery (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118441, {	-- Formula: Enchant Neck - Breath of Multistrike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
-		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 },
 	}),
 	i(118442, {	-- Formula: Enchant Neck - Breath of Versatility (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118443, {	-- Formula: Enchant Neck - Gift of Critical Strike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118444, {	-- Formula: Enchant Neck - Gift of Haste (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118445, {	-- Formula: Enchant Neck - Gift of Mastery (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118446, {	-- Formula: Enchant Neck - Gift of Multistrike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
-		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 },
 	}),
 	i(118447, {	-- Formula: Enchant Neck - Gift of Versatility (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118453, {	-- Formula: Enchant Ring - Gift of Critical Strike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118454, {	-- Formula: Enchant Ring - Gift of Haste (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118455, {	-- Formula: Enchant Ring - Gift of Mastery (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118456, {	-- Formula: Enchant Ring - Gift of Multistrike (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
-		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 },
 	}),
 	i(118457, {	-- Formula: Enchant Ring - Gift of Versatility (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
 	}),
 	i(118463, {	-- Formula: Enchant Weapon - Mark of Blackrock (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 5 }},
 	}),
 	i(118467, {	-- Formula: Enchant Weapon - Mark of Bleeding Hollow (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 5 }},
 	}),
 	i(118462, {	-- Formula: Enchant Weapon - Mark of Shadowmoon (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 5 }},
 	}),
 	i(118461, {	-- Formula: Enchant Weapon - Mark of the Frostwolf (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 5 }},
 	}),
 	i(118458, {	-- Formula: Enchant Weapon - Mark of the Thunderlord (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 5 }},
 	}),
 	i(118460, {	-- Formula: Enchant Weapon - Mark of Warsong (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 5 }},
 	}),
 	i(138882, {	-- Formula: Tome of Illusions: Draenor (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
-		["timeline"] = { "added 7.0.3" },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENCHANTING, 1 }},
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 }));
-BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { "added 8.0.1" } }, {
-	r(302695),	-- Disenchant
-	cat(ARMOR_ENCHANTMENTS, {
+BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	r(302695, {["collectible"] = false}),	-- Disenchant
+	n(ARMOR_ENCHANTMENTS, {
 		r(271433),	-- Cooled Hearthing
 		r(255075),	-- Pact of Critical Strike [Rank 1]
 		r(255090),	-- Pact of Critical Strike [Rank 2]
@@ -561,22 +583,22 @@ BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { 
 		r(255089),	-- Seal of Versatility [Rank 2]
 	}),
 	filter(MISC, {
-		r(287270, {["timeline"]={"added 8.1.0"}}),	-- Aqueous Invocation
+		r(287270, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Invocation
 		r(278418),	-- Disenchanting Rod
-		r(286665, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Expulsion
-		r(286644, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Invocation
-		r(290360, {["timeline"]={"added 8.1.0"}}),	-- Umbra Shatter
-		r(290361, {["timeline"]={"added 8.1.0"}}),	-- Veiled Shatter
+		r(286665, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Expulsion
+		r(286644, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Invocation
+		r(290360, {["timeline"] = {ADDED_8_1_0}}),	-- Umbra Shatter
+		r(290361, {["timeline"] = {ADDED_8_1_0}}),	-- Veiled Shatter
 	}),
 	n(WEAPONS, {
 		r(265110),	-- Enchanter's Sorcerous Scepter [Rank 1]
 		r(265111),	-- Enchanter's Sorcerous Scepter [Rank 2]
 		r(265106),	-- Enchanter's Umbral Wand
 		r(269715),	-- Honorable Combatant's Sorcerous Scepter [Rank 1]
-		r(282851, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Sorcerous Scepter [Rank 1]
-		r(305936, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Sorcerous Scepter [Rank 1]
+		r(282851, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Sorcerous Scepter [Rank 1]
+		r(305936, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Sorcerous Scepter [Rank 1]
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(255103),	-- Coastal Surge [Rank 1]
 		r(255104),	-- Coastal Surge [Rank 2]
 		r(268907),	-- Deadly Navigation [Rank 1]
@@ -597,8 +619,8 @@ BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { 
 		r(268878),	-- Versatile Navigation [Rank 2]
 	}),
 }));
-NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { "added 8.2.0" } }, {
-	cat(ARMOR_ENCHANTMENTS, {
+NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { ADDED_8_2_0 } }, {
+	n(ARMOR_ENCHANTMENTS, {
 		r(298009),	-- Accord of Critical Strike [Rank 1]
 		r(298010),	-- Accord of Critical Strike [Rank 2]
 		r(297989),	-- Accord of Haste [Rank 1]
@@ -614,7 +636,7 @@ NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline
 	n(WEAPONS, {
 		r(294781),	-- Notorious Combatant's Sorcerous Scepter [Rank 1]
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(298440),	-- Force Multiplier [Rank 1]
 		r(298439),	-- Force Multiplier [Rank 2]
 		r(298433),	-- Machinist's Brilliance [Rank 1]
@@ -628,7 +650,7 @@ NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline
 SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309832),	-- Shadowlands Enchanting
 	r(324750, {["collectible"] = false}),	-- Disenchant
-	cat(ARMOR_ENCHANTMENTS, {
+	n(ARMOR_ENCHANTMENTS, {
 		r(309532),	-- Agile Soulwalker
 		r(309612),	-- Bargain of Critical Strike
 		r(309613),	-- Bargain of Haste
@@ -668,7 +690,7 @@ SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline
 	n(WEAPONS, {
 		r(265105),	-- Enchanted Twilight Wand
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(309622),	-- Ascended Vigor
 		r(309627),	-- Celestial Guidance
 		r(309621),	-- Eternal Grace
@@ -679,7 +701,7 @@ SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline
 DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366255),	-- Dragon Isles Enchanting
 	r(392888, {["collectible"] = false}),	-- Disenchant
-	cat(ARMOR_ENCHANTMENTS, {
+	n(ARMOR_ENCHANTMENTS, {
 		r(389292),	-- Devotion of Critical Strike
 		r(389293),	-- Devotion of Haste
 		r(389294),	-- Devotion of Mastery
@@ -711,7 +733,7 @@ DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { AD
 	n(WEAPONS, {
 		r(391176),	-- Enchanted Writhebark Wand
 	}),
-	cat(WEAPON_ENCHANTMENTS, {
+	n(WEAPON_ENCHANTMENTS, {
 		r(389537),	-- Burning Writ
 		r(389540),	-- Earthen Writ
 		r(389543),	-- Frozen Writ

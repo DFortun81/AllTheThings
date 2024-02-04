@@ -21,12 +21,21 @@ EVENTS = {
 	-- Micro-Holidays
 	CALL_OF_THE_SCARAB = 638,
 	FREE_T_SHIRT_DAY = 1053,
-	KALIMDOR_CUP = 1395,
 	MARCH_OF_THE_TADPOLES = 647,
-	SECRETS_OF_AZEROTH = 1396,
+--	SECRETS_OF_AZEROTH = 1396,	-- No longer needed as the event is always active now.
 	THE_GREAT_GNOMEREGAN_RUN = 696,
 	THOUSAND_BOAT_BASH = 642,
 	TRIAL_OF_STYLE = 691,
+
+	-- Dragonriding Cups
+	-- Note: These need to all be referenced in src\Modules\Events.lua
+	DRAGONRIDING_CUP = 133701,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!]
+	KALIMDOR_CUP = 1395,
+	EASTERN_KINGDOMS_CUP = 1400,
+	OUTLAND_CUP = 1407,
+	NORTHREND_CUP = 1429,
+	PANDARIA_CUP = 1430,
+	BROKEN_ISLES_CUP = 1431,
 
 	-- No event file exists for these yet. (and maybe they don't need to?)
 	AUCTION_HOUSE_DANCE_PARTY = 692,

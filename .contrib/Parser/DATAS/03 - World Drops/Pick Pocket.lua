@@ -6,6 +6,36 @@ root(ROOTS.WorldDrops, {
 	header(HEADERS.Spell, 921, {	-- Pick Pocket
 		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
 		["groups"] = {
+			tier(CLASSIC_TIER, {
+				-- #if NOT ANYCLASSIC
+				i(6150, {	-- A Frayed Knot
+					["description"] = "Can be pickpocketed from Classic humanoids.",
+				}),
+				-- #endif
+			}),
+			tier(WOTLK_TIER, {
+				filter(TOYS, {
+					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
+						["description"] = "Can be pickpocketed from Northrend humanoids.",
+						["timeline"] = { "added 3.0.1.8681" },
+						["_drop"] = { "f" },	-- Drop Consumable
+					}),
+					i(36862, {	-- Worn Troll Dice (TOY!)
+						["description"] = "Can be pickpocketed from Northrend humanoids.",
+						["timeline"] = { "added 3.0.1.8788" },
+						["_drop"] = { "f" },	-- Drop Consumable
+					}),
+				}),
+			}),
+			tier(CATA_TIER, {
+				filter(TOYS, {
+					i(63269, {	-- Loaded Gnomish Dice (TOY!)
+						["description"] = "Can be pickpocketed from Cataclysm humanoids.",
+						["timeline"] = { "added 4.0.1.12941" },
+						["_drop"] = { "f" },	-- Drop Consumable
+					}),
+				}),
+			}),
 			tier(WOD_TIER, {
 				q(39107, {	-- An Even Bigga Score
 					["qg"] = 83006,	-- Griftah
@@ -60,28 +90,6 @@ root(ROOTS.WorldDrops, {
 				i(151147),	-- Charmed Pendant	10
 				i(151146),	-- Charmed Band
 			}),
-			filter(TOYS, {
-				i(36863, {	-- Decahedral Dwarven Dice (TOY!)
-					["description"] = "Can be pickpocketed from Northrend humanoids.",
-					["timeline"] = { "added 3.0.1.8681" },
-					["_drop"] = { "f" },	-- Drop Consumable
-				}),
-				i(63269, {	-- Loaded Gnomish Dice (TOY!)
-					["description"] = "Can be pickpocketed from Cataclysm humanoids.",
-					["timeline"] = { "added 4.0.1.12941" },
-					["_drop"] = { "f" },	-- Drop Consumable
-				}),
-				i(36862, {	-- Worn Troll Dice (TOY!)
-					["description"] = "Can be pickpocketed from Northrend humanoids.",
-					["timeline"] = { "added 3.0.1.8788" },
-					["_drop"] = { "f" },	-- Drop Consumable
-				}),
-			}),
-			-- #if NOT ANYCLASSIC
-			i(6150, {	-- A Frayed Knot
-				["description"] = "Can be pickpocketed from Classic humanoids.",
-			}),
-			-- #endif
 		},
 	}),
 });

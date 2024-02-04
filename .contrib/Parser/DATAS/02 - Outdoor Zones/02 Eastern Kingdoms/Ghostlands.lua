@@ -4,8 +4,8 @@
 -- CRIEVE NOTE: Don't touch this file without asking. <-- Did someone forget?
 -- Burden of Truth: Classic & TBC.
 local MASTER_CHEF_GROUPS = {
-	i(27687),	-- Recipe: Bat Bites
-	i(22647),	-- Recipe: Crunchy Spider Surprise
+	i(27687),	-- Recipe: Bat Bites (RECIPE!)
+	i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 };
 local RATHIS_TOMBER_GROUPS = {};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_ghostlands",
 		-- #endif
+		["timeline"] = { "added 2.0.1.6180" },
 		["lvl"] = lvlsquish(10, 10, 1),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -26,6 +27,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				ach(4908, {	-- Ghostlands Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Citizens of Tranquillien
 							["sourceQuests"] = {
@@ -65,6 +67,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -77,7 +80,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}},
 				["groups"] = {
 					pet(461),	-- Larva (PET!)
-					pet(463, { -- Spirit Crab (PET!)
+					pet(463, {	-- Spirit Crab (PET!)
 						["description"] = "Found along the western coastline and on the little island.",
 					}),
 				},
@@ -314,6 +317,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				q(9460, {	-- Combining Forces
+					["qg"] = 17224,	-- Keltus Darkleaf
+					["sourceQuest"] = 9532, 	-- Find Keltus Darkleaf
+					["coord"] = { 33, 11.2, GHOSTLANDS },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["classes"] = { ROGUE },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(10, 10, 1),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lacy Handkerchief
+							["provider"] = { "i", 23686 },	-- Lacy Handkerchief
+							["coord"] = { 38.4, 13.6, GHOSTLANDS },
+							["cr"] = 17210,	-- Sentinel Leader
+						}),
+					},
+				}),
 				q(9171, {	-- Culinary Crunch
 					["qg"] = 16253,	-- Master Chef Mouldier
 					["sourceQuest"] = 9138,	-- Suncrown Village
@@ -324,7 +343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 1),
 					["groups"] = {
-						i(22647),	-- Recipe: Crunchy Spider Surprise
+						i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 						i(22645),	-- Crunchy Spider Surprise
 					},
 				}),
@@ -461,6 +480,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(131248),	-- Troll Kickers (Mail)
 						-- #endif
 					},
+				}),
+				q(9532, {	-- Find Keltus Darkleaf
+					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
+					["coord"] = { 79.6, 52, SILVERMOON_CITY },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["classes"] = { ROGUE },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #if BEFORE WRATH
 				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
@@ -747,6 +774,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						objective(2, {	-- 0/10 Fallen Ranger slain
 							["provider"] = { "n", 16314 },	-- Fallen Ranger
+						}),
+					},
+				}),
+				q(9618, {	-- Return the Reports
+					["providers"] = {
+						{ "n", 17224 },	-- Keltus Darkleaf
+						{ "i", 23919 },	-- Stack of Reports
+					},
+					["sourceQuest"] = 9460,	-- Combining Forces
+					["coord"] = { 33, 11.2, GHOSTLANDS },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["maps"] = { SILVERMOON_CITY },
+					["classes"] = { ROGUE },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(10, 10, 1),
+					["groups"] = {
+						i(7298, {	-- Blade of Cunning
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -1321,8 +1366,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 -- #if AFTER WRATH
 -- Add the 2 recipes that aren't TBC Phase One, they get added to his loot table in Wrath.
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(MASTER_CHEF_GROUPS, o); end
 -- #endif
 

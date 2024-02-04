@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["lvl"] = 110,
 			}),
 			q(48460, {	-- The Wranglers
-				["sourceQuests"] = { 48199 },	-- The Burning Heart
+				["sourceQuests"] = { 46732 },	-- The Prophet's Gambit
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["coord"] = { 56.4, 67.5, KROKUUN },

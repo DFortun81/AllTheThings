@@ -125,6 +125,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		-- #if BEFORE MOP
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
 		-- #endif
+		["zone-text-areas"] = {
+			2557,	-- Dire Maul
+			3217,	-- "The Maul" now points to Dire Maul.
+			-- #if AFTER CATA
+			-- This areaID doesn't exist until Cataclysm!
+			4992,	-- "Broken Commons" now points to Dire Maul.
+			-- #endif
+		},
 		["mapID"] = DIRE_MAUL,
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
@@ -169,7 +177,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["OnTooltip"] = OnTooltipForShendralar,
 					-- #endif
 				}),
-				-- #if BEFORE 4.0.3
 				faction(169, {	-- Steamweedle Cartel
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForSteamweedle,
@@ -181,8 +188,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						THE_BARRENS,
 						WINTERSPRING,
 					},
+					-- #if AFTER 4.0.3
+						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+						["collectible"] = false,
+					-- #endif
 				}),
-				-- #endif
 			}),
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
@@ -303,6 +313,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							["classes"] = { WARLOCK },
 						}),
 						mount(23161, {	-- Dreadsteed (MOUNT!)
+							["providers"] = {
+								{ "n", 14502 },	-- Xorothian Dreadsteed
+								{ "n", 14504 },	-- Dreadsteed Spirit
+							},
 							["classes"] = { WARLOCK },
 						}),
 					},
@@ -800,20 +814,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 					["lvl"] = 56,
 					["groups"] = {
-						{
-							["recipeID"] = 22813,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+						r(22813, {	-- Gordok Ogre Suit
+							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = TAILORING,
-						},
-						{
-							["recipeID"] = 22815,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+						}),
+						r(22815, {	-- Gordok Ogre Suit
+							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = LEATHERWORKING,
-						},
-						{
-							["itemID"] = 18258,	-- Gordok Ogre Suit
+						}),
+						i(18258, {	-- Gordok Ogre Suit
 							["description"] = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
-						},
+						}),
 					},
 				}),
 				q(5519, {	-- The Gordok Ogre Suit
@@ -957,7 +968,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["lvl"] = lvlsquish(39, 39, 15),
 				}),
 				q(7877, {	-- The Treasure of the Shen'dralar
-					["qg"] = 14358,	-- Shen'dralar Ancient
+					["providers"] = {
+						{ "n",  14358 },	-- Shen'dralar Ancient
+						{ "o", 179517 },	-- Treasure of the Shen'dralar
+					},
 					["sourceQuest"] = 7461,	-- The Madness Within
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "removed 4.0.3" },
@@ -975,7 +989,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 				}),
 				q(27111, {	-- The Treasure of the Shen'dralar
-					["qg"] = 14358,	-- Shen'dralar Ancient
+					["providers"] = {
+						{ "n",  14358 },	-- Shen'dralar Ancient
+						{ "o", 179517 },	-- Treasure of the Shen'dralar
+					},
 					["sourceQuest"] = 27110,	-- The Madness Within
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "added 4.0.3" },
@@ -1161,7 +1178,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							i(207297, {	-- Grimoire of the Felblaze Imp (CI!)
 								["timeline"] = { ADDED_10_1_5 },
 							}),
-							i(18267),	-- Recipe: Runn Tum Tuber Surprise
+							i(18267),	-- Recipe: Runn Tum Tuber Surprise (RECIPE!)
 						},
 					}),
 					n(14349, {	-- Pimgib
@@ -1300,7 +1317,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
 				["groups"] = {
-					n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3", ADDED_10_0_5 } }, {
+					n(ZONE_DROPS, bubbleDown({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							["crs"] = {
@@ -1317,8 +1334,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							},
 						}),
 					})),
-					n(QUESTS, {
-						q(77194, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Free Knot!
+					n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+						q(77194, {	-- Free Knot!
 							["qg"] = 14338,	-- Knot Thimblejack
 							["cost"] = {
 								{ "i", 18250, 1 },	-- Gordok Shackle Key
@@ -1335,8 +1352,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 									i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
 								}),
 							},
-						})),
-					}),
+						}),
+					})),
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "The following items can drop from any of the guards.",
 						["crs"] = {
@@ -1434,7 +1451,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						-- #endif
 					}),
 					o(179501, -- Knot Thimblejack's Cache
-						bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
+						bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {
 						["sourceQuest"] = 5525,	-- Free Knot!
 						-- #if BEFORE 4.0.3
 						["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
@@ -1520,6 +1537,18 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							}),
 						},
 					}),
+					n(14338, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Knot Thimblejack
+						["groups"] = {
+							r(22813, {	-- Gordok Ogre Suit
+								["requireSkill"] = TAILORING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+							r(22815, {	-- Gordok Ogre Suit
+								["requireSkill"] = LEATHERWORKING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+						},
+					})),
 					n(14353, {	-- Mizzle the Crafty
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["groups"] = {

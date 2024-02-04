@@ -1,6 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
+	["sym"] = {
+		{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
+		{ "pop" },	-- discard Aspirant / Combatant Gear header
+		{ "pop" },	-- discard item type headers
+		{ "modID", 47 },	-- blue.  still the wrong iLvl because i can't also apply 2, but it looks better
+	},
+})
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(ZULDAZAR, {
 		n(QUESTS, {
@@ -38,14 +46,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -55,14 +56,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -73,14 +67,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -90,14 +77,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -107,14 +87,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -124,14 +97,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -141,14 +107,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -158,14 +117,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -175,14 +127,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -192,14 +137,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(167744, {	-- Aspirant's Equipment Cache
-							["sym"] = {
-								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-								{ "pop" },	-- discard Aspirant / Combatant Gear header
-								{ "pop" },	-- discard item type headers
-								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-							},
-						}),
+						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
@@ -435,7 +373,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 79.2, 42.3, ZULDAZAR },
 			}),
 			q(55244, {	-- Away From the Herd
-				["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2
+				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
 				["provider"] = { "n", 152258 },	-- Child of Torcali
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
@@ -476,8 +414,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(50074, {	-- Brutal Boost
 				["sourceQuests"] = {
 					49801,	-- Aggressive Mating Strategy
-					49814,	-- The Scent for a Brutosaur
-					50154,	-- They Say It's a Delicacy
 				},
 				["provider"] = { "n", 130905 },	-- Cala Cruzpot
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
@@ -587,7 +523,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["cost"] = { { "i", 159139, 1 } },	-- 1x Lightweight Skyterror Barding
 			}),
 			q(55245, {	-- Eat Like a Direhorn
-				["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2
+				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
 				["provider"] = { "n", 152258 },	-- Child of Torcali
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
@@ -1173,7 +1109,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			q(50150, {	-- Setting the Mood
 				["sourceQuests"] = {
-					49801,	-- Aggressive Mating Strategy
 					49814,	-- The Scent for a Brutosaur
 					50154,	-- They Say It's a Delicacy
 				},
@@ -1853,68 +1788,3 @@ root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added
 		q(54738),	-- Loa Changer Jani to Paku
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(158663),	-- Zanchuli Grasps
-				i(161248),	-- Zanchuli Pantaloons
-			}),
-			filter(LEATHER, {
-				i(158655),	-- Jambani Boots
-				i(161249),	-- Jambani Britches
-				i(161243),	-- Jambani Cincture
-				i(158665),	-- Jambani Grasps
-				i(161250),	-- Jambani Leggings
-			}),
-			filter(MAIL, {
-				i(158673),	-- Torcalin Armguards
-				i(161238),	-- Torcalin Bands
-				i(161244),	-- Torcalin Cincture
-				i(158662),	-- Torcalin Grasps
-				i(161251),	-- Torcalin Leggings
-				i(161252),	-- Torcalin Pants
-				i(158656),	-- Torcalin Striders
-			}),
-			filter(PLATE, {
-				i(161254),	-- Rastari Pants
-			}),
-		}),
-		n(WEAPONS, {
-			i(154985),	-- Golden Protectorate
-			i(158576),	-- Golden Protectorate
-			i(154976),	-- Necropolis Sentry's Sword
-			i(154973),	-- Golden Devilsaur Fang
-			i(154975),	-- Scalebeast Claws
-			i(154977),	-- Mojo-Drainer's Staff
-			i(154978),	-- Dinomancy Cudgel
-			i(153641),	-- Manual of Elemental Enchancement
-			i(154986),	-- Devilsaur Voodoo Figure
-			i(154974),	-- Tiki-Thumper
-			i(155582),	-- Loa-Claimer's Warglaives
-			i(158564),	-- Golden Devilsaur Fang
-			i(158566),	-- Scalebeast Claws
-			i(158569),	-- Dinomancy Cudgel
-			i(158577),	-- Devilsaur Voodoo Figure
-			i(161284),	-- Faithless Dinorider's Focus
-			i(161285),	-- Faithless Wingrider's Focus
-			i(158565),	-- Tiki-Thumper
-			i(161311),	-- Crescent of Zak'rajan
-			i(161286),	-- Faithless Dinorider's Shield
-			i(161287),	-- Faithless Wingrider's Shield
-			i(158562),	-- Howdah-Rider's Bow
-			i(154971),	-- Howdah-Rider's Bow
-			i(153642),	-- Manual of Reverse Wounding
-			i(158567),	-- Necropolis Sentry's Sword
-			i(166889),	-- Zandalari Prelate's Lightblade
-			i(158563),	-- Tomb-Rustler's Polearm
-			i(154972),	-- Tomb-Rustler's Polearm
-			i(166887),	-- Pakura Priest Staff
-			i(158568),	-- Mojo-Drainer Staff
-			i(152871),	-- Seapriest's Wand (H)
-			i(152873),	-- Talanji's Salutary Scepter (H)
-			i(158580),	-- Loa-Claimer's Wariglaives
-		}),
-	}),
-});

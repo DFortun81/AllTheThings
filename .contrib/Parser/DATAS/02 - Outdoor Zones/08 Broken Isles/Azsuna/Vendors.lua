@@ -72,7 +72,7 @@ root(ROOTS.Zones, {
 						i(142333, {	-- Manual: Feathered Luffa
 							["cost"] = 6000000,		-- 600g
 						}),
-						i(142331, {	-- Recipe: Spiced Falcosaur Omelet
+						i(142331, {	-- Recipe: Spiced Falcosaur Omelet (RECIPE!)
 							["cost"] = 10000000,	-- 1,000g
 						}),
 						i(137713, {	-- Schematic: Bolt-Action Headgun [Rank 3] (RECIPE!)
@@ -116,13 +116,13 @@ root(ROOTS.Zones, {
 							["g"] = {
 								ach(11175, {	-- Higher Dimensional Learning (Azsuna)
 									i(140493),		-- Adept's Guide to Dimensional Rifting
-									crit(1),		-- Beginner's Guide to Dimensional Rifting Ch. 1 - Navigating Through Time
-									crit(2),		-- Beginner's Guide to Dimensional Rifting Ch. 2 - Holy Places to Many
-									crit(3),		-- Beginner's Guide to Dimensional Rifting Ch. 3 - Water, Just Water
-									crit(4),		-- Beginner's Guide to Dimensional Rifting Ch. 4 - Risks and Rewards
-									crit(5),		-- Beginner's Guide to Dimensional Rifting Ch. 5 - Finding Others Along the Way
-									crit(6),		-- Beginner's Guide to Dimensional Rifting Ch. 6 - Pent up Energy
-									crit(7),		-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
+									crit(32196),		-- Beginner's Guide to Dimensional Rifting Ch. 1 - Navigating Through Time
+									crit(32197),		-- Beginner's Guide to Dimensional Rifting Ch. 2 - Holy Places to Many
+									crit(32198),		-- Beginner's Guide to Dimensional Rifting Ch. 3 - Water, Just Water
+									crit(32199),		-- Beginner's Guide to Dimensional Rifting Ch. 4 - Risks and Rewards
+									crit(32200),		-- Beginner's Guide to Dimensional Rifting Ch. 5 - Finding Others Along the Way
+									crit(32201),		-- Beginner's Guide to Dimensional Rifting Ch. 6 - Pent up Energy
+									crit(32202),		-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
 								}),
 							},
 						}),

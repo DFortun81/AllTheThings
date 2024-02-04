@@ -1,10 +1,12 @@
-﻿using System;
+﻿using ATT.FieldTypes;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ATT
 {
@@ -65,17 +67,18 @@ namespace ATT
             /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
             /// Stored by key -> key-value -> object
             /// </summary>
-            public static IDictionary<string, Dictionary<object, IDictionary<string, object>>> MergedObjects { get; } = new Dictionary<string, Dictionary<object, IDictionary<string, object>>>();
+            public static IDictionary<string, Dictionary<object, IDictionary<string, object>>> SharedDataByPrimaryKey { get; } = new Dictionary<string, Dictionary<object, IDictionary<string, object>>>();
 
             /// <summary>
             /// The keys which should be merged based on a given merge object key
             /// </summary>
             public static IDictionary<string, string[]> MergeObjectFields { get; } = new Dictionary<string, string[]>()
             {
-                {  "recipeID" , new string[] { "requireSkill" } },
+                {  "spellID" , new string[] { "type", "learnedAt" } },
+                {  "recipeID" , new string[] { "requireSkill", "learnedAt" } },
                 {  "speciesID" , new string[] { "pb", "crs" } },
                 {  "instanceID" , new string[] { "isRaid" } },
-                {  "questID" , new string[] { "sourceQuests", "altQuests", "isBreadcrumb" } },
+                {  "questID" , new string[] { "type", "sourceQuests", "altQuests", "isBreadcrumb" } },
             };
 
             /// <summary>
@@ -253,11 +256,7 @@ namespace ATT
                             case 11:                // 11/12/13 (Bear / Cat Claw) - These do not exist?
                             case 12:                // Gonna just classify as Fist Weapon.
                             case 13: return Filters.FistWeapon;
-#if RETAIL
                             case 14: return Filters.Cosmetic;           // Many equippable white items with no restriction post 10.0.5... are they all learnable?
-#else
-                            case 14: return Filters.Miscellaneous;      // Miscellaneous (not seeing anything in this filter?)
-#endif
                             case 15: return Filters.Dagger;
                             case 16: return Filters.Thrown;            // Thrown
                             case 17: return Filters.Polearm;            // Spear (not seeing anything in this filter, so converting to Polearm instead?)
@@ -432,83 +431,103 @@ namespace ATT
             }
 
             /// <summary>
-            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// Merges information from the database object into shared object storage.
             /// </summary>
-            /// <param name="entry"></param>
-            internal static void Merge(IDictionary<string, object> data)
+            /// <param name="primaryKey">The primary key of the database module.</param>
+            /// <param name="databaseObject">The data to merge into shared storage.</param>
+            internal static void MergeFromDB(string primaryKey, IDictionary<string, object> databaseObject)
             {
-                foreach (string key in MergeObjectFields.Keys)
-                    Merge(key, data);
+                // does this data contain the key?
+                if (databaseObject.TryGetValue(primaryKey, out object keyValue))
+                {
+                    // get the container for objects of this key
+                    if (!SharedDataByPrimaryKey.TryGetValue(primaryKey, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                    {
+                        typeObjects = new Dictionary<object, IDictionary<string, object>>();
+                        SharedDataByPrimaryKey.Add(primaryKey, typeObjects);
+                    }
+
+                    // get the specific merged object
+                    if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
+                    {
+                        merged = new Dictionary<string, object>();
+                        typeObjects.Add(keyValue, merged);
+                    }
+
+                    foreach (var pair in databaseObject)
+                    {
+                        if (pair.Key == primaryKey) continue;
+                        merged[pair.Key] = pair.Value;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"ERROR: Primary Key missing from {primaryKey}: {MiniJSON.Json.Serialize(databaseObject)}");
+                }
             }
 
             /// <summary>
-            /// Merges data for a given object based on the key from the Source object into a common storage for that keyed-object
+            /// Merges whitelisted information from the non-database object into shared object storage.
             /// </summary>
-            /// <param name="v"></param>
-            /// <param name="data"></param>
-            internal static void Merge(string key, IDictionary<string, object> data)
+            /// <param name="objectData">The data to merge into shared storage.</param>
+            internal static void MergeFromObject(IDictionary<string, object> objectData)
             {
-                // only bother creating a merge container if the data contains a merging key
-                if (data.ContainsAnyKey(MergeObjectFields[key]))
+                foreach (var mergeObjectFieldPair in MergeObjectFields)
                 {
                     // does this data contain the key?
-                    if (data.TryGetValue(key, out object keyValue))
+                    if (objectData.TryGetValue(mergeObjectFieldPair.Key, out object keyValue))
                     {
-                        // get the container for objects of this key
-                        if (!MergedObjects.TryGetValue(key, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                        // only bother creating a merge container if the data contains a merging key
+                        if (objectData.ContainsAnyKey(mergeObjectFieldPair.Value))
                         {
-                            typeObjects = new Dictionary<object, IDictionary<string, object>>();
-                            MergedObjects.Add(key, typeObjects);
+                            // get the container for objects of this key
+                            if (!SharedDataByPrimaryKey.TryGetValue(mergeObjectFieldPair.Key, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                            {
+                                typeObjects = new Dictionary<object, IDictionary<string, object>>();
+                                SharedDataByPrimaryKey.Add(mergeObjectFieldPair.Key, typeObjects);
+                            }
+
+                            // get the specific merged object
+                            if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
+                            {
+                                merged = new Dictionary<string, object>();
+                                typeObjects.Add(keyValue, merged);
+                            }
+
+                            //if (DebugMode)
+                            //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
+
+                            // merge the allowed fields by the key into the merged object
+                            foreach (string field in mergeObjectFieldPair.Value)
+                            {
+                                if (objectData.TryGetValue(field, out object val))
+                                {
+                                    merged[field] = val;
+                                }
+                            }
                         }
-
-                        // get the specific merged object
-                        if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
-                        {
-                            merged = new Dictionary<string, object>();
-                            typeObjects.Add(keyValue, merged);
-                        }
-
-                        //if (DebugMode)
-                        //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
-
-                        // merge the allowed fields by the key into the merged object
-                        foreach (string field in MergeObjectFields[key])
-                            if (data.TryGetValue(field, out object val))
-                                merged[field] = val;
                     }
                 }
             }
 
             /// <summary>
-            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// Merges shared data from the database into the object.
             /// </summary>
-            /// <param name="entry"></param>
-            internal static void MergeInto(IDictionary<string, object> data)
+            /// <param name="objectData">The object data to merge shared data into.</param>
+            internal static void MergeSharedDataIntoObject(IDictionary<string, object> objectData)
             {
-                foreach (string key in MergeObjectFields.Keys)
-                    MergeInto(key, data);
-            }
-
-            /// <summary>
-            /// Merges dictionary data based on a specific key from the common storage into the Source object
-            /// </summary>
-            /// <param name="v"></param>
-            /// <param name="data"></param>
-            internal static void MergeInto(string key, IDictionary<string, object> data)
-            {
-                // does this data contain the key?
-                if (data.TryGetValue(key, out object keyValue))
+                foreach (var container in SharedDataByPrimaryKey)
                 {
-                    // get the container for objects of this key
-                    if (MergedObjects.TryGetValue(key, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                    // does this data contain the key?
+                    if (objectData.TryGetValue(container.Key, out object keyValue))
                     {
                         // get the specific merged object
-                        if (typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
+                        if (container.Value.TryGetValue(keyValue, out IDictionary<string, object> commonData))
                         {
                             // merge the allowed fields by the key into the data object
-                            foreach (string field in MergeObjectFields[key])
-                                if (!data.ContainsKey(field) && merged.TryGetValue(field, out object val))
-                                    data[field] = val;
+                            foreach (var commonFieldPair in commonData)
+                                if (!objectData.ContainsKey(commonFieldPair.Key))
+                                    objectData[commonFieldPair.Key] = commonFieldPair.Value;
                         }
                     }
                 }
@@ -550,8 +569,8 @@ namespace ATT
                     // merge into anything that's not an Achievement, or into Achievements which are not within the Achievements category
                     if (!ProcessingAchievementCategory || key != "achID")
                     {
-                        // does this data contain the key?
-                        if (data.TryGetValue(key, out decimal keyValue))
+                        // does this data contain the key? and never merge into a Criteria directly
+                        if (data.TryGetValue(key, out decimal keyValue) && !data.ContainsKey("criteriaID"))
                         {
                             // for 'factionID' merge into, make sure it does not also have 'itemID' (commendations etc.)
                             if (key == "factionID" && data.ContainsKey("itemID"))
@@ -579,7 +598,7 @@ namespace ATT
                 }
             }
 
-            private static void TrackPostProcessMergeKey(string key, decimal value)
+            internal static void TrackPostProcessMergeKey(string key, decimal value)
             {
                 if (!PostProcessMergedKeyValues.TryGetValue(key, out HashSet<decimal> keyValues))
                 {
@@ -608,7 +627,7 @@ namespace ATT
                 {
                     foreach (var keyValueMergeSet in keyGroup.Value)
                     {
-                        Log($"WARN: Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]", keyValueMergeSet.Value);
+                        LogWarn($"Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]", keyValueMergeSet.Value);
                     }
                 }
             }
@@ -993,6 +1012,9 @@ namespace ATT
 
                 // Arcana Manipulation [DF]
                 {2821, 2821},   // Arcana Manipulation
+
+                // Supply Shipments [DF]
+                {2886, 2886},   // Supply Shipments
             };
 
             /// <summary>
@@ -1025,6 +1047,7 @@ namespace ATT
                 {393, "SKINNING"},
                 {2777, "SOUL_CYPHERING"},
                 {2811, "STYGIA_CRAFTING"},
+                {2886, "SUPPLY_SHIPMENTS"},
                 {197, "TAILORING"},
                 {2847, "TUSKARR_FISHING_GEAR"},
             };
@@ -1038,13 +1061,8 @@ namespace ATT
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
                 {
-                    // No races?
-                    if (!races.Any())
-                    {
-                        throw new InvalidDataException("Invalid 'races' value in data:" + Environment.NewLine + ToJSON(data));
-                    }
                     // Alliance Only?
-                    else if (ALLIANCE_ONLY.Matches(races))
+                    if (ALLIANCE_ONLY.Matches(races))
                     {
                         data["r"] = 2;  // Alliance Only!
                         data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
@@ -1054,6 +1072,11 @@ namespace ATT
                     {
                         data["r"] = 1;  // Horde Only!
                         data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
+                    }
+                    // All Races?
+                    else if (ALL_RACES.Matches(races))
+                    {
+                        data.Remove("races");   // We do not need to include races for this as it is ALL_RACES.
                     }
                 }
             }
@@ -1244,59 +1267,62 @@ namespace ATT
                 if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
 
-            public static void ExportAutoLocale(string directory)
+            public static void ExportAutoLocale(string filename)
             {
-                var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, object>>();
+                var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, string>>();
 
                 foreach (var localeKey in NAMES_BY_TYPE)
                 {
                     if (AutoLocalizeType(localeKey.Key))
                     {
                         string localeDictionaryName = localeKey.Key.Replace("ID", string.Empty).ToUpper() + "_NAMES";
-                        AllLocaleTypes.Add(localeDictionaryName, new SortedDictionary<long, object>(localeKey.Value));
+                        AllLocaleTypes.Add(localeDictionaryName, new SortedDictionary<long, string>(localeKey.Value));
                     }
                 }
 
-                var filename = Path.Combine(directory, "../locales", "en_auto.lua");
-                StringBuilder locale = new StringBuilder(10000);
-                locale.AppendLine("--   WARNING: This file is dynamically generated   --");
-                locale.AppendLine("local appName, app = ...;");
-                locale.Append("local keys = ");
-                ATT.Export.AddTableNewLines = true;
-                locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
-                locale.AppendLine(@"
+                if (AllLocaleTypes.Any())
+                {
+                    StringBuilder locale = new StringBuilder(10000);
+                    locale.AppendLine("--   WARNING: This file is dynamically generated   --");
+                    locale.AppendLine("local appName, app = ...;");
+                    locale.Append("local keys = ");
+                    ATT.Export.AddTableNewLines = true;
+                    locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
+                    locale.AppendLine(@"
 local L = app.L;
 for k,t in pairs(keys) do
     L[k] = t;
 end");
 
-                string content = locale.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    string content = locale.ToString();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                }
             }
 
             public static void ExportAutoItemSources(string directory)
             {
                 var sourcesDir = Path.Combine(directory, "00 - Item Database", "Source IDs");
-                var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
-
-                foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
+                if (Directory.Exists(sourcesDir))
                 {
-                    if (sourceFile != filename)
+                    var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
+                    foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
                     {
-                        File.Delete(sourceFile);
-                        //File.Move(sourceFile, sourceFile + ".old");
+                        if (sourceFile != filename)
+                        {
+                            File.Delete(sourceFile);
+                        }
                     }
+
+                    StringBuilder data = new StringBuilder(10000);
+                    data.AppendLine("--   WARNING: This file is dynamically generated   --");
+                    data.Append("root(\"Items.SOURCES\",");
+                    ATT.Export.AddTableNewLines = true;
+                    data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
+                    data.Append(");");
+
+                    string content = data.ToString();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
-
-                StringBuilder data = new StringBuilder(10000);
-                data.AppendLine("--   WARNING: This file is dynamically generated   --");
-                data.Append("root(\"Items.SOURCES\",");
-                ATT.Export.AddTableNewLines = true;
-                data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                data.Append(");");
-
-                string content = data.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
             #endregion
 
@@ -1389,13 +1415,12 @@ end");
                         case "coords":
                         case "sym":
                         case "f":
-#if ANYCLASSIC
+                        case "learnedAt":
                         case "filterForRWP":
-#endif
                             itemData[pair.Key] = pair.Value;
                             break;
 
-                        case "s":
+                        case "sourceID":
                             {
                                 long modID = 1;
                                 if (data.TryGetValue("modID", out object modIDRef)) modID = Convert.ToInt64(modIDRef);
@@ -1421,6 +1446,7 @@ end");
                         case "bonusID":
                         case "modID":
                         case "rank":
+                        case "gender":
                         case "creatureID":
                         case "criteriaID":
                         case "ilvl":
@@ -1472,6 +1498,7 @@ end");
                         case "altQuestID":
                         case "altQuests":
                         case "sourceQuests":
+                        case "isBounty":
                         case "isLimited":
                         case "isDaily":
                         case "isWeekly":
@@ -1487,6 +1514,9 @@ end");
                         case "isRaid":
                         case "mapID":
                         case "races":
+                        case "zone-quest":
+                        case "zone-text-areaID":
+                        case "zone-text-areas":
                             npcData[pair.Key] = pair.Value;
                             break;
 
@@ -1516,16 +1546,18 @@ end");
                         case "npcID":
                         case "modID":
                         case "rank":
+                        case "gender":
                         case "creatureID":
                         case "criteriaID":
                         case "displayID":   // This is now dynamic!
                         case "modelID":   // This is now dynamic!
+                        case "sourceID":
                         case "ilvl":
                         case "b":
                         case "q":
                         case "f":
+                        case "learnedAt":
                         case "filterForRWP":
-                        case "s":
                         case "g":
                         case "collectible":
                         case "hideText":
@@ -1630,8 +1662,8 @@ end");
                     }
                 }
 
-                // Sort the old list to ensure that the order is consistent, but not for titleIDs/difficulties
-                if (field != "titleIDs" && field != "difficulties")
+                // Sort the old list to ensure that the order is consistent, but not for difficulties
+                if (field != "difficulties" && field != "zone-text-areas")
                     oldList.Sort();
 
                 if (oldList.Count == 0)
@@ -1666,7 +1698,7 @@ end");
                     if (field == "timeline")
                     {
                         // Verify the timeline data is parsable since it's 'just a string' ... could be anything!
-                        if (!System.Text.RegularExpressions.Regex.IsMatch(index, "^(created|added|deleted|removed|blackmarket|timewalking) [0-9][\\.0-9]+$"))
+                        if (!Regex.IsMatch(index, "^(created|added|deleted|removed|blackmarket|timewalking) [0-9][\\.0-9]+$"))
                             throw new InvalidDataException("Invalid 'timeline' value: " + index);
                     }
                     if (oldList.Contains(index)) continue;
@@ -1738,6 +1770,7 @@ end");
                     case "pb":
                     case "isBreadcrumb":
                     case "DisablePartySync":
+                    case "isBounty":
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":
@@ -1751,6 +1784,7 @@ end");
                     case "ignoreSource":
                     case "hideText":
                     case "ordered":
+                    case "skipFill":
                     case "sort":
                     case "sourceIgnored":
                     case "nomerge":
@@ -1783,8 +1817,6 @@ end");
                     case "title":
                     case "order":
                     case "maphash":
-                    case "rwp":
-                    case "awp":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;
@@ -1842,13 +1874,13 @@ end");
                     case "runeforgePowerID":
                     case "raceID":
                     case "conduitID":
+                    case "criteriaTreeID":
                     case "f":
-#if ANYCLASSIC
                     case "filterForRWP":
-#endif
                     case "u":
                     case "b":
                     case "rank":
+                    case "gender":
                     case "ilvl":
                     case "q":
                     case "e":
@@ -1860,6 +1892,12 @@ end");
                     case "questIDA":
                     case "questIDH":
                     case "sqreq":
+                    case "zone-quest":
+                    case "zone-text-areaID":
+                    case "rwp":
+                    case "awp":
+                    case "id":
+                    case "uid":
                         {
                             try
                             {
@@ -1937,7 +1975,12 @@ end");
                     case "maps":
                     case "qgs":
                     case "crs":
-                    case "titleIDs":
+                    case "zone-text-areas":
+                    case "_quests":
+                    case "_npcs":
+                    case "_objects":
+                    case "_achievements":
+                    case "_factions":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -1948,9 +1991,7 @@ end");
                         {
                             MergeIntegerArrayData(item, field, lvls);
                         }
-#if CRIEVE
-                        else item[field] = Convert.ToInt64(value);
-#endif
+                        else if (Program.PreProcessorTags.ContainsKey("CRIEVE")) item[field] = Convert.ToInt64(value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
@@ -1998,7 +2039,7 @@ end");
                         }
                     // List O' List O' Objects Data Type Fields that could also be numberical values.
                     case "cost":
-                        MergeField_cost(item, value);
+                        Cost.Merge(item, value);
                         break;
                     case "minReputation":
                     case "maxReputation":
@@ -2127,12 +2168,7 @@ end");
                             return;
                         }
 
-                    case "_quests":
                     case "_items":
-                    case "_npcs":
-                    case "_objects":
-                    case "_achievements":
-                    case "_factions":
                     case "_encounter":
                         {
                             List<long> list = CompressToList<long>(value);
@@ -2147,6 +2183,7 @@ end");
                             break;
                         }
                     case "_drop":
+                    case "_sitemID":
                         item[field] = value;
                         break;
 
@@ -2174,87 +2211,10 @@ end");
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Log($"WARN: Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
+                            LogWarn($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
                             break;
                         }
                 }
-            }
-
-            internal static void MergeField_cost(IDictionary<string, object> item, object value)
-            {
-                const string field = "cost";
-
-                // Convert the raw data to a list of generic objects.
-                var costsObjs = CompressToList(value);
-                if (costsObjs == null)
-                {
-                    // simple gold cost is represented as a number
-                    try
-                    {
-                        var gold = Convert.ToInt64(value);
-                        item[field] = gold;
-                        return;
-                    }
-                    catch { }
-                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value));
-                }
-
-                // verify each generic object is itself a list of generic objects so we have nice typed values to work with
-                List<List<object>> costsList = new List<List<object>>();
-                bool nonNested = false;
-                foreach (var costObj in costsObjs)
-                {
-                    var costList = CompressToList(costObj);
-                    // assume that a single cost list was used for this 'cost' field... warn about it being non-standard
-                    if (costList == null)
-                    {
-                        nonNested = true;
-                        break;
-                    }
-                    costsList.Add(costList);
-                }
-
-                if (nonNested)
-                {
-                    Log($"WARN: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
-                    costsList.Add(costsObjs);
-                }
-
-                for (int i = costsList.Count - 1; i >= 0; --i)
-                {
-                    var cost = costsList[i];
-                    string costType = cost[0].ToString();
-                    // ensure the cost has the appropriate number of objects based on type
-                    if (costType == "i" || costType == "c")
-                    {
-                        if (cost.Count == 4)
-                        {
-                            var phase = long.Parse(cost[3].ToString());
-                            if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
-                            {
-                                costsList.RemoveAt(i);
-                                //Log($"Excluding Cost {ToJSON(cost)}");
-                                continue;
-                            }
-                        }
-                        else if (cost.Count != 3)
-                        {
-                            Log($"WARN: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
-                        }
-
-                    }
-
-#if ANYCLASSIC
-                    // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                    if (costType == "i" && cost[1].TryConvert(out long costID))
-                    {
-                        // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
-                        Items.MarkItemAsReferenced(costID);
-                    }
-#endif
-                }
-
-                item[field] = costsList;
             }
 
             internal static void MergeField_provider(IDictionary<string, object> item, object value)
@@ -2305,26 +2265,7 @@ end");
                         {
                             item[field] = providers = new List<object>();
                         }
-                        if (!match)
-                        {
-                            providers.Add(newMergeProvider);
-                            if (newProvider.Item1 == "i")
-                            {
-#if ANYCLASSIC
-                                // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                Items.MarkItemAsReferenced(newProvider.Item2);
-#endif
-                            }
-                            else if (newProvider.Item1 == "n")
-                            {
-                                NPCS_WITH_REFERENCES[newProvider.Item2] = true;
-                                MarkCustomHeaderAsRequired(newProvider.Item2);
-                            }
-                            else if (newProvider.Item1 == "o")
-                            {
-                                ProcessObjectInstance(item, newProvider.Item2);
-                            }
-                        }
+                        if (!match) providers.Add(newMergeProvider);
                     }
                     catch
                     {
@@ -2470,9 +2411,9 @@ end");
             /// <param name="data">The data to merge into the container.</param>
             public static void Merge(List<object> container, IDictionary<string, object> data2)
             {
-#if RETAIL
                 // clean up unique quests being treated as one quest for purposes that are irrelevant to Retail
-                if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd))
+                if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd)
+                    && !Program.PreProcessorTags.ContainsKey("ANYCLASSIC")) // Crieve wants AQD/HQD and doesn't agree with this, but will allow it outside of Classic Builds.
                 {
                     // questID used in both faction data objects
                     if (aqd.TryGetValue("questID", out long aQuestID) && hqd.TryGetValue("questID", out long hQuestID))
@@ -2535,15 +2476,15 @@ end");
                         }
                     }
                 }
-#endif
 
+                /// shouldn't need anymore with DataConitional pass
                 // Only Merge in any global data if this is not the initial merge pass
                 // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
-                if (!MergeItemData)
-                {
-                    Items.MergeInto(data2);
-                    MergeInto(data2);
-                }
+                // if (!MergeItemData)
+                // {
+                    //Items.MergeInto(data2);
+                    //MergeSharedDataIntoObject(data2);
+                // }
 
                 // Find the Object Dictionary that matches the data.
                 IDictionary<string, object> entry = FindMatchingData(container, data2);

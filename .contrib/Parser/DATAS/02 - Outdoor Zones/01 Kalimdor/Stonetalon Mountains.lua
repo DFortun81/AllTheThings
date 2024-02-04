@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4936, {	-- Stonetalon Mountains Quests (A)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Clearing a Path
 							["sourceQuests"] = {
@@ -37,10 +38,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25851,	-- Dances with Grimtotem
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4980, {	-- Stonetalon Mountains Quests (H)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- A Short-Lived Victory
 							["sourceQuest"] = 26010,	-- Ashes to Ashes
@@ -58,6 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 26115,	-- To Be Horde...
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -172,6 +176,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
+						["coord"] = { 67.2, 52.2, STONETALON_MOUNTAINS },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							3988,	-- Venture Co. Operator
+							4070,	-- Venture Co. Builder
+							3992,	-- Venture Co. Engineer
+							3993,	-- Venture Co. Machine Smith
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(1071, {	-- A Gnome's Respite
 					["qg"] = 4077,	-- Gaxim Rustfizzle
@@ -623,7 +645,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/1 Venture Co. Engineering Plans
-							["provider"] = { "i", 5718 },	-- Venture Co. Engineering Plans
+							["providers"] = {
+								{ "i", 5718 },	-- Venture Co. Engineering Plans
+								{ "o", 19602 },	-- Venture Co. Engineering Plans
+							},
 							["coord"] = { 66.1, 51.3, STONETALON_MOUNTAINS },
 						}),
 					},
@@ -643,7 +668,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/1 Venture Co. Letters
-							["provider"] = { "i", 5717 },	-- Venture Co. Letters
+							["providers"] = {
+								{ "i", 5717 },	-- Venture Co. Letters
+								{ "o", 19603 },	-- Venture Co. Documents
+							},
 							["coord"] = { 74.4, 59.2, STONETALON_MOUNTAINS },
 						}),
 					},
@@ -915,6 +943,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78270, {	-- Goblin Lockpicks
+					["qg"] = 4086,	-- Veenix <Venture Co. Merchant>
+					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
+					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Venture Co. Work Order
+							["provider"] = { "i", 210187 },	-- Venture Co. Work Order
+						}),
+						i(210186, {	-- Breaching Charge
+							["description"] = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
+						}),
+					},
+				})),
+				-- #endif
 				q(25847, {	-- Grimtotem Supremacy
 					["qg"] = 11858,	-- Grundig Darkcloud
 					["sourceQuest"] = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem
@@ -1880,6 +1927,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78114, {	-- Wild Wyvern Wrangling
+					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
+					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
+					["cost"] = {	-- You don't need to be on the quest to get these drops
+						{ "i", 209838, 1 },	-- Hypnotic Crystal
+						{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ASHENVALE, WAILING_CAVERNS },
+					["classes"] = { HUNTER },
+					["lvl"] = 15,
+				})),
+				-- #endif
 				q(25646, {	-- Windshear Mine Cleanup
 					["qg"] = 40973,	-- Sentinal Heliana
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
@@ -1929,6 +1990,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78121, {	-- Wrangling a Wild Wyvern
+					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
+					["sourceQuest"] = 78114,	-- Wild Wyvern Wrangling
+					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["lvl"] = 15,
+					["groups"] = {
+						i(209852, {	-- Rune of Kill Command
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410111),	-- Engrave Pants - Kill Command
+							},
+						}),
+						i(209819, {	-- Wyvern Taming Wand
+							["classes"] = { HUNTER },
+						}),
+					},
+				})),
+				-- #endif
 				q(1483, {	-- Ziz Fizziks
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.98, 37.21, THE_BARRENS },
@@ -1985,9 +2067,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(4015, {	-- Pridewing Patriarch
-					-- #if AFTER CATA
+					-- #if AFTER 7.2.0
+					["description"] = "Can spawn after killing any Pridewing Beasts. Warning: This mob scales with character level up to level cap!",
 					["coord"] = { 55.6, 44.8, STONETALON_MOUNTAINS },
-					-- #else
+					-- #elseif BEFORE 4.0.3
+					["description"] = "Can spawn after killing any Pridewing Beasts.",
 					["coords"] = {
 						{ 45.2, 39.2, STONETALON_MOUNTAINS },
 						{ 44.8, 45.6, STONETALON_MOUNTAINS },
@@ -1998,13 +2082,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3", "added 7.2.0" },
 					["groups"] = {
 						i(5751, {	-- Webwing Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5752, {	-- Wyvern Tailspike
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212837, {	-- Primordial Anomaly
+					["coord"] = { 29.6, 72.0, STONETALON_MOUNTAINS },
+					["groups"] = {
+						i(210811, {	-- Rune of Primordial Fury
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(425343),	-- Engrave Pants - Shamanistic Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50343, {	-- Quall
 					["coords"] = {
 						{ 60.0, 63.4, STONETALON_MOUNTAINS },
@@ -2083,6 +2180,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209851, {	-- Fury of the Land
+					["provider"] = { "o", 409711 },	-- Scrolls
+					["coord"] = { 74.4, 85.7, STONETALON_MOUNTAINS },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
 					-- #if AFTER CATA
@@ -2105,7 +2210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6055, {	-- Recipe: Fire Protection Potion
+						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2223,6 +2328,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(6840, {	-- Galvanized Horn
 					["cr"] = 6167,	-- Chimaera Matriarch
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(210534, {	-- Idol of the Wild
+					["coord"] = { 80.6, 90.0, STONETALON_MOUNTAINS },
+					["classes"] = { DRUID },
+					["crs"] = {
+						11911,	-- Grimtotem Mercenary
+						11910,	-- Grimtotem Ruffian
+						11913,	-- Grimtotem Sorcerer
+						11912,	-- Grimtotem Brute
+					},
+					["groups"] = {
+						recipe(410021),	-- Engrave Chest - Wild Strikes
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),

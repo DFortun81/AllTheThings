@@ -22,13 +22,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- The Gnoll Offensive
+						crit(38367, {	-- The Gnoll Offensive
 							["sourceQuest"] = 26545,	-- Yowler Must Die!
 						}),
-						crit(2, {	-- Keeshan's Raiders
+						crit(38368, {	-- Keeshan's Raiders
 							["sourceQuest"] = 26607,	-- They Drew First Blood
 						}),
-						crit(3, {	-- First Blood
+						crit(38369, {	-- First Blood
 							["sourceQuest"] = 26726,	-- Triumphant Return
 						}),
 					},
@@ -415,7 +415,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hilary's Necklace
-							["provider"] = { "i", 10958 },	-- Hilary's Necklace
+							["providers"] = {
+								{ "i",  10958 },	-- Hilary's Necklace
+								{ "o", 154357 },	-- Glinting Mud
+							},
 							["coords"] = {
 								{ 19.3, 51.8, REDRIDGE_MOUNTAINS },
 								{ 25.9, 54.1, REDRIDGE_MOUNTAINS },
@@ -440,6 +443,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(60709, {	-- Vest of the Changing Heart
 							["timeline"] = { "added 4.0.3" },
 						}),
+					},
+				}),
+				q(2358, {	-- Horns of Nez'ra
+					["qg"] = 7009,	-- Arantir <The Hand of Chaos>
+					["coord"] = { 28.4, 52.4, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
+					["classes"] = { ROGUE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
+					["groups"] = {
+						objective(1, {	-- 0/1 Horns of Nez'ra
+							["provider"] = { "i", 7906 },	-- Horns of Nez'ra
+							["coord"] = { 41.0, 38.8, REDRIDGE_MOUNTAINS },
+							["crs"] = {
+								485,	-- Blackrock Outrunner
+								440,	-- Blackrock Grunt
+								4065,	-- Blackrock Sentry
+								615,	-- Blackrock Tracker
+								437,	-- Blackrock Renegade
+							},
+						}),
+						i(7676),	-- Thistle Tea
 					},
 				}),
 				q(126, {	-- Howling in the Hills
@@ -561,6 +586,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "o", 31 },	-- Old Lion Statue
 						{ "i", 1083 },	-- Glyph of Azora
+						{ "o", 76 },	-- An Empty Jar
 					},
 					["sourceQuest"] = 94,	-- A Watchful Eye
 					["coord"] = { 84.3, 46.9, REDRIDGE_MOUNTAINS },
@@ -735,7 +761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						i(1082),	-- Redridge Goulash
-						i(2699),	-- Recipe: Redridge Goulash
+						i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
 					},
 				}),
 				q(26570, {	-- Render's Army
@@ -815,7 +841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1322, {	-- Fishliver Oil
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3680),	-- Recipe: Murloc Fin Soup
+						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
 					},
 				}),
 				q(115, {	-- Shadow Magic
@@ -903,7 +929,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26569, {	-- Surveying Equipment
 					["qg"] = 43194,	-- Foreman Oslow
-					["sourceQuest"] = 26568,	-- This Ain't My War
+					["sourceQuests"] = {
+						26568,	-- This Ain't My War
+						26520,	-- Saving Foreman Oslow
+					},
 					["coord"] = { 29.6, 44.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -1013,8 +1042,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Oslow's Toolbox
-							["provider"] = { "i", 1309 },	-- Oslow's Toolbox
-							["coord"] = { 41.4, 54.4, REDRIDGE_MOUNTAINS },
+							["providers"] = {
+								{ "i", 1309 },	-- Oslow's Toolbox
+								{ "o", 32 },	-- Sunken Chest
+							},
+							["coord"] = { 41.5, 54.68, REDRIDGE_MOUNTAINS },
 						}),
 						i(2313),	-- Medium Armor Kit
 					},
@@ -1298,14 +1330,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3229, {	-- Tarantula Silk Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
 				n(52146, {	-- Chitter
 					["coord"] = { 63.8, 65.2, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13682" },
+					-- #if AFTER 10.1.7
+					["groups"] = {
+						i(3229, {	-- Tarantula Silk Sash
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+						}),
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(214456, {	-- Dro'zem the Blasphemous
+					["coords"] = {
+						{ 34.8, 7.6, REDRIDGE_MOUNTAINS },
+						{ 63.6, 42.4, REDRIDGE_MOUNTAINS },
+						{ 78.4, 72.8, REDRIDGE_MOUNTAINS },
+						{ 76.2, 83.4, REDRIDGE_MOUNTAINS },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(211488, {	-- Rune of the Avenger
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410008),	-- Engrave Pants - Avenger's Shield
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(147222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Gnollfeaster
 					["coord"] = { 24.4, 70.9, REDRIDGE_MOUNTAINS },
 					["questID"] = 54214,
@@ -1328,13 +1387,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3231, {	-- Cutthroat Pauldrons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2058, {	-- Kazon's Maul
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(214519, {	-- Incinerator Gar'im
+					["coord"] = { 77.8, 86.2, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(211477, {	-- Rune of Incinerate
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(416015),	-- Engrave Pants - Incinerate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(14271, {	-- Ribchaser
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1371,14 +1445,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["groups"] = {
-						-- #if BEFORE 4.0.3
-						-- This item can now be found in Battered Junkboxes.
 						i(4446, {	-- Blackvenom Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
-						-- #endif
 						i(4447, {	-- Cloak of Night
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1433,6 +1504,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					i(7286),	-- Black Whelp Scale
 				},
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209873, {	-- Dragonslayer's Shield
+					["provider"] = { "o", 409754 },	-- Wall-Mounted Shield
+					["coord"] = { 69.8, 55.8, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -1526,8 +1607,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(793, {	-- Kara Adams <Shield Crafter>
@@ -1552,43 +1633,125 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(1446, {	-- Blackrock Boots
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 440,	-- Blackrock Grunt
+					["coords"] = {
+						{ 41.4, 39.8, REDRIDGE_MOUNTAINS },
+						{ 62.0, 44.0, REDRIDGE_MOUNTAINS },
+						{ 74.8, 78.8, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 4463,	-- Blackrock Summoner
+					["coords"] = {
+						{ 38.6, 13.6, REDRIDGE_MOUNTAINS },
+						{ 34.4, 10.0, REDRIDGE_MOUNTAINS },
+						{ 28.0, 15.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1455, {	-- Blackrock Champion's Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						435,	-- Blackrock Champion
 						4464,	-- Blackrock Gladiator
 					},
+					["coords"] = {
+						{ 35.6, 9.6, REDRIDGE_MOUNTAINS },
+						{ 28.6, 14.6, REDRIDGE_MOUNTAINS },
+						{ 69.6, 57.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item drops from both Blackrock Renegades & Blackrock Hunters. Renegades might have a higher droprate, but are unavailable for Alliance characters who have completeted the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["crs"] = {
+						437,	-- Blackrock Renegade
+						4462,	-- Blackrock Hunter
+					},
+					["coords"] = {
+						{ 54.4, 37.2, REDRIDGE_MOUNTAINS },
+						{ 50.2, 42.8, REDRIDGE_MOUNTAINS },
+						{ 48.6, 34.2, REDRIDGE_MOUNTAINS },
+						{ 46.6, 38.6, REDRIDGE_MOUNTAINS },
+						{ 44.2, 31.0, REDRIDGE_MOUNTAINS },
+						{ 42.2, 34.8, REDRIDGE_MOUNTAINS },
+						-- Hunter
+						{ 54.4, 68.2, REDRIDGE_MOUNTAINS },
+						{ 50.6, 68.0, REDRIDGE_MOUNTAINS },
+						{ 50.6, 61.6, REDRIDGE_MOUNTAINS },
+						{ 40.2, 68.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1448, {	-- Blackrock Gauntlets
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						485,	-- Blackrock Outrunner
 						4064,	-- Blackrock Scout
 					},
+					["coords"] = {
+						{ 65.6, 48.8, REDRIDGE_MOUNTAINS },
+						{ 67.0, 59.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item only drops from Blackrock Scouts, which are unavailable for Alliance characters who have completeted the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["cr"] = 4064,	-- Blackrock Scout
+					["coords"] = {
+						{ 52.6, 41.2, REDRIDGE_MOUNTAINS },
+						{ 49.0, 42.6, REDRIDGE_MOUNTAINS },
+						{ 44.6, 36.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1296, {	-- Blackrock Mace
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						437,	-- Blackrock Renegade
 						4065,	-- Blackrock Sentry
 					},
+					["coords"] = {
+						{ 78.6, 71.6, REDRIDGE_MOUNTAINS },
+						{ 62.6, 45.6, REDRIDGE_MOUNTAINS },
+						{ 46.0, 18.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item only drops from Blackrock Renegades, which are unavailable for Alliance characters who have completeted the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["cr"] = 437,	-- Blackrock Renegade
+					["coords"] = {
+						{ 52.6, 41.4, REDRIDGE_MOUNTAINS },
+						{ 48.6, 34.2, REDRIDGE_MOUNTAINS },
+						{ 44.0, 33.2, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1445, {	-- Blackrock Pauldrons
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 39.4, 14.8, REDRIDGE_MOUNTAINS },
+						{ 35.4, 8.6, REDRIDGE_MOUNTAINS },
+						{ 28.6, 14.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						615,	-- Blackrock Tracker
 						4462,	-- Blackrock Hunter
 					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 615,	-- Blackrock Tracker
+					-- #endif
 				}),
 				i(58898, {	-- Dirt-Stained Scroll
 					["timeline"] = { "added 4.0.3" },
 				}),
 				i(1287, {	-- Giant Tarantula Fang
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 442,	-- Tarantula
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 28.4, 78.8, REDRIDGE_MOUNTAINS },
+						{ 15.2, 76.2, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				i(1962, {	-- Glowing Shadowhide Pendant
 					["timeline"] = { "removed 4.0.3" },
@@ -1614,23 +1777,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1213, {	-- Gnoll Kindred Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["cr"] = 712,	-- Redridge Thrasher
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 17.4, 62.4, REDRIDGE_MOUNTAINS },
+						{ 28.8, 81.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #else
+					["coords"] = {
+						{ 17.8, 59.6, REDRIDGE_MOUNTAINS },
+						{ 33.6, 62.4, REDRIDGE_MOUNTAINS },
+						{ 30.0, 73.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1214, {	-- Gnoll Punisher
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["crs"] = {
 						14271,	-- Ribchaser
 						426,	-- Redridge Brute
 					},
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 17.4, 64.4, REDRIDGE_MOUNTAINS },
+						{ 31.0, 82.2, REDRIDGE_MOUNTAINS },
+						{ 39.0, 33.0, REDRIDGE_MOUNTAINS },
+						{ 24.0, 38.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #else
+					["coords"] = {
+						{ 30.8, 61.4, REDRIDGE_MOUNTAINS },
+						{ 30.8, 73.8, REDRIDGE_MOUNTAINS },
+						{ 18.6, 60.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1440, {	-- Gnoll Skull Basher
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 446,	-- Redridge Basher
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 38.2, 31.6, REDRIDGE_MOUNTAINS },
+						{ 27.2, 36.8, REDRIDGE_MOUNTAINS },
+						{ 21.6, 35.0, REDRIDGE_MOUNTAINS },
+						{ 31.0, 21.6, REDRIDGE_MOUNTAINS },
+						{ 24.4, 24.4, REDRIDGE_MOUNTAINS },
+						{ 19.0, 16.6, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				i(1211, {	-- Gnoll War Harness
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["cr"] = 423,	-- Redridge Mongrel
+					["coords"] = {
+						{ 30.6, 62.6, REDRIDGE_MOUNTAINS },
+						{ 30.0, 71.6, REDRIDGE_MOUNTAINS },
+						{ 17.8, 57.8, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				-- #if BEFORE 4.0.3
 				i(2296, {	-- Great Goretusk Snout
@@ -1641,78 +1843,272 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1218, {	-- Heavy Gnoll War Club
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 445,	-- Redridge Alpha
+					["coords"] = {
+						{ 28.6, 22.2, REDRIDGE_MOUNTAINS },
+						{ 18.6, 16.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						445,	-- Redridge Alpha
+						580,	-- Redridge Drudger
+					},
+					["coords"] = {
+						{ 37.4, 30.8, REDRIDGE_MOUNTAINS },
+						{ 31.2, 21.6, REDRIDGE_MOUNTAINS },
+						{ 29.8, 37.4, REDRIDGE_MOUNTAINS },
+						{ 24.6, 31.0, REDRIDGE_MOUNTAINS },
+						{ 23.0, 19.0, REDRIDGE_MOUNTAINS },
+						{ 20.0, 23.8, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1299, {	-- Lesser Belt of the Spire
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 436,	-- Blackrock Shadowcaster
+					["coords"] = {
+						{ 69.8, 57.4, REDRIDGE_MOUNTAINS },
+						{ 67.4, 56.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completeted the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["cr"] = 43535,	-- Blackrock Warden
+					["coords"] = {
+						{ 69.3, 62.1, REDRIDGE_MOUNTAINS },
+						{ 67.2, 69.3, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1300, {	-- Lesser Staff of the Spire
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 436,	-- Blackrock Shadowcaster
+					["coords"] = {
+						{ 69.8, 57.4, REDRIDGE_MOUNTAINS },
+						{ 67.4, 56.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completeted the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["crs"] = 43535, -- Blackrock Warden
+					["coords"] = {
+						{ 69.3, 62.1, REDRIDGE_MOUNTAINS },
+						{ 67.2, 69.3, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1220, {	-- Lupine Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 580,	-- Redridge Drudger
+					["coords"] = {
+						{ 23.0, 19.0, REDRIDGE_MOUNTAINS },
+						{ 20.0, 23.8, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				i(1406, {	-- Pearl-encrusted Spear / Pearl-Encrusted Spear
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 544,	-- Murloc Nightcrawler
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 81.0, 58.4, REDRIDGE_MOUNTAINS },
+						{ 81.0, 70.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 76.0, 54.0, REDRIDGE_MOUNTAINS },
+						{ 72.4, 54.8, REDRIDGE_MOUNTAINS },
+						{ 72.0, 59.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
-				i(2700, {	-- Recipe: Succulent Pork Ribs
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211530, {	-- Prophecy of a City Enthralled
+					["coord"] = { 67.4, 56.0, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["cr"] = 436,	-- Blackrock Shadowcaster
+					["groups"] = {
+						recipe(425213),	-- Engrave Pants - Power Word: Barrier
+					},
+				})),
+				-- #endif
+				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(1219, {	-- Redridge Machete
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 424,	-- Redridge Poacher
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 44.0, 72.8, REDRIDGE_MOUNTAINS },
+						{ 32.2, 82.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 40.6, 66.0, REDRIDGE_MOUNTAINS },
+						{ 39.0, 65.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(2798, {	-- Rethban Ore
-				--	["timeline"] = { "removed 4.0.3" }, -- Not removed based on Discord Report 23.06.2022
 					["cr"] = 580,	-- Redridge Drudger
 				}),
 				i(1462, {	-- Ring of the Shadow
 					["timeline"] = { "removed 4.0.3" },
+					-- #if AFTER 10.1.7
+					["isBounty"] = true,
+					-- #endif
 					["cr"] = 429,	-- Shadowhide Darkweaver
+					["coords"] = {
+						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },
+						{ 70.6, 45.2, REDRIDGE_MOUNTAINS },
+						{ 76.2, 53.0, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				i(1473, {	-- Riverside Staff
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 545,	-- Murloc Tidecaller
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 56.4, 49.0, REDRIDGE_MOUNTAINS },
+						{ 81.0, 63.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 51.4, 50.0, REDRIDGE_MOUNTAINS },
+						{ 49.6, 51.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(2566, {	-- Sacrificial Robes
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 397,	-- Morganth / Grand Magus Doane [CATA+]
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
+					["cr"] = 397,	-- Morganth
+					["coord"] = { 80.0, 49.6, REDRIDGE_MOUNTAINS },
+					-- #elseif AFTER 10.1.7
+					["cr"] = 429,	-- Shadowhide Darkweaver
+					["coords"] = {
+						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },
+						{ 70.6, 45.2, REDRIDGE_MOUNTAINS },
+						{ 76.2, 53.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1469, {	-- Scimitar of Atun
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						14270,	-- Squiddic
 						578,	-- Murloc Scout
 					},
+					["coords"] = {
+						{ 57.8, 51.8, REDRIDGE_MOUNTAINS },
+						{ 41.8, 48.2, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 578,	-- Murloc Scout
+					["coords"] = {
+						{ 37.8, 41.4, REDRIDGE_MOUNTAINS },
+						{ 36.4, 43.8, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(2175, {	-- Shadowhide Battle Axe
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 568,	-- Shadowhide Warrior
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 81.8, 38.2, REDRIDGE_MOUNTAINS },
+						{ 77.8, 44.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 71.4, 36.6, REDRIDGE_MOUNTAINS },
+						{ 71.4, 43.8, REDRIDGE_MOUNTAINS },
+						{ 75.4, 50.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1457, {	-- Shadowhide Mace
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 433,	-- Shadowhide Gnoll
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 66.8, 48.2, REDRIDGE_MOUNTAINS },
+						{ 68.6, 44.4, REDRIDGE_MOUNTAINS },
+						{ 66.2, 41.6, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				i(1458, {	-- Shadowhide Maul
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 432,	-- Shadowhide Brute
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 82.0, 38.8, REDRIDGE_MOUNTAINS },
+						{ 75.4, 46.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 70.0, 35.2, REDRIDGE_MOUNTAINS },
+						{ 70.8, 38.6, REDRIDGE_MOUNTAINS },
+						{ 68.2, 44.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1459, {	-- Shadowhide Scalper
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 579,	-- Shadowhide Assassin
+					["coords"] = {
+						{ 80.6, 48.8, REDRIDGE_MOUNTAINS },
+						{ 79.2, 40.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						579,	-- Shadowhide Assassin
+						429,	-- Shadowhide Darkweaver
+					},
+					["coords"] = {
+						{ 71.2, 40.4, REDRIDGE_MOUNTAINS },
+						{ 66.8, 42.2, REDRIDGE_MOUNTAINS },
+						{ 70.6, 49.6, REDRIDGE_MOUNTAINS },
+						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },
+						{ 70.6, 45.2, REDRIDGE_MOUNTAINS },
+						{ 76.2, 53.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1460, {	-- Shadowhide Two-handed Sword / Shadowhide Two-Handed Sword
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 434,	-- Rabid Shadowhide Gnoll
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 74.2, 44.6, REDRIDGE_MOUNTAINS },
+						{ 72.6, 51.2, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 67.8, 40.4, REDRIDGE_MOUNTAINS },
+						{ 69.0, 48.8, REDRIDGE_MOUNTAINS },
+						{ 67.2, 46.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1461, {	-- Slayer's Battle Axe
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 431,	-- Shadowhide Slayer
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 81.6, 48.6, REDRIDGE_MOUNTAINS },
+						{ 78.4, 38.2, REDRIDGE_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 72.6, 44.6, REDRIDGE_MOUNTAINS },
+						{ 74.6, 52.2, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1080, {	-- Tough Condor Meat
 					["cr"] = 428,	-- Dire Condor

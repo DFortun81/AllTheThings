@@ -115,7 +115,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(MYTHIC_DUNGEON, {
 				cr(117193, e(1905, {	-- Agronox
-					ach(11768),	-- Boom Bloom
+					ach(11768, {	-- Boom Bloom
+						["crs"] = { 121695 },	-- Budding Flower
+					}),
 					i(144469),	-- Caretaker's Budding Mantle
 					i(144491),	-- Choking Vine Bindings
 					i(144490),	-- Corruption-Fused Stompers
@@ -129,7 +131,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(144459),	-- Knot of Fel
 				})),
 				cr(117194, e(1906, {	-- Thrashbite the Scornful
-					ach(11769),	-- A Steamy Romance Saga
+					ach(11769, {	-- A Steamy Romance Saga
+						["description"] = "Need to be in a full 5 man party for this achievement.",
+					}),
 					i(144492),	-- Chain-Draped Gauntlets
 					i(144482),	-- Fel-Oiled Infernal Machine
 					i(144493),	-- Link-Lashed Spaulders
@@ -176,16 +180,3 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		inst(900, {	-- Cathedral of Eternal Night
-			d(HEROIC_DUNGEON, {
-				i(147514),	-- Felguard Destroyer's Legplates
-				i(147515),	-- Hellblaze Invader's Greaves
-				i(147517),	-- Inquisitor's Battle Cowl
-				i(147516),	-- Legion Stalker's Hood
-			}),
-		}),
-	}),
-});

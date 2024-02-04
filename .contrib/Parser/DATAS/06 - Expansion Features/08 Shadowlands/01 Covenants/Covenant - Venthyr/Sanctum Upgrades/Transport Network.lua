@@ -16,21 +16,29 @@ local BROKEN_MIRROR_INFO = {
 		cn = "残破的镜子",
 	},
 };
-BROKEN_MIRROR_A1 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_A2 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_A3 = createHeader( BROKEN_MIRROR_INFO );
+local function breakAnotherMirror(suffix)
+	local data = {};
+	for key,value in pairs(BROKEN_MIRROR_INFO) do
+		data[key] = value;
+	end
+	data.readable = data.readable .. suffix;
+	return createHeader(data);
+end
+BROKEN_MIRROR_A1 = breakAnotherMirror( "A1" );
+BROKEN_MIRROR_A2 = breakAnotherMirror( "A2" );
+BROKEN_MIRROR_A3 = breakAnotherMirror( "A3" );
 
-BROKEN_MIRROR_B1 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_B2 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_B3 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_B1 = breakAnotherMirror( "B1" );
+BROKEN_MIRROR_B2 = breakAnotherMirror( "B2" );
+BROKEN_MIRROR_B3 = breakAnotherMirror( "B3" );
 
-BROKEN_MIRROR_C1 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_C2 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_C3 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_C1 = breakAnotherMirror( "C1" );
+BROKEN_MIRROR_C2 = breakAnotherMirror( "C2" );
+BROKEN_MIRROR_C3 = breakAnotherMirror( "C3" );
 
-BROKEN_MIRROR_D1 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_D2 = createHeader( BROKEN_MIRROR_INFO );
-BROKEN_MIRROR_D3 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_D1 = breakAnotherMirror( "D1" );
+BROKEN_MIRROR_D2 = breakAnotherMirror( "D2" );
+BROKEN_MIRROR_D3 = breakAnotherMirror( "D3" );
 
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {

@@ -15,6 +15,7 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = "Harvest Festival",
+		ru = "Неделя урожая",
 	},
 });
 local BLUE_FIREWORK = i(9312);	-- Blue Firework
@@ -62,6 +63,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 				}),
 				i(20010),	-- The Horde's Hellscream
 			},
+		}),
+		q(54996, {	-- Remembrance
+			["qg"] = 149084,	-- Spiritwalker Ussoh
+			["coord"] = { 46.8, 15.4, DUROTAR },
+			["timeline"] = { ADDED_8_2_0 },
+			["races"] = { TAUREN },
+			["isYearly"] = true,
 		}),
 	}),
 	n(REWARDS, {

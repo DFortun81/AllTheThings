@@ -4,7 +4,10 @@
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	header(HEADERS.Achievement, 12719, bubbleDownSelf({ ["lvl"] = lvlsquish(120, 120, 50), ["races"] = HORDE_ONLY }, {	-- Spirits Be With You
-		ach(12719),	-- Spirits Be With You
+		ach(12719, {	-- Spirits Be With You
+			crit(40709),	-- The Fallen Chieftain
+			crit(40710),	-- Justice For The Fallen
+		}),
 		q(51513, {	-- Zalazane Returns
 			["sourceQuest"] = 50954,	-- Zandalar Forever!
 			["provider"] = { "n", 120171 },	-- Rokhan
@@ -49,7 +52,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 			["provider"] = { "n", 140405 },	-- Bwonsamdi
 			["maps"] = { 934, 935 },	-- Atal'Dazar
 			["g"] = {
-				crit(1, {	-- The Fallen Chieftain
+				crit(40709, {	-- The Fallen Chieftain
 					["achievementID"] = 12719,	-- Spirits Be With You
 				}),
 			},
@@ -70,7 +73,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 			["coord"] = { 57.6, 63.0, ZULDAZAR },
 			["maps"] = { 1148, 1149, 1150, 1151, 1152, 1153, 1154, 1155 },	-- Uldir
 			["g"] = {
-				crit(2, {	-- Justice for the Fallen
+				crit(40710, {	-- Justice for the Fallen
 					["achievementID"] = 12719,	-- Spirits Be With You
 				}),
 			},

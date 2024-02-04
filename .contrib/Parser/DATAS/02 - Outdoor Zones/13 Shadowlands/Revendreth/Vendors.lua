@@ -126,10 +126,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(180593, {	-- Court Messenger (PET!)
 						["cost"] = { { "i", 163036, 250 } },
 					}),
-					i(182668, {	-- Recipe: Feast of Gluttonous Hedonism
+					i(182668, {	-- Recipe: Feast of Gluttonous Hedonism (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
-					i(183099, {	-- Design: Revitalizing Jewel Doublet
+					i(183099, {	-- Design: Revitalizing Jewel Doublet (RECIPE!)
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183102, {	-- Technique: Contract: Court of Harvesters (RECIPE!)
@@ -154,12 +154,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184726),	-- Courtier's Mantle
 					i(184727),	-- Courtier's Shoulderguard
 					i(184755),	-- Reinforced High Collar
-					i(182207),	-- Illusion: Sinsedge
+					i(182207),	-- Illusion: Sinsedge (ILLUSION!)
 					i(190644, {	-- Vessel of Profound Possibilities
+						["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+							{"select","tierID",SL_TIER},	-- SL Tier
+							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
 					n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{

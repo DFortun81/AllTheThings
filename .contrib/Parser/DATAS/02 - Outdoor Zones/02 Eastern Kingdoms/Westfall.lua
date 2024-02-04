@@ -27,13 +27,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Crime Scene Investigation
+						crit(38343, {	-- Crime Scene Investigation
 							["sourceQuest"] = 26270,	-- You Have Our Thanks
 						}),
-						crit(2, {	-- Investigating the Shadows
+						crit(39659, {	-- Investigating the Shadows
 							["sourceQuest"] = 26297,	-- The Dawning of a New Day
 						}),
-						crit(3, {	-- The Defias Brotherhood Reborn
+						crit(38342, {	-- The Defias Brotherhood Reborn
 							["sourceQuest"] = 26370,	-- Return to Sentinel Hill
 						}),
 					},
@@ -48,8 +48,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					379,	-- Squirrel (PET!)
 				}},
 				["groups"] = {
-					pet(646), 	-- Chicken (PET!)
-					pet(388), 	-- Shore Crab (PET!)
+					pet(646),	-- Chicken (PET!)
+					pet(388),	-- Shore Crab (PET!)
 					pet(389),	-- Tiny Harvester (PET!)
 				},
 			}),
@@ -112,6 +112,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(209031, {	-- Discreet Envelope
+						["coord"] = { 48.6, 48.6, WESTFALL },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							 95,	-- Defias Smuggler
+							504,	-- Defias Trapper
+							590,	-- Defias Looter
+							121,	-- Defias Pathstalker
+							589,	-- Defias Pillager
+						},
+						["groups"] = {
+							i(209030, {	-- Equipment Stash Key
+								["classes"] = { ROGUE },
+							}),
+							i(209029, {	-- Message from Emily
+								["classes"] = { ROGUE },
+							}),
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+						["coords"] = {
+							{ 51.0, 47.0, WESTFALL },
+							{ 51.6, 55.6, WESTFALL },
+						},
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 210549,	-- Defias Scout
+						["groups"] = {
+							recipe(424984),	-- Engrave Gloves - Saber Slash
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(6181, {	-- A Swift Message
 					["qg"] = 491,	-- Quartermaster Lewis
@@ -181,6 +219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "o", 34 },	-- Old Jug
 						{ "i", 1362 },	-- Final Clue to Sander's Treasure
+						{ "o", 33 },	-- Locked Chest
 					},
 					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
 					["coords"] = {
@@ -272,9 +311,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1075,	-- A Scroll from Mauren
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 					["timeline"] = { "removed 4.0.3" },
-					["cost"] = { { "i", 5669, 1 } },	-- Dust Devil Debris
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/1 Dust Devil Debris
+							["provider"] = { "i", 5669 },	-- Dust Devil Debris
+							["coords"] = {
+								{ 40.8, 22.0, WESTFALL },
+								{ 35.8, 34.4, WESTFALL },
+								{ 33.8, 49.4, WESTFALL },
+								{ 34.6, 68.6, WESTFALL },
+								{ 38.8, 61.4, WESTFALL },
+								{ 42.6, 59.2, WESTFALL },
+								{ 46.8, 48.6, WESTFALL },
+								{ 43.0, 42.2, WESTFALL },
+								{ 54.6, 41.0, WESTFALL },
+								{ 61.6, 36.0, WESTFALL },
+								{ 63.6, 51.4, WESTFALL },
+								{ 68.8, 74.0, WESTFALL },
+							},
+							["cr"] = 832,	-- Dust Devil
+						}),
+					},
 				}),
 				q(26296, {	-- Evidence Collection
 					["provider"] = { "i", 58117 },	-- Red Bandana
@@ -353,7 +411,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						i(724),		-- Goretusk Liver Pie
-						i(2697),	-- Recipe: Goretusk Liver Pie
+						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
 					},
 				}),
 				q(26252, {	-- Heart of the Watcher
@@ -526,10 +584,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 68.6, 72.2, WESTFALL },
 							["cr"] = 7051,	-- Malformed Defias Drone
 						}),
-						-- #if BEFORE 4.0.3
+						-- #if BEFORE 3.0.2
 						recipe(8681),	-- Instant Poison
 						-- #endif
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					},
 				}),
 				q(26228, {	-- Livin' the Life
@@ -614,7 +672,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/8 Handful of Oats
-							["provider"] = { "i", 1528 },	-- Handful of Oats
+							["providers"] = {
+								{ "i", 1528 },	-- Handful of Oats
+								{ "o", 2724 },	-- Sack of Oats
+							},
 						}),
 						i(2165, {	-- Old Blanchy's Blanket
 							["timeline"] = { "removed 4.0.3" },
@@ -960,7 +1021,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Furlbrow's Pocket Watch
-							["provider"] = { "i", 841 },	-- Furlbrow's Pocket Watch
+							["providers"] = {
+								{ "i", 841 },	-- Furlbrow's Pocket Watch
+								{ "o", 290 },	-- Furlbrow's Wardrobe
+							},
 							["coord"] = { 49.3, 19.5, WESTFALL },
 						}),
 					},
@@ -1159,9 +1223,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210483, {	-- Aggressive Squashling
+					["coords"] = {
+						{ 43.8, 33.4, WESTFALL },
+						{ 50.4, 19.8, WESTFALL },
+					},
+					["cost"] = {
+						{ "i", 209041, 1 },	-- Magic Pumpkin Seeds
+						{ "i", 209043, 1 },	-- Fertile Soil Sample
+						{ "i", 209042, 1 },	-- Fishy Bonemeal
+					},
+					["classes"] = { DRUID },
+					["groups"] = {
+						i(208687, {	-- Rune of Lacerate
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(416049),	-- Engrave Gloves - Lacerate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(520, {	-- Brack
 					-- #if AFTER CATA
 					["coord"] = { 28.8, 72.8, WESTFALL },
+					["description"] = "This mob is running up and down the beach.",
 					-- #else
 					["coords"] = {
 						{ 55.2, 13.4, WESTFALL },
@@ -1182,13 +1269,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2235, {	-- Brackclaw
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(6179, {	-- Privateer's Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210549, {	-- Defias Scout
+					["coords"] = {
+						{ 51.0, 47.0, WESTFALL },
+						{ 51.6, 55.6, WESTFALL },
+					},
+					["description"] = "Hunters need to use Hunter's Mark.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(573, {	-- Foe Reaper 4000
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1208,44 +1314,106 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(933, {	-- Large Rucksack
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(4434, {	-- Scarecrow Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210501, {	-- Harvest Reaper Prototype
+					["provider"] = { "i", 209057 },	-- Prototype Engine
+					["coords"] = {
+						{ 50.6, 18.8, WESTFALL },
+						{ 52.8, 33.8, WESTFALL },
+						{ 45.6, 39.0, WESTFALL },
+						{ 35.6, 52.2, WESTFALL },
+						{ 61.4, 58.8, WESTFALL },
+					},
+					["classes"] = { MAGE, WARLOCK },
+					["groups"] = {
+						i(208750, {	-- Rune of Channeling
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403932),	-- Engrave Chest - Master Channeler
+							},
+						}),
+						i(208799, {	-- Spell Notes: Living Bomb
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415936),	-- Engrave Gloves - Living Bomb
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(210487, {	-- Horror of the Deep
+					["providers"] = {
+						{ "o", 408799 },	-- Idol of the Deep
+						{ "i", 209045 },	-- Soul of the Sea
+					},
+					["coord"] = { 26.0, 69.5, WESTFALL },
+					["classes"] = { WARRIOR, WARLOCK },
+					["groups"] = {
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(572, {	-- Leprithus
 					-- #if AFTER CATA
-					["coord"] = { 42.6, 28.8, WESTFALL },
+					["coord"] = { 41.7, 29.3, WESTFALL },
+					["description"] = "Spawns once a day at approximately 20:00/8 PM server time.",
 					-- #else
 					["coords"] = {
 						{ 42.4, 30.8, WESTFALL },
 						{ 65.2, 63.2, WESTFALL },
 						{ 60.0, 77.6, WESTFALL },
 					},
+					["description"] = "Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+							},
+						})),
+						-- #endif
 						i(1387, {	-- Ghoulfang
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(1314, {	-- Ghoul Fingers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
 				n(1424, {	-- Master Digger
 					-- #if AFTER CATA
 					["coord"] = { 46.2, 18.6, WESTFALL },
+					["description"] = "Spawns inside Jangolode Mine, at the end of the cave.",
 					-- #else
 					["coord"] = { 46.2, 18.8, WESTFALL },
+					["description"] = "Spawns inside Jangolode Mine.",
 					-- #endif
 					["groups"] = {
 						i(6205, {	-- Burrowing Shovel
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(6206, {	-- Rock Chipper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1260,19 +1428,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2203, {	-- Brashclaw's Chopper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2204, {	-- Brashclaw's Skewer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210533, {	-- Silverspur
+					["coord"] = { 32.8, 35.9, WESTFALL },
+					["cost"] = {{ "i", 209059, 1 }},	-- Goretusk Haunch
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(519, {	-- Slark
 					-- #if AFTER CATA
 					["coords"] = {
 						{ 56.0, 9.8, WESTFALL },
 						{ 49.8, 10.4, WESTFALL },
 					},
+					["description"] = "This mob is running around the beach.",
 					-- #else
 					["coords"] = {
 						{ 55.2, 13.4, WESTFALL },
@@ -1293,13 +1477,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3188, {	-- Coral Claymore
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+						}),
+						i(120952, {	-- Slarkhide
+							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(6180, {	-- Slarkskin
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_2_0 },	-- ATT Discord 01.19.2024
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210537, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Undying Laborer
+					["coord"] = { 31.8, 43.5, WESTFALL },
+					["groups"] = {
+						i(208849, {	-- Libram of Blessings
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425618),	-- Engrave Chest - Horn of Lordaeron
+							},
+						}),
+						i(205905, {	-- Memory of a Devout Champion
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425215),	-- Engrave Chest - Twisted Faith
+							},
+						}),
+					},
+				}))),
+				-- #endif
 				n(462, {	-- Vultros
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1335,6 +1541,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209845, {	-- Bewitchments and Glamours
+					["provider"] = { "o", 409562 },	-- Spellbook
+					["coord"] = { 45.4, 70.5, WESTFALL },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
+					["provider"] = { "o", 408014 },	-- Gnomish Tome
+					["coord"] = { 52.7, 53.8, WESTFALL },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 408718 },	-- Equipment Stash
+						{ "i", 209030 },	-- Equipment Stash Key
+					},
+					["coord"] = { 40.80, 80.24, WESTFALL },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
+				})),
+			}),
+			-- #endif
+			-- #if AFTER 9.0.2
 			n(TREASURES, {
 				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
 					["coords"] = {
@@ -1367,6 +1597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 			}),
+			-- #endif
 			n(VENDORS, {
 				n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
 					["coord"] = { 43.4, 66.8, WESTFALL },
@@ -1380,7 +1611,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4789, {	-- Stable Boots
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1412,10 +1643,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.2, 90.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5528),	-- Recipe: Clam Chowder
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
@@ -1433,9 +1664,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(3172, {	-- Boar Intestines
+					["coord"] = { 54.2, 42.6, WESTFALL },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["crs"] = {
+						454,	-- Young Goretusk
+						157,	-- Goretusk
+						547,	-- Great Goretusk
+					},
+				}),
+				-- #endif
 				i(826, {	-- Brutish Riverpaw Axe
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 124,	-- Riverpaw Brute
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 54.2, 62.0, WESTFALL },
+						{ 55.8, 68.4, WESTFALL },
+						{ 55.4, 69.4, WESTFALL },
+						{ 31.4, 70.4, WESTFALL },
+						{ 48.8, 62.6, WESTFALL },
+					},
+					-- #else
+					["coords"] = {
+						{ 65.4, 72.4, WESTFALL },
+						{ 50.8, 42.8, WESTFALL },
+						{ 46.8, 53.8, WESTFALL },
+						{ 49.4, 63.0, WESTFALL },
+						{ 32.4, 71.8, WESTFALL },
+					},
+					-- #endif
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { "added 4.0.3" },
@@ -1466,26 +1725,144 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						519,	-- Slark
 					},
 				}),
+				-- #if ANYCLASSIC
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 54.2, 42.6, WESTFALL },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["crs"] = {
+						454,	-- Young Goretusk
+						157,	-- Goretusk
+						547,	-- Great Goretusk
+					},
+				}),
+				-- #endif
 				-- #if AFTER 4.0.3
 				i(1927, {	-- Deadmines Cleaver
 					["cr"] = 594,	-- Defias Henchman
 				}),
 				-- #endif
 				i(1394, {	-- Driftwood Club
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 171,	-- Murloc Warrior
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 32.2, 26.6, WESTFALL },
+						{ 34.8, 23.6, WESTFALL },
+						{ 26.0, 47.8, WESTFALL },
+					},
 				}),
 				i(4290, {	-- Dust Bowl
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 12.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 832,	-- Dust Devil
+					["coords"] = {
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 42669,	-- Chasm Slime
+					["coords"] = {
+						{ 36.0, 42.2, WESTFALL },
+						{ 40.4, 39.8, WESTFALL },
+						{ 39.0, 46.2, WESTFALL },
+					},
+					-- #endif
 				}),
-				i(5669, {	-- Dust Devil Debris
-					["timeline"] = { "removed 4.0.3" },
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209058, {	-- Elemental Core
+					["coords"] = {
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
+					},
 					["cr"] = 832,	-- Dust Devil
-				}),
+				})),
+				-- #endif
 				i(1405, {	-- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["classes"] = { DRUID },
+					["crs"] = {
+						452,	-- Riverpaw Bandit
+						124,	-- Riverpaw Brute
+						117,	-- Riverpaw Gnoll
+						501,	-- Riverpaw Herbalist
+						1426,	-- Riverpaw Miner
+						123,	-- Riverpaw Mongrel
+						453,	-- Riverpaw Mystic
+						125,	-- Riverpaw Overseer
+						500,	-- Riverpaw Scout
+						1065,	-- Riverpaw Shaman
+						98,		-- Riverpaw Taskmaster
+					},
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209043, {	-- Fertile Soil Sample
+					["coord"] = { 45.6, 20.4, WESTFALL },
+					["classes"] = { DRUID },
+					["cr"] = 1236,	-- Kobold Digger
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209042, {	-- Fishy Bonemeal
+					["coord"] = { 50.0, 11.8, WESTFALL },
+					["classes"] = { DRUID },
+					["crs"] = {
+						831,	-- Sea Crawler
+						830,	-- Sand Crawler
+						1216,	-- Shore Crawler
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
+					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["coords"] = {
+						{ 48.6, 21.8, WESTFALL },
+						{ 47.6, 39.2, WESTFALL },
+						{ 36.6, 74.4, WESTFALL },
+						{ 37.6, 55.4, WESTFALL },
+						{ 44.6, 67.6, WESTFALL },
+						{ 51.6, 75.2, WESTFALL },
+					},
+					["crs"] = {
+						504,	-- Defias Trapper
+						 95,	-- Defias Smuggler
+						449,	-- Defias Knuckleduster
+						590,	-- Defias Looter
+						589,	-- Defias Pillager
+						121,	-- Defias Pathstalker
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						454,	-- Young Goretusk
+						157,	-- Goretusk
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				i(723, {	-- Goretusk Liver
 					["crs"] = {
@@ -1522,12 +1899,64 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208851, {	-- Libram of Justice
+					["coord"] = { 69.8, 72.4, WESTFALL },
+					["description"] = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 7050,	-- Defias Drone
+					["groups"] = {
+						recipe(410001),	-- Engrave Gloves - Hand of Reckoning
+					},
+				})),
+				-- #endif
 				i(2088, {	-- Long Crawler Limb
 					["cr"] = 831,	-- Sea Crawler
 				}),
 				i(2091, {	-- Magic Dust
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
 					["cr"] = 832,	-- Dust Devil
+					["coords"] = {
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209041, {	-- Magic Pumpkin Seeds
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["coords"] = {
+						{ 48.6, 21.8, WESTFALL },
+						{ 47.6, 39.2, WESTFALL },
+						{ 36.6, 74.4, WESTFALL },
+						{ 37.6, 55.4, WESTFALL },
+						{ 44.6, 67.6, WESTFALL },
+						{ 51.6, 75.2, WESTFALL },
+					},
+					["crs"] = {
+						504,	-- Defias Trapper
+						 95,	-- Defias Smuggler
+						449,	-- Defias Knuckleduster
+						590,	-- Defias Looter
+						589,	-- Defias Pillager
+						121,	-- Defias Pathstalker
+					},
+				})),
+				-- #endif
 				i(732, {	-- Okra
 					["crs"] = {
 						573,	-- Foe Reaper 4000
@@ -1538,12 +1967,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1190, {	-- Overseer's Cloak
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 125,	-- Riverpaw Overseer
+					["coords"] = {
+						{ 63.8, 74.6, WESTFALL },
+						{ 58.0, 72.2, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 98,	-- Riverpaw Taskmaster
+					["coords"] = {
+						{ 63.8, 74.6, WESTFALL },
+						{ 58.0, 72.2, WESTFALL },
+					},
+					-- #endif
 				}),
 				i(1189, {	-- Overseer's Ring
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 125,	-- Riverpaw Overseer
+					["coords"] = {
+						{ 63.8, 78.6, WESTFALL },
+						{ 60.2, 76.6, WESTFALL },
+						{ 60.2, 70.8, WESTFALL },
+						{ 63.6, 72.8, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 98,	-- Riverpaw Taskmaster
+					-- #endif
 				}),
 				i(5771, {	-- Pattern: Red Linen Bag
 					["cr"] = 590,	-- Defias Looter
@@ -1553,11 +2004,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 450,	-- Defias Renegade Mage
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209057, {	-- Prototype Engine
+					["cost"] = {
+						{ "i", 209056, 1 },	-- Spare Reaper Parts
+						{ "i", 209056, 1 },	-- Spare Reaper Parts
+					},
+				})),
+				-- #endif
 				-- #if AFTER 4.0.3
-				i(2698, {	-- Recipe: Cooked Crab Claw
+				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",
 				}),
-				i(728, {	-- Recipe: Westfall Stew
+				i(728, {	-- Recipe: Westfall Stew (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls.",
 				}),
 				-- #endif
@@ -1572,24 +2031,138 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1391, {	-- Riverpaw Mystic Staff
 					["cr"] = 453,	-- Riverpaw Mystic
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 34.4, 84.6, WESTFALL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["cr"] = 391,	-- Old Murk-Eye
+					["groups"] = {
+						recipe(403489),	-- Engrave Gloves - Endless Rage
+					},
+				})),
+				-- #endif
 				i(832, {	-- Silver Defias Belt
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 121,	-- Defias Pathstalker
+					["coords"] = {
+						{ 51.6, 75.2, WESTFALL },
+						{ 37.6, 75.0, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 42677,	-- Moonbrook Thug
+					["coords"] = {
+						{ 44.4, 68.6, WESTFALL },
+						{ 42.6, 72.0, WESTFALL },
+					},
+					-- #endif
 				}),
 				i(820, {	-- Slicer Blade
 					["cr"] = 115,	-- Harvest Reaper
 				}),
 				i(816, {	-- Small Hand Blade
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 36,	-- Harvest Golem
+					["coords"] = {
+						{ 57.6, 36.4, WESTFALL },
+						{ 49.6, 33.2, WESTFALL },
+						{ 32.8, 35.0, WESTFALL },
+						{ 35.8, 46.0, WESTFALL },
+						{ 47.6, 67.6, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 114,	-- Harvest Watcher
+					["coords"] = {
+						{ 57.0, 34.2, WESTFALL },
+						{ 54.6, 32.2, WESTFALL },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
+					["provider"] = { "i", 209420 },	-- Gillsbane
+					["description"] = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["coords"] = {
+						-- various common map locations where 'crs' may be found
+						{ 28.8, 72.8, WESTFALL },
+						{ 33.0, 83.6, WESTFALL },
+						{ 34.6, 85.4, WESTFALL },
+						{ 44.2, 9.6, WESTFALL },
+						{ 50.8, 10.6, WESTFALL },
+						{ 53.6, 11.6, WESTFALL },
+						{ 55.8, 8.0, WESTFALL },
+						{ 56.0, 9.8, WESTFALL },
+						{ 56.6, 9.2, WESTFALL },
+					},
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209056, {	-- Spare Reaper Parts
+					["coords"] = {
+						{ 59.0, 18.2, WESTFALL },
+						{ 54.4, 25.6, WESTFALL },
+						{ 50.0, 22.6, WESTFALL },
+						{ 54.6, 34.6, WESTFALL },
+						{ 45.8, 36.0, WESTFALL },
+						{ 39.2, 52.0, WESTFALL },
+						{ 47.6, 67.6, WESTFALL },
+						{ 63.6, 60.2, WESTFALL },
+					},
+					["crs"] = {
+						480,	-- Rusty Harvest Golem
+						114,	-- Harvest Watcher
+						 36,	-- Harvest Golem
+						115,	-- Harvest Reaper
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+					["coord"] = { 53.0, 78.8, WESTFALL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["cr"] = 450,	-- Defias Renegade Mage
+				})),
+				-- #endif
+				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring
-					["timeline"] = { "removed 4.0.3" },
+					-- Moved to Brainwashed Noble in 10.1.7
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 619,	-- Defias Conjurer
+					["coords"] = {
+						{ 44.6, 69.4, WESTFALL },
+						{ 42.6, 71.6, WESTFALL },
+					},
 				}),
+				-- #endif
 				i(2327, {	-- Sturdy Leather Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 480,	-- Rusty Harvest Golem
+					["coords"] = {
+						{ 59.6, 18.6, WESTFALL },
+						{ 54.6, 26.0, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 452,	-- Riverpaw Bandit
+					["coords"] = {
+						{ 56.6, 70.0, WESTFALL },
+						{ 59.6, 75.0, WESTFALL },
+					},
+					-- #endif
 				}),
 				i(827, {	-- Wicked Blackjack
 					["crs"] = {

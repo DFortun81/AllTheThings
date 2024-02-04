@@ -22,222 +22,212 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 			}),
 			ach(14961, {	-- Chains of Domination
-				crit(1, {	-- Battle of Ardenweald
+				crit(51692, {	-- Battle of Ardenweald
 					["sourceQuests"] = { 63639 },	-- Report to Oribos
 				}),
-				crit(2, {	-- Maw Walkers
+				crit(51693, {	-- Maw Walkers
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				}),
-				crit(3, {	-- Focusing the Eye
+				crit(52490, {	-- Focusing the Eye
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				}),
-				crit(4, {	-- The Last Sigil
+				crit(51694, {	-- The Last Sigil
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 				}),
-				crit(5, {	-- An Army of Bone and Steel
+				crit(51695, {	-- An Army of Bone and Steel
 					["sourceQuests"] = { 63622 },	-- Victory in Our Name
 				}),
-				crit(6, {	-- The Unseen Guests
+				crit(51696, {	-- The Unseen Guests
 					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
 				}),
-				crit(7, {	-- The Power of Night
+				crit(51697, {	-- The Power of Night
 					["sourceQuests"] = { 64437 },	-- Inform the Primus
 				}),
-				crit(8, {	-- A New Path
+				crit(52457, {	-- A New Path
 					["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
 				}),
-				crit(9,	{	-- What Lies Ahead
+				crit(52235,	{	-- What Lies Ahead
 					["sourceQuests"] = { 64314 },	-- Covenants Renewed
 				}),
 			}),
 			ach(15107, {	-- Conquering Korthia
-				crit(1, {
+				crit(52297, {
 					["_npcs"] = { 179853 },	-- Blinding Shadow
 				}),
-				crit(2, {
+				crit(52290, {
 					["_npcs"] = { 180246 },	-- Carriage Crusher
 				}),
-				crit(3, {
+				crit(52285, {
 					["_npcs"] = { 179769 },	-- Consumption
 				}),
-				crit(4, {
+				crit(52275, {
 					["_npcs"] = { 179913 },	-- Deadsoul Hatcher
 				}),
-				crit(5, {
+				crit(52286, {
 					["_npcs"] = { 179779 },	-- Deomen the Vortex
 				}),
-				crit(6, {
+				crit(52277, {
 					["_npcs"] = { 177903 },	-- Dominated Protector
 				}),
-				crit(7, {
+				crit(52298, {
 					["_npcs"] = { 180014 },	-- Escaped Wilderling
 				}),
-				crit(8, {
+				crit(52292, {
 					["_npcs"] = { 179460 },	-- Fallen Charger
 				}),
-				crit(9, {
+				crit(52299, {
 					["_npcs"] = { 180042 },	-- Fleshwing <Lord of the Heap>
 				}),
-				crit(10, {
+				crit(52293, {
 					["_npcs"] = { 179851 },	-- Guard Orguluus
 				}),
-				crit(11, {
+				crit(52303, {
 					["_npcs"] = { 179472 },	-- Konthrogz the Obliterator
 				}),
-				crit(12, {
+				crit(52304, {
 					["_npcs"] = { 179108 },	-- Kroke the Tormented
 				}),
-				crit(13, {
+				crit(52283, {
 					["_npcs"] = { 179684 },	-- Malbog
 				}),
-				crit(14, {
+				crit(52294, {
 					["_npcs"] = { 179914 },	-- Observer Yorik
 				}),
-				crit(15, {
+				crit(52291, {
 					["_npcs"] = { 179931 },	-- Relic Breaker Krelva
 				}),
-				crit(16, {
+				crit(52318, {
 					["_npcs"] = { 180160 },	-- Reliwik the Defiant
 				}),
-				crit(17, {
+				crit(52273, {
 					["_npcs"] = { 179608 },	-- Screaming Shade
 				}),
-				crit(18, {
+				crit(52274, {
 					["_npcs"] = { 179911 },	-- Silent Soulstalker
 				}),
-				crit(19, {
+				crit(52276, {
 					["_npcs"] = { 179985 },	-- Stygian Stonecrusher
 				}),
-				crit(20, {
+				crit(52284, {
 					["_npcs"] = { 179735 },	-- Torglluun <Lord of Shades>
 				}),
-				crit(21, {
+				crit(52302, {
 					["_npcs"] = { 179760 },	-- Towering Exterminator
 				}),
-				crit(22, {
+				crit(52289, {
 					["_npcs"] = { 179805 },	-- Traitor Balthier <Maldraxxi Champion>
 				}),
-				crit(23, {
+				crit(52319, {
 					["_npcs"] = { 180162 },	-- Ve'rayn <Assets and Liabilities>
 				}),
-				crit(24, {
+				crit(52300, {
 					["_npcs"] = { 180032 },	-- Wild Worldcracker
 				}),
-				crit(25, {
+				crit(52296, {
 					["_npcs"] = { 179859 },	-- Xyraxz the Unknowable
 				}),
-				crit(26, {
+				crit(52295, {
 					["_npcs"] = { 179802 },	-- Yarxhov the Pillager
 				}),
-				crit(27, {
+				crit(52287, {
 					["_npcs"] = { 177444 },	-- Ylva <Mate of Guarm>
 				}),
-				crit(28, {
+				crit(52301, {
 					["_npcs"] = { 177336 },	-- Zelnithop
 				}),
 			}),
-			ach(15053, {	-- Explore Korthia
-				crit(1),	-- Estuary of Awakening
-				crit(2),	-- Hope's Ascent
-				crit(3),	-- Keeper's Respite
-				crit(4),	-- Mauler's Outlook
-				crit(5),	-- Sanctuary of Guidance
-				crit(6),	-- Scholar's Den
-				crit(7),	-- Seeker's Quorum
-				crit(8),	-- Vault of Secrets
-				crit(9),	-- Windswept Aerie
-			}),
+			explorationAch(15053),	-- Explore Korthia
 			ach(15066, {	-- Reliquary Restoration
-				crit(1, {
+				crit(52126, {
 					["sourceQuests"] = { 63860 },	-- Talisman of the Eternal Scholar
 				}),
-				crit(2, {
+				crit(52130, {
 					["sourceQuests"] = { 63892 },	-- Diviner's Rune Chits
 				}),
-				crit(3, {
+				crit(52131, {
 					["sourceQuests"] = { 63899 },	-- Book of Binding: The Mad Witch
 				}),
-				crit(4, {
+				crit(52254, {
 					["sourceQuests"] = { 63908 },	-- Bulwark of Divine Intent
 				}),
-				crit(5, {
+				crit(52255, {
 					["sourceQuests"] = { 63909 },	-- Guise of the Changeling
 				}),
-				crit(6, {
+				crit(52256, {
 					["sourceQuests"] = { 63910 },	-- The Netherstar
 				}),
-				crit(7, {
+				crit(52257, {
 					["sourceQuests"] = { 63911 },	-- Singing Steel Ingot
 				}),
-				crit(8, {
+				crit(52258, {
 					["sourceQuests"] = { 63912 },	-- Celestial Shadowlands Chart
 				}),
-				crit(9,	{
+				crit(52259,	{
 					["sourceQuests"] = { 63913 },	-- Unstable Explosive Orb
 				}),
-				crit(10, {
+				crit(52260, {
 					["sourceQuests"] = { 63914 },	-- Cipher of Understanding
 				}),
-				crit(11, {
+				crit(52269, {
 					["sourceQuests"] = { 63915 },	-- Drum of the Death Loa
 				}),
-				crit(12, {
+				crit(52261, {
 					["sourceQuests"] = { 63916 },	-- Sack of Strange Soil
 				}),
-				crit(13, {
+				crit(52262, {
 					["sourceQuests"] = { 63917 },	-- Everliving Statuette
 				}),
-				crit(14, {
+				crit(52263, {
 					["sourceQuests"] = { 63918 },	-- Obelisk of Dark Tidings
 				}),
-				crit(15, {
+				crit(52264, {
 					["sourceQuests"] = { 63919 },	-- Book of Binding: The Tormented Sorcerer
 				}),
-				crit(16, {
+				crit(52270, {
 					["sourceQuests"] = { 63920 },	-- Enigmatic Decrypting Device
 				}),
-				crit(17, {
+				crit(52265, {
 					["sourceQuests"] = { 63921 },	-- Ring of Self-Reflection
 				}),
-				crit(18, {
+				crit(52266, {
 					["sourceQuests"] = { 63922 },	-- Shadow Slicing Shortsword
 				}),
-				crit(18, {
+				crit(52267, {
 					["sourceQuests"] = { 63923 },	-- Lang Family Wood-Carving
 				}),
-				crit(18, {
+				crit(52268, {
 					["sourceQuests"] = { 63924 },	-- Gorak Claw Fetish
 				}),
 			}),
 			ach(15099, {	-- Treasures of Korthia
-				crit(1, {	-- Glittering Nest Material
+				crit(52236, {	-- Glittering Nest Material
 					["_quests"] = { 64222 }
 				}),
-				crit(2, {	-- Forgotten Feather
+				crit(52237, {	-- Forgotten Feather
 					["_quests"] = { 64234 },
 				}),
-				crit(3, {	-- Lost Memento
+				crit(52238, {	-- Lost Memento
 					["_quests"] = { 64238 },
 				}),
-				crit(4, {	-- Dislodged Nest
+				crit(52240, {	-- Dislodged Nest
 					["_quests"] = { 64241 },
 				}),
-				crit(5, {	-- Anima Laden Egg
+				crit(52241, {	-- Anima Laden Egg
 					["_quests"] = { 64244 },
 				}),
-				crit(6, {	-- Displaced Relic
+				crit(52242, {	-- Displaced Relic
 					["_quests"] = { 64252 },
 				}),
-				crit(7, {	-- Helsworn Chest
+				crit(52243, {	-- Helsworn Chest
 					["_quests"] = { 64256 },
 				}),
-				crit(8, {	-- Jeweled Heart
+				crit(52244, {	-- Jeweled Heart
 					["_quests"] = { 64261 },
 				}),
-				crit(9, {	-- Infested Vestige
+				crit(52245, {	-- Infested Vestige
 					["_quests"] = { 64264 },
 				}),
-				crit(10, {	-- Offering Box
+				crit(52246, {	-- Offering Box
 					["_quests"] = { 64268 },
 				}),
 			}),

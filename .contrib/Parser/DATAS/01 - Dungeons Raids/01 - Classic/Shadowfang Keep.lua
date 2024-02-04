@@ -6,6 +6,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
 		-- #endif
+		["zone-text-areaID"] = 209,	-- Shadowfang Keep
 		-- #if AFTER CATA
 		["coord"] = { 44.79, 67.82, SILVERPINE_FOREST },
 		-- #else
@@ -22,6 +23,26 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		},
 		["lvl"] = lvlsquish(14, 14, 8),
 		["groups"] = {
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["description"] = "The rare mobs only spawn if a Rogue enters the instance alone while on the quest The Horn of Xelthos.",
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(210212, {	-- Brother's Half-Key
+						["description"] = "Found shortly after baron silverlaine.\nHead up the stairs behind the boss, and take a right, gefell should be in a room up the stairs around the corner.",
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 211764,	-- Gefell
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(210213, {	-- Sister's Half-Key
+						["description"] = "Just after the Kitchen in baron silverlaine's room.",
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 211765,	-- Gemela
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(27355, {	-- A Boon for the Powerful
 					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
@@ -755,6 +776,49 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78261, {	-- The Horn of Xelthos (1/2)
+					["providers"] = {
+						{ "o", 410369 },	-- Dead Drop
+						{ "i", 210186 },	-- Breaching Charge
+					},
+					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Horn of Xelthos
+							["providers"] = {
+								{ "i", 210183 },	-- Horn of Xelthos
+								{ "o", 410528 },	-- Ornamented Chest
+								{ "i", 210209 },	-- Twin Key
+							},
+							["description"] = "Once you've gotten both of the half keys from pick pocketing the npcs, combine them and bring the twin key to the ornamented chest in the stables.",
+							["cost"] = {
+								{ "i", 210212, 1 },	-- Brother's Half-Key
+								{ "i", 210213, 1 },	-- Sister's Half-Key
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78307, {	-- The Horn of Xelthos (2/2)
+					["provider"] = { "o", 410369 },	-- Dead Drop
+					["sourceQuest"] = 78261,	-- The Horn of Xelthos (1/2)
+					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
+					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
+					["groups"] = {
+						i(203994, {	-- Rune of Deadly Brew
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400080),	-- Engrave Chest - Deadly Brew
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if AFTER SHADOWLANDS
 				q(27281, {	-- Gormok Ogrefist [SL+] / Grezz Ragefist [CATA]
 					["qgs"] = {
@@ -1560,9 +1624,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/3 Soran'ruk Fragment
 							["provider"] = { "i", 6914 },	-- Soran'ruk Fragment
+							-- #if BEFORE 6.0.1.18322
+							["cr"] = 4809,	-- Twilight Acolyte
+							-- #endif
 						}),
 						objective(2, {	-- 0/1 Large Soran'ruk Fragment
 							["provider"] = { "i", 6915 },	-- Large Soran'ruk Fragment
+							["cr"] = 3855,	-- Shadowfang Darksoul
 						}),
 						i(6898, {	-- Orb of Soran'ruk
 							["timeline"] = { "removed 4.0.3" },
@@ -1797,10 +1865,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						},
 					}),
 					i(2807),	-- Guillotine Axe
-					i(6915, {	-- Large Soran'ruk Fragment
-						["classes"] = { WARLOCK },
-						["cr"] = 3855,	-- Shadowfang Darksoul
-					}),
 					i(1974),	-- Mindthrust Bracers
 					i(2292, {	-- Necrology Robes
 						["crs"] = {
@@ -1836,17 +1900,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(6314),	-- Wolfmaster Cape
 						i(6324),	-- Robes of Arugal
 					},
-				}),
-				o(182011, {	-- Crate of Ingots
-					["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
-					["groups"] = {
-						i(24224, {	-- Crate of Bloodforged Ingots
-							["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
-						}),
-					},
-				}),
-				o(91138, {	-- Jordan's Hammer
-					i(6895),	-- Jordan's Smithing Hammer
 				}),
 				n(3864, {	-- Fel Steed/Shadow Charger
 					i(6341),	-- Eerie Stable Lantern
@@ -1924,6 +1977,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209872, {	-- Dragonslayer's Helm
+					["provider"] = { "o", 409758 },	-- Discarded Helm
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+				})),
+				-- #endif
 				n(3872, {	-- Deathsworn Captain
 					["description"] = "This is a rare that is not always present.",
 					["groups"] = {
@@ -1959,12 +2019,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				o(205476, {	-- Book of Lost Souls
+				i(60873, {	-- Book of Lost Souls
+					["provider"] = { "o", 205476 },	-- Book of Lost Souls
 					["description"] = "This item in located on a chair in Lord Walden's room.",
 					["timeline"] = { "added 4.0.3" },
-					["groups"] = {
-						i(60873),	-- Book of Lost Souls
-					},
 				}),
 				n(4274, {	-- Fenrus the Devourer
 					["timeline"] = { "removed 4.0.3" },
@@ -2094,8 +2152,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["creatureID"] = 46964,
 						["groups"] = {
 							ach(5505, {	-- Bullet Time
-								crit(1),	-- Defeat Lord Godfrey
-								crit(2),	-- Bloodthirsty Ghouls killed by Pistol Barrage
+								crit(16086),	-- Defeat Lord Godfrey
+								crit(16544),	-- Bloodthirsty Ghouls killed by Pistol Barrage
 							}),
 							ach(5093),	-- Heroic: Shadowfang Keep
 							ach(5142),	-- Heroic: Shadowfang Keep Guild Run

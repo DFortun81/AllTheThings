@@ -14,24 +14,24 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6458, {	-- Guardians of Mogu'shan
-					crit(1, {	-- The Stone Guard
+					crit(19110, {	-- The Stone Guard
 						["_encounter"] = { 679, 7 },
 					}),
-					crit(2, {	-- Feng the Accursed
+					crit(19111, {	-- Feng the Accursed
 						["_encounter"] = { 689, 7 },
 					}),
-					crit(3, {	-- Gara'jal the Spiritbinder
+					crit(19112, {	-- Gara'jal the Spiritbinder
 						["_encounter"] = { 682, 7 },
 					}),
 				}),
 				ach(6844, {	-- The Vault of Mysteries
-					crit(1, {	-- The Spirit Kings
+					crit(19113, {	-- The Spirit Kings
 						["_encounter"] = { 687, 7 },
 					}),
-					crit(2, {	-- Elegon
+					crit(19767, {	-- Elegon
 						["_encounter"] = { 726, 7 },
 					}),
-					crit(3, {	-- Will of the Emperor
+					crit(19115, {	-- Will of the Emperor
 						["_encounter"] = { 677, 7 },
 					}),
 				}),
@@ -70,7 +70,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 					["timeline"] = { ADDED_8_1_5 },
 				}),
-				i(138804, {	-- Illusion: Colossus
+				i(138804, {	-- Illusion: Colossus (ILLUSION!)
 					["crs"] = {
 						60400,	-- Jan-xi <Emperor's Open Hand>
 						60399,	-- Qin-xi <Emperor's Closed Fist>
@@ -78,11 +78,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["timeline"] = { ADDED_7_0_3 },
 				}),
 			}),
-			d(7, {	-- LFR Queue NPC
+			d(RAID_FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(7, {	-- LFR
+			d(RAID_FINDER, {
 				["ignoreBonus"] = true,
 				["g"] = {
 					i(95618, {	-- Cache of Mogu Riches
@@ -238,18 +238,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						i(86044),	-- Jade Magistrate Figurine
 						i(86045),	-- Jade Courtesan Figurine
 						i(86046),	-- Jade Warlord Figurine
-						i(86238),	-- Pattern: Chestguard of Nemeses
-						i(86272),	-- Pattern: Fists of Lightning
-						i(86279),	-- Pattern: Liferuned Leather Gloves
-						i(86280),	-- Pattern: Murderer's Gloves
-						i(86281),	-- Pattern: Nightfire Robe
-						i(86283),	-- Pattern: Raiment of Blood and Bone
-						i(86284),	-- Pattern: Raven Lord's Gloves
-						i(86297),	-- Pattern: Stormbreaker Chestguard
-						i(86379),	-- Pattern: Robe of Eternal Rule
-						i(86380),	-- Pattern: Imperial Silk Gloves
-						i(86381),	-- Pattern: Legacy of the Emperor
-						i(86382),	-- Pattern: Touch of the Light
+						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
 						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
@@ -286,11 +286,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						["crs"] = { 60009 },	-- Feng the Accursed
 						["g"] = {
 							ach(6674, {	-- Anything You Can Do, I Can Do Better...
-								crit(1),	-- Epicenter
-								crit(2),	-- Lightning Fists
-								crit(3),	-- Wildfire Spark
-								crit(4),	-- Arcane Velocity
-								crit(5),	-- Arcane Resonance
+								crit(19501),	-- Epicenter
+								crit(19502),	-- Lightning Fists
+								crit(19504),	-- Wildfire Spark
+								crit(19506),	-- Arcane Velocity
+								crit(19507),	-- Arcane Resonance
 							}),
 							i(85986),	-- Amulet of Seven Curses
 							i(86082),	-- Arrow Breaking Windcloak
@@ -406,18 +406,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				["difficulties"] = { 5, 6 },
 				["g"] = {
 					n(ZONE_DROPS, {
-						i(86238),	-- Pattern: Chestguard of Nemeses
-						i(86272),	-- Pattern: Fists of Lightning
-						i(86279),	-- Pattern: Liferuned Leather Gloves
-						i(86280),	-- Pattern: Murderer's Gloves
-						i(86281),	-- Pattern: Nightfire Robe
-						i(86283),	-- Pattern: Raiment of Blood and Bone
-						i(86284),	-- Pattern: Raven Lord's Gloves
-						i(86297),	-- Pattern: Stormbreaker Chestguard
-						i(86379),	-- Pattern: Robe of Eternal Rule
-						i(86380),	-- Pattern: Imperial Silk Gloves
-						i(86381),	-- Pattern: Legacy of the Emperor
-						i(86382),	-- Pattern: Touch of the Light
+						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
 						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)

@@ -213,7 +213,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
-						ach(10456),	-- But Y ou Say He's Just a Friend
+						ach(10456, {	-- But You Say He's Just a Friend
+							["crs"] = { 97264 },	-- Hatecoil Shellbreaker
+						}),
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134223),	-- Coralplate Chestguard
 						i(134484),	-- Crestrider Conduit Bracers
@@ -227,7 +229,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(137363),	-- Bloodied Spearhead
 					})),
 					cr(91789, e(1490, {	-- Lady Hatecoil
-						ach(10457),	-- Stay Salty
+						ach(10457, {	-- Stay Salty
+							["crs"] = { 98293 },	-- Saltsea Globule
+						}),
 						i(134238),	-- Brinewashed Leather Pants
 						i(134230),	-- Coralplate Wristguard
 						i(134433),	-- Cord of the Sea-Caller

@@ -5,6 +5,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(250, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Mana Tombs
 		["lore"] = "Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",
 		["sins"] = {
+			[[~DUNGEON_FLOOR_MANATOMBS1]],
 			"Auchindoun: Mana-Tombs",
 			"Auchindoun: The Mana Tombs",
 			"Auchindoun: Managruft",
@@ -59,7 +60,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(10216,  {	-- Safety is Job One
-					["qg"] = 19670,	-- Artificer Morphalius
+					["providers"] = {
+						{ "n",  19670 },	-- Artificer Morphalius
+						{ "o", 183877 },	-- Ethereal Transporter Control Panel
+					},
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["lvl"] = lvlsquish(64, 64, 15),
@@ -98,7 +102,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(10218, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
-					["qg"] = 19671,	-- Cryo-Engineer Sha'heen
+					["providers"] = {
+						{ "n",  19671 },	-- Cryo-Engineer Sha'heen
+						{ "o", 183877 },	-- Ethereal Transporter Control Panel
+					},
 					["sourceQuest"] = 10216,	-- Safety Is Job One
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 64, 15),
@@ -148,9 +155,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29575, {	-- Undercutting the Competition
 					["qg"] = 54692,	-- Artificer Morphalius
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 28490, 1 },	-- Shaffar's Wrappings
-					},
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
@@ -278,7 +282,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27828),	-- Warp-Scarab Brooch
 						-- #endif
 						i(28490),	-- Shaffar's Wrappings
-						i(22921),	-- Recipe: Major Frost Protection Potion
+						i(22921),	-- Recipe: Major Frost Protection Potion (RECIPE!)
 					},
 				}),
 			}),
@@ -428,7 +432,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(28490),	-- Shaffar's Wrappings
 							i(33835),	-- Shaffar's Wondrous Amulet
-							i(22921),	-- Recipe: Major Frost Protection Potion
+							i(22921),	-- Recipe: Major Frost Protection Potion (RECIPE!)
 						},
 					}),
 				},

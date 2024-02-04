@@ -10,64 +10,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 69.32, 24.94, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
-					i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
-						["sym"] = {
-							{"select", "headerID", WARFRONT },
-							{"pop"},	-- Discard the War Effort Header and acquire the children.
-							{"where", "mapID", ARATHI_HIGHLANDS },
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
-							{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-							{"modID", 5},	-- iLvl 340
-						},
-					}),
-					i(163857, {	-- Azerite Armor Cache
-						["sym"] = {
-							{"sub", "bfa_azerite_armor_chest" },
-						},
-					}),
-				},
+				["sym"] = { { "select", "itemID", 165872, 163857 } },		-- 7th Legion Equipment Cache & Azerite Armor Cache
 			}),
-			q(50599, {	-- Proudmoore Admiralty
-				["provider"] = { "n", 135808 },	-- Provisioner Fray
-				["lvl"] = 120,
-				["coord"] = { 67.52, 21.56, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["isWorldQuest"] = true,
-				["g"] = {
-					i(165869, {	-- Proudmoore Admiralty Equipment Cache
-						["sym"] = {
-							{"select", "itemID", 157996},	-- Harbormaster Pauldrons
-							{"finalize"},	-- Push the items to the finalized list.
-							{"select", "mapID", KUL_TIRAS},
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"select", "mapID", TIRAGARDE_SOUND},
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", ZONE_REWARDS },
-							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
-							{"is", "itemID" },	-- Select the Items.
-							{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
-						},
-					}),
-					i(165867, {	-- Kul Tiran Weapons Cache
-						["sym"] = {
-							{"select", "mapID", KUL_TIRAS},
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", ZONE_REWARDS },
-							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
-							{"is", "itemID" },	-- Select the Items.
-							{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
-						},
-					}),
-					i(163857, {	-- Azerite Armor Cache
-						["sym"] = {
-							{"sub", "bfa_azerite_armor_chest" },
-						},
-					}),
-				},
-			}),
-			q(54454, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Supplies from the 7th Legion
+			q(54454, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_7TH_LEGION, EXALTED } }, {	-- Supplies from the 7th Legion
 				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
 				["coord"] = { 69.32, 24.94, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -79,7 +24,39 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			})),
-			q(54458, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Supplies from Proudmoore Admiralty
+			q(50599, {	-- Proudmoore Admiralty
+					["provider"] = { "n", 135808 },	-- Provisioner Fray
+					["lvl"] = 120,
+					["coord"] = { 67.52, 21.56, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["isWorldQuest"] = true,
+					["g"] = {
+						i(165869, {	-- Proudmoore Admiralty Equipment Cache
+							["sym"] = {
+								{"select", "itemID", 157996},	-- Harbormaster Pauldrons
+								{"finalize"},	-- Push the items to the finalized list.
+								{"select", "mapID", TIRAGARDE_SOUND},
+								{"find", "headerID", ZONE_REWARDS },
+								{"extract", "itemID" },	-- Select the Items.
+								{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
+							},
+						}),
+						i(165867, {	-- Kul Tiran Weapons Cache
+							["sym"] = {
+								{"select", "mapID", KUL_TIRAS},
+								{"find", "headerID", ZONE_REWARDS },
+								{"extract", "itemID" },	-- Select the Items.
+								{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
+							},
+						}),
+						i(163857, {	-- Azerite Armor Cache
+							["sym"] = {
+								{"sub", "bfa_azerite_armor_chest" },
+							},
+						}),
+					},
+			}),
+			q(54458, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_PROUDMOORE_ADMIRALTY, EXALTED } }, {	-- Supplies from Proudmoore Admiralty
 				["provider"] = { "n", 135808 },	-- Provisioner Fray
 				["coord"] = { 67.52, 21.56, BORALUS },
 				["races"] = ALLIANCE_ONLY,

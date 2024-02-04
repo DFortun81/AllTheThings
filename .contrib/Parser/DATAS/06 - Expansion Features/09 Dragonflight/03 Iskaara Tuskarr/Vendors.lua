@@ -5,6 +5,7 @@ local ALIERON_SEAMOTH = 194967;
 local AQUATIC_MAW = 201400;
 local AWAKENED_FROST = 190329;
 local CERULEAN_SPINEFISH = 194968;
+local CHROMATIC_DUST = 194123;
 local LARGE_STURDY_FEMUR = 201402;
 local MASTODON_TUSK = 201403;
 local PRIMAL_BEAR_SPINE = 201399;
@@ -44,7 +45,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					199881,	-- Tuskarr Fisherman's Harpoon
 					199880,	-- Tuskarr Leviathan's Hook
 					199878,	-- Tuskarr Timber Splitter
-					199883,	-- Tuskarr Sharktooth Bolthrower
+					199883,	-- Tuskarr Sharktooth Bolt-Thrower
 					199882,	-- Tuskarr Mystic's Stave
 				}},
 			}),
@@ -81,7 +82,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					------ RENOWN 12 ------
 					199877,	-- Ensemble: Tuskarr Trader's Leather Armor
 					------ RENOWN 23 ------
-					199547,	-- Spine Reinforced Spaulders
+					199547,	-- Spine-Reinforced Spaulders
 					------ RENOWN 28 ------
 					199548,	-- Rugged Seaspawn Spaulders
 					199542,	-- Red Tufted Shoulderpads
@@ -89,7 +90,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					199541,	-- Grey Tufted Shoulderpads
 					199545,	-- Grey Depths Shoulderguards
 					199540,	-- Green Tufted Shoulderpads
-					199549,	-- Depth Delvers Spaulders
+					199549,	-- Depth Delver's Spaulders
 					199546,	-- Crimson Depths Shoulderguards
 					199539,	-- Blue Tufted Shoulderpads
 					199550,	-- Bloody Shorestalker's Spaulders
@@ -390,7 +391,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", RESILIENT_LEATHER, 10 },
 							},
 						}),
-						i(199858, {	-- Dark Tuskarr Traders Pack
+						i(199858, {	-- Dark Tuskarr Trader's Pack
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 500 },
 								{ "i", TALLSTRIDER_SINEW, 5 },
@@ -411,7 +412,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", RESILIENT_LEATHER, 10 },
 							},
 						}),
-						i(199856, {	-- Rustic Tuskarr Traders Pack
+						i(199856, {	-- Rustic Tuskarr Trader's Pack
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 500 },
 								{ "i", TALLSTRIDER_SINEW, 5 },
@@ -432,7 +433,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", TEMPORAL_DRAGONHEAD, 5 },
 							},
 						}),
-						i(199857, {	-- Tan Tuskarr Traders Pack
+						i(199857, {	-- Tan Tuskarr Trader's Pack
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 500 },
 								{ "i", TALLSTRIDER_SINEW, 5 },
@@ -576,7 +577,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
 							},
 						}),
-						i(199883, {	-- Tuskarr Sharktooth Bolthrower
+						i(199883, {	-- Tuskarr Sharktooth Bolt-Thrower
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 600 },
 								{ "i", AQUATIC_MAW, 2 },
@@ -622,7 +623,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", RUNED_WRITHEBARK, 5 },
-								{ "i", MASTODON_TUSK, 2 },
+								{ "i", CHROMATIC_DUST, 5 },
 							},
 						}),
 					}, {	-- RENOWN 27 --
@@ -655,7 +656,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", RESILIENT_LEATHER, 10 },
 							},
 						}),
-						i(199549, {	-- Depth Delvers Spaulders
+						i(199549, {	-- Depth Delver's Spaulders
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 250 },
 								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
@@ -704,7 +705,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", PRIMAL_BEAR_SPINE, 1 },
 							},
 						}),
-						i(199547, {	-- Spine Reinforced Spaulders
+						i(199547, {	-- Spine-Reinforced Spaulders
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 250 },
 								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
@@ -808,7 +809,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					199533,	-- Green Stocking Cap
 					199537,	-- Forest Green Ear Warmer
 					199535,	-- Crimson Ear Warmer
-					199534,	-- Blue Stocking Cap
 				}},
 			}),
 			n(194059, {	-- Rokkutuk <Lead Craftsman>
@@ -873,16 +873,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					------ RENOWN 26 ------
 					199855,	-- Burgandy Fisherman's Pack
 					199863,	-- Burgandy Tuskarr Backpack
-					199859,	-- Burgandy Tuskarr Traders Pack
+					199859,	-- Burgandy Tuskarr Trader's Pack
 					199854,	-- Dark Fisherman's Pack
 					199862,	-- Dark Tuskarr Backpack
-					199858,	-- Dark Tuskarr Traders Pack
+					199858,	-- Dark Tuskarr Trader's Pack
 					199852,	-- Rustic Fisherman's Pack
 					199860,	-- Rustic Tuskarr Backpack
-					199856,	-- Rustic Tuskarr Traders Pack
+					199856,	-- Rustic Tuskarr Trader's Pack
 					199853,	-- Tan Fisherman's Pack
 					199861,	-- Tan Tuskarr Backpack
-					199857,	-- Tan Tuskarr Traders Pack
+					199857,	-- Tan Tuskarr Trader's Pack
 				}},
 			}),
 		}),

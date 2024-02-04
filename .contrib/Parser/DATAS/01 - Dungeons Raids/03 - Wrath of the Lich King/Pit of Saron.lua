@@ -9,24 +9,24 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4517, {	-- The Pit of Saron
-					crit(13317, { -- Forgemaster Garfrost
+					crit(13317, {	-- Forgemaster Garfrost
 						["_encounter"] = { 608, 1 },
 					}),
-					crit(13318, { -- Ick and Krick
+					crit(13318, {	-- Ick and Krick
 						["_encounter"] = { 609, 1 },
 					}),
-					crit(13319, { -- Scourgelord Tyrannus and Rimefang
+					crit(13319, {	-- Scourgelord Tyrannus and Rimefang
 						["_encounter"] = { 610, 1 },
 					}),
 				}),
 				ach(4520, {	-- Heroic: The Pit of Saron
-					crit(13182, { -- Forgemaster Garfrost
+					crit(13182, {	-- Forgemaster Garfrost
 						["_encounter"] = { 608, 2 },
 					}),
-					crit(13173, { -- Ick and Krick
+					crit(13173, {	-- Ick and Krick
 						["_encounter"] = { 609, 2 },
 					}),
-					crit(13175, { -- Scourgelord Tyrannus and Rimefang
+					crit(13175, {	-- Scourgelord Tyrannus and Rimefang
 						["_encounter"] = { 610, 2 },
 					}),
 				}),
@@ -97,6 +97,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					},
 				}),
 			}),
+			-- #if ANYCLASSIC
+			n(ZONE_DROPS, {
+				i(49718, {	-- Infused Saronite Bar
+					["provider"] = { "o", 201592 },	-- Infused Saronite Bars
+				}),
+			}),
+			-- #endif
 			d(NORMAL_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(49852),	-- Coffin Nail

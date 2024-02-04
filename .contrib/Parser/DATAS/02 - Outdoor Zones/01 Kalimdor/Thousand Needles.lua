@@ -20,6 +20,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4938, {	-- Thousand Needles Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Treasure Trove [A]
 							["races"] = ALLIANCE_ONLY,
@@ -52,6 +53,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 28161,	-- Spread the Word [H]
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -360,6 +362,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28124,	-- On to the Bulwark
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
 					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(1531, {	-- Call of Air [Orgrimmar]
+					["qg"] = 5892,	-- Searn Firewarder
+					["coord"] = { 37.8, 37.4, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						i(5178, {	-- Air Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+				}),
+				q(1532, {	-- Call of Air [Thunder Bluff]
+					["qg"] = 5906,	-- Xanis Flameweaver
+					["coord"] = { 25.2, 21, THUNDER_BLUFF },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						i(5178, {	-- Air Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
 				}),
 				q(25672, {	-- Carcass Collection
 					["qg"] = 41060,	-- Ajamon Ghostcaller
@@ -2392,7 +2420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8223, {	-- Blade of the Basilisk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -2414,7 +2442,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8224, {	-- Silithid Ripper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2444,7 +2472,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8224, {	-- Silithid Ripper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2533,7 +2561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 50.6, THOUSAND_NEEDLES },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6068, {  -- Recipe: Shadow Oil
+						i(6068, {  -- Recipe: Shadow Oil (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to trainers
 						}),
 					},
@@ -2575,8 +2603,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(1493, {	-- Heavy Marauder Scimitar
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 15.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 4099,	-- Galak Marauder
+					["coords"] = {
+						{ 44.6, 33.6, THOUSAND_NEEDLES },
+						{ 20.6, 22.2, THOUSAND_NEEDLES },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 40062,	-- Galak Mauler
+					["coords"] = {
+						{ 88.6, 46.8, THOUSAND_NEEDLES },
+						{ 90.2, 54.4, THOUSAND_NEEDLES },
+						{ 87.6, 52.0, THOUSAND_NEEDLES },
+						{ 86.4, 49.0, THOUSAND_NEEDLES },
+					},
+					-- #endif
 				}),
 				-- #if AFTER TBC
 				i(5773, {	-- Pattern: Robes of Arcana

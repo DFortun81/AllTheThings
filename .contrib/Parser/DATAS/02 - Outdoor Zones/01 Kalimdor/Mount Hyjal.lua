@@ -4,34 +4,17 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(MOUNT_HYJAL, {
 		["lore"] = "Mount Hyjal is the zone most players quest in when starting Cataclysm zones. Between Ragnaros attacking Hyjal with the help of the Twilight Cultists and Malfurion Stormrage back from the Emerald Dream, this zone is filled with familiar faces and epic quests from the start. The scenery alternates between lush forests and scorched earth, as the player attempts to heal the land and regrow the forests.",
+		["icon"] = 409547,	-- "Interface\\Icons\\Achievement_zone_mount-hyjal",	-- NOTE: Icon path didn't work. Check again in Cata Classic.
 		["timeline"] = { "added 4.0.3" },
 		["maps"] = {
 			738,	-- Firelands
 			760,	-- Malorne's Nightmare
 		},
-		["achievementID"] = 4863,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(7, {	-- Brok
-							["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
-							["cr"] = 66819,	-- Brok <Master Pet Tamer>
-						}),
-					},
-				})),
-				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
-					crit(1),	-- Angry Little Squirrel
-					crit(2),	-- Hyjal Bear Cub
-					crit(3),	-- Alpine Songbird slain
-					crit(4),	-- Child of Tortolla
-				}),
-				ach(4959),	-- Beware of the 'Unbeatable?' Pterodactyl
 				ach(5483),	-- Bounce
 				ach(4870, {	-- Coming Down the Mountain
+					-- #IF ANYCLASSIC
 					crit(1, {	-- The Return of the Ancients
 						["sourceQuest"] = 25584,	-- The Return of the Ancients
 					}),
@@ -66,25 +49,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					crit(9, {	-- Extinguish the Firelord
 						["sourceQuest"] = 25551,	-- The Firelord
 					}),
+					-- #ENDIF
 				}),
 				explorationAch(4863),	-- Explore Hyjal
-				ach(5864),	-- Gang War
-				ach(5865, {	-- Have... Have We Met?
-					crit(4),	-- Chromie
-					crit(2),	-- Hemet Nesingwary
-					crit(1),	-- Linken
-					crit(5),	-- Mankrik
-					crit(3),	-- Nat Pagle
-					crit(6),	-- Thassarian
-				}),
-				ach(5869, {	-- Infernal Ambassadors
-					crit(4),	-- Slay Galenges before he is weakened a second time
-					crit(3),	-- Slay Lylagar without taking damage from Lylagar Breath. slain
-					crit(2),	-- Slay Millagazor without taking damage from Gout of Flame. slain
-					crit(5),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury. slain
-					crit(1),	-- Slay Pyrachnis without using the Emerald of Aessina. slain
-				}),
-				ach(5862),	-- Ludicrous Speed
 				ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN.
 					i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 						["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
@@ -94,20 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				}),
-				ach(5861, {	-- The Fiery Lords of Sethria's Roost
-					crit(3, {	-- Andrazor slain
-						["cr"] = 53267,	-- Andrazor
-					}),
-					crit(4, {	-- Fah Jarakk slain
-						["cr"] = 53271,	-- Fah Jarakk
-					}),
-					crit(2, {	-- Kelbnar slain
-						["cr"] = 53265,	-- Kelbnar
-					}),
-					crit(1, {	-- Searris slain
-						["cr"] = 53264,	-- Searris
-					}),
-				}),
+				achWithRep(4882, 1158),	-- The Guardians of Hyjal
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -142,6 +96,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 					}),
 				},
+			}),
+			n(FACTIONS, {
+				faction(1158, {	-- Guardians of Hyjal
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_guardiansofhyjal",
+				}),
 			}),
 			prof(FISHING, {
 				o(202776, {	-- Mountain Trout School
@@ -445,7 +404,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 29101,	-- Punting Season
 					["groups"] = {
 						n(52383, {	-- Nemesis <Echo of the Usurper>
-							crit(5, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
+							crit(17834, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
 								["achievementID"] = 5869,
 							}),
 						}),
@@ -685,7 +644,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25901, {	-- Hyjal Recycling Program
 					["qg"] = 41497,	-- Logram
 					["coord"] = { 56.8, 56.0, MOUNT_HYJAL },
-					["sourceQuest"] = 25904,	-- The Hammer and the Key	-- verify
+					["sourceQuest"] = 25372,	-- Aessina's Miracle
 					["groups"] = {
 						i(57347),	-- Bloodbolt Crossbow
 						i(57345),	-- Razorproof Greaves
@@ -842,7 +801,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 29161,	-- Those Bears Up There
 					["groups"] = {
 						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
-							crit(1, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
+							crit(17829, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
 								["achievementID"] = 5869,
 							}),
 						}),
@@ -996,12 +955,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25385, {	-- Save the Wee Animals
 					["qg"] = 39930,	-- Mylune
 					["coord"] = { 19.2, 37.8, MOUNT_HYJAL },
-					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["sourceQuest"] = 25578,	-- Return to Nordrassil
 				}),
 				q(25656, {	-- Scrambling for Eggs
 					["qg"] = 41006,	-- Thisalee Crow
 					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
-					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["sourceQuest"] = 25578,	-- Return to Nordrassil
 				}),
 				q(25554, {	-- Secrets of the Flame
 					["qg"] = 40773,	-- Cenarius
@@ -1305,7 +1264,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29197,	-- Caught Unawares
 					["groups"] = {
-						ach(5866, crit(1)),	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
+						ach(5866, {	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
+							["sym"] = {{ "achievement_criteria" }},
+						}),
 					},
 				}),
 				q(25549, {	-- The Sanctum of the Prophets
@@ -1399,7 +1360,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
 					["sourceQuest"] = 29200,	-- Leyara
 					["groups"] = {
-						ach(5866, crit(2)),	-- The Molten Front Offensive / Gain access to the Molten Front
+						ach(5866, crit(17814)),	-- The Molten Front Offensive / Gain access to the Molten Front
 					},
 				}),
 				q(29196, {	-- To the Sanctuary!
@@ -1518,6 +1479,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25274,	-- Signed in Blood
 				}),
 			}),
+			petbattles({
+				n(66819, {	-- Brok <Master Pet Tamer>
+					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+				}),
+			}),
 			n(RARES, {
 				n(54318, {	-- Ankha
 					["coords"] = {
@@ -1600,7 +1566,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(62377),	-- Cloak of the Dryads
 						i(62386),	-- Cord of the Raven Queen
 						i(62375),	-- Galrond's Band
-						i(138803),	-- Illusion: Mending
+						i(138803, {	-- Illusion: Mending (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(62376),	-- Mountain's Mouth
 						i(62374),	-- Sly Fox Jerkin
 						i(65906),	-- Tabard of the Guardians of Hyjal

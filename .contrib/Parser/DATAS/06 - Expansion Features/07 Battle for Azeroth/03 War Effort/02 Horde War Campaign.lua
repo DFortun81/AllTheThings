@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			n(-253, {	-- Horde War Campaign
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -13,28 +13,28 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["maps"] = { THE_GREAT_SEAL, HALL_OF_CHRONICLERS, DAZARALOR },	-- Dazar'alor
 							["g"] = {
-								crit(1, {	-- Drustvar Foothold
+								crit(40200, {	-- Drustvar Foothold
 									["sourceQuests"] = { 51985 },	-- Return to Zuldazar (Drustvar Foothold)
 								}),
-								crit(2, {	-- Tiragarde Sound Foothold
+								crit(40453, {	-- Tiragarde Sound Foothold
 									["sourceQuests"] = { 51984 },	-- Return to Zuldazar (Tiragarde Sound Foothold)
 								}),
-								crit(3, {	-- Stormsong Valley Foothold
+								crit(40509, {	-- Stormsong Valley Foothold
 									["sourceQuests"] = { 51986 },	-- Return to Zuldazar (Stormsong Valley Foothold)
 								}),
-								crit(4, {	-- The First Assault
+								crit(40454, {	-- The First Assault
 									["sourceQuests"] = { 51601 },	-- The Bridgeport Ride
 								}),
-								crit(5, {	-- The Marshal's Grave
+								crit(40510, {	-- The Marshal's Grave
 									["sourceQuests"] = { 51789 },	-- What Remains of Marshal M. Valentine
 								}),
-								crit(6, {	-- Death of a Tidesage
+								crit(40511, {	-- Death of a Tidesage
 									["sourceQuests"] = { 52122 },	-- To Be Forsaken
 								}),
-								crit(7, {	-- At the Bottom of the Sea
+								crit(40867, {	-- At the Bottom of the Sea
 									["sourceQuests"] = { 52978 },	-- With Prince in Tow
 								}),
-								crit(8, {	-- The Strike on Boralus
+								crit(40868, {	-- The Strike on Boralus
 									["sourceQuests"] = { 53003 },	-- A Cycle of Hatred
 								}),
 							},
@@ -42,16 +42,16 @@ root(ROOTS.ExpansionFeatures,
 						ach(13466, {	-- Tides of Vengeance
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								crit(1, {	-- The Day is Won
+								crit(44256, {	-- The Day is Won
 									["sourceQuests"] = { 53981 },	-- The Day is Won
 								}),
-								crit(2, {	-- Mekkatorque's Battle Plans
+								crit(44259, {	-- Mekkatorque's Battle Plans
 									["sourceQuests"] = { 54022 },	-- Mekkatorque's Battle Plans
 								}),
-								crit(3, {	-- Through the Front Door
+								crit(44257, {	-- Through the Front Door
 									["sourceQuests"] = { 54179 },	-- Through the Front Door
 								}),
-								crit(4, {	-- Fly Out to Meet Them
+								crit(44258, {	-- Fly Out to Meet Them
 									["sourceQuests"] = { 54280 },	-- Fly Out to Meet Them
 								}),
 							},
@@ -61,9 +61,11 @@ root(ROOTS.ExpansionFeatures,
 								57095,	-- Old Soldier
 								57152,	-- Most Loyal
 							},
+							["sym"] = {{"meta_achievement",
+								12509,	-- Ready for War
+								13466,	-- Tides of Vengeance
+							}},
 							["g"] = {
-								crit(1),	-- Ready for War
-								crit(2),	-- Tides of Vengeance
 								title(412),	-- Veteran of the Fourth War
 							},
 						})),

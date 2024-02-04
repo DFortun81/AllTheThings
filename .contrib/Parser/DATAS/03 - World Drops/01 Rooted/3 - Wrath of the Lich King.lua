@@ -757,6 +757,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36652),	-- Stocky Shotgun
 			i(36653),	-- Precipice Longrifle
 			i(36654),	-- Harsh-Winter Rifle
+			i(36645, {	-- Tuskarr Boomstick
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(ONE_HANDED_MACES, {
 			i(33423),	-- Rime-Covered Mace
@@ -1122,10 +1125,10 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		}),
 		-- #endif
 		prof(COOKING, {
-			i(43509),	-- Recipe: Bad Clams
-			i(43510),	-- Recipe: Haunted Herring
-			i(43508),	-- Recipe: Last Week's Mammoth
-			i(43507),	-- Recipe: Tasty Cupcake
+			i(43509),	-- Recipe: Bad Clams (RECIPE!)
+			i(43510),	-- Recipe: Haunted Herring (RECIPE!)
+			i(43508),	-- Recipe: Last Week's Mammoth (RECIPE!)
+			i(43507),	-- Recipe: Tasty Cupcake (RECIPE!)
 		}),
 		-- #if BEFORE 8.0.1.10000
 		prof(FIRST_AID, {
@@ -1135,7 +1138,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		prof(INSCRIPTION, {
 			i(45912, {	-- Book of Glyph Mastery
 				-- #if AFTER 6.0.1.18379
-				["sym"] = {{"select","spellID",165465}},	-- Research: Ink of the Sea
+				-- TODO: this spell is not sourced in Retail... it probably should be but I'm not sure where that's all being done currently
+				-- ["sym"] = {{"select","spellID",165465}},	-- Research: Ink of the Sea
 				-- #endif
 				["filterID"] = MISC,
 			}),

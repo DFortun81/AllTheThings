@@ -36,9 +36,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(70720, {	-- Can't Have These
 					["coord"] = { 12.4, 42.4, THE_AZURE_SPAN },
+					["g"] = {
+						i(199704),	-- Artifact Fragment (QI!)
+					},
 				}),
 				q(70787, {	-- Caught In a Dusk Storm
 					["coord"] = { 27.3, 45.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(199917),	-- Dragon Bone Fragment (QI!)
+					},
 				}),
 				q(70631, {	-- Clearing the Skies
 					["coord"] = { 53.1, 32.8, THE_AZURE_SPAN },
@@ -58,15 +64,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				})),
 				q(70612, {	-- Feed Three-Falls
 					["coord"] = { 17.8, 27.6, THE_AZURE_SPAN },
+					["g"] = {
+						i(194030),	-- Moose Flank (QI!)
+						i(193219),	-- Vorquin Meat (QI!)
+					},
 				}),
 				q(70152, {	-- Fishing Frenzy!
 					["coord"] = { 70.8, 35.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(200530),	-- Sweet Steamed Meat (QI!)
+					},
 				}),
 				q(72022, {	-- Fishing Frenzy!
-					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
+					["coord"] = { 58.7, 34.5, THE_AZURE_SPAN },
+					["g"] = {
+						i(200756),	-- Frozen Steak (QI!)
+					},
 				}),
 				q(70064, {	-- For Imbu!
-					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
+					["coord"] = { 58.4, 66.4, THE_AZURE_SPAN },
+					["g"] = {
+						i(199646),	-- Imbu Tuskarr Bandages (QI!)
+					},
 				}),
 				q(69941, {	-- Frozen Victims
 					["coord"] = { 50.9, 60.5, THE_AZURE_SPAN },
@@ -85,6 +104,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(70622, {	-- Resupply Three-Falls
 					["coord"] = { 20.1, 27.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(199178),	-- Bronze Horn Flower (QI!)
+						i(199176),	-- Thick Bear Fur (QI!)
+						i(199180),	-- Dragon's Blood Berry (QI!)
+						i(199179),	-- Dragon Foil (QI!)
+					},
 				}),
 				q(70035, {	-- Ruriq's River Rapids Ride
 					["coord"] = { 44.55, 54.7, THE_AZURE_SPAN }

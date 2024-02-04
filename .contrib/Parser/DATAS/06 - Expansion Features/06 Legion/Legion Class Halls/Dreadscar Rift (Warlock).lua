@@ -278,7 +278,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						},
 					}),
 					q(40823, {	-- Rebuilding the Council
+					-- #if BEFORE 8.0.1
 						["sourceQuests"] = { 40821 },	-- Power Overwhelming
+						-- #endif
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 					}),
@@ -480,7 +482,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					q(42660, {	-- Vault of the Wardens: Matters of the Heart
 						["sourceQuests"] = {
 							41751,	-- Champion: Kira Iresoul
-							41754,	-- Champion: Shinfel Blightsworn
+							-- 41754,	-- Champion: Shinfel Blightsworn - Discord 9-Nov-23
 						},
 						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["coord"] = { 54.1, 34.9, DREADSCAR_RIFT },
@@ -489,7 +491,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					q(42103, {	-- Let it Feed
 						["sourceQuests"] = {
 							41751,	-- Champion: Kira Iresoul
-							41754,	-- Champion: Shinfel Blightsworn
+							-- 41754,	-- Champion: Shinfel Blightsworn - Discord 9-Nov-23
 						},
 						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["coord"] = { 54.1, 34.9, DREADSCAR_RIFT },
@@ -711,7 +713,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 35.6, 38.4, DREADSCAR_RIFT },
 						["g"] = {
 							mount(232412),	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
-							spell(241851),	-- Netherlord's Chaotic Wrathsteed
 						},
 					})),
 					-- Misc
@@ -808,6 +809,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["g"] = {
 							i(207178, {	-- Grimoire of the Darkfire Imp (CI!)
 								["timeline"] = { ADDED_10_1_5 },
+								["cost"] = 150000000,	-- 15,000g
 							}),
 						},
 					}),
@@ -835,6 +837,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							}),
 							i(139764, {	-- Gloves of the Black Harvest
 								["cost"] = 5000000,	-- 500g
+							}),
+							i(212783, {	-- Grimoire of the Netherwalk Tyrant (CI!)
+								["cost"] = 50000000,	-- 5000g
+								["timeline"] = { ADDED_10_2_5 },
 							}),
 							i(139766, {	-- Leggings of the Black Harvest
 								["cost"] = 5000000,	-- 500g

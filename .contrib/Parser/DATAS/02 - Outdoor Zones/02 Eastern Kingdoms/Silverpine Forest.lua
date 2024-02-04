@@ -18,22 +18,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Forsaken High Command
+						crit(38361, {	-- Forsaken High Command
 							["sourceQuest"] = 27056,	-- Belmont's Report
 						}),
-						crit(2, {	-- Forsaken Rear Guard
+						crit(38362, {	-- Forsaken Rear Guard
 							["sourceQuest"] = 27096,	-- Orcs are in Order
 						}),
-						crit(3, {	-- The Sepulcher
+						crit(38363, {	-- The Sepulcher
 							["sourceQuest"] = 27290,	-- To Forsaken Forward Command
 						}),
-						crit(4, {	-- The Ruins of Gilneas
+						crit(38364, {	-- The Ruins of Gilneas
 							["sourceQuest"] = 27438,	-- The Great Escape
 						}),
-						crit(5, {	-- Ambermill
+						crit(38365, {	-- Ambermill
 							["sourceQuest"] = 27518,	-- Transdimensional Warfare: Chapter III
 						}),
-						crit(6, {	-- On the Battlefront
+						crit(38366, {	-- On the Battlefront
 							["sourceQuest"] = 27601,	-- Cities in Dust
 						}),
 					},
@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27181, {	-- Excising the Taint
 					["qg"] = 45195,	-- Bloodfang Stalker
-					["sourceQuest"] = 27180,	-- Honor the Dead
+					["sourceQuest"] = 27098,	-- Lordaeron [Shifted back 1 quest... no history in report Discord 2023-07-29]
 					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -1344,7 +1344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(4597, {	-- Recipe: Discolored Healing Potion
+						i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1369,15 +1369,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				-- #if AFTER CATA
 				n(1920, {	-- Ambermill Spellscribe [CATA+] / Dalaran Spellscribe
-					["coord"] = { 63.4, 65.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["coord"] = { 63.5, 58.3, SILVERPINE_FOREST },
+					["description"] = "Found upstairs at the given coordinates.\n\nHorde players who have started questing in the zone should complete the main storyline to prevent phasing issues.",
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4437, {	-- Channeler's Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1426,6 +1427,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211875, {	-- Decayed Elemental
+					["provider"] = { "i", 210253 },	-- Rot Totem
+					["coord"] = { 46.0, 22.2, SILVERPINE_FOREST },
+					["classes"] = { SHAMAN },
+					["groups"] = {
+						i(208758, {	-- Earthen Rune
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410107),	-- Engrave Pants - Way of Earth
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(47012, {	-- Effritus
 					["coord"] = { 47.0, 69.4, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1458,6 +1475,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211736, {	-- Grizzled Protector
+					["description"] = "Kill Ferocious Grizzled Bears until the protector appears.",
+					["classes"] = { HUNTER },
+					["crs"] = { 1778 },	-- Ferocious Grizzled Bear
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50330, {	-- Kree
 					["coord"] = { 60.8, 6.4, SILVERPINE_FOREST },
 					["timeline"] = { "added 5.1.0.16309" },
@@ -1477,6 +1509,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211146, {	-- Lost Adventurer
+					["provider"] = { "n", 210802 },	-- Webbed Victim
+					["coord"] = { 34.8, 7.8, SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(51037, {	-- Lost Gilnean Wardog
 					["coord"] = { 59.0, 42.0, SILVERPINE_FOREST },
 					["timeline"] = { "added 5.2.0.16650" },
@@ -1509,18 +1556,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				n(2283, {	-- Ravenclaw Regent
+					-- #if AFTER 10.1.7
+					["coord"] = { 57.4, 31.2, SILVERPINE_FOREST },
+					-- #else
 					["coord"] = { 57.6, 69.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					-- #endif
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["groups"] = {
 						i(6628, {	-- Raven's Claws
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5969, {	-- Regent's Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
+				-- #if BEFORE 4.0.3
 				n(1944, {	-- Rot Hide Bruiser
+					-- Added to Tirisfall in 10.1.7
 					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
@@ -1532,20 +1585,98 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212763, {	-- Sadistic Fiend
+					["description"] = "Cast Curse of Recklessness on him.",
+					["coord"] = { 58.2, 45.2, SILVERPINE_FOREST },
+					["groups"] = {
+						i(208750, {	-- Rune of Channeling
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403932),	-- Engrave Chest - Master Channeler
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1948, {	-- Snarlmane
 					["coord"] = { 66.2, 25.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if AFTER 10.1.7
+					["description"] = "Found in the basement of Fenris Keep.",
+					-- #endif
 					["groups"] = {
 						i(4445, {	-- Flesh Carver
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212753, {	-- Tortured Soul
+					["provider"] = { "i", 210713 },	-- Tortured Soul
+					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(47023, {	-- Thule Ravenclaw
 					["coord"] = { 50.2, 60.0, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Wailing Spirit
+					["coord"] = { 60.2, 74.4, SILVERPINE_FOREST },
+					["groups"] = {
+						i(205905, {	-- Memory of a Devout Champion
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425215),	-- Engrave Chest - Twisted Faith
+							},
+						}),
+					},
+				}))),
+				-- #endif
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(210177, {	-- Ataeric: On Arcane Curiosities
+					["provider"] = { "o", 410299 },	-- Arcane Secrets
+					["coord"] = { 43.4, 41.2, SILVERPINE_FOREST },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+					["provider"] = { "o", 411674 },	-- Prophecy of a King's Demise
+					["coord"] = { 65.8, 23.5, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 409131 },	-- Rusty Chest
+					["description"] = "You will need to use Sprint to make the jump to the platform.",
+					["coord"] = { 45.2, 67.2, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209844, {	-- The Dalaran Digest, Vol. 23
+					["provider"] = { "o", 409501 },	-- Dalaran Digest
+					["coord"] = { 63.5, 63.1, SILVERPINE_FOREST },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
 					-- #if AFTER CATA
@@ -1566,10 +1697,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3554, {	-- Andrea Boynton <Clothier>
 					["coord"] = { 44.6, 39.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					}},
 					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Gray Shirt
-						i(16060),	-- Common White Shirt
 						i(4782, {	-- Solstice Robe
 							["isLimited"] = true,
 						}),
@@ -1597,7 +1730,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5771, {	-- Pattern: Red Linen Bag
 							["isLimited"] = true,
 						}),
-						i(6892),	-- Recipe: Smoked Bear Meat
+						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
@@ -1608,8 +1741,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
@@ -1704,12 +1837,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1942,	-- Rot Hide Savage
 					},
 				}),
+				-- #if ANYCLASSIC
+				i(3173, {	-- Bear Meat
+					["coord"] = { 52.0, 40.4, SILVERPINE_FOREST },
+					["crs"] = {
+						1797,	-- Giant Grizzled Bear
+						1778,	-- Ferocious Grizzled Bear
+					},
+				}),
+				-- #endif
+				-- #if BEFORE 10.1.7
+				-- This was moved to Hillsbrad Foothills!
 				i(4767, {	-- Coppercloth Gloves
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 09.09.2023
+					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					["timeline"] = { "removed 4.0.3" },
+					-- #endif
 					["cr"] = 3578,	-- Dalaran Miner
 				}),
+				-- #endif
 				i(5110, {	-- Dalaran Wizard's Robe
+					-- #if BEFORE 4.0.3
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					["crs"] = {
 						2120,	-- Archmage Ataeric
 						1867,	-- Dalaran Apprentice
@@ -1723,6 +1872,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1888,	-- Dalaran Watcher
 						1889,	-- Dalaran Wizard
 					},
+					-- #else
+					["description"] = "WARNING: This item will be made unavailable, but still learnable, by Alliance players. If you are Alliance, you may want to buy this now.",
+					["crs"] = {
+						45753,	-- Ambermill Portal Guardian
+						1913,	-- Ambermill Warder
+						3577,	-- Ambermill Brewmaster
+						1914,	-- Ambermill Magister
+					},
+					-- #endif
 				}),
 				i(3164, {	-- Discolored Worg Heart
 					["crs"] = {
@@ -1741,6 +1899,75 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3530,	-- Pyrewood Tailor
 					},
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
+					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
+					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["cr"] = 212598,	-- Recke Grinnes
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210253, {	-- Rot Totem
+					["coord"] = { 45.6, 22.6, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { SHAMAN },
+					["cr"] = 1773,	-- Rot Hide Mystic
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
+					["provider"] = { "i", 210696 },	-- Rot Bane
+					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1943,	-- Raging Rot Hide
+						1944,	-- Rot Hide Bruiser
+						1939,	-- Rot Hide Brute
+						1940,	-- Rot Hide Plague Weaver
+						1942,	-- Rot Hide Savage
+					},
+					["groups"] = {
+						recipe(425443),	-- Engrave Gloves - Quick Strike
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+					["coord"] = { 50.8, 61.6, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["cr"] = 1867,	-- Dalaran Apprentice
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206382, {	-- Tempest Icon
+					["coord"] = { 58.6, 44.8, SILVERPINE_FOREST },
+					["classes"] = { SHAMAN },
+					["cr"] = 1972,	-- Grimson the Pale
+					["groups"] = {
+						recipe(410097),	-- Engrave Gloves - Water Shield
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
+					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
+					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1974,	-- Ravenclaw Drudger
+						1973,	-- Ravenclaw Guardian
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
+					["coord"] = { 52.8, 27.4, SILVERPINE_FOREST },
+					["description"] = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["crs"] = {
+						1769,	-- Moonrage Whitescalp
+						1770,	-- Moonrage Darkrunner
+					},
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
+					},
+				})),
 				-- #endif
 			}),
 		},

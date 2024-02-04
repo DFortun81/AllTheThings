@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			n(-236, {	-- Alliance War Campaign
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -14,28 +14,28 @@ root(ROOTS.ExpansionFeatures,
 						["maps"] = { BORALUS },
 						["lvl"] = 110,
 						["g"] = {
-							crit(1, {	-- Nazmir Foothold
+							crit(40201, {	-- Nazmir Foothold
 								["sourceQuests"] = { 51967 },	-- Return to Boralus (Nazmir)
 							}),
-							crit(2, {	-- Vol'dun Foothold
+							crit(40202, {	-- Vol'dun Foothold
 								["sourceQuests"] = { 51969 },	-- Return to Boralus (Vol'dun)
 							}),
-							crit(3, {	-- Zuldazar Foothold
+							crit(40203, {	-- Zuldazar Foothold
 								["sourceQuests"] = { 51968 },	-- Return to Boralus (Zuldazar)
 							}),
-							crit(4, {	-- Blood on the Sand
+							crit(40573, {	-- Blood on the Sand
 								["sourceQuests"] = { 52146 },	-- Blood on the Sand
 							}),
-							crit(5, {	-- Chasing Darkness
+							crit(40574, {	-- Chasing Darkness
 								["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
 							}),
-							crit(6, {	-- A Golden Opportunity
+							crit(40583, {	-- A Golden Opportunity
 								["sourceQuests"] = { 52261 },	-- Gallywix Got Away
 							}),
-							crit(7, {	-- Blood in the Water
+							crit(40869, {	-- Blood in the Water
 								["sourceQuests"] = { 52496 },	-- A Clean Escape
 							}),
-							crit(8, {	-- The Strike on Zuldazar
+							crit(40870, {	-- The Strike on Zuldazar
 								["sourceQuests"] = { 52790 },	-- The Strike on Zuldazar
 							}),
 						},
@@ -47,16 +47,16 @@ root(ROOTS.ExpansionFeatures,
 					ach(13467, {	-- Tides of Vengeance
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(1, {	-- War Marches On
+							crit(44260, {	-- War Marches On
 								["sourceQuests"] = { 53887 },	-- War Marches On
 							}),
-							crit(2, {	-- The Sleeper Agent
+							crit(44261, {	-- The Sleeper Agent
 								["sourceQuests"] = { 54206 },	-- The Sleeper Agent
 							}),
-							crit(3, {	-- Mischief Managed
+							crit(44262, {	-- Mischief Managed
 								["sourceQuests"] = { 54510 },	-- Mischief Managed
 							}),
-							crit(4, {	-- He Who Walks in the Light
+							crit(44263, {	-- He Who Walks in the Light
 								["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 							}),
 						},
@@ -64,9 +64,11 @@ root(ROOTS.ExpansionFeatures,
 					a(ach(13925, {	-- The Fourth War
 					--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 						["sourceQuests"] = { 57002 },	-- Old Soldier
+						["sym"] = {{"meta_achievement",
+							12510,	-- Ready for War
+							13467,	-- Tides of Vengeance
+						}},
 						["g"] = {
-							crit(1),	-- Ready for War
-							crit(2),	-- Tides of Vengeance
 							title(412),	-- Veteran of the Fourth War
 						},
 					})),
@@ -131,6 +133,11 @@ root(ROOTS.ExpansionFeatures,
 							["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 							["coord"] = { 68.1, 21.9, BORALUS },
 							["provider"] = { "n", 121235 },	-- Taelia
+							["groups"] = {
+								ach(12582, {	-- Come Sail Away
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
 						}),
 						q(52654, {	-- The War Campaign
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
@@ -741,6 +748,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
+							["DisablePartySync"] = true,
 						}),
 						q(52154, {	-- Our Next Target
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane

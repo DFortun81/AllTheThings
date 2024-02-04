@@ -8,168 +8,119 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(12473, {	-- A Sound Plan
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1, {	-- The Ashvane Trading Company
+					crit(39984, {	-- The Ashvane Trading Company
 						["sourceQuests"] = { 50531 },	-- Under Their Noses
 					}),
-					crit(2, {	-- Freehold
+					crit(39987, {	-- Freehold
 						["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
 					}),
-					crit(3, {	-- Defenders of Daelin's Gate
+					crit(39988, {	-- Defenders of Daelin's Gate
 						["sourceQuests"] = {
-							49740,	-- Cease Fire!
 							49736,	-- For Kul Tiras!
 						},
 					}),
-					crit(4, {	-- Enemies Within
+					crit(39990, {	-- Defenders of Daelin's Gate
+						["sourceQuests"] = {
+							49740,	-- Cease Fire!
+						},
+					}),
+					crit(39991, {	-- Enemies Within
 						["sourceQuests"] = { 50972 },	-- Proudmoore's Parley
 					}),
-					crit(5, {	-- The Shadow Over Anglepoint
+					crit(39993, {	-- The Shadow Over Anglepoint
 						["sourceQuests"] = { 49302 },	-- The Deadliest Catch
 					}),
-					crit(6, {	-- The Norwington Estate
+					crit(39992, {	-- The Norwington Estate
 						["sourceQuests"] = {
-							48089,	-- Mountain Sounds
 							48088,	-- No Party Like a Trogg Party
 						},
 					}),
-					crit(7, {	-- Castaways and Cutouts
-						["sourceQuests"] = {	-- uncommented are definitely required (have turned both in as final quests to earn the criteria on separate playthroughs).  not sure if the commented-out ones are required.  'toxic community' and 'glimmering locket' definitely aren't required.
-							48421,	-- Blood in the Tides
+					crit(40155, {	-- The Norwington Estate
+						["sourceQuests"] = {
+							48089,	-- Mountain Sounds
+						},
+					}),
+					crit(39985, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							48505,	-- Lovesick and Lost
+						},
+					}),
+					crit(40551, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							49178,	-- My Favorite Things
+						},
+					}),
+					crit(40552, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
 							49226,	-- Silencing the Sisters
-							--	49230,	-- Local Flavor
-							--	48505,	-- Lovesick and Lost
-							--	49178,	-- My Favorite Things
+						},
+					}),
+					crit(40553, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							49230,	-- Local Flavor
+						},
+					}),
+					crit(40554, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							48421,	-- Blood in the Tides
 						},
 					}),
 				},
 			}),
 			ach(12939, {	-- Adventurer of Tiragarde Sound
-				crit(1, {	-- Auditor Dolp
-					-- ["_npcs"] = { NPCID },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(13050, {	-- Bless the Rains Down in Freehold
+				crit(41662, {		-- Banana Hoard
+					["coord"] = { 76.1, 84.6, TIRAGARDE_SOUND },
+					["_npcs"] = { 143855 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
-				crit(2, {	-- Barman Bill
-					-- ["_npcs"] = { NPCID },
+				crit(41663, {		-- Sweete's Feast
+					["coord"] = { 73.3, 83.9, TIRAGARDE_SOUND },
+					["_npcs"] = { 143827 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
-				crit(3, {	-- Bashmu
-					-- ["_npcs"] = { NPCID },
+				crit(41664, {		-- Cart o' Cutlasses
+					["coord"] = { 75.0, 82.9, TIRAGARDE_SOUND },
+					["_npcs"] = { 143857 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
-				crit(4, {	-- Black-Eyed Bart
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(5, {	-- Blackthorne
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(6, {	-- Broodmother Razora
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(7, {	-- Captain Wintersail
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(8, {	-- Carla Smirk
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(9, {	-- Fowlmouth
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(10, {	-- Foxhollow Skyterror
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(11, {	-- Gulliver
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(12, {	-- Kulett the Ornery
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(13, {	-- Lumbergrasp Sentinel
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(14, {	-- Maison the Portable
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(15, {	-- Imperiled Merchants
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(16, {	-- Merianae
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(17, {	-- P4-N73R4
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(18, {	-- Pack Leader Asenya
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(19, {	-- Raging Swell
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(20, {	-- Ranja
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(21, {	-- Saurolisk Tamer Mugg
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(22, {	-- Sawtooth
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(23, {	-- Shiverscale the Toxic
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(24, {	-- Squacks
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(25, {	-- Squirgle of the Depths
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(26, {	-- Sythian the Swift
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(27, {	-- Tempestria
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(28, {	-- Tentulos the Drifter
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(29, {	-- Teres
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(30, {	-- Tort Jaw
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(31, {	-- Totes
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(32, {	-- Twin-hearted Construct
-					-- ["_npcs"] = { NPCID },
+				crit(41665, {		-- Blacktooth Brew
+					["coord"] = { 76.6, 81.8, TIRAGARDE_SOUND },
+					["_npcs"] = { 143840 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
 			}),
-			ach(12556, {	-- Explore Tiragarde Sound
-				crit(1),		-- Anglepoint Wharf
-				crit(2),		-- Boralus
-				crit(3),		-- Fernwood Ridge
-				crit(4),		-- Freehold
-				crit(5),		-- Norwington Estate
-				crit(6),		-- Krakenbane Cove
-				crit(7),		-- Abandoned Junkheap
-				crit(8),		-- Kennings Lodge
-				crit(9),		-- The Wailing Tideway
-				crit(10),		-- Vigil Hill
-				crit(11),		-- Waning Glacier
-			}),
+			explorationAch(12556),	-- Explore Tiragarde Sound
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {
 					ach(13280, {	-- Hobbyist Aquarist
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43598, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43599, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43600, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -177,16 +128,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13270, {	-- Beast Mode
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43618, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43619, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43620, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -194,16 +145,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13271, {	-- Critters with Huge Teeth
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43639, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43640, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43641, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -211,16 +162,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13272, {	-- Dragons Make Everything Better
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43659, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43660, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43661, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -228,16 +179,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13273, {	-- Element of Success
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43678, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43679, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43689, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -245,16 +196,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13274, {	-- Fun With Flying
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43706, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43707, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43708, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -262,16 +213,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13281, {	-- Human Resources
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43728, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43729, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43730, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -279,16 +230,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13275, {	-- Magician's Secrets
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43747, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43748, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43749, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -296,16 +247,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13277, {	-- Machine Learning
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43766, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43767, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43768, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
@@ -313,165 +264,94 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
-								["creatureID"] = 141077,	-- Kwint
+							crit(43785, {	-- Kwint
+								["cr"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
-								["creatureID"] = 141292,	-- Delia Hanako
+							crit(43786, {	-- Delia Hanako
+								["cr"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
-								["creatureID"] = 141479,	-- Burly
+							crit(43787, {	-- Burly
+								["cr"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
 						},
 					}),
 				},
 			})),
+			a(ach(13060, {	-- Kul Runnings
+				crit(41764, {		-- Sliding with Style
+					["_quests"] = { 49994 },	-- Sliding with Style
+				}),
+				crit(41766, {		-- Frozen Freestyle
+					["_quests"] = { 53188 },	-- Frozen Freestyle
+				}),
+				crit(41768, {		-- Slippery Slopes
+					["_quests"] = { 53189 },	-- Slippery Slopes
+				}),
+			})),
 			ach(13058, {	-- Kul Tiran Up the Dance Floor
 				["coord"] = { 50.27, 25.11, TIRAGARDE_SOUND },
 			}),
+			ach(12951, {	-- Proudmoore Admiralty
+				["races"] = ALLIANCE_ONLY,
+			}),
+			a(ach(13049, {	-- The Long Con
+				crit(41668),	-- Aged to Perfection
+				crit(41669),	-- Trixie Business
+				crit(41670),	-- Carentan's Payment
+				crit(41671),	-- A Bad Deal
+				crit(41666),	-- The Long Con
+			})),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852, {	-- Treasures of Tiragarde Sound
-				-- TODO: use _quests and move objects to /Treasures.lua
-				-- crit(1, {	-- Hay Covered Chest
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(2, {	-- Cutwater Treasure Chest
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(3, {	-- Precarious Noble Cache
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(4, {	-- Forgotten Smuggler's Stash
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(5, {	-- Scrimshaw Cache
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(6, {	-- Secret of the Depths
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(7, {	-- Soggy Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(8, {	-- Faded Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(9, {	-- Yellowed Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(10, {	-- Singed Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				o(281397, {	-- Cutwater Treasure Chest [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 72.5, 58.1, TIRAGARDE_SOUND },
-					["questID"] = 50442,
-					["g"] = {
-						crit(2, {	-- Cutwater Treasure Chest
-							["achievementID"] = 12852
-						}),
-						i(155381),  -- Cutwater-Captain's Sapphire Ring
-					},
+				crit(41012, {	-- Hay Covered Chest
+					["_quests"] = { 49963 },	-- Hay Covered Chest
 				}),
-				o(293962, {	-- Precarious Noble Cache [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 56.0, 33.1, TIRAGARDE_SOUND },
-					["questID"] = 52866,
-					["g"] = {
-						crit(3, {	-- Precarious Noble Cache
-							["achievementID"] = 12852
-						}),
-					},
+				crit(41013, {	-- Cutwater Treasure Chest
+					["_quests"] = { 50442 },	-- Cutwater Treasure Chest
 				}),
-				o(293964, {	-- Forgotten Smuggler's Stash [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 61.7, 62.7, TIRAGARDE_SOUND },
-					["questID"] = 52867,
-					["g"] = {
-						crit(4, {	-- Forgotten Smuggler's Stash
-							["achievementID"] = 12852
-						}),
-					},
+				crit(41014, {	-- Precarious Noble Cache
+					["_quests"] = { 52866 },	-- Precarious Noble Cache
 				}),
-				o(293965, {	-- Scrimshaw Cache [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 72.6, 21.5, TIRAGARDE_SOUND },
-					["questID"] = 52870,
-					["g"] = {
-						crit(5, {	-- Scrimshaw Cache
-							["achievementID"] = 12852
-						}),
-					},
+				crit(41015, {	-- Forgotten Smuggler's Stash
+					["_quests"] = { 52867 },	-- Forgotten Smuggler's Stash
 				}),
-				i(162571, {	-- Soggy Treasure Map
-					["questID"] = 52853,
-					["g"] = {
-						o(293852, {	-- Buried Treasure Chest
-							["questID"] = 52807,
-							["coord"] = { 55.01, 46.01, TIRAGARDE_SOUND },
-							["description"] = "At the bottom of the ocean.",
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(7, {	-- Soggy Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41016, {	-- Scrimshaw Cache
+					["_quests"] = { 52870 },	-- Scrimshaw Cache
 				}),
-				i(162580, {	-- Fading Treasure Map
-					["questID"] = 52854,
-					["g"] = {
-						o(293880, {	-- Buried Treasure Chest
-							["questID"] = 52833,
-							["coord"] = { 29.26, 25.35, TIRAGARDE_SOUND },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(8, {	-- Faded Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41017, {	-- Secret of the Depths
+					["_quests"] = { 52195 },	-- Secrets of the Depths (Gem of Acquiescence)
 				}),
-				i(162581, {	-- Yellowed Treasure Map
-					["questID"] = 52859,
-					["g"] = {
-						o(293881, {	-- Buried Treasure Chest
-							["questID"] = 52836,
-							["coord"] = { 90.49, 75.53, TIRAGARDE_SOUND },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(9, {	-- Yellowed Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41018, {	-- Soggy Treasure Map
+					["_quests"] = { 52807 },	-- Soggy Treasure Map
 				}),
-				i(162584, {	-- Singed Treasure Map
-					["questID"] = 52860,
-					["g"] = {
-						o(293884, {	-- Buried Treasure Chest
-							["questID"] = 52845,
-							["coord"] = { 48.96, 37.75, TIRAGARDE_SOUND },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(10, {	-- Singed Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41019, {	-- Faded Treasure Map
+					["_quests"] = { 52833 },	-- Faded Treasure Map
 				}),
-				crit(6, {	-- Secrets of the Deep
-					["description"] = "This can be found in Boralus and requires that you find a number of scrolls before finishing the criteria.",
-					["coord"] = { 61.94, 84.5, TIRAGARDE_SOUND },
+				crit(41020, {	-- Yellowed Treasure Map
+					["_quests"] = { 52836 },	-- Yellowed Treasure Map
+				}),
+				crit(41021, {	-- Singed Treasure Map
+					["_quests"] = { 52845 },	-- Singed Treasure Map
 				}),
 			}),
+			a(achraw(13285, {	-- Upright Citizens
+				i(166247),		-- Citizens Brigade Whistle (TOY!)
+				crit(43718, {		-- Russel the Bard recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+					["coord"] = { 72.4, 68.9, BORALUS },
+				}),
+				crit(43719, {		-- Flynn Fairwind recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+					["coord"] = { 72.0, 61.6, BORALUS },
+				}),
+				crit(43720, {		-- Leeroy Jenkins recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+					["coord"] = { 66.8, 64.0, BORALUS },
+				}),
+			})),
 		}),
 	}),
 })));

@@ -94,6 +94,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["provider"] = { "n", 164738 },	-- Tenaval
 					["coord"] = { 45.4, 28.5, SINFALL_REACHES },
 					["g"] = {
+						i(184561),	-- Anima Embers (QI!)
 						i(181556),	-- Tribute of the Court
 					},
 				}),

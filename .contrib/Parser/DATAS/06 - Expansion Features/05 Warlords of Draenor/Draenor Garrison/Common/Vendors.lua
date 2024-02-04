@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
@@ -88,12 +88,12 @@ root(ROOTS.ExpansionFeatures,
 				n(80159, {	-- Arsenio Zerep <Cook>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122556),	-- Recipe: Buttered Sturgeon
-						i(122557),	-- Recipe: Jumbo Sea Dog
-						i(122558),	-- Recipe: Pickled Eel
-						i(122559),	-- Recipe: Salty Squid Roll
-						i(122555),	-- Recipe: Sleeper Sushi
-						i(122560),	-- Recipe: Whiptail Fillet
+						i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
+						i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
+						i(122558),	-- Recipe: Pickled Eel (RECIPE!)
+						i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
+						i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
+						i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
 					},
 				}),
 				n(88779, {	-- Benjamin Brode <Traveling Merchant>
@@ -294,18 +294,19 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
 				n(76928, {	-- Kraank <Food & Drink>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122556),	-- Recipe: Buttered Sturgeon
-						i(122557),	-- Recipe: Jumbo Sea Dog
-						i(122558),	-- Recipe: Pickled Eel
-						i(122559),	-- Recipe: Salty Squid Roll
-						i(122555),	-- Recipe: Sleeper Sushi
-						i(122560),	-- Recipe: Whiptail Fillet
+						i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
+						i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
+						i(122558),	-- Recipe: Pickled Eel (RECIPE!)
+						i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
+						i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
+						i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
 					},
 				}),
 				n(88635, {	-- Nalya Battlehorn <Contracts>
@@ -399,10 +400,10 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
-						i(122710, {	-- Recipe: Primal Alchemy
+						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
 							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
 						}),
-						i(122600, {	-- Recipe: Savage Blood
+						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128160, {	-- Recipe: Wildswater
@@ -573,6 +574,7 @@ root(ROOTS.ExpansionFeatures,
 						i(111988),	-- The Tannery, Level 2
 						i(111986),	-- Trading Post, Level 2
 						i(116185),	-- War Mill, Level 2
+						-- TODO: this is weird...
 						ach(9406, {		-- Working More Orders (250)
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["g"] = {
@@ -598,10 +600,19 @@ root(ROOTS.ExpansionFeatures,
 								i(111971),	-- Barracks, Level 3
 							},
 						}),
-						ach(9462, {	-- Draenor Angler
+						ach(9462,  {	-- Draenor Angler
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
-								i(111928),	-- Fishing Shack, Level 3
+							["sym"] = {{"meta_achievement",
+								9461,		-- Sea Scorpion Angler
+								9460,		-- Jawless Skulker Angler
+								9459,		-- Fat Sleeper Angler
+								9458,		-- Blind Lake Sturgeon Angler
+								9457,		-- Blackwater Whiptail Angler
+								9456,		-- Abyssal Gulper Eel Angler
+								9455,		-- Fire Ammonite
+							}},
+							["groups"] = {
+								i(111928),		-- Fishing Shack, Level 3 [Blueprints]
 							},
 						}),
 						ach(9453, {	-- Draenic Stone Collector
@@ -670,12 +681,13 @@ root(ROOTS.ExpansionFeatures,
 								i(111983),	-- Storehouse, Level 3
 							},
 						}),
-						ach(9477, {	-- Savage Friends
+						h(ach(9477, {	-- Savage Friends
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["_noautomation"] = true,
 							["g"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
-						}),
+						})),
 						ach(9129, {	-- Filling the Ranks
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["g"] = {
@@ -701,10 +713,10 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
-						i(122710, {	-- Recipe: Primal Alchemy
+						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
 							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
 						}),
-						i(122600, {	-- Recipe: Savage Blood
+						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128160, {	-- Recipe: Wildswater
@@ -833,79 +845,45 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122423, {	-- Scouting Missive: Broken Precipice
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38193,
-							["repeatable"] = true,
 						}),
 						i(122417, {	-- Scouting Missive: Darktide Roost
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38196,
-							["repeatable"] = true,
 						}),
 						i(122404, {	-- Scouting Missive: Everbloom Wilds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38192,
-							["repeatable"] = true,
-						}),
-						i(122420, {	-- Scouting Missive: Gorian Proving Grounds
-							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["timeline"] = { "created 6.1.0.19445" },
-							["questID"] = 38194,
-							["repeatable"] = true,
 						}),
 						i(122406, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38191,
-							["repeatable"] = true,
 						}),
 						i(122414, {	-- Scouting Missive: Lost Veil Anzu
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38198,
-							["repeatable"] = true,
 						}),
 						i(122399, {	-- Scouting Missive: Magnarok
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38190,
-							["repeatable"] = true,
 						}),
 						i(122422, {	-- Scouting Missive: Mok'gol Watchpost
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38195,
-							["repeatable"] = true,
 						}),
 						i(122409, {	-- Scouting Missive: Pillars of Fate
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38199,
-							["repeatable"] = true,
 						}),
 						i(122410, {	-- Scouting Missive: Shattrath Harbor
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38201,
-							["repeatable"] = true,
 						}),
 						i(122407, {	-- Scouting Missive: Skettis
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38200,
-							["repeatable"] = true,
 						}),
 						i(122415, {	-- Scouting Missive: Socrethar's Rise
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38197,
-							["repeatable"] = true,
 						}),
 						i(122401, {	-- Scouting Missive: Stonefury Cliffs
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38189,
-							["repeatable"] = true,
 						}),
 						i(133883, {	-- Scouting Missive: The Heart of Shattrath
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 40944,
-							["repeatable"] = true,
 						}),
 						i(133878, {	-- Scouting Missive: The Pit
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 40942,
-							["repeatable"] = true,
 						}),
 						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
@@ -957,79 +935,45 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122424, {	-- Scouting Missive: Broken Precipice
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38180,
-							["repeatable"] = true,
 						}),
 						i(122418, {	-- Scouting Missive: Darktide Roost
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38182,
-							["repeatable"] = true,
 						}),
 						i(122400, {	-- Scouting Missive: Everbloom Wilds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38179,
-							["repeatable"] = true,
-						}),
-						i(122419, {	-- Scouting Missive: Gorian Proving Grounds
-							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["timeline"] = { "created 6.1.0.19445" },
-							["questID"] = 38202,
-							["repeatable"] = true,
 						}),
 						i(122402, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38178,
-							["repeatable"] = true,
 						}),
 						i(122413, {	-- Scouting Missive: Lost Veil Anzu
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38184,
-							["repeatable"] = true,
 						}),
 						i(122403, {	-- Scouting Missive: Magnarok
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38177,
-							["repeatable"] = true,
 						}),
 						i(122421, {	-- Scouting Missive: Mok'gol Watchpost
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38181,
-							["repeatable"] = true,
 						}),
 						i(122411, {	-- Scouting Missive: Pillars of Fate
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38185,
-							["repeatable"] = true,
 						}),
 						i(122412, {	-- Scouting Missive: Shattrath Harbor
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38187,
-							["repeatable"] = true,
 						}),
 						i(122408, {	-- Scouting Missive: Skettis
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38186,
-							["repeatable"] = true,
 						}),
 						i(122416, {	-- Scouting Missive: Socrethar's Rise
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38183,
-							["repeatable"] = true,
 						}),
 						i(122405, {	-- Scouting Missive: Stonefury Cliffs
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 38176,
-							["repeatable"] = true,
 						}),
 						i(133884, {	-- Scouting Missive: The Heart of Shattrath
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 40943,
-							["repeatable"] = true,
 						}),
 						i(133876, {	-- Scouting Missive: The Pit
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
-							["questID"] = 40941,
-							["repeatable"] = true,
 						}),
 						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
@@ -1105,6 +1049,7 @@ root(ROOTS.ExpansionFeatures,
 						i(111990),	-- The Forge, Level 2
 						i(111988),	-- The Tannery, Level 2
 						i(111986),	-- Trading Post, Level 2
+						-- TODO: this is weird...
 						ach(9406, {		-- Working More Orders (250)
 							["g"] = {
 								i(111930),	-- Alchemy Lab, Level 3
@@ -1136,11 +1081,20 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
-						ach(9462, {	-- Draenor Angler
-							["g"] = {
-								i(111928),	-- Fishing Shack, Level 3
-							},
+						ach(9462,  {	-- Draenor Angler
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["sym"] = {{"meta_achievement",
+								9461,		-- Sea Scorpion Angler
+								9460,		-- Jawless Skulker Angler
+								9459,		-- Fat Sleeper Angler
+								9458,		-- Blind Lake Sturgeon Angler
+								9457,		-- Blackwater Whiptail Angler
+								9456,		-- Abyssal Gulper Eel Angler
+								9455,		-- Fire Ammonite
+							}},
+							["groups"] = {
+								i(111928),		-- Fishing Shack, Level 3 [Blueprints]
+							},
 						}),
 						ach(9495, {	-- The Bone Collector
 							["g"] = {
@@ -1208,12 +1162,13 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
-						ach(9478, {	-- Savage Friends
+						a(ach(9478, {	-- Savage Friends
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["_noautomation"] = true,
 							["g"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-						}),
+						})),
 					},
 				}),
 				n(95470, {	-- Trader Araanda <Local Supplies>
@@ -1286,7 +1241,7 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
@@ -1358,6 +1313,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),

@@ -8,18 +8,15 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["maps"] = { 703, 704, 705 },
 		["g"] = {
 			n(QUESTS, {
-				o(251991, {	-- The Aegis of Aggramar
+				q(43349, {	-- The Aegis of Aggramar
+					["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
+					["provider"] = {"o",251991},	-- The Aegis of Aggramar
 					["modelScale"] = 3,
 					["g"] = {
-						q(43349, {	-- The Aegis of Aggramar
-							["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
-							["g"] = {
-								i(130016),	-- Valor-Bound Legplates
-								i(129997),	-- Valor-Bound Legwraps
-								i(129989),	-- Valor-Bound Trousers
-								i(130005),	-- Valor-Bound Greaves
-							},
-						}),
+						i(130016),	-- Valor-Bound Legplates
+						i(129997),	-- Valor-Bound Legwraps
+						i(129989),	-- Valor-Bound Trousers
+						i(130005),	-- Valor-Bound Greaves
 					},
 				}),
 			}),
@@ -243,8 +240,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				["lvl"] = 110,
 				["g"] = {
 					n(ACHIEVEMENTS, {
-						ach(10542),	-- I Got What You Mead
-						ach(10544),	-- Stag Party
+						ach(10542, {	-- I Got What You Mead
+							["crs"] = { 102423 },	-- Mug of Mead
+						}),
+						ach(10544, {	-- Stag Party
+							["crs"] = { 99891 },	-- Storm Drake
+						}),
 					}),
 					n(ZONE_DROPS, {
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
@@ -319,7 +320,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["g"] = {
 							ach(10789),	-- Mythic: Halls of Valor
 							ach(10858),	-- Mythic: Halls of Valor Guild Run
-							ach(10543),	-- Surge Protector
+							ach(10543, {	-- Surge Protector
+								["crs"] = { 102019 },	-- Stormforged Obliterator
+							}),
 							i(137857),	-- Design: Raging Furystone Gorget [Rank 3] (RECIPE!)
 							i(137911),	-- Pattern: Battlebound Grips [Rank 3] (RECIPE!)
 							i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)

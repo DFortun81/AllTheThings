@@ -56,19 +56,19 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12297, {	-- The Siege of Ulduar
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- Flame Leviathan
+						crit(39267, {	-- Flame Leviathan
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33113 },
 						}),
-						crit(2, {	-- Razorscale
+						crit(39268, {	-- Razorscale
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33186 },
 						}),
-						crit(3, {	-- Ignis the Furnace Master
+						crit(39270, {	-- Ignis the Furnace Master
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33118 },
 						}),
-						crit(4, {	-- XT-002 Deconstructor
+						crit(39269, {	-- XT-002 Deconstructor
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33293 },
 						}),
@@ -77,15 +77,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12302, {	-- The Antechamber of Ulduar
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- Assembly of Iron
+						crit(39285, {	-- Assembly of Iron
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32867 },
 						}),
-						crit(2, {	-- Kologarn
+						crit(39287, {	-- Kologarn
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32930 },
 						}),
-						crit(3, {	-- Auriaya
+						crit(39286, {	-- Auriaya
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33515 },
 						}),
@@ -94,19 +94,19 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12309, {	-- The Keepers of Ulduar
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- Hodir
+						crit(39289, {	-- Hodir
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32845 },
 						}),
-						crit(2, {	-- Thorim
+						crit(39291, {	-- Thorim
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32865 },
 						}),
-						crit(3, {	-- Freya
+						crit(39292, {	-- Freya
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32906 },
 						}),
-						crit(4, {	-- Mimiron
+						crit(39293, {	-- Mimiron
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33350 },
 						}),
@@ -115,11 +115,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12310, {	-- The Descent into Madness
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- General Vezax
+						crit(39294, {	-- General Vezax
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33271 },
 						}),
-						crit(2, {	-- Yogg-Saron
+						crit(39295, {	-- Yogg-Saron
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33288 },
 						}),
@@ -175,6 +175,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				["crs"] = {
 					33113,	-- Flame Leviathan
 					33118,	-- Ignis the Furnace Master
+					33186,	-- Razorscale
 					33293,	-- XT-002 Deconstructor
 					32871,	-- Algalon the Observer
 					32927,	-- Runemaster Molgeim
@@ -190,6 +191,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					33288,	-- Yogg-Saron
 				},
 				["groups"] = {
+					-- #if BEFORE 4.0.1
+					currency(221),	-- Emblem of Conquest
+					-- #endif
 					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 					i(45087),	-- Runed Orb
 				},
@@ -268,6 +272,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						revampAch(3179),	-- Knock, Knock, Knock on Wood (10 player)
 						revampAch(3176),	-- Lose Your Illusion (10 player)
 						revampAch(2979),	-- Lumberjacked (10 player)
+						ach(11751, {["timeline"] = {ADDED_7_2_0}}),	-- Mogg-Saron (Ulduar)
 						revampAch(2937),	-- Must Deconstruct Faster (10 player)
 						revampAch(2931),	-- Nerf Engineering (10 player)
 						revampAch(2934),	-- Nerf Gravity Bombs (10 player)
@@ -545,9 +550,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2909),	-- Take Out Those Turrets (10 player)
 							revampAch(2907, {	-- Three Car Garage (10 player)
 								-- TODO: Add vehicle npcIDs
-								crit(1),	-- Salvaged Chopper
-								crit(2),	-- Salvaged Siege Engine
-								crit(3),	-- Salvaged Demolisher
+								crit(10046),	-- Salvaged Chopper
+								crit(10047),	-- Salvaged Siege Engine
+								crit(10048),	-- Salvaged Demolisher
 							}),
 							revampAch(2905),	-- Unbroken (10 player)
 							i(45282),	-- Ironsoul
@@ -662,8 +667,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["timeline"] = { "added 4.0.3" },
 							}),
 							revampAch(3003, {	-- Supermassive (10 player)
-								crit(1),	-- Close 3 Black Holes within 10 seconds
-								crit(2),	-- Defeat Algalon the Observer
+								crit(10780),	-- Close 3 Black Holes within 10 seconds
+								crit(10781),	-- Defeat Algalon the Observer
 							}),
 							ach(3316, {	-- Herald of the Titans
 								-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
@@ -790,8 +795,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142090, {	-- Winter Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45650),	-- Leggings of the Wayward Conqueror
 							i(45651),	-- Leggings of the Wayward Protector
@@ -808,9 +813,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(2971),	-- Don't Stand in the Lightning (10 player)
 							revampAch(2973, {	-- I'll Take You All On (10 player)
-								crit(1),	-- Defeat Thorim
-								crit(2),	-- Participate in slaying Runic Colossus
-								crit(3),	-- Participate in slaying Ancient Rune Giant
+								crit(10558),	-- Defeat Thorim
+								crit(10287),	-- Participate in slaying Runic Colossus
+								crit(10288),	-- Participate in slaying Ancient Rune Giant
 							}),
 							revampAch(3176, {	-- Lose Your Illusion (10 player)
 								i(45930),	-- Combatant's Bootblade
@@ -822,8 +827,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(2977),	-- Siffed (10 player)
 							revampAch(2975),	-- Who Needs Bloodlust? (10 player)
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45659),	-- Spaulders of the Wayward Conqueror
 							i(45660),	-- Spaulders of the Wayward Protector
@@ -854,8 +859,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142091, {	-- Snaplasher (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45644),	-- Gloves of the Wayward Conqueror
 							i(45645),	-- Gloves of the Wayward Protector
@@ -890,12 +895,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["cr"] = 34057,	-- Assault Bot
 							}),
 							revampAch(2989, {	-- Set Up Us the Bomb (10 player)
-								crit(1),	-- A Proximity Mine
-								crit(2),	-- A Rocket Strike
-								crit(3),	-- A Bomb Bot
+								crit(10543),	-- A Proximity Mine
+								crit(10544),	-- A Rocket Strike
+								crit(10545),	-- A Bomb Bot
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -909,7 +914,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45976),	-- Static Charge Handwraps
 							i(45975),	-- Cable of the Metrognome
 							i(140782, {	-- Neural Net Detangler
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -971,17 +976,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3008),	-- Drive Me Crazy (10 player)
 							revampAch(3012),	-- He's Not Getting Any Older (10 player)
 							revampAch(3015, {	-- In His House He Waits Dreaming (10 player)
-								crit(1),	-- The Assassination of King Llane
-								crit(2),	-- The Forging of the Demon Soul
-								crit(3),	-- The Tortured Champion
+								crit(10324),	-- The Assassination of King Llane
+								crit(10325),	-- The Forging of the Demon Soul
+								crit(10326),	-- The Tortured Champion
 							}),
 							revampAch(3009, {	-- Kiss and Make Up (10 player)
 								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 								["crs"] = { 33134 },	-- Sara
 							}),
 							revampAch(3014),	-- They're Coming Out of the Walls (10 player)
-							i(138801, {	-- Illusion: Blood Draining
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -1117,6 +1122,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						revampAch(2906),	-- Unbroken (25 player)
 						revampAch(2976),	-- Who Needs Bloodlust? (25 player)
 						revampAch(2952),	-- With Open Arms (25 player)
+						ach(3259, {	-- Realm First! Celestial Defender
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(125, {	-- <Name> the Celestial Defender
+									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
+						}),
+						ach(3117, {	-- Realm First! Death's Demise
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(124, {	-- <Name>, Death's Demise
+								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
+						}),
 					}),
 					-- #else
 					n(ACHIEVEMENTS, {
@@ -1231,6 +1252,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							},
 							["description"] = "Must be killed before killing Freya or they will despawn.",
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+						}),
+						ach(3259, {	-- Realm First! Celestial Defender
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(125, {	-- <Name> the Celestial Defender
+									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
+						}),
+						ach(3117, {	-- Realm First! Death's Demise
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(124, {	-- <Name>, Death's Demise
+								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
 						}),
 					}),
 					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
@@ -1368,6 +1405,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["crs"] = {
 							33113,	-- Flame Leviathan
 							33118,	-- Ignis the Furnace Master
+							33186,	-- Razorscale
 							33293,	-- XT-002 Deconstructor
 							32871,	-- Algalon the Observer
 							32927,	-- Runemaster Molgeim
@@ -1389,15 +1427,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
-							i(45100),	-- Pattern: Belt of Arctic Life
-							i(45094),	-- Pattern: Belt of Dragons
-							i(45096),	-- Pattern: Blue Belt of Chaos
-							i(45095),	-- Pattern: Boots of Living Scale
-							i(45101),	-- Pattern: Boots of Wintry Endurance
+							i(45100),	-- Pattern: Belt of Arctic Life (RECIPE!)
+							i(45094),	-- Pattern: Belt of Dragons (RECIPE!)
+							i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
+							i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
+							i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
 							i(45104),	-- Pattern: Cord of the White Dawn
-							i(45098),	-- Pattern: Death-Warmed Belt
-							i(45099),	-- Pattern: Footpads of Silence
-							i(45097),	-- Pattern: Lightning Grounded Boots
+							i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
+							i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
+							i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
 							i(45102),	-- Pattern: Sash of Ancient Power
 							i(45105),	-- Pattern: Savior's Slippers
 							i(45103),	-- Pattern: Spellslinger's Slippers
@@ -1426,9 +1464,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2910),	-- Take Out Those Turrets (25 player)
 							revampAch(2908, {	-- Three Car Garage (25 player)
 								-- TODO: Add vehicle npcIDs
-								crit(1),	-- Salvaged Chopper
-								crit(2),	-- Salvaged Siege Engine
-								crit(3),	-- Salvaged Demolisher
+								crit(10049),	-- Salvaged Chopper
+								crit(10050),	-- Salvaged Siege Engine
+								crit(10051),	-- Salvaged Demolisher
 							}),
 							revampAch(2906),	-- Unbroken (25 player)
 							i(45110),	-- Titanguard
@@ -1577,8 +1615,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["timeline"] = { "added 4.0.3" },
 							}),
 							revampAch(3002, {	-- Supermassive (25 player)
-								crit(1),	-- Close 3 Black Holes within 10 seconds
-								crit(2),	-- Defeat Algalon the Observer
+								crit(10782),	-- Close 3 Black Holes within 10 seconds
+								crit(10783),	-- Defeat Algalon the Observer
 							}),
 							i(46053),	-- Reply-Code Alpha
 							i(45613),	-- Dreambinder
@@ -1716,8 +1754,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142090, {	-- Winter Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45632),	-- Breastplate of the Wayward Conqueror
 							i(45633),	-- Breastplate of the Wayward Protector
@@ -1734,9 +1772,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(2972),	-- Don't Stand in the Lightning (25 player)
 							revampAch(2974, {	-- I'll Take You All On (25 player)
-								crit(1),	-- Defeat Thorim
-								crit(2),	-- Participate in slaying Runic Colossus
-								crit(3),	-- Participate in slaying Ancient Rune Giant
+								crit(39291),	-- Defeat Thorim
+								crit(39438),	-- Participate in slaying Runic Colossus
+								crit(39439),	-- Participate in slaying Ancient Rune Giant
 							}),
 							revampAch(3183, {	-- Lose Your Illusion (25 player)
 								i(45570),	-- Skyforge Crossbow
@@ -1749,8 +1787,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(2978),	-- Siffed (25 player)
 							revampAch(2976),	-- Who Needs Bloodlust? (25 player)
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45638),	-- Crown of the Wayward Conqueror
 							i(45639),	-- Crown of the Wayward Protector
@@ -1782,8 +1820,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142091, {	-- Snaplasher (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45653),	-- Legplates of the Wayward Conqueror
 							i(45654),	-- Legplates of the Wayward Protector
@@ -1819,12 +1857,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["cr"] = 34057,	-- Assault Bot
 							}),
 							revampAch(3237, {	-- Set Up Us the Bomb (25 player)
-								crit(1),	-- A Proximity Mine
-								crit(2),	-- A Rocket Strike
-								crit(3),	-- A Bomb Bot
+								crit(10546),	-- A Proximity Mine
+								crit(10547),	-- A Rocket Strike
+								crit(10548),	-- A Bomb Bot
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -1838,7 +1876,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45491),	-- Waistguard of the Creator
 							i(45490),	-- Pandora's Plea
 							i(140782, {	-- Neural Net Detangler
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -1912,17 +1950,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3010),	-- Drive Me Crazy (25 player)
 							revampAch(3013),	-- He's Not Getting Any Older (25 player)
 							revampAch(3016, {	-- In His House He Waits Dreaming (25 player)
-								crit(1),	-- The Assassination of King Llane
-								crit(2),	-- The Forging of the Demon Soul
-								crit(3),	-- The Tortured Champion
+								crit(10321),	-- The Assassination of King Llane
+								crit(10322),	-- The Forging of the Demon Soul
+								crit(10323),	-- The Tortured Champion
 							}),
 							revampAch(3011, {	-- Kiss and Make Up (25 player)
 								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 								["crs"] = { 33134 },	-- Sara
 							}),
 							revampAch(3017),	-- They're Coming Out of the Walls (25 player)
-							i(138801, {	-- Illusion: Blood Draining
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -2051,9 +2089,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45798),	-- Heroic Celestial Planetarium Key
 							i(45878, {	-- Large Sack of Ulduar Spoils
 								["sym"] = {
-									{ "selectparent", 3 },	-- Select the difficulty header.
-									{ "pop" },	-- Get the Rewards.
-									{ "where", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
+									{ "select", "instanceID", 759 },	-- Ulduar
+									{ "find", "difficultyID", NORMAL_RAID },	-- Normal Raid
+									{ "find", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
 									{ "pop" },	-- Get the Rewards.
 									{ "exclude", "itemID", 46027, 46348, 45038 },	-- Exclude the Enchanting Recipes & Fragment
 								},
@@ -2170,15 +2208,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45087),	-- Runed Orb
 						i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
 						i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
-						i(45100),	-- Pattern: Belt of Arctic Life
-						i(45094),	-- Pattern: Belt of Dragons
-						i(45096),	-- Pattern: Blue Belt of Chaos
-						i(45095),	-- Pattern: Boots of Living Scale
-						i(45101),	-- Pattern: Boots of Wintry Endurance
+						i(45100),	-- Pattern: Belt of Arctic Life (RECIPE!)
+						i(45094),	-- Pattern: Belt of Dragons (RECIPE!)
+						i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
+						i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
+						i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
 						i(45104),	-- Pattern: Cord of the White Dawn
-						i(45098),	-- Pattern: Death-Warmed Belt
-						i(45099),	-- Pattern: Footpads of Silence
-						i(45097),	-- Pattern: Lightning Grounded Boots
+						i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
+						i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
+						i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
 						i(45102),	-- Pattern: Sash of Ancient Power
 						i(45105),	-- Pattern: Savior's Slippers
 						i(45103),	-- Pattern: Spellslinger's Slippers
@@ -2203,7 +2241,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45134),	-- Plated Leggings of Ruination
 							i(45135),	-- Boots of Fiery Resolution
 							i(45297),	-- Shimmering Seal
-							i(45296, {	-- Twirling Blades (10 Man, ilvl 232)
+							i(45296, {	-- Twirling Blades (10 Man, iLvl 232)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 						}),
@@ -2213,9 +2251,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12316),	-- Shutout
 						ach(12315),	-- Take Out Those Turret
 						ach(12314, {	-- Three Car Garage
-							crit(1),	-- Salvaged Chopper
-							crit(2),	-- Salvaged Siege Engine
-							crit(3),	-- Salvaged Demolisher
+							crit(39309),	-- Salvaged Chopper
+							crit(39310),	-- Salvaged Siege Engine
+							crit(39311),	-- Salvaged Demolisher
 						}),
 						ach(12313),	-- Unbroken
 						i(45282),	-- Ironsoul
@@ -2397,21 +2435,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							title(130),	-- the Astral Walker
 						}),
 						ach(12400, {	-- Supermassive
-							crit(1),	-- Close 3 Black Holes within 10 seconds
-							crit(2),	-- Defeat Algalon the Observer
+							crit(39522),	-- Close 3 Black Holes within 10 seconds
+							crit(39523),	-- Defeat Algalon the Observer
 						}),
 						ach(3316, {	-- Herald of the Titans
 							-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
 							-- #if AFTER SHADOWLANDS
 							["lockCriteria"] = { 1, "lvl", 31 },
 							-- character above 30 without account-wide achievements shouldn't see forever-incomplete achievement
-							-- #if ANYCLASSIC
-							-- Not that classic is gonna get this far, this exists just so I remember to change this later when I do my "ANYCLASSIC" purge
-							-- once the two addons are combined into one master addon. Crieve plays the long game.
 							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.Settings.AccountWide.Achievements then t.collectible = false; end end]],
-							-- #else
-							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.AccountWideAchievements then t.collectible = false; end end]],
-							-- #endif
 							-- #else
 							["lockCriteria"] = { 1, "lvl", 80 },
 							-- #endif
@@ -2592,17 +2624,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12343),	-- Cheese the Freeze
 						ach(12345),	-- Getting Cold in Here
 						ach(12347, {	-- I Could Say That This Cache Was Rare
-							un(45, i(45886)),	-- Icecore Staff
-							un(45, i(45457)),	-- Staff of Endless Winter
-							un(45, i(45612)),	-- Constellus
-							un(45, i(45876)),	-- Shiver
-							un(45, i(45887)),	-- Ice Layered Barrier
-							un(45, i(45877)),	-- The Boreal Guard
-							un(45, i(45459)),	-- Frigid Strength of Hodir
-							un(45, i(45461)),	-- Drape of Icy Intent
-							un(45, i(45460)),	-- Bindings of Winter Gale
-							un(45, i(45888)),	-- Bitter Cold Armguards
-							un(45, i(45462)),	-- Gloves of the Frozen Glade
+							i(45886, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Icecore Staff
+							i(45457, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Staff of Endless Winter
+							i(45612, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Constellus
+							i(45876, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Shiver
+							i(45887, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Ice Layered Barrier
+							i(45877, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- The Boreal Guard
+							i(45459, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Frigid Strength of Hodir
+							i(45461, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Drape of Icy Intent
+							i(45460, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bindings of Winter Gale
+							i(45888, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bitter Cold Armguards
+							i(45462, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Gloves of the Frozen Glade
 							i(45786),	-- Hodir's Sigil
 							i(45815),	-- Hodir's Sigil
 						}),
@@ -2611,8 +2643,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(142090, {	-- Winter Rageling (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(45632),	-- Breastplate of the Wayward Conqueror
 						i(45633),	-- Breastplate of the Wayward Protector
@@ -2637,20 +2669,20 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					["groups"] = {
 						ach(12348),	-- Don't Stand in the Lightning
 						ach(12349, {	-- I'll Take You All On
-							crit(1),	-- Defeat Thorim
-							crit(2),	-- Participate in slaying Runic Colossus
-							crit(3),	-- Participate in slaying Ancient Rune Giant
+							crit(39291),	-- Defeat Thorim
+							crit(39438),	-- Participate in slaying Runic Colossus
+							crit(39439),	-- Participate in slaying Ancient Rune Giant
 						}),
 						ach(12352, {	-- Lose Your Illusion
-							un(45, i(45930)),	-- Combatant's Bootblade
-							un(45, i(45570)),	-- Skyforge Crossbow
-							un(45, i(45470)),	-- Wisdom's Hold
-							un(45, i(45472)),	-- Warhelm of the Champion
-							un(45, i(45933)),	-- Pendant of the Shallow Grave
-							un(45, i(45474)),	-- Pauldrons of the Combatant
-							un(45, i(45473)),	-- Embrace of the Gladiator
-							un(45, i(45928)),	-- Gauntlets of the Thunder Lord
-							un(45, i(45471)),	-- Fate's Clutch
+							i(45930, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Combatant's Bootblade
+							i(45570, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Skyforge Crossbow
+							i(45470, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Wisdom's Hold
+							i(45472, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Warhelm of the Champion
+							i(45933, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Pendant of the Shallow Grave
+							i(45474, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Pauldrons of the Combatant
+							i(45473, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Embrace of the Gladiator
+							i(45928, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Gauntlets of the Thunder Lord
+							i(45471, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Fate's Clutch
 							i(45931),	-- Mjolnir Runestone
 							i(45929),	-- Sif's Remembrance
 							i(45784),	-- Thorim's Sigil
@@ -2658,8 +2690,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 						ach(12351),	-- Siffed
 						ach(12350),	-- Who Needs Bloodlust?
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(45638),	-- Crown of the Wayward Conqueror
 						i(45639),	-- Crown of the Wayward Protector
@@ -2688,16 +2720,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12364),	-- Knock on Wood
 						ach(12365),	-- Knock, Knock on Wood
 						ach(12366, {	-- Knock, Knock, Knock on Wood
-							un(45, i(45613)),	-- Dreambinder
-							un(45, i(45484)),	-- Bladetwister
-							un(45, i(45947)),	-- Serilas, Blood Blade of Invar One-Arm
-							un(45, i(45294)),	-- Petrified Ivy Sprig
-							un(45, i(45485)),	-- Bronze Pendant of the Vanir
-							un(45, i(45945)),	-- Seed of Budding Carnage
-							un(45, i(45486)),	-- Drape of the Sullen Goddess
-							un(45, i(45943)),	-- Gloves of Whispering Winds
-							un(45, i(45487)),	-- Handguards of Revitalization
-							un(45, i(45488)),	-- Leggings of the Enslaved Idol
+							i(45613, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Dreambinder
+							i(45484, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bladetwister
+							i(45947, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Serilas, Blood Blade of Invar One-Arm
+							i(45294, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Petrified Ivy Sprig
+							i(45485, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bronze Pendant of the Vanir
+							i(45945, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Seed of Budding Carnage
+							i(45486, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Drape of the Sullen Goddess
+							i(45943, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Gloves of Whispering Winds
+							i(45487, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Handguards of Revitalization
+							i(45488, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Leggings of the Enslaved Idol
 							i(45946),	-- Fire Orchid Signet
 							i(45788),	-- Freya's Sigil
 							i(45814),	-- Freya's Sigil
@@ -2705,8 +2737,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(142091, {	-- Snaplasher (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(45644),	-- Gloves of the Wayward Conqueror
 						i(45645),	-- Gloves of the Wayward Protector
@@ -2754,12 +2786,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 						ach(12368),	-- Not-So-Friendly Fire
 						ach(12367, {	-- Set Up Us the Bomb
-							crit(1),	-- A Proximity Mine
-							crit(2),	-- A Rocket Strike
-							crit(3),	-- A Bomb Bot
+							crit(39478),	-- A Proximity Mine
+							crit(39479),	-- A Rocket Strike
+							crit(39480),	-- A Bomb Bot
 						}),
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
@@ -2781,7 +2813,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45491),	-- Waistguard of the Creator
 						i(45490),	-- Pandora's Plea
 						i(140782, {	-- Neural Net Detangler
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2876,17 +2908,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12395),	-- Drive Me Crazy
 						ach(12396),	-- He's Not Getting Any Older
 						ach(12398, {	-- In His House He Waits Dreaming
-							crit(1),	-- The Assassination of King Llane
-							crit(2),	-- The Forging of the Demon Soul
-							crit(3),	-- The Tortured Champion
+							crit(10321),	-- The Assassination of King Llane
+							crit(39513),	-- The Forging of the Demon Soul
+							crit(39514),	-- The Tortured Champion
 						}),
 						ach(12384, {	-- Kiss and Make Up
 							["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 							["crs"] = { 33134 },	-- Sara
 						}),
 						ach(12397),	-- They're Coming Out of the Walls
-						i(138801, {	-- Illusion: Blood Draining
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(142093, {	-- Creeping Tentacle (PET!)
 							["timeline"] = { "added 7.1.0.22731" },

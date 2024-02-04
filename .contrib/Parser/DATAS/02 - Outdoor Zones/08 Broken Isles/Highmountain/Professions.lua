@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 		m(HIGHMOUNTAIN, {
 			n(PROFESSIONS,  {
 				prof(COOKING, {
-					i(133820, {	-- Recipe: Drogbar-Style Salmon
+					i(133820, {	-- Recipe: Drogbar-Style Salmon [Rank 1] (RECIPE!)
 						["description"] = "Can drop from any Drogbar.",
 					}),
 				}),

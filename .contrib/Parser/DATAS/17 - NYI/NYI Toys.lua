@@ -3,6 +3,11 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
 	filter(TOYS, {
+		-- #if BEFORE 3.0.0
+		tier(CLASSIC_TIER, {
+			i(37460),	-- Rope Pet Leash
+		}),
+		-- #endif
 		tier(CATA_TIER, {
 			-- 4.3.0
 			tier(CATA_TIER, 3.0, sharedDataSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
@@ -114,11 +119,6 @@ root(ROOTS.NeverImplemented, {
 				i(187861),	-- Magical Seeds (TOY!)
 				i(187959),	-- PH - Banner of the Opportune (TOY!)
 			})),
-
-			-- 9.2.0
-			tier(SL_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
-				i(190196),	-- Enlightened Hearthstone (TOY!)
-			})),
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
@@ -126,24 +126,23 @@ root(ROOTS.NeverImplemented, {
 				i(200142),	-- Generous Goblin Grenade (TOY!)
 				i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 				i(199926),	-- Portable J.A.M. (TOY!)
-				i(197961),	-- Whelps on Strings (TOY!)
 			})),
 
 			-- 10.1.0
 			tier(DF_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
 				i(205027),	-- Explorer's Banner (TOY!)
-				i(205463),	-- Skornak's Lava Ball (TOY!)
 			})),
 
-			-- 10.1.5
-			tier(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-				i(206268),	-- Ethereal Transmogrifier (TOY!)
-				i(206993),	-- Investi-gator's Pocketwatch (TOY!)
-				i(206195),	-- Path of the Naaru (TOY!)
-				i(206696),	-- Unknown (TOY!)
-				i(207730),	-- Unknown (TOY!)
-				i(208092),	-- Unknown (TOY!)
+			-- 10.1.7
+			tier(DF_TIER, 1.7, sharedDataSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				i(208880),	-- Brewhahat (TOY!)
+				i(208229),	-- Honor of the Forsaken (TOY!)
+			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				i(208087),	-- Unknown (TOY!)
 			})),
 		}),
 	}),

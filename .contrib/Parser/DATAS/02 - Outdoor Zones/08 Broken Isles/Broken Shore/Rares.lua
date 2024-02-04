@@ -6,55 +6,29 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
 			n(RARES, {
-				-- TODO: eww gross
-				{
-					["achievementID"] = 11841,	-- Naxt Victim
-					["description"] = "How to summon the specific bosses is very simple. Each different Sentinax Beacon summons mobs that drop additional Sentinax Beacons for that specific Beacon and ultimately the Portal Stone (boss).\n\nYou get the Uncommon (green quality) Sentinax Beacons from the standard mobs in the area, you then need to farm the mobs that come out of the Sentinax Portal until they drop a Rare (blue quality) Sentinax Beacon and use it to empower the portal, it is only after this that the Portal Stone can drop. Keep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon.",
-					["g"] = {
-						i(146919, {	-- Portal-Stone: An'thyna
-							{
-								["creatureID"] = 120675,	-- An'thyna <Venom Queen>
-								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 4,
-							},
+				header(HEADERS.Achievement, 11841, {	-- Naxt Victim
+					["description"] = "Each different Sentinax Beacon summons mobs that drop additional Sentinax Beacons for that specific Beacon and ultimately the Portal Stone (boss).\n\nYou get the Uncommon (green quality) Sentinax Beacons from the standard mobs in the area, you then need to farm the mobs that come out of the Sentinax Portal until they drop a Rare (blue quality) Sentinax Beacon and use it to empower the portal, it is only after this that the Portal Stone can drop. Keep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon.",
+					["groups"] = {
+						n(120675, {	-- An'thyna <Venom Queen>
+							["provider"] = {"i",146919},	-- Portal-Stone: An'thyna
 						}),
-						i(146920, {	-- Portal-Stone: Fel Obliterator
-							{
-								["creatureID"] = 120681,	-- Fel Obliterator
-								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 5,	-- Fel Obliterator
-							},
+						n(120681, {	-- Fel Obliterator
+							["provider"] = {"i",146920},	-- Portal-Stone: Fel Obliterator
 						}),
-						i(146918, {	-- Portal-Stone: Force-Commander Xillious
-							{
-								["creatureID"] = 120665,	-- Force-Commander Xillious
-								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 3,	-- Force-Commander Xillious
-							},
+						n(120665, {	-- Force-Commander Xillious
+							["provider"] = {"i",146918},	-- Portal-Stone: Force-Commander Xillious
 						}),
-						i(146921, {	-- Portal-Stone: Illisthyndria
-							{
-								["creatureID"] = 120686,	-- Illisthyndria <Keeper of Knives>
-								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 6,	-- Illisthyndria
-							},
+						n(120686, {	-- Illisthyndria <Keeper of Knives>
+							["provider"] = {"i",146921},	-- Portal-Stone: Illisthyndria
 						}),
-						i(146917, {	-- Portal-Stone: Skulguloth
-							{
-								["creatureID"] = 120641,	-- Skulguloth
-								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 2,	-- Skulguloth
-							},
+						n(120641, {	-- Skulguloth
+							["provider"] = {"i",146917},	-- Portal-Stone: Skulguloth
 						}),
-						i(146916, {	-- Portal-Stone: Than'otalion
-							{
-								["creatureID"] = 120583,	-- Than'otalion
-								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 1,	-- Than'otalion
-							},
+						n(120583, {	-- Than'otalion
+							["provider"] = {"i",146916},	-- Portal-Stone: Than'otalion
 						}),
 					},
-				},
+				}),
 				n(121016, {	-- Aqueux
 					["questID"] = 46953,	-- Rare Elite 18
 					["isDaily"] = true,

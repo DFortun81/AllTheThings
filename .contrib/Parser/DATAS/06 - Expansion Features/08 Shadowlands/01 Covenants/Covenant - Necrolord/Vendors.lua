@@ -3,10 +3,7 @@
 -------------------------------------------------------------------
 local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 	["sym"] = {
-		{ "select", "tierID", SL_TIER },	-- SL Tier
-		{ "pop" },							-- pop the Tier header
 		{ "select", "headerID", LEGENDARIES },	-- Legendary header
-		{ "pop" },							-- pop header
 		{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
 		{ "exclude", "itemID",
 			190584,	-- Memory of Unity (DK)
@@ -783,7 +780,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					i(186488, {	-- Regal Corpsefly (MOUNT!)
 						["cost"] = { { "c", ANIMA, 7500 } },
 					}),
-					i(183462, {	-- Illusion: Unbreakable Resolve
+					i(183462, {	-- Illusion: Unbreakable Resolve (ILLUSION!)
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,
@@ -1329,59 +1326,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(62006),	-- unlocking Might of Maldraxxus set (TransmogSetID 2043, Bladesworn Harbinger's items)
 	q(62002),	-- unlocking Authority of Maldraxxus set (TransmogSetID 2044, Prime Harbinger's items)
 	q(62901),	-- learning Arsenal: Stitchmasters' Weapons
-});
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		n(NECROLORD, {
-			n(ARMOR, {
-				filter(CLOTH, {
-					i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head
-					i(179413),	-- 9.0 Covenant - Maldraxxus - Cloth - Chest
-					i(179414),	-- 9.0 Covenant - Maldraxxus - Cloth - Feet
-					i(179415),	-- 9.0 Covenant - Maldraxxus - Cloth - Hands
-					i(179416),	-- 9.0 Covenant - Maldraxxus - Cloth - Legs
-					i(179417),	-- 9.0 Covenant - Maldraxxus - Cloth - Shoulders
-					i(179418),	-- 9.0 Covenant - Maldraxxus - Cloth - Waist
-					i(179419),	-- 9.0 Covenant - Maldraxxus - Cloth - Wrists
-				}),
-				filter(LEATHER, {
-					i(179403),	-- 9.0 Covenant - Maldraxxus - Leather - Head
-					i(179404),	-- 9.0 Covenant - Maldraxxus - Leather - Chest
-					i(179405),	-- 9.0 Covenant - Maldraxxus - Leather - Feet
-					i(179406),	-- 9.0 Covenant - Maldraxxus - Leather - Hands
-					i(179407),	-- 9.0 Covenant - Maldraxxus - Leather - Legs
-					i(179408),	-- 9.0 Covenant - Maldraxxus - Leather - Shoulders
-					i(179409),	-- 9.0 Covenant - Maldraxxus - Leather - Waist
-					i(179410),	-- 9.0 Covenant - Maldraxxus - Leather - Wrists
-				}),
-				filter(MAIL, {
-					i(179421),	-- 9.0 Covenant - Maldraxxus - Mail Head
-					i(179422),	-- 9.0 Covenant - Maldraxxus - Mail Chest
-					i(179423),	-- 9.0 Covenant - Maldraxxus - Mail Feet
-					i(179424),	-- 9.0 Covenant - Maldraxxus - Mail Hands
-					i(179425),	-- 9.0 Covenant - Maldraxxus - Mail Legs
-					i(179426),	-- 9.0 Covenant - Maldraxxus - Mail Shoulders
-					i(179427),	-- 9.0 Covenant - Maldraxxus - Mail Waist
-					i(179428),	-- 9.0 Covenant - Maldraxxus - Mail Wrists
-				}),
-				filter(PLATE, {
-					i(174185),	-- 9.0 Covenant - Maldraxxus - Plate Head
-					i(174186),	-- 9.0 Covenant - Maldraxxus - Plate Chest
-					i(174187),	-- 9.0 Covenant - Maldraxxus - Plate Feet
-					i(174188),	-- 9.0 Covenant - Maldraxxus - Plate Hands
-					i(174189),	-- 9.0 Covenant - Maldraxxus - Plate Legs
-					i(174190),	-- 9.0 Covenant - Maldraxxus - Plate Shoulders
-					i(174191),	-- 9.0 Covenant - Maldraxxus - Plate Waist
-					i(174192),	-- 9.0 Covenant - Maldraxxus - Plate Wrists
-				}),
-				n(BACK, {
-					i(174193),	-- 9.0 Covenant - Maldraxxus - Plate Cloak
-					i(179411),	-- 9.0 Covenant - Maldraxxus - Leather - Cloak
-					i(179420),	-- 9.0 Covenant - Maldraxxus - Cloth - Cloak
-					i(179429),	-- 9.0 Covenant - Maldraxxus - Mail Cloak
-				}),
-			}),
-		}),
-	}),
 });

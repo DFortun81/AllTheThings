@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(261, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Steamvault
 		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
+		["zone-text-areaID"] = 3715,	-- The Steamvault
 		["sins"] = {
 			"Coilfang: The Steamvault",
 			"Echsenkessel: Dampfkammer",
@@ -45,6 +46,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(9764, {	-- Orders from Lady Vashj
 					["provider"] = { "i", 24367 },	-- Orders from Lady Vashj
 					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),
 				q(29616, {	-- Storming the Steamvault
@@ -133,8 +135,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						i(27783),	-- Moonrage Girdle
 						i(27784),	-- Scintillating Coral Band
-						i(29673, {	-- Pattern: Frost Armor Kit
-							["timeline"] = { "removed 5.0.4" },
+						i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(30828),	-- Vial of Underworld Loam
 					},
@@ -238,8 +240,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							i(27783),	-- Moonrage Girdle
 							i(27784),	-- Scintillating Coral Band
-							i(29673, {	-- Pattern: Frost Armor Kit
-								["timeline"] = { "removed 5.0.4" },
+							i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(30828),	-- Vial of Underworld Loam
 						},

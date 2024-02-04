@@ -56,7 +56,6 @@ root(ROOTS.NeverImplemented, {
 				-- 8.0.1
 				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 					-- Recipe spells
-					r(251824),	-- REUSE ME - SCS
 					r(252365),	--
 					r(252366),	--
 					r(252367),	--
@@ -76,40 +75,11 @@ root(ROOTS.NeverImplemented, {
 					r(298740),	-- Potion of Reconstitution
 				})),
 			}),
-			tier(SL_TIER, {
-				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-					-- Recipe items
-					i(183868),	-- [DNT][REUSE ME] Recipe: Crafter's Mark III
-					i(182665),	-- Recipe: Sins to Virtue
-					-- Recipe spells
-					r(307106),	-- 9.0 Alchemy - Modified Crafting Reagent 02
-					r(307107),	-- 9.0 Alchemy - Modified Crafting Reagent 03
-					r(307108),	-- 9.0 Alchemy - Modified Crafting Reagent 04
-					r(307145),	-- 9.0 Transmute: 04
-					r(307146),	-- 9.0 Transmute: 05
-					r(307147),	-- 9.0 Transmute: 06
-					r(307148),	-- 9.0 Transmute: 07
-					r(307149),	-- 9.0 Transmute: 08
-					r(307105),	-- Alchemist's Pouch
-					r(307109),	--
-					r(307110),	--
-					r(307111),	--
-					r(307112),	--
-				})),
-
-				-- 9.1.0
-				tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
-					-- Recipe spells
-					r(354860),	--
-				})),
-			}),
 		}),
 		prof(COOKING, {
 			tier(CLASSIC_TIER, {
 				i(16073),	-- Artisan Cookbook
 				i(6891),	-- Recipe: Herb Baked Egg
-				i(7678),	-- Recipe: Thistle Tea
 			}),
 			tier(WOTLK_TIER, {
 				-- 3.0.1
@@ -266,7 +236,9 @@ root(ROOTS.NeverImplemented, {
 			tier(LEGION_TIER, {
 				-- 7.0.3
 				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+					-- #if BEFORE 10.1.5
 					i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
+					-- #endif
 					i(141065),	-- Technique: Grimoire of the Terrorguard (Item never made it into the game)
 					i(141065),	-- Technique: Grimoire of the Terrorguard
 				})),
@@ -366,95 +338,6 @@ root(ROOTS.NeverImplemented, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(116080),	-- Design: Greater Taladite Amplifier
-				})),
-			}),
-		}),
-		prof(LEATHERWORKING, {
-			tier(CLASSIC_TIER, {
-				i(4997),	-- Deprecated Recipe: Kodo Skin Bag
-				i(8388),	-- Pattern: Nightscape Cloak
-				i(15780),	-- Pattern: Onyxia Scale Breastplate
-			}),
-			tier(TBC_TIER, {
-				-- 2.4.0
-				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
-					i(35528),	-- Pattern: Swiftstrike Shoulders
-				})),
-			}),
-			tier(WOTLK_TIER, {
-				i(38599),	-- Pattern: Dark Arctic Chestpiece
-				i(38598),	-- Pattern: Dark Arctic Leggings
-			}),
-			tier(CATA_TIER, {
-				-- 4.0.1
-				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
-					i(67039),	-- Pattern: Cloak of Beasts
-					i(67041),	-- Pattern: Cloak of War
-					i(67015),	-- Pattern: Darkbrand Belt
-					i(67007),	-- Pattern: Darkbrand Boots
-					i(66999),	-- Pattern: Darkbrand Bracers
-					i(67026),	-- Pattern: Darkbrand Chestguard
-					i(67000),	-- Pattern: Darkbrand Gloves
-					i(67021),	-- Pattern: Darkbrand Helm
-					i(67033),	-- Pattern: Darkbrand Leggings
-					i(67011),	-- Pattern: Darkbrand Shoulders
-					i(67038),	-- Pattern: Heavy Savage Armor Kit
-					i(67036),	-- Pattern: Heavy Savage Leather
-					i(67017),	-- Pattern: Razorshell Belt
-					i(67009),	-- Pattern: Razorshell Boots
-					i(67003),	-- Pattern: Razorshell Bracers
-					i(67035),	-- Pattern: Razorshell Chest
-					i(67013),	-- Pattern: Razorshell Gloves
-					i(67023),	-- Pattern: Razorshell Helm
-					i(67030),	-- Pattern: Razorshell Leggings
-					i(67004),	-- Pattern: Razorshell Shoulders
-					i(66995),	-- Pattern: Savage Cloak
-					i(67018),	-- Pattern: Scorched Leg Armor
-					i(67005),	-- Pattern: Shellscale Cloak (was changed to Hardened Scale Cloak and added to trainers)
-					i(66997),	-- Pattern: Tsunami Belt
-					i(67010),	-- Pattern: Tsunami Boots
-					i(66996),	-- Pattern: Tsunami Bracers
-					i(67020),	-- Pattern: Tsunami Chestguard
-					i(67006),	-- Pattern: Tsunami Gloves
-					i(67031),	-- Pattern: Tsunami Helm
-					i(67025),	-- Pattern: Tsunami Leggings
-					i(67014),	-- Pattern: Tsunami Shoulders
-					i(67019),	-- Pattern: Twilight Leg Armor
-					i(67012),	-- Pattern: Windbound Belt
-					i(67008),	-- Pattern: Windbound Boots
-					i(67001),	-- Pattern: Windbound Bracers
-					i(67028),	-- Pattern: Windbound Chest
-					i(67002),	-- Pattern: Windbound Gloves
-					i(67034),	-- Pattern: Windbound Helm
-					i(67022),	-- Pattern: Windbound Leggings
-					i(67016),	-- Pattern: Windbound Shoulders
-				})),
-			}),
-			tier(WOD_TIER, {
-				-- 6.0.1
-				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					i(118097),	-- Plans: Small Football
-				})),
-			}),
-			tier(BFA_TIER, {
-				-- 8.0.1
-				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
-					i(162388),	-- Pattern: Hardened Tempest Boots [Rank 3]
-					i(162389),	-- Pattern: Hardened Tempest Leggings [Rank 3]
-					i(162400),	-- Pattern: Mistscale Boots [Rank 3]
-					i(162401),	-- Pattern: Mistscale Greaves [Rank 3]
-				})),
-
-				-- 8.1.0
-				tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
-					i(166312),	-- Pattern: Coarse Leather Barding [Rank 2]
-				})),
-			}),
-			tier(SL_TIER, {
-				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-					i(183869),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
-					i(182669),	-- Pattern: Loosened Belt
 				})),
 			}),
 		}),

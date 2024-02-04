@@ -26,6 +26,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(12429, {	-- Wetlands Quests
 					["timeline"] = { "added 7.3.5.25727" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Slabchisel Survey
 							["sourceQuests"] = {
@@ -66,6 +67,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -150,6 +152,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			prof(MINING, {
+				i(3340, {	-- Incendicite Ore
+					["provider"] = { "o", 1610 },	-- Incendicite Mineral Vein
+				}),
+			}),
 			n(QUESTS, {
 				q(25726, {	-- A Dumpy Job
 					["qg"] = 41129,	-- Surveyor Thurdan
@@ -213,7 +220,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3561, {	-- Resilient Poncho
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3681),	-- Recipe: Crocolisk Gumbo
+						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
 					},
 				}),
 				q(25780, {	-- Assault on Menethil Keep
@@ -747,7 +754,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5246, {	-- Excavation Rod
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 					},
 				}),
 				q(634, {	-- Plea To The Alliance
@@ -883,11 +890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
-						objective(1, {	-- 0/1 Flagongut's Fossil
-							["provider"] = { "i", 5234 },	-- Flagongut's Fossil
-							["coord"] = { 38.8, 52.2, WETLANDS },
-						}),
-						objective(2, {	-- 0/1 Stone of Relu
+						objective(1, {	-- 0/1 Stone of Relu
 							["provider"] = { "i", 5233 },	-- Stone of Relu
 							["crs"] = {
 								1020,	-- Mottled Raptor
@@ -895,6 +898,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1021,	-- Mottled Screecher
 								1022,	-- Mottled Scytheclaw
 							},
+						}),
+						objective(2, {	-- 0/1 Flagongut's Fossil
+							["providers"] = {
+								{ "i", 5234 },	-- Flagongut's Fossil
+								{ "o", 9630 },	-- Flagongut's Fossil
+							},
+							["coord"] = { 38.8, 52.2, WETLANDS },
 						}),
 						i(5627, {	-- Relic Blade
 							["timeline"] = { "removed 4.0.3" },
@@ -1309,16 +1319,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ados Fragment
-							["provider"] = { "i", 2658 },	-- Ados Fragment
+							["providers"] = {
+								{ "i", 2658 },	-- Ados Fragment
+								{ "o", 35252 },	-- Ancient Relic
+							},
 						}),
 						objective(2, {	-- 0/1 Modr Fragment
-							["provider"] = { "i", 2659 },	-- Modr Fragment
+							["providers"] = {
+								{ "i", 2659 },	-- Modr Fragment
+								{ "o", 334 },	-- Ancient Relic
+							},
 						}),
 						objective(3, {	-- 0/1 Golm Fragment
-							["provider"] = { "i", 2660 },	-- Golm Fragment
+							["providers"] = {
+								{ "i", 2660 },	-- Golm Fragment
+								{ "o", 333 },	-- Ancient Relic
+							},
 						}),
 						objective(4, {	-- 0/1 Neru Fragment
-							["provider"] = { "i", 2661 },	-- Neru Fragment
+							["providers"] = {
+								{ "i", 2661 },	-- Neru Fragment
+								{ "o", 331 },	-- Loose Soil
+							},
 						}),
 						i(2913, {	-- Silk Mantle of Gamn
 							["timeline"] = { "removed 4.0.3" },
@@ -1424,6 +1446,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211965, {	-- Carrodin
+					["coord"] = { 47.6, 64.6, WETLANDS },
+					["groups"] = {
+						i(211205, {	-- Rune of Heart of the Lion
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410115),	-- Engrave Chest - Heart of the Lion
+							},
+						}),
+						i(210573, {	-- Rune of Consuming Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425446),	-- Engrave Pants - Consumed by Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50964, {	-- Chops
 					["coord"] = { 58.0, 8.6, WETLANDS },
 					["timeline"] = { "added 5.1.0.16309" },
@@ -1486,10 +1527,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6200, {	-- Garneg's War Belt
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(3392, {	-- Ringed Helm
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1521,10 +1562,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4444, {	-- Black Husk Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(6199, {	-- Black Widow Band
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 18.09.2023
 						}),
 					},
 				}),
@@ -1536,10 +1577,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5749, {	-- Scythe Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5750, {	-- Warchief's Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1570,10 +1611,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4463, {	-- Beaded Raptor Collar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6198, {	-- Jurassic Wristguards
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1630,6 +1671,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209848, {	-- Goaz Scrolls
+					["provider"] = { "o", 409717 },	-- Scrolls
+					["coord"] = { 33.6, 47.9, WETLANDS },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
+					["providers"] = {
+						{ "n", 212209 },	-- Vodyanoi
+						{ "i", 210499 },	-- Marshroom
+					},
+					["coord"] = { 31, 18, WETLANDS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(424718),	-- Engrave Pants - Starsurge
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(1441, {	-- Brak Durnad <Weaponsmith>
 					["coord"] = { 11.5, 59.6, WETLANDS },
@@ -1647,6 +1708,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 					["coord"] = { 46.6, 18.2, WETLANDS },
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(209874, {	-- Dragonslayer's Lance
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["cost"] = 7500,	-- 75s
+						})),
+						-- #endif
 						i(4824, {	-- Blurred Axe
 							["isLimited"] = true,
 						}),
@@ -1698,6 +1766,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212186, {	-- Grugimdern
+					["coord"] = { 36.8, 15.2, WETLANDS },
+					["classes"] = { DRUID },
+					["groups"] = {
+						i(210499),	-- Marshroom
+					},
+				})),
+				-- #endif
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 					-- #if AFTER CATA
 					["coord"] = { 10.0, 59.0, WETLANDS },
@@ -1767,9 +1844,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					},
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>
@@ -1828,16 +1905,82 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(3022, {	-- Bluegill Breeches
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1028,	-- Bluegill Muckdweller
+					["coords"] = {
+						{ 23.0, 37.2, WETLANDS },
+						{ 13.0, 33.2, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						41425,	-- Bluegill Murloc
+						42111,	-- Bluegill Forager
+					},
+					["coords"] = {
+						{ 21.8, 40.0, WETLANDS },
+						{ 17.4, 41.4, WETLANDS },
+						{ 17.2, 33.6, WETLANDS },
+						{ 13.6, 42.6, WETLANDS },
+						{ 16.6, 26.2, WETLANDS },
+						{ 20.4, 37.6, WETLANDS },
+						{ 14.2, 36.8, WETLANDS },
+						{ 18.6, 34.0, WETLANDS },
+						{ 12.2, 40.2, WETLANDS },
+						{ 13.4, 34.0, WETLANDS },
+						{ 15.8, 28.2, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(2046, {	-- Bluegill Kukri
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1027,	-- Bluegill Warrior
+					["coords"] = {
+						{ 18.6, 40.0, WETLANDS },
+						{ 15.2, 38.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 41425,	-- Bluegill Murloc
+					["coords"] = {
+						{ 21.8, 40.0, WETLANDS },
+						{ 17.4, 41.4, WETLANDS },
+						{ 17.2, 33.6, WETLANDS },
+						{ 13.6, 42.6, WETLANDS },
+						{ 16.6, 26.2, WETLANDS },
+						{ 20.4, 37.6, WETLANDS },
+						{ 14.2, 36.8, WETLANDS },
+						{ 18.6, 34.0, WETLANDS },
+						{ 12.2, 40.2, WETLANDS },
+						{ 13.4, 34.0, WETLANDS },
+						{ 15.8, 28.2, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(1560, {	-- Bluegill Sandals
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1025,	-- Bluegill Puddlejumper
+					["coords"] = {
+						{ 18.6, 40.0, WETLANDS },
+						{ 15.2, 38.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 42110,	-- Bluegill Puddlejumper
+					["coords"] = {
+						{ 21.8, 40.0, WETLANDS },
+						{ 17.4, 41.4, WETLANDS },
+						{ 17.2, 33.6, WETLANDS },
+						{ 13.6, 42.6, WETLANDS },
+						{ 16.6, 26.2, WETLANDS },
+						{ 20.4, 37.6, WETLANDS },
+						{ 14.2, 36.8, WETLANDS },
+						{ 18.6, 34.0, WETLANDS },
+						{ 12.2, 40.2, WETLANDS },
+						{ 13.4, 34.0, WETLANDS },
+						{ 15.8, 28.2, WETLANDS },
+					},
+					-- #endif
 				}),
 				-- #if AFTER 4.0.3
 				i(10822, {	-- Dark Whelpling (PET!)
@@ -1845,16 +1988,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2084, {	-- Darksteel Bastard Sword
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1054,	-- Dark Iron Demolitionist
+					["coords"] = {
+						{ 62.4, 28.0, WETLANDS },
+						{ 46.8, 18.0, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						1034,	-- Dragonmaw Raider
+						1036,	-- Dragonmaw Centurion
+					},
+					["coords"] = {
+						{ 47.8, 47.6, WETLANDS },
+						{ 45.4, 42.6, WETLANDS },
+						{ 52.6, 53.4, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(1955, {	-- Dragonmaw Chain Boots
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1035,	-- Dragonmaw Swamprunner
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 50.6, 49.4, WETLANDS },
+						{ 39.0, 46.6, WETLANDS },
+					},
 				}),
 				i(753, {	-- Dragonmaw Shortsword
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1036,	-- Dragonmaw Centurion
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 54.2, 54.2, WETLANDS },
+						{ 53.4, 56.0, WETLANDS },
+						{ 45.6, 45.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 51.4, 52.6, WETLANDS },
+						{ 49.0, 48.4, WETLANDS },
+						{ 45.6, 45.4, WETLANDS },
+					},
+					-- #endif
 				}),
 				-- #if BEFORE 4.0.3
 				i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
@@ -1868,34 +2044,132 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(892, {	-- Gnoll Casting Gloves
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1009,	-- Mosshide Mistweaver
+					["coords"] = {
+						{ 45.6, 34.6, WETLANDS },
+						{ 61.0, 58.4, WETLANDS },
+						{ 62.6, 69.2, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 41391,	-- Mosshide Mystic
+					["coords"] = {
+						{ 39.0, 33.6, WETLANDS },
+						{ 35.6, 31.6, WETLANDS },
+						{ 30.2, 33.4, WETLANDS },
+					},
+					-- #endif
 				}),
-				i(3340),	-- Incendicite Ore
 				-- #if BEFORE 4.0.3
 				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 1160,	-- Captain Halyndor
 				}),
 				-- #endif
 				i(3076, {	-- Smoldering Boots
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1042,	-- Red Whelp
+					["coords"] = {
+						{ 66.8, 53.2, WETLANDS },
+						{ 59.6, 43.0, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 42042,	-- Ebon Whelp
+					["coords"] = {
+						{ 63.8, 48.6, WETLANDS },
+						{ 65.0, 42.6, WETLANDS },
+						{ 61.8, 47.4, WETLANDS },
+						{ 61.2, 40.0, WETLANDS },
+						{ 70.6, 48.4, WETLANDS },
+						{ 67.6, 52.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 61.0, 47.2, WETLANDS },
+						{ 61.8, 41.2, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(3074, {	-- Smoldering Gloves
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1043,	-- Lost Whelp
+					["coords"] = {
+						{ 60.6, 33.2, WETLANDS },
+						{ 66.2, 49.0, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 42042,	-- Ebon Whelp
+					["coords"] = {
+						{ 63.8, 48.6, WETLANDS },
+						{ 65.0, 42.6, WETLANDS },
+						{ 61.8, 47.4, WETLANDS },
+						{ 61.2, 40.0, WETLANDS },
+						{ 70.6, 48.4, WETLANDS },
+						{ 67.6, 52.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 61.0, 47.2, WETLANDS },
+						{ 61.8, 41.2, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(3073, {	-- Smoldering Pants
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 1069,	-- Crimson Whelp
+					["coords"] = {
+						{ 61.8, 31.2, WETLANDS },
+						{ 65.4, 43.0, WETLANDS },
+						{ 68.8, 45.6, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						42041,	-- Dragonmaw Whelpstealer
+						42043,	-- Ebon Slavehunter
+					},
+					["coords"] = {
+						{ 66.0, 45.8, WETLANDS },
+						{ 67.4, 47.2, WETLANDS },
+						{ 66.2, 49.2, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(3072, {	-- Smoldering Robe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 1044,	-- Flamesnorting Whelp
+					["coords"] = {
+						{ 71.8, 47.6, WETLANDS },
+						{ 66.4, 40.4, WETLANDS },
+						{ 63.8, 33.6, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						42041,	-- Dragonmaw Whelpstealer
+						42043,	-- Ebon Slavehunter
+					},
+					["coords"] = {
+						{ 66.0, 45.8, WETLANDS },
+						{ 67.4, 47.2, WETLANDS },
+						{ 66.2, 49.2, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(6315, {	-- Steelarrow Crossbow
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 6523,	-- Dark Iron Rifleman
+					["coords"] = {
+						{ 48.8, 17.6, WETLANDS },
+						{ 48.9, 17.6, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 41409,	-- Dark Iron Trapper
+					["coords"] = {
+						{ 45.8, 34.4, WETLANDS },
+						{ 42.2, 30.2, WETLANDS },
+						{ 38.2, 28.6, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(8499, {	-- Crimson Whelpling (PET!)
 					-- #if AFTER CATA
@@ -1933,8 +2207,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(756, {	-- Tunnel Pick
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1053,	-- Dark Iron Tunneler
+					["coords"] = {
+						{ 61.2, 25.4, WETLANDS },
+						{ 48.0, 18.6, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 41390,	-- Mosshide Gnoll
+					["coords"] = {
+						{ 39.0, 33.6, WETLANDS },
+						{ 35.6, 31.6, WETLANDS },
+						{ 30.2, 33.4, WETLANDS },
+					},
+					-- #endif
 				}),
 			}),
 		},

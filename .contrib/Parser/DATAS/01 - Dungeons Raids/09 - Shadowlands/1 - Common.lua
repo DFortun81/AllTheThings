@@ -7,7 +7,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_5, R
 			i(191910, {	-- Confounding Antique Cypher
 				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
 			}),
-			i(191911, { -- Cosmic Creation Impetus
+			i(191911, {	-- Cosmic Creation Impetus
 				["cost"] = { { "i", 191910, 20 } },	-- 20x Confounding Antique Cypher
 			}),
 		}),
@@ -15,7 +15,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_5, R
 			i(191926, {	-- Confounding Ancient Cypher
 				["description"] = "Drops from Fated Mythic Shadowlands Raid bosses.",
 			}),
-			i(191927, { -- Sacred Creation Impetus
+			i(191927, {	-- Sacred Creation Impetus
 				["cost"] = { { "i", 191926, 20 } },	-- 20x Confounding Ancient Cypher
 			}),
 		}),

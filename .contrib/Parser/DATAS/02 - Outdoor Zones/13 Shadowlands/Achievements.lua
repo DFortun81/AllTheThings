@@ -5,125 +5,125 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	n(ACHIEVEMENTS, {
 		petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 			i(184512),	-- Winterleaf Spriggan (PET!)
-			crit(1,  {	-- Crystalsnap
+			crit(51047, {	-- Crystalsnap
 				["crs"] = { 175777 },	-- Crystalsnap
 				["coord"] = { 52.7, 74.2, BASTION },
 			}),
-			crit(2,  {	-- Briarpaw
+			crit(51048, {	-- Briarpaw
 				["crs"] = { 175778 },	-- Briarpaw
 				["coord"] = { 34.2, 44.4, ARDENWEALD },
 			}),
-			crit(3,  {	-- Chittermaw
+			crit(51049, {	-- Chittermaw
 				["crs"] = { 175779 },	-- Chittermaw
 				["coord"] = { 26.6, 62.0, ARDENWEALD },
 			}),
-			crit(4,  {	-- Mistwing
+			crit(51050, {	-- Mistwing
 				["crs"] = { 175780 },	-- Mistwing
 				["coord"] = { 49.8, 41.6, ARDENWEALD },
 			}),
-			crit(5,  {	-- Sewer Creeper
+			crit(51051, {	-- Sewer Creeper
 				["crs"] = { 175781 },	-- Sewer Creeper
 				["coord"] = { 25.66, 23.62, REVENDRETH },
 			}),
-			crit(6,  {	-- The Countess
+			crit(51052, {	-- The Countess
 				["crs"] = { 175782 },	-- The Countess
 				["coord"] = { 53.0, 41.8, REVENDRETH },
 			}),
-			crit(7,  {	-- Digallo
+			crit(51053, {	-- Digallo
 				["crs"] = { 175783 },	-- Digallo
 				["coord"] = { 25.8, 30.8, BASTION },
 			}),
-			crit(8,  {	-- Gelatinous
+			crit(51054, {	-- Gelatinous
 				["crs"] = { 175784 },	-- Gelatinous
 				["coord"] = { 61.8, 78.8, MALDRAXXUS },
 			}),
-			crit(9,  {	-- Kostos <Challenger of the Small>
+			crit(51055, {	-- Kostos <Challenger of the Small>
 				["crs"] = { 175785 },	-- Kostos
 				["coord"] = { 46.6, 49.4, BASTION },
 			}),
-			crit(10, {	-- Glurp
+			crit(51056, {	-- Glurp
 				["crs"] = { 175786 },	-- Glurp
 				["coord"] = { 26.4, 26.8, MALDRAXXUS },
 			}),
 		})),
 		petbattle(ach(14625, {	-- Battle in the Shadowlands
 			i(184508),	-- Mawsworn Pet Leash (TOY!)
-			crit(1,  {	-- Ardenweald's Tricksters
+			crit(49402, {	-- Ardenweald's Tricksters
 				["_quests"] = { 61949 },	-- Ardenweald's Tricksters
 				["crs"] = { 173381 },	-- Rascal
 				["coord"] = { 40.2, 28.8, ARDENWEALD },
 			}),
-			crit(2,  {	-- Airborne Defense Force
+			crit(49403, {	-- Airborne Defense Force
 				["_quests"] = { 61948 },	-- Airborne Defense Force
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
-			crit(3,  {	-- Lurking In The Shadows
+			crit(49404, {	-- Lurking In The Shadows
 				["_quests"] = { 61947 },	-- Lurking In The Shadows
 				["crs"] = { 173376 },	-- Nightfang
 				["coord"] = { 40.0, 64.4, ARDENWEALD },
 			}),
-			crit(4,  {	-- Natural Defenders
+			crit(49405, {	-- Natural Defenders
 				["_quests"] = { 61946 },	-- Natural Defenders
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(5,  {	-- The Mind Games of Addius
+			crit(49406, {	-- The Mind Games of Addius
 				["_quests"] = { 61886 },	-- The Mind Games of Addius
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(6,  {	-- Eyegor's Special Friends
+			crit(49407, {	-- Eyegor's Special Friends
 				["_quests"] = { 61885 },	-- Eyegor's Special Friends
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(7,  {	-- Resilient Survivors
+			crit(49408, {	-- Resilient Survivors
 				["_quests"] = { 61883 },	-- Resilient Survivors
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 51.4, 38.2, REVENDRETH },
 			}),
-			crit(8,  {	-- Ashes Will Fall
+			crit(49409, {	-- Ashes Will Fall
 				["_quests"] = { 61879 },	-- Ashes Will Fall
 				["crs"] = { 173303 },	-- Scorch
 				["coord"] = { 25.2, 38.0, REVENDRETH },
 			}),
-			crit(9,  {	-- Failed Experiment
+			crit(49410, {	-- Failed Experiment
 				["_quests"] = { 61870 },	-- Failed Experiment
 				["crs"] = { 173274 },	-- Gorgemouth <Failed Experiment>
 				["coord"] = { 54.0, 28.0, MALDRAXXUS },
 			}),
-			crit(10, {	-- Uncomfortably Undercover
+			crit(49411, {	-- Uncomfortably Undercover
 				["_quests"] = { 61868 },	-- Uncomfortably Undercover
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(11, {	-- Extra Pieces
+			crit(49412, {	-- Extra Pieces
 				["_quests"] = { 61867 },	-- Extra Pieces
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(12, {	-- Mighty Minions of Maldraxxus
+			crit(49413, {	-- Mighty Minions of Maldraxxus
 				["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(13, {	-- Thenia's Loyal Companions
+			crit(49414, {	-- Thenia's Loyal Companions
 				["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(14, {	-- Micro Defense Force
+			crit(49415, {	-- Micro Defense Force
 				["_quests"] = { 61787 },	-- Micro Defense Force
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(15, {	-- Cliffs of Bastion
+			crit(49416, {	-- Cliffs of Bastion
 				["_quests"] = { 61784 },	-- Cliffs of Bastion
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(16, {	-- Mega Bite
+			crit(49417, {	-- Mega Bite
 				["_quests"] = { 61783 },	-- Mega Bite
 				["crs"] = { 173133 },	-- Jawbone
 				["coord"] = { 36.6, 31.8, BASTION },
@@ -148,461 +148,461 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			},
 		})),
 		petbattle(ach(14868, {	-- Aquatic Apparitions
-			crit(1,  {	-- Sylla
+			crit(51034, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51025, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51016, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51007, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50998, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50989, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50980, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50971, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50962, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50953, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50944, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14869, {	-- Beast Busters
-			crit(1,  {	-- Sylla
+			crit(51033, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51024, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51015, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51006, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50997, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50988, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50979, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50972, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50961, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50952, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50943, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14870, {	-- Creepy Critters
-			crit(1,  {	-- Sylla
+			crit(51030, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51021, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51012, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51003, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50994, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50985, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50976, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50967, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50958, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50949, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50940, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14871, {	-- Deathly Dragonkin
-			crit(1,  {	-- Sylla
+			crit(51028, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51019, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51010, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51001, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50992, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50983, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50974, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50965, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50956, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50947, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50938, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14872, {	-- Eerie Elementals
-			crit(1,  {	-- Sylla
+			crit(51032, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51023, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51014, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51005, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50996, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50987, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50978, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50969, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50960, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50951, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50942, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14873, {	-- Flickering Fliers
-			crit(1,  {	-- Sylla
+			crit(51029, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51020, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51011, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51002, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50993, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50984, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50975, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50966, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50957, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50948, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50939, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14874, {	-- Haunted Humanoids
-			crit(1,  {	-- Sylla
+			crit(51027, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51018, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51009, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51000, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50991, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50982, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50973, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50964, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50955, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50946, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50937, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14875, {	-- Mummified Magics
-			crit(1,  {	-- Sylla
+			crit(51031, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51022, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51013, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51004, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50995, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50986, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50977, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50968, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50959, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50950, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50941, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14876, {	-- Macabre Mechanicals
-			crit(1,  {	-- Sylla
+			crit(51035, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(51026, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(51017, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(51008, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50999, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50990, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50981, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50970, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50963, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50954, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(50945, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
 		})),
 		petbattle(ach(14877, {	-- Unholy Undead
-			crit(1,  {	-- Sylla
+			crit(50936, {	-- Sylla
 				["crs"] = { 173315 },	-- Sylla
 				["coord"] = { 39.8, 52.4, REVENDRETH },
 			}),
-			crit(2,  {	-- Eyegor
+			crit(50935, {	-- Eyegor
 				["crs"] = { 173324 },	-- Eyegor
 				["coord"] = { 67.6, 66.0, REVENDRETH },
 			}),
-			crit(3,  {	-- Addius the Tormentor
+			crit(50934, {	-- Addius the Tormentor
 				["crs"] = { 173331 },	-- Addius the Tormentor
 				["coord"] = { 61.2, 41.0, REVENDRETH },
 			}),
-			crit(4,  {	-- Rotgut
+			crit(50933, {	-- Rotgut
 				["crs"] = { 173263 },	-- Rotgut
 				["coord"] = { 34.0, 55.2, MALDRAXXUS },
 			}),
-			crit(5,  {	-- Dundley Stickyfingers
+			crit(50932, {	-- Dundley Stickyfingers
 				["crs"] = { 173267 },	-- Dundley Stickyfingers
 				["coord"] = { 63.2, 46.8, MALDRAXXUS },
 			}),
-			crit(6,  {	-- Caregiver Maximillian
+			crit(50931, {	-- Caregiver Maximillian
 				["crs"] = { 173257 },	-- Caregiver Maximillian
 				["coord"] = { 46.8, 50.0, MALDRAXXUS },
 			}),
-			crit(7,  {	-- Zolla
+			crit(50930, {	-- Zolla
 				["crs"] = { 173130 },	-- Zolla
 				["coord"] = { 51.4, 38.2, BASTION },
 			}),
-			crit(8,  {	-- Thenia
+			crit(50929, {	-- Thenia
 				["crs"] = { 173129 },	-- Thenia
 				["coord"] = { 54.6, 56.0, BASTION },
 			}),
-			crit(9,  {	-- Stratios
+			crit(50928, {	-- Stratios
 				["crs"] = { 173131 },	-- Stratios
 				["coord"] = { 34.8, 62.8, BASTION },
 			}),
-			crit(10, {	-- Glitterdust
+			crit(50927, {	-- Glitterdust
 				["crs"] = { 173372 },	-- Glitterdust
 				["coord"] = { 58.2, 56.8, ARDENWEALD },
 			}),
-			crit(11, {	-- Faryl
+			crit(51036, {	-- Faryl
 				["crs"] = { 173377 },	-- Faryl
 				["coord"] = { 51.2, 44.2, ARDENWEALD },
 			}),
@@ -621,18 +621,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}},
 		}),
 		pvp(ach(14516, {	-- Impressing Zo'Sorg
-			crit(1, {	-- Express Dominance
-				["_quests"] = { 59658 },	-- Express Dominance
-			}),
-			crit(2, {	-- For Honor
-				["_quests"] = { 59803 },	-- For Honor
-			}),
-			crit(3, {	-- Seed Hunting
-				["_quests"] = { 59825 },	-- Seed Hunting
-			}),
-			crit(4, {	-- State of Decay
-				["_quests"] = { 60231 },	-- State of Decay
-			}),
+			["sym"] = {{ "achievement_criteria" }},
 		})),
 		ach(15388, {	-- Shadowlands Explorer
 			-- Meta Achievement
@@ -644,6 +633,33 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}},
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		petbattle(ach(14867, {	-- Shadowlands Safari
+			crit(50923),		-- Animared Cruor
+			crit(50926),		-- Bleak Skitterer
+			crit(50922),		-- Clutch
+			crit(50916),		-- Copperfur Kit
+			crit(50921),		-- Deepwood Leaper
+			crit(50907),		-- Dusky Dredwing Pup
+			crit(50911),		-- Fledgling Teroclaw
+			crit(50913),		-- Fluttering Glimmerfly
+			crit(50917),		-- Glimmerpool Hatchling
+			crit(50919),		-- Gorm Rootstinger
+			crit(50906),		-- Lost Soul
+			crit(50909),		-- Mire Creeper
+			crit(50924),		-- Necroray Spawnling
+			crit(50925),		-- Pulsating Maggot
+			crit(50910),		-- Rosetipped Spiderling
+			crit(50915),		-- Rustfur Kit
+			crit(50920),		-- Tranquil Wader
+			crit(50912),		-- Vibrant Glimmerfly
+			crit(50914),		-- Wader Chick
+			crit(50918),		-- Wild Etherwyrm
+			crit(50908),		-- Withering Creeper
+			crit(51093),		-- Verdant Kit
+			crit(51094),		-- Decay Grub
+			crit(51095),		-- Starmoth
+			crit(51096),		-- Crawbat
+		})),
 		ach(14825, {	-- Shadowlands Voyager
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -663,51 +679,51 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 		ach(14758),		-- The World Beyond
 		ach(14731, {	-- To All the Squirrels I've Loved and Lost
-			crit(1, {	-- Dreadfur Kit
+			crit(50248, {	-- Dreadfur Kit
 				["crs"] = { 170242 },	-- Dreadfur Kit
 				["coord"] = { 55.0, 13.6, BASTION },
 			}),
-			crit(2, {	-- Darkened Wyrmling
+			crit(50249, {	-- Darkened Wyrmling
 				["crs"] = { 170006 },	-- Darkened Wyrmling
 				["coord"] = { 37.7, 27.4, BASTION },
 			}),
-			crit(3, {	-- Soulwing Flitter
+			crit(50250, {	-- Soulwing Flitter
 				["crs"] = { 168397 },	-- Soulwing Flitter
 				["coord"] = { 48.1, 77.7, BASTION },
 			}),
-			crit(4, {	-- Starmoth
+			crit(50254, {	-- Starmoth
 				["crs"] = { 164701, 165857, 169979 },	-- Starmoth
 				["coord"] = { 64.2, 42.1, ARDENWEALD },
 			}),
-			crit(5, {	-- Timber Kit
+			crit(50255, {	-- Timber Kit
 				["crs"] = { 166973 },	-- Timber Kit
 				["coord"] = { 42.0, 27.3, ARDENWEALD },
 			}),
-			crit(6,	{	-- Runewood Hoarder
+			crit(50256,	{	-- Runewood Hoarder
 				["crs"] = { 174837 },	-- Runewood Hoarder
 				["coord"] = { 58.6, 47.1, ARDENWEALD },
 			}),
-			crit(7, {	-- Chittering Claw
+			crit(50260, {	-- Chittering Claw
 				["crs"] = { 167353 },	-- Chittering Claw
 				["coord"] = { 46.8, 59.6, MALDRAXXUS },
 			}),
-			crit(8, {	-- Writhing Rachis
+			crit(50261, {	-- Writhing Rachis
 				["crs"] = { 167354 },	-- Writhing Rachis
 				["coord"] = { 48.6, 60.2, MALDRAXXUS },
 			}),
-			crit(9, {	-- Bubbling Refuse
+			crit(50262, {	-- Bubbling Refuse
 				["crs"] = { 174650 },	-- Bubbling Refuse
 				["coord"] = { 57.6, 63.8, MALDRAXXUS },
 			}),
-			crit(10, {	-- Shardling
+			crit(50264, {	-- Shardling
 				["crs"] = { 174844 },	-- Shardling
 				["coord"] = { 71.0, 76.4, REVENDRETH },
 			}),
-			crit(11, {	-- Emaciated Bat
+			crit(50265, {	-- Emaciated Bat
 				["crs"] = { 165767 },	-- Emaciated Bat
 				["coord"] = { 39.2, 49.9, REVENDRETH },
 			}),
-			crit(12, {	-- Creeper
+			crit(50266, {	-- Creeper
 				["coord"] = { 56.0, 59.2, REVENDRETH },
 				["crs"] = {
 					174647,	-- Grimy Creeper
@@ -718,18 +734,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 		}),
 		pvp(ach(14515, {	-- Zo'Sorg's Bidding
-			crit(1, {	-- Express Dominance
-				["_quests"] = { 59658 },	-- Express Dominance
-			}),
-			crit(2, {	-- For Honor
-				["_quests"] = { 59803 },	-- For Honor
-			}),
-			crit(3, {	-- Seed Hunting
-				["_quests"] = { 59825 },	-- Seed Hunting
-			}),
-			crit(4, {	-- State of Decay
-				["_quests"] = { 60231 },	-- State of Decay
-			}),
+			["sym"] = {{ "achievement_criteria" }},
 		})),
 	}),
 })));

@@ -4,6 +4,11 @@
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	n(HIDDEN_QUESTS, {
 		q(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
+			["qg"] = 189078,	-- Scalecommander Azurathel
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
 			["name"] = "Stay awhile and listen: Scalecommander Azurathel",
 			["coord"] = { 25.4, 55.2, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -20,11 +25,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["races"] = HORDE_ONLY,
 		}),
 		q(72286, {	-- Stay awhile and listen: Genn Greymane
+			["qg"] = 194756,	-- Genn Greymane
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
 			["name"] = "Stay awhile and listen: Genn Greymane",
 			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(72287, {	-- Stay awhile and listen: High Exarch Turalyon
+			["qg"] = 189600,	-- High Exarch Turalyon
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
 			["name"] = "Stay awhile and listen: High Exarch Turalyon",
 			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -41,11 +56,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
+			["g"] = {
+				i(205456, {	-- Lost Dragonscale
+					["timeline"] = { ADDED_10_1_0 },
+				}),
+			},
 		}),
 		q(65435, {	-- The Dragon Isles Await [H]
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
+			["g"] = {
+				i(205458, {	-- Lost Dragonscale
+					["timeline"] = { ADDED_10_1_0 },
+				}),
+			},
 		}),
 		q(66577, {	-- Aspectral Invitation [A]
 			["sourceQuests"] = {
@@ -155,6 +180,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
 			["provider"] = { "n", 189569 },	-- Wrathion <The Black Prince>
 			["coord"] = { 22.9, 56.0, STORMWIND_CITY },
+			["timeline"] = { REMOVED_10_0_2_LAUNCH },
 			["g"] = {
 				i(201303),	-- Beheader's Poleaxe
 				i(201304),	-- Dunesplitter
@@ -170,6 +196,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 			["provider"] = { "n", 190239 },	-- Ebyssian
 			["coord"] = { 55.8, 12.1, DUROTAR },
+			["timeline"] = { REMOVED_10_0_2_LAUNCH },
 			["g"] = {
 				i(201303),	-- Beheader's Poleaxe
 				i(201304),	-- Dunesplitter
@@ -209,9 +236,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			},
 		}),
 	}),
-
-		-- Blue Dragonflight Questline
-	n(QUESTS, bubbleDown({ ["timeline"] = ADDED_10_1_0 }, {
+	header(HEADERS.Achievement, 17773, bubbleDownSelf({ ["timeline"] = ADDED_10_1_0 }, {	-- A Blue Dawn
 		q(72900, {	-- Keeper of the Ossuary
 			["provider"] = { "n", 187676 },	-- Kalecgos
 			["coord"] = { 61.4, 36.2, VALDRAKKEN },
@@ -269,12 +294,19 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 72937 },	-- Unusual Desruptions
 			["coord"] = { 22.5, 23.8, BOREAN_TUNDRA },
 		}),
-			-- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
+			--- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
 		q(72940, {	-- Where in the World is a Lost Blue Dragon?
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
-				74335,	-- A Moment of Reflection [Theramore]
 				72938,	-- Archival Arrival [First questchain part]
+			},
+			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+			["collectible"] = false,	-- Blizzard....
+		}),
+		q(73399, {	-- The Search for Blue Dragons
+			["provider"] = { "n", 190000 },	-- Kalecgos
+			["sourceQuests"] = {
+				74335,	-- A Moment of Reflection [Theramore]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
@@ -284,11 +316,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
-		q(73399, {	-- The Search for Blue Dragons
+		q(73404, {	-- Lost Blue Dragons
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
 				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
@@ -298,11 +329,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
-		q(73404, {	-- Lost Blue Dragons
+		q(73405, {	-- A Pair of Blue Dragons
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
 				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
@@ -312,31 +342,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
-		q(73405, {	-- A Pair of Blue Dragons
+		q(73406, {	-- The Last Missing Blue Dragon
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
 				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
 				73181,	-- Zeroing Debt [Booty Bay]
 			},
 			["sourceQuestNumRequired"] = 4,
-			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
-			["collectible"] = false,	-- Blizzard....
-		}),
-		q(73406, {	-- The Last Missing Blue Dragon
-			["provider"] = { "n", 190000 },	-- Kalecgos
-			["sourceQuests"] = {
-				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
-				74356,	-- Back with the Blues [Winterspring]
-				74291,	-- Blue is My Favorite Color [The Jade Forest]
-				74783,	-- The Sounds of Silence [Crystalsong Forest]
-				73181,	-- Zeroing Debt [Booty Bay]
-			},
-			["sourceQuestNumRequired"] = 5,
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
@@ -647,6 +662,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 186188 },	-- Sindragosa
 				["sourceQuests"] = { 72949 },	-- Swiftly to the Archives
 				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+				["maps"] = { 2183 },	-- The Azure Vault
 				["groups"] = {
 					i(197134),	-- Highland Drake: Spiked Legs (DM!)
 				},
@@ -656,6 +672,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 72950 },	-- The Last Conflict
 				["coord"] = { 39.3, 63.6, THE_AZURE_SPAN },
 				["groups"] = {
+					ach(17773, {	-- A Blue Dawn
+						["timeline"] = { ADDED_10_1_7 },
+					}),
 					i(205958, {	-- Ensemble: Azure Renewal Finery
 						["groups"] = {
 							i(205956),	-- Azure Renewal Cape
@@ -666,6 +685,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(205908, {	-- Inherited Wisdom of Senegos (TOY!)
 						["description"] = "You will find this in your mailbox upon completing this quest",
 					}),
+					i(205959),	-- Letter from Kirygosa
+					i(205970),	-- Azure Flightstone
 				},
 			}),
 		}),
@@ -716,16 +737,16 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(72751),	-- Triggers whenever you collect one of the Coin quests from your Adventurer's Journal.
 	})),
 	n(QUESTS, bubbleDownSelf({ ["timeline"] = ADDED_10_1_0 }, {
-		q(73096),	-- triggeres when Booty Bay is chosen
-		q(73097),	-- triggeres when Booty Bay is chosen (spell ID 398606)
-		q(73098),	-- triggeres when Crystalsong Forest is chosen (spellID 398610)
-		q(73400),	-- triggeres when Crystalsong Forest is chosen
-		q(73228),	-- triggeres when The Jade Forst is chosen (spellID 399077)
-		q(73401),	-- triggeres when The Jade Forst is chosen
-		q(73402),	-- triggeres when Theramore is chosen
-		q(74785),	-- triggeres when Theramore is chosen (spellID 403046)
-		q(73403),	-- triggeres when Winterspring is chosen
-		q(74353),	-- triggeres when Winterspring is chosen (spellID 400338)
+		q(73096),	-- triggers when Booty Bay is chosen
+		q(73097),	-- triggers when Booty Bay is chosen (spell ID 398606)
+		q(73098),	-- triggers when Crystalsong Forest is chosen (spellID 398610)
+		q(73400),	-- triggers when Crystalsong Forest is chosen
+		q(73228),	-- triggers when The Jade Forst is chosen (spellID 399077)
+		q(73401),	-- triggers when The Jade Forst is chosen
+		q(73402),	-- triggers when Theramore is chosen
+		q(74785),	-- triggers when Theramore is chosen (spellID 403046)
+		q(73403),	-- triggers when Winterspring is chosen
+		q(74353),	-- triggers when Winterspring is chosen (spellID 400338)
 		q(76018),	-- Ensemble: Azure Renewal Finery
 	})),
 }));

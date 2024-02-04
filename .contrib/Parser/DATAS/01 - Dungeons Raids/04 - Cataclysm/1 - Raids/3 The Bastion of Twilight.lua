@@ -13,16 +13,16 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4850, {	-- The Bastion of Twilight
-					crit(1, {	-- Halfus Wyrmbreaker
+					crit(13577, {	-- Halfus Wyrmbreaker
 						["_encounter"] = { 156, NORMAL_DUNGEON },
 					}),
-					crit(2, {	-- Valiona and Theralion
+					crit(13576, {	-- Valiona and Theralion
 						["_encounter"] = { 157, NORMAL_DUNGEON },
 					}),
-					crit(3, {	-- Ascendant Council
+					crit(13578, {	-- Ascendant Council
 						["_encounter"] = { 158, NORMAL_DUNGEON },
 					}),
-					crit(4, {	-- Cho'gall
+					crit(13579, {	-- Cho'gall
 						["_encounter"] = { 167, NORMAL_DUNGEON },
 					}),
 				}),
@@ -68,8 +68,8 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(4852, {	-- Double Dragon
-								crit(1),	-- Valiona and Theralion
-								crit(2, {	-- Twilight Fiends killed
+								crit(13576),	-- Valiona and Theralion
+								crit(16015, {	-- Twilight Fiends killed
 									["cr"] = 49864,	-- Twilight Fiend
 								}),
 							}),
@@ -125,11 +125,8 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
 							i(152972),	-- Faceless Minion (PET!)
-							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
-								["races"] = { VULPERA },
-								["questID"] = 59032,
-								["timeline"] = { "added 8.3.0.33115" },
-								["ignoreBonus"] = true,
+							ig(175159, {	-- Sinister Shadows (RI!)
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(59330),	-- Shalug'doom, the Axe of Unmaking
 							i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
@@ -277,10 +274,3 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		},
 	}),
 }));
-root(ROOTS.NeverImplemented, {
-	tier(CATA_TIER, {
-		inst(72, {	-- The Bastion of Twilight
-			i(65099),	-- Tsanga's Helm
-		}),
-	}),
-});

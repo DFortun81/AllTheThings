@@ -8,7 +8,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 		["coord"] = { 78.4, 48.9, REVENDRETH },
 		["maps"] = {
 			1663,	-- Halls of Atonement
-			1664,	-- The Nave of Pain / The Crimson Apse
+			1664,	-- The Nave of Pain
 			1665,	-- Sanctury of Souls
 		},
 		["g"] = {

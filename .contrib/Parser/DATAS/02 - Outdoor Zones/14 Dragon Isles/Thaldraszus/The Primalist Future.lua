@@ -9,15 +9,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(ACHIEVEMENTS, {
 				ach(17343),	-- Drop It Like It's Hot
 				ach(17342, {	-- The Future We Make
-					crit(1, {
+					crit(57965, {
 						-- ["_npcs"] = { 199502 },	-- Glakis, Winter's Wrath
 						["crs"] = { 199502 },	-- Glakis, Winter's Wrath
 					}),
-					crit(2, {
+					crit(57966, {
 						-- ["_npcs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
 						["crs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
 					}),
-					crit(3, {
+					crit(57967, {
 						-- ["_npcs"] = { 200439 },	-- Seismodor, Earth's Wrath
 						["crs"] = { 200439 },	-- Seismodor, Earth's Wrath
 					}),
@@ -115,6 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 71995,
 					["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					["isWeekly"] = true,
 					["g"]= {
 						i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
 						i(201447),	-- Primal Revenant's Breezeblade
@@ -185,6 +186,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 					},
 				}),
+				n(198827, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Sous Chef Durang
+					["coord"] = { 61.2, 52.8, THE_PRIMALIST_FUTURE },
+					["g"] = {
+						i(201813),	-- Spoiled Firewine
+					},
+				})),
 				n(199541, {	-- Tarndormu <Temporal Squadron Commander>
 					["description"] = "This Vendor is only visible during the Storm's Fury event.",
 					["coord"] = { 60.8, 46.6, THE_PRIMALIST_FUTURE },

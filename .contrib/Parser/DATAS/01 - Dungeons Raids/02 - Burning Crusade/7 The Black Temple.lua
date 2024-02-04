@@ -4,6 +4,9 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 	inst(751, {	-- The Black Temple
 		["lore"] = "When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3959,	-- Black Temple
+		-- #endif
 		["sins"] = {
 			"Black Temple",
 			"Temple noir",
@@ -27,6 +30,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(11748, {["timeline"] = {ADDED_7_2_0}}),	-- Black is the New Black (Black Temple)
 				achWithRep(958, 1012, {	-- Sworn to the Deathsworn
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
@@ -93,6 +97,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						13429,	-- A Distraction for Akama
 						-- #endif
 					},
+					-- #if AFTER 3.0.1
+					["sourceQuestNumRequired"] = 1,
+					-- #endif
 					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 				q(10959, {	-- The Fall of the Betrayer
@@ -116,55 +123,19 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			}),
 			n(VENDORS, {
 				n(23159, {	-- Okuno <Ashtongue Deathsworn Quartermaster>
-					i(32429, {	-- Pattern: Boots of Shackled Souls
-						["spellID"] = 39997,	-- Boots of Shackled Souls
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32430, {	-- Pattern: Bracers of Shackled Souls (RECIPE!)
-						-- #if AFTER CATA
-						["spellID"] = 52733,	-- Bracers of Shackled Souls
-						-- #else
-						["spellID"] = 40000,	-- Bracers of Shackled Souls
-						-- #endif
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32431, {	-- Pattern: Greaves of Shackled Souls
-						["spellID"] = 40001,	-- Greaves of Shackled Souls
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
+					i(32429),	-- Pattern: Boots of Shackled Souls (RECIPE!)
+					i(32430),	-- Pattern: Bracers of Shackled Souls (RECIPE!)
+					i(32431),	-- Pattern: Greaves of Shackled Souls (RECIPE!)
 					i(32447),	-- Pattern: Night's End
-					i(32436, {	-- Pattern: Redeemed Soul Cinch
-						["spellID"] = 40006,	-- Redeemed Soul Cinch
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32435, {	-- Pattern: Redeemed Soul Legguards
-						["spellID"] = 40005,	-- Redeemed Soul Legguards
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32433, {	-- Pattern: Redeemed Soul Moccasins
-						["spellID"] = 40003,	-- Redeemed Soul Moccasins
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(32434, {	-- Pattern: Redeemed Soul Wristguards
-						["spellID"] = 40004,	-- Redeemed Soul Wristguards
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
+					i(32436),	-- Pattern: Redeemed Soul Cinch (RECIPE!)
+					i(32435),	-- Pattern: Redeemed Soul Legguards (RECIPE!)
+					i(32433),	-- Pattern: Redeemed Soul Moccasins (RECIPE!)
+					i(32434),	-- Pattern: Redeemed Soul Wristguards (RECIPE!)
 					i(32438),	-- Pattern: Soulguard Bracers
 					i(32440),	-- Pattern: Soulguard Girdle
 					i(32439),	-- Pattern: Soulguard Leggings
 					i(32437),	-- Pattern: Soulguard Slippers
-					i(32432, {	-- Pattern: Waistguard of Shackled Souls
-						["spellID"] = 40002,	-- Waistguard of Shackled Souls
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
+					i(32432),	-- Pattern: Waistguard of Shackled Souls (RECIPE!)
 					i(32442),	-- Plans: Shadesteel Bracers (RECIPE!)
 					i(32444),	-- Plans: Shadesteel Girdle (RECIPE!)
 					i(32443),	-- Plans: Shadesteel Greaves (RECIPE!)
@@ -200,26 +171,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			}),
 			n(ZONE_DROPS, {
 				i(32754),	-- Pattern: Bracers of Nimble Thought
-				i(32744, {	-- Pattern: Bracers of Renewed Life
-					["spellID"] = 41156,	-- Bracers of Renewed Life
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(32750, {	-- Pattern: Living Earth Bindings
-					["spellID"] = 41163,	-- Living Earth Bindings
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(32749, {	-- Pattern: Shoulders of Lightning Reflexes
-					["spellID"] = 41162,	-- Shoulders of Lightning Reflexes
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(32747, {	-- Pattern: Swiftstrike Shoulders
-					["spellID"] = 41160,	-- Swiftstrike Shoulders
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
+				i(32744),	-- Pattern: Bracers of Renewed Life (RECIPE!)
+				i(32750),	-- Pattern: Living Earth Bindings (RECIPE!)
+				i(32749),	-- Pattern: Shoulders of Lightning Reflexes (RECIPE!)
+				i(32747),	-- Pattern: Swiftstrike Shoulders (RECIPE!)
 				i(32753),	-- Pattern: Swiftheal Mantle
 				i(32738),	-- Plans: Dawnsteel Bracers (RECIPE!)
 				i(32737),	-- Plans: Swiftsteel Shoulders (RECIPE!)

@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 29.5, 69.6, STORMSONG_VALLEY },	-- entrance to cellar
 				["g"] = {
 					i(160470),	-- Broodcrawler Wristguards
-					crit(8, {	-- Broodmother
+					crit(41760, {	-- Broodmother
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 47.2, 65.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(155287),	-- Razorspine's Greatmace
-					crit(26, {	-- Captain Razorspine
+					crit(41818, {	-- Captain Razorspine
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(154183),	-- Boralus-Captain's Chain Boots
 					i(162028),	-- Technique: Glyph of the Tideskipper (RECIPE!)
-					crit(18, {	-- Corrupted Pod
+					crit(41777, {	-- Corrupted Pod
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 62.91, 32.91, STORMSONG_VALLEY },
 				["g"] = {
 					i(154460),	-- Treasure-Seeker's Diving Helmet
-					crit(17, {	-- Croaker
+					crit(41776, {	-- Croaker
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 51.1, 54.4, STORMSONG_VALLEY },	-- entrance
 				["g"] = {
 					i(154857),	-- Bonesplinter Band
-					crit(19, {	-- Crushtacean
+					crit(41778, {	-- Crushtacean
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 68.0, 39.4, STORMSONG_VALLEY },
 				["g"] = {
 					i(160476),	-- Fogtide Warboots
-					crit(20, {	-- Dagrus the Scorned
+					crit(43470, {	-- Dagrus the Scorned
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 53.0, 50.6, STORMSONG_VALLEY },	-- pats a little but one coord should suffice
 				["g"] = {
 					i(160464),	-- Dire Hill Wolfsteppers
-					crit(16, {	-- Deepfang
+					crit(41775, {	-- Deepfang
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(154453),	-- Doc's Air-Cushioned Boots
-					crit(34, {	-- Doc Marrtens or Jakala the Cruel
+					crit(41849, {	-- Doc Marrtens or Jakala the Cruel
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 64.41, 65.91, STORMSONG_VALLEY },
 				["g"] = {
 					i(160471),	-- Foreman's Stability Belt
-					crit(12, {	-- Foreman Scripps
+					crit(41765, {	-- Foreman Scripps
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 71.51, 54.31, STORMSONG_VALLEY },
 				["g"] = {
 					i(155568),	-- Galewind Chimes
-					crit(9, {	-- Galestorm
+					crit(41761, {	-- Galestorm
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 62.01, 73.91, STORMSONG_VALLEY },
 				["g"] = {
 					i(155572),	-- Yeti-Rager's Cloak
-					crit(15, {	-- Grimscowl the Harebrained
+					crit(41774, {	-- Grimscowl the Harebrained
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 35.6, 77.4, STORMSONG_VALLEY },
 				["g"] = {
 					i(154273),	-- Rockstopper Breastplate
-					crit(23, {	-- Haegol the Hammer
+					crit(41815, {	-- Haegol the Hammer
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 63.5, 83.4, STORMSONG_VALLEY },
 				["g"] = {
 					i(154464),	-- Frozen Heart Legguards
-					crit(25, {	-- Ice Sickle
+					crit(41817, {	-- Ice Sickle
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(159179, {	-- Headtaker's Helm
 						["crs"] = { 140925 },	-- Doc Marrtens
 					}),
-					crit(34, {	-- Doc Marrtens or Jakala the Cruel
+					crit(41848, {	-- Doc Marrtens or Jakala the Cruel
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 31.6, 61.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(154475),	-- Goathair Bindings
-					crit(11, {	-- Kickers
+					crit(41763, {	-- Kickers
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["g"] = {
 					i(160458),	-- Ancient Featherlight Slippers
-					crit(30, {	-- Nestmother Acada
+					crit(41844, {	-- Nestmother Acada
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 42.2, 63.1, STORMSONG_VALLEY },
 				["g"] = {
 					i(159169),	-- Bloody Bearhide Pants
-					crit(31, {	-- Osca the Bloodied
+					crit(41845, {	-- Osca the Bloodied
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 38.6, 51.0, STORMSONG_VALLEY },
 				["g"] = {
 					i(163678),	-- Pinku'shon's Impaler
-					crit(14, {	-- Pinku'shon
+					crit(41772, {	-- Pinku'shon
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 52469,
 				["coord"] = { 34.6, 67.8, STORMSONG_VALLEY },
 				["g"] = {
-					crit(13, {	-- Poacher Zane
+					crit(41769, {	-- Poacher Zane
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 41.6, 74.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(160465),	-- Raging-Earth Wranglers
-					crit(6, {	-- Ragna
+					crit(41758, {	-- Ragna
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 73.6, 60.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(154389),	-- Abyssal-Serpent Pauldrons
-					crit(32, {	-- Sandfang
+					crit(41846, {	-- Sandfang
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 34.0, 38.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(160477),	-- Skoloth's Anchorplate Greaves
-					crit(3, {	-- Seabreaker Skoloth
+					crit(41755, {	-- Seabreaker Skoloth
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 22.6, 73.2, STORMSONG_VALLEY },
 				["g"] = {
 					i(163679),	-- Severus' Bindings
-					crit(2, {	-- Severus the Outcast
+					crit(41754, {	-- Severus the Outcast
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 61.5, 57.0, STORMSONG_VALLEY },
 				["g"] = {
 					i(155164),	-- Beryl-Tide Greatcloak
-					crit(28, {	-- Sister Absinthe
+					crit(41842, {	-- Sister Absinthe
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 41.8, 28.4, STORMSONG_VALLEY },
 				["g"] = {
 					i(158216),	-- Living Oil Cannister
-					crit(7, {	-- Slickspill
+					crit(41759, {	-- Slickspill
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 70.8, 32.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(158218),	-- Dadalea's Wing
-					crit(1, {	-- Song Mistress Dadalea
+					crit(41753, {	-- Song Mistress Dadalea
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -345,7 +345,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 56.9, 76.0, STORMSONG_VALLEY },
 				["g"] = {
 					i(158224),	-- Vial of Storms [Confirmed - Crieve]
-					crit(24, {	-- Squall
+					crit(41816, {	-- Squall
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 53.8, 72.2, STORMSONG_VALLEY },	-- cave entrance
 				["g"] = {
 					i(154466),	-- Fungalshroud Raiment
-					crit(22, {	-- Strange Mushroom Ring
+					crit(41787, {	-- Strange Mushroom Ring
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 60.0, 46.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(154449),	-- Tidebound Chestguard
-					crit(33, {	-- Taja the Tidehowler
+					crit(41847, {	-- Taja the Tidehowler
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 51.8, 79.6, STORMSONG_VALLEY },
 				["g"] = {
 					i(150909),	-- Morel Coils
-					crit(5, {	-- The Lichen King
+					crit(41757, {	-- The Lichen King
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["g"] = {
 					i(158299),	-- Ratha's Thornscepter
-					crit(21, {	-- Vinespeaker Ratha
+					crit(41782, {	-- Vinespeaker Ratha
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 45.8, 74.3, STORMSONG_VALLEY },	-- path
 				["g"] = {
 					i(154431),	-- Earthshaker's Flame
-					crit(29, {	-- Wagga Snarltusk
+					crit(41843, {	-- Wagga Snarltusk
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
@@ -408,7 +408,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 46.8, 42.1, STORMSONG_VALLEY },
 				["g"] = {
 					i(158215),	-- Whirlwing's Plumage
-					crit(10, {	-- Whirlwing
+					crit(41762, {	-- Whirlwing
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},

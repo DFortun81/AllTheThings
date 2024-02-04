@@ -4,6 +4,7 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(CAVERNS_OF_TIME, {
 		["lore"] = "Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",
+		["zone-text-areaID"] = 1941,	-- Caverns of Time
 		["maps"] = { 74 },	-- Caverns of Time Entrance
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
@@ -110,7 +111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					-- #endif
 				})),
-				n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
+				applyclassicphase(TBC_PHASE_ONE, n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
 					["coord"] = { 40.0, 77.2, 74 },
 					["groups"] = {
 						i(29183),	-- Bindings of the Timewalker
@@ -174,24 +175,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(29186, {	-- Glyph of the Defender
 							["timeline"] = { "removed 5.0.4" },
 						}),
-						i(29713),	-- Pattern: Drums of Panic
+						i(29713),	-- Pattern: Drums of Panic (RECIPE!)
 						-- #if ANYCLASSIC
-						applyclassicphase(TBC_PHASE_FOUR, i(185925)),	-- Pattern: Greater Drums of Panic
+						applyclassicphase(TBC_PHASE_FOUR, i(185925)),	-- Pattern: Greater Drums of Panic (RECIPE!)
 						-- #endif
-						i(31355),	-- Recipe: Flask of Supreme Power
+						i(31355),	-- Recipe: Flask of Supreme Power (RECIPE!)
 					},
-				}),
+				})),
 				n(155944, {	-- Otela <Time-Lost Baubles>
 					["coord"] = { 42.4, 71.6, 74 },
 					["timeline"] = { "added 8.2.0.30918" },
 					["groups"] = {
 						i(170739, {	-- Sunswarmed Sand
 							["timeline"] = { "added 8.2.0.30918" },
-							["cost"] = { { "c", 1166, 10 }, },		-- 10x Timewarped Badge
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 10 }},
 						}),
 						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
 							["timeline"] = { "added 8.2.0.30918" },
-							["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 						}),
 					},
 				}),

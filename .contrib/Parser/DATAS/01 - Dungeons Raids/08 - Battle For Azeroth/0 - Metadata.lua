@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root(ROOTS.Instances, applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, {
-	
-})));
+root(ROOTS.Instances, tier(BFA_TIER, {
+	["timeline"] = { ADDED_8_0_1_LAUNCH },
+}));

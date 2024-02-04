@@ -5,7 +5,7 @@
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "removed 8.0.1.28153" }, ["lvl"] = 110 }, {
 	tier(BFA_TIER, {
 		n(QUESTS, {
-			-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
+			-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stormwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
 			["maps"] = {
 				ASHENVALE,
 				DARNASSUS,
@@ -404,7 +404,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 					cl(WARLOCK, {
 						i(162853),	-- Unshackled Belt
 						i(162849),	-- Unshackled Crown
-						i(162852),	-- Unshackled Epaulettes
+						i(162852),	-- Unshackled Epaulets
 						i(162848),	-- Unshackled Handguards
 						i(162847),	-- Unshackled Shoes
 						i(163016),	-- Unshackled Staff
@@ -539,23 +539,3 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {	-- Battle For Azeroth
-		n(EXPANSION_PRELAUNCH, {
-			n(QUESTS, {
-				q(50882,{	-- All to Ash
-					["_drop"] = { "g" },
-				}),
-				q(52220, {	-- Dragon Attack
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 52197,	-- Long Away
-				}),
-				q(53550, {	-- A Change in Leadership
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 50879,	-- The Trees Have Ears
-				}),
-			}),
-		}),
-	}),
-});

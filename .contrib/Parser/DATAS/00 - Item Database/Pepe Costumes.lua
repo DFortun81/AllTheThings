@@ -1,8 +1,15 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, questID)
-	Items[itemID] = { ["questID"] = questID, ["type"] = "TODO" };
+	Items[itemID] = { ["questID"] = questID, ["type"] = "characterUnlockQuestID" };
 end
+
+------------------
+-- PATCH 10.2.5 --
+------------------
+i(213207, 79551);	-- A Tiny Ear Warmer
+i(213202, 79550);	-- A Tiny Explorer's Hat
+i(213181, 79547);	-- A Tiny Dragon Goblet
 
 -----------------
 -- PATCH 9.1.0 --

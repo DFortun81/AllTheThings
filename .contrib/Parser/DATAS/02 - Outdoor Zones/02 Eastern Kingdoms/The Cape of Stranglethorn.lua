@@ -18,6 +18,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Trolls of Zul'gurub
 							["sourceQuests"] = { 26814, 26555 },	-- High Priest Venoxis (A, H)
@@ -36,13 +37,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26703,	-- Bloodsail's End
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(4995, {	-- Explore the Cape of Stranglethorn
 					["timeline"] = { "added 4.0.3" },
 				}),
 			}),
 			pvp(o(179697, {	-- Arena Treasure Chest
-				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+				["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
 				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
 					ach(389, {	-- Gurubashi Arena Master
@@ -74,11 +76,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					405,	-- Tree Python (PET!)
 				}},
 				["groups"] = {
-					pet(411, { -- Baby Ape (PET!)
+					pet(411, {	-- Baby Ape (PET!)
 						["description"] = "Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",
 					}),
 					pet(401),	-- Strand Crab (PET!)
-					pet(410, { -- Wharf Rat (PET!)
+					pet(410, {	-- Wharf Rat (PET!)
 						["description"] = "Can be found relaibly as secondary pets alongside Baby Apes, but also found in Booty Bay.",
 					}),
 				},
@@ -113,13 +115,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.0, 29.2, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-				}),
-			}),
-			n(PROFESSIONS, {
-				prof(BLACKSMITHING, {
-					n(2836, {	-- Brikk Keencraft <Master Blacksmith>
-						["coord"] = { 29.0, 75.4, THE_CAPE_OF_STRANGLETHORN },
-					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -243,11 +238,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19024),	-- Arena Grand Master
 					},
 				})),
-				q(7810, {	-- Arena Master
+				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					["altQuests"] = { 7908 },	-- Arena Master
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-				}),
+				})),
 				q(26644, {	-- Attracting Attention
 					["qg"] = 2548,	-- Captain Keelhaul
 					["sourceQuests"] = {
@@ -955,7 +949,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(61562, {	-- Smott's Signet
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
-						i(61564, {	-- Sea Song Epaulettes
+						i(61564, {	-- Sea Song Epaulets
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(61566, {	-- Landlubber Headband
@@ -1446,8 +1440,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2490,	-- First Mate Crazz
 					["sourceQuests"] = {
 						26595,	-- Kill-Collect
+						26601,	-- Mok'rash the Cleaver
 						26606,	-- Mukla's Demise
 					},
+					["sourceQuestNumRequired"] = 1,
 					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
 					["coord"] = { 42.6, 71.8, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1921,10 +1917,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.8, 49.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
 						i(5028, {	-- Lord Sakrasis' Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5029, {	-- Talisman of the Naga Lord
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1933,6 +1929,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1552, {	-- Scale Belly
 					["coord"] = { 67.8, 25.4, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "Found inside Crystalvein Mine.",
 					["groups"] = {
 						i(1604, {	-- Chromatic Sword
 							["timeline"] = { "removed 4.0.3", "added 7.3.5" },
@@ -1985,10 +1982,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
 					["coord"] = { 42.7, 75.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2025,14 +2022,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2664, {	-- Kelsey Yance <Cook>
 					["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(13940),	-- Recipe: Cooked Glossy Mightfish
-						i(13941),	-- Recipe: Filet of Redgill
-						i(6039),	-- Recipe: Giant Clam Scorcho
-						i(13943),	-- Recipe: Hot Smoked Bass
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
+						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
+						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
+						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
@@ -2061,9 +2058,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.2.0.14241" },
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2083,16 +2080,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 					},
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
-					["sym"] = {{"select", "itemID",
-						14635,	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
-						18239,	-- Pattern: Shadowskin Gloves (RECIPE!)
-					}},
+					["g"] = {
+						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(151042, {	-- Skin-Me-Own-Coat Dibblefur <T-Shirt Scalper>
 					["coord"] = { 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
@@ -2222,5 +2231,5 @@ root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
 	m(THE_CAPE_OF_STRANGLETHORN, {
 		q(7908),	-- triggered when completing 7810 'Arena Master'
 	}),
-}))
+}));
 -- #endif

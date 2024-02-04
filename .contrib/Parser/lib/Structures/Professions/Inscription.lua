@@ -201,46 +201,41 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 }));
 SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309805),	-- Shadowlands Inscription
-	cat(1409, {	-- Books & Scrolls
-		r(311425),	-- Tome of the Still Mind
-		r(311423),	-- Writ of Grave Robbing
-	}),
-	cat(1411, {	-- Cards
-		r(311441),	-- Darkmoon Card of Death
-		r(324037),	-- Darkmoon Card of Putrescence
-		r(324036),	-- Darkmoon Card of Repose
-		r(324039),	-- Darkmoon Card of the Indomitable
-		r(324035),	-- Darkmoon Card of Voracity
-	}),
-	cat(786, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 }},{	-- Glyphs
-		r(362412),	-- Glyph of the Wild Mushroom*
+	r(382982, {["timeline"] = {ADDED_10_0_0}}),	-- Shadowlands Milling
+	r(311413),	-- Mass Mill Deathblossom
+	r(359490, {["timeline"] = {ADDED_9_2_0}}),	-- Mass Mill First Flower
+	r(311416),	-- Mass Mill Marrowroot
+	r(311418),	-- Mass Mill Nightshade
+	r(311417),	-- Mass Mill Rising Glory
+	r(311414),	-- Mass Mill Vigil's Torch
+	r(311415),	-- Mass Mill Widowbloom
+	filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 }},{
+		r(362412),	-- Glyph of the Wild Mushroom
 	})),
-	cat(1408, {	-- Ink
-		r(311406),	-- Luminous Ink
-		r(321029),	-- Tranquil Ink
-		r(311405),	-- Umbral Ink
-	}),
-	cat(1412, {	-- Mass Milling
-		r(311413),	-- Mass Mill Deathblossom
-		r(359490, {["timeline"] = {ADDED_9_2_0}}),	-- Mass Mill First Flower
-		r(311416),	-- Mass Mill Marrowroot
-		r(311418),	-- Mass Mill Nightshade
-		r(311417),	-- Mass Mill Rising Glory
-		r(311414),	-- Mass Mill Vigil's Torch
-		r(311415),	-- Mass Mill Widowbloom
-	}),
-	cat(1407, {	-- Off-Hands
-		r(311408),	-- Newly Departed Codex
-	}),
-	cat(1474, {	-- Optional Reagents
+	filter(MISC, {
 		r(343691),	-- Crafter's Mark I
 		r(324197),	-- Missive of Critical Strike
 		r(324198),	-- Missive of Haste
 		r(324196),	-- Missive of Mastery
 		r(324195),	-- Missive of Versatility
 		r(343686),	-- Novice Crafter's Mark
+		r(311425),	-- Tome of the Still Mind
+		r(311423),	-- Writ of Grave Robbing
 	}),
-	cat(1415, {	-- Staves
+	filter(REAGENTS, {
+		r(311406),	-- Luminous Ink
+		r(321029),	-- Tranquil Ink
+		r(311405),	-- Umbral Ink
+	}),
+	filter(TRINKET_F, {
+		r(311441),	-- Darkmoon Card of Death
+		r(324037),	-- Darkmoon Card of Putrescence
+		r(324036),	-- Darkmoon Card of Repose
+		r(324039),	-- Darkmoon Card of the Indomitable
+		r(324035),	-- Darkmoon Card of Voracity
+	}),
+	n(WEAPONS, {
+		r(311408),	-- Newly Departed Codex
 		r(311688),	-- Soul Keeper's Column
 		r(311689),	-- Soul Keeper's Spire
 	}),
@@ -248,32 +243,47 @@ SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timelin
 DF_INSCRIPTION = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366251),	-- Dragon Isles Inscription
 	r(382981),	-- Dragon Isles Milling
-	r(383549),	-- Alchemist's Sturdy Mixing Rod
-	r(383563),	-- Blazing Fortune
-	r(383786),	-- Blazing Ink
-	r(383791),	-- Burnished Ink
-	r(383527),	-- Buzzing Rune
-	r(383551),	-- Chef's Smooth Rolling Pin
-	r(383531),	-- Chilled Rune
-	r(383525),	-- Chirping Rune
-	r(383539),	-- Core Explorer's Compendium
-	r(383790),	-- Cosmic Ink
-	r(383554),	-- Draconic Missive of the Aurora
-	r(383555),	-- Draconic Missive of the Feverflare
-	r(383556),	-- Draconic Missive of the Fireflash
-	r(383560),	-- Draconic Missive of the Harmonious
-	r(383561),	-- Draconic Missive of the Peerless
-	r(383562),	-- Draconic Missive of the Quickblade
-	r(384948),	-- Flourishing Fortune
-	r(383787),	-- Flourishing Ink
-	r(383529),	-- Howling Rune
-	r(383572),	-- Illusion Parchment: Spell Shield
-	r(383543),	-- Overseer's Writhebark Stave
-	r(383544),	-- Pioneer's Writhebark Stave
-	r(389193),	-- Recraft Equipment
-	r(383530),	-- Runed Writhebark
-	r(383547),	-- Scribe's Fastened Quill
-	r(384949),	-- Serene Fortune
-	r(383788),	-- Serene Ink
-	r(383546),	-- Vantus Rune: Vault of the Incarnates
+	filter(MISC, {
+		r(383563),	-- Blazing Fortune
+		r(383527),	-- Buzzing Rune
+		r(383531),	-- Chilled Rune
+		r(383525),	-- Chirping Rune
+		r(383554),	-- Draconic Missive of the Aurora
+		r(383555),	-- Draconic Missive of the Feverflare
+		r(383556),	-- Draconic Missive of the Fireflash
+		r(383560),	-- Draconic Missive of the Harmonious
+		r(383561),	-- Draconic Missive of the Peerless
+		r(383562),	-- Draconic Missive of the Quickblade
+		r(384948),	-- Flourishing Fortune
+		r(383529),	-- Howling Rune
+		r(383572),	-- Illusion Parchment: Spell Shield
+		r(389193),	-- Recraft Equipment
+		r(384949),	-- Serene Fortune
+		r(383546),	-- Vantus Rune: Vault of the Incarnates
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(383549),	-- Alchemist's Sturdy Mixing Rod
+		r(383551),	-- Chef's Smooth Rolling Pin
+		r(383547),	-- Scribe's Fastened Quill
+	}),
+	filter(REAGENTS, {
+		r(383786),	-- Blazing Ink
+		r(383791),	-- Burnished Ink
+		r(383790),	-- Cosmic Ink
+		r(383787),	-- Flourishing Ink
+		r(383530),	-- Runed Writhebark
+		r(383788),	-- Serene Ink
+	}),
+	filter(TRINKET_F, {
+		r(311441),	-- Darkmoon Card of Death
+		r(324037),	-- Darkmoon Card of Putrescence
+		r(324036),	-- Darkmoon Card of Repose
+		r(324039),	-- Darkmoon Card of the Indomitable
+		r(324035),	-- Darkmoon Card of Voracity
+	}),
+	n(WEAPONS, {
+		r(383539),	-- Core Explorer's Compendium
+		r(383543),	-- Overseer's Writhebark Stave
+		r(383544),	-- Pioneer's Writhebark Stave
+	}),
 }));

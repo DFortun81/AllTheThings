@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, tier(MOP_TIER, {
-	n(-43, {	-- Proving Grounds
+	n(PROVING_GROUNDS, {
 		["maps"] = { 480 },	-- Proving Grounds
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -31,6 +31,63 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, {
 				ach(9583, {	-- Proving Yourself: Endless Tank (Wave 30) (Tank Series)
 					title(216),	-- the Proven Defender
 				}),
+				ach(8507, {		-- Proving Yourself: Endless Damage (Wave 30) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8504, {		-- Proving Yourself: Endless Damage (Wave 20) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8501, {		-- Proving Yourself: Endless Damage (Wave 10) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8496, {		-- Proving Yourself: Gold Damage (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8491, {		-- Proving Yourself: Silver Damage (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8486, {		-- Proving Yourself: Bronze Damage (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8509, {		-- Proving Yourself: Endless Healer (Wave 30) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8506, {		-- Proving Yourself: Endless Healer (Wave 20) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8503, {		-- Proving Yourself: Endless Healer (Wave 10) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8498, {		-- Proving Yourself: Gold Healer (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8493, {		-- Proving Yourself: Silver Healer (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8488, {		-- Proving Yourself: Bronze Healer (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8508, {		-- Proving Yourself: Endless Tank (Wave 30) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8505, {		-- Proving Yourself: Endless Tank (Wave 20) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8502, {		-- Proving Yourself: Endless Tank (Wave 10) (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8497, {		-- Proving Yourself: Gold Tank (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8492, {		-- Proving Yourself: Silver Tank (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8487, {		-- Proving Yourself: Bronze Tank (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
+				ach(8697, {		-- You're Doing it Wrong (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
 				ach(9590),	-- You're Doing it Wrong (META)
 				ach(9597),	-- You're Really Doing It Wrong
 			}),
@@ -39,7 +96,7 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, {
 }));
 
 root(ROOTS.NeverImplemented, tier(MOP_TIER, {
-	n(-43, {	-- Proving Grounds
+	n(PROVING_GROUNDS, {
 		ach(8812),	-- You're Really Doing It Wrong (Level 90)
 	}),
 }));

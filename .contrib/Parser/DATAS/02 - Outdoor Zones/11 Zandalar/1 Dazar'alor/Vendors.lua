@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(166422, {	-- Recipe: Silas' Sphere of Transmutation
+					i(166422, {	-- Recipe: Silas' Sphere of Transmutation (RECIPE!)
 						["sourceQuest"] = 50120,	-- A Recipe for Success (H)
 					}),
 				},
@@ -664,7 +664,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
-						["spellID"] = 0,
 						["sourceQuest"] = 53937,	-- The Ub3r-Spanner (H)
 						["f"] = MISC,
 					}),
@@ -830,8 +829,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 44.0, 34.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168028, {	-- Pattern: Mallet of Thunderous Skins
-						["sourceQuest"] = 55223,	-- Instruments of Destruction (H)
+					i(168028, {	-- Pattern: Mallet of Thunderous Skins (RECIPE!)
+						["sourceQuests"] = { 55223 },	-- Instruments of Destruction (H)
+						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),

@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["maps"] = { 574, 575, 576 },
 		["coord"] = { 31.91, 42.55, DRAENOR_SHADOWMOON_VALLEY },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(7),	-- Ner'zhul
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
@@ -68,7 +60,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					},
 					["g"] = {
 						ach(9041),	-- Shadowmoon Burial Grounds
-						i(138806),	-- Illusion: Mark of Shadowmoon
+						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(110039),	-- Portal-Ripper's Staff
 						i(110038),	-- Ner'zhul's Ritual Blade
 						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
@@ -108,7 +102,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, HANDS},
 					},
 					["g"] = {
-						ach(9025),	-- Icky Ichors
+						ach(9025, {	-- Icky Ichors
+							["crs"] = { 77006 },	-- Corpse Skitterling
+						}),
 						i(110037),	-- Bonetooth Longbow
 						i(110012),	-- Bonemaw's Big Toe
 					},
@@ -123,8 +119,12 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					["g"] = {
 						ach(9054),	-- Heroic: Shadowmoon Burial Grounds
 						ach(9375),	-- Heroic: Shadowmoon Burial Grounds Guild Run
-						ach(9026),	-- Souls of the Lost
-						i(138806),	-- Illusion: Mark of Shadowmoon
+						ach(9026, {	-- Souls of the Lost
+							["crs"] = { 76518 },	-- Ritual of Bones
+						}),
+						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(110039),	-- Portal-Ripper's Staff
 						i(110038),	-- Ner'zhul's Ritual Blade
 					},
@@ -172,7 +172,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					},
 					["g"] = {
 						ach(10084),	-- Mythic: Shadowmoon Burial Grounds
-						i(138806),	-- Illusion: Mark of Shadowmoon
+						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(110039),	-- Portal-Ripper's Staff
 						i(110038),	-- Ner'zhul's Ritual Blade
 					},

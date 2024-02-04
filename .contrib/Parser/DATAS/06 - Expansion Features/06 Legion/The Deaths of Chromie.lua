@@ -6,7 +6,6 @@ root(ROOTS.ExpansionFeatures,
 	tier(LEGION_TIER, {
 		m(897, {	-- Death's of Chromie Scenario
 			["lvl"] = 110,
-			["achievementID"] = 11941,
 			["description"] = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be speed up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
 			["maps"] = { DRAGONBLIGHT, 898, 899, 900, 901, 902 },	-- Dragonblight / Scenario
 			["g"] = {
@@ -259,7 +258,7 @@ root(ROOTS.ExpansionFeatures,
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47550,	-- The Many Advantages of Being a Time Dragon
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x250
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47545, {	-- Rewind
@@ -267,14 +266,14 @@ root(ROOTS.ExpansionFeatures,
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47543,	-- The Day That Chromie Dies
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x50
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47543, {	-- The Day That Chromie Dies
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x50
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47808, {	-- The Dead Walk
@@ -290,7 +289,7 @@ root(ROOTS.ExpansionFeatures,
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47545,	-- Rewind
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x50
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47807, {	-- Worried About My Friends
@@ -306,11 +305,12 @@ root(ROOTS.ExpansionFeatures,
 					ach(11941, {	-- Chromie Homie
 						title(361),		-- Title: Timelord
 					}),
+					faction(2135),	-- Chromie
 					q(47906, {	-- The Deaths of Chromie
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
-							i(151692, { -- Ensemble: Chronoscryer's Finery
+							i(151692, {	-- Ensemble: Chronoscryer's Finery
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151672),	-- Head
@@ -323,7 +323,7 @@ root(ROOTS.ExpansionFeatures,
 									i(151664),	-- Feet
 								},
 							}),
-							i(151693, { -- Ensemble: Riftscarred Vestments
+							i(151693, {	-- Ensemble: Riftscarred Vestments
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151674),	-- Head
@@ -336,7 +336,7 @@ root(ROOTS.ExpansionFeatures,
 									i(151666),	-- Feet
 								},
 							}),
-							i(151694, { -- Ensemble: Epoch Sentinel's Mail
+							i(151694, {	-- Ensemble: Epoch Sentinel's Mail
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151673),	-- Head
@@ -349,7 +349,7 @@ root(ROOTS.ExpansionFeatures,
 									i(151665),	-- Feet
 								},
 							}),
-							i(151695, { -- Ensemble: Timewarden's Plate
+							i(151695, {	-- Ensemble: Timewarden's Plate
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151671),	-- Head

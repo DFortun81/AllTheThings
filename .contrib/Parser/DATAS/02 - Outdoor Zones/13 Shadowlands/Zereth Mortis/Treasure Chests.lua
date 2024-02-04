@@ -352,19 +352,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 52.0, 80.0, ZERETH_MORTIS },
 				["questID"] = 65572,
 				["g"] = {
-					n(185390, { -- Teleporter Lock
+					n(185390, {	-- Teleporter Lock
 						["coord"] = { 51, 82.1, ZERETH_MORTIS },
 						["questID"] = 65589,
 					}),
-					n(185391, { -- Teleporter Lock
+					n(185391, {	-- Teleporter Lock
 						["coord"] = { 52.5, 83.4, ZERETH_MORTIS },
 						["questID"] = 65590,
 					}),
-					n(185392, { -- Teleporter Lock
+					n(185392, {	-- Teleporter Lock
 						["coord"] = { 53.2, 80.9, ZERETH_MORTIS },
 						["questID"] = 65591,
 					}),
-					n(185393, { -- Teleporter Lock
+					n(185393, {	-- Teleporter Lock
 						["description"] = "This lock is outside of the Wards, next to the console that opens the door.",
 						["coord"] = { 50, 76.2, ZERETH_MORTIS },
 						["questID"] = 65592,
@@ -632,7 +632,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 					i(189713, {	-- Pocopoc's Copper and Cobalt Components
-						["questID"] = 65478
+						["questID"] = 65478,
 					}),
 					i(189714, {	-- Pocopoc's Platinum and Emerald Components
 						["questID"] = 65479,

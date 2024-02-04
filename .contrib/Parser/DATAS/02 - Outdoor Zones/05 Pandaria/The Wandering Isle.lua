@@ -8,6 +8,12 @@ root(ROOTS.Zones, {
 			["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },	-- [Adding faction just to be safe]
 			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
 			["g"] = {
+				n(FACTIONS, {
+					faction(1216, {	-- Shang Xi's Academy
+						["description"] = "The maximum obtainable reputation with this faction is 8510/12000 (Honored).",
+						["collectible"] = false,
+					}),
+				}),
 				n(QUESTS, {
 					q(31450, {	-- A New Fate
 						["provider"] = { "n", 56013 },	-- Spirit of Master Shang Xi
@@ -237,19 +243,19 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 60042 },	-- Korga Strongmane
 						["sourceQuests"] = { 29792 },	-- Bidden to Greatness
 					}),
-					o(209673, {	-- Jade Tiger Pillar
-						q(29782, {	-- Stronger Than Bone
-							["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
-							["g"] = {
-								i(157020, {	-- Humble Cudgel
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(74588),	-- Jade Crossbow
-								i(74590),	-- Jade Hilted Dagger
-								i(74589),	-- Jade Hilted Sword
-								i(74587),	-- Jade Shield
-							},
-						}),
+					q(29782, {	-- Stronger Than Bone
+						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+						["provider"] = { "o", 209673 },	-- Jade Tiger Pillar
+						["coord"] = { 26.5, 33.8, THE_WANDERING_ISLE },
+						["g"] = {
+							i(157020, {	-- Humble Cudgel
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+							i(74588),	-- Jade Crossbow
+							i(74590),	-- Jade Hilted Dagger
+							i(74589),	-- Jade Hilted Sword
+							i(74587),	-- Jade Shield
+						},
 					}),
 					q(29662, {	-- Stronger Than Reeds
 						["provider"] = { "n", 55585 },	-- Jojo Ironbrow
@@ -335,9 +341,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["classes"] = { WARRIOR },
 					}),
-					q(30033, {	-- The Lesson of the Iron Bough (Mage)
+					q(30033, {	-- The Lesson of the Iron Bough (Mage, Warlock)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { MAGE },
+						["classes"] = { MAGE, WARLOCK },
 					}),
 					q(30035, {	-- The Lesson of the Iron Bough (Priest?)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -351,9 +357,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["classes"] = { ROGUE },
 					}),
-					q(30037, {	-- The Lesson of the Iron Bough (Shaman, Warlock)
+					q(30037, {	-- The Lesson of the Iron Bough (Shaman)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { SHAMAN, WARLOCK },
+						["classes"] = { SHAMAN },
 					}),
 					q(29406, {	-- The Lesson of the Sandy Fist
 						["provider"] = { "n", 53566 },	-- Master Shang Xi

@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14266, {	-- Charge
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["qg"] = 35839,	-- Sergeant Cleese
 							["sourceQuest"] = 14265,	-- Your Instructor
 							["coord"] = { 67.60, 64.31, 202 },
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 						}),
 						q(14274, {	-- Corruption
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["qg"] = 35869,	-- Vitus Darkwalker
 							["sourceQuest"] = 14273,	-- Shady Associates
 							["coord"] = { 71.43, 64.45, 202 },
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 						}),
 						q(14272, {	-- Eviscerate
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["qg"] = 35871,	-- Loren the Fence
 							["sourceQuest"] = 14269,	-- Someone's Looking for You
 							["coord"] = { 71.43, 65.78, 202 },
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14281, {	-- Frost Nova
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["qg"] = 35872,	-- Myriam Spellwalker
 							["sourceQuest"] = 14277,	-- Arcane Inquiries
 							["coord"] = { 68.01, 64.68, 202 },
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 						}),
 						q(14279, {	-- Learning the Word
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["qg"] = 35870,	-- Sister Almyra
 							["sourceQuest"] = 14278,	-- Seek the Sister
 							["coord"] = { 70.40, 65.57, 202 },
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 						}),
 						q(14283, {	-- Moonfire
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["qg"] = 35873,	-- Celestine of the Harvest
 							["sourceQuest"] = 14280,	-- The Winds Know Your Name... Apparently
 							["coord"] = { 70.18, 65.88, 202 },
@@ -209,7 +209,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { ROGUE },
 							["sourceQuests"] = {
+								-- #if BEFORE 9.0.1
 								14272,	-- Eviscerate
+								-- #endif
 								14269,	-- Someone's Looking for You
 							},
 						}),
@@ -219,7 +221,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { WARRIOR },
 							["sourceQuests"] = {
+								-- #if BEFORE MOP
 								14266,	-- Charge
+								-- #endif
 								14265,	-- Your Instructor
 							},
 						}),
@@ -229,7 +233,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { WARLOCK },
 							["sourceQuests"] = {
+								-- #if BEFORE MOP
 								14274,	-- Corruption
+								-- #endif
 								14273,	-- Shady Associates
 							},
 						}),
@@ -240,7 +246,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 							["sourceQuests"] = {
 								14277,	-- Arcane Inquiries
+								-- #if BEFORE MOP
 								14281,	-- Frost Nova
+								-- #endif
 							},
 						}),
 						q(14289, {	-- Safety in Numbers (Priest)
@@ -260,7 +268,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 							["sourceQuests"] = {
 								14275,	-- Someone's Keeping Track of You
+								-- #if BEFORE MOP
 								14276,	-- Steady Shot
+								-- #endif
 							},
 						}),
 						q(14291, {	-- Safety in Numbers (Druid)
@@ -269,7 +279,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { DRUID },
 							["sourceQuests"] = {
+								-- #if BEFORE MOP
 								14283,	-- Moonfire
+								-- #endif
 								14280,	-- The Winds Know Your Name... Apparently
 							},
 						}),
@@ -339,7 +351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 14078,	-- Lockdown!
 						}),
 						q(14276, {	-- Steady Shot
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["qg"] = 35874,	-- Huntsman Blake
 							["sourceQuest"] = 14275,	-- Someone's Keeping Track of You
 							["coord"] = { 71.50, 61.33, 202 },
@@ -747,7 +759,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24674, {	-- Slaves to No One
 					["qg"] = 37803,	-- Marcus
 					["races"] = { WORGEN },
-					["sourceQuest"] = 14466,	-- The King's Observatory (TODO: need to verify if this truly is the start. Could be level-based at 15? Saw the quest offered this source but could be available earlier)
+					["sourceQuests"] = {
+						24677,	-- Flank the Forsaken
+						-- 14466,	-- The King's Observatory (TODO: need to verify if this truly is the start. Could be level-based at 15? Saw the quest offered this source but could be available earlier)
+					},
 					["coords"] = {
 						{ 70.27, 40.04, 179 },
 						{ 70.64, 40.12, 179 },

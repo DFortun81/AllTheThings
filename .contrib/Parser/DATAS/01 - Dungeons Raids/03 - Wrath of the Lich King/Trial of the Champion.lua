@@ -17,226 +17,240 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4296, {	-- Trial of the Champion (A)
-					crit(11420, { -- Mokra the Skullcrusher
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
+					crit(11420, {	-- Mokra the Skullcrusher
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12298, { -- Deathstalker Visceri
+					crit(12298, {	-- Deathstalker Visceri
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12299, { -- Runok Wildmane
+					crit(12299, {	-- Runok Wildmane
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12300, { -- Eressea Dawnsinger
+					crit(12300, {	-- Eressea Dawnsinger
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12301, { -- Zul'tore
+					crit(12301, {	-- Zul'tore
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(13312, { -- Argent Confessor Paletress
+					crit(13312, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, NORMAL_DUNGEON },
 					}),
-					crit(13313, { -- Eadric the Pure
+					crit(13313, {	-- Eadric the Pure
 						["_encounter"] = { 635, NORMAL_DUNGEON },
 					}),
-					crit(13314, { -- The Black Knight
+					-- #endif
+					crit(13314, {	-- The Black Knight
 						["_encounter"] = { 637, NORMAL_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4298, {	-- Heroic: Trial of the Champion (A)
-					crit(12539, { -- Mokra the Skullcrusher
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
+					crit(12539, {	-- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12545, { -- Deathstalker Visceri
+					crit(12545, {	-- Deathstalker Visceri
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(RUNOK_CRITERIA_UID_HEROIC_ALLIANCE, { -- Runok Wildmane
+					crit(RUNOK_CRITERIA_UID_HEROIC_ALLIANCE, {	-- Runok Wildmane
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12543, { -- Eressea Dawnsinger
+					crit(12543, {	-- Eressea Dawnsinger
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12541, { -- Zul'tore
+					crit(12541, {	-- Zul'tore
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12549, { -- Argent Confessor Paletress
+					crit(12549, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(12551, { -- Eadric the Pure
+					crit(12551, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
-					crit(12553, { -- The Black Knight
+					-- #endif
+					crit(12553, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = HORDE_ONLY }, ach(3778, {	-- Trial of the Champion (H)
-					crit(11420, { -- Marshal Jacob Alerius
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
+					crit(11420, {	-- Marshal Jacob Alerius
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12298, { -- Lana Stouthammer
+					crit(12298, {	-- Lana Stouthammer
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12299, { -- Colosos
+					crit(12299, {	-- Colosos
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12300, { -- Ambrose Boltspark
+					crit(12300, {	-- Ambrose Boltspark
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12301, { -- Jaelyne Evensong
+					crit(12301, {	-- Jaelyne Evensong
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(13312, { -- Argent Confessor Paletress
+					crit(13312, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, NORMAL_DUNGEON },
 					}),
-					crit(13313, { -- Eadric the Pure
+					crit(13313, {	-- Eadric the Pure
 						["_encounter"] = { 635, NORMAL_DUNGEON },
 					}),
-					crit(13314, { -- The Black Knight
+					-- #endif
+					crit(13314, {	-- The Black Knight
 						["_encounter"] = { 637, NORMAL_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = HORDE_ONLY }, ach(4297, {	-- Heroic: Trial of the Champion (H)
-					crit(12539, { -- Marshal Jacob Alerius
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
+					crit(12539, {	-- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12545, { -- Lana Stouthammer
+					crit(12545, {	-- Lana Stouthammer
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(COLOSOS_CRITERIA_UID_HEROIC_HORDE, { -- Colosos
+					crit(COLOSOS_CRITERIA_UID_HEROIC_HORDE, {	-- Colosos
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12543, { -- Ambrose Boltspark
+					crit(12543, {	-- Ambrose Boltspark
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12541, { -- Jaelyne Evensong
+					crit(12541, {	-- Jaelyne Evensong
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12549, { -- Argent Confessor Paletress
+					crit(12549, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(12551, { -- Eadric the Pure
+					crit(12551, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
-					crit(12553, { -- The Black Knight
+					-- #endif
+					crit(12553, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				})),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (A)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18677, {
-					crit(60760, { -- Mokra the Skullcrusher
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed these from Wrath Classic.
+					crit(60760, {	-- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60761, { -- Deathstalker Visceri
+					crit(60761, {	-- Deathstalker Visceri
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60765, { -- Runok Wildmane
+					crit(60765, {	-- Runok Wildmane
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60766, { -- Eressea Dawnsinger
+					crit(60766, {	-- Eressea Dawnsinger
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60763, { -- Zul'tore
+					crit(60763, {	-- Zul'tore
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60764, { -- Argent Confessor Paletress
+					crit(60764, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
-						["groups"] = {
-							i(45311),	-- Relentless Edge
-						},
 					}),
-					crit(60762, { -- Eadric the Pure
+					crit(60762, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46022),	-- Pendant of a Thousand Maws
-						},
 					}),
-					crit(60621, { -- The Black Knight
+					-- #endif
+					crit(60621, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(46021),	-- Royal Seal of King Llane
-							i(46030),	-- Treads of the Dragon Council
-							i(46031),	-- Touch of Madness
-						},
 					}),
 				}))),
 				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = HORDE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (H)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18678, {
-					crit(60768, { -- Marshal Jacob Alerius
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed these from Wrath Classic.
+					crit(60768, {	-- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60771, { -- Lana Stouthammer
+					crit(60771, {	-- Lana Stouthammer
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60770, { -- Colosos
+					crit(60770, {	-- Colosos
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60764, { -- Ambrose Boltspark
+					crit(60764, {	-- Ambrose Boltspark
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60767, { -- Jaelyne Evensong
+					crit(60767, {	-- Jaelyne Evensong
 						["_encounter"] = { 634, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46028),	-- Faceguard of the Eyeless Horror
-							i(46024),	-- Kingsbane
-						},
 					}),
-					crit(60764, { -- Argent Confessor Paletress
+					crit(60764, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
-						["groups"] = {
-							i(45311),	-- Relentless Edge
-						},
 					}),
-					crit(60762, { -- Eadric the Pure
+					crit(60762, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
-						["groups"] = {
-							i(46022),	-- Pendant of a Thousand Maws
-						},
 					}),
-					crit(60621, { -- The Black Knight
+					-- #endif
+					crit(60621, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(46021),	-- Royal Seal of King Llane
-							i(46030),	-- Treads of the Dragon Council
-							i(46031),	-- Touch of Madness
-						},
+					}),
+				}))),
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY }, 	-- Defense Protocol Gamma: Trial of the Champion (A)
+					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19426, {
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed these from Wrath Classic.
+					crit(63308, {	-- Mokra the Skullcrusher
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63317, {	-- Deathstalker Visceri
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63314, {	-- Runok Wildmane
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63313, {	-- Eressea Dawnsinger
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63306, {	-- Zul'tore
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63310, {	-- Argent Confessor Paletress
+						["_encounter"] = { 636, HEROIC_DUNGEON },
+					}),
+					crit(63315, {	-- Eadric the Pure
+						["_encounter"] = { 635, HEROIC_DUNGEON },
+					}),
+					-- #endif
+					crit(63310, {	-- The Black Knight
+						["_encounter"] = { 637, HEROIC_DUNGEON },
+					}),
+				}))),
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = HORDE_ONLY }, 	-- Defense Protocol Gamma: Trial of the Champion (H)
+					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19425, {
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed these from Wrath Classic.
+					crit(63308, {	-- Marshal Jacob Alerius
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(60771, {	-- Lana Stouthammer
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63314, {	-- Colosos
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63313, {	-- Ambrose Boltspark
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63306, {	-- Jaelyne Evensong
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+					}),
+					crit(63316, {	-- Argent Confessor Paletress
+						["_encounter"] = { 636, HEROIC_DUNGEON },
+					}),
+					crit(63315, {	-- Eadric the Pure
+						["_encounter"] = { 635, HEROIC_DUNGEON },
+					}),
+					-- #endif
+					crit(63310, {	-- The Black Knight
+						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				}))),
 				-- #endif
@@ -475,6 +489,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 							-- #if AFTER 7.3.5
 							i(47213),	-- Abyssal Rune (7.3.5 - Used to be only from Eadric and Confessor)
 							-- #endif
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(46028),	-- Faceguard of the Eyeless Horror
+								i(46024),	-- Kingsbane
+							})),
+							-- #endif
 						},
 					}),
 					e(635, {	-- Eadric the Pure
@@ -514,6 +534,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 							i(47199),	-- Greaves of the Grand Paladin (7.3.5 - Used to be only Normal Mode)
 							i(47200),	-- Signet of Purity (7.3.5 - Used to be only Normal Mode)
 							i(47213),	-- Abyssal Rune (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(46022),	-- Pendant of a Thousand Maws
+							})),
 							-- #endif
 						},
 					}),
@@ -635,6 +660,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 							i(47213),	-- Abyssal Rune (7.3.5 - Used to be only Normal Mode)
 							i(47214),	-- Banner of Victory (7.3.5 - Used to be only Normal Mode)
 							-- #endif
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45311),	-- Relentless Edge
+							})),
+							-- #endif
 						},
 					}),
 					e(637, {	-- The Black Knight
@@ -684,6 +714,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 							-- #endif
 							-- #if BEFORE 4.0.1
 							i(48418),	-- Fragment of the Black Knight's Soul
+							-- #endif
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								currency(SIDEREAL_ESSENCE),
+								i(46021),	-- Royal Seal of King Llane
+								i(46030),	-- Treads of the Dragon Council
+								i(46031),	-- Touch of Madness
+							})),
 							-- #endif
 						},
 					}),

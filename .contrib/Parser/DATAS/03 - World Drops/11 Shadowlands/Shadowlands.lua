@@ -2,8 +2,18 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.WorldDrops, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	filter(REAGENTS, {
+		i(172052),	-- Aethereal Meat
+		i(179314),	-- Creeping Crawler Meat
+		i(173204),	-- Lightless Silk
+		i(172055),	-- Phantasmal Haunch
+		i(172054),	-- Raw Seraphic Wing
+		i(179315),	-- Shadowy Shanks
+		i(173202),	-- Shrouded Cloth
+		i(172053),	-- Tenebrous Ribs
+	}),
 	filter(RECIPES, {
-		i(186995, {	-- Pattern: Shrouded Hand Towel
+		i(186995, {	-- Pattern: Shrouded Hand Towel (RECIPE!)
 			["timeline"] = { ADDED_9_1_0 },
 		}),
 	}),

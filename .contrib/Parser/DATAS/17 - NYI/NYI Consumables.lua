@@ -2,7 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-
+-- #if AFTER WRATH
 root(ROOTS.NeverImplemented, {
 	filter(CONSUMABLES, {
 		tier(WOTLK_TIER, {
@@ -31,5 +31,12 @@ root(ROOTS.NeverImplemented, {
 				i(115291),		-- Whole Pot-Roasted Elekk
 			})),
 		}),
+		tier(SL_TIER, {
+			-- 9.2.0
+			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+				i(185974),	-- Bahmeht Chain Link
+			})),
+		}),
 	}),
 });
+-- #endif

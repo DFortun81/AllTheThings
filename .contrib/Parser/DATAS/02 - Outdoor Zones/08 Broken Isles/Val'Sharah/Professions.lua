@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						i(147309, {	-- Crate of Bobbers: Face of the Forest (TOY!)
 							["cost"] = { { "i", 146959, 100 }, },	-- 100x Corrupted Globule
 						}),
-						i(152565, {	-- Recipe: Feast of the Fishes (Rank 1)
+						i(152565, {	-- Recipe: Feast of the Fishes [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 146959, 50 }, },	-- 50x Corrupted Globule
 						}),
 						i(133705, {		-- Rotten Fishbone

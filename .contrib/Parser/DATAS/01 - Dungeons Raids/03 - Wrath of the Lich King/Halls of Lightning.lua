@@ -14,29 +14,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(486, {	-- Halls of Lightning
-					crit(5455, { -- General Bjarngrim
+					crit(5455, {	-- General Bjarngrim
 						["_encounter"] = { 597, NORMAL_DUNGEON },
 					}),
-					crit(5456, { -- Ionar
+					crit(5456, {	-- Ionar
 						["_encounter"] = { 599, NORMAL_DUNGEON },
 					}),
-					crit(5457, { -- Volkhan
+					crit(5457, {	-- Volkhan
 						["_encounter"] = { 598, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5629, { -- Loken
+					crit(5629, {	-- Loken
 						["_encounter"] = { 600, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5458, { -- Loken
+					crit(5458, {	-- Loken
 						["_encounter"] = { 600, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17299, {	-- Defense Protocol Alpha: Halls of Lightning
-					crit(57761, { -- General Bjarngrim
+					crit(57761, {	-- General Bjarngrim
 						["_encounter"] = { 597, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39189),	-- Boots of Persistence
@@ -44,7 +44,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39141),	-- Deflection Band
 						},
 					}),
-					crit(57759, { -- Volkhan
+					crit(57759, {	-- Volkhan
 						["_encounter"] = { 598, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39188),	-- Chivalric Chestguard
@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39191),	-- Splint-Bound Leggings
 						},
 					}),
-					crit(57760, { -- Ionar
+					crit(57760, {	-- Ionar
 						["_encounter"] = { 599, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39139),	-- Ravaging Sabatons
@@ -60,7 +60,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39146),	-- Collar of Dissolution
 						},
 					}),
-					crit(57756, { -- Loken
+					crit(57756, {	-- Loken
 						["_encounter"] = { 600, HEROIC_DUNGEON },
 						["groups"] = {
 							i(40526),	-- Gown of the Spell-Weaver
@@ -79,28 +79,28 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18598, {	-- Defense Protocol Beta: Halls of Lightning
-					crit(60604, { -- General Bjarngrim
+					crit(60604, {	-- General Bjarngrim
 						["_encounter"] = { 597, HEROIC_DUNGEON },
 						["groups"] = {
 							i(46347),	-- Cloak of the Dormant Blaze
 							i(46341),	-- Drape of the Spellweaver
 						},
 					}),
-					crit(60602, { -- Volkhan
+					crit(60602, {	-- Volkhan
 						["_encounter"] = { 598, HEROIC_DUNGEON },
 						["groups"] = {
 							i(46342),	-- Golemheart Longbow
 							i(46343),	-- Fervor of the Protectorate
 						},
 					}),
-					crit(60603, { -- Ionar
+					crit(60603, {	-- Ionar
 						["_encounter"] = { 599, HEROIC_DUNGEON },
 						["groups"] = {
 							i(46344),	-- Iceshear Mantle
 							i(45677),	-- Treacherous Shoulderpads
 						},
 					}),
-					crit(60601, { -- Loken
+					crit(60601, {	-- Loken
 						["_encounter"] = { 600, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
@@ -109,18 +109,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19435, {	-- Defense Protocol Gamma: Halls of Lightning
+					crit(63353, {	-- General Bjarngrim
+						["_encounter"] = { 597, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63349, {	-- Volkhan
+						["_encounter"] = { 598, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63350, {	-- Ionar
+						["_encounter"] = { 599, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63348, {	-- Loken
+						["_encounter"] = { 600, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+				})),
 				-- #endif
 				ach(497,  {	-- Heroic: Halls of Lightning
-					crit(6831, { -- General Bjarngrim
+					crit(6831, {	-- General Bjarngrim
 						["_encounter"] = { 597, 2 },
 					}),
-					crit(6832, { -- Ionar
+					crit(6832, {	-- Ionar
 						["_encounter"] = { 599, 2 },
 					}),
-					crit(6833, { -- Volkhan
+					crit(6833, {	-- Volkhan
 						["_encounter"] = { 598, 2 },
 					}),
-					crit(5616, { -- Loken
+					crit(5616, {	-- Loken
 						["_encounter"] = { 600, 2 },
 					}),
 				}),
@@ -172,6 +198,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(43197),	-- Pauldrons of Extinguished Hatred
 						i(43198),	-- Mantle of Volkhan
 					},
+				}),
+				q(29863, {	-- Stormherald Eljrrin
+					["qg"] = 30105,	-- King Jokkum
+					["sourceQuest"] = 13047,	-- The Reckoning
+					["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
+					["timeline"] = { "added 4.3.0.14732" },
+					["isBreadcrumb"] = true,
 				}),
 				q(13108, {	-- Whatever it Takes!
 					["qg"] = 30105,	-- King Jokkum
@@ -393,10 +426,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(600, {	-- Loken
 						["creatureID"] = 28923,	-- Loken
 						["groups"] = {
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5616,			-- Loken slain
-							},
 							ach(5103, {	-- Heroic: Halls of Lightning Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

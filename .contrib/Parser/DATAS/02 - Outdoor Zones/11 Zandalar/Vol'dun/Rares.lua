@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51058,
 				["coord"] = { 49.78, 79.40, VOLDUN },
 				["g"] = {
-					crit(1, {	-- Ak'tar
+					crit(41606, {	-- Ak'tar
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161021),	-- Soaring Slateclaw Gloves
@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 47532,
 				["coord"] = { 54.69, 15.15, VOLDUN },
 				["g"] = {
-					crit(2, {	-- Ashmane
+					crit(41607, {	-- Ashmane
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161106),	-- Rabid Packleader Bracers
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49252,
 				["coord"] = { 49.05, 89.05, VOLDUN },
 				["g"] = {
-					crit(3, {	-- Azer'tor
+					crit(41608, {	-- Azer'tor
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 				},
@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49251,
 				["coord"] = { 31.01, 81.09, VOLDUN },
 				["g"] = {
-					crit(4, {	-- Bajiani the Slick
+					crit(41609, {	-- Bajiani the Slick
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(162622),	-- Groggy Brawler's Chestplate
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 47562,
 				["coord"] = { 48.8, 50.0, VOLDUN },
 				["g"] = {
-					crit(5, {	-- Bloated Krolusk
+					crit(41610, {	-- Bloated Krolusk
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161037),	-- Sand Scoured Girdle
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				},
 				["cr"] = 136390,	-- Enormous Egg
 				["g"] = {
-					crit(6, {	-- Bloodwing Bonepicker
+					crit(41611, {	-- Bloodwing Bonepicker
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161019),	-- Dread Vulture Waistcord
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51073,
 				["coord"] = { 41.27, 24.49, VOLDUN },
 				["g"] = {
-					crit(7, {	-- Captain Stef "Marrow" Quin
+					crit(41612, {	-- Captain Stef "Marrow" Quin
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(160990),	-- Marrow's Sash
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50905,
 				["coord"] = { 42.5, 92.1, VOLDUN },
 				["g"] = {
-					crit(8, {	-- Commodore Calhoun
+					crit(41613, {	-- Commodore Calhoun
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(162615),	-- Commodore Calhoun's Tricorne
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51077,
 				["coord"] = { 61.8, 37.8, VOLDUN },
 				["g"] = {
-					crit(9, {	-- Enraged Krolusk
+					crit(41614, {	-- Enraged Krolusk
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161036),	-- Sand-Smoothed Wristguards
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					{ 63.9, 48.0, VOLDUN },	-- cave entrance
 				},
 				["g"] = {
-					crit(10, {	-- Gut-Gut the Glutton
+					crit(41615, {	-- Gut-Gut the Glutton
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161105),	-- Gluttonous Carnivore Treads
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 47533,
 				["coord"] = { 53.9, 51.8, VOLDUN },
 				["g"] = {
-					crit(11, {	-- Hivemother Kraxi
+					crit(41616, {	-- Hivemother Kraxi
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161027),	-- Venomous Hivemother Cord
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49392,
 				["coord"] = { 37.3, 84.8, VOLDUN },	-- sort of mills around in this general area, 1 coord should suffice
 				["g"] = {
-					crit(12, {	-- Jumbo Sandsnapper
+					crit(41617, {	-- Jumbo Sandsnapper
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161107),	-- Brineshell Footguards [Low Droprate]
@@ -161,17 +161,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51074,
 				["coord"] = { 60.56, 18.03, VOLDUN },
 				["g"] = {
-					crit(13, {	-- Jungleweb Hunter
+					crit(41618, {	-- Jungleweb Hunter
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161026),	-- Spiderbite Wristwraps
 				},
 			}),
-			n(128686, { -- Kamid the Trapper
+			n(128686, {	-- Kamid the Trapper
 				["questID"] = 50528,
 				["coord"] = { 35.08, 51.83, VOLDUN },
 				["g"] = {
-					crit(14, {	-- Kamid the Trapper
+					crit(41619, {	-- Kamid the Trapper
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161038),	-- Sand Trapper's Legguards
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51424,
 				["coord"] = { 38.2, 41.3, VOLDUN },
 				["g"] = {
-					crit(15, {	-- King Clickyclack
+					crit(41620, {	-- King Clickyclack
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161108),	-- Kingshell Legplates
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50898,
 				["coord"] = { 43.9, 87.0, VOLDUN },	-- cave entrance
 				["g"] = {
-					crit(16, {	-- Nez'ara
+					crit(41621, {	-- Nez'ara
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161024),	-- Wrathful Sister's Cincture
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51126,
 				["coord"] = { 49.0, 72.0, VOLDUN },
 				["g"] = {
-					crit(17, {	-- Relic Hunter Hazaak
+					crit(41622, {	-- Relic Hunter Hazaak
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(160956),	-- Hazaak's Windshorn Claws
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48960,
 				["coord"] = { 44.4, 80.1, VOLDUN },
 				["g"] = {
-					crit(18, {	-- Scaleclaw Broodmother
+					crit(41623, {	-- Scaleclaw Broodmother
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161039),	-- Sandclaw Handguards
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51076,
 				["coord"] = { 32.8, 65.1, VOLDUN },
 				["g"] = {
-					crit(19, {	-- Scorpox
+					crit(41624, {	-- Scorpox
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161030),	-- Vicious Scorpidsting Sandals
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51075,
 				["coord"] = { 24.8, 68.6, VOLDUN },
 				["g"] = {
-					crit(20, {	-- Sirokar
+					crit(41625, {	-- Sirokar
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161099),	-- Wind-Scoured Greaves
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50637,
 				["coord"] = { 47.0, 25.6, VOLDUN },
 				["g"] = {
-					crit(21, {	-- Skycaller Teskris
+					crit(41626, {	-- Skycaller Teskris
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(160968),	-- Skycaller Spellstaff
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50686,
 				["coord"] = { 51.27, 36.53, VOLDUN },
 				["g"] = {
-					crit(22, {	-- Skycarver Krakit
+					crit(41627, {	-- Skycarver Krakit
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(160980),	-- Skycarver Warglaive
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51063,
 				["coord"] = { 66.89, 24.44, VOLDUN },
 				["g"] = {
-					crit(23, {	-- Songstress Nahjeen
+					crit(41628, {	-- Songstress Nahjeen
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161025),	-- Wailing Sister's Gloves
@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49674,
 				["coord"] = { 57.2, 73.2, VOLDUN },
 				["g"] = {
-					crit(24, {	-- Vathikur
+					crit(41629, {	-- Vathikur
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161097),	-- Rattling Earth Armwraps
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 49373,
 				["coord"] = { 37.0, 46.1, VOLDUN },
 				["g"] = {
-					crit(25, {	-- Warbringer Hozzik
+					crit(41630, {	-- Warbringer Hozzik
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161032),	-- Spire-Charged Links
@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50662,
 				["coord"] = { 30.0, 52.6, VOLDUN },
 				["g"] = {
-					crit(26, {	-- Warlord Zothix
+					crit(41631, {	-- Warlord Zothix
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161031),	-- Zothix's Conductive Vambraces
@@ -304,7 +304,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50658,
 				["coord"] = { 50.72, 30.88, VOLDUN },
 				["g"] = {
-					crit(27, {	-- Warmother Captive
+					crit(41632, {	-- Warmother Captive
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161103),	-- Barbarous Captive's Wargreavers
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48319,
 				["coord"] = { 43.9, 52.4, VOLDUN },	-- cave entrance
 				["g"] = {
-					crit(28, {	-- Zunashi the Exile
+					crit(41633, {	-- Zunashi the Exile
 						["achievementID"] = 12943,	-- Adventurer of Vol'dun
 					}),
 					i(161119),	-- Ravasaur Skull Bijou

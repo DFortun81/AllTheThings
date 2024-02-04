@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 50156,
 				["coord"] = { 75.2, 78.4, TIRAGARDE_SOUND },
 				["g"] = {
-					crit(1, {	-- Auditor Dolp
+					crit(41793, {	-- Auditor Dolp
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 76.6, 83.2, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160451),	-- Barman Skewer
-					crit(2, {	-- Barman Bill
+					crit(41795, {	-- Barman Bill
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 					i(163717),	-- Forbidden Sea Shanty of Josephus
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 34.6, 30.2, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160467),	-- Hydra-Hunter Legguards
-					crit(3, {	-- Bashmu
+					crit(41796, {	-- Bashmu
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 56.3, 70.0, TIRAGARDE_SOUND },
 				["g"] = {
 					i(158650),	-- Sea-Scourge Greatblade
-					crit(4, {	-- Black-Eyed Bart
+					crit(41797, {	-- Black-Eyed Bart
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 					i(163718),	-- Forbidden Sea Shanty of the Black Sphere
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 85.2, 73.6, TIRAGARDE_SOUND },
 				["g"] = {
 					i(154411),	-- Vlaros Corps Rifle
-					crit(5, {	-- Blackthorne
+					crit(41798, {	-- Blackthorne
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 83.6, 44.8, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160460),	-- Thick Sauroskin Gloves
-					crit(6, {	-- Broodmother Razora
+					crit(41800, {	-- Broodmother Razora
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 							132093,	-- Wavecaller Smuggler
 						},
 					}),
-					crit(7, {	-- Captain Wintersail
+					crit(41806, {	-- Captain Wintersail
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 72.6, 81.2, TIRAGARDE_SOUND },
 				["g"] = {
 					i(155271),	-- Monkey's Paw Chopper
-					crit(8, {	-- Carla Smirk
+					crit(41812, {	-- Carla Smirk
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 89.8, 78.1, TIRAGARDE_SOUND },
 				["g"] = {
 					i(154467),	-- Parrot-Trainer Mantle
-					crit(9, {	-- Fowlmouth
+					crit(41813, {	-- Fowlmouth
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 60.1, 22.3, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160454),	-- Foxhollow Falconer's Bracers
-					crit(10, {	-- Foxhollow Skyterror
+					crit(41814, {	-- Foxhollow Skyterror
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -117,27 +117,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["description"] = "Mount the horse located at 62.1, 51.8 and ride it to Roan Berthold at 67.3, 51.6.",
 				["questID"] = 49983,	-- Ride Horse Back
 				["coord"] = { 62.1, 51.8, TIRAGARDE_SOUND },	--  Guardian of the Spring
-				["g"] = {
-					o(279750, {	-- Hay Covered Chest [Localized]
-						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 67.4, 51.7, TIRAGARDE_SOUND },
-						["crs"] = { 131453 },	-- Roan Berthold
-						["questID"] = 49963,
-						["g"] = {
-							crit(1, {	-- Hay Covered Chest
-								["achievementID"] = 12852
-							}),
-							i(155571),	-- Garyl's Riding Blanket
-						},
-					}),
-				},
 			}),
 			n(139233, {	-- Gulliver
 				["questID"] = 53373,
 				["coord"] = { 57.7, 56.0, TIRAGARDE_SOUND },
 				["g"] = {
 					i(158338),	-- Swift-Travel Gloves
-					crit(11, {	-- Gulliver
+					crit(41819, {	-- Gulliver
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -147,7 +133,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 48.2, 22.6, TIRAGARDE_SOUND },
 				["g"] = {
 					i(158597),	-- Silvershell Defender
-					crit(12, {	-- Kulett the Ornery
+					crit(41820, {	-- Kulett the Ornery
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -157,7 +143,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 68.6, 20.2, TIRAGARDE_SOUND },
 				["g"] = {
 					i(155524),	-- Cursetouched Lumberjack's Axe
-					crit(13, {	-- Lumbergrasp Sentinel
+					crit(41821, {	-- Lumbergrasp Sentinel
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -167,7 +153,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 58.3, 49.3, TIRAGARDE_SOUND },
 				["g"] = {
 					i(154458),	-- Shellbreaker Warhelm
-					crit(14, {	-- Maison the Portable
+					crit(41822, {	-- Maison the Portable
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -177,7 +163,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 43.5, 17.2, TIRAGARDE_SOUND },	-- cave entrance
 				["g"] = {
 					i(160461),	-- Thick Sauroskin Pants
-					crit(16, {	-- Merianae
+					crit(41824, {	-- Merianae
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -188,7 +174,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(161599),	-- Mechano-Cat Claw
 					i(168152),	-- Miniaturized Power Core
-					crit(17, {	-- P4-N73R4
+					crit(41825, {	-- P4-N73R4
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -198,7 +184,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 39.0, 15.2, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160263),	-- Snowpelt Mangler
-					crit(18, {	-- Pack Leader Asenya
+					crit(41826, {	-- Pack Leader Asenya
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -208,7 +194,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 64.7, 58.6, TIRAGARDE_SOUND },
 				["g"] = {
 					i(161446),	-- Blistering Seawater Seal
-					crit(19, {	-- Raging Swell
+					crit(41827, {	-- Raging Swell
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -218,7 +204,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 68.3, 63.56, TIRAGARDE_SOUND },
 				["g"] = {
 					i(154478),	-- Ranja-Hide Bracers
-					crit(20, {	-- Ranja
+					crit(41828, {	-- Ranja
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -230,7 +216,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(154416, {	-- Trogg Saurolisk-Breaker
 						["crs"] = { 127290 },	-- Mugg
 					}),
-					crit(21, {	-- Saurolisk Tamer Mugg
+					crit(41829, {	-- Saurolisk Tamer Mugg
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -240,7 +226,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 55.0, 32.6, TIRAGARDE_SOUND },
 				["g"] = {
 					i(155278),	-- Shiverscale Spellknife
-					crit(23, {	-- Shiverscale the Toxic
+					crit(41831, {	-- Shiverscale the Toxic
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -250,7 +236,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 80.8, 82.6, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160455),	-- Parrot-Trainer Sash
-					crit(24, {	-- Squacks
+					crit(41832, {	-- Squacks
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -260,7 +246,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 48.9, 36.9, TIRAGARDE_SOUND },
 				["g"] = {
 					i(155551),	-- Squirgle's Deepstone Wand
-					crit(25, {	-- Squirgle of the Depths
+					crit(41833, {	-- Squirgle of the Depths
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -270,7 +256,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 66.8, 13.8, TIRAGARDE_SOUND },
 				["g"] = {
 					i(154474),	-- Sythian Swiftbelt
-					crit(26, {	-- Sythian the Swift
+					crit(41834, {	-- Sythian the Swift
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -280,7 +266,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 60.7, 17.4, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160466),	-- Saurolisk Broodmother Boots
-					crit(27, {	-- Tempestria
+					crit(41835, {	-- Tempestria
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -290,7 +276,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 55.2, 51.5, TIRAGARDE_SOUND },
 				["g"] = {
 					i(154448),	-- Medusa-Drifter's Chainmail
-					crit(28, {	-- Tentulos the Drifter
+					crit(41836, {	-- Tentulos the Drifter
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -300,7 +286,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 63.6, 50.3, TIRAGARDE_SOUND },
 				["g"] = {
 					i(158556),	-- Siren's Tongue
-					crit(29, {	-- Teres
+					crit(41837, {	-- Teres
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -310,7 +296,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 70.4, 55.7, TIRAGARDE_SOUND },
 				["g"] = {
 					i(159349),	-- Dragon Turtle Handlers
-					crit(30, {	-- Tort Jaw
+					crit(41838, {	-- Tort Jaw
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -320,7 +306,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 46.8, 20.6, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160452),	-- Goat's Tote
-					crit(31, {	-- Totes
+					crit(41839, {	-- Totes
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -330,7 +316,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 70.4, 12.4, TIRAGARDE_SOUND },
 				["g"] = {
 					i(160473),	-- Wickerthorn Stompers
-					crit(32, {	-- Twin-hearted Construct
+					crit(41840, {	-- Twin-hearted Construct
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},
@@ -338,11 +324,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			n(132052, {	-- Vol'Jim
 				["description"] = "It looks like this NPC didn't make it to live from beta.",
 				["timeline"] = { "created 8.0.1.26131" },
-				["g"] = {
-					i(155074, {	-- Toll Enforcer
-						["timeline"] = { "created 8.0.1.26131" },
-					}),
-				},
 			}),
 			n(137176, {	-- Walter Ferrell
 				["questID"] = 51321,
@@ -355,7 +336,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["g"] = {
 					i(160472),	-- Honey-Glazed Gauntlets
-					crit(15, {	-- Imperiled Merchants
+					crit(41823, {	-- Imperiled Merchants
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
 				},

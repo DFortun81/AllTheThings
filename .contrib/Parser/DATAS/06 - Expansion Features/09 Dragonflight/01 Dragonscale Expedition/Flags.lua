@@ -3,10 +3,9 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		n(CARTOGRAPHERS_FLAG, {
+		n(CARTOGRAPHERS_FLAG, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 } }, {
 			n(ACHIEVEMENTS, {
 				ach(15890, {	-- Dragonscale Expedition: The Highest Peaks
-					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["description"] = "Requires Research Cartographer's Flag at Expedition Supply Kit.",
 					["coords"] = {
 						{ 73.4, 38.8, THE_WAKING_SHORES },
@@ -145,6 +144,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				qNYI(73696),	-- Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
 				qNYI(73702),	-- Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
 			}),
-		}),
+		})),
 	}),
 })));

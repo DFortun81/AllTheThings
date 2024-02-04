@@ -7,17 +7,21 @@ local OnTooltipForRavenholdt = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local isHuman = _.RaceIndex == 1;
+		-- #if AFTER TBC
 		if reputation < 20999 then
 			GameTooltip:AddLine("Reminder: Do NOT turn in Heavy Lockboxes until max Honored!", 1, 0.5, 0.5);
 			local repPerKill = isHuman and 5.5 or 5;
 			local x, n = math.ceil((20999 - reputation) / repPerKill), math.ceil(20999 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Arathi Syndicate", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		else
+		-- #endif
 			GameTooltip:AddLine("Protip: Bring a stack of Repair Bots with you.", 0.5, 1, 0.5);
 			local repPerTurnIn = isHuman and 82.5 or 75;
 			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(21000 / repPerTurnIn);
 			GameTooltip:AddDoubleLine("Turn in Heavy Junkboxes.", ((n - x) * 5) .. " / " .. (n * 5) .. " (" .. (x * 5) .. ")", 1, 1, 1);
+		-- #if AFTER TBC
 		end
+		-- #endif
 	end
 end]];
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
@@ -65,6 +69,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				faction(349, {	-- Ravenholdt
 					["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
 					["OnTooltip"] = OnTooltipForRavenholdt,
+				}),
+				faction(70, {	-- Syndicate
+					["description"] = "Neutral is the highest you can currently reach with the Syndicate.",
+					["collectible"] = false,
 				}),
 			}),
 			n(QUESTS, {
@@ -546,6 +554,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(PROFESSIONS, {
+				applyclassicphase(SOD_PHASE_ONE, n(214212, {	-- Shadowy Figure
+					["providers"] = {
+						--{ "o",  },	-- Shard of Pure Light
+						{ "i", 211421 },	-- The Box
+					},
+					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },
+					["groups"] = {
+						recipe(429351),	-- Extraplanar Spidersilk Boots
+						recipe(429348),	-- Shifting Silver Breastplate
+						recipe(429869),	-- Void-Touched Leather Gauntlets
+						recipe(429354),	-- Void-Touched Leather Gloves
+						i(211422),	-- Shard of the Void
+					},
+				})),
+			}),
+			-- #endif
 			n(RARES, {
 				n(14222, {	-- Araga
 					["coords"] = {
@@ -612,7 +638,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies>
 					["coord"] = { 38.0, 38.0, ALTERAC_MOUNTAINS },
 					["groups"] = {
-						i(14634, {	-- Recipe: Frost Oil
+						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -631,7 +657,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 86.0, 79.6, ALTERAC_MOUNTAINS },
 					["classes"] = { ROGUE },
 					["groups"] = {
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					},
 				}),
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer>
@@ -658,8 +684,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1280, {	-- Cloaked Hood
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2246,	-- Syndicate Assassin
+					["coords"] = {
+						{ 48.8, 9.2, ALTERAC_MOUNTAINS },
+						{ 49.6, 10.0, ALTERAC_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 2242,	-- Syndicate Spy
+					["coords"] = {
+						{ 57.2, 24.4, ALTERAC_MOUNTAINS },
+						{ 53.6, 14.8, ALTERAC_MOUNTAINS },
+						{ 49.6, 10.0, ALTERAC_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
@@ -670,22 +709,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2255,	-- Crushridge Mage
 				}),
 				-- #endif
+				-- #if BEFORE CATA
 				i(5775, {	-- Pattern: Black Silk Pack
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2242,	-- Syndicate Spy
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
+					["cr"] = 2434,	-- Shadowy Assassin
 				}),
+				-- #endif
 				i(3745, {	-- Rune of Opening
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2358,	-- Dalaran Summoner
 				}),
 				i(1602, {	-- Sickle Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["cr"] = 2287,	-- Crushridge Warmonger
+					["coords"] = {
+						{ 42.2, 28.8, ALTERAC_MOUNTAINS },
+						{ 42.8, 31.0, ALTERAC_MOUNTAINS },
+						{ 44.2, 33.8, ALTERAC_MOUNTAINS },
+						{ 44.4, 30.4, ALTERAC_MOUNTAINS },
+					},
 				}),
 				i(5245, {	-- Summoner's Wand
-					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					["coords"] = {
+						{ 30.8, 31.6, ALTERAC_MOUNTAINS },
+						{ 33.6, 40.6, ALTERAC_MOUNTAINS },
+						{ 27.8, 40.6, ALTERAC_MOUNTAINS },
+					},
 				}),
 			}),
 		},

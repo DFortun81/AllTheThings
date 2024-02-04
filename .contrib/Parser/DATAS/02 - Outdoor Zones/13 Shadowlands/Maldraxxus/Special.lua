@@ -4,6 +4,23 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(SPECIAL, {
+			n(182194, {	--- Baroness Vashj
+				["coord"] = { 57.6, 92, MALDRAXXUS },
+				["groups"] = {
+					i(187923, {	-- Aurelid Lure
+						["description"] = "Step 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.\n\nObtained each week for free after the first time.",
+						["cost"] = {
+							{"i",187662,1},	-- Strange Goop
+							{"i",187916,1},	-- Coilclutch Vine
+							{"i",187922,1},	-- Flipper Fish
+							{"i",187915,1},	-- Pungent Blobfish
+						},
+						["questID"] = 65039,
+						["isWeekly"] = true,
+						["timeline"] = { ADDED_9_2_0 },
+					}),
+				},
+			}),
 			i(183114, {	-- Carpal (PET!)
 				["description"] = "Combine with the other bones to craft the pet:\n|cFF0070ddAnimated Radius|r: Purchased from |cFFFFFFFFNalcorn Talsen|r in Maldraxxus. \n|cFF0070ddAnimated Ulna|r: A rare reward from pet battle WQs in Maldraxxus. \n|cFF0070ddFlexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
 				["cost"] = {

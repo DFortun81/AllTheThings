@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["timeline"] = { "added 4.0.3" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(4996, {	-- Explore Southern Barrens
+				explorationAch(4996, {	-- Explore Southern Barrens
 					["timeline"] = { "added 4.0.3" },
 				}),
 				ach(4937, {	-- Southern Barrens Quests (A)
@@ -17,25 +17,70 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
-						crit(1, {	-- Honor's Stand
+						crit(38847, {	-- Honor's Stand
 							["sourceQuest"] = 25186,	-- Futile Resistance
 						}),
-						crit(2, {	-- Northwatch Hold
+						crit(38848, {	-- Northwatch Hold
+							["sourceQuest"] = 24939,	-- Run Out the Guns
+						}),
+						crit(38849, {	-- Northwatch Hold
+							["sourceQuest"] = 24948,	-- Lifting the Siege
+						}),
+						crit(38850, {	-- Northwatch Hold
 							["sourceQuest"] = 24956,	-- Silencing Rageroar
 						}),
-						crit(3, {	-- Teegan's Expedition
+						crit(38851, {	-- Teegan's Expedition
+							["sourceQuest"] = 25008,	-- Filthy Animals
+						}),
+						crit(38852, {	-- Teegan's Expedition
+							["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
+						}),
+						crit(38853, {	-- Teegan's Expedition
+							["sourceQuest"] = 25002,	-- Scavenged
+						}),
+						crit(38854, {	-- Teegan's Expedition
 							["sourceQuest"] = 25000,	-- Teegan's People
 						}),
-						crit(4, {	-- Life from the Dream
+						crit(38855, {	-- Life from the Dream
+							["sourceQuest"] = 24601,	-- The Nightmare Scar
+						}),
+						crit(38856, {	-- Life from the Dream
 							["sourceQuest"] = 24566,	-- Sowing a Solution
 						}),
-						crit(5, {	-- Forward Command
+						crit(38857, {	-- Forward Command
+							["sourceQuest"] = 25044,	-- Diplomacy By Another Means
+						}),
+						crit(38858, {	-- Forward Command
+							["sourceQuest"] = 25057,	-- Clap 'Em In Irons
+						}),
+						crit(38859, {	-- Forward Command
+							["sourceQuest"] = 25059,	-- The Taurajo Briefs
+						}),
+						crit(38860, {	-- Forward Command
 							["sourceQuest"] = 25042,	-- Marching On Our Stomachs
 						}),
-						crit(6, {	-- Firestone Point
+						crit(38861, {	-- Firestone Point
+							["sourceQuest"] = 25085,	-- Mangletooth
+						}),
+						crit(38862, {	-- Firestone Point
+							["sourceQuest"] = 24824,	-- The Disturbed Earth
+						}),
+						crit(38863, {	-- Firestone Point
 							["sourceQuest"] = 24653,	-- Echoes of Agamaggan
 						}),
-						crit(7, {	-- Fort Triumph
+						crit(38866, {	-- Fort Triumph
+							["sourceQuest"] = 25081,	-- Claim the Battlescar
+						}),
+						crit(38867, {	-- Fort Triumph
+							["sourceQuest"] = 25080,	-- Batteries Not Yet Included
+						}),
+						crit(38868, {	-- Fort Triumph
+							["sourceQuest"] = 25082,	-- Working the Bugs Out
+						}),
+						crit(38869, {	-- Fort Triumph
+							["sourceQuest"] = 25175,	-- The Bad News
+						}),
+						crit(38870, {	-- Fort Triumph
 							["sourceQuest"] = 25185,	-- The Deed Is Done
 						}),
 					},
@@ -43,6 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4981, {	-- Southern Barrens Quests (H)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Hunter's Hill
 							["sourceQuests"] = {
@@ -95,6 +141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 24747,	-- Sabotage!
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -523,6 +570,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				q(1716, {	-- Devourer of Souls [Stormwind City]
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1717,	-- Gakin's Summons (Succubus)
+					-- #if AFTER WRATH
+					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
 				q(862, {	-- Dig Rat Stew
 					["qg"] = 3443,	-- Grub
 					["coord"] = { 55.31, 31.79, THE_BARRENS },
@@ -536,7 +597,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(5478),	-- Dig Rat Stew
-						i(5487, {	-- Recipe: Dig Rat Stew
+						i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "removed 4.3.0" },
 						}),
 					},
@@ -786,7 +847,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Heartswood
-							["provider"] = { "i", 6912 },	-- Heartswood
+							["providers"] = {
+								{ "i", 6912 },	-- Heartswood
+								{ "o", 93192 },	-- Heartswood
+							},
 							["coord"] = { 31, 31, ASHENVALE },
 						}),
 					},
@@ -1832,7 +1896,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),
@@ -1852,7 +1916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1539, {	-- Gnarled Hermit's Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1882,8 +1946,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2035, {	-- Sword of the Night Sky
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+							-- #else
+							["description"] = "The mob dropping this item is friendly to the alliance.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1980,7 +2046,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(44977, {	-- Recipe: Dig Rat Stew
+						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 						}),
 					},
@@ -1997,8 +2063,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 3458,	-- Razormane Seer
+					["coords"] = {
+						{ 42.6, 79.0, THE_BARRENS },
+						{ 43.0, 83.2, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37661,	-- Razormane Seer
+					["coords"] = {
+						{ 41.8, 82.8, SOUTHERN_BARRENS },
+						{ 43.2, 84.4, SOUTHERN_BARRENS },
+						{ 23.4, 35.4, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				i(5051, {	-- Dig Rat
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
@@ -2010,17 +2089,43 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3444,	-- Dig Rat
 				}),
 				i(5093, {	-- Razormane Backstabber
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						3457,	-- Razormane Stalker
 						3456,	-- Razormane Pathfinder
 					},
+					["coords"] = {
+						{ 41.8, 79.6, THE_BARRENS },
+						{ 43.8, 83.2, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37560,	-- Razormane Pathfinder
+					["coords"] = {
+						{ 43.4, 82.0, SOUTHERN_BARRENS },
+						{ 41.6, 81.4, SOUTHERN_BARRENS },
+						{ 43.6, 86.2, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				i(5094, {	-- Razormane War Shield
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 3459,	-- Razormane Warfrenzy
+					["coords"] = {
+						{ 41.6, 79.0, THE_BARRENS },
+						{ 42.2, 81.6, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37660,	-- Razormane Warfrenzy
+					["coords"] = {
+						{ 38.0, 81.8, SOUTHERN_BARRENS },
+						{ 43.6, 82.6, SOUTHERN_BARRENS },
+						{ 44.6, 87.8, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
-				i(44977, {	-- Recipe: Dig Rat Stew
+				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 					["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 					["crs"] = {
 						39153,	-- Excavation Raider
@@ -2029,10 +2134,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3377,	-- Bael'dun Rifleman
 					},
 				}),
-				i(6663, {	-- Recipe: Elixir of Giant Growth
+				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
-				i(6661, {	-- Recipe: Savory Deviate Delight
+				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 			}),

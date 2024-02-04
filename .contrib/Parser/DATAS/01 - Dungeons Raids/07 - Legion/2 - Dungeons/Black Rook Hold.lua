@@ -11,22 +11,28 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				ach(10709, {	-- You Used to Scrawl Me In Your Fel Tome
 					["description"] = "These spawn on any difficulty, but you'll only get one per run, making this achievement a six-run minimum.",
 					["g"] = {
-						crit(1, {	-- Torn Page read
+						crit(31357, {	-- Torn Page read
+							["provider"] = { "o", 252385 },	-- Torn Page
 							["description"] = "Found in the Chamber of War Room immediately after the Amalgam of Souls fight, on a desk by the southern part of the room.",
 						}),
-						crit(2, {	-- Worn-Edged Page read
+						crit(31358, {	-- Worn-Edged Page read
+							["provider"] = { "o", 252386 },	-- Worn-Edged Page
 							["description"] = "Found in the Grand Hall, to the left of the broken staircase, by the bookshelves.",
 						}),
-						crit(3, {	-- Dog-Eared Page read
+						crit(31359, {	-- Dog-Eared Page read
+							["provider"] = { "o", 252387 },	-- Dog-Eared Page
 							["description"] = "Found in the Grand Hall, it's in the hallway connecting to the stairwell that takes you to Illysanna Ravencrest, tucked in the back on a desk.",
 						}),
-						crit(4, {	-- Singed Page read
+						crit(31360, {	-- Singed Page read
+							["provider"] = { "o", 252388 },	-- Singed Page
 							["description"] = "Found in Rookshold, the room filled with Wyrmtongue Tricker, on a table by three bookshelves and two weapon racks.",
 						}),
-						crit(5, {	-- Ink-Splattered Page read
+						crit(31361, {	-- Ink-Splattered Page read
+							["provider"] = { "o", 252390 },	-- Ink-splattered Page
 							["description"] = "Found in Rook's Rise, in the small round room connected to the stairs leading to Lord Ravencrest's Chamber after defeating Smashspite the Hateful.",
 						}),
-						crit(6, {	-- Hastily-Scrawled Page read
+						crit(31362, {	-- Hastily-Scrawled Page read
+							["provider"] = { "o", 252391 },	-- Hastily-Scrawled Page
 							["description"] = "Found in Lord Ravencrest's Chamber on the desk, at the end of the instance.",
 						}),
 					},
@@ -54,6 +60,10 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
+				i(211513),	-- Howling Echoes
+				i(211470),	-- Ravencrest's Wrath
+			})),
 			d(NORMAL_DUNGEON, {
 				e(1518, {	-- Amalgam of Souls
 					["creatureID"] = 98542,	-- Amalgam of Souls
@@ -187,8 +197,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 						["g"] = {
 							ach(10805),	-- Heroic: Black Rook Hold
-							i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
-							i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
+							i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
+							i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord
 							i(134370),	-- Felbat Leather Leggings
@@ -219,6 +229,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["g"] = {
 							ach(10710, {	-- Black Rook Moan
 								["description"] = "Prevent a soul from touching the boss for 60 seconds during the intermission phase.",
+								["crs"] = { 99663 },	-- Frustrated Soul
 							}),
 							i(136714),	-- Amalgam's Seventh Spine
 							i(136976),	-- Etheldrin's Breastplate
@@ -273,9 +284,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["g"] = {
 							ach(10806),	-- Mythic: Black Rook Hold
 							ach(10862),	-- Mythic: Black Rook Hold Guild Run
-							i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
-							i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
-							i(137931),	-- Pattern: Gravenscale Hauberk (Rank 3)
+							i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
+							i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
+							i(137931),	-- Pattern: Gravenscale Hauberk [Rank 3] (RECIPE!)
 							i(137694),	-- Schematic: Reaves Module: Repair Mode
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord

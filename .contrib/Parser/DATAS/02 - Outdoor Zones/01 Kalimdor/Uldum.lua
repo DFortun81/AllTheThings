@@ -5,36 +5,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(ULDUM, {
 		["lore"] = "Uldum, a new zone added with Cataclysm, was known as the Land of the Titans. An ancient desert formerly inaccessible to the Alliance and the Horde, it is rich with Titan lore and an advanced civilization, the Tol'vir. This region draws aesthetic influences heavily from Ancient Egypt, with pyramids, obelisks, similar deities, and irrigation systems.",
 		["timeline"] = { "added 4.0.3" },
-		["maps"] = {
+		--["maps"] = {
 			-- 737,	-- The Vortex Pinnacle
 			-- 857,	-- Throne of the Four Winds
-			1527,	-- Uldum (n'zoth assault) -- TODO: Move this to the Assault?
-		},
-		["achievementID"] = 4865,
+		--},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(29, {	-- Obalis
-							["coord"] = { 56.6, 41.8, ULDUM },
-							["cr"] = 66824,	-- Obalis <Grand Master Pet Tamer>
-						}),
-					},
-				})),
 				explorationAch(4865),	-- Explore Uldum
 				ach(4888, {	-- One Hump or Two? (Uldum)
 					["providers"] = {
 						{ "i", 63044 },	-- Brown Riding Camel
 						{ "i", 63045 },	-- Tan Riding Camel
+						{ "i", 63046 },	-- Reins of the Grey Riding Camel
 					},
 				}),
-				ach(5767, {			-- Scourer of the Eternal Sands
-					title(143),		-- the Camel-Hoarder
+				achWithRep(4884, 1173),	-- Ramkahen
+				ach(5767, {	-- Scourer of the Eternal Sands
+					["provider"] = { "i", 63046 },	-- Reins of the Grey Riding Camel
+					["groups"] = {
+						title(143),		-- the Camel-Hoarder
+					},
 				}),
 				ach(4872, {	-- Unearthing Uldum
+					-- #IF ANYCLASSIC
 					crit(1, {	-- Rescued by Outsiders
 						["sourceQuest"] = 28112,	-- Escape From the Lost City
 					}),
@@ -62,6 +55,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					crit(7, {	-- Promises
 						["sourceQuest"] = 28633,	-- The Coffer of Promise
 					}),
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -80,6 +74,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(546),	-- Tol'vir Scarab (PET!)
 				},
 			}),
+			n(FACTIONS, {
+				faction(1173, {	-- Ramkahen
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
+				}),
+			}),
 			n(FLIGHT_PATHS, {
 				fp(653, {	-- Oasis of Vir'sar
 					["coord"] = { 26.6, 8.2, ULDUM },
@@ -91,12 +90,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 22.2, 64.8, ULDUM },
 				}),
 			}),
+			petbattles({
+				n(66824, {	-- Obalis <Grand Master Pet Tamer>
+					["coord"] = { 56.6, 41.8, ULDUM },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ARCHAEOLOGY, bubbleDown({["requireSkill"] = ALCHEMY},{
 					i(64657, {	-- Canopic Jar
 						["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
 						["groups"] = {
-							i(67538),	-- Recipe: Vial of the Sands
+							i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 						},
 					}),
 				})),
@@ -200,7 +204,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28602, {	-- Be Prepared
 					["qg"] = 45296,	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, ULDUM },
-					["sourceQuest"] = 27196,	-- On to Something
+					["sourceQuests"] = {
+						27196,	-- On to Something
+						27541,	-- Lessons From the Past
+					},
 					["description"] = "This version of the quest will be offered if you have completed Lessons From the Past.",
 					["groups"] = {
 						i(65886),	-- Rope-Grip Gloves
@@ -227,6 +234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27541,	-- Lessons From the Past
 						27511,	-- The Thrill of Discovery
 					},
+					["sourceQuestNumRequired"] = 3,	-- ['Be Prepared' don't cross-complete apparently]
 					["groups"] = {
 						i(61509),	-- Sapphire Spectacles
 					},
@@ -333,8 +341,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28497, {	-- Fire From the Sky
 					["qg"] = 48698,	-- Harrison Jones
-					["coord"] = { 41.3, 5.5, ULDUM },
 					["sourceQuest"] = 28482,	-- Sullah's Gift
+					["coord"] = { 41.3, 5.5, ULDUM },
 					["groups"] = {
 						ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 						i(65870),	-- Confiscated Dog Tags
@@ -342,11 +350,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65868),	-- Canopic CHestplate
 					},
 				}),
-				q(28736, {	-- Fire From the Sky
+				q(28736, {	-- Fire From the Sky (Daily)
 					["qg"] = 49523,	-- Weathered Nomad
+					["sourceQuest"] = 28497,	-- Fire From the Sky
 					["coord"] = { 41.3, 5.5, ULDUM },
 					["isDaily"] = true,
-					["sourceQuest"] = 28497,	-- Fire From the Sky
 					["groups"] = {
 						ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 					},
@@ -1060,7 +1068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50409, {	-- Mysterious Camel Figurine
-					["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
+					["description"] = "If you're lucky enough to find this Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
 					["coords"] = {
 						{ 25.59, 65.89, ULDUM },
 						{ 29.85, 20.45, ULDUM },
@@ -1088,6 +1096,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["crs"] = { 50245 },	-- Dormus the Camel Hoarder
 						}),
 					},
+				}),
+				n(50410, {	-- Mysterious Camel Figurine
+					["description"] = "Fake Camel!",
 				}),
 			}),
 			n(VENDORS, {
@@ -1118,13 +1129,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
--- #if AFTER CATA
-root(ROOTS.NeverImplemented, {
-	tier(CATA_TIER, {
-		n(WEAPONS, {
-			i(65878),	-- Charbelching Wand
-		}),
-	}),
-});
--- #endif

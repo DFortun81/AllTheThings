@@ -20,6 +20,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4893, {	-- Western Plaguelands Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The First Battle for Andorhal
 							["sourceQuests"] = {
@@ -47,6 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			-- #if AFTER 7.0.3.21570
@@ -398,7 +400,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Araj's Phylactery Shard
-							["provider"] = { "i", 17114 },	-- Araj's Phylactery Shard
+							["providers"] = {
+								{ "i",  17114 },	-- Araj's Phylactery Shard
+								{ "o", 177241 },	-- Araj's Phylactery
+							},
 							["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 							["cr"] = 1852,	-- Araj the Summoner
 						}),
@@ -1054,6 +1059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #ELSE
 						26930,	-- After the Crusade (reported as inaccurate quest)
 						25007,	-- East... Always to the East (assumed from report)
+						25006,	-- The Grasp Weakens (from Discord report)
 						-- #ENDIF
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -1797,7 +1803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27175, {	-- The Menders' Stead [A]
 					["qg"] = 10840,	-- Argent Officer Pureheart
-					["sourceQuest"] = 27174,	-- Combat Training
+					["sourceQuest"] = 27168,	-- Those That Couldn't Let Go
 					["coord"] = { 42.9, 83.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -2327,6 +2333,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49.2, 70.6, WESTERN_PLAGUELANDS },
 					},
 					-- #endif
+					-- #if AFTER 10.1.7
+					["groups"] = {
+						i(9296),	-- Recipe: Gift of Arthas (Discord 30.11.2023)
+					},
+					-- #endif
 				}),
 				n(1841, {	-- Scarlet Executioner
 					-- #if AFTER CATA
@@ -2409,24 +2420,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
-			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-				o(403535, {	-- The Deed to Andorhal
-					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
-					["sourceQuests"] = { 76250 },	-- Spectral Essence
-					["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
-					["groups"] = {
-						i(206362),	-- The Deed to Andorhal
-					},
-				}),
-				o(403532, {	-- Bucket of Fountain Water
+			-- #if AFTER 10.1.5
+			n(TREASURES, {
+				i(206359, {	-- Caer Darrow Fountain Water
+					["provider"] = { "o", 403532 },	-- Bucket of Fountain Water
+					["sourceQuest"] = 76250,	-- Spectral Essence
 					["description"] = "Located by the water fountain in Caer Darrow.",
-					["sourceQuests"] = { 76250 },	-- Spectral Essence
 					["coord"] = { 68.8, 78.9, WESTERN_PLAGUELANDS },
-					["groups"] = {
-						i(206359),	-- Caer Darrow Fountain Water
-					},
+					["timeline"] = { ADDED_10_1_5 },
 				}),
-			})),
+				i(206362, {	-- The Deed to Andorhal
+					["provider"] = { "o", 403535 },	-- The Deed to Andorhal
+					["sourceQuest"] = 76250,	-- Spectral Essence
+					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
+					["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(210322, {	-- Rune of Venom
+					["provider"] = { "o", 410847 },	-- Rusty Safe
+					["coord"] = { 59.4, 84.6, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 210329, 1 },	-- Hillsbrad Treasure Map
+						{ "i", 210323, 1 },	-- Safe Combination
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400102),	-- Engrave Pants - Envenom
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(11056, {	-- Alchemist Arbington
 					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
@@ -2500,11 +2528,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19442),	-- Recipe: Powerful Anti-Venom
 						i(19216),	-- Pattern: Argent Boots
 						i(19217),	-- Pattern: Argent Shoulders
-						i(19328),	-- Pattern: Dawn Treaders (RECIPE!)
-						i(19329),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
-						i(13482),	-- Recipe: Transmute Air to Fire
+						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 					},
 				}),
 				-- #if ANYCLASSIC
@@ -2572,8 +2600,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
 						i(12819),	-- Plans: Ornate Thorium Handaxe (RECIPE!)
 						i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
-						i(13501),	-- Recipe: Major Mana Potion
-						i(13485),	-- Recipe: Transmute Water to Air
+						i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
+						i(13485),	-- Recipe: Transmute Water to Air (RECIPE!)
 					},
 				}),
 				n(11285, {	-- Rory
@@ -2701,15 +2729,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1813,	-- Decaying Horror
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						44485,	-- Flesh-Cobbled Brute
+						44484,	-- Flesh-Cobbled Ripper
+						44486,	-- Unholy Corpuscle
+					},
+					-- #endif
+					["coords"] = {
+						{ 64.6, 36.0, WESTERN_PLAGUELANDS },
+						{ 62.4, 36.2, WESTERN_PLAGUELANDS },
+					},
 				}),
 				-- #if BEFORE 4.0.3
 				i(12707, {	-- Plans: Runic Plate Boots
 					["cr"] = 1836,	-- Scarlet Cavalier
 				}),
 				-- #endif
-				i(9296, {	-- Recipe: Gift of Arthas
+				i(9296, {	-- Recipe: Gift of Arthas (RECIPE!)
 					-- #if AFTER CATA
 					["cr"] = 1783,	-- Skeletal Flayer
 					-- #else
@@ -2721,7 +2761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" }, -- Maybe still drops, this tag will help with reporting if somebody does get a drop
 				}),
 				-- #if BEFORE 4.0.3
-				i(13496, {	-- Recipe: Greater Nature Protection Potion
+				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["crs"] = {
 						1813,	-- Decaying Horror
 						1812,	-- Rotting Behemoth

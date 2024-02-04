@@ -16,7 +16,7 @@ local GIEGER = n(162741, {	-- Gieger <Experimental Construct>
 		i(183754),	-- Stitchflesh's Design Notes
 	},
 });
-local SABRIEL = n(168147, { -- Sabriel the Bonecleaver
+local SABRIEL = n(168147, {	-- Sabriel the Bonecleaver
 	["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
 	["isDaily"] = true,
 	["questID"] = 58784,
@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								GIEGER,
 							}),
 							n(TREASURES, {
-								o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
+								o(355035, {	-- Chosen Runecoffer [Treasure: House of the Chosen]
 									["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
 									["questID"] = 61647,
 									["isDaily"] = true,
@@ -90,10 +90,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								q(62403, {	-- Boared to Death
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
+									["g"] = {
+										i(183620),	-- Bloody Tusks (QI!)
+									},
 								}),
 								q(62390, {	-- Body Count
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
+									["g"] = {
+										i(183600),	-- Abomination Parts (QI!)
+									},
 								}),
 								q(62364, {	-- Dire Learning
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
@@ -126,6 +132,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								q(62362, {	-- Volatile Reactions
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
+									["g"] = {
+										i(183436),	-- Animated Catalyst (QI!)
+									},
 								}),
 							})),
 							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {

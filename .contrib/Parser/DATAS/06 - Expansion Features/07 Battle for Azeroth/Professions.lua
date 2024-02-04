@@ -12,40 +12,40 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 				["races"] = HORDE_ONLY,
 			}),
 			ach(12765, {	-- Exotic Discoveries
-				crit(1, {	-- Ceremonial Bonesaw
+				crit(43323, {	-- Ceremonial Bonesaw
 					["provider"] = { "i", 154921 },	-- Ceremonial Bonesaw
 				}),
-				crit(2, {	-- Ancient Runebound Tome
+				crit(40842, {	-- Ancient Runebound Tome
 					["provider"] = { "i", 154922 },	-- Ancient Runebound Tome
 				}),
-				crit(3, {	-- Disembowling Sickle
+				crit(40843, {	-- Disembowling Sickle
 					["provider"] = { "i", 154923 },	-- Disembowling Sickle
 				}),
-				crit(4, {	-- Jagged Blade of the Drust
+				crit(40844, {	-- Jagged Blade of the Drust
 					["provider"] = { "i", 154924 },	-- Jagged Blade of the Drust
 				}),
-				crit(5, {	-- Ritual Fetish
+				crit(40845, {	-- Ritual Fetish
 					["provider"] = { "i", 154925 },	-- Ritual Fetish
 				}),
-				crit(6, {	-- Soul Coffer
+				crit(40846, {	-- Soul Coffer
 					["provider"] = { "i", 160741 },	-- Soul Coffer
 				}),
-				crit(7, {	-- Akun'Jar Vase
+				crit(40847, {	-- Akun'Jar Vase
 					["provider"] = { "i", 154913 },	-- Akun'Jar Vase
 				}),
-				crit(8, {	-- Urn of Passage
+				crit(40848, {	-- Urn of Passage
 					["provider"] = { "i", 154914 },	-- Urn of Passage
 				}),
-				crit(9, {	-- Rezan Idol
+				crit(40849, {	-- Rezan Idol
 					["provider"] = { "i", 154915 },	-- Rezan Idol
 				}),
-				crit(10, {	-- High Apothecary's Hood
+				crit(40850, {	-- High Apothecary's Hood
 					["provider"] = { "i", 154916 },	-- High Apothecary's Hood
 				}),
-				crit(11, {	-- Bwonsamdi Voodoo Mask
+				crit(40851, {	-- Bwonsamdi Voodoo Mask
 					["provider"] = { "i", 154917 },	-- Bwonsamdi Voodoo Mask
 				}),
-				crit(12, {	-- Blowgun of the Sethra
+				crit(40852, {	-- Blowgun of the Sethra
 					["provider"] = { "i", 160743 },	-- Blowgun of the Sethra
 				}),
 			}),
@@ -54,85 +54,11 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 			}),
 			ach(12762, {	-- Kul Tiran Curator
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					crit(1, {	-- Pristine Ceremonial Bonesaw
-						["_quests"] = { 51950 },
-					}),
-					crit(2, {	-- Pristine Ancient Runebound Tome
-						["_quests"] = { 51951 },
-					}),
-					crit(3, {	-- Pristine Disembowling Sickle
-						["_quests"] = { 51952 },
-					}),
-					crit(4, {	-- Pristine Jagged Blade of the Drust
-						["_quests"] = { 51953 },
-					}),
-					crit(5, {	-- Pristine Ritual Fetish
-						["_quests"] = { 51954 },
-					}),
-					crit(6, {	-- Pristine Soul Coffer
-						["_quests"] = { 51955 },
-					}),
-					crit(7, {	-- Pristine Akun'Jar Vase
-						["_quests"] = { 51926 },
-					}),
-					crit(8, {	-- Pristine Urn of Passage
-						["_quests"] = { 51929 },
-					}),
-					crit(9, {	-- Pristine Rezan Idol
-						["_quests"] = { 51932 },
-					}),
-					crit(10, {	-- Pristine High Apothecary's Hood
-						["_quests"] = { 51934 },
-					}),
-					crit(11, {	-- Pristine Bwonsamdi Voodoo Mask
-						["_quests"] = { 51936 },
-					}),
-					crit(12, {	-- Pristine Blowgun of the Sethrak
-						["_quests"] = { 51937 },
-					}),
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(12764, {	-- Zandalari Curator
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(1, {	-- Pristine Ceremonial Bonesaw
-						["_quests"] = { 51950 },
-					}),
-					crit(2, {	-- Pristine Ancient Runebound Tome
-						["_quests"] = { 51951 },
-					}),
-					crit(3, {	-- Pristine Disembowling Sickle
-						["_quests"] = { 51952 },
-					}),
-					crit(4, {	-- Pristine Jagged Blade of the Drust
-						["_quests"] = { 51953 },
-					}),
-					crit(5, {	-- Pristine Ritual Fetish
-						["_quests"] = { 51954 },
-					}),
-					crit(6, {	-- Pristine Soul Coffer
-						["_quests"] = { 51955 },
-					}),
-					crit(7, {	-- Pristine Akun'Jar Vase
-						["_quests"] = { 51926 },
-					}),
-					crit(8, {	-- Pristine Urn of Passage
-						["_quests"] = { 51929 },
-					}),
-					crit(9, {	-- Pristine Rezan Idol
-						["_quests"] = { 51932 },
-					}),
-					crit(10, {	-- Pristine High Apothecary's Hood
-						["_quests"] = { 51934 },
-					}),
-					crit(11, {	-- Pristine Bwonsamdi Voodoo Mask
-						["_quests"] = { 51936 },
-					}),
-					crit(12, {	-- Pristine Blowgun of the Sethrak
-						["_quests"] = { 51937 },
-					}),
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			currency(1535, {	-- Drust
 				-- Solves
@@ -211,273 +137,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 				},
 			}),
 		})),
-		--[[
-		prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
-			q(54465, {	-- Blacksmithing Plans
-				["requireSkill"] = BLACKSMITHING,
-				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-				["coord"] = { 73.6, 8.6, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-			}),
-			q(54466, {	-- Blacksmithing Plans
-				["requireSkill"] = BLACKSMITHING,
-				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-				["coord"] = { 43.6, 38.3, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-			}),
-			-- Tools of Trade Questline
-			q(50123, {	-- A Recipe For the Ages (A)
-				["description"] = "Requires 150 Kul Tiran Blacksmithing.",
-				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-				["coord"] = { 73.6, 8.6, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50276, {	-- A Recipe For the Ages (H)
-				["description"] = "Requires 150 Zandalari Blacksmithing.",
-				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-				["coord"] = { 43.6, 38.3, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50114, {	-- Hammering Out Information (A)
-				["sourceQuests"] = { 50114 },	-- A Recipe For the Ages (A)
-				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-				["coord"] = { 73.6, 8.6, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50277, {	-- Hammering Out Information (H)
-				["sourceQuests"] = { 50276 },	-- A Recipe For the Ages (H)
-				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-				["coord"] = { 43.6, 38.3, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50270, {	-- Deep In the Core (A)
-				["sourceQuests"] = { 50114 },	-- Hammering Out Information (A)
-				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-				["coord"] = { 73.6, 8.6, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50278, {	-- Deep In the Core (H)
-				["sourceQuests"] = { 50277 },	-- Hammering Out Information (H)
-				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-				["coord"] = { 43.6, 38.3, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50271, {	-- Smash and Grab
-				["sourceQuests"] = {
-					50270,	-- Deep In the Core (A)
-					50278,	-- Deep In the Core (H)
-				},
-				["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
-				["coord"] = { 53.9, 50.0, DEEPHOLM },
-				["sourceQuestNumRequired"] = 1,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50272, {	-- An Ear to the Ground
-				["sourceQuests"] = {
-					50270,	-- Deep In the Core (A)
-					50278,	-- Deep In the Core (H)
-				},
-				["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
-				["coord"] = { 53.9, 50.0, DEEPHOLM },
-				["sourceQuestNumRequired"] = 1,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50274, {	-- Titanic Forging
-				["sourceQuests"] = {
-					50271,	-- Smash and Grab
-					50272,	-- An Ear to the Ground
-				},
-				["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
-				["coord"] = { 53.9, 50.0, DEEPHOLM },
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50288, {	-- Therazane's Choice
-				["sourceQuests"] = { 50274 },	-- Titanic Forging
-				["provider"] = { "n", 133796 },	-- Therazane
-				["coord"] = { 27.5, 50.8, DEEPHOLM },
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50275, {	-- Anvil's Away (A)
-				["sourceQuests"] = { 50288 },	-- Therazane's Choice
-				["provider"] = { "n", 133796 },	-- Therazane
-				["coord"] = { 27.5, 50.8, DEEPHOLM },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50279, {	-- Anvil's Away (H)
-				["sourceQuests"] = { 50288 },	-- Therazane's Choice
-				["provider"] = { "n", 133796 },	-- Therazane
-				["coord"] = { 27.5, 50.8, DEEPHOLM },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-		})),
-		--]]
-		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
-			q(54473, {	-- Enchanted Formulae (A)
-				["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
-				["coord"] = { 74.1, 11.4, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-			}),
-			q(54474, {	-- Enchanted Formulae (H)
-				["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
-				["coord"] = { 47.0, 35.8, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-			}),
-			-- Tools of Trade Questline
-			q(54005, {	-- What the Drust Knew (A)
-				["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
-				["provider"] = { "n", 136041 },	-- Emily Fairweather
-				["coord"] = { 74.2, 11.3, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(54161, {	-- What the Drust Knew (H)
-				["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
-				["provider"] = { "n", 122702 },	-- Enchantress Quinni
-				["coord"] = { 47.1, 35.7, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(53993, {	-- A Voice on the Wind (A)
-				["sourceQuests"] = { 54005 },	-- What the Drust Knew (A)
-				["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
-				["coord"] = { 74.2, 11.4, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(55635, {	-- A Voice on the Wind (H)
-				["sourceQuests"] = { 54161 },	-- What the Drust Knew (H)
-				["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
-				["coord"] = { 47.1, 35.3, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(53996, {	-- Pick Up Sticks
-				["sourceQuests"] = {
-					53993,	-- A Voice on the Wind (A)
-					55635,	-- A Voice on the Wind (H)
-				},
-				["provider"] = { "n", 146053 },	-- Sef Iwen
-				["coord"] = { 53.4, 40.1, DRUSTVAR },
-				["sourceQuestNumRequired"] = 1,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(53997, {	-- The Sixth Sense
-				["sourceQuests"] = { 53996 },	-- Pick Up Sticks
-				["provider"] = { "n", 146053 },	-- Sef Iwen
-				["coord"] = { 53.4, 40.1, DRUSTVAR },
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(53998, {	-- Exhumed
-				["sourceQuests"] = { 53997 },	-- The Sixth Sense
-				["provider"] = { "n", 146091 },	-- Sef Iwen
-				["coord"] = { 55.3, 46.1, DRUSTVAR },
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(53999, {	-- The Threads That Bind
-				["sourceQuests"] = { 53998 },	-- Exhumed
-				["provider"] = { "n", 146091 },	-- Sef Iwen
-				["coord"] = { 55.3, 46.1, DRUSTVAR },
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(54000, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Beat Goes On
-				["sourceQuests"] = { 53999 },	-- Exhumed
-				["provider"] = { "n", 146093 },	-- Sef Iwen
-				["coord"] = { 63.0, 59.4, DRUSTVAR },
-				["g"] = {
-					r(284415, {	-- Enchant Runic Power Core
-						["u"] = 15,	-- Training
-					}),
-				},
-			})),
-			q(54001, {	-- We're Going In
-				["sourceQuests"] = { 54000 },	-- The Beat Goes On
-				["provider"] = { "n", 146094 },	-- Sef Iwen
-				["coord"] = { 58.9, 62.9, DRUSTVAR },
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(54002, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Putting it All Togethereeee
-				["sourceQuests"] = { 54001 },	-- We're Going In
-				["provider"] = { "n", 152255 },	-- Sef Iwen
-				["coord"] = { 57.8, 80.8, DRUSTVAR },
-				["g"] = {
-					r(287494),	-- Iwen's Enchanting Rod
-				},
-			})),
-		})),
-		-- MINING Quests started in any zone
-		prof(MINING, bubbleDownSelf({
-			["requireSkill"] = MINING,
-		}, sharedData({
-			["maps"] = {
-				DRUSTVAR,
-				TIRAGARDE_SOUND,
-				STORMSONG_VALLEY,
-				VOLDUN,
-				ZULDAZAR,
-				NAZMIR,
-			},
-		},{
-			-- Monelite Seam
-			q(48767, {	-- Seams Familiar
-				["provider"] = { "i", 160905 },	-- Lost Anchor Necklace
-				["sourceQuest"] = 48764,	-- Don't Pick a Fight
-				["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					recipe(253344),	-- Monelite Seam (Rank 3)
-				},
-			}),
-			q(51971, {	-- An Exquisite Brooch
-				["provider"] = { "i", 160944 },	-- An Exquisite Brooch
-				["coord"] = { 44.0, 39.0, DAZARALOR },
-				["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					recipe(253344),	-- Monelite Seam (Rank 3)
-				},
-			}),
-			-- Platinum Deposit
-			q(52044, {	-- An Exceptional Platinum Shard (A)
-				["provider"] = { "i", 161078 },	-- Exceptional Platinum Shard (A)
-				["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					recipe(253340),	-- Platinum Deposit (Rank 2)
-				},
-			}),
-			q(52046, {	-- An Exceptional Platinum Shard (H)
-				["provider"] = { "i", 161079 },	-- Exceptional Platinum Shard (H)
-				["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					recipe(253340),	-- Platinum Deposit (Rank 2)
-				},
-			}),
-			q(52049, {	-- X Marks the Plat!
-				["provider"] = { "i", 161085 },	-- Tattered Map
-				["sourceQuest"] = 52044,	-- An Exceptional Platinum Shard (A)
-				["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(52053, {	-- The Platinum Map
-				["provider"] = { "i", 161088 },	-- Platinum Map
-				["sourceQuest"] = 52046,	-- An Exceptional Platinum Shard (H)
-				["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
-				["races"] = HORDE_ONLY,
-			}),
-		}))),
 		-- SKINNING Quests started in any zone
 		prof(SKINNING, bubbleDownSelf({
 			["requireSkill"] = SKINNING,

@@ -2,17 +2,16 @@
 -- Callback Lib
 local _, app = ...;
 
+-- Global locals
+local After, max, unpack = C_Timer.After, math.max, unpack;
+
 -- Setup the callback tables since they are heavily used
 local __callbacks = {};
-local __combatcallbacks = {};
-local Cache = {};
-local Timer, unpack, max, tinsert, InCombatLockdown = C_Timer.After, unpack, math.max, tinsert, InCombatLockdown;
--- Gets or Creates the actual method which runs as a callback to execute the specified method
-local function GetOrCreateCallback(method)
-	local callbackMethod = Cache[method];
-	if not callbackMethod then
+local CallbackMethodCache = setmetatable({}, {
+	-- Gets or Creates the actual method which runs as a callback to execute the specified method
+	__index = function(t, method)
 		-- app.PrintDebug("CB:New",method)
-		callbackMethod = function()
+		local callbackMethod = function()
 			local args = __callbacks[method];
 			__callbacks[method] = nil;
 			-- callback with args/void
@@ -25,46 +24,65 @@ local function GetOrCreateCallback(method)
 			end
 			-- app.PrintDebug("CB:Done",method)
 		end;
-		Cache[method] = callbackMethod;
+		t[method] = callbackMethod;
+		return callbackMethod;
 	end
-	return callbackMethod;
-end
--- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
+});
 local function Callback(method, ...)
+	-- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
 	if not __callbacks[method] then
 		__callbacks[method] = ... and {...} or true;
-		Timer(0, GetOrCreateCallback(method));
+		After(0, CallbackMethodCache[method]);
 	-- else app.PrintDebug("CB:Skip",method)
 	end
 end
--- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
 local function DelayedCallback(method, delaySec, ...)
+	-- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
 	if not __callbacks[method] then
 		__callbacks[method] = ... and {...} or true;
-		Timer(max(0, delaySec or 0), GetOrCreateCallback(method));
+		After(max(0, delaySec or 0), CallbackMethodCache[method]);
 	-- else app.PrintDebug("DCB:Skip",method)
 	end
 end
--- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
+
+-- Callbacks to trigger after combat has ended!
+local __combatcallbacks = {};
+local InCombatLockdown = InCombatLockdown;
 local function AfterCombatCallback(method, ...)
+	-- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
 	if not InCombatLockdown() then Callback(method, ...); return; end
 	if not __callbacks[method] then
 		__callbacks[method] = ... and {...} or true;
 		-- TODO: convert to a CallbackRunner?
-		tinsert(__combatcallbacks, 1, GetOrCreateCallback(method));
+		__combatcallbacks[#__combatcallbacks + 1] = CallbackMethodCache[method];
 		app:RegisterEvent("PLAYER_REGEN_ENABLED");
 	-- else app.PrintDebug("ACCB:Skip",method)
 	end
 end
--- Triggers a timer callback method to run either when current combat ends, or after the provided delay; the method can only be set to run once until it has been run
 local function AfterCombatOrDelayedCallback(method, delaySec, ...)
+	-- Triggers a timer callback method to run either when current combat ends, or after the provided delay; the method can only be set to run once until it has been run
 	if InCombatLockdown() then
 		AfterCombatCallback(method, ...);
 	else
 		DelayedCallback(method, delaySec, ...);
 	end
 end
-app.__combatcallbacks = __combatcallbacks;
+app.events.PLAYER_REGEN_ENABLED = function()
+	app:UnregisterEvent("PLAYER_REGEN_ENABLED");
+	-- print("PLAYER_REGEN_ENABLED:Begin")
+	local callbacks = __combatcallbacks;
+	local count = #callbacks;
+	if count > 0 then
+		__combatcallbacks = {};
+		for i=count,1,-1 do
+			-- print(" callback:",i)
+			callbacks[i]();
+		end
+	end
+	-- print("PLAYER_REGEN_ENABLED:End")
+end
+
+-- External API
 app.CallbackHandlers = {
 	Callback = Callback,
 	DelayedCallback = DelayedCallback,

@@ -39,7 +39,7 @@ root(ROOTS.Zones, {
 						})),
 					},
 				}),
-				q(46777, {	-- The Bounties of Legionfall
+				q(46777, bubbleDownSelf({ ["minReputation"] = { FACTION_ARMIES_OF_LEGIONFALL, EXALTED }}, {	-- The Bounties of Legionfall
 					["repeatable"] = true,
 					["provider"] = { "n", 120414 },	-- Captain Ruysantos
 					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
@@ -54,7 +54,7 @@ root(ROOTS.Zones, {
 							},
 						})),
 					},
-				}),
+				})),
 			}),
 		}),
 	}),

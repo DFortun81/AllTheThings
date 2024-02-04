@@ -124,6 +124,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						["_encounter"] = { 1623, 6 },
 					}),
 				}),
+				ach(11752, {["timeline"] = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
+				ach(4078, {	-- Realm First! Grand Crusader
+					["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
+					["g"] = {
+						title(135, {	-- Grand Crusader <Name>
+							["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
+						}),
+					},
+				}),
 			}),
 			n(VENDORS, {
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
@@ -1223,6 +1232,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 				},
 				["description"] = "These drop on all difficulties other than 10 Man Normal.",
 				["groups"] = {
+					-- #if BEFORE 4.0.1
+					currency(301),	-- Emblem of Triumph
+					-- #endif
 					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
 					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
 					i(47629, {	-- Pattern: Black Chitin Bracers [A] (RECIPE!)
@@ -1317,7 +1329,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					}),
 					i(47556),	-- Crusader Orb
 					i(47242, {	-- Trophy of the Crusade
+						-- #if AFTER 4.0.3
 						["description"] = "This only drops on either of the 25-Player Modes.",
+						-- #else
+						["description"] = "This only drops on either of the 25-Player Modes or from the Tribute Chest at the end of 10 man Heroic.",
+						-- #endif
 					}),
 				},
 			}),
@@ -1822,7 +1838,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 							a(ig(48708)),		-- Spellstorm Blade
 							h(ig(48703)),		-- The Facebreaker
 							a(ig(48712)),		-- The Spinebreaker
+
 						}),
+						-- #if BEFORE 4.0.3
+						i(47242, {	-- Trophy of the Crusade
+							["description"] = "This only drops on either of the 25-Player Modes or from the Tribute Chest at the end of 10 man Heroic.",
+						}),
+						-- #endif
 					},
 				})),
 			}),
@@ -1931,7 +1953,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					},
 					["groups"] = {
 						ach(3814, {	-- Resilience Will Fix It (25 player)
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(47285),	-- Dual-Blade Butcher
 						i(47287),	-- Bastion of Resolve
@@ -1970,7 +1992,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					},
 					["groups"] = {
 						ach(3814, {	-- Resilience Will Fix It (25 player)
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(47069),	-- Justicebringer
 						i(47079),	-- Bastion of Purity

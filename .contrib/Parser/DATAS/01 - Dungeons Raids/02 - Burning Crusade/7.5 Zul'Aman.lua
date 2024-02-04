@@ -24,6 +24,9 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 	inst(77, bubbleDownSelf({ ["timeline"] = { "added 2.3.0", "removed 4.1.0" } }, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3805,	-- Zul'Aman
+		-- #endif
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,
 		["isRaid"] = true,
@@ -65,11 +68,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						},
 					}),
 					q(11130, {	-- Oooh, Shinies!
-						["qg"] = 19227,	-- Griftah (Shattrath)
-						["coord"] = { 65.6, 68.8, SHATTRATH_CITY },
-						["cost"] = {
-							{ "i", 33010, 1 },	-- Griftah's Note
+						["providers"] = {
+							{ "n", 19227 },	-- Griftah
+							{ "i", 33010 },	-- Griftah's Note
 						},
+						["coord"] = { 65.6, 68.8, SHATTRATH_CITY },
 						["isBreadcrumb"] = true,
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -99,7 +102,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Budd's Map of Zul'Aman
-								["provider"] = { "i", 33013 },	-- Budd's Map of Zul'Aman
+								["providers"] = {
+									{ "i",  33013 },	-- Budd's Map of Zul'Aman
+									{ "o", 186733 },	-- The Map of Zul'Aman
+								},
 								["description"] = "Right side before bear boss.",
 							}),
 							i(34067),	-- Tattered Hexcloth Sack
@@ -218,9 +224,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 				}),
 				n(VENDOR, {
 					n(23559, {	-- Budd
+						["coord"] = { 71.0, 67.2, GHOSTLANDS },
 						["groups"] = {
-							i(33105, {   -- Budd's Guise of Zul'aman	-- Technically not a vendor item. Clicking his dialog option did grant you the item
-								["timeline"] = { "added 2.3.0", "removed 3.0.1" }	-- Unsure when removed
+							i(33105, {	  -- Budd's Guise of Zul'aman
+								["sourceQuest"] = 11132,	-- Promises, Promises...
+								["description"] = "To obtain this, talk to Budd Nedreck after completing 'Promises, Promises...', click the dialog \"You gave the crew disguises?\", and look in your inventory.\n\n|Cffff0000WARNING: If you complete 'X Marks... Your Doom!' this option is NOT available to you!|r",
+								["timeline"] = { "added 2.3.0", "removed 4.0.1" },	-- Conditionally removed based on quest progress.
 							}),
 						},
 					}),
@@ -337,8 +346,5 @@ FOREST_FROG.timeline = nil;
 -- also clean up the children
 for _,item in pairs(FOREST_FROG.groups) do item.timeline = nil; end
 MOJO_PET.timeline = nil;
-
--- #if ANYCLASSIC
 -- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.
 BADGE_OF_JUSTICE.timeline = nil;
--- #endif

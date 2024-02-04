@@ -96,40 +96,40 @@ root(ROOTS.Zones, {
 						["rank"] = 86,
 						-- #endif
 						-- #else
-						crit(1, {	-- Sylvanaar (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								10518,	-- Planting the Banner
-								10504,	-- The Bladespire Ogres
-							},
-						}),
-						crit(1, {	-- Thunderlord Stronghold (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 10505,	-- The Bloodmaul Ogres (need to verify horde quests, might be more needed)
-						}),
-						crit(2, {	-- Toshley's Station (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								10594,	-- Gauging the Resonant Frequency
-								10671,	-- More than a Pound of Flesh
-								10675,	-- Show Them Gnome Mercy!
-							},
-						}),
-						crit(2, {	-- Reunion (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 10742,	-- Showdown
-						}),
-						crit(3, {	-- The Gronn Threat (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 10806,	-- Showdown
-						}),
-						crit(3, {	-- The Mok'Nathal (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 10867,	-- There Can Be Only One Response
-						}),
-						crit(4, {	-- Ruuan Weald (A+H)
-							["sourceQuest"] = 10748,	-- Maxnar Must Die!
-						}),
+						-- crit(1, {	-- Sylvanaar (A)
+						-- 	["races"] = ALLIANCE_ONLY,
+						-- 	["sourceQuests"] = {
+						-- 		10518,	-- Planting the Banner
+						-- 		10504,	-- The Bladespire Ogres
+						-- 	},
+						-- }),
+						-- crit(1, {	-- Thunderlord Stronghold (H)
+						-- 	["races"] = HORDE_ONLY,
+						-- 	["sourceQuest"] = 10505,	-- The Bloodmaul Ogres (need to verify horde quests, might be more needed)
+						-- }),
+						-- crit(2, {	-- Toshley's Station (A)
+						-- 	["races"] = ALLIANCE_ONLY,
+						-- 	["sourceQuests"] = {
+						-- 		10594,	-- Gauging the Resonant Frequency
+						-- 		10671,	-- More than a Pound of Flesh
+						-- 		10675,	-- Show Them Gnome Mercy!
+						-- 	},
+						-- }),
+						-- crit(2, {	-- Reunion (H)
+						-- 	["races"] = HORDE_ONLY,
+						-- 	["sourceQuest"] = 10742,	-- Showdown
+						-- }),
+						-- crit(3, {	-- The Gronn Threat (A)
+						-- 	["races"] = ALLIANCE_ONLY,
+						-- 	["sourceQuest"] = 10806,	-- Showdown
+						-- }),
+						-- crit(3, {	-- The Mok'Nathal (H)
+						-- 	["races"] = HORDE_ONLY,
+						-- 	["sourceQuest"] = 10867,	-- There Can Be Only One Response
+						-- }),
+						-- crit(4, {	-- Ruuan Weald (A+H)
+						-- 	["sourceQuest"] = 10748,	-- Maxnar Must Die!
+						-- }),
 						-- #endif
 					}),
 				}),
@@ -903,8 +903,8 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					q(10671, {	-- More than a Pound of Flesh
@@ -1530,10 +1530,12 @@ root(ROOTS.Zones, {
 							11065,	-- Wrangle Some Aether Rays!
 						},
 						["coord"] = { 27.4, 52.7, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32732, 1 },	--	Dragon Teeth
-						},
 						["lvl"] = lvlsquish(70, 70, 20),
+						["groups"] = {
+							objective(1, {	-- 0/1 Dragon Teeth
+								["provider"] = { "i", 32732 },	-- Dragon Teeth
+							}),
+						},
 					})),
 					q(10674, {	-- Trapping the Light Fantastic
 						["qg"] = 21691,	-- Toshley
@@ -1962,16 +1964,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.0, 57.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22900, {	-- Recipe: Elixir of Camouflage
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22909, {	-- Recipe: Elixir of Major Defense
+							i(22909, {	-- Recipe: Elixir of Major Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22911, {	-- Recipe: Major Dreamless Sleep Potion
+							i(22911, {	-- Recipe: Major Dreamless Sleep Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22907, {	-- Recipe: Super Mana Potion
+							i(22907, {	-- Recipe: Super Mana Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2045,8 +2047,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.2, 68.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					n(21494, {	-- Smiles O'Byron <Engineer>
@@ -2072,8 +2074,8 @@ root(ROOTS.Zones, {
 						["description"] = "This vendor stocks a limited supply of these items.  Alliance players can purchase them from Sassa Weldwell, who sells unlimited quantities.  Horde players who don't wish to wait for Xerintha to restock can complete the quest |cFFefc400Mok'Nathal Treats|r, which awards both recipes.",
 						["coord"] = { 62.4, 40.2, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					n(20917, {	-- Zinyen Swiftstrider <Weapon Vendor>
@@ -2591,7 +2593,7 @@ root(ROOTS.Zones, {
 						},
 						["cr"] = 16952,	-- Anger Guard
 					}),
-					i(22925, {	-- Recipe: Major Holy Protection Potion
+					i(22925, {	-- Recipe: Major Holy Protection Potion (RECIPE!)
 						["coords"] = {
 							{ 26.6, 83.6, BLADES_EDGE_MOUNTAINS },
 							{ 28.0, 82.2, BLADES_EDGE_MOUNTAINS },

@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 		["maps"] = {
 			1683,	-- Theater of Pain
 			1684,	-- Chamber of Conquest
-			1685,	-- Theater of Pain
+			1685,	-- Altars of Agony
 			1686,	-- Upper Barrow of Carnage
 			1687,	-- Lower Barrow of Carnage
 		},
@@ -142,9 +142,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 					},
 					["g"] = {
 						ach(14297, {	-- Three Choose One
-							crit(1),	-- Paceran the Virulent
-							crit(2),	-- Sathel the Accursed
-							crit(3),	-- Dessia the Decapitator
+							crit(48444),	-- Paceran the Virulent
+							crit(48445),	-- Sathel the Accursed
+							crit(48446),	-- Dessia the Decapitator
 						}),
 					},
 				}),

@@ -5,108 +5,181 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 	m(338, {	-- Molten Front
 		["description"] = "The Molten Front is a daily quest zone for level 32+ players added in 4.2. Players reach it via a portal in Mount Hyjal. This zone covers the initial attacks on Firelands. It is a volcanic zone covered in flame elementals and allies of Ragnarnos. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress.",
 		["timeline"] = { "added 4.2.0" },
-		["achievementID"] = 5866,
 		["lvl"] = 32,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(5879, {	-- Veteran of the Molten Front
+					["sym"] = {{"meta_achievement",
+						5868,	-- And the Meek Shall Inherit Kalimdor
+						5874,	-- Death From Above
+						5870,	-- Fireside Chat
+						5867,	-- Flawless Victory
+						5864,	-- Gang War
+						5865,	-- Have... Have We Met?
+						5869,	-- Infernal Ambassadors
+						5872,	-- King of the Spider-Hill
+						5859,	-- Legacy of Leyara
+						5862,	-- Ludicrous Speed
+						5871,	-- Master of the Molten Flow
+						5873,	-- Ready for Raiding II
+						5861,	-- The Fiery Lords of Sethria's Roost
+						5866,	-- The Molten Front Offensive
+					}},
+					["groups"] = {
+						title(189),		-- the Flamebreaker
+					},
+				}),
+				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(17824),	-- Angry Little Squirrel
+						crit(17825),	-- Hyjal Bear Cub
+						crit(17826),	-- Alpine Songbird
+						crit(17827),	-- Child of Tortolla
+					},
+				}),
 				achWithRep(5827, 1204, {	-- Avengers of Hyjal
 					title(188),	-- <Name>, Avenger of Hyjal
 				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
-					crit(2),	-- Blazefury
-					crit(3),	-- Flashfire
-					crit(4),	-- Hatespark
-					crit(5),	-- Heatflayer
-					crit(1),	-- Ragepyre
-					crit(6),	-- Singeslayer
+					crit(17857),	-- Ragepyre
+					crit(17858),	-- Blazefury
+					crit(17859),	-- Flashfire
+					crit(17860),	-- Hatespark
+					crit(17861),	-- Heatflayer
+					crit(17862),	-- Singeslayer
 				}),
 				ach(5870, {	-- Fireside Chat (Mount Hyjal)
-					crit(6, {	-- Arthorn Windsong
-						["coord"] = { 34.3, 56.4, 338 },
+					crit(17878, {	-- Malfurion Stormrage
+						["coord"] = { 47.0, 91.3, 338 },
 					}),
-					crit(7, {	-- Deldren Ravenelm
-						["coords"] = {
-							{ 55.4, 68.4, 338 },
-							{ 66.6, 63.6, 338 },
-						},
+					crit(17879, {	-- Matoclaw
+						["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
 					}),
-					crit(4, {	-- Dorda'en Nightweaver
-						["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
-					}),
-					crit(8, {	-- General Taldris Moonfall
-						["coord"] = { 45.6, 85.6, 338 },
-					}),
-					crit(3, {	-- Jarod Shadowsong
+					crit(17880, {	-- Jarod Shadowsong
 						["coords"] = {
 							{ 49.7, 85.5, 338 },
 							{ 45.2, 82.9, 338 },
 						},
 					}),
-					crit(1, {	-- Malfurion Stormrage
-						["coord"] = { 47.0, 91.3, 338 },
+					crit(17882, {	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					}),
-					crit(2, {	-- Matoclaw
-						["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
-					}),
-					crit(5, {	-- Thisalee Crow
+					crit(17883, {	-- Thisalee Crow
 						["coord"] = { 42.5, 59.7, 338 },
+					}),
+					crit(17884, {	-- Arthorn Windsong
+						["coord"] = { 34.3, 56.4, 338 },
+					}),
+					crit(17886, {	-- Deldren Ravenelm
+						["coords"] = {
+							{ 55.4, 68.4, 338 },
+							{ 66.6, 63.6, 338 },
+						},
+					}),
+					crit(17889, {	-- General Taldris Moonfall
+						["coord"] = { 45.6, 85.6, 338 },
 					}),
 				}),
 				ach(5867, {	-- Flawless Victory
 					["cr"] = 52552,	-- Molten Behemoth
 				}),
+				ach(5864, {	-- Gang War
+					["maps"] = { MOUNT_HYJAL },
+				}),
+				ach(5865, {	-- Have... Have We Met?
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(17806),	-- Linken
+						crit(17807),	-- Hemet Nesingwary
+						crit(17808),	-- Nat Pagle
+						crit(17809),	-- Chromie
+						crit(17810),	-- Mankrik
+						crit(17811),	-- Thassarian
+					},
+				}),
+				ach(5869, {	-- Infernal Ambassadors
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(17829),	-- Slay Pyrachnis without using the Emerald of Aessina.
+						crit(17831),	-- Slay Millagazor without taking damage from Gout of Flame.
+						crit(17832),	-- Slay Lylagar without taking damage from Lylagar Breath.
+						crit(17833),	-- Slay Galenges before he is weakened a second time
+						crit(17834),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury.
+					},
+				}),
 				ach(5872),	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
 				ach(5859, {	-- Legacy of Leyara (Mount Hyjal)
 					i(69854),	-- Smoke-Stained Locket (quest item reward)
-					crit(1, {	-- A Ritual of Flame
-						["sourceQuest"] = 29195,	-- A Ritual of Flame
+					crit(17794, {	-- A Ritual of Flame
+						["_quests"] = { 29195 },	-- A Ritual of Flame
 					}),
-					crit(2, {	-- Leyara
-						["sourceQuest"] = 29200,	-- Leyara
+					crit(17795, {	-- Leyara
+						["_quests"] = { 29200 },	-- Leyara
 					}),
-					crit(3, {	-- Into the Depths
-						["sourceQuest"] = 29203,	-- Into the Depths
+					crit(17796, {	-- Into the Depths
+						["_quests"] = { 29203 },	-- Into the Depths
 					}),
+				}),
+				ach(5862, {	-- Ludicrous Speed
+					["maps"] = { MOUNT_HYJAL },
 				}),
 				ach(5871, {	-- Master of the Molten Flow (Mount Hyjal - The Molten Front)
-					crit(2),	-- Kill a Flamewaker Sentinel while it is carrying someone
-					crit(1),	-- Kill a Flamewaker Shaman with his own Flamewave
-					crit(3),	-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
+					crit(17835),	-- Kill a Flamewaker Shaman with his own Flamewave
+					crit(17836),	-- Kill a Flamewaker Sentinel while it is carrying someone
+					crit(17837),	-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
 				}),
 				ach(5873, {	-- Ready for Raiding II
-					crit(1),	-- Ancient Charscale slain
-					crit(5),	-- Ancient Firelord slain
-					crit(3),	-- Ancient Smoldering Behemoth slain
-					crit(2),	-- Cinderweb Queen slain
-					crit(4),	-- Devout Harbinger slain
+					crit(17840),	-- Ancient Charscale slain
+					crit(17841),	-- Cinderweb Queen slain
+					crit(17842),	-- Ancient Smoldering Behemoth slain
+					crit(17843),	-- Devout Harbinger slain
+					crit(17844),	-- Ancient Firelord slain
+				}),
+				ach(5861, {	-- The Fiery Lords of Sethria's Roost
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(17799, {	-- Searris slain
+							["cr"] = 53264,	-- Searris
+						}),
+						crit(17800, {	-- Kelbnar slain
+							["cr"] = 53265,	-- Kelbnar
+						}),
+						crit(17801, {	-- Andrazor slain
+							["cr"] = 53267,	-- Andrazor
+						}),
+						crit(17802, {	-- Fah Jarakk slain
+							["cr"] = 53271,	-- Fah Jarakk
+						}),
+					},
 				}),
 				ach(5866, {	-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
 					i(69213),	-- Flameward Hippogryph (MOUNT!)
-					crit(1, {	-- Stop the assault on the Sanctuary of Malorne
+					crit(17813, {	-- Stop the assault on the Sanctuary of Malorne
 						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					}),
-					crit(2, {	-- Gain access to the Molten Front
+					crit(17814, {	-- Gain access to the Molten Front
 						["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					}),
-					crit(3, {	-- Recruit the Druids of the Talon
+					crit(17815, {	-- Recruit the Druids of the Talon
 						["sourceQuest"] = 29181,	-- Druids of the Talon
 					}),
-					crit(4, {	-- Recruit the Shadow Wardens
+					crit(17816, {	-- Recruit the Shadow Wardens
 						["sourceQuest"] = 29214,	-- The Shadow Wardens
 					}),
-					crit(5, {	-- Recruit Elderlimb and the ancients
+					crit(17817, {	-- Recruit Elderlimb and the ancients
 						["sourceQuest"] = 29283,	-- Calling the Ancients
 					}),
-					crit(6, {	-- Recruit an armorer
+					crit(17818, {	-- Recruit an armorer
 						["sourceQuest"] = 29281,	-- Additional Armaments
 					}),
-					crit(7, {	-- Build a moonwell
+					crit(17819, {	-- Build a moonwell
 						["sourceQuest"] = 29279,	-- Filling the Moonwell
 					}),
-					crit(8, {	-- Find the Crimson Lasher
+					crit(17820, {	-- Find the Crimson Lasher
 						["sourceQuest"] = 29254,	-- Little Lasher
 					}),
-					crit(9, {	-- Save Anren Shadowseeker
+					crit(17821, {	-- Save Anren Shadowseeker
 						["sourceQuest"] = 29272,	-- Need... Water... Badly...
 					}),
 				}),
@@ -135,7 +208,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(6)),	-- The Molten Front Offensive / Recruit an armorer
+						ach(5866, crit(17818)),	-- The Molten Front Offensive / Recruit an armorer
 					},
 				}),
 				q(29139, {	-- Agressive Growth
@@ -178,7 +251,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(5)),	-- The Molten Front Offensive / Recruit Elderlimb and the ancients
+						ach(5866, crit(17817)),	-- The Molten Front Offensive / Recruit Elderlimb and the ancients
 					},
 				}),
 				q(29181, {	-- Druids of the Talon
@@ -187,7 +260,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(3)),	-- The Molten Front Offensive / Recruit the Druids of the Talon
+						ach(5866, crit(17815)),	-- The Molten Front Offensive / Recruit the Druids of the Talon
 					},
 				}),
 				q(29160, {	-- Egg-stinction
@@ -241,7 +314,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(7)),	-- The Molten Front Offensive / Filling the Moonwell
+						ach(5866, crit(17819)),	-- The Molten Front Offensive / Filling the Moonwell
 					},
 				}),
 				q(29265, {	-- Fire Flowers
@@ -288,7 +361,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 47.0, 90.0, 338 },
 					["sourceQuest"] = 29280,	-- Nourishing Waters
 					["groups"] = {
-						ach(5859, crit(3)),	-- Legacy of Leyara / Into the Depths
+						ach(5859, crit(17796)),	-- Legacy of Leyara / Into the Depths
 					},
 				}),
 				q(29209, {	-- Into the Fiery Depths
@@ -306,7 +379,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 50.6, 87.0, 338 },
 					["sourceQuest"] = 29249,	-- Planting Season
 					["groups"] = {
-						ach(5866, crit(8)),	-- The Molten Front Offensive / Find the Crimson Lasher
+						ach(5866, crit(17820)),	-- The Molten Front Offensive / Find the Crimson Lasher
 					},
 				}),
 				q(29278, {	-- Living Obsidium
@@ -329,7 +402,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 51.8, 31.0, 338 },
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["groups"] = {
-						ach(5866, crit(9)),	-- The Molten Front Offensive / Save Anren Shadowseeker
+						ach(5866, crit(17821)),	-- The Molten Front Offensive / Save Anren Shadowseeker
 					},
 				}),
 				q(29287, {	-- Peaked Interest
@@ -374,8 +447,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["qg"] = 52491,	-- Morthis Whisperwing
 					["coord"] = { 34.6, 56.4, 338 },
 					["sourceQuests"] = {
-						29293,	-- Singed Wings
-						29296,	-- Territorial Birds
+						29265,	-- Fire Flowers
 					},
 					["isDaily"] = true,
 				}),
@@ -389,11 +461,14 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["qg"] = 52495,	-- Shalis Darkhunter
 					["coord"] = { 57.6, 49.6, 338 },
 					["sourceQuests"] = {
-						29283,	-- Calling the Ancients
-						29189,	-- Wicked Webs
 						29159,	-- Pyrorachnophobia
 						29160,	-- Egg-stinction
+						29189,	-- Wicked Webs
+						29192,	-- The Wardens are Watching
+						29210,	-- Enduring the Heat
+						29283,	-- Calling the Ancients
 					},
+					["sourceQuestNumRequired"] = 4,
 					["isDaily"] = true,
 				}),
 				q(29305, {	-- Strike at the Heart
@@ -475,7 +550,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(4)),	-- The Molten Front Offensive / Recruit the Shadow Wardens
+						ach(5866, crit(17816)),	-- The Molten Front Offensive / Recruit the Shadow Wardens
 					},
 				}),
 				q(29192, {	-- The Wardens are Watching
@@ -539,27 +614,27 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 						{ 65.8, 55.0, 338 },
 						{ 68.5, 64.9, 338 },
 					},
-					["groups"] = {
-						i(67121),	-- Chestguard of the Caring Ursine
-						i(66920),	-- Cyu's Ornate Wand
-						i(66965),	-- Drape of Fiery Dreams
-						i(66966),	-- Elekk-Horn Waistguard
-						i(66989),	-- Endwyn's Flickering Gauntlets
-						i(66992),	-- Harbinger's Breastplate
-						i(67122),	-- Helm of Holy Visions
-						i(66971),	-- Highland Padded Leggings
-						i(66968),	-- Lhakaz's Swiftblade
-						i(67120),	-- Mace of Apotheosis
-						i(67057),	-- Oath-Bound Gauntlets
-						i(66919),	-- Robes of Whispering Sands
-						i(67069),	-- Shade of Death
-						i(67123),	-- Sinman's Helm of Succor
-						i(66993),	-- Sorrow's End
-						i(67115),	-- Soulheart Bindings
-						i(66976),	-- Spaulders of the Savage Beast
-						i(67071),	-- Staff of Old Woes
-						i(67117),	-- Woundsealer Spaulders
-					},
+					["sym"] = {{"select","itemID",
+						67121,	-- Chestguard of the Caring Ursine
+						66920,	-- Cyu's Ornate Wand
+						66965,	-- Drape of Fiery Dreams
+						66966,	-- Elekk-Horn Waistguard
+						66989,	-- Endwyn's Flickering Gauntlets
+						66992,	-- Harbinger's Breastplate
+						67122,	-- Helm of Holy Visions
+						66971,	-- Highland Padded Leggings
+						66968,	-- Lhakaz's Swiftblade
+						67120,	-- Mace of Apotheosis
+						67057,	-- Oath-Bound Gauntlets
+						66919,	-- Robes of Whispering Sands
+						67069,	-- Shade of Death
+						67123,	-- Sinman's Helm of Succor
+						66993,	-- Sorrow's End
+						67115,	-- Soulheart Bindings
+						66976,	-- Spaulders of the Savage Beast
+						67071,	-- Staff of Old Woes
+						67117,	-- Woundsealer Spaulders
+					}},
 				}),
 --[[
 					n(54338, {	-- Anthriss	}),
@@ -676,145 +751,147 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					}),
 					i(71631, {	-- Zen'Vorka's Cache
 						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["sym"] = {{"select","itemID",
+							55405,	-- Blackwolf Amulet
+							55315,	-- Blackwolf Cloak
+							55378,	-- Blackwolf Crystal
+							55423,	-- Blackwolf Ring
+							55369,	-- Blackwolf Scepter
+							55441,	-- Blackwolf Spellblade
+							55486,	-- Blackwolf Wand
+							55296,	-- Bladefist Broadaxe
+							55332,	-- Bladefist Dagger
+							55350,	-- Bladefist Knuckles
+							55386,	-- Bladefist Mace
+							55458,	-- Bladefist Sword
+							55774,	-- Bluefen Cord
+							55747,	-- Bluefen Cowl
+							55738,	-- Bluefen Handwraps
+							55756,	-- Bluefen Leggings
+							55720,	-- Bluefen Robe
+							55729,	-- Bluefen Sandals
+							55765,	-- Bluefen Shoulderpads
+							55711,	-- Bluefen Wristwraps
+							55504,	-- Crystalvein Breastplate
+							55522,	-- Crystalvein Gauntlets
+							55558,	-- Crystalvein Girdle
+							55531,	-- Crystalvein Helm
+							55540,	-- Crystalvein Legplates
+							55549,	-- Crystalvein Pauldrons
+							55513,	-- Crystalvein Sabatons
+							55432,	-- Crystalvein Shield
+							55495,	-- Crystalvein Vambraces
+							55637,	-- Dandred Bindings
+							55655,	-- Dandred Boots
+							55682,	-- Dandred Britches
+							55664,	-- Dandred Gloves
+							55673,	-- Dandred Hood
+							55646,	-- Dandred Jerkin
+							55691,	-- Dandred Shoulders
+							55700,	-- Dandred Waistband
+							55772,	-- Everstill Cord
+							55745,	-- Everstill Cowl
+							55736,	-- Everstill Handwraps
+							55754,	-- Everstill Leggings
+							55718,	-- Everstill Robe
+							55727,	-- Everstill Sandals
+							55763,	-- Everstill Shoulderpads
+							55709,	-- Everstill Wristwraps
+							55638,	-- Haldarr Bindings
+							55656,	-- Haldarr Boots
+							55683,	-- Haldarr Britches
+							55665,	-- Haldarr Gloves
+							55674,	-- Haldarr Hood
+							55647,	-- Haldarr Jerkin
+							55692,	-- Haldarr Shoulders
+							55701,	-- Haldarr Waistband
+							55628,	-- Highperch Belt
+							55565,	-- Highperch Bracers
+							55592,	-- Highperch Gauntlets
+							55583,	-- Highperch Greaves
+							55601,	-- Highperch Helm
+							55610,	-- Highperch Legguards
+							55619,	-- Highperch Spaulders
+							55574,	-- Highperch Vest
+							55333,	-- Irontree Dagger
+							55351,	-- Irontree Knuckles
+							55387,	-- Irontree Mace
+							55450,	-- Irontree Staff
+							55459,	-- Irontree Sword
+							55286,	-- Mardenholde Axe
+							55295,	-- Mardenholde Broadaxe
+							55331,	-- Mardenholde Dagger
+							55349,	-- Mardenholde Knuckles
+							55385,	-- Mardenholde Mace
+							55412,	-- Mardenholde Spear
+							55457,	-- Mardenholde Sword
+							55403,	-- Mereldar Amulet
+							55313,	-- Mereldar Cloak
+							55376,	-- Mereldar Crystal
+							55421,	-- Mereldar Ring
+							55367,	-- Mereldar Scepter
+							55439,	-- Mereldar Spellblade
+							55484,	-- Mereldar Wand
+							55773,	-- Mystral Cord
+							55746,	-- Mystral Cowl
+							55737,	-- Mystral Handwraps
+							55755,	-- Mystral Leggings
+							55719,	-- Mystral Robe
+							55728,	-- Mystral Sandals
+							55764,	-- Mystral Shoulderpads
+							55710,	-- Mystral Wristwraps
+							55502,	-- Ravencrest Breastplate
+							55520,	-- Ravencrest Gauntlets
+							55556,	-- Ravencrest Girdle
+							55529,	-- Ravencrest Helm
+							55538,	-- Ravencrest Legplates
+							55547,	-- Ravencrest Pauldrons
+							55511,	-- Ravencrest Sabatons
+							55430,	-- Ravencrest Shield
+							55493,	-- Ravencrest Vambraces
+							55639,	-- Ravenholdt Bindings
+							55657,	-- Ravenholdt Boots
+							55684,	-- Ravenholdt Britches
+							55666,	-- Ravenholdt Gloves
+							55675,	-- Ravenholdt Hood
+							55648,	-- Ravenholdt Jerkin
+							55693,	-- Ravenholdt Shoulders
+							55702,	-- Ravenholdt Waistband
+							55503,	-- Stonewrought Breastplate
+							55521,	-- Stonewrought Gauntlets
+							55557,	-- Stonewrought Girdle
+							55530,	-- Stonewrought Helm
+							55539,	-- Stonewrought Legplates
+							55548,	-- Stonewrought Pauldrons
+							55512,	-- Stonewrought Sabatons
+							55431,	-- Stonewrought Shield
+							55494,	-- Stonewrought Vambraces
+							55630,	-- Talondeep Belt
+							55567,	-- Talondeep Bracers
+							55594,	-- Talondeep Gauntlets
+							55585,	-- Talondeep Greaves
+							55603,	-- Talondeep Helm
+							55612,	-- Talondeep Legguards
+							55621,	-- Talondeep Spaulders
+							55576,	-- Talondeep Vest
+							55404,	-- Thondroril Amulet
+							55314,	-- Thondroril Cloak
+							55377,	-- Thondroril Crystal
+							55422,	-- Thondroril Ring
+							55368,	-- Thondroril Scepter
+							55440,	-- Thondroril Spellblade
+							55485,	-- Thondroril Wand
+							55629,	-- Thornsnarl Belt
+							55566,	-- Thornsnarl Bracers
+							55593,	-- Thornsnarl Gauntlets
+							55584,	-- Thornsnarl Greaves
+							55602,	-- Thornsnarl Helm
+							55611,	-- Thornsnarl Legguards
+							55620,	-- Thornsnarl Spaulders
+							55575,	-- Thornsnarl Vest
+						}},
 						["groups"] = {
 							i(34955),	-- Searing Scorchling (PET!)
-							i(55405),	-- Blackwolf Amulet
-							i(55315),	-- Blackwolf Cloak
-							i(55378),	-- Blackwolf Crystal
-							i(55423),	-- Blackwolf Ring
-							i(55369),	-- Blackwolf Scepter
-							i(55441),	-- Blackwolf Spellblade
-							i(55486),	-- Blackwolf Wand
-							i(55296),	-- Bladefist Broadaxe
-							i(55332),	-- Bladefist Dagger
-							i(55350),	-- Bladefist Knuckles
-							i(55386),	-- Bladefist Mace
-							i(55458),	-- Bladefist Sword
-							i(55774),	-- Bluefen Cord
-							i(55747),	-- Bluefen Cowl
-							i(55738),	-- Bluefen Handwraps
-							i(55756),	-- Bluefen Leggings
-							i(55720),	-- Bluefen Robe
-							i(55729),	-- Bluefen Sandals
-							i(55765),	-- Bluefen Shoulderpads
-							i(55711),	-- Bluefen Wristwraps
-							i(55504),	-- Crystalvein Breastplate
-							i(55522),	-- Crystalvein Gauntlets
-							i(55558),	-- Crystalvein Girdle
-							i(55531),	-- Crystalvein Helm
-							i(55540),	-- Crystalvein Legplates
-							i(55549),	-- Crystalvein Pauldrons
-							i(55513),	-- Crystalvein Sabatons
-							i(55432),	-- Crystalvein Shield
-							i(55495),	-- Crystalvein Vambraces
-							i(55637),	-- Dandred Bindings
-							i(55655),	-- Dandred Boots
-							i(55682),	-- Dandred Britches
-							i(55664),	-- Dandred Gloves
-							i(55673),	-- Dandred Hood
-							i(55646),	-- Dandred Jerkin
-							i(55691),	-- Dandred Shoulders
-							i(55700),	-- Dandred Waistband
-							i(55772),	-- Everstill Cord
-							i(55745),	-- Everstill Cowl
-							i(55736),	-- Everstill Handwraps
-							i(55754),	-- Everstill Leggings
-							i(55718),	-- Everstill Robe
-							i(55727),	-- Everstill Sandals
-							i(55763),	-- Everstill Shoulderpads
-							i(55709),	-- Everstill Wristwraps
-							i(55638),	-- Haldarr Bindings
-							i(55656),	-- Haldarr Boots
-							i(55683),	-- Haldarr Britches
-							i(55665),	-- Haldarr Gloves
-							i(55674),	-- Haldarr Hood
-							i(55647),	-- Haldarr Jerkin
-							i(55692),	-- Haldarr Shoulders
-							i(55701),	-- Haldarr Waistband
-							i(55628),	-- Highperch Belt
-							i(55565),	-- Highperch Bracers
-							i(55592),	-- Highperch Gauntlets
-							i(55583),	-- Highperch Greaves
-							i(55601),	-- Highperch Helm
-							i(55610),	-- Highperch Legguards
-							i(55619),	-- Highperch Spaulders
-							i(55574),	-- Highperch Vest
-							i(55333),	-- Irontree Dagger
-							i(55351),	-- Irontree Knuckles
-							i(55387),	-- Irontree Mace
-							i(55450),	-- Irontree Staff
-							i(55459),	-- Irontree Sword
-							i(55286),	-- Mardenholde Axe
-							i(55295),	-- Mardenholde Broadaxe
-							i(55331),	-- Mardenholde Dagger
-							i(55349),	-- Mardenholde Knuckles
-							i(55385),	-- Mardenholde Mace
-							i(55412),	-- Mardenholde Spear
-							i(55457),	-- Mardenholde Sword
-							i(55403),	-- Mereldar Amulet
-							i(55313),	-- Mereldar Cloak
-							i(55376),	-- Mereldar Crystal
-							i(55421),	-- Mereldar Ring
-							i(55367),	-- Mereldar Scepter
-							i(55439),	-- Mereldar Spellblade
-							i(55484),	-- Mereldar Wand
-							i(55773),	-- Mystral Cord
-							i(55746),	-- Mystral Cowl
-							i(55737),	-- Mystral Handwraps
-							i(55755),	-- Mystral Leggings
-							i(55719),	-- Mystral Robe
-							i(55728),	-- Mystral Sandals
-							i(55764),	-- Mystral Shoulderpads
-							i(55710),	-- Mystral Wristwraps
-							i(55502),	-- Ravencrest Breastplate
-							i(55520),	-- Ravencrest Gauntlets
-							i(55556),	-- Ravencrest Girdle
-							i(55529),	-- Ravencrest Helm
-							i(55538),	-- Ravencrest Legplates
-							i(55547),	-- Ravencrest Pauldrons
-							i(55511),	-- Ravencrest Sabatons
-							i(55430),	-- Ravencrest Shield
-							i(55493),	-- Ravencrest Vambraces
-							i(55639),	-- Ravenholdt Bindings
-							i(55657),	-- Ravenholdt Boots
-							i(55684),	-- Ravenholdt Britches
-							i(55666),	-- Ravenholdt Gloves
-							i(55675),	-- Ravenholdt Hood
-							i(55648),	-- Ravenholdt Jerkin
-							i(55693),	-- Ravenholdt Shoulders
-							i(55702),	-- Ravenholdt Waistband
-							i(55503),	-- Stonewrought Breastplate
-							i(55521),	-- Stonewrought Gauntlets
-							i(55557),	-- Stonewrought Girdle
-							i(55530),	-- Stonewrought Helm
-							i(55539),	-- Stonewrought Legplates
-							i(55548),	-- Stonewrought Pauldrons
-							i(55512),	-- Stonewrought Sabatons
-							i(55431),	-- Stonewrought Shield
-							i(55494),	-- Stonewrought Vambraces
-							i(55630),	-- Talondeep Belt
-							i(55567),	-- Talondeep Bracers
-							i(55594),	-- Talondeep Gauntlets
-							i(55585),	-- Talondeep Greaves
-							i(55603),	-- Talondeep Helm
-							i(55612),	-- Talondeep Legguards
-							i(55621),	-- Talondeep Spaulders
-							i(55576),	-- Talondeep Vest
-							i(55404),	-- Thondroril Amulet
-							i(55314),	-- Thondroril Cloak
-							i(55377),	-- Thondroril Crystal
-							i(55422),	-- Thondroril Ring
-							i(55368),	-- Thondroril Scepter
-							i(55440),	-- Thondroril Spellblade
-							i(55485),	-- Thondroril Wand
-							i(55629),	-- Thornsnarl Belt
-							i(55566),	-- Thornsnarl Bracers
-							i(55593),	-- Thornsnarl Gauntlets
-							i(55584),	-- Thornsnarl Greaves
-							i(55602),	-- Thornsnarl Helm
-							i(55611),	-- Thornsnarl Legguards
-							i(55620),	-- Thornsnarl Spaulders
-							i(55575),	-- Thornsnarl Vest
 						},
 					}),
 				}),

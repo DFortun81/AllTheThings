@@ -52,7 +52,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #else
 	n(ACHIEVEMENTS, {
-		-- #if BEFORE MOP
 		ach(1707, {	-- Fool For Love (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -69,13 +68,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				1703,	-- My Love is Like a Red, Red Rose
 				1704,	-- I Pitied The Fool
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(103),	-- the Love Fool
 			},
 		}),
-		-- #endif
 		ach(1693, {	-- Fool For Love (H) / Fool For Love [MOP+]
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -135,7 +133,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		ach(260, {	-- Charming
 			["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
 			["cost"] = {{ "i", 49916, 12 }},	-- Lovely Charm Bracelet
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 		}),
 		ach(1695, {	-- Dangerous Love
 			["sourceQuests"] = {
@@ -184,7 +182,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 46.6, 48.4, IRONFORGE },
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(1280, {	-- Flirt With Disaster [Horde]
@@ -196,7 +194,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 67.6, 43.8, UNDERCITY },
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = HORDE_ONLY,
 		}),
 		ach(1704, {	-- I Pitied The Fool
@@ -242,6 +240,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
+		ach(19508, {	-- Love Language Expert
+			["timeline"] = { ADDED_10_2_5 },
+		}),
 		ach(1703, {	-- My Love is Like a Red, Red Rose
 			["providers"] = {
 				{ "i", 22206 },	-- Bouquet of Red Roses
@@ -250,7 +251,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1697, {	-- Nation of Adoration [Alliance]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				crit(12838, {	-- A Gift for the High Priestess of Elune
@@ -268,7 +269,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		ach(1698, {	-- Nation of Adoration [Horde]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				crit(12842, {	-- A Gift for the Warchief / A Gift for the High Overlord/ A Gift for the Warchief's Advisor
@@ -293,6 +294,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["cost"] = { { "i", 22200, 10 } },	-- 10x Silver Shafted Arrow
 			["timeline"] = { "added 3.0.1" },
 		}),
+		ach(19400, {	-- Support Your Local Artisans
+			["timeline"] = { ADDED_10_2_5 },
+		}),
 		ach(1702, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Sweet Tooth
 			crit(8705, {	-- Buttermilk Delight
 				["provider"] = { "i", 22236 },	-- 1x Buttermilk Delight
@@ -308,7 +312,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 		})),
 		ach(1696, {	-- The Rocket's Pink Glare
-			["cost"] = { { "i", 34258, 10 } },	-- 10x Love Rocket
+			["cost"] = { { "i", 34258, 10 } },	-- 10x Lovely Fireworks
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(9394, {	-- They Really Love Me! (50)
@@ -1044,7 +1048,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(21812),	-- Box of Chocolates
 				i(22218),	-- Handful of Rose Petals
 				i(22200),	-- Silver Shafted Arrow
-				i(34258),	-- Love Rocket
+				i(34258),	-- Lovely Fireworks
 			},
 			-- #endif
 		}),
@@ -1066,7 +1070,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(21812),	-- Box of Chocolates
 				i(22218),	-- Handful of Rose Petals
 				i(22200),	-- Silver Shafted Arrow
-				i(34258),	-- Love Rocket
+				i(34258),	-- Lovely Fireworks
 			},
 			-- #endif
 		}),
@@ -1147,14 +1151,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		q(24655, {	-- Something Stinks (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
-			["sourceQuest"] = 24804,	-- Uncommon Scents (A)
+			["sourceQuests"] = {
+				24804,	-- Uncommon Scents (A)
+				-- #if AFTER DF
+				72735,	-- Still Into Perfume (A)
+				-- #endif
+			},
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { "added 3.3.0" },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24536, {	-- Something Stinks (H)
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
-			["sourceQuest"] = 24805,	-- Uncommon Scents (H)
+			["sourceQuests"] = {
+				24805,	-- Uncommon Scents (H)
+				-- #if AFTER DF
+				72736,	-- Still Into Perfume (H)
+				-- #endif
+			},
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { "added 3.3.0" },
 			["races"] = HORDE_ONLY,
@@ -1329,7 +1343,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			-- #if BEFORE 3.3.2.11403
 			i(22261),	-- Love Fool
 			-- #endif
-			i(34258, {	-- Love Rocket
+			i(34258, {	-- Lovely Fireworks
 				["timeline"] = { "added 2.3.0.7382" },
 			}),
 			-- #if BEFORE 3.3.2.11403
@@ -1360,7 +1374,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["timeline"] = { "removed 3.3.2.11403", "added 8.1.0" },
 				["_drop"] = { "f", "spellID" },
 			}),
-			i(21815, {	-- Love Token
+			i(21815, {	-- Wrinkled Love Token
 				["timeline"] = { "removed 3.3.2.11403" },
 				["_drop"] = { "f" },
 			}),
@@ -1368,6 +1382,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #if AFTER 3.3.2.11403
 	n(VENDORS, {
+		-- SORT ME --
+		i(210973, {	-- Heartseeker Mana Ray (MOUNT!) [Love in the Air]
+			["timeline"] = { "added 10.2.5" },
+		}),
+		i(211864, {	-- Exquisite Love Boat (TOY!) [Love in the Air]
+			["timeline"] = { "added 10.2.5" },
+		}),
+		i(210974, {	-- Eyes For You Only (TOY!) [Love in the Air]
+			["timeline"] = { "added 10.2.5" },
+		}),
+		i(210975, {	-- Date Simulation Modulator (TOY!) [Love in the Air]
+			["timeline"] = { "added 10.2.5" },
+		}),
+		-- SORT ME OVER --
 		n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
 			["coords"] = {
 				{ 45.2, 57.6, DARNASSUS },
@@ -1548,7 +1576,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["timeline"] = { "added 3.3.2.11403" },
 					["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
 				}),
-				i(34258, {	-- Love Rocket
+				i(34258, {	-- Lovely Fireworks
 					["timeline"] = { "added 2.3.0.7382" },
 					["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
 				}),
@@ -1582,7 +1610,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		["cost"] = {
 			{ "i", 21833, 1 },	-- Cologne Bottle
 			{ "i", 21829, 1 },	-- Perfume Bottle
-			{ "i", 21815, 1 },	-- Love Token
+			{ "i", 21815, 1 },	-- Wrinkled Love Token
 		},
 		-- #endif
 		["groups"] = {
@@ -2214,7 +2242,7 @@ for i,o in ipairs({
 			i(49909, {	-- Box of Chocolates
 				["timeline"] = { "added 3.3.2.11403" },
 			}),
-			i(34258, {	-- Love Rocket
+			i(34258, {	-- Lovely Fireworks
 				["timeline"] = { "added 2.3.0.7382" },
 			}),
 			]]--
@@ -2420,17 +2448,3 @@ end
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
 }));
-
--- #if AFTER 3.3.0.10772
-root(ROOTS.NeverImplemented, n(LOVE_IS_IN_THE_AIR_HEADER, {
-	q(11558, {	-- Dangerous Love (H)
-		["timeline"] = { "created 3.3.0.10772" },
-	}),
-	i(147374, {	-- Wooden Toy Shield [Alliance]
-		["timeline"] = { "created 7.3.0.24484" },
-	}),
-	i(147377, {	-- Wooden Toy Shield [Horde]
-		["timeline"] = { "created 7.3.0.24484" },
-	}),
-}));
--- #endif

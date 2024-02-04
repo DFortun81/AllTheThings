@@ -214,6 +214,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 58842 },	-- The Curator
 				["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
 				["coord"] = { 65.9, 32.2, REVENDRETH },
+				["g"] = {
+					i(174040),	-- Chains of Regret (QI!)
+				},
 			}),
 			q(62856, {	-- Building Your Renown
 				["sourceQuests"] = { 59323 },	-- Anima Awakening
@@ -278,6 +281,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 				["provider"] = { "i", 178557 },	-- Supply Chain Memo
 				["coord"] = { 57.4, 69.2, REVENDRETH },	-- rough area
+				["g"] = {
+					i(178557),	-- Supply Chain Memo (QI!)
+				},
 			}),
 			q(58384, {	-- Dredgers Left Behind
 				["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
@@ -307,11 +313,17 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				},
 				["provider"] = { "n", 171147 },	-- General Draven
 				["coord"] = { 24.3, 29.7, BASTION },
+				["g"] = {
+					i(180605),	-- Crown of the Harvesters (QI!)
+				},
 			}),
 			q(57772, {	-- Fangs and Minds
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 				["provider"] = { "n", 167380 },	-- Prince Renethal
 				["coord"] = { 56.3, 66.7, REVENDRETH },
+				["g"] = {
+					i(178213),	-- Prince Renathal's Decree (QI!)
+				},
 			}),
 			q(60500, {	-- Halls of Atonement: Medallion of Pride
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -342,6 +354,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61050 },	-- How to Wear Seven Medallions
 				["provider"] = { "n", 161514 },	-- General Draven
 				["coord"] = { 43.8, 46.4, SINFALL_REACHES },
+				["g"] = {
+					i(180356),	-- Laurent's Compact Looking Glass (QI!)
+				},
 			}),
 			q(62915, {	-- Home Improvement
 				["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -620,6 +635,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				},
 				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
+				["g"] = {
+					i(174094),	-- Boian's Fangs (QI!)
+					i(174095),	-- Daciana's Fangs (QI!)
+					i(174093),	-- Ionata's Fangs (QI!)
+				},
 			}),
 			q(57727, {	-- Stonevigil Unrest
 				["description"] = "Requires Renown 20.",
@@ -718,10 +738,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 171175 },	-- General Draven
 				["coord"] = { 21.0, 22.8, BASTION },
 				["g"] = {
+					i(180604),	-- Crown of the Harvesters (QI!)
+					i(180905),	-- Dread Sentinel's Ebony Greatboots
+					i(180908),	-- Ebony Death Shroud Boots
 					i(180907),	-- Fearstalker's Ebony Sabatons
 					i(180906),	-- Soulbreaker's Ebony Slippers
-					i(180908),	-- Ebony Death Shroud Boots
-					i(180905),	-- Dread Sentinel's Ebony Greatboots
 				},
 			}),
 			q(61492, {	-- The Princeguard
@@ -860,8 +881,6 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(63001),	-- triggers when choosing to skip the Venthyr sanctum intro quests
 		q(63023),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-		q(63425),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-		q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
 		q(59316),	-- turning in quest #62918, "Binding Power"
 		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 		q(61546),	-- when looting 'Almost Empty Amontillado Cask' (181781) while on quest 'Crypt Crashers' (58428)

@@ -1,8 +1,6 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENCHANTING, {
@@ -37,9 +35,28 @@ root(ROOTS.NeverImplemented, {
 						i(74251),	-- Greater Mysterious Essence
 					})),
 				}),
+				tier(SL_TIER, {
+					-- 9.0.1
+					tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+						i(172429),	-- [DNT] REUSE ME \\ Flamesteel Rod \\ Enchanting - Modified Crafting Reagent 01
+						i(172430),	-- Enchanting - Modified Crafting Reagent 02
+						i(172431),	-- Enchanting - Modified Crafting Reagent 03
+						i(172432),	-- Enchanting - Modified Crafting Reagent 04
+						i(172440),	-- Enchanting Reagent 04
+						i(172441),	-- Enchanting Reagent 05
+						i(172442),	-- Enchanting Reagent 06
+						i(172443),	-- Enchanting Reagent 07
+						i(172444),	-- Enchanting Reagent 08
+						i(172433),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 05
+						i(172434),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 06
+						i(172435),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 07
+						i(172436),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 08
+					})),
+				}),
 				tier(DF_TIER, {
 					-- 10.0.0
 					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+						i(191422),	-- Crystal Magical Lockpick
 						i(198483),	-- jrz 10.0 enchanting test [DNT]
 						i(198677),	-- jrz test vellum quality 1 [DNT]
 						i(198678),	-- jrz test vellum quality 2 [DNT]
@@ -191,12 +208,9 @@ root(ROOTS.NeverImplemented, {
 				tier(BFA_TIER, {
 					-- 8.0.1
 					tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
-						r(255106),	-- 9.0 Blacksmithing - Modified Crafting Reagent 03
-						r(255107),	-- 9.0 Blacksmithing - Modified Crafting Reagent 04
 						r(269720),	-- Honorable Combatant's Salutary Scepter [Rank 1]
 						r(269721),	-- Honorable Combatant's Salutary Scepter [Rank 2]
 						r(269722),	-- Honorable Combatant's Salutary Scepter [Rank 3]
-						r(255108),	-- REUSE ME (DNT)
 						r(265107),	-- Talanji's Salutary Scepter [Rank 1]
 						r(265108),	-- Talanji's Salutary Scepter [Rank 2]
 						r(265109),	-- Talanji's Salutary Scepter [Rank 2]

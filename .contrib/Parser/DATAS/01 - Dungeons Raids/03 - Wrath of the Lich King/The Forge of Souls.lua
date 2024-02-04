@@ -9,18 +9,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4516, {	-- The Forge of Souls
-					crit(13315, { -- Bronjahm
+					crit(13315, {	-- Bronjahm
 						["_encounter"] = { 615, 1 },
 					}),
-					crit(13316, { -- Devourer of Souls
+					crit(13316, {	-- Devourer of Souls
 						["_encounter"] = { 616, 1 },
 					}),
 				}),
 				ach(4519, {	-- Heroic: The Forge of Souls
-					crit(13167, { -- Bronjahm
+					crit(13167, {	-- Bronjahm
 						["_encounter"] = { 615, 2 },
 					}),
-					crit(13168, { -- Devourer of Souls
+					crit(13168, {	-- Devourer of Souls
 						["_encounter"] = { 616, 2 },
 					}),
 				}),

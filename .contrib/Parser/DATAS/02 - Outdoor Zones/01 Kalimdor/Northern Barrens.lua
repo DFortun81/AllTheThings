@@ -35,48 +35,65 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["timeline"] = { "added 4.0.3" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(750, {	-- Explore Northern Barrens
+				explorationAch(750, {	-- Explore Northern Barrens
 					["timeline"] = { "added 4.0.3" },
 				}),
 				ach(4933, {	-- Northern Barrens Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Far Watch
+						crit(38779, {	-- Far Watch
 							["sourceQuests"] = {
 								5041,	-- Supplies for the Crossroads
 								872,	-- The Far Watch Offensive
 							},
 						}),
-						crit(2, {	-- Grol'dom Farm
+						crit(38781, {	-- Grol'dom Farm
 							["sourceQuests"] = {
 								13971,	-- The Kodo's Return
 							},
 						}),
-						crit(3, {	-- Defeating the Kolkar
+						crit(38782, {	-- Defeating the Kolkar
 							["sourceQuests"] = {
 								4021,	-- Counterattack!
 							},
 						}),
-						crit(4, {	-- Mysteries of the Oases
+						crit(38783, {	-- Mysteries of the Oases
 							["sourceQuests"] = {
 								880,	-- Altered Beings
+							},
+						}),
+						crit(38784, {	-- Mysteries of the Oases
+							["sourceQuests"] = {
 								877,	-- The Stagnant Oasis
 							},
 						}),
-						crit(5, {	-- Ratchet
+						crit(38785, {	-- Ratchet
 							["sourceQuests"] = {
-								14050,	-- Gazlowe's Fortune
-								14063,	-- Mutiny, Mon!
+								14042,	--Ammo Kerblammo
+							},
+						}),
+						crit(38786, {	-- Ratchet
+							["sourceQuests"] = {
 								14067,	-- The Stolen Silver
 							},
 						}),
-						crit(6, {	-- Nozzlepot's Outpost
+						crit(38787, {	-- Ratchet
+							["sourceQuests"] = {
+								14063,	-- Mutiny, Mon!
+							},
+						}),
+						crit(38788, {	-- Ratchet
+							["sourceQuests"] = {
+								14050,	-- Gazlowe's Fortune
+							},
+						}),
+						crit(38789, {	-- Nozzlepot's Outpost
 							["sourceQuests"] = {
 								29094,	-- The Short Way Home
 							},
 						}),
-						crit(7, {	-- Inspiration and Hope
+						crit(38790, {	-- Inspiration and Hope
 							["sourceQuests"] = {
 								29111,	-- Mor'shan Caravan Delivery
 							},
@@ -155,6 +172,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.0, 15.8, NORTHERN_BARRENS },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			prof(FISHING, {
+				i(6651, {	-- Broken Wine Bottle
+					["description"] = "Drops from fishing in the Sludge Fen.",
+					["coord"] = { 57, 17, NORTHERN_BARRENS },
 				}),
 			}),
 			n(QUESTS, {
@@ -1071,7 +1094,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/15 Deepmoss Egg
 							["providers"] = {
 								{ "i", 5570 },	-- Deepmoss Egg
-								{ "i", 19542 },	-- Deepmoss Eggs
+								{ "o", 19542 },	-- Deepmoss Eggs
+
 							},
 						}),
 					},
@@ -1339,75 +1363,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(3634, {	-- Gnome Engineering
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						3633,	-- Goblin Engineering
-						--3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(3637, {	-- Gnome Engineering
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						3633,	-- Goblin Engineering
-						3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						--3637,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(3633, {	-- Goblin Engineering
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						--3633,	-- Goblin Engineering
-						3634,	-- Gnome Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-				}),
 				q(13621, {	-- Gorat's Vengeance
 					["qg"] = 33263,	-- Dinah Halfmoon
 					["sourceQuest"] = 13620,	-- To Dinah, at Once!
@@ -1561,7 +1516,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(903, {	-- Hunting the Huntress [CATA+] / Prowlers of the Barrens
 					["qg"] = 3338,	-- Sergra Darkthorn
-					["sourceQuest"] = 13995,	-- King of Centaur Mountain
 					-- #if AFTER CATA
 					["coord"] = { 50.0, 59.7, NORTHERN_BARRENS },
 					-- #else
@@ -2054,7 +2008,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
 						}),
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					}
 				}),
 				q(29111, {	-- Mor'shan Caravan Delivery
@@ -2967,12 +2921,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4964, {	-- The Completed Orb of Dar'Orahil
 					["qg"] = 6266,	-- Menara Voidrender
-					["altQuests"] = { 4975 },	-- The Completed Orb of Noh'Orahil
 					["sourceQuests"] = {
 						4976,	-- Returning the Cleansed Orb
 						4962,	-- Shard of a Felhound
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["lockCriteria"] = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -2987,12 +2941,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4975, {	-- The Completed Orb of Noh'Orahil
 					["qg"] = 6266,	-- Menara Voidrender
-					["altQuests"] = { 4964 },	-- The Completed Orb of Dar'Orahil
 					["sourceQuests"] = {
 						4976,	-- Returning the Cleansed Orb
 						4963,	-- Shard of an Infernal
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["lockCriteria"] = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -3716,7 +3670,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(7559, {	-- Runic Cane
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3750,10 +3704,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(4768, {	-- Adept's Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(4771, {	-- Harvest Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3779,10 +3733,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5183, {	-- Pulsating Hydra Heart
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(5182, {	-- Shiver Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -3801,10 +3755,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5111, {  -- Rathorian's Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5112, {  -- Ritual Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3857,7 +3811,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1355, {	-- Buckskin Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3979,7 +3933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5051),	-- Dig Rat
-						i(44977, {	-- Recipe: Dig Rat Stew
+						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 						}),
 					},
@@ -3992,10 +3946,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 31.8, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					}},
 					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Gray Shirt
-						i(16060),	-- Common White Shirt
 						i(4790, {	-- Inferno Cloak
 							["isLimited"] = true,
 						}),
@@ -4024,7 +3980,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4055,8 +4011,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.8, 38.2, THE_BARRENS },
 					-- #endif
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
 				}),
 				n(3658, {	-- Lizzarik <Weapon Dealer>
@@ -4131,7 +4087,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4144,8 +4100,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
@@ -4156,8 +4112,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5488),	-- Recipe: Crispy Lizard Tail
-						i(5486),	-- Recipe: Strider Stew
+						i(5488),	-- Recipe: Crispy Lizard Tail (RECIPE!)
+						i(5486),	-- Recipe: Strider Stew (RECIPE!)
 					},
 				}),
 				n(3488, {	-- Uthrok <Bowyer & Gunsmith>
@@ -4269,7 +4225,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(3735),	-- Recipe: Hot Lion Chops
+						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 					},
 				}),
 			}),
@@ -4311,10 +4267,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(97990, {	-- Raptorhide Boxing Gloves (still drops but has no purpose)
 					["timeline"] = { "added 5.3.0.16767" },
 				}),
-				i(6663, {	-- Recipe: Elixir of Giant Growth
+				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
-				i(6661, {	-- Recipe: Savory Deviate Delight
+				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 			}),

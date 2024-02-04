@@ -22,12 +22,16 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						i(193787),	-- Mammoth-Trainer's Cape
 						i(193788),	-- Molten Magma Mantle
 						i(193789),	-- Fural's Blazing Faulds
+						i(201263),	-- Obsidian Journal (QI!)
+						i(201264),	-- Neltharion's Notes (QI!)
+						i(201266),	-- Research Tome (QI!)
 					},
 				}),
 			}),
 			n(TREASURES, {
-				-- Don't have ObjectID etc.. atm
-				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
+				o(384317, {	-- Crumpled Schematic
+					i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
+				}),
 			}),
 			d(NormalPlus, {
 				e(2490, {	-- Chargath, Bane of Scales
@@ -49,6 +53,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						i(193785),	-- Forgestorm
 						i(193783),	-- Irontorch Igniter
 						i(193781),	-- Lavabearer Legwraps
+						i(194508),	-- Plans: Alvin the Anvil (RECIPE!)
 					},
 				}),
 				e(2494, {	-- Magmatusk

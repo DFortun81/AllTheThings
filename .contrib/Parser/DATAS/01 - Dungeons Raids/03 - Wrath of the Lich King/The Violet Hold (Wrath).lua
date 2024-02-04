@@ -14,22 +14,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1865, {	-- Lockdown!
-					crit(7137, { -- Xevozz
+					crit(7137, {	-- Xevozz
 						["_encounter"] = { 629, HEROIC_DUNGEON },
 					}),
-					crit(7138, { -- Levanthor
+					crit(7138, {	-- Levanthor
 						["_encounter"] = { 630, HEROIC_DUNGEON },
 					}),
-					crit(7139, { -- Ichoron
+					crit(7139, {	-- Ichoron
 						["_encounter"] = { 628, HEROIC_DUNGEON },
 					}),
-					crit(7140, { -- Zuramat the Obliterator
+					crit(7140, {	-- Zuramat the Obliterator
 						["_encounter"] = { 631, HEROIC_DUNGEON },
 					}),
-					crit(7141, { -- Erekem
+					crit(7141, {	-- Erekem
 						["_encounter"] = { 626, HEROIC_DUNGEON },
 					}),
-					crit(7142, { -- Moragg
+					crit(7142, {	-- Moragg
 						["_encounter"] = { 627, HEROIC_DUNGEON },
 					}),
 				}),
@@ -444,16 +444,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(46009),	-- Bindings of the Depths
 								i(46010),	-- Darkstone Ring
 							})),
+							applyclassicphase(WRATH_PHASE_FOUR, ach(19432, {	-- Defense Protocol Gamma: The Violet Hold
+
+							})),
 							-- #endif
 							ach(494),	-- Heroic: The Violet Hold
 							ach(5100, {	-- Heroic: The Violet Hold Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
 							ach(1816),	-- Defenseless
-							{	-- Cyanigosa slain (Champion of the Frozen Wastes)
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5613,		-- Cyanigosa slain
-							},
 							i(41791, {	-- Design: Subtle Autumn's Glow [CATA+] / Design: Thick Autumn's Glow [WRATH]
 								["timeline"] = { "removed 4.0.3" },
 							}),

@@ -4,7 +4,7 @@ name: Release
 
 # Controls when the action will run.
 on:
-  # Package alpha version at midnight UTC every Friday
+  # Package alpha version at 06:00 UTC every Thursday
   schedule:
     - cron: '0 6 * * THU'
   # Triggers the workflow on tag events
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # checkout@v2 doesn't pull tags by default now, which results in super long auto changelog, so pull all history incl. tags
           # alternative would be to use checkout@v1

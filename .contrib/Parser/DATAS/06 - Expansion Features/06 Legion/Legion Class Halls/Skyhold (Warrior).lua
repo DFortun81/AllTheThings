@@ -750,7 +750,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 829 },	-- Halls of Valor (Scenario Map)
 						["g"] = {
-							i(142232),	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
+							mount(229388),	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
 						},
 					})),
 					-- The End

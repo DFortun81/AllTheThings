@@ -3,6 +3,44 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(ACHIEVEMENTS, {
+		ach(6924, {	-- 100,000 Valor Points
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+		}),
+		ach(6927, {		-- Glory of the Pandaria Hero
+			["sym"] = {{"meta_achievement",
+				6925,	-- Pandaria Dungeon Hero
+				6460,	-- Hydrophobia
+				6475,	-- Cleaning Up
+				6671,	-- Seeds of Doubt
+				6420,	-- Hopocalypse Now!
+				6089,	-- Keep Rollin' Rollin' Rollin'
+				6400,	-- How Did He Get Up There?
+				6402,	-- Ling-Ting's Herbal Journey
+				6478,	-- Glintrok N' Roll
+				6736,	-- What Does This Button Do?
+				6713,	-- Quarrelsome Quilen Quintet
+				6477,	-- Respect
+				6472,	-- The Obvious Solution
+				6471,	-- Hate Leads to Suffering
+				6479,	-- Bomberman
+				6476,	-- Conscriptinator
+				6684,	-- Humane Society
+				6427,	-- Mosh Pit
+				6928,	-- Burning Man
+				6929,	-- And Stay Dead!
+				6531,	-- Attention to Detail
+				6394,	-- Rattle No More
+				6396,	-- Sanguinarian
+				6821,	-- School's Out Forever
+				6688,	-- Where's My Air Support?
+				6485,	-- Return to Sender
+				6822,	-- Run with the Wind
+				6715,	-- Polyformic Acid Science
+			}},
+			["groups"] = {
+				i(87769),	-- Crimson Cloud Serpent (MOUNT!)
+			},
+		}),
 		ach(6932, {	-- Glory of the Pandaria Raider
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -40,7 +78,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				i(87773),	-- Heavenly Crimson Cloud Serpent (MOUNT!)
 			},
 		}),
-		ach(6925, {		-- Pandaria Dungeon Hero
+		ach(6925, {	-- Pandaria Dungeon Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				6758,	-- Heroic: Temple of the Jade Serpent
@@ -61,58 +99,58 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
 			},
 		},{
-			crit(1, {	-- Commander Ri'mok
+			crit(19603, {	-- Commander Ri'mok
 				["_encounter"] = { 676, 2 },
 			}),
-			crit(2, {	-- Liu Flameheart
+			crit(19605, {	-- Liu Flameheart
 				["_encounter"] = { 658, 2 },
 			}),
-			crit(3, {	-- Gu Cloudstrike
+			crit(19606, {	-- Gu Cloudstrike
 				["_encounter"] = { 673, 2 },
 			}),
-			crit(4, {	-- Trial of the King
+			crit(19609, {	-- Trial of the King
 				["_encounter"] = { 708, 2 },
 			}),
-			crit(5, {	-- Vizier Jin'bak
+			crit(19608, {	-- Vizier Jin'bak
 				["_encounter"] = { 693, 2 },
 			}),
-			crit(6, {	-- Yan-Zhu the Uncasked
+			crit(19604, {	-- Yan-Zhu the Uncasked
 				["_encounter"] = { 670, 2 },
 			}),
 		})),
 		ach(13469, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Raiding with Leashes VI: Pets of Pandaria
 			i(167057),	-- Happiness (PET!)
-			crit(1, {	-- Stoneclaw
+			crit(44269, {	-- Stoneclaw
 				["provider"] = { "i", 167047 },
 			}),
-			crit(2, {	-- Wayward Spirit
+			crit(44270, {	-- Wayward Spirit
 				["provider"] = { "i", 167048 },
 			}),
-			crit(3, {	-- Comet
+			crit(44271, {	-- Comet
 				["provider"] = { "i", 167049 },
 			}),
-			crit(4, {	-- Baoh-Xi
+			crit(44272, {	-- Baoh-Xi
 				["provider"] = { "i", 167050 },
 			}),
-			crit(5, {	-- Azure Windseeker
+			crit(44273, {	-- Azure Windseeker
 				["provider"] = { "i", 167051 },
 			}),
-			crit(6, {	-- Spirit of the Spring
+			crit(44274, {	-- Spirit of the Spring
 				["provider"] = { "i", 167052 },
 			}),
-			crit(7, {	-- Kor'thik Swarmling
+			crit(44275, {	-- Kor'thik Swarmling
 				["provider"] = { "i", 167058 },
 			}),
-			crit(8, {	-- Amberglow Stinger
+			crit(44276, {	-- Amberglow Stinger
 				["provider"] = { "i", 167053 },
 			}),
-			crit(9, {	-- Spawn of Garalon
+			crit(44277, {	-- Spawn of Garalon
 				["provider"] = { "i", 167054 },
 			}),
-			crit(10, {	-- Living Amber
+			crit(44278, {	-- Living Amber
 				["provider"] = { "i", 167055 },
 			}),
-			crit(11, {	-- Ravenous Prideling
+			crit(44279, {	-- Ravenous Prideling
 				["provider"] = { "i", 167056 },
 			}),
 		})),

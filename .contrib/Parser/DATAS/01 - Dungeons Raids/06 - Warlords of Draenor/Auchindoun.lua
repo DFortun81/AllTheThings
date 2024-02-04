@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["mapID"] = 593,
 		["coord"] = { 46.27, 73.92, TALADOR },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(8),	-- Teron'gor
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
@@ -99,7 +91,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, NECK},
 					},
 					["g"] = {
-						ach(9023),	-- ...They All Fall Down
+						ach(9023, {	-- ...They All Fall Down
+							["crs"] = { 76283 },	-- Malefic Defender
+						}),
 						i(110046),	-- Hammer of the Soulbinder
 						i(110047),	-- Soulcutter Mageblade
 					},

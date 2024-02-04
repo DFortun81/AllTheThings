@@ -153,11 +153,39 @@ local HiddenAppearance = function(icon, t)
 	return header;
 end;
 
+-- Some adjustments to base functions to make things a bit easier
+local NoData = {}
+local CurrentItemID
+-- Only match groups without npcID, and adjust the ItemID when doing so
+local function AssignArtifactItemID(t)
+	if t.artifactID then
+		t.itemID = CurrentItemID
+		-- temp item ID for exact sourceID lookup during parsing
+		t._sitemID = CurrentItemID + (t.isOffHand and 0.0001 or 0) + (t.artifactID / 1000)
+		-- print("set artifact itemID",t.itemID)
+	end
+end
+
+local i = function(id, t)
+	CurrentItemID = id
+	t = i(id, t)
+	-- wrap all nested artifacts with the raw itemID of themselves modified by artifactID/offhand
+	t = bubbleDownFiltered(NoData, AssignArtifactItemID, t);
+	return t
+end
+
 root(ROOTS.ExpansionFeatures,
 	tier(LEGION_TIER, {
 		n(ARTIFACTS, {
 			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
 			["groups"] = {
+				ach(11143, {		-- Honoring the Past
+					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+					["_noautomation"] = true,	-- It has 3 hidden achievements as criteria
+				}),
+				ach(10853, {		-- Part of History
+					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+				}),
 				cl(WARRIOR, {
 					i(128910, {	-- Strom'kar, the Warbreaker
 						BaseAppearance("Interface\\Icons\\inv_sword_2h_artifactarathor_d_01", {
@@ -2565,6 +2593,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(45915),	-- Triggers when you do any of "The Folly of Levia Laurence" quests
 		q(47234),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for mage
 		q(46790),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for rogue
+		q(48546),	-- Unlocking alternate Underlight Angler appearances from 'Fisherfriend of the Isles'
 	}),
 });
 -- Fill certain Artifacts into the Arch Achievement which is needed to earn them
@@ -2578,52 +2607,3 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		}),
 	}),
 })));
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		n(ARTIFACTS, {
-			n(WEAPONS, {
-				i(137661),	-- Truthguard
-				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
-				i(134562),	-- Odyns Fury
-				i(139439),	-- The Highkeeper's Ward
-				i(132474),	-- Scythe of Elune
-				i(132475),	-- Scythe of Elune
-				i(132476),	-- Scythe of Elune
-				i(132477),	-- Scythe of Elune
-				i(132478),	-- Scythe of Elune
-				i(132479),	-- G'Hanir, the Mother Tree
-				i(132480),	-- G'Hanir, the Mother Tree
-				i(132481),	-- G'Hanir, the Mother Tree
-				i(132482),	-- G'Hanir, the Mother Tree
-				i(132483),	-- G'Hanir, the Mother Tree
-				i(118180),	-- Aluneth
-				i(129752),	-- Aluneth
-				i(129753),	-- Aluneth
-				i(129754),	-- Aluneth
-				i(129755),	-- Aluneth
-				i(129967),	-- Sheilun
-				i(129968),	-- Sheilun
-				i(129969),	-- Sheilun
-				i(129970),	-- Sheilun
-				i(136858),	-- Darkened T'uure
-				i(139275),	-- Aluneth
-				i(139891),	-- Aluneth
-				i(137660),	-- The Silver Hand
-				i(137581),	-- Test Artifact 1
-				i(139621),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
-				i(137582),	-- Ashbringer
-				i(131738),	-- Ashbringer
-				i(131739),	-- Ashbringer
-				i(131741),	-- Ashbringer
-				i(131742),	-- Ashbringer
-				i(122747),	-- Ashbringer
-				i(129738),	-- Verus
-				i(129735),	-- Verus
-				i(129736),	-- Verus
-				i(129737),	-- Verus
-				i(129899),	-- The Eagle Spear
-				i(128824),	-- Tome of the Silver Hand
-			}),
-		}),
-	}),
-});

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "added 5.1.0.16139" } }, {
+root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
 	cl(WARLOCK, {
 		["description"] = "The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",
 		["g"] = bubbleDown({ ["classes"] = { WARLOCK }, ["lvl"] = lvlsquish(90, 35, 35) },{
@@ -95,7 +95,9 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 						497,	-- The Black Temple (Temple Summit)
 					},
 					["groups"] = {
-						r(101508),	-- The Codex of Xerrath (CI!)
+						spell(101508),	-- The Codex of Xerrath (CI!)
+						mount(148972),	-- Dreadsteed (MOUNT!)
+						mount(148970),	-- Felsteed (MOUNT!)
 					},
 				}),
 				q(32340, {	-- Plunder the Black Temple
@@ -110,10 +112,15 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 						496,	-- The Black Temple (Chamber of Command)
 						497,	-- The Black Temple (Temple Summit)
 					},
-					["g"] = {
-						ach(9016, bubbleDownSelf({ ["timeline"] = { "added 5.1.0.16139", "removed 6.0.1" } }, { -- Breaker of the Black Harvest
-							title(256),	-- of the Black Harvest
-						})),
+					["groups"] = {
+						ach(9016, {		-- Breaker of the Black Harvest
+							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+							["groups"] = {
+								title(256, {	-- <Name> of the Black Harvest
+									["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+								}),
+							},
+						}),
 					},
 				}),
 			}),

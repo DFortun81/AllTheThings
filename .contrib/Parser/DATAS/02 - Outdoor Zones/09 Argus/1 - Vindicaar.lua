@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						}),
 					},
 				}),
-				q(48976, {	-- Supplies From the Argussian Reach
+				q(48976, bubbleDownSelf({ ["minReputation"] = { FACTION_ARGUSSIAN_REACH, EXALTED }}, {	-- Supplies From the Argussian Reach
 					["provider"] = { "n", 127151 },	-- Toraan the Revered
 					["repeatable"] = true,
 					["g"] = {
@@ -146,8 +146,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							i(153127),	-- Cube of Discovery
 						}),
 					},
-				}),
-				q(48977, {	-- Supplies From the Army of the Light
+				})),
+				q(48977, bubbleDownSelf({ ["minReputation"] = { FACTION_ARMY_OF_THE_LIGHT, EXALTED }}, {	-- Supplies From the Army of the Light
 					["repeatable"] = true,
 					["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 					["g"] = {
@@ -158,21 +158,18 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							i(153182),	-- Holy Lightsphere (TOY!)
 						}),
 					},
-				}),
+				})),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(1994, {	-- Vindicaar, Antoran Wastes
-					["description"] = "Vindicaar, Antoran Wastes",
 					["creatureID"] = 125514,	-- Navigation Console
 					["coord"] = { 32.3, 56.4, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 				}),
 				fp(1944, {	-- Vindicaar, Krokuun
-					["description"] = "Vindicaar, Krokuun",
 					["creatureID"] = 123139,	-- Navigation Console
 					["coord"] = { 42.5, 22.8, THE_VINDICAAR_KROKUUN_UPPER },
 				}),
 				fp(1977, {	-- Vindicaar, Eredath
-					["description"] = "Vindicaar, Eredath",
 					["creatureID"] = 125461,	-- Navigation Console
 					["coord"] = { 62.7, 49.1, THE_VINDICAAR_EREDATH_UPPER },
 				}),
@@ -226,16 +223,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
 					["provider"] = { "n", 128722 },	-- Prophet Velen
 					["coord"] = { 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
-				}),
-				q(48078, {	-- Counterbalancing
-					["requireSkill"] = LEATHERWORKING,
-					["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-					["provider"] = { "n", 125349 },	-- Enstraa
-					["coord"] = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
-					["g"] = {
-						i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1] (RECIPE!)
-						i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
-					},
 				}),
 				q(49143, {	-- Essence of the Light Mother
 					["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
@@ -445,6 +432,32 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				}),
 			}),
 			n(VENDORS, {
+				n(129674, {	-- Maras <Primal Sargerite Trader>
+					["coords"] = {
+						{ 57.0, 66.0, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
+						{ 42.0, 58.6, THE_VINDICAAR_EREDATH_LOWER },
+						{ 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
+					},
+					["groups"] = appendAllGroups(
+						sharedData({
+							["cost"] = {{"i",151568,1}},	-- Primal Sargerite
+						},{
+							i(151565),	-- Astral Glory
+							i(151564),	-- Empyrium
+							i(151566),	-- Fiendish Leather
+							i(151567),	-- Lightweave Cloth
+						}),
+						sharedData({
+							["cost"] = {{"i",151568,10}},	-- Primal Sargerite
+						},{
+							i(151718),	-- Argulite
+							i(151720),	-- Chemirine
+							i(151722),	-- Florid Malachite
+							i(151721),	-- Hesselian
+							i(151579),	-- Labradorite
+							i(151719),	-- Lightsphene
+						})),
+				}),
 				n(127120, {	-- Vindicator Jaelaana <Army of the Light Emissary>
 					["coords"] = {
 						{ 44.8, 75.0, THE_VINDICAAR_KROKUUN_UPPER },
@@ -577,14 +590,17 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							["sym"] = {
 								{"sub", "legion_relinquished", {"INVTYPE_FINGER"} },	-- Rings Only!
 								{"select", "mapID", BROKEN_ISLES},
-								{"pop"},	-- Discard the Map Headers and acquire all of their children.
-								{"where", "headerID", WORLD_QUESTS },
-								{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
-								{"where", "headerID", FINGER},	-- Select only the Finger Header
+								{"find", "headerID", FINGER},	-- Select only the Finger Headers
 								{"pop"},	-- Discard the item set Headers and acquire all of their children.
 							},
 						}),
 						i(153216, {	-- Relinquished Trinket
+							["groups"] = {
+								-- This is the only source of this item (probably)
+								i(136736),	-- Badge of the Wardens
+								i(134322),	-- Drained Mana Crystal
+								i(136749),	-- Mark of the Sentinel
+							},
 							["sym"] = {
 								{"sub", "legion_relinquished", {"INVTYPE_TRINKET"} },	-- Trinkets Only!
 							},

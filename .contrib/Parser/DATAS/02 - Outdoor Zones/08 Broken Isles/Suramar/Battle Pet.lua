@@ -15,9 +15,16 @@ root(ROOTS.Zones, {
 					1591,	-- Violet Firefly (PET!)
 				}},
 				["g"] = {
-					pet(1809),	-- Crystalline Broodling (PET!)
-					pet(1810),	-- Thornclaw Broodling (PET!)
-					pet(1807),	-- Vicious Broodling (PET!)
+					pet(1809, {	-- Crystalline Broodling (PET!)
+						["description"] = "Found around Falanaar.",
+						["coord"] = { 21.0, 41.0, SURAMAR },
+					}),
+					pet(1810, {	-- Thornclaw Broodling (PET!)
+						["description"] = "Found in Felsoul Hold."
+					}),
+					pet(1807, {	-- Vicious Broodling (PET!)
+						["description"] = "Found in Felsoul Hold. May be elusive, shares spawn with Thornclaw Broodling.",
+					}),
 				},
 			})),
 		}),

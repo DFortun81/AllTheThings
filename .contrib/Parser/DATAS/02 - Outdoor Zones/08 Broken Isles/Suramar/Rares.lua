@@ -163,7 +163,7 @@ root(ROOTS.Zones, {
 					["questID"] = 43358,
 					["coord"] = { 41.0, 32.7, SURAMAR },
 					["g"] = {
-						i(133816),	-- Recipe: Leybeque Ribs
+						i(133816),	-- Recipe: Leybeque Ribs [Rank 1] (RECIPE!)
 						i(121739),	-- Felinus Manus
 					},
 				}),

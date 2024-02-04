@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4909, {	-- Blasted Lands Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Razelikh
 							["sourceQuests"] = {
@@ -34,6 +35,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(766, {	-- Explore Blasted Lands
 					-- #if BEFORE WRATH
@@ -909,6 +911,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(111660, {	-- Iron Starlette (PET!)
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
+						ach(9618, {		-- The Iron Invasion
+							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+							["g"] = {
+								title(289, {		-- <Name> of the Iron Vanguard
+									["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+								}),
+							},
+						}),
 					},
 				}),
 				q(2993, {	-- Return to the Hinterlands
@@ -1018,14 +1028,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7583, {	-- Suppression
 					["qg"] = 14463,	-- Daio the Decrepit
-					["sourceQuest"] = 7582,	-- The Prison's Casing
+					["sourceQuests"] = {
+						7581,	-- The Prison's Bindings
+						7582,	-- The Prison's Casing
+					},
 					["coord"] = { 34, 50.2, BLASTED_LANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Imprisoned Doomguard
-							["provider"] = { "i", 18605 },	-- Imprisoned Doomguard
+							["providers"] = {
+								{ "i",  18605 },	-- Imprisoned Doomguard
+								{ "o", 179644 },	-- Imprisoned Doomguard
+							},
 							["cost"] = { { "i", 18601, 1 } },	-- Glowing Crystal Prison
 							["cr"] = 12396,	-- Doomguard Commander
 						}),
@@ -1341,7 +1357,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7582, {	-- The Prison's Casing
 					["qg"] = 14463,	-- Daio the Decrepit
-					["sourceQuest"] = 7581,	-- The Prison's Bindings
 					["coord"] = { 34, 50.2, BLASTED_LANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { WINTERSPRING },
@@ -1523,6 +1538,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(111660, {	-- Iron Starlette (PET!)
 							["timeline"] = { "added 6.0.1.18505" },
+						}),
+						ach(9618, {		-- The Iron Invasion
+							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+							["g"] = {
+								title(289, {		-- <Name> of the Iron Vanguard
+									["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+								}),
+							},
 						}),
 					},
 				}),
@@ -1797,6 +1820,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
 				}),
 			}),
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				--o(xxxxx, {	-- Carved Eye
+					["coord"] = { 55.6, 53.1, BLASTED_LANDS },
+					["g"] = {
+						i(212983),	-- Grimoire of the Blasted Observer (CI!)
+					},
+				--}),
+			})),
 			n(VENDORS, {
 				-- #if AFTER TBC
 				n(3546, {	-- Bernie Heisten <Food & Drink>
@@ -1822,7 +1853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9300, {	-- Recipe: Elixir of Demonslaying
+						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1933,6 +1964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "A rare zone drop from any mob in the zone.",
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
+					-- added to burning steps in 10.1.5
 					["timeline"] = { "removed 4.0.3" },
 					-- #if AFTER TBC
 					["crs"] = {

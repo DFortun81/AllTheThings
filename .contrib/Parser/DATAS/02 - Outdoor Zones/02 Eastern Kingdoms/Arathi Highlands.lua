@@ -12,35 +12,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4896, {	-- Arathi Highlands Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
-						crit(1, {	-- Faldir's Cove
+						crit(38274, {	-- Faldir's Cove
 							["sourceQuest"] = 26628,	-- Death From Below
 						}),
-						crit(2, {	-- Refuge Pointe (A)
+						crit(38275, {	-- Refuge Pointe (A)
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = {
+								26117,	-- For Southshore
+							},
+						}),
+						crit(38276, {	-- Refuge Pointe (A)
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								26038,	-- Attack on the Tower
-								26117,	-- For Southshore
-								26095,	-- Stromgarde Badges
 							},
 						}),
-						crit(2, {	-- Galen's Fall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26081,	-- Alina's Reward
-								26029,	-- The Real Threat
-								26025,	-- The Traitor Orc (TODO: verify if needed)
-								26428,	-- To Steal From Thieves (TODO: verify if needed)
-							},
-						}),
-						crit(3, {	-- Myzrael's Tale (A)
+						crit(38277, {	-- Myzrael's Tale (A)
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 26049,	-- The Princess Unleashed (A)
 						}),
-						crit(3, {	-- Hammerfall (H)
+						crit(38270, {	-- Galen's Fall (H)
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26081,	-- Alina's Reward
+							},
+						}),
+						crit(38271, {	-- Galen's Fall (H)
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26029,	-- The Real Threat
+							},
+						}),
+						crit(38272, {	-- Hammerfall (H)
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								26912,	-- The Princess Unleashed (H)
+							},
+						}),
+						crit(38273, {	-- Hammerfall (H)
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								26108,	-- Guile of the Raptor
-								26912,	-- The Princess Unleashed (H)
 							},
 						}),
 					},
@@ -133,6 +145,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.8, 46.2, ARATHI_HIGHLANDS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
+						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_ELEMENTAL,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -450,24 +471,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(5146, {	-- Elemental Leatherworking (H)
-					["qg"] = 7869,	-- Brumn Winterhoof
-					["altQuests"] = {
-						5145,	-- Dragonscale Leatherworking
-						5148,	-- Tribal Leatherworking
-					},
-					["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 7081, 2 },	-- Breath of Wind
-						{ "i", 7075, 2 },	-- Core of Earth
-						{ "i", 7079, 2 },	-- Globe of Water
-						{ "i", 7077, 2 },	-- Heart of Fire
-					},
-					["lvl"] = 40,
-				}),
 				q(26022, {	-- First Blood
 					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 28572,	-- Warchief's Command: Arathi Highlands!
@@ -781,6 +784,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 652,	-- Breaking the Keystone
 					["coord"] = { 36.1, 57.9, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 30,
 				},
 				{	-- Myzrael's Tale [A & H]
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
@@ -1055,6 +1059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(637, {	-- Sully Balloo's Letter
 					["providers"] = {
 						{ "i", 4433 },	-- Waterlogged Envelope
+						{ "o", 2656 },	-- Waterlogged Letter
 						{ "i", 4432 },	-- Sully Balloo's Letter
 					},
 					["coord"] = { 44.3, 92.9, ARATHI_HIGHLANDS },
@@ -1659,10 +1664,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
+							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", ADDED_10_1_7 },	-- Att disc 07.09.2023
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
+							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", ADDED_10_1_7 },	-- Att disc 05.09.2023
 						}),
 					},
 				}),
@@ -1678,7 +1683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5256, {	-- Kovork's Rattle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1704,10 +1709,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5257, {	-- Dark Hooded Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(2622, {	-- Nimar's Tribal Headdress
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1729,6 +1734,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(1404, {	-- Tidal Charm
 							["timeline"] = { "removed 4.0.3" },
+							-- #if AFTER 10.1.7
+							["isBounty"] = true,
+							-- #endif
 						}),
 					},
 				}),
@@ -1764,10 +1772,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5180, {	-- Necklace of Harmony
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5181, {	-- Vibrant Silk Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1829,6 +1837,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4833, {	-- Glorious Shoulders
 							["isLimited"] = true,
 						}),
+						i(3429, {	-- Guardsman Belt
+							["isLimited"] = true,
+						}),
 						i(4832, {	-- Mystic Sarong
 							["isLimited"] = true,
 						}),
@@ -1848,6 +1859,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(16084, {	-- Expert First Aid - Under Wraps
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 						i(16112, {	-- Manual: Heavy Silk Bandage
@@ -1867,7 +1886,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1888,7 +1907,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #endif
-						i(12228),	-- Recipe: Roast Raptor
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
@@ -1936,8 +1955,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(9555, {	-- Mu'uta <Bowyer>
@@ -1961,7 +1980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4609),	-- Recipe: Barbecued Buzzard Wing
+						i(4609),	-- Recipe: Barbecued Buzzard Wing (RECIPE!)
 					},
 				}),
 				n(2819, {	-- Tunkk <Leatherworking Supplies>
@@ -1989,11 +2008,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(5624, {	-- Circlet of the Order
-					["cr"] = 2584,	-- Stromgarde Defender
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["cr"] = 2584,	-- Stromgarde Defender	-- CRIEVE NOTE: Check if the undead one can drop this too.
+					["coords"] = {
+						{ 26.0, 58.0, ARATHI_HIGHLANDS },
+						{ 22.0, 62.2, ARATHI_HIGHLANDS },
+					},
 				}),
 				i(4481, {	-- Cresting Charm
 					["crs"] = {
@@ -2021,7 +2046,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2564,	-- Boulderfist Enforcer
 						2562,	-- Boulderfist Ogre
 					},
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 27.4, 46.8, ARATHI_HIGHLANDS },
+						{ 26.2, 46.2, ARATHI_HIGHLANDS },
+					},
 				}),
 				i(2623, {	-- Holy Diadem
 					["crs"] = {
@@ -2031,9 +2060,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {
@@ -2056,6 +2087,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.6, 84.2, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["collectible"] = false,
+					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 25.4, 35.4, ARATHI_HIGHLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 17.8, 33.4, ARATHI_HIGHLANDS },
+						{ 19.8, 46.8, ARATHI_HIGHLANDS },
+					},
+					-- #endif
+					--]]
 				}),
 				i(3345, {	-- Silk Wizard Hat
 					["cr"] = 2591,	-- Syndicate Magus

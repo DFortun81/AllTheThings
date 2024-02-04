@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 47.9, 48.7, AZSUNA },
 				["provider"] = { "n", 88923 },	-- Sternfathom
 				["g"] = {
-					i(133828),	-- Recipe: Fighter Chow (Rank 1)
+					i(133828),	-- Recipe: Fighter Chow [Rank 1] (RECIPE!)
 				},
 			}),
 			q(37486, {	-- Nar'thalas Still Suffers
@@ -644,7 +644,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 47.0, 41.3, AZSUNA },
 				["provider"] = { "n", 89341 },	-- Magister Garuhod
 				["g"] = {
-					i(133814),	-- Recipe: Faronaar Fizz (Rank 1)
+					i(133814),	-- Recipe: Faronaar Fizz [Rank 1] (RECIPE!)
 				},
 			}),
 			q(37861, {	-- The Nightborne Prince
@@ -811,14 +811,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 		}),
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		n(RELICS, {
-			i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
-		}),
-	}),
-});
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {

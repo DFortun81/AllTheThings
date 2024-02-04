@@ -1939,6 +1939,296 @@
 2826@@@+$i Block
 3726@@@+$i Haste
 1.14.3.46575
+1.14.4.50252
+250@@@Weapon Damage +1 
+1.15.0.52124
+6708@@@Deadly Brew
+6709@@@Between the Eyes
+6710@@@Just a Flesh Wound
+6711@@@Internal
+6712@@@Internal
+6713@@@Internal
+6714@@@Internal
+6715@@@Mutilate
+6716@@@Quick Draw
+6717@@@Internal
+6718@@@Blade Dance
+6719@@@Internal
+6720@@@Shadowstrike
+6723@@@Internal
+6724@@@Internal
+6725@@@Internal
+6726@@@Internal
+6727@@@Internal
+6728@@@Arcane Blast
+6729@@@Burnout
+6730@@@Ice Lance
+6731@@@Rewind Time
+6732@@@Internal
+6733@@@Internal
+6734@@@Internal
+6735@@@Fingers of Frost
+6736@@@Regeneration
+6737@@@Living Flame
+6740@@@Prayer of Mending
+6741@@@Shadow Word: Death
+6742@@@Internal
+6743@@@Internal
+6744@@@Homunculi
+6745@@@Internal
+6746@@@Shared Pain
+6747@@@Internal
+6748@@@Internal
+6749@@@Internal
+6750@@@Circle of Healing
+6751@@@Internal
+6752@@@Penance
+6753@@@Internal
+6754@@@Internal
+6785@@@Internal
+6787@@@Envenom
+6788@@@Internal
+6789@@@Internal
+6790@@@Victory Rush
+6791@@@Internal
+6792@@@Internal
+6793@@@Flagellation
+6794@@@Internal
+6795@@@Internal
+6796@@@Endless Rage
+6797@@@Internal
+6798@@@Internal
+6799@@@Blood Frenzy
+6800@@@Devastate
+6801@@@Furious Thunder
+6802@@@Internal
+6803@@@Haunt
+6804@@@Internal
+6805@@@Chaos Bolt
+6806@@@Internal
+6807@@@Internal
+6808@@@Soul Siphon
+6809@@@Internal
+6810@@@Internal
+6811@@@Master Channeler
+6812@@@Internal
+6813@@@Internal
+6814@@@Shadow Bolt Volley
+6815@@@Lake of Fire
+6816@@@Metamorphosis
+6817@@@Internal
+6832@@@Internal
+6833@@@Internal
+6834@@@Internal
+6835@@@Internal
+6843@@@Beacon of Light
+6844@@@Hand of Reckoning
+6845@@@Crusader Strike
+6846@@@Internal
+6847@@@Internal
+6848@@@Internal
+6849@@@Internal
+6850@@@Divine Storm
+6851@@@Seal of Martyrdom
+6852@@@Internal
+6853@@@Internal
+6854@@@Avenger's Shield
+6855@@@Internal
+6856@@@Divine Sacrifice
+6857@@@Inspiration Exemplar
+6858@@@Wild Strikes
+6859@@@Internal
+6860@@@Wild Growth
+6861@@@Internal
+6862@@@Internal
+6863@@@Savage Roar
+6864@@@Internal
+6865@@@Lifebloom
+6866@@@Internal
+6867@@@Nature's Fury
+6868@@@Mangle
+6869@@@Internal
+6870@@@Internal
+6871@@@Internal
+6872@@@Fury of Stormrage
+6873@@@Internal
+6874@@@Dual Wield Specialization
+6875@@@Water Shield
+6876@@@Shield Mastery
+6877@@@Ancestral Guidance
+6878@@@Overload
+6879@@@Internal
+6880@@@Earth Shield
+6881@@@Internal
+6882@@@Internal
+6883@@@Lava Burst
+6884@@@Lava Lash
+6885@@@Internal
+6886@@@Way of Earth
+6887@@@Internal
+6888@@@Internal
+6889@@@Master Marksman
+6890@@@Internal
+6891@@@Aspect of the Lion
+6892@@@Internal
+6893@@@Beast Mastery
+6894@@@Internal
+6895@@@Internal
+6896@@@Internal
+6897@@@Internal
+6898@@@Kill Command
+6899@@@Chimera Shot
+6900@@@Explosive Shot
+6901@@@Lone Wolf
+6902@@@Internal
+6910@@@Earthliving Weapon
+6911@@@Internal
+6912@@@Internal
+6913@@@Internal
+6914@@@Internal
+6915@@@Internal
+6916@@@Internal
+6917@@@Internal
+6918@@@Internal
+6919@@@Internal
+6920@@@Internal
+6921@@@Internal
+6922@@@Enlightenment
+6923@@@Living Bomb
+6924@@@Internal
+6925@@@Internal
+6926@@@Internal
+6927@@@Mass Regeneration
+6928@@@Internal
+6929@@@Internal
+6930@@@Internal
+6931@@@Internal
+6932@@@Serendipity
+6933@@@Internal
+6934@@@Mind Sear
+6935@@@Internal
+6936@@@Strength of Soul
+6937@@@Internal
+6938@@@Internal
+6939@@@Internal
+6940@@@Internal
+6941@@@Internal
+6942@@@Internal
+6943@@@Internal
+6944@@@Shield Mastery
+6945@@@Focused Rage
+6946@@@Internal
+6947@@@Internal
+6948@@@Single-Minded Fury
+6949@@@Internal
+6950@@@Everlasting Affliction
+6951@@@Internal
+6952@@@Demonic Tactics
+6953@@@Internal
+6954@@@Internal
+6955@@@Incinerate
+6956@@@Internal
+6957@@@Internal
+6958@@@Internal
+6959@@@Internal
+6960@@@Internal
+6961@@@Internal
+6962@@@Internal
+6963@@@Internal
+6964@@@Internal
+6965@@@Exorcist
+6966@@@Internal
+6967@@@Internal
+6968@@@Internal
+6969@@@Internal
+6970@@@Internal
+6971@@@Skull Bash
+6972@@@Survival of the Fittest
+6973@@@Lacerate
+6974@@@Internal
+6975@@@Living Seed
+6976@@@Sunfire
+6977@@@Internal
+6978@@@Internal
+6979@@@Internal
+6980@@@Internal
+6981@@@Internal
+6982@@@Internal
+6983@@@Internal
+6984@@@Healing Rain
+6985@@@Internal
+6986@@@Internal
+6987@@@Internal
+6988@@@Internal
+6989@@@Internal
+6990@@@Internal
+6991@@@Internal
+6992@@@Internal
+6993@@@Internal
+6994@@@Internal
+6995@@@Sniper Training
+6996@@@Internal
+6997@@@Internal
+6998@@@Internal
+6999@@@Internal
+7000@@@Internal
+7004@@@Internal
+7005@@@+7 Spirit
+7006@@@+7 Stamina
+7007@@@+18 to all attributes
+7008@@@-15 Fire Resistance
+7011@@@Starsurge
+7012@@@Internal
+7013@@@Internal
+7014@@@Saber Slash
+7015@@@Shiv
+7016@@@Main Gauche
+7017@@@Slaughter from the Shadows
+7018@@@Internal
+7019@@@Internal
+7020@@@Icy Veins
+7021@@@Arcane Surge
+7022@@@Internal
+7023@@@Power Word: Barrier
+7024@@@Twisted Faith
+7025@@@Void Plague
+7026@@@Internal
+7027@@@Internal
+7028@@@Internal
+7029@@@Internal
+7030@@@Shamanistic Rage
+7031@@@Molten Blast
+7033@@@Quick Strike
+7034@@@Raging Blow
+7035@@@Warbringer
+7036@@@Consumed by Rage
+7037@@@Frenzied Assault
+7038@@@Demonic Pact
+7039@@@Demonic Grace
+7040@@@Horn of Lordaeron
+7041@@@Aegis
+7042@@@Rebuke
+7043@@@Carve
+7044@@@Cobra Strikes
+7045@@@Serpent Spread
+7046@@@Flanking Strike
+7047@@@Internal
+7048@@@Internal
+7049@@@Internal
+7050@@@Internal
+7051@@@Internal
+7053@@@Internal
+7054@@@Internal
+7056@@@Internal
+7057@@@Internal
+7058@@@Internal
+7059@@@Internal
+7098@@@Hit +2%
+7099@@@Blackfathom Mana Oil
+1.15.0.52302
+7141@@@Wild Strikes
+1.15.0.52610
+6891@@@Heart of the Lion
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
@@ -11190,3 +11480,35 @@
 6903@@@10.1.5 FX Testing - Enchant Visualt - Bronze Infinite
 10.1.7.50442
 7010@@@+$k1 Intellect
+10.2.0.51239
+6907@@@Illusory Adornment: Dreams
+6908@@@Illusory Adornment: Dreams
+6909@@@Illusory Adornment: Dreams
+7001@@@Dreaming Devotion |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7002@@@Dreaming Devotion |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7003@@@Dreaming Devotion |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7009@@@10.2.0 FX Testing - Enchant Visualt - Emerald Dream
+7032@@@Verdant Crush
+7052@@@|cnITEM_EPIC_COLOR:Incandescent Essence|r
+10.2.5.52206
+7055@@@+Haste
+7060@@@+Critical Strike
+7061@@@+Mastery
+7062@@@+Leech
+7063@@@+Speed
+7064@@@+Health Regen
+7072@@@+Critical Strike & +Haste
+7073@@@+Critical Strike & +Health Regen
+7074@@@+Critical Strike & +Leech
+7075@@@+Haste & +Health Regen
+7076@@@+Haste & +Leech
+7077@@@+Health Regen & +Leech
+7078@@@+Health Regen & +Mastery
+7079@@@+Health Regen & +Speed
+7080@@@+Leech & +Mastery
+7081@@@+Leech & +Speed
+7082@@@+Mastery & +Critical Strike
+7083@@@+Mastery & +Haste
+7084@@@+Mastery & +Speed
+7085@@@+Speed & +Critical Strike
+7086@@@+Speed & +Haste

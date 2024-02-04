@@ -96,6 +96,7 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 		}),
 		filter(NECK_F, {
 			i(141588),	-- Talisman of Jaimil Lightheart
+			i(141587),	-- Queen Yh'saerie's Pendant
 		}),
 		filter(FINGER_F, {
 			i(141581),	-- Demar's Band of Amore
@@ -111,7 +112,11 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 			i(139103),	-- An'she's Band
 		}),
 		filter(TRINKET_F, {
+			i(134146),	-- Brulstone Idol
 			i(141584),	-- Eyasu's Mulligan
+			i(134379),	-- Infernal Bloodstone Shard
+			i(134366),	-- Legionnaire's Mandate
+			i(141586),	-- Marfisi's Giant Censer
 			i(141585),	-- Six-feater Fan
 		}),
 	}),
@@ -140,6 +145,9 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 		i(121378),	-- Saga of Elandrul
 		i(121375),	-- Voo's Juicer
 	}),
+	filter(REAGENTS, {
+		i(151567),	-- Lightweave Cloth
+	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {
 			i(142119),	-- Recipe: Potion of Prolonged Power [Rank 1] (RECIPE!)
@@ -161,7 +169,9 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 			i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 3] (RECIPE!)
 			i(128610),	-- Formula: Enchant Neck - Mark of the Claw [Rank 3] (RECIPE!)
 			i(141914, {	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 2] (RECIPE!)
-				["description"] = "Drops from bears in any Broken Isles zone.",
+				["crs"] = 93095,	-- Voracious Bear
+				["coord"] = { 71.0, 51.9, STORMHEIM },
+				["description"] = "Drops from bears in any Broken Isles zone. Best farmed in Stormheim from Voracious Bears.",
 			}),
 			i(141915, {	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 2] (RECIPE!)
 				["description"] = "Drops from PVP world quest mobs in any Broken Isles zone.",

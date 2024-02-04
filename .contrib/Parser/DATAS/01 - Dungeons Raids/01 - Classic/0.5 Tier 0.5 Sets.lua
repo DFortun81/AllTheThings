@@ -1744,7 +1744,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, bubbleDownFiltered({ ["timeline"] = { "
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						i(22057),	-- Brazier of Invocation
+						i(22057, {	-- Brazier of Invocation
+							-- #if AFTER CATA
+							["description"] = "If you did complete the quest before the Cataclysm, you can request a new Brazier from Bodley.\nYou must have the Extra-Dimensional Ghost Revealer In order to see him outside UBRS Entrance in Black Rock Mountain.\nMux Manascrambler in Gadgetzan in Tanaris can assist you in getting the Ghost Revealer.",
+							-- #endif
+						}),
 						i(22344),	-- Brazier of Invocation: User's Manual
 					},
 				}),

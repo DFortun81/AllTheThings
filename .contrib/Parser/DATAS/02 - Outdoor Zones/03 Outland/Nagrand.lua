@@ -63,17 +63,6 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(26, {	-- Narrok
-								["coord"] = { 61.0, 49.4, NAGRAND },
-								["cr"] = 66552,	-- Narrok <Master Pet Tamer>
-							}),
-						},
-					})),
 					achWithRep(902, 933, {	-- Chief Exalted Officer
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
@@ -147,54 +136,54 @@ root(ROOTS.Zones, {
 						["rank"] = 87,
 						-- #endif
 						-- #else
-						["groups"] = {
-							crit(1, {	-- Birth of a Warchief
-								["sourceQuest"] = 10172,	-- There Is No Hope
-							}),
-							crit(2,	{	-- The Ring of Blood
-								["sourceQuest"] = 9977,	-- The Ring of Blood: The Final Challenge
-							}),
-							crit(3,	{	-- Throne of the Elements
-								["sourceQuests"] = {
-									9853,	-- Gurok the Usurper
-									9815,	-- Muck Diving
-									9862,	-- Murkblood Corrupters
-									9810,	-- The Spirit Polluted
-								},
-							}),
-							crit(4, {	-- Lantresor of the Blade
-								["sourceQuests"] = {
-									9907,	-- An Audacious Advance
-									9916,	-- Bleeding Hollow Supply Crates
-									9934,	-- Message to Garadar
-								},
-							}),
-							crit(5, {	-- The Murkblood
-								["sourceQuests"] = {
-									9946,	-- Cho'war the Pillager
-									9948,	-- Finding the Survivors
-									9866,	-- He Will Walk The Earth...
-									9867,	-- Murkblood Leaders..
-									9868,	-- The Totem of Kar'dash
-									9863,	-- Vile Idolatry
-								},
-							}),
-							crit(6,	{	-- Threats to Nagrand
-								["sourceQuests"] = {
-									10011,	-- Forge Camp: Annihilated
-									9937,	-- WANTED: Durn the Hungerer
-								},
-							}),
-							crit(7,	{	-- The Ultimate Bloodsport
-								["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-							}),
-							crit(8,	{	-- Encountering the Ethereals
-								["sourceQuests"] = {
-									9900,	-- Gava'xi
-									9925,	-- Matters of Security
-								},
-							}),
-						},
+						-- ["groups"] = {
+						-- 	crit(1, {	-- Birth of a Warchief
+						-- 		["sourceQuest"] = 10172,	-- There Is No Hope
+						-- 	}),
+						-- 	crit(2,	{	-- The Ring of Blood
+						-- 		["sourceQuest"] = 9977,	-- The Ring of Blood: The Final Challenge
+						-- 	}),
+						-- 	crit(3,	{	-- Throne of the Elements
+						-- 		["sourceQuests"] = {
+						-- 			9853,	-- Gurok the Usurper
+						-- 			9815,	-- Muck Diving
+						-- 			9862,	-- Murkblood Corrupters
+						-- 			9810,	-- The Spirit Polluted
+						-- 		},
+						-- 	}),
+						-- 	crit(4, {	-- Lantresor of the Blade
+						-- 		["sourceQuests"] = {
+						-- 			9907,	-- An Audacious Advance
+						-- 			9916,	-- Bleeding Hollow Supply Crates
+						-- 			9934,	-- Message to Garadar
+						-- 		},
+						-- 	}),
+						-- 	crit(5, {	-- The Murkblood
+						-- 		["sourceQuests"] = {
+						-- 			9946,	-- Cho'war the Pillager
+						-- 			9948,	-- Finding the Survivors
+						-- 			9866,	-- He Will Walk The Earth...
+						-- 			9867,	-- Murkblood Leaders..
+						-- 			9868,	-- The Totem of Kar'dash
+						-- 			9863,	-- Vile Idolatry
+						-- 		},
+						-- 	}),
+						-- 	crit(6,	{	-- Threats to Nagrand
+						-- 		["sourceQuests"] = {
+						-- 			10011,	-- Forge Camp: Annihilated
+						-- 			9937,	-- WANTED: Durn the Hungerer
+						-- 		},
+						-- 	}),
+						-- 	crit(7,	{	-- The Ultimate Bloodsport
+						-- 		["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
+						-- 	}),
+						-- 	crit(8,	{	-- Encountering the Ethereals
+						-- 		["sourceQuests"] = {
+						-- 			9900,	-- Gava'xi
+						-- 			9925,	-- Matters of Security
+						-- 		},
+						-- 	}),
+						-- },
 						-- #endif
 					}),
 					ach(1192, {	-- Nagrand Slam (Alliance)
@@ -245,49 +234,49 @@ root(ROOTS.Zones, {
 						["rank"] = 75,
 						-- #endif
 						-- #else
-						["groups"] = {
-							crit(1,	{	-- The Adventures of Corki
-								["sourceQuest"] = 9955,	-- Cho'war the Pillager
-							}),
-							crit(2,	{	-- The Ring of Blood
-								["sourceQuest"] = 9977,	-- The Ring of Blood: The Final Challenge
-							}),
-							crit(3, {	-- Throne of the Elements
-								["sourceQuests"] = {
-									9853,	-- Gurok the Usurper
-									9815,	-- Muck Diving
-									9862,	-- Murkblood Corrupters
-									9810,	-- The Spirit Polluted
-								},
-							}),
-							crit(4,	{	-- Lantresor of the Blade
-								["sourceQuest"] = 9933,	-- Message to Telaar
-							}),
-							crit(5,	{	-- The Murkblood
-								["sourceQuests"] = {
-									9873,	-- Ortor My Old Friend...
-									9878,	-- Solving the Problem
-									9874,	-- Stopping the Spread
-									9879,	-- The Totem of Kar'dash
-									9956,	-- The Ravaged Caravan
-								},
-							}),
-							crit(6,	{	-- Threats to Nagrand
-								["sourceQuests"] = {
-									10011,	-- Forge Camp: Annihilated
-									9938,	-- WANTED: Durn the Hungerer
-								},
-							}),
-							crit(7,	{	-- The Ultimate Bloodsport
-								["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-							}),
-							crit(8,	{	-- Encountering the Ethereals
-								["sourceQuests"] = {
-									9900,	-- Gava'xi
-									9925,	-- Matters of Security
-								},
-							}),
-						},
+						-- ["groups"] = {
+						-- 	crit(1,	{	-- The Adventures of Corki
+						-- 		["sourceQuest"] = 9955,	-- Cho'war the Pillager
+						-- 	}),
+						-- 	crit(2,	{	-- The Ring of Blood
+						-- 		["sourceQuest"] = 9977,	-- The Ring of Blood: The Final Challenge
+						-- 	}),
+						-- 	crit(3, {	-- Throne of the Elements
+						-- 		["sourceQuests"] = {
+						-- 			9853,	-- Gurok the Usurper
+						-- 			9815,	-- Muck Diving
+						-- 			9862,	-- Murkblood Corrupters
+						-- 			9810,	-- The Spirit Polluted
+						-- 		},
+						-- 	}),
+						-- 	crit(4,	{	-- Lantresor of the Blade
+						-- 		["sourceQuest"] = 9933,	-- Message to Telaar
+						-- 	}),
+						-- 	crit(5,	{	-- The Murkblood
+						-- 		["sourceQuests"] = {
+						-- 			9873,	-- Ortor My Old Friend...
+						-- 			9878,	-- Solving the Problem
+						-- 			9874,	-- Stopping the Spread
+						-- 			9879,	-- The Totem of Kar'dash
+						-- 			9956,	-- The Ravaged Caravan
+						-- 		},
+						-- 	}),
+						-- 	crit(6,	{	-- Threats to Nagrand
+						-- 		["sourceQuests"] = {
+						-- 			10011,	-- Forge Camp: Annihilated
+						-- 			9938,	-- WANTED: Durn the Hungerer
+						-- 		},
+						-- 	}),
+						-- 	crit(7,	{	-- The Ultimate Bloodsport
+						-- 		["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
+						-- 	}),
+						-- 	crit(8,	{	-- Encountering the Ethereals
+						-- 		["sourceQuests"] = {
+						-- 			9900,	-- Gava'xi
+						-- 			9925,	-- Matters of Security
+						-- 		},
+						-- 	}),
+						-- },
 						-- #endif
 					}),
 					achWithRep(899, 978, {	-- Oh My, Kurenai
@@ -386,6 +375,11 @@ root(ROOTS.Zones, {
 						["cr"] = 18789,	-- Furgu <Hippogryph Master>
 						["coord"] = { 54.2, 75.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66552, {	-- Narrok <Master Pet Tamer>
+						["coord"] = { 61.0, 49.4, NAGRAND },
 					}),
 				}),
 				n(QUESTS, {
@@ -1039,7 +1033,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18817,	-- Chief Researcher Kartos
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
 						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(26044),	-- Halaa Research Token
@@ -1050,7 +1048,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10076,	-- Oshu'gun Crystal Powder (Alliance Version)
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
 						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["groups"] = {
@@ -1061,7 +1063,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18816,	-- Chief Researcher Amereldine
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Horde controls Halaa.",
-						["cost"] = { { "i", 26042, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
+						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(26044),	-- Halaa Research Token
@@ -1072,7 +1078,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10074,	-- Oshu'gun Crystal Powder (Horde Version)
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Horde controls Halaa.",
-						["cost"] = { { "i", 26042, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
+						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["groups"] = {
@@ -1083,6 +1093,13 @@ root(ROOTS.Zones, {
 						["qg"] = 18417,	-- Altruis the Sufferer
 						["sourceQuest"] = 10001,	-- The Master Planner
 						["coord"] = { 27.4, 42.0, NAGRAND },
+					}),
+					q(9797, {	-- Reinforcements for Garadar
+						["qg"] = 18091,	-- Messenger Gazgrigg
+						["coord"] = { 32.0, 50.4, ZANGARMARSH },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(64, 64, 10),
 					}),
 					q(10650, {	-- Return to the Aldor
 						["qg"] = 18417,	-- Altruis the Sufferer
@@ -1780,10 +1797,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.0, 35.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27697),	-- Recipe: Grilled Mudfish
-							i(27698),	-- Recipe: Poached Bluefish
-							i(27691),	-- Recipe: Roasted Clefthoof
-							i(27693),	-- Recipe: Talbuk Steak
+							i(27697),	-- Recipe: Grilled Mudfish (RECIPE!)
+							i(27698),	-- Recipe: Poached Bluefish (RECIPE!)
+							i(27691),	-- Recipe: Roasted Clefthoof (RECIPE!)
+							i(27693),	-- Recipe: Talbuk Steak (RECIPE!)
 						},
 					}),
 					n(23007, {	-- Paulsta'ats <Consortium Quartermaster>
@@ -1817,8 +1834,8 @@ root(ROOTS.Zones, {
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
-							i(138796, {	-- Illusion: Executioner
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138796, {	-- Illusion: Executioner (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard
@@ -1846,17 +1863,21 @@ root(ROOTS.Zones, {
 							i(29135),	-- Earthcaller's Headdress
 							i(29137),	-- Hellscream's Will
 							i(31773),	-- Mag'har Tabard
-							i(34174),	-- Pattern: Drums of Restoration
-							i(34172),	-- Pattern: Drums of Speed
+							i(34174, {	-- Pattern: Drums of Restoration [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
+							i(34172, {	-- Pattern: Drums of Speed [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
 							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(185924)),	-- Pattern: Greater Drums of Restoration
-							applyclassicphase(TBC_PHASE_FOUR, i(185923)),	-- Pattern: Greater Drums of Speed
+							applyclassicphase(TBC_PHASE_FOUR, i(185924)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
+							applyclassicphase(TBC_PHASE_FOUR, i(185923)),	-- Pattern: Greater Drums of Speed (RECIPE!)
 							-- #endif
-							i(25741),	-- Pattern: Netherfury Belt
-							i(25743),	-- Pattern: Netherfury Boots
-							i(25742),	-- Pattern: Netherfury Leggings
+							i(25741),	-- Pattern: Netherfury Belt [H] (RECIPE!)
+							i(25743),	-- Pattern: Netherfury Boots [H] (RECIPE!)
+							i(25742),	-- Pattern: Netherfury Leggings [H] (RECIPE!)
 							i(29664),	-- Pattern: Reinforced Mining Bag
-							i(22917),	-- Recipe: Transmute Primal Fire to Earth
+							i(22917),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
 							i(31829),	-- Cobalt Riding Talbuk (H) (MOUNT!)
 							i(29102),	-- Cobalt War Talbuk (H) (MOUNT!)
 							i(31831),	-- Silver Riding Talbuk (H) (MOUNT!)
@@ -1928,7 +1949,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 2 },	-- 2x Halaa Research Token
 								},
 							}),
-							i(32071, {	-- Recipe: Elixir of Ironskin
+							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
@@ -2028,7 +2049,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 2 },	-- 2x Halaa Research Token
 								},
 							}),
-							i(32071, {	-- Recipe: Elixir of Ironskin
+							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
@@ -2094,17 +2115,21 @@ root(ROOTS.Zones, {
 							i(29136),	-- Far Seer's Helm
 							i(29142),	-- Kurenai Kilt
 							i(31774),	-- Kurenai Tabard
-							i(34175),	-- Pattern: Drums of Restoration
-							i(34173),	-- Pattern: Drums of Speed
+							i(34175, {	-- Pattern: Drums of Restoration [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
+							i(34173, {	-- Pattern: Drums of Speed [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
 							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(187048)),	-- Pattern: Greater Drums of Restoration
-							applyclassicphase(TBC_PHASE_FOUR, i(187049)),	-- Pattern: Greater Drums of Speed
+							applyclassicphase(TBC_PHASE_FOUR, i(187048)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
+							applyclassicphase(TBC_PHASE_FOUR, i(187049)),	-- Pattern: Greater Drums of Speed (RECIPE!)
 							-- #endif
-							i(29217),	-- Pattern: Netherfury Belt
-							i(29218),	-- Pattern: Netherfury Boots
-							i(29219),	-- Pattern: Netherfury Leggings
-							i(30444),	-- Pattern: Reinforced Mining Bag
-							i(30443),	-- Recipe: Transmute Primal Fire to Earth
+							i(29217),	-- Pattern: Netherfury Belt [A] (RECIPE!)
+							i(29218),	-- Pattern: Netherfury Boots [A] (RECIPE!)
+							i(29219),	-- Pattern: Netherfury Leggings [A] (RECIPE!)
+							i(30444),	-- Pattern: Reinforced Mining Bag (RECIPE!)
+							i(30443),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
 							i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)
 							i(29227),	-- Cobalt War Talbuk (A) (MOUNT!)
 							i(31832),	-- Silver Riding Talbuk (A) (MOUNT!)
@@ -2122,10 +2147,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.2, 73.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27697),	-- Recipe: Grilled Mudfish
-							i(27698),	-- Recipe: Poached Bluefish
-							i(27691),	-- Recipe: Roasted Clefthoof
-							i(27693),	-- Recipe: Talbuk Steak
+							i(27697),	-- Recipe: Grilled Mudfish (RECIPE!)
+							i(27698),	-- Recipe: Poached Bluefish (RECIPE!)
+							i(27691),	-- Recipe: Roasted Clefthoof (RECIPE!)
+							i(27693),	-- Recipe: Talbuk Steak (RECIPE!)
 						},
 					}),
 				}),
@@ -2144,7 +2169,7 @@ root(ROOTS.Zones, {
 					i(23611, {	-- Plans: Ragesteel Gloves (RECIPE!)
 						["cr"] = 17136,	-- Boulderfist Warrior
 					}),
-					i(22923, {	-- Recipe: Major Arcane Protection Potion
+					i(22923, {	-- Recipe: Major Arcane Protection Potion (RECIPE!)
 						["cr"] = 17150,	-- Vir'aani Arcanist
 					}),
 					i(25433, {	-- Obsidian Warbeads

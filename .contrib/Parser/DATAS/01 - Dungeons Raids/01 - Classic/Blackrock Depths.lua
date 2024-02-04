@@ -55,6 +55,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
 		-- #endif
+		["zone-text-areaID"] = 1584,	-- Blackrock Depths
 		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["mapID"] = BLACKROCK_DEPTHS,
 		["maps"] = { 243 },
@@ -191,7 +192,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 48,
 				}),
 				q(3802, {	-- Dark Iron Legacy (2/2)
-					["qg"] = 8888,	-- Franclorn Forgewright
+					["providers"] = {
+						{ "n",   8888 },	-- Franclorn Forgewright
+						{ "o", 164689 },	-- Monument of Franclorn Forgewright
+					},
 					["sourceQuest"] = 3801,	-- Dark Iron Legacy (1/2)
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { BLACKROCK_MOUNTAIN },
@@ -199,6 +203,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Ironfel
 							["provider"] = { "i", 10999 },	-- Ironfel
+							["cr"] = 9056,	-- Fineous Darkvire <Chief Architect>
 						}),
 						i(11000, {	-- Shadowforge Key
 							["timeline"] = { "deleted 4.0.3" },
@@ -1287,7 +1292,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				q(4286, {	-- The Good Stuff
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 84.6, 68.7, BADLANDS },
+					["coord"] = { 84.6, 68.7, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1518,6 +1523,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
+						objective(1, {	-- 0/12 Information Recovered
+							["provider"] = { "o", 153556 },	-- Thaurissan Relic
+						}),
 						i(12102, {	-- Ring of the Aristocrat
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1535,9 +1543,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["cr"] = 9037,	-- Gloom'rel
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(14891, {	-- Smelt Dark Iron
-							["requireSkill"] = MINING,
-						}),
+						r(14891),	-- Smelt Dark Iron
 					},
 				}),
 				q(4183, {	-- The True Masters (1/6)
@@ -1640,16 +1646,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(65646, {	-- Headguard of the Order
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						-- You get these when completing the quest
-						i(141976, {	-- Headguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
-						i(141977, {	-- Faceguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
-						i(141978, {	-- Helm of the Order
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
+						-- You get these when completing the quest (Only when completing Horde version specifically and relogging, gg Blizz)
+						-- i(141976, {	-- Headguard of the Order
+						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- }),
+						-- i(141977, {	-- Faceguard of the Order
+						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- }),
+						-- i(141978, {	-- Helm of the Order
+						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- }),
 					},
 				}),
 				q(28466, {	-- Weapons of Darkness (Tauren)
@@ -1672,12 +1678,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						-- You get these when completing the quest
 						i(141976, {	-- Headguard of the Order
 							["timeline"] = { "added 7.0.3.22248" },
+							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141977, {	-- Faceguard of the Order
 							["timeline"] = { "added 7.0.3.22248" },
+							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141978, {	-- Helm of the Order
 							["timeline"] = { "added 7.0.3.22248" },
+							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 					},
 				}),
@@ -2311,13 +2320,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
-					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire
+					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					})),
 				}),
 				n(9499, {	-- Plugger Spazzring
 					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
-					i(13483),	-- Recipe: Transmute Fire to Earth
+					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
 					i(11325),	-- Dark Iron Ale Mug
 				}),
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
@@ -2360,7 +2369,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						10043,	-- Ribbly's Crony
 					},
 				}),
-				i(16049, {  -- Schematic: Dark Iron Bomb
+				i(16049, {	 -- Schematic: Dark Iron Bomb
 					["cr"] = 8920,   -- Weapon Technician
 				}),
 				i(16048, {	-- Schematic: Dark Iron Rifle
@@ -2559,7 +2568,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(11765),	-- Pyremail Wristguards
 						i(11767),	-- Emberplate Armguards
 						i(11768, {	-- Incendic Bracers
-							["timeline"] = { "removed 4.0.3" },
+							-- #if BEFORE 10.1.7
+							-- #if AFTER 2.0.1
+							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["isBounty"] = true,
+							-- #endif
+							-- #endif
+							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
@@ -2567,7 +2582,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				e(376, {	-- Fineous Darkvire <Chief Architect>
 					["creatureID"] = 9056,
 					["groups"] = {
-						i(10999),	-- Ironfel
 						i(11840),	-- Master Builder's Shirt
 						i(11839),	-- Chief Architect's Monocle
 						applyclassicphase(PHASE_FIVE, i(22223)),	-- Foreman's Head Protector
@@ -2766,8 +2780,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						i(11744),	-- Bloodfist
 						i(11743, {	-- Rockfist
-							["description"] = "We're actually not sure which patch this was removed.",
-							["timeline"] = { "removed 2.0.1" },
+							-- #if BEFORE 10.1.7
+							-- #if AFTER 2.0.1
+							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["isBounty"] = true,
+							-- #endif
+							-- #endif
+							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
 						}),
 						-- #if BEFORE 7.3.2
 						i(11746),	-- Golem Skull Helm

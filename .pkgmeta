@@ -10,6 +10,7 @@ ignore: # Files and directories beginning with a dot (such as .git) are automati
   - setup.cfg
   - link_att.bat
   - ptr_db
+  - Link ATT to WoW.bat
 
 required-dependencies:
 

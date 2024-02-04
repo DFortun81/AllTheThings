@@ -7,358 +7,358 @@
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(-10072, {	-- N'Zoth Assault
 		["maps"] = {
-			1527,	-- Uldum (Assault Phase)
-			1530,	-- Vale of Eternal Blossoms (Assault Phase)
+			NZOTH_ASSAULT_ULDUM,
+			NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(14159, {	-- Combating the Corruption
-					crit(1,  {		-- Corrupted Acolyte slain
+					crit(47211,  {		-- Corrupted Acolyte slain
 						["description"] = "Shares a spawn with Acolyte of N'Zoth.",
 						["cr"] = 162249,	-- Corrupted Acolyte
 						["coords"] = {
-							{ 49.5, 39.9, 1527 },
-							{ 51.2, 73.2, 1527 },
-							{ 49.0, 80.0, 1527 },
-							{ 46.2, 79.7, 1527 },
-							{ 47.7, 84.5, 1527 },
-							{ 49.1, 83.8, 1527 },
-							{ 57.1, 43.5, 1527 },
-							{ 55.8, 41.5, 1527 },
-							{ 54.9, 80.0, 1527 },
-							{ 46.2, 42.0, 1527 },
-							{ 53.8, 43.1, 1527 },
-							{ 43.8, 71.6, 1530 },
-							{ 42.4, 68.0, 1530 },
-							{ 54.4, 63.4, 1530 },
-							{ 51.8, 60.4, 1530 },
+							{ 49.5, 39.9, NZOTH_ASSAULT_ULDUM },
+							{ 51.2, 73.2, NZOTH_ASSAULT_ULDUM },
+							{ 49.0, 80.0, NZOTH_ASSAULT_ULDUM },
+							{ 46.2, 79.7, NZOTH_ASSAULT_ULDUM },
+							{ 47.7, 84.5, NZOTH_ASSAULT_ULDUM },
+							{ 49.1, 83.8, NZOTH_ASSAULT_ULDUM },
+							{ 57.1, 43.5, NZOTH_ASSAULT_ULDUM },
+							{ 55.8, 41.5, NZOTH_ASSAULT_ULDUM },
+							{ 54.9, 80.0, NZOTH_ASSAULT_ULDUM },
+							{ 46.2, 42.0, NZOTH_ASSAULT_ULDUM },
+							{ 53.8, 43.1, NZOTH_ASSAULT_ULDUM },
+							{ 43.8, 71.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 42.4, 68.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 54.4, 63.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 51.8, 60.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(2,  {		-- Corrupted Assassin slain
+					crit(47212,  {		-- Corrupted Assassin slain
 						["description"] = "Shares a spawn with Black Empire Assassin.",
 						["cr"] = 162250,	-- Corrupted Assassin
 						["coords"] = {
-							{ 51.7, 71.1, 1527 },
-							{ 50.7, 72.3, 1527 },
-							{ 50.2, 72.6, 1527 },
-							{ 50.4, 73.6, 1527 },
-							{ 50.0, 78.7, 1527 },
-							{ 51.2, 80.0, 1527 },
-							{ 49.4, 80.9, 1527 },
-							{ 48.6, 85.6, 1527 },
-							{ 50.0, 71.8, 1527 },
-							{ 52.2, 84.5, 1527 },
-							{ 50.7, 69.4, 1527 },
-							{ 52.0, 69.4, 1527 },
-							{ 50.0, 71.7, 1527 },
+							{ 51.7, 71.1, NZOTH_ASSAULT_ULDUM },
+							{ 50.7, 72.3, NZOTH_ASSAULT_ULDUM },
+							{ 50.2, 72.6, NZOTH_ASSAULT_ULDUM },
+							{ 50.4, 73.6, NZOTH_ASSAULT_ULDUM },
+							{ 50.0, 78.7, NZOTH_ASSAULT_ULDUM },
+							{ 51.2, 80.0, NZOTH_ASSAULT_ULDUM },
+							{ 49.4, 80.9, NZOTH_ASSAULT_ULDUM },
+							{ 48.6, 85.6, NZOTH_ASSAULT_ULDUM },
+							{ 50.0, 71.8, NZOTH_ASSAULT_ULDUM },
+							{ 52.2, 84.5, NZOTH_ASSAULT_ULDUM },
+							{ 50.7, 69.4, NZOTH_ASSAULT_ULDUM },
+							{ 52.0, 69.4, NZOTH_ASSAULT_ULDUM },
+							{ 50.0, 71.7, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(3,  {		-- Corrupted Beheader slain
+					crit(47213,  {		-- Corrupted Beheader slain
 						["description"] = "Shares a spawn with Black Empire Beheader.",
 						["cr"] = 162252,	-- Corrupted Beheader
 						["coords"] = {
-							{ 58.4, 42.8, 1527 },
-							{ 52.6, 46.4, 1527 },
-							{ 60.0, 49.5, 1527 },
-							{ 51.0, 71.2, 1527 },
-							{ 50.0, 78.7, 1527 },
-							{ 50.2, 73.1, 1527 },
-							{ 50.5, 85.8, 1527 },
-							{ 49.1, 84.7, 1527 },
-							{ 43.0, 59.4, 1530 },
-							{ 45.4, 71.6, 1530 },
-							{ 57.0, 58.8, 1530 },
+							{ 58.4, 42.8, NZOTH_ASSAULT_ULDUM },
+							{ 52.6, 46.4, NZOTH_ASSAULT_ULDUM },
+							{ 60.0, 49.5, NZOTH_ASSAULT_ULDUM },
+							{ 51.0, 71.2, NZOTH_ASSAULT_ULDUM },
+							{ 50.0, 78.7, NZOTH_ASSAULT_ULDUM },
+							{ 50.2, 73.1, NZOTH_ASSAULT_ULDUM },
+							{ 50.5, 85.8, NZOTH_ASSAULT_ULDUM },
+							{ 49.1, 84.7, NZOTH_ASSAULT_ULDUM },
+							{ 43.0, 59.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 45.4, 71.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 57.0, 58.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(4,	 {		-- Corrupted Bloodseeker slain
+					crit(47214,	 {		-- Corrupted Bloodseeker slain
 						["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.  It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
 						["cr"] = 162290,	-- Corrupted Bloodseeker
 						["coords"] = {
-							{ 13.8, 63.6, 1527 },
-							{ 26.8, 76.6, 1527 },
-							{ 46.6, 91.2, 1527 },
+							{ 13.8, 63.6, NZOTH_ASSAULT_ULDUM },
+							{ 26.8, 76.6, NZOTH_ASSAULT_ULDUM },
+							{ 46.6, 91.2, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(5,	 {		-- Corrupted Bonestripper slain
+					crit(47215,	 {		-- Corrupted Bonestripper slain
 						["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
 						["cr"] = 159087,	-- Corrupted Bonestripper
 						["coords"] = {
-							{ 55.7, 43.8, 1527 },
-							{ 57.5, 17.7, 1527 },
-							{ 56.6, 20.6, 1527 },
-							{ 56.5, 24.4, 1527 },
-							{ 57.3, 27.4, 1527 },
-							{ 59.6, 60.8, 1527 },
-							{ 63.4, 52.0, 1530 },
-							{ 74.8, 58.6, 1530 },
-							{ 90.6, 46.6, 1530 },
-							{ 72.0, 43.8, 1530 },
-							{ 72.8, 29.8, 1530 },
+							{ 55.7, 43.8, NZOTH_ASSAULT_ULDUM },
+							{ 57.5, 17.7, NZOTH_ASSAULT_ULDUM },
+							{ 56.6, 20.6, NZOTH_ASSAULT_ULDUM },
+							{ 56.5, 24.4, NZOTH_ASSAULT_ULDUM },
+							{ 57.3, 27.4, NZOTH_ASSAULT_ULDUM },
+							{ 59.6, 60.8, NZOTH_ASSAULT_ULDUM },
+							{ 63.4, 52.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 74.8, 58.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 90.6, 46.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 72.0, 43.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 72.8, 29.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(6,	 {		-- Corrupted Despoiler slain
+					crit(47216,	 {		-- Corrupted Despoiler slain
 						["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
 						["cr"] = 156709,	-- Corrupted Despoiler
 						["coords"] = {
-							{ 59.5, 47.4, 1527 },
-							{ 59.1, 42.7, 1527 },
-							{ 55.1, 53.4, 1527 },
-							{ 49.4, 39.6, 1527 },
-							{ 60.2, 53.6, 1527 },
-							{ 58.4, 24.8, 1527 },
-							{ 55.6, 24.4, 1527 },
-							{ 42.8, 37.2, 1530 },
-							{ 45.6, 48.4, 1530 },
-							{ 43.6, 64.2, 1530 },
-							{ 44.6, 71.0, 1530 },
-							{ 58.6, 61.4, 1530 },
-							{ 61.6, 55.0, 1530 },
-							{ 64.8, 65.2, 1530 },
-							{ 65.6, 56.6, 1530 },
-							{ 52.2, 42.2, 1530 },
-							{ 60.4, 42.6, 1530 },
-							{ 67.0, 37.4, 1530 },
-							{ 68.8, 49.6, 1530 },
-							{ 75.4, 52.2, 1530 },
-							{ 79.8, 50.8, 1530 },
-							{ 85.8, 40.2, 1530 },
-							{ 76.4, 37.0, 1530 },
-							{ 61.8, 33.4, 1530 },
-							{ 75.0, 23.6, 1530 },
+							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
+							{ 59.1, 42.7, NZOTH_ASSAULT_ULDUM },
+							{ 55.1, 53.4, NZOTH_ASSAULT_ULDUM },
+							{ 49.4, 39.6, NZOTH_ASSAULT_ULDUM },
+							{ 60.2, 53.6, NZOTH_ASSAULT_ULDUM },
+							{ 58.4, 24.8, NZOTH_ASSAULT_ULDUM },
+							{ 55.6, 24.4, NZOTH_ASSAULT_ULDUM },
+							{ 42.8, 37.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 45.6, 48.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 43.6, 64.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 44.6, 71.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 58.6, 61.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 61.6, 55.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 64.8, 65.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.6, 56.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 52.2, 42.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 60.4, 42.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 67.0, 37.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 68.8, 49.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 75.4, 52.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 79.8, 50.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 85.8, 40.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 76.4, 37.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 61.8, 33.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 75.0, 23.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(7,	 {		-- Corrupted Dominator slain
+					crit(47217,	 {		-- Corrupted Dominator slain
 						["description"] = "Shares a spawn with Faceless Dominator.",
 						["cr"] = 162246,	-- Corrupted Dominator
 						["coords"] = {
-							{ 63.0, 71.0, 1527 },
-							{ 63.8, 72.8, 1527 },
-							{ 64.5, 74.5, 1527 },
-							{ 60.2, 66.4, 1527 },
-							{ 61.6, 69.4, 1527 },
-							{ 56.5, 42.1, 1527 },
+							{ 63.0, 71.0, NZOTH_ASSAULT_ULDUM },
+							{ 63.8, 72.8, NZOTH_ASSAULT_ULDUM },
+							{ 64.5, 74.5, NZOTH_ASSAULT_ULDUM },
+							{ 60.2, 66.4, NZOTH_ASSAULT_ULDUM },
+							{ 61.6, 69.4, NZOTH_ASSAULT_ULDUM },
+							{ 56.5, 42.1, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(8,  {		-- Corrupted Doomsayer slain
+					crit(47218,  {		-- Corrupted Doomsayer slain
 						["description"] = "Shares a spawn with K'thir Doomsayer.",
 						["cr"] = 162244,	-- Corrupted Doomsayer
 						["coords"] = {
-							{ 60.8, 71.5, 1527 },
-							{ 60.2, 71.3, 1527 },
-							{ 62.0, 73.7, 1527 },
-							{ 49.8, 39.9, 1527 },
-							{ 49.6, 41.4, 1527 },
-							{ 61.8, 70.6, 1527 },
-							{ 61.4, 75.2, 1527 },
-							{ 63.5, 70.0, 1527 },
-							{ 45.8, 43.4, 1530 },
-							{ 55.2, 62.4, 1530 },
-							{ 60.6, 56.2, 1530 },
-							{ 65.6, 64.6, 1530 },
-							{ 65.6, 56.6, 1530 },
-							{ 59.0, 40.4, 1530 },
-							{ 64.8, 46.0, 1530 },
-							{ 72.8, 53.4, 1530 },
-							{ 77.6, 48.8, 1530 },
-							{ 67.8, 36.4, 1530 },
-							{ 68.6, 24.0, 1530 },
-							{ 78.6, 31.6, 1530 },
-							{ 86.2, 42.4, 1530 },
+							{ 60.8, 71.5, NZOTH_ASSAULT_ULDUM },
+							{ 60.2, 71.3, NZOTH_ASSAULT_ULDUM },
+							{ 62.0, 73.7, NZOTH_ASSAULT_ULDUM },
+							{ 49.8, 39.9, NZOTH_ASSAULT_ULDUM },
+							{ 49.6, 41.4, NZOTH_ASSAULT_ULDUM },
+							{ 61.8, 70.6, NZOTH_ASSAULT_ULDUM },
+							{ 61.4, 75.2, NZOTH_ASSAULT_ULDUM },
+							{ 63.5, 70.0, NZOTH_ASSAULT_ULDUM },
+							{ 45.8, 43.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 55.2, 62.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 60.6, 56.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.6, 64.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.6, 56.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 59.0, 40.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 64.8, 46.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 72.8, 53.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 77.6, 48.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 67.8, 36.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 68.6, 24.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 78.6, 31.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 86.2, 42.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(9,  {		-- Corrupted Fleshbeast slain
+					crit(47219,  {		-- Corrupted Fleshbeast slain
 						["description"] = "Shares a spawn with Burbling Fleshbeast.",
 						["cr"] = 158632,	-- Corrupted Fleshbeast
 						["coords"] = {
-							{ 59.5, 48.6, 1527 },
-							{ 49.0, 35.5, 1527 },
-							{ 62.2, 68.7, 1527 },
-							{ 60.9, 69.3, 1527 },
-							{ 60.4, 67.5, 1527 },
-							{ 62.0, 66.7, 1527 },
-							{ 40.0, 39.4, 1530 },
-							{ 46.0, 47.0, 1530 },
-							{ 47.6, 36.4, 1530 },
-							{ 57.0, 41.8, 1530 },
-							{ 60.4, 59.0, 1530 },
-							{ 65.6, 53.2, 1530 },
-							{ 61.0, 32.4, 1530 },
-							{ 65.4, 26.0, 1530 },
-							{ 70.2, 31.6, 1530 },
-							{ 69.4, 46.8, 1530 },
-							{ 78.0, 50.4, 1530 },
-							{ 84.8, 46.8, 1530 },
+							{ 59.5, 48.6, NZOTH_ASSAULT_ULDUM },
+							{ 49.0, 35.5, NZOTH_ASSAULT_ULDUM },
+							{ 62.2, 68.7, NZOTH_ASSAULT_ULDUM },
+							{ 60.9, 69.3, NZOTH_ASSAULT_ULDUM },
+							{ 60.4, 67.5, NZOTH_ASSAULT_ULDUM },
+							{ 62.0, 66.7, NZOTH_ASSAULT_ULDUM },
+							{ 40.0, 39.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 46.0, 47.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 47.6, 36.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 57.0, 41.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 60.4, 59.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.6, 53.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 61.0, 32.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.4, 26.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 70.2, 31.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 69.4, 46.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 78.0, 50.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 84.8, 46.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(10, {		-- Corrupted Jailer slain
+					crit(47220, {		-- Corrupted Jailer slain
 						["description"] = "Shares a spawn with Faceless Jailer.",
 						["cr"] = 162247,	-- Corrupted Jailer
 						["coords"] = {
-							{ 60.8, 71.5, 1527 },
-							{ 62.1, 74.7, 1527 },
-							{ 63.4, 72.6, 1527 },
-							{ 62.2, 67.4, 1527 },
+							{ 60.8, 71.5, NZOTH_ASSAULT_ULDUM },
+							{ 62.1, 74.7, NZOTH_ASSAULT_ULDUM },
+							{ 63.4, 72.6, NZOTH_ASSAULT_ULDUM },
+							{ 62.2, 67.4, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(11, {		-- Corrupted Mind Eater slain
+					crit(47221, {		-- Corrupted Mind Eater slain
 						["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler.  Can also result in Corrupted Despoiler spawning.",
 						["cr"] = 162243,	-- Corrupted Mind Eater
 						["coords"] = {
-							{ 59.5, 47.4, 1527 },
-							{ 59.1, 42.7, 1527 },
-							{ 55.1, 53.4, 1527 },
-							{ 49.4, 39.6, 1527 },
-							{ 60.2, 53.6, 1527 },
-							{ 58.4, 24.8, 1527 },
-							{ 55.6, 24.4, 1527 },
-							{ 42.8, 37.2, 1530 },
-							{ 45.6, 48.4, 1530 },
-							{ 43.6, 64.2, 1530 },
-							{ 44.6, 71.0, 1530 },
-							{ 58.6, 61.4, 1530 },
-							{ 61.6, 55.0, 1530 },
-							{ 64.8, 65.2, 1530 },
-							{ 65.6, 56.6, 1530 },
-							{ 52.2, 42.2, 1530 },
-							{ 60.4, 42.6, 1530 },
-							{ 67.0, 37.4, 1530 },
-							{ 68.8, 49.6, 1530 },
-							{ 75.4, 52.2, 1530 },
-							{ 79.8, 50.8, 1530 },
-							{ 85.8, 40.2, 1530 },
-							{ 76.4, 37.0, 1530 },
-							{ 61.8, 33.4, 1530 },
-							{ 75.0, 23.6, 1530 },
+							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
+							{ 59.1, 42.7, NZOTH_ASSAULT_ULDUM },
+							{ 55.1, 53.4, NZOTH_ASSAULT_ULDUM },
+							{ 49.4, 39.6, NZOTH_ASSAULT_ULDUM },
+							{ 60.2, 53.6, NZOTH_ASSAULT_ULDUM },
+							{ 58.4, 24.8, NZOTH_ASSAULT_ULDUM },
+							{ 55.6, 24.4, NZOTH_ASSAULT_ULDUM },
+							{ 42.8, 37.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 45.6, 48.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 43.6, 64.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 44.6, 71.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 58.6, 61.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 61.6, 55.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 64.8, 65.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.6, 56.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 52.2, 42.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 60.4, 42.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 67.0, 37.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 68.8, 49.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 75.4, 52.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 79.8, 50.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 85.8, 40.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 76.4, 37.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 61.8, 33.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 75.0, 23.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(12, {		-- Corrupted Neferset Guard slain
+					crit(47222, {		-- Corrupted Neferset Guard slain
 						["description"] = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
 						["cr"] = 158531,	-- Corrupted Neferset Guard
 						["coords"] = {
-							{ 50.9, 82.9, 1527 },
-							{ 51.6, 81.7, 1527 },
-							{ 49.8, 82.0, 1527 },
-							{ 49.8, 82.6, 1527 },
-							{ 49.0, 82.6, 1527 },
-							{ 47.3, 80.3, 1527 },
-							{ 50.7, 85.5, 1527 },
-							{ 50.3, 85.5, 1527 },
-							{ 50.5, 77.9, 1527 },
-							{ 50.8, 77.8, 1527 },
-							{ 50.9, 75.0, 1527 },
-							{ 50.5, 75.0, 1527 },
+							{ 50.9, 82.9, NZOTH_ASSAULT_ULDUM },
+							{ 51.6, 81.7, NZOTH_ASSAULT_ULDUM },
+							{ 49.8, 82.0, NZOTH_ASSAULT_ULDUM },
+							{ 49.8, 82.6, NZOTH_ASSAULT_ULDUM },
+							{ 49.0, 82.6, NZOTH_ASSAULT_ULDUM },
+							{ 47.3, 80.3, NZOTH_ASSAULT_ULDUM },
+							{ 50.7, 85.5, NZOTH_ASSAULT_ULDUM },
+							{ 50.3, 85.5, NZOTH_ASSAULT_ULDUM },
+							{ 50.5, 77.9, NZOTH_ASSAULT_ULDUM },
+							{ 50.8, 77.8, NZOTH_ASSAULT_ULDUM },
+							{ 50.9, 75.0, NZOTH_ASSAULT_ULDUM },
+							{ 50.5, 75.0, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(13, {		-- Corrupted Observer slain
+					crit(47223, {		-- Corrupted Observer slain
 						["description"] = "Shares a spawn with Foul Observer.",	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
 						["cr"] = 162254,	-- Corrupted Observer
 						["coords"] = {
-							{ 55.4, 51.0, 1527 },
-							{ 43.0, 62.2, 1530 },
-							{ 52.0, 67.6, 1530 },
-							{ 54.8, 61.2, 1530 },
-							{ 55.4, 57.0, 1530 },
-							{ 61.0, 55.6, 1530 },
-							{ 63.2, 62.6, 1530 },
-							{ 69.6, 60.8, 1530 },
-							{ 81.8, 55.8, 1530 },
-							{ 55.6, 40.2, 1530 },
-							{ 56.8, 43.8, 1530 },
-							{ 60.6, 37.8, 1530 },
-							{ 63.0, 41.6, 1530 },
-							{ 65.0, 43.4, 1530 },
-							{ 67.2, 42.4, 1530 },
-							{ 65.6, 27.0, 1530 },
-							{ 69.6, 24.0, 1530 },
-							{ 71.8, 23.8, 1530 },
-							{ 74.0, 24.0, 1530 },
-							{ 80.8, 46.4, 1530 },
-							{ 86.0, 46.6, 1530 },
+							{ 55.4, 51.0, NZOTH_ASSAULT_ULDUM },
+							{ 43.0, 62.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 52.0, 67.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 54.8, 61.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 55.4, 57.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 61.0, 55.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 63.2, 62.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 69.6, 60.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 81.8, 55.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 55.6, 40.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 56.8, 43.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 60.6, 37.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 63.0, 41.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.0, 43.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 67.2, 42.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 65.6, 27.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 69.6, 24.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 71.8, 23.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 74.0, 24.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 80.8, 46.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 86.0, 46.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(14, {		-- Corrupted Putrefaction slain
+					crit(47224, {		-- Corrupted Putrefaction slain
 						["description"] = "Shares a spawn with Oozing Putrefaction.",
 						["cr"] = 158706,	-- Corrupted Putrefaction
 						["coords"] = {
-							{ 59.3, 41.4, 1527 },
-							{ 60.4, 39.9, 1527 },
-							{ 47.4, 26.3, 1527 },
-							{ 57.1, 81.6, 1527 },
-							{ 60.8, 37.1, 1527 },
+							{ 59.3, 41.4, NZOTH_ASSAULT_ULDUM },
+							{ 60.4, 39.9, NZOTH_ASSAULT_ULDUM },
+							{ 47.4, 26.3, NZOTH_ASSAULT_ULDUM },
+							{ 57.1, 81.6, NZOTH_ASSAULT_ULDUM },
+							{ 60.8, 37.1, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(15, {		-- Corrupted Summoner slain
+					crit(47225, {		-- Corrupted Summoner slain
 						["description"] = "Shares a spawn with Black Empire Conjurers.",
 						["cr"] = 162251,	-- Corrupted Summoner
 						["coords"] = {
-							{ 58.9, 46.2, 1527 },
-							{ 60.3, 50.9, 1527 },
-							{ 59.7, 50.9, 1527 },
-							{ 57.2, 56.4, 1527 },
-							{ 58.0, 59.7, 1527 },
-							{ 58.3, 60.9, 1527 },
-							{ 56.5, 54.9, 1527 },
-							{ 60.4, 49.5, 1527 },
-							{ 56.6, 51.4, 1527 },
-							{ 56.2, 52.7, 1527 },
-							{ 56.1, 50.1, 1527 },
-							{ 54.1, 49.5, 1527 },
-							{ 53.4, 49.4, 1527 },
-							{ 51.9, 50.1, 1527 },
+							{ 58.9, 46.2, NZOTH_ASSAULT_ULDUM },
+							{ 60.3, 50.9, NZOTH_ASSAULT_ULDUM },
+							{ 59.7, 50.9, NZOTH_ASSAULT_ULDUM },
+							{ 57.2, 56.4, NZOTH_ASSAULT_ULDUM },
+							{ 58.0, 59.7, NZOTH_ASSAULT_ULDUM },
+							{ 58.3, 60.9, NZOTH_ASSAULT_ULDUM },
+							{ 56.5, 54.9, NZOTH_ASSAULT_ULDUM },
+							{ 60.4, 49.5, NZOTH_ASSAULT_ULDUM },
+							{ 56.6, 51.4, NZOTH_ASSAULT_ULDUM },
+							{ 56.2, 52.7, NZOTH_ASSAULT_ULDUM },
+							{ 56.1, 50.1, NZOTH_ASSAULT_ULDUM },
+							{ 54.1, 49.5, NZOTH_ASSAULT_ULDUM },
+							{ 53.4, 49.4, NZOTH_ASSAULT_ULDUM },
+							{ 51.9, 50.1, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(16, {		-- Corrupted Thaumaturge slain
+					crit(47226, {		-- Corrupted Thaumaturge slain
 						["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
 						["cr"] = 162253,	-- Corrupted Thaumaturge
 						["coords"] = {
-							{ 51.9, 70.3, 1527 },
-							{ 50.5, 81.8, 1527 },
-							{ 50.1, 74.6, 1527 },
-							{ 50.6, 87.5, 1527 },
-							{ 51.9, 84.4, 1527 },
-							{ 51.9, 80.6, 1527 },
-							{ 42.8, 68.6, 1530 },
-							{ 43.6, 71.6, 1530 },
-							{ 45.0, 65.6, 1530 },
-							{ 49.4, 61.4, 1530 },
-							{ 52.6, 61.8, 1530 },
-							{ 49.0, 66.8, 1530 },
-							{ 52.6, 66.0, 1530 },
+							{ 51.9, 70.3, NZOTH_ASSAULT_ULDUM },
+							{ 50.5, 81.8, NZOTH_ASSAULT_ULDUM },
+							{ 50.1, 74.6, NZOTH_ASSAULT_ULDUM },
+							{ 50.6, 87.5, NZOTH_ASSAULT_ULDUM },
+							{ 51.9, 84.4, NZOTH_ASSAULT_ULDUM },
+							{ 51.9, 80.6, NZOTH_ASSAULT_ULDUM },
+							{ 42.8, 68.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 43.6, 71.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 45.0, 65.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 49.4, 61.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 52.6, 61.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 49.0, 66.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							{ 52.6, 66.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(17, {		-- Corrupted Thoughtstealer slain
+					crit(47227, {		-- Corrupted Thoughtstealer slain
 						["description"] = "Shares a spawn with K'thir Thoughtstealer.",
 						["coords"] = {
-							{ 62.7, 75.4, 1527 },
-							{ 61.0, 72.0, 1527 },
-							{ 60.5, 68.7, 1527 },
-							{ 60.5, 65.5, 1527 },
-							{ 61.1, 66.5, 1527 },
-							{ 62.9, 74.3, 1527 },
+							{ 62.7, 75.4, NZOTH_ASSAULT_ULDUM },
+							{ 61.0, 72.0, NZOTH_ASSAULT_ULDUM },
+							{ 60.5, 68.7, NZOTH_ASSAULT_ULDUM },
+							{ 60.5, 65.5, NZOTH_ASSAULT_ULDUM },
+							{ 61.1, 66.5, NZOTH_ASSAULT_ULDUM },
+							{ 62.9, 74.3, NZOTH_ASSAULT_ULDUM },
 						},
 						["cr"] = 162241,	-- Corrupted Thoughtstealer
 					}),
-					crit(18, {		-- Corrupted Tormentor slain -- TODO:: Add coords
+					crit(47228, {		-- Corrupted Tormentor slain -- TODO:: Add coords
 						["description"] = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
 						["coords"] = {
-							{ 13.0, 64.6, 1527 },
-							{ 32.6, 73.2, 1527 },
-							{ 49.6, 91.8, 1527 },
-							{ 75.6, 79.0, 1527 },
-							{ 87.2, 47.2, 1527 },
+							{ 13.0, 64.6, NZOTH_ASSAULT_ULDUM },
+							{ 32.6, 73.2, NZOTH_ASSAULT_ULDUM },
+							{ 49.6, 91.8, NZOTH_ASSAULT_ULDUM },
+							{ 75.6, 79.0, NZOTH_ASSAULT_ULDUM },
+							{ 87.2, 47.2, NZOTH_ASSAULT_ULDUM },
 						},
 						["cr"] = 162245,	-- Corrupted Tormentor
 					}),
-					crit(19, {		-- Corrupted Watcher slain
+					crit(47229, {		-- Corrupted Watcher slain
 						["description"] = "Shares a spawn with Voidwarped Watcher.",
 						["coords"] = {
-							{ 61.8, 73.0, 1527 },
-							{ 63.4, 72.9, 1527 },
-							{ 52.0, 69.8, 1527 },
-							{ 50.5, 82.5, 1527 },
-							{ 52.2, 81.6, 1527 },
-							{ 52.1, 83.0, 1527 },
-							{ 50.8, 69.8, 1527 },
+							{ 61.8, 73.0, NZOTH_ASSAULT_ULDUM },
+							{ 63.4, 72.9, NZOTH_ASSAULT_ULDUM },
+							{ 52.0, 69.8, NZOTH_ASSAULT_ULDUM },
+							{ 50.5, 82.5, NZOTH_ASSAULT_ULDUM },
+							{ 52.2, 81.6, NZOTH_ASSAULT_ULDUM },
+							{ 52.1, 83.0, NZOTH_ASSAULT_ULDUM },
+							{ 50.8, 69.8, NZOTH_ASSAULT_ULDUM },
 						},
 						["cr"] = 150829,	-- Corrupted Watcher
 					}),
@@ -392,8 +392,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				q(58168, {	-- A Dark, Glaring Reality
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["coords"] = {
-						{ 56.6, 31.7, 1527 },
-						{ 84.2, 51.7, 1530 },
+						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["maps"] = {
 						1570,	-- Vale of Eternal Blossoms, Vision
@@ -408,8 +408,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				q(58151, {	-- Minions of N'Zoth
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["coords"] = {
-						{ 56.6, 31.7, 1527 },
-						{ 84.2, 51.7, 1530 },
+						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["maps"] = {
 						1570,	-- Vale of Eternal Blossoms, Vision
@@ -424,8 +424,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				q(58167, {	-- Preventative Measures
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["coords"] = {
-						{ 56.6, 31.7, 1527 },
-						{ 84.2, 51.7, 1530 },
+						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["maps"] = {
 						1570,	-- Vale of Eternal Blossoms, Vision
@@ -441,8 +441,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
 					["coords"] = {
-						{ 56.6, 31.7, 1527 },
-						{ 84.2, 51.7, 1530 },
+						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["maps"] = {
 						1570,	-- Vale of Eternal Blossoms, Vision
@@ -458,8 +458,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["provider"] = { "n", 160252 },
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
 					["coords"] = {
-						{ 56.6, 31.7, 1527 },
-						{ 84.2, 51.7, 1530 },
+						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["maps"] = {
 						1570,	-- Vale of Eternal Blossoms, Vision
@@ -473,20 +473,20 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 			})),
 			n(ZONE_DROPS, {
-				i(174365),	-- Design: Unbound Leviathan's Eye Loop
-				i(174368),	-- Pattern: Unsettling Cragscale Boots
-				i(174369),	-- Pattern: Unsettling Cragscale Greaves
-				i(174366),	-- Pattern: Unsettling Dredged Leather Boots
-				i(174367),	-- Pattern: Unsettling Dredged Leather Leggings
-				i(174371),	-- Pattern: Unsettling Seaweave Breeches
-				i(174370),	-- Pattern: Unsettling Seaweave Gloves
+				i(174365),	-- Design: Unbound Leviathan's Eye Loop (RECIPE!)
+				i(174368),	-- Pattern: Unsettling Cragscale Boots (RECIPE!)
+				i(174369),	-- Pattern: Unsettling Cragscale Greaves (RECIPE!)
+				i(174366),	-- Pattern: Unsettling Dredged Leather Boots (RECIPE!)
+				i(174367),	-- Pattern: Unsettling Dredged Leather Leggings (RECIPE!)
+				i(174371),	-- Pattern: Unsettling Seaweave Breeches (RECIPE!)
+				i(174370),	-- Pattern: Unsettling Seaweave Gloves (RECIPE!)
 				i(171317),	-- Plans: Unsettling Osmenite Girdle (RECIPE!)
 				i(171316),	-- Plans: Unsettling Osmenite Legguards (RECIPE!)
-				i(171318),	-- Recipe: Unbound Alchemist Stone
-				i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals
-				i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles
-				i(174364),	-- Schematic: A-N0M-A-L0U5 Orthogonal Optics
-				i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs
+				i(171318),	-- Recipe: Unbound Alchemist Stone (RECIPE!)
+				i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals (RECIPE!)
+				i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles (RECIPE!)
+				i(174364),	-- Schematic: A-N0M-A-L0U5 Orthogonal Optics (RECIPE!)
+				i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs (RECIPE!)
 				i(173420, {	-- Black Empire Cloth Belt
 					i(173511),	-- Vile Manipulator's Belt
 					i(173436),	-- Vile Manipulator's Cinch
@@ -672,14 +672,14 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					azewrongItem(184601),	-- Malignant Leviathan's Spaulders
 				}),
 				i(173936, {	-- Dookin' Ookin' Quarterstaff
-					["coord"] = { 80.4, 63.6, 1530 },
+					["coord"] = { 80.4, 63.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 					["crs"] = {
 						154451,	-- Squidtail Screamer
 						154467,	-- Chief Mek-mek
 					}
 				}),
 				i(173935, {	-- Nik-Nik's Slicky Sticker
-					["coord"] = { 80.4, 63.6, 1530 },
+					["coord"] = { 80.4, 63.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 					["crs"] = {
 						154451,	-- Squidtail Screamer
 						154467,	-- Chief Mek-mek
@@ -687,11 +687,5 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 			}),
 		},
-	}),
-}))
-
-root(ROOTS.NeverImplemented, tier(BFA_TIER, {
-	n(-10072, {	-- N'Zoth Assault
-		q(57874),	-- Visions of a Dark Destiny
 	}),
 }));

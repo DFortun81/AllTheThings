@@ -21,12 +21,30 @@ root(ROOTS.Zones, {
 					743,	-- Rapan Whelk (PET!)
 				}},
 				["groups"] = {
-					pet(1712),	-- Golden Eaglet (PET!)
-					pet(1744),	-- Mist Fox Kit (PET!)
-					pet(1749),	-- Rose Taipan (PET!)
+					pet(1712, {	-- Golden Eaglet (PET!)
+						["description"] = "Found in yellow areas on the map in Stormheim.",
+					}),
+					pet(1744, {	-- Mist Fox Kit (PET!)
+						["coords"] = {
+							{ 47.8, 30.6, HIGHMOUNTAIN },
+							{ 43.2, 21.2, STORMHEIM },
+						},
+					}),
+					pet(1749, {	-- Rose Taipan (PET!)
+						["description"] = "Found in yellow areas on the map in Stormheim.",
+					}),
 					pet(1736),	-- Slithering Brownscale (PET!)
-					pet(1917),	-- Stormstruck Beaver (PET!)
-					pet(1750),	-- Tiny Apparition (PET!)
+					pet(1917, {	-- Stormstruck Beaver (PET!)
+						["description"] = "Found around coords and along the river starting from Weeping Bluffs.",
+						["coords"] = {
+							{ 34.8, 52.5, STORMHEIM },
+							{ 52.6, 64.6, STORMHEIM },
+						},
+					}),
+					pet(1750, {	-- Tiny Apparition (PET!)
+						["description"] = "Found in Tideskorn Harbor.",
+						["coord"] = { 55.8, 43.0, STORMHEIM },
+					}),
 					header(HEADERS.NPC, 115785, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Direbeak Hatchling
 						["description"] = "1. Buy Pungent Vrykul Gamalost from Riala the Hearthwatcher in Valdisdall.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy your new Direbeak Hatchling! Do one quest each day for a mount!|r\n",
 						["crs"] = { 115742 },	-- Orphaned Direbeak

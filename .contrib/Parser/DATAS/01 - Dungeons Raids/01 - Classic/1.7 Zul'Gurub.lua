@@ -8,8 +8,16 @@ local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
 });
 root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 	inst(76, {	-- Zul'Gurub
-		["mapID"] = ZULGURUB,
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 19,	-- Zul'Gurub
+		-- #endif
+		["maps"] = {
+			ZULGURUB,
+			-- #if ANYCLASSIC
+			233,
+			-- #endif
+		},
 		["timeline"] = { "removed 4.0.3" },
 		["isRaid"] = true,
 		["lvl"] = 58,
@@ -948,10 +956,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						i(19779),	-- Plans: Darksoul Breastplate (RECIPE!)
 						i(19780),	-- Plans: Darksoul Leggings (RECIPE!)
 						i(19781),	-- Plans: Darksoul Shoulders (RECIPE!)
-						i(20012),	-- Recipe: Greater Dreamless Sleep Potion
-						i(20013),	-- Recipe: Living Action Potion
-						i(20011),	-- Recipe: Mageblood Potion
-						i(20014),	-- Recipe: Major Troll's Blood Potion
+						i(20012),	-- Recipe: Greater Dreamless Sleep Potion (RECIPE!)
+						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
+						i(20011),	-- Recipe: Mageblood Potion (RECIPE!)
+						i(20014),	-- Recipe: Major Troll's Blood Potion (RECIPE!)
 						i(20000),	-- Schematic: Bloodvine Goggles
 						i(20001),	-- Schematic: Bloodvine Lens
 					},
@@ -1216,7 +1224,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				}),
 			}),
 			prof(MINING, {
-				i(19774),	-- Souldarite
+				i(19774, {	-- Souldarite
+					["provider"] = { "o", 180215 },	-- Hakkari Thorium Vein
+				}),
 			}),
 			prof(SKINNING, {
 				i(19768, {	-- Primal Tiger Leather
@@ -1235,6 +1245,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				["groups"] = {
 					i(19727, {	-- Blood Scythe
 						["requireSkill"] = HERBALISM,
+						["b"] = 1,
 					}),
 					i(19821),	-- Punctured Voodoo Doll [Druid]
 					i(19816),	-- Punctured Voodoo Doll [Hunter]
@@ -1463,7 +1474,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						-- #if BEFORE WRATH
 						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
 						-- #endif
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { "added 3.0.1", "removed 4.1.0" },
 					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon

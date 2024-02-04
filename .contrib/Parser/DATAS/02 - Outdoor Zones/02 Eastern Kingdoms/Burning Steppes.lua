@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Preparation
 							["sourceQuests"] = {
@@ -42,6 +43,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -238,21 +240,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = { DWARF, VOIDELF },
+					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 handfulls of Mud, and 2 spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 handfulls of Mud, and 1 spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 handfull of Mud, and 3 spools of Thread.\n\n",
 				}),
 				q(28203, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.1.12984" },
-					["races"] = { DRAENEI, WORGEN },	-- Lightforged Draenei too?
+					["races"] = { DRAENEI, WORGEN , PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 handfull of Mud\n3 spools of Thread",
 				}),
 				q(28204, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = { GNOME },
+					["races"] = { GNOME, MECHAGNOME },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 handfulls of Mud\n4 spools of Thread",
 				}),
 				q(28205, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -260,34 +268,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = { NIGHTELF },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 handfulls of Mud\n1 spool of Thread",
 				}),
 				q(28428, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13329" },
-					["races"] = { ORC, UNDEAD },
+					["races"] = { ORC, UNDEAD, MAGHAR },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 handfulls of Mud\n2 spools of Thread",
 				}),
-				q(28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
+				q(28429, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13329" },
-					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN },	-- Highmountain Tauren is UNCONFIRMED
+					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 handfull of Mud\n3 spools of Thread",
 				}),
 				q(28430, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13329" },
-					["races"] = { GOBLIN },
+					["races"] = { GOBLIN, VULPERA },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 handfulls of Mud\n4 spools of Thread",
 				}),
 				q(28431, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = { TROLL, BLOODELF, NIGHTBORNE },
+					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 handfulls of Mud\n1 spool of Thread",
 				}),
 				q(28279, {	-- Abuse of Power
 					["qg"] = 48110,	-- Colonel Troteman
@@ -1726,7 +1744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
-							["timeline"] = { "added 1.0.0", "removed 4.0.3" },	-- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
+							["timeline"] = { "added 1.0.0", "removed 4.0.3", ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
 						}),
 					},
 				}),
@@ -1784,9 +1802,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(14482, {	-- Pattern: Cindercloth Cloak
 					["cr"] = 7037,	-- Thaurissan Firewalker
+					["coords"] = {
+						{43.8, 39.4, BURNING_STEPPES},
+						{58.8, 37.2, BURNING_STEPPES},
+					},
 				}),
 				i(14490, {	-- Pattern: Cindercloth Pants
 					["cr"] = 7037,	-- Thaurissan Firewalker
+					["coords"] = {
+						{43.8, 39.4, BURNING_STEPPES},
+						{58.8, 37.2, BURNING_STEPPES},
+					},
 				}),
 				-- #if AFTER 10.0.5
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
@@ -1795,7 +1821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						 { 34.8, 36.3, BURNING_STEPPES },
 						 { 36.0, 36.6, BURNING_STEPPES },
 					},
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["crs"] = {
 						7025,	-- Blackrock Soldier
 						7027,	-- Blackrock Slayer
@@ -1803,7 +1829,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
 						 { 34.8, 36.3, BURNING_STEPPES },
@@ -1816,7 +1842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
 						 { 34.8, 36.3, BURNING_STEPPES },
@@ -1830,16 +1856,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #else
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["cr"] = 7025,	-- Blackrock Soldier
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 				-- #if BEFORE 5.0.4
 				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					-- #if BEFORE 4.0.3
 					["coord"] = { 41.8, 37.0, BURNING_STEPPES },
 					["cr"] = 7029,	-- Blackrock Battlemaster
@@ -1861,10 +1887,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7035,	-- Firegut Brute
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
+					["coords"] = {
+						{ 83.6, 40.0, BURNING_STEPPES },
+						{ 80.4, 45.8, BURNING_STEPPES },
+					},
 				}),
-				i(13476, {	-- Recipe: Mighty Rage Potion
+				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),

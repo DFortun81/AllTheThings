@@ -1660,26 +1660,26 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
-			q(37852, {	-- Amulet of Rukhmar: The Apexis Device (A)
+			q(37852, {	-- Amulet of Rukhmar: The Apexis Device [A]
 				["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
 				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(3, {
+					crit(27581, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
 			}),
-			q(37993, {	-- Amulet of Rukhmar: The Apexis Device (H)
+			q(37993, {	-- Amulet of Rukhmar: The Apexis Device [H]
 				["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
 				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(3, {
+					crit(27602, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -1717,7 +1717,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 34775,	-- Mission Probable
 			}),
-			q(36679, {	-- Assault on Darktide Roost
+			q(36679, {	-- Assault on Darktide Roost [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1726,13 +1726,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(9, {
+					crit(26254, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36692, {	-- Assault on Darktide Roost
+			q(36692, {	-- Assault on Darktide Roost [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1741,13 +1741,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(10, {
+					crit(26239, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36681, {	-- Assault on Lost Veil Anzu
+			q(36681, {	-- Assault on Lost Veil Anzu [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1759,7 +1759,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36690, {	-- Assault on Lost Veil Anzu
+			q(36690, {	-- Assault on Lost Veil Anzu [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1771,7 +1771,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36675, {	-- Assault on Magnarok
+			q(36675, {	-- Assault on Magnarok [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1780,13 +1780,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(3, {
+					crit(26247, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36697, {	-- Assault on Magnarok
+			q(36697, {	-- Assault on Magnarok [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1795,13 +1795,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(3, {
+					crit(26228, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36678, {	-- Assault on Mok'gol Watchpost
+			q(36678, {	-- Assault on Mok'gol Watchpost [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1810,13 +1810,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(7, {
+					crit(26252, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36693, {	-- Assault on Mok'gol Watchpost
+			q(36693, {	-- Assault on Mok'gol Watchpost [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1825,13 +1825,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(8, {
+					crit(26237, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36682, {	-- Assault on Pillars of Fate
+			q(36682, {	-- Assault on Pillars of Fate [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1840,13 +1840,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(11, {
+					crit(26256, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36689, {	-- Assault on Pillars of Fate
+			q(36689, {	-- Assault on Pillars of Fate [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1855,13 +1855,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(11, {
+					crit(26240, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36649, {	-- Assault on Shattrath Harbor
+			q(36649, {	-- Assault on Shattrath Harbor [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1870,13 +1870,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(12, {
+					crit(26258, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36667, {	-- Assault on Shattrath Harbor
+			q(36667, {	-- Assault on Shattrath Harbor [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1885,13 +1885,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(7, {
+					crit(26242, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36683, {	-- Assault on Skettis
+			q(36683, {	-- Assault on Skettis [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1900,13 +1900,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(10, {
+					crit(26255, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36688, {	-- Assault on Skettis
+			q(36688, {	-- Assault on Skettis [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1915,13 +1915,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(12, {
+					crit(26243, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36680, {	-- Assault on Socrethar's Rise
+			q(36680, {	-- Assault on Socrethar's Rise [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1930,13 +1930,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(8, {
+					crit(26253, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36691, {	-- Assault on Socrethar's Rise
+			q(36691, {	-- Assault on Socrethar's Rise [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1945,13 +1945,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(9, {
+					crit(26238, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36648, {	-- Assault on Stonefury Cliffs
+			q(36648, {	-- Assault on Stonefury Cliffs [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1960,13 +1960,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(2, {
+					crit(26245, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36669, {	-- Assault on Stonefury Cliffs
+			q(36669, {	-- Assault on Stonefury Cliffs [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1975,13 +1975,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(2, {
+					crit(26226, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36677, {	-- Assault on the Broken Precipice
+			q(36677, {	-- Assault on the Broken Precipice [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1990,13 +1990,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(6, {
+					crit(26250, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36694, {	-- Assault on the Broken Precipice
+			q(36694, {	-- Assault on the Broken Precipice [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2005,13 +2005,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(6, {
+					crit(26233, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36676, {	-- Assault on the Everbloom Wilds
+			q(36676, {	-- Assault on the Everbloom Wilds [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2020,13 +2020,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(5, {
+					crit(26249, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36695, {	-- Assault on the Everbloom Wilds
+			q(36695, {	-- Assault on the Everbloom Wilds [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2035,13 +2035,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(5, {
+					crit(26232, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36685, {	-- Assault on the Heart of Shattrath
+			q(36685, {	-- Assault on the Heart of Shattrath [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2053,7 +2053,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36699, {	-- Assault on the Heart of Shattrath
+			q(36699, {	-- Assault on the Heart of Shattrath [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2065,7 +2065,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36674, {	-- Assault on the Iron Siegeworks
+			q(36674, {	-- Assault on the Iron Siegeworks [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2074,13 +2074,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(1, {
+					crit(26244, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36696, {	-- Assault on the Iron Siegeworks
+			q(36696, {	-- Assault on the Iron Siegeworks [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2089,13 +2089,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(1, {
+					crit(26225, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36686, {	-- Assault on the Pit
+			q(36686, {	-- Assault on the Pit [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2104,13 +2104,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(4, {
+					crit(26248, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x1000
 				},
 			}),
-			q(36701, {	-- Assault on the Pit
+			q(36701, {	-- Assault on the Pit [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2119,7 +2119,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(4, {
+					crit(26229, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x1000
@@ -2212,6 +2212,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 				["coord"] = { 33.8, 36.4, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
+				["_drop"] = { "races" },	-- bad API data
 				["g"] = {
 					spell(181715),	-- Unlock Garrison Jukebox
 					i(122613, {	-- Stash of Dusty Music Rolls
@@ -2231,6 +2232,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["coord"] = { 40.9, 47.8, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["_drop"] = { "races" },	-- bad API data
 				["g"] = {
 					spell(181715),	-- Unlock Garrison Jukebox
 					i(122613, {	-- Stash of Dusty Music Rolls
@@ -2339,7 +2341,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(2, {
+					crit(27580, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2351,7 +2353,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(2, {
+					crit(27601, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -2526,7 +2528,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(6, {
+					crit(27599, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2538,7 +2540,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(6, {
+					crit(27605, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -2668,7 +2670,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1, {
+					crit(27579, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2680,7 +2682,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {
+					crit(27600, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -2716,7 +2718,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(4, {
+					crit(27582, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2728,7 +2730,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(4, {
+					crit(27603, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -3103,7 +3105,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(5, {
+					crit(27584, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -3115,7 +3117,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(5, {
+					crit(27604, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -3279,6 +3281,146 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 33657,	-- Moving In
 			}),
+			q(38193, {	-- Missive: Assault on the Broken Precipice
+				["provider"] = { "i", 122423 },	-- Scouting Missive: Broken Precipice
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38196, {	-- Missive: Assault on Darktide Roost
+				["provider"] = { "i", 122417 },	-- Scouting Missive: Darktide Roost
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38192, {	-- Missive: Assault on the Everbloom Wilds
+				["provider"] = { "i", 122404 },	-- Scouting Missive: Everbloom Wilds
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38191, {	-- Missive: Assault on the Iron Siegeworks
+				["provider"] = { "i", 122406 },	-- Scouting Missive: Iron Siegeworks
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38198, {	-- Missive: Assault on Lost Veil Anzu
+				["provider"] = { "i", 122414 },	-- Scouting Missive: Lost Veil Anzu
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38190, {	-- Missive: Assault on Magnarok
+				["provider"] = { "i", 122399 },	-- Scouting Missive: Magnarok
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38195, {	-- Missive: Assault on Mok'gol Watchpost
+				["provider"] = { "i", 122422 },	-- Scouting Missive: Mok'gol Watchpost
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38199, {	-- Missive: Assault on Pillars of Fate
+				["provider"] = { "i", 122409 },	-- Scouting Missive: Pillars of Fate
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38201, {	-- Missive: Assault on Shattrath Harbor
+				["provider"] = { "i", 122410 },	-- Scouting Missive: Shattrath Harbor
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38200, {	-- Missive: Assault on Skettis
+				["provider"] = { "i", 122407 },	-- Scouting Missive: Skettis
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38197, {	-- Missive: Assault on Socrethar's Rise
+				["provider"] = { "i", 122415 },	-- Scouting Missive: Socrethar's Rise
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38189, {	-- Missive: Assault on Stonefury Cliffs
+				["provider"] = { "i", 122401 },	-- Scouting Missive: Stonefury Cliffs
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(40944, {	-- Missive: Assault on the Heart of Shattrath
+				["provider"] = { "i", 133883 },	-- Scouting Missive: The Heart of Shattrath
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(40942, {	-- Missive: Assault on the Pit
+				["provider"] = { "i", 133878 },	-- Scouting Missive: The Pit
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38180, {	-- Missive: Assault on the Broken Precipice
+				["provider"] = { "i", 122424 },	-- Scouting Missive: Broken Precipice
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38182, {	-- Missive: Assault on Darktide Roost
+				["provider"] = { "i", 122418 },	-- Scouting Missive: Darktide Roost
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38179, {	-- Missive: Assault on the Everbloom Wilds
+				["provider"] = { "i", 122400 },	-- Scouting Missive: Everbloom Wilds
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38178, {	-- Missive: Assault on the Iron Siegeworks
+				["provider"] = { "i", 122402 },	-- Scouting Missive: Iron Siegeworks
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38184, {	-- Missive: Assault on Lost Veil Anzu
+				["provider"] = { "i", 122413 },	-- Scouting Missive: Lost Veil Anzu
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38177, {	-- Missive: Assault on Magnarok
+				["provider"] = { "i", 122403 },	-- Scouting Missive: Magnarok
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38181, {	-- Missive: Assault on Mok'gol Watchpost
+				["provider"] = { "i", 122421 },	-- Scouting Missive: Mok'gol Watchpost
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38185, {	-- Missive: Assault on Pillars of Fate
+				["provider"] = { "i", 122411 },	-- Scouting Missive: Pillars of Fate
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38187, {	-- Missive: Assault on Shattrath Harbor
+				["provider"] = { "i", 122412 },	-- Scouting Missive: Shattrath Harbor
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38186, {	-- Missive: Assault on Skettis
+				["provider"] = { "i", 122408 },	-- Scouting Missive: Skettis
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38183, {	-- Missive: Assault on Socrethar's Rise
+				["provider"] = { "i", 122416 },	-- Scouting Missive: Socrethar's Rise
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(38176, {	-- Missive: Assault on Stonefury Cliffs
+				["provider"] = { "i", 122405 },	-- Scouting Missive: Stonefury Cliffs
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(40943, {	-- Missive: Assault on the Heart of Shattrath
+				["provider"] = { "i", 133884 },	-- Scouting Missive: The Heart of Shattrath
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
+			q(40941, {	-- Missive: Assault on the Pit
+				["provider"] = { "i", 133876 },	-- Scouting Missive: The Pit
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
 		}),
 	})),
 }));
@@ -3291,6 +3433,14 @@ root(ROOTS.HiddenQuestTriggers, tier(WOD_TIER, {
 		q(37311),	-- Drafting Table Interact
 		q(46952),	-- Flag Garrison Dog Quest
 		q(36640),	-- Followers Obtained
+		q(36530),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
+		q(36550),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
+		q(36529),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
+		q(36551),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
+		q(36538),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
+		q(36559),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
+		q(36560),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
+		q(36561),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
 		q(37198),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
 		q(37199),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggers after unlocking the mine, picking herbs

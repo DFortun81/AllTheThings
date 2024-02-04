@@ -294,10 +294,3 @@ root(ROOTS.ExpansionFeatures,
 		}),
 	})
 );
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		n(LEGENDARIES, {
-			i(138489),	-- Kargath's Sacrified Hands
-		}),
-	}),
-});

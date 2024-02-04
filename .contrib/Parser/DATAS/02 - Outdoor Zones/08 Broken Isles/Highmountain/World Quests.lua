@@ -22,15 +22,15 @@ root(ROOTS.Zones, {
 				}),
 				q(41208, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41209, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41210, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
-					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
+					["sym"] = {{"select","headerID",191970}},	-- Infernal Brimstone [Rank 3]
 				}),
 				q(41706),	-- Briny Waters
 				q(41233, {	-- Bristled Bear Skin

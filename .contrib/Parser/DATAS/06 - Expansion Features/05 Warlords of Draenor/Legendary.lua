@@ -285,7 +285,7 @@ root(ROOTS.ExpansionFeatures,
 						"removed 7.0.3.22248",
 					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, ach(9642, { crit(2) }) ),	-- Chapter III: The Foundry Falls
+						un(REMOVED_FROM_GAME, ach(9642, { crit(26488) }) ),	-- Chapter III: The Foundry Falls
 					},
 				}),
 				q(36009, {	-- Heart of the Fury
@@ -343,7 +343,7 @@ root(ROOTS.ExpansionFeatures,
 						"removed 7.0.3.22248",
 					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, ach(9642, { crit(1) }) ),	-- Chapter III: The Foundry Falls
+						un(REMOVED_FROM_GAME, ach(9642, { crit(26487) }) ),	-- Chapter III: The Foundry Falls
 					},
 				}),
 				q(36016, {	-- The Unbroken Circle

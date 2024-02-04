@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 		m(SURAMAR, {
 			n(PROFESSIONS, {
 				prof(COOKING, {
-					i(133817, {	-- Recipe: Suramar Surf and Turf
+					i(133817, {	-- Recipe: Suramar Surf and Turf [Rank 1] (RECIPE!)
 						["cost"] = {
 							{ "i", 141011, 1 },	-- Recipe: Surf
 							{ "i", 141012, 1 },	-- Recipe: Turf

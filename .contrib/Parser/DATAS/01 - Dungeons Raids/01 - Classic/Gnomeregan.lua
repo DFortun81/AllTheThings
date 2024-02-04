@@ -1,17 +1,28 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if SEASON_OF_DISCOVERY
+local SOD_DISABLE_NORMAL_MODE = [[function(t)
+	if getmetatable(ATTClassicSettings.Unobtainable).__index[1605] then
+		t.u = 2;
+		t.OnUpdate = nil;
+	end
+end]];
+-- #endif
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(231, {	-- Gnomeregan
 		-- #if BEFORE MOP
 		["lore"] = "Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",
+		-- #endif
+		-- #if BEFORE 4.0.3
+		["zone-text-areaID"] = 133,	-- Gnomeregan
 		-- #endif
 		["coord"] = { 30.11, 74.64, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
 		["mapID"] = GNOMEREGAN,
 		["maps"] = { 227, 228, 229, },
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
-			n(QUESTS, {
+			n(QUESTS, bubbleDownSelf({ ["OnUpdate"] = SOD_DISABLE_NORMAL_MODE }, {
 				q(2904, {	-- A Fine Mess
 					["qg"] = 7850,	-- Kernobee
 					["timeline"] = { "removed 4.0.3" },
@@ -69,7 +80,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 24,
 					["groups"] = {
 						objective(1, {	-- 0/12 Essential Artificial
-							["provider"] = { "i", 9278 },	-- Essential Artificial
+							["providers"] = {
+								{ "i",   9278 },	-- Essential Artificial
+								{ "o", 142344 },	-- Essential Artificial
+							},
+							["description"] = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
 						}),
 					},
 				}),
@@ -342,7 +357,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(66004),	-- Barechus' Greaves
 						i(65963),	-- Temple's Vest
 						i(65939),	-- Murd Doc's Leggings
-						i(65913),	-- Hann Ibal's Epaulettes
+						i(65913),	-- Hann Ibal's Epaulets
 						i(131624, {	-- Barechus' Chainmail
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -394,7 +409,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(66004),	-- Barechus' Greaves
 						i(65963),	-- Temple's Vest
 						i(65939),	-- Murd Doc's Leggings
-						i(65913),	-- Hann Ibal's Epaulettes
+						i(65913),	-- Hann Ibal's Epaulets
 						i(131624, {	-- Barechus' Chainmail
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -471,7 +486,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
-			}),
+			})),
 			n(REWARDS, {
 				["description"] = "Bring any Grime-Encrusted items that you find to a Sparklematic 5200 to be cleaned.\n\nGrime-Encrusted Objects become Sparklematic-Wrapped Boxes.",
 				["groups"] = {
@@ -555,6 +570,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				i(9491),	-- Hotshot Pilot's Gloves
 				i(9508, {	-- Mechbuilder's Overalls
+					-- TODO: new itemdb file required to remove this requirement
+					-- #if AFTER 10.1.7
+					["_drop"] = { "requireSkill" },
+					-- #endif
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
 						6212,	-- Dark Iron Agent
@@ -632,6 +651,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),
+				-- #if AFTER 10.1.7
+				i(9444, {	-- Techbot CPU Shell
+					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
+				}),
+				-- #endif
 				i(9485, {	-- Vibroblade
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
@@ -680,15 +704,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.3" },
 				["groups"] = {
 					i(9277),	-- Techbot's Memory Core
+					-- #if BEFORE 10.1.7
 					i(9444, {	-- Techbot CPU Shell
 						["timeline"] = { "removed 4.0.3" },
 					}),
-				},
-			}),
-			o(142344, {	-- Artificial Extrapolator
-				["description"] = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
-				["groups"] = {
-					i(9278),	-- Essential Artificial
+					-- #endif
 				},
 			}),
 			e(419, {	-- Grubbis
@@ -713,7 +733,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(9282),	-- Blue Punch Card
 					i(14639, {	-- Schematic: Minor Recombobulator
 						["description"] = "If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",
-						["requireSkill"] = ENGINEERING,
 					}),
 				},
 			}),
@@ -760,7 +779,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(4413, {	-- Schematic: Discombobulator Ray
 						["description"] = "If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",
 						["cost"] = { { "i", 9327, 1 } },	-- Security DELTA Data Access Card
-						["requireSkill"] = ENGINEERING,
 					}),
 				},
 			}),

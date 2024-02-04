@@ -52,30 +52,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56747 },	-- Gu Cloudstrike
 					["g"] = {
 						-- Available
-						i(144127, { -- Cloudstrike Pendant
+						i(144127, {	-- Cloudstrike Pendant
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143961, { -- Azure Serpent Chestguard
+						i(143961, {	-- Azure Serpent Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144126, { -- Star Summoner Bracers
+						i(144126, {	-- Star Summoner Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144096, { -- Sparkbreath Girdle
+						i(144096, {	-- Sparkbreath Girdle
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143978, { -- Leggings of the Charging Soul
+						i(143978, {	-- Leggings of the Charging Soul
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80909, { -- Azure Serpent Chestguard
+						i(80909, {	-- Azure Serpent Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80910, { -- Leggings of the Charging Soul
+						i(80910, {	-- Leggings of the Charging Soul
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80908, { -- Sparkbreath Girdle
+						i(80908, {	-- Sparkbreath Girdle
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -84,30 +84,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56541 },	-- Master Snowdrift
 					["g"] = {
 						-- Available
-						i(144129, { -- Eye of the Tornado
+						i(144129, {	-- Eye of the Tornado
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144106, { -- Gauntlets of Resolute Fury
+						i(144106, {	-- Gauntlets of Resolute Fury
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144128, { -- Heart of Fire
+						i(144128, {	-- Heart of Fire
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144097, { -- Quivering Heart Girdle
+						i(144097, {	-- Quivering Heart Girdle
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144110, { -- Snowdrift's Bladed Staff
+						i(144110, {	-- Snowdrift's Bladed Staff
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80912, { -- Gauntlets of Resolute Fury
+						i(80912, {	-- Gauntlets of Resolute Fury
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80911, { -- Quivering Heart Girdle
+						i(80911, {	-- Quivering Heart Girdle
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80937, { -- Snowdrift's Bladed Staff
+						i(80937, {	-- Snowdrift's Bladed Staff
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -116,30 +116,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56719 },	-- Sha of Violence
 					["g"] = {
 						-- Available
-						i(144131, { -- Bladed Smoke Bracers
+						i(144131, {	-- Bladed Smoke Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144099, { -- Crescent of Ichor
+						i(144099, {	-- Crescent of Ichor
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144107, { -- Gloves of Enraged Slaughter
+						i(144107, {	-- Gloves of Enraged Slaughter
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144130, { -- Necklace of Disorientation
+						i(144130, {	-- Necklace of Disorientation
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143985, { -- Spike-Soled Stompers
+						i(143985, {	-- Spike-Soled Stompers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80883, { -- Crescent of Ichor
+						i(80883, {	-- Crescent of Ichor
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80913, { -- Gloves of Enraged Slaughter
+						i(80913, {	-- Gloves of Enraged Slaughter
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80915, { -- Spike-Soled Stompers
+						i(80915, {	-- Spike-Soled Stompers
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -149,57 +149,57 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6469),	-- Shado-Pan Monastery
-						i(143986, { -- Blastwalker Footguards
+						i(143986, {	-- Blastwalker Footguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143979, { -- Darkbinder Leggings
+						i(143979, {	-- Darkbinder Leggings
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143962, { -- Hateshatter Chestplate
+						i(143962, {	-- Hateshatter Chestplate
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144215, { -- Ka'eng, Breath of the Shadow
+						i(144215, {	-- Ka'eng, Breath of the Shadow
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144108, { -- Mindbender Plate Gloves
+						i(144108, {	-- Mindbender Plate Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144133, { -- Ring of Malice
+						i(144133, {	-- Ring of Malice
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143990, { -- Robes of Fevered Dreams
+						i(143990, {	-- Robes of Fevered Dreams
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144132, { -- Seal of Hateful Meditation
+						i(144132, {	-- Seal of Hateful Meditation
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143981, { -- Shadowspine Shoulderguards
+						i(143981, {	-- Shadowspine Shoulderguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144103, { -- Shield of Blind Hate
+						i(144103, {	-- Shield of Blind Hate
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144109, { -- Warmace of Taran Zhu
+						i(144109, {	-- Warmace of Taran Zhu
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80917, { -- Blastwalker Footguards
+						i(80917, {	-- Blastwalker Footguards
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80919, { -- Darkbinder Leggings
+						i(80919, {	-- Darkbinder Leggings
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80918, { -- Mindbender Plate Gloves
+						i(80918, {	-- Mindbender Plate Gloves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80916, { -- Shadowspine Shoulderguards
+						i(80916, {	-- Shadowspine Shoulderguards
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80935, { -- Shield of Blind Hate
+						i(80935, {	-- Shield of Blind Hate
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80936, { -- Warmace of Taran Zhu
+						i(80936, {	-- Warmace of Taran Zhu
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -210,36 +210,36 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56747 },	-- Gu Cloudstrike
 					["g"] = {
 						-- Available
-						i(143961, { -- Azure Serpent Chestguard
+						i(143961, {	-- Azure Serpent Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144127, { -- Cloudstrike Pendant
+						i(144127, {	-- Cloudstrike Pendant
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143978, { -- Leggings of the Charging Soul
+						i(143978, {	-- Leggings of the Charging Soul
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144096, { -- Sparkbreath Girdle
+						i(144096, {	-- Sparkbreath Girdle
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144126, { -- Star Summoner Bracers
+						i(144126, {	-- Star Summoner Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81180, { -- Cloudstrike Pendant
+						i(81180, {	-- Cloudstrike Pendant
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81110, { -- Azure Serpent Chestguard
+						i(81110, {	-- Azure Serpent Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81179, { -- Star Summoner Bracers
+						i(81179, {	-- Star Summoner Bracers
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81086, { -- Sparkbreath Girdle
+						i(81086, {	-- Sparkbreath Girdle
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81092, { -- Leggings of the Charging Soul
+						i(81092, {	-- Leggings of the Charging Soul
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -249,30 +249,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6477),	-- Respect
-						i(144129, { -- Eye of the Tornado
+						i(144129, {	-- Eye of the Tornado
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144106, { -- Gauntlets of Resolute Fury
+						i(144106, {	-- Gauntlets of Resolute Fury
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144128, { -- Heart of Fire
+						i(144128, {	-- Heart of Fire
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144097, { -- Quivering Heart Girdle
+						i(144097, {	-- Quivering Heart Girdle
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144110, { -- Snowdrift's Bladed Staff
+						i(144110, {	-- Snowdrift's Bladed Staff
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81108, { -- Snowdrift's Bladed Staff
+						i(81108, {	-- Snowdrift's Bladed Staff
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81101, { -- Gauntlets of Resolute Fury
+						i(81101, {	-- Gauntlets of Resolute Fury
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81087, { -- Quivering Heart Girdle
+						i(81087, {	-- Quivering Heart Girdle
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -282,36 +282,36 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6472),	-- The Obvious Solution
-						i(144131, { -- Bladed Smoke Bracers
+						i(144131, {	-- Bladed Smoke Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144099, { -- Crescent of Ichor
+						i(144099, {	-- Crescent of Ichor
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144107, { -- Gloves of Enraged Slaughter
+						i(144107, {	-- Gloves of Enraged Slaughter
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144130, { -- Necklace of Disorientation
+						i(144130, {	-- Necklace of Disorientation
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143985, { -- Spike-Soled Stompers
+						i(143985, {	-- Spike-Soled Stompers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81185, { -- Bladed Smoke Bracers
+						i(81185, {	-- Bladed Smoke Bracers
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81089, { -- Crescent of Ichor
+						i(81089, {	-- Crescent of Ichor
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81102, { -- Gloves of Enraged Slaughter
+						i(81102, {	-- Gloves of Enraged Slaughter
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81084, { -- Necklace of Disorientation
+						i(81084, {	-- Necklace of Disorientation
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81113, { -- Spike-Soled Stompers
+						i(81113, {	-- Spike-Soled Stompers
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -323,66 +323,66 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						ach(6471),	-- Hate Leads to Suffering
 						ach(6470),	-- Heroic: Shado-Pan Monastery
 						ach(6767),	-- Heroic: Shado-Pan Monastery Guild Run
-						i(143986, { -- Blastwalker Footguards
+						i(143986, {	-- Blastwalker Footguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143979, { -- Darkbinder Leggings
+						i(143979, {	-- Darkbinder Leggings
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143962, { -- Hateshatter Chestplate
+						i(143962, {	-- Hateshatter Chestplate
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144215, { -- Ka'eng, Breath of the Shadow
+						i(144215, {	-- Ka'eng, Breath of the Shadow
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144108, { -- Mindbender Plate Gloves
+						i(144108, {	-- Mindbender Plate Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144133, { -- Ring of Malice
+						i(144133, {	-- Ring of Malice
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143990, { -- Robes of Fevered Dreams
+						i(143990, {	-- Robes of Fevered Dreams
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144132, { -- Seal of Hateful Meditation
+						i(144132, {	-- Seal of Hateful Meditation
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143981, { -- Shadowspine Shoulderguards
+						i(143981, {	-- Shadowspine Shoulderguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144103, { -- Shield of Blind Hate
+						i(144103, {	-- Shield of Blind Hate
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144109, { -- Warmace of Taran Zhu
+						i(144109, {	-- Warmace of Taran Zhu
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81114, { -- Blastwalker Footguards
+						i(81114, {	-- Blastwalker Footguards
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81093, { -- Darkbinder Leggings
+						i(81093, {	-- Darkbinder Leggings
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81187, { -- Hateshatter Chestplate
+						i(81187, {	-- Hateshatter Chestplate
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(87543, { -- Ka'eng, Breath of the Shadow
+						i(87543, {	-- Ka'eng, Breath of the Shadow
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81103, { -- Mindbender Plate Gloves
+						i(81103, {	-- Mindbender Plate Gloves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81188, { -- Robes of Fevered Dreams
+						i(81188, {	-- Robes of Fevered Dreams
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81099, { -- Shadowspine Shoulderguards
+						i(81099, {	-- Shadowspine Shoulderguards
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81096, { -- Shield of Blind Hate
+						i(81096, {	-- Shield of Blind Hate
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81107, { -- Warmace of Taran Zhu
+						i(81107, {	-- Warmace of Taran Zhu
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},

@@ -4,32 +4,35 @@
 root(ROOTS.BlackMarket, {
 	n(VENDORS, bubbleDown({
 			["sym"] = {
-				{"select", "headerID", -94},		-- Select BMAH header
+				{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
 				{"pop"},							-- Pop the header
 				{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			},
 		},{
-		-- #IF BEFORE SHADOWLANDS
-		n(142062, {	-- Madam Gosu [Boralus - Alliance]
-			["coord"] = { 56.71, 46.32, BORALUS },
-		}),
-		-- #ENDIF
+		-- #IF BEFORE BFA
 		n(103791, {	-- Madam Gosu [Rogue Class Hall]
 			["coord"] = { 57.91, 46.28, 626 },
 		}),
-		-- #IF BEFORE SHADOWLANDS
-		n(135709, {	-- Madam Goya [Dazar'alor - Horde]
-			["coord"] = { 63.54, 62.68, ZULDAZAR },
-		}),
-		-- #ENDIF
-		n(160081, {	-- Ta'xera <Matron of the Market>
-			["coord"] = { 52.40, 83.80, REVENDRETH },
-		}),
-		-- #IF BEFORE BFA
 		n(100986, {	-- Madam Goya [Underbelly]
 			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
 		-- #ENDIF
+		-- #IF BEFORE SHADOWLANDS
+		n(142062, {	-- Madam Gosu [Boralus - Alliance]
+			["coord"] = { 56.71, 46.32, BORALUS },
+		}),
+		n(135709, {	-- Madam Goya [Dazar'alor - Horde]
+			["coord"] = { 63.54, 62.68, ZULDAZAR },
+		}),
+		-- #ENDIF
+		-- #IF BEFORE DF
+		n(160081, {	-- Ta'xera <Matron of the Market>
+			["coord"] = { 52.40, 83.80, REVENDRETH },
+		}),
+		-- #ENDIF
+		n(189676, {	-- Madam Goya
+			["coord"] = { 20.2, 49.1, VALDRAKKEN },
+		}),
 		-- n(94829, {	-- Zhang Yeoh [Garrison]
 		-- 	["coords"] = {
 		-- 		{ 44.96, 50.07, FROSTWALL },
@@ -43,14 +46,14 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
 	}),
 	filter(ILLUSIONS, {
-		i(138838),	-- Illusion: Deathfrost
-		i(118572),	-- Illusion: Flame of Ragnaros
-		i(128649),	-- Illusion: Winter's Grasp
+		i(138838),	-- Illusion: Deathfrost (ILLUSION!)
+		i(118572),	-- Illusion: Flame of Ragnaros (ILLUSION!)
+		i(128649),	-- Illusion: Winter's Grasp (ILLUSION!)
 	}),
 	filter(MOUNTS, {
 		i(143643),	-- Abyss Worm (MOUNT!)
 		i(168830, {	-- Aerial Unit R-21/X
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(68823),	-- Armored Razzashi Raptor (MOUNT!)
 		i(32458),	-- Ashes of Al'ar (MOUNT!)
@@ -78,31 +81,31 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(63040),	-- Drake of the North Wind (MOUNT!)
 		i(63041),	-- Drake of the South Wind (MOUNT!)
 		i(166705, {	-- Glacial Tidestorm
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(43959),	-- Grand Black War Mammoth (A) (MOUNT!)
 		i(44083),	-- Grand Black War Mammoth (H) (MOUNT!)
 		i(44707),	-- Green Proto-Drake (MOUNT!)
 		i(166518, {	-- GMOD
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 		i(94231),	-- Jade Primordial Direhorn (MOUNT!)
 		i(168826, {	-- Mechagon Peacekeeper
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(163042),  -- Mighty Caravan Brutosaur (MOUNT!)
 		i(159921, {	-- Mummified Raptor Skull
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(174872, {	-- Ny'alotha Allseer
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(49636),	-- Onyxian Drake (MOUNT!)
 		i(44175),	-- Plagued Proto-Drake (MOUNT!)
 		i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 		i(159842, {	-- Sharkbait
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(32768),	-- Raven Lord (MOUNT!)
 		i(45802),	-- Rusted Proto-Drake (MOUNT!)
@@ -124,7 +127,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(19902),	-- Swift Zulian Tiger (MOUNT!)
 		i(54068),	-- Wooly White Rhino (MOUNT!)
 		i(160829, {	-- Underrot Crawg Harness
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(147805),	-- Valarjar Stormwing (MOUNT!)
 		i(152790),	-- Vile Fiend (MOUNT!)
@@ -241,7 +244,9 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(48126),	-- Razzashi Hatchling (PET!)
 		i(34492),	-- Rocket Chicken (PET!)
 		i(45606),	-- Sen'jin Fetish (PET!)
-		i(69992),	-- Shimmering Wyrmling (PET!)
+		i(69992, {	-- Shimmering Wyrmling (PET!)
+			["description"] = "Can also be bought from the Wrath of the Lich King Argent Tournament Vendor.\n\nBlizzard made 3 different Items which all learn the same pet.",
+		}),
 		i(94152),	-- Son of Animus (PET!)
 		i(38050),	-- Ethereal Soul-Trader (PET!)
 		i(49343),	-- Spectral Tiger Cub (PET!)
@@ -253,18 +258,18 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(49287),	-- Tuskarr Kite (PET!)
 	}),
 	filter(RECIPES, {
-		i(86238),	-- Pattern: Chestguard of Nemeses
-		i(86272),	-- Pattern: Fists of Lightning
-		i(86380),	-- Pattern: Imperial Silk Gloves
-		i(86381),	-- Pattern: Legacy of the Emperor
-		i(86279),	-- Pattern: Liferuned Leather Gloves
-		i(86280),	-- Pattern: Murderer's Gloves
-		i(86281),	-- Pattern: Nightfire Robe
-		i(86283),	-- Pattern: Raiment of Blood and Bone
-		i(86284),	-- Pattern: Raven Lord's Gloves
-		i(86379),	-- Pattern: Robe of Eternal Rule
-		i(86297),	-- Pattern: Stormbreaker Chestguard
-		i(86382),	-- Pattern: Touch of the Light
+		i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+		i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+		i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+		i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+		i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+		i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+		i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+		i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+		i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+		i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+		i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+		i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 		i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
 		i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
 		i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
@@ -387,7 +392,6 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(38578),	-- The Flag of Ownership (TOY!)
 	}),
 	n(WEAPONS, {
-		i(110591, { ["timeline"] = { "created 6.0.1.18125" }}),	-- Flintlocke's Blasthammer
 		i(39769),	-- Arcanite Ripper
 		i(90176),	-- Flintlocke's Blasthammer
 		i(44924),	-- Sun-Lute of the Phoenix King
@@ -430,7 +434,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 	i(141006),	-- The First Satyr's Spaulders
 	i(169430, {	--  Unclaimed Black Market Container
 		["sym"] = {
-			{"select", "headerID", -94},		-- Select BMAH header
+			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 169430 },			-- Remove itself from the final list

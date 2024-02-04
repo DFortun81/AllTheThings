@@ -14,15 +14,15 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					"removed 8.0.1",
 				},
 				["g"] = {
-					crit(1),	-- Eye of Azshara
-					crit(2),	-- Darkheart Thicket
-					crit(3),	-- Neltharion's Lair
-					crit(4),	-- Halls of Valor
-					crit(5),	-- Vault of the Wardens
-					crit(6),	-- Black Rook Hold
-					crit(7),	-- Maw of Souls
-					crit(8),	-- The Arcway
-					crit(9),	-- Court of Stars
+					crit(32353),	-- Eye of Azshara
+					crit(32359),	-- Darkheart Thicket
+					crit(32360),	-- Neltharion's Lair
+					crit(32358),	-- Halls of Valor
+					crit(32361),	-- Vault of the Wardens
+					crit(32356),	-- Black Rook Hold
+					crit(32357),	-- Maw of Souls
+					crit(32355),	-- The Arcway
+					crit(32354),	-- Court of Stars
 				}
 			}),
 		}),

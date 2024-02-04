@@ -8,17 +8,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\achievement_zone_howlingfjord_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(3, {	-- Beegle Blastfuse
-								["coord"] = { 28.6, 33.8, HOWLING_FJORD },
-								["cr"] = 66635,	-- Beegle Blastfuse <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1263),	-- Explore Howling Fjord
 					ach(1254, {	-- Friend or Fowl?
 						["coords"] = {
@@ -65,53 +54,58 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- The Ill-Equipped Port
-								["sourceQuests"] = {
-									11291,	-- To Westguard Keep!
-									-- TODO:: confirm the quest below
-									11436,	-- Let's Go Surfing Now
-								},
+							crit(38976, {	-- The Ill-Equipped Port
+								["sourceQuest"] = 11291,	-- To Westguard Keep!
 							}),
-							crit(2, {	-- Descendants of the Vrykul
+							crit(38977, {	-- The Ill-Equipped Port
+								["sourceQuest"] = 11436,	-- Let's Go Surfing Now
+							}),
+							crit(38975, {	-- Descendants of the Vrykul
 								["sourceQuest"] = 11344,	-- Anguish of Nifflevar
 							}),
-							crit(3, {	-- Iron Rune Constructs
+							crit(38978, {	-- Iron Rune Constructs
 								["sourceQuest"] = 11501,	-- News From the East
 							}),
-							crit(4, {	-- Doom Approaches
+							crit(38979, {	-- Doom Approaches
 								["sourceQuest"] = 11572,	-- Return to Atuik
 							}),
-							crit(5, {	-- The End of Jonah Sterling
+							crit(38980, {	-- The End of Jonah Sterling
 								["sourceQuest"] = 11471,	-- The Jig is Up
 							}),
-							crit(6, {	-- The Debt Collector
+							crit(38981, {	-- The Debt Collector
 								["sourceQuest"] = 11467,	-- Dead Man's Debt
 							}),
-							crit(7, {	-- A New Plague
+							crit(38982, {	-- A New Plague
 								["sourceQuest"] = 11332,	-- Mission: Plague This!
 							}),
-							crit(8, {	-- The Conqueror of Skorn
+							crit(38983, {	-- The Conqueror of Skorn
 								["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
 							}),
-							crit(9, {	-- The Scourge and the Vrykul
-								["sourceQuests"] = {
-									11239,	-- In Service of the Light
-									11236,	-- Necro Overlord Mezhen
-									11432,	-- Sleeping Giants
-									11452,	-- The Slumbering King
-									11238,	-- The Frost Wyrm and its Master
-								},
+							crit(38984, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11452,	-- The Slumbering King
 							}),
-							crit(10, {	-- Sisters of the Fjord
+							crit(38985, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11236,	-- Necro Overlord Mezhen
+							}),
+							crit(38986, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11239,	-- In Service of the Light
+							}),
+							crit(38987, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11432,	-- Sleeping Giants
+							}),
+							crit(38988, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11238,	-- The Frost Wyrm and its Master
+							}),
+							crit(38989, {	-- Sisters of the Fjord
 								["sourceQuest"] = 11428,	-- Keeper Witherleaf
 							}),
-							crit(11, {	-- The Iron Dwarves
-								["sourceQuests"] = {
-									11359,	-- Demolishing Megalith
-									11348,	-- The Rune of Command
-								},
+							crit(38991, {	-- The Iron Dwarves
+								["sourceQuest"] = 11359,	-- Demolishing Megalith
 							}),
-							crit(12, {	-- Alpha Worg
+							crit(38990, {	-- The Iron Dwarves
+								["sourceQuest"] = 11348,	-- The Rune of Command
+							}),
+							crit(38992, {	-- Alpha Worg
 								["sourceQuest"] = 11326,	-- Alpha Worg
 							}),
 						},
@@ -148,49 +142,55 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- Visitors from the Keep
+							crit(38993, {	-- Visitors from the Keep
 								["sourceQuest"] = 11234,	-- Report to Anselm
 							}),
-							crit(2, {	-- Assassinating Bjorn Halgurdsson
+							crit(38994, {	-- Assassinating Bjorn Halgurdsson
 								["sourceQuest"] = 12481,	-- Adding Injury to Insult
 							}),
-							crit(3, {	-- A New Plague
+							crit(38995, {	-- A New Plague
 								["sourceQuest"] = 11307,	-- Field Test
 							}),
-							crit(4, {	-- Doom Approaches
+							crit(38979, {	-- Doom Approaches
 								["sourceQuest"] = 11572,	-- Return to Atuik
 							}),
-							crit(5, {	-- The End of Jonah Sterling
+							crit(38980, {	-- The End of Jonah Sterling
 								["sourceQuest"] = 11471,	-- The Jig is Up
 							}),
-							crit(6, {	-- The Debt Collector
+							crit(38981, {	-- The Debt Collector
 								["sourceQuest"] = 11467,	-- Dead Man's Debt
 							}),
-							crit(7, {	-- Volatile Viscera
+							crit(38996, {	-- Volatile Viscera
 								["sourceQuest"] = 11310,	-- Warning: Some Assembly Required
 							}),
-							crit(8, {	-- Sisters of the Fjord
+							crit(38989, {	-- Sisters of the Fjord
 								["sourceQuest"] = 11428,	-- Keeper Witherleaf
 							}),
-							crit(9, {	-- The Iron Dwarves
-								["sourceQuests"] = {
-									11367,	-- Demolishing Megalith
-									11352,	-- The Rune of Command
-								},
+							crit(38997, {	-- The Iron Dwarves
+								["sourceQuest"] = 11352,	-- The Rune of Command
 							}),
-							crit(10, {	-- The Conqueror of Skorn
+							crit(38998, {	-- The Iron Dwarves
+								["sourceQuest"] = 11367,	-- Demolishing Megalith
+							}),
+							crit(38999, {	-- The Conqueror of Skorn
 								["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
 							}),
-							crit(11, {	-- The Scourge and the Vrykul
-								["sourceQuests"] = {
-									11264,	-- Necro Overlord Mezhen
-									11433,	-- Sleeping Giants
-									11267,	-- The Frost Wyrm and its Master
-									11453,	-- The Slumbering King
-									11268,	-- The Walking Dead
-								},
+							crit(39001, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11264,	-- Necro Overlord Mezhen
 							}),
-							crit(12, {	-- Alpha Worg
+							crit(39002, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11268,	-- The Walking Dead
+							}),
+							crit(39003, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11433,	-- Sleeping Giants
+							}),
+							crit(39004, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11453,	-- The Slumbering King
+							}),
+							crit(39005, {	-- The Scourge and the Vrykul
+								["sourceQuest"] = 11267,	-- The Frost Wyrm and its Master
+							}),
+							crit(39000, {	-- Alpha Worg
 								["sourceQuest"] = 11324,	-- Alpha Worg
 							}),
 						},
@@ -351,6 +351,11 @@ root(ROOTS.Zones, {
 						["cr"] = 23859,	-- Greer Orehammer <Gryphon Master>
 						["coord"] = { 31.2, 44.0, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
+						["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 					}),
 				}),
 				n(QUESTS, {
@@ -911,10 +916,11 @@ root(ROOTS.Zones, {
 						["qg"] = 28314,	-- Longrunner Nanik
 					}),
 					q(12298, {	-- High Commander Halford Wyrmbane
-						["coord"] = { 31.2, 43.9, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23859,	-- Greer Orehammer
 						["sourceQuest"] = 12297,	-- Of Traitors and Treason
+						["coord"] = { 31.2, 43.9, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(11329, {	-- I'll Try Anything!
 						["coord"] = { 60.2, 18.6, HOWLING_FJORD },
@@ -2240,12 +2246,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(30777),    -- Aldor Heavy Belt
-							i(30771),    -- Heavy Draenic Bracers
-							i(30765),    -- Heavy Draenic Breastplate
-							i(30775),    -- Layered Bone Shield
-							i(30781),    -- Mag'hari Chain Vest
-							i(30784),    -- Worn Mag'hari Gauntlets
+							i(30777),	-- Aldor Heavy Belt
+							i(30771),	-- Heavy Draenic Bracers
+							i(30765),	-- Heavy Draenic Breastplate
+							i(30775),	-- Layered Bone Shield
+							i(30781),	-- Mag'hari Chain Vest
+							i(30784),	-- Worn Mag'hari Gauntlets
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
@@ -2253,12 +2259,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.6, 63.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(30777),    -- Aldor Heavy Belt
-							i(30771),    -- Heavy Draenic Bracers
-							i(30765),    -- Heavy Draenic Breastplate
-							i(30775),    -- Layered Bone Shield
-							i(30781),    -- Mag'hari Chain Vest
-							i(30784),    -- Worn Mag'hari Gauntlets
+							i(30777),	-- Aldor Heavy Belt
+							i(30771),	-- Heavy Draenic Bracers
+							i(30765),	-- Heavy Draenic Breastplate
+							i(30775),	-- Layered Bone Shield
+							i(30781),	-- Mag'hari Chain Vest
+							i(30784),	-- Worn Mag'hari Gauntlets
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
@@ -2334,14 +2340,14 @@ root(ROOTS.Zones, {
 							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
 							i(44057),	-- Ivory-Reinforced Chestguard
 							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
-							i(44723, { -- Pengu (PET!)
+							i(44723, {	-- Pengu (PET!)
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1" },
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack
+							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 							i(44061),	-- Pigment-Stained Robes
 							i(44052),	-- Totemic Purification Rod
 							i(44051),	-- Traditional Flensing Knife

@@ -177,7 +177,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- #endif
 				}},
 				["g"] = {
-					i(203432, {	-- Bag of Spicy Pet Snacks
+					i(203432, {	-- Bag of Spicy Pet Snacks (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 				},
@@ -216,12 +216,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}, {	-- RENOWN 3 --
 						i(199648, {	-- Dragon Dinner Fork
 							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
+								{ "c", DRAGON_SUPPLIES, 150 },
+								{ "i", ADAMANT_SCALES, 3 },
 							},
 						}),
 						i(200750, {	-- Dragon Dinner Knife
 							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
+								{ "c", DRAGON_SUPPLIES, 150 },
+								{ "i", ADAMANT_SCALES, 3 },
 							},
 						}),
 						i(199649, {	-- Dragon Tea Set (TOY!)
@@ -253,7 +255,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(200751, {	-- Simple Silver Dragon Goblet
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 150 },
-								{ "i", DRACONIUM_ORE, 3 },
+								{ "i", DRACONIUM_ORE, 5 },
 							},
 						}),
 					}, {	-- RENOWN 4 --

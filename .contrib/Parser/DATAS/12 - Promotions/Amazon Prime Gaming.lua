@@ -15,23 +15,49 @@ root(ROOTS.Promotions, {
 	n(AMAZON_PRIME_GAMING, {
 		["timeline"] = { ADDED_10_0_7 },
 		["groups"] = {
-			i(49282, {	-- Big Battle Bear
+			i(49282, {	-- Big Battle Bear (MOUNT!)
 				["description"] = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
-				["timeline"] = { ADDED_10_0_7 },
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { ADDED_10_0_7,  "removed 10.0.7.48999"},
 			}),
 			i(54847, {	-- Lil' XT (PET!)
 				["description"] = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
-				["timeline"] = { ADDED_10_0_7, "removed 10.1.0.49741" },
+				["timeline"] = { "added 10.0.7.48999", "removed 10.1.0.49741" },
 			}),
 			i(45037, {	-- Epic Purple Shirt
 				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 29th 2023.",
-				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" },
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.50000" },
 			}),
-			i(71718, {	-- Swift Shorestrider
+			i(71718, {	-- Swift Shorestrider (MOUNT!)
 				["description"] = "Amazon Prime Gaming reward from June 29th 2023 till July 27th 2023.",
-				["timeline"] = { "added 10.1.0.50000", "removed 10.1.0.99999" },
+				["timeline"] = { "added 10.1.0.50000", "removed 10.1.5.50585" },
+			}),
+			i(34519, {	-- Silver Pig (PET!)
+				["description"] = "Amazon Prime Gaming reward from July 25th 2023 till August 24th 2023.",
+				["timeline"] = { "added 10.1.5.50585", "removed 10.1.5.50791" },
+			}),
+			i(38312, {	-- Tabard of Brilliance
+				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
+				["timeline"] = { "added 10.1.5.50791", "removed 10.1.7.51536" },
+			}),
+			i(49664, {	-- Zipao Tiger (PET!)
+				["description"] = "Amazon Prime Gaming reward from September 26th 2023 till October 24th 2023.",
+				["timeline"] = { "added 10.1.7.51536", "removed 10.1.7.51754" },
+			}),
+			i(95341, {	-- Armored Bloodwing (MOUNT!)
+				["description"] = "Amazon Prime Gaming reward from October 24th 2023 till November 28th 2023.",
+				["timeline"] = { "added 10.1.7.51754", "removed 10.2.0.52188" },
+			}),
+			i(38313, {	-- Tabard of Fury
+				["description"] = "Amazon Prime Gaming reward from November 28th 2023 till December 26th 2023.",
+				["timeline"] = { "added 10.2.0.52188", "removed 10.2.0.52649" },
+			}),
+			i(92724, {	-- Swift Windsteed (MOUNT!)
+				["description"] = "Amazon Prime Gaming reward from December 26th 2023 till January 30th 2024.",
+				["timeline"] = { "added 10.2.0.52649", "removed 10.2.5.53040" },
+			}),
+			i(160588, {	-- Cap'n Crackers (PET!)
+				["description"] = "Amazon Prime Gaming reward from January 30th 2024 till February 27th 2024.",
+				["timeline"] = { "added 10.2.5.53040", "removed 10.2.5.99999" },
 			}),
 		},
 	}),

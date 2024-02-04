@@ -2,13 +2,166 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, m(503,
-	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME },
-	{	-- Brawlgar Arena
+root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawlgar Arena
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
 	["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 	["groups"] = {
+		n(ACHIEVEMENTS, {
+			ach(7944, {		-- Bottle Service (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(13192, {	-- Brawler for Azeroth
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+				["g"] = {
+					title(209, {	-- Brawler <Name>
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(7942, {		-- Brawlin' and Shot Callin' (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9174, {		-- Brawlin' and Shot Callin' (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(8342, {		-- Collect Your Deck (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8343, {		-- Deck Your Collection (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+				["g"] = {
+					i(98543, {	-- Wraps of the Blood-Soaked Brawler
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+					}),
+				},
+			}),
+			ach(9177, {		-- Deck Your Collection (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["g"] = {
+					i(98543, {	-- Wraps of the Blood-Soaked Brawler
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+					}),
+				},
+			}),
+			ach(11570, {	-- Educated Guesser
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
+			}),
+			ach(7945, {		-- Haters Gonna Hate (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8337, {		-- Having a Brawl (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+			}),
+			ach(13194, {	-- I Am Thrall's Complete Lack Of Surprise
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_1_5 },
+			}),
+			ach(11572, {	-- I Am Thrall's Complete Lack Of Surprise (Season 3)
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(7943, {		-- I'm Your Number One Fan (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8338, {		-- I've Got the Biggest Brawls of Them All (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+			}),
+			ach(11566, {	-- King of the Guild (Season 3)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(8022, {		-- Now You're Just Showing Off (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9175, {		-- Now You're Just Showing Off (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(7950, {		-- Rabble Rabble Rabble (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(11573, {	-- Rumble Club
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+			}),
+			ach(7948, {		-- The First Rule of Brawler's Guild (Season 1 or 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_7_0_3 },
+			}),
+			ach(11559, {	-- The First Rule of Brawler's Guild
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_9_1_5 },
+			}),
+			ach(7939, {		-- The Second Rule of Brawler's Guild (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9173, {		-- The Second Rule of Brawler's Guild (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["g"] = {
+					i(93195, {	-- Brawler's Pass
+						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(11564, {	-- The Second Rule of Brawler's Guild (Season 3)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(13190, {	-- The Second Rule of Brawler's Guild
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+				["g"] = {
+					i(93195, {	-- Brawler's Pass
+						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(8020, {		-- You Are Not Your $#*@! Legplates (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9172, {		-- You Are Not Your $#*@! Legplates (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(11561, {	-- You Are Not Your $#*@! Legplates (Season 3)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(13188, {	-- You Are Not Your $#*@! Legplates
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+			}),
+			ach(11567, {	-- You Are Not The Contents Of Your Wallet
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+			}),
+		}),
+		n(FACTIONS, sharedData({
+			["races"] = HORDE_ONLY,
+		},{
+			faction(1374, {	-- Brawl'gar Arena (Season 1)
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			faction(1690, {	-- Brawl'gar Arena (Season 2)
+				["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
+			}),
+			faction(2010, {	-- Brawl'gar Arena (Season 3)
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1_LAUNCH },
+			}),
+			faction(2372, {	-- Brawl'gar Arena
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+			}),
+		})),
 		n(REWARDS, {
 			--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
 			i(92718, {	-- Brawler's Purse
@@ -376,7 +529,7 @@ root(ROOTS.WorldEvents, m(503,
 					i(142290, {	-- Rumble Card: Battle of the Brew
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
-							crit(3, {	-- Battle of the Brew
+							crit(35477, {	-- Battle of the Brew
 								["achievementID"] = 11573,	-- Rumble Club
 							}),
 						},
@@ -385,7 +538,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(114943, {	-- Grief Warden <Enmity Moose>
-								crit(2, {	-- Grief Warden
+								crit(35472, {	-- Grief Warden
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -395,7 +548,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(68251, {	-- Mazhareen
-								crit(1, {	-- Mazhareen
+								crit(35473, {	-- Mazhareen
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -405,7 +558,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(117102, {	-- Mindbreaker Gzzaj
-								crit(4, {	-- Mindbreaker Gzzaj
+								crit(35474, {	-- Mindbreaker Gzzaj
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -415,7 +568,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(115185, {	-- Penguin Stampede
-								crit(6, {	-- Penguin Stampede
+								crit(35478, {	-- Penguin Stampede
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -425,7 +578,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(115357, {	-- Senya
-								crit(5, {	-- Senya
+								crit(35476, {	-- Senya
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -434,7 +587,7 @@ root(ROOTS.WorldEvents, m(503,
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
-							crit(7, {	-- Stranglethorn Streak
+							crit(35475, {	-- Stranglethorn Streak
 								["achievementID"] = 11573,	-- Rumble Club
 							}),
 						},
@@ -447,4 +600,4 @@ root(ROOTS.WorldEvents, m(503,
 			}),
 		}),
 	},
-}));
+})));

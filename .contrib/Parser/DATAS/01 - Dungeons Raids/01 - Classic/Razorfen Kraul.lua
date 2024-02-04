@@ -6,6 +6,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",
 		-- #endif
+		["zone-text-areaID"] = 491,	-- Razorfen Kraul
 		-- #if AFTER CATA
 		["coord"] = { 41.0, 94.6, SOUTHERN_BARRENS },
 		-- #else
@@ -126,7 +127,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(1100, {	-- Lonebrow's Journal
-					["provider"] = { "i", 5790 },	-- Lonebrow's Journal
+					["providers"] = {
+						{ "i", 5790 },	-- Henrig Lonebrow's Journal
+						{ "o", 19861 },	-- Henrig Lonebrow's Journal
+					},
 					["coord"] = { 30, 24, THOUSAND_NEEDLES },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -247,6 +251,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(3172, {	-- Boar Intestines
+					["crs"] = {
+						4512,	-- Rotting Agam'ar
+						4514,	-- Raging Agam'ar
+						4511,	-- Agam'ar
+					},
+				}),
+				-- #endif
 				i(5801, {	-- Kraul Guano
 					["crs"] = {
 						-- #if AFTER 6.0.2
@@ -269,13 +282,19 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(1727),	-- Sword of Decay
 				i(776),		-- Vendetta
 				i(3569, {	-- Vicar's Robe
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { "removed 6.0.2", ADDED_10_1_7 },
+					-- #if BEFORE 6.0.2
 					["cr"] = 4517,	-- Death's Head Priest
+					-- #endif
 				}),
 				i(1978),	-- Wolfclaw Gloves
 			}),
 			n(74900, {	-- Kraulshaper Tukaar
+				-- #if BEFORE 10.1.7
 				["description"] = "This is a rare spawn that is not always present.",
+				-- #else
+				["description"] = "This NPC is always present since 10.1.7.\nTo obtain their drops you have to be in an appropriate loot spec or they will not drop. However their drops are also located on other bosses in the dungeon.",
+				-- #endif
 				["timeline"] = { "added 6.0.2" },
 				["groups"] = {
 					i(6689),	-- Wind Spirit Staff
@@ -315,9 +334,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["creatureID"] = 75001,	-- Hunter Bonetusk
 				["timeline"] = { "added 6.0.2" },
 				["groups"] = {
-					i(6681),	-- Thornspike
 					i(151442, {	-- Bonetusk Cloak
 						["timeline"] = { "added 7.3.0.24484" },
+					}),
+					i(6681),	-- Thornspike
+					i(6689, {	-- Wind Spirit Staff
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -359,6 +381,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(6685),	-- Death Speaker Mantle
 					i(151445, {	-- Porcine-Warlord's Legplates
 						["timeline"] = { "added 7.3.0.24484" },
+					}),
+					i(6688, {	-- Whisperwind Headdress
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 			}),

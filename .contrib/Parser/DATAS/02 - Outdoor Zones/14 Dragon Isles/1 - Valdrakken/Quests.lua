@@ -4,25 +4,25 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(REWARDS, {
-			i(200452, {	-- Dragonscale Expedition Insignia
-				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renonwn 25
+			i(200452, {	-- Dragonscale Expedition Insignia [Rare]
+				["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
-			i(200453, {	-- Iskaara Tuskarr Insignia
+			i(200453, {	-- Iskaara Tuskarr Insignia [Rare]
 				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
-			i(200454, {	-- Maruuk Centaur Insignia
+			i(200454, {	-- Maruuk Centaur Insignia [Rare]
 				["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
-			i(200455, {	-- Valdrakken Accord Insignia
+			i(200455, {	-- Valdrakken Accord Insignia [Rare]
 				["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
@@ -70,6 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["g"] = {
 							i(200759),	-- Aruunem Berrytart
 							i(200885),	-- Cinna-Cinderbloom Tea
+							i(194550),	-- Coldsnap Sagittate (QI!)
 							i(200886),	-- Lemon Silverleaf Tea
 						},
 					}),
@@ -88,6 +89,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200887),	-- Charred Porter
 							i(200888),	-- Coal-Fired Rib Rack
 							i(200889),	-- Highly Spiced Haunch
+							i(194551),	-- Spicy Lava Spice (QI!)
 						},
 					}),
 					------ Day 3 ------
@@ -104,6 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["g"] = {
 							i(200892),	-- Dragonfruit Punch
 							i(200891),	-- Druidic Dreamsalad
+							i(194552),	-- Glimmering Ramblekelp Bulb (QI!)
 							i(200890),	-- Stonetalon Bloom Skewer
 						},
 					}),
@@ -120,8 +123,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 60.2, 82.2, THALDRASZUS },
 						["g"] = {
 							i(200893),	-- Azsunian Poached Lobster
-							i(200894),	-- Rare Vintage Arcwine
 							i(200895),	-- Fine Taladorian Cheese Platter
+							i(200894),	-- Rare Vintage Arcwine
+							i(194553),	-- Time-Blasted Trufflette (QI!)
 						},
 					}),
 					------ Day 5 ------
@@ -137,8 +141,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 7.4, 44.2, THE_AZURE_SPAN },
 						["g"] = {
 							i(200896),	-- Captain's Caramelized Catfish
-							i(200897),	-- Venrik's Goat Milk
 							i(200898),	-- Mantis Shrimp Cocktail
+							i(194554),	-- Savory Deviant Dealfish (QI!)
+							i(200897),	-- Venrik's Goat Milk
 						},
 					}),
 					------ Day 6 ------
@@ -153,9 +158,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 189400 },	-- Meliane Enorath
 						["coord"] = { 65.2, 58.0, THE_WAKING_SHORES },
 						["g"] = {
-							i(200899),	-- Seared Sea Mist Noodles
 							i(200900),	-- Fried Emperor Wraps
+							i(200899),	-- Seared Sea Mist Noodles
 							i(200901),	-- Roquefort-Stuffed Peppers
+							i(194555),	-- Wild Leapmaize (QI!)
 						},
 					}),
 					------ Day 7 ------
@@ -170,6 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 196161 },	-- Ilana
 						["coord"] = { 85.8, 35.2, OHNAHRAN_PLAINS },
 						["g"] = {
+							i(194556),	-- Breezehunter Egg (QI!)
 							i(200902),	-- Ravenberry Panacotta Delight
 							i(200903),	-- Moira's Choice Espresso
 							i(200904),	-- Picante Pomfruit Cake
@@ -183,6 +190,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["altQuests"] = { 72258 },	-- Daily Lockout
 						["g"] = {
 							i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
+							i(202013),	-- Ruby Recipe Journal VIII (QI!)
 						},
 					}),
 				},
@@ -295,6 +303,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["classes"] = { EVOKER },
 				["g"] = {
 					i(205252),	-- Momento of Rekindled Bonds
+					i(204830),	-- Shattered Horn Signet (QI!)
+					i(204824),	-- Torn Journal Entry (QI!)
 				},
 			}),
 			------ Miscellaneous ------
@@ -309,7 +319,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(72354, {	-- The Great Vault
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 49.9, 56, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- unconfirmed
+				["g"] = {
+					i(201793),	-- Resplendent Gemstone
+				},
 			}),
 		}),
 		n(QUESTS, sharedData({
@@ -317,6 +329,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["coord"] = { 35.4, 58.8, VALDRAKKEN },
 			["repeatable"] = true,
 			["g"] = {
+				i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
 				i(200288),	-- Maruuk Centaur Insignia [Uncommon]
 				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
@@ -349,6 +362,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
 					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
 					------ Reputation ------
+					i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
 					i(200288),	-- Maruuk Centaur Insignia [Uncommon]
 					i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 					i(205365),	-- Loamm Niffen Insignia [Uncommon]
@@ -455,6 +469,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(67061),	-- triggered after 'Anything But a Breeze' (questID 67068) (spellID 377499)
 		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (questID 67071) (spellID 391779)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel (spellID 388943)
+		q(79652, {["timeline"] = { ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Kalecgos and Khadgar
+		q(79632, {["timeline"] = { ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Wrathion and Sabellian
+		q(79666, {["timeline"] = { ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Master Mathias Shaw
+		q(79668, {["timeline"] = { ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Scalecommander Emberthal
 	}),
 }));
 

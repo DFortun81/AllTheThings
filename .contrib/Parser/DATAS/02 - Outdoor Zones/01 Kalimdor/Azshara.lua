@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4927, {	-- Azshara Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Defending Orgrimmar
 							["sourceQuest"] = 14155,	-- Arborcide
@@ -49,6 +50,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(852, {	-- Explore Azshara
 					-- #if BEFORE WRATH
@@ -169,6 +171,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
+						["coord"] = { 37.6, 65.4, AZSHARA },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_DRAGONSCALE,
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(3382, {	-- A Crew Under Fire
@@ -582,23 +594,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
-				}),
-				q(5141, {	-- Dragonscale Leatherworking (A)
-					["qg"] = 7866,	-- Peter Galen
-					["altQuests"] = {
-						5144,	-- Elemental Leatherworking
-						5143,	-- Tribal Leatherworking
-					},
-					["coord"] = { 37.4, 65.4, AZSHARA },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
-						{ "i", 8204, 2 },	-- Tough Scorpid Gloves
-						{ "i", 8165, 10 },	-- Worn Dragonscale
-					},
-					["lvl"] = 40,
 				}),
 				q(14340, {	-- Dressed to Impress
 					["qg"] = 36210,	-- Sorata Firespinner
@@ -1142,6 +1137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
 					["coord"] = { 25.0, 38.6, AZSHARA },
 					["timeline"] = { "added 7.2.0.23478" },
+					["_drop"] = { "c", "classes" },	-- bad API data
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -1570,7 +1566,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuests"] = {
 						24430,	-- Blacken the Skies
 						24434,	-- Commando Drop
-						14464,	-- Lightning Strike Assassination
 					},
 					["coord"] = { 14.0, 64.8, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },
@@ -2043,7 +2038,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(17054, {	-- Joonho's Mercy
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2177,8 +2172,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(49884, {	-- Sally "Salvager" Sandscrew <Armor Vendor>
@@ -2250,8 +2245,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(15763, {	-- Pattern: Blue Dragonscale Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 6146,	-- Cliff Breaker
+					["coords"] = {
+						{ 64.6, 87.2, AZSHARA },
+						{ 50.4, 80.2, AZSHARA },
+						{ 80.6, 18.6, AZSHARA },
+						{ 70.4, 17.6, AZSHARA },
+					},
+					-- #elseif AFTER 10.1.7
+					-- Zonedrop, can drop from any mob now
+					["coords"] = {
+						{ 48.4, 79.8, AZSHARA },
+						{ 34.4, 40.6, AZSHARA },
+						{ 15.0, 52.0, AZSHARA },
+						{ 53.0, 76.8, AZSHARA },
+
+						{ 14.2, 50.4, AZSHARA },
+						{ 29.2, 42.6, AZSHARA },
+						{ 45.4, 25.2, AZSHARA },
+						{ 50.6, 18.8, AZSHARA },
+						{ 68.2, 23.4, AZSHARA },
+					},
+					-- #endif
 				}),
 				i(14473, {	-- Pattern: Ghostweave Belt
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
@@ -2273,9 +2290,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
-				i(13491, {	-- Recipe: Elixir of the Mongoose
-					["timeline"] = { "removed 4.0.3" },
+				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 6201,	-- Legashi Rogue
+					["coords"] = {
+						{ 56.6, 23.6, AZSHARA },
+						{ 53.6, 23.8, AZSHARA },
+					},
 				}),
 				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer

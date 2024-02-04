@@ -6,6 +6,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",
 		-- #endif
+		["zone-text-areaID"] = 718,	-- Wailing Caverns
+		["sins"] = {
+			"The Wailing Caverns",
+		},
 		["mapID"] = WAILING_CAVERNS,
 		-- #if AFTER CATA
 		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Northern Barrens
@@ -239,6 +243,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209846, {	-- Secrets of the Dreamers
+					["provider"] = { "o", 409692 },	-- Scrolls
+					["coord"] = { 52.83, 54.70, THE_BARRENS },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
 					["coord"] = { 45.9, 35.7, THE_BARRENS },
@@ -391,6 +403,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(5039, {	-- Wailing Caverns Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_ONE, i(209838, {	-- Hypnotic Crystal
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { HUNTER },
+					})),
+					-- #endif
 					i(10441),	-- Glowing Shard
 					i(6461),	-- Slime-Encrusted Pads
 					i(6627),	-- Mutant Breastplate

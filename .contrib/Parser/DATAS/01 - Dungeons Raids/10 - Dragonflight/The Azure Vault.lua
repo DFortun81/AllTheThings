@@ -21,6 +21,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					["provider"] = { "n", 186188 },	-- Sindragosa
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 				}),
+				q(75388, {	-- The Azure Vaults
+					--["sourceQuests"] = { }, -- TODO
+					["provider"] = { "n", 186188 },	-- Sindragosa
+					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+					["timeline"] = { ADDED_10_1_0 }
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(194255),	-- Pattern: Amice of the Blue (RECIPE!)

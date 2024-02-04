@@ -501,6 +501,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 				["provider"] = { "o", 290138 },	-- Bot Buster Bomb
 				["coord"] = { 37.8, 28.5, STORMSONG_VALLEY },
+				["groups"] = {
+					o(286954, {	-- Bot Buster Bomb
+						i(160397),	-- Bot Buster Bomb (QI!)
+					}),
+				},
 			}),
 			q(51712, {	-- Eye for an Eye
 				["sourceQuests"] = {
@@ -571,6 +576,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 				["provider"] = { "n", 137453 },	-- Loroja
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
+				["groups"] = {
+					o(289317, {	-- Seaweed
+						i(160055),	-- Seaweed (QI!)
+					}),
+				},
 			}),
 			q(50386, {	-- Flush Them Out
 				["sourceQuests"] = { 50417 },	-- Ruin Has Come
@@ -1265,6 +1275,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["provider"] = { "n", 135794 },	-- Scrollsage Nola
 				["coord"] = { 40.6, 45.5, STORMSONG_VALLEY },
+				["groups"] = {
+					o(288609, {	-- Tortollan Chest
+						i(160270),	-- Scroll of Graceful Breaths (QI!)
+					}),
+					o(290127, {	-- Tortollan Chest
+						i(160327),	-- Scroll of Harmonious Fins (QI!)
+					}),
+					o(290128, {	-- Tortollan Chest
+						i(160329),	-- Scroll of Endless Tides (QI!)
+					}),
+				},
 			}),
 			q(50368, {	-- Terror of the Kraul
 				["sourceQuests"] = {
@@ -1575,7 +1596,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 51427 },	-- I Like Turtles
 				["provider"] = { "n", 137453 },
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
-				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51208, {	-- Wheat A Minute
 				["sourceQuests"] = { 51504 },	-- Cookie Delivery
@@ -1588,7 +1608,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					50909, -- Never Outgunned
 					50910, -- Dangerous Game
 					50908, -- Smells Like Trouble
-				},	
+				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				["coord"] = { 57.8, 55.3, STORMSONG_VALLEY },
@@ -1647,26 +1667,3 @@ root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 		}),
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(160372),	-- Tidespeaker Cinch
-			}),
-			filter(LEATHER, {
-				i(158694),	-- Darkwater Grips
-				i(158706),	-- Darkwater Trousers
-				i(160375),	-- Darkwater Waistwrap
-				i(160388),	-- Darkwater Bands
-			}),
-			filter(MAIL, {
-				i(158697),	-- Stormchaser Grips
-				i(160391),	-- Stormchaser Coils
-			}),
-			filter(PLATE, {
-				i(160381),	-- Dread Corsair Clasp
-			}),
-		}),
-	}),
-});

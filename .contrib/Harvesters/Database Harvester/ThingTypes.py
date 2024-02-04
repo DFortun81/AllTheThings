@@ -387,7 +387,7 @@ class Items(Thing):
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
-        return "i(", "itemID"
+        return "i(", "itemID", '"i"'
 
     @staticmethod
     def new_prefix() -> str:
@@ -396,4 +396,4 @@ class Items(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Toys and Transmog
-        return f"{row['ID']}{DELIMITER}{row['Display_lang']}"
+        return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"

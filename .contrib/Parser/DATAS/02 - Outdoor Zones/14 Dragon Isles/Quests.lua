@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(QUESTS, {
 		q(72481, {	-- The Waking Shore Tour
-			["sourceQuests"] = { 68796 },	-- The Skytop Observatory
+			["sourceQuests"] = { 68798 },	-- Dragon Glyphs and You
 			["provider"] = { "n", 193411 },	-- Celormu
 			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 		}),
@@ -74,6 +74,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["provider"] = { "n", 199119 },	-- Celormu
 			["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
 			["timeline"] = { ADDED_10_0_5 },
+		}),
+		q(78113, {	-- The Challenge Tour
+			-- TODO: ["sourceQuests"] = { 72985 },	-- The Thaldraszus Reverse Tour
+			["provider"] = { "n", 193411 },	-- Celormu
+			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
+			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
 })));

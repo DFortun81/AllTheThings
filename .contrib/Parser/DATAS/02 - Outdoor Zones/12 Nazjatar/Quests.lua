@@ -77,11 +77,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["provider"] = { "n", 150202 },	-- Waveblade Hunter (Hunter Akana)
 			["races"] = ALLIANCE_ONLY,
 			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 5.",
-			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(55984, {	-- A Good Offense
 			["provider"] = { "n", 153623 },	-- Korl
@@ -115,7 +110,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55662, {	-- Arcane Cache (A)
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
-		--	["objectID"] = ,	-- Arcane Cache — unknown, not linked to quest
+			["provider"] = {"o",325894},	-- Arcane Cache
 			["isDaily"] = true,
 			["coord"] = { 53.1, 28.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -132,22 +127,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 48.1, 45.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
-			["g"] = {
-				crit(7, {	-- Find and Assist Mrrl
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(55530, {	-- A Safer Place (H)
 			["provider"] = { "n", 152084 },	-- Mrrl
 			["coord"] = { 48.1, 45.3, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
-				crit(7, {	-- Find and Assist Mrrl
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(56156, {	-- A Tempered Blade
 			["provider"] = { "n", 154248 },	-- Bladesman Inowari
@@ -242,6 +227,30 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169903),	-- Nazjatar Survival Pack
 			},
 		}),
+		q(56969, {	-- Ancient Reefwalker Bark
+			["repeatable"] = true,
+			["cost"] = {
+				{"i",170184,1},	-- Ancient Reefwalker Bark
+			},
+			["aqd"] = {
+				["providers"] = {
+					{ "n", 153509 },	-- Artisan Okata (A)
+				},
+				["coords"] = {
+					{ 37.9, 55.7, NAZJATAR },	-- Alliance
+				},
+				["maxReputation"] = {FACTION_WAVEBLADE_ANKOAN,EXALTED},
+			},
+			["hqd"] = {
+				["providers"] = {
+					{ "n", 153512 },	-- Finder Pruc (H)
+				},
+				["coords"] = {
+					{ 49.2, 62.2, NAZJATAR },	-- Horde
+				},
+				["maxReputation"] = {FACTION_THE_UNSHACKLED,EXALTED},
+			},
+		}),
 		q(56346, {	-- Ancient Technology
 			["coord"] = { 38.1, 36.9, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -261,9 +270,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = HORDE_ONLY,
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169908),	-- Cleverly Concealed Supplies
 			},
 		}),
@@ -634,7 +640,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55681, {	-- Crab Marks The Spot
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-		--	["objectID"] = ,	-- Illegible Treasure Map (unknown ID, not linked to quest)
+			["provider"] = {"o",325954},	-- Illegible Treasure Map
 			["isDaily"] = true,
 			["coord"] = { 43.8, 54.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -728,12 +734,18 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 48.7, 86.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 54969,	-- Descent
+			["groups"] = {
+				o(322066),	-- Ley Line Accumulator
+			},
 		}),
 		q(55092, {	-- Disruption of Power
 			["provider"] = { "n", 150196 },	-- First Arcanist Thalyssra
 			["coord"] = { 41.9, 80.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 54021,	-- The First Arcanist
+			["groups"] = {
+				o(322066),	-- Ley Line Accumulator
+			},
 		}),
 		q(56236, {	-- Down But Not Out
 			["provider"] = { "n", 151848 },	-- Lor'themar Theron
@@ -779,7 +791,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 25.5, 26.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(170075),	-- Recipe: Unagi Skewer
+				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
 			},
 		}),
 		q(56265, {	-- Drunk Angry Murlocs
@@ -790,7 +802,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(170075),	-- Recipe: Unagi Skewer
+				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
 			},
 		}),
 		q(55569, {	-- Echoes of Pain
@@ -1024,7 +1036,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["g"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
-					i(168185),	-- Osmenite Ore x11
+				--	i(168185),	-- Osmenite Ore x11
 				}),
 			},
 		}),
@@ -1243,7 +1255,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55845, {	-- Plans of Attack
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-		--	["objectID"] = ,	-- Naga Attack Plans (unknown ID, not linked to quest)
+			["provider"] = {"o",326148},	-- Naga Attack Plans
 			["isDaily"] = true,
 			["coord"] = { 37.2, 19.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -1381,15 +1393,36 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169922),	-- Vim's Gift of Appreciation
 			},
 		}),
+		q(56970, {	-- Reefwalker Bark
+			["repeatable"] = true,
+			["cost"] = {
+				{"i",170183,1},	-- Reefwalker Bark
+			},
+			["aqd"] = {
+				["providers"] = {
+					{ "n", 153509 },	-- Artisan Okata (A)
+				},
+				["coords"] = {
+					{ 37.9, 55.7, NAZJATAR },	-- Alliance
+				},
+				["maxReputation"] = {FACTION_WAVEBLADE_ANKOAN,EXALTED},
+			},
+			["hqd"] = {
+				["providers"] = {
+					{ "n", 153512 },	-- Finder Pruc (H)
+				},
+				["coords"] = {
+					{ 49.2, 62.2, NAZJATAR },	-- Horde
+				},
+				["maxReputation"] = {FACTION_THE_UNSHACKLED,EXALTED},
+			},
+		}),
 		q(56788, {	-- Reclaimed Treasure
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 5.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169905),	-- Faintly Glowing Supplies
 			},
 		}),
@@ -1765,22 +1798,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 37.8, 55.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
-			["g"] = {
-				crit(3, {	-- Learn about the Scrying Stones of Nazjatar
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(56210, {	-- Scrying Stones
 			["provider"] = { "n", 153512 },	-- Finder Pruc
 			["coord"] = { 49.0, 62.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save A Friend
-			["g"] = {
-				crit(3, {	-- Learn about the Scrying Stones of Nazjatar
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(55860, {	-- Sea Slug Liquidation (A)
 			["provider"] = { "n", 153385 },	-- Blademaster Okani
@@ -1870,7 +1893,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
 		}),
 		q(56075, {	-- Stolen Power
-			["provider"] = { "i", 154064 },	-- Axol Darksea
+			["provider"] = { "n", 154064 },	-- Axol Darksea
 			["coord"] = { 59.0, 19.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -1913,9 +1936,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169909, {	-- Poen's Neat Things
 					i(169942),	-- Vibrant Sea Blossom
 				}),
@@ -1954,6 +1974,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(169345),	-- Purified Water (QI!)
+			},
 		}),
 		q(56358, {	-- The Eternal Palace: Queen's Gambit (A)
 			["sourceQuests"] = { 56325 },	-- Changing Tides
@@ -2058,9 +2081,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154304 },	-- Farseer Ori
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169905),	-- Faintly Glowing Supplies
 			},
 		}),
@@ -2080,7 +2100,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["g"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
-					i(168185),	-- Osmenite Ore x11
+				--	i(168185),	-- Osmenite Ore x11
 				}),
 			},
 		}),
@@ -2335,7 +2355,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55774, {	-- WANTED: Inquisitor Ithriza (A)
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-		--	["objectID"] = ,	-- Bounty Board (unknown objectID, not linked to quest)
+			["provider"] = {"o",326141},	-- Bounty Board
 			["isDaily"] = true,
 			["coord"] = { 39.2, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -2481,6 +2501,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55602, {	-- What Will It Lure?
 			["description"] = "Chum can drop from any rare in Nazjatar.",
 			["provider"] = { "i", 168155 },	-- Chum
+			["_drop"] = { "g" },
 			["g"] = {
 				currency(1721),	-- Prismatic Manapearls
 			},
@@ -2488,6 +2509,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55531, {	-- What Will It Mine?
 			["description"] = "Brinestone Pickaxe can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
 			["provider"] = { "i", 168081 },	-- Brinestone Pickaxe
+			["_drop"] = { "g" },	-- Drop Osmemite Ore
 			["g"] = {
 				currency(1721),	-- Prismatic Manapearl
 			},
@@ -2509,11 +2531,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55872, {	-- Where They Hide
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			--["objectID"] = 326142,	-- Bounty Board
+			["providers"] = {
+				{"o",326142},	-- Bounty Board
+				{"n",153364},	-- Scout Marlin
+			},
 			["isDaily"] = true,
 			["coord"] = { 45.6, 58.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["provider"] = { "n", 153364 },	-- Scout Marlin
 		}),
 		q(56217, {	-- Wild Tame
 			["providers"] = {
@@ -2543,9 +2567,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169910, {	-- Vim's Scavenged Supplies
 					i(169942),	-- Vibrant Sea Blossom
 				}),

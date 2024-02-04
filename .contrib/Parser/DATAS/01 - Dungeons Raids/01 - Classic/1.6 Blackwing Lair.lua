@@ -4,6 +4,9 @@
 root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 	inst(742, {	-- Blackwing Lair
 		["lore"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 2677,	-- Blackwing Lair
+		-- #endif
 		["coord"] = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
 		["mapID"] = BLACKWING_LAIR,
 		["maps"] = { 288, 289, 290 },
@@ -14,28 +17,31 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(11742, {["timeline"] = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
+			}),
 			n(QUESTS, {
-				q(7783, {	-- The Lord of Blackrock [Horde]
-					["provider"] = { "i", 19002 },	-- Head of Nefarian
-					["races"] = HORDE_ONLY,
-				}),
-				q(7781, {	-- The Lord of Blackrock [Alliance]
+				q(7781, {	-- The Lord of Blackrock [A]
 					["provider"] = { "i", 19003 },	-- Head of Nefarian
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(7782, {	-- The Lord of Blackrock
-					-- #if BEFORE CATA
-					["qg"] = 1748,	-- Highlord Bolvar Fordragon
-					["coord"] = { 78.0, 18.0, STORMWIND_CITY },
-					-- #else
+				q(7782, {	-- The Lord of Blackrock [A]
 					-- #if AFTER LEGION
 					["qg"] = 107574,	-- Anduin Wrynn
-					-- #else
-					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
-					-- #endif
 					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					-- #elseif AFTER WRATH
+					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
+					-- #if AFTER CATA
+					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 79.8, 38.6, STORMWIND_CITY },
 					-- #endif
-					["sourceQuest"] = 7781,	-- The Lord of Blackrock
+					-- #else
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["coord"] = { 78.0, 18.0, STORMWIND_CITY },
+					-- #endif
+					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(19366),	-- Master Dragonslayer's Orb
@@ -43,7 +49,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 						i(19384),	-- Master Dragonslayer's Ring
 					},
 				}),
-				q(7784, {	-- The Lord of Blackrock
+				q(7783, {	-- The Lord of Blackrock [H]
+					["provider"] = { "i", 19002 },	-- Head of Nefarian
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+				}),
+				q(7784, {	-- The Lord of Blackrock [H]
 					-- #if BEFORE CATA
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32, 37.8, ORGRIMMAR },
@@ -57,7 +68,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 					-- #endif
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					-- #endif
-					["sourceQuest"] = 7783,	-- The Lord of Blackrock
+					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(19383),	-- Master Dragonslayer's Medallion
@@ -232,16 +243,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 				-- #if BEFORE WRATH
 				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
 				["groups"] = {
-					{
-						["recipeID"] = 22967,	-- Smelt Elementium
-						["requireSkill"] = MINING,
-					},
+					r(22967),	-- Smelt Elementium
 				},
 				-- #else
-				i(44956, {	-- Goblin's Guide to Elementium
-					["recipeID"] = 22967,	-- Smelt Elementium
-					["requireSkill"] = MINING,
-				}),
+				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
 				-- #endif
 			}),
 			e(1533,  {	-- Ebonroc

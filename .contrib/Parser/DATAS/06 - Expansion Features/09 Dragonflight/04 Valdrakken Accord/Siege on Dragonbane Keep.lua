@@ -55,7 +55,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					o(381357, {	-- Stone Tablet
 						["coord"] = { 27.8, 68.4, THE_WAKING_SHORES },
 						["g"] = {
-							crit(1, {	-- Complaint to Scalepiercer
+							crit(55264, {	-- Complaint to Scalepiercer
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
 							}),
 						},
@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					o(381358, {	-- Stone Tablet
 						["coord"] = { 28.8, 72.5, THE_WAKING_SHORES },
 						["g"] = {
-							crit(2, {	-- Wyrmeater's Recipe
+							crit(55266, {	-- Wyrmeater's Recipe
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
 							}),
 						},
@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					o(381359, {	-- Stone Tablet
 						["coord"] = { 24.1, 69.2, THE_WAKING_SHORES },
 						["g"] = {
-							crit(3, {	-- The Grand Flame's Journal
+							crit(55265, {	-- The Grand Flame's Journal
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
 							}),
 						},

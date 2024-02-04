@@ -244,7 +244,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", GRATEFUL, 20 },
 						},
 					}),
-					i(184164, {	-- Illusion: Wild Soul
+					i(184164, {	-- Illusion: Wild Soul (ILLUSION!)
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,
@@ -1333,77 +1333,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(61904),	-- unlocking Night Courtier's Warbark set (TransmogSetID 2060, Night Courtier's plate items)
 	q(62410),	-- unlocking Night Courtier's Bulb
 	q(62412),	-- unlocking Night Courtier's Pack
-});
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		n(NIGHT_FAE, {
-			n(ARMOR, {
-				filter(CLOTH, {
-					i(179439),	-- 9.0 Covenant - Ardenweald - Cloth - Head
-					i(179440),	-- 9.0 Covenant - Ardenweald - Cloth - Chest
-					i(179441),	-- 9.0 Covenant - Ardenweald - Cloth - Feet
-					i(179442),	-- 9.0 Covenant - Ardenweald - Cloth - Hands
-					i(179443),	-- 9.0 Covenant - Ardenweald - Cloth - Legs
-					i(179444),	-- 9.0 Covenant - Ardenweald - Cloth - Shoulders
-					i(179445),	-- 9.0 Covenant - Ardenweald - Cloth - Waist
-					i(179446),	-- 9.0 Covenant - Ardenweald - Cloth - Wrists
-					i(179660),	-- Winterborn Tunic
-				}),
-				filter(LEATHER, {
-					i(179430),	-- 9.0 Covenant - Ardenweald - Leather - Head
-					i(179431),	-- 9.0 Covenant - Ardenweald - Leather - Chest
-					i(179432),	-- 9.0 Covenant - Ardenweald - Leather - Feet
-					i(179433),	-- 9.0 Covenant - Ardenweald - Leather - Hands
-					i(179434),	-- 9.0 Covenant - Ardenweald - Leather - Legs
-					i(179435),	-- 9.0 Covenant - Ardenweald - Leather - Shoulders
-					i(179436),	-- 9.0 Covenant - Ardenweald - Leather - Waist
-					i(179437),	-- 9.0 Covenant - Ardenweald - Leather - Wrists
-				}),
-				filter(MAIL, {
-					i(179448),	-- 9.0 Covenant - Ardenweald - Mail Head - D_01
-					i(179449),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_01
-					i(179450),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_01
-					i(179451),	-- 9.0 Covenant - Ardenweald - Mail Hands - D_01
-					i(179452),	-- 9.0 Covenant - Ardenweald - Mail Legs - D_01
-					i(179453),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_01
-					i(179454),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_01
-					i(179455),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_01
-					i(180570),	-- 9.0 Covenant - Ardenweald - Mail Head - D_02
-					i(180571),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_02
-					i(180572),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_02
-					i(180573),	-- 9.0 Covenant - Ardenweald - Mail Hands - D_02
-					i(180574),	-- 9.0 Covenant - Ardenweald - Mail Legs - D_02
-					i(180575),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_02
-					i(180576),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_02
-					i(180577),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_02
-				}),
-				filter(PLATE, {
-					i(173914),	-- 9.0 Covenant - Ardenweald - Plate Head
-					i(173915),	-- 9.0 Covenant - Ardenweald - Plate Chest
-					i(173916),	-- 9.0 Covenant - Ardenweald - Plate Feet
-					i(173917),	-- 9.0 Covenant - Ardenweald - Plate Hands
-					i(173918),	-- 9.0 Covenant - Ardenweald - Plate Legs
-					i(173919),	-- 9.0 Covenant - Ardenweald - Plate Shoulders
-					i(173920),	-- 9.0 Covenant - Ardenweald - Plate Waist
-					i(173921),	-- 9.0 Covenant - Ardenweald - Plate Wrists
-				}),
-				n(BACK, {
-					i(179621),	-- Ardenweald Covenant Mail Cloak
-					i(179630),	-- Ardenweald Covenant Mail Cloak
-					i(179631),	-- Ardenweald Covenant Mail Cloak
-					i(179632),	-- Ardenweald Covenant Mail Cloak
-					i(173926),	-- 9.0 Covenant - Ardenweald - Plate Cloak
-					i(179438),	-- 9.0 Covenant - Ardenweald - Leather - Cloak
-					i(179447),	-- 9.0 Covenant - Ardenweald - Cloth - Cloak
-					i(179456),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_01
-					i(180578),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_02
-				}),
-			}),
-			n(WEAPONS, {
-				i(182350),	-- Ardenweald Raid Mace STR
-				i(180152),	-- Drust 2H Axe
-			}),
-		}),
-	}),
 });

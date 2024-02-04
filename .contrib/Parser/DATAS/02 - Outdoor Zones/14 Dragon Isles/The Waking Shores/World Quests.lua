@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70150, {	-- 'Many Whelps, Handle It'
 					["coord"] = { 57.8, 68, THE_WAKING_SHORES },
 				}),
-				petbattle(q(74841, { -- Adinakon
+				petbattle(q(74841, {	-- Adinakon
 					["coord"] = { 51.90, 72.39, THE_WAKING_SHORES },
 					["timeline"] = { ADDED_10_0_7 },
 				})),
@@ -49,9 +49,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(69938, {	-- Fishing Frenzy!
 					["coord"] = { 68.8, 71.4, THE_WAKING_SHORES },
+					["g"] = {
+						i(198350),	-- Fresh Fish Steak (QI!)
+					},
 				}),
 				q(72030, {	-- Fishing Frenzy!
 					["coord"] = { 33.6, 63.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(200854),	-- Cooked Caviar (QI!)
+					},
 				}),
 				q(67014, {	-- Gorlocs No More-locs
 					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
@@ -70,15 +76,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				pvp(q(67005, {	-- How to Train a Proto-Drake
 					["coord"] = { 40, 89, THE_WAKING_SHORES },
+					["g"] = {
+						i(194818),	-- Proto-Drake Wrangler Rope (QI!)
+					},
 				})),
 				q(66833, {	-- Marmoni in Distress
 					["coord"] = { 78.1, 31.6, THE_WAKING_SHORES },
+					["g"] = {
+						i(193212),	-- Marmoni Rescue Pack (QI!)
+					},
 				}),
 				q(70172, {	-- Mountain Mysteries
 					["coord"] = { 49.3, 53.4, THE_WAKING_SHORES },
 				}),
 				q(66896, {	-- Net Income
 					["coord"] = { 51.6, 35.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(191857),	-- Warmwater Riverfish (QI!)
+					},
 				}),
 				pvp(q(72008, {	-- Overcoming a Mountain: Krolkoth
 					["coord"] = { 43.2, 58, THE_WAKING_SHORES },
@@ -89,7 +104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(67006, {	-- Quenching the Flame
 					["coord"] = { 67.5, 31.8, THE_WAKING_SHORES },
 				}),
-				petbattle(q(74840, { -- Sharp as Flint
+				petbattle(q(74840, {	-- Sharp as Flint
 					["coord"] = { 68.96, 46.78, THE_WAKING_SHORES },
 					["timeline"] = { ADDED_10_0_7 },
 				})),

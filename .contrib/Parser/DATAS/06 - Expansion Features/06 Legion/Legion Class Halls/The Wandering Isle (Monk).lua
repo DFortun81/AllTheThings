@@ -216,6 +216,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							41003,	-- The Emperor's Gift
 							40570,	-- Into The Heavens
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 112338 },	-- Caydori Brightstar
 						["coord"] = { 50.3, 59.0, THE_WANDERING_ISLE },
 						["g"] = {
@@ -240,7 +241,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 					-- Start Zone
 					q(40795, {	-- The Fight Begins
-						["sourceQuests"] = { 40698 },	-- Purity of Form
+						["sourceQuests"] = {
+							-- #if BEFORE BFA
+							40698,	-- Purity of Form
+							-- #else
+							40793,	-- A Matter of Planning
+							-- #endif
+						},
 						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.7, THE_WANDERING_ISLE },
 					}),
@@ -714,7 +721,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
 						["g"] = {
-							i(142225),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
+							mount(229385),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
 						},
 					})),
 					-- Misc

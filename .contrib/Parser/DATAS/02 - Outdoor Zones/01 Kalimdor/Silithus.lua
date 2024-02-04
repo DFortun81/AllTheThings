@@ -58,6 +58,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 5.2.0.16634" },
 						}),
 					}),
+					n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+						--o(xxxxx, {	-- Carved Eye
+							["coord"] = { 43.0, 9.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
+							["g"] = {
+								i(212995),	-- Grimoire of the Whispering Observer (CI!)
+							},
+						--}),
+					})),
 				},
 			}),
 			-- #endif
@@ -70,19 +78,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4934, {	-- Silithus Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
-						crit(1, {	-- Twilight's Run
+						crit(38738, {	-- Twilight's Run
 							["sourceQuest"] = 8321,	-- Vyral the Vile
 						}),
-						crit(2, {	-- Mistress Natalia Mar'alith
+						crit(38739, {	-- Mistress Natalia Mar'alith
 							["sourceQuest"] = 8306,	-- Into The Maw of Madness
 						}),
-						crit(3, {	-- Unraveling the Mystery
+						crit(38740, {	-- Unraveling the Mystery
 							["sourceQuest"] = 8314,	-- Unraveling the Mystery
 						}),
-						crit(4, {	-- A Terrible Purpose
+						crit(38741, {	-- A Terrible Purpose
 							["sourceQuest"] = 8287,	-- A Terrible Purpose
 						}),
-						crit(5, {	-- Twilight Lexicon
+						crit(38742, {	-- Twilight Lexicon
 							["sourceQuest"] = 8323,	-- True Believers
 						}),
 					},
@@ -1614,7 +1622,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28859, {	-- The Dunes of Silithus
 					["qg"] = 38269,	-- Zen'Aliri
-					["sourceQuest"] = 24695,	-- Ever Watching From Above
+					-- ["sourceQuest"] = 24695,	-- Ever Watching From Above [nothing under this entire quest chain is required... maybe something completely different?]
 					["coord"] = { 55.7, 60.6, UNGORO_CRATER },
 					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,
@@ -2464,7 +2472,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2731,7 +2739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #if AFTER 4.0.3
 					["groups"] = {
-						i(13496, {	-- Recipe: Greater Nature Protection Potion
+						i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

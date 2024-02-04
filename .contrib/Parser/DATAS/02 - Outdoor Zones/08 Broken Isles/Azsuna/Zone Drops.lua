@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(ZONE_DROPS, {	-- (Note: have to list crs separately for every item because some items (recipes) don't drop from every single mob in the zone)
-				i(137924, {	-- Pattern: Gravenscale Armbands (Rank 3)
+				i(137924, {	-- Pattern: Gravenscale Armbands [Rank 3] (RECIPE!)
 					["description"] = "Drops from any giant in Azsuna.",
 					["crs"] = {
 						89097,	-- Cove Skrog

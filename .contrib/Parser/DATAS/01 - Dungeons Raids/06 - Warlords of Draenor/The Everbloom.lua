@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["maps"] = { 620, 621 },
 		["lvl"] = 100,
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(4),	-- Yalnu
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
@@ -150,7 +142,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, WRIST},
 					},
 					["g"] = {
-						ach(9493),	-- They Burn, Burn, Burn
+						ach(9493, {	-- They Burn, Burn, Burn
+							["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_2_0 },
+						}),
 						i(119174),	-- Sol's Magestaff
 						i(110014),	-- Spores of Alacrity
 					},
@@ -165,7 +159,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					["g"] = {
 						ach(9053),	-- Heroic: The Everbloom
 						ach(9374),	-- Heroic: The Everbloom Guild Run
-						ach(9223),	-- Weed Whacker
+						ach(9223, {	-- Weed Whacker
+							["crs"] = { 84329 },	-- Kirin Tor Battle-Mage
+						}),
 						i(119181),	-- Hoof of Yalnu
 						i(110004),	-- Coagulated Genesaur Blood
 						un(REMOVED_FROM_GAME, i(114138)),	-- Core of Life

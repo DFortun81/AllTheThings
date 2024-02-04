@@ -47,21 +47,20 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["groups"] = {
 						ach(1869),	-- A Poke in the Eye (10 player)
 						ach(2148),	-- Denyin' the Scion (10 player)
-						ach(1658, {	-- Champion of the Frozen Wastes: Malygos
-							["criteriaID"] = 5890,	-- Malygos (10 or 25 player) slain
-						}),
 						ach(622),	-- The Spellweaver's Downfall (10 player)
 						ach(1874),	-- You Don't Have an Eternity (10 player)
 						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
 							["timeline"] = { "added 4.0.3" },
 						}),
 						i(43952),	-- Azure Drake (MOUNT!)
+						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
 							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
 							["timeline"] = { "created 3.0.1", "added 4.0.3" },
 						}),
+						-- #endif
 						i(40497),	-- Black Ice
 						i(40489),	-- Greatstaff of the Nexus
 						i(40491),	-- Hailstorm
@@ -98,21 +97,28 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["groups"] = {
 						ach(1870),	-- A Poke in the Eye (25 player)
 						ach(2149),	-- Denyin' the Scion (25 player)
-						ach(1658, {	-- Champion of the Frozen Wastes: Malygos
-							["criteriaID"] = 5890,	-- Malygos (10 or 25 player) slain
-						}),
 						ach(623),	-- The Spellweaver's Downfall (25 player)
 						ach(1875),	-- You Don't Have an Eternity (25 player)
 						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
 							["timeline"] = { "added 4.0.3" },
 						}),
+						ach(1400, {	-- Realm First! Magic Seeker
+							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8  },
+							["g"] = {
+								title(88, {	-- <Name> the Magic Seeker
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
+								}),
+							},
+						}),
 						i(43952),	-- Azure Drake (MOUNT!)
+						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
 							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
 							["timeline"] = { "created 3.0.1", "added 4.0.3" },
 						}),
+						-- #endif
 						i(40543),	-- Blue Aspect Helm
 						i(40562),	-- Hood of Rationality
 						i(40590),	-- Elevated Lair Pauldrons

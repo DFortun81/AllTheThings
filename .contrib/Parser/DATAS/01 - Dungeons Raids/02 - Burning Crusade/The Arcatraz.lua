@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(254, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
+		["zone-text-areaID"] = 3846,	-- The Arcatraz
 		["sins"] = {
 			"Tempest Keep: The Arcatraz",
 			"Festung der Stürme: Die Arkatraz",
@@ -132,9 +133,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(21905, {	-- Pattern: Arcanoweave Bracers
 					["cr"] = 20869,	-- Arcatraz Sentinel
 				}),
-				i(29672, {	-- Pattern: Flame Armor Kit
+				i(29672, {	-- Pattern: Flame Armor Kit (RECIPE!)
 					["cr"] = 20898,	-- Gargantuan Abyssal
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 				}),
 				i(23606, {	-- Plans: Felsteel Leggings
 					["cr"] = 20900,	-- Unchained Doombringer

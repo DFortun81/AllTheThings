@@ -540,7 +540,10 @@ root(ROOTS.WorldDrops, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3
 			i(106300),	-- Acid Scarred Plate Boots
 			i(118826),	-- Cadi's Grass Stained Slippers
 			i(122240, {	-- Footwraps of the Frostweaver
+				-- #if BEFORE 10.0.1
+				-- CRIEVE NOTE: This might have changed with Dragonflight rather than 10.1.7, which is when it was reported to us to be BOE.
 				["description"] = "Yes, they're a world drop, and yes, they're BoP.  We're as perplexed as you are.",
+				-- #endif
 			}),
 			i(106354),	-- Grime-Fouled Mail Boots
 			i(106355),	-- Gronncloth Boots

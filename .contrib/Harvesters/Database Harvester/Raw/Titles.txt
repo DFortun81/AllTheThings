@@ -654,3 +654,38 @@
 512@@@%s The Inquisitve
 10.1.5.50130
 514@@@%s of the Infinite
+10.1.7.50505
+515@@@Easter Kingdoms Racer %s
+10.1.7.50793
+519@@@Honorary Preservationist %s
+10.1.7.50893
+515@@@Eastern Kingdoms Racer %s
+521@@@Outland Racer %s
+10.1.7.51059
+523@@@Isles Ace %s
+10.1.7.51237
+511@@@Ama'shan %s
+10.1.7.51313
+512@@@%s the Inquisitive
+10.2.0.51239
+517@@@%s the <PH Season 3 Title>
+522@@@Dream Racer %s
+524@@@Emerald Ace %s
+525@@@Verdant Legend %s
+526@@@Verdant Gladiator %s
+527@@@Blossom Bringer %s
+10.2.0.51521
+528@@@%s, Famed Slayer of Fyrakk
+529@@@Battle Mender %s
+10.2.0.51601
+517@@@%s the Dreaming
+530@@@%s the Blazing
+531@@@%s the Dreaming Hero
+532@@@%s, Dream Defender
+10.2.0.52038
+520@@@%s the Storm Rider
+10.2.0.52301
+516@@@%s of the Tyr's Guard
+518@@@%s, Honorary Historian
+10.2.5.52206
+536@@@%s, Isles Archivist

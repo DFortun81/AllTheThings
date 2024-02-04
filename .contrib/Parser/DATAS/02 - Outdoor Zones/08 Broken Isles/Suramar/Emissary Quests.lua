@@ -18,8 +18,7 @@ root(ROOTS.Zones, {
 								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", SURAMAR},
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", ZONE_REWARDS },
+								{"find", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 							},
 							["g"] = {
@@ -49,7 +48,7 @@ root(ROOTS.Zones, {
 						})),
 					},
 				}),
-				q(46748, {	-- Supplies From the Nightfallen
+				q(46748, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_NIGHTFALLEN, EXALTED }}, {		-- Supplies From the Nightfallen
 					["repeatable"] = true,
 					["providers"] = {
 						{ "n", 97140 },	-- Thalyssra
@@ -67,7 +66,7 @@ root(ROOTS.Zones, {
 							},
 						})),
 					},
-				}),
+				})),
 			}),
 		}),
 	}),

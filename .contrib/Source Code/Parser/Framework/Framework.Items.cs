@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ATT.FieldTypes;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -149,9 +149,8 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The Item ID.</param>
             /// <returns>A dictionary representing the item.</returns>
-            public static IDictionary<string, object> Get(IDictionary<string, object> data)
+            private static IDictionary<string, object> _Get(decimal itemID)
             {
-                decimal itemID = GetSpecificItemID(data);
                 var item = GetNull(itemID);
                 // Attempt to get an existing specific item dictionary
                 if (item != null)
@@ -167,6 +166,20 @@ namespace ATT
                 {
                     { "itemID", itemID }
                 };
+            }
+
+            /// <summary>
+            /// Get the Item which matches the data
+            /// If a matching Item does not exist and the data contains an 'itemID', one will be created.
+            /// </summary>
+            /// <param name="itemID">The Item ID.</param>
+            /// <returns>A dictionary representing the item.</returns>
+            public static IDictionary<string, object> Get(IDictionary<string, object> data)
+            {
+                decimal itemID = GetSpecificItemID(data);
+                decimal truncatedItemID = decimal.Truncate(itemID);
+                if (truncatedItemID != itemID) _Get(truncatedItemID);   // This ensures that conditional item DB can properly write its data regarding the base itemID.
+                return _Get(itemID);
             }
 
             /// <summary>
@@ -405,9 +418,11 @@ namespace ATT
                     // Blacklisted Fields.
                     case "g":
                     case "link":
+                    case "sourceID":
                     case "bonusID":
                     case "modID":
                     case "rank":
+                    case "gender":
                     case "artifactID":
                     case "visualID":
                     case "itemID":
@@ -424,7 +439,6 @@ namespace ATT
                     //case "ignoreBonus":
                     case "displayID":
                     case "sourceText":
-                    case "s":
                     case "cr":
                     case "crs":
                     case "qg":
@@ -454,6 +468,7 @@ namespace ATT
                     case "collectible":
                     case "equippable":
                     case "repeatable":
+                    case "isBounty":
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":
@@ -462,6 +477,7 @@ namespace ATT
                     case "isWorldQuest":
                     case "ignoreBonus":
                     case "ignoreSource":
+                    case "skipFill":
                     case "pvp":
                     case "pb":
                         {
@@ -473,8 +489,6 @@ namespace ATT
                     case "lore":
                     case "name":
                     case "description":
-                    case "rwp":
-                    case "awp":
                     case "type":
                         {
                             item[field] = ATT.Export.ToString(value);
@@ -486,6 +500,7 @@ namespace ATT
                     case "inventoryType":
                     case "subclass":
                     case "q":
+                    case "learnedAt":
                         item[field] = Convert.ToInt64(value);
                         break;
 
@@ -501,10 +516,7 @@ namespace ATT
                     case "isOffHand":
                     case "factionID":
                     case "mountID":
-#if ANYCLASSIC
                     case "petTypeID":
-                    case "b":
-#endif
                     case "speciesID":
                     case "objectiveID":
                     case "runeforgePowerID":
@@ -512,71 +524,94 @@ namespace ATT
                     case "conduitID":
                     case "f":
                     case "filterForRWP":
+                    case "rwp":
+                    case "awp":
                     case "r":
                     case "ilvl":
-                        var longval = Convert.ToInt64(value);
-                        // any 0 value should simply be removed for cleanliness
-                        if (longval == 0)
+                    case "b":
                         {
-                            LogDebug($"INFO: Removing 0-value {field} from", item);
-                            item.Remove(field);
+                            if (!value.TryConvert(out long val))
+                            {
+                                LogError($"Invalid field format:{field}={value}", item);
+                                break;
+                            }
+                            // any 0 value should simply be removed for cleanliness
+                            if (val == 0)
+                            {
+                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                item.Remove(field);
+                            }
+                            else
+                            {
+                                item[field] = val;
+                            }
+                            break;
                         }
-                        else
-                        {
-                            item[field] = longval;
-                        }
-                        break;
                     case "spellID":
                     case "recipeID":
-                        // setting a recipeID on the Item should remove the spellID
-                        if (field == "recipeID")
                         {
-                            item.Remove("spellID");
-                        }
-                        longval = Convert.ToInt64(value);
-                        // any 0 value should simply be removed for cleanliness
-                        if (longval == 0)
-                        {
-                            LogDebug($"INFO: Removing 0-value {field} from", item);
-                            item.Remove(field);
-                        }
-                        else
-                        {
-                            // setting a spellID on an Item with a recipeID should do nothing
-                            if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
+                            // setting a recipeID on the Item should remove the spellID
+                            if (field == "recipeID")
                             {
-                                LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' :", item);
+                                item.Remove("spellID");
+                            }
+                            if (!value.TryConvert(out long val))
+                            {
+                                LogError($"Invalid field format:{field}={value}", item);
+                                break;
+                            }
+                            // any 0 value should simply be removed for cleanliness
+                            if (val == 0)
+                            {
+                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                item.Remove(field);
+                            }
+                            else
+                            {
+                                // setting a spellID on an Item with a recipeID should do nothing
+                                if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
+                                {
+                                    LogDebugWarn($"spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' :", item);
+                                    break;
+                                }
+
+                                item[field] = val;
+                            }
+                            break;
+                        }
+
+                    // Conditional Fields -- only merge if NOT Location Sourced data
+                    // there are situations where the same Item is BoP in some places and BoE in others...
+                    // CRIEVE NOTE: I'm not sure what the above is trying to fix, if you know, please let me know and we can solve it a different way.
+                    // With the if statement is left intact, it doesn't allow the ItemDBConditional to properly assign the b field for Heirlooms and stuff.
+                    // There are other cases as well, but that one is the most problematic.
+
+                    // long
+                    case "e":
+                    case "u":
+                        {
+                            if (!ProcessingMergeData) break;
+
+                            if (!value.TryConvert(out long val))
+                            {
+                                LogError($"Invalid field format:{field}={value}", item);
                                 break;
                             }
 
-                            item[field] = longval;
+                            // any 0 value should simply be removed for cleanliness
+                            if (val == 0)
+                            {
+                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                item.Remove(field);
+                            }
+                            else
+                            {
+                                item[field] = val;
+                            }
+                            break;
                         }
-                        break;
 
-                    // Conditional Fields -- only merge if NOT Location Sourced data
-#if RETAIL
-                    // there are situations where the same Item is BoP in some places and BoE in others...
-                    case "b":
-#endif
-                    case "e":
-                        if (!ProcessingMergeData) break;
-                        item[field] = Convert.ToInt64(value);
-                        break;
-                    case "u":
-                        if (!ProcessingMergeData) break;
-
-                        longval = Convert.ToInt64(value);
-                        // any 0 value should simply be removed for cleanliness
-                        if (longval == 0)
-                        {
-                            LogDebug($"INFO: Removing 0-value {field} from", item);
-                            item.Remove(field);
-                        }
-                        else
-                        {
-                            item[field] = longval;
-                        }
-                        break;
+                    // string-array
                     case "timeline":
                         if (!ProcessingMergeData) break;
 
@@ -591,7 +626,6 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
-                    case "titleIDs":
                         {
                             Objects.MergeIntegerArrayData(item, field, value);
                             break;
@@ -667,9 +701,10 @@ namespace ATT
                             item[field] = newListOfLists;
                             break;
                         }
-                    case "cost":
-                        Objects.MergeField_cost(item, value);
-                        break;
+                    // 'cost' is specific based on Source, so it shouldn't merge for all Sources of an Item
+                    //case "cost":
+                    //    Cost.Add(item, value);
+                    //    break;
                     case "lc":
                         Objects.MergeField_lockCriteria(item, value);
                         break;
@@ -719,6 +754,14 @@ namespace ATT
                 }
             }
 
+            public static void AddItemSourceID(KeyValuePair<long, object> itemSource)
+            {
+                if (itemSource.Value.TryConvert(out long sourceID))
+                {
+                    SOURCES[itemSource.Key] = sourceID;
+                }
+            }
+
             /// <summary>
             /// Merge the data into the item database.
             /// NOTE: Only data containing an itemID will merge.<para/>
@@ -748,9 +791,55 @@ namespace ATT
                     }
                     else if (data["itemID"].TryConvert(out long itemID) && itemID > 0)
                     {
-                        LogDebug($"INFO: Conditional Item data not merged: {itemID} = ", data);
+                        LogDebug($"INFO: Conditional Item data not merged: {itemID} =", data);
                     }
                 }
+            }
+
+
+            /// <summary>
+            /// Merge the data into the item database.
+            /// NOTE: Only data containing an itemID will merge.<para/>
+            /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
+            /// </summary>
+            /// <param name="data">The data to merge into the item database.</param>
+            public static void MergeFromDB(IDictionary<string, object> data, bool conditionalMerge = false)
+            {
+                // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
+                // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
+                Merge(data, conditionalMerge);
+            }
+
+            /// <summary>
+            /// Merge the data into the item database.
+            /// NOTE: Only data containing an itemID will merge.<para/>
+            /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
+            /// </summary>
+            /// <param name="data">The data to merge into the item database.</param>
+            public static void MergeFromObject(IDictionary<string, object> data, bool conditionalMerge = false)
+            {
+                //if (DebugMode)
+                //{
+                //    var item = GetNull(data);
+                //    if (item == null)
+                //    {
+                //        LogDebugWarn($"Item merge data:", data);
+                //    }
+                //    else
+                //    {
+                //        var newData = new Dictionary<string, object>(data);
+                //        foreach(var kvp in item)
+                //        {
+                //            if (newData.TryGetValue(kvp.Key, out object val) || val != kvp.Value)
+                //            {
+                //                newData.
+                //            }
+                //        }
+                //    }
+                //}
+                // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
+                // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
+                Merge(data, conditionalMerge);
             }
             #endregion
 
@@ -778,9 +867,8 @@ namespace ATT
                     case "musicRollID":
                     case "illusionID":
                     case "recipeID":
-#if ANYCLASSIC
                     case "petTypeID":
-#endif
+                    case "sourceID":
                     case "speciesID":
                     case "spellID":
                     case "factionID":
@@ -788,11 +876,10 @@ namespace ATT
                     case "requireSkill":
                     case "objectiveID":
                     case "f":
-#if ANYCLASSIC
                     case "filterForRWP":
-#endif
-                    case "b":
                     case "rank":
+                    case "gender":
+                    case "learnedAt":
                     case "ilvl":
                     case "lvl":
                     case "q":
@@ -814,17 +901,20 @@ namespace ATT
                     case "raceID":
                     case "conduitID":
                     case "customCollect":
-                    case "s":
                     case "type":
                         data[field] = value;
                         break;
                     // Conditional merges
+                    case "b":
                     case "u":
                     case "timeline":
                         if (!data.ContainsKey(field))
                         {
                             data[field] = value;
-                            LogDebug($"MergeInto {data["itemID"]}: {field} <==", value);
+                            if (field != "b") // bit spammy, even for debug logging
+                            {
+                                LogDebug($"MergeInto {data["itemID"]}: {field} <==", value);
+                            }
                         }
                         break;
                     case "races":
@@ -894,17 +984,33 @@ namespace ATT
                 var item = GetNull(specificItemID);
                 if (item == null)
                 {
-                    // only report if this is a specific ItemID...
-                    if (decimal.Truncate(specificItemID) != specificItemID)
+                    // If we couldn't find the exact item information, let's see if we should merge the object anyways based on the filter.
+                    // Recipes should always merge since they discard their mod/bonus IDs. TODO: Investigate if other filter IDs should as well?
+                    long truncatedItemID = (long)specificItemID;
+                    item = GetNull(truncatedItemID);
+                    if (item == null)
                     {
                         // Report that the specific item is missing.
                         Log($"Could not find item #{specificItemID} in the database", data);
+                        return;
                     }
-                    return;
+                    else if (!(item.ContainsKey("recipeID") || (item.TryGetValue("f", out long f) && f == 200)))
+                    {
+                        // If the item is NOT a recipe, then yeah, return immediately.
+                        Log($"Could not find non-recipe item #{specificItemID} in the database", data);
+                        return;
+                    }
+                    else
+                    {
+                        // Yeah, it's a recipe. Merge that shit! Fuck your modID/bonusID shenanigans!
+                        MergeInto(truncatedItemID, item, data);
+                    }
                 }
-
-                // Merge the specific item with the data dictionary.
-                MergeInto(specificItemID, item, data);
+                else
+                {
+                    // Merge the specific item with the data dictionary.
+                    MergeInto(specificItemID, item, data);
+                }
             }
 
             /// <summary>
@@ -924,7 +1030,9 @@ namespace ATT
 
                 if (data.ContainsKey("ignoreSource"))
                 {
+#pragma warning disable CS0162 // Unreachable code detected
                     if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to ignoreSource");
+#pragma warning restore CS0162 // Unreachable code detected
                     return;
                 }
 
@@ -933,7 +1041,9 @@ namespace ATT
                 {
                     if (!((f > 0 && f < 38) || f == 57))
                     {
+#pragma warning disable CS0162 // Unreachable code detected
                         if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
+#pragma warning restore CS0162 // Unreachable code detected
                         return;
                     }
                 }
@@ -949,14 +1059,16 @@ namespace ATT
                 if (SOURCES.TryGetValue(sourceIDKey, out long sourceID))
                 {
                     // quite spammmmmy, only enable if needed
+#pragma warning disable CS0162 // Unreachable code detected
                     if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID}");
-                    data["s"] = sourceID;
+#pragma warning restore CS0162 // Unreachable code detected
+                    data["sourceID"] = sourceID;
                     return;
                 }
 
                 // quite spammmmmy, only enable if needed
-                if (!data.ContainsKey("s"))
-                    if (DoSpammyDebugLogging) LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
+                if (DoSpammyDebugLogging && !data.ContainsKey("sourceID"))
+                    LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
             }
 
             /// <summary>
@@ -964,6 +1076,11 @@ namespace ATT
             /// </summary>
             private static decimal GetSourceIDKey(IDictionary<string, object> data)
             {
+                if (data.TryGetValue("_sitemID", out decimal specificItemID))
+                {
+                    return specificItemID;
+                }
+
                 if (data.TryGetValue("itemID", out long itemID))
                 {
                     if (data.TryGetValue("bonusID", out long bonusID))
@@ -1031,11 +1148,11 @@ namespace ATT
                 }
 
                 data.TryGetValue("itemID", out decimal itemID);
-                data.TryGetValue("modID", out long modID);
-                data.TryGetValue("bonusID", out long bonusID);
-
                 if (itemID == 0)
                     return 0;
+
+                data.TryGetValue("modID", out long modID);
+                data.TryGetValue("bonusID", out long bonusID);
 
                 modItemID = GetSpecificItemID(itemID, modID, bonusID);
                 data["_modItemID"] = modItemID;

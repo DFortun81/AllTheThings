@@ -44,6 +44,7 @@ root(ROOTS.Zones, {
 						39387,	-- The Skies of Highmountain
 						39456,	-- Unexpected Allies
 					},
+					["sourceQuestNumRequired"] = 1,
 				}),
 				q(39429, {	-- Assaulting the Haglands
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
@@ -95,7 +96,6 @@ root(ROOTS.Zones, {
 				q(39392, {	-- Bear Huntin'
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour
-						39859,	-- Note-Eating Goats
 					},
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
@@ -396,7 +396,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 39.9, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 95438 },	-- Ellias
 					["g"] = {
-						i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1]
+						i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1] (RECIPE!)
 					},
 				}),
 				q(40219, {	-- In Defiance of Deathwing
@@ -434,7 +434,6 @@ root(ROOTS.Zones, {
 				q(39123, {	-- Lion Stalkin'
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour
-						39859,	-- Note-Eating Goats
 					},
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
@@ -450,7 +449,6 @@ root(ROOTS.Zones, {
 				q(39124, {	-- Moose Shootin'
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour
-						39859,	-- Note-Eating Goats
 					},
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
@@ -491,7 +489,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 42.7, 10.8, HIGHMOUNTAIN },
 					["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl
 					["g"] = {
-						i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1]
+						i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1] (RECIPE!)
 					},
 				}),
 				q(40045, {	-- Nature vs. Nurture
@@ -542,7 +540,7 @@ root(ROOTS.Zones, {
 						i(132114),	-- Slime-Stacked Shoulderplates
 						i(132115),	-- Slime-Stacked Mantle
 						i(132117),	-- Slime-Stacked Shoulderpads
-						crit(2, {	-- Oh, the Clawdacity!
+						crit(34846, {	-- Oh, the Clawdacity!
 							["achievementID"] = 11427,	-- No Shellfish Endeavor
 						}),
 					},

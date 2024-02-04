@@ -94,6 +94,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(158253),	-- Freebooter Pantaloons
 					i(158252),	-- Outrigger Pants
 					i(158250),	-- Sea Raider's Legguards
+					i(155091),	-- Thovas-Explorer's Cape
 					i(161246, {	-- Zanchuli Woolies (confirmed)
 						["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
 					}),
@@ -300,7 +301,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 128903 },	-- Carentan
 			}),
 			q(49757, {	-- Cat on a Hot Copper Roof
-				["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
+				["sourceQuests"] = { 49869 },	-- A Desperate Defense [Discord 2023-8-2]
 				["coord"] = { 58.5, 61.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131654 },	-- Meredith
@@ -428,7 +429,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 			}),
 			q(48087, {	-- Equine Retrieval
-				["sourceQuests"] = { 48939 },	-- Show Me What You've Got
+				["sourceQuests"] = { 48004 },	-- Beginner Equitation
 				["coord"] = { 51.6, 27.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 124802 },	-- Lord Aldruis Norwington
@@ -1388,7 +1389,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 121239 },	-- Flynn Fairwind
 			}),
 			q(51358, {	-- WANTED: Gryphon 'Nappers
-				["objectID"] = 288641,	-- WANTED: Gryphon 'Nappers
+				["provider"] = {"o",288641},	-- WANTED: Gryphon 'Nappers
 				["coord"] = { 66.8, 24.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1569,75 +1570,3 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(155045),	-- Navigator's Sash
-				i(155048),	-- Navigator's Cuffs
-				i(158231),	-- Navigator's Slippers
-				i(160078),	-- Navigator's Pantaloons
-				i(160088),	-- Navigator's Mittens
-			}),
-			filter(LEATHER, {
-				i(158233),	-- Freebooter Treads
-				i(160079),	-- Freebooter Britches
-				i(160089),	-- Freebooter Handcovers
-				i(155047),	-- Freebooter Belt
-				i(155051),	-- Freebooter Bracers
-			}),
-			filter(MAIL, {
-				i(155046),	-- Outrigger Belt
-				i(155050),	-- Outrigger Bracers
-				i(158232),	-- Outrigger Footguards
-				i(160080),	-- Outrigger Chain Leggings
-				i(160090),	-- Outrigger Graspers
-			}),
-			filter(PLATE, {
-				i(158230),	-- Sea Raider's Warboots
-				i(160081),	-- Sea Raider's Pants
-				i(155044),	-- Sea Raider's Girdle
-				i(155049),	-- Sea Raider's Bracers
-			}),
-		}),
-		n(WEAPONS, {
-			i(153414),	-- Hatch-Cover Bulwark
-			i(158517),	-- Hatch-Cover Bulwark
-			i(153405),	-- Scalawag's Cutlass
-			i(155227),	-- Proudmoore Battalion Shield
-			i(153402),	-- Scalawag's Sail Slicer
-			i(153403),	-- Scalawag's Claymore
-			i(153404),	-- Scalawag's Spikefist
-			i(153406),	-- Tideshaper Staff
-			i(153407),	-- Repurposed Dinghy Anchor
-			i(153415),	-- Harbormaster's Lantern
-			i(161932),	-- Manual of Elemental Enchancement
-			i(155581),	-- Scalawag's Warglaive
-			i(158505),	-- Scalawag's Sail Slicer
-			i(158507),	-- Scalawag's Spikefist
-			i(161299),	-- Stoat-Trapper's Bladefist
-			i(161300),	-- Stoat-Trapper's Striker
-			i(158510),	-- Repurposed Dinghy Anchor
-			i(158518),	-- Harbormaster's Lantern
-			i(159079),	-- Captivating Glowfly Lantern
-			i(161290),	-- Grimestone Greatmace
-			i(161291),	-- Grimestone Spellmace
-			i(161292),	-- Grimestone Spellmaul
-			i(158579),	-- Scalawag's Warglaive
-			i(153400),	-- Scalawag's Bolt-Thrower
-			i(158503),	-- Scalawag's Bolt Thrower
-			i(161933),	-- Manual of Reverse Wounding
-			i(158508),	-- Scalawag's Cutlass
-			i(161305),	-- Ashvane Captain's Shortsword
-			i(161308),	-- Ashvane Captain's Quickblade
-			i(161309),	-- Ashvane Captain's Gladius
-			i(158504),	-- Whaler's Pike
-			i(153401),	-- Whaler's Pike
-			i(158509),	-- Tideshaper Staff
-			i(158506),	-- Scalawags Claymore
-			i(161924),	-- Seapriest's Wand (A) (never addedd)
-			i(161926),	-- Talanji's Salutary Scepter (A) (never added)
-		}),
-	}),
-});

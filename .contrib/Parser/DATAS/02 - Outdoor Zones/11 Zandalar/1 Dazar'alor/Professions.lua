@@ -1,42 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	m(THE_GREAT_SEAL, {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
-				q(54464, {	-- Alchemical Equations
-					["requireSkill"] = ALCHEMY,
-					["provider"] = { "n", 122703 },	-- Clever Kumali
+				n(122703, {	-- Clever Kumali <Alchemist Trainer>
 					["coord"] = { 42.2, 38.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(50112, {	-- Casting the First Stone (H)
-					["provider"] = { "n", 122703 },	-- Clever Kumali
-					["coord"] = { 42.2, 38.0, DAZARALOR },
-					["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
-					["requireSkill"] = ALCHEMY,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50113, {	-- Ocular Extracts (H)
-					["provider"] = { "n", 122703 },	-- Clever Kumali
-					["coord"] = { 42.2, 38.0, DAZARALOR },
-					["sourceQuest"] = 50112,	-- Casting the First Stone (H)
-					["requireSkill"] = ALCHEMY,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50115, {	-- Changing the Scenery (H)
-					["provider"] = { "n", 122703 },	-- Clever Kumali
-					["coord"] = { 42.2, 38.0, DAZARALOR },
-					["sourceQuest"] = 50112,	-- Casting the First Stone (H)
-					["requireSkill"] = ALCHEMY,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
+					["g"] = appendGroups(BFA_ALCHEMY, {
+						r(265787),	-- Zandalari Alchemy
+					}),
 				}),
 			}),
 			prof(BLACKSMITHING, {
@@ -75,41 +49,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				}),
 			}),
-			prof(ENGINEERING, {
-				q(54476, {	-- Engineered Blueprints
-					["requireSkill"] = ENGINEERING,
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
+			prof(HERBALISM, {
+				n(122704, {	-- Jahden Fla <Herbalism Trainer>
+					["coord"] = { 42.2, 35.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(55031, {	-- It's Scrap Work... (H)
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
-					["description"] = "Requires 150 Zandalari Engineering.",
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53783, {	-- In the Dunes (H)
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
-					["sourceQuest"] = 55031,	-- It's Scrap Work... (H)
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53937, {	-- The Ub3r-Spanner (H)
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
-					["sourceQuest"] = 53833,	-- Vengeful Venture (H)
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(282975), -- Schematic: The Ub3r-Spanner
-					},
+					["g"] = appendGroups(BFA_HERBALISM, {
+						r(265835),	-- Herb Gathering (Zandalari)
+					}),
 				}),
 			}),
 			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
@@ -301,185 +247,21 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				}),
 			}),
 			prof(LEATHERWORKING, {
-				q(54482, {	-- Leathered Patterns
-					["requireSkill"] = LEATHERWORKING,
-					["provider"] = { "n", 122698 },	-- Xanjo
-					["coord"] = { 44.1, 34.6, DAZARALOR },
+				n(122698, {	-- Xanjo <Leatherworking Trainer>
+					["coord"] = { 44.0, 34.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(53995, {	-- The Tauren Tanner
-					["provider"] = { "n", 122698 },	-- Xanjo
-					["coord"] = { 44.1, 34.6, DAZARALOR },
-					["description"] = "Requires 150 Zandalari Leatherworking.",
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55216, {	-- The Audition (H)
-					["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-					["coord"] = { 53.4, 92.5, DAZARALOR },
-					["sourceQuest"] = 53995,	-- The Tauren Tanner
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55217, {	-- Repaying the Life Debt
-					["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-					["coord"] = { 53.4, 92.5, DAZARALOR },
-					["sourceQuest"] = 55216,	-- The Audition (H)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55218, {	-- Sheza's Prized Leather
-					["provider"] = { "n", 3037 },	-- Sheza Wildmane
-					["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
-					["sourceQuest"] = 55217,	-- Repaying the Life Debt
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55219, {	-- Dropping by the Base
-					["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-					["coord"] = { 53.4, 92.5, DAZARALOR },
-					["sourceQuest"] = 55216,	-- The Audition (H)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55220, {	-- Bass Fishing
-					["provider"] = { "n", 108017 },	-- Torv Dubstomp
-					["coord"] = { 54.9, 77.9, 750 },
-					["sourceQuest"] = 55219,	-- Dropping by the Base
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55221, {	-- Picking Bones (H)
-					["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-					["coord"] = { 53.4, 92.5, DAZARALOR },
-					["sourceQuest"] = 55216,	-- The Audition (H)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55222, {	-- Make Some Noise (H)
-					["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-					["coord"] = { 53.4, 92.5, DAZARALOR },
-					["sourceQuests"] = {
-						55218,	-- Sheza's Prized Leather
-						55220,	-- Bass Fishing
-						55221,	-- Picking Bones (H)
-					},
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						un(15, recipe(293135)),	-- Recipe: Drum of Primal Might
-					},
-				}),
-				q(55223, {	-- Instruments of Destruction (H)
-					["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-					["coord"] = { 53.4, 92.5, DAZARALOR },
-					["sourceQuest"] = 55222,	-- Make Some Noise (H)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(293076),	-- Recipe: Mallet of Thunderous Skins
-					},
+					["g"] = appendGroups(BFA_LEATHERWORKING, {
+						r(265813),	-- Zandalari Leatherworking
+					}),
 				}),
 			}),
 			prof(MINING, {
-				-- Monelite Deposit
-				q(51962, {	-- Lumbering Away
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 50 Zandalari Mining",
-					["requireSkill"] = MINING,
+				n(122694, {	-- Secott the Goldsmith <Mining Trainer>
+					["coord"] = { 75.2, 7.6, BORALUS },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253334),	-- Monelite Deposit (Rank 2)
-					},
-				}),
-				q(51964, {	-- Insufferable Bloodsuckers
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 130 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253335),	-- Monelite Deposit (Rank 3)
-					},
-				}),
-				-- Monelite Seam
-				q(51965, {	-- Lending a Hand
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 50 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253343),	-- Monelite Seam (Rank 2)
-					},
-				}),
-				-- Storm Silver Deposit
-				q(52014, {	-- Ritualistic Prepartions (H)
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coords"] = {
-						{ 44.0, 39.0, DAZARALOR },	-- Trainer Location
-						{ 44.0, 38.3, DAZARALOR },	-- Forge
-						{ 52.8, 95.6, DAZARALOR },	-- Ingot Blessing
-					},
-					["description"] = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253337),	-- Storm Silver Deposit (Rank 2)
-					},
-				}),
-				q(52015, {	-- Brined Justice (H)
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["sourceQuest"] = 52014,	-- Ritualistic Preparations (H)
-					["description"] = "Requires 135 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253338),	-- Storm Silver Deposit (Rank 3)
-					},
-				}),
-				-- Storm Silver Seam
-				q(52016, {	-- Three Sheets to the Wind (H)
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 125 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253346),	-- Storm Silver Seam (Rank 2)
-					},
-				}),
-				q(52017, {	-- Back to Biru
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["sourceQuest"] = 52016,	-- Three Sheets to the Wind (H)
-					["description"] = "Requires 150 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-				}),
-				q(52043, {	-- The Wrath of Grapes (H)
-					["provider"] = { "n", 139634 },	-- Biru The Drunk
-					["coord"] = { 52.7, 84.3, DAZARALOR },
-					["sourceQuest"] = 52017,	-- Back to Biru
-					["description"] = "Requires 150 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253347),	-- Storm Silver Seam (Rank 3)
-					},
+					["g"] = appendGroups(BFA_MINING, {
+						r(265853),	-- Mining (Zandalari)
+					}),
 				}),
 			}),
 			prof(SKINNING, {

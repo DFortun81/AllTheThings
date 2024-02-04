@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["lvl"] = lvlsquish(67, 67, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(480, { -- Azjol-Nerub
+				ach(480, {	-- Azjol-Nerub
 					crit(5436, {	-- Krik'thir the Gatewatcher
 						["_encounter"] = { 585, NORMAL_DUNGEON },
 					}),
@@ -18,11 +18,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5623, { -- Anub'arak
+					crit(5623, {	-- Anub'arak
 						["_encounter"] = { 587, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5438, { -- Anub'arak
+					crit(5438, {	-- Anub'arak
 						["_encounter"] = { 587, NORMAL_DUNGEON },
 					}),
 					-- #endif
@@ -87,8 +87,28 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19429, {	-- Defense Protocol Gamma: Azjol-Nerub
+					crit(63328, {	-- Krik'thir the Gatewatcher
+						["_encounter"] = { 585, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63326, {	-- Hadronox
+						["_encounter"] = { 586, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63327, {	-- Anub'arak
+						["_encounter"] = { 587, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+				})),
 				-- #endif
-				ach(491, { -- Heroic: Azjol-Nerub
+				ach(491, {	-- Heroic: Azjol-Nerub
 					crit(6848, {	-- Krik'thir the Gatewatcher
 						["_encounter"] = { 585, HEROIC_DUNGEON },
 					}),
@@ -343,9 +363,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							ach(1860),	-- Gotta Go!
 							ach(5097, {	-- Heroic: Azjol-Nerub Guild Run
 								["timeline"] = { "added 4.0.3" },
-							}),
-							crit(5610, {	-- Anub'arak slain
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							}),
 							i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH]
 								["timeline"] = { "removed 4.0.3" },

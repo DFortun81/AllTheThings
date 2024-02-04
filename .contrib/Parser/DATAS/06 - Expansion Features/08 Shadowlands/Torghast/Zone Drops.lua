@@ -66,7 +66,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					159190,	-- Synod
 				},
 			}),
-			i(187044, {	-- Deathbringer's Epaulettes
+			i(187044, {	-- Deathbringer's Epaulets
 				["crs"] = {
 					151331,	-- Cellblock Sentinel
 					170418,	-- Goxul the Devourer

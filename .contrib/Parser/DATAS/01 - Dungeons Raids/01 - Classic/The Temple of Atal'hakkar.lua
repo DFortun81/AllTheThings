@@ -12,12 +12,8 @@ ATALAI_DEFENDERS = createHeader({
 	},
 });
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
-	if not t.collected and C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1 then
--- #if ANYCLASSIC
+	if not t.collected and _.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1 then
 		if not _.Settings.AccountWide.Quests then
--- #else
-		if not _.AccountWideQuests then
--- #endif
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
 			t.u = nil;
@@ -26,12 +22,8 @@ local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	end
 end]];
 local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
-	if not C_QuestLog.IsQuestFlaggedCompleted(3374) and (C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1) then
--- #if ANYCLASSIC
+	if not _.IsQuestFlaggedCompleted(3374) and (_.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1) then
 		if not _.Settings.AccountWide.Quests then
--- #else
-		if not _.AccountWideQuests then
--- #endif
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
 			t.u = nil;
@@ -44,7 +36,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",
 		-- #endif
-		["sins"] = { "Sunken Temple" },	-- The full name is actually The Temple of Atal'hakkar, but the saved instance data is wrong.
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 1417,	-- Sunken Temple
+		-- #endif
 		-- #if AFTER CATA
 		["coord"] = { 76.04, 45.21, SWAMP_OF_SORROWS },
 		-- #else
@@ -305,7 +299,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(3447, {	-- Secret of the Circle
-					["qg"] = 7771,	-- Marvon Rivetseeker
+					["providers"] = {
+						{ "n",   7771 },	-- Marvon Rivetseeker
+						{ "o", 148838 },	-- Idol of Hakkar
+					},
 					["sourceQuest"] = 3444,	-- The Stone Circle
 					["coord"] = { 52.6, 45.8, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
@@ -380,7 +377,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(3373, {	-- The Essence of Eranikus
-					["provider"] = { "i", 10454 },	-- Essence of Eranikus
+					["providers"] = {
+						{ "i",  10454 },	-- Essence of Eranikus
+						{ "o", 148512 },	-- Essence Font
+					},
 					["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 48,
@@ -593,14 +593,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "deleted 4.0.3" },
 					["cr"] = 5259,	-- Atal'ai Witch Doctor
 				}),
-				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version)
-					["timeline"] = { "added 4.3.0" },
+				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version) (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version)
-					["timeline"] = { "added 4.3.0.15005" },
+				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version) (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(10627),	-- Bludgeon of the Grinning Dog
 				i(10628),	-- Deathblow
@@ -659,6 +659,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				-- #if BEFORE 4.0.3
 				["description"] = "Go to the Pit of Refuse.\n\nClear all of the trash as you travel around the circular platform. You'll notice balconies that dip out and overlook the center of the pit. Essentially, once it's all cleared, each of your party members should spread out and be assigned to a balcony with an Atal'ai Shrine. The shrines must be clicked in a specific order:\n\n    South (Bottom)\n    North (Top)\n    Southwest (Bottom Left)\n    Southeast (Bottom Right)\n    Northwest (Top Left)\n    Northeast (Top Right)\n\nOnce a statue has been clicked in the correct sequence, it'll turn green. If not, the person attempting to activate will gain a curse.",
 				-- #endif
+				["provider"] = { "o", 148832 },	-- Atal'ai Statue
 				["timeline"] = { "removed 4.0.3" },
 				["groups"] = {
 					i(22444, {	-- Putrid Vine

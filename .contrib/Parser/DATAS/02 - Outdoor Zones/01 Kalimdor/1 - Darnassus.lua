@@ -38,19 +38,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = FISHING,
 					["groups"] = {
-						crit(1, {	-- Happy as a Clam Digger
+						crit(17754, {	-- Happy as a Clam Digger
 							["_quests"] = { 29321 },
 						}),
-						crit(2, {	-- Stocking Up
+						crit(17755, {	-- Stocking Up
 							["_quests"] = { 29323 },
 						}),
-						crit(3, {	-- The Sister's Pendant
+						crit(17756, {	-- The Sister's Pendant
 							["_quests"] = { 29324 },
 						}),
-						crit(4, {	-- A Slippery Snack
+						crit(17757, {	-- A Slippery Snack
 							["_quests"] = { 29325 },
 						}),
-						crit(5, {	-- An Old Favorite
+						crit(17758, {	-- An Old Favorite
 							["_quests"] = { 29359 },
 						}),
 					},
@@ -60,19 +60,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- The Secret to Perfect Kimchi
+						crit(17728, {	-- The Secret to Perfect Kimchi
 							["_quests"] = { 29313 },
 						}),
-						crit(2, {	-- Remembering the Ancestors
+						crit(17729, {	-- Remembering the Ancestors
 							["_quests"] = { 29314 },
 						}),
-						crit(3, {	-- Back to Basics
+						crit(17730, {	-- Back to Basics
 							["_quests"] = { 29316 },
 						}),
-						crit(4, {	-- Ribs for the Sentinels
+						crit(17731, {	-- Ribs for the Sentinels
 							["_quests"] = { 29318 },
 						}),
-						crit(5, {	-- Spice Bread Aplenty
+						crit(17732, {	-- Spice Bread Aplenty
 							["_quests"] = { 29357 },
 						}),
 					},
@@ -155,6 +155,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				},
+				q(5647, {	-- A Lack of Fear
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.2, 81, DARNASSUS },
+					["altQuests"] = {
+						5641,	-- A Lack of Fear [Ironforge]
+						5645,	-- A Lack of Fear [Stormwind City]
+					},
+					["timeline"] = { "removed 2.3.0" },
+					["maps"] = { IRONFORGE },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF },
+					["lvl"] = 20,
+					-- #if BEFORE 2.3.0
+					["groups"] = {
+						recipe(6346),	-- Fear Ward
+					},
+					-- #endif
+				}),
 				q(29325, {	-- A Slippery Snack
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
@@ -374,7 +392,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["lockCriteria"] = { 1,
@@ -539,7 +557,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2520, {	-- Sathrah's Sacrifice
 					["qg"] = 7313,	-- Priestess A'moora
-					["sourceQuest"] = 1150,	-- Tears of the Moon
+					["sourceQuest"] = 2518,	-- Tears of the Moon
 					["coord"] = { 36.4, 86, DARNASSUS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -556,6 +574,57 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78192, {	-- Secrets of the Light (1/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["coord"] = { 38.2, 89.2, DARNASSUS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ASHENVALE },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/7 Forsaken Herbalist slain
+							["provider"] = { "n", 3733 },	-- Forsaken Herbalist
+							["coord"] = { 32.0, 21.8, ASHENVALE },
+						}),
+						objective(2, {	-- 0/9 Forsaken Seeker slain
+							["provider"] = { "n", 3732 },	-- Forsaken Seeker
+							["coord"] = { 31.6, 23.8, ASHENVALE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78193, {	-- Secrets of the Light (2/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
+					["coord"] = { 38.2, 89.2, DARNASSUS },
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 17,
+					["groups"] = {
+						recipe(424035, {	-- Secrets of the Light
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(79078, {	-- Sharing the Faith
+					["qg"] = 4092,	-- Lariia <Priest Trainer>
+					["coord"] = { 40, 87.4, DARNASSUS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215095 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(1692, {	-- Smith Mathiel
 					["providers"] = {
 						{ "n", 4088 },	-- Elanaria
@@ -590,7 +659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						{ 39.2, 81, DARNASSUS },
-						{ 55.6, 56.8, DARNASSUS },
+						{ 55.6, 56.8, TELDRASSIL },
 						{ 47.2, 52.2, DUN_MOROGH },
 						{ 43.4, 65.6, ELWYNN_FOREST },
 						{ 24.6, 9.2, IRONFORGE },
@@ -866,7 +935,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(4753, {	-- Jartsam <Nightsaber Riding Instructor>
 					["coord"] = { 38.6, 16.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					
+
 					-- Available to Night Elves without faction requirements.
 					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 					["OnInit"] = [[function(t)
@@ -1107,6 +1176,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord
+						applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle
+						-- #endif
 						i(10311, {	-- Pattern: Orange Martial Shirt
 							["isLimited"] = true,
 						}),
@@ -1135,8 +1208,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(4232, {	-- Glorandiir <Axe Merchant>
@@ -1433,6 +1506,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2026,    -- Rock Hammer
 					}},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
+					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
+					["coord"] = { 39.8, 9.2, DARNASSUS },
+					["cost"] = {{ "i", 208607, 1 }},	-- Deer Musk
+					["maps"] = { TELDRASSIL },
+					["crs"] = { 883 },	-- Deer
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(4225, {	-- Saenorion <Leatherworking Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 60.0, 37.2, DARNASSUS },
@@ -1458,10 +1549,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 70.4, 23.2, DARNASSUS },
 					-- #endif
+					["sym"] = {{"sub", "common_vendor", 5193}},	-- Rebecca Laughlin <Tabard Designer>
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "common_vendor", 5193},	-- Rebecca Laughlin <Tabard Designer>
-					},
 				}),
 				n(8665, {	-- Shylenai <Owl Trainer>
 					-- #if AFTER CATA
@@ -1504,13 +1593,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(13477, {	-- Recipe: Superior Mana Potion
+						i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
 							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
 						}),
 					},

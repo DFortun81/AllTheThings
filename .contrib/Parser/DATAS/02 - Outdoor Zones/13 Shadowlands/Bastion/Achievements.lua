@@ -5,146 +5,134 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(BASTION, {
 		n(ACHIEVEMENTS, {
 			achraw(14307, {	-- Adventurer of Bastion
-				crit(1, {
+				crit(50582, {
 					["_npcs"] = { 158659 },	-- Herculon <Aspirant Assessor>
 				}),
-				crit(2, {
+				crit(50596, {
 					["_npcs"] = { 160721 },	-- Fallen Acolyte Erisne
 				}),
-				crit(3, {
+				crit(50597, {
 					["_npcs"] = { 161527 },	-- Sigilback
 				}),
-				crit(4, {
+				crit(50598, {
 					["_npcs"] = { 161530 },	-- Cloudtail
 				}),
-				crit(5, {
+				crit(50599, {
 					["_npcs"] = { 161529 },	-- Nemaeus
 				}),
-				crit(6, {
+				crit(50592, {
 					["_npcs"] = { 160629 },	-- Baedos
 				}),
-				crit(7, {
+				crit(50600, {
 					["_npcs"] = { 167078 },	-- Wingflayer the Cruel
 				}),
-				crit(8, {
+				crit(50594, {
 					["_npcs"] = { 160882 },	-- Nikara Blackheart
 				}),
-				crit(9, {
+				crit(50595, {
 					["_npcs"] = { 163460 },	-- Dionae
 				}),
-				crit(10, {
+				crit(50601, {
 					["_npcs"] = { 170548 },	-- Sundancer
 				}),
-				crit(11, {
+				crit(50602, {
 					["_npcs"] = { 170659 },	-- Basilofos, King of the Hill
 				}),
-				crit(12, {
+				crit(50603, {
 					["_npcs"] = { 170623 },	-- Dark Watcher
 				}),
-				crit(13, {
+				crit(50604, {
 					["_npcs"] = { 170932 },	-- Cloudfeather Guardian
 				}),
-				crit(14, {
+				crit(50605, {
 					["_npcs"] = { 171009 },	-- Enforcer Aegeon
 				}),
-				crit(15, {
+				crit(50606, {
 					["_npcs"] = { 171008 },	-- Unstable Memory
 				}),
-				crit(16, {
+				crit(50607, {
 					["_npcs"] = { 171013 },	-- Embodied Hunger
 				}),
-				crit(17, {
+				crit(50608, {
 					["_npcs"] = { 171040 },	-- Xixin the Ravening
 				}),
-				crit(18, {
+				crit(50609, {
 					["_npcs"] = { 171041 },	-- Worldfeaster Chronn
 				}),
-				crit(19, {
+				crit(50610, {
 					["_npcs"] = { 171014 },	-- Collector Astorestes
 				}),
-				crit(20, {
+				crit(50611, {
 					["_npcs"] = { 171011 },	-- Demi the Relic Hoarder
 				}),
-				crit(21, {
+				crit(50612, {
 					["_npcs"] = { 171189 },	-- Bookkeeper Mnemis
 				}),
-				crit(22, {
+				crit(50613, {
 					["_npcs"] = { 171211 },	-- Aspirant Eolis
 				}),
-				crit(23, {
+				crit(50614, {
 					["_npcs"] = { 171255 },	-- Echo of Aella <Hand of Courage>
 				}),
-				crit(24, {
+				crit(50615, {
 					["_npcs"] = { 171010 },	-- Corrupted Clawguard
 				}),
-				crit(25, {
+				crit(50616, {
 					["_npcs"] = { 171327 },	-- Reekmonger
 				}),
-				crit(26, {
+				crit(50617, {
 					["_npcs"] = { 161528 },	-- Aethon
 				}),
-				crit(27, {
+				crit(50593, {
 					["_npcs"] = { 160985 },	-- Selena the Reborn
 				}),
-				crit(28, {
+				crit(50618, {
 					["_npcs"] = { 156340 },	-- Larionrider Orstus
 				}),
-				crit(29, {
+				crit(50619, {
 					["_npcs"] = { 170899 },	-- Ascended Council
 				}),
 			}),
 			ach(14767, {	-- Count Your Blessings
-				crit(1, {		-- Purified Blessing of Grace
+				crit(49944, {		-- Purified Blessing of Grace
 					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
 					["coord"] = { 53.8, 28.9, BASTION },
 				}),
-				crit(2, {		-- Purified Blessing of Power
+				crit(49945, {		-- Purified Blessing of Power
 					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
 					["coord"] = { 45.3, 59.8, BASTION },
 				}),
-				crit(3, {		-- Purified Blessing of Fortitude
+				crit(49946, {		-- Purified Blessing of Fortitude
 					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
 					["coord"] = { 34.7, 30.0, BASTION },
 				}),
 			}),
-			ach(14303, {	-- Explore Bastion
-				crit(1),		-- Vestribule of Eternity
-				crit(2),		-- Temple of Humility
-				crit(3),		-- Purity's Pinnacle
-				crit(4),		-- Firstborne's Bounty
-				crit(5),		-- The Mnemonic Locus
-				crit(6),		-- The Eternal Forge
-				crit(7),		-- Elysian Hold
-				crit(8),		-- Citadel of Loyalty
-				crit(9),		-- Temple of Courage
-				crit(10),		-- Aspirant's Crucible
-				crit(11),		-- Agthia's Repose
-			}),
+			explorationAch(14303),	-- Explore Bastion
 			ach(14735, {	-- Flight School Graduate
-				crit(1, {		-- Flight School: Falling With Style
+				crit(49820, {		-- Flight School: Falling With Style
 					["_quests"] = { 60844 },	-- Flight School: Falling With Style
 				}),
-				crit(2, {		-- Flight School: Up and Away!
+				crit(49821, {		-- Flight School: Up and Away!
 					["_quests"] = { 60858 },	-- Flight School: Up and Away!
 				}),
-				crit(3, {		-- Flight School: Flapping Frenzy
+				crit(49822, {		-- Flight School: Flapping Frenzy
 					["_quests"] = { 60911 },	-- Flight School: Flapping Frenzy
 				}),
 			}),
 			ach(14734, {	-- Rallying Cry of the Ascended
-				crit(1, {		-- Vesper of Courage
+				crit(49815, {		-- Vesper of Courage
 					["coord"] = { 33.3, 59.7, BASTION },
 				}),
-				crit(2, {		-- Vesper of Wisdom
+				crit(49819, {		-- Vesper of Wisdom
 					["coord"] = { 39.1, 20.4, BASTION },
 				}),
-				crit(3, {		-- Vesper of Humility
+				crit(49816, {		-- Vesper of Humility
 					["coord"] = { 71.8, 38.8, BASTION },
 				}),
-				crit(4, {		-- Vesper of Loyalty
+				crit(49817, {		-- Vesper of Loyalty
 					["coord"] = { 32.1, 17.8, BASTION },
 				}),
-				crit(5, {		-- Vesper of Purity
+				crit(49818, {		-- Vesper of Purity
 					["coord"] = { 64.3, 69.8, BASTION },
 				}),
 			}),
@@ -451,101 +439,101 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			ach(14801, {	-- Sojourner of Bastion
-				crit(1, {	-- In Agthia's Memory
+				crit(50336, {	-- In Agthia's Memory
 					["sourceQuests"] = { 57555 },	-- Shadow's Fall
 				}),
-				crit(2, {	-- Wings of Freedom
+				crit(50337, {	-- Wings of Freedom
 					["sourceQuests"] = { 59865 },	-- Glimmerflight
 				}),
-				crit(3, {	-- In the Garden of Respite
+				crit(50338, {	-- In the Garden of Respite
 					["sourceQuests"] = { 57568 },	-- Tough Love
 				}),
-				crit(4, {	-- The Spear of Kalliope
-					["sourceQuests"] = {
-						60906,	-- Rightful Resting Place (non-Kyrian)
-						57967,	-- Rightful Resting Place (Kyrian)
-					},
+				crit(50339, {	-- The Spear of Kalliope
+					["sourceQuests"] = { 60906 },   -- Rightful Resting Place (non-Kyrian)
 				}),
-				crit(5, {	-- Pride or Unit
-					["sourceQuests"] = {
-						60296,	-- Pride or Unit (Nemea - Larion)
-						58103,	-- Pride or Unit (Pelodis - Phalynx)
-					},
+				crit(50340, {	-- The Spear of Kalliope
+					["sourceQuests"] = { 57967 },   -- Rightful Resting Place (Kyrian)
+				}),
+				crit(50334, {	-- Pride or Unit
+					["sourceQuests"] = { 58103 },   -- Pride or Unit (Pelodis - Phalynx)
+				}),
+				crit(50333, {	-- Pride or Unit
+					["sourceQuests"] = { 60296 },   -- Pride or Unit (Nemea - Larion)
 				}),
 			}),
 			ach(14281, {	-- The Path to Ascension
-				crit(1, {	-- Eternity's Call
+				crit(48148, {	-- Eternity's Call
 					["sourceQuests"] = { 57677 },	-- A Soulbind In Need
 				}),
-				crit(2, {	-- The Aspirant's Crucible
+				crit(48149, {	-- The Aspirant's Crucible
 					["sourceQuests"] = { 58174 },	-- All An Aspirant Can Do
 				}),
-				crit(3, {	-- The Temple of Purity
+				crit(48150, {	-- The Temple of Purity
 					["sourceQuests"] = { 57447 },	-- Purity's Prerogative
 				}),
-				crit(4, {	-- Chasing a Memory
+				crit(48151, {	-- Chasing a Memory
 					["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
 				}),
-				crit(5, {	-- Your Personal Assistant
+				crit(50099, {	-- Your Personal Assistant
 					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 				}),
-				crit(6, {	-- A Time for Courage
+				crit(48152, {	-- A Time for Courage
 					["sourceQuests"] = { 60055 },	-- A Time for Courage
 				}),
-				crit(7, {	-- A Land of Strife
+				crit(48153, {	-- A Land of Strife
 					["sourceQuests"] = { 61107 },	-- A Land of Strife
 				}),
 			}),
 			pvp(ach(14514)),	-- Tour of Duty: Bastion
 			ach(14311, {	-- Treasures of Bastion
-				crit(1,  {	-- Scroll of Aeons
+				crit(50047,  {	-- Scroll of Aeons
 					["_quests"] = { 58298 },
 				}),
-				crit(2,  {	-- Vesper of Virtues
+				crit(50048,  {	-- Vesper of Virtues
 					["_quests"] = { 60478 },
 				}),
-				crit(3,  {	-- Purifying Draught
+				crit(50049,  {	-- Purifying Draught
 					["_quests"] = { 58329 },
 				}),
-				crit(4,  {	-- Lost Disciple's Notes
+				crit(50050,  {	-- Lost Disciple's Notes
 					["_quests"] = { 61048 },
 				}),
-				crit(5,  {	-- Larion Tamer's Harness
+				crit(50051,  {	-- Larion Tamer's Harness
 					["_quests"] = { 61049 },
 				}),
-				crit(6,  {	-- Stolen Equipment
+				crit(50052,  {	-- Stolen Equipment
 					["_quests"] = { 61044 },
 				}),
-				crit(7,  {	-- Abandoned Stockpile
+				crit(50053,  {	-- Abandoned Stockpile
 					["_quests"] = { 61006 },
 				}),
-				crit(8,  {	-- Experimental Construct Part
+				crit(50054,  {	-- Experimental Construct Part
 					["_quests"] = { 61052 },
 				}),
-				crit(9,  {	-- Windsmith's Tools
+				crit(50055,  {	-- Windsmith's Tools
 					["_quests"] = { 61053 },
 				}),
-				crit(10, {	-- Memorial Offerings
+				crit(50056, {	-- Memorial Offerings
 					["_quests"] = { 61150 },
 				}),
-				crit(11, {	-- Gift of Agthia
+				crit(50058, {	-- Gift of Agthia
 					["_quests"] = { 60893 },
 				}),
-				crit(12, {	-- Gift of Vesiphone
+				crit(50059, {	-- Gift of Vesiphone
 					["_quests"] = { 60890 },
 				}),
-				crit(13, {	-- Gift of Chyrus
+				crit(50060, {	-- Gift of Chyrus
 					["_quests"] = { 60892 },
 				}),
-				crit(14, {	-- Gift of Thenios
+				crit(50061, {	-- Gift of Thenios
 					["_quests"] = { 60894 },
 				}),
-				crit(15, {	-- Gift of Devos
+				crit(50062, {	-- Gift of Devos
 					["_quests"] = { 60895 },
 				}),
 			}),
 			ach(14768, {	-- What is that Melody?
-				crit(1, {		-- Hymn of Purity
+				crit(49947, {		-- Hymn of Purity
 					["description"] = "Triangular stacks of bundled scrolls, often found on tables and benches.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Purity.  Part of this temple is full of elite mobs.",
 					["coords"] = {
 						{ 57.8, 73.8, BASTION },
@@ -556,7 +544,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ 63.8, 73.5, BASTION },
 					},
 				}),
-				crit(2, {		-- Hymn of Courage
+				crit(49948, {		-- Hymn of Courage
 					["description"] = "Rolled scrolls that can be found on the ground.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Courage.  The transport pad to reach the area is located at |cFFFFFFFF39.2, 56.1|r.",
 					["coords"] = {
 						{ 29.7, 56.5, BASTION },
@@ -568,7 +556,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ 35.4, 55.6, BASTION },
 					},
 				}),
-				crit(3, {		-- Hymn of Humility
+				crit(49949, {		-- Hymn of Humility
 					["description"] = "Vertical scrolls that are often on tables.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Humility.",
 					["coords"] = {
 						{ 63.0, 42.8, BASTION },
@@ -580,7 +568,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ 67.6, 43.4, BASTION },
 					},
 				}),
-				crit(4, {		-- Hymn of Wisdom
+				crit(49950, {		-- Hymn of Wisdom
 					["description"] = "Vertical scrolls that are often pinned to monuments or walls.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Wisdom.",
 					["coords"] = {
 						{ 41.6, 24.2, BASTION },

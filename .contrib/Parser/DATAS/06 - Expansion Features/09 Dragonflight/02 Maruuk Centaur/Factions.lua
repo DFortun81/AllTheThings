@@ -5,7 +5,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	n(MARUUK_CENTAUR, {
 		n(FACTIONS, {
 			faction(FACTION_MARUUK_CENTAUR, {
-				ach(16528),	-- Joining the Khansguard
+				ach(16528, {	-- Joining the Khansguard
+				["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },	-- Maruuk Centaur Renown 25
+				}),
+				ach(17064, {	-- Friends in the Plains
+					["minReputation"] = { FACTION_MARUUK_CENTAUR, 15 },	-- Maruuk Centaur Renown 15
+					["timeline"] = { ADDED_10_2_0 },
+				}),
 			}),
 		}),
 	}),

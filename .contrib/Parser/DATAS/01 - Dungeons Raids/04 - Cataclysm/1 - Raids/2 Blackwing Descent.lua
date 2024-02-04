@@ -15,22 +15,22 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4842, {	-- Blackwing Descent
-					crit(1, {
+					crit(13537, {
 						["_encounter"] = { 170, NORMAL_DUNGEON },	-- Magmaw
 					}),
-					crit(2, {
+					crit(13538, {
 						["_encounter"] = { 169, NORMAL_DUNGEON },	-- Omnotron Defense System
 					}),
-					crit(3, {
+					crit(13539, {
 						["_encounter"] = { 173, NORMAL_DUNGEON },	-- Maloriak
 					}),
-					crit(4, {
+					crit(13540, {
 						["_encounter"] = { 171, NORMAL_DUNGEON },	-- Atramedes
 					}),
-					crit(5, {
+					crit(13541, {
 						["_encounter"] = { 172, NORMAL_DUNGEON },	-- Chimaeron
 					}),
-					crit(6, {
+					crit(13542, {
 						["_encounter"] = { 174, NORMAL_DUNGEON },	-- Nefarian's End
 					}),
 				}),
@@ -77,10 +77,10 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 42179,
 						["groups"] = {
 							ach(5307, {	-- Achieve-a-tron
-								crit(1),	-- No player hit by Static Shock
-								crit(2),	-- No player hit by Poison Bomb
-								crit(3),	-- No player hit by Arcane Annihilator
-								crit(4),	-- No more than one player hit by each Flamethrower
+								crit(15651),	-- No player hit by Static Shock
+								crit(15652),	-- No player hit by Poison Bomb
+								crit(15653),	-- No player hit by Arcane Annihilator
+								crit(15654),	-- No more than one player hit by each Flamethrower
 							}),
 							i(152966, {	-- Tinytron (PET!)
 								["timeline"] = { ADDED_7_3_0 },
@@ -166,7 +166,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(63683),	-- Helm of the Forlorn Conqueror
 							i(63684),	-- Helm of the Forlorn Protector
 							i(63682),	-- Helm of the Forlorn Vanquisher
-							i(138802),	-- Illusion: Power Torrent
+							i(138802),	-- Illusion: Power Torrent (ILLUSION!)
 							i(152968, {	-- Rattlejaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
@@ -307,7 +307,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(65001),	-- Crown of the Forlorn Conqueror
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher
-							i(138802),	-- Illusion: Power Torrent
+							i(138802),	-- Illusion: Power Torrent (ILLUSION!)
 							i(152968, {	-- Rattlejaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),

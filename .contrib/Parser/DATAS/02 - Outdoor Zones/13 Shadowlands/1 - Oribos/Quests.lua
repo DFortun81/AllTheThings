@@ -100,6 +100,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, THE_MAW },
 					["g"] = {
+						i(184544),	-- Attuned Shard (QI!)
 						i(184757),	-- Chain of the Purpose-Bound
 					},
 				}),
@@ -110,6 +111,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["maps"] = { 1627 },	-- Torghast
 					["g"] = {
 						i(184758),	-- Drape of Inscrutable Purpose
+						i(184198),	-- Soul-Touched Key (QI!)
 					},
 				}),
 				q(62935, {	-- Remnants of Hope
@@ -121,13 +123,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62935 },	-- Remnants of Hope
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184200),	-- Coded Notes (QI!)
+						i(184199),	-- Ice-Encrusted Debris (QI!)
+					},
 				}),
 				q(60139, {	-- Torment Chamber: Jaina
 					["sourceQuests"] = { 62938 },	-- Information for a Price
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
 					["g"] = {
-						i(184550),	-- Attuned Shard
+						i(184550),	-- Attuned Shard (QI!)
 					},
 				}),
 				q(62966, {	-- Finding a Witness
@@ -139,11 +145,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62966 },	-- Finding a Witness
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184242),	-- Burnt Totem (QI!)
+					},
 				}),
 				q(60146, {	-- Torment Chamber: Thrall
 					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184551),	-- Attuned Shard (QI!)
+					},
 				}),
 				q(61557, {	-- An Echo in the Darkness
 					["description"] = "Provided automatically when zoning or changing floors in Oribos.",
@@ -162,6 +174,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184276),	-- Length of Light-Infused Chain (QI!)
+						i(184277),	-- Lion Emblem (QI!)
+						i(184278),	-- Royal Ring (QI!)
+					},
 				}),
 				q(61730, {	-- The Captive King
 					["sourceQuests"] = { 62836 },	-- Signs of the Lion
@@ -242,12 +259,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 		n(QUESTS, sharedData({
 			["customCollect"] = "SL_SKIP",
+			-- TODO: post-DF is threads of fate still a thing, or are these quests available to a first-time/storyline character as well?
 		}, {
 			------ Skip Quests ------
 			q(62704, {	-- The Threads of Fate
 				["sourceQuests"] = { 59770 },	-- Stand as One
 				["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 				["coord"] = { 19.6, 50.2, ORIBOS },
+				-- this quest is only available once another character has completed the SL campaign, but it in itself is what allows becoming a 'skip'
+				-- character so it isn't actually a Threads quest
+				["customCollect"] = IGNORED_VALUE,
 				["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 			}),
 			q(63771, {	-- Fate's Reminder
@@ -568,22 +589,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 34.7, 56.5, ORIBOS },
 				["isDaily"] = true,
 				["lvl"] = { 50, 59 },
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5 },
 				["sym"] = {
-					{"select", "mapID", BASTION },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", BASTION },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
-					{"select", "mapID", MALDRAXXUS },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", MALDRAXXUS },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
-					{"select", "mapID", ARDENWEALD },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", ARDENWEALD },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
-					{"select", "mapID", REVENDRETH },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", REVENDRETH },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
 					{"merge"},
@@ -606,21 +627,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62763 },	-- Support the Court
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Bastion ------
 			q(62729, {	-- Return to Oribos
 				["sourceQuests"] = { 62723 },	-- Bolstering Bastion
 				["provider"] = { "n", 159478 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Maldraxxus ------
 			q(62761, {	-- Return to Oribos
 				["sourceQuests"] = { 62748 },	-- Rallying Maldraxxus
 				["provider"] = { "n", 175008 },	-- Secutor Mevix
 				["coord"] = { 52.8, 68.2, MALDRAXXUS },
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Revendreth ------
 			q(62779, {	-- Return to Oribos
@@ -633,7 +660,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Battlegrounds ------
 			pvp(q(65034, {	-- Return to Oribos
@@ -720,12 +749,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["g"] = {
+					i(178571),	-- A Slimy Correspondence (QI!)
+				},
 			}),
 			q(60257, {	-- A Valuable Find: Sanguine Depths
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["g"] = {
+					i(178576),	-- Ancient Broker Headpiece (QI!)
+				},
 			}),
 			q(60252, {	-- A Valuable Find: Spires of Ascension
 				["sourceQuests"] = { 60274 },	-- Trading Favors
@@ -805,39 +840,35 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 
 root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
-		q(64254),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters
+		q(64254),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters (spellID 353954)
 		q(64514),	-- triggered while doing The Battle of Ardenweald scenario
 		q(64515),	-- triggered while doing The Battle of Ardenweald scenario
-		q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
-		q(64782),	-- Occurred when joining Night Fae/Kyrian in the initial Thread of Fate quest 62000
+		q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character (spellID 348186)
+		q(64782),	-- Joining Nany Cov during 'Choosing Your Purpose' (questID 62000) (spellID 359346 & 359347 & 359348 & 359349)
 		q(62370),	-- Swapping Cov to NF with NF already R40
 		q(62384),	-- Swapping Cov to NF with NF already R40
 		-- 9.1.5 Swapping at R80. Flag/Unflag
-		q(65076),	-- Swapping Cov to Kyrian at R80
-		q(65077),	-- Swapping Cov to Venthyr at R80
-		q(65078),	-- Swapping Cov to NF at R80
-		q(65079),	-- Swapping Cov to Necrolord at R80
 		--q(62370),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
 		--q(62380),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
 		-- 9.1.5?
 		q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
-		q(64848),	-- Choosing Torghast as leveling
-		q(65030),	-- accepting/completing 'Battlegrounds' [65031]
+		q(64848),	-- Scouting Map - Torghast Choice Complete (spellID 359574)
+		q(65030),	-- Scouting Map - Battlegrounds Choice Complete (spellID 360652)
 		q(65753),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Devouring Malediction'
 		q(65754),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Eternal Aegis'
 		q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
 		q(65756),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Echoing Resolve'
 		q(65757),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Fastidious Resolve'
 		q(66047),	-- Solo Shuffle Completion? /First win
-		q(65511),	-- Stay a while and listen with Vareesa Windrunner
-		q(65618),	-- Stay a while and listen with Bolvar(9.2.0)
-		q(65612),	-- Stay a while and listen with Baine
-		q(65609),	-- Stay a while and listen with Lor'themar
-		q(65607),	-- Stay a while and listen with King Greymane
-		q(65614),	-- Stay a while and listen with Arbiter Pelagos
-		q(66316),	-- Stay a while and listen with Bolvar(9.2.5)
+		q(65511),	-- Stay a while and listen with Vareesa Windrunner (spellID 366650)
+		q(65618),	-- Stay a while and listen with Bolvar (9.2.0) (spellID 367008)
+		q(65612),	-- Stay a while and listen with Baine (spellID 366952)
+		q(65609),	-- Stay a while and listen with Lor'themar (spellID 366932)
+		q(65607),	-- Stay a while and listen with King Greymane (spellID 366925)
+		q(65614),	-- Stay a while and listen with Arbiter Pelagos (spellID 366958)
+		q(66316),	-- Stay a while and listen with Bolvar (9.2.5)
 		q(66313),	-- Stay a while and listen with Proundmoore
-		q(70704),	-- Tracking quest for Vessel of Profound Possibilities
+		q(70704),	-- Tracking quest for Vessel of Profound Possibilities (spellID 367898)
 	}),
 })));
 

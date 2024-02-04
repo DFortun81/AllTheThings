@@ -19,11 +19,17 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				i(186476,  {	-- Sinfall Gravewing (MOUNT!)
 					["description"] = "Requires Renown 45.",
 				}),
+				--[[
 				title_gendered(429, 430, {	-- Count / Countess (TITLE!)
 					["description"] = "Requires Renown 40.",
 				}),
-				--title(429),	-- Count %s
-				--title(430),	-- Countess %s
+				]]--
+				title_male(429, {	-- Count %s
+					["description"] = "Requires Renown 40.",
+				}),
+				title_female(430, {	-- Countess %s
+					["description"] = "Requires Renown 40.",
+				}),
 				title(444, {	-- Sin Eater (TITLE!)
 					["description"] = "Requires Renown 80.",
 				}),
@@ -97,7 +103,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 			q(63630),	-- learning Ensemble: Harvester's Court Attire (Renown reward)
 			q(63637),	-- learning Ensemble: Sinful Inquisitor's Vestments (Renown reward)
 
-			q(64578),	-- triggered after watching Kael'thas/The Accuser RP
+			q(64578),	-- triggered after watching Kael'thas/The Accuser RP (spellID 358161)
 			q(64454),	-- Renown 76
 			-- 9.1.5 New HQTS
 			q(65113),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)

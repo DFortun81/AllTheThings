@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures,
 							i(112623, {	-- Pack of Fishing Supplies
 								["description"] = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
 								["g"] = {
-									i(34834),	-- Recipe: Captain Rumsey's Lager
+									i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 									i(33820),	-- Weather-Beaten Fishing Hat
 									i(44983),	-- Strand Crawler (PET!)
 									i(45991),	-- Bone Fishing Pole

@@ -47,10 +47,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				filter(REAGENTS, {
 					i(204292),	-- "Volcano" Duck
+					i(199105),	-- Ancheevy
+					i(199212),	-- Clubfish
 					i(204299),	-- Dark Thaldraszian Cocoa Powder
 					i(204286),	-- Deepsquid Ink
 					i(204290),	-- Dragonflame Argali
+					i(199833),	-- Dragonhead Eel
 					i(204296),	-- Dried Coldsnap Sagittate
+					i(199101),	-- Dried Wyldermane Kelp
 					i(204297),	-- Exquisite Ohn'ahran Potato
 					i(204288),	-- Eye of Bass
 					i(204285),	-- Fermented Mackerel Paste
@@ -58,18 +62,31 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(204300),	-- Four-Cheese Blend
 					i(204294),	-- Fresh Dragon Fruit
 					i(204293),	-- Greenberry
+					i(199208),	-- Grungle
+					i(199102),	-- Hunk o' Blubber
+					i(199207),	-- Iceback Sculpin
 					i(204287),	-- Island Crab Jerky
 					i(204295),	-- Juicy Bushfruit
+					i(199213),	-- Lakkamuk Blenny
 					i(204282),	-- Lunker Bits
+					i(199205),	-- Manasucker
+					i(199103),	-- Nappa's Famous Tea
 					i(204284),	-- Norukk's "All-Purpose" Fish Powder
+					i(199100),	-- Peppersmelt
+					i(199104),	-- Piping-Hot Orca Milk
+					i(199834),	-- Pulpy Seagrass
 					i(204304),	-- Rations: Dragonbreath Chili
 					i(204301),	-- Rations: Scorpid Surprise
 					i(204302),	-- Rations: Undermine Clam Chowder
 					i(204303),	-- Rations: Westfall Stew
+					i(199063),	-- Salted Fish Scraps
 					i(204289),	-- Seven Spices Bruffalon
 					i(204283),	-- Skrog Liver Oil
+					i(199832),	-- Smoked Seaviper
 					i(204281),	-- Thousandbite Piranha Collar
 					i(204291),	-- Thrice-Charred Mammoth Ribs
+					i(199106),	-- Tiny Leviathan Bone
+					i(199835),	-- Torga's Braid
 				}),
 			},
 		})),

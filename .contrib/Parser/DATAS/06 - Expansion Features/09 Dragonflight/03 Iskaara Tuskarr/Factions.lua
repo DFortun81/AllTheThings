@@ -5,7 +5,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	n(ISKAARA_TUSKARR, {
 		n(FACTIONS, {
 			faction(FACTION_ISKAARA_TUSKARR, {
-				ach(16529),	-- Joining the Community
+				ach(16944, {	-- Friend of the Family
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 15 },	-- Iskaara Tuskarr Renown 15
+					["timeline"] = { ADDED_10_2_0 },
+				}),
+				ach(16529, {	-- Joining the Community
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },	-- Iskaara Tuskarr Renown 30
+				}),
 			}),
 		}),
 	}),

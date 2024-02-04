@@ -41,6 +41,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					i(178165),	-- Tunk's Tooth
 					i(178166),	-- Tunk's Toothpick
 					i(178162),	-- Tunk's Whomper
+					i(178176),	-- Tunk's Trunk
 				}),
 				n(156501, {	-- Ravnyr
 					["crs"] = { 156814 },	-- Gor'groth
@@ -845,72 +846,73 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 163007 },	-- Curly
 					["coord"] = { 77.3, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
 				}),
 				q(58910, {	-- What's Your Specialty? [A] [Druid]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59586, {	-- What's Your Specialty? [A] [Hunter]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59587, {	-- What's Your Specialty? [A] [Mage]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59588, {	-- What's Your Specialty? [A] [Monk]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { MONK },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59589, {	-- What's Your Specialty? [A] [Paladin]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59590, {	-- What's Your Specialty? [A] [Priest]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59591, {	-- What's Your Specialty? [A] [Rogue]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59592, {	-- What's Your Specialty? [A] [Shaman]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59593, {	-- What's Your Specialty? [A] [Warlock]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59594, {	-- What's Your Specialty? [A] [Warrior]
-					["sourceQuests"] = { 58909 },	-- License to Ride [A]
+					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
 					["classes"] = { WARRIOR },
@@ -939,6 +941,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 163211 },	-- Henry Garrick
 					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
 
 					-- Orgrimmar --
@@ -959,72 +962,73 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
 					["coord"] = { 61.5, 32.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
 				}),
 				q(60346, {	-- What's Your Specialty? [H] [Druid]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60347, {	-- What's Your Specialty? [H] [Hunter]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60348, {	-- What's Your Specialty? [H] [Mage]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60349, {	-- What's Your Specialty? [H] [Monk]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { MONK },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60350, {	-- What's Your Specialty? [H] [Paladin]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60351, {	-- What's Your Specialty? [H] [Priest]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60352, {	-- What's Your Specialty? [H] [Rogue]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60353, {	-- What's Your Specialty? [H] [Shaman]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60355, {	-- What's Your Specialty? [H] [Warlock]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60357, {	-- What's Your Specialty? [H] [Warrior]
-					["sourceQuests"] = { 60345 },	-- License to Ride [H]
+					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["classes"] = { WARRIOR },
@@ -1053,6 +1057,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
 					["coord"] = { 70.9, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
 			}),
 			------ Miscellaneous ------
@@ -1126,6 +1131,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					{ 57.6, 40.9, EXILES_REACH },
 				},
 				["questID"] = 59611,
+				["g"] = {
+					i(175240),	-- Tattered Leather Bag
+				},
 			}),
 		})),
 		n(TREASURES, sharedData({
@@ -1157,6 +1165,12 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			o(329919, {	-- Stolen Supplies
 				["coord"] = { 59.3, 37.6, EXILES_REACH },
 				["questID"] = 56581,
+				["groups"] = {
+					i(174811),	-- Stitched Cloth Tunic
+					i(174812),	-- Stitched Leather Tunic
+					i(174814),	-- Dented Chestpiece
+					i(174813),	-- Linked Mail Hauberk
+				},
 			}),
 			o(327407, {	-- Precious Ogre Stash
 				["coord"] = { 41.8, 42.8, EXILES_REACH },
@@ -1279,32 +1293,11 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					150237,	-- Quilboar Warrior
 				},
 			}),
+			i(176398, {	-- Torgok's Reagent Pouch
+				["crs"] = {
+					162817,	-- Torgok <Binder of Souls>
+				},
+			}),
 		}),
 	},
 })));
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(174795),	-- Expeditionary Cloth Mantle
-				i(175181),	-- Expeditionary Cloth Boots
-				i(175213),	-- Expeditionary Cloth Boots
-			}),
-			filter(LEATHER, {
-				i(175183),	-- Expeditionary Leather Boots
-				i(175215),	-- Expeditionary Leather Boots
-				i(174796),	-- Expeditionary Leather Pauldrons
-			}),
-			filter(MAIL, {
-				i(175182),	-- Expeditionary Mail Sabatons
-				i(175214),	-- Expeditionary Mail Sabatons
-				i(174797),	-- Expeditionary Mail Shoulders
-			}),
-			filter(PLATE, {
-				i(174798),	-- Expeditionary Plate Shoulderguard
-				i(175180),	-- Expeditionary Plate Warboots
-				i(175212),	-- Expeditionary Plate Warboots
-			}),
-		}),
-	}),
-});

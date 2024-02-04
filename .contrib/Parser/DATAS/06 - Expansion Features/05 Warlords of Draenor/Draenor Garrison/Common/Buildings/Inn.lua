@@ -10,37 +10,16 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9703, {		-- Stay Awhile and Listen
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["sym"] = {{ "achievement_criteria" }},
 							["g"] = {
 								a(i(109065)),	-- Lunarfall Inn, Level 3 [Blueprints]
 								h(i(116432)),	-- Frostwall Tavern, Level 3 [Blueprints]
-								-- TODO: use sourceQuests or _quests
-								crit(1),		-- Cro's Revenge (H Bloodmaul Slag Mines - Gug'rokk)
-								crit(2),		-- Time-Lost Vikings (H Bloodmaul Slag Mines - Gug'rokk)
-								crit(3),		-- Feeling A Bit Morose (H Iron Docks - Skulloc)
-								crit(4),		-- The Brass Compass (H Iron Docks - Skulloc)
-								crit(5),		-- The Soulcutter (H Auchindoun - Teron'gor)
-								crit(6),		-- The Cure For Death (H Auchindoun - Teron'gor)
-								crit(7),		-- Gloriously Incandescent (H Skyreach - High Sage Viryx)
-								crit(8),		-- Aviana's Request (H Skyreach - High Sage Viryx)
-								crit(9),		-- Family Traditions (H Upper Blackrock Spire - Warlord Zaela)
-								crit(10),		-- Damsels and Dragons (H Upper Blackrock Spire - Warlord Zaela)
-								crit(11),		-- Shadowy Secrets (H Shadowmoon Burial Grounds - Ner'zhul)
-								crit(12),		-- The Huntresses (H Shadowmoon Burial Grounds - Ner'zhul)
-								crit(13),		-- Cenarion Concerns (H Everbloom - Yalnu)
-								crit(14),		-- Titanic Evolution (H Everbloom - Yalnu)
-								crit(15),		-- And No Maces! (H Grimrail Depot - Skylord Tovra)
-								crit(16),		-- Cleaving Time (H Grimrail Depot - Skylord Tovra)
-								crit(17),		-- Oralius' Adventure (H Upper Blackrock Spire - Warlord Zaela)
-								crit(18),		-- The Void-Gate (H Shadowmoon Burial Grounds - Ner'zhul)
-								crit(19),		-- For the Birds (H Everbloom - Yalnu)
-								crit(20),		-- Cold Steel (H Grimrail Depot - Skylord Tovra)
 							},
 						}),
 					}),
 					-- Could potentially combine the list manually, but parser will do it for us and it will sort itself in the minilist
 					n(FOLLOWERS, {	-- (Alliance)
 						["cr"] = 84947,	-- Lysa Serion <Headhunter>
-						["sort"] = true,
 						["groups"] = {
 							follower(342),	-- "Doc" Schweitzer
 							follower(227),	-- Adelaide Kane
@@ -292,7 +271,7 @@ root(ROOTS.ExpansionFeatures,
 							follower(389),	-- Zian
 						},
 					}),
-					n(FOLLOWERS, { -- (Horde)
+					n(FOLLOWERS, {	-- (Horde)
 						["cr"] = 87305,	-- Akanja <Headhunter>
 						["sort"] = true,
 						["groups"] = {

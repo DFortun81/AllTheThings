@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Bogpaddle
 							["sourceQuest"] = 27600,	-- In With a Bang
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -1435,8 +1437,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection
 							["isLimited"] = true,
 						}),
-						i(12232),	-- Recipe: Carrion Surprise
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(8176, {	-- Gharash <Blacksmithing Supplies>
@@ -1461,7 +1463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(15726, {	-- Pattern: Green Dragonscale Breastplate (Old Version) (RECIPE!)
-							["timeline"] = { "removed 4.3.0" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12253, {	-- Brilliant Red Cloak
 							["isLimited"] = true,
@@ -1479,7 +1481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9300, {	-- Recipe: Elixir of Demonslaying
+						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1529,7 +1531,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				i(8498, {	-- Emerald Whelpling (PET!)
+					-- #if AFTER 3.1.0
+					["crs"] = {
+						740,	-- Adolescent Whelp
+						741,	-- Dreaming Whelp
+					},
+					-- #else
 					["cr"] = 741,	-- Dreaming Whelp
+					-- #endif
 				}),
 				-- #endif
 			}),

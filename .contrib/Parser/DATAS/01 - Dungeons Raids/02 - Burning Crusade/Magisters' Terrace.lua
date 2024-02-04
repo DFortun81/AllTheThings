@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 	inst(249, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {	-- Magisters' Terrace
 		["lore"] = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
+		["zone-text-areaID"] = 4095,	-- Magisters' Terrace
 		["sins"] = { "Magister's Terrace" },
 		["coord"] = { 61.23, 30.94, ISLE_OF_QUELDANAS },	-- Magister's Terrace, Isle of Quel'Danas
 		["maps"] = {
@@ -98,7 +99,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			}),
 			filter(RECIPES, {
 				["cr"] = 24664,	-- Kael'thas Sunstrider
-				["description"] = "Kael'thas drops Bind on Pickup versions of various World Drop Recipes that are only visible to players of that profession.\n\nA lot of discussion has gone on about these, some are saying that they only drop on Heroic Mode, others Normal Mode. Evidence shows that it can drop from any mode, so until someone proves otherwise, they'll be in the Recipes section and linked to Kael'thas.",
 				["groups"] = {
 					-- #if AFTER CATA
 					i(35305),	-- Design: Brilliant Living Ruby / [CATA+] / Design: Runed Living Ruby [TBC]
@@ -111,15 +111,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					i(35297),	-- Formula: Enchant Boots - Boar's Speed (RECIPE!)
 					i(35299),	-- Formula: Enchant Boots - Cat's Swiftness (RECIPE!)
 					i(35298),	-- Formula: Enchant Boots - Vitality (RECIPE!)
-					i(35302),	-- Pattern: Cobrascale Gloves
-					i(35303),	-- Pattern: Gloves of the Living Touch
-					i(35301),	-- Pattern: Netherdrake Gloves
+					i(35302),	-- Pattern: Cobrascale Gloves (RECIPE!)
+					i(35303),	-- Pattern: Gloves of the Living Touch (RECIPE!)
+					i(35301),	-- Pattern: Netherdrake Gloves (RECIPE!)
 					i(35308),	-- Pattern: Unyielding Bracers
 					i(35309),	-- Pattern: Unyielding Girdle
-					i(35300),	-- Pattern: Windstrike Gloves
+					i(35300),	-- Pattern: Windstrike Gloves (RECIPE!)
 					i(35296),	-- Plans: Adamantite Weapon Chain
 					i(35294),	-- Recipe: Elixir of Empowerment
-					i(35295),	-- Recipe: Haste Potion
+					i(35295),	-- Recipe: Haste Potion (BoP Version) (RECIPE!)
 					i(35310),	-- Schematic: Healing Potion Injector
 					i(35311),	-- Schematic: Mana Potion Injector
 				},

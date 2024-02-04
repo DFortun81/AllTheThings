@@ -1,9 +1,9 @@
 --Note!! This is needed because Blizzard keeps removing recipeID's from the itemDB
 --So this serves to preserve the ID's so they are always collectible
 
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, spellID)
-	Items[itemID] = { ["spellID"] = spellID };
+	Items[itemID] = { ["spellID"] = spellID };	-- NOTE: These spells are not actually 'learned' so we cannot use this data to track collection
 end
 
 i(111812, 161387);	-- Alchemy Lab, Level 1

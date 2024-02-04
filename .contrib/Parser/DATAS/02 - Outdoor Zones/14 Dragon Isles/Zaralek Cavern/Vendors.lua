@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205845),	-- Kinslayer's Hood
 						i(205844),	-- Kinslayer's Legguards
 						i(205843),	-- Kinslayer's Tainted Spaulders
-						i(202527),	-- Kinslayer's Vest
+						i(205847),	-- Kinslayer's Vest
 					}),
 					cl(DRUID, {
 						i(205840),	-- Bough of the Autumn Blaze
@@ -211,6 +211,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					i(COVETED_BAUBLE, {
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 1 } },
+					}),
+					i(206270, {	-- Volcanic Equipment Chest
+						["cost"] = {{ "c", 2245, 250 }},
+						["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
 					}),
 				},
 			}),

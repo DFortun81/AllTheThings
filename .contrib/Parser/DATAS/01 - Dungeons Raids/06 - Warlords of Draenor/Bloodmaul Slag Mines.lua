@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["mapID"] = 573,
 		["coord"] = { 49.93, 24.8, FROSTFIRE_RIDGE },
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(1),	-- Gug'rokk
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(888, {	-- Slave Watcher Crushto
 					["crs"] = { 74787 },	-- Slave Watcher Crushto
@@ -106,7 +98,12 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, HANDS},
 					},
 					["g"] = {
-						ach(8993),	-- A Gift of Earth and Fire
+						ach(8993, {	-- A Gift of Earth and Fire
+							["crs"] = {
+								74571,	-- Calamity <Servant of the Flame>
+								74570,	-- Ruination <Servant of the Earth>
+							},
+						}),
 					},
 				}),
 				e(887, {	-- Roltall
@@ -130,7 +127,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					["g"] = {
 						ach(9046),	-- Heroic: Bloodmaul Slag Mines
 						ach(9369),	-- Heroic: Bloodmaul Slag Mines Guild Run
-						ach(9008),	-- Is Draenor on Fire?
+						ach(9008, {	-- Is Draenor on Fire?
+							["crs"] = { 74927 },	-- Unstable Slag
+						}),
 						i(110042),	-- Gug'rokk's Smasher
 						i(110044),	-- Ogre Dinner Plate
 						i(110043),	-- Gug'rokk's Grandmother

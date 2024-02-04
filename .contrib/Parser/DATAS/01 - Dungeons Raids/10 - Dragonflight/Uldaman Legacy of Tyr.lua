@@ -16,10 +16,43 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2 }
 				q(71093, {	-- Legacy of Tyr: Secrets of the Past
 					["description"] = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
 					["_drop"] = { "r" },	-- bad API data
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
+			}),
+			n(TREASURES, {
+				o(384653, {	-- Ancient Volume
+					["description"] = "After second boss room, to the right of the broken bench.",
+					["groups"] = {
+						i(201920),	-- Obeservational Report: Earthen
+					},
+				}),
+				o(384313, {	-- Ancient Volume
+					["description"] = "Third boss room to the right of the exit door on the shelf.",
+					["groups"] = {
+						i(201727),	-- To My Staunchest Allies
+					},
+				}),
+				o(384311, {	-- Ancient Volume
+					["description"] = "Before entering the Fourth boss room on top of some chests.",
+					["groups"] = {
+						i(201722),	-- Edicts of the Prime Designate, Volume 742
+					},
+				}),
+				o(384654, {	-- Ancient Volume
+					["description"] = "To the right on shelf in the circle room before final boss.",
+					["groups"] = {
+						i(201833),	-- Wreckage Analysis Report
+					},
+				}),
+				o(384312, {	-- Ancient Volume
+					["description"] = "In the room before final boss, left side under the middle bench.",
+					["groups"] = {
+						i(201726),	-- Progress Report: Uldorus
+					},
+				}),
 			}),
 			d(NormalPlus, {
 				e(2475, {	-- The Lost Dwarves

@@ -3,14 +3,10 @@
 ---------------------------------------------------
 local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 	SymLink = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SeasonID},		-- Season
-		{"pop"},								-- Discard the Season Header and acquire all of their children.
-		{"where", "headerID", HeaderID},		-- Header
-		{"pop"},								-- Discard the Header and acquire all of their children.
-		{"where", "filterID", FilterID},		-- Filter
-		{"pop"},								-- Discard the Filter Header and acquire all of their children.
+		{"select", "headerID", SeasonID},		-- Select Shadowlands
+		{"find", "headerID", HeaderID},			-- Header
+		{"extract","itemID"},					-- Extract Items
+		{"where", "f", FilterID},				-- Filter
 
 		{"select", "itemID", Extra }
 	}
@@ -18,27 +14,16 @@ local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 end
 local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 	SymLink = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-		{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-		{"where", "headerID", HeaderID},		-- Header
-		{"pop"},								-- Discard the Header and acquire all of their children.
-		{"where", "filterID", FilterID},		-- Filter
-		{"pop"},								-- Discard the Filter Header and acquire all of their children.
+		{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+		{"find", "headerID", HeaderID},			-- Header
+		{"extract","itemID"},					-- Extract Items
+		{"where", "f", FilterID},				-- Filter
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
-		{"pop"},								-- Discard the Cosmic Season Header and acquire all of their children.
-		{"where", "headerID", HeaderID},		-- Header
-		{"pop"},								-- Discard the Header and acquire all of their children.
-		{"where", "filterID", FilterID},		-- Filter
-		{"pop"},								-- Discard the Filter Header and acquire all of their children.
-		{"finalize"},							-- Push Everything to the Queue
-
-		{"merge"},								-- Merge the Queue
+		{"select", "headerID", SEASON_COSMIC},	-- Select Cosmic Season
+		{"find", "headerID", HeaderID},		-- Header
+		{"extract","itemID"},					-- Extract Items
+		{"where", "f", FilterID},				-- Filter
 	}
 	if Extra then
 		local extraCmd = {"select", "itemID" };
@@ -51,31 +36,18 @@ local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 end
 local SymPvPClass = function(ClassID, Extra)
 	SymLink = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-		{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-		{"where", "headerID", CLASSES},			-- Classes
-		{"pop"},								-- Discard the Classes Header and acquire all of their children.
-		{"where", "classID", ClassID},			-- Class
+		{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+		{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"find", "headerID", CLASSES},			-- Classes
+		{"find", "classID", ClassID},			-- Class
 		{"pop"},								-- Discard the Class Header and acquire all of their children.
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-		{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-		{"where", "headerID", CLASSES},			-- Classes
-		{"pop"},								-- Discard the Classes Header and acquire all of their children.
-		{"where", "classID", ClassID},			-- Class
+		{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+		{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"find", "headerID", CLASSES},			-- Classes
+		{"find", "classID", ClassID},			-- Class
 		{"pop"},								-- Discard the Class Header and acquire all of their children.
-		{"finalize"},							-- Push Everything to the Queue
-
-		{"merge"},								-- Merge the Queue
 	}
 	if Extra then
 		local extraCmd = {"select", "itemID" };
@@ -87,6 +59,15 @@ local SymPvPClass = function(ClassID, Extra)
 	end
 	return SymLink
 end
+local function Sym_CovenantPvPWeapons(SEASON, PVP_TYPE, COVENANT)
+	return {
+		{"select","headerID",SEASON},		-- Season
+		{"find", "headerID", PVP_TYPE},		-- Gladiator
+		{"find", "headerID", WEAPONS},		-- Weapons
+		{"find", "headerID", COVENANT},		-- Covenant
+		{"pop"},
+	}
+end
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		pvp(n(PVP, {
@@ -96,7 +77,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62911, {	-- Against Overwhelming Odds
@@ -104,7 +85,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65649, {	-- A New Deal
@@ -135,28 +116,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.3, 55.8, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62284, {	-- Observing Battle
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62286, {	-- Observing Skirmishes
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62288, {	-- Observing Teamwork
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(64527, {	-- Observing the Chase [SL 'Try Warmode']
@@ -172,20 +153,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65773, {	-- Solo Mission
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["isWeekly"] = true,
-					["timeline"] = { "added 9.2.0", "removed 10.0.2" },
+					["timeline"] = { "added 9.2.0", REMOVED_10_0_2 },
 				}),
 				q(65775, {	-- Soloing Strategy
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["isWeekly"] = true,
-					["timeline"] = { "added 9.2.0", "removed 10.0.2" },
+					["timeline"] = { "added 9.2.0", REMOVED_10_0_2 },
 				}),
 			}),
 			n(VENDORS, {
@@ -241,27 +222,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-								{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
-								{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
+								{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+								{"find", "headerID", PVP_ASPIRANT},		-- Aspirant Gear
+								{"find", "headerID", WEAPONS},			-- Weapons
+								{"extract","itemID"},					-- Extract Items
+								{"exclude", "itemID", 201875 },			-- Exclude Arsenal: Cosmic Aspirant's Weapons as its shared with S4
 								{"finalize"},							-- Push Everything to the Queue
 
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
-								{"pop"},								-- Discard the Cosmic Season Header and acquire all of their children.
-								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
-								{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"finalize"},							-- Push Everything to the Queue
-
-								{"merge"},								-- Merge the Queue
+								{"select", "headerID", SEASON_COSMIC},	-- Select Cosmic Season
+								{"find", "headerID", PVP_ASPIRANT},		-- Aspirant Gear
+								{"find", "headerID", WEAPONS},			-- Weapons
+								{"extract","itemID"},					-- Extract Items
+								{"exclude", "itemID", 201875 },			-- Exclude Arsenal: Cosmic Aspirant's Weapons as its shared with S4
 							},
 						}),
 						i(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
@@ -291,16 +263,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201877, {	-- Arsenal: Unchained Aspirant's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_UNCHAINED},-- Unchained Season
-								{"pop"},								-- Discard the Unchained Season Header and acquire all of their children.
-								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
-								{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-							},
+							["sym"] = Sym_PvPWeaponsArsenal(SL_TIER, SEASON_UNCHAINED, PVP_ASPIRANT),
 						}),
 						i(201860, {	-- Ensemble: Unchained Aspirant's Cloth Armor
 							["classes"] = CLOTH_CLASSES,
@@ -329,16 +292,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201878, {	-- Arsenal: Sinful Aspirant's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_SINFUL},	-- Sinful Season
-								{"pop"},								-- Discard the Sinful Season Header and acquire all of their children.
-								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
-								{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-							},
+							["sym"] = Sym_PvPWeaponsArsenal(SL_TIER, SEASON_SINFUL, PVP_ASPIRANT),
 						}),
 						i(201868, {	-- Ensemble: Sinful Aspirant's Cloth Armor
 							["classes"] = CLOTH_CLASSES,
@@ -1589,27 +1543,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201873, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Arsenal: Cosmic Gladiator's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-								{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-								{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"finalize"},							-- Push Everything to the Queue
-
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
-								{"pop"},								-- Discard the Cosmic Season Header and acquire all of their children.
-								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-								{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"finalize"},							-- Push Everything to the Queue
-
-								{"merge"},								-- Merge the Queue
+								{"sub","pvp_weapons_ensemble",SL_TIER,SEASON_ETERNAL,PVP_GLADIATOR},
+								{"sub","pvp_weapons_ensemble",SL_TIER,SEASON_COSMIC,PVP_GLADIATOR},
 							},
 						})),
 						i(201856, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
@@ -1805,7 +1740,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
 								i(188933),	-- Luminous Chevalier's Casque
 								i(188936),	-- Luminous Chevalier's Drape
-								i(188932),	-- Luminous Chevalier's Epaulettes
+								i(188932),	-- Luminous Chevalier's Epaulets
 								i(188928),	-- Luminous Chevalier's Gauntlets
 								i(188935),	-- Luminous Chevalier's Girdle
 								i(188929),	-- Luminous Chevalier's Plackart
@@ -1966,16 +1901,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201876, {	-- Arsenal: Unchained Gladiator's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_UNCHAINED},-- Unchained Season
-								{"pop"},								-- Discard the Unchained Season Header and acquire all of their children.
-								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-								{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-							},
+							["sym"] = Sym_PvPWeaponsArsenal(SL_TIER,SEASON_UNCHAINED,PVP_GLADIATOR),
 						}),
 						i(201864, {	-- Ensemble: Unchained Gladiator's Cloth Armor
 							["classes"] = CLOTH_CLASSES,
@@ -2004,66 +1930,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201882, {	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_SINFUL},	-- Sinful Season
-								{"pop"},								-- Discard the Sinful Season Header and acquire all of their children.
-								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-								{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"where", "headerID", NIGHT_FAE},		-- Night Fae
-								{"pop"},								-- Discard the Night Fae Header and acquire all of their children.
-							},
+							["sym"] = Sym_CovenantPvPWeapons(SEASON_SINFUL, PVP_GLADIATOR, NIGHT_FAE),
 						}),
 						i(201881, {	-- Arsenal: Sinful Gladiator's Bastion Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_SINFUL},	-- Sinful Season
-								{"pop"},								-- Discard the Sinful Season Header and acquire all of their children.
-								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-								{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"where", "headerID", KYRIAN},			-- Kyrian
-								{"pop"},								-- Discard the Kyrian Header and acquire all of their children.
-							},
+							["sym"] = Sym_CovenantPvPWeapons(SEASON_SINFUL, PVP_GLADIATOR, KYRIAN),
 						}),
 						i(201880, {	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_SINFUL},	-- Sinful Season
-								{"pop"},								-- Discard the Sinful Season Header and acquire all of their children.
-								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-								{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"where", "headerID", NECROLORD},		-- Necrolord
-								{"pop"},								-- Discard the Necrolord Header and acquire all of their children.
-							},
+							["sym"] = Sym_CovenantPvPWeapons(SEASON_SINFUL, PVP_GLADIATOR, NECROLORD),
 						}),
 						i(201879, {	-- Arsenal: Sinful Gladiator's Revendreth Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_SINFUL},	-- Sinful Season
-								{"pop"},								-- Discard the Sinful Season Header and acquire all of their children.
-								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-								{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"where", "headerID", VENTHYR},			-- Venthyr
-								{"pop"},								-- Discard the Venthyr Header and acquire all of their children.
-							},
+							["sym"] = Sym_CovenantPvPWeapons(SEASON_SINFUL, PVP_GLADIATOR, VENTHYR),
 						}),
 						i(201872, {	-- Ensemble: Sinful Gladiator's Cloth Armor
 							["classes"] = CLOTH_CLASSES,

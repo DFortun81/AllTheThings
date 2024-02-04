@@ -37,6 +37,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(77254, {	-- Aiding the Accord: Time Rift
 					["timeline"] = { ADDED_10_1_5 },
 				}),
+				q(77976, {	-- Aiding the Accord: Dreamsurge
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				q(78447, {	-- Aiding the Accord: Emerald Bounty
+					["timeline"] = { ADDED_10_2_0 },
+				}),
+				q(78446, {	-- Aiding the Accord: Superbloom
+					["timeline"] = { ADDED_10_2_0 },
+				}),
 			})),
 			n(REWARDS, {
 				i(200073, {	-- Valdrakken Treasures
@@ -48,8 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							THE_AZURE_SPAN,
 							THALDRASZUS,
 						},
-						{"pop"},
-						{"where", "headerID", ZONE_REWARDS},
+						{"find", "headerID", ZONE_REWARDS},
 						{"pop"},
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
@@ -58,19 +66,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(202172),	-- Overflowing Satchel of Coins
 					},
 				}),
-				i(201921, {	-- Dragonscale Expedition Insignia
-					["minReputation"] = { 2507, 25 },	-- Dragonflight Expedition renown 25
+				i(201921, {	-- Dragonscale Expedition Insignia [Epic 500]
+					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-				i(201922, {	-- Iskaara Tuskarr Insignia
+				i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
+					-- #if BEFORE 10.1
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					-- Rewarded from the Fyrakk Assault in Azure Span with no reputation requirement
+					-- #endif
 				}),
-				i(201923, {	-- Maruuk Centaur Insignia
+				i(201923, {	-- Maruuk Centaur Insignia [Epic 500]
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
+					-- #if BEFORE 10.1
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					-- Rewarded from the Fyrakk Assault in OhnAhran Plains with no reputation requirement
+					-- #endif
 				}),
-				i(201924, {	-- Valdrakken Accord Insignia
+				i(201924, {	-- Valdrakken Accord Insignia [Epic 500]
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
@@ -88,5 +102,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75864),	-- Aiding the Accord - Suffusion - Quest Complete (spellID 410068)
 		q(75863),	-- Aiding the Accord - Cave - Quest Complete (spellID 410067)
 		q(77253),	-- Aiding the Accord - Time Rifts - Quest Complete (spellID 417862)
+		q(77979),	-- Aiding the Accord - Dreamsurge - Quest Complete (spellID 421947)
+		q(78450),	-- Aiding the Accord - Emerald Bounty - Quest Complete (spellID 426078)
+		q(78861),	-- Aiding the Accord - Emerald Bounty
+		q(78449),	-- Aiding the Accord - Superbloom - Quest Complete (spellID 426077)
 	}),
 }));

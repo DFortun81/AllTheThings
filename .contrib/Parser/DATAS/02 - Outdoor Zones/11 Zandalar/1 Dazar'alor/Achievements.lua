@@ -5,38 +5,41 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(THE_GREAT_SEAL, {
 		n(ACHIEVEMENTS, {
-		--	NEEDS CONFIRMATION: for boon of gonk and boon of pa'ku"loa expectations," do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose gonk or pa'ku?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
 			ach(12758, {	-- Baiting the Enemy
 				["races"] = ALLIANCE_ONLY,
 			}),
+			ach(12957, {	-- Champion of the Honorbound
+				["races"] = HORDE_ONLY,
+			}),
+			--	NEEDS CONFIRMATION: for boon of gonk and boon of pa'ku"loa expectations," do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose gonk or pa'ku?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
 			ach(12614, {	-- Loa Expectations
 			--	NEEDS CONFIRMATION: for gonk/pa'ku, do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
 				["description"] = "The best place to get this is in the \"Council Chambers\", where all six shrines are in one room.  Head to the coordinates provided and enter the building.  Turn left and go upstairs.  There are shrines around the perimeter of the room for each loa.",
 				["coord"] = { 40.8, 11.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {	-- Boon of Gonk
+					crit(40619, {	-- Boon of Gonk
 						["sourceQuests"] = {
 							47439,	-- Gonk, Lord of the Pack
 							47440,	-- Pa'ku, Master of Winds
 						},
 					}),
-					crit(2, {	-- Boon of Pa'ku
+					crit(40620, {	-- Boon of Pa'ku
 						["sourceQuests"] = {
 							47439,	-- Gonk, Lord of the Pack
 							47440,	-- Pa'ku, Master of Winds
 						},
 					}),
-					crit(3, {	-- Boon of Akunda
+					crit(40621, {	-- Boon of Akunda
 						["sourceQuests"] = { 50913 },	-- Akunda's Blessing
 					}),
-					crit(4, {	-- Boon of Bwonsanmdi
+					crit(40622, {	-- Boon of Bwonsanmdi
 						["sourceQuests"] = { 47249 },	-- Soulbound
 					}),
-					crit(5, {	-- Boon of Kimbul
+					crit(40623, {	-- Boon of Kimbul
 						["sourceQuests"] = { 47578 },	-- Mark of the Loa
 					}),
-					crit(6, {	-- Boon of Krag'wa
+					crit(40624, {	-- Boon of Krag'wa
 						["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					}),
 				},
@@ -73,12 +76,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(2, {	--  Port of Zuldazar
+					crit(40025, {	--  Port of Zuldazar
 						["sourceQuests"] = { 50881 },	-- Royal Report
 					}),
-					crit(6, {	-- The Zanchuli Council
+					crit(37954, {	-- The Zanchuli Council
 						["sourceQuests"] = {	-- whichever one you pick
 							47439,	-- Gonk, Lord of the Pack
+						},
+					}),
+					crit(37953, {	-- The Zanchuli Council
+						["sourceQuests"] = {	-- whichever one you pick
 							47440,	-- Pa'ku, Master of Winds
 						},
 					}),
@@ -86,6 +93,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			ach(12555, {	-- Welcome to Zandalar
 				["sourceQuests"] = { 52131 },	-- We Need Each Other
+				["races"] = HORDE_ONLY,
+			}),
+			ach(12950, {	-- Zandalari Empire
 				["races"] = HORDE_ONLY,
 			}),
 		}),

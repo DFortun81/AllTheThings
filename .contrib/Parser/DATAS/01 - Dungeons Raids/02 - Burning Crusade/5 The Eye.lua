@@ -30,12 +30,7 @@ end;
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 	inst(749, {	-- The Eye
 		["lore"] = "With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",
-		["sins"] = {
-			"Tempest Keep",
-			"Festung der Stürme",
-			"Donjon de la Tempête",
-			"Крепость Бурь"
-		},
+		["zone-text-areaID"] = 3842,	-- Tempest Keep
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
 		["mapID"] = TEMPEST_KEEP_THE_EYE,
 		-- #if BEFORE WRATH
@@ -68,83 +63,29 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #IF ANYCLASSIC
-				["crs"] = {
-					20043,	-- Apprentice Star Scryer
-					20033,	-- Astromancer
-					20046,	-- Astromancer Lord
-					20031,	-- Bloodwarder Legionnaire
-					20035,	-- Bloodwarder Marshal
-					20036,	-- Bloodwarder Squire
-					20032,	-- Bloodwarder Vindicator
-					20047,	-- Crimson Hand Battle Mage
-					20049,	-- Crimson Hand Blood Knight
-					20048,	-- Crimson Hand Centurion
-					20050,	-- Crimson Hand Inquisitor
-					20040,	-- Crystalcore Devastator
-					20052,	-- Crystalcore Mechanic
-					20041,	-- Crystalcore Sentinel
-					20045,	-- Nether Scryer
-					20044,	-- Novice Astromancer
-					20039,	-- Phoenix-Hawk
-					20034,	-- Star Scryer
-					20037,	-- Tempest Falconer
-					20042,	-- Tempest-Smith
-					19514,	-- Al'ar
-					19516,	-- Void Reaver
-					18805,	-- High Astromancer Solarian
-					19622,	-- Kael'thas Sunstrider
-				},
-				-- #ENDIF
-				["groups"] = {
-					i(30280),	-- Pattern: Belt of Blasting
-					i(30302, {	-- Pattern: Belt of Deep Shadow
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30301, {	-- Pattern: Belt of Natural Power
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30303, {	-- Pattern: Belt of the Black Eagle
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30281),	-- Pattern: Belt of the Long Road
-					i(30282),	-- Pattern: Boots of Blasting
-					i(30305, {	-- Pattern: Boots of Natural Grace
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30307, {	-- Pattern: Boots of the Crimson Hawk
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30283),	-- Pattern: Boots of the Long Road
-					i(30306, {	-- Pattern: Boots of Utter Darkness
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30308, {	-- Pattern: Hurricane Boots
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30304, {	-- Pattern: Monsoon Belt
-						["requireSkill"] = LEATHERWORKING,
-						["f"] = RECIPES,
-					}),
-					i(30321),	-- Plans: Belt of the Guardian (RECIPE!)
-					i(30323),	-- Plans: Boots of the Protector (RECIPE!)
-					i(30322),	-- Plans: Red Belt of Battle (RECIPE!)
-					i(30324),	-- Plans: Red Havoc Boots (RECIPE!)
-					i(30026),	-- Bands of the Celestial Archer
-					i(30029),	-- Bark-Gloves of Ancient Wisdom
-					i(30020),	-- Fire-Cord of the Magus
-					i(30030),	-- Girdle of Fallen Stars
-					i(30024),	-- Mantle of the Elven Kings
-					i(30028),	-- Seventh Ring of the Tirisfalen
-					i(30183),	-- Nether Vortex
-				},
+				i(30280),	-- Pattern: Belt of Blasting
+				i(30302),	-- Pattern: Belt of Deep Shadow (RECIPE!)
+				i(30301),	-- Pattern: Belt of Natural Power (RECIPE!)
+				i(30303),	-- Pattern: Belt of the Black Eagle (RECIPE!)
+				i(30281),	-- Pattern: Belt of the Long Road
+				i(30282),	-- Pattern: Boots of Blasting
+				i(30305),	-- Pattern: Boots of Natural Grace (RECIPE!)
+				i(30307),	-- Pattern: Boots of the Crimson Hawk (RECIPE!)
+				i(30283),	-- Pattern: Boots of the Long Road
+				i(30306),	-- Pattern: Boots of Utter Darkness (RECIPE!)
+				i(30308),	-- Pattern: Hurricane Boots (RECIPE!)
+				i(30304),	-- Pattern: Monsoon Belt (RECIPE!)
+				i(30321),	-- Plans: Belt of the Guardian (RECIPE!)
+				i(30323),	-- Plans: Boots of the Protector (RECIPE!)
+				i(30322),	-- Plans: Red Belt of Battle (RECIPE!)
+				i(30324),	-- Plans: Red Havoc Boots (RECIPE!)
+				i(30026),	-- Bands of the Celestial Archer
+				i(30029),	-- Bark-Gloves of Ancient Wisdom
+				i(30020),	-- Fire-Cord of the Magus
+				i(30030),	-- Girdle of Fallen Stars
+				i(30024),	-- Mantle of the Elven Kings
+				i(30028),	-- Seventh Ring of the Tirisfalen
+				i(30183),	-- Nether Vortex
 			}),
 			e(1573, {	-- Al'ar
 				["creatureID"] = 19514,

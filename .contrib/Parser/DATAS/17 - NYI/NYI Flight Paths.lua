@@ -11,7 +11,6 @@ root(ROOTS.NeverImplemented, {
 				fp(1, {["description"] = "Northshire Abbey"}),
 				fp(3, {["description"] = "Programmer Isle"}),
 				fp(9, {["description"] = "Booty Bay, Stranglethorn"}),
-				fp(14, {["description"] = "Southshore, Hillsbrad"}),
 				fp(15, {["description"] = "Eastern Plaguelands"}),
 				fp(24, {["description"] = "Generic, World Target 002"}),
 				fp(34, {["description"] = "Transport, Booty Bay"}),
@@ -25,8 +24,10 @@ root(ROOTS.NeverImplemented, {
 				fp(54, {["description"] = "Transport, Feathermoon"}),
 				fp(59, {["description"] = "Dun Baldar, Alterac Valley"}),
 				fp(60, {["description"] = "Frostwolf Keep, Alterac Valley"}),
+				-- #if NOT ANYCLASSIC
 				fp(62, {["description"] = "Nighthaven, Moonglade"}),
 				fp(63, {["description"] = "Nighthaven, Moonglade"}),
+				-- #endif
 				fp(78, {["description"] = "Naxxramas"}),
 			}),
 		}),
@@ -71,7 +72,9 @@ root(ROOTS.NeverImplemented, {
 				fp(146, {["description"] = "Quest - Netherstorm - Stealth Flight - End"}),
 				fp(147, {["description"] = "Hellfire Peninsula - Force Camp Beach Head"}),
 				fp(148, {["description"] = "Shatter Point, Hellfire Peninsula (Beach Assault)"}),
+				-- #if NOT ANYCLASSIC
 				fp(149, {["description"] = "Shatter Point, Hellfire Peninsula"}),
+				-- #endif
 				fp(152, {["description"] = "Quest - Netherstorm - Manaforge Ultris (Start)"}),
 				fp(153, {["description"] = "Quest - Netherstorm - Manaforge Ultris (End)"}),
 				fp(154, {["description"] = "Quest - Netherstorm - Manaforge Ultris (Second Pass) Start"}),
@@ -736,6 +739,12 @@ root(ROOTS.NeverImplemented, {
 				fp(2875, {["description"] = "Old Loamm Road, Zaralek Cavern"}),
 				fp(2876, {["description"] = "Lookout Breach, Zaralek Cavern"}),
 				fp(2877, {["description"] = "Lookout Breach, Azure Span"}),
+			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				fp(2887, {["description"] = "Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)"}),
+				fp(2892, {["description"] = "Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)"}),
 			})),
 		}),
 	}),

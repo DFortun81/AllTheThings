@@ -6,142 +6,47 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(NAZMIR, {
 		n(ACHIEVEMENTS, {
 			ach(12942, {	-- Adventurer of Nazmir
-				crit(1, {	-- Ancient Jawbreaker
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(2, {	-- Azerite Infused Elemental
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(3, {	-- Azerite Infused Slag
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(4, {	-- Blood Priest Xak'lar
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(5, {	-- Uroku the Bound
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(6, {	-- King Kooba
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(7, {	-- Chag's Challenge
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(8, {	-- Corpse Bringer Yal'kar
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(9, {	-- Cursed Chest
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(10, {	-- Gwugnug the Cursed
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(11, {	-- Glompmaw
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(12, {	-- Gutrip the Hungry
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(13, {	-- Queen Tzxi'kik
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(14, {	-- Infected Direhorn
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(15, {	-- Jax'teb the Reanimated
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(16, {	-- Juba the Scarred
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(17, {	-- Kal'draxa
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(18, {	-- Krubbs
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(19, {	-- Lost Scroll
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(20, {	-- Bajiatha
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(21, {	-- Scout Skrasniss
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(22, {	-- Scrounger Patriarch
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(23, {	-- Tainted Guardian
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(24, {	-- Totem Maker Jash'ga
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(25, {	-- Urn of Agussu
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(26, {	-- Venomjaw
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(27, {	-- Wardrummer Zurula
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(28, {	-- Xu'ba the Bone Collector
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(29, {	-- Za'amar the Queen's Blade
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(30, {	-- Zanxib the Engorged
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(31, {	-- Lo'kuno
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(32, {	-- Mala'kili and Rohnkor
-					-- ["_npcs"] = { NPCID },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13020, {	-- Bow to Your Masters
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {	-- Bwonsamdi respected
+					crit(41525, {	-- Bwonsamdi respected
 						["coord"] = { 39.4, 24.7, NAZMIR },
 						["cr"] = 122688,	-- Bwonsamdi
 					}),
-					crit(2, {	-- Krag'wa respected
+					crit(41495, {	-- Krag'wa respected
 						["coord"] = { 75.4, 56.7, NAZMIR },
 						["cr"] = 120551,	-- Krag'wa
 					}),
 				}
 			}),
 			ach(13024, {	-- Carved in Stone, Written in Blood
-				crit(1, {	-- Ancient Nazmani Tablet
-					["objectID"] = 298921,	-- Ancient Nazmani Tablet
+				crit(41860, {	-- Ancient Nazmani Tablet
+					["provider"] = {"o",298921},	-- Ancient Nazmani Tablet
 					["coord"] = { 56.3, 57.3, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
-				crit(2, {	-- Weathered Nazmani Tablet
-					["objectID"] = 298963,	-- Weathered Nazmani Tablet
+				crit(41861, {	-- Weathered Nazmani Tablet
+					["provider"] = {"o",298963},	-- Weathered Nazmani Tablet
 					["coord"] = { 43.4, 48.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
-				crit(3, {	-- Cracked Tablet
-					["objectID"] = 298965,	-- Cracked Tablet
+				crit(41862, {	-- Cracked Tablet
+					["provider"] = {"o",298965},	-- Cracked Tablet
 					["coord"] = { 51.2, 85.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
-				crit(4, {	-- Fractured Tablet
-					["objectID"] = 299073,	-- Fractured Tablet
+				crit(42116, {	-- Fractured Tablet
+					["provider"] = {"o",299073},	-- Fractured Tablet
 					["coord"] = { 42.6, 57.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
 			}),
 			ach(12588, {	-- Eat Your Greens
-				crit(1, {	-- Saurolisk Tail
-					["objectID"] = 291233,	-- Saurolisk Tail
+				crit(40542, {	-- Saurolisk Tail
+					["provider"] = {"o",291233},	-- Saurolisk Tail
 					["coords"] = {
 						{ 30.3, 52.7, NAZMIR },
 						{ 30.1, 39.7, NAZMIR },
@@ -149,16 +54,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
 				}),
-				crit(2, {	-- Bwonsamdi's Tears
-					["objectID"] = 291238,	-- Bwonsamdi's Tears
+				crit(40543, {	-- Bwonsamdi's Tears
+					["provider"] = {"o",291238},	-- Bwonsamdi's Tears
 					["coords"] = {
 						{ 55.6, 74.7, NAZMIR },
 						{ 46.1, 71.9, NAZMIR },
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_riverbud",
 				}),
-				crit(3, {	-- Gnarl Root
-					["objectID"] = 291241,	-- Gnarl Root
+				crit(40544, {	-- Gnarl Root
+					["provider"] = {"o",291241},	-- Gnarl Root
 					["coords"] = {
 						{ 28.0, 35.3, NAZMIR },
 						{ 35.2, 66.4, NAZMIR },
@@ -166,24 +71,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_07",
 				}),
-				crit(4, {	-- Sapphire Amaraina
-					["objectID"] = 292812,	-- Sapphire Amaraina
+				crit(40546, {	-- Sapphire Amaraina
+					["provider"] = {"o",292812},	-- Sapphire Amaraina
 					["coords"] = {
 						{ 73.7, 39.7, NAZMIR },
 						{ 81.9, 55.9, NAZMIR },
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_taladororchid",
 				}),
-				crit(5, {	-- Krag'wa's Ire
-					["objectID"] = 292823,	-- Krag'wa's Ire
+				crit(40549, {	-- Krag'wa's Ire
+					["provider"] = {"o",292823},	-- Krag'wa's Ire
 					["coords"] = {
 						{ 52.6, 35.8, NAZMIR },
 						{ 50.4, 39.7, NAZMIR },
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_talandrasrose_petal",
 				}),
-				crit(6, {	-- Stonebloom
-					["objectID"] = 292825,	-- Stonebloom
+				crit(40550, {	-- Stonebloom
+					["provider"] = {"o",292825},	-- Stonebloom
 					["coords"] = {
 						{ 54.5, 56.1, NAZMIR },
 						{ 55.4, 67.1, NAZMIR },
@@ -193,33 +98,23 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["icon"] = "Interface\\Icons\\INV_Misc_SpineLeaf _01",
 				}),
 			}),
-			ach(12561, {	-- Explore Nazmir
-				crit(1),		-- Primal Wetlands
-				crit(2),		-- Heart of Darkness
-				crit(3),		-- The Rivermarsh
-				crit(4),		-- The Necropolis
-				crit(5),		-- Zalamar
-				crit(6),		-- Torga's Rest
-				crit(7),		-- Nazwatha
-				crit(8),		-- Zal'amak
-				crit(9),		-- The Frogmarsh
-			}),
+			explorationAch(12561),	-- Explore Nazmir
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {
 					ach(13280, {	-- Hobbyist Aquarist
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43601, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43602, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43603, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -227,16 +122,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13270, {	-- Beast Mode
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43621, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43622, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43623, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -244,16 +139,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13271, {	-- Critters with Huge Teeth
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43643, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43644, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43645, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -261,16 +156,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13272, {	-- Dragons Make Everything Better
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43662, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43663, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43664, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -278,16 +173,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13273, {	-- Element of Success
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43690, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43691, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43692, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -295,16 +190,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13274, {	-- Fun With Flying
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43709, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43710, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43711, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -312,16 +207,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13281, {	-- Human Resources
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43731, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43732, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43733, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -329,16 +224,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13275, {	-- Magician's Secrets
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43750, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43751, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43752, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -346,16 +241,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13277, {	-- Machine Learning
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43769, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43770, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43771, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -363,16 +258,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
-							crit(11, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+							crit(43788, {	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
-							crit(12, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+							crit(43789, {	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
-							crit(13, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+							crit(43790, {	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -397,36 +292,39 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			ach(13048, {	-- Life Finds a Way... To Die!
 				["collectible"] = false,
 				["g"] = {
-					crit(4, {		-- Makatau the Pterrordax slain
+					crit(41683, {		-- Makatau the Pterrordax slain
 						["coord"] = { 26.3, 73.3, NAZMIR },
 					}),
 				},
 			}),
+			ach(12948, {	-- Talanji's Expedition
+				["races"] = HORDE_ONLY,
+			}),
 			ach(11868, {	-- The Dark Heart of Nazmir
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {	-- Deep in the Swamp
+					crit(36955, {	-- Deep in the Swamp
 						["sourceQuests"] = { 47188 },	-- The Aid of the Loa
 					}),
-					crit(2, {	-- A Pact with Death
+					crit(36956, {	-- A Pact with Death
 						["sourceQuests"] = { 47250 },	-- We'll Meet Again
 					}),
-					crit(3, {	-- Undercover Sista
+					crit(37971, {	-- Undercover Sista
 						["sourceQuests"] = { 49082 },	-- Upward and Onward
 					}),
-					crit(4, {	-- Turtle Power
+					crit(37970, {	-- Turtle Power
 						["sourceQuests"] = { 49160 },	-- Torga's Eternal Return
 					}),
-					crit(5, {	-- A Friend in the Frogs
+					crit(36957, {	-- A Friend in the Frogs
 						["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					}),
-					crit(6, {	-- Bring the Boom
+					crit(36979, {	-- Bring the Boom
 						["sourceQuests"] = { 47601 },	-- Field Evaluation
 					}),
-					crit(7, {	-- Everything Contained
+					crit(36958, {	-- Everything Contained
 						["sourceQuests"] = { 49985 },	-- Return to Gloom Hollow
 					}),
-					crit(8, {	-- Bleeding the Blood Trolls
+					crit(36978, {	-- Bleeding the Blood Trolls
 						["sourceQuests"] = { 50087 },	-- Ateena's Fall
 					}),
 				},
@@ -437,34 +335,34 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			pvp(ach(12574)),	-- Tour of Duty: Nazmir
 			ach(12771, {	-- Treasures of Nazmir
-				crit(1, {		-- Lucky Horace's Lucky Chest
+				crit(40857, {		-- Lucky Horace's Lucky Chest
 					["_quests"] = { 49867 },
 				}),
-				crit(2, {		-- Partially-Digested Treasure
+				crit(40858, {		-- Partially-Digested Treasure
 					["_quests"] = { 50061 },
 				}),
-				crit(3, {		-- Cursed Nazmani Chest
+				crit(40859, {		-- Cursed Nazmani Chest
 					["_quests"] = { 49979 },
 				}),
-				crit(4, {		-- Cleverly Disguised Chest
+				crit(40860, {		-- Cleverly Disguised Chest
 					["_quests"] = { 49885 },
 				}),
-				crit(5, {		-- Lost Nazmani Treasure
+				crit(40861, {		-- Lost Nazmani Treasure
 					["_quests"] = { 49891 },
 				}),
-				crit(6, {		-- Offering to Bwonsamdi
+				crit(40862, {		-- Offering to Bwonsamdi
 					["_quests"] = { 49484 },
 				}),
-				crit(7, {		-- Shipwrecked Chest
+				crit(40863, {		-- Shipwrecked Chest
 					["_quests"] = { 49483 },
 				}),
-				crit(8, {		-- Venomous Seal
+				crit(40864, {		-- Venomous Seal
 					["_quests"] = { 49889 },
 				}),
-				crit(9, {		-- Swallowed Naga Chest
+				crit(40865, {		-- Swallowed Naga Chest
 					["_quests"] = { 50045 },
 				}),
-				crit(10, {		-- Wunja's Trove
+				crit(40866, {		-- Wunja's Trove
 					["_quests"] = { 49313 },
 				}),
 			}),

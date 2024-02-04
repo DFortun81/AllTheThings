@@ -4,6 +4,15 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(SPECIAL, {
+			header(HEADERS.Item, 190196, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Enlightened Hearthstone
+				["description"] = "To obtain this toy, you will need six people with the Sphere of Enlightened Cogitation toy.\nEach person with the toy needs to stand on top of one of the hexagon pillars surrounding the pool of water under the Forge of Afterlives, right at the center of Zereth Mortis, and use the toy while sitting.\nOne person needs to be in each pillar.\nIf all 6 people use the toy successfully at the same time, a zone-wide chat emote will show up - The Ponderer's Portal has been opened. Once this happens, simply head to the southern hexagon pillar and loot the toy from the Ponderer's Portal - The Portal looks like a white glowy sphere.",
+				["g"] = {
+					i(190196),	-- Enlightened Hearthstone (TOY!)
+				},
+			})),
+			i(189167, {	-- Glimmer of Satisfaction
+				["description"] = "Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
+			}),
 			o(375516, {	-- Lost Comb
 				["description"] = "Almost at the top of the pillar in a little nest attached to the side of the pillar. Require flying but might be doable during Portal Play and with Venthyr Ability.",
 				["coord"] = { 63.3, 60.5, ZERETH_MORTIS },
@@ -36,8 +45,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(189989),	-- Penguin Soul (SS!)
 				},
 			}),
-			i(189167, {	-- Glimmer of Satisfaction
-				["description"] = "Eating a feast has a chance to spawn this item in your inventory.",
+			i(187662, {	-- Strange Goop
+				["description"] = "Can be fished from around Hirukon spawn point, or purchased from auction house.",
+				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
 			}),
 		})
 	}),

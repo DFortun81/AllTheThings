@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				explorationAch(781),	-- Explore Northern Stranglethorn
 				ach(4906, {	-- Northern Stranglethorn Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Ohgan'aka (A)
 							["races"] = ALLIANCE_ONLY,
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
@@ -108,6 +110,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["timeline"] = { "added 2.3.0.7382" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
+						["coord"] = { 45.2, 58.6, NORTHERN_STRANGLETHORN },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -1116,8 +1127,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26407, {	-- Mosh'Ogg Handiwork
 					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
-					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
-					["description"] = "Drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+					-- ["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk [Not Required, Discord 2023-07-29]
+					["description"] = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["crs"] = {
 						1142,	-- Mosh'Ogg Brute
@@ -2240,22 +2251,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(5148, {	-- Tribal Leatherworking (H)
-					["qg"] = 7871,	-- Se'Jib
-					["altQuests"] = {
-						5145,	-- Dragonscale Leatherworking
-						5146,	-- Elemental Leatherworking
-					},
-					["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 8214, 1 },	-- Wild Leather Helmet
-						{ "i", 8211, 1 },	-- Wild Leather Vest
-					},
-					["lvl"] = 40,
-				}),
 				q(205, {	-- Troll Witchery
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207,	-- Kurzen's Mystery
@@ -2521,8 +2516,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
@@ -2575,9 +2570,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(21943, {	-- Design: Truesilver Crab
 							["isLimited"] = true,
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(1149, {	-- Uthok <General Supplies>
@@ -2588,7 +2583,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
@@ -2615,6 +2610,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1998, {	-- Bloodscalp Channeling Staff
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 697,	-- Bloodscalp Shaman
+					-- #if AFTER 7.3.5
+					["coords"] = {
+						{ 35.8, 33.4, NORTHERN_STRANGLETHORN },
+						{ 34.0, 37.8, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(4611, {	-- Blue Pearl
 					-- #if BEFORE CATA
@@ -2632,10 +2633,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1677, {	-- Drake-scale Vest
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 680,	-- Mosh'Ogg Lord
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Mosh'Ogg Lords, which have three known spawns. Mosh'Ogg Butcher can spawn in its place.",
+					["coords"] = {
+						{ 69.2, 47.0, NORTHERN_STRANGLETHORN },
+						{ 67.0, 54.0, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(1659, {	-- Engineering Gloves
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 677,	-- Venture Co. Tinkerer
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Venture Co. Tinkerer. Venture Co. Foremans, Venture Co. Surveyors, and Venture Co. Strip Miners very often spawns in its place.",
+					["coords"] = {
+						{ 53.8, 75.8, NORTHERN_STRANGLETHORN },
+						{ 53.6, 70.0, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(2955),	-- First Mate Hat
 				i(11203, {	-- Formula: Enchant Gloves - Advanced Mining (RECIPE!)
@@ -2656,20 +2671,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1986, {	-- Gutrender
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 709,	-- Mosh'Ogg Warmonger
+					-- #if AFTER 7.3.5
+					["coords"] = {
+						{ 65.4, 52.0, NORTHERN_STRANGLETHORN },
+						{ 64.2, 45.0, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				-- #if AFTER CATA
 				i(1680, {	-- Headchopper
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 723,	-- Mosh'Ogg Butcher
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Mosh'Ogg Butchers, which sometimes can spawn in place of one of the two Mosh'Ogg Lords at the given coordinates.",
+					["coords"] = {
+						{ 67.0, 54.0, NORTHERN_STRANGLETHORN },
+						{ 66.6, 53.4, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				-- #endif
 				i(1522, {	-- Headhunting Spear
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 671,	-- Bloodscalp Headhunter
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Bloodscalp Headhunters, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+					["coords"] = {
+						{ 21.6, 24.6, NORTHERN_STRANGLETHORN },
+						{ 19.8, 24.8, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(1523, {	-- Huge Stone Club
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 597,	-- Bloodscalp Berserker
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Bloodscalp Berserkers, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+					["coords"] = {
+						{ 21.6, 24.6, NORTHERN_STRANGLETHORN },
+						{ 19.8, 24.8, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				-- #if BEFORE CATA
 				i(2633, {	-- Jungle Remedy
@@ -2683,10 +2725,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1679, {	-- Korg Bat
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 1142,	-- Mosh'Ogg Brute
+					-- #if AFTER 7.3.5
+					["coords"] = {
+						{ 48.0, 51.6, NORTHERN_STRANGLETHORN },
+						{ 44.6, 55.6, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(5755, {	-- Onyx Shredder Plate
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 4260,	-- Venture Co. Shredder
+					-- #if AFTER 7.3.5
+					["coords"] = {
+						{ 58.8, 40.4, NORTHERN_STRANGLETHORN },
+						{ 58.8, 32.6, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(8494),	-- Hyacinth Macaw (PET!)
 				-- #if BEFORE CATA
@@ -2697,32 +2751,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1997, {	-- Pressed Felt Robe
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Bloodscalp Mystics, which shares its spawn with other Bloodscalp trolls in the Ruins of Zul'Kunda.",
+					["coords"] = {
+						{ 29.2, 24.4, NORTHERN_STRANGLETHORN },
+						{ 25.8, 22.8, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(48126, {	-- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
+				-- #if BEFORE 4.0.3
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
-					["maps"] = { THE_HINTERLANDS },
-					["timeline"] = { "added 1.11.1", "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.1" },
 				}),
+				-- #endif
 				i(1624, {	-- Skullsplitter Helm
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["crs"] = {
 						783,	-- Skullsplitter Berserker
 						781,	-- Skullsplitter Headhunter
 					},
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Skullsplitter Berserkers and Skullsplitter Headhunters. Skullsplitter Spiritchasers very often spawns in its place.",
+					["coords"] = {
+						{ 63.0, 72.8, NORTHERN_STRANGLETHORN },
+						{ 61.2, 75.6, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(1664, {	-- Spellforce Rod
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 676,	-- Venture Co. Surveyor
+					-- #if AFTER 7.3.5
+					["description"] = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawns in its place.",
+					["coords"] = {
+						{ 53.8, 77.2, NORTHERN_STRANGLETHORN },
+						{ 53.4, 70.4, NORTHERN_STRANGLETHORN },
+					},
+					-- #endif
 				}),
 				i(1652, {	-- Sturdy Lunchbox
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if AFTER 10.1.7
+					["cr"] = 921,	-- Venture Co. Lumberjack
+					["coords"] = {
+						{ 55.6, 35.6, NORTHERN_STRANGLETHORN },
+						{ 55.4, 34.4, NORTHERN_STRANGLETHORN },
+					},
+					-- #else
 					["crs"] = {
 						675,	-- Venture Co. Foreman
 						14492,	-- Verifonix <The Surveyor>
 					},
+					-- #endif
 				}),
 				i(1996, {	-- Voodoo Band
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },

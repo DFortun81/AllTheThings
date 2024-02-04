@@ -18,27 +18,27 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(15190, {	-- Mischief!
-					crit(1, {	-- Pickle
+					crit(52460, {	-- Pickle
 						["cr"] = 180817,	-- Pickle
 						["coord"] = { 39.91, 38.78, TAZAVESH_THE_MENAGERIE },
 					}),
-					crit(2, {	-- Oswald
+					crit(52461, {	-- Oswald
 						["cr"] = 180818,	-- Oswald
 						["coord"] = { 36.63, 33.37, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(3, {	-- Sassafras
+					crit(52462, {	-- Sassafras
 						["cr"] = 180821,	-- Sassafras
 						["coord"] = { 39.48, 65.67, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(4, {	-- Goblin
+					crit(52463, {	-- Goblin
 						["cr"] = 180822,	-- Goblin
 						["coord"] = { 59.59, 45.99, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(5, {	-- Pancake
+					crit(52465, {	-- Pancake
 						["cr"] = 180823,	-- Pancake
 						["coord"] = { 55.43, 64.69, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(6, {	-- Waffle
+					crit(52464, {	-- Waffle
 						["cr"] = 180824,	-- Waffle
 						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET }
 					}),
@@ -70,6 +70,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["g"] = {
+						i(186182),	-- Cartel So Shipping Manifest (QI!)
+					},
 				}),
 				q(63980, {	-- Seeking Smugglers
 					["sourceQuests"] = {
@@ -93,6 +96,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					["sourceQuests"] = { 63983 },	-- Dead Drop
 					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
 					["coord"] = { 32.5, 32.4, BASTION },
+					["g"] = {
+						i(186696),	-- Ta Coin of Favors (QI!)
+					},
 				}),
 				q(63985, {	-- The Veiled Market
 					["sourceQuests"] = { 63984 },	-- Coins for the Ferryman
@@ -125,7 +131,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
 					}),
-					n(180750, { -- Au'manal <Master Forger>
+					n(180750, {	-- Au'manal <Master Forger>
 						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
 						["g"] = {
 							i(185954, {	-- Passably-Forged Credentials
@@ -173,7 +179,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				},
 			}),
 			-- #if AFTER 9.2.0
-			d(HeroicPlus, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+			d(HeroicPlus, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {

@@ -18,19 +18,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- The Fate of Taerar
+						crit(38913, {	-- The Fate of Taerar
 							["sourceQuest"] = 25398,	-- Sealing the Dream
 						}),
-						crit(2, {	-- The Twilight Sermon
+						crit(38914, {	-- The Twilight Sermon
 							["sourceQuest"] = 25333,	-- Might of the Sentinels
 						}),
-						crit(3, {	-- Freed
+						crit(38915, {	-- Freed
 							["sourceQuest"] = 26401,	-- Return to Vestia
 						}),
-						crit(4, {	-- Forces of Nature
+						crit(38916, {	-- Forces of Nature
 							["sourceQuest"] = 25468,	-- Forces of Nature: Faerie Dragons
 						}),
-						crit(5, {	-- The Dragons of Nightmare
+						crit(38917, {	-- Forces of Nature
+							["sourceQuest"] = 25469,	-- Forces of Nature: Mountain Giants
+						}),
+						crit(38918, {	-- The Dragons of Nightmare
 							["sourceQuest"] = 25438,	-- Ysondre's Farewell
 						}),
 					},
@@ -39,19 +42,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- The Fate of Taerar
+						crit(38919, {	-- The Fate of Taerar
 							["sourceQuest"] = 25250,	-- Sealing the Dream
 						}),
-						crit(2, {	-- The Twilight Sermon
+						crit(38920, {	-- The Twilight Sermon
 							["sourceQuest"] = 25329,	-- Might of the Stonemaul
 						}),
-						crit(3, {	-- Muisek
+						crit(38921, {	-- Muisek
 							["sourceQuest"] = 25391,	-- Weapons of Spirit
 						}),
-						crit(4, {	-- Freed
+						crit(38922, {	-- Freed
 							["sourceQuest"] = 25645,	-- Return to Sage Palerunner
 						}),
-						crit(5, {	-- The Dragons of Nightmare
+						crit(38923, {	-- The Dragons of Nightmare
 							["sourceQuest"] = 25383,	-- Ysondre's Farewell
 						}),
 					},
@@ -167,12 +170,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			--[[prof(FISHING, {
+			-- #if ANYCLASSIC
+			prof(FISHING, {
 				i(16967, {	-- Feralas Ahi
 					["coord"] = { 62.0, 52.0, FERALAS },
 					["description"] = "Best fished at 62.0 52.0",
 				}),
-			}),--]]	-- Maybe Mog in the future
+			}),
+			-- #endif
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
+						["coord"] = { 89.4, 46.4, FERALAS },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
+					n(11098, {	-- Hahrana Ironhide <Master Leatherworker>
+						["coord"] = { 74.4, 43.0, FERALAS },
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(25362, {	-- A Grim Discovery
 					["qg"] = 4544,	-- Krueg Skullsplitter
@@ -595,7 +617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25468, {	-- Forces of Nature: Faerie Dragons
 					["qg"] = 40913,	-- Handler Jesana
-					["sourceQuest"] = 25469,	-- Forces of Nature: Mountain Giants
+					["sourceQuest"] = 26574,	-- Adella's Covert Camp
 					["coord"] = { 77.0, 56.6, FERALAS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -1575,7 +1597,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i",   9266 },	-- Woodpaw Battle Plans
 					},
 					["sourceQuest"] = 2902,	-- Woodpaw Investigation
-					["coord"] = { 71.6, 55.9, FELWOOD },
+					["coord"] = { 71.6, 55.9, FERALAS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
@@ -2065,22 +2087,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 7584,	-- Wandering Forest Walker
 						}),
 					},
-				}),
-				q(5143, {	-- Tribal Leatherworking [A]
-					["qg"] = 7870,	-- Caryssia Moonhunter
-					["altQuests"] = {
-						5141,	-- Dragonscale Leatherworking
-						5144,	-- Elemental Leatherworking
-					},
-					["coord"] = { 89.4, 46.5, FERALAS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 8214, 1 },	-- Wild Leather Helmet
-						{ "i", 8211, 1 },	-- Wild Leather Vest
-					},
-					["lvl"] = 40,
 				}),
 				q(25349, {	-- Twisted Sisters
 					["qg"] = 39847,	-- Chief Spirithorn
@@ -2679,6 +2685,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(54533, {	-- Prince Lakma
+					-- #if AFTER 10.1.7
+					["description"] = "Prince Lakma drops Chimaerok Tenderloin, which is a cooking reagent for Dirge's Kickin' Chimaerok Chops. Eating this consumable is a criteria for the Leatherworking achievement named Always Be Camping. However, do not bother with Prince Lekma if you have not learned the required cooking recipe as it only was available for a short time during vanilla and now sells for gold cap. Dirge's Kickin' Chimaerok Chops can be found on the auction house, or you can ask around for a crafter.",
+					-- #endif
 					["coords"] = {
 						{ 47.6, 74.6, FERALAS },
 						{ 48.2, 78.8, FERALAS },
@@ -2750,6 +2759,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #endif
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				--o(xxxxx, {	-- Carved Eye
+					["description"] = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
+					--["coord"] = { X, Y, FERALAS },
+					["g"] = {
+						i(212991),	-- Grimoire of the Dire Observer (CI!)
+					},
+				--}),
+			})),
 			n(VENDORS, {
 				n(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
 					["coord"] = { 56.8, 54.4, FERALAS },
@@ -2779,10 +2797,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 43.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9302, {	-- Recipe: Ghost Dye
+						i(9302, {	-- Recipe: Ghost Dye (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2804,7 +2822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
@@ -2826,10 +2844,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9302, {	-- Recipe: Ghost Dye
+						i(9302, {	-- Recipe: Ghost Dye (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2839,8 +2857,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(40226, {	-- Pratt McGrubben <Leatherworking Supplies>
@@ -2848,7 +2866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
@@ -2864,7 +2882,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
@@ -2879,10 +2897,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.6, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13949),	-- Recipe: Baked Salmon
-						i(12229),	-- Recipe: Hot Wolf Ribs
-						i(13947),	-- Recipe: Lobster Stew
-						i(13948),	-- Recipe: Mightfish Steak
+						i(13949),	-- Recipe: Baked Salmon (RECIPE!)
+						i(12229),	-- Recipe: Hot Wolf Ribs (RECIPE!)
+						i(13947),	-- Recipe: Lobster Stew (RECIPE!)
+						i(13948),	-- Recipe: Mightfish Steak (RECIPE!)
 					},
 				}),
 				n(7947, {	-- Vivianna <Trade Supplies>
@@ -2893,10 +2911,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(13949),	-- Recipe: Baked Salmon
-						i(12229),	-- Recipe: Hot Wolf Ribs
-						i(13947),	-- Recipe: Lobster Stew
-						i(13948),	-- Recipe: Mightfish Steak
+						i(13949),	-- Recipe: Baked Salmon (RECIPE!)
+						i(12229),	-- Recipe: Hot Wolf Ribs (RECIPE!)
+						i(13947),	-- Recipe: Lobster Stew (RECIPE!)
+						i(13948),	-- Recipe: Mightfish Steak (RECIPE!)
 					},
 				}),
 				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>

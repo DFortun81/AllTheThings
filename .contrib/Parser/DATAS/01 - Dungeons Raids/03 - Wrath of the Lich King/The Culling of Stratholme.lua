@@ -10,29 +10,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(479, {	-- The Culling of Stratholme
-					crit(5467, { -- Meathook
+					crit(5467, {	-- Meathook
 						["_encounter"] = { 611, NORMAL_DUNGEON },
 					}),
-					crit(5468, { -- Chrono-Lord Epoch
+					crit(5468, {	-- Chrono-Lord Epoch
 						["_encounter"] = { 613, NORMAL_DUNGEON },
 					}),
-					crit(5469, { -- Salramm the Fleshcrafter
+					crit(5469, {	-- Salramm the Fleshcrafter
 						["_encounter"] = { 612, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(6432, { -- Mal'Ganis
+					crit(6432, {	-- Mal'Ganis
 						["_encounter"] = { 614, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(6433, { -- Mal'Ganis
+					crit(6433, {	-- Mal'Ganis
 						["_encounter"] = { 614, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17302, {	-- Defense Protocol Alpha: The Culling of Stratholme
-					crit(57771, { -- Meathook
+					crit(57771, {	-- Meathook
 						["_encounter"] = { 611, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43992),	-- Volitant Amulet
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(43988),	-- Gale-Proof Cloak
 						},
 					}),
-					crit(57773, { -- Salramm the Fleshcrafter
+					crit(57773, {	-- Salramm the Fleshcrafter
 						["_encounter"] = { 612, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43991),	-- Legguards of Composure
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(40428),	-- Titan's Outlook
 						},
 					}),
-					crit(57772, { -- Chrono-Lord Epoch
+					crit(57772, {	-- Chrono-Lord Epoch
 						["_encounter"] = { 613, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43990),	-- Blade-Scarred Tunic
@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(40427),	-- Circle of Arcane Streams
 						},
 					}),
-					crit(57770, { -- Mal'Ganis
+					crit(57770, {	-- Mal'Ganis
 						["_encounter"] = { 614, HEROIC_DUNGEON },
 						["groups"] = {
 							i(40475),	-- Barricade of Eternity
@@ -75,27 +75,27 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18601, {	-- Defense Protocol Beta: The Culling of Stratholme
-					crit(60614, { -- Meathook
+					crit(60614, {	-- Meathook
 						["_encounter"] = { 611, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45694),	-- Conductive Cord
 							i(46339),	-- Mimiron's Repeater
 						},
 					}),
-					crit(60616, { -- Salramm the Fleshcrafter
+					crit(60616, {	-- Salramm the Fleshcrafter
 						["_encounter"] = { 612, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45695),	-- Spire of Withering Dreams
 						},
 					}),
-					crit(60615, { -- Chrono-Lord Epoch
+					crit(60615, {	-- Chrono-Lord Epoch
 						["_encounter"] = { 613, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45685),	-- Plasma Foil
 							i(45675),	-- Power Enhancing Loop
 						},
 					}),
-					crit(60613, { -- Mal'Ganis
+					crit(60613, {	-- Mal'Ganis
 						["_encounter"] = { 614, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
@@ -105,18 +105,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19438, {	-- Defense Protocol Gamma: The Culling of Stratholme
+					crit(63374, {	-- Meathook
+						["_encounter"] = { 611, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63377, {	-- Salramm the Fleshcrafter
+						["_encounter"] = { 612, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63376, {	-- Chrono-Lord Epoch
+						["_encounter"] = { 613, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63374, {	-- Mal'Ganis
+						["_encounter"] = { 614, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+				})),
 				-- #endif
 				ach(500,  {	-- Heroic: The Culling of Stratholme
-					crit(6805, { -- Meathook
+					crit(6805, {	-- Meathook
 						["_encounter"] = { 611, HEROIC_DUNGEON },
 					}),
-					crit(6806, { -- Chrono-Lord Epoch
+					crit(6806, {	-- Chrono-Lord Epoch
 						["_encounter"] = { 613, HEROIC_DUNGEON },
 					}),
-					crit(6807, { -- Salramm the Fleshcrafter
+					crit(6807, {	-- Salramm the Fleshcrafter
 						["_encounter"] = { 612, HEROIC_DUNGEON },
 					}),
-					crit(6434, { -- Mal'Ganis
+					crit(6434, {	-- Mal'Ganis
 						["_encounter"] = { 614, HEROIC_DUNGEON },
 					}),
 				}),
@@ -352,9 +378,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["groups"] = {
 							ach(5106, {	-- Heroic: The Culling of Stratholme Guild Run
 								["timeline"] = { "added 4.0.3" },
-							}),
-							crit(6434, {	-- Mal'Ganis slain
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							}),
 							-- #if AFTER 7.3.5
 							i(37108),	-- Dreadlord's Blade (7.3.5 - Used to be only Normal Mode)

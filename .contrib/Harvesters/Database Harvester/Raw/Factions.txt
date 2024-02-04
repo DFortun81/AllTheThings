@@ -303,6 +303,10 @@
 2505@@@Dragonflight, Chromatic
 1.14.3.46575
 6@@@PLAYER, Tauren 
+1.15.0.52124
+2586@@@Azeroth Commerce Authority
+2587@@@Durotar Supply and Logistics
+2588@@@S03 - Scarlet Crusade Disguise
 2.0.0.6080
 911@@@Silvermoon City
 914@@@PLAYER, Blood Elf
@@ -1014,3 +1018,8 @@
 2553@@@Soridormi
 10.1.7.50442
 2576@@@Druids of the Flame
+10.2.0.51239
+2574@@@Dream Wardens
+2575@@@Dream Wardens (Paragon)
+10.2.5.52206
+2615@@@Azerothian Archives

@@ -5,258 +5,245 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(THE_MAW, {
 		n(ACHIEVEMENTS, {
 			ach(14744, {	-- Better to be Lucky than Dead
-				crit(1, {	-- Adjutant Dekaris
+				crit(49841, {	-- Adjutant Dekaris
 					["_npcs"] = { 157964 },
 				}),
-				crit(2, {	-- Apholeias, Herald of Loss
+				crit(49842, {	-- Apholeias, Herald of Loss
 					["_npcs"] = { 170301 },
 				}),
-				crit(3, {	-- Borr-Geth
+				crit(49843, {	-- Borr-Geth
 					["_npcs"] = { 157833 },
 				}),
-				crit(4, {	-- Conjured Death
+				crit(49844, {	-- Conjured Death
 					["_npcs"] = { 171317 },
 				}),
-				crit(5, {	-- Darithis the Bleak
+				crit(49845, {	-- Darithis the Bleak
 					["_npcs"] = { 160770 },
 				}),
-				crit(6, {	-- Darklord Taraxis
+				crit(49846, {	-- Darklord Taraxis
 					["_npcs"] = { 158025 },
 				}),
-				crit(7, {	-- Dolos
+				crit(49847, {	-- Dolos
 					["_npcs"] = { 170711 },
 				}),
-				crit(8, {	-- Eketra
+				crit(49848, {	-- Eketra
 					["_npcs"] = { 170774 },
 				}),
-				crit(9, {	-- Ekphoras, Herald of Grief
+				crit(49849, {	-- Ekphoras, Herald of Grief
 					["_npcs"] = { 169827 },
 				}),
-				crit(10, {	-- Eternas the Tormentor
+				crit(49850, {	-- Eternas the Tormentor
 					["_npcs"] = { 154330 },
 				}),
-				crit(11, {	-- Exos, Herald of Domination
+				crit(49851, {	-- Exos, Herald of Domination
 					["_npcs"] = { 170303 },
 				}),
-				crit(12, {	-- Morguliax
+				crit(49852, {	-- Morguliax
 					["_npcs"] = { 162849 },
 				}),
-				crit(13, {	-- Nascent Thunderer
+				crit(49853, {	-- Nascent Devourer
 					["_npcs"] = { 158278 },
 				}),
-				crit(14, {	-- Obolos
+				crit(49854, {	-- Obolos
 					["_npcs"] = { 164064 },
 				}),
-				crit(15, {	-- Orophea
+				crit(49855, {	-- Orophea
 					["_npcs"] = { 172577 },
 				}),
-				crit(16, {	-- Shadeweaver Zeris
+				crit(49856, {	-- Shadeweaver Zeris
 					["_npcs"] = { 170634 },
 				}),
-				crit(17, {	-- Soulforger Rhovus
+				crit(49857, {	-- Soulforger Rhovus
 					["_npcs"] = { 166398 },
 				}),
-				crit(18, {	-- Talaporas, Herald of Pain
+				crit(49858, {	-- Talaporas, Herald of Pain
 					["_npcs"] = { 170302 },
 				}),
-				crit(19, {	-- Thanassos
+				crit(49859, {	-- Thanassos
 					["_npcs"] = { 170731 },
 				}),
-				crit(20, {	-- Yero the Skittish
+				crit(49860, {	-- Yero the Skittish
 					["_npcs"] = { 172862 },
 				}),
-				crit(21, {	-- Ikras the Devourer
+				crit(50621, {	-- Ikras the Devourer
 					["_npcs"] = { 175012 },
 				}),
 			}),
 			ach(14743, {	-- Deadly Serious
-				crit(1, {	-- Adjutant Dekaris
+				crit(49841, {	-- Adjutant Dekaris
 					["_npcs"] = { 157964 },
 				}),
-				crit(2, {	-- Apholeias, Herald of Loss
+				crit(49842, {	-- Apholeias, Herald of Loss
 					["_npcs"] = { 170301 },
 				}),
-				crit(3, {	-- Borr-Geth
+				crit(49843, {	-- Borr-Geth
 					["_npcs"] = { 157833 },
 				}),
-				crit(4, {	-- Conjured Death
+				crit(49844, {	-- Conjured Death
 					["_npcs"] = { 171317 },
 				}),
-				crit(5, {	-- Darithis the Bleak
+				crit(49845, {	-- Darithis the Bleak
 					["_npcs"] = { 160770 },
 				}),
-				crit(6, {	-- Darklord Taraxis
+				crit(49846, {	-- Darklord Taraxis
 					["_npcs"] = { 158025 },
 				}),
-				crit(7, {	-- Dolos
+				crit(49847, {	-- Dolos
 					["_npcs"] = { 170711 },
 				}),
-				crit(8, {	-- Eketra
+				crit(49848, {	-- Eketra
 					["_npcs"] = { 170774 },
 				}),
-				crit(9, {	-- Ekphoras, Herald of Grief
+				crit(49849, {	-- Ekphoras, Herald of Grief
 					["_npcs"] = { 169827 },
 				}),
-				crit(10, {	-- Eternas the Tormentor
+				crit(49850, {	-- Eternas the Tormentor
 					["_npcs"] = { 154330 },
 				}),
-				crit(11, {	-- Exos, Herald of Domination
+				crit(49851, {	-- Exos, Herald of Domination
 					["_npcs"] = { 170303 },
 				}),
-				crit(12, {	-- Morguliax
+				crit(49852, {	-- Morguliax
 					["_npcs"] = { 162849 },
 				}),
-				crit(13, {	-- Nascent Thunderer
+				crit(49853, {	-- Nascent Devourer
 					["_npcs"] = { 158278 },
 				}),
-				crit(14, {	-- Obolos
+				crit(49854, {	-- Obolos
 					["_npcs"] = { 164064 },
 				}),
-				crit(15, {	-- Orophea
+				crit(49855, {	-- Orophea
 					["_npcs"] = { 172577 },
 				}),
-				crit(16, {	-- Shadeweaver Zeris
+				crit(49856, {	-- Shadeweaver Zeris
 					["_npcs"] = { 170634 },
 				}),
-				crit(17, {	-- Soulforger Rhovus
+				crit(49857, {	-- Soulforger Rhovus
 					["_npcs"] = { 166398 },
 				}),
-				crit(18, {	-- Talaporas, Herald of Pain
+				crit(49858, {	-- Talaporas, Herald of Pain
 					["_npcs"] = { 170302 },
 				}),
-				crit(19, {	-- Thanassos
+				crit(49859, {	-- Thanassos
 					["_npcs"] = { 170731 },
 				}),
-				crit(20, {	-- Yero the Skittish
+				crit(49860, {	-- Yero the Skittish
 					["_npcs"] = { 172862 },
 				}),
-				crit(21, {	-- Ikras the Devourer
+				crit(50621, {	-- Ikras the Devourer
 					["_npcs"] = { 175012 },
 				}),
 			}),
 			ach(14761, {	-- Deciphering Death's Intentions
 				["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
 				["g"] = {
-					crit(1,  {	-- Constellan Writ
+					crit(49894, {	-- Constellan Writ
 						["_quests"] = { 63132 },
 					}),
-					crit(2,  {	-- Shifting Cryptogram
+					crit(49895, {	-- Shifting Cryptogram
 						["_quests"] = { 63133 },
 					}),
-					crit(3,  {	-- Mawsworn Patrol Map
+					crit(49896, {	-- Mawsworn Patrol Map
 						["_quests"] = { 63134 },
 					}),
-					crit(4,  {	-- Coldheart Flight Routes
+					crit(49897, {	-- Coldheart Flight Routes
 						["_quests"] = { 63135 },
 					}),
-					crit(5,  {	-- Chaotic Runes
+					crit(49898, {	-- Chaotic Runes
 						["_quests"] = { 63136 },
 					}),
-					crit(6,  {	-- Puzzling Cryptogram
+					crit(49899, {	-- Puzzling Cryptogram
 						["_quests"] = { 63137 },
 					}),
-					crit(7,  {	-- Worn Obleron Etching
+					crit(49900, {	-- Worn Obleron Etching
 						["_quests"] = { 63140 },
 					}),
-					crit(8,  {	-- Soulforge Blueprints
+					crit(49901, {	-- Soulforge Blueprints
 						["_quests"] = { 63142 },
 					}),
-					crit(9,  {	-- Shadebound Testimonial
+					crit(49902, {	-- Shadebound Testimonial
 						["_quests"] = { 63145 },
 					}),
-					crit(10, {	-- Venthyr Concordat
+					crit(49903, {	-- Venthyr Concordat
 						["_quests"] = { 63152 },
 					}),
-					crit(11, {	-- Discarded Torments
+					crit(49904, {	-- Discarded Torments
 						["_quests"] = { 63153 },
 					}),
-					crit(12, {	-- Box of Torments
+					crit(49908, {	-- Box of Torments
 						["_quests"] = { 63157 },
 					}),
-					crit(13, {	-- Words of the Warden
+					crit(49910, {	-- Words of the Warden
 						["_quests"] = { 63159 },
 					}),
-					crit(14, {	-- Korrath's Grimoire: Gyadrek
+					crit(49911, {	-- Korrath's Grimoire: Gyadrek
 						["_quests"] = { 63162 },
 					}),
-					crit(15, {	-- Korrath's Grimoire: Belidir
+					crit(49912, {	-- Korrath's Grimoire: Belidir
 						["_quests"] = { 63161 },
 					}),
-					crit(16, {	-- Korrath's Grimoire: Aleketh
+					crit(49913, {	-- Korrath's Grimoire: Aleketh
 						["_quests"] = { 63160 },
 					}),
-					crit(17, {	-- Tormentor's Notes
+					crit(49914, {	-- Tormentor's Notes
 						["_quests"] = { 63163 },
 					}),
-					crit(18, {	-- Shadehound Armor Plating
+					crit(49905, {	-- Shadehound Armor Plating
 						["_quests"] = { 63154 },
 					}),
-					crit(19, {	-- Indecipherable Map
+					crit(49906, {	-- Indecipherable Map
 						["_quests"] = { 63155 },
 					}),
-					crit(20, {	-- Mawsworn Shackles
+					crit(49907, {	-- Mawsworn Shackles
 						["_quests"] = { 63156 },
 					}),
-					crit(21, {	-- Wailing Coin
+					crit(49909, {	-- Wailing Coin
 						["_quests"] = { 63158 },
 					}),
-					crit(22, {	-- Mawsworn Orders
+					crit(49915, {	-- Mawsworn Orders
 						["_quests"] = { 63164 },
 					}),
 				},
 			}),
-			ach(14663, {	-- Explore The Maw
-				crit(1),		-- Calcis
-				crit(2),		-- Cocyrus
-				crit(3),		-- Crucible of the Damned
-				crit(4),		-- Desmotaeron
-				crit(5),		-- Gorgoa, River of Souls
-				crit(6),		-- Marrow's Coppice
-				crit(7),		-- Perdition Hold
-				crit(8),		-- Planes of Torment
-				crit(9),		-- Ravener's Lament
-				crit(10),		-- The Altar of Damnation
-				crit(11),		-- The Beastwarrens
-				crit(12),		-- Zovaal's Cauldron
-			}),
+			explorationAch(14663),	-- Explore The Maw
 			achraw(14895, {	-- 'Ghast Five
-				crit(1, {		-- Vessel of Unfortunate Spirits
+				crit(51251, {		-- Vessel of Unfortunate Spirits
 					["provider"] = { "i", 184620 },
 				}),
-				crit(2, {		-- Extradimensional Pockets
+				crit(51253, {		-- Extradimensional Pockets
 					["provider"] = { "i", 184615 },
 				}),
-				crit(3, {		-- Encased Riftwalker Essence
+				crit(51255, {		-- Encased Riftwalker Essence
 					["provider"] = { "i", 184613 },
 				}),
-				crit(4, {		-- Animated Levitating Chain
+				crit(51254, {		-- Animated Levitating Chain
 					["provider"] = { "i", 184653 },
 				}),
-				crit(5, {		-- Animaflow Stabilizer
+				crit(51258, {		-- Animaflow Stabilizer
 					["provider"] = { "i", 180949 },
 				}),
-				crit(6, {		-- Soul-Stabilizing Salve
+				crit(51256, {		-- Soul-Stabilizing Salve
 					["provider"] = { "i", 184588 },
 				}),
-				crit(7, {		-- Ritual Prism of Fortune
+				crit(51252, {		-- Ritual Prism of Fortune
 					["provider"] = { "i", 184621 },
 				}),
-				crit(8, {		-- Bangle of Seniority
+				crit(51248, {		-- Bangle of Seniority
 					["provider"] = { "i", 184617 },
 				}),
-				crit(9, {		-- Talisman of Destined Defiance
+				crit(51257, {		-- Talisman of Destined Defiance
 					["provider"] = { "i", 184605 },
 				}),
-				crit(10, {	-- Rank Insignia: Acquisitionist
+				crit(51249, {	-- Rank Insignia: Acquisitionist
 					["provider"] = { "i", 184618 },
 				}),
-				crit(11, {	-- Possibility Matrix
+				crit(51464, {	-- Possibility Matrix
 					["provider"] = { "i", 180952,  },
 				}),
-				crit(12, {	-- Loupe of Unusual Charm
+				crit(51250, {	-- Loupe of Unusual Charm
 					["provider"] = { "i", 184619 },
 				}),
-				crit(13, {	-- Broker Traversal Enhancer
+				crit(51573, {	-- Broker Traversal Enhancer
 					["provider"] = { "i", 184901 },
 				}),
 			}),
@@ -268,154 +255,139 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			ach(14659, {	-- Handling His Henchmen
-				crit(1, {	-- Drifting Sorrow
+				crit(49475, {	-- Drifting Sorrow
 					["_npcs"] = { 158314 },
 				}),
-				crit(2, {	-- Dartanos <Flayer of Souls>
+				crit(49476, {	-- Dartanos <Flayer of Souls>
 					["_npcs"] = { 162452 },
 				}),
-				crit(3, {	-- Razkazzar <Lord of Axes>
+				crit(49479, {	-- Razkazzar <Lord of Axes>
 					["_npcs"] = { 162829 },
 				}),
-				crit(4, {	-- Orrholyn <Lord of Bloodletting>
+				crit(49480, {	-- Orrholyn <Lord of Bloodletting>
 					["_npcs"] = { 162845 },
 				}),
-				crit(5, {	-- Huwerath
+				crit(49481, {	-- Huwerath
 					["_npcs"] = { 162965 },
 				}),
-				crit(6, {	-- Soulsmith Yol-Mattar
+				crit(49482, {	-- Soulsmith Yol-Mattar
 					["_npcs"] = { 165047 },
 				}),
-				crit(7, {	-- Warren Mongrel [This NPC has no info or comment on wowhead nor ATT... >.<]
+				crit(49483, {	-- Warren Mongrel [This NPC has no info or comment on wowhead nor ATT... >.<]
 					-- ["_npcs"] = { 165973 },	-- NPC doesn't exist
 					["timeline"] = { "created 9.0.1" },
 				}),
-				crit(8, {	-- Cyrixia <The Willbreaker>
+				crit(49484, {	-- Cyrixia <The Willbreaker>
 					["_npcs"] = { 168693 },
 				}),
-				crit(9, {	-- Agonix
+				crit(49485, {	-- Agonix
 					["_npcs"] = { 169102 },
 				}),
-				crit(10, {	-- Krala <Death's Wings>
+				crit(49486, {	-- Krala <Death's Wings>
 					["_npcs"] = { 170692 },
 				}),
-				crit(11, {	-- Akros <Death's Hammer>
+				crit(49487, {	-- Akros <Death's Hammer>
 					["_npcs"] = { 170787 },
 				}),
-				crit(12, {	-- Malevolent Stygia
+				crit(49488, {	-- Malevolent Stygia
 					["_npcs"] = { 171316 },
 				}),
-				crit(13, {	-- Sanngror the Torturer
+				crit(49489, {	-- Sanngror the Torturer
 					["_npcs"] = { 172521 },
 				}),
-				crit(14, {	-- Houndmaster Vasanok
+				crit(49490, {	-- Houndmaster Vasanok
 					["_npcs"] = { 172523 },
 				}),
-				crit(15, {	-- Skittering Broodmother
+				crit(49491, {	-- Skittering Broodmother
 					["_npcs"] = { 172524 },
 				}),
-				crit(16, {	-- Valis the Cruel
+				crit(49492, {	-- Valis the Cruel
 					["_npcs"] = { 173086 },
 				}),
-				crit(17, {	-- Odalrik
+				crit(50408, {	-- Odalrik
 					["_npcs"] = { 172207 },
 				}),
-				crit(18, {	-- Stygian Incinerator
+				crit(50409, {	-- Stygian Incinerator
 					["_npcs"] = { 156203 },
 				}),
-				crit(19, {	-- Dath Rezara <Lord of Blades>
+				crit(50410, {	-- Dath Rezara <Lord of Blades>
 					["_npcs"] = { 162844 },
 				}),
-				crit(20, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+				crit(51058, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
 					["_npcs"] = { 175821 },
 				}),
 			}),
 			ach(14738, {	-- Hunting Party
-				crit(1, {	-- Complete Hunt: Shadehounds
+				crit(49251, {	-- Complete Hunt: Shadehounds
 					["_quests"] = { 63180 }
 				}),
-				crit(2, {	-- Complete Hunt: Soul Eaters
+				crit(49238, {	-- Complete Hunt: Soul Eaters
 					["_quests"] = { 63199 }
 				}),
-				crit(3, {	-- Complete Hunt: Death Elemental
+				crit(49248, {	-- Complete Hunt: Death Elemental
 					["_quests"] = { 63198 }
 				}),
-				crit(4, {	-- Complete Hunt: Winged Soul Eaters
+				crit(51060, {	-- Complete Hunt: Winged Soul Eaters
 					["_quests"] = { 63194 }
 				}),
 			}),
-			ach(14334, {	-- Into the Maw
-				crit(1, {
-					["sourceQuests"] = { 59770 },	-- Stand as One
-				}),
-			}),
 			ach(14660, {	-- It's About Sending a Message
-				crit(1, {	-- Drifting Sorrow
+				crit(49475, {	-- Drifting Sorrow
 					["_npcs"] = { 158314 },
 				}),
-				crit(2, {	-- Dartanos <Flayer of Souls>
+				crit(49476, {	-- Dartanos <Flayer of Souls>
 					["_npcs"] = { 162452 },
 				}),
-				crit(3, {	-- Razkazzar <Lord of Axes>
+				crit(49479, {	-- Razkazzar <Lord of Axes>
 					["_npcs"] = { 162829 },
 				}),
-				crit(4, {	-- Orrholyn <Lord of Bloodletting>
+				crit(49480, {	-- Orrholyn <Lord of Bloodletting>
 					["_npcs"] = { 162845 },
 				}),
-				crit(5, {	-- Huwerath
+				crit(49481, {	-- Huwerath
 					["_npcs"] = { 162965 },
 				}),
-				crit(6, {	-- Soulsmith Yol-Mattar
+				crit(49482, {	-- Soulsmith Yol-Mattar
 					["_npcs"] = { 165047 },
 				}),
-				crit(7, {	-- Cyrixia <The Willbreaker>
+				crit(49484, {	-- Cyrixia <The Willbreaker>
 					["_npcs"] = { 168693 },
 				}),
-				crit(8, {	-- Agonix
+				crit(49485, {	-- Agonix
 					["_npcs"] = { 169102 },
 				}),
-				crit(9, {	-- Krala <Death's Wings>
+				crit(49486, {	-- Krala <Death's Wings>
 					["_npcs"] = { 170692 },
 				}),
-				crit(10, {	-- Akros <Death's Hammer>
+				crit(49487, {	-- Akros <Death's Hammer>
 					["_npcs"] = { 170787 },
 				}),
-				crit(11, {	-- Malevolent Stygia
+				crit(49488, {	-- Malevolent Stygia
 					["_npcs"] = { 171316 },
 				}),
-				crit(12, {	-- Sanngror the Torturer
+				crit(49489, {	-- Sanngror the Torturer
 					["_npcs"] = { 172521 },
 				}),
-				crit(13, {	-- Houndmaster Vasanok
+				crit(49490, {	-- Houndmaster Vasanok
 					["_npcs"] = { 172523 },
 				}),
-				crit(14, {	-- Skittering Broodmother
+				crit(49491, {	-- Skittering Broodmother
 					["_npcs"] = { 172524 },
 				}),
-				crit(15, {	-- Valis the Cruel
+				crit(49492, {	-- Valis the Cruel
 					["_npcs"] = { 173086 },
 				}),
-				crit(16, {	-- Odalrik
+				crit(50408, {	-- Odalrik
 					["_npcs"] = { 172207 },
 				}),
-				crit(17, {	-- Stygian Incinerator
+				crit(50409, {	-- Stygian Incinerator
 					["_npcs"] = { 156203 },
 				}),
-				crit(18, {	-- Dath Rezara <Lord of Blades>
+				crit(50410, {	-- Dath Rezara <Lord of Blades>
 					["_npcs"] = { 162844 },
 				}),
-				crit(19, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+				crit(51058, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
 					["_npcs"] = { 175821 },
-				}),
-			}),
-			ach(14747, {	-- Make it Double!
-				crit(1, {
-					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				}),
-			}),
-			ach(14746, {	-- Prepare for Trouble!
-				crit(1, {
-					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				}),
 			}),
 			ach(14658, {	-- Soulkeeper's Burden
@@ -435,7 +407,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			ach(14894, {	-- To 'Ghast, Two Curios (2 of these criteria)
-				["sym"] = {{"select","achievementID",14895},{"pop"}},	-- same criteria as full achieve
+				["sym"] = {{"partial_achievement",14895}},	-- 'Ghast Five
 			}),
 			ach(15648, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Walking in Maw-mphis
 				-- Meta Achievement
@@ -446,6 +418,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					14738,	-- Hunting Party
 					14658,	-- Soulkeeper's Burden
 					14663,	-- Explore The Maw
+					14656,	-- Trading Partners
 				}},
 				["g"] = {
 					title(462),	-- <Name>, Maw Walker

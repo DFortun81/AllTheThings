@@ -18,6 +18,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["coord"] = { 32.9, 81.5, 2109 },
 					["g"] = {
 						i(193481),	-- Emblazoned Ruby Staff
+						i(187852),	-- Stack of Weapons (QI!)
+						i(187853),	-- Crate of Warscales (QI!)
+						i(187855),	-- Decayed Rations (QI!)
 					},
 				}),
 				q(64866, {	-- Into the Cauldron
@@ -60,6 +63,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					},
 					["provider"] = { "n", 181054 },	-- Scalecommander Emberthal
 					["coord"] = { 44.5, 61.1, THE_FORBIDDEN_REACH_EVOKER },
+					["groups"] = {
+						i(195044),	-- Try Again (QI!)
+					},
 				}),
 				q(65036, {	-- Train Like We Fight
 					["sourceQuests"] = { 64873 },	-- Stretch Your Wings
@@ -84,6 +90,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["sourceQuests"] = { 65063 },	-- Into the Hive
 					["provider"] = { "n", 184163 },	-- Scalecommander Viridia
 					["coord"] = { 20.1, 19.1, THE_FORBIDDEN_REACH_EVOKER },
+					["groups"] = {
+						i(187948),	-- Toxin Gland (QI!)
+					},
 				}),
 				q(65074, {	-- Easy Prey
 					["sourceQuests"] = { 65063 },	-- Into the Hive
@@ -111,6 +120,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["g"] = {
 						i(194109),	-- Verdant Dracthyr's Band
 						i(191729),	-- Toxin Antidote
+						i(191730),	-- Horn Signet of Tenezeth (QI!)
+						i(191731),	-- Horn Signet of Rethenash (QI!)
+						i(191732),	-- Horn Signet of Katrinasa (QI!)
+						i(191733),	-- Report: Infestation (QI!)
+						i(191752),	-- Horn Signet (QI!)
 					},
 				}),
 				q(65075, {	-- The Healing Wings

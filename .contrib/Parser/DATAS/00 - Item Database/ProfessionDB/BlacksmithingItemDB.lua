@@ -1,44 +1,20 @@
-local Items = root(ROOTS.ItemDBConditional);
-local Recipes = root(ROOTS.RecipeDB);
-local ProfessionID = BLACKSMITHING;
+local i = GetRecipeHelperForProfession(BLACKSMITHING);
 local ARMORSMITH = 9788;
 local WEAPONSMITH = 9787;
 local MASTER_AXESMITH = 17041;
 local MASTER_HAMMERSMITH = 17040;
 local MASTER_SWORDSMITH = 17039;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	elseif itemID == 0 then
-		local recipe = { ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				recipe.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				recipe.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				recipe.timeline = unobtainStatus;
-			end
-		end
-		Recipes[recipeID] = recipe;
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
+
+-- #if SEASON_OF_DISCOVERY
+------------------
+-- PATCH 1.15.0 --
+------------------
+--- QUEST ---
+i(0, 429348);		-- Shifting Silver Breastplate
+--- ITEM ---
+i(211846, 430397);	-- Blackfathom Sharpening Stone
+i(210779, 427061);	-- Mantle of the Second War
+-- #endif
 
 -----------------
 --   CLASSIC   --
@@ -219,7 +195,7 @@ i(12707, 16665);	-- Runic Plate Boots
 i(12714, 16726);	-- Runic Plate Helm
 i(12719, 16732);	-- Runic Plate Leggings
 i(12706, 16664);	-- Runic Plate Shoulders
-i(12718, 16731);	-- Runic Breastplate [REMOVED: 4.0.3]
+i(12718, 16731);	-- Runic Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(12261, 15973);	-- Searing Golden Blade
 i(3869, 3500);		-- Shadow Crescent Axe
 i(5578, 2673);		-- Silvered Bronze Breastplate
@@ -236,13 +212,13 @@ i(12684, 16644);	-- Thorium Bracers
 i(12694, 16653);	-- Thorium Helm
 i(12704, 16662);	-- Thorium Leggings
 i(12692, 16651);	-- Thorium Shield Spike
-i(12828, 16984);	-- Volcanic Hammer (Unknown)
+i(12828, 16984);	-- Volcanic Hammer
 i(8029, 9997);		-- Wicked Mithril Blade
 --- ARMORSMITH ---
-i(0, 9788);			-- Armorsmith [REMOVED: 4.0.3]
+i(0, 9788, nil, ARMORSMITH);		-- Armorsmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
-i(0, 9974, nil, ARMORSMITH);	-- Truesilver Breastplate
-i(0, 9954, nil, ARMORSMITH);	-- Truesilver Gauntlets
+i(0, 9974, nil, ARMORSMITH);		-- Truesilver Breastplate
+i(0, 9954, nil, ARMORSMITH);		-- Truesilver Gauntlets
 i(20040, 24399, nil, ARMORSMITH);	-- Dark Iron Boots
 i(17051, 20874, nil, ARMORSMITH);	-- Dark Iron Bracers
 i(19207, 23637, nil, ARMORSMITH);	-- Dark Iron Gauntlets
@@ -290,10 +266,10 @@ i(12711, 16724);	-- Whitesoul Helm
 i(12691, 16650);	-- Wildthorn Mail
 -- #endif
 --- WEAPONSMITH ---
-i(0, 9787);			-- Weaponsmith [REMOVED: 4.0.3]
+i(0, 9787, nil, WEAPONSMITH);		-- Weaponsmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
-i(0, 10003, nil, WEAPONSMITH);	-- The Shatterer [REMOVED: 4.0.3]
-i(0, 10015, nil, WEAPONSMITH);	-- Truesilver Champion [REMOVED: 4.0.3]
+i(0, 10003, nil, WEAPONSMITH);		-- The Shatterer [REMOVED: 4.0.3]
+i(0, 10015, nil, WEAPONSMITH);		-- Truesilver Champion [REMOVED: 4.0.3]
 i(19208, 23638, nil, WEAPONSMITH);	-- Black Amnesty
 i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 i(142337, 10011, nil, WEAPONSMITH);	-- Blight
@@ -313,7 +289,7 @@ i(12839, 16995);	-- Heartseeker
 i(74274, 10007);	-- Phantom Blade
 -- #endif
 --- AXESMITH ---
-i(0, 17041);		-- Master Axesmith [REMOVED: 4.0.3]
+i(0, 17041, nil, MASTER_AXESMITH);		-- Master Axesmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(12835, 16991, nil, MASTER_AXESMITH);	-- Annihilator
 i(12838, 16994, nil, MASTER_AXESMITH);	-- Arcanite Reaper
@@ -328,7 +304,7 @@ i(12821, 16970);	-- Dawn's Edge [CLASSIC-CATA]
 i(19212, 23653);	-- Nightfall
 -- #endif
 --- HAMMERSMITH ---
-i(0, 17040);		-- Master Hammersmith [REMOVED: 4.0.3]
+i(0, 17040, nil, MASTER_HAMMERSMITH);		-- Master Hammersmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
 i(12824, 16973, nil, MASTER_HAMMERSMITH);	-- Enchanted Battlehammer [REMOVED: 4.0.3]
@@ -345,7 +321,7 @@ i(22390, 27830);	-- Persuader
 i(12827, 16983);	-- Serenity
 -- #endif
 --- SWORDSMITH ---
-i(0, 17039);		-- Master Swordsmith
+i(0, 17039, nil, MASTER_SWORDSMITH);		-- Master Swordsmith
 -- #if BEFORE TBC
 i(12834, 16990, nil, MASTER_SWORDSMITH);	-- Arcanite Champion
 i(19211, 23652, nil, MASTER_SWORDSMITH);	-- Blackguard
@@ -363,7 +339,7 @@ i(17059, 20890);	-- Dark Iron Reaver
 i(12836, 16992);	-- Frostguard
 i(22389, 27832);	-- Sageblade
 -- #endif
--- NYI ---
+--- NYI ---
 i(0, 6470);			-- Tiny Bronze Key
 i(0, 6471);			-- Tiny Iron Key
 i(12831, 16986);	-- Blood Talon
@@ -1013,54 +989,54 @@ i(0, 113263);		--
 i(0, 126864);		--
 i(0, 114112);		--
 i(0, 126866);		--
-i(84187, 122591);		-- Lightsteel Belt
-i(84188, 122590);		-- Lightsteel Boots
-i(84190, 122586);		-- Lightsteel Breastplate
-i(84191, 122587);		-- Lightsteel Gauntlets
-i(84192, 122584);		-- Lightsteel Helm
-i(84193, 122588);		-- Lightsteel Legplates
-i(84195, 122585);		-- Lightsteel Shoulders
-i(84199, 122607);		-- Masterwork Ghost-Forged Belt
-i(84201, 122606);		-- Masterwork Ghost-Forged Boots
-i(84202, 122605);		-- Masterwork Ghost-Forged Bracers
-i(84203, 122602);		-- Masterwork Ghost-Forged Breastplate
-i(84204, 122603);		-- Masterwork Ghost-Forged Gauntlets
-i(84205, 122600);		-- Masterwork Ghost-Forged Helm
-i(84206, 122604);		-- Masterwork Ghost-Forged Legplates
-i(84207, 122601);		-- Masterwork Ghost-Forged Shoulders
-i(84209, 122615);		-- Masterwork Lightsteel Belt
-i(84210, 122614);		-- Masterwork Lightsteel Boots
-i(84211, 122613);		-- Masterwork Lightsteel Bracers
-i(84212, 122610);		-- Masterwork Lightsteel Breastplate
-i(84213, 122611);		-- Masterwork Lightsteel Gauntlets
-i(84214, 122608);		-- Masterwork Lightsteel Helm
-i(84215, 122612);		-- Masterwork Lightsteel Legplates
-i(84216, 122609);		-- Masterwork Lightsteel Shoulders
-i(84230, 122575);		-- Spiritguard Belt
-i(84231, 122574);		-- Spiritguard Boots
-i(84233, 122570);		-- Spiritguard Breastplate
-i(84234, 122571);		-- Spiritguard Gauntlets
-i(84235, 122568);		-- Spiritguard Helm
-i(84236, 122572);		-- Spiritguard Legplates
-i(84238, 122569);		-- Spiritguard Shoulders
-i(84174, 0);			-- Forgewire Axe
-i(84176, 0);			-- Ghost Shard
-i(84177, 0);			-- Ghost-Forged Belt
-i(84178, 0);			-- Ghost-Forged Blade
-i(84179, 0);			-- Ghost-Forged Boots
-i(84180, 0);			-- Ghost-Forged Bracers
-i(84181, 0);			-- Ghost-Forged Breastplate
-i(84182, 0);			-- Ghost-Forged Gauntlets
-i(84183, 0);			-- Ghost-Forged Helm
-i(84184, 0);			-- Ghost-Forged Legplates
-i(84185, 0);			-- Ghost-Forged Shoulders
-i(84186, 0);			-- Ghostly Skeleton Key
-i(84189, 0);			-- Lightsteel Bracers
-i(84194, 0);			-- Lightsteel Shield
-i(84228, 0);			-- Phantasmal Hammer
-i(84229, 0);			-- Spiritblade Decimator
-i(84232, 0);			-- Spiritguard Bracers
-i(84237, 0);			-- Spiritguard Shield
+i(84187, 122591);	-- Lightsteel Belt
+i(84188, 122590);	-- Lightsteel Boots
+i(84190, 122586);	-- Lightsteel Breastplate
+i(84191, 122587);	-- Lightsteel Gauntlets
+i(84192, 122584);	-- Lightsteel Helm
+i(84193, 122588);	-- Lightsteel Legplates
+i(84195, 122585);	-- Lightsteel Shoulders
+i(84199, 122607);	-- Masterwork Ghost-Forged Belt
+i(84201, 122606);	-- Masterwork Ghost-Forged Boots
+i(84202, 122605);	-- Masterwork Ghost-Forged Bracers
+i(84203, 122602);	-- Masterwork Ghost-Forged Breastplate
+i(84204, 122603);	-- Masterwork Ghost-Forged Gauntlets
+i(84205, 122600);	-- Masterwork Ghost-Forged Helm
+i(84206, 122604);	-- Masterwork Ghost-Forged Legplates
+i(84207, 122601);	-- Masterwork Ghost-Forged Shoulders
+i(84209, 122615);	-- Masterwork Lightsteel Belt
+i(84210, 122614);	-- Masterwork Lightsteel Boots
+i(84211, 122613);	-- Masterwork Lightsteel Bracers
+i(84212, 122610);	-- Masterwork Lightsteel Breastplate
+i(84213, 122611);	-- Masterwork Lightsteel Gauntlets
+i(84214, 122608);	-- Masterwork Lightsteel Helm
+i(84215, 122612);	-- Masterwork Lightsteel Legplates
+i(84216, 122609);	-- Masterwork Lightsteel Shoulders
+i(84230, 122575);	-- Spiritguard Belt
+i(84231, 122574);	-- Spiritguard Boots
+i(84233, 122570);	-- Spiritguard Breastplate
+i(84234, 122571);	-- Spiritguard Gauntlets
+i(84235, 122568);	-- Spiritguard Helm
+i(84236, 122572);	-- Spiritguard Legplates
+i(84238, 122569);	-- Spiritguard Shoulders
+i(84174, 0);		-- Forgewire Axe
+i(84176, 0);		-- Ghost Shard
+i(84177, 0);		-- Ghost-Forged Belt
+i(84178, 0);		-- Ghost-Forged Blade
+i(84179, 0);		-- Ghost-Forged Boots
+i(84180, 0);		-- Ghost-Forged Bracers
+i(84181, 0);		-- Ghost-Forged Breastplate
+i(84182, 0);		-- Ghost-Forged Gauntlets
+i(84183, 0);		-- Ghost-Forged Helm
+i(84184, 0);		-- Ghost-Forged Legplates
+i(84185, 0);		-- Ghost-Forged Shoulders
+i(84186, 0);		-- Ghostly Skeleton Key
+i(84189, 0);		-- Lightsteel Bracers
+i(84194, 0);		-- Lightsteel Shield
+i(84228, 0);		-- Phantasmal Hammer
+i(84229, 0);		-- Spiritblade Decimator
+i(84232, 0);		-- Spiritguard Bracers
+i(84237, 0);		-- Spiritguard Shield
 
 -----------------
 -- PATCH 5.2.0 --
@@ -1584,7 +1560,7 @@ i(0, 283242);		-- Sinister Combatant's Plate Greaves [Rank 1]
 i(0, 283239);		-- Sinister Combatant's Plate Waistguard [Rank 1]
 i(0, 282859);		-- Sinister Combatant's Polearm [Rank 1]
 i(0, 282862);		-- Sinister Combatant's Shanker [Rank 1]
-i(0, 282878);		-- Sinister Combatant's Shield [Rank 1]
+i(0, 282876);		-- Sinister Combatant's Shield [Rank 1]
 i(0, 282865);		-- Sinister Combatant's Spellblade [Rank 1]
 --- ITEM ---
 i(165642, 285089);	-- Fortified Stormsteel Girdle
@@ -1608,7 +1584,7 @@ i(165298, 282860);	-- Sinister Combatant's Polearm [Rank 2]
 i(165299, 282861);	-- Sinister Combatant's Polearm [Rank 3]
 i(165296, 282863);	-- Sinister Combatant's Shanker [Rank 2]
 i(165297, 282864);	-- Sinister Combatant's Shanker [Rank 3]
-i(165284, 282876);	-- Sinister Combatant's Shield [Rank 2]
+i(165284, 282878);	-- Sinister Combatant's Shield [Rank 2]
 i(165285, 282879);	-- Sinister Combatant's Shield [Rank 3]
 i(165294, 282866);	-- Sinister Combatant's Spellblade [Rank 2]
 i(165295, 282867);	-- Sinister Combatant's Spellblade [Rank 3]
@@ -1717,7 +1693,7 @@ i(0, 307221);		-- Void Focus
 -----------------
 -- PATCH 9.0.1 --
 -----------------
---- RELICS ---
+--- RELIC ---
 i(0, 330134);		-- Relic of the Past I [CLASSIC]
 i(0, 330140);		-- Relic of the Past II [CLASSIC]
 i(0, 330141);		-- Relic of the Past III [CLASSIC]
@@ -1808,7 +1784,7 @@ i(0, 307700);		-- Phaeweald Smasher
 i(0, 307695);		-- Phaeweald Spear
 i(0, 307691);		-- Phaeweald Waistguard
 i(0, 307694);		-- Phaeweald Warglaive
-i(0, 322592);		-- Shadowsteel Aegis \\ Solforged Aegis
+i(0, 322592);		-- Shadowsteel Aegis
 i(0, 322610);		-- Sinsteel Aegis
 i(0, 322613);		-- Sinsteel Armguards
 i(0, 322636);		-- Sinsteel Axe
@@ -1881,7 +1857,6 @@ i(0, 307717);		-- Porous Sharpening Stone
 i(0, 307719);		-- Porous Weightstone
 --- ITEM ---
 i(0, 343185);		-- Crafter's Mark II
-i(0, 343186);		-- Crafter's Mark III
 i(183094, 322590);	-- Shadowsteel Helm
 i(183095, 322593);	-- Shadowsteel Pauldrons
 --- LEGENDARY ---
@@ -1936,6 +1911,7 @@ i(0, 337426);		-- Unrefined Arrowheads
 -- PATCH 9.1.0 --
 -----------------
 --- ITEM ---
+i(0, 343186);		-- Crafter's Mark III
 i(0, 343188);		-- Crafter's Mark of the Chained Isle
 i(0, 352439);		-- Vestige of Origins
 
@@ -2125,7 +2101,7 @@ i(205137, 408282);	-- Shadowed Alloy
 i(205143, 408288);	-- Shadowed Belt Clasp
 i(205145, 408326);	-- Shadowed Impact Buckler
 i(205144, 408283);	-- Shadowed Razing Annihilator
---- SPECIAL ---
+--- LEGENDARY ---
 i(0, 409224);		-- Reclaimed Gauntlet Chassis
 
 ------------------
@@ -2172,3 +2148,17 @@ i(207568, 416683);	-- Valiant Shortblade
 i(206522, 413511);	-- Warsword of Caer Darrow
 i(206534, 413521);	-- Weaver's Fang
 i(206535, 413522);	-- Widow's Weep
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210644, 426332);	-- Flourishing Dream Helm
+i(208287, 419031);	-- Verdant Combatant's Draconium Armguards
+i(208282, 419032);	-- Verdant Combatant's Draconium Breastplate
+i(208285, 419033);	-- Verdant Combatant's Draconium Gauntlets
+i(208283, 419034);	-- Verdant Combatant's Draconium Greaves
+i(208281, 419035);	-- Verdant Combatant's Draconium Helm
+i(208284, 419036);	-- Verdant Combatant's Draconium Pauldrons
+i(208286, 419037);	-- Verdant Combatant's Draconium Sabatons
+i(208288, 419038);	-- Verdant Combatant's Draconium Waistguard

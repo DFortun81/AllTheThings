@@ -3,10 +3,7 @@
 -------------------------------------------------------------------
 local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 	["sym"] = {
-		{ "select", "tierID", SL_TIER },	-- SL Tier
-		{ "pop" },							-- pop the Tier header
 		{ "select", "headerID", LEGENDARIES },	-- Legendary header
-		{ "pop" },							-- pop header
 		{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
 		{ "exclude", "itemID",
 			190584,	-- Memory of Unity (DK)
@@ -65,7 +62,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
-					i(184352, {	-- Illusion: Transcendent Soul
+					i(184352, {	-- Illusion: Transcendent Soul (ILLUSION!)
 						["cost"] = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 30 },
@@ -1491,37 +1488,4 @@ end
 root(ROOTS.HiddenQuestTriggers, {
 	q(63602),	-- learning Ensemble: Devoted Aspirant's Regalia
 	q(60595),	-- unlocking 12 Kyrian sets, no idea why they all have the same TrackingQuestID: https://wow.tools/dbc/?dbc=transmogset&build=9.1.5.40944#page=1&colFilter[3]=60595
-});
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		n(KYRIAN, {
-			n(ARMOR, {
-				filter(MAIL, {
-					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head
-					i(179395),	-- 9.0 Covenant - Bastion - Mail - Base - Chest
-					i(179396),	-- 9.0 Covenant - Bastion - Mail - Base - Feet
-					i(179397),	-- 9.0 Covenant - Bastion - Mail - Base - Hands
-					i(179398),	-- 9.0 Covenant - Bastion - Mail - Base - Legs
-					i(179399),	-- 9.0 Covenant - Bastion - Mail - Base - Shoulders
-					i(179400),	-- 9.0 Covenant - Bastion - Mail - Base - Waist
-					i(179401),	-- 9.0 Covenant - Bastion - Mail - Base - Wrists
-				}),
-				filter(PLATE, {
-					i(177684),	-- 9.0 Covenant - Bastion - Plate - Head
-					i(177685),	-- 9.0 Covenant - Bastion - Plate - Chest
-					i(177686),	-- 9.0 Covenant - Bastion - Plate - Feet
-					i(177687),	-- 9.0 Covenant - Bastion - Plate - Hands
-					i(177688),	-- 9.0 Covenant - Bastion - Plate - Legs
-					i(177689),	-- 9.0 Covenant - Bastion - Plate - Shoulders
-					i(177690),	-- 9.0 Covenant - Bastion - Plate - Waist
-					i(177691),	-- 9.0 Covenant - Bastion - Plate - Wrists
-				}),
-				n(BACK, {
-					i(177692),	-- 9.0 Covenant - Bastion - Plate - Base - Cloak
-					i(179402),	-- 9.0 Covenant - Bastion - Mail - Base - Cloak
-				}),
-			}),
-		}),
-	}),
 });

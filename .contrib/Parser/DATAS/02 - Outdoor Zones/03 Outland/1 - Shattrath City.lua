@@ -607,17 +607,6 @@ root(ROOTS.Zones, {
 			["lvl"] = 58,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(25, {	-- Morolu the Elder
-								["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-								["cr"] = 66553,	-- Morulu The Elder <Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(964, {	-- Going Down?
 						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
 						["timeline"] = { "added 3.0.1" },
@@ -672,8 +661,18 @@ root(ROOTS.Zones, {
 					})),
 				}),
 				n(FACTIONS, {
+					faction(936, {	-- Shattrath City
+						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+						["collectible"] = false,
+					}),
 					faction(1011, {	-- Lower City
-						["maps"] = { AUCHINDOUN_AUCHENAI_CRYPTS, AUCHINDOUN_SETHEKK_HALLS, AUCHINDOUN_SHADOW_LABYRINTH },
+						["maps"] = {
+							256,		-- AUCHINDOUN_AUCHENAI_CRYPTS 1
+							257,		-- AUCHINDOUN_AUCHENAI_CRYPTS 2
+							258,		-- AUCHINDOUN_SETHEKK_HALLS 1
+							259,		-- AUCHINDOUN_SETHEKK_HALLS 2
+							AUCHINDOUN_SHADOW_LABYRINTH,
+						},
 					}),
 					faction(932, {	-- The Aldor
 						["maxReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
@@ -691,6 +690,11 @@ root(ROOTS.Zones, {
 					fp(128, {	-- Shattrath, Terokkar Forest
 						["cr"] = 18940,	-- Nutral <Flight Master>
 						["coord"] = { 64.08, 41.12, SHATTRATH_CITY },
+					}),
+				}),
+				petbattles({
+					n(66553, {	-- Morulu The Elder <Master Pet Tamer>
+						["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 					}),
 				}),
 				n(PROFESSIONS, {
@@ -843,9 +847,18 @@ root(ROOTS.Zones, {
 						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell
-								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["providers"] = {
+									{ "i",  34246 },	-- Smuggled Mana Cell
+									{ "o", 187039 },	-- Smuggled Mana Cell
+								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
 								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["crs"] = {
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									22244,	-- Unbound Ethereal
+								},
 							}),
 							i(35232),	-- Shattered Sun Supplies
 						},
@@ -880,9 +893,18 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell
-								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["providers"] = {
+									{ "i",  34246 },	-- Smuggled Mana Cell
+									{ "o", 187039 },	-- Smuggled Mana Cell
+								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
 								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["crs"] = {
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									22244,	-- Unbound Ethereal
+								},
 							}),
 							i(35232),	-- Shattered Sun Supplies
 						},
@@ -1629,23 +1651,23 @@ root(ROOTS.Zones, {
 					["requireSkill"] = COOKING,
 					["groups"] = {
 						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
+							i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
 							-- #if AFTER 3.2.0
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							-- #endif
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
+							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+							i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+							i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
+							i(33871),	-- Recipe: Stormchops (RECIPE!)
 						}),
 						i(33857, {	-- Crate of Meat
 							-- #if AFTER 3.2.0
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							-- #endif
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
+							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+							i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+							i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
+							i(33871),	-- Recipe: Stormchops (RECIPE!)
 							i(33855),	-- Tarnished Silver Ring
 						}),
 					},
@@ -1729,13 +1751,13 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
 							applyclassicphase(TBC_PHASE_TWO, i(35368)),	-- Opportunist's Leather Legguards
-							i(29717),	-- Pattern: Drums of Battle
+							i(29717),	-- Pattern: Drums of Battle (RECIPE!)
 							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle
+							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle (RECIPE!)
 							-- #endif
-							i(13517),	-- Recipe: Alchemist Stone
-							i(31354),	-- Recipe: Flask of the Titans
-							i(22915),	-- Recipe: Transmute Primal Air to Fire
+							i(13517),	-- Recipe: Alchemist Stone (RECIPE!)
+							i(31354),	-- Recipe: Flask of the Titans (RECIPE!)
+							i(22915),	-- Recipe: Transmute Primal Air to Fire (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35341)),	-- Satin Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35407)),	-- Savage Plate Chestpiece
 							applyclassicphase(TBC_PHASE_TWO, i(35381)),	-- Seer's Linked Armor
@@ -2220,8 +2242,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.4, 68.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight
-							i(21099),	-- Recipe: Smoked Sagefish
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
 					n(19049, {	-- Karokka  <Alchemy Trainer>
@@ -2402,11 +2424,11 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35335)),	-- Mooncloth Mitts
 							applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
 							i(30833),	-- Pattern: Cloak of Arcane Evasion
-							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers
-								["timeline"] = { "removed 4.0.1" },
+							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
+								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
-							i(22910),	-- Recipe: Elixir of Major Shadow Power
-							i(31357, {	-- Recipe: Flask of Chromatic Resistance
+							i(22910),	-- Recipe: Elixir of Major Shadow Power (RECIPE!)
+							i(31357, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(30835),	-- Salvager's Hauberk
@@ -2588,15 +2610,15 @@ root(ROOTS.Zones, {
 							-- #endif
 							i(29128),	-- Lightwarden's Band
 							i(29123),	-- Medallion of the Lightbearer
-							i(29704),	-- Pattern: Blastguard Belt
-							i(29703),	-- Pattern: Blastguard Boots
-							i(29702),	-- Pattern: Blastguard Pants
+							i(29704),	-- Pattern: Blastguard Belt (RECIPE!)
+							i(29703),	-- Pattern: Blastguard Boots (RECIPE!)
+							i(29702),	-- Pattern: Blastguard Pants (RECIPE!)
 							i(30842),	-- Pattern: Flameheart Bracers
 							i(30843),	-- Pattern: Flameheart Gloves
 							i(30844),	-- Pattern: Flameheart Vest
-							i(29693),	-- Pattern: Flamescale Belt
-							i(29691),	-- Pattern: Flamescale Boots
-							i(29689),	-- Pattern: Flamescale Leggings
+							i(29693),	-- Pattern: Flamescale Belt (RECIPE!)
+							i(29691),	-- Pattern: Flamescale Boots (RECIPE!)
+							i(29689),	-- Pattern: Flamescale Leggings (RECIPE!)
 							i(24295),	-- Pattern: Golden Spellthread
 							i(24293),	-- Pattern: Silver Spellthread
 							i(25721),	-- Pattern: Vindicator's Armor Kit (RECIPE!)
@@ -2628,12 +2650,12 @@ root(ROOTS.Zones, {
 							}),
 							-- #endif
 							i(29134),	-- Gauntlets of the Chosen
-							i(29701),	-- Pattern: Enchanted Clefthoof Boots
-							i(29700),	-- Pattern: Enchanted Clefthoof Gloves
-							i(29698),	-- Pattern: Enchanted Clefthoof Leggings
-							i(29684),	-- Pattern: Enchanted Felscale Boots
-							i(29682),	-- Pattern: Enchanted Felscale Gloves
-							i(29677),	-- Pattern: Enchanted Felscale Leggings
+							i(29701),	-- Pattern: Enchanted Clefthoof Boots (RECIPE!)
+							i(29700),	-- Pattern: Enchanted Clefthoof Gloves (RECIPE!)
+							i(29698),	-- Pattern: Enchanted Clefthoof Leggings (RECIPE!)
+							i(29684),	-- Pattern: Enchanted Felscale Boots (RECIPE!)
+							i(29682),	-- Pattern: Enchanted Felscale Gloves (RECIPE!)
+							i(29677),	-- Pattern: Enchanted Felscale Leggings (RECIPE!)
 							i(25722),	-- Pattern: Magister's Armor Kit (RECIPE!)
 							i(24292),	-- Pattern: Mystic Spellthread
 							i(24294),	-- Pattern: Runic Spellthread
@@ -2641,7 +2663,7 @@ root(ROOTS.Zones, {
 							i(23598),	-- Plans: Enchanted Adamantite Boots (RECIPE!)
 							i(23599),	-- Plans: Enchanted Adamantite Breastplate (RECIPE!)
 							i(23600),	-- Plans: Enchanted Adamantite Leggings (RECIPE!)
-							i(22908),	-- Recipe: Elixir of Major Firepower
+							i(22908),	-- Recipe: Elixir of Major Firepower (RECIPE!)
 							i(29125),	-- Retainer's Blade
 							i(29131),	-- Retainer's Leggings
 							i(29132),	-- Scryer's Bloodgem
@@ -2738,7 +2760,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.8, 20.8, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(23574, {	-- Recipe: Transmute Primal Might
+							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -3401,14 +3423,4 @@ for i,o in ipairs(OLUS_GROUPS) do
 	end
 	table.insert(TIER_FIVE_GROUPS, o);
 end
--- #endif
-
--- #if AFTER TBC
-root(ROOTS.HiddenQuestTriggers, m(OUTLAND, {
-	m(SHATTRATH_CITY, {
-		q(9989, {	-- BETA Alien Spirits [triggers when completing 10917 "The Outcasts Plight"]
-			i(28499),	-- Arakkoa Hunter's Supplies
-		}),
-	}),
-}));
 -- #endif

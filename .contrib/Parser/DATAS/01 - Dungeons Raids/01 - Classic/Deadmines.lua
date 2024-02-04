@@ -5,6 +5,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	-- #if BEFORE MOP
 	["lore"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
 	-- #endif
+	["zone-text-areaID"] = 1581,	-- "The Deadmines" now points to the Deadmines.
 	-- #if AFTER CATA
 	["coords"] = {
 		{ 25.6, 51.0, 55 },	-- Deadmines, The Deadmines [Westfall]
@@ -308,23 +309,32 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["coord"] = { 44.0, 78.3, WESTFALL },
 				-- #else
 				["coords"] = {
-					{ 41.0, 76.6, WESTFALL },
-					{ 42.6, 76.6, WESTFALL },
-					{ 42.8, 79.0, WESTFALL },
+					{ 57.4, 42.9, 55 },
+					{ 46.8, 47.8, 55 },
+					{ 61.7, 65.8, 55 },
 				},
 				-- #endif
 				["groups"] = {
+					i(1933, {	-- Staff of Conjuring
+						["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					}),
 					i(3902, {	-- Staff of Nobles
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					}),
 					-- #if BEFORE 4.0.3
+					i(5967),	-- Girdle of Nobility
+					-- #elseif AFTER 10.1.7
 					i(5967),	-- Girdle of Nobility
 					-- #endif
 				},
 			}),
 			n(626, {	-- Foreman Thistlenettle
 				["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
+				-- #if BEFORE CATA
 				["coord"] = { 42.2, 82.6, WESTFALL },
+				-- #else
+				["coord"] = { 55.8, 91.2, 55 },
+				-- #endif
 				["groups"] = {
 					i(1875),	-- Thistlenettle's Badge
 					i(2167),	-- Foreman's Gloves
@@ -338,18 +348,18 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["coord"] = { 42.2, 79.9, WESTFALL },
 				-- #else
 				["coords"] = {
-					{ 52.8, 54.6, WESTFALL },
-					{ 56.2, 67.8, WESTFALL },
-					{ 41.4, 56.6, WESTFALL },
-					{ 29.6, 61.4, WESTFALL },
+					{ 52.8, 54.6, 55 },
+					{ 56.2, 67.8, 55 },
+					{ 41.4, 56.6, 55 },
+					{ 29.6, 61.4, 55 },
 				},
 				-- #endif
 				["groups"] = {
 					i(3019, {	-- Noble's Robe
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 09.09.2023 ATT Discord
 					}),
 					i(4660, {	-- Walking Boots
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					}),
 				},
 			}),
@@ -401,24 +411,55 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			-- #endif
 			i(1928, {	-- Defias Mage Staff
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+				-- #if BEFORE 4.0.3
 				["cr"] = 1726,	-- Defias Magician
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Blood Wizards or Defias Pirates which are located on the boat near the end of the dungeon.",
+				["crs"] = {
+					48417,	-- Blood Wizard
+					48522,	-- Defias Pirate
+				},
+				-- #endif
 			}),
 			i(1925, {	-- Defias Rapier
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 1725,	-- Defias Watchman
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
+				["cr"] = 48522,	-- Defias Pirate
+				-- #endif
 			}),
 			i(1943, {	-- Goblin Mail Leggings
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 3947,	-- Goblin Shipbuilder
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["crs"] = {
+					48279,	-- Goblin Overseer	-- Not 100% sure
+					48439,	-- Goblin Engineer
+				},
+				-- #endif
 			}),
 			i(1936, {	-- Goblin Screwdriver
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 622,	-- Goblin Engineer
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["cr"] = 48279,	-- Goblin Overseer
+				-- #endif
 			}),
 			i(1944, {	-- Metalworking Gloves
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 1731,	-- Goblin Craftsman
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["cr"] = 48280,	-- Goblin Craftsman
+				-- #endif
 			}),
 			i(1894, {	-- Miners' Union Card
 				["crs"] = {
@@ -434,6 +475,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					48522,	-- Defias Pirate
 				},
 				-- #else
+				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
 				["cr"] = 657,	-- Defias Pirate
 				-- #endif
 			}),
@@ -490,12 +532,21 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["cr"] = 824,	-- Defias Digger
 				-- #endif
 			}),
-			i(6994, {	-- Whitestone Oak Lumber
-				["cr"] = 641,	-- Goblin Woodcarver
-			}),
 			i(1945, {	-- Woodworking Gloves
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 641,	-- Goblin Woodcarver
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins or Oaf's Lackey between 1st and 2nd boss.",
+				["cr"] = 48445,	-- Oaf Lackey
+				-- #endif
+			}),
+			i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
+				-- #if BEFORE 4.0.3
+				["cr"] = 657,	-- Defias Pirate
+				-- #else
+				["cr"] = 48522,	-- Defias Pirate
+				-- #endif
 			}),
 		}),
 		-- #if AFTER CATA
@@ -542,6 +593,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					}),
 					-- #if BEFORE 4.0.3
 					i(5195),	-- Gold-flecked Gloves
+					-- #endif
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_ONE, i(210178)),	-- Schematic: Shredder Autosalvage Unit
 					-- #endif
 				},
 			}),

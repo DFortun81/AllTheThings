@@ -8,6 +8,7 @@ MARCH_OF_THE_TADPOLES_HEADER = createHeader({
 	eventID = EVENTS.MARCH_OF_THE_TADPOLES,
 	text = {
 		en = "March of the Tadpoles",
+		ru = "Марш головастиков",
 	},
 });
 root(ROOTS.Holidays, applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TADPOLES_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {
@@ -29,3 +30,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TAD
 		}),
 	})),
 }))));
+
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
+		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
+		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
+		q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
+		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
+	}),
+});

@@ -18,6 +18,12 @@ root(ROOTS.NeverImplemented, {
 				})),
 			}),
 			n(CRAFTABLES, {
+				tier(SL_TIER, {
+					-- 9.0.1
+					tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+						i(177279),	-- Gaunt Sinew
+					})),
+				}),
 				tier(DF_TIER, {
 					-- 10.0.0
 					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {

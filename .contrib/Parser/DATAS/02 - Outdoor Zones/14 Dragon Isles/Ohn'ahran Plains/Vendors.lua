@@ -11,11 +11,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
 				},
 			}),
-			n(194928, {	-- Hearthkeeper Erden
-				["coord"] = { 62.2, 35.7, OHNAHRAN_PLAINS },
+			n(195395, {	-- Hearthkeeper Bayon <Innkeeper>
+				["coord"] = { 59.6, 38.8, OHNAHRAN_PLAINS },
 				["g"] = {
-					i(199918),	-- Honey Plum Tart
-					i(199919),	-- Yak Milk Pudding
+					i(195455),	-- Argali Cheese
+					i(195459),	-- Argali Milk
+					i(194685),	-- Dragonspring Water
+					i(195466),	-- Frenzy and Chips
+					i(195463),	-- Seasoned Mudstomper Belly
+				},
+			}),
+			n(196161, {	-- Ilana <Innkeeper>
+				["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(196540),	-- Broadhoof Tail Poutine
+					i(200680),	-- Maruukai Mule
+					i(200681),	-- Ohn Lite
+					i(196585),	-- Plainswheat Pretzel
 				},
 			}),
 			n(192997, {	-- Ludo
@@ -43,6 +55,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 80.7, 58.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(193890),	-- Diced Meat
+				},
+			}),
+			n(186502, {	-- Sugarbough <Innkeeper>
+				["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(196584),	-- Acorn Milk
+					i(196583),	-- Greenberry Toast
+					i(195456),	-- Plains Flatbread
+					i(196582),	-- Syrup-Drenched Toast
 				},
 			}),
 			n(191608, {	-- The Great Swog
@@ -79,6 +100,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(202042),	-- Aquatic Shades (TOY!)
 						},
 					}),
+				},
+			}),
+			n(195557, {	-- Thora <Butcher>
+				["coord"] = { 62.0, 41.2, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(195462),	-- Fried Hornstrider Wings
+					i(195457),	-- Mammoth Jerky
+					i(194695),	-- Ramloaf
+					i(195466),	-- Frenzy and Chips
+					i(198441),	-- Thunderspine Tenders
 				},
 			}),
 			n(197725, {	-- Tuktu <Grillmaster>

@@ -17,26 +17,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- The Great Animal Spirit
+						crit(38792, {	-- The Great Animal Spirit
 							["sourceQuests"] = {
 								13568,	-- Spirit of the Moonstalker
 								13567,	-- Spirit of the Stag
 								13597,	-- Spirit of the Thistle Bear
 							},
 						}),
-						crit(2, {	-- The Shatterspear
+						crit(38791, {	-- The Shatterspear
 							["sourceQuest"] = 13515,	-- Ending the Threat
 						}),
-						crit(3, {	-- The Eye of All Storms
+						crit(38793, {	-- The Eye of All Storms
 							["sourceQuest"] = 13588,	-- The Eye of All Storms
 						}),
-						crit(4, {	-- The Devourer
+						crit(38794, {	-- The Devourer
 							["sourceQuest"] = 13891,	-- The Devourer of Darkshore
 						}),
-						crit(5, {	-- Consumed by Madness
+						crit(38795, {	-- Consumed by Madness
 							["sourceQuest"] = 13546,	-- The Defiler
 						}),
-						crit(6, {	-- The Battle for Darkshore
+						crit(38796, {	-- The Battle for Darkshore
 							["sourceQuest"] = 13897,	-- The Battle for Darkshore
 						}),
 					},
@@ -45,6 +45,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE WRATH
 					["description"] = "Explore Darkshore, revealing the covered areas of the world map.",
 					-- #endif
+				}),
+				ach(13251, {	-- In Teldrassil's Shadow
+					["timeline"] = { ADDED_8_1_0 },
+					["races"] = ALLIANCE_ONLY,
+					["_noautomation"] = true,
 				}),
 				ach(5453, {	-- Ghost in the Dark
 					["sourceQuest"] = 28529,	-- Writings of the Void
@@ -154,7 +159,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								2237,	-- Moonstalker Sire
 							},
 						}),
-						i(5387, {  -- Enchanted Moonstalker Cloak
+						i(5387, {	-- Enchanted Moonstalker Cloak
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -782,7 +787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
-						i(5486),	-- Recipe: Strider Stew
+						i(5486),	-- Recipe: Strider Stew (RECIPE!)
 						i(5477),	-- Strider Stew
 					},
 				}),
@@ -1543,6 +1548,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 731,	-- The Absent Minded Prospector (2/5)
 					["coord"] = { 37.4, 41.8, DARKSHORE },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
@@ -1608,7 +1614,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- Talisman of Corruption
-							["provider"] = { "i", 12355 },	-- Talisman of Corruption
+							["providers"] = {
+								{ "i",  12355 },	-- Talisman of Corruption
+								{ "o", 177624 },	-- Xabraxxis' Demon Bag
+							},
 							["coords"] = {
 								{ 52.30, 33.39, DARKSHORE },
 								{ 52.5, 33.5, DARKSHORE },
@@ -2145,6 +2154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1143,	-- The Tower of Althalaxx (8/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -2275,12 +2285,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(990, {	-- Trek to Ashenvale
 					["qg"] = 3694,	-- Sentinel Selarin
-					["altQuests"] = { 991 },	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
 					["sourceQuests"] = {
 						994,	-- Escape Through Force
 						995,	-- Escape Through Stealth
 					},
 					["coord"] = { 39.3, 43.5, DARKSHORE },
+					["description"] = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
@@ -2456,6 +2466,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.0, 61.2, DARKSHORE },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210451, {	-- Lady Sedorax
+					["coord"] = { 55.6, 36.6, DARKSHORE },
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+						i(209028, {	-- Spell Notes: BIVOLG NIMB
+							["classes"] = { MAGE },
+						}),
+					},
+				})),
+				-- #endif
 				n(7016, {	-- Lady Vespira
 					-- #if AFTER CATA
 					["coords"] = {
@@ -2475,10 +2501,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(6332, {	-- Black Pearl Ring
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6333, {	-- Spikelash Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2496,6 +2522,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 35.4, DARKSHORE },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210482, {	-- Paxnozz
+					["coord"] = { 48.8, 15.6, DARKSHORE },
+					["cost"] = {{ "i", 209047, 1 }},	-- Gnarled Harpoon
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(2175, {	-- Shadowclaw
 					-- #if AFTER CATA
 					["coords"] = {
@@ -2528,6 +2576,85 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209836, {	-- Althalaxx Orb
+					["provider"] = { "o", 409289 },	-- Strange Orb
+					["coord"] = { 56.2, 26.5, DARKSHORE },
+					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209047, {	-- Gnarled Harpoon
+					["provider"] = { "o", 408802 },	-- Gnarled Harpoon
+					["coords"] = {
+						{ 44.1, 20.8, DARKSHORE },
+						{ 47.3, 15.3, DARKSHORE },
+						{ 49.2, 16.2, DARKSHORE },
+						{ 48.3, 18.0, DARKSHORE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
+					["providers"] = {
+						{ "o", 414663 },	-- Shatterspear Idol
+						{ "i", 211482 },	-- Shatterspear Offering
+					},
+					["coord"] = { 59.2, 22.6, DARKSHORE },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(425215),	-- Engrave Chest - Twisted Faith
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209843, {	-- Nar'thalas Almanac, Vol. 74
+					["provider"] = { "o", 409496 },	-- Scrolls
+					["coord"] = { 59.6, 22.2, DARKSHORE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+					["provider"] = { "o", 414646 },	-- Remnant
+					["coord"] = { 30.4, 48.0, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
+					["providers"] = {
+						{ "n",   2234 },	-- Young Reef Crawler
+						{ "i", 209027 },	-- Crab Treats
+					},
+					["description"] = "Use Crab Treats on a young reef crawler to receive this rune.",
+					["coord"] = { 36.4, 54.2, DARKSHORE },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						recipe(410110),	-- Engrave Gloves - Beast Mastery
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 414532 },	-- Clliffspring Chest (mispelled?!)
+						{ "i", 211471 },	-- Cliffspring Key
+					},
+					["coord"] = { 56.3, 34.9, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 414624 },	-- Lighthouse Stash
+					["coord"] = { 32.8, 37.1, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(33980, {	-- Apothecary Furrows
 					["coord"] = { 57.2, 33.8, DARKSHORE },
@@ -2543,11 +2670,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.6, 20.6, DARKSHORE },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(3428),	-- Common Grey Shirt
-						i(16059),	-- Common Brown Shirt
-						i(16060),	-- Common White Shirt
-					},
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					}},
 				}),
 				n(4307, {	-- Heldan Galesong <Fisherman>
 					["coord"] = { 37.0, 56.4, DARKSHORE },
@@ -2555,10 +2682,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(5528),	-- Recipe: Clam Chowder
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout
+						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					},
 					-- #endif
 				}),
@@ -2567,7 +2694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5485, {	-- Recipe: Fillet of Frenzy
+						i(5485, {	-- Recipe: Fillet of Frenzy (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Added to Trainers
 						}),
 					},
@@ -2597,6 +2724,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(3173, {	-- Bear Meat
+					["coord"] = { 48.6, 31.8, DARKSHORE },
+					["crs"] = {
+						2164,	-- Rabid Thistle Bear
+						2163,	-- Thistle Bear
+						2165,	-- Grizzled Thistle Bear
+					},
+				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211471, {	-- Cliffspring Key
+					["coord"] = { 55.8, 34.2, DARKSHORE },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2179,	-- Stormscale Wave Rider
+						2180,	-- Stormscale Siren
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209027, {	-- Crab Treats
+					["coord"] = { 39.8, 54.6, DARKSHORE },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2167,	-- Blackwood Pathfinder
+						2324,	-- Blackwood Windtalker
+						2171,	-- Blackwood Shaman
+						2168,	-- Blackwood Warrior
+						2169,	-- Blackwood Totemic
+						2170,	-- Blackwood Ursa
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["coord"] = { 51.4, 38, DARKSHORE },
+					["classes"] = { DRUID },
+					["cr"] = 6788,	-- Den Mother
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
+				-- #endif
 				i(5332, {	-- Glowing Cat Figurine
 					["cr"] = 3619,	-- Ghost Saber
 				}),
@@ -2610,6 +2777,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2337,	-- Dark Strand Voidcaller
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
+					["coord"] = { 57.0, 26.4, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["cr"] = 2336,	-- Dark Strand Fanatic
+					["groups"] = {
+						recipe(403932),	-- Engrave Chest - Master Channeler
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
+					["coords"] = {
+						{ 57.6, 26.0, DARKSHORE },
+						{ 52.6, 33.8, DARKSHORE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						3662,	-- Delmanis the Hated
+						10373,	-- Xabraxxis
+					},
+					["groups"] = {
+						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(211482, {	-- Shatterspear Offering
+					["coord"] = { 58.8, 20.6, DARKSHORE },
+					["classes"] = { PRIEST },
+					["crs"] = {
+						2181,	-- Stormscale Myrmidon
+						2182,	-- Stormscale Sorceress
+						2183,	-- Stormscale Warrior
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				i(5568, {	-- Smooth Pebble
 					["timeline"] = { "deleted 4.0.1" },

@@ -6,16 +6,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 		n(PRIMAL_STORMS, {
 			n(ACHIEVEMENTS, {
 				ach(17540, {	-- Under the Weather
-					crit(1, {	-- Air
+					crit(58567, {	-- Air
 						["_npcs"] = { 198914 },	-- Han'thul
 					}),
-					crit(2, {	-- Earth
+					crit(58568, {	-- Earth
 						["_npcs"] = { 198915 },	-- Khirna Cragheart
 					}),
-					crit(3, {	-- Fire
+					crit(58569, {	-- Fire
 						["_npcs"] = { 198916 },	-- Fael'lin
 					}),
-					crit(4, {	-- Water
+					crit(58570, {	-- Water
 						["_npcs"] = { 198917 },	-- Shukoro Rapidstamer
 					}),
 				}),

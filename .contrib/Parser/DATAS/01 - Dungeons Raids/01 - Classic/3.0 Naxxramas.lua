@@ -26,6 +26,7 @@ applyclassicphase(PHASE_SIX,
 		["lore"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		-- #endif
 		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3456,	-- Naxxramas
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 		["timeline"] = { "removed 3.0.2" },
 		-- #endif
@@ -1932,30 +1933,30 @@ applyclassicphase(PHASE_SIX,
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = BLACKSMITHING,
 									}),
-									{
-										["itemID"] = 22698,	-- Pattern: Icy Scale Bracers
+									r(28224, {	-- Icy Scale Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22696,	-- Pattern: Icy Scale Breastplate
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22697,	-- Pattern: Icy Scale Gauntlets
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28222, {	-- Icy Scale Breastplate (RECIPE!)
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28223, {	-- Icy Scale Gauntlets (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22695,	-- Pattern: Polar Bracers
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28221, {	-- Polar Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22694,	-- Pattern: Polar Gloves
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28220, {	-- Polar Gloves (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22692,	-- Pattern: Polar Tunic
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-									},
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28219, {	-- Polar Tunic (RECIPE!)
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = LEATHERWORKING,
+									}),
 								},
 							}),
 							n(16061, {	-- Instructor Razuvious

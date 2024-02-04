@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4899, {	-- Loch Modan Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Road to Thelsamar
 							["sourceQuests"] = {
@@ -47,6 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -97,6 +99,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208838, {	-- Dark Iron Lockbox
+						["coord"] = { 56.6, 14.0, LOCH_MODAN },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1222,	-- Dark Iron Sapper
+							1169,	-- Dark Iron Insurgent
+						},
+						["groups"] = {
+							i(208771, {	-- Rune of Blade Dance
+								["classes"] = { ROGUE },
+								["groups"] = {
+									recipe(400099),	-- Engrave Pants - Blade Dance
+								},
+							}),
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
@@ -292,7 +317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["sourceQuest"] = 13636,	-- Stormpike's Orders
+					-- ["sourceQuest"] = 13636,	-- Stormpike's Orders [Not Required, Discord 2023-7-31]
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -416,23 +441,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(1655, {	-- Bailor's Ore Shipment
-					["qg"] = 6241,	-- Bailor Stonehand
-					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
-					["coord"] = { 36.0, 45.0, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-					["repeatable"] = true,
-					["lvl"] = 20,
-					["groups"] = {
-						objective(1, {	-- 0/1 Jordan's Ore Shipment
-							["provider"] = { "i", 6992 },	-- Jordan's Ore Shipment
-							["coord"] = { 71.6, 21.4, LOCH_MODAN },
-						}),
-						i(6993),	-- Jordan's Refined Ore Shipment
-					},
-				}),
 				q(26147, {	-- Bigger and Uglier
 					["qg"] = 1090,	-- Mountaineer Wallbang
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands
@@ -463,19 +471,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bingles' Wrench
-							["provider"] = { "i", 7343 },	-- Bingles' Wrench
+							["providers"] = {
+								{ "i",   7343 },	-- Bingles' Wrench
+								{ "o", 104564 },	-- Bingles's Toolbucket
+							},
 							["coord"] = { 48.8, 30.0, LOCH_MODAN },
 						}),
 						objective(2, {	-- 0/1 Bingles' Screwdriver
-							["provider"] = { "i", 7345 },	-- Bingles' Screwdriver
+							["providers"] = {
+								{ "i",   7345 },	-- Bingles' Screwdriver
+								{ "o", 104569 },	-- Bingles's Toolbucket
+							},
 							["coord"] = { 48.5, 20.6, LOCH_MODAN },
 						}),
 						objective(3, {	-- 0/1 Bingles' Hammer
-							["provider"] = { "i", 7346 },	-- Bingles' Hammer
+							["providers"] = {
+								{ "i",   7346 },	-- Bingles' Hammer
+								{ "o", 104574 },	-- Bingles's Toolbucket
+							},
 							["coord"] = { 51.8, 24.3, LOCH_MODAN },
 						}),
 						objective(4, {	-- 0/1 Bingles' Blastencapper
-							["provider"] = { "i", 7376 },	-- Bingles' Blastencapper
+							["providers"] = {
+								{ "i",   7376 },	-- Bingles' Blastencapper
+								{ "o", 104575 },	-- Bingles's Blastencapper
+							},
 							["coord"] = { 54.3, 26.5, LOCH_MODAN },
 						}),
 						i(12522, {	-- Bingles' Flying Gloves
@@ -542,7 +562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1693,	-- Loch Crocolisk
 							},
 						}),
-						i(3678),	-- Recipe: Crocolisk Steak
+						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
 						i(2240, {	-- Rugged Cape
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -625,7 +645,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/4 Miners' Gear
-							["provider"] = { "i", 2640 },	-- Miners' Gear
+							["providers"] = {
+								{ "i", 2640 },	-- Miners' Gear
+								{ "o", 271 },	-- Miners' League Crates
+							},
 						}),
 						i(3160, {	-- Ironplate Buckler
 							["timeline"] = { "removed 4.0.3" },
@@ -1163,10 +1186,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1339,	-- Mountaineer Stormpike's Task
 					["coord"] = { 24.7, 18.3, LOCH_MODAN },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(13636, {	-- Stormpike's Orders
+				q(13636, {	-- Stormpike's Orders [TODO: confirm if breadcrumb]
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1282,7 +1306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 7,
 					["groups"] = {
 						i(3220),	-- Blood Sausage
-						i(3679),	-- Recipe: Blood Sausage
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					},
 				}),
 				q(26860, {	-- Thelsamar Blood Sausages
@@ -1291,7 +1315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3679),	-- Recipe: Blood Sausage
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					},
 				}),
 				q(27025, {	-- Thistle While You Work
@@ -1465,10 +1489,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1938, {	-- Block Mallet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 						i(1215, {	-- Support Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1517,6 +1541,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 71.6, 21.0, LOCH_MODAN },
 					},
 					-- #endif
+					["groups"] = {
+						i(2821, {	-- Mo'grosh Masher
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+						}),
+					},
 				}),
 				n(45404, {	-- Geoshaper Maren
 					["coord"] = { 50.0, 24.0, LOCH_MODAN },
@@ -1531,13 +1560,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209958, {	-- Graix
+					["provider"] = { "n", 209954 },	-- Demonic Remains
+					["coord"] = { 72.6, 68.8, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
 				-- #endif
 				n(45398, {	-- Grizlak <Associate Troggwhacker>
 					["coord"] = { 35.6, 15.6, LOCH_MODAN },
@@ -1555,13 +1600,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2284, {	-- Rat Cloth Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(6195, {	-- Wax-polished Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210107, {	-- Kackle
+					["coord"] = { 55.0, 55.4, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				n(2476, {  -- Large Loch Crocolisk / Gosh-Haldir [CATA+]
 					["coords"] = {
@@ -1572,10 +1632,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1606,10 +1666,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2241, {	-- Desperado Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(3571, {	-- Trogg Beater
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1662,14 +1722,104 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["provider"] = { "o", 408004 },	-- Tangled Blight Pile
+					["coord"] = { 71.8, 21.6, LOCH_MODAN },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
+					["coord"] = { 36.6, 20.8, LOCH_MODAN },
+					["cost"] = {{ "i", 208823, 1 }},	-- Offering Coin
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(425215),	-- Engrave Chest - Twisted Faith
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
+					["coord"] = { 54.2, 27.0, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(208754, {	-- Spell Notes: TENGI RONEERA
+							["classes"] = { MAGE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+					["provider"] = { "n", 209908 },	-- Heretic Idol
+					["description"] = "/kneel at the statue for the rune.",
+					["coord"] = { 71.8, 27.6, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
+					["provider"] = { "o", 408014 },	-- Gnomish Tome
+					["coord"] = { 35.6, 48.9, LOCH_MODAN },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
+					["provider"] = { "o", 407918 },	-- Empty Trophy Display
+					["coord"] = { 83.6, 65.5, LOCH_MODAN },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						recipe(410110),	-- Engrave Gloves - Beast Mastery
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
+					["providers"] = {
+						{ "n",   1224 },	-- Young Threshadon
+						{ "i", 208855 },	-- Rainbow Fin Albacore Chum
+					},
+					["description"] = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
+					["coord"] = { 44.8, 39.2, LOCH_MODAN },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 407731 },	-- Stonemason's Toolbox
+					["coord"] = { 46.5, 12.7, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
+					["provider"] = { "o", 409731 },	-- Scrolls
+					["coord"] = { 77.5, 14.1, LOCH_MODAN },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, o(407850, {	-- Sunken Reliquary
+					["coord"] = { 36.8, 91.4, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(208851, {	-- Libram of Justice
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410001),	-- Engrave Gloves - Hand of Reckoning
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(1214, {	-- Aldren Cordon <Clothier>
 					["coord"] = { 64.8, 66.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					}},
 					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Grey Shirt
-						i(16060),	-- Common White Shirt
 						i(4782, {	-- Solstice Robe
 							["isLimited"] = true,
 						}),
@@ -1694,7 +1844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.6, 49.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6892),	-- Recipe: Smoked Bear Meat
+						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 					},
 				}),
 				n(954, {	-- Kat Sampson <Leather Armor Merchant>
@@ -1713,11 +1863,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.4, 39.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6329),	-- Recipe: Loch Frenzy Delight
-						i(6328),	-- Recipe: Longjaw Mud Snapper
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(208855, {	-- Rainbow Fin Albacore Chum
+							["classes"] = { DRUID },
+							["cost"] = 526,	-- 5s 26c
+						})),
+						-- #endif
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6329),	-- Recipe: Loch Frenzy Delight (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(3291, {	-- Greishan Ironstove <Traveling Merchant>
+					["coords"] = {
+						{ 23.0, 70.4, LOCH_MODAN },
+						{ 27.6, 65.8, LOCH_MODAN },
+						{ 30.6, 58.0, LOCH_MODAN },
+						{ 34.6, 47.2, LOCH_MODAN },
+						{ 26.6, 22.6, LOCH_MODAN },
+					},
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(208833, {	-- Malevolent Pie
+							["classes"] = { WARLOCK },
+							["cost"] = 526,	-- 5s 26c
+							["groups"] = {
+								i(208750, {	-- Rune of Channeling
+									["classes"] = { WARLOCK },
+									["groups"] = {
+										recipe(403932),	-- Engrave Chest - Master Channeler
+									},
+								}),
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(167, {	-- Morhan Coppertongue <Metalsmith>
 					["coord"] = { 34.0, 46.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
@@ -1758,10 +1939,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.6, 63.2, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1769,56 +1950,318 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(5319, {	-- Bashing Pauldrons
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
+					["coords"] = {
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 1186,  -- Black Bear
+					["coords"] = {
+						{ 40.6, 10.4, LOCH_MODAN },
+						{ 24.8, 13.2, LOCH_MODAN },
+						{ 30.0, 27.4, LOCH_MODAN },
+						{ 40.0, 25.0, LOCH_MODAN },
+						{ 29.2, 46.0, LOCH_MODAN },
+						{ 37.8, 40.0, LOCH_MODAN },
+						{ 41.6, 48.0, LOCH_MODAN },
+						{ 41.6, 58.4, LOCH_MODAN },
+						{ 47.2, 65.6, LOCH_MODAN },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208843, {	-- Battle Totem
+					["timeline"] = { "removed 2.0.1" },
+					["coords"] = {
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1180,	-- Mo'grosh Brute
+						1179,	-- Mo'grosh Enforcer
+						1183,	-- Mo'grosh Mystic
+						1178,	-- Mo'grosh Ogre
+						1181,	-- Mo'grosh Shaman
+					},
+				})),
+				-- #endif
+				-- #if ANYCLASSIC
+				i(3173, {	-- Bear Meat
+					["coord"] = { 29.2, 53.0, LOCH_MODAN },
+					["crs"] = {
+						1186,	-- Elder Black Bear
+						1189,	-- Black Bear Patriarch
+						1188,	-- Grizzled Black Bear
+						1225,	-- Ol' Sooty
+					},
+				}),
+				i(3172, {	-- Boar Intestines
+					["coord"] = { 37.0, 34.4, LOCH_MODAN },
+					["crs"] = {
+						1190,	-- Mountain Boar
+						1191,	-- Mangy Mountain Boar
+						1192,	-- Elder Mountain Boar
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208854, {	-- Chewed Spell Notes
+					["coords"] = {
+						{ 29.8, 84.6, LOCH_MODAN },
+						{ 36.6, 84.4, LOCH_MODAN },
+						{ 49.0, 21.6, LOCH_MODAN },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["cr"] = 1166,  -- Stonesplinter Seer
+				})),
+				-- #endif
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 37.0, 34.4, LOCH_MODAN },
+					["crs"] = {
+						1190,	-- Mountain Boar
+						1191,	-- Mangy Mountain Boar
+						1192,	-- Elder Mountain Boar
+					},
+				}),
+				-- #endif
 				i(2823, {	-- Mo'grosh Can Opener
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1180,  -- Mo'grosh Brute
+					["coords"] = {
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+					--	44760,	-- Mo'grosh Earthbender	-- Is not confirmed
+						44758,	-- Mo'grosh Darkmauler
+					},
+					["coords"] = {
+						{ 71.4, 21.2, LOCH_MODAN },
+						{ 68.8, 22.4, LOCH_MODAN },
+						{ 68.8, 25.4, LOCH_MODAN },
+						{ 74.8, 25.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					-- #endif
 				}),
 				i(2821, {	-- Mo'grosh Masher
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 					["crs"] = {
 						14267,  -- Emogg the Crusher
 						1179,  -- Mo'grosh Enforcer
 					},
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 74.2, 28.4, LOCH_MODAN },
+						{ 69.4, 22.2, LOCH_MODAN },
+						{ 64.4, 20.6, LOCH_MODAN },
+					},
+					["cr"] = 44758,	-- Mo'grosh Darkmauler
+					["coords"] = {
+						{ 71.4, 21.2, LOCH_MODAN },
+						{ 68.8, 22.4, LOCH_MODAN },
+						{ 68.8, 25.4, LOCH_MODAN },
+						{ 74.8, 25.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					-- #endif
 				}),
 				i(2822, {	-- Mo'grosh Toothpick
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1178,  -- Mo'grosh Ogre
+					["coords"] = {
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						44760,	-- Mo'grosh Earthbender
+					--	44758,	-- Mo'grosh Darkmauler	-- Is not confirmed
+					},
+					["coords"] = {
+						{ 71.4, 21.2, LOCH_MODAN },
+						{ 68.8, 22.4, LOCH_MODAN },
+						{ 68.8, 25.4, LOCH_MODAN },
+						{ 74.8, 25.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208823, {	-- Offering Coin
+					["timeline"] = { "removed 2.0.1" },
+					["coords"] = {
+						{ 35.6, 20.0, LOCH_MODAN },
+						{ 35.8, 27.4, LOCH_MODAN },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						1175,	-- Tunnel Rat Digger
+						1174,	-- Tunnel Rat Geomancer
+						1177,	-- Tunnel Rat Surveyor
+					},
+				})),
+				-- #endif
 				i(4949, {	-- Orcish Cleaver
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 7170,  -- Thragomm <Horde Runner>
+					["coords"] = {
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 1186,  -- Black Bear
+					["coords"] = {
+						{ 40.6, 10.4, LOCH_MODAN },
+						{ 24.8, 13.2, LOCH_MODAN },
+						{ 30.0, 27.4, LOCH_MODAN },
+						{ 40.0, 25.0, LOCH_MODAN },
+						{ 29.2, 46.0, LOCH_MODAN },
+						{ 37.8, 40.0, LOCH_MODAN },
+						{ 41.6, 48.0, LOCH_MODAN },
+						{ 41.6, 58.4, LOCH_MODAN },
+						{ 47.2, 65.6, LOCH_MODAN },
+					},
+					-- #endif
 				}),
 				i(2283, {	-- Rat Cloth Belt
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 35.2, 27.6, LOCH_MODAN },
+						{ 35.2, 27.6, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 36.8, 16.6, LOCH_MODAN },
+						{ 32.0, 12.0, LOCH_MODAN },
+						{ 29.6, 15.0, LOCH_MODAN },
+					},
+					-- #endif
 				}),
-				i(2700, {	-- Recipe: Succulent Pork Ribs
+				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1176,  -- Tunnel Rat Forager
 						1202,  -- Tunnel Rat Kobold
 					},
+					["coords"] = {
+						{ 38.4, 16.0, LOCH_MODAN },
+						{ 32.6, 26.4, LOCH_MODAN },
+						{ 32.2, 14.6, LOCH_MODAN },
+						{ 27.6, 44.8, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 1176,  -- Tunnel Rat Forager
+					["coords"] = {
+						{ 38.4, 16.0, LOCH_MODAN },
+						{ 32.6, 26.4, LOCH_MODAN },
+						{ 32.2, 14.6, LOCH_MODAN },
+					},
+					-- #endif
 				}),
 				i(2282, {	-- Rodentia Shortsword
-					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						1173,  -- Tunnel Rat Scout
 						1172,  -- Tunnel Rat Vermin
 					},
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 28.6, 45.0, LOCH_MODAN },
+						{ 25.0, 32.6, LOCH_MODAN },
+						{ 37.4, 16.6, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 28.2, 36.0, LOCH_MODAN },
+						{ 25.2, 26.2, LOCH_MODAN },
+						{ 19.8, 46.8, LOCH_MODAN },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
+					["provider"] = { "i", 208843 },	-- Battle Totem
+					["description"] = "You can challenge him to a duel (as to not fight his adds) with a Battle Totem.",
+					["coords"] = {
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
+					["groups"] = {
+						recipe(403489),	-- Engrave Gloves - Endless Rage
+					},
+				})),
+				-- #endif
+				-- #if BEFORE 4.0.3
+				-- Moved to Searing Gorge in 10.1.7
 				i(2274, {	-- Sapper's Gloves
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1222,  -- Dark Iron Sapper
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208847, {	-- Skull-Shaped Geode
+					["coord"] = { 33.2, 73.8, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						1164,	-- Stonesplinter Bonesnapper
+						1162,	-- Stonesplinter Scout
+						1161,	-- Stonesplinter Trogg
+					},
+					["groups"] = {
+						i(208778, {	-- Rune of Quick Strike
+							["provider"] = { "i", 208848 },	-- Cracked Skull-Shaped Geode
+							["description"] = "Use the Skull-Shaped Geode on a Skullthumper to crack it and find this rune within.",
+							["classes"] = { WARRIOR },
+							["cr"] = 1163,	-- Stonesplinter Skullthumper
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				i(2265, {	-- Stonesplinter Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1163,  -- Stonesplinter Skullthumper
+					["coords"] = {
+						{ 51.6, 24.6, LOCH_MODAN },
+						{ 48.8, 29.6, LOCH_MODAN },
+						{ 36.8, 84.8, LOCH_MODAN },
+						{ 29.8, 84.0, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						1161,	-- Stonesplinter Trogg
+						1162,	-- Stonesplinter Scout
+					},
+					["coords"] = {
+						{ 31.6, 77.0, LOCH_MODAN },
+						{ 31.4, 80.6, LOCH_MODAN },
+						{ 29.6, 80.8, LOCH_MODAN },
+					},
+					-- #endif
 				}),
 				i(2268, {	-- Stonesplinter Blade
 					["crs"] = {
@@ -1829,12 +2272,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2266, {	-- Stonesplinter Dagger
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1166,  -- Stonesplinter Seer
+					["coords"] = {
+						{ 36.2, 86.0, LOCH_MODAN },
+						{ 30.0, 83.8, LOCH_MODAN },
+						{ 51.2, 23.6, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 1162,  -- Stonesplinter Scout
+					["coords"] = {
+						{ 40.2, 72.0, LOCH_MODAN },
+						{ 32.6, 71.8, LOCH_MODAN },
+						{ 29.4, 81.8, LOCH_MODAN },
+					},
+					-- #endif
 				}),
 				i(2267, {	-- Stonesplinter Mace
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1197,  -- Stonesplinter Shaman
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 54.6, 26.8, LOCH_MODAN },
+						{ 37.4, 92.2, LOCH_MODAN },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 35.2, 65.6, LOCH_MODAN },
+						{ 35.6, 60.4, LOCH_MODAN },
+					},
+					-- #endif
 				}),
 				i(5109, {	-- Stonesplinter Rags
 					["crs"] = {

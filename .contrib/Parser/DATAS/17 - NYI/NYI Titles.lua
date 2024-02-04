@@ -1,8 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
+-- #if AFTER 3.0.1
 root(ROOTS.NeverImplemented, {
 	filter(TITLES, {
 		tier(WOTLK_TIER, {
@@ -31,7 +30,6 @@ root(ROOTS.NeverImplemented, {
 				title(84),	-- <Name>, Hero of Orgrimmar
 				title(86),	-- <Name> of the Darkspear
 				title(60),	-- <Name> of the Ebon Blade
-				title(55),	-- <Name> of the Emerald Dream
 				title(54),	-- <Name> of the Ten Storms
 				title(87),	-- <Name> the Forsaken
 				title(82),	-- <Name> the Lion Hearted
@@ -72,6 +70,12 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 				title(480),	-- <Name>, Knight of Feathersworth
 			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				title(518),	-- <Name>, Honorary Historian
+			})),
 		}),
 	}),
 });
+-- #endif

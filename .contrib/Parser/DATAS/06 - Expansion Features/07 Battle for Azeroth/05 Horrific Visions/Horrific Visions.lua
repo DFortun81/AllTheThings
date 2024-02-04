@@ -26,10 +26,33 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				ach(14062, {	-- Horrific Vision of Stormwind
 					["maps"] = { 1470 },
 				}),
+				ach(14140, {	-- Mad World
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						14141,	-- Solo Nightmares - Stormwind
+						14142,	-- Solo Nightmares - Orgrimmar
+					}},
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+					["g"] = {
+						title(419, {	-- <Name>, the Faceless One
+							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+						}),
+					},
+				}),
 				ach(14143, {	-- Reeking of Visions
-					i(174463),	-- Reek (PET!)
-					crit(1),	-- The Even more Horrific Vision of Orgrimmar
-					crit(2),	-- The Even More Horrific Vision of Stormwind
+					["sym"] = {{"meta_achievement",
+						14065,	-- The Even More Horrific Vision of Orgrimmar
+						14064,	-- The Even More Horrific Vision of Stormwind
+					}},
+					["groups"] = {
+						i(174463),	-- Reek (PET!)
+					},
+				}),
+				ach(14141, {	-- Solo Nightmares - Stormwind
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+				}),
+				ach(14142, {	-- Solo Nightmares - Orgrimmar
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 				}),
 				ach(14169, {	-- Symphony of Masks
 					ach(14165),	-- Masked Soliloquy
@@ -124,42 +147,42 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["description"] = "You can only receive each tier of gear rewards once per week.  Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time.  After all tier rewards are looted for the week no more gear is given.",
 						["g"] = {
 							o(9999891,	{	-- Main Objective Only(420)
-								["description"] = "Rewards ilvl 420 loot.",
+								["description"] = "Rewards iLvl 420 loot.",
 								["questID"] = 57841,
 								["isWeekly"] = true,
 							}),
 							o(9999892,	{	-- Main Objective + 2 bonus
-								["description"] = "Rewards ilvl 430 loot.",
+								["description"] = "Rewards iLvl 430 loot.",
 								["questID"] = 57845,
 								["isWeekly"] = true,
 							}),
 							o(9999893,	{	-- Full Clear
-								["description"] = "Rewards ilvl 445 loot.",
+								["description"] = "Rewards iLvl 445 loot.",
 								["questID"] = 57842,
 								["isWeekly"] = true,
 							}),
 							o(9999894,	{	-- Full Clear + 1 Mask
-								["description"] = "Rewards ilvl 450 loot.",
+								["description"] = "Rewards iLvl 450 loot.",
 								["questID"] = 57846,
 								["isWeekly"] = true,
 							}),
 							o(9999895,	{	-- Full Clear + 2 Masks
-								["description"] = "Rewards ilvl 455 loot.",
+								["description"] = "Rewards iLvl 455 loot.",
 								["questID"] = 57843,
 								["isWeekly"] = true,
 							}),
 							o(9999896,	{	-- Full Clear + 3 Masks
-								["description"] = "Rewards ilvl 460 loot.",
+								["description"] = "Rewards iLvl 460 loot.",
 								["questID"] = 57847,
 								["isWeekly"] = true,
 							}),
 							o(9999897,	{	-- Full Clear + 4 Masks
-								["description"] = "Rewards ilvl 465 loot.",
+								["description"] = "Rewards iLvl 465 loot.",
 								["questID"] = 57844,
 								["isWeekly"] = true,
 							}),
 							o(9999898,	{	-- Full Clear + 5 Masks
-								["description"] = "Rewards ilvl 470 loot.",
+								["description"] = "Rewards iLvl 470 loot.",
 								["questID"] = 57848,
 								["isWeekly"] = true,
 							}),
@@ -294,7 +317,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						n(158157, {	-- Overlord Mathias Shaw
 							["description"] = "Assist Valeera with some Defias Company downsizing in Old Town.",
 							["g"] = {
-								i(174932),	-- Illusion: Void Edge -- Valeera
+								i(174932),	-- Illusion: Void Edge (ILLUSION!)
 								i(173289),	-- Pulsing Azerite Geode (Rank 2)
 							},
 						}),
@@ -326,27 +349,3 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(-10080, {	-- Horrific Visions
-			ach(14116),	-- All Bridges Burned
-			ach(14121),	-- Daring Defender
-			ach(14113),	-- Imagine a Dark, Dark World
-			ach(14122),	-- Long Trek Through Darkness
-			ach(14088),	-- Orgrimmar - Pained
-			ach(14090),	-- Orgrimmar - Dark Imagination
-			ach(14092),	-- Orgrimmar - Burned Bridge
-			ach(14099),	-- Orgrimmar - Daredevil
-			ach(14100),	-- Orgrimmar - Long Night
-			ach(14106),	-- Pained Expression
-			ach(14083),	-- Stormwind - Pained
-			ach(14084),	-- Stormwind - Dark Imagination
-			ach(14085),	-- Stormwind - Burned Bridge
-			ach(14086),	-- Stormwind - Daredevil
-			ach(14087),	-- Stormwind - Long Night
-			ach(13996),	-- The Dark Horde
-			ach(13995),	-- Twilight over the White City
-		}),
-	}),
-});

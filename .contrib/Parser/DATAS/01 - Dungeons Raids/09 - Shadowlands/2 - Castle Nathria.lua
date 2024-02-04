@@ -29,66 +29,66 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 		["g"] = {
 			n(ACHIEVEMENTS,  {
 				ach(14715, {	-- Castle Nathria
-					crit(1, { -- Shriekwing
+					crit(48950, {	-- Shriekwing
 						["_encounter"] = { 2393, LFR_RAID },
 					}),
-					crit(2, { -- Huntsman Altimor
+					crit(48951, {	-- Huntsman Altimor
 						["_encounter"] = { 2429, LFR_RAID },
 					}),
-					crit(3, { -- Sun King's Salvation
+					crit(48954, {	-- Sun King's Salvation
 						["_encounter"] = { 2422, LFR_RAID },
 					}),
-					crit(4, { -- Artificer Xy'mox
+					crit(48953, {	-- Artificer Xy'mox
 						["_encounter"] = { 2418, LFR_RAID },
 					}),
-					crit(5, { -- Hungering Destroyer
+					crit(48952, {	-- Hungering Destroyer
 						["_encounter"] = { 2428, LFR_RAID },
 					}),
-					crit(6, { -- Lady Inerva Darkvein
+					crit(48955, {	-- Lady Inerva Darkvein
 						["_encounter"] = { 2420, LFR_RAID },
 					}),
-					crit(7, { -- The Council of Blood
+					crit(48956, {	-- The Council of Blood
 						["_encounter"] = { 2426, LFR_RAID },
 					}),
-					crit(8, { -- Sludgefist
+					crit(48957, {	-- Sludgefist
 						["_encounter"] = { 2394, LFR_RAID },
 					}),
-					crit(9, { -- Stone Legion Generals
+					crit(48958, {	-- Stone Legion Generals
 						["_encounter"] = { 2425, LFR_RAID },
 					}),
-					crit(10, {-- Sire Denathrius
+					crit(48959, {	-- Sire Denathrius
 						["_encounter"] = { 2424, LFR_RAID },
 					}),
 				}),
 				ach(14717, {	-- Heroic: Castle Nathria
-					crit(1, { -- Shriekwing
+					crit(48970, {	-- Shriekwing
 						["_encounter"] = { 2393, HEROIC_RAID },
 					}),
-					crit(2, { -- Huntsman Altimor
+					crit(48971, {	-- Huntsman Altimor
 						["_encounter"] = { 2429, HEROIC_RAID },
 					}),
-					crit(3, { -- Sun King's Salvation
+					crit(48974, {	-- Sun King's Salvation
 						["_encounter"] = { 2422, HEROIC_RAID },
 					}),
-					crit(4, { -- Artificer Xy'mox
+					crit(48973, {	-- Artificer Xy'mox
 						["_encounter"] = { 2418, HEROIC_RAID },
 					}),
-					crit(5, { -- Hungering Destroyer
+					crit(48972, {	-- Hungering Destroyer
 						["_encounter"] = { 2428, HEROIC_RAID },
 					}),
-					crit(6, { -- Lady Inerva Darkvein
+					crit(48975, {	-- Lady Inerva Darkvein
 						["_encounter"] = { 2420, HEROIC_RAID },
 					}),
-					crit(7, { -- The Council of Blood
+					crit(48976, {	-- The Council of Blood
 						["_encounter"] = { 2426, HEROIC_RAID },
 					}),
-					crit(8, { -- Sludgefist
+					crit(48977, {	-- Sludgefist
 						["_encounter"] = { 2394, HEROIC_RAID },
 					}),
-					crit(9, { -- Stone Legion Generals
+					crit(48978, {	-- Stone Legion Generals
 						["_encounter"] = { 2425, HEROIC_RAID },
 					}),
-					crit(10, {-- Sire Denathrius
+					crit(48979, {	-- Sire Denathrius
 						["_encounter"] = { 2424, HEROIC_RAID },
 					}),
 				}),
@@ -128,98 +128,98 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				ach(14614),		-- Castle Vain
 				-- Fated
 				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of Nathria
-					crit(1, { -- Shriekwing
+					crit(53514, {	-- Shriekwing
 						["_encounter"] = { 2393, LFR_RAID },
 					}),
-					crit(2, { -- Huntsman Altimor
+					crit(53515, {	-- Huntsman Altimor
 						["_encounter"] = { 2429, LFR_RAID },
 					}),
-					crit(3, { -- Sun King's Salvation
+					crit(53516, {	-- Sun King's Salvation
 						["_encounter"] = { 2422, LFR_RAID },
 					}),
-					crit(4, { -- Artificer Xy'mox
+					crit(53517, {	-- Artificer Xy'mox
 						["_encounter"] = { 2418, LFR_RAID },
 					}),
-					crit(5, { -- Hungering Destroyer
+					crit(53518, {	-- Hungering Destroyer
 						["_encounter"] = { 2428, LFR_RAID },
 					}),
-					crit(6, { -- Lady Inerva Darkvein
+					crit(53519, {	-- Lady Inerva Darkvein
 						["_encounter"] = { 2420, LFR_RAID },
 					}),
-					crit(7, { -- The Council of Blood
+					crit(53520, {	-- The Council of Blood
 						["_encounter"] = { 2426, LFR_RAID },
 					}),
-					crit(8, { -- Sludgefist
+					crit(53521, {	-- Sludgefist
 						["_encounter"] = { 2394, LFR_RAID },
 					}),
-					crit(9, { -- Stone Legion Generals
+					crit(53522, {	-- Stone Legion Generals
 						["_encounter"] = { 2425, LFR_RAID },
 					}),
-					crit(10, {-- Sire Denathrius
+					crit(53523, {	-- Sire Denathrius
 						["_encounter"] = { 2424, LFR_RAID },
 					}),
 				})),
 				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Nathria
-					crit(1, { -- Shriekwing
+					crit(53524, {	-- Shriekwing
 						["_encounter"] = { 2393, HEROIC_RAID },
 					}),
-					crit(2, { -- Huntsman Altimor
+					crit(53525, {	-- Huntsman Altimor
 						["_encounter"] = { 2429, HEROIC_RAID },
 					}),
-					crit(3, { -- Sun King's Salvation
+					crit(53526, {	-- Sun King's Salvation
 						["_encounter"] = { 2422, HEROIC_RAID },
 					}),
-					crit(4, { -- Artificer Xy'mox
+					crit(53527, {	-- Artificer Xy'mox
 						["_encounter"] = { 2418, HEROIC_RAID },
 					}),
-					crit(5, { -- Hungering Destroyer
+					crit(53528, {	-- Hungering Destroyer
 						["_encounter"] = { 2428, HEROIC_RAID },
 					}),
-					crit(6, { -- Lady Inerva Darkvein
+					crit(53529, {	-- Lady Inerva Darkvein
 						["_encounter"] = { 2420, HEROIC_RAID },
 					}),
-					crit(7, { -- The Council of Blood
+					crit(53530, {	-- The Council of Blood
 						["_encounter"] = { 2426, HEROIC_RAID },
 					}),
-					crit(8, { -- Sludgefist
+					crit(53531, {	-- Sludgefist
 						["_encounter"] = { 2394, HEROIC_RAID },
 					}),
-					crit(9, { -- Stone Legion Generals
+					crit(53532, {	-- Stone Legion Generals
 						["_encounter"] = { 2425, HEROIC_RAID },
 					}),
-					crit(10, {-- Sire Denathrius
+					crit(53533, {	-- Sire Denathrius
 						["_encounter"] = { 2424, HEROIC_RAID },
 					}),
 				})),
 				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Nathria
-					crit(1, { -- Shriekwing
+					crit(53534, {	-- Shriekwing
 						["_encounter"] = { 2393, MYTHIC_RAID },
 					}),
-					crit(2, { -- Huntsman Altimor
+					crit(53535, {	-- Huntsman Altimor
 						["_encounter"] = { 2429, MYTHIC_RAID },
 					}),
-					crit(3, { -- Sun King's Salvation
+					crit(53536, {	-- Sun King's Salvation
 						["_encounter"] = { 2422, MYTHIC_RAID },
 					}),
-					crit(4, { -- Artificer Xy'mox
+					crit(53537, {	-- Artificer Xy'mox
 						["_encounter"] = { 2418, MYTHIC_RAID },
 					}),
-					crit(5, { -- Hungering Destroyer
+					crit(53538, {	-- Hungering Destroyer
 						["_encounter"] = { 2428, MYTHIC_RAID },
 					}),
-					crit(6, { -- Lady Inerva Darkvein
+					crit(53539, {	-- Lady Inerva Darkvein
 						["_encounter"] = { 2420, MYTHIC_RAID },
 					}),
-					crit(7, { -- The Council of Blood
+					crit(53540, {	-- The Council of Blood
 						["_encounter"] = { 2426, MYTHIC_RAID },
 					}),
-					crit(8, { -- Sludgefist
+					crit(53541, {	-- Sludgefist
 						["_encounter"] = { 2394, MYTHIC_RAID },
 					}),
-					crit(9, { -- Stone Legion Generals
+					crit(53542, {	-- Stone Legion Generals
 						["_encounter"] = { 2425, MYTHIC_RAID },
 					}),
-					crit(10, {-- Sire Denathrius
+					crit(53543, {	-- Sire Denathrius
 						["_encounter"] = { 2424, MYTHIC_RAID },
 					}),
 				})),
@@ -490,20 +490,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 					},
 				}),
 			}),
-			n(DROPS, {
-				i(179358, {	-- Remornia
-					["crs"] = {
-						167406,	-- Sire Denathrius
-						168156,	-- Remornia
-					},
-				}),
-				i(183395, {	-- Will of Remornia (PET!)
-					["crs"] = {
-						167406,	-- Sire Denathrius
-						168156,	-- Remornia
-					},
-				}),
-			}),
 			n(LEGENDARIES, {
 				e(2429, {	-- Huntsman Altimor
 					["crs"] = {
@@ -712,7 +698,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.04, LFR),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness
@@ -820,9 +806,23 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(184030),	-- Dreadfire Vessel
 						i(184029),	-- Manabound Mirror
 						i(184031),	-- Sanguine Vintage
+						i(179358),	-- Remornia
+						i(183395),	-- Will of Remornia (PET!)
 					},
 				}),
 			})),
+			d(NORMAL_PLUS_RAID, {
+				e(2424, {	-- Sire Denathrius
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
+					["g"] = {
+						i(179358),	-- Remornia
+						i(183395),	-- Will of Remornia (PET!)
+					},
+				}),
+			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
@@ -914,7 +914,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.03, NORMAL),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness
@@ -1051,7 +1051,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				e(2393, {	-- Shriekwing
 					["crs"] = { 164406 },	-- Shriekwing
 					["g"] = {
-						crit(1, {	-- Shriekwing
+						crit(48970, {	-- Shriekwing
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183034),	-- Cowled Batwing Cloak
@@ -1070,7 +1070,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						165067,	-- Margore
 					},
 					["g"] = {
-						crit(2, {	-- Huntsman Altimor
+						crit(48971, {	-- Huntsman Altimor
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183892),	-- Mystic Anima Spherule
@@ -1090,7 +1090,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						165805,	-- Shade of Kael'thas
 					},
 					["g"] = {
-						crit(3, {	-- Sun King's Salvation
+						crit(48974, {	-- Sun King's Salvation
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183893),	-- Abominable Anima Spherule
@@ -1108,7 +1108,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				e(2418, {	-- Artificer Xy'mox
 					["crs"] = { 166644 },	-- Artificer Xy'mox
 					["g"] = {
-						crit(4, {	-- Artificer Xy'mox
+						crit(48973, {	-- Artificer Xy'mox
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183888),	-- Apogee Anima Bead
@@ -1125,13 +1125,13 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				e(2428, {	-- Hungering Destroyer
 					["crs"] = { 164261 },	-- Hungering Destroyer
 					["g"] = {
-						crit(5, {	-- Hungering Destroyer
+						crit(48972, {	-- Hungering Destroyer
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.05, HEROIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness
@@ -1144,7 +1144,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				e(2420, {	-- Lady Inerva Darkvein
 					["crs"] = { 165521 },	-- Lady Inerva Darkvein
 					["g"] = {
-						crit(6, {	-- Lady Inerva Darkvein
+						crit(48975, {	-- Lady Inerva Darkvein
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183889),	-- Thaumaturgic Anima Bead
@@ -1164,7 +1164,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						166969,	-- Baroness Frieda
 					},
 					["g"] = {
-						crit(7, {	-- The Council of Blood
+						crit(48976, {	-- The Council of Blood
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183890),	-- Zenith Anima Spherule
@@ -1182,7 +1182,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				e(2394, {	-- Sludgefist
 					["crs"] = { 164407 },	-- Sludgefist
 					["g"] = {
-						crit(8, {	-- Sludgefist
+						crit(48977, {	-- Sludgefist
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(182999),	-- Rampaging Giant's Chestplate
@@ -1201,7 +1201,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						168113,	-- General Grashaal
 					},
 					["g"] = {
-						crit(9, {	-- Stone Legion Generals
+						crit(48978, {	-- Stone Legion Generals
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						i(183895, {	-- Apogee Anima Bead
@@ -1226,7 +1226,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						168156,	-- Remornia
 					},
 					["g"] = {
-						crit(10, {	-- Sire Denathrius
+						crit(48979, {	-- Sire Denathrius
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14460, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Ahead of the Curve: Sire Denathrius
@@ -1350,7 +1350,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.06, MYTHIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness
@@ -1492,7 +1492,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 	inst(1190, {	-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed
 
-		q(62949),	-- First kill of Sire Denthrius / First full clear ??
+		q(62949),	-- Sire Denathrius Slain (spellID 345481)
 
 		q(62871),	-- Shriekwing
 		q(62872),	-- Huntsman Altimor
@@ -1526,11 +1526,5 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 		q(70468),	-- Stone Legion Generals
 		q(70469),	-- Sire Denthrius
 		q(70470),	-- Sire Denthrius
-	}),
-}));
-
-root(ROOTS.NeverImplemented, tier(SL_TIER, {
-	inst(1190, {	-- Castle Nathria
-		i(184873),	-- Soul Igniter (Test)
 	}),
 }));

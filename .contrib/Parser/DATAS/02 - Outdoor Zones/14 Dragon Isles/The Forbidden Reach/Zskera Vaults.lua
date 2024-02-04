@@ -11,12 +11,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				ach(17509),	-- Every Door, Everywhere, All At Once
 			}),
-			filter(MISC, {
+			filter(MISC, bubbleDown({
+				["cost"] = {{"i",203705,1}},	-- Empty Obsidian Vial
+			},{
 				i(203715),	-- Oozing Gold
 				i(203720),	-- Restorative Water
 				i(203704),	-- Stone Dissolver
 				i(203718),	-- Vial of Flames
-			}),
+			})),
 			n(QUESTS, {
 				q(73160, {	-- Helping Hand and Claw
 					["sourceQuests"] = {
@@ -26,6 +28,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202713),	-- Scattered Supplies (QI!)
+					},
 				}),
 				q(73159, {	-- Exploring Our Past
 					["sourceQuests"] = { 73160 },	-- Helping Hand and Claw
@@ -135,6 +140,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 28.3, 57.4, THE_FORBIDDEN_REACH },
 				}),
 				q(74795, {	-- An Odd Round Object
+					["sourceQuests"] = { 74447 },	-- Verbal Archaeology
 					["provider"] = { "i", 203686 },	-- Odd Round Object
 					["coord"] = { 30.8, 57.5, THE_FORBIDDEN_REACH },
 				}),
@@ -158,7 +164,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(74503, {	-- Another Gift
-					["description"] = "Takes all your tokens? Bug?",
 					["sourceQuests"] = { 74502 },	-- Complimentary Gift
 					["provider"] = { "n", 201714 },	-- Prototype Tinker-Tron
 					["coord"] = { 24.7, 52.0, THE_FORBIDDEN_REACH },
@@ -210,7 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				-- Evoker Tablets
-				q(73115, { -- Journal Entry: Silence (A)
+				q(73115, {	-- Journal Entry: Silence (A)
 					["provider"] = { "i", 202337 },	-- Journal Entry: Silence [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -218,7 +223,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "i", 204246 },	-- Journal Entry: Silence [H]
 					["races"] = HORDE_ONLY,
 				}),
-				q(73114, { -- Journal Entry: The Creches (A)
+				q(73114, {	-- Journal Entry: The Creches (A)
 					["provider"] = { "i", 202336 },	-- Journal Entry: The Creches [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -226,7 +231,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "i", 204223 },	-- Journal Entry: The Creches [H]
 					["races"] = HORDE_ONLY,
 				}),
-				q(73108, { -- Journal Entry: The Prisoner (A)
+				q(73108, {	-- Journal Entry: The Prisoner (A)
 					["provider"] = { "i", 202327 },	-- Journal Entry: The Prisoner [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -297,6 +302,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(398770, {	-- Box of Rocks
+							["coord"] = { 31.0, 56.0, THE_FORBIDDEN_REACH },
 							["questID"] = 75484,
 							["g"] = {
 								i(199216),	-- A Box of Rocks
@@ -320,7 +326,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386470, {	-- Gold Pile
 							["questID"] = 74434,
 						}),
-						o(386472, { -- Gold Pile
+						o(386472, {	-- Gold Pile
 							["questID"] = 74435,
 						}),
 						o(385032, {	-- Gold Pile
@@ -407,6 +413,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74993,
 							["g"] = {
 								i(204278),	-- Nelthation's Toolkit
+							},
+						}),
+						o(386555, {	-- Odd Circular Object
+							["coord"] = { 30.9, 57.5, THE_FORBIDDEN_REACH },
+							["g"] = {
+								i(203686),	-- Odd Round Object
 							},
 						}),
 						o(388471, {	-- Pillaged Primordial Cache
@@ -515,11 +527,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386690, {	-- Ambiguous Compendium
 							["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74613,
+							["g"] = {
+								i(204815),	-- Ambiguous Compendium
+							},
 						}),
 						o(393282, {	-- Balloon Box
 							["questID"] = 75217,
 							["g"] = {
 								i(169673),	-- Blue Paint Filled Bladder
+								i(169675),	-- Orange Paint Filled Bladder
 							},
 						}),
 						o(393283, {	-- Balloon Box
@@ -582,7 +598,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 73068,
 						}),
-						o(393957, { -- Gold Pile
+						o(393957, {	-- Gold Pile
 							["questID"] = 75254,
 						}),
 						o(393958, {	-- Gold Pile
@@ -638,6 +654,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386680, {	-- Mysterious Almanac
 							["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
 							["questID"] = 74589,
+							["g"] = {
+								i(204816),	-- Mysterious Almanac
+							},
 						}),
 						o(386582, {	-- Neltharion Gift Token
 							["coord"] = { 26.4, 49.4, THE_FORBIDDEN_REACH },
@@ -745,6 +764,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386683, {	-- Seared Book
 							["coord"] = { 29.2, 58.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74609,
+							["g"] = {
+								i(204812),	-- Seared Book
+							},
 						}),
 						o(385401, {	-- Searing Chest
 							["coord"] = { 28.5, 57.5, THE_FORBIDDEN_REACH },
@@ -757,6 +779,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75136,
 							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
+							["cost"] = {{"i",203720,1}},	-- Restorative Water
 							["cr"] = 202336,	-- Overgrown Skeleton
 							["g"] = {
 								i(203852),	-- Spore-bound Essence (TOY!)
@@ -803,10 +826,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(390559, {	-- Box of Rocks
-							["questID"] = 75152,
-							["g"] = {
-								i(199216),	-- A Box of Rocks
-							},
+							i(199216),	-- A Box of Rocks
 						}),
 						o(392570, {	-- Chain-Bound Primordial Cache
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
@@ -972,6 +992,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74864,
 							["g"] = {
 								i(193908),	-- Kobaldt (PET!)
+							},
+						}),
+						o(390559, {	-- Box of Rocks
+							["coord"] = { 28.2, 57.6, THE_FORBIDDEN_REACH },
+							["questID"] = 75152,
+							["g"] = {
+								i(199216),	-- A Box of Rocks
 							},
 						}),
 						o(386454, {	-- Chest of Ice

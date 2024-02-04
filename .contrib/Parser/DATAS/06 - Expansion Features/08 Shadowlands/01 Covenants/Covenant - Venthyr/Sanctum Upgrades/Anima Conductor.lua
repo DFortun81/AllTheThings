@@ -79,7 +79,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["isDaily"] = true,
 									["coord"] = { 46.0, 29.1, REVENDRETH },
 									["g"] = {
-										i(182768),	-- The Enchanted Dragon (unknown if interesting yet)
+										i(182768, {	-- The Enchanted Dragon
+											i(182766),	-- Golden Egg
+										}),
 									},
 								}),
 							}),
@@ -90,6 +92,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173038 },	-- John the Reanimator
 									["coord"] = { 71.5, 76.3, REVENDRETH },
+									["g"] = {
+										i(182291),	-- Anima Cage (QI!)
+									},
 								}),
 								q(61733, {	-- Big Bag of Creepers
 									-- ["sourceQuests"] = { ? },	--

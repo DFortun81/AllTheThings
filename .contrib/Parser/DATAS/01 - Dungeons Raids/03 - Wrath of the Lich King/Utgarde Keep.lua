@@ -10,29 +10,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(477, {	-- Utgarde Keep
-					crit(5377, { -- Prince Keleseth
+					crit(5377, {	-- Prince Keleseth
 						["_encounter"] = { 638, NORMAL_DUNGEON },
 					}),
-					crit(5378, { -- Skarvald the Constructor
+					crit(5378, {	-- Skarvald the Constructor
 						["_encounter"] = { 639, NORMAL_DUNGEON },
 					}),
-					crit(5379, { -- Dalronn the Controller
+					crit(5379, {	-- Dalronn the Controller
 						["_encounter"] = { 639, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5621, { -- Ingvar the Plunderer
+					crit(5621, {	-- Ingvar the Plunderer
 						["_encounter"] = { 640, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5380, { -- Ingvar the Plunderer
+					crit(5380, {	-- Ingvar the Plunderer
 						["_encounter"] = { 640, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17213, {	-- Defense Protocol Alpha: Utgarde Keep
-					crit(57666, { -- Prince Keleseth
+					crit(57666, {	-- Prince Keleseth
 						["_encounter"] = { 638, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39345),	-- Girdle of the Ascended Phantom
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39392),	-- Veiled Amulet of Life
 						},
 					}),
-					crit(57665, { -- Skarvald the Constructor
+					crit(57665, {	-- Skarvald the Constructor
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39309),	-- Leggings of the Instructor
@@ -48,10 +48,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39369),	-- Sabatons of Deathlike Gloom
 						},
 					}),
-					crit(57667, { -- Dalronn the Controller
+					crit(57667, {	-- Dalronn the Controller
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 					}),
-					crit(57668, { -- Ingvar the Plunderer
+					crit(57668, {	-- Ingvar the Plunderer
 						["_encounter"] = { 640, HEROIC_DUNGEON },
 						["groups"] = {
 							i(40519),	-- Footsteps of Malygos
@@ -70,23 +70,23 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18590, {	-- Defense Protocol Beta: Utgarde Keep
-					crit(60571, { -- Prince Keleseth
+					crit(60571, {	-- Prince Keleseth
 						["_encounter"] = { 638, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45378),	-- Boots of the Petrified Forest
 						},
 					}),
-					crit(60570, { -- Skarvald the Constructor
+					crit(60570, {	-- Skarvald the Constructor
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45322),	-- Cloak of the Iron Council
 							i(45329),	-- Circlet of True Sight
 						},
 					}),
-					crit(60572, { -- Dalronn the Controller
+					crit(60572, {	-- Dalronn the Controller
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 					}),
-					crit(60573, { -- Ingvar the Plunderer
+					crit(60573, {	-- Ingvar the Plunderer
 						["_encounter"] = { 640, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
@@ -96,18 +96,41 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19427, {	-- Defense Protocol Gamma: Utgarde Keep
+					crit(63319, {	-- Prince Keleseth
+						["_encounter"] = { 638, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63318, {	-- Skarvald the Constructor
+						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63321, {	-- Dalronn the Controller
+						["_encounter"] = { 639, HEROIC_DUNGEON },
+					}),
+					crit(63320, {	-- Ingvar the Plunderer
+						["_encounter"] = { 640, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+				})),
 				-- #endif
 				ach(489,  {	-- Heroic: Utgarde Keep
-					crit(3701, { -- Prince Keleseth
+					crit(3701, {	-- Prince Keleseth
 						["_encounter"] = { 638, HEROIC_DUNGEON },
 					}),
-					crit(3702, { -- Skarvald the Constructor
+					crit(3702, {	-- Skarvald the Constructor
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 					}),
-					crit(3703, { -- Dalronn the Controller
+					crit(3703, {	-- Dalronn the Controller
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 					}),
-					crit(5608, { -- Ingvar the Plunderer
+					crit(5608, {	-- Ingvar the Plunderer
 						["_encounter"] = { 640, HEROIC_DUNGEON },
 					}),
 				}),
@@ -388,10 +411,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(640, {	-- Ingvar the Plunderer
 						["creatureID"] = 23954,	-- Ingvar the Plunderer
 						["groups"] = {
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5608,		-- Ingvar the Plunderer slain
-							},
 							ach(5095, {	-- Heroic: Utgarde Keep Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

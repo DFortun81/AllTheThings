@@ -105,15 +105,59 @@ root(ROOTS.Promotions, {
 			}),
 			i(208057, {	-- Smoldering Banner of the Aspects (TOY!)
 				["description"] = "The Great Push returns in Dragonflight Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 30 Jun 2023 and The Proving Grounds are on 5-10 July (US).",
-				-- ["timeline"] = { "added 10.1.5.XXXXX", "removed 10.1.5.99999" },
+				["timeline"] = { "added 10.1.5", "removed 10.1.5" },
 			}),
 			mount(397406, {	-- Wonderous Wavewhisker
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription. Promotion valid through January 9, 2024.",
-				["timeline"] = { "added 10.1.0." }, -- "removed 10.2.5.49570" },
+				["timeline"] = { "added 10.1.0", "removed 10.2.0.99999"  },
 			}),
 			i(32566, {	-- Picnic Basket (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.1.5." }, -- "removed 10.1.0.49570" },
+				["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
+			}),
+			i(190923,	-- Ensemble: Dashing Buccaneer's Slops
+				bubbleDownSelf({ ["timeline"] = { "added 10.1.5.50401", "removed 10.1.5.50401" } }, {	-- Added 5th Sep, Removed 12th Sep
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between September 5th, 10:00 a.m. & September 12th, 01:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["g"] = {
+					i(190906),	-- Dashing Buccaneer's Breeches
+					i(190907),	-- Dashing Buccaneer's Boots
+					i(190905),	-- Dashing Buccaneer's Sash
+					i(190904),	-- Dashing Buccaneer's Tunic
+				},
+			})),
+			i(208057, {	-- Smoldering Banner of the Aspects (TOY!)
+				["description"] = "Break the Meta: DF Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 2 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/break-the-meta-df-season-2/signups|r and complete at least 2 BTM-Eligible timed keystones at level +15 or higher during the Competition Period, and the Smoldering Banner of the Aspects will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on October 3rd for US, October 4th for EU & October 5th for KR/TW & lasts for 1 reset of your region.",
+				["timeline"] = { "added 10.1.7", "removed 10.1.7.51536" },
+			}),
+			mount(419567, {	-- Ginormous Grrloc (MOUNT!)
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
+				["timeline"] = { "added 10.1.7.51886", "removed 10.2.0.52649" },
+			}),
+			mount(400976, {	-- Gleaming Moonbeast (MOUNT!)
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
+				["timeline"] = { "added 10.1.7.51886", "removed 10.2.0.52649" },
+			}),
+			-- Season 3
+			pet(2623, {	-- Dottie (PET!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.2.0", "removed 10.2.0.52129" },
+			}),
+			i(72575, {	-- White Riding Camel (MOUNT!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 14th, 10:00 a.m. & November 21st, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.2.0", "removed 10.2.0.52188" },
+			}),
+			i(211424, {	-- Dreaming Banner of the Aspects (TOY!)
+				["description"] = "Mythic Dungeon International: DF Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 8th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Dreaming Banner of the Aspects to use in-game!\nSign-ups close 29 January 2024 1PM PDT and The Proving Grounds are on 31st January 1PM PDT - 5 February (US) 1PM PDT.\n\nhttps://raider.io/events/mdi-dragonflight-season-3/info",
+				["timeline"] = { "added 10.2.5", "removed 10.2.6" },
+			}),
+			mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
+				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",
+				["timeline"] = { "added 10.2.0.52649" },
+			}),
+			i(67097, {	-- Grim Campfire (TOY!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between January 23, 10:00 a.m. & January 30, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.2.5", "removed 10.2.5.53040" },
 			}),
 		},
 	}),

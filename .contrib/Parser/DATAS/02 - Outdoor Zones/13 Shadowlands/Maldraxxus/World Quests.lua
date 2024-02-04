@@ -21,6 +21,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59703),	-- Abombing Run
 			q(61605, {	-- Alchemy: Draught of Grotesque Strength
 				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					r(338199, {["u"]=TRAINING}),	-- Brutal Oil
+					r(338200, {["u"]=TRAINING}),	-- Crushed Bones
+					r(338198, {["u"]=TRAINING}),	-- Draught of Grotesque Strength
+					i(182049),	-- Bones of Defeated Enemies (QI!)
+					i(182047),	-- Brutal Oil (QI!)
+					i(182048),	-- Crushed Bones (QI!)
+					i(181858),	-- Draught of Grotesque Strength (QI!)
+				},
 			}),
 			q(61352),	-- All Will Be Consumed
 			q(61353),	-- All Will Be Consumed
@@ -32,13 +41,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61606, {	-- Blacksmithing: Soul Razor
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(338090,{["u"]=15}),	-- Hardened Heavy Razor
-					r(338091,{["u"]=15}),	-- Soft Heavy Razor
-					r(338088,{["u"]=15}),	-- Soul Razor
-					i(182088),	-- Borrowed Oxxein Ore
-					i(182086),	-- Hardened Heavy Razor
-					i(182087),	-- Soft Heavy Razor
-					i(181862),	-- Soul Razor
+					r(338090, {["u"]=TRAINING}),	-- Hardened Heavy Razor
+					r(338091, {["u"]=TRAINING}),	-- Soft Heavy Razor
+					r(338088, {["u"]=TRAINING}),	-- Soul Razor
+					i(182088),	-- Borrowed Oxxein Ore (QI!)
+					i(182086),	-- Hardened Heavy Razor (QI!)
+					i(182087),	-- Soft Heavy Razor (QI!)
+					i(181862),	-- Soul Razor (QI!)
 
 				},
 			}),
@@ -47,9 +56,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60531),	-- Chosen Champions
 			q(61607, {	-- Cooking: Spider Jerky
 				["requireSkill"] = COOKING,
+				["g"] = {
+					r(338110, {["u"]=TRAINING}),	-- Spider Jerky
+					r(338113, {["u"]=TRAINING}),	-- Thick Spider Meat
+					i(182046),	-- Grave Dust (QI!)
+					i(181946),	-- Spider Jerky (QI!)
+					i(182045),	-- Thick Spider Legs (QI!)
+					i(182044),	-- Thick Spider Meat (QI!)
+				},
 			}),
 			q(58490, {	-- Deadly Reminder
-				n(161857, { -- Nirvaska the Summoner
+				n(161857, {	-- Nirvaska the Summoner
 					["description"] = "Only spawns when the |cFFFFD700Deadly Reminder|r world quest is active.",
 					["questID"] = 58629,
 					["isDaily"] = true,
@@ -67,14 +84,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61608, {	-- Enchanting: Unbreakable Crystal
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(338123,{["u"]=15}),	-- Unbreakable Crystal
-					i(182043),	-- Antique Necromancer's Staff
-					i(182042),	-- Necrotic Essence
-					i(181949),	-- Unbreakable Crystal
+					r(338123, {["u"]=TRAINING}),	-- Unbreakable Crystal
+					i(182043),	-- Antique Necromancer's Staff (QI!)
+					i(182042),	-- Necrotic Essence (QI!)
+					i(181949),	-- Unbreakable Crystal (QI!)
 				},
 			}),
 			q(61609, {	-- Engineering: Boneclad Stake Launcher
 				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					r(338218, {["u"]=TRAINING}),	-- Bone Reinforced Oxxein Tubing
+					r(338217, {["u"]=TRAINING}),	-- Boneclad Stake Launcher
+					r(338219, {["u"]=TRAINING}),	-- Handful of Oxxein Bolts
+					i(182038),	-- Bone Reinforced Oxxein Tubing (QI!)
+					i(181952),	-- Boneclad Stake Launcher (QI!)
+					i(182039),	-- Handful of Oxxein Bolts (QI!)
+					i(182040),	-- Machined Oxxein Bar (QI!)
+				},
 			}),
 			q(61867),	-- Extra Pieces
 			q(61870),	-- Failed Experiments
@@ -82,30 +108,61 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = FISHING,
 			}),
 			q(61667),	-- Forged in Secret
-			q(61189),	-- Further Gelatinous Research
-			q(58221),	-- Gettin' Even
+			q(61189, {	-- Further Gelatinous Research
+				["g"] = {
+					i(180876),	-- Aqueous Material Accumulator (QI!)
+				},
+			}),
+			q(58221, {	-- Gettin' Even
+				["g"] = {
+					i(184576),	-- Stolen Equipment (QI!)
+				},
+			}),
 			q(61545, {	-- Herbalism: Engorged Marrowroot
 				["requireSkill"] = HERBALISM,
 			}),
 			q(61611, {	-- Inscription: Litany of Might
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					r(338231, {["u"]=15}),	-- Litany of Might
-					i(181958),	-- Litany of Might
-					r(338233, {["u"]=15}),	-- Necrotic Ink
-					i(182036),	-- Necrotic Ink
-					r(338232, {["u"]=15}),	-- Scroll of Unyielding Strength
-					i(182035),	-- Scroll of Unyielding Strength
+					r(338231, {["u"]=TRAINING}),	-- Litany of Might
+					r(338233, {["u"]=TRAINING}),	-- Necrotic Ink
+					r(338232, {["u"]=TRAINING}),	-- Scroll of Unyielding Strength
+					i(182297),	-- Flayed Flesh (QI!)
+					i(181958),	-- Litany of Might (QI!)
+					i(182036),	-- Necrotic Ink (QI!)
+					i(182037),	-- Necrotic Pigment (QI!)
+					i(182035),	-- Scroll of Unyielding Strength (QI!)
 				},
 			}),
 			q(61612, {	-- Jewelcrafting: Carved Crystal Ring
 				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					r(338244, {["u"]=TRAINING}),	-- Carved Crystal Ring
+					r(338246, {["u"]=TRAINING}),	-- Faceted Crystal
+					r(338245, {["u"]=TRAINING}),	-- Hollowed Crystal
+					i(181961),	-- Carved Crystal Ring (QI!)
+					i(182033),	-- Faceted Crystal (QI!)
+					i(182032),	-- Hollowed Crystal (QI!)
+					i(182034),	-- Jagged Necrotic Crystal (QI!)
+				},
 			}),
 			q(61540),	-- Just Winging It
 			q(61613, {	-- Leatherworking: Bonestudded Fists
 				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					r(338260, {["u"]=TRAINING}),	-- Bonestudded Fist
+					r(338262, {["u"]=TRAINING}),	-- Cleaned Hide
+					i(181966),	-- Bonestudded Fist (QI!)
+					i(182030),	-- Cleaned Hide (QI!)
+					i(182029),	-- Corpsestitch Thread (QI!)
+					i(182031),	-- Unused Flesh (QI!)
+				},
 			}),
-			q(61539),	-- Liches Get Stitches
+			q(61539, {	-- Liches Get Stitches
+				["g"] = {
+					i(184560),	-- Ritual Focus (QI!)
+				},
+			}),
 			q(61866),	-- Mighty Minions of Maldraxxus
 			q(61537, {	-- Mining: Monolithic Oxxein Cluster
 				["requireSkill"] = MINING,
@@ -126,6 +183,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61615, {	-- Tailoring: Haunting Hood
 				["requireSkill"] = TAILORING,
+				["g"] = {
+					r(338277, {["u"]=TRAINING}),	-- Bleakcloth
+					r(338276, {["u"]=TRAINING}),	-- Bolt of Bleakcloth
+					r(338275, {["u"]=TRAINING}),	-- Haunting Hood
+					i(182117),	-- Bleakcloth (QI!)
+					i(182028),	-- Bleakthread (QI!)
+					i(182116),	-- Bolt of Bleakcloth (QI!)
+					i(181972),	-- Haunting Hood (QI!)
+				},
 			}),
 			q(59743),	-- The Spider on the Wall
 			q(61868),	-- Uncomfortably Undercover

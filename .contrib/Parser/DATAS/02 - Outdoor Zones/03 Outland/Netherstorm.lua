@@ -52,41 +52,40 @@ root(ROOTS.Zones, {
 						["rank"] = 120,
 						-- #endif
 						-- #else
-						-- TODO: possibly more sourceQuests needed for some of these
-						crit(1, {		-- Socrethar
-							["sourceQuests"] = {
-								10409,	-- Deathblow to the Legion (Aldor)
-								10507,	-- Turning Point (Scryers)
-							},
-						}),
-						crit(2, {		-- The Violet Tower
-							["sourceQuests"] = {
-								10240,	-- Building a Perimeter
-							},
-						}),
-						crit(3, {		-- Building the X-52 Nether-Rocket
-							["sourceQuests"] = {
-								10221,	-- Dr. Boom!
-							},
-						}),
-						crit(4, {		-- Protect Area 52!
-							["sourceQuests"] = {
-								10249,	-- Back to the Chief!
-							},
-						}),
-						crit(5, {		-- The Consortium
-							["sourceQuests"] = {
-								10276,	-- Full Triangle
-								10408,	-- Nexus-King Salhadaar
-								10440,	-- Success!
-								10274,	-- Securing the Celestial Ridge
-							},
-						}),
-						crit(6, {		-- Destroying the All-Devouring
-							["sourceQuests"] = {
-								10439,	-- Dimensius the All-Devouring
-							},
-						}),
+						-- crit(1, {		-- Socrethar
+						-- 	["sourceQuests"] = {
+						-- 		10409,	-- Deathblow to the Legion (Aldor)
+						-- 		10507,	-- Turning Point (Scryers)
+						-- 	},
+						-- }),
+						-- crit(2, {		-- The Violet Tower
+						-- 	["sourceQuests"] = {
+						-- 		10240,	-- Building a Perimeter
+						-- 	},
+						-- }),
+						-- crit(3, {		-- Building the X-52 Nether-Rocket
+						-- 	["sourceQuests"] = {
+						-- 		10221,	-- Dr. Boom!
+						-- 	},
+						-- }),
+						-- crit(4, {		-- Protect Area 52!
+						-- 	["sourceQuests"] = {
+						-- 		10249,	-- Back to the Chief!
+						-- 	},
+						-- }),
+						-- crit(5, {		-- The Consortium
+						-- 	["sourceQuests"] = {
+						-- 		10276,	-- Full Triangle
+						-- 		10408,	-- Nexus-King Salhadaar
+						-- 		10440,	-- Success!
+						-- 		10274,	-- Securing the Celestial Ridge
+						-- 	},
+						-- }),
+						-- crit(6, {		-- Destroying the All-Devouring
+						-- 	["sourceQuests"] = {
+						-- 		10439,	-- Dimensius the All-Devouring
+						-- 	},
+						-- }),
 						-- #endif
 					}),
 				}),
@@ -986,6 +985,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10310, {	-- Sabotage the Warp-Gate!
 						["qg"] = 20281,	-- Drijya
+						["coord"] = { 48.1, 63.5, NETHERSTORM },
 						["sourceQuest"] = 10311,	-- Drijya Needs Your Help
 						["groups"] = {
 							i(29978),	-- Consortium Combatant's Robes
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, {
 					}),
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
@@ -1605,7 +1605,7 @@ root(ROOTS.Zones, {
 					})),
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{ "pop" }},	-- Merciless Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
@@ -1647,8 +1647,8 @@ root(ROOTS.Zones, {
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
-							i(138796, {	-- Illusion: Executioner
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138796, {	-- Illusion: Executioner (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard
@@ -1667,11 +1667,15 @@ root(ROOTS.Zones, {
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
+							{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },{"merge"},	-- Gladiator's Set
+							{"exclude","itemID",
+								28379,	-- Sergeant's Heavy Cape (A)
+								28378,	-- Sergeant's Heavy Cape (H)
+							},
 							-- #if BEFORE LEGION
 							{ "finalize" },
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{ "finalize" },	-- Merciless Gladiator's Set
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },{ "finalize" },	-- Vengeful Gladiator's Set
+							{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+							{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 							-- #else
 							{ "pop" },
 							-- #endif
@@ -1708,7 +1712,7 @@ root(ROOTS.Zones, {
 					})),
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },{"pop"}},	-- Vengeful Gladiator Set
+						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]

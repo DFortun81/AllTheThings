@@ -1,10 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- These are for the outdoor section of Uldaman before the instance. (rather than listing them in Badlands...)
+local OUTDOOR_ULDAMAN_CRS = {
+	4846,	-- Shadowforge Digger
+	4845,	-- Shadowforge Ruffian
+	4844,	-- Shadowforge Surveyor
+};
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(239, {	-- Uldaman
 		-- #if BEFORE MOP
 		["lore"] = "Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",
+		-- #endif
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 1337,	-- Uldaman
 		-- #endif
 		-- #if AFTER CATA
 		["coords"] = {
@@ -18,9 +27,19 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		},
 		-- #endif
 		["mapID"] = ULDAMAN,
-		["maps"] = { 231 },
+		["maps"] = { 16, 231 },
 		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
+			n(PROFESSIONS, {
+				prof(ENCHANTING, {
+					n(11073, {	-- Annora <Master Enchanter>
+						["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
+						-- #if BEFORE 2.1.0
+						["groups"] = EXPERT_ARTISAN_ENCHANTING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(2964, {	-- A Future Task [Alliance]
 					["qg"] = 2916,	-- Historian Karnik
@@ -526,11 +545,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(7666),	-- Shattered Necklace
 				i(9420),	-- Adventurer's Pith Helmet
 				i(9392),	-- Annealed Blade
-				i(9393),	-- Beacon of Hope
+				i(9393, {	-- Beacon of Hope
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9465),	-- Digmaster 5000
 				i(9381),	-- Earthen Rod
 				i(9397),	-- Energy Cloak
-				i(9386),	-- Excavator's Brand
+				i(9386, {	-- Excavator's Brand
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9424),	-- Ginn-Su Sword
 				i(9396),	-- Legguards of the Vault
 				i(9429),	-- Miner's Hat of the Deep
@@ -541,28 +564,38 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(9422),	-- Shadowforge Bushmaster
 				i(9432),	-- Skullplate Bracers
 				i(9430),	-- Spaulders of a Lost Age
-				i(9406),	-- Spirewind Fetter
+				i(9406, {	-- Spirewind Fetter
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9427),	-- Stonevault Bonebreaker
-				i(9384),	-- Stonevault Shiv
+				i(9384, {	-- Stonevault Shiv
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9423),	-- The Jackhammer
-				i(9391),	-- The Shoveler
-				i(9428),	-- Unearthed Bands
+				i(9391, {	-- The Shoveler
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
+				i(9428, {	-- Unearthed Bands
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 			}),
 			n(RARES, {
 				n(7057, {	-- Digmaster Shovelphlange
 					-- #if BEFORE 4.0.3
 					["description"] = "This guy spawns outside of the instance in the cave leading to the instance.",
+					-- #elseif AFTER 10.1.7
+					["description"] = "This guy spawns outside of the instance in the cave leading to the instance.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["groups"] = {
 						i(9378, {	-- Shovelphlange's Mining Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(9375, {	-- Expert Goldminer's Helmet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(9382, {	-- Tromping Miner's Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -691,13 +724,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "added 7.3.0.24484"},
 					}),
 				},
-			}),
-			n(11073, {	-- Annora <Master Enchanter>
-				["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
-				-- #if BEFORE 2.1.0
-				["requireSkill"] = ENCHANTING,
-				["groups"] = EXPERT_ARTISAN_ENCHANTING,
-				-- #endif
 			}),
 			e(470, {	-- Ancient Stone Keeper
 				["creatureID"] = 7206,

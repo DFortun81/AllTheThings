@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(252, {	-- Sethekk Halls
 		["lore"] = "Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",
+		["zone-text-areaID"] = 3791,	-- Sethekk Halls
 		["sins"] = {
 			"Auchindoun: Sethekk Halls",
 			"Auchindoun: Sethekkhallen",
@@ -172,7 +173,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14942" },
 					["cr"] = 19428,	-- Cobalt Serpent
 				}),
-				i(29669, {	-- Pattern: Shadow Armor Kit
+				i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
+					["timeline"] = { REMOVED_5_0_4 },
 					["cr"] = 18320,	-- Time-Lost Shadowmage
 				}),
 				i(25731, {	-- Pattern: Stylin' Crimson Hat (RECIPE!)

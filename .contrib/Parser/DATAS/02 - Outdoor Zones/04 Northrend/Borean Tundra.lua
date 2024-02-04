@@ -44,49 +44,61 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- Hiding in Plain Sight
+							crit(39025, {	-- Hiding in Plain Sight
 								["sourceQuest"] = 11794,	-- The Hunt is On
 							}),
-							crit(2, {	-- To the Aid of the Farshire
-								["sourceQuests"] = {
-									11965,	-- Call to Arms!
-									12035,	-- Repurposed Technology
-									11913,	-- Take No Chances
-								},
+							crit(39026, {	-- To the Aid of the Farshire
+								["sourceQuest"] = 11913,	-- Take No Chances
 							}),
-							crit(3, {	-- D.E.H.T.A.
+							crit(39027, {	-- To the Aid of the Farshire
+								["sourceQuest"] = 12035,	-- Repurposed Technology
+							}),
+							crit(39028, {	-- To the Aid of the Farshire
+								["sourceQuest"] = 11965,	-- Call to Arms!
+							}),
+							crit(347, {	-- D.E.H.T.A.
 								["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
 							}),
-							crit(4, {	-- The Blue Dragonflight
-								["sourceQuests"] = {
-									11931,	-- Cracking the Code
-									11914,	-- Keep the Secret Safe
-									12728,	-- Monitoring the Rift: Winterfin Cavern	-- verify this
-									11900,	-- Reading the Meters	-- verify this
-									11910,	-- Secrets of the Ancients	-- verify this
-									11969,	-- Springing the Trap
-									11733,	-- Traversing the Rift
-								},
+							crit(39029, {	-- The Blue Dragonflight
+								["sourceQuest"] = 12728,	-- Monitoring the Rift: Winterfin Cavern
 							}),
-							crit(5, {	-- Friends from the Sea
-								["sourceQuests"] = {
-									11626,	-- The Emissary
-									11968,	-- The Tides Turn
-								},
+							crit(39030, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11733,	-- Traversing the Rift
 							}),
-							crit(6, {	-- Participant Observation
-								["sourceQuests"] = {
-									11570,	-- Escape from the Winterfin Caverns
-									11569,	-- Keymaster Urmgrgl
-									11564,	-- Succulent Orca Stew
-									11566,	-- Surrender... Not!
-									11561,	-- Them!
-								},
+							crit(39031, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11969,	-- Springing the Trap
 							}),
-							crit(7, {	-- A Family Reunion
+							crit(39032, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11931,	-- Cracking the Code
+							}),
+							crit(39033, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11914,	-- Keep the Secret Safe
+							}),
+							crit(39034, {	-- Friends from the Sea
+								["sourceQuest"] = 11626,	-- The Emissary
+							}),
+							crit(39035, {	-- Friends from the Sea
+								["sourceQuest"] = 11968,	-- The Tides Turn
+							}),
+							crit(39036, {	-- Participant Observation
+								["sourceQuest"] = 11570,	-- Escape from the Winterfin Caverns
+							}),
+							crit(39037, {	-- Participant Observation
+								["sourceQuest"] = 11569,	-- Keymaster Urmgrgl
+							}),
+							crit(39038, {	-- Participant Observation
+								["sourceQuest"] = 11566,	-- Surrender... Not!
+							}),
+							crit(39039, {	-- Participant Observation
+								["sourceQuest"] = 11564,	-- Succulent Orca Stew
+							}),
+							crit(39040, {	-- Participant Observation
+								["sourceQuest"] = 11561,	-- Them!
+							}),
+							crit(39041, {	-- A Family Reunion
 								["sourceQuest"] = 12088,	-- Thassarian, the Death Knight
 							}),
-							crit(8, {	-- Last Rites
+							crit(39042, {	-- Last Rites
 								["sourceQuest"] = 12019,	-- Last Rites
 							}),
 						},
@@ -132,58 +144,73 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- The Fate of Farseer Grimwalker
+							crit(39043, {	-- The Fate of Farseer Grimwalker
 								["sourceQuest"] = 11638,	-- Return My Remains
 							}),
-							crit(2, {	-- Return of the Dread Citadel
+							crit(39044, {	-- Return of the Dread Citadel
 								["sourceQuest"] = 11652,	-- The Plains of Nasam
 							}),
-							crit(3, {	-- The Scourge Necrolord
+							crit(39045, {	-- The Scourge Necrolord
 								["sourceQuest"] = 11705,	-- Foolish Endeavors
 							}),
-							crit(4, {	-- D.E.H.T.A.
+							crit(347, {	-- D.E.H.T.A.
 								["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
 							}),
-							crit(5, {	-- The Blue Dragonflight
-								["sourceQuests"] = {
-									11931,	-- Cracking the Code
-									11914,	-- Keep the Secret Safe
-									12728,	-- Monitoring the Rift: Winterfin Cavern	-- verify this
-									11900,	-- Reading the Meters	-- verify this
-									11910,	-- Secrets of the Ancients	-- verify this
-									11969,	-- Springing the Trap
-									11733,	-- Traversing the Rift
-								},
+							crit(39029, {	-- The Blue Dragonflight
+								["sourceQuest"] = 12728,	-- Monitoring the Rift: Winterfin Cavern
 							}),
-							crit(6, {	-- Friends from the Sea
-								["sourceQuests"] = {
-									11626,	-- The Emissary
-									11968,	-- The Tides Turn
-								},
+							crit(39030, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11733,	-- Traversing the Rift
 							}),
-							crit(7, {	-- Participant Observation
-								["sourceQuests"] = {
-									11570,	-- Escape from the Winterfin Caverns
-									11569,	-- Keymaster Urmgrgl
-									11564,	-- Succulent Orca Stew
-									11566,	-- Surrender... Not!
-									11561,	-- Them!
-								},
+							crit(39031, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11969,	-- Springing the Trap
 							}),
-							crit(8, {	-- Hellscream's Champion
+							crit(39032, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11931,	-- Cracking the Code
+							}),
+							crit(39033, {	-- The Blue Dragonflight
+								["sourceQuest"] = 11914,	-- Keep the Secret Safe
+							}),
+							crit(39034, {	-- Friends from the Sea
+								["sourceQuest"] = 11626,	-- The Emissary
+							}),
+							crit(39035, {	-- Friends from the Sea
+								["sourceQuest"] = 11968,	-- The Tides Turn
+							}),
+							crit(39036, {	-- Participant Observation
+								["sourceQuest"] = 11570,	-- Escape from the Winterfin Caverns
+							}),
+							crit(39037, {	-- Participant Observation
+								["sourceQuest"] = 11569,	-- Keymaster Urmgrgl
+							}),
+							crit(39038, {	-- Participant Observation
+								["sourceQuest"] = 11566,	-- Surrender... Not!
+							}),
+							crit(39039, {	-- Participant Observation
+								["sourceQuest"] = 11564,	-- Succulent Orca Stew
+							}),
+							crit(39040, {	-- Participant Observation
+								["sourceQuest"] = 11561,	-- Them!
+							}),
+							crit(39046, {	-- Hellscream's Champion
 								["sourceQuest"] = 11916,	-- Hellscream's Champion
 							}),
-							crit(9, {	-- To the Aid of the Taunka
-								["sourceQuests"] = {
-									11906,	-- Cleaning Up the Pools
-									11909,	-- Defeat the Gearmaster
-									-- 11683,	-- Fallen Necropolis	-- needs verification
-									11689,	-- Return with the Bad News
-									11706,	-- The Collapse
-									11907,	-- The Sub-Chieftains
-								},
+							crit(39047, {	-- To the Aid of the Taunka
+								["sourceQuest"] = 11689,	-- Return with the Bad News
 							}),
-							crit(10, {	-- Somber Realization
+							crit(39048, {	-- To the Aid of the Taunka
+								["sourceQuest"] = 11906,	-- Cleaning Up the Pools
+							}),
+							crit(39049, {	-- To the Aid of the Taunka
+								["sourceQuest"] = 11907,	-- The Sub-Chieftains
+							}),
+							crit(39050, {	-- To the Aid of the Taunka
+								["sourceQuest"] = 11909,	-- Defeat the Gearmaster
+							}),
+							crit(39051, {	-- To the Aid of the Taunka
+								["sourceQuest"] = 11706,	-- The Collapse
+							}),
+							crit(39052, {	-- Somber Realization
 								["sourceQuest"] = 11930,	-- Across Transborea
 							}),
 						},
@@ -1125,7 +1152,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11878,	-- Khu'nok Will Know
 						["groups"] = {
 							i(37005),	-- D.E.H.T.A. Overshirt
-							i(37008),	-- Ethical Epaulettes
+							i(37008),	-- Ethical Epaulets
 							i(37007),	-- Faux Leather Hood
 							i(37009),	-- Moral Sabatons
 						},
@@ -1475,7 +1502,7 @@ root(ROOTS.Zones, {
 					q(11902, {	-- Pernicious Evidence
 						["coord"] = { 56.8, 55.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["objectID"] = 188085,	-- Plagued Grain
+						["provider"] = { "o", 188085 },	-- Plagued Grain
 						["sourceQuest"] = 11901,	-- Military? What Military?
 					}),
 					q(11609, {	-- Picking Up the Pieces
@@ -1795,7 +1822,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(37505),	-- Battle Leader's Breastplate
 							i(37394),	-- Marshwalker Waistguard
-							i(37424),	-- Plainhunter's Epaulettes
+							i(37424),	-- Plainhunter's Epaulets
 							i(37214),	-- Sweltering Leggings
 						},
 					}),
@@ -2328,7 +2355,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(37505),	-- Battle Leader's Breastplate
 							i(37394),	-- Marshwalker Waistguard
-							i(37424),	-- Plainhunter's Epaulettes
+							i(37424),	-- Plainhunter's Epaulets
 							i(37214),	-- Sweltering Leggings
 						},
 					}),

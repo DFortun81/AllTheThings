@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4925, {	-- Ashenvale Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Maestra's Post
 							["sourceQuest"] = 13626,	-- Respect for the Fallen
@@ -46,10 +47,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4976, {	-- Ashenvale Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Corrupted Heart of the Forest
 							["sourceQuests"] = {
@@ -86,6 +89,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 13888,	-- Vortex
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(845, {	-- Explore Ashenvale
 					-- #if BEFORE WRATH
@@ -212,6 +216,92 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			pvp(n(PVP, {
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Defeat a Lieutenant
+					readable = "Defeat a Lieutenant",
+					icon = "Interface\\CURSOR\\Attack",
+					text = {
+						en = "Defeat a Lieutenant",
+						es = "Derrota a un Teniente",
+						de = "Besiege einen Leutnant",
+						fr = "Battre un Lieutenant",
+						it = "Sconfiggi un Tenente",
+						pt = "Derrote um Tenente",
+						ru = "Победить лейтенанта",
+						ko = "중위를 처치하세요",
+						cn = "击败一名中尉",
+					},
+				}), {
+					["aqd"] = {
+						["crs"] = {
+							212730,	-- Tojara <Blademaster>
+							212801,	-- Jubei <Blademaster>
+							212802,	-- Moogul the Sly <Blademaster>
+						},
+						["coords"] = {
+							{ 54.8, 54.8, ASHENVALE },
+							{ 22.0, 38.6, ASHENVALE },
+							{ 69.6, 63.6, ASHENVALE },
+						},
+						["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+					},
+					["hqd"] = {
+						["crs"] = {
+							212707,	-- Larodar <Keeper of the Grove>
+							212803,	-- Ceredwyn <Keeper of the Grove>
+							212804,	-- Centrius <Keeper of the Grove>
+						},
+						["coords"] = {
+							{ 51.6, 54.8, ASHENVALE },
+							{ 74.0, 74.0, ASHENVALE },
+							{ 28.6, 28.8, ASHENVALE },
+						},
+						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+					},
+					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
+					["timeline"] = { "removed 2.0.1" },
+					["repeatable"] = true,
+					["groups"] = {
+						i(211813, {	-- Silverwing Sentinel Charm
+							["races"] = HORDE_ONLY,
+						}),
+						i(211814, {	--
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Win the Battle
+					readable = "Win the Battle",
+					icon = [[~_.asset("Category_PvP")]],
+					text = {
+						en = "Win the Battle",
+						es = "Gana la Batalla",
+						de = "Gewinne den Kampf",
+						fr = "Gagnez la Bataille",
+						it = "Vinci la Battaglia",
+						pt = "Ganhe a Batalha",
+						ru = "Выиграй битву",
+						ko = "전투에서 승리하세요",
+						cn = "赢得战斗",
+					},
+				}), {
+					["aqd"] = {
+						["cr"] = 212969,	-- Kazragore <Far Seer>
+						["coord"] = { 42.0, 67.0, ASHENVALE },
+						["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+					},
+					["hqd"] = {
+						["cr"] = 212970,	-- Felore Moonray <Priestess of the Moon>
+						["coord"] = { 50.5, 72.0, ASHENVALE },
+						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+					},
+					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
+					["timeline"] = { "removed 2.0.1" },
+					["repeatable"] = true,
+				})),
+			})),
+			-- #endif
 			n(QUESTS, {
 				q(26453, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
@@ -276,6 +366,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78088, {	-- A Strange Artifact
+					["providers"] = {
+						{ "i", 209836 },	-- Althalaxx Orb
+						{ "n",   3663 },	-- Delgren the Purifier
+					},
+					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DARKSHORE },
+					["classes"] = { PALADIN },
+				})),
+				-- #endif
 				q(13919, {	-- A Trip to the Moonwell
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 26475,	-- Elune's Tear
@@ -283,6 +385,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78089, {	-- Advice From Stormwind
+					["providers"] = {
+						{ "n",   3663 },	-- Delgren the Purifier
+						{ "i", 209748 },	-- Althalaxx Orb
+					},
+					["sourceQuest"] = 78088,	-- A Strange Artifact
+					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PALADIN },
+				})),
+				-- #endif
 				q(26457, {	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper
 					["coord"] = { 84, 62.6, ASHENVALE },
@@ -554,6 +669,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, pvp(q(79098, {	-- Clear the Forest!
+					["providers"] = {
+						{ "i", 211813 },	-- Silverwing Sentinel Charm
+						{ "n", 212969 },	-- Kazragore <Far Seer>
+					},
+					["coord"] = { 42.0, 67.0, ASHENVALE },
+					["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+					["timeline"] = { "removed 2.0.1" },
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
+					["lvl"] = 18,
+					["groups"] = {
+						i(211816),	-- Warsong Battle Drum
+					},
+				}))),
+				-- #endif
 				q(13985, {	-- Clear the Shrine
 					["qg"] = 34599,	-- Bolyun
 					["sourceQuest"] = 13982,	-- In a Bind
@@ -797,6 +929,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78144, {	-- Alonso the Dragonslayer
+					["qg"] = 210995,	-- Alonso <Knight Errant>
+					["sourceQuests"] = {
+						78132,	-- Dragonslayer's Helm
+						78134,	-- Dragonslayer's Lance
+						78133,	-- Dragonslayer's Shield
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["groups"] = {
+						--[[
+						-- TODO: This might actually just be a follow the npc thing, he slays this little dragon.
+						-- and calls you his squire and asks you to watch. Haven't done this quest yet myself.
+						objective(1, {	-- Slay the Green Dragon Whelp?
+							["provider"] = { "n", 211042 },	-- Green Dragon Whelp
+						}),
+						]]--
+						i(210015, {	-- Rune of Raging Blow
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425444),	-- Engrave Chest - Raging Blow
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78132, {	-- Dragonslayer's Helm
+					["providers"] = {
+						{ "i", 209872 },	-- Dragonslayer's Helm
+						{ "n", 210995 },	-- Alonso <Knight Errant>
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { SHADOWFANG_KEEP },
+					["classes"] = { WARRIOR },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78134, {	-- Dragonslayer's Lance
+					["providers"] = {
+						{ "i", 209874 },	-- Dragonslayer's Lance
+						{ "n", 210995 },	-- Alonso <Knight Errant>
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { WETLANDS },
+					["classes"] = { WARRIOR },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78133, {	-- Dragonslayer's Shield
+					["providers"] = {
+						{ "i", 209873 },	-- Dragonslayer's Shield
+						{ "n", 210995 },	-- Alonso <Knight Errant>
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["classes"] = { WARRIOR },
+				})),
+				-- #endif
 				q(26476, {	-- Dryad Delivery
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 26475,	-- Elune's Tear
@@ -825,6 +1015,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78506, {	-- Elemental Distress
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["sourceQuest"] = 78920,	-- Baron Aquanis (H)
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["maps"] = { STONETALON_MOUNTAINS },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mote of Seismic Rage
+							["provider"] = { "i", 210668 },	-- Mote of Seismic Rage
+							["coord"] = { 33.2, 69.8, STONETALON_MOUNTAINS },
+							["crs"] = {
+								4034,	-- Enraged Stone Spirit
+								4035,	-- Furious Stone Spirit
+							},
+						}),
+						objective(2, {	-- 0/1 Mote of Infernal Rage
+							["provider"] = { "i", 210667 },	-- Mote of Infernal Rage
+							["coord"] = { 32.6, 67.7, STONETALON_MOUNTAINS },
+							["crs"] = {
+								4038,	-- Burning Destroyer
+								4037,	-- Burning Ravager
+								4036,	-- Rogue Flame Spirit
+							},
+						}),
+						objective(3, {	-- 0/1 Mote of Torrential Rage
+							["provider"] = { "i", 210665 },	-- Mote of Torrential Rage
+							["coord"] = { 49.6, 71.2, ASHENVALE },
+							["cr"] = 3917,	-- Befouled Water Elemental
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78537, {	-- Elixir of Insight (1/2)
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["sourceQuest"] = 78506,	-- Elemental Distress
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["cost"] = {
+						{ "i", 5996, 1 },	-- Elixir of Water Breathing
+						{ "i", 3383, 1 },	-- Elixir of Wisdom
+					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78561, {	-- Elixir of Insight (2/2)
+					["providers"] = {
+						{ "n",  12736 },	-- Je'neu Sancrea <The Earthen Ring>
+						{ "i", 210712 },	-- Elixir of Insight
+					},
+					["sourceQuest"] = 78537,	-- Elixir of Insight (1/2)
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+				})),
 				-- #endif
 				q(26475, {	-- Elune's Tear
 					["qg"] = 3894,	-- Pelturas Whitemoon
@@ -962,7 +1210,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13875, {	-- Gurtar's Request
 					["qg"] = 34242,	-- Guardian Gurtar
-					["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 					["coord"] = { 89.5, 48.6, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13287" },
 					["races"] = HORDE_ONLY,
@@ -1003,6 +1250,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78575, {	-- Hirzek
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["sourceQuest"] = 78561,	-- Elixir of Insight (2/2)
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["maps"] = { THE_BARRENS },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["groups"] = {
+						objective(1, {	-- 0/1 Hirzek's Staff
+							["provider"] = { "i", 210724 },	-- Hirzek's Staff
+						}),
+						objective(2, {	-- 0/1 Hirzek slain
+							["provider"] = { "n", 212694 },	-- Hirzek
+							["coord"] = { 43.6, 78.8, THE_BARRENS },
+						}),
+						i(210746, {	-- Rune of Earth Shield
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410101),	-- Engrave Pants - Earth Shield
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(13880, {	-- Hot Lava
 					["qg"] = 34290,	-- Core
 					["sourceQuests"] = {
@@ -1242,6 +1515,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78684, {	-- Mysterious Traveler
+					["qg"] = 213444,	-- Mysterious Traveler
+					["sourceQuest"] = 78681,	-- The Conjuring
+					["coord"] = { 79.0, 80.2, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+				})),
+				-- #endif
 				q(13602, {	-- Naga of the Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 18.2, 20.4, ASHENVALE },
@@ -1571,7 +1855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
-						objective(1, { -- 0/1 Iron Pommel
+						objective(1, {	-- 0/1 Iron Pommel
 							["providers"] = {
 								{ "i", 5519 },	-- Iron Pommel
 								{ "o", 19021 },	-- Rusty Chest
@@ -1647,12 +1931,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
-						objective(1, { -- 0/1 Ran Bloodtooth
+						objective(1, {	-- 0/1 Ran Bloodtooth
 							["provider"] = { "i", 5388 },	-- Ran Bloodtooth's Skull
 							["coord"] = { 54.6, 79.4, ASHENVALE },
 							["cr"] = 3696,	-- Ran Bloodtooth
 						}),
-						objective(2, { -- 0/4 Bloodtooth Guard
+						objective(2, {	-- 0/4 Bloodtooth Guard
 							["provider"] = { "n", 3932 }, -- Bloodtooth Guard
 						}),
 					},
@@ -1673,10 +1957,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 18,
 					["groups"] = {
 						-- #if BEFORE WRATH
-						objective(1, { -- 0/1 Ran Bloodtooth's Skull
+						objective(1, {	-- 0/1 Ran Bloodtooth's Skull
 							["provider"] = { "i", 5388 },	-- Ran Bloodtooth's Skull
 						}),
-						objective(2, { -- 0/1 Dartol's Rod of Transformation
+						objective(2, {	-- 0/1 Dartol's Rod of Transformation
 							["provider"] = { "i", 5462 },	-- Dartol's Rod of Transformation
 							["description"] = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
 						}),
@@ -1762,6 +2046,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, pvp(q(79090, {	-- Repelling Invaders
+					["providers"] = {
+						{ "i", 211814 },	-- Warsong Outrider Mark
+						{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
+					},
+					["coord"] = { 50.5, 72.0, ASHENVALE },
+					["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+					["timeline"] = { "removed 2.0.1" },
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["lvl"] = 18,
+					["groups"] = {
+						i(211815),	-- Silverwing Battle Hymn
+					},
+				}))),
+				-- #endif
 				q(26456, {	-- Report from the Northern Front
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 					["sourceQuest"] = 13935,	-- Defend the Tree!
@@ -1860,6 +2161,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78093, {	-- Return to Delgren
+					["providers"] = {
+						{ "o", 409315 },	-- Shattered Orb
+						{ "i", 209800 },	-- Orb Fragments
+					},
+					["sourceQuest"] = 78092,	-- It Must Be Destroyed
+					["coord"] = { 89.4, 77, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["groups"] = {
+						recipe(410014, {	-- Engrave Chest - Divine Storm
+							["classes"] = { PALADIN },
+						}),
+					},
+				})),
+				-- #endif
 				q(26479, {	-- Return to Raene
 					["qg"] = 3916,	-- Raene Wolfrunner
 					["sourceQuest"] = 26478,	-- Playing Possum
@@ -2056,6 +2374,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to the Dead
+					readable = "Speak to the Dead",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to the Dead",
+						es = "Hablar con los Muertos",
+						de = "Sprich mit den Toten",
+						fr = "Parlez aux Morts",
+						it = "Parla con i Morti",
+						pt = "Fale com os Mortos",
+						ru = "Поговорите с мертвыми",
+						ko = "죽은 자와 대화",
+						cn = "与死者交谈",
+					},
+				}), {
+					["questID"] = 78907,	-- Dead Twilight Cultist HQT
+					["qg"] = 212334,	-- Dead Twilight Cultist
+					["coord"] = { 17.3, 26.7, ASHENVALE },
+					["cost"] = {{ "i", 210708, 1 }},	-- Elixir of Coalesced Regret
+					["timeline"] = { "removed 2.0.1" },
+					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+				})),
+				-- #endif
 				q(13962, {	-- Stalemate
 					["qg"] = 34518,	-- Thagg
 					["sourceQuest"] = 13958,	-- Condition Critical!
@@ -2488,7 +2830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 66.7, 57, ASHENVALE },
 						}),
 						objective(2, {	-- Free the Highborne soul in Satyrnaar
-							["provider"] = { "o", 19901 },	-- Circle of Imprisonment
+							["provider"] = { "o", 20352 },	-- Circle of Imprisonment
 							["coord"] = { 81.6, 48.5, ASHENVALE },
 						}),
 					},
@@ -2498,6 +2840,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6/9)
 					["coord"] = { 26.2, 38.6, ASHENVALE },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -3134,10 +3477,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5753, {	-- Ruffled Chaplet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5754, {	-- Wolfpack Medallion
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3208,7 +3551,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(6054, {	-- Recipe: Shadow Protection Potion
+						i(6054, {	-- Recipe: Shadow Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3220,7 +3563,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7361, {	-- Pattern: Herbalist's Gloves
+						i(7361, {	-- Pattern: Herbalist's Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3233,7 +3576,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE CATA
 					["groups"] = {
-						i(7361, {	-- Pattern: Herbalist's Gloves
+						i(7361, {	-- Pattern: Herbalist's Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3258,6 +3601,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16072, {	-- Expert Cookbook
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 					},
@@ -3270,10 +3621,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3734, {	-- Recipe: Big Bear Steak
+						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(5489, {	-- Recipe: Lean Venison
+						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -3286,11 +3637,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(211691, {	-- Spell Notes: Arcane Blast
+					--[[
+					-- TODO: Find the objectIDs and if there are any questIDs.
+					["providers"] = {
+						{ "o",  },	-- Arcane Shard
+						{ "o",  },	-- Arcane Shard
+						{ "o",  },	-- Arcane Shard
+					},
+					]]--
+					["description"] = "Cast Arcane Explosion in the correct order next to the Arcane Shard. South to North.",
+					["coords"] = {
+						{ 13, 24.8, ASHENVALE },	-- Southern Crystal
+						{ 14, 19.8, ASHENVALE },	-- Middle Crystal
+						{ 13.5, 15.8, ASHENVALE },	-- Northern Crystal
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["groups"] = {
+						recipe(401757),	-- Engrave Gloves - Arcane Blast
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210044, {	-- Symbol of the First Owl
+					["providers"] = {
+						{ "o", 410020 },	-- Owl Statue
+						{ "n", 211269 },	-- Summoned Wisp
+					},
+					["description"] = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
+					["coord"] = { 87, 43.2, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+				})),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(23777, {	-- Diabolical Plans [Alliance]
 					["timeline"] = { "added 2.0.1.6180" },
@@ -3311,11 +3697,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(1351, {	-- Fingerbone Bracers
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 15.09.2023
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					-- #endif
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 3808,	-- Forsaken Dark Stalker
+					["coords"] = {
+						{ 75.8, 73.6, ASHENVALE },
+						{ 77.4, 75.4, ASHENVALE },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 3928,	-- Rotting Slime
+					["coords"] = {
+						{ 75.6, 69.2, ASHENVALE },
+						{ 77.2, 73.8, ASHENVALE },
+						{ 71.8, 70.8, ASHENVALE },
+						{ 69.8, 74.8, ASHENVALE },
+						{ 73.6, 79.6, ASHENVALE },
+						{ 72.8, 74.4, ASHENVALE },
+					},
+					-- #endif
 				}),
 				i(78343, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
 					["timeline"] = { "added 4.3.0" },
@@ -3327,6 +3727,68 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3919,	-- Withered Ancient
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209840, {	-- Gnarled Wand of Wild Magic
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["cost"] = {
+						{ "i", 209841, 1 },	-- Wild Magic Essence
+						{ "i", 11288, 1 },	-- Greater Magic Wand
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(211534, {	-- Primal Insight
+					["coords"] = {
+						{ 37.6, 35.4, ASHENVALE },
+						{ 32.4, 42.2, ASHENVALE },
+						{ 54.6, 63.0, ASHENVALE },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						3924,	-- Thistlefur Shaman
+						3922,	-- Thistlefur Totemic
+						3750,	-- Foulweald Totemic
+					},
+					["groups"] = {
+						i(211531, {	-- Prophecy of Seven Visitors
+							["description"] = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
+							["coords"] = {
+								{ 38, 29, ASHENVALE },
+								{ 38, 26, ASHENVALE },
+							},
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(415997),	-- Engrave Chest - Strength of Soul
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(211777, {	-- Naga Manuscript
+					["coords"] = {
+						{ 7.2, 13.2, DARKSHORE },
+						{ 14.0, 26.6, DARKSHORE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["crs"] = {
+						3715,	-- Wrathtail Sea Witch
+						3717,	-- Wrathtail Sorceress
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209841, {	-- Wild Magic Essence
+					["coords"] = {
+						{ 33.6, 38.8, ASHENVALE },
+						{ 54.6, 63.0, ASHENVALE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						3748,	-- Foulweald Shaman
+						3750,	-- Foulweald Totemic
+						3924,	-- Thistlefur Shaman
+						3922,	-- Thistlefur Totemic
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),

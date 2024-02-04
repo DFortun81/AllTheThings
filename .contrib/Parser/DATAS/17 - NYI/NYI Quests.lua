@@ -89,6 +89,7 @@ root(ROOTS.NeverImplemented, {
 				q(5703, { ["name"] = "<NYI> The Rites of Old", }),
 				q(1443, { ["name"] = "<nyi> The Shakedown", }),
 				q(5659, { ["name"] = "<NYI> Touch of Weakness", }),
+				q(1288, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1289, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1292, { ["name"] = "<nyi><TXT> Centaur Hoofprints", }),
 				q(241, { ["name"] = "<TEST> HEY MISTER WILSON!", }),
@@ -105,6 +106,7 @@ root(ROOTS.NeverImplemented, {
 				q(497, { ["name"] = "<UNUSED>", }),
 				q(534, { ["name"] = "<UNUSED>", }),
 				q(612, { ["name"] = "<UNUSED>", }),
+				q(774, { ["name"] = "<UNUSED>", }),	-- Mulgore
 				q(807, { ["name"] = "<UNUSED>", }),
 				q(810, { ["name"] = "<UNUSED>", }),
 				q(811, { ["name"] = "<UNUSED>", }),
@@ -169,6 +171,7 @@ root(ROOTS.NeverImplemented, {
 				q(5696, { ["name"] = "<UNUSED>", }),
 				q(5697, { ["name"] = "<UNUSED>", }),
 				q(6841, { ["name"] = "<UNUSED>", }),
+				q(6842, { ["name"] = "<UNUSED>", }),	-- Silithus
 				q(7904, { ["name"] = "<UNUSED>", }),
 				q(8247, { ["name"] = "<UNUSED>", }),
 				q(8248, { ["name"] = "<UNUSED>", }),
@@ -178,10 +181,7 @@ root(ROOTS.NeverImplemented, {
 				q(8571, { ["name"] = "<UNUSED> Armor Kits", }),
 				q(6202, { ["name"] = "<UNUSED> Good and Evil", }),
 				q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
-				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
-				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
 				q(785, { ["name"] = "A Strategic Alliance", }),
 				q(908, { ["name"] = "Amongst the Ruins", }),
 				q(8489, { ["name"] = "An Intact Converter", }),
@@ -189,17 +189,19 @@ root(ROOTS.NeverImplemented, {
 				q(8478, { ["name"] = "Choose Your Weapon", }),
 				q(8230, { ["name"] = "Collin's Test Quest", }),
 				q(7906, { ["name"] = "Darkmoon Cards - Beast", }),
+				q(1272, { ["name"] = "Finding Reethe <CHANGE INTO GOSSIP>", }),	-- Dustwallow Marsh
+				q(1283, { ["name"] = "Fire at the Shady Rest <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(1127, { ["name"] = "Fool's Stout", }),
 				q(1174, { ["name"] = "Gnomes Win!", }),
 				q(1099, { ["name"] = "Goblins Win!", }),
 				q(7681, { ["name"] = "Hunter test quest", }),
 				q(7682, { ["name"] = "Hunter test quest2", }),
+				q(1281, { ["name"] = "Jim's Song <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(5383, { ["name"] = "Krastinov's Bag of Horrors", }),
 				q(636, { ["name"] = "Legends of the Earth <NYI>", }),
 				q(7479, { ["name"] = "Libram of Focus", }),
 				q(7480, { ["name"] = "Libram of Protection", }),
 				q(7478, { ["name"] = "Libram of Rapidity", }),
-				q(3366, { ["name"] = "OLD The Glowing Shard", }),
 				q(7741, { ["name"] = "Praise from the Emerald Circle <NYI> <TXT>", }),
 				q(8152, { ["name"] = "REUSE", }),
 				q(8973, { ["name"] = "REUSE", }),
@@ -211,16 +213,115 @@ root(ROOTS.NeverImplemented, {
 				q(7869, { ["name"] = "test quest - do not use", }),
 				q(7870, { ["name"] = "test quest2 - do not use", }),
 				q(708, { ["name"] = "The Black Box", }),
+				q(1263, { ["name"] = "The Burning Inn <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
+				q(9065, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Dustwallow Marsh
 				q(8896, { ["name"] = "The Dwarven Spy", }),
 				q(3911, { ["name"] = "The Last Element", }),
 				q(787, { ["name"] = "The New Horde", }),
-				q(9695, { ["name"] = "The Sun King's Command", }),
 				q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
 				q(7790, { ["name"] = "The Written Word", }),
+				q(2019, { ["name"] = "Tools of the Trade", }),
 				q(8340, { ["name"] = "Twilight Signet Ring <NYI> <TXT>", }),
 				q(1318, { ["name"] = "Unfinished Gordok Business", }),
 				q(7962, { ["name"] = "Wabbit Pelts", }),
 				q(7961, { ["name"] = "Waskily Wabbits!", }),
+				q(9296, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9297, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9298, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9695, { ["name"] = "The Sun King's Command", }),
+				i(20946, { ["name"] = "Tactical Task Briefing III", }),	-- Silithus
+				i(21246, { ["name"] = "Combat Task Briefing I", }),	-- Silithus
+				i(21247, { ["name"] = "Combat Task Briefing II", }),	-- Silithus
+				q(999, { ["name"] = "When Dreams Turn to Nightmares", }),
+				q(1005, { ["name"] = "What Lurks Beyond", }),
+				q(1006, { ["name"] = "What Lies Beyond", }),
+				q(1500, { ["name"] = "Waking Naralex", }),
+
+				-- Got these from Questie
+				q(1, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
+				q(8411, { ["name"] = "Mastering the Elements", }),
+				q(7788, { ["name"] = "Vanquish the Invaders!", }),
+				q(7871, { ["name"] = "Vanquish the Invaders!", }),
+				q(7872, { ["name"] = "Vanquish the Invaders!", }),
+				q(7873, { ["name"] = "Vanquish the Invaders!", }),
+				q(8290, { ["name"] = "Vanquish the Invaders!", }),
+				q(8291, { ["name"] = "Vanquish the Invaders!", }),
+
+				-- Retired PVP Battleground Quests
+				-- Warsong Gulch
+				q(8293),	-- Mark of Honor [lvl 60]
+				q(7922),	-- Mark of Honor [lvl 50]
+				q(7923),	-- Mark of Honor [lvl 40]
+				q(7924),	-- Mark of Honor [lvl 30]
+				q(7925),	-- Mark of Honor [lvl 20]
+				q(8296),	-- Mark of Honor [lvl 10]
+				q(8567, { ["name"] = "Past Victories in Warsong Gulch", }),
+				q(8568, { ["name"] = "Past Victories in Warsong Gulch", }),
+				q(8569, { ["name"] = "Past Efforts in Warsong Gulch", }),
+				q(8570, { ["name"] = "Past Efforts in Warsong Gulch", }),
+				q(7789, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(7874, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(7875, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(7876, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(8294, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(8295, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(8266),	-- Ribbons of Sacrifice
+				q(8267),	-- Ribbons of Sacrifice
+				q(8268),	-- Ribbons of Sacrifice
+				q(8269),	-- Ribbons of Sacrifice
+				q(8002),	-- Silverwing Sentinels <NYI> <TXT>
+				i(19213),	-- Silverwing Talisman of Merit
+				q(8292),	-- Talismans of Merit [lvl 60]
+				q(7886),	-- Talismans of Merit [lvl 50]
+				q(7888),	-- Talismans of Merit [lvl 40]
+				q(7887),	-- Talismans of Merit [lvl 30]
+				q(7921),	-- Talismans of Merit [lvl 20]
+				q(8289),	-- Talismans of Merit [lvl 10]
+				i(20256),	-- Warsong Gulch Ribbon of Sacrifice
+				i(19322),	-- Warsong Mark of Honor
+				q(8001),	-- Warsong Outriders <NYI> <TXT>
+
+				-- Arathi Basin
+				i(19725),	-- Arathi Resource Crate
+				q(8158),	-- More Resource Crates [lvl 20] (A)
+				q(8165),	-- More Resource Crates [lvl 20] (H)
+				q(8159),	-- More Resource Crates [lvl 30] (A)
+				q(8164),	-- More Resource Crates [lvl 30] (H)
+				q(8157),	-- More Resource Crates [lvl 40] (A)
+				q(8163),	-- More Resource Crates [lvl 40] (H)
+				q(8081),	-- More Resource Crates [lvl 50] (A)
+				q(8124),	-- More Resource Crates [lvl 50] (H)
+				q(8298),	-- More Resource Crates [lvl 60] (A)
+				q(8300),	-- More Resource Crates [lvl 60] (H)
+				q(8565),	-- Past Victories in Arathi
+				q(8566),	-- Past Victories in Arathi
+				q(8080, { ["name"] = "Arathi Basin Resources!", }),
+				q(8081, { ["name"] = "More Resource Crates", }),
+				q(8124, { ["name"] = "More Resource Crates", }),
+				q(8157, { ["name"] = "More Resource Crates", }),
+				q(8158, { ["name"] = "More Resource Crates", }),
+				q(8159, { ["name"] = "More Resource Crates", }),
+				q(8163, { ["name"] = "More Resource Crates", }),
+				q(8164, { ["name"] = "More Resource Crates", }),
+				q(8165, { ["name"] = "More Resource Crates", }),
+				q(8298, { ["name"] = "More Resource Crates", }),
+				q(8300, { ["name"] = "More Resource Crates", }),
+				q(8565, { ["name"] = "Past Victories in Arathi", }),
+				q(8566, { ["name"] = "Past Victories in Arathi", }),
+				q(8123, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8160, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8161, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8162, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8299, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8154, { ["name"] = "Arathi Basin Resources!", }),
+				q(8155, { ["name"] = "Arathi Basin Resources!", }),
+				q(8156, { ["name"] = "Arathi Basin Resources!", }),
+				q(8297, { ["name"] = "Arathi Basin Resources!", }),
+
 			}),
 		}),
 		tier(TBC_TIER, {
@@ -407,12 +508,20 @@ root(ROOTS.NeverImplemented, {
 				q(12479, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
 				q(12480, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
 				q(11197, { ["name"] = "ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD", }),
+				q(9168, { ["name"] = "Heart of Deatholme", }),
+				q(9357, { ["name"] = "Report to Aeldon Sunbrand", }),
+				q(9568, { ["name"] = "On the Offensive", }),
+				q(10260, { ["name"] = "Netherologist Coppernickels", }),
+				q(10292, { ["name"] = "More Power!", }),
+				q(10404, { ["name"] = "Against the Legion", }),
+				q(10844, { ["name"] = "Forge Camp: Anger", }),
 			}),
 		}),
 		tier(WOTLK_TIER, {
 			-- 3.x.x
 			n(P3xx, {
 				q(11939, { ["name"] = "?????", }),
+				q(11558, { ["name"] = "Dangerous Love", }),
 				q(12233, { ["name"] = "[Depricated]Sewing Your Seed", }),
 				q(24908, { ["name"] = "[NOT USED] Build the Fort Placeholder", }),
 				q(24867, { ["name"] = "[NOT USED] Lumberjack Slam Placeholder", }),
@@ -510,6 +619,7 @@ root(ROOTS.NeverImplemented, {
 			q(28541),	-- Cache of Mau'ari
 			q(14446),	-- Cataclysm!
 			q(28516),	-- Centuries of Suffering
+			q(25413),	-- Change of Plans
 			q(28907),	-- Daily Normal Random (1st)
 			q(28908),	-- Daily Normal Random (Nth)
 			q(29185),	-- Daily Tier 2 Heroic (1st)
@@ -526,7 +636,6 @@ root(ROOTS.NeverImplemented, {
 			q(24898),	-- Going, Going, Guano!
 			q(24899),	-- Going, Going, Guano!
 			q(26527),	-- Gryphon Master Talonaxe
-			q(25413),	-- Change of Plans
 			q(29028),	-- Into Jaedenar
 			q(14481),	-- Into The Abyss
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
@@ -540,7 +649,6 @@ root(ROOTS.NeverImplemented, {
 			q(25435),	-- Pressure is Mounting
 			q(25384),	-- Raw Materials
 			q(26459),	-- Researching the Corruption
-			q(24716),	-- Returning A-Me 01
 			q(26704),	-- REUSE
 			q(28270),	-- Riding Shotgun
 			q(29572),	-- Safety is Job One
@@ -882,13 +990,6 @@ root(ROOTS.NeverImplemented, {
 				q(32291, { ["name"] = "[PH] The Fall of Shan Bu", }),	-- [PH] The Fall of Shan Bu
 			})),
 
-			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 5.3.0"} }, {
-				q(32825, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-			})),
-
 			-- 5.4.0
 			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
 				q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
@@ -1053,7 +1154,7 @@ root(ROOTS.NeverImplemented, {
 				q(33534, { ["name"] = "Find D'kaan", }),	-- Find D'kaan
 				q(35222, { ["name"] = "Firing the Mayor", }),	-- Firing the Mayor
 				q(35228, { ["name"] = "Firing the Mayor", }),	-- Firing the Mayor
-				q(33755, { ["name"] = "First Test Race: 2 Laps", }),	-- First Test Race: 2 Laps
+				q(33755, { ["name"] = "First Test Race: 2 Laps", ["_drop"] = { "g" }, }),	-- First Test Race: 2 Laps
 				q(34846, { ["name"] = "Fish Fight", ["_drop"] = { "g" }, }),	-- Fish Fight
 				q(33635, { ["name"] = "FLAG - Seen Gazebo Explosion", }),	-- FLAG - Seen Gazebo Explosion
 				q(33644, { ["name"] = "FLAG - Seen Wall Explosion", }),	-- FLAG - Seen Wall Explosion
@@ -1077,14 +1178,6 @@ root(ROOTS.NeverImplemented, {
 				q(36544, { ["name"] = "Garrison Max-level Choice Reward Summary: Solo", }),	-- Garrison Max-level Choice Reward Summary: Solo
 				q(36665, { ["name"] = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
 				q(36666, { ["name"] = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
-				q(36530, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks", }),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
-				q(36550, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks", }),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
-				q(36529, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Magnarok", }),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
-				q(36551, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Magnarok", }),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
-				q(36538, { ["name"] = "Garrison Max-level Choice Tracker: Spires Upper Skettis", }),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
-				q(36559, { ["name"] = "Garrison Max-level Choice Tracker: Spires Upper Skettis", }),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
-				q(36560, { ["name"] = "Garrison Max-level Choice Tracker: Talador Shattrath City, East", }),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
-				q(36561, { ["name"] = "Garrison Max-level Choice Tracker: Talador Shattrath City, East", }),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
 				q(36535, { ["name"] = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
 				q(36546, { ["name"] = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
 				q(36536, { ["name"] = "Garrison Max-level Choice Tracker: (PVP) Ashran", }),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
@@ -1116,6 +1209,7 @@ root(ROOTS.NeverImplemented, {
 				q(35755, { ["name"] = "Intricately Carved Battle Staff", }),	-- Intricately Carved Battle Staff
 				q(33987, { ["name"] = "Intro Tracking", }),	-- Intro Tracking
 				q(33496, { ["name"] = "Iron Horde in Karabor", }),	-- Iron Horde in Karabor
+				q(35504, { ["name"] = "Iron Joker", ["_drop"] = { "g" }, }),	-- Iron Joker
 				q(35020, { ["name"] = "Jared's Test Quest", }),	-- Jared's Test Quest
 				q(35294, { ["name"] = "Jasper Moves", }),	-- Jasper Moves
 				q(34690, { ["name"] = "Just the Beginning", }),	-- Just the Beginning
@@ -1610,6 +1704,8 @@ root(ROOTS.NeverImplemented, {
 				q(38298, { ["name"] = "Herbs Galore", ["_drop"] = { "g" }, }),	-- Herbs Galore
 				q(36293, { ["name"] = "It's Gotta Work!", }),	-- It's Gotta Work!
 				q(38245, { ["name"] = "Lots of Ore", ["_drop"] = { "g" }, }),	-- Lots of Ore
+				q(38194, { ["name"] = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
+				q(38202, { ["name"] = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
 				q(38244, { ["name"] = "More Ore", ["_drop"] = { "g" }, }),	-- More Ore
 				q(37752, { ["name"] = "Pet Battles Active", }),	-- Pet Battles Active
 				q(37972, { ["name"] = "Pet Battles Not Active", }),	-- Pet Battles Not Active
@@ -1687,7 +1783,7 @@ root(ROOTS.NeverImplemented, {
 				q(38260, { ["name"] = "Beachhead", }),	-- Beachhead
 				q(38575, { ["name"] = "Beachhead", }),	-- Beachhead
 				q(36593, { ["name"] = "Breakers Invasion! UNUSED", }),	-- Breakers Invasion! UNUSED
-				q(39129, { ["name"] = "Ill Tempered", }),	-- Ill Tempered
+				q(39129, { ["name"] = "Ill Tempered", ["_drop"] = { "g" }, }),	-- Ill Tempered
 				q(38224, { ["name"] = "REUSE", }),	-- REUSE
 				q(36572, { ["name"] = "Tangleheart Return", }),	-- Tangleheart Return
 				q(36661, { ["name"] = "The Power of the Red", }),	-- The Power of the Red
@@ -3128,6 +3224,9 @@ root(ROOTS.NeverImplemented, {
 		tier(BFA_TIER, {
 			-- 8.0.1
 			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+				q(53550),	-- A Change in Leadership
+				q(50882,{ ["_drop"] = { "g" },}),	-- All to Ash
+				q(52220),	-- Dragon Attack
 				q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
 				q(53340),	-- LFG - BFA - Island Expedition - Mythic Win - Nth
 				q(51838),	-- LFG - BFA - Island Expedition - Normal Win - Nth
@@ -3621,9 +3720,8 @@ root(ROOTS.NeverImplemented, {
 					["description"] = "Category: |cFFf09f26Warfronts|r",
 					["lvl"] = 50,
 					["g"] = {
-						i(150733, { -- Scroll of Town Portal
+						i(150733, {	-- Scroll of Town Portal
 							["b"] = 1,
-							["ilvl"] = 45,
 							["q"] = 1,
 							["spellID"] = 259731,
 						}),
@@ -3652,17 +3750,17 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(158174, { -- Battleworn Armor Kit
+						i(158174, {	-- Battleworn Armor Kit
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(162143, { -- Potion of Restoration
+						i(162143, {	-- Potion of Restoration
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(158179, { -- Potion of Combat Acumen
+						i(158179, {	-- Potion of Combat Acumen
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -3678,7 +3776,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(158326, { -- Makeshift Explosives
+						i(158326, {	-- Makeshift Explosives
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -3691,10 +3789,9 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(158709, { -- Refurbished Shredder
+						i(158709, {	-- Refurbished Shredder
 							["b"] = 1,
 							["filterID"] = TOYS,
-							["ilvl"] = 30,
 							["q"] = 3,
 						}),
 					},
@@ -3704,9 +3801,8 @@ root(ROOTS.NeverImplemented, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = 1,
 					["g"] = {
-						i(151557, { -- Champion's Strongbox
+						i(151557, {	-- Champion's Strongbox
 							["b"] = 1,
-							["ilvl"] = 100,
 							["q"] = 2,
 						}),
 					},
@@ -3716,22 +3812,22 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(159723, { -- Chunk of Boar Meat
+						i(159723, {	-- Chunk of Boar Meat
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(159726, { -- Baked Egg
+						i(159726, {	-- Baked Egg
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(159724, { -- Slice of Cheese
+						i(159724, {	-- Slice of Cheese
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(159727, { -- Flagon of Applebrew
+						i(159727, {	-- Flagon of Applebrew
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
@@ -3753,9 +3849,8 @@ root(ROOTS.NeverImplemented, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = 1,
 					["g"] = {
-						i(151557, { -- Champion's Strongbox
+						i(151557, {	-- Champion's Strongbox
 							["b"] = 1,
-							["ilvl"] = 100,
 							["q"] = 2,
 						}),
 					},
@@ -3768,9 +3863,8 @@ root(ROOTS.NeverImplemented, {
 				q(51370, {
 					["lvl"] = 50,
 					["g"] = {
-						i(160054, { -- War-Torn Satchel of Cooperation
+						i(160054, {	-- War-Torn Satchel of Cooperation
 							["b"] = 1,
-							["ilvl"] = 30,
 							["q"] = 3,
 						}),
 					},
@@ -3780,9 +3874,8 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(160219, { -- Scroll of Town Portal
+						i(160219, {	-- Scroll of Town Portal
 							["b"] = 1,
-							["ilvl"] = 45,
 							["q"] = 1,
 							["spellID"] = 278212,
 						}),
@@ -3818,17 +3911,17 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(162140, { -- Battleworn Armor Kit
+						i(162140, {	-- Battleworn Armor Kit
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(162142, { -- Potion of Restoration
+						i(162142, {	-- Potion of Restoration
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(162141, { -- Potion of Combat Acumen
+						i(162141, {	-- Potion of Combat Acumen
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -3840,22 +3933,22 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(163988, { -- Chunk of Boar Meat
+						i(163988, {	-- Chunk of Boar Meat
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(163990, { -- Baked Egg
+						i(163990, {	-- Baked Egg
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(163989, { -- Slice of Cheese
+						i(163989, {	-- Slice of Cheese
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(163991, { -- Flagon of Applebrew
+						i(163991, {	-- Flagon of Applebrew
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
@@ -3877,7 +3970,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(163219, { -- Repurposed Explosive Device
+						i(163219, {	-- Repurposed Explosive Device
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -4489,7 +4582,6 @@ root(ROOTS.NeverImplemented, {
 				-- 8.0.1.26567
 				q(52304),	--
 				q(52747),	--
-				q(52775),	-- Siege of Boralus: What's Yours is Mine
 				q(52783),	--
 				q(52808),	--
 				q(52811),	--
@@ -4528,11 +4620,9 @@ root(ROOTS.NeverImplemented, {
 				q(53214),	--
 				q(53215),	--
 				q(53271),	-- Blooming Star Moss
-				q(53273),	-- Winter's Kiss Cluster
 				q(53281),	-- Winter's Kiss Cluster
 				q(53283),	-- Flourishing Sea Stalks
 				q(53284),	-- Flourishing Riverbud
-				q(53288),	-- Overgrown Anchor Weed
 				q(53297),	-- Flourishing Riverbud
 				q(53299),	-- Blooming Siren's Sting
 				q(53302),	-- Flourishing Riverbud
@@ -4634,13 +4724,6 @@ root(ROOTS.NeverImplemented, {
 					["description"] = "Category: |cFFf09f26World PvP|r",
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(167100, { -- Alliance Champion's Cache
-							["b"] = 1,
-							["ilvl"] = 59,
-							["q"] = 3,
-						}),
-					},
 				}),
 				-- tools
 				-- 8.1.0.27826
@@ -4825,6 +4908,7 @@ root(ROOTS.NeverImplemented, {
 
 			-- 8.2.0
 			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+				q(54048),	-- To Kill A Warden
 				q(56836),	-- The Eternal Palace: Master's Call
 				q(56837),	-- The Eternal Palace: Master's Call
 				q(56838),	-- The Eternal Palace: Master's Call
@@ -4870,15 +4954,11 @@ root(ROOTS.NeverImplemented, {
 					["description"] = "Area: |cFFf09f26Nazjatar|r",
 					["lvl"] = 50,
 				}),
-				q(54996, {
-					["description"] = "Category: |cFFf09f26Seasonal|r",
-					["lvl"] = 50,
-				}),
 				q(55111, {
 					["description"] = "Area: |cFFf09f26Nazjatar|r",
 					["lvl"] = 50,
 					["g"] = {
-						i(169444, { -- Creature Compendium: Zanj'ir Naga
+						i(169444, {	-- Creature Compendium: Zanj'ir Naga
 							["q"] = 0,
 						}),
 					},
@@ -5192,7 +5272,6 @@ root(ROOTS.NeverImplemented, {
 				q(56040),	--
 				q(56052),	--
 				q(56073),	--
-				q(56101),	--
 				q(56102),	--
 				q(56115),	--
 				q(56124),	--
@@ -5271,7 +5350,6 @@ root(ROOTS.NeverImplemented, {
 				q(56874),	--
 				q(56875),	--
 				q(56876),	--
-				q(56884),	--
 				q(56898),	--
 				q(56902),	--
 				-- 8.2.0.30495
@@ -5328,9 +5406,8 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(170077, { -- Gleaming Ashmaul Strongbox
+						i(170077, {	-- Gleaming Ashmaul Strongbox
 							["b"] = 1,
-							["ilvl"] = 72,
 							["q"] = 4,
 						}),
 					},
@@ -5340,9 +5417,8 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(170077, { -- Gleaming Ashmaul Strongbox
+						i(170077, {	-- Gleaming Ashmaul Strongbox
 							["b"] = 1,
-							["ilvl"] = 72,
 							["q"] = 4,
 						}),
 					},
@@ -5371,7 +5447,6 @@ root(ROOTS.NeverImplemented, {
 				q(57560),	--
 				-- 8.2.5.31401
 				q(57697),	--
-				q(57698),	--
 				q(57706),	--
 				-- 8.2.5.31521
 				-- 8.2.5.31599
@@ -5414,6 +5489,7 @@ root(ROOTS.NeverImplemented, {
 				q(57962),	-- Heroic: Battle for Darkshore
 				q(57973),	-- Heroic: Battle for Darkshore
 				q(57974),	-- Heroic: Battle for Darkshore
+				q(57874),	-- Visions of a Dark Destiny
 				-- Unsorted
 				q(55036, {
 					["description"] = "Area: |cFFf09f26Prototype|r",
@@ -5538,7 +5614,6 @@ root(ROOTS.NeverImplemented, {
 				q(58511),	--
 				q(58513),	--
 				-- 8.3.0.32151
-				q(58534),	--
 				q(58604),	--
 				q(58626),	--
 				-- 8.3.0.32203
@@ -5648,7 +5723,7 @@ root(ROOTS.NeverImplemented, {
 				q(54986, {
 					["lvl"] = 50,
 					["g"] = {
-						i(169154, { -- [PH] N'Zoth Cache
+						i(169154, {	-- [PH] N'Zoth Cache
 							["q"] = 4,
 						}),
 					},
@@ -5847,6 +5922,10 @@ root(ROOTS.NeverImplemented, {
 				q(59986),	-- Wide Worlds of Catalysts
 				q(60888),	-- Ceremony of Awakening
 				q(60599),	-- Soul Shape
+				q(62012),	-- Ensemble: Stitched Alacrity of Maldraxxus
+				q(62011),	-- Ensemble: Stitched Authority of Maldraxxus
+				q(62013),	-- Ensemble: Stitched Guile of Maldraxxus
+				q(62014),	-- Ensemble: Stitched Rationale of Maldraxxus
 				-- Quest from Unsorted
 				q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
@@ -6798,7 +6877,7 @@ root(ROOTS.NeverImplemented, {
 				-- 9.0.2.35854
 				q(62815),	--
 				q(62816),	--
-				q(62818),	--
+				q(62818),	-- Pumpkin Head	(spellID 344765)
 				q(62820),	--
 				-- 9.0.2.35938
 				q(62828, { ["name"] = "[DNT] Door of Shadows", }),	-- [DNT] Door of Shadows
@@ -7091,7 +7170,6 @@ root(ROOTS.NeverImplemented, {
 				q(64991),	--
 				q(65012),	--
 				q(65013),	-- Chest Unlocked (spellID 370679)
-				q(65088),	--
 				-- 9.1.5.40071
 				-- 9.1.5.40078
 				q(65139),	--
@@ -7288,7 +7366,6 @@ root(ROOTS.NeverImplemented, {
 				q(65645),	--
 				-- 9.2.0.41827
 				-- 9.2.0.41962
-				q(65697),	--
 				q(65708),	--
 				q(65715),	--
 				q(65733),	--
@@ -7370,6 +7447,156 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.0
 			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				q(75528),	-- A Tester's Guide to Entering Zaralek
+			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				--10.1.5.49516
+				q(73022),	-- [DNT] Custom Delays
+				q(73087),	--
+				q(73088),	--
+				q(73116),	--
+				q(73121),	--
+				q(73122),	--
+				q(73123),	--
+				q(75211),	--
+				q(75460),	--
+				q(75536),	--
+				q(75605),	--
+				q(75714),	-- A Trainee's Test [DNT]
+				q(76021),	-- Basic Kill Quest [DNT]
+				q(76024),	-- Basic Kill Quest [DNT]
+				q(76198),	--
+				q(76218),	--
+				q(76219),	--
+				q(76220),	--
+				q(76221),	--
+				q(76222),	--
+				q(76223),	--
+				q(76224),	--
+				q(76225),	--
+				q(76226),	--
+				q(76227),	--
+				q(76228),	--
+				q(76229),	--
+				q(76230),	--
+				q(76231),	--
+				q(76232),	--
+				q(76233),	--
+				q(76234),	--
+				q(76235),	--
+				q(76236),	--
+				q(76237),	--
+				q(76238),	--
+				q(76239),	--
+				q(76245),	--
+				q(76289),	--
+				q(76360),	--
+				q(76371),	--
+				q(76374),	--
+				--10.1.5.49595
+				q(76555),	--
+				--10.1.5.49719
+				q(76561),	--
+				q(76563),	--
+				q(76636),	--
+				q(76675),	--
+				q(76716),	--
+				q(76717),	--
+				q(76718),	--
+				q(76719),	--
+				q(76720),	--
+				q(76721),	--
+				q(76722),	--
+				q(76723),	--
+				q(76724),	--
+				q(76725),	--
+				q(76726),	--
+				q(76727),	--
+				q(76728),	--
+				q(76729),	--
+				q(76730),	--
+				q(76731),	--
+				q(76732),	--
+				q(76981),	--
+				--10.1.5.49824
+				q(77092),	-- Test Quest (DNT)
+				q(77094),	-- Basic Kill Quest [DNT]
+				q(77174),	--
+				q(77184),	--
+				q(77185),	--
+				q(77199),	--
+				--10.1.5.50006
+				q(77358),	--
+				q(77364),	--
+				q(77418),	--
+				q(77419),	--
+				--10.1.5.50130
+				q(77435),	--
+				q(77506),	--
+				q(77567),	--
+				--10.1.5.50199
+				q(77691),	--
+				--10.1.5.50355
+				q(76157),	--
+				--10.1.5.50469
+				q(77883),	--
+				--10.1.5.51130
+				q(77333),	--
+				q(77336),	--
+				q(77337),	--
+				q(77338),	--
+			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				-- 10.1.7.50442
+				q(75938),	-- Test
+				q(77485),	--
+				q(77488),	--
+				q(77615),	--
+				q(77699),	--
+				q(77700),	--
+				q(77701),	--
+				q(77702),	--
+				q(77703),	--
+				q(77704),	--
+				q(77705),	--
+				q(77706),	--
+				q(77707),	--
+				q(77708),	--
+				q(77709),	--
+				q(77710),	--
+				q(77790),	--
+				q(77861),	--
+				-- 10.1.7.50893
+				q(78161),	--
+				-- 10.1.7.51059
+				q(78300),	--
+				q(78323),	--
+				q(78324),	--
+				-- 10.1.7.51187
+				q(76405),	--
+				q(76455),	--
+				q(76511),	--
+				q(76553),	--
+				q(76560),	-- [PH] Cogs Breadcrumb
+				q(77569),	--
+				-- 10.1.7.51237
+				q(76210),	--
+				q(76211),	--
+				q(76408),	--
+				q(77848),	--
+				q(77849),	--
+				-- 10.1.7.51421
+				q(78110),	--
+				-- 10.1.7.51754
+				q(73053),	--
+				q(73063),	--
+				q(73954),	--
+				q(74288),	--
+				q(74289),	--
+				q(74846),	--
 			})),
 		}),
 	}),

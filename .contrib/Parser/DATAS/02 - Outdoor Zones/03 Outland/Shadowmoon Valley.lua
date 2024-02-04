@@ -19,17 +19,6 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(5, {	-- Bloodknight Antari
-								["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
-								["cr"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(864, {	-- Explore Shadowmoon Valley
 						-- #if BEFORE WRATH
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
@@ -87,50 +76,51 @@ root(ROOTS.Zones, {
 						["rank"] = 90,
 						-- #endif
 						-- #else
-						crit(1, {	-- Wildhammer Stronghold
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								10776,	-- Dissension Amongst the Ranks...
-								10678,	-- The Main Course!
-								10744,	-- News of Victory (A)
-							},
-						}),
-						crit(1, {	-- Shadowmoon Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								-- TODO: there's more required here
-								10745,	-- News of Victory (H)
-							},
-						}),
-						crit(2, {	-- Netherwing Ledge
-							["sourceQuest"] = 11041,	-- A Job Unfinished...
-						}),
-						crit(3, {	-- The First Death Knight (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 10645,	-- Teron Gorefiend, I Am...
-						}),
-						crit(3, {	-- The First Death Knight (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 10639,	-- Teron Gorefiend, I Am...
-						}),
-						crit(4, {	-- Borrowed Power
-							["sourceQuests"] = {
-								10651,	-- Varedis Must Be Stopped (Exarch Onaala, Altar of Sha'tar)
-								10692,	-- Varedis Must Be Stopped (Larissa Sunstrike, Sanctum of the Stars)
-							},
-						}),
-						crit(5, {	-- Akama's Promise
-							["sourceQuest"] = 10708,	-- Akama's Promise
-						}),
-						crit(6, {	-- The Cipher of Damnation
-							["sourceQuest"] = 10588,	-- The Cipher of Damnation
-						}),
-						crit(7, {	-- Anti-Demon Weapons
-							["sourceQuest"] = 10679,	-- Quenching the Blade
-						}),
-						crit(8, {	-- The Dark Conclave
-							["sourceQuest"] = 10808,	-- Thwart the Dark Conclave
-						}),
+						-- crit(1, {	-- Wildhammer Stronghold
+						-- 	["races"] = ALLIANCE_ONLY,
+						-- 	["sourceQuests"] = {
+						-- 		10776,	-- Dissension Amongst the Ranks...
+						-- 		10678,	-- The Main Course!
+						-- 		10744,	-- News of Victory (A)
+						-- 	},
+						-- }),
+						-- crit(1, {	-- Shadowmoon Village
+						-- 	["races"] = HORDE_ONLY,
+						-- 	["sourceQuests"] = {
+						-- 		10673,	-- Felspine the Greater (H)
+						-- 		10769,	-- Dissension Amongst the Ranks... (H)
+						-- 		10745,	-- News of Victory (H)
+						-- 	},
+						-- }),
+						-- crit(2, {	-- Netherwing Ledge
+						-- 	["sourceQuest"] = 11041,	-- A Job Unfinished...
+						-- }),
+						-- crit(3, {	-- The First Death Knight (A)
+						-- 	["races"] = ALLIANCE_ONLY,
+						-- 	["sourceQuest"] = 10645,	-- Teron Gorefiend, I Am...
+						-- }),
+						-- crit(3, {	-- The First Death Knight (H)
+						-- 	["races"] = HORDE_ONLY,
+						-- 	["sourceQuest"] = 10639,	-- Teron Gorefiend, I Am...
+						-- }),
+						-- crit(4, {	-- Borrowed Power
+						-- 	["sourceQuests"] = {
+						-- 		10651,	-- Varedis Must Be Stopped (Exarch Onaala, Altar of Sha'tar)
+						-- 		10692,	-- Varedis Must Be Stopped (Larissa Sunstrike, Sanctum of the Stars)
+						-- 	},
+						-- }),
+						-- crit(5, {	-- Akama's Promise
+						-- 	["sourceQuest"] = 10708,	-- Akama's Promise
+						-- }),
+						-- crit(6, {	-- The Cipher of Damnation
+						-- 	["sourceQuest"] = 10588,	-- The Cipher of Damnation
+						-- }),
+						-- crit(7, {	-- Anti-Demon Weapons
+						-- 	["sourceQuest"] = 10679,	-- Quenching the Blade
+						-- }),
+						-- crit(8, {	-- The Dark Conclave
+						-- 	["sourceQuest"] = 10808,	-- Thwart the Dark Conclave
+						-- }),
 						-- #endif
 					}),
 				}),
@@ -203,6 +193,11 @@ root(ROOTS.Zones, {
 				prof(MINING, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32464)),	-- Nethercite Ore
+				}),
+				petbattles({
+					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
+						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+					}),
 				}),
 				prof(SKINNING, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32470)),	-- Nethermine Flayer Hide
@@ -1437,7 +1432,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10707, {	-- The Ata'mal Terrace
-						["qg"] = 21770,	-- Akama
+						["qg"] = 21700,	-- Akama
 						["sourceQuest"] = 10706,	-- A Mysterious Portent
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 					}),
@@ -2179,7 +2174,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 10),
 					}),
-					i(31682, {	-- Recipe: Fel Mana Potion
+					i(31682, {	-- Recipe: Fel Mana Potion (RECIPE!)
 						["crs"] = {
 							19796,	-- Eclipsion Archmage
 							19795,	-- Eclipsion Blood Knight
@@ -2190,7 +2185,7 @@ root(ROOTS.Zones, {
 							22017,	-- Eclipsion Spellbinder
 						},
 					}),
-					i(31681, {	-- Recipe: Fel Regeneration Potion
+					i(31681, {	-- Recipe: Fel Regeneration Potion (RECIPE!)
 						["crs"] = {
 							20878,	-- Deathforge Guardian
 							20887,	-- Deathforge Imp
@@ -2198,7 +2193,7 @@ root(ROOTS.Zones, {
 							19754,	-- Deathforge Tinkerer
 						},
 					}),
-					i(31680, {	-- Recipe: Fel Strength Elixir
+					i(31680, {	-- Recipe: Fel Strength Elixir (RECIPE!)
 						["crs"] = {
 							19755,	-- Mo'arg Weaponsmith
 							21302,	-- Shadow Council Warlock
@@ -2206,7 +2201,7 @@ root(ROOTS.Zones, {
 							19740,	-- Wrathwalker
 						},
 					}),
-					i(22924, {	-- Recipe: Major Shadow Protection Potion
+					i(22924, {	-- Recipe: Major Shadow Protection Potion (RECIPE!)
 						["crs"] = { 21302 },	-- Shadow Council Warlock
 					}),
 					i(23806, {	-- Schematic: Hyper-Vision Goggles

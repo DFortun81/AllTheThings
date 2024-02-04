@@ -101,251 +101,243 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						MALDRAXXUS,
 					},
 					["g"] = {
+						prof(ABOMINABLE_STITCHING, {
+							n(CRAFTABLES, {
+								i(180264),	-- Abominable Backup
+								i(178594),	-- Anima-bound Wraps
+								i(181268),	-- Backbone (PET!)
+								i(178568),	-- Bag of Creepy Crawlies
+								i(182160),	-- Bag of Twigin Treats
+								i(183717),	-- Bindings of Wellbeing
+								i(182078),	-- Bonesewn Fleshroc (MOUNT!)
+								i(180275),	-- Construct Disguise
+								i(183811),	-- Construct's Best Friend
+								i(180267),	-- Lil' Eddie
+								i(181282),	-- Mu'dud (PET!)
+								i(178658),	-- Restore Construct
+								i(184606),	-- Tighter Stitching
+								i(183599),	-- Tossable Head
+							}),
+							filter(RECIPES, {
+								r(327091), -- Abominable Backup
+								r(326903), -- Anima-bound Wraps
+								r(342849), -- Armor Plating
+								r(344796), -- Back Mushrooms
+								r(338057), -- Backbone
+								r(326762), -- Bag of Creepy Crawlies
+								r(338059), -- Bag of Twigin Treats
+								r(344110), -- Barrel O' Fish
+								r(338046, {["u"]=TRAINING}), -- Bindings of Wellbeing
+								r(338052, {["u"]=TRAINING}), -- Bonesewn Fleshroc
+								r(342846), -- Butterflies
+								r(344100), -- Chef Hat
+								r(342841), -- Collector Kash's Pack
+								r(325454, {["u"]=TRAINING}), -- Construct Body: "Atticus"
+								r(325284, {["u"]=TRAINING}), -- Construct Body: "Chordy"
+								r(325453, {["u"]=TRAINING}), -- Construct Body: "Flytrap"
+								r(326380, {["u"]=TRAINING}), -- Construct Body: "Gas Bag"
+								r(338039, {["u"]=TRAINING}), -- Construct Body: "Guillotine"
+								r(338037, {["u"]=TRAINING}), -- Construct Body: "Iron Phillip"
+								r(326408, {["u"]=TRAINING}), -- Construct Body: "Mama Tomalin"
+								r(325452, {["u"]=TRAINING}), -- Construct Body: "Marz"
+								r(325458, {["u"]=TRAINING}), -- Construct Body: "Miru"
+								r(338043, {["u"]=TRAINING}), -- Construct Body: "Naxx"
+								r(326379, {["u"]=TRAINING}), -- Construct Body: "Neena"
+								r(326406, {["u"]=TRAINING}), -- Construct Body: "Professor"
+								r(325451, {["u"]=TRAINING}), -- Construct Body: "Roseboil"
+								r(338040, {["u"]=TRAINING}), -- Construct Body: "Sabrina"
+								r(326407, {["u"]=TRAINING}), -- Construct Body: "Toothpick"
+								r(331404), -- Construct Disguise
+								r(342803), -- Construct's Best Friend
+								r(337535), -- Dapper Top Hat
+								r(344095), -- Dundae's Hat
+								r(344101), -- Egg Hat
+								r(342418), -- Engineering Pack
+								r(342843, {["u"]=TRAINING}), -- Faction Flag
+								r(342447), -- Flower Crown
+								r(342448), -- Halo of Purity
+								r(342468), -- Happiness Bird
+								r(342902), -- Hitchhiker
+								r(338383), -- Holiday Hat
+								r(331403), -- Lil' Eddie
+								r(344096), -- Lovely Candle Display
+								r(342851), -- Magician's Hat
+								r(338058), -- Mu'dud
+								r(342421), -- Operational Instructions
+								r(337540), -- Outlaw Flag
+								r(344769), -- Pirate Hat
+								r(342850), -- Plague Pack
+								r(342455), -- Red Eye Lens
+								r(327090), -- Restore Construct
+								r(342842), -- Safe Fall Pack
+								r(344798), -- Shoulder Sprouts
+								r(342483), -- Six-League Pack
+								r(344766), -- Skull Fungus
+								r(342454), -- Skull Protector
+								r(342899), -- Spare Weapon
+								r(342845), -- Sticky Cat
+								r(347024), -- Tighter Stitching
+								r(342782), -- Tossable Head
+								r(344097), -- Trained Corpselice
+								r(337554), -- Trustworthy Doll
+								r(344797), -- Underpowered Gravity Pack
+								r(344770), -- Unworthy Crown
+								r(342417), -- Vestigial Wings
+							}),
+						}),
 						n(ACHIEVEMENTS, {
-							achraw(14684, {	-- Abominable Lives
-								crit(1, {	-- Asset Extraction
-									["_quests"] = { 62256 },
-								}),
-								crit(2, {	-- A Brokered Deal
-									["_quests"] = { 62213 },
-								}),
-								crit(3, {	-- Supply Chain
-									["_quests"] = { 59126 },
-								}),
-								crit(4, {	-- A Bountiful Haul
-									["_quests"] = { 61510 },
-								}),
-								crit(5, {	-- Shinies of Bastion
-									["_quests"] = { 61509 },
-								}),
-								crit(6, {	-- Something Old, Something Used
-									["_quests"] = { 58432 },
-								}),
-								crit(7, {	-- Things They Leave Behind
-									["_quests"] = { 61511 },
-								}),
-								crit(8, {	-- Corpse Run
-									["_quests"] = { 60291, 61522, 61523 },	-- TODO: maybe one of these is always first
-								}),
-								crit(9, {	-- Field Training
-									["_quests"] = { 62217 },
-								}),
-								crit(10, {	-- Training Program
-									["_quests"] = { 62216 },
-								}),
-								crit(11, {	-- Arboreal Tactics
-									["_quests"] = { 62232 },
-								}),
-								crit(12, {	-- In A Bad Light
-									["_quests"] = { 62041 },
-								}),
-								crit(13, {	-- Cure For All Ills
-									["_quests"] = { 60765 },
-								}),
-								crit(14, {	-- Scrounging for Scrolls
-									["_quests"] = { 58515 },
-								}),
-								crit(15, {	-- The Two Sides of History
-									["_quests"] = { 58525 },
-								}),
-								crit(16, {	-- One Lich's Trash...
-									["_quests"] = { 62294 },
-								}),
-								crit(17, {	-- Fighting Words
-									["_quests"] = { 62194 },
-								}),
-								crit(18, {	-- Say The Magic Words
-									["_quests"] = { 61996 },
-								}),
-								crit(19, {	-- The Last Word
-									["_quests"] = { 62195 },
-								}),
-								crit(20, {	-- Digging Around
-									["_quests"] = { 62244 },
-								}),
-								crit(21, {	-- Old Stomping Grounds
-									["_quests"] = { 60237 },
-								}),
-								crit(22, {	-- Special Formula
-									["_quests"] = { 59293 },
-								}),
-								crit(23, {	-- Herbicidal Tendencies
-									["_quests"] = { 62407 },
-								}),
-								crit(24, {	-- Hands on Approach
-									["_quests"] = { 60340 },
-								}),
-								crit(25, {	-- Grinder
-									["_quests"] = { 62261 },
-								}),
-								crit(26, {	-- Cut 'Em Down to Size
-									["_quests"] = { 60342 },
-								}),
-								crit(27, {	-- Baker's Dozen
-									["_quests"] = { 59043 },
-								}),
-								crit(28, {	-- Give A Dog A Bone
-									["_quests"] = { 56470 },
-								}),
-								crit(29, {	-- Pie Not?
-									["_quests"] = { 58992 },
-								}),
-								crit(30, {	-- Bring Your Own
-									["_quests"] = { 57634 },
-								}),
-								crit(31, {	-- Drink to the Dead
-									["_quests"] = { 62276 },
-								}),
+							ach(14684, {	-- Abominable Lives
+								["sym"] = {{ "achievement_criteria" }},
 							}),
 							achraw(14833, {	-- Fashion Abomination
-								crit(1, {	-- Chef Hat
+								crit(50541, {	-- Chef Hat
 									["cost"] = {
 										{ "i", 184039,  1 },	-- 1 Clean White Hat
 										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
 									},
 								}),
-								crit(2, {	-- Dapper Top Hat
+								crit(49864, {	-- Dapper Top Hat
 									["cost"] = {
 										{ "i", 181799,  1 },	-- 1 Extra Large Hat
 										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
 									},
 								}),
-								crit(3, {	-- Dundae's Hat
+								crit(50546, {	-- Dundae's Hat
 									["cost"] = {
 										{ "i", 184036,  1 },	-- 1 Dundae's Hat
 										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
 									},
 								}),
-								crit(4, {	-- Egg Hat
+								crit(50550, {	-- Egg Hat
 									["cost"] = {
 										{ "i", 184040, 1 },	-- 1 Broken Egg Shells
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(5, {	-- Flower Crown
+								crit(49865, {	-- Flower Crown
 									["cost"] = {
 										{ "i", 183755, 1 },	-- 1 Ardenweald Wreath
 										{ "i", 170554, 5 },	-- 5 Vigil's Torch
 									},
 								}),
-								crit(6, {	-- Halo of Purity
+								crit(49866, {	-- Halo of Purity
 									["cost"] = {
 										{ "i", 183756, 1 },	-- 1 Floating Circlet
 										{ "i", 173110, 3 },	-- 3 Umbryl
 									},
 								}),
-								crit(7, {	-- Holiday Hat
+								crit(49867, {	-- Holiday Hat
 									["cost"] = {
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 										{ "i", 2604, 1 },	-- 1 Red Dye
 										{ "i", 8343, 3 },	-- 3 Heavy Silken Thread
 									},
 								}),
-								crit(8, {	-- Magician's Hat
+								crit(49916, {	-- Magician's Hat
 									["cost"] = {
 										{ "i", 183826,  1 },	-- 1 Big Floppy Hat
 										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
 									},
 								}),
-								crit(9, {	-- Pirate Hat
+								crit(50549, {	-- Pirate Hat
 									["cost"] = {
 										{ "i", 184204,  1 },	-- 1 Otherworld Hat
 										{ "i", 173202, 20 },	-- 20 Shrouded Cloth
 									},
 								}),
-								crit(10, {	-- Red Eye Lens
+								crit(49868, {	-- Red Eye Lens
 									["cost"] = {
 										{ "i", 183760, 1 },	-- 1 Venthyr Spectacles
 										{ "i", 180733, 5 },	-- 5 Luminous Flux
 										{ "i", 172934, 5 },	-- 5 Handful of Laestrite Bolts
 									},
 								}),
-								crit(11, {	-- Skull Fungus
+								crit(50551, {	-- Skull Fungus
 									["cost"] = {
 										{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(12, {	-- Skull Protector
+								crit(49869, {	-- Skull Protector
 									["cost"] = {
 										{ "i", 183759, 1 },	-- 1 Unusually Large Cranium
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(13, {	-- Unworthy Crown
+								crit(50553, {	-- Unworthy Crown
 									["cost"] = {
 										{ "i", 184205, 1 },	-- 1 Long Lost Crown
 										{ "i", 171840, 5 },	-- 5 Porous Stone
 									},
 								}),
-								crit(14, {	-- Happiness Bird
+								crit(49871, {	-- Happiness Bird
 									["cost"] = {
 										{ "i", 183786, 1 },	-- 1 Happiness Bird
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(15, {	-- Hitchhiker
+								crit(49926, {	-- Hitchhiker
 									["cost"] = {
 										{ "i", 184225, 1 },	-- 1 Small Posable Skeleton
 										{ "i", 178061, 5 },	-- 5 Malleable Flesh
 									},
 								}),
-								crit(16, {	-- Lovely Candle Display
+								crit(50554, {	-- Lovely Candle Display
 									["cost"] = {
 										{ "i", 184037, 1 },	-- 1 Maldraxxus Candles
 									},
 								}),
-								crit(17, {	-- Shoulder Sprouts
+								crit(50556, {	-- Shoulder Sprouts
 									["cost"] = {
 										{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(18, {	-- Sticky Cat
+								crit(49918, {	-- Sticky Cat
 									["cost"] = {
 										{ "i", 183829, 1 },	-- 1 Slime Cat
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(19, {	-- Trained Corpselice
+								crit(50560, {	-- Trained Corpselice
 									["cost"] = {
 										{ "i", 184038, 1 },	-- 1 Trained Corpselice
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(20, {	-- Trustworthy Doll
+								crit(49870, {	-- Trustworthy Doll
 									["cost"] = {
 										{ "i", 181798, 1 },	-- 1 Stuffed Construct
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(21, {	-- Armor Plating
+								crit(49922, {	-- Armor Plating
 									["cost"] = {
 										{ "i", 183827, 1 },	-- 1 Blacksteel Backplate
 										{ "i", 171840, 5 },	-- 5 Porous Stone
 									},
 								}),
-								crit(22, {	-- Back Mushrooms
+								crit(50558, {	-- Back Mushrooms
 									["cost"] = {
 										{ "i", 184224, 1 },	-- 1 Dapperling Seeds
 										{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
 										{ "i", 178061, 5 },	-- 5 Malleable Flesh
 									},
 								}),
-								crit(23, {	-- Collector Kash's Pack
+								crit(49919, {	-- Collector Kash's Pack
 									["cost"] = {
 										{ "i", 183833, 1 },	-- 1 Kash's Bag of Junk
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(24, {	-- Engineering Pack
+								crit(49872, {	-- Engineering Pack
 									["cost"] = {
 										{ "i", 183752,  1 },	-- 1 Empty Nightcap Cask
 										{ "i", 180733, 10 },	-- 10 Luminous Flux
 										{ "i", 172934, 10 },	-- 10 Handful of Laestrite Bolts
 									},
 								}),
-								crit(25, {	-- Plague Pack
+								crit(49921, {	-- Plague Pack
 									["description"] = "You need to obtain either Grungy Containment Pack or Pristine Containment Pack to be able to see this at the crafting table.",
 									["cost"] = {
 										{ "i", 183744, 5 },	-- 5 Superior Parts
@@ -353,26 +345,26 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										{ "i", 184154, 1 },	-- 1xGrungy Containment Pack
 									},
 								}),
-								crit(26, {	-- Safe Fall Pack
+								crit(49920, {	-- Safe Fall Pack
 									["cost"] = {
 										{ "i", 183831,  1 },	-- 1 Safe Fall Kit
 										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
 									},
 								}),
-								crit(27, {	-- Six-League Pack
+								crit(49874, {	-- Six-League Pack
 									["cost"] = {
 										{ "i", 183789, 1 },	-- 1 Six-League Pack
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(28, {	-- Vestigial Wings
+								crit(49875, {	-- Vestigial Wings
 									["cost"] = {
 										{ "i", 183744,  3 },	-- 3 Superior Parts
 										{ "i", 178061, 10 },	-- 10 Malleable Flesh
 										{ "i", 172054, 30 },	-- 30 Raw Seraphic Wing
 									},
 								}),
-								crit(29, {	-- Barrel O' Fish
+								crit(49925, {	-- Barrel O' Fish
 									["description"] = "Becomes available at max Shadowlands Fishing skill.",
 									["requireSkill"] = FISHING,
 									["cost"] = {
@@ -383,37 +375,37 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										{ "i", 173036, 5 },	-- 5 Spinefin Piranha
 									},
 								}),
-								crit(30, {	-- Underpowered Gravity Pack
+								crit(50559, {	-- Underpowered Gravity Pack
 									["description"] = "Your character must have unlocked Mechagon and learned the blueprint for Anti-Gravity Pack, and constructed rank 4 of the Abomination table, for this recipe to become available.",
 									["cost"] = {
 										{ "i", 169610,  3 },	-- 3 S.P.A.R.E. Crate
 										{ "i", 166970, 10 },	-- 10 Energy Cell
 									},
 								}),
-								crit(31, {	-- Butterflies
+								crit(49923, {	-- Butterflies
 									["cost"] = {
 										{ "i", 183828, 1 },	-- 1 Friendly Bugs
 										{ "i", 178061, 3 },	-- 3 Malleable Flesh
 									},
 								}),
-								crit(32, {	-- Spare Weapon
+								crit(49917, {	-- Spare Weapon
 									["cost"] = {
 										{ "i", 183824, 1 },	-- 1 Cache of Spare Weapons
 									},
 								}),
-								crit(33, {	-- Faction Flag
+								crit(49924, {	-- Faction Flag
 									["cost"] = {
 										{ "i", 183830,  1 },	-- 1 Do It Yourself Flag Kit
 										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
 									},
 								}),
-								crit(34, {	-- Operational Instructions
+								crit(49876, {	-- Operational Instructions
 									["cost"] = {
 										{ "i", 183754, 1 },	-- 1 Stitchflesh's Design Notes
 										{ "i", 175886, 5 },	-- 5 Dark Parchment
 									},
 								}),
-								crit(35, {	-- Outlaw Flag
+								crit(49873, {	-- Outlaw Flag
 									["cost"] = {
 										{ "i", 181797,  1 },	-- 1 Strange Cloth
 										{ "i", 173202, 20 },	-- 20 Shrouded Cloth
@@ -423,56 +415,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							ach(14753, {	-- It's a Wrap
 								["cost"] = { { "i", 178594, 100 } },	-- 100 Anima-bound Wraps
 							}),
-							achraw(14751, {	-- The Gang's All Here
-								i(182074),		-- Chosen Tauralus (MOUNT!)
-								crit(1, {	-- Chordy
-									["_quests"] = { 60041 },
-								}),
-								crit(2, {	-- Flytrap
-									["_quests"] = { 57597 },
-								}),
-								crit(3, {	-- Marz
-									["_quests"] = { 57611 },
-								}),
-								crit(4, {	-- Atticus
-									["_quests"] = { 58410 },
-								}),
-								crit(5, {	-- Roseboil
-									["_quests"] = { 57605 },
-								}),
-								crit(6, {	-- Sabrina
-									["_quests"] = { 57600 },
-								}),
-								crit(7, {	-- Toothpick
-									["_quests"] = { 58414 },
-								}),
-								crit(8, {	-- The Professor
-									["_quests"] = { 57601 },
-								}),
-								crit(9, {	-- Gas Bag
-									["_quests"] = { 57608 },
-								}),
-								crit(10, {	-- Guillotine
-									["_quests"] = { 58416 },
-								}),
-								crit(11, {	-- Mama Tomalin
-									["_quests"] = { 60216 },
-								}),
-								crit(12, {	-- Naxx
-									["_quests"] = { 58413 },
-								}),
-								crit(13, {	-- Iron Phillip
-									["_quests"] = { 58411 },
-								}),
-								crit(14, {	-- Miru Soulblossom
-									["_quests"] = { 58415 },
-								}),
-								crit(15, {	-- Neena
-									["_quests"] = { 57604 },
-								}),
-								crit(16, {	-- Unity
-									["_quests"] = { 61637 },
-								}),
+							ach(14751, {	-- The Gang's All Here
+								["sym"] = {{ "achievement_criteria" }},
+								["g"] = {
+									i(182074),		-- Chosen Tauralus (MOUNT!)
+								},
 							}),
 							ach(14764, {	-- The Great Luckydo
 								["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
@@ -491,8 +438,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								title(437),	-- Abominable
 							}),
 							ach(14748, {	-- Wardrobe Makeover
-								-- identical criteria as full achievement
-								["sym"] = {{"select","achievementID",14833},{"pop"}},	-- Fashion Abomination Criteria
+								["sym"] = {{"partial_achievement",14833}},	-- Fashion Abomination
 							}),
 						}),
 						n(FACTIONS, {
@@ -575,6 +521,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(158300, {	-- Flytrap
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
+									["crs"] = { 167157 },	-- Flytrap (Ghost)
 									["g"] = {
 										i(182501),	-- Stitched Conjurer's Slippers
 										i(182483),	-- Stitched Harbinger's Stompers
@@ -585,6 +532,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(158301, {	-- Marz
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
+									["crs"] = { 167162 },	-- Marz (Ghost)
 									["g"] = {
 										i(182482),	-- Stitched Harbinger's Chestguard
 										i(182500),	-- Stitched Conjurer's Tunic
@@ -595,6 +543,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159241, {	-- Roseboil
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
+									["crs"] = { 167159 },	-- Roseboil (Ghost)
 									["g"] = {
 										i(182496),	-- Stitched Wraith's Belt
 										i(182487),	-- Stitched Harbinger's Warbelt
@@ -609,6 +558,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(62213, {    -- A Brokered Deal
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
@@ -619,6 +572,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["maps"] = {
 											1717,	-- Chill's Reach
 										},
+										["g"] = {
+											i(183119),	-- Broker Bauble (QI!)
+											i(178678),	-- Call Atticus (QI!)
+											i(178681),	-- Slim Shinbone (QI!)
+										},
 									}),
 									q(59042, {	-- A Good Heart
 										["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
@@ -627,7 +585,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									}),
 									q(59747, {    -- A Lost Soul
 										["description"] = "Pull the chain on the right side of the vault as you enter.",
-										["provider"] = { "n", 166096 },	-- Miru Soulblossom
+										["providers"] = {
+											{ "n", 166096 },	-- Miru Soulblossom
+											{ "o", 350972 },	-- Cell Portcullis Chain
+										},
 										["coords"] = {
 											{ 32.9, 33.3, 1649 },	-- Etheric Vault
 											{ 58.3, 36.2, 1649 },	-- Chain to pull [60166]
@@ -653,6 +614,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										},
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178679),	-- Call Marz (QI!)
+										},
 									}),
 									q(62256, {    -- Asset Extraction
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
@@ -660,6 +624,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.3, 68.3, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178678),	-- Call Atticus (QI!)
+										},
 									}),
 									q(60049, {	-- At Your Service
 										["sourceQuests"] = { 58727 },	-- A Place To Call Home
@@ -691,12 +658,24 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
 									}),
+									header(HEADERS.Quest, 60291, {	-- Triggered when completing 'Corspe Run' for the first time
+										["questID"] = 62535,
+										["sourceQuests"] = {
+											60291,	-- Corpse Run
+											61522,	-- Corpse Run
+											61523,	-- Corpse Run
+										},
+										-- achievement_criteria
+									}),
 									q(60291, {    -- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 										["provider"] = { "n", 158300 },    -- Flytrap
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178599),	-- Call Flytrap (QI!)
+										},
 									}),
 									q(61522, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
@@ -704,6 +683,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178599),	-- Call Flytrap (QI!)
+										},
 									}),
 									q(61523, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
@@ -711,6 +693,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178599),	-- Call Flytrap (QI!)
+										},
 									}),
 									q(60765, {    -- Cure For All Ills
 										["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
@@ -721,6 +706,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178680),	-- Call Roseboil (QI!)
+										},
 									}),
 									q(62217, {	-- Field Training
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
@@ -731,6 +719,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178679),	-- Call Marz (QI!)
+										},
 									}),
 									q(58668, {	-- Find The Way
 										["sourceQuests"] = { 58665 },	-- Rebellious Souls
@@ -746,6 +737,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178680),	-- Call Roseboil (QI!)
+										},
 									}),
 									q(58680, {	-- Loose Threads
 										["sourceQuests"] = { 58668 },	-- Find The Way
@@ -768,11 +762,18 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(58677, {	-- Skin in the Game
 										["sourceQuests"] = { 58668 },	-- Find The Way
 										["provider"] = { "n", 161285 },	-- Emeni
 										["coord"] = { 24.1, 38.7, MALDRAXXUS },
+										["g"] = {
+											i(181456),	-- Faldo's Key (QI!)
+										},
 									}),
 									q(58432, {	-- Something Old, Something Used
 										["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -780,6 +781,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(60264, {    -- Soul Survivor
 										["sourceQuests"] = { 59747 },    -- A Lost Soul
@@ -797,6 +802,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.3, 68.3, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178682),	-- Atticus's Ledger (QI!)
+											i(178678),	-- Call Atticus (QI!)
+											i(175133),	-- Ossein Battlemail (QI!)
+											i(178681),	-- Slim Shinbone (QI!)
+										},
 									}),
 									q(58670, {	-- The Slaughter Daughter
 										["sourceQuests"] = { 59042 },	-- A Good Heart
@@ -809,6 +820,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(62216, {	-- Training Program
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
@@ -819,6 +834,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178679),	-- Call Marz (QI!)
+										},
 									}),
 									q(58686, {	-- Weapon of Mass Construction
 										["sourceQuests"] = {
@@ -892,6 +910,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159226, {	-- Sabrina
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
+									["crs"] = { 173028 },	-- Sabrina (Ghost)
 									["g"] = {
 										i(182485),	-- Stitched Harbinger's Greaves
 										i(182494),	-- Stitched Wraith's Breeches
@@ -902,6 +921,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159198, {	-- The Professor
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
+									["crs"] = { 167762 },	-- The Professor (Ghost)
 									["g"] = {
 										i(182513),	-- Stitched Tactician's Spaulders
 										i(182504),	-- Stitched Conjurer's Mantle
@@ -912,6 +932,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159212, {	-- Toothpick
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
+									["crs"] = { 167764 },	-- Toothpick (Ghost)
 									["g"] = {
 										i(182488),	-- Stitched Harbinger's Vambraces
 										i(182497),	-- Stitched Wraith's Armguards
@@ -948,6 +969,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.9, 67.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183043),	-- Call Toothpick (QI!)
+										},
 									}),
 									q(59615, {	-- Every Dog Has Its Day
 										["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
@@ -964,6 +988,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182474),	-- Call Sabrina (QI!)
+										},
 									}),
 									q(60230, {	-- More the Merrier
 										["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -979,6 +1006,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.9, 67.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183043),	-- Call Toothpick (QI!)
+											o_repeated(sharedData({	-- Burried Cache
+												["isDaily"] = true,
+											},{
+												o(357771, {
+													["questID"] = 62240,
+													["coords"] = {
+														{ 49.5, 76.2, ARDENWEALD },
+													},
+												}),
+											}))
+										},
 									}),
 									q(62294, {	-- One Lich's Trash...
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -989,6 +1029,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183142),	-- Call Professor (QI!)
+											i(183398),	-- Intriguing Ancient Relic (QI!)
+										},
 									}),
 									q(61996, {	-- Say The Magic Words
 										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
@@ -999,6 +1043,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182474),	-- Call Sabrina (QI!)
+										},
 									}),
 									q(58515, {	-- Scrounging for Scrolls
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -1009,6 +1056,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183142),	-- Call Professor (QI!)
+											i(175275),	-- Scroll of the Path (QI!)
+										},
 									}),
 									q(60283, {	-- Specter Of War: Visectus
 										["provider"] = { "n", 161668 },	-- Summoner Gerard
@@ -1024,6 +1075,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182474),	-- Call Sabrina (QI!)
+											i(182957),	-- Inquisitor's Crypt Key (QI!)
+										},
 									}),
 									q(58525, {	-- The Two Sides of History
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -1034,6 +1089,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183142),	-- Call Professor (QI!)
+										},
 									}),
 								}),
 								i(184354, {	-- Soul Harvester Key
@@ -1080,6 +1138,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159240, {	-- Gas Bag
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
+									["crs"] = { 167763 },	-- Gas Bag (Ghost)
 									["g"] = {
 										i(182499),	-- Stitched Conjurer's Cowl
 										i(182490),	-- Stitched Wraith's Visage
@@ -1090,6 +1149,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159214, {	-- Guillotine
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
+									["crs"] = { 173030 },	-- Guillotine (Ghost)
 									["g"] = {
 										i(182493),	-- Stitched Wraith's Stranglers
 										i(182484),	-- Stitched Harbinger's Crushers
@@ -1114,6 +1174,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.4, 67.9, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183127),	-- Call Guillotine (QI!)
+										},
 									}),
 									q(56470, {	-- Give A Dog A Bone
 										["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
@@ -1131,6 +1194,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.4, 67.9, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183138),	-- Chosen Razorstone (QI!)
+											i(183127),	-- Call Guillotine (QI!)
+										},
 									}),
 									q(60340, {	-- Hands on Approach
 										["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
@@ -1141,6 +1208,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.4, 67.9, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178788),	-- Anima Traces (QI!)
+											i(183127),	-- Call Guillotine (QI!)
+										},
 									}),
 									q(62407, {	-- Herbicidal Tendencies
 										["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
@@ -1151,6 +1222,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.0, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183719),	-- Rotbloom Petal (QI!)
+											i(183133),	-- Call Gas Bag (QI!)
+										},
 									}),
 									q(58992, {	-- Pie Not?
 										["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
@@ -1168,6 +1243,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.0, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(175843),	-- Pox Nodules (QI!)
+											i(183133),	-- Call Gas Bag (QI!)
+										},
 									}),
 									q(61635, {	-- Troubled Souls
 										["sourceQuests"] = { 60230 },	-- More the Merrier
@@ -1237,6 +1316,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.5, 68.4, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182959),	-- Call Iron Phillip (QI!)
+										},
 									}),
 									q(58379, {	-- Construct Part: Indomitable Hide
 										["sourceQuests"] = { 60048 },	-- Stitching Time
@@ -1260,6 +1342,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.7, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183186),	-- Purified Nectar (QI!)
+											i(183128),	-- Call Naxx (QI!)
+										},
 									}),
 									q(61638, {	-- Iron Solution
 										["sourceQuests"] = { 61635 },	-- Troubled Souls
@@ -1294,6 +1380,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159199, {	-- Iron Phillip
 									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
 									["coord"] = { 55.5, 68.4, MALDRAXXUS },
+									["crs"] = { 173048 },	-- Iron Phillip (Ghost)
 									["g"] = {
 										i(181806),	-- Regrown Osteowings
 									},
@@ -1301,13 +1388,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(161678, {	-- Mama Tomalin
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
+									["crs"] = { 167756 },	-- Mama Tomalin (Ghost)
 									["g"] = {
+										i(183597),	-- Fleshstitched Cookie
 										i(181809),	-- Tomalins Seasoning Crystal
 									},
 								}),
 								n(158298, {	-- Naxx
 									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
 									["coord"] = { 54.8, 68.7, MALDRAXXUS },
+									["crs"] = { 173049 },	-- Naxx (Ghost)
 									["g"] = {
 										i(181802),	-- Standard of Death's Chosen
 									},
@@ -1318,6 +1408,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
 										["cost"] = { { "i", 183717, 1 }, },	-- 1x Bindings of Wellbeing
+										["g"] = {
+											header(HEADERS.Quest, 61637, {	-- Triggered after recruiting Unity
+												["questID"] = 58412,
+												-- achievement_criteria
+											}),
+										},
 									}),
 								}),
 								n(REWARDS, {
@@ -1382,6 +1478,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						n(VENDORS, {
 							n(159238, {	-- Atticus <Supplies & Acquisitions>
 								["coord"] = { 55.2, 68.2, MALDRAXXUS },
+								["crs"] = { 167161 },	-- Atticus (Ghost)
 								["g"] = appendGroups(ATTICUS_GROUP, {
 									i(184589, {	-- Bag of Potions
 										["description"] = "This becomes available within Chill's Reach during 'A Brokered Deal'.",
@@ -1478,11 +1575,10 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 				q(57854),	-- Triggered after recruiting Sabrina
 				q(57857),	-- Triggered after recruiting Toothpick
 				q(57612),	-- Triggered after recruiting The Professor
-				q(58412),	-- Triggered after recruiting Unity
 
 			-- Stitching Table Abomination 'Upgrades'
 				q(62575),	-- Crafted Armor Plating at Abominable Stitching Table
-				q(62824),	-- Crafted Back Mushrooms at Abominable Stitching Table
+				q(62824),	-- Crafted Back Mushrooms at Abominable Stitching Table (spellID 344796)
 				q(62580),	-- Crafted Barrel O'Fish at Abominable Stitching Table
 				q(62574),	-- Crafted Butterflies at Abominable Stitching Table
 				q(62762),	-- Crafted Chef Hat at Abominable Stitching Table
@@ -1501,25 +1597,24 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 				q(62577),	-- Crafted Magician's Hat at Abominable Stitching Table
 				q(62470),	-- Crafted Operational Instructions at Abominable Stitching Table
 				q(61561),	-- Crafted Outlaw Flag at Abominable Stitching Table
-				q(62826),	-- Crafted Pirate Hat at Abominable Stitching Table
+				q(62826),	-- Crafted Pirate Hat at Abominable Stitching Table (spellID 344769)
 				q(62576),	-- Crafted Plague Pack at Abominable Stitching Table
 				q(62476),	-- Crafted Red Eye Lens at Abominable Stitching Table
 				q(62571),	-- Crafted Safe Fall Pack at Abominable Stitching Table
-				q(62825),	-- Crafted Shoulder Sprouts at Abominable Stitching Table
+				q(62825),	-- Crafted Shoulder Sprouts at Abominable Stitching Table (spellID 344798)
 				q(62481),	-- Crafted Six-League Pack at Abominable Stitching Table
-				q(62817),	-- Crafted Skull Fungus at Abominable Stitching Table
+				q(62817),	-- Crafted Skull Fungus at Abominable Stitching Table (spellID 344766)
 				q(62474),	-- Crafted Skull Protector at Abominable Stitching Table
 				q(62760),	-- Crafted Trained Corpselice at Abominable Stitching Table
 				q(61562),	-- Crafted Trustworthy Doll at Abominable Stitching Table
-				q(62823),	-- Crafted Underpowered Gravity Pack at Abominable Stitching Table
-				q(62819),	-- Crafted Unworthy Crown at Abominable Stitching Table
+				q(62823),	-- Crafted Underpowered Gravity Pack at Abominable Stitching Table (spellID 344797)
+				q(62819),	-- Crafted Unworthy Crown at Abominable Stitching Table (spellID 344770)
 				q(62468),	-- Crafted Vestigial Wings at Abominable Stitching Table
 			}),
 			q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
 			q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 			q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
-			q(63099),	-- Opening 184589, Bag of Potions from Atticus
-			q(62535),	-- Triggered when completing 'Corspe Run' for the first time
+			q(63099),	-- Opening "Bag of Potions" (itemID 184589) from Atticus (spellID 346867)
 			q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 			q(62988),	-- digging with Chordy in Revendreth
 			q(64666),	-- Completing Baker's Dozen (59043) (next week's quest rewarded Tomalin's Seasoning Crystal (181809))
@@ -1563,22 +1658,3 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		n(NECROLORD, {
-			i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
-				["questID"] = 62012,
-			}),
-			i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
-				["questID"] = 62011,
-			}),
-			i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
-				["questID"] = 62013,
-			}),
-			i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
-				["questID"] = 62014,
-			}),
-		}),
-	}),
-});

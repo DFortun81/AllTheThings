@@ -1,3 +1,6 @@
+-------------------
+-- JEWELCRAFTING --
+-------------------
 COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 	i(52409, {	-- Design: Accurate Demonseye
 		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
@@ -533,3 +536,93 @@ COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 		["requireSkill"] = JEWELCRAFTING,
 	}),
 };
+SL_JEWELCRAFTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	r(311967),	-- Shadowlands Jewelcrafting
+	r(325248),	-- Shadowlands Prospecting \\ Prospecting
+	r(311953),	-- Mass Prospect Elethium
+	r(311948),	-- Mass Prospect Laestrite
+	r(311950),	-- Mass Prospect Oxxein
+	r(311951),	-- Mass Prospect Phaedrum
+	r(359492, {["timeline"] = {ADDED_9_2_0}}),	-- Mass Prospect Progenium
+	r(311952),	-- Mass Prospect Sinvyr
+	r(311949),	-- Mass Prospect Solenium
+	filter(FINGER_F, {
+		r(311880),	-- Deadly Laestrite Band
+		r(311884),	-- Deadly Sinvyr Ring
+		r(311882),	-- Masterful Laestrite Band
+		r(311886),	-- Masterful Phaedrum Ring
+		r(311881),	-- Quick Laestrite Band
+		r(311885),	-- Quick Oxxein Ring
+		r(338978, {	-- Shadowghast Ring [Rank 1]
+			["sourceQuests"] = { 62800 },	-- The Vessels of Jewels
+		}),
+		r(311883),	-- Versatile Laestrite Band
+		r(311887),	-- Versatile Solenium Ring
+	}),
+	filter(GEMS, {
+		r(311863),	-- Deadly Jewel Cluster
+		r(311868),	-- Deadly Jewel Doublet
+		r(311864),	-- Masterful Jewel Cluster
+		r(311869),	-- Masterful Jewel Doublet
+		r(311865),	-- Quick Jewel Cluster
+		r(311871),	-- Quick Jewel Doublet
+		r(311867),	-- Straddling Jewel Doublet
+		r(311859),	-- Versatile Jewel Cluster
+		r(311866),	-- Versatile Jewel Doublet
+	}),
+	filter(MISC, {
+		r(343697),	-- Crafter's Mark I
+		r(343693),	-- Novice Crafter's Mark
+	}),
+	filter(NECK_F, {
+		r(311902),	-- Deadly Laestrite Choker
+		r(311906),	-- Deadly Sinvyr Necklace
+		r(311904),	-- Masterful Laestrite Choker
+		r(311908),	-- Masterful Phaedrum Necklace
+		r(311903),	-- Quick Laestrite Choker
+		r(311907),	-- Quick Oxxein Necklace
+		r(338977, {	-- Shadowghast Necklace [Rank 1]
+			["sourceQuests"] = { 62800 },	-- The Vessels of Jewels
+		}),
+		r(311905),	-- Versatile Laestrite Choker
+		r(311909),	-- Versatile Solenium Necklace
+	}),
+}));
+DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(366250),	-- Dragon Isles Jewelcrafting
+	r(374627),	-- Dragon Isles Prospecting
+	r(395696),	-- Dragon Isles Crushing
+	n(ARMOR, {
+		r(376233),	-- Band of New Beginnings
+		r(374494),	-- Pendant of Impending Perils
+	}),
+	filter(GEMS, {
+		r(374437),	-- Crafty Queen's Ruby
+		r(374439),	-- Energized Vibrant Emerald
+		r(374461),	-- Forceful Nozdorite
+		r(374460),	-- Jagged Nozdorite
+		r(374462),	-- Puissant Nozdorite
+		r(374440),	-- Sensei's Sundered Onyx
+		r(374441),	-- Solid Eternity Amber
+		r(374463),	-- Steady Nozdorite
+		r(374438),	-- Zen Mystic Sapphire
+	}),
+	filter(MISC, {
+		r(389194),	-- Recraft Equipment
+		r(374506),	-- Revitalizing Red Carving
+		r(374550),	-- Timewatcher's Patience
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(374530),	-- Bold-Print Bifocals
+		r(374537),	-- Chromatic Focus
+		r(374531),	-- Left-Handed Magnifying Glass
+		r(374532),	-- Sundered Onyx Loupes
+	}),
+	filter(REAGENTS, {
+		r(374477),	-- Draconic Vial
+		r(374553),	-- Elemental Harmony
+		r(374478),	-- Frameless Lens
+		r(374480),	-- Glossy Stone
+		r(374475),	-- Shimmering Clasp
+	}),
+}));

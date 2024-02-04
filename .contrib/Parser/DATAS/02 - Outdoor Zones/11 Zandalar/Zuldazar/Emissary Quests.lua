@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(ZULDAZAR, {
 		n(EMISSARY_QUESTS, {
-			q(54451, {	-- Baubles from the Seekers
+			q(54451, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_TORTOLLAN_SEEKERS, EXALTED } }, {	-- Baubles from the Seekers
 				["provider"] = { "n", 134345 },	-- Collector Kojo
 				["lvl"] = 120,
 				["coord"] = { 71.51, 30.35, ZULDAZAR },
@@ -13,11 +13,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(166245, {	-- Tortollan Seekers Supplies
 						i(166704),	-- Bowl of Glowing Pufferfish (TOY!)
-						i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3]
-						i(166264),	-- Recipe: Sanguiated Feast [Rank 3]
+						i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3] (RECIPE!)
+						i(166264),	-- Recipe: Sanguiated Feast [Rank 3] (RECIPE!)
 					}),
 				},
-			}),
+			})),
 			q(50604, {	-- Tortollan Seekers
 				["provider"] = { "n", 134345 },	-- Collector Kojo
 				["lvl"] = 120,

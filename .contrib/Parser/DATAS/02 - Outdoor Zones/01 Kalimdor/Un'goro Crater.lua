@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4939, {	-- Un'Goro Crater Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Pylons of Un'Goro
 							["sourceQuests"] = {
@@ -33,6 +34,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 24707,	-- The Ballad of Maximillian
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -607,7 +609,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 47,
 					["groups"] = {
-						i(13481, {	-- Recipe: Elixir of Brute Force
+						i(13481, {	-- Recipe: Elixir of Brute Force (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 					},

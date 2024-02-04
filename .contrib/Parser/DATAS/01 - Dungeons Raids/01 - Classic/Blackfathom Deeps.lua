@@ -1,10 +1,155 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if SEASON_OF_DISCOVERY
+-- Item Database of drops in 10-Player BFD.
+local Items = ItemDBConditional;
+local BFDItem = function(itemID, f)
+	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
+	local item = { ["b"] = 1, ["f"] = f };
+	Items[itemID] = item;
+	return item;
+end
+BFDItem(209694, DAGGERS);	-- Blackfathom Ritual Dagger
+BFDItem(209436, DAGGERS);	-- Chipped Bite of Serra'kis
+BFDItem(211456, DAGGERS);	-- Dagger of Willing Sacrifice
+BFDItem(209818, DAGGERS);	-- Sun-Touched Crescent
+BFDItem(209691, DAGGERS);	-- Vampiric Boot Knife
+BFDItem(209579, FIST_WEAPONS);	-- Crashing Thunder
+BFDItem(209580, FIST_WEAPONS);	-- Gusting Wind
+BFDItem(209564, POLEARMS);	-- Guardian's Trident
+BFDItem(209561, STAVES);	-- Rod of the Ancient Sleepwalker
+BFDItem(209559, STAVES);	-- Twilight Sage's Walking Stick
+BFDItem(209573, STAVES);	-- Wrathful Spire
+BFDItem(209567, TWO_HANDED_AXES);	-- Coral Reef Axe
+BFDItem(209560, ONE_HANDED_MACES);	-- Hammer of Righteous Judgement
+BFDItem(209822, ONE_HANDED_MACES);	-- Strength of Purpose
+BFDItem(209577, TWO_HANDED_MACES);	-- Fist of the Wild
+BFDItem(209525, ONE_HANDED_SWORDS);	-- Honed Darkwater Talwar
+BFDItem(209562, TWO_HANDED_SWORDS);	-- Deadly Strike of the Hydra
+BFDItem(204807, TWO_HANDED_SWORDS);	-- Fathomblade
+
+BFDItem(209590, HELD_IN_OFF_HAND);	-- Cracked Water Globe
+BFDItem(209570, HELD_IN_OFF_HAND);	-- Tome of Cavern Lore
+BFDItem(211458, HELD_IN_OFF_HAND);	-- Tome of Shadow Warding
+BFDItem(211460, SHIELDS);	-- Ancient Arctic Buckler
+BFDItem(209424, SHIELDS);	-- Shell Plate Barrier
+
+BFDItem(209563, BOWS);	-- Naga Heartrender
+BFDItem(209534, CROSSBOWS);	-- Azshari Arbalest
+BFDItem(209830, CROSSBOWS);	-- Ironhide Arbalest
+BFDItem(209688, GUNS);	-- Bael Modan Blunderbuss
+BFDItem(209571, WANDS);	-- Deadlight
+BFDItem(211461, WANDS);	-- Inscribed Gravestone Scepter
+BFDItem(209674, WANDS);	-- Phoenix Ignition
+
+BFDItem(209423, CLOAKS);	-- Flowing Scarf
+BFDItem(209523, CLOAKS);	-- Shimmering Thresher Cape
+BFDItem(209680, CLOAKS);	-- Waterproof Scarf
+BFDItem(211464, CLOAKS);	-- Worn Prelacy Cape
+
+BFDItem(209679, CLOTH);	-- Azshari Novice's Shoulderpads
+BFDItem(209672, CLOTH);	-- Black Fingerless Gloves
+BFDItem(209675, CLOTH);	-- Clamweave Tunic
+BFDItem(211468, CLOTH);	-- Frayed Chestnut Mantle
+BFDItem(209667, CLOTH);	-- Gaze Dreamer Leggings
+BFDItem(209432, CLOTH);	-- Ghamoo-ra's Cinch
+BFDItem(211852, CLOTH);	-- Handwraps of Befouled Water
+BFDItem(211465, CLOTH).races = ALLIANCE_ONLY;	-- Nimbus Boots of Insight
+BFDItem(211842, CLOTH);	-- Rakkamar's Tattered Thinking Cap
+BFDItem(209670, CLOTH);	-- Skinwalkers
+BFDItem(209684, CLOTH);	-- Soul Leech Pants
+BFDItem(209828, CLOTH);	-- Sub-Zero Pauldrons
+BFDItem(209671, CLOTH);	-- Twilight Invoker's Robes
+BFDItem(209683, CLOTH);	-- Twilight Invoker's Shawl
+BFDItem(209669, CLOTH);	-- Twilight Invoker's Shoes
+
+BFDItem(209685, LEATHER);	-- Ancient Moss Cinch
+BFDItem(211789, LEATHER);	-- Artemis Cowl
+BFDItem(209524, LEATHER);	-- Bindings of Serra'kis
+BFDItem(209572, LEATHER);	-- Black Boiled Leathers
+BFDItem(209421, LEATHER);	-- Cord of Aquanis
+BFDItem(209578, LEATHER);	-- Glowing Leather Bands
+BFDItem(209687, LEATHER);	-- Hydra Hide Cuirass
+BFDItem(209678, LEATHER);	-- Mantle of the Thresher Slayer
+BFDItem(209569, LEATHER);	-- Murloc Hide Kneeboots
+BFDItem(209527, LEATHER);	-- Naga Battle Gauntlets
+BFDItem(209692, LEATHER);	-- Sentinel Pauldrons
+BFDItem(211455, LEATHER);	-- Slick Fingerless Gloves
+BFDItem(209682, LEATHER);	-- Sturdy Hood
+BFDItem(211466, LEATHER).races = ALLIANCE_ONLY;	-- Tender's Heartwood Girdle
+BFDItem(211507, LEATHER);	-- Twilight Elementalist's Cowl
+BFDItem(211508, LEATHER);	-- Twilight Elementalist's Footpads
+BFDItem(211509, LEATHER);	-- Twilight Elementalist's Robe
+BFDItem(211510, LEATHER);	-- Twilight Slayer's Cowl
+BFDItem(211511, LEATHER);	-- Twilight Slayer's Footpads
+BFDItem(211512, LEATHER);	-- Twilight Slayer's Tunic
+
+BFDItem(209418, MAIL);	-- Adamantine Tortoise Armor
+BFDItem(209568, MAIL);	-- Algae Gauntlets
+BFDItem(211463, MAIL);	-- Chittering Beetle Clasps
+BFDItem(209689, MAIL);	-- Crabshell Waders
+BFDItem(204804, MAIL);	-- Hydraxian Bangles
+BFDItem(209566, MAIL);	-- Leggings of the Faithful
+BFDItem(211843, MAIL);	-- Mask of Scorn
+BFDItem(209690, MAIL);	-- Shadowscale Coif
+BFDItem(209824, MAIL);	-- Shimmering Shoulderpads
+BFDItem(209676, MAIL);	-- Shoulderguards of Crushing Depths
+BFDItem(209581, MAIL);	-- Silver Hand Sabatons
+BFDItem(211506, MAIL);	-- Twilight Avenger's Boots
+BFDItem(211504, MAIL);	-- Twilight Avenger's Chain
+BFDItem(211505, MAIL);	-- Twilight Avenger's Helm
+BFDItem(211457, MAIL);	-- Twilight Defender's Girdle
+
+BFDItem(209820, NECK_F);	-- Black Shroud Choker
+BFDItem(209825, NECK_F);	-- Droplet Choker
+BFDItem(209673, NECK_F);	-- Glowing Fetish Amulet
+BFDItem(209422, NECK_F);	-- High Tide Choker
+BFDItem(209686, NECK_F);	-- Jagged Bone Necklace
+BFDItem(209817, NECK_F);	-- Voidwalker Brooch
+
+BFDItem(209565, FINGER_F);	-- Band of Deep Places
+BFDItem(211462, FINGER_F);	-- Ever-Sustaining Ring
+BFDItem(211467, FINGER_F).races = HORDE_ONLY;	-- Band of the Iron Fist
+BFDItem(209677, FINGER_F);	-- Loop of Swift Currents
+BFDItem(209821, FINGER_F);	-- Ring of Shadowsight
+BFDItem(209823, FINGER_F).classes = { HUNTER };	-- Signet of Beasts
+BFDItem(209668, FINGER_F);	-- Signet of the Twilight Lord
+
+BFDItem(211451, TRINKET_F);	-- Acolyte's Void Pearl
+BFDItem(211449, TRINKET_F);	-- Avenger's Void Pearl
+BFDItem(209681, TRINKET_F);	-- Black Murloc Egg
+BFDItem(209816, TRINKET_F);	-- Fetish of Mischief
+BFDItem(211450, TRINKET_F);	-- Invoker's Void Pearl
+BFDItem(209576, TRINKET_F);	-- Mind-Expanding Mushroom
+
+BFDItem(209574, LIBRAMS);	-- Discarded Tenets of the Silver Hand
+BFDItem(209575, TOTEMS);	-- Carved Driftwood Icon
+
+BFDItem(211491, BAGS);	-- Bottomless Murloc Skin Bag
+BFDItem(211492, BAGS);	-- Kelris's Satchel
+
+local SOD_DISABLE_NORMAL_MODE = [[function(t)
+	if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+		t.u = 2;
+	end
+	t.OnUpdate = nil;
+end]];
+local SOD_TURN_BFD_INTO_RAID = [[function(t)
+	if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+		t.sharedLockout = 1;
+		t.isRaid = true;
+	end
+	t.OnUpdate = nil;
+end]];
+-- #endif
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(227, {	-- Blackfathom Deeps
 		-- #if BEFORE MOP
 		["lore"] = "Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",
+		-- #endif
+		-- #if BEFORE CATA
+		["zone-text-areaID"] = 719,	-- Blackfathom Deeps
 		-- #endif
 		-- #if AFTER CATA
 		["coords"] = {
@@ -15,8 +160,40 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["coord"] = { 14.0, 11.1, ASHENVALE },
 		-- #endif
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = SOD_TURN_BFD_INTO_RAID,
+		-- #endif
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
+			n(ZONE_DROPS, {
+				i(1454),	-- Axe of the Enforcer
+				i(3414),	-- Crested Scepter
+				i(16790, {	-- Damp Note
+					-- #if BEFORE 6.0.1.18322
+					["cr"] = 4802,	-- Blackfathom Tide Priestess
+					-- #endif
+					["races"] = HORDE_ONLY,
+				}),
+				i(3413),	-- Doomspike
+				i(2567),	-- Evocator's Blade
+				i(1481),	-- Grimclaw
+				i(3416),	-- Martyr's Chain
+				i(3417),	-- Onyx Claymore
+				i(1491),	-- Ring of Precision
+				i(2034),	-- Scholarly Robes
+				i(2271),	-- Staff of the Blessed Seer
+				i(3415),	-- Staff of the Friar
+				i(1486),	-- Tree Bark Jacket
+				-- #if AFTER 6.0.1.18322
+				i(4410, {	-- Schematic: Shadow Goggles
+					["cr"] = 74363,	-- Twilight Shadow
+				}),
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+			d(NORMAL_DUNGEON, bubbleDownSelf({ ["OnUpdate"] = SOD_DISABLE_NORMAL_MODE }, {
+			-- #endif
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
 					["provider"] = { "i", 16790 },	-- Damp Note
@@ -72,6 +249,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(6922, {	-- Baron Aquanis
 					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["timeline"] = { "removed 6.0.2" },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {
@@ -117,6 +295,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						i(7002, {	-- Arctic Buckler
 							["timeline"] = { "removed 4.0.3" },
@@ -135,6 +314,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						-- #if BEFORE 6.0.1.18322
 						i(65986),	-- Shield Against the Evil Presence
@@ -147,11 +327,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(6561, {	-- Blackfathom Villainy (H)
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						i(7002, {	-- Arctic Buckler
 							["timeline"] = { "removed 4.0.3" },
@@ -206,7 +388,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lorgalis Manuscript
-							["provider"] = { "i", 5359 },	-- Lorgalis Manuscript
+							["providers"] = {
+								{ "i", 5359 },	-- Lorgalis Manuscript
+								{ "o", 13949 },	-- Pitted Iron Chest
+							},
+							["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
 						}),
 						-- #if BEFORE 4.0.3
 						i(6743, {	-- Sustaining Ring
@@ -222,7 +408,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lorgalis Manuscript
-							["provider"] = { "i", 5359 },	-- Lorgalis Manuscript
+							["providers"] = {
+								{ "i", 5359 },	-- Lorgalis Manuscript
+								{ "o", 13949 },	-- Pitted Iron Chest
+							},
+							["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
 						}),
 						i(56660, {	-- Dusk-Stained Cloak
 							["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
@@ -264,6 +454,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Corrupted Brain Stem
 							["provider"] = { "i", 5952 },	-- Corrupted Brain Stem
+							["crs"] = {
+								4807,	-- Blackfathom Myrmidon
+								4803,	-- Blackfathom Oracle
+								4805,	-- Blackfathom Sea Witch
+								4802,	-- Blackfathom Tide Priestess
+								4799,	-- Fallenroot Hellcaller
+								4789,	-- Fallenroot Rogue
+								4788,	-- Fallenroot Satyr
+								4798,	-- Fallenroot Shadowstalker
+								4831,	-- Lady Sarevess
+							},
 						}),
 						i(7003, {	-- Beetle Clasps
 							["timeline"] = { "removed 4.0.3" },
@@ -297,22 +498,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(1442, {	-- Seeking the Kor Gem
-					["qg"] = 3649,	-- Thundris Windweaver
-					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
-					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-					["repeatable"] = true,
-					["lvl"] = 20,
-					["groups"] = {
-						objective(1, {	-- 0/1 Corrupted Kor Gem
-							["provider"] = { "i", 6995 },	-- Corrupted Kor Gem
-						}),
-						i(7083),	-- Purified Kor Gem
-					},
-				}),
+				-- #if NOT SEASON_OF_DISCOVERY
 				q(3765, {	-- The Corruption Abroad
 					["qg"] = 4984,  -- Argos Nightwhisper
 					-- #if AFTER WRATH
@@ -326,6 +512,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
+				-- #endif
 				q(26899, {	-- The Enemy of My Enemy (H) [CATA]
 					["qg"] = 44387,	-- Flaming Eradicator
 					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
@@ -334,6 +521,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 					},
 				}),
@@ -404,6 +592,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Twilight Pendant
 							["provider"] = { "i", 5879 },	-- Twilight Pendant
+							["crs"] = {
+								4809,	-- Twilight Acolyte
+								4811,	-- Twilight Aquamancer
+								4814,	-- Twilight Elementalist
+								4812,	-- Twilight Loreseeker
+								4810,	-- Twilight Reaver
+								4813,	-- Twilight Shadowmage
+							},
 						}),
 						i(7000, {	-- Heartwood Girdle
 							["timeline"] = { "removed 4.0.3" },
@@ -433,79 +629,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-			}),
-			n(ZONE_DROPS, {
-				i(1454),	-- Axe of the Enforcer
-				i(5952, {	-- Corrupted Brain Stem
-					["races"] = ALLIANCE_ONLY,
-					-- #if BEFORE 6.0.1.18322
-					["crs"] = {
-						4807,	-- Blackfathom Myrmidon
-						4803,	-- Blackfathom Oracle
-						4805,	-- Blackfathom Sea Witch
-						4802,	-- Blackfathom Tide Priestess
-						4799,	-- Fallenroot Hellcaller
-						4789,	-- Fallenroot Rogue
-						4788,	-- Fallenroot Satyr
-						4798,	-- Fallenroot Shadowstalker
-						4831,	-- Lady Sarevess
-					},
-					-- #endif
-				}),
-				i(6995, {	-- Corrupted Kor Gem
-					-- #if BEFORE 6.0.1.18322
-					["crs"] = {
-						4803,	-- Blackfathom Oracle
-						4805,	-- Blackfathom Sea Witch
-						4802,	-- Blackfathom Tide Priestess
-					},
-					-- #endif
-				}),
-				i(3414),	-- Crested Scepter
-				i(16790, {	-- Damp Note
-					-- #if BEFORE 6.0.1.18322
-					["cr"] = 4802,	-- Blackfathom Tide Priestess
-					-- #endif
-					["races"] = HORDE_ONLY,
-				}),
-				i(3413),	-- Doomspike
-				i(2567),	-- Evocator's Blade
-				i(1481),	-- Grimclaw
-				i(5359, {	-- Lorgalis Manuscript
-					["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(3416),	-- Martyr's Chain
-				i(3417),	-- Onyx Claymore
-				i(1491),	-- Ring of Precision
-				i(2034),	-- Scholarly Robes
-				i(6914, {	-- Soran'ruk Fragment
-					["classes"] = { WARLOCK },
-					-- #if BEFORE 6.0.1.18322
-					["cr"] = 4809,	-- Twilight Acolyte
-					-- #endif
-				}),
-				i(2271),	-- Staff of the Blessed Seer
-				i(3415),	-- Staff of the Friar
-				i(1486),	-- Tree Bark Jacket
-				i(5879, {	-- Twilight Pendant
-					["races"] = ALLIANCE_ONLY,
-					-- #if BEFORE 6.0.1.18322
-					["crs"] = {
-						4809,	-- Twilight Acolyte
-						4811,	-- Twilight Aquamancer
-						4814,	-- Twilight Elementalist
-						4812,	-- Twilight Loreseeker
-						4810,	-- Twilight Reaver
-						4813,	-- Twilight Shadowmage
-					},
-					-- #endif
-				}),
-				-- #if AFTER 6.0.1.18322
-				i(4410, {	-- Schematic: Shadow Goggles
-					["cr"] = 74363,	-- Twilight Shadow
-				}),
-				-- #endif
 			}),
 			n(4887, {	-- Ghamoo-ra
 				["timeline"] = { "removed 6.0.1.18322" },
@@ -569,7 +692,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 6.0.1.18322" },
 				-- #if BEFORE 6.0.1.18322
 				["groups"] = {
-					i(5881),	-- Head of Kelris
 					i(1155),	-- Rod of the Sleepwalker
 					i(6903),	-- Gaze Dreamer Pants
 				},
@@ -715,6 +837,371 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			})),
+			applyclassicphase(SOD_PHASE_ONE, d(3, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {	-- 10-Player
+				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
+				["difficulties"] = { 198 },
+				["lvl"] = 25,
+				["groups"] = {
+					n(QUESTS, {
+						q(78927, {	-- Allegiance to the Old Gods
+							["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+							["coord"] = { 11.6, 34.3, ASHENVALE },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/1 Lorgus Jett slain
+									["provider"] = { "n", 12902 },	-- Lorgus Jett
+								}),
+								i(211467),	-- Band of the Iron Fist
+								i(211468),	-- Frayed Chestnut Mantle
+							},
+						}),
+						q(79099, {	-- Baron Aquanis (A)
+							["qg"] = 214876,	-- Davius Voidstar
+							["coord"] = { 36.8, 43.6, DARKSHORE },
+							["description"] = "PROTIP: Completing this quest gives you a portal to BFD!",
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/1 Strange Water Globe
+									["provider"] = { "i", 211818 },	-- Strange Water Globe
+									["cr"] = 202699,	-- Baron Aquanis
+								}),
+							},
+						}),
+						q(78920, {	-- Baron Aquanis (H)
+							["providers"] = {
+								{ "i", 211454 },	-- Strange Water Globe
+								{ "n",  12736 },	-- Je'neu Sancrea <The Earthen Ring>
+							},
+							["coord"] = { 11.6, 34.2, ASHENVALE },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								i(16886, {	-- Outlaw Sabre
+									["timeline"] = { "removed 2.0.1" },
+								}),
+								i(16887, {	-- Witch's Finger
+									["timeline"] = { "removed 2.0.1" },
+								}),
+							},
+						}),
+						q(78921, {	-- Blackfathom Villainy (A)
+							["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
+							["maps"] = { DARNASSUS },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/1 Head of Kelris
+									["provider"] = { "i", 5881 },	-- Head of Kelris
+									["cr"] = 209678,	-- Twilight Lord Kelris
+								}),
+								i(211460),	-- Ancient Arctic Buckler
+								i(211461),	-- Inscribed Gravestone Scepter
+							},
+						}),
+						q(78922, {	-- Blackfathom Villainy (H)
+							["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
+							["maps"] = { THUNDER_BLUFF },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/1 Head of Kelris
+									["provider"] = { "i", 5881 },	-- Head of Kelris
+									["cr"] = 209678,	-- Twilight Lord Kelris
+								}),
+								i(211460),	-- Ancient Arctic Buckler
+								i(211461),	-- Inscribed Gravestone Scepter
+							},
+						}),
+						q(78923, {	-- Knowledge in the Deeps
+							["qg"] = 2786,	-- Gerrig Bonegrip
+							["coord"] = { 50.8, 5.6, IRONFORGE },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/1 Lorgalis Manuscript
+									["providers"] = {
+										{ "i", 5359 },	-- Lorgalis Manuscript
+										{ "o", 13949 },	-- Pitted Iron Chest
+									},
+									["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
+								}),
+								i(211462),	-- Ever-Sustaining Ring
+							},
+						}),
+						q(78926, {	-- Researching the Corruption
+							["qg"] = 8997,	-- Gershala Nightwhisper
+							["coord"] = { 38.3, 43.0, DARKSHORE },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/8 Corrupted Brain Stem
+									["provider"] = { "i", 5952 },	-- Corrupted Brain Stem
+									["crs"] = {
+										4807,	-- Blackfathom Myrmidon
+										4803,	-- Blackfathom Oracle
+										4805,	-- Blackfathom Sea Witch
+										4802,	-- Blackfathom Tide Priestess
+										4799,	-- Fallenroot Hellcaller
+										4789,	-- Fallenroot Rogue
+										4788,	-- Fallenroot Satyr
+										4798,	-- Fallenroot Shadowstalker
+										4831,	-- Lady Sarevess
+										216660,	-- Fallenroot Rogue
+										204645,	-- Blackfathom Elite
+										216662,	-- Blackfathom Oracle
+										216659,	-- Fallenroot Satyr
+										216661,	-- Blackfathom Tide Priestess
+									},
+								}),
+								i(211463),	-- Chittering Beetle Clasps
+								i(211464),	-- Worn Prelacy Cape
+							},
+						}),
+						q(3765, {	-- The Corruption Abroad
+							["qg"] = 4984,  -- Argos Nightwhisper
+							-- #if AFTER WRATH
+							["coord"] = { 36.2, 67.6, STORMWIND_CITY },
+							-- #else
+							["coord"] = { 21.6, 55.6, STORMWIND_CITY },
+							-- #endif
+							["timeline"] = { "removed 4.0.3" },
+							["maps"] = { DARKSHORE },
+							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
+							["lvl"] = 20,
+						}),
+						q(78916, {	-- The Heart of the Void (A)
+							["providers"] = {
+								{ "i", 209693 },	-- Perfect Blackfathom Pearl
+								{ "n", 215367 },	-- Dawnwatcher Selgorm <The Argent Dawn>
+							},
+							["coord"] = { 56.0, 24.5, DARNASSUS },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								i(211451),	-- Acolyte's Void Pearl
+								i(211449),	-- Avenger's Void Pearl
+								i(211450),	-- Invoker's Void Pearl
+							},
+						}),
+						q(78917, {	-- The Heart of the Void (H)
+							["providers"] = {
+								{ "i", 211452 },	-- Perfect Blackfathom Pearl
+								--{ "n",  },	-- CRIEVE NOTE: Not sure what the NPC is or where they are.
+							},
+							["maps"] = { THUNDER_BLUFF },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								i(211451),	-- Acolyte's Void Pearl
+								i(211449),	-- Avenger's Void Pearl
+								i(211450),	-- Invoker's Void Pearl
+							},
+						}),
+						q(78925, {	-- Twilight Falls
+							["qg"] = 4784,	-- Argent Guard Manados <The Argent Dawn>
+							["coord"] = { 38.3, 43.0, DARNASSUS },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/10 Twilight Pendant
+									["provider"] = { "i", 5879 },	-- Twilight Pendant
+									["crs"] = {
+										4809,	-- Twilight Acolyte
+										4811,	-- Twilight Aquamancer
+										4814,	-- Twilight Elementalist
+										4812,	-- Twilight Loreseeker
+										4810,	-- Twilight Reaver
+										4813,	-- Twilight Shadowmage
+									},
+								}),
+								i(211466),	-- Tender's Heartwood Girdle
+								i(211465),	-- Nimbus Boots of Insight
+							},
+						}),
+					}),
+					n(PROFESSIONS, {
+						n(212159, {	-- Old Serra'kis <The Devoured>
+							["sourceQuest"] = 78907,	-- Speak to the Dead
+							["OnUpdate"] = [[_.OnUpdateForCrafter]],
+							["groups"] = {
+								i(211419),	-- Handful of Shifting Scales
+							},
+						}),
+						o(411358, {	-- Artisan's Chest
+							["provider"] = { "i", 211420 },	-- Shifting Scale Talisman
+							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
+							["timeline"] = { "removed 2.0.1" },
+							["OnUpdate"] = [[_.OnUpdateForCrafter]],
+							["groups"] = {
+								i(211421),	-- The Box
+							},
+						}),
+					}),
+					n(TREASURES, {
+						["description"] = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.",
+						["groups"] = {
+							i(211849, {	-- Formula: Blackfathom Mana Oil
+								["provider"] = { "o", 415614 },	-- Mysterious Formulae
+							}),
+							i(211846, {	-- Blackfathom Sharpening Stone
+								["provider"] = { "o", 415614 },	-- Mysterious Formulae
+							}),
+						},
+					}),
+					n(COMMON_BOSS_DROPS, {
+						["description"] = "The Twilight armor sets can drop from any of the last 4 bosses.",
+						["crs"] = {
+							204921,	-- Gelihast
+							207356,	-- Lorgus Jett
+							209678,	-- Twilight Lord Kelris
+							213334,	-- Aku'mai
+						},
+						["groups"] = {
+							i(211505),	-- Twilight Avenger's Helm
+							i(211504),	-- Twilight Avenger's Chain
+							i(211506),	-- Twilight Avenger's Boots
+							i(211507),	-- Twilight Elementalist's Cowl
+							i(211509),	-- Twilight Elementalist's Robe
+							i(211508),	-- Twilight Elementalist's Footpads
+							i(209683),	-- Twilight Invoker's Shawl
+							i(209671),	-- Twilight Invoker's Robes
+							i(209669),	-- Twilight Invoker's Shoes
+							i(211510),	-- Twilight Slayer's Cowl
+							i(211512),	-- Twilight Slayer's Tunic
+							i(211511),	-- Twilight Slayer's Footpads
+						},
+					}),
+					n(202699, {	-- Baron Aquanis
+						["description"] = "Baron Aquanis sits stationary atop three broken platforms, and raid members must dodge his mechanics to avoid being thrown into the water and possibly aggroing extra enemies - Bubble Beam knocks enemies in front of him, and Depth Charge knocks back anyone close to the target! In addition to this, players must jump through platforms to avoid Torrential Downpour damage.",
+						["groups"] = {
+							i(211454, {	-- Strange Water Globe
+								["races"] = HORDE_ONLY,
+							}),
+							i(204807),	-- Fathomblade
+							i(209590),	-- Cracked Water Globe
+							i(209825),	-- Droplet Choker
+							i(209422),	-- High Tide Choker
+							i(209423),	-- Flowing Scarf
+							i(209676),	-- Shoulderguards of Crushing Depths
+							i(209828),	-- Sub-Zero Pauldrons
+							i(204804),	-- Hydraxian Bangles
+							i(211852),	-- Handwraps of Befouled Water
+							i(209421),	-- Cord of Aquanis
+							i(209677),	-- Loop of Swift Currents
+						},
+					}),
+					n(201722, {	-- Ghamoo-ra
+						["description"] = "Ghamoo-ra patrols around an island and requires clearing around the area before being engageed. In the fight itself, tanks must taunt swap to avoid massive stacks of Crunch Armor, while other members of the raid must deal with Ghamoo-ra's shield, Aqua Shell - Deal damage to break it. Once Aqua Shell is broken, DPS the turtle down while dealing with massive raid-wide damage!",
+						["groups"] = {
+							i(209436),	-- Chipped Bite of Serra'kis
+							i(209830),	-- Ironhide Arbalest
+							i(209424),	-- Shell Plate Barrier
+							i(209523),	-- Shimmering Thresher Cape
+							i(209678),	-- Mantle of the Thresher Slayer
+							i(209824),	-- Shimmering Shoulderpads
+							i(209418),	-- Adamantine Tortoise Armor
+							i(209675),	-- Clamweave Tunic
+							i(209524),	-- Bindings of Serra'kis
+							i(209432),	-- Ghamoo-ra's Cinch
+						},
+					}),
+					n(204068, {	-- Lady Sarevess
+						["description"] = "Lady Sarevess is accompanied by a tanky Blackfathom Elite that needs to be off-tanked. The main mechanic players must deal with is Freezing Arrow, in which a player is randomly targetted by an arrow that leaves a frost patch that the off-tank can move the Blackfathom Elite to stun it for a short duration. In addition to this, spread out to not chain Forked Lightning damage!",
+						["groups"] = {
+							i(209564),	-- Guardian's Trident
+							i(209525),	-- Honed Darkwater Talwar
+							i(209563),	-- Naga Heartrender
+							i(209822),	-- Strength of Purpose
+							i(211789),	-- Artemis Cowl
+							i(211843),	-- Mask of Scorn
+							i(211842),	-- Rakkamar's Tattered Thinking Cap
+							i(209680),	-- Waterproof Scarf
+							i(209679),	-- Azshari Novice's Shoulderpads
+							i(209527),	-- Naga Battle Gauntlets
+							i(209566),	-- Leggings of the Faithful
+							i(209565),	-- Band of Deep Places
+							i(209823),	-- Signet of Beasts
+						},
+					}),
+					n(204921, {	-- Gelihast
+						["description"] = "Gelihast has a quite dangerous curse with Curse of Blackfathom, so you must have ways to decurse it off. The raid must avoid getting hit by Shadow Crash while the tanks taunt swap to prevent reaching high stacks of Shadow Strike. Healers can also dispel the random Fear he throws at people.\n\nThe big mechanic happens once the boss reaches 10% - March of the Murlocs will begin, spawning dozens of murlocs that players must dodge while the boss heals himself and throws more Shadow Crashes. Once fully healed, the fight starts again, with Gelihast summoning low-health Blackfathom Tendril that must be killed. Gelihast will heal himself to full twice with March of the Murlocs before finally dying.",
+						["groups"] = {
+							i(209567),	-- Coral Reef Axe
+							i(209571),	-- Deadlight
+							i(209559),	-- Twilight Sage's Walking Stick
+							i(209573),	-- Wrathful Spire
+							i(209570),	-- Tome of Cavern Lore
+							i(209820),	-- Black Shroud Choker
+							i(209568),	-- Algae Gauntlets
+							i(209572),	-- Black Boiled Leathers
+							i(209569),	-- Murloc Hide Kneeboots
+							i(209670),	-- Skinwalkers
+							i(209821),	-- Ring of Shadowsight
+							i(209681),	-- Black Murloc Egg
+							i(211491),	-- Bottomless Murloc Skin Bag
+						},
+					}),
+					n(207356, {	-- Lorgus Jett
+						["description"] = "Lorgus Jett can be found behind a gauntlet of Naga and Murlocs that must be dealt with before engaging the boss itself. Lorgus Jett himself has 3 totems he will use - One totem is spawned every 10 seconds in a set order. You can simply ignore two out of the three totems and DPS Lorgus Jett:\n\n    Corrupted Windfury Totem - Ignore and tank through his enhanced attacks;\n    Corrupted Lightning Shield Totem - Kill this totem immediately once it spawns;\n    Corrupted Molten Fury Totem - Ignore this totem and dodge the molten boulders it spawns.",
+						["groups"] = {
+							i(209579),	-- Crashing Thunder
+							i(209577),	-- Fist of the Wild
+							i(209560),	-- Hammer of Righteous Judgement
+							i(209818),	-- Sun-Touched Crescent
+							i(209682),	-- Sturdy Hood
+							i(209578),	-- Glowing Leather Bands
+							i(209581),	-- Silver Hand Sabatons
+							i(209575),	-- Carved Driftwood Icon
+							i(209574),	-- Discarded Tenets of the Silver Hand
+							i(209576),	-- Mind-Expanding Mushroom
+						},
+					}),
+					n(209678, {	-- Twilight Lord Kelris
+						["description"] = "Kelris is a two-phase fight with Phase 1 starting on pull and Phase 2 starting at 35%, so DPS must hold their big cooldowns until Kelris enters Phase 2. Through the fight, players must dodge Shadow Crashes and interrupt Shadowy Chains (priority) and Mind Blast.\n\nThe main difficult in the fight is the Dream Realm mechanic - Every so often, the two closest players to Kelris will be put to Sleep, being sent to a Dream Realm in which they need to kill neutral Phantasmal Priestesses for a chance to spawn a portal to be sent back to reality. After 30 seconds in the Dream Phase, the Priestesses will become aggressive and attack the two players on the Dream Realm. If possible, avoid using casters to go to the Dream Realm, as the Priestesses have high magical resistance.\n\nOnce Kelris reaches 35%, Phase 2 will start - Kelris will no longer send players to the Dream Realm, but will deal increased damage, in addition to his previous interruptible spells now being immune to interrupts. Save your resources and spread around the room to burn the boss down!",
+						["groups"] = {
+							i(209561),	-- Rod of the Ancient Sleepwalker
+							i(209694),	-- Blackfathom Ritual Dagger
+							i(209674),	-- Phoenix Ignition
+							i(211458),	-- Tome of Shadow Warding
+							i(209673),	-- Glowing Fetish Amulet
+							i(209686),	-- Jagged Bone Necklace
+							i(209817),	-- Voidwalker Brooch
+							i(209672),	-- Black Fingerless Gloves
+							i(211455),	-- Slick Fingerless Gloves
+							i(211457),	-- Twilight Defender's Girdle
+							i(209667),	-- Gaze Dreamer Leggings
+							i(209668),	-- Signet of the Twilight Lord
+							i(209816),	-- Fetish of Mischief
+							i(211492),	-- Kelris's Satchel
+						},
+					}),
+					n(213334, {	-- Aku'mai
+						["description"] = "Once engaged, all raid members should stay close to Aku'mai at all times, to easily dodge the Corrosive Blast cones. Getting hit by this gives a stack of Corrosion. Tanks will naturally be affected with Corrosion over time, and once they reach 3-4 stacks of Corrosion, they must drag themselves and the boss to one of the four Cleansing Pool scattered across the room - Cleansing themselves and generating adds that must be killed.\n\nOnce Aku'mai hits 50%, he will enter Phase 2 by casting Dark Protection becoming big and voidlike. His abilities remain mostly the same, but now deal Shadow damage instead of Nature. The main difference is that Corrosion becomes Shadow Seep, and tanks must taunt swap to avoid getting high stacks of the debuff. It is possible to cleanse these the same way as you did Corrosion in Phase 1, but it is largely unnecessary if your DPS is good.",
+						["groups"] = {
+							i(209693),	-- Perfect Blackfathom Pearl
+							i(211452),	-- Perfect Blackfathom Pearl
+							i(211456),	-- Dagger of Willing Sacrifice
+							i(209562),	-- Deadly Strike of the Hydra
+							i(209691),	-- Vampiric Boot Knife
+							i(209534),	-- Azshari Arbalest
+							i(209688),	-- Bael Modan Blunderbuss
+							i(209580),	-- Gusting Wind
+							i(209690),	-- Shadowscale Coif
+							i(209692),	-- Sentinel Pauldrons
+							i(209687),	-- Hydra Hide Cuirass
+							i(209685),	-- Ancient Moss Cinch
+							i(209684),	-- Soul Leech Pants
+							i(209689),	-- Crabshell Waders
+						},
+					}),
+				},
+			}))),
+			-- #endif
 		},
 	}),
 }));

@@ -15,10 +15,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		ach(18558, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Leaders of Scholomance
-			crit(1, {	-- Darkmaster Gandling
+			crit(549, {	-- Darkmaster Gandling
 				["_npcs"] = { 1853 },
 			}),
-			crit(2, {	-- Kirtonos the Herald
+			crit(60409, {	-- Kirtonos the Herald
 				["_npcs"] = { 10506 },
 			}),
 		})),
@@ -66,6 +66,32 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				}),
 			},
 		})),
+		q(7666, {	-- Again Into the Great Ossuary [A]
+			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+			["sourceQuest"] = 7647,	-- Judgment and Redemption
+			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+			["timeline"] = { "removed 4.0.3" },
+			["classes"] = { PALADIN },
+			["races"] = ALLIANCE_ONLY,
+			["repeatable"] = true,
+			["lvl"] = 60,
+			["groups"] = {
+				i(18746),	-- Divination Scryer
+			},
+		}),
+		q(7669, {	-- Again Into the Great Ossuary [H]
+			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+			["sourceQuest"] = 8258,	-- The Darkreaver Menace
+			["coord"] = { 38.7, 35.9, ORGRIMMAR },
+			["timeline"] = { "removed 4.0.3" },
+			["classes"] = { SHAMAN },
+			["races"] = HORDE_ONLY,
+			["repeatable"] = true,
+			["lvl"] = 60,
+			["groups"] = {
+				i(18746),	-- Divination Scryer
+			},
+		}),
 		q(27140, {	-- Alexi's Gambit
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
 			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
@@ -196,7 +222,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 57,
 		}),
 		q(76257, {	-- Darkmaster's Scourgestone
-			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone
+			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QI!)
 			["timeline"] = { ADDED_10_1_5 },
 			["g"] = {
 				i(12844),	-- Argent Dawn Valor Token
@@ -336,8 +362,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(7647, {	-- Judgment and Redemption
-			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-			-- ["sourceQuest"] = 7646,	-- The Divination Scryer -- TODO: this quest needs to be sourced! (see MissingQuests.txt)
+			["providers"] = {
+				{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				{ "i", 18804 },	-- Lord Grayson's Satchel
+			},
+			["sourceQuest"] = 7646,	-- The Divination Scryer
 			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
 			["timeline"] = { "removed 4.0.3" },
 			["classes"] = { PALADIN },
@@ -347,6 +376,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				objective(1, {	-- 0/1 Charger's Redeemed Soul
 					["provider"] = { "i", 18799 },	-- Charger's Redeemed Soul
 					["cost"] = { { "i", 18749, 1 } },	-- Charger's Lost Soul
+					["crs"] = {
+						14516,	-- Death Knight Darkreaver
+						14568,	-- Darkreaver's Fallen Charger
+					},
 				}),
 				objective(2, {	-- 0/1 Blessed Arcanite Barding
 					["provider"] = { "i", 18792 },	-- Blessed Arcanite Barding
@@ -381,7 +414,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 58,
 		}),
 		q(76249, {	-- Memory of Scholomance
-			["description"] = "Its recommened to activate the Debug-Mode for the Allthethings to properly see every step & description.\n\nTo start unlocking old Scholomance, you must first do a heroic run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.\n\nAt this point, you must use the Krastinov's Bag of Horrors toy on top of the location where you looted Eva's Femur. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+			["description"] = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
 			["timeline"] = { ADDED_10_1_5 },
 			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
 			["cost"] = {
@@ -538,7 +571,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 7667,	-- Material Assistance
-			["cr"] = 14516,	-- Death Knight Darkreaver
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { "removed 1.7.0" },
 			["classes"] = { SHAMAN },
@@ -547,6 +579,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["groups"] = {
 				objective(1, {	-- 0/1 Darkreaver's Head
 					["provider"] = { "i", 18880 },	-- Darkreaver's Head
+					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
 				i(18807, {	-- Helm of Latent Power
 					["timeline"] = { "removed 1.7.0" },
@@ -559,7 +592,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["altQuests"] = {
 				7668,	-- The Darkreaver Menace (Original)
 			},
-			["cr"] = 14516,	-- Death Knight Darkreaver
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { "added 1.7.0", "removed 4.0.3" },
 			["classes"] = { SHAMAN },
@@ -568,6 +600,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["groups"] = {
 				objective(1, {	-- 0/1 Darkreaver's Head
 					["provider"] = { "i", 18880 },	-- Darkreaver's Head
+					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
 				i(20134, {	-- Skyfury Helm
 					["timeline"] = { "added 1.7.0", "removed 4.0.3" },
@@ -597,7 +630,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 57,
 			["groups"] = {
 				objective(1, {	-- 0/1 Keepsake of Remembrance
-					["provider"] = { "i", 13585 },	-- Keepsake of Remembrance
+					["providers"] = {
+						{ "i",  13585 },	-- Keepsake of Remembrance
+						{ "o", 176630 },	-- Keepsake of Remembrance
+					},
 					["coord"] = { 17.9, 69.4, ARATHI_HIGHLANDS },
 				}),
 			},
@@ -700,7 +736,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	}),
 	n(TREASURES, {
 		o(403567, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
-			["description"] = "In Rattlegore's room, on the first bone pile to the left of the entrance, you will find a very small item that can be looted.",
+			["description"] = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.",
 			["groups"] = {
 				i(206372),	-- Cracked Argent Dawn Commission
 			},
@@ -714,7 +750,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(12736, {	-- Frostwhisper's Embalming Fluid
 			["provider"] = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
 			["description"] = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
-			["timeline"] = { REMOVED_5_0_4 }
+			["timeline"] = { "added 1.11.1.5462", REMOVED_5_0_4, "added 10.2.5" }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
 		}),
 	}),
 	n(ZONE_DROPS, {
@@ -759,7 +795,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 			["cr"] = 10678,	-- Plagued Hatchling
 		}),
-		i(20520),	-- Dark Rune
+		ignoreTimeline(i(20520)),	-- Dark Rune
 		i(12753, {	-- Skin of Shadow
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
@@ -818,9 +854,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 	}),
-	n(14861, bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4 } }, {	-- Blood Steward of Kirtonos
-		i(13523),	-- Blood of Innocents
-	})),
+	n(14861, {	-- Blood Steward of Kirtonos
+		i(13523, {	-- Blood of Innocents
+			["timeline"] = { REMOVED_5_0_4 },
+		}),
+	}),
 	n(10506, {	-- Kirtonos the Herald
 		["providers"] = {
 			{ "o", 175564 },	-- Brazier of the Herald
@@ -865,7 +903,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(14548),	-- Royal Cap Spaulders
-		i(14543),	-- Darkshade Gloves
+		i(14543, {	-- Darkshade Gloves
+			-- #if AFTER 2.0.1
+			["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+			["isBounty"] = true,
+			-- #endif
+			["timeline"] = { "removed 2.0.1" },
+		}),
 		i(14545),	-- Ghostloom Leggings
 		i(18690),	-- Wraithplate Leggings
 	}),
@@ -891,6 +935,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 	}),
+	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
+	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant. -- Gold 02/08/2023 (EU)
 	n(14516, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Death Knight Darkreaver
 		["cost"] = { { "i", 18746, 1 } },	-- Divination Scryer
 		["groups"] = {
@@ -915,7 +961,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["cost"] = { { "i", 13752, 1 } },	-- Soulbound Keepsake
 			["description"] = "Use the Keepsake on him before he dies to turn him back into a human.",
 		}),
-		i(13521),	-- Recipe: Flask of Supreme Power
+		i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
 		i(14487),	-- Bonechill Hammer
 		i(13952),	-- Iceblade Hacker
 		i(18696),	-- Intricately Runed Shield
@@ -944,6 +990,27 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 			{ "i", 22057, 1 },	-- Brazier of Invocation
 		},
+		-- #if AFTER 10.1.5
+		-- This init function unmarks the removed from game flag for folks with the brazier.
+		["OnInit"] = [[function(t)
+			if GetItemCount(22057, true) > 0 then
+				t.u = nil;
+				for i,o in ipairs(t.g) do
+					if o.u and o.u == 11 then
+						o.u = nil;
+					end
+				end
+			else
+				t.u = 11;
+				for i,o in ipairs(t.g) do
+					if not o.u then
+						o.u = 11;
+					end
+				end
+			end
+			return t;
+		end]],
+		-- #endif
 		["groups"] = {
 			i(22332),	-- Blade of Necromancy
 			i(22333),	-- Hammer of Divine Might
@@ -1042,7 +1109,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	n(1853, {	-- Darkmaster Gandling
 		["description"] = "You must full clear out the Crypt before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
 		["groups"] = {
-			i(206373, {	-- Darkmaster's Scourgestone
+			i(206373, {	-- Darkmaster's Scourgestone (QI!)
+				["provider"] = { "i", 12846 },	-- Argent Dawn Commission
 				["description"] = "Drops only with equipped Argent Dawn Commission",
 				["timeline"] = { ADDED_10_1_5 },
 			}),
@@ -1052,7 +1120,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["classes"] = { WARLOCK },
 				-- #endif
 			}),
-			i(13501),	-- Recipe: Major Mana Potion
+			i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
 			i(13937),	-- Headmaster's Charge
 			i(13938),	-- Bonecreeper Stylus
 			i(13953),	-- Silent Fang
@@ -1590,6 +1658,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(246, {	-- Scholomance
 		-- #if BEFORE MOP
 		["lore"] = "The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",
+		-- #endif
+		-- #if BEFORE CATA
+		["zone-text-areaID"] = 2057,	-- TODO: Determine what expansion this gets its own (correct) mapID.
 		-- #endif
 		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 		["mapID"] = SCHOLOMANCE,

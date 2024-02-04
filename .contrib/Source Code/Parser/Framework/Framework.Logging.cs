@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace ATT
@@ -44,6 +45,16 @@ namespace ATT
         }
 
         /// <summary>
+        /// Outputs the message to the Trace in Debug only which is something that may merit attention
+        /// </summary>
+        /// <param name="message"></param>
+        public static void LogDebugWarn(string message, object data = null)
+        {
+            if (DebugMode)
+                Log("WARN: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+        }
+
+        /// <summary>
         /// Outputs the message to the Trace
         /// </summary>
         /// <param name="message"></param>
@@ -58,10 +69,31 @@ namespace ATT
         /// Outputs the message to the Trace which requires User intervention
         /// </summary>
         /// <param name="message"></param>
+        public static void LogWarn(string message, object data = null)
+        {
+            Log("WARN: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+        }
+
+        /// <summary>
+        /// Outputs the message to the Trace which requires User intervention
+        /// </summary>
+        /// <param name="message"></param>
         public static void LogError(string message, object data = null)
         {
             IsErrored = true;
             Log("ERROR: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+        }
+
+        /// <summary>
+        /// Outputs the message to the Trace which requires User intervention
+        /// </summary>
+        /// <param name="message"></param>
+        public static void LogException(Exception ex)
+        {
+            IsErrored = true;
+            Trace.WriteLine("FILE: " + CurrentFileName);
+            Trace.WriteLine("ERROR: " + ex.Message);
+            Trace.WriteLine(ex.StackTrace);
         }
     }
 }

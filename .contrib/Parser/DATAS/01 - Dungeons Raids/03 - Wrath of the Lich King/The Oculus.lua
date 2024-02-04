@@ -10,29 +10,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(487, {	-- The Oculus
-					crit(5459, { -- Drakos the Interrogator
+					crit(5459, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, NORMAL_DUNGEON },
 					}),
-					crit(5460, { -- Mage-Lord Urom
+					crit(5460, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, NORMAL_DUNGEON },
 					}),
-					crit(5461, { -- Varos Cloudstrider
+					crit(5461, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5630, { -- Ley-Guardian Eregos
+					crit(5630, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5462, { -- Ley-Guardian Eregos
+					crit(5462, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17300, {	-- Defense Protocol Alpha: The Oculus
-					crit(57763, { -- Drakos the Interrogator
+					crit(57763, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39399),	-- Helm of the Vast Legions
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39408),	-- Leggings of Sapphiron
 						},
 					}),
-					crit(57765, { -- Varos Cloudstrider
+					crit(57765, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39401),	-- Circle of Death
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39405),	-- Helmet of the Inner Sanctum
 						},
 					}),
-					crit(57762, { -- Mage-Lord Urom
+					crit(57762, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39403),	-- Helm of the Unsubmissive
@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39415),	-- Shroud of the Citadel
 						},
 					}),
-					crit(57764, { -- Ley-Guardian Eregos
+					crit(57764, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
 							i(44658),	-- Chain of the Ancient Wyrm
@@ -78,28 +78,28 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18599, {	-- Defense Protocol Beta: The Oculus
-					crit(60606, { -- Drakos the Interrogator
+					crit(60606, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45997),	-- Gauntlets of the Wretched
 							i(45996),	-- Hoperender
 						},
 					}),
-					crit(60608, { -- Varos Cloudstrider
+					crit(60608, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 						["groups"] = {
 							i(46015),	-- Pendant of Endless Despair
 							i(46014),	-- Saronite Animus Cloak
 						},
 					}),
-					crit(60605, { -- Mage-Lord Urom
+					crit(60605, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 						["groups"] = {
 							i(46013),	-- Underworld Mantle
 							i(46011),	-- Shadowbite
 						},
 					}),
-					crit(60607, { -- Ley-Guardian Eregos
+					crit(60607, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
@@ -109,18 +109,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19436, {	-- Defense Protocol Gamma: The Oculus
+					crit(63358, {	-- Drakos the Interrogator
+						["_encounter"] = { 622, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63361, {	-- Varos Cloudstrider
+						["_encounter"] = { 623, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63356, {	-- Mage-Lord Urom
+						["_encounter"] = { 624, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+					crit(63360, {	-- Ley-Guardian Eregos
+						["_encounter"] = { 625, HEROIC_DUNGEON },
+						["groups"] = {
+
+						},
+					}),
+				})),
 				-- #endif
 				ach(498,  {	-- Heroic: The Oculus
-					crit(6859, { -- Drakos the Interrogator
+					crit(6859, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 					}),
-					crit(6860, { -- Mage-Lord Urom
+					crit(6860, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 					}),
-					crit(6861, { -- Varos Cloudstrider
+					crit(6861, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 					}),
-					crit(5617, { -- Ley-Guardian Eregos
+					crit(5617, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 					}),
 				}),
@@ -389,10 +415,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									},
 								}),
 							}),
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5617,		-- Ley-Guardian Eregos slain
-							},
 							ach(5104, {	-- Heroic: The Oculus Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
@@ -434,21 +456,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							-- #if BEFORE 4.0.1
 							i(43668),	-- Ley Line Tuner
 							-- #endif
-							i(52676, {	-- Cache of the Ley-Guardian
-								-- #if ANYCLASSIC
-								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this bag and the mount it contains unobtainable until Cataclysm.",
-								["timeline"] = { "created 3.3.2.11403" },
-								-- #else
-								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder.",
-								-- #endif
+							applyclassicphase(WRATH_PHASE_FOUR, i(52676, {	-- Cache of the Ley-Guardian
+								["description"] = "This bag is only available if you queue for the instance using the Random Dungeon Finder. It will not drop in an explicitly formed group or by using the Select Instance interface.",
 								["groups"] = {
-									i(43953),	-- Reins of the Blue Drake
-									i(43953, {	-- Blue Drake (MOUNT!)
-										-- #if BEFORE 4.0.3
-										["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
-										-- #endif
-										["timeline"] = { "created 3.0.1", "added 4.0.3" },
-									}),
+									i(43953),	-- Blue Drake (MOUNT!)
 									i(36933),	-- Forest Emerald
 									i(36921),	-- Autumn's Glow
 									i(36930),	-- Monarch Topaz
@@ -456,7 +467,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									i(36924),	-- Sky Sapphire
 									i(36927),	-- Twilight Opal
 								},
-							}),
+							})),
 						},
 					}),
 				},

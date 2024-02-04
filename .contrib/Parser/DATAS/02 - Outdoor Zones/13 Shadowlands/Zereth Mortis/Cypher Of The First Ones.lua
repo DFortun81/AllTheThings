@@ -9,65 +9,29 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				ach(15542),	-- Apocopocolypse Now
 				ach(15402, {	-- Cyphers of the First Ones
 					recipe(365040),	-- Pale Regal Cervid
-					crit(1),	-- All Metrial Cyphers
-					crit(2),	-- All Aelic Cyphers
-					crit(3),	-- All Dealic Cyphers
-					crit(4),	-- All Trebalim Cyphers
+					crit(1, {	-- All Metrial Cyphers
+						["_noautomation"] = true,
+					}),
+					crit(2, {	-- All Aelic Cyphers
+						["_noautomation"] = true,
+					}),
+					crit(3, {	-- All Dealic Cyphers
+						["_noautomation"] = true,
+					}),
+					crit(4, {	-- All Trebalim Cyphers
+						["_noautomation"] = true,
+					}),
 				}),
 				ach(15508, {	-- Fashion of the First Ones
-					i(190182, {	-- Lovely Regal Pocopoc
-						["questID"] = 65600,
-					}),
-					crit(1, {	-- Peaceful Pocopoc
-						["_quests"] = { 65525 },
-					}),
-					crit(2, {	-- Chef Pocopoc
-						["_quests"] = { 65524 },
-					}),
-					crit(3, {	-- Pirate Pocopoc
-						["_quests"] = { 65526 },
-					}),
-					crit(4, {	-- Adventurous Pocopoc
-						["_quests"] = { 65527 },
-					}),
-					crit(5, {	-- Dapper Pocopoc
-						["_quests"] = { 65528 },
-					}),
-					crit(6, {	-- Admiral Pocopoc
-						["_quests"] = { 65529 },
-					}),
-					crit(7, {	-- Wicked Pocopoc
-						["_quests"] = { 65530 },
-					}),
-					crit(8, {	-- Pocobold
-						["_quests"] = { 65534 },
-					}),
-					crit(9, {	-- Pepepec
-						["_quests"] = { 65538 },
-					}),
+					["sym"] = {{ "achievement_criteria" }},
+					["groups"] = {
+						i(190182, {	-- Lovely Regal Pocopoc
+							["questID"] = 65600,
+						}),
+					},
 				}),
 				ach(15509, {	-- Tales of the Exile
-					crit(1, {	-- Firim in Exile, Part 1
-						["_quests"] = { 15509 },
-					}),
-					crit(2, {	-- Firim in Exile, Part 2
-						["_quests"] = { 15509 },
-					}),
-					crit(3, {	-- Firim in Exile, Part 3
-						["_quests"] = { 15509 },
-					}),
-					crit(4, {	-- Firim in Exile, Part 4
-						["_quests"] = { 15509 },
-					}),
-					crit(5, {	-- Firim in Exile, Part 5
-						["_quests"] = { 15509 },
-					}),
-					crit(6, {	-- Firim in Exile, Part 6
-						["_quests"] = { 15509 },
-					}),
-					crit(7, {	-- Firim in Exile, Part 7
-						["_quests"] = { 15509 },
-					}),
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 			}),
 			n(QUESTS, {
@@ -144,11 +108,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64772 },	-- Broken Circle
 					["provider"] = { "n", 180919 },	-- Olea Novi
 					["coord"] = { 36.7, 37.7, ZERETH_MORTIS },
+					["g"] = {
+						i(187615),	-- Orb Fragment (QI!)
+					},
 				}),
 				q(65370, {	-- Gut Check
 					["sourceQuests"] = { 64772 },	-- Broken Circle
 					["provider"] = { "n", 181102 },	-- Olea Manu
 					["coord"] = { 38.2, 35.3, ZERETH_MORTIS },
+					["g"] = {
+						i(189450),	-- Crescendal (QI!)
+					},
 				}),
 				q(64775, {	-- Mawdified Behavior
 					["sourceQuests"] = {
@@ -158,6 +128,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180984 },	-- Hanoa the Exile
 					["coord"] = { 39.5, 31.9, ZERETH_MORTIS },
+					["g"] = {
+						i(189493),	-- Black Steel Fragment (QI!)
+					},
 				}),
 				q(64739, {	-- Zovaal's Grasp
 					["sourceQuests"] = { 64775 },	-- Mawdified Behavior
@@ -178,6 +151,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
 					["provider"] = { "n", 181174 },	-- Olea Pau
 					["coord"] = { 42.3, 31.5, ZERETH_MORTIS },
+					["g"] = {
+						i(187950),	-- Warped Flesh (QI!)
+					},
 				}),
 				q(65219, {	-- Jiro to Hero
 					["sourceQuests"] = {
@@ -204,6 +180,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64641 },	-- Mysterious Greenery
 					["provider"] = { "n", 179923 },	-- Koh Riva
 					["coord"] = { 60.5, 70.1, ZERETH_MORTIS },
+					["g"] = {
+						i(187131),	-- Automa Internals (QI!)
+					},
 				}),
 				q(64644, {	-- A Splash of the Eternal
 					["sourceQuests"] = {
@@ -212,6 +191,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180702 },	-- Glimmercane
 					["coord"] = { 60.7, 69.8, ZERETH_MORTIS },
+					["g"] = {
+						i(187925),	-- Eternal Water (QI!)
+					},
 				}),
 				q(64645, {	-- Moment of Truth
 					["sourceQuests"] = { 64644 },	-- A Splash of the Eternal
@@ -227,6 +209,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64645 },	-- Moment of Truth
 					["provider"] = { "o", 375021 },	-- Perished Automa
 					["coord"] = { 29.3, 15.3, 2027 },
+					["g"] = {
+						i(187619),	-- Winding Seed (QI!)
+					},
 				}),
 				q(64648, {	-- Reap What We Have Sown
 					["sourceQuests"] = {
@@ -235,18 +220,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180800 },	-- Koh Shira
 					["coord"] = { 39.3, 55.5, 2027 },
-					-- TODO: maybe symlink these because they come from multiple quests?
 					["g"] = {
 						i(190985),	-- Crystallic Cryptic Mask
-						i(190991),	-- Crystallic Enigmatic Epaulettes
+						i(190991),	-- Crystallic Enigmatic Epaulets
 						i(190997),	-- Crystallic Numerus Crown
 						i(190979),	-- Crystallic Oracular Smock
 						i(190984),	-- Nova Cryptic Mask
-						i(190990),	-- Nova Enigmatic Epaulettes
+						i(190990),	-- Nova Enigmatic Epaulets
 						i(190996),	-- Nova Numerus Crown
 						i(190978),	-- Nova Oracular Smock
 						i(190983),	-- Scouring Cryptic Mask
-						i(190989),	-- Scouring Enigmatic Epaulettes
+						i(190989),	-- Scouring Enigmatic Epaulets
 						i(190995),	-- Scouring Numerus Crown
 						i(190977),	-- Scouring Oracular Smock
 					},
@@ -604,7 +588,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							["cost"] = { { "c", CYPHER, 25 }, },
 							["timeline"] = {  ADDED_9_2_7 },
 						}),
-						i(188793, {	-- Automated Cypher Analysis Tool
+						i(188793, {	-- Improvised Cypher Analysis Tool
 							["questID"] = 65282,
 							["cost"] = { { "c", CYPHER, 150 }, },
 						}),

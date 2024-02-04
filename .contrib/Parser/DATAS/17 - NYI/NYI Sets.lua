@@ -1,8 +1,6 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
 root(ROOTS.NeverImplemented, {
 	n(SETS, {
 		tier(CLASSIC_TIER, {
@@ -117,475 +115,470 @@ root(ROOTS.NeverImplemented, {
 		tier(WOTLK_TIER, {
 			-- 3.1.0
 			tier(WOTLK_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
-				inst(759, {	-- Ulduar
-					cl(DEATHKNIGHT, {
-						i(46232),	-- Darkruned Battleplate
-						i(46233),	-- Darkruned Chestguard
-						i(46234),	-- Darkruned Faceguard
-						i(46235),	-- Darkruned Gauntlets
-						i(46236),	-- Darkruned Handguards
-						i(46237),	-- Darkruned Helmet
-						i(46238),	-- Darkruned Legguards
-						i(46239),	-- Darkruned Legplates
-						i(46240),	-- Darkruned Pauldrons
-						i(46241),	-- Darkruned Shoulderplates
-					}),
-					cl(DRUID, {
-						i(45350),	-- Nightsong Cover
-						i(46260),	-- Nightsong Handgrips
-						i(46261),	-- Nightsong Handguards
-						i(46262),	-- Nightsong Headguard
-						i(46263),	-- Nightsong Headpiece
-						i(46264),	-- Nightsong Leggings
-						i(46265),	-- Nightsong Legguards
-						i(46266),	-- Nightsong Mantle
-						i(46267),	-- Nightsong Raiments
-						i(46268),	-- Nightsong Robe
-						i(46269),	-- Nightsong Shoulderpads
-						i(46270),	-- Nightsong Spaulders
-						i(46271),	-- Nightsong Trousers
-						i(46272),	-- Nightsong Vestments
-						i(46309),	-- Nightsong Gloves
-					}),
-					cl(HUNTER, {
-						i(46274),	-- Scourgestalker Headpiece
-						i(46273),	-- Scourgestalker Handguards
-						i(46275),	-- Scourgestalker Legguards
-						i(46276),	-- Scourgestalker Spaulders
-						i(46277),	-- Scourgestalker Tunic
-					}),
-					cl(MAGE, {
-						i(46249),	-- Kirin Tor Gauntlets
-						i(46250),	-- Kirin Tor Hood
-						i(46251),	-- Kirin Tor Leggings
-						i(46252),	-- Kirin Tor Shoulderpads
-						i(46253),	-- Kirin Tor Tunic
-					}),
-					cl(PALADIN, {
-						i(46213),	-- Aegis Battleplate
-						i(46214),	-- Aegis Breastplate
-						i(46215),	-- Aegis Faceguard
-						i(46216),	-- Aegis Gauntlets
-						i(46217),	-- Aegis Gloves
-						i(46218),	-- Aegis Greaves
-						i(46219),	-- Aegis Handguards
-						i(46220),	-- Aegis Headpiece
-						i(46221),	-- Aegis Helm
-						i(46222),	-- Aegis Legguards
-						i(46223),	-- Aegis Legguards
-						i(46224),	-- Aegis Legplates
-						i(46225),	-- Aegis Shoulderguards
-						i(46226),	-- Aegis Shoulderplates
-						i(46227),	-- Aegis Spaulders
-						i(46228),	-- Aegis Tunic
-					}),
-					cl(PRIEST, {
-						i(46230),	-- Circlet of Sanctification
-						i(46231),	-- Cowl of Sanctification
-						i(46247),	-- Gloves of Sanctification
-						i(46248),	-- Handwraps of Sanctification
-						i(46254),	-- Leggings of Sanctification
-						i(46255),	-- Mantle of Sanctification
-						i(46256),	-- Pants of Sanctification
-						i(46257),	-- Rainments of Sanctification
-						i(46258),	-- Robe of Sanctification
-						i(46259),	-- Shoulderpads of Sanctification
-					}),
-					cl(ROGUE, {
-						i(46288),	-- Terrorblade Breastplate
-						i(46289),	-- Terrorblade Gauntlets
-						i(46290),	-- Terrorblade Helmet
-						i(46291),	-- Terrorblade Legplates
-						i(46292),	-- Terrorblade Pauldrons
-					}),
-					cl(SHAMAN, {
-						i(46293),	-- Worldbreaker Chestguard
-						i(46294),	-- Worldbreaker Faceguard
-						i(46295),	-- Worldbreaker Gloves
-						i(46296),	-- Worldbreaker Grips
-						i(46297),	-- Worldbreaker Handguards
-						i(46298),	-- Worldbreaker Hauberk
-						i(46299),	-- Worldbreaker Headpiece
-						i(46300),	-- Worldbreaker Helm
-						i(46301),	-- Worldbreaker Kilt
-						i(46302),	-- Worldbreaker Legguards
-						i(46303),	-- Worldbreaker Shoulderguards
-						i(46304),	-- Worldbreaker Shoulderpads
-						i(46305),	-- Worldbreaker Spaulbers
-						i(46306),	-- Worldbreaker Tunic
-						i(46307),	-- Worldbreaker War-Kilt
-					}),
-					cl(WARLOCK, {
-						i(46242),	-- Deathbringer Gloves
-						i(46243),	-- Deathbringer Hood
-						i(46244),	-- Deathbringer Leggings
-						i(46245),	-- Deathbringer Robe
-						i(46246),	-- Deathbringer Shoulderpads
-					}),
-					cl(WARRIOR, {
-						i(46278),	-- Siegebreaker Battleplate
-						i(46279),	-- Siegebreaker Breastplate
-						i(46280),	-- Siegebreaker Gauntlets
-						i(46281),	-- Siegebreaker Greathelm
-						i(46282),	-- Siegebreaker Helmet
-						i(46283),	-- Siegebreaker Handguards
-						i(46284),	-- Siegebreaker Legguards
-						i(46285),	-- Siegebreaker Legplates
-						i(46286),	-- Siegebreaker Pauldrons
-						i(46287),	-- Siegebreaker Shoulderplates
-					}),
+				cl(DEATHKNIGHT, {
+					i(46232),	-- Darkruned Battleplate
+					i(46233),	-- Darkruned Chestguard
+					i(46234),	-- Darkruned Faceguard
+					i(46235),	-- Darkruned Gauntlets
+					i(46236),	-- Darkruned Handguards
+					i(46237),	-- Darkruned Helmet
+					i(46238),	-- Darkruned Legguards
+					i(46239),	-- Darkruned Legplates
+					i(46240),	-- Darkruned Pauldrons
+					i(46241),	-- Darkruned Shoulderplates
+				}),
+				cl(DRUID, {
+					i(45350),	-- Nightsong Cover
+					i(46260),	-- Nightsong Handgrips
+					i(46261),	-- Nightsong Handguards
+					i(46262),	-- Nightsong Headguard
+					i(46263),	-- Nightsong Headpiece
+					i(46264),	-- Nightsong Leggings
+					i(46265),	-- Nightsong Legguards
+					i(46266),	-- Nightsong Mantle
+					i(46267),	-- Nightsong Raiments
+					i(46268),	-- Nightsong Robe
+					i(46269),	-- Nightsong Shoulderpads
+					i(46270),	-- Nightsong Spaulders
+					i(46271),	-- Nightsong Trousers
+					i(46272),	-- Nightsong Vestments
+					i(46309),	-- Nightsong Gloves
+				}),
+				cl(HUNTER, {
+					i(46274),	-- Scourgestalker Headpiece
+					i(46273),	-- Scourgestalker Handguards
+					i(46275),	-- Scourgestalker Legguards
+					i(46276),	-- Scourgestalker Spaulders
+					i(46277),	-- Scourgestalker Tunic
+				}),
+				cl(MAGE, {
+					i(46249),	-- Kirin Tor Gauntlets
+					i(46250),	-- Kirin Tor Hood
+					i(46251),	-- Kirin Tor Leggings
+					i(46252),	-- Kirin Tor Shoulderpads
+					i(46253),	-- Kirin Tor Tunic
+				}),
+				cl(PALADIN, {
+					i(46213),	-- Aegis Battleplate
+					i(46214),	-- Aegis Breastplate
+					i(46215),	-- Aegis Faceguard
+					i(46216),	-- Aegis Gauntlets
+					i(46217),	-- Aegis Gloves
+					i(46218),	-- Aegis Greaves
+					i(46219),	-- Aegis Handguards
+					i(46220),	-- Aegis Headpiece
+					i(46221),	-- Aegis Helm
+					i(46222),	-- Aegis Legguards
+					i(46223),	-- Aegis Legguards
+					i(46224),	-- Aegis Legplates
+					i(46225),	-- Aegis Shoulderguards
+					i(46226),	-- Aegis Shoulderplates
+					i(46227),	-- Aegis Spaulders
+					i(46228),	-- Aegis Tunic
+				}),
+				cl(PRIEST, {
+					i(46230),	-- Circlet of Sanctification
+					i(46231),	-- Cowl of Sanctification
+					i(46247),	-- Gloves of Sanctification
+					i(46248),	-- Handwraps of Sanctification
+					i(46254),	-- Leggings of Sanctification
+					i(46255),	-- Mantle of Sanctification
+					i(46256),	-- Pants of Sanctification
+					i(46257),	-- Rainments of Sanctification
+					i(46258),	-- Robe of Sanctification
+					i(46259),	-- Shoulderpads of Sanctification
+				}),
+				cl(ROGUE, {
+					i(46288),	-- Terrorblade Breastplate
+					i(46289),	-- Terrorblade Gauntlets
+					i(46290),	-- Terrorblade Helmet
+					i(46291),	-- Terrorblade Legplates
+					i(46292),	-- Terrorblade Pauldrons
+				}),
+				cl(SHAMAN, {
+					i(46293),	-- Worldbreaker Chestguard
+					i(46294),	-- Worldbreaker Faceguard
+					i(46295),	-- Worldbreaker Gloves
+					i(46296),	-- Worldbreaker Grips
+					i(46297),	-- Worldbreaker Handguards
+					i(46298),	-- Worldbreaker Hauberk
+					i(46299),	-- Worldbreaker Headpiece
+					i(46300),	-- Worldbreaker Helm
+					i(46301),	-- Worldbreaker Kilt
+					i(46302),	-- Worldbreaker Legguards
+					i(46303),	-- Worldbreaker Shoulderguards
+					i(46304),	-- Worldbreaker Shoulderpads
+					i(46305),	-- Worldbreaker Spaulbers
+					i(46306),	-- Worldbreaker Tunic
+					i(46307),	-- Worldbreaker War-Kilt
+				}),
+				cl(WARLOCK, {
+					i(46242),	-- Deathbringer Gloves
+					i(46243),	-- Deathbringer Hood
+					i(46244),	-- Deathbringer Leggings
+					i(46245),	-- Deathbringer Robe
+					i(46246),	-- Deathbringer Shoulderpads
+				}),
+				cl(WARRIOR, {
+					i(46278),	-- Siegebreaker Battleplate
+					i(46279),	-- Siegebreaker Breastplate
+					i(46280),	-- Siegebreaker Gauntlets
+					i(46281),	-- Siegebreaker Greathelm
+					i(46282),	-- Siegebreaker Helmet
+					i(46283),	-- Siegebreaker Handguards
+					i(46284),	-- Siegebreaker Legguards
+					i(46285),	-- Siegebreaker Legplates
+					i(46286),	-- Siegebreaker Pauldrons
+					i(46287),	-- Siegebreaker Shoulderplates
 				}),
 			})),
 
 			-- 3.2.0
 			tier(WOTLK_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 3.2.0" } }, {
-				inst(757, {	-- Trial of the Crusader
-					cl(DEATHKNIGHT, {
-						i(48880),	-- Koltira's Battleplate of Conquest
-						i(48881),	-- Koltira's Gauntlets of Conquest
-						i(48882),	-- Koltira's Helmet of Conquest
-						i(48883),	-- Koltira's Legplates of Conquest
-						i(48884),	-- Koltira's Shoulderpads of Conquest
-						i(48890),	-- Koltira's Chestguard of Conquest
-						i(48891),	-- Koltira's Faceguard of Conquest
-						i(48892),	-- Koltira's Handguards of Conquest
-						i(48893),	-- Koltira's Legguards of Conquest
-						i(48894),	-- Koltira's Pauldrons of Conquest
-						i(48885),	-- Thassarian's Battleplate
-						i(48886),	-- Thassarian's Gauntlets
-						i(48887),	-- Thassarian's Helmet
-						i(48888),	-- Thassarian's Legplates
-						i(48889),	-- Thassarian's Shoulderplates
-						i(48895),	-- Thassarian's Chestguard
-						i(48896),	-- Thassarian's Faceguard
-						i(48897),	-- Thassarian's Handguards
-						i(48898),	-- Thassarian's Legguards
-						i(48899),	-- Thassarian's Pauldrons
-					}),
-					cl(DRUID, {
-						i(48769),	-- Runetotem's Handguards of Conquest
-						i(48770),	-- Runetotem's Headpiece of Conquest
-						i(48771),	-- Runetotem's Leggings of Conquest
-						i(48772),	-- Runetotem's Robe of Conquest
-						i(48773),	-- Runetotem's Spaulders of Conquest
-						i(48781),	-- Runetotem's Cover of Conquest
-						i(48782),	-- Runetotem's Gloves of Conquest
-						i(48783),	-- Runetotem's Mantle of Conquest
-						i(48784),	-- Runetotem's Trousers of Conquest
-						i(48785),	-- Runetotem's Vestments of Conquest
-						i(48794),	-- Runetotem's Handgrips of Conquest
-						i(48795),	-- Runetotem's Headguard of Conquest
-						i(48796),	-- Runetotem's Legguards of Conquest
-						i(48797),	-- Runetotem's Raiments of Conquest
-						i(48798),	-- Runetotem's Shoulderpads of Conquest
-						i(48774),	-- Malfurion's Handguards
-						i(48775),	-- Malfurion's Headpiece
-						i(48776),	-- Malfurion's Leggings
-						i(48777),	-- Malfurion's Robe
-						i(48778),	-- Malfurion's Spaulders
-						i(48786),	-- Malfurion's Cover
-						i(48787),	-- Malfurion's Gloves
-						i(48788),	-- Malfurion's Mantle
-						i(48789),	-- Malfurion's Trousers
-						i(48790),	-- Malfurion's Vestments
-						i(48799),	-- Malfurion's Handgrips
-						i(48800),	-- Malfurion's Headguard
-						i(48801),	-- Malfurion's Legguards
-						i(48802),	-- Malfurion's Raiments
-						i(48803),	-- Malfurion's Shoulderpads
-					}),
-					cl(HUNTER, {
-						i(48819),	-- Windrunner's Handguards
-						i(48820),	-- Windrunner's Headpiece
-						i(48821),	-- Windrunner's Legguards
-						i(48822),	-- Windrunner's Spaulders
-						i(48823),	-- Windrunner's Tunic
-						i(48814),	-- Windrunner's Handguards of Conquest
-						i(48815),	-- Windrunner's Headpiece of Conquest
-						i(48816),	-- Windrunner's Legguards of Conquest
-						i(48817),	-- Windrunner's Spaulders of Conquest
-						i(48818),	-- Windrunner's Tunic of Conquest
-					}),
-					cl(MAGE, {
-						i(48725),	-- Khadgar's Gauntlets
-						i(48726),	-- Khadgar's Hood
-						i(48727),	-- Khadgar's Leggings
-						i(48728),	-- Khadgar's Robe
-						i(48729),	-- Khadgar's Shoulderpads
-						i(48730),	-- Sunstrider's Gauntlets of Conquest
-						i(48731),	-- Sunstrider's Hood of Conquest
-						i(48732),	-- Sunstrider's Leggings of Conquest
-						i(48733),	-- Sunstrider's Robe of Conquest
-						i(48734),	-- Sunstrider's Shoulderpads of Conquest
-					}),
-					cl(PALADIN, {
-						i(48905),	-- Liadrin's Tunic of Conquest
-						i(48906),	-- Liadrin's Spaulders of Conquest
-						i(48907),	-- Liadrin's Headpiece of Conquest
-						i(48908),	-- Liadrin's Greaves of Conquest
-						i(48909),	-- Liadrin's Gloves of Conquest
-						i(48910),	-- Liadrin's Battleplate of Conquest
-						i(48911),	-- Liadrin's Gauntlets of Conquest
-						i(48912),	-- Liadrin's Helm of Conquest
-						i(48913),	-- Liadrin's Legplates of Conquest
-						i(48914),	-- Liadrin's Shoulderplates of Conquest
-						i(48922),	-- Liadrin's Breastplate of Conquest
-						i(48923),	-- Liadrin's Faceguard of Conquest
-						i(48924),	-- Liadrin's Handguards of Conquest
-						i(48925),	-- Liadrin's Legguards of Conquest
-						i(48926),	-- Liadrin's Shoulderguards of Conquest
-						i(48900),	-- Turalyon's Tunic
-						i(48901),	-- Turalyon's Spaulders
-						i(48902),	-- Turalyon's Headpiece
-						i(48903),	-- Turalyon's Greaves
-						i(48904),	-- Turalyon's Gloves
-						i(48915),	-- Turalyon's Battleplate
-						i(48916),	-- Turalyon's Gauntlets
-						i(48917),	-- Turalyon's Helm
-						i(48918),	-- Turalyon's Legplates
-						i(48919),	-- Turalyon's Shoulderplates
-						i(48927),	-- Turalyon's Breastplate
-						i(48928),	-- Turalyon's Faceguard
-						i(48929),	-- Turalyon's Handguards
-						i(48930),	-- Turalyon's Legguards
-						i(48931),	-- Turalyon's Shoulderguards
-					}),
-					cl(PRIEST, {
-						i(48745),	-- Velen's Cowl
-						i(48746),	-- Velen's Gloves
-						i(48747),	-- Velen's Leggings
-						i(48748),	-- Velen's Robe
-						i(48749),	-- Velen's Shoulderpads
-						i(48750),	-- Zabra's Cowl of Conquest
-						i(48751),	-- Zabra's Gloves of Conquest
-						i(48752),	-- Zabra's Leggings of Conquest
-						i(48753),	-- Zabra's Robe of Conquest
-						i(48754),	-- Zabra's Shoulderpads of Conquest
-						i(48755),	-- Velen's Circlet
-						i(48756),	-- Velen's Handwraps
-						i(48757),	-- Velen's Mantle
-						i(48758),	-- Velen's Pants
-						i(48759),	-- Velen's Rainments
-						i(48760),	-- Zabra's Circlet of Conquest
-						i(48761),	-- Zabra's Handwraps of Conquest
-						i(48762),	-- Zabra's Mantle of Conquest
-						i(48763),	-- Zabra's Pants of Conquest
-						i(48764),	-- Zabra's Raiments of Conquest
-					}),
-					cl(ROGUE, {
-						i(48809),	-- VanCleef's Breastplate
-						i(48810),	-- VanCleef's Gauntlets
-						i(48811),	-- VanCleef's Helmet
-						i(48812),	-- VanCleef's Legplates
-						i(48813),	-- VanCleef's Pauldrons
-						i(48804),	-- Garona's Breastplate of Conquest
-						i(48805),	-- Garona's Gauntlets of Conquest
-						i(48806),	-- Garona's Helmet of Conquest
-						i(48807),	-- Garona's Legplates of Conquest
-						i(48808),	-- Garona's Pauldrons of Conquest
-					}),
-					cl(SHAMAN, {
-						i(48824),	-- Nobundo's Handguards
-						i(48825),	-- Nobundo's Headpiece
-						i(48826),	-- Nobundo's Legguards
-						i(48827),	-- Nobundo's Spaulders
-						i(48828),	-- Nobundo's Tunic
-						i(48836),	-- Nobundo's Gloves
-						i(48837),	-- Nobundo's Hauberk
-						i(48838),	-- Nobundo's Helm
-						i(48839),	-- Nobundo's Kilt
-						i(48840),	-- Nobundo's Shoulderpads
-						i(48846),	-- Nobundo's Chestguard
-						i(48847),	-- Nobundo's Faceguard
-						i(48848),	-- Nobundo's Grips
-						i(48849),	-- Nobundo's Shoulderguards
-						i(48850),	-- Nobundo's War-Kilt
-						i(48829),	-- Thrall's Handguards of Conquest
-						i(48830),	-- Thrall's Headpiece of Conquest
-						i(48831),	-- Thrall's Legguards of Conquest
-						i(48832),	-- Thrall's Spaulders of Conquest
-						i(48833),	-- Thrall's Tunic of Conquest
-						i(48841),	-- Thrall's Gloves of Conquest
-						i(48842),	-- Thrall's Hauberk of Conquest
-						i(48843),	-- Thrall's Helm of Conquest
-						i(48844),	-- Thrall's Kilt of Conquest
-						i(48845),	-- Thrall's Shoulderpads of Conquest
-						i(48851),	-- Thrall's Chestguard of Conquest
-						i(48852),	-- Thrall's Faceguard of Conquest
-						i(48853),	-- Thrall's Grips of Conquest
-						i(48854),	-- Thrall's Shoulderguards of Conquest
-						i(48855),	-- Thrall's War-Kilt of Conquest
-						i(48829),	-- Thrall's Handguards of Conquest
-						i(48830),	-- Thrall's Headpiece of Conquest
-						i(48831),	-- Thrall's Legguards of Conquest
-						i(48832),	-- Thrall's Spaulders of Conquest
-						i(48833),	-- Thrall's Tunic of Conquest
-						i(48841),	-- Thrall's Gloves of Conquest
-						i(48842),	-- Thrall's Hauberk of Conquest
-						i(48843),	-- Thrall's Helm of Conquest
-						i(48844),	-- Thrall's Kilt of Conquest
-						i(48845),	-- Thrall's Shoulderpads of Conquest
-						i(48851),	-- Thrall's Chestguard of Conquest
-						i(48852),	-- Thrall's Faceguard of Conquest
-						i(48853),	-- Thrall's Grips of Conquest
-						i(48854),	-- Thrall's Shoulderguards of Conquest
-						i(48855),	-- Thrall's War-Kilt of Conquest
-					}),
-					cl(WARLOCK, {
-						i(48735),	-- Gul'dan's Gloves of Conquest
-						i(48736),	-- Gul'dan's Hood of Conquest
-						i(48737),	-- Gul'dan's Leggings of Conquest
-						i(48738),	-- Gul'dan's Robe of Conquest
-						i(48739),	-- Gul'dan's Shoulderpads of Conquest
-						i(48740),	-- Kel'Thuzad's Gloves
-						i(48741),	-- Kel'Thuzad's Hood
-						i(48742),	-- Kel'Thuzad's Leggings
-						i(48743),	-- Kel'Thuzad's Robe
-						i(48744),	-- Kel'Thuzad's Shoulderpads
-					}),
-					cl(WARRIOR, {
-						i(48860),	-- Hellscream's Battleplate of Conquest
-						i(48861),	-- Hellscream's Gauntlets of Conquest
-						i(48862),	-- Hellscream's Helmet of Conquest
-						i(48863),	-- Hellscream's Legplates of Conquest
-						i(48864),	-- Hellscream's Shoulderplates of Conquest
-						i(48870),	-- Hellscream's Breastplate of Conquest
-						i(48871),	-- Hellscream's Greathelm of Conquest
-						i(48872),	-- Hellscream's Handguards of Conquest
-						i(48873),	-- Hellscream's Legguards of Conquest
-						i(48874),	-- Hellscream's Pauldrons of Conquest
-						i(48865),	-- Wyrnn's Battleplate
-						i(48866),	-- Wyrnn's Gauntlets
-						i(48867),	-- Wyrnn's Helmet
-						i(48868),	-- Wyrnn's Legplates
-						i(48869),	-- Wyrnn's Shoulderplates
-						i(48875),	-- Wyrnn's Breastplate
-						i(48876),	-- Wyrnn's Greathelm
-						i(48877),	-- Wyrnn's Handguards
-						i(48878),	-- Wyrnn's Legguards
-						i(48879),	-- Wyrnn's Pauldrons
-					}),
+				cl(DEATHKNIGHT, {
+					i(48880),	-- Koltira's Battleplate of Conquest
+					i(48881),	-- Koltira's Gauntlets of Conquest
+					i(48882),	-- Koltira's Helmet of Conquest
+					i(48883),	-- Koltira's Legplates of Conquest
+					i(48884),	-- Koltira's Shoulderpads of Conquest
+					i(48890),	-- Koltira's Chestguard of Conquest
+					i(48891),	-- Koltira's Faceguard of Conquest
+					i(48892),	-- Koltira's Handguards of Conquest
+					i(48893),	-- Koltira's Legguards of Conquest
+					i(48894),	-- Koltira's Pauldrons of Conquest
+					i(48885),	-- Thassarian's Battleplate
+					i(48886),	-- Thassarian's Gauntlets
+					i(48887),	-- Thassarian's Helmet
+					i(48888),	-- Thassarian's Legplates
+					i(48889),	-- Thassarian's Shoulderplates
+					i(48895),	-- Thassarian's Chestguard
+					i(48896),	-- Thassarian's Faceguard
+					i(48897),	-- Thassarian's Handguards
+					i(48898),	-- Thassarian's Legguards
+					i(48899),	-- Thassarian's Pauldrons
+				}),
+				cl(DRUID, {
+					i(48769),	-- Runetotem's Handguards of Conquest
+					i(48770),	-- Runetotem's Headpiece of Conquest
+					i(48771),	-- Runetotem's Leggings of Conquest
+					i(48772),	-- Runetotem's Robe of Conquest
+					i(48773),	-- Runetotem's Spaulders of Conquest
+					i(48781),	-- Runetotem's Cover of Conquest
+					i(48782),	-- Runetotem's Gloves of Conquest
+					i(48783),	-- Runetotem's Mantle of Conquest
+					i(48784),	-- Runetotem's Trousers of Conquest
+					i(48785),	-- Runetotem's Vestments of Conquest
+					i(48794),	-- Runetotem's Handgrips of Conquest
+					i(48795),	-- Runetotem's Headguard of Conquest
+					i(48796),	-- Runetotem's Legguards of Conquest
+					i(48797),	-- Runetotem's Raiments of Conquest
+					i(48798),	-- Runetotem's Shoulderpads of Conquest
+					i(48774),	-- Malfurion's Handguards
+					i(48775),	-- Malfurion's Headpiece
+					i(48776),	-- Malfurion's Leggings
+					i(48777),	-- Malfurion's Robe
+					i(48778),	-- Malfurion's Spaulders
+					i(48786),	-- Malfurion's Cover
+					i(48787),	-- Malfurion's Gloves
+					i(48788),	-- Malfurion's Mantle
+					i(48789),	-- Malfurion's Trousers
+					i(48790),	-- Malfurion's Vestments
+					i(48799),	-- Malfurion's Handgrips
+					i(48800),	-- Malfurion's Headguard
+					i(48801),	-- Malfurion's Legguards
+					i(48802),	-- Malfurion's Raiments
+					i(48803),	-- Malfurion's Shoulderpads
+				}),
+				cl(HUNTER, {
+					i(48819),	-- Windrunner's Handguards
+					i(48820),	-- Windrunner's Headpiece
+					i(48821),	-- Windrunner's Legguards
+					i(48822),	-- Windrunner's Spaulders
+					i(48823),	-- Windrunner's Tunic
+					i(48814),	-- Windrunner's Handguards of Conquest
+					i(48815),	-- Windrunner's Headpiece of Conquest
+					i(48816),	-- Windrunner's Legguards of Conquest
+					i(48817),	-- Windrunner's Spaulders of Conquest
+					i(48818),	-- Windrunner's Tunic of Conquest
+				}),
+				cl(MAGE, {
+					i(48725),	-- Khadgar's Gauntlets
+					i(48726),	-- Khadgar's Hood
+					i(48727),	-- Khadgar's Leggings
+					i(48728),	-- Khadgar's Robe
+					i(48729),	-- Khadgar's Shoulderpads
+					i(48730),	-- Sunstrider's Gauntlets of Conquest
+					i(48731),	-- Sunstrider's Hood of Conquest
+					i(48732),	-- Sunstrider's Leggings of Conquest
+					i(48733),	-- Sunstrider's Robe of Conquest
+					i(48734),	-- Sunstrider's Shoulderpads of Conquest
+				}),
+				cl(PALADIN, {
+					i(48905),	-- Liadrin's Tunic of Conquest
+					i(48906),	-- Liadrin's Spaulders of Conquest
+					i(48907),	-- Liadrin's Headpiece of Conquest
+					i(48908),	-- Liadrin's Greaves of Conquest
+					i(48909),	-- Liadrin's Gloves of Conquest
+					i(48910),	-- Liadrin's Battleplate of Conquest
+					i(48911),	-- Liadrin's Gauntlets of Conquest
+					i(48912),	-- Liadrin's Helm of Conquest
+					i(48913),	-- Liadrin's Legplates of Conquest
+					i(48914),	-- Liadrin's Shoulderplates of Conquest
+					i(48922),	-- Liadrin's Breastplate of Conquest
+					i(48923),	-- Liadrin's Faceguard of Conquest
+					i(48924),	-- Liadrin's Handguards of Conquest
+					i(48925),	-- Liadrin's Legguards of Conquest
+					i(48926),	-- Liadrin's Shoulderguards of Conquest
+					i(48900),	-- Turalyon's Tunic
+					i(48901),	-- Turalyon's Spaulders
+					i(48902),	-- Turalyon's Headpiece
+					i(48903),	-- Turalyon's Greaves
+					i(48904),	-- Turalyon's Gloves
+					i(48915),	-- Turalyon's Battleplate
+					i(48916),	-- Turalyon's Gauntlets
+					i(48917),	-- Turalyon's Helm
+					i(48918),	-- Turalyon's Legplates
+					i(48919),	-- Turalyon's Shoulderplates
+					i(48927),	-- Turalyon's Breastplate
+					i(48928),	-- Turalyon's Faceguard
+					i(48929),	-- Turalyon's Handguards
+					i(48930),	-- Turalyon's Legguards
+					i(48931),	-- Turalyon's Shoulderguards
+				}),
+				cl(PRIEST, {
+					i(48745),	-- Velen's Cowl
+					i(48746),	-- Velen's Gloves
+					i(48747),	-- Velen's Leggings
+					i(48748),	-- Velen's Robe
+					i(48749),	-- Velen's Shoulderpads
+					i(48750),	-- Zabra's Cowl of Conquest
+					i(48751),	-- Zabra's Gloves of Conquest
+					i(48752),	-- Zabra's Leggings of Conquest
+					i(48753),	-- Zabra's Robe of Conquest
+					i(48754),	-- Zabra's Shoulderpads of Conquest
+					i(48755),	-- Velen's Circlet
+					i(48756),	-- Velen's Handwraps
+					i(48757),	-- Velen's Mantle
+					i(48758),	-- Velen's Pants
+					i(48759),	-- Velen's Rainments
+					i(48760),	-- Zabra's Circlet of Conquest
+					i(48761),	-- Zabra's Handwraps of Conquest
+					i(48762),	-- Zabra's Mantle of Conquest
+					i(48763),	-- Zabra's Pants of Conquest
+					i(48764),	-- Zabra's Raiments of Conquest
+				}),
+				cl(ROGUE, {
+					i(48809),	-- VanCleef's Breastplate
+					i(48810),	-- VanCleef's Gauntlets
+					i(48811),	-- VanCleef's Helmet
+					i(48812),	-- VanCleef's Legplates
+					i(48813),	-- VanCleef's Pauldrons
+					i(48804),	-- Garona's Breastplate of Conquest
+					i(48805),	-- Garona's Gauntlets of Conquest
+					i(48806),	-- Garona's Helmet of Conquest
+					i(48807),	-- Garona's Legplates of Conquest
+					i(48808),	-- Garona's Pauldrons of Conquest
+				}),
+				cl(SHAMAN, {
+					i(48824),	-- Nobundo's Handguards
+					i(48825),	-- Nobundo's Headpiece
+					i(48826),	-- Nobundo's Legguards
+					i(48827),	-- Nobundo's Spaulders
+					i(48828),	-- Nobundo's Tunic
+					i(48836),	-- Nobundo's Gloves
+					i(48837),	-- Nobundo's Hauberk
+					i(48838),	-- Nobundo's Helm
+					i(48839),	-- Nobundo's Kilt
+					i(48840),	-- Nobundo's Shoulderpads
+					i(48846),	-- Nobundo's Chestguard
+					i(48847),	-- Nobundo's Faceguard
+					i(48848),	-- Nobundo's Grips
+					i(48849),	-- Nobundo's Shoulderguards
+					i(48850),	-- Nobundo's War-Kilt
+					i(48829),	-- Thrall's Handguards of Conquest
+					i(48830),	-- Thrall's Headpiece of Conquest
+					i(48831),	-- Thrall's Legguards of Conquest
+					i(48832),	-- Thrall's Spaulders of Conquest
+					i(48833),	-- Thrall's Tunic of Conquest
+					i(48841),	-- Thrall's Gloves of Conquest
+					i(48842),	-- Thrall's Hauberk of Conquest
+					i(48843),	-- Thrall's Helm of Conquest
+					i(48844),	-- Thrall's Kilt of Conquest
+					i(48845),	-- Thrall's Shoulderpads of Conquest
+					i(48851),	-- Thrall's Chestguard of Conquest
+					i(48852),	-- Thrall's Faceguard of Conquest
+					i(48853),	-- Thrall's Grips of Conquest
+					i(48854),	-- Thrall's Shoulderguards of Conquest
+					i(48855),	-- Thrall's War-Kilt of Conquest
+					i(48829),	-- Thrall's Handguards of Conquest
+					i(48830),	-- Thrall's Headpiece of Conquest
+					i(48831),	-- Thrall's Legguards of Conquest
+					i(48832),	-- Thrall's Spaulders of Conquest
+					i(48833),	-- Thrall's Tunic of Conquest
+					i(48841),	-- Thrall's Gloves of Conquest
+					i(48842),	-- Thrall's Hauberk of Conquest
+					i(48843),	-- Thrall's Helm of Conquest
+					i(48844),	-- Thrall's Kilt of Conquest
+					i(48845),	-- Thrall's Shoulderpads of Conquest
+					i(48851),	-- Thrall's Chestguard of Conquest
+					i(48852),	-- Thrall's Faceguard of Conquest
+					i(48853),	-- Thrall's Grips of Conquest
+					i(48854),	-- Thrall's Shoulderguards of Conquest
+					i(48855),	-- Thrall's War-Kilt of Conquest
+				}),
+				cl(WARLOCK, {
+					i(48735),	-- Gul'dan's Gloves of Conquest
+					i(48736),	-- Gul'dan's Hood of Conquest
+					i(48737),	-- Gul'dan's Leggings of Conquest
+					i(48738),	-- Gul'dan's Robe of Conquest
+					i(48739),	-- Gul'dan's Shoulderpads of Conquest
+					i(48740),	-- Kel'Thuzad's Gloves
+					i(48741),	-- Kel'Thuzad's Hood
+					i(48742),	-- Kel'Thuzad's Leggings
+					i(48743),	-- Kel'Thuzad's Robe
+					i(48744),	-- Kel'Thuzad's Shoulderpads
+				}),
+				cl(WARRIOR, {
+					i(48860),	-- Hellscream's Battleplate of Conquest
+					i(48861),	-- Hellscream's Gauntlets of Conquest
+					i(48862),	-- Hellscream's Helmet of Conquest
+					i(48863),	-- Hellscream's Legplates of Conquest
+					i(48864),	-- Hellscream's Shoulderplates of Conquest
+					i(48870),	-- Hellscream's Breastplate of Conquest
+					i(48871),	-- Hellscream's Greathelm of Conquest
+					i(48872),	-- Hellscream's Handguards of Conquest
+					i(48873),	-- Hellscream's Legguards of Conquest
+					i(48874),	-- Hellscream's Pauldrons of Conquest
+					i(48865),	-- Wyrnn's Battleplate
+					i(48866),	-- Wyrnn's Gauntlets
+					i(48867),	-- Wyrnn's Helmet
+					i(48868),	-- Wyrnn's Legplates
+					i(48869),	-- Wyrnn's Shoulderplates
+					i(48875),	-- Wyrnn's Breastplate
+					i(48876),	-- Wyrnn's Greathelm
+					i(48877),	-- Wyrnn's Handguards
+					i(48878),	-- Wyrnn's Legguards
+					i(48879),	-- Wyrnn's Pauldrons
 				}),
 			})),
 
 			-- 3.3.0
 			tier(WOTLK_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 3.3.0" } }, {
-				inst(758, {	-- Icecrown Citadel
-					cl(DEATHKNIGHT, {
-						i(51682),	-- Scourgelord Shoulderplates
-						i(51683),	-- Scourgelord Legplates
-						i(51684),	-- Scourgelord Helmet
-						i(51685),	-- Scourgelord Gauntlets
-						i(51686),	-- Scourgelord Battleplate
-						i(51687),	-- Scourgelord Chestguard
-						i(51688),	-- Scourgelord Handguards
-						i(51689),	-- Scourgelord Faceguard
-						i(51690),	-- Scourgelord Legguards
-						i(51691),	-- Scourgelord Pauldrons
-					}),
-					cl(DRUID, {
-						i(51692),	-- Lasherweave Pauldrons
-						i(51693),	-- Lasherweave Legplates
-						i(51694),	-- Lasherweave Helmet
-						i(51695),	-- Lasherweave Gauntlets
-						i(51696),	-- Lasherweave Robes
-						i(51697),	-- Lasherweave Raiment
-						i(51698),	-- Lasherweave Handgrips
-						i(51699),	-- Lasherweave Headguard
-						i(51700),	-- Lasherweave Legguards
-						i(51701),	-- Lasherweave Shoulderpads
-						i(51702),	-- Lasherweave Vestment
-						i(51703),	-- Lasherweave Gloves
-						i(51704),	-- Lasherweave Cover
-						i(51705),	-- Lasherweave Trousers
-						i(51706),	-- Lasherweave Mantle
-					}),
-					cl(HUNTER, {
-						i(51707),	-- Ahn'kahar Blood Hunter's Tunic
-						i(51708),	-- Ahn'kahar Blood Hunter's Spaulders
-						i(51709),	-- Ahn'kahar Blood Hunter's Legguards
-						i(51710),	-- Ahn'kahar Blood Hunter's Headpiece
-						i(51711),	-- Ahn'kahar Blood Hunter's Handguards
-					}),
-					cl(MAGE, {
-						i(51712),	-- Bloodmage Shoulderpads
-						i(51713),	-- Bloodmage Robe
-						i(51714),	-- Bloodmage Leggings
-						i(51715),	-- Bloodmage Hood
-						i(51716),	-- Bloodmage Gloves
-					}),
-					cl(PALADIN, {
-						i(51717),	-- Lightsworn Battleplate
-						i(51718),	-- Lightsworn Gauntlets
-						i(51719),	-- Lightsworn Helmet
-						i(51720),	-- Lightsworn Legplates
-						i(51721),	-- Lightsworn Shoulderplates
-						i(51722),	-- Lightsworn Tunic
-						i(51723),	-- Lightsworn Gloves
-						i(51724),	-- Lightsworn Headpiece
-						i(51725),	-- Lightsworn Greaves
-						i(51726),	-- Lightsworn Spaulders
-						i(51727),	-- Lightsworn Chestguard
-						i(51728),	-- Lightsworn Handguards
-						i(51729),	-- Lightsworn Faceguard
-						i(51730),	-- Lightsworn Legguards
-						i(51731),	-- Lightsworn Shoulderguards
-					}),
-					cl(PRIEST, {
-						i(51732),	-- Crimson Acolyte Leggings
-						i(51733),	-- Crimson Acolyte Robe
-						i(51734),	-- Crimson Acolyte Shoulderpads
-						i(51735),	-- Crimson Acolyte Gloves
-						i(51736),	-- Crimson Acolyte Hood
-						i(51737),	-- Crimson Acolyte Cowl
-						i(51738),	-- Crimson Acolyte Handwraps
-						i(51739),	-- Crimson Acolyte Mantle
-						i(51740),	-- Crimson Acolyte Rainments
-						i(51741),	-- Crimson Acolyte Pants
-					}),
-					cl(ROGUE, {
-						i(51742),	-- Shadowblade Gauntlets
-						i(51743),	-- Shadowblade Breastplate
-						i(51744),	-- Shadowblade Legplates
-						i(51745),	-- Shadowblade Helmet
-						i(51746),	-- Shadowblade Pauldrons
-					}),
-					cl(SHAMAN, {
-						i(51747),	-- Frost Witch's Tunic
-						i(51748),	-- Frost Witch's Handguards
-						i(51749),	-- Frost Witch's Headpiece
-						i(51750),	-- Frost Witch's Legguards
-						i(51751),	-- Frost Witch's Spaulders
-						i(51752),	-- Frost Witch's Chestguard
-						i(51753),	-- Frost Witch's Grips
-						i(51754),	-- Frost Witch's Faceguard
-						i(51755),	-- Frost Witch's War-Kilt
-						i(51756),	-- Frost Witch's Shoulderguards
-						i(51757),	-- Frost Witch's Hauberk
-						i(51758),	-- Frost Witch's Gloves
-						i(51759),	-- Frost Witch's Helm
-						i(51760),	-- Frost Witch's Kilt
-						i(51761),	-- Frost Witch's Shoulderpads
-					}),
-					cl(WARLOCK, {
-						i(51762),	-- Dark Coven Shoulderpads
-						i(51763),	-- Dark Coven Robe
-						i(51764),	-- Dark Coven Leggings
-						i(51765),	-- Dark Coven Hood
-						i(51766),	-- Dark Coven Gloves
-					}),
-					cl(WARRIOR, {
-						i(51767),	-- Ymirjar Lord's Shoulderplates
-						i(51768),	-- Ymirjar Lord's Legplates
-						i(51769),	-- Ymirjar Lord's Helmet
-						i(51770),	-- Ymirjar Lord's Gauntlets
-						i(51771),	-- Ymirjar Lord's Battleplate
-						i(51772),	-- Ymirjar Lord's Breastplate
-						i(51773),	-- Ymirjar Lord's Handguards
-						i(51774),	-- Ymirjar Lord's Greathelm
-						i(51775),	-- Ymirjar Lord's Legguards
-						i(51776),	-- Ymirjar Lord's Pauldrons
-					}),
+				-- Icecrown Citadel
+				cl(DEATHKNIGHT, {
+					i(51682),	-- Scourgelord Shoulderplates
+					i(51683),	-- Scourgelord Legplates
+					i(51684),	-- Scourgelord Helmet
+					i(51685),	-- Scourgelord Gauntlets
+					i(51686),	-- Scourgelord Battleplate
+					i(51687),	-- Scourgelord Chestguard
+					i(51688),	-- Scourgelord Handguards
+					i(51689),	-- Scourgelord Faceguard
+					i(51690),	-- Scourgelord Legguards
+					i(51691),	-- Scourgelord Pauldrons
+				}),
+				cl(DRUID, {
+					i(51692),	-- Lasherweave Pauldrons
+					i(51693),	-- Lasherweave Legplates
+					i(51694),	-- Lasherweave Helmet
+					i(51695),	-- Lasherweave Gauntlets
+					i(51696),	-- Lasherweave Robes
+					i(51697),	-- Lasherweave Raiment
+					i(51698),	-- Lasherweave Handgrips
+					i(51699),	-- Lasherweave Headguard
+					i(51700),	-- Lasherweave Legguards
+					i(51701),	-- Lasherweave Shoulderpads
+					i(51702),	-- Lasherweave Vestment
+					i(51703),	-- Lasherweave Gloves
+					i(51704),	-- Lasherweave Cover
+					i(51705),	-- Lasherweave Trousers
+					i(51706),	-- Lasherweave Mantle
+				}),
+				cl(HUNTER, {
+					i(51707),	-- Ahn'kahar Blood Hunter's Tunic
+					i(51708),	-- Ahn'kahar Blood Hunter's Spaulders
+					i(51709),	-- Ahn'kahar Blood Hunter's Legguards
+					i(51710),	-- Ahn'kahar Blood Hunter's Headpiece
+					i(51711),	-- Ahn'kahar Blood Hunter's Handguards
+				}),
+				cl(MAGE, {
+					i(51712),	-- Bloodmage Shoulderpads
+					i(51713),	-- Bloodmage Robe
+					i(51714),	-- Bloodmage Leggings
+					i(51715),	-- Bloodmage Hood
+					i(51716),	-- Bloodmage Gloves
+				}),
+				cl(PALADIN, {
+					i(51717),	-- Lightsworn Battleplate
+					i(51718),	-- Lightsworn Gauntlets
+					i(51719),	-- Lightsworn Helmet
+					i(51720),	-- Lightsworn Legplates
+					i(51721),	-- Lightsworn Shoulderplates
+					i(51722),	-- Lightsworn Tunic
+					i(51723),	-- Lightsworn Gloves
+					i(51724),	-- Lightsworn Headpiece
+					i(51725),	-- Lightsworn Greaves
+					i(51726),	-- Lightsworn Spaulders
+					i(51727),	-- Lightsworn Chestguard
+					i(51728),	-- Lightsworn Handguards
+					i(51729),	-- Lightsworn Faceguard
+					i(51730),	-- Lightsworn Legguards
+					i(51731),	-- Lightsworn Shoulderguards
+				}),
+				cl(PRIEST, {
+					i(51732),	-- Crimson Acolyte Leggings
+					i(51733),	-- Crimson Acolyte Robe
+					i(51734),	-- Crimson Acolyte Shoulderpads
+					i(51735),	-- Crimson Acolyte Gloves
+					i(51736),	-- Crimson Acolyte Hood
+					i(51737),	-- Crimson Acolyte Cowl
+					i(51738),	-- Crimson Acolyte Handwraps
+					i(51739),	-- Crimson Acolyte Mantle
+					i(51740),	-- Crimson Acolyte Rainments
+					i(51741),	-- Crimson Acolyte Pants
+				}),
+				cl(ROGUE, {
+					i(51742),	-- Shadowblade Gauntlets
+					i(51743),	-- Shadowblade Breastplate
+					i(51744),	-- Shadowblade Legplates
+					i(51745),	-- Shadowblade Helmet
+					i(51746),	-- Shadowblade Pauldrons
+				}),
+				cl(SHAMAN, {
+					i(51747),	-- Frost Witch's Tunic
+					i(51748),	-- Frost Witch's Handguards
+					i(51749),	-- Frost Witch's Headpiece
+					i(51750),	-- Frost Witch's Legguards
+					i(51751),	-- Frost Witch's Spaulders
+					i(51752),	-- Frost Witch's Chestguard
+					i(51753),	-- Frost Witch's Grips
+					i(51754),	-- Frost Witch's Faceguard
+					i(51755),	-- Frost Witch's War-Kilt
+					i(51756),	-- Frost Witch's Shoulderguards
+					i(51757),	-- Frost Witch's Hauberk
+					i(51758),	-- Frost Witch's Gloves
+					i(51759),	-- Frost Witch's Helm
+					i(51760),	-- Frost Witch's Kilt
+					i(51761),	-- Frost Witch's Shoulderpads
+				}),
+				cl(WARLOCK, {
+					i(51762),	-- Dark Coven Shoulderpads
+					i(51763),	-- Dark Coven Robe
+					i(51764),	-- Dark Coven Leggings
+					i(51765),	-- Dark Coven Hood
+					i(51766),	-- Dark Coven Gloves
+				}),
+				cl(WARRIOR, {
+					i(51767),	-- Ymirjar Lord's Shoulderplates
+					i(51768),	-- Ymirjar Lord's Legplates
+					i(51769),	-- Ymirjar Lord's Helmet
+					i(51770),	-- Ymirjar Lord's Gauntlets
+					i(51771),	-- Ymirjar Lord's Battleplate
+					i(51772),	-- Ymirjar Lord's Breastplate
+					i(51773),	-- Ymirjar Lord's Handguards
+					i(51774),	-- Ymirjar Lord's Greathelm
+					i(51775),	-- Ymirjar Lord's Legguards
+					i(51776),	-- Ymirjar Lord's Pauldrons
 				}),
 			})),
 		}),
@@ -685,6 +678,61 @@ root(ROOTS.NeverImplemented, {
 						i(64945),	-- Gladiator's Plate Helm
 						i(64946),	-- Gladiator's Plate Gauntlets
 						i(64947),	-- Gladiator's Plate Chestpiece
+					}),
+					n(BACK, {
+						i(60782),	-- Vicious Gladiator's Cloak of Conquest
+						i(60784),	-- Vicious Gladiator's Cloak of Dominance
+						i(60785),	-- Vicious Gladiator's Cloak of Dominance
+						i(60774),	-- Vicious Gladiator's Cloak of Victory
+						i(60775),	-- Vicious Gladiator's Cloak of Victory
+						i(60777),	-- Vicious Gladiator's Cloak of Victory
+						i(60780),	-- Vicious Gladiator's Cloak of Conquest
+						i(60781),	-- Vicious Gladiator's Cloak of Conquest
+					}),
+					n(WRIST, {
+						i(60585),	-- Vicious Gladiator's Armwraps of Dominance
+						i(60608),	-- Vicious Gladiator's Armwraps of Dominance
+						i(60588),	-- Vicious Gladiator's Armwraps of Triumph
+						i(60597),	-- Vicious Gladiator's Armwraps of Triumph
+						i(60598),	-- Vicious Gladiator's Armwraps of Triumph
+					}),
+					n(WAIST, {
+						i(60606),	-- Vicious Gladiator's Belt of Dominance
+						i(60609),	-- Vicious Gladiator's Belt of Dominance
+					}),
+					n(FEET, {
+						i(60584),	-- Vicious Gladiator's Boots of Dominance
+						i(60590),	-- Vicious Gladiator's Boots of Triumph
+						i(60610),	-- Vicious Gladiator's Boots of Dominance
+					}),
+					filter(NECK_F, {
+						i(60660),	-- Vicious Gladiator's Pendant of Dominance
+						i(60663),	-- Vicious Gladiator's Pendant of Dominance
+						i(60665),	-- Vicious Gladiator's Pendant of Conquest
+						i(60666),	-- Vicious Gladiator's Pendant of Conquest
+						i(60667),	-- Vicious Gladiator's Pendant of Conquest
+						i(60671),	-- Vicious Gladiator's Pendant of Victory
+						i(60672),	-- Vicious Gladiator's Pendant of Victory
+						i(60674),	-- Vicious Gladiator's Pendant of Victory
+					}),
+					filter(FINGER_F, {
+						i(60646),	-- Vicious Gladiator's Band of Dominance
+						i(60648),	-- Vicious Gladiator's Band of Dominance
+						i(60652),	-- Vicious Gladiator's Band of Triumph
+						i(60653),	-- Vicious Gladiator's Band of Triumph
+						i(60654),	-- Vicious Gladiator's Band of Triumph
+						i(60655),	-- Vicious Gladiator's Band of Triumph
+						i(60656),	-- Vicious Gladiator's Band of Triumph
+						i(60657),	-- Vicious Gladiator's Band of Triumph
+					}),
+					filter(TRINKET_F, {
+						i(60802),	-- Vicious Gladiator's Medallion of Accuracy
+						i(60803),	-- Vicious Gladiator's Medallion of Alacrity
+						i(60804),	-- Vicious Gladiator's Medallion of Prowess
+						i(60805),	-- Vicious Gladiator's Medallion of Command
+						i(61027),	-- Vicious Gladiator's Emblem of Accuracy
+						i(61028),	-- Vicious Gladiator's Emblem of Alacrity
+						i(61029),	-- Vicious Gladiator's Emblem of Prowess
 					}),
 				}),
 			})),
@@ -907,264 +955,263 @@ root(ROOTS.NeverImplemented, {
 
 			-- 5.2.0
 			tier(MOP_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 5.2.0" } }, {
-				inst(362, {	-- Throne of Thunder (Thunderforged & Heroic Thunderforged)
-					cl(DEATHKNIGHT, {
-						i(96941),	-- Breastplate of the All-Consuming Maw
-						i(96942),	-- Gauntlets of the All-Consuming Maw
-						i(96943),	-- Helmet of the All-Consuming Maw
-						i(96944),	-- Greaves of the All-Consuming Maw
-						i(96945),	-- Pauldrons of the All-Consuming Maw
-						i(96946),	-- Chestguard of the All-Consuming Maw
-						i(96947),	-- Handguards of the All-Consuming Maw
-						i(96948),	-- Faceguard of the All-Consuming Maw
-						i(96949),	-- Legguards of the All-Consuming Maw
-						i(96950),	-- Shoulderguards of the All-Consuming Maw
-						i(96197),	-- Breastplate of the All-Consuming Maw
-						i(96198),	-- Gauntlets of the All-Consuming Maw
-						i(96199),	-- Helmet of the All-Consuming Maw
-						i(96200),	-- Greaves of the All-Consuming Maw
-						i(96201),	-- Pauldrons of the All-Consuming Maw
-						i(96202),	-- Chestguard of the All-Consuming Maw
-						i(96203),	-- Handguards of the All-Consuming Maw
-						i(96204),	-- Faceguard of the All-Consuming Maw
-						i(96205),	-- Legguards of the All-Consuming Maw
-						i(96206),	-- Shoulderguards of the All-Consuming Maw
-					}),
-					cl(DRUID, {
-						i(96951),	-- Raiment of the Haunted Forest
-						i(96952),	-- Grips of the Haunted Forest
-						i(96953),	-- Headpiece of the Haunted Forest
-						i(96954),	-- Legguards of the Haunted Forest
-						i(96955),	-- Spaulders of the Haunted Forest
-						i(96956),	-- Handwraps of the Haunted Forest
-						i(96957),	-- Helm of the Haunted Forest
-						i(96958),	-- Legwraps of the Haunted Forest
-						i(96959),	-- Robes of the Haunted Forest
-						i(96960),	-- Mantle of the Haunted Forest
-						i(96961),	-- Gloves of the Haunted Forest
-						i(96962),	-- Cover of the Haunted Forest
-						i(96963),	-- Leggings of the Haunted Forest
-						i(96964),	-- Vestment of the Haunted Forest
-						i(96965),	-- Shoulderwraps of the Haunted Forest
-						i(96966),	-- Tunic of the Haunted Forest
-						i(96967),	-- Handguards of the Haunted Forest
-						i(96968),	-- Headguard of the Haunted Forest
-						i(96969),	-- Breeches of the Haunted Forest
-						i(96970),	-- Shoulderguards of the Haunted Forest
-						i(96207),	-- Raiment of the Haunted Forest
-						i(96208),	-- Grips of the Haunted Forest
-						i(96209),	-- Headpiece of the Haunted Forest
-						i(96210),	-- Legguards of the Haunted Forest
-						i(96211),	-- Spaulders of the Haunted Forest
-						i(96212),	-- Handwraps of the Haunted Forest
-						i(96213),	-- Helm of the Haunted Forest
-						i(96214),	-- Legwraps of the Haunted Forest
-						i(96215),	-- Robes of the Haunted Forest
-						i(96216),	-- Mantle of the Haunted Forest
-						i(96217),	-- Gloves of the Haunted Forest
-						i(96218),	-- Cover of the Haunted Forest
-						i(96219),	-- Leggings of the Haunted Forest
-						i(96220),	-- Vestment of the Haunted Forest
-						i(96221),	-- Shoulderwraps of the Haunted Forest
-						i(96222),	-- Tunic of the Haunted Forest
-						i(96223),	-- Handguards of the Haunted Forest
-						i(96224),	-- Headguard of the Haunted Forest
-						i(96225),	-- Breeches of the Haunted Forest
-						i(96226),	-- Shoulderguards of the Haunted Forest
-					}),
-					cl(HUNTER, {
-						i(96998),	-- Saurok Stalker's Tunic
-						i(96999),	-- Saurok Stalker's Gloves
-						i(97000),	-- Saurok Stalker's Headguard
-						i(97001),	-- Saurok Stalker's Legguards
-						i(97002),	-- Saurok Stalker's Spaulders
-						i(96254),	-- Saurok Stalker's Tunic
-						i(96255),	-- Saurok Stalker's Gloves
-						i(96256),	-- Saurok Stalker's Headguard
-						i(96257),	-- Saurok Stalker's Legguards
-						i(96258),	-- Saurok Stalker's Spaulders
-					}),
-					cl(MAGE, {
-						i(97006),	-- Gloves of the Chromatic Hydra
-						i(97007),	-- Hood of the Chromatic Hydra
-						i(97008),	-- Leggings of the Chromatic Hydra
-						i(97009),	-- Robes of the Chromatic Hydra
-						i(97010),	-- Mantle of the Chromatic Hydra
-						i(96262),	-- Gloves of the Chromatic Hydra
-						i(96263),	-- Hood of the Chromatic Hydra
-						i(96264),	-- Leggings of the Chromatic Hydra
-						i(96265),	-- Robes of the Chromatic Hydra
-						i(96266),	-- Mantle of the Chromatic Hydra
-					}),
-					cl(MONK, {
-						i(97011),	-- Fire-Charm Tunic
-						i(97012),	-- Fire-Charm Grips
-						i(97013),	-- Fire-Charm Headpiece
-						i(97014),	-- Fire-Charm Leggings
-						i(97015),	-- Fire-Charm Spaulders
-						i(97016),	-- Fire-Charm Handwraps
-						i(97017),	-- Fire-Charm Helm
-						i(97018),	-- Fire-Charm Legwraps
-						i(97019),	-- Fire-Charm Vest
-						i(97020),	-- Fire-Charm Mantle
-						i(97021),	-- Fire-Charm Chestguard
-						i(97022),	-- Fire-Charm Gauntlets
-						i(97023),	-- Fire-Charm Crown
-						i(97024),	-- Fire-Charm Legguards
-						i(97025),	-- Fire-Charm Shoulderguards
-						i(96267),	-- Fire-Charm Tunic
-						i(96268),	-- Fire-Charm Grips
-						i(96269),	-- Fire-Charm Headpiece
-						i(96270),	-- Fire-Charm Leggings
-						i(96271),	-- Fire-Charm Spaulders
-						i(96272),	-- Fire-Charm Handwraps
-						i(96273),	-- Fire-Charm Helm
-						i(96274),	-- Fire-Charm Legwraps
-						i(96275),	-- Fire-Charm Vest
-						i(96276),	-- Fire-Charm Mantle
-						i(96277),	-- Fire-Charm Chestguard
-						i(96278),	-- Fire-Charm Gauntlets
-						i(96279),	-- Fire-Charm Crown
-						i(96280),	-- Fire-Charm Legguards
-						i(96281),	-- Fire-Charm Shoulderguards
-					}),
-					cl(PALADIN, {
-						i(97026),	-- Lightning Emperor's Battleplate
-						i(97027),	-- Lightning Emperor's Gauntlets
-						i(97028),	-- Lightning Emperor's Helmet
-						i(97029),	-- Lightning Emperor's Legplates
-						i(97030),	-- Lightning Emperor's Pauldrons
-						i(97031),	-- Lightning Emperor's Breastplate
-						i(97032),	-- Lightning Emperor's Gloves
-						i(97033),	-- Lightning Emperor's Headguard
-						i(97034),	-- Lightning Emperor's Greaves
-						i(97035),	-- Lightning Emperor's Mantle
-						i(97036),	-- Lightning Emperor's Chestguard
-						i(97037),	-- Lightning Emperor's Handguards
-						i(97038),	-- Lightning Emperor's Faceguard
-						i(97039),	-- Lightning Emperor's Legguards
-						i(97040),	-- Lightning Emperor's Shoulderguards
-						i(96282),	-- Lightning Emperor's Battleplate
-						i(96283),	-- Lightning Emperor's Gauntlets
-						i(96284),	-- Lightning Emperor's Helmet
-						i(96285),	-- Lightning Emperor's Legplates
-						i(96286),	-- Lightning Emperor's Pauldrons
-						i(96287),	-- Lightning Emperor's Breastplate
-						i(96288),	-- Lightning Emperor's Gloves
-						i(96289),	-- Lightning Emperor's Headguard
-						i(96290),	-- Lightning Emperor's Greaves
-						i(96291),	-- Lightning Emperor's Mantle
-						i(96292),	-- Lightning Emperor's Chestguard
-						i(96293),	-- Lightning Emperor's Handguards
-						i(96294),	-- Lightning Emperor's Faceguard
-						i(96295),	-- Lightning Emperor's Legguards
-						i(96296),	-- Lightning Emperor's Shoulderguards
-					}),
-					cl(PRIEST, {
-						i(97041),	-- Handwraps of the Exorcist
-						i(97042),	-- Cowl of the Exorcist
-						i(97043),	-- Legwraps of the Exorcist
-						i(97044),	-- Robes of the Exorcist
-						i(97045),	-- Mantle of the Exorcist
-						i(97046),	-- Gloves of the Exorcist
-						i(97047),	-- Hood of the Exorcist
-						i(97048),	-- Leggings of the Exorcist
-						i(97049),	-- Raiment of the Exorcist
-						i(97050),	-- Shoulderguards of the Exorcist
-						i(96297),	-- Handwraps of the Exorcist
-						i(96298),	-- Cowl of the Exorcist
-						i(96299),	-- Legwraps of the Exorcist
-						i(96300),	-- Robes of the Exorcist
-						i(96301),	-- Mantle of the Exorcist
-						i(96302),	-- Gloves of the Exorcist
-						i(96303),	-- Hood of the Exorcist
-						i(96304),	-- Leggings of the Exorcist
-						i(96305),	-- Raiment of the Exorcist
-						i(96306),	-- Shoulderguards of the Exorcist
-					}),
-					cl(ROGUE, {
-						i(97051),	-- Nine-Tailed Tunic
-						i(97052),	-- Nine-Tailed Gloves
-						i(97053),	-- Nine-Tailed Helmet
-						i(97054),	-- Nine-Tailed Legguards
-						i(97055),	-- Nine-Tailed Spaulders
-						i(97051),	-- Nine-Tailed Tunic
-						i(97052),	-- Nine-Tailed Gloves
-						i(97053),	-- Nine-Tailed Helmet
-						i(97054),	-- Nine-Tailed Legguards
-						i(97055),	-- Nine-Tailed Spaulders
-						i(96307),	-- Nine-Tailed Tunic
-						i(96308),	-- Nine-Tailed Gloves
-						i(96309),	-- Nine-Tailed Helmet
-						i(96310),	-- Nine-Tailed Legguards
-						i(96311),	-- Nine-Tailed Spaulders
-					}),
-					cl(SHAMAN, {
-						i(97056),	-- Tunic of the Witch Doctor
-						i(97057),	-- Handwraps of the Witch Doctor
-						i(97058),	-- Faceguard of the Witch Doctor
-						i(97059),	-- Legwraps of the Witch Doctor
-						i(97060),	-- Mantle of the Witch Doctor
-						i(97061),	-- Cuirass of the Witch Doctor
-						i(97062),	-- Grips of the Witch Doctor
-						i(97063),	-- Helmet of the Witch Doctor
-						i(97064),	-- Legguards of the Witch Doctor
-						i(97065),	-- Spaulders of the Witch Doctor
-						i(97066),	-- Hauberk of the Witch Doctor
-						i(97067),	-- Gloves of the Witch Doctor
-						i(97068),	-- Headpiece of the Witch Doctor
-						i(97069),	-- Kilt of the Witch Doctor
-						i(97070),	-- Shoulderwraps of the Witch Doctor
-						i(96312),	-- Tunic of the Witch Doctor
-						i(96313),	-- Handwraps of the Witch Doctor
-						i(96314),	-- Faceguard of the Witch Doctor
-						i(96315),	-- Legwraps of the Witch Doctor
-						i(96316),	-- Mantle of the Witch Doctor
-						i(96317),	-- Cuirass of the Witch Doctor
-						i(96318),	-- Grips of the Witch Doctor
-						i(96319),	-- Helmet of the Witch Doctor
-						i(96320),	-- Legguards of the Witch Doctor
-						i(96321),	-- Spaulders of the Witch Doctor
-						i(96322),	-- Hauberk of the Witch Doctor
-						i(96323),	-- Gloves of the Witch Doctor
-						i(96324),	-- Headpiece of the Witch Doctor
-						i(96325),	-- Kilt of the Witch Doctor
-						i(96326),	-- Shoulderwraps of the Witch Doctor
-					}),
-					cl(WARLOCK, {
-						i(97097),	-- Gloves of the Thousandfold Hells
-						i(97098),	-- Hood of the Thousandfold Hells
-						i(97099),	-- Leggings of the Thousandfold Hells
-						i(97100),	-- Robes of the Thousandfold Hells
-						i(97101),	-- Mantle of the Thousandfold Hells
-						i(96353),	-- Gloves of the Thousandfold Hells
-						i(96354),	-- Hood of the Thousandfold Hells
-						i(96355),	-- Leggings of the Thousandfold Hells
-						i(96356),	-- Robes of the Thousandfold Hells
-						i(96357),	-- Mantle of the Thousandfold Hells
-					}),
-					cl(WARRIOR, {
-						i(97102), -- Helmet of the Last Mogu
-						i(97103), -- Battleplate of the Last Mogu
-						i(97104), -- Gauntlets of the Last Mogu
-						i(97105), -- Legplates of the Last Mogu
-						i(97106), -- Pauldrons of the Last Mogu
-						i(97107), -- Chestguard of the Last Mogu
-						i(97108), -- Handguards of the Last Mogu
-						i(97109), -- Faceguard of the Last Mogu
-						i(97110), -- Legguards of the Last Mogu
-						i(97111), -- Shoulderguards of the Last Mogu
-						i(96358), -- Helmet of the Last Mogu
-						i(96359), -- Battleplate of the Last Mogu
-						i(96360), -- Gauntlets of the Last Mogu
-						i(96361), -- Legplates of the Last Mogu
-						i(96362), -- Pauldrons of the Last Mogu
-						i(96363), -- Chestguard of the Last Mogu
-						i(96364), -- Handguards of the Last Mogu
-						i(96365), -- Faceguard of the Last Mogu
-						i(96366), -- Legguards of the Last Mogu
-						i(96367), -- Shoulderguards of the Last Mogu
-					}),
+				-- Throne of Thunder (Thunderforged & Heroic Thunderforged)
+				cl(DEATHKNIGHT, {
+					i(96941),	-- Breastplate of the All-Consuming Maw
+					i(96942),	-- Gauntlets of the All-Consuming Maw
+					i(96943),	-- Helmet of the All-Consuming Maw
+					i(96944),	-- Greaves of the All-Consuming Maw
+					i(96945),	-- Pauldrons of the All-Consuming Maw
+					i(96946),	-- Chestguard of the All-Consuming Maw
+					i(96947),	-- Handguards of the All-Consuming Maw
+					i(96948),	-- Faceguard of the All-Consuming Maw
+					i(96949),	-- Legguards of the All-Consuming Maw
+					i(96950),	-- Shoulderguards of the All-Consuming Maw
+					i(96197),	-- Breastplate of the All-Consuming Maw
+					i(96198),	-- Gauntlets of the All-Consuming Maw
+					i(96199),	-- Helmet of the All-Consuming Maw
+					i(96200),	-- Greaves of the All-Consuming Maw
+					i(96201),	-- Pauldrons of the All-Consuming Maw
+					i(96202),	-- Chestguard of the All-Consuming Maw
+					i(96203),	-- Handguards of the All-Consuming Maw
+					i(96204),	-- Faceguard of the All-Consuming Maw
+					i(96205),	-- Legguards of the All-Consuming Maw
+					i(96206),	-- Shoulderguards of the All-Consuming Maw
+				}),
+				cl(DRUID, {
+					i(96951),	-- Raiment of the Haunted Forest
+					i(96952),	-- Grips of the Haunted Forest
+					i(96953),	-- Headpiece of the Haunted Forest
+					i(96954),	-- Legguards of the Haunted Forest
+					i(96955),	-- Spaulders of the Haunted Forest
+					i(96956),	-- Handwraps of the Haunted Forest
+					i(96957),	-- Helm of the Haunted Forest
+					i(96958),	-- Legwraps of the Haunted Forest
+					i(96959),	-- Robes of the Haunted Forest
+					i(96960),	-- Mantle of the Haunted Forest
+					i(96961),	-- Gloves of the Haunted Forest
+					i(96962),	-- Cover of the Haunted Forest
+					i(96963),	-- Leggings of the Haunted Forest
+					i(96964),	-- Vestment of the Haunted Forest
+					i(96965),	-- Shoulderwraps of the Haunted Forest
+					i(96966),	-- Tunic of the Haunted Forest
+					i(96967),	-- Handguards of the Haunted Forest
+					i(96968),	-- Headguard of the Haunted Forest
+					i(96969),	-- Breeches of the Haunted Forest
+					i(96970),	-- Shoulderguards of the Haunted Forest
+					i(96207),	-- Raiment of the Haunted Forest
+					i(96208),	-- Grips of the Haunted Forest
+					i(96209),	-- Headpiece of the Haunted Forest
+					i(96210),	-- Legguards of the Haunted Forest
+					i(96211),	-- Spaulders of the Haunted Forest
+					i(96212),	-- Handwraps of the Haunted Forest
+					i(96213),	-- Helm of the Haunted Forest
+					i(96214),	-- Legwraps of the Haunted Forest
+					i(96215),	-- Robes of the Haunted Forest
+					i(96216),	-- Mantle of the Haunted Forest
+					i(96217),	-- Gloves of the Haunted Forest
+					i(96218),	-- Cover of the Haunted Forest
+					i(96219),	-- Leggings of the Haunted Forest
+					i(96220),	-- Vestment of the Haunted Forest
+					i(96221),	-- Shoulderwraps of the Haunted Forest
+					i(96222),	-- Tunic of the Haunted Forest
+					i(96223),	-- Handguards of the Haunted Forest
+					i(96224),	-- Headguard of the Haunted Forest
+					i(96225),	-- Breeches of the Haunted Forest
+					i(96226),	-- Shoulderguards of the Haunted Forest
+				}),
+				cl(HUNTER, {
+					i(96998),	-- Saurok Stalker's Tunic
+					i(96999),	-- Saurok Stalker's Gloves
+					i(97000),	-- Saurok Stalker's Headguard
+					i(97001),	-- Saurok Stalker's Legguards
+					i(97002),	-- Saurok Stalker's Spaulders
+					i(96254),	-- Saurok Stalker's Tunic
+					i(96255),	-- Saurok Stalker's Gloves
+					i(96256),	-- Saurok Stalker's Headguard
+					i(96257),	-- Saurok Stalker's Legguards
+					i(96258),	-- Saurok Stalker's Spaulders
+				}),
+				cl(MAGE, {
+					i(97006),	-- Gloves of the Chromatic Hydra
+					i(97007),	-- Hood of the Chromatic Hydra
+					i(97008),	-- Leggings of the Chromatic Hydra
+					i(97009),	-- Robes of the Chromatic Hydra
+					i(97010),	-- Mantle of the Chromatic Hydra
+					i(96262),	-- Gloves of the Chromatic Hydra
+					i(96263),	-- Hood of the Chromatic Hydra
+					i(96264),	-- Leggings of the Chromatic Hydra
+					i(96265),	-- Robes of the Chromatic Hydra
+					i(96266),	-- Mantle of the Chromatic Hydra
+				}),
+				cl(MONK, {
+					i(97011),	-- Fire-Charm Tunic
+					i(97012),	-- Fire-Charm Grips
+					i(97013),	-- Fire-Charm Headpiece
+					i(97014),	-- Fire-Charm Leggings
+					i(97015),	-- Fire-Charm Spaulders
+					i(97016),	-- Fire-Charm Handwraps
+					i(97017),	-- Fire-Charm Helm
+					i(97018),	-- Fire-Charm Legwraps
+					i(97019),	-- Fire-Charm Vest
+					i(97020),	-- Fire-Charm Mantle
+					i(97021),	-- Fire-Charm Chestguard
+					i(97022),	-- Fire-Charm Gauntlets
+					i(97023),	-- Fire-Charm Crown
+					i(97024),	-- Fire-Charm Legguards
+					i(97025),	-- Fire-Charm Shoulderguards
+					i(96267),	-- Fire-Charm Tunic
+					i(96268),	-- Fire-Charm Grips
+					i(96269),	-- Fire-Charm Headpiece
+					i(96270),	-- Fire-Charm Leggings
+					i(96271),	-- Fire-Charm Spaulders
+					i(96272),	-- Fire-Charm Handwraps
+					i(96273),	-- Fire-Charm Helm
+					i(96274),	-- Fire-Charm Legwraps
+					i(96275),	-- Fire-Charm Vest
+					i(96276),	-- Fire-Charm Mantle
+					i(96277),	-- Fire-Charm Chestguard
+					i(96278),	-- Fire-Charm Gauntlets
+					i(96279),	-- Fire-Charm Crown
+					i(96280),	-- Fire-Charm Legguards
+					i(96281),	-- Fire-Charm Shoulderguards
+				}),
+				cl(PALADIN, {
+					i(97026),	-- Lightning Emperor's Battleplate
+					i(97027),	-- Lightning Emperor's Gauntlets
+					i(97028),	-- Lightning Emperor's Helmet
+					i(97029),	-- Lightning Emperor's Legplates
+					i(97030),	-- Lightning Emperor's Pauldrons
+					i(97031),	-- Lightning Emperor's Breastplate
+					i(97032),	-- Lightning Emperor's Gloves
+					i(97033),	-- Lightning Emperor's Headguard
+					i(97034),	-- Lightning Emperor's Greaves
+					i(97035),	-- Lightning Emperor's Mantle
+					i(97036),	-- Lightning Emperor's Chestguard
+					i(97037),	-- Lightning Emperor's Handguards
+					i(97038),	-- Lightning Emperor's Faceguard
+					i(97039),	-- Lightning Emperor's Legguards
+					i(97040),	-- Lightning Emperor's Shoulderguards
+					i(96282),	-- Lightning Emperor's Battleplate
+					i(96283),	-- Lightning Emperor's Gauntlets
+					i(96284),	-- Lightning Emperor's Helmet
+					i(96285),	-- Lightning Emperor's Legplates
+					i(96286),	-- Lightning Emperor's Pauldrons
+					i(96287),	-- Lightning Emperor's Breastplate
+					i(96288),	-- Lightning Emperor's Gloves
+					i(96289),	-- Lightning Emperor's Headguard
+					i(96290),	-- Lightning Emperor's Greaves
+					i(96291),	-- Lightning Emperor's Mantle
+					i(96292),	-- Lightning Emperor's Chestguard
+					i(96293),	-- Lightning Emperor's Handguards
+					i(96294),	-- Lightning Emperor's Faceguard
+					i(96295),	-- Lightning Emperor's Legguards
+					i(96296),	-- Lightning Emperor's Shoulderguards
+				}),
+				cl(PRIEST, {
+					i(97041),	-- Handwraps of the Exorcist
+					i(97042),	-- Cowl of the Exorcist
+					i(97043),	-- Legwraps of the Exorcist
+					i(97044),	-- Robes of the Exorcist
+					i(97045),	-- Mantle of the Exorcist
+					i(97046),	-- Gloves of the Exorcist
+					i(97047),	-- Hood of the Exorcist
+					i(97048),	-- Leggings of the Exorcist
+					i(97049),	-- Raiment of the Exorcist
+					i(97050),	-- Shoulderguards of the Exorcist
+					i(96297),	-- Handwraps of the Exorcist
+					i(96298),	-- Cowl of the Exorcist
+					i(96299),	-- Legwraps of the Exorcist
+					i(96300),	-- Robes of the Exorcist
+					i(96301),	-- Mantle of the Exorcist
+					i(96302),	-- Gloves of the Exorcist
+					i(96303),	-- Hood of the Exorcist
+					i(96304),	-- Leggings of the Exorcist
+					i(96305),	-- Raiment of the Exorcist
+					i(96306),	-- Shoulderguards of the Exorcist
+				}),
+				cl(ROGUE, {
+					i(97051),	-- Nine-Tailed Tunic
+					i(97052),	-- Nine-Tailed Gloves
+					i(97053),	-- Nine-Tailed Helmet
+					i(97054),	-- Nine-Tailed Legguards
+					i(97055),	-- Nine-Tailed Spaulders
+					i(97051),	-- Nine-Tailed Tunic
+					i(97052),	-- Nine-Tailed Gloves
+					i(97053),	-- Nine-Tailed Helmet
+					i(97054),	-- Nine-Tailed Legguards
+					i(97055),	-- Nine-Tailed Spaulders
+					i(96307),	-- Nine-Tailed Tunic
+					i(96308),	-- Nine-Tailed Gloves
+					i(96309),	-- Nine-Tailed Helmet
+					i(96310),	-- Nine-Tailed Legguards
+					i(96311),	-- Nine-Tailed Spaulders
+				}),
+				cl(SHAMAN, {
+					i(97056),	-- Tunic of the Witch Doctor
+					i(97057),	-- Handwraps of the Witch Doctor
+					i(97058),	-- Faceguard of the Witch Doctor
+					i(97059),	-- Legwraps of the Witch Doctor
+					i(97060),	-- Mantle of the Witch Doctor
+					i(97061),	-- Cuirass of the Witch Doctor
+					i(97062),	-- Grips of the Witch Doctor
+					i(97063),	-- Helmet of the Witch Doctor
+					i(97064),	-- Legguards of the Witch Doctor
+					i(97065),	-- Spaulders of the Witch Doctor
+					i(97066),	-- Hauberk of the Witch Doctor
+					i(97067),	-- Gloves of the Witch Doctor
+					i(97068),	-- Headpiece of the Witch Doctor
+					i(97069),	-- Kilt of the Witch Doctor
+					i(97070),	-- Shoulderwraps of the Witch Doctor
+					i(96312),	-- Tunic of the Witch Doctor
+					i(96313),	-- Handwraps of the Witch Doctor
+					i(96314),	-- Faceguard of the Witch Doctor
+					i(96315),	-- Legwraps of the Witch Doctor
+					i(96316),	-- Mantle of the Witch Doctor
+					i(96317),	-- Cuirass of the Witch Doctor
+					i(96318),	-- Grips of the Witch Doctor
+					i(96319),	-- Helmet of the Witch Doctor
+					i(96320),	-- Legguards of the Witch Doctor
+					i(96321),	-- Spaulders of the Witch Doctor
+					i(96322),	-- Hauberk of the Witch Doctor
+					i(96323),	-- Gloves of the Witch Doctor
+					i(96324),	-- Headpiece of the Witch Doctor
+					i(96325),	-- Kilt of the Witch Doctor
+					i(96326),	-- Shoulderwraps of the Witch Doctor
+				}),
+				cl(WARLOCK, {
+					i(97097),	-- Gloves of the Thousandfold Hells
+					i(97098),	-- Hood of the Thousandfold Hells
+					i(97099),	-- Leggings of the Thousandfold Hells
+					i(97100),	-- Robes of the Thousandfold Hells
+					i(97101),	-- Mantle of the Thousandfold Hells
+					i(96353),	-- Gloves of the Thousandfold Hells
+					i(96354),	-- Hood of the Thousandfold Hells
+					i(96355),	-- Leggings of the Thousandfold Hells
+					i(96356),	-- Robes of the Thousandfold Hells
+					i(96357),	-- Mantle of the Thousandfold Hells
+				}),
+				cl(WARRIOR, {
+					i(97102), -- Helmet of the Last Mogu
+					i(97103), -- Battleplate of the Last Mogu
+					i(97104), -- Gauntlets of the Last Mogu
+					i(97105), -- Legplates of the Last Mogu
+					i(97106), -- Pauldrons of the Last Mogu
+					i(97107), -- Chestguard of the Last Mogu
+					i(97108), -- Handguards of the Last Mogu
+					i(97109), -- Faceguard of the Last Mogu
+					i(97110), -- Legguards of the Last Mogu
+					i(97111), -- Shoulderguards of the Last Mogu
+					i(96358), -- Helmet of the Last Mogu
+					i(96359), -- Battleplate of the Last Mogu
+					i(96360), -- Gauntlets of the Last Mogu
+					i(96361), -- Legplates of the Last Mogu
+					i(96362), -- Pauldrons of the Last Mogu
+					i(96363), -- Chestguard of the Last Mogu
+					i(96364), -- Handguards of the Last Mogu
+					i(96365), -- Faceguard of the Last Mogu
+					i(96366), -- Legguards of the Last Mogu
+					i(96367), -- Shoulderguards of the Last Mogu
 				}),
 			})),
 
@@ -1194,6 +1241,282 @@ root(ROOTS.NeverImplemented, {
 			})),
 		}),
 		tier(WOD_TIER, {
+			-- 6.0.1
+			tier(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DRUID, {
+						cl(DRUID, GUARDIAN, {
+							i(117536),	-- Springrain Choker
+							i(117535),	-- Springrain Cloak of Durability
+							i(117539),	-- Springrain Band of Durability
+							i(117538),	-- Springrain Ring of Durability
+							i(117537),	-- Springrain Idol of Durability
+							i(117540),	-- Springrain Stone of Durability
+						}),
+					}),
+				}),
+				n(-299, {	-- Missions
+					filter(CLOTH, {
+						i(114399),	-- Cord of Hooded Nightmares
+					}),
+					filter(LEATHER, {
+						i(114400),	-- Belt of Falling Leaves
+					}),
+					filter(MAIL, {
+						i(114401),	-- Element-Binder Belt
+					}),
+					filter(PLATE, {
+						i(114402),	-- Girdle of Grievous Storms
+					}),
+				}),
+			})),
+
+			-- 6.0.2
+			tier(WOD_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 6.0.2" } }, {
+				garrisonBuilding(141, {
+					cl(DEATHKNIGHT, {
+						i(119485),	-- Heart-Lesion Chestguard
+						i(119487),	-- Heart-Lesion Greaves
+						i(119488),	-- Heart-Lesion Handguards
+						i(119489),	-- Heart-Lesion Faceguard
+						i(119490),	-- Heart-Lesion Legguards
+						i(119496),	-- Heart-Lesion Shoulderguards
+						i(119497),	-- Heart-Lesion Waistband
+						i(119498),	-- Heart-Lesion Armguards
+						i(119483),	-- Heart-Lesion Stone of Battle
+						i(119484),	-- Heart-Lesion Idol of Battle
+						i(119492),	-- Heart-Lesion Defender Idol
+						i(119495),	-- Heart-Lesion Defender Stone
+						i(119479),	-- Heart-Lesion Cloak of Battle
+						i(119486),	-- Heart-Lesion Cloak of Stoicism
+						i(119480),	-- Heart-Lesion Pendant
+						i(119491),	-- Heart-Lesion Amulet
+						i(119481),	-- Heart-Lesion Ring of Might
+						i(119482),	-- Heart-Lesion Band of Might
+						i(119493),	-- Heart-Lesion Ring of Stoicism
+						i(119494),	-- Heart-Lesion Band of Stoicism
+					}),
+					cl(DRUID, {
+						i(119520),	-- Springrain Vest
+						i(119521),	-- Springrain Footpads
+						i(119522),	-- Springrain Handguards
+						i(119523),	-- Springrain Helm
+						i(119524),	-- Springrain Legguards
+						i(119526),	-- Springrain Pauldrons
+						i(119527),	-- Springrain Cord
+						i(119528),	-- Springrain Cuffs
+						i(119536),	-- Springrain Jerkin
+						i(119537),	-- Springrain Boots
+						i(119538),	-- Springrain Gloves
+						i(119539),	-- Springrain Hood
+						i(119540),	-- Springrain Britches
+						i(119541),	-- Springrain Shoulders
+						i(119542),	-- Springrain Waistband
+						i(119543),	-- Springrain Bindings
+						i(119502),	-- Springrain Idol of Rage
+						i(119505),	-- Springrain Stone of Rage
+						i(119516),	-- Springrain Idol of Destruction
+						i(119519),	-- Springrain Stone of Destruction
+						i(119531),	-- Springrain Idol of Wisdom
+						i(119534),	-- Springrain Stone of Wisdom
+						i(119805),	-- Springrain Idol of Durability
+						i(119808),	-- Springrain Stone of Durability
+						i(119500),	-- Springrain Cloak of Rage
+						i(119529),	-- Springrain Cloak of Wisdom
+						i(119535),	-- Springrain Cloak of Destruction
+						i(119803),	-- Springrain Cloak of Durability
+						i(119501),	-- Springrain Choker
+						i(119515),	-- Springrain Medallion
+						i(119530),	-- Springrain Necklace
+						i(119804),	-- Springrain Choker
+						i(119503),	-- Springrain Ring of Onslaught
+						i(119504),	-- Springrain Band of Onslaught
+						i(119517),	-- Springrain Band of Destruction
+						i(119518),	-- Springrain Ring of Destruction
+						i(119532),	-- Springrain Band of Wisdom
+						i(119533),	-- Springrain Ring of Wisdom
+						i(119806),	-- Springrain Ring of Durability
+						i(119807),	-- Springrain Band of Durability
+					}),
+					cl(HUNTER, {
+						i(119545),	-- Trailseeker Cloak of Rage
+						i(119547),	-- Trailseeker Idol of Rage
+						i(119550),	-- Trailseeker Stone of Rage
+						i(119546),	-- Trailseeker Choker
+						i(119548),	-- Trailseeker Band of Onslaught
+						i(119549),	-- Trailseeker Ring of Onslaught
+					}),
+					cl(MAGE, {
+						i(119562),	-- Mountainsage Idol of Destruction
+						i(119565),	-- Mountainsage Stone of Destruction
+						i(119575),	-- Mountainsage Cloak of Destruction
+						i(119561),	-- Mountainsage Medallion
+						i(119563),	-- Mountainsage Band of Destruction
+						i(119564),	-- Mountainsage Ring of Destruction
+					}),
+					cl(MONK, {
+						i(119591),	-- Mistdancer Boots
+						i(119592),	-- Mistdancer Gloves
+						i(119593),	-- Mistdancer Hood
+						i(119596),	-- Mistdancer Britches
+						i(119601),	-- Mistdancer Shoulders
+						i(119603),	-- Mistdancer Waistband
+						i(119604),	-- Mistdancer Bindings
+						i(119612),	-- Mistdancer Jerkin
+						i(119580),	-- Mistdancer Defender Stone
+						i(119582),	-- Mistdancer Defender Idol
+						i(119595),	-- Mistdancer Idol of Wisdom
+						i(119600),	-- Mistdancer Stone of Wisdom
+						i(119606),	-- Mistdancer Idol of Rage
+						i(119610),	-- Mistdancer Stone of Rage
+						i(119594),	-- Mistdancer Cloak of Wisdom
+						i(119611),	-- Mistdancer Cloak of Rage
+						i(119577),	-- Mistdancer Amulet
+						i(119597),	-- Mistdancer Necklace
+						i(119607),	-- Mistdancer Choker
+						i(119578),	-- Mistdancer Band of Stoicism
+						i(119579),	-- Mistdancer Ring of Stoicism
+						i(119598),	-- Mistdancer Ring of Wisdom
+						i(119599),	-- Mistdancer Band of Wisdom
+						i(119608),	-- Mistdancer Band of Onslaught
+						i(119609),	-- Mistdancer Ring of Onslaught
+					}),
+					cl(PALADIN, {
+						i(119628),	-- Sunsoul Idol of Wisdom
+						i(119631),	-- Sunsoul Stone of Wisdom
+						i(119644),	-- Sunsoul Stone of Battle
+						i(119645),	-- Sunsoul Idol of Battle
+						i(119653),	-- Sunsoul Defender Idol
+						i(119656),	-- Sunsoul Defender Stone
+						i(119621),	-- Sunsoul Breastplate
+						i(119623),	-- Sunsoul Boots
+						i(119624),	-- Sunsoul Gloves
+						i(119625),	-- Sunsoul Headpiece
+						i(119626),	-- Sunsoul Leggings
+						i(119632),	-- Sunsoul Spaulders
+						i(119633),	-- Sunsoul Belt
+						i(119634),	-- Sunsoul Armplates
+						i(119646),	-- Sunsoul Chestguard
+						i(119648),	-- Sunsoul Greaves
+						i(119649),	-- Sunsoul Handguards
+						i(119650),	-- Sunsoul Faceguard
+						i(119651),	-- Sunsoul Legguards
+						i(119657),	-- Sunsoul Shoulderguards
+						i(119658),	-- Sunsoul Waistband
+						i(119659),	-- Sunsoul Armguards
+						i(119622),	-- Sunsoul Cloak of Wisdom
+						i(119640),	-- Sunsoul Cloak of Battle
+						i(119647),	-- Sunsoul Cloak of Stoicism
+						i(119627),	-- Sunsoul Necklace
+						i(119641),	-- Sunsoul Pendant
+						i(119652),	-- Sunsoul Amulet
+						i(119629),	-- Sunsoul Ring of Wisdom
+						i(119630),	-- Sunsoul Band of Wisdom
+						i(119642),	-- Sunsoul Ring of Might
+						i(119643),	-- Sunsoul Band of Might
+						i(119654),	-- Sunsoul Ring of Stoicism
+						i(119655),	-- Sunsoul Band of Stoicism
+					}),
+					cl(PRIEST, {
+						i(119667),	-- Communal Sandals
+						i(119668),	-- Communal Handwraps
+						i(119669),	-- Communal Hood
+						i(119670),	-- Communal Leggings
+						i(119675),	-- Communal Vestments
+						i(119677),	-- Communal Shoulderpads
+						i(119678),	-- Communal Cord
+						i(119679),	-- Communal Wristwraps
+						i(119661),	-- Communal Idol of Destruction
+						i(119664),	-- Communal Stone of Destruction
+						i(119672),	-- Communal Idol of Wisdom
+						i(119676),	-- Communal Stone of Wisdom
+						i(119666),	-- Communal Cloak of Wisdom
+						i(119681),	-- Communal Cloak of Destruction
+						i(119660),	-- Communal Medallion
+						i(119671),	-- Communal Necklace
+						i(119662),	-- Communal Band of Destruction
+						i(119663),	-- Communal Ring of Destruction
+						i(119673),	-- Communal Band of Wisdom
+						i(119674),	-- Communal Ring of Wisdom
+					}),
+					cl(ROGUE, {
+						i(119693),	-- Lightdrinker Idol of Rage
+						i(119696),	-- Lightdrinker Stone of Rage
+						i(119691),	-- Lightdrinker Cloak of Rage
+						i(119692),	-- Lightdrinker Choker
+						i(119694),	-- Lightdrinker Band of Onslaught
+						i(119695),	-- Lightdrinker Ring of Onslaught
+					}),
+					cl(SHAMAN, {
+						i(119717),	-- Streamtalker Band of Destruction
+						i(119711),	-- Streamtalker Band of Onslaught
+						i(119742),	-- Streamtalker Band of Wisdom
+						i(119709),	-- Streamtalker Choker
+						i(119715),	-- Streamtalker Idol of Destruction
+						i(119710),	-- Streamtalker Idol of Rage
+						i(119740),	-- Streamtalker Idol of Wisdom
+						i(119714),	-- Streamtalker Medallion
+						i(119739),	-- Streamtalker Necklace
+						i(119716),	-- Streamtalker Ring of Destruction
+						i(119712),	-- Streamtalker Ring of Onslaught
+						i(119741),	-- Streamtalker Ring of Wisdom
+						i(119718),	-- Streamtalker Stone of Destruction
+						i(119713),	-- Streamtalker Stone of Rage
+						i(119743),	-- Streamtalker Stone of Wisdom
+						i(119737),	-- Streamtalker Armguard
+						i(119754),	-- Streamtalker Bracers
+						i(119744),	-- Streamtalker Cloak of Destruction
+						i(119708),	-- Streamtalker Cloak of Rage
+						i(119738),	-- Streamtalker Cloak of Wisdom
+						i(119730),	-- Streamtalker Chestguard
+						i(119749),	-- Streamtalker Cowl
+						i(119753),	-- Streamtalker Girdle
+						i(119731),	-- Streamtalker Greaves
+						i(119748),	-- Streamtalker Grips
+						i(119732),	-- Streamtalker Handguards
+						i(119733),	-- Streamtalker Helm
+						i(119750),	-- Streamtalker Leggings
+						i(119734),	-- Streamtalker Legguards
+						i(119747),	-- Streamtalker Sabatons
+						i(119735),	-- Streamtalker Shoulderguards
+						i(119752),	-- Streamtalker Spaulders
+						i(119746),	-- Streamtalker Vest
+						i(119736),	-- Streamtalker Waistguard
+					}),
+					cl(WARLOCK, {
+						i(119756),	-- Felsoul Idol of Destruction
+						i(119759),	-- Felsoul Stone of Destruction
+						i(119769),	-- Felsoul Cloak of Destruction
+						i(119755),	-- Felsoul Medallion
+						i(119757),	-- Felsoul Band of Destruction
+						i(119758),	-- Felsoul Ring of Destruction
+					}),
+					cl(WARRIOR, {
+						i(119787),	-- Oathsworn Stone of Battle
+						i(119788),	-- Oathsworn Idol of Battle
+						i(119796),	-- Oathsworn Defender Idol
+						i(119799),	-- Oathsworn Defender Stone
+						i(119789),	-- Oathsworn Chestguard
+						i(119791),	-- Oathsworn Greaves
+						i(119792),	-- Oathsworn Handguards
+						i(119793),	-- Oathsworn Faceguard
+						i(119794),	-- Oathsworn Legguards
+						i(119800),	-- Oathsworn Shoulderguards
+						i(119801),	-- Oathsworn Waistband
+						i(119802),	-- Oathsworn Armguards
+						i(119783),	-- Oathsworn Cloak of Battle
+						i(119790),	-- Oathsworn Cloak of Stoicism
+						i(119784),	-- Oathsworn Pendant
+						i(119795),	-- Oathsworn Amulet
+						i(119785),	-- Oathsworn Band of Might
+						i(119786),	-- Oathsworn Ring of Might
+						i(119797),	-- Oathsworn Band of Stoicism
+						i(119798),	-- Oathsworn Ring of Stoicism
+					}),
+				}),
+			})),
+
 			-- 6.2.0
 			tier(WOD_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 6.2.0" } }, {
 				n(SEASON_PRIMAL, {
@@ -1276,8 +1599,2241 @@ root(ROOTS.NeverImplemented, {
 					}),
 				}),
 			})),
+
+			-- 6.2.2
+			tier(WOD_TIER, 2.2, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, BLOOD, {
+							i(129426),	-- Heart-Lesion Greatsword
+							i(129446),	-- Heart-Lesion Faceguard
+							i(129448),	-- Heart-Lesion Amulet
+							i(129453),	-- Heart-Lesion Shoulderguards
+							i(129443),	-- Heart-Lesion Cloak of Stoicism
+							i(129442),	-- Heart-Lesion Chestguard
+							i(129455),	-- Heart-Lesion Armguards
+							i(129445),	-- Heart-Lesion Handguards
+							i(129454),	-- Heart-Lesion Waistband
+							i(129447),	-- Heart-Lesion Legguards
+							i(129444),	-- Heart-Lesion Greaves
+							i(129451),	-- Heart-Lesion Band of Stoicism
+							i(129450),	-- Heart-Lesion Ring of Stoicism
+							i(129449),	-- Heart-Lesion Defender Idol
+							i(129452),	-- Heart-Lesion Defender Stone
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, GUARDIAN, {
+							i(129603),	-- Springrain Cloak of Durability
+							i(129607),	-- Springrain Band of Durability
+							i(129606),	-- Springrain Ring of Durability
+							i(129605),	-- Springrain Idol of Durability
+							i(129608),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(129602),	-- Springrain Staff
+							i(129597),	-- Springrain Hood
+							i(129599),	-- Springrain Shoulders
+							i(129587),	-- Springrain Cloak of Wisdom
+							i(129594),	-- Springrain Jerkin
+							i(129601),	-- Springrain Bindings
+							i(129596),	-- Springrain Gloves
+							i(129600),	-- Springrain Waistband
+							i(129598),	-- Springrain Britches
+							i(129595),	-- Springrain Boots
+							i(129590),	-- Springrain Band of Wisdom
+							i(129591),	-- Springrain Ring of Wisdom
+							i(129589),	-- Springrain Idol of Wisdom
+							i(129592),	-- Springrain Stone of Wisdom
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(129523),	-- Mountainsage Wand
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, SHADOW, {
+							i(129404),	-- Communal Stave
+						}),
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(129423),	-- Felsoul Wand
+						}),
+					}),
+				}),
+			})),
+		}),
+		tier(LEGION_TIER, {
+			-- 7.0.3
+			tier(LEGION_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
+				n(PARTY_SYNC, {
+					cl(DEATHKNIGHT, {
+						i(140714),	-- Bloodcaked Runeblade
+						i(150609),	-- Bloodcaked Runeblade
+						i(157646),	-- Bloodcaked Runeblade
+						i(150610),	-- Frost-Etched Runeblade
+						i(157647),	-- Frost-Etched Runeblade
+						i(121851),	-- Inexorable Amulet
+						i(121857),	-- Inexorable Armguards
+						i(123214),	-- Inexorable Armguards
+						i(123222),	-- Inexorable Armguards
+						i(121846),	-- Inexorable Band of Might
+						i(121853),	-- Inexorable Band of Stoicism
+						i(122084),	-- Inexorable Blade
+						i(121838),	-- Inexorable Breastplate
+						i(123207),	-- Inexorable Breastplate
+						i(123215),	-- Inexorable Breastplate
+						i(121844),	-- Inexorable Cloak of Battle
+						i(121850),	-- Inexorable Cloak of Stoicism
+						i(121852),	-- Inexorable Defender Idol
+						i(121855),	-- Inexorable Defender Stone
+						i(121841),	-- Inexorable Faceguard
+						i(123210),	-- Inexorable Faceguard
+						i(123218),	-- Inexorable Faceguard
+						i(122067),	-- Inexorable Greatsword
+						i(121840),	-- Inexorable Handguards
+						i(123209),	-- Inexorable Handguards
+						i(123217),	-- Inexorable Handguards
+						i(121849),	-- Inexorable Idol of Battle
+						i(121842),	-- Inexorable Legguards
+						i(123211),	-- Inexorable Legguards
+						i(123219),	-- Inexorable Legguards
+						i(121845),	-- Inexorable Pendant
+						i(121847),	-- Inexorable Ring of Might
+						i(121854),	-- Inexorable Ring of Stoicism
+						i(122068),	-- Inexorable Runeblade
+						i(121839),	-- Inexorable Sabatons
+						i(123208),	-- Inexorable Sabatons
+						i(123216),	-- Inexorable Sabatons
+						i(121843),	-- Inexorable Shoulderguards
+						i(123212),	-- Inexorable Shoulderguards
+						i(123220),	-- Inexorable Shoulderguards
+						i(121848),	-- Inexorable Stone of Battle
+						i(121856),	-- Inexorable Waistband
+						i(123213),	-- Inexorable Waistband
+						i(123221),	-- Inexorable Waistband
+						i(140687),	-- Unholy Runeblade
+						i(150582),	-- Unholy Runeblade
+						i(157618),	-- Unholy Runeblade
+					}),
+					cl(DRUID, {
+						i(121877),	-- Nurturer Band of Destruction
+						i(121867),	-- Nurturer Band of Durability
+						i(121861),	-- Nurturer Band of Onslaught
+						i(121883),	-- Nurturer Band of Wisdom
+						i(121859),	-- Nurturer Choker
+						i(121865),	-- Nurturer Choker
+						i(121874),	-- Nurturer Cloak of Destruction
+						i(121858),	-- Nurturer Cloak of Rage
+						i(121864),	-- Nurturer Cloak of Rage
+						i(121880),	-- Nurturer Cloak of Wisdom
+						i(121888),	-- Nurturer Cord
+						i(123229),	-- Nurturer Cord
+						i(123237),	-- Nurturer Cord
+						i(123245),	-- Nurturer Cord
+						i(121889),	-- Nurturer Cuffs
+						i(123230),	-- Nurturer Cuffs
+						i(123238),	-- Nurturer Cuffs
+						i(123246),	-- Nurturer Cuffs
+						i(121871),	-- Nurturer Footpads
+						i(123224),	-- Nurturer Footpads
+						i(123232),	-- Nurturer Footpads
+						i(123240),	-- Nurturer Footpads
+						i(121872),	-- Nurturer Handguards
+						i(123225),	-- Nurturer Handguards
+						i(123233),	-- Nurturer Handguards
+						i(123241),	-- Nurturer Handguards
+						i(121873),	-- Nurturer Helm
+						i(123226),	-- Nurturer Helm
+						i(123234),	-- Nurturer Helm
+						i(123242),	-- Nurturer Helm
+						i(121876),	-- Nurturer Idol of Destruction
+						i(121866),	-- Nurturer Idol of Durability
+						i(121860),	-- Nurturer Idol of Rage
+						i(121882),	-- Nurturer Idol of Wisdom
+						i(121886),	-- Nurturer Legguards
+						i(123227),	-- Nurturer Legguards
+						i(123235),	-- Nurturer Legguards
+						i(123243),	-- Nurturer Legguards
+						i(121875),	-- Nurturer Medallion
+						i(121881),	-- Nurturer Necklace
+						i(121887),	-- Nurturer Pauldrons
+						i(123228),	-- Nurturer Pauldrons
+						i(123236),	-- Nurturer Pauldrons
+						i(123244),	-- Nurturer Pauldrons
+						i(121878),	-- Nurturer Ring of Destruction
+						i(121868),	-- Nurturer Ring of Durability
+						i(121862),	-- Nurturer Ring of Onslaught
+						i(121884),	-- Nurturer Ring of Wisdom
+						i(122069),	-- Nurturer Spear
+						i(122070),	-- Nurturer Staff
+						i(121879),	-- Nurturer Stone of Destruction
+						i(121869),	-- Nurturer Stone of Durability
+						i(121863),	-- Nurturer Stone of Rage
+						i(121885),	-- Nurturer Stone of Wisdom
+						i(121870),	-- Nurturer Vest
+						i(123223),	-- Nurturer Vest
+						i(123231),	-- Nurturer Vest
+						i(123239),	-- Nurturer Vest
+						i(140690),	-- Restorative Ashwood Staff
+						i(140688),	-- Staff of Astral Alignment
+					}),
+					cl(HUNTER, {
+						i(140717),	-- Marksman's Recurve Bow
+						i(140691),	-- Packmasters Rifle
+						i(121893),	-- Warscout Band of Onslaught
+						i(121902),	-- Warscout Belt
+						i(123253),	-- Warscout Belt
+						i(123261),	-- Warscout Belt
+						i(121903),	-- Warscout Bracers
+						i(123254),	-- Warscout Bracers
+						i(123262),	-- Warscout Bracers
+						i(121891),	-- Warscout Choker
+						i(121890),	-- Warscout Cloak of Rage
+						i(121898),	-- Warscout Gauntlets
+						i(123249),	-- Warscout Gauntlets
+						i(123257),	-- Warscout Gauntlets
+						i(121897),	-- Warscout Greaves
+						i(123248),	-- Warscout Greaves
+						i(123256),	-- Warscout Greaves
+						i(121899),	-- Warscout Helm
+						i(123250),	-- Warscout Helm
+						i(123258),	-- Warscout Helm
+						i(121892),	-- Warscout Idol of Rage
+						i(121900),	-- Warscout Legguards
+						i(123251),	-- Warscout Legguards
+						i(123259),	-- Warscout Legguards
+						i(127685),	-- Warscout Longspear
+						i(121894),	-- Warscout Ring of Onslaught
+						i(122080),	-- Warscout Shotgun
+						i(121901),	-- Warscout Spaulders
+						i(123252),	-- Warscout Spaulders
+						i(123260),	-- Warscout Spaulders
+						i(121895),	-- Warscout Stone of Rage
+						i(121896),	-- Warscout Tunic
+						i(123247),	-- Warscout Tunic
+						i(123255),	-- Warscout Tunic
+					}),
+					cl(MAGE, {
+						i(121910),	-- Abstruse Band of Destruction
+						i(121907),	-- Abstruse Cloak of Destruction
+						i(121916),	-- Abstruse Cord
+						i(123269),	-- Abstruse Cord
+						i(123277),	-- Abstruse Cord
+						i(121905),	-- Abstruse Handwraps
+						i(123264),	-- Abstruse Handwraps
+						i(123272),	-- Abstruse Handwraps
+						i(121906),	-- Abstruse Hood
+						i(123265),	-- Abstruse Hood
+						i(123273),	-- Abstruse Hood
+						i(121909),	-- Abstruse Idol of Destruction
+						i(121913),	-- Abstruse Leggings
+						i(123266),	-- Abstruse Leggings
+						i(123274),	-- Abstruse Leggings
+						i(121908),	-- Abstruse Medallion
+						i(121911),	-- Abstruse Ring of Destruction
+						i(121914),	-- Abstruse Robe
+						i(123267),	-- Abstruse Robe
+						i(123275),	-- Abstruse Robe
+						i(121904),	-- Abstruse Sandals
+						i(123263),	-- Abstruse Sandals
+						i(123271),	-- Abstruse Sandals
+						i(121915),	-- Abstruse Shoulderpads
+						i(123268),	-- Abstruse Shoulderpads
+						i(123276),	-- Abstruse Shoulderpads
+						i(122071),	-- Abstruse Staff
+						i(121912),	-- Abstruse Stone of Destruction
+						i(122081),	-- Abstruse Wand
+						i(121917),	-- Abstruse Wristwraps
+						i(123270),	-- Abstruse Wristwraps
+						i(123278),	-- Abstruse Wristwraps
+						i(140692),	-- Frostcore Staff
+						i(140719),	-- Staff of Arcane Power
+						i(140693),	-- Staff of Inner Flame
+					}),
+					cl(MONK, {
+						i(121923),	-- Harmonious Amulet
+						i(121918),	-- Harmonious Band of Onslaught
+						i(121921),	-- Harmonious Band of Stoicism
+						i(121931),	-- Harmonious Band of Wisdom
+						i(121942),	-- Harmonious Bindings
+						i(123286),	-- Harmonious Bindings
+						i(121933),	-- Harmonious Britches
+						i(123283),	-- Harmonious Britches
+						i(121940),	-- Harmonious Choker
+						i(121920),	-- Harmonious Cloak of Rage
+						i(121930),	-- Harmonious Cloak of Wisdom
+						i(121925),	-- Harmonious Defender Idol
+						i(121924),	-- Harmonious Defender Stone
+						i(121928),	-- Harmonious Gloves
+						i(123281),	-- Harmonious Gloves
+						i(121929),	-- Harmonious Hood
+						i(123282),	-- Harmonious Hood
+						i(121939),	-- Harmonious Idol of Rage
+						i(121934),	-- Harmonious Idol of Wisdom
+						i(121935),	-- Harmonious Necklace
+						i(121919),	-- Harmonious Ring of Onslaught
+						i(121922),	-- Harmonious Ring of Stoicism
+						i(121932),	-- Harmonious Ring of Wisdom
+						i(121937),	-- Harmonious Shoulders
+						i(123284),	-- Harmonious Shoulders
+						i(121927),	-- Harmonious Slippers
+						i(123280),	-- Harmonious Slippers
+						i(122072),	-- Harmonious Spire
+						i(122073),	-- Harmonious Staff
+						i(121941),	-- Harmonious Stone of Rage
+						i(121936),	-- Harmonious Stone of Wisdom
+						i(122085),	-- Harmonious Sword
+						i(121926),	-- Harmonious Tunic
+						i(123279),	-- Harmonious Tunic
+						i(121938),	-- Harmonious Waistband
+						i(123285),	-- Harmonious Waistband
+						i(140695),	-- Staff of the Jade Mist
+					}),
+					cl(PALADIN, {
+						i(140737),	-- Defender's Bulwark
+						i(140698),	-- Defender's Longsword
+						i(121963),	-- Duskbreaker Amulet
+						i(121969),	-- Duskbreaker Armplates
+						i(123294),	-- Duskbreaker Armplates
+						i(123302),	-- Duskbreaker Armplates
+						i(121958),	-- Duskbreaker Band of Might
+						i(121965),	-- Duskbreaker Band of Stoicism
+						i(121950),	-- Duskbreaker Band of Wisdom
+						i(121943),	-- Duskbreaker Battleplate
+						i(123288),	-- Duskbreaker Battleplate
+						i(123296),	-- Duskbreaker Battleplate
+						i(121968),	-- Duskbreaker Belt
+						i(123293),	-- Duskbreaker Belt
+						i(123301),	-- Duskbreaker Belt
+						i(121954),	-- Duskbreaker Bulwark
+						i(121956),	-- Duskbreaker Cloak of Battle
+						i(121962),	-- Duskbreaker Cloak of Stoicism
+						i(121947),	-- Duskbreaker Cloak of Wisdom
+						i(121964),	-- Duskbreaker Defender Idol
+						i(121967),	-- Duskbreaker Defender Stone
+						i(121944),	-- Duskbreaker Gloves
+						i(123289),	-- Duskbreaker Gloves
+						i(123297),	-- Duskbreaker Gloves
+						i(121945),	-- Duskbreaker Headpiece
+						i(123290),	-- Duskbreaker Headpiece
+						i(123298),	-- Duskbreaker Headpiece
+						i(121961),	-- Duskbreaker Idol of Battle
+						i(121949),	-- Duskbreaker Idol of Wisdom
+						i(121953),	-- Duskbreaker Leggings
+						i(123291),	-- Duskbreaker Leggings
+						i(123299),	-- Duskbreaker Leggings
+						i(121948),	-- Duskbreaker Necklace
+						i(121957),	-- Duskbreaker Pendant
+						i(121959),	-- Duskbreaker Ring of Might
+						i(121966),	-- Duskbreaker Ring of Stoicism
+						i(121951),	-- Duskbreaker Ring of Wisdom
+						i(123287),	-- Duskbreaker Sabatons
+						i(123295),	-- Duskbreaker Sabatons
+						i(123303),	-- Duskbreaker Sabatons
+						i(122086),	-- Duskbreaker Scepter
+						i(121946),	-- Duskbreaker Shield
+						i(121955),	-- Duskbreaker Spaulders
+						i(123292),	-- Duskbreaker Spaulders
+						i(123300),	-- Duskbreaker Spaulders
+						i(121952),	-- Duskbreaker Stone of Wisdom
+						i(121960),	-- Duskbreaker Stone of Battle
+						i(122087),	-- Duskbreaker Sword
+						i(122074),	-- Duskbreaker Warmaul
+						i(140736),	-- Justicar's Shield
+						i(140697),	-- Justicar's Hammer
+						i(140699),	-- Warhammer of Retribution
+					}),
+					cl(PRIEST, {
+						i(121976),	-- Soulward Band of Destruction
+						i(121982),	-- Soulward Band of Wisdom
+						i(121973),	-- Soulward Cloak of Destruction
+						i(121979),	-- Soulward Cloak of Wisdom
+						i(121988),	-- Soulward Cord
+						i(123310),	-- Soulward Cord
+						i(123318),	-- Soulward Cord
+						i(121971),	-- Soulward Handwraps
+						i(123305),	-- Soulward Handwraps
+						i(123313),	-- Soulward Handwraps
+						i(121972),	-- Soulward Hood
+						i(123306),	-- Soulward Hood
+						i(123314),	-- Soulward Hood
+						i(121975),	-- Soulward Idol of Destruction
+						i(121981),	-- Soulward Idol of Wisdom
+						i(121985),	-- Soulward Leggings
+						i(123307),	-- Soulward Leggings
+						i(123315),	-- Soulward Leggings
+						i(121974),	-- Soulward Medallion
+						i(121980),	-- Soulward Necklace
+						i(121977),	-- Soulward Ring of Destruction
+						i(121983),	-- Soulward Ring of Wisdom
+						i(121970),	-- Soulward Sandals
+						i(123304),	-- Soulward Sandals
+						i(123312),	-- Soulward Sandals
+						i(121987),	-- Soulward Shoulderpads
+						i(123309),	-- Soulward Shoulderpads
+						i(123317),	-- Soulward Shoulderpads
+						i(122075),	-- Soulward Staff
+						i(122076),	-- Soulward Stave
+						i(121978),	-- Soulward Stone of Destruction
+						i(121984),	-- Soulward Stone of Wisdom
+						i(121986),	-- Soulward Vestments
+						i(123308),	-- Soulward Vestments
+						i(123316),	-- Soulward Vestments
+						i(122082),	-- Soulward Wand
+						i(121989),	-- Soulward Wristwraps
+						i(123311),	-- Soulward Wristwraps
+						i(123319),	-- Soulward Wristwraps
+						i(140700),	-- Staff of Dual Convictions
+						i(140701),	-- Staff of Radiance
+						i(140702),	-- Whispering Staff of the Void
+					}),
+					cl(ROGUE, {
+						i(140704),	-- Assassins Serrated Dagger
+						i(140703),	-- Duskfall Daggers
+						i(140705),	-- Outlaw's Cutlass
+						i(121993),	-- Skulldugger Band of Onslaught
+						i(122003),	-- Skulldugger Bindings
+						i(123327),	-- Skulldugger Bindings
+						i(123335),	-- Skulldugger Bindings
+						i(121997),	-- Skulldugger Boots
+						i(123321),	-- Skulldugger Boots
+						i(123329),	-- Skulldugger Boots
+						i(122000),	-- Skulldugger Britches
+						i(123324),	-- Skulldugger Britches
+						i(123332),	-- Skulldugger Britches
+						i(121991),	-- Skulldugger Choker
+						i(121990),	-- Skulldugger Cloak of Rage
+						i(122088),	-- Skulldugger Dagger
+						i(121998),	-- Skulldugger Gloves
+						i(123322),	-- Skulldugger Gloves
+						i(123330),	-- Skulldugger Gloves
+						i(121999),	-- Skulldugger Hood
+						i(123323),	-- Skulldugger Hood
+						i(123331),	-- Skulldugger Hood
+						i(121992),	-- Skulldugger Idol of Rage
+						i(121996),	-- Skulldugger Jerkin
+						i(123320),	-- Skulldugger Jerkin
+						i(123328),	-- Skulldugger Jerkin
+						i(121994),	-- Skulldugger Ring of Onslaught
+						i(122089),	-- Skulldugger Shiv
+						i(122001),	-- Skulldugger Shoulders
+						i(123325),	-- Skulldugger Shoulders
+						i(123333),	-- Skulldugger Shoulders
+						i(121995),	-- Skulldugger Stone of Rage
+						i(122094),	-- Skulldugger Sword
+						i(122002),	-- Skulldugger Waistband
+						i(123326),	-- Skulldugger Waistband
+						i(123334),	-- Skulldugger Waistband
+					}),
+					cl(SHAMAN, {
+						i(140708),	-- Earthmenders Talons
+						i(140739),	-- Earthmender's Shield
+						i(140706),	-- Stormshaper's Claws
+						i(140738),	-- Stormshaper's Bulwark
+						i(122011),	-- Stormseeker Aegis
+						i(122018),	-- Stormseeker Band of Destruction
+						i(122007),	-- Stormseeker Band of Onslaught
+						i(122024),	-- Stormseeker Band of Wisdom
+						i(122031),	-- Stormseeker Bracers
+						i(123343),	-- Stormseeker Bracers
+						i(123351),	-- Stormseeker Bracers
+						i(122005),	-- Stormseeker Choker
+						i(122090),	-- Stormseeker Claws
+						i(122015),	-- Stormseeker Cloak of Destruction
+						i(122004),	-- Stormseeker Cloak of Rage
+						i(122021),	-- Stormseeker Cloak of Wisdom
+						i(122014),	-- Stormseeker Cowl
+						i(123339),	-- Stormseeker Cowl
+						i(123347),	-- Stormseeker Cowl
+						i(122030),	-- Stormseeker Girdle
+						i(123342),	-- Stormseeker Girdle
+						i(123350),	-- Stormseeker Girdle
+						i(122013),	-- Stormseeker Grips
+						i(123338),	-- Stormseeker Grips
+						i(123346),	-- Stormseeker Grips
+						i(122017),	-- Stormseeker Idol of Destruction
+						i(122006),	-- Stormseeker Idol of Rage
+						i(122023),	-- Stormseeker Idol of Wisdom
+						i(122027),	-- Stormseeker Leggings
+						i(123340),	-- Stormseeker Leggings
+						i(123348),	-- Stormseeker Leggings
+						i(122016),	-- Stormseeker Medallion
+						i(122022),	-- Stormseeker Necklace
+						i(122019),	-- Stormseeker Ring of Destruction
+						i(122008),	-- Stormseeker Ring of Onslaught
+						i(122025),	-- Stormseeker Ring of Wisdom
+						i(122012),	-- Stormseeker Sabatons
+						i(123337),	-- Stormseeker Sabatons
+						i(123345),	-- Stormseeker Sabatons
+						i(122028),	-- Stormseeker Shield
+						i(122092),	-- Stormseeker Slicers
+						i(122029),	-- Stormseeker Spaulders
+						i(123341),	-- Stormseeker Spaulders
+						i(123349),	-- Stormseeker Spaulders
+						i(122020),	-- Stormseeker Stone of Destruction
+						i(122009),	-- Stormseeker Stone of Rage
+						i(122026),	-- Stormseeker Stone of Wisdom
+						i(122091),	-- Stormseeker Talons
+						i(122010),	-- Stormseeker Vest
+						i(123336),	-- Stormseeker Vest
+						i(123344),	-- Stormseeker Vest
+						i(140707),	-- Talons of Totemic Might
+					}),
+					cl(WARLOCK, {
+						i(140710),	-- Demonologist's Staff
+						i(140709),	-- Destructive Spellstaff
+						i(122038),	-- Ruinrain Band of Destruction
+						i(122035),	-- Ruinrain Cloak of Destruction
+						i(122044),	-- Ruinrain Cord
+						i(123358),	-- Ruinrain Cord
+						i(123366),	-- Ruinrain Cord
+						i(122034),	-- Ruinrain Cowl
+						i(123354),	-- Ruinrain Cowl
+						i(123362),	-- Ruinrain Cowl
+						i(122033),	-- Ruinrain Handwraps
+						i(123353),	-- Ruinrain Handwraps
+						i(123361),	-- Ruinrain Handwraps
+						i(122037),	-- Ruinrain Idol of Destruction
+						i(122041),	-- Ruinrain Leggings
+						i(123355),	-- Ruinrain Leggings
+						i(123363),	-- Ruinrain Leggings
+						i(122036),	-- Ruinrain Medallion
+						i(122039),	-- Ruinrain Ring of Destruction
+						i(122042),	-- Ruinrain Robe
+						i(123356),	-- Ruinrain Robe
+						i(123364),	-- Ruinrain Robe
+						i(122032),	-- Ruinrain Sandals
+						i(123352),	-- Ruinrain Sandals
+						i(123360),	-- Ruinrain Sandals
+						i(122043),	-- Ruinrain Shoulderpads
+						i(123357),	-- Ruinrain Shoulderpads
+						i(123365),	-- Ruinrain Shoulderpads
+						i(122077),	-- Ruinrain Staff
+						i(122040),	-- Ruinrain Stone of Destruction
+						i(122083),	-- Ruinrain Wand
+						i(122045),	-- Ruinrain Wristwraps
+						i(123359),	-- Ruinrain Wristwraps
+						i(123367),	-- Ruinrain Wristwraps
+						i(140720),	-- Staff of Swelling Agony
+					}),
+					cl(WARRIOR, {
+						i(140711),	-- Armsmaster's Greataxe
+						i(122059),	-- Defiant Amulet
+						i(122065),	-- Defiant Armguards
+						i(123374),	-- Defiant Armguards
+						i(122093),	-- Defiant Axe
+						i(122054),	-- Defiant Band of Might
+						i(122061),	-- Defiant Band of Stoicism
+						i(122046),	-- Defiant Breastplate
+						i(123368),	-- Defiant Breastplate
+						i(122050),	-- Defiant Bulwark
+						i(122052),	-- Defiant Cloak of Battle
+						i(122058),	-- Defiant Cloak of Stoicism
+						i(122060),	-- Defiant Defender Idol
+						i(122063),	-- Defiant Defender Stone
+						i(122048),	-- Defiant Faceguard
+						i(123370),	-- Defiant Faceguard
+						i(122078),	-- Defiant Greataxe
+						i(122047),	-- Defiant Greaves
+						i(123369),	-- Defiant Greaves
+						i(122066),	-- Defiant Handguards
+						i(123375),	-- Defiant Handguards
+						i(122079),	-- Defiant Headchopper
+						i(122057),	-- Defiant Idol of Battle
+						i(122049),	-- Defiant Legguards
+						i(123371),	-- Defiant Legguards
+						i(122053),	-- Defiant Pendant
+						i(122055),	-- Defiant Ring of Might
+						i(122062),	-- Defiant Ring of Stoicism
+						i(122051),	-- Defiant Shoulderguards
+						i(123372),	-- Defiant Shoulderguards
+						i(122056),	-- Defiant Stone of Battle
+						i(122064),	-- Defiant Waistband
+						i(123373),	-- Defiant Waistband
+						i(140713),	-- Protector's Axe
+						i(140740),	-- Protector's Barrier
+					}),
+				}),
+			})),
+
+			-- 7.2.5
+			tier(LEGION_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 7.2.5" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, UNHOLY, {
+							i(150624),	-- Heart-Lesion Helm
+							i(157661),	-- Heart-Lesion Helm
+							i(150626),	-- Heart-Lesion Pauldrons
+							i(157663),	-- Heart-Lesion Pauldrons
+							i(150621),	-- Heart-Lesion Breastplate
+							i(157658),	-- Heart-Lesion Breastplate
+							i(150628),	-- Heart-Lesion Vambraces
+							i(157665),	-- Heart-Lesion Vambraces
+							i(150623),	-- Heart-Lesion Gauntlets
+							i(157660),	-- Heart-Lesion Gauntlets
+							i(150627),	-- Heart-Lesion Girdle
+							i(157664),	-- Heart-Lesion Girdle
+							i(150625),	-- Heart-Lesion Legplates
+							i(157662),	-- Heart-Lesion Legplates
+							i(150622),	-- Heart-Lesion Sabatons
+							i(157659),	-- Heart-Lesion Sabatons
+						}),
+						-- #if BEFORE 10.1.5
+						cl(DEATHKNIGHT, BLOOD, {
+							i(153717),	-- Heart-Lession Greatsword
+							i(153737),	-- Heart-Lesion Faceguard
+							i(153739),	-- Heart-Lesion Amulet
+							i(153744),	-- Heart-Lesion Shoulderguards
+							i(153734),	-- Heart-Lesion Cloak of Stoicism
+							i(153733),	-- Heart-Lesion Chestguard
+							i(153746),	-- Heart-Lesion Armguards
+							i(153736),	-- Heart-Lesion Handguards
+							i(153745),	-- Heart-Lesion Waistband
+							i(153738),	-- Heart-Lesion Legguards
+							i(153735),	-- Heart-Lesion Greaves
+							i(153742),	-- Heart-Lesion Band of Stoicism
+							i(153741),	-- Heart-Lesion Ring of Stoicism
+							i(153740),	-- Heart-Lesion Defender Idol
+							i(153743),	-- Heart-Lesion Defender Stone
+						}),
+						-- #endif
+					}),
+					cl(DEMONHUNTER, {
+						cl(DEMONHUNTER, HAVOC, {
+							i(150715),	-- Illidari Warglaive
+							i(150716),	-- Illidari Blindfold
+							i(150726),	-- Illidari Blindfold
+							i(150722),	-- Illidari Shoulders
+							i(150724),	-- Illidari Shoulders
+							i(150720),	-- Illidari Robe
+							i(150728),	-- Illidari Robe
+							i(150718),	-- Illidari Bracers
+							i(150729),	-- Illidari Bracers
+							i(150721),	-- Illidari Gloves
+							i(150727),	-- Illidari Gloves
+							i(150719),	-- Illidari Belt
+							i(150731),	-- Illidari Belt
+							i(150717),	-- Illidari Leggings
+							i(150725),	-- Illidari Leggings
+							i(150723),	-- Illidari Boots
+							i(150730),	-- Illidari Boots
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, BALANCE, {
+							i(150632),	-- Springrain Headpiece
+							i(150634),	-- Springrain Spaulders
+							i(150629),	-- Springrain Tunic
+							i(150636),	-- Springrain Bracers
+							i(150631),	-- Springrain Grips
+							i(150635),	-- Springrain Belt
+							i(150633),	-- Springrain Leggings
+							i(150630),	-- Springrain Treads
+						}),
+						-- #if BEFORE 10.1.5
+						cl(DRUID, FERAL, {
+							i(153794),	-- Springrain Choker
+						}),
+						cl(DRUID, GUARDIAN, {
+							i(153793),	-- Springrain Cloak of Durability
+							i(153797),	-- Springrain Band of Durability
+							i(153796),	-- Springrain Ring of Durability
+							i(153795),	-- Springrain Idol of Durability
+							i(153798),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(153792),	-- Springrain Staff
+							i(153787),	-- Springrain Hood
+							i(153778),	-- Springrain Necklace
+							i(153789),	-- Springrain Shoulders
+							i(153777),	-- Springrain Cloak of Wisdom
+							i(153784),	-- Springrain Jerkin
+							i(153791),	-- Springrain Bindings
+							i(153786),	-- Springrain Gloves
+							i(153790),	-- Springrain Waistband
+							i(153788),	-- Springrain Britches
+							i(153785),	-- Springrain Boots
+							i(153780),	-- Springrain Band of Wisdom
+							i(153781),	-- Springrain Ring of Wisdom
+							i(153779),	-- Springrain Idol of Wisdom
+							i(153782),	-- Springrain Stone of Wisdom
+						}),
+						-- #endif
+					}),
+					cl(HUNTER, {
+						cl(HUNTER, BEAST_MASTERY, {
+							i(150640),	-- Trailseeker Helm
+							i(150642),	-- Trailseeker Spaulders
+							i(150637),	-- Trailseeker Vest
+							i(150644),	-- Trailseeker Bracers
+							i(150639),	-- Trailseeker Gauntlets
+							i(150643),	-- Trailseeker Belt
+							i(150641),	-- Trailseeker Legguards
+							i(150638),	-- Trailseeker Greaves
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(150651),	-- Mountainsage Cord
+							i(150646),	-- Mountainsage Handwraps
+							i(150647),	-- Mountainsage Hood
+							i(150648),	-- Mountainsage Leggings
+							i(150649),	-- Mountainsage Robe
+							i(150645),	-- Mountainsage Sandals
+							i(150650),	-- Mountainsage Shoulderpads
+							i(150652),	-- Mountainsage Wristwraps
+							i(153828),	-- Mountainsage Wand
+						}),
+					}),
+					cl(MONK, {
+						-- #if BEFORE 10.1.5
+						cl(MONK, BREWMASTER, {
+							i(153831),	-- Mistdancer Amulet
+							i(153832),	-- Mistdancer Band of Stoicism
+							i(153833),	-- Mistdancer Ring of Stoicism
+							i(153836),	-- Mistdancer Defender Idol
+							i(153834),	-- Mistdancer Defender Stone
+						}),
+						cl(MONK, MISTWEAVER, {
+							i(153847),	-- Mistdancer Hood
+							i(153851),	-- Mistdancer Necklace
+							i(153855),	-- Mistdancer Shoulders
+							i(153848),	-- Mistdancer Cloak of Wisdom
+							i(153866),	-- Mistdancer Jerkin
+							i(153858),	-- Mistdancer Bindings
+							i(153846),	-- Mistdancer Gloves
+							i(153857),	-- Mistdancer Waistband
+							i(153850),	-- Mistdancer Britches
+							i(153845),	-- Mistdancer Boots
+							i(153853),	-- Mistdancer Band of Wisdom
+							i(153852),	-- Mistdancer Ring of Wisdom
+							i(153849),	-- Mistdancer Idol of Wisdom
+							i(153854),	-- Mistdancer Stone of Wisdom
+						}),
+						-- #endif
+						cl(MONK, WINDWALKER, {
+							i(150656),	-- Mistdancer Helm
+							i(150658),	-- Mistdancer Pauldrons
+							i(150653),	-- Mistdancer Vest
+							i(150660),	-- Mistdancer Cuffs
+							i(150655),	-- Mistdancer Handguards
+							i(150659),	-- Mistdancer Cord
+							i(150657),	-- Mistdancer Legguards
+							i(150654),	-- Mistdancer Footpads
+						}),
+					}),
+					cl(PALADIN, {
+						-- #if BEFORE 10.1.5
+						cl(PALADIN, HOLY, {
+							i(153890),	-- Sunsoul Shield
+							i(153879),	-- Sunsoul Headpiece
+							i(153881),	-- Sunsoul Necklace
+							i(153886),	-- Sunsoul Spaulders
+							i(153876),	-- Sunsoul Cloak of Wisdom
+							i(153875),	-- Sunsoul Breastplate
+							i(153888),	-- Sunsoul Armplates
+							i(153878),	-- Sunsoul Gloves
+							i(153887),	-- Sunsoul Belt
+							i(153880),	-- Sunsoul Leggings
+							i(153877),	-- Sunsoul Boots
+							i(153884),	-- Sunsoul Band of Wisdom
+							i(153883),	-- Sunsoul Ring of Wisdom
+							i(153882),	-- Sunsoul Idol of Wisdom
+							i(153885),	-- Sunsoul Stone of Wisdom
+						}),
+						cl(PALADIN, PROTECTION, {
+							i(153904),	-- Sunsoul Faceguard
+							i(153906),	-- Sunsoul Amulet
+							i(153911),	-- Sunsoul Shoulderguards
+							i(153901),	-- Sunsoul Cloak of Stoicism
+							i(153900),	-- Sunsoul Chestguard
+							i(153913),	-- Sunsoul Armguards
+							i(153903),	-- Sunsoul Handguards
+							i(153912),	-- Sunsoul Waistband
+							i(153905),	-- Sunsoul Legguards
+							i(153902),	-- Sunsoul Greaves
+							i(153909),	-- Sunsoul Band of Stoicism
+							i(153908),	-- Sunsoul Ring of Stoicism
+							i(153907),	-- Sunsoul Defender Idol
+							i(153910),	-- Sunsoul Defender Stone
+						}),
+						-- #endif
+						cl(PALADIN, RETRIBUTION, {
+							i(150664),	-- Sunsoul Helm
+							i(150666),	-- Sunsoul Pauldrons
+							i(150661),	-- Sunsoul Battleplate
+							i(150668),	-- Sunsoul Vambraces
+							i(150663),	-- Sunsoul Gauntlets
+							i(150667),	-- Sunsoul Girdle
+							i(150665),	-- Sunsoul Legplates
+							i(150662),	-- Sunsoul Sabatons
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, HOLY, {
+							-- #if BEFORE 10.1.5
+							i(153919),	-- Communal Wand
+							-- #endif
+							i(150671),	-- Communal Cowl
+							i(150674),	-- Communal Mantle
+							i(150673),	-- Communal Robe
+							i(150676),	-- Communal Bindings
+							i(150670),	-- Communal Gloves
+							i(150675),	-- Communal Sash
+							i(150672),	-- Communal Pants
+							i(150669),	-- Communal Boots
+						}),
+						-- #if BEFORE 10.1.5
+						cl(PRIEST, SHADOW, {
+							i(153944),	-- Communal Stave
+							i(153938),	-- Communal Cowl
+							i(153914),	-- Communal Medallion
+							i(153941),	-- Communal Mantle
+							i(153935),	-- Communal Cloak of Destruction
+							i(153940),	-- Communal Robe
+							i(153943),	-- Communal Bindings
+							i(153937),	-- Communal Gloves
+							i(153942),	-- Communal Sash
+							i(153939),	-- Communal Pants
+							i(153936),	-- Communal Boots
+							i(153916),	-- Communal Band of Destruction
+							i(153917),	-- Communal Ring of Destruction
+							i(153915),	-- Communal Idol of Destruction
+							i(153918),	-- Communal Stone of Destruction
+						}),
+						-- #endif
+					}),
+					cl(ROGUE, {
+						cl(ROGUE, ASSASSINATION, {
+							i(150680),	-- Lightdrinker Hood
+							i(150682),	-- Lightdrinker Shoulders
+							i(150677),	-- Lightdrinker Jerkin
+							i(150684),	-- Lightdrinker Bindings
+							i(150679),	-- Lightdrinker Gloves
+							i(150683),	-- Lightdrinker Waistband
+							i(150681),	-- Lightdrinker Britches
+							i(150678),	-- Lightdrinker Boots
+						}),
+					}),
+					cl(SHAMAN, {
+						cl(SHAMAN, ELEMENTAL, {
+							i(150688),	-- Streamtalker Coif
+							i(150690),	-- Streamtalker Pauldrons
+							i(150685),	-- Streamtalker Tunic
+							i(150692),	-- Streamtalker Armbands
+							i(150687),	-- Streamtalker Gloves
+							i(150691),	-- Streamtalker Belt
+							i(150689),	-- Streamtalker Legwraps
+							i(150686),	-- Streamtalker Boots
+						}),
+						-- #if BEFORE 10.1.5
+						cl(SHAMAN, RESTORATION, {
+							i(153999),	-- Streamtalker Slicers
+							i(154003),	-- Streamtalker Cowl
+							i(153993),	-- Streamtalker Necklace
+							i(154006),	-- Streamtalker Spaulders
+							i(153992),	-- Streamtalker Cloak of Wisdom
+							i(154000),	-- Streamtalker Vest
+							i(154008),	-- Streamtalker Bracers
+							i(154002),	-- Streamtalker Grips
+							i(154007),	-- Streamtalker Girdle
+							i(154004),	-- Streamtalker Leggings
+							i(154001),	-- Streamtalker Sabatons
+							i(153996),	-- Streamtalker Band of Wisdom
+							i(153995),	-- Streamtalker Ring of Wisdom
+							i(153994),	-- Streamtalker Idol of Wisdom
+							i(153997),	-- Streamtalker Stone of Wisdom
+						}),
+						-- #endif
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(154022),	-- Felsoul Wand
+							i(150695),	-- Felsoul Cowl
+							i(150698),	-- Felsoul Shoulderpads
+							i(150697),	-- Felsoul Robe
+							i(150700),	-- Felsoul Wristwraps
+							i(150694),	-- Felsoul Handwraps
+							i(150699),	-- Felsoul Cord
+							i(150696),	-- Felsoul Leggings
+							i(150693),	-- Felsoul Sandals
+						}),
+					}),
+					cl(WARRIOR, {
+						cl(WARRIOR, ARMS, {
+							i(150704),	-- Oathsworn Helm
+							i(150706),	-- Oathsworn Pauldrons
+							i(150701),	-- Oathsworn Breastplate
+							i(150708),	-- Oathsworn Vambraces
+							i(150703),	-- Oathsworn Gauntlets
+							i(150707),	-- Oathsworn Girdle
+							i(150705),	-- Oathsworn Legplates
+							i(150702),	-- Oathsworn Sabatons
+						}),
+						-- #if BEFORE 10.1.5
+						cl(WARRIOR, PROTECTION, {
+							i(154041),	-- Oathsworn Faceguard
+							i(154043),	-- Oathsworn Amulet
+							i(154048),	-- Oathsworn Shoulderguards
+							i(154038),	-- Oathsworn Cloak of Stoicism
+							i(154037),	-- Oathsworn Chestguard
+							i(154050),	-- Oathsworn Armguards
+							i(154040),	-- Oathsworn Handguards
+							i(154049),	-- Oathsworn Waistband
+							i(154042),	-- Oathsworn Legguards
+							i(154039),	-- Oathsworn Greaves
+							i(154045),	-- Oathsworn Band of Stoicism
+							i(154046),	-- Oathsworn Ring of Stoicism
+							i(154044),	-- Oathsworn Defender Idol
+							i(154047),	-- Oathsworn Defender Stone
+						}),
+						-- #endif
+					}),
+				}),
+				n(PARTY_SYNC, {
+					cl(DEATHKNIGHT, {
+						i(150609),	-- Bloodcaked Runeblade
+						i(157646),	-- Bloodcaked Runeblade
+						i(150610),	-- Frost-Etched Runeblade
+						i(150582),	-- Unholy Runeblade
+						i(157618),	-- Unholy Runeblade
+					}),
+					cl(DRUID, {
+						i(157620),	-- Halberd of Ferocity
+						i(157648),	-- Oakenstaff Protector
+						i(150585),	-- Restorative Ashwood Stafft
+						i(150583),	-- Staff of Astral Alignment
+						i(157621),	-- Staff of Regrowth
+					}),
+					cl(HUNTER, {
+						i(150612),	-- Marksman's Recurve Bow
+						i(150586),	-- Packmasters Rifle
+						i(157650),	-- Tracker's Spear
+					}),
+					cl(MAGE, {
+						i(150587),	-- Frostcore Staff
+						i(157623),	-- Frostcore Staff
+						i(150614),	-- Staff of Arcane Power
+						i(150588),	-- Staff of Inner Flame
+						i(157624),	-- Staff of Inner Flame
+					}),
+					cl(MONK, {
+						i(150589),	-- Brewmasher's Staff
+						i(157626),	-- Staff of Singing Mists
+						i(150591),	-- Sword of Singing Wind
+						i(150590),	-- Staff of the Jade Mist
+					}),
+					cl(PALADIN, {
+						i(150617),	-- Defender's Bulwark
+						i(150593),	-- Defender's Longsword
+						i(157653),	-- Faithful Shield
+						i(157629),	-- Hammer of Faith
+						i(150616),	-- Justicar's Shield
+						i(150592),	-- Justicar's Hammer
+						i(157654),	-- Stalwart's Bulwark
+						i(157630),	-- Stalwart's Longsword
+						i(150594),	-- Warhammer of Retribution
+					}),
+					cl(PRIEST, {
+						i(150595),	-- Staff of Dual Convictions
+						i(150596),	-- Staff of Radiance
+						i(157633),	-- Staff of Radiance
+						i(150597),	-- Whispering Staff of the Void
+						i(157634),	-- Whispering Staff of the Void
+					}),
+					cl(ROGUE, {
+						i(150599),	-- Assassins Serrated Dagger
+						i(150598),	-- Duskfall Daggers
+						i(157635),	-- Duskfall Daggers
+						i(150600),	-- Outlaw's Cutlass
+						i(157637),	-- Swaggering Cutlass
+					}),
+					cl(SHAMAN, {
+						i(150603),	-- Earthmenders Talons
+						i(150619),	-- Earthmender's Shield
+						i(157656),	-- Raincaller's Shield
+						i(157640),	-- Raincaller's Talons
+						i(157639),	-- Spiritbreaker Talons
+						i(150601),	-- Stormshaper's Claws
+						i(150618),	-- Stormshaper's Bulwark
+						i(150602),	-- Talons of Totemic Might
+					}),
+					cl(WARLOCK, {
+						i(150605),	-- Demonologist's Staff
+						i(157642),	-- Demonologist's Staff
+						i(150604),	-- Destructive Spellstaff
+						i(157641),	-- Destructive Spellstaff
+						i(150615),	-- Staff of Swelling Agony
+					}),
+					cl(WARRIOR, {
+						i(150606),	-- Armsmaster's Greataxe
+						i(157645),	-- Foebreaker's Axe
+						i(157657),	-- Foebreaker's Barrier
+						i(150607),	-- Greataxe of Fury
+						i(157644),	-- Greataxe of Fury
+						i(150608),	-- Protector's Axe
+						i(150620),	-- Protector's Barrier
+					}),
+					filter(NECK_F, {
+						i(150713),	-- Woven Silver Pendant
+					}),
+					filter(FINGER_F, {
+						i(150711),	-- Dingy Golden Band
+						i(150712),	-- Dull Onyx Band
+					}),
+					filter(TRINKET_F, {
+						i(150710),	-- Burnished Charm
+						i(150709),	-- Lacquered Carving
+					}),
+				}),
+			})),
+
+			-- 7.3.5
+			tier(LEGION_TIER, 3.5, bubbleDown({ ["timeline"] = { "created 7.3.5" } }, {
+				n(NEW_CHARACTER, {
+					cl(DRUID, {
+						i(157669),	-- Wildshifter Headpiece
+						i(157671),	-- Wildshifter Spaulders
+					}),
+					cl(HUNTER, {
+						i(157677),	-- Heartbonded Helm (Hunter Future Boost Gear)
+						i(157679),	-- Heartbonded Spaulders (Hunter Future Boost Gear)
+					}),
+					cl(MAGE, {
+						i(157684),	-- Spellsculptor's Hood
+						i(157687),	-- Spellsculptor's Shoulderpads
+					}),
+					cl(MONK, {
+						i(157693),	-- Ascetic's Helm
+						i(157695),	-- Ascetic's Pauldrons
+					}),
+					cl(PALADIN, {
+						i(157701),	-- Lightsoul Helm
+						i(157703),	-- Lightsoul Pauldrons
+					}),
+					cl(PRIEST, {
+						i(157708),	-- Curate's Cowl
+						i(157711),	-- Curate's Mantle
+					}),
+					cl(ROGUE, {
+						i(157717),	-- Nimblefinger Hood
+						i(157719),	-- Nimblefinger Shoulders
+					}),
+					cl(SHAMAN, {
+						i(157725),	-- Totem-Caller Coif (Sham Future Boost Gear)
+						i(157727),	-- Totem-Caller Pauldrons (Sham Future Boost Gear)
+					}),
+					cl(WARLOCK, {
+						i(157732),	-- Felburner's Cowl
+						i(157735),	-- Felburner's Shoulderpads
+					}),
+					cl(WARRIOR, {
+						i(157741),	-- Warsinger's Helm
+						i(157743),	-- Warsinger's Pauldrons
+					}),
+				}),
+			})),
+		}),
+		tier(BFA_TIER, {
+			-- 8.0.1
+			tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEMONHUNTER, HAVOC, {
+						i(164760),	-- Illidari Warglaives
+						i(164748),	-- Illidari Blindfold
+						i(164758),	-- Illidari Chain
+						i(164746),	-- Illidari Shoulders
+						i(164759),	-- Illidari Drape
+						i(164750),	-- Illidari Robe
+						i(164751),	-- Illidari Bracers
+						i(164749),	-- Illidari Gloves
+						i(164753),	-- Illidari Belt
+						i(164747),	-- Illidari Leggings
+						i(164752),	-- Illidari Boots
+						i(164756),	-- Illidari Band
+						i(164757),	-- Illidari Ring
+						i(164755),	-- Charm of Demonic Fire
+						i(164754),	-- Demon Trophy
+					}),
+				}),
+				n(SEASON_DREAD, {
+					filter(CLOTH, {
+						i(166907),	-- Dread Gladiator's Silk Robe
+						i(166908),	-- Dread Gladiator's Silk Treads
+						i(166909),	-- Dread Gladiator's Silk Gloves
+						i(166910),	-- Dread Gladiator's Silk Hood
+						i(166911),	-- Dread Gladiator's Silk Leggings
+						i(166912),	-- Dread Gladiator's Silk Mantle
+						i(166913),	-- Dread Gladiator's Silk Cord
+						i(166914),	-- Dread Gladiator's Silk Cuffs
+						i(166938),	-- Dread Gladiator's Silk Robe
+						i(166939),	-- Dread Gladiator's Silk Treads
+						i(166940),	-- Dread Gladiator's Silk Gloves
+						i(166941),	-- Dread Gladiator's Silk Hood
+						i(166942),	-- Dread Gladiator's Silk Leggings
+						i(166943),	-- Dread Gladiator's Silk Mantle
+						i(166944),	-- Dread Gladiator's Silk Cord
+						i(166945),	-- Dread Gladiator's Silk Cuffs
+					}),
+					filter(LEATHER, {
+						i(166946),	-- Dread Gladiator's Leather Tunic
+						i(166947),	-- Dread Gladiator's Leather Boots
+						i(166948),	-- Dread Gladiator's Leather Gloves
+						i(166949),	-- Dread Gladiator's Leather Helm
+						i(166950),	-- Dread Gladiator's Leather Legguards
+						i(166951),	-- Dread Gladiator's Leather Spaulders
+						i(166952),	-- Dread Gladiator's Leather Belt
+						i(166953),	-- Dread Gladiator's Leather Bindings
+						i(166915),	-- Dread Gladiator's Leather Tunic
+						i(166916),	-- Dread Gladiator's Leather Boots
+						i(166917),	-- Dread Gladiator's Leather Gloves
+						i(166918),	-- Dread Gladiator's Leather Helm
+						i(166919),	-- Dread Gladiator's Leather Legguards
+						i(166920),	-- Dread Gladiator's Leather Spaulders
+						i(166921),	-- Dread Gladiator's Leather Belt
+						i(166922),	-- Dread Gladiator's Leather Bindings
+					}),
+					filter(MAIL, {
+						i(166954),	-- Dread Gladiator's Chain Armor
+						i(166955),	-- Dread Gladiator's Chain Sabatons
+						i(166956),	-- Dread Gladiator's Chain Gauntlets
+						i(166957),	-- Dread Gladiator's Chain Helm
+						i(166958),	-- Dread Gladiator's Chain Leggings
+						i(166959),	-- Dread Gladiator's Chain Spaulders
+						i(166960),	-- Dread Gladiator's Chain Waistguard
+						i(166961),	-- Dread Gladiator's Chain Armbands
+						i(166923),	-- Dread Gladiator's Chain Armor
+						i(166924),	-- Dread Gladiator's Chain Sabatons
+						i(166925),	-- Dread Gladiator's Chain Gauntlets
+						i(166926),	-- Dread Gladiator's Chain Helm
+						i(166927),	-- Dread Gladiator's Chain Leggings
+						i(166928),	-- Dread Gladiator's Chain Spaulders
+						i(166929),	-- Dread Gladiator's Chain Waistguard
+						i(166930),	-- Dread Gladiator's Chain Armbands
+					}),
+					filter(PLATE, {
+						i(166906),	-- Dread Gladiator's Plate Pauldrons
+						i(166931),	-- Dread Gladiator's Plate Chestpiece
+						i(166932),	-- Dread Gladiator's Plate Warboots
+						i(166933),	-- Dread Gladiator's Plate Gauntlets
+						i(166934),	-- Dread Gladiator's Plate Helm
+						i(166935),	-- Dread Gladiator's Plate Legguards
+						i(166936),	-- Dread Gladiator's Plate Girdle
+						i(166937),	-- Dread Gladiator's Plate Armguards
+						i(166962),	-- Dread Gladiator's Plate Chestpiece
+						i(166963),	-- Dread Gladiator's Plate Warboots
+						i(166964),	-- Dread Gladiator's Plate Gauntlets
+						i(166965),	-- Dread Gladiator's Plate Helm
+						i(166966),	-- Dread Gladiator's Plate Legguards
+						i(166967),	-- Dread Gladiator's Plate Pauldrons
+						i(166968),	-- Dread Gladiator's Plate Girdle
+						i(166969),	-- Dread Gladiator's Plate Armguards
+					}),
+				}),
+				n(SEASON_SINISTER, {
+					filter(CLOTH, {
+						i(166634),	-- Sinister Gladiator's Silk Armor (A)
+						i(166660),	-- Sinister Gladiator's Silk Shoulderguards (A)
+						i(166611),	-- Sinister Gladiator's Silk Cap (A)
+						i(166630),	-- Sinister Gladiator's Silk Armor (H)
+						i(166654),	-- Sinister Gladiator's Silk Shoulderguards (H)
+						i(166606),	-- Sinister Gladiator's Silk Cap (H)
+					}),
+					filter(LEATHER, {
+						i(166637),	-- Sinister Gladiator's Leather Harness (A)
+						i(166613),	-- Sinister Gladiator's Leather Headpiece (A)
+						i(166658),	-- Sinister Gladiator's Leather Shoulderpads (A)
+						i(166631),	-- Sinister Gladiator's Leather Harness (H)
+						i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
+						i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
+					}),
+					filter(MAIL, {
+						i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
+						i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
+						i(166636),	-- Sinister Gladiator's Chain Vest (A)
+						i(166632),	-- Sinister Gladiator's Chain Vest (H)
+						i(166608),	-- Sinister Gladiator's Chain Skullcover (H
+						i(166656),	-- Sinister Gladiator's Chain Epaulets (H)
+					}),
+					filter(PLATE, {
+						i(166635),	-- Sinister Gladiator's Plate Chestplate (A)
+						i(166659),	-- Sinister Gladiator's Shoulderplates (A)
+						i(166610),	-- Sinister Gladiator's Plate Skullguard (A)
+						i(166633),	-- Sinister Gladiator's Plate Chestplate (H)
+						i(166657),	-- Sinister Gladiator's Shoulderplates (H)
+						i(166609),	-- Sinister Gladiator's Plate Skullguard (H)
+					}),
+				}),
+				n(WAR_EFFORT, {
+					n(WARFRONT_BATTLE_FOR_STROMGARDE, {
+						filter(CLOTH, {
+							i(163269),	-- 7th Legionnaire's Mantle
+							i(163340),	-- 7th Legionnaire's Circlet
+							i(163343),	-- 7th Legionnaire's Sash
+							i(163425),	-- Honorbound Artificer's Mantle
+							i(163427),	-- Honorbound Artificer's Skullcap
+							i(163431),	-- Honorbound Artificer's Sash
+							i(163258),	-- 7th Legionnaire's Mitts
+							i(163260),	-- 7th Legionnaire's Cowl
+							i(163272),	-- 7th Legionnaire's Waistwrap
+							i(163290),	-- Honorbound Artificer's Handwraps
+							i(163292),	-- Honorbound Artificer's Crown
+							i(163301),	-- Honorbound Artificer's Shoulderpads
+							i(163310),	-- Honorbound Artificer's Waistwrap
+							i(163338),	-- 7th Legionnaire's Epaulets
+							i(163429),	-- Honorbound Artificer's Wrap
+						}),
+						filter(LEATHER, {
+							i(163378),	-- 7th Legionnaire's Shoulderpads
+							i(163379),	-- 7th Legionnaire's Pants
+							i(163381),	-- 7th Legionnaire's Mask
+							i(163382),	-- 7th Legionnaire's Tunic
+							i(163385),	-- 7th Legionnaire's Belt
+							i(163433),	-- Honorbound Outrider's Mantle
+							i(163436),	-- Honorbound Outrider's Faceguard
+							i(163440),	-- Honorbound Outrider's Belt
+							i(163262),	-- 7th Legionnaire's Guise
+							i(163267),	-- 7th Legionnaire's Shoulderguards
+							i(163274),	-- 7th Legionnaire's Strap
+							i(163287),	-- Honorbound Outrider's Treads
+							i(163288),	-- Honorbound Outrider's Grasps
+							i(163294),	-- Honorbound Outrider's Headcover
+							i(163299),	-- Honorbound Outrider's Shoulderpads
+							i(163305),	-- Honorbound Outrider's Strap
+							i(163434),	-- Honorbound Outrider's Vestments
+						}),
+						filter(MAIL, {
+							i(163286),	-- Honorbound Vanguard's Footguards
+							i(163291),	-- Honorbound Vanguard's Strikers
+							i(163293),	-- Honorbound Vanguard's Warhelm
+							i(163297),	-- Honorbound Vanguard's Legguards
+							i(163302),	-- Honorbound Vanguard's Spaulders
+							i(163304),	-- Honorbound Vanguard's Waistcord
+							i(163392),	-- 7th Legionnaire's Vestments
+							i(163393),	-- 7th Legionnaire's Raiment
+							i(163443),	-- Honorbound Vanguard's Vestments
+							i(163450),	-- Honorbound Vanguard's Raiment
+							i(163396),	-- 7th Legionnaire's Skullcap
+							i(163390),	-- 7th Legionnaire's Spaulders
+							i(163402),	-- 7th Legionnaire's Chain Belt
+							i(163447),	-- Honorbound Vanguard's Helm
+							i(163442),	-- Honorbound Vanguard's Pauldrons
+							i(163452),	-- Honorbound Vanguard's Chain Belt
+							i(163250),	-- 7th Legionnaire's Hauberk
+							i(163254),	-- 7th Legionnaire's Footguards
+							i(163259),	-- 7th Legionnaire's Grasps
+							i(163261),	-- 7th Legionnaire's Warhelm
+							i(163270),	-- 7th Legionnaire's Chain Mantle
+							i(163273),	-- 7th Legionnaire's Clasp
+							i(163444),	-- Honorbound Vanguard's Vestments
+						}),
+						filter(PLATE, {
+							i(163406),	-- 7th Legionnaire's Shoulderplates
+							i(163408),	-- 7th Legionnaire's Legplates
+							i(163412),	-- 7th Legionnaire's Helmet
+							i(163413),	-- 7th Legionnaire's Strikers
+							i(163420),	-- 7th Legionnaire's Stompers
+							i(163423),	-- 7th Legionnaire's Girdle
+							i(163454),	-- Honorbound Centurion's Pauldrons
+							i(163457),	-- Honorbound Centurion's Helmet
+							i(163462),	-- Honorbound Centurion's Girdle
+							i(163247),	-- 7th Legionnaire's Greathelm
+							i(163249),	-- 7th Legionnaire's Chestpiece
+							i(163252),	-- 7th Legionnaire's Wargreaves
+							i(163257),	-- 7th Legionnaire's Crushers
+							i(163263),	-- 7th Legionnaire's Chausses
+							i(163268),	-- 7th Legionnaire's Plate Mantle
+							i(163271),	-- 7th Legionnaire's Waistguard
+							i(163276),	-- 7th Legionnaire's Wristguards
+							i(163279),	-- Honorbound Centurion's Warhelm
+							i(163281),	-- Honorbound Centurion's Chestguard
+							i(163284),	-- Honorbound Centurion's Stompers
+							i(163289),	-- Honorbound Centurion's Crushers
+							i(163295),	-- Honorbound Centurion's Chausses
+							i(163300),	-- Honorbound Centurion's Spaulders
+							i(163303),	-- Honorbound Centurion's Waistguard
+							i(163404),	-- 7th Legionnaire's Vambraces
+							i(163419),	-- 7th Legionnaire's Breastplate
+						}),
+						n(BACK, {
+							i(163245),	-- 7th Legionnaire's Satin Cloak
+							i(163311),	-- 7th Legionnaire's Shroud
+							i(163312),	-- 7th Legionnaire's Shawl
+							i(163416),	-- 7th Legionnaire's Drape
+							i(163344),	-- 7th Legionnarie's Cape
+							i(163345),	-- 7th Legionnarie's Leather Drape
+							i(163346),	-- Warfront Gear Drape
+							i(163348),	-- Warfront Gear Cloak
+							i(163349),	-- 7th Legionnaire's Chain Cloak
+							i(163350),	-- 7th Legionnaire's Cloak
+							i(163352),	-- 7th Legionnaire's Steel Cloak
+							i(163354),	-- 7th Legionnaire's War Cloak
+							i(163353),	-- 7th Legionnarie's Greatcloak
+							i(163356),	-- Honorbound Artificier's Drape (different version used with locked to specific classes)
+							i(163358),	-- Honorbound Artificier's Greatcloak (different version used with locked to specific classes)
+							i(163359),	-- Warfront Gear Cape
+							i(163361),	-- Honorbound Outrider's Greatcloak (different version used with locked to specific classes)
+							i(163362),	-- Honorbound Outrider's Cloak  (different version used with locked to specific classes)
+							i(163363),	-- Warfront Gear Cape
+							i(163364),	-- Warfront Gear Cloak
+							i(163365),	-- Honorbound Vanguard's Greatcloak (different version used with locked to specific classes)
+							i(163367),	-- Honorbound Vanguard's Long Cloak (different version used with locked to specific classes)
+							i(163369),	-- Honorbound Centurion's Greatcloak
+							i(163370),	-- Warfront Gear Drape
+							i(163371),	-- Honorbound Centurion's Cloak
+							i(163415),	-- 7th Legionnarie's Iron Cloak
+						}),
+					}),
+				}),
+			})),
+
+			-- 8.1.0
+			tier(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+				inst(1031, {	-- Uldir
+					filter(CLOTH, {
+						i(166406),	-- Flaskzertauren's Cloth Robes
+						i(166407),	-- Flaskzertauren's Cloth Shoulders
+					}),
+					filter(LEATHER, {
+						i(166409),	-- Flaskzertauren's Leather Shoulderpads
+						i(166408),	-- Flaskzertauren's Leather Spaulders
+						i(166404),	-- Flaskzertauren's Leather Tunic
+						i(166403),	-- Flaskzertauren's Leather Vest
+					}),
+					filter(MAIL, {
+						i(166402),	-- Flaskzertauren's Mail Hauberk
+						i(166410),	-- Flaskzertauren's Mail Shoulderguards
+					}),
+					filter(PLATE, {
+						i(166400),	-- Flaskzertauren's Plate Chestguard
+						i(166401),	-- Flaskzertauren's Plate Cuirass
+						i(166412),	-- Flaskzertauren's Plate Pauldrons
+						i(166411),	-- Flaskzertauren's Plate Shoulderguards
+					}),
+				}),
+			})),
+
+			-- 8.2.0
+			tier(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
+				n(WAR_EFFORT, {
+					n(WARFRONT_BATTLE_FOR_DARKSHORE, {
+						filter(CLOTH, {
+							i(183762),	-- Moonpriest's Coronet
+							i(183763),	-- Moonpriest's Mantle
+							i(183772),	-- Moonpriest's Vestments
+							i(183774),	-- Plaguebringer's Cowl
+							i(183775),	-- Plaguebringer's Shoulderguards
+							i(183784),	-- Plaguebringer's Robe
+						}),
+						filter(LEATHER, {
+							i(183764),	-- Darkwood Sentinel's Tunic
+							i(183765),	-- Darkwood Sentinel's Cowl
+							i(183766),	-- Darkwood Sentinel's Monnions
+							i(183776),	-- Deathstalker's Chestpiece
+							i(183777),	-- Deathstalker's Collar
+							i(183778),	-- Deathstalker's Shoulderguards
+						}),
+						filter(MAIL, {
+							i(183767),	-- Kaldorei Archer's Chainmail
+							i(183768),	-- Kaldorei Archer's Hood
+							i(183769),	-- Kaldorei Archer's Shoulderguards
+							i(183779),	-- Blightguard's Harness
+							i(183780),	-- Blightguard's Helmet
+							i(183781),	-- Blightguard's Shoulderguards
+						}),
+						filter(PLATE, {
+							i(183770),	-- Wardenguard's Chestplate
+							i(183771),	-- Wardenguard's Greathelm
+							i(183773),	-- Wardenguard's Pauldrons
+							i(183782),	-- Deathguard's Chestplate
+							i(183783),	-- Deathguard's Helm
+							i(183785),	-- Deathguard's Pauldrons
+						}),
+					}),
+				}),
+			})),
+
+			-- 8.2.5
+			tier(BFA_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 8.2.5" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, UNHOLY, {
+							i(170593),	-- Heart-Lesion Pendant
+						}),
+						cl(DEATHKNIGHT, BLOOD, {
+							i(170590),	-- Heart-Lesion Greatsword
+							i(170770),	-- Heart-Lesion Faceguard
+							i(170599),	-- Heart-Lesion Amulet
+							i(170772),	-- Heart-Lesion Shoulderguards
+							i(170598),	-- Heart-Lesion Cloak of Stoicism
+							i(170767),	-- Heart-Lesion Chestguard
+							i(170774),	-- Heart-Lesion Armguards
+							i(170769),	-- Heart-Lesion Handguards
+							i(170773),	-- Heart-Lesion Waistband
+							i(170771),	-- Heart-Lesion Legguards
+							i(170768),	-- Heart-Lesion Greaves
+							i(170602),	-- Heart-Lesion Band of Stoicism
+							i(170601),	-- Heart-Lesion Ring of Stoicism
+							i(170600),	-- Heart-Lesion Defender Idol
+							i(170603),	-- Heart-Lesion Defender Stone
+						}),
+					}),
+					cl(DEMONHUNTER, {
+						cl(DEMONHUNTER, HAVOC, {
+							i(170927),	-- Illidari Shoulders
+							i(170939),	-- Illidari Chain
+							i(170937),	-- Illidari Band
+							i(170938),	-- Illidari Ring
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, BALANCE, {
+							i(170627),	-- Springrain Choker
+						}),
+						cl(DRUID, FERAL, {
+							i(170606),	-- Springrain Choker
+						}),
+						cl(DRUID, GUARDIAN, {
+							i(170619),	-- Springrain Necklace
+							i(170626),	-- Springrain Cloak of Durability
+							i(170630),	-- Springrain Band of Durability
+							i(170629),	-- Springrain Ring of Durability
+							i(170628),	-- Springrain Idol of Durability
+							i(170631),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(170625),	-- Springrain Staff -- not granted with boost
+							i(170612),	-- Springrain Medallion
+						}),
+					}),
+					cl(HUNTER, {
+						cl(HUNTER, BEAST_MASTERY, {
+							i(170633),	-- Trailseeker Choker
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(170640),	-- Mountainsage Medallion
+						}),
+					}),
+					cl(MONK, {
+						cl(MONK, BREWMASTER, {
+							i(170647),	-- Mistdancer Amulet
+							i(170648),	-- Mistdancer Band of Stoicism
+							i(170649),	-- Mistdancer Ring of Stoicism
+							i(170652),	-- Mistdancer Defender Idol
+							i(170650),	-- Mistdancer Defender Stone
+						}),
+						cl(MONK, MISTWEAVER, {
+							i(170655),	-- Mistdancer Necklace
+						}),
+						cl(MONK, WINDWALKER, {
+							i(170662),	-- Mistdancer Choker
+						}),
+					}),
+					cl(PALADIN, {
+						cl(PALADIN, HOLY, {
+							i(170674),	-- Sunsoul Shield -- not granted with boost
+							i(170668),	-- Sunsoul Necklace
+						}),
+						cl(PALADIN, PROTECTION, {
+							i(170685),	-- Sunsoul Amulet
+						}),
+						cl(PALADIN, RETRIBUTION, {
+							i(170679),	-- Sunsoul Pendant
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, DISCIPLINE, {
+							i(170696),	-- Communal Necklace
+						}),
+						cl(PRIEST, SHADOW, {
+							i(170703),	-- Communal Stave
+							i(170865),	-- Communal Cowl
+							i(170690),	-- Communal Medallion
+							i(170868),	-- Communal Mantle
+							i(170702),	-- Communal Cloak of Destruction
+							i(170867),	-- Communal Robe
+							i(170870),	-- Communal Bindings
+							i(170864),	-- Communal Gloves
+							i(170869),	-- Communal Sash
+							i(170866),	-- Communal Pants
+							i(170863),	-- Communal Boots
+							i(170692),	-- Communal Band of Destruction
+							i(170693),	-- Communal Ring of Destruction
+							i(170691),	-- Communal Idol of Destruction
+							i(170694),	-- Communal Stone of Destruction
+						}),
+					}),
+					cl(ROGUE, {
+						cl(ROGUE, ASSASSINATION, {
+							i(170705),	-- Lightdrinker Choker
+						}),
+					}),
+					cl(SHAMAN, {
+						cl(SHAMAN, ELEMENTAL, {
+							i(170719),	-- Streamtalker Medallion
+						}),
+						cl(SHAMAN, ENHANCEMENT, {
+							i(170714),	-- Streamtalker Choker
+						}),
+						cl(SHAMAN, RESTORATION, {
+							i(170734),	-- Streamtalker Slicers -- not granted with boost
+							i(170735),	-- Streamtalker Shield -- not granted with boost
+							i(170728),	-- Streamtalker Necklace
+						}),
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(170736),	-- Felsoul Medallion
+						}),
+					}),
+					cl(WARRIOR, {
+						cl(WARRIOR, ARMS, {
+							i(170757),	-- Oathsworn Pendant
+						}),
+						cl(WARRIOR, PROTECTION, {
+							i(170922),	-- Oathsworn Faceguard
+							i(170748),	-- Oathsworn Amulet
+							i(170924),	-- Oathsworn Shoulderguards
+							i(170747),	-- Oathsworn Cloak of Stoicism
+							i(170919),	-- Oathsworn Chestguard
+							i(170926),	-- Oathsworn Armguards
+							i(170921),	-- Oathsworn Handguards
+							i(170925),	-- Oathsworn Waistband
+							i(170923),	-- Oathsworn Legguards
+							i(170920),	-- Oathsworn Greaves
+							i(170750),	-- Oathsworn Band of Stoicism
+							i(170751),	-- Oathsworn Ring of Stoicism
+							i(170749),	-- Oathsworn Defender Idol
+							i(170752),	-- Oathsworn Defender Stone
+						}),
+					}),
+				}),
+			})),
+
+			-- 8.3.0
+			tier(BFA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 8.3.0" } }, {
+				n(SEASON_CORRUPTED, {
+					filter(CLOTH, {
+						i(172718),	-- Corrupted Gladiator's Silk Armor (A)
+						i(172695),	-- Corrupted Gladiator's Silk Cap (A)
+						i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
+						i(172714),	-- Corrupted Gladiator's Silk Armor (H)
+						i(172690),	-- Corrupted Gladiator's Silk Cap (H)
+						i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
+					}),
+					filter(LEATHER, {
+						i(172721),	-- Corrupted Gladiator's Leather Harness (A)
+						i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
+						i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
+						i(172715),	-- Corrupted Gladiator's Leather Harness (H)
+						i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
+						i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
+					}),
+					filter(MAIL, {
+						i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
+						i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
+						i(172720),	-- Corrupted Gladiator's Chain Vest (A)
+						i(172716),	-- Corrupted Gladiator's Chain Vest (H)
+						i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
+						i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
+					}),
+					filter(PLATE, {
+						i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
+						i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
+						i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
+						i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
+						i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
+						i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
+					}),
+					n(BACK, {
+						i(172655),	-- Corrupted Gladiator's Shawl
+						i(172656),	-- Corrupted Gladiator's Greatcloak
+						i(172657),	-- Corrupted Gladiator's Drape
+						i(172658),	-- Corrupted Gladiator's Cape
+						i(172659),	-- Corrupted Gladiator's Shawl
+						i(172660),	-- Corrupted Gladiator's Greatcloak
+						i(172661),	-- Corrupted Gladiator's Drape
+						i(172662),	-- Corrupted Gladiator's Cape
+						i(172851),	-- Corrupted Aspirant's Greatcloak
+						i(172855),	-- Corrupted Aspirant's Greatcloak
+					}),
+				}),
+			})),
 		}),
 		tier(SL_TIER, {
+			-- 9.0.1
+			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, UNHOLY, {
+							i(177287),	-- Heart-Lesion Blade
+							i(177289),	-- Heart-Lesion Pendant
+							i(177288),	-- Heart-Lesion Cloak of Battle
+							i(177433),	-- Heart-Lesion Vambraces
+							i(177428),	-- Heart-Lesion Gauntlets
+							i(177432),	-- Heart-Lesion Girdle
+							i(177430),	-- Heart-Lesion Legplates
+							i(177427),	-- Heart-Lesion Sabatons
+							i(177291),	-- Heart-Lesion Band of Might
+							i(177290),	-- Heart-Lesion Ring of Might
+							i(177293),	-- Heart-Lesion Idol of Battle
+							i(177292),	-- Heart-Lesion Stone of Battle
+						}),
+						cl(DEATHKNIGHT, BLOOD, {
+							i(177295),	-- Heart-Lesion Amulet
+							i(177294),	-- Heart-Lesion Cloak of Stoicism
+							i(177440),	-- Heart-Lesion Armguards
+							i(177436),	-- Heart-Lesion Handguards
+							i(177439),	-- Heart-Lesion Waistband
+							i(177437),	-- Heart-Lesion Legguards
+							i(177435),	-- Heart-Lesion Greaves
+							i(177298),	-- Heart-Lesion Band of Stoicism
+							i(177297),	-- Heart-Lesion Ring of Stoicism
+							i(177296),	-- Heart-Lesion Defender Idol
+							i(177299),	-- Heart-Lesion Defender Stone
+						}),
+					}),
+					cl(DEMONHUNTER, {
+						cl(DEMONHUNTER, HAVOC, {
+							i(177581),	-- Illidari Warglaive
+							i(177579),	-- Illidari Chain
+							i(177580),	-- Illidari Drape
+							i(177572),	-- Illidari Bracers
+							i(177570),	-- Illidari Gloves
+							i(177574),	-- Illidari Belt
+							i(177568),	-- Illidari Leggings
+							i(177573),	-- Illidari Boots
+							i(177577),	-- Illidari Band
+							i(177578),	-- Illidari Ring
+							i(177576),	-- Charm of Demonic Fire
+							i(177575),	-- Demon Trophy
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, BALANCE, {
+							i(177306),	-- Springrain Stave
+							i(177321),	-- Springrain Choker
+							i(177319),	-- Springrain Cloak of Destruction
+							i(177448),	-- Springrain Bracers
+							i(177443),	-- Springrain Grips
+							i(177447),	-- Springrain Belt
+							i(177445),	-- Springrain Leggings
+							i(177442),	-- Springrain Treads
+							i(177309),	-- Springrain Band of Destruction
+							i(177310),	-- Springrain Ring of Destruction
+							i(177308),	-- Springrain Idol of Destruction
+							i(177311),	-- Springrain Stone of Destruction
+						}),
+						cl(DRUID, FERAL, {
+							i(177312),	-- Springrain Spear
+							i(177301),	-- Springrain Choker
+							i(177300),	-- Springrain Cloak of Rage
+							i(177456),	-- Springrain Cuffs
+							i(177451),	-- Springrain Handguards
+							i(177455),	-- Springrain Cord
+							i(177453),	-- Springrain Legguards
+							i(177450),	-- Springrain Footpads
+							i(177304),	-- Springrain Band of Onslaught
+							i(177303),	-- Springrain Ring of Onslaught
+							i(177302),	-- Springrain Idol of Rage
+							i(177305),	-- Springrain Stone of Rage
+						}),
+						cl(DRUID, GUARDIAN, {
+							i(177314),	-- Springrain Necklace
+							i(177320),	-- Springrain Cloak of Durability
+							i(177324),	-- Springrain Band of Durability
+							i(177323),	-- Springrain Ring of Durability
+							i(177322),	-- Springrain Idol of Durability
+							i(177325),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(177307),	-- Springrain Medallion
+							i(177313),	-- Springrain Cloak of Wisdom
+							i(177464),	-- Springrain Bindings
+							i(177459),	-- Springrain Gloves
+							i(177463),	-- Springrain Waistband
+							i(177461),	-- Springrain Britches
+							i(177458),	-- Springrain Boots
+							i(177316),	-- Springrain Band of Wisdom
+							i(177317),	-- Springrain Ring of Wisdom
+							i(177315),	-- Springrain Idol of Wisdom
+							i(177318),	-- Springrain Stone of Wisdom
+						}),
+					}),
+					cl(HUNTER, {
+						cl(HUNTER, BEAST_MASTERY, {
+							i(177332),	-- Trailseeker Shotgun
+							i(177333),	-- Trailseeker Spear
+							i(177327),	-- Trailseeker Choker
+							i(177326),	-- Trailseeker Cloak of Rage
+							i(177472),	-- Trailseeker Bracers
+							i(177467),	-- Trailseeker Gauntlets
+							i(177471),	-- Trailseeker Belt
+							i(177469),	-- Trailseeker Legguards
+							i(177466),	-- Trailseeker Greaves
+							i(177329),	-- Trailseeker Band of Onslaught
+							i(177330),	-- Trailseeker Ring of Onslaught
+							i(177328),	-- Trailseeker Idol of Rage
+							i(177331),	-- Trailseeker Stone of Rage
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(177340),	-- Mountainsage Staff
+							i(177334),	-- Mountainsage Medallion
+							i(177339),	-- Mountainsage Cloak of Destruction
+							i(177480),	-- Mountainsage Wristwraps
+							i(177474),	-- Mountainsage Handwraps
+							i(177479),	-- Mountainsage Cord
+							i(177476),	-- Mountainsage Leggings
+							i(177473),	-- Mountainsage Sandals
+							i(177336),	-- Mountainsage Band of Destruction
+							i(177337),	-- Mountainsage Ring of Destruction
+							i(177335),	-- Mountainsage Idol of Destruction
+							i(177338),	-- Mountainsage Stone of Destruction
+						}),
+					}),
+					cl(MONK, {
+						cl(MONK, BREWMASTER, {
+							i(177345),	-- Mistdancer Spire
+							i(177341),	-- Mistdancer Amulet
+							i(177342),	-- Mistdancer Band of Stoicism
+							i(177343),	-- Mistdancer Ring of Stoicism
+							i(177346),	-- Mistdancer Defender Idol
+							i(177344),	-- Mistdancer Defender Stone
+
+						}),
+						cl(MONK, MISTWEAVER, {
+							i(177353),	-- Mistdancer Staff
+							i(177349),	-- Mistdancer Necklace
+							i(177347),	-- Mistdancer Cloak of Wisdom
+							i(177495),	-- Mistdancer Bindings
+							i(177490),	-- Mistdancer Gloves
+							i(177494),	-- Mistdancer Waistband
+							i(177492),	-- Mistdancer Britches
+							i(177489),	-- Mistdancer Boots
+							i(177351),	-- Mistdancer Band of Wisdom
+							i(177350),	-- Mistdancer Ring of Wisdom
+							i(177348),	-- Mistdancer Idol of Wisdom
+							i(177352),	-- Mistdancer Stone of Wisdom
+						}),
+						cl(MONK, WINDWALKER, {
+							i(177354),	-- Mistdancer Sword
+							i(177356),	-- Mistdancer Choker
+							i(177360),	-- Mistdancer Cloak of Rage
+							i(177488),	-- Mistdancer Cuffs
+							i(177483),	-- Mistdancer Handguards
+							i(177487),	-- Mistdancer Cord
+							i(177485),	-- Mistdancer Legguards
+							i(177482),	-- Mistdancer Footpads
+							i(177357),	-- Mistdancer Band of Onslaught
+							i(177358),	-- Mistdancer Ring of Onslaught
+							i(177355),	-- Mistdancer Idol of Rage
+							i(177359),	-- Mistdancer Stone of Rage
+						}),
+					}),
+					cl(PALADIN, {
+						cl(PALADIN, HOLY, {
+							i(177367),	-- Sunsoul Scepter
+							i(180716),	-- Sunsoul Scepter
+							i(180717),	-- Sunsoul Shield
+							i(177362),	-- Sunsoul Necklace
+							i(177361),	-- Sunsoul Cloak of Wisdom
+							i(177512),	-- Sunsoul Armplates
+							i(177507),	-- Sunsoul Gloves
+							i(177511),	-- Sunsoul Belt
+							i(177509),	-- Sunsoul Leggings
+							i(177506),	-- Sunsoul Boots
+							i(177365),	-- Sunsoul Band of Wisdom
+							i(177364),	-- Sunsoul Ring of Wisdom
+							i(177363),	-- Sunsoul Idol of Wisdom
+							i(177366),	-- Sunsoul Stone of Wisdom
+						}),
+						cl(PALADIN, PROTECTION, {
+							i(177368),	-- Sunsoul Sword
+							i(177369),	-- Sunsoul Bulwark
+							i(177378),	-- Sunsoul Amulet
+							i(177377),	-- Sunsoul Cloak of Stoicism
+							i(177520),	-- Sunsoul Armguards
+							i(177515),	-- Sunsoul Handguards
+							i(177519),	-- Sunsoul Waistband
+							i(177517),	-- Sunsoul Legguards
+							i(177514),	-- Sunsoul Greaves
+							i(177381),	-- Sunsoul Band of Stoicism
+							i(177380),	-- Sunsoul Ring of Stoicism
+							i(177379),	-- Sunsoul Defender Idol
+							i(177382),	-- Sunsoul Defender Stone
+						}),
+						cl(PALADIN, RETRIBUTION, {
+							i(177370),	-- Sunsoul Warmaul
+							i(177372),	-- Sunsoul Pendant
+							i(177371),	-- Sunsoul Cloak of Battle
+							i(177504),	-- Sunsoul Vambraces
+							i(177499),	-- Sunsoul Gauntlets
+							i(177503),	-- Sunsoul Girdle
+							i(177501),	-- Sunsoul Legplates
+							i(177498),	-- Sunsoul Sabatons
+							i(177374),	-- Sunsoul Band of Might
+							i(177373),	-- Sunsoul Ring of Might
+							i(177376),	-- Sunsoul Idol of Battle
+							i(177375),	-- Sunsoul Stone of Battle
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, DISCIPLINE, {
+							i(177394),	-- Communal Staff
+							i(177383),	-- Communal Medallion
+							i(177388),	-- Communal Cloak of Wisdom
+							i(177528),	-- Communal Wristwraps
+							i(177522),	-- Communal Handwraps
+							i(177527),	-- Communal Cord
+							i(177524),	-- Communal Leggings
+							i(177521),	-- Communal Sandals
+							i(177391),	-- Communal Band of Wisdom
+							i(177392),	-- Communal Ring of Wisdom
+							i(177390),	-- Communal Idol of Wisdom
+							i(177393),	-- Communal Stone of Wisdom
+						}),
+						cl(PRIEST, SHADOW, {
+							i(177389),	-- Communal Necklace
+							i(177395),	-- Communal Cloak of Destruction
+							i(177534),	-- Communal Bindings
+							i(177530),	-- Communal Gloves
+							i(177533),	-- Communal Sash
+							i(177531),	-- Communal Pants
+							i(177529),	-- Communal Boots
+							i(177385),	-- Communal Band of Destruction
+							i(177386),	-- Communal Ring of Destruction
+							i(177384),	-- Communal Idol of Destruction
+							i(177387),	-- Communal Stone of Destruction
+						}),
+					}),
+					cl(ROGUE, {
+						cl(ROGUE, ASSASSINATION, {
+							i(177402),	-- Lightdrinker Dagger
+							i(177403),	-- Lightdrinker Shiv
+							i(177404),	-- Lightdrinker Sword
+							i(177397),	-- Lightdrinker Choker
+							i(177396),	-- Lightdrinker Cloak of Rage
+							i(177542),	-- Lightdrinker Bindings
+							i(177537),	-- Lightdrinker Gloves
+							i(177541),	-- Lightdrinker Waistband
+							i(177539),	-- Lightdrinker Britches
+							i(177536),	-- Lightdrinker Boots
+							i(177399),	-- Lightdrinker Band of Onslaught
+							i(177400),	-- Lightdrinker Ring of Onslaught
+							i(177398),	-- Lightdrinker Idol of Rage
+							i(177401),	-- Lightdrinker Stone of Rage
+						}),
+					}),
+					cl(SHAMAN, {
+						cl(SHAMAN, ELEMENTAL, {
+							i(177417),	-- Streamtalker Aegis
+							i(177416),	-- Streamtalker Claws
+							i(177411),	-- Streamtalker Medallion
+							i(177425),	-- Streamtalker Cloak of Destruction
+							i(177550),	-- Streamtalker Armbands
+							i(177545),	-- Streamtalker Gloves
+							i(177549),	-- Streamtalker Belt
+							i(177547),	-- Streamtalker Legwraps
+							i(177544),	-- Streamtalker Boots
+							i(177414),	-- Streamtalker Band of Destruction
+							i(177413),	-- Streamtalker Ring of Destruction
+							i(177412),	-- Streamtalker Idol of Destruction
+							i(177415),	-- Streamtalker Stone of Destruction
+						}),
+						cl(SHAMAN, ENHANCEMENT, {
+							i(177418),	-- Streamtalker Talons
+							i(177406),	-- Streamtalker Choker
+							i(177405),	-- Streamtalker Cloak of Rage
+							i(177558),	-- Streamtalker Armguard
+							i(177553),	-- Streamtalker Handguards
+							i(177557),	-- Streamtalker Waistguard
+							i(177555),	-- Streamtalker Legguards
+							i(177552),	-- Streamtalker Greaves
+							i(177408),	-- Streamtalker Band of Onslaught
+							i(177409),	-- Streamtalker Ring of Onslaught
+							i(177407),	-- Streamtalker Idol of Rage
+							i(177410),	-- Streamtalker Stone of Rage
+						}),
+						cl(SHAMAN, RESTORATION, {
+							i(177420),	-- Streamtalker Necklace
+							i(177419),	-- Streamtalker Cloak of Wisdom
+							i(177566),	-- Streamtalker Bracers
+							i(177561),	-- Streamtalker Grips
+							i(177565),	-- Streamtalker Girdle
+							i(177563),	-- Streamtalker Leggings
+							i(177560),	-- Streamtalker Sabatons
+							i(177423),	-- Streamtalker Band of Wisdom
+							i(177422),	-- Streamtalker Ring of Wisdom
+							i(177421),	-- Streamtalker Idol of Wisdom
+							i(177424),	-- Streamtalker Stone of Wisdom
+						}),
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(177589),	-- Felsoul Staff
+							i(177583),	-- Felsoul Medallion
+							i(177588),	-- Felsoul Cloak of Destruction
+							i(177613),	-- Felsoul Wristwraps
+							i(177607),	-- Felsoul Handwraps
+							i(177612),	-- Felsoul Cord
+							i(177609),	-- Felsoul Leggings
+							i(177606),	-- Felsoul Sandals
+							i(177585),	-- Felsoul Band of Destruction
+							i(177586),	-- Felsoul Ring of Destruction
+							i(177584),	-- Felsoul Idol of Destruction
+							i(177587),	-- Felsoul Stone of Destruction
+						}),
+					}),
+					cl(WARRIOR, {
+						cl(WARRIOR, ARMS, {
+							i(177590),	-- Oathsworn Greataxe
+							i(177591),	-- Oathsworn Headchopper
+							i(177604),	-- Oathsworn Pendant
+							i(177605),	-- Oathsworn Cloak of Battle
+							i(177621),	-- Oathsworn Vambraces
+							i(177616),	-- Oathsworn Gauntlets
+							i(177620),	-- Oathsworn Girdle
+							i(177618),	-- Oathsworn Legplates
+							i(177615),	-- Oathsworn Sabatons
+							i(177601),	-- Oathsworn Band of Might
+							i(177600),	-- Oathsworn Ring of Might
+							i(177602),	-- Oathsworn Idol of Battle
+							i(177603),	-- Oathsworn Stone of Battle
+						}),
+						cl(WARRIOR, PROTECTION, {
+							i(177592),	-- Oathsworn Axe
+							i(177593),	-- Oathsworn Bulwark
+							i(177595),	-- Oathsworn Amulet
+							i(177594),	-- Oathsworn Cloak of Stoicism
+							i(177628),	-- Oathsworn Armguards
+							i(177624),	-- Oathsworn Handguards
+							i(177627),	-- Oathsworn Waistband
+							i(177625),	-- Oathsworn Legguards
+							i(177623),	-- Oathsworn Greaves
+							i(177597),	-- Oathsworn Band of Stoicism
+							i(177598),	-- Oathsworn Ring of Stoicism
+							i(177596),	-- Oathsworn Defender Idol
+							i(177599),	-- Oathsworn Defender Stone
+						}),
+					}),
+				}),
+				m(EXILES_REACH, {
+					filter(CLOTH, {
+						i(175181),	-- Expeditionary Cloth Boots
+						i(175213),	-- Expeditionary Cloth Boots
+						i(174795),	-- Expeditionary Cloth Mantle
+					}),
+					filter(LEATHER, {
+						i(175183),	-- Expeditionary Leather Boots
+						i(175215),	-- Expeditionary Leather Boots
+						i(174796),	-- Expeditionary Leather Pauldrons
+					}),
+					filter(MAIL, {
+						i(175182),	-- Expeditionary Mail Sabatons
+						i(175214),	-- Expeditionary Mail Sabatons
+						i(174797),	-- Expeditionary Mail Shoulders
+					}),
+					filter(PLATE, {
+						i(174798),	-- Expeditionary Plate Shoulderguard
+						i(175180),	-- Expeditionary Plate Warboots
+						i(175212),	-- Expeditionary Plate Warboots
+					}),
+				}),
+				n(KYRIAN, {
+					filter(MAIL, {
+						i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head
+						i(179395),	-- 9.0 Covenant - Bastion - Mail - Base - Chest
+						i(179396),	-- 9.0 Covenant - Bastion - Mail - Base - Feet
+						i(179397),	-- 9.0 Covenant - Bastion - Mail - Base - Hands
+						i(179398),	-- 9.0 Covenant - Bastion - Mail - Base - Legs
+						i(179399),	-- 9.0 Covenant - Bastion - Mail - Base - Shoulders
+						i(179400),	-- 9.0 Covenant - Bastion - Mail - Base - Waist
+						i(179401),	-- 9.0 Covenant - Bastion - Mail - Base - Wrists
+					}),
+					filter(PLATE, {
+						i(177684),	-- 9.0 Covenant - Bastion - Plate - Head
+						i(177685),	-- 9.0 Covenant - Bastion - Plate - Chest
+						i(177686),	-- 9.0 Covenant - Bastion - Plate - Feet
+						i(177687),	-- 9.0 Covenant - Bastion - Plate - Hands
+						i(177688),	-- 9.0 Covenant - Bastion - Plate - Legs
+						i(177689),	-- 9.0 Covenant - Bastion - Plate - Shoulders
+						i(177690),	-- 9.0 Covenant - Bastion - Plate - Waist
+						i(177691),	-- 9.0 Covenant - Bastion - Plate - Wrists
+					}),
+					n(BACK, {
+						i(179402),	-- 9.0 Covenant - Bastion - Mail - Base - Cloak
+						i(177692),	-- 9.0 Covenant - Bastion - Plate - Base - Cloak
+					}),
+				}),
+				n(NIGHT_FAE, {
+					filter(CLOTH, {
+						i(179439),	-- 9.0 Covenant - Ardenweald - Cloth - Head
+						i(179440),	-- 9.0 Covenant - Ardenweald - Cloth - Chest
+						i(179441),	-- 9.0 Covenant - Ardenweald - Cloth - Feet
+						i(179442),	-- 9.0 Covenant - Ardenweald - Cloth - Hands
+						i(179443),	-- 9.0 Covenant - Ardenweald - Cloth - Legs
+						i(179444),	-- 9.0 Covenant - Ardenweald - Cloth - Shoulders
+						i(179445),	-- 9.0 Covenant - Ardenweald - Cloth - Waist
+						i(179446),	-- 9.0 Covenant - Ardenweald - Cloth - Wrists
+						i(179659),	-- Conservator's Silken Tunic
+						i(179660),	-- Winterborn Tunic
+					}),
+					filter(LEATHER, {
+						i(179430),	-- 9.0 Covenant - Ardenweald - Leather - Head
+						i(179431),	-- 9.0 Covenant - Ardenweald - Leather - Chest
+						i(179432),	-- 9.0 Covenant - Ardenweald - Leather - Feet
+						i(179433),	-- 9.0 Covenant - Ardenweald - Leather - Hands
+						i(179434),	-- 9.0 Covenant - Ardenweald - Leather - Legs
+						i(179435),	-- 9.0 Covenant - Ardenweald - Leather - Shoulders
+						i(179436),	-- 9.0 Covenant - Ardenweald - Leather - Waist
+						i(179437),	-- 9.0 Covenant - Ardenweald - Leather - Wrists
+						i(179775),	-- Conservator's Leather Tunic
+					}),
+					filter(MAIL, {
+						i(179448),	-- 9.0 Covenant - Ardenweald - Mail Head - D_01
+						i(179449),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_01
+						i(179450),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_01
+						i(179451),	-- 9.0 Covenant - Ardenweald - Mail Hands - D_01
+						i(179452),	-- 9.0 Covenant - Ardenweald - Mail Legs - D_01
+						i(179453),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_01
+						i(179454),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_01
+						i(179455),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_01
+						i(180570),	-- 9.0 Covenant - Ardenweald - Mail Head - D_02
+						i(180571),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_02
+						i(180572),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_02
+						i(180573),	-- 9.0 Covenant - Ardenweald - Mail Hands - D_02
+						i(180574),	-- 9.0 Covenant - Ardenweald - Mail Legs - D_02
+						i(180575),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_02
+						i(180576),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_02
+						i(180577),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_02
+					}),
+					filter(PLATE, {
+						i(173914),	-- 9.0 Covenant - Ardenweald - Plate Head
+						i(173915),	-- 9.0 Covenant - Ardenweald - Plate Chest
+						i(173916),	-- 9.0 Covenant - Ardenweald - Plate Feet
+						i(173917),	-- 9.0 Covenant - Ardenweald - Plate Hands
+						i(173918),	-- 9.0 Covenant - Ardenweald - Plate Legs
+						i(173919),	-- 9.0 Covenant - Ardenweald - Plate Shoulders
+						i(173920),	-- 9.0 Covenant - Ardenweald - Plate Waist
+						i(173921),	-- 9.0 Covenant - Ardenweald - Plate Wrists
+					}),
+					n(BACK, {
+						i(179621),	-- Ardenweald Covenant Mail Cloak
+						i(179630),	-- Ardenweald Covenant Mail Cloak
+						i(179631),	-- Ardenweald Covenant Mail Cloak
+						i(179632),	-- Ardenweald Covenant Mail Cloak
+						i(179447),	-- 9.0 Covenant - Ardenweald - Cloth - Cloak
+						i(179438),	-- 9.0 Covenant - Ardenweald - Leather - Cloak
+						i(179456),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_01
+						i(180578),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_02
+						i(173926),	-- 9.0 Covenant - Ardenweald - Plate Cloak
+					}),
+				}),
+				n(NECROLORD, {
+					filter(CLOTH, {
+						i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head
+						i(179413),	-- 9.0 Covenant - Maldraxxus - Cloth - Chest
+						i(179414),	-- 9.0 Covenant - Maldraxxus - Cloth - Feet
+						i(179415),	-- 9.0 Covenant - Maldraxxus - Cloth - Hands
+						i(179416),	-- 9.0 Covenant - Maldraxxus - Cloth - Legs
+						i(179417),	-- 9.0 Covenant - Maldraxxus - Cloth - Shoulders
+						i(179418),	-- 9.0 Covenant - Maldraxxus - Cloth - Waist
+						i(179419),	-- 9.0 Covenant - Maldraxxus - Cloth - Wrists
+					}),
+					filter(LEATHER, {
+						i(179403),	-- 9.0 Covenant - Maldraxxus - Leather - Head
+						i(179404),	-- 9.0 Covenant - Maldraxxus - Leather - Chest
+						i(179405),	-- 9.0 Covenant - Maldraxxus - Leather - Feet
+						i(179406),	-- 9.0 Covenant - Maldraxxus - Leather - Hands
+						i(179407),	-- 9.0 Covenant - Maldraxxus - Leather - Legs
+						i(179408),	-- 9.0 Covenant - Maldraxxus - Leather - Shoulders
+						i(179409),	-- 9.0 Covenant - Maldraxxus - Leather - Waist
+						i(179410),	-- 9.0 Covenant - Maldraxxus - Leather - Wrists
+					}),
+					filter(MAIL, {
+						i(179421),	-- 9.0 Covenant - Maldraxxus - Mail Head
+						i(179422),	-- 9.0 Covenant - Maldraxxus - Mail Chest
+						i(179423),	-- 9.0 Covenant - Maldraxxus - Mail Feet
+						i(179424),	-- 9.0 Covenant - Maldraxxus - Mail Hands
+						i(179425),	-- 9.0 Covenant - Maldraxxus - Mail Legs
+						i(179426),	-- 9.0 Covenant - Maldraxxus - Mail Shoulders
+						i(179427),	-- 9.0 Covenant - Maldraxxus - Mail Waist
+						i(179428),	-- 9.0 Covenant - Maldraxxus - Mail Wrists
+					}),
+					filter(PLATE, {
+						i(174185),	-- 9.0 Covenant - Maldraxxus - Plate Head
+						i(174186),	-- 9.0 Covenant - Maldraxxus - Plate Chest
+						i(174187),	-- 9.0 Covenant - Maldraxxus - Plate Feet
+						i(174188),	-- 9.0 Covenant - Maldraxxus - Plate Hands
+						i(174189),	-- 9.0 Covenant - Maldraxxus - Plate Legs
+						i(174190),	-- 9.0 Covenant - Maldraxxus - Plate Shoulders
+						i(174191),	-- 9.0 Covenant - Maldraxxus - Plate Waist
+						i(174192),	-- 9.0 Covenant - Maldraxxus - Plate Wrists
+					}),
+					n(BACK, {
+						i(179420),	-- 9.0 Covenant - Maldraxxus - Cloth - Cloak
+						i(179411),	-- 9.0 Covenant - Maldraxxus - Leather - Cloak
+						i(179429),	-- 9.0 Covenant - Maldraxxus - Mail Cloak
+						i(174193),	-- 9.0 Covenant - Maldraxxus - Plate Cloak
+					}),
+				}),
+				n(SEASON_CORRUPTED, {
+					n(TRINKET, {
+						i(184055),	-- Corrupted Gladiator's Medallion
+						i(184056),	-- Corrupted Gladiator's Relentless Brooch
+						i(184057),	-- Corrupted Gladiator's Sigil of Adaptation
+					}),
+				}),
+				inst(786, {	-- The Nighthold
+					cl(DEATHKNIGHT, {
+						i(180553),	-- Dreadwake Bonecage
+						i(180554),	-- Dreadwake Legplates
+						i(180555),	-- Dreadwake Pauldrons
+					}),
+					cl(DEMONHUNTER, {
+						i(180615),	-- Tunic of Second Sight
+						i(180616),	-- Legwraps of Second Sight
+						i(180617),	-- Shoulderguards of Second Sight
+					}),
+					cl(MONK, {
+						i(180562),	-- Tunic of Enveloped Dissonance
+						i(180563),	-- Leggings of Enveloped Dissonance
+						i(180564),	-- Pauldrons of Enveloped
+					}),
+					cl(PALADIN, {
+						i(180535),	-- Breastplate of the Highlord
+						i(180540),	-- Light's Vanguard Breastplate
+						i(180541),	-- Light's Vanguard Legplates
+						i(180542),	-- Light's Vanguard Shoulderplates
+					}),
+					cl(ROGUE, {
+						i(180556),	-- Doomblade Tunic
+						i(180557),	-- Doomblade Pants
+						i(180558),	-- Doomblade Spaulders
+					}),
+				}),
+				n(VENTHYR, {
+					filter(CLOTH, {
+						i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head
+						i(179467),	-- 9.0 Covenant - Revendreth - Cloth - Chest
+						i(179468),	-- 9.0 Covenant - Revendreth - Cloth - Feet
+						i(179469),	-- 9.0 Covenant - Revendreth - Cloth - Hands
+						i(179470),	-- 9.0 Covenant - Revendreth - Cloth - Legs
+						i(179471),	-- 9.0 Covenant - Revendreth - Cloth - Shoulders
+						i(179472),	-- 9.0 Covenant - Revendreth - Cloth - Waist
+						i(179473),	-- 9.0 Covenant - Revendreth - Cloth - Wrists
+					}),
+					filter(LEATHER, {
+						i(179457),	-- 9.0 Covenant - Revendreth - Leather - Head
+						i(179458),	-- 9.0 Covenant - Revendreth - Leather - Chest
+						i(179459),	-- 9.0 Covenant - Revendreth - Leather - Feet
+						i(179460),	-- 9.0 Covenant - Revendreth - Leather - Hands
+						i(179461),	-- 9.0 Covenant - Revendreth - Leather - Legs
+						i(179462),	-- 9.0 Covenant - Revendreth - Leather - Shoulders
+						i(179463),	-- 9.0 Covenant - Revendreth - Leather - Waist
+						i(179464),	-- 9.0 Covenant - Revendreth - Leather - Wrists
+					}),
+					filter(MAIL, {
+						i(179475),	-- 9.0 Covenant - Revendreth - Mail Head
+						i(179476),	-- 9.0 Covenant - Revendreth - Mail Chest
+						i(179477),	-- 9.0 Covenant - Revendreth - Mail Feet
+						i(179478),	-- 9.0 Covenant - Revendreth - Mail Hands
+						i(179479),	-- 9.0 Covenant - Revendreth - Mail Legs
+						i(179480),	-- 9.0 Covenant - Revendreth - Mail Shoulders
+						i(179481),	-- 9.0 Covenant - Revendreth - Mail Waist
+						i(179482),	-- 9.0 Covenant - Revendreth - Mail Wrists
+					}),
+					filter(PLATE, {
+						i(174198),	-- 9.0 Covenant - Revendreth - Plate Head
+						i(174199),	-- 9.0 Covenant - Revendreth - Plate Chest
+						i(174200),	-- 9.0 Covenant - Revendreth - Plate Feet
+						i(174201),	-- 9.0 Covenant - Revendreth - Plate Hands
+						i(174202),	-- 9.0 Covenant - Revendreth - Plate Legs
+						i(174203),	-- 9.0 Covenant - Revendreth - Plate Shoulders
+						i(174204),	-- 9.0 Covenant - Revendreth - Plate Waist
+						i(174205),	-- 9.0 Covenant - Revendreth - Plate Wrists
+					}),
+					n(BACK, {
+						i(181812),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 1 - Red
+						i(181813),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 2 - Black
+						i(181814),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 3 - Red
+						i(179474),	-- 9.0 Covenant - Revendreth - Cloth - Cloak
+						i(179465),	-- 9.0 Covenant - Revendreth - Leather - Cloak
+						i(179483),	-- 9.0 Covenant - Revendreth - Mail Cloak
+						i(174206),	-- 9.0 Covenant - Revendreth - Plate Cloak
+					}),
+				}),
+				n(WAR_EFFORT, {
+					n(WARFRONT_BATTLE_FOR_STROMGARDE, {
+						filter(CLOTH, {
+							i(174025),	-- 7th Legionnaire's Garb
+							i(174026),	-- 7th Legionnaire's Footcover
+							i(174031),	-- Honorbound Artificer's Toeslips
+							i(174032),	-- Honorbound Artificer's Pantaloons
+							i(174033),	-- Honorbound Artificer's Wristwraps
+						}),
+						filter(LEATHER, {
+							i(174027),	-- 7th Legionnaire's Gloves
+							i(174028),	-- 7th Legionnaire's Vambraces
+							i(174034),	-- Honorbound Outrider's Wristcover
+							i(174035),	-- Honorbound Outrider's Chestcover
+							i(177092),	-- 7th Legionnaire's Legwraps
+							i(177094),	-- 7th Legionnaire's Cuffs
+							i(177095),	-- Honorbound Artificer's Sandals
+							i(177096),	-- Honorbound Artificer's Legwraps
+							i(177098),	-- Honorbound Artificer's Cuffs
+							i(177104),	-- Honorbound Artificer's Mitts
+							i(177097),	-- Honorbound Outrider's Pants
+							i(177101),	-- Honorbound Outrider's Bracers
+							i(177105),	-- Honorbound Outrider's Gloves
+							i(177106),	-- Honorbound Outrider's Boots
+						}),
+						filter(MAIL, {
+							i(174029),	-- 7th Legionnaire's Wristbangles
+							i(174030),	-- 7th Legionnaire's Britches
+							i(174036),	-- Honorbound Vanguard's Bracers
+							i(177159),	-- Honorbound Vanguard's Chainmail
+							i(177160),	-- 7th Legionnaire's Chainmail
+							i(177093),	-- 7th Legionnaire's Leggings
+							i(177100),	-- Honorbound Vanguard's Bindings
+							i(177107),	-- Honorbound Vanguard's Leggings
+							i(177108),	-- Honorbound Vanguard's Handguards
+							i(177109),	-- Honorbound Vanguard's Sabatons
+						}),
+						filter(PLATE, {
+							i(174037),	-- Honorbound Centurion's Wristplates
+							i(177099),	-- Honorbound Centurion's Vambraces
+							i(177102),	-- 7th Legionnaire's Legguards
+							i(177103),	-- 7th Legionnaire's Greaves
+							i(177110),	-- Honorbound Centurion's Legplates
+							i(177111),	-- Honorbound Centurion's Gauntlets
+							i(177112),	-- Honorbound Centurion's Greaves
+						}),
+					}),
+				}),
+			})),
+
+			-- 9.1.5
+			tier(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
+				n(-10048, {	-- Mage Tower
+					cl(MAGE, {	-- Regalia of the Arcane Tempest set
+						i(188643),	-- Raiment of the Arcane Tempest
+					}),
+				}),
+			})),
+
 			-- 9.2.0
 			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 				header(HEADERS.LFGDungeon, 2288, {	-- Sepulcher of the First Ones
@@ -1351,7 +3907,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1485,7 +4041,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1619,7 +4175,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1753,7 +4309,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1887,7 +4443,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1957,6 +4513,46 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				cl(EVOKER, {
+					i(187651),	-- Evoker Tunic
+					i(187652),	-- Evoker Boots
+					i(187653),	-- Evoker Gloves
+					i(187654),	-- Evoker Coif
+					i(187655),	-- Evoker Legwraps
+					i(187656),	-- Evoker Pauldrons
+					i(187657),	-- Evoker Belt
+					i(187658),	-- Evoker Armbands
+					i(187650),	-- Staff of Draconic Energies
+					--
+					i(194522),	-- Blue Winglord's Staff
+					i(194523),	-- Blue Winglord's Chain
+					i(194524),	-- Blue Winglord's Boots
+					i(194525),	-- Blue Winglord's Bracers
+					i(194526),	-- Blue Winglord's Hauberk
+					i(194527),	-- Blue Winglord's Grips
+					i(194528),	-- Blue Winglord's Coif
+					i(194529),	-- Blue Winglord's Greaves
+					i(194530),	-- Blue Winglord's Shoulders
+					i(194531),	-- Claw-Carved Figurine
+					i(194532),	-- Blue Winglord's Insignia
+					i(194533),	-- Blue Winglord's Ring
+					i(194534),	-- Blue Winglord's Loop
+					i(194535),	-- Cobalt Winglord's Cloak
+					i(194536),	-- Blue Winglord's Amulet
+					--
+					i(188818),	-- Emerald Winglord's Shoulderss
+					i(188825),	-- Emerald Winglord's Chain
+					i(188826),	-- Emerald Winglord's Staff
+					--
+					i(191821),	-- Obsidian Dracthyr Battlegear Hauberk
+					i(191822),	-- Obsidian Dracthyr Battlegear Grips
+					i(191823),	-- Obsidian Dracthyr Battlegear Helm
+					i(191824),	-- Obsidian Dracthyr Battlegear Leggings
+					i(191825),	-- Obsidian Dracthyr Battlegear Monnion
+					i(191826),	-- Obsidian Dracthyr Battlegear Belt
+					i(191827),	-- Obsidian Dracthyr Battlegear Bracers
+					i(191828),	-- Obsidian Dracthyr Battlegear Cover
+				}),
 				-- Green Dragon Set
 
 				-- Verdant Wing [Cloth]
@@ -2763,6 +5359,7 @@ root(ROOTS.NeverImplemented, {
 							i(203564),	-- Stormwing Harrier's Skullmask
 						}),
 						cl(MAGE, {
+							i(201478),	-- Crimson Gladiator's Silk Hood
 							i(203593),	-- Crystal Scholar's Beacons
 							i(203591),	-- Crystal Scholar's Cowl
 						}),
@@ -2816,6 +5413,7 @@ root(ROOTS.NeverImplemented, {
 							i(203564),	-- Stormwing Harrier's Skullmask
 						}),
 						cl(MAGE, {
+							i(201478),	-- Crimson Gladiator's Silk Hood
 							i(203593),	-- Crystal Scholar's Beacons
 							i(203591),	-- Crystal Scholar's Cowl
 						}),
@@ -3059,14 +5657,6 @@ root(ROOTS.NeverImplemented, {
 							i(203503),	-- Peaks of the Walking Mountain
 						}),
 					})),
-					-- Extra
-					i(194711),	--
-					i(201478, {	-- Crimson Gladiator's Silk Hood
-						["bonusID"] = 6894,
-					}),
-					i(201478, {	-- Crimson Gladiator's Silk Hood
-						["bonusID"] = 6895,
-					}),
 				}),
 			})),
 
@@ -3086,7 +5676,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3188,7 +5778,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3290,7 +5880,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3392,7 +5982,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3473,7 +6063,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 					})),
 				}),
-				n(PVP, {
+				header(HEADERS.Achievement, SEASON_OBSIDIAN, {
 					-- [High Item]
 					n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {
 						cl(DEATHKNIGHT, {
@@ -3488,7 +6078,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3568,456 +6158,9 @@ root(ROOTS.NeverImplemented, {
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					-- [Low Item]
-					n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {
-						cl(DEATHKNIGHT, {
-							i(202461),	-- Lingering Phantom's Dreadhorns
-							i(202462),	-- Lingering Phantom's Gauntlets
-							i(202464),	-- Lingering Phantom's Plackart
-							i(202460),	-- Lingering Phantom's Schynbalds
-							i(202459),	-- Lingering Phantom's Shoulderplates
-						}),
-						cl(DEMONHUNTER, {
-							i(202525),	-- Kinslayer's Bloodstained Grips
-							i(202524),	-- Kinslayer's Hood
-							i(202523),	-- Kinslayer's Legguards
-							i(202522),	-- Kinslayer's Tainted Spaulders
-							i(202527),	-- Kinslayer's Vest
-						}),
-						cl(DRUID, {
-							i(202515),	-- Bough of the Autumn Blaze
-							i(202518),	-- Chestroots of the Autumn Blaze
-							i(202516),	-- Handguards of the Autumn Blaze
-							i(202513),	-- Mantle of the Autumn Blaze
-							i(202514),	-- Pants of the Autumn Blaze
-						}),
-						cl(EVOKER, {
-							i(202487),	-- Chausses of Obsidian Secrets
-							i(202489),	-- Claws of Obsidian Secrets
-							i(202488),	-- Crown of Obsidian Secrets
-							i(202491),	-- Hauberk of Obsidian Secrets
-							i(202486),	-- Wingspan of Obsidian Secrets
-						}),
-						cl(HUNTER, {
-							i(202479),	-- Ashen Predator's Faceguard
-							i(202478),	-- Ashen Predator's Poleyns
-							i(202480),	-- Ashen Predator's Skinners
-							i(202482),	-- Ashen Predator's Sling Vest
-							i(202477),	-- Ashen Predator's Trophy
-						}),
-						cl(MAGE, {
-							i(202551),	-- Underlight Conjurer's Arcanocowl
-							i(202549),	-- Underlight Conjurer's Aurora
-							i(202552),	-- Underlight Conjurer's Gloves
-							i(202550),	-- Underlight Conjurer's Trousers
-							i(202554),	-- Underlight Conjurer's Vestment
-						}),
-						cl(MONK, {
-							i(202506),	-- Cover of the Vermillion Forge
-							i(202509),	-- Cuirass of the Vermillion Forge
-							i(202507),	-- Fists of the Vermillion Forge
-							i(202505),	-- Pantaloons of the Vermillion Forge
-							i(202504),	-- Spines of the Vermillion Forge
-						}),
-						cl(PALADIN, {
-							i(202455),	-- Heartfire Sentinel's Brigandine
-							i(202451),	-- Heartfire Sentinel's Faulds
-							i(202452),	-- Heartfire Sentinel's Forgehelm
-							i(202453),	-- Heartfire Sentinel's Protectors
-							i(202450),	-- Heartfire Sentinel's Steelwings
-						}),
-						cl(PRIEST, {
-							i(202541),	-- Breeches of the Furnace Seraph
-							i(202545),	-- Command of the Furnace Seraph
-							i(202540),	-- Devotion of the Furnace Seraph
-							i(202543),	-- Grasp of the Furnace Seraph
-							i(202542),	-- Mask of the Furnace Seraph
-						}),
-						cl(ROGUE, {
-							i(202500),	-- Lurking Specter's Brigandine
-							i(202498),	-- Lurking Specter's Handgrips
-							i(202495),	-- Lurking Specter's Shoulderblades
-							i(202496),	-- Lurking Specter's Tights
-							i(202497),	-- Lurking Specter's Visage
-						}),
-						cl(SHAMAN, {
-							i(202473),	-- Adornments of the Cinderwolf
-							i(202469),	-- Braies of the Cinderwolf
-							i(202471),	-- Knuckles of the Cinderwolf
-							i(202470),	-- Spangenhelm of the Cinderwolf
-							i(202468),	-- Thunderpads of the Cinderwolf
-						}),
-						cl(WARLOCK, {
-							i(202531),	-- Amice of the Sinister Savant
-							i(202536),	-- Cursed Robes of the Sinister Savant
-							i(202533),	-- Grimhorns of the Sinister Savant
-							i(202534),	-- Grips of the Sinister Savant
-							i(202532),	-- Leggings of the Sinister Savant
-						}),
-						cl(WARRIOR, {
-							i(202446),	-- Battlechest of the Onyx Crucible
-							i(202444),	-- Handguards of the Onyx Crucible
-							i(202442),	-- Legplates of the Onyx Crucible
-							i(202441),	-- Pauldrons of the Onyx Crucible
-							i(202443),	-- Thraexhelm of the Onyx Crucible
-						}),
-					})),
-					-- [Low Item]
-					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
-						cl(DEATHKNIGHT, {
-							i(202461),	-- Lingering Phantom's Dreadhorns
-							i(202462),	-- Lingering Phantom's Gauntlets
-							i(202464),	-- Lingering Phantom's Plackart
-							i(202460),	-- Lingering Phantom's Schynbalds
-							i(202459),	-- Lingering Phantom's Shoulderplates
-						}),
-						cl(DEMONHUNTER, {
-							i(202525),	-- Kinslayer's Bloodstained Grips
-							i(202524),	-- Kinslayer's Hood
-							i(202523),	-- Kinslayer's Legguards
-							i(202522),	-- Kinslayer's Tainted Spaulders
-							i(202527),	-- Kinslayer's Vest
-						}),
-						cl(DRUID, {
-							i(202515),	-- Bough of the Autumn Blaze
-							i(202518),	-- Chestroots of the Autumn Blaze
-							i(202516),	-- Handguards of the Autumn Blaze
-							i(202513),	-- Mantle of the Autumn Blaze
-							i(202514),	-- Pants of the Autumn Blaze
-						}),
-						cl(EVOKER, {
-							i(202487),	-- Chausses of Obsidian Secrets
-							i(202489),	-- Claws of Obsidian Secrets
-							i(202488),	-- Crown of Obsidian Secrets
-							i(202491),	-- Hauberk of Obsidian Secrets
-							i(202486),	-- Wingspan of Obsidian Secrets
-						}),
-						cl(HUNTER, {
-							i(202479),	-- Ashen Predator's Faceguard
-							i(202478),	-- Ashen Predator's Poleyns
-							i(202480),	-- Ashen Predator's Skinners
-							i(202482),	-- Ashen Predator's Sling Vest
-							i(202477),	-- Ashen Predator's Trophy
-						}),
-						cl(MAGE, {
-							i(202551),	-- Underlight Conjurer's Arcanocowl
-							i(202549),	-- Underlight Conjurer's Aurora
-							i(202552),	-- Underlight Conjurer's Gloves
-							i(202550),	-- Underlight Conjurer's Trousers
-							i(202554),	-- Underlight Conjurer's Vestment
-						}),
-						cl(MONK, {
-							i(202506),	-- Cover of the Vermillion Forge
-							i(202509),	-- Cuirass of the Vermillion Forge
-							i(202507),	-- Fists of the Vermillion Forge
-							i(202505),	-- Pantaloons of the Vermillion Forge
-							i(202504),	-- Spines of the Vermillion Forge
-						}),
-						cl(PALADIN, {
-							i(202455),	-- Heartfire Sentinel's Brigandine
-							i(202451),	-- Heartfire Sentinel's Faulds
-							i(202452),	-- Heartfire Sentinel's Forgehelm
-							i(202453),	-- Heartfire Sentinel's Protectors
-							i(202450),	-- Heartfire Sentinel's Steelwings
-						}),
-						cl(PRIEST, {
-							i(202541),	-- Breeches of the Furnace Seraph
-							i(202545),	-- Command of the Furnace Seraph
-							i(202540),	-- Devotion of the Furnace Seraph
-							i(202543),	-- Grasp of the Furnace Seraph
-							i(202542),	-- Mask of the Furnace Seraph
-						}),
-						cl(ROGUE, {
-							i(202500),	-- Lurking Specter's Brigandine
-							i(202498),	-- Lurking Specter's Handgrips
-							i(202495),	-- Lurking Specter's Shoulderblades
-							i(202496),	-- Lurking Specter's Tights
-							i(202497),	-- Lurking Specter's Visage
-						}),
-						cl(SHAMAN, {
-							i(202473),	-- Adornments of the Cinderwolf
-							i(202469),	-- Braies of the Cinderwolf
-							i(202471),	-- Knuckles of the Cinderwolf
-							i(202470),	-- Spangenhelm of the Cinderwolf
-							i(202468),	-- Thunderpads of the Cinderwolf
-						}),
-						cl(WARLOCK, {
-							i(202531),	-- Amice of the Sinister Savant
-							i(202536),	-- Cursed Robes of the Sinister Savant
-							i(202533),	-- Grimhorns of the Sinister Savant
-							i(202534),	-- Grips of the Sinister Savant
-							i(202532),	-- Leggings of the Sinister Savant
-						}),
-						cl(WARRIOR, {
-							i(202446),	-- Battlechest of the Onyx Crucible
-							i(202444),	-- Handguards of the Onyx Crucible
-							i(202442),	-- Legplates of the Onyx Crucible
-							i(202441),	-- Pauldrons of the Onyx Crucible
-							i(202443),	-- Thraexhelm of the Onyx Crucible
-						}),
-					})),
-				}),
-				--[[
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 451 }, {
-					cl(DEATHKNIGHT, {
-						i(202461),	-- Lingering Phantom's Dreadhorns
-						i(202462),	-- Lingering Phantom's Gauntlets
-						i(202464),	-- Lingering Phantom's Plackart
-						i(202460),	-- Lingering Phantom's Schynbalds
-						i(202459),	-- Lingering Phantom's Shoulderplates
-					}),
-					cl(DEMONHUNTER, {
-						i(202525),	-- Kinslayer's Bloodstained Grips
-						i(202524),	-- Kinslayer's Hood
-						i(202523),	-- Kinslayer's Legguards
-						i(202522),	-- Kinslayer's Tainted Spaulders
-						i(202527),	-- Kinslayer's Vest
-					}),
-					cl(DRUID, {
-						i(202515),	-- Bough of the Autumn Blaze
-						i(202518),	-- Chestroots of the Autumn Blaze
-						i(202516),	-- Handguards of the Autumn Blaze
-						i(202513),	-- Mantle of the Autumn Blaze
-						i(202514),	-- Pants of the Autumn Blaze
-					}),
-					cl(EVOKER, {
-						i(202487),	-- Chausses of Obsidian Secrets
-						i(202489),	-- Claws of Obsidian Secrets
-						i(202488),	-- Crown of Obsidian Secrets
-						i(202491),	-- Hauberk of Obsidian Secrets
-						i(202486),	-- Wingspan of Obsidian Secrets
-					}),
-					cl(HUNTER, {
-						i(202479),	-- Ashen Predator's Faceguard
-						i(202478),	-- Ashen Predator's Poleyns
-						i(202480),	-- Ashen Predator's Skinners
-						i(202482),	-- Ashen Predator's Sling Vest
-						i(202477),	-- Ashen Predator's Trophy
-					}),
-					cl(MAGE, {
-						i(202551),	-- Underlight Conjurer's Arcanocowl
-						i(202549),	-- Underlight Conjurer's Aurora
-						i(202552),	-- Underlight Conjurer's Gloves
-						i(202550),	-- Underlight Conjurer's Trousers
-						i(202554),	-- Underlight Conjurer's Vestment
-					}),
-					cl(MONK, {
-						i(202506),	-- Cover of the Vermillion Forge
-						i(202509),	-- Cuirass of the Vermillion Forge
-						i(202507),	-- Fists of the Vermillion Forge
-						i(202505),	-- Pantaloons of the Vermillion Forge
-						i(202504),	-- Spines of the Vermillion Forge
-					}),
-					cl(PALADIN, {
-						i(202455),	-- Heartfire Sentinel's Brigandine
-						i(202451),	-- Heartfire Sentinel's Faulds
-						i(202452),	-- Heartfire Sentinel's Forgehelm
-						i(202453),	-- Heartfire Sentinel's Protectors
-						i(202450),	-- Heartfire Sentinel's Steelwings
-					}),
-					cl(PRIEST, {
-						i(202541),	-- Breeches of the Furnace Seraph
-						i(202545),	-- Command of the Furnace Seraph
-						i(202540),	-- Devotion of the Furnace Seraph
-						i(202543),	-- Grasp of the Furnace Seraph
-						i(202542),	-- Mask of the Furnace Seraph
-					}),
-					cl(ROGUE, {
-						i(202500),	-- Lurking Specter's Brigandine
-						i(202498),	-- Lurking Specter's Handgrips
-						i(202495),	-- Lurking Specter's Shoulderblades
-						i(202496),	-- Lurking Specter's Tights
-						i(202497),	-- Lurking Specter's Visage
-					}),
-					cl(SHAMAN, {
-						i(202473),	-- Adornments of the Cinderwolf
-						i(202469),	-- Braies of the Cinderwolf
-						i(202471),	-- Knuckles of the Cinderwolf
-						i(202470),	-- Spangenhelm of the Cinderwolf
-						i(202468),	-- Thunderpads of the Cinderwolf
-					}),
-					cl(WARLOCK, {
-						i(202531),	-- Amice of the Sinister Savant
-						i(202536),	-- Cursed Robes of the Sinister Savant
-						i(202533),	-- Grimhorns of the Sinister Savant
-						i(202534),	-- Grips of the Sinister Savant
-						i(202532),	-- Leggings of the Sinister Savant
-					}),
-					cl(WARRIOR, {
-						i(202446),	-- Battlechest of the Onyx Crucible
-						i(202444),	-- Handguards of the Onyx Crucible
-						i(202442),	-- Legplates of the Onyx Crucible
-						i(202441),	-- Pauldrons of the Onyx Crucible
-						i(202443),	-- Thraexhelm of the Onyx Crucible
-					}),
-				})),
-				--]]
-				o(382621, {	-- Revival Catalyst Console
-					-- [Low Item]
-					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 7479 }, {
-						cl(DEATHKNIGHT, {
-							i(202458),	-- Lingering Phantom's Deathlink
-							i(202456),	-- Lingering Phantom's Drape
-							i(202463),	-- Lingering Phantom's Stompers
-							i(202457),	-- Lingering Phantom's Vambraces
-						}),
-						cl(DEMONHUNTER, {
-							i(202520),	-- Kinslayer's Bindings
-							i(202526),	-- Kinslayer's Gaiters
-							i(202521),	-- Kinslayer's Sash
-							i(202519),	-- Kinslayer's Shawl
-						}),
-						cl(DRUID, {
-							i(202511),	-- Bands of the Autumn Blaze
-							i(202510),	-- Foliage of the Autumn Blaze
-							i(202512),	-- Garland of the Autumn Blaze
-							i(202517),	-- Hooves of the Autumn Blaze
-						}),
-						cl(EVOKER, {
-							i(202483),	-- Crest of Obsidian Secrets
-							i(202490),	-- Greatboots of Obsidian Secrets
-							i(202485),	-- Lasso of Obsidian Secrets
-							i(202484),	-- Scalebands of Obsidian Secrets
-						}),
-						cl(HUNTER, {
-							i(202481),	-- Ashen Predator's Chasers
-							i(202474),	-- Ashen Predator's Cloak
-							i(202475),	-- Ashen Predator's Skinwraps
-							i(202476),	-- Ashen Predator's Strap
-						}),
-						cl(MAGE, {
-							i(202547),	-- Underlight Conjurer's Bracelets
-							i(202546),	-- Underlight Conjurer's Cape
-							i(202548),	-- Underlight Conjurer's Charmbelt
-							i(202553),	-- Underlight Conjurer's Treads
-						}),
-						cl(MONK, {
-							i(202501),	-- Drape of the Vermillion Forge
-							i(202503),	-- Blackbelt of the Vermillion Forge
-							i(202502),	-- Coils of the Vermillion Forge
-							i(202508),	-- Footpads of the Vermillion Forge
-						}),
-						cl(PALADIN, {
-							i(202448),	-- Heartfire Sentinel's Blessed Bindings
-							i(202454),	-- Heartfire Sentinel's Greatboots
-							i(202447),	-- Heartfire Sentinel's Pelerine
-							i(202449),	-- Heartfire Sentinel's Waistguard
-						}),
-						cl(PRIEST, {
-							i(202538),	-- Cuffs of the Furnace Seraph
-							i(202544),	-- Sabatons of the Furnace Seraph
-							i(202539),	-- Sash of the Furnace Seraph
-							i(202537),	-- Shroud of the Furnace Seraph
-						}),
-						cl(ROGUE, {
-							i(202493),	-- Lurking Specter's Armwraps
-							i(202492),	-- Lurking Specter's Capelet
-							i(202494),	-- Lurking Specter's Edgeband
-							i(202499),	-- Lurking Specter's Tabi
-						}),
-						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
-							i(202465),	-- Pelisse of the Cinderwolf
-							i(202466),	-- Runebraces of the Cinderwolf
-							i(202472),	-- Sollerets of the Cinderwolf
-						}),
-						cl(WARLOCK, {
-							i(202535),	-- Sandals of the Sinister Savant
-							i(202528),	-- Shawl of the Sinister Savant
-							i(202530),	-- Skullstrap of the Sinister Savant
-							i(202529),	-- Wristwraps of the Sinister Savant
-						}),
-						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
-							i(202445),	-- Ironstriders of the Onyx Crucible
-							i(202438),	-- Manteau of the Onyx Crucible
-							i(202439),	-- Warbands of the Onyx Crucible
-						}),
-					})),
-					-- [Low Item]
-					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
-						cl(DEATHKNIGHT, {
-							i(202458),	-- Lingering Phantom's Deathlink
-							i(202456),	-- Lingering Phantom's Drape
-							i(202463),	-- Lingering Phantom's Stompers
-							i(202457),	-- Lingering Phantom's Vambraces
-						}),
-						cl(DEMONHUNTER, {
-							i(202520),	-- Kinslayer's Bindings
-							i(202526),	-- Kinslayer's Gaiters
-							i(202521),	-- Kinslayer's Sash
-							i(202519),	-- Kinslayer's Shawl
-						}),
-						cl(DRUID, {
-							i(202511),	-- Bands of the Autumn Blaze
-							i(202510),	-- Foliage of the Autumn Blaze
-							i(202512),	-- Garland of the Autumn Blaze
-							i(202517),	-- Hooves of the Autumn Blaze
-						}),
-						cl(EVOKER, {
-							i(202483),	-- Crest of Obsidian Secrets
-							i(202490),	-- Greatboots of Obsidian Secrets
-							i(202485),	-- Lasso of Obsidian Secrets
-							i(202484),	-- Scalebands of Obsidian Secrets
-						}),
-						cl(HUNTER, {
-							i(202481),	-- Ashen Predator's Chasers
-							i(202474),	-- Ashen Predator's Cloak
-							i(202475),	-- Ashen Predator's Skinwraps
-							i(202476),	-- Ashen Predator's Strap
-						}),
-						cl(MAGE, {
-							i(202547),	-- Underlight Conjurer's Bracelets
-							i(202546),	-- Underlight Conjurer's Cape
-							i(202548),	-- Underlight Conjurer's Charmbelt
-							i(202553),	-- Underlight Conjurer's Treads
-						}),
-						cl(MONK, {
-							i(202501),	-- Drape of the Vermillion Forge
-							i(202503),	-- Blackbelt of the Vermillion Forge
-							i(202502),	-- Coils of the Vermillion Forge
-							i(202508),	-- Footpads of the Vermillion Forge
-						}),
-						cl(PALADIN, {
-							i(202448),	-- Heartfire Sentinel's Blessed Bindings
-							i(202454),	-- Heartfire Sentinel's Greatboots
-							i(202447),	-- Heartfire Sentinel's Pelerine
-							i(202449),	-- Heartfire Sentinel's Waistguard
-						}),
-						cl(PRIEST, {
-							i(202538),	-- Cuffs of the Furnace Seraph
-							i(202544),	-- Sabatons of the Furnace Seraph
-							i(202539),	-- Sash of the Furnace Seraph
-							i(202537),	-- Shroud of the Furnace Seraph
-						}),
-						cl(ROGUE, {
-							i(202493),	-- Lurking Specter's Armwraps
-							i(202492),	-- Lurking Specter's Capelet
-							i(202494),	-- Lurking Specter's Edgeband
-							i(202499),	-- Lurking Specter's Tabi
-						}),
-						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
-							i(202465),	-- Pelisse of the Cinderwolf
-							i(202466),	-- Runebraces of the Cinderwolf
-							i(202472),	-- Sollerets of the Cinderwolf
-						}),
-						cl(WARLOCK, {
-							i(202535),	-- Sandals of the Sinister Savant
-							i(202528),	-- Shawl of the Sinister Savant
-							i(202530),	-- Skullstrap of the Sinister Savant
-							i(202529),	-- Wristwraps of the Sinister Savant
-						}),
-						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
-							i(202445),	-- Ironstriders of the Onyx Crucible
-							i(202438),	-- Manteau of the Onyx Crucible
-							i(202439),	-- Warbands of the Onyx Crucible
-						}),
-					})),
 				}),
 				header(HEADERS.Item, 205878, {	-- Obsidian Aspectral Earthstone
-					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6896 }, {
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -4035,6 +6178,7 @@ root(ROOTS.NeverImplemented, {
 							i(205818),	-- Ashen Predator's Trophy
 						}),
 						cl(MAGE, {
+							i(205381),	-- Obsidian Gladiator's Silk Hood
 							i(205858),	-- Underlight Conjurer's Aurora
 							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
@@ -4043,7 +6187,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -4059,12 +6202,11 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6894 }, {
+					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -4082,6 +6224,7 @@ root(ROOTS.NeverImplemented, {
 							i(205818),	-- Ashen Predator's Trophy
 						}),
 						cl(MAGE, {
+							i(205381),	-- Obsidian Gladiator's Silk Hood
 							i(205858),	-- Underlight Conjurer's Aurora
 							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
@@ -4090,7 +6233,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -4106,12 +6248,11 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6897 }, {
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -4137,7 +6278,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -4153,12 +6293,11 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6895 }, {
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -4184,7 +6323,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -4200,7 +6338,6 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -4231,7 +6368,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -4247,7 +6383,6 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -4278,7 +6413,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -4294,9 +6428,1474 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+				}),
+			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
+				i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
+				i(207966),	-- 10.1.5 Time Rifts - Leather Bronze Sets - Capture Media
+				i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
+				i(207965),	-- 10.1.5 Time Rifts - Mail Bronze Sets - Capture Media
+				i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
+				i(207961),	-- 10.1.5 Time Rifts - Plate Bronze Sets - Capture Media
+				i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
+			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+				n(DREAMSURGE, bubbleDown({ ["bonusID"] = 6895 }, {
+					filter(CLOTH, {
+						i(209408),	-- Dreambound Crown
+						i(209380),	-- Dreambound Shoulderpads
+					}),
+					filter(LEATHER, {
+						i(209402),	-- Dreambound Cowl
+					}),
+					filter(MAIL, {
+						i(209395),	-- Dreambound Coif
+						i(209393),	-- Dreambound Shoulderguards
+					}),
+					filter(PLATE, {
+						i(209390),	-- Dreambound Faceplate
+						i(209385),	-- Dreambound Mantle
+					}),
+				})),
+			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+				header(HEADERS.Item, 210468, {	-- Emerald Blossom Dreamstone
+					-- Actual items awarded by Emerald Blossom Dreamstone are commented out here
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(207203), -- Casket of the Risen Nightmare
+							i(207202), -- Graveboots of the Risen Nightmare
+							i(207199), -- Greaves of the Risen Nightmare
+							--i(207200), -- Piercing Gaze of the Risen Nightmare
+							i(207197), -- Seal of the Risen Nightmare
+							i(207195), -- Shroud of the Risen Nightmare
+							--i(207198), -- Skewers of the Risen Nightmare
+							i(207201), -- Thorns of the Risen Nightmare
+							i(207196), -- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259), -- Screaming Torchfiend's Armlets
+							i(207266), -- Screaming Torchfiend's Binding
+							i(207262), -- Screaming Torchfiend's Blazewraps
+							i(207263), -- Screaming Torchfiend's Burning Scowl
+							i(207260), -- Screaming Torchfiend's Clasp
+							i(207265), -- Screaming Torchfiend's Clutches
+							i(207264), -- Screaming Torchfiend's Grasp
+							--i(207261), -- Screaming Torchfiend's Horned Memento
+							i(207258), -- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(207254), -- Benevolent Embersage's Casque
+							i(207249), -- Benevolent Embersage's Featherdrape
+							i(207253), -- Benevolent Embersage's Leggings
+							i(207256), -- Benevolent Embersage's Lined Boots
+							i(207257), -- Benevolent Embersage's Robe
+							i(207251), -- Benevolent Embersage's Sagacious Sash
+							i(207255), -- Benevolent Embersage's Talons
+							--i(207252), -- Benevolent Embersage's Wisdom
+							i(207250), -- Benevolent Embersage's Wristwraps
+						}),
+						cl(EVOKER, {
+							i(207224), -- Weyrnkeeper's Timeless Adorned Sash
+							i(207226), -- Weyrnkeeper's Timeless Breeches
+							i(207228), -- Weyrnkeeper's Timeless Clawguards
+							--i(207227), -- Weyrnkeeper's Timeless Dracoif
+							i(207222), -- Weyrnkeeper's Timeless Ornamented Cloak
+							i(207230), -- Weyrnkeeper's Timeless Raiment
+							i(207225), -- Weyrnkeeper's Timeless Sandbrace
+							i(207229), -- Weyrnkeeper's Timeless Treads
+							i(207223), -- Weyrnkeeper's Timeless Wristlets
+						}),
+						cl(HUNTER, {
+							i(207214), -- Blazing Dreamstalker's Bracers
+							--i(207216), -- Blazing Dreamstalker's Finest Hunt
+							i(207218), -- Blazing Dreamstalker's Flamewaker Horns
+							i(207221), -- Blazing Dreamstalker's Scaled Hauberk
+							i(207217), -- Blazing Dreamstalker's Shellgreaves
+							i(207219), -- Blazing Dreamstalker's Skinners
+							i(207215), -- Blazing Dreamstalker's Spined Girdle
+							i(207213), -- Blazing Dreamstalker's Staghide
+							i(207220), -- Blazing Dreamstalker's Striders
+						}),
+						cl(MAGE, {
+							--i(207290), -- Wayward Chronomancer's Chronocap
+							i(207286), -- Wayward Chronomancer's Cuffs
+							i(207291), -- Wayward Chronomancer's Gloves
+							--i(207288), -- Wayward Chronomancer's Metronomes
+							i(207289), -- Wayward Chronomancer's Pantaloons
+							i(207293), -- Wayward Chronomancer's Patchwork
+							i(207285), -- Wayward Chronomancer's Stole
+							i(207292), -- Wayward Chronomancer's Strapped Boots
+							--i(207287), -- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(207242), -- Mystic Heron's Belt
+							i(207248), -- Mystic Heron's Burdens
+							i(207240), -- Mystic Heron's Feathered Mantle
+							i(207241), -- Mystic Heron's Fisticuffs
+							i(207246), -- Mystic Heron's Glovebills
+							i(207245), -- Mystic Heron's Hatsuburi
+							--i(207243), -- Mystic Heron's Hopeful Effigy
+							i(207247), -- Mystic Heron's Tabi
+							i(207244), -- Mystic Heron's Waders
+						}),
+						cl(PALADIN, {
+							--i(207189), -- Zealous Pyreknight's Ailettes
+							i(207186), -- Zealous Pyreknight's Banner
+							i(207191), -- Zealous Pyreknight's Barbute
+							i(207190), -- Zealous Pyreknight's Cuisses
+							i(207193), -- Zealous Pyreknight's Dreamstompers
+							i(207188), -- Zealous Pyreknight's Emblem
+							i(207187), -- Zealous Pyreknight's Flameguards
+							i(207192), -- Zealous Pyreknight's Jeweled Gauntlets
+							i(207194), -- Zealous Pyreknight's Warplate
+						}),
+						cl(PRIEST, {
+							i(207284), -- Cassock of Lunar Communion
+							i(207278), -- Cincture of Lunar Communion
+							i(207276), -- Cloak of Lunar Communion
+							--i(207281), -- Crest of Lunar Communion
+							i(207280), -- Leggings of Lunar Communion
+							i(207283), -- Poulaines of Lunar Communion
+							--i(207279), -- Shoulderguardians of Lunar Communion
+							i(207282), -- Touch of Lunar Communion
+							i(207277), -- Wristwraps of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207233), -- Lucid Shadewalker's Baldric
+							--i(207234), -- Lucid Shadewalker's Bladed Spaulders
+							i(207232), -- Lucid Shadewalker's Bracers
+							i(207231), -- Lucid Shadewalker's Cape
+							i(207235), -- Lucid Shadewalker's Chausses
+							i(207237), -- Lucid Shadewalker's Clawgrips
+							i(207239), -- Lucid Shadewalker's Cuirass
+							--i(207236), -- Lucid Shadewalker's Deathmask
+							i(207238), -- Lucid Shadewalker's Sollerets
+						}),
+						cl(SHAMAN, {
+							i(207204), -- Greatwolf Outcast's Chainweave
+							--i(207207), -- Greatwolf Outcast's Companions
+							i(207211), -- Greatwolf Outcast's Footpads
+							i(207208), -- Greatwolf Outcast's Fur-Lined Kilt
+							i(207210), -- Greatwolf Outcast's Grips
+							i(207212), -- Greatwolf Outcast's Harness
+							--i(207209), -- Greatwolf Outcast's Jaws
+							i(207206), -- Greatwolf Outcast's Sigil Belt
+							i(207205), -- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(207268), -- Devout Ashdevil's Bracelets
+							i(207273), -- Devout Ashdevil's Claws
+							i(207269), -- Devout Ashdevil's Fanged Sash
+							i(207267), -- Devout Ashdevil's Fiendcloak
+							--i(207272), -- Devout Ashdevil's Grimhorns
+							--i(207270), -- Devout Ashdevil's Hatespikes
+							i(207275), -- Devout Ashdevil's Razorhide
+							i(207274), -- Devout Ashdevil's Slippers
+							i(207271), -- Devout Ashdevil's Tights
+						}),
+						cl(WARRIOR, {
+							--i(207179), -- Molten Vanguard's Chains
+							i(207183), -- Molten Vanguard's Crushers
+							--i(207182), -- Molten Vanguard's Domeplate
+							i(207184), -- Molten Vanguard's Greatboots
+							i(207177), -- Molten Vanguard's Manacles
+							--i(207185), -- Molten Vanguard's Plackart
+							--i(207180), -- Molten Vanguard's Shouldervents
+							i(207181), -- Molten Vanguard's Steel Tassets
+							i(207176), -- Molten Vanguard's Thermal Cape
+						}),
+					})),
+					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(207203), -- Casket of the Risen Nightmare
+							i(207202), -- Graveboots of the Risen Nightmare
+							i(207199), -- Greaves of the Risen Nightmare
+							--i(207200), -- Piercing Gaze of the Risen Nightmare
+							i(207197), -- Seal of the Risen Nightmare
+							i(207195), -- Shroud of the Risen Nightmare
+							--i(207198), -- Skewers of the Risen Nightmare
+							i(207201), -- Thorns of the Risen Nightmare
+							i(207196), -- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259), -- Screaming Torchfiend's Armlets
+							i(207266), -- Screaming Torchfiend's Binding
+							i(207262), -- Screaming Torchfiend's Blazewraps
+							i(207263), -- Screaming Torchfiend's Burning Scowl
+							i(207260), -- Screaming Torchfiend's Clasp
+							i(207265), -- Screaming Torchfiend's Clutches
+							i(207264), -- Screaming Torchfiend's Grasp
+							--i(207261), -- Screaming Torchfiend's Horned Memento
+							i(207258), -- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(207254), -- Benevolent Embersage's Casque
+							i(207249), -- Benevolent Embersage's Featherdrape
+							i(207253), -- Benevolent Embersage's Leggings
+							i(207256), -- Benevolent Embersage's Lined Boots
+							i(207257), -- Benevolent Embersage's Robe
+							i(207251), -- Benevolent Embersage's Sagacious Sash
+							i(207255), -- Benevolent Embersage's Talons
+							--i(207252), -- Benevolent Embersage's Wisdom
+							i(207250), -- Benevolent Embersage's Wristwraps
+						}),
+						cl(EVOKER, {
+							i(207224), -- Weyrnkeeper's Timeless Adorned Sash
+							i(207226), -- Weyrnkeeper's Timeless Breeches
+							i(207228), -- Weyrnkeeper's Timeless Clawguards
+							--i(207227), -- Weyrnkeeper's Timeless Dracoif
+							i(207222), -- Weyrnkeeper's Timeless Ornamented Cloak
+							i(207230), -- Weyrnkeeper's Timeless Raiment
+							i(207225), -- Weyrnkeeper's Timeless Sandbrace
+							i(207229), -- Weyrnkeeper's Timeless Treads
+							i(207223), -- Weyrnkeeper's Timeless Wristlets
+						}),
+						cl(HUNTER, {
+							i(207214), -- Blazing Dreamstalker's Bracers
+							--i(207216), -- Blazing Dreamstalker's Finest Hunt
+							i(207218), -- Blazing Dreamstalker's Flamewaker Horns
+							i(207221), -- Blazing Dreamstalker's Scaled Hauberk
+							i(207217), -- Blazing Dreamstalker's Shellgreaves
+							i(207219), -- Blazing Dreamstalker's Skinners
+							i(207215), -- Blazing Dreamstalker's Spined Girdle
+							i(207213), -- Blazing Dreamstalker's Staghide
+							i(207220), -- Blazing Dreamstalker's Striders
+						}),
+						cl(MAGE, {
+							--i(207290), -- Wayward Chronomancer's Chronocap
+							i(207286), -- Wayward Chronomancer's Cuffs
+							i(207291), -- Wayward Chronomancer's Gloves
+							--i(207288), -- Wayward Chronomancer's Metronomes
+							i(207289), -- Wayward Chronomancer's Pantaloons
+							i(207293), -- Wayward Chronomancer's Patchwork
+							i(207285), -- Wayward Chronomancer's Stole
+							i(207292), -- Wayward Chronomancer's Strapped Boots
+							--i(207287), -- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(207242), -- Mystic Heron's Belt
+							i(207248), -- Mystic Heron's Burdens
+							i(207240), -- Mystic Heron's Feathered Mantle
+							i(207241), -- Mystic Heron's Fisticuffs
+							i(207246), -- Mystic Heron's Glovebills
+							i(207245), -- Mystic Heron's Hatsuburi
+							--i(207243), -- Mystic Heron's Hopeful Effigy
+							i(207247), -- Mystic Heron's Tabi
+							i(207244), -- Mystic Heron's Waders
+						}),
+						cl(PALADIN, {
+							--i(207189), -- Zealous Pyreknight's Ailettes
+							i(207186), -- Zealous Pyreknight's Banner
+							i(207191), -- Zealous Pyreknight's Barbute
+							i(207190), -- Zealous Pyreknight's Cuisses
+							i(207193), -- Zealous Pyreknight's Dreamstompers
+							i(207188), -- Zealous Pyreknight's Emblem
+							i(207187), -- Zealous Pyreknight's Flameguards
+							i(207192), -- Zealous Pyreknight's Jeweled Gauntlets
+							i(207194), -- Zealous Pyreknight's Warplate
+						}),
+						cl(PRIEST, {
+							i(207284), -- Cassock of Lunar Communion
+							i(207278), -- Cincture of Lunar Communion
+							i(207276), -- Cloak of Lunar Communion
+							--i(207281), -- Crest of Lunar Communion
+							i(207280), -- Leggings of Lunar Communion
+							i(207283), -- Poulaines of Lunar Communion
+							--i(207279), -- Shoulderguardians of Lunar Communion
+							i(207282), -- Touch of Lunar Communion
+							i(207277), -- Wristwraps of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207233), -- Lucid Shadewalker's Baldric
+							--i(207234), -- Lucid Shadewalker's Bladed Spaulders
+							i(207232), -- Lucid Shadewalker's Bracers
+							i(207231), -- Lucid Shadewalker's Cape
+							i(207235), -- Lucid Shadewalker's Chausses
+							i(207237), -- Lucid Shadewalker's Clawgrips
+							i(207239), -- Lucid Shadewalker's Cuirass
+							--i(207236), -- Lucid Shadewalker's Deathmask
+							i(207238), -- Lucid Shadewalker's Sollerets
+						}),
+						cl(SHAMAN, {
+							i(207204), -- Greatwolf Outcast's Chainweave
+							--i(207207), -- Greatwolf Outcast's Companions
+							i(207211), -- Greatwolf Outcast's Footpads
+							i(207208), -- Greatwolf Outcast's Fur-Lined Kilt
+							i(207210), -- Greatwolf Outcast's Grips
+							i(207212), -- Greatwolf Outcast's Harness
+							--i(207209), -- Greatwolf Outcast's Jaws
+							i(207206), -- Greatwolf Outcast's Sigil Belt
+							i(207205), -- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(207268), -- Devout Ashdevil's Bracelets
+							i(207273), -- Devout Ashdevil's Claws
+							i(207269), -- Devout Ashdevil's Fanged Sash
+							i(207267), -- Devout Ashdevil's Fiendcloak
+							--i(207272), -- Devout Ashdevil's Grimhorns
+							--i(207270), -- Devout Ashdevil's Hatespikes
+							i(207275), -- Devout Ashdevil's Razorhide
+							i(207274), -- Devout Ashdevil's Slippers
+							i(207271), -- Devout Ashdevil's Tights
+						}),
+						cl(WARRIOR, {
+							--i(207179), -- Molten Vanguard's Chains
+							i(207183), -- Molten Vanguard's Crushers
+							--i(207182), -- Molten Vanguard's Domeplate
+							i(207184), -- Molten Vanguard's Greatboots
+							i(207177), -- Molten Vanguard's Manacles
+							--i(207185), -- Molten Vanguard's Plackart
+							--i(207180), -- Molten Vanguard's Shouldervents
+							i(207181), -- Molten Vanguard's Steel Tassets
+							i(207176), -- Molten Vanguard's Thermal Cape
+						}),
+					})),
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(207203), -- Casket of the Risen Nightmare
+							i(207202), -- Graveboots of the Risen Nightmare
+							i(207199), -- Greaves of the Risen Nightmare
+							--i(207200), -- Piercing Gaze of the Risen Nightmare
+							i(207197), -- Seal of the Risen Nightmare
+							i(207195), -- Shroud of the Risen Nightmare
+							--i(207198), -- Skewers of the Risen Nightmare
+							i(207201), -- Thorns of the Risen Nightmare
+							i(207196), -- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259), -- Screaming Torchfiend's Armlets
+							i(207266), -- Screaming Torchfiend's Binding
+							i(207262), -- Screaming Torchfiend's Blazewraps
+							i(207263), -- Screaming Torchfiend's Burning Scowl
+							i(207260), -- Screaming Torchfiend's Clasp
+							i(207265), -- Screaming Torchfiend's Clutches
+							i(207264), -- Screaming Torchfiend's Grasp
+							--i(207261), -- Screaming Torchfiend's Horned Memento
+							i(207258), -- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(207254), -- Benevolent Embersage's Casque
+							i(207249), -- Benevolent Embersage's Featherdrape
+							i(207253), -- Benevolent Embersage's Leggings
+							i(207256), -- Benevolent Embersage's Lined Boots
+							i(207257), -- Benevolent Embersage's Robe
+							i(207251), -- Benevolent Embersage's Sagacious Sash
+							i(207255), -- Benevolent Embersage's Talons
+							--i(207252), -- Benevolent Embersage's Wisdom
+							i(207250), -- Benevolent Embersage's Wristwraps
+						}),
+						cl(EVOKER, {
+							i(207224), -- Weyrnkeeper's Timeless Adorned Sash
+							i(207226), -- Weyrnkeeper's Timeless Breeches
+							i(207228), -- Weyrnkeeper's Timeless Clawguards
+							--i(207227), -- Weyrnkeeper's Timeless Dracoif
+							i(207222), -- Weyrnkeeper's Timeless Ornamented Cloak
+							i(207230), -- Weyrnkeeper's Timeless Raiment
+							i(207225), -- Weyrnkeeper's Timeless Sandbrace
+							i(207229), -- Weyrnkeeper's Timeless Treads
+							i(207223), -- Weyrnkeeper's Timeless Wristlets
+						}),
+						cl(HUNTER, {
+							i(207214), -- Blazing Dreamstalker's Bracers
+							--i(207216), -- Blazing Dreamstalker's Finest Hunt
+							i(207218), -- Blazing Dreamstalker's Flamewaker Horns
+							i(207221), -- Blazing Dreamstalker's Scaled Hauberk
+							i(207217), -- Blazing Dreamstalker's Shellgreaves
+							i(207219), -- Blazing Dreamstalker's Skinners
+							i(207215), -- Blazing Dreamstalker's Spined Girdle
+							i(207213), -- Blazing Dreamstalker's Staghide
+							i(207220), -- Blazing Dreamstalker's Striders
+						}),
+						cl(MAGE, {
+							--i(207290), -- Wayward Chronomancer's Chronocap
+							i(207286), -- Wayward Chronomancer's Cuffs
+							i(207291), -- Wayward Chronomancer's Gloves
+							--i(207288), -- Wayward Chronomancer's Metronomes
+							i(207289), -- Wayward Chronomancer's Pantaloons
+							i(207293), -- Wayward Chronomancer's Patchwork
+							i(207285), -- Wayward Chronomancer's Stole
+							i(207292), -- Wayward Chronomancer's Strapped Boots
+							--i(207287), -- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(207242), -- Mystic Heron's Belt
+							i(207248), -- Mystic Heron's Burdens
+							i(207240), -- Mystic Heron's Feathered Mantle
+							i(207241), -- Mystic Heron's Fisticuffs
+							i(207246), -- Mystic Heron's Glovebills
+							i(207245), -- Mystic Heron's Hatsuburi
+							--i(207243), -- Mystic Heron's Hopeful Effigy
+							i(207247), -- Mystic Heron's Tabi
+							i(207244), -- Mystic Heron's Waders
+						}),
+						cl(PALADIN, {
+							--i(207189), -- Zealous Pyreknight's Ailettes
+							i(207186), -- Zealous Pyreknight's Banner
+							i(207191), -- Zealous Pyreknight's Barbute
+							i(207190), -- Zealous Pyreknight's Cuisses
+							i(207193), -- Zealous Pyreknight's Dreamstompers
+							i(207188), -- Zealous Pyreknight's Emblem
+							i(207187), -- Zealous Pyreknight's Flameguards
+							i(207192), -- Zealous Pyreknight's Jeweled Gauntlets
+							i(207194), -- Zealous Pyreknight's Warplate
+						}),
+						cl(PRIEST, {
+							i(207284), -- Cassock of Lunar Communion
+							i(207278), -- Cincture of Lunar Communion
+							i(207276), -- Cloak of Lunar Communion
+							--i(207281), -- Crest of Lunar Communion
+							i(207280), -- Leggings of Lunar Communion
+							i(207283), -- Poulaines of Lunar Communion
+							--i(207279), -- Shoulderguardians of Lunar Communion
+							i(207282), -- Touch of Lunar Communion
+							i(207277), -- Wristwraps of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207233), -- Lucid Shadewalker's Baldric
+							--i(207234), -- Lucid Shadewalker's Bladed Spaulders
+							i(207232), -- Lucid Shadewalker's Bracers
+							i(207231), -- Lucid Shadewalker's Cape
+							i(207235), -- Lucid Shadewalker's Chausses
+							i(207237), -- Lucid Shadewalker's Clawgrips
+							i(207239), -- Lucid Shadewalker's Cuirass
+							--i(207236), -- Lucid Shadewalker's Deathmask
+							i(207238), -- Lucid Shadewalker's Sollerets
+						}),
+						cl(SHAMAN, {
+							i(207204), -- Greatwolf Outcast's Chainweave
+							--i(207207), -- Greatwolf Outcast's Companions
+							i(207211), -- Greatwolf Outcast's Footpads
+							i(207208), -- Greatwolf Outcast's Fur-Lined Kilt
+							i(207210), -- Greatwolf Outcast's Grips
+							i(207212), -- Greatwolf Outcast's Harness
+							--i(207209), -- Greatwolf Outcast's Jaws
+							i(207206), -- Greatwolf Outcast's Sigil Belt
+							i(207205), -- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(207268), -- Devout Ashdevil's Bracelets
+							i(207273), -- Devout Ashdevil's Claws
+							i(207269), -- Devout Ashdevil's Fanged Sash
+							i(207267), -- Devout Ashdevil's Fiendcloak
+							--i(207272), -- Devout Ashdevil's Grimhorns
+							--i(207270), -- Devout Ashdevil's Hatespikes
+							i(207275), -- Devout Ashdevil's Razorhide
+							i(207274), -- Devout Ashdevil's Slippers
+							i(207271), -- Devout Ashdevil's Tights
+						}),
+						cl(WARRIOR, {
+							--i(207179), -- Molten Vanguard's Chains
+							i(207183), -- Molten Vanguard's Crushers
+							--i(207182), -- Molten Vanguard's Domeplate
+							i(207184), -- Molten Vanguard's Greatboots
+							i(207177), -- Molten Vanguard's Manacles
+							--i(207185), -- Molten Vanguard's Plackart
+							--i(207180), -- Molten Vanguard's Shouldervents
+							i(207181), -- Molten Vanguard's Steel Tassets
+							i(207176), -- Molten Vanguard's Thermal Cape
+						}),
+					})),
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(207203), -- Casket of the Risen Nightmare
+							i(207202), -- Graveboots of the Risen Nightmare
+							i(207199), -- Greaves of the Risen Nightmare
+							--i(207200), -- Piercing Gaze of the Risen Nightmare
+							i(207197), -- Seal of the Risen Nightmare
+							i(207195), -- Shroud of the Risen Nightmare
+							--i(207198), -- Skewers of the Risen Nightmare
+							i(207201), -- Thorns of the Risen Nightmare
+							i(207196), -- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259), -- Screaming Torchfiend's Armlets
+							i(207266), -- Screaming Torchfiend's Binding
+							i(207262), -- Screaming Torchfiend's Blazewraps
+							i(207263), -- Screaming Torchfiend's Burning Scowl
+							i(207260), -- Screaming Torchfiend's Clasp
+							i(207265), -- Screaming Torchfiend's Clutches
+							i(207264), -- Screaming Torchfiend's Grasp
+							--i(207261), -- Screaming Torchfiend's Horned Memento
+							i(207258), -- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(207254), -- Benevolent Embersage's Casque
+							i(207249), -- Benevolent Embersage's Featherdrape
+							i(207253), -- Benevolent Embersage's Leggings
+							i(207256), -- Benevolent Embersage's Lined Boots
+							i(207257), -- Benevolent Embersage's Robe
+							i(207251), -- Benevolent Embersage's Sagacious Sash
+							i(207255), -- Benevolent Embersage's Talons
+							--i(207252), -- Benevolent Embersage's Wisdom
+							i(207250), -- Benevolent Embersage's Wristwraps
+						}),
+						cl(EVOKER, {
+							i(207224), -- Weyrnkeeper's Timeless Adorned Sash
+							i(207226), -- Weyrnkeeper's Timeless Breeches
+							i(207228), -- Weyrnkeeper's Timeless Clawguards
+							--i(207227), -- Weyrnkeeper's Timeless Dracoif
+							i(207222), -- Weyrnkeeper's Timeless Ornamented Cloak
+							i(207230), -- Weyrnkeeper's Timeless Raiment
+							i(207225), -- Weyrnkeeper's Timeless Sandbrace
+							i(207229), -- Weyrnkeeper's Timeless Treads
+							i(207223), -- Weyrnkeeper's Timeless Wristlets
+						}),
+						cl(HUNTER, {
+							i(207214), -- Blazing Dreamstalker's Bracers
+							--i(207216), -- Blazing Dreamstalker's Finest Hunt
+							i(207218), -- Blazing Dreamstalker's Flamewaker Horns
+							i(207221), -- Blazing Dreamstalker's Scaled Hauberk
+							i(207217), -- Blazing Dreamstalker's Shellgreaves
+							i(207219), -- Blazing Dreamstalker's Skinners
+							i(207215), -- Blazing Dreamstalker's Spined Girdle
+							i(207213), -- Blazing Dreamstalker's Staghide
+							i(207220), -- Blazing Dreamstalker's Striders
+						}),
+						cl(MAGE, {
+							--i(207290), -- Wayward Chronomancer's Chronocap
+							i(207286), -- Wayward Chronomancer's Cuffs
+							i(207291), -- Wayward Chronomancer's Gloves
+							--i(207288), -- Wayward Chronomancer's Metronomes
+							i(207289), -- Wayward Chronomancer's Pantaloons
+							i(207293), -- Wayward Chronomancer's Patchwork
+							i(207285), -- Wayward Chronomancer's Stole
+							i(207292), -- Wayward Chronomancer's Strapped Boots
+							--i(207287), -- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(207242), -- Mystic Heron's Belt
+							i(207248), -- Mystic Heron's Burdens
+							i(207240), -- Mystic Heron's Feathered Mantle
+							i(207241), -- Mystic Heron's Fisticuffs
+							i(207246), -- Mystic Heron's Glovebills
+							i(207245), -- Mystic Heron's Hatsuburi
+							--i(207243), -- Mystic Heron's Hopeful Effigy
+							i(207247), -- Mystic Heron's Tabi
+							i(207244), -- Mystic Heron's Waders
+						}),
+						cl(PALADIN, {
+							--i(207189), -- Zealous Pyreknight's Ailettes
+							i(207186), -- Zealous Pyreknight's Banner
+							i(207191), -- Zealous Pyreknight's Barbute
+							i(207190), -- Zealous Pyreknight's Cuisses
+							i(207193), -- Zealous Pyreknight's Dreamstompers
+							i(207188), -- Zealous Pyreknight's Emblem
+							i(207187), -- Zealous Pyreknight's Flameguards
+							i(207192), -- Zealous Pyreknight's Jeweled Gauntlets
+							i(207194), -- Zealous Pyreknight's Warplate
+						}),
+						cl(PRIEST, {
+							i(207284), -- Cassock of Lunar Communion
+							i(207278), -- Cincture of Lunar Communion
+							i(207276), -- Cloak of Lunar Communion
+							--i(207281), -- Crest of Lunar Communion
+							i(207280), -- Leggings of Lunar Communion
+							i(207283), -- Poulaines of Lunar Communion
+							--i(207279), -- Shoulderguardians of Lunar Communion
+							i(207282), -- Touch of Lunar Communion
+							i(207277), -- Wristwraps of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207233), -- Lucid Shadewalker's Baldric
+							--i(207234), -- Lucid Shadewalker's Bladed Spaulders
+							i(207232), -- Lucid Shadewalker's Bracers
+							i(207231), -- Lucid Shadewalker's Cape
+							i(207235), -- Lucid Shadewalker's Chausses
+							i(207237), -- Lucid Shadewalker's Clawgrips
+							i(207239), -- Lucid Shadewalker's Cuirass
+							--i(207236), -- Lucid Shadewalker's Deathmask
+							i(207238), -- Lucid Shadewalker's Sollerets
+						}),
+						cl(SHAMAN, {
+							i(207204), -- Greatwolf Outcast's Chainweave
+							--i(207207), -- Greatwolf Outcast's Companions
+							i(207211), -- Greatwolf Outcast's Footpads
+							i(207208), -- Greatwolf Outcast's Fur-Lined Kilt
+							i(207210), -- Greatwolf Outcast's Grips
+							i(207212), -- Greatwolf Outcast's Harness
+							--i(207209), -- Greatwolf Outcast's Jaws
+							i(207206), -- Greatwolf Outcast's Sigil Belt
+							i(207205), -- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(207268), -- Devout Ashdevil's Bracelets
+							i(207273), -- Devout Ashdevil's Claws
+							i(207269), -- Devout Ashdevil's Fanged Sash
+							i(207267), -- Devout Ashdevil's Fiendcloak
+							--i(207272), -- Devout Ashdevil's Grimhorns
+							--i(207270), -- Devout Ashdevil's Hatespikes
+							i(207275), -- Devout Ashdevil's Razorhide
+							i(207274), -- Devout Ashdevil's Slippers
+							i(207271), -- Devout Ashdevil's Tights
+						}),
+						cl(WARRIOR, {
+							--i(207179), -- Molten Vanguard's Chains
+							i(207183), -- Molten Vanguard's Crushers
+							--i(207182), -- Molten Vanguard's Domeplate
+							i(207184), -- Molten Vanguard's Greatboots
+							i(207177), -- Molten Vanguard's Manacles
+							--i(207185), -- Molten Vanguard's Plackart
+							--i(207180), -- Molten Vanguard's Shouldervents
+							i(207181), -- Molten Vanguard's Steel Tassets
+							i(207176), -- Molten Vanguard's Thermal Cape
+						}),
+					})),
+					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+						cl(DEATHKNIGHT, {
+							i(207203), -- Casket of the Risen Nightmare
+							i(207202), -- Graveboots of the Risen Nightmare
+							i(207199), -- Greaves of the Risen Nightmare
+							--i(207200), -- Piercing Gaze of the Risen Nightmare
+							i(207197), -- Seal of the Risen Nightmare
+							i(207195), -- Shroud of the Risen Nightmare
+							--i(207198), -- Skewers of the Risen Nightmare
+							i(207201), -- Thorns of the Risen Nightmare
+							i(207196), -- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259), -- Screaming Torchfiend's Armlets
+							i(207266), -- Screaming Torchfiend's Binding
+							i(207262), -- Screaming Torchfiend's Blazewraps
+							i(207263), -- Screaming Torchfiend's Burning Scowl
+							i(207260), -- Screaming Torchfiend's Clasp
+							i(207265), -- Screaming Torchfiend's Clutches
+							i(207264), -- Screaming Torchfiend's Grasp
+							--i(207261), -- Screaming Torchfiend's Horned Memento
+							i(207258), -- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(207254), -- Benevolent Embersage's Casque
+							i(207249), -- Benevolent Embersage's Featherdrape
+							i(207253), -- Benevolent Embersage's Leggings
+							i(207256), -- Benevolent Embersage's Lined Boots
+							i(207257), -- Benevolent Embersage's Robe
+							i(207251), -- Benevolent Embersage's Sagacious Sash
+							i(207255), -- Benevolent Embersage's Talons
+							--i(207252), -- Benevolent Embersage's Wisdom
+							i(207250), -- Benevolent Embersage's Wristwraps
+						}),
+						cl(EVOKER, {
+							i(207224), -- Weyrnkeeper's Timeless Adorned Sash
+							i(207226), -- Weyrnkeeper's Timeless Breeches
+							i(207228), -- Weyrnkeeper's Timeless Clawguards
+							--i(207227), -- Weyrnkeeper's Timeless Dracoif
+							i(207222), -- Weyrnkeeper's Timeless Ornamented Cloak
+							i(207230), -- Weyrnkeeper's Timeless Raiment
+							i(207225), -- Weyrnkeeper's Timeless Sandbrace
+							i(207229), -- Weyrnkeeper's Timeless Treads
+							i(207223), -- Weyrnkeeper's Timeless Wristlets
+						}),
+						cl(HUNTER, {
+							i(207214), -- Blazing Dreamstalker's Bracers
+							--i(207216), -- Blazing Dreamstalker's Finest Hunt
+							i(207218), -- Blazing Dreamstalker's Flamewaker Horns
+							i(207221), -- Blazing Dreamstalker's Scaled Hauberk
+							i(207217), -- Blazing Dreamstalker's Shellgreaves
+							i(207219), -- Blazing Dreamstalker's Skinners
+							i(207215), -- Blazing Dreamstalker's Spined Girdle
+							i(207213), -- Blazing Dreamstalker's Staghide
+							i(207220), -- Blazing Dreamstalker's Striders
+						}),
+						cl(MAGE, {
+							--i(207290), -- Wayward Chronomancer's Chronocap
+							i(207286), -- Wayward Chronomancer's Cuffs
+							i(207291), -- Wayward Chronomancer's Gloves
+							--i(207288), -- Wayward Chronomancer's Metronomes
+							i(207289), -- Wayward Chronomancer's Pantaloons
+							i(207293), -- Wayward Chronomancer's Patchwork
+							i(207285), -- Wayward Chronomancer's Stole
+							i(207292), -- Wayward Chronomancer's Strapped Boots
+							--i(207287), -- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(207242), -- Mystic Heron's Belt
+							i(207248), -- Mystic Heron's Burdens
+							i(207240), -- Mystic Heron's Feathered Mantle
+							i(207241), -- Mystic Heron's Fisticuffs
+							i(207246), -- Mystic Heron's Glovebills
+							i(207245), -- Mystic Heron's Hatsuburi
+							--i(207243), -- Mystic Heron's Hopeful Effigy
+							i(207247), -- Mystic Heron's Tabi
+							i(207244), -- Mystic Heron's Waders
+						}),
+						cl(PALADIN, {
+							--i(207189), -- Zealous Pyreknight's Ailettes
+							i(207186), -- Zealous Pyreknight's Banner
+							i(207191), -- Zealous Pyreknight's Barbute
+							i(207190), -- Zealous Pyreknight's Cuisses
+							i(207193), -- Zealous Pyreknight's Dreamstompers
+							i(207188), -- Zealous Pyreknight's Emblem
+							i(207187), -- Zealous Pyreknight's Flameguards
+							i(207192), -- Zealous Pyreknight's Jeweled Gauntlets
+							i(207194), -- Zealous Pyreknight's Warplate
+						}),
+						cl(PRIEST, {
+							i(207284), -- Cassock of Lunar Communion
+							i(207278), -- Cincture of Lunar Communion
+							i(207276), -- Cloak of Lunar Communion
+							--i(207281), -- Crest of Lunar Communion
+							i(207280), -- Leggings of Lunar Communion
+							i(207283), -- Poulaines of Lunar Communion
+							--i(207279), -- Shoulderguardians of Lunar Communion
+							i(207282), -- Touch of Lunar Communion
+							i(207277), -- Wristwraps of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207233), -- Lucid Shadewalker's Baldric
+							--i(207234), -- Lucid Shadewalker's Bladed Spaulders
+							i(207232), -- Lucid Shadewalker's Bracers
+							i(207231), -- Lucid Shadewalker's Cape
+							i(207235), -- Lucid Shadewalker's Chausses
+							i(207237), -- Lucid Shadewalker's Clawgrips
+							i(207239), -- Lucid Shadewalker's Cuirass
+							--i(207236), -- Lucid Shadewalker's Deathmask
+							i(207238), -- Lucid Shadewalker's Sollerets
+						}),
+						cl(SHAMAN, {
+							i(207204), -- Greatwolf Outcast's Chainweave
+							--i(207207), -- Greatwolf Outcast's Companions
+							i(207211), -- Greatwolf Outcast's Footpads
+							i(207208), -- Greatwolf Outcast's Fur-Lined Kilt
+							i(207210), -- Greatwolf Outcast's Grips
+							i(207212), -- Greatwolf Outcast's Harness
+							--i(207209), -- Greatwolf Outcast's Jaws
+							i(207206), -- Greatwolf Outcast's Sigil Belt
+							i(207205), -- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(207268), -- Devout Ashdevil's Bracelets
+							i(207273), -- Devout Ashdevil's Claws
+							i(207269), -- Devout Ashdevil's Fanged Sash
+							i(207267), -- Devout Ashdevil's Fiendcloak
+							--i(207272), -- Devout Ashdevil's Grimhorns
+							--i(207270), -- Devout Ashdevil's Hatespikes
+							i(207275), -- Devout Ashdevil's Razorhide
+							i(207274), -- Devout Ashdevil's Slippers
+							i(207271), -- Devout Ashdevil's Tights
+						}),
+						cl(WARRIOR, {
+							--i(207179), -- Molten Vanguard's Chains
+							i(207183), -- Molten Vanguard's Crushers
+							--i(207182), -- Molten Vanguard's Domeplate
+							i(207184), -- Molten Vanguard's Greatboots
+							i(207177), -- Molten Vanguard's Manacles
+							--i(207185), -- Molten Vanguard's Plackart
+							--i(207180), -- Molten Vanguard's Shouldervents
+							i(207181), -- Molten Vanguard's Steel Tassets
+							i(207176), -- Molten Vanguard's Thermal Cape
+						}),
+					})),
+					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+						cl(DEATHKNIGHT, {
+							i(207203), -- Casket of the Risen Nightmare
+							i(207202), -- Graveboots of the Risen Nightmare
+							i(207199), -- Greaves of the Risen Nightmare
+							--i(207200), -- Piercing Gaze of the Risen Nightmare
+							i(207197), -- Seal of the Risen Nightmare
+							i(207195), -- Shroud of the Risen Nightmare
+							--i(207198), -- Skewers of the Risen Nightmare
+							i(207201), -- Thorns of the Risen Nightmare
+							i(207196), -- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259), -- Screaming Torchfiend's Armlets
+							i(207266), -- Screaming Torchfiend's Binding
+							i(207262), -- Screaming Torchfiend's Blazewraps
+							i(207263), -- Screaming Torchfiend's Burning Scowl
+							i(207260), -- Screaming Torchfiend's Clasp
+							i(207265), -- Screaming Torchfiend's Clutches
+							i(207264), -- Screaming Torchfiend's Grasp
+							--i(207261), -- Screaming Torchfiend's Horned Memento
+							i(207258), -- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(207254), -- Benevolent Embersage's Casque
+							i(207249), -- Benevolent Embersage's Featherdrape
+							i(207253), -- Benevolent Embersage's Leggings
+							i(207256), -- Benevolent Embersage's Lined Boots
+							i(207257), -- Benevolent Embersage's Robe
+							i(207251), -- Benevolent Embersage's Sagacious Sash
+							i(207255), -- Benevolent Embersage's Talons
+							--i(207252), -- Benevolent Embersage's Wisdom
+							i(207250), -- Benevolent Embersage's Wristwraps
+						}),
+						cl(EVOKER, {
+							i(207224), -- Weyrnkeeper's Timeless Adorned Sash
+							i(207226), -- Weyrnkeeper's Timeless Breeches
+							i(207228), -- Weyrnkeeper's Timeless Clawguards
+							--i(207227), -- Weyrnkeeper's Timeless Dracoif
+							i(207222), -- Weyrnkeeper's Timeless Ornamented Cloak
+							i(207230), -- Weyrnkeeper's Timeless Raiment
+							i(207225), -- Weyrnkeeper's Timeless Sandbrace
+							i(207229), -- Weyrnkeeper's Timeless Treads
+							i(207223), -- Weyrnkeeper's Timeless Wristlets
+						}),
+						cl(HUNTER, {
+							i(207214), -- Blazing Dreamstalker's Bracers
+							--i(207216), -- Blazing Dreamstalker's Finest Hunt
+							i(207218), -- Blazing Dreamstalker's Flamewaker Horns
+							i(207221), -- Blazing Dreamstalker's Scaled Hauberk
+							i(207217), -- Blazing Dreamstalker's Shellgreaves
+							i(207219), -- Blazing Dreamstalker's Skinners
+							i(207215), -- Blazing Dreamstalker's Spined Girdle
+							i(207213), -- Blazing Dreamstalker's Staghide
+							i(207220), -- Blazing Dreamstalker's Striders
+						}),
+						cl(MAGE, {
+							--i(207290), -- Wayward Chronomancer's Chronocap
+							i(207286), -- Wayward Chronomancer's Cuffs
+							i(207291), -- Wayward Chronomancer's Gloves
+							--i(207288), -- Wayward Chronomancer's Metronomes
+							i(207289), -- Wayward Chronomancer's Pantaloons
+							i(207293), -- Wayward Chronomancer's Patchwork
+							i(207285), -- Wayward Chronomancer's Stole
+							i(207292), -- Wayward Chronomancer's Strapped Boots
+							--i(207287), -- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(207242), -- Mystic Heron's Belt
+							i(207248), -- Mystic Heron's Burdens
+							i(207240), -- Mystic Heron's Feathered Mantle
+							i(207241), -- Mystic Heron's Fisticuffs
+							i(207246), -- Mystic Heron's Glovebills
+							i(207245), -- Mystic Heron's Hatsuburi
+							--i(207243), -- Mystic Heron's Hopeful Effigy
+							i(207247), -- Mystic Heron's Tabi
+							i(207244), -- Mystic Heron's Waders
+						}),
+						cl(PALADIN, {
+							--i(207189), -- Zealous Pyreknight's Ailettes
+							i(207186), -- Zealous Pyreknight's Banner
+							i(207191), -- Zealous Pyreknight's Barbute
+							i(207190), -- Zealous Pyreknight's Cuisses
+							i(207193), -- Zealous Pyreknight's Dreamstompers
+							i(207188), -- Zealous Pyreknight's Emblem
+							i(207187), -- Zealous Pyreknight's Flameguards
+							i(207192), -- Zealous Pyreknight's Jeweled Gauntlets
+							i(207194), -- Zealous Pyreknight's Warplate
+						}),
+						cl(PRIEST, {
+							i(207284), -- Cassock of Lunar Communion
+							i(207278), -- Cincture of Lunar Communion
+							i(207276), -- Cloak of Lunar Communion
+							--i(207281), -- Crest of Lunar Communion
+							i(207280), -- Leggings of Lunar Communion
+							i(207283), -- Poulaines of Lunar Communion
+							--i(207279), -- Shoulderguardians of Lunar Communion
+							i(207282), -- Touch of Lunar Communion
+							i(207277), -- Wristwraps of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207233), -- Lucid Shadewalker's Baldric
+							--i(207234), -- Lucid Shadewalker's Bladed Spaulders
+							i(207232), -- Lucid Shadewalker's Bracers
+							i(207231), -- Lucid Shadewalker's Cape
+							i(207235), -- Lucid Shadewalker's Chausses
+							i(207237), -- Lucid Shadewalker's Clawgrips
+							i(207239), -- Lucid Shadewalker's Cuirass
+							--i(207236), -- Lucid Shadewalker's Deathmask
+							i(207238), -- Lucid Shadewalker's Sollerets
+						}),
+						cl(SHAMAN, {
+							i(207204), -- Greatwolf Outcast's Chainweave
+							--i(207207), -- Greatwolf Outcast's Companions
+							i(207211), -- Greatwolf Outcast's Footpads
+							i(207208), -- Greatwolf Outcast's Fur-Lined Kilt
+							i(207210), -- Greatwolf Outcast's Grips
+							i(207212), -- Greatwolf Outcast's Harness
+							--i(207209), -- Greatwolf Outcast's Jaws
+							i(207206), -- Greatwolf Outcast's Sigil Belt
+							i(207205), -- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(207268), -- Devout Ashdevil's Bracelets
+							i(207273), -- Devout Ashdevil's Claws
+							i(207269), -- Devout Ashdevil's Fanged Sash
+							i(207267), -- Devout Ashdevil's Fiendcloak
+							--i(207272), -- Devout Ashdevil's Grimhorns
+							--i(207270), -- Devout Ashdevil's Hatespikes
+							i(207275), -- Devout Ashdevil's Razorhide
+							i(207274), -- Devout Ashdevil's Slippers
+							i(207271), -- Devout Ashdevil's Tights
+						}),
+						cl(WARRIOR, {
+							--i(207179), -- Molten Vanguard's Chains
+							i(207183), -- Molten Vanguard's Crushers
+							--i(207182), -- Molten Vanguard's Domeplate
+							i(207184), -- Molten Vanguard's Greatboots
+							i(207177), -- Molten Vanguard's Manacles
+							--i(207185), -- Molten Vanguard's Plackart
+							--i(207180), -- Molten Vanguard's Shouldervents
+							i(207181), -- Molten Vanguard's Steel Tassets
+							i(207176), -- Molten Vanguard's Thermal Cape
+						}),
+					})),
+				}),
+				header(HEADERS.Achievement, SEASON_VERDANT, {
+					n(PVP_GLADIATOR, bubbleDownSelf({ ["bonusID"] = 6898 }, {
+						n(CLASSES, {
+							cl(DEATHKNIGHT, {
+								i(209275),	-- Verdant Gladiator's Cloak
+								i(209276),	-- Verdant Gladiator's Drape
+								i(209277),	-- Verdant Gladiator's Shawl
+								i(209259),	-- Verdant Gladiator's Plate Chestguard
+								i(209260),	-- Verdant Gladiator's Plate Chestplate
+								i(209263),	-- Verdant Gladiator's Plate Gauntlets
+								i(209271),	-- Verdant Gladiator's Plate Girdle
+								i(209272),	-- Verdant Gladiator's Plate Greatbelt
+								i(209264),	-- Verdant Gladiator's Plate Handguards
+								i(209265),	-- Verdant Gladiator's Plate Helm
+								i(209266),	-- Verdant Gladiator's Plate Helmet
+								i(209267),	-- Verdant Gladiator's Plate Legguards
+								i(209270),	-- Verdant Gladiator's Plate Pauldrons
+								i(209269),	-- Verdant Gladiator's Plate Shoulders
+								i(209262),	-- Verdant Gladiator's Plate Stompers
+								i(209274),	-- Verdant Gladiator's Plate Vambraces
+								i(209261),	-- Verdant Gladiator's Plate Warboots
+								i(209268),	-- Verdant Gladiator's Plate Wargreaves
+								i(209273),	-- Verdant Gladiator's Plate Wristguards
+							}),
+							cl(DEMONHUNTER, {
+								i(209161),	-- Verdant Gladiator's Cloak
+								i(209162),	-- Verdant Gladiator's Drape
+								i(209157),	-- Verdant Gladiator's Leather Belt
+								i(209147),	-- Verdant Gladiator's Leather Boots
+								i(209153),	-- Verdant Gladiator's Leather Breeches
+								i(209149),	-- Verdant Gladiator's Leather Gloves
+								i(209150),	-- Verdant Gladiator's Leather Grips
+								i(209151),	-- Verdant Gladiator's Leather Helm
+								i(209146),	-- Verdant Gladiator's Leather Jerkin
+								i(209154),	-- Verdant Gladiator's Leather Legwraps
+								i(209152),	-- Verdant Gladiator's Leather Mask
+								i(209156),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209155),	-- Verdant Gladiator's Leather Spaulders
+								i(209158),	-- Verdant Gladiator's Leather Strap
+								i(209148),	-- Verdant Gladiator's Leather Treads
+								i(209145),	-- Verdant Gladiator's Leather Vest
+								i(209160),	-- Verdant Gladiator's Leather Wristguards
+								i(209159),	-- Verdant Gladiator's Leather Wristwraps
+								i(209163),	-- Verdant Gladiator's Shawl
+							}),
+							cl(DRUID, {
+								i(209142),	-- Verdant Gladiator's Cloak
+								i(209143),	-- Verdant Gladiator's Drape
+								i(209138),	-- Verdant Gladiator's Leather Belt
+								i(209128),	-- Verdant Gladiator's Leather Boots
+								i(209134),	-- Verdant Gladiator's Leather Breeches
+								i(209130),	-- Verdant Gladiator's Leather Gloves
+								i(209131),	-- Verdant Gladiator's Leather Grips
+								i(209132),	-- Verdant Gladiator's Leather Helm
+								i(209127),	-- Verdant Gladiator's Leather Jerkin
+								i(209135),	-- Verdant Gladiator's Leather Legwraps
+								i(209133),	-- Verdant Gladiator's Leather Mask
+								i(209137),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209136),	-- Verdant Gladiator's Leather Spaulders
+								i(209139),	-- Verdant Gladiator's Leather Strap
+								i(209129),	-- Verdant Gladiator's Leather Treads
+								i(209126),	-- Verdant Gladiator's Leather Vest
+								i(209141),	-- Verdant Gladiator's Leather Wristguards
+								i(209140),	-- Verdant Gladiator's Leather Wristwraps
+								i(209144),	-- Verdant Gladiator's Shawl
+							}),
+							cl(EVOKER, {
+								i(209218),	-- Verdant Gladiator's Cloak
+								i(209219),	-- Verdant Gladiator's Drape
+								i(209220),	-- Verdant Gladiator's Shawl
+								i(209214),	-- Verdant Gladiator's Chain Belt
+								i(209205),	-- Verdant Gladiator's Chain Boots
+								i(209217),	-- Verdant Gladiator's Chain Bracers
+								i(209211),	-- Verdant Gladiator's Chain Breeches
+								i(209209),	-- Verdant Gladiator's Chain Faceguard
+								i(209206),	-- Verdant Gladiator's Chain Gauntlets
+								i(209215),	-- Verdant Gladiator's Chain Girdle
+								i(209207),	-- Verdant Gladiator's Chain Handguards
+								i(209208),	-- Verdant Gladiator's Chain Helm
+								i(209210),	-- Verdant Gladiator's Chain Leggings
+								i(209212),	-- Verdant Gladiator's Chain Monnion
+								i(209202),	-- Verdant Gladiator's Chain Robe
+								i(209204),	-- Verdant Gladiator's Chain Sabatons
+								i(209213),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209203),	-- Verdant Gladiator's Chain Vestments
+								i(209216),	-- Verdant Gladiator's Chain Wristguards
+							}),
+							cl(HUNTER, {
+								i(209233),	-- Verdant Gladiator's Chain Belt
+								i(209224),	-- Verdant Gladiator's Chain Boots
+								i(209236),	-- Verdant Gladiator's Chain Bracers
+								i(209230),	-- Verdant Gladiator's Chain Breeches
+								i(209228),	-- Verdant Gladiator's Chain Faceguard
+								i(209225),	-- Verdant Gladiator's Chain Gauntlets
+								i(209234),	-- Verdant Gladiator's Chain Girdle
+								i(209226),	-- Verdant Gladiator's Chain Handguards
+								i(209227),	-- Verdant Gladiator's Chain Helm
+								i(209229),	-- Verdant Gladiator's Chain Leggings
+								i(209231),	-- Verdant Gladiator's Chain Monnion
+								i(209223),	-- Verdant Gladiator's Chain Sabatons
+								i(209232),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209222),	-- Verdant Gladiator's Chain Tunic
+								i(209221),	-- Verdant Gladiator's Chain Vest
+								i(209235),	-- Verdant Gladiator's Chain Wristguards
+								i(209237),	-- Verdant Gladiator's Cloak
+								i(209238),	-- Verdant Gladiator's Drape
+								i(209239),	-- Verdant Gladiator's Shawl
+							}),
+							cl(MAGE, {
+								i(209085),	-- Verdant Gladiator's Cloak
+								i(209086),	-- Verdant Gladiator's Drape
+								i(209087),	-- Verdant Gladiator's Shawl
+								i(209080),	-- Verdant Gladiator's Silk Amice
+								i(209084),	-- Verdant Gladiator's Silk Armbands
+								i(209082),	-- Verdant Gladiator's Silk Belt
+								i(209070),	-- Verdant Gladiator's Silk Blouse
+								i(209076),	-- Verdant Gladiator's Silk Cap
+								i(209081),	-- Verdant Gladiator's Silk Cord
+								i(209073),	-- Verdant Gladiator's Silk Gloves
+								i(209074),	-- Verdant Gladiator's Silk Handwraps
+								i(209075),	-- Verdant Gladiator's Silk Hat
+								i(209077),	-- Verdant Gladiator's Silk Leggings
+								i(209079),	-- Verdant Gladiator's Silk Mantle
+								i(209071),	-- Verdant Gladiator's Silk Slippers
+								i(209072),	-- Verdant Gladiator's Silk Treads
+								i(209078),	-- Verdant Gladiator's Silk Trousers
+								i(209069),	-- Verdant Gladiator's Silk Tunic
+								i(209083),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(MONK, {
+								i(209180),	-- Verdant Gladiator's Cloak
+								i(209181),	-- Verdant Gladiator's Drape
+								i(209176),	-- Verdant Gladiator's Leather Belt
+								i(209166),	-- Verdant Gladiator's Leather Boots
+								i(209172),	-- Verdant Gladiator's Leather Breeches
+								i(209168),	-- Verdant Gladiator's Leather Gloves
+								i(209169),	-- Verdant Gladiator's Leather Grips
+								i(209170),	-- Verdant Gladiator's Leather Helm
+								i(209165),	-- Verdant Gladiator's Leather Jerkin
+								i(209173),	-- Verdant Gladiator's Leather Legwraps
+								i(209171),	-- Verdant Gladiator's Leather Mask
+								i(209175),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209174),	-- Verdant Gladiator's Leather Spaulders
+								i(209177),	-- Verdant Gladiator's Leather Strap
+								i(209167),	-- Verdant Gladiator's Leather Treads
+								i(209164),	-- Verdant Gladiator's Leather Vest
+								i(209179),	-- Verdant Gladiator's Leather Wristguards
+								i(209178),	-- Verdant Gladiator's Leather Wristwraps
+								i(209182),	-- Verdant Gladiator's Shawl
+							}),
+							cl(PALADIN, {
+								i(209294),	-- Verdant Gladiator's Cloak
+								i(209295),	-- Verdant Gladiator's Drape
+								i(209278),	-- Verdant Gladiator's Plate Chestguard
+								i(209279),	-- Verdant Gladiator's Plate Chestplate
+								i(209282),	-- Verdant Gladiator's Plate Gauntlets
+								i(209290),	-- Verdant Gladiator's Plate Girdle
+								i(209291),	-- Verdant Gladiator's Plate Greatbelt
+								i(209283),	-- Verdant Gladiator's Plate Handguards
+								i(209284),	-- Verdant Gladiator's Plate Helm
+								i(209285),	-- Verdant Gladiator's Plate Helmet
+								i(209286),	-- Verdant Gladiator's Plate Legguards
+								i(209289),	-- Verdant Gladiator's Plate Pauldrons
+								i(209288),	-- Verdant Gladiator's Plate Shoulders
+								i(209281),	-- Verdant Gladiator's Plate Stompers
+								i(209287),	-- Verdant Gladiator's Plate Tasses
+								i(209293),	-- Verdant Gladiator's Plate Vambraces
+								i(209280),	-- Verdant Gladiator's Plate Warboots
+								i(209292),	-- Verdant Gladiator's Plate Wristguards
+								i(209296),	-- Verdant Gladiator's Shawl
+							}),
+							cl(PRIEST, {
+								i(209104),	-- Verdant Gladiator's Cloak
+								i(209105),	-- Verdant Gladiator's Drape
+								i(209106),	-- Verdant Gladiator's Shawl
+								i(209099),	-- Verdant Gladiator's Silk Amice
+								i(209103),	-- Verdant Gladiator's Silk Armbands
+								i(209101),	-- Verdant Gladiator's Silk Belt
+								i(209089),	-- Verdant Gladiator's Silk Blouse
+								i(209100),	-- Verdant Gladiator's Silk Cord
+								i(209092),	-- Verdant Gladiator's Silk Gloves
+								i(209095),	-- Verdant Gladiator's Silk Guise
+								i(209093),	-- Verdant Gladiator's Silk Handwraps
+								i(209094),	-- Verdant Gladiator's Silk Hood
+								i(209096),	-- Verdant Gladiator's Silk Leggings
+								i(209098),	-- Verdant Gladiator's Silk Mantle
+								i(209090),	-- Verdant Gladiator's Silk Slippers
+								i(209091),	-- Verdant Gladiator's Silk Treads
+								i(209097),	-- Verdant Gladiator's Silk Trousers
+								i(209088),	-- Verdant Gladiator's Silk Tunic
+								i(209102),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(ROGUE, {
+								i(209199),	-- Verdant Gladiator's Cloak
+								i(209200),	-- Verdant Gladiator's Drape
+								i(209195),	-- Verdant Gladiator's Leather Belt
+								i(209185),	-- Verdant Gladiator's Leather Boots
+								i(209191),	-- Verdant Gladiator's Leather Breeches
+								i(209187),	-- Verdant Gladiator's Leather Gloves
+								i(209188),	-- Verdant Gladiator's Leather Grips
+								i(209189),	-- Verdant Gladiator's Leather Helm
+								i(209184),	-- Verdant Gladiator's Leather Jerkin
+								i(209192),	-- Verdant Gladiator's Leather Legwraps
+								i(209190),	-- Verdant Gladiator's Leather Mask
+								i(209194),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209193),	-- Verdant Gladiator's Leather Spaulders
+								i(209196),	-- Verdant Gladiator's Leather Strap
+								i(209186),	-- Verdant Gladiator's Leather Treads
+								i(209183),	-- Verdant Gladiator's Leather Vest
+								i(209198),	-- Verdant Gladiator's Leather Wristguards
+								i(209197),	-- Verdant Gladiator's Leather Wristwraps
+								i(209201),	-- Verdant Gladiator's Shawl
+							}),
+							cl(SHAMAN, {
+								i(209252),	-- Verdant Gladiator's Chain Belt
+								i(209243),	-- Verdant Gladiator's Chain Boots
+								i(209255),	-- Verdant Gladiator's Chain Bracers
+								i(209249),	-- Verdant Gladiator's Chain Breeches
+								i(209247),	-- Verdant Gladiator's Chain Faceguard
+								i(209244),	-- Verdant Gladiator's Chain Gauntlets
+								i(209253),	-- Verdant Gladiator's Chain Girdle
+								i(209245),	-- Verdant Gladiator's Chain Handguards
+								i(209246),	-- Verdant Gladiator's Chain Helm
+								i(209248),	-- Verdant Gladiator's Chain Leggings
+								i(209250),	-- Verdant Gladiator's Chain Monnion
+								i(209242),	-- Verdant Gladiator's Chain Sabatons
+								i(209251),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209241),	-- Verdant Gladiator's Chain Tunic
+								i(209240),	-- Verdant Gladiator's Chain Vest
+								i(209254),	-- Verdant Gladiator's Chain Wristguards
+								i(209256),	-- Verdant Gladiator's Cloak
+								i(209257),	-- Verdant Gladiator's Drape
+								i(209258),	-- Verdant Gladiator's Shawl
+							}),
+							cl(WARLOCK, {
+								i(209123),	-- Verdant Gladiator's Cloak
+								i(209124),	-- Verdant Gladiator's Drape
+								i(209125),	-- Verdant Gladiator's Shawl
+								i(209118),	-- Verdant Gladiator's Silk Amice
+								i(209122),	-- Verdant Gladiator's Silk Armbands
+								i(209120),	-- Verdant Gladiator's Silk Belt
+								i(209119),	-- Verdant Gladiator's Silk Cord
+								i(209111),	-- Verdant Gladiator's Silk Gloves
+								i(209114),	-- Verdant Gladiator's Silk Guise
+								i(209112),	-- Verdant Gladiator's Silk Handwraps
+								i(209113),	-- Verdant Gladiator's Silk Hood
+								i(209115),	-- Verdant Gladiator's Silk Leggings
+								i(209117),	-- Verdant Gladiator's Silk Mantle
+								i(209107),	-- Verdant Gladiator's Silk Robe
+								i(209109),	-- Verdant Gladiator's Silk Slippers
+								i(209110),	-- Verdant Gladiator's Silk Treads
+								i(209116),	-- Verdant Gladiator's Silk Trousers
+								i(209108),	-- Verdant Gladiator's Silk Vestments
+								i(209121),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(WARRIOR, {
+								i(209313),	-- Verdant Gladiator's Cloak
+								i(209314),	-- Verdant Gladiator's Drape
+								i(209297),	-- Verdant Gladiator's Plate Chestguard
+								i(209298),	-- Verdant Gladiator's Plate Chestplate
+								i(209301),	-- Verdant Gladiator's Plate Gauntlets
+								i(209309),	-- Verdant Gladiator's Plate Girdle
+								i(209310),	-- Verdant Gladiator's Plate Greatbelt
+								i(209302),	-- Verdant Gladiator's Plate Handguards
+								i(209303),	-- Verdant Gladiator's Plate Helm
+								i(209304),	-- Verdant Gladiator's Plate Helmet
+								i(209305),	-- Verdant Gladiator's Plate Legguards
+								i(209308),	-- Verdant Gladiator's Plate Pauldrons
+								i(209307),	-- Verdant Gladiator's Plate Shoulders
+								i(209300),	-- Verdant Gladiator's Plate Stompers
+								i(209312),	-- Verdant Gladiator's Plate Vambraces
+								i(209299),	-- Verdant Gladiator's Plate Warboots
+								i(209306),	-- Verdant Gladiator's Plate Wargreaves
+								i(209311),	-- Verdant Gladiator's Plate Wristguards
+								i(209315),	-- Verdant Gladiator's Shawl
+							}),
+						}),
+					})),
+					n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 8107 }, {
+						n(CLASSES, {
+							cl(DEATHKNIGHT, {
+								i(209275),	-- Verdant Gladiator's Cloak
+								i(209276),	-- Verdant Gladiator's Drape
+								i(209277),	-- Verdant Gladiator's Shawl
+								i(209259),	-- Verdant Gladiator's Plate Chestguard
+								i(209260),	-- Verdant Gladiator's Plate Chestplate
+								i(209263),	-- Verdant Gladiator's Plate Gauntlets
+								i(209271),	-- Verdant Gladiator's Plate Girdle
+								i(209272),	-- Verdant Gladiator's Plate Greatbelt
+								i(209264),	-- Verdant Gladiator's Plate Handguards
+								i(209265),	-- Verdant Gladiator's Plate Helm
+								i(209266),	-- Verdant Gladiator's Plate Helmet
+								i(209267),	-- Verdant Gladiator's Plate Legguards
+								i(209270),	-- Verdant Gladiator's Plate Pauldrons
+								i(209269),	-- Verdant Gladiator's Plate Shoulders
+								i(209262),	-- Verdant Gladiator's Plate Stompers
+								i(209274),	-- Verdant Gladiator's Plate Vambraces
+								i(209261),	-- Verdant Gladiator's Plate Warboots
+								i(209268),	-- Verdant Gladiator's Plate Wargreaves
+								i(209273),	-- Verdant Gladiator's Plate Wristguards
+							}),
+							cl(DEMONHUNTER, {
+								i(209161),	-- Verdant Gladiator's Cloak
+								i(209162),	-- Verdant Gladiator's Drape
+								i(209157),	-- Verdant Gladiator's Leather Belt
+								i(209147),	-- Verdant Gladiator's Leather Boots
+								i(209153),	-- Verdant Gladiator's Leather Breeches
+								i(209149),	-- Verdant Gladiator's Leather Gloves
+								i(209150),	-- Verdant Gladiator's Leather Grips
+								i(209151),	-- Verdant Gladiator's Leather Helm
+								i(209146),	-- Verdant Gladiator's Leather Jerkin
+								i(209154),	-- Verdant Gladiator's Leather Legwraps
+								i(209152),	-- Verdant Gladiator's Leather Mask
+								i(209156),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209155),	-- Verdant Gladiator's Leather Spaulders
+								i(209158),	-- Verdant Gladiator's Leather Strap
+								i(209148),	-- Verdant Gladiator's Leather Treads
+								i(209145),	-- Verdant Gladiator's Leather Vest
+								i(209160),	-- Verdant Gladiator's Leather Wristguards
+								i(209159),	-- Verdant Gladiator's Leather Wristwraps
+								i(209163),	-- Verdant Gladiator's Shawl
+							}),
+							cl(DRUID, {
+								i(209142),	-- Verdant Gladiator's Cloak
+								i(209143),	-- Verdant Gladiator's Drape
+								i(209138),	-- Verdant Gladiator's Leather Belt
+								i(209128),	-- Verdant Gladiator's Leather Boots
+								i(209134),	-- Verdant Gladiator's Leather Breeches
+								i(209130),	-- Verdant Gladiator's Leather Gloves
+								i(209131),	-- Verdant Gladiator's Leather Grips
+								i(209132),	-- Verdant Gladiator's Leather Helm
+								i(209127),	-- Verdant Gladiator's Leather Jerkin
+								i(209135),	-- Verdant Gladiator's Leather Legwraps
+								i(209133),	-- Verdant Gladiator's Leather Mask
+								i(209137),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209136),	-- Verdant Gladiator's Leather Spaulders
+								i(209139),	-- Verdant Gladiator's Leather Strap
+								i(209129),	-- Verdant Gladiator's Leather Treads
+								i(209126),	-- Verdant Gladiator's Leather Vest
+								i(209141),	-- Verdant Gladiator's Leather Wristguards
+								i(209140),	-- Verdant Gladiator's Leather Wristwraps
+								i(209144),	-- Verdant Gladiator's Shawl
+							}),
+							cl(EVOKER, {
+								i(209218),	-- Verdant Gladiator's Cloak
+								i(209219),	-- Verdant Gladiator's Drape
+								i(209220),	-- Verdant Gladiator's Shawl
+								i(209214),	-- Verdant Gladiator's Chain Belt
+								i(209205),	-- Verdant Gladiator's Chain Boots
+								i(209217),	-- Verdant Gladiator's Chain Bracers
+								i(209211),	-- Verdant Gladiator's Chain Breeches
+								i(209209),	-- Verdant Gladiator's Chain Faceguard
+								i(209206),	-- Verdant Gladiator's Chain Gauntlets
+								i(209215),	-- Verdant Gladiator's Chain Girdle
+								i(209207),	-- Verdant Gladiator's Chain Handguards
+								i(209208),	-- Verdant Gladiator's Chain Helm
+								i(209210),	-- Verdant Gladiator's Chain Leggings
+								i(209212),	-- Verdant Gladiator's Chain Monnion
+								i(209202),	-- Verdant Gladiator's Chain Robe
+								i(209204),	-- Verdant Gladiator's Chain Sabatons
+								i(209213),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209203),	-- Verdant Gladiator's Chain Vestments
+								i(209216),	-- Verdant Gladiator's Chain Wristguards
+							}),
+							cl(HUNTER, {
+								i(209233),	-- Verdant Gladiator's Chain Belt
+								i(209224),	-- Verdant Gladiator's Chain Boots
+								i(209236),	-- Verdant Gladiator's Chain Bracers
+								i(209230),	-- Verdant Gladiator's Chain Breeches
+								i(209228),	-- Verdant Gladiator's Chain Faceguard
+								i(209225),	-- Verdant Gladiator's Chain Gauntlets
+								i(209234),	-- Verdant Gladiator's Chain Girdle
+								i(209226),	-- Verdant Gladiator's Chain Handguards
+								i(209227),	-- Verdant Gladiator's Chain Helm
+								i(209229),	-- Verdant Gladiator's Chain Leggings
+								i(209231),	-- Verdant Gladiator's Chain Monnion
+								i(209223),	-- Verdant Gladiator's Chain Sabatons
+								i(209232),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209222),	-- Verdant Gladiator's Chain Tunic
+								i(209221),	-- Verdant Gladiator's Chain Vest
+								i(209235),	-- Verdant Gladiator's Chain Wristguards
+								i(209237),	-- Verdant Gladiator's Cloak
+								i(209238),	-- Verdant Gladiator's Drape
+								i(209239),	-- Verdant Gladiator's Shawl
+							}),
+							cl(MAGE, {
+								i(209085),	-- Verdant Gladiator's Cloak
+								i(209086),	-- Verdant Gladiator's Drape
+								i(209087),	-- Verdant Gladiator's Shawl
+								i(209080),	-- Verdant Gladiator's Silk Amice
+								i(209084),	-- Verdant Gladiator's Silk Armbands
+								i(209082),	-- Verdant Gladiator's Silk Belt
+								i(209070),	-- Verdant Gladiator's Silk Blouse
+								i(209076),	-- Verdant Gladiator's Silk Cap
+								i(209081),	-- Verdant Gladiator's Silk Cord
+								i(209073),	-- Verdant Gladiator's Silk Gloves
+								i(209074),	-- Verdant Gladiator's Silk Handwraps
+								i(209075),	-- Verdant Gladiator's Silk Hat
+								i(209077),	-- Verdant Gladiator's Silk Leggings
+								i(209079),	-- Verdant Gladiator's Silk Mantle
+								i(209071),	-- Verdant Gladiator's Silk Slippers
+								i(209072),	-- Verdant Gladiator's Silk Treads
+								i(209078),	-- Verdant Gladiator's Silk Trousers
+								i(209069),	-- Verdant Gladiator's Silk Tunic
+								i(209083),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(MONK, {
+								i(209180),	-- Verdant Gladiator's Cloak
+								i(209181),	-- Verdant Gladiator's Drape
+								i(209176),	-- Verdant Gladiator's Leather Belt
+								i(209166),	-- Verdant Gladiator's Leather Boots
+								i(209172),	-- Verdant Gladiator's Leather Breeches
+								i(209168),	-- Verdant Gladiator's Leather Gloves
+								i(209169),	-- Verdant Gladiator's Leather Grips
+								i(209170),	-- Verdant Gladiator's Leather Helm
+								i(209165),	-- Verdant Gladiator's Leather Jerkin
+								i(209173),	-- Verdant Gladiator's Leather Legwraps
+								i(209171),	-- Verdant Gladiator's Leather Mask
+								i(209175),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209174),	-- Verdant Gladiator's Leather Spaulders
+								i(209177),	-- Verdant Gladiator's Leather Strap
+								i(209167),	-- Verdant Gladiator's Leather Treads
+								i(209164),	-- Verdant Gladiator's Leather Vest
+								i(209179),	-- Verdant Gladiator's Leather Wristguards
+								i(209178),	-- Verdant Gladiator's Leather Wristwraps
+								i(209182),	-- Verdant Gladiator's Shawl
+							}),
+							cl(PALADIN, {
+								i(209294),	-- Verdant Gladiator's Cloak
+								i(209295),	-- Verdant Gladiator's Drape
+								i(209278),	-- Verdant Gladiator's Plate Chestguard
+								i(209279),	-- Verdant Gladiator's Plate Chestplate
+								i(209282),	-- Verdant Gladiator's Plate Gauntlets
+								i(209290),	-- Verdant Gladiator's Plate Girdle
+								i(209291),	-- Verdant Gladiator's Plate Greatbelt
+								i(209283),	-- Verdant Gladiator's Plate Handguards
+								i(209284),	-- Verdant Gladiator's Plate Helm
+								i(209285),	-- Verdant Gladiator's Plate Helmet
+								i(209286),	-- Verdant Gladiator's Plate Legguards
+								i(209289),	-- Verdant Gladiator's Plate Pauldrons
+								i(209288),	-- Verdant Gladiator's Plate Shoulders
+								i(209281),	-- Verdant Gladiator's Plate Stompers
+								i(209287),	-- Verdant Gladiator's Plate Tasses
+								i(209293),	-- Verdant Gladiator's Plate Vambraces
+								i(209280),	-- Verdant Gladiator's Plate Warboots
+								i(209292),	-- Verdant Gladiator's Plate Wristguards
+								i(209296),	-- Verdant Gladiator's Shawl
+							}),
+							cl(PRIEST, {
+								i(209104),	-- Verdant Gladiator's Cloak
+								i(209105),	-- Verdant Gladiator's Drape
+								i(209106),	-- Verdant Gladiator's Shawl
+								i(209099),	-- Verdant Gladiator's Silk Amice
+								i(209103),	-- Verdant Gladiator's Silk Armbands
+								i(209101),	-- Verdant Gladiator's Silk Belt
+								i(209089),	-- Verdant Gladiator's Silk Blouse
+								i(209100),	-- Verdant Gladiator's Silk Cord
+								i(209092),	-- Verdant Gladiator's Silk Gloves
+								i(209095),	-- Verdant Gladiator's Silk Guise
+								i(209093),	-- Verdant Gladiator's Silk Handwraps
+								i(209094),	-- Verdant Gladiator's Silk Hood
+								i(209096),	-- Verdant Gladiator's Silk Leggings
+								i(209098),	-- Verdant Gladiator's Silk Mantle
+								i(209090),	-- Verdant Gladiator's Silk Slippers
+								i(209091),	-- Verdant Gladiator's Silk Treads
+								i(209097),	-- Verdant Gladiator's Silk Trousers
+								i(209088),	-- Verdant Gladiator's Silk Tunic
+								i(209102),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(ROGUE, {
+								i(209199),	-- Verdant Gladiator's Cloak
+								i(209200),	-- Verdant Gladiator's Drape
+								i(209195),	-- Verdant Gladiator's Leather Belt
+								i(209185),	-- Verdant Gladiator's Leather Boots
+								i(209191),	-- Verdant Gladiator's Leather Breeches
+								i(209187),	-- Verdant Gladiator's Leather Gloves
+								i(209188),	-- Verdant Gladiator's Leather Grips
+								i(209189),	-- Verdant Gladiator's Leather Helm
+								i(209184),	-- Verdant Gladiator's Leather Jerkin
+								i(209192),	-- Verdant Gladiator's Leather Legwraps
+								i(209190),	-- Verdant Gladiator's Leather Mask
+								i(209194),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209193),	-- Verdant Gladiator's Leather Spaulders
+								i(209196),	-- Verdant Gladiator's Leather Strap
+								i(209186),	-- Verdant Gladiator's Leather Treads
+								i(209183),	-- Verdant Gladiator's Leather Vest
+								i(209198),	-- Verdant Gladiator's Leather Wristguards
+								i(209197),	-- Verdant Gladiator's Leather Wristwraps
+								i(209201),	-- Verdant Gladiator's Shawl
+							}),
+							cl(SHAMAN, {
+								i(209252),	-- Verdant Gladiator's Chain Belt
+								i(209243),	-- Verdant Gladiator's Chain Boots
+								i(209255),	-- Verdant Gladiator's Chain Bracers
+								i(209249),	-- Verdant Gladiator's Chain Breeches
+								i(209247),	-- Verdant Gladiator's Chain Faceguard
+								i(209244),	-- Verdant Gladiator's Chain Gauntlets
+								i(209253),	-- Verdant Gladiator's Chain Girdle
+								i(209245),	-- Verdant Gladiator's Chain Handguards
+								i(209246),	-- Verdant Gladiator's Chain Helm
+								i(209248),	-- Verdant Gladiator's Chain Leggings
+								i(209250),	-- Verdant Gladiator's Chain Monnion
+								i(209242),	-- Verdant Gladiator's Chain Sabatons
+								i(209251),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209241),	-- Verdant Gladiator's Chain Tunic
+								i(209240),	-- Verdant Gladiator's Chain Vest
+								i(209254),	-- Verdant Gladiator's Chain Wristguards
+								i(209256),	-- Verdant Gladiator's Cloak
+								i(209257),	-- Verdant Gladiator's Drape
+								i(209258),	-- Verdant Gladiator's Shawl
+							}),
+							cl(WARLOCK, {
+								i(209123),	-- Verdant Gladiator's Cloak
+								i(209124),	-- Verdant Gladiator's Drape
+								i(209125),	-- Verdant Gladiator's Shawl
+								i(209118),	-- Verdant Gladiator's Silk Amice
+								i(209122),	-- Verdant Gladiator's Silk Armbands
+								i(209120),	-- Verdant Gladiator's Silk Belt
+								i(209119),	-- Verdant Gladiator's Silk Cord
+								i(209111),	-- Verdant Gladiator's Silk Gloves
+								i(209114),	-- Verdant Gladiator's Silk Guise
+								i(209112),	-- Verdant Gladiator's Silk Handwraps
+								i(209113),	-- Verdant Gladiator's Silk Hood
+								i(209115),	-- Verdant Gladiator's Silk Leggings
+								i(209117),	-- Verdant Gladiator's Silk Mantle
+								i(209107),	-- Verdant Gladiator's Silk Robe
+								i(209109),	-- Verdant Gladiator's Silk Slippers
+								i(209110),	-- Verdant Gladiator's Silk Treads
+								i(209116),	-- Verdant Gladiator's Silk Trousers
+								i(209108),	-- Verdant Gladiator's Silk Vestments
+								i(209121),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(WARRIOR, {
+								i(209313),	-- Verdant Gladiator's Cloak
+								i(209314),	-- Verdant Gladiator's Drape
+								i(209297),	-- Verdant Gladiator's Plate Chestguard
+								i(209298),	-- Verdant Gladiator's Plate Chestplate
+								i(209301),	-- Verdant Gladiator's Plate Gauntlets
+								i(209309),	-- Verdant Gladiator's Plate Girdle
+								i(209310),	-- Verdant Gladiator's Plate Greatbelt
+								i(209302),	-- Verdant Gladiator's Plate Handguards
+								i(209303),	-- Verdant Gladiator's Plate Helm
+								i(209304),	-- Verdant Gladiator's Plate Helmet
+								i(209305),	-- Verdant Gladiator's Plate Legguards
+								i(209308),	-- Verdant Gladiator's Plate Pauldrons
+								i(209307),	-- Verdant Gladiator's Plate Shoulders
+								i(209300),	-- Verdant Gladiator's Plate Stompers
+								i(209312),	-- Verdant Gladiator's Plate Vambraces
+								i(209299),	-- Verdant Gladiator's Plate Warboots
+								i(209306),	-- Verdant Gladiator's Plate Wargreaves
+								i(209311),	-- Verdant Gladiator's Plate Wristguards
+								i(209315),	-- Verdant Gladiator's Shawl
+							}),
 						}),
 					})),
 				}),

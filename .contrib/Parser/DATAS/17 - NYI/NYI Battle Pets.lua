@@ -5,12 +5,28 @@ root(ROOTS.NeverImplemented, {
 	filter(BATTLE_PETS, {
 		tier(CLASSIC_TIER, {
 			-- Without SpeciesID Attached
+			i(21168, {	-- Baby Shark (PET!)
+				["modelID"] = 21168,
+			}),
 			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
 				["modelID"] = 9209,
+			}),
+			i(18963, {	-- Turtle Egg (Albino)
+				-- ["modelID"] = ,
 			}),
 			i(18964, {	-- Loggerhead Snapjaw / Turtle Egg (Loggerhead) (PET!)
 				["modelID"] = 14657,
 			}),
+			i(18965, {	-- Turtle Egg (Hawksbill)
+				-- ["modelID"] = ,
+			}),
+			i(18966, {	-- Turtle Egg (Leatherback)
+				-- ["modelID"] = ,
+			}),
+			i(18967, {	-- Turtle Egg (Olive)
+				-- ["modelID"] = ,
+			}),
+
 			i(13342, {	-- Pet Fish (PET!)
 				-- ["modelID"] = ,
 			}),
@@ -36,14 +52,14 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 2.4.0
+			-- #if BEFORE 7.0.3
 			tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 				-- With SpeciesID Attached
-				-- #if BEFORE 7.0.3
 				i(23712, {	-- White Tiger Cub (PET!),  Comment: Later reused for Ash'ana.
 					["modelID"] = 16942,
 				}),
-				-- #endif
 			})),
+			-- #endif
 		}),
 		tier(WOTLK_TIER, {
 			-- 3.0.2
@@ -51,9 +67,6 @@ root(ROOTS.NeverImplemented, {
 				-- Without SpeciesID Attached
 				i(39148, {	-- Baby Coralshell Turtle (PET!)
 					-- ["modelID"] = ,
-				}),
-				i(21168, {	-- Baby Shark (PET!)
-					["modelID"] = 21168,
 				}),
 			})),
 
@@ -1100,9 +1113,11 @@ root(ROOTS.NeverImplemented, {
 				i(180838),	-- Blue Etherwyrm (PET!) [Wild Etherwyrm, item was never used]
 				i(180837),	-- Blue Glimmerfly (PET!) [Fluttering Glimmerfly, item was never used]
 				i(181259),	-- Clutch (PET!) [Wild Pet, item was never used]
+				i(180632),	-- Gorm Rootstinger (PET!) [Gorm Rootstinger, item was never used]
 				i(180590),	-- Lost Soul (PET!) [Wild Pet, item was never used]
 				i(180860),	-- Orange Vulpin (PET!) [Copperfur Kit, item was never used]
 				i(180841),	-- Olive Dragon Turtle (PET!) [Glimmerpool Hatchling, item never used]
+				i(182672),	-- Misty Leaper (PET!)
 				i(180840),	-- Pink Glimmerfly (PET!) [Vibrant Glimmerfly, item was never used]
 				i(180861),	-- Red Vulpin (PET!) [Rustfur Kit, item was never used]
 				i(180867),	-- Silver Crane (PET!) [Wader Chick, item was never used]
@@ -1110,6 +1125,7 @@ root(ROOTS.NeverImplemented, {
 				i(183853),	-- Sinfall Screecher (PET!) [Sinfall Screecher, item was never used]
 				i(184034),	-- Stony's Infused Ruby (PET!) [Stony, item was never used]
 				i(183714),	-- Swamp Reed (PET!) [Withering Creeper, item was never used]
+				i(180627),	-- Tranquil Wader (PET!) [Tranquil Wader, item was never used]
 			})),
 
 			-- 9.0.2
@@ -1227,14 +1243,14 @@ root(ROOTS.NeverImplemented, {
 				i(193614, {	-- Groundshaker (PET!)
 					["modelID"] = 106649,
 				}),
+				i(191946, {	-- Mister Muskoxeles (PET!)
+					["modelID"] = 106681,
+				}),
 				i(193380, {	-- Pink Salamanther (PET!)
 					["modelID"] = 106629,
 				}),
 				i(193587, {	-- Time-Lost Duck (PET!)
 					["modelID"] = 106635,
-				}),
-				i(193429, {	-- Time-Lost Salamanther (PET!)
-					["modelID"] = 106624,
 				}),
 				i(193620, {	-- Time-Lost Slyvern (PET!)
 					["modelID"] = 106661,
@@ -1272,19 +1288,10 @@ root(ROOTS.NeverImplemented, {
 			-- 10.0.5
 			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				-- Only SpeciesID
-				pet(3255, {	-- Buttercup (PET!)
-					["modelID"] = 105497,
-				}),
-				pet(3253, {	-- Crushhoof (PET!)
-					-- ["modelID"] = ,
-				}),
 				pet(3254, {	-- Watcher of the Huntress (PET!)
 					["modelID"] = 105429,
 				}),
 				-- With SpeciesID Attached
-				i(190176, {	-- Drazka'zet the Wrathful (PET!)
-					["modelID"] = 105301,
-				}),
 				i(190173, {	-- Lil' Maka'jin (PET!)
 					["modelID"] = 83638,
 				}),
@@ -1375,12 +1382,6 @@ root(ROOTS.NeverImplemented, {
 				i(205017, {	-- Byrn (PET!)
 					["modelID"] = 112151,
 				}),
-				i(205024, {	-- Cheddar (PET!)
-					["modelID"] = 112159,
-				}),
-				i(205010, {	-- Crimson Swoglet (PET!)
-					["modelID"] = 112147,
-				}),
 				i(205008, {	-- Emerald Swoglet (PET!)
 					["modelID"] = 112145,
 				}),
@@ -1408,9 +1409,6 @@ root(ROOTS.NeverImplemented, {
 				i(205149, {	-- Ravenous Shalewing (PET!)
 					["modelID"] = 112187,
 				}),
-				i(205160, {	-- Rithro (PET!)
-					["modelID"] = 111311,
-				}),
 				i(205122, {	-- Roseshell (PET!)
 					["modelID"] = 112179,
 				}),
@@ -1435,9 +1433,33 @@ root(ROOTS.NeverImplemented, {
 				i(205037, {	-- Void Lurker (PET!)
 					["modelID"] = 112164,
 				}),
+			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				-- Trainer Pets --
+				pet(3587),	-- Lifelike Mechanical Duckling (PET!)
+				pet(3608),	-- Lifelike Mechanical Turtle (PET!)
+				pet(3609),	-- Sporeflower (PET!)
+				pet(3975),	-- Midnight Terrorwing (PET!)
+				pet(4237),	-- Treanthony (PET!)
+				-- With SpeciesID Attached
+				i(206174, {	-- Blub (PET!)
+					["modelID"] = 112678,
+				}),
+			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 				-- Without SpeciesID Attached
-				i(205232, {	-- [DNT] REUSE (PET!)
-					["modelID"] = 112180,
+				i(208850),	-- Lil' Maggz (PET!) [Item Never Available]
+			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				-- With SpeciesID Attached
+				i(210409, {	-- Aura (PET!) [Trading Post?]
+					["modelID"] = 114495,
 				}),
 			})),
 		}),

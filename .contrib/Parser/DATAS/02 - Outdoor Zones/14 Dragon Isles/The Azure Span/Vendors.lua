@@ -4,6 +4,16 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(VENDORS, {
+			n(186446, {	-- Elder Nappa <Innkeeper>
+				["coord"] = { 12.4, 49.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(194689),	-- Anchovy Crisps
+					i(194683),	-- Buttermilk
+					i(194692),	-- Distilled Fish Juice
+					i(194693),	-- Improvised Sushi
+					i(197850),	-- Mammoth Dumpling
+				},
+			}),
 			n(193637, {	-- Jinkutuk
 				["coord"] = { 13.9, 49.5, THE_AZURE_SPAN },
 				["g"] = {
@@ -26,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(200927, {	-- Petal (PET!)
 						["cost"] = {
-							{ "i", 163036, 250 },	-- 250x Polished Pet Charm
+							{ "i", 163036, 100 },	-- 100x Polished Pet Charm
 						},
 					}),
 					i(201703, {	-- Pinkie (PET!)
@@ -67,6 +77,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ "i", 193633, 1 },	-- 1x Unstable Arcane Loop
 						},
 					}),
+				},
+			}),
+			n(192560, {	-- Elder Nappa <Innkeeper>
+				["coord"] = { 13.2, 49.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(197847),	-- Gorloc Fin Soup
+				},
+			}),
+			n(189460, {	-- Vel Tal IX
+				["coord"] = { 37.4, 62.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(197853),	-- Critter Kebab
+					i(197854),	-- Enchanted Argali Tenderloin
+					i(197851),	-- Extra Crispy Mutton
+					i(197852),	-- Goat Brisket
+					i(194694),	-- Seasoned Hornswog Steak
+					i(194681),	-- Sugarwing Cupcake
+					i(194688),	-- Vorquin Filet
 				},
 			}),
 		}),

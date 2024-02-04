@@ -2,43 +2,18 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pet Battle Dungeons
-	q(33137, {	-- The Celestial Tournament
-		["provider"] = { "n", 73082 },	-- Master Li
-		["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-		["isWeekly"] = true,
-		["maps"] = {
-			571,	-- Pet Dungeon
+	ach(14021, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- The Shadows Revealed
+		["sym"] = {{ "meta_achievement",
+			11765,	-- Pet Battle Challenge: Wailing Caverns
+			11856,	-- Pet Battle Challenge: Deadmines
+			13269,	-- Pet Battle Challenge: Gnomeregan
+			13627,	-- Pet Battle Challenge: Stratholme
+			14020,	-- Pet Battle Challenge: Blackrock Depths
+		}},
+		["groups"] = {
+			i(174871),	-- Mayhem Mind Melder (TOY!)
 		},
-		["g"] = {
-			n(73082, {	-- Master Li <Celestial Tournament Host>
-				["coord"] = { 34.7, 59.6, TIMELESS_ISLE },
-				["g"] = {
-					i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-					i(101771, {	-- Xu-Fu, Cub of Xuen (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-					i(102147, {	-- Yu'la, Broodling of Yu'lon (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-					i(102146, {	-- Zao, Calfling of Niuzao (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-				},
-			}),
-			q(33136, {	-- The Rainy Day is Here
-				["provider"] = { "n", 73082 },	-- Master Li
-				["sourceQuest"] = 33137,	-- The Celestial Tournament
-				["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
-				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-				["lvl"] = 90,
-				["g"] = {
-					i(101529),	-- Celestial Coin
-				},
-			}),
-		},
-	}),
+	})),
 	q(58458, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Pet Battle Challenge: Blackrock Depths
 		["provider"] = { "n", 161782 },	-- Burt Macklyn
 		["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
@@ -124,7 +99,7 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 			q(46291, {	-- The Deadmines Strike Back
 				["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 				["coord"] = { 41.6, 71.2, WESTFALL },
-				["sourceQuest"] = 46263,	-- Deadmines, Part Three?
+				["sourceQuest"] = 46293,	-- Deadmines, Part Three?
 				["g"] = {
 					spell(244502),	-- Manapoof Link: Westfall
 				},

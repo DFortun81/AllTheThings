@@ -166,33 +166,41 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							ach(14856),	-- Charmed, I'm Sure
 							ach(14865),	-- Disciple of Humility
 							achraw(14862, {	-- It's How You Wear It
-								crit(1),	-- Herald's Footpads
-								crit(2),	-- Deep Echo Trident
-								crit(3),	-- Vial of Lichfrost
-								crit(4),	-- Phial of Serenity
-								crit(5),	-- Ring of Warding
-								crit(6),	-- Spiritforged Aegis
+								crit(51087),	-- Herald's Footpads
+								crit(51088),	-- Deep Echo Trident
+								crit(51089),	-- Vial of Lichfrost
+								crit(51090),	-- Phial of Serenity
+								crit(51091),	-- Ring of Warding
+								crit(51092),	-- Spiritforged Aegis
 							}),
 							achraw(14854, {	-- It's Not What You Wear
-								crit(1),	-- Herald's Footpads
-								crit(2),	-- Deep Echo Trident
-								crit(3),	-- Vial of Lichfrost
-								crit(4),	-- Phial of Serenity
-								crit(5),	-- Ring of Warding
-								crit(6),	-- Spiritforged Aegis
+								crit(51081),	-- Herald's Footpads
+								crit(51082),	-- Deep Echo Trident
+								crit(51083),	-- Vial of Lichfrost
+								crit(51084),	-- Phial of Serenity
+								crit(51085),	-- Ring of Warding
+								crit(51086),	-- Spiritforged Aegis
 							}),
-							ach(14861),	-- Learning from the Masters
+							ach(14861, {	-- Learning from the Masters
+								-- Added criteria here because else it somehow doesn't show everything linked under it
+								crit(51098),	-- Defeat Kalisthene as Pelagos
+								crit(51097),	-- Defeat Kalisthene as Kleia
+								crit(51099),	-- Defeat Kalisthene as Mikanikos
+								crit(51100),	-- Defeat Athanos as Pelagos
+								crit(51101),	-- Defeat Athanos as Kleia
+								crit(51102),	-- Defeat Athanos as Mikanikos
+							}),
 							achraw(14866, {	-- Master of the Path
-								crit(1),	-- Kalisthene
-								crit(2),	-- Echthra
-								crit(3),	-- Alderyn and Myn'ir
-								crit(4),	-- Nuuminuuru
-								crit(5),	-- Craven Corinth
-								crit(6),	-- Splinterbark Nightmare
-								crit(7),	-- Thran'tiok
-								crit(8),	-- Mad Mortimer
-								crit(9),	-- Athanos
-								crit(10),	-- Azaruux
+								crit(51134),	-- Kalisthene
+								crit(51135),	-- Echthra
+								crit(51136),	-- Alderyn and Myn'ir
+								crit(51137),	-- Nuuminuuru
+								crit(51138),	-- Craven Corinth
+								crit(51139),	-- Splinterbark Nightmare
+								crit(51140),	-- Thran'tiok
+								crit(51141),	-- Mad Mortimer
+								crit(51142),	-- Athanos
+								crit(51143),	-- Azaruux
 							}),
 							ach(14502),	-- Pursuing Loyalty
 							ach(14852),	-- The Hoot of the Issue
@@ -245,56 +253,110 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["sourceQuests"] = { 62997 },	-- Blueprint: Vial of Lichfrost
 										["provider"] = { "i", 184477 },	-- Vial of Lichfrost
 									}),
+									q(62986, {	-- Blueprint: Vesper of Calling
+										["provider"] = { "i", 184450 },	-- Blueprint: Vesper of Calling
+									}),
+									q(62477, {	-- Blueprint: Skystrider Glider
+										["provider"] = { "i", 183761 },	-- Blueprint: Skystrider Glider
+									}),
+									q(61272, {	-- Blueprint: Charm of Discord
+										["provider"] = { "i", 181155 },	-- Blueprint: Charm of Discord
+									}),
+									q(61304, {	-- Blueprint: Kyrian Smith's Kit
+										["provider"] = { "i", 181165 },	-- Blueprint: Kyrian Smith's Kit
+									}),
+									q(63000, {	-- Blueprint: Charm of Focus
+										["provider"] = { "i", 181238 },	-- Blueprint: Charm of Focus
+									}),
+									q(62997, {	-- Blueprint: Vial of Lichfrost
+										["provider"] = { "i", 184349 },	-- Blueprint: Vial of Lichfrost
+									}),
+									q(62928, {	-- Blueprint: Ring of Warding
+										["provider"] = { "i", 184348 },	-- Blueprint: Ring of Warding
+									}),
+									q(62981, {	-- Blueprint: Artisan Tool Belt
+										["provider"] = { "i", 184414 },	-- Blueprint: Artisan Tool Belt
+									}),
+									q(62971, {	-- Blueprint: Gilded Abacus
+										["provider"] = { "i", 184411 },	-- Blueprint: Gilded Abacus
+									}),
+									q(62486, {	-- Blueprint: Empyrean Refreshment
+										["provider"] = { "i", 183794 },	-- Blueprint: Empyrean Refreshment
+									}),
+									q(61269, {	-- Blueprint: Charm of Persistence
+										["provider"] = { "i", 181147 },	-- Blueprint: Charm of Persistence
+									}),
+									q(60973, {	-- Blueprint: Phial of Serenity
+										["provider"] = { "i", 180495 },	-- Blueprint: Phial of Serenity
+									}),
+									q(60946, {	-- Blueprint: Deep Echo Trident
+										["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
+									}),
+									q(62984, {	-- Blueprint: Medallion of Service
+										["provider"] = { "i", 184445 },	-- Blueprint: Medallion of Service
+									}),
+									q(60947, {	-- Blueprint: Charm of Fortitude
+										["provider"] = { "i", 180482 },	-- Blueprint: Charm of Fortitude
+									}),
+									q(60975, {	-- Blueprint: Spiritforged Aegis
+										["provider"] = { "i", 180494 },	-- Blueprint: Spiritforged Aegis
+									}),
+									q(62970, {	-- Blueprint: Steward Mail Pouch
+										["provider"] = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
+									}),
+									q(61713, {	-- Blueprint: Charm of Quickness
+										["provider"] = { "i", 182162 },	-- Blueprint: Charm of Quickness
+									}),
 								}),
 								filter(RECIPES, {
 									-- Lures
 									recipe(333530, {	-- Anointment Oil
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333548, {	-- Ashfallen Key
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333545, {	-- Catalyst of Creation
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333535, {	-- Fountain of Rejuvenation
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333533, {	-- Heartpiercer Javelin
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333549, {	-- Humility's Guard
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(328321, {	-- Overcharged Goliath Core
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333546, {	-- Praetor Resonance Beacon
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(328680, {	-- Soul Mirror
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333547, {	-- Soulseeker Crystal
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 
 									-- Boons
 									recipe(345786, {	-- Artisan Tool Belt
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(342521),	-- Empyrean Refreshment
 									recipe(345760, {	-- Gilded Abacus
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345713),	-- Kyrian Smith's Kit
 									recipe(345894),	-- Medallion of Service
 									recipe(335705, {	-- Sigil of Haunting Memories
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(342503),	-- Skystrider Glider
 									recipe(345757, {	-- Steward Mail Pouch
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345916),	-- Vesper of Calling
 
@@ -307,22 +369,22 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 									-- Equipment
 									recipe(333230, {	-- Deep Echo Trident
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333209, {	-- Herald's Footpads
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333372, {	-- Phial of Serenity
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345978, {	-- Ring of Warding
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333374, {	-- Spiritforged Aegis
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333362, {	-- Vial of Lichfrost
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 								}),
 								n(CRAFTABLES, {
@@ -389,7 +451,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", ELYSIAN_FEATHERS, 4 },
 										},
 									}),
-
 									-- Boons
 									i(184578, {	-- Artisan Tool Belt
 										["cost"] = {
@@ -442,24 +503,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", NIGHTFORGED_STEEL, 8 },
 										},
 									}),
-
 									-- Charms
-									i(181140, {	-- Charm of Alacrity
-										["cost"] = {
-											{ "i", ELYSIAN_FEATHERS, 4 },
-											{ "i", NIGHTFORGED_STEEL, 2 },
-										},
-									}),
 									i(181157, {	-- Charm of Discord
 										["cost"] = {
 											{ "i", CALLOUSED_BONE, 4 },
 											{ "i", NIGHTFORGED_STEEL, 4 },
-										},
-									}),
-									i(181159, {	-- Charm of Energizing
-										["cost"] = {
-											{ "i", CALLOUSED_BONE, 4 },
-											{ "i", ELYSIAN_FEATHERS, 3 },
 										},
 									}),
 									i(181239, {	-- Charm of Focus
@@ -488,7 +536,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", ELYSIAN_FEATHERS, 4 },
 										},
 									}),
-
 									-- Equipment
 									i(181499, {	-- Deep Echo Trident
 										["cost"] = {
@@ -578,7 +625,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", 181279, 1 },	-- 1xAshfallen Key
 										},
 									}),
-									q(61356, {	-- Echthra, Dame of Hated
+									q(61356, {	-- Echthra, Dame of Hatred
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
@@ -586,6 +633,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181273, 1 },	-- 1xAnointment Oil
 										},
+
 									}),
 									q(62219, {	-- Fanciful Distractions
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
@@ -699,67 +747,52 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["crs"] = { 172409 },	-- Myn'ir
 										["g"] = {
 											n(COURAGE, {
-												i(182162, {	-- Blueprint: Charm of Quickness
-													["questID"] = 61713,	-- Blueprint: Charm of Quickness
-												}),
+												i(182162),	-- Blueprint: Charm of Quickness
 											}),
 											n(LOYALTY, {
 												["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 												["g"] = {
-													crit(1, {	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
+													crit(51079, {	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
 														["achievementID"] = 14852,	-- The Hoot of the Issue
 													}),
-													crit(3, ach(14502)),	-- Pursuing Loyalty - Alderyn & Myn'ir
-													i(184407, {	-- Blueprint: Steward Mail Pouch
-													--	this quest showed as complete for me before i did it... not sure what's up there.
-														["questID"] = 62970,	-- Blueprint: Steward Mail Pouch
-													}),
+													crit(48624, ach(14502)),	-- Pursuing Loyalty - Alderyn & Myn'ir
+													i(184407),	-- Blueprint: Steward Mail Pouch
 												},
 											}),
 										},
 									}),
 									n(172412, {	-- Craven Corinth
-										crit(2, {	-- Defeat Craven Corinth with Spiritforged Aegis
+										crit(51078, {	-- Defeat Craven Corinth with Spiritforged Aegis
 											["achievementID"] = 14851,	-- Bastion of Protection
 										}),
 										n(COURAGE, {
-											i(180494, {	-- Blueprint: Spiritforged Aegis
-												["questID"] = 60975,	-- Blueprint: Spiritforged Aegis
-											}),
+											i(180494),	-- Blueprint: Spiritforged Aegis
 										}),
 									}),
 									n(172177, {	-- Echthra
 										n(COURAGE, {
-											i(180482, {	-- Blueprint: Charm of Fortitude
-												["questID"] = 60947,	-- Blueprint: Charm of Fortitude
-											}),
+											i(180482),	-- Blueprint: Charm of Fortitude
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
-												crit(2, ach(14502)),	-- Pursuing Loyalty - Echthra
-												i(184445, {	-- Blueprint: Medallion of Service
-													["questID"] = 62984,	-- Blueprint: Medallion of Service
-												}),
+												crit(48623, ach(14502)),	-- Pursuing Loyalty - Echthra
+												i(184445),	-- Blueprint: Medallion of Service
 											},
 										}),
 									}),
 									n(170654, {	-- Kalisthene
-										crit(1, {	-- Defeat Kalisthene with Spiritforged Aegis
+										crit(51077, {	-- Defeat Kalisthene with Spiritforged Aegis
 											["achievementID"] = 14851,	-- Bastion of Protection
 										}),
 										n(COURAGE, {
-											i(180472, {	-- Blueprint: Deep Echo Trident
-												["questID"] = 60946,	-- Blueprint: Deep Echo Trident
-											}),
+											i(180472),	-- Blueprint: Deep Echo Trident
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
-												crit(1, ach(14502)),	-- Pursuing Loyalty - Kalisthene
-												i(180495, {	-- Blueprint: Phial of Serenity
-													["questID"] = 60973,	-- Blueprint: Phial of Serenity
-												}),
+												crit(48622, ach(14502)),	-- Pursuing Loyalty - Kalisthene
+												i(180495),	-- Blueprint: Phial of Serenity
 											},
 										}),
 									}),
@@ -772,16 +805,14 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
-												crit(4, ach(14502)),	-- Pursuing Loyalty - Nuuminuuru
+												crit(48625, ach(14502)),	-- Pursuing Loyalty - Nuuminuuru
 												BRIGHTSCALE_HATCHLING,	-- (PET!)
 											},
 										}),
 									}),
 									n(172682, {	-- Splinterbark Nightmare
 										n(COURAGE, {
-											i(181147, {	-- Blueprint: Charm of Persistence
-												["questID"] = 61269,	-- Blueprint: Charm of Persistence
-											}),
+											i(181147),	-- Blueprint: Charm of Persistence
 										}),
 									}),
 								}),
@@ -973,26 +1004,20 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								n(REWARDS, {
 									n(171873, {	-- Athanos
 										n(COURAGE, {
-											i(182975, {	-- Ascension Calling: Mikanikos
-												["questID"] = 62223,	-- Ascension Calling: Mikanikos
-											}),
+											i(182975),	-- Ascension Calling: Mikanikos
 										}),
 									}),
 									n(172333, {	-- Azaruux
 										n(COURAGE, {
-											i(183794, {	-- Blueprint: Empyrean Refreshment
-												["questID"] = 62486,	-- Blueprint: Empyrean Refreshment
-											}),
+											i(183794),	-- Blueprint: Empyrean Refreshment
 										}),
 									}),
 									n(172412, {	-- Craven Corinth
 										n(LOYALTY, {
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
 											["g"] = {
-												crit(5, ach(14502)),	-- Pursuing Loyalty - Craven Corinth
-												i(184411, {	-- Blueprint: Gilded Abacus
-													["questID"] = 62971,	-- Blueprint: Gilded Abacus
-												}),
+												crit(48626, ach(14502)),	-- Pursuing Loyalty - Craven Corinth
+												i(184411),	-- Blueprint: Gilded Abacus
 											},
 										}),
 									}),
@@ -1005,12 +1030,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["g"] = {
 											ach(14853),	-- All The Colors of the Painbow
 											n(COURAGE, {
-												i(184414, {	-- Blueprint: Artisan Tool Belt
-													["questID"] = 62981,	-- Blueprint: Artisan Tool Belt
-												}),
+												i(184414),	-- Blueprint: Artisan Tool Belt
 											}),
 											n(LOYALTY, {
-												crit(8, ach(14502)),	-- Pursuing Loyalty - Mad Mortimer
+												crit(48629, ach(14502)),	-- Pursuing Loyalty - Mad Mortimer
 												i(180761),	-- Phalynx of Loyalty (MOUNT!)
 											}),
 										},
@@ -1019,29 +1042,23 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
 											["g"] = {
-												crit(2, {	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
+												crit(51080, {	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
 													["achievementID"] = 14852,	-- The Hoot of the Issue
 												}),
-												crit(6, ach(14502)),	-- Pursuing Loyalty - Splinterbark Nightmare
-												i(184348, {	-- Blueprint: Ring of Warding
-													["questID"] = 62928,	-- Blueprint: Ring of Warding
-												}),
+												crit(48627, ach(14502)),	-- Pursuing Loyalty - Splinterbark Nightmare
+												i(184348),	-- Blueprint: Ring of Warding
 											},
 										}),
 									}),
 									n(172411, {	-- Thran'tiok
 										n(COURAGE, {
-											i(184349, {	-- Blueprint: Vial of Lichfrost
-												["questID"] = 62997,	-- Blueprint: Vial of Lichfrost
-											}),
+											i(184349),	-- Blueprint: Vial of Lichfrost
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires unlocking and defeating Azaruux.",
 											["g"] = {
-												crit(7, ach(14502)),	-- Pursuing Loyalty - Thran'tiok
-												i(181238, {	-- Blueprint: Charm of Focus
-													["questID"] = 63000,	-- Blueprint: Charm of Focus
-												}),
+												crit(48628, ach(14502)),	-- Pursuing Loyalty - Thran'tiok
+												i(181238),	-- Blueprint: Charm of Focus
 											},
 										}),
 									}),
@@ -1153,16 +1170,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(171873, {	-- Athanos
 										n(LOYALTY, {
-											i(181165, {	-- Blueprint: Kyrian Smith's Kit
-												["questID"] = 61304,	-- Blueprint: Kyrian Smith's Kit
-											}),
+											i(181165),	-- Blueprint: Kyrian Smith's Kit
 										}),
 									}),
 									n(172333, {	-- Azaruux
 										n(LOYALTY, {
-											i(181155, {	-- Blueprint: Charm of Discord
-													["questID"] = 61272,	-- Blueprint: Charm of Discord
-												}),
+											i(181155),	-- Blueprint: Charm of Discord
 										}),
 									}),
 									n(172412, {	-- Craven Corinth
@@ -1181,18 +1194,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(170654, {	-- Kalisthene
 										n(WISDOM, {
-											crit(1, {	-- Defeat Kalisthene as Pelagos
+											crit(51098, {	-- Defeat Kalisthene as Pelagos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(2, {	-- Defeat Kalisthene as Kleia
+											crit(51097, {	-- Defeat Kalisthene as Kleia
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(3, {	-- Defeat Kalisthene as Mikanikos
+											crit(51099, {	-- Defeat Kalisthene as Mikanikos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											i(183761, {	-- Blueprint: Skystrider Glider
-												["questID"] = 62477,	-- BLueprint: Skystrider Glider
-											}),
+											i(183761),	-- Blueprint: Skystrider Glider
 										}),
 									}),
 									n(172410, {	-- Nuuminuuru
@@ -1210,13 +1221,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									n(171873, {	-- Athanos
 										n(WISDOM, {
 											ach(14859),	-- Inside the Park Home Run
-											crit(4, {	-- Defeat Athanos as Pelagos
+											crit(51100, {	-- Defeat Athanos as Pelagos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(5, {	-- Defeat Athanos as Kleia
+											crit(51101, {	-- Defeat Athanos as Kleia
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(6, {	-- Defeat Athanos as Mikanikos
+											crit(51102, {	-- Defeat Athanos as Mikanikos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
 											i(181287),	-- Halo of the Reverent
@@ -1242,9 +1253,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172682, {	-- Splinterbark Nightmare
 										n(WISDOM, {
-											i(184450, {	-- Blueprint: Vesper of Calling
-												["questID"] = 62986,	-- Blueprint: Vesper of Calling
-											}),
+											i(184450),	-- Blueprint: Vesper of Calling
 										}),
 									}),
 									n(172411, {	-- Thran'tiok
@@ -1278,13 +1287,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(171873, {	-- Athanos
 										n(HUMILITY, {
-											crit(25, {	-- Defeat Athanos as Pelagos
+											crit(51128, {	-- Defeat Athanos as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(26, {	-- Defeat Athanos as Kleia
+											crit(51129, {	-- Defeat Athanos as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(27, {	-- Defeat Athanos as Mikanikos
+											crit(51130, {	-- Defeat Athanos as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177205),	-- Reverent Bearer's Chestplate
@@ -1296,13 +1305,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172333, {	-- Azaruux
 										n(HUMILITY, {
-											crit(28, {	-- Defeat Azaruux as Pelagos
+											crit(51131, {	-- Defeat Azaruux as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(29, {	-- Defeat Azaruux as Kleia
+											crit(51132, {	-- Defeat Azaruux as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(30, {	-- Defeat Azaruux as Mikanikos
+											crit(51133, {	-- Defeat Azaruux as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(181297),	-- Reverent Wings of the Ascended
@@ -1312,13 +1321,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["crs"] = { 172409 },	-- Myn'ir
 										["g"] = {
 											n(HUMILITY, {
-												crit(7, {	-- Defeat Alderyn and Myn'ir as Pelagos
+												crit(51110, {	-- Defeat Alderyn and Myn'ir as Pelagos
 													["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(8, {	-- Defeat Alderyn and Myn'ir as Kleia
+												crit(51111, {	-- Defeat Alderyn and Myn'ir as Kleia
 													["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(9, {	-- Defeat Alderyn and Myn'ir as Mikanikos
+												crit(51112, {	-- Defeat Alderyn and Myn'ir as Mikanikos
 													["achievementID"] = 14865,	-- Disciple of Humility
 												}),
 												i(177208),	-- Reverent Bearer's Legguards
@@ -1331,13 +1340,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172412, {	-- Craven Corinth
 										n(HUMILITY, {
-											crit(13, {	-- Defeat Craven Corinth as Pelagos
+											crit(51116, {	-- Defeat Craven Corinth as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(14, {	-- Defeat Craven Corinth as Kleia
+											crit(51117, {	-- Defeat Craven Corinth as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(15, {	-- Defeat Craven Corinth as Mikanikos
+											crit(51118, {	-- Defeat Craven Corinth as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177207),	-- Reverent Bearer's Gauntlets
@@ -1349,13 +1358,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172177, {	-- Echthra
 										n(HUMILITY, {
-											crit(4, {	-- Defeat Echthra as Pelagos
+											crit(51107, {	-- Defeat Echthra as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(5, {	-- Defeat Echthra as Kleia
+											crit(51108, {	-- Defeat Echthra as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(6, {	-- Defeat Echthra as Mikanikos
+											crit(51109, {	-- Defeat Echthra as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177210),	-- Reverent Bearer's Girdle
@@ -1367,13 +1376,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(170654, {	-- Kalisthene
 										n(HUMILITY, {
-											crit(1, {	-- Defeat Kalisthene as Pelagos
+											crit(51104, {	-- Defeat Kalisthene as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(2, {	-- Defeat Kalisthene as Kleia
+											crit(51105, {	-- Defeat Kalisthene as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(3, {	-- Defeat Kalisthene as Mikanikos
+											crit(51106, {	-- Defeat Kalisthene as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(179971),	-- Reverent Forgelite's Helm
@@ -1391,13 +1400,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										},
 										["g"] = {
 											n(HUMILITY, {
-												crit(22, {	-- Defeat Mad Mortimer as Pelagos
+												crit(51125, {	-- Defeat Mad Mortimer as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(23, {	-- Defeat Mad Mortimer as Kleia
+												crit(51126, {	-- Defeat Mad Mortimer as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(24, {	-- Defeat Mad Mortimer as Mikanikos
+												crit(51127, {	-- Defeat Mad Mortimer as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 												}),
 												i(177211),	-- Reverent Bearer's Wristwraps
@@ -1410,13 +1419,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172410, {	-- Nuuminuuru
 										n(HUMILITY, {
-											crit(10, {	-- Defeat Nuuminuuru as Pelagos
+											crit(51113, {	-- Defeat Nuuminuuru as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(11, {	-- Defeat Nuuminuuru as Kleia
+											crit(51114, {	-- Defeat Nuuminuuru as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(12, {	-- Defeat Nuuminuuru as Mikanikos
+											crit(51115, {	-- Defeat Nuuminuuru as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177206),	-- Reverent Bearer's Warboots
@@ -1428,13 +1437,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172682, {	-- Splinterbark Nightmare
 										n(HUMILITY, {
-											crit(16, {	-- Defeat Splinterbark Nightmare as Pelagos
+											crit(51119, {	-- Defeat Splinterbark Nightmare as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(17, {	-- Defeat Splinterbark Nightmare as Kleia
+											crit(51120, {	-- Defeat Splinterbark Nightmare as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(18, {	-- Defeat Splinterbark Nightmare as Mikanikos
+											crit(51121, {	-- Defeat Splinterbark Nightmare as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177209),	-- Reverent Bearer's Shoulders
@@ -1446,13 +1455,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172411, {	-- Thran'tiok
 										n(HUMILITY, {
-											crit(19, {	-- Defeat Thran'tiok as Pelagos
+											crit(51122, {	-- Defeat Thran'tiok as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(20, {	-- Defeat Thran'tiok as Kleia
+											crit(51123, {	-- Defeat Thran'tiok as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(21, {	-- Defeat Thran'tiok as Mikanikos
+											crit(51124, {	-- Defeat Thran'tiok as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177221),	-- Reverent Bearer's Cloak
@@ -1645,8 +1654,6 @@ end
 
 root(ROOTS.NeverImplemented, {
 	prof(ASCENSION_CRAFTING, {
-		recipe(335849),	-- Charm of Energizing
-		recipe(335596),	-- Charm of Alacrity
 		q(60937),	-- [DNT] Blueprint: Herald's Footpads
 		q(61265, {	-- Blueprint: Charm of Alacrity
 			i(181139),	-- Blueprint: Charm of Alacrity
@@ -1782,13 +1789,13 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- LOYALTY BRAZIERS | WILL UNFLAG IF BRAZIER IS USED AGAIN
 	q(62770),	-- Loyalty | no brazier #1 - CONFIRMED
 	q(62771),	-- Loyalty | no brazier #2 - CONFIRMED
-	q(65227),	-- Rightmost brazier added in 9.1.5
+	q(65227),	-- Rightmost brazier added in 9.1.5 (spellID 362556)
 
-	q(63165),	-- after earning To the Moon achievement
+	q(63165),	-- after earning "To the Moon" (achievementID 14887) (spellID 347027)
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
 	q(62990),	-- Arsenal: Wisdom's Weapon Cache
-	q(63018),	-- learning Ensemble: Vestments of the Discordant
-	q(63019),	-- learning Ensemble: Garb of the Discordant
-	q(63020),	-- learning Ensemble: Chain of the Discordant
-	q(63021),	-- learning Ensemble: Warplate of the Discordant
+	q(63018),	-- Ensemble: Vestments of the Discordant
+	q(63019),	-- Ensemble: Garb of the Discordant
+	q(63020),	-- Ensemble: Chain of the Discordant
+	q(63021),	-- Ensemble: Warplate of the Discordant
 });

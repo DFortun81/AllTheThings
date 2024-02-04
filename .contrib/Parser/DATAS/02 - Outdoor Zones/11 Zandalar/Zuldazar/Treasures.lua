@@ -47,30 +47,38 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 50259,
 				["coord"] = { 64.7, 21.7, ZULDAZAR },
 			}),
+			o_repeated(sharedData({	-- Treasure Chest
+				["isDaily"] = true,
+			},{
+				-- Objects
+				o(277336, {	-- Treasure Chest
+					["questID"] = 49142,
+					["coord"] = { 58.6, 85.6, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
+				}),
+				o(278461, {	-- Treasure Chest
+					["questID"] = 50711,
+					["coord"] = { 52.4, 24.2, ZULDAZAR },
+				}),
+				o(278462, {	-- Treasure Chest
+					["questID"] = 50716,
+					["coord"] = { 70.5, 33.3, ZULDAZAR },
+				}),
+				o(278694, {	-- Treasure Chest
+					["questID"] = 50724,
+					["coord"] = { 80.1, 13.1, ZULDAZAR },
+				}),
+				o(278793, {	-- Treasure Chest
+					["questID"] = 50715,
+					["coord"] = { 68.8, 22.1, ZULDAZAR },
+				}),
+				o(278456, {	-- Treasure Chest
+					["questID"] = 50710,
+					["coords"] = {
+						{ 56.8, 19.4, VOLDUN },
+					},
+				}),
+			}))
 		}),
-		-- Daily Treasures
-		n(TREASURES, sharedData({["isDaily"] = true},{
-			o(277336, {	-- Treasure Chest
-				["questID"] = 49142,
-				["coord"] = { 58.6, 85.6, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
-			}),
-			o(278461, {	-- Treasure Chest
-				["questID"] = 50711,
-				["coord"] = { 52.4, 24.2, ZULDAZAR },
-			}),
-			o(278462, {	-- Treasure Chest
-				["questID"] = 50716,
-				["coord"] = { 70.5, 33.3, ZULDAZAR },
-			}),
-			o(278694, {	-- Treasure Chest
-				["questID"] = 50724,
-				["coord"] = { 80.1, 13.1, ZULDAZAR },
-			}),
-			o(278793, {	-- Treasure Chest
-				["questID"] = 50715,
-				["coord"] = { 68.8, 22.1, ZULDAZAR },
-			}),
-		})),
 	}),
 })));
 

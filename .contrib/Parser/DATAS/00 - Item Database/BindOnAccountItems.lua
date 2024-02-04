@@ -1,9 +1,9 @@
 
-local Items = root(ROOTS.ItemDBConditional);
 -- There is not currently an automatic way to know whether an Item is BoA or BoP since in both
 -- situations [b] = 1
 -- Items listed in this file will be directly marked as BoE to allow ATT to properly
 -- treat them for their BoA status
+local Items = ItemDBConditional;
 local i = function(itemID)
 	local item = { ["b"] = 2 };
 	Items[itemID] = item;
@@ -11,13 +11,6 @@ local i = function(itemID)
 end
 
 -- TODO: move more BoA items here, especially if they are 'cost' items or contain BoP items
-
--- DF Currencies
-i(199211);	-- Primeval Essence
-i(201254);	-- Medal of Honor [A] (Season 1)
-i(201255);	-- Medal of Honor [H] (Season 1)
-i(204179);	-- Medal of Honor [A] (Season 2)
-i(204180);	-- Medal of Honor [H] (Season 2)
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor
@@ -179,6 +172,10 @@ i(102264);	-- Timeless Plate Boot
 i(104345);	-- Timeless Lavalliere
 i(102291);	-- Timeless Signet
 i(104347);	-- Timeless Curio
+i(104009);	-- Timeless Plate Armor Cache
+i(104010);	-- Timeless Mail Armor Cache
+i(104012);	-- Timeless Leather Armor Cache
+i(104013);	-- Timeless Cloth Armor Cache
 
 -- Archaeology Solves
 i(64489);	-- Staff of Sorcerer-Thane Thaurissan
@@ -273,28 +270,76 @@ i(168497);	-- Rustbolt Resistance Insignia [BOA]
 -----------------
 i(173374);	-- Rajani Insignia [BOA]
 
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+i(198449);	-- Pouch of Prodigious Wonders
+
+-----------------
+-- PATCH 9.2.7 --
+-----------------
+i(201355);	-- Eternal Equipment Chest
+i(201362);	-- Fated Equipment Chest
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+i(199837);	-- Dimmed Primeval Earth
+i(199836);	-- Dimmed Primeval Fire
+i(199838);	-- Dimmed Primeval Storm
+i(199839);	-- Dimmed Primeval Water
+i(199211);	-- Primeval Essence
+
 ------------------
 -- PATCH 10.0.2 --
 ------------------
+i(200082);	-- Battered Imbu-made Net
 i(200447);	-- Centaur Hunting Trophy
+i(200080);	-- Draconium Nugget
+i(200443);	-- Dragon Isles Artifact
+i(200285);	-- Dragonscale Expedition Insignia [Uncommon]
+i(200452);	-- Dragonscale Expedition Insignia [Rare]
+i(201921);	-- Dragonscale Expedition Insignia [Epic 500]
+i(202091);	-- Dragonscale Expedition Insignia [Epic 2.5k]
+i(200083);	-- Irontree Branch
 i(200287);	-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453);	-- Iskaara Tuskarr Insignia [Rare]
-i(201922);	-- Iskaara Tuskarr Insignia [Epic]
+i(201922);	-- Iskaara Tuskarr Insignia [Epic 500]
 i(202092);	-- Iskaara Tuskarr Insignia [Epic 2.5k]
+i(200085);	-- Khaz'gorite Wire
+i(200086);	-- Khaz'gorite-Infused Resin
+i(202173);	-- Magmote
 i(200288);	-- Maruuk Centaur Insignia [Uncommon]
 i(200454);	-- Maruuk Centaur Insignia [Rare]
-i(201923);	-- Maruuk Centaur Insignia [Epic]
+i(201923);	-- Maruuk Centaur Insignia [Epic 500]
 i(202094);	-- Maruuk Centaur Insignia [Epic 2.5k]
+i(201254);	-- Medal of Honor [A] (Season 1)
+i(201255);	-- Medal of Honor [H] (Season 1)
 i(200449);	-- Sacred Tuskarr Totem
+i(200084);	-- Salinated Serevite
+i(201929);	-- Stolen Breath of Ohn'ahra
+i(200081);	-- Strong Seavine
 i(200450);	-- Titan Relic
 i(200289);	-- Valdrakken Accord Insignia [Uncommon]
 i(200455);	-- Valdrakken Accord Insignia [Rare]
-i(201924);	-- Valdrakken Accord Insignia [Epic]
+i(201924);	-- Valdrakken Accord Insignia [Epic 500]
 i(202093);	-- Valdrakken Accord Insignia [Epic 2.5k]
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(204339);	-- Satchel of Coalescing Chaos
 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+i(203765);	-- Blue Hakkari Bijou
+i(203766);	-- Bronze Hakkari Bijou
+i(205289);	-- Crimson Equipment Chest
+i(203767);	-- Gold Hakkari Bijou
+i(203768);	-- Green Hakkari Bijou
+i(203769);	-- Orange Hakkari Bijou
+i(203646);	-- Primalist Cloak
 i(203635);	-- Primalist Cloth Belt
 i(203641);	-- Primalist Cloth Boots
 i(203632);	-- Primalist Cloth Bracers
@@ -319,6 +364,7 @@ i(203644);	-- Primalist Mail Gloves
 i(203613);	-- Primalist Mail Helm
 i(203620);	-- Primalist Mail Leggings
 i(203628);	-- Primalist Mail Spaulders
+i(203648);	-- Primalist Necklace
 i(203634);	-- Primalist Plate Belt
 i(203640);	-- Primalist Plate Boots
 i(203633);	-- Primalist Plate Bracers
@@ -327,18 +373,124 @@ i(203643);	-- Primalist Plate Gloves
 i(203611);	-- Primalist Plate Helm
 i(203623);	-- Primalist Plate Leggings
 i(203626);	-- Primalist Plate Spaulders
+i(203647);	-- Primalist Ring
+i(203649);	-- Primalist Trinket
 i(203650);	-- Primalist Weapon
+i(203770);	-- Purple Hakkari Bijou
+i(203771);	-- Red Hakkari Bijou
+i(203772);	-- Silver Hakkari Bijou
+i(203773);	-- Yellow Hakkari Bijou
+i(203914);	-- Zandalar Bargaining Token
+i(202196);	-- Zskera Vault Key
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+i(204336);	-- Awakened Heirloom Armor Casing
+i(204337);	-- Awakened Heirloom Scabbard
+i(204727);	-- Coveted Bauble
 i(205365);	-- Loamm Niffen Insignia [Uncommon]
 i(205342);	-- Loamm Niffen Insignia [Rare]
-i(205985);	-- Loamm Niffen Insignia [Epic]
+i(205985);	-- Loamm Niffen Insignia [Epic 500]
+i(210422);	-- Loamm Niffen Insignia [Epic 2.5k]
+i(204179);	-- Medal of Honor [A] (Season 2)
+i(204180);	-- Medal of Honor [H] (Season 2)
+i(206200);	-- Obsidian Equipment Chest
+i(206270);	-- Volcanic Equipment Chest
 
 ------------------
 -- PATCH 10.1.5 --
 ------------------
 i(206375);	-- Corruptor's Scourgestone
+i(208567);	-- Cracked Medal of Conquest
 i(206576);	-- Death's Bargaining Chip
+i(206617);	-- Desecrated Cloth Belt
+i(206619);	-- Desecrated Cloth Boots
+i(206615);	-- Desecrated Cloth Bracers
+i(206614);	-- Desecrated Cloth Chestpiece
+i(206616);	-- Desecrated Cloth Gauntlets
+i(206612);	-- Desecrated Cloth Helmet
+i(206618);	-- Desecrated Cloth Leggings
+i(206613);	-- Desecrated Cloth Spaulders
+i(206625);	-- Desecrated Leather Belt
+i(206627);	-- Desecrated Leather Boots
+i(206623);	-- Desecrated Leather Bracers
+i(206622);	-- Desecrated Leather Chestpiece
+i(206624);	-- Desecrated Leather Gauntlets
+i(206620);	-- Desecrated Leather Helmet
+i(206626);	-- Desecrated Leather Leggings
+i(206621);	-- Desecrated Leather Spaulders
+i(206633);	-- Desecrated Mail Belt
+i(206635);	-- Desecrated Mail Boots
+i(206631);	-- Desecrated Mail Bracers
+i(206630);	-- Desecrated Mail Chestpiece
+i(206632);	-- Desecrated Mail Gauntlets
+i(206628);	-- Desecrated Mail Helmet
+i(206634);	-- Desecrated Mail Leggings
+i(206629);	-- Desecrated Mail Spaulders
+i(206642);	-- Desecrated Plate Belt
+i(206644);	-- Desecrated Plate Boots
+i(206640);	-- Desecrated Plate Bracers
+i(206639);	-- Desecrated Plate Chestpiece
+i(206641);	-- Desecrated Plate Gauntlets
+i(206636);	-- Desecrated Plate Helmet
+i(206643);	-- Desecrated Plate Leggings
+i(206637);	-- Desecrated Plate Spaulders
 i(206374);	-- Invader's Scourgestone
+i(208951);	-- Paracausal Cluster
+i(208945);	-- Paracausal Crate
+i(206771);	-- Pattern: Cursed Cloth
+i(206772);	-- Pattern: Languished Leather
+i(206773);	-- Pattern: Scourged Scales
+i(206774);	-- Plans: Undeath Metal
+i(206579);	-- Phylacterweave
+i(208952);	-- Soridormi's Letter of Commendation
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+i(209833);	-- Crate of Dreambound Armor
+i(208922);	-- Dreambound Cloak
+i(208911);	-- Dreambound Cloth Belt
+i(208917);	-- Dreambound Cloth Boots
+i(208908);	-- Dreambound Cloth Bracers
+i(208895);	-- Dreambound Cloth Chestpiece
+i(208918);	-- Dreambound Cloth Gloves
+i(208891);	-- Dreambound Cloth Helm
+i(208900);	-- Dreambound Cloth Leggings
+i(208903);	-- Dreambound Cloth Spaulders
+i(208913);	-- Dreambound Leather Belt
+i(208914);	-- Dreambound Leather Boots
+i(208906);	-- Dreambound Leather Bracers
+i(208897);	-- Dreambound Leather Chestpiece
+i(208921);	-- Dreambound Leather Gloves
+i(208893);	-- Dreambound Leather Helm
+i(208898);	-- Dreambound Leather Leggings
+i(208905);	-- Dreambound Leather Spaulders
+i(208912);	-- Dreambound Mail Belt
+i(208915);	-- Dreambound Mail Boots
+i(208907);	-- Dreambound Mail Bracers
+i(208896);	-- Dreambound Mail Chestpiece
+i(208920);	-- Dreambound Mail Gloves
+i(208892);	-- Dreambound Mail Helm
+i(208899);	-- Dreambound Mail Leggings
+i(208904);	-- Dreambound Mail Spaulders
+i(208924);	-- Dreambound Necklace
+i(208910);	-- Dreambound Plate Belt
+i(208916);	-- Dreambound Plate Boots
+i(208909);	-- Dreambound Plate Bracers
+i(208894);	-- Dreambound Plate Chestpiece
+i(208890);	-- Dreambound Plate Helm
+i(208919);	-- Dreambound Plate Gloves
+i(208901);	-- Dreambound Plate Leggings
+i(208902);	-- Dreambound Plate Spaulders
+i(208923);	-- Dreambound Ring
+i(208926);	-- Dreambound Weapon
+i(205189);	-- Warcraft Rumble Welcome Letter [A]
+i(204731);	-- Warcraft Rumble Welcome Letter [N]
+i(205190);	-- Warcraft Rumble Welcome Letter [H]
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+i(210423);	-- Dream Wardens Insignia [Epic 2.5k]

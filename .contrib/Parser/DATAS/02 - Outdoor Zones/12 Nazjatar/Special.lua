@@ -18,6 +18,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ "i", 122674, 1 },	-- S.E.L.F.I.E. Camera MkII
 			},
 		}),
+		o(373439, {	--  Flipper Fish School
+			["timeline"] = { ADDED_9_2_5 },
+			["cost"] = {{"i",187662,1}},	-- Strange Goop
+			["coord"] = { 72.8, 24.3, NAZJATAR },
+			["g"] = {
+				i(187922),	-- Flipper Fish
+			},
+		}),
 		pvp(o(327652, {	-- War Supply Chest (A)
 			["description"] = "Spawns randomly somewhere in the sky and parachutes downwards to the ground.",
 			["races"] = ALLIANCE_ONLY,

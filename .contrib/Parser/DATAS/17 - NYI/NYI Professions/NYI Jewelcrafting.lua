@@ -4,6 +4,22 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JEWELCRAFTING, {
 		n(CRAFTABLES, {
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+					i(173120),	-- 9.x Cut Rare
+					i(173118),	-- 9.x Cut Rare
+					i(173119),	-- 9.x Cut Rare
+					i(173117),	-- 9.x Raw Blue
+					i(173111),	-- 9.x Raw Rare
+					i(173116),	-- 9.x Raw Red
+					i(173115),	-- 9.x Raw Yellow
+					i(173164),	-- [DNT] REUSE ME
+					i(173165),	-- [DNT] REUSE ME
+					i(173166),	-- [DNT] REUSE ME
+					i(173167),	-- [DNT] REUSE ME
+				})),
+			}),
 			tier(DF_TIER, {
 				-- 10.0.0
 				tier(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
@@ -15,6 +31,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+					r(311931),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 01
+					r(311933),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 02
+					r(311934),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 03
+					r(311935),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 04
+					r(311936),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 05
+					r(311937),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 06
+					r(311938),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 07
+					r(311939),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 08
+				})),
+			}),
 			tier(DF_TIER, {
 				-- 10.0.0
 				tier(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {

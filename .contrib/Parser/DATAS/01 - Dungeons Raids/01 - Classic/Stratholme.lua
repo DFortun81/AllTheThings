@@ -12,7 +12,7 @@ MAIN_GATE = createHeader({
 		-- #endif
 	},
 	description = {
-		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.]],
+		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	},
 });
 SERVICE_ENTRANCE = createHeader({
@@ -26,7 +26,7 @@ SERVICE_ENTRANCE = createHeader({
 		-- #endif
 	},
 	description = {
-		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.]],
+		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	},
 });
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
@@ -34,6 +34,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge -- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",
 		-- #endif
+		["zone-text-areaID"] = 2017,	-- Stratholme
 		-- #if AFTER 4.0.3
 		["lvl"] = 37,
 		-- #else
@@ -47,10 +48,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					-- #endif
 					["groups"] = {
-						crit(1, {	-- Balnazzar
+						crit(550, {	-- Balnazzar
 							["_npcs"] = { 10813 },
 						}),
-						crit(2, {	-- Lord Aurius Rivendare
+						crit(18471, {	-- Lord Aurius Rivendare
 							["_npcs"] = {
 								-- #if AFTER 4.0.3
 								45412,	-- Lord Aurius Rivendare
@@ -852,7 +853,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["groups"] = {
 							i(13250),	-- Head of Balnazzar
 							i(14512),	-- Pattern: Truefaith Vestments
-							i(13520),	-- Recipe: Flask of Distilled Wisdom
+							i(13520),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
 							i(13348),	-- Demonshear
 							i(18717),	-- Hammer of the Grand Crusader
 							i(13360),	-- Gift of the Elven Magi
@@ -873,12 +874,37 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							16101,	-- Jarien
 							16102,	-- Sothos
 						},
+						-- #if BEFORE 10.1.5
 						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",
-						["timeline"] = { "removed 4.0.3" },
+						-- #else
+						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+						-- #endif
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 						["cost"] = {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
+						-- #if AFTER 10.1.5
+						-- This init function unmarks the removed from game flag for folks with the brazier.
+						["OnInit"] = [[function(t)
+							if GetItemCount(22057, true) > 0 then
+								t.u = nil;
+								for i,o in ipairs(t.g) do
+									if o.u and o.u == 11 then
+										o.u = nil;
+									end
+								end
+							else
+								t.u = 11;
+								for i,o in ipairs(t.g) do
+									if not o.u then
+										o.u = 11;
+									end
+								end
+							end
+							return t;
+						end]],
+						-- #endif
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								["questID"] = 8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
@@ -889,19 +915,19 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
 							}),
 							i(22329, {	-- Scepter of Interminable Focus
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22327, {	-- Amulet of the Redeemed
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22301, {	-- Ironweave Robe
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { "removed 4.0.1", ADDED_10_1_5 },
 							}),
 							i(22328, {	-- Legplates of Vigilance
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22334, {	-- Band of Mending
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 						},
 					})),
@@ -942,7 +968,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["cr"] = 10398,	-- Thuzadin Shadowcaster
 						}),
 						i(15768, {	-- Pattern: Wicked Leather Belt (RECIPE!)
-							["timeline"] = { "removed 2.0.1" },	-- Added to Leatherworking Trainers
+							["timeline"] = { "removed 2.0.5" },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
 						i(74274, {	-- Plans: Phantom Blade (RECIPE!)

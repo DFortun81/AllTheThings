@@ -241,6 +241,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							41009,	-- Hunter to Hunter
 							40385,	-- The Spear in the Shadow
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 103693 },	-- Outfitter Reynolds
 						["coord"] = { 44.6, 49.0, TRUESHOT_LODGE },
 						["g"] = {
@@ -747,12 +748,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["coord"] = { 42.9, 45.7, TRUESHOT_LODGE },
 						["maps"] = { 877 },	-- Fields of the Eternal Hunt (Scenario Map)
 						["g"] = {
-							i(142227),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
+							mount(229386),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 						},
 					})),
 					-- Misc
 					q(45392, {	-- Dark Memento
-						["sourceQuest"] = 42526,	-- Tech It Up A Notch
 						["provider"] = { "n", 105099 },	-- Dark Ranger Velonara
 						["coord"] = { 49.4, 49.7, TRUESHOT_LODGE },
 						["timeline"] = { "added 7.1.0" },
@@ -789,16 +789,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["timeline"] = { "added 7.2.0" },
 					}),
 					-- Hunter Hati Reborn Questline (BfA)
-					q(55516, {	-- Spark of Genius (A)
+					q(55516, {	-- Spark of Genius
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 72.8, 14.0, BORALUS },
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { "added 8.1.5" },
 					}),
-					q(54913, {	-- Spark of Genius (H)
+					q(54913, {	-- Spark of Genius
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 47.8, 89.4, DAZARALOR },
-						["races"] = HORDE_ONLY,
 						["timeline"] = { "added 8.1.5" },
 					}),
 					q(54915, {	-- Telemetry Online
@@ -806,6 +804,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							54913,	-- Spark of Genius (H)
 							55516,	-- Spark of Genius (A)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
 						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 						["timeline"] = { "added 8.1.5" },
@@ -874,7 +873,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							["coord"] = { 43.4, 48.2, TRUESHOT_LODGE },
 						}),
 					}),
-					gt(375, { -- Eagle Ally
+					gt(375, {	-- Eagle Ally
 						i(140216), -- Eagle Feather
 					}),
 				}),
@@ -998,6 +997,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44395),	-- Tracking Quest: Unseen Protection 5 - completed the "Unseen Protection: Drogbar Delicacy" mission
 	}),
 	tier(SL_TIER, {
-		q(66309),	-- After obtaining Dark Ranger's Ensemble
+		q(66309),	-- Ensemble: Dark Ranger's Attire
 	}),
 });

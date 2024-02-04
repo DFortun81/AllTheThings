@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 43.3, 36.3, DRUSTVAR },	-- cave entrance
 				["crs"] = { 128181 },	-- Vengeful Dead
 				["g"] = {
-					crit(8, {	-- Ancient Sarcophagus
+					crit(41714, {	-- Ancient Sarcophagus
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(155545),	-- Drustwrought Spellstaff
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 51470,
 				["coord"] = { 29.2, 68.8, DRUSTVAR },
 				["g"] = {
-					crit(26, {	-- Arclight
+					crit(41733, {	-- Arclight
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160469),	-- Arclight Jumpers
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 51383,
 				["coord"] = { 35.0, 69.0, DRUSTVAR },
 				["g"] = {
-					crit(25, {	-- Arvon the Betrayed
+					crit(41732, {	-- Arvon the Betrayed
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160449),	-- Spectral Revenger
@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 44.41, 85.61, DRUSTVAR },
 				},
 				["g"] = {
-					crit(27, {	-- Avalanche
+					crit(41736, {	-- Avalanche
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(154447),	-- Gryphon-Rider's Breastplate
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 59.4, 28.2, DRUSTVAR },
 				},
 				["g"] = {
-					crit(19, {	-- Balethorn
+					crit(41726, {	-- Balethorn
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160475),	-- Barksnapper Girdle
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 48842,
 				["coord"] = { 59.0, 16.8, DRUSTVAR },
 				["g"] = {
-					crit(3, {	-- Barbthorn Queen
+					crit(41708, {	-- Barbthorn Queen
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(155425),	-- Barbthorn Queen's Stinger
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49481,
 				["coord"] = { 50.61, 30.01, DRUSTVAR },
 				["g"] = {
-					crit(15, {	-- Beshol
+					crit(41722, {	-- Beshol
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(158363),	-- Spiderhair Circlet
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 47884,
 				["coord"] = { 58.4, 33.2, DRUSTVAR },
 				["g"] = {
-					crit(1, {	-- Betsy
+					crit(41706, {	-- Betsy
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160463),	-- Blue-Ribbon Belt
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 50163,
 				["coord"] = { 35.6, 32.6, DRUSTVAR },
 				["g"] = {
-					crit(20, {	-- Bilefang Mother
+					crit(41727, {	-- Bilefang Mother
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(155284),	-- Bleak Hills Swatter
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 48978,
 				["coord"] = { 66.5, 51.0, DRUSTVAR },
 				["g"] = {
-					crit(5, {	-- Bonesquall
+					crit(41711, {	-- Bonesquall
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(154376),	-- Bonecurse Gauntlets
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 51922,
 				["coord"] = { 27.6, 59.6, DRUSTVAR },
 				["g"] = {
-					crit(32, {	-- Braedan Whitewall
+					crit(41750, {	-- Braedan Whitewall
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(154500),	-- Moonwood Bramblespire
@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 28.0, 14.2, DRUSTVAR },
 				},
 				["g"] = {
-					crit(24, {	-- Captain Leadfist
+					crit(41730, {	-- Captain Leadfist
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160450),	-- Leadshot Heavy Rifle
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49216,
 				["coord"] = { 52.1, 46.9, DRUSTVAR },
 				["g"] = {
-					crit(9, {	-- Beastly Ritual Skull
+					crit(41715, {	-- Beastly Ritual Skull
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 				},
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 50669,
 				["coord"] = { 18.6, 61.0, DRUSTVAR },
 				["g"] = {
-					crit(22, {	-- Deathcap
+					crit(42342, {	-- Deathcap
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(158555),	-- Doom Shroom
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49530,
 				["coord"] = { 63.4, 40.2, DRUSTVAR },
 				["g"] = {
-					crit(17, {	-- Emily Mayville
+					crit(41724, {	-- Emily Mayville
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160447),	-- Soul-Pillar Lantern
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 51749,
 				["coord"] = { 24.1, 21.8, DRUSTVAR },
 				["g"] = {
-					crit(31, {	-- Fungi Trio
+					crit(41748, {	-- Fungi Trio
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(154217, {	-- Pearly-White Jackknife
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 50546,
 				["coord"] = { 30.8, 18.6, DRUSTVAR },
 				["g"] = {
-					crit(21, {	-- Executioner Blackwell
+					crit(41728, {	-- Executioner Blackwell
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(155055),	-- Soul-Curse Executioner
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 63.0, 69.6, DRUSTVAR },
 				["crs"] = { 127979 },	-- Lost Goat
 				["g"] = {
-					crit(6, {	-- Gluttonous Yeti
+					crit(41712, {	-- Gluttonous Yeti
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(158683),	-- Giant Yeti's Bowl
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49480,
 				["coord"] = { 57.0, 44.2, DRUSTVAR },
 				["g"] = {
-					crit(14, {	-- Gorehorn
+					crit(41721, {	-- Gorehorn
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(158710),	-- Gorehorn's Rack
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 28.61, 25.61, DRUSTVAR },
 				},
 				["g"] = {
-					crit(29, {	-- Gorged Boar
+					crit(41742, {	-- Gorged Boar
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(154461),	-- Cursed Boarhide Helm
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49388,
 				["coord"] = { 50.3, 20.7, DRUSTVAR },
 				["g"] = {
-					crit(13, {	-- Grozgore
+					crit(41720, {	-- Grozgore
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160457),	-- Lava-Starched Britches
@@ -252,7 +252,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 51698,
 				["coord"] = { 23.8, 29.4, DRUSTVAR },
 				["g"] = {
-					crit(28, {	-- Haywire Golem
+					crit(41739, {	-- Haywire Golem
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(155362),	-- Wickerbeast Mulcher
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 50688,
 				["coord"] = { 23.0, 49.2, DRUSTVAR },
 				["g"] = {
-					crit(23, {	-- Hyo'gi
+					crit(41729, {	-- Hyo'gi
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160462),	-- Hyo'gi Basket Binders
@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 48981,
 				["coord"] = { 59.3, 55.2, DRUSTVAR },
 				["g"] = {
-					crit(7, {	-- Longfang
+					crit(41713, {	-- Longfang
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(159518),	-- Long Fang
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49601,
 				["coord"] = { 59.9, 45.5, DRUSTVAR },
 				["g"] = {
-					crit(18, {	-- Nevermore
+					crit(41725, {	-- Nevermore
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160456),	-- Blanched Ravenfeather Gloves
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 48178,
 				["coord"] = { 66.6, 42.6, DRUSTVAR },
 				["g"] = {
-					crit(2, {	-- Quillrat Matriarch
+					crit(41707, {	-- Quillrat Matriarch
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(158583),	-- Quillstitch Greatcloak
@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49269,
 				["coord"] = { 59.7, 70.0, DRUSTVAR },	-- cave entrance
 				["g"] = {
-					crit(10, {	-- Rimestone
+					crit(41717, {	-- Rimestone
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(158345),	-- Coldsnap Pauldrons
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49341,
 				["coord"] = { 68.6, 64.3, DRUSTVAR },
 				["g"] = {
-					crit(12, {	-- Seething Cache
+					crit(41719, {	-- Seething Cache
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(158598),	-- Band of Seething Manifest
@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 51748,
 				["coord"] = { 33.0, 57.0, DRUSTVAR },
 				["g"] = {
-					crit(30, {	-- Sister Martha
+					crit(41745, {	-- Sister Martha
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(155299),	-- Sister Martha's Soulstealer
@@ -353,7 +353,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 32.21, 40.01, DRUSTVAR },
 				},
 				["g"] = {
-					crit(16, {	-- Talon
+					crit(41723, {	-- Talon
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(161444),	-- Frosted Talonfeather Mantle
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 48928,
 				["coord"] = { 72.8, 60.5, DRUSTVAR },
 				["g"] = {
-					crit(4, {	-- Vicemaul
+					crit(41709, {	-- Vicemaul
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(160474),	-- Vicemaul Wristpinchers
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 49311,
 				["coord"] = { 64.9, 21.5, DRUSTVAR },
 				["g"] = {
-					crit(11, {	-- Whargarble the Ill-Tempered
+					crit(41718, {	-- Whargarble the Ill-Tempered
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(155543),	-- Tuskarr Whaler's Harpoon
@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 51923,
 				["coord"] = { 29.6, 64.0, DRUSTVAR },
 				["g"] = {
-					crit(33, {	-- Hexed Hunter
+					crit(41751, {	-- Hexed Hunter
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(154315),	-- Rusty Steelclaw

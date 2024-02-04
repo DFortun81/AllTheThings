@@ -33,6 +33,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 	-- #if BEFORE MOP
 	["lore"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
 	-- #endif
+	-- #if BEFORE WOD
+	["zone-text-areaID"] = 1583,	-- Blackrock Spire
+	-- #endif
 	["maps"] = {
 		BLACKROCK_SPIRE,
 		LBRS_TAZZALOR,
@@ -149,7 +152,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "i", 16663 },	-- Blood of the Black Dragon Champion
 					}),
 					i(16309, {	-- Drakefire Amulet
-						["timeline"] = { "removed 3.0.2" },
+						["timeline"] = { "removed 4.0.3" },
 					}),
 				},
 			}),
@@ -1193,7 +1196,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)
 					["cr"] = 9260,	-- Firebrand Legionnaire
 				}),
-				i(13494, {	-- Recipe: Greater Fire Protection Potion
+				i(13494, {	-- Recipe: Greater Fire Protection Potion (RECIPE!)
 					["crs"] = {
 						9262,	-- Firebrand Invoker
 						9264,	-- Firebrand Pyromancer
@@ -1229,11 +1232,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 				["groups"] = {
 					i(9214, {	-- Grimoire of Inferno
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						["classes"] = { WARLOCK },
-						-- #if AFTER 4.0.1
-						["spellID"] = 0,
-						-- #else
+						-- #if BEFORE 4.0.1
 						["spellID"] = 1122,	-- Inferno
 						-- #endif
 					}),
@@ -1247,11 +1248,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			i(12533, {	-- Roughshod Pike
+				["provider"] = { "o", 175886 },	-- Roughshod Pike
 				["description"] = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Vorash.",
 			}),
 			n(9218, {	-- Spirestone Battle Lord (Rare)
 				["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13285),	-- The Blackrock Slicers
 					i(13284),	-- Swiftdart Battleboots
@@ -1259,7 +1264,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			n(9219, {	-- Spirestone Butcher (Rare)
 				["coord"] = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13286),	-- Rivenspike
 					i(12608),	-- Butcher's Apron
@@ -1296,6 +1304,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 9236,	-- Shadow Hunter Vosh'gajin
 				["groups"] = {
 					i(12740, {	-- Fifth Mosh'aru Tablet
+						["provider"] = { "o", 175949 },	-- Fifth Mosh'aru Tablet
 						["timeline"] = { "removed 4.0.3" },
 						-- #if BEFORE 4.0.3
 						["description"] = "Located directly behind the boss.",
@@ -1326,6 +1335,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 9237,	-- War Master Voone
 				["groups"] = {
 					i(12741, {	-- Sixth Mosh'aru Tablet
+						["provider"] = { "o", 175950 },	-- Sixth Mosh'aru Tablet
 						["timeline"] = { "removed 4.0.3" },
 						-- #if BEFORE 4.0.3
 						["description"] = "Located directly behind the boss.",
@@ -1334,10 +1344,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(12335),	-- Gemstone of Smolderthorn
 					i(12582),	-- Keris of Zul'Serak
 					i(13175, {	-- Voone's Twitchbow [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-						-- #if ANYCLASSIC
-						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+						-- #if BEFORE 10.1.7
+						-- #if AFTER 2.0.1
+						["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+						["isBounty"] = true,
 						-- #endif
-						["timeline"] = { "removed 2.0.1" },
+						-- #endif
+						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
 					}),
 					i(13177),	-- Talisman of Evasion
 					i(13179),	-- Brazecore Armguards
@@ -1433,18 +1446,18 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			-- #if BEFORE 4.0.3
-			o(175606, {	-- Spire Spider Egg
+			i(12530, {	-- Spire Spider Egg
+				["provider"] = { "o", 175606 },	-- Spire Spider Egg
 				["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
-				["groups"] = {
-					i(12530, {	-- Spire Spider Egg
-						["timeline"] = { "removed 4.0.3" },
-					}),
-				},
+				["timeline"] = { "removed 4.0.3" },
 			}),
 			-- #endif
 			n(10376, {	-- Crystal Fang (Rare)
 				["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13218),	-- Fang of the Crystal Spider
 					i(13185),	-- Sunderseer Mantle
@@ -1470,6 +1483,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			e(392, {	-- Urok Doomhowl
 				["creatureID"] = 10584,	-- Urok Doomhowl
+				["provider"] = { "o", 175621 },	-- Urok's Tribute Pile
 				["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
 				["cost"] = {
 					{ "i", 12533, 1 },	-- Roughshod Pike
@@ -1542,7 +1556,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
 					{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
 				},
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13204),	-- Bashguuder
 					i(13198),	-- Hurd Smasher
@@ -1572,11 +1589,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { "removed 4.0.3" },
 					}),
 					i(12337),	-- Gemstone of Bloodaxe
-					i(13148, {	-- Chillpike [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-						-- #if ANYCLASSIC
+					i(13148, {	-- Chillpike
+						-- #if BEFORE 10.1.7
 						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+						-- #if AFTER 2.0.1
+						["isBounty"] = true,
 						-- #endif
-						["timeline"] = { "removed 2.0.1" },
+						-- #endif
+						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
 					}),
 					i(13163),	-- Relentless Scythe
 					i(13161),	-- Trindlehaven Staff
@@ -1622,9 +1642,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					applyclassicphase(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
 						["timeline"] = { "removed 4.0.1" },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
-						-- #if AFTER 4.0.1
-						["spellID"] = 0,	-- Removed completely.
-						-- #else
+						-- #if BEFORE 4.0.1
 						["spellID"] = 31016,	-- Eviscerate IX
 						["classes"] = { ROGUE },
 						["rank"] = 9,
@@ -1632,7 +1650,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					})),
 					-- #if AFTER 5.0.4
 					i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-						["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2 },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 					}),
 					-- #endif
@@ -1676,9 +1694,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 						applyclassicphase(PHASE_SIX, i(23320, {	-- Tablet of Flame Shock VI
 							["timeline"] = { "removed 4.0.1" },
-							-- #if AFTER 4.0.1
-							["spellID"] = 0,	-- Removed completely.
-							-- #else
+							-- #if BEFORE 4.0.1
 							["spellID"] = 29228,	-- Flame Shock VI
 							["classes"] = { SHAMAN },
 							["rank"] = 6,
@@ -1782,7 +1798,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(10339, {	-- Gyth <Rend Blackhand's Mount>
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
-						i(13522, {	-- Recipe: Flask of Chromatic Resistance
+						i(13522, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 						}),
 						i(12871, {	-- Chromatic Carapace
@@ -1827,7 +1843,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(12588, {	-- Bonespike Shoulder
-							["timeline"] = { "removed 6.0.2" },
+							-- #if AFTER 2.0.1
+							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["isBounty"] = true,
+							-- #endif
+							["timeline"] = { "removed 2.0.1" },
 						}),
 						i(16733, {	-- Spaulders of Valor
 							["timeline"] = { "removed 4.0.3" },
@@ -1857,9 +1877,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["groups"] = {
 						applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
 							["timeline"] = { "removed 4.0.1" },
-							-- #if AFTER 4.0.1
-							["spellID"] = 0,	-- Removed completely.
-							-- #else
+							-- #if BEFORE 4.0.1
 							["spellID"] = 31018,	-- Ferocious Bite V
 							["classes"] = { DRUID },
 							["rank"] = 5,
@@ -1969,7 +1987,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(15730, {	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
 						}),
-						i(13519, {	-- Recipe: Flask of the Titans
+						i(13519, {	-- Recipe: Flask of the Titans (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(12592, {	-- Blackblade of Shahram

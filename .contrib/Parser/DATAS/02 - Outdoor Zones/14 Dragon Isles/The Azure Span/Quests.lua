@@ -47,6 +47,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183543 },	-- Noriko the All-Remembering
 					["coord"] = { 46.6, 39.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(194512),	-- Broken Arcane Device (QI!)
+					},
 				}),
 				q(67035, {	-- Preservation of Knowledge
 					["sourceQuests"] = {
@@ -55,6 +58,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 192222 },	-- Althanus
 					["coord"] = { 46.7, 39.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(194516),	-- Aged Journal (QI!)
+						i(194514),	-- Antiquated Guest List (QI!)
+						i(194517),	-- Broken Texts (QI!)
+						i(194513),	-- Collection of Tomes (QI!)
+						i(194515),	-- Crumbling Event Planner (QI!)
+					},
 				}),
 				q(67036, {	-- Wrath of the Kirin Tor
 					["sourceQuests"] = {
@@ -74,6 +84,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
 					["provider"] = { "n", 192091 },	-- Archmage Khadgar
 					["coord"] = { 46.6, 40.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(191954),	-- Bag of Helpful Goods (QI!)
+					},
 				}),
 				q(65689, {	-- The Many Images of Kalecgos
 					["sourceQuests"] = { 65688 },	-- Meeting Kalecgos
@@ -95,6 +108,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 40.7, 59.0, THE_AZURE_SPAN },
 					["g"] = {
 						i(198037),	-- Brimming Arcanocrystal
+						i(190769),	-- Unstable Arcana (QI!)
 						i(197622),	-- Windborne Velocidrake: Finned Tail (DM!)
 					},
 				}),
@@ -106,7 +120,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 185622 },	-- Kalecgos
 					["coord"] = { 40.7, 59.0, THE_AZURE_SPAN },
 					["g"] = {
-						i(191978),	-- Bag of Helpful Goods
+						i(191979),	-- Arcane Stepping Stone (QI!)
+						i(191978),	-- Bag of Helpful Goods (QI!)
 					},
 				}),
 				q(65752, {	-- Arcane Annoyances
@@ -174,6 +189,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65864 },	-- Catch the Caravan
 					["provider"] = { "n", 188809 },	-- Elder Poa
 					["coord"] = { 35.4, 36.9, THE_AZURE_SPAN },
+					["g"] = {
+						i(191107),	-- Funerary Offering (QI!)
+					},
 				}),
 				q(65871, {	-- Gnoll Way Out
 					["sourceQuests"] = {
@@ -203,6 +221,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 34.3, 31.0, THE_AZURE_SPAN },
 					["g"] = {
 						i(198035),	-- Archer's Decorated Bow
+						i(191118),	-- Kargpaw's Totem (QI!)
 						i(198007),	-- Large Brass Cleaver
 						i(198003),	-- Ornate Steel Cleaver
 						i(198006),	-- Sharpened Silver Sword
@@ -219,6 +238,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 189662 },	-- Elder Poa
 					["coord"] = { 34.3, 31.0, THE_AZURE_SPAN },
+					["g"] = {
+						i(192189),	-- Hunting Game Calls (QI!)
+						i(191111),	-- Meat Curing Salts (QI!)
+						i(192190),	-- Skinning Tools (QI!)
+					},
 				}),
 				q(66239, {	-- Spreading Decay
 					["sourceQuests"] = {
@@ -271,6 +295,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65838 },	-- Breaching the Brackenhide
 					["provider"] = { "n", 187873 },	-- Kalecgos
 					["coord"] = { 16.7, 37.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(194431),	-- Ley Crystal (QI!)
+					},
 				}),
 				q(65848, {	-- Tome-ward Bound
 					["sourceQuests"] = {
@@ -437,6 +464,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 196812 },	-- Old Grimtusk
 					["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
 					["requireSkill"] = FISHING,
+					["g"] = {
+						i(200220),	-- Frozen Tail Darter (QI!)
+					},
 				}),
 				q(71014, {	-- A Far Furbolg Friend
 					["sourceQuests"] = { 71013 },	-- No Vengeance on an Empty Stomach
@@ -526,6 +556,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66175 },	-- Field Experiment
 					["provider"] = { "n", 186212 },	-- Wayun
 					["coord"] = { 7.5, 44.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(191309),	-- Crystal Flakes (QI!)
+					},
 				}),
 				q(66187, {	-- Mad Mordigan & The Crystal King
 					["sourceQuests"] = { 66177 },	-- No Dwarf Left Behind
@@ -544,7 +577,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16428.03, {	-- Snowhide Camp
 				q(66708, {	-- Riders in the Snow
-					["sourceQuests"] = { 66340 },	-- Into the Azure
+					["sourceQuests"] = {
+						66340,	-- Into the Azure
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 190300 },	-- Tuskarr Elder
 					["coord"] = { 65.9, 25.5, THE_AZURE_SPAN },
 					["isBreadcrumb"] = true,
@@ -553,6 +589,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66708 },	-- Riders in the Snow
 					["provider"] = { "n", 189963 },	-- Old Grimtusk
 					["coord"] = { 59.3, 39.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(193372),	-- Wood (QI!)
+					},
 				}),
 				q(66715, {	-- The Extraction
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
@@ -563,6 +602,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66715 },	-- The Extraction
 					["provider"] = { "n", 189625 },	-- Frostbite
 					["coord"] = { 58.4, 42.0, THE_AZURE_SPAN },
+					["g"] = {
+						i(193617),	-- Snowhide Totem (QI!)
+					},
 				}),
 				q(67050, {	-- Frostbite: Causes and Symptoms
 					["sourceQuests"] = { 66703 },	-- Snowball Effect
@@ -590,6 +632,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 71235 },	-- Field Mages
 					["provider"] = { "n", 192830 },	-- Steria Duskgrove
 					["coord"] = { 63.6, 28.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(197983),	-- Drakmoss Clump (QI!)
+					},
 				}),
 				q(68639, {	-- Prowling Polar Predators
 					["sourceQuests"] = { 71235 },	-- Field Mages
@@ -603,6 +648,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 192830 },	-- Steria Duskgrove
 					["coord"] = { 63.6, 28.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(198336),	-- Arcane-Infused Quill (QI!)
+					},
 				}),
 				q(68643, {	-- Vitamins and Minerals
 					["sourceQuests"] = {
@@ -611,6 +659,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 192825 },	-- Callisto Windsor
 					["coord"] = { 63.6, 28.9, THE_AZURE_SPAN },
+					["g"] = {
+						i(198797),	-- Vial of Mineral Water (QI!)
+					},
 				}),
 				q(68644, {	-- Sugar, Spice, and Everything Nice
 					["sourceQuests"] = {
@@ -736,6 +787,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
 					},
 					["coord"] = { 16.2, 20.9, THE_AZURE_SPAN },
+					["g"] = {
+						i(189183),	-- Smelly Ooze (QI!)
+					},
 				}),
 				q(65302, {	-- Keys to the Kingdom
 					["sourceQuests"] = {
@@ -744,6 +798,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
 					["coord"] = { 13.8, 21.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(189126),	-- Gnoll "Lances" (QI!)
+						i(188959),	-- Sticky Gnoll Key (QI!)
+					},
 				}),
 				q(65594, {	-- Making a Mountain Out of a Gnoll Hill
 					["sourceQuests"] = { 65302 },	-- Keys to the Kingdom
@@ -783,11 +841,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65758 },	-- Grungir the Explorer
 					["provider"] = { "n", 185806 },	-- Grungir Ironspout
 					["coord"] = { 49.0, 64.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(191042),	-- Flask of Dwarven Antifreeze (QI!)
+					},
 				}),
 				q(65833, {	-- Primalist Tampering
 					["sourceQuests"] = { 65758 },	-- Grungir the Explorer
 					["provider"] = { "n", 185806 },	-- Grungir Ironspout
 					["coord"] = { 49.0, 64.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(191137),	-- Julh'ek's Runestone (QI!)
+						i(191135),	-- Nai'jin's Runestone (QI!)
+						i(191136),	-- Sin'tia's Runestone (QI!)
+					},
 				}),
 				q(65834, {	-- Kill the Queen
 					["sourceQuests"] = {
@@ -812,6 +878,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
 					["provider"] = { "n", 186157 },	-- Ruriq
 					["coord"] = { 44.8, 50.6, THE_AZURE_SPAN },
+					["g"] = {
+						i(191091),	-- On'tuq Hide Scraps (QI!)
+						i(191092),	-- On'tuq Tusk (QI!)
+					},
 				}),
 				q(65926, {	-- Tackling the Falls
 					["sourceQuests"] = {
@@ -825,6 +895,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65926 },	-- Tackling the Falls
 					["provider"] = { "n", 186386 },	-- Kauj
 					["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(194324),	-- Gleamfish (QI!)
+					},
 				}),
 				q(65929, {	-- Ice Breakers
 					["sourceQuests"] = { 66724 },	-- The Gleamfisher
@@ -835,6 +908,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66724 },	-- The Gleamfisher
 					["provider"] = { "n", 186386 },	-- Kauj
 					["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(191199),	-- Restless Mote (QI!)
+					},
 				}),
 				q(65930, {	-- A Wrestle of Wind and Water
 					["sourceQuests"] = {
@@ -859,7 +935,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16428.09, {	-- Lost Ruins
 				q(66964, {	-- Artifacts in the Wrong Hands
-					["sourceQuests"] = { 66340 },	-- Into the Azure
+					["sourceQuests"] = {
+						66340,	-- Into the Azure
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 196545 },	-- Polky Cogzapper
 					["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
 					["isBreadcrumb"] = true,
@@ -876,11 +956,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66964 },	-- Artifacts in the Wrong Hands
 					["provider"] = { "n", 196254 },	-- Kattigat
 					["coord"] = { 67.2, 44.4, THE_AZURE_SPAN },
+					["g"] = {
+						i(194747),	-- Frozen Venom Gland (QI!)
+					},
 				}),
 				q(67724, {	-- The Fending Flames
 					["sourceQuests"] = { 66964 },	-- Artifacts in the Wrong Hands
 					["provider"] = { "n", 191715 },	-- To'tik
 					["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(195468),	-- Shiverweb Silk (QI!)
+					},
 				}),
 				q(70858, {	-- Back into the Action
 					["sourceQuests"] = {
@@ -898,6 +984,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70858 },	-- Back into the Action
 					["provider"] = { "n", 196501 },	-- Alia Sunsoar
 					["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(200067),	-- Whispering Shard (QI!)
+					},
 				}),
 				q(70937, {	-- What Valthrux Once Was
 					["sourceQuests"] = { 70858 },	-- Back into the Action
@@ -908,6 +997,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70859 },	-- What the Guardian Beholds
 					["provider"] = { "n", 196501 },	-- Alia Sunsoar
 					["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(200110),	-- Whispering Fragments (QI!)
+					},
 				}),
 				q(70946, {	-- No One May Wield It
 					["sourceQuests"] = {
@@ -948,6 +1040,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66391 },	-- To the Ruins!
 					["provider"] = { "n", 189166 },	-- Lathos Sunband
 					["coord"] = { 65.0, 58.6, THE_AZURE_SPAN },
+					["g"] = {
+						i(191265),	-- Sundered Flames Expedition Orders (QI!)
+					},
 				}),
 				q(66422, {	-- The Expedition Continues!
 					["sourceQuests"] = {
@@ -1106,6 +1201,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
 					["provider"] = { "n", 189208 },	-- Custodian Vernagos
 					["coord"] = { 46.1, 41.0, THE_AZURE_SPAN },
+					["g"] = {
+						i(192776),	-- Dormant Embercone (QI!)
+						i(192474),	-- Frozen Core (QI!)
+						i(192473),	-- Hornswog Hide Scraps (QI!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16580.03, {	-- Setting the Defense
@@ -1214,6 +1314,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 71233 },	-- Falling Water [Might be the only true SQ here..]
 					["provider"] = { "n", 190315 },	-- Willa Stronghinge
 					["coord"] = { 18.7, 24.5, THE_AZURE_SPAN },
+					["g"] = {
+						i(194030),	-- Moose Flank (QI!)
+						i(193219),	-- Vorquin Meat (QI!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16580.12, {	-- It's Cold Up Here
@@ -1221,6 +1325,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 71233 },	-- Falling Water
 					["provider"] = { "n", 190315 },	-- Willa Stronghinge
 					["coord"] = { 18.7, 24.5, THE_AZURE_SPAN },
+					["g"] = {
+						i(193220),	-- Thick Bear Pelt (QI!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16580.13, {	-- It's Brew Time
@@ -1284,17 +1391,55 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 18.8, 24.4, THE_AZURE_SPAN },
 				}),
 			}),
-			header(HEADERS.Item, 200205, {	-- Tome of Polymorph: Duck
-				q(71002, {	-- Best Spell Ever
-					["description"] = "Use Blink ability to enter the cave.",
-					["provider"] = { "o", 381663 },	-- Manastorming For Beginners
-					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
-					["classes"] = { MAGE },
-					["g"] = {
-						i(200205),	-- Tome of Polymorph: Duck (CI!)
-					},
-				}),
-			}),
+			header(HEADERS.Quest, 76592, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Single Wing
+				["icon"] = 4616673,
+				["g"] = {
+					q(76592, {	-- A Single Wing
+						["provider"] = { "n", 207790 },	-- Scalecommander Emberthal
+						["coord"] = { 23.0, 37.2, VALDRAKKEN },
+					}),
+					q(77098, {	-- Getting to Ground
+						["sourceQuests"] = { 76592 },	-- A Single Wing
+						["provider"] = { "n", 208236 },	-- Amythora
+						["coord"] = { 74.0, 54.8, THE_AZURE_SPAN },
+					}),
+					q(76594, {	-- Dracthyr Down
+						["sourceQuests"] = { 77098 },	-- Getting to Ground
+						["provider"] = { "n", 207819 },	-- Amythora
+						["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
+						["g"] = {
+							i(208004),	-- Wingfoil (QI!)
+						},
+					}),
+					q(77163, {	-- Seeing Reason
+						["sourceQuests"] = { 77098 },	-- Getting to Ground
+						["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+						["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+					}),
+					q(76593, {	-- The Best Intentions
+						["sourceQuests"] = { 77098 },	-- Getting to Ground
+						["provider"] = { "n", 207819 },	-- Amythora
+						["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
+						["g"] = {
+							i(208014),	-- Sundered Shackles Key (QI!)
+						},
+					}),
+					q(76595, {	-- Urgent Exfiltration
+						["sourceQuests"] = {
+							76594,	-- Dracthyr Down
+							77163,	-- Seeing Reason
+							76593,	-- The Best Intentions
+						},
+						["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+						["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+					}),
+					q(76597, {	-- On New Wings
+						["sourceQuests"] = { 76595 },	-- Urgent Exfiltration
+						["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+						["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+					}),
+				},
+			})),
 			header(HEADERS.Achievement, 16323, {	-- Fragments of History
 				q(70806, {	-- Chunk of Sculpture
 					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
@@ -1317,42 +1462,72 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
 				}),
 			}),
+			header(HEADERS.Item, 200205, {	-- Tome of Polymorph: Duck
+				q(71002, {	-- Best Spell Ever
+					["description"] = "Use Blink ability to enter the cave.",
+					["provider"] = { "o", 381663 },	-- Manastorming For Beginners
+					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
+					["classes"] = { MAGE },
+					["g"] = {
+						i(200205),	-- Tome of Polymorph: Duck (CI!)
+					},
+				}),
+			}),
 			------ Hemet Nesingwary ------
+			-- TODO: perhaps verify these further...? either has no quest pre-req, or requires DF_ACCOUNT_CAMPAIGN_QUEST | 65686
 			q(66972, {	-- Old Stonetusk
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194432),	-- Old Stonetusk's Tusk (QI!)
+				},
 			}),
 			q(66958, {	-- Protect And Herd
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 18.8, 49.2, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194433),	-- Bloodhorn's Horn (QI!)
+				},
 			}),
 			q(66968, {	-- Pruning The Pack
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 65.5, 25.9, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194440),	-- Yetor's Head (QI!)
+				},
 			}),
 			q(66957, {	-- A Shadow In The Ice
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 46.7, 38.7, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194439),	-- Frostfist's Eye (QI!)
+				},
 			}),
 			q(66939, {	-- Hunting the Huntmaster
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 62.7, 60.1, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194430),	-- Krakle's Trigger Paw (QI!)
+				},
 			}),
 			q(66971, {	-- The Face of Death
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 63.5, 15.6, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194444),	-- Frostjaw's Jaw (QI!)
+				},
 			}),
 			------ Painting ------
 			q(70166, {	-- The Joy of Painting
@@ -1368,6 +1543,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 70166 },	-- The Joy of Painting
 				["provider"] = { "n", 194425 },	-- Ranpiata
 				["coord"] = { 7.9, 53.5, THE_AZURE_SPAN },
+				["g"] = {
+					i(198484),	-- Brackenhide's Decay (QI!)
+					i(198480),	-- The Resplendent Pools (QI!)
+					i(198482),	-- The Spiral of the Kurgans (QI!)
+				},
 			}),
 			q(70169, {	-- Even Trees Need Friends
 				["sourceQuests"] = { 70168 },	-- Sad Little Accidents
@@ -1378,6 +1558,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 70169 },	-- Even Trees Need Friends
 				["provider"] = { "n", 194425 },	-- Ranpiata
 				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
+				["groups"] = {
+					i(198512),	-- The Great Halls (QI!)
+					i(198513),	-- The Academy (QI!)
+					i(198514),	-- The Sealed Vault (QI!)
+					i(198515),	-- The Fire Labs (QI!)
+				},
 			}),
 			q(70171, {	-- Happy Little Accidents
 				["sourceQuests"] = { 70170 },	-- Beat the Demons Out of It
@@ -1385,6 +1571,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 7.9, 53.3, THE_AZURE_SPAN },
 				["g"] = {
 					i(198474),	-- Artist's Easel (TOY!)
+					i(198516),	-- Hudson's Final Drawing (QI!)
 				},
 			}),
 			------ Captain Haab ------
@@ -1405,34 +1592,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 192750 },	-- Miva Star-Eye
 				["coord"] = { 41.2, 35.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(194899),	-- Dispelling Wand (QI!)
+				},
 			}),
 			q(71139, {	-- Glowing Arcane Jewel
 				["provider"] = { "i", 200528 },	-- Glowing Arcane Jewel
 				["coord"] = { 75.8, 24.2, THE_AZURE_SPAN },
-				["description"] = "Requires 4 players (or less if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
+				["description"] = "Requires 2 players (or solo if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
 				["g"] = {
 					i(197141),	-- Highland Drake: Scaled Pattern (DM!)
 					i(197137),	-- Highland Drake: Spined Nose (DM!)
 				},
-				-- Lost Elemental ID 196900
-				-- Lava Orb ID 196901
-				-- Stranded Soul ID 197183
 			}),
 			q(67175, {	-- How To Stop An Exploding Toy Boat
 				["sourceQuests"] = { 67174 },	-- Arcane Detection
 				["provider"] = { "n", 192750 },	-- Miva Star-Eye
 				["coord"] = { 41.2, 35.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(194900),	-- Miva's Dispelling Wand (QI!)
+				},
 			}),
 			q(66227, {	-- Some Good Fishing
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 185608 },	-- Khuri
 				["coord"] = { 41.5, 35.6, THE_AZURE_SPAN },
 				["requireSkill"] = FISHING,
+				["g"] = {
+					i(191646),	-- Blue-Tailed Minnow (QI!)
+				},
 			}),
 			q(67177, {	-- WANTED: Gorger
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 192760 },	-- Shala
 				["coord"] = { 41.4, 36.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(194901),	-- Curved Horns (QI!)
+				},
 			}),
 			q(66622, {	-- Wayward Tools
 				["sourceQuests"] = { 70627 },	-- What of the Winterpelt Clan?

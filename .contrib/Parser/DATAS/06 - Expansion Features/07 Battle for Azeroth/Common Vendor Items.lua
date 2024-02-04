@@ -191,12 +191,11 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				140640,	-- Commander Langton
 				134729,	-- Crimper Mirjam
 				144115,	-- Diana Seafinch
-				136138,	-- Fixi Slyshiv
-				143246,	-- Garrett Elmendorf
-				123639,	-- Harold Atkey
 				137411,	-- Joseph Stephens
 				142770,	-- Kevin Tack
+				153591,	-- Mikah Brewbelly
 				142759,	-- Monica Winters
+				145901,	-- Oliver Hopewell
 				142189,	-- Ruddy the Rat
 				126601,	-- Sarella Griffin
 				143244,	-- Victor Esquivias
@@ -210,12 +209,11 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				{ 54.55, 16.81, BORALUS },	-- Captain Langton
 				{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
 				{ 66.28, 61.58, BORALUS },	-- Diana Seafinch
-				{ 21.51, 43.71, DRUSTVAR },	-- Fixi Slyshiv
-				{ 75.44, 18.61, BORALUS },	-- Garrett Elmendorf
-				{ 75.37, 14.48, BORALUS },	-- Harold Atkey
 				{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
 				{ 53.18, 16.48, BORALUS },	-- Kevin Tack
+				{ 40.0, 55.6, NAZJATAR },	-- Mikah Brewbelly
 				{ 52.78, 17.27, BORALUS },	-- Monica Winters
+				{ 47.4, 35.2, DARKSHORE },	-- Oliver Hopewell
 				{ 69.26, 29.82, BORALUS },	-- Ruddy the Rat
 				{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
 				{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]

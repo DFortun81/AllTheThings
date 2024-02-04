@@ -6,10 +6,9 @@ local REMOVED_WITH_WRATH = { "added 1.0.1", "removed 3.0.8" };
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(741, {	-- Molten Core
 		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
-		["sins"] = {
-			"Geschmolzener Kern",	-- DE
-			"Огненные Недра",		-- RU
-		},
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 2717,	-- Molten Core
+		-- #endif
 		["mapID"] = MOLTEN_CORE,
 		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
 		-- #if BEFORE 5.4.0
@@ -26,6 +25,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					-- #endif
 					["maps"] = { AZSHARA },
 				}),
+				ach(11741, {["timeline"] = {ADDED_7_2_0}}),	-- So Hot Right Now (Molten Core)
 			}),
 			n(FACTIONS, {
 				faction(749, {	-- Hydraxian Waterlords
@@ -190,7 +190,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				}),
-				q(6805, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Stormers and Rumblers
+				q(6805, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { SILITHUS },
@@ -390,7 +390,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18257, {	-- Recipe: Major Rejuvenation Potion
+				i(18257, {	-- Recipe: Major Rejuvenation Potion (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -472,8 +472,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = REMOVED_WITH_WRATH,
 						-- #if BEFORE WRATH
 						["recipeID"] = 19801,	-- Tranquilizing Shot
-						-- #else
-						["spellID"] = 0,
 						-- #endif
 					}),
 				},
@@ -737,9 +735,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(138018, {	-- Clothes Chest Pattern: Molten Core
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(138833, {	-- Illusion: Flametongue
+					i(138833, {	-- Illusion: Flametongue (ILLUSION!)
 						["classes"] = { SHAMAN },
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(17076),	-- Bonereaver's Edge
 					i(17104),	-- Spinal Reaper

@@ -12,16 +12,16 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			ach(4922),		-- Grand Master Archaeologist
 			ach(4923),		-- Illustrious Grand Master Archaeologist
 			ach(5193, {	-- Blue Streak
-				crit(1, {	-- Notched Sword of Tunadil the Redeemer
+				crit(15058, {	-- Notched Sword of Tunadil the Redeemer
 					["provider"] = { "i", 64337 },	-- Notched Sword of Tunadil the Redeemer
 				}),
-				crit(2, {	-- Dented Shield of Horuz Killcrow
+				crit(15059, {	-- Dented Shield of Horuz Killcrow
 					["provider"] = { "i", 64362 },	-- Dented Shield of Horuz Killcrow
 				}),
-				crit(3, {	-- Scorched Staff of Shadow Priest Anund
+				crit(15060, {	-- Scorched Staff of Shadow Priest Anund
 					["provider"] = { "i", 64366 },	-- Scorched Staff of Shadow Priest Anund
 				}),
-				crit(4, {	-- Silver Kris of Korl
+				crit(15095, {	-- Silver Kris of Korl
 					["provider"] = { "i", 64483 },	-- Silver Kris of Korl
 				}),
 			}),
@@ -30,93 +30,93 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				ach(5315),		-- Digger (10)
 			}),
 			ach(5511, {	-- It's Always in the Last Place You Look
-				crit(1),		-- Draenei
-				crit(2),		-- Dwarf
-				crit(3),		-- Fossil
-				crit(4),		-- Nerubian
-				crit(5),		-- Night Elf
-				crit(6),		-- Orc
-				crit(7),		-- Tol'vir
-				crit(8),		-- Troll
-				crit(9),		-- Vrykul
+				crit(16197),		-- Draenei
+				crit(16198),		-- Dwarf
+				crit(16199),		-- Fossil
+				crit(16200),		-- Nerubian
+				crit(16201),		-- Night Elf
+				crit(16202),		-- Orc
+				crit(16203),		-- Tol'vir
+				crit(16204),		-- Troll
+				crit(16205),		-- Vrykul
 			}),
 			ach(4859, {	-- Kings Under the Mountain
-				crit(1, {	-- Mithril Chain of Angerforge
+				crit(15062, {	-- Mithril Chain of Angerforge
 					["provider"] = { "i", 64368 },	-- Mithril Chain of Angerforge
 				}),
-				crit(2, {	-- Moltenfist's Jeweled Goblet
+				crit(15063, {	-- Moltenfist's Jeweled Goblet
 					["provider"] = { "i", 63414 },	-- Moltenfist's Jeweled Goblet
 				}),
-				crit(3, {	-- Winged Helm of Corehammer
+				crit(15064, {	-- Winged Helm of Corehammer
 					["provider"] = { "i", 64343 },	-- Winged Helm of Corehammer
 				}),
-				crit(4, {	-- Ironstar's Petrified Shield
+				crit(15065, {	-- Ironstar's Petrified Shield
 					["provider"] = { "i", 64344 },	-- Ironstar's Petrified Shield
 				}),
-				crit(5, {	-- Skull Staff of Shadowforge
+				crit(15066, {	-- Skull Staff of Shadowforge
 					["provider"] = { "i", 64371 },	-- Skull Staff of Shadowforge
 				}),
-				crit(6, {	-- Spiked Gauntlets of Anvilrage
+				crit(15068, {	-- Spiked Gauntlets of Anvilrage
 					["provider"] = { "i", 64485 },	-- Spiked Gauntlets of Anvilrage
 				}),
-				crit(7, {	-- Warmaul of Burningeye
+				crit(15069, {	-- Warmaul of Burningeye
 					["provider"] = { "i", 64484 },	-- Warmaul of Burningeye
 				}),
 			}),
 			ach(4858, {	-- Seven Scepters
-				crit(1, {	-- Scepter of Charlga Razorflank
+				crit(15051, {	-- Scepter of Charlga Razorflank
 					["provider"] = { "i", 64367 },	-- Scepter of Charlga Razorflank
 				}),
-				crit(2, {	-- Atal'ai Scepter
+				crit(15050, {	-- Atal'ai Scepter
 					["provider"] = { "i", 64348 },	-- Atal'ai Scepter
 				}),
-				crit(3, {	-- Scepter of Xavius
+				crit(15052, {	-- Scepter of Xavius
 					["provider"] = { "i", 64382 },	-- Scepter of Xavius
 				}),
-				crit(4, {	-- Scepter of Nekros Skullcrusher
+				crit(15071, {	-- Scepter of Nekros Skullcrusher
 					["provider"] = { "i", 64420 },	-- Scepter of Nekros Skullcrusher
 				}),
-				crit(5, {	-- Scepter of the Nathrezim
+				crit(15074, {	-- Scepter of the Nathrezim
 					["provider"] = { "i", 64444 },	-- Scepter of the Nathrezim
 				}),
-				crit(6, {	-- Scepter of Nezar'Azret
+				crit(15092, {	-- Scepter of Nezar'Azret
 					["provider"] = { "i", 64475 },	-- Scepter of Nezar'Azret
 				}),
-				crit(7, {	-- Scepter of Bronzebeard
+				crit(15096, {	-- Scepter of Bronzebeard
 					["provider"] = { "i", 64487 },	-- Scepter of Bronzebeard
 				}),
 			}),
 			ach(5301, {	-- The Boy Who Would be King
-				crit(1, {	-- Cat Statue with Emerald Eyes
+				crit(15100, {	-- Cat Statue with Emerald Eyes
 					["provider"] = { "i", 64653 },	-- Cat Statue with Emerald Eyes
 				}),
-				crit(2, {	-- Soapstone Scarab Necklace
+				crit(15101, {	-- Soapstone Scarab Necklace
 					["provider"] = { "i", 64654 },	-- Soapstone Scarab Necklace
 				}),
-				crit(3, {	-- Tiny Oasis Mosaic
+				crit(15102, {	-- Tiny Oasis Mosaic
 					["provider"] = { "i", 64655 },	-- Tiny Oasis Mosaic
 				}),
-				crit(4, {	-- Engraved Scimitar Hilt
+				crit(15103, {	-- Engraved Scimitar Hilt
 					["provider"] = { "i", 64656 },	-- Engraved Scimitar Hilt
 				}),
-				crit(5, {	-- Sketch of a Desert Palace
+				crit(15104, {	-- Sketch of a Desert Palace
 					["provider"] = { "i", 64658 },	-- Sketch of a Desert Palace
 				}),
-				crit(6, {	-- Canopic Jar
+				crit(15105, {	-- Canopic Jar
 					["provider"] = { "i", 64657 },	-- Canopic Jar
 				}),
 			}),
 			ach(5192, {	-- The Harder they Fall
-				crit(1, {	-- Tiny Bronze Scorpion
+				crit(15061, {	-- Tiny Bronze Scorpion
 					["provider"] = { "i", 64389 },	-- Tiny Bronze Scorpion
 				}),
-				crit(2, {	-- Maul of Stone Guard Mur'og
+				crit(15070, {	-- Maul of Stone Guard Mur'og
 					["provider"] = { "i", 64417 },	-- Maul of Stone Guard Mur'og
 				}),
-				crit(3, {	-- Gray Candle Stub
+				crit(15072, {	-- Gray Candle Stub
 					["provider"] = { "i", 64418 },	-- Gray Candle Stub
 				}),
-				crit(4, {	-- Rusted Steak Knife
+				crit(15073, {	-- Rusted Steak Knife
 					["provider"] = { "i", 64419 },	-- Rusted Steak Knife
 				}),
 			}),
@@ -130,22 +130,22 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				title(150),		-- Professor
 			}),
 			ach(5191, {	-- Tragedy in Three Acts
-				crit(1, {	-- Delicate Music Box
+				crit(15053, {	-- Delicate Music Box
 					["provider"] = { "i", 64357 },	-- Delicate Music Box
 				}),
-				crit(2, {	-- Cloak Clasp with Antlers
+				crit(15054, {	-- Cloak Clasp with Antlers
 					["provider"] = { "i", 63407 },	-- Cloak Clasp with Antlers
 				}),
-				crit(3, {	-- Hairpin of Silver and Malachite
+				crit(15055, {	-- Hairpin of Silver and Malachite
 					["provider"] = { "i", 64356 },	-- Hairpin of Silver and Malachite
 				}),
-				crit(4, {	-- Chest of Tiny Glass Animals
+				crit(15056, {	-- Chest of Tiny Glass Animals
 					["provider"] = { "i", 64379 },	-- Chest of Tiny Glass Animals
 				}),
-				crit(5, {	-- Cracked Crystal Vial
+				crit(15057, {	-- Cracked Crystal Vial
 					["provider"] = { "i", 64381 },	-- Cracked Crystal Vial
 				}),
-				crit(6, {	-- Silver Scroll Case
+				crit(15099, {	-- Silver Scroll Case
 					["provider"] = { "i", 64648 },	-- Silver Scroll Case
 				}),
 			}),
@@ -274,7 +274,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			currency(401, {	-- Tol'vir
 				-- Solves
 				i(64657, bubbleDownSelf({["requireSkill"] = ALCHEMY},{	-- Canopic Jar
-					i(67538),	-- Recipe: Vial of the Sands
+					i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 				})),
 				i(60847),	-- Crawling Claw (PET!)
 				i(64881),	-- Pendant of the Scarab Storm (TOY!)

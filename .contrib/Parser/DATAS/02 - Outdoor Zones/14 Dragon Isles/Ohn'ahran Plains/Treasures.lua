@@ -98,8 +98,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
-			-- objectID is mentioned here https://www.wowhead.com/item=195041/everliving-wooden-key#comments:id=5485045
-			-- but still missing from wowhead
+			o(376416, {	-- Ellam's Favorite Toys
+				["coord"] = { 78.3, 29.2, OHNAHRAN_PLAINS },
+				["description"] = "Found only when Aylaag Camp is up in this area, pet Ellam until progress bar is at 100%, provides Maruuk Centaur reputation.",
+			}),
 			o(378047, {	-- Emerald Chest
 				["coords"] = {
 					{ 67.03, 43.72, OHNAHRAN_PLAINS },	-- Stone

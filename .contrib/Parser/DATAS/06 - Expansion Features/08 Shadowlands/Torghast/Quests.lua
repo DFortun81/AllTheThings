@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["crs"] = { 175123 },	-- Warden Arkoban
 				}),
 				q(62967, {	-- Prison of the Forgotten
-					["description"] = "Only available if you delete they quest item",
+					["description"] = "Only available if you delete the quest item",
 					["sourceQuests"] = { 61099 },	-- The Search For Baine
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
@@ -28,6 +28,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 60268 },	-- Deep Within
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
+					["g"] = {
+						i(178561),	-- Runecarver's Memory (QI!)
+					},
 				}),
 				q(60270, {	-- A Damned Pact
 					["sourceQuests"] = { 60269 },	-- Reawakening
@@ -38,6 +41,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 60270 },	-- A Damned Pact
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["g"] = {
+						i(181324),	-- Anima Supricifer (QI!)
+						i(178562),	-- Molten Anima (QI!)
+					},
 				}),
 				q(60272, {	-- The Weak Link
 					["sourceQuests"] = { 60271 },	-- A Grave Chance
@@ -45,24 +52,20 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 			}),
-
-
-
-
 			q(62700, {	-- Ashes of the Tower
 				["sourceQuests"] = { 60272 },	-- The Weak Link
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 			}),
-
-
-
 			q(64210, {	-- The Box of Many Things
 				["sourceQuests"] = { 64557 },	-- In Darkness, Found
 				["provider"] = { "n", 179598 },	-- Ve'nish
 				["coord"] = { 42.9, 68.2, 1967 },	-- TG106_Floor (scenario)
 				["maps"] = {
 					1968,	-- TG107_Floor
+				},
+				["g"] = {
+					i(186732),	-- The Box of Many Things (QI!)
 				},
 			}),
 			q(62719, {	-- The Final Pieces
@@ -106,6 +109,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
 				["timeline"] = { ADDED_9_1_0 },
+				["g"] = {
+					i(186732),	-- The Box of Many Things (QI!)
+				},
 			}),
 
 		--	Champion Unlocks
@@ -437,9 +443,15 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(59778, {	-- Help Sawn find Varrik
 				["provider"] = { "n", 166148 },	-- Sawn
+				["groups"] = {
+					i(171211),	-- Venthyr's Coin Purse
+				},
 			}),
 			q(59346, {	-- Indri's Flute
 				["provider"] = { "n", 157426 },	-- Indri the Treesinger
+				["groups"] = {
+					i(171210),	-- Satchel of Nature's Bounty
+				},
 			}),
 			q(61248, {	-- Kaletar's Freedom
 				["provider"] = { "n", 171898 },	-- Kaletar
@@ -774,7 +786,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
+		q(62885),	-- Triggered when learning legendary memory that triggered a cutscene w/Runecarver (spellID 345039)
 		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
 		q(62978),	-- Twisting Corridors, Layer 4
 		q(62979),	-- Twisting Corridors, Layer 6
@@ -823,7 +835,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 
 		-- 9.1.5
 		--q(64848), Enter Torghast as lvl 56 NF Druid
-		q(65308), -- Leveling in Torghast
+		q(65308), -- Leveling in Torghast / Maw Jump to Torghast (spellID 359581)
 
 		-- 9.2
 		-- Jailers Gauntlet
@@ -850,6 +862,6 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 
 		q(65298),	-- Unlocking Layer 5-8
 
-		q(65681),	-- Unlocking 'Unity' Legendary power
+		q(65681),	-- Unlocking 'Unity' Legendary power (spellID 367716)
 	}),
 }));

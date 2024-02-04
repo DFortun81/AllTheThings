@@ -80,6 +80,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 170084,	-- Lieutenant Althera
 				["sourceQuest"] = 60759,	-- Damned Intruders (H)
 				["lvl"] = { 50 },
+				["g"] = {
+					i(180269),	-- Althera's Field Report (QI!)
+				},
 			}),
 			q(61486, {	-- The Banshee's Champion (A)
 				["coord"] = { 65.55, 77.0, STORMWIND_CITY },
@@ -317,6 +320,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
+				["g"] = {
+					i(182199),	-- Brightspark's Bottled Blaze (QI!)
+				},
 			}),
 			q(59772, {	-- Research Ruination
 				-- i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in

@@ -35,6 +35,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				-- #if AFTER CATA
+				explorationAch(760, {	-- Explore Alterac Mountains
+					-- #if BEFORE WRATH
+					["description"] = "Explore Alterac Mountains, revealing the covered areas of the world map.",
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
 				explorationAch(772, {	-- Explore Hillsbrad Foothills
 					-- #if BEFORE WRATH
 					["description"] = "Explore Hillsbrad Foothills, revealing the covered areas of the world map.",
@@ -43,6 +51,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4895, {	-- Hillsbrad Foothills Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Sludge Fields
 							["sourceQuest"] = 28237,	-- A Blight Upon the Land
@@ -67,6 +76,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -121,6 +131,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
 					["OnTooltip"] = OnTooltipForRavenholdt,
 				}),
+				faction(70, {	-- Syndicate
+					["description"] = "Neutral is the highest you can currently reach with the Syndicate.",
+					["collectible"] = false,
+				}),
 			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
@@ -142,14 +156,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 				}),
-				-- #if BEFORE 4.0.3
 				fp(14, {	-- Southshore, Hillsbrad
 					["cr"] = 2432,	-- Darla Harris <Gryphon Master>
 					["coord"] = { 49.4, 52.4, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #endif
 				fp(670, {	-- Strahnbrad, Alterac Mountains
 					["cr"] = 47665,	-- Phillip Harding <Bat Handler>
 					["coord"] = { 58.2, 26.4, HILLSBRAD_FOOTHILLS },
@@ -437,7 +449,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
 					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 3.3.0" },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
+					["groups"] = {
+						i(3761, {	-- Deadskull Shield
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(3822, {	-- Runic Darkblade
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6282, {	-- Sacred Burial Trousers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(3760, {	-- Band of the Undercity
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(14351, {	-- Battle of Hillsbrad (7/7)
+					["providers"] = {
+						{ "n", 2215 },	-- High Executor Darthalia
+						{ "i", 3701 },	-- Darthalia's Sealed Commendation
+					},
+					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -561,7 +599,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3754, {	-- Shepherd's Gloves
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3736, {	-- Recipe: Tasty Lion Steak
+						i(3736, {	-- Recipe: Tasty Lion Steak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 						-- #if BEFORE 4.0.3
@@ -1019,7 +1057,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE 4.0.3
 						-- Recipe is not unobtainable, sold by Zargh in Nothern Barrens
-						i(3735),	-- Recipe: Hot Lion Chops
+						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -1844,7 +1882,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 28,
 					["groups"] = {
-						i(3737, {	-- Recipe: Soothing Turtle Bisque
+						i(3737, {	-- Recipe: Soothing Turtle Bisque (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 						i(3729),	-- Soothing Turtle Bisque
@@ -1864,7 +1902,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 28,
 					["groups"] = {
-						i(3737, {	-- Recipe: Soothing Turtle Bisque
+						i(3737, {	-- Recipe: Soothing Turtle Bisque (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 						i(3729),	-- Soothing Turtle Bisque
@@ -2327,7 +2365,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if BEFORE 4.0.3
-						i(3734),	-- Recipe: Big Bear Steak
+						i(3734),	-- Recipe: Big Bear Steak (RECIPE!)
 						{
 							["itemID"] = 3499,	-- Burnished Gold Key
 							["coord"] = { 79.6, 40.6, HILLSBRAD_FOOTHILLS },
@@ -2680,6 +2718,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.8, 50.6, HILLSBRAD_FOOTHILLS },
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211951, {	-- Koartul
+					["coord"] = { 61.0, 32.8, HILLSBRAD_FOOTHILLS },
+					["cost"] = {{ "i", 210410, 1 }},	-- Freshwater Snapper Bait
+					["groups"] = {
+						i(210596, {	-- Rune of Cobra Strikes
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425759),	-- Engrave Chest - Cobra Strikes
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(14277, {	-- Lady Zephris
 					-- #if AFTER CATA
 					["coord"] = { 54.6, 76.6, HILLSBRAD_FOOTHILLS },
@@ -2765,6 +2817,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						-- #if AFTER CATA
+						i(3053, {	-- Humbert's Chestpiece
+							["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Mountaineer (Zone Drop).
+						}),
+						-- #endif
+					},
 				}),
 				n(50818, {	-- The Dark Prowler
 					["coord"] = { 33.0, 55.0, HILLSBRAD_FOOTHILLS },
@@ -2784,7 +2843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies> (Alterac Mountains)
 					["coord"] = { 44.0, 21.8, HILLSBRAD_FOOTHILLS },
 					["groups"] = {
-						i(14634, {	-- Recipe: Frost Oil
+						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2805,7 +2864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6054, {	-- Recipe: Shadow Protection Potion
+						i(6054, {	-- Recipe: Shadow Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2818,9 +2877,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
@@ -2856,7 +2915,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 80.0, 39.0, HILLSBRAD_FOOTHILLS },
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(210330, {	-- Hot Tip
+							["classes"] = { ROGUE },
+							["cost"] = 7500,	-- 75s
+							["groups"] = {
+								i(210329),	-- Hillsbrad Treasure Map
+								i(210323),	-- Safe Combination
+							},
+						})),
+						-- #endif
 						i(4795, {	-- Bear Bracers
+							["isLimited"] = true,
+						}),
+						i(3429, {	-- Guardsman Belt
+							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["isLimited"] = true,
 						}),
 						i(4832, {	-- Mystic Sarong
@@ -2882,9 +2955,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					},
 				}),
 				-- #endif
@@ -2943,8 +3016,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(21219),	-- Recipe: Sagefish Deligh
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -2953,7 +3026,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6055, {	-- Recipe: Fire Protection Potion
+						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
 							-- #if BEFORE 4.0.3
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
 							-- #else
@@ -3039,7 +3112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.0, 45.8, HILLSBRAD_FOOTHILLS },
 					["classes"] = { ROGUE },
 					["groups"] = {
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					},
 				}),
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer> (Alterac Mountains)
@@ -3066,6 +3139,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(211487, {	-- Demolition Explosives
+							["classes"] = { WARLOCK },
+							["cost"] = 10000,	-- 1g
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(210410, {	-- Freshwater Snapper Bait
+							["classes"] = { HUNTER },
+							["cost"] = 2000,	-- 20s
+						})),
+						-- #endif
 						i(4829, {	-- Dreamer's Belt
 							["isLimited"] = true,
 						}),
@@ -3081,12 +3164,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4838, {	-- Orb of Power
 							["isLimited"] = true,
 						}),
-						i(7362, {	-- Pattern: Earthen Leather Shoulders
+						i(7362, {	-- Pattern: Earthen Leather Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5772, {	-- Pattern: Red Woolen Bag
 							["isLimited"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret
+							["isLimited"] = true,
+						})),
+						-- #endif
 						i(7561, {	-- Schematic: Goblin Jumper Cables
 							["isLimited"] = true,
 						}),
@@ -3099,6 +3187,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, o(414658, {	-- Rubble
+					["coord"] = { 79.7, 40.9, HILLSBRAD_FOOTHILLS },
+					["cost"] = {{ "i", 211487, 1 }},	-- Demolition Explosives
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(211476, {	-- Rune of Fires Wake
+							["provider"] = { "o", 414713 },	-- Storage Locker
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403937),	-- Engrave Chest - Lake of Fire
+							},
+						})),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210026, {	-- Symbol of the Third Owl
+					["providers"] = {
+						{ "o", 409942 },	-- Twin Owl Statue (West)
+						{ "o", 409949 },	-- Twin Owl Statue (East)
+					},
+					["description"] = "Use Aquatic Form (or a swim speed potion) to click the statues one after another. Start at the eastern statue and swim to the western statue as the western statue's island can be climbed from the east, making it a direct line from eastern to western.",
+					["coords"] = {
+						{ 36.91, 76.14, HILLSBRAD_FOOTHILLS },
+						{ 54.43, 82.01, HILLSBRAD_FOOTHILLS },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+				})),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				-- #if AFTER CATA
 				i(3711, {	-- Belamoore's Research Journal
@@ -3109,19 +3227,59 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 1.11.1.5462" },
 				}),
 				i(1280, {	-- Cloaked Hood
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2246,	-- Syndicate Assassin
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
+					["coords"] = {
+						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
+						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
+						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
+						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif
+				}),
+				-- #endif
+				-- #if AFTER 10.1.7
+				i(4767, {	-- Coppercloth Gloves
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 09.09.2023
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+					["cr"] = 2628,	-- Dalaran Worker
+					["coords"] = {
+						{ 27.8, 42.6, HILLSBRAD_FOOTHILLS },
+						{ 31.0, 43.6, HILLSBRAD_FOOTHILLS },
+						{ 33.6, 41.0, HILLSBRAD_FOOTHILLS },
+						{ 35.0, 35.6, HILLSBRAD_FOOTHILLS },
+						{ 32.6, 32.0, HILLSBRAD_FOOTHILLS },
+					},
 				}),
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2372,	-- Mudsnout Gnoll
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 58.8, 74.6, HILLSBRAD_FOOTHILLS },
+						{ 57.8, 75.8, HILLSBRAD_FOOTHILLS },
+					},
 				}),
 				i(3336, {	-- Flesh Piercer
-					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						2370,	-- Daggerspine Screamer
 						2368,	-- Daggerspine Shorestalker
+					},
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 59.6, 89.4, HILLSBRAD_FOOTHILLS },
+						{ 57.2, 84.2, HILLSBRAD_FOOTHILLS },
 					},
 				}),
 				i(11152, {	-- Formula: Enchant Gloves - Fishing (RECIPE!)
@@ -3137,33 +3295,73 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3429, {	-- Guardsman Belt
 					["timeline"] = { "removed 4.0.3" },
+					-- added to vendor in 10.1.7
 					["crs"] = {
 						2427,	-- Jailor Eston
 						2428,	-- Jailor Marlgen
 					},
 				}),
+				-- #if BEFORE CATA
 				i(3053, {	-- Humbert's Chestpiece
-					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.
-					-- #if AFTER CATA
-					["coords"] = {
-						{ 63.2, 85.8, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
+					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
 					["crs"] = {
-						-- #if BEFORE CATA
 						2344,	-- Dun Garok Mountaineer
-						-- #endif
 						14275,	-- Tamra Stormpike
 					},
 				}),
+				-- #endif
 				i(4724, {	-- Humbert's Helm
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2345,	-- Dun Garok Rifleman
+					["coords"] = {
+						{ 71.2, 74.2, HILLSBRAD_FOOTHILLS },
+						{ 72.0, 81.0, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						14275,	-- Tamra Stormpike
+						49269,	-- Dun Garok Spirit
+					},
+					["coords"] = {
+						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
+						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
+						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
+						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif
 				}),
 				i(4723, {	-- Humbert's Pants
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2346,	-- Dun Garok Priest
+					["coords"] = {
+						{ 70.6, 75.6, HILLSBRAD_FOOTHILLS },
+						{ 71.4, 81.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						14275,	-- Tamra Stormpike
+						49269,	-- Dun Garok Spirit
+					},
+					["coords"] = {
+						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
+						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
+						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
+						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(206387, {	-- Kajaric Icon
+					["coord"] = { 65.6, 60.4, HILLSBRAD_FOOTHILLS },
+					["classes"] = { SHAMAN },
+					["cr"] = 2373,	-- Mudsnout Shaman
+					["groups"] = {
+						recipe(410095),	-- Engrave Gloves - Lava Burst
+					},
+				})),
+				-- #endif
 				-- #if BEFORE CATA
 				i(4589, {	-- Long Elegant Feather
 					["crs"] = {
@@ -3173,28 +3371,52 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if AFTER CATA
 				i(5775, {	-- Pattern: Black Silk Pack
-					["timeline"] = { "removed 4.0.3" },
-					["crs"] = {
-						-- #if AFTER CATA
-						2242,	-- Syndicate Spy (Alterac Mountains)
-						-- #endif
-						2434,	-- Shadowy Assassin
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					-- #if AFTER 10.1.7
+					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
+					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
+					["coords"] = {
+						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
+						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
+						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
+						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
 					},
+					-- #endif
 				}),
+				-- #endif
 				-- #if BEFORE CATA
 				i(5772, {	-- Pattern: Red Woolen Bag
 					["cr"] = 2264,	-- Hillsbrad Tailor
 				}),
 				-- #endif
 				i(1485, {	-- Pitchfork
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 09.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						2403,	-- Farmer Getz
 						2451,	-- Farmer Kalaba
 						232,	-- Farmer Ray
 						2266,	-- Hillsbrad Farmer
 					},
+					["coords"] = {
+						{ 31.8, 35.2, HILLSBRAD_FOOTHILLS },
+						{ 36.6, 40.0, HILLSBRAD_FOOTHILLS },
+						{ 34.2, 48.2, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["description"] = "This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",
+					["cr"] = 47859,	-- Risen Hillsbrad Farmer
+					["coords"] = {
+						{ 37.4, 64.2, HILLSBRAD_FOOTHILLS },
+						{ 39.6, 64.0, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif
 				}),
 				-- #if BEFORE CATA
 				i(6211, {	-- Recipe: Elixir of Ogre's Strength
@@ -3207,13 +3429,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2358,	-- Dalaran Summoner
 				}),
 				i(1602, {	-- Sickle Axe
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2287,	-- Crushridge Warmonger
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					-- #if AFTER 10.1.7
+					["cr"] = 2254,	-- Crushridge Mauler
+					["coords"] = {
+						{ 44.6, 22.6, HILLSBRAD_FOOTHILLS },
+						{ 45.8, 26.8, HILLSBRAD_FOOTHILLS },
+						{ 47.2, 28.6, HILLSBRAD_FOOTHILLS },
+						{ 50.2, 26.0, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif
 				}),
 				i(5245, {	-- Summoner's Wand
-					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					["coords"] = {
+						{ 27.4, 39.6, HILLSBRAD_FOOTHILLS },
+						{ 33.6, 40.6, HILLSBRAD_FOOTHILLS },
+						{ 32.8, 32.4, HILLSBRAD_FOOTHILLS },
+					},
 				}),
 				-- #endif
 			}),

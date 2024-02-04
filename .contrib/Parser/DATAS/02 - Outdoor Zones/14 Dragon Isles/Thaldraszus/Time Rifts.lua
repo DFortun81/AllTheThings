@@ -8,7 +8,11 @@ TIME_RIFTS = createHeader({
 		en = [[~GetSpellInfo(408633)]],
 	},
 });
+-- #if BEFORE 10.2.0
 local DILATED_TIME_CAPSULE = 207030;
+-- #else
+local DILATED_TIME_CAPSULE = 209856;
+-- #endif
 local AZQROTH = 2201;
 local AZEWRATH = 2202;
 local AZMOURNE = 2203;
@@ -25,105 +29,66 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(18637, {	-- Chronograde Connoisseur
-						crit(1, {	-- Azmerloth
+						crit(61885, {	-- Azmerloth
 							["_npcs"] = { 204808 },	-- Fractured Causality / Gil'dan
 						}),
-						crit(2, {	-- Ulderoth
+						crit(61884, {	-- Ulderoth
 							["_npcs"] = { 205304 },	-- Fractured Causality / Freya
 						}),
-						crit(3, {	-- Azmourne
+						crit(61886, {	-- Azmourne
 							["_npcs"] = { 205305 },	-- Fractured Causality / The Lich King
 						}),
-						crit(4, {	-- Azewrath
+						crit(61887, {	-- Azewrath
 							["_npcs"] = { 205306 },	-- Fractured Causality / Illidan
 						}),
-						crit(5, {	-- Azq'roth
+						crit(61888, {	-- Azq'roth
 							["_npcs"] = { 205307 },	-- Fractured Causality / Fury of N'zoth
 						}),
-						crit(6, {	-- The Warlands
+						crit(61889, {	-- The Warlands
 							["_npcs"] = { 205308 },	-- Fractured Causality / Varian Wrynn
 						}),
-						crit(7, {	-- A.Z.E.R.O.T.H
+						crit(61890, {	-- A.Z.E.R.O.T.H
 							["_npcs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
 						}),
 					}),
 					ach(18639),	-- Collapsed Reality
 					ach(18636),	-- Just Following Chronological Orders
 					ach(18640, {	-- Lock and Load
-						crit(1),	-- Bomb Lobber
-						crit(2),	-- Shrapnel Spreader
-						crit(3),	-- Flamethrower
-						crit(4),	-- Railgun
-						crit(5),	-- Thunderbolt
-						crit(6),	-- Crankshot
+						crit(60726),	-- Bomb Lobber
+						crit(60727),	-- Shrapnel Spreader
+						crit(60728),	-- Flamethrower
+						crit(60729),	-- Railgun
+						crit(60730),	-- Thunderbolt
+						crit(60731),	-- Crankshot
 					}),
 					ach(18638, {	-- Minute Menagerie
-						crit(1, {	-- Gill'dan
+						crit(60718, {	-- Gill'dan
 							["provider"] = { "i", 208009 },	-- Gill'dan
 						}),
-						crit(2, {	-- Briarhorn Hatchling
+						crit(60719, {	-- Briarhorn Hatchling
 							["provider"] = { "i", 208012 },	-- Briarhorn Hatchling
 						}),
-						crit(3, {	-- N'Ruby
+						crit(60751, {	-- N'Ruby
 							["provider"] = { "i", 208138 },	-- N'Ruby
 						}),
-						crit(4, {	-- Doomrubble
+						crit(60720, {	-- Doomrubble
 							["provider"] = { "i", 208008 },	-- Doomrubble
 						}),
-						crit(5, {	-- Jeepers
+						crit(60721, {	-- Jeepers
 							["provider"] = { "i", 208010 },	-- Jeepers
 						}),
-						crit(6, {	-- Obsidian Warwhelp
+						crit(60722, {	-- Obsidian Warwhelp
 							["provider"] = { "i", 208011 },	-- Obsidian Warwhelp
 						}),
-						crit(7, {	-- Killbot 9000
+						crit(60723, {	-- Killbot 9000
 							["provider"] = { "i", 208013 },	-- Killbot 9000
 						}),
 					}),
 					ach(18554, {	-- Temporal Acquisitions Specialist
-						i(208186),	-- Boffins (TOY!)
-						crit(1, {	-- Titanic Disc
-							["_quests"] = { 76351 },	-- Titanic Beasts
-						}),
-						crit(2, {	-- Antlered Skull
-							["_quests"] = { 76362 },	-- An Antlered Skull
-						}),
-						crit(3, {	-- Azmerlothian Hourglass
-							["_quests"] = { 76379 },	-- A Murloc and a Dragon Walk into a Time Rift...
-						}),
-						crit(4, {	-- Mechanized Cog
-							["_quests"] = { 76404 },	-- Cogs in a Machine
-						}),
-						crit(5, {	-- Corrupted Ashbringer
-							["_quests"] = { 76406 },	-- The Sins of the Ashbringer
-						}),
-						crit(6, {	-- Oil-Soaked Log Book
-							["_quests"] = { 76449 },	-- The Endless Conflict
-						}),
-						crit(7, {	-- Chipped Stone Tablet
-							["_quests"] = { 76453 },	-- A Stony Reception
-						}),
-						crit(8, {	-- Map to Suramar
-							["_quests"] = { 76459 },	-- The Resistance
-						}),
-						crit(9, {	-- Boffins
-							["_quests"] = { 76521 },	-- Buzzing Boffins
-						}),
-						crit(10, {	-- Watcher's Log
-							["_quests"] = { 76533 },	-- Dangerous Documentation
-						}),
-						crit(11, {	-- Blood Soaked Book
-							["_quests"] = { 76544 },	-- Wasteland Warriors
-						}),
-						crit(12, {	-- Amber Blade
-							["_quests"] = { 76546 },	-- Mantid Methodology
-						}),
-						crit(13, {	-- Gilded Vase
-							["_quests"] = { 76547 },	-- All That Glitters..
-						}),
-						crit(14, {	-- A Fish
-							["_quests"] = { 76548 },	-- A Fishy Gift
-						}),
+						["sym"] = {{ "achievement_criteria" }},
+						["groups"] = {
+							i(208186),	-- Boffins (TOY!)
+						},
 					}),
 					ach(18641),	-- To All The Squirrels I've BEEN Before
 					ach(18635),	-- Verified Rifter
@@ -147,7 +112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						o(404314,{	-- Chipped Stone Tablet
 							["coord"] = { 45.7, 23.9, AZQROTH },
 							["g"] = {
-								i(206859),	-- Chipped Stone Tablet
+								i(206859),	-- Chipped Stone Tablet (QI!)
 							},
 						}),
 					}),
@@ -158,14 +123,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
 							["g"] = {
-								i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
-								i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
 							},
 						}),
 						o(403786,{	-- Antlered Skull
 							["coord"] = { 75.1, 41.9, AZEWRATH },
 							["g"] = {
-								i(206578),	-- An Antlered Skull
+								i(206578),	-- An Antlered Skull (QI!)
 							},
 						}),
 					}),
@@ -181,7 +144,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						o(404492,{	-- Gilded Vase
 							["coord"] = { 40.1, 39.7, AZMOURNE },
 							["g"] = {
-								i(207003),	-- Gilded Vase
+								i(207003),	-- Gilded Vase (QI!)
 							},
 						}),
 					}),
@@ -233,11 +196,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						o(404242,{	-- Oil Soaked Book
 							["coord"] = { 12.0, 30.9, THE_WARLANDS },
 							["g"] = {
-								i(206749),	-- Oil-Soaked Log Book
+								i(206749),	-- Oil-Soaked Log Book (QI!)
 							},
 						}),
 					}),
 				})),
+				n(COMMON_BOSS_DROPS, {
+					["crs"] = {
+						205307,	-- Fractured Causality / Fury of N'zoth
+						205306,	-- Fractured Causality / Illidan
+						205305,	-- Fractured Causality / The Lich King
+						204808,	-- Fractured Causality / Gil'dan
+						205304,	-- Fractured Causality / Freya
+						205309,	-- Fractured Causality / Overload Mechagon
+						205308,	-- Fractured Causality / Varian Wrynn
+					},
+					["groups"] = {
+						i(207030, {	-- Dilated Time Capsule (10.1.5)
+							["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+						}),
+						i(DILATED_TIME_CAPSULE),
+						-- Both drops from any boss
+						i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
+						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
+					},
+				}),
 				n(FACTIONS, {
 					faction(FACTION_SORIDORMI, {
 						["cost"] = {{ "c", SORIDORMIS_RECOGNITION, 42000 }},
@@ -277,6 +260,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									i(207027),	-- Greater Encapsulated Destiny
 								},
 							}),
+							q(77250, {	-- Realized Potentional
+								["provider"] = { "n", 204450 },	-- Soridormi
+								["coord"] = { 51.0, 57.0, THALDRASZUS },
+								["minReputation"] = { FACTION_SORIDORMI, 5 },
+								["g"] = {
+									i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
+									spell(417360),	-- Unparalleled (TITLE!)
+								},
+							}),
 						},
 					}),
 				}),
@@ -285,7 +277,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 197574 },	-- Mairadormi
 						["coord"] = { 72.5, 47.4, VALDRAKKEN },
 						["isBreadcrumb"] = true,
-						--["lockCriteria"] = { 1, "TODO", TODO },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						["lockCriteria"] = { 1, "questID", 77680 },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						["DisablePartySync"] = true,	-- TODO: confirm with character who has 77680 incomplete
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 					-- ideally want the Object with coords with provider Item inside...
@@ -293,59 +286,59 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 207756 },	-- Murloc You
 						["coord"] = { 57.1, 63.2, 2199 },	-- Tyrhold Reservoir (Scenario Map) / follow player
 						["g"] = {
-							i(207008),	-- A Fish
+							i(207008),	-- A Fish (QI!)
 						},
 					}),
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
 						["coord"] = { 49.4, 73.7, AZMERLOTH },
 						["g"] = {
-							i(206599),	-- Azmerlothian Hourglass
+							i(206599),	-- Azmerlothian Hourglass (QI!)
 						},
 					}),
 					q(76453, {	-- A Stony Reception
-						["provider"] = { "i", 206859 },	-- Chipped Stone Tabled
+						["provider"] = { "i", 206859 },	-- Chipped Stone Tabled (QI!)
 						["coord"] = { 45.7, 23.9, AZQROTH },
 					}),
 					q(76547, {	-- All That Glitters..
-						["provider"] = { "i", 207003 },	-- Gilded Vase
+						["provider"] = { "i", 207003 },	-- Gilded Vase (QI!)
 						["coord"] = { 40.1, 39.7, AZMOURNE },
 					}),
 					q(76362, {	-- An Antlered Skull
-						["provider"] = { "i", 206578 },	-- An Antlered Skull
+						["provider"] = { "i", 206578 },	-- An Antlered Skull (QI!)
 						["coord"] = { 75.1, 41.9, AZEWRATH },
 					}),
 					q(76521, {	-- Buzzing Boffins
 						["provider"] = { "n", 207509 },	-- Boffins
 						["coord"] = { 77.5, 64.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						["g"] = {
-							i(206957),	-- Boffins
+							i(206957),	-- Boffins (QI!)
 						},
 					}),
 					q(76404, {	-- Cogs in a Machine
-						["provider"] = { "i", 206602 },	-- Mechanical Cog
+						["provider"] = { "i", 206602 },	-- Mechanical Cog (QI!)
 						["coord"] = { 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76533, {	-- Dangerous Documentation
-						["provider"] = { "n", 207252 },	-- Watcher's Log
+						["provider"] = { "n", 207525 },	-- Watcher's Log
 						["coord"] = { 58.2, 39.0, ULDEROTH },
 						["g"] = {
-							i(206952),	-- Watcher's Log
+							i(206962),	-- Watcher's Log (QI!)
 						},
 					}),
 					q(76546, {	-- Mantid Methodology
-						["provider"] = { "i", 206998 },	-- Amber Sword
+						["provider"] = { "i", 206998 },	-- Amber Sword (QI!)
 						["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76449, {	-- The Endless Conflict
-						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
+						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book (QI!)
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
 					}),
 					q(76459, {	-- The Resistance
 						["provider"] = { "n", 207297 },	-- Ellemayne
 						["coord"] = { 67.4, 63.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						["g"] = {
-							i(206775),	-- Map to Suramar
+							i(206775),	-- Map to Suramar (QI!)
 						},
 					}),
 					q(76406, {	-- The Sins of the Ashbringer
@@ -355,31 +348,35 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 39.7, 58.0, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 						["g"] = {
-							i(206638),	-- Azmourne's Corrupted Ashbringer
+							i(206638),	-- Azmourne's Corrupted Ashbringer (QI!)
 						},
 					}),
 					q(76351, {	-- Titanic Beasts
-						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
+						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc (QI!)
 						["coords"] = {
 							{ 55, 57.5, ULDEROTH },
 							{ 45.8, 72.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 					}),
 					q(76544, {	-- Wasteland Warriors
-						["provider"] = { "i", 206984 },	-- Blood-Soaked Book
+						["provider"] = { "i", 206984 },	-- Blood-Soaked Book (QI!)
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coord"] = { 51.1, 57.1, THALDRASZUS },
 						["maxReputation"] = { FACTION_SORIDORMI, 5 },
+						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
 						["isWeekly"] = true,
+						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["g"] = {
 							i(208090, {	-- Contained Paracausality
 								i(DILATED_TIME_CAPSULE),
 								i(207002),	-- Encapsulated Destiny
 								i(207027),	-- Greater Encapsulated Destiny
-								i(208951),	-- Paracausal Cluster
+								i(208951, {	-- Paracausal Cluster
+									currency(PARACAUSAL_FLAKES),
+								}),
 								i(208952),	-- Soridormi's Letter of Commendation
 							}),
 						},
@@ -395,25 +392,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(207583, {	-- Box of Collapsed Reality
 						-- Anything from vendors can drop here, but the chance is so small, it's not worth to mention this as a source.
 					}),
-					i(DILATED_TIME_CAPSULE, {
-						["crs"] = {
-							205307,	-- Fractured Causality / Fury of N'zoth
-							205306,	-- Fractured Causality / Illidan
-							205305,	-- Fractured Causality / The Lich King
-							204808,	-- Fractured Causality / Gil'dan
-							205304,	-- Fractured Causality / Freya
-							205309,	-- Fractured Causality / Overload Mechagon
-							205308,	-- Fractured Causality / Varian Wrynn
-						},
-					}),
 					i(207083),	-- Gift of the Ravenous Black Gryphon (MOUNT!)
+					i(207057),	-- Gift of the White War Wolf (MOUNT!)
 					currency(PARACAUSAL_FLAKES),	-- rewarded from literally everything, don't need to list everywhere
 				}),
 				n(TREASURES, {
 					o(404432,{	-- Bload Soaked Book
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						["g"] = {
-							i(206984),	-- Blood-Soaked Book
+							i(206984),	-- Blood-Soaked Book (QI!)
 						},
 					}),
 					o(403919,{	-- Mechanical Cog
@@ -423,13 +410,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 						["g"] = {
-							i(206602),	-- Mechanized Cog
+							i(206602),	-- Mechanized Cog (QI!)
 						},
 					}),
 					o(404480,{	-- Ragged Mantid Sword
 					 	["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					 	["g"] = {
-							i(206998),	-- Amber Sword
+							i(206998),	-- Amber Sword (QI!)
+						},
+					}),
+					n(206587, {
+						-- ["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["g"] = {
+							i(206564),	-- Time-Displaced Titanic Disc (QI!)
 						},
 					}),
 				}),
@@ -665,6 +658,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207982),	-- Timeless Bulwark
 								i(207979),	-- Timespan Scepter
 							}),
+							i(208945, {	-- Paracausal Crate
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
+								["g"] = {
+									currency(PARACAUSAL_FLAKES),
+								},
+							}),
 						}),
 					}),
 					n(208343, {	-- Sorotis <Ulderoth Vendor>
@@ -822,7 +821,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207082, {	-- Jingoist's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
-										i(206824),	-- Jingoist's Epaulettes
+										i(206824),	-- Jingoist's Epaulets
 										i(206829),	-- Jingoist's Shroud
 									},
 								}),
@@ -969,7 +968,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207081, {	-- Warmonger's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
-										i(206812),	-- Warmonger's Epaulettes
+										i(206812),	-- Warmonger's Epaulets
 										i(206819),	-- Warmonger's Shroud
 									},
 								}),
@@ -1077,9 +1076,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 	m(THALDRASZUS, { n(TIME_RIFTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 		-- Alternates between these two questIDs when completing tasks
 		-- Sequence experienced on live: 85 > 83 > 84 > 86
-		q(76983),
-		q(76984),
-		q(76985),
+		q(76983,{["repeatable"]=true}),
+		q(76984,{["repeatable"]=true}),
+		q(76985,{["repeatable"]=true}),
 
 		q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 
@@ -1185,7 +1184,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76647),	-- after buying/loot 'Warmonger's Headcover' (itemID 206846) (spellID 418866)
 		q(76666),	-- after buying/loot 'Warmonger's Leather Armor Bag' (itemID 207079) (spellID 418865)
 		q(76667),	-- after buying/loot 'Warmonger's Leather Equipment Bag' (itemID 207069) (spellID 418864)
-		q(76654),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
+		q(76664),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
 		q(76665),	-- after buying/loot 'Warmonger's Leather Suit Bag' (itemID 207094) (spellID 418862)
 		q(76642),	-- after buying/loot 'Warmonger's Leggings' (itemID 206814) (spellID 418861)
 		q(76654),	-- after buying/loot 'Warmonger's Legguards' (itemID 206854) (spellID 418860)
@@ -1206,6 +1205,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76706),	-- after buying/loot Ensemble: Lifegiver's Garms (itemID 207048) (spellID 418945)
 		q(76708),	-- after buying/loot Ensemble: Valhalas Ceremonial Armor (itemID 207046) (spellID 418944)
 
-		-- q(77179)?? HTQ trigger? -- ptr
+		q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
 	}))}),
 })));

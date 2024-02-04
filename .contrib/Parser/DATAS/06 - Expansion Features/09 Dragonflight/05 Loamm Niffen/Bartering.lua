@@ -92,12 +92,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			})),
 			n(REWARDS, {
-				i(BARTER_BRICK, {
-					["maxReputation"] = { FACTION_LOAMM_NIFFEN, 12 },
-				}),
-				i(BARTER_BOULDER, {
-					["minReputation"] = { FACTION_LOAMM_NIFFEN, 13 },
-				}),
+				["maps"] = {
+					ZARALEK_CAVERN,
+				},
+				["groups"] = {
+					i(BARTER_BRICK, {
+						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 12 },
+					}),
+					i(BARTER_BOULDER, {
+						["minReputation"] = { FACTION_LOAMM_NIFFEN, 13 },
+					}),
+				},
 			}),
 			n(VENDORS, {
 				n(203172, {	-- Dustmonger Topuiz

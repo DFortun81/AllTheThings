@@ -11,27 +11,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 58.0, 62.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
-					i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
-						["description"] = "This cache is awarded for completing any incursion on a Horde character.",
-						["sym"] = {
-							{"select", "headerID", WARFRONT },
-							{"pop"},	-- Discard the War Effort Header and acquire the children.
-							{"where", "mapID", ARATHI_HIGHLANDS },
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
-							{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-							{"modID", 5},	-- iLvl 340
-						},
-					}),
-					i(163857, {	-- Azerite Armor Cache
-						["sym"] = {
-							{"sub", "bfa_azerite_armor_chest" },
-						},
-					}),
-				},
+				["sym"] = { { "select", "itemID", 165871, 163857 } },		-- Honorbound Equipment Cache & Azerite Armor Cache
 			}),
-			q(54455, {	-- Supplies from the Honorbound
+			q(54455, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_THE_HONORBOUND, EXALTED } }, {	-- Supplies from the Honorbound
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 				["lvl"] = 120,
 				["coord"] = { 58.0, 62.6, DAZARALOR },
@@ -45,8 +27,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						}),
 					}),
 				},
-			}),
-			q(54462, {	-- Supplies from the Zandalari Empire
+			})),
+			q(54462, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_ZANDALARI_EMPIRE, EXALTED } }, {	-- Supplies from the Zandalari Empire
 				["provider"] = { "n", 131287 },	-- Natal'hakata
 				["lvl"] = 120,
 				["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
@@ -57,7 +39,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						i(166701),	-- Warbeast Kraal Dinner Bell (TOY!)
 					}),
 				},
-			}),
+			})),
 			q(50598, {	-- Zandalari Empire
 				["provider"] = { "n", 131287 },	-- Natal'hakata
 				["lvl"] = 120,
@@ -69,20 +51,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["sym"] = {
 							-- Include the one extra.
 							{"select", "mapID", ZULDAZAR},
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", ZONE_REWARDS },
-							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
-							{"is", "itemID" },	-- Select the Items.
+							{"find", "headerID", ZONE_REWARDS },
+							{"extract", "itemID" },	-- Select the Items.
 							{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
 						},
 					}),
 					i(165863, {	-- Zandalari Weapons Cache
 						["sym"] = {
 							{"select", "mapID", ZANDALAR},
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", ZONE_REWARDS },
-							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
-							{"is", "itemID" },	-- Select the Items.
+							{"find", "headerID", ZONE_REWARDS },
+							{"extract", "itemID" },	-- Select the Items.
 							{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
 						},
 					}),

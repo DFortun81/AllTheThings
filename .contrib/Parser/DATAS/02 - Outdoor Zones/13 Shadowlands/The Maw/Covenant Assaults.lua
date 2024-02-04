@@ -7,34 +7,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		n(COVENANT_ASSAULTS, {
 			n(ACHIEVEMENTS, {
 				ach(15032, {	-- Breaking Their Hold
-					crit(1, {	-- Dead On Their Feet
+					crit(52000, {	-- Dead On Their Feet
 						["sourceQuests"] = { 63455 },	-- Dead On Their Feet
 					}),
-					crit(2, {	-- Here's an Axe, Get to Work!
+					crit(52001, {	-- Here's an Axe, Get to Work!
 						["sourceQuests"] = { 63625 },	-- Here's an Axe, Get to Work!
 					}),
-					crit(3, {	-- You and What Army
+					crit(52002, {	-- You and What Army
 						["sourceQuests"] = { 63773 },	-- You and What Army
 					}),
-					crit(4, {	-- An Embarrassment of Corpses
+					crit(52003, {	-- An Embarrassment of Corpses
 						["sourceQuests"] = { 63774 },	-- An Embarrassment of Corpses
 					}),
-					crit(5, {	-- Putting A Plan Together
+					crit(52004, {	-- Putting A Plan Together
 						["sourceQuests"] = { 63545 },	-- Putting A Plan Together
 					}),
-					crit(6, {	-- Centurions March!
+					crit(52005, {	-- Centurions March!
 						["sourceQuests"] = { 63753 },	-- Centurions March!
 					}),
-					crit(7, {	-- Pulling His Chain
+					crit(52006, {	-- Pulling His Chain
 						["sourceQuests"] = { 63621 },	-- Pulling His Chain
 					}),
-					crit(8, {	-- Splash Damage
+					crit(52007, {	-- Splash Damage
 						["sourceQuests"] = { 59004 },	-- Splash Damage
 					}),
-					crit(9, {	-- Get to the Point
+					crit(52008, {	-- Get to the Point
 						["sourceQuests"] = { 63664 },	-- Get to the Point
 					}),
-					crit(10, {	-- Somebody Feed Kevin
+					crit(52009, {	-- Somebody Feed Kevin
 						["sourceQuests"] = { 63669 },	-- Somebody Feed Kevin
 					}),
 				}),
@@ -53,112 +53,112 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}},
 				}),
 				ach(15036, {	-- Rooting Out The Evil
-					crit(1, {	-- Clean Out the Crucible
+					crit(52031, {	-- Clean Out the Crucible
 						["sourceQuests"] = { 63968 },	-- Clean Out the Crucible
 					}),
-					crit(2, {	-- Looming Darkness
+					crit(52032, {	-- Looming Darkness
 						["sourceQuests"] = { 63969 },	-- Looming Darkness
 					}),
-					crit(3, {	-- No Soul Left Behind
+					crit(52033, {	-- No Soul Left Behind
 						["sourceQuests"] = { 63970 },	-- No Soul Left Behind
 					}),
-					crit(4, {	-- Snail Stomping
+					crit(52034, {	-- Snail Stomping
 						["sourceQuests"] = { 63971 },	-- Snail Stomping
 					}),
-					crit(5, {	-- Just Don't Ask Me to Spell It
+					crit(52035, {	-- Just Don't Ask Me to Spell It
 						["sourceQuests"] = { 63972 },	-- Just Don't Ask Me to Spell It
 					}),
-					crit(6, {	-- Double Dromans
+					crit(52036, {	-- Double Dromans
 						["sourceQuests"] = { 63973 },	-- Double Dromans
 					}),
-					crit(7, {	-- That's Going to Sting
+					crit(52037, {	-- That's Going to Sting
 						["sourceQuests"] = { 63974 },	-- That's Going to Sting
 					}),
-					crit(8, {	-- The Soul Blade
+					crit(52038, {	-- The Soul Blade
 						["sourceQuests"] = { 63945 },	-- The Soul Blade
 					}),
-					crit(9, {	-- A Shady Place
+					crit(52039, {	-- A Shady Place
 						["sourceQuests"] = { 63951 },	-- A Shady Place
 					}),
-					crit(10, {	-- Heavy-Handed Tactics
+					crit(52040, {	-- Heavy-Handed Tactics
 						["sourceQuests"] = { 63952 },	-- Heavy-Handed Tactics
 					}),
 				}),
 				ach(15033, {	-- Taking the Tremaculum
-					crit(1, {	-- Terrorizing the Tremaculum
+					crit(52017, {	-- Terrorizing the Tremaculum
 						["sourceQuests"] = { 63833 },	-- Terrorizing the Tremaculum
 					}),
-					crit(2, {	-- Weapons of the Tremaculum
+					crit(52018, {	-- Weapons of the Tremaculum
 						["sourceQuests"] = { 63834 },	-- Weapons of the Tremaculum
 					}),
-					crit(3, {	-- That's a Good Trick
+					crit(52019, {	-- That's a Good Trick
 						["sourceQuests"] = { 63842 },	-- That's a Good Trick
 					}),
-					crit(4, {	-- Fangcrack's Fan Club
+					crit(52020, {	-- Fangcrack's Fan Club
 						["sourceQuests"] = { 63836 },	-- Fangcrack's Fan Club
 					}),
-					crit(5, {	-- A Tea for Every Occasion
+					crit(52021, {	-- A Tea for Every Occasion
 						["sourceQuests"] = { 63837 },	-- A Tea for Every Occasion
 					}),
-					crit(6, {	-- Duelist's Challenge
+					crit(52022, {	-- Duelist's Challenge
 						["sourceQuests"] = { 63838 },	-- Duelist's Challenge
 					}),
-					crit(7, {	-- If Even One is Worthy
+					crit(52023, {	-- If Even One is Worthy
 						["sourceQuests"] = { 63839 },	-- If Even One is Worthy
 					}),
-					crit(8, {	-- They Grow Up So Quickly
+					crit(52024, {	-- They Grow Up So Quickly
 						["sourceQuests"] = { 63840 },	-- They Grow Up So Quickly
 					}),
-					crit(9, {	-- The Skyhunt
+					crit(52025, {	-- The Skyhunt
 						["sourceQuests"] = { 63841 },	-- The Skyhunt
 					}),
-					crit(10, {	-- Wrath of the Party Herald
+					crit(52026, {	-- Wrath of the Party Herald
 						["sourceQuests"] = { 63835 },	-- Wrath of the Party Herald
 					}),
 				}),
 				ach(15000, {	-- United Front
-					crit(1, {	-- Necrolord Assault
+					crit(51720, {	-- Necrolord Assault
 						["sourceQuests"] = { 63543 },	-- Necrolord Assault
 					}),
-					crit(2, {	-- Venthyr Assault
+					crit(51721, {	-- Venthyr Assault
 						["sourceQuests"] = { 63822 },	-- Venthyr Assault
 					}),
-					crit(3, {	-- Night Fae Assault
+					crit(51722, {	-- Night Fae Assault
 						["sourceQuests"] = { 63823 },	-- Night Fae Assault
 					}),
-					crit(4, {	-- Kyrian Assault
+					crit(51723, {	-- Kyrian Assault
 						["sourceQuests"] = { 63824 },	-- Kyrian Assault
 					}),
 				}),
 				ach(15034, {	-- Wings Against the Flames
-					crit(1, {	-- Mine's Bigger
+					crit(52010, {	-- Mine's Bigger
 						["sourceQuests"] = { 63828 },	-- Mine's Bigger
 					}),
-					crit(2, {	-- Heart and Soul
+					crit(52011, {	-- Heart and Soul
 						["sourceQuests"] = { 63843 },	-- Heart and Soul
 					}),
-					crit(3, {	-- No One Floats Down Here
+					crit(52012, {	-- No One Floats Down Here
 						["sourceQuests"] = { 63829 },	-- No One Floats Down Here
 					}),
-					crit(4, {	-- Encouraging Words
+					crit(52013, {	-- Encouraging Words
 						["sourceQuests"] = { 63827 },	-- Encouraging Words
 					}),
-					crit(5, {	-- Courage of the Soul
+					crit(52014, {	-- Courage of the Soul
 						["sourceQuests"] = { 63858 },	-- Courage of the Soul
 					}),
-					crit(6, {	-- Saved By The Bells
+					crit(52015, {	-- Saved By The Bells
 						["sourceQuests"] = { 63859 },	-- Saved By The Bells
 					}),
-					crit(7, {	-- United In Pride
+					crit(52016, {	-- United In Pride
 						["sourceQuests"] = { 63863 },	-- United In Pride
 					}),
-					crit(8, {	-- The Ember Count
+					crit(52041, {	-- The Ember Count
 						["sourceQuests"] = { 63846 },	-- The Ember Count
 					}),
-					crit(9, {	-- Kill The Flame
+					crit(52042, {	-- Kill The Flame
 						["sourceQuests"] = { 63853 },	-- Kill The Flame
 					}),
-					crit(10, {	-- The Dreadful Blend
+					crit(52043, {	-- The Dreadful Blend
 						["sourceQuests"] = { 63864 },	-- The Dreadful Blend
 					}),
 				}),
@@ -174,6 +174,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 42.8, 44.8, THE_MAW },
 				["isWeekly"] = true,
 				["g"] = {
+					i(185720),	-- Draka's Battlehorn (QI!)
 					i(185993, {	-- Ascended War Chest
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
@@ -191,6 +192,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63827, {	-- Encouraging Words
 							["provider"] = { "n", 177900 },	-- Xandria
 							["coord"] = { 42.7, 44.7, THE_MAW },
+							["g"] = {
+								i(185775),	-- Codex of Renewed Vigor (QI!)
+							},
 						}),
 						q(63843, {	-- Heart and Soul
 							["provider"] = { "n", 177226 },	-- Artemede
@@ -220,6 +224,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["provider"] = { "n", 178091 },	-- Vulca
 							["coord"] = { 43.1, 44.3, THE_MAW },
 							["g"] = {
+								i(185839),	-- Soulsteel Ember (QI!)
 								ach(15041, {	-- The Zovaal Shuffle
 									["coords"] = {
 										{ 41.8, 42.2, THE_MAW },
@@ -297,6 +302,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 33.8, 54.8, THE_MAW },
 				["isWeekly"] = true,
 				["g"] = {
+					i(185720),	-- Draka's Battlehorn (QI!)
 					i(185992, {	-- War Chest of the Undying Army
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
@@ -320,6 +326,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63753, {	-- Centurions March!
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["coord"] = { 37.0, 63.5, THE_MAW },
+							["g"] = {
+								i(185733),	-- Anima Mote (QI!)
+							},
 						}),
 						q(63594, {	-- Clearing the Walls
 							["sourceQuests"] = { 63545 },	-- Putting A Plan Together
@@ -332,7 +341,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["provider"] = { "n", 177076 },	-- Margrave Sin'dane
 							["coord"] = { 33.6, 54.9, THE_MAW },
 							["g"] = {
-								i(184876),	-- Cohesion Crystal
+								i(184876),	-- Cohesion Crystal (QI!)
 							},
 						}),
 						q(63664, {	-- Get to the Point
@@ -342,16 +351,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63625, {	-- Here's an Axe, Get to Work!
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
+							["g"] = {
+								i(184513),	-- Containment Orb (QI!)
+							},
 						}),
 						q(63621, {	-- Pulling His Chain
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["provider"] = { "n", 177226 },	-- Artemede
 							["coord"] = { 37.0, 63.3, THE_MAW },
+							["g"] = {
+								i(184513),	-- Containment Orb (QI!)
+							},
 						}),
 						q(63545, {	-- Putting A Plan Together
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["provider"] = { "n", 177175 },	-- Mikanikos
 							["coord"] = { 37.0, 63.5, THE_MAW },
+							["g"] = {
+								i(185685),	-- Automaton Bolts (QI!)
+								i(184513),	-- Containment Orb (QI!)
+							},
 						}),
 						q(63669, {	-- Somebody Feed Kevin
 							["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
@@ -360,29 +379,35 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(59004, {	-- Splash Damage
 							["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
 							["coord"] = { 32.9, 56.8, THE_MAW },
+							["g"] = {
+								i(185729),	-- Anima Charged Rune (QI!)
+							},
 						}),
 						q(63772, {	-- Waiting in the Wings
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
+							["g"] = {
+								i(184513),	-- Containment Orb (QI!)
+							},
 						}),
 						q(63773, {	-- You and What Army
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
 							["g"] = {
 								achraw(15037, {	-- This Army
-									crit(1, {	-- Cutter Fin
+									crit(52044, {	-- Cutter Fin
 										["crs"] = { 177771 },	-- Cutter Fin
 									}),
-									crit(2, {	-- Kearnen the Blade
+									crit(52045, {	-- Kearnen the Blade
 										["crs"] = { 177769 },	-- Kearnen the Blade
 									}),
-									crit(3, {	-- Winslow Swan
+									crit(52046, {	-- Winslow Swan
 										["crs"] = { 177764 },	-- Winslow Swain
 									}),
-									crit(4, {	-- Boil Master Yetch
+									crit(52047, {	-- Boil Master Yetch
 										["crs"] = { 177767 },	-- Boil Master Yetch
 									}),
-									crit(5, {	-- Flytrap
+									crit(52048, {	-- Flytrap
 										["crs"] = { 158300 },	-- Flytrap
 									}),
 								}),
@@ -512,6 +537,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63951, {	-- A Shady Place
 							["provider"] = { "n", 178890 },	-- Margrave Sin'dane
 							["coord"] = { 22.5, 43.2, THE_MAW },
+							["g"] = {
+								i(187012),	-- Unbalanced Riftstone (QI!)
+							},
 						}),
 						q(63968, {	-- Clean Out the Crucible
 							["provider"] = { "n", 178828 },	-- Lord Herne
@@ -530,28 +558,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 22.2, 43.3, THE_MAW },
 							["g"] = {
 								ach(15044, {	-- Krrprripripkraak's Heroes
-									crit(1, {	-- Elder Gwenna
+									crit(52078, {	-- Elder Gwenna
 										["crs"] = { 179555 },	-- Elder Gwenna
 										["coord"] = { 20.4, 43.9, THE_MAW },
 									}),
-									crit(2, {	-- Foreman Thorodir
+									crit(52079, {	-- Foreman Thorodir
 										["crs"] = { 179554 },	-- Foreman Thorodir
 										["coord"] = { 20.6, 32.8, THE_MAW },
 									}),
-									crit(3, {	-- Te'zan
+									crit(52080, {	-- Te'zan
 										["crs"] = { 179553 },	-- Te'zan
 										["coord"] = { 25.6, 39.0, THE_MAW },
 									}),
-									crit(4, {	-- Warden Casad
+									crit(52081, {	-- Warden Casad
 										["crs"] = { 179561 },	-- Warden Casad
 										["coord"] = { 23.7, 42.4, THE_MAW },
 									}),
-									crit(5, {	-- Kivarr
+									crit(52082, {	-- Kivarr
 										["description"] = "Inside the cave.",
 										["crs"] = { 179557 },	-- Kivarr
 										["coord"] = { 20.8, 39.3, THE_MAW },
 									}),
-									crit(6, {	-- Guardian Kota
+									crit(52083, {	-- Guardian Kota
 										["crs"] = { 179559 },	-- Guardian Kota
 										["coord"] = { 21.9, 45.7, THE_MAW },
 									}),
@@ -561,6 +589,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63969, {	-- Looming Darkness
 							["provider"] = { "n", 178828 },	-- Lord Herne
 							["coord"] = { 22.4, 43.3, THE_MAW },
+							["g"] = {
+								i(186310),	-- Dark Marrow (QI!)
+								i(186309),	-- Mawsworn Missive Scrap (QI!)
+								i(186300),	-- Mawsworn Ritual Book (QI!)
+							},
 						}),
 						q(63970, {	-- No Soul Left Behind
 							["provider"] = { "n", 178884 },	-- Thiernax
@@ -569,14 +602,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63971, {	-- Snail Stomping
 							["provider"] = { "n", 178885 },	-- Lady Moonberry
 							["coord"] = { 22.7, 43.7, THE_MAW },
+							["g"] = {
+								i(186199),	-- Lady Moonberry's Wand (QI!)
+							},
 						}),
 						q(63974, {	-- That's Going to Sting
 							["provider"] = { "n", 179065 },	-- Niya
 							["coord"] = { 22.2, 43.6, THE_MAW },
+							["g"] = {
+								i(186569),	-- Angry Needler Nest (QI!)
+							},
 						}),
 						q(63945, {	-- The Soul Blade
 							["provider"] = { "n", 178690 },	-- Bonesmith Heirmir
 							["coord"] = { 22.2, 43.5, THE_MAW },
+							["g"] = {
+								i(186097),	-- Heirmir's Runeblade (QI!)
+							},
 						}),
 					})),
 					header(HEADERS.Spell, 354778, {	-- The Rift
@@ -589,7 +631,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							}),
 							n(TREASURES, {
 								i(186190, {	-- Etherwyrm Cage Key
-									["questID"] = 64003,	-- tracking quest triggered when looting key
 									["crs"] = { 179030 },	-- Elusive Keybinder
 									["coord"] = { 19.1, 43.6, THE_MAW },
 									["isDaily"] = true,
@@ -726,35 +767,35 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 29.6, 17.9, THE_MAW },
 							["g"] = {
 								ach(15042, {	-- Tea for the Troubled
-									crit(1, {	-- Simone
+									crit(52065, {	-- Simone
 										["crs"] = { 179465 },	-- Simone
 										["coord"] = { 26.7, 14.6, THE_MAW },
 									}),
-									crit(2, {	-- Laurent
+									crit(52066, {	-- Laurent
 										["crs"] = { 179466 },	-- Laurent
 										["coord"] = { 31.6, 14.2, THE_MAW },
 									}),
-									crit(3, {	-- Archivist Fane
+									crit(52067, {	-- Archivist Fane
 										["crs"] = { 179471 },	-- Archivist Fane
 										["coord"] = { 26.6, 20.0, THE_MAW },
 									}),
-									crit(4, {	-- The Countess
+									crit(52068, {	-- The Countess
 										["crs"] = { 179473 },	-- The Countess
 										["coord"] = { 24.8, 17.4, THE_MAW },
 									}),
-									crit(5, {	-- Kael'thas Sunstrider
+									crit(52069, {	-- Kael'thas Sunstrider
 										["crs"] = { 179475 },	-- Kael'thas Sunstrider
 										["coord"] = { 27.0, 18.5, THE_MAW },
 									}),
-									crit(6, {	-- Lost Sybille
+									crit(52070, {	-- Lost Sybille
 										["crs"] = { 179476 },	-- Lost Sybille
 										["coord"] = { 31.3, 20.5, THE_MAW },
 									}),
-									crit(7, {	-- Vulca
+									crit(52071, {	-- Vulca
 										["crs"] = { 179477 },	-- Vulca
 										["coord"] = { 27.3, 20.2, THE_MAW },
 									}),
-									crit(8, {	-- Iven
+									crit(52072, {	-- Iven
 										["crs"] = { 179478 },	-- Iven
 										["coord"] = { 32.7, 14.8, THE_MAW },
 									}),
@@ -785,18 +826,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63842, {	-- That's a Good Trick
 							["provider"] = { "n", 178172 },	-- Lady Moonberry
 							["coord"] = { 29.9, 17.1, THE_MAW },
+							["g"] = {
+								i(186102),	-- Lady Moonberry's Wand (QI!)
+							},
 						}),
 						q(63841, {	-- The Skyhunt
 							["provider"] = { "n", 178180 },	-- Hunt-Captain Korayn
 							["coord"] = { 29.3, 18.1, THE_MAW },
+							["g"] = {
+								i(185949),	-- Korayn's Spear (QI!)
+							},
 						}),
 						q(63840, {	-- They Grow Up So Quickly
 							["provider"] = { "n", 178179 },	-- Niya
 							["coord"] = { 29.5, 18.0, THE_MAW },
+							["g"] = {
+								i(186089),	-- Niya's Staff (QI!)
+							},
 						}),
 						q(63834, {	-- Weapons of the Tremaculum
 							["provider"] = { "n", 178066 },	-- General Draven
 							["coord"] = { 30.0, 17.1, THE_MAW },
+							["g"] = {
+								i(185912),	-- Ghastly Crown (QI!)
+								i(185911),	-- Mawsworn Weapon (QI!)
+								i(185913),	-- Shade Eyes (QI!)
+							},
 						}),
 						q(63835, {	-- Wrath of the Party Herald
 							["provider"] = { "n", 178078 },	-- The Curator
@@ -830,17 +885,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 root(ROOTS.HiddenQuestTriggers, {
 --	TODO: Stolen Anima Vessels probably need to be added at some point, but i'm not really sure how they work (example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc.) so i am just throwing them here for now
 --	Kyrian
+	q(63820),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824) (spellID 351106)
+	q(64077),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824)
 
 --	Necrolord
-	q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army
-	q(63809),	-- selecting Cutter Fin to accompany you on You and What Army
-	q(63806),	-- selecting Flytrap to accompany you on You and What Army
-	q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army
-	q(63805),	-- selecting Winslow Swain to accompany you on You and What Army
-	q(64150),	-- turning in 'Centurion's March' (63753)
+	q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army (spellID 350868)
+	q(63809),	-- selecting Cutter Fin to accompany you on You and What Army (spellID 350870)
+	q(63806),	-- selecting Flytrap to accompany you on You and What Army (spellID 350869)
+	q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army (spellID 350866)
+	q(63805),	-- selecting Winslow Swain to accompany you on You and What Army (spellID 350867)
+	q(64150),	-- turning in 'Centurion's March' (questID 63753)
+	q(64147),	-- triggered when turning in 'Pulling His Chain' (questID 63621)
+	q(64148),	-- triggered when completing 'Pulling His Chain' (questID 63621)
+	q(63544),	-- triggered when completing 'Necrolord Assault' (questID 63543) (spellID 349796)
 
 --	Night Fae
-	q(63821),	-- triggered when completing the assault (#63823)
+	q(63821),	-- triggered when completing 'Night Fae Assault' (questID 63823) (spellID 351107)
 
 --	Venthyr
 	q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
@@ -849,7 +909,11 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
 	q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
 	q(63943),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
+	q(64253),	-- triggered when walking through a Maw Mirror on the last part of the 'Venthyr Assault' (questID 63822) (spellID 355359)
+	q(63819),	-- triggered when completing 'Venthyr Assault' (questID 63822) (spellID 351105)
 
 	-- Stolen Anima Vessels
 	q(64575),	-- After anima vessel, in Maw (rifted)
+
+	q(64003, {isDaily = true}),	-- looting Etherwyrm Cage Key (186190)
 });

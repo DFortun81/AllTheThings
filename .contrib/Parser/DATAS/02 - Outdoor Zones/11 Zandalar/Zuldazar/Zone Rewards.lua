@@ -5,7 +5,6 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(ZULDAZAR, {
 		n(ZONE_REWARDS, {
-			un(45, i(165684)),	-- Gurubashi Empire Greatcloak
 			i(158150),	-- Loa-Pledged Drape
 			i(162617),	-- Shadraspawn Shoulderpads
 			i(157905),	-- Shadra Silk Headband

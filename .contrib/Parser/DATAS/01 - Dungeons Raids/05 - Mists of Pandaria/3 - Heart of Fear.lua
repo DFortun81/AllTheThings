@@ -14,24 +14,24 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6718, {	-- The Dread Approach
-					crit(1, {	-- Imperial Vizier Zor'lok
+					crit(19628, {	-- Imperial Vizier Zor'lok
 						["_encounter"] = { 745, 7 },
 					}),
-					crit(2, {	-- Blade Lord Ta'yak
+					crit(19629, {	-- Blade Lord Ta'yak
 						["_encounter"] = { 744, 7 },
 					}),
-					crit(3, {	-- Garalon
+					crit(19632, {	-- Garalon
 						["_encounter"] = { 713, 7 },
 					}),
 				}),
 				ach(6845, {	-- Nightmare of Shek'zeer
-					crit(1, {	-- Wind Lord Mel'jarak
+					crit(19631, {	-- Wind Lord Mel'jarak
 						["_encounter"] = { 741, 7 },
 					}),
-					crit(2, {	-- Amber-Shaper Un'sok
+					crit(19633, {	-- Amber-Shaper Un'sok
 						["_encounter"] = { 737, 7 },
 					}),
-					crit(3, {	-- Grand Empress Shek'zeer
+					crit(19634, {	-- Grand Empress Shek'zeer
 						["_encounter"] = { 743, 7 },
 					}),
 				}),
@@ -66,11 +66,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["timeline"] = { ADDED_8_1_5 },
 				}),
 			}),
-			d(7, {	-- LFR Queue NPC
+			d(RAID_FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(7, {	-- LFR
+			d(RAID_FINDER, {
 				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				["ignoreBonus"] = true,
 				["g"] = {
@@ -122,7 +122,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							},
 						}),
 						e(713, {	-- Garalon
-							["crs"] = { 62164 },	-- Garalon
+							["crs"] = { 
+								62164,	-- Garalon	-- Maybe Outside Version
+								63191 ,	-- Garalon	-- In Raid Version
+							},
 							["g"] = {
 								i(86834),	-- Bonebreaker Gauntlets
 								i(86832),	-- Garalon's Hollow Skull
@@ -211,18 +214,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						i(86046),	-- Jade Warlord Figurine
 						i(86189),	-- Jagged Hornet Bracers
 						i(86184),	-- Luminescent Firefly Wristguards
-						i(86238),	-- Pattern: Chestguard of Nemeses
-						i(86272),	-- Pattern: Fists of Lightning
-						i(86279),	-- Pattern: Liferuned Leather Gloves
-						i(86280),	-- Pattern: Murderer's Gloves
-						i(86281),	-- Pattern: Nightfire Robe
-						i(86283),	-- Pattern: Raiment of Blood and Bone
-						i(86284),	-- Pattern: Raven Lord's Gloves
-						i(86297),	-- Pattern: Stormbreaker Chestguard
-						i(86379),	-- Pattern: Robe of Eternal Rule
-						i(86380),	-- Pattern: Imperial Silk Gloves
-						i(86381),	-- Pattern: Legacy of the Emperor
-						i(86382),	-- Pattern: Touch of the Light
+						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 						i(86187),	-- Pearlescent Butterfly Wristbands
 						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
@@ -335,10 +338,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						["crs"] = { 62837 },	-- Grand Empress Shek'zeer
 						["g"] = {
 							ach(6922, {	-- Timing is Everything
-								crit(1, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
+								crit(21105, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
 									["cr"] = 63591,	-- Kor'thik Reaver
 								}),
-								crit(2, {	-- Defeat Grand Empress Shek'zeer
+								crit(21107, {	-- Defeat Grand Empress Shek'zeer
 								}),
 							}),
 							ach(8246, {	-- Ahead of the Curve: Grand Empress Shek'zeer
@@ -375,18 +378,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						i(86046),	-- Jade Warlord Figurine
 						i(86189),	-- Jagged Hornet Bracers
 						i(86184),	-- Luminescent Firefly Wristguards
-						i(86238),	-- Pattern: Chestguard of Nemeses
-						i(86272),	-- Pattern: Fists of Lightning
-						i(86279),	-- Pattern: Liferuned Leather Gloves
-						i(86280),	-- Pattern: Murderer's Gloves
-						i(86281),	-- Pattern: Nightfire Robe
-						i(86283),	-- Pattern: Raiment of Blood and Bone
-						i(86284),	-- Pattern: Raven Lord's Gloves
-						i(86297),	-- Pattern: Stormbreaker Chestguard
-						i(86379),	-- Pattern: Robe of Eternal Rule
-						i(86380),	-- Pattern: Imperial Silk Gloves
-						i(86381),	-- Pattern: Legacy of the Emperor
-						i(86382),	-- Pattern: Touch of the Light
+						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 						i(86187),	-- Pearlescent Butterfly Wristbands
 						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)

@@ -106,8 +106,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"select", "headerID", SEASON_CORRUPTED},	-- BFA Season 4
-						{"pop"},	-- Discard the header and acquire the children.
-						{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+						{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
 						{"pop"},	-- Discard the header and acquire the children.
 					},
 				})),
@@ -117,10 +116,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				pvp(i(167744, {	-- Aspirant's Equipment Cache
 					["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },
 					["sym"] = {
-						{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+						{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
 						{ "pop" },	-- discard Aspirant / Combatant Gear header
 						{ "pop" },	-- discard item type headers
-						{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+						{ "modID", 47 },	-- blue.  still the wrong iLvl because i can't also apply 2, but it looks better
 					},
 				})),
 			}),

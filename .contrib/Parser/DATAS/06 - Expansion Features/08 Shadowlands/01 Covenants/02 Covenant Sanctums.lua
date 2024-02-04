@@ -10,16 +10,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(14636),		-- Adventurer in Chief
 				ach(14843),		-- Adventures: Harmony of Purpose
 				ach(14844, {	-- Adventures: Into the Breach
-					crit(1),	-- Breach the Planes
-					crit(2),	-- Ghelak's Revenge
-					crit(3),	-- Coalescing Stygia
-					crit(4),	-- Topple the Giants
-					crit(5),	-- Dark Skies, Darker Prospects
-					crit(6),	-- Dravok's Plot
-					crit(7),	-- Grandiose Designs
-					crit(8),	-- Cutting the Threads
-					crit(9),	-- Shades of Despair
-					crit(10),	-- Krala, Wings of Woe
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(14845),	-- Adventures: A Step in the Right Direction
 				ach(14846),	-- Adventures: Leaves in the Forest
@@ -46,16 +37,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuestNumRequired"] = 1,
 				}),
 				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Dead Men Tell Some Tales
-					crit(1, {	--  Kyrian Campaign
+					crit(48005, {	--  Kyrian Campaign
 						["sourceQuests"] = { 62557 },	-- Our Realm Reclaimed
 					}),
-					crit(2, {	--  Necrolords Campaign
+					crit(48146, {	--  Necrolords Campaign
 						["sourceQuests"] = { 62406 },	-- Staff of the Primus
 					}),
-					crit(3, {	--  Night Fae Campaign
+					crit(48530, {	--  Night Fae Campaign
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 					}),
-					crit(4, {	--  Venthyr Campaign
+					crit(46963, {	--  Venthyr Campaign
 						["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
 					}),
 				})),

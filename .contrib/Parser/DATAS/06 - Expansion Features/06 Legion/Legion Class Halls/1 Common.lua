@@ -1,7 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
 root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	n(CLASS_HALL, {
 		["icon"] = "Interface\\Icons\\achievement_level_110",
@@ -11,7 +10,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	},{
 		n(ACHIEVEMENTS, {
 			ach(11298, {	-- A Classy Outfit
-				crit(1, {	-- Class Hall Helm Earned
+				crit(5212, {	-- Class Hall Helm Earned
 					["description"] = "Rewarded by a quest in your class's Order Hall campaign.",
 					["sourceQuests"] = {
 						44217,	-- Armor Fit For A Deathlord (Death Knight)
@@ -28,6 +27,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						44255,	-- Axe and You Shall Receive (Warrior)
 					},
 				}),
+				-- #IF ANYCLASSIC
 				crit(2, {	-- Class Hall Bracers Earned
 					["description"] = "Recruit 6 Champions for your class's Order Hall.",
 					["sourceQuests"] = {
@@ -45,7 +45,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						43090,	-- Ulduar's Oath (Warrior)
 					},
 				}),
-				crit(3, {	-- Class Hall Gloves Earned
+				crit(30499, {	-- Class Hall Gloves Earned
 					["description"] = "Reach Honored reputation with the Nightfallen.",
 					["minReputation"] = { 1859, HONORED },
 				}),
@@ -72,55 +72,23 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				crit(6, {	-- Class Hall Boots Earned
 					["description"] = "Reach Revered reputation with any 2 Broken Isles factions.",
 				}),
-				crit(7, {	-- Class Hall Belt Earned
+				crit(44848, {	-- Class Hall Belt Earned
 					["description"] = "Complete the Arsenal of Power achievement.",
 				}),
 				crit(8, {	-- Class Hall Shoulders Earned
 					["description"] = "Reach Exalted reputation with the Nightfallen.",
 					["minReputation"] = { 1859, EXALTED },
 				}),
+				 -- #ENDIF
 			}),
 			un(REMOVED_FROM_GAME, ach(10852)),		-- Artifact or Artifiction
 			ach(11137, {	-- A Legendary Campaign
-				ach(11136),	-- An Epic Campaign
-				ach(11135),	-- A Heroic Campaign
-				ach(10994),	-- A Glorious Campaign
-				crit(1, {	-- Death Knight
-					["_quests"] = { 43686 },	-- The Fourth Horseman (Death Knight)
-				}),
-				crit(2, {	-- Demon Hunter
-					["_quests"] = { 43186 },	-- I Am the Slayer! (Demon Hunter)
-				}),
-				crit(3, {	-- Druid
-					["_quests"] = { 42055 },	-- The Demi-God's Return (Druid)
-				}),
-				crit(4, {	-- Hunter
-					["_quests"] = { 42659 },	-- In Defense of Dalaran (Hunter)
-				}),
-				crit(5, {	-- Mage
-					["_quests"] = { 42734 },	-- Into the Oculus (Mage)
-				}),
-				crit(6, {	-- Monk
-					["_quests"] = { 41087 },	-- Storm Brew (Monk)
-				}),
-				crit(7, {	-- Paladin
-					["_quests"] = { 43697 },	-- Warriors of Light (Paladin)
-				}),
-				crit(8, {	-- Priest
-					["_quests"] = { 43402 },	-- High Priest of Netherlight (Priest)
-				}),
-				crit(9, {	-- Rogue
-					["_quests"] = { 37689 },	-- The Imposter (Rogue)
-				}),
-				crit(10, {	-- Shaman
-					["_quests"] = { 41888 },	-- Allegiance of Flame (Shaman)
-				}),
-				crit(11, {	-- Warlock
-					["_quests"] = { 41796 },	-- Selecting a Sixth (Warlock)
-				}),
-				crit(12, {	-- Warrior
-					["_quests"] = { 42974 },	-- The Fate of Hodir (Warrior)
-				}),
+				["sym"] = {{ "achievement_criteria" }},
+				["groups"] = {
+					ach(11136),	-- An Epic Campaign
+					ach(11135),	-- A Heroic Campaign
+					ach(10994),	-- A Glorious Campaign
+				},
 			}),
 			ach(11171),	-- Arsenal of Power
 			ach(11222, {	-- Champions of Power
@@ -128,31 +96,41 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				ach(11220),	-- Roster of Champions
 			}),
 			ach(11846, {	-- Champions of Legionfall (Broken Shore)
-				crit(1),		-- Complete 'Champions of Legionfall'
+				crit(36604, {		-- Complete 'Champions of Legionfall'
+					["_quests"] = { 47137 },
+				}),
 			}),
 			achraw(10461, {	-- Fighting with Style: Classic
-				crit(1),	-- Recover one of the Pillars of Creation
-				crit(2, {	-- Complete the quest, "Light's Charge"
-					["_quests"] = { 44153 },
-				}),
-				crit(3, {	-- Complete the first order campaign effort
-					["sourceQuests"] = {
-						42708,	-- A Personal Request (Death Knight)
-						42131,	-- Unexpected Visitors (Demon Hunter)
-						42036,	-- Idol of the Wilds (Druid)
-						42393,	-- Homecoming (Hunter)
-						42520,	-- A Terrible Loss (Mage)
-						41733,	-- Rebuilding the Order (Monk)
-						-- TODO,	-- TODO (Paladin)
-						-- TODO,	-- TODO (Priest)
-						44177,	-- Dark Secrets and Shady Deals (Rogue)
-						41901,	-- Oath of the Windlord (Shaman)
-						-- TODO,	-- TODO (Warlock)
-						42204,	-- Jorhuttam (Warrior)
+				crit(31588, {	-- Recover one of the Pillars of Creation
+					["_quests"] = {
+						43349,
+						42213,
+						40890,
+						42454,
 					},
 				}),
+				crit(33167, {	-- Complete the quest, "Light's Charge"
+					["_quests"] = { 44153 },
+				}),
+				crit(33168, {	-- Complete the first order campaign effort
+					-- ["_quests"] = { 42116 },
+				}),
 			}),
-			ach(10750),	-- Fighting with Style: Hidden
+			ach(10750, {	-- Fighting with Style: Hidden
+				["_noautomation"] = true,
+				["groups"] = {
+					ach(11152, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 2
+						["description"] = "Progress indicates number of Legion Dungeons completed",
+					}),
+					ach(11153, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 3
+						["description"] = "Progress indicates number of Legion World Quests completed",
+					}),
+					ach(11154, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
+						["description"] = "Progress indicates number of players defeated in PvP",
+						["pvp"] = true,
+					}),
+				},
+			}),
 			ach(10747, {	-- Fighting with Style: Upgraded
 				ach(10746, {	-- Forged for Battle
 					["sourceQuests"] = {
@@ -174,8 +152,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				ach(10853),	-- Part of History
 			}),
 			ach(10748, {	-- Fighting with Style: Valorous
-				["sym"] = {
-					{"meta_achievement",
+				["sym"] = {{"meta_achievement",
 						10459,	-- Improving on History
 						11160,	-- Unleashed Monstrosities
 						11162,	-- Keystone Master
@@ -186,19 +163,19 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 			ach(10749, {	-- Fighting with Style: War-torn (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1),	-- Honor Level 10
-					crit(2),	-- Honor Level 30
-					crit(3),	-- Honor Level 50
-					crit(4),	-- Honor Level 80
+					crit(32105),	-- Honor Level 10
+					crit(32152),	-- Honor Level 30
+					crit(32150),	-- Honor Level 50
+					crit(32155),	-- Honor Level 80
 				},
 			}),
 			ach(11173, {	-- Fighting with Style: War-torn (H)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1),	-- Honor Level 10
-					crit(2),	-- Honor Level 30
-					crit(3),	-- Honor Level 50
-					crit(4),	-- Honor Level 80
+					crit(32105),	-- Honor Level 10
+					crit(32152),	-- Honor Level 30
+					crit(32150),	-- Honor Level 50
+					crit(32155),	-- Honor Level 80
 				},
 			}),
 			ach(10460),	-- Hidden Potential
@@ -241,6 +218,897 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					ach(11218, {	-- There's a Boss In There
 						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_3_5 },
 					}),
+				}),
+				n(-299, {	-- Missions
+					mission(1505, {	-- A Good Dust Up
+						q(45172, {	-- To Battle!
+							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
+							["provider"] = { "i", 143328 },	-- Battle Report
+							["g"] = {
+								i(143606, {	-- Satchel of Battlefield Spoils
+									i(140413),	-- Grisly Souvenir
+									i(140414),	-- Fel-Loaded Dice
+									i(140417),	-- Battle-Tempered Hilt
+									i(140418),	-- "Borrowed" Soul Essence
+									i(140419),	-- Blindside Approach
+									i(140423),	-- Exhaustive Research
+								}),
+							},
+						}),
+					}),
+					mission(1704, {	-- Antorus, the Burning Throne (Antoran High Command)
+						["groups"] = {
+							i(152313),	-- Azeroth Invasion Plans [Raid Finder]
+							q(48288, {	-- Antoran High Command [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
+							i(152314),	-- Azeroth Invasion Plans (Normal)
+							q(48295, {	-- Antoran High Command (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 152314 },	-- Azeroth Invasion Plans [Normal]
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
+							i(152315),	-- Azeroth Invasion Plans (Heroic)
+							q(48299, {	-- Antoran High Command (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152315 },	-- Azeroth Invasion Plans [Heroic]
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
+							i(152316),	-- Azeroth Invasion Plans (Mythic)
+							q(48303, {	-- Antoran High Command (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152316 },	-- Azeroth Invasion Plans [Mythic]
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {
+									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+									{"pop"},	-- Discard the Instance Header and acquire the children.
+									{"where", "difficultyID", 17 },	-- Select the Looking For Raid difficulty.
+									{"pop"},	-- Discard the Difficulty Header and acquire the children.
+									{"pop"},	-- Discard the Achievement Headers and acquire the children.
+									{"is","encounterID"},	-- Select only Encounter Headers
+									{"pop"},	-- Discard the Encounter Headers and acquire the children.
+									{"isnt", "c"},	-- Exclude Tier Set Pieces
+									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+									{"exclude", "itemID",
+										152094,	-- Taeshalach
+										153115,	-- Scythe of the Unmaker
+									},
+								},
+							}),
+						},
+					}),
+					mission(1708, {	-- Antorus, the Burning Throne (Imonar)
+						["groups"] = {
+							i(152317),	-- Discharged Shock Lance [Raid Finder]
+							q(48292, {	-- The Soulhunter [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152317 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
+							i(152318),	-- Discharged Shock Lance (Normal)
+							q(48296, {	-- The Soulhunter (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 152318 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
+							i(152319),	-- Discharged Shock Lance (Heroic)
+							q(48300, {	-- The Soulhunter (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152319 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
+							i(152320),	-- Discharged Shock Lance (Mythic)
+							q(48304, {	-- The Soulhunter (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152320 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(153504, {	-- Cache of Antoran Treasures (Normal)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {
+									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+									{"pop"},	-- Discard the Instance Header and acquire the children.
+									{"where", "difficultyID", 14 },	-- Select the Normal difficulty.
+									{"pop"},	-- Discard the Difficulty Header and acquire the children.
+									{"is","encounterID"},	-- Select only Encounter Headers
+									{"pop"},	-- Discard the Encounter Headers and acquire the children.
+									{"isnt", "c"},	-- Exclude Tier Set Pieces
+									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+									{"exclude", "itemID",
+										152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
+										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										155831,	-- Pantheon's Blessing
+									},
+								},
+							}),
+						},
+					}),
+					mission(1709, {	-- Antorus, the Burning Throne (Coven)
+						["groups"] = {
+							i(152321),	-- Sargerei Manifesto [Raid Finder]
+							q(48293, {	-- The Burning Coven [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152321 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
+							i(152322),	-- Sargerei Manifesto (Normal)
+							q(48297, {	-- The Burning Coven (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 152322 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
+							i(152323),	-- Sargerei Manifesto (Heroic)
+							q(48301, {	-- The Burning Coven (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152323 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
+							i(152324),	-- Sargerei Manifesto (Mythic)
+							q(48305, {	-- The Burning Coven (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152324 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(153501, {	-- Cache of Antoran Treasures (Heroic)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {
+									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+									{"pop"},	-- Discard the Instance Header and acquire the children.
+									{"where", "difficultyID", 15 },	-- Select the Heroic difficulty.
+									{"pop"},	-- Discard the Difficulty Header and acquire the children.
+									{"is","encounterID"},	-- Select only Encounter Headers
+									{"pop"},	-- Discard the Encounter Headers and acquire the children.
+									{"isnt", "c"},	-- Exclude Tier Set Pieces
+									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+									{"exclude", "itemID",
+										152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
+										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										155831,	-- Pantheon's Blessing
+									},
+								},
+							}),
+						},
+					}),
+					mission(1710, {	-- Antorus, the Burning Throne (Argus)
+						["groups"] = {
+							i(152325),	-- Sanguine Argunite [Raid Finder]
+							q(48294, {	-- The Unmaker [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152325 },	-- Sanguine Argunite [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
+							i(152326),	-- Sanguine Argunite (Normal)
+							q(48298, {	-- The Unmaker (Normal)
+								["provider"] = { "i", 152326 },	-- Sanguine Argunite [Normal]
+								["repeatable"] = true,
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
+							i(152327),	-- Sanguine Argunite (Heroic)
+							q(48302, {	-- The Unmaker (Heroic)
+								["provider"] = { "i", 152327 },	-- Sanguine Argunite [Heroic]
+								["repeatable"] = true,
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
+							i(152328),	-- Sanguine Argunite (Mythic)
+							q(48306, {	-- The Unmaker (Mythic)
+								["provider"] = { "i", 152328 },	-- Sanguine Argunite [Mythic]
+								["repeatable"] = true,
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(153503, {	-- Cache of Antoran Treasures (Mythic)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {
+									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+									{"pop"},	-- Discard the Instance Header and acquire the children.
+									{"where", "difficultyID", 16 },	-- Select the Mythic difficulty.
+									{"pop"},	-- Discard the Difficulty Header and acquire the children.
+									{"is","encounterID"},	-- Select only Encounter Headers
+									{"pop"},	-- Discard the Encounter Headers and acquire the children.
+									{"isnt", "c"},	-- Exclude Tier Set Pieces
+									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+									{"exclude", "itemID",
+										152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
+										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										155831,	-- Pantheon's Blessing
+									},
+								},
+							}),
+						},
+					}),
+					mission(1785, {	-- Assault on Felfire Armory
+						q(48601, {	-- Felfire Shattering
+							["g"] = {
+								i(153130),	-- Man'ari Training Amulet
+							},
+						}),
+					}),
+					mission(1503, {	-- Council of War
+						q(45162, {	-- We Brought the Hammer
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
+						}),
+					}),
+					mission(1387, {	-- Friends, Not Food
+						i(140316),	-- Firebat Pup (PET!)
+					}),
+					mission(1381, {	-- Glittering Treasure
+						i(129165),	-- Barnacle-Encrusted Gem (TOY!)
+					}),
+					mission(1513, {	-- I've Got A Strange Feeling About This
+						q(45312, {	-- You Beat the Ball of Meat
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 143590 },	-- Hunk of Meatball
+							["g"] = {
+								follower(986),	-- Meatball
+							},
+						}),
+					}),
+					mission(1504, {	-- It's Clean Up Time
+						q(45163, {	-- Clearing Up
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 142554 },	-- Broken Handle
+						}),
+					}),
+					mission(1386, {	-- It's so FLUFFY!
+						i(140320),	-- Corgnelius (PET!)
+					}),
+					mission(1512, {	-- Master of Shadows
+						q(45304, {	-- Attacking the Darkness
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
+						}),
+					}),
+					mission(1506, {	-- Once More Into the Fray
+						q(45173, {	-- Desperate Times
+							["provider"] = { "i", 143329 },	-- Dire Summons
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
+							},
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					}),
+					mission(931, {	-- Scouting Reports
+						i(140465),	-- Duskpelt Hide
+					}),
+					mission(1507, {	-- The Greatest Stage of All
+						q(45179, {	-- Win the Crowed
+							["provider"] = { "i", 143478 },	-- Arena Invitation
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
+									un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
+									i(140423),	-- Exhaustive Research
+								})),
+							},
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					}),
+					mission(1511, {	-- The Perils of Ashran
+						q(45180, {	-- An Island of War
+							["provider"] = { "i", 143479 },	-- Frayed Banner
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
+							},
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					}),
+					mission(1502, {	-- There is no Brawlers Guild
+						q(45111, {	-- Everyone Loves a Good Fight
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 142522 },	-- Rude Letter
+						}),
+					}),
+					mission(1296, {	-- The Emerald Nightfare: Facing Our Fears
+						-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+						i(139484, {	-- Cache of Nightmarish Treasures [Raid Finder]
+							["u"] = REMOVED_FROM_GAME,
+							["skipFill"] = true,
+							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+						}),
+					}),
+					mission(1298, {	-- The Emerald Nightmare: Il'gynoth
+						["groups"] = {
+							i(139480), -- Corrupted Egg Fragment [Raid Finder]
+							q(43546, {	-- Il'gynoth [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 139480 }, -- Corrupted Egg Fragment [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139484)), -- Cache of Nightmarish Treasures [Raid Finder]
+								},
+							}),
+							i(139481), -- Corrupted Egg Fragment (Normal)
+							q(43547, {	-- Il'gynoth (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 139481 }, -- Corrupted Egg Fragment (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139486)), -- Cache of Nightmarish Treasures (Normal)
+								},
+							}),
+							i(139482), -- Corrupted Egg Fragment (Heroic)
+							q(43548, {	-- Il'gynoth (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 139482 }, -- Corrupted Egg Fragment (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139487)), -- Cache of Nightmarish Treasures (Heroic)
+								},
+							}),
+							i(139483), -- Corrupted Egg Fragment (Mythic)
+							q(43549, {	-- Il'gynoth (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 139483 }, -- Corrupted Egg Fragment (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139488)), -- Cache of Nightmarish Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(139486, {	-- Cache of Nightmarish Treasures [Normal]
+								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1300, {	-- The Emerald Nightmare: Fall of Cenarius
+						["groups"] = {
+							i(140163), -- Tainted Moonglade Leaf [Raid Finder]
+							q(43902, {	-- Fall of Cenarius [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 140163 }, -- Tainted Moonglade Leaf [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139484)), -- Cache of Nightmarish Treasures [Raid Finder]
+								},
+							}),
+							i(140165), -- Tainted Moonglade Leaf (Normal)
+							q(43904, {	-- Fall of Cenarius (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 140165 }, -- Tainted Moonglade Leaf (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139486)), -- Cache of Nightmarish Treasures (Normal)
+								},
+							}),
+							i(140167), -- Tainted Moonglade Leaf (Heroic)
+							q(43906, {	-- Fall of Cenarius (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140167 }, -- Tainted Moonglade Leaf (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139487)), -- Cache of Nightmarish Treasures (Heroic)
+								},
+							}),
+							i(140169), -- Tainted Moonglade Leaf (Mythic)
+							q(43908, {	-- Fall of Cenarius (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140169 }, -- Tainted Moonglade Leaf (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139488)), -- Cache of Nightmarish Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(139487, {	-- Cache of Nightmarish Treasures [Heroic]
+								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1302, {	-- The Emerald Nightmare: Xavius
+						["groups"] = {
+							i(140164), -- Vial of Swirling Shadow [Raid Finder]
+							q(43903, {	-- Xavius [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 140164 }, -- Vial of Swirling Shadow [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139484)), -- Cache of Nightmarish Treasures [Raid Finder]
+								},
+							}),
+							i(140166), -- Vial of Swirling Shadow (Normal)
+							q(43905, {	-- Xavius (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 140166 }, -- Vial of Swirling Shadow (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139486)), -- Cache of Nightmarish Treasures (Normal)
+								},
+							}),
+							i(140168), -- Vial of Swirling Shadow (Heroic)
+							q(43907, {	-- Xavius (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140168 }, -- Vial of Swirling Shadow (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139487)), -- Cache of Nightmarish Treasures (Heroic)
+								},
+							}),
+							i(140170), -- Vial of Swirling Shadow (Mythic)
+							q(43909, {	-- Xavius (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140170 }, -- Vial of Swirling Shadow (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(139488)), -- Cache of Nightmarish Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(139488, {	-- Cache of Nightmarish Treasures [Mythic]
+								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1303, {	-- The Nighthold: Vaults
+						["groups"] = {
+							i(140147), -- Pulsauron Bindings [Raid Finder]
+							q(43882, {	-- Vaults [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 140147 }, -- Pulsauron Bindings [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140148)), -- Cache of Nightborne Treasures [Raid Finder]
+								},
+							}),
+							i(140149), -- Pulsauron Bindings (Normal)
+							q(43889, {	-- Vaults (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 140149 }, -- Pulsauron Bindings (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140150)), -- Cache of Nightborne Treasures (Normal)
+								},
+							}),
+							i(140151), -- Pulsauron Bindings (Heroic)
+							q(43890, {	-- Vaults (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140151 }, -- Pulsauron Bindings (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140152)), -- Cache of Nightborne Treasures (Heroic)
+								},
+							}),
+							i(140153), -- Pulsauron Bindings (Mythic)
+							q(43891, {	-- Vaults (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140153 }, -- Pulsauron Bindings (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140154)), -- Cache of Nightborne Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(140148, {	-- Cache of Nightborne Treasures [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1304, {	-- The Nighthold: High Botanist Tel'arn
+						["groups"] = {
+							i(140171), -- Glowing Lily [Raid Finder]
+							q(43910, {	-- High Botanist Tel'arn [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 140171 }, -- Glowing Lily [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140148)), -- Cache of Nightborne Treasures [Raid Finder]
+								},
+							}),
+							i(140174), -- Glowing Lily (Normal)
+							q(43913, {	-- High Botanist Tel'arn (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 140174 }, -- Glowing Lily (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140150)), -- Cache of Nightborne Treasures (Normal)
+								},
+							}),
+							i(140178), -- Glowing Lily (Heroic)
+							q(43916, {	-- High Botanist Tel'arn (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140178 }, -- Glowing Lily (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140152)), -- Cache of Nightborne Treasures (Heroic)
+								},
+							}),
+							i(140182), -- Glowing Lily (Mythic)
+							q(43920, {	-- High Botanist Tel'arn (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140182 }, -- Glowing Lily (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140154)), -- Cache of Nightborne Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(140150, {	-- Cache of Nightborne Treasures (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1305, {	-- The Nighthold: Elisande
+						["groups"] = {
+							i(140172), -- Ancient Nightborne Tome [Raid Finder]
+							q(43911, {	-- Elisande [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 140172 }, -- Ancient Nightborne Tome [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140148)), -- Cache of Nightborne Treasures [Raid Finder]
+								},
+							}),
+							i(140175), -- Ancient Nightborne Tome (Normal)
+							q(43914, {	-- Elisande (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 140175 }, -- Ancient Nightborne Tome (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140150)), -- Cache of Nightborne Treasures (Normal)
+								},
+							}),
+							i(140472), -- Ancient Nightborne Tome (Heroic)
+							q(43917, {	-- Elisande (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140472 }, -- Ancient Nightborne Tome (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140152)), -- Cache of Nightborne Treasures (Heroic)
+								},
+							}),
+							i(140182), -- Ancient Nightborne Tome (Mythic)
+							q(43920, {	-- Elisande (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140182 }, -- Ancient Nightborne Tome (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140154)), -- Cache of Nightborne Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(140152, {	-- Cache of Nightborne Treasures (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1306, {	-- The Nighthold: Gul'dan
+						["groups"] = {
+							i(140173), -- Shred of Tattered Robe [Raid Finder]
+							q(43912, {	-- Gul'dan [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 140173 }, -- Shred of Tattered Robe [Raid Finder]
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140148)), -- Cache of Nightborne Treasures [Raid Finder]
+								},
+							}),
+							i(140177), -- Shred of Tattered Robe (Normal)
+							q(43915, {	-- Gul'dan (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 140177 }, -- Shred of Tattered Robe (Normal)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140150)), -- Cache of Nightborne Treasures (Normal)
+								},
+							}),
+							i(140180), -- Shred of Tattered Robe (Heroic)
+							q(43918, {	-- Gul'dan (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140180 }, -- Shred of Tattered Robe (Heroic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140152)), -- Cache of Nightborne Treasures (Heroic)
+								},
+							}),
+							i(140183), -- Shred of Tattered Robe (Mythic)
+							q(43921, {	-- Gul'dan (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 140183 }, -- Shred of Tattered Robe (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["g"] = {
+									un(REMOVED_FROM_GAME, i(140154)), -- Cache of Nightborne Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(140154, {	-- Cache of Nightborne Treasures (Mythic)
+								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1680, {	-- Tomb of Sargeras: The Tomb's Mistress [Mistress]
+						["groups"] = {
+							i(147497), -- Encrusted Naga Scale [Raid Finder]
+							q(47114, {	-- The Tomb's Mistress [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147497 }, -- Encrusted Naga Scale [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147498), -- Encrusted Naga Scale (Normal)
+							q(47115, {	-- The Tomb's Mistress (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147498 }, -- Encrusted Naga Scale (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147499), -- Encrusted Naga Scale (Heroic)
+							q(47116, {	-- The Tomb's Mistress (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147499 }, -- Encrusted Naga Scale (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147500), -- Encrusted Naga Scale (Mythic)
+							q(47117, {	-- The Tomb's Mistress (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147500 }, -- Encrusted Naga Scale (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147518, {	-- Cache of Fel Treasures (Raid Finder)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1681, {	-- Tomb of Sargeras: Free The Tormented [Desolate Host]
+						["groups"] = {
+							i(147501), -- Worshipper's Scrawlings [Raid Finder]
+							q(47118, {	-- Free The Tormented [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147501 }, -- Worshipper's Scrawlings [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147502), -- Worshipper's Scrawlings (Normal)
+							q(47119, {	-- Free The Tormented (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147502 }, -- Worshipper's Scrawlings (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147503), -- Worshipper's Scrawlings (Heroic)
+							q(47120, {	-- Free The Tormented (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147503 }, -- Worshipper's Scrawlings (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147504), -- Worshipper's Scrawlings (Mythic)
+							q(47121, {	-- Free The Tormented (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147504 }, -- Worshipper's Scrawlings (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147519, {	-- Cache of Fel Treasures (Normal)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1682, {	-- Tomb of Sargeras: The Fallen Avatar
+						["groups"] = {
+							i(147505), -- Wailing Soul [Raid Finder]
+							q(47122, {	-- The Fallen Avatar [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147505 }, -- Wailing Soul [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147506), -- Wailing Soul (Normal)
+							q(47123, {	-- The Fallen Avatar (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147506 }, -- Wailing Soul (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147507), -- Wailing Soul (Heroic)
+							q(47124, {	-- The Fallen Avatar (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147507 }, -- Wailing Soul (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147508), -- Wailing Soul (Mythic)
+							q(47125, {	-- The Fallen Avatar (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147508 }, -- Wailing Soul (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147520, {	-- Cache of Fel Treasures (Heroic)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1683, {	-- Tomb of Sargeras: The Deceiver
+						["groups"] = {
+							i(147509), -- Seal of the Deceiver [Raid Finder]
+							q(47126, {	-- The Deceiver [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147509 }, -- Seal of the Deceiver [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147510), -- Seal of the Deceiver (Normal)
+							q(47127, {	-- The Deceiver (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147510 }, -- Seal of the Deceiver (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147511), -- Seal of the Deceiver (Heroic)
+							q(47128, {	-- The Deceiver (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147511 }, -- Seal of the Deceiver (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147512), -- Seal of the Deceiver (Mythic)
+							q(47129, {	-- The Deceiver (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147512 }, -- Seal of the Deceiver (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147521, {	-- Cache of Fel Treasures (Mythic)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["skipFill"] = true,
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					mission(1382, {	-- Win the Crowd
+						i(130169),	-- Tournament Favor (TOY!)
+					}),
+					-- Rep Insignias
+					i(152960),	-- Argussian Reach Insignia
+					i(152959),	-- Argussian Reach Insignia
+					i(152957),	-- Army of the Light Insignia
+					i(141340),	-- Court of Farondis Insignia
+					i(146943),	-- Court of Farondis Insignia
+					i(141339),	-- Dreamweaver Insignia
+					i(146942),	-- Dreamweaver Insignia
+					i(152954),	-- Greater Argussian Reach Insignia
+					i(152955),	-- Greater Army of the Light Insignia
+					i(150927),	-- Greater Court of Farondis Insignia
+					i(150926),	-- Greater Dreamweaver Insignia
+					i(150928),	-- Greater Highmountain Tribe Insignia
+					i(152464),	-- Greater Legionfall Insignia
+					i(150930),	-- Greater Nightfallen Insignia
+					i(150925),	-- Greater Valarjar Insignia
+					i(150929),	-- Greater Wardens Insignia
+					i(141341),	-- Highmountain Tribe Insignia
+					i(146944),	-- Highmountain Tribe Insignia
+					i(146950),	-- Legionfall Insignia [BOA]
+					i(146949),	-- Legionfall Insignia [BOP]
+					i(141343),	-- Nightfallen Insignia
+					i(146946),	-- Nightfallen Insignia
+					i(141338),	-- Valarjar Insignia
+					i(146941),	-- Valarjar Insignia
+					i(141342),	-- Wardens Insignia
+					i(146945),	-- Wardens Insignia
+					-- Misc
+					un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
+					i(143328),	-- Battle Report
+					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
+					i(140362),	-- Dust from the Shadowlands
+					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
+					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
+					i(116415, { ["timeline"] = { REMOVED_10_2_5 } }),	-- Shiny Pet Charm
+					-- Dungeons
+					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
+					un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
+					un(REMOVED_FROM_GAME, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
+					un(REMOVED_FROM_GAME, i(139478)),	-- Broken Warden Helm -> Vault of the Wardens: Into the Vault of the Wardens -> Vault of the Wardens
+					un(REMOVED_FROM_GAME, i(139474)),	-- Carved Shell -> Eye of Azshara: Into the Eye of Azshara -> Eye of Azshara
+					un(REMOVED_FROM_GAME, i(139477)),	-- Drained Mana Orb -> The Arcway: Into the Arcway -> The Arcway
+					un(REMOVED_FROM_GAME, i(139472)),	-- Glamorous Party Invitation -> Court of Stars: Into the Court of Stars -> Court of Stars
+					un(REMOVED_FROM_GAME, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
+					un(REMOVED_FROM_GAME, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
+					un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
+					un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
+					-- Follower Equipments
+					i(139873),	-- Bottled Sanity
+					i(139808),	-- Cuiro of Abundant Happiness
+					i(139809),	-- Elixir of Plenty
+					i(152444),	-- Exalted Xenedar Hammer
+					i(139792),	-- Fruitful Bauble
+					i(139419),	-- Golden Banana
+					i(152447),	-- Lightburst Charge
+					i(152929),	-- Pronged Ridgestalker Spear
+					i(152441),	-- Satchel of Lucidity
+					i(139670),	-- Scream of the Dead
+					i(152933),	-- Shadowguard Void Effusion
+					i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
+					i(152935),	-- Wakener's Bauble
+					i(147559),	-- Ward of Infinite Fury
+					i(139816),	-- Well-Worn Stone
+					i(152446),	-- Writ of Holy Orders
+					i(151844),	-- Xenedar Armor Set
+					i(152931),	-- Xenic Tincture
 				}),
 				n(QUESTS, {
 					q(44057, {	-- A "Noble" Event
@@ -400,173 +1268,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						},
 					}),--]] -- Linked with the Mission
 				}),
-				mission(1505, {	-- A Good Dust Up
-					q(45172, {	-- To Battle!
-						-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
-						["provider"] = { "i", 143328 },	-- Battle Report
-						["g"] = {
-								i(143606, {	-- Satchel of Battlefield Spoils
-								i(140413),	-- Grisly Souvenir
-								i(140414),	-- Fel-Loaded Dice
-								i(140417),	-- Battle-Tempered Hilt
-								i(140418),	-- "Borrowed" Soul Essence
-								i(140419),	-- Blindside Approach
-								i(140423),	-- Exhaustive Research
-							}),
-						},
-					}),
-				}),
-				mission(1785, {	-- Assault on Felfire Armory
-					q(48601, {	-- Felfire Shattering
-						["g"] = {
-							i(153130),	-- Man'ari Training Amulet
-						},
-					}),
-				}),
-				mission(1503, {	-- Council of War
-					q(45162, {	-- We Brought the Hammer
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
-					}),
-				}),
-				mission(1387, {	-- Friends, Not Food
-					i(140316),	-- Firebat Pup (PET!)
-				}),
-				mission(1381, {	-- Glittering Treasure
-					i(129165),	-- Barnacle-Encrusted Gem (TOY!)
-				}),
-				mission(1513, {	-- I've Got A Strange Feeling About This
-					q(45312, {	-- You Beat the Ball of Meat
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 143590 },	-- Hunk of Meatball
-						["g"] = {
-							follower(986),	-- Meatball
-						},
-					}),
-				}),
-				mission(1504, {	-- It's Clean Up Time
-					q(45163, {	-- Clearing Up
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 142554 },	-- Broken Handle
-					}),
-				}),
-				mission(1386, {	-- It's so FLUFFY!
-					i(140320),	-- Corgnelius (PET!)
-				}),
-				mission(1512, {	-- Master of Shadows
-					q(45304, {	-- Attacking the Darkness
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
-					}),
-				}),
-				mission(1506, {	-- Once More Into the Fray
-					q(45173, {	-- Desperate Times
-						["provider"] = { "i", 143329 },	-- Dire Summons
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
-						},
-						["u"] = REMOVED_FROM_GAME,
-					}),
-				}),
-				mission(931, {	-- Scouting Reports
-					i(140465),	-- Duskpelt Hide
-				}),
-				mission(1507, {	-- The Greatest Stage of All
-					q(45179, {	-- Win the Crowed
-						["provider"] = { "i", 143478 },	-- Arena Invitation
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
-								un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
-								i(140423),	-- Exhaustive Research
-							})),
-						},
-						["u"] = REMOVED_FROM_GAME,
-					}),
-				}),
-				mission(1511, {	-- The Perils of Ashran
-					q(45180, {	-- An Island of War
-						["provider"] = { "i", 143479 },	-- Frayed Banner
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
-						},
-						["u"] = REMOVED_FROM_GAME,
-					}),
-				}),
-				mission(1502, {	-- There is no Brawlers Guild
-					q(45111, {	-- Everyone Loves a Good Fight
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 142522 },	-- Rude Letter
-					}),
-				}),
-				mission(1382, {	-- Win the Crowd
-					i(130169),	-- Tournament Favor (TOY!)
-				}),
-				-- Rep Insignias
-				i(152960),	-- Argussian Reach Insignia
-				i(152959),	-- Argussian Reach Insignia
-				i(152957),	-- Army of the Light Insignia
-				i(141340),	-- Court of Farondis Insignia
-				i(146943),	-- Court of Farondis Insignia
-				i(141339),	-- Dreamweaver Insignia
-				i(146942),	-- Dreamweaver Insignia
-				i(152954),	-- Greater Argussian Reach Insignia
-				i(152955),	-- Greater Army of the Light Insignia
-				i(150927),	-- Greater Court of Farondis Insignia
-				i(150926),	-- Greater Dreamweaver Insignia
-				i(150928),	-- Greater Highmountain Tribe Insignia
-				i(152464),	-- Greater Legionfall Insignia
-				i(150930),	-- Greater Nightfallen Insignia
-				i(150925),	-- Greater Valarjar Insignia
-				i(150929),	-- Greater Wardens Insignia
-				i(141341),	-- Highmountain Tribe Insignia
-				i(146944),	-- Highmountain Tribe Insignia
-				i(146950),	-- Legionfall Insignia [BOA]
-				i(146949),	-- Legionfall Insignia [BOP]
-				i(141343),	-- Nightfallen Insignia
-				i(146946),	-- Nightfallen Insignia
-				i(141338),	-- Valarjar Insignia
-				i(146941),	-- Valarjar Insignia
-				i(141342),	-- Wardens Insignia
-				i(146945),	-- Wardens Insignia
-				-- Misc
-				un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
-				i(143328),	-- Battle Report
-				un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
-				i(140362),	-- Dust from the Shadowlands
-				un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
-				un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
-				i(116415),	-- Shiny Pet Charm
-				-- Dungeons
-				un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
-				un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
-				un(REMOVED_FROM_GAME, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
-				un(REMOVED_FROM_GAME, i(139478)),	-- Broken Warden Helm -> Vault of the Wardens: Into the Vault of the Wardens -> Vault of the Wardens
-				un(REMOVED_FROM_GAME, i(139474)),	-- Carved Shell -> Eye of Azshara: Into the Eye of Azshara -> Eye of Azshara
-				un(REMOVED_FROM_GAME, i(139477)),	-- Drained Mana Orb -> The Arcway: Into the Arcway -> The Arcway
-				un(REMOVED_FROM_GAME, i(139472)),	-- Glamorous Party Invitation -> Court of Stars: Into the Court of Stars -> Court of Stars
-				un(REMOVED_FROM_GAME, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
-				un(REMOVED_FROM_GAME, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
-				un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
-				un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
-				-- Follower Equipments
-				i(139873),	-- Bottled Sanity
-				i(139808),	-- Cuiro of Abundant Happiness
-				i(139809),	-- Elixir of Plenty
-				i(152444),	-- Exalted Xenedar Hammer
-				i(139792),	-- Fruitful Bauble
-				i(139419),	-- Golden Banana
-				i(152447),	-- Lightburst Charge
-				i(152929),	-- Pronged Ridgestalker Spear
-				i(152441),	-- Satchel of Lucidity
-				i(139670),	-- Scream of the Dead
-				i(152933),	-- Shadowguard Void Effusion
-				i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
-				i(152935),	-- Wakener's Bauble
-				i(147559),	-- Ward of Infinite Fury
-				i(139816),	-- Well-Worn Stone
-				i(152446),	-- Writ of Holy Orders
-				i(151844),	-- Xenedar Armor Set
-				i(152931),	-- Xenic Tincture
 			},
 		}),
 		n(VENDORS, {
@@ -577,7 +1278,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 		}),
 	})),
 }));
-
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(48308),	-- Tracking Quest - triggered after obtaining "Azeroth Invasion Plans" (itemID 152316)

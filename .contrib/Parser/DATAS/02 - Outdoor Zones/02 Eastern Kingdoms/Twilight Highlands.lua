@@ -10,50 +10,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(17, {	-- Goz Banefury
-							["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
-							["cr"] = 66822,	-- Goz Banefury <Master Pet Tamer>
-						}),
-					},
-				})),
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuest"] = 27380,	-- Nightmare
 					["timeline"] = { "added 4.0.3" },
+				}),
+				achWithRep(4886, 1172, {	-- Dragonmaw Clan
+					["races"] = HORDE_ONLY,
 				}),
 				ach(5482, {	-- Dragonmaw Tour of Duty
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- High Shaman MacKilligan slain
-							["creatureID"] = 46885,
+						crit(15952, {	-- High Shaman MacKilligan slain
+							["cr"] = 46885,
 							["coord"] = { 45.8, 33.6, TWILIGHT_HIGHLANDS },
 						}),
-						crit(2, {	-- Dillan MacHurley slain
-							["creatureID"] = 46378,
+						crit(15953, {	-- Dillan MacHurley slain
+							["cr"] = 46378,
 							["coords"] = {
 								{ 45.0, 37.6, TWILIGHT_HIGHLANDS },
 								{ 46.8, 36.8, TWILIGHT_HIGHLANDS },
 							},
 						}),
-						crit(3, {	-- Gunwald Greybeard slain
-							["creatureID"] = 46376,
+						crit(15954, {	-- Gunwald Greybeard slain
+							["cr"] = 46376,
 							["coord"] = { 45.2, 42.8, TWILIGHT_HIGHLANDS },
 						}),
-						crit(4, {	-- Cliff Thundermar slain
-							["creatureID"] = 46377,
+						crit(15955, {	-- Cliff Thundermar slain
+							["cr"] = 46377,
 							["coord"] = { 52.8, 28.2, TWILIGHT_HIGHLANDS },
 						}),
-						crit(5, {	-- The Black Recluse spider slain
-							["creatureID"] = 47115,
+						crit(15950, {	-- The Black Recluse spider slain
+							["cr"] = 47115,
 							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
-						crit(6, {	-- Korthalon the Black slain
-							["creatureID"] = 47171,
+						crit(15951, {	-- Korthalon the Black slain
+							["cr"] = 47171,
 							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},
@@ -67,6 +59,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4873, {	-- Fading into Twilight (Alliance)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Good News, For Once
 							["sourceQuests"] = {
@@ -101,10 +94,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27787,	-- Skullcrusher the Mountain
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Goblin Work Ethic
 							["sourceQuest"] = 26337,	-- Beating the Market
@@ -131,16 +126,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27788,	-- Skullcrusher the Mountain
 						}),
 					},
-				}),
-				ach(5320, {	-- King of the Mountain (Alliance)
-					["sourceQuest"] = 27787,	-- Skullcrusher the Mountain (Alliance)
-					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(5321, {	-- King of the Mountain (Horde)
-					["sourceQuest"] = 27788,	-- Skullcrusher the Mountain (Horde)
-					["timeline"] = { "added 4.0.3" },
-					["races"] = HORDE_ONLY,
+					-- #ENDIF
 				}),
 				ach(4960, {	-- Round Three. Fight!
 					["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
@@ -150,32 +136,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["collectible"] = false,	-- not all criteria are available in this zone, so the header shouldn't be collectible here.
 					["groups"] = {
-						crit(3, {	-- Crucible of Carnage in Twilight Highlands
+						crit(13918, {	-- Crucible of Carnage in Twilight Highlands
 							["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
 						}),
 					},
+				}),
+				achWithRep(4885, 1174, {	-- Wildhammer Clan
+					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5481, {	-- Wildhammer Tour of Duty
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Warlord Halthar slain
-							["creatureID"] = 46493,
+							["cr"] = 46493,
 							["coord"] = { 49.0, 37.2, TWILIGHT_HIGHLANDS },
 						}),
 						crit(2, {	-- Karkrog the Exterminator slain
-							["creatureID"] = 46756,
+							["cr"] = 46756,
 							["coords"] = {
 								{ 50.8, 33.8, TWILIGHT_HIGHLANDS },
 								{ 51.6, 33.0, TWILIGHT_HIGHLANDS },
 							},
 						}),
 						crit(3, {	-- The Black Recluse spider slain
-							["creatureID"] = 47115,
+							["cr"] = 47115,
 							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(4, {	-- Korthalon the Black slain
-							["creatureID"] = 47171,
+							["cr"] = 47171,
 							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},
@@ -222,6 +211,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(549),	-- Yellow-Bellied Marmot (PET!)
 				},
+			}),
+			n(FACTIONS, {
+				faction(1172, {	-- Dragonmaw Clan
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_dragonmawclan",
+					["races"] = HORDE_ONLY,
+				}),
+				faction(1174, {	-- Wildhammer Clan
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_wildhammerclan",
+					["races"] = ALLIANCE_ONLY,
+				}),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(659, {	-- Bloodgulch, Twilight Highlands
@@ -277,6 +276,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 47118,	-- Desmond Chadsworth <Gryphon Master>
 					["coord"] = { 43.8, 57.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66822, {	-- Goz Banefury <Master Pet Tamer>
+					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -1732,11 +1736,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27787, {	-- Skullcrusher the Mountain (A)
+					["qg"] = 46717,	-- The Hammer of Twilight
 					["sourceQuest"] = 27784,	-- The Hammer of Twilight
 					["coord"] = { 45.2, 87.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46717,	-- The Hammer of Twilight
 					["groups"] = {
+						a(ach(5320)),	-- King of the Mountain (Alliance)
 						i(63708),	-- Overly Intelligent Robe
 						i(63707),	-- Shaw's Finest Leggings
 						i(63706),	-- Coulton's Crushers
@@ -1745,10 +1750,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27788, {	-- Skullcrusher the Mountain (H)
 					["qg"] = 46717,	-- The Hammer of Twilight
+					["sourceQuest"] = 27786,	-- The Hammer of Twilight
 					["coord"] = { 45.3, 87.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27786,	-- The Hammer of Twilight
 					["groups"] = {
+						h(ach(5321)),	-- King of the Mountain (Horde)
 						i(63704),	-- Overly Intelligent Robes
 						i(63703),	-- Garona's Finest Leggings
 						i(63702),	-- Coulton's Crushers

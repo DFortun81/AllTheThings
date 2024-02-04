@@ -4,8 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, {
 	tier(BFA_TIER, {
-		-- TODO: probably give this a better name/header
-		o(311218, {	-- Xal'atath, Blade of the Black Empire
+		header(HEADERS.Object, 311218, {	-- Xal'atath, Blade of the Black Empire
 			q(54438, {	-- Crucible of Storms: Relics of Shadow
 				["sourceQuests"] = { 54126 },	-- Twist the Knife
 				["provider"] = { "n", 146902 },	-- Brother Pike
@@ -191,18 +190,6 @@ root(ROOTS.ExpansionFeatures, {
 					{ 78.0, 36.7, ZULDAZAR },
 					{ 34.2, 31.8, STORMSONG_VALLEY },
 				},
-			}),
-		}),
-	}),
-});
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			-- You get the transmog attached to your head during 'Twist the Knife' but you dont get the item to learn the mog
-			-- Removed after the Quest 'His Eye Upon You'
-			i(168004, {	-- Gift of N'Zoth
-				["timeline"] = { "created 8.1.5" },
 			}),
 		}),
 	}),

@@ -36,10 +36,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 						}),
 						i(190644, {	-- Vessel of Profound Possibilities
+							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 							["timeline"] = { ADDED_9_2_0 },
 							["sym"] = {
-								{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-								{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+								{"select","tierID",SL_TIER},	-- SL Tier
+								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 							},
 						}),
 					}, {	-- Friendly
@@ -62,7 +63,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(184738),	-- Chainmail of the March Warden
 						i(184737),	-- Chestplate of the March Warden
 						i(180456),	-- Colors of the Undying Army
-						i(183189),	-- Illusion: Undying Spirit
+						i(183189),	-- Illusion: Undying Spirit (ILLUSION!)
 						i(182082),	-- Lurid Bloodtusk (MOUNT!)
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden

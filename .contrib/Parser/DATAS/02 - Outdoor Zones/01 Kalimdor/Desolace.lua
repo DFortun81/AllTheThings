@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Naga Threat
 							["sourceQuest"] = 14302,	-- Official Assessment
@@ -67,6 +68,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(848, {	-- Explore Desolace
 					-- #if BEFORE WRATH
@@ -2306,8 +2308,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.2, 6.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12240),	-- Recipe: Heavy Kodo Stew
-						i(12233),	-- Recipe: Mystery Stew
+						i(12240),	-- Recipe: Heavy Kodo Stew (RECIPE!)
+						i(12233),	-- Recipe: Mystery Stew (RECIPE!)
 					},
 				}),
 				n(9636, {	-- Kireena <Trade Goods>
@@ -2321,8 +2323,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(7114, {	-- Pattern: Azure Silk Gloves
 							["isLimited"] = true,
 						}),
-						i(12232),	-- Recipe: Carrion Surprise
-						i(12240),	-- Recipe: Heavy Kodo Stew
+						i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
+						i(12240),	-- Recipe: Heavy Kodo Stew (RECIPE!)
 					},
 				}),
 				n(8878, {	-- Muuran <Superior Macecrafter>
@@ -2341,24 +2343,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(7087, {	-- Pattern: Crimson Silk Cloak
 							["isLimited"] = true,
 						}),
-						i(4609, {	-- Recipe: Barbecued Buzzard Wing
+						i(4609, {	-- Recipe: Barbecued Buzzard Wing (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(3734, {	-- Recipe: Big Bear Steak
+						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 							["isLimited"] = true,
 						}),
-						i(12239, {	-- Recipe: Dragonbreath Chili
+						i(12239, {	-- Recipe: Dragonbreath Chili (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(12229, {	-- Recipe: Hot Wolf Ribs
+						i(12229, {	-- Recipe: Hot Wolf Ribs (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(12227, {	-- Recipe: Lean Wolf Steak
+						i(12227, {	-- Recipe: Lean Wolf Steak (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 							["isLimited"] = true,
 						}),
-						i(12233, {	-- Recipe: Mystery Stew
+						i(12233, {	-- Recipe: Mystery Stew (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(13310, {	-- Schematic: Accurate Scope
@@ -2379,26 +2381,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7613,	-- Pattern: Green Leather Armor (RECIPE!)
 					}},
 					["groups"] = {
-						i(12232, {	-- Recipe: Carrion Surprise
+						i(12232, {	-- Recipe: Carrion Surprise (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(12240, {	-- Recipe: Heavy Kodo Stew
+						i(12240, {	-- Recipe: Heavy Kodo Stew (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(3735, {	-- Recipe: Hot Lion Chops
+						i(3735, {	-- Recipe: Hot Lion Chops (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(12231, {	-- Recipe: Jungle Stew
+						i(12231, {	-- Recipe: Jungle Stew (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5489, {	-- Recipe: Lean Venison
+						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 							["isLimited"] = true,
 						}),
-						i(12228, {	-- Recipe: Roast Raptor
+						i(12228, {	-- Recipe: Roast Raptor (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2409,19 +2411,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16072, {	-- Expert Cookbook
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(2620, {	-- Augural Shroud
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 4684,	-- Nether Sorceress
+					["coords"] = {
+						{ 52.2, 83.6, DESOLACE },
+						{ 48.2, 75.8, DESOLACE },
+						{ 53.2, 71.0, DESOLACE },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 4679,	-- Nether Maiden
+					["coords"] = {
+						{ 52.6, 83.8, DESOLACE },
+						{ 50.6, 77.0, DESOLACE },
+						{ 50.2, 71.6, DESOLACE },
+					},
+					-- #endif
 				}),
 				o(176582, {	-- Shellfish Trap
 					["coords"] = {
