@@ -19139,9 +19139,6 @@ app.InitDataCoroutine = function()
 	-- app.PrintDebug("Yield prior to Refresh")
 	coroutine.yield();
 
-	-- Prepare the Sound Pack!
-	app.Audio:ReloadSoundPack();
-
 	app.__FirstRefresh = true;
 	app.RefreshCollections();
 

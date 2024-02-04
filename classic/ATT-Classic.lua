@@ -7323,9 +7323,6 @@ app.events.VARIABLES_LOADED = function()
 		elseif season == 3 then app.MaximumSkillLevel = 225;
 		elseif season == 4 then app.MaximumSkillLevel = 300; end
 
-		-- Prepare the Sound Pack!
-		app.Audio:ReloadSoundPack();
-
 		-- Cache some things
 		app.CurrentMapID = app.GetCurrentMapID();
 
