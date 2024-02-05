@@ -186,6 +186,35 @@ app.AddEventHandler = function(eventName, handler)
 	end
 	local handlers = EventHandlers[eventName]
 	handlers[#handlers + 1] = handler;
+	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
+end
+app.RemoveEventHandler = function(handler)
+	if type(handler) ~= "function" then
+		app.print("RemoveEventHandler was provided a non-function",handler)
+		return
+	end
+	for eventName,handlers in pairs(EventHandlers) do
+		local count = #handlers
+		local shift = count
+		while shift > 0 do
+			if handler == handlers[shift] then
+				-- app.PrintDebug("Remove Handler",handler,"@",shift,"/",#handlers,"in Event",eventName)
+				break
+			end
+			shift = shift - 1
+		end
+		if shift > 0 then
+			local next = shift + 1
+			while shift < count do
+				handlers[shift] = handlers[next]
+				shift = shift + 1
+				next = next + 1
+			end
+			handlers[#handlers] = nil;
+			-- app.PrintDebug("Handlers",#handlers,"in Event",eventName)
+		-- else app.PrintDebug("Handler",handler,"not in Event",eventName)
+		end
+	end
 end
 app.HandleEvent = function(eventName)
 	-- app.PrintDebug("HandleEvent",eventName)

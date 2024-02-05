@@ -12989,6 +12989,7 @@ local function UpdateWindow(self, force, got)
 			-- print("check ExpireTime",self.Suffix,expireTime)
 			if expireTime and expireTime > 0 and expireTime < time() then
 				-- app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
+				self:RemoveEventHandlers()
 				app.Windows[self.Suffix] = nil;
 			end
 		end
@@ -13021,6 +13022,20 @@ local backdrop = {
 local function ResetWindow(suffix)
 	app.Windows[suffix] = nil;
 	app.print("Reset Window",suffix);
+end
+-- allows a window to keep track of any specific custom handler functions it creates
+local function AddEventHandler(self, event, handler)
+	self.Handlers = self.Handlers or {}
+	app.AddEventHandler(event, handler)
+	self.Handlers[#self.Handlers + 1] = handler
+end
+-- allows a window to remove all event handlers it created
+local function RemoveEventHandlers(self)
+	if self.Handlers then
+		for _,handler in ipairs(self.Handlers) do
+			app.RemoveEventHandler(handler)
+		end
+	end
 end
 function app:GetWindow(suffix, parent, onUpdate)
 	if app.GetCustomWindowParam(suffix, "reset") then
