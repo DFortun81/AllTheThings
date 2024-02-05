@@ -316,26 +316,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		i(165714, {	-- Gold Strongbox - Win (A)
 			["timeline"] = { "added 8.1.0.28724" },
 			["races"] = ALLIANCE_ONLY,
-			["sym"] = {
-				{ "select", "headerID", BATTLEGROUNDS },
-				{ "pop" },	-- Discard all headers and acquire the children.
-				{ "select", "headerID", REWARDS },
-				{ "pop" },	-- Discard all headers and acquire the children.
-				{ "where", "filterID", 55 },	-- Consumables
-				{ "pop" },	-- Discard all headers and acquire the children.
-			},
 		}),
 		i(165711, {	-- Gold Strongbox - Win (H)
 			["timeline"] = { "added 8.1.0.28724" },
 			["races"] = HORDE_ONLY,
-			["sym"] = {
-				{ "select", "headerID", BATTLEGROUNDS },
-				{ "pop" },	-- Discard all headers and acquire the children.
-				{ "select", "headerID", REWARDS },
-				{ "pop" },	-- Discard all headers and acquire the children.
-				{ "where", "filterID", 55 },	-- Consumables
-				{ "pop" },	-- Discard all headers and acquire the children.
-			},
 		}),
 		i(203724, {	-- Field Medic's Hazard Payout
 			["timeline"] = { ADDED_10_0_7 },
