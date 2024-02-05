@@ -945,7 +945,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						title(530),	-- <Name> the Blazing
 					}),
 					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }}),	-- Cutting Edge: Fyrakk the Blazing
-					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {	-- Hall of Fame: Fyrakk the Blazing
+					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, "removed 10.2.5.53162" } }, {	-- Hall of Fame: Fyrakk the Blazing
 						title(528),	-- <Name>, Famed Slayer of Fyrakk
 					})),
 					ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
