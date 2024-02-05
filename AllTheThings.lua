@@ -10565,16 +10565,16 @@ app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 -- Custom Collectibility
 do
 local SLCovenantId;
+local ExilesReachMapIDs = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
 local CCFuncs = {
 	["NPE"] = function()
 		-- needs mapID to check this
 		if not app.CurrentMapID then return; end
 		-- print("first check");
-		-- check if the current MapID is in Exile's Reach
-		local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
 		-- print("map check",app.CurrentMapID);
-		-- this is an NPE character, so flag the GUID
-		if maps[app.CurrentMapID] then
+		-- check if the current MapID is in Exile's Reach
+		if ExilesReachMapIDs[app.CurrentMapID] then
+			-- this is an NPE character, so flag the GUID
 			-- print("on map");
 			return true;
 		-- if character has completed the first NPE quest
@@ -10589,7 +10589,7 @@ local CCFuncs = {
 	end,
 	["SL_SKIP"] = function()
 		-- Threads content becomes unavailable when a player reaches max level
-		if UnitLevel("player") >= 70 then return false end
+		if app.Level >= 70 then return false end
 		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
 		return IsQuestFlaggedCompleted(62713);
 	end,
