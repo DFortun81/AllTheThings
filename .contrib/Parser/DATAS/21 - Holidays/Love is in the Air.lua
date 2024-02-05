@@ -78,19 +78,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		ach(1693, {	-- Fool For Love (H) / Fool For Love [MOP+]
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
+				-- #if BEFORE 10.2.5
 				260,	-- Charming
+				-- #endif
 				1188,	-- Shafted!
+				-- #if BEFORE 10.2.5
 				-- #if AFTER MOP
 				1279,	-- Flirt With Disaster [Alliance]
 				-- #endif
 				1280,	-- Flirt With Disaster [Horde]
+				-- #endif
 				1291,	-- Lonely?
 				1695,	-- Dangerous Love
 				1696,	-- The Rocket's Pink Glare
+				-- #if BEFORE 10.2.5
 				-- #if AFTER MOP
 				1697,	-- Nation of Adoration [Alliance]
 				-- #endif
 				1698,	-- Nation of Adoration [Horde]
+				-- #endif
 				1699,	-- Fistful of Love
 				1702,	-- Sweet Tooth
 				1701,	-- Be Mine!
