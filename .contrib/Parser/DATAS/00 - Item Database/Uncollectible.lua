@@ -805,7 +805,9 @@ i(181338);	-- Lady Moonberry
 i(182212);	-- Magical Curio
 i(180484);	-- Noko's Flute
 i(181347);	-- Plague Deviser Marileth
+i(178887),	-- Polemarch Adrestes
 i(181343);	-- Rendle and Cudgelface
+i(181348),	-- Sika
 i(182186);	-- Stolen Memento
 i(181349);	-- Stonehead
 i(181715);	-- Temel's Certificate of Completion

@@ -565,7 +565,6 @@ root(ROOTS.NeverImplemented, {
 				i(175956),	-- PH Unusual
 				i(180798),	-- PH - Kyrian IOU
 				i(179304),	-- Pile of Muck
-				i(178887),	-- Polemarch Adrestes
 				i(178677),	-- Prince Renathal
 				i(175047),	-- Protective Rebirth
 				i(175144),	-- Purest Healing
@@ -602,7 +601,6 @@ root(ROOTS.NeverImplemented, {
 				i(176928),	-- Shadowlands Skinning Knife
 				i(179919),	-- Shadowy Rabbit's Foot
 				i(181166),	-- Sigil of Haunting Memories
-				i(181348),	-- Sika
 				i(181746),	-- Sika Elated PH Reward
 				i(181748),	-- Sika Happy PH Reward
 				i(181747),	-- Sika Very Happy PH Reward
