@@ -149,7 +149,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(211424, {	-- Dreaming Banner of the Aspects (TOY!)
 				["description"] = "Mythic Dungeon International: DF Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 8th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Dreaming Banner of the Aspects to use in-game!\nSign-ups close 29 January 2024 1PM PDT and The Proving Grounds are on 31st January 1PM PDT - 5 February (US) 1PM PDT.\n\nhttps://raider.io/events/mdi-dragonflight-season-3/info",
-				["timeline"] = { "added 10.2.5", "removed 10.2.6" },
+				["timeline"] = { "added 10.2.5", "removed 10.2.5.53162" },
 			}),
 			mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",
