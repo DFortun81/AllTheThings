@@ -1490,7 +1490,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 			},
 		})),
-		n(214861, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Jeremiah Payson <Crunchy Sweets> [Need Alliance Version]
+		n(214861, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Jeremiah Payson <Crunchy Sweets> [Need HORDE Version]
 			["coord"] = { 41.2, 17.5, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
@@ -1498,7 +1498,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		})),
 		n(211812, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Kiera Torres <Lovely Prizes and Heirlooms>
-			["coord"] = { 32.2, 50.4, DUROTAR },
+			["coord"] = { 32.2, 50.4, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				filter(BATTLE_PETS, {
