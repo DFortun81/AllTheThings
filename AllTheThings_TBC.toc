@@ -81,6 +81,7 @@ classic\Settings.lua
 classic\ATT-Classic.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
+# src\UI\World Map Button.lua
 
 # Window Logic Overhaul
 src\UI\Shared Window Logic.lua

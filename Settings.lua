@@ -168,6 +168,7 @@ local TooltipSettingsBase = {
 		["Expand:Difficulty"] = true,
 		["IncludeOriginalSource"] = true,
 		["LootSpecializations"] = true,
+		["WorldMapButton"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
 		["Models"] = true,
@@ -269,9 +270,8 @@ settings.Initialize = function(self)
 	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
-
-	if not app.WorldMap then app.WorldMap = app.CreateWorldMapButton() end
-	app.WorldMap:Show()
+	
+	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
@@ -3952,8 +3952,21 @@ sliderMinimapButtonSize.OnRefresh = function(self)
 	end
 end
 
+
+local checkboxShowWorldMapButton = child:CreateCheckBox(L["WORLDMAP_BUTTON_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("WorldMapButton"))
+end,
+function(self)
+	settings:SetTooltipSetting("WorldMapButton", self:GetChecked())
+	app.SetWorldMapButtonSettings(settings:GetTooltipSetting("WorldMapButton"));
+end)
+checkboxShowWorldMapButton:SetATTTooltip(L["WORLDMAP_BUTTON_CHECKBOX_TOOLTIP"])
+checkboxShowWorldMapButton:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, -8)
+checkboxShowWorldMapButton:SetPoint("LEFT", checkboxShowMinimapButton, "LEFT", 0, 0)
+
 local headerModules = child:CreateHeaderLabel(L["MODULES_LABEL"])
-headerModules:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, -20)
+headerModules:SetPoint("TOP", checkboxShowWorldMapButton, "BOTTOM", 0, -10)
 headerModules:SetPoint("LEFT", headerMinimapButton, "LEFT", 0, 0)
 
 local ChangeSkipCutsceneState = function(self, checked)
