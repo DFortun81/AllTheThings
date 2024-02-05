@@ -2928,7 +2928,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						["timeline"] = { ADDED_9_1_0 },
 					}),
 				-- Miscellaneous!!
-					ig(67414, {	-- Bag of Shiny Things
+					i(67414, {	-- Bag of Shiny Things
+						["modID"] = 0,
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
 						["g"] = {
 							i(44983),	-- Strand Crawler (PET!)
