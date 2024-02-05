@@ -991,6 +991,51 @@ local function GenerateColorizedSourcePath(group)
 end]]--
 --[[
 -- CRIEVE NOTE: This was from classic. Probably don't need this, really.
+-- CRIEVE NOTE 2: This might have inspired an idea where we replace abbreviations with something like this on the object itself. Seeing "H Deadmines" instead of the achievement was kinda weird when using abbrevs.
+local achievementTooltipText = {
+	[17213] = "DPA",	-- Defense Protocol Alpha: Utgarde Keep
+	[17283] = "DPA",	-- Defense Protocol Alpha: The Nexus
+	[17285] = "DPA",	-- Defense Protocol Alpha: Azjol-Nerub
+	[17291] = "DPA",	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
+	[17292] = "DPA",	-- Defense Protocol Alpha: Drak'Tharon Keep
+	[17293] = "DPA",	-- Defense Protocol Alpha: The Violet Hold
+	[17295] = "DPA",	-- Defense Protocol Alpha: Gundrak
+	[17297] = "DPA",	-- Defense Protocol Alpha: Halls of Stone
+	[17299] = "DPA",	-- Defense Protocol Alpha: Halls of Lightning
+	[17300] = "DPA",	-- Defense Protocol Alpha: The Oculus
+	[17301] = "DPA",	-- Defense Protocol Alpha: Utgarde Pinnacle
+	[17302] = "DPA",	-- Defense Protocol Alpha: The Culling of Stratholme
+
+	[18590] = "DPB",	-- Defense Protocol Beta: Utgarde Keep
+	[18591] = "DPB",	-- Defense Protocol Beta: The Nexus
+	[18592] = "DPB",	-- Defense Protocol Beta: Azjol-Nerub
+	[18593] = "DPB",	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
+	[18594] = "DPB",	-- Defense Protocol Beta: Drak'Tharon Keep
+	[18595] = "DPB",	-- Defense Protocol Beta: The Violet Hold
+	[18596] = "DPB",	-- Defense Protocol Beta: Gundrak
+	[18597] = "DPB",	-- Defense Protocol Beta: Halls of Stone
+	[18598] = "DPB",	-- Defense Protocol Beta: Halls of Lightning
+	[18599] = "DPB",	-- Defense Protocol Beta: The Oculus
+	[18600] = "DPB",	-- Defense Protocol Beta: Utgarde Pinnacle
+	[18601] = "DPB",	-- Defense Protocol Beta: The Culling of Stratholme
+	[18677] = "DPB",	-- Defense Protocol Beta: Trial of the Champion (A)
+	[18678] = "DPB",	-- Defense Protocol Beta: Trial of the Champion (H)
+
+	[19427] = "DPG",	-- Defense Protocol Gamma: Utgarde Keep
+	[19428] = "DPG",	-- Defense Protocol Gamma: The Nexus
+	[19429] = "DPG",	-- Defense Protocol Gamma: Azjol-Nerub
+	[19430] = "DPG",	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
+	[19431] = "DPG",	-- Defense Protocol Gamma: Drak'Tharon Keep
+	[19432] = "DPG",	-- Defense Protocol Gamma: The Violet Hold
+	[19433] = "DPG",	-- Defense Protocol Gamma: Gundrak
+	[19434] = "DPG",	-- Defense Protocol Gamma: Halls of Stone
+	[19435] = "DPG",	-- Defense Protocol Gamma: Halls of Lightning
+	[19436] = "DPG",	-- Defense Protocol Gamma: The Oculus
+	[19437] = "DPG",	-- Defense Protocol Gamma: Utgarde Pinnacle
+	[19438] = "DPG",	-- Defense Protocol Gamma: The Culling of Stratholme
+	[19426] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (A)
+	[19425] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (H)
+};
 local function GenerateSourcePath(group, l, skip)
 	if group then
 		local parent = group.sourceParent or group.parent;
