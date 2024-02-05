@@ -342,6 +342,31 @@ local HookableTooltips = {
 	["NotGameTooltip0123"]=1,
 };
 
+-- Allows for toggling whether the skip should be used or not; call with no value to return the current value
+local CurrentSkipLevel = 0;	-- Whether to skip certain cost items
+app.GetSkipLevel = function()
+	return CurrentSkipLevel;
+end
+app.SetSkipLevel = function(level)
+	-- print("SkipPurchases exclusion",level)
+	CurrentSkipLevel = level or 0;
+end
+
+-- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
+local SkipFillingPurchasesLevelByItemID = {
+	[137642] = 2,	-- Mark of Honor
+	[21100] = 1,	-- Coin of Ancestry
+	[23247] = 1,	-- Burning Blossom
+	[49927] = 1,	-- Love Token
+}
+app.ShouldFillPurchasesForItemID = function(itemID)
+	local reqSkipLevel = itemID and SkipFillingPurchasesLevelByItemID[itemID];
+	if reqSkipLevel and CurrentSkipLevel < reqSkipLevel then
+		return false;
+	end
+	return true;
+end
+
 -- Shared Tooltip Functions
 local function CanAttachTooltips()
 	-- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
@@ -411,14 +436,14 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",search,...)
-	app.SetSkipPurchases(1);
+	app.SetSkipLevel(1);
 	local status, group = pcall(GetCachedSearchResults, search, method, ...)
 	if status then
 		AttachTooltipRawSearchResults(self, lineNumber, group)
 	else
 		app.PrintDebug("pcall tooltip failed",group)
 	end
-	app.SetSkipPurchases(0);
+	app.SetSkipLevel(0);
 end
 
 -- Battle Pet Tooltips

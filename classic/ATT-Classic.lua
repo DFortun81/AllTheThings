@@ -6600,9 +6600,6 @@ app.events.UPDATE_INSTANCE_INFO = function()
 end
 app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 
--- Tooltip Functions
-app.SetSkipPurchases = function(level) end	-- Do nothing, for now.
-
 -- TomTom Support
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
@@ -6886,9 +6883,9 @@ end);
 			-- print(type,paramA,paramB)
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;
-				--app.SetSkipPurchases(2);
+				app.SetSkipLevel(2);
 				local group = app.GetCachedSearchResults(cmd, app.SearchForLink, cmd);
-				--app.SetSkipPurchases(0);
+				app.SetSkipLevel(0);
 				app:CreateMiniListForGroup(group);
 				return true;
 			elseif data1 == "dialog" then

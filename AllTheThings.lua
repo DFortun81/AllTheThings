@@ -3754,7 +3754,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 
 		-- Special cases
 		-- Don't show nested criteria of achievements (unless loading popout/row content)
-		if group.g and group.key == "achievementID" and app.SetSkipPurchases() < 2 then
+		if group.g and group.key == "achievementID" and app.GetSkipLevel() < 2 then
 			local noCrits = {};
 			-- print("achieve group",#group.g)
 			for i=1,#group.g do
@@ -4086,23 +4086,7 @@ end	-- Search results Lib
 -- Auto-Expansion logic
 do
 local knownSkills;
--- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
-local SkipPurchases = {
-	[-1] = 0,	-- Whether to skip certain cost items
-	[137642] = 2,	-- Mark of Honor
-	[21100] = 1,	-- Coin of Ancestry
-	[23247] = 1,	-- Burning Blossom
-	[49927] = 1,	-- Love Token
-}
--- Allows for toggling whether the SkipPurchases should be used or not; call with no value to return the current value
-app.SetSkipPurchases = function(level)
-	if level then
-		-- print("SkipPurchases exclusion",level)
-		SkipPurchases[-1] = level;
-	else
-		return SkipPurchases[-1];
-	end
-end
+
 -- Determines searches required for upgrades using this group
 local function DetermineUpgradeGroups(group, FillData)
 	local nextUpgrade = group.nextUpgrade;
@@ -4118,43 +4102,38 @@ end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	local itemID = group.itemID;
-	local reqSkipLevel = itemID and SkipPurchases[itemID];
-	if reqSkipLevel then
-		local curSkipLevel = SkipPurchases[-1];
-		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
-	end
-
-	local collectibles = group.costCollectibles;
-	if collectibles and #collectibles > 0 then
-		-- if app.Debugging then
-		-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
-		-- 		["OnUpdate"] = app.AlwaysShowUpdate,
-		-- 		["skipFill"] = true,
-		-- 		["g"] = {},
-		-- 	})
-		-- 	NestObjects(sourceGroup, collectibles, true)
-		-- 	NestObject(group, sourceGroup, nil, 1)
-		-- end
-		local groupHash = group.hash;
-		-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
-		local groups = {};
-		local clone;
-		for _,o in ipairs(collectibles) do
-			if o.hash ~= groupHash then
-				-- app.PrintDebug("Purchase @",groupHash,"=>",o.hash)
-				clone = CreateObject(o);
-				groups[#groups + 1] = clone
+	if app.ShouldFillPurchasesForItemID(group.itemID) then
+		local collectibles = group.costCollectibles;
+		if collectibles and #collectibles > 0 then
+			-- if app.Debugging then
+			-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
+			-- 		["OnUpdate"] = app.AlwaysShowUpdate,
+			-- 		["skipFill"] = true,
+			-- 		["g"] = {},
+			-- 	})
+			-- 	NestObjects(sourceGroup, collectibles, true)
+			-- 	NestObject(group, sourceGroup, nil, 1)
+			-- end
+			local groupHash = group.hash;
+			-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
+			local groups = {};
+			local clone;
+			for _,o in ipairs(collectibles) do
+				if o.hash ~= groupHash then
+					-- app.PrintDebug("Purchase @",groupHash,"=>",o.hash)
+					clone = CreateObject(o);
+					groups[#groups + 1] = clone
+				end
 			end
+			-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
+			-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
+			if #groups > 0 then
+				group.collectibleAsCost = false;
+				group.filledCost = true;
+				group.costTotal = nil;
+			end
+			return groups;
 		end
-		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
-		-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
-		if #groups > 0 then
-			group.collectibleAsCost = false;
-			group.filledCost = true;
-			group.costTotal = nil;
-		end
-		return groups;
 	end
 end
 local function DetermineCraftedGroups(group, FillData)
@@ -10797,9 +10776,9 @@ function app:CreateMiniListForGroup(group)
 			local key = group.key;
 			if not group.g and not group.criteriaID and app.ThingKeys[key] then
 				local cmd = group.link or key .. ":" .. group[key];
-				app.SetSkipPurchases(2);
+				app.SetSkipLevel(2);
 				local groupSearch = GetCachedSearchResults(cmd, SearchForLink, cmd);
-				app.SetSkipPurchases(0);
+				app.SetSkipLevel(0);
 
 				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
 				-- app.PrintTable(groupSearch)
@@ -10826,9 +10805,9 @@ function app:CreateMiniListForGroup(group)
 				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
 				-- app.PrintTable(group.g)
 			else
-				app.SetSkipPurchases(2);
+				app.SetSkipLevel(2);
 				app.FillGroups(group);
-				app.SetSkipPurchases(0);
+				app.SetSkipLevel(0);
 			end
 		end
 
@@ -19225,9 +19204,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		end
 
 		-- Search for the Link in the database
-		app.SetSkipPurchases(2);
+		app.SetSkipLevel(2);
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-		app.SetSkipPurchases(0);
+		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
 			app:CreateMiniListForGroup(group);
@@ -19303,9 +19282,9 @@ end
 			-- print(type,paramA,paramB)
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;
-				app.SetSkipPurchases(2);
+				app.SetSkipLevel(2);
 				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-				app.SetSkipPurchases(0);
+				app.SetSkipLevel(0);
 				app:CreateMiniListForGroup(group);
 				return true;
 			elseif data1 == "dialog" then
