@@ -1452,6 +1452,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.6, 35.3, MOONGLADE },
+			-- #if AFTER 10.2.5
+			["sym"] = {{"select","itemID",
+				211868,	-- Winding Slitherdrake: Lunar Festival Armor
+			}},
+			-- #endif
 			["groups"] = {
 				i(74611, {	-- Festival Lantern (PET!)
 					["timeline"] = { "added 4.3.0.15005" },
@@ -1506,10 +1511,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["cost"] = { { "i", 21100, 1 } },	-- 1x Coin of Ancestry
 				}),
 				i(21713),	-- Elune's Candle
-				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor
-					["timeline"] = { ADDED_10_2_5 },
-					["cost"] = 500000000,	-- 50k
-				}),
 			},
 		}),
 	}),
