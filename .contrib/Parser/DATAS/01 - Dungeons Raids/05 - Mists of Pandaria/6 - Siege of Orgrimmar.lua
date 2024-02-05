@@ -1960,7 +1960,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					-- i(113218),	-- Seebo's Sainted Touch
 					-- i(113220),	-- Crimson Gauntlets of Death [Remarking this unconfirmed due to discussion in schrodingers-loot on 2023-08-26 with Carbion, Ony, Emerno]
 					-- i(113221),	-- Siid's Silent Stranglers
-					-- i(113222),	-- Keengrip Arrowpullers [Remarking this unconfirmed due to discussion in schrodingers-loot on 2023-08-26 with Carbion, Ony, Emerno]
 					-- i(113227),	-- Marco's Crackling Gloves
 					-- i(113228),	-- Gauntlets of Discarded Time
 					-- i(113219),	-- Romy's Reliable Grips

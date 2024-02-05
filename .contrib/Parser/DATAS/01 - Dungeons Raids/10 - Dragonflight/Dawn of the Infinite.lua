@@ -234,13 +234,17 @@ local QUANTUM_GROUP = sharedData({
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
 			ig(114384),	-- Gauntlets of Falling Leaves		(NYI)
 			ig(3981),	-- Strapped Gloves					(NYI)
-
+			
+			ig(20661),	-- Abyssal Leather Gloves			(Removed)
 			ig(134730),	-- Frosthide Gloves					(Removed)
 			ig(134675),	-- Rookie's Gloves					(Removed)
 			ig(134793),	-- Ruinous Gloves					(Removed)
 		}),
 		filter(MAIL, {
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
+			ig(113222, {	-- Keengrip Arrowpullers 		(NYI)
+				["modID"] = 4,	-- should be sourceID 62173	-- Might need modID from pre 6.0 LFR (0?)
+			}),
 			ig(114261),	-- Leafscale Gauntlets				(NYI)
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
@@ -286,6 +290,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(23173),	-- Abomination Skin Leggings		(Removed)
 			ig(134671),	-- Auxiliary's Trousers				(Removed)
 			ig(134695),	-- Cascading Trousers				(Removed)
+			ig(15794),	-- Ripped Ogre Loincloth			(Removed)
 			ig(134752),	-- Veiled Leggings					(Removed)
 
 			ig(105757),	-- Shipley's Shady Silks			(Ordos)
@@ -404,6 +409,7 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Focus/Off-hand completed.",
 			["collectible"] = false,
 		}),
+		ig(153641),	-- Manual of Elemental Enchancement		(NYI)
 		ig(161932),	-- Manual of Elemental Enchancement		(NYI)
 		ig(18316),	-- Obsidian Bauble						(NYI)
 

@@ -397,7 +397,6 @@ root(ROOTS.Unsorted, {
 				i(154975),	-- Scalebeast Claws
 				i(154977),	-- Mojo-Drainer's Staff
 				i(154978),	-- Dinomancy Cudgel
-				i(153641),	-- Manual of Elemental Enchancement
 				i(154986),	-- Devilsaur Voodoo Figure
 				i(154974),	-- Tiki-Thumper
 				i(155582),	-- Loa-Claimer's Warglaives
