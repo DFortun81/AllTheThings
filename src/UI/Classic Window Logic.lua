@@ -2312,6 +2312,26 @@ function app:GetWindow(suffix, settings)
 			window:RegisterEvent("QUEST_TURNED_IN");
 			window:RegisterEvent("QUEST_LOG_UPDATE");
 		end
+		if not settings.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
+			-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
+			local WasHiddenByPetBattle;
+			handlers.PET_BATTLE_OPENING_START = function()
+				if window:IsVisible() then
+					WasHiddenByPetBattle = true;
+					window:Hide();
+				else
+					WasHiddenByPetBattle = nil;
+				end
+			end
+			handlers.PET_BATTLE_CLOSE = function()
+				if WasHiddenByPetBattle then
+					WasHiddenByPetBattle = nil;
+					window:Show();
+				end
+			end
+			window:RegisterEvent("PET_BATTLE_OPENING_START");
+			window:RegisterEvent("PET_BATTLE_CLOSE");
+		end
 		if settings.OnInit then
 			settings.OnInit(window, handlers);
 		end

@@ -2970,6 +2970,10 @@ end	-- Symlink Lib
 -- Search Results Lib
 local searchCache = {};
 app.searchCache = searchCache;
+app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
+app.events.PLAYER_DIFFICULTY_CHANGED = function()
+	wipe(searchCache);
+end
 local GetCachedSearchResults;
 do
 local function GetPatchString(patch, color)
@@ -13159,6 +13163,36 @@ function app:GetWindow(suffix, parent, onUpdate)
 	end
 	return window;
 end
+
+-- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
+app.events.PET_BATTLE_OPENING_START = function(...)
+	-- check for open ATT windows
+	for _,window in pairs(app.Windows) do
+		if window:IsVisible() then
+			if not app.PetBattleClosed then app.PetBattleClosed = {}; end
+			tinsert(app.PetBattleClosed, window);
+			window:Toggle();
+		end
+	end
+end
+-- this fires twice when pet battle ends
+app.events.PET_BATTLE_CLOSE = function(...)
+	if app.PetBattleClosed then
+		for _,window in ipairs(app.PetBattleClosed) do
+			-- special open for Current Instance list
+			if window.Suffix == "CurrentInstance" then
+				DelayedCallback(app.ToggleMiniListForCurrentZone, 1);
+			else
+				window:Toggle();
+			end
+		end
+		app.PetBattleClosed = nil;
+	end
+end
+app.AddEventHandler("OnStartup", function()
+	app:RegisterEvent("PET_BATTLE_OPENING_START")
+	app:RegisterEvent("PET_BATTLE_CLOSE")
+end);
 end)();
 
 do	-- Main Data
@@ -18872,11 +18906,9 @@ app.Startup = function()
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
-	app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
+	
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-	app:RegisterEvent("PET_BATTLE_OPENING_START")
-	app:RegisterEvent("PET_BATTLE_CLOSE")
 
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
@@ -19408,34 +19440,8 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		end
 	end
 end
--- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
-app.events.PET_BATTLE_OPENING_START = function(...)
-	-- check for open ATT windows
-	for _,window in pairs(app.Windows) do
-		if window:IsVisible() then
-			if not app.PetBattleClosed then app.PetBattleClosed = {}; end
-			tinsert(app.PetBattleClosed, window);
-			window:Toggle();
-		end
-	end
-end
--- this fires twice when pet battle ends
-app.events.PET_BATTLE_CLOSE = function(...)
-	if app.PetBattleClosed then
-		for _,window in ipairs(app.PetBattleClosed) do
-			-- special open for Current Instance list
-			if window.Suffix == "CurrentInstance" then
-				DelayedCallback(app.ToggleMiniListForCurrentZone, 1);
-			else
-				window:Toggle();
-			end
-		end
-		app.PetBattleClosed = nil;
-	end
-end
-app.events.PLAYER_DIFFICULTY_CHANGED = function()
-	wipe(searchCache);
-end
+
+
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;
