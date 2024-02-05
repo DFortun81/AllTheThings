@@ -28,7 +28,7 @@ app:GetWindow("Prime", {
 		if cmd and cmd:len() > 0 then
 			-- Search for the Link in the database
 			cmd = cmd:lower();
-			local group = app.GetCachedSearchResults(cmd, app.SearchForLink, cmd);
+			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
 			if group then app:CreateMiniListForGroup(group); end
 			return true;
 		end

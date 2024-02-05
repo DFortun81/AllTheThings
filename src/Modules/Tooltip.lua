@@ -434,13 +434,14 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 
 	self.ATTAttachComplete = not group.working;
 end
-local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
-	-- app.PrintDebug("AttachTooltipSearchResults",search,...)
+local function AttachTooltipSearchResults(self, lineNumber, method, ...)
+	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
-	local status, group = pcall(GetCachedSearchResults, search, method, ...)
+	local status, group = pcall(GetCachedSearchResults, method, ...)
 	if status then
 		AttachTooltipRawSearchResults(self, lineNumber, group)
 	else
+		print(status, group);
 		app.PrintDebug("pcall tooltip failed",group)
 	end
 	app.SetSkipLevel(0);
@@ -549,7 +550,7 @@ if TooltipDataProcessor then
 
 			local encounterID = owner.encounterID;
 			if encounterID and not owner.itemID then
-				AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
+				AttachTooltipSearchResults(self, 1, SearchForField, "encounterID", tonumber(encounterID));
 				return true;
 			end
 		end
@@ -639,14 +640,14 @@ if TooltipDataProcessor then
 						if showSpawnTime then self:AddDoubleLine("Spawned", app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
 					end
 				end
-				AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
+				AttachTooltipSearchResults(self, 1, SearchForField, "creatureID", tonumber(npc_id));
 			end
 			return true;
 		end
 
 		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 		if self.AllTheThingsProcessing and spellID then
-			AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+			AttachTooltipSearchResults(self, 1, SearchForField, "spellID", spellID);
 			return true;
 		end
 
@@ -654,7 +655,7 @@ if TooltipDataProcessor then
 		if self.AllTheThingsProcessing and link then
 			-- app.PrintDebug("Search Item",link,id,ttId);
 			if id == 137642 then -- skip Mark of Honor for now
-				AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
+				AttachTooltipSearchResults(self, 1, app.EmptyFunction, "itemID", 137642);
 				return true;
 			else
 				local itemID = GetItemInfoInstant(link);
@@ -664,7 +665,7 @@ if TooltipDataProcessor then
 					-- app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
 					-- fallout to the generalized Item search below
 				else
-					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+					AttachTooltipSearchResults(self, 1, SearchForLink, link);
 					return true;
 				end
 			end
@@ -704,7 +705,7 @@ if TooltipDataProcessor then
 			end
 			if knownSearchField and ttId then
 				-- app.PrintDebug("TT Search",knownSearchField,ttId)
-				AttachTooltipSearchResults(self, 1, knownSearchField..":"..ttId, SearchForField, knownSearchField, tonumber(ttId));
+				AttachTooltipSearchResults(self, 1, SearchForField, knownSearchField, tonumber(ttId));
 				return true;
 			end
 		end
@@ -785,7 +786,7 @@ else
 							if method then method(self, target); end
 						elseif type == "Creature" or type == "Vehicle" then
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
-							AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
+							AttachTooltipSearchResults(self, 1, SearchForField, "creatureID", tonumber(npcID));
 						end
 
 						return true;
@@ -799,7 +800,7 @@ else
 						-- Actionbars, don't want that.
 						return true;
 					end
-					AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+					AttachTooltipSearchResults(self, 1, SearchForField, "spellID", spellID);
 					self:Show();
 					if owner and owner.ActiveTexture then
 						self.AllTheThingsProcessing = nil;
@@ -819,7 +820,7 @@ else
 								-- Also the ToyBox UI is broken and returns the wrong item information when you look at any other item's tooltip before looking at the toybox.
 								local leftSide = _G[self:GetName() .. "TextLeft1"]:GetText();
 								if itemName ~= leftSide then link = select(2, GetItemInfo(leftSide)); end
-								AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+								AttachTooltipSearchResults(self, 1, SearchForLink, link);
 								self:Show();
 								return true;
 							end
@@ -827,7 +828,7 @@ else
 					end
 
 					-- Normal item tooltip, not on the Toy Box.
-					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+					AttachTooltipSearchResults(self, 1, SearchForLink, link);
 					return true;
 				end
 
@@ -836,7 +837,7 @@ else
 
 				local objectID = GetBestObjectIDForName(_G[self:GetName() .. "TextLeft1"]:GetText());
 				if objectID then
-					AttachTooltipSearchResults(self, 1, "objectID:" .. objectID, SearchForField, "objectID", objectID);
+					AttachTooltipSearchResults(self, 1, SearchForField, "objectID", objectID);
 					self:Show();
 					return true;
 				end
@@ -877,10 +878,10 @@ else
 				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
 				if itemID then
 					if spec == "item" then
-						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						AttachTooltipSearchResults(self, 1, SearchForField, "itemID", itemID);
 						self:Show();
 					elseif spec == "currency" then
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+						AttachTooltipSearchResults(self, 1, SearchForField, "currencyID", itemID);
 						self:Show();
 					end
 				end
@@ -897,10 +898,10 @@ else
 				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
 				if itemID then
 					if spec == "item" then
-						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						AttachTooltipSearchResults(self, 1, SearchForField, "itemID", itemID);
 						self:Show();
 					elseif spec == "currency" then
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+						AttachTooltipSearchResults(self, 1, SearchForField, "currencyID", itemID);
 						self:Show();
 					end
 				end
@@ -914,7 +915,7 @@ else
 			GameTooltip_SetCurrencyByID(self, currencyID, count);
 		end
 		if CanAttachTooltips() then
-			AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+			AttachTooltipSearchResults(self, 1, SearchForField, "currencyID", currencyID);
 			if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 			self:Show();
 		end
@@ -928,7 +929,7 @@ else
 				-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
 				local currencyID = select(12, GetCurrencyListInfo(tokenID));
 				if currencyID then
-					AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+					AttachTooltipSearchResults(self, 1, SearchForField, "currencyID", currencyID);
 					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 					self:Show();
 				end

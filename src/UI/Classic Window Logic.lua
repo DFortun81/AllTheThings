@@ -787,7 +787,7 @@ local function RowOnEnter(self)
 							end
 						end
 					end
-					AttachTooltipSearchResults(GameTooltip, 1, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
+					AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "itemID", reference.itemID);
 				end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
@@ -796,7 +796,7 @@ local function RowOnEnter(self)
 				if link then
 					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
 					--local spellID = reference.spellID;
-					--if spellID then AttachTooltipSearchResults(GameTooltip, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID); end
+					--if spellID then AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "spellID", spellID); end
 				end
 			end
 		end
@@ -1107,7 +1107,7 @@ local function RowOnEnter(self)
 		end
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
-			AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
 		end
 		if reference.questID and app.Settings:GetTooltipSetting("questID") then GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID)); end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
@@ -2678,7 +2678,7 @@ local function OnInitForPopout(self, group)
 		group.visible = true;
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
-			group = app.GetCachedSearchResults(cmd, app.SearchForLink, cmd);
+			group = app.GetCachedSearchResults(app.SearchForLink, cmd);
 		end
 		self.data = group;
 	end
@@ -2966,7 +2966,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 
 		-- Search for the Link in the database
 		local cmd = key .. ":" .. id;
-		local ref = app.GetCachedSearchResults(cmd, app.SearchForLink, cmd);
+		local ref = app.GetCachedSearchResults(app.SearchForLink, cmd);
 		if ref then
 			app:CreateMiniListForGroup(ref);
 			return;

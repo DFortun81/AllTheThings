@@ -953,16 +953,14 @@ app.WipeSearchCache = function()
 	wipe(searchCache);
 end
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
-local function GetCachedSearchResults(search, method, paramA, paramB, ...)
+local function GetCachedSearchResults(method, paramA, paramB, ...)
+	local search = (paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA;
 	if IsRetrieving(search) then return; end
-	
-	-- If we have a search result already, return it.
 	local cache = searchCache[search];
 	if cache then return cache; end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
-	if not paramA then paramA = ""; end
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB, ...);
@@ -6836,7 +6834,7 @@ app.AddEventHandler("OnReady", function()
 									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(o.achievementID));
 								else
 									if key == "npcID" then key = "creatureID"; end
-									AttachTooltipSearchResults(tooltip, 1, key .. ":" .. o[o.key], SearchForField, key, o[o.key], line);
+									AttachTooltipSearchResults(tooltip, line, SearchForField, key, o[o.key]);
 								end
 							end
 							tooltip:Show();
@@ -6885,7 +6883,7 @@ end);
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;
 				app.SetSkipLevel(2);
-				local group = app.GetCachedSearchResults(cmd, app.SearchForLink, cmd);
+				local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
 				app.SetSkipLevel(0);
 				app:CreateMiniListForGroup(group);
 				return true;

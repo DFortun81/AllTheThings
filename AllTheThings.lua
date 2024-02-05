@@ -3066,11 +3066,12 @@ local TooltipSourceFields = {
 	"npcID",
 	"questID"
 };
-GetCachedSearchResults = function(search, method, paramA, paramB, ...)
-	-- app.PrintDebug("GetCachedSearchResults",search,method,paramA,paramB,...)
+GetCachedSearchResults = function(method, paramA, paramB, ...)
+	local search = (paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA;
 	if IsRetrieving(search) then return; end
 	local cache = searchCache[search];
 	if cache then return cache; end
+	-- app.PrintDebug("GetCachedSearchResults",method,paramA,paramB,...)
 
 	-- This method can be called nested, and some logic should only process for the initial call
 	local topLevelSearch;
@@ -5513,7 +5514,7 @@ app.AddEventHandler("OnReady", function()
 									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(group.achievementID));
 								else
 									if key == "npcID" then key = "creatureID"; end
-									AttachTooltipSearchResults(tooltip, line, key .. ":" .. o[o.key], SearchForField, key, o[o.key], line);
+									AttachTooltipSearchResults(tooltip, line, SearchForField, key, o[o.key]);
 								end
 							end
 							tooltip:Show();
@@ -10735,7 +10736,7 @@ function app:CreateMiniListForGroup(group)
 			if not group.g and not group.criteriaID and app.ThingKeys[key] then
 				local cmd = group.link or key .. ":" .. group[key];
 				app.SetSkipLevel(2);
-				local groupSearch = GetCachedSearchResults(cmd, SearchForLink, cmd);
+				local groupSearch = GetCachedSearchResults(SearchForLink, cmd);
 				app.SetSkipLevel(0);
 
 				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
@@ -10780,7 +10781,7 @@ function app:CreateMiniListForGroup(group)
 		--	-- make a search for this group if it is an item/currency and not already a container for things
 		-- 	if not group.g and (group.itemID or group.currencyID) then
 		-- 		local cmd = group.key .. ":" .. group[group.key];
-		-- 		group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+		-- 		group = GetCachedSearchResults(SearchForLink, cmd);
 		-- 	else
 		-- 		group = CreateObject(group);
 		-- 	end
@@ -11945,22 +11946,22 @@ RowOnEnter = function (self)
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
 			elseif reference.azeriteEssenceID then
-				AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
 			elseif reference.speciesID then
-				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "speciesID", reference.speciesID);
 			elseif reference.objectID then
-				AttachTooltipSearchResults(GameTooltip, 1, "objectID:" .. reference.objectID, SearchForField, "objectID", reference.objectID);
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "objectID", reference.objectID);
 			elseif reference.titleID then
-				AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
 			elseif refQuestID then
-				AttachTooltipSearchResults(GameTooltip, 1, "quest:"..refQuestID, SearchForField, "questID", refQuestID);
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "questID", refQuestID);
 			elseif reference.flightPathID then
-				AttachTooltipSearchResults(GameTooltip, 1, "fp:"..reference.flightPathID, SearchForField, "flightPathID", reference.flightPathID);
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "flightPathID", reference.flightPathID);
 			elseif reference.achievementID then
 				if reference.criteriaID then
-					-- AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
+					-- AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
 				else
-					AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
+					AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID);
 				end
 			else
 				-- app.PrintDebug("No Search Data",reference.hash)
@@ -19191,7 +19192,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 
 		-- Search for the Link in the database
 		app.SetSkipLevel(2);
-		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+		local group = GetCachedSearchResults(SearchForLink, cmd);
 		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
@@ -19269,7 +19270,7 @@ end
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;
 				app.SetSkipLevel(2);
-				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+				local group = GetCachedSearchResults(SearchForLink, cmd);
 				app.SetSkipLevel(0);
 				app:CreateMiniListForGroup(group);
 				return true;
