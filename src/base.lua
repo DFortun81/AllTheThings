@@ -281,6 +281,13 @@ app.SetScript = function(self, ...)
 	end
 end
 
+-- Simple Events
+app:RegisterEvent("PLAYER_LEVEL_UP");
+app.events.PLAYER_LEVEL_UP = function(newLevel)
+	app.Level = newLevel;
+	app.HandleEvent("OnPlayerLevelUp");
+end
+
 -- Whether ATT should ignore saving data experienced during the play session
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<

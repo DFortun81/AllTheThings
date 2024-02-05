@@ -6928,7 +6928,6 @@ end)();
 
 -- Startup Event
 app:RegisterEvent("ADDON_LOADED");
-app:RegisterEvent("PLAYER_LEVEL_UP");
 app:RegisterEvent("VARIABLES_LOADED");
 app.events.ADDON_LOADED = function(addonName)
 	-- Only execute for this addon.
@@ -7007,6 +7006,9 @@ app.events.ADDON_LOADED = function(addonName)
 	end
 	currentCharacter.lastPlayed = now;
 	app.CurrentCharacter = currentCharacter;
+	app.AddEventHandler("OnPlayerLevelUp", function()
+		currentCharacter.lvl = app.Level;
+	end);
 
 	-- Account Wide Data Storage
 	local accountWideData = ATTAccountWideData;
@@ -7179,12 +7181,7 @@ app.events.ADDON_LOADED = function(addonName)
 	-- Tooltip Settings
 	app.Settings:Initialize();
 end
-app.events.PLAYER_LEVEL_UP = function(newLevel)
-	app.Level = newLevel;
-	
-	-- Execute the OnPlayerLevelUp handlers.
-	app.HandleEvent("OnPlayerLevelUp");
-end
+
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()
 		coroutine.yield();

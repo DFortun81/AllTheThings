@@ -18749,6 +18749,9 @@ app.Startup = function()
 	end
 	currentCharacter.lastPlayed = now;
 	app.CurrentCharacter = currentCharacter;
+	app.AddEventHandler("OnPlayerLevelUp", function()
+		currentCharacter.lvl = app.Level;
+	end);
 
 	-- Account Wide Data Storage
 	ATTAccountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData", true);
@@ -19135,7 +19138,6 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("HEIRLOOMS_UPDATED");
 	app:RegisterEvent("ARTIFACT_UPDATE");
 	app:RegisterEvent("TOYS_UPDATED");
-	app:RegisterEvent("PLAYER_LEVEL_UP");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
 	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
 	app:RegisterEvent("VIGNETTES_UPDATED");
@@ -19455,13 +19457,6 @@ app.AddonLoadedTriggers = {
 app.events.ADDON_LOADED = function(addonName)
 	local addonTrigger = app.AddonLoadedTriggers[addonName];
 	if addonTrigger then addonTrigger(); end
-end
-app.events.PLAYER_LEVEL_UP = function(newLevel)
-	-- print("PLAYER_LEVEL_UP")
-	app.Level = newLevel;
-
-	-- Execute the OnPlayerLevelUp handlers.
-	app.HandleEvent("OnPlayerLevelUp")
 end
 
 app.events.SKILL_LINES_CHANGED = function()
