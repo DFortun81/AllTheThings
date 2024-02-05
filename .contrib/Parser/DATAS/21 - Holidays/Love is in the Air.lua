@@ -21,6 +21,7 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 		-- #endif
 	},
 });
+local LOVE_TOKEN = 49927;
 local BOUQUET_RED = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses
 local BOUQUET_EBON = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(44731, {	-- Bouquet of Ebon Roses
 	["timeline"] = { "added 3.0.3.9138" },
@@ -133,7 +134,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		ach(260, {	-- Charming
 			["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
 			["cost"] = {{ "i", 49916, 12 }},	-- Lovely Charm Bracelet
-			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_5 },
 		}),
 		ach(1695, {	-- Dangerous Love
 			["sourceQuests"] = {
@@ -182,7 +183,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 46.6, 48.4, IRONFORGE },
-			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(1280, {	-- Flirt With Disaster [Horde]
@@ -194,7 +195,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 67.6, 43.8, UNDERCITY },
-			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
 		}),
 		ach(1704, {	-- I Pitied The Fool
@@ -251,7 +252,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1697, {	-- Nation of Adoration [Alliance]
-			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				crit(12838, {	-- A Gift for the High Priestess of Elune
@@ -269,7 +270,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		ach(1698, {	-- Nation of Adoration [Horde]
-			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				crit(12842, {	-- A Gift for the Warchief / A Gift for the High Overlord/ A Gift for the Warchief's Advisor
@@ -295,6 +296,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(19400, {	-- Support Your Local Artisans
+			["description"] = "You can donate once per day with a maximum of 10.000 gold",
+			["providers"] = {
+				{ "n", 213457 },	-- Galvus Ironhammer <Artisan's Consortium> [A]
+				{ "n", 214508 },	-- Torgando Featherhoof <Artisan's Consortium> [H]
+			},
+			["coords"] = {
+				{ 32.0, 49.8, ELWYNN_FOREST },
+				{ 42.2, 18.2, DUROTAR },
+			},
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 		ach(1702, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Sweet Tooth
@@ -1088,6 +1098,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.3.0" },
 			["races"] = HORDE_ONLY,
 		}),
+		q(78981, {	-- Love is in the Air
+			["qg"] = 215296,	-- Aurora Vabsley
+			["coord"] = { 54.3, 62.7, VALDRAKKEN },
+			["isBreadcrumb"] = true,
+			["timeline"] = { ADDED_10_2_5 },
+		}),
 		q(24792, {	-- Man on the Inside (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
@@ -1382,21 +1398,209 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #if AFTER 3.3.2.11403
 	n(VENDORS, {
-		-- SORT ME --
-		i(210973, {	-- Heartseeker Mana Ray (MOUNT!) [Love in the Air]
-			["timeline"] = { "added 10.2.5" },
-		}),
-		i(211864, {	-- Exquisite Love Boat (TOY!) [Love in the Air]
-			["timeline"] = { "added 10.2.5" },
-		}),
-		i(210974, {	-- Eyes For You Only (TOY!) [Love in the Air]
-			["timeline"] = { "added 10.2.5" },
-		}),
-		i(210975, {	-- Date Simulation Modulator (TOY!) [Love in the Air]
-			["timeline"] = { "added 10.2.5" },
-		}),
-		-- SORT ME OVER --
-		n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
+		n(211873, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Bang Sparknozzle <Lovely Novelties>
+			["coord"] = { 33.6, 47.8, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(210318, {	-- Chocolate Bon-Bomb
+					["cost"] = {{"i", LOVE_TOKEN, 1}},
+				}),
+				i(22261, {	-- Love Fool
+					["cost"] = {{"i", LOVE_TOKEN, 10}},
+				}),
+				i(34258, {	-- Lovely Fireworks
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(116648, {	-- Manufactured Love Prism
+					["cost"] = {{"i", LOVE_TOKEN, 40}},
+				}),
+				i(211976, {	-- Pink Brightbursts
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(144339, {	-- Sturdy Love Fool (TOY!)
+					["cost"] = {{"i", LOVE_TOKEN, 100}},
+				}),
+			},
+		})),
+		n(214482, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Grogg Skullsmasher <Fruit Vendor>
+			["coord"] = { 41.2, 18.2, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(210821),	-- Berry Chocolate Tart
+				i(210819),	-- Chocolate-Covered Cherries
+			},
+		})),
+		n(214488, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Hana Breezeheart <Flower Vendor>
+			["coord"] = { 41.4, 17.8, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(211359, {	-- Eternal Black Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211358, {	-- Eternal Blue Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211357, {	-- Eternal Orange Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211355, {	-- Eternal Pink Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211354, {	-- Eternal White Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211352, {	-- Eternal Yellow Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(22218, {	-- Handful of Rose Petals
+					["cost"] = {{"i", LOVE_TOKEN, 2}},
+				}),
+				i(50163, {	-- Lovely Rose
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211363, {	-- Rose of Dreams Fulfilled
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211351, {	-- Rose of Friendship
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211362, {	-- Rose of Independence
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211361, {	-- Rose of Joy
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211360, {	-- Rose of Purity
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211264, {	-- Rose of Romance
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211364, {	-- Rose of Tragedy
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(210965, {	-- Single-Use Bouquet
+					["cost"] = {{"i", LOVE_TOKEN, 1}},
+				}),
+			},
+		})),
+		n(214861, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Jeremiah Payson <Crunchy Sweets> [Need Alliance Version]
+			["coord"] = { 41.2, 17.5, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(211810),	-- Chocolate-Covered Crunchies
+			},
+		})),
+		n(211812, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Kiera Torres <Lovely Prizes and Heirlooms>
+			["coord"] = { 32.2, 50.4, DUROTAR },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				filter(BATTLE_PETS, {
+					i(205156, {	-- Heartseeker Moth (PET!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+					i(116155, {	-- Lovebird Hatchling (PET!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+					i(22235, {	-- Peddlefeet (PET!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+				}),
+				n(HEIRLOOMS, {
+					i(122339, {	-- Ancient Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 200}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(204337, {	-- Awakened Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(167732, {	-- Battle-Hardened Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(187998, {	-- Eternal Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(122341, {	-- Timeworn Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(151615, {	-- Weathered Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+				}),
+				filter(MISC, {
+					i(21813, {	-- Bag of Heart Candies
+						["cost"] = {{"i", LOVE_TOKEN, 2}},
+						["g"] = {
+							i(21816),	-- Heart Candy (Be Mine!)
+							i(21817),	-- Heart Candy (I LOVE YOU)
+							i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
+							i(21819),	-- Heart Candy (All yours.)
+							i(21820),	-- Heart Candy (You're the best!)
+							i(21821),	-- Heart Candy (I'm all yours!)
+							i(21822),	-- Heart Candy (You're mine!)
+							i(21823),	-- Heart Candy (Hot lips!)
+						},
+					}),
+					i(22200, {	-- Silver Shafted Arrow
+						["cost"] = {{"i", LOVE_TOKEN, 5}},
+					}),
+					i(50160, {	-- Lovely Dress Box
+						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["g"] = {
+							ach(1694, {	-- Lovely Luck Is On Your Side
+								["provider"] = { "i", 151770 },	-- Lovely Black Dress
+							}),
+							i(151770),	-- Lovely Black Dress
+							i(151768),	-- Lovely Blue Dress
+							i(151767),	-- Lovely Purple Dress
+							i(151769),	-- Lovely Red Dress
+						},
+					}),
+					i(50161, {	-- Dinner Suit Box
+						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["g"] = {
+							i(151765),	-- Blue Dinner Suit
+							i(151764),	-- Purple Dinner Suit
+							i(151766),	-- Red Dinner Suit
+						},
+					}),
+				}),
+				filter(MOUNTS, {
+					i(210973, {	-- Heartseeker Mana Ray (MOUNT!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+					i(72146, {	-- Swift Lovebird (MOUNT!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+				}),
+				filter(TOYS, {
+					i(210975, {	-- Date Simulation Modulator (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 100}},
+					}),
+					i(210974, {	-- Eyes For You Only (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+					i(211864, {	-- Exquisite Love Boat (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+					i(142341, {	-- Love Boat (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+					i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 150}},
+					}),
+					i(34480, {	-- Romantic Picnic Basket (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 10}},
+					}),
+				}),
+			},
+		})),
+		n(37674, bubbleDownSelf({ ["timeline"] = { "added 3.3.2.11403", REMOVED_10_2_5 } }, {	-- Lovely Merchant <Crown Chemical Co.>
 			["coords"] = {
 				{ 45.2, 57.6, DARNASSUS },
 				{ 33.8, 66.6, IRONFORGE },
@@ -1407,7 +1611,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ 43.6, 53.6, THUNDER_BLUFF },
 				{ 66.0, 38.6, UNDERCITY },
 			},
-			["timeline"] = { "added 3.3.2.11403" },
 			["groups"] = {
 				i(122339, {	-- Ancient Heirloom Scabbard
 					["cost"] = { { "i", 49927, 200 } },	-- 200x Love Token
@@ -1600,7 +1803,254 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", 49916, 1 } },	-- 1x Lovely Charm Bracelet
 				}),
 			},
-		}),
+		})),
+		n(214481, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Lythianne Morningspear <Lovely Prizes and Heirlooms>
+			["coord"] = { 41.9, 17.3, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				filter(BATTLE_PETS, {
+					i(205156, {	-- Heartseeker Moth (PET!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+					i(116155, {	-- Lovebird Hatchling (PET!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+					i(22235, {	-- Peddlefeet (PET!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+				}),
+				n(HEIRLOOMS, {
+					i(122339, {	-- Ancient Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 200}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(204337, {	-- Awakened Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(167732, {	-- Battle-Hardened Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(187998, {	-- Eternal Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(122341, {	-- Timeworn Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+					i(151615, {	-- Weathered Heirloom Scabbard
+						["cost"] = {{"i", LOVE_TOKEN, 450}},
+						["sym"] = {{"fill"}},	-- simply fill this item
+					}),
+				}),
+				filter(MISC, {
+					i(21813, {	-- Bag of Heart Candies
+						["cost"] = {{"i", LOVE_TOKEN, 2}},
+						["g"] = {
+							i(21816),	-- Heart Candy (Be Mine!)
+							i(21817),	-- Heart Candy (I LOVE YOU)
+							i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
+							i(21819),	-- Heart Candy (All yours.)
+							i(21820),	-- Heart Candy (You're the best!)
+							i(21821),	-- Heart Candy (I'm all yours!)
+							i(21822),	-- Heart Candy (You're mine!)
+							i(21823),	-- Heart Candy (Hot lips!)
+						},
+					}),
+					i(22200, {	-- Silver Shafted Arrow
+						["cost"] = {{"i", LOVE_TOKEN, 5}},
+					}),
+					i(50160, {	-- Lovely Dress Box
+						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["g"] = {
+							ach(1694, {	-- Lovely Luck Is On Your Side
+								["provider"] = { "i", 151770 },	-- Lovely Black Dress
+							}),
+							i(151770),	-- Lovely Black Dress
+							i(151768),	-- Lovely Blue Dress
+							i(151767),	-- Lovely Purple Dress
+							i(151769),	-- Lovely Red Dress
+						},
+					}),
+					i(50161, {	-- Dinner Suit Box
+						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["g"] = {
+							i(151765),	-- Blue Dinner Suit
+							i(151764),	-- Purple Dinner Suit
+							i(151766),	-- Red Dinner Suit
+						},
+					}),
+				}),
+				filter(MOUNTS, {
+					i(210973, {	-- Heartseeker Mana Ray (MOUNT!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+					i(72146, {	-- Swift Lovebird (MOUNT!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+				}),
+				filter(TOYS, {
+					i(210975, {	-- Date Simulation Modulator (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 100}},
+					}),
+					i(210974, {	-- Eyes For You Only (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+					i(211864, {	-- Exquisite Love Boat (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+					i(142341, {	-- Love Boat (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 270}},
+					}),
+					i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 150}},
+					}),
+					i(34480, {	-- Romantic Picnic Basket (TOY!)
+						["cost"] = {{"i", LOVE_TOKEN, 10}},
+					}),
+				}),
+			},
+		})),
+		n(211864, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Maurice Guichi <House of Chocolates>
+			["coord"] = { 33.6, 49.8, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(49909, {	-- Box of Chocolates
+					["cost"] = {{"i", LOVE_TOKEN, 10}},
+					["g"] = {
+						i(22236),	-- Buttermilk Delight
+						i(22237),	-- Dark Desire
+						i(22239),	-- Sweet Surprise
+						i(22238),	-- Very Berry Cream
+					},
+				}),
+			},
+		})),
+		n(212886, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Melanie Charles <Bountiful Brews>
+			["coord"] = { 34.2, 50.6, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(210927),	-- Fruity Cocktail Flight
+			},
+		})),
+		n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ming Plumpaw <Lovely Snacks> [Need Alliance Version]
+			["coord"] = { 41.1, 17.8, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(210841),	-- Buttered Oysters
+				i(210842),	-- Fresh Fig
+			},
+		})),
+		n(211810, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ronathan Graham <Fruit Vendor>
+			["coord"] = { 33.6, 49.8, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(210821),	-- Berry Chocolate Tart
+				i(210819),	-- Chocolate-Covered Cherries
+			},
+		})),
+		n(211887, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Sylandra Silverbreeze <Flower Vendor>
+			["coord"] = { 34.2, 48.8, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(211359, {	-- Eternal Black Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211358, {	-- Eternal Blue Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211357, {	-- Eternal Orange Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211355, {	-- Eternal Pink Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211354, {	-- Eternal White Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(211352, {	-- Eternal Yellow Rose
+					["cost"] = {{"i", LOVE_TOKEN, 20}},
+				}),
+				i(22218, {	-- Handful of Rose Petals
+					["cost"] = {{"i", LOVE_TOKEN, 2}},
+				}),
+				i(50163, {	-- Lovely Rose
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211363, {	-- Rose of Dreams Fulfilled
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211351, {	-- Rose of Friendship
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211362, {	-- Rose of Independence
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211361, {	-- Rose of Joy
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211360, {	-- Rose of Purity
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211264, {	-- Rose of Romance
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(211364, {	-- Rose of Tragedy
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(210965, {	-- Single-Use Bouquet
+					["cost"] = {{"i", LOVE_TOKEN, 1}},
+				}),
+			},
+		})),
+		n(215109, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ugawa <Bountiful Brews>
+			["coord"] = { 40.8, 17.8, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(210927),	-- Fruity Cocktail Flight
+			},
+		})),
+		n(214489, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Zikky <Lovely Novelties>
+			["coord"] = { 41.0, 17.2, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(210318, {	-- Chocolate Bon-Bomb
+					["cost"] = {{"i", LOVE_TOKEN, 1}},
+				}),
+				i(22261, {	-- Love Fool
+					["cost"] = {{"i", LOVE_TOKEN, 10}},
+				}),
+				i(34258, {	-- Lovely Fireworks
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(116648, {	-- Manufactured Love Prism
+					["cost"] = {{"i", LOVE_TOKEN, 40}},
+				}),
+				i(211976, {	-- Pink Brightbursts
+					["cost"] = {{"i", LOVE_TOKEN, 5}},
+				}),
+				i(144339, {	-- Sturdy Love Fool (TOY!)
+					["cost"] = {{"i", LOVE_TOKEN, 100}},
+				}),
+			},
+		})),
+		n(214480, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Zin'boja <De Chocolate Den>
+			["coord"] = { 41.2, 18.0, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(49909, {	-- Box of Chocolates
+					["cost"] = {{"i", LOVE_TOKEN, 10}},
+					["g"] = {
+						i(22236),	-- Buttermilk Delight
+						i(22237),	-- Dark Desire
+						i(22239),	-- Sweet Surprise
+						i(22238),	-- Very Berry Cream
+					},
+				}),
+			},
+		})),
 	}),
 	-- #endif
 	n(ZONE_DROPS, {
@@ -1617,11 +2067,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			i(49655, {	-- Lovely Charm
 				["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
 				["description"] = "With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",
-				["timeline"] = { "added 3.3.2.11403" },
+				["timeline"] = { "added 3.3.2.11403", REMOVED_10_2_5 },
 			}),
 			i(49916, {	-- Lovely Charm Bracelet
 				["cost"] = { { "i", 49655, 10 } },	-- 10x Lovely Charm
-				["timeline"] = { "added 3.3.2.11403" },
+				["timeline"] = { "added 3.3.2.11403", REMOVED_10_2_5 },
 			}),
 			-- #if BEFORE 3.3.2.11403
 			i(22262, {	-- Alliance Gift Collection
@@ -2131,6 +2581,9 @@ for i,o in ipairs({
 					}),
 					i(50471, {	-- The Heartbreaker (TOY!)
 						["timeline"] = { "added 3.3.0" },
+					}),
+					i(211812, {	-- Renewed Proto-Drake: Love Armor (DM!)
+						["timeline"] = { ADDED_10_2_5 },
 					}),
 				},
 			}),

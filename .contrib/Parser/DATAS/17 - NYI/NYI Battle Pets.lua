@@ -1388,9 +1388,6 @@ root(ROOTS.NeverImplemented, {
 				i(205148, {	-- Dread Shalewing (PET!)
 					["modelID"] = 112186,
 				}),
-				i(205156, {	-- Heartseeker Moth (PET!)
-					["modelID"] = 112195,
-				}),
 				i(205018, {	-- Jade Skitterbug (PET!)
 					["modelID"] = 112155,
 				}),

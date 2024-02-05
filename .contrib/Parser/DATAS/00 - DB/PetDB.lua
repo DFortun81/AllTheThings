@@ -4030,7 +4030,6 @@ i(205024, 3523);	-- Cheddar
 i(205010, 3516);	-- Crimson Swoglet
 i(205008, 3514);	-- Emerald Swoglet
 i(205148, 3542);	-- Dread Shalewing
-i(205156, 3549);	-- Heartseeker Moth
 i(205018, 3520);	-- Jade Skitterbug
 i(205116, 3534);	-- Jerrie
 i(205166, 3556);	-- Kromos
@@ -4145,6 +4144,7 @@ i(212791, 4410);	-- Beetriz
 i(212722, 4408);	-- Buggsy
 i(208446, 4264);	-- Fyrn
 i(213134, 4412);	-- Hap'he
+i(205156, 3549);	-- Heartseeker Moth
 i(213556, 4421);	-- Hoplet (Retail)
 i(212786, 4409);	-- Lovely Duckling
 i(212700, 4407);	-- Nelle

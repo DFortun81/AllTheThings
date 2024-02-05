@@ -1127,12 +1127,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_2_5 } },FILTERFUNC_itemID,{
-		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { CREATED_10_2_5 },
-		}, {
-			i(211812),	-- Renewed Proto-Drake: Love Armor
-		})),
+		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(211812)),	-- Renewed Proto-Drake: Love Armor (DM!)
+		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
 			applyevent(EVENTS.LUNAR_FESTIVAL, i(211868)),	-- Winding Slitherdrake: Lunar Festival Armor (DM!)
 		}),
