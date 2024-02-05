@@ -705,7 +705,7 @@ settings.SetFilter = function(self, filterID, value)
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	RawSettings.Tooltips[setting] = value
-	wipe(app.searchCache)
+	app.WipeSearchCache();
 	self:Refresh()
 end
 settings.SetPersonal = function(self, setting, value)

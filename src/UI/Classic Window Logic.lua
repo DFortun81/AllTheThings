@@ -1694,7 +1694,7 @@ local refreshFromTrigger;
 local currentlyRefreshingData = false;
 local LastSettingsChangeUpdate;
 local function RefreshData(source, trigger)
-	wipe(app.searchCache);
+	app.WipeSearchCache();
 	refreshDataCooldown = 5;
 	if trigger then
 		--print("REFRESH_DATA", source, trigger);
@@ -1731,7 +1731,6 @@ local function RefreshData(source, trigger)
 		else
 			app:UpdateWindows(source, nil, refreshFromTrigger);
 		end
-		wipe(app.searchCache);
 		refreshFromTrigger = nil;
 		currentlyRefreshingData = nil;
 		

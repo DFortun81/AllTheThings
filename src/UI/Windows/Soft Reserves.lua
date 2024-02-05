@@ -1,7 +1,6 @@
 -- App locals
 local appName, app = ...;
 local L = app.L;
-local searchCache = app.searchCache;
 
 -- Global locals
 local GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRosterLastOnline =
@@ -320,7 +319,7 @@ local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlaye
 	end
 	
 	-- Update the Reservation
-	wipe(searchCache);
+	app.WipeSearchCache();
 	SoftReservesDirty = true;
 	if itemID and itemID > 0 then
 		if not timeStamp then timeStamp = time(); end
@@ -440,7 +439,7 @@ local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 						return false;
 					else
 						app.Settings:SetTooltipSetting("SoftReservesLocked", tonumber(args[3]) == 1);
-						wipe(searchCache);
+						app.WipeSearchCache();
 						RefreshSoftReserveWindow(true);
 					end
 				elseif a == "srpersistence" then
@@ -448,7 +447,7 @@ local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 						return false;
 					else
 						app.Settings:SetTooltipSetting("SoftReservePersistence", tonumber(args[3]) == 1);
-						wipe(searchCache);
+						app.WipeSearchCache();
 						RefreshSoftReserveWindow(true);
 					end
 				end
@@ -572,7 +571,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 			local locked = app.Settings:GetTooltipSetting("SoftReservesLocked");
 			if locked then
 				app.Settings:SetTooltipSetting("SoftReservesLocked", false);
-				wipe(searchCache);
+				app.WipeSearchCache();
 			end
 		end
 	end,
@@ -594,7 +593,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 						SendGroupMessage("!\tsrlock\t" .. (locked and 1 or 0));
 						app.Settings:SetTooltipSetting("SoftReservesLocked", locked);
 						SendGroupChatMessage(locked and "Soft Reserves locked." or "Soft Reserves unlocked.");
-						wipe(searchCache);
+						app.WipeSearchCache();
 						self:Update();
 						return true;
 					else
@@ -617,7 +616,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 						local locked = app.Settings:GetTooltipSetting("SoftReservesLocked");
 						if locked then
 							app.Settings:SetTooltipSetting("SoftReservesLocked", false);
-							wipe(searchCache);
+							app.WipeSearchCache();
 							self:Update();
 							return true;
 						end
@@ -652,7 +651,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 						local persistence = not app.Settings:GetTooltipSetting("SoftReservePersistence");
 						app.Settings:SetTooltipSetting("SoftReservePersistence", persistence);
 						SendGroupMessage("!\tsrpersistence\t" .. (persistence and 1 or 0));
-						wipe(searchCache);
+						app.WipeSearchCache();
 						self:Update();
 						return true;
 					else
@@ -769,7 +768,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 							end
 						end
 					end);
-					wipe(searchCache);
+					app.WipeSearchCache();
 					self:Update();
 					return true;
 				end,

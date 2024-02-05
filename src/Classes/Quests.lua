@@ -908,7 +908,7 @@ else
 		end
 		if any then
 			wipe(ClassicDirtyQuests);
-			wipe(app.searchCache);
+			app.WipeSearchCache();
 			app:RefreshDataQuietly("RefreshQuestInfo", true);
 		end
 		app:RegisterEvent("QUEST_LOG_UPDATE");
@@ -1662,7 +1662,7 @@ end
 
 -- Game Events that trigger visual updates, but no computation updates.
 local softRefresh = function()
-	wipe(app.searchCache);
+	app.WipeSearchCache();
 	wipe(LockedQuestCache)
 end;
 app.events.BAG_NEW_ITEMS_UPDATED = softRefresh;

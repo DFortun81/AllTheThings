@@ -949,796 +949,797 @@ end
 -- Search Caching
 local searchCache = {};
 app.searchCache = searchCache;
+app.WipeSearchCache = function()
+	wipe(searchCache);
+end
+app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
-	if search then
-		local now = time();
-		local cache = searchCache[search];
-		if cache and (now - cache[1]) < cache[2] then return cache[3]; end
+	if IsRetrieving(search) then return; end
+	
+	-- If we have a search result already, return it.
+	local cache = searchCache[search];
+	if cache then return cache; end
 
-		-- Determine if this tooltip needs more work the next time it refreshes.
-		if not paramA then paramA = ""; end
-		local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
-		cache = { now, 100000000 };
-		searchCache[search] = cache;
+	-- Determine if this tooltip needs more work the next time it refreshes.
+	local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
+	if not paramA then paramA = ""; end
 
-		-- Call to the method to search the database.
-		local group, a, b = method(paramA, paramB, ...);
-		if not group then
-			group = {};
-		elseif group.g then
-			group = group.g;
-		end
-		if a then paramA = a; end
-		if b then paramB = b; end
+	-- Call to the method to search the database.
+	local group, a, b = method(paramA, paramB, ...);
+	if not group then
+		group = {};
+	elseif group.g then
+		group = group.g;
+	end
+	if a then paramA = a; end
+	if b then paramB = b; end
 
-		-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
-		if paramA == "creatureID" or paramA == "encounterID" then
-			if group and #group > 0 then
-				local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (paramA == "encounterID" and EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
-				if difficultyID > 0 then
-					local subgroup = {};
-					for _,j in ipairs(group) do
-						if GetRelativeDifficulty(j, difficultyID) then
-							tinsert(subgroup, j);
-						end
-					end
-					group = subgroup;
-				end
-
-				local regroup = {};
-				if app.MODE_DEBUG then
-					for i,j in ipairs(group) do
-						tinsert(regroup, j);
-					end
-				else
-					if app.MODE_ACCOUNT then
-						for i,j in ipairs(group) do
-							if app.RecursiveUnobtainableFilter(j) then
-								if j.questID and j.itemID then
-									if not j.saved then
-										-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
-										if C_QuestLog_IsOnQuest(j.questID) then
-											if not IsQuestReadyForTurnIn(j.questID) then
-												tinsert(regroup, j);
-											end
-										elseif j.providers then
-											tinsert(regroup, j);
-										else
-											-- Do a quick search on the itemID.
-											local searchResults = SearchForField("itemID", j.itemID);
-											if #searchResults > 0 then
-												for k,searchResult in ipairs(searchResults) do
-													if searchResult.providers then
-														for l,provider in ipairs(searchResult.providers) do
-															if provider[1] == 'i' and provider[2] == j.itemID then
-																tinsert(regroup, j);
-																break;
-															end
-														end
-														break;
-													end
-												end
-											end
-										end
-									end
-								else
-									tinsert(regroup, j);
-								end
-							end
-						end
-					else
-						for i,j in ipairs(group) do
-							if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-								if j.questID and j.itemID then
-									if not j.saved then
-										-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
-										if C_QuestLog_IsOnQuest(j.questID) then
-											if not IsQuestReadyForTurnIn(j.questID) then
-												tinsert(regroup, j);
-											end
-										elseif j.providers then
-											tinsert(regroup, j);
-										else
-											-- Do a quick search on the itemID.
-											local searchResults = SearchForField("itemID", j.itemID);
-											if #searchResults > 0 then
-												for k,searchResult in ipairs(searchResults) do
-													if searchResult.providers then
-														for l,provider in ipairs(searchResult.providers) do
-															if provider[1] == 'i' and provider[2] == j.itemID then
-																tinsert(regroup, j);
-																break;
-															end
-														end
-														break;
-													end
-												end
-											end
-										end
-									end
-								else
-									tinsert(regroup, j);
-								end
-							end
-						end
+	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
+	if paramA == "creatureID" or paramA == "encounterID" then
+		if group and #group > 0 then
+			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (paramA == "encounterID" and EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
+			if difficultyID > 0 then
+				local subgroup = {};
+				for _,j in ipairs(group) do
+					if GetRelativeDifficulty(j, difficultyID) then
+						tinsert(subgroup, j);
 					end
 				end
-				if #regroup > 0 then
-					if app.Settings:GetTooltipSetting("Lore") then
-						for i,j in ipairs(regroup) do
-							if j.lore and j[paramA] and j[paramA] == paramB then
-								tinsert(info, 1, { left = j.lore, wrap = true, color = app.Colors.TooltipLore });
-							end
-						end
-					end
-					if app.Settings:GetTooltipSetting("Descriptions") then
-						for i,j in ipairs(regroup) do
-							if j.description and j[paramA] and j[paramA] == paramB then
-								tinsert(info, 1, { left = j.description, wrap = true, color = app.Colors.TooltipDescription });
-							end
-						end
-					end
-					app.Sort(regroup, function(a, b)
-						return not (a.headerID and a.headerID == app.HeaderConstants.COMMON_BOSS_DROPS) and b.headerID and b.headerID == app.HeaderConstants.COMMON_BOSS_DROPS;
-					end);
-				end
-				group = regroup;
+				group = subgroup;
 			end
-		elseif paramA == "titleID" then
-			-- Don't do anything
+
 			local regroup = {};
-			if app.MODE_ACCOUNT then
+			if app.MODE_DEBUG then
 				for i,j in ipairs(group) do
-					if app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
+					tinsert(regroup, j);
 				end
 			else
-				for i,j in ipairs(group) do
-					if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			end
-
-			group = regroup;
-		else
-			-- Determine if this is a cache for an item
-			local itemID;
-			if not paramB then
-				local itemString = string.match(paramA, "item[%-?%d:]+");
-				if itemString then
-					local itemID2 = select(2, strsplit(":", itemString));
-					if itemID2 then
-						itemID = tonumber(itemID2);
-						paramA = "itemID";
-						paramB = itemID;
+				if app.MODE_ACCOUNT then
+					for i,j in ipairs(group) do
+						if app.RecursiveUnobtainableFilter(j) then
+							if j.questID and j.itemID then
+								if not j.saved then
+									-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
+									if C_QuestLog_IsOnQuest(j.questID) then
+										if not IsQuestReadyForTurnIn(j.questID) then
+											tinsert(regroup, j);
+										end
+									elseif j.providers then
+										tinsert(regroup, j);
+									else
+										-- Do a quick search on the itemID.
+										local searchResults = SearchForField("itemID", j.itemID);
+										if #searchResults > 0 then
+											for k,searchResult in ipairs(searchResults) do
+												if searchResult.providers then
+													for l,provider in ipairs(searchResult.providers) do
+														if provider[1] == 'i' and provider[2] == j.itemID then
+															tinsert(regroup, j);
+															break;
+														end
+													end
+													break;
+												end
+											end
+										end
+									end
+								end
+							else
+								tinsert(regroup, j);
+							end
+						end
 					end
 				else
-					local kind, id = strsplit(":", paramA);
-					kind = string.lower(kind);
-					if id then id = tonumber(id); end
-					if kind == "itemid" then
-						paramA = "itemID";
-						paramB = id;
-						itemID = id;
-					elseif kind == "questid" then
-						paramA = "questID";
-						paramB = id;
-					elseif kind == "creatureid" or kind == "npcid" then
-						paramA = "creatureID";
-						paramB = id;
-					end
-				end
-			elseif paramA == "itemID" then
-				itemID = paramB;
-			end
-
-			if itemID then
-				-- Show the unobtainable source text
-				local u, e = 99999999;
-				app.Sort(group, app.SortDefaults.Accessibility);
-				for i,j in ipairs(group) do
-					if j.itemID == itemID then
-						mostAccessibleSource = j;
-						if j.u and u > j.u and (not j.crs or paramA == "itemID") then
-							u = j.u;
-						end
-						if j.e then
-							e = j.e;
-						end
-						break;
-					end
-				end
-				if u < 99999999 then
-					local reason = L["UNOBTAINABLE_ITEM_REASONS"][u];
-					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-						tinsert(info, { left = reason[2], wrap = true });
-					end
-				end
-				if e then
-					local reason = app.Modules.Events.GetEventTooltipNoteForGroup({ e = e });
-					if reason then
-						local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
-						if right then
-							tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
-						else
-							tinsert(info, { left = left, color = app.Colors.TooltipDescription });
-						end
-					end
-				end
-				local itemName, itemLink = GameTooltip:GetItem();
-				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-				if app.Settings:GetTooltipSetting("itemLevel") then tinsert(info, { left = "Item Level", right = select(4, GetItemInfo(itemLink or itemID)) }); end
-				if app.Settings:GetTooltipSetting("itemString") and itemLink then tinsert(info, { left = "Item String", right = string.match(itemLink, "item[%-?%d:]+") }); end
-				app.ShowSoftReservesForItem(itemID, info);
-
-				local reagentCache = app.GetDataSubMember("Reagents", itemID);
-				if reagentCache then
-					for spellID,count in pairs(reagentCache[1]) do
-						MergeClone(recipes, { ["spellID"] = spellID, ["collectible"] = false, ["count"] = count });
-					end
-					for craftedItemID,count in pairs(reagentCache[2]) do
-						MergeClone(crafted, { ["itemID"] = craftedItemID, ["count"] = count });
-						local searchResults = SearchForField("itemID", craftedItemID);
-						if #searchResults > 0 then
-							for i,o in ipairs(searchResults) do
-								if not o.itemID and o.cost then
-									-- Reagent for something that crafts a thing required for something else.
-									MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CloneClassInstance(o) } });
+					for i,j in ipairs(group) do
+						if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+							if j.questID and j.itemID then
+								if not j.saved then
+									-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
+									if C_QuestLog_IsOnQuest(j.questID) then
+										if not IsQuestReadyForTurnIn(j.questID) then
+											tinsert(regroup, j);
+										end
+									elseif j.providers then
+										tinsert(regroup, j);
+									else
+										-- Do a quick search on the itemID.
+										local searchResults = SearchForField("itemID", j.itemID);
+										if #searchResults > 0 then
+											for k,searchResult in ipairs(searchResults) do
+												if searchResult.providers then
+													for l,provider in ipairs(searchResult.providers) do
+														if provider[1] == 'i' and provider[2] == j.itemID then
+															tinsert(regroup, j);
+															break;
+														end
+													end
+													break;
+												end
+											end
+										end
+									end
 								end
+							else
+								tinsert(regroup, j);
 							end
 						end
 					end
 				end
 			end
-		end
-
-		-- Create a list of sources
-		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
-			local temp = {};
-			local unfiltered = {};
-			local abbrevs = L["ABBREVIATIONS"];
-			local abbrevs_post = L["ABBREVIATIONS_POST"];
-			if not abbrevs_post[" true "] then
-				abbrevs_post[" %> " .. app.GetMapName(947)] = "";
-				abbrevs_post[" %> " .. app.GetMapName(1415)] = "";
-				abbrevs_post[" %> " .. app.GetMapName(1414)] = "";
-				abbrevs_post[" false "] = " 0 ";
-				abbrevs_post[" true "] = " 1 ";
+			if #regroup > 0 then
+				if app.Settings:GetTooltipSetting("Lore") then
+					for i,j in ipairs(regroup) do
+						if j.lore and j[paramA] and j[paramA] == paramB then
+							tinsert(info, 1, { left = j.lore, wrap = true, color = app.Colors.TooltipLore });
+						end
+					end
+				end
+				if app.Settings:GetTooltipSetting("Descriptions") then
+					for i,j in ipairs(regroup) do
+						if j.description and j[paramA] and j[paramA] == paramB then
+							tinsert(info, 1, { left = j.description, wrap = true, color = app.Colors.TooltipDescription });
+						end
+					end
+				end
+				app.Sort(regroup, function(a, b)
+					return not (a.headerID and a.headerID == app.HeaderConstants.COMMON_BOSS_DROPS) and b.headerID and b.headerID == app.HeaderConstants.COMMON_BOSS_DROPS;
+				end);
 			end
+			group = regroup;
+		end
+	elseif paramA == "titleID" then
+		-- Don't do anything
+		local regroup = {};
+		if app.MODE_ACCOUNT then
 			for i,j in ipairs(group) do
-				if j.parent and not GetRelativeValue(j, "hideText") and j.parent.parent
-					and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
-					local text = app.GenerateSourcePathForTooltip(j.parent);
-					for source,replacement in pairs(abbrevs) do
-						text = string.gsub(text, source, replacement);
-					end
-					for source,replacement in pairs(abbrevs_post) do
-						text = string.gsub(text, source, replacement);
-					end
-
-					local right = " ";
-					if j.u then
-						local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
-						if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-							right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t";
-						end
-					end
-					if j.rwp then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][2] .. ":0|t"; end
-					if j.e then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][4] .. ":0|t"; end
-
-					if not app.RecursiveCharacterRequirementsFilter(j.parent) then
-						tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
-					elseif not app.RecursiveUnobtainableFilter(j.parent) then
-						tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" });
-					else
-						tinsert(temp, { text, right });
-					end
+				if app.RecursiveUnobtainableFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID")) or app.MODE_DEBUG then
-				for i,data in ipairs(unfiltered) do
-					tinsert(temp, data);
-				end
-			end
-			if #temp > 0 then
-				local listing, listingByText = {}, {};
-				local maximum = app.Settings:GetTooltipSetting("Locations");
-				for i,data in ipairs(temp) do
-					local text = data[1] or RETRIEVING_DATA;
-					if not listingByText[text] then
-						listingByText[text] = data;
-						tinsert(listing, 1, data);
-						if IsRetrieving(text) then working = true; end
-					end
-				end
-				local count, splitCounts, splitCount = 0, { };
-				for i,data in ipairs(listing) do
-					local left, right = strsplit(DESCRIPTION_SEPARATOR, data[1]);
-					left = left .. data[2];
-					splitCount = splitCounts[left];
-					if not splitCount then
-						splitCount = { count = 0, data=data, variants ={} };
-						splitCounts[left] = splitCount;
-					end
-					if right and not contains(splitCount.variants, right) then
-						tinsert(splitCount.variants, right);
-						if string.find(right, BATTLE_PET_SOURCE_2) then
-							splitCount.count = splitCount.count + 1;
-						end
-					end
-				end
-				for left,splitCount in pairs(splitCounts) do
-					if splitCount.count < 6 then
-						if #splitCount.variants == 0 then
-							tinsert(info, 1, { left = left, wrap = not string.find(left, " > ") });
-							count = count + 1;
-						else
-							for i,right in ipairs(splitCount.variants) do
-								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
-								count = count + 1;
-							end
-						end
-					else
-						tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " > ") });
-						count = count + 1;
-						for i,right in ipairs(splitCount.variants) do
-							if not string.find(right, BATTLE_PET_SOURCE_2) then
-								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
-								count = count + 1;
-							end
-						end
-					end
-				end
-				if count > maximum + 1 then
-					for i=count,maximum + 1,-1 do
-						tremove(info, 1);
-					end
-					tinsert(info, 1, "And " .. (count - maximum) .. " other sources...");
+		else
+			for i,j in ipairs(group) do
+				if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 				end
 			end
 		end
 
-		-- Create an unlinked version of the object.
-		if not group.g then
-			local merged = {};
-			for i,o in ipairs(group) do
-				MergeClone(merged, o);
+		group = regroup;
+	else
+		-- Determine if this is a search for an item
+		local itemID;
+		if not paramB then
+			local itemString = string.match(paramA, "item[%-?%d:]+");
+			if itemString then
+				local itemID2 = select(2, strsplit(":", itemString));
+				if itemID2 then
+					itemID = tonumber(itemID2);
+					paramA = "itemID";
+					paramB = itemID;
+				end
+			else
+				local kind, id = strsplit(":", paramA);
+				kind = string.lower(kind);
+				if id then id = tonumber(id); end
+				if kind == "itemid" then
+					paramA = "itemID";
+					paramB = id;
+					itemID = id;
+				elseif kind == "questid" then
+					paramA = "questID";
+					paramB = id;
+				elseif kind == "creatureid" or kind == "npcid" then
+					paramA = "creatureID";
+					paramB = id;
+				end
 			end
-			if #merged == 1 and merged[1][paramA] == paramB then
-				group = merged[1];
-				local symbolicLink = ResolveSymbolicLink(group);
+		elseif paramA == "itemID" then
+			itemID = paramB;
+		end
+
+		if itemID then
+			-- Show the unobtainable source text
+			local u, e = 99999999;
+			app.Sort(group, app.SortDefaults.Accessibility);
+			for i,j in ipairs(group) do
+				if j.itemID == itemID then
+					mostAccessibleSource = j;
+					if j.u and u > j.u and (not j.crs or paramA == "itemID") then
+						u = j.u;
+					end
+					if j.e then
+						e = j.e;
+					end
+					break;
+				end
+			end
+			if u < 99999999 then
+				local reason = L["UNOBTAINABLE_ITEM_REASONS"][u];
+				if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
+					tinsert(info, { left = reason[2], wrap = true });
+				end
+			end
+			if e then
+				local reason = app.Modules.Events.GetEventTooltipNoteForGroup({ e = e });
+				if reason then
+					local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
+					if right then
+						tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
+					else
+						tinsert(info, { left = left, color = app.Colors.TooltipDescription });
+					end
+				end
+			end
+			local itemName, itemLink = GameTooltip:GetItem();
+			if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
+			if app.Settings:GetTooltipSetting("itemLevel") then tinsert(info, { left = "Item Level", right = select(4, GetItemInfo(itemLink or itemID)) }); end
+			if app.Settings:GetTooltipSetting("itemString") and itemLink then tinsert(info, { left = "Item String", right = string.match(itemLink, "item[%-?%d:]+") }); end
+			app.ShowSoftReservesForItem(itemID, info);
+
+			local reagentCache = app.GetDataSubMember("Reagents", itemID);
+			if reagentCache then
+				for spellID,count in pairs(reagentCache[1]) do
+					MergeClone(recipes, { ["spellID"] = spellID, ["collectible"] = false, ["count"] = count });
+				end
+				for craftedItemID,count in pairs(reagentCache[2]) do
+					MergeClone(crafted, { ["itemID"] = craftedItemID, ["count"] = count });
+					local searchResults = SearchForField("itemID", craftedItemID);
+					if #searchResults > 0 then
+						for i,o in ipairs(searchResults) do
+							if not o.itemID and o.cost then
+								-- Reagent for something that crafts a thing required for something else.
+								MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CloneClassInstance(o) } });
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	-- Create a list of sources
+	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+		local temp = {};
+		local unfiltered = {};
+		local abbrevs = L["ABBREVIATIONS"];
+		local abbrevs_post = L["ABBREVIATIONS_POST"];
+		if not abbrevs_post[" true "] then
+			abbrevs_post[" %> " .. app.GetMapName(947)] = "";
+			abbrevs_post[" %> " .. app.GetMapName(1415)] = "";
+			abbrevs_post[" %> " .. app.GetMapName(1414)] = "";
+			abbrevs_post[" false "] = " 0 ";
+			abbrevs_post[" true "] = " 1 ";
+		end
+		for i,j in ipairs(group) do
+			if j.parent and not GetRelativeValue(j, "hideText") and j.parent.parent
+				and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
+				local text = app.GenerateSourcePathForTooltip(j.parent);
+				for source,replacement in pairs(abbrevs) do
+					text = string.gsub(text, source, replacement);
+				end
+				for source,replacement in pairs(abbrevs_post) do
+					text = string.gsub(text, source, replacement);
+				end
+
+				local right = " ";
+				if j.u then
+					local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
+					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
+						right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t";
+					end
+				end
+				if j.rwp then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][2] .. ":0|t"; end
+				if j.e then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][4] .. ":0|t"; end
+
+				if not app.RecursiveCharacterRequirementsFilter(j.parent) then
+					tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+				elseif not app.RecursiveUnobtainableFilter(j.parent) then
+					tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" });
+				else
+					tinsert(temp, { text, right });
+				end
+			end
+		end
+		if (#temp < 1 and not (paramA == "creatureID")) or app.MODE_DEBUG then
+			for i,data in ipairs(unfiltered) do
+				tinsert(temp, data);
+			end
+		end
+		if #temp > 0 then
+			local listing, listingByText = {}, {};
+			local maximum = app.Settings:GetTooltipSetting("Locations");
+			for i,data in ipairs(temp) do
+				local text = data[1] or RETRIEVING_DATA;
+				if not listingByText[text] then
+					listingByText[text] = data;
+					tinsert(listing, 1, data);
+					if IsRetrieving(text) then working = true; end
+				end
+			end
+			local count, splitCounts, splitCount = 0, { };
+			for i,data in ipairs(listing) do
+				local left, right = strsplit(DESCRIPTION_SEPARATOR, data[1]);
+				left = left .. data[2];
+				splitCount = splitCounts[left];
+				if not splitCount then
+					splitCount = { count = 0, data=data, variants ={} };
+					splitCounts[left] = splitCount;
+				end
+				if right and not contains(splitCount.variants, right) then
+					tinsert(splitCount.variants, right);
+					if string.find(right, BATTLE_PET_SOURCE_2) then
+						splitCount.count = splitCount.count + 1;
+					end
+				end
+			end
+			for left,splitCount in pairs(splitCounts) do
+				if splitCount.count < 6 then
+					if #splitCount.variants == 0 then
+						tinsert(info, 1, { left = left, wrap = not string.find(left, " > ") });
+						count = count + 1;
+					else
+						for i,right in ipairs(splitCount.variants) do
+							tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
+							count = count + 1;
+						end
+					end
+				else
+					tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " > ") });
+					count = count + 1;
+					for i,right in ipairs(splitCount.variants) do
+						if not string.find(right, BATTLE_PET_SOURCE_2) then
+							tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
+							count = count + 1;
+						end
+					end
+				end
+			end
+			if count > maximum + 1 then
+				for i=count,maximum + 1,-1 do
+					tremove(info, 1);
+				end
+				tinsert(info, 1, "And " .. (count - maximum) .. " other sources...");
+			end
+		end
+	end
+
+	-- Create an unlinked version of the object.
+	if not group.g then
+		local merged = {};
+		for i,o in ipairs(group) do
+			MergeClone(merged, o);
+		end
+		if #merged == 1 and merged[1][paramA] == paramB then
+			group = merged[1];
+			local symbolicLink = ResolveSymbolicLink(group);
+			if symbolicLink then
+				if group.g and #group.g >= 0 then
+					for j=1,#symbolicLink,1 do
+						MergeClone(group.g, symbolicLink[j]);
+					end
+				else
+					for j=#symbolicLink,1,-1 do
+						symbolicLink[j] = CloneClassInstance(symbolicLink[j]);
+					end
+					group.g = symbolicLink;
+				end
+			end
+		else
+			for i,o in ipairs(merged) do
+				local symbolicLink = ResolveSymbolicLink(o);
 				if symbolicLink then
-					if group.g and #group.g >= 0 then
+					o.symbolized = true;
+					if o.g and #o.g >= 0 then
 						for j=1,#symbolicLink,1 do
-							MergeClone(group.g, symbolicLink[j]);
+							MergeClone(o.g, symbolicLink[j]);
 						end
 					else
 						for j=#symbolicLink,1,-1 do
 							symbolicLink[j] = CloneClassInstance(symbolicLink[j]);
 						end
-						group.g = symbolicLink;
+						o.g = symbolicLink;
 					end
 				end
-			else
-				for i,o in ipairs(merged) do
-					local symbolicLink = ResolveSymbolicLink(o);
-					if symbolicLink then
-						o.symbolized = true;
-						if o.g and #o.g >= 0 then
-							for j=1,#symbolicLink,1 do
-								MergeClone(o.g, symbolicLink[j]);
-							end
-						else
-							for j=#symbolicLink,1,-1 do
-								symbolicLink[j] = CloneClassInstance(symbolicLink[j]);
-							end
-							o.g = symbolicLink;
-						end
-					end
-				end
-				group = CloneClassInstance({ [paramA] = paramB, key = paramA });
-				group.g = merged;
 			end
+			group = CloneClassInstance({ [paramA] = paramB, key = paramA });
+			group.g = merged;
 		end
+	end
 
-		if mostAccessibleSource then
-			group.rwp = mostAccessibleSource.rwp;
-			group.e = mostAccessibleSource.e;
-			group.u = mostAccessibleSource.u;
+	if mostAccessibleSource then
+		group.rwp = mostAccessibleSource.rwp;
+		group.e = mostAccessibleSource.e;
+		group.u = mostAccessibleSource.u;
+	end
+
+	-- Resolve Cost
+	--print("GetCachedSearchResults", paramA, paramB);
+	if paramA == "currencyID" then
+		local costResults = SearchForField("currencyIDAsCost", paramB);
+		if #costResults > 0 then
+			if not group.g then group.g = {} end
+			local usedToBuy = app.CreateNPC(app.HeaderConstants.VENDORS);
+			usedToBuy.text = "Currency For";
+			if not usedToBuy.g then usedToBuy.g = {}; end
+			for i,o in ipairs(costResults) do
+				MergeClone(usedToBuy.g, o);
+			end
+			MergeObject(group.g, usedToBuy);
 		end
-
-		-- Resolve Cost
-		--print("GetCachedSearchResults", paramA, paramB);
-		if paramA == "currencyID" then
-			local costResults = SearchForField("currencyIDAsCost", paramB);
-			if #costResults > 0 then
-				if not group.g then group.g = {} end
-				local usedToBuy = app.CreateNPC(app.HeaderConstants.VENDORS);
-				usedToBuy.text = "Currency For";
-				if not usedToBuy.g then usedToBuy.g = {}; end
-				for i,o in ipairs(costResults) do
+	elseif paramA == "itemID" then
+		local costResults = SearchForField("itemIDAsCost", paramB);
+		if #costResults > 0 then
+			if not group.g then group.g = {} end
+			local attunement = app.CreateNPC(app.HeaderConstants.QUESTS);
+			if not attunement.g then attunement.g = {}; end
+			local usedToBuy = app.CreateNPC(app.HeaderConstants.VENDORS);
+			if not usedToBuy.g then usedToBuy.g = {}; end
+			for i,o in ipairs(costResults) do
+				if o.key == "instanceID" or ((o.key == "difficultyID" or o.key == "mapID" or o.key == "headerID") and (o.parent and GetRelativeValue(o.parent, "instanceID"))) then
+					if app.Settings.Collectibles.Quests then
+						local d = CloneClassInstance(o);
+						d.sourceParent = o.parent;
+						d.collectible = true;
+						d.collected = GetItemCount(paramB, true) > 0;
+						d.progress = nil;
+						d.total = nil;
+						d.g = {};
+						MergeObject(attunement.g, d);
+					end
+				else
 					MergeClone(usedToBuy.g, o);
 				end
+			end
+			if #attunement.g > 0 then
+				attunement.text = "Attunement For";
+				MergeObject(group.g, attunement);
+			end
+			if #usedToBuy.g > 0 then
+				usedToBuy.text = "Currency For";
 				MergeObject(group.g, usedToBuy);
 			end
-		elseif paramA == "itemID" then
-			local costResults = SearchForField("itemIDAsCost", paramB);
-			if #costResults > 0 then
-				if not group.g then group.g = {} end
-				local attunement = app.CreateNPC(app.HeaderConstants.QUESTS);
-				if not attunement.g then attunement.g = {}; end
-				local usedToBuy = app.CreateNPC(app.HeaderConstants.VENDORS);
-				if not usedToBuy.g then usedToBuy.g = {}; end
-				for i,o in ipairs(costResults) do
-					if o.key == "instanceID" or ((o.key == "difficultyID" or o.key == "mapID" or o.key == "headerID") and (o.parent and GetRelativeValue(o.parent, "instanceID"))) then
-						if app.Settings.Collectibles.Quests then
-							local d = CloneClassInstance(o);
-							d.sourceParent = o.parent;
-							d.collectible = true;
-							d.collected = GetItemCount(paramB, true) > 0;
-							d.progress = nil;
-							d.total = nil;
-							d.g = {};
-							MergeObject(attunement.g, d);
+		end
+	end
+
+	if group.lore and app.Settings:GetTooltipSetting("Lore") and not (paramA == "titleID") then
+		tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
+	end
+
+	if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "titleID") then
+		tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
+	end
+
+	if group.nextEvent then
+		local timeStrings = app.Modules.Events.GetEventTimeStrings(group.nextEvent);
+		if timeStrings then
+			for i,timeString in ipairs(timeStrings) do
+				tinsert(info, 1, { left = timeString, wrap = true, color = app.Colors.TooltipDescription });
+			end
+		end
+	end
+
+	local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
+	local awpGreaterThanRWP = true;
+	if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
+		awpGreaterThanRWP = rwp and awp >= rwp;
+		local awpString = app.GetAddedWithPatchString(awp, awpGreaterThanRWP);
+		if awpString then
+			if app.Settings:GetTooltipSetting("awp") then
+				tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
+			end
+		else
+			awpGreaterThanRWP = true;
+		end
+	end
+	if rwp and app.Settings:GetTooltipSetting("rwp") then
+		tinsert(info, awpGreaterThanRWP and 1 or 2, { left = app.GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
+	end
+
+	if group.isLimited then
+		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = app.Colors.TooltipDescription });
+	end
+
+	if group.pvp then
+		tinsert(info, { left = L["REQUIRES_PVP"] });
+	end
+
+	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
+	if app.Settings:GetTooltipSetting("SummarizeThings") then
+		-- Contents
+		if group.g and #group.g > 0 then
+			local entries = {};
+			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+			if #entries > 0 then
+				local currentMapID = app.CurrentMapID;
+				local realmName, left, right = GetRealmName();
+				tinsert(info, { left = "Contains:" });
+				if #entries < 25 then
+					for i,item in ipairs(entries) do
+						left = item.group.text or RETRIEVING_DATA;
+						if IsRetrieving(left) then working = true; end
+						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
+						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
+						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+						tinsert(info, { left = item.prefix .. left, right = item.right });
+
+						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
+							local incompletes = {};
+							for guid,character in pairs(ATTCharacterData) do
+								if not character.ignored and character.realm == realmName
+									and (not item.group.r or (character.factionID and item.group.r == character.factionID))
+									and (not item.group.races or (character.raceID and contains(item.group.races, character.raceID)))
+									and (not item.group.c or (character.classID and contains(item.group.c, character.classID)))
+									and (character.Quests and not character.Quests[item.group.questID]) then
+									incompletes[guid] = character;
+								end
+							end
+							local desc, j = "", 0;
+							for guid,character in pairs(incompletes) do
+								if j > 0 then desc = desc .. ", "; end
+								desc = desc .. (character.text or guid);
+								j = j + 1;
+							end
+							if j > 0 then
+								tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+							end
 						end
-					else
-						MergeClone(usedToBuy.g, o);
 					end
-				end
-				if #attunement.g > 0 then
-					attunement.text = "Attunement For";
-					MergeObject(group.g, attunement);
-				end
-				if #usedToBuy.g > 0 then
-					usedToBuy.text = "Currency For";
-					MergeObject(group.g, usedToBuy);
+				else
+					for i=1,math.min(25, #entries) do
+						local item = entries[i];
+						left = item.group.text or RETRIEVING_DATA;
+						if IsRetrieving(left) then working = true; end
+						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
+						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
+						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+						tinsert(info, { left = item.prefix .. left, right = item.right });
+
+						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
+							local incompletes = {};
+							for guid,character in pairs(ATTCharacterData) do
+								if not character.ignored and character.realm == realmName and character.Quests and not character.Quests[item.group.questID] then
+									incompletes[guid] = character;
+								end
+							end
+							local desc, j = "", 0;
+							for guid,character in pairs(incompletes) do
+								if j > 0 then desc = desc .. ", "; end
+								desc = desc .. (character.text or guid);
+								j = j + 1;
+							end
+							tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+						end
+					end
+					local more = #entries - 25;
+					if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 				end
 			end
 		end
 
-		if group.lore and app.Settings:GetTooltipSetting("Lore") and not (paramA == "titleID") then
-			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
-		end
-
-		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "titleID") then
-			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
-		end
-
-		if group.nextEvent then
-			local timeStrings = app.Modules.Events.GetEventTimeStrings(group.nextEvent);
-			if timeStrings then
-				for i,timeString in ipairs(timeStrings) do
-					tinsert(info, 1, { left = timeString, wrap = true, color = app.Colors.TooltipDescription });
-				end
-			end
-		end
-
-		local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
-		local awpGreaterThanRWP = true;
-		if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
-			awpGreaterThanRWP = rwp and awp >= rwp;
-			local awpString = app.GetAddedWithPatchString(awp, awpGreaterThanRWP);
-			if awpString then
-				if app.Settings:GetTooltipSetting("awp") then
-					tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
-				end
-			else
-				awpGreaterThanRWP = true;
-			end
-		end
-		if rwp and app.Settings:GetTooltipSetting("rwp") then
-			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = app.GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
-		end
-
-		if group.isLimited then
-			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = app.Colors.TooltipDescription });
-		end
-
-		if group.pvp then
-			tinsert(info, { left = L["REQUIRES_PVP"] });
-		end
-
-		local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
-		if app.Settings:GetTooltipSetting("SummarizeThings") then
-			-- Contents
-			if group.g and #group.g > 0 then
+		-- Crafted Items
+		if crafted and #crafted > 0 then
+			if app.Settings:GetTooltipSetting("Show:CraftedItems") then
 				local entries = {};
-				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+				BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
-					local currentMapID = app.CurrentMapID;
-					local realmName, left, right = GetRealmName();
-					tinsert(info, { left = "Contains:" });
+					local left, right;
+					tinsert(info, { left = "Used to Craft:" });
 					if #entries < 25 then
+						app.Sort(entries, function(a, b)
+							if a.group.name then
+								if b.group.name then
+									return a.group.name <= b.group.name;
+								end
+								return true;
+							end
+							return false;
+						end);
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
-							local mapID = app.GetBestMapForGroup(item.group, currentMapID);
-							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
-
-							if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
-								local incompletes = {};
-								for guid,character in pairs(ATTCharacterData) do
-									if not character.ignored and character.realm == realmName
-										and (not item.group.r or (character.factionID and item.group.r == character.factionID))
-										and (not item.group.races or (character.raceID and contains(item.group.races, character.raceID)))
-										and (not item.group.c or (character.classID and contains(item.group.c, character.classID)))
-										and (character.Quests and not character.Quests[item.group.questID]) then
-										incompletes[guid] = character;
-									end
-								end
-								local desc, j = "", 0;
-								for guid,character in pairs(incompletes) do
-									if j > 0 then desc = desc .. ", "; end
-									desc = desc .. (character.text or guid);
-									j = j + 1;
-								end
-								if j > 0 then
-									tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
-								end
-							end
 						end
 					else
 						for i=1,math.min(25, #entries) do
 							local item = entries[i];
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
-							local mapID = app.GetBestMapForGroup(item.group, currentMapID);
-							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
-
-							if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
-								local incompletes = {};
-								for guid,character in pairs(ATTCharacterData) do
-									if not character.ignored and character.realm == realmName and character.Quests and not character.Quests[item.group.questID] then
-										incompletes[guid] = character;
-									end
-								end
-								local desc, j = "", 0;
-								for guid,character in pairs(incompletes) do
-									if j > 0 then desc = desc .. ", "; end
-									desc = desc .. (character.text or guid);
-									j = j + 1;
-								end
-								tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
-							end
 						end
 						local more = #entries - 25;
 						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 					end
 				end
 			end
+		end
 
-			-- Crafted Items
-			if crafted and #crafted > 0 then
-				if app.Settings:GetTooltipSetting("Show:CraftedItems") then
-					local entries = {};
-					BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-					if #entries > 0 then
-						local left, right;
-						tinsert(info, { left = "Used to Craft:" });
-						if #entries < 25 then
-							app.Sort(entries, function(a, b)
-								if a.group.name then
-									if b.group.name then
-										return a.group.name <= b.group.name;
-									end
-									return true;
+		-- Recipes
+		if recipes and #recipes > 0 then
+			if app.Settings:GetTooltipSetting("Show:Recipes") then
+				local entries, left, right = {};
+				BuildContainsInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+				if #entries > 0 then
+					tinsert(info, { left = "Used in Recipes:" });
+					if #entries < 25 then
+						app.Sort(entries, function(a, b)
+							if a and a.group.name then
+								if b and b.group.name then
+									return a.group.name <= b.group.name;
 								end
-								return false;
-							end);
-							for i,item in ipairs(entries) do
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(info, { left = item.prefix .. left, right = item.right });
+								return true;
 							end
-						else
-							for i=1,math.min(25, #entries) do
-								local item = entries[i];
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(info, { left = item.prefix .. left, right = item.right });
-							end
-							local more = #entries - 25;
-							if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+							return false;
+						end);
+						for i,item in ipairs(entries) do
+							left = item.group.text or RETRIEVING_DATA;
+							if IsRetrieving(left) then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
-					end
-				end
-			end
-
-			-- Recipes
-			if recipes and #recipes > 0 then
-				if app.Settings:GetTooltipSetting("Show:Recipes") then
-					local entries, left, right = {};
-					BuildContainsInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-					if #entries > 0 then
-						tinsert(info, { left = "Used in Recipes:" });
-						if #entries < 25 then
-							app.Sort(entries, function(a, b)
-								if a and a.group.name then
-									if b and b.group.name then
-										return a.group.name <= b.group.name;
-									end
-									return true;
-								end
-								return false;
-							end);
-							for i,item in ipairs(entries) do
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(info, { left = item.prefix .. left, right = item.right });
-							end
-						else
-							for i=1,math.min(25, #entries) do
-								local item = entries[i];
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(info, { left = item.prefix .. left, right = item.right });
-							end
-							local more = #entries - 25;
-							if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
-						end
-					end
-				end
-				if app.Settings:GetTooltipSetting("Show:SpellRanks") then
-					if app.MODE_DEBUG_OR_ACCOUNT then
-						-- Show all characters
 					else
-						-- Show only the current character
-						local nonTrivialRecipes = {};
-						for i, o in pairs(recipes) do
-							local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
-							if craftTypeID and craftTypeID > 0 then
-								o.craftTypeID = craftTypeID;
-								tinsert(nonTrivialRecipes, o);
-							end
+						for i=1,math.min(25, #entries) do
+							local item = entries[i];
+							left = item.group.text or RETRIEVING_DATA;
+							if IsRetrieving(left) then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
-						local entries, left, right = {};
-						BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-						if #entries > 0 then
-							tinsert(info, { left = "Available Skill Ups:" });
-							if #entries < 25 then
-								app.Sort(entries, function(a, b)
-									if a.group.craftTypeID == b.group.craftTypeID then
-										if a.group.name then
-											if b.group.name then
-												return a.group.name <= b.group.name;
-											end
-											return true;
-										end
-										return false;
-									end
-									return a.group.craftTypeID > b.group.craftTypeID;
-								end);
-								for i,item in ipairs(entries) do
-									left = item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
-									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-									tinsert(info, { left = item.prefix .. left, right = item.right });
-								end
-							else
-								for i=1,math.min(25, #entries) do
-									local item = entries[i];
-									left = item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
-									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-									tinsert(info, { left = item.prefix .. left, right = item.right });
-								end
-								local more = #entries - 25;
-								if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
-							end
-						end
+						local more = #entries - 25;
+						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 					end
 				end
 			end
-		end
-
-		-- If the item is a recipe, then show which characters know this recipe.
-		if group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-			local knownBy, kind = {}, nil;
-			if group.speciesID then
-				kind = "Owned by ";
-				for guid,character in pairs(ATTCharacterData) do
-					if character.BattlePets and character.BattlePets[group.speciesID] then
-						tinsert(knownBy, character);
-					end
-				end
-			elseif group.spellID then
-				kind = "Known by ";
-				for guid,character in pairs(ATTCharacterData) do
-					if character.Spells and character.Spells[group.spellID] then
-						tinsert(knownBy, character);
-					end
-				end
-			elseif group.toyID then
-				kind = "Owned by ";
-				for guid,character in pairs(ATTCharacterData) do
-					if character.Toys and character.Toys[group.itemID] then
-						tinsert(knownBy, character);
-					end
-				end
-			elseif group.itemID then
-				kind = "Owned by ";
-				for guid,character in pairs(ATTCharacterData) do
-					if (character.RWP and character.RWP[group.itemID]) then
-						tinsert(knownBy, character);
-					end
-				end
-			elseif group.achievementID then
-				kind = "Completed by ";
-				for guid,character in pairs(ATTCharacterData) do
-					if character.Achievements and character.Achievements[group.achievementID] then
-						tinsert(knownBy, character);
-					end
-				end
-			elseif group.questID then
-				kind = "Completed by ";
-				for guid,character in pairs(ATTCharacterData) do
-					if character.Quests and character.Quests[group.questID] then
-						tinsert(knownBy, character);
-					end
-				end
-			end
-			if #knownBy > 0 and kind then
-				app.Sort(knownBy, app.SortDefaults.name);
-				local desc = kind;
-				for i,character in ipairs(knownBy) do
-					if i > 1 then desc = desc .. ", "; end
-					desc = desc .. (character.text or "???");
-					if group.itemID and character == app.CurrentCharacter then
-						local count = GetItemCount(group.itemID, true);
-						if count and count > 1 then
-							desc = desc .. " (x" .. count .. ")";
-						end
-					end
-				end
-				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
-			end
-		end
-
-		-- If the user wants to show the progress of this search result, do so.
-		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-			group.collectionText = GetProgressTextForTooltip(group);
-
-			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
-			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
-		end
-
-		-- If there was any informational text generated, then attach that info.
-		if #info > 0 then
-			local uniques, dupes, _ = {}, {};
-			for i,item in ipairs(info) do
-				_ = item.hash or item.left;
-				if not _ then
-					tinsert(uniques, item);
+			if app.Settings:GetTooltipSetting("Show:SpellRanks") then
+				if app.MODE_DEBUG_OR_ACCOUNT then
+					-- Show all characters
 				else
-					if item.right then _ = _ .. item.right; end
-					if not dupes[_] then
-						dupes[_] = true;
-						tinsert(uniques, item);
+					-- Show only the current character
+					local nonTrivialRecipes = {};
+					for i, o in pairs(recipes) do
+						local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
+						if craftTypeID and craftTypeID > 0 then
+							o.craftTypeID = craftTypeID;
+							tinsert(nonTrivialRecipes, o);
+						end
+					end
+					local entries, left, right = {};
+					BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+					if #entries > 0 then
+						tinsert(info, { left = "Available Skill Ups:" });
+						if #entries < 25 then
+							app.Sort(entries, function(a, b)
+								if a.group.craftTypeID == b.group.craftTypeID then
+									if a.group.name then
+										if b.group.name then
+											return a.group.name <= b.group.name;
+										end
+										return true;
+									end
+									return false;
+								end
+								return a.group.craftTypeID > b.group.craftTypeID;
+							end);
+							for i,item in ipairs(entries) do
+								left = item.group.text or RETRIEVING_DATA;
+								if IsRetrieving(left) then working = true; end
+								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+								tinsert(info, { left = item.prefix .. left, right = item.right });
+							end
+						else
+							for i=1,math.min(25, #entries) do
+								local item = entries[i];
+								left = item.group.text or RETRIEVING_DATA;
+								if IsRetrieving(left) then working = true; end
+								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+								tinsert(info, { left = item.prefix .. left, right = item.right });
+							end
+							local more = #entries - 25;
+							if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+						end
 					end
 				end
 			end
+		end
+	end
 
-			for i,item in ipairs(uniques) do
-				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+	-- If the item is a recipe, then show which characters know this recipe.
+	if group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+		local knownBy, kind = {}, nil;
+		if group.speciesID then
+			kind = "Owned by ";
+			for guid,character in pairs(ATTCharacterData) do
+				if character.BattlePets and character.BattlePets[group.speciesID] then
+					tinsert(knownBy, character);
+				end
 			end
-			group.tooltipInfo = uniques;
+		elseif group.spellID then
+			kind = "Known by ";
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Spells and character.Spells[group.spellID] then
+					tinsert(knownBy, character);
+				end
+			end
+		elseif group.toyID then
+			kind = "Owned by ";
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Toys and character.Toys[group.itemID] then
+					tinsert(knownBy, character);
+				end
+			end
+		elseif group.itemID then
+			kind = "Owned by ";
+			for guid,character in pairs(ATTCharacterData) do
+				if (character.RWP and character.RWP[group.itemID]) then
+					tinsert(knownBy, character);
+				end
+			end
+		elseif group.achievementID then
+			kind = "Completed by ";
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Achievements and character.Achievements[group.achievementID] then
+					tinsert(knownBy, character);
+				end
+			end
+		elseif group.questID then
+			kind = "Completed by ";
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Quests and character.Quests[group.questID] then
+					tinsert(knownBy, character);
+				end
+			end
+		end
+		if #knownBy > 0 and kind then
+			app.Sort(knownBy, app.SortDefaults.name);
+			local desc = kind;
+			for i,character in ipairs(knownBy) do
+				if i > 1 then desc = desc .. ", "; end
+				desc = desc .. (character.text or "???");
+				if group.itemID and character == app.CurrentCharacter then
+					local count = GetItemCount(group.itemID, true);
+					if count and count > 1 then
+						desc = desc .. " (x" .. count .. ")";
+					end
+				end
+			end
+			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+		end
+	end
+
+	-- If the user wants to show the progress of this search result, do so.
+	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
+		group.collectionText = GetProgressTextForTooltip(group);
+
+		-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
+		if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
+	end
+
+	-- If there was any informational text generated, then attach that info.
+	if #info > 0 then
+		local uniques, dupes, _ = {}, {};
+		for i,item in ipairs(info) do
+			_ = item.hash or item.left;
+			if not _ then
+				tinsert(uniques, item);
+			else
+				if item.right then _ = _ .. item.right; end
+				if not dupes[_] then
+					dupes[_] = true;
+					tinsert(uniques, item);
+				end
+			end
 		end
 
-		-- Cache the result for a while depending on if there is more work to be done.
-		cache[2] = (working and 0.01) or 100000000;
-		cache[3] = group;
-		return group;
+		for i,item in ipairs(uniques) do
+			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+		end
+		group.tooltipInfo = uniques;
 	end
+
+	-- Cache the result depending on if there is more work to be done.
+	if not working then searchCache[search] = group; end
+	return group;
 end
 app.GetCachedSearchResults = GetCachedSearchResults;
 

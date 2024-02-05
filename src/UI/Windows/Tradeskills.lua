@@ -332,8 +332,8 @@ app:GetWindow("Tradeskills", {
 					while not self:IsVisible() do
 						coroutine.yield();
 					end
-
-					wipe(app.searchCache);
+					
+					app.WipeSearchCache();
 					self:CacheRecipes();
 				end);
 			end

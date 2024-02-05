@@ -382,7 +382,7 @@ settings.SetFilter = function(self, filterID, value)
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	ATTClassicSettings.Tooltips[setting] = value;
-	wipe(app.searchCache);
+	app.WipeSearchCache();
 	self:Refresh();
 end
 settings.SetUnobtainableFilter = function(self, u, value)

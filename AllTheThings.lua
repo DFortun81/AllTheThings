@@ -2970,10 +2970,13 @@ end	-- Symlink Lib
 -- Search Results Lib
 local searchCache = {};
 app.searchCache = searchCache;
-app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
-app.events.PLAYER_DIFFICULTY_CHANGED = function()
+app.WipeSearchCache = function()
 	wipe(searchCache);
 end
+app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
+app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
+app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
+
 local GetCachedSearchResults;
 do
 local function GetPatchString(patch, color)
@@ -5084,7 +5087,7 @@ local function UpdateSearchResults(searchResults)
 		for _,o in ipairs(found) do
 			Update(o, true);
 		end
-		wipe(searchCache);
+		app.WipeSearchCache();
 	end
 	-- app.PrintDebug("UpdateSearchResults Done")
 end
@@ -11199,7 +11202,7 @@ local function UpdateWindowsOnEnd()
 	app.Processing_UpdateWindows = nil;
 	app.Processing_RefreshWindows = nil;
 	app.refreshDataGot = nil;
-	wipe(searchCache);
+	app.WipeSearchCache();
 end
 local function UpdateWindows(force, got)
 	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
@@ -17125,7 +17128,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								print(NEW_RECIPE_LEARNED_TITLE, link);
 							end
 						end
-						wipe(searchCache);
+						app.WipeSearchCache();
 					end
 				end
 			elseif e == "TRADE_SKILL_CLOSE"
@@ -19432,7 +19435,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		UpdateRawID("itemID", itemID);
 		app.Audio:PlayFanfare();
 		app:TakeScreenShot("Heirlooms");
-		wipe(searchCache);
+		app.WipeSearchCache();
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local _, link = GetItemInfo(itemID);
@@ -19448,7 +19451,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		UpdateRawID("itemID", itemID);
 		app.Audio:PlayFanfare();
 		app:TakeScreenShot("Toys");
-		wipe(searchCache);
+		app.WipeSearchCache();
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local name, link = GetItemInfo(itemID);
@@ -19467,7 +19470,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		if oldState ~= 1 then
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
-			wipe(searchCache);
+			app.WipeSearchCache();
 		end
 	end
 end
@@ -19514,7 +19517,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		-- Refresh the Data and Cry!
 		UpdateRawIDs("sourceID", unlearnedSourceIDs);
 		Callback(app.Audio.PlayRemoveSound);
-		wipe(searchCache);
+		app.WipeSearchCache();
 	end
 end
 

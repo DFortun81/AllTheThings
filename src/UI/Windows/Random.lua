@@ -1,7 +1,7 @@
 -- App locals
 local appName, app = ...;
-local contains, CloneReference, searchCache =
-	app.contains, app.CloneReference, app.searchCache;
+local contains, CloneReference =
+	app.contains, app.CloneReference;
 
 -- Global locals
 local ipairs, tinsert, math_max, pairs, unpack, wipe
@@ -128,12 +128,12 @@ local function Reroll(self)
 	if SearchFilter then
 		-- Call to our method and build a list to draw from
 		local cachekey = "SEARCH::" .. SearchFilter;
-		local cache = searchCache[cachekey];
+		local cache = app.searchCache[cachekey];
 		if not cache then
 			cache = {};
 			searchMethods[SearchFilter](self, cache);
 			cache = GenerateWeightedTable(cache);
-			searchCache[cachekey] = cache;
+			app.searchCache[cachekey] = cache;
 		end
 		local weightedTable, totalWeight = unpack(cache);
 		if totalWeight > 0 then
