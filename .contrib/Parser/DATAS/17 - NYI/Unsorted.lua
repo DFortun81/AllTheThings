@@ -205,7 +205,6 @@ root(ROOTS.Unsorted, {
 				i(153406),	-- Tideshaper Staff
 				i(153407),	-- Repurposed Dinghy Anchor
 				i(153415),	-- Harbormaster's Lantern
-				i(161932),	-- Manual of Elemental Enchancement
 				i(155581),	-- Scalawag's Warglaive
 				i(158505),	-- Scalawag's Sail Slicer
 				i(158507),	-- Scalawag's Spikefist

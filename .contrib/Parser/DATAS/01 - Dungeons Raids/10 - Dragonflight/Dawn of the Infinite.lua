@@ -404,6 +404,7 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Focus/Off-hand completed.",
 			["collectible"] = false,
 		}),
+		ig(161932),	-- Manual of Elemental Enchancement		(NYI)
 		ig(18316),	-- Obsidian Bauble						(NYI)
 
 		ig(134727),	-- Cold-Touched Endgame					(Removed)
