@@ -2004,6 +2004,7 @@ function app:GetWindow(suffix, settings)
 					if self.data then
 						if response then self:DefaultRebuild(); end
 						print("ForceRebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+						self.data.window = self;
 						self:ForceUpdate(true);
 					else
 						print("ForceRebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
@@ -2016,6 +2017,7 @@ function app:GetWindow(suffix, settings)
 					if self.data then
 						if response then self:DefaultRebuild(); end
 						print("Rebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+						self.data.window = self;
 						self:Update(true);
 					else
 						print("Rebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
@@ -2026,6 +2028,7 @@ function app:GetWindow(suffix, settings)
 					local response = onRebuild(self);
 					if self.data then
 						if response then self:DefaultRebuild(); end
+						self.data.window = self;
 						self:ForceUpdate(true);
 					end
 				end
@@ -2033,6 +2036,7 @@ function app:GetWindow(suffix, settings)
 					local response = onRebuild(self);
 					if self.data then
 						if response then self:DefaultRebuild(); end
+						self.data.window = self;
 						self:Update(true);
 					end
 				end
@@ -2043,8 +2047,10 @@ function app:GetWindow(suffix, settings)
 					if self.data then
 						print("ForceRebuild: " .. suffix);
 						local lastUpdate = GetTimePreciseSec();
+						self.data.window = self;
 						self:DefaultRebuild();
 						print("ForceRebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+						self.data.window = self;
 						self:ForceUpdate(true);
 					end
 				end
@@ -2054,6 +2060,7 @@ function app:GetWindow(suffix, settings)
 						local lastUpdate = GetTimePreciseSec();
 						self:DefaultRebuild();
 						print("Rebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+						self.data.window = self;
 						self:Update(true);
 					end
 				end
@@ -2061,12 +2068,14 @@ function app:GetWindow(suffix, settings)
 				window.ForceRebuild = function(self)
 					if self.data then
 						self:DefaultRebuild();
+						self.data.window = self;
 						self:ForceUpdate(true);
 					end
 				end
 				window.Rebuild = function(self)
 					if self.data then
 						self:DefaultRebuild();
+						self.data.window = self;
 						self:Update(true);
 					end
 				end
