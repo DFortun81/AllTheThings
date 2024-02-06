@@ -2493,7 +2493,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 
 for i,o in ipairs({
 	applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
-		["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
 		-- #if AFTER 4.0.3
 		--["questID"] = 25485,	-- NOTE: This is what it should be, but it's not checking off correctly.
 		-- #else
@@ -2558,6 +2557,11 @@ for i,o in ipairs({
 			}),
 			-- #else
 			i(54537, {	-- Heart-Shaped Box
+				-- #if BEFORE 10.0.5
+				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
+				-- #else
+				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Heart-Shaped Box you get per day per |cff00CCFFaccount|r has an vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.",
+				-- #endif
 				["timeline"] = { "added 3.3.0" },
 				-- Minimum level this box drops (not 100% sure)
 				-- #if AFTER 9.0.1
