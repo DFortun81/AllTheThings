@@ -13176,6 +13176,9 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window:RegisterEvent("QUEST_DATA_LOAD_RESULT");
 		window:RegisterEvent("QUEST_REMOVED");
 
+		window.AddEventHandler = AddEventHandler
+		window.RemoveEventHandlers = RemoveEventHandlers
+
 		-- Ensure the window updates itself when opened for the first time
 		window.HasPendingUpdate = true;
 		window:Update();
