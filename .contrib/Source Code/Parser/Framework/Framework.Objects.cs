@@ -1284,12 +1284,12 @@ namespace ATT
                 {
                     StringBuilder locale = new StringBuilder(10000);
                     locale.AppendLine("--   WARNING: This file is dynamically generated   --");
-                    locale.AppendLine("local appName, app = ...;");
+                    locale.AppendLine("local appName, _ = ...;");
                     locale.Append("local keys = ");
                     ATT.Export.AddTableNewLines = true;
                     locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
                     locale.AppendLine(@"
-local L = app.L;
+local L = _.L;
 for k,t in pairs(keys) do
     L[k] = t;
 end");

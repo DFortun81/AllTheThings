@@ -1,5 +1,5 @@
 ﻿--   WARNING: This file is dynamically generated   --
-local appName, app = ...;
+local appName, _ = ...;
 local keys = {
 ["ITEM_NAMES"]={
 [20946]="Tactical Task Briefing III",
@@ -2685,6 +2685,7 @@ local keys = {
 [50185]="Green Crystal Monocle",
 [50250]="Posthaste",
 [50384]="Doug Test - Completable Quest4",
+[52819]=_.L.HEADER_NAMES[-1000382],
 [52917]="Grimmy Dialogue",
 [53568]="Kill Credit 1",
 [53569]="Kill Credit 2",
@@ -3279,7 +3280,7 @@ local keys = {
 [95910]="Honorable Combatant's Claymore",
 [95911]="Honorable Combatant's Claymore"}}
 
-local L = app.L;
+local L = _.L;
 for k,t in pairs(keys) do
     L[k] = t;
 end
