@@ -1105,7 +1105,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = HORDE_ONLY,
 		}),
 		q(78981, {	-- Love is in the Air
-			["qg"] = 215296,	-- Aurora Vabsley
+			["qg"] = 215196,	-- Aurora Vabsley
 			["coord"] = { 54.3, 62.7, VALDRAKKEN },
 			["isBreadcrumb"] = true,
 			["timeline"] = { ADDED_10_2_5 },
