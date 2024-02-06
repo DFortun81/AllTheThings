@@ -81,9 +81,10 @@ root(ROOTS.Secrets, {
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50109, {	-- Step 12: A Dark Place
+				["name"] = "Step 12: A Dark Place",
 				["sourceQuests"] = { 50108 },	-- Step 11: Spirit Healer
 				["description"] = "Click on the Shadow Tear in Dragonblight's Emerald Dragonshrine to look for Uuna in the spirit realm.  Once inside, do the following:\n\n1. |cffffffff/cheer|r at Uuna.\n2. Place a |cffffffffCooking Fire|r next to her.\n3. Survive the gauntlet for 3 minutes, running into the |cff883325Soul-Eaters|r to scare them away.\n4. When Uuna wraps her arms around herself and cries, |cffffffff/hug|r her.",
-				["name"] = "Step 12: A Dark Place",
+				["provider"] = { "o", 280747 },	-- Shadow Tear
 				["coord"] = { 66.1, 74.5, DRAGONBLIGHT },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
