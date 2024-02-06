@@ -742,6 +742,7 @@ else
 					--app.PrintDebug("Ignoring Tooltip",tooltipName)
 					-- otherwise mark them as ignored so ATT doesn't process them
 					self.AllTheThingsIgnored = true;
+					return;
 				end
 			end
 
@@ -802,9 +803,6 @@ else
 					end
 					AttachTooltipSearchResults(self, 1, SearchForField, "spellID", spellID);
 					self:Show();
-					if owner and owner.ActiveTexture then
-						self.AllTheThingsProcessing = nil;
-					end
 					return true;
 				end
 
