@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBrideMarshal McBride
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(6, {	-- Bounty on Garrick Padfoot
 							["qg"] = 823,	-- Deputy Willem
@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26389,	-- Blackrock Invasion
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(57393, {	-- Abbey Defender's Crossbow
 									["timeline"] = { "added 4.0.3.13277" },
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 33.3, 54.6, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(57247, {	-- Grape-Picking Sack
 									["timeline"] = { "added 4.0.3.13277" },
@@ -446,7 +446,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 29080,	-- Join the Battle!
 							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
-							["races"] = exclude({ HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
@@ -574,7 +574,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 29079,	-- Lions for Lambs
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(28789, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 29078,	-- Beating Them Back!
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
@@ -885,7 +885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["isBreadcrumb"] = true,	-- TODO Not required for q:62, confirm it becomes unavailable with q:62 complete
 							-- #endif
-							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(131876, {	-- Deputy's Chainmail
 									["timeline"] = { "added 7.0.3.22248" },
@@ -1105,7 +1105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 29081,	-- They Sent Assassin
 							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(1598, {	-- The Stolen Tome
 							["qg"] = 459,	-- Drusilla La Salle
@@ -1227,7 +1227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 29080,	-- Join the Battle!
 							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots

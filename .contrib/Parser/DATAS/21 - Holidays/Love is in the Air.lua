@@ -425,7 +425,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24609, {	-- A Gift for a Lord of Ironforge
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 33.4, 65.8, IRONFORGE },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -433,7 +433,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24612, {	-- A Gift for the Warchief / A Gift for High Overlord Saurfang / A Gift for the Warchief's Advisor
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 52.8, 76.8, ORGRIMMAR },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -441,7 +441,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24613, {	-- A Gift for the Banshee Queen
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 66.4, 38.2, UNDERCITY },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -449,7 +449,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24614, {	-- A Gift for the High Chieftain
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 44.0, 52.8, THUNDER_BLUFF },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -457,7 +457,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24610, {	-- A Gift for the High Priestess of Elune
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 45.2, 57.4, DARNASSUS },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -465,7 +465,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24597, {	-- A Gift for the King of Stormwind
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 62.4, 75.0, STORMWIND_CITY },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -473,7 +473,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24611, {	-- A Gift for the Prophet
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 73.8, 56.8, THE_EXODAR },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -481,7 +481,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		q(24615, {	-- A Gift for the Regent Lord of Quel'Thalas
 			["qg"] = 37887,	-- Kwee Q. Peddlefeet
 			["coord"] = { 64.2, 66.4, SILVERMOON_CITY },
-			["timeline"] = { "added 3.3.0" },
+			["timeline"] = { "added 3.3.0", REMOVED_10_2_5 },
 			["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -1805,7 +1805,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
 				}),
 				i(49927, {	-- Love Token
-					["timeline"] = { "added 3.3.0.10596" },
+					["timeline"] = { "added 3.3.0.10596", REMOVED_10_2_5 },
 					["cost"] = { { "i", 49916, 1 } },	-- 1x Lovely Charm Bracelet
 				}),
 			},
