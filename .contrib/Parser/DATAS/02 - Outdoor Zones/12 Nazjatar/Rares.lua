@@ -332,7 +332,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["g"] = {
 				i(170171),	-- Giant Crab Leg
 				i(169350),	-- Glittering Diamondshell (PET!)
-				i(168081),	-- Brinestone Pickaxe
 			},
 		}),
 		n(152548, {	-- Scale Matriarch Gratinax
@@ -342,8 +341,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 35.6, 41.2, NAZJATAR },
 			["sym"] = {{"select","itemID",
 				170185,	-- Intact Naga Skeleton
-				169370,	-- Scalebrood Hydra (PET!)
 			}},
+			["groups"] = {
+				i(169370),	-- Scalebrood Hydra (PET!)
+			},
 		}),
 		n(152545, {	-- Scale Matriarch Vynara (Verified: Pr3vention)
 			["description"] = "All three Scale Matriarchs share a spawn timer.",
@@ -352,8 +353,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["sym"] = {{"select","itemID",
 				170185,	-- Intact Naga Skeleton
-				169370,	-- Scalebrood Hydra (PET!)
 			}},
+			["groups"] = {
+				i(169370),	-- Scalebrood Hydra (PET!)
+			},
 		}),
 		n(152542, {	-- Scale Matriarch Zodia
 			["description"] = "All three Scale Matriarchs share a spawn timer.",
@@ -362,8 +365,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["sym"] = {{"select","itemID",
 				170185,	-- Intact Naga Skeleton
-				169370,	-- Scalebrood Hydra (PET!)
 			}},
+			["groups"] = {
+				i(169370),	-- Scalebrood Hydra (PET!)
+			},
 		}),
 		n(152552, {	-- Shassera
 			["description"] = "The rare flies back and forth above the water at the back of the cave.",
@@ -497,6 +502,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		pvp(i(168802, {	-- Nazjatar Battle Commendation
 			["description"] = "Drops from Rares while in Warmode and from the zone Battle.",
 		})),
+		i(168081),	-- Brinestone Pickaxe
 		i(167077),	-- Scrying Stone
 	}),
 })));

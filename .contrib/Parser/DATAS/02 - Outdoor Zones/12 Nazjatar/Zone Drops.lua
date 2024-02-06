@@ -331,7 +331,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152560,	-- Whitewave Reefwalker
 			},
 		}),
-		i(169370),	-- Scalebrood Hydra (PET!)
 		i(167077),	-- Scrying Stone
 		i(170200, {	-- Seastorm Totem
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
