@@ -1937,9 +1937,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	-- #endif
 	n(23682, {	-- Headless Horseman
 		-- #if AFTER WRATH
+		-- #if BEFORE 10.1.7
 		["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
 		-- #else
 		["questID"] = 11392,	-- Call the Headless Horseman
+		-- #endif
 		-- #endif
 		["timeline"] = { "added 2.0.1" },
 		["maps"] = {
@@ -2048,7 +2050,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(209024, {	-- Loot-Filled Pumpkin (Epic Bag after 10.1.7 Rework)
 				["timeline"] = { ADDED_10_1_7 },
-				["description"] = "This bag has a higher chance of dropping The Horseman's Reins with more curses applied, as confirmed in a blue post on October 18, 2023.\nThe effect on other items' drop rates remains unknown.",
+				["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Loot-Stuffed Filled Pumpkin you get per day per |cff00CCFFaccount|r has an vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.\n\nThis bag has a higher chance of dropping The Horseman's Reins with more curses applied, as confirmed in a blue post on October 18, 2023.\nThe effect on other items' drop rates remains unknown.",
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
