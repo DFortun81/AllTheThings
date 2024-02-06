@@ -2560,7 +2560,7 @@ for i,o in ipairs({
 				-- #if BEFORE 10.0.5
 				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
 				-- #else
-				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Heart-Shaped Box you get per day per |cff00CCFFaccount|r has an vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.",
+				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Heart-Shaped Box you get per day per |CFFFF0000account|r has an vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.",
 				-- #endif
 				["timeline"] = { "added 3.3.0" },
 				-- Minimum level this box drops (not 100% sure)
@@ -2576,6 +2576,10 @@ for i,o in ipairs({
 						["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
 						["timeline"] = { "added 3.3.0" },
 						["filterID"] = MOUNTS,
+					}),
+					q(79104, {	-- First Heart-Shaped Box of the Day (Accountwide)
+						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
+						["collectible"] = false,
 					}),
 					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
 						["timeline"] = { "added 3.3.0" },

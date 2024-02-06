@@ -493,7 +493,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
 				-- #if AFTER 10.0.5
-				["description"] = "You can loot the Keg-Shaped Treasure Chest once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Keg-Shaped Treasure Chest you get per day per |cff00CCFFaccount|r has an vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.",
+				["description"] = "You can loot the Keg-Shaped Treasure Chest once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Keg-Shaped Treasure Chest you get per day per |CFFFF0000account|r has an vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.",
 				-- #endif
 				["timeline"] = { "added 6.0.1.18594" },
 				["lvl"] = 98,
