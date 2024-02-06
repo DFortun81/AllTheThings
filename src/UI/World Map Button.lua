@@ -6,9 +6,9 @@ local C_Map_GetMapInfo = C_Map.GetMapInfo;
 -- World Map Button
 local WorldMapButton;
 local function CreateWorldMapButton()
-	local button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame.BorderFrame);
+	local button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame:GetCanvasContainer());
 	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
-	button:SetPoint("TOPRIGHT", -WorldMapFrame.questLogWidth - 5, -103);
+	button:SetPoint("TOPRIGHT", 0, -36);
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 	button:SetFrameStrata("HIGH");
 	button:EnableMouse(true);
