@@ -2579,6 +2579,7 @@ for i,o in ipairs({
 					}),
 					q(79104, {	-- First Heart-Shaped Box of the Day (Accountwide)
 						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
+						["timeline"] = { "added 10.2.5" },
 						["collectible"] = false,
 					}),
 					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
