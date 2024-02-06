@@ -426,7 +426,6 @@ root(ROOTS.NeverImplemented, {
 				i(183948),	-- Add Keystone Affix: Spiteful
 				i(183947),	-- Add Keystone Affix: Storming
 				i(180734),	-- Alchemist's Journal
-				i(181341),	-- Alexandros Mograine
 				i(181480),	-- Anima Container 2
 				i(181481),	-- Anima Container 3
 				i(181482),	-- Anima Container 3
@@ -439,7 +438,6 @@ root(ROOTS.NeverImplemented, {
 				i(178089),	-- Ardenweald Unique Loot
 				i(178147),	-- Army of the Darkness Insignia
 				i(175050),	-- Bag o' Conduits
-				i(178886),	-- Baroness Vashj
 				i(178084),	-- Bastion Epic Treasure
 				i(178083),	-- Bastion Rare Treasure
 				i(178082),	-- Bastion Uncommon Treasure
@@ -456,7 +454,6 @@ root(ROOTS.NeverImplemented, {
 				i(181240),	-- Charm of Buff 7
 				i(178720),	-- Chase the Sun
 				i(174038),	-- Chime of Celerity
-				i(178888),	-- Choofa
 				i(182159),	-- Choofa Very Happy PH Reward
 				i(183125),	-- Combat Meditation: Power
 				i(175031),	-- Combo Wrath

@@ -793,10 +793,13 @@ i(180989);	-- Novice's Overflowing Satchel
 i(180974);	-- Novice's Satchel
 i(180985);	-- Novice's Stuffed Satchel
 --- Ember Court ---
+i(181341),	-- Alexandros Mograine
 i(181248);	-- Ancient Sinstone
 i(180485);	-- Ansel's Lucky Violin
+i(178886),	-- Baroness Vashj
 i(181362);	-- Blob of Slime
 i(180486);	-- Chiu's Lute
+i(178888),	-- Choofa
 i(181364);	-- Cluster of Seeds
 i(181361);	-- Court Gossip
 i(181454);	-- Duskmire Ruse
