@@ -182,12 +182,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			o_repeated({	-- Silver Strongbox
 				["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-				["isDaily"] = true,
 				["cost"] = {
 					{ "i", 178915, 1 },	-- 1x Ripe Purian
 					{ "i", 180049, 1 },	-- 1x Steward's Silver Key
 				},
-				["g"] = {
+				["g"] = sharedData({
+					["isDaily"] = true,
+				},{
 					-- Rewards
 					i(184418),	-- Acrobatic Steward (TOY!)
 					-- Objects
@@ -231,7 +232,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["coord"] = { 43.1, 15.7, BASTION },
 						["questID"] = 60754,
 					}),
-				},
+				}),
 			}),
 			o(353691, {	-- Skyward Bell
 				["coords"] = {
