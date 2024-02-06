@@ -771,21 +771,21 @@ else
 						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
 						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
 						--print(guid, type, npcID);
-						if spawn_uid then
-							local showAliveTime = app.Settings:GetTooltipSetting("Alive");
-							local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
-							if showAliveTime or showSpawnTime then
-								local serverTime = GetServerTime();
-								local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
-								if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-								if showAliveTime then self:AddDoubleLine("Alive", app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-								if showSpawnTime then self:AddDoubleLine("Spawned", app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
-							end
-						end
 						if type == "Player" then
 							local method = PLAYER_TOOLTIPS[guid];
 							if method then method(self, target); end
 						elseif type == "Creature" or type == "Vehicle" then
+							if spawn_uid then
+								local showAliveTime = app.Settings:GetTooltipSetting("Alive");
+								local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
+								if showAliveTime or showSpawnTime then
+									local serverTime = GetServerTime();
+									local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
+									if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
+									if showAliveTime then self:AddDoubleLine("Alive", app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+									if showSpawnTime then self:AddDoubleLine("Spawned", app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
+								end
+							end
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
 							AttachTooltipSearchResults(self, 1, SearchForField, "creatureID", tonumber(npcID));
 						end
