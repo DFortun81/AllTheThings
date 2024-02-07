@@ -1104,12 +1104,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.3.0" },
 			["races"] = HORDE_ONLY,
 		}),
-		q(78981, {	-- Love is in the Air
-			["qg"] = 215196,	-- Aurora Vabsley
-			["coord"] = { 54.3, 62.7, VALDRAKKEN },
-			["isBreadcrumb"] = true,
-			["timeline"] = { ADDED_10_2_5 },
-		}),
 		q(24792, {	-- Man on the Inside (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
@@ -1312,6 +1306,84 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(22218),	-- Handful of Rose Petals
 			},
 			-- #endif
+		}),
+		q(78329, {	-- Love is in the Air (A)
+			["qg"] = 215197,	-- Gabbo Blinkwink
+			["coord"] = { 54.3, 60.3, VALDRAKKEN },
+			["isBreadcrumb"] = true,
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78328, {	-- Take a Look Around (A)
+			["qg"] = 211802,	-- Luciana Delgado
+			["coord"] = { 32.3, 49.4, ELWYNN_FOREST },
+			["sourceQuest"] = 78329,	-- Love is in the Air (A)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78332, {	-- I Smell Trouble (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
+			["coord"] = { 32.2, 50.1, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78337, {	-- An Unwelcome Gift (A)
+			["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
+			["sourceQuest"] = 78332,	-- I Smell Trouble (A)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78729, {	-- Raising a Stink (A)
+			["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
+			["sourceQuest"] = 78337,	-- An Unwelcome Gift (A)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78369, {	-- Crushing the Crown (A)
+			["qg"] = 38066,	-- Inspector Snap Snagglebolt
+			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+			["sourceQuest"] = 78729,	-- Raising a Stink (A)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78379, {	-- The Stench of Revenge (A)
+			["qg"] = 38066,	-- Inspector Snap Snagglebolt
+			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+			["sourceQuest"] = 78369,	-- Crushing the Crown (A)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78981, {	-- Love is in the Air (H)
+			["qg"] = 215196,	-- Aurora Vabsley
+			["coord"] = { 54.3, 62.7, VALDRAKKEN },
+			["isBreadcrumb"] = true,
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78980, {	-- Take a Look Around (H)
+			["qg"] = 214477,	-- Mahaja Cloudsong
+			["coord"] = { 41.8, 18.0, DUROTAR },
+			["sourceQuest"] = 78981,	-- Love is in the Air (H)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78982, {	-- I Smell Trouble (H)
+			["qg"] = 37172,	-- Detective Snip Snagglebolt
+			["coord"] = { 41.6, 17.7, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78983, {	-- An Unwelcome Gift (H)
+			["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
+			["sourceQuest"] = 78982,	-- I Smell Trouble (H)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78978, {	-- Raising a Stink (H)
+			["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
+			["sourceQuest"] = 78983,	-- I Smell Trouble (H)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78984, {	-- Crushing the Crown (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
+			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+			["sourceQuest"] = 78978,	-- Raising a Stink (H)
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+		q(78985, {	-- The Stench of Revenge (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
+			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
+			["sourceQuest"] = 78984,	-- Crushing the Crown (H)
+			["timeline"] = { ADDED_10_2_5 },
 		}),
 	}),
 	n(REWARDS, {
