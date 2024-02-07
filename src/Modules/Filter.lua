@@ -229,6 +229,8 @@ DefineToggleFilter("Bound", CharacterFilters,
 function(item)
 	return not item.itemID or item.b == 1;
 end);
+-- binding really doesn't matter as to whether current character can filter to it
+RawCharacterFilters.Bound = nil
 
 -- RequireSkill -- FilterItemClass_RequiredSkill
 DefineToggleFilter("RequireSkill", CharacterFilters,
@@ -348,7 +350,7 @@ function(item)
 	return true;
 end);
 -- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
-RawCharacterFilters["Level"] = nil;
+RawCharacterFilters.Level = nil;
 
 -- ItemSource
 if C_TransmogCollection then
@@ -495,8 +497,8 @@ function(group)
     -- no skill level requirement on the group, have to include it
     return true;
 end);
--- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
-RawCharacterFilters["SkillLevel"] = nil;
+-- SkillLevel doesn't really exclude a character from seeing a given Thing
+RawCharacterFilters.SkillLevel = nil;
 
 -- Trackable
 -- Whether this group can be 'tracked'
@@ -527,7 +529,7 @@ end
 
 -- Filter Combinations
 local function PrintExclusionCause(name, o)
-	app.PrintDebug("FilterExclude",name,o.hash,o.text)
+	app.PrintDebug("FilterExclude",name,o.hash,o.link or o.name)
 end
 local function SettingsAccountFilters(o)
 	for name,filter in pairs(AccountFilters) do
