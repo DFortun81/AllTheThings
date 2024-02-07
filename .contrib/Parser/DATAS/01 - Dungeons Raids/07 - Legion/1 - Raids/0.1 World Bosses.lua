@@ -234,7 +234,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["isRaid"] = true,
 				["g"] = {
-					i(142121),	-- Recipe: Potion of Prolonged Power [Rank 3]
+					i(142121, {	-- Recipe: Potion of Prolonged Power [Rank 3]
+						["timeline"] = { ADDED_7_1_0 },
+					}),
 					i(141425),	-- Avalanche Resistant Legplates
 					i(141417),	-- Desiccated Leather Pants
 					i(141415),	-- Na'zak's Dusty Pantaloons

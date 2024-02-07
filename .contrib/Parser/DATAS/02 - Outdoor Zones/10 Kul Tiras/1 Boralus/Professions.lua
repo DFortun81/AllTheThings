@@ -23,13 +23,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 				}),
 			}),
 			prof(COOKING, {
-				q(54469, {	-- Fresh Dishes (A)
-					["requireSkill"] = COOKING,
-					["provider"] = { "n", 136052 },	-- "Cap'n" Byron Mehlsack <Cooking Trainer>
+				n(136052, {	-- "Cap'n" Byron Mehlsack <Cooking Trainer>
 					["coord"] = { 71.2, 10.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					["g"] = appendGroups(BFA_COOKING, {
+						r(264646),	-- Kul Tiran Cooking
+					}),
 				}),
 			}),
 			prof(ENCHANTING, {
@@ -38,7 +37,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_ENCHANTING, {
 						r(264473),	-- Kul Tiran Enchanting
-						cat(657, {	-- Armor Enchantments
+						n(ARMOR_ENCHANTMENTS, {
 							r(255070),	-- Kul Tiran Crafting
 							r(255035),	-- Kul Tiran Herbalism
 							r(255040),	-- Kul Tiran Mining

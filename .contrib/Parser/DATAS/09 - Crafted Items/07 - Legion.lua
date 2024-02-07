@@ -4,143 +4,140 @@
 root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
-			["requireSkill"] = ALCHEMY,
-			["groups"] = {
-				spell(188299, {	-- Ancient Healing Potion (Rank 2)
-					i(127935),	-- Recipe: Ancient Healing Potion (Rank 3)
-				}),
-				spell(188301, {	-- Ancient Mana Potion
-					i(127918),	-- Recipe: Ancient Mana Potion (Rank 2)
-					i(127936),	-- Recipe: Ancient Mana Potion (Rank 3)
-				}),
-				spell(188304, {	-- Ancient Rejuvenation Potion
-					i(127919),	-- Recipe: Ancient Rejuvenation Potion (Rank 2)
-					i(127937),	-- Recipe: Ancient Rejuvenation Potion (Rank 3)
-				}),
-				spell(251646, {	-- Astral Healing Potion
-					i(152617),	-- Recipe: Astral Healing Potion (Rank 2)
-				}),
-				spell(188313, {	-- Avalanche Elixir
-					i(127922),	-- Recipe: Avalanche Elixir (Rank 2)
-					i(127940),	-- Recipe: Avalanche Elixir (Rank 3)
-				}),
-				spell(188307, {	-- Draught of Raw Magic
-					i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
-					i(127938),	-- Recipe: Draught of Raw Magic (Rank 3)
-				}),
-				spell(188347, {	-- Flask of Ten Thousand Scars
-					i(127951),	-- Recipe: Flask of Ten Thousand Scars (Rank 3)
-				}),
-				spell(188344, {	-- Flask of the Countless Armies (Rank 2)
-					i(127950),	-- Recipe: Flask of the Countless Armies (Rank 3)
-				}),
-				spell(188341, {	-- Flask of the Seventh Demon (Rank 2)
-					i(127949),	-- Recipe: Flask of the Seventh Demon (Rank 3)
-				}),
-				spell(188338, {	-- Flask of the Whispered Pact (Rank 2)
-					i(127948),	-- Recipe: Flask of the Whispered Pact (Rank 3)
-				}),
-				spell(188323, {	-- Infernal Alchemist Stone
-					i(127943),	-- Recipe: Infernal Alchemist Stone (Rank 3)
-				}),
-				spell(188335, {	-- Leytorrent Potion (Rank 2)
-					i(127947),	-- Recipe: Leytorrent Potion (Rank 3)
-				}),
-				spell(247620, {	-- Lightblood Elixir (Rank 2)
-					i(151659),	-- Recipe: Lightblood Elixir (Rank 3)
-				}),
-				spell(188326, {	-- Potion of Deadly Grace (Rank 2)
-					i(127944),	-- Recipe: Potion of Deadly Grace (Rank 3)
-				}),
-				spell(188329, {	-- Potion of the Old War (Rank 2)
-					i(127945),	-- Recipe: Potion of Old War (Rank 3)
-				}),
-				spell(188316, {	-- Skaggldrynk
-					i(127923),	-- Recipe: Skaggldrynk (Rank 2)
-					i(127941),	-- Recipe: Skaggldrynk (Rank 3)
-				}),
-				spell(188319, {	-- Skystep Potion
-					i(127924),	-- Recipe: Skystep Potion (Rank 2)
-					i(127942),	-- Recipe: Skystep Potion (Rank 3)
-				}),
-				spell(188350, {	-- Spirit Cauldron (Rank 2)
-					i(127952),	-- Recipe: Spirit Cauldron (Rank 3)
-				}),
-				spell(188310, {	-- Sylvan Elixir
-					i(127921),	-- Recipe: Sylvan Elixir (Rank 2)
-					i(127939),	-- Recipe: Sylvan Elixir (Rank 3)
-				}),
-				spell(247690, {	-- Tears of the Naaru (Rank 2)
-					i(151705),	-- Recipe: Tears of the Naaru (Rank 3)
-				}),
-				spell(188332, {	-- Unbending Potion (Rank 2)
-					i(127946),	-- Recipe: Unbending Potion (Rank 3)
-				}),
-				spell(188800, {	-- Wild Transformation
-					i(128210),	-- Recipe: Wild Transmutation (Rank 2)
-					i(128211),	-- Recipe: Wild Transmutation (Rank 3)
-					recipe(213257),	-- Transmute: Blood of Sargeras
-					recipe(213252),	-- Transmute: Cloth to Herbs
-					recipe(213249),	-- Transmute: Cloth to Skins
-					recipe(213254),	-- Transmute: Fish to Gems
-					recipe(213255),	-- Transmute: Meat to Pants
-					recipe(213256),	-- Transmute: Meat to Pet
-					recipe(213248),	-- Transmute: Ore to Cloth
-					recipe(213251),	-- Transmute: Ore to Herbs
-					recipe(213253),	-- Transmute: Skins to Herbs
-				}),
-			},
+			spell(188299, {	-- Ancient Healing Potion [Rank 2]
+				i(127935),	-- Recipe: Ancient Healing Potion [Rank 3] (RECIPE!)
+			}),
+			spell(188301, {	-- Ancient Mana Potion [Rank 1]
+				i(127918),	-- Recipe: Ancient Mana Potion [Rank 2] (RECIPE!)
+			}),
+			spell(188302, {	-- Ancient Mana Potion [Rank 2]
+				i(127936),	-- Recipe: Ancient Mana Potion [Rank 3] (RECIPE!)
+			}),
+			spell(188304, {	-- Ancient Rejuvenation Potion [Rank 1]
+				i(127919),	-- Recipe: Ancient Rejuvenation Potion [Rank 2] (RECIPE!)
+			}),
+			spell(188305, {	-- Ancient Rejuvenation Potion [Rank 2]
+				i(127937),	-- Recipe: Ancient Rejuvenation Potion [Rank 3] (RECIPE!)
+			}),
+			spell(251646, bubbleDownSelf({["timeline"] = { ADDED_7_3_0 } }, {	-- Astral Healing Potion
+				i(152617),	-- Recipe: Astral Healing Potion [Rank 2]
+			})),
+			spell(188314, {	-- Avalanche Elixir [Rank 2]
+				i(127940),	-- Recipe: Avalanche Elixir [Rank 3] (RECIPE!)
+			}),
+			spell(188308, {	-- Draught of Raw Magic [Rank 2]
+				i(127938),	-- Recipe: Draught of Raw Magic [Rank 3] (RECIPE!)
+			}),
+			spell(188347, {	-- Flask of Ten Thousand Scars [Rank 2]
+				i(127951),	-- Recipe: Flask of Ten Thousand Scars [Rank 3] (RECIPE!)
+			}),
+			spell(188344, {	-- Flask of the Countless Armies [Rank 2]
+				i(127950),	-- Recipe: Flask of the Countless Armies [Rank 3] (RECIPE!)
+			}),
+			spell(188341, {	-- Flask of the Seventh Demon [Rank 2]
+				i(127949),	-- Recipe: Flask of the Seventh Demon [Rank 3] (RECIPE!)
+			}),
+			spell(188338, {	-- Flask of the Whispered Pact [Rank 2]
+				i(127948),	-- Recipe: Flask of the Whispered Pact [Rank 3] (RECIPE!)
+			}),
+			spell(188323, {	-- Infernal Alchemist Stone [Rank 2]
+				i(127943),	-- Recipe: Infernal Alchemist Stone [Rank 3] (RECIPE!)
+			}),
+			spell(188335, {	-- Leytorrent Potion [Rank 2]
+				i(127947),	-- Recipe: Leytorrent Potion [Rank 3] (RECIPE!)
+			}),
+			spell(247620, bubbleDownSelf({["timeline"] = { ADDED_7_3_0 } }, {	-- Lightblood Elixir [Rank 2]
+				i(151659),	-- Recipe: Lightblood Elixir [Rank 3] (RECIPE!)
+			})),
+			spell(188326, {	-- Potion of Deadly Grace [Rank 2]
+				i(127944),	-- Recipe: Potion of Deadly Grace [Rank 3] (RECIPE!)
+			}),
+			spell(188329, {	-- Potion of the Old War [Rank 2]
+				i(127945),	-- Recipe: Potion of the Old War [Rank 3] (RECIPE!)
+			}),
+			spell(188317, {	-- Skaggldrynk [Rank 2]
+				i(127941),	-- Recipe: Skaggldrynk [Rank 3] (RECIPE!)
+			}),
+			spell(188320, {	-- Skystep Potion [Rank 2]
+				i(127942),	-- Recipe: Skystep Potion [Rank 3] (RECIPE!)
+			}),
+			spell(188350, {	-- Spirit Cauldron [Rank 2]
+				i(127952),	-- Recipe: Spirit Cauldron [Rank 3] (RECIPE!)
+			}),
+			spell(188311, {	-- Sylvan Elixir [Rank 2]
+				i(127939),	-- Recipe: Sylvan Elixir [Rank 3] (RECIPE!)
+			}),
+			spell(247690, bubbleDownSelf({["timeline"] = { ADDED_7_3_0 } }, {	-- Tears of the Naaru [Rank 2]
+				i(151705),	-- Recipe: Tears of the Naaru [Rank 3] (RECIPE!)
+			})),
+			spell(188332, {	-- Unbending Potion [Rank 2]
+				i(127946),	-- Recipe: Unbending Potion [Rank 3] (RECIPE!)
+			}),
+			spell(188800, {	-- Wild Transformation [Rank 1]
+				i(128210),	-- Recipe: Wild Transmutation [Rank 2] (RECIPE!)
+				i(128211),	-- Recipe: Wild Transmutation [Rank 3] (RECIPE!)
+				r(213257),	-- Transmute: Blood of Sargeras (RECIPE!)
+				r(213252),	-- Transmute: Cloth to Herbs (RECIPE!)
+				r(213249),	-- Transmute: Cloth to Skins (RECIPE!)
+				r(213254),	-- Transmute: Fish to Gems (RECIPE!)
+				r(213255),	-- Transmute: Meat to Pants (RECIPE!)
+				r(213256),	-- Transmute: Meat to Pet (RECIPE!)
+				r(213248),	-- Transmute: Ore to Cloth (RECIPE!)
+				r(213251),	-- Transmute: Ore to Herbs (RECIPE!)
+				r(213253),	-- Transmute: Skins to Herbs (RECIPE!)
+			}),
 		}),
 		filter(BATTLE_PETS, {
 			i(137608, {	-- Growling Sac
-				["cost"] = { { "i", 137599, 1 } },	-- Pulsating Sac
-				["timeline"] = { "added 7.0.3.22248" },
-				["groups"] = {
-					i(44822, {	-- Albino Snake (PET!)
-						["timeline"] = { "added 3.1.0.9658" },
-					}),
-					i(11023, {	-- Ancona Chicken (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
-					}),
-					i(10360, {	-- Black Kingsnake (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
-					}),
-					i(29958, {	-- Blue Dragonhawk Hatchling (PET!)
-						["timeline"] = { "added 2.0.1.6180" },
-					}),
-					i(70160, {	-- Crimson Lasher (PET!)
-						["timeline"] = { "added 4.2.0.14333" },
-					}),
-					i(8501,	{	-- Hawk Owl (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
-					}),
-					i(120051, {	-- Kaliri Hatchling (PET!)
-						["timeline"] = { "added 6.0.2.18764" },
-					}),
-					i(29363, {	-- Mana Wyrmling (PET!)
-						["timeline"] = { "added 2.0.1.6180" },
-					}),
-					i(129826, {	-- Nursery Spider (PET!)
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					i(48120, {	-- Obsidian Hatchling (PET!)
-						["timeline"] = { "added 3.2.0.10026" },
-					}),
-					i(29902),	-- Red Moth (PET!)
-					i(136905, {	-- Ridgeback Piglet (PET!)
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					i(136908, {	-- Thaumaturgical Piglet (PET!)
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					i(139789, {	-- Transmutant (PET!)
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					i(29903, {	-- Yellow Moth (PET!)
-						["timeline"] = { "added 2.0.1.6180" },
-					}),
+				["cost"] = {{ "i", 137599, 1 }},	-- Pulsating Sac
+				["sym"] = {{"select","itemID",
+					44822,	-- Albino Snake (PET!)
+					11023,	-- Ancona Chicken (PET!)
+					10360,	-- Black Kingsnake (PET!)
+					29958,	-- Blue Dragonhawk Hatchling (PET!)
+					70160,	-- Crimson Lasher (PET!)
+					8501,	-- Hawk Owl (PET!)
+					120051,	-- Kaliri Hatchling (PET!)
+					29363,	-- Mana Wyrmling (PET!)
+					129826,	-- Nursery Spider (PET!)
+					48120,	-- Obsidian Hatchling (PET!)
+					29902,	-- Red Moth (PET!)
+					29903,	-- Yellow Moth (PET!)
+				}},
+				["g"] = {
+					i(136905),	-- Ridgeback Piglet (PET!)
+					i(136908),	-- Thaumaturgical Piglet (PET!)
+					i(139789),	-- Transmutant (PET!)
 				},
 			}),
+			spell(213256, {	-- Transmute: Meat to Pet
+				i(137599),	-- Pulsating Sac
+			}),
+		}),
+		filter(CONSUMABLES, {
+			i(127834),	-- Ancient Healing Potion
+			i(127835),	-- Ancient Mana Potion
+			i(152615, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Healing Potion
+			i(127839),	-- Avalanche Elixir
+			i(127836),	-- Coastal Rejuvenation Potion
+			i(127837),	-- Draught of Raw Magic
+			i(127850),	-- Flask of Ten Thousand Scars
+			i(127849),	-- Flask of the Countless Armies
+			i(127848),	-- Flask of the Seventh Demon
+			i(127847),	-- Flask of the Whispered Pact
+			i(127846),	-- Leytorrent Potion
+			i(151608, {["timeline"] = {ADDED_7_3_0}}),	-- Lightblood Elixir
+			i(127843),	-- Potion of Deadly Grace
+			i(142117, {["timeline"] = {ADDED_7_1_0}}),	-- Potion of Prolonged Power
+			i(127844),	-- Potion of the Old War
+			i(127840),	-- Skaggldrynk
+			i(127841),	-- Skystep Potion
+			i(127851, {	-- Spirit Cauldron
+				i(127858),	-- Spirit Flask
+			}),
+			i(127838),	-- Sylvan Elixir
+			i(151609, {["timeline"] = {ADDED_7_3_0}}),	-- Tears of the Naaru
+			i(127845),	-- Unbending Potion
 		}),
 		spell(213255, {	-- Transmute: Meat to Pants
 			i(137600, {	-- Pile of Pants
@@ -151,7 +148,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			}),
 		}),
 		filter(TRINKET_F, {
-			i(151607),	-- Astral Alchemist Stone
+			i(151607, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Alchemist Stone
 			i(127842),	-- Infernal Alchemist Stone
 		}),
 	}),

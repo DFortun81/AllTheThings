@@ -281,7 +281,7 @@ root(ROOTS.Zones, {
 				q(41657, {	-- Work Order: Draughts of Raw Magic
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-							i(127920),	-- Recipe: Draught of Raw Magic [Rank 2] (RECIPE!)
+						i(127920),	-- Recipe: Draught of Raw Magic [Rank 2] (RECIPE!)
 					},
 				}),
 				q(41311, {	-- Work Order: Leystone

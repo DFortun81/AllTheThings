@@ -213,7 +213,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["g"] = {
 							ach(10788),	-- Heroic: Halls of Valor
 							i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
-							i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
+							i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap
 							i(134217),	-- Bonespeaker Gloves

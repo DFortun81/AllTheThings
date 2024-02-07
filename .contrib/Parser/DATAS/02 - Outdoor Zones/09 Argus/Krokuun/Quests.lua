@@ -351,30 +351,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					}),
 				},
 			}),
-			q(48016, {	-- Ascending Alchemy
-				["provider"] = { "n", 125346 },	-- Alchemist Funen
-				["coord"] = { 56.2, 66.8, KROKUUN },
-				["groups"] = {
-					i(151706),	-- Recipe: Astral Alchemist Stone (Rank 1)
-				},
-				["requireSkill"] = ALCHEMY,
-			}),
-			q(48002, {	-- Limited Supplies
-				["provider"] = { "n", 125346 },	-- Alchemist Funen
-				["coord"] = { 56.2, 66.8, KROKUUN },
-				["groups"] = {
-					i(151657),	-- Recipe: Lightblood Elixir (Rank 1)
-				},
-				["requireSkill"] = ALCHEMY,
-			}),
-			q(48013, {	-- Tracking the Trackers
-				["provider"] = { "n", 125346 },	-- Alchemist Funen
-				["coord"] = { 56.2, 66.8, KROKUUN },
-				["groups"] = {
-					i(151703),	-- Recipe: Tears of the Naaru (Rank 1)
-				},
-				["requireSkill"] = ALCHEMY,
-			}),
 		}),
 	}),
 })));

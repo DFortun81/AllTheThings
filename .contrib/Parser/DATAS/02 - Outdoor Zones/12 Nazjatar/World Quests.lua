@@ -114,26 +114,44 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
 				["requireSkill"] = COOKING,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(168332),	-- Recipe: Abyssal-Fried Rissole [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56800, {	-- Work Order: Abyssal-Fried Rissole (H)
 				["requireSkill"] = COOKING,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168332),	-- Recipe: Abyssal-Fried Rissole [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56794, {	-- Work Order: Baked Port Tato (A)
 				["requireSkill"] = COOKING,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(168331),	-- Recipe: Baked Port Tato [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56801, {	-- Work Order: Baked Port Tato (H)
 				["requireSkill"] = COOKING,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168331),	-- Recipe: Baked Port Tato [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56797, {	-- Work Order: Bil'Tong (A)
 				["requireSkill"] = COOKING,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(168333),	-- Recipe: Bil'Tong [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56798, {	-- Work Order: Bil'Tong (H)
 				["requireSkill"] = COOKING,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168333),	-- Recipe: Bil'Tong [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56826, {	-- Work Order: Enchant Weapon - Force Multiplier (A)
 				["requireSkill"] = ENCHANTING,
@@ -248,25 +266,34 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}
 			}),
 			q(56796, {	-- Work Order: Fragrant Kakavia (A)
+				["requireSkill"] = COOKING,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(168334),	-- Recipe: Fragrant Kakavia [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56799, {	-- Work Order: Fragrant Kakavia (H)
+				["requireSkill"] = COOKING,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168334),	-- Recipe: Fragrant Kakavia [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56793, {	-- Work Order: Mech-Dowel's "Big Mech" (A)
+				["requireSkill"] = COOKING,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(168330),	-- Recipe: Mech-Dowel's "Big Mech" [Rank 3] (RECIPE!)
+				},
 			}),
 			q(56802, {	-- Work Order: Mech-Dowel's "Big Mech" (H)
+				["requireSkill"] = COOKING,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168330),	-- Recipe: Mech-Dowel's "Big Mech" [Rank 3] (RECIPE!)
+				},
 			}),
 			q(55894),	-- Zoko, Her Iron Defender
 		})),
-		n(REWARDS, {
-			i(168332),	-- Recipe: Abyssal-Fried Rissole [Rank 3] (RECIPE!)
-			i(168331),	-- Recipe: Baked Port Tato [Rank 3] (RECIPE!)
-			i(168333),	-- Recipe: Bil'Tong [Rank 3] (RECIPE!)
-			i(168334),	-- Recipe: Fragrant Kakavia [Rank 3] (RECIPE!)
-			i(168330),	-- Recipe: Mech-Dowel's "Big Mech" [Rank 3] (RECIPE!)
-		}),
 	}),
 })));

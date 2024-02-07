@@ -725,7 +725,6 @@ LEGION_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		r(213250),	-- Transmute: Skins to Ore
 	}),
 }));
-
 BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	filter(CONSUMABLES, {
 		r(279159),	-- Battle Potion of Agility [Rank 1]

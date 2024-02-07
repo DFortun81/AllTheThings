@@ -23,13 +23,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 				}),
 			}),
 			prof(COOKING, {
-				q(54470, {	-- Fresh Dishes (H)
-					["requireSkill"] = COOKING,
-					["provider"] = { "n", 141549 },	-- T'sarah the Royal Chef <Cooking Trainer>
+				n(141549, {	-- T'sarah the Royal Chef <Cooking Trainer>
 					["coord"] = { 28.5, 50.0, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					["g"] = appendGroups(BFA_COOKING, {
+						r(265817),	-- Zandalari Cooking
+					}),
 				}),
 			}),
 			prof(ENCHANTING, {
@@ -38,7 +37,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					["races"] = HORDE_ONLY,
 					["g"] = appendGroups(BFA_ENCHANTING, {
 						r(265805),	-- Zandalari Enchanting
-						cat(657, {	-- Armor Enchantments
+						n(ARMOR_ENCHANTMENTS, {
 							r(267495),	-- Swift Hearthing
 							r(267498),	-- Zandalari Crafting
 							r(267458),	-- Zandalari Herbalism

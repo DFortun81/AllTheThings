@@ -150,7 +150,9 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {
-			i(142119),	-- Recipe: Potion of Prolonged Power [Rank 1] (RECIPE!)
+			i(142119, {	-- Recipe: Potion of Prolonged Power [Rank 1] (RECIPE!)
+				["timeline"] = { ADDED_7_1_0 },
+			}),
 			i(127925),	-- Recipe: Infernal Alchemist Stone [Rank 2] (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {

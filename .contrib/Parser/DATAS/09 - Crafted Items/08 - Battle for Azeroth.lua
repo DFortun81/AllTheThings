@@ -367,6 +367,39 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(170309, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Spellblade [H]
 		}),
 	}),
+	prof(COOKING, {
+		i(168311, {["timeline"] = {ADDED_8_2_0}}),	-- Abyssal-Fried Rissole
+		i(168313, {["timeline"] = {ADDED_8_2_0}}),	-- Baked Port Tato
+		i(174352, {["timeline"] = {ADDED_8_3_0}}),	-- Baked Voidfin
+		i(168314, {["timeline"] = {ADDED_8_2_0}}),	-- Bil'Tong
+		i(166804, {["timeline"] = {ADDED_8_1_0}}),	-- Boralus Blood Sausage
+		i(156526),	-- Bountiful Captain's Feast
+		i(174350, {["timeline"] = {ADDED_8_3_0}}),	-- Dubious Delight
+		i(168315, {["timeline"] = {ADDED_8_2_0}}),	-- Famine Evaluator And Snack Table
+		i(168312, {["timeline"] = {ADDED_8_2_0}}),	-- Fragrant Kakavia
+		i(156525),	-- Galley Banquet
+		i(174349, {["timeline"] = {ADDED_8_3_0}}),	-- Ghastly Goulash
+		i(154889),	-- Grilled Catfish
+		i(174348, {["timeline"] = {ADDED_8_3_0}}),	-- Grilled Gnasher
+		i(163781),	-- Heartsbane Hexenwurst
+		i(165755, {["timeline"] = {ADDED_8_1_0}}),	-- Honey Potpie
+		i(154882),	-- Honey-Glazed Haunches
+		i(174351, {["timeline"] = {ADDED_8_3_0}}),	-- K'Bab
+		i(154881),	-- Kul Tiramisu
+		i(154887),	-- Loa Loaf
+		i(169449, {["timeline"] = {ADDED_8_2_0}}),	-- Mecha-Bytes
+		i(168310, {["timeline"] = {ADDED_8_2_0}}),	-- Mech-Dowel's "Big Mech"
+		i(154885),	-- Mon'Dazi
+		i(154883),	-- Ravenberry Tarts
+		i(166240, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Feast
+		i(154888),	-- Sailor's Pie
+		i(154891),	-- Seasoned Loins
+		i(166344, {["timeline"] = {ADDED_8_1_0}}),	-- Seasoned Steak and Potatoes
+		i(154886),	-- Spiced Snapper
+		i(154884),	-- Swamp Fish 'n Chips
+		i(169280, {["timeline"] = {ADDED_8_2_0}}),	-- Unagi Skewer
+		i(166343, {["timeline"] = {ADDED_8_1_0}}),	-- Wild Berry Bread
+	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
 			i(152875),	-- Gloom Dust

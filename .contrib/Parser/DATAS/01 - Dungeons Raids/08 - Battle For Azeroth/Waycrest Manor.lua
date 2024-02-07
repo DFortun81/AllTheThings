@@ -91,7 +91,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						136541,	-- Bile Oozing
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-						i(163833),	-- Recipe: Heartsbane Hexwurst
+						i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
 						i(159660),	-- Servant Splitter
 						i(159294),	-- Raal's Bib
 						i(159397),	-- Slaughterhouse-Chain Bracers
@@ -175,7 +175,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							136541,	-- Bile Oozing
 						},
 						["g"] = {
-							i(163833),	-- Recipe: Heartsbane Hexwurst
+							i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
 							i(159660),	-- Servant Splitter
 							i(159294),	-- Raal's Bib
 							i(159397),	-- Slaughterhouse-Chain Bracers
@@ -280,7 +280,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							136541,	-- Bile Oozing
 						},
 						["g"] = {
-							i(163833),	-- Recipe: Heartsbane Hexwurst
+							i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
 							i(159660),	-- Servant Splitter
 							i(159294),	-- Raal's Bib
 							i(159397),	-- Slaughterhouse-Chain Bracers

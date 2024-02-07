@@ -548,12 +548,12 @@ i(0, 264642);	-- Draenor Cooking
 i(0, 264644);	-- Legion Cooking
 i(0, 264646);	-- Kul Tiran Cooking
 i(0, 265817);	-- Zandalari Cooking
--- TRAINER --
+--- TRAINER ---
 i(0, 259421);	-- Bountiful Captain's Feast [Rank 1]
 i(0, 259418);	-- Galley Banquet [Rank 1]
 i(0, 259419);	-- Galley Banquet [Rank 2]
-i(0, 259430);	-- Grilled Catfish / Grilled Snapper [Rank 1]
-i(0, 259431);	-- Grilled Catfish / Grilled Snapper [Rank 2]
+i(0, 259430);	-- Grilled Catfish [Rank 1]
+i(0, 259431);	-- Grilled Catfish [Rank 2]
 i(0, 259414);	-- Honey-Glazed Haunches [Rank 1]
 i(0, 259415);	-- Honey-Glazed Haunches [Rank 2]
 i(0, 259411);	-- Kul Tiramisu [Rank 1]
@@ -568,15 +568,15 @@ i(0, 259439);	-- Sailor's Pie [Rank 1]
 i(0, 259440);	-- Sailor's Pie [Rank 2]
 i(0, 259433);	-- Seasoned Loins [Rank 1]
 i(0, 259434);	-- Seasoned Loins [Rank 2]
-i(0, 259445);	-- Spiced Snapper / Spiced Catfish [Rank 1]
-i(0, 259446);	-- Spiced Snapper / Spiced Catfish [Rank 2]
+i(0, 259445);	-- Spiced Snapper [Rank 1]
+i(0, 259446);	-- Spiced Snapper [Rank 2]
 i(0, 259427);	-- Swamp Fish 'n Chips [Rank 1]
 i(0, 259428);	-- Swamp Fish 'n Chips [Rank 2]
--- ITEM --
+--- ITEM ---
 i(162288, 259422);	-- Bountiful Captain's Feast [Rank 2]
 i(162289, 259423);	-- Bountiful Captain's Feast [Rank 3]
 i(162287, 259420);	-- Galley Banquet [Rank 3]
-i(162292, 259432);	-- Grilled Catfish / Grilled Snapper [Rank 3]
+i(162292, 259432);	-- Grilled Catfish [Rank 3]
 i(163833, 280282);	-- Heartsbane Hexwurst
 i(162286, 259416);	-- Honey-Glazed Haunches [Rank 3]
 i(162285, 259413);	-- Kul Tiramisu [Rank 3]
@@ -585,13 +585,13 @@ i(162296, 259444);	-- Mon'Dazi [Rank 3]
 i(162290, 259426);	-- Ravenberry Tarts [Rank 3]
 i(162295, 259441);	-- Sailor's Pie [Rank 3]
 i(162293, 259435);	-- Seasoned Loins [Rank 3]
-i(162297, 259447);	-- Spiced Snapper / Spiced Catfish [Rank 3]
+i(162297, 259447);	-- Spiced Snapper [Rank 3]
 i(162291, 259429);	-- Swamp Fish 'n Chips [Rank 3]
 
 -----------------
 -- PATCH 8.1.0 --
 -----------------
--- TRAINER --
+--- TRAINER ---
 i(0, 290471);	-- Boralus Blood Sausage [Rank 1]
 i(0, 286381);	-- Honey Potpie
 i(0, 287108);	-- Sanguinated Feast [Rank 1]
@@ -599,7 +599,7 @@ i(0, 288030);	-- Seasoned Steak and Potatoes [Rank 1]
 i(0, 288032);	-- Seasoned Steak and Potatoes [Rank 2]
 i(0, 288027);	-- Wild Berry Bread [Rank 1]
 i(0, 288028);	-- Wild Berry Bread [Rank 2]
--- ITEM --
+--- ITEM ---
 i(166806, 290472);	-- Boralus Blood Sausage [Rank 2]
 i(166807, 290473);	-- Boralus Blood Sausage [Rank 3]
 i(166263, 287110);	-- Sanguinated Feast [Rank 2]
@@ -610,7 +610,7 @@ i(166367, 288029);	-- Wild Berry Bread [Rank 3]
 -----------------
 -- PATCH 8.2.0 --
 -----------------
--- TRAINER --
+--- TRAINER ---
 i(0, 297084);	-- Abyssal-Fried Rissole [Rank 1]
 i(0, 297085);	-- Abyssal-Fried Rissole [Rank 2]
 i(0, 297081);	-- Baked Port Tato [Rank 1]
@@ -622,7 +622,7 @@ i(0, 297077);	-- Fragrant Kakavia [Rank 1]
 i(0, 297075);	-- Fragrant Kakavia [Rank 2]
 i(0, 297078);	-- Mech-Dowel's "Big Mech" [Rank 1]
 i(0, 297079);	-- Mech-Dowel's "Big Mech" [Rank 2]
--- ITEM --
+--- ITEM ---
 i(168332, 297086);	-- Abyssal-Fried Rissole [Rank 3]
 i(168331, 297083);	-- Baked Port Tato [Rank 3]
 i(168333, 297089);	-- Bil'Tong [Rank 3]
@@ -638,10 +638,10 @@ i(170075, 303788);	-- Unagi Skewer
 -- PATCH 8.3.0 --
 -----------------
 -- TRAINER (BOOK) --
-i(0, 314959);	-- Baked Voidfin / G'Zpacho
-i(0, 314961);	-- Dubious Delight / B'Sque
-i(0, 314962);	-- Ghastly Goulash / G'Ulash
-i(0, 314963);	-- Grilled Gnasher / B'Rscht
+i(0, 314959);	-- Baked Voidfin
+i(0, 314961);	-- Dubious Delight
+i(0, 314962);	-- Ghastly Goulash
+i(0, 314963);	-- Grilled Gnasher
 i(0, 314960);	-- K'Bab
 
 -----------------

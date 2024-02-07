@@ -140,6 +140,7 @@ root(ROOTS.Zones, {
 						}),
 						i(142120, {	-- Recipe: Potion of Prolonged Power [Rank 2] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(140015, {	-- Scavenged Felsoul Sabaton
 							["cost"] = 5000000,	-- 500g

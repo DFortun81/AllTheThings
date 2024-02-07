@@ -681,11 +681,13 @@ SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline
 	}),
 	filter(MISC, {
 		r(343684),	-- Crafter's Mark I
+		r(343680),	-- Novice Crafter's Mark
+	}),
+	filter(REAGENTS, {
 		r(309636),	-- Enchanted Elethium Bar
 		r(309637),	-- Enchanted Heavy Callous Hide
 		r(309638),	-- Enchanted Lightless Silk
 		r(309645),	-- Eternal Crystal
-		r(343680),	-- Novice Crafter's Mark
 	}),
 	n(WEAPONS, {
 		r(265105),	-- Enchanted Twilight Wand
@@ -723,12 +725,14 @@ DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { AD
 		r(390951),	-- Illusory Adornment: Fire
 		r(391809),	-- Illusory Adornment: Frost
 		r(389191),	-- Recraft Equipment
-		r(390823),	-- Runed Draconium Rod
-		r(394189),	-- Runed Serevite Rod
 		r(391806),	-- Scepter of Spectacle: Air
 		r(391807),	-- Scepter of Spectacle: Earth
 		r(391196),	-- Scepter of Spectacle: Fire
 		r(391197),	-- Scepter of Spectacle: Frost
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(390823),	-- Runed Draconium Rod
+		r(394189),	-- Runed Serevite Rod
 	}),
 	n(WEAPONS, {
 		r(391176),	-- Enchanted Writhebark Wand

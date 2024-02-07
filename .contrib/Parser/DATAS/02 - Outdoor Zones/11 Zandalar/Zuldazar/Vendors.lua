@@ -48,6 +48,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 					i(166806, {	-- Recipe: Boralus Blood Sausage [Rank 2] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
+						["timeline"] = { ADDED_8_1_0 },
 					}),
 					i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
@@ -81,12 +82,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 					i(166263, {	-- Recipe: Sanguinated Feast [Rank 2] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
+						["timeline"] = { ADDED_8_1_0 },
 					}),
 					i(162293, {	-- Recipe: Seasoned Loins [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(166368, {	-- Recipe: Seasoned Steak and Potatoes [Rank 3] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
+						["timeline"] = { ADDED_8_1_0 },
 					}),
 					i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -96,6 +99,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 					i(166367, {	-- Recipe: Wild Berry Bread [Rank 3] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
+						["timeline"] = { ADDED_8_1_0 },
 					}),
 					i(161494, {	-- Sea-Treated Footwraps
 						["cost"] = 14000000,	-- 1,400g

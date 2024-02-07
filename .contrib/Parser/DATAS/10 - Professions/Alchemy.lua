@@ -144,6 +144,266 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			q(29482),	-- Transmutation Master
 		})),
 	}),
+	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		q(39325, {	-- Get Your Mix On
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["g"] = {
+				r(195095, {	-- Blacksmithing (Legion Master)
+					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+					["collectible"] = false,
+				}),
+				applyclassicphase(BFA_PHASE_ONE, r(264250, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Alchemy
+			},
+		}),
+		q(39326, {	-- Missing Shipments
+			["sourceQuests"] = { 39325 },	-- Get Your Mix On
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39566, {	-- The Search for Knowledge
+			["sourceQuests"] = { 39326 },	-- Missing Shipments
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["isBreadcrumb"] = true,
+		}),
+		q(39390, {	-- A Mysterious Text
+			["sourceQuests"] = { 39566 },	-- The Search for Knowledge
+			["provider"] = { "o", 243392 },	-- Alchemy Book
+			["coord"] = { 44.9, 52.1, AZSUNA },
+		}),
+		q(39327, {	-- There's a Scribe for That
+			["sourceQuests"] = { 39390 },	-- A Mysterious Text
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39328, {	-- Ancient Knowledge
+			["sourceQuests"] = { 39327 },	-- There's a Scribe for That
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39329, {	-- A Dormant Burner
+			["sourceQuests"] = { 39328 },	-- Ancient Knowledge
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39330, {	-- Ley Hunting
+			["sourceQuests"] = { 39329 },	-- A Dormant Burner
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39331, {	-- Eye of Azshara: Put a Cork in It
+			["sourceQuests"] = { 39330 },	-- Ley Hunting
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["maps"] = { 713 },	-- Eye of Azshara
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39332, {	-- Furbolg Firewater
+			["sourceQuests"] = { 39331 },	-- Eye of Azshara: Put a Cork in it
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39430, {	-- Flasking for a Favor
+			["sourceQuests"] = { 39332 },	-- Furbolg Firewater
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39334, {	-- Thanks for Flasking
+			["sourceQuests"] = { 39430 },	-- Flasking for a Favor
+			["providers"] = {
+				{ "n", 92242 },	-- Barm Stonebreaker
+				{ "n", 93974 },	-- Leyweaver Erenyi
+			},
+			["coords"] = {
+				{ 55.2, 84.2, HIGHMOUNTAIN },
+				{ 70.4, 46.6, VALSHARAH },
+			},
+		}),
+		q(39335, {	-- Neltharion's Lair: Potent Powder
+			["sourceQuests"] = { 39430 },	-- Flasking for a Favor
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["maps"] = { 731 },	-- Neltharion's Lair
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39336, {	-- We Need More Powder!
+			["sourceQuests"] = { 39335 },	-- Neltharion's Lair: Potent Powder
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39337, {	-- Forlorn Filter
+			["sourceQuests"] = { 39336 },	-- We Need More Powder!
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39431, {	-- Mending the Filter
+			["sourceQuests"] = { 39337 },	-- Forlorn Filter
+			["provider"] = { "o", 249211 },	-- Torn Shaldorei Silk
+			["coord"] = { 54.2, 54.7, VALSHARAH },
+		}),
+		q(44112, {	-- Trading for Dreams
+			["sourceQuests"] = { 39431 },	-- Mending the Filter
+			["provider"] = { "n", 93974 }, -- Leyweaver Erenyi
+			["coord"] = { 70.5, 46.4, VALSHARAH },
+		}),
+		q(39338, {	-- Return the Filter
+			["sourceQuests"] = { 44112 },	-- Trading for Dreams
+			["provider"] = { "n", 93974 }, -- Leyweaver Erenyi
+			["coord"] = { 70.5, 46.4, VALSHARAH },
+		}),
+		q(39339, {	-- A Fragile Crucible
+			["sourceQuests"] = { 39338 },	-- Return the Filter
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39340, {	-- Lining the Crucible
+			["sourceQuests"] = { 39338 },	-- Return the Filter
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["cost"] = {
+				{ "i", 124124, 1 },	-- 1xBlood of Sargeras
+				{ "i", 124116, 1 },	-- 1xFelhide
+				{ "i", 124106, 2 },	-- 2xFelwort
+				{ "i", 128304, 100 },	-- 100xYseralline Seed
+			},
+		}),
+		q(39341, {	-- Vault of the Wardens: Demon's Bile
+			["description"] = "Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",
+			["sourceQuests"] = {
+				39339,	-- A Fragile Crucible
+				39340,	-- Lining the Crucible
+			},
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["cost"] = {{ "i", 127840, 1 }},	-- 1xSkaggldrynk
+		}),
+		q(39343, {	-- Vault of the Wardens: Bendy Glass Tubes
+			["sourceQuests"] = {
+				39339,	-- A Fragile Crucible
+				39340,	-- Lining the Crucible
+			},
+			["provider"] = { "i", 127877 },	-- Bendy Glass Tubes
+			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
+			["coord"] = { 40, 50, 678 },	-- Vault of the Wardens
+		}),
+		q(39344, {	-- Going Underground
+			["sourceQuests"] = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39342, {	-- The Price of the Black Market
+			["sourceQuests"] = { 39344 },	-- Going Underground
+			["provider"] = { "n", 101492 },	-- Ms. Xiulan
+			["coord"] = { 70.8, 19.8, LEGION_THE_UNDERBELLY },
+			["cost"] = {
+				{ "i", 124124, 1 },	-- 1xBlood of Sargeras
+				{ "i", 128833, 5 },	-- 5xKaldorei Ginger Wine
+				{ "i", 128764, 5 },	-- 5xMoist Azsunian Feta
+			},
+		}),
+		q(39333, {	-- An Imprecise Burette
+			["sourceQuests"] = { 39342 },	-- The Price of the Black Market
+			["provider"] = { "n", 101492 },	-- Ms. Xiulan
+			["coord"] = { 70.8, 19.8, LEGION_THE_UNDERBELLY },
+		}),
+		q(39645, {	-- Calibration Experts [A]
+			["sourceQuests"] = { 39333 },	-- An Imprecise Burette
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		q(39345, {	-- Calibration Experts [H]
+			["sourceQuests"] = { 39333 },	-- An Imprecise Burette
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["races"] = HORDE_ONLY,
+		}),
+		q(39346, {	-- Testing the Calibration
+			["sourceQuests"] = {
+				39645,	-- Calibration Experts (A)
+				39345,	-- Calibration Experts (H)
+			},
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["cost"] = {
+				{ "i", 127846, 10 },	-- 10xLeytorrent Potion
+				{ "i", 127843, 10 },	-- 10xPotion of Deadly Grace
+				{ "i", 127844, 10 },	-- 10xPotion of the Old War
+				{ "i", 127845, 10 },	-- 10xUnbending Potion
+			},
+		}),
+		q(39347, {	-- Channeling Our Efforts
+			["sourceQuests"] = { 39346 },	-- Testing the Calibration
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+		}),
+		q(39349, {	-- Black Rook Hold: Heavy, But Helpful
+			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
+			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
+			["cost"] = {{ "i", 127849, 1 }},	-- 1xFlask of the Countless Armies
+		}),
+		q(39348, {	-- Halls of Valor: The Prime Ingredient
+			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
+			["maps"] = { 703, 704, 705 },	-- Halls of Valor
+			["cost"] = {{ "i", 127850, 1 }},	-- 1xFlask of Ten Thousand Scars
+		}),
+		q(39350, {	-- Maw of Souls: A Hope in Helheim
+			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
+			["maps"] = { 706, 707, 708 },	-- Maw of Souls
+			["cost"] = {{ "i", 127847, 1 }},	-- 1xFlask of the Whispered Pact
+		}),
+		q(39351, {	-- The Emerald Nightmare: Rage Fire
+			["sourceQuests"] = {
+				39348,	-- Halls of Valor: The Prime Ingredient
+				39349,	-- Black Rook Hold: Heavy, But Helpful
+				39350,	-- Maw of Souls: A Hope in Helheim
+			},
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
+		}),
+		q(42081, {	-- In With the New
+			["sourceQuests"] = { 39351 },	-- The Emerald Nightmare: Rage Fire
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
+		}),
+		------ 7.3.0 ------
+		q(48016, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Ascending Alchemy
+			["provider"] = { "n", 125346 },	-- Alchemist Funen
+			["coord"] = { 56.2, 66.8, KROKUUN },
+			["cost"] = {
+				{ "i", 151565, 75 },	-- 75xAstral Glory
+				{ "i", 151568, 5 },	-- 5xPrimal Sargerite
+				{ "i", 127842, 1 },	-- 1xInfernal Alchemist Stone
+			},
+			["groups"] = {
+				i(151706),	-- Recipe: Astral Alchemist Stone [Rank 1] (RECIPE!)
+			},
+		})),
+		q(48002, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Limited Supplies
+			["provider"] = { "n", 125346 },	-- Alchemist Funen
+			["coord"] = { 56.2, 66.8, KROKUUN },
+			["groups"] = {
+				i(151657),	-- Recipe: Lightblood Elixir [Rank 1] (RECIPE!)
+			},
+		})),
+		q(48013, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Tracking the Trackers
+			["provider"] = { "n", 125346 },	-- Alchemist Funen
+			["coord"] = { 56.2, 66.8, KROKUUN },
+			["groups"] = {
+				i(151703),	-- Recipe: Tears of the Naaru [Rank 1] (RECIPE!)
+			},
+		})),
+	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18770, {	-- Silas' Sphere of Transmutation
@@ -624,102 +884,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 
 
 -- #if ANYCLASSIC
-local applytraining = function(g)
-	-- #if NOT ANYCLASSIC
-	-- TODO: Solve this for classic, until then, only apply the filter to Retail.
-	bubbleDown({ ["u"] = 15 }, g);	-- Training Recipes / Unlearnable
-	-- #endif
-	return g;
-end
-
 -- Alchemy - Skill ID 171 / Spell ID 2259
 root(ROOTS.Professions, prof(ALCHEMY, {
 	tier(CLASSIC_TIER, {
-		-- #if AFTER 4.3.0.14732
-		n(QUESTS, {
-			q(29481, {	-- Elixir Master
-				["qgs"] = {
-					4160,	-- Ainethil
-					3347,	-- Yelmak
-					3009,	-- Bena Winterhoof
-					5177,	-- Tally Berryfizz
-					5499,	-- Lilyssia Nightbreeze
-					4611,	-- Doctor Herbert Halsey
-				},
-				["coords"] = {
-					{ 54.0, 38.6, DARNASSUS },	-- Ainethil
-					{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-					{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
-					{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-					{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
-					{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
-				},
-				["description"] = "Requires 300 Classic Alchemy.",
-				["timeline"] = { "added 4.3.0.14732" },
-				["repeatable"] = true,
-			}),
-			q(29067, {	-- Potion Master
-				["qgs"] = {
-					4160,	-- Ainethil
-					3347,	-- Yelmak
-					3009,	-- Bena Winterhoof
-					5177,	-- Tally Berryfizz
-					5499,	-- Lilyssia Nightbreeze
-					4611,	-- Doctor Herbert Halsey
-				},
-				["coords"] = {
-					{ 54.0, 38.6, DARNASSUS },	-- Ainethil
-					{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-					{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
-					{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-					{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
-					{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
-				},
-				["description"] = "Requires 300 Classic Alchemy.",
-				["timeline"] = { "added 4.3.0.14732" },
-				["repeatable"] = true,
-			}),
-			q(29482, {	-- Transmutation Master
-				["qgs"] = {
-					4160,	-- Ainethil
-					3347,	-- Yelmak
-					3009,	-- Bena Winterhoof
-					5177,	-- Tally Berryfizz
-					5499,	-- Lilyssia Nightbreeze
-					4611,	-- Doctor Herbert Halsey
-				},
-				["coords"] = {
-					{ 54.0, 38.6, DARNASSUS },	-- Ainethil
-					{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-					{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
-					{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-					{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
-					{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
-				},
-				["description"] = "Requires 300 Classic Alchemy.",
-				["timeline"] = { "added 4.3.0.14732" },
-				["repeatable"] = true,
-			}),
-		}),
-		-- #endif
-		-- #if AFTER 8.1.5
-		applytraining({
-			["name"] = "Training",
-			["categoryID"] = 1250,
-			["groups"] = {
-				{
-					["name"] = "Potion of Durability",
-					["timeline"] = { "added 8.1.5" },
-					["recipeID"] = 288182,
-				},
-				{
-					["name"] = "Potion of Shifting States",
-					["timeline"] = { "added 8.1.5" },
-					["recipeID"] = 288176,
-				}
-			}
-		}),
-		-- #endif
 		{
 			["name"] = "Materials",
 			["categoryID"] = 644,
@@ -2722,1428 +2889,6 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			}
 		}
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, {
-		{
-			["name"] = "Cauldrons",
-			["categoryID"] = 439,
-			["groups"] = {
-				{
-					["name"] = "Spirit Cauldron",
-					["nextRecipeID"] = 188350,
-					["recipeID"] = 188349
-				},
-				{
-					["name"] = "Spirit Cauldron",
-					["nextRecipeID"] = 188351,
-					["previousRecipeID"] = 188349,
-					["recipeID"] = 188350
-				},
-				{
-					["name"] = "Spirit Cauldron",
-					["previousRecipeID"] = 188350,
-					["recipeID"] = 188351
-				}
-			}
-		},
-		{
-			["name"] = "Combat Potions",
-			["categoryID"] = 434,
-			["groups"] = {
-				{
-					["name"] = "Ancient Healing Potion",
-					["nextRecipeID"] = 188299,
-					["recipeID"] = 188297
-				},
-				{
-					["name"] = "Ancient Healing Potion",
-					["nextRecipeID"] = 188300,
-					["previousRecipeID"] = 188297,
-					["recipeID"] = 188299
-				},
-				{
-					["name"] = "Ancient Healing Potion",
-					["previousRecipeID"] = 188299,
-					["recipeID"] = 188300
-				},
-				{
-					["name"] = "Ancient Mana Potion",
-					["nextRecipeID"] = 188302,
-					["recipeID"] = 188301
-				},
-				{
-					["name"] = "Ancient Mana Potion",
-					["nextRecipeID"] = 188303,
-					["previousRecipeID"] = 188301,
-					["recipeID"] = 188302
-				},
-				{
-					["name"] = "Ancient Mana Potion",
-					["previousRecipeID"] = 188302,
-					["recipeID"] = 188303
-				},
-				{
-					["name"] = "Ancient Rejuvenation Potion",
-					["nextRecipeID"] = 188305,
-					["recipeID"] = 188304
-				},
-				{
-					["name"] = "Ancient Rejuvenation Potion",
-					["nextRecipeID"] = 188306,
-					["previousRecipeID"] = 188304,
-					["recipeID"] = 188305
-				},
-				{
-					["name"] = "Ancient Rejuvenation Potion",
-					["previousRecipeID"] = 188305,
-					["recipeID"] = 188306
-				},
-				{
-					["name"] = "Astral Healing Potion",
-					["nextRecipeID"] = 251651,
-					["recipeID"] = 251646
-				},
-				{
-					["name"] = "Astral Healing Potion",
-					["nextRecipeID"] = 251658,
-					["previousRecipeID"] = 251646,
-					["recipeID"] = 251651
-				},
-				{
-					["name"] = "Astral Healing Potion",
-					["previousRecipeID"] = 251651,
-					["recipeID"] = 251658
-				},
-				{
-					["name"] = "Leytorrent Potion",
-					["nextRecipeID"] = 188335,
-					["recipeID"] = 188334
-				},
-				{
-					["name"] = "Leytorrent Potion",
-					["nextRecipeID"] = 188336,
-					["previousRecipeID"] = 188334,
-					["recipeID"] = 188335
-				},
-				{
-					["name"] = "Leytorrent Potion",
-					["previousRecipeID"] = 188335,
-					["recipeID"] = 188336
-				},
-				{
-					["name"] = "Lightblood Elixir",
-					["nextRecipeID"] = 247620,
-					["recipeID"] = 247619
-				},
-				{
-					["name"] = "Lightblood Elixir",
-					["nextRecipeID"] = 247622,
-					["previousRecipeID"] = 247619,
-					["recipeID"] = 247620
-				},
-				{
-					["name"] = "Lightblood Elixir",
-					["previousRecipeID"] = 247620,
-					["recipeID"] = 247622
-				},
-				{
-					["name"] = "Potion of Deadly Grace",
-					["nextRecipeID"] = 188326,
-					["recipeID"] = 188325
-				},
-				{
-					["name"] = "Potion of Deadly Grace",
-					["nextRecipeID"] = 188327,
-					["previousRecipeID"] = 188325,
-					["recipeID"] = 188326
-				},
-				{
-					["name"] = "Potion of Deadly Grace",
-					["previousRecipeID"] = 188326,
-					["recipeID"] = 188327
-				},
-				{
-					["name"] = "Potion of Prolonged Power",
-					["nextRecipeID"] = 229218,
-					["recipeID"] = 229217
-				},
-				{
-					["name"] = "Potion of Prolonged Power",
-					["nextRecipeID"] = 229220,
-					["previousRecipeID"] = 229217,
-					["recipeID"] = 229218
-				},
-				{
-					["name"] = "Potion of Prolonged Power",
-					["previousRecipeID"] = 229218,
-					["recipeID"] = 229220
-				},
-				{
-					["name"] = "Potion of the Old War",
-					["nextRecipeID"] = 188329,
-					["recipeID"] = 188328
-				},
-				{
-					["name"] = "Potion of the Old War",
-					["nextRecipeID"] = 188330,
-					["previousRecipeID"] = 188328,
-					["recipeID"] = 188329
-				},
-				{
-					["name"] = "Potion of the Old War",
-					["previousRecipeID"] = 188329,
-					["recipeID"] = 188330
-				},
-				{
-					["name"] = "Unbending Potion",
-					["nextRecipeID"] = 188332,
-					["recipeID"] = 188331
-				},
-				{
-					["name"] = "Unbending Potion",
-					["nextRecipeID"] = 188333,
-					["previousRecipeID"] = 188331,
-					["recipeID"] = 188332
-				},
-				{
-					["name"] = "Unbending Potion",
-					["previousRecipeID"] = 188332,
-					["recipeID"] = 188333
-				}
-			}
-		},
-		{
-			["name"] = "Flasks",
-			["categoryID"] = 435,
-			["groups"] = {
-				{
-					["name"] = "Flask of Ten Thousand Scars",
-					["nextRecipeID"] = 188347,
-					["recipeID"] = 188346
-				},
-				{
-					["name"] = "Flask of Ten Thousand Scars",
-					["nextRecipeID"] = 188348,
-					["previousRecipeID"] = 188346,
-					["recipeID"] = 188347
-				},
-				{
-					["name"] = "Flask of Ten Thousand Scars",
-					["previousRecipeID"] = 188347,
-					["recipeID"] = 188348
-				},
-				{
-					["name"] = "Flask of the Countless Armies",
-					["nextRecipeID"] = 188344,
-					["recipeID"] = 188343
-				},
-				{
-					["name"] = "Flask of the Countless Armies",
-					["nextRecipeID"] = 188345,
-					["previousRecipeID"] = 188343,
-					["recipeID"] = 188344
-				},
-				{
-					["name"] = "Flask of the Countless Armies",
-					["previousRecipeID"] = 188344,
-					["recipeID"] = 188345
-				},
-				{
-					["name"] = "Flask of the Seventh Demon",
-					["nextRecipeID"] = 188341,
-					["recipeID"] = 188340
-				},
-				{
-					["name"] = "Flask of the Seventh Demon",
-					["nextRecipeID"] = 188342,
-					["previousRecipeID"] = 188340,
-					["recipeID"] = 188341
-				},
-				{
-					["name"] = "Flask of the Seventh Demon",
-					["previousRecipeID"] = 188341,
-					["recipeID"] = 188342
-				},
-				{
-					["name"] = "Flask of the Whispered Pact",
-					["nextRecipeID"] = 188338,
-					["recipeID"] = 188337
-				},
-				{
-					["name"] = "Flask of the Whispered Pact",
-					["nextRecipeID"] = 188339,
-					["previousRecipeID"] = 188337,
-					["recipeID"] = 188338
-				},
-				{
-					["name"] = "Flask of the Whispered Pact",
-					["previousRecipeID"] = 188338,
-					["recipeID"] = 188339
-				}
-			}
-		},
-		{
-			["name"] = "Transmutation",
-			["categoryID"] = 436,
-			["groups"] = {
-				{
-					["name"] = "Transmute: Blood of Sargeras",
-					["recipeID"] = 213257
-				},
-				{
-					["name"] = "Transmute: Cloth to Herbs",
-					["recipeID"] = 213252
-				},
-				{
-					["name"] = "Transmute: Cloth to Skins",
-					["recipeID"] = 213249
-				},
-				{
-					["name"] = "Transmute: Fish to Gems",
-					["recipeID"] = 213254
-				},
-				{
-					["name"] = "Transmute: Meat to Pants",
-					["recipeID"] = 213255
-				},
-				{
-					["name"] = "Transmute: Meat to Pet",
-					["recipeID"] = 213256
-				},
-				{
-					["name"] = "Transmute: Ore to Cloth",
-					["recipeID"] = 213248
-				},
-				{
-					["name"] = "Transmute: Ore to Herbs",
-					["recipeID"] = 213251
-				},
-				{
-					["name"] = "Transmute: Primal Sargerite",
-					["recipeID"] = 247701
-				},
-				{
-					["name"] = "Transmute: Skins to Herbs",
-					["recipeID"] = 213253
-				},
-				{
-					["name"] = "Transmute: Skins to Ore",
-					["recipeID"] = 213250
-				},
-				{
-					["name"] = "Wild Transmutation",
-					["nextRecipeID"] = 188801,
-					["recipeID"] = 188800
-				},
-				{
-					["name"] = "Wild Transmutation",
-					["nextRecipeID"] = 188802,
-					["previousRecipeID"] = 188800,
-					["recipeID"] = 188801
-				},
-				{
-					["name"] = "Wild Transmutation",
-					["previousRecipeID"] = 188801,
-					["recipeID"] = 188802
-				}
-			}
-		},
-		{
-			["name"] = "Trinkets",
-			["categoryID"] = 438,
-			["groups"] = {
-				{
-					["name"] = "Astral Alchemist Stone",
-					["nextRecipeID"] = 247695,
-					["recipeID"] = 247694
-				},
-				{
-					["name"] = "Astral Alchemist Stone",
-					["nextRecipeID"] = 247696,
-					["previousRecipeID"] = 247694,
-					["recipeID"] = 247695
-				},
-				{
-					["name"] = "Astral Alchemist Stone",
-					["previousRecipeID"] = 247695,
-					["recipeID"] = 247696
-				},
-				{
-					["name"] = "Infernal Alchemist Stone",
-					["nextRecipeID"] = 188323,
-					["recipeID"] = 188322
-				},
-				{
-					["name"] = "Infernal Alchemist Stone",
-					["nextRecipeID"] = 188324,
-					["previousRecipeID"] = 188322,
-					["recipeID"] = 188323
-				},
-				{
-					["name"] = "Infernal Alchemist Stone",
-					["previousRecipeID"] = 188323,
-					["recipeID"] = 188324
-				}
-			}
-		},
-		{
-			["name"] = "Utility Potions",
-			["categoryID"] = 437,
-			["groups"] = {
-				{
-					["name"] = "Avalanche Elixir",
-					["nextRecipeID"] = 188314,
-					["recipeID"] = 188313
-				},
-				{
-					["name"] = "Avalanche Elixir",
-					["nextRecipeID"] = 188315,
-					["previousRecipeID"] = 188313,
-					["recipeID"] = 188314
-				},
-				{
-					["name"] = "Avalanche Elixir",
-					["previousRecipeID"] = 188314,
-					["recipeID"] = 188315
-				},
-				{
-					["name"] = "Draught of Raw Magic",
-					["nextRecipeID"] = 188308,
-					["recipeID"] = 188307
-				},
-				{
-					["name"] = "Draught of Raw Magic",
-					["nextRecipeID"] = 188309,
-					["previousRecipeID"] = 188307,
-					["recipeID"] = 188308
-				},
-				{
-					["name"] = "Draught of Raw Magic",
-					["previousRecipeID"] = 188308,
-					["recipeID"] = 188309
-				},
-				{
-					["name"] = "Silvery Salve",
-					["recipeID"] = 221690
-				},
-				{
-					["name"] = "Skaggldrynk",
-					["nextRecipeID"] = 188317,
-					["recipeID"] = 188316
-				},
-				{
-					["name"] = "Skaggldrynk",
-					["nextRecipeID"] = 188318,
-					["previousRecipeID"] = 188316,
-					["recipeID"] = 188317
-				},
-				{
-					["name"] = "Skaggldrynk",
-					["previousRecipeID"] = 188317,
-					["recipeID"] = 188318
-				},
-				{
-					["name"] = "Skystep Potion",
-					["nextRecipeID"] = 188320,
-					["recipeID"] = 188319
-				},
-				{
-					["name"] = "Skystep Potion",
-					["nextRecipeID"] = 188321,
-					["previousRecipeID"] = 188319,
-					["recipeID"] = 188320
-				},
-				{
-					["name"] = "Skystep Potion",
-					["previousRecipeID"] = 188320,
-					["recipeID"] = 188321
-				},
-				{
-					["name"] = "Sylvan Elixir",
-					["nextRecipeID"] = 188311,
-					["recipeID"] = 188310
-				},
-				{
-					["name"] = "Sylvan Elixir",
-					["nextRecipeID"] = 188312,
-					["previousRecipeID"] = 188310,
-					["recipeID"] = 188311
-				},
-				{
-					["name"] = "Sylvan Elixir",
-					["previousRecipeID"] = 188311,
-					["recipeID"] = 188312
-				},
-				{
-					["name"] = "Tears of the Naaru",
-					["nextRecipeID"] = 247690,
-					["recipeID"] = 247688
-				},
-				{
-					["name"] = "Tears of the Naaru",
-					["nextRecipeID"] = 247691,
-					["previousRecipeID"] = 247688,
-					["recipeID"] = 247690
-				},
-				{
-					["name"] = "Tears of the Naaru",
-					["previousRecipeID"] = 247690,
-					["recipeID"] = 247691
-				}
-			}
-		}
-	})),
-	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, {
-		n(DISCOVERY, {
-			["description"] = "The following recipes can be discovered by Transmuting the previous rank.",
-			["groups"] = {
-				{	-- Sanguinated Alchemist Stone
-					["spellID"] = 291084,	-- Sanguinated Alchemist Stone
-					["groups"] = {
-						{	-- Recipe: Imbued Alchemist Stone
-							["itemID"] = 166977,	-- Recipe: Imbued Alchemist Stone
-						},
-						{	-- Imbued Alchemist Stone
-							["spellID"] = 291085,	-- Imbued Alchemist Stone
-							["groups"] = {
-								{	-- Recipe: Emblazoned Alchemist Stone
-									["itemID"] = 166978,	-- Recipe: Emblazoned Alchemist Stone
-								},
-							},
-						},
-					},
-				},
-				{	-- Tidal Alchemist Stone
-					["spellID"] = 286921,	-- Tidal Alchemist Stone
-					["groups"] = {
-						{	-- Recipe: Spirited Alchemist Stone
-							["itemID"] = 165929,	-- Recipe: Spirited Alchemist Stone
-						},
-						{	-- Spirited Alchemist Stone
-							["spellID"] = 286922,	-- Spirited Alchemist Stone
-							["groups"] = {
-								{	-- Recipe: Eternal Alchemist Stone
-									["itemID"] = 165930,	-- Recipe: Eternal Alchemist Stone
-								},
-							},
-						},
-					},
-				},
-			},
-		}),
-		applytraining({
-			["name"] = "Training",
-			["categoryID"] = 1250,
-			["groups"] = {
-				{
-					["name"] = "Potion of Durability",
-					["recipeID"] = 288182
-				},
-				{
-					["name"] = "Potion of Shifting States",
-					["recipeID"] = 288176
-				}
-			}
-		}),
-		{
-			["name"] = "Cauldrons",
-			["categoryID"] = 1228,
-			["groups"] = {
-				{
-					["name"] = "Greater Mystical Cauldron",
-					["nextRecipeID"] = 298863,
-					["recipeID"] = 298862
-				},
-				{
-					["name"] = "Greater Mystical Cauldron",
-					["nextRecipeID"] = 298864,
-					["previousRecipeID"] = 298862,
-					["recipeID"] = 298863
-				},
-				{
-					["name"] = "Greater Mystical Cauldron",
-					["previousRecipeID"] = 298863,
-					["recipeID"] = 298864
-				},
-				{
-					["name"] = "Mystical Cauldron",
-					["nextRecipeID"] = 276976,
-					["recipeID"] = 276975
-				},
-				{
-					["name"] = "Mystical Cauldron",
-					["nextRecipeID"] = 276977,
-					["previousRecipeID"] = 276975,
-					["recipeID"] = 276976
-				},
-				{
-					["name"] = "Mystical Cauldron",
-					["previousRecipeID"] = 276976,
-					["recipeID"] = 276977
-				}
-			}
-		},
-		{
-			["name"] = "Combat Potions",
-			["categoryID"] = 605,
-			["groups"] = {
-				{
-					["name"] = "Abyssal Healing Potion",
-					["nextRecipeID"] = 301311,
-					["recipeID"] = 301310
-				},
-				{
-					["name"] = "Abyssal Healing Potion",
-					["nextRecipeID"] = 301312,
-					["previousRecipeID"] = 301310,
-					["recipeID"] = 301311
-				},
-				{
-					["name"] = "Abyssal Healing Potion",
-					["previousRecipeID"] = 301311,
-					["recipeID"] = 301312
-				},
-				{
-					["name"] = "Battle Potion of Agility",
-					["nextRecipeID"] = 279160,
-					["recipeID"] = 279159
-				},
-				{
-					["name"] = "Battle Potion of Agility",
-					["nextRecipeID"] = 279161,
-					["previousRecipeID"] = 279159,
-					["recipeID"] = 279160
-				},
-				{
-					["name"] = "Battle Potion of Agility",
-					["previousRecipeID"] = 279160,
-					["recipeID"] = 279161
-				},
-				{
-					["name"] = "Battle Potion of Intellect",
-					["nextRecipeID"] = 279163,
-					["recipeID"] = 279162
-				},
-				{
-					["name"] = "Battle Potion of Intellect",
-					["nextRecipeID"] = 279164,
-					["previousRecipeID"] = 279162,
-					["recipeID"] = 279163
-				},
-				{
-					["name"] = "Battle Potion of Intellect",
-					["previousRecipeID"] = 279163,
-					["recipeID"] = 279164
-				},
-				{
-					["name"] = "Battle Potion of Stamina",
-					["nextRecipeID"] = 279166,
-					["recipeID"] = 279165
-				},
-				{
-					["name"] = "Battle Potion of Stamina",
-					["nextRecipeID"] = 279167,
-					["previousRecipeID"] = 279165,
-					["recipeID"] = 279166
-				},
-				{
-					["name"] = "Battle Potion of Stamina",
-					["previousRecipeID"] = 279166,
-					["recipeID"] = 279167
-				},
-				{
-					["name"] = "Battle Potion of Strength",
-					["nextRecipeID"] = 279169,
-					["recipeID"] = 279168
-				},
-				{
-					["name"] = "Battle Potion of Strength",
-					["nextRecipeID"] = 279170,
-					["previousRecipeID"] = 279168,
-					["recipeID"] = 279169
-				},
-				{
-					["name"] = "Battle Potion of Strength",
-					["previousRecipeID"] = 279169,
-					["recipeID"] = 279170
-				},
-				{
-					["name"] = "Coastal Healing Potion",
-					["nextRecipeID"] = 252383,
-					["recipeID"] = 252382
-				},
-				{
-					["name"] = "Coastal Healing Potion",
-					["nextRecipeID"] = 252384,
-					["previousRecipeID"] = 252382,
-					["recipeID"] = 252383
-				},
-				{
-					["name"] = "Coastal Healing Potion",
-					["previousRecipeID"] = 252383,
-					["recipeID"] = 252384
-				},
-				{
-					["name"] = "Coastal Mana Potion",
-					["nextRecipeID"] = 252386,
-					["recipeID"] = 252385
-				},
-				{
-					["name"] = "Coastal Mana Potion",
-					["nextRecipeID"] = 252387,
-					["previousRecipeID"] = 252385,
-					["recipeID"] = 252386
-				},
-				{
-					["name"] = "Coastal Mana Potion",
-					["previousRecipeID"] = 252386,
-					["recipeID"] = 252387
-				},
-				{
-					["name"] = "Coastal Rejuvenation Potion",
-					["nextRecipeID"] = 252389,
-					["recipeID"] = 252388
-				},
-				{
-					["name"] = "Coastal Rejuvenation Potion",
-					["nextRecipeID"] = 252390,
-					["previousRecipeID"] = 252388,
-					["recipeID"] = 252389
-				},
-				{
-					["name"] = "Coastal Rejuvenation Potion",
-					["previousRecipeID"] = 252389,
-					["recipeID"] = 252390
-				},
-				{
-					["name"] = "Potion of Bursting Blood",
-					["nextRecipeID"] = 252342,
-					["recipeID"] = 252341
-				},
-				{
-					["name"] = "Potion of Bursting Blood",
-					["nextRecipeID"] = 252343,
-					["previousRecipeID"] = 252341,
-					["recipeID"] = 252342
-				},
-				{
-					["name"] = "Potion of Bursting Blood",
-					["previousRecipeID"] = 252342,
-					["recipeID"] = 252343
-				},
-				{
-					["name"] = "Potion of Empowered Proximity",
-					["nextRecipeID"] = 298727,
-					["recipeID"] = 298726
-				},
-				{
-					["name"] = "Potion of Empowered Proximity",
-					["nextRecipeID"] = 298728,
-					["previousRecipeID"] = 298726,
-					["recipeID"] = 298727
-				},
-				{
-					["name"] = "Potion of Empowered Proximity",
-					["previousRecipeID"] = 298727,
-					["recipeID"] = 298728
-				},
-				{
-					["name"] = "Potion of Focused Resolve",
-					["nextRecipeID"] = 298745,
-					["recipeID"] = 298744
-				},
-				{
-					["name"] = "Potion of Focused Resolve",
-					["nextRecipeID"] = 298746,
-					["previousRecipeID"] = 298744,
-					["recipeID"] = 298745
-				},
-				{
-					["name"] = "Potion of Focused Resolve",
-					["previousRecipeID"] = 298745,
-					["recipeID"] = 298746
-				},
-				{
-					["name"] = "Potion of Replenishment",
-					["nextRecipeID"] = 252339,
-					["recipeID"] = 252337
-				},
-				{
-					["name"] = "Potion of Replenishment",
-					["nextRecipeID"] = 252340,
-					["previousRecipeID"] = 252337,
-					["recipeID"] = 252339
-				},
-				{
-					["name"] = "Potion of Replenishment",
-					["previousRecipeID"] = 252339,
-					["recipeID"] = 252340
-				},
-				{
-					["name"] = "Potion of Rising Death",
-					["nextRecipeID"] = 252345,
-					["recipeID"] = 252344
-				},
-				{
-					["name"] = "Potion of Rising Death",
-					["nextRecipeID"] = 252346,
-					["previousRecipeID"] = 252344,
-					["recipeID"] = 252345
-				},
-				{
-					["name"] = "Potion of Rising Death",
-					["previousRecipeID"] = 252345,
-					["recipeID"] = 252346
-				},
-				{
-					["name"] = "Potion of Unbridled Fury",
-					["nextRecipeID"] = 300750,
-					["recipeID"] = 300749
-				},
-				{
-					["name"] = "Potion of Unbridled Fury",
-					["nextRecipeID"] = 300751,
-					["previousRecipeID"] = 300749,
-					["recipeID"] = 300750
-				},
-				{
-					["name"] = "Potion of Unbridled Fury",
-					["previousRecipeID"] = 300750,
-					["recipeID"] = 300751
-				},
-				{
-					["name"] = "Potion of Wild Mending",
-					["nextRecipeID"] = 300753,
-					["recipeID"] = 300752
-				},
-				{
-					["name"] = "Potion of Wild Mending",
-					["nextRecipeID"] = 300754,
-					["previousRecipeID"] = 300752,
-					["recipeID"] = 300753
-				},
-				{
-					["name"] = "Potion of Wild Mending",
-					["previousRecipeID"] = 300753,
-					["recipeID"] = 300754
-				},
-				{
-					["name"] = "Steelskin Potion",
-					["nextRecipeID"] = 252335,
-					["recipeID"] = 252334
-				},
-				{
-					["name"] = "Steelskin Potion",
-					["nextRecipeID"] = 252336,
-					["previousRecipeID"] = 252334,
-					["recipeID"] = 252335
-				},
-				{
-					["name"] = "Steelskin Potion",
-					["previousRecipeID"] = 252335,
-					["recipeID"] = 252336
-				},
-				{
-					["name"] = "Superior Battle Potion of Agility",
-					["nextRecipeID"] = 298730,
-					["recipeID"] = 298729
-				},
-				{
-					["name"] = "Superior Battle Potion of Agility",
-					["nextRecipeID"] = 298731,
-					["previousRecipeID"] = 298729,
-					["recipeID"] = 298730
-				},
-				{
-					["name"] = "Superior Battle Potion of Agility",
-					["previousRecipeID"] = 298730,
-					["recipeID"] = 298731
-				},
-				{
-					["name"] = "Superior Battle Potion of Intellect",
-					["nextRecipeID"] = 298742,
-					["recipeID"] = 298741
-				},
-				{
-					["name"] = "Superior Battle Potion of Intellect",
-					["nextRecipeID"] = 298743,
-					["previousRecipeID"] = 298741,
-					["recipeID"] = 298742
-				},
-				{
-					["name"] = "Superior Battle Potion of Intellect",
-					["previousRecipeID"] = 298742,
-					["recipeID"] = 298743
-				},
-				{
-					["name"] = "Superior Battle Potion of Stamina",
-					["nextRecipeID"] = 298748,
-					["recipeID"] = 298747
-				},
-				{
-					["name"] = "Superior Battle Potion of Stamina",
-					["nextRecipeID"] = 298749,
-					["previousRecipeID"] = 298747,
-					["recipeID"] = 298748
-				},
-				{
-					["name"] = "Superior Battle Potion of Stamina",
-					["previousRecipeID"] = 298748,
-					["recipeID"] = 298749
-				},
-				{
-					["name"] = "Superior Battle Potion of Strength",
-					["nextRecipeID"] = 298751,
-					["recipeID"] = 298750
-				},
-				{
-					["name"] = "Superior Battle Potion of Strength",
-					["nextRecipeID"] = 298752,
-					["previousRecipeID"] = 298750,
-					["recipeID"] = 298751
-				},
-				{
-					["name"] = "Superior Battle Potion of Strength",
-					["previousRecipeID"] = 298751,
-					["recipeID"] = 298752
-				},
-				{
-					["name"] = "Superior Steelskin Potion",
-					["nextRecipeID"] = 298735,
-					["recipeID"] = 298734
-				},
-				{
-					["name"] = "Superior Steelskin Potion",
-					["nextRecipeID"] = 298736,
-					["previousRecipeID"] = 298734,
-					["recipeID"] = 298735
-				},
-				{
-					["name"] = "Superior Steelskin Potion",
-					["previousRecipeID"] = 298735,
-					["recipeID"] = 298736
-				}
-			}
-		},
-		{
-			["name"] = "Utility Potions",
-			["categoryID"] = 606,
-			["groups"] = {
-				{
-					["name"] = "Demitri's Draught of Deception",
-					["nextRecipeID"] = 252392,
-					["recipeID"] = 252391
-				},
-				{
-					["name"] = "Demitri's Draught of Deception",
-					["nextRecipeID"] = 252393,
-					["previousRecipeID"] = 252391,
-					["recipeID"] = 252392
-				},
-				{
-					["name"] = "Demitri's Draught of Deception",
-					["previousRecipeID"] = 252392,
-					["recipeID"] = 252393
-				},
-				{
-					["name"] = "Lightfoot Potion",
-					["nextRecipeID"] = 252395,
-					["recipeID"] = 252394
-				},
-				{
-					["name"] = "Lightfoot Potion",
-					["nextRecipeID"] = 252396,
-					["previousRecipeID"] = 252394,
-					["recipeID"] = 252395
-				},
-				{
-					["name"] = "Lightfoot Potion",
-					["previousRecipeID"] = 252395,
-					["recipeID"] = 252396
-				},
-				{
-					["name"] = "Potion of Concealment",
-					["nextRecipeID"] = 252401,
-					["recipeID"] = 252400
-				},
-				{
-					["name"] = "Potion of Concealment",
-					["nextRecipeID"] = 252402,
-					["previousRecipeID"] = 252400,
-					["recipeID"] = 252401
-				},
-				{
-					["name"] = "Potion of Concealment",
-					["previousRecipeID"] = 252401,
-					["recipeID"] = 252402
-				},
-				{
-					["name"] = "Potion of the Unveiling Eye",
-					["nextRecipeID"] = 287448,
-					["recipeID"] = 287447
-				},
-				{
-					["name"] = "Potion of the Unveiling Eye",
-					["nextRecipeID"] = 287449,
-					["previousRecipeID"] = 287447,
-					["recipeID"] = 287448
-				},
-				{
-					["name"] = "Potion of the Unveiling Eye",
-					["previousRecipeID"] = 287448,
-					["recipeID"] = 287449
-				},
-				{
-					["name"] = "Sea Mist Potion",
-					["nextRecipeID"] = 252398,
-					["recipeID"] = 252397
-				},
-				{
-					["name"] = "Sea Mist Potion",
-					["nextRecipeID"] = 252399,
-					["previousRecipeID"] = 252397,
-					["recipeID"] = 252398
-				},
-				{
-					["name"] = "Sea Mist Potion",
-					["previousRecipeID"] = 252398,
-					["recipeID"] = 252399
-				}
-			}
-		},
-		{
-			["name"] = "Flasks",
-			["categoryID"] = 607,
-			["groups"] = {
-				{
-					["name"] = "Flask of Endless Fathoms",
-					["nextRecipeID"] = 252352,
-					["recipeID"] = 252351
-				},
-				{
-					["name"] = "Flask of Endless Fathoms",
-					["nextRecipeID"] = 252353,
-					["previousRecipeID"] = 252351,
-					["recipeID"] = 252352
-				},
-				{
-					["name"] = "Flask of Endless Fathoms",
-					["previousRecipeID"] = 252352,
-					["recipeID"] = 252353
-				},
-				{
-					["name"] = "Flask of the Currents",
-					["nextRecipeID"] = 252349,
-					["recipeID"] = 252348
-				},
-				{
-					["name"] = "Flask of the Currents",
-					["nextRecipeID"] = 252350,
-					["previousRecipeID"] = 252348,
-					["recipeID"] = 252349
-				},
-				{
-					["name"] = "Flask of the Currents",
-					["previousRecipeID"] = 252349,
-					["recipeID"] = 252350
-				},
-				{
-					["name"] = "Flask of the Undertow",
-					["nextRecipeID"] = 252358,
-					["recipeID"] = 252357
-				},
-				{
-					["name"] = "Flask of the Undertow",
-					["nextRecipeID"] = 252359,
-					["previousRecipeID"] = 252357,
-					["recipeID"] = 252358
-				},
-				{
-					["name"] = "Flask of the Undertow",
-					["previousRecipeID"] = 252358,
-					["recipeID"] = 252359
-				},
-				{
-					["name"] = "Flask of the Vast Horizon",
-					["nextRecipeID"] = 252355,
-					["recipeID"] = 252354
-				},
-				{
-					["name"] = "Flask of the Vast Horizon",
-					["nextRecipeID"] = 252356,
-					["previousRecipeID"] = 252354,
-					["recipeID"] = 252355
-				},
-				{
-					["name"] = "Flask of the Vast Horizon",
-					["previousRecipeID"] = 252355,
-					["recipeID"] = 252356
-				},
-				{
-					["name"] = "Greater Flask of Endless Fathoms",
-					["nextRecipeID"] = 298847,
-					["recipeID"] = 298846
-				},
-				{
-					["name"] = "Greater Flask of Endless Fathoms",
-					["nextRecipeID"] = 298848,
-					["previousRecipeID"] = 298846,
-					["recipeID"] = 298847
-				},
-				{
-					["name"] = "Greater Flask of Endless Fathoms",
-					["previousRecipeID"] = 298847,
-					["recipeID"] = 298848
-				},
-				{
-					["name"] = "Greater Flask of the Currents",
-					["nextRecipeID"] = 298843,
-					["recipeID"] = 298842
-				},
-				{
-					["name"] = "Greater Flask of the Currents",
-					["nextRecipeID"] = 298845,
-					["previousRecipeID"] = 298842,
-					["recipeID"] = 298843
-				},
-				{
-					["name"] = "Greater Flask of the Currents",
-					["previousRecipeID"] = 298843,
-					["recipeID"] = 298845
-				},
-				{
-					["name"] = "Greater Flask of the Undertow",
-					["nextRecipeID"] = 298854,
-					["recipeID"] = 298853
-				},
-				{
-					["name"] = "Greater Flask of the Undertow",
-					["nextRecipeID"] = 298855,
-					["previousRecipeID"] = 298853,
-					["recipeID"] = 298854
-				},
-				{
-					["name"] = "Greater Flask of the Undertow",
-					["previousRecipeID"] = 298854,
-					["recipeID"] = 298855
-				},
-				{
-					["name"] = "Greater Flask of the Vast Horizon",
-					["nextRecipeID"] = 298851,
-					["recipeID"] = 298850
-				},
-				{
-					["name"] = "Greater Flask of the Vast Horizon",
-					["nextRecipeID"] = 298852,
-					["previousRecipeID"] = 298850,
-					["recipeID"] = 298851
-				},
-				{
-					["name"] = "Greater Flask of the Vast Horizon",
-					["previousRecipeID"] = 298851,
-					["recipeID"] = 298852
-				}
-			}
-		},
-		{
-			["name"] = "Transmutation",
-			["categoryID"] = 608,
-			["groups"] = {
-				{
-					["name"] = "Transmute: Cloth to Skins",
-					["recipeID"] = 251314
-				},
-				{
-					["name"] = "Transmute: Expulsom",
-					["recipeID"] = 251832
-				},
-				{
-					["name"] = "Transmute: Fish to Gems",
-					["recipeID"] = 251822
-				},
-				{
-					["name"] = "Transmute: Herbs to Anchors",
-					["recipeID"] = 286547
-				},
-				{
-					["name"] = "Transmute: Herbs to Cloth",
-					["recipeID"] = 251306
-				},
-				{
-					["name"] = "Transmute: Herbs to Ore",
-					["recipeID"] = 251305
-				},
-				{
-					["name"] = "Transmute: Meat to Pet",
-					["recipeID"] = 251808
-				},
-				{
-					["name"] = "Transmute: Ore to Cloth",
-					["recipeID"] = 251310
-				},
-				{
-					["name"] = "Transmute: Ore to Gems",
-					["recipeID"] = 251311
-				},
-				{
-					["name"] = "Transmute: Ore to Herbs",
-					["recipeID"] = 251309
-				}
-			}
-		},
-		{
-			["name"] = "Trinkets",
-			["categoryID"] = 609,
-			["groups"] = {
-				{
-					["name"] = "Abyssal Alchemist Stone",
-					["recipeID"] = 298995
-				},
-				{
-					["name"] = "Ascended Alchemist Stone",
-					["recipeID"] = 298997
-				},
-				{
-					["name"] = "Awakened Alchemist Stone",
-					["recipeID"] = 305993
-				},
-				{
-					["name"] = "Crushing Alchemist Stone",
-					["recipeID"] = 298996
-				},
-				{
-					["name"] = "Emblazoned Alchemist Stone",
-					["recipeID"] = 291086
-				},
-				{
-					["name"] = "Endless Tincture of Fractional Power",
-					["nextRecipeID"] = 252377,
-					["recipeID"] = 252376
-				},
-				{
-					["name"] = "Endless Tincture of Fractional Power",
-					["nextRecipeID"] = 252378,
-					["previousRecipeID"] = 252376,
-					["recipeID"] = 252377
-				},
-				{
-					["name"] = "Endless Tincture of Fractional Power",
-					["previousRecipeID"] = 252377,
-					["recipeID"] = 252378
-				},
-				{
-					["name"] = "Endless Tincture of Renewed Combat",
-					["nextRecipeID"] = 252362,
-					["recipeID"] = 252361
-				},
-				{
-					["name"] = "Endless Tincture of Renewed Combat",
-					["nextRecipeID"] = 252363,
-					["previousRecipeID"] = 252361,
-					["recipeID"] = 252362
-				},
-				{
-					["name"] = "Endless Tincture of Renewed Combat",
-					["previousRecipeID"] = 252362,
-					["recipeID"] = 252363
-				},
-				{
-					["name"] = "Eternal Alchemist Stone",
-					["recipeID"] = 286923
-				},
-				{
-					["name"] = "Imbued Alchemist Stone",
-					["recipeID"] = 291085
-				},
-				{
-					["name"] = "Peerless Alchemist Stone",
-					["recipeID"] = 305992
-				},
-				{
-					["name"] = "Sanguinated Alchemist Stone",
-					["recipeID"] = 291084
-				},
-				{
-					["name"] = "Siren's Alchemist Stone",
-					["nextRecipeID"] = 252369,
-					["recipeID"] = 252368
-				},
-				{
-					["name"] = "Siren's Alchemist Stone",
-					["nextRecipeID"] = 252370,
-					["previousRecipeID"] = 252368,
-					["recipeID"] = 252369
-				},
-				{
-					["name"] = "Siren's Alchemist Stone",
-					["previousRecipeID"] = 252369,
-					["recipeID"] = 252370
-				},
-				{
-					["name"] = "Spirited Alchemist Stone",
-					["recipeID"] = 286922
-				},
-				{
-					["name"] = "Surging Alchemist Stone",
-					["nextRecipeID"] = 252380,
-					["recipeID"] = 252379
-				},
-				{
-					["name"] = "Surging Alchemist Stone",
-					["nextRecipeID"] = 252381,
-					["previousRecipeID"] = 252379,
-					["recipeID"] = 252380
-				},
-				{
-					["name"] = "Surging Alchemist Stone",
-					["previousRecipeID"] = 252380,
-					["recipeID"] = 252381
-				},
-				{
-					["name"] = "Tidal Alchemist Stone",
-					["recipeID"] = 286921
-				},
-				{
-					["name"] = "Unbound Alchemist Stone",
-					["recipeID"] = 305994
-				}
-			}
-		},
-		{
-			["name"] = "Conversions",
-			["categoryID"] = 1238,
-			["groups"] = {
-				{
-					["name"] = "Aqueous Dilution",
-					["recipeID"] = 287234
-				},
-				{
-					["name"] = "Sanguinated Dilution",
-					["recipeID"] = 286630
-				}
-			}
-		},
-		{
-			["name"] = "Focus",
-			["categoryID"] = 1304,
-			["groups"] = {
-				{
-					["name"] = "Void Focus",
-					["recipeID"] = 307172
-				}
-			}
-		},
-		{
-			["name"] = "Follower Equipment",
-			["categoryID"] = 1234,
-			["groups"] = {
-				{
-					["name"] = "Potion of Herb Tracking",
-					["recipeID"] = 278420
-				},
-				{
-					["name"] = "Vial of Obfuscation",
-					["recipeID"] = 287288
-				}
-			}
-		},
-		{
-			["name"] = "Tools of the Trade",
-			["categoryID"] = 610,
-			["groups"] = {
-				{
-					["name"] = "Silas' Sphere of Transmutation",
-					["recipeID"] = 260403
-				}
-			}
-		}
-	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-		r(309822),	-- Shadowlands Alchemy
-		cat(1303, {	-- Anti-Venoms
-			r(307100),	-- Spiritual Anti-Venom
-		}),
-		cat(1295, {	-- Cauldrons
-			r(307087),	-- Eternal Cauldron
-		}),
-		cat(1296, {	-- Combat Potions
-			r(359870, {["timeline"] = { "added 9.2.0" }}),	-- Cosmic Healing Potion
-			r(307384),	-- Potion of Deathly Fixation
-			r(307383),	-- Potion of Divine Awakening
-			r(307381),	-- Potion of Empowered Exorcisms
-			r(307094),	-- Potion of Hardened Shadows
-			r(307382),	-- Potion of Phantom Fire
-			r(322301),	-- Potion of Sacrificial Anima
-			r(307093),	-- Potion of Spectral Agility
-			r(307096),	-- Potion of Spectral Intellect
-			r(307097),	-- Potion of Spectral Stamina
-			r(307098),	-- Potion of Spectral Strength
-			r(307095),	-- Potion of Spiritual Clarity
-			r(301578),	-- Spiritual Healing Potion
-			r(301683),	-- Spiritual Mana Potion
-			r(261423),	-- Spiritual Rejuvenation Potion
-		}),
-		cat(1298, {	-- Flasks
-			r(307101),	-- Spectral Flask of Power
-			r(307103),	-- Spectral Flask of Stamina
-		}),
-		cat(1299, {	-- Optional Reagents
-			r(343679),	-- Crafter's Mark I
-			r(343678),	-- Crafter's Mark II
-			r(360014, {["timeline"] = { "added 9.2.0" }}),	-- Infusion: Corpse Purification
-			r(343675),	-- Novice Crafter's Mark
-			r(360318, {["timeline"] = { "added 9.2.0" }}),	-- Sustaining Armor Polish
-		}),
-		cat(1297, {	-- Oils and Extracts
-			r(307119),	-- Embalmer's Oil
-			r(307120),	-- Ground Death Blossom
-			r(307123),	-- Ground Marrowroot
-			r(307125),	-- Ground Nightshade
-			r(307124),	-- Ground Rising Glory
-			r(307121),	-- Ground Vigil's Torch
-			r(307122),	-- Ground Widowbloom
-			r(307118),	-- Shadowcore Oil
-		}),
-		cat(1517, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Other
-			r(354885),	-- Blossom Burst
-			r(354881),	-- Glory Burst
-			r(354880),	-- Marrow Burst
-			r(354884),	-- Torch Burst
-			r(354882),	-- Widow Burst
-		})),
-		cat(1525, sharedDataSelf({ ["u"] = 15 }, {	-- Quest Recipes
-			r(338204),	-- Bramblethorn Juice
-			r(338199),	-- Brutal Oil
-			r(338200),	-- Crushed Bones
-			r(338195),	-- Distilled Resolve
-			r(338198),	-- Draught of Grotesque Strength
-			r(338202),	-- Elixir of Humility
-			r(338194),	-- Flask of Measured Discipline
-			r(338191),	-- Liquid Sleep
-			r(338190),	-- Potion of Hibernal Rest
-			r(338192),	-- Powdered Dreamroot
-			r(338196),	-- Pulverized Breezebloom
-			r(338203),	-- Refined Submission
-		})),
-		cat(1300, {	-- Transmutation
-			r(307143),	-- Shadestone
-			r(307142),	-- Shadowghast Ingot
-			r(307144, {["timeline"] = { ADDED_9_1_0 }}),	-- Stones to Ore
-		}),
-		cat(1301, {	-- Trinkets
-			r(307200),	-- Spiritual Alchemy Stone
-		}),
-		cat(1302, {	-- Utility Potions
-			r(295084),	-- Potion of Shaded Sight
-			r(256134),	-- Potion of Soul Purity
-			r(256133),	-- Potion of Specter Swiftness
-			r(261424),	-- Potion of the Hidden Spirit
-			r(344316),	-- Potion of the Psychopomp's Speed
-			r(342887),	-- Potion of Unhindered Passing
-		}),
-		cat(1517, {	-- Other
-			r(334413),	-- Red Noggin Candle
-		}),
-	}))),
 }));
 
 -- Alchemy Item Database

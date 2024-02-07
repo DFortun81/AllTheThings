@@ -46,9 +46,6 @@ root(ROOTS.Zones, {
 						["isWorldQuest"] = true,
 						["requireSkill"] = ALCHEMY,
 						["lvl"] = { 45 },
-						["g"] = {
-							i(127920),	-- Recipe: Draught of Raw Magic [Rank 2] (RECIPE!)
-						},
 					}),
 				}),
 				prof(BLACKSMITHING, {

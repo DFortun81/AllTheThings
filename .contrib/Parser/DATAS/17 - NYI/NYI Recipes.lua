@@ -123,6 +123,7 @@ root(ROOTS.NeverImplemented, {
 				-- 8.2.0
 				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
 					i(169457),	-- Recipe: Mecha-Bytes
+					i(170076, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Recipe: Unagi Skewer
 				})),
 			}),
 		}),

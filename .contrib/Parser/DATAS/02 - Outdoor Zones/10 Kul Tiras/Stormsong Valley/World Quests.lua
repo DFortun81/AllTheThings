@@ -13,8 +13,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			q(52115, {	-- In the Shadow of the Kraken
 			}),
-			q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
-			}),
 			]]--
 			q(52180, {	-- A Brennadam Shame
 				["races"] = ALLIANCE_ONLY,
@@ -514,11 +512,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3] (RECIPE!)
 				},
 			}),
-			q(52347, {	-- Work Order: Honey-Glazed Haunchs
+			q(52347, {	-- Work Order: Honey-Glazed Haunches
 				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 				["requireSkill"] = COOKING,
 				["g"] = {
-					i(162286),	-- Recipe: Honey-Glazed Haunchs [Rank 3] (RECIPE!)
+					i(162286),	-- Recipe: Honey-Glazed Haunches [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52344, {	-- Work Order: Kul Tiramisu

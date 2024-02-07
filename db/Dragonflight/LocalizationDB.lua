@@ -59,7 +59,6 @@ _.CategoryNames = {
 	[642] = "Trinkets",
 	[643] = "Oils",
 	[644] = "Materials",
-	[657] = "Armor Enchantments",
 	[750] = "Reagents",
 	[751] = "Explosives",
 	[752] = "Goggles",

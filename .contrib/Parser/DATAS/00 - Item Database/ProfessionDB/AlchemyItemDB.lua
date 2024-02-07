@@ -559,7 +559,7 @@ i(128161, 188676);	-- Elemental Distillate
 i(128160, 188674);	-- Wildswater
 
 -----------------
--- PATCH 7.0.1 --
+-- PATCH 7.0.3 --
 -----------------
 -- TRAINER --
 i(0, 195095);		-- Alchemy (Legion) [REMOVED 8.0.1]
@@ -579,15 +579,15 @@ i(127940, 188315);	-- Avalanche Elixir [Rank 3]
 i(127901, 188307);	-- Draught of Raw Magic [Rank 1]
 i(127920, 188308);	-- Draught of Raw Magic [Rank 2]
 i(127938, 188309);	-- Draught of Raw Magic [Rank 3]
+i(127914, 188346);	-- Flask of Ten Thousand Scars [Rank 1]
+i(127933, 188347);	-- Flask of Ten Thousand Scars [Rank 2]
+i(127951, 188348);	-- Flask of Ten Thousand Scars [Rank 3]
 i(127913, 188343);	-- Flask of the Countless Armies [Rank 1]
 i(127932, 188344);	-- Flask of the Countless Armies [Rank 2]
 i(127950, 188345);	-- Flask of the Countless Armies [Rank 3]
 i(127912, 188340);	-- Flask of the Seventh Demon [Rank 1]
 i(127931, 188341);	-- Flask of the Seventh Demon [Rank 2]
 i(127949, 188342);	-- Flask of the Seventh Demon [Rank 3]
-i(127914, 188346);	-- Flask of Ten Thousand Scars [Rank 1]
-i(127933, 188347);	-- Flask of Ten Thousand Scars [Rank 2]
-i(127951, 188348);	-- Flask of Ten Thousand Scars [Rank 3]
 i(127911, 188337);	-- Flask of the Whispered Pact [Rank 1]
 i(127930, 188338);	-- Flask of the Whispered Pact [Rank 2]
 i(127948, 188339);	-- Flask of the Whispered Pact [Rank 3]
@@ -621,11 +621,7 @@ i(127946, 188333);	-- Unbending Potion [Rank 3]
 i(128209, 188800);	-- Wild Transmutation [Rank 1]
 i(128210, 188801);	-- Wild Transmutation [Rank 2]
 i(128211, 188802);	-- Wild Transmutation [Rank 3]
-
------------------
--- PATCH 7.0.3 --
------------------
--- TRAINER --
+--- DISCOVERY ---
 i(0, 213257);		-- Transmute: Blood of Sargeras
 i(0, 213252);		-- Transmute: Cloth to Herbs
 i(0, 213249);		-- Transmute: Cloth to Skins
@@ -636,7 +632,11 @@ i(0, 213248);		-- Transmute: Ore to Cloth
 i(0, 213251);		-- Transmute: Ore to Herbs
 i(0, 213253);		-- Transmute: Skins to Herbs
 i(0, 213250);		-- Transmute: Skins to Ore
--- ITEM --
+
+-----------------
+-- PATCH 7.1.0 --
+-----------------
+--- ITEM ---
 i(142119, 229217);	-- Potion of Prolonged Power [Rank 1]
 i(142120, 229218);	-- Potion of Prolonged Power [Rank 2]
 i(142121, 229220);	-- Potion of Prolonged Power [Rank 3]
@@ -644,7 +644,7 @@ i(142121, 229220);	-- Potion of Prolonged Power [Rank 3]
 -----------------
 -- PATCH 7.3.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(151706, 247694);	-- Astral Alchemist Stone [Rank 1]
 i(151707, 247695);	-- Astral Alchemist Stone [Rank 2]
 i(151708, 247696);	-- Astral Alchemist Stone [Rank 3]

@@ -768,46 +768,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				-- Alchemy
-				q(44112, {	-- Trading for Dreams
-					["provider"] = { "n", 93974 }, -- Leyweaver Erenyi
-					["coord"] = { 70.5, 46.4, VALSHARAH },
-					["requireSkill"] = ALCHEMY,
-					["sourceQuests"] = { 39431 },	-- Mending the Filter
-				}),
-				q(39338, {	-- Return the Filter
-					["provider"] = { "n", 93974 }, -- Leyweaver Erenyi
-					["coord"] = { 70.5, 46.4, VALSHARAH },
-					["requireSkill"] = ALCHEMY,
-					["sourceQuests"] = { 44112 },	-- Trading for Dreams
-				}),
-
-
-
 				n(BONUS_OBJECTIVES, sharedData({
 					["description"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 					["lockCriteria"] = { 1, "lvl", 45 },

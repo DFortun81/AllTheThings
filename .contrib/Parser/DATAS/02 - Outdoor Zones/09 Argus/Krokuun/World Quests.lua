@@ -96,13 +96,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48318, {	-- Work Order: Lightblood Elixirs
 				["requireSkill"] = ALCHEMY,
 				["g"] = {
-					i(151658),	-- Recipe: Lightblood Elixir (Rank 2)
+					i(151658),	-- Recipe: Lightblood Elixir [Rank 2] (RECIPE!)
 				},
 			}),
 			q(48323, {	-- Work Order: Tears of the Naaru
 				["requireSkill"] = ALCHEMY,
 				["g"] = {
-					i(151704),	-- Recipe: Tears of the Naaru (Rank 2)
+					i(151704),	-- Recipe: Tears of the Naaru [Rank 2] (RECIPE!)
 				},
 			}),
 		})),

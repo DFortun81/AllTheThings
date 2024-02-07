@@ -151,7 +151,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169602, {	-- Recipe: Potion of Focused Resolve [Rank 3] (RECIPE!)
 					["cost"] = 14000000,	-- 1,400g
 				}),
-				i(170076, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Recipe: Unagi Skewer
 				i(169274, {	-- Tabard of the Unshackled
 					["cost"] = 6250000,	-- 625g
 				}),

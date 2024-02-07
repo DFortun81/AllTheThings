@@ -452,57 +452,73 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		ach(12742, {	-- Kul Tiran Cook [A]
-			["races"] = ALLIANCE_ONLY,
+		n(ACHIEVEMENTS, {
+			ach(12742, {	-- Kul Tiran Cook [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(12743, {	-- Zandalari Cook [H]
+				["races"] = HORDE_ONLY,
+			}),
+			ach(12747, {	-- Catering for Combat
+				["cost"] = {
+					{ "i", 156525, 50 },	-- 50x Galley Banquet
+					{ "i", 156526, 50 },	-- 50x Bountiful Captain's Feast
+					-- #if AFTER 8.1.0
+					{ "i", 166240, 50 },	-- 50x Sanguinated Feast
+					-- #endif
+					-- #if AFTER 8.2.0
+					{ "i", 168315, 50 },	-- 50x Famine Evaluator And Snack Table
+					-- #endif
+				},
+			}),
+			ach(12744, {	-- The Kul Tiran Menu
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					crit(40770, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
+					crit(40773, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
+					crit(40776, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
+					crit(40780, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
+					crit(40783, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
+					crit(40786, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
+					crit(40789, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
+					crit(40792, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
+					crit(40795, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
+					crit(40798, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
+					crit(40801, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
+					crit(40804, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
+				},
+			}),
+			ach(12746, {	-- The Zandalari Menu
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(40770, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
+					crit(40773, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
+					crit(40776, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
+					crit(40780, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
+					crit(40783, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
+					crit(40786, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
+					crit(40789, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
+					crit(40792, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
+					crit(40795, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
+					crit(40798, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
+					crit(40801, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
+					crit(40804, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
+				},
+			}),
 		}),
-		ach(12743, {	-- Zandalari Cook [H]
-			["races"] = HORDE_ONLY,
-		}),
-		ach(12747, {	-- Catering for Combat
-			["cost"] = {
-				{ "i", 156525, 50 },	-- 50x Galley Banquet
-				{ "i", 156526, 50 },	-- 50x Bountiful Captain's Feast
-				-- #if AFTER 8.1.0
-				{ "i", 166240, 50 },	-- 50x Sanguinated Feast
-				-- #endif
-				-- #if AFTER 8.2.0
-				{ "i", 168315, 50 },	-- 50x Famine Evaluator And Snack Table
-				-- #endif
-			},
-		}),
-		ach(12744, {	-- The Kul Tiran Menu
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				crit(40770, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
-				crit(40773, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
-				crit(40776, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
-				crit(40780, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
-				crit(40783, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
-				crit(40786, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
-				crit(40789, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
-				crit(40792, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
-				crit(40795, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
-				crit(40798, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
-				crit(40801, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
-				crit(40804, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
-			},
-		}),
-		ach(12746, {	-- The Zandalari Menu
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				crit(40770, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
-				crit(40773, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
-				crit(40776, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
-				crit(40780, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
-				crit(40783, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
-				crit(40786, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
-				crit(40789, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
-				crit(40792, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
-				crit(40795, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
-				crit(40798, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
-				crit(40801, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
-				crit(40804, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
-			},
+		n(QUESTS, {
+			q(54469, {	-- Fresh Dishes (A)
+				["provider"] = { "n", 136052 },	-- "Cap'n" Byron Mehlsack <Cooking Trainer>
+				["coord"] = { 71.2, 10.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			q(54470, {	-- Fresh Dishes [H]
+				["provider"] = { "n", 141549 },	-- T'sarah the Royal Chef <Cooking Trainer>
+				["coord"] = { 28.5, 50.0, HALL_OF_CHRONICLERS },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
 		}),
 	})),
 	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
@@ -2405,598 +2421,6 @@ profession(COOKING, {
 					["previousRecipeID"] = 201543,
 					["recipeID"] = 201563
 				}
-			}
-		}
-	})),
-	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, {
-		{
-			["name"] = "Delicacies",
-			["categoryID"] = 1449,
-			["groups"] = {
-				{
-					["name"] = "Baked Voidfin",
-					["recipeID"] = 314959
-				},
-				{
-					["name"] = "Dubious Delight",
-					["recipeID"] = 314961
-				},
-				{
-					["name"] = "Ghastly Goulash",
-					["recipeID"] = 314962
-				},
-				{
-					["name"] = "Grilled Gnasher",
-					["recipeID"] = 314963
-				},
-				{
-					["name"] = "K'Bab",
-					["recipeID"] = 314960
-				}
-			}
-		},
-		{
-			["name"] = "Light Meals",
-			["categoryID"] = 1120,
-			["groups"] = {
-				{
-					["name"] = "Grilled Catfish",
-					["nextRecipeID"] = 259431,
-					["recipeID"] = 259430
-				},
-				{
-					["name"] = "Grilled Catfish",
-					["nextRecipeID"] = 259432,
-					["previousRecipeID"] = 259430,
-					["recipeID"] = 259431
-				},
-				{
-					["name"] = "Grilled Catfish",
-					["previousRecipeID"] = 259431,
-					["recipeID"] = 259432
-				},
-				{
-					["name"] = "Heartsbane Hexwurst",
-					["recipeID"] = 280282
-				},
-				{
-					["name"] = "Honey Potpie",
-					["recipeID"] = 286381
-				},
-				{
-					["name"] = "Seasoned Loins",
-					["nextRecipeID"] = 259434,
-					["recipeID"] = 259433
-				},
-				{
-					["name"] = "Seasoned Loins",
-					["nextRecipeID"] = 259435,
-					["previousRecipeID"] = 259433,
-					["recipeID"] = 259434
-				},
-				{
-					["name"] = "Seasoned Loins",
-					["previousRecipeID"] = 259434,
-					["recipeID"] = 259435
-				},
-				{
-					["name"] = "Unagi Skewer",
-					["recipeID"] = 303788
-				}
-			}
-		},
-		{
-			["name"] = "Desserts",
-			["categoryID"] = 1119,
-			["groups"] = {
-				{
-					["name"] = "Kul Tiramisu",
-					["nextRecipeID"] = 259412,
-					["recipeID"] = 259411
-				},
-				{
-					["name"] = "Kul Tiramisu",
-					["nextRecipeID"] = 259413,
-					["previousRecipeID"] = 259411,
-					["recipeID"] = 259412
-				},
-				{
-					["name"] = "Kul Tiramisu",
-					["previousRecipeID"] = 259412,
-					["recipeID"] = 259413
-				},
-				{
-					["name"] = "Loa Loaf",
-					["nextRecipeID"] = 259437,
-					["recipeID"] = 259436
-				},
-				{
-					["name"] = "Loa Loaf",
-					["nextRecipeID"] = 259438,
-					["previousRecipeID"] = 259436,
-					["recipeID"] = 259437
-				},
-				{
-					["name"] = "Loa Loaf",
-					["previousRecipeID"] = 259437,
-					["recipeID"] = 259438
-				},
-				{
-					["name"] = "Mon'Dazi",
-					["nextRecipeID"] = 259443,
-					["recipeID"] = 259442
-				},
-				{
-					["name"] = "Mon'Dazi",
-					["nextRecipeID"] = 259444,
-					["previousRecipeID"] = 259442,
-					["recipeID"] = 259443
-				},
-				{
-					["name"] = "Mon'Dazi",
-					["previousRecipeID"] = 259443,
-					["recipeID"] = 259444
-				},
-				{
-					["name"] = "Ravenberry Tarts",
-					["nextRecipeID"] = 259425,
-					["recipeID"] = 259424
-				},
-				{
-					["name"] = "Ravenberry Tarts",
-					["nextRecipeID"] = 259426,
-					["previousRecipeID"] = 259424,
-					["recipeID"] = 259425
-				},
-				{
-					["name"] = "Ravenberry Tarts",
-					["previousRecipeID"] = 259425,
-					["recipeID"] = 259426
-				},
-				{
-					["name"] = "Wild Berry Bread",
-					["nextRecipeID"] = 288028,
-					["recipeID"] = 288027
-				},
-				{
-					["name"] = "Wild Berry Bread",
-					["nextRecipeID"] = 288029,
-					["previousRecipeID"] = 288027,
-					["recipeID"] = 288028
-				},
-				{
-					["name"] = "Wild Berry Bread",
-					["previousRecipeID"] = 288028,
-					["recipeID"] = 288029
-				}
-			}
-		},
-		{
-			["name"] = "Large Meals",
-			["categoryID"] = 1121,
-			["groups"] = {
-				{
-					["name"] = "Abyssal-Fried Rissole",
-					["nextRecipeID"] = 297085,
-					["recipeID"] = 297084
-				},
-				{
-					["name"] = "Abyssal-Fried Rissole",
-					["nextRecipeID"] = 297086,
-					["previousRecipeID"] = 297084,
-					["recipeID"] = 297085
-				},
-				{
-					["name"] = "Abyssal-Fried Rissole",
-					["previousRecipeID"] = 297085,
-					["recipeID"] = 297086
-				},
-				{
-					["name"] = "Baked Port Tato",
-					["nextRecipeID"] = 297082,
-					["recipeID"] = 297081
-				},
-				{
-					["name"] = "Baked Port Tato",
-					["nextRecipeID"] = 297083,
-					["previousRecipeID"] = 297081,
-					["recipeID"] = 297082
-				},
-				{
-					["name"] = "Baked Port Tato",
-					["previousRecipeID"] = 297082,
-					["recipeID"] = 297083
-				},
-				{
-					["name"] = "Bil'Tong",
-					["nextRecipeID"] = 297088,
-					["recipeID"] = 297087
-				},
-				{
-					["name"] = "Bil'Tong",
-					["nextRecipeID"] = 297089,
-					["previousRecipeID"] = 297087,
-					["recipeID"] = 297088
-				},
-				{
-					["name"] = "Bil'Tong",
-					["previousRecipeID"] = 297088,
-					["recipeID"] = 297089
-				},
-				{
-					["name"] = "Boralus Blood Sausage",
-					["nextRecipeID"] = 290472,
-					["recipeID"] = 290471
-				},
-				{
-					["name"] = "Boralus Blood Sausage",
-					["nextRecipeID"] = 290473,
-					["previousRecipeID"] = 290471,
-					["recipeID"] = 290472
-				},
-				{
-					["name"] = "Boralus Blood Sausage",
-					["previousRecipeID"] = 290472,
-					["recipeID"] = 290473
-				},
-				{
-					["name"] = "Fragrant Kakavia",
-					["nextRecipeID"] = 297075,
-					["recipeID"] = 297077
-				},
-				{
-					["name"] = "Fragrant Kakavia",
-					["nextRecipeID"] = 297074,
-					["previousRecipeID"] = 297077,
-					["recipeID"] = 297075
-				},
-				{
-					["name"] = "Fragrant Kakavia",
-					["previousRecipeID"] = 297075,
-					["recipeID"] = 297074
-				},
-				{
-					["name"] = "Honey-Glazed Haunches",
-					["nextRecipeID"] = 259415,
-					["recipeID"] = 259414
-				},
-				{
-					["name"] = "Honey-Glazed Haunches",
-					["nextRecipeID"] = 259416,
-					["previousRecipeID"] = 259414,
-					["recipeID"] = 259415
-				},
-				{
-					["name"] = "Honey-Glazed Haunches",
-					["previousRecipeID"] = 259415,
-					["recipeID"] = 259416
-				},
-				{
-					["name"] = "Mecha-Bytes",
-					["recipeID"] = 301392
-				},
-				{
-					["name"] = "Mech-Dowel's \"Big Mech\"",
-					["nextRecipeID"] = 297079,
-					["recipeID"] = 297078
-				},
-				{
-					["name"] = "Mech-Dowel's \"Big Mech\"",
-					["nextRecipeID"] = 297080,
-					["previousRecipeID"] = 297078,
-					["recipeID"] = 297079
-				},
-				{
-					["name"] = "Mech-Dowel's \"Big Mech\"",
-					["previousRecipeID"] = 297079,
-					["recipeID"] = 297080
-				},
-				{
-					["name"] = "Sailor's Pie",
-					["nextRecipeID"] = 259440,
-					["recipeID"] = 259439
-				},
-				{
-					["name"] = "Sailor's Pie",
-					["nextRecipeID"] = 259441,
-					["previousRecipeID"] = 259439,
-					["recipeID"] = 259440
-				},
-				{
-					["name"] = "Sailor's Pie",
-					["previousRecipeID"] = 259440,
-					["recipeID"] = 259441
-				},
-				{
-					["name"] = "Seasoned Steak and Potatoes",
-					["nextRecipeID"] = 288032,
-					["recipeID"] = 288030
-				},
-				{
-					["name"] = "Seasoned Steak and Potatoes",
-					["nextRecipeID"] = 288033,
-					["previousRecipeID"] = 288030,
-					["recipeID"] = 288032
-				},
-				{
-					["name"] = "Seasoned Steak and Potatoes",
-					["previousRecipeID"] = 288032,
-					["recipeID"] = 288033
-				},
-				{
-					["name"] = "Spiced Snapper",
-					["nextRecipeID"] = 259446,
-					["recipeID"] = 259445
-				},
-				{
-					["name"] = "Spiced Snapper",
-					["nextRecipeID"] = 259447,
-					["previousRecipeID"] = 259445,
-					["recipeID"] = 259446
-				},
-				{
-					["name"] = "Spiced Snapper",
-					["previousRecipeID"] = 259446,
-					["recipeID"] = 259447
-				},
-				{
-					["name"] = "Swamp Fish 'n Chips",
-					["nextRecipeID"] = 259428,
-					["recipeID"] = 259427
-				},
-				{
-					["name"] = "Swamp Fish 'n Chips",
-					["nextRecipeID"] = 259429,
-					["previousRecipeID"] = 259427,
-					["recipeID"] = 259428
-				},
-				{
-					["name"] = "Swamp Fish 'n Chips",
-					["previousRecipeID"] = 259428,
-					["recipeID"] = 259429
-				}
-			}
-		},
-		{
-			["name"] = "Feasts",
-			["categoryID"] = 1122,
-			["groups"] = {
-				{
-					["name"] = "Bountiful Captain's Feast",
-					["nextRecipeID"] = 259422,
-					["recipeID"] = 259421
-				},
-				{
-					["name"] = "Bountiful Captain's Feast",
-					["nextRecipeID"] = 259423,
-					["previousRecipeID"] = 259421,
-					["recipeID"] = 259422
-				},
-				{
-					["name"] = "Bountiful Captain's Feast",
-					["previousRecipeID"] = 259422,
-					["recipeID"] = 259423
-				},
-				{
-					["name"] = "Famine Evaluator And Snack Table",
-					["nextRecipeID"] = 297106,
-					["recipeID"] = 297105
-				},
-				{
-					["name"] = "Famine Evaluator And Snack Table",
-					["nextRecipeID"] = 297107,
-					["previousRecipeID"] = 297105,
-					["recipeID"] = 297106
-				},
-				{
-					["name"] = "Famine Evaluator And Snack Table",
-					["previousRecipeID"] = 297106,
-					["recipeID"] = 297107
-				},
-				{
-					["name"] = "Galley Banquet",
-					["nextRecipeID"] = 259419,
-					["recipeID"] = 259418
-				},
-				{
-					["name"] = "Galley Banquet",
-					["nextRecipeID"] = 259420,
-					["previousRecipeID"] = 259418,
-					["recipeID"] = 259419
-				},
-				{
-					["name"] = "Galley Banquet",
-					["previousRecipeID"] = 259419,
-					["recipeID"] = 259420
-				},
-				{
-					["name"] = "Sanguinated Feast",
-					["nextRecipeID"] = 287110,
-					["recipeID"] = 287108
-				},
-				{
-					["name"] = "Sanguinated Feast",
-					["nextRecipeID"] = 287112,
-					["previousRecipeID"] = 287108,
-					["recipeID"] = 287110
-				},
-				{
-					["name"] = "Sanguinated Feast",
-					["previousRecipeID"] = 287110,
-					["recipeID"] = 287112
-				}
-			}
-		}
-	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, {
-		{
-			["name"] = "Quest Recipes",
-			["categoryID"] = 1526,
-			["groups"] = {
-				{
-					["name"] = "Arden Apple Pie",
-					["recipeID"] = 338100,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Diced Vegetables",
-					["recipeID"] = 338107,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Ember Sauce",
-					["recipeID"] = 338115,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Grazer Bone Broth",
-					["recipeID"] = 338106,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Oat Pie Crust",
-					["recipeID"] = 338101,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Seared Cutlets",
-					["recipeID"] = 338117,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Skewered Meats",
-					["recipeID"] = 338116,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Sliced Arden Apples",
-					["recipeID"] = 338102,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Spider Jerky",
-					["recipeID"] = 338110,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Steward Stew",
-					["recipeID"] = 338105,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				},
-				{
-					["name"] = "Thick Spider Meat",
-					["recipeID"] = 338113,
-					["u"] = 15,	-- Training Recipes / Unlearnable
-				}
-			}
-		},
-		{
-			["name"] = "Feasts",
-			["categoryID"] = 1326,
-			["groups"] = {
-				{
-					["name"] = "Empty Kettle of Stone Soup",
-					["recipeID"] = 359333,
-					["timeline"] = { "added 9.2.0" },
-				},
-				{
-					["name"] = "Feast of Gluttonous Hedonism",
-					["recipeID"] = 308403,
-				},
-				{
-					["name"] = "Surprisingly Palatable Feast",
-					["recipeID"] = 308402
-				}
-			}
-		},
-		{
-			["name"] = "Soul Food",
-			["categoryID"] = 1327,
-			["groups"] = {
-				{
-					["name"] = "Fried Bonefish",
-					["recipeID"] = 308420
-				},
-				{
-					["name"] = "Seraph Tenders",
-					["recipeID"] = 308417
-				},
-				{
-					["name"] = "Smothered Shank",
-					["recipeID"] = 308419
-				}
-			}
-		},
-		{
-			["name"] = "Large Meals",
-			["categoryID"] = 1325,
-			["groups"] = {
-				{
-					["name"] = "Banana Beef Pudding",
-					["recipeID"] = 308415
-				},
-				{
-					["name"] = "Candied Amberjack Cakes",
-					["recipeID"] = 308411
-				},
-				{
-					["name"] = "Iridescent Ravioli with Apple Sauce",
-					["recipeID"] = 308413
-				},
-				{
-					["name"] = "Spinefin Souffle and Fries",
-					["recipeID"] = 308400
-				},
-				{
-					["name"] = "Steak a la Mode",
-					["recipeID"] = 308426
-				},
-				{
-					["name"] = "Tenebrous Crown Roast Aspic",
-					["recipeID"] = 308405
-				}
-			}
-		},
-		{
-			["name"] = "Light Meals",
-			["categoryID"] = 1324,
-			["groups"] = {
-				{
-					["name"] = "Biscuits and Caviar",
-					["recipeID"] = 308410
-				},
-				{
-					["name"] = "Bonemeal Bread",
-					["recipeID"] = 354766,
-				},
-				{
-					["name"] = "Butterscotch Marinated Ribs",
-					["recipeID"] = 308397
-				},
-				{
-					["name"] = "Cinnamon Bonefish Stew",
-					["recipeID"] = 308404
-				},
-				{
-					["name"] = "Meaty Apple Dumplings",
-					["recipeID"] = 308412
-				},
-				{
-					["name"] = "Pickled Meat Smoothie",
-					["recipeID"] = 308414
-				},
-				{
-					["name"] = "Porous Rock Candy",
-					["recipeID"] = 354768,
-				},
-				{
-					["name"] = "Sweet Silvergill Sausages",
-					["recipeID"] = 308425
-				},
-				{
-					["name"] = "Twilight Tea",
-					["recipeID"] = 354764
-				},
 			}
 		}
 	})),
