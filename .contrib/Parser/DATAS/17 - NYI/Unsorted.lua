@@ -1042,14 +1042,12 @@ root(ROOTS.Unsorted, {
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
 			i(210416),	-- Formula: Intoxicating Toxic Perfume
-			i(210719),	-- Grizzly Hills Flower
 			i(210413),	-- Map of Shadowfang Keep Security
 			i(210417),	-- Memo from Apothecary Hummel
 			i(210332),	-- O.D.I.E.'s Remote Control
 			i(211208),	-- O.D.I.E.'s Remote Control
 			i(211778),	-- O.D.I.E.'s Remote Control
 			i(211781),	-- O.D.I.E.'s Remote Control
-			i(211923),	-- Sealed Letter
 
 			------ Hearthstone ------
 			-- Misc
