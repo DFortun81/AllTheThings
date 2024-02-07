@@ -4,9 +4,12 @@ local appName,app = ...;
 local Colorize = app.Modules.Color.Colorize;
 
 -- Global locals
-local C_CreatureInfo_GetClassInfo = C_CreatureInfo.GetClassInfo;
-local RAID_CLASS_COLORS = RAID_CLASS_COLORS;
-local math_floor, rawget, rawset, setmetatable = math.floor, rawget, rawset, setmetatable;
+local C_CreatureInfo_GetClassInfo, C_CreatureInfo_GetRaceInfo
+	= C_CreatureInfo.GetClassInfo, C_CreatureInfo.GetRaceInfo;
+local RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace
+	= RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace;
+local math_floor, rawget, rawset, setmetatable, strsplit
+	= math.floor, rawget, rawset, setmetatable, strsplit;
 
 -- Class Info Helpers
 local ClassIcons = {
@@ -140,6 +143,108 @@ setmetatable(ClassInfoByClassName, ClassInfoMetatable);
 app.CreateCharacterClass = app.CreateClassWithInfo("CharacterClass", "classID", ClassInfoByID, {
 	["nmc"] = function(t)
 		return t.classID ~= app.ClassIndex;
+	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
+	end,
+});
+app.CreateUnit = app.CreateClass("Unit", "unit", {
+	["text"] = function(t)
+		return t.classText;
+	end,
+	["info"] = function(t)
+		local unit = t.unit;
+		for guid,character in pairs(ATTCharacterData) do
+			if guid == unit or character.name == unit then
+				rawset(t, "guid", character.guid);
+				rawset(t, "name", character.name);
+				rawset(t, "lvl", character.lvl);
+				if character.classID then
+					rawset(t, "classID", character.classID);
+					local classInfo = ClassInfoByID[character.classID];
+					if classInfo then
+						rawset(t, "className", classInfo.name);
+						rawset(t, "classFile", classInfo.file);
+					end
+				end
+				if character.raceID then
+					rawset(t, "raceID", character.raceID);
+					rawset(t, "race", C_CreatureInfo_GetRaceInfo(character.raceID).raceName);
+				end
+				return t;
+			end
+		end
+		local name, guid, className, classFile, classID, raceName, raceFile, raceID;
+		if #{strsplit("-", unit)} > 1 then
+			-- It's a GUID.
+			guid = unit;
+			className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
+			if classFile then classID = ClassInfoByClassFile[classFile].classID; end
+		else
+			name = UnitName(unit);
+			if name then
+				guid = UnitGUID(unit);
+				className, classFile, classID = UnitClass(unit);
+				raceName, raceFile, raceID = UnitRace(unit);
+			else
+				rawset(t, "name", unit);
+				return t;
+			end
+		end
+		if name then
+			rawset(t, "name", name);
+			rawset(t, "guid", guid);
+			if classID then
+				rawset(t, "className", className);
+				rawset(t, "classFile", classFile);
+				rawset(t, "classID", classID);
+			end
+			if raceID then
+				rawset(t, "raceID", raceID);
+				rawset(t, "race", C_CreatureInfo_GetRaceInfo(raceID).raceName);
+			end
+		end
+		return t;
+	end,
+	["name"] = function(t)
+		return rawget(t.info, "name");
+	end,
+	["icon"] = function(t)
+		local classID = rawget(t.info, "classID");
+		if classID then return ClassInfoByID[classID].icon; end
+	end,
+	["guid"] = function(t)
+		local guid = rawget(t.info, "guid");
+		if guid then return guid; end
+	end,
+	["title"] = function(t)
+		if IsInGroup() then
+			if rawget(t, "isML") then return MASTER_LOOTER; end
+			if UnitIsGroupLeader(t.unit, "raid") then return RAID_LEADER; end
+		end
+	end,
+	["lvl"] = function(t)
+		return UnitLevel(t.unit);
+	end,
+	["race"] = function(t)
+		return rawget(t.info, "race");
+	end,
+	["className"] = function(t)
+		return rawget(t.info, "className");
+	end,
+	["classFile"] = function(t)
+		return rawget(t.info, "classFile");
+	end,
+	["classText"] = function(t)
+		local classFile = t.classFile;
+		if classFile then return "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. t.name .. "|r"; end
+		return t.name or RETRIEVING_DATA;
+	end,
+	["tooltipText"] = function(t)
+		local text = t.text;
+		local icon = t.icon;
+		if icon then text = "|T" .. icon .. ":0|t " .. text; end
+		return text;
 	end,
 	["ignoreSourceLookup"] = function(t)
 		return true;
