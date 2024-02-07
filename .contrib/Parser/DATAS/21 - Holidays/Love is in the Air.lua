@@ -1468,6 +1468,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78594, {	-- Getaway to Scenic Feralas! (A)
 			["qg"] = 212677,	-- Gabbo Blinkwink
@@ -1476,6 +1477,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
+				i(LOVE_TOKEN),
 				i(211923),	-- Sealed Letter
 			},
 		}),
@@ -1485,6 +1487,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78988, {	-- Getaway to Scenic Feralas! (H)
 			["qg"] = 214497,	-- Aurora Vabsley
@@ -1492,6 +1495,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = {
+				i(LOVE_TOKEN),
+				i(211923),	-- Sealed Letter
+			},
 		}),
 		q(78724, {	-- Loving Yourself, Your Way (A)
 			["qg"] = 213262,	-- Ying
@@ -1500,6 +1507,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78726, {	-- Loving Yourself, Your Way (A)
 			["qg"] = 213262,	-- Ying
@@ -1508,6 +1516,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78727, {	-- Loving Yourself, Your Way (A)
 			["qg"] = 213262,	-- Ying
@@ -1516,6 +1525,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78979, {	-- Loving Yourself, Your Way (H)
 			["qg"] = 214591,	-- Ning
@@ -1524,6 +1534,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78992, {	-- Loving Yourself, Your Way (H)
 			["qg"] = 214591,	-- Ning
@@ -1532,6 +1543,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78993, {	-- Loving Yourself, Your Way (H)
 			["qg"] = 214591,	-- Ning
@@ -1540,6 +1552,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78679, {	-- The Gift of Relaxation (A)
 			["qg"] = 213262,	-- Ying
@@ -1547,6 +1560,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78664, {	-- The Gift of Self-Care (A)
 			["qg"] = 213262,	-- Ying
@@ -1569,6 +1583,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
+				i(LOVE_TOKEN),
 				i(145277),	-- Aftermath of the Second War
 				i(145289),	-- Arathor and the Troll Wars
 				i(145307),	-- The Betrayer Ascendant
@@ -1582,6 +1597,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(212489),	-- Copy of a Damaged Apprentice Journal
 				-- got tired of clicking books kek
 			},
+		}),
+		q(78990, {	-- The Gift of Relief (H)
+			["qg"] = 214591,	-- Ning
+			["coord"] = { 41.9, 16.2, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
+		}),
+		q(78674, {	-- The Gift of Relief (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
+		}),
+		q(78987, {	-- Getaway to Scenic Nagrand! (H)
+			["qg"] = 214497,	-- Aurora Vabsley
+			["coord"] = { 41.5, 16.1, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
+		}),
+		q(78591, {	-- Getaway to Scenic Nagrand! (A)
+			["qg"] = 212677,	-- Gabbo Blinkwink
+			["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 	}),
 	n(REWARDS, {
