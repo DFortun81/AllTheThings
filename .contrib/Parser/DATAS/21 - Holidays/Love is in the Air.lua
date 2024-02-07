@@ -144,6 +144,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		ach(1695, {	-- Dangerous Love
 			["sourceQuests"] = {
+				-- #if BEFORE 10.2.5
 				-- #if AFTER LEGION
 				44558,	-- Crushing the Crown (A) [Legion+]
 				-- #endif
@@ -171,6 +172,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				24652,	-- Crushing the Crown (H) [Crystalsong Forest]
 				-- #if AFTER CATA
 				28935,	-- Crushing the Crown (H) [Uldum]
+				-- #endif
+				-- else
+				78984,	-- Crushing the Crown (H)
+				78369,	-- Crushing the Crown (A)
 				-- #endif
 			},
 			["timeline"] = { "added 3.0.1" },
@@ -1510,32 +1515,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 		}),
-		--- HQTs (I don't know where they are supposed to go sorry)
-		q(79143, {
-			["name"] = "Completed alongside Love is in the Air (H)",
-			["timeline"] = { ADDED_10_2_5 },
-			["collectible"] = false,
-		}),
-		q(79144, {
-			["name"] = "Completed alongside Love is in the Air (H)",
-			["timeline"] = { ADDED_10_2_5 },
-			["collectible"] = false,
-		}),
-		q(78735, {
-			["name"] = "After choosing a self-care method for The Gift of Self-Care (A)",
-			["timeline"] = { ADDED_10_2_5 },
-			["collectible"] = false,
-		}),
-		q(78736, {
-			["name"] = "After choosing a self-care method for The Gift of Self-Care (H)",
-			["timeline"] = { ADDED_10_2_5 },
-			["collectible"] = false,
-		}),
-		q(78476, {
-			["name"] = "Interacting with a box during I Smell Trouble (A)",
-			["timeline"] = { ADDED_10_2_5 },
-			["collectible"] = false,
-		}),
 	}),
 	n(REWARDS, {
 		-- #if BEFORE 3.3.2.11403
@@ -2800,6 +2779,11 @@ for i,o in ipairs({
 						["timeline"] = { "added 3.3.0" },
 						["filterID"] = MOUNTS,
 					}),
+					q(74957, {	-- First Heart-Shaped Box of the Day (Accountwide)
+						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
+						["timeline"] = { ADDED_10_0_5, "removed 10.2.5" },
+						["collectible"] = false,
+					}),
 					q(79104, {	-- First Heart-Shaped Box of the Day (Accountwide)
 						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
 						["timeline"] = { ADDED_10_2_5 },
@@ -3136,6 +3120,30 @@ for i,o in ipairs({
 	table.insert(BOSS_GROUPS, o);
 end
 
-root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
-	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
+root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+	q(79143, {
+		["name"] = "Completed alongside Love is in the Air (H)",
+		["timeline"] = { ADDED_10_2_5 },
+		["collectible"] = false,
+	}),
+	q(79144, {
+		["name"] = "Completed alongside Love is in the Air (H)",
+		["timeline"] = { ADDED_10_2_5 },
+		["collectible"] = false,
+	}),
+	q(78735, {
+		["name"] = "After choosing a self-care method for The Gift of Self-Care (A)",
+		["timeline"] = { ADDED_10_2_5 },
+		["collectible"] = false,
+	}),
+	q(78736, {
+		["name"] = "After choosing a self-care method for The Gift of Self-Care (H)",
+		["timeline"] = { ADDED_10_2_5 },
+		["collectible"] = false,
+	}),
+	q(78476, {
+		["name"] = "Interacting with a box during I Smell Trouble (A)",
+		["timeline"] = { ADDED_10_2_5 },
+		["collectible"] = false,
+	}),
 }));
