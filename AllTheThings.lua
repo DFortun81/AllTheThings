@@ -11804,7 +11804,7 @@ local function RowOnClick(self, button)
 							return true;
 						end
 					end
-					
+
 					-- Attempt to search manually with the link.
 					local searched = app.TrySearchAHForGroup(reference);
 					if searched then return true end
@@ -12126,7 +12126,7 @@ RowOnEnter = function (self)
 				if providerType == "o" then
 					lineStrings[1] = OBJECT;
 					lineStrings[2] = ": "
-					lineStrings[3] = app.ObjectNames[providerID]
+					lineStrings[3] = app.ObjectNames[providerID] or RETRIEVING_DATA
 					if app.Settings:GetTooltipSetting("objectID") then
 						lineStrings[4] = " ("
 						lineStrings[5] = providerID
@@ -12135,7 +12135,7 @@ RowOnEnter = function (self)
 				elseif providerType == "n" then
 					lineStrings[1] = CREATURE
 					lineStrings[2] = ": "
-					lineStrings[3] = providerID > 0 and app.NPCNameFromID[providerID];
+					lineStrings[3] = providerID > 0 and app.NPCNameFromID[providerID] or RETRIEVING_DATA;
 					if app.Settings:GetTooltipSetting("creatureID") then
 						lineStrings[4] = " ("
 						lineStrings[5] = providerID
@@ -12332,7 +12332,7 @@ RowOnEnter = function (self)
 					end
 				end
 			end
-			
+
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then
 				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
