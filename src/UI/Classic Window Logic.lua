@@ -2084,45 +2084,7 @@ function app:CreateWindow(suffix, settings)
 		-- Phase 2: Update, which takes the prepared data and revalidates it.
 		local OnUpdate = settings.OnUpdate or UpdateWindow;
 		window.DefaultUpdate = UpdateWindow;
-		if settings.Silent then
-			if debugging then
-				window.ForceUpdate = function(self, force, trigger)
-					print("ForceUpdate: " .. suffix, force, trigger);
-					local lastUpdate = GetTimePreciseSec();
-					local result = OnUpdate(self, force, trigger);
-					print("ForceUpdate: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					self:Refresh();
-					return result;
-				end
-				window.Update = function(self, force, trigger)
-					if self:IsShown() then
-						print("UpdateWindow: " .. suffix, force, trigger);
-						local lastUpdate = GetTimePreciseSec();
-						local result = OnUpdate(self, force, trigger);
-						print("UpdateWindow: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-						self:Refresh();
-						return result;
-					else
-						self.forceFullDataRefresh = self.forceFullDataRefresh or force or trigger;
-					end
-				end
-			else
-				window.ForceUpdate = function(self, force, trigger)
-					local result = OnUpdate(self, force, trigger);
-					self:Refresh();
-					return result;
-				end
-				window.Update = function(self, force, trigger)
-					if self:IsShown() then
-						local result = OnUpdate(self, force, trigger);
-						self:Refresh();
-						return result;
-					else
-						self.forceFullDataRefresh = self.forceFullDataRefresh or force or trigger;
-					end
-				end
-			end
-		elseif debugging then
+		if debugging then
 			window.ForceUpdate = function(self, force, trigger)
 				print("ForceUpdate: " .. suffix, force, trigger);
 				local lastUpdate = GetTimePreciseSec();
@@ -2132,12 +2094,16 @@ function app:CreateWindow(suffix, settings)
 				return result;
 			end
 			window.Update = function(self, force, trigger)
-				print("UpdateWindow: " .. suffix, force, trigger);
-				local lastUpdate = GetTimePreciseSec();
-				local result = OnUpdate(self, force, trigger);
-				print("UpdateWindow: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-				self:Refresh();
-				return result;
+				if self:IsShown() then
+					print("UpdateWindow: " .. suffix, force, trigger);
+					local lastUpdate = GetTimePreciseSec();
+					local result = OnUpdate(self, force, trigger);
+					print("UpdateWindow: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+					self:Refresh();
+					return result;
+				else
+					self.forceFullDataRefresh = self.forceFullDataRefresh or force or trigger;
+				end
 			end
 		else
 			window.ForceUpdate = function(self, force, trigger)
@@ -2146,9 +2112,13 @@ function app:CreateWindow(suffix, settings)
 				return result;
 			end
 			window.Update = function(self, force, trigger)
-				local result = OnUpdate(self, force, trigger);
-				self:Refresh();
-				return result;
+				if self:IsShown() then
+					local result = OnUpdate(self, force, trigger);
+					self:Refresh();
+					return result;
+				else
+					self.forceFullDataRefresh = self.forceFullDataRefresh or force or trigger;
+				end
 			end
 		end
 
@@ -2907,7 +2877,6 @@ function app:CreateMiniListForGroup(group)
 
 	-- Pop Out Functionality! :O
 	local popout = app:CreateWindow(app.GenerateSourceHash(group), {
-		Silent = true,
 		AllowCompleteSound = true,
 		--Debugging = true,
 		OnInit = function(self)

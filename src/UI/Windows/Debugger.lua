@@ -6,7 +6,6 @@ local appName, app = ...;
 -- NOTE: It needs a lot of work! Not currently attached to any TOC files.
 --[[
 app:CreateWindow("Debugger", {
-	Silent = true,
 	HideFromSettings = true,
 	OnInit = function(self, handlers)
 		self.AddObject = function(self, info)

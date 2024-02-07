@@ -7,7 +7,6 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Locked", {
-	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attlocked" },
 	OnRebuild = function(self, ...)

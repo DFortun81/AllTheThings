@@ -10,7 +10,6 @@ local auctionData = {};
 
 -- Implementation
 app:CreateWindow("Auctions", {
-	Silent = true,
 	Commands = { "attauctions" },
 	IgnoreSettings = true,
 	IgnoreQuestUpdates = true,

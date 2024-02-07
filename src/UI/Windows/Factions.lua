@@ -7,7 +7,6 @@ local ipairs, pairs, tinsert =
 
 -- Implementation
 app:CreateWindow("Factions", {
-	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attfactions" },

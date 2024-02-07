@@ -7,7 +7,6 @@ local ipairs, pairs, tinsert =
 
 -- Implementation
 app:CreateWindow("Flight Paths", {
-	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attflightpaths", "attfps" },

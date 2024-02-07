@@ -7,7 +7,6 @@ local ipairs, pairs, tinsert, tremove =
 
 -- Implementation
 app:CreateWindow("Titles", {
-	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "atttitles" },

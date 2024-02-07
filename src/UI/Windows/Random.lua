@@ -169,7 +169,6 @@ end
 
 -- Implementation
 app:CreateWindow("Random", {
-	Silent = true,
 	Commands = { "attrandom" },
 	OnLoad = function(self, settings)
 		SearchFilter = settings.SearchFilter or "Quest";

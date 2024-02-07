@@ -7,7 +7,6 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Breadcrumbs", {
-	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attbreadcrumbs" },
 	OnRebuild = function(self, ...)

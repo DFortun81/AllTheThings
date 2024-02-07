@@ -76,7 +76,6 @@ end;
 
 -- Implementation
 app:CreateWindow("Achievements", {
-	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attach", "attachievements" },

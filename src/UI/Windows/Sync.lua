@@ -891,7 +891,6 @@ end
 
 -- Implementation
 app:CreateWindow("Synchronization", {
-	Silent = true,
 	--IgnoreSettings = true,
 	IgnoreQuestUpdates = true,
 	Defaults = {

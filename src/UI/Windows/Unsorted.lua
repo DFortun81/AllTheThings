@@ -7,7 +7,6 @@ local tinsert = tinsert;
 
 -- Implementation
 app:CreateWindow("Unsorted", {
-	Silent = true,
 	Commands = { "attunsorted" },
 	OnInit = function(self)
 		-- Add an achievement header

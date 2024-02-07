@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Quests", {
-	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attquests" },
 	OnRebuild = function(self, ...)

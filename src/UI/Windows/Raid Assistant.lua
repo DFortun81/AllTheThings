@@ -137,7 +137,6 @@ end
 
 -- Implementation
 app:CreateWindow("RaidAssistant", {
-	Silent = true,
 	IgnoreQuestUpdates = true,
 	Commands = { "attra" },
 	OnInit = function(self, handlers)

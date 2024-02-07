@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Exploration", {
-	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attexploration" },
 	OnRebuild = function(self, ...)

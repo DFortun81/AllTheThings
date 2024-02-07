@@ -49,7 +49,6 @@ end
 
 -- Implementation
 app:CreateWindow("Removed With Patch Drops", {
-	Silent = true,
 	HideFromSettings = true,
 	Commands = { "attrwpdrops" },
 	OnLoad = function(self, settings)

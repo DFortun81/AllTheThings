@@ -6,7 +6,6 @@ local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
 app:CreateWindow("Missing Quests", {
-	Silent = true,
 	Commands = {
 		"attmissing",
 		"attquestie",

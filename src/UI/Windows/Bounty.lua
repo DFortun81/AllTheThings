@@ -7,7 +7,6 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Bounty", {
-	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attbounty" },
 	OnRebuild = function(self, ...)

@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Never Implemented", {
-	Silent = true,
 	Commands = { "attnyi" },
 	OnLoad = function(self, settings)
 		local g = app.Categories.NeverImplemented;

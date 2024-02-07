@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Hiddent Achievement Triggers", {
-	Silent = true,
 	HideFromSettings = true,
 	Commands = { "atthat", "atthats" },
 	OnLoad = function(self, settings)

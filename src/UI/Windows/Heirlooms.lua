@@ -8,7 +8,6 @@ local ipairs, pairs, tinsert =
 
 -- Implementation
 app:CreateWindow("Heirlooms", {
-	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attheirlooms" },

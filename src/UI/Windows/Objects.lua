@@ -110,7 +110,6 @@ end
 
 -- Implementation
 app:CreateWindow("Objects", {
-	Silent = true,
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },
 	OnRebuild = function(self)

@@ -9,7 +9,6 @@ local ipairs, pairs, tinsert =
 
 -- Implementation
 app:CreateWindow("Illusions", {
-	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attillusions" },

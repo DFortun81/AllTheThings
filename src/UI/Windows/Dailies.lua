@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Dailies", {
-	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attdailies" },
 	OnRebuild = function(self, ...)

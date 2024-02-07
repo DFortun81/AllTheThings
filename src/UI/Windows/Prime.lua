@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Prime", {
-	Silent = true,
 	AllowCompleteSound = true,
 	SettingsName = "Main List",
 	IsTopLevel = true,

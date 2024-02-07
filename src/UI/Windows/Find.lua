@@ -94,7 +94,6 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 
 -- Implementation
 app:CreateWindow("ItemFinder", {
-	Silent = true,
 	HideFromSettings = true,
 	Commands = { "attfinditems" },
 	OnRebuild = function(self, ...)
@@ -216,7 +215,6 @@ app:CreateWindow("ItemFinder", {
 	end,
 });
 app:CreateWindow("SpellFinder", {
-	Silent = true,
 	HideFromSettings = true,
 	Commands = { "attfindspells" },
 	OnRebuild = function(self, ...)

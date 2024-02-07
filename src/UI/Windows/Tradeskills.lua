@@ -67,7 +67,6 @@ app.AddEventHandler("OnRefreshCollections", RefreshSkills);
 
 -- Implementation
 app:CreateWindow("Tradeskills", {
-	Silent = true,
 	AllowCompleteSound = true,
 	Commands = {
 		"attskills",

@@ -224,7 +224,6 @@ local CachedMapData = setmetatable({}, {
 
 -- Implementation
 app:CreateWindow("MiniList", {
-	Silent = true,
 	AllowCompleteSound = true,
 	SettingsName = "Mini List",
 	IsTopLevel = true,

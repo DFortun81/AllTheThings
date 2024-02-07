@@ -58,7 +58,6 @@ end
 
 -- Implementation
 app:CreateWindow("Attunements", {
-	Silent = true,
 	Commands = {
 		"attuned",
 		"attattuned",

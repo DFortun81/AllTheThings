@@ -504,7 +504,6 @@ end
 
 -- Implementation
 SoftReserveWindow = app:CreateWindow("SoftReserves", {
-	Silent = true,
 	IgnoreQuestUpdates = true,
 	Commands = { "attsr", "attsoftreserve" },
 	OnCommand = function(self, cmd)
