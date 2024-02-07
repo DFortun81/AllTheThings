@@ -481,7 +481,6 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(68050),	-- Shatterscale Mightfish
 			i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
-			i(115292),	-- Spectral Axe
 			i(117010),	-- Forester's Axe	(Never added in Game)
 			i(182562),	-- NPE Weapon 1H Axe AGI
 			i(182577),	-- NPE Weapon 1H Axe AGI 2

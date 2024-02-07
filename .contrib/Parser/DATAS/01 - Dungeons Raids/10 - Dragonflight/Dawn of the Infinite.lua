@@ -360,6 +360,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(134755),	-- Covert Hatchet						(NYI)
 		ig(5255),	-- Quilboar Tomahawk					(NYI)
+		ig(115292),	-- Spectral Axe							(NYI)
 		ig(134586),	-- Vanguard Hatchet						(NYI)
 
 		ig(134742),	-- Cold-Touched Hacker					(Removed)

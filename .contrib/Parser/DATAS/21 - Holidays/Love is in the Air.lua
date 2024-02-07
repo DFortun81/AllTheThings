@@ -3136,29 +3136,9 @@ for i,o in ipairs({
 end
 
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
-	q(79143, {
-		["name"] = "Completed alongside Love is in the Air (H)",
-		["timeline"] = { ADDED_10_2_5 },
-		["collectible"] = false,
-	}),
-	q(79144, {
-		["name"] = "Completed alongside Love is in the Air (H)",
-		["timeline"] = { ADDED_10_2_5 },
-		["collectible"] = false,
-	}),
-	q(78735, {
-		["name"] = "After choosing a self-care method for The Gift of Self-Care (A)",
-		["timeline"] = { ADDED_10_2_5 },
-		["collectible"] = false,
-	}),
-	q(78736, {
-		["name"] = "After choosing a self-care method for The Gift of Self-Care (H)",
-		["timeline"] = { ADDED_10_2_5 },
-		["collectible"] = false,
-	}),
-	q(78476, {
-		["name"] = "Interacting with a box during I Smell Trouble (A)",
-		["timeline"] = { ADDED_10_2_5 },
-		["collectible"] = false,
-	}),
+	q(79143),	-- Completed alongside Love is in the Air (A)
+	q(79144),	-- Completed alongside Love is in the Air (H)
+	q(78735),	-- After choosing a self-care method for The Gift of Self-Care (A)
+	q(78736),	-- After choosing a self-care method for The Gift of Self-Care (H)
+	q(78476),	-- Interacting with a box during I Smell Trouble (A)
 }));
