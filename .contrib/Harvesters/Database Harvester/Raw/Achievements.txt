@@ -13540,3 +13540,5 @@
 10.2.5.52968
 19719@@@Reclamation of Gilneas
 19720@@@Reclamation of Gilneas (Hidden Character Achievement)
+10.2.5.53104
+20206@@@Champion of the Dragonflights
