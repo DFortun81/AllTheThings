@@ -19,7 +19,6 @@ local SortTypeByHeaderID = setmetatable({
 		return method;
 	end,
 });
-local RefreshLocation;
 local function SortForMiniList(a,b)
 	-- If either object doesn't exist
 	if a then
@@ -247,45 +246,25 @@ app:CreateWindow("MiniList", {
 		local delayedUpdate = function()
 			self:DelayedUpdate(true);
 		end;
-		local function RefreshLocationCoroutine()
-			-- Wait a second, will ya? The position detection is BAD.
-			for i=1,30,1 do coroutine.yield(); end
-
-			-- Acquire the new map ID.
-			local mapID = app.GetCurrentMapID();
-			while not mapID do
-				coroutine.yield();
-				mapID = app.GetCurrentMapID();
-			end
-			app.CurrentMapID = mapID;
-			self:SetMapID(mapID);
-		end
-		RefreshLocation = function()
-			app:StartATTCoroutine("RefreshLocation", RefreshLocationCoroutine);
-		end
 		handlers.QUEST_TURNED_IN = delayedUpdate;
 		handlers.QUEST_LOG_UPDATE = delayedUpdate;
-		handlers.ZONE_CHANGED = RefreshLocation;
-		handlers.ZONE_CHANGED_INDOORS = RefreshLocation;
-		handlers.ZONE_CHANGED_NEW_AREA = RefreshLocation;
 		handlers.PLAYER_DIFFICULTY_CHANGED = function()
 			wipe(CachedMapData);
 			self:Rebuild();
 		end
 		self.SetMapID = function(self, mapID)
-			if mapID ~= self.mapID then
+			if mapID and mapID ~= self.mapID then
 				self.mapID = mapID;
 				self:Rebuild();
 			end
 		end
 	end,
 	OnLoad = function(self, settings)
-		self:RegisterEvent("ZONE_CHANGED");
-		self:RegisterEvent("ZONE_CHANGED_INDOORS");
-		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
-		self:SetMapID(settings.mapID or app.CurrentMapID or app.GetCurrentMapID());
-		RefreshLocation();
+		self:SetMapID(settings.mapID or app.CurrentMapID);
+		app.AddEventHandler("OnCurrentMapIDChanged", function()
+			self:SetMapID(app.CurrentMapID);
+		end);
 	end,
 	OnSave = function(self, settings)
 		settings.mapID = self.mapID;

@@ -16,7 +16,7 @@ timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 local SearchForField = app.SearchForField;
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
-local GetCachedSearchResults, SearchForLink, L, GetCurrentMapID
+local GetCachedSearchResults, SearchForLink, L
 
 -- Object Name Lookups
 local objectNamesToIDs = {};
@@ -40,7 +40,7 @@ local function GetBestObjectIDForName(name)
 	-- then correlate those search results by closest distance to the player's current position
 	local o = objectNamesToIDs[name];
 	if o and #o > 0 then
-		local mapID = GetCurrentMapID();
+		local mapID = app.CurrentMapID;
 		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 		if pos then
 			local px, py = pos:GetXY();
@@ -959,7 +959,6 @@ app.AddEventHandler("OnLoad", function()
 	GetCachedSearchResults = app.GetCachedSearchResults;
 	SearchForLink = app.SearchForLink;
 	L = app.L;
-	GetCurrentMapID = app.GetCurrentMapID;
 	OnLoad_CacheObjectNames();
 end);
 
