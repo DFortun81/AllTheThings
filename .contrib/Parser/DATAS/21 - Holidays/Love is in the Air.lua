@@ -1312,78 +1312,196 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["coord"] = { 54.3, 60.3, VALDRAKKEN },
 			["isBreadcrumb"] = true,
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78328, {	-- Take a Look Around (A)
 			["qg"] = 211802,	-- Luciana Delgado
 			["coord"] = { 32.3, 49.4, ELWYNN_FOREST },
 			["sourceQuest"] = 78329,	-- Love is in the Air (A)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78332, {	-- I Smell Trouble (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 32.2, 50.1, ELWYNN_FOREST },
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78337, {	-- An Unwelcome Gift (A)
 			["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
 			["sourceQuest"] = 78332,	-- I Smell Trouble (A)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78729, {	-- Raising a Stink (A)
 			["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
 			["sourceQuest"] = 78337,	-- An Unwelcome Gift (A)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78369, {	-- Crushing the Crown (A)
 			["qg"] = 38066,	-- Inspector Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["sourceQuest"] = 78729,	-- Raising a Stink (A)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78379, {	-- The Stench of Revenge (A)
 			["qg"] = 38066,	-- Inspector Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["sourceQuest"] = 78369,	-- Crushing the Crown (A)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78981, {	-- Love is in the Air (H)
 			["qg"] = 215196,	-- Aurora Vabsley
 			["coord"] = { 54.3, 62.7, VALDRAKKEN },
 			["isBreadcrumb"] = true,
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
 		}),
 		q(78980, {	-- Take a Look Around (H)
 			["qg"] = 214477,	-- Mahaja Cloudsong
 			["coord"] = { 41.8, 18.0, DUROTAR },
 			["sourceQuest"] = 78981,	-- Love is in the Air (H)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
 		}),
 		q(78982, {	-- I Smell Trouble (H)
 			["qg"] = 37172,	-- Detective Snip Snagglebolt
 			["coord"] = { 41.6, 17.7, DUROTAR },
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
 		}),
 		q(78983, {	-- An Unwelcome Gift (H)
 			["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
 			["sourceQuest"] = 78982,	-- I Smell Trouble (H)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
 		}),
 		q(78978, {	-- Raising a Stink (H)
 			["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
 			["sourceQuest"] = 78983,	-- I Smell Trouble (H)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
 		}),
 		q(78984, {	-- Crushing the Crown (H)
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["sourceQuest"] = 78978,	-- Raising a Stink (H)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
 		}),
 		q(78985, {	-- The Stench of Revenge (H)
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["sourceQuest"] = 78984,	-- Crushing the Crown (H)
 			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+		}),
+		q(78664, {	-- The Gift of Self-Care (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78724, {	-- Loving Yourself, Your Way (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78726, {	-- Loving Yourself, Your Way (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78727, {	-- Loving Yourself, Your Way (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78679, {	-- The Gift of Relaxation (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78565, {	-- Getaway to Scenic Grizzly Hills! (A)
+			["qg"] = 212677,	-- Gabbo Blinkwink
+			["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78594, {	-- Getaway to Scenic Feralas! (A)
+			["qg"] = 212677,	-- Gabbo Blinkwink
+			["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78989, {	-- The Gift of Self-Care (H)
+			["qg"] = 214591,	-- Ning
+			["coord"] = { 41.9, 16.2, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78979, {	-- Loving Yourself, Your Way (H)
+			["qg"] = 214591,	-- Ning
+			["coord"] = { 41.9, 16.2, DUROTAR },
+			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78992, {	-- Loving Yourself, Your Way (H)
+			["qg"] = 214591,	-- Ning
+			["coord"] = { 41.9, 16.2, DUROTAR },
+			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78993, {	-- Loving Yourself, Your Way (H)
+			["qg"] = 214591,	-- Ning
+			["coord"] = { 41.9, 16.2, DUROTAR },
+			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78991, {	-- The Gift of Relaxation (H)
+			["qg"] = 214591,	-- Ning
+			["coord"] = { 41.9, 16.2, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78986, {	-- Getaway to Scenic Grizzly Hills! (H)
+			["qg"] = 214497,	-- Aurora Vabsley
+			["coord"] = { 41.5, 16.1, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78988, {	-- Getaway to Scenic Feralas! (H)
+			["qg"] = 214497,	-- Aurora Vabsley
+			["coord"] = { 41.5, 16.1, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
 		}),
 	}),
 	n(REWARDS, {
