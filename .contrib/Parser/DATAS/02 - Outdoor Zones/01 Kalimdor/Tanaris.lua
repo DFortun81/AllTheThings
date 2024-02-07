@@ -5092,17 +5092,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(TREASURES, {
 				o(142184, {	-- Captain's Chest
-					-- #if AFTER CATA
+					-- #if BEFORE CATA
+					["description"] = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
+					["coord"] = { 76.5, 45.8, TANARIS },
+					-- #else
+					["description"] = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of two sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
 					["coords"] = {
 						{ 75.3, 45.9, TANARIS },
 						{ 76.4, 45.8, TANARIS },
 					},
-					-- #else
-					["coord"] = { 76.5, 45.8, TANARIS },
 					-- #endif
 					["cost"] = {{ "i", 9249, 1 }},	-- 1x Captain's Key
 					["groups"] = {
-						i(9359),	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+						i(9359, {	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+							-- #if BEFORE 4.0.3
+							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
+							-- #else
+							["description"] = "This item have two sources: Pirate's Footlocker, and Captain's Chest.\nPirate's Footlocker is a common drop from Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.",
+							-- #endif
+						})
 					},
 				}),
 			}),
@@ -5417,6 +5425,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(9276, {	-- Pirate's Footlocker
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						7857,	-- Southsea Dock Worker
 						7856,	-- Southsea Freebooter
@@ -5425,7 +5434,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7858,	-- Southsea Swashbuckler
 					},
 					["groups"] = {
-						i(9359),	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+						i(9359, {	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
+						}),
 						i(9250, {	-- Ship Schedule
 							["timeline"] = { "deleted 4.0.3" },
 						}),
@@ -5439,7 +5450,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "deleted 4.1.0" },
 						}),
 						i(9249, {	-- Captain's Key
-							["description"] = "Unlocks the Captain's Chest located in the ship at the docks.",
+						["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
+						}),
+					},
+					-- #else
+					["description"] = "The Pirate's Footlocker is one of two sources for Southsea Lamp, which are commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+					["crs"] = {
+						7855,	-- Southsea Pirate
+						7858,	-- Southsea Swashbuckler
+					},
+					["groups"] = {
+						i(9359, {	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+							["description"] = "This item have two sources: Pirate's Footlocker, and Captain's Chest.\nPirate's Footlocker is a common drop from Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.",
+						}),
+						i(9249, {	-- Captain's Key
+							["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
 						}),
 					},
 				}),
