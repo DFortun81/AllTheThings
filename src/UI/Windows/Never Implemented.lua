@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Never Implemented", {
-	parent = UIParent,
 	Silent = true,
 	Commands = { "attnyi" },
 	OnLoad = function(self, settings)

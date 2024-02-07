@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Dailies", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attdailies" },

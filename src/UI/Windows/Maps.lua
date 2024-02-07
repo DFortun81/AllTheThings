@@ -8,7 +8,6 @@ local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Implementation
 app:CreateWindow("Maps", {
-	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
 	Commands = { "attmaps" },

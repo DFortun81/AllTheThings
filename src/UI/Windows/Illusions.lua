@@ -9,7 +9,6 @@ local ipairs, pairs, tinsert =
 
 -- Implementation
 app:CreateWindow("Illusions", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,

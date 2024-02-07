@@ -169,7 +169,6 @@ end
 
 -- Implementation
 app:CreateWindow("Random", {
-	parent = UIParent,
 	Silent = true,
 	Commands = { "attrandom" },
 	OnLoad = function(self, settings)

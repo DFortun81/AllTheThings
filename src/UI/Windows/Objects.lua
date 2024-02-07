@@ -110,7 +110,6 @@ end
 
 -- Implementation
 app:CreateWindow("Objects", {
-	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },

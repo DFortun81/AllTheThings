@@ -891,7 +891,6 @@ end
 
 -- Implementation
 app:CreateWindow("Synchronization", {
-	parent = UIParent,
 	Silent = true,
 	--IgnoreSettings = true,
 	IgnoreQuestUpdates = true,

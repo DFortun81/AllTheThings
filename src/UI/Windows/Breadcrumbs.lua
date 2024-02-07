@@ -7,7 +7,6 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Breadcrumbs", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attbreadcrumbs" },

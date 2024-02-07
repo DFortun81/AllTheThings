@@ -7,7 +7,6 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Bounty", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attbounty" },

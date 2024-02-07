@@ -49,7 +49,6 @@ end
 
 -- Implementation
 app:CreateWindow("Removed With Patch Drops", {
-	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,
 	Commands = { "attrwpdrops" },

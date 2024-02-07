@@ -4,7 +4,6 @@ local tinsert = tinsert;
 
 -- Implementation
 app:CreateWindow("Removed From Game", {
-	parent = UIParent,
 	Silent = true,
 	Commands = { "attrfg" },
 	OnRebuild = function(self)

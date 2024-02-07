@@ -76,7 +76,6 @@ end;
 
 -- Implementation
 app:CreateWindow("Achievements", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,

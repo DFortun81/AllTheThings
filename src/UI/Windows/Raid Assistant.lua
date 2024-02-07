@@ -137,7 +137,6 @@ end
 
 -- Implementation
 app:CreateWindow("RaidAssistant", {
-	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
 	Commands = { "attra" },

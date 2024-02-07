@@ -7,7 +7,6 @@ local tinsert = tinsert;
 
 -- Implementation
 app:CreateWindow("Unsorted", {
-	parent = UIParent,
 	Silent = true,
 	Commands = { "attunsorted" },
 	OnInit = function(self)

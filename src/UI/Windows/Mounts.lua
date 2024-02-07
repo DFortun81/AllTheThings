@@ -7,7 +7,6 @@ local ipairs, pairs, tinsert, tremove =
 
 -- Implementation
 app:CreateWindow("Mounts", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,

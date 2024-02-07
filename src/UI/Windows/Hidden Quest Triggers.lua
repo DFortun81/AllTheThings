@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Hiddent Quest Triggers", {
-	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,
 	Commands = { "atthqt", "atthqts" },

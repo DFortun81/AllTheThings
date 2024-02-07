@@ -3,7 +3,6 @@ local appName, app = ...;
 
 -- Implementation
 app:CreateWindow("Exploration", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attexploration" },

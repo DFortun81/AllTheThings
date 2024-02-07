@@ -11,7 +11,6 @@ local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
 app:CreateWindow("Battle Pets", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,

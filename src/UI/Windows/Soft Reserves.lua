@@ -504,7 +504,6 @@ end
 
 -- Implementation
 SoftReserveWindow = app:CreateWindow("SoftReserves", {
-	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
 	Commands = { "attsr", "attsoftreserve" },

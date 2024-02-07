@@ -7,7 +7,6 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Locked", {
-	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
 	Commands = { "attlocked" },

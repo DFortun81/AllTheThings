@@ -10,7 +10,6 @@ local auctionData = {};
 
 -- Implementation
 app:CreateWindow("Auctions", {
-	parent = UIParent,
 	Silent = true,
 	Commands = { "attauctions" },
 	IgnoreSettings = true,

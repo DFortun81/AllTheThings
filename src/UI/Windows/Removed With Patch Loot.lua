@@ -4,7 +4,6 @@ local tinsert = tinsert;
 
 -- Implementation
 app:CreateWindow("Removed With Patch", {
-	parent = UIParent,
 	Silent = true,
 	Commands = { "attrwp" },
 	OnRebuild = function(self)
