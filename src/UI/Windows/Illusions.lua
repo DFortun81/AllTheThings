@@ -8,7 +8,7 @@ local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 
 -- Implementation
-app:GetWindow("Illusions", {
+app:CreateWindow("Illusions", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

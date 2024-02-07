@@ -890,7 +890,7 @@ local function OnTooltipForLinkedAccount(t)
 end
 
 -- Implementation
-app:GetWindow("Synchronization", {
+app:CreateWindow("Synchronization", {
 	parent = UIParent,
 	Silent = true,
 	--IgnoreSettings = true,

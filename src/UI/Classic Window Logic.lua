@@ -1870,7 +1870,7 @@ local BuildCategory = function(self, headers, searchResults, inst)
 	MergeObject(header.g, inst);
 	return inst;
 end
-function app:GetWindow(suffix, settings)
+function app:CreateWindow(suffix, settings)
 	local window = app.Windows[suffix];
 	if not window and settings then
 		-- Create the window instance.
@@ -2376,6 +2376,9 @@ function app:GetWindow(suffix, settings)
 		end
 	end
 	return window;
+end
+function app:GetWindow(suffix, settings)
+	return app.Windows[suffix];
 end
 function app:BuildFlatSearchFilteredResponse(groups, filter, t)
 	if groups then
@@ -2903,7 +2906,7 @@ function app:CreateMiniListForGroup(group)
 	end
 
 	-- Pop Out Functionality! :O
-	local popout = app:GetWindow(app.GenerateSourceHash(group), {
+	local popout = app:CreateWindow(app.GenerateSourceHash(group), {
 		Silent = true,
 		AllowCompleteSound = true,
 		--Debugging = true,

@@ -6,7 +6,7 @@ local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 
 -- Implementation
-app:GetWindow("Flight Paths", {
+app:CreateWindow("Flight Paths", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

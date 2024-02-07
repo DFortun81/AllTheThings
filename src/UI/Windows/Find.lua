@@ -93,7 +93,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 ]]--
 
 -- Implementation
-app:GetWindow("ItemFinder", {
+app:CreateWindow("ItemFinder", {
 	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,
@@ -216,7 +216,7 @@ app:GetWindow("ItemFinder", {
 		return true;
 	end,
 });
-app:GetWindow("SpellFinder", {
+app:CreateWindow("SpellFinder", {
 	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,

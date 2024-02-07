@@ -109,7 +109,7 @@ local function OnTooltipForObject(t)
 end
 
 -- Implementation
-app:GetWindow("Objects", {
+app:CreateWindow("Objects", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,

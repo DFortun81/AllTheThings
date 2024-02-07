@@ -57,7 +57,7 @@ local function GetAttunementRequirement(t)
 end
 
 -- Implementation
-app:GetWindow("Attunements", {
+app:CreateWindow("Attunements", {
 	parent = UIParent,
 	Silent = true,
 	Commands = {

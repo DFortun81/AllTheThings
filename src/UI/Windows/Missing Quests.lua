@@ -5,7 +5,7 @@ local SearchForField, SearchForFieldContainer
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
-app:GetWindow("Missing Quests", {
+app:CreateWindow("Missing Quests", {
 	parent = UIParent,
 	Silent = true,
 	Commands = {

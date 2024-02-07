@@ -6,7 +6,7 @@ local ipairs, pairs, tinsert, tremove =
 	  ipairs, pairs, tinsert, tremove;
 
 -- Implementation
-app:GetWindow("Titles", {
+app:CreateWindow("Titles", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

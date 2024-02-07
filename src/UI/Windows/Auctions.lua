@@ -9,7 +9,7 @@ local tinsert, _GetAuctionItemInfo, _GetAuctionItemLink = tinsert, GetAuctionIte
 local auctionData = {};
 
 -- Implementation
-app:GetWindow("Auctions", {
+app:CreateWindow("Auctions", {
 	parent = UIParent,
 	Silent = true,
 	Commands = { "attauctions" },

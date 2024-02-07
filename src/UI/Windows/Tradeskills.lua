@@ -66,7 +66,7 @@ end
 app.AddEventHandler("OnRefreshCollections", RefreshSkills);
 
 -- Implementation
-app:GetWindow("Tradeskills", {
+app:CreateWindow("Tradeskills", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

@@ -7,7 +7,7 @@ local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 
 -- Implementation
-app:GetWindow("Heirlooms", {
+app:CreateWindow("Heirlooms", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

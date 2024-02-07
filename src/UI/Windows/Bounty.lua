@@ -6,7 +6,7 @@ local ipairs, tinsert
 	= ipairs, tinsert;
 
 -- Implementation
-app:GetWindow("Bounty", {
+app:CreateWindow("Bounty", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

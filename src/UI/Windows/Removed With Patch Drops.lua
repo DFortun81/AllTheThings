@@ -48,7 +48,7 @@ local function Export(g, strings)
 end
 
 -- Implementation
-app:GetWindow("Removed With Patch Drops", {
+app:CreateWindow("Removed With Patch Drops", {
 	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,

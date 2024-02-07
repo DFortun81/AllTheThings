@@ -503,7 +503,7 @@ local function CHAT_MSG_WHISPER_HANDLER(text, playerName, _, _, _, _, _, _, _, _
 end
 
 -- Implementation
-SoftReserveWindow = app:GetWindow("SoftReserves", {
+SoftReserveWindow = app:CreateWindow("SoftReserves", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,

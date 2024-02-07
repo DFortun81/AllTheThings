@@ -6,7 +6,7 @@ local ipairs, tinsert
 	= ipairs, tinsert;
 
 -- Implementation
-app:GetWindow("Locked", {
+app:CreateWindow("Locked", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

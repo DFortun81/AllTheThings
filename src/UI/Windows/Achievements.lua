@@ -75,7 +75,7 @@ local function achievementSort(a, b)
 end;
 
 -- Implementation
-app:GetWindow("Achievements", {
+app:CreateWindow("Achievements", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

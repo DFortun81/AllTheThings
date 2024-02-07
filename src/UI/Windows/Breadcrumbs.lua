@@ -6,7 +6,7 @@ local ipairs, tinsert
 	= ipairs, tinsert;
 
 -- Implementation
-app:GetWindow("Breadcrumbs", {
+app:CreateWindow("Breadcrumbs", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

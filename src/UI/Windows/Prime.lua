@@ -2,7 +2,7 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("Prime", {
+app:CreateWindow("Prime", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

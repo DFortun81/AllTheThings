@@ -2,7 +2,7 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("Exploration", {
+app:CreateWindow("Exploration", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

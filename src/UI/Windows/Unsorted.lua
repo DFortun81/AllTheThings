@@ -6,7 +6,7 @@ local L, CloneReference = app.L, app.CloneReference;
 local tinsert = tinsert;
 
 -- Implementation
-app:GetWindow("Unsorted", {
+app:CreateWindow("Unsorted", {
 	parent = UIParent,
 	Silent = true,
 	Commands = { "attunsorted" },

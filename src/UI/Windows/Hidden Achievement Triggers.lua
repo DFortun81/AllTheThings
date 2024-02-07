@@ -2,7 +2,7 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("Hiddent Achievement Triggers", {
+app:CreateWindow("Hiddent Achievement Triggers", {
 	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,

@@ -136,7 +136,7 @@ if GetLootThreshold and SetLootThreshold then
 end
 
 -- Implementation
-app:GetWindow("RaidAssistant", {
+app:CreateWindow("RaidAssistant", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,

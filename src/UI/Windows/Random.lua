@@ -168,7 +168,7 @@ local function SetSearchFilter(self, filter)
 end
 
 -- Implementation
-app:GetWindow("Random", {
+app:CreateWindow("Random", {
 	parent = UIParent,
 	Silent = true,
 	Commands = { "attrandom" },

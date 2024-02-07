@@ -2,7 +2,7 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("Dailies", {
+app:CreateWindow("Dailies", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

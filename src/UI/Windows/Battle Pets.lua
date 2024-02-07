@@ -10,7 +10,7 @@ local ipairs, pairs, tinsert, tremove =
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
-app:GetWindow("Battle Pets", {
+app:CreateWindow("Battle Pets", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,

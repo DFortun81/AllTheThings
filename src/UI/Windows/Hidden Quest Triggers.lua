@@ -2,7 +2,7 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("Hiddent Quest Triggers", {
+app:CreateWindow("Hiddent Quest Triggers", {
 	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,

@@ -5,7 +5,7 @@ local appName, app = ...;
 -- Uncomment this section if you need to enable Debugger:
 -- NOTE: It needs a lot of work! Not currently attached to any TOC files.
 --[[
-app:GetWindow("Debugger", {
+app:CreateWindow("Debugger", {
 	parent = UIParent,
 	Silent = true,
 	HideFromSettings = true,

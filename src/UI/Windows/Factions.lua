@@ -6,7 +6,7 @@ local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 
 -- Implementation
-app:GetWindow("Factions", {
+app:CreateWindow("Factions", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
