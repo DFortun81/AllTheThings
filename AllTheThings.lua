@@ -3066,6 +3066,7 @@ local TooltipSourceFields = {
 	"npcID",
 	"questID"
 };
+local InitialCachedSearch;
 GetCachedSearchResults = function(method, paramA, paramB, ...)
 	local search = (paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA;
 	if IsRetrieving(search) then return; end
@@ -3074,11 +3075,11 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetCachedSearchResults",method,paramA,paramB,...)
 
 	-- This method can be called nested, and some logic should only process for the initial call
-	local topLevelSearch;
-	if not app.InitialCachedSearch then
+	local isTopLevelSearch;
+	if not InitialCachedSearch then
 		-- app.PrintDebug("TopLevelSearch",paramA,paramB,...)
-		app.InitialCachedSearch = search;
-		topLevelSearch = true;
+		InitialCachedSearch = search;
+		isTopLevelSearch = true;
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
@@ -3197,7 +3198,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 			if itemString then
 				sourceID = GetSourceID(paramA);
 				-- print("ParamA SourceID",sourceID,paramA)
-				if topLevelSearch and app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
+				if isTopLevelSearch and app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = strsplit(":", itemString);
 				if itemID2 then
 					itemID = tonumber(itemID2);
@@ -3263,7 +3264,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 				sourceGroup.missing = true;
 			end
 
-			if topLevelSearch then
+			if isTopLevelSearch then
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if sourceInfo then
@@ -3431,7 +3432,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 								-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
 								-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 								-- this Account as being 'collected'
-								if topLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) }); end
+								if isTopLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) }); end
 								-- if the tooltip immediately refreshes for whatever reason then
 								-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
 								if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
@@ -3507,8 +3508,8 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
-	-- app.PrintDebug("SourceLocations?",topLevelSearch,app.Settings:GetTooltipSetting("SourceLocations"),paramA,app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))
-	if topLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+	-- app.PrintDebug("SourceLocations?",isTopLevelSearch,app.Settings:GetTooltipSetting("SourceLocations"),paramA,app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))
+	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
 		local temp, text, parent = {};
 		local unfiltered, uTexture = {};
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
@@ -3783,7 +3784,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 		end
 
 		-- Only need to build/update groups from the top level
-		if topLevelSearch then
+		if isTopLevelSearch then
 			AssignChildren(group);
 			app.TopLevelUpdateGroup(group);
 		end
@@ -3792,7 +3793,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 		group.g = nil;
 	end
 
-	if topLevelSearch then
+	if isTopLevelSearch then
 		-- Add various text to the group now that it has been consolidated from all sources
 		if group.isLimited then
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
@@ -3821,7 +3822,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 				tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
 				-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
 				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 3524) ~= 3524 then
-					if topLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
+					if isTopLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
 				end
 			end
 		end
@@ -3986,7 +3987,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 		end
 
 		-- If the item is a recipe, then show which characters know this recipe.
-		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
+		-- app.PrintDebug(isTopLevelSearch,group.spellID,group.filterID,group.collectible)
 		local groupSpellID = group.spellID;
 		if groupSpellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
 			local knownBy = {};
@@ -4003,7 +4004,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 		end
 
 		-- If the result has a QuestID, then show which characters have this QuestID.
-		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
+		-- app.PrintDebug(isTopLevelSearch,group.spellID,group.filterID,group.collectible)
 		local groupQuestID = group.questID;
 		if groupQuestID and not group.illusionID and app.Settings:GetTooltipSetting("CompletedBy") then
 			local knownBy = {};
@@ -4022,7 +4023,6 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 		end
 
 		group.isBaseSearchResult = true;
-		app.InitialCachedSearch = nil;
 
 		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",search,group.text or (group.key and group.key .. group[group.key]),group)
 
@@ -4033,6 +4033,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 		if not working then
 			searchCache[search] = group;
 		end
+		if isTopLevelSearch then InitialCachedSearch = nil; end
 
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then

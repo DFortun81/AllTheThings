@@ -952,11 +952,18 @@ app.WipeSearchCache = function()
 	wipe(searchCache);
 end
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
+local InitialCachedSearch;
 local function GetCachedSearchResults(method, paramA, paramB, ...)
 	local search = (paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA;
 	if IsRetrieving(search) then return; end
 	local cache = searchCache[search];
 	if cache then return cache; end
+	
+	local isTopLevelSearch;
+	if not InitialCachedSearch then
+		InitialCachedSearch = search;
+		isTopLevelSearch = true;
+	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
@@ -1340,6 +1347,20 @@ local function GetCachedSearchResults(method, paramA, paramB, ...)
 			end
 			group = CloneClassInstance({ [paramA] = paramB, key = paramA });
 			group.g = merged;
+		end
+		
+		-- Only need to build/update groups from the top level
+		if isTopLevelSearch and group.g then
+			group.total = 0;
+			group.progress = 0;
+			AssignChildren(group);
+			app.UpdateGroups(group, group.g);
+			if group.collectible then
+				group.total = group.total + 1;
+				if group.collected then
+					group.progress = group.progress + 1;
+				end
+			end
 		end
 	end
 
@@ -1736,6 +1757,7 @@ local function GetCachedSearchResults(method, paramA, paramB, ...)
 
 	-- Cache the result depending on if there is more work to be done.
 	if not working then searchCache[search] = group; end
+	if isTopLevelSearch then InitialCachedSearch = nil; end
 	return group;
 end
 app.GetCachedSearchResults = GetCachedSearchResults;
