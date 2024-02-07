@@ -10,8 +10,8 @@ local rawget, ipairs, pairs, type
 	= rawget, ipairs, pairs, type
 
 -- App locals
-local SearchForFieldContainer, ArrayAppend, GetRawField
-	= app.SearchForFieldContainer, app.ArrayAppend, app.GetRawField
+local SearchForFieldContainer, ArrayAppend, GetRawField, GetRelativeByFunc
+	= app.SearchForFieldContainer, app.ArrayAppend, app.GetRawField, app.GetRelativeByFunc
 local OneTimeQuests = app.EmptyTable
 
 -- Module locals
@@ -89,17 +89,22 @@ local function CacheFilters()
 	GroupFilter = app.GroupFilter;
 	CheckCanBeCollected = app.MODE_DEBUG_OR_ACCOUNT and CanBeAccountCollected or CanBeCollected;
 end
+local function BlockedParent(group)
+	if group.questID and (group.saved or group.locked) or OneTimeQuests[group.questID] then
+		return group
+	end
+end
 local function SetCostTotals(costs, isCost, refresh)
 	-- Iterate on the search result of the entry key
-	local parent, blocked
+	local parent, blockedBy
 	for _,c in ipairs(costs) do
 		-- Mark the group with a costTotal
 		-- app.PrintDebug("Force Cost",c.hash,isCost)
 		c._SettingsRefresh = refresh;
 		if isCost then
 			parent = c.parent
-			blocked = parent and (parent.saved or parent.locked)
-			if not blocked then
+			blockedBy = GetRelativeByFunc(parent, BlockedParent)
+			if not blockedBy then
 				c.isCost = isCost;
 				c._CheckCollectible = isCost;
 			else
@@ -107,9 +112,11 @@ local function SetCostTotals(costs, isCost, refresh)
 				c._CheckCollectible = nil;
 				-- app.PrintDebug("Skipped cost under locked/saved parent"
 				-- 	,app:Linkify(c.hash, app.Colors.ChatLink, "search:"..c.key..":"..c[c.key])
-				-- 	,app:Linkify(parent.hash, app.Colors.ChatLink, "search:"..parent.key..":"..parent[parent.key]))
+				-- 	,app:Linkify(blockedBy.hash, app.Colors.ChatLink, "search:"..blockedBy.key..":"..blockedBy[blockedBy.key]))
 			end
 		else
+			-- app.PrintDebug("Not a cost"
+			-- 	,app:Linkify(c.hash, app.Colors.ChatLink, "search:"..c.key..":"..c[c.key]))
 			c.isCost = nil;
 			c._CheckCollectible = nil;
 		end

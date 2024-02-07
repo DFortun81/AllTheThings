@@ -158,6 +158,13 @@ local function GetRelativeRawWithField(group, field)
 	end
 end
 app.GetRelativeRawWithField = GetRelativeRawWithField;
+-- Returns the first encountered group tracing upwards in direct parent hierarchy which returns a value from when passed into the provided function
+local function GetRelativeByFunc(group, func)
+	if group then
+		return func(group) or GetRelativeByFunc(group.sourceParent or group.parent, func)
+	end
+end
+app.GetRelativeByFunc = GetRelativeByFunc;
 app.AssignChildren = AssignChildren;
 app.AssignFieldValue = AssignFieldValue;
 app.CloneArray = CloneArray;
