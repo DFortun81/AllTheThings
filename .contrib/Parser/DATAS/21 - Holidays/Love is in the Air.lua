@@ -2802,6 +2802,7 @@ for i,o in ipairs({
 						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
 						["timeline"] = { ADDED_10_2_5 },
 						["collectible"] = false,
+						["isDaily"] = true,
 					}),
 					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
 						["timeline"] = { "added 3.3.0" },
