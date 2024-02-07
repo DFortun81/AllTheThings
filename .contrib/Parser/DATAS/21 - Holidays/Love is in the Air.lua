@@ -1,4 +1,4 @@
---------------------------------------------49927
+--------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 LOVE_IS_IN_THE_AIR_HEADER = createHeader({
@@ -1319,6 +1319,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 			-- #endif
 		}),
+		-----------------
+		-- 2024 Update --
+		-----------------
 		q(78329, {	-- Love is in the Air (A)
 			["qg"] = 215197,	-- Gabbo Blinkwink
 			["coord"] = { 54.3, 60.3, VALDRAKKEN },
@@ -1421,11 +1424,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
 		}),
-		q(78664, {	-- The Gift of Self-Care (A)
-			["qg"] = 213262,	-- Ying
-			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+		-- Dailies
+		q(78565, {	-- Getaway to Scenic Grizzly Hills! (A)
+			["qg"] = 212677,	-- Gabbo Blinkwink
+			["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78594, {	-- Getaway to Scenic Feralas! (A)
+			["qg"] = 212677,	-- Gabbo Blinkwink
+			["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78986, {	-- Getaway to Scenic Grizzly Hills! (H)
+			["qg"] = 214497,	-- Aurora Vabsley
+			["coord"] = { 41.5, 16.1, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78988, {	-- Getaway to Scenic Feralas! (H)
+			["qg"] = 214497,	-- Aurora Vabsley
+			["coord"] = { 41.5, 16.1, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(78724, {	-- Loving Yourself, Your Way (A)
@@ -1435,7 +1460,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78726, {	-- Loving Yourself, Your Way (A)
 			["qg"] = 213262,	-- Ying
@@ -1444,7 +1468,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78727, {	-- Loving Yourself, Your Way (A)
 			["qg"] = 213262,	-- Ying
@@ -1452,38 +1475,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
-		}),
-		q(78679, {	-- The Gift of Relaxation (A)
-			["qg"] = 213262,	-- Ying
-			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
-			["timeline"] = { ADDED_10_2_5 },
-			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
-		}),
-		q(78565, {	-- Getaway to Scenic Grizzly Hills! (A)
-			["qg"] = 212677,	-- Gabbo Blinkwink
-			["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
-			["timeline"] = { ADDED_10_2_5 },
-			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
-		}),
-		q(78594, {	-- Getaway to Scenic Feralas! (A)
-			["qg"] = 212677,	-- Gabbo Blinkwink
-			["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
-			["timeline"] = { ADDED_10_2_5 },
-			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
-		}),
-		q(78989, {	-- The Gift of Self-Care (H)
-			["qg"] = 214591,	-- Ning
-			["coord"] = { 41.9, 16.2, DUROTAR },
-			["timeline"] = { ADDED_10_2_5 },
-			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(78979, {	-- Loving Yourself, Your Way (H)
@@ -1493,7 +1484,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78992, {	-- Loving Yourself, Your Way (H)
 			["qg"] = 214591,	-- Ning
@@ -1502,7 +1492,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78993, {	-- Loving Yourself, Your Way (H)
 			["qg"] = 214591,	-- Ning
@@ -1511,7 +1500,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
+		}),
+		q(78679, {	-- The Gift of Relaxation (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78664, {	-- The Gift of Self-Care (A)
+			["qg"] = 213262,	-- Ying
+			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = ALLIANCE_ONLY,
+			["isDaily"] = true,
+		}),
+		q(78989, {	-- The Gift of Self-Care (H)
+			["qg"] = 214591,	-- Ning
+			["coord"] = { 41.9, 16.2, DUROTAR },
+			["timeline"] = { ADDED_10_2_5 },
+			["races"] = HORDE_ONLY,
+			["isDaily"] = true,
 		}),
 		q(78991, {	-- The Gift of Relaxation (H)
 			["qg"] = 214591,	-- Ning
@@ -1519,23 +1528,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
-		}),
-		q(78986, {	-- Getaway to Scenic Grizzly Hills! (H)
-			["qg"] = 214497,	-- Aurora Vabsley
-			["coord"] = { 41.5, 16.1, DUROTAR },
-			["timeline"] = { ADDED_10_2_5 },
-			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
-		}),
-		q(78988, {	-- Getaway to Scenic Feralas! (H)
-			["qg"] = 214497,	-- Aurora Vabsley
-			["coord"] = { 41.5, 16.1, DUROTAR },
-			["timeline"] = { ADDED_10_2_5 },
-			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
-			["groups"] = { i(LOVE_TOKEN) },
 		}),
 	}),
 	n(REWARDS, {
