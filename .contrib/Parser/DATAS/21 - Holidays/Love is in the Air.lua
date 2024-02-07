@@ -358,6 +358,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["name"] = "When donating to the gala (daily)",
 					["timeline"] = { ADDED_10_2_5 },
 					["collectible"] = false,
+					["isDaily"] = true,
 				}),
 			},
 		}),
@@ -1567,6 +1568,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = {
+				i(145277),	-- Aftermath of the Second War
+				i(145289),	-- Arathor and the Troll Wars
+				i(145307),	-- The Betrayer Ascendant
+				i(145312),	-- The Twin Empires
+				i(145297),	-- The Dark Portal and the Fall of Stormwind
+				i(212468),	-- Copy of Blinking Rules & Regulations
+				i(212473),	-- Copy of The Archmage Antonidas - Part I
+				i(212474),	-- Copy of The Archmage Antonidas - Part II
+				i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
+				i(212480),	-- Copy of The Schools of Arcane Magic - Divination
+				i(212489),	-- Copy of a Damaged Apprentice Journal
+				-- got tired of clicking books kek
+			},
 		}),
 	}),
 	n(REWARDS, {
