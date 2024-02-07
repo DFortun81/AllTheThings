@@ -145,9 +145,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		ach(1695, {	-- Dangerous Love
 			["sourceQuests"] = {
 				-- #if BEFORE 10.2.5
-				-- #if AFTER LEGION
-				44558,	-- Crushing the Crown (A) [Legion+]
-				-- #endif
+					-- #if AFTER LEGION
+					44558,	-- Crushing the Crown (A) [Legion+]
+					-- #endif
 				24658,	-- Crushing the Crown (A) [Elwynn Forest]
 				24659,	-- Crushing the Crown (A) [Darkshore]
 				24660,	-- Crushing the Crown (A) [Duskwood]
@@ -156,12 +156,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				24664,	-- Crushing the Crown (A) [Winterspring]
 				24665,	-- Crushing the Crown (A) [Terokkar Forest]
 				24666,	-- Crushing the Crown (A) [Crystalsong Forest]
-				-- #if AFTER CATA
-				28934,	-- Crushing the Crown (A) [Uldum]
-				-- #endif
-				-- #if AFTER LEGION
-				44546,	-- Crushing the Crown (H) [Legion+]
-				-- #endif
+					-- #if AFTER CATA
+					28934,	-- Crushing the Crown (A) [Uldum]
+					-- #endif
+					-- #if AFTER LEGION
+					44546,	-- Crushing the Crown (H) [Legion+]
+					-- #endif
 				24638,	-- Crushing the Crown (H) [Durotar]
 				24645,	-- Crushing the Crown (H) [Silverpine Forest]
 				24647,	-- Crushing the Crown (H) [Hillsbrad Foothills]
@@ -170,10 +170,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				24650,	-- Crushing the Crown (H) [Winterspring]
 				24651,	-- Crushing the Crown (H) [Terokkar Forest]
 				24652,	-- Crushing the Crown (H) [Crystalsong Forest]
-				-- #if AFTER CATA
-				28935,	-- Crushing the Crown (H) [Uldum]
-				-- #endif
-				-- else
+					-- #if AFTER CATA
+					28935,	-- Crushing the Crown (H) [Uldum]
+					-- #endif
+				-- #else
 				78984,	-- Crushing the Crown (H)
 				78369,	-- Crushing the Crown (A)
 				-- #endif
@@ -254,6 +254,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		ach(19508, {	-- Love Language Expert
 			["timeline"] = { ADDED_10_2_5 },
+			["maps"] = { FERALAS },
+			["groups"] = {
+				crit(64676, {	-- Novelty
+					["_noautomation"] = true,	-- blizz swapped these for now, maybe will fix
+					["provider"] = {"n",214850},	-- Bront Axecrusher
+				}),
+				crit(64680, {	-- Beauty
+				}),
+				crit(64681, {	-- Comfort
+					["description"] = "While holding any 'gift', use /hug.",
+				}),
+				crit(64677, {	-- Festivity
+					["provider"] = {"n",212815},	-- Clarissa Buchannan
+				}),
+				crit(64679, {	-- Challenge
+					["_noautomation"] = true,	-- blizz swapped these for now, maybe will fix
+					["provider"] = {"n",212812},	-- Vernon Whitlock
+				}),
+				crit(64682, {	-- Respect
+					["description"] = "While holding any 'gift', use /bow.",
+				}),
+				crit(64678, {	-- Companionship
+					["providers"] = {
+						{"n",212811},	-- Angus Flagonshot
+						{"n",212850},	-- Lost Puppy
+					},
+				}),
+				crit(64683, {	-- Attention
+					["description"] = "While holding any 'gift', follow the 'talk' dialog options after asking about the gift.",
+				}),
+				crit(64736, {	-- Style
+				}),
+				crit(64703, {	-- Praise
+					["provider"] = {"i",211923},	-- Sealed Letter
+				}),
+			},
 		}),
 		ach(1703, {	-- My Love is Like a Red, Red Rose
 			["providers"] = {
@@ -1438,6 +1474,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = {
+				i(211923),	-- Sealed Letter
+			},
 		}),
 		q(78986, {	-- Getaway to Scenic Grizzly Hills! (H)
 			["qg"] = 214497,	-- Aurora Vabsley
