@@ -17252,7 +17252,10 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 			local RepeatablesPerMapID = {
 				[2200] = {	-- Emerald Dream
 					78319,	-- The Superbloom
-				}
+				},
+				[2024] = {	-- The Azure Span
+					79226,	-- The Big Dig: Traitor's Rest
+				},
 			}
 			-- Blizz likes to list the same quest on multiple maps
 			local AddedQuestIDs = {}
@@ -18817,7 +18820,7 @@ app.Startup = function()
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
-	
+
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 
