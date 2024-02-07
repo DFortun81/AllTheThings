@@ -169,6 +169,7 @@ local TooltipSettingsBase = {
 		["Lore"] = true,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
+		["WorldMapButton"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
 		["Models"] = true,
@@ -264,6 +265,7 @@ settings.Initialize = function(self)
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
+	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
@@ -1733,6 +1735,17 @@ end);
 ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
 ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 360, 0);
 
+local ShowWorldMapButtonCheckBox = settings:CreateCheckBox("Show the World Map Button",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("WorldMapButton"));
+end,
+function(self)
+	settings:SetTooltipSetting("WorldMapButton", self:GetChecked());
+	app.SetWorldMapButtonSettings(settings:GetTooltipSetting("WorldMapButton"));
+end);
+ShowWorldMapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.");
+ShowWorldMapButtonCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowCompletedGroupsCheckBox = settings:CreateCheckBox("Show Completed Groups",
 function(self)
 	self:SetChecked(settings:Get("Show:CompletedGroups"));
@@ -1750,7 +1763,7 @@ function(self)
 	app:RefreshDataQuietly("ShowCompletedGroupsCheckBox");
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 0, -4);
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", ShowWorldMapButtonCheckBox, "BOTTOMLEFT", 0, -4);
 
 local ShowCollectedThingsCheckBox = settings:CreateCheckBox("Show Collected Things",
 function(self)
