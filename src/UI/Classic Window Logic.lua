@@ -2377,7 +2377,7 @@ function app:CreateWindow(suffix, settings)
 	end
 	return window;
 end
-function app:GetWindow(suffix, settings)
+function app:GetWindow(suffix)
 	return app.Windows[suffix];
 end
 function app:BuildFlatSearchFilteredResponse(groups, filter, t)
