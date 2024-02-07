@@ -47,7 +47,7 @@ local function CreateWorldMapButton()
 	button:SetScript("OnClick", function(self)
 		local mapID = self.mapID;
 		if mapID and mapID > 0 then
-			(app:GetWindow("MiniList") or app:GetWindow("CurrentInstance")):SetMapID(mapID);
+			(app.Windows["MiniList"] or app.Windows["CurrentInstance"]):SetMapID(mapID);
 		end
 	end);
 	return button;
