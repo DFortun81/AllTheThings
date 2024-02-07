@@ -1487,11 +1487,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 212677,	-- Gabbo Blinkwink
 				["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(210743),	-- Borrowed Camera (QI!)
+				},
 			}),
 			q(78987, {	-- Getaway to Scenic Nagrand! (H)
 				["qg"] = 214497,	-- Aurora Vabsley
 				["coord"] = { 41.5, 16.1, DUROTAR },
 				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(210743),	-- Borrowed Camera (QI!)
+				},
 			}),
 			q(78724, {	-- Loving Yourself, Your Way (A)
 				["qg"] = 213262,	-- Ying
