@@ -4110,38 +4110,38 @@ end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	if app.ShouldFillPurchasesForItemID(group.itemID) then
-		local collectibles = group.costCollectibles;
-		if collectibles and #collectibles > 0 then
-			-- if app.Debugging then
-			-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
-			-- 		["OnUpdate"] = app.AlwaysShowUpdate,
-			-- 		["skipFill"] = true,
-			-- 		["g"] = {},
-			-- 	})
-			-- 	NestObjects(sourceGroup, collectibles, true)
-			-- 	NestObject(group, sourceGroup, nil, 1)
-			-- end
-			local groupHash = group.hash;
-			-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
-			local groups = {};
-			local clone;
-			for _,o in ipairs(collectibles) do
-				if o.hash ~= groupHash then
-					-- app.PrintDebug("Purchase @",groupHash,"=>",o.hash)
-					clone = CreateObject(o);
-					groups[#groups + 1] = clone
-				end
+	if not app.ShouldFillPurchasesForItemID(group.itemID) then return end
+
+	local collectibles = group.costCollectibles;
+	if collectibles and #collectibles > 0 then
+		-- if app.Debugging then
+		-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
+		-- 		["OnUpdate"] = app.AlwaysShowUpdate,
+		-- 		["skipFill"] = true,
+		-- 		["g"] = {},
+		-- 	})
+		-- 	NestObjects(sourceGroup, collectibles, true)
+		-- 	NestObject(group, sourceGroup, nil, 1)
+		-- end
+		local groupHash = group.hash;
+		-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
+		local groups = {};
+		local clone;
+		for _,o in ipairs(collectibles) do
+			if o.hash ~= groupHash then
+				-- app.PrintDebug("Purchase @",groupHash,"=>",o.hash)
+				clone = CreateObject(o);
+				groups[#groups + 1] = clone
 			end
-			-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
-			-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
-			if #groups > 0 then
-				group.collectibleAsCost = false;
-				group.filledCost = true;
-				group.costTotal = nil;
-			end
-			return groups;
 		end
+		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
+		-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
+		if #groups > 0 then
+			group.collectibleAsCost = false;
+			group.filledCost = true;
+			group.costTotal = nil;
+		end
+		return groups;
 	end
 end
 local function DetermineCraftedGroups(group, FillData)
