@@ -1,4 +1,4 @@
---------------------------------------------
+--------------------------------------------49927
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 LOVE_IS_IN_THE_AIR_HEADER = createHeader({
@@ -1332,18 +1332,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["sourceQuest"] = 78329,	-- Love is in the Air (A)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78332, {	-- I Smell Trouble (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 32.2, 50.1, ELWYNN_FOREST },
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78337, {	-- An Unwelcome Gift (A)
 			["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
 			["sourceQuest"] = 78332,	-- I Smell Trouble (A)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78729, {	-- Raising a Stink (A)
 			["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
@@ -1357,6 +1360,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["sourceQuest"] = 78729,	-- Raising a Stink (A)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78379, {	-- The Stench of Revenge (A)
 			["qg"] = 38066,	-- Inspector Snap Snagglebolt
@@ -1364,6 +1368,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["sourceQuest"] = 78369,	-- Crushing the Crown (A)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78981, {	-- Love is in the Air (H)
 			["qg"] = 215196,	-- Aurora Vabsley
@@ -1378,18 +1383,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["sourceQuest"] = 78981,	-- Love is in the Air (H)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78982, {	-- I Smell Trouble (H)
 			["qg"] = 37172,	-- Detective Snip Snagglebolt
 			["coord"] = { 41.6, 17.7, DUROTAR },
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78983, {	-- An Unwelcome Gift (H)
 			["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
 			["sourceQuest"] = 78982,	-- I Smell Trouble (H)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78978, {	-- Raising a Stink (H)
 			["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
@@ -1403,6 +1411,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["sourceQuest"] = 78978,	-- Raising a Stink (H)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78985, {	-- The Stench of Revenge (H)
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
@@ -1410,6 +1419,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["sourceQuest"] = 78984,	-- Crushing the Crown (H)
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78664, {	-- The Gift of Self-Care (A)
 			["qg"] = 213262,	-- Ying
@@ -1425,6 +1435,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78726, {	-- Loving Yourself, Your Way (A)
 			["qg"] = 213262,	-- Ying
@@ -1433,6 +1444,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78727, {	-- Loving Yourself, Your Way (A)
 			["qg"] = 213262,	-- Ying
@@ -1441,6 +1453,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78679, {	-- The Gift of Relaxation (A)
 			["qg"] = 213262,	-- Ying
@@ -1448,6 +1461,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78565, {	-- Getaway to Scenic Grizzly Hills! (A)
 			["qg"] = 212677,	-- Gabbo Blinkwink
@@ -1455,6 +1469,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78594, {	-- Getaway to Scenic Feralas! (A)
 			["qg"] = 212677,	-- Gabbo Blinkwink
@@ -1462,6 +1477,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78989, {	-- The Gift of Self-Care (H)
 			["qg"] = 214591,	-- Ning
@@ -1477,6 +1493,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78992, {	-- Loving Yourself, Your Way (H)
 			["qg"] = 214591,	-- Ning
@@ -1485,6 +1502,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78993, {	-- Loving Yourself, Your Way (H)
 			["qg"] = 214591,	-- Ning
@@ -1493,6 +1511,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78991, {	-- The Gift of Relaxation (H)
 			["qg"] = 214591,	-- Ning
@@ -1500,6 +1519,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78986, {	-- Getaway to Scenic Grizzly Hills! (H)
 			["qg"] = 214497,	-- Aurora Vabsley
@@ -1507,6 +1527,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 		q(78988, {	-- Getaway to Scenic Feralas! (H)
 			["qg"] = 214497,	-- Aurora Vabsley
@@ -1514,6 +1535,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+			["groups"] = { i(LOVE_TOKEN) },
 		}),
 	}),
 	n(REWARDS, {
@@ -1821,33 +1843,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 			["groups"] = {
 				i(122339, {	-- Ancient Heirloom Scabbard
-					["cost"] = { { "i", 49927, 200 } },	-- 200x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 200 } },	-- 200x Love Token
 					["timeline"] = { "added 6.1.0.19445" },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
-					["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { "added 8.1.5.29701" },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(187998, {	-- Eternal Heirloom Scabbard
-					["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { ADDED_9_1_5 },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(122341, {	-- Timeworn Heirloom Scabbard
-					["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { "added 6.1.0.19445" },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(151615, {	-- Weathered Heirloom Scabbard
-					["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { "added 7.2.5.24076" },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(50161, {	-- Dinner Suit Box
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 20 } },	-- 20x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 20 } },	-- 20x Love Token
 					["groups"] = {
 						i(151765, {	-- Blue Dinner Suit
 							["timeline"] = { "added 7.2.5.24116" },
@@ -1871,7 +1893,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				i(50160, {	-- Lovely Dress Box
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 20 } },	-- 20x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 20 } },	-- 20x Love Token
 					["groups"] = {
 						ach(1694, {	-- Lovely Luck Is On Your Side
 							-- #if AFTER 7.2.5.24116
@@ -1908,58 +1930,58 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				i(142341, {	-- Love Boat (TOY!)
 					["timeline"] = { "added 7.1.0.22731" },
-					["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 270 } },	-- 270x Love Token
 				}),
 				i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
 					["timeline"] = { "added 8.1.0.28724" },
-					["cost"] = { { "i", 49927, 150 } },	-- 150x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 150 } },	-- 150x Love Token
 				}),
 				i(34480, {	-- Romantic Picnic Basket (TOY!)
 					["timeline"] = { "added 2.4.0.7897" },
-					["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
 				}),
 				i(144339, {	-- Sturdy Love Fool (TOY!)
 					["timeline"] = { "added 7.1.5.23360" },
-					["cost"] = { { "i", 49927, 100 } },	-- 100x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 100 } },	-- 100x Love Token
 				}),
 				i(116155, {	-- Lovebird Hatchling (PET!)
 					["timeline"] = { "added 6.0.1.18566" },
-					["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
 				}),
 				i(22235, {	-- Peddlefeet (PET!)
-					["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
 				}),
 				i(72146, {	-- Swift Lovebird (MOUNT!)
 					["timeline"] = { "added 4.3.0.15005" },
-					["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 270 } },	-- 270x Love Token
 				}),
 				i(49859, {	-- "Bravado" Cologne
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
 				i(49857, {	-- "Enchantress" Perfume
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
 				i(49858, {	-- "Forever" Perfume
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
 				i(49861, {	-- "STALWART" Cologne
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
 				i(49856, {	-- "VICTORY" Perfume
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
 				i(49860, {	-- "Wizardry" Cologne
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
 				i(49909, {	-- Box of Chocolates
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
 					["groups"] = {
 						i(22236),	-- Buttermilk Delight
 						i(22237),	-- Dark Desire
@@ -1968,7 +1990,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					},
 				}),
 				i(21813, {	-- Bag of Heart Candies
-					["cost"] = { { "i", 49927, 2 } },	-- 2x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 2 } },	-- 2x Love Token
 					["groups"] = {
 						i(21816),	-- Heart Candy (Be Mine!)
 						i(21817),	-- Heart Candy (I LOVE YOU)
@@ -1981,32 +2003,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					},
 				}),
 				i(22218, {	-- Handful of Rose Petals
-					["cost"] = { { "i", 49927, 2 } },	-- 2x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 2 } },	-- 2x Love Token
 				}),
 				i(22261, {	-- Love Fool
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
 				}),
 				i(34258, {	-- Lovely Fireworks
 					["timeline"] = { "added 2.3.0.7382" },
-					["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
 				}),
 				i(50163, {	-- Lovely Rose
 					["timeline"] = { "added 3.3.2.11403" },
-					["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
 				}),
 				i(22200, {	-- Silver Shafted Arrow
-					["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
 				}),
 				i(116648, {	-- Manufactured Love Prism
 					["timeline"] = { "added 6.0.1.18594" },
-					["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
 				}),
 				i(134860, {	-- Peddlefeet's Buffing Creme
 					["timeline"] = { "added 7.0.3.22248" },
-					["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					["cost"] = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
 				}),
-				i(49927, {	-- Love Token
+				i(LOVE_TOKEN, {	-- Love Token
 					["timeline"] = { "added 3.3.0.10596", REMOVED_10_2_5 },
 					["cost"] = { { "i", 49916, 1 } },	-- 1x Lovely Charm Bracelet
 				}),
