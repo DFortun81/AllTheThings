@@ -664,7 +664,7 @@ app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 -- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
 local function RecursiveCharacterRequirementsFilter(group)
 	while group do
-		if not SettingsCharacterFilters(group) then return; end
+		if not CurrentCharacterFilters(group) then return; end
 		group = group.sourceParent or group.parent;
 	end
 	return true;
