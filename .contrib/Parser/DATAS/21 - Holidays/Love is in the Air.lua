@@ -312,6 +312,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ 42.2, 18.2, DUROTAR },
 			},
 			["timeline"] = { ADDED_10_2_5 },
+			["groups"] = {
+				q(78912, {
+					["name"] = "When donating to the gala (daily)",
+					["timeline"] = { ADDED_10_2_5 },
+					["collectible"] = false,
+				}),
+			},
 		}),
 		ach(1702, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Sweet Tooth
 			crit(8705, {	-- Buttermilk Delight
@@ -1502,6 +1509,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { ADDED_10_2_5 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
+		}),
+		--- HQTs (I don't know where they are supposed to go sorry)
+		q(79143, {
+			["name"] = "Completed alongside Love is in the Air (H)",
+			["timeline"] = { ADDED_10_2_5 },
+			["collectible"] = false,
+		}),
+		q(79144, {
+			["name"] = "Completed alongside Love is in the Air (H)",
+			["timeline"] = { ADDED_10_2_5 },
+			["collectible"] = false,
+		}),
+		q(78735, {
+			["name"] = "After choosing a self-care method for The Gift of Self-Care (A)",
+			["timeline"] = { ADDED_10_2_5 },
+			["collectible"] = false,
+		}),
+		q(78736, {
+			["name"] = "After choosing a self-care method for The Gift of Self-Care (H)",
+			["timeline"] = { ADDED_10_2_5 },
+			["collectible"] = false,
+		}),
+		q(78476, {
+			["name"] = "Interacting with a box during I Smell Trouble (A)",
+			["timeline"] = { ADDED_10_2_5 },
+			["collectible"] = false,
 		}),
 	}),
 	n(REWARDS, {
@@ -2769,7 +2802,7 @@ for i,o in ipairs({
 					}),
 					q(79104, {	-- First Heart-Shaped Box of the Day (Accountwide)
 						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
-						["timeline"] = { "added 10.2.5" },
+						["timeline"] = { ADDED_10_2_5 },
 						["collectible"] = false,
 					}),
 					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
