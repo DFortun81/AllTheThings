@@ -14917,38 +14917,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					MergeObject(groups, group);
 				end
 
-				-- Check for difficulty groups
-				-- local cbd, zd = -1, -1;
-				-- local groupHeaderID, g;
-				-- for _,group in ipairs(groups) do
-				-- 	g = group.g;
-				-- 	if g and group.difficultyID then
-				-- 		cbd, zd = -1, -1;
-				-- 		-- Look for special headers
-				-- 		for j,subgroup in ipairs(g) do
-				-- 			groupHeaderID = subgroup.headerID;
-				-- 			-- Common Boss Drops
-				-- 			if groupHeaderID == app.HeaderConstants.COMMON_BOSS_DROPS then
-				-- 				cbd = j;
-				-- 			end
-				-- 			-- Zone Drops
-				-- 			if groupHeaderID == app.HeaderConstants.ZONE_DROPS then
-				-- 				zd = j;
-				-- 			end
-				-- 		end
-
-				-- 		-- Push the Common Boss Drop header to the top
-				-- 		if cbd > -1 then
-				-- 			tinsert(g, 1, tremove(g, cbd));
-				-- 		end
-
-				-- 		-- Push the Zone Drop header to the bottom
-				-- 		if zd > -1 then
-				-- 			tinsert(g, tremove(g, zd));
-				-- 		end
-				-- 	end
-				-- end
-
 				if #rootGroups == 0 then
 					-- if only one group in the map root, then shift it up as the map root instead
 					local headerGroups = header.g;
