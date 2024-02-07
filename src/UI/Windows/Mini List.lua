@@ -219,8 +219,6 @@ local CachedMapData = setmetatable({}, {
 	end
 });
 
-
-
 -- Implementation
 app:CreateWindow("MiniList", {
 	AllowCompleteSound = true,
@@ -241,13 +239,6 @@ app:CreateWindow("MiniList", {
 		"attminilist",
 	},
 	OnInit = function(self, handlers)
-		app.ToggleMiniListForCurrentZone = function() self:Toggle(); end;
-		
-		local delayedUpdate = function()
-			self:DelayedUpdate(true);
-		end;
-		handlers.QUEST_TURNED_IN = delayedUpdate;
-		handlers.QUEST_LOG_UPDATE = delayedUpdate;
 		handlers.PLAYER_DIFFICULTY_CHANGED = function()
 			wipe(CachedMapData);
 			self:Rebuild();
@@ -258,6 +249,14 @@ app:CreateWindow("MiniList", {
 				self:Rebuild();
 			end
 		end
+		app.ToggleMiniListForCurrentZone = function()
+			if self:IsVisible() then
+				self:Hide();
+			else
+				self:SetMapID(app.CurrentMapID);
+				self:Show();
+			end
+		end;
 	end,
 	OnLoad = function(self, settings)
 		pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
