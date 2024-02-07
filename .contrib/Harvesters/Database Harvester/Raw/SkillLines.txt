@@ -226,6 +226,8 @@
 2851@@@Engraving
 2853@@@Runes
 2885@@@Meditation
+1.15.1.53009
+2887@@@Pet - Felguard
 2.0.0.6080
 755@@@Jewelcrafting
 756@@@Blood Elf Racial

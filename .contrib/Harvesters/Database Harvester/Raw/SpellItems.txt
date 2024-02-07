@@ -2229,6 +2229,222 @@
 7141@@@Wild Strikes
 1.15.0.52610
 6891@@@Heart of the Lion
+1.15.1.53009
+6711@@@Return to the Shadows
+6712@@@Tricks of the Trade
+6713@@@Cheat Death
+6714@@@Rolling with the Punches
+6717@@@Shuriken Toss
+6719@@@Shadowstep
+6723@@@Arcane Barrage
+6724@@@Hot Streak
+6725@@@Brain Freeze
+6726@@@Advanced Warding
+6727@@@Spellfrost Orb
+6732@@@Frostfire Bolt
+6733@@@Missile Barrage
+6734@@@Overheat
+6742@@@Soul Warding
+6743@@@Light and Dark
+6745@@@Binding Heal
+6747@@@Pain Suppression
+6748@@@Atonement
+6749@@@Vampiric Touch
+6751@@@Shadowfiend
+6753@@@Black and White
+6754@@@Eye of the Void
+6785@@@Shadowstep
+6788@@@Commanding Shout
+6789@@@Enraged Regeneration
+6791@@@Meathook
+6792@@@Intervene
+6794@@@Drill Master
+6795@@@Nullification
+6797@@@Heroic Leap
+6798@@@Annhilator
+6802@@@Heroic Throw
+6804@@@Demonic Circle
+6806@@@Clarity of Pain
+6807@@@Amplification
+6809@@@Fel Armor
+6810@@@Soul Leech
+6812@@@Harvest of Souls
+6813@@@Seed of Corruption
+6817@@@Grant Life
+6832@@@Titan's Grip
+6833@@@Shield Mastery
+6834@@@Focused Rage
+6835@@@Annihilator
+6846@@@Flagellant's Whip
+6847@@@Death Strike
+6848@@@Divine Plea
+6849@@@Hammer of the Righteous
+6852@@@Desecration
+6853@@@Aura Mastery
+6855@@@Avenging Wrath
+6859@@@Survival Instincts
+6861@@@Improved Frenzied Regeneration
+6862@@@Nurturing Instinct
+6864@@@Savage Defense
+6866@@@Force of Nature
+6869@@@Grove Defender
+6870@@@Nourish
+6871@@@Dreamstate
+6873@@@Fire Nova
+6879@@@Maelstrom Weapon
+6881@@@Astral Shift
+6882@@@Spirit of the Alpha
+6885@@@Riptide
+6887@@@Thunderstorm
+6888@@@Steady Shot
+6890@@@Expose Weakness
+6892@@@Dual Wield Specialization
+6894@@@Misdirection
+6895@@@Trap Launcher
+6896@@@Camouflage
+6897@@@Harpoon
+6902@@@Long Reach
+6911@@@Crimson Tempest
+6912@@@Leeching Poisons
+6913@@@Black Powder
+6914@@@Waylay
+6915@@@Cannonball Barrage
+6916@@@Swift Kick
+6917@@@Fleet Footed
+6918@@@Crimson Vial
+6919@@@Blunderbuss
+6920@@@Recuperate
+6921@@@Spell Power
+6924@@@Ignition
+6925@@@Empowered Frostbolt
+6926@@@Summon Water Elemental
+6928@@@Temporal Echoes
+6929@@@Melt
+6930@@@Spellfrost Bolt
+6931@@@Body and Soul
+6933@@@Pain and Suffering
+6935@@@Rapture
+6937@@@Mastermind
+6938@@@Shadow and Light
+6939@@@Dark Ritual
+6940@@@Corpse Explosion
+6941@@@Blood Surge
+6942@@@Two-Handed Specialist
+6943@@@Precise Timing
+6946@@@Gladiator Stance
+6947@@@Breakthrough
+6949@@@Longbowman
+6951@@@Power Bargain
+6953@@@Demonic Knowledge
+6954@@@Fire and Brimstone
+6956@@@Forbidden Knowledge
+6957@@@Dance of the Wicked
+6958@@@Font of Life
+6959@@@Soul Sacrifice
+6960@@@Sacred Shield
+6961@@@Divine Illumination
+6962@@@Ardent Defender
+6963@@@Guarded by the Light
+6964@@@Augmented Seals
+6966@@@The Art of War
+6967@@@Fanaticism
+6968@@@Howling Blast
+6969@@@Horn of Winter
+6970@@@Swipe (Cat)
+6974@@@Gift of the Earthmother
+6977@@@Elune's Fires
+6978@@@Predatory Swiftness
+6979@@@Wild Charge
+6980@@@Power Surge
+6981@@@Empowered Flames
+6982@@@Mental Dexterity
+6983@@@Frozen Power
+6985@@@Earthliving Weapon
+6986@@@Resilient Earth
+6987@@@Burn
+6988@@@Master of the Elements
+6989@@@Ghost World
+6990@@@Catlike Reflexes
+6991@@@Invigoration
+6992@@@Aspect of the Viper
+6993@@@Rapid Killing
+6994@@@Lock and Load
+6996@@@Kill Shot
+6997@@@Run and Gun
+6998@@@Melee Specialist
+6999@@@Raptor Fury
+7000@@@Coherence
+7004@@@Cyclone
+7012@@@Berserk
+7013@@@King of the Jungle
+7018@@@Poisoned Knife
+7019@@@Master of Subtlety
+7022@@@Chronostatic Preservation
+7026@@@Empowered Renew
+7027@@@Renewed Hope
+7028@@@Spirit of the Redeemer
+7029@@@Dispersion
+7047@@@Decoy Totem
+7048@@@Ancestral Awakening
+7049@@@Enlightened Judgements
+7050@@@Sheath of Light
+7051@@@Infusion of Light
+7053@@@Invocation
+7054@@@Grimoire of Synergy
+7056@@@Shadow and Flame
+7057@@@Shadowflame
+7058@@@Vengeance
+7059@@@Rallying Cry
+7065@@@Taste for Blood
+7066@@@Vigilance
+7067@@@Shield Mastery
+7068@@@Rampage
+7069@@@Sword and Board
+7070@@@Wrecking Crew
+7087@@@Light's Grace
+7088@@@Fanaticism
+7089@@@Wrath
+7090@@@Purifying Power
+7091@@@Improved Hammer of Wrath
+7092@@@Improved Sanctuary
+7093@@@Deep Freeze
+7094@@@Temporal Anomaly
+7095@@@Molten Armor
+7096@@@Displacement
+7097@@@Balefire Bolt
+7102@@@Gore
+7103@@@Improved Barkskin
+7104@@@Gale Winds
+7105@@@Efflorescence
+7106@@@Eclipse
+7107@@@Focus Fire
+7108@@@T.N.T.
+7109@@@Divine Aegis
+7110@@@Mind Spike
+7111@@@Surge of Light
+7112@@@Despair
+7113@@@Void Zone
+7114@@@Pandemic
+7115@@@Backdraft
+7116@@@Unstable Affliction
+7117@@@Summon Felguard
+7118@@@Immolation Aura
+7123@@@Automatic Crowd Pummeler
+7124@@@Wolfshead Trophy
+7125@@@Tidal Waves
+7126@@@Rolling Thunder
+7127@@@Static Shock
+7128@@@Overcharged
+7129@@@Focused Attacks
+7130@@@Combat Potency
+7131@@@Honor Among Thieves
+7132@@@Cut to the Chase
+7133@@@Carnage
+7134@@@Unfair Advantage
+7210@@@Mechanoslaying +10
+7223@@@Retricutioner
+7224@@@Two-Handed Mastery
+7242@@@Fan of Knives
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)

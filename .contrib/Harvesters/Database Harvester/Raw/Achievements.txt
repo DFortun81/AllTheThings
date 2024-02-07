@@ -14,6 +14,20 @@
 15578@@@<Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
 1.14.3.42770
 15637@@@The Immortal
+1.15.1.53009
+19563@@@Unbroken Self-Found Soul
+20129@@@[DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
+20130@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)
+20131@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 (hidden)
+20132@@@[DNT] Discoverer's Delight - Reach Level 60 in Phase 5 (hidden)
+20133@@@[DNT] Self-Found Soul (Level 1)
+20134@@@[DNT] Self-Found Soul (Level 10)
+20135@@@[DNT] Self-Found Soul (Level 20)
+20136@@@[DNT] Self-Found Soul (Level 30)
+20137@@@[DNT] Self-Found Soul (Level 40)
+20138@@@[DNT] Self-Found Soul (Level 50)
+20139@@@[DNT] Self-Found Soul (Level 60)
+20193@@@[DNT] Self-Found Soul (Removed Self-Found)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
