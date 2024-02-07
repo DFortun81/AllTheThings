@@ -1633,6 +1633,7 @@ i(207035);	-- Thunderbolt
 -- PATCH 10.1.7 --
 ------------------
 --- Trash ---
+i(204720);	-- Join the New Scarlet Crusade!
 i(209033);	-- Worn Felsteel Prayer Rod (Dropped in Argus during Seeing Red Quests)
 i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red Quests)
 
@@ -1641,6 +1642,7 @@ i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red 
 ------------------
 --- Trash ---
 i(210554);	-- Blazing Feather
+i(210444);	-- Burning Flower
 i(210451);	-- Imp Tail
 i(210445);	-- Ash Pouch
 i(210452);	-- Small Demon Horn

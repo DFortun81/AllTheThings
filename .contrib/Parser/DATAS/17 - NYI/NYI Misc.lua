@@ -1277,7 +1277,6 @@ root(ROOTS.NeverImplemented, {
 				i(209835),	-- Crate of Dreambound Plate
 				i(209997),	-- Distilled Knowledge of Timeways
 				i(208925),	-- Dreambound Trinket
-				i(204720),	-- Join the New Scarlet Crusade!
 				i(208545),	-- Kindled Bonfire
 				i(209020),	-- Loot-Filled Pumpkin
 				i(209025),	-- Loot-Filled Pumpkin
@@ -1375,7 +1374,6 @@ root(ROOTS.NeverImplemented, {
 				i(208745),	-- Your Reward [DNT]
 				------ Trash ------
 				i(210441),	-- Behemoth's Feather
-				i(210444),	-- Burning Flower
 				i(210450),	-- Flaming Orb
 				i(210449),	-- Heated Scales
 				i(210443),	-- Matchbook
