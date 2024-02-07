@@ -802,6 +802,7 @@ i(180486);	-- Chiu's Lute
 i(178888);	-- Choofa
 i(181364);	-- Cluster of Seeds
 i(181361);	-- Court Gossip
+i(181344);	-- Droman Aliothe
 i(181454);	-- Duskmire Ruse
 i(181369);	-- Giant Lungcap
 i(181338);	-- Lady Moonberry

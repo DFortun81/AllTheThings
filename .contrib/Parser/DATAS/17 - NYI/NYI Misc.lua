@@ -473,7 +473,6 @@ root(ROOTS.NeverImplemented, {
 				i(178139),	-- Cypher of Relocation
 				i(178556),	-- Cypher of Relocation
 				i(178721),	-- Dark Star
-				i(181344),	-- Droman Aliothe
 				i(181753),	-- Droman Aliothe Elated PH Reward
 				i(181755),	-- Droman Aliothe Happy PH Reward
 				i(181754),	-- Droman Aliothe Very Happy PH Reward
