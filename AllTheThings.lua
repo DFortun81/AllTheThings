@@ -16342,7 +16342,7 @@ customWindowUpdates["Sync"] = function(self)
 										['datalink'] = guid,
 										['OnClick'] = OnRightButtonDeleteCharacter,
 										['OnTooltip'] = OnTooltipForCharacter,
-										["BaseOnUpdate"] = app.AlwaysShowUpdate,
+										["OnUpdate"] = app.AlwaysShowUpdate,
 										name = character.name,
 										lvl = character.lvl,
 										['visible'] = true,
@@ -16391,7 +16391,7 @@ customWindowUpdates["Sync"] = function(self)
 										['datalink'] = playerName,
 										['OnClick'] = OnRightButtonDeleteLinkedAccount,
 										['OnTooltip'] = OnTooltipForLinkedAccount,
-										["BaseOnUpdate"] = app.AlwaysShowUpdate,
+										["OnUpdate"] = app.AlwaysShowUpdate,
 										['visible'] = true,
 									}));
 								elseif string.find("#", playerName) then
