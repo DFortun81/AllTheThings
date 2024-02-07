@@ -2305,24 +2305,31 @@ function app:CreateWindow(suffix, settings)
 			settings.OnInit(window, handlers);
 		end
 		if settings.Commands then
-			window.Commands = settings.Commands;
-			window.HideFromSettings = settings.HideFromSettings;
-			window.SettingsName = settings.SettingsName or window.Suffix;
-			local commandRoot = string.upper(window.Commands[settings.RootCommandIndex or 1]);
+			local onCommand;
 			if settings.OnCommand then
-				SlashCmdList[commandRoot] = function(cmd) 
+				onCommand = function(cmd) 
 					if not settings.OnCommand(window, cmd) then
 						window:Toggle(cmd);
 					end
 				end
 			else
-				SlashCmdList[commandRoot] = function(cmd) 
+				onCommand = function(cmd) 
 					window:Toggle(cmd);
 				end
 			end
-			for i,command in ipairs(window.Commands) do
-				_G["SLASH_" .. commandRoot .. i] = "/" .. command;
+			
+			-- Commands are forced lower case.
+			local commandRoot = settings.Commands[settings.RootCommandIndex or 1]:upper();
+			SlashCmdList[commandRoot] = onCommand;
+			local commands, cmd = {};
+			for i,command in ipairs(settings.Commands) do
+				cmd = command:lower();
+				_G["SLASH_" .. commandRoot .. i] = "/" .. cmd;
+				commands[i] = cmd;
 			end
+			window.Commands = commands;
+			window.HideFromSettings = settings.HideFromSettings;
+			window.SettingsName = settings.SettingsName or window.Suffix;
 		end
 		window.IsDynamicCategory = settings.IsDynamicCategory;
 		window.IsTopLevel = settings.IsTopLevel;
