@@ -3,8 +3,37 @@
 -----------------------------------------------------
 root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	n(ACHIEVEMENTS, {
+		ach(4784, {	-- Emblematic [A]
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ach(4785, {	-- Emblematic [H]
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["races"] = HORDE_ONLY,
+		}),
+		ach(3838, {	-- Dungeon & Raid Emblem
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+		}),
+		ach(3839, {	-- 25 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+		}),
+		ach(3840, {	-- 50 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+		}),
+		ach(3841, {	-- 100 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+		}),
+		ach(3842, {	-- 250 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+		}),
+		ach(3843, {	-- 500 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+		}),
 		ach(3844, {	-- 1000 Dungeon & Raid Emblems
 			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+		}),
+		ach(3876, {	-- 1500 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
 		}),
 		ach(4316, {	-- 2500 Dungeon & Raid Emblems
 			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },

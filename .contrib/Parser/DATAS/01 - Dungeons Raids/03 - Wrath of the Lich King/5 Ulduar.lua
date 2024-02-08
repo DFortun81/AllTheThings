@@ -2430,6 +2430,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							end]],
 						}),
 						-- #endif
+						ach(5020, {	-- Observed - Guild Edition
+							["timeline"] = { "added 4.0.3" },
+							["collectible"] = false,
+						}),
 						ach(12399, {	-- Observed
 							title(129),	-- Starcaller
 							title(130),	-- the Astral Walker

@@ -94,58 +94,8 @@ r(264638),	-- Cataclysm Cooking
 r(264640),	-- Pandaria Cooking
 r(264642),	-- Draenor Cooking
 r(264644),	-- Legion Cooking
-r(264646),	-- Kul Tiran Cooking
 8.0.1.25976
 r(265815),	-- Zandalari Tailoring
-8.0.1.26367
-r(259411),	-- Kul Tiramisu
-r(259412),	-- Kul Tiramisu
-r(259414),	-- Honey-Glazed Haunches
-r(259415),	-- Honey-Glazed Haunches
-r(259418),	-- Galley Banquet
-r(259419),	-- Galley Banquet
-r(259421),	-- Bountiful Captain's Feast
-r(259424),	-- Ravenberry Tarts
-r(259425),	-- Ravenberry Tarts
-r(259427),	-- Swamp Fish 'n Chips
-r(259428),	-- Swamp Fish 'n Chips
-r(259430),	-- Grilled Catfish \\ Grilled Snapper
-r(259431),	-- Grilled Catfish \\ Grilled Snapper
-r(259433),	-- Seasoned Loins
-r(259434),	-- Seasoned Loins
-r(259436),	-- Loa Loaf
-r(259437),	-- Loa Loaf
-r(259439),	-- Sailor's Pie
-r(259440),	-- Sailor's Pie
-r(259442),	-- Mon'Dazi
-r(259443),	-- Mon'Dazi
-r(259445),	-- Spiced Snapper \\ Spiced Catfish
-r(259446),	-- Spiced Snapper \\ Spiced Catfish
-8.0.1.26522
-r(265817),	-- Zandalari Cooking
-8.1.0.27934
-r(286381),	-- Honey Potpie
-8.1.0.27985
-r(287108),	-- Sanguinated Feast
-8.1.0.28151
-r(288027),	-- Wild Berry Bread
-r(288028),	-- Wild Berry Bread
-r(288030),	-- Seasoned Steak and Potatoes
-r(288032),	-- Seasoned Steak and Potatoes
-8.1.0.28440
-r(290471),	-- Boralus Blood Sausage
-8.2.0.30080
-r(297075),	-- Fragrant Kakavia
-r(297077),	-- Fragrant Kakavia
-r(297078),	-- Mech-Dowel's "Big Mech"
-r(297079),	-- Mech-Dowel's "Big Mech"
-r(297081),	-- Baked Port Tato
-r(297082),	-- Baked Port Tato
-r(297084),	-- Abyssal-Fried Rissole
-r(297085),	-- Abyssal-Fried Rissole
-r(297087),	-- Bil'Tong
-r(297088),	-- Bil'Tong
-r(297105),	-- Famine Evaluator And Snack Table
 
 
 

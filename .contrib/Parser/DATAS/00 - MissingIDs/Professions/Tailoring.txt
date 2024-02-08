@@ -92,6 +92,11 @@ r(18402),	-- Runecloth Belt
 1.15.0.52124
 r(428424),	-- Phoenix Bindings
 r(429351),	-- Extraplanar Spidersilk Boots
+1.15.1.53009
+r(435610),	-- Gneuro-Linked Arcano-Filament Monocle
+r(435827),	-- Hyperconductive Arcano-Filament
+r(435841),	-- Invoker's Cord
+r(435848),	-- Invoker's Mantle
 2.0.0.6080
 r(26745),	-- Bolt of Netherweave
 r(26746),	-- Netherweave Bag
@@ -752,71 +757,6 @@ r(304580),	-- Uncanny Combatant's Satin Bracers
 r(304581),	-- Uncanny Combatant's Satin Bracers
 r(304582),	-- Uncanny Combatant's Satin Bracers
 r(307175),	-- Void Focus
-9.0.1.33978
-r(310869),	-- Shrouded Cloth Sandals
-r(310870),	-- Shrouded Cloth Robe
-r(310871),	-- Shrouded Cloth Cape
-r(310872),	-- Shrouded Cloth Mittens
-r(310873),	-- Shrouded Cloth Hood
-r(310874),	-- Shrouded Cloth Pants
-r(310875),	-- Shrouded Cloth Spaulders
-r(310876),	-- Shrouded Cloth Belt
-r(310877),	-- Shrouded Cloth Bracers
-r(310878),	-- Grim-Veiled Sandals
-r(310879),	-- Grim-Veiled Robe
-r(310880),	-- Grim-Veiled Cape
-r(310881),	-- Grim-Veiled Mittens
-r(310882),	-- Grim-Veiled Hood
-r(310883),	-- Grim-Veiled Pants
-r(310884),	-- Grim-Veiled Spaulders
-r(310885),	-- Grim-Veiled Belt
-r(310886),	-- Grim-Veiled Bracers
-r(310887),	-- Winterweave Footwraps
-r(310888),	-- Winterweave Tunic
-r(310889),	-- Winterweave Cloak
-r(310890),	-- Winterweave Handwraps
-r(310891),	-- Winterweave Cowl
-r(310892),	-- Winterweave Trousers
-r(310893),	-- Winterweave Mantle
-r(310894),	-- Winterweave Cord
-r(310895),	-- Winterweave Cuffs
-r(310896),	-- Shadowlace Footwraps \\ Bloodlace Footwraps \\ Syn-Couture Footwraps
-r(310897),	-- Shadowlace Tunic \\ Bloodlace Tunic \\ Syn-Couture Tunic
-r(310899),	-- Shadowlace Handwraps \\ Bloodlace Handwraps \\ Syn-Couture Handwraps
-r(310900),	-- Shadowlace Cowl \\ Bloodlace Cowl \\ Syn-Couture Cowl
-r(310901),	-- Shadowlace Trousers \\ Bloodlace Trousers \\ Syn-Couture Trousers
-r(310902),	-- Shadowlace Mantle \\ Bloodlace Mantle \\ Syn-Couture Mantle
-r(310903),	-- Shadowlace Cord \\ Bloodlace Cord \\ Syn-Couture Cord
-r(310904),	-- Shadowlace Cuffs \\ Bloodlace Cuffs \\ Syn-Couture Cuffs
-r(310905),	-- Stitchsilk Footwraps
-r(310906),	-- Stitchsilk Tunic
-r(310907),	-- Stitchsilk Cloak
-r(310908),	-- Stitchsilk Handwraps
-r(310909),	-- Stitchsilk Cowl
-r(310910),	-- Stitchsilk Trousers
-r(310911),	-- Stitchsilk Mantle
-r(310912),	-- Stitchsilk Cord
-r(310913),	-- Stitchsilk Cuffs
-r(310914),	-- Pureweave Footwraps
-r(310915),	-- Pureweave Tunic
-r(310916),	-- Pureweave Cloak
-r(310917),	-- Pureweave Handwraps
-r(310918),	-- Pureweave Cowl
-r(310919),	-- Pureweave Trousers
-r(310920),	-- Pureweave Mantle
-r(310921),	-- Pureweave Cord
-r(310922),	-- Pureweave Cuffs
-r(310923),	-- Heavy Shrouded Cloth Bandage
-r(310924),	-- Shrouded Cloth Bandage
-r(310933),	-- Craftsman's Pouch \\ Craftman's Pouch \\ Modified Crafting Reagent 01
-r(310934),	-- Modified Crafting Reagent 02
-r(310935),	-- Modified Crafting Reagent 03
-r(310936),	-- Modified Crafting Reagent 04
-r(310937),	-- Modified Crafting Reagent 05
-r(310938),	-- Modified Crafting Reagent 06
-r(310939),	-- Modified Crafting Reagent 07
-r(310940),	-- Modified Crafting Reagent 08
-r(310949),	-- Shadowlands Tailoring
 9.0.1.34199
 r(330222),	-- Relic of the Past I
 r(330223),	-- Relic of the Past II
@@ -858,56 +798,6 @@ r(330258),	-- Relic of the Past II
 r(330259),	-- Relic of the Past III
 r(330260),	-- Relic of the Past IV
 r(330261),	-- Relic of the Past V
-9.0.1.34490
-r(332030),	-- Grim-Veiled Sandals
-r(332031),	-- Grim-Veiled Robe
-r(332032),	-- Grim-Veiled Cape
-r(332033),	-- Grim-Veiled Mittens
-r(332034),	-- Grim-Veiled Hood
-r(332035),	-- Grim-Veiled Pants
-r(332036),	-- Grim-Veiled Spaulders
-r(332037),	-- Grim-Veiled Belt
-r(332038),	-- Grim-Veiled Bracers
-r(332065),	-- Grim-Veiled Sandals
-r(332066),	-- Grim-Veiled Robe
-r(332067),	-- Grim-Veiled Cape
-r(332068),	-- Grim-Veiled Mittens
-r(332069),	-- Grim-Veiled Hood
-r(332070),	-- Grim-Veiled Pants
-r(332071),	-- Grim-Veiled Spaulders
-r(332072),	-- Grim-Veiled Belt
-r(332073),	-- Grim-Veiled Bracers
-9.0.1.35167
-r(338267),	-- Cloak of Camouflage \\ Ardenweald Tailoring Item
-r(338269),	-- Bolt of Ardensilk Cloth \\ Almost Thing
-r(338270),	-- Ardensilk Cloth \\ Kinda Thing
-r(338271),	-- Woven Gossamer Tunic
-r(338272),	-- Bolt of Woven Gossamer
-r(338273),	-- Gossamer Cloth
-r(338275),	-- Haunting Hood \\ Maldraxxus Tailoring Item
-r(338276),	-- Bolt of Bleakcloth \\ Almost Thing
-r(338277),	-- Bleakcloth \\ Kinda Thing
-r(338278),	-- Looming Tapestry \\ Revendreth Tailoring Item
-r(338279),	-- Bolt of Prideweave \\ Almost Thing
-r(338280),	-- Prideweave Cloth \\ Kinda Thing
-9.0.1.35256
-r(338995),	-- Grim-Veiled Cape
-r(338996),	-- Grim-Veiled Robe
-r(338997),	-- Grim-Veiled Sandals
-r(338998),	-- Grim-Veiled Mittens
-r(339000),	-- Grim-Veiled Hood
-r(339001),	-- Grim-Veiled Pants
-r(339002),	-- Grim-Veiled Spaulders
-r(339003),	-- Grim-Veiled Belt
-r(339004),	-- Grim-Veiled Bracers
-9.0.1.35598
-r(343204),	-- Crafter's Mark I
-9.0.1.35679
-r(343634),	-- Shadowlands Cloth Scavenging
-r(343659),	-- Novice Crafter's Mark
-9.0.2.36086
-r(345985),	-- Shrouded Cloth Bag
-r(345986),	-- Lightless Silk Pouch
 
 
 
@@ -1148,6 +1038,9 @@ r(28210),	-- Gaea's Embrace
 r(28480),	-- Sylvan Vest
 r(28481),	-- Sylvan Crown
 r(28482),	-- Sylvan Shoulders
+1.15.1.53009
+r(435610),	-- Gneuro-Linked Arcano-Filament Monocle
+r(435827),	-- Hyperconductive Arcano-Filament
 2.0.0.6080
 r(26745),	-- Bolt of Netherweave
 r(26746),	-- Netherweave Bag
@@ -1879,173 +1772,3 @@ r(304580),	-- Uncanny Combatant's Satin Bracers
 r(304581),	-- Uncanny Combatant's Satin Bracers
 r(304582),	-- Uncanny Combatant's Satin Bracers
 r(307175),	-- Void Focus
-9.0.1.33978
-r(310869),	-- Shrouded Cloth Sandals
-r(310870),	-- Shrouded Cloth Robe
-r(310871),	-- Shrouded Cloth Cape
-r(310872),	-- Shrouded Cloth Mittens
-r(310873),	-- Shrouded Cloth Hood
-r(310874),	-- Shrouded Cloth Pants
-r(310875),	-- Shrouded Cloth Spaulders
-r(310876),	-- Shrouded Cloth Belt
-r(310877),	-- Shrouded Cloth Bracers
-r(310878),	-- Grim-Veiled Sandals
-r(310879),	-- Grim-Veiled Robe
-r(310880),	-- Grim-Veiled Cape
-r(310881),	-- Grim-Veiled Mittens
-r(310882),	-- Grim-Veiled Hood
-r(310883),	-- Grim-Veiled Pants
-r(310884),	-- Grim-Veiled Spaulders
-r(310885),	-- Grim-Veiled Belt
-r(310886),	-- Grim-Veiled Bracers
-r(310887),	-- Winterweave Footwraps
-r(310888),	-- Winterweave Tunic
-r(310889),	-- Winterweave Cloak
-r(310890),	-- Winterweave Handwraps
-r(310891),	-- Winterweave Cowl
-r(310892),	-- Winterweave Trousers
-r(310893),	-- Winterweave Mantle
-r(310894),	-- Winterweave Cord
-r(310895),	-- Winterweave Cuffs
-r(310896),	-- Shadowlace Footwraps \\ Bloodlace Footwraps \\ Syn-Couture Footwraps
-r(310897),	-- Shadowlace Tunic \\ Bloodlace Tunic \\ Syn-Couture Tunic
-r(310898),	-- Shadowlace Cloak \\ Bloodlace Cloak \\ Syn-Couture Cloak
-r(310899),	-- Shadowlace Handwraps \\ Bloodlace Handwraps \\ Syn-Couture Handwraps
-r(310900),	-- Shadowlace Cowl \\ Bloodlace Cowl \\ Syn-Couture Cowl
-r(310901),	-- Shadowlace Trousers \\ Bloodlace Trousers \\ Syn-Couture Trousers
-r(310902),	-- Shadowlace Mantle \\ Bloodlace Mantle \\ Syn-Couture Mantle
-r(310903),	-- Shadowlace Cord \\ Bloodlace Cord \\ Syn-Couture Cord
-r(310904),	-- Shadowlace Cuffs \\ Bloodlace Cuffs \\ Syn-Couture Cuffs
-r(310905),	-- Stitchsilk Footwraps
-r(310906),	-- Stitchsilk Tunic
-r(310907),	-- Stitchsilk Cloak
-r(310908),	-- Stitchsilk Handwraps
-r(310909),	-- Stitchsilk Cowl
-r(310910),	-- Stitchsilk Trousers
-r(310911),	-- Stitchsilk Mantle
-r(310912),	-- Stitchsilk Cord
-r(310913),	-- Stitchsilk Cuffs
-r(310914),	-- Pureweave Footwraps
-r(310915),	-- Pureweave Tunic
-r(310916),	-- Pureweave Cloak
-r(310917),	-- Pureweave Handwraps
-r(310918),	-- Pureweave Cowl
-r(310919),	-- Pureweave Trousers
-r(310920),	-- Pureweave Mantle
-r(310921),	-- Pureweave Cord
-r(310922),	-- Pureweave Cuffs
-r(310923),	-- Heavy Shrouded Cloth Bandage
-r(310924),	-- Shrouded Cloth Bandage
-r(310933),	-- Craftsman's Pouch \\ Craftman's Pouch \\ Modified Crafting Reagent 01
-r(310934),	-- Modified Crafting Reagent 02
-r(310935),	-- Modified Crafting Reagent 03
-r(310936),	-- Modified Crafting Reagent 04
-r(310937),	-- Modified Crafting Reagent 05
-r(310938),	-- Modified Crafting Reagent 06
-r(310939),	-- Modified Crafting Reagent 07
-r(310940),	-- Modified Crafting Reagent 08
-r(310949),	-- Shadowlands Tailoring
-9.0.1.34199
-r(330222),	-- Relic of the Past I
-r(330223),	-- Relic of the Past II
-r(330224),	-- Relic of the Past III
-r(330225),	-- Relic of the Past IV
-r(330226),	-- Relic of the Past V
-r(330227),	-- Relic of the Past I
-r(330228),	-- Relic of the Past II
-r(330229),	-- Relic of the Past III
-r(330230),	-- Relic of the Past IV
-r(330231),	-- Relic of the Past V
-r(330232),	-- Relic of the Past I
-r(330233),	-- Relic of the Past II
-r(330234),	-- Relic of the Past III
-r(330235),	-- Relic of the Past IV
-r(330236),	-- Relic of the Past V
-r(330237),	-- Relic of the Past I
-r(330238),	-- Relic of the Past II
-r(330239),	-- Relic of the Past III
-r(330240),	-- Relic of the Past IV
-r(330241),	-- Relic of the Past V
-r(330242),	-- Relic of the Past I
-r(330243),	-- Relic of the Past II
-r(330244),	-- Relic of the Past III
-r(330245),	-- Relic of the Past IV
-r(330246),	-- Relic of the Past V
-r(330247),	-- Relic of the Past I
-r(330248),	-- Relic of the Past II
-r(330249),	-- Relic of the Past III
-r(330250),	-- Relic of the Past IV
-r(330251),	-- Relic of the Past V
-r(330252),	-- Relic of the Past I
-r(330253),	-- Relic of the Past II
-r(330254),	-- Relic of the Past III
-r(330255),	-- Relic of the Past IV
-r(330256),	-- Relic of the Past V
-r(330257),	-- Relic of the Past I
-r(330258),	-- Relic of the Past II
-r(330259),	-- Relic of the Past III
-r(330260),	-- Relic of the Past IV
-r(330261),	-- Relic of the Past V
-9.0.1.34490
-r(332030),	-- Grim-Veiled Sandals
-r(332031),	-- Grim-Veiled Robe
-r(332032),	-- Grim-Veiled Cape
-r(332033),	-- Grim-Veiled Mittens
-r(332034),	-- Grim-Veiled Hood
-r(332035),	-- Grim-Veiled Pants
-r(332036),	-- Grim-Veiled Spaulders
-r(332037),	-- Grim-Veiled Belt
-r(332038),	-- Grim-Veiled Bracers
-r(332065),	-- Grim-Veiled Sandals
-r(332066),	-- Grim-Veiled Robe
-r(332067),	-- Grim-Veiled Cape
-r(332068),	-- Grim-Veiled Mittens
-r(332069),	-- Grim-Veiled Hood
-r(332070),	-- Grim-Veiled Pants
-r(332071),	-- Grim-Veiled Spaulders
-r(332072),	-- Grim-Veiled Belt
-r(332073),	-- Grim-Veiled Bracers
-9.0.1.34714
-r(334499),	-- Pink Party Hat
-9.0.1.35167
-r(338267),	-- Cloak of Camouflage \\ Ardenweald Tailoring Item
-r(338269),	-- Bolt of Ardensilk Cloth \\ Almost Thing
-r(338270),	-- Ardensilk Cloth \\ Kinda Thing
-r(338271),	-- Woven Gossamer Tunic
-r(338272),	-- Bolt of Woven Gossamer
-r(338273),	-- Gossamer Cloth
-r(338275),	-- Haunting Hood \\ Maldraxxus Tailoring Item
-r(338276),	-- Bolt of Bleakcloth \\ Almost Thing
-r(338277),	-- Bleakcloth \\ Kinda Thing
-r(338278),	-- Looming Tapestry \\ Revendreth Tailoring Item
-r(338279),	-- Bolt of Prideweave \\ Almost Thing
-r(338280),	-- Prideweave Cloth \\ Kinda Thing
-9.0.1.35256
-r(338995),	-- Grim-Veiled Cape
-r(338996),	-- Grim-Veiled Robe
-r(338997),	-- Grim-Veiled Sandals
-r(338998),	-- Grim-Veiled Mittens
-r(339000),	-- Grim-Veiled Hood
-r(339001),	-- Grim-Veiled Pants
-r(339002),	-- Grim-Veiled Spaulders
-r(339003),	-- Grim-Veiled Belt
-r(339004),	-- Grim-Veiled Bracers
-9.0.1.35598
-r(343200),	-- Crafter's Mark of the Chained Isle \\ Prestigious Crafter's Mark \\ Crafter's Mark IV
-r(343201),	-- Crafter's Mark III
-r(343202),	-- Crafter's Mark II
-r(343204),	-- Crafter's Mark I
-9.0.1.35679
-r(343634),	-- Shadowlands Cloth Scavenging
-r(343659),	-- Novice Crafter's Mark
-9.0.2.36086
-r(345985),	-- Shrouded Cloth Bag
-r(345986),	-- Lightless Silk Pouch
-9.1.0.38312
-r(352445),	-- Vestige of Origins
-9.1.0.38511
-r(355183),	-- Shrouded Hand Towel
-9.2.0.41089
-r(359661),	-- Crafter's Mark IV
-r(359670),	-- Crafter's Mark of the First Ones
-r(359703),	-- Vestige of the Eternal

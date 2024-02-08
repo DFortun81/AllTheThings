@@ -558,7 +558,7 @@ root(ROOTS.Unsorted, {
 			q(64975),	--
 		}),
 	}),
-	--[[tier(DF_TIER, {
+	tier(DF_TIER, {
 		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(19031),	-- Fyrn [Promotion]
@@ -1063,6 +1063,38 @@ root(ROOTS.Unsorted, {
 			i(212607),	-- Reno's Lucky Hat [Hearthstone]
 			i(212644),	-- Taverner's Belt [Hearthstone]
 			i(212336),	-- The Tavern's Tabard
+
+
+			------
+			i(190090),	-- Dessicated Bouquet
+			i(190609),	-- Watcher of the Huntress
+			i(190669),	-- Burnished Helm of Righteousness
+			i(190688),	-- Silvered Helm of Righteousness
+			i(190692),	-- Champion's Battle Standard
+			i(190807),	-- Artisan's Work Shirt
+			i(190816),	-- Forgehand's "Stable" Fuel Cell
+			i(190818),	-- Steamwheedle Artifact Extractor
+			i(190820),	-- Restless Void Handaxe
+			i(190822),	-- Mo'arg Enforcer's Halberd
+			i(190844),	-- Valarjar Champion's Greatsword
+			i(190847),	-- Deathmantle Assassin's Barb
+			i(190848),	-- [DNT] Do not use
+			i(190849),	-- Forgemaster's Gavel
+			i(190860),	-- Initiate's Bo
+			i(190889),	-- Woodsman's Hatchet
+			i(190891),	-- Shabby Battleaxe
+			i(190893),	-- Jeweled Valkyrion Cape
+			i(190900),	-- Prototype Farstrider Sniper Rifle
+			i(190902),	-- Will of the Titanforged
+			i(190903),	-- Soulburner Warscythe
+			i(190908),	-- Devourer's Skullscythe
+			i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
+			i(190924),	-- Arsenal: Ruby Felfire Armaments
+			i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
+			i(200918),	-- Ensemble: Void-Bound Raiment
+			i(200924),	-- Ensemble: Void-Bound Battlegear
+			i(201000),	-- Ensemble: Void-Bound Chains
+			i(201001),	-- Ensemble: Void-Bound Warplate
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211927),	-- Tattered Dreamleaf
@@ -3353,5 +3385,5 @@ root(ROOTS.Unsorted, {
 				i(192094),	-- Winter Veil Gift
 			}),
 		})),
-	}),--]]
+	}),
 });

@@ -9398,7 +9398,7 @@ s(194436)/i(211857),	-- Resilient Leather Mask
 s(194481)/i(211925),	--
 s(194485)/i(211940),	-- Ecks'av's Tribal Guardian
 s(194486)/i(211941),	-- Windwalker's Yari
-s(194488)/i(211944),	-- Tojara's Will
+s(194488)/i(211944),	-- Tojara's Karma \\ Tojara's Will
 1.15.0.52186
 s(194909)/i(212580),	-- Lorekeeper's Staff
 s(194910)/i(212581),	-- Outrunner's Bow
@@ -9415,6 +9415,161 @@ s(194919)/i(212590),	-- Hoist Strap
 1.15.0.52409
 s(195197)/i(213087),	-- Sergeant's Cloak
 s(195198)/i(213088),	-- Sergeant's Cloak
+1.15.1.53009
+s(194901)/i(212566),	--
+s(195166)/i(212994),	-- Stormchaser's Bindings
+s(195167)/i(212996),	-- Lightningcaller's Bindings
+s(195168)/i(212997),	-- Tidecaller's Bindings
+s(195200)/i(213105),	-- Shawarmageddon
+s(195228)/i(213278),	--
+s(195229)/i(213279),	--
+s(195230)/i(213280),	--
+s(195231)/i(213281),	--
+s(195232)/i(213285),	-- Lev's Oil-Stained Bindings
+s(195233)/i(213286),	-- Electrocutioner's Needle
+s(195234)/i(213288),	-- Grubbis Grubby Gauntlets
+s(195235)/i(213289),	-- Hydrostaff
+s(195236)/i(213290),	-- Acidic Waders
+s(195237)/i(213291),	-- Toxic Revenger II
+s(195238)/i(213292),	-- Gizmotron Gigachopper
+s(195239)/i(213293),	-- Hi-tech Supergun Mk.VII
+s(195240)/i(213294),	-- Caverndeep Sabatons
+s(195241)/i(213295),	-- Ultrasonic Vibroblade
+s(195242)/i(213296),	-- Supercharged Headchopper
+s(195243)/i(213297),	-- Oscillating Blasthammer
+s(195244)/i(213298),	-- Mechbuilder's Overalls
+s(195245)/i(213299),	-- Petrolspill Pants
+s(195246)/i(213300),	-- Fighter Ace Gloves
+s(195247)/i(213301),	-- Synthetic Mantle
+s(195248)/i(213302),	-- Mantle of the Cunning Negotiator
+s(195249)/i(213303),	-- Lightning Rod Spaulders
+s(195250)/i(213304),	-- Troggslayer Pauldrons
+s(195251)/i(213305),	-- Machined Alloy Shoulderplates
+s(195252)/i(213306),	-- Ingenuity's Cover
+s(195253)/i(213307),	-- Drape of Dismantling
+s(195254)/i(213308),	-- Prototype Parachute Cloak
+s(195255)/i(213309),	-- Cloak of Invention
+s(195256)/i(213310),	-- Hyperconductive Shimmershirt
+s(195257)/i(213311),	-- Hyperconductive Robe
+s(195258)/i(213312),	-- Insulated Apron
+s(195259)/i(213313),	-- Insulated Chestguard
+s(195260)/i(213314),	-- Electromantic Chainmail
+s(195261)/i(213315),	-- Electromantic Chainshirt
+s(195262)/i(213316),	-- H.A.Z.A.R.D. Breastplate
+s(195263)/i(213317),	-- Experimental Aim Stabilizers
+s(195264)/i(213318),	-- Ornate Dark Iron Bangles
+s(195265)/i(213319),	-- Machinist's Gloves
+s(195266)/i(213320),	-- Fingers of Arcane Accuracy
+s(195267)/i(213321),	-- Volatile Concoction Belt
+s(195268)/i(213322),	-- Skullduggery Waistband
+s(195269)/i(213323),	-- Cord of Deep Earth
+s(195270)/i(213324),	-- Electromagnetic Waistcord
+s(195271)/i(213325),	-- Darkvision Girdle
+s(195272)/i(213326),	-- Girdle of Reclamation
+s(195273)/i(213327),	-- Belt of the Trogg Berserker
+s(195274)/i(213328),	-- Hyperconductive Pantaloons
+s(195275)/i(213329),	-- Hyperconductive Skirt
+s(195276)/i(213330),	-- H.A.Z.A.R.D. Legplates
+s(195277)/i(213331),	-- Insulated Leggings
+s(195278)/i(213332),	-- Insulated Legguards
+s(195279)/i(213333),	-- Electromantic Chausses
+s(195280)/i(213334),	-- Electromantic Gambeson
+s(195281)/i(213335),	-- H.A.Z.A.R.D. Boots
+s(195282)/i(213336),	-- Hyperconductive Walkers
+s(195283)/i(213337),	-- Hyperconductive Sandals
+s(195284)/i(213338),	-- Electromantic Grounding Boots
+s(195285)/i(213339),	-- Electromantic Grounding Sabatons
+s(195286)/i(213340),	-- Gnomebot Operators Boots
+s(195287)/i(213341),	-- Insulated Workboots
+s(195288)/i(213342),	-- Insulated Galoshes
+s(195289)/i(213351),	-- Irradiated Tower Shield
+s(195290)/i(213352),	-- Gear-Mender's Grace
+s(195291)/i(213353),	-- Defibrillating Staff
+s(195292)/i(213354),	-- Staff of the Evil Genius
+s(195293)/i(213355),	-- Falco's Sting
+s(195294)/i(213356),	-- Thermaplugg's Custom Blaster
+s(195295)/i(213390),	-- Whirling Truesilver Gearwall
+s(195296)/i(213391),	-- UNUSED Electrified Mithril Gauntlets
+s(195305)/i(213408),	-- Gyromatic Macro-Adjustor
+s(195306)/i(213409),	-- Mekkatorque's Arcano-Shredder
+s(195307)/i(213410),	-- Glimmering Gizmoblade
+s(195308)/i(213411),	-- Izzleflick's Inextinguishable Igniter
+s(195309)/i(213412),	-- Dielectric Safety Shield
+s(195310)/i(213413),	-- Generously Padded Shoulderpads
+s(195311)/i(213414),	-- Mech-Mender's Sash
+s(195312)/i(213415),	-- Tinker's Wrist Wraps
+s(195313)/i(213416),	-- Thermaplugg's Rocket Cleaver
+s(195314)/i(213417),	--
+s(195315)/i(213418),	-- Welded Truesilver Ringlets
+s(195316)/i(213419),	-- 9-60 Repair Manual
+s(195326)/i(213442),	-- Cogmaster's Claw
+s(195328)/i(213542),	-- The Necro-Gnomicon
+s(195329)/i(213559),	-- Mechanostrider Gear Shifter
+s(195330)/i(213560),	-- Mechanostrider Muffler
+s(196746)/i(215111),	-- Gneuro-Linked Arcano-Filament Monocle
+s(196747)/i(215112),	-- UNUSED - Cloak of Arcane Insulation
+s(196748)/i(215113),	-- UNUSED - Razor-Lined Shoulderpads
+s(196749)/i(215114),	-- Glowing Hyperconductive Scale Coif
+s(196750)/i(215115),	-- Hyperconductive Goldwrap
+s(196751)/i(215116),	-- UNUSED - Hyperconductive Speed Belt
+s(196759)/i(215161),	--
+s(196760)/i(215166),	-- Glowing Gneuro-Linked Cowl
+s(196761)/i(215167),	--
+s(196762)/i(215235),	-- 2hander Animation as 1hander test copy
+s(196763)/i(215365),	-- Invoker's Mantle
+s(196764)/i(215366),	-- Invoker's Cord
+s(196765)/i(215373),	-- Silver Hand Training Hammer
+s(196766)/i(215374),	-- Ancestral Sword
+s(196767)/i(215375),	-- Tactician's Staff
+s(196768)/i(215376),	-- Crusader's Mace
+s(196769)/i(215377),	-- Irradiated Robe
+s(196770)/i(215378),	-- Irradiated Boots
+s(196771)/i(215379),	-- Irradiated Trousers
+s(196772)/i(215380),	-- Power-Assisted Lifting Belt
+s(196773)/i(215381),	-- Gneuro-Conductive Channeler's Hood
+s(196774)/i(215382),	-- Rad-Resistant Scale Hood
+s(196777)/i(215444),	-- Monster - Mace - Broken Pipes
+s(196778)/i(215450),	-- Tabard Project (Aidan)
+s(198503)/i(216484),	-- Shockforged Battleboots
+s(198504)/i(216485),	-- Shockforged Breastplate
+s(198505)/i(216486),	-- Shockforged Legplates
+s(198506)/i(216495),	-- Sanguine Crusher
+s(198507)/i(216496),	-- Sanguine Skullcrusher
+s(198508)/i(216497),	-- Exsanguinar
+s(198509)/i(216498),	-- Enchanted Sanguine Grimoire
+s(198510)/i(216499),	-- Bloodbark Crusher
+s(198511)/i(216501),	-- Bloodstorm Barrier
+s(198512)/i(216502),	-- Bloodstorm War Totem
+s(198513)/i(216504),	-- Eclipsed Bloodlight Saber
+s(198514)/i(216506),	-- Bloodlight Avenger's Edge
+s(198515)/i(216516),	-- Bloodlash Bow
+s(198516)/i(216520),	-- Bloodharvest Blade
+s(198517)/i(216521),	-- Swift Sanguine Strikers
+s(198518)/i(216522),	-- Blood Spattered Stiletto
+s(198590)/i(216608),	-- Radiant Ray Reflectors
+s(198595)/i(216620),	-- Bloodrot Cloak
+s(198596)/i(216621),	-- Blooddrenched Drape
+s(198597)/i(216622),	-- Coagulated Cloak
+s(198598)/i(216623),	-- Cape of Hemostasis
+s(198599)/i(216494),	-- Aragriar's Whimsical World Warper
+s(198603)/i(216675),	-- Prestine Civinad Robes
+s(198604)/i(216676),	-- Nimble Triprunner Dungarees
+s(198605)/i(216678),	-- Treble Reinforced Leggings
+s(198606)/i(216679),	-- Shoni's Dismantling Tool
+s(198607)/i(216680),	-- Shilly Mittens
+s(198609)/i(216698),	-- Sergeant Major's Dragonhide Armsplints
+s(198610)/i(216699),	-- Sergeant Major's Chain Armguards
+s(198611)/i(216700),	-- Sergeant Major's Leather Armsplints
+s(198612)/i(216701),	-- Sergeant Major's Plate Wristguards
+s(198613)/i(216702),	-- Sergeant Major's Silk Cuffs
+s(198614)/i(216703),	-- First Sergeant's Mail Wristguards
+s(198615)/i(216704),	-- First Sergeant's Dragonhide Armguards
+s(198616)/i(216705),	-- First Sergeant's Plate Bracers
+s(198617)/i(216706),	-- First Sergeant's Leather Armguards
+s(198618)/i(216707),	-- First Sergeant's Silk Cuffs
+s(198740)/i(216884),	--
+s(198787)/i(217005),	-- Repairman's Cape
+s(198788)/i(217006),	-- Mechanic's Pipehammer
 2.5.1.38043
 s(116764)/i(185976),	-- Communal Faceguard
 s(116768)/i(185977),	-- Communal Pauldrons
@@ -56639,6 +56794,9 @@ s(92749)/i(156153),	--
 s(92750)/i(156154),	--
 s(92751)/i(156155),	--
 s(92752)/i(156156),	--
+s(92822)/i(156252),	-- Greaves of the Stonewarder
+s(92824)/i(156254),	-- Leggings of the Tortured Earth
+s(92826)/i(156256),	-- Grips of Chaos
 s(92896)/i(156342),	--
 s(92913)/i(156362),	--
 s(92914)/i(156363),	--
@@ -56685,6 +56843,13 @@ s(93000)/i(156449),	--
 s(93001)/i(156450),	--
 s(93004)/i(156453),	--
 s(93008)/i(156457),	--
+s(93010)/i(156460),	-- Mimiron's Repeater
+s(93011)/i(156461),	-- Adamant Handguards
+s(93014)/i(156465),	-- Iceshear Mantle
+s(93016)/i(156467),	-- Boots of Unsettled Prey
+s(93017)/i(156468),	-- Cloak of the Dormant Blaze
+s(93018)/i(156469),	-- Pillar of Fortitude
+s(93019)/i(156470),	-- Bloodcrush Cudgel
 s(93020)/i(156471),	--
 s(93047)/i(156547),	--
 s(93069)/i(156667),	--
@@ -64928,6 +65093,7 @@ s(180939)/i(194330),	--
 s(181017)/i(194429),	--
 s(181038)/i(194539),	--
 s(181042)/i(194676),	-- Emboldened Dracthyr's Tabard
+s(181044)/i(194711),	--
 s(181049)/i(194911),	--
 s(181050)/i(194913),	--
 s(181051)/i(194915),	--
@@ -65262,32 +65428,22 @@ s(184133)/i(202148),	-- Emissary's Flamewrought Seal
 s(184158)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 s(184159)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 10.0.5.47799
-s(169019)/i(190805),	-- Deforester's Hatchet
-s(169021)/i(190807),	--
-s(169030)/i(190816),	--
-s(169033)/i(190819),	-- Emerald Guardian's Longbow
-s(169034)/i(190820),	--
-s(169036)/i(190822),	--
-s(169057)/i(190844),	--
-s(169060)/i(190847),	--
-s(169061)/i(190848),	--
-s(169062)/i(190849),	--
-s(169066)/i(190857),	-- Gilded Emerald Longcloak
-s(169068)/i(190859),	-- Apprentice's Twisted Crook
-s(169069)/i(190860),	--
-s(169082)/i(190873),	-- Warhammer of Hubris
-s(169084)/i(190875),	-- Chilled Touch of the Condemned
-s(169094)/i(190887),	-- Highlord's Ceremonial Drape
-s(169096)/i(190889),	--
-s(169097)/i(190890),	-- Chipped Warblade
-s(169098)/i(190891),	--
-s(169099)/i(190892),	-- Orange-Sleeved Shirt
-s(169100)/i(190893),	--
-s(169102)/i(190895),	-- Lost Crusader's Amethyst Battleaxe
-s(169107)/i(190900),	--
-s(169109)/i(190902),	--
-s(169110)/i(190903),	--
-s(169115)/i(190908),	--
+s(169021)/i(190807),	-- Artisan's Work Shirt
+s(169030)/i(190816),	-- Forgehand's "Stable" Fuel Cell
+s(169034)/i(190820),	-- Restless Void Handaxe
+s(169036)/i(190822),	-- Mo'arg Enforcer's Halberd
+s(169057)/i(190844),	-- Valarjar Champion's Greatsword
+s(169060)/i(190847),	-- Deathmantle Assassin's Barb
+s(169061)/i(190848),	-- [DNT] Do not use
+s(169062)/i(190849),	-- Forgemaster's Gavel
+s(169069)/i(190860),	-- Initiate's Bo
+s(169096)/i(190889),	-- Woodsman's Hatchet
+s(169098)/i(190891),	-- Shabby Battleaxe
+s(169100)/i(190893),	-- Jeweled Valkyrion Cape
+s(169107)/i(190900),	-- Prototype Farstrider Sniper Rifle
+s(169109)/i(190902),	-- Will of the Titanforged
+s(169110)/i(190903),	-- Soulburner Warscythe
+s(169115)/i(190908),	-- Devourer's Skullscythe
 s(184146)/i(202153),	--
 s(184147)/i(202154),	--
 s(184149)/i(202155),	--
@@ -65454,8 +65610,6 @@ s(186664)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon
 s(186695)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186700)/i(204465),	-- Voice of the Silent Star
-s(186715)/i(205381),	-- Obsidian Gladiator's Silk Hood
-s(186716)/i(205381),	-- Obsidian Gladiator's Silk Hood
 10.1.0.48776
 s(187207)/i(205687),	--
 s(187719)/i(205924),	-- Obsidian Gladiator's Axe
@@ -65675,9 +65829,6 @@ s(193977)/i(211079),	--
 s(193978)/i(211079),	--
 10.2.0.51825
 s(194439)/i(211871),	--
-10.2.0.52607
-s(168922)/i(190671),	-- Tabard of Wild Might
-s(169063)/i(190854),	-- Heavily Stitched Wallet
 10.2.5.52206
 s(165310)/i(187651),	-- Evoker Tunic
 s(165311)/i(187652),	-- Evoker Boots
@@ -65693,7 +65844,6 @@ s(194710)/i(212343),	--
 s(195165)/i(212992),	--
 s(195180)/i(213018),	--
 10.2.5.52432
-s(168921)/i(190670),	-- Sanguine Bouquet
 s(195214)/i(213156),	--
 s(195220)/i(213222),	--
 s(195221)/i(213223),	--
@@ -65702,3 +65852,9 @@ s(195224)/i(213273),	--
 10.2.5.52968
 s(191960)/i(210191),	--
 s(191961)/i(210192),	--
+10.2.5.53104
+s(168243)/i(190090),	-- Dessicated Bouquet
+s(168920)/i(190669),	-- Burnished Helm of Righteousness
+s(168939)/i(190688),	-- Silvered Helm of Righteousness
+s(168943)/i(190692),	-- Champion's Battle Standard
+s(169032)/i(190818),	-- Steamwheedle Artifact Extractor

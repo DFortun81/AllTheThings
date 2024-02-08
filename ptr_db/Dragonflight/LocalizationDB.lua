@@ -59,7 +59,6 @@ _.CategoryNames = {
 	[642] = "Trinkets",
 	[643] = "Oils",
 	[644] = "Materials",
-	[657] = "Armor Enchantments",
 	[750] = "Reagents",
 	[751] = "Explosives",
 	[752] = "Goggles",
@@ -596,6 +595,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "Bounty",
 	[-1000380] = "Bounty",
 	[-1000381] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1000382] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1103,7 +1103,6 @@ _.Modules.Events.SetEventInformation(590, {
 
 -- Filter Database Module
 _.FilterConstants = {
-	AMMO = 37,
 	ARTIFACTS = 11,
 	BAGS = 113,
 	BATTLE_PETS = 101,
@@ -1120,7 +1119,6 @@ _.FilterConstants = {
 	GLYPHS = 111,
 	GUNS = 31,
 	HELD_IN_OFF_HAND = 1,
-	HOLIDAY = 106,
 	ILLUSIONS = 103,
 	LEATHER = 5,
 	MAIL = 6,
@@ -1181,7 +1179,6 @@ L.FILTER_ID_TYPES = {
 	[34] = GetItemSubClassInfo(2,13),
 	[35] = GetItemSubClassInfo(2,9),
 	[36] = INVTYPE_THROWN,
-	[37] = INVTYPE_AMMO,
 	[50] = AUCTION_CATEGORY_MISCELLANEOUS,
 	[51] = INVTYPE_NECK,
 	[52] = INVTYPE_FINGER,
@@ -1197,7 +1194,6 @@ L.FILTER_ID_TYPES = {
 	[102] = TOY,
 	[103] = "Illusions",
 	[104] = AUCTION_CATEGORY_QUEST_ITEMS,
-	[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,
 	[110] = PAPERDOLL_SIDEBAR_TITLES,
 	[111] = GetItemClassInfo(16),
 	[113] = INVTYPE_BAG,
@@ -1232,7 +1228,6 @@ L.FILTER_ID_ICONS = {
 	[34] = "Interface/Icons/inv_misc_monsterclaw_02",
 	[35] = "Interface/Icons/inv_weapon_glave_01",
 	[36] = "Interface/Icons/inv_throwingknife_02",
-	[37] = "Interface/Icons/inv_ammo_bullet_01",
 	[50] = "Interface/Icons/Spell_Misc_Drink",
 	[51] = "Interface/Icons/INV_Jewelry_Necklace_02",
 	[52] = "Interface/Icons/INV_Jewelry_Ring_04",
@@ -1248,7 +1243,6 @@ L.FILTER_ID_ICONS = {
 	[102] = _.asset("Category_ToyBox"),
 	[103] = "Interface/Icons/inv_inscription_weaponscroll03",
 	[104] = _.asset("Interface_Quest_header"),
-	[106] = "Interface/Icons/INV_Holiday_Christmas_Present_01",
 	[110] = _.asset("Category_Titles"),
 	[111] = "Interface/Icons/Inv_glyph_minorwarrior",
 	[113] = "Interface/Icons/INV_Misc_Bag_08",
@@ -4366,6 +4360,7 @@ _.ObjectNames = {
 	[280576] = "Encased Scroll",
 	[280619] = "Old Ironbound Chest",
 	[280727] = "Charred Note",
+	[280747] = "Shadow Tear",
 	[280755] = "Quintin's Satchel",
 	[280815] = "|cFFFFFFFFStep 1:|r Letter from Ms. Graham I",
 	[280836] = "|cFFFFFFFFStep 2:|r Letter from Ms. Graham II",
@@ -4490,7 +4485,7 @@ _.ObjectNames = {
 	[293844] = "|cFFFFFFFFStep 9:|r Ordinary Pebble VIII",
 	[293845] = "|cFFFFFFFFStep 10:|r Ordinary Pebble IX",
 	[293846] = "|cFFFFFFFFStep 11:|r Ordinary Pebble X",
-	[293849] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[293849] = "Conspicious Note",
 	[293852] = "Buried Treasure Chest",
 	[293880] = "Buried Treasure Chest",
 	[293881] = "Buried Treasure Chest",
@@ -8971,6 +8966,7 @@ _.ObjectModels = {
 	[280576] = 1661562,
 	[280619] = 953811,
 	[280727] = 936411,
+	[280747] = 196690,
 	[280755] = 878854,
 	[280815] = 1661948,
 	[280836] = 1661948,
@@ -10629,6 +10625,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "Kopfgeld",
 	[-1000380] = "Kopfgeld",
 	[-1000381] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1000382] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -12468,6 +12465,7 @@ localize(_.ObjectNames, {
 	[280576] = "Eingeschlossene Schriftrolle",
 	[280619] = "Alte eisenbeschlagene Truhe",
 	[280727] = "Verkohlte Nachricht",
+	[280747] = "Schattenträne",
 	[280755] = "Quintins Beutel",
 	[280815] = "|cFFFFFFFFSchritt 1:|r Brief von Frau Graham I",
 	[280836] = "|cFFFFFFFFSchritt 2:|r Brief von Frau Graham II",
@@ -12590,7 +12588,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFFSchritt 9:|r Gewöhnlicher Kieselstein VIII",
 	[293845] = "|cFFFFFFFFSchritt 10:|r Gewöhnlicher Kieselstein IX",
 	[293846] = "|cFFFFFFFFSchritt 11:|r Gewöhnlicher Kieselstein X",
-	[293849] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[293849] = "Auffällige Notiz",
 	[293852] = "Vergrabene Schatzkiste",
 	[293880] = "Vergrabene Schatzkiste",
 	[293881] = "Vergrabene Schatzkiste",
@@ -14065,6 +14063,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "Prima",
 	[-1000380] = "Prima",
 	[-1000381] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1000382] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -15898,6 +15897,7 @@ localize(_.ObjectNames, {
 	[280576] = "Pergamino encerrado",
 	[280619] = "Cofre antiguo reforzado con hierro",
 	[280727] = "Nota carbonizada",
+	[280747] = "Lágrima sombría",
 	[280755] = "Bolsa de Quintin",
 	[280815] = "|cFFFFFFFFStep 1:|r Carta de la señora Graham I",
 	[280836] = "|cFFFFFFFFStep 2:|r Carta de la señora Graham II",
@@ -16019,7 +16019,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFFStep 9:|r Piedra corriente VIII",
 	[293845] = "|cFFFFFFFFStep 10:|r Piedra corriente IX",
 	[293846] = "|cFFFFFFFFStep 11:|r Piedra corriente X",
-	[293849] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[293849] = "Nota llamativa",
 	[293852] = "Arqueta enterrada",
 	[293880] = "Arqueta enterrada",
 	[293881] = "Cofre del tesoro enterrado",
@@ -17458,6 +17458,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "Prime",
 	[-1000380] = "Prime",
 	[-1000381] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1000382] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -19307,6 +19308,7 @@ localize(_.ObjectNames, {
 	[280576] = "Parchemin dans son étui",
 	[280619] = "Vieux coffre bardé de fer",
 	[280727] = "Note calcinée",
+	[280747] = "Larme d’ombre",
 	[280755] = "Sacoche de Quentin",
 	[280815] = "|cFFFFFFFFÉtape 1:|r Lettre de Mme Graham I",
 	[280836] = "|cFFFFFFFFÉtape 2:|r Lettre de Mme Graham II",
@@ -19431,7 +19433,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFFÉtape 9:|r Caillou ordinaire VIII",
 	[293845] = "|cFFFFFFFFÉtape 10:|rCaillou ordinaire IX",
 	[293846] = "|cFFFFFFFFÉtape 11:|rCaillou ordinaire X",
-	[293849] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[293849] = "Note mise en évidence",
 	[293852] = "Coffre au trésor enfoui",
 	[293880] = "Coffre au trésor enfoui",
 	[293881] = "Coffre au trésor enfoui",
@@ -20866,6 +20868,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "Premio",
 	[-1000380] = "Premio",
 	[-1000381] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1000382] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -22589,6 +22592,7 @@ localize(_.ObjectNames, {
 	[280576] = "Pergamena Sigillata",
 	[280619] = "Vecchia Cassa Rinforzata",
 	[280727] = "Nota Carbonizzata",
+	[280747] = "Squarcio d'Ombra",
 	[280755] = "Borsa di Quintin",
 	[280815] = "|cFFFFFFFFStep 1:|r Lettera da Dama Graham I",
 	[280836] = "|cFFFFFFFFStep 2:|r Lettera da Dama Graham II",
@@ -22709,7 +22713,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFFStep 9:|r Sasso Comune VIII",
 	[293845] = "|cFFFFFFFFStep 10:|r Sasso Comune IX",
 	[293846] = "|cFFFFFFFFStep 11:|r Sasso Comune X",
-	[293849] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[293849] = "Nota Vistosa",
 	[293852] = "Forziere del Tesoro Sepolto",
 	[293880] = "Forziere del Tesoro Sepolto",
 	[293881] = "Forziere del Tesoro Sepolto",
@@ -24065,6 +24069,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "하사품",
 	[-1000380] = "하사품",
 	[-1000381] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1000382] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -25829,6 +25834,7 @@ localize(_.ObjectNames, {
 	[280576] = "통에 든 두루마리",
 	[280619] = "오래된 철제 궤짝",
 	[280727] = "까맣게 탄 기록",
+	[280747] = "어둠 눈물",
 	[280815] = "|cFFFFFFFFStep 1:|r 그레이엄 부인의 편지 I",
 	[280836] = "|cFFFFFFFFStep 2:|r 그레이엄 부인의 편지 II",
 	[280837] = "|cFFFFFFFFStep 3:|r 그레이엄 부인의 편지 III",
@@ -25945,7 +25951,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFFStep 9:|r 평범한 조약돌 VIII",
 	[293845] = "|cFFFFFFFFStep 10:|r 평범한 조약돌 IX",
 	[293846] = "|cFFFFFFFFStep 11:|r 평범한 조약돌 X",
-	[293849] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[293849] = "눈에 띄는 쪽지",
 	[293852] = "묻힌 보물 상자",
 	[293880] = "묻힌 보물 상자",
 	[293884] = "묻힌 보물 상자",
@@ -27181,6 +27187,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "Recompensa",
 	[-1000380] = "Recompensa",
 	[-1000381] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1000382] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -29121,7 +29128,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFFStep 9:|r Cascalho Comum VIII",
 	[293845] = "|cFFFFFFFFStep 10:|r Cascalho Comum IX",
 	[293846] = "|cFFFFFFFFStep 11:|r Cascalho Comum X",
-	[293849] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[293849] = "Bilhete Suspeito",
 	[293852] = "Baú do Tesouro Enterrado",
 	[293880] = "Baú do Tesouro Enterrado",
 	[293881] = "Baú do Tesouro Enterrado",
@@ -30609,6 +30616,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "Премия",
 	[-1000380] = "Премия",
 	[-1000381] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1000382] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -32465,6 +32473,7 @@ localize(_.ObjectNames, {
 	[280576] = "Свиток в футляре",
 	[280619] = "Старый обитый железом сундук",
 	[280727] = "Обгоревшая записка",
+	[280747] = "Темный разлом",
 	[280755] = "Сумка Квентина",
 	[280815] = "|cFFFFFFFFStep 1:|r Письмо от мисс Грэхэм I",
 	[280836] = "|cFFFFFFFFStep 2:|r Письмо от мисс Грэхэм II",
@@ -32589,7 +32598,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFFШаг 9:|r Обычный камешек VIII",
 	[293845] = "|cFFFFFFFFШаг 10:|r Обычный камешек IX",
 	[293846] = "|cFFFFFFFFШаг 11:|r Обычный камешек X",
-	[293849] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[293849] = "Примечательная записка",
 	[293852] = "Закопанный сундук с сокровищами",
 	[293880] = "Закопанный сундук с сокровищами",
 	[293881] = "Закопанный сундук с сокровищами",
@@ -34154,6 +34163,7 @@ localize(L.HEADER_NAMES, {
 	[-1000379] = "赏金任务",
 	[-1000380] = "赏金任务",
 	[-1000381] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1000382] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
@@ -36077,7 +36087,7 @@ localize(_.ObjectNames, {
 	[293844] = "|cFFFFFFFF步骤9:|r 普通的卵石 VIII",
 	[293845] = "|cFFFFFFFF步骤10:|r 普通的卵石 IX",
 	[293846] = "|cFFFFFFFF步骤11:|r 普通的卵石 X",
-	[293849] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[293849] = "不起眼的纸条",
 	[293852] = "被掩埋的宝箱",
 	[293880] = "被掩埋的宝箱",
 	[293881] = "被掩埋的宝箱",

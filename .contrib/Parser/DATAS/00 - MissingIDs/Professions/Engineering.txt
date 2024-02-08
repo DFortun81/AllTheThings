@@ -103,6 +103,13 @@ r(19804),	-- Arcanite Dragonling
 r(23070),	-- Dense Dynamite
 1.15.0.52124
 r(424641),	-- Shredder Autosalvage Unit
+1.15.1.53009
+r(431362),	-- Soul Vessel
+r(435956),	-- Polished Truesilver Gears
+r(435958),	-- Whirling Truesilver Gearwall
+r(435960),	-- Hyperconductive Goldwap
+r(435964),	-- High-Yield Radiation Bomb
+r(435966),	-- Ez-Thro Radiation Bomb
 2.0.0.6080
 r(30303),	-- Elemental Blasting Powder
 r(30304),	-- Fel Iron Casing
@@ -801,6 +808,13 @@ r(26428),	-- Large Red Rocket Cluster
 r(26442),	-- Firework Launcher
 r(26443),	-- Cluster Launcher \\ Firework Cluster Launcher
 r(28327),	-- Steam Tonk Controller
+1.15.1.53009
+r(431362),	-- Soul Vessel
+r(435956),	-- Polished Truesilver Gears
+r(435958),	-- Whirling Truesilver Gearwall
+r(435960),	-- Hyperconductive Goldwap
+r(435964),	-- High-Yield Radiation Bomb
+r(435966),	-- Ez-Thro Radiation Bomb
 2.0.0.6080
 r(30303),	-- Elemental Blasting Powder
 r(30304),	-- Fel Iron Casing
