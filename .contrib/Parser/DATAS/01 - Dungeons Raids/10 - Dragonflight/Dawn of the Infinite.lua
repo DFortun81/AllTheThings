@@ -448,6 +448,10 @@ local QUANTUM_GROUP = sharedData({
 		}),
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
+		q(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
+			["name"] = "Quantum Greatsword (Two-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(134746),	-- Covert Greatsword					(Removed)
 		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 2, -- Heroic raid
@@ -734,6 +738,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 					["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
+				}),
+				q(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
+					["name"] = "Quantum Greatsword (Two-Handed) completed.",
 				}),
 				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
 					["name"] = "Quantum Knuckles completed.",
@@ -1249,7 +1256,6 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
-		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
 		-- q(77608),	-- when you learn everything from Quantum ?
