@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---				Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)           --
+--				Copyright 2017-2024 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
 local appName, app = ...
 local L = app.L
@@ -733,12 +733,6 @@ settings.Refresh = function(self)
 	Callback(Refresh, self)
 end
 end
-
-app.AddEventHandler("OnPlayerLevelUp", function()
-	if settings:Get("Filter:ByLevel") then
-		settings:Refresh();
-	end
-end);
 
 -- Applies a basic backdrop color to a given frame
 -- r/g/b expected in 1-255 range
@@ -1989,6 +1983,11 @@ function(self)
 end)
 checkboxNoLevelFilter:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"])
 checkboxNoLevelFilter:AlignBelow(checkboxIgnoreUnboundFilters, -1)
+app.AddEventHandler("OnPlayerLevelUp", function()
+	if settings:Get("Filter:ByLevel") then
+		settings:Refresh();
+	end
+end);
 
 local checkboxNoSeasonalFilter = child:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
 	function(self)

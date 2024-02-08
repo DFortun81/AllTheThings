@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---            Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)             --
+--            Copyright 2017-2024 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
 local rawget, ipairs, pairs, tinsert, setmetatable = rawget, ipairs, pairs, tinsert, setmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
