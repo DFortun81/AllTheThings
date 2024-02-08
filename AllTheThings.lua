@@ -9038,10 +9038,10 @@ app.CreateMap = function(id, t)
 	else
 		t = setmetatable(t, app.BaseMap);
 	end
-	local npcID = t.npcID;
-	if npcID and npcID < 0 then
-		t.headerID = npcID;
-		t.npcID = nil;
+	local creatureID = t.creatureID;
+	if creatureID and creatureID < 0 then
+		t.headerID = creatureID;
+		t.creatureID = nil;
 	end
 	return t;
 end
