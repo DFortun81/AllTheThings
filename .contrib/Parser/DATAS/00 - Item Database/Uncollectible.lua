@@ -1733,3 +1733,6 @@ i(213212);	-- Whalebone Knife
 i(205222);	-- Wooden Caravan Spoke
 i(213182);	-- Worry Stone
 i(213214);	-- Woven Lavareed Basket
+-- Quest items --
+i(211922);	-- Bouquet of Flowers
+i(211923);	-- Sealed Letter

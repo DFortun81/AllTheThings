@@ -257,37 +257,50 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["maps"] = { FERALAS },
 			["groups"] = {
 				crit(64676, {	-- Novelty
-					["_noautomation"] = true,	-- blizz swapped these for now, maybe will fix
-					["provider"] = {"n",214850},	-- Bront Axecrusher
+					["coord"] = { 69.01, 72.4, FERALAS },
+					["provider"] = { "o", 411691 },	-- Shiny New Weapon
 				}),
 				crit(64680, {	-- Beauty
+					["provider"] = { "i",211922 },	-- Bouquet of Flowers
+					["coord"] = { 69.09, 72.93, FERALAS },
 				}),
 				crit(64681, {	-- Comfort
 					["description"] = "While holding any 'gift', use /hug.",
+					["coord"] = { 69.95, 74.1, FERALAS },
 				}),
 				crit(64677, {	-- Festivity
-					["provider"] = {"n",212815},	-- Clarissa Buchannan
+					["providers"] = {
+						{ "n", 212815 },	-- Clarissa Buchannan
+						{ "n", 411744 },	-- Barrel of Wine
+					},
+					["coord"] = { 69.16, 72.66, FERALAS },
 				}),
 				crit(64679, {	-- Challenge
-					["_noautomation"] = true,	-- blizz swapped these for now, maybe will fix
-					["provider"] = {"n",212812},	-- Vernon Whitlock
+					["coord"] = { 69.64, 73.35, FERALAS },
+					["provider"] = { "o", 411691 },	-- Shiny New Weapon
 				}),
 				crit(64682, {	-- Respect
 					["description"] = "While holding any 'gift', use /bow.",
+					["coord"] = { 69.19, 72.62, FERALAS },
 				}),
 				crit(64678, {	-- Companionship
 					["providers"] = {
-						{"n",212811},	-- Angus Flagonshot
-						{"n",212850},	-- Lost Puppy
+						{ "n", 212811 },	-- Angus Flagonshot
+						{ "n", 212850 },	-- Lost Puppy
 					},
+					["coord"] = { 69.78, 74.08, FERALAS },
 				}),
 				crit(64683, {	-- Attention
 					["description"] = "While holding any 'gift', follow the 'talk' dialog options after asking about the gift.",
+					["coord"] = { 68.75, 72.1, FERALAS },
 				}),
 				crit(64736, {	-- Style
+					["provider"] = {"i",211922},	-- Bouquet of Flowers
+					["coord"] = { 68.78, 73.66, FERALAS },
 				}),
 				crit(64703, {	-- Praise
 					["provider"] = {"i",211923},	-- Sealed Letter
+					["coord"] = { 69.95, 73.32, FERALAS },
 				}),
 			},
 		}),

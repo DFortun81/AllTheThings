@@ -1037,7 +1037,6 @@ root(ROOTS.Unsorted, {
 			i(211782),	-- Note from Zikky
 			-- Quest Items
 			i(210431),	-- Artisanal Bon-Bombs
-			i(211922),	-- Bouquet of Flowers
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
 			i(210416),	-- Formula: Intoxicating Toxic Perfume
