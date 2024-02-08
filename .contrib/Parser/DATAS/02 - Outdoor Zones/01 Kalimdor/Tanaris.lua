@@ -5454,7 +5454,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 					-- #else
-					["description"] = "The Pirate's Footlocker is one of two sources for Southsea Lamp, which are commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+					["description"] = "The Pirate's Footlocker is one of two sources for Southsea Lamp, and is commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
 					["crs"] = {
 						7855,	-- Southsea Pirate
 						7858,	-- Southsea Swashbuckler
