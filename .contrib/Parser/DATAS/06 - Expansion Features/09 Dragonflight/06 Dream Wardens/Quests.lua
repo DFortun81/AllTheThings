@@ -135,6 +135,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78386 }	-- Emerald Reawakening
 				}),
 			}, {	-- RENOWN 6 --
 			}, {	-- RENOWN 7 --
@@ -147,6 +148,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78358 }	-- Drake's Dreaming Crest
 				}),
 			}, {	-- RENOWN 9 --
 				q(78387, {	-- Plump Dreamseeds
@@ -166,6 +168,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78364 }	-- Drake's Dreaming Crest
 				}),
 			}, {	-- RENOWN 12 --
 				q(78364, {	-- Drake's Dreaming Crest
@@ -176,6 +179,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78364 }	-- Drake's Dreaming Crest
 				}),
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
@@ -188,12 +192,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78374 }	-- Flightstones
 				}),
 			}, {	-- RENOWN 16 --
 				q(78585, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78388 }		-- Gigantic Dreamseeds
 				}),
 			}, {	-- RENOWN 17 --
 				q(78388, {	-- Gigantic Dreamseeds
@@ -204,12 +210,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78388 }		-- Gigantic Dreamseeds
 				}),
 			}, {	-- RENOWN 18 --
 				q(78587, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78372 }	-- Drake's Dreaming Crest
 				}),
 			}, {	-- RENOWN 19 --
 				q(78372, {	-- Drake's Dreaming Crest
@@ -224,6 +232,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(206960),	-- Enchanted Wyrm's Dreaming Crest
 					},
 				}),
+				q(78588, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78373 }	-- The Dream Thanks You
+				}),
 				title(532),	-- <Name>, Dream Defender
 					-- RENOWN 20+++ --
 				q(76425, {	--	Renowned with the Dream Wardens
@@ -231,14 +245,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["repeatable"] = true,
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["g"] = {
-						i(210992, {	-- Overflowing Dream Warden Trove
+							i(210992, {	-- Overflowing Dream Warden Trove
 						}),
 					},
-				}),
-				q(78588, {	-- Dragon Isles Supplies
-					["provider"] = { "n", 208143 },	-- Keeper Amrymn
-					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-					["DisablePartySync"] = true,
 				}),
 			},
 		})),
