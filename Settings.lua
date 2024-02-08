@@ -5,6 +5,7 @@
 --------------------------------------------------------------------------------
 local appName, app = ...
 local L = app.L
+local Callback = app.CallbackHandlers.Callback;
 local Colorize = app.Modules.Color.Colorize
 local HexToARGB = app.Modules.Color.HexToARGB
 local RGBToHex = app.Modules.Color.RGBToHex
@@ -45,7 +46,6 @@ settings.Collectibles = {
 };
 settings.name = appName;
 settings.Objects = {}
-settings.Callback = app.CallbackHandlers.Callback
 do	-- Add the ATT Settings frame into the WoW Settings options
 	local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
 	category.ID = settings.name
@@ -730,7 +730,7 @@ settings.Refresh = function(self)
 	-- apparently child components have the audacity to tell the parent it should refresh itself... so insubordinate
 	if self.__Refreshing then return end
 	self.__Refreshing = true
-	settings.Callback(Refresh, self)
+	Callback(Refresh, self)
 end
 end
 
@@ -1178,10 +1178,9 @@ settings.CreateOptionsPage = function(self, name, nested)
 		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
 
 		-- Create the nested subcategory
-		local subcategory = scrollFrame
-		subcategory.name = name
-		subcategory.parent = "AllTheThings"
-		InterfaceOptions_AddCategory(subcategory)
+		scrollFrame.name = name
+		scrollFrame.parent = "AllTheThings"
+		InterfaceOptions_AddCategory(scrollFrame)
 	end
 
 	-- Return the scrollable child
@@ -4334,7 +4333,7 @@ local buttonInitializeProfiles = child:CreateButton(
 		app:ShowPopupDialog(L["PROFILE_INITIALIZE_CONFIRM"],
 		function()
 			app.SetupProfiles()
-			settings.Callback(InitProfilesButton_Disable, self)
+			Callback(InitProfilesButton_Disable, self)
 		end)
 	end,
 })
@@ -4477,7 +4476,7 @@ profileSelector.OnRefresh = function()
 					if activeProfile == myProfile then
 						self:SetAlpha(0.5)
 						self:SetChecked(true)
-						settings.Callback(ProfileCheckbox_Disable, self)
+						Callback(ProfileCheckbox_Disable, self)
 					elseif SelectedProfile == myProfile then
 						self:SetAlpha(1)
 						self:Enable()
