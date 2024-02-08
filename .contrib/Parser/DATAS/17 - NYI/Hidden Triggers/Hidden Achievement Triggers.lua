@@ -43,6 +43,22 @@ root(ROOTS.HiddenAchievementTriggers, {
 		applyclassicphase(SOM_PHASE_ONE, ach(15637)),	-- The Immortal (Season of Mastery) \\ The Immortal
 		-- #endif
 		-- #endif
+		--1.15.1.53009
+		-- #if ANYCLASSIC
+		ach(19563),	-- Unbroken Self-Found Soul
+		ach(20129),	-- [DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
+		ach(20130),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)
+		ach(20131),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 (hidden)
+		ach(20132),	-- [DNT] Discoverer's Delight - Reach Level 60 in Phase 5 (hidden)
+		ach(20133),	-- [DNT] Self-Found Soul (Level 1)
+		ach(20134),	-- [DNT] Self-Found Soul (Level 10)
+		ach(20135),	-- [DNT] Self-Found Soul (Level 20)
+		ach(20136),	-- [DNT] Self-Found Soul (Level 30)
+		ach(20137),	-- [DNT] Self-Found Soul (Level 40)
+		ach(20138),	-- [DNT] Self-Found Soul (Level 50)
+		ach(20139),	-- [DNT] Self-Found Soul (Level 60)
+		ach(20193),	-- [DNT] Self-Found Soul (Removed Self-Found)
+		-- #endif
 	}),
 	tier(TBC_TIER, {
 		--2.5.1.39399

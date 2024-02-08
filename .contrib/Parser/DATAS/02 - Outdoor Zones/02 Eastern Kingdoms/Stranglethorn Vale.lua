@@ -224,6 +224,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						THE_BARRENS,
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				pvp(applyclassicphase(SOD_PHASE_TWO, faction(2634))),	-- Blood Moon
+				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
 				fp(18, {	-- Booty Bay, Stranglethorn
