@@ -626,7 +626,8 @@ local L = {
 		[1602] = {2, "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r", "Silithyst", 11301, 11306, "\n \n|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r" },
 		[1603] = {2, "|CFFAAFFAAThis was only available after the start of Classic Era.|r", "Classic Era", 11301, 11307, "\n \n|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r" },
 		[1604] = {2, "|CFFAAFFAAThis was only available during Season of Mastery.|r", "Season of Mastery", 11301, nil, "\n \n|CFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r" },
-		[1605] = {2, "|CFFAAFFAAThis was only available during Season of Discovery.|r", "Season of Discovery", 11301, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
+		[1605] = {2, "|CFFAAFFAAThis was only available during Phase 1 of Season of Discovery.|r", "Season of Discovery", 11500, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
+		[1606] = {2, "|CFFAAFFAAThis was only available during Phase 2 of Season of Discovery.|r", "SOD P2", 11501, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
 
 		[17] = {2, "|CFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r", "Phase 1", 20501, 20501, "\n \n|CFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r" },
 		[1701] = {2, "|CFFAAFFAAThis was only available during the Opening of the Dark Portal event before the launch of TBC.|r", "Dark Portal Opens", 20501, nil, "\n \n|CFFFFAAAAIf the Dark Portal has been opened on your server, simply turn this off.|r" },

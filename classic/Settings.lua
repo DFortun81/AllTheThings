@@ -222,6 +222,22 @@ settings.Initialize = function(self)
 	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
 	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
 	setmetatable(ATTClassicSettings.Unobtainable, UnobtainableSettingsBase);
+	
+	-- Check for Season of Discovery
+	local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
+	if season > 0 then
+		local states = getmetatable(ATTClassicSettings.Unobtainable).__index;
+		if season == 1 then	-- SOM
+			states[1604] = true;
+		end
+		if season == 2 then	-- SOD
+			states[1605] = app.GameBuildVersion >= 11500;
+			states[1606] = app.GameBuildVersion >= 11501;
+			if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
+			elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
+			else app.MaximumSkillLevel = 150; end
+		end
+	end
 
 	-- Assign the preset filters for your character class as the default states
 	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
@@ -2140,7 +2156,7 @@ ClassicPhasesLabel:Show();
 
 -- Classic Phases
 local last, xoffset, yoffset, spacing, vspacing = ClassicPhasesLabel, 0, -4, 8, 1;
-for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, 0, -vspacing }, { 1604, 0, -vspacing }, { 1605, 0, -vspacing } }) do
+for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, 0, -vspacing }, { 1604, 0, -vspacing }, { 1605, 0, -vspacing }, { 1606, spacing, -vspacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local reason = reasons[u];
