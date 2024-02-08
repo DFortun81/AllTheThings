@@ -256,6 +256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { ROGUE },
+					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				})),
 				-- #endif
