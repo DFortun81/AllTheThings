@@ -9017,27 +9017,10 @@ local mapFields = {
 			end
 		end
 	end,
-	["iconForAchievement"] = function(t)
-		return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
-	end,
-	-- ["linkForAchievement"] = function(t)
-	-- 	return GetAchievementLink(t.achievementID);
-	-- end,
 };
 app.BaseMap = app.BaseObjectFields(mapFields, "BaseMap");
-
-local fields = RawCloneData(mapFields);
-fields.icon = mapFields.iconForAchievement;
--- fields.link = mapFields.linkForAchievement;
-app.BaseMapWithAchievementID = app.BaseObjectFields(fields, "BaseMapWithAchievementID");
 app.CreateMap = function(id, t)
-	t = constructor(id, t, "mapID");
-	if t.achID then
-		t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		t = setmetatable(t, app.BaseMapWithAchievementID);
-	else
-		t = setmetatable(t, app.BaseMap);
-	end
+	t = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
 	local creatureID = t.creatureID;
 	if creatureID and creatureID < 0 then
 		t.headerID = creatureID;
