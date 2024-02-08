@@ -2868,6 +2868,7 @@ for i,o in ipairs({
 						["name"] = "Increased X-45 Heartbreaker Droprate (Daily Accountwide)",
 						["timeline"] = { ADDED_10_0_5 },
 						["collectible"] = false,
+						["isDaily"] = true,
 					}),
 					q(79104, {	-- Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)
 						["name"] = "Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)",
