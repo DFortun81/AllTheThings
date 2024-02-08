@@ -2864,13 +2864,13 @@ for i,o in ipairs({
 						["timeline"] = { "added 3.3.0" },
 						["filterID"] = MOUNTS,
 					}),
-					q(74957, {	-- First Heart-Shaped Box of the Day (Accountwide)
-						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
-						["timeline"] = { ADDED_10_0_5, "removed 10.2.5" },
+					q(74957, {	-- Increased X-45 Heartbreaker Droprate (Daily Accountwide)
+						["name"] = "Increased X-45 Heartbreaker Droprate (Daily Accountwide)",
+						["timeline"] = { ADDED_10_0_5 },
 						["collectible"] = false,
 					}),
-					q(79104, {	-- First Heart-Shaped Box of the Day (Accountwide)
-						["name"] = "First Heart-Shaped Box of the Day (Accountwide)",
+					q(79104, {	-- Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)
+						["name"] = "Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)",
 						["timeline"] = { ADDED_10_2_5 },
 						["collectible"] = false,
 						["isDaily"] = true,

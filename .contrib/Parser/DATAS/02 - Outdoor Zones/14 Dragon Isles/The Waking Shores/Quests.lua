@@ -1343,6 +1343,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						66079,	-- Wrathion Awaits
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["DisablePartySync"] = true,	-- TODO: Figure out what Quest blocks it
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
 				}),
 				q(70751, {	-- Terillod the Devout
