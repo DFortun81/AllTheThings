@@ -19,18 +19,20 @@ local C_MapExplorationInfo_GetExploredAreaIDsAtPosition = C_MapExplorationInfo.G
 
 -- Current Map Detection
 local CurrentMapID;
-local mapIDToMapName, mapIDToAreaID = {}, {
+local MapIDToMapName = setmetatable({}, {
+	__index = L.MAP_ID_TO_ZONE_TEXT,
+});
+for mapID,area in pairs({	-- MapID to AreaID List
 	[465] = { 154 },	-- Deathknell
 	[425] = { 9, 59, 24, 34 },	-- Northshire Valley, Northshire Vineyards, Northshire Abbey, Echo Ridge Mine
 	[462] = { 221 },	-- Camp Narache
 	[467] = { 3431 },	-- Sunstrider Isle
 	[468] = { 3526, 3527, 3560, 3528, 3559, 3529, 3530, 3561 },	-- Ammen Vale, Crash Site, Ammen Fields, Silverline Lake, Nestlewood Hills, Nestlewood Thicket, Shadow Ridge, The Sacred Grove
 	[348] = { 4095 },	-- Magisters' Terrace
-};
-for mapID,area in pairs(mapIDToAreaID) do
+}) do
 	local info = C_Map_GetAreaInfo(area[1]);
 	if info then
-		mapIDToMapName[mapID] = info;
+		MapIDToMapName[mapID] = info;
 		L.ZONE_TEXT_TO_MAP_ID[info] = mapID;
 		if #area > 1 then
 			for i=2,#area,1 do
@@ -45,16 +47,16 @@ local function GetCurrentMapID()
 	local substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
 	if substitutions then
 		for questID,mapID in pairs(substitutions) do
-			if not IsQuestFlaggedCompleted(questID) then
+			if not IsQuestFlaggedCompleted(questID) and app.CurrentCharacter.Quests[questID] then
 				return mapID;
 			end
 		end
 	end
-	local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[originalMapID];
-	if zoneTextSubstitution then
+	local mapName = MapIDToMapName[originalMapID];
+	if mapName then
 		local zone = GetRealZoneText();
 		if zone then
-			if zoneTextSubstitution == zone then return originalMapID; end
+			if mapName == zone then return originalMapID; end
 			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
 			if mapID then
 				return mapID;
@@ -62,7 +64,7 @@ local function GetCurrentMapID()
 		end
 		zone = GetSubZoneText();
 		if zone and zone ~= "" then
-			if zoneTextSubstitution == zone then return originalMapID; end
+			if mapName == zone then return originalMapID; end
 			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
 			if mapID then return mapID; end
 		end
@@ -84,9 +86,8 @@ local function GetCurrentMapID()
 end
 local function GetMapName(mapID)
 	if mapID then
-		local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[mapID];
-		if zoneTextSubstitution then return zoneTextSubstitution; end
-		if mapIDToMapName[mapID] then return mapIDToMapName[mapID]; end
+		local mapName = MapIDToMapName[mapID];
+		if mapName then return mapName; end
 
 		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);
