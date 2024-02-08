@@ -94,17 +94,40 @@ local function GetMapName(mapID)
 		return "Map ID #???";
 	end
 end
-local function UpdateLocationCoroutine()
-	-- Acquire the new map ID.
-	local mapID = GetCurrentMapID();
-	while not mapID do
-		coroutine.yield();
-		mapID = GetCurrentMapID();
+local UpdateLocationCoroutine;
+if app.GameBuildVersion < 30000 then
+	-- Before Wrath Classic we didn't have mapIDs in the world proper, so ATT had to make a guess.
+	-- This relied on the map name and stuff.
+	UpdateLocationCoroutine = function()
+		-- Wait a second, will ya? The position detection is BAD.
+		for i=1,30,1 do coroutine.yield(); end
+		
+		-- Acquire the new map ID.
+		local mapID = GetCurrentMapID();
+		while not mapID do
+			coroutine.yield();
+			mapID = GetCurrentMapID();
+		end
+		if CurrentMapID ~= mapID then
+			CurrentMapID = mapID;
+			app.CurrentMapID = mapID;
+			app.HandleEvent("OnCurrentMapIDChanged");
+		end
 	end
-	if CurrentMapID ~= mapID then
-		CurrentMapID = mapID;
-		app.CurrentMapID = mapID;
-		app.HandleEvent("OnCurrentMapIDChanged");
+else
+	-- After Wrath Classic you don't need to wait for a bit before checking.
+	UpdateLocationCoroutine = function()
+		-- Acquire the new map ID.
+		local mapID = GetCurrentMapID();
+		while not mapID do
+			coroutine.yield();
+			mapID = GetCurrentMapID();
+		end
+		if CurrentMapID ~= mapID then
+			CurrentMapID = mapID;
+			app.CurrentMapID = mapID;
+			app.HandleEvent("OnCurrentMapIDChanged");
+		end
 	end
 end
 local function UpdateLocation()
