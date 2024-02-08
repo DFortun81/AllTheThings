@@ -170,6 +170,8 @@
 2586@@@Azeroth Commerce Authority
 2587@@@Durotar Supply and Logistics
 2588@@@S03 - Scarlet Crusade Disguise
+1.15.1.53009
+2634@@@Blood Moon
 2.0.0.6080
 914@@@PLAYER, Blood Elf
 923@@@Farstriders
