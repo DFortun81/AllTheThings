@@ -5,8 +5,8 @@ local L = app.L;
 local contains, IsQuestFlaggedCompleted = app.contains, app.IsQuestFlaggedCompleted;
 
 -- Global locals
-local coroutine, ipairs, pairs, rawset, strsplit, tinsert, tonumber
-	= coroutine, ipairs, pairs, rawset, strsplit, tinsert, tonumber;
+local coroutine, ipairs, pairs, rawset, strsplit, tinsert, tonumber, math_floor
+	= coroutine, ipairs, pairs, rawset, strsplit, tinsert, tonumber, math.floor;
 local CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown
 	= CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown;
 local C_Map_GetMapArtID = C_Map.GetMapArtID;
@@ -472,19 +472,13 @@ local createMap = app.CreateClass("Map", "mapID", {
 		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
 	end,
 	["name"] = function(t)
-		return t.headerID and app.NPCNameFromID[t.headerID] or GetMapName(t.mapID);
+		return GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
-		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.asset("Category_Zones");
-	end,
-	["lore"] = function(t)
-		return t.headerID and L["HEADER_LORE"][t.headerID];
-	end,
-	["description"] = function(t)
-		return t.headerID and L["HEADER_DESCRIPTIONS"][t.headerID];
+		return app.asset("Category_Zones");
 	end,
 	["back"] = function(t)
-		if CurrentMapID == t.mapID or (t.maps and contains(t.maps, CurrentMapID)) then
+		if t.isCurrentMap then
 			return 1;
 		end
 	end,
@@ -494,10 +488,51 @@ local createMap = app.CreateClass("Map", "mapID", {
 	["lvl"] = function(t)
 		return C_Map_GetMapLevels(t.mapID);
 	end,
+	["coord_tooltip"] = function(t)
+		-- if this map is the same map as the one the player is currently within, allow displaying the player's current coordinates
+		if t.isCurrentMap then
+			local position = C_Map_GetPlayerMapPosition(CurrentMapID, "player")
+			if position then
+				local x,y = position:GetXY()
+				return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, CurrentMapID };
+			end
+		end
+	end,
+	["isCurrentMap"] = function(t)
+		if CurrentMapID == t.mapID then
+			return true;
+		end
+		local maps = t.maps;
+		if maps and contains(maps, CurrentMapID) then
+			return true;
+		end
+	end,
 	["ignoreSourceLookup"] = function(t)
 		return true;
 	end,
-});
+},
+"WithHeader", {
+	["name"] = function(t)
+		return app.NPCNameFromID[t.headerID] or GetMapName(t.mapID);
+	end,
+	["icon"] = function(t)
+		return L.HEADER_ICONS[t.headerID] or app.asset("Category_Zones");
+	end,
+	["lore"] = function(t)
+		return L.HEADER_LORE[t.headerID];
+	end,
+	["description"] = function(t)
+		return L.HEADER_DESCRIPTIONS[t.headerID];
+	end,
+}, (function(t)
+	local creatureID = t.creatureID;
+	if creatureID and creatureID < 0 then
+		t.headerID = creatureID;
+		t.creatureID = nil;
+		t.npcID = nil;
+		return true;
+	end
+end));
 app.CreateMap = function(id, t)
 	local t = createMap(id, t);
 	local artID = t.artID;
@@ -561,24 +596,41 @@ app.CreateMap = function(id, t)
 			t.OnUpdate = onMapUpdate;
 		end
 	end
-	if t.creatureID and t.creatureID < 0 then
-		t.headerID = t.creatureID;
-		t.creatureID = nil;
-	end
 	return t;
+end
+app.CreateMapWithStyle = function(id)
+	local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
+	for _,data in ipairs(app.SearchForField("mapID", id)) do
+		if data.mapID and data.icon then
+			mapObject.text = data.text;
+            mapObject.icon = data.icon;
+            mapObject.lvl = data.lvl;
+            mapObject.lore = data.lore;
+            mapObject.description = data.description;
+			break;
+		end
+	end
+
+	if not mapObject.text then
+		local mapInfo = C_Map_GetMapInfo(id);
+		if mapInfo then
+			mapObject.text = mapInfo.name;
+		end
+	end
+	return mapObject;
 end
 app.CreateInstance = app.CreateClass("Instance", "instanceID", {
 	["text"] = function(t)
 		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
 	end,
 	["name"] = function(t)
-		return t.headerID and app.NPCNameFromID[t.headerID] or GetMapName(t.mapID);
+		return GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
-		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.asset("Category_Zones");
+		return app.asset("Category_Zones");
 	end,
 	["back"] = function(t)
-		if CurrentMapID == t.mapID or (t.maps and contains(t.maps, CurrentMapID)) then
+		if t.isCurrentMap then
 			return 1;
 		end
 	end,
@@ -620,14 +672,38 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", {
 	["saved"] = function(t)
 		return t.locks;
 	end,
+	["isCurrentMap"] = function(t)
+		if CurrentMapID == t.mapID then
+			return true;
+		end
+		local maps = t.maps;
+		if maps and contains(maps, CurrentMapID) then
+			return true;
+		end
+	end,
 	["ignoreSourceLookup"] = function(t)
 		return true;
 	end,
 },
-"WithCreature", {}, (function(t)
-	if t.creatureID and t.creatureID < 0 then
-		t.headerID = t.creatureID;
+"WithHeader", {
+	["name"] = function(t)
+		return app.NPCNameFromID[t.headerID] or GetMapName(t.mapID);
+	end,
+	["icon"] = function(t)
+		return L.HEADER_ICONS[t.headerID] or app.asset("Category_Zones");
+	end,
+	["lore"] = function(t)
+		return L.HEADER_LORE[t.headerID];
+	end,
+	["description"] = function(t)
+		return L.HEADER_DESCRIPTIONS[t.headerID];
+	end,
+}, (function(t)
+	local creatureID = t.creatureID;
+	if creatureID and creatureID < 0 then
+		t.headerID = creatureID;
 		t.creatureID = nil;
+		t.npcID = nil;
 		return true;
 	end
 end));

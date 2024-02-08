@@ -8991,7 +8991,7 @@ local mapFields = {
 		return t.headerID and L["HEADER_LORE"][t.headerID];
 	end,
 	["back"] = function(t)
-		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+		if t.isCurrentMap then
 			return 1;
 		end
 	end,
@@ -9000,21 +9000,21 @@ local mapFields = {
 	end,
 	["coord_tooltip"] = function(t)
 		-- if this map is the same map as the one the player is currently within, allow displaying the player's current coordinates
-		local myMapID = app.CurrentMapID;
-		local mapID, maps = t.mapID, t.maps;
-		if myMapID == mapID or (maps and contains(maps, myMapID)) then
-			local position = C_Map_GetPlayerMapPosition(myMapID, "player")
+		if t.isCurrentMap then
+			local position = C_Map_GetPlayerMapPosition(app.CurrentMapID, "player")
 			if position then
 				local x,y = position:GetXY()
-				x = math_floor(x * 1000) / 10;
-				y = math_floor(y * 1000) / 10;
-				local _coord = t._coord or {};
-				t._coord = _coord;
-				_coord[1] = x;
-				_coord[2] = y;
-				_coord[3] = myMapID;
-				return _coord;
+				return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, app.CurrentMapID };
 			end
+		end
+	end,
+	["isCurrentMap"] = function(t)
+		if app.CurrentMapID == t.mapID then
+			return true;
+		end
+		local maps = t.maps;
+		if maps and contains(maps, app.CurrentMapID) then
+			return true;
 		end
 	end,
 };
@@ -9025,6 +9025,7 @@ app.CreateMap = function(id, t)
 	if creatureID and creatureID < 0 then
 		t.headerID = creatureID;
 		t.creatureID = nil;
+		t.npcID = nil;
 	end
 	return t;
 end
@@ -11985,37 +11986,6 @@ RowOnEnter = function (self)
 		if reference.instanceID then
 			GameTooltip:AddDoubleLine(L["LOCKOUT"], L[reference.isLockoutShared and "SHARED" or "SPLIT"]);
 		end
-		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
-			local currentMapID, str = app.CurrentMapID;
-			local coords = reference.coords;
-			-- more than 10 coords, put into an additional line
-			local coordLimit, coordCount = 11, #coords;
-			local additionaLine, coord;
-			if coordCount > coordLimit then
-				coordLimit = coordLimit - 1;
-				additionaLine = "+ "..(coordCount - coordLimit)..L["_MORE"];
-				coordCount = coordLimit;
-			end
-			for i=1,coordCount do
-				coord = coords[i];
-				local x, y = coord[1], coord[2];
-				local mapID = coord[3] or currentMapID;
-				if mapID ~= currentMapID then
-					str = app.GetMapName(mapID);
-					if app.Settings:GetTooltipSetting("mapID") then
-						str = str .. " (" .. mapID .. ")";
-					end
-					str = str .. ": ";
-				else
-					str = "";
-				end
-				GameTooltip:AddDoubleLine(i == 1 and L["COORDINATES_STRING"] or " ",
-					str.. GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
-			end
-			if additionaLine then
-				GameTooltip:AddDoubleLine(" ", additionaLine, 1, 1, 1, 1, 1, 1);
-			end
-		end
 		if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
 			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
 		end
@@ -12076,6 +12046,37 @@ RowOnEnter = function (self)
 					break
 				end
 				first = first + 1;
+			end
+		end
+		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
+			local currentMapID, str = app.CurrentMapID;
+			local coords = reference.coords;
+			-- more than 10 coords, put into an additional line
+			local coordLimit, coordCount = 11, #coords;
+			local additionaLine, coord;
+			if coordCount > coordLimit then
+				coordLimit = coordLimit - 1;
+				additionaLine = "+ "..(coordCount - coordLimit)..L["_MORE"];
+				coordCount = coordLimit;
+			end
+			for i=1,coordCount do
+				coord = coords[i];
+				local x, y = coord[1], coord[2];
+				local mapID = coord[3] or currentMapID;
+				if mapID ~= currentMapID then
+					str = app.GetMapName(mapID);
+					if app.Settings:GetTooltipSetting("mapID") then
+						str = str .. " (" .. mapID .. ")";
+					end
+					str = str .. ": ";
+				else
+					str = "";
+				end
+				GameTooltip:AddDoubleLine(i == 1 and L["COORDINATES_STRING"] or " ",
+					str.. GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+			end
+			if additionaLine then
+				GameTooltip:AddDoubleLine(" ", additionaLine, 1, 1, 1, 1, 1, 1);
 			end
 		end
 		local coord = reference.coord or reference.coord_tooltip;

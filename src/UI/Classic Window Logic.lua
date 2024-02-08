@@ -974,10 +974,11 @@ local function RowOnEnter(self)
 				end
 			end
 		end
-		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then
+		local coord = reference.coord or reference.coord_tooltip;
+		if coord and app.Settings:GetTooltipSetting("Coordinates") then
 			GameTooltip:AddDoubleLine("Coordinate",
-				GetNumberWithZeros(math_floor(reference.coord[1] * 10) * 0.1, 1) .. ", " ..
-				GetNumberWithZeros(math_floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+				GetNumberWithZeros(math_floor(coord[1] * 10) * 0.1, 1) .. ", " ..
+				GetNumberWithZeros(math_floor(coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
 		if reference.providers then
 			local counter = 0;
