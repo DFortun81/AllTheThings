@@ -1424,7 +1424,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 34.6, 12.6, DARNASSUS },
 				{ 29.6, 14.6, IRONFORGE },
 				{ 36.6, 58.6, MOONGLADE },
-				-- #if AFTER CATA
+				-- #if AFTER 10.2.5
+				{ 48.6, 57.0, ORGRIMMAR },
+				-- #elseif AFTER CATA
 				{ 52.8, 56.2, ORGRIMMAR },
 				-- #else
 				{ 41.6, 32.6, ORGRIMMAR },

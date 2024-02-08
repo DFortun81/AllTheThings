@@ -373,6 +373,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["collectible"] = false,
 					["isDaily"] = true,
 				}),
+				i(211430),	-- Bundle of Love Tokens
 			},
 		}),
 		ach(1702, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Sweet Tooth
@@ -1408,7 +1409,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 				["sourceQuest"] = 78729,	-- Raising a Stink (A)
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(LOVE_TOKEN) },
+				["groups"] = {
+					i(LOVE_TOKEN),
+					i(211782),	-- Note from Zikky
+				},
 			}),
 			q(78379, {	-- The Stench of Revenge (A)
 				["qg"] = 38066,	-- Inspector Snap Snagglebolt
@@ -1452,7 +1456,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 				["sourceQuest"] = 78978,	-- Raising a Stink (H)
 				["races"] = HORDE_ONLY,
-				["groups"] = { i(LOVE_TOKEN) },
+				["groups"] = {
+					i(LOVE_TOKEN),
+					i(211782),	-- Note from Zikky
+				},
 			}),
 			q(78985, {	-- The Stench of Revenge (H)
 				["qg"] = 37172,	-- Detective Snap Snagglebolt
