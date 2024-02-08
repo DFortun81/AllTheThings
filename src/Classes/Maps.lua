@@ -730,6 +730,7 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 	end
 end));
 
+if app.IsClassic then
 -- Register for Map Exploration Events
 app:RegisterEvent("MAP_EXPLORATION_UPDATED");
 app:RegisterEvent("UI_INFO_MESSAGE");
@@ -767,3 +768,4 @@ app.events.UI_INFO_MESSAGE = function(messageID)
 	end
 end
 app.AddEventHandler("OnRecalculate", app.events.MAP_EXPLORATION_UPDATED);
+end
