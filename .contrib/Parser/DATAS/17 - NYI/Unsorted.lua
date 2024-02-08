@@ -2516,7 +2516,6 @@ root(ROOTS.Unsorted, {
 				i(174746),	-- Golden Egg Shells
 				i(178175),	-- Gooey Sap
 				i(183963),	-- Gormlet
-				i(180451),	-- Grand Inquisitor's Sinstone Fragment
 				i(170053),	-- Grek'og's Tusk
 				i(172038),	-- Grim Iron Shackles
 				i(178537),	-- Hair-Trussed Fungi

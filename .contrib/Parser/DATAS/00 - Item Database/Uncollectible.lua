@@ -120,6 +120,7 @@ i(169165);	-- Father's Sword
 i(128419);	-- Fel Essence (N)
 i(128420);	-- Fel Essence (H)
 i(128421);	-- Fel Essence (M)
+i(180451);	-- Grand Inquisitor's Sinstone Fragment
 i(169228);	-- Hazardous Container
 i(118383);	-- Heart of Stone (N)
 i(118386);	-- Heart of Stone (H)
