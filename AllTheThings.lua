@@ -14921,7 +14921,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				setmetatable(header,
 					header.instanceID and app.BaseInstance
 					or (header.classID and { __index = app.CreateCharacterClass(header.classID) })
-					or header.achID and app.BaseMapWithAchievementID or app.BaseMap);
+					or app.BaseMap);
 
 				-- Swap out the map data for the header.
 				self:SetData(header);
