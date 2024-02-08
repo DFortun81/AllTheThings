@@ -1353,7 +1353,7 @@ local function GetCachedSearchResults(method, paramA, paramB, ...)
 		if isTopLevelSearch and group.g then
 			group.total = 0;
 			group.progress = 0;
-			AssignChildren(group);
+			--AssignChildren(group);	-- Turning this off fixed a bug with objects.
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
