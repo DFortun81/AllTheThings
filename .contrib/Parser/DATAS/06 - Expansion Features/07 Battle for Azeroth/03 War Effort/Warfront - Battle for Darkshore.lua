@@ -78,6 +78,7 @@ root(ROOTS.ExpansionFeatures,
 							148025,	-- Commander Ralesh
 							147260,	-- Conflagros
 							149661,	-- Croz Bloodrage
+							149655,	-- Croz Bloodrage
 							147241,	-- Cyclarus
 							149654,	-- Glimmerspine
 							147746,	-- Glrglrr
@@ -353,6 +354,9 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(149655, {	-- Croz Bloodrage [A Only]
 							-- ["questID"] = 54891,	-- Croz Bloodrage [Alliance]
+							["crs"] = {
+								149661,	-- Croz Bloodrage (2 Versions?)
+							},
 							["races"] = ALLIANCE_ONLY,
 							["questID"] = 54886,
 							["isWeekly"] = true,
@@ -360,7 +364,6 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)
-								--i(166435),	-- Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
 							},
 						}),
 						n(147241, {	-- Cyclarus
