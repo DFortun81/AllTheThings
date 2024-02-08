@@ -7693,80 +7693,6 @@ app.CreateGearSetSubHeader = function(id, t)
 end
 end)();
 
--- Instance Lib
-(function()
-local cache = app.CreateCache("instanceID");
-local function CacheInfo(t, field)
-	local _t, id = cache.GetCached(t);
-	local name, lore, _, _, _, icon, _, link = EJ_GetInstanceInfo(id);
-	_t.name = name;
-	_t.lore = lore;
-	_t.icon = icon;
-	_t.link = link;
-	if field then return _t[field]; end
-end
-local fields = {
-	["key"] = function(t)
-		return "instanceID";
-	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", CacheInfo);
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", CacheInfo);
-	end,
-	["silentLink"] = function(t)
-		return cache.GetCachedField(t, "link", CacheInfo);
-	end,
-	["back"] = function(t)
-		if (t.mapID and app.CurrentMapID == t.mapID) or (t.maps and contains(t.maps, app.CurrentMapID)) then
-			return 1;
-		end
-	end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
-		return t.locks;
-	end,
-	["locks"] = function(t)
-		local lockouts = app.CurrentCharacter.Lockouts;
-		local locks = lockouts[t.name];
-		if locks then
-			t.locks = locks;
-			return locks;
-		end
-		local sins = t.sins;
-		if sins then
-			for i=1,#sins,1 do
-				locks = lockouts[sins[i]];
-				if locks then
-					t.locks = locks;
-					return locks;
-				end
-			end
-		end
-		local areaID = t["zone-text-areaID"];
-		if areaID then
-			local name = C_Map.GetAreaInfo(areaID);
-			if name then
-				locks = lockouts[name];
-				if locks then
-					t.locks = locks;
-					return locks;
-				end
-			end
-		end
-	end,
-	["isLockoutShared"] = app.ReturnFalse,
-};
-app.BaseInstance = app.BaseObjectFields(fields, "BaseInstance");
-app.CreateInstance = function(id, t)
-	return setmetatable(constructor(id, t, "instanceID"), app.BaseInstance);
-end
-end)();
-
 -- Item Lib
 (function()
 local GetItemCount
@@ -8914,153 +8840,6 @@ app.GroupBestMatchingItems = function(items, modItemID)
 	end
 	return refinedBuckets;
 end
-end)();
-
--- Map Lib
-(function()
-local C_Map_GetMapLevels, C_Map_GetBestMapForUnit, C_Map_GetPlayerMapPosition
-	= C_Map.GetMapLevels, C_Map.GetBestMapForUnit, C_Map.GetPlayerMapPosition;
-app.GetCurrentMapID = function()
-	local originalMapID = C_Map_GetBestMapForUnit("player");
-	local substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
-	if substitutions then
-		for questID,mapID in pairs(substitutions) do
-			-- if quest is unflagged but has been flagged at some point for this character, allow the mapID switch
-			if not IsQuestFlaggedCompleted(questID) and app.CurrentCharacter.Quests[questID] then
-				return mapID;
-			end
-		end
-	end
-	local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[originalMapID];
-	if zoneTextSubstitution then
-		local zone = GetRealZoneText();
-		if zone then
-			if zoneTextSubstitution == zone then return originalMapID; end
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then
-				return mapID;
-			end
-		end
-		zone = GetSubZoneText();
-		if zone and zone ~= "" then
-			if zoneTextSubstitution == zone then return originalMapID; end
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
-		end
-	else
-		local zone = GetRealZoneText();
-		if zone then
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then
-				return mapID;
-			end
-		end
-		zone = GetSubZoneText();
-		if zone and zone ~= "" then
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
-		end
-	end
-	return originalMapID;
-end
-app.GetMapName = function(mapID)
-	if mapID then
-		local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[mapID];
-		if zoneTextSubstitution then return zoneTextSubstitution; end
-
-		local info = C_Map_GetMapInfo(mapID);
-		return (info and info.name) or ("Map ID #" .. mapID);
-	else
-		return "Map ID #???";
-	end
-end
-local mapFields = {
-	["key"] = function(t)
-		return "mapID";
-	end,
-	["name"] = function(t)
-		return t.headerID and app.NPCNameFromID[t.headerID] or app.GetMapName(t.mapID);
-	end,
-	["icon"] = function(t)
-		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.asset("Category_Zones");
-	end,
-	["description"] = function(t)
-		return t.headerID and L["HEADER_DESCRIPTIONS"][t.headerID];
-	end,
-	["lore"] = function(t)
-		return t.headerID and L["HEADER_LORE"][t.headerID];
-	end,
-	["back"] = function(t)
-		if t.isCurrentMap then
-			return 1;
-		end
-	end,
-	["lvl"] = function(t)
-		return C_Map_GetMapLevels(t.mapID);
-	end,
-	["coord_tooltip"] = function(t)
-		-- if this map is the same map as the one the player is currently within, allow displaying the player's current coordinates
-		if t.isCurrentMap then
-			local position = C_Map_GetPlayerMapPosition(app.CurrentMapID, "player")
-			if position then
-				local x,y = position:GetXY()
-				return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, app.CurrentMapID };
-			end
-		end
-	end,
-	["isCurrentMap"] = function(t)
-		if app.CurrentMapID == t.mapID then
-			return true;
-		end
-		local maps = t.maps;
-		if maps and contains(maps, app.CurrentMapID) then
-			return true;
-		end
-	end,
-};
-app.BaseMap = app.BaseObjectFields(mapFields, "BaseMap");
-app.CreateMap = function(id, t)
-	t = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
-	local creatureID = t.creatureID;
-	if creatureID and creatureID < 0 then
-		t.headerID = creatureID;
-		t.creatureID = nil;
-		t.npcID = nil;
-	end
-	return t;
-end
-app.CreateMapWithStyle = function(id)
-	local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
-	for _,data in ipairs(SearchForField("mapID", id)) do
-		if data.mapID and data.icon then
-			mapObject.text = data.text;
-            mapObject.icon = data.icon;
-            mapObject.lvl = data.lvl;
-            mapObject.lore = data.lore;
-            mapObject.description = data.description;
-			break;
-		end
-	end
-
-	if not mapObject.text then
-		local mapInfo = C_Map_GetMapInfo(id);
-		if mapInfo then
-			mapObject.text = mapInfo.name;
-		end
-	end
-	return mapObject;
-end
-
-local function UpdateMap()
-	app.CurrentMapID = app.GetCurrentMapID();
-end
-app:RegisterEvent("ZONE_CHANGED");
-app:RegisterEvent("ZONE_CHANGED_INDOORS");
-app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-app.events.ZONE_CHANGED = UpdateMap;
-app.events.ZONE_CHANGED_INDOORS = UpdateMap;
-app.events.ZONE_CHANGED_NEW_AREA = UpdateMap;
-UpdateMap();
 end)();
 
 -- Mount Lib
@@ -14918,10 +14697,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				header.e = nil;
 				header.mapID = mapID;
 				header.visible = true;
-				setmetatable(header,
-					header.instanceID and app.BaseInstance
-					or (header.classID and { __index = app.CreateCharacterClass(header.classID) })
-					or app.BaseMap);
+				if header.instanceID then
+					header = app.CreateInstance(header.instanceID, header);
+				elseif header.classID then
+					header = app.CreateCharacterClass(header.classID, header);
+				else
+					header = app.CreateMap(header.mapID, header);
+				end
 
 				-- Swap out the map data for the header.
 				self:SetData(header);
@@ -15080,13 +14862,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		local function RefreshLocation(show)
 			-- Acquire the new map ID.
-			local mapID = app.GetCurrentMapID();
+			local mapID = app.CurrentMapID;
 			-- app.PrintDebug("RefreshLocation",mapID)
 			if not mapID then
 				AfterCombatCallback(RefreshLocation);
 				return;
 			end
-			app.CurrentMapID = mapID;
 			OpenMiniList(mapID, show);
 		end
 		local function ToggleMiniListForCurrentZone()
@@ -15117,9 +14898,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("WAYPOINT_UPDATE");
 		self:RegisterEvent("SCENARIO_UPDATE");
-		self:RegisterEvent("ZONE_CHANGED");
-		self:RegisterEvent("ZONE_CHANGED_INDOORS");
-		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
 	end
 	if self:IsVisible() then
 		-- Update the mapID into the data for external reference in case not rebuilding

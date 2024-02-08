@@ -467,7 +467,7 @@ app.SortExplorationDB = function()
 	AllTheThingsAD.NamedExplorationDB = t;
 end
 
--- Maps & Instances
+-- Maps
 local createMap = app.CreateClass("Map", "mapID", {
 	["text"] = function(t)
 		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
@@ -534,7 +534,7 @@ local createMap = app.CreateClass("Map", "mapID", {
 		return true;
 	end
 end));
-app.CreateMap = function(id, t)
+app.CreateMap = app.IsRetail and createMap or function(id, t)
 	local t = createMap(id, t);
 	local artID = t.artID;
 	if artID and t.g then
@@ -620,7 +620,9 @@ app.CreateMapWithStyle = function(id)
 	end
 	return mapObject;
 end
-app.CreateInstance = app.CreateClass("Instance", "instanceID", {
+
+-- Instances
+local instanceFields = {
 	["text"] = function(t)
 		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
 	end,
@@ -682,13 +684,32 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", {
 			return true;
 		end
 	end,
+	["isLockoutShared"] = app.ReturnFalse,
 	["ignoreSourceLookup"] = function(t)
 		return true;
 	end,
-},
+};
+local EJ_GetInstanceInfo = EJ_GetInstanceInfo;
+if EJ_GetInstanceInfo then
+	local cache = app.CreateCache("instanceID");
+	local function CacheInfo(t, field)
+		local _t, id = cache.GetCached(t);
+		local name, lore, _, _, _, icon, _, link = EJ_GetInstanceInfo(id);
+		_t.name = name;
+		_t.lore = lore;
+		_t.icon = icon;
+		_t.link = link;
+		if field then return _t[field]; end
+	end
+	instanceFields.icon = function(t) return cache.GetCachedField(t, "icon", CacheInfo); end;
+	instanceFields.name = function(t) return cache.GetCachedField(t, "name", CacheInfo); end;
+	instanceFields.lore = function(t) return cache.GetCachedField(t, "lore", CacheInfo); end;
+	instanceFields.silentLink = function(t) return cache.GetCachedField(t, "link", CacheInfo); end;
+end
+app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 "WithHeader", {
 	["name"] = function(t)
-		return app.NPCNameFromID[t.headerID] or GetMapName(t.mapID);
+		return app.NPCNameFromID[t.headerID] or instanceFields.name(t);
 	end,
 	["icon"] = function(t)
 		return L.HEADER_ICONS[t.headerID] or app.asset("Category_Zones");
