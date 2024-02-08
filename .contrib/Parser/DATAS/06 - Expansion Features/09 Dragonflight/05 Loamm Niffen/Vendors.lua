@@ -175,7 +175,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					}, {	-- RENOWN 16 --
 						i(205363, {	-- Ensemble: Ornate Black Dragon Labwear
-							["questID"] = 75832,
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 250 },
 							},
@@ -239,3 +238,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(DF_TIER, {
+		-- Ensembles
+		q(75832),	-- Ensemble: Ornate Black Dragon Labwear
+	}),
+});
