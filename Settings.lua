@@ -287,11 +287,6 @@ settings.Initialize = function(self)
 		app:GetWindow("WorldQuests"):Show()
 	end
 
-	-- Account Synchronization
-	if self:GetTooltipSetting("Auto:Sync") then
-		app:Synchronize(true)
-	end
-
 	settings.__RefreshActiveAdditionalIDs()
 	settings.__RefreshActiveAdditionalIDs = nil
 

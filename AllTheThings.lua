@@ -5026,6 +5026,9 @@ app.AddEventHandler("OnStartup", function()
 	-- Attempt to register for the addon message prefix.
 	-- NOTE: This is only used by this old sync module and will be removed at some point.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
+	if app.Settings:GetTooltipSetting("Auto:Sync") then
+		app:Synchronize(true)
+	end
 end);
 end)();
 
