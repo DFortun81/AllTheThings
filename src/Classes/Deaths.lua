@@ -4,9 +4,6 @@ local app = select(2, ...);
 -- App locals
 local ATTAccountWideData, ATTCharacterData
 
--- Global locals
-local string_gsub = string.gsub;
-
 -- Death Tracker Lib
 local fields = {
 	["text"] = function(t)
@@ -35,7 +32,7 @@ local fields = {
 				return a.Deaths > b.Deaths;
 			end);
 			for i,character in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. string_gsub(character.text, "-" .. GetRealmName(), ""), character.Deaths, 1, 1, 1);
+				GameTooltip:AddDoubleLine("  " .. character.text:gsub("-" .. GetRealmName(), ""), character.Deaths, 1, 1, 1);
 			end
 		end
 	end,

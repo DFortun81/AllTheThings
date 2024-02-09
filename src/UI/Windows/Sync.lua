@@ -3,8 +3,8 @@ local appName, app = ...;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, time, strsplit, tinsert, tremove, strgmatch, strgsub, strsub =
-	  ipairs, pairs, time, strsplit, tinsert, tremove, string.gmatch, string.gsub, string.sub;
+local ipairs, pairs, time, strsplit, tinsert, tremove, strgmatch, strsub =
+	  ipairs, pairs, time, strsplit, tinsert, tremove, string.gmatch, string.sub;
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo = 
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
 -- NOTES: BNGetFriendInfo and BNGetNumFriends are useless
@@ -145,7 +145,7 @@ local function SendBattleNetMessage(target, msg)
 end
 local function SplitString(separator, text)
     local sep, res = separator or '%s', {}
-    strgsub(text, '[^'..sep..']+', function(x) res[#res+1] = x end)
+    text:gsub('[^'..sep..']+', function(x) res[#res+1] = x end);
     return res;
 end
 local function UpdateBattleTags()
@@ -485,7 +485,7 @@ local deserializers = {
 		for i=1,count,1 do
 			-- Build the instance container.
 			local instance, instanceData = {}, SplitString("@", data[i]);
-			local instanceName = strgsub(strgsub(instanceData[1], "%%3A", ":"), "%%2C", ",");
+			local instanceName = instanceData[1]:gsub("%%3A", ":"):gsub("%%2C", ",");
 			currentValue[instanceName] = instance;
 			
 			-- Now iterate over the different difficulties
@@ -506,7 +506,7 @@ local deserializers = {
 				difficulty.encounters = encounters;
 				local encounterCount = #difficultyData;
 				for k=4,encounterCount,2 do
-					local encounterName = strgsub(strgsub(difficultyData[k], "%%3A", ":"), "%%2C", ",");
+					local encounterName = difficultyData[k]:gsub("%%3A", ":"):gsub("%%2C", ",");
 					tinsert(encounters, {
 						name = encounterName,
 						isKilled = difficultyData[k + 1] == "1" and true or false
@@ -556,7 +556,7 @@ local serializers = {
 		local any, str = false, field;
 		for instanceName,difficulties in pairs(value) do
 			-- Escape commas and colons from isntance names.
-			str = str .. ";" .. strgsub(strgsub(instanceName, ":", "%%3A"), ",", "%%2C");
+			str = str .. ";" .. instanceName:gsub(":", "%%3A"):gsub(",", "%%2C");
 			any = true;
 			for difficultyID,difficulty in pairs(difficulties) do
 				str = str .. 
@@ -568,7 +568,7 @@ local serializers = {
 					for i,encounter in ipairs(encounters) do
 						-- Escape commas and colons from encounter names.
 						str = str .. 
-							":" .. strgsub(strgsub(encounter.name, ":", "%%3A"), ",", "%%2C") .. 
+							":" .. encounter.name:gsub(":", "%%3A"):gsub(",", "%%2C") .. 
 							":" .. (encounter.isKilled and 1 or 0);
 					end
 				end

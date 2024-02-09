@@ -941,7 +941,7 @@ local function RowOnEnter(self)
 					GameTooltip:AddLine("|c" .. app.Colors.TooltipDescription .. "Known by:|r");
 					for i,data in ipairs(knownBy) do
 						local character = data[1];
-						GameTooltip:AddDoubleLine("  " .. string.gsub(character and character.text or "???", "-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
+						GameTooltip:AddDoubleLine("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
 					end
 
 				end
@@ -1266,7 +1266,7 @@ local function RowOnEnter(self)
 					j = j + 1;
 				end
 				if j > 0 then
-					GameTooltip:AddLine("Incomplete on " .. string.gsub(desc, "-" .. realmName, ""), 1, 1, 1, true);
+					GameTooltip:AddLine("Incomplete on " .. desc:gsub("-" .. realmName, ""), 1, 1, 1, true);
 				end
 			end
 		end

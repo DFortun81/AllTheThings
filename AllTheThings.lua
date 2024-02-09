@@ -55,9 +55,9 @@ local print = print
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		string_match, sformat, string_gsub, strsplit, GetTimePreciseSec, type, math_floor
+		string_match, sformat, strsplit, GetTimePreciseSec, type, math_floor
 	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		string.match, string.format, string.gsub, strsplit, GetTimePreciseSec, type, math.floor
+		string.match, string.format, strsplit, GetTimePreciseSec, type, math.floor
 local ATTAccountWideData;
 
 -- App & Module locals
@@ -249,7 +249,7 @@ end
 local function formatNumericWithCommas(amount)
   local k
   while true do
-	amount, k = string_gsub(amount, "^(-?%d+)(%d%d%d)", '%1,%2')
+	amount, k = tostring(amount):gsub("^(-?%d+)(%d%d%d)", '%1,%2')
 	if k == 0 then
 		break
 	end
@@ -3518,7 +3518,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				text = app.GenerateSourcePathForTooltip(parent);
 				if showUnsorted or (not string_match(text, L["UNSORTED_1"]) and not string_match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
-						text = string_gsub(text, source, replacement);
+						text = text:gsub(source, replacement);
 					end
 					-- doesn't meet current unobtainable filters
 					if not FilterUnobtainable(parent) then
@@ -3989,7 +3989,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.name);
 				local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
-				tinsert(info, { left = string_gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+				tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
 
@@ -4008,7 +4008,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.name);
 				local desc = sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"],app.TableConcat(knownBy, "text", "??", ", "));
-				tinsert(info, { left = string_gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+				tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
 
@@ -5148,7 +5148,7 @@ local function SearchForLink(link)
 			-- can't search for nothing!
 			return;
 		end
-		--print(string_gsub(string_gsub(link, "|c", "c"), "|h", "h"));
+		--print(link:gsub("|c", "c"):gsub("|h", "h"));
 		-- app.PrintDebug("SEARCH FOR FIELD",kind,id)
 		if kind == "itemid" or kind == "i" then
 			return SearchForField("itemID", id);
@@ -5175,7 +5175,7 @@ local function SearchForLink(link)
 		elseif kind == "objectID" or kind == "object" or kind == "o" then
 			return SearchForField("objectID", id);
 		else
-			return SearchForField(string_gsub(kind, "id", "ID"), id);
+			return SearchForField(kind:gsub("id", "ID"), id);
 		end
 	end
 end
@@ -14896,7 +14896,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 								local text = input:lower();
 								local f = tonumber(text);
 								if text ~= "" and tostring(f) ~= text then
-									text = string_gsub(text, "-", "%%-");
+									text = text:gsub("-", "%%-");
 									app.PrintDebug("search match",text)
 									-- The string form did not match, the filter must have been by name.
 									for id,filter in pairs(L["FILTER_ID_TYPES"]) do
@@ -18871,7 +18871,7 @@ end
 -- Clickable ATT Chat Link Handling
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
-		-- print("Chat Link Click",link,string_gsub(text, "\|","&"));
+		-- print("Chat Link Click",link,text:gsub("\|", "&"));
 		-- if IsShiftKeyDown() then
 		-- 	ChatEdit_InsertLink(text);
 		-- else

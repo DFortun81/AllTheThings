@@ -694,7 +694,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				priority = 4,
 				OnClick = function(row, button)
 					app:ShowPopupDialogWithMultiLineEditBox("FORMAT: PLAYER NAME\\tITEM NAME/ID\\tPERSISTENCE\n\n", function(text)
-						text = string.gsub(text, "    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
+						text = text:gsub("    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
 						local u, pers, g, word, l, esc, c = "", {}, {}, "", string.len(text), false;
 						for i=1,l,1 do
 							c = string.sub(text, i, i);

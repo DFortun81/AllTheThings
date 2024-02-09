@@ -1230,10 +1230,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
 				local text = app.GenerateSourcePathForTooltip(j.parent);
 				for source,replacement in pairs(abbrevs) do
-					text = string.gsub(text, source, replacement);
+					text = text:gsub(source, replacement);
 				end
 				for source,replacement in pairs(abbrevs_post) do
-					text = string.gsub(text, source, replacement);
+					text = text:gsub(source, replacement);
 				end
 
 				local right = " ";
@@ -1509,7 +1509,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								j = j + 1;
 							end
 							if j > 0 then
-								tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+								tinsert(info, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
 							end
 						end
 					end
@@ -1536,7 +1536,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								desc = desc .. (character.text or guid);
 								j = j + 1;
 							end
-							tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+							tinsert(info, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
 						end
 					end
 					local more = #entries - 25;
@@ -1732,7 +1732,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					end
 				end
 			end
-			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 		end
 	end
 
@@ -1805,7 +1805,7 @@ local function SearchForLink(link)
 		end
 	else
 		local kind, id = strsplit(":", link);
-		kind = string.gsub(kind:lower(), "id", "ID");
+		kind = kind:lower():gsub("id", "ID");
 		if string.sub(kind,1,2) == "|c" then
 			kind = string.sub(kind,11);
 		end
@@ -1814,7 +1814,7 @@ local function SearchForLink(link)
 		end
 		if id then id = tonumber(strsplit("|[", id) or id); end
 		--print("SearchForLink A:", kind, id);
-		--print("SearchForLink B:", string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
+		--print("SearchForLink B:", link:gsub("|c", "c"):gsub("|h", "h"));
 		if kind == "i" then
 			kind = "itemID";
 		elseif kind == "quest" or kind == "q" then
