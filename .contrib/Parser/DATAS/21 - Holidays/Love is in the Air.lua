@@ -261,7 +261,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["provider"] = { "o", 411691 },	-- Shiny New Weapon
 				}),
 				crit(64680, {	-- Beauty
-					["provider"] = { "i",211922 },	-- Bouquet of Flowers
+					["providers"] = {
+						{ "n",212817 },	-- Bratley Graston
+						{ "i",211922 },	-- Bouquet of Flowers
+					},
 					["coord"] = { 69.09, 72.93, FERALAS },
 				}),
 				crit(64681, {	-- Comfort
@@ -295,7 +298,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["coord"] = { 68.75, 72.1, FERALAS },
 				}),
 				crit(64736, {	-- Style
-					["provider"] = {"i",211922},	-- Bouquet of Flowers
+					["providers"] = {
+						{ "n",215148 },	-- Halene Mistrunner
+						{ "i",211922 },	-- Bouquet of Flowers
+					},
 					["coord"] = { 68.78, 73.66, FERALAS },
 				}),
 				crit(64703, {	-- Praise
@@ -1477,6 +1483,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211923),	-- Sealed Letter (QI)
+					i(211922),	-- Bouquet of Flowers (QI)
 				},
 			}),
 			q(78988, {	-- Getaway to Scenic Feralas! (H)
@@ -1485,6 +1492,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(211923),	-- Sealed Letter (QI)
+					i(211922),	-- Bouquet of Flowers (QI)
 				},
 			}),
 			q(78565, {	-- Getaway to Scenic Grizzly Hills! (A)
