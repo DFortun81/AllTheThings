@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for performing sort logic against sets of ATT groups
 
 -- Global locals
-local ipairs, pairs, tostring, type, string_lower, table_sort, pcall
-	= ipairs, pairs, tostring, type, string.lower, table.sort, pcall;
+local ipairs, pairs, tostring, type, table_sort, pcall
+	= ipairs, pairs, tostring, type, table.sort, pcall;
 
 -- App locals
 
@@ -117,8 +117,8 @@ local function defaultComparison(a,b)
 		return false;
 	end
 	-- Any two similar-type groups via name
-	acomp = string_lower(tostring(a.name));
-	bcomp = string_lower(tostring(b.name));
+	acomp = tostring(a.name):lower();
+	bcomp = tostring(b.name):lower();
 	return acomp < bcomp;
 end
 local function GetGroupSortValue(group)
@@ -182,8 +182,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = string_lower(tostring(a));
-		b = string_lower(tostring(b));
+		a = tostring(a):lower();
+		b = tostring(b):lower();
 		return a < b;
 	end,
 	Values = function(a,b)
@@ -286,8 +286,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		sortA = string_lower(tostring(a.text));
-		sortB = string_lower(tostring(b.text));
+		sortA = tostring(a.text):lower();
+		sortB = tostring(b.text):lower();
 		if sortA == sortB and sortA then
 			return calculateSourceQuestDepth(a, sortA) < calculateSourceQuestDepth(b, sortB);
 		end
@@ -306,8 +306,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = string_lower(tostring(a.name));
-		b = string_lower(tostring(b.name));
+		a = tostring(a.name):lower();
+		b = tostring(b.name):lower();
 		return a < b;
 	end,
 	text = function(a, b)
@@ -323,8 +323,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = string_lower(tostring(a.text));
-		b = string_lower(tostring(b.text));
+		a = tostring(a.text):lower();
+		b = tostring(b.text):lower();
 		return a < b;
 	end,
 	textAndLvl = function(a, b)
@@ -345,8 +345,8 @@ app.SortDefaults = setmetatable({
 			return false;
 		elseif sortA == sortB then
 			-- Any two similar-type groups with text
-			a = string_lower(tostring(a.name or a.text));
-			b = string_lower(tostring(b.name or b.text));
+			a = tostring(a.name or a.text):lower();
+			b = tostring(b.name or b.text):lower();
 			return a < b;
 		else
 			return true;

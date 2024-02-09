@@ -4,8 +4,8 @@ local _, app = ...
 local L = app.L;
 
 -- Globals
-local string_sub, string_upper, string_lower =
-	  string.sub, string.upper, string.lower
+local string_sub, string_upper =
+	  string.sub, string.upper
 
 -- Blizzard
 local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
@@ -46,7 +46,7 @@ local function CalculateTitleStyle(name)
 			end
 
 			-- Suffix
-			if first == string_lower(first) then
+			if first == first:lower() then
 				-- Player Name First with a space
 				return 2;
 			end

@@ -1124,8 +1124,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	
 	-- Determine if this is a search for an item
 	local itemID;
-	if not paramB then
-		local itemString = string.match(paramA, "item[%-?%d:]+");
+	if rawlink then
+		local itemString = rawlink:match("item[%-?%d:]+");
 		if itemString then
 			local itemID2 = select(2, strsplit(":", itemString));
 			if itemID2 then
@@ -1134,8 +1134,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				paramB = itemID;
 			end
 		else
-			local kind, id = strsplit(":", paramA);
-			kind = string.lower(kind);
+			local kind, id = strsplit(":", rawlink);
+			kind = kind:lower();
 			if id then id = tonumber(id); end
 			if kind == "itemid" then
 				paramA = "itemID";
@@ -1805,7 +1805,7 @@ local function SearchForLink(link)
 		end
 	else
 		local kind, id = strsplit(":", link);
-		kind = string.gsub(string.lower(kind), "id", "ID");
+		kind = string.gsub(kind:lower(), "id", "ID");
 		if string.sub(kind,1,2) == "|c" then
 			kind = string.sub(kind,11);
 		end

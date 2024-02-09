@@ -3648,7 +3648,7 @@ local idsArray = {}
 for id,_ in pairs(ids) do
 	idsArray[#idsArray + 1] = id
 end
-table.sort(idsArray, function(a,b) return string.lower(a) < string.lower(b) end)
+table.sort(idsArray, function(a,b) return a:lower() < b:lower() end)
 local activeIds = {}
 -- Table of AdditionalID/Localize Name Mappings
 settings.AdditionalIDs = ids

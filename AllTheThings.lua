@@ -54,9 +54,9 @@ local InCombatLockdown = _G["InCombatLockdown"];
 local print = print
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string_lower,
+local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
 		string_match, sformat, string_gsub, strsplit, GetTimePreciseSec, type, math_floor
-	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string.lower,
+	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
 		string.match, string.format, string.gsub, strsplit, GetTimePreciseSec, type, math.floor
 local ATTAccountWideData;
 
@@ -5136,7 +5136,7 @@ local function SearchForLink(link)
 		end
 	else
 		local kind, id = strsplit(":", link);
-		kind = string_lower(kind);
+		kind = kind:lower();
 		if string.sub(kind,1,2) == "|c" then
 			kind = string.sub(kind,11);
 		end
@@ -9467,13 +9467,13 @@ local function default_icon(t)
 	-- Allied Races are different
 	local arInfo = C_AlliedRaces_GetRaceInfoByID(t.raceID);
 	if arInfo then
-		local race = string_lower(arInfo.raceFileString);
+		local race = arInfo.raceFileString:lower();
 		-- blizzard being inconsistent
 		if race == "kultiran" then race = "kultiranhuman"; end
 		icon = "Interface\\Icons\\achievement_alliedrace_"..race;
 	else
 		local info = C_CreatureInfo_GetRaceInfo(t.raceID);
-		local race = string_lower(info.clientFileString);
+		local race = info.clientFileString:lower();
 		-- blizzard being inconsistent
 		if race == "scourge" then race = "undead"; end
 		if race == "goblin" then
@@ -14893,14 +14893,14 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 						['OnClick'] = function(row, button)
 							app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(input)
-								local text = string_lower(input);
+								local text = input:lower();
 								local f = tonumber(text);
 								if text ~= "" and tostring(f) ~= text then
 									text = string_gsub(text, "-", "%%-");
 									app.PrintDebug("search match",text)
 									-- The string form did not match, the filter must have been by name.
 									for id,filter in pairs(L["FILTER_ID_TYPES"]) do
-										if string_match(string_lower(filter), text) then
+										if filter:lower():match(text) then
 											f = tonumber(id);
 											break;
 										end
@@ -18742,7 +18742,7 @@ SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
 	if cmd then
 		-- print(cmd)
-		local args = { strsplit(" ", string_lower(cmd)) };
+		local args = { strsplit(" ", cmd:lower()) };
 		cmd = args[1];
 		-- app.print(args)
 		-- first arg is always the window/command to execute
@@ -18835,7 +18835,7 @@ SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 	app.SetCustomWindowParam("list", "reset", true);
 	app.SetCustomWindowParam("list", "type", "cache:item");
 	app.SetCustomWindowParam("list", "harvesting", true);
-	local args = { strsplit(",", string_lower(cmd)) };
+	local args = { strsplit(",", cmd:lower()) };
 	app.SetCustomWindowParam("list", "min", args[1]);
 	app.SetCustomWindowParam("list", "limit", args[2]);
 	app:GetWindow("list"):Toggle();

@@ -466,14 +466,14 @@ end
 local function CHAT_MSG_WHISPER_HANDLER(text, playerName, _, _, _, _, _, _, _, _, _, guid)
 	local action = strsub(text, 1, 1);
 	if action == '!' then	-- Send
-		local lowercased = string.lower(text);
+		local lowercased = text:lower();
 		if not Gargul and strsub(lowercased, 2, 3) == "sr" then
 			ParseSoftReserve(guid, strsub(text, 4));
 		elseif strsub(lowercased, 2, 6) == "attsr" then
 			ParseSoftReserve(guid, strsub(text, 7));
 		end
 	elseif action == '?' then	-- Request
-		local lowercased = string.lower(text);
+		local lowercased = text:lower();
 		if strsub(lowercased, 2, 3) == "sr" then
 			-- Turn off the AskPrice addon message if it's a Soft Reserve.
 			if AucAdvanced and AucAdvanced.Settings then
