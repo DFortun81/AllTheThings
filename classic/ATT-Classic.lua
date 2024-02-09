@@ -973,14 +973,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
 
 	-- Call to the method to search the database.
-	local group, a, b = method(paramA, paramB, ...);
+	local group = method(paramA, paramB, ...);
 	if not group then
 		group = {};
 	elseif group.g then
 		group = group.g;
 	end
-	if a then paramA = a; end
-	if b then paramB = b; end
 
 	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
 	if paramA == "creatureID" or paramA == "encounterID" then

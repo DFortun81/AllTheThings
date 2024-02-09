@@ -674,7 +674,7 @@ local function GetRawFieldContainer(field)
 end
 local function SearchForField(field, id)
 	-- Returns: A table containing all groups which contain the provided id for a given field.
-	return currentCache[field][id], field, id;
+	return currentCache[field][id];
 end
 local function SearchForFieldContainer(field)
 	-- Returns: A table containing all groups which contain a given field.

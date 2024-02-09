@@ -3093,10 +3093,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	-- Store the raw search link if no paramB
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
-	local group, a, b = method(paramA, paramB, ...);
+	local group = method(paramA, paramB, ...);
 	if not group then group = {}; end
-	if a then paramA = a; end
-	if b then paramB = b; end
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -3469,7 +3467,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels;
 					if myArtifactData then
 						local progress, total = 0, 0;
-						local relicItemLevel = select(1, GetDetailedItemLevelInfo((paramB and paramA .. ":" .. paramB) or paramA)) or 0;
+						local relicItemLevel = select(1, GetDetailedItemLevelInfo(rawlink)) or 0;
 						for relicID,artifactData in pairs(myArtifactData) do
 							local infoString;
 							for relicSlotIndex,relicData in pairs(artifactData) do
