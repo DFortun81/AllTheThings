@@ -5564,51 +5564,6 @@ local function GetPopulatedQuestObject(questID)
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;
 end
-local function ExportDataRecursively(group, indent)
-	if group.itemID then return ""; end
-	if group.g then
-		if group.instanceID then
-			EJ_SelectInstance(group.instanceID);
-			EJ_SetLootFilter(0, 0);
-			EJ_SetSlotFilter(0);
-			local str = indent .. "c(" .. group.instanceID .. "--[[" .. select(1, EJ_GetInstanceInfo()) .. "]], {\n";
-			for i,subgroup in ipairs(group.g) do
-				str = str .. ExportDataRecursively(subgroup, indent .. "\t");
-			end
-			return str .. indent .. "}),\n"
-		end
-		if group.difficultyID then
-			EJ_SetDifficulty(group.difficultyID);
-			EJ_SetLootFilter(0, 0);
-			EJ_SetSlotFilter(0);
-			local str = indent .. "d(" .. group.difficultyID .. "--[[" .. select(1, GetDifficultyInfo(group.difficultyID)) .. "]], {\n";
-			for i,subgroup in ipairs(group.g) do
-				str = str .. ExportDataRecursively(subgroup, indent .. "\t");
-			end
-			return str .. indent .. "}),\n"
-		end
-		if group.encounterID then
-			EJ_SelectEncounter(group.encounterID);
-			EJ_SetLootFilter(0, 0);
-			EJ_SetSlotFilter(0);
-			local str = indent .. "e(" .. group.encounterID .. "--[[" .. select(1, EJ_GetEncounterInfo(group.encounterID)) .. "]], {\n";
-			local numLoot = EJ_GetNumLoot();
-			for i = 1,numLoot do
-				local itemID = EJ_GetLootInfoByIndex(i);
-				str = str .. indent .. "\ti(" .. itemID .. "--[[" .. select(1, GetItemInfo(itemID)) .. "]]),\n";
-			end
-			return str .. indent .. "}),\n"
-		end
-	end
-	return "";
-end
-local function ExportData(group)
-	if group.instanceID then
-		EJ_SetLootFilter(0, 0);
-		EJ_SetSlotFilter(0);
-		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
-	end
-end
 
 -- Refresh Functions
 do
