@@ -22,7 +22,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 					if line then
 						local text = line:GetText();
 						if text then
-							if string.find(text, "Classes: ") then
+							if text:find("Classes: ") then
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,className in ipairs({strsplit(",", list)}) do
@@ -31,7 +31,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								if #classes > 0 then
 									t.info.classes = classes;
 								end
-							elseif string.find(text, "Races: ") then
+							elseif text:find("Races: ") then
 								local races = {};
 								local _,list = strsplit(":", text);
 								for i,raceName in ipairs({strsplit(",", list)}) do
@@ -40,15 +40,15 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								if #races > 0 then
 									t.info.races = races;
 								end
-							elseif string.find(text, "Requires") and not string.find(text, "Level") and not string.find(text, "Riding") then
+							elseif text:find("Requires") and not text:find("Level") and not text:find("Riding") then
 								local c = strsub(text, 1, 1);
 								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
 									text = strsub(strtrim(text), 9);
-									if string.find(text, "-") then
+									if text:find("-") then
 										local faction,replevel = strsplit("-", text);
 										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
 									else
-										if string.find(text, "%(") then
+										if text:find("%(") then
 											if t.info.requireSkill then
 												-- If non-specialization skill is already assigned, skip this part.
 												text = nil;

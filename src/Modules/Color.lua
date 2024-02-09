@@ -12,8 +12,8 @@ local L = app.L;
 -- Encapsulates the functionality for handling and interacting with colors in the addon, which are typically represented in Text
 
 -- Global locals
-local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, sfind, slen, sformat
-	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, string.find, string.len, string.format;
+local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, slen, sformat
+	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, string.len, string.format;
 
 -- Module locals
 local CS = CreateFrame("ColorSelect", nil, app.frame);
@@ -93,7 +93,7 @@ local function GetNumberWithZeros(number, desiredLength)
 	if desiredLength > 0 then
 		local str = tostring(number);
 		local length = slen(str);
-		local pos = sfind(str,"[.]");
+		local pos = str:find("[.]");
 		if not pos then
 			str = str .. ".";
 			for i=desiredLength,1,-1 do

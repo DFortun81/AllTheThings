@@ -1282,7 +1282,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 				if right and not contains(splitCount.variants, right) then
 					tinsert(splitCount.variants, right);
-					if string.find(right, BATTLE_PET_SOURCE_2) then
+					if right:find(BATTLE_PET_SOURCE_2) then
 						splitCount.count = splitCount.count + 1;
 					end
 				end
@@ -1290,20 +1290,20 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			for left,splitCount in pairs(splitCounts) do
 				if splitCount.count < 6 then
 					if #splitCount.variants == 0 then
-						tinsert(info, 1, { left = left, wrap = not string.find(left, " > ") });
+						tinsert(info, 1, { left = left, wrap = not left:find(" > ") });
 						count = count + 1;
 					else
 						for i,right in ipairs(splitCount.variants) do
-							tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
+							tinsert(info, 1, { left = left, right = right, wrap = not left:find(" > ") });
 							count = count + 1;
 						end
 					end
 				else
-					tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " > ") });
+					tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not left:find(" > ") });
 					count = count + 1;
 					for i,right in ipairs(splitCount.variants) do
-						if not string.find(right, BATTLE_PET_SOURCE_2) then
-							tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
+						if not right:find(ATTLE_PET_SOURCE_2) then
+							tinsert(info, 1, { left = left, right = right, wrap = not left:find(" > ") });
 							count = count + 1;
 						end
 					end

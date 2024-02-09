@@ -4991,7 +4991,7 @@ function app:Synchronize(automatically)
 		app.CurrentCharacter.lastPlayed = time();
 		local any, msg = false, "?\tsync\t" .. battleTag;
 		for playerName,allowed in pairs(AllTheThingsAD.LinkedAccounts) do
-			if allowed and not string.find(playerName, "#") then
+			if allowed and not playerName:find("#") then
 				C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", playerName);
 				any = true;
 			end
@@ -8509,7 +8509,7 @@ itemTooltipHarvesterFields.text = function(t)
 
 						if not isSubItem then
 							-- if debugPrint then print(text) end
-							if string.find(text, "Classes: ") then
+							if text:find("Classes: ") then
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,className in ipairs({strsplit(",", list)}) do
@@ -8518,7 +8518,7 @@ itemTooltipHarvesterFields.text = function(t)
 								if #classes > 0 then
 									t.info.classes = classes;
 								end
-							elseif string.find(text, "Races: ") then
+							elseif text:find("Races: ") then
 								local _,list = strsplit(":", text);
 								local raceNames = {strsplit(",", list)};
 								if raceNames then
@@ -8541,7 +8541,7 @@ itemTooltipHarvesterFields.text = function(t)
 								else
 									print("Empty Races",t.info.itemID)
 								end
-							elseif string.find(text, " Only") then
+							elseif text:find(" Only") then
 								local faction, _, c = strsplit(" ", text);
 								if not c then
 									faction = strtrim(faction);
@@ -8553,15 +8553,15 @@ itemTooltipHarvesterFields.text = function(t)
 										print("Unknown Faction",t.info.itemID,faction);
 									end
 								end
-							elseif string.find(text, "Requires") and not string.find(text, "Level") and not string.find(text, "Riding") then
+							elseif text:find("Requires") and not text:find("Level") and not text:find("Riding") then
 								local c = strsub(text, 1, 1);
 								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
 									text = strsub(strtrim(text), 9);
-									if string.find(text, "-") then
+									if text:find("-") then
 										local faction,replevel = strsplit("-", text);
 										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
 									else
-										if string.find(text, "%(") then
+										if text:find("%(") then
 											if t.info.requireSkill then
 												-- If non-specialization skill is already assigned, skip this part.
 												text = nil;
@@ -8571,16 +8571,16 @@ itemTooltipHarvesterFields.text = function(t)
 										end
 										if text then
 											local spellName = strtrim(text);
-											if string.find(spellName, "Outland ") then spellName = strsub(spellName, 9);
-											elseif string.find(spellName, "Northrend ") then spellName = strsub(spellName, 11);
-											elseif string.find(spellName, "Cataclysm ") then spellName = strsub(spellName, 11);
-											elseif string.find(spellName, "Pandaria ") then spellName = strsub(spellName, 10);
-											elseif string.find(spellName, "Draenor ") then spellName = strsub(spellName, 9);
-											elseif string.find(spellName, "Legion ") then spellName = strsub(spellName, 8);
-											elseif string.find(spellName, "Kul Tiran ") then spellName = strsub(spellName, 11);
-											elseif string.find(spellName, "Zandalari ") then spellName = strsub(spellName, 11);
-											elseif string.find(spellName, "Shadowlands ") then spellName = strsub(spellName, 13);
-											elseif string.find(spellName, "Classic ") then spellName = strsub(spellName, 9); end
+											if spellName:find("Outland ") then spellName = strsub(spellName, 9);
+											elseif spellName:find("Northrend ") then spellName = strsub(spellName, 11);
+											elseif spellName:find("Cataclysm ") then spellName = strsub(spellName, 11);
+											elseif spellName:find("Pandaria ") then spellName = strsub(spellName, 10);
+											elseif spellName:find("Draenor ") then spellName = strsub(spellName, 9);
+											elseif spellName:find("Legion ") then spellName = strsub(spellName, 8);
+											elseif spellName:find("Kul Tiran ") then spellName = strsub(spellName, 11);
+											elseif spellName:find("Zandalari ") then spellName = strsub(spellName, 11);
+											elseif spellName:find("Shadowlands ") then spellName = strsub(spellName, 13);
+											elseif spellName:find("Classic ") then spellName = strsub(spellName, 9); end
 											if spellName == "Herbalism" then spellName = "Herb Gathering"; end
 											spellName = strtrim(spellName);
 											local spellID = app.SpellNameToSpellID[spellName];
@@ -8663,9 +8663,9 @@ itemTooltipHarvesterFields.text = function(t)
 												-- Do nothing.
 											elseif spellName == "Open" then
 												-- Do nothing.
-											elseif string.find(spellName, " specialization") then
+											elseif spellName:find(" specialization") then
 												-- Do nothing.
-											elseif string.find(spellName, ": ") then
+											elseif spellName:find(": ") then
 												-- Do nothing.
 											else
 												print("Unknown Spell",t.info.itemID, text, "'" .. spellName .. "'");
@@ -10997,7 +10997,7 @@ local function SetRowData(self, row, data)
 			x = rowPad / 2;
 		end
 		local summary = GetProgressTextForRow(data) or "---";
-		-- local iconAdjust = summary and string.find(summary, "|T") and -1 or 0;
+		-- local iconAdjust = summary and summary:find("|T") and -1 or 0;
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			summary = GetSpecsString(specs, false, false) .. summary;
@@ -16067,7 +16067,7 @@ customWindowUpdates["Sync"] = function(self)
 										["OnUpdate"] = app.AlwaysShowUpdate,
 										['visible'] = true,
 									}));
-								elseif string.find("#", playerName) then
+								elseif playerName:find("#") then
 									-- Garbage click handler for unsync'd account data.
 									tinsert(data.g, {
 										['text'] = playerName,
