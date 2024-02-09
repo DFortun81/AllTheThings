@@ -502,7 +502,6 @@ root(ROOTS.NeverImplemented, {
 				i(175038),	-- Healthy Bear
 				i(177281),	-- Heavy Sorrowscale
 				i(178728),	-- High Winds
-				i(181342),	-- Hunt-Captain Korayn
 				i(175040),	-- Infused Bark
 				i(179652),	-- Infused Ruby
 				i(180743),	-- Jeweler's Journal

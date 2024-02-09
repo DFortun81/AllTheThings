@@ -29,6 +29,7 @@ i(37431);	-- Fetch Ball
 i(116984);	-- Frost Wyrm Egg
 i(44618);	-- Glass of Aged Dalaran Red
 i(179006);	-- Glowing Endmire Dust
+i(178175);	-- Gooey Sap
 i(18269);	-- Gordok Green Grog
 i(153188);	-- Greater Blessed Bandage
 i(19296);	-- Greater Darkmoon Prize
@@ -809,6 +810,7 @@ i(181361);	-- Court Gossip
 i(181344);	-- Droman Aliothe
 i(181454);	-- Duskmire Ruse
 i(181369);	-- Giant Lungcap
+i(181342);	-- Hunt-Captain Korayn
 i(181338);	-- Lady Moonberry
 i(182212);	-- Magical Curio
 i(180484);	-- Noko's Flute

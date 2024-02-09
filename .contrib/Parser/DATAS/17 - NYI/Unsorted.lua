@@ -2513,7 +2513,6 @@ root(ROOTS.Unsorted, {
 				i(179005),	-- Glinting Gold Fang
 				i(178517),	-- Gold Tooth
 				i(174746),	-- Golden Egg Shells
-				i(178175),	-- Gooey Sap
 				i(183963),	-- Gormlet
 				i(170053),	-- Grek'og's Tusk
 				i(172038),	-- Grim Iron Shackles
