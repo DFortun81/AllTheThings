@@ -985,15 +985,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- Call to the method to search the database.
 	local group = method(paramA, paramB);
-	if not group then
-		group = {};
-	elseif group.g then
-		group = group.g;
-	end
-
-	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
-	if paramA == "creatureID" or paramA == "encounterID" then
-		if group and #group > 0 then
+	if group then
+		-- Move all post processing here?
+		if paramA == "creatureID" or paramA == "encounterID" then
 			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (paramA == "encounterID" and EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
 			if difficultyID > 0 then
 				local subgroup = {};
@@ -1103,110 +1097,114 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end);
 			end
 			group = regroup;
-		end
-	elseif paramA == "titleID" then
-		-- Don't do anything
-		local regroup = {};
-		if app.MODE_ACCOUNT then
-			for i,j in ipairs(group) do
-				if app.RecursiveUnobtainableFilter(j) then
-					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-				end
-			end
-		else
-			for i,j in ipairs(group) do
-				if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) then
-					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-				end
-			end
-		end
-
-		group = regroup;
-	else
-		-- Determine if this is a search for an item
-		local itemID;
-		if not paramB then
-			local itemString = string.match(paramA, "item[%-?%d:]+");
-			if itemString then
-				local itemID2 = select(2, strsplit(":", itemString));
-				if itemID2 then
-					itemID = tonumber(itemID2);
-					paramA = "itemID";
-					paramB = itemID;
+		elseif paramA == "titleID" then
+			-- Don't do anything
+			local regroup = {};
+			if app.MODE_ACCOUNT then
+				for i,j in ipairs(group) do
+					if app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
 				end
 			else
-				local kind, id = strsplit(":", paramA);
-				kind = string.lower(kind);
-				if id then id = tonumber(id); end
-				if kind == "itemid" then
-					paramA = "itemID";
-					paramB = id;
-					itemID = id;
-				elseif kind == "questid" then
-					paramA = "questID";
-					paramB = id;
-				elseif kind == "creatureid" or kind == "npcid" then
-					paramA = "creatureID";
-					paramB = id;
+				for i,j in ipairs(group) do
+					if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
 				end
 			end
-		elseif paramA == "itemID" then
-			itemID = paramB;
+
+			group = regroup;
 		end
+	else
+		group = {};
+	end
 
-		if itemID then
-			-- Show the unobtainable source text
-			local u, e = 99999999;
-			app.Sort(group, app.SortDefaults.Accessibility);
-			for i,j in ipairs(group) do
-				if j.itemID == itemID then
-					mostAccessibleSource = j;
-					if j.u and u > j.u and (not j.crs or paramA == "itemID") then
-						u = j.u;
-					end
-					if j.e then
-						e = j.e;
-					end
-					break;
-				end
+	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
+	
+	-- Determine if this is a search for an item
+	local itemID;
+	if not paramB then
+		local itemString = string.match(paramA, "item[%-?%d:]+");
+		if itemString then
+			local itemID2 = select(2, strsplit(":", itemString));
+			if itemID2 then
+				itemID = tonumber(itemID2);
+				paramA = "itemID";
+				paramB = itemID;
 			end
-			if u < 99999999 then
-				local reason = L["UNOBTAINABLE_ITEM_REASONS"][u];
-				if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-					tinsert(info, { left = reason[2], wrap = true });
-				end
+		else
+			local kind, id = strsplit(":", paramA);
+			kind = string.lower(kind);
+			if id then id = tonumber(id); end
+			if kind == "itemid" then
+				paramA = "itemID";
+				paramB = id;
+				itemID = id;
+			elseif kind == "questid" then
+				paramA = "questID";
+				paramB = id;
+			elseif kind == "creatureid" or kind == "npcid" then
+				paramA = "creatureID";
+				paramB = id;
 			end
-			if e then
-				local reason = app.Modules.Events.GetEventTooltipNoteForGroup({ e = e });
-				if reason then
-					local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
-					if right then
-						tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
-					else
-						tinsert(info, { left = left, color = app.Colors.TooltipDescription });
-					end
-				end
-			end
-			local itemName, itemLink = GameTooltip:GetItem();
-			if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-			if app.Settings:GetTooltipSetting("itemLevel") then tinsert(info, { left = "Item Level", right = select(4, GetItemInfo(itemLink or itemID)) }); end
-			if app.Settings:GetTooltipSetting("itemString") and itemLink then tinsert(info, { left = "Item String", right = string.match(itemLink, "item[%-?%d:]+") }); end
-			app.ShowSoftReservesForItem(itemID, info);
+		end
+	elseif paramA == "itemID" then
+		itemID = paramB;
+	end
 
-			local reagentCache = app.GetDataSubMember("Reagents", itemID);
-			if reagentCache then
-				for spellID,count in pairs(reagentCache[1]) do
-					MergeClone(recipes, { ["spellID"] = spellID, ["collectible"] = false, ["count"] = count });
+	if itemID then
+		-- Show the unobtainable source text
+		local u, e = 99999999;
+		app.Sort(group, app.SortDefaults.Accessibility);
+		for i,j in ipairs(group) do
+			if j.itemID == itemID then
+				mostAccessibleSource = j;
+				if j.u and u > j.u and (not j.crs or paramA == "itemID") then
+					u = j.u;
 				end
-				for craftedItemID,count in pairs(reagentCache[2]) do
-					MergeClone(crafted, { ["itemID"] = craftedItemID, ["count"] = count });
-					local searchResults = SearchForField("itemID", craftedItemID);
-					if #searchResults > 0 then
-						for i,o in ipairs(searchResults) do
-							if not o.itemID and o.cost then
-								-- Reagent for something that crafts a thing required for something else.
-								MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CloneClassInstance(o) } });
-							end
+				if j.e then
+					e = j.e;
+				end
+				break;
+			end
+		end
+		if u < 99999999 then
+			local reason = L["UNOBTAINABLE_ITEM_REASONS"][u];
+			if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
+				tinsert(info, { left = reason[2], wrap = true });
+			end
+		end
+		if e then
+			local reason = app.Modules.Events.GetEventTooltipNoteForGroup({ e = e });
+			if reason then
+				local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
+				if right then
+					tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
+				else
+					tinsert(info, { left = left, color = app.Colors.TooltipDescription });
+				end
+			end
+		end
+		local itemName, itemLink = GameTooltip:GetItem();
+		if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
+		if app.Settings:GetTooltipSetting("itemLevel") then tinsert(info, { left = "Item Level", right = select(4, GetItemInfo(itemLink or itemID)) }); end
+		if app.Settings:GetTooltipSetting("itemString") and itemLink then tinsert(info, { left = "Item String", right = string.match(itemLink, "item[%-?%d:]+") }); end
+		app.ShowSoftReservesForItem(itemID, info);
+
+		local reagentCache = app.GetDataSubMember("Reagents", itemID);
+		if reagentCache then
+			for spellID,count in pairs(reagentCache[1]) do
+				MergeClone(recipes, { ["spellID"] = spellID, ["collectible"] = false, ["count"] = count });
+			end
+			for craftedItemID,count in pairs(reagentCache[2]) do
+				MergeClone(crafted, { ["itemID"] = craftedItemID, ["count"] = count });
+				local searchResults = SearchForField("itemID", craftedItemID);
+				if #searchResults > 0 then
+					for i,o in ipairs(searchResults) do
+						if not o.itemID and o.cost then
+							-- Reagent for something that crafts a thing required for something else.
+							MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CloneClassInstance(o) } });
 						end
 					end
 				end
