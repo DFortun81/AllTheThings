@@ -55,6 +55,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 									["provider"] = { "n", 157710 },	-- Cortinarius
 									["coord"] = { 33.2, 36.3, ARDENWEALD },
+									["g"] = {
+										i(172084),	-- Fungal Beacon (QI!)
+									},
 								}),
 								q(57454, {	-- Silence in the Stalks
 									["sourceQuests"] = { 63073 },	-- A Mycelial Network

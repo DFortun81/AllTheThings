@@ -140,6 +140,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 168519 },	-- Sika
 				["coord"] = { 33.6, 44.7, ARCHONS_RISE },
 				["g"] = {
+					i(179327),	-- Coin of Brokerage (QI!)
 					i(181372),	-- Tribute of the Ascended
 				},
 			}),

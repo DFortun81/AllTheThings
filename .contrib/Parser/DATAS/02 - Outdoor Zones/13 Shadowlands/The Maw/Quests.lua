@@ -471,6 +471,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60622, {	-- Eye of the Scryer
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
+				["g"] = {
+					i(180035),	-- Eye of the Scryer (QI!)
+				},
 			}),
 			q(62214, {	-- Forces of Perdition
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious

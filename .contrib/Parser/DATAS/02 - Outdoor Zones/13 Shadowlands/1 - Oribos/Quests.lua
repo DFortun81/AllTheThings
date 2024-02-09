@@ -767,6 +767,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["g"] = {
+					i(178570),	-- Fading Memory Glass (QI!)
+				},
 			}),
 			q(60255, {	-- A Valuable Find: The Other Side
 				["sourceQuests"] = { 60274 },	-- Trading Favors
@@ -827,6 +830,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["g"] = {
+					i(178580),	-- Champion's Coin (QI!)
+				},
 			}),
 			q(60246, {	-- Trading Favors: Tirna Scithe
 				["sourceQuests"] = { 60274 },	-- Trading Favors

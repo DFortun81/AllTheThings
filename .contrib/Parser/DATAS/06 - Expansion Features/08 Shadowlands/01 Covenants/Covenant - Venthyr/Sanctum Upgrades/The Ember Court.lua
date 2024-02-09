@@ -638,7 +638,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							})),
 						}),
 						n(QUESTS, sharedData({["isWeekly"] = true},{
-							q(61524),	-- The Ember Court
+							q(61524, {	-- The Ember Court
+								["g"] = {
+									i(179958),	-- Ember Court Guest List (QI!)
+								},
+							}),
 							q(62628, {	-- Vole's Voucher
 								["provider"] = {"i",181761},	-- The Grandmaster's Voucher
 							}),
@@ -926,6 +930,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(181533, {	-- Stock: Anima Samples (EC!)
 											["questID"] = 61499,
 										}),
+										i(182360),	-- Fresh Ardenweald Anima (QI!)
+										i(182358),	-- Fresh Bastion Anima (QI!)
+										i(182359),	-- Fresh Maldraxxus Anima (QI!)
+										i(182361),	-- Fresh Revendreth Anima (QI!)
 									},
 								}),
 								q(61900, {	-- Comfy Chairs
@@ -998,6 +1006,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 27.9, 43.1, REVENDRETH },
+									["g"] = {
+										i(179958),	-- Ember Court Guest List (QI!)
+									},
 								}),
 								q(61738, {	-- Ember Court: Lost Chalice Band
 								--	TODO: might just require 'honored' rep???
@@ -1081,6 +1092,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(176126, {	-- Contract: Traditional Theme (EC!)
 											["questID"] = 59473,
 										}),
+										i(181473),	-- Candle Wax Chunk (QI!)
 									},
 								}),
 								q(61404, {	-- Ember Court: Tubbins's Tea Party
@@ -1578,6 +1590,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(181536, {	-- Guest List Page (EC!)
 											["questID"] = 61504,
 										}),
+										i(179958),	-- Ember Court Guest List (QI!)
 									},
 								}),
 								q(61526, {	-- The Ember Court (Week 2 / 3)
@@ -1585,16 +1598,25 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API
 									["coord"] = { 28.0, 43.1, REVENDRETH },
+									["g"] = {
+										i(179958),	-- Ember Court Guest List (QI!)
+									},
 								}),
 								q(61525, {	-- The Ember Court (maybe this is the longer version that unlocks upon hitting Friendly?  maybe?)
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API
 									["coord"] = { 28.0, 43.1, REVENDRETH },
+									["g"] = {
+										i(179958),	-- Ember Court Guest List (QI!)
+									},
 								}),
 								q(60339, {	-- The Ember Court (Honored)
 									["provider"] = { "n", 164966 },	-- Temel
 									["isDaily"] = true,	-- according to the API
 									["coord"] = { 28.0, 43.1, REVENDRETH },
+									["g"] = {
+										i(179958),	-- Ember Court Guest List (QI!)
+									},
 								}),
 								q(61896, {	-- Undercover Security
 									["minReputation"] = { 2445, REVERED },

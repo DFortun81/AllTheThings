@@ -50,12 +50,22 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 166383,	-- Commander Gregor
 				["sourceQuest"] = 60117,	-- Return of the Crusade (A)
 				["lvl"] = { 50 },
+				["g"] = {
+					i(177958),	-- Duskwood Report (QI!)
+					i(177960),	-- Elwynn Report (QI!)
+					i(177959),	-- Redridge Report (QI!)
+				},
 			}),
 			q(60725, {	-- Field Reports (H)
 				["coord"] = { 52.9, 77.3, ORGRIMMAR },
 				["qg"] = 169878,	-- Commander Throgg
 				["sourceQuest"] = 60670,	-- Return of the Crusade (H)
 				["lvl"] = { 50 },
+				["g"] = {
+					i(180232),	-- Dranosh'ar Blockade Report (QI!)
+					i(180233),	-- Far Watch Post Report (QI!)
+					i(180231),	-- Razor Hill Report (QI!)
+				},
 			}),
 			q(60766, {	-- Damned Intruders (A)
 				["coord"] = { 73.50, 47.20, DUSKWOOD },
@@ -122,12 +132,18 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 59877,	-- A Message from Icecrown (A)
 				["lvl"] = { 50 },
+				["g"] = {
+					i(183797),	-- Crusader's Dressing (A) (QI!)
+				},
 			}),
 			q(60004, {	-- A Valiant Effort (H)
 				["coord"] = { 71.0, 22.0, ICECROWN },
 				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 60727,	-- A Message from Icecrown (H)
 				["lvl"] = { 50 },
+				["g"] = {
+					i(183689),	-- Crusader's Dressing (H) (QI!)
+				},
 			}),
 			q(62157, {	-- Scouting from a Safe Distance
 				["coord"] = { 71.0, 22.0, ICECROWN },
@@ -244,6 +260,10 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60828,	-- A New Foothold
 				["lvl"] = { 50 },
+				["g"] = {
+					i(181253),	-- Collaborator's Hood (QI!)
+					i(181254),	-- Collaborator's Robe (QI!)
+				},
 			}),
 			q(62185, {	-- Fighting for Attention
 				["coord"] = { 44.9, 44.7, ICECROWN },
@@ -296,6 +316,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 173997,	-- Darkrider Arly
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
+				["g"] = {
+					i(183442),	-- Experimental Fluid (QI!)
+				},
 			}),
 			q(62295, {	-- Cleaning Out the Vault
 				["coord"] = { 42.8, 29.9, ICECROWN },

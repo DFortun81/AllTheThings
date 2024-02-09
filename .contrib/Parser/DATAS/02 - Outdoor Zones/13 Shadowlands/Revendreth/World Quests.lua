@@ -72,7 +72,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(181947),	-- Skewered Meats (QI!)
 				},
 			}),
-			q(60532),	-- Destroy the Dominant
+			q(60532, {	-- Destroy the Dominant
+				["g"] = {
+					i(174110),	-- Disassembly Flag (QI!)
+				},
+			}),
 			q(57443),	-- Dirty Job: Demolition Detail
 			q(57465),	-- Dirty Job: Wood Work
 			q(61630, {	-- Enchanting: Everburning Brand

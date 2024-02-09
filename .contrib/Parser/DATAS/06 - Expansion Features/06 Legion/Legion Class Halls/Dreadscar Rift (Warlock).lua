@@ -125,6 +125,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
 								{ 37.7, 31.8, DREADSCAR_RIFT },
 							},
+							["g"] = {
+								i(173527),	-- Duskwood Scroll (QI!)
+							},
 						}),
 						q(40588, {	-- Following the Curse
 							["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
@@ -229,6 +232,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["coords"] = {
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
 								{ 37.7, 31.8, DREADSCAR_RIFT },
+							},
+							["g"] = {
+								i(139035),	-- Book of Medivh (QI!)
+								i(173526),	-- Caer Darrow Scroll (QI!)
 							},
 						}),
 						q(43153, {	-- An Eye for a Scepter

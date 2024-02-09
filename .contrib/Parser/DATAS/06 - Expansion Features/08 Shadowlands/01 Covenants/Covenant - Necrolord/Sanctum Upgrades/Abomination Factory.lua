@@ -745,6 +745,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["sourceQuests"] = { 58668 },	-- Find The Way
 										["provider"] = { "n", 162227 },	-- Rathan
 										["coord"] = { 24.2, 38.8, MALDRAXXUS },
+										["g"] = {
+											i(174526),	-- Clotting Patches (QI!)
+											i(174534),	-- Razorthread Spool (QI!)
+											i(174524),	-- Skewering Needle (QI!)
+										},
 									}),
 									q(60042, {	-- May I Take Your Order?
 										["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -772,6 +777,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["provider"] = { "n", 161285 },	-- Emeni
 										["coord"] = { 24.1, 38.7, MALDRAXXUS },
 										["g"] = {
+											i(174520),	-- Emeni's Magnificent Skin (QI!)
 											i(181456),	-- Faldo's Key (QI!)
 										},
 									}),

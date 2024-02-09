@@ -199,6 +199,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 57887 },	-- Killing the Messenger
 				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
+				["g"] = {
+					i(173286),	-- Duskmire Mushroom (QI!)
+				},
 			}),
 			q(62918, {	-- Binding Power
 				["sourceQuests"] = { 62915 },	-- Home Improvement
@@ -266,6 +269,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				},
 				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
+				["g"] = {
+					i(174098),	-- Death Lotus Powder (QI!)
+					i(174100),	-- Stonebreaker Mallet (QI!)
+				},
 			}),
 			q(58392, {	-- Death's End Destruction
 				["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
@@ -495,6 +502,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 				["g"] = {
 					i(180945),	-- Crypt Gargon (MOUNT!)
+					i(174179),	-- Death Lotus Powder (QI!)
+					i(174111),	-- Medallion of Avarice (QI!)
 				},
 			}),
 			q(57891, {	-- Mix, Mingle, and Meddle

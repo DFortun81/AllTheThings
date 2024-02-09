@@ -149,6 +149,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 					["coord"] = { 43.6, 52.4, ARDENWEALD },
 					["g"] = {
+						i(179327),	-- Coin of Brokerage (QI!)
 						i(181475),	-- Bounty of the Grove Wardens
 					},
 				}),

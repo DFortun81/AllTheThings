@@ -414,6 +414,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
+					["g"] = {
+						i(183188),	-- Chromie's Scroll (H) (QI!)
+					},
 				}),
 				q(25160, {	-- A Present for Lila
 					["qg"] = 50482,	-- Marith Lazuria

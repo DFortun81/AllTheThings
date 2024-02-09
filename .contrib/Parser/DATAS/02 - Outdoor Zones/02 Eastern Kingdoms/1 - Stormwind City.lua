@@ -386,6 +386,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
+					["g"] = {
+						i(183185),	-- Chromie's Scroll (A) (QI!)
+					},
 				}),
 				q(47202, {	-- A Personal Message
 					["qg"] = 119357,	-- Anduin Wrynn

@@ -152,6 +152,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 								{ 72.8, 46.8, LEGION_DALARAN },
 								{ 58.2, 60.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 							},
+							["g"] = {
+								i(173527),	-- Duskwood Scroll (QI!)
+							},
 						}),
 						q(40931, {	-- Following the Curse
 							["sourceQuest"] = 40930,	-- Apocalypse

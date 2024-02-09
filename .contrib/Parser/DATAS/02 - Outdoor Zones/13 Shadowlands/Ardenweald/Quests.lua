@@ -126,6 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 159639 },	-- Choofa
 					["coord"] = { 67.1, 32.1, ARDENWEALD },
 					["g"] = {
+						i(173292),	-- Dreamcatcher Anima (QI!)
 						i(175659),	-- Dreamthorn Handguards
 						i(175657),	-- Grove Warden's Gauntlets
 						i(175658),	-- Spirit Tender's Handwraps
@@ -229,6 +230,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, ARDENWEALD },
+					["g"] = {
+						i(180061),	-- Fae Weapon (QI!)
+					},
 				}),
 				q(60628, {	-- The Missing Hunters
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
@@ -437,6 +441,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58593 },	-- End of the Dream
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
 					["coord"] = { 60.0, 53.9, ARDENWEALD },
+					["g"] = {
+						i(174864),	-- Droman's Hunting Horn (QI!)
+					},
 				}),
 				q(58714, {	-- The Forest Has Eyes
 					["sourceQuests"] = { 58593 },	-- End of the Dream
@@ -536,17 +543,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57952 },	-- In Need of Gorm Gris
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, ARDENWEALD },
+					["g"] = {
+						i(172953),	-- Depleted Wildseed (QI!)
+					},
 				}),
 				q(57824, {	-- Collection Day
 					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, ARDENWEALD },
+					["g"] = {
+						i(173268),	-- Fresh Gorm Gris (QI!)
+						i(172955),	-- Gormherd Branch (QI!)
+					},
 				}),
 				q(57825, {	-- Delivery for Guardian Kota
 					["sourceQuests"] = { 57824 },	-- Collection Day
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, ARDENWEALD },
 					["g"] = {
+						i(173268),	-- Fresh Gorm Gris (QI!)
 						i(175741),	-- Gormgris Gorget
 					},
 				}),
@@ -624,6 +639,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 158489 },	-- Fluttercatch
 					["coord"] = { 48.0, 24.3, ARDENWEALD },
+					["g"] = {
+						i(172512),	-- Culexwood Branch (QI!)
+						i(172517),	-- Enchanted Pipes (QI!)
+					},
 				}),
 				q(57657, {	-- Tied Totem Toter
 					["sourceQuests"] = { 57656 },	-- Gifts of the Forest
@@ -654,6 +673,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 159427 },	-- Elder Finnan
 					["coord"] = { 55.8, 23.4, ARDENWEALD },
+					["g"] = {
+						i(173150),	-- Finnan's Lucky Mallet (QI!)
+					},
 				}),
 				q(57869, {	-- Spirit-Gathering Labor
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
@@ -664,6 +686,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 160045 },	-- Helpful Faerie
 					["coord"] = { 53.8, 27.5, ARDENWEALD },
+					["g"] = {
+						i(177163),	-- Enchanted Soulweb (QI!)
+						i(177161),	-- Faerie Harp (QI!)
+						i(177162),	-- Ordinary Basket (QI!)
+					},
 				}),
 				q(57870, {	-- The Games We Play
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
@@ -707,6 +734,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 70.3, 32.5, ARDENWEALD },
+					["g"] = {
+						i(173800),	-- Featureless Mask (QI!)
+					},
 				}),
 				q(59802, {	-- The Crumbling Village
 					["sourceQuests"] = {

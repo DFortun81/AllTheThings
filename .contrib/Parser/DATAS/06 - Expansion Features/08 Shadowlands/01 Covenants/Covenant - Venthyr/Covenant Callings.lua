@@ -144,6 +144,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["provider"] = { "n", 158713 },	-- The Curator
 					["coord"] = { 61.3, 66.7, SINFALL_DEPTHS },
 					["g"] = {
+						i(179327),	-- Coin of Brokerage (QI!)
 						i(181556),	-- Tribute of the Court
 					},
 				}),

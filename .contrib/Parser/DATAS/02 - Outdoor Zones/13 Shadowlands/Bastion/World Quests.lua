@@ -37,7 +37,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62235, {	-- Allay Their Fears
 				i(183045),	-- Korinna's Allaying Crook
 			}),
-			q(59601),	-- Assault on the Vestibule
+			q(59601, {	-- Assault on the Vestibule
+				["g"] = {
+					i(176805),	-- Centurion Armor Fragment (QI!)
+					i(172451),	-- Weak Anima Mote (QI!)
+					i(176806),	-- Drained Anima-Core (QI!)
+				},
+			}),
 			q(62451),	-- Assault on the Vestibule
 			q(60565),	-- A Steward for Every Occasion
 			q(61564, {	-- Blacksmithing: Polished Kyrian Shield
@@ -167,7 +173,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61468, {	-- Skinning: Plush Copperfur Pelts
 				["requireSkill"] = SKINNING,
 			}),
-			q(62258),	-- Soaring Over Bastion
+			q(62258, {	-- Soaring Over Bastion
+				["g"] = {
+					i(183140),	-- Cloudstrider Antler (QI!)
+				},
+			}),
 			q(61469, {	-- Tailoring: Woven Gossamer Tunic
 				["requireSkill"] = TAILORING,
 				["g"] = {
@@ -195,6 +205,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(59705, {	-- Things Remembered
 				["sym"] = {{"select","achievementID",14737}},	-- What Bastion Remembered
+				["g"] = {
+					i(177186),	-- Forgotten Memorandum (QI!)
+				},
 			}),
 			q(62241),	-- Training Regimen
 			q(59680),	-- Vesiphone's Vicious Vesper

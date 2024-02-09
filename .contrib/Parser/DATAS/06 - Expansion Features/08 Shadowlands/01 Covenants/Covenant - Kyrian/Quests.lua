@@ -242,6 +242,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 61877 },	-- Return to the Hold
 				["provider"] = { "n", 173313 },	-- Xandria
 				["coord"] = { 38.9, 59.8, ARCHONS_RISE },
+				["g"] = {
+					i(182341),	-- Fleshshaper's Heart (QI!)
+				},
 			}),
 			q(57897, {	-- Dangerous to Go Alone
 				["sourceQuests"] = { 62794 },	-- Enhancing the Hold
@@ -318,6 +321,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				},
 				["coord"] = { 50.5, 68.9, ARDENWEALD },
 				["g"] = {
+					i(174938),	-- Devourer Essence (QI!)
 					i(179941),	-- Selfless Forgelite's Boots
 					i(178155),	-- Selfless Watcher's Warboots
 					i(174291),	-- Selfless Collector's Warboots
@@ -393,6 +397,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 				["provider"] = { "n", 165011 },	-- Pelagos
 				["coord"] = { 50.6, 52.1, REVENDRETH },
+				["g"] = {
+					i(174336),	-- Crimson Cravat (QI!)
+					i(176052),	-- Iron Skull Belt Buckle (QI!)
+					i(176055),	-- Lace-Up Bracers (QI!)
+					i(176053),	-- Pleated Cape (QI!)
+					i(176054),	-- Thigh High Boots (QI!)
+				},
 			}),
 			q(61779, {	-- Grave Intent
 				["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
@@ -769,6 +780,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 61782 },	-- Pursuit of Justice
 				["provider"] = { "n", 173193 },	-- Xandria
 				["coord"] = { 31.0, 29.1, MALDRAXXUS },
+				["g"] = {
+					i(182334),	-- Fleshshaper's Heart (QI!)
+				},
 			}),
 			q(58939, {	-- The Blue Seed
 				["sourceQuests"] = {
@@ -859,6 +873,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 55.2, 34.7, REVENDRETH },
 				["g"] = {
+					i(174382),	-- Death Lotus Powder (QI!)
+					i(174454),	-- The Countess's Sinstone (QI!)
 					i(181286),	-- Halo of the Selfless
 				},
 			}),

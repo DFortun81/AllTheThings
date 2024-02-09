@@ -127,6 +127,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
+							["g"] = {
+								i(173530),	-- Duskwood Scroll (QI!)
+								i(137678),	-- Fel Cipher (QI!)
+							},
 						}),
 						q(42503, {	-- Codebreaker
 							["sourceQuests"] = {
@@ -138,6 +142,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						q(42539, {	-- Cloak and Dagger
 							["sourceQuest"] = 42503,	-- Codebreaker
 							["maps"] = { DUSKWOOD },
+							["g"] = {
+								i(138113),	-- Blood of the Innocent (QI!)
+								i(173527),	-- Duskwood Scroll (QI!)
+								i(138112),	-- Skull of the Innocent (QI!)
+							},
 						}),
 						q(42568, {	-- Preparation
 							["sourceQuest"] = 42539,	-- Cloak and Dagger

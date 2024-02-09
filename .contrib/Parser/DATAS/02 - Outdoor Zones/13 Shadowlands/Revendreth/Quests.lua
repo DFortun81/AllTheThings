@@ -454,6 +454,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
 					["g"] = {
+						i(179981),	-- Chipped Sinstone (QI!)
+						i(179980),	-- Cracked Sinstone (QI!)
+						i(179979),	-- Worn Sinstone (QI!)
 						i(178071),	-- Amice of Pained Absolution
 						i(178067),	-- Mitts of Pained Absolution
 						i(178065),	-- Nightcloaked Mitts
@@ -785,16 +788,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
+						i(182314),	-- Endmire Vineroot (QI!)
 						i(182590),	-- Vinewormed Coin Pouch
-					}
+					},
 				}),
 				q(61840, {	-- Vineroot on the Menu
 					["sourceQuests"] = { 61839 },	-- Nipping at the Undergrowth
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
+						i(182314),	-- Endmire Vineroot (QI!)
 						i(182591),	-- Vinecovered Infused Rubies
-					}
+					},
 				}),
 				q(61842, {	-- Vineroot Will Not Do
 					["sourceQuests"] = { 61840 },	-- Vineroot on the Menu
@@ -895,6 +900,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 				["provider"] = { "n", 168698 },	-- Chiselgrump
 				["coord"] = { 69.5, 53.3, REVENDRETH },
+				["g"] = {
+					i(179002),	-- Dredger Chisel (QI!)
+				},
 			}),
 			q(61432, {	-- Lost Journals
 				["provider"] = { "i", 180834 },	-- Renathal's Journal Pages

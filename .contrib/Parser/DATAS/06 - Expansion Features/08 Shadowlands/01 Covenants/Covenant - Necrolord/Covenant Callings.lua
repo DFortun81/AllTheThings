@@ -145,6 +145,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					--["provider"] = { "n",  },	--
 					--["coord"] = { , MALDRAXXUS },
 					["g"] = {
+						i(179327),	-- Coin of Brokerage (QI!)
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),

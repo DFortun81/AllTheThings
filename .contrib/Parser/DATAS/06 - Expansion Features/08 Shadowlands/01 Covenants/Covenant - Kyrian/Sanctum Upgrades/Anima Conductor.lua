@@ -79,10 +79,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								q(61193, {	-- A Light Touch
 									["provider"] = { "n", 171671 },    -- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
+									["g"] = {
+										i(180897),	-- Firstborne's Light (QI!)
+									},
 								}),
 								q(61209, {	-- A Somber Melody
 									["provider"] = { "n", 171677 },    -- Forgelite Selene
 									["coord"] = { 50.2, 21.3, BASTION },
+									["g"] = {
+										i(180990),	-- Eonian Lyre (QI!)
+									},
 								}),
 								q(61199, {	-- Arms Day
 									["provider"] = { "n", 171671 },    -- Kofi
@@ -106,6 +112,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								q(61159, {	-- Signs of Demise
 									["provider"] = { "n", 171676 },    -- Galakamos
 									["coord"] = { 50.4, 21.2, BASTION },
+									["g"] = {
+										i(180816),	-- Forsworn Insignia (QI!)
+									},
 								}),
 								q(61157, {	-- Straight to the Point
 									["provider"] = { "n", 171676 },    -- Galakamos

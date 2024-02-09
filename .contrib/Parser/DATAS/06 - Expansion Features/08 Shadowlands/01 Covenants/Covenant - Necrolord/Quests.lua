@@ -380,6 +380,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61745 },	-- Mistress of Tomes
 				["provider"] = { "n", 172924 },	-- Baroness Ninadar
 				["coord"] = { 66.3, 26.3, MALDRAXXUS },
+				["g"] = {
+					i(182615),	-- Errant Tome (QI!)
+					i(182616),	-- Mischievous Quill (QI!)
+				},
 			}),
 			q(61753, {	-- Explosive Schemes
 				["sourceQuests"] = { 61752 },	-- The Final Reagent

@@ -186,6 +186,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								}),
 								q(61950, {	-- Hunting the Wilds
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["g"] = {
+										i(182387),	-- Feral Anima (QI!)
+									},
 								}),
 								q(61968, {	-- Just Wing It
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
@@ -205,11 +208,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							})),
 							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 								q(62068, {	-- Gormling Piper: Crumbled Ridge
-									i(182611),	-- Fae Flute
+									i(182611),	-- Fae Flute (QI!)
 								}),
 								q(61394),	-- Gormling Piper: Tranquil Pools
 								q(61717, {	-- Gormling Piper: Tranquil Pools
-									i(182189),	-- Fae Flute
+									i(182189),	-- Fae Flute (QI!)
 								}),
 								q(62051, {	-- Gormling Toss: Spirit Glen
 									i(184487),	-- Gormling in a Bag (TOY!)

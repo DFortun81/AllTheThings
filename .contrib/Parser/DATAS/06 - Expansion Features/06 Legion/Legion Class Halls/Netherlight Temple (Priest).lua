@@ -145,6 +145,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							{ "n", 102333 },	-- Hooded Priestess (Alliance)
 						},
 						["maps"] = { LEGION_DALARAN },
+						["g"] = {
+							i(173373),	-- Faol's Hearthstone (QI!)
+						},
 					}),
 					-- Artifact
 					q(40706, {	-- A Legend You Can Hold

@@ -74,6 +74,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.5, 82.7, BASTION },
+					["g"] = {
+						i(177954),	-- Condensed Anima Mote (QI!)
+					},
 				}),
 				q(57263, {	-- The Cycle of Anima: Etherwyrms
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
@@ -292,12 +295,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "o", 344726  },	-- Dark Sermon
 					["coord"] = { 57.2, 71.8, BASTION },
 					["altQuests"] = { 60292 },	-- Dangerous Discourse
+					["g"] = {
+						i(171215),	-- Dark Sermon (QI!)
+					},
 				}),
 				q(60292, {	-- Dangerous Discourse
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 61.2, 74.3, BASTION },
 					["altQuests"] = { 57719 },	-- Dangerous Discourse
+					["g"] = {
+						i(171215),	-- Dark Sermon (QI!)
+					},
 				}),
 				q(59147, {	-- The Hand of Purification
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
@@ -622,6 +631,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
+					["g"] = {
+						i(175967),	-- Etherwyrm Filament (QI!)
+					},
 				}),
 				q(59311, {	-- How to Catch a Glimmerfly
 					["sourceQuests"] = {
@@ -655,6 +667,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, BASTION },
+					["g"] = {
+						i(172039),	-- Comfy Comfort Pillow (QI!)
+						i(172036),	-- Kala's Slobber Ball (QI!)
+						i(172037),	-- Mister Mikanikos (QI!)
+					},
 				}),
 				q(57538, {	-- Disturbing the Peace
 					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
@@ -685,6 +702,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(57860, {	-- How to Become Forsworn
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 36.6, 37.6, BASTION },
+					["g"] = {
+						i(175277),	-- Forsworn Uniform Piece (QI!)
+						i(173029),	-- Quartermaster's Insignia (QI!)
+					},
 				}),
 				q(59207, {	-- Unshackled Knowledge
 					["provider"] = { "n", 159248 },	-- Haetio
@@ -763,6 +784,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58037 },	-- Part of the Pride
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
+					["g"] = {
+						i(173690),	-- Cloudstrider Antler (QI!)
+					},
 				}),
 				q(58039, {	-- Larion at Large
 					["sourceQuests"] = { 58037 },	-- Part of the Pride
@@ -784,6 +808,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
+					["g"] = {
+						i(173702),	-- Cloudfeather Essence (QI!)
+					},
 				}),
 				q(58042, {	-- On Larion Wings
 					["sourceQuests"] = {
@@ -895,6 +922,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "n", 160598 },	-- Klystere
 				["coord"] = { 47.8, 73.2, BASTION },
+				["g"] = {
+					i(178885),	-- Cloudstrider Pelt (QI!)
+					i(178891),	-- Elysian Thread (QI!)
+					i(178890),	-- Larion Plume (QI!)
+				},
 			}),
 			q(62714, {	-- A Gift for An Acolyte
 				["sourceQuests"] = { 60466 },	-- The Old Ways
@@ -970,6 +1002,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "o", 352027 },	-- Wanted Scroll
 				["coord"] = { 53.2, 46.4, BASTION },
 				["g"] = {
+					i(178791),	-- Carved Cloudfeather Call (QI!)
+					i(178790),	-- Umbral Plume (QI!)
 					i(175762),	-- Larion Tamer's Cloak
 				},
 			}),

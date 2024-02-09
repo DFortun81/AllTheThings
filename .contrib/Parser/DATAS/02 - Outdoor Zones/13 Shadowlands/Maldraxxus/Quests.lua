@@ -114,6 +114,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58616 },	-- Forging a Champion
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 					["coord"] = { 36.2, 71.0, MALDRAXXUS },
+					["g"] = {
+						i(174499),	-- Empowered Bones (QI!)
+					},
 				}),
 				q(58726, {	-- Thick Skin
 					["sourceQuests"] = { 58616 },	-- Forging a Champion
@@ -199,6 +202,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59172 },	-- War is Deception
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, MALDRAXXUS },
+					["g"] = {
+						i(175409),	-- Fractured Anima Crystal (QI!)
+					},
 				}),
 				q(59188, {	-- Vaunted Vengeance
 					["sourceQuests"] = { 59172 },	-- War is Deception
@@ -409,6 +415,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 58.3, 71.6, MALDRAXXUS },
+					["g"] = {
+						i(175410),	-- Dreadshade Extract (QI!)
+					},
 				}),
 				q(60831, {	-- Fit For a Margrave
 					["sourceQuests"] = { 59223 },	-- By Any Other Name
@@ -768,6 +777,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 157168 },	-- Stubborn Animate
 				["coord"] = { 27.1, 51.7, MALDRAXXUS },
 				["_drop"] = { "isDaily" },
+				["g"] = {
+					i(171205),	-- Foe Cleaver (QI!)
+					i(171206),	-- Forgotten Weapon (QI!)
+				},
 			}),
 			q(57278, {	-- Bring Me Their Heads
 				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",

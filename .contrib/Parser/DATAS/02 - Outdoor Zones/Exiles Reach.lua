@@ -350,12 +350,18 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156626 },	-- Captain Garrick
 					["coord"] = { 61.8, 82.8, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(170549),	-- First Aid Kit (QI!)
+					},
 				}),
 				q(59929, {	-- Murloc Mania [H]
 					["sourceQuests"] = { 59928 },	-- Brace for Impact [H]
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["coord"] = { 61.8, 82.8, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(170549),	-- First Aid Kit (QI!)
+					},
 				}),
 				q(54951, {	-- Emergency First Aid [A]
 					["sourceQuests"] = { 55122 },	-- Murloc Mania [A]
@@ -386,12 +392,20 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156651 },	-- Captain Garrick
 					["coord"] = { 58.3, 74.6, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(174074),	-- Cooked Meat (QI!)
+						i(174072),	-- Raw Meat (QI!)
+					},
 				}),
 				q(59932, {	-- Cooking Meat [H]
 					["sourceQuests"] = { 59931 },	-- Finding the Lost Expedition [H]
 					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 					["coord"] = { 58.3, 74.6, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(174074),	-- Cooked Meat (QI!)
+						i(174072),	-- Raw Meat (QI!)
+					},
 				}),
 				q(59254, {	-- Enhanced Combat Tactics [A]
 					["sourceQuests"] = { 55174 },	-- Cooking Meat [A]
@@ -417,6 +431,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 58.3, 74.4, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["g"] = {
+						i(167206),	-- Fire Essence (QI!)
+					},
 				}),
 				q(59935, {	-- Northbound [H]
 					["sourceQuests"] = {
@@ -428,6 +445,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 58.3, 74.4, EXILES_REACH },
 					["races"] = HORDE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["g"] = {
+						i(167206),	-- Fire Essence (QI!)
+					},
 				}),
 				q(55186, {	-- Down with the Quilboar [A]
 					["sourceQuests"] = {
@@ -606,12 +626,18 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156859 },	-- Henry Garrick
 					["coord"] = { 56.8, 46.1, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(168410),	-- First Aid Kit (QI!)
+					},
 				}),
 				q(59944, {	-- The Rescue of Herbert Gloomburst
 					["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
 					["provider"] = { "n", 167290 },	-- Shuja Grimaxe
 					["coord"] = { 56.8, 46.1, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(168410),	-- First Aid Kit (QI!)
+					},
 				}),
 				q(55882, {	-- Message to Base [A]
 					["sourceQuests"] = {

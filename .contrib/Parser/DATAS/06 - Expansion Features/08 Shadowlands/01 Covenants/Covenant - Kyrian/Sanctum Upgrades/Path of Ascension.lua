@@ -590,6 +590,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["sourceQuests"] = { 61361 },	-- Nuuminuuru
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["g"] = {
+											i(181275),	-- Fountain of Rejuvenation (QI!)
+										},
 									}),
 									q(60495, {	-- A Suitable Opponent
 										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis

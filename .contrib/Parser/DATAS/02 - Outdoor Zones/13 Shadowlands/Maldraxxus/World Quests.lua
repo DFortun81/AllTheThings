@@ -53,7 +53,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(58207),	-- Buggin' Out
 			q(61477),	-- Calling the Champions
-			q(60531),	-- Chosen Champions
+			q(60531, {	-- Chosen Champions
+				["g"] = {
+					i(174110),	-- Disassembly Flag (QI!)
+				},
+			}),
 			q(61607, {	-- Cooking: Spider Jerky
 				["requireSkill"] = COOKING,
 				["g"] = {
@@ -168,9 +172,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = MINING,
 			}),
 			q(59234),	-- Mixing a Mess
-			q(58437),	-- Parts to a Whole
+			q(58437, {	-- Parts to a Whole
+				["g"] = {
+					i(174110),	-- Disassembly Flag (QI!)
+				},
+			}),
 			q(58505),	-- Planned Demise
-			q(59642),	-- Pulling Hairs
+			q(59642, {	-- Pulling Hairs
+				["g"] = {
+					i(176846),	-- Corpselouse Bristles (QI!)
+					i(176847),	-- Sour Suckle's Antenna (QI!)
+				},
+			}),
 			q(61614, {	-- Skinning: Rugged Carapace
 				["requireSkill"] = SKINNING,
 			}),
@@ -193,7 +206,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(181972),	-- Haunting Hood (QI!)
 				},
 			}),
-			q(59743),	-- The Spider on the Wall
+			q(59743, {	-- The Spider on the Wall
+				["g"] = {
+					i(177712),	-- Envoy's Letter (QI!)
+					i(177710),	-- Patrol Schedule (QI!)
+					i(177693),	-- Requisitioner's Scroll (QI!)
+				},
+			}),
 			q(61868),	-- Uncomfortably Undercover
 			q(58601),	-- Web of Information
 		})),
