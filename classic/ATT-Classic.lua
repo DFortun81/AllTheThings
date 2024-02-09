@@ -963,6 +963,17 @@ app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 
 local InitialCachedSearch;
 local function GetSearchResults(method, paramA, paramB, ...)
+	if not paramA then
+		print("GetSearchResults: Invalid paramA: nil");
+		return nil, true;
+	end
+	
+	-- If we are searching for only one parameter, it is a raw link.
+	local rawlink;
+	if paramB then paramB = tonumber(paramB);
+	else rawlink = paramA; end
+	
+	-- This method can be called nested, and some logic should only process for the initial call
 	local isTopLevelSearch;
 	if not InitialCachedSearch then
 		InitialCachedSearch = true;
@@ -973,7 +984,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
 
 	-- Call to the method to search the database.
-	local group = method(paramA, paramB, ...);
+	local group = method(paramA, paramB);
 	if not group then
 		group = {};
 	elseif group.g then
@@ -1204,7 +1215,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
-	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+	if app.Settings:GetTooltipSetting("SourceLocations") and (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things")) then
 		local temp = {};
 		local unfiltered = {};
 		local abbrevs = L["ABBREVIATIONS"];

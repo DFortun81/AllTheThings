@@ -34,7 +34,6 @@ BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L["TOGGLE_RANDOM"]
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 
 -- Performance Cache
--- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
@@ -971,7 +970,7 @@ local function CreateObject(t, rootOnly)
 		return result;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
 	else
-		-- a table which somehow has a metatable which doesn't include a 'key' field...
+		-- a table which somehow has a metatable which doesn't include a 'key' field
 		local meta = getmetatable(t);
 		if meta then
 			app.PrintDebug(Colorize("Bad CreateObject (metatable without key) used:",app.Colors.ChatLinkError))
@@ -1175,7 +1174,6 @@ GetSourceID = function(itemLink)
 				-- app.PrintTable(tmogInfo)
 				local sourceID = tmogInfo and tmogInfo.appearanceID;
 				if sourceID and sourceID ~= 0 then
-					-- Added 5/4/2018 - Account for DressUpModel lag... sigh
 					-- Adjusted to account for non-transmoggable SourceIDs which are collectible
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if sourceInfo then
@@ -2081,7 +2079,7 @@ local ResolveFunctions = {
 					end
 				end
 				if match then
-					-- TEMP logic to allow Ensembles to continue working until they get fixed again...
+					-- TEMP logic to allow Ensembles to continue working until they get fixed again
 					if field == "itemID" and result.g and kval == o[field] then
 						ArrayAppend(searchResults, result.g);
 					end
@@ -3075,26 +3073,29 @@ local TooltipSourceFields = {
 local InitialCachedSearch;
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
+	if not paramA then
+		print("GetSearchResults: Invalid paramA: nil");
+		return nil, true;
+	end
+	
+	-- If we are searching for only one parameter, it is a raw link.
+	local rawlink;
+	if paramB then paramB = tonumber(paramB);
+	else rawlink = paramA; end
 	
 	-- This method can be called nested, and some logic should only process for the initial call
 	local isTopLevelSearch;
 	if not InitialCachedSearch then
-		-- app.PrintDebug("TopLevelSearch",paramA,paramB,...)
 		InitialCachedSearch = true;
 		isTopLevelSearch = true;
 	end
 
-	-- Determine if this tooltip needs more work the next time it refreshes.
-	if not paramA then paramA = ""; end
-	local working, info = false, {};
-
 	-- Call to the method to search the database.
-	local rawlink;
-	-- Store the raw search link if no paramB
-	if paramB then paramB = tonumber(paramB);
-	else rawlink = paramA; end
-	local group = method(paramA, paramB, ...);
+	local group = method(paramA, paramB);
 	if not group then group = {}; end
+
+	-- Determine if this tooltip needs more work the next time it refreshes.
+	local working, info = false, {};
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -3113,20 +3114,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				group = subgroup;
 			end
 		end
-	elseif paramA == "achievementID" then
-		local regroup = {};
-		local criteriaID = ...;
-		for i,j in ipairs(group) do
-			if j.criteriaID == criteriaID then
-				-- Don't do anything for things linked to maps/with no parents since it will show everything from the map in the tooltip...
-				if j.mapID or not j.parent or not j.parent.parent then
-					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-				else
-					tinsert(regroup, j);
-				end
-			end
-		end
-		group = regroup;
 	elseif paramA == "azeriteEssenceID" then
 		local regroup = {};
 		local rank = ...;
@@ -11596,12 +11583,8 @@ RowOnEnter = function (self)
 				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "questID", refQuestID);
 			elseif reference.flightPathID then
 				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "flightPathID", reference.flightPathID);
-			elseif reference.achievementID then
-				if reference.criteriaID then
-					-- AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
-				else
-					AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID);
-				end
+			elseif reference.achievementID and not reference.criteriaID then
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID);
 			else
 				-- app.PrintDebug("No Search Data",reference.hash)
 			end
