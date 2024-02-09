@@ -2511,7 +2511,6 @@ root(ROOTS.Unsorted, {
 				i(168211),	-- Gleaming Chest: Beneficus
 				i(168209),	-- Gleaming Chest: Olberic
 				i(179005),	-- Glinting Gold Fang
-				i(179006),	-- Glowing Endmire Dust
 				i(178517),	-- Gold Tooth
 				i(174746),	-- Golden Egg Shells
 				i(178175),	-- Gooey Sap
@@ -2550,7 +2549,6 @@ root(ROOTS.Unsorted, {
 				i(180168),	-- Oribobber
 				i(177278),	-- Phial of Serenity
 				i(181247),	-- Pointy Stick
-				i(179004),	-- Polished Silver Tithe
 				i(180887),	-- Preserved Organ
 				i(176442),	-- Ratwhisker Brew
 				i(183872),	-- Residual Sorrow
@@ -2561,7 +2559,6 @@ root(ROOTS.Unsorted, {
 				i(182299),	-- Ruined Carapace
 				i(177028),	-- Rusty Chain
 				i(183046),	-- Serrated Inking Spines
-				i(179308),	-- Shadeskin Brandy Phial
 				i(183187),	-- Shadeweaver Incantation
 				i(180350),	-- Simple Stone Loop
 				i(180891),	-- Smooshed Maggot
