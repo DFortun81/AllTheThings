@@ -116,6 +116,11 @@ local searchMethods = {
 		end
 	end
 };
+local function CreateCache(self)
+	local cache = {};
+	searchMethods[SearchFilter](self, cache);
+	return GenerateWeightedTable(cache);
+end
 local function Reroll(self)
 	-- Rebuild all the datas
 	local data = self.defaultHeader;
@@ -127,14 +132,7 @@ local function Reroll(self)
 	end
 	if SearchFilter then
 		-- Call to our method and build a list to draw from
-		local cachekey = "SEARCH::" .. SearchFilter;
-		local cache = app.searchCache[cachekey];
-		if not cache then
-			cache = {};
-			searchMethods[SearchFilter](self, cache);
-			cache = GenerateWeightedTable(cache);
-			app.searchCache[cachekey] = cache;
-		end
+		local cache = app.GetCachedData("SEARCH::" .. SearchFilter, CreateCache, self);
 		local weightedTable, totalWeight = unpack(cache);
 		if totalWeight > 0 then
 			local selected = weightedTable[#weightedTable].data;

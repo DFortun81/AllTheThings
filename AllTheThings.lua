@@ -778,7 +778,7 @@ app.MergeSkipFields = {
 	["costTotal"] = true,
 	["upgradeTotal"] = true,
 	["iconPath"] = true,
-	-- fields added to a group from GetCachedSearchResults
+	-- fields added to a group from GetSearchResults
 	["tooltipInfo"] = true,
 	["working"] = true,
 	-- update cached info
@@ -2968,8 +2968,15 @@ end
 end	-- Symlink Lib
 
 -- Search Results Lib
-local searchCache = {};
-app.searchCache = searchCache;
+local searchCache, working = {};
+app.GetCachedData = function(cacheKey, method, ...)
+	local cache = searchCache[cacheKey];
+	if not cache then
+		cache, working = method(...);
+		if not working then searchCache[cacheKey] = cache; end
+	end
+	return cache;
+end
 app.WipeSearchCache = function()
 	wipe(searchCache);
 end
@@ -2977,7 +2984,6 @@ app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 
-local GetCachedSearchResults;
 do
 local function GetPatchString(patch, color)
 	patch = tonumber(patch)
@@ -3067,18 +3073,14 @@ local TooltipSourceFields = {
 	"questID"
 };
 local InitialCachedSearch;
-GetCachedSearchResults = function(method, paramA, paramB, ...)
-	local search = (paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA;
-	if IsRetrieving(search) then return; end
-	local cache = searchCache[search];
-	if cache then return cache; end
-	-- app.PrintDebug("GetCachedSearchResults",method,paramA,paramB,...)
-
+local function GetSearchResults(method, paramA, paramB, ...)
+	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
+	
 	-- This method can be called nested, and some logic should only process for the initial call
 	local isTopLevelSearch;
 	if not InitialCachedSearch then
 		-- app.PrintDebug("TopLevelSearch",paramA,paramB,...)
-		InitialCachedSearch = search;
+		InitialCachedSearch = true;
 		isTopLevelSearch = true;
 	end
 
@@ -3092,7 +3094,6 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
 	local group, a, b = method(paramA, paramB, ...);
-	-- app.PrintDebug("Raw Search",search,a,b,group and #group, ...);
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
@@ -3468,7 +3469,7 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 					local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels;
 					if myArtifactData then
 						local progress, total = 0, 0;
-						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
+						local relicItemLevel = select(1, GetDetailedItemLevelInfo((paramB and paramA .. ":" .. paramB) or paramA)) or 0;
 						for relicID,artifactData in pairs(myArtifactData) do
 							local infoString;
 							for relicSlotIndex,relicData in pairs(artifactData) do
@@ -4024,15 +4025,10 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 
 		group.isBaseSearchResult = true;
 
-		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",search,group.text or (group.key and group.key .. group[group.key]),group)
+		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",group.text or (group.key and group.key .. group[group.key]),group)
 
 		-- Track if the result is not finished processing
 		group.working = working;
-
-		-- cache the finished result if it's completely processed
-		if not working then
-			searchCache[search] = group;
-		end
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 
 		-- If the user wants to show the progress of this search result, do so
@@ -4055,9 +4051,11 @@ GetCachedSearchResults = function(method, paramA, paramB, ...)
 		end
 	end
 
-	return group;
+	return group, working;
 end
-app.GetCachedSearchResults = GetCachedSearchResults;
+app.GetCachedSearchResults = function(method, paramA, paramB, ...)
+	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);
+end
 
 local IsComplete = app.IsComplete
 local function CalculateGroupsCostAmount(g, costID)
@@ -10379,7 +10377,7 @@ function app:CreateMiniListForGroup(group)
 			if not group.g and not group.criteriaID and app.ThingKeys[key] then
 				local cmd = group.link or key .. ":" .. group[key];
 				app.SetSkipLevel(2);
-				local groupSearch = GetCachedSearchResults(SearchForLink, cmd);
+				local groupSearch = app.GetCachedSearchResults(SearchForLink, cmd);
 				app.SetSkipLevel(0);
 
 				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
@@ -10398,7 +10396,7 @@ function app:CreateMiniListForGroup(group)
 				-- app.PrintTable(group.g)
 				-- This isn't needed for the example noted anymore...
 				-- if not group.key and key then
-				-- 	group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
+				-- 	group.key = key;	-- Dunno what causes this in app.GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
 				-- 	-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
 				-- end
 
@@ -10424,7 +10422,7 @@ function app:CreateMiniListForGroup(group)
 		--	-- make a search for this group if it is an item/currency and not already a container for things
 		-- 	if not group.g and (group.itemID or group.currencyID) then
 		-- 		local cmd = group.key .. ":" .. group[group.key];
-		-- 		group = GetCachedSearchResults(SearchForLink, cmd);
+		-- 		group = app.GetCachedSearchResults(SearchForLink, cmd);
 		-- 	else
 		-- 		group = CreateObject(group);
 		-- 	end
@@ -18824,7 +18822,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 
 		-- Search for the Link in the database
 		app.SetSkipLevel(2);
-		local group = GetCachedSearchResults(SearchForLink, cmd);
+		local group = app.GetCachedSearchResults(SearchForLink, cmd);
 		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
@@ -18902,7 +18900,7 @@ end
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;
 				app.SetSkipLevel(2);
-				local group = GetCachedSearchResults(SearchForLink, cmd);
+				local group = app.GetCachedSearchResults(SearchForLink, cmd);
 				app.SetSkipLevel(0);
 				app:CreateMiniListForGroup(group);
 				return true;

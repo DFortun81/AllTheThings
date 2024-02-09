@@ -946,22 +946,26 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 end
 
 -- Search Caching
-local searchCache = {};
-app.searchCache = searchCache;
+local searchCache, working = {};
+app.GetCachedData = function(cacheKey, method, ...)
+	if IsRetrieving(cacheKey) then return; end
+	local cache = searchCache[cacheKey];
+	if not cache then
+		cache, working = method(...);
+		if not working then searchCache[cacheKey] = cache; end
+	end
+	return cache;
+end
 app.WipeSearchCache = function()
 	wipe(searchCache);
 end
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
+
 local InitialCachedSearch;
-local function GetCachedSearchResults(method, paramA, paramB, ...)
-	local search = (paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA;
-	if IsRetrieving(search) then return; end
-	local cache = searchCache[search];
-	if cache then return cache; end
-	
+local function GetSearchResults(method, paramA, paramB, ...)
 	local isTopLevelSearch;
 	if not InitialCachedSearch then
-		InitialCachedSearch = search;
+		InitialCachedSearch = true;
 		isTopLevelSearch = true;
 	end
 
@@ -1371,7 +1375,7 @@ local function GetCachedSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Resolve Cost
-	--print("GetCachedSearchResults", paramA, paramB);
+	--print("GetSearchResults", paramA, paramB);
 	if paramA == "currencyID" then
 		local costResults = SearchForField("currencyIDAsCost", paramB);
 		if #costResults > 0 then
@@ -1756,11 +1760,12 @@ local function GetCachedSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Cache the result depending on if there is more work to be done.
-	if not working then searchCache[search] = group; end
 	if isTopLevelSearch then InitialCachedSearch = nil; end
-	return group;
+	return group, working;
 end
-app.GetCachedSearchResults = GetCachedSearchResults;
+app.GetCachedSearchResults = function(method, paramA, paramB, ...)
+	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);
+end
 
 -- Item Information Lib
 local function SearchForLink(link)

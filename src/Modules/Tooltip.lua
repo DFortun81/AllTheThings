@@ -16,7 +16,7 @@ timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 local SearchForField = app.SearchForField;
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
-local GetCachedSearchResults, SearchForLink, L
+local SearchForLink, L
 
 -- Object Name Lookups
 local objectNamesToIDs = {};
@@ -437,7 +437,7 @@ end
 local function AttachTooltipSearchResults(self, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
-	local status, group = pcall(GetCachedSearchResults, method, ...)
+	local status, group = pcall(app.GetCachedSearchResults, method, ...)
 	if status then
 		AttachTooltipRawSearchResults(self, lineNumber, group)
 	else
@@ -956,7 +956,6 @@ app.Modules.Tooltip = api;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
 app.AddEventHandler("OnLoad", function()
-	GetCachedSearchResults = app.GetCachedSearchResults;
 	SearchForLink = app.SearchForLink;
 	L = app.L;
 	OnLoad_CacheObjectNames();
