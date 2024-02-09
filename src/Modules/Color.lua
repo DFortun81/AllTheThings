@@ -12,8 +12,8 @@ local L = app.L;
 -- Encapsulates the functionality for handling and interacting with colors in the addon, which are typically represented in Text
 
 -- Global locals
-local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, slen, sformat
-	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, string.len, string.format;
+local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, sformat
+	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, string.format;
 
 -- Module locals
 local CS = CreateFrame("ColorSelect", nil, app.frame);
@@ -92,7 +92,7 @@ local GetProgressText = GetProgressTextDefault;
 local function GetNumberWithZeros(number, desiredLength)
 	if desiredLength > 0 then
 		local str = tostring(number);
-		local length = slen(str);
+		local length = str:len();
 		local pos = str:find("[.]");
 		if not pos then
 			str = str .. ".";

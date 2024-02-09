@@ -174,7 +174,7 @@ local function PushSoftReserves(method, target)
 		for gu,reserve in pairs(reserves) do
 			if gu and IsGUIDInGroup(gu) then
 				cmd = "\t" .. gu .. "\t" .. reserve[1];
-				length = string.len(cmd);
+				length = cmd:len();
 				if count + length >= 255 then
 					C_ChatInfo.SendAddonMessage("ATTC", msg, method, target);
 					count = 7;
@@ -695,7 +695,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				OnClick = function(row, button)
 					app:ShowPopupDialogWithMultiLineEditBox("FORMAT: PLAYER NAME\\tITEM NAME/ID\\tPERSISTENCE\n\n", function(text)
 						text = text:gsub("    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
-						local u, pers, g, word, l, esc, c = "", {}, {}, "", string.len(text), false;
+						local u, pers, g, word, l, esc, c = "", {}, {}, "", text:len(), false;
 						for i=1,l,1 do
 							c = string.sub(text, i, i);
 							if c == "\\" then
@@ -713,19 +713,19 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 							end
 							
 							if c == "\t" then
-								if string.len(word) > 0 then
+								if word:len() > 0 then
 									if #g < 1 then
 										u = word;
 									end
 									tinsert(g, word);
 									word = "";
 								else
-									if #g < 1 and string.len(u) > 0 then
+									if #g < 1 and u:len() > 0 then
 										tinsert(g, u);
 									end
 								end
 							elseif c == "\n" or c == "\r" then
-								if string.len(word) > 0 then
+								if word:len() > 0 then
 									tinsert(g, word);
 									word = "";
 								end
@@ -739,7 +739,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 								word = word .. c;
 							end
 						end
-						if string.len(word) > 0 then
+						if word:len() > 0 then
 							tinsert(g, word);
 						end
 						if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); end

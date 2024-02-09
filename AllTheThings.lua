@@ -4912,7 +4912,7 @@ function app:ReceiveSyncRequest(sender, battleTag)
 	for guid,character in pairs(ATTCharacterData) do
 		if character.lastPlayed then
 			local charsummary = "\t" .. guid .. ":" .. character.lastPlayed;
-			if (string.len(msg) + string.len(charsummary)) < 255 then
+			if (msg:len() + charsummary:len()) < 255 then
 				msg = msg .. charsummary;
 			else
 				C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", sender);
@@ -4965,7 +4965,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 
 		if rawMsg then
 			-- Send Addon Message Back
-			local length = string.len(rawMsg);
+			local length = rawMsg:len();
 			local chunks = {};
 			for i=1,length,241 do
 				tinsert(chunks, string.sub(rawMsg, i, math.min(length, i + 240)));

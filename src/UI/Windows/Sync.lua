@@ -107,7 +107,7 @@ local function ReceiveChunk(method, sender, uid, chunkIndex, chunkCount, chunk)
 	end
 end
 local function SendMessageChunks(method, target, msg, chunksize)
-	local encodedLength = string.len(msg);
+	local encodedLength = msg:len();
 	if encodedLength > chunksize then
 		-- When the message exceeds the length, we have to cut it into sections and deliver it as a set of chunks.
 		--print("Encoded Message exceeded maximum (" .. chunksize .. "): ", encodedLength);
@@ -133,14 +133,14 @@ local function _SendAddonMessage(target, msg)
 	C_ChatInfo.SendAddonMessage(AddonMessagePrefix, msg, "WHISPER", target);
 end
 local function SendAddonMessage(target, msg)
-	--print("SendAddonMessage", target, string.len(msg) > 40 and (strsub(msg, 1, 40) .. "...") or msg);
+	--print("SendAddonMessage", target, msg:len() > 40 and (strsub(msg, 1, 40) .. "...") or msg);
 	SendMessageChunks(_SendAddonMessage, target, msg, 255);
 end
 local function _SendBattleNetMessage(target, msg)
 	BNSendGameData(target, AddonMessagePrefix, msg);
 end
 local function SendBattleNetMessage(target, msg)
-	--print("SendBattleNetMessage", target, string.len(msg) > 40 and (strsub(msg, 1, 40) .. "...") or msg);
+	--print("SendBattleNetMessage", target, msg:len() > 40 and (strsub(msg, 1, 40) .. "...") or msg);
 	SendMessageChunks(_SendBattleNetMessage, target, msg, 4086);
 end
 local function SplitString(separator, text)
