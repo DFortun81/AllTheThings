@@ -1,6 +1,6 @@
 
 -- Refresh Lib
--- CRIEVE NOTE: Once condensed and the bulk of this lib move elsewhere, 
+-- CRIEVE NOTE: Once condensed and the bulk of this lib move elsewhere,
 -- this lib can be moved elsewhere. (It'll literally be a definition for an event handler)
 local _, app = ...;
 local coroutine, InCombatLockdown = coroutine, InCombatLockdown;
@@ -415,16 +415,15 @@ else
 RefreshCollections = function()
 	while InCombatLockdown() do coroutine.yield(); end
 	app.print("Refreshing collection...");
-	
+
 	-- Execute the OnRefreshCollections handlers.
 	app.HandleEvent("OnRefreshCollections");
 	coroutine.yield();
-	
+
 	app:RefreshDataCompletely("RefreshCollections");
 	app.print("Done refreshing collection.");
 end
 end
 
-app.RefreshCollections = function()
-	app:StartATTCoroutine("RefreshingCollections", RefreshCollections);
-end
+app.RefreshCollections = app.IsRetail and function() app.StartCoroutine("RefreshingCollections", RefreshCollections) end
+										or function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections); end

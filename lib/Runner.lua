@@ -114,18 +114,17 @@ local function ReturnCoroutine(co)
 	CoroutineCache[name] = nil;
 	CoroutineCache[co] = nil;
 end
-local _PushQueue = {};
+-- We will make this a weak-value cache, such that the Push methods can be cleaned up/recreated if needed
+local _PushQueue = setmetatable({}, {__mode = "v",})
 -- Represents a small set of Push functions which are used to allow the Stack to handle coroutine processing. As these functions have no bearing
 -- on the coroutine they run, they can be reused and only created when the current amount is not enough to handle all concurrent coroutines.
--- We will make this a weak-value cache, such that the Push methods can be cleaned up/recreated if needed
 local PushQueue = setmetatable({}, {
-	__mode = "v",
 	-- any index reference will return the next available pusher
 	__index = function()
-		local pusher = _PushQueue[1];
+		local pusher = _PushQueue[#_PushQueue];
 		if pusher then
-			tremove(_PushQueue, 1);
-			-- app.PrintDebug("PUSH:Cache",#PushQueue)
+			-- app.PrintDebug("PUSH:Cache",#_PushQueue)
+			_PushQueue[#_PushQueue] = nil;
 			return pusher;
 		end
 		-- app.PrintDebug("PUSH:New",#_PushQueue + 1)
@@ -146,8 +145,8 @@ local PushQueue = setmetatable({}, {
 				else PrintError(err, "PUSH.Run", co) end
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
-			-- app.PrintDebug("PUSH:Return",pushfunc,"=>",#_PushQueue + 1)
 			_PushQueue[#_PushQueue + 1] = pushfunc;
+			-- app.PrintDebug("PUSH:Return",pushfunc,"=>",#_PushQueue)
 			-- Then grab the corresponding Name of this coroutine based on the coroutine cache
 			-- and swap in the coroutine for the Name, and un-flag the Name from the NameCache
 			ReturnCoroutine(co);

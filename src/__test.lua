@@ -340,3 +340,79 @@ function ATTfuncvsor(count)
 	app.PrintDebugPrior("---")
 
 end
+
+
+function ATTcoroutines(count)
+	count = count or 1000
+
+
+	local a,b = 1,1
+	local aa,bb
+
+	local cy = coroutine.yield
+
+	local function fa()
+		app.PrintDebug("fa",a,aa)
+		a = a + 1
+	end
+	local function fb()
+		app.PrintDebug("fb",b,bb)
+		b = b + 1
+	end
+
+
+	local function ca()
+		app.PrintDebug("ca")
+		-- for i=1,count do
+			fa()
+		-- 	cy()
+		-- end
+		app.PrintDebug("ca:done")
+		-- app.PrintMemoryUsage()
+	end
+	local function cb()
+		app.PrintDebug("cb")
+		-- for i=1,count do
+			fb()
+		-- 	cy()
+		-- end
+		app.PrintDebug("cb:done")
+		-- app.PrintMemoryUsage()
+	end
+
+
+	local function cca()
+		app.PrintDebug("cca")
+		for i=1,count do
+			app.PrintDebug("cca",i)
+			aa = i
+			app.StartCoroutine("ca",ca)
+			-- app.PrintMemoryUsage()
+			cy()
+		end
+		app.PrintDebug("cca:done")
+		-- app.PrintMemoryUsage()
+	end
+	local function ccb()
+		app.PrintDebug("ccb")
+		for i=1,count do
+			app.PrintDebug("ccb",i)
+			bb = i
+			app:StartATTCoroutine("cb",cb)
+			-- app.PrintMemoryUsage()
+			cy()
+		end
+		app.PrintDebug("ccb:done")
+		-- app.PrintMemoryUsage()
+	end
+
+	app.PrintDebug("Test Coroutines")
+	-- app.PrintMemoryUsage()
+
+	app.StartCoroutine("cca",cca)
+	-- app.PrintMemoryUsage()
+
+	app:StartATTCoroutine("ccb",ccb)
+	-- app.PrintMemoryUsage()
+
+end

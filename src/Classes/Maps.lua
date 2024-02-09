@@ -102,7 +102,7 @@ if app.GameBuildVersion < 30000 then
 	UpdateLocationCoroutine = function()
 		-- Wait a second, will ya? The position detection is BAD.
 		for i=1,30,1 do coroutine.yield(); end
-		
+
 		-- Acquire the new map ID.
 		local mapID = GetCurrentMapID();
 		while not mapID do
@@ -131,8 +131,15 @@ else
 		end
 	end
 end
-local function UpdateLocation()
-	app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
+local UpdateLocation
+if app.IsClassic then
+	UpdateLocation = function()
+		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
+	end
+else
+	UpdateLocation = function()
+		app.StartCoroutine("UpdateLocation", UpdateLocationCoroutine);
+	end
 end
 app.events.ZONE_CHANGED = UpdateLocation;
 app.events.ZONE_CHANGED_INDOORS = UpdateLocation;
