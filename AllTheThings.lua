@@ -14037,6 +14037,11 @@ customWindowUpdates["Random"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			
+			-- For this window's options to work, Prime needs to be fully initialized.
+			local prime = app:GetWindow("Prime");
+			prime:Update(true);
+			
 			local function SearchRecursively(group, field, temp, func)
 				if group.visible and not (group.saved or group.collected) then
 					if group.g then
