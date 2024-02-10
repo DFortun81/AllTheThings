@@ -927,7 +927,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 						for rankIndex = #g + 1, numRanks, 1 do
 							tinsert(g, {
 								text = GuildControlGetRankName(rankIndex),
-								icon = format("Interface\\PvPRankBadges\\PvPRank%02d",  (15 - rankIndex)),
+								icon = ("Interface\\PvPRankBadges\\PvPRank%02d"):format(15 - rankIndex),
 								--OnUpdate = app.AlwaysShowUpdate,
 								parent = data,
 								visible = true,

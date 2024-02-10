@@ -3,6 +3,7 @@ do
 local appName,app = ...;
 local pairs, GetItemCount, PlayerHasToy
 	= pairs, GetItemCount, PlayerHasToy;
+local L = app.L;
 
 -- Toy Lib
 local AccountWideToyData = {};

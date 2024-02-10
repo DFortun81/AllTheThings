@@ -16472,7 +16472,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local _, link = GetItemInfo(itemID);
-			if link then print(format(L["ITEM_ID_ADDED_RANK"], link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
+			if link then print(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
 		end
 	end
 end

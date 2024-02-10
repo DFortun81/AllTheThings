@@ -4695,7 +4695,7 @@ local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
-			local tooltipData = C_TooltipInfo_GetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id));
+			local tooltipData = C_TooltipInfo_GetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id));
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText;
 				if title and #tooltipData.lines > 2 then
@@ -4718,7 +4718,7 @@ else
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
 			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-			ATTCNPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
+			ATTCNPCHarvester:SetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id))
 			local title = ATTCNPCHarvesterTextLeft1:GetText();
 			if title and ATTCNPCHarvester:NumLines() > 2 then
 				local leftText = ATTCNPCHarvesterTextLeft2:GetText();

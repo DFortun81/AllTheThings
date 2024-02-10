@@ -276,7 +276,7 @@ if C_TransmogCollection then
 				local searchResults = SearchForField("sourceID", sourceID);
 				if #searchResults > 0 then
 					local firstMatch = searchResults[1];
-					print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
+					print(L.ITEM_ID_ADDED:format(firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 				else
 					-- Use the Blizzard API... We don't have this item in the addon.
 					-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
@@ -284,7 +284,7 @@ if C_TransmogCollection then
 					-- This is okay since items of this type share their appearance regardless of the power of the item.
 					local name, link = GetItemInfo(sourceInfo.itemID);
 
-					print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+					print(L.ITEM_ID_ADDED_MISSING:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 
 					-- Play a sound when a reportable error is found, if any sound setting is enabled
 					app.Audio:PlayReportSound();
@@ -294,7 +294,7 @@ if C_TransmogCollection then
 			end
 
 			-- Update the groups for the sourceID results
-			UpdateRawID("sourceID", sourceID);
+			app.UpdateRawID("sourceID", sourceID);
 		end
 	end
 	local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
@@ -323,8 +323,7 @@ if C_TransmogCollection then
 				-- Search for the item that actually was unlocked.
 				local firstMatch = SearchForSourceIDQuickly(sourceID);
 				if firstMatch then
-					print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
-						firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, newAppearancesLearned));
+					print(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"]:format(firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, newAppearancesLearned));
 				else
 					-- Use the Blizzard API... We don't have this item in the addon.
 					-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
@@ -332,7 +331,7 @@ if C_TransmogCollection then
 					-- This is okay since items of this type share their appearance regardless of the power of the item.
 					local name, link = GetItemInfo(sourceInfo.itemID);
 
-					print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
+					print(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
 
 					-- Play a sound when a reportable error is found, if any sound setting is enabled
 					app.Audio:PlayReportSound();
@@ -1005,7 +1004,7 @@ if C_TransmogCollection then
 					-- Oh shucks, that was nice of you to give this item to your friend.
 					-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
 					local name, link = GetItemInfo(sourceInfo.itemID);
-					print(format(L["ITEM_ID_REMOVED"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+					print(L.ITEM_ID_REMOVED:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 				end
 			else
 				local shared = 0;
@@ -1027,7 +1026,7 @@ if C_TransmogCollection then
 					-- Oh shucks, that was nice of you to give this item to your friend.
 					-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
 					local name, link = GetItemInfo(sourceInfo.itemID);
-					print(format(L[shared > 0 and "ITEM_ID_REMOVED_SHARED" or "ITEM_ID_REMOVED"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, shared));
+					print(L[shared > 0 and "ITEM_ID_REMOVED_SHARED" or "ITEM_ID_REMOVED"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, shared));
 				end
 			end
 

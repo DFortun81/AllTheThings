@@ -307,12 +307,12 @@ end
 local function GetEventTimeString(d)
 	if d then
 		if d.weekday then
-			return format("%s, %s %02d, %d at %02d:%02d",
+			return ("%s, %s %02d, %d at %02d:%02d"):format(
 				CALENDAR_WEEKDAY_NAMES[d.weekday],
 				CALENDAR_FULLDATE_MONTH_NAMES[d.month],
 				d.monthDay, d.year, d.hour, d.minute );
 		else
-			return format("%s %02d, %d at %02d:%02d",
+			return ("%s %02d, %d at %02d:%02d"):format(
 				CALENDAR_FULLDATE_MONTH_NAMES[d.month],
 				d.monthDay, d.year, d.hour, d.minute );
 		end
