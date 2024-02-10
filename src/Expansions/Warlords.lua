@@ -171,7 +171,32 @@ if C_Garrison then
 		end,
 	});
 	
+	-- Subroutines
+	local function common_wod_dungeon_drop(ResolveFunctions)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		return function(finalized, searchResults, o, cmd, difficultyID, headerID)
+			select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
+			pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
+			where(finalized, searchResults, o, "where", "difficultyID", difficultyID);	-- Normal/Heroic/Mythic/Timewalking
+			pop(finalized, searchResults);	-- Discard the Diffculty Header and acquire all of their children.
+			where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+		end
+	end
+	local function common_wod_dungeon_drop_tw(ResolveFunctions)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		return function(finalized, searchResults, o, cmd, difficultyID, headerID)
+			select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
+			where(finalized, searchResults, o, "where", "e", 1271);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
+			pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
+			where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+		end
+	end
+	
 	-- Event Handling
+	app.AddEventHandler("OnReady", function()
+		app.RegisterSymlinkSubroutine("common_wod_dungeon_drop", common_wod_dungeon_drop);
+		app.RegisterSymlinkSubroutine("common_wod_dungeon_drop_tw", common_wod_dungeon_drop_tw);
+	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		-- Convert deprecated saved variable containers into the new structure
 		if currentCharacter.Buildings then

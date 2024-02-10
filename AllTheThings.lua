@@ -2212,23 +2212,6 @@ local SubroutineCache = {
 		if #searchResults > 0 then o.e = searchResults[1].e; end
 		pop(finalized, searchResults);	-- pop the instance header
 	end,
-	-- Wod Dungeon
-	["common_wod_dungeon_drop"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
-		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
-		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
-		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
-		where(finalized, searchResults, o, "where", "difficultyID", difficultyID);	-- Normal/Heroic/Mythic/Timewalking
-		pop(finalized, searchResults);	-- Discard the Diffculty Header and acquire all of their children.
-		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-	end,
-	-- Wod Dungeon TW
-	["common_wod_dungeon_drop_tw"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
-		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
-		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
-		where(finalized, searchResults, o, "where", "e", 1271);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
-		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
-		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-	end,
 	-- Korthian Armaments
 	["korthian_armaments"] = function(finalized, searchResults, o, cmd, inv)
 		local select, pop, invtype = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.invtype;
