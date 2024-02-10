@@ -3998,7 +3998,7 @@ app.ColorizeStandingText = function(standingID, text)
 	end
 end
 app.GetFactionIDByName = function(name)
-	name = strtrim(name);
+	name = name:trim();
 	return app.FactionIDByName[name] or name;
 end
 app.GetFactionStanding = function(reputation)
@@ -4017,7 +4017,7 @@ app.GetFactionStandingText = function(standingID)
 	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
 app.GetFactionStandingThresholdFromString = function(replevel)
-	replevel = strtrim(replevel);
+	replevel = replevel:trim();
 	for standing=1,8,1 do
 		if _G["FACTION_STANDING_LABEL" .. standing] == replevel then
 			return StandingByID[standing].threshold;

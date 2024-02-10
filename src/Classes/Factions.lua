@@ -7,8 +7,8 @@ local _, app = ...;
 local L = app.L;
 
 -- Global locals
-local pairs, type, ipairs, select, strtrim, math_min
-	= pairs, type, ipairs, select, strtrim, math.min
+local pairs, type, ipairs, select, math_min
+	= pairs, type, ipairs, select, math.min
 
 -- App locals
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
@@ -107,7 +107,7 @@ app.FactionIDByName = setmetatable({}, { __index = function(t, name)
 	end
 end });
 app.GetFactionIDByName = function(name)
-	name = strtrim(name);
+	name = name:trim();
 	return app.FactionIDByName[name] or name;
 end
 app.GetFactionStanding = function(reputationPoints)
@@ -203,7 +203,7 @@ app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textO
 end
 -- This is ONLY used by the ItemHarvester to try and find related Faction from an Item tooltip
 app.GetFactionStandingThresholdFromString = function(replevel)
-	replevel = strtrim(replevel);
+	replevel = replevel:trim();
 	for standing=1,8,1 do
 		if _G["FACTION_STANDING_LABEL" .. standing] == replevel then
 			return StandingByID[standing].threshold;

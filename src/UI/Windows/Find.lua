@@ -26,7 +26,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,className in ipairs({strsplit(",", list)}) do
-									tinsert(classes, app.ClassInfoByClassName[strtrim(className)].classID);
+									tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
@@ -35,15 +35,15 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								local races = {};
 								local _,list = strsplit(":", text);
 								for i,raceName in ipairs({strsplit(",", list)}) do
-									tinsert(races, app.RaceDB[strtrim(raceName)]);
+									tinsert(races, app.RaceDB[raceName:trim()]);
 								end
 								if #races > 0 then
 									t.info.races = races;
 								end
 							elseif text:find("Requires") and not text:find("Level") and not text:find("Riding") then
-								local c = strsub(text, 1, 1);
+								local c = text:sub(1, 1);
 								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
-									text = strsub(strtrim(text), 9);
+									text = text:trim():sub(9);
 									if text:find("-") then
 										local faction,replevel = strsplit("-", text);
 										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
@@ -57,7 +57,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 											end
 										end
 										if text then
-											local spellName = strtrim(text);
+											local spellName = text:trim();
 											if spellName == "Herbalism" then spellName = "Herb Gathering"; end
 											local spellID = app.SpellNameToSpellID[spellName];
 											if spellID then

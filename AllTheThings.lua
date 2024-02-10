@@ -8513,7 +8513,7 @@ itemTooltipHarvesterFields.text = function(t)
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,className in ipairs({strsplit(",", list)}) do
-									tinsert(classes, app.ClassInfoByClassName[strtrim(className)].classID);
+									tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
@@ -8524,9 +8524,9 @@ itemTooltipHarvesterFields.text = function(t)
 								if raceNames then
 									local races = {};
 									for _,raceName in ipairs(raceNames) do
-										local race = app.RaceDB[strtrim(raceName)];
+										local race = app.RaceDB[raceName:trim()];
 										if not race then
-											print("Unknown Race",t.info.itemID,strtrim(raceName))
+											print("Unknown Race",t.info.itemID,raceName:trim())
 										elseif type(race) == "number" then
 											tinsert(races, race);
 										else -- Pandaren
@@ -8544,7 +8544,7 @@ itemTooltipHarvesterFields.text = function(t)
 							elseif text:find(" Only") then
 								local faction, _, c = strsplit(" ", text);
 								if not c then
-									faction = strtrim(faction);
+									faction = faction:trim();
 									if faction == "Alliance" then
 										t.info.races = app.Modules.FactionData.FACTION_RACES[1];
 									elseif faction == "Horde" then
@@ -8554,9 +8554,9 @@ itemTooltipHarvesterFields.text = function(t)
 									end
 								end
 							elseif text:find("Requires") and not text:find("Level") and not text:find("Riding") then
-								local c = strsub(text, 1, 1);
+								local c = text:sub(1, 1);
 								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
-									text = strsub(strtrim(text), 9);
+									text = text:trim():sub(9);
 									if text:find("-") then
 										local faction,replevel = strsplit("-", text);
 										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
@@ -8570,19 +8570,19 @@ itemTooltipHarvesterFields.text = function(t)
 											end
 										end
 										if text then
-											local spellName = strtrim(text);
-											if spellName:find("Outland ") then spellName = strsub(spellName, 9);
-											elseif spellName:find("Northrend ") then spellName = strsub(spellName, 11);
-											elseif spellName:find("Cataclysm ") then spellName = strsub(spellName, 11);
-											elseif spellName:find("Pandaria ") then spellName = strsub(spellName, 10);
-											elseif spellName:find("Draenor ") then spellName = strsub(spellName, 9);
-											elseif spellName:find("Legion ") then spellName = strsub(spellName, 8);
-											elseif spellName:find("Kul Tiran ") then spellName = strsub(spellName, 11);
-											elseif spellName:find("Zandalari ") then spellName = strsub(spellName, 11);
-											elseif spellName:find("Shadowlands ") then spellName = strsub(spellName, 13);
-											elseif spellName:find("Classic ") then spellName = strsub(spellName, 9); end
+											local spellName = text:trim();
+											if spellName:find("Outland ") then spellName = spellName:sub(9);
+											elseif spellName:find("Northrend ") then spellName = spellName:sub(11);
+											elseif spellName:find("Cataclysm ") then spellName = spellName:sub(11);
+											elseif spellName:find("Pandaria ") then spellName = spellName:sub(10);
+											elseif spellName:find("Draenor ") then spellName = spellName:sub(9);
+											elseif spellName:find("Legion ") then spellName = spellName:sub(8);
+											elseif spellName:find("Kul Tiran ") then spellName = spellName:sub(11);
+											elseif spellName:find("Zandalari ") then spellName = spellName:sub(11);
+											elseif spellName:find("Shadowlands ") then spellName = spellName:sub(13);
+											elseif spellName:find("Classic ") then spellName = spellName:sub(9); end
 											if spellName == "Herbalism" then spellName = "Herb Gathering"; end
-											spellName = strtrim(spellName);
+											spellName = spellName:trim();
 											local spellID = app.SpellNameToSpellID[spellName];
 											if spellID then
 												local skillID = app.SpellIDToSkillID[spellID];
@@ -18795,12 +18795,12 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		elseif cmd == "unsorted" then
 			app:GetWindow("Unsorted"):Toggle();
 			return true;
-		elseif strsub(cmd, 1, 4) == "mini" then
+		elseif cmd:sub(1, 4) == "mini" then
 			app:ToggleMiniListForCurrentZone();
 			return true;
 		else
-			if strsub(cmd, 1, 6) == "mapid:" then
-				app:GetWindow("CurrentInstance"):SetMapID(tonumber(strsub(cmd, 7)));
+			if cmd:sub(1, 6) == "mapid:" then
+				app:GetWindow("CurrentInstance"):SetMapID(tonumber(cmd:sub(7)));
 				return true;
 			end
 		end

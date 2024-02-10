@@ -694,7 +694,7 @@ if TooltipDataProcessor then
 					if content and #content > 0 then
 						local text = content[1].leftText;
 						local arr = { strsplit("|", text) };
-						if #arr == 3 then text = strsub(arr[3], 2); end
+						if #arr == 3 then text = arr[3]:sub(2); end
 						local objectID = GetBestObjectIDForName(text);
 						if objectID then
 							knownSearchField = "objectID";

@@ -8,7 +8,7 @@ local GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRo
 local GetItemInfo, GetItemInfoInstant = GetItemInfo, GetItemInfoInstant;
 local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 	  GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty;
-local strsplit, strsub, tinsert, tremove = strsplit, strsub, tinsert, tremove;
+local strsplit, tinsert, tremove = strsplit, tinsert, tremove;
 
 -- App locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -195,8 +195,8 @@ local function QuerySoftReserve(guid, cmd, target)
 	if cmd and cmd ~= "" then
 		local all = not IsInGroup() or not IsGUIDInGroup(guid);
 		cmd = cmd:match("^%s*(.+)$");
-		if strsub(cmd, 1, 3) == "all" then
-			cmd = strsub(cmd, 4):match("^%s*(.+)$");
+		if cmd:sub(1, 3) == "all" then
+			cmd = cmd:sub(4):match("^%s*(.+)$");
 			all = true;
 		elseif cmd == "srml" then
 			if IsPrimaryLooter() then
@@ -216,7 +216,7 @@ local function QuerySoftReserve(guid, cmd, target)
 			for i,g in ipairs(group) do
 				if g.itemID then
 					local link = g.link;
-					if IsRetrieving(link) or strsub(link, 1, 4) == "item" then
+					if IsRetrieving(link) or link:sub(1, 4) == "item" then
 						link = "item:" .. g.itemID;
 					end
 					local sr = {};
@@ -260,7 +260,7 @@ local function QuerySoftReserve(guid, cmd, target)
 				for i,g in ipairs(group) do
 					if g.itemID then
 						local link = g.link;
-						if IsRetrieving(link) or strsub(link, 1, 4) == "item" then
+						if IsRetrieving(link) or link:sub(1, 4) == "item" then
 							link = "item:" .. g.itemID;
 						end
 						SendGUIDWhisper("You have " .. link .. " Soft Reserved.", guid);
@@ -455,7 +455,7 @@ local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 				local myName = UnitName("player");
 				local name,server = strsplit("-", a);
 				if myName == name and (not server or GetRealmName() == server) then
-					CHAT_MSG_ADDON_HANDLER(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
+					CHAT_MSG_ADDON_HANDLER(prefix, text:sub(5 + a:len()), "WHISPER", sender);
 				end
 			elseif cmd == "sr" then -- Soft Reserve Command
 				ParseSoftReserve(UnitGUID(target), a, true);
@@ -464,17 +464,17 @@ local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 	end
 end
 local function CHAT_MSG_WHISPER_HANDLER(text, playerName, _, _, _, _, _, _, _, _, _, guid)
-	local action = strsub(text, 1, 1);
+	local action = text:sub(1, 1);
 	if action == '!' then	-- Send
 		local lowercased = text:lower();
-		if not Gargul and strsub(lowercased, 2, 3) == "sr" then
-			ParseSoftReserve(guid, strsub(text, 4));
-		elseif strsub(lowercased, 2, 6) == "attsr" then
-			ParseSoftReserve(guid, strsub(text, 7));
+		if not Gargul and lowercased:sub(2, 3) == "sr" then
+			ParseSoftReserve(guid, text:sub(4));
+		elseif lowercased:sub(2, 6) == "attsr" then
+			ParseSoftReserve(guid, text:sub(7));
 		end
 	elseif action == '?' then	-- Request
 		local lowercased = text:lower();
-		if strsub(lowercased, 2, 3) == "sr" then
+		if lowercased:sub(2, 3) == "sr" then
 			-- Turn off the AskPrice addon message if it's a Soft Reserve.
 			if AucAdvanced and AucAdvanced.Settings then
 				local oldSetting = AucAdvanced.Settings.GetSetting('util.askprice.activated');
@@ -485,8 +485,8 @@ local function CHAT_MSG_WHISPER_HANDLER(text, playerName, _, _, _, _, _, _, _, _
 					end);
 				end
 			end
-			QuerySoftReserve(guid, strsub(text, 4));
-		elseif strsub(lowercased, 2, 6) == "attsr" then
+			QuerySoftReserve(guid, text:sub(4));
+		elseif lowercased:sub(2, 6) == "attsr" then
 			-- Turn off the AskPrice addon message if it's a Soft Reserve.
 			if AucAdvanced and AucAdvanced.Settings then
 				local oldSetting = AucAdvanced.Settings.GetSetting('util.askprice.activated');
@@ -497,7 +497,7 @@ local function CHAT_MSG_WHISPER_HANDLER(text, playerName, _, _, _, _, _, _, _, _
 					end);
 				end
 			end
-			QuerySoftReserve(guid, strsub(text, 7));
+			QuerySoftReserve(guid, text:sub(7));
 		end
 	end
 end
