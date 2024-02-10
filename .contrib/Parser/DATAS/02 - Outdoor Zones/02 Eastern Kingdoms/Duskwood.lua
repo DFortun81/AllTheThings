@@ -2419,6 +2419,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 910,	-- Defias Enchanter
 					-- Added in 8.1.5 to BFA Time-Lost Trader
 				}),
+				-- #if BEFORE CATA
+				i(6211, {	-- Recipe: Elixir of Ogre's Strength
+					["crs"] = {
+						1251,	-- Splinter Fist Firemonger
+						891,	-- Splinter Fist Fire Weaver
+					},
+				}),
+				-- #endif
 				i(2233, {	-- Shadow Weaver Leggings
 					["cr"] = 533,	-- Nightbane Shadow Weaver
 					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023

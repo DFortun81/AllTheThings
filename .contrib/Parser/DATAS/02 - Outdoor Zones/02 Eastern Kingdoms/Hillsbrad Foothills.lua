@@ -3419,6 +3419,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if BEFORE CATA
+				i(6211, {	-- Recipe: Elixir of Ogre's Strength
+					["cr"] = 2373,	-- Mudsnout Shaman
+				}),
+				-- #endif
 				-- #if AFTER CATA
 				i(3745, {	-- Rune of Opening
 					["timeline"] = { "removed 4.0.3" },
