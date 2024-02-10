@@ -7,7 +7,7 @@ local i = function(itemID
 	if #classes < 12 then
 		item.classes = classes;
 	end
-	if string.len(covenant) > 0 then
+	if covenant and covenant:len() > 0 then
 		item.customCollect = { covenant };
 	end
 	Items[itemID] = item;

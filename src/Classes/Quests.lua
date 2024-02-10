@@ -1208,10 +1208,9 @@ local AndLockCriteria = {
 }
 app.GlobalVariants.AndLockCriteria = AndLockCriteria
 if app.IsRetail then
-	local strsplit = strsplit
 	local WithTypeName = {
 		name = function(t)
-			local type, id = strsplit(":",t.type)
+			local type, id = (":"):split(t.type)
 			local data = app.GetAutomaticHeaderData(id,type)
 			for key,value in pairs(data) do
 				t[key] = value;
@@ -1219,7 +1218,7 @@ if app.IsRetail then
 			return data.name
 		end,
 		icon = function(t)
-			local type, id = strsplit(":",t.type)
+			local type, id = (":"):split(t.type)
 			local data = app.GetAutomaticHeaderData(id,type)
 			for key,value in pairs(data) do
 				t[key] = value;

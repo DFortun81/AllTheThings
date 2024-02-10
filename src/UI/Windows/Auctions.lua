@@ -23,7 +23,7 @@ app:CreateWindow("Auctions", {
 					-- Process the Auction
 					local link = _GetAuctionItemLink("list", index);
 					if link then
-						local _,itemID = strsplit(":", link:match("item[%-?%d:]+"));
+						local _,itemID = (":"):split(link:match("item[%-?%d:]+"));
 						auctionData[tonumber(itemID)] = 1;
 						--print("ProcessAuctions", index, link, itemID);
 					else

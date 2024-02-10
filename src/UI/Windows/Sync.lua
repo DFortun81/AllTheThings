@@ -3,8 +3,8 @@ local appName, app = ...;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, time, strsplit, tinsert, tremove =
-	  ipairs, pairs, time, strsplit, tinsert, tremove;
+local ipairs, pairs, time, tinsert, tremove =
+	  ipairs, pairs, time, tinsert, tremove;
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo = 
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
 -- NOTES: BNGetFriendInfo and BNGetNumFriends are useless
@@ -467,7 +467,7 @@ local deserializers = {
 		local count = #data;
 		for i=1,count,1 do
 			local skillString = data[i];
-			local spellID,value,total = strsplit(":", skillString);
+			local spellID,value,total = (":"):split(skillString);
 			currentValue[tonumber(spellID)] = { tonumber(value), tonumber(total) };
 		end
 		return currentValue;
@@ -522,7 +522,7 @@ local deserializers = {
 		else
 			currentValue = {};
 		end
-		local progress,total,modeString = strsplit(":", data[1]);
+		local progress,total,modeString = (":"):split(data[1]);
 		currentValue.progress = tonumber(progress);
 		currentValue.total = tonumber(total);
 		currentValue.modeString = modeString;
@@ -535,7 +535,7 @@ local deserializers = {
 			currentValue = {};
 		end
 		for i=1,#data,1 do
-			local tableName,timestamp = strsplit(":", data[i]);
+			local tableName,timestamp = (":"):split(data[i]);
 			currentValue[tableName] = tonumber(timestamp);
 		end
 		return currentValue;
@@ -656,13 +656,13 @@ MESSAGE_HANDLERS.check = function(self, sender, content, responses)
 end
 MESSAGE_HANDLERS.char = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
-	local guid, lastPlayed = strsplit(":", content[2]);
+	local guid, lastPlayed = (":"):split(content[2]);
 	ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed), true);
 end
 MESSAGE_HANDLERS.chars = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
 	for i=2,#content,1 do
-		local guid, lastPlayed = strsplit(":", content[i]);
+		local guid, lastPlayed = (":"):split(content[i]);
 		ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed), false);
 	end
 end
@@ -965,7 +965,7 @@ app:CreateWindow("Synchronization", {
 						app:ShowPopupDialogWithEditBox("Please type the name of the character to link to.", "", function(cmd)
 							if cmd and cmd ~= "" then
 								-- Prevent server names.
-								cmd = strsplit("-", cmd);
+								cmd = ("-"):split(cmd);
 								LinkedCharacters[cmd] = true;
 								SendAddonMessage(cmd, "link," .. CurrentCharacter.battleTag);
 								self:Rebuild();

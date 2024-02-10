@@ -779,7 +779,7 @@ local function RowOnEnter(self)
 					if reference.e then
 						local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
 						if reason then
-							local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
+							local left, right = DESCRIPTION_SEPARATOR:split(reason);
 							if right then
 								GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
 							else
@@ -828,7 +828,7 @@ local function RowOnEnter(self)
 
 		title = reference.title;
 		if title then
-			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
+			local left, right = DESCRIPTION_SEPARATOR:split(title);
 			if right then
 				GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 			else
@@ -1060,7 +1060,7 @@ local function RowOnEnter(self)
 				if timeStrings then
 					local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
 					for i,timeString in ipairs(timeStrings) do
-						local left, right = strsplit(DESCRIPTION_SEPARATOR, timeString);
+						local left, right = DESCRIPTION_SEPARATOR:split(timeString);
 						if right then
 							GameTooltip:AddDoubleLine(left, right, r, g, b, r, g, b, 1);
 						else
@@ -1096,7 +1096,7 @@ local function RowOnEnter(self)
 			if reference.e then
 				local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
 				if reason then
-					local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
+					local left, right = DESCRIPTION_SEPARATOR:split(reason);
 					if right then
 						GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
 					else
@@ -2921,7 +2921,7 @@ end
 function app:CreateMiniListFromSource(key, id, sourcePath)
 	-- If we provided the original source path, then we can find the exact element to popout.
 	if sourcePath then
-		local hashes = { strsplit(">", sourcePath) };
+		local hashes = { (">"):split(sourcePath) };
 		local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
 		if ref then
 			app:CreateMiniListForGroup(ref);

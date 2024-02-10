@@ -1126,14 +1126,14 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if rawlink then
 		local itemString = rawlink:match("item[%-?%d:]+");
 		if itemString then
-			local itemID2 = select(2, strsplit(":", itemString));
+			local itemID2 = select(2, (":"):split(itemString));
 			if itemID2 then
 				itemID = tonumber(itemID2);
 				paramA = "itemID";
 				paramB = itemID;
 			end
 		else
-			local kind, id = strsplit(":", rawlink);
+			local kind, id = (":"):split(rawlink);
 			kind = kind:lower();
 			if id then id = tonumber(id); end
 			if kind == "itemid" then
@@ -1177,7 +1177,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if e then
 			local reason = app.Modules.Events.GetEventTooltipNoteForGroup({ e = e });
 			if reason then
-				local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
+				local left, right = DESCRIPTION_SEPARATOR:split(reason);
 				if right then
 					tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
 				else
@@ -1272,7 +1272,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 			local count, splitCounts, splitCount = 0, { };
 			for i,data in ipairs(listing) do
-				local left, right = strsplit(DESCRIPTION_SEPARATOR, data[1]);
+				local left, right = DESCRIPTION_SEPARATOR:split(data[1]);
 				left = left .. data[2];
 				splitCount = splitCounts[left];
 				if not splitCount then
@@ -1780,7 +1780,7 @@ local function SearchForLink(link)
 		local itemString = link:match("item[%-?%d:]+") or link;
 		if itemString then
 			-- Cache the Item ID and the Suffix ID.
-			local _, itemID, _, _, _, _, _, suffixID = strsplit(":", itemString);
+			local _, itemID, _, _, _, _, _, suffixID = (":"):split(itemString);
 			if itemID then
 				-- Ensure that the itemID and suffixID are properly formatted.
 				itemID = tonumber(itemID) or 0;
@@ -1803,7 +1803,7 @@ local function SearchForLink(link)
 			end
 		end
 	else
-		local kind, id = strsplit(":", link);
+		local kind, id = (":"):split(link);
 		kind = kind:lower():gsub("id", "ID");
 		if kind:sub(1,2) == "|c" then
 			kind = kind:sub(11);
@@ -1811,7 +1811,7 @@ local function SearchForLink(link)
 		if kind:sub(1,2) == "|h" then
 			kind = kind:sub(3);
 		end
-		if id then id = tonumber(strsplit("|[", id) or id); end
+		if id then id = tonumber(("|["):split(id) or id); end
 		--print("SearchForLink A:", kind, id);
 		--print("SearchForLink B:", link:gsub("|c", "c"):gsub("|h", "h"));
 		if kind == "i" then
@@ -4218,7 +4218,7 @@ end
 app.CacheFlightPathDataForTarget = function(nodes)
 	local guid = UnitGUID("npc") or UnitGUID("target");
 	if guid then
-		local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+		local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
 		if type == "Creature" and npcID then
 			npcID = tonumber(npcID);
 			local count = 0;
@@ -6062,14 +6062,14 @@ app.AddEventHandler("OnReady", function()
 				if sourceString then
 					if not root then
 						root = {};
-						local sourceStrings = { strsplit(";", sourceString) };
+						local sourceStrings = { (";"):split(sourceString) };
 						for i,sourcePath in ipairs(sourceStrings) do
-							local hashes = { strsplit(">", sourcePath) };
+							local hashes = { (">"):split(sourcePath) };
 							local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
 							if ref then
 								tinsert(root, ref);
 							else
-								hashes = { strsplit("ID", sourcePath) };
+								hashes = { ("ID"):split(sourcePath) };
 								if #hashes == 3 then
 									ref = app.CreateClassInstance(hashes[1] .. "ID", tonumber(hashes[3]));
 									if ref then tinsert(root, ref); end
@@ -6145,12 +6145,12 @@ end);
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
 		-- print("Chat Link Click",link,string_gsub(text, "\|","&"));
-		local type, info, data1, data2, data3 = strsplit(":", link);
+		local type, info, data1, data2, data3 = (":"):split(link);
 		--print(type, info, data1, data2, data3)
 		if type == "addon" and info == "ATT" then
 			local op = link:sub(17)
 			--print("ATT Link",op)
-			-- local type, paramA, paramB = strsplit(":", data);
+			-- local type, paramA, paramB = (":"):split(data);
 			-- print(type,paramA,paramB)
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;

@@ -24,8 +24,8 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 						if text then
 							if text:find("Classes: ") then
 								local classes = {};
-								local _,list = strsplit(":", text);
-								for i,className in ipairs({strsplit(",", list)}) do
+								local _,list = (":"):split(text);
+								for i,className in ipairs({(","):split(list)}) do
 									tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
 								end
 								if #classes > 0 then
@@ -33,8 +33,8 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								end
 							elseif text:find("Races: ") then
 								local races = {};
-								local _,list = strsplit(":", text);
-								for i,raceName in ipairs({strsplit(",", list)}) do
+								local _,list = (":"):split(text);
+								for i,raceName in ipairs({(","):split(list)}) do
 									tinsert(races, app.RaceDB[raceName:trim()]);
 								end
 								if #races > 0 then
@@ -45,7 +45,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
 									text = text:trim():sub(9);
 									if text:find("-") then
-										local faction,replevel = strsplit("-", text);
+										local faction,replevel = ("-"):split(text);
 										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
 									else
 										if text:find("%(") then
@@ -53,7 +53,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 												-- If non-specialization skill is already assigned, skip this part.
 												text = nil;
 											else
-												text = strsplit("(", text);
+												text = ("("):split(text);
 											end
 										end
 										if text then

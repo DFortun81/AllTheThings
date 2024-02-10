@@ -15,7 +15,7 @@ local RETRIEVING_DATA, RETRIEVING_ITEM_INFO
 -- App locals
 
 -- Module locals
-local RETRIEVING = strsplit(" ", RETRIEVING_DATA);
+local RETRIEVING = (" "):split(RETRIEVING_DATA);
 
 -- Retrieving Data API Implementation
 -- Access via AllTheThings.Modules.RetrievingData

@@ -51,13 +51,12 @@ local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local PlayerHasToy = _G["PlayerHasToy"];
 local InCombatLockdown = _G["InCombatLockdown"];
-local print = print
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		strsplit, GetTimePreciseSec, type, math_floor
-	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		strsplit, GetTimePreciseSec, type, math.floor
+local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
+		GetTimePreciseSec, type, math_floor
+	= print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
+		GetTimePreciseSec, type, math.floor
 local ATTAccountWideData;
 
 -- App & Module locals
@@ -3190,7 +3189,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			sourceID = GetSourceID(rawlink);
 			-- print("Rawlink SourceID",sourceID,rawlink)
 			if isTopLevelSearch and app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
-			local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = strsplit(":", itemString);
+			local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
 			if itemID2 then
 				itemID = tonumber(itemID2);
 				modID = tonumber(linkModID) or 0;
@@ -3201,7 +3200,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
 			end
 		else
-			local kind, id = strsplit(":", rawlink);
+			local kind, id = (":"):split(rawlink);
 			kind = kind:lower();
 			if id then id = tonumber(id); end
 			if kind == "itemid" then
@@ -3562,7 +3561,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 			for _,text in ipairs(listing) do
 				if not working and IsRetrieving(text) then working = true; end
-				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
+				local left, right = DESCRIPTION_SEPARATOR:split(text);
 				tinsert(info, 1, { left = left, right = right, wrap = wrap });
 			end
 		end
@@ -3819,7 +3818,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if group.e then
 			local reason = app.Modules.Events.GetEventTooltipNoteForGroup(group);
 			if reason then
-				local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
+				local left, right = DESCRIPTION_SEPARATOR:split(reason);
 				if right then
 					tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
 				else
@@ -4838,7 +4837,7 @@ function app:SendChunk(sender, uid, index, success)
 end
 
 function app:IsAccountLinked(sender)
-	return AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[strsplit("-", sender)];
+	return AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[("-"):split(sender)];
 end
 local function DefaultSyncCharacterData(allCharacters, key)
 	local data = {};
@@ -4926,7 +4925,7 @@ function app:ReceiveSyncSummary(sender, summary)
 	if app:IsAccountLinked(sender) then
 		local first = #queue == 0;
 		for i,data in ipairs(summary) do
-			local guid,lastPlayed = strsplit(":", data);
+			local guid,lastPlayed = (":"):split(data);
 			local character = ATTCharacterData[guid];
 			if not character or not character.lastPlayed or (character.lastPlayed < tonumber(lastPlayed)) and guid ~= active then
 				tinsert(queue, { guid, character and character.text or guid, sender });
@@ -5107,7 +5106,7 @@ local function SearchForLink(link)
 		local itemString = link:match("item[%-?%d:]+") or link;
 		if itemString then
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
-				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
+				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = (":"):split(link);
 			if itemID then
 				itemID = tonumber(itemID) or 0;
 				-- Don't use SourceID for artifact searches since they contain many SourceIDs
@@ -5135,7 +5134,7 @@ local function SearchForLink(link)
 			end
 		end
 	else
-		local kind, id = strsplit(":", link);
+		local kind, id = (":"):split(link);
 		kind = kind:lower();
 		if kind:sub(1,2) == "|c" then
 			kind = kind:sub(11);
@@ -5143,7 +5142,7 @@ local function SearchForLink(link)
 		if kind:sub(1,2) == "|h" then
 			kind = kind:sub(3);
 		end
-		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
+		if id then id = tonumber(select(1, ("|["):split(id)) or id); end
 		if not id or not kind then
 			-- can't search for nothing!
 			return;
@@ -5461,14 +5460,14 @@ app.AddEventHandler("OnReady", function()
 				if sourceString then
 					if not root then
 						root = {};
-						local sourceStrings = { strsplit(";", sourceString) };
+						local sourceStrings = { (";"):split(sourceString) };
 						for i,sourcePath in ipairs(sourceStrings) do
-							local hashes = { strsplit(">", sourcePath) };
+							local hashes = { (">"):split(sourcePath) };
 							local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
 							if ref then
 								tinsert(root, ref);
 							else
-								hashes = { strsplit("ID", sourcePath) };
+								hashes = { ("ID"):split(sourcePath) };
 								if #hashes == 3 then
 									ref = CreateObject({ [hashes[1] .. "ID"] = tonumber(hashes[3])});
 									if ref then tinsert(root, ref); end
@@ -8511,16 +8510,16 @@ itemTooltipHarvesterFields.text = function(t)
 							-- if debugPrint then print(text) end
 							if text:find("Classes: ") then
 								local classes = {};
-								local _,list = strsplit(":", text);
-								for i,className in ipairs({strsplit(",", list)}) do
+								local _,list = (":"):split(text);
+								for i,className in ipairs({(","):split(list)}) do
 									tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
 								end
 							elseif text:find("Races: ") then
-								local _,list = strsplit(":", text);
-								local raceNames = {strsplit(",", list)};
+								local _,list = (":"):split(text);
+								local raceNames = {(","):split(list)};
 								if raceNames then
 									local races = {};
 									for _,raceName in ipairs(raceNames) do
@@ -8542,7 +8541,7 @@ itemTooltipHarvesterFields.text = function(t)
 									print("Empty Races",t.info.itemID)
 								end
 							elseif text:find(" Only") then
-								local faction, _, c = strsplit(" ", text);
+								local faction, _, c = (" "):split(text);
 								if not c then
 									faction = faction:trim();
 									if faction == "Alliance" then
@@ -8558,7 +8557,7 @@ itemTooltipHarvesterFields.text = function(t)
 								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
 									text = text:trim():sub(9);
 									if text:find("-") then
-										local faction,replevel = strsplit("-", text);
+										local faction,replevel = ("-"):split(text);
 										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
 									else
 										if text:find("%(") then
@@ -8566,7 +8565,7 @@ itemTooltipHarvesterFields.text = function(t)
 												-- If non-specialization skill is already assigned, skip this part.
 												text = nil;
 											else
-												text = strsplit("(", text);
+												text = ("("):split(text);
 											end
 										end
 										if text then
@@ -8699,7 +8698,7 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 		group.rawlink = rawlink;
 		-- importing a rawlink will clear any cached upgrade info for the group
 		group._up = nil;
-		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", rawlink);
+		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = (":"):split(rawlink);
 		if linkItemID then
 			-- app.PrintDebug("IRL+",rawlink,linkItemID,modID,bonusCount,bonusID1);
 			-- set raw fields in the group based on the link
@@ -11629,7 +11628,7 @@ RowOnEnter = function (self)
 
 		local title = reference.title;
 		if title then
-			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
+			local left, right = DESCRIPTION_SEPARATOR:split(title);
 			if right then
 				GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 			else
@@ -11949,7 +11948,7 @@ RowOnEnter = function (self)
 				local timeStrings = app.Modules.Events.GetEventTimeStrings(reference.nextEvent);
 				if timeStrings then
 					for i,timeString in ipairs(timeStrings) do
-						local left, right = strsplit(DESCRIPTION_SEPARATOR, timeString);
+						local left, right = DESCRIPTION_SEPARATOR:split(timeString);
 						if right then
 							GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
 						else
@@ -11971,7 +11970,7 @@ RowOnEnter = function (self)
 			if reference.e then
 				local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
 				if reason then
-					local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
+					local left, right = DESCRIPTION_SEPARATOR:split(reason);
 					if right then
 						GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
 					else
@@ -14913,7 +14912,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 									self:Search("f", f);
 								else
 									-- direct field search
-									local field, value = strsplit("=",input);
+									local field, value = ("="):split(input);
 									value = tonumber(value) or value;
 									if value and value ~= "" then
 										-- allows performing a value search when looking for 'nil'
@@ -16230,7 +16229,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			local added = {};
 			CacheFields = {};
 			local cacheID;
-			local _, cacheKey = strsplit(":", dataType);
+			local _, cacheKey = (":"):split(dataType);
 			local cacheKeyID = cacheKey.."ID";
 			local imin, imax = 0, 999999
 			-- convert the list min/max into cache-based min/max for cache lists
@@ -17502,7 +17501,7 @@ app.LoadDebugger = function()
 				-- print("AddMerchant",guid)
 				local guid = guid or UnitGUID("npc");
 				if guid then
-					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(guid);
 					if npc_id then
 						npc_id = tonumber(npc_id);
 
@@ -17659,7 +17658,7 @@ app.LoadDebugger = function()
 						guid = UnitGUID(npc);
 					end
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
-					if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
+					if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(guid); end
 					app.PrintDebug(e, questStartItemID, " => Quest #", questID, type, npc_id, app.NPCNameFromID[npc_id]);
 
 					local rawGroups = {};
@@ -17741,7 +17740,7 @@ app.LoadDebugger = function()
 							if itemID then
 								source = { GetLootSourceInfo(i) };
 								for j=1,#source,2 do
-									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = strsplit("-",source[j]);
+									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(source[j]);
 									-- TODO: test this with Item containers
 									app.PrintDebug("Add Loot",itemID,"from",type,id)
 									info = { [(type == "GameObject") and "objectID" or "npcID"] = tonumber(id), ["g"] = { { ["itemID"] = itemID, ["rawlink"] = loot } } };
@@ -17763,7 +17762,7 @@ app.LoadDebugger = function()
 				elseif e == "LOOT_OPENED" then
 					local guid = GetLootSourceInfo(1)
 					if guid then
-						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(guid);
 						if(type == "GameObject") then
 							local text = GameTooltipTextLeft1:GetText()
 							print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
@@ -18742,14 +18741,14 @@ SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
 	if cmd then
 		-- print(cmd)
-		local args = { strsplit(" ", cmd:lower()) };
+		local args = { (" "):split(cmd:lower()) };
 		cmd = args[1];
 		-- app.print(args)
 		-- first arg is always the window/command to execute
 		app.ResetCustomWindowParam(cmd);
 		for k=2,#args do
 			local customArg, customValue = args[k];
-			customArg, customValue = strsplit("=",customArg);
+			customArg, customValue = ("="):split(customArg);
 			-- app.PrintDebug("Split custom arg:",customArg,customValue)
 			app.SetCustomWindowParam(cmd, customArg, customValue or true);
 		end
@@ -18835,7 +18834,7 @@ SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 	app.SetCustomWindowParam("list", "reset", true);
 	app.SetCustomWindowParam("list", "type", "cache:item");
 	app.SetCustomWindowParam("list", "harvesting", true);
-	local args = { strsplit(",", cmd:lower()) };
+	local args = { (","):split(cmd:lower()) };
 	app.SetCustomWindowParam("list", "min", args[1]);
 	app.SetCustomWindowParam("list", "limit", args[2]);
 	app:GetWindow("list"):Toggle();
@@ -18875,12 +18874,12 @@ end
 		-- if IsShiftKeyDown() then
 		-- 	ChatEdit_InsertLink(text);
 		-- else
-		local type, info, data1, data2, data3 = strsplit(":", link);
+		local type, info, data1, data2, data3 = (":"):split(link);
 		-- print(type, info, data1, data2, data3)
 		if type == "addon" and info == "ATT" then
 			-- local op = link:sub(17)
 			-- print("ATT Link",op)
-			-- local type, paramA, paramB = strsplit(":", data);
+			-- local type, paramA, paramB = (":"):split(data);
 			-- print(type,paramA,paramB)
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;
@@ -19150,7 +19149,7 @@ local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
 local function DelVignette(vignetteGUID)
 	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
 	if vignetteInfo and vignetteInfo.objectGUID then
-		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
+		local type, _, _, _, _, id, _ = ("-"):split(vignetteInfo.objectGUID);
 		id = id and tonumber(id);
 		if id then
 			local searchType = type == "Creature" and "npcID" or "objectID";
@@ -19163,7 +19162,7 @@ local function AddVignette(vignetteGUID)
 	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
 	if vignetteInfo and vignetteInfo.objectGUID then
 		-- app.PrintDebug("Add Vignette",vignetteInfo.objectGUID)
-		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
+		local type, _, _, _, _, id, _ = ("-"):split(vignetteInfo.objectGUID);
 		id = id and tonumber(id);
 		if id then
 			local searchType = type == "Creature" and "npcID" or "objectID";

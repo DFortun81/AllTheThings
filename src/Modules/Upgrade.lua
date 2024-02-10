@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and checking Upgrade information
 
 -- Global locals
-local floor, 	  type, strsplit, tonumber, ipairs, pairs
-	= math.floor, type, strsplit, tonumber, ipairs, pairs
+local floor, 	  type, tonumber, ipairs, pairs
+	= math.floor, type, tonumber, ipairs, pairs
 
 -- App locals
 local SearchForFieldContainer, IsRetrieving
@@ -194,7 +194,7 @@ local function GetFirstValueAndKey(t, keys)
 	end
 end
 local function GetNextItemUnlockBonusIDByString(item)
-	local itemVals = {strsplit(":", item)}
+	local itemVals = {(":"):split(item)}
 
 	-- BonusID count
 	local bonusCount = tonumber(itemVals[14])

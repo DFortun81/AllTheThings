@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
-	= ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
+local ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
+	= ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
 
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
@@ -623,7 +623,7 @@ if TooltipDataProcessor then
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then
 			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
-			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
+			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(id);
 			-- print(target, type, npc_id);
 			if type == "Player" then
 				local method = PLAYER_TOOLTIPS[id];
@@ -693,7 +693,7 @@ if TooltipDataProcessor then
 					local content = ttdata.lines;
 					if content and #content > 0 then
 						local text = content[1].leftText;
-						local arr = { strsplit("|", text) };
+						local arr = { ("|"):split(text) };
 						if #arr == 3 then text = arr[3]:sub(2); end
 						local objectID = GetBestObjectIDForName(text);
 						if objectID then
@@ -769,7 +769,7 @@ else
 					local guid = UnitGUID(target);
 					if guid then
 						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
-						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
 						--print(guid, type, npcID);
 						if type == "Player" then
 							local method = PLAYER_TOOLTIPS[guid];

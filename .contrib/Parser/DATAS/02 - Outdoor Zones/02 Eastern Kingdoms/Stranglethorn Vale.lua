@@ -49,7 +49,7 @@ local OnTooltipForBloodsail = [[function(t)
 					f.COMBAT_LOG_EVENT_UNFILTERED = function(ts, subevent, ...)
 						if subevent == "UNIT_DIED" then
 							local guid = select(6, ...);
-							if select(6, strsplit("-",guid)) == "9179" then
+							if select(6, ("-"):split(guid)) == "9179" then
 								DBM:CreatePizzaTimer(320, "Respawn (min)");
 								DBM:CreatePizzaTimer(510, "Respawn (max)");
 							end

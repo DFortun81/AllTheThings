@@ -123,7 +123,7 @@ app:CreateWindow("Debugger", {
 				C_Timer.After(0.6, function()
 					local guid = UnitGUID("npc");
 					local ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
-					if guid then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid); end
+					if guid then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
 					if npcID then
 						npcID = tonumber(npcID);
 
@@ -174,7 +174,7 @@ app:CreateWindow("Debugger", {
 			elseif e == "GOSSIP_SHOW" then
 				local guid = UnitGUID("npc");
 				if guid then
-					local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+					local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
 					if npcID then
 						npcID = tonumber(npcID);
 						--print("GOSSIP_SHOW", type, npcID);
@@ -199,7 +199,7 @@ app:CreateWindow("Debugger", {
 					guid = UnitGUID(npc);
 				end
 				local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
-				if guid then type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid); end
+				if guid then type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
 				-- print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npcID);
 
 				local rawGroups = {};

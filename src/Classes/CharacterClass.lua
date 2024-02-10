@@ -8,8 +8,8 @@ local C_CreatureInfo_GetClassInfo, C_CreatureInfo_GetRaceInfo
 	= C_CreatureInfo.GetClassInfo, C_CreatureInfo.GetRaceInfo;
 local RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace
 	= RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace;
-local math_floor, rawget, rawset, setmetatable, strsplit
-	= math.floor, rawget, rawset, setmetatable, strsplit;
+local math_floor, rawget, rawset, setmetatable
+	= math.floor, rawget, rawset, setmetatable;
 
 -- Class Info Helpers
 local ClassIcons = {
@@ -175,7 +175,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 			end
 		end
 		local name, guid, className, classFile, classID, raceName, raceFile, raceID;
-		if #{strsplit("-", unit)} > 1 then
+		if #{("-"):split(unit)} > 1 then
 			-- It's a GUID.
 			guid = unit;
 			className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);

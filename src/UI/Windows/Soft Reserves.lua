@@ -8,7 +8,7 @@ local GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRo
 local GetItemInfo, GetItemInfoInstant = GetItemInfo, GetItemInfoInstant;
 local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 	  GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty;
-local strsplit, tinsert, tremove = strsplit, tinsert, tremove;
+local tinsert, tremove = tinsert, tremove;
 
 -- App locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -73,7 +73,7 @@ local PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 			for guildIndex = 1, count, 1 do
 				local name, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, guid = GetGuildRosterInfo(guildIndex);
 				if name and guid then
-					rawset(t, strsplit('-', name), guid);
+					rawset(t, ('-'):split(name), guid);
 				end
 			end
 		end
@@ -394,7 +394,7 @@ end
 local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 	if prefix == "ATTC" then
 		--print(prefix, text, channel, sender, target)
-		local args = { strsplit("\t", text) };
+		local args = { ("\t"):split(text) };
 		local cmd, a = args[1], args[2];
 		if cmd and a then
 			if cmd == "?" then		-- Query Request
@@ -453,7 +453,7 @@ local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 				end
 			elseif cmd == "to" then	-- To Command
 				local myName = UnitName("player");
-				local name,server = strsplit("-", a);
+				local name,server = ("-"):split(a);
 				if myName == name and (not server or GetRealmName() == server) then
 					CHAT_MSG_ADDON_HANDLER(prefix, text:sub(5 + a:len()), "WHISPER", sender);
 				end

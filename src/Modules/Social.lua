@@ -2,8 +2,8 @@
 local _, app = ...;
 
 -- Global locals
-local print, select, strsplit, tonumber, tremove
-	= print, select, strsplit, tonumber, tremove;
+local print, select, tonumber, tremove
+	= print, select, tonumber, tremove;
 local C_ChatInfo, GetRealmName, IsInGuild, IsInGroup, IsInInstance, IsInRaid, UnitGUID, UnitInParty, UnitInRaid, UnitIsPlayer, UnitName
 	= C_ChatInfo, GetRealmName, IsInGuild, IsInGroup, IsInInstance, IsInRaid, UnitGUID, UnitInParty, UnitInRaid, UnitIsPlayer, UnitName;
 local LE_PARTY_CATEGORY_INSTANCE, LE_PARTY_CATEGORY_HOME
@@ -28,7 +28,7 @@ local function SendGuildMessage(msg)
 	end
 end
 local function SendResponseMessage(msg, player)
-	local name,server = strsplit("-", player);
+	local name,server = ("-"):split(player);
 	if not server or server == "" or server == GetRealmName() then
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", name);
 	elseif UnitInRaid(player) or UnitInParty(player) then
@@ -42,7 +42,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 	if not target then target = sender; end
 	if prefix == "ATTC" then
 		--print(prefix, text, channel, sender, target, ...)
-		local args = { strsplit("\t", text) };
+		local args = { ("\t"):split(text) };
 		local cmd = args[1];
 		if cmd then
 			local a = args[2];
@@ -151,7 +151,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 				end
 			elseif cmd == "to" then	-- To Command
 				local myName = UnitName("player");
-				local name,server = strsplit("-", a);
+				local name,server = ("-"):split(a);
 				if myName == name and (not server or server == "" or GetRealmName() == server) then
 					app.events.CHAT_MSG_ADDON(prefix, text:sub(5 + a:len()), "WHISPER", sender);
 				end
@@ -159,7 +159,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 		end
 	elseif prefix == "ATT" then	-- old format, supported until Retail supports the new sync window
 		--print(prefix, text, channel, sender, target, ...)
-		local args = { strsplit("\t", text) };
+		local args = { ("\t"):split(text) };
 		local cmd = args[1];
 		if cmd then
 			local a = args[2];
@@ -185,7 +185,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 				if response then print(response .. sender); end
 			elseif cmd == "to" then	-- To Command
 				local myName = UnitName("player");
-				local name,server = strsplit("-", a);
+				local name,server = ("-"):split(a);
 				if myName == name and (not server or server == "" or GetRealmName() == server) then
 					app.events.CHAT_MSG_ADDON(prefix, text:sub(5 + a:len()), "WHISPER", sender);
 				end
@@ -234,7 +234,7 @@ SlashCmdList["ALLTHETHINGSYOU"] = function(cmd)
 			end
 			SendResponseMessage(cmd, (server and server ~= "" and (name .. "-" .. server)) or name);
 		else
-			local cmd = "creatureid:" .. select(6, strsplit("-", UnitGUID("target")));
+			local cmd = "creatureid:" .. select(6, ("-"):split(UnitGUID("target")));
 			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
 			if group then app:CreateMiniListForGroup(group); end
 		end

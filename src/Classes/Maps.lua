@@ -5,8 +5,8 @@ local L = app.L;
 local contains, IsQuestFlaggedCompleted = app.contains, app.IsQuestFlaggedCompleted;
 
 -- Global locals
-local coroutine, ipairs, pairs, rawset, strsplit, tinsert, tonumber, math_floor
-	= coroutine, ipairs, pairs, rawset, strsplit, tinsert, tonumber, math.floor;
+local coroutine, ipairs, pairs, rawset, tinsert, tonumber, math_floor
+	= coroutine, ipairs, pairs, rawset, tinsert, tonumber, math.floor;
 local CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown
 	= CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown;
 local C_Map_GetMapArtID = C_Map.GetMapArtID;
@@ -247,7 +247,7 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 			local maphash = t.maphash;
 			if maphash then
 				local coords = {};
-				local width, height, offsetX, offsetY = strsplit(":", maphash);
+				local width, height, offsetX, offsetY = (":"):split(maphash);
 				tinsert(coords, {((offsetX + (width * 0.5)) * 100) / WorldMapFrame:GetWidth(), ((offsetY + (height * 0.5)) * 100) / WorldMapFrame:GetHeight(), t.mapID});
 				return coords;
 			end
