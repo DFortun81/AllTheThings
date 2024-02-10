@@ -233,5 +233,13 @@ else
 			collectible = true
 		}, { __index = t });
 	end
+	app.CreateFollower = function(id, t)
+		return setmetatable({
+			text = "@CRIEVE: Follower #" .. id,
+			description = "This data type is not supported at this time.",
+			collected = false,
+			collectible = true
+		}, { __index = t });
+	end
 end
 end

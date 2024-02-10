@@ -5351,35 +5351,6 @@ app.CreateSpell = function(id, t)
 end
 end)();
 
--- Tier Lib
-(function()
-	local baseTier = {
-		__index = function(t, key)
-			if key == "key" then
-				return "tierID";
-			elseif key == "ignoreSourceLookup" then
-				return true;
-			else
-				local info = rawget(L.TIER_DATA, t.tierID);
-				return info and rawget(info, key);
-			end
-		end
-	};
-	app.CreateTier = function(id, t)
-		-- patch can be included in the id
-		local tierID = math_floor(id);
-		t = app.constructor(tierID, t, "tierID");
-		if id > tierID then
-			local patch_decimal = 100 * (id - tierID);
-			local patch = math_floor(patch_decimal + 0.0001);
-			local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
-			-- print("tier cache",id,tierID,patch_decimal,patch,rev)
-			t.text = tostring(tierID).."."..tostring(patch).."."..tostring(rev);
-		end
-		return setmetatable(t, baseTier);
-	end
-end)();
-
 -- Unsupported Libs
 (function()
 -- Neither of these are supported at this time.

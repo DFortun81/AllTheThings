@@ -74,6 +74,7 @@ src\Classes\Illusions.lua
 src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
 src\Classes\Races.lua
+src\Classes\Tier.lua
 src\Classes\Title.lua
 src\Classes\CharacterUnlock.lua
 

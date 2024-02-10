@@ -427,7 +427,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 						local variantClone
 						for variantName,variant in pairs(variants) do
 							if not variant.__condition then
-								app.print("Missing Sub-Class Variant __conditon!",variantName,subclassName,className)
+								app.print("Missing Sub-Class Variant __condition!",variantName,subclassName,className)
 							end
 							-- raw variant table may be used by other classes, so need to copy it for this specific subclass
 							variantClone = {}
@@ -531,6 +531,7 @@ app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 		else
 			t = {};
 		end
+		t[classKey] = id;
 		local info = classInfo[id];
 		return setmetatable(t, {
 			__index = function(t, key)
