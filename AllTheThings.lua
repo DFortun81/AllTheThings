@@ -42,13 +42,10 @@ local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementInfo = _G["GetAchievementInfo"];
 local GetAchievementLink = _G["GetAchievementLink"];
-local GetDifficultyInfo = _G["GetDifficultyInfo"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
-local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
-local PlayerHasToy = _G["PlayerHasToy"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
@@ -5183,6 +5180,7 @@ app.SearchForLink = SearchForLink;
 -- Map Information Lib
 do
 local C_SuperTrack = C_SuperTrack;
+local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local WaypointRunner = app.CreateRunner("waypoint");
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
@@ -7017,8 +7015,9 @@ end)();
 
 -- Difficulty Lib
 (function()
+local GetDifficultyInfo = _G["GetDifficultyInfo"];
 local cache = app.CreateCache("difficultyID");
-app.DifficultyColors = {
+local DifficultyColors = {
 	[2] = "ff0070dd",
 	[5] = "ff0070dd",
 	[6] = "ff0070dd",
@@ -7030,7 +7029,7 @@ app.DifficultyColors = {
 	[24] = "ffe6cc80",
 	[33] = "ffe6cc80",
 };
-app.DifficultyIcons = {
+local DifficultyIcons = {
 	[1] = app.asset("Difficulty_Normal"),
 	[2] = app.asset("Difficulty_Heroic"),
 	[3] = app.asset("Difficulty_Normal"),
@@ -7095,7 +7094,7 @@ local fields = {
 		return t.headerID and app.NPCNameFromID[t.headerID] or cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.DifficultyIcons[t.difficultyID] or app.asset("Difficulty_Multi");
+		return t.headerID and L["HEADER_ICONS"][t.headerID] or DifficultyIcons[t.difficultyID] or app.asset("Difficulty_Multi");
 	end,
 	["description"] = function(t)
 		return t.headerID and L["HEADER_DESCRIPTIONS"][t.headerID];
@@ -7154,6 +7153,35 @@ app.CreateDifficulty = function(id, t)
 	end
 	return setmetatable(t, app.BaseDifficulty);
 end
+app.AddLockoutInformationToTooltip = function(tooltip, reference)
+	local locks = reference.locks;
+	if locks then
+		if locks.encounters then
+			tooltip:AddDoubleLine("Resets", date("%c", locks.reset));
+			for encounterIter,encounter in pairs(locks.encounters) do
+				tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+			end
+		else
+			if reference.isLockoutShared and locks.shared then
+				tooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
+				for encounterIter,encounter in pairs(locks.shared.encounters) do
+					tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+				end
+			else
+				for key,value in pairs(locks) do
+					if key == "shared" then
+						-- Skip
+					else
+						tooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
+						for encounterIter,encounter in pairs(value.encounters) do
+							tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+						end
+					end
+				end
+			end
+		end
+	end
+end
 end)();
 
 -- Encounter Lib
@@ -7200,9 +7228,7 @@ local fields = {
 	["displayInfo"] = function(t)
 		return cache.GetCachedField(t, "displayInfo", default_displayInfo);
 	end,
-	["icon"] = function(t)
-		return app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
-	end,
+	["icon"] = app.GetRelativeDifficultyIcon,
 	["trackable"] = function(t)
 		return t.questID;
 	end,
@@ -9087,8 +9113,7 @@ local npcFields = {
 		return app.NPCDisplayIDFromID[t.npcID];
 	end,
 	["iconAsDefault"] = function(t)
-		return (t.parent and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01")
-			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
+		return (t.parent and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01") or app.GetRelativeDifficultyIcon(t);
 	end,
 	-- questID is sometimes a faction-based questID for a single NPC (i.e. BFA Warfront Rares), thanks Blizzard
 	["questID"] = function(t)
@@ -12191,16 +12216,6 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- Show if Quest is available
-		-- local questAvailable = refQuestID
-		-- 	and not reference.saved
-		-- 	and not C_QuestLog_IsOnQuest(refQuestID)
-		-- 	and not reference.locked
-		-- 	and not reference.missingReqs;
-		-- if questAvailable then
-		-- 	GameTooltip:AddLine(Colorize("Quest available to pick up", app.Colors.ChatLinkHQT));
-		-- end
-
 		-- Show Quest Prereqs
 		local isDebugMode, sqs, bestMatch = app.MODE_DEBUG;
 		if reference.sourceQuests and (not reference.saved or isDebugMode) then
@@ -12339,33 +12354,7 @@ RowOnEnter = function (self)
 		end
 
 		-- Show lockout information about an Instance (Raid or Dungeon)
-		local locks = reference.locks;
-		if locks then
-			if locks.encounters then
-				GameTooltip:AddDoubleLine("Resets", date("%c", locks.reset));	-- TODO: localize this with format string, not just single word
-				for encounterIter,encounter in pairs(locks.encounters) do
-					GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-				end
-			else
-				if reference.isLockoutShared and locks.shared then
-					GameTooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));	-- TODO: localize this with format string, not just single word
-					for encounterIter,encounter in pairs(locks.shared.encounters) do
-						GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-					end
-				else
-					for key,value in pairs(locks) do
-						if key == "shared" then
-							-- Skip
-						else
-							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key), app.DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
-							for encounterIter,encounter in pairs(value.encounters) do
-								GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-							end
-						end
-					end
-				end
-			end
-		end
+		app.AddLockoutInformationToTooltip(GameTooltip, reference);
 
 		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
 
@@ -18729,6 +18718,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 end
 
 
+local PlayerHasToy = _G["PlayerHasToy"];
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;

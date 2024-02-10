@@ -1216,33 +1216,7 @@ local function RowOnEnter(self)
 		GameTooltip:AddDoubleLine("Type", reference.__type);
 
 		-- Show lockout information about an Instance (Raid or Dungeon)
-		local locks = reference.locks;
-		if locks then
-			if locks.encounters then
-				GameTooltip:AddDoubleLine("Resets", date("%c", locks.reset));
-				for encounterIter,encounter in pairs(locks.encounters) do
-					GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-				end
-			else
-				if reference.isLockoutShared and locks.shared then
-					GameTooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
-					for encounterIter,encounter in pairs(locks.shared.encounters) do
-						GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-					end
-				else
-					for key,value in pairs(locks) do
-						if key == "shared" then
-							-- Skip
-						else
-							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key) or LOCK, app.DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
-							for encounterIter,encounter in pairs(value.encounters) do
-								GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-							end
-						end
-					end
-				end
-			end
-		end
+		app.AddLockoutInformationToTooltip(GameTooltip, reference);
 
 		if reference.OnTooltip then reference:OnTooltip(); end
 

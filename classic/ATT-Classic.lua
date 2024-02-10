@@ -3782,7 +3782,7 @@ local difficulties = {
 	[176] = { 4 },
 	[198] = { 3 },
 };
-app.DifficultyColors = {
+local DifficultyColors = {
 	[2] = "ff0070dd",
 	[5] = "ff0070dd",
 	[6] = "ff0070dd",
@@ -3794,7 +3794,7 @@ app.DifficultyColors = {
 	[24] = "ffe6cc80",
 	[33] = "ffe6cc80",
 };
-app.DifficultyIcons = {
+local DifficultyIcons = {
 	[1] = app.asset("Difficulty_Normal"),
 	[2] = app.asset("Difficulty_Heroic"),
 	[3] = app.asset("Difficulty_Normal"),
@@ -3814,6 +3814,9 @@ app.DifficultyIcons = {
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
 };
+app.GetRelativeDifficultyIcon = function(t)
+	return DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
+end
 if not GetDifficultyInfo(3) then
 	local difficultyData = {
 		[1] = "Normal",
@@ -3832,7 +3835,7 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 		return GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
 	end,
 	["icon"] = function(t)
-		return app.DifficultyIcons[t.difficultyID];
+		return DifficultyIcons[t.difficultyID];
 	end,
 	["saved"] = function(t)
 		return t.locks;
@@ -3873,6 +3876,35 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 		if t.parent then return t.key .. t[t.key] .. "~" .. t.parent.key .. t.parent[t.parent.key]; end
 	end,
 });
+app.AddLockoutInformationToTooltip = function(tooltip, reference)
+	local locks = reference.locks;
+	if locks then
+		if locks.encounters then
+			tooltip:AddDoubleLine("Resets", date("%c", locks.reset));
+			for encounterIter,encounter in pairs(locks.encounters) do
+				tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+			end
+		else
+			if reference.isLockoutShared and locks.shared then
+				tooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
+				for encounterIter,encounter in pairs(locks.shared.encounters) do
+					tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+				end
+			else
+				for key,value in pairs(locks) do
+					if key == "shared" then
+						-- Skip
+					else
+						tooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
+						for encounterIter,encounter in pairs(value.encounters) do
+							tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+						end
+					end
+				end
+			end
+		end
+	end
+end
 end)();
 
 -- Encounter Lib
@@ -3902,9 +3934,7 @@ if EJ_GetEncounterInfo then
 			rawset(t, "displayInfo", displayInfos);
 			return displayInfos;
 		end,
-		["icon"] = function(t)
-			return app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
-		end,
+		["icon"] = app.GetRelativeDifficultyIcon,
 	},
 	"WithQuest", {
 		trackable = app.ReturnTrue,
@@ -5097,8 +5127,7 @@ local createNPC = app.CreateClass("NPC", "npcID", {
 		return NPCNameFromID[t.npcID] or RETRIEVING_DATA;
 	end,
 	["icon"] = function(t)
-		return (t.parent and t.parent.headerID and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01")
-			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
+		return (t.parent and t.parent.headerID and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01") or app.GetRelativeDifficultyIcon(t);
 	end,
 	["title"] = function(t)
 		return NPCTitlesFromID[t.npcID];
