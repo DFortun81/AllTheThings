@@ -634,7 +634,8 @@ local instanceFields = {
 		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
 	end,
 	["name"] = function(t)
-		return GetMapName(t.mapID);
+		local mapID = t.mapID;
+		return mapID and GetMapName(mapID);
 	end,
 	["icon"] = function(t)
 		return app.asset("Category_Zones");
@@ -648,7 +649,8 @@ local instanceFields = {
 		return t.maps and t.maps[1];
 	end,
 	["lvl"] = function(t)
-		return C_Map_GetMapLevels(t.mapID);
+		local mapID = t.mapID;
+		return mapID and C_Map_GetMapLevels(mapID);
 	end,
 	["locks"] = function(t)
 		local lockouts = app.CurrentCharacter.Lockouts;
