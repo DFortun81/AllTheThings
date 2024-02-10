@@ -10,7 +10,7 @@ if C_ArtifactUI then
 		= pairs, select, math.floor;
 	local L, ColorizeRGB = app.L, app.Modules.Color.ColorizeRGB;
 	local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
-	local GetDetailedItemLevelInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, IsArtifactRelicItem;
+	local GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem;
 	local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 	
 	-- Artifact Class
@@ -128,6 +128,7 @@ if C_ArtifactUI then
 	});
 	
 	-- External Functionality
+	-- TODO: Eventually I'd like for this to not be externally referenced and to instead use an event handler or to register with the Settings Menu or something (be able to turn it off)
 	app.AddArtifactRelicInformation = function(itemID, rawlink, info, group)
 		if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 			-- If the item is a relic, then let's compare against equipped relics.
