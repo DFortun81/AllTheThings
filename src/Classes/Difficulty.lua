@@ -71,6 +71,10 @@ end
 
 app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["text"] = function(t)
+		-- don't follow sourceParent
+        local parent = rawget(t, "parent");
+        local parentInstance = parent and parent.instanceID;
+		if parentInstance then return t.name; end
 		return t.sourceParent and ("%s [%s]"):format(t.name, t.sourceParent.text or UNKNOWN) or t.name;
 	end,
 	["name"] = function(t)
