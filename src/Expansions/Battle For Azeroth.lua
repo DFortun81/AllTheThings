@@ -2,7 +2,7 @@ do
 -- App locals
 local appName,app = ...;
 
-if C_AzeriteEssence then
+if C_AzeriteEssence and app.GameBuildVersion >= 80000 then
 	local CurrentAzeriteEssenceRanks, AccountWideAzeriteEssenceRanks = {}, {};
 	local C_AzeriteEssence_GetEssenceInfo, C_AzeriteEssence_GetEssenceHyperlink =
 		C_AzeriteEssence.GetEssenceInfo, C_AzeriteEssence.GetEssenceHyperlink;
@@ -204,7 +204,6 @@ if C_AzeriteEssence then
 	
 	-- Event Handling
 	app.AddEventHandler("OnReady", function()
-		app:RegisterEvent("ARTIFACT_UPDATE");
 		app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_dungeons", bfa_azerite_armor_chest_dungeons);
 		app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_warfront", bfa_azerite_armor_chest_warfront);
 		app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_zonedrops", bfa_azerite_armor_chest_zonedrops);
