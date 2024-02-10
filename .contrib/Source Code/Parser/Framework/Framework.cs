@@ -1385,6 +1385,7 @@ namespace ATT
                 case "vignetteID":
                 case "visualID":
                 case "zone-quest":
+                case "zone-artIDs":
                 case "zone-text-areaID":
                 case "zone-text-areas":
 

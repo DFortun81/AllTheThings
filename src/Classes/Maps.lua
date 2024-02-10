@@ -44,7 +44,15 @@ for mapID,area in pairs({	-- MapID to AreaID List
 end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
-	local substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
+	local substitutions = L.ART_ID_TO_MAP_ID[originalMapID];
+	if substitutions then
+		local artID = C_Map_GetMapArtID(originalMapID);
+		if artID then
+			local mapID = substitutions[artID];
+			if mapID then return mapID; end
+		end
+	end
+	substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
 	if substitutions then
 		for questID,mapID in pairs(substitutions) do
 			if not IsQuestFlaggedCompleted(questID) and app.CurrentCharacter.Quests[questID] then

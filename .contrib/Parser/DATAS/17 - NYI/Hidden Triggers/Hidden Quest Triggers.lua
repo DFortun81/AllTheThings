@@ -613,6 +613,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
+		q(52781),	-- Triggers when speaking with Zidormi in Arathi Highlands to travel back in time
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time (spellID 395734)
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		-- 58013 triggered randomly during a Black Empire assault in uldum

@@ -3,7 +3,8 @@
 -------------------------------------------------------------------
 local function GenerateRewardsSymlinkForModID(factionHeader, modID)
 	return {
-		{"select", "questID", 52781 },	-- HQT for the phase of Arathi
+		{"select", "headerID", WAR_EFFORT },	-- Find the War Effort Header
+		{"find", "mapID", ARATH_HIGHLANDS },	-- Find Arathi Highlands
 		{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
 		{"find", "headerID", factionHeader},	-- Select the Faction Header.
 		{"extract","sourceID"},	-- Extract Sources
@@ -138,7 +139,11 @@ root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
 		n(WAR_EFFORT, {
 			m(ARATHI_HIGHLANDS, {	-- Outdoor Warfront-Phased Content
-				["zone-quest"] = 52781,	-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
+				-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
+				["zone-artIDs"] = {
+					1137,	-- Alliance and during an Alliance Controlled day
+				},
+				--["zone-quest"] = 52781,
 				["timeline"] = { ADDED_8_0_1_LAUNCH },
 				["crs"] = {
 					141649,	-- Zidormi

@@ -6,7 +6,11 @@ root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
 		n(WAR_EFFORT, {
 			m(DARKSHORE, {	-- Outdoor Warfront-Phased Content
-				["zone-quest"] = 54411,	-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is currently active
+				-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is currently active
+				["zone-artIDs"] = {
+					1176	-- Alliance during a Horde Controlled day
+				},
+				--["zone-quest"] = 54411,
 				["timeline"] = { ADDED_8_1_0 },
 				["crs"] = {
 					141489,	-- Zidormi

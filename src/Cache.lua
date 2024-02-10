@@ -397,6 +397,52 @@ local fieldConverters = {
 	end,
 
 	-- Localization Helpers
+	["zone-artIDs"] = function(group, value)
+		-- If this group uses a normal map, we want to rip out the cache for it.
+		-- Doing it after the cache is finished allows us to still prevent the coordinates
+		-- on relative objects and npcs from getting cached to the parent mapID.
+		local originalMaps = group.maps;
+		local originalMapID = group.mapID or (originalMaps and originalMaps[1]);
+		if originalMapID then
+			-- Generate a unique NEGATIVE mapID and cache the object to it.
+			local mapID = nextCustomMapID;
+			nextCustomMapID = nextCustomMapID - 1;
+			tinsert(runners, function()
+				if originalMaps then
+					if group.mapID then
+						tinsert(originalMaps, mapID);
+					else
+						group.mapID = nil;
+					end
+				else
+					group.maps = {mapID};
+				end
+			end);
+			-- Is there a situation where we would actually want the associated quest to show the data for the group since NOT being flagged is the trigger for it being available...?
+			CacheField(group, "mapID", mapID);
+			
+			local mapIDCache = currentCache.mapID;
+			tinsert(runners, function()
+				mapIDCache = mapIDCache[originalMapID];
+				for i,o in ipairs(mapIDCache) do
+					if o == group then
+						table.remove(mapIDCache, i);
+						
+						local artIDs = app.L.ART_ID_TO_MAP_ID[originalMapID];
+						if not artIDs then
+							artIDs = {};
+							app.L.ART_ID_TO_MAP_ID[originalMapID] = artIDs;
+						end
+						for j,artID in ipairs(value) do
+							artIDs[artID] = mapID;
+						end
+						app.L.MAP_ID_TO_ZONE_TEXT[mapID] = group.text;
+						break;
+					end
+				end
+			end);
+		end
+	end,
 	["zone-quest"] = function(group, value)
 		-- If this group uses a normal map, we want to rip out the cache for it.
 		-- Doing it after the cache is finished allows us to still prevent the coordinates

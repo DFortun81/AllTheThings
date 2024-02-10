@@ -1515,6 +1515,7 @@ end");
                         case "mapID":
                         case "races":
                         case "zone-quest":
+                        case "zone-artIDs":
                         case "zone-text-areaID":
                         case "zone-text-areas":
                             npcData[pair.Key] = pair.Value;
@@ -1975,6 +1976,7 @@ end");
                     case "maps":
                     case "qgs":
                     case "crs":
+                    case "zone-artIDs":
                     case "zone-text-areas":
                     case "_quests":
                     case "_npcs":

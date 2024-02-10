@@ -39,7 +39,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						i(167100, {	-- Alliance Champion's Cache
 							["modID"] = 53,	-- iLvl 415
 							["sym"] = {
-								{"select", "questID", 52781 },	-- HQT for the phase of Arathi
+								{"select", "headerID", WAR_EFFORT },	-- Find the War Effort Header
+								{"find", "mapID", ARATH_HIGHLANDS },	-- Find Arathi Highlands
 								{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
 								{"find", "headerID", FACTION_HEADER_ALLIANCE},	-- Select the Faction Header.
 								{"extract","sourceID"},	-- Extract Sources
