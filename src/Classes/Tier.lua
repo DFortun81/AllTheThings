@@ -27,7 +27,6 @@ setmetatable(TierInfoByID, {
 			local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
 			info = setmetatable({
 				name = tostring(tierID).."."..tostring(patch).."."..tostring(rev),
-				awp = math_floor(tierID * 10000) + math_floor(patch * 100) + rev,
 			}, { __index = TierInfoByID[tierID] });
 		else
 			info = TIER_DATA[tierID];
