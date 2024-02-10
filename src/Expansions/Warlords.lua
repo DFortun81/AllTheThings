@@ -40,7 +40,7 @@ if C_Garrison then
 			return t.info.lore;
 		end,
 	},
-	"WithItem", {
+	"Recipe", {
 		icon = function(t)
 			return select(5, GetItemInfoInstant(t.itemID)) or t.info.icon;
 		end,
