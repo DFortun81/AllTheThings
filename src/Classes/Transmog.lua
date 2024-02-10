@@ -265,7 +265,7 @@ if C_TransmogCollection then
 	
 	
 	-- The following Helper Methods are used when you obtain a new appearance.
-	function app.CompletionistItemCollectionHelper(sourceID, oldState)
+	local function CompletionistItemCollectionHelper(sourceID, oldState)
 		-- Get the source info for this source ID.
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 		if sourceInfo then
@@ -344,13 +344,13 @@ if C_TransmogCollection then
 			UpdateRawIDs("sourceID", unlockedSourceIDs);
 		end
 	end
-	function app.UniqueModeItemCollectionHelper(sourceID, oldState)
+	local function UniqueModeItemCollectionHelper(sourceID, oldState)
 		return UniqueModeItemCollectionHelperBase(sourceID, oldState, FilterItemSourceUnique);
 	end
-	function app.UniqueModeItemCollectionHelperOnlyMain(sourceID, oldState)
+	local function UniqueModeItemCollectionHelperOnlyMain(sourceID, oldState)
 		return UniqueModeItemCollectionHelperBase(sourceID, oldState, FilterItemSourceUniqueOnlyMain);
 	end
-	app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
+	local ActiveItemCollectionHelper = CompletionistItemCollectionHelper;
 
 	-- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
 	local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
@@ -985,7 +985,7 @@ if C_TransmogCollection then
 			-- We check here because Blizzard likes to double notify for items with timers.
 			if oldState ~= 1 then
 				ATTAccountWideData.Sources[sourceID] = 1;
-				app.ActiveItemCollectionHelper(sourceID, oldState);
+				ActiveItemCollectionHelper(sourceID, oldState);
 				app.WipeSearchCache();
 			end
 		end
@@ -1053,13 +1053,16 @@ if C_TransmogCollection then
 		if useUnique then
 			if useMainOnly then
 				app.ItemSourceFilter = FilterItemSourceUniqueOnlyMain;
+				ActiveItemCollectionHelper = UniqueModeItemCollectionHelperOnlyMain
 			else
 				app.ItemSourceFilter = FilterItemSourceUnique;
+				ActiveItemCollectionHelper = UniqueModeItemCollectionHelper
 			end
 		else
 			app.ItemSourceFilter = FilterItemSource;
+			ActiveItemCollectionHelper = CompletionistItemCollectionHelper;
 		end
-	end
+	end	
 else
 	-- Transmog is NOT supported.
 	-- Gear Sets
