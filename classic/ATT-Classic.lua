@@ -5,33 +5,33 @@
 --------------------------------------------------------------------------------
 -- App locals
 local appName, app = ...;
-local contains, constructor = app.contains, app.constructor;
-local AssignChildren, CloneArray, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneArray, app.CloneClassInstance, app.CloneReference;
-local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
-local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject, app.IsQuestReadyForTurnIn;
 local L = app.L;
+
+local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
+local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
 
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L.TITLE
-BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L["TOGGLE_ACCOUNT_MODE"]
-BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"]
-BINDING_NAME_ALLTHETHINGS_TOGGLEFACTIONMODE = L["TOGGLE_FACTION_MODE"]
+BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L.TOGGLE_ACCOUNT_MODE
+BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L.TOGGLE_COMPLETIONIST_MODE
+BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L.TOGGLE_DEBUG_MODE
+BINDING_NAME_ALLTHETHINGS_TOGGLEFACTIONMODE = L.TOGGLE_FACTION_MODE
 
-BINDING_HEADER_ALLTHETHINGS_PREFERENCES = L["PREFERENCES"]
-BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"]
-BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"]
-BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"]
-BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"]
-BINDING_NAME_ALLTHETHINGS_TOGGLELOOTDROPS = L["TOGGLE_LOOTDROPS"]
-BINDING_NAME_ALLTHETHINGS_TOGGLESOURCETEXT = L["TOGGLE_SOURCETEXT"]
+BINDING_HEADER_ALLTHETHINGS_PREFERENCES = L.PREFERENCES
+BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L.TOGGLE_COMPLETEDTHINGS
+BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L.TOGGLE_COMPLETEDGROUPS
+BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L.TOGGLE_COLLECTEDTHINGS
+BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L.TOGGLE_BOEITEMS
+BINDING_NAME_ALLTHETHINGS_TOGGLESOURCETEXT = L.TOGGLE_SOURCETEXT
 
-BINDING_HEADER_ALLTHETHINGS_MODULES = L["MODULES"]
-BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L["TOGGLE_MAINLIST"]
-BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L["TOGGLE_MINILIST"]
-BINDING_NAME_ALLTHETHINGS_TOGGLE_PROFESSION_LIST = L["TOGGLE_PROFESSION_LIST"]
-BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L["TOGGLE_RAID_ASSISTANT"]
-BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L["TOGGLE_RANDOM"]
-BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
+BINDING_HEADER_ALLTHETHINGS_MODULES = L.MODULES
+BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L.TOGGLE_MAINLIST
+BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L.TOGGLE_MINILIST
+BINDING_NAME_ALLTHETHINGS_TOGGLE_PROFESSION_LIST = L.TOGGLE_PROFESSION_LIST
+BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L.TOGGLE_RAID_ASSISTANT
+BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L.TOGGLE_WORLD_QUESTS_LIST
+BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L.TOGGLE_RANDOM
+BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Global API cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
@@ -57,6 +57,7 @@ local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
 -- App & Module locals
+local contains = app.contains;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
@@ -384,6 +385,7 @@ app.GetBestMapForGroup = GetBestMapForGroup;
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 
 local MergeObject;
+local CloneArray = app.CloneArray;
 local function GetHash(t)
 	local hash = t.hash;
 	if hash then return hash; end
@@ -843,7 +845,7 @@ ResolveSymbolicLink = function(o)
 						for k,result in ipairs(cache) do
 							local ref = ResolveSymbolicLink(result);
 							if ref then
-								local cs = CloneReference(result);
+								local cs = app.CloneReference(result);
 								if not cs.g then cs.g = {}; end
 								for i,m in ipairs(ref) do
 									tinsert(cs.g, m);
@@ -961,6 +963,7 @@ end
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 
 local InitialCachedSearch;
+local IsQuestReadyForTurnIn = app.IsQuestReadyForTurnIn;
 local function GetSearchResults(method, paramA, paramB, ...)
 	if not paramA then
 		print("GetSearchResults: Invalid paramA: nil");
@@ -3619,6 +3622,7 @@ end)();
 local CurrencyInfo = {};
 local GetCurrencyCount;
 local GetCurrencyLink = GetCurrencyLink;
+local GetRelativeField = app.GetRelativeField;
 if C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo then
 	local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
 	if C_CurrencyInfo.GetCurrencyLink then
@@ -3926,7 +3930,7 @@ else
 				return t;
 			end
 		end
-		t = constructor(id, t, "encounterID");
+		t = app.constructor(id, t, "encounterID");
 		t.text = "INVALID ENCOUNTER " .. id;
 		print(t.text);
 		return t;
@@ -5651,7 +5655,7 @@ end)();
 	app.CreateTier = function(id, t)
 		-- patch can be included in the id
 		local tierID = math_floor(id);
-		t = constructor(tierID, t, "tierID");
+		t = app.constructor(tierID, t, "tierID");
 		if id > tierID then
 			local patch_decimal = 100 * (id - tierID);
 			local patch = math_floor(patch_decimal + 0.0001);
