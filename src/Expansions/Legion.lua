@@ -11,7 +11,7 @@ if C_ArtifactUI then
 	local L, ColorizeRGB = app.L, app.Modules.Color.ColorizeRGB;
 	local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 	local GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem;
-	local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
+	local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 	
 	-- Artifact Class
 	app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {

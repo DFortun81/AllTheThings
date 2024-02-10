@@ -710,8 +710,14 @@ local function RowOnClick(self, button)
 		if IsControlKeyDown() then
 			-- If this reference has a link, then attempt to preview the appearance.
 			local link = reference.link or reference.silentLink;
-			if link and HandleModifiedItemClick(link) then
-				return true;
+			if link then
+				if reference.illusionID then
+					-- Illusions are a nasty animal that need to be displayed a special way.
+					DressUpVisual(link);
+					return true;
+				elseif HandleModifiedItemClick(link) then
+					return true;
+				end
 			end
 
 			-- If this reference is anything else, expand the groups.

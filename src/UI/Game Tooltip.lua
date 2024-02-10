@@ -185,7 +185,7 @@ local function TrySetModel(reference)
 			return true;
 		end
 
-		if reference.sourceID and reference.artifactID then
+		if reference.artifactID and reference.sourceID then
 			-- TODO: would be cool if this showed for all sourceID's, but it seems to be random which items show a model from the visualID
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.sourceID);
 			if sourceInfo and sourceInfo.visualID then

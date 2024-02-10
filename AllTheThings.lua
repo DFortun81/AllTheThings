@@ -10520,14 +10520,14 @@ local function RowOnClick(self, button)
 
 			-- Control Click Expands the Groups
 			if IsControlKeyDown() then
-				-- Illusions are a nasty animal that need to be displayed a special way.
-				if reference.illusionID then
-					local mainHandSourceID = TransmogUtil.GetInfoForEquippedSlot(TransmogUtil.GetTransmogLocation("MAINHANDSLOT", 0, 0));
-					DressUpVisual(mainHandSourceID, 16, reference.illusionID);
-				else
-					-- If this reference has a link, then attempt to preview the appearance.
-					local link = reference.link or reference.silentLink;
-					if link and HandleModifiedItemClick(link) then
+				-- If this reference has a link, then attempt to preview the appearance.
+				local link = reference.link or reference.silentLink;
+				if link then
+					if reference.illusionID then
+						-- Illusions are a nasty animal that need to be displayed a special way.
+						DressUpVisual(link);
+						return true;
+					elseif HandleModifiedItemClick(link) then
 						return true;
 					end
 				end
