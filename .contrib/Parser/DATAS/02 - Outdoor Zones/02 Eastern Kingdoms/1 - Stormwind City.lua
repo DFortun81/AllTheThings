@@ -109,6 +109,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
+						["coord"] = { 55.6, 85.8, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_ALCHEMY,
+							-- #if AFTER CATA
+							CATA_ALCHEMY
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 				prof(BLACKSMITHING, {
 					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 						["coord"] = { 57.0, 16.6, STORMWIND_CITY },

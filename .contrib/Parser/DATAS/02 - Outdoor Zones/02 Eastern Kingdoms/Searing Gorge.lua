@@ -1395,7 +1395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5846,	-- Dark Iron Taskmaster
 						8637,	-- Dark Iron Watchman
 					},
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 41.6, 42.2, SEARING_GORGE },
 						{ 37.0, 42.8, SEARING_GORGE },

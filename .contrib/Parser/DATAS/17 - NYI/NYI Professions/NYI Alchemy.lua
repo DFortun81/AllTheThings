@@ -4,6 +4,11 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ALCHEMY, {
 		n(CRAFTABLES, {
+			tier(CLASSIC_TIER, {
+				i(5632),	-- Cowardly Flight Potion
+				i(8827),	-- Elixir of Water Walking
+				i(17967),	-- Refined Scale of Onyxia
+			}),
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -39,6 +44,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			tier(CLASSIC_TIER, {
+				r(11447),	-- Elixir of Waterwalking
+				r(22430),	-- Refined Scale of Onyxia
+				-- With SpellID attched
+				i(5641),	-- Recipe: Cowardly Flight Potion
+				i(2556),	-- Recipe: Elixir of Tongues
+				i(13500),	-- Recipe: Greater Holy Protection Potion
+			}),
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {

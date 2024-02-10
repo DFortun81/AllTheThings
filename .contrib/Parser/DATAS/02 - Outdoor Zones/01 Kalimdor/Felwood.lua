@@ -2531,7 +2531,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 7107,	-- Jadefire Trickster
 				}),
 				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 7106,	-- Jadefire Rogue
 					["coords"] = {
 						{ 38.6, 69.6, FELWOOD },

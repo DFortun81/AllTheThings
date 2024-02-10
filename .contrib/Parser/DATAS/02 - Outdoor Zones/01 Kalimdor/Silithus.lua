@@ -2737,13 +2737,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 51.8, 39.0, SILITHUS },
 					-- #endif
-					-- #if AFTER 4.0.3
 					["groups"] = {
 						i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
-					-- #endif
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>
 					-- #if AFTER CATA

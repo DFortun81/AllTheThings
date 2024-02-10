@@ -6,56 +6,61 @@ local i = GetRecipeHelperForProfession(ALCHEMY);
 ------------------
 --- ITEM ---
 i(210709, 426607);	-- Elixir of Coalesced Regret
+
+------------------
+-- PATCH 1.15.1 --
+------------------
+--- ITEM ---
+i(215433, 435969);	-- Insulating Gniodine
+i(215163, 435971);	-- Mildly Irradiated Rejuvenation Potion
 -- #endif
 
 -----------------
 --   CLASSIC   --
 -----------------
--- TRAINER --
-i(0, 2259);		-- Alchemy (Apprentice) [REMOVED 8.0.1]
-i(0, 11611);	-- Alchemy (Artisan) [REMOVED 8.0.1]
-i(0, 3464);		-- Alchemy (Expert) [REMOVED 8.0.1]
-i(0, 3101);		-- Alchemy (Journeyman) [REMOVED 8.0.1]
-i(0, 11461);	-- Arcane Elixir
-i(0, 7836);		-- Blackmouth Oil
-i(0, 12609);	-- Catseye Elixir
-i(0, 15833);	-- Dreamless Sleep Potion
-i(0, 11449);	-- Elixir of Agility
-i(0, 3177);		-- Elixir of Defense
-i(0, 11478);	-- Elixir of Detect Demon
-i(0, 11460);	-- Elixir of Detect Undead
-i(0, 7845);		-- Elixir of Firepower
-i(0, 11467);	-- Elixir of Greater Agility
-i(0, 11450);	-- Elixir of Greater Defense
-i(0, 11465);	-- Elixir of Greater Intellect
-i(0, 22808);	-- Elixir of Greater Water Breathing
-i(0, 2329);		-- Elixir of Lion's Strength
-i(0, 7183);		-- Elixir of Minor Defense
-i(0, 2334);		-- Elixir of Minor Fortitude
-i(0, 7179);		-- Elixir of Water Breathing
-i(0, 11447);	-- Elixir of Waterwalking [REMOVED 2.4.0]
-i(0, 3171);		-- Elixir of Wisdom
-i(0, 7837);		-- Fire Oil
-i(0, 7181);		-- Greater Healing Potion
-i(0, 11448);	-- Greater Mana Potion
-i(0, 3447);		-- Healing Potion
-i(0, 2337);		-- Lesser Healing Potion
-i(0, 3448);		-- Lesser Invisibility Potion
-i(0, 3173);		-- Lesser Mana Potion
-i(0, 3452);		-- Mana Potion
-i(0, 2330);		-- Minor Healing Potion
-i(0, 2331);		-- Minor Mana Potion
-i(0, 2332);		-- Minor Rejuvenation Potion
-i(0, 11451);	-- Oil of Immolation
-i(0, 11452);	-- Restorative Potion [REMOVED 4.0.3]
-i(0, 17551);	-- Stonescale Oil
-i(0, 3176);		-- Strong Troll's Blood Elixir
-i(0, 11457);	-- Superior Healing Potion
-i(0, 7841);		-- Swim Speed Potion
-i(0, 3170);		-- Weak Troll's Blood Elixir
--- ITEM --
-i(13517, 17632);	-- Alchemist Stone
+--- TRAINER ---
+i(0, 2259);			-- Alchemy (Apprentice) [REMOVED 8.0.1]
+i(0, 3101);			-- Alchemy (Journeyman) [REMOVED 8.0.1]
+i(0, 3464);			-- Alchemy (Expert) [REMOVED 8.0.1]
+i(0, 11611);		-- Alchemy (Artisan) [REMOVED 8.0.1]
+i(0, 11461);		-- Arcane Elixir
+i(0, 7836);			-- Blackmouth Oil
+i(0, 12609);		-- Catseye Elixir
+i(0, 15833);		-- Dreamless Sleep Potion
+i(0, 11449);		-- Elixir of Agility
+i(0, 3177);			-- Elixir of Defense
+i(0, 11478);		-- Elixir of Detect Demon
+i(0, 11460);		-- Elixir of Detect Undead
+i(0, 7845);			-- Elixir of Firepower
+i(0, 11467);		-- Elixir of Greater Agility
+i(0, 11450);		-- Elixir of Greater Defense
+i(0, 11465);		-- Elixir of Greater Intellect
+i(0, 22808);		-- Elixir of Greater Water Breathing
+i(0, 2329);			-- Elixir of Lion's Strength
+i(0, 7183);			-- Elixir of Minor Defense
+i(0, 2334);			-- Elixir of Minor Fortitude
+i(0, 7179);			-- Elixir of Water Breathing
+i(0, 3171);			-- Elixir of Wisdom
+i(0, 7837);			-- Fire Oil
+i(0, 7181);			-- Greater Healing Potion
+i(0, 11448);		-- Greater Mana Potion
+i(0, 3447);			-- Healing Potion
+i(0, 2337);			-- Lesser Healing Potion
+i(0, 3448);			-- Lesser Invisibility Potion
+i(0, 3173);			-- Lesser Mana Potion
+i(0, 3452);			-- Mana Potion
+i(0, 2330);			-- Minor Healing Potion
+i(0, 2331);			-- Minor Mana Potion
+i(0, 2332);			-- Minor Rejuvenation Potion
+i(0, 11451);		-- Oil of Immolation
+i(0, 17551);		-- Stonescale Oil
+i(0, 3176);			-- Strong Troll's Blood Elixir[Wrath+] / Strong Troll's Blood Potion
+i(0, 11457);		-- Superior Healing Potion
+i(0, 7841);			-- Swim Speed Potion
+i(0, 3170);			-- Weak Troll's Blood Elixir
+--- ITEM ---
 i(4597, 4508);		-- Discolored Healing Potion [REMOVED 4.0.3]
+i(13481, 17557);	-- Elixir of Brute Force [TRAINER: 4.0.3]
 i(9300, 11477);		-- Elixir of Demonslaying
 i(3832, 3453);		-- Elixir of Detect Lesser Invisibility
 i(9297, 11468);		-- Elixir of Dream Vision
@@ -63,19 +68,19 @@ i(3830, 3450);		-- Elixir of Fortitude
 i(17709, 21923);	-- Elixir of Frost Power
 i(6663, 8240);		-- Elixir of Giant Growth
 i(9298, 11472);		-- Elixir of Giants
-i(21547, 26277);	-- Elixir of Greater Firepower [Back 10.1.7]
+i(21547, 26277);	-- Elixir of Greater Firepower
 i(3396, 2333);		-- Elixir of Lesser Agility
 i(2553, 3230);		-- Elixir of Minor Agility
 i(6211, 3188);		-- Elixir of Ogre's Strength
-i(3394, 3174);		-- Elixir of Poison Resistance / Potion of Curing (2.0.1)
 i(9301, 11476);		-- Elixir of Shadow Power
 i(13478, 17554);	-- Elixir of Superior Defense
-i(13491, 17571);	-- Elixir of the Mongoose [Added back again 10.1.7]
+i(13491, 17571);	-- Elixir of the Mongoose
+i(13479, 17555);	-- Elixir of the Sages [TRAINER: 4.0.3]
 i(6055, 7257);		-- Fire Protection Potion
-i(13522, 17638);	-- Flask of Chromatic Resistance (Drop) {REMOVED 5.0.4}
-i(13520, 17636);	-- Flask of Distilled Wisdom (Drop)
-i(13519, 17635);	-- Flask of the Titans (Drop) [REMOVED 6.0.2]
-i(13521, 17637);	-- Flask of Supreme Power (Drop) [REMOVED 5.0.4]
+i(13522, 17638);	-- Flask of Chromatic Resistance [REMOVED 5.0.4, See 2.0.5]
+i(13520, 17636);	-- Flask of Distilled Wisdom [See 2.0.5]
+i(13519, 17635);	-- Flask of the Titans [REMOVED 6.0.2, See 2.0.5]
+i(13521, 17637);	-- Flask of Supreme Power [REMOVED 5.0.4, See 2.0.5]
 i(5642, 6624);		-- Free Action Potion
 i(14634, 3454);		-- Frost Oil
 i(6056, 7258);		-- Frost Protection Potion
@@ -83,28 +88,37 @@ i(9302, 11473);		-- Ghost Dye
 i(9296, 11466);		-- Gift of Arthas
 i(10644, 11456);	-- Goblin Rocket Fuel
 i(5643, 6618);		-- Great Rage Potion
-i(13497, 17577);	-- Greater Arcane Protection Potion [REMOVED 4.0.3] [READDED 9.1.0]
-i(20012, 24366);	-- Greater Dreamless Sleep Potion [REMOVED 4.0.3] [READDED 10.0.7]
+i(13493, 17573);	-- Greater Arcane Elixir [TRAINER: 3.0.2]
+i(13497, 17577);	-- Greater Arcane Protection Potion [REMOVED: 4.0.3, ADDED: 9.1.0]
+i(20012, 24366);	-- Greater Dreamless Sleep Potion [REMOVED: 4.0.3, ADDED: 10.0.7]
 i(13494, 17574);	-- Greater Fire Protection Potion
+i(13495, 17575);	-- Greater Frost Protection Potion [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(13496, 17576);	-- Greater Nature Protection Potion
+i(13499, 17578);	-- Greater Shadow Protection Potion [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(13490, 17570);	-- Greater Stoneshield Potion
 i(6053, 7255);		-- Holy Protection Potion
 i(9295, 11464);		-- Invisibility Potion
-i(4624, 4942);		-- Lesser Stoneshield Potion [REMOVED 4.0.3]
+i(4624, 4942);		-- Lesser Stoneshield Potion [REMOVED: 4.0.3]
 i(3395, 3175);		-- Limited Invulnerability Potion
 i(20013, 24367);	-- Living Action Potion
-i(20011, 24365);	-- Mageblood Elixir / Mageblood Potion (2.1.0) [REMOVED 4.0.3] [READDED 10.0.7]
-i(9293, 11453);		-- Magic Resistance Potion [REMOVED 5.0.4]
+i(20011, 24365);	-- Mageblood Elixir[2.1.0+] / Mageblood Potion [REMOVED: 4.0.3, ADDED: 10.0.7]
+i(9293, 11453);		-- Magic Resistance Potion [REMOVED: 5.0.4]
+i(13480, 17556);	-- Major Healing Potion [TRAINER: 2.0.1]
 i(13501, 17580);	-- Major Mana Potion
 i(18257, 22732);	-- Major Rejuvenation Potion
-i(3831, 3451);		-- Major Troll's Blood Potion / Mighty Troll's Blood Elixir
-i(20014, 24368);	-- Mighty Troll's Blood Elixir / Major Troll's Blood Potion [REMOVED 4.0.3] [READDED 10.0.7]
-i(3393, 3172);		-- Minor Magic Resistance Potion [REMOVED 5.0.4]
+i(3831, 3451);		-- Major Troll's Blood Elixir[Wrath+] / Mighty Troll's Blood Potion
+i(13476, 17552);	-- Mighty Rage Potion [TRAINER: 4.0.3]
+i(20014, 24368);	-- Mighty Troll's Blood Elixir[Wrath+] / Major Troll's Blood Potion [REMOVED: 4.0.3, ADDED: 10.0.7]
+i(3393, 3172);		-- Minor Magic Resistance Potion [REMOVED: 5.0.4]
 i(6057, 7259);		-- Nature Protection Potion
 i(9303, 11459);		-- Philosopher's Stone
-i(13518, 17634);	-- Potion of Petrification / Flask of Petrification (3.2.0)
+i(3394, 3174);		-- Potion of Curing[TBC+] / Elixir of Poison Resistance
+i(13518, 17634);	-- Potion of Petrification[3.2.0+] / Flask of Petrification
+i(13492, 17572);	-- Purification Potion [TRAINER: 2.0.1]
 i(5640, 6617);		-- Rage Potion
+i(6068, 3449);		-- Shadow Oil [REMOVED: 4.0.3, TRAINER: 4.1.0]
 i(6054, 7256);		-- Shadow Protection Potion
+i(13477, 17553);	-- Superior Mana Potion [TRAINER: 2.0.1]
 i(2555, 2335);		-- Swiftness Potion
 i(13482, 17559);	-- Transmute: Air to Fire
 i(12958, 17187);	-- Transmute: Arcanite
@@ -119,23 +133,19 @@ i(13486, 17563);	-- Transmute: Undeath to Water
 i(13485, 17562);	-- Transmute: Water to Air
 i(13487, 17564);	-- Transmute: Water to Undeath
 i(9294, 11458);		-- Wildvine Potion
--- MOVED TO TRAINER/NEEDS TIMELINED? --
-i(13481, 17557);	-- Elixir of Brute Force (Recipe removed 4.0.3)
-i(13479, 17555);	-- Elixir of the Sages (Recipe removed 4.0.3)
-i(13493, 17573);	-- Greater Arcane Elixir (Recipe removed 3.0.2)
-i(13495, 17575);	-- Greater Frost Protection Potion (Recipe removed 4.0.3, added 10.1.7)
-i(13499, 17578);	-- Greater Shadow Protection Potion (Recipe removed 4.0.3, added 10.1.7)
-i(13480, 17556);	-- Major Healing Potion (Recipe removed 2.0.1)
-i(13476, 17552);	-- Mighty Rage Potion (Recipe removed 4.0.3)
-i(13492, 17572);	-- Purification Potion (Recipe removed with TBC.)
-i(6068, 3449);		-- Shadow Oil (Recipe removed 4.0.3)
-i(13477, 17553);	-- Superior Mana Potion (Recipe removed 2.0.1)
--- NYI --
+--- QUEST ---
+i(0, 11452);		-- Restorative Potion [REMOVED: 4.0.3]
+--- SPECIAL ---
+i(0, 24266);		-- Gurubashi Mojo Madness [REMOVED: 4.0.3, ADDED: 10.0.7]
+--- NYI ---
+i(0, 11447);	-- Elixir of Waterwalking
+i(0, 22430);		-- Refined Scale of Onyxia
 i(5641, 6619);		-- Cowardly Flight Potion
 i(2556, 2336);		-- Elixir of Tongues
 i(13500, 17579);	-- Greater Holy Protection Potion
-i(0, 22430);		-- Refined Scale of Onyxia
 
+
+i(13517, 17632);	-- Alchemist Stone
 -----------------
 -- PATCH 2.0.1 --
 -----------------
@@ -363,12 +373,11 @@ i(0, 66664);	-- Transmute: Eye of Zul
 i(0, 66660);	-- Transmute: King's Amber
 i(0, 66663);	-- Transmute: Majestic Zircon
 
-------------------
--- PATCH 4.0.3a --
-------------------
+-----------------
+-- PATCH 4.0.3 --
+-----------------
 -- TRAINER --
 i(0, 80731);	-- Alchemy (Illustrious) [REMOVED 8.0.1]
-i(0, 85621);	-- Alchemy Tarot
 i(0, 80479);	-- Deathblood Venom
 i(0, 80486);	-- Deepstone Oil
 i(0, 93935);	-- Draught of War
@@ -379,6 +388,7 @@ i(0, 80493);	-- Elixir of Mighty Speed
 i(0, 80484);	-- Elixir of the Cobra
 i(0, 80497);	-- Elixir of the Master
 i(0, 80480);	-- Elixir of the Naga
+i(0, 80724);	-- Flask of Enhancement
 i(0, 94162);	-- Flask of Flowing Water
 i(0, 80719);	-- Flask of Steelskin
 i(0, 80720);	-- Flask of the Draconic Mind
@@ -413,7 +423,7 @@ i(65498, 92688);	-- Big Cauldron of Battle
 i(65435, 92643);	-- Cauldron of Battle
 i(67538, 93328);	-- Vial of the Sands
 -- NYI --
-i(0, 80724);	-- Unknown
+i(0, 85621);	-- Alchemy Tarot
 
 -----------------
 -- PATCH 4.0.6 --
@@ -438,9 +448,6 @@ i(0, 114786);	-- Alchemist's Flask
 i(0, 114751);	-- Alchemist's Rejuvenation
 i(0, 105206);	-- Alchemy (Zen Master) [REMOVED 8.0.1]
 i(0, 114752);	-- Master Healing Potion
-i(0, 114779);	-- Potion of Luck
-i(0, 114753);	-- Potion of the Mountains
-i(0, 136197);	-- Zen Alchemist Stone
 -- DISCOVERY --
 i(0, 114774);	-- Darkwater Potion
 i(0, 114761);	-- Desecrated Oil
@@ -459,8 +466,10 @@ i(0, 114755);	-- Mantid Elixir
 i(0, 114775);	-- Master Mana Potion
 i(0, 114758);	-- Monk's Elixir
 i(0, 114782);	-- Potion of Focus
+i(0, 114779);	-- Potion of Luck
 i(0, 114760);	-- Potion of Mogu Power
 i(0, 114757);	-- Potion of the Jade Serpent
+i(0, 114753);	-- Potion of the Mountains
 i(0, 130326);	-- Riddle of Steel
 i(0, 114777);	-- Transmute: Imperial Amethyst
 i(0, 114780);	-- Transmute: Living Steel
@@ -474,34 +483,55 @@ i(0, 114767);	-- Transmute: Wild Jade
 i(0, 114765);	-- Virmen's Bite
 
 -----------------
--- PATCH 6.0.1 --
+-- PATCH 5.2.0 --
 -----------------
--- TRAINER --
+--- TRAINER ---
+i(0, 136197);	-- Zen Alchemist Stone
+
+-----------------
+-- PATCH 6.0.2 --
+-----------------
+--- NYI ---
 i(0, 168042);		-- Alchemical Catalyst
+i(0, 156588);		-- Alchemical Catalyst - Fireweed
+i(0, 156589);		-- Alchemical Catalyst - Flytrap
+i(0, 156593);		-- Alchemical Catalyst - Lotus
+i(0, 156592);		-- Alchemical Catalyst - Orchid
+i(0, 156590);		-- Alchemical Catalyst - Starflower
+i(0, 156586);		-- Alchemist's Cauldron
+i(0, 156567);		-- Draenor Armor Flask
+i(0, 156562);		-- UNUSED
+i(0, 156565);		-- UNUSED
+i(0, 156566);		-- UNUSED
+i(0, 156570);		-- UNUSED
+i(0, 156573);		-- UNUSED
+i(0, 156574);		-- UNUSED
+i(0, 156575);		-- UNUSED
+i(0, 156583);		-- UNUSED
+i(112043, 0);		-- Draenic Mana Potion
+i(120132, 0);		-- Secrets of Draenor Alchemy
+
+-----------------
+-- PATCH 6.0.3 --
+-----------------
+--- TRAINER ---
 i(0, 156606);		-- Alchemy (Draenor Master) [REMOVED 8.0.1]
+i(0, 156587);		-- Alchemical Catalyst
+i(0, 156585);		-- Crescent Oil
 i(0, 175865);		-- Draenic Invisibility Potion
 i(0, 175867);		-- Draenic Living Action Potion
+i(0, 156582);		-- Draenic Mana Potion
 i(0, 175853);		-- Draenic Swiftness Potion
 i(0, 175866);		-- Draenic Water Breathing Elixir
 i(0, 175869);		-- Draenic Water Walking Elixir
 i(0, 175868);		-- Pure Rage Potion
 i(0, 175880);		-- Secrets of Draenor Alchemy
-i(0, 162403);		-- Transmorphic Tincture
-
------------------
--- PATCH 6.0.2 --
------------------
--- TRAINER --
-i(0, 156587);	-- Alchemical Catalyst (Vendor version? Duplicate?)
-i(0, 156585);	-- Crescent Oil
-
--- ITEM --
+--- ITEM ---
 i(112024, 156561);	-- Draenic Agility Flask
 i(112038, 156577);	-- Draenic Agility Potion
 i(112042, 156581);	-- Draenic Channeled Mana Potion
 i(112026, 156563);	-- Draenic Intellect Flask
 i(112039, 156578);	-- Draenic Intellect Potion
-i(112043, 156582);	-- Draenic Mana Potion
 i(112023, 156560);	-- Draenic Philosopher's Stone
 i(112045, 156584);	-- Draenic Rejuvenation Potion
 i(112030, 156568);	-- Draenic Stamina Flask
@@ -512,49 +542,35 @@ i(112031, 156569);	-- Greater Draenic Agility Flask
 i(112033, 156571);	-- Greater Draenic Intellect Flask
 i(112037, 156576);	-- Greater Draenic Stamina Flask
 i(112034, 156572);	-- Greater Draenic Strength Flask
--- NYI --
-i(0, 156586);	-- Alchemist's Cauldron
-i(0, 156567);	-- Draenor Armor Flask
-i(0, 156562);	-- UNUSED
-i(0, 156565);	-- UNUSED
-i(0, 156566);	-- UNUSED
-i(0, 156570);	-- UNUSED
-i(0, 156573);	-- UNUSED
-i(0, 156574);	-- UNUSED
-i(0, 156575);	-- UNUSED
-i(0, 156583);	-- UNUSED
-
------------------
--- PATCH 6.0.3 --
------------------
-i(0, 181650);	-- Stone of Fire
-i(0, 181648);	-- Stone of the Earth
-i(0, 181649);	-- Stone of the Waters
-i(0, 181647);	-- Stone of Wind
-i(0, 181637);	-- Transmute: Sorcerous Air to Earth
-i(0, 181633);	-- Transmute: Sorcerous Air to Fire
-i(0, 181636);	-- Transmute: Sorcerous Air to Water
-i(0, 181631);	-- Transmute: Sorcerous Earth to Air
-i(0, 181632);	-- Transmute: Sorcerous Earth to Fire
-i(0, 181635);	-- Transmute: Sorcerous Earth to Water
-i(0, 181627);	-- Transmute: Sorcerous Fire to Air
-i(0, 181625);	-- Transmute: Sorcerous Fire to Earth
-i(0, 181628);	-- Transmute: Sorcerous Fire to Water
-i(0, 181630);	-- Transmute: Sorcerous Water to Air
-i(0, 181629);	-- Transmute: Sorcerous Water to Earth
-i(0, 181634);	-- Transmute: Sorcerous Water to Fire
+i(112047, 162403);	-- Transmorphic Tincture
 
 -----------------
 -- PATCH 6.1.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(122710, 156591);	-- Primal Alchemy
 i(122600, 181643);	-- Transmute: Savage Blood
+i(0, 181650);		-- Stone of Fire
+i(0, 181648);		-- Stone of the Earth
+i(0, 181649);		-- Stone of the Waters
+i(0, 181647);		-- Stone of Wind
+i(0, 181637);		-- Transmute: Sorcerous Air to Earth
+i(0, 181633);		-- Transmute: Sorcerous Air to Fire
+i(0, 181636);		-- Transmute: Sorcerous Air to Water
+i(0, 181631);		-- Transmute: Sorcerous Earth to Air
+i(0, 181632);		-- Transmute: Sorcerous Earth to Fire
+i(0, 181635);		-- Transmute: Sorcerous Earth to Water
+i(0, 181627);		-- Transmute: Sorcerous Fire to Air
+i(0, 181625);		-- Transmute: Sorcerous Fire to Earth
+i(0, 181628);		-- Transmute: Sorcerous Fire to Water
+i(0, 181630);		-- Transmute: Sorcerous Water to Air
+i(0, 181629);		-- Transmute: Sorcerous Water to Earth
+i(0, 181634);		-- Transmute: Sorcerous Water to Fire
 
 -----------------
 -- PATCH 6.2.0 --
 -----------------
--- REMOVED --
+--- ITEM ---
 i(128161, 188676);	-- Elemental Distillate
 i(128160, 188674);	-- Wildswater
 
@@ -777,13 +793,14 @@ i(162691, 252336);	-- Steelskin Potion [Rank 3] (H)
 i(162139, 252381);	-- Surging Alchemist Stone [Rank 3] (A)
 i(162702, 252381);	-- Surging Alchemist Stone [Rank 3] (H)
 -- #if AFTER 8.0.1
+-- * means done
 i(0, 7934);			-- Anti-Venom
-i(160663, 172540);	-- Healing Tonic
-i(160661, 172542);	-- Fire Ammonite Oil
+i(160663, 172540);	-- Healing Tonic*
+i(160661, 172542);	-- Fire Ammonite Oil*
 i(6454, 7935);		-- Strong Anti-Venom
 i(19442, 23787);	-- Powerful Anti-Venom
-i(160662, 172541);	-- Blackwater Anti-Venom
-i(160664, 221690);	-- Silvery Salve
+i(160662, 172541);	-- Blackwater Anti-Venom*
+i(160664, 221690);	-- Silvery Salve*
 -- #endif
 -- NYI --
 i(0, 252365);		-- Unknown

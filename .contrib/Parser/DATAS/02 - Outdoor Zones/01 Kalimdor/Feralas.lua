@@ -179,6 +179,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>
+						["coord"] = { 46.6, 42.8, FERALAS },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_ALCHEMY,
+						-- #endif
+					}),
+				}),
 				prof(LEATHERWORKING, {
 					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
 						["coord"] = { 89.4, 46.4, FERALAS },

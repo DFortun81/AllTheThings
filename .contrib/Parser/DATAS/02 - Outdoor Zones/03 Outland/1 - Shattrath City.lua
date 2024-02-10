@@ -2429,7 +2429,7 @@ root(ROOTS.Zones, {
 							})),
 							i(22910),	-- Recipe: Elixir of Major Shadow Power (RECIPE!)
 							i(31357, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(30835),	-- Salvager's Hauberk
 							applyclassicphase(TBC_PHASE_TWO, i(35340)),	-- Satin Leggings

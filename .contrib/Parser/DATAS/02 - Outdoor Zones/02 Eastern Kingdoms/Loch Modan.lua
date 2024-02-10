@@ -435,9 +435,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7870, {	-- Thaumaturgy Vessel Lockbox
 							i(7866),	-- Empty Thaumaturgy Vessel
 						}),
-						recipe(11452, {	-- Restorative Potion
-							["requireSkill"] = ALCHEMY,
-							["timeline"] = { "removed 4.0.3" },
+						r(11452, {	-- Restorative Potion
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),

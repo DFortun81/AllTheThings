@@ -2333,11 +2333,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49.2, 70.6, WESTERN_PLAGUELANDS },
 					},
 					-- #endif
-					-- #if AFTER 10.1.7
 					["groups"] = {
-						i(9296),	-- Recipe: Gift of Arthas (Discord 30.11.2023)
+						i(9296, {	-- Recipe: Gift of Arthas (RECIPE!) (Discord 30.11.2023)
+							["timeline"] = { ADDED_10_1_7 },
+						}),
 					},
-					-- #endif
 				}),
 				n(1841, {	-- Scarlet Executioner
 					-- #if AFTER CATA
@@ -2760,13 +2760,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["timeline"] = { "removed 4.0.3" }, -- Maybe still drops, this tag will help with reporting if somebody does get a drop
 				}),
-				-- #if BEFORE 4.0.3
 				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["crs"] = {
 						1813,	-- Decaying Horror
 						1812,	-- Rotting Behemoth
 					},
+					["timeline"] = { "removed 4.0.3" },
 				}),
+				-- #if BEFORE 4.0.3
 				i(12811, {	-- Righteous Orb
 					["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
 					["cr"] = 12128,	-- Crimson Elite

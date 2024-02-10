@@ -109,6 +109,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(1386, {	-- Rogvar <Alchemy Trainer>
+						["coord"] = { 49.8, 56.0, SWAMP_OF_SORROWS },
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_ALCHEMY,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(2801, {	-- A Tale of Sorrow
 					["qg"] = 7572,	-- Fallen Hero of the Horde

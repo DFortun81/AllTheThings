@@ -2,6 +2,107 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local WOD_REMOVED_RECIPE_STR = "In 9.0.1, Blizzard made this recipe unlearnable but the item still appears on the vendor even though it has no use and is no longer collectible.";
+local ALCHEMICAL_CATALYST = 108996;
+local CERULEAN_PIGMENT = 114931;
+local HERB_TRADER = {
+i(120945, {	-- Primal Spirit
+	["cost"] = {
+		{ "i", 109118, 5 },	-- 5x Blackrock Ore
+		{ "i", 109693, 5 },	-- 5x Draenic Dust
+		{ "i", 109125, 5 },	-- 5x Fireweed
+		{ "i", 110609, 5 },	-- 5x Raw Beast Hide
+		{ "i", 111557, 5 },	-- 5x Sumptuous Fur
+	},
+}),
+i(128161, {	-- Recipe: Elemental Distillate (RECIPE!)
+	["description"] = WOD_REMOVED_RECIPE_STR,
+	["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+	["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+	["timeline"] = { ADDED_6_2_0 }
+}),
+i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
+	["cost"] = {{ "i", 109127, 60 }},	-- 60x Starflower
+}),
+i(122600, {	-- Recipe: Savage Blood (RECIPE!)
+	["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+}),
+i(128160, {	-- Recipe: Wildswater (RECIPE!)
+	["description"] = WOD_REMOVED_RECIPE_STR,
+	["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+	["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+	["timeline"] = { ADDED_6_2_0 }
+}),
+i(128410, {	-- Technique: Mass Mill Fireweed (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(128409, {	-- Technique: Mass Mill Frostweed (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(128411, {	-- Technique: Mass Mill Gorgrond Flytrap (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(128413, {	-- Technique: Mass Mill Nagrand Arrowbloom (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(128412, {	-- Technique: Mass Mill Starflower (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(128414, {	-- Technique: Mass Mill Talador Orchid (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(127723, {	-- Technique: Mighty Ensorcelled Tarot (RECIPE!)
+	["description"] = WOD_REMOVED_RECIPE_STR,
+	["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(127728, {	-- Technique: Mighty Weapon Crystal (RECIPE!)
+	["description"] = WOD_REMOVED_RECIPE_STR,
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+	["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+}),
+i(127741, {	-- Technique: Savage Ensorcelled Tarot (RECIPE!)
+	["description"] = WOD_REMOVED_RECIPE_STR,
+	["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(127746, {	-- Technique: Savage Weapon Crystal (RECIPE!)
+	["description"] = WOD_REMOVED_RECIPE_STR,
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+	["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+}),
+i(122713, {	-- Technique: The Spirit of War (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
+	["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+}),
+i(122599, {	-- Tome of Sorcerous Elements (RECIPE!)
+	["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+	["g"] = {
+		r(181637),	-- Transmute: Sorcerous Air to Earth
+		r(181633),	-- Transmute: Sorcerous Air to Fire
+		r(181636),	-- Transmute: Sorcerous Air to Water
+		r(181631),	-- Transmute: Sorcerous Earth to Air
+		r(181632),	-- Transmute: Sorcerous Earth to Fire
+		r(181635),	-- Transmute: Sorcerous Earth to Water
+		r(181627),	-- Transmute: Sorcerous Fire to Air
+		r(181625),	-- Transmute: Sorcerous Fire to Earth
+		r(181628),	-- Transmute: Sorcerous Fire to Water
+		r(181630),	-- Transmute: Sorcerous Water to Air
+		r(181629),	-- Transmute: Sorcerous Water to Earth
+		r(181634),	-- Transmute: Sorcerous Water to Fire
+	},
+}),
+i(122605, {	-- Tome of the Stones (RECIPE!)
+	["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+	["g"] = {
+		r(181650),	-- Stone of Fire
+		r(181648),	-- Stone of the Earth
+		r(181649),	-- Stone of the Waters
+		r(181647),	-- Stone of Wind
+	},
+}),
+};
 root(ROOTS.ExpansionFeatures,
 	tier(WOD_TIER, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
@@ -383,110 +484,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91031, {	-- Nicholas Mitrik <Herb Trader>
+				n(91031, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Nicholas Mitrik <Herb Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(128161, {	-- Recipe: Elemental Distillate
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-						}),
-						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
-							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
-						}),
-						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-						}),
-						i(128160, {	-- Recipe: Wildswater
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-						}),
-						i(128410, {	-- Technique: Mass Mill Fireweed
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128409, {	-- Technique: Mass Mill Frostweed
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128411, {	-- Technique: Mass Mill Gorgrond Flytrap
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128413, {	-- Technique: Mass Mill Nagrand Arrowbloom
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128412, {	-- Technique: Mass Mill Starflower
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128414, {	-- Technique: Mass Mill Talador Orchid
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(127723, {	-- Technique: Mighty Ensorcelled Tarot
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(127728, {	-- Technique: Mighty Weapon Crystal
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(127741, {	-- Technique: Savage Ensorcelled Tarot
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(127746, {	-- Technique: Savage Weapon Crystal
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122713, {	-- Technique: The Spirit of War
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(122599, {	-- Tome of Sorcerous Elements
-							["f"] = MISC,
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-							["g"] = {
-								recipe(181637),	-- Transmute: Sorcerous Air to Earth
-								recipe(181633),	-- Transmute: Sorcerous Air to Fire
-								recipe(181636),	-- Transmute: Sorcerous Air to Water
-								recipe(181631),	-- Transmute: Sorcerous Earth to Air
-								recipe(181632),	-- Transmute: Sorcerous Earth to Fire
-								recipe(181635),	-- Transmute: Sorcerous Earth to Water
-								recipe(181627),	-- Transmute: Sorcerous Fire to Air
-								recipe(181625),	-- Transmute: Sorcerous Fire to Earth
-								recipe(181628),	-- Transmute: Sorcerous Fire to Water
-								recipe(181630),	-- Transmute: Sorcerous Water to Air
-								recipe(181629),	-- Transmute: Sorcerous Water to Earth
-								recipe(181634),	-- Transmute: Sorcerous Water to Fire
-							},
-						}),
-						i(122605, {	-- Tome of the Stones
-							["f"] = MISC,
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-							["g"] = {
-								recipe(181650),	-- Stone of Fire
-								recipe(181648),	-- Stone of the Earth
-								recipe(181649),	-- Stone of the Waters
-								recipe(181647),	-- Stone of Wind
-							},
-						}),
-					},
-				}),
+					["g"] = HERB_TRADER,
+				})),
 				n(91029, {	-- Rath'thul Moonvale <Dust Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -696,110 +697,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91404, {	-- Samantha Scarlet <Herb Trader>
+				n(91404, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Samantha Scarlet <Herb Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(128161, {	-- Recipe: Elemental Distillate
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-						}),
-						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
-							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
-						}),
-						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-						}),
-						i(128160, {	-- Recipe: Wildswater
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-						}),
-						i(128410, {	-- Technique: Mass Mill Fireweed
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128409, {	-- Technique: Mass Mill Frostweed
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128411, {	-- Technique: Mass Mill Gorgrond Flytrap
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128413, {	-- Technique: Mass Mill Nagrand Arrowbloom
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128412, {	-- Technique: Mass Mill Starflower
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(128414, {	-- Technique: Mass Mill Talador Orchid
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(127723, {	-- Technique: Mighty Ensorcelled Tarot
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(127728, {	-- Technique: Mighty Weapon Crystal
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(127741, {	-- Technique: Savage Ensorcelled Tarot
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(127746, {	-- Technique: Savage Weapon Crystal
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122713, {	-- Technique: The Spirit of War
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
-							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
-						}),
-						i(122599, {	-- Tome of Sorcerous Elements
-							["f"] = MISC,
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-							["g"] = {
-								recipe(181637),	-- Transmute: Sorcerous Air to Earth
-								recipe(181633),	-- Transmute: Sorcerous Air to Fire
-								recipe(181636),	-- Transmute: Sorcerous Air to Water
-								recipe(181631),	-- Transmute: Sorcerous Earth to Air
-								recipe(181632),	-- Transmute: Sorcerous Earth to Fire
-								recipe(181635),	-- Transmute: Sorcerous Earth to Water
-								recipe(181627),	-- Transmute: Sorcerous Fire to Air
-								recipe(181625),	-- Transmute: Sorcerous Fire to Earth
-								recipe(181628),	-- Transmute: Sorcerous Fire to Water
-								recipe(181630),	-- Transmute: Sorcerous Water to Air
-								recipe(181629),	-- Transmute: Sorcerous Water to Earth
-								recipe(181634),	-- Transmute: Sorcerous Water to Fire
-							},
-						}),
-						i(122605, {	-- Tome of the Stones
-							["f"] = MISC,
-							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
-							["g"] = {
-								recipe(181650),	-- Stone of Fire
-								recipe(181648),	-- Stone of the Earth
-								recipe(181649),	-- Stone of the Waters
-								recipe(181647),	-- Stone of Wind
-							},
-						}),
-					},
-				}),
+					["g"] = HERB_TRADER,
+				})),
 				n(88223, {	-- Sergeant Crowler <Garrison Quartermaster>
 					["crs"] = {78564},
 					["races"] = ALLIANCE_ONLY,

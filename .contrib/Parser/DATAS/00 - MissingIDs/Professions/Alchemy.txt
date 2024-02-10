@@ -46,11 +46,6 @@ r(17551),	-- Stonescale Oil
 1.13.0.28211
 r(22430),	-- Refined Scale of Onyxia
 r(22808),	-- Elixir of Greater Water Breathing
-1.15.0.52124
-r(426607),	-- Elixir of Coalesced Regret
-1.15.1.53009
-r(435969),	-- Insulating Gniodine
-r(435971),	-- Mildly Irradiated Rejuvenation Potion
 2.0.0.6080
 r(28544),	-- Elixir of Major Strength
 r(28545),	-- Elixir of Healing Power
@@ -209,87 +204,7 @@ r(101825),	--
 r(101826),	--
 r(101827),	--
 r(101828),	--
-5.0.3.15890
-r(105206),	-- Alchemy
-r(114751),	-- Alchemist's Rejuvenation
-r(114752),	-- Master Healing Potion
-r(114753),	-- Potion of the Mountains
-r(114754),	-- Mad Hozen Elixir
-r(114755),	-- Mantid Elixir
-r(114756),	-- Elixir of Weaponry
-r(114757),	-- Potion of the Jade Serpent
-r(114758),	-- Monk's Elixir
-r(114759),	-- Elixir of the Rapids
-r(114760),	-- Potion of Mogu Power
-r(114761),	-- Desecrated Oil
-r(114762),	-- Elixir of Perfection
-r(114763),	-- Elixir of Mirrors
-r(114764),	-- Elixir of Peace
-r(114765),	-- Virmen's Bite
-r(114766),	-- Transmute: River's Heart
-r(114767),	-- Transmute: Wild Jade
-r(114770),	-- Flask of the Earth
-r(114771),	-- Flask of the Warm Sun
-r(114772),	-- Flask of Falling Leaves
-r(114773),	-- Flask of Winter's Bite
-r(114774),	-- Darkwater Potion
-r(114775),	-- Master Mana Potion
-r(114776),	-- Transmute: Vermilion Onyx
-r(114777),	-- Transmute: Imperial Amethyst
-r(114778),	-- Transmute: Sun's Radiance
-r(114779),	-- Potion of Luck
-r(114780),	-- Transmute: Living Steel
-r(114781),	-- Transmute: Primal Diamond
-r(114782),	-- Potion of Focus
-r(114783),	-- Transmute: Trillium Bar
-r(114784),	-- Transmute: Primordial Ruby
-r(114786),	-- Alchemist's Flask
-r(130326),	-- Riddle of Steel
-6.0.1.18179
-r(136197),	-- Zen Alchemist Stone
-r(156562),	-- UNUSED
-r(156565),	-- UNUSED
-r(156566),	-- UNUSED
-r(156567),	-- Draenor Armor Flask
-r(156570),	-- UNUSED
-r(156573),	-- UNUSED
-r(156574),	-- UNUSED
-r(156575),	-- UNUSED
-r(156583),	-- UNUSED
-r(156586),	-- Alchemist's Cauldron
-r(156588),	-- Alchemical Catalyst - Fireweed
-r(156589),	-- Alchemical Catalyst - Flytrap
-r(156590),	-- Alchemical Catalyst - Starflower
-r(156592),	-- Alchemical Catalyst - Orchid
-r(156593),	-- Alchemical Catalyst - Lotus
-r(156606),	-- Alchemy
-7.3.0.24473
-r(162403),	-- Transmorphic Tincture
-r(168042),	-- Alchemical Catalyst
-r(213250),	-- Transmute: Skins to Ore
 8.0.1.25902
-r(264211),	-- Alchemy
 r(264213),	-- Outland Alchemy
 r(264220),	-- Northrend Alchemy
 r(264243),	-- Cataclysm Alchemy \\ Cataclsym Alchemy
-r(264245),	-- Pandaria Alchemy
-r(264247),	-- Draenor Alchemy
-
-
-
-
-Missing in AlchemyItemDB.lua
-
-0.7.0.3694
-r(11454),	-- Inlaid Mithril Cylinder
-1.13.0.28211
-r(24266),	-- Gurubashi Mojo Madness
-1.15.1.53009
-r(435969),	-- Insulating Gniodine
-r(435971),	-- Mildly Irradiated Rejuvenation Potion
-6.0.1.18179
-r(156588),	-- Alchemical Catalyst - Fireweed
-r(156589),	-- Alchemical Catalyst - Flytrap
-r(156590),	-- Alchemical Catalyst - Starflower
-r(156592),	-- Alchemical Catalyst - Orchid
-r(156593),	-- Alchemical Catalyst - Lotus

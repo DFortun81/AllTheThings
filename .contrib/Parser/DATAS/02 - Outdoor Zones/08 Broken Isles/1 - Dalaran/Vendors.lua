@@ -5031,7 +5031,9 @@ root(ROOTS.Zones, {
 						i(127908, {	-- Recipe: Potion of the Old War [Rank 1] (RECIPE!)
 							["sourceQuests"] = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
 						}),
-						i(160664),	-- Recipe: Silvery Salve
+						i(160664, {	-- Recipe: Silvery Salve (RECIPE!)
+							["timeline"] = { ADDED_8_0_1 },
+						}),
 						i(127904, {	-- Recipe: Skaggldrynk [Rank 1] (RECIPE!)
 							["sourceQuests"] = { 39336 },	-- We Need More Powder!
 						}),

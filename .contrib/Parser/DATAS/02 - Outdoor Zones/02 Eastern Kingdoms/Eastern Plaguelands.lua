@@ -3843,7 +3843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(13499, {	-- Recipe: Greater Shadow Protection Potion (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 41.0, 50.2, EASTERN_PLAGUELANDS },

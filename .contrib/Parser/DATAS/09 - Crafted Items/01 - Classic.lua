@@ -3,86 +3,13 @@
 ---------------------------------------------
 root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 	prof(ALCHEMY, {
-		category(644, {	-- Materials
-			i(9210),	-- Ghost Dye
-			i(9061),	-- Goblin Rocket Fuel
-			applyclassicphase(PHASE_FOUR, i(19931, {	-- Gurubashi Mojo Madness
-				["timeline"] = { "removed 4.0.3.14732", ADDED_10_0_7 },
-				-- #if after 10.0.7
-				["description"] = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
-				-- #endif
-			})),
-		}),
-		category(638, {	-- Potions
-			i(4596),	-- Discolored Healing Potion
-			i(12190),	-- Dreamless Sleep Potion
-			i(6049),	-- Fire Protection Potion
-			i(5634),	-- Free Action Potion
-			i(6050),	-- Frost Protection Potion
-			i(5633),	-- Great Rage Potion
-			i(13461),	-- Greater Arcane Protection Potion
-			applyclassicphase(PHASE_FOUR, i(20002)),	-- Greater Dreamless Sleep Potion
-			i(13457),	-- Greater Fire Protection Potion
-			i(13456),	-- Greater Frost Protection Potion
-			i(1710),	-- Greater Healing Potion
-			i(6149),	-- Greater Mana Potion
-			i(13458),	-- Greater Nature Protection Potion
-			i(13459),	-- Greater Shadow Protection Potion
-			i(13455),	-- Greater Stoneshield Potion
-			i(929),		-- Healing Potion
-			i(6051),	-- Holy Protection Potion
-			i(9172),	-- Invisibility Potion
-			i(858),		-- Lesser Healing Potion
-			i(3823),	-- Lesser Invisibility Potion
-			i(3385),	-- Lesser Mana Potion
-			i(4623),	-- Lesser Stoneshield Potion
-			i(3387),	-- Limited Invulnerability Potion
-			applyclassicphase(PHASE_FOUR, i(20008)),	-- Living Action Potion
-			applyclassicphase(PHASE_FOUR, i(20007)),	-- Mageblood Potion
-			-- #if BEFORE 5.0.4.10000
-			i(9036, {	-- Magic Resistance Potion
-				["timeline"] = { "removed 5.0.4" },
-			}),
-			-- #endif
-			i(13446),	-- Major Healing Potion
-			i(13444),	-- Major Mana Potion
-			i(18253),	-- Major Rejuvenation Potion
-			i(20004),	-- Major Troll's Blood Potion
-			i(3827),	-- Mana Potion
-			i(13442),	-- Mighty Rage Potion
-			applyclassicphase(PHASE_FOUR, i(3826)),	-- Mighty Troll's Blood Potion
-			i(118),		-- Minor Healing Potion
-			i(2455),	-- Minor Mana Potion
-			i(2456),	-- Minor Rejuvenation Potion
-			-- #if BEFORE 5.0.4.10000
-			i(3384, {	-- Minor Magic Resistance Potion
-				["timeline"] = { "removed 5.0.4" },
-			}),
-			-- #endif
-			i(6052),	-- Nature Protection Potion
-			i(3386),	-- Potion of Curing (TBC) / Elixir of Poison Resistance (Classic)
-			i(13462),	-- Purification Potion
-			i(5631),	-- Rage Potion
-			i(9030),	-- Restorative Potion
-			i(6048),	-- Shadow Protection Potion
-			i(3388),	-- Strong Troll's Blood Potion
-			i(3928),	-- Superior Healing Potion
-			i(13443),	-- Superior Mana Potion
-			i(2459),	-- Swiftness Potion
-			i(6372),	-- Swim Speed Potion
-			i(3382),	-- Weak Troll's Blood Potion
-			i(9144, {	-- Wildvine Potion
-				["timeline"] = { "added 1.11.1", "removed 4.0.1", ADDED_10_1_7 },
-			}),
-		}),
-		category(639, {	-- Elixirs
+		filter(CONSUMABLES, {
 			i(9155),	-- Arcane Elixir
 			i(10592),	-- Catseye Elixir
+			i(4596, {["timeline"] = {REMOVED_4_0_3}}),	-- Discolored Healing Potion
+			i(12190),	-- Dreamless Sleep Potion
 			i(8949),	-- Elixir of Agility
 			i(13453),	-- Elixir of Brute Force
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210708)),	-- Elixir of Coelesced Regret
-			-- #endif
 			i(3389),	-- Elixir of Defense
 			i(9224),	-- Elixir of Demonslaying
 			i(9233),	-- Elixir of Detect Demon
@@ -107,38 +34,93 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(3391),	-- Elixir of Ogre's Strength
 			i(9264),	-- Elixir of Shadow Power
 			i(13445),	-- Elixir of Superior Defense
-			i(13452),	-- Elixir of the Mongoose
+			i(13452, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Elixir of the Mongoose
 			i(13447),	-- Elixir of the Sages
 			i(5996),	-- Elixir of Water Breathing
-			i(8827),	-- Elixir of Water Walking
 			i(3383),	-- Elixir of Wisdom
-			i(9088, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Gift of Arthas
-			i(13454),	-- Greater Arcane Elixir
-		}),
-		category(640, {	-- Flasks
-			-- #if BEFORE 5.0.4.10000
-			i(13513, {	-- Flask of Chromatic Resistance
-				["timeline"] = { "removed 5.0.4" },
-			}),
-			-- #endif
+			i(6049),	-- Fire Protection Potion
+			i(13513, {["timeline"] = {REMOVED_5_0_4}}),	-- Flask of Chromatic Resistance
 			i(13511),	-- Flask of Distilled Wisdom
-			i(13506),	-- Flask of Petrification
-			i(13512),	-- Flask of Supreme Power
 			i(13510),	-- Flask of the Titans
+			i(13512),	-- Flask of Supreme Power
+			i(5634),	-- Free Action Potion
+			i(6050),	-- Frost Protection Potion
+			i(9088, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Gift of Arthas
+			i(5633),	-- Great Rage Potion
+			i(13454),	-- Greater Arcane Elixir
+			i(13461, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Greater Arcane Protection Potion
+			applyclassicphase(PHASE_FOUR, i(20002, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Greater Dreamless Sleep Potion
+			i(13457),	-- Greater Fire Protection Potion
+			i(13456, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Greater Frost Protection Potion
+			i(1710),	-- Greater Healing Potion
+			i(6149),	-- Greater Mana Potion
+			i(13458),	-- Greater Nature Protection Potion
+			i(13459, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Greater Shadow Protection Potion
+			i(13455),	-- Greater Stoneshield Potion
+			i(929),		-- Healing Potion
+			i(6051),	-- Holy Protection Potion
+			i(9172),	-- Invisibility Potion
+			i(858),		-- Lesser Healing Potion
+			i(3823),	-- Lesser Invisibility Potion
+			i(3385),	-- Lesser Mana Potion
+			i(4623, {["timeline"] = {REMOVED_4_0_3}}),	-- Lesser Stoneshield Potion
+			i(3387),	-- Limited Invulnerability Potion
+			applyclassicphase(PHASE_FOUR, i(20008)),	-- Living Action Potion
+			applyclassicphase(PHASE_FOUR, i(20007, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Mageblood Elixir[2.1.0+] / Mageblood Potion
+			i(9036, {["timeline"] = {REMOVED_5_0_4}}),	-- Magic Resistance Potion
+			i(13446),	-- Major Healing Potion
+			i(13444),	-- Major Mana Potion
+			i(18253),	-- Major Rejuvenation Potion
+			applyclassicphase(PHASE_FOUR, i(3826)),	-- Major Troll's Blood Elixir[Wrath+] / Mighty Troll's Blood Potion
+			i(3827),	-- Mana Potion
+			i(13442),	-- Mighty Rage Potion
+			i(20004),	-- Mighty Troll's Blood Elixir[Wrath+] / Major Troll's Blood Potion
+			i(118),		-- Minor Healing Potion
+			i(3384, {["timeline"] = {REMOVED_5_0_4}}),	-- Minor Magic Resistance Potion
+			i(2455),	-- Minor Mana Potion
+			i(2456),	-- Minor Rejuvenation Potion
+			i(6052),	-- Nature Protection Potion
+			i(8956),	-- Oil of Immolation
+			i(3386),	-- Potion of Curing[TBC+] / Elixir of Poison Resistance
+			i(13506),	-- Potion of Petrification[3.2.0+] / Flask of Petrification
+			i(13462),	-- Purification Potion
+			i(5631),	-- Rage Potion
+			i(9030, {["timeline"] = {REMOVED_4_0_3}}),	-- Restorative Potion
+			i(6048),	-- Shadow Protection Potion
+			i(3388),	-- Strong Troll's Blood Elixir[Wrath+] / Strong Troll's Blood Potion
+			i(3928),	-- Superior Healing Potion
+			i(13443),	-- Superior Mana Potion
+			i(2459),	-- Swiftness Potion
+			i(6372),	-- Swim Speed Potion
+			i(3382),	-- Weak Troll's Blood Elixir[Wrath+] / Weak Troll's Blood Potion
+			i(9144, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Wildvine Potion
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210708)),	-- Elixir of Coelesced Regret
+			applyclassicphase(SOD_PHASE_TWO, i(215162)),	-- Mildly Irradiated Rejuvenation Potion
+			-- #endif
 		}),
-		category(641, {	-- Transmutes
+		filter(REAGENTS, {
 			i(12360),	-- Arcanite Bar
-		}),
-		category(642, {	-- Trinkets
-			i(9149),	-- Philosopher's Stone
-		}),
-		category(643, {	-- Oils
 			i(6370),	-- Blackmouth Oil
 			i(6371),	-- Fire Oil
 			i(3829),	-- Frost Oil
-			i(8956),	-- Oil of Immolation
-			i(3824),	-- Shadow Oil
+			i(9210),	-- Ghost Dye
+			i(9061),	-- Goblin Rocket Fuel
+			applyclassicphase(PHASE_FOUR, i(19931, {	-- Gurubashi Mojo Madness
+				["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
+				-- #if AFTER 10.0.7
+				["description"] = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
+				-- #endif
+			})),
+			i(3824, {["timeline"] = {REMOVED_4_0_3, ADDED_4_1_0}}),	-- Shadow Oil
 			i(13423),	-- Stonescale Oil
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(213372)),	-- Insulating Gniodine
+			-- #endif
+		}),
+		filter(TRINKET_F, {
+			i(75525, {["timeline"] = {ADDED_5_0_4}}),	-- Alchemist's Flask
+			i(9149),	-- Philosopher's Stone
 		}),
 	}),
 	prof(BLACKSMITHING, {
@@ -980,7 +962,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 					i(10586),	-- The Big One
 				}),
 				category(183, {	-- Parts
-					i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists) (RECIPE!)
+					i(10644, {	-- Recipe: Goblin Rocket Fuel (RECIPE!) (Engineers make the recipe for alchemists)
 						["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
 					}),
 				}),

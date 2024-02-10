@@ -1799,7 +1799,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
 						i(13522, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(12871, {	-- Chromatic Carapace
 							["timeline"] = { "removed 6.0.2" },

@@ -6,11 +6,6 @@
 root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		prof(ALCHEMY, {
-			tier(CLASSIC_TIER, {
-				i(5641),	-- Recipe: Cowardly Flight Potion
-				i(2556),	-- Recipe: Elixir of Tongues
-				i(13500),	-- Recipe: Greater Holy Protection Potion
-			}),
 			tier(CATA_TIER, {
 				-- 4.0.3
 				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 4.0.3"} }, {

@@ -675,13 +675,13 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 									{ "i", SILVER_HAKKARI_BIJOU, 5 },
 								},
 							}),
-							i(20011, {	-- Recipe: Mageblood Potion (RECIPE!)
+							i(20011, {	-- Recipe: Mageblood Elixir[2.1.0+] (RECIPE!)
 								["cost"] = {
 									{ "i", ZANDALAR_BARGAINING_TOKEN, 5 },
 									{ "i", SILVER_HAKKARI_BIJOU, 5 },
 								},
 							}),
-							i(20014, {	-- Recipe: Major Troll's Blood Potion (RECIPE!)
+							i(20014, {	-- Recipe: Mighty Troll's Blood Elixir (RECIPE!)
 								["cost"] = {
 									{ "i", ZANDALAR_BARGAINING_TOKEN, 5 },
 									{ "i", SILVER_HAKKARI_BIJOU, 5 },

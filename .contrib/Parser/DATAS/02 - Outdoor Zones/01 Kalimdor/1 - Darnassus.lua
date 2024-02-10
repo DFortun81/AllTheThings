@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
-							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 						}),
 					},
 				}),

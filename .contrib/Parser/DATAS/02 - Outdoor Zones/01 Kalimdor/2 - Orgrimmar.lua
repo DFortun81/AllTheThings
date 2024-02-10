@@ -164,6 +164,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(3347, {	-- Yelmak <Alchemy Trainer>
+						["coord"] = { 55.6, 46.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(CLASSIC_ALCHEMY,
+							-- #if AFTER CATA
+							CATA_ALCHEMY
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 				prof(BLACKSMITHING, {
 					n(11178, {	-- Borgosh Corebender <Weaponsmith>
 						["coord"] = { 79.6, 23.6, ORGRIMMAR },

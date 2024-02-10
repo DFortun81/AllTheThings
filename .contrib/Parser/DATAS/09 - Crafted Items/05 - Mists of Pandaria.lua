@@ -3,45 +3,72 @@
 ---------------------------------------------
 root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	prof(ALCHEMY, {
---[[	20.Nov.2018 - automation should handle discovery. Leaving this here in case we change our mind later
 		n(DISCOVERY, {
 			["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
 			["groups"] = {
-				recipe(114774),	-- Darkwater Potion
-				recipe(114761),	-- Desecrated Oil
-				recipe(114763),	-- Elixir of Mirrors
-				recipe(114764),	-- Elixir of Peace
-				recipe(114762),	-- Elixir of Perfection
-				recipe(114756),	-- Elixir of Weaponry
-				recipe(114759),	-- Elixir of the Rapids
-				recipe(114772),	-- Flask of Falling Leaves
-				recipe(114769),	-- Flask of Spring Blossoms
-				recipe(114770),	-- Flask of the Earth
-				recipe(114771),	-- Flask of the Warm Sun
-				recipe(114773),	-- Flask of Winter's Bite
-				recipe(114754),	-- Mad Hozen Elixir
-				recipe(114755),	-- Mantid Elixir
-				recipe(114775),	-- Master Mana Potion
-				recipe(114758),	-- Monk's Elixir
-				recipe(114782),	-- Potion of Focus
-				recipe(114760),	-- Potion of Mogu Power
-				recipe(114779),	-- Potion of Luck
-				recipe(114757),	-- Potion of the Jade Serpent
-				recipe(114753),	-- Potion of the Mountains
-				recipe(130326),	-- Riddle of Steel
-				recipe(114777),	-- Transmute: Imperial Amethyst
-				recipe(114780),	-- Transmute: Living Steel
-				recipe(114781),	-- Transmute: Primal Diamond
-				recipe(114784),	-- Transmute: Primordial Ruby
-				recipe(114766),	-- Transmute: River's Heart
-				recipe(114778),	-- Transmute: Sun's Radiance
-				recipe(114783),	-- Transmute: Trillium Bar
-				recipe(114776),	-- Transmute: Vermilion Onyx
-				recipe(114767),	-- Transmute: Wild Jade
-				recipe(114765),	-- Virmen's Bite
+				r(114774),	-- Darkwater Potion
+				r(114761),	-- Desecrated Oil
+				r(114763),	-- Elixir of Mirrors
+				r(114764),	-- Elixir of Peace
+				r(114762),	-- Elixir of Perfection
+				r(114756),	-- Elixir of Weaponry
+				r(114759),	-- Elixir of the Rapids
+				r(114772),	-- Flask of Falling Leaves
+				r(114769),	-- Flask of Spring Blossoms
+				r(114770),	-- Flask of the Earth
+				r(114771),	-- Flask of the Warm Sun
+				r(114773),	-- Flask of Winter's Bite
+				r(114754),	-- Mad Hozen Elixir
+				r(114755),	-- Mantid Elixir
+				r(114775),	-- Master Mana Potion
+				r(114758),	-- Monk's Elixir
+				r(114782),	-- Potion of Focus
+				r(114760),	-- Potion of Mogu Power
+				r(114779),	-- Potion of Luck
+				r(114757),	-- Potion of the Jade Serpent
+				r(114753),	-- Potion of the Mountains
+				r(130326),	-- Riddle of Steel
+				r(114777),	-- Transmute: Imperial Amethyst
+				r(114780),	-- Transmute: Living Steel
+				r(114781),	-- Transmute: Primal Diamond
+				r(114784),	-- Transmute: Primordial Ruby
+				r(114766),	-- Transmute: River's Heart
+				r(114778),	-- Transmute: Sun's Radiance
+				r(114783),	-- Transmute: Trillium Bar
+				r(114776),	-- Transmute: Vermilion Onyx
+				r(114767),	-- Transmute: Wild Jade
+				r(114765),	-- Virmen's Bite
 			},
 		}),
-]]--
+		filter(CONSUMABLES, {
+			i(76094),	-- Alchemist's Rejuvenation
+			i(76096),	-- Darkwater Potion
+			i(76081),	-- Elixir of Mirrors
+			i(76079),	-- Elixir of Peace
+			i(76080),	-- Elixir of Perfection
+			i(76077),	-- Elixir of Weaponry
+			i(76078),	-- Elixir of the Rapids
+			i(76086),	-- Flask of Falling Leaves
+			i(76084),	-- Flask of Spring Blossoms
+			i(76087),	-- Flask of the Earth
+			i(76085),	-- Flask of the Warm Sun
+			i(76088),	-- Flask of Winter's Bite
+			i(76091, {["timeline"] = {ADDED_5_0_4, REMOVED_5_1_0}}),	-- Greater Potion of Luck[5.1.0+] // Potion of Luck
+			i(76076),	-- Mad Hozen Elixir
+			i(76075),	-- Mantid Elixir
+			i(76097),	-- Master Healing Potion
+			i(76098),	-- Master Mana Potion
+			i(76083),	-- Monk's Elixir
+			i(76092),	-- Potion of Focus
+			i(76095),	-- Potion of Mogu Power
+			i(93351, {["timeline"] = {ADDED_5_1_0}}),	-- Potion of Luck
+			i(76093),	-- Potion of the Jade Serpent
+			i(76090),	-- Potion of the Mountains
+			i(76089),	-- Virmen's Bite
+		}),
+		filter(REAGENTS, {
+			i(87872),	-- Desecrated Oil
+		}),
 		filter(TRINKET_F, {
 			i(75274),	-- Zen Alchemist Stone
 		}),

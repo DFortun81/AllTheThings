@@ -34,7 +34,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				i(8506),	-- Mithril Lotterybox
 				i(19804),	-- Pale Ghoulfish
-				i(17967),	-- Refined Scale of Onyxia
 				i(3895),	-- TEST Legendary
 				i(22316),	-- Test Relic
 				i(994),		-- Tome of Ice Armor

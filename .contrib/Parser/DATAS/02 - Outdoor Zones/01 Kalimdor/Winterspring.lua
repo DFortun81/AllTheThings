@@ -2100,11 +2100,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.8, 37.8, WINTERSPRING },
 					-- #endif
 					["groups"] = {
-						-- #if AFTER 4.0.3
-						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
-						-- #endif
+						i(20013, {	-- Recipe: Living Action Potion (RECIPE!)
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 						i(13480, {	-- Recipe: Major Healing Potion (RECIPE!)
-							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 						}),
 					},
 				}),
@@ -2397,7 +2397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- Wont return, its on timewalking vendor
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 7428,	-- Frostmaul Giant
 					["coords"] = {

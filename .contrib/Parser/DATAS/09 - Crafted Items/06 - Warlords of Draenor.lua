@@ -90,18 +90,50 @@ end
 
 root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
+		filter(CONSUMABLES, {
+			i(116979, {["timeline"] = {ADDED_8_0_1}}),	-- Blackwater Anti-Venom
+			i(109145),	-- Draenic Agility Flask
+			i(109217),	-- Draenic Agility Potion
+			i(109221),	-- Draenic Channeled Mana Potion
+			i(109147),	-- Draenic Intellect Flask
+			i(109218),	-- Draenic Intellect Potion
+			i(116268),	-- Draenic Invisibility Potion
+			i(116276),	-- Draenic Living Action Potion
+			i(109222),	-- Draenic Mana Potion
+			i(109226),	-- Draenic Rejuvenation Potion
+			i(109152),	-- Draenic Stamina Flask
+			i(109148),	-- Draenic Strength Flask
+			i(109219),	-- Draenic Strength Potion
+			i(116266),	-- Draenic Swiftness Potion
+			i(109220),	-- Draenic Versatility Potion
+			i(116271),	-- Draenic Water Breathing Elixir
+			i(118711),	-- Draenic Water Walking Elixir
+			i(116981, {["timeline"] = {ADDED_8_0_1}}),	-- Fire Ammonite Oil
+			i(109153),	-- Greater Draenic Agility Flask
+			i(109155),	-- Greater Draenic Intellect Flask
+			i(109160),	-- Greater Draenic Stamina Flask
+			i(109156),	-- Greater Draenic Strength Flask
+			i(109223, {["timeline"] = {ADDED_8_0_1}}),	-- Healing Tonic
+			i(118704),	-- Pure Rage Potion
+			i(112090),	-- Transmorphic Tincture
+		}),
+		filter(MISC, {
+			i(118700),	-- Secrets of Draenor Alchemy
+		}),
+		filter(REAGENTS, {
+			i(108996),	-- Alchemical Catalyst
+			i(109123),	-- Crescent Oil
+			i(128159, {["timeline"] = {ADDED_6_2_0}}),	-- Elemental Distillate
+			i(128158, {["timeline"] = {ADDED_6_2_0}}),	-- Wildswater
+		}),
 		filter(TRINKET_F, {
 			i(109262),	-- Draenic Philosopher's Stone
-			i(122601),	-- Stone of Wind
-			i(122602),	-- Stone of the Earth
-			i(122603),	-- Stone of the Waters
-			i(122604),	-- Stone of Fire
-			i(128158, {	-- Wildswater
-				i(128023),	-- Stone of the Wilds
-			}),
-			i(128159, {	-- Elemental Distillate
-				i(128024),	-- Stone of the Elements
-			}),
+			i(122604, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of Fire
+			i(122602, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of the Earth
+			i(128024, {["timeline"] = {ADDED_6_2_0}}),	-- Stone of the Elements
+			i(122603, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of the Waters
+			i(128023, {["timeline"] = {ADDED_6_2_0}}),	-- Stone of the Wilds
+			i(122601, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of Wind
 		}),
 	}),
 	prof(BLACKSMITHING, {

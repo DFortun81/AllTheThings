@@ -235,25 +235,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 81210 },	-- Ang'kra
 						["coord"] = { 37.8, 47.4, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(109558, {		-- A Treatise on the Alchemy of Draenor
-								["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
-								["filterID"] = MISC,
-								["g"] = {
-									recipe(156587),	-- Alchemical Catalyst
-									recipe(156585),	-- Crescent Oil
-									recipe(175865),	-- Draenic Invisibility Potion
-									recipe(175867),	-- Draenic Living Action Potion
-									recipe(156582),	-- Draenic Mana Potion
-									recipe(175853),	-- Draenic Swiftness Potion
-									recipe(175866),	-- Draenic Water Breathing Elixir
-									recipe(175869),	-- Draenic Water Walking Elixir
-									recipe(175868),	-- Pure Rage Potion
-									recipe(175880),	-- Secrets of Draenor Alchemy
-								},
-							}),
+						["g"] = appendGroups(DRAENOR_ALCHEMY, {
 							i(111812),	-- Alchemy Lab, lvl 1
-						},
+						}),
 					}),
 					q(33473, {	-- Back to Bladespire Citadel
 						["provider"] = { "n", 74272 },	-- Farseer Drek'Thar

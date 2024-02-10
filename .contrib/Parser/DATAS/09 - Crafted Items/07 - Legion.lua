@@ -85,6 +85,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 				r(213248),	-- Transmute: Ore to Cloth (RECIPE!)
 				r(213251),	-- Transmute: Ore to Herbs (RECIPE!)
 				r(213253),	-- Transmute: Skins to Herbs (RECIPE!)
+				r(213250),	-- Transmute: Skins to Ore (RECIPE!)
 			}),
 		}),
 		filter(BATTLE_PETS, {
@@ -130,6 +131,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(127843),	-- Potion of Deadly Grace
 			i(142117, {["timeline"] = {ADDED_7_1_0}}),	-- Potion of Prolonged Power
 			i(127844),	-- Potion of the Old War
+			i(136653, {["timeline"] = {ADDED_8_0_1}}),	-- Silvery Salve
 			i(127840),	-- Skaggldrynk
 			i(127841),	-- Skystep Potion
 			i(127851, {	-- Spirit Cauldron

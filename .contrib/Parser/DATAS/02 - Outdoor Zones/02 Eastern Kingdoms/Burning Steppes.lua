@@ -1896,7 +1896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 			}),
