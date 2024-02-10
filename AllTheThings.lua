@@ -38,7 +38,6 @@ local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAll
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
-local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementInfo = _G["GetAchievementInfo"];
 local GetAchievementLink = _G["GetAchievementLink"];
@@ -47,7 +46,6 @@ local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local InCombatLockdown = _G["InCombatLockdown"];
-local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
 		GetTimePreciseSec, type, math_floor
@@ -6017,8 +6015,8 @@ app.CreateAchievementCategory = function(id, t)
 end
 
 -- Achievement Criteria Lib
-local EJ_GetCreatureInfo, GetAchievementCriteriaInfoByID
-	= EJ_GetCreatureInfo, GetAchievementCriteriaInfoByID
+local GetAchievementCriteriaInfoByID
+	= GetAchievementCriteriaInfoByID
 -- Criteria field values which will use the value of the respective Achievement instead
 local UseParentAchievementValueKeys = {
 	"c", "classID", "races", "r", "u", "e", "pb", "pvp", "requireSkill"
@@ -6058,9 +6056,6 @@ local function GetCriteriaInfo(achievementID, t)
 end
 local function default_name(t)
 	if t.link then return t.link; end
-	if t.encounterID then
-		return EJ_GetEncounterInfo(t.encounterID);
-	end
 	local name
 	local achievementID = t.achievementID;
 	if achievementID then
@@ -6144,11 +6139,6 @@ local criteriaFields = {
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", default_name) or t.__questname
 	end,
-	["description"] = function(t)
-		if t.encounterID then
-			return select(2, EJ_GetEncounterInfo(t.encounterID));
-		end
-	end,
 	["link"] = function(t)
 		if t.itemID then
 			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
@@ -6158,26 +6148,6 @@ local criteriaFields = {
 				t.icon = icon;
 				return link;
 			end
-		end
-	end,
-	["displayID"] = function(t)
-		if t.encounterID then
-			-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
-			return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
-		end
-	end,
-	["displayInfo"] = function(t)
-		if t.encounterID then
-			local displayInfos, displayInfo = {};
-			for i=1,MAX_CREATURES_PER_ENCOUNTER do
-				displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
-				if displayInfo then
-					tinsert(displayInfos, displayInfo);
-				else
-					break;
-				end
-			end
-			return displayInfos;
 		end
 	end,
 	["trackable"] = app.ReturnTrue,
@@ -7010,68 +6980,6 @@ app.CreateCostCurrency = function(t, total)
 	-- cost currency should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
 	return c;
-end
-end)();
-
--- Encounter Lib
-(function()
-local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
-local cache = app.CreateCache("encounterID");
-local function CacheInfo(t, field)
-	local _t, id = cache.GetCached(t);
-	local name, lore, _, _, link = EJ_GetEncounterInfo(id);
-	_t.name = name;
-	_t.lore = lore;
-	_t.link = link;
-	_t.displayID = select(4, EJ_GetCreatureInfo(1, id));
-	if field then return _t[field]; end
-end
-local function default_displayInfo(t)
-	local displayInfos, id, displayInfo = {}, t.encounterID;
-	for i=1,MAX_CREATURES_PER_ENCOUNTER do
-		displayInfo = select(4, EJ_GetCreatureInfo(i, id));
-		if displayInfo then
-			tinsert(displayInfos, displayInfo);
-		else
-			break;
-		end
-	end
-	return displayInfos;
-end
-local fields = {
-	["key"] = function(t)
-		return "encounterID";
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", CacheInfo);
-	end,
-	["silentLink"] = function(t)
-		return cache.GetCachedField(t, "link", CacheInfo);
-	end,
-	["displayID"] = function(t)
-		return cache.GetCachedField(t, "displayID", CacheInfo);
-	end,
-	["displayInfo"] = function(t)
-		return cache.GetCachedField(t, "displayInfo", default_displayInfo);
-	end,
-	["icon"] = app.GetRelativeDifficultyIcon,
-	["trackable"] = function(t)
-		return t.questID;
-	end,
-	["saved"] = function(t)
-		-- only consider encounters saved if saved for the current character
-		return IsQuestFlaggedCompleted(t.questID);
-	end,
-	["index"] = function(t)
-		return 1;
-	end,
-};
-app.BaseEncounter = app.BaseObjectFields(fields, "BaseEncounter");
-app.CreateEncounter = function(id, t)
-	return setmetatable(constructor(id, t, "encounterID"), app.BaseEncounter);
 end
 end)();
 

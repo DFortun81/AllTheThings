@@ -64,6 +64,7 @@ src\Classes\CharacterClass.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
 src\Classes\Quests.lua
+src\Classes\Encounter.lua
 src\Classes\Maps.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua
