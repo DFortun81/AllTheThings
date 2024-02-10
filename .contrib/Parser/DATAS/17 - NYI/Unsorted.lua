@@ -1028,22 +1028,11 @@ root(ROOTS.Unsorted, {
 			i(211430),	-- Bundle of Love Tokens
 			i(210929),	-- Comfort Food Package
 			i(210695),	-- Delightful Chocolate Sample
-			i(210658),	-- Discarded Perfume Bottle
 			i(210928),	-- Healthy Body Package
-			i(210688),	-- Manufacturing Oil
-			i(213091),	-- Memo from Apothecary Hummel
 			i(210926),	-- Me, Myself, and Chocolate Package
-			i(211127),	-- Note from Bang Sparknozzle
-			i(211782),	-- Note from Zikky
 			-- Quest Items
-			i(210431),	-- Artisanal Bon-Bombs
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
-			i(210416),	-- Formula: Intoxicating Toxic Perfume
-			i(210413),	-- Map of Shadowfang Keep Security
-			i(210417),	-- Memo from Apothecary Hummel
-			i(210332),	-- O.D.I.E.'s Remote Control
-			i(211208),	-- O.D.I.E.'s Remote Control
 			i(211778),	-- O.D.I.E.'s Remote Control
 			i(211781),	-- O.D.I.E.'s Remote Control
 

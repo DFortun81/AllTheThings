@@ -1397,13 +1397,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 38066,	-- Inspector Snip Snagglebolt
 				["coord"] = { 32.2, 50.1, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(LOVE_TOKEN) },
+				["groups"] = {
+					i(LOVE_TOKEN),
+					i(210658),	-- Discarded Perfume Bottle
+					i(210416),	-- Formula: Intoxicating Toxic Perfume (QI!)
+					i(210413),	-- Map of Shadowfang Keep Security (QI)
+					i(210417),	-- Memo from Apothecary Hummel (QI!) [book]
+					i(213091),	-- Memo from Apothecary Hummel [book] (awared to player after turn in this quest)
+					i(210332),	-- O.D.I.E.'s Remote Control (QI!)
+				},
 			}),
 			q(78337, {	-- An Unwelcome Gift (A)
 				["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
 				["sourceQuest"] = 78332,	-- I Smell Trouble (A)
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(LOVE_TOKEN) },
+				["groups"] = {
+					i(LOVE_TOKEN),
+					i(210688),	-- Manufacturing Oil
+					i(211208),	-- O.D.I.E.'s Remote Control (QI!)
+				},
 			}),
 			q(78729, {	-- Raising a Stink (A)
 				["qg"] = 213560,	-- Inspector Snip Snagglebolt (portable version)
@@ -1417,7 +1429,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(LOVE_TOKEN),
-					i(211782),	-- Note from Zikky
+					i(210431),	-- Artisanal Bon-Bombs (QI!)
+					i(211127),	-- Note from Bang Sparknozzle (QI!) [book]
 				},
 			}),
 			q(78379, {	-- The Stench of Revenge (A)
@@ -1464,7 +1477,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(LOVE_TOKEN),
-					i(211782),	-- Note from Zikky
+					i(211782),	-- Note from Zikky (QI!) [book]
 				},
 			}),
 			q(78985, {	-- The Stench of Revenge (H)
