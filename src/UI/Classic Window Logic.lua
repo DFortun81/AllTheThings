@@ -19,6 +19,7 @@ local ResolveSymbolicLink = app.ResolveSymbolicLink;
 local SearchForField = app.SearchForField;
 local MergeObject = app.MergeObject;
 local MergeObjects = app.MergeObjects;
+local C_CreatureInfo = C_CreatureInfo;
 local L = app.L;
 
 -- Global locals
@@ -1134,28 +1135,31 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local str,first = "",true;
+			local classes_tbl = {};
 			for i,cl in ipairs(reference.c) do
 				local info = app.ClassInfoByID[cl];
-				if info.isValid then
-					if first then first = false;
-					else str = str .. ", "; end
-					str = str .. info.icontext;
-				end
+				if info.isValid then classes_tbl[#classes_tbl + 1] = info.icontext; end
 			end
-			GameTooltip:AddDoubleLine("Classes", str);
+			local str = app.TableConcat(classes_tbl, nil, nil, ", ")
+			if #classes_tbl > 4 then
+				GameTooltip:AddLine("Classes " .. str, nil, nil, nil, 1);
+			else
+				GameTooltip:AddDoubleLine("Classes", str);
+			end
 		end
 		if app.Settings:GetTooltipSetting("RaceRequirements") then
 			if reference.races then
-				local str = "";
+				local races_tbl = {};
 				for i,race in ipairs(reference.races) do
 					local info = C_CreatureInfo.GetRaceInfo(race);
-					if info then
-						if i > 1 then str = str .. ", "; end
-						str = str .. info.raceName;
-					end
+					if info then races_tbl[#races_tbl + 1] = info.raceName; end
 				end
-				GameTooltip:AddDoubleLine("Races", str);
+				local str = app.TableConcat(races_tbl, nil, nil, ", ")
+				if #races_tbl > 4 then
+					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
+				else
+					GameTooltip:AddDoubleLine("Races", str);
+				end
 			elseif reference.r and reference.r > 0 then
 				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end

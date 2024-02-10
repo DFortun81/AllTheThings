@@ -34,6 +34,7 @@ BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L.TOGGLE_RANDOM
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Performance Cache
+local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
@@ -44,7 +45,6 @@ local GetAchievementLink = _G["GetAchievementLink"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
-local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local InCombatLockdown = _G["InCombatLockdown"];
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
@@ -9215,62 +9215,6 @@ app.CreateProfession = function(id, t)
 end
 end)();
 
--- Race Lib
-(function()
-local cache = app.CreateCache("raceID");
-local C_AlliedRaces_GetRaceInfoByID = C_AlliedRaces.GetRaceInfoByID;
-local function default_name(t)
-	local info = C_CreatureInfo_GetRaceInfo(t.raceID);
-	return info and info.raceName;
-end
-local function default_icon(t)
-	local icon;
-	-- Allied Races are different
-	local arInfo = C_AlliedRaces_GetRaceInfoByID(t.raceID);
-	if arInfo then
-		local race = arInfo.raceFileString:lower();
-		-- blizzard being inconsistent
-		if race == "kultiran" then race = "kultiranhuman"; end
-		icon = "Interface\\Icons\\achievement_alliedrace_"..race;
-	else
-		local info = C_CreatureInfo_GetRaceInfo(t.raceID);
-		local race = info.clientFileString:lower();
-		-- blizzard being inconsistent
-		if race == "scourge" then race = "undead"; end
-		if race == "goblin" then
-			-- goblinhead?
-			local gender = app.Gender == 2 and "" or "female";
-			icon = "Interface\\Icons\\achievement_"..gender.."goblinhead";
-		elseif race == "worgen" then
-			-- misspelled worgen?
-			icon = "Interface\\Icons\\achievement_worganhead";
-		elseif race == "pandaren" then
-			-- no pandaren male icon?
-			icon = "Interface\\Icons\\achievement_character_pandaren_female";
-		else
-			local gender = app.Gender == 2 and "male" or "female";
-			icon = "Interface\\Icons\\achievement_character_"..race.."_"..gender;
-		end
-	end
-	return icon;
-end
-local raceFields = {
-	["key"] = function(t)
-		return "raceID";
-	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", default_icon);
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", default_name);
-	end,
-};
-app.BaseRace = app.BaseObjectFields(raceFields, "BaseRace");
-app.CreateRace = function(id, t)
-	return setmetatable(constructor(id, t, "raceID"), app.BaseRace);
-end
-end)();
-
 -- Spell Lib
 (function()
 local GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo =
@@ -11594,29 +11538,31 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local str,first = "",true;
+			local classes_tbl = {};
 			for i,cl in ipairs(reference.c) do
 				local info = app.ClassInfoByID[cl];
-				if info.isValid then
-					if first then first = false;
-					else str = str .. ", "; end
-					str = str .. info.icontext;
-				end
+				if info.isValid then classes_tbl[#classes_tbl + 1] = info.icontext; end
 			end
-			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
+			local str = app.TableConcat(classes_tbl, nil, nil, ", ")
+			if #classes_tbl > 4 then
+				GameTooltip:AddLine(L["CLASSES_CHECKBOX"] .. " " .. str, nil, nil, nil, 1);
+			else
+				GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
+			end
 		end
 		if app.Settings:GetTooltipSetting("RaceRequirements") then
 			local usecolors = app.Settings:GetTooltipSetting("UseMoreColors")
 			if reference.races then
 				local races_tbl = {}
 				-- temp ref with .raceID of only a single race so we can simply use TryColorizeName
-				local temp_ref = {}
+				local temp_ref, raceName = {}
 				for i,race in ipairs(reference.races) do
 					temp_ref.raceID = race
-					races_tbl[#races_tbl + 1] = usecolors and TryColorizeName(temp_ref, C_CreatureInfo_GetRaceInfo(race).raceName) or C_CreatureInfo_GetRaceInfo(race).raceName
+					raceName = C_CreatureInfo_GetRaceInfo(race).raceName
+					races_tbl[#races_tbl + 1] = usecolors and TryColorizeName(temp_ref, raceName) or raceName
 				end
 				local str = app.TableConcat(races_tbl, nil, nil, ", ")
-				if #reference.races > 4 then
+				if #races_tbl > 4 then
 					GameTooltip:AddLine(L["RACES_CHECKBOX"] .. " " .. str, nil, nil, nil, 1);
 				else
 					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], str);

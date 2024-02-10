@@ -4,8 +4,7 @@ local appName,app = ...;
 local Colorize = app.Modules.Color.Colorize;
 
 -- Global locals
-local C_CreatureInfo_GetClassInfo, C_CreatureInfo_GetRaceInfo
-	= C_CreatureInfo.GetClassInfo, C_CreatureInfo.GetRaceInfo;
+local C_CreatureInfo = C_CreatureInfo;
 local RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace
 	= RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace;
 local math_floor, rawget, rawset, setmetatable
@@ -109,7 +108,7 @@ local ClassInfoMetatableAfterCache = { __index = function(t, key)
 end };
 local ClassInfoMetatable = { __index = function(t, key)
 	for classID,_ in pairs(ClassIcons) do
-		local info = C_CreatureInfo_GetClassInfo(classID);
+		local info = C_CreatureInfo.GetClassInfo(classID);
 		if info then
 			local colors = RAID_CLASS_COLORS[info.classFile];
 			local colorStr = (colors and colors.colorStr) or app.Colors.SourceIgnored;
@@ -169,7 +168,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 				end
 				if character.raceID then
 					rawset(t, "raceID", character.raceID);
-					rawset(t, "race", C_CreatureInfo_GetRaceInfo(character.raceID).raceName);
+					rawset(t, "race", C_CreatureInfo.GetRaceInfo(character.raceID).raceName);
 				end
 				return t;
 			end
@@ -201,7 +200,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 			end
 			if raceID then
 				rawset(t, "raceID", raceID);
-				rawset(t, "race", C_CreatureInfo_GetRaceInfo(raceID).raceName);
+				rawset(t, "race", C_CreatureInfo.GetRaceInfo(raceID).raceName);
 			end
 		end
 		return t;

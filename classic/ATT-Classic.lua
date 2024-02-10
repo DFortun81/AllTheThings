@@ -5528,9 +5528,6 @@ end
 app.CreatePetAbility = function(id, t)
 	return { text = "PetAbility #" .. id, description = "This data type is not supported at this time." };
 end
-app.CreateRace = function(id, t)
-	return { text = "Race #" .. id, description = "This data type is not supported at this time." };
-end
 app.CreateRuneforgeLegendary = function(id, t)
 	return { text = "RuneforgeLegendary #" .. id, description = "This data type is not supported at this time." };
 end
