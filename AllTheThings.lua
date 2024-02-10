@@ -3092,7 +3092,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if #group > 0 then
 			-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 			if paramA == "creatureID" or paramA == "encounterID" then
-				local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (paramA == "encounterID" and EJ_GetDifficulty()) or 0;
+				local difficultyID = app.GetCurrentDifficultyID();
 				-- app.PrintDebug("difficultyID",difficultyID,"params",paramA,paramB)
 				if difficultyID > 0 then
 					local subgroup = {};
@@ -7010,180 +7010,6 @@ app.CreateCostCurrency = function(t, total)
 	-- cost currency should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
 	return c;
-end
-end)();
-
--- Difficulty Lib
-(function()
-local GetDifficultyInfo = _G["GetDifficultyInfo"];
-local cache = app.CreateCache("difficultyID");
-local DifficultyColors = {
-	[2] = "ff0070dd",
-	[5] = "ff0070dd",
-	[6] = "ff0070dd",
-	[7] = "ff9d9d9d",
-	[15] = "ff0070dd",
-	[16] = "ffa335ee",
-	[17] = "ff9d9d9d",
-	[23] = "ffa335ee",
-	[24] = "ffe6cc80",
-	[33] = "ffe6cc80",
-};
-local DifficultyIcons = {
-	[1] = app.asset("Difficulty_Normal"),
-	[2] = app.asset("Difficulty_Heroic"),
-	[3] = app.asset("Difficulty_Normal"),
-	[4] = app.asset("Difficulty_Normal"),
-	[5] = app.asset("Difficulty_Heroic"),
-	[6] = app.asset("Difficulty_Heroic"),
-	[7] = app.asset("Difficulty_LFR"),
-	[9] = app.asset("Difficulty_Mythic"),
-	[11] = app.asset("Difficulty_Normal"),
-	[12] = app.asset("Difficulty_Heroic"),
-	[14] = app.asset("Difficulty_Normal"),
-	[15] = app.asset("Difficulty_Heroic"),
-	[16] = app.asset("Difficulty_Mythic"),
-	[17] = app.asset("Difficulty_LFR"),
-	[18] = app.asset("Category_Event"),
-	[23] = app.asset("Difficulty_Mythic"),
-	[24] = app.asset("Difficulty_Timewalking"),
-	[33] = app.asset("Difficulty_Timewalking"),
-};
-app.GetRelativeDifficultyIcon = function(t)
-	return DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
-end
-local function GetDifficultyName(difficultyID)
-	return GetDifficultyInfo(difficultyID);
-end
-local function default_name(t)
-	local difficultyID = t.difficultyID;
-	local name = GetDifficultyName(difficultyID);
-	if not name then
-		local difficulties = t.difficulties;
-		if not difficulties then
-			name = UNKNOWN;
-		else
-			name = GetDifficultyName(difficulties[1])
-			for i=2,#difficulties do
-				name = name.." / "..(GetDifficultyName(difficulties[i]) or UNKNOWN);
-			end
-		end
-	end
-	local _t = cache.GetCached(t);
-	_t.name = name;
-	return name;
-end
-local fields = {
-	["key"] = function(t)
-		return "difficultyID";
-	end,
-	["text"] = function(t)
-		local name = t.name;
-		-- don't follow sourceParent
-		local parent = rawget(t, "parent");
-		local parentInstance = parent and parent.instanceID;
-		if parentInstance then
-			return name;
-		else
-			-- append the name of the Source Instance which contains this diffculty group to help distinguish (LFR Queue NPCs)
-			parentInstance = t.sourceParent;
-			if parentInstance then
-				name = ("%s [%s]"):format(name, parentInstance and parentInstance.text or UNKNOWN);
-			end
-			return name;
-		end
-	end,
-	["name"] = function(t)
-		return t.headerID and app.NPCNameFromID[t.headerID] or cache.GetCachedField(t, "name", default_name);
-	end,
-	["icon"] = function(t)
-		return t.headerID and L["HEADER_ICONS"][t.headerID] or DifficultyIcons[t.difficultyID] or app.asset("Difficulty_Multi");
-	end,
-	["description"] = function(t)
-		return t.headerID and L["HEADER_DESCRIPTIONS"][t.headerID];
-	end,
-	["lore"] = function(t)
-		return t.headerID and L["HEADER_LORE"][t.headerID];
-	end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
-		return t.locks;
-	end,
-	["locks"] = function(t)
-		local locks = t.parent and t.parent.locks;
-		if locks then
-			if t.parent.isLockoutShared and not (t.difficultyID == 7 or t.difficultyID == 17) then
-				t.locks = locks.shared;
-				return locks.shared;
-			else
-				local difficulties = t.difficulties;
-				if difficulties then
-					local diffLocks = {};
-					-- Look for matching difficulty lockouts.
-					for difficultyKey, lock in pairs(locks) do
-						if contains(difficulties, difficultyKey) then
-							diffLocks[difficultyKey] = lock;
-						end
-					end
-					t.locks = diffLocks;
-					return diffLocks;
-				end
-				-- Look for this difficulty's lockout.
-				for difficultyKey, lock in pairs(locks) do
-					if difficultyKey == "shared" then
-						-- ignore this one
-					elseif difficultyKey == t.difficultyID then
-						t.locks = lock;
-						return lock;
-					end
-				end
-			end
-		end
-	end,
-	["e"] = function(t)
-		if t.difficultyID == 24 or t.difficultyID == 33 then
-			return 1271;	-- TIMEWALKING event constant
-		end
-	end,
-};
-app.BaseDifficulty = app.BaseObjectFields(fields, "BaseDifficulty");
-app.CreateDifficulty = function(id, t)
-	t = constructor(id, t, "difficultyID");
-	local npcID = t.npcID;
-	if npcID and npcID < 0 then
-		t.headerID = npcID;
-		t.npcID = nil;
-	end
-	return setmetatable(t, app.BaseDifficulty);
-end
-app.AddLockoutInformationToTooltip = function(tooltip, reference)
-	local locks = reference.locks;
-	if locks then
-		if locks.encounters then
-			tooltip:AddDoubleLine("Resets", date("%c", locks.reset));
-			for encounterIter,encounter in pairs(locks.encounters) do
-				tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-			end
-		else
-			if reference.isLockoutShared and locks.shared then
-				tooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
-				for encounterIter,encounter in pairs(locks.shared.encounters) do
-					tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-				end
-			else
-				for key,value in pairs(locks) do
-					if key == "shared" then
-						-- Skip
-					else
-						tooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
-						for encounterIter,encounter in pairs(value.encounters) do
-							tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
-						end
-					end
-				end
-			end
-		end
-	end
 end
 end)();
 
@@ -12042,81 +11868,7 @@ RowOnEnter = function (self)
 			if numSpecializations and numSpecializations > 0 then
 				local encounterID = GetRelativeValue(reference.parent, "encounterID");
 				if encounterID then
-					-- TODO: revise in 9.1.5 when 'bonus drops' might be able to be identified via API calls (don't attribute to drop chance)
-					-- Why is Encounter Journal so weird? none of the API calls work unless the EJ is actually open... something is missing...
-
-					-- difficulty 0 seems to default to the lowest valid difficulty in the EJ
-					-- local tierID = GetRelativeValue(reference.parent, "tierID") or 0;
-					-- local instanceID = GetRelativeValue(reference.parent, "instanceID") or 0;
 					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
-					-- -- local funcs
-					-- local EJ_SetLootFilter, EJ_GetNumLoot = EJ_SetLootFilter, EJ_GetNumLoot;
-					-- local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
-					-- print("tier/instance/encounter/difficulty",tierID,instanceID,encounterID,difficultyID)
-					-- EJ_SelectTier(tierID);
-					-- EJ_SelectInstance(instanceID);
-					-- EJ_SelectEncounter(encounterID);
-					-- EJ_SetDifficulty(difficultyID);
-					-- -- get total items
-					-- EJ_SetLootFilter(0, 0);
-					-- local totalItems = EJ_GetNumLoot() or 0;
-					-- print("diff/filter/items",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",totalItems)
-					-- -- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
-					-- if totalItems > 0 then
-					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
-					-- else
-					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
-					-- end
-
-					-- -- see what specs this reference item will drop for
-					-- local specs = reference.specs;
-					-- if specs then
-					-- 	local class, specItems, min, count = app.ClassIndex, {}, 100;
-					--	-- get items per spec and min items
-					-- 	for _,specID in pairs(specs) do
-					-- 		EJ_SetLootFilter(class, specID);
-					-- 		-- items for this spec
-					-- 		count = EJ_GetNumLoot() or 100;
-					-- 		print("class/spec/diff/filter/items",class,"/",specID,"/",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",count)
-					-- 		if count < min and count > 0 then
-					-- 			min = count;
-					-- 		end
-					-- 		specItems[specID] = count;
-					-- 	end
-					-- 	local chance = 100 / min;
-					-- 	local bestSpecs = {};
-					--	-- define the best specs based on min
-					-- 	for specID,count in pairs(specItems) do
-					-- 		if count == min then
-					-- 			tinsert(bestSpecs, specID);
-					-- 		end
-					-- 	end
-					--	-- print out the specs with min items
-					-- 	local specString = GetSpecsString(bestSpecs, true, true) or "???";
-					-- 	GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2).."% ("..GetNumberWithZeros(chance / 5, 2).."%) "..specString);
-					-- elseif legacyLoot then
-					--	-- Not available at all, best loot spec is the one with the most number of items in it.
-					-- 	print("legacy loot?")
-					--	-- local most, bestSpecID = 0;
-					--	-- for i=1,numSpecializations,1 do
-					--	-- 	local id = GetSpecializationInfo(i);
-					--	-- 	local specHit = specHits[id] or 0;
-					--	-- 	if specHit > most then
-					--	-- 		most = specHit;
-					--	-- 		bestSpecID = i;
-					--	-- 	end
-					--	-- end
-					--	-- if bestSpecID then
-					--	-- 	local id, name, description, icon = GetSpecializationInfo(bestSpecID);
-					--	-- 	if totalItems > 0 then
-					--	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
-					--	-- 	else
-					--	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
-					--	-- 	end
-					--	-- end
-					-- end
-
-
 					local encounterCache = SearchForField("encounterID", encounterID);
 					if #encounterCache > 0 then
 						local itemList = {};
@@ -14325,7 +14077,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 				local expanded;
 				-- if enabled, minimize rows based on difficulty
-				local difficultyID = select(3, GetInstanceInfo());
+				local difficultyID = app.GetCurrentDifficultyID();
 				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
 					if difficultyID and difficultyID > 0 and header.g then
 						for _,row in ipairs(header.g) do
@@ -14637,6 +14389,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 
 			-- Define the different window configurations that the mini list will switch to based on context.
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
+			local GetDifficultyInfo, GetInstanceInfo = GetDifficultyInfo, GetInstanceInfo;
 
 			-- Raid Assistant
 			local switchDungeonDifficulty = function(row, button)

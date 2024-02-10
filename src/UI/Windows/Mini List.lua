@@ -167,7 +167,7 @@ local CachedMapData = setmetatable({}, {
 			results.back = 1;
 			results.indent = 0;
 
-			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
+			local difficultyID = app.GetCurrentDifficultyID();
 			if difficultyID ~= 0 then
 				for _,row in ipairs(header.g) do
 					if row.difficultyID or row.difficulties then
