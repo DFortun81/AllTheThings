@@ -5354,10 +5354,6 @@ end)();
 
 -- Unsupported Libs
 (function()
--- Neither of these are supported at this time.
-app.CreateAzeriteEssence = function(id, t)
-	return { text = "AzeriteEssence #" .. id, description = "This data type is not supported at this time." };
-end
 app.CreateConduit = function(id, t)
 	return { text = "Conduit #" .. id, description = "This data type is not supported at this time." };
 end
