@@ -4244,7 +4244,8 @@ function app:IsAccountLinked(sender)
 	return AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[("-"):split(sender)];
 end
 local function DefaultSyncCharacterData(allCharacters, key)
-	local data = {};
+	local data = ATTAccountWideData[key];
+	wipe(data);
 	for guid,character in pairs(allCharacters) do
 		local characterData = character[key];
 		if characterData then
@@ -4253,10 +4254,10 @@ local function DefaultSyncCharacterData(allCharacters, key)
 			end
 		end
 	end
-	ATTAccountWideData[key] = data;
 end
 local function RankSyncCharacterData(allCharacters, key)
-	local data = {};
+	local data = ATTAccountWideData[key];
+	wipe(data);
 	local oldRank;
 	for guid,character in pairs(allCharacters) do
 		local characterData = character[key];
@@ -4269,7 +4270,6 @@ local function RankSyncCharacterData(allCharacters, key)
 			end
 		end
 	end
-	ATTAccountWideData[key] = data;
 end
 local SyncFunctions = setmetatable({
 	AzeriteEssenceRanks = RankSyncCharacterData,
@@ -5718,69 +5718,6 @@ end
 app:RegisterEvent("ACHIEVEMENT_EARNED");
 app.events.ACHIEVEMENT_EARNED = CheckAchievementCollectionStatus;
 end	-- Achievement Lib
-
--- Azerite Essence Lib
-(function()
-local GetInfo, GetLink =
-	C_AzeriteEssence.GetEssenceInfo, C_AzeriteEssence.GetEssenceHyperlink;
-local fields = {
-	["key"] = function(t)
-		return "azeriteEssenceID";
-	end,
-	["info"] = function(t)
-		local info = GetInfo(t.azeriteEssenceID) or app.EmptyTable;
-		t.info = info;
-		return info;
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.AzeriteEssences;
-	end,
-	["collected"] = function(t)
-		if (app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] or 0) >= t.rank then
-			return 1;
-		end
-
-		local accountRank = ATTAccountWideData.AzeriteEssenceRanks[t.azeriteEssenceID] or 0;
-		local info = t.info;
-		if info and info.unlocked then
-			if t.rank and info.rank then
-				if info.rank >= t.rank then
-					app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] = info.rank;
-					if info.rank > accountRank then ATTAccountWideData.AzeriteEssenceRanks[t.azeriteEssenceID] = info.rank; end
-					return 1;
-				end
-			else
-				return 1;
-			end
-		end
-
-		if app.Settings.AccountWide.AzeriteEssences and accountRank >= t.rank then
-			return 2;
-		end
-	end,
-	["lvl"] = function(t)
-		return 50;
-	end,
-	["icon"] = function(t)
-		return t.info.icon or "Interface/ICONS/INV_Glowing Azerite Spire";
-	end,
-	["name"] = function(t)
-		return t.info.name;
-	end,
-	["link"] = function(t)
-		local link = GetLink(t.azeriteEssenceID, t.rank);
-		t.link = link;
-		return link;
-	end,
-	["rank"] = function(t)
-		return t.info.rank or 0;
-	end,
-};
-app.BaseAzeriteEssence = app.BaseObjectFields(fields, "BaseAzeriteEssence");
-app.CreateAzeriteEssence = function(id, t)
-	return setmetatable(constructor(id, t, "azeriteEssenceID"), app.BaseAzeriteEssence);
-end
-end)();
 
 -- Battle Pet Lib
 do
@@ -16070,7 +16007,6 @@ app.Startup = function()
 	if app.Race then currentCharacter.race = app.Race; end
 	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
-	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
 	if not currentCharacter.CommonItems then currentCharacter.CommonItems = {}; end
 	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
@@ -16104,7 +16040,6 @@ app.Startup = function()
 	ATTAccountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 	local accountWideData = ATTAccountWideData;
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
-	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
 	if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
 	if not accountWideData.CommonItems then accountWideData.CommonItems = {}; end
 	if not accountWideData.Factions then accountWideData.Factions = {}; end

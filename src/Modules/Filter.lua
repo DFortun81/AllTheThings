@@ -18,7 +18,7 @@ local ALLIANCE_ONLY, HORDE_ONLY = unpack(app.Modules.FactionData.FACTION_RACES);
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Module locals
-local ATTAccountWideData, ActiveCustomCollects, FactionID, CollectibleHeirlooms, SettingsUnobtainable;
+local ActiveCustomCollects, FactionID, CollectibleHeirlooms, SettingsUnobtainable;
 local SettingsFilterIDs = {};
 
 -- Filter API Implementation
@@ -571,7 +571,6 @@ app.AddEventHandler("OnLoad", function()
 	FactionID = app.FactionID;
 end)
 app.AddEventHandler("OnStartup", function()
-	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true)
 	-- this table is set once in ATT, but contents are volatile
 	ActiveCustomCollects = app.ActiveCustomCollects;
 	CacheSettingsData();
