@@ -534,7 +534,7 @@ settings.GetModeString = function(self)
 		local keyPrefix
 		local solo = true
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			keyPrefix = string.sub(key, 1, 6)
+			keyPrefix = key:sub(1, 6)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1
 				if settings:Get(key) and
@@ -542,7 +542,7 @@ settings.GetModeString = function(self)
 					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
 					then
 					thingCount = thingCount + 1
-					table.insert(things, string.sub(key, 7))
+					table.insert(things, key:sub(7))
 				end
 			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
 				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
@@ -588,7 +588,7 @@ settings.GetShortModeString = function(self)
 		local keyPrefix
 		local solo = true
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			keyPrefix = string.sub(key, 1, 6)
+			keyPrefix = key:sub(1, 6)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1
 				if settings:Get(key) and
@@ -596,7 +596,7 @@ settings.GetShortModeString = function(self)
 					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
 					then
 					thingCount = thingCount + 1
-					table.insert(things, string.sub(key, 7))
+					table.insert(things, key:sub(7))
 				end
 			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
 				solo = nil

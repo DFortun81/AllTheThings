@@ -2803,7 +2803,7 @@ _.ObjectModels = {
 }
 
 -- Supported Locales
-local simplifiedLocale = string.sub(GetLocale(),1,2);
+local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "de" then
 localize(L.HEADER_NAMES, {
 	[-1000010] = "Gemeinsame Bossbeute",

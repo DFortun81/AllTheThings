@@ -3116,7 +3116,7 @@ namespace ATT
                 var localeKeys = localizationByLocale.Keys.ToList();
                 localeKeys.Sort(Framework.Compare);
                 localizationDatabase.AppendLine("-- Supported Locales")
-                    .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);");
+                    .AppendLine("local simplifiedLocale = GetLocale():sub(1,2);");
                 foreach (var localeKey in localeKeys)
                 {
                     if (localizationByLocale.TryGetValue(localeKey, out StringBuilder builder) && builder.Length > 0)

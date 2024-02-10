@@ -3,8 +3,8 @@ local appName, app = ...;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, time, strsplit, tinsert, tremove, strgmatch, strsub =
-	  ipairs, pairs, time, strsplit, tinsert, tremove, string.gmatch, string.sub;
+local ipairs, pairs, time, strsplit, tinsert, tremove =
+	  ipairs, pairs, time, strsplit, tinsert, tremove;
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo = 
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
 -- NOTES: BNGetFriendInfo and BNGetNumFriends are useless
@@ -117,9 +117,9 @@ local function SendMessageChunks(method, target, msg, chunksize)
 			local chunk;
 			local j = i + chunksize - 1;
 			if j >= encodedLength then
-				chunk = strsub(msg, i, encodedLength);
+				chunk = msg:sub(i, encodedLength);
 			else
-				chunk = strsub(msg, i, j);
+				chunk = msg:sub(i, j);
 			end
 			tinsert(chunks, chunk);
 		end
@@ -133,14 +133,14 @@ local function _SendAddonMessage(target, msg)
 	C_ChatInfo.SendAddonMessage(AddonMessagePrefix, msg, "WHISPER", target);
 end
 local function SendAddonMessage(target, msg)
-	--print("SendAddonMessage", target, msg:len() > 40 and (strsub(msg, 1, 40) .. "...") or msg);
+	--print("SendAddonMessage", target, msg:len() > 40 and (msg:sub(1, 40) .. "...") or msg);
 	SendMessageChunks(_SendAddonMessage, target, msg, 255);
 end
 local function _SendBattleNetMessage(target, msg)
 	BNSendGameData(target, AddonMessagePrefix, msg);
 end
 local function SendBattleNetMessage(target, msg)
-	--print("SendBattleNetMessage", target, msg:len() > 40 and (strsub(msg, 1, 40) .. "...") or msg);
+	--print("SendBattleNetMessage", target, msg:len() > 40 and (msg:sub(1, 40) .. "...") or msg);
 	SendMessageChunks(_SendBattleNetMessage, target, msg, 4086);
 end
 local function SplitString(separator, text)
@@ -271,7 +271,7 @@ local function ProcessAddonMessageText(self, sender, text, responses)
 end
 local function ProcessAddonMessageMethod(self, method, sender, text)
 	-- Check for chunks, which are gigantic sets of data.
-	if strsub(text, 1, 6) == "chunk`" then
+	if text:sub(1, 6) == "chunk`" then
 		local content = SplitString("`", text);
 		local uid, chunkIndex, chunkCount, chunk = 
 			tonumber(content[2]), tonumber(content[3]), tonumber(content[4]), content[5];

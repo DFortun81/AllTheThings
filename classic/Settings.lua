@@ -305,11 +305,11 @@ settings.GetModeString = function(self)
 			excludes["Thing:Illusions"] = true;
 		end
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			if string.sub(key, 1, 6) == "Thing:" and not excludes[key] then
+			if key:sub(1, 6) == "Thing:" and not excludes[key] then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) then
 					thingCount = thingCount + 1;
-					tinsert(things, string.sub(key, 7));
+					tinsert(things, key:sub(7));
 				end
 			end
 		end

@@ -2,7 +2,7 @@
 --   F L I G H T   P A T H S   D A T A B A S E   M O D U L E   --
 -------------------------------------------------------
 local appName, _ = ...;
-local simplifiedLocale = string.sub(GetLocale(),1,2);
+local simplifiedLocale = GetLocale():sub(1,2);
 
 _.FlightPathNames = {
 	[1] = "Northshire Abbey",

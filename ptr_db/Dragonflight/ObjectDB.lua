@@ -2,7 +2,7 @@
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -------------------------------------------------------
 local appName, _ = ...;
-local simplifiedLocale = string.sub(GetLocale(),1,2);
+local simplifiedLocale = GetLocale():sub(1,2);
 
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",

@@ -3,7 +3,7 @@
 -------------------------------------------------------
 local appName, _ = ...;
 local L = _.L;
-local simplifiedLocale = string.sub(GetLocale(),1,2);
+local simplifiedLocale = GetLocale():sub(1,2);
 
 _.HeaderConstants = {
 	ACHIEVEMENTS = -1000004,

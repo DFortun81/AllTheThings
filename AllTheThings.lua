@@ -3029,7 +3029,7 @@ local ContainsLimit, ContainsExceeded;
 local function BuildContainsInfo(item, entries, indent, layer)
 	local g = item and item.g;
 	if g then
-		local Indicator, sub = app.GetIndicatorIcon, string.sub;
+		local Indicator = app.GetIndicatorIcon;
 		for _,group in ipairs(g) do
 			-- If there's progress to display, then let's summarize a bit better.
 			if group.visible then
@@ -3041,7 +3041,7 @@ local function BuildContainsInfo(item, entries, indent, layer)
 					-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 					local o = { group = group, right = GetProgressTextForRow(group) };
 					local indicator = Indicator(group);
-					o.prefix = indicator and (sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
+					o.prefix = indicator and (indent:sub(4) .. "|T" .. indicator .. ":0|t ") or indent;
 					tinsert(entries, o);
 				end
 
@@ -4732,7 +4732,7 @@ local whiteListedFields = { --[["Achievements",]] "AzeriteEssenceRanks", "Buildi
 app.CharacterSyncTables = whiteListedFields;
 local function splittoarray(sep, inputstr)
 	local t = {};
-	for str in string.gmatch(inputstr, "([^" .. (sep or "%s") .. "]+)") do
+	for str in inputstr:gmatch("([^" .. (sep or "%s") .. "]+)") do
 		tinsert(t, str);
 	end
 	return t;
@@ -4968,7 +4968,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 			local length = rawMsg:len();
 			local chunks = {};
 			for i=1,length,241 do
-				tinsert(chunks, string.sub(rawMsg, i, math.min(length, i + 240)));
+				tinsert(chunks, rawMsg:sub(i, math.min(length, i + 240)));
 			end
 			local outgoingForSender = outgoing[sender];
 			if not outgoingForSender then
@@ -5137,11 +5137,11 @@ local function SearchForLink(link)
 	else
 		local kind, id = strsplit(":", link);
 		kind = kind:lower();
-		if string.sub(kind,1,2) == "|c" then
-			kind = string.sub(kind,11);
+		if kind:sub(1,2) == "|c" then
+			kind = kind:sub(11);
 		end
-		if string.sub(kind,1,2) == "|h" then
-			kind = string.sub(kind,3);
+		if kind:sub(1,2) == "|h" then
+			kind = kind:sub(3);
 		end
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
 		if not id or not kind then
@@ -18878,7 +18878,7 @@ end
 		local type, info, data1, data2, data3 = strsplit(":", link);
 		-- print(type, info, data1, data2, data3)
 		if type == "addon" and info == "ATT" then
-			-- local op = string.sub(link, 17)
+			-- local op = link:sub(17)
 			-- print("ATT Link",op)
 			-- local type, paramA, paramB = strsplit(":", data);
 			-- print(type,paramA,paramB)

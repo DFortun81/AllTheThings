@@ -10544,7 +10544,7 @@ _.ObjectModels = {
 }
 
 -- Supported Locales
-local simplifiedLocale = string.sub(GetLocale(),1,2);
+local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "de" then
 localize(_.CategoryNames, {
 	[1022] = "Köder",

@@ -931,7 +931,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
 				end
 				if o.texture then
-					o.prefix = string.sub(o.prefix, 4) .. "|T" .. o.texture .. ":0|t ";
+					o.prefix = o.prefix:sub(4) .. "|T" .. o.texture .. ":0|t ";
 					o.texture = nil;
 				end
 				tinsert(entries, o);
@@ -1806,11 +1806,11 @@ local function SearchForLink(link)
 	else
 		local kind, id = strsplit(":", link);
 		kind = kind:lower():gsub("id", "ID");
-		if string.sub(kind,1,2) == "|c" then
-			kind = string.sub(kind,11);
+		if kind:sub(1,2) == "|c" then
+			kind = kind:sub(11);
 		end
-		if string.sub(kind,1,2) == "|h" then
-			kind = string.sub(kind,3);
+		if kind:sub(1,2) == "|h" then
+			kind = kind:sub(3);
 		end
 		if id then id = tonumber(strsplit("|[", id) or id); end
 		--print("SearchForLink A:", kind, id);
@@ -6148,7 +6148,7 @@ end);
 		local type, info, data1, data2, data3 = strsplit(":", link);
 		--print(type, info, data1, data2, data3)
 		if type == "addon" and info == "ATT" then
-			local op = string.sub(link, 17)
+			local op = link:sub(17)
 			--print("ATT Link",op)
 			-- local type, paramA, paramB = strsplit(":", data);
 			-- print(type,paramA,paramB)

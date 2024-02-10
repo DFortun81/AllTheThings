@@ -697,7 +697,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 						text = text:gsub("    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
 						local u, pers, g, word, l, esc, c = "", {}, {}, "", text:len(), false;
 						for i=1,l,1 do
-							c = string.sub(text, i, i);
+							c = text:sub(i, i);
 							if c == "\\" then
 								esc = true;
 							elseif esc then
