@@ -6,7 +6,6 @@ local AssignChildren, CloneClassInstance, CloneReference
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local Colorize = app.Modules.Color.Colorize;
 local HexToARGB = app.Modules.Color.HexToARGB;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;

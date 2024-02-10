@@ -2,6 +2,7 @@ do
 -- App locals
 local appName,app = ...;
 local L, contains, GetRelativeValue = app.L, app.contains, app.GetRelativeValue;
+local Colorize = app.Modules.Color.Colorize;
 
 -- Global locals
 local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo
@@ -110,8 +111,10 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 							diffLocks[difficultyKey] = lock;
 						end
 					end
-					t.locks = diffLocks;
-					return diffLocks;
+					if #diffLocks > 0 then
+						t.locks = diffLocks;
+						return diffLocks;
+					end
 				end
 			end
 		end
@@ -161,13 +164,13 @@ app.AddLockoutInformationToTooltip = function(tooltip, reference)
 		if locks.encounters then
 			tooltip:AddDoubleLine("Resets", date("%c", locks.reset));
 			for encounterIter,encounter in pairs(locks.encounters) do
-				tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+				tooltip:AddDoubleLine(" " .. encounter.name, app.GetCompletionIcon(encounter.isKilled));
 			end
 		else
 			if reference.isLockoutShared and locks.shared then
 				tooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
 				for encounterIter,encounter in pairs(locks.shared.encounters) do
-					tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+					tooltip:AddDoubleLine(" " .. encounter.name, app.GetCompletionIcon(encounter.isKilled));
 				end
 			else
 				for key,value in pairs(locks) do
@@ -176,7 +179,7 @@ app.AddLockoutInformationToTooltip = function(tooltip, reference)
 					else
 						tooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
 						for encounterIter,encounter in pairs(value.encounters) do
-							tooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+							tooltip:AddDoubleLine(" " .. encounter.name, app.GetCompletionIcon(encounter.isKilled));
 						end
 					end
 				end
