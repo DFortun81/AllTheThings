@@ -3,10 +3,6 @@
 local _, app = ...
 local L = app.L;
 
--- Globals
-local string_upper =
-	  string.upper
-
 -- Blizzard
 local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
 	  GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles
@@ -31,7 +27,7 @@ local function CalculateTitleStyle(name)
 		if first == " " then
 			-- Suffix
 			first = name:sub(2, 2);
-			if first == string_upper(first) then
+			if first == first:upper() then
 				-- Comma Separated
 				return 3;
 			end

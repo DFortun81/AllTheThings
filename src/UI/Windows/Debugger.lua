@@ -237,7 +237,7 @@ app:CreateWindow("Debugger", {
 				self:AddObject(info);
 			elseif e == "CHAT_MSG_LOOT" then
 				local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
-				local itemString = string.match(msg, "item[%-?%d:]+");
+				local itemString = msg:match("item[%-?%d:]+");
 				if itemString then
 					self:AddObject({ ["itemID"] = GetItemInfoInstant(itemString) });
 				end

@@ -392,7 +392,7 @@ local function SetRowData(self, row, data)
 		if not text then
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
-		elseif string.match(text, RETRIEVING_DATA) or text:find("^%[%]") or text:find("%[]") then
+		elseif text:match(RETRIEVING_DATA) or text:find("^%[%]") or text:find("%[]") then
 			-- This means the link is still rendering
 			self.processingLinks = true;
 		else

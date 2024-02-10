@@ -10,8 +10,8 @@ local Colorize = app.Modules.Color.Colorize;
 local Search = app.SearchForObject
 
 -- Global locals
-local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber, sformat
-	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber, string.format;
+local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber
+	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber;
 local C_QuestLog_GetAllCompletedQuestIDs, C_QuestLog_GetQuestObjectives = C_QuestLog.GetAllCompletedQuestIDs, C_QuestLog.GetQuestObjectives;
 local GetQuestLogIndexByID = C_QuestLog.GetLogIndexForQuestID or GetQuestLogIndexByID;
 local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
@@ -983,7 +983,7 @@ if app.IsRetail then
 		end
 
 		local acceptQuestID, bcQuestID = accepted.questID, bc.questID
-		app.print(sformat(L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT,
+		app.print(L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT:format(
 			acceptText,
 			app:Linkify(acceptQuestID, app.Colors.ChatLink, "search:questID:"..acceptQuestID),
 			bcText,
@@ -1020,7 +1020,7 @@ else
 								coroutine.yield();
 							end
 
-							app.print(sformat(L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT,
+							app.print(L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT:format(
 								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
 								group.text, app:Linkify(group.questID, app.Colors.ChatLink, "search:questID:"..group.questID)))
 							app.Audio:PlayRemoveSound()
@@ -1057,7 +1057,7 @@ local criteriaFuncs = {
     questID = IsQuestSaved,
 	label_questID = L.LOCK_CRITERIA_QUEST_LABEL or "Completed Quest",
     text_questID = function(questID)
-        return sformat("[%d] %s", questID, QuestNameFromID[questID] or RETRIEVING_DATA);
+        return ("[%d] %s"):format(questID, QuestNameFromID[questID] or RETRIEVING_DATA);
     end,
 
     spellID = function(spellID)
@@ -1073,7 +1073,7 @@ local criteriaFuncs = {
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
         local standing = app.GetCurrentFactionStandings(factionID);
-		-- app.PrintDebug(sformat("Check Faction %s Standing (%d) is locked @ (%d)", factionID, standing, lockStanding))
+		-- app.PrintDebug(("Check Faction %s Standing (%d) is locked @ (%d)"):format(factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
 	label_factionID = L.LOCK_CRITERIA_FACTION_LABEL or "Faction Reputation",
@@ -1082,7 +1082,7 @@ local criteriaFuncs = {
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
 		local name = GetFactionInfoByID(factionID) or "#"..(factionID or "??");
-        return sformat(L.LOCK_CRITERIA_FACTION_FORMAT or "%s with %s (Current: %s)", app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
+        return (L.LOCK_CRITERIA_FACTION_FORMAT or "%s with %s (Current: %s)"):format(app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
     end,
 };
 local function IsGroupLocked(t)

@@ -37,8 +37,8 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_DateAndTime_GetServerTimeLocal
 	= C_DateAndTime.GetServerTimeLocal;
-local ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, math_floor, sformat
-	= ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, math.floor, string.format;
+local ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, math_floor
+	= ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, math.floor;
 local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
 local GetAchievementInfo = _G["GetAchievementInfo"];
 local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
@@ -242,14 +242,13 @@ local function GetAddedWithPatchString(awp, addedBack)
 			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
 		end
 		if addedBack then formatString = formatString .. "_BACK"; end
-		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"],
-		math_floor(awp / 10000) .. "." .. (math_floor(awp / 100) % 10) .. "." .. (awp % 10));
+		return L[formatString .. "_WITH_PATCH_FORMAT"]:format(math_floor(awp / 10000) .. "." .. (math_floor(awp / 100) % 10) .. "." .. (awp % 10));
 	end
 end
 local function GetRemovedWithPatchString(rwp)
 	if rwp then
 		rwp = tonumber(rwp);
-		return sformat(L.REMOVED_WITH_PATCH_FORMAT, math_floor(rwp / 10000) .. "." .. (math_floor(rwp / 100) % 10) .. "." .. (rwp % 10));
+		return L.REMOVED_WITH_PATCH_FORMAT:format(math_floor(rwp / 10000) .. "." .. (math_floor(rwp / 100) % 10) .. "." .. (rwp % 10));
 	end
 end
 app.GetCollectionText = GetCollectionText;
@@ -1189,7 +1188,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		local itemName, itemLink = GameTooltip:GetItem();
 		if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
 		if app.Settings:GetTooltipSetting("itemLevel") then tinsert(info, { left = "Item Level", right = select(4, GetItemInfo(itemLink or itemID)) }); end
-		if app.Settings:GetTooltipSetting("itemString") and itemLink then tinsert(info, { left = "Item String", right = string.match(itemLink, "item[%-?%d:]+") }); end
+		if app.Settings:GetTooltipSetting("itemString") and itemLink then tinsert(info, { left = "Item String", right = itemLink:match("item[%-?%d:]+") }); end
 		app.ShowSoftReservesForItem(itemID, info);
 
 		local reagentCache = app.GetDataSubMember("Reagents", itemID);
@@ -1776,9 +1775,9 @@ end
 
 -- Item Information Lib
 local function SearchForLink(link)
-	if string.match(link, "item") then
+	if link:match("item") then
 		-- Parse the link and get the itemID and bonus ids.
-		local itemString = string.match(link, "item[%-?%d:]+") or link;
+		local itemString = link:match("item[%-?%d:]+") or link;
 		if itemString then
 			-- Cache the Item ID and the Suffix ID.
 			local _, itemID, _, _, _, _, _, suffixID = strsplit(":", itemString);
@@ -3387,8 +3386,8 @@ local speciesFields = {
 		end
 	end,
 	["tsm"] = function(t)
-		if t.itemID then return sformat("i:%d", t.itemID); end
-		return sformat("p:%d:1:3", t.speciesID);
+		if t.itemID then return ("i:%d"):format(t.itemID); end
+		return ("p:%d:1:3"):format(t.speciesID);
 	end,
 };
 local mountFields = {
@@ -3417,8 +3416,8 @@ local mountFields = {
 		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
 	end,
 	["tsmForItem"] = function(t)
-		if t.itemID then return sformat("i:%d", t.itemID); end
-		if t.parent and t.parent.itemID then return sformat("i:%d", t.parent.itemID); end
+		if t.itemID then return ("i:%d"):format(t.itemID); end
+		if t.parent and t.parent.itemID then return ("i:%d"):format(t.parent.itemID); end
 	end,
 	["linkForItem"] = function(t)
 		return select(2, GetItemInfo(t.itemID)) or GetSpellLink(t.spellID);
@@ -3823,7 +3822,7 @@ if not GetDifficultyInfo(3) then
 end
 app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["text"] = function(t)
-		return t.sourceParent and sformat("%s [%s]", t.name, t.sourceParent.text or UNKNOWN) or t.name;
+		return t.sourceParent and ("%s [%s]"):format(t.name, t.sourceParent.text or UNKNOWN) or t.name;
 	end,
 	["name"] = function(t)
 		return GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
@@ -4375,7 +4374,7 @@ app.CreateGarrisonBuilding = app.CreateClass("GarrisonBuilding", "garrisonBuildi
 		return GetItemInfo(t.itemID) or t.info.name;
 	end,
 	tsm = function(t)
-		return sformat("i:%d", t.itemID);
+		return ("i:%d"):format(t.itemID);
 	end,
 	f = function(t)
 		return app.FilterConstants.RECIPES;
@@ -4448,6 +4447,7 @@ end)();
 
 -- Item Lib
 (function()
+local suffixItemStringFormat = "item:%d:0:0:0:0:0:%d";
 local BestSuffixPerItemID = setmetatable({}, { __index = function(t, id)
 	local suffixes = GetDataSubMember("ValidSuffixesPerItemID", id);
 	if suffixes then
@@ -4466,7 +4466,7 @@ local TotalRetriesPerItemID = setmetatable({}, { __index = function(t, id)
 end });
 local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
 	local suffixID = BestSuffixPerItemID[id];
-	local link = select(2, GetItemInfo(suffixID > 0 and sformat("item:%d:0:0:0:0:0:%d", id, suffixID) or id));
+	local link = select(2, GetItemInfo(suffixID > 0 and suffixItemStringFormat:format(id, suffixID) or id));
 	if link then
 		rawset(t, id, link);
 		return link;
@@ -4483,7 +4483,7 @@ app.ParseItemID = function(itemName)
 		return itemName;
 	else
 		local itemID = tonumber(itemName);
-		if string.match(tostring(itemID), itemName) then
+		if tostring(itemID):match(itemName) then
 			-- This was actually an item ID.
 			return itemID;
 		else
@@ -4496,7 +4496,7 @@ app.ParseItemID = function(itemName)
 				-- Oh no, gonna need to work for it.
 				for id,_ in pairs(SearchForFieldContainer("itemID")) do
 					local text = BestItemLinkPerItemID[id];
-					if text and string.match(text, itemName) then
+					if text and text:match(itemName) then
 						return id;
 					end
 				end
@@ -4620,7 +4620,7 @@ local itemFields = {
 		end
 	end,
 	["tsm"] = function(t)
-		return sformat("i:%d", t.itemID);
+		return ("i:%d"):format(t.itemID);
 	end,
 	["GetItemCount"] = function(t)
 		return baseGetItemCount;
@@ -4738,7 +4738,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 				return 1;
 			end,
 			["name"] = function(t)
-				t.name = sformat(HEIRLOOM_UPGRADE_TOOLTIP_FORMAT, t.level, t.levelMax);
+				t.name = HEIRLOOM_UPGRADE_TOOLTIP_FORMAT:format(t.level, t.levelMax);
 				return t.name;
 			end,
 			["icon"] = function(t)
@@ -5032,7 +5032,7 @@ app.NPCDisplayIDFromID = NPCDisplayIDFromID;
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
 local NPCNameFromID, NPCTitlesFromID = {},{};
-local blacklisted = { [sformat(TOOLTIP_UNIT_LEVEL, "??")] = true, };
+local blacklisted = { [TOOLTIP_UNIT_LEVEL:format("??")] = true, };
 local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
@@ -5609,7 +5609,7 @@ local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 		return GetItemInfo(t.itemID) or nameFromSpellID(t);
 	end,
 	tsm = function(t)
-		return sformat("i:%d", t.itemID);
+		return ("i:%d"):format(t.itemID);
 	end,
 	b = function(t)
 		return app.Settings.AccountWide.Recipes and 2;

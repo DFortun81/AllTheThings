@@ -60,7 +60,7 @@ local PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 		rawset(t, info, guid);
 		return guid;
 	end
-	if string.match(info, "Player-") then
+	if info:match("Player-") then
 		-- Already a GUID!
 		rawset(t, info, info);
 		return info;
@@ -730,7 +730,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 									word = "";
 								end
 								if #g > 2 then
-									if not string.match(g[1], "FORMAT: ") then
+									if not g[1]:match("FORMAT: ") then
 										tinsert(pers, g);
 									end
 									g = {};
@@ -742,7 +742,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 						if word:len() > 0 then
 							tinsert(g, word);
 						end
-						if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); end
+						if #g > 2 and not g[1]:match("FORMAT: ") then tinsert(pers, g); end
 						if #pers > 0 then
 							local success = 0;
 							local allpersistence, allsrs = app.GetDataMember("SoftReservePersistence"), app.GetDataMember("SoftReserves");

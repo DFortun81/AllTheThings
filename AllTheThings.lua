@@ -55,9 +55,9 @@ local print = print
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		string_match, sformat, strsplit, GetTimePreciseSec, type, math_floor
+		strsplit, GetTimePreciseSec, type, math_floor
 	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		string.match, string.format, strsplit, GetTimePreciseSec, type, math.floor
+		strsplit, GetTimePreciseSec, type, math.floor
 local ATTAccountWideData;
 
 -- App & Module locals
@@ -1228,7 +1228,7 @@ app.DetermineItemLink = function(sourceID)
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
 	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
 	for m=1,129,1 do
-		link = sformat(itemFormat, m);
+		link = itemFormat:format(m);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
 		if found and checkID == sourceID then return link; end
@@ -1237,7 +1237,7 @@ app.DetermineItemLink = function(sourceID)
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
 	for b=1,9999,1 do
-		link = sformat(itemFormat, b);
+		link = itemFormat:format(b);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
 		if found and checkID == sourceID then return link; end
@@ -1469,7 +1469,7 @@ GetSpecsString = function(specs, includeNames, trim)
 		end
 	end
 	if trim then
-		return string_match(app.TableConcat(icons),'^%s*(.*%S)');
+		return app.TableConcat(icons):match('^%s*(.*%S)');
 	end
 	return app.TableConcat(icons);
 end
@@ -1482,12 +1482,12 @@ app.GetFixedItemSpecInfo = GetFixedItemSpecInfo;
 local NPCNameFromID, NPCTitlesFromID = {},{};
 local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 local IsRetrievingData = app.Modules.RetrievingData.IsRetrievingData;
-local blacklisted = { [sformat(TOOLTIP_UNIT_LEVEL, "??")] = true, };
+local blacklisted = { [TOOLTIP_UNIT_LEVEL:format("??")] = true, };
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		id = tonumber(id);
 		if id and id > 0 then
-			local tooltipData = C_TooltipInfo_GetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id));
+			local tooltipData = C_TooltipInfo_GetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id));
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText;
 				if title and #tooltipData.lines > 2 then
@@ -1510,7 +1510,7 @@ else
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
 			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-			ATTCNPCHarvester:SetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id))
+			ATTCNPCHarvester:SetHyperlink(("unit:Creature-0-0-0-0-%d-0000000000"):format(id))
 			local title = ATTCNPCHarvesterTextLeft1:GetText();
 			if title and ATTCNPCHarvester:NumLines() > 2 then
 				local leftText = ATTCNPCHarvesterTextLeft2:GetText();
@@ -3516,7 +3516,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				and not app.HasCost(j, paramA, paramB)
 			then
 				text = app.GenerateSourcePathForTooltip(parent);
-				if showUnsorted or (not string_match(text, L["UNSORTED_1"]) and not string_match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
+				if showUnsorted or (not text:match(L["UNSORTED_1"]) and not text:match(L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = text:gsub(source, replacement);
 					end
@@ -4007,7 +4007,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.name);
-				local desc = sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"],app.TableConcat(knownBy, "text", "??", ", "));
+				local desc = L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(app.TableConcat(knownBy, "text", "??", ", "));
 				tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
@@ -5102,9 +5102,9 @@ end
 app.UpdateRawIDs = UpdateRawIDs;
 
 local function SearchForLink(link)
-	if string_match(link, "item") then
+	if link:match("item") then
 		-- Parse the link and get the itemID and bonus ids.
-		local itemString = string_match(link, "item[%-?%d:]+") or link;
+		local itemString = link:match("item[%-?%d:]+") or link;
 		if itemString then
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
 				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
@@ -5325,7 +5325,7 @@ local function PlotCachedCoords()
 	end
 	-- no coords actually plotted, notify in chat
 	if __TomTomWaypointCount == 0 then
-		app.print(sformat(L["NO_COORDINATES_FORMAT"], __PlottedGroup.text));
+		app.print(L.NO_COORDINATES_FORMAT:format(__PlottedGroup.text));
 	end
 end
 local function AddTomTomWaypointCache(coord, group)
@@ -5973,7 +5973,7 @@ local fields = {
 			end
 		end
 		local statistic = GetStatistic(t.achievementID);
-		if statistic and statistic ~= '0' and statistic ~= '' and not string_match(statistic, "%W") then
+		if statistic and statistic ~= '0' and statistic ~= '' and not statistic:match("%W") then
 			return statistic;
 		end
 	end,
@@ -6594,8 +6594,8 @@ local fields = {
 		if itemID then
 			-- 1 -> Off-Hand Appearance
 			-- 2 -> Main-Hand Appearance
-			-- return select(2, GetItemInfo(sformat("item:%d::::::::%d:::11:::8:%d:", itemID, app.Level, t.artifactID)));
-			local link = sformat("item:%d::::::::%d:::11::%d:8:%d:", math_floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
+			-- return select(2, GetItemInfo(("item:%d::::::::%d:::11:::8:%d:"):format(itemID, app.Level, t.artifactID)));
+			local link = ("item:%d::::::::%d:::11::%d:8:%d:"):format(math_floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
 			-- app.PrintDebug("Artifact link",t.artifactID,itemID,link);
 			local link = select(2, GetItemInfo(link));
 			if not link then return end
@@ -6848,7 +6848,7 @@ local fields = {
 		return cache.GetCachedField(t, "b");
 	end,
 	["tsm"] = function(t)
-		return sformat("p:%d:1:3", t.speciesID);
+		return ("p:%d:1:3"):format(t.speciesID);
 	end,
 };
 local BaseSpecies = app.BaseObjectFields(fields, "BaseSpecies");
@@ -7087,7 +7087,7 @@ local fields = {
 			-- append the name of the Source Instance which contains this diffculty group to help distinguish (LFR Queue NPCs)
 			parentInstance = t.sourceParent;
 			if parentInstance then
-				name = sformat("%s [%s]", name, parentInstance and parentInstance.text or UNKNOWN);
+				name = ("%s [%s]"):format(name, parentInstance and parentInstance.text or UNKNOWN);
 			end
 			return name;
 		end
@@ -7714,14 +7714,14 @@ local function default_link(t)
 		end
 		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if bonusID and modID then
-			itemLink = sformat("item:%d:::::::::::%d:1:%d:", itemLink, modID, bonusID);
+			itemLink = ("item:%d:::::::::::%d:1:%d:"):format(itemLink, modID, bonusID);
 		elseif bonusID then
-			itemLink = sformat("item:%d::::::::::::1:%d:", itemLink, bonusID);
+			itemLink = ("item:%d::::::::::::1:%d:"):format(itemLink, bonusID);
 		elseif modID then
 			-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
-			itemLink = sformat("item:%d:::::::::::%d:1:3524:", itemLink, modID);
+			itemLink = ("item:%d:::::::::::%d:1:3524:"):format(itemLink, modID);
 		else
-			itemLink = sformat("item:%d", itemLink);
+			itemLink = ("item:%d"):format(itemLink);
 		end
 		-- save this link so it doesn't need to be built again
 		t.rawlink = itemLink;
@@ -7810,12 +7810,12 @@ local itemFields = {
 		if itemLink then
 			local bonusID = t.bonusID;
 			if bonusID and bonusID > 0 then
-				return sformat("i:%d:0:1:%d", itemLink, bonusID);
+				return ("i:%d:0:1:%d"):format(itemLink, bonusID);
 			--elseif t.modID then
 				-- NOTE: At this time, TSM3 does not support modID. (RIP)
-				--return sformat("i:%d:%d:1:3524", itemLink, t.modID);
+				--return ("i:%d:%d:1:3524"):format(itemLink, t.modID);
 			end
-			return sformat("i:%d", itemLink);
+			return ("i:%d"):format(itemLink);
 		end
 	end,
 	["modItemID"] = function(t)
@@ -8143,7 +8143,7 @@ local hierloomLevelFields = {
 		return 1;
 	end,
 	["name"] = function(t)
-		t.name = sformat(HEIRLOOM_UPGRADE_TOOLTIP_FORMAT, t.level, t.levelMax);
+		t.name = HEIRLOOM_UPGRADE_TOOLTIP_FORMAT:format(t.level, t.levelMax);
 		return t.name;
 	end,
 	["icon"] = function(t)
@@ -8372,7 +8372,7 @@ fields.collected = function(t)
 	return ATTAccountWideData.Toys[t.itemID];
 end
 fields.tsm = function(t)
-	return sformat("i:%d", t.itemID);
+	return ("i:%d"):format(t.itemID);
 end
 fields.itemID = function(t)
 	return t.toyID;
@@ -8694,7 +8694,7 @@ end
 
 -- Imports the raw information from the rawlink into the specified group
 app.ImportRawLink = function(group, rawlink, ignoreSource)
-	rawlink = rawlink and string_match(rawlink, "item[%-?%d:]+");
+	rawlink = rawlink and rawlink:match("item[%-?%d:]+");
 	if rawlink and group then
 		group.rawlink = rawlink;
 		-- importing a rawlink will clear any cached upgrade info for the group
@@ -8845,8 +8845,8 @@ local function CacheInfo(t, field)
 	local retries = _t.retries or 0;
 	retries = retries + 1;
 	if retries > 20 then
-		local name = (itemID and sformat("Item #%d",itemID)) or
-					(id and sformat("Spell #%d",id));
+		local name = (itemID and ("Item #%d"):format(itemID)) or
+					(id and ("Spell #%d"):format(id));
 		_t.text = _t.text or Colorize(name, app.Colors.Mount);
 		_t.name = _t.name or name;
 		_t.icon = _t.icon or 134400;	-- question mark
@@ -8922,8 +8922,8 @@ local mountFields = {
 		return t.mountID;
 	end,
 	["tsm"] = function(t)
-		if t.itemID then return sformat("i:%d", t.itemID); end
-		if t.parent and t.parent.itemID then return sformat("i:%d", t.parent.itemID); end
+		if t.itemID then return ("i:%d"):format(t.itemID); end
+		if t.parent and t.parent.itemID then return ("i:%d"):format(t.parent.itemID); end
 	end,
 };
 app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
@@ -9668,7 +9668,7 @@ local fields = {
 	end,
 	["tsm"] = function(t)
 		if t.itemID then
-			return sformat("i:%d", t.itemID);
+			return ("i:%d"):format(t.itemID);
 		end
 	end,
 	["skillID"] = function(t)
@@ -11816,7 +11816,7 @@ RowOnEnter = function (self)
 			local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
 			if oneTimeQuestCharGuid then
 				local charData = ATTCharacterData[oneTimeQuestCharGuid];
-				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"], charData and charData.text or UNKNOWN));
+				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(charData and charData.text or UNKNOWN));
 			elseif oneTimeQuestCharGuid == false then
 				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
@@ -12249,7 +12249,7 @@ RowOnEnter = function (self)
 		-- Show Breadcrumb information
 		local lockedWarning;
 		if reference.isBreadcrumb then
-			GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.Breadcrumb, L["THIS_IS_BREADCRUMB"]));
+			GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.Breadcrumb, L["THIS_IS_BREADCRUMB"]));
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
@@ -12273,11 +12273,11 @@ RowOnEnter = function (self)
 					AddQuestInfoToTooltip(GameTooltip, nextq);
 				elseif reference.DisablePartySync == false then
 					-- unknown if party sync will function for this Thing
-					GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
+					GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
 					AddQuestInfoToTooltip(GameTooltip, nextq);
 				elseif not reference.DisablePartySync then
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-					GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
+					GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
 					AddQuestInfoToTooltip(GameTooltip, nextq);
 				else
 					-- known to not be possible in party sync
@@ -12294,7 +12294,7 @@ RowOnEnter = function (self)
 			local critKey, critValue;
 			local critFuncs = app.QuestLockCriteriaFunctions;
 			local critFunc;
-			GameTooltip:AddLine(sformat(L["UNAVAILABLE_WARNING_FORMAT"], app.Colors.LockedWarning, lockCriteria[1]));
+			GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, lockCriteria[1]));
 			for i=2,#lockCriteria,1 do
 				critKey = lockCriteria[i];
 				i = i + 1;
@@ -12315,7 +12315,7 @@ RowOnEnter = function (self)
 			local critFunc = critFuncs["questID"];
 			local label = critFuncs["label_questID"];
 			local text;
-			GameTooltip:AddLine(sformat(L["UNAVAILABLE_WARNING_FORMAT"], app.Colors.LockedWarning, 1));
+			GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, 1));
 			for i=1,#altQuests,1 do
 				critValue = altQuests[i];
 				if critFunc then
@@ -12329,10 +12329,10 @@ RowOnEnter = function (self)
 		if not lockedWarning and reference.locked then
 			if reference.DisablePartySync == false then
 				-- unknown if party sync will function for this Thing
-				GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
+				GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
 			elseif not reference.DisablePartySync then
 				-- should be possible in party sync
-				GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
+				GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
 			else
 				-- known to not be possible in party sync
 				GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
@@ -13213,7 +13213,7 @@ function app:GetDataCache()
 	}));
 
 	-- Create Dynamic Groups Button
-	tinsert(g, app.CreateRawText(sformat(L["CLICK_TO_CREATE_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]), {
+	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L["DYNAMIC_CATEGORY_LABEL"]), {
 		["icon"] = app.asset("Interface_CreateDynamic"),
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		-- ["OnClick"] = function(row, button)
@@ -14874,7 +14874,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 				local results = app:BuildSearchResponse(field, value, true);
 				app.PrintDebug("Results",#results)
 				ArrayAppend(self.data.g, results);
-				self.data.text = L["ITEM_FILTER_TEXT"]..sformat("  [%s=%s]",field,value);
+				self.data.text = L["ITEM_FILTER_TEXT"]..("  [%s=%s]"):format(field,value);
 			end
 
 			-- Item Filter
@@ -15941,7 +15941,7 @@ customWindowUpdates["Sync"] = function(self)
 					local login = character.lastPlayed;
 					if login then
 						local d = C_DateAndTime.GetCalendarTimeFromEpoch(login * 1e6);
-						GameTooltip:AddDoubleLine(PLAYED, sformat("%d-%02d-%02d %02d:%02d", d.year, d.month, d.monthDay, d.hour, d.minute), 0.8, 0.8, 0.8);
+						GameTooltip:AddDoubleLine(PLAYED, ("%d-%02d-%02d %02d:%02d"):format(d.year, d.month, d.monthDay, d.hour, d.minute), 0.8, 0.8, 0.8);
 					else
 						GameTooltip:AddDoubleLine(PLAYED, NEVER, 0.8, 0.8, 0.8);
 					end
@@ -17714,7 +17714,7 @@ app.LoadDebugger = function()
 					-- this probably doesn't work in other locales
 					msg = msg:gsub("item: ", "");
 					-- print("Loot parse",msg)
-					local itemString = string_match(msg, "item[%-?%d:]+");
+					local itemString = msg:match("item[%-?%d:]+");
 					if itemString then
 						-- print("Looted Item",itemString)
 						local itemID = GetItemInfoInstant(itemString);
@@ -18203,7 +18203,7 @@ local function PendingCollectionCoroutine()
 		local f = t.f;
 		if f then allTypes[f] = true; end
 		if reportCollected then
-			print(sformat(L.ITEM_ID_ADDED, (t.text or UNKNOWN), t[t.key] or "???"));
+			print(L.ITEM_ID_ADDED:format((t.text or UNKNOWN), t[t.key] or "???"));
 		end
 		any = true;
 	end
@@ -18222,7 +18222,7 @@ local function PendingCollectionCoroutine()
 	any = false;
 	for hash,t in pairs(pendingRemovals) do
 		if reportCollected then
-			print(sformat(L.ITEM_ID_REMOVED, (t.text or UNKNOWN), t[t.key] or "???"));
+			print(L.ITEM_ID_REMOVED:format((t.text or UNKNOWN), t[t.key] or "???"));
 		end
 		any = true;
 	end

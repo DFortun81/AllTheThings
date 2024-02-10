@@ -12,8 +12,8 @@ local L = app.L;
 -- Encapsulates the functionality for handling and interacting with colors in the addon, which are typically represented in Text
 
 -- Global locals
-local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, sformat
-	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, string.format;
+local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime
+	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime;
 
 -- Module locals
 local CS = CreateFrame("ColorSelect", nil, app.frame);
@@ -28,8 +28,10 @@ end
 local function HexToARGB(hex)
 	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255, tonumber("0x"..hex:sub(7,8)) / 255;
 end
+
+local colorStringFormat = "ff%02x%02x%02x";
 local function RGBToHex(r, g, b)
-	return sformat("ff%02x%02x%02x",
+	return colorStringFormat:format(
 		BindComponent(r),
 		BindComponent(g),
 		BindComponent(b));

@@ -151,7 +151,7 @@ function app.AddSound(tableName, sound)
 	if soundType ~= "string" and soundType ~= "number" then
 		error("Sound must be either a string FilePath ('Interface/...') or a FileDataID number");
 	end
-	tableName = string.upper(tableName or "");
+	tableName = (tableName or ""):upper();
 	if not DefaultSoundPack[tableName] then	-- If it isn't in the default sound pack, it's not valid for any Sound Pack for ATT.
 		error("Sound table '".. tableName .. "' is not valid");
 	end
@@ -168,7 +168,7 @@ function app.AddSound(tableName, sound)
 end
 -- Allows clearing the Sounds for a given 'type' of Sound
 function app.ClearSounds(tableName)
-	tableName = string.upper(tableName or "");
+	tableName = (tableName or ""):upper();
 	if not DefaultSoundPack[tableName] then	-- If it isn't in the default sound pack, it's not valid for any Sound Pack for ATT.
 		error("Sound table '".. tableName .. "' is not valid");
 	end

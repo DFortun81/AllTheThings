@@ -12,7 +12,7 @@ app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 
 -- Generate the version identifier.
 local v = (C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata)(appName, "Version");
-if string.match(v, "version") then
+if v:match("version") then
 	app.Version = "[Git]";
 	app.IsGit = true;
 else

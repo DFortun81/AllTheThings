@@ -3,8 +3,7 @@
 local _, app = ...;
 
 -- Global locals
-local pairs, string_format
-	= pairs, string.format;
+local pairs = pairs;
 
 -- App locals
 local AssignChildren = app.AssignChildren;
@@ -199,7 +198,7 @@ local function NestDynamicValueCategories(group)
 end
 
 local function dynamic_title(t)
-	local title = string_format(app.L["CLICK_TO_CREATE_FORMAT"], (t.name or UNKNOWN).." "..app.L["DYNAMIC_CATEGORY_LABEL"])
+	local title = app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L["DYNAMIC_CATEGORY_LABEL"])
 	t.title = title
 	return title
 end
