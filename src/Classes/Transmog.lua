@@ -9,6 +9,7 @@ if C_TransmogCollection then
 		= ipairs, select, tinsert;
 	local GetItemInfoInstant
 		= GetItemInfoInstant;
+	local Callback = app.CallbackHandlers.Callback;
 	local Colorize = app.Modules.Color.Colorize;
 	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 	local L, contains, containsAny, SearchForField, SearchForFieldContainer
