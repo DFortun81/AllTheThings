@@ -68,7 +68,7 @@ if C_Garrison then
 	
 	-- Missions
 	local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
-	app.CreateGarrisonMission = app.CreateClass("GarrisonMission", "garrisonMissionID", {
+	app.CreateGarrisonMission = app.CreateClass("GarrisonMission", "missionID", {
 		name = function(t)
 			return C_Garrison_GetMissionName(t.missionID);
 		end,
