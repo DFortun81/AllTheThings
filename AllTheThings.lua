@@ -2212,14 +2212,6 @@ local SubroutineCache = {
 		if #searchResults > 0 then o.e = searchResults[1].e; end
 		pop(finalized, searchResults);	-- pop the instance header
 	end,
-	-- Korthian Armaments
-	["korthian_armaments"] = function(finalized, searchResults, o, cmd, inv)
-		local select, pop, invtype = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.invtype;
-		select(finalized, searchResults, o, "select", "itemID", 187187);	-- Korthian Armaments
-		pop(finalized, searchResults);	-- Discard the Item Header and acquire all of their children.
-		pop(finalized, searchResults);	-- Discard the Headers and acquire all of their children.
-		invtype(finalized, searchResults, o, "invtype", inv);	-- Only slot-specific
-	end,
 	["instance_tier"] = function(finalized, searchResults, o, cmd, instanceID, difficultyID, classID)
 		local select, pop, where, extract, invtype =
 			ResolveFunctions.select,

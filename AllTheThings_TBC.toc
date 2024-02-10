@@ -84,6 +84,7 @@ src\Classes\Transmog.lua
 src\Expansions\Warlords.lua
 src\Expansions\Legion.lua
 src\Expansions\Battle For Azeroth.lua
+src\Expansions\Shadowlands.lua
 
 # Load primary addon source files
 # Settings.lua
