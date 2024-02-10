@@ -15,7 +15,7 @@ app:CreateWindow("Maps", {
 			local g = {};
 			self.data = {
 				text = "All The Maps!",
-				icon = app.asset("Category_Zones"), 
+				icon = app.asset("Category_Zones"),
 				description = "This window helps debug when we're missing map IDs in the addon.",
 				back = 1,
 				indent = 0,

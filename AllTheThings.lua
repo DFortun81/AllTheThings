@@ -34,7 +34,6 @@ BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L.TOGGLE_RANDOM
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Performance Cache
-local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
@@ -13905,77 +13904,88 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
-			self:SetData({
-				['text'] = "Cosmic Infuser",
-				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp",
-				["description"] = "This window helps debug when we're missing map IDs in the addon.",
-				['visible'] = true,
-				['OnUpdate'] = app.AlwaysShowUpdate,
-				['g'] = {
-					{
-						['text'] = "Check for missing maps now!",
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "This function will check for missing mapIDs in ATT.",
-						['OnClick'] = function(data, button)
-							Push(self, "Rebuild", self.Rebuild);
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-				},
-			});
-			local openMinilist = function(row, button)
-				-- logic to right-click to set the minilist to this mapID, for testing
-				if button == "RightButton" then
-					app.OpenMiniList(row.ref.mapID, true);
-					return true;
+			local g = {};
+			local rootData = {
+				text = "Cosmic Infuser",
+				icon = app.asset("Category_Zones"),
+				description = "This window helps debug when we're missing map IDs in the addon.",
+				OnUpdate = app.AlwaysShowUpdate,
+				back = 1,
+				indent = 0,
+				visible = true,
+				expanded = true,
+				g = g,
+			};
+			
+			-- Cache all maps by their ID number, starting with maps we reference in our DB.
+			local mapsByID = {};
+			for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
+				if not mapsByID[mapID] then
+					local mapObject = app.CreateMap(mapID, {
+						mapInfo = C_Map_GetMapInfo(mapID),
+						collectible = true,
+						collected = true
+					});
+					mapsByID[mapID] = mapObject;
+					mapObject.g = {};	-- Doing this prevents the CreateMap function from creating an exploration header.
 				end
 			end
-			local meta = {
-				["collected"] = function(t)
-					local results = SearchForField("mapID", t.mapID);
-					local total = #results;
-					t.collected = total > 0;
-					t.total = total;
-					return t.collected;
-				end,
-			};
-			-- an override base table for the normal map base table...
-			local baseMap = { __index = function(t, key) return meta[key] and meta[key](t) or app.BaseMap.__index(t, key); end };
-
-			self.Rebuild = function(self)
-				-- Rebuild all the datas
-				local temp = self.data.g[1];
-				wipe(self.data.g);
-				tinsert(self.data.g, temp);
-
-				-- Go through all of the possible maps
-				local allmapchains = {};
-				for mapID=1,3000,1 do
+			
+			-- Go through all of the possible maps, including only maps that have C_Map data.
+			for mapID=1,10000,1 do
+				if not mapsByID[mapID] then
 					local mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
-						local mapObject = setmetatable({ ["mapID"] = mapID, ["collectible"] = true, ["OnClick"] = openMinilist }, baseMap);
-
-						-- Recurse up the map chain and build the full hierarchy
-						local parentMapID = mapInfo.parentMapID;
-						while parentMapID do
-							mapInfo = C_Map_GetMapInfo(parentMapID);
-							if mapInfo then
-								mapObject = setmetatable({ ["mapID"] = parentMapID, ["collectible"] = true, ["OnClick"] = openMinilist, ["g"] = { mapObject } }, baseMap);
-								parentMapID = mapInfo.parentMapID;
-							else
-								break;
-							end
-						end
-
-						-- Merge it into the listing.
-						tinsert(allmapchains, mapObject);
+						local mapObject = app.CreateMap(mapID, {
+							mapInfo = mapInfo,
+							collectible = true,
+							collected = false
+						});
+						mapsByID[mapID] = mapObject;
+						mapObject.g = {};	-- Doing this prevents the CreateMap function from creating an exploration header.
 					end
 				end
-				NestObjects(self.data, allmapchains);
-				AssignChildren(self.data);
-				self:Update(true);
 			end
+			
+			-- Iterate through the maps we have cached, determine their parents and link them together.
+			-- Also push them on to the stack.
+			for mapID,mapObject in pairs(mapsByID) do
+				local parent = rootData;
+				if mapObject.mapInfo then
+					local parentMapID = mapObject.mapInfo.parentMapID;
+					if parentMapID and parentMapID > 0 then
+						local parentMapObject = mapsByID[parentMapID];
+						if parentMapObject then
+							parent = parentMapObject;
+						else
+							print("Failed to find parent map in the mapsByID table!", parentMapID);
+						end
+					end
+				end
+				mapObject.parent = parent;
+				tinsert(parent.g, mapObject);
+			end
+			
+			-- Sort the maps by number of relative maps, then by name if matching.
+			app.Sort(g, function(a, b)
+				local aSize, bSize = #a.g, #b.g;
+				if aSize > bSize then
+					return true;
+				elseif bSize == aSize then
+					return b.name > a.name;
+				else
+					return false;
+				end
+			end, true);
+			
+			-- Now finally, clear out unused gs.
+			for i,mapObject in ipairs(g) do
+				if #mapObject.g < 1 then
+					mapObject.g = nil;
+				end
+			end
+			
+			self:SetData(rootData);
 		end
 
 		-- Update the window and all of its row data
@@ -18733,6 +18743,9 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		end
 	end
 end
+
+
+local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	if sourceID then
