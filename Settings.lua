@@ -201,7 +201,6 @@ local TooltipSettingsBase = {
 		["DropChances"] = true,
 		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
-		["Warn:Difficulty"] = true,
 		["Warn:Removed"] = true,
 		["Currencies"] = true,
 		["NPCData:Nested"] = false,
@@ -3284,16 +3283,6 @@ end)
 checkboxExpandDifficulty:SetATTTooltip(L["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"])
 checkboxExpandDifficulty:AlignBelow(checkboxDoAdHocUpdates)
 
-local checkboxWarnDifficulty = child:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Warn:Difficulty"))
-end,
-function(self)
-	settings:SetTooltipSetting("Warn:Difficulty", self:GetChecked())
-end)
-checkboxWarnDifficulty:SetATTTooltip(L["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"])
-checkboxWarnDifficulty:AlignBelow(checkboxExpandDifficulty)
-
 local checkboxShowCollectibleCostGroups = child:CreateCheckBox(L["CURRENCIES_IN_WQ_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
@@ -3302,7 +3291,7 @@ function(self)
 	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked())
 end)
 checkboxShowCollectibleCostGroups:SetATTTooltip(L["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"])
-checkboxShowCollectibleCostGroups:AlignBelow(checkboxWarnDifficulty)
+checkboxShowCollectibleCostGroups:AlignBelow(checkboxExpandDifficulty)
 
 local checkboxShowCompletedGroups = child:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
 function(self)
