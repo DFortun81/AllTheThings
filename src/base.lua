@@ -223,10 +223,10 @@ app.RemoveEventHandler = function(handler)
 		end
 	end
 end
-app.HandleEvent = function(eventName)
+app.HandleEvent = function(eventName, ...)
 	-- app.PrintDebug("HandleEvent",eventName)
 	for i,handler in ipairs(EventHandlers[eventName]) do
-		handler();
+		handler(...);
 	end
 	-- app.PrintDebugPrior("HandleEvent")
 end

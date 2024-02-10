@@ -77,6 +77,9 @@ src\Classes\Races.lua
 src\Classes\Title.lua
 src\Classes\CharacterUnlock.lua
 
+# Expansion specific source files
+src\Expansions\Legion.lua
+
 # Load primary addon source files
 Settings.lua
 AllTheThings.lua

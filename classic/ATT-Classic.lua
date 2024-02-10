@@ -5497,9 +5497,6 @@ end)();
 -- Unsupported Libs
 (function()
 -- Neither of these are supported at this time.
-app.CreateArtifact = function(id, t)
-	return { text = "Artifact #" .. id, description = "This data type is not supported at this time." };
-end
 app.CreateAzeriteEssence = function(id, t)
 	return { text = "AzeriteEssence #" .. id, description = "This data type is not supported at this time." };
 end
@@ -6248,6 +6245,9 @@ app.events.ADDON_LOADED = function(addonName)
 	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
 	app.SetCollected = SetCollected;
 	app.SetCollectedForSubType = SetCollectedForSubType;
+	
+	-- Notify Event Handlers that Saved Variable Data is available.
+	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
 	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("GroupQuestsByGUID", {});
