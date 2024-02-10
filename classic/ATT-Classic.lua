@@ -1099,7 +1099,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end);
 			end
 			group = regroup;
-		elseif paramA == "titleID" then
+		elseif paramA == "titleID" or paramA == "followerID" then
 			-- Don't do anything
 			local regroup = {};
 			if app.MODE_ACCOUNT then
@@ -1110,7 +1110,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			else
 				for i,j in ipairs(group) do
-					if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) then
+					if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 					end
 				end
@@ -5391,9 +5391,6 @@ app.CreateConduit = function(id, t)
 end
 app.CreateDrakewatcherManuscript = function(id, t)
 	return { text = "DrakewatcherManuscript #" .. id, description = "This data type is not supported at this time." };
-end
-app.CreateFollower = function(id, t)
-	return { text = "Follower #" .. id, description = "This data type is not supported at this time." };
 end
 
 app.CreateGearSet = function(id, t)

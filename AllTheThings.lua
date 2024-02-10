@@ -2924,25 +2924,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 
 				group = regroup;
-			elseif paramA == "titleID" then
-				-- Don't do anything
-				local regroup = {};
-				if app.MODE_ACCOUNT then
-					for i,j in ipairs(group) do
-						if app.RecursiveUnobtainableFilter(j) then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						end
-					end
-				else
-					for i,j in ipairs(group) do
-						if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						end
-					end
-				end
-
-				group = regroup;
-			elseif paramA == "followerID" then
+			elseif paramA == "titleID" or paramA == "followerID" then
 				-- Don't do anything
 				local regroup = {};
 				if app.MODE_ACCOUNT then
@@ -6735,73 +6717,6 @@ app.events.TAXIMAP_OPENED = function()
 	end
 end
 end	-- Flight Path Lib
-
--- Follower Lib
-(function()
-local C_Garrison_GetFollowerInfo,C_Garrison_GetFollowerLinkByID,C_Garrison_IsFollowerCollected =
-	  C_Garrison.GetFollowerInfo,C_Garrison.GetFollowerLinkByID,C_Garrison.IsFollowerCollected;
-local cache = app.CreateCache("followerID");
-local function CacheInfo(t, field)
-	local _t, id = cache.GetCached(t);
-	local info = C_Garrison_GetFollowerInfo(id);
-	if info then
-		_t.name = info.name;
-		_t.lvl = info.level;
-		_t.icon = info.portraitIconID;
-		_t.title = info.className;
-		_t.displayID = info.displayIDs and info.displayIDs[1] and info.displayIDs[1].id;
-	end
-	_t.link = C_Garrison_GetFollowerLinkByID(id);
-	if field then return _t[field]; end
-end
-local fields = {
-	["key"] = function(t)
-		return "followerID";
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", CacheInfo);
-	end,
-	["lvl"] = function(t)
-		return cache.GetCachedField(t, "lvl", CacheInfo);
-	end,
-	["title"] = function(t)
-		return cache.GetCachedField(t, "title", CacheInfo);
-	end,
-	["displayID"] = function(t)
-		-- return cache.GetCachedField(t, "displayID", CacheInfo);
-	end,
-	["link"] = function(t)
-		return cache.GetCachedField(t, "link", CacheInfo);
-	end,
-	["description"] = function(t)
-		return L["FOLLOWERS_COLLECTION_DESC"];
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Followers;
-	end,
-	["trackable"] = app.ReturnTrue,
-	["collected"] = function(t)
-		if t.saved then return 1; end
-		if app.Settings.AccountWide.Followers and ATTAccountWideData.Followers[t.followerID] then return 2; end
-	end,
-	["saved"] = function(t)
-		local followerID = t.followerID;
-		if app.CurrentCharacter.Followers[followerID] then return true; end
-		if C_Garrison_IsFollowerCollected(followerID) then
-			app.CurrentCharacter.Followers[followerID] = 1;
-			ATTAccountWideData.Followers[followerID] = 1;
-			return true;
-		end
-	end,
-};
-app.BaseFollower = app.BaseObjectFields(fields, "BaseFollower");
-app.CreateFollower = function(id, t)
-	return setmetatable(constructor(id, t, "followerID"), app.BaseFollower);
-end
-end)();
 
 -- Gear Set Lib
 (function()
@@ -17067,7 +16982,6 @@ app.Startup = function()
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
 	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
-	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
 	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 	if not currentCharacter.Professions then currentCharacter.Professions = {}; end
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
@@ -17105,7 +17019,6 @@ app.Startup = function()
 	if not accountWideData.Factions then accountWideData.Factions = {}; end
 	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
 	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
-	if not accountWideData.Followers then accountWideData.Followers = {}; end
 	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
 	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
 	if not accountWideData.Quests then accountWideData.Quests = {}; end
