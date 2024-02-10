@@ -7114,32 +7114,6 @@ fields.collectible = app.GlobalVariants.AndLockCriteria.collectible;
 fields.locked = app.GlobalVariants.AndLockCriteria.locked
 app.BaseItemWithQuestID = app.BaseObjectFields(fields, "BaseItemWithQuestID");
 
-local fields = RawCloneData(itemFields);
-fields.collectible = function(t)
-	return app.Settings.Collectibles.Transmog;
-end
-fields.collected = function(t)
-	if t.itemID then
-		if GetItemCount(t.itemID, true) > 0 then
-			app.CurrentCharacter.CommonItems[t.itemID] = 1;
-			ATTAccountWideData.CommonItems[t.itemID] = 1;
-			return 1;
-		elseif app.CurrentCharacter.CommonItems[t.itemID] == 1 then
-			app.CurrentCharacter.CommonItems[t.itemID] = nil;
-			ATTAccountWideData.CommonItems[t.itemID] = nil;
-			for guid,characterData in pairs(ATTCharacterData) do
-				if characterData.CommonItems and characterData.CommonItems[t.itemID] then
-					ATTAccountWideData.CommonItems[t.itemID] = 1;
-				end
-			end
-		end
-		if ATTAccountWideData.CommonItems[t.itemID] then
-			return 2;
-		end
-	end
-end
-app.BaseCommonItem = app.BaseObjectFields(fields, "BaseCommonItem");
-
 local fields_BaseCostItem = {
 	-- total is the count of the cost item required
 	["total"] = function(t)
