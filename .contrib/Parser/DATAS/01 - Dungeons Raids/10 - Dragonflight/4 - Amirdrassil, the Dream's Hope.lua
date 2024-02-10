@@ -975,12 +975,32 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(78317),	-- Smolderon
 		q(78318),	-- Tindral Sageswift, Seer of the Flame
 		q(78320),	-- Fyrakk the Blazing
-		--Fyr'alath the Dreamrender bad luck protection with Fyrakk Kill
+		-- Fyr'alath the Dreamrender bad luck protection with Fyrakk Kill
 		q(78566),	-- Looking for raid
 		q(78567),	-- Normal
 		q(78568),	-- Heroic
 		q(78569),	-- Mythic
 		--
 		q(78423),	-- Account unlock quest (SpellID 425878) received after turning in (questID 78421)
+
+		-- Heroic (triggered on paladin, no Fyr'alath the Dreamrender yet)
+		q(78956),	-- Heroic Gnarlroot
+		q(78958),	-- Heroic Igira the Cruel
+		q(78960),	-- Heroic Volcoross
+		q(78962),	-- Heroic Council of Dreams
+		q(78964),	-- Heroic Larodar, Keeper of the Flame
+		q(78966),	-- Heroic Nymue, Weaver of the Cycle
+		q(78968),	-- Heroic Smolderon
+		q(78970),	-- Heroic Tindral Sageswift, Seer of the Flame
+
+		-- Mythic kills?
+		--q(78957),	-- UNCONFIRMED Mythic Gnarlroot
+		--q(78959),	-- UNCONFIRMED Mythic Igira the Cruel
+		--q(78961),	-- UNCONFIRMED Mythic Volcoross
+		--q(78963),	-- UNCONFIRMED Mythic Council of Dreams
+		--q(78965),	-- UNCONFIRMED Mythic Larodar, Keeper of the Flame
+		--q(78967),	-- UNCONFIRMED Mythic Nymue, Weaver of the Cycle
+		--q(78969),	-- UNCONFIRMED Mythic Smolderon
+		--q(78971),	-- UNCONFIRMED Mythic Tindral Sageswift, Seer of the Flame
 	}),
 })));
