@@ -1105,7 +1105,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(31456),	-- Gnomish Casting Boots
 							i(30690, {	-- Power Converter (Toy !)
-								-- #if ANYCLASSIC
+								-- #if BEFORE WRATH
 								["description"] = "It's an unlimited Firework Launcher that eventually becomes a Toy and is also a Star Wars reference. Keep it forever.",
 								-- #endif
 								["races"] = ALLIANCE_ONLY,
