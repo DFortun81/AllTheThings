@@ -6634,6 +6634,7 @@ end)();
 -- Conduit Lib
 (function()
 if C_Soulbinds then
+	local CurrentConduitsData, AccountWideConduitsData = {}, {};
 	local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
 	app.CreateConduit = app.ExtendClass("BaseItem", "Conduit", "conduitID", {
 		collectible = function(t) return app.Settings.Collectibles.Conduits; end,
@@ -6641,28 +6642,63 @@ if C_Soulbinds then
 		collected = function(t)
 			local cID = t.conduitID;
 			-- character collected
-			if app.CurrentCharacter.Conduits[cID] then return 1; end
+			if CurrentConduitsData[cID] then return 1; end
 			-- account-wide collected
-			if app.Settings.AccountWide.Conduits and ATTAccountWideData.Conduits[cID] then return 2; end
+			if app.Settings.AccountWide.Conduits and AccountWideConduitsData[cID] then return 2; end
 			-- fresh collected
 			local state = C_Soulbinds_GetConduitCollectionData(cID);
 			if state ~= nil then
-				app.CurrentCharacter.Conduits[cID] = 1;
-				ATTAccountWideData.Conduits[cID] = 1;
+				CurrentConduitsData[cID] = 1;
+				AccountWideConduitsData[cID] = 1;
 				return 1;
 			end
 		end,
 		lvl = function(t) return 60; end,
 	});
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		local characterData = currentCharacter.Conduits;
+		if characterData then
+			CurrentConduitsData = characterData;
+		else
+			currentCharacter.Conduits = CurrentConduitsData;
+		end
+		
+		local accountWide = accountWideData.Conduits;
+		if accountWide then
+			AccountWideConduitsData = accountWide;
+		else
+			accountWideData.Conduits = AccountWideConduitsData;
+		end
+	end);
+else
+	app.CreateConduit = function(id, t)
+		return setmetatable({
+			text = "@CRIEVE: Conduit #" .. id,
+			description = "This data type is not supported at this time.",
+			collected = false,
+			collectible = true
+		}, { __index = t });
+	end
 end
 end)();
 
 -- Drakewatcher Manuscript Lib
 (function()
-app.CreateDrakewatcherManuscript = app.ExtendClass("BaseItem", "DrakewatcherManuscript", "itemID", {
-	collectible = function(t) return app.Settings.Collectibles.DrakewatcherManuscripts; end,
-	collected = function(t) return IsQuestFlaggedCompletedForObject(t); end
-});
+if app.GameBuildVersion >= 100000 then	-- Dragonflight+
+	app.CreateDrakewatcherManuscript = app.ExtendClass("BaseItem", "DrakewatcherManuscript", "itemID", {
+		collectible = function(t) return app.Settings.Collectibles.DrakewatcherManuscripts; end,
+		collected = function(t) return IsQuestFlaggedCompletedForObject(t); end
+	});
+else
+	app.CreateDrakewatcherManuscript = function(id, t)
+		return setmetatable({
+			text = "@CRIEVE: Drakewatcher Manuscript #" .. id,
+			description = "This data type is not supported at this time.",
+			collected = false,
+			collectible = true
+		}, { __index = t });
+	end
+end
 end)();
 
 -- Heirloom Lib
@@ -16045,7 +16081,6 @@ app.Startup = function()
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
 
 	-- Update timestamps.
 	local now = time();
@@ -16083,7 +16118,6 @@ app.Startup = function()
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	if not accountWideData.Toys then accountWideData.Toys = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
-	if not accountWideData.Conduits then accountWideData.Conduits = {}; end
 
 	-- Account Wide Settings
 	local accountWideSettings = app.Settings.AccountWide;
