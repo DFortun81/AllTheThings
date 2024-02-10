@@ -35,9 +35,6 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Performance Cache
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
-local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
-local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
-local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementInfo = _G["GetAchievementInfo"];
@@ -55,8 +52,8 @@ local ATTAccountWideData;
 
 -- App & Module locals
 local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
-local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQuickly, GetRawField
-	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly, app.GetRawField
+local CacheFields, SearchForField, SearchForFieldContainer, GetRawField
+	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.GetRawField
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
@@ -748,6 +745,7 @@ local function GetProgressTextForTooltip(data)
 
 	return app.TableConcat(text, nil, "", " ");
 end
+app.GetCollectionIcon = GetCollectionIcon;
 app.GetCompletionIcon = GetCompletionIcon;
 app.GetProgressTextForRow = GetProgressTextForRow;
 
@@ -1099,143 +1097,7 @@ local function RawCloneData(data, clone)
 	return clone;
 end
 
-(function()
-local GetSlotForInventoryType = C_Transmog.GetSlotForInventoryType;
-app.SlotByInventoryType = setmetatable({}, {
-	__index = function(t, key)
-		local slot = GetSlotForInventoryType(key);
-		t[key] = slot;
-		return slot;
-	end
-})
-end)();
-local GetSourceID;
-do
-local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
-local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
-local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
-	["INVTYPE_HEAD"] = {1},
-	["INVTYPE_NECK"] = {2},
-	["INVTYPE_SHOULDER"] = {3},
-	["INVTYPE_BODY"] = {4},
-	["INVTYPE_CHEST"] = {5},
-	["INVTYPE_ROBE"] = {5},
-	["INVTYPE_WAIST"] = {6},
-	["INVTYPE_LEGS"] = {7},
-	["INVTYPE_FEET"] = {8},
-	["INVTYPE_WRIST"] = {9},
-	["INVTYPE_HAND"] = {10},
-	["INVTYPE_RING"] = {11},
-	["INVTYPE_TRINKET"] = {12},
-	["INVTYPE_CLOAK"] = {15},
-	["INVTYPE_WEAPON"] = {16, 17},
-	["INVTYPE_SHIELD"] = {17},
-	["INVTYPE_2HWEAPON"] = {16, 17},
-	["INVTYPE_WEAPONMAINHAND"] = {16},
-	["INVTYPE_RANGED"] = {16},
-	["INVTYPE_RANGEDRIGHT"] = {16},
-	["INVTYPE_WEAPONOFFHAND"] = {17},
-	["INVTYPE_HOLDABLE"] = {17},
-	["INVTYPE_TABARD"] = {19},
-};
 
--- Source ID Harvesting Lib
-local DressUpModel = CreateFrame('DressUpModel');
-GetSourceID = function(itemLink)
-	if not itemLink or not C_Item_IsDressableItemByID(itemLink) then return nil, false end
-
-	-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
-	-- (requires loaded ItemInfo to work for modified appearances)
-	if GetItemInfo(itemLink) then
-		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
-		-- app.PrintDebug("TMOGSourceID",sourceID,itemLink)
-		if sourceID then return sourceID, true; end
-	end
-
-	-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
-	local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
-	if slotName then
-		local slots = inventorySlotsMap[slotName];
-		if slots then
-			DressUpModel:SetUnit("player");
-			DressUpModel:Undress();
-			for _,slot in pairs(slots) do
-				DressUpModel:TryOn(itemLink, slot);
-				local tmogInfo = DressUpModel:GetItemTransmogInfo(slot);
-				-- app.PrintDebug("SlotInfo",slot)
-				-- app.PrintTable(tmogInfo)
-				local sourceID = tmogInfo and tmogInfo.appearanceID;
-				if sourceID and sourceID ~= 0 then
-					-- Adjusted to account for non-transmoggable SourceIDs which are collectible
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo then
-						if sourceInfo.itemID == itemID then
-							-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
-							return sourceID, true;
-						end
-					end
-				end
-			end
-		end
-	end
-	return nil, true;
-end
--- Returns sourceID which is actually accurate for the provided itemLink
--- (C_TransmogCollection.GetItemInfo requires item data to be available in the Client to be confirmed that it is accurate. Thanks Blizzard)
-local function GetSourceIDConfirmed(itemLink)
-	if not GetItemInfo(itemLink) then return end
-	return GetSourceID(itemLink)
-end
-app.GetSourceID = GetSourceID;
-app.GetSourceIDConfirmed = GetSourceIDConfirmed;
-end
--- Attempts to determine an ItemLink which will return the provided SourceID
-app.DetermineItemLink = function(sourceID)
-	local link;
-	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-	local itemID = sourceInfo and sourceInfo.itemID;
-	-- No ItemID don't try to generate the link
-	if not itemID then
-		-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No Source Info from Blizzard)");
-		return;
-	end
-	local itemFormat = "item:"..itemID;
-	-- Check Raw Item
-	link = itemFormat;
-	-- if quality is Artifact / Unmodified Item / Category 'Paired' just return the basic Item string
-	if sourceInfo.quality == 6 or sourceInfo.itemModID == 0 or sourceInfo.categoryID == 29 then
-		-- app.PrintDebug("DetermineItemLink:Good",link,sourceID,"(Basic Item Data)");
-		-- app.PrintTable(sourceInfo)
-		return link;
-	end
-	local checkID, found = GetSourceID(link);
-	if found and checkID == sourceID then return link; end
-
-	-- Only try to manually scan for a sourceID if we are Debugging (save regular users from unnecessary lookups)
-	if not app.Debugging then return end
-
-
-	-- Check ModIDs
-	-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
-	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
-	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
-	for m=1,129,1 do
-		link = itemFormat:format(m);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
-	end
-
-	-- Check BonusIDs
-	itemFormat = "item:"..itemID.."::::::::::::1:%d";
-	for b=1,9999,1 do
-		link = itemFormat:format(b);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
-	end
-	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
-end
 app.IsComplete = function(o)
 	local total = o.total
 	if total and total > 0 then return total == o.progress; end
@@ -1276,6 +1138,7 @@ local function GetUnobtainableTexture(group)
 		return L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
 	end
 end
+app.GetUnobtainableTexture = GetUnobtainableTexture;
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
 	-- Use the group's own indicator if defined
@@ -2776,11 +2639,6 @@ local function GetPatchString(patch, color)
 	return patch and Colorize(math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10), color)
 end
 local conversions = app.Settings.AdditionalIDValueConversions
--- add a value conversion for sourceID to include a checkmark/x
-conversions.sourceID = function(sourceID)
-	local info = C_TransmogCollection_GetSourceInfo(sourceID)
-	return sourceID .. " " .. GetCollectionIcon(info and info.isCollected)
-end
 -- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
 conversions.questID = function(questID, group)
 	local otherFactionQuestID = group.otherFactionQuestID;
@@ -2957,7 +2815,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- paramA
 		itemString = rawlink:match("item[%-?%d:]+");
 		if itemString then
-			sourceID = GetSourceID(rawlink);
+			sourceID = app.GetSourceID(rawlink);
 			-- print("Rawlink SourceID",sourceID,rawlink)
 			if isTopLevelSearch and app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 			local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
@@ -3019,198 +2877,15 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if sourceGroup.key then
 			-- Acquire the SourceID if it hadn't been determined yet.
 			if not sourceID and sourceGroup.link then
-				sourceID = GetSourceID(sourceGroup.link) or sourceGroup.sourceID;
+				sourceID = app.GetSourceID(sourceGroup.link) or sourceGroup.sourceID;
 			end
 		else
 			sourceGroup.missing = true;
 		end
 
 		if isTopLevelSearch then
-			if sourceID then
-				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-				if sourceInfo then
-					local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
-					if #allVisualSources < 1 or not contains(allVisualSources, sourceID) then
-						-- Items with SourceInfo which don't register as having any visual data or don't include themselves as a shared appearance...
-						-- This typically happens on Items which can have a collectible SourceID, but not usable for Transmog
-						tinsert(info, 1, { left = L["FORCE_REFRESH_REQUIRED"], wrap = true, color = app.Colors.TooltipDescription });
-					end
-					if app.Settings:GetTooltipSetting("SharedAppearances") then
-						local text;
-						local useItemIDs, origSource = app.Settings:GetTooltipSetting("itemID"), app.Settings:GetTooltipSetting("IncludeOriginalSource")
-						if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
-							-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
-							for i,otherSourceID in ipairs(allVisualSources) do
-								if otherSourceID == sourceID and not sourceGroup.missing then
-									if origSource then
-										local link = sourceGroup.link or sourceGroup.silentLink;
-										if not link then
-											link = RETRIEVING_DATA;
-											working = true;
-										end
-										if sourceGroup.e or sourceGroup.u then
-											local texture = GetUnobtainableTexture(sourceGroup);
-											if texture then
-												text = "|T" .. texture .. ":0|t";
-											else
-												text = "   ";
-											end
-										else
-											text = "   ";
-										end
-										tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
-									end
-								else
-									local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
-									if otherATTSource then
-										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-											local link = otherATTSource.link or otherATTSource.silentLink;
-											local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if otherATTSource.e or otherATTSource.u then
-												local texture = GetUnobtainableTexture(otherATTSource);
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
-											else
-												text = "   ";
-											end
-											tinsert(info, { left = text .. link .. (useItemIDs and (" (" .. (otherItemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
-										end
-									else
-										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource then
-											local link = select(2, GetItemInfo(otherSource.itemID));
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											text = " |CFFFF0000!|r " .. link .. (useItemIDs and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
-										end
-									end
-								end
-							end
-						else
-							-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
-							for i,otherSourceID in ipairs(allVisualSources) do
-								if otherSourceID == sourceID and not sourceGroup.missing then
-									if origSource then
-										local link = sourceGroup.link or sourceGroup.silentLink;
-										if not link then
-											link = RETRIEVING_DATA;
-											working = true;
-										end
-										if sourceGroup.e or sourceGroup.u then
-											local texture = GetUnobtainableTexture(sourceGroup);
-											if texture then
-												text = "|T" .. texture .. ":0|t";
-											else
-												text = "   ";
-											end
-										else
-											text = "   ";
-										end
-										tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
-									end
-								else
-									local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
-									if otherATTSource then
-										-- Show information about the appearance:
-										local failText = "";
-										local link = otherATTSource.link or otherATTSource.silentLink;
-										if not link then
-											link = RETRIEVING_DATA;
-											working = true;
-										end
-										if otherATTSource.e or otherATTSource.u then
-											local texture = GetUnobtainableTexture(otherATTSource);
-											if texture then
-												text = "|T" .. texture .. ":0|t";
-											else
-												text = "   ";
-											end
-										else
-											text = "   ";
-										end
-										local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
-										text = text .. link .. (useItemIDs and (" (" .. (otherItemID or "???") .. ")") or "");
-
-										-- Show all of the reasons why an appearance does not meet given criteria.
-										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-										if sourceGroup.f ~= otherATTSource.f then
-											-- This is NOT the same type. Therefore, no credit for you!
-											if #failText > 0 then failText = failText .. ", "; end
-											failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
-										elseif otherATTSource.nmc then
-											-- This is NOT for your class. Therefore, no credit for you!
-											if #failText > 0 then failText = failText .. ", "; end
-											-- failText = failText .. "Class Locked";
-											for i,classID in ipairs(otherATTSource.c) do
-												if i > 1 then failText = failText .. ", "; end
-												failText = failText .. (app.ClassInfoByID[classID].name or "???");
-											end
-										elseif otherATTSource.nmr then
-											-- This is NOT for your race. Therefore, no credit for you!
-											if #failText > 1 then failText = failText .. ", "; end
-											failText = failText .. L["RACE_LOCKED"];
-										else
-											-- Should be fine
-										end
-
-										if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
-									else
-										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource then
-											local link = select(2, GetItemInfo(otherSource.itemID));
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											text = " |CFFFF0000!|r " .. link .. (useItemIDs and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
-										end
-									end
-								end
-							end
-						end
-					end
-
-					-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
-					-- non-collected SourceID, non-collected* for Account, and in Unique Mode
-					if not sourceInfo.isCollected and not ATTAccountWideData.Sources[sourceID] and not app.Settings:Get("Completionist") then
-						local collected = app.ItemSourceFilter(sourceInfo);
-						if collected then
-							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
-							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
-							-- this Account as being 'collected'
-							if isTopLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) }); end
-							-- if the tooltip immediately refreshes for whatever reason then
-							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
-							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
-							local uniqueSources = ATTAccountWideData.BrokenUniqueSources;
-							uniqueSources[sourceID] = 1;
-						end
-					end
-
-					if app.IsReady and sourceInfo.categoryID > 0 and sourceGroup.missing then
-						tinsert(info, { left = Colorize("Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
-						tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
-						tinsert(info, { left = Colorize(itemString, app.Colors.SourceIgnored) });
-					end
-					for _,j in ipairs(group.g or group) do
-						j.visualID = sourceInfo.visualID
-					end
-				end
+			if app.AddSourceInformation(sourceID, info, group, sourceGroup) then
+				working = true;
 			end
 
 			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
@@ -3404,9 +3079,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			root = CreateObject({ [paramA] = paramB });
 		end
 		-- If rawLink exists, import it into the root
-		if rawlink then
-			app.ImportRawLink(root, rawlink);
-		end
+		if rawlink then app.ImportRawLink(root, rawlink); end
 		-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
 		paramA, paramB = root.key, root[root.key];
 		-- Special Case for itemID, need to use the modItemID for accuracy in item matching
@@ -4841,7 +4514,7 @@ local function SearchForLink(link)
 			if itemID then
 				itemID = tonumber(itemID) or 0;
 				-- Don't use SourceID for artifact searches since they contain many SourceIDs
-				local sourceID = select(3, GetItemInfo(link)) ~= 6 and GetSourceID(link);
+				local sourceID = select(3, GetItemInfo(link)) ~= 6 and app.GetSourceID(link);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
 					_ = SearchForField("sourceID", sourceID);
@@ -5285,175 +4958,6 @@ end
 
 -- Refresh Functions
 do
--- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
-local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
-	-- Find this source in ATT
-	local knownItem = SearchForSourceIDQuickly(knownSourceID);
-	if knownItem then
-		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
-		if not knownSource then
-			app.PrintDebug("Failed to get source info for",knownSourceID)
-			return;
-		end
-		local acctSources = ATTAccountWideData.Sources;
-		local checkItem, checkSource, valid;
-		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
-		local checkFilter;
-		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
-		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
-		-- For each shared Visual SourceID
-		-- if knownSource.visualID == 322 then app.Debugging = true; app.PrintTable(knownSource); end
-		-- account cannot collect sourceID? not available for transmog?
-		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
-		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
-		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
-		local visualIDs = C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID);
-		local canMog;
-		for _,sourceID in ipairs(visualIDs) do
-			if sourceID == knownSourceID then
-				canMog = true;
-				break;
-			end
-		end
-		if not canMog then return; end
-		local factionRaces = app.Modules.FactionData.FACTION_RACES;
-		for _,sourceID in ipairs(visualIDs) do
-			-- app.PrintDebug("visualID",knownSource.visualID,"sourceID",sourceID,"known:",acctSources[sourceID)]
-			-- If it is not currently marked collected on the account
-			if not acctSources[sourceID] then
-				-- for current character only, all we care is that the knownItem is not exclusive to another
-				-- race/class to consider all shared appearances as 'collected' for the current character
-				if currentCharacterUsable then
-					-- app.PrintDebug("current character usable")
-					acctSources[sourceID] = 2;
-				else
-					-- Find the check Source in ATT
-					checkItem = SearchForSourceIDQuickly(sourceID);
-					if checkItem then
-						-- filter matches or one item is Cosmetic
-						checkFilter = checkItem.f;
-						if checkFilter == knownFilter or checkFilter == 2 or knownFilter == 2 then
-							valid = true;
-							-- verify all possible restrictions that the known source may have against restrictions on the source in question
-							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
-							-- Races
-							if knownRaces then
-								if checkItem.races then
-									-- the known source has a race restriction that is not shared by the source in question
-									if not containsAny(checkItem.races, knownRaces) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Classes
-							if valid and knownClasses then
-								if checkItem.c then
-									-- the known source has a class restriction that is not shared by the source in question
-									if not containsAny(checkItem.c, knownClasses) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Faction
-							if valid and knownFaction then
-								if checkItem.r then
-									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(factionRaces[knownFaction], checkItem.races)) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-
-							-- found a known item which meets all the criteria to grant credit for the source in question
-							if valid then
-								checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								-- both sources are the same category (Equip-Type)
-								if knownSource.categoryID == checkSource.categoryID
-									-- and same Inventory Type
-									and (knownSource.invType == checkSource.invType
-										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
-								then
-									-- app.PrintDebug("Unique Collected sourceID:",sourceID);
-									acctSources[sourceID] = 2;
-								-- else print("sources share visual and filters but different equips",item.sourceID,sourceID)
-								end
-							end
-						end
-					else
-						-- OH NOES! It doesn't exist!
-						checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-						-- both sources are the same category (Equip-Type)
-						if checkSource.categoryID == knownSource.categoryID
-							-- and same Inventory Type
-							and (checkSource.invType == knownSource.invType
-								or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-								or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
-						then
-							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-							acctSources[sourceID] = 2;
-						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
-						end
-					end
-				end
-			end
-		end
-		-- app.Debugging = nil;
-	end
-end
-local function RefreshAppearanceSources()
-	-- app.PrintDebug("RefreshAppearanceSources")
-	app.DoRefreshAppearanceSources = nil;
-	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
-	wipe(collectedSources);
-	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
-	-- Simply determine the max known SourceID from ATT cached sources
-	if not app.MaxSourceID then
-		-- app.PrintDebug("Initial Session Refresh")
-		local maxSourceID = 0;
-		for id,_ in pairs(SearchForFieldContainer("sourceID")) do
-			-- track the max sourceID so we can evaluate sources not in ATT as well
-			if id > maxSourceID then maxSourceID = id; end
-		end
-		app.MaxSourceID = maxSourceID;
-		-- app.PrintDebug("MaxSourceID",maxSourceID)
-	end
-	-- Then evaluate all SourceIDs under the maximum which are known explicitly
-	-- app.PrintDebug("Completionist Refresh")
-	for sourceID=1,app.MaxSourceID do
-		-- don't need to check for existing value... everything is cleared beforehand
-		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-			collectedSources[sourceID] = 1;
-		end
-	end
-	-- app.PrintDebug("Completionist Refresh done")
-	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
-	if not app.Settings:Get("Completionist") then
-		-- app.PrintDebug("Unique Refresh")
-		local currentCharacterOnly = app.Settings:Get("MainOnly");
-		local ItemSourceFilter = app.ItemSourceFilter;
-		for sourceID=1,app.MaxSourceID do
-			-- for each known source
-			if collectedSources[sourceID] == 1 then
-				-- collect shared visual sources
-				MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly);
-			elseif brokenUniqueSources then
-				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
-				-- and haven't already been marked as unique-collected
-				if brokenUniqueSources[sourceID] and not collectedSources[sourceID] then
-					local sInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if ItemSourceFilter(sInfo) then
-						-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
-						collectedSources[sourceID] = 2;
-					end
-				end
-			end
-		end
-		-- app.PrintDebug("Unique Refresh done")
-	end
-end
-app.RefreshAppearanceSources = RefreshAppearanceSources;
-
 local function RefreshSavesCallback()
 	-- This can be attempted a few times incase data is slow, but not too many times since it's possible to not be saved to any instance
 	app.refreshingSaves = app.refreshingSaves or 30;
@@ -6718,123 +6222,6 @@ app.events.TAXIMAP_OPENED = function()
 end
 end	-- Flight Path Lib
 
--- Gear Set Lib
-(function()
-local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
-local C_TransmogSets_GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
-local fields = {
-	["key"] = function(t)
-		return "setID";
-	end,
-	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
-	end,
-	["name"] = function(t)
-		return t.info.name;
-	end,
-	["icon"] = function(t)
-		local sources = t.sources;
-		if sources then
-			for i, sourceID in ipairs(sources) do
-				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-				if sourceInfo and sourceInfo.invType == 2 then
-					local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
-					if icon then t.icon = icon; end
-					return icon;
-				end
-			end
-		end
-		return QUESTION_MARK_ICON;
-	end,
-	["description"] = function(t)
-		local info = t.info;
-		if info.description then
-			if info.label then return info.label .. " (" .. info.description .. ")"; end
-			return info.description;
-		end
-		return info.label;
-	end,
-	["header"] = function(t)
-		return t.info.label;
-	end,
-	["subheader"] = function(t)
-		return t.info.description;
-	end,
-	["title"] = function(t)
-		return t.info.requiredFaction;
-	end,
-	["sources"] = function(t)
-		local sources = C_TransmogSets_GetAllSourceIDs(t.setID);
-		if sources then
-			t.sources = sources;
-			return sources;
-		end
-	end,
-};
-app.BaseGearSet = app.BaseObjectFields(fields, "BaseGearSet");
-app.CreateGearSet = function(id, t)
-	return setmetatable(constructor(id, t, "setID"), app.BaseGearSet);
-end
-
-local fields = {
-	["key"] = function(t)
-		return "setID";
-	end,
-	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
-	end,
-	["name"] = function(t)
-		return t.info.label;
-	end,
-	["icon"] = function(t)
-		return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
-	end,
-	["link"] = function(t)
-		return t.achievementID and GetAchievementLink(t.achievementID);
-	end,
-	["achievementID"] = function(t)
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		if achievementID then
-			t.achievementID = achievementID;
-			return achievementID;
-		end
-	end,
-};
-app.BaseGearSetHeader = app.BaseObjectFields(fields, "BaseGearSetHeader");
-app.CreateGearSetHeader = function(id, t)
-	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetHeader);
-end
-
-local fields = {
-	["key"] = function(t)
-		return "setID";
-	end,
-	["info"] = function(t)
-		return C_TransmogSets_GetSetInfo(t.setID) or {};
-	end,
-	["name"] = function(t)
-		return t.info.description;
-	end,
-	["icon"] = function(t)
-		return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
-	end,
-	["link"] = function(t)
-		return t.achievementID and GetAchievementLink(t.achievementID);
-	end,
-	["achievementID"] = function(t)
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		if achievementID then
-			t.achievementID = achievementID;
-			return achievementID;
-		end
-	end,
-};
-app.BaseGearSetSubHeader = app.BaseObjectFields(fields, "BaseGearSetSubHeader");
-app.CreateGearSetSubHeader = function(id, t)
-	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetSubHeader);
-end
-end)();
-
 -- Item Lib
 (function()
 local GetItemCount
@@ -7037,9 +6424,6 @@ local itemFields = {
 	["collectibleAsFaction"] = function(t)
 		return app.Settings.Collectibles.Reputations;
 	end,
-	["collectibleAsTransmog"] = function(t)
-		return app.Settings.Collectibles.Transmog;
-	end,
 	["collectibleAsQuest"] = app.CollectibleAsQuest,
 	["collectedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -7074,25 +6458,8 @@ local itemFields = {
 			end
 		end
 	end,
-	["collectedAsTransmog"] = function(t)
-		return ATTAccountWideData.Sources[t.sourceID];
-	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
-	end,
-	["AsItemSource"] = function(t)
-		-- app.PrintDebug("AsItemSource",t.modItemID,t.__type)
-		-- already an item source table
-		if t.__type == "BaseItemSource" then return t; end
-		local link = t.link or t.rawlink or t.silentLink;
-		-- app.PrintDebug("AsItemSource.link",link)
-		if not link then return end
-		local sourceID = GetSourceID(link)
-		if sourceID then
-			-- app.PrintDebug("AsItemSource",sourceID)
-			return app.CreateItemSource(sourceID, t.itemID, t);
-		end
-		-- app.PrintDebug("AsItemSource:nil",t.modItemID)
 	end,
 };
 -- Module imports
@@ -7114,7 +6481,69 @@ fields.collectible = app.GlobalVariants.AndLockCriteria.collectible;
 fields.locked = app.GlobalVariants.AndLockCriteria.locked
 app.BaseItemWithQuestID = app.BaseObjectFields(fields, "BaseItemWithQuestID");
 
-local fields_BaseCostItem = {
+app.CreateItem = function(id, t)
+	if t then
+		if t.sourceID then
+			print("CreateItemSource in CreateItem! WRONG! Use CreateItemSource instead!", t.sourceID, id);
+			return app.CreateItemSource(t.sourceID, id, t);
+		elseif t.factionID then
+			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
+		elseif t.questID then
+			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
+		end
+	end
+	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
+end
+
+-- Toy Lib
+app.CreateToy = app.ExtendClass("BaseItem", "Toy", "toyID", {
+	filterID = function(t)
+		return 102;
+	end,
+	collectible = function(t)
+		return app.Settings.Collectibles.Toys;
+	end,
+	collected = function(t)
+		return ATTAccountWideData.Toys[t.itemID];
+	end,
+	tsm = function(t)
+		return ("i:%d"):format(t.itemID);
+	end,
+	itemID = function(t)
+		return t.toyID;
+	end
+});
+
+-- Items With Appearances (Item Source)
+-- TODO: Once the Item class is moved out, uncomment this in the Transmog file.
+local createItemWithAppearance = app.ExtendClass("BaseItem", "ItemWithAppearance", "sourceID", {
+	["collectible"] = function(t)
+		return app.Settings.Collectibles.Transmog;
+	end,
+	["collected"] = function(t)
+		return ATTAccountWideData.Sources[t.sourceID];
+	end,
+	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
+	["itemID"] = function(t)
+		if t.__autolink then return; end
+		-- async generation of the proper Item Link
+		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
+		t.__autolink = true;
+		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
+		-- app.GenerateGroupLinkUsingSourceID(t);
+		-- if a value was set within this logic, return it here. weird logic sequencing was previously able to generate the itemID while
+		-- caching the modItemID, leading to a 0 itemID return, and caching the item information into a 0-itemID cache record
+		return rawget(t, "itemID")
+	end,
+});
+app.CreateItemSource = function(sourceID, itemID, t)
+	t = createItemWithAppearance(sourceID, t);
+	t.itemID = itemID;
+	return t;
+end
+
+-- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
+local BaseCostItem = app.BaseObjectFields({
 	-- total is the count of the cost item required
 	["total"] = function(t)
 		return t.count or 1;
@@ -7134,47 +6563,7 @@ local fields_BaseCostItem = {
 	["costCollectibles"] = app.EmptyFunction,
 	["collectibleAsCost"] = app.EmptyFunction,
 	["costsCount"] = app.EmptyFunction,
-};
-local BaseCostItem = app.BaseObjectFields(fields_BaseCostItem, "BaseCostItem");
-
--- Appearance Lib (Item Source)
--- TODO: if PL filter is ever a thing investigate https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource
-local fields = RawCloneData(itemFields, {
-	["key"] = function(t) return "sourceID"; end,
-	["collectible"] = itemFields.collectibleAsTransmog;
-	["collected"] = itemFields.collectedAsTransmog;
-	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-	["itemID"] = function(t)
-		if t.__autolink then return; end
-		-- async generation of the proper Item Link
-		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
-		t.__autolink = true;
-		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
-		-- app.GenerateGroupLinkUsingSourceID(t);
-		-- if a value was set within this logic, return it here. weird logic sequencing was previously able to generate the itemID while
-		-- caching the modItemID, leading to a 0 itemID return, and caching the item information into a 0-itemID cache record
-		return rawget(t, "itemID")
-	end,
-});
-local BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
-app.CreateItemSource = function(sourceID, itemID, t)
-	t = setmetatable(constructor(sourceID, t, "sourceID"), BaseItemSource);
-	t.itemID = itemID;
-	return t;
-end
-app.CreateItem = function(id, t)
-	if t then
-		if t.sourceID then
-			return setmetatable(constructor(id, t, "itemID"), BaseItemSource);
-		elseif t.factionID then
-			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
-		elseif t.questID then
-			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
-		end
-	end
-	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
-end
--- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
+}, "BaseCostItem");
 app.CreateCostItem = function(t, total)
 	local c = app.WrapObject(setmetatable(constructor(t.itemID, nil, "itemID"), BaseCostItem), t);
 	c.count = total;
@@ -7185,73 +6574,55 @@ end
 
 -- Runeforge Legendary Lib
 (function()
--- copy base Item fields
-local fields = RawCloneData(itemFields);
--- Runeforge Legendary differences
 local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
-fields.key = function(t) return "runeforgePowerID"; end;
-fields.collectible = function(t) return app.Settings.Collectibles.RuneforgeLegendaries; end;
-fields.collectibleAsCost = app.ReturnFalse;
-fields.collected = function(t)
-	local rfID = t.runeforgePowerID;
-	-- account-wide collected
-	if ATTAccountWideData.RuneforgeLegendaries[rfID] then return 1; end
-	-- fresh collected
-	local state = (C_LegendaryCrafting_GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
-	if state == 0 then
-		ATTAccountWideData.RuneforgeLegendaries[rfID] = 1;
-		return 1;
-	end
-end;
-fields.lvl = function(t) return 60; end;
-app.BaseRuneforgeLegendary = app.BaseObjectFields(fields, "BaseRuneforgeLegendary");
-app.CreateRuneforgeLegendary = function(id, t)
-	return setmetatable(constructor(id, t, "runeforgePowerID"), app.BaseRuneforgeLegendary);
-end
+app.CreateRuneforgeLegendary = app.ExtendClass("BaseItem", "RuneforgeLegendary", "runeforgePowerID", {
+	collectible = function(t) return app.Settings.Collectibles.RuneforgeLegendaries; end,
+	collectibleAsCost = app.ReturnFalse,
+	collected = function(t)
+		local rfID = t.runeforgePowerID;
+		-- account-wide collected
+		if ATTAccountWideData.RuneforgeLegendaries[rfID] then return 1; end
+		-- fresh collected
+		local state = (C_LegendaryCrafting_GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
+		if state == 0 then
+			ATTAccountWideData.RuneforgeLegendaries[rfID] = 1;
+			return 1;
+		end
+	end,
+	lvl = function(t) return 60; end,
+});
 end)();
 
 -- Conduit Lib
 (function()
 local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
--- copy base Item fields
-local fields = RawCloneData(itemFields);
--- Conduit differences
-fields.key = function(t) return "conduitID"; end;
-fields.collectible = function(t) return app.Settings.Collectibles.Conduits; end;
-fields.collectibleAsCost = app.ReturnFalse;
-fields.collected = function(t)
-	local cID = t.conduitID;
-	-- character collected
-	if app.CurrentCharacter.Conduits[cID] then return 1; end
-	-- account-wide collected
-	if app.Settings.AccountWide.Conduits and ATTAccountWideData.Conduits[cID] then return 2; end
-	-- fresh collected
-	local state = C_Soulbinds_GetConduitCollectionData(cID);
-	if state ~= nil then
-		app.CurrentCharacter.Conduits[cID] = 1;
-		ATTAccountWideData.Conduits[cID] = 1;
-		return 1;
-	end
-end;
-fields.lvl = function(t) return 60; end;
-app.BaseConduit = app.BaseObjectFields(fields, "BaseConduit");
-app.CreateConduit = function(id, t)
-	return setmetatable(constructor(id, t, "conduitID"), app.BaseConduit);
-end
+app.CreateConduit = app.ExtendClass("BaseItem", "Conduit", "conduitID", {
+	collectible = function(t) return app.Settings.Collectibles.Conduits; end,
+	collectibleAsCost = app.ReturnFalse,
+	collected = function(t)
+		local cID = t.conduitID;
+		-- character collected
+		if app.CurrentCharacter.Conduits[cID] then return 1; end
+		-- account-wide collected
+		if app.Settings.AccountWide.Conduits and ATTAccountWideData.Conduits[cID] then return 2; end
+		-- fresh collected
+		local state = C_Soulbinds_GetConduitCollectionData(cID);
+		if state ~= nil then
+			app.CurrentCharacter.Conduits[cID] = 1;
+			ATTAccountWideData.Conduits[cID] = 1;
+			return 1;
+		end
+	end,
+	lvl = function(t) return 60; end,
+});
 end)();
 
 -- Drakewatcher Manuscript Lib
 (function()
--- copy base Item fields
-local fields = RawCloneData(itemFields);
-fields.collectible = function(t) return app.Settings.Collectibles.DrakewatcherManuscripts; end;
-fields.collected = function(t)
-	return IsQuestFlaggedCompletedForObject(t);
-end;
-app.BaseDrakewatcherManuscript = app.BaseObjectFields(fields, "BaseDrakewatcherManuscript");
-app.CreateDrakewatcherManuscript = function(id, t)
-	return setmetatable(constructor(id, t, "itemID"), app.BaseDrakewatcherManuscript);
-end
+app.CreateDrakewatcherManuscript = app.ExtendClass("BaseItem", "DrakewatcherManuscript", "itemID", {
+	collectible = function(t) return app.Settings.Collectibles.DrakewatcherManuscripts; end,
+	collected = function(t) return IsQuestFlaggedCompletedForObject(t); end
+});
 end)();
 
 -- Heirloom Lib
@@ -7262,9 +6633,6 @@ local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
 local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
 local heirloomIDs = {};
 local fields = {
-	["key"] = function(t)
-		return "heirloomUnlockID";
-	end,
 	["name"] = function(t)
 		return L["HEIRLOOM_TEXT"];
 	end,
@@ -7283,10 +6651,7 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 };
 fields.collected = fields.saved;
-local BaseHeirloomUnlocked = app.BaseObjectFields(fields, "BaseHeirloomUnlocked");
-local function CreateHeirloomUnlock(t)
-	return setmetatable(t, BaseHeirloomUnlocked);
-end
+local CreateHeirloomUnlock = app.CreateClass("HeirloomUnlock", "heirloomUnlockID", fields);
 
 local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
@@ -7307,9 +6672,6 @@ local weaponTextures = {
 
 local weaponFilterIDs = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local hierloomLevelFields = {
-	["key"] = function(t)
-		return "heirloomLevelID";
-	end,
 	["level"] = function(t)
 		return 1;
 	end,
@@ -7345,25 +6707,21 @@ local hierloomLevelFields = {
 	end,
 };
 hierloomLevelFields.collected = hierloomLevelFields.saved;
-local BaseHeirloomLevel = app.BaseObjectFields(hierloomLevelFields, "BaseHeirloomLevel");
-local function CreateHeirloomLevel(level, heirloom)
-	return setmetatable(level, BaseHeirloomLevel);
-end
+local CreateHeirloomLevel = app.CreateClass("HeirloomLevel", "heirloomLevelID", hierloomLevelFields);
 
--- copy base Item fields
--- TODO: heirlooms need to cache item information as well
-local fields = RawCloneData(itemFields);
-fields.icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end
-fields.link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end
-fields.collectibleAsCost = app.ReturnFalse;
-fields.collectible = function(t)
+-- Heirloom Item
+local createHeirloom = app.ExtendClass("BaseItem", "Heirloom", "itemID", {
+	icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end,
+	link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end,
+	collectibleAsCost = app.ReturnFalse,
+	collectible = function(t)
 		-- Heirloom Token for a Reputation
 		if t.factionID and app.Settings.Collectibles.Reputations then return true; end
 		-- Heirloom Appearance
 		if t.sourceID and app.Settings.Collectibles.Transmog then return true; end
 		-- Otherwise the Heirloom Item itself is not inherently collectible
-	end
-fields.collected = function(t)
+	end,
+	collected = function(t)
 		if t.factionID then
 			if t.repeatable then
 				return (app.CurrentCharacter.Factions[t.factionID] and 1)
@@ -7378,31 +6736,26 @@ fields.collected = function(t)
 			end
 		end
 		if t.sourceID and ATTAccountWideData.Sources[t.sourceID] then return 1; end
-	end
-fields.saved = function(t)
+	end,
+	saved = function(t)
 		return t.collected == 1;
-	end
-fields.isWeapon = hierloomLevelFields.isWeapon;
-fields.g = function(t)
+	end,
+	isWeapon = hierloomLevelFields.isWeapon,
+	g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			t.g = { CreateHeirloomUnlock({
-				heirloomUnlockID = t.itemID,
+			t.g = { CreateHeirloomUnlock(t.itemID, {
 				e = t.e,
 				u = t.u
 			}) };
 			return t.g;
 		end
 	end
-
-local BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
+});
 app.CreateHeirloom = function(id, t)
 	tinsert(heirloomIDs, id);
-	if t then
-		-- Heirlooms are always BoA
-		t.b = 2;
-	end
-	return setmetatable(constructor(id, t, "itemID"), BaseHeirloom);
+	if t then t.b = 2; end	-- Heirlooms are always BoA
+	return createHeirloom(id, t);
 end
 
 -- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
@@ -7479,8 +6832,7 @@ app.CacheHeirlooms = function()
 							-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
 							tinsert(tokenType[upgrades + 1 - i].g,
 							setmetatable({ collectible = false, g = {
-								CreateHeirloomLevel({
-									heirloomLevelID = itemID,
+								CreateHeirloomLevel(itemID, {
 									levelMax = upgrades,
 									level = i,
 									f = heirloom.f,
@@ -7529,317 +6881,291 @@ app.CacheHeirlooms = function()
 end
 end -- Heirloom Lib
 
--- Toy Lib
-(function()
--- copy base Item fields
-local fields = RawCloneData(itemFields);
-fields.filterID = function(t)
-	return 102;
-end
-fields.collectible = function(t)
-	return app.Settings.Collectibles.Toys;
-end
-fields.collected = function(t)
-	return ATTAccountWideData.Toys[t.itemID];
-end
-fields.tsm = function(t)
-	return ("i:%d"):format(t.itemID);
-end
-fields.itemID = function(t)
-	return t.toyID;
-end
-
-app.BaseToy = app.BaseObjectFields(fields, "BaseToy");
-app.CreateToy = function(id, t)
-	return setmetatable(constructor(id, t, "toyID"), app.BaseToy);
-end
-end)();
-
 local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
-local itemHarvesterFields = RawCloneData(itemFields);
-itemHarvesterFields.visible = app.ReturnTrue;
-itemHarvesterFields.collectible = app.ReturnTrue;
-itemHarvesterFields.collected = app.ReturnFalse;
-itemHarvesterFields.text = function(t)
-	-- delayed localization since ATT's globals don't exist when this logic is processed on load
-	if not HarvestedItemDatabase then
-		HarvestedItemDatabase = LocalizeGlobal("AllTheThingsHarvestItems", true);
-	end
-	local link = t.link;
-	if link then
-		app.ImportRawLink(t, link);
-		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
-		itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
-			= GetItemInfo(link);
-		if itemName then
-			local spellName, spellID;
-			-- Recipe or Mount, grab the spellID if possible
-			if classID == LE_ITEM_CLASS_RECIPE or (classID == LE_ITEM_CLASS_MISCELLANEOUS and subclassID == LE_ITEM_MISCELLANEOUS_MOUNT) then
-				spellName, spellID = GetItemSpell(t.itemID);
-				-- print("Recipe/Mount",classID,subclassID,spellName,spellID);
-				if spellName == "Learning" then spellID = nil; end	-- RIP.
-			end
-			setmetatable(t, app.BaseItemTooltipHarvester);
-			local info = {
-				["name"] = itemName,
-				["itemID"] = t.itemID,
-				["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
-				["class"] = classID,
-				["subclass"] = subclassID,
-				["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
-				["b"] = bindType,
-				["q"] = itemQuality,
-				["iLvl"] = itemLevel,
-				["spellID"] = spellID,
-			};
-			if itemMinLevel and itemMinLevel > 0 then
-				info.lvl = itemMinLevel;
-			end
-			if info.inventoryType == 0 then
-				info.inventoryType = nil;
-			end
-			if not app.IsBoP(info) then
-				info.b = nil;
-			end
-			if info.iLvl and info.iLvl < 2 then
-				info.iLvl = nil;
-			end
-			-- can debug output for tooltip harvesting
-			-- if t.itemID == 141038 then
-			-- 	info._debug = true;
-			-- end
-			t.itemType = itemType;
-			t.itemSubType = itemSubType;
-			t.info = info;
-			t.retries = nil;
-			HarvestedItemDatabase[t.itemID] = info;
-			return link;
-		end
-	end
-
-	local name = t.name;
-	-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
-	if name then t.collected = true; end
-	return name;
-end
-app.BaseItemHarvester = app.BaseObjectFields(itemHarvesterFields, "BaseItemHarvester");
-
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
-local itemTooltipHarvesterFields = RawCloneData(itemHarvesterFields);
-itemTooltipHarvesterFields.text = function(t)
-	local link = t.link;
-	if link then
-		ItemHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-		ItemHarvester:SetHyperlink(link);
-		-- a way to capture when the tooltip is giving information about something that is NOT the current ItemID
-		local isSubItem, craftName;
-		local lineCount = ItemHarvester:NumLines();
-		local tooltipText = ATTItemHarvesterTextLeft1:GetText();
-		if not IsRetrieving(tooltipText) and lineCount > 0 then
-			-- local debugPrint = t.info._debug;
-			-- if debugPrint then print("Item Info:",t.info.itemID) end
-			for index=1,lineCount,1 do
-				local line = _G["ATTItemHarvesterTextLeft" .. index] or _G["ATTItemHarvesterText" .. index];
-				if line then
-					local text = line:GetText();
-					if text then
-						-- sub items within recipe tooltips show this text, need to wait until it loads
-						if IsRetrieving(text) then
-							t.info.retries = (t.info.retries or 0) + 1;
-							-- 30 attempts to load the sub-item, otherwise just continue parsing tooltip without it
-							if t.info.retries < 30 then
-								return
-							end
-							app.PrintDebug("Failed loading sub-item for",t.info.itemID)
-						end
-						-- pull the "Recipe Type: Recipe Name" out if it matches
-						if index == 1 then
-							-- if debugPrint then
-							-- 	print("line match",text:match("^[^:]+:%s*([^:]+)$"))
-							-- end
-							craftName = text:match("^[^:]+:%s*([^:]+)$");
-							if craftName then
-								-- whitespace search... recipes have whitespace and then a sub-item
-								craftName = "^%s+";
-							end
-						-- use this name to check that the Item it creates may be listed underneath, by finding whitespace after a matching recipe name
-						elseif craftName and text:match(craftName) then
-							-- if debugPrint then
-								-- print("subitem",t.info.itemID,craftName)
-							-- end
-							isSubItem = true;
-						-- leave the sub-item info when reaching the 'Requires' portion of the parent item tooltip
-						elseif isSubItem and text:match("^Requires") then
-							-- if debugPrint then
-							-- 	print("leaving subitem",t.info.itemID,craftName)
-							-- end
-							-- leaving the sub-item tooltip when encountering 'Requires '
-							isSubItem = nil;
-						end
+app.CreateItemHarvester = app.ExtendClass("BaseItem", "ItemHarvester", "itemID", {
+	visible = app.ReturnTrue,
+	collectible = app.ReturnTrue,
+	collected = app.ReturnFalse,
+	text = function(t)
+		-- delayed localization since ATT's globals don't exist when this logic is processed on load
+		if not HarvestedItemDatabase then
+			HarvestedItemDatabase = LocalizeGlobal("AllTheThingsHarvestItems", true);
+		end
+		local link = t.link;
+		if link then
+			app.ImportRawLink(t, link);
+			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
+			itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
+				= GetItemInfo(link);
+			if itemName then
+				local spellName, spellID;
+				-- Recipe or Mount, grab the spellID if possible
+				if classID == LE_ITEM_CLASS_RECIPE or (classID == LE_ITEM_CLASS_MISCELLANEOUS and subclassID == LE_ITEM_MISCELLANEOUS_MOUNT) then
+					spellName, spellID = GetItemSpell(t.itemID);
+					-- print("Recipe/Mount",classID,subclassID,spellName,spellID);
+					if spellName == "Learning" then spellID = nil; end	-- RIP.
+				end
+				app.CreateItemTooltipHarvester(t.itemID, t);
+				local info = {
+					["name"] = itemName,
+					["itemID"] = t.itemID,
+					["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+					["class"] = classID,
+					["subclass"] = subclassID,
+					["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
+					["b"] = bindType,
+					["q"] = itemQuality,
+					["iLvl"] = itemLevel,
+					["spellID"] = spellID,
+				};
+				if itemMinLevel and itemMinLevel > 0 then
+					info.lvl = itemMinLevel;
+				end
+				if info.inventoryType == 0 then
+					info.inventoryType = nil;
+				end
+				if not app.IsBoP(info) then
+					info.b = nil;
+				end
+				if info.iLvl and info.iLvl < 2 then
+					info.iLvl = nil;
+				end
+				-- can debug output for tooltip harvesting
+				-- if t.itemID == 141038 then
+				-- 	info._debug = true;
+				-- end
+				t.itemType = itemType;
+				t.itemSubType = itemSubType;
+				t.info = info;
+				t.retries = nil;
+				HarvestedItemDatabase[t.itemID] = info;
+				return link;
+			end
+		end
 
-						if not isSubItem then
-							-- if debugPrint then print(text) end
-							if text:find("Classes: ") then
-								local classes = {};
-								local _,list = (":"):split(text);
-								for i,className in ipairs({(","):split(list)}) do
-									tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
+		local name = t.name;
+		-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
+		if name then t.collected = true; end
+		return name;
+	end
+});
+app.CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "itemID", {
+	text = function(t)
+		local link = t.link;
+		if link then
+			ItemHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+			ItemHarvester:SetHyperlink(link);
+			-- a way to capture when the tooltip is giving information about something that is NOT the current ItemID
+			local isSubItem, craftName;
+			local lineCount = ItemHarvester:NumLines();
+			local tooltipText = ATTItemHarvesterTextLeft1:GetText();
+			if not IsRetrieving(tooltipText) and lineCount > 0 then
+				-- local debugPrint = t.info._debug;
+				-- if debugPrint then print("Item Info:",t.info.itemID) end
+				for index=1,lineCount,1 do
+					local line = _G["ATTItemHarvesterTextLeft" .. index] or _G["ATTItemHarvesterText" .. index];
+					if line then
+						local text = line:GetText();
+						if text then
+							-- sub items within recipe tooltips show this text, need to wait until it loads
+							if IsRetrieving(text) then
+								t.info.retries = (t.info.retries or 0) + 1;
+								-- 30 attempts to load the sub-item, otherwise just continue parsing tooltip without it
+								if t.info.retries < 30 then
+									return
 								end
-								if #classes > 0 then
-									t.info.classes = classes;
+								app.PrintDebug("Failed loading sub-item for",t.info.itemID)
+							end
+							-- pull the "Recipe Type: Recipe Name" out if it matches
+							if index == 1 then
+								-- if debugPrint then
+								-- 	print("line match",text:match("^[^:]+:%s*([^:]+)$"))
+								-- end
+								craftName = text:match("^[^:]+:%s*([^:]+)$");
+								if craftName then
+									-- whitespace search... recipes have whitespace and then a sub-item
+									craftName = "^%s+";
 								end
-							elseif text:find("Races: ") then
-								local _,list = (":"):split(text);
-								local raceNames = {(","):split(list)};
-								if raceNames then
-									local races = {};
-									for _,raceName in ipairs(raceNames) do
-										local race = app.RaceDB[raceName:trim()];
-										if not race then
-											print("Unknown Race",t.info.itemID,raceName:trim())
-										elseif type(race) == "number" then
-											tinsert(races, race);
-										else -- Pandaren
-											for _,panda in pairs(race) do
-												tinsert(races, panda);
-											end
-										end
+							-- use this name to check that the Item it creates may be listed underneath, by finding whitespace after a matching recipe name
+							elseif craftName and text:match(craftName) then
+								-- if debugPrint then
+									-- print("subitem",t.info.itemID,craftName)
+								-- end
+								isSubItem = true;
+							-- leave the sub-item info when reaching the 'Requires' portion of the parent item tooltip
+							elseif isSubItem and text:match("^Requires") then
+								-- if debugPrint then
+								-- 	print("leaving subitem",t.info.itemID,craftName)
+								-- end
+								-- leaving the sub-item tooltip when encountering 'Requires '
+								isSubItem = nil;
+							end
+
+							if not isSubItem then
+								-- if debugPrint then print(text) end
+								if text:find("Classes: ") then
+									local classes = {};
+									local _,list = (":"):split(text);
+									for i,className in ipairs({(","):split(list)}) do
+										tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
 									end
-									if #races > 0 then
-										t.info.races = races;
+									if #classes > 0 then
+										t.info.classes = classes;
 									end
-								else
-									print("Empty Races",t.info.itemID)
-								end
-							elseif text:find(" Only") then
-								local faction, _, c = (" "):split(text);
-								if not c then
-									faction = faction:trim();
-									if faction == "Alliance" then
-										t.info.races = app.Modules.FactionData.FACTION_RACES[1];
-									elseif faction == "Horde" then
-										t.info.races = app.Modules.FactionData.FACTION_RACES[2];
-									else
-										print("Unknown Faction",t.info.itemID,faction);
-									end
-								end
-							elseif text:find("Requires") and not text:find("Level") and not text:find("Riding") then
-								local c = text:sub(1, 1);
-								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
-									text = text:trim():sub(9);
-									if text:find("-") then
-										local faction,replevel = ("-"):split(text);
-										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
-									else
-										if text:find("%(") then
-											if t.info.requireSkill then
-												-- If non-specialization skill is already assigned, skip this part.
-												text = nil;
-											else
-												text = ("("):split(text);
-											end
-										end
-										if text then
-											local spellName = text:trim();
-											if spellName:find("Outland ") then spellName = spellName:sub(9);
-											elseif spellName:find("Northrend ") then spellName = spellName:sub(11);
-											elseif spellName:find("Cataclysm ") then spellName = spellName:sub(11);
-											elseif spellName:find("Pandaria ") then spellName = spellName:sub(10);
-											elseif spellName:find("Draenor ") then spellName = spellName:sub(9);
-											elseif spellName:find("Legion ") then spellName = spellName:sub(8);
-											elseif spellName:find("Kul Tiran ") then spellName = spellName:sub(11);
-											elseif spellName:find("Zandalari ") then spellName = spellName:sub(11);
-											elseif spellName:find("Shadowlands ") then spellName = spellName:sub(13);
-											elseif spellName:find("Classic ") then spellName = spellName:sub(9); end
-											if spellName == "Herbalism" then spellName = "Herb Gathering"; end
-											spellName = spellName:trim();
-											local spellID = app.SpellNameToSpellID[spellName];
-											if spellID then
-												local skillID = app.SpellIDToSkillID[spellID];
-												if skillID then
-													t.info.requireSkill = skillID;
-												elseif spellName == "Pick Pocket" then
-													-- Do nothing, for now.
-												elseif spellName == "Warforged Nightmare" then
-													-- Do nothing, for now.
-												else
-													print("Unknown Skill",t.info.itemID, text, "'" .. spellName .. "'");
+								elseif text:find("Races: ") then
+									local _,list = (":"):split(text);
+									local raceNames = {(","):split(list)};
+									if raceNames then
+										local races = {};
+										for _,raceName in ipairs(raceNames) do
+											local race = app.RaceDB[raceName:trim()];
+											if not race then
+												print("Unknown Race",t.info.itemID,raceName:trim())
+											elseif type(race) == "number" then
+												tinsert(races, race);
+											else -- Pandaren
+												for _,panda in pairs(race) do
+													tinsert(races, panda);
 												end
-											elseif spellName == "Previous Rank" then
-												-- Do nothing
-											elseif spellName == "" then
-												-- Do nothing
-											elseif spellName == "Brewfest" then
-												-- Do nothing, yet.
-											elseif spellName == "Call of the Scarab" then
-												-- Do nothing, yet.
-											elseif spellName == "Children's Week" then
-												-- Do nothing, yet.
-											elseif spellName == "Darkmoon Faire" then
-												-- Do nothing, yet.
-											elseif spellName == "Day of the Dead" then
-												-- Do nothing, yet.
-											elseif spellName == "Feast of Winter Veil" then
-												-- Do nothing, yet.
-											elseif spellName == "Hallow's End" then
-												-- Do nothing, yet.
-											elseif spellName == "Love is in the Air" then
-												-- Do nothing, yet.
-											elseif spellName == "Lunar Festival" then
-												-- Do nothing, yet.
-											elseif spellName == "Midsummer Fire Festival" then
-												-- Do nothing, yet.
-											elseif spellName == "Moonkin Festival" then
-												-- Do nothing, yet.
-											elseif spellName == "Noblegarden" then
-												-- Do nothing, yet.
-											elseif spellName == "Pilgrim's Bounty" then
-												-- Do nothing, yet.
-											elseif spellName == "Un'Goro Madness" then
-												-- Do nothing, yet.
-											elseif spellName == "Thousand Boat Bash" then
-												-- Do nothing, yet.
-											elseif spellName == "Glowcap Festival" then
-												-- Do nothing, yet.
-											elseif spellName == "Battle Pet Training" then
-												-- Do nothing.
-											elseif spellName == "Lockpicking" then
-												-- Do nothing.
-											elseif spellName == "Luminous Luminaries" then
-												-- Do nothing.
-											elseif spellName == "Pick Pocket" then
-												-- Do nothing.
-											elseif spellName == "WoW's 14th Anniversary" then
-												-- Do nothing.
-											elseif spellName == "WoW's 13th Anniversary" then
-												-- Do nothing.
-											elseif spellName == "WoW's 12th Anniversary" then
-												-- Do nothing.
-											elseif spellName == "WoW's 11th Anniversary" then
-												-- Do nothing.
-											elseif spellName == "WoW's 10th Anniversary" then
-												-- Do nothing.
-											elseif spellName == "WoW's Anniversary" then
-												-- Do nothing.
-											elseif spellName == "level 1 to 29" then
-												-- Do nothing.
-											elseif spellName == "level 1 to 39" then
-												-- Do nothing.
-											elseif spellName == "level 1 to 44" then
-												-- Do nothing.
-											elseif spellName == "level 1 to 49" then
-												-- Do nothing.
-											elseif spellName == "Unknown" then
-												-- Do nothing.
-											elseif spellName == "Open" then
-												-- Do nothing.
-											elseif spellName:find(" specialization") then
-												-- Do nothing.
-											elseif spellName:find(": ") then
-												-- Do nothing.
-											else
-												print("Unknown Spell",t.info.itemID, text, "'" .. spellName .. "'");
+											end
+										end
+										if #races > 0 then
+											t.info.races = races;
+										end
+									else
+										print("Empty Races",t.info.itemID)
+									end
+								elseif text:find(" Only") then
+									local faction, _, c = (" "):split(text);
+									if not c then
+										faction = faction:trim();
+										if faction == "Alliance" then
+											t.info.races = app.Modules.FactionData.FACTION_RACES[1];
+										elseif faction == "Horde" then
+											t.info.races = app.Modules.FactionData.FACTION_RACES[2];
+										else
+											print("Unknown Faction",t.info.itemID,faction);
+										end
+									end
+								elseif text:find("Requires") and not text:find("Level") and not text:find("Riding") then
+									local c = text:sub(1, 1);
+									if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
+										text = text:trim():sub(9);
+										if text:find("-") then
+											local faction,replevel = ("-"):split(text);
+											t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
+										else
+											if text:find("%(") then
+												if t.info.requireSkill then
+													-- If non-specialization skill is already assigned, skip this part.
+													text = nil;
+												else
+													text = ("("):split(text);
+												end
+											end
+											if text then
+												local spellName = text:trim();
+												if spellName:find("Outland ") then spellName = spellName:sub(9);
+												elseif spellName:find("Northrend ") then spellName = spellName:sub(11);
+												elseif spellName:find("Cataclysm ") then spellName = spellName:sub(11);
+												elseif spellName:find("Pandaria ") then spellName = spellName:sub(10);
+												elseif spellName:find("Draenor ") then spellName = spellName:sub(9);
+												elseif spellName:find("Legion ") then spellName = spellName:sub(8);
+												elseif spellName:find("Kul Tiran ") then spellName = spellName:sub(11);
+												elseif spellName:find("Zandalari ") then spellName = spellName:sub(11);
+												elseif spellName:find("Shadowlands ") then spellName = spellName:sub(13);
+												elseif spellName:find("Classic ") then spellName = spellName:sub(9); end
+												if spellName == "Herbalism" then spellName = "Herb Gathering"; end
+												spellName = spellName:trim();
+												local spellID = app.SpellNameToSpellID[spellName];
+												if spellID then
+													local skillID = app.SpellIDToSkillID[spellID];
+													if skillID then
+														t.info.requireSkill = skillID;
+													elseif spellName == "Pick Pocket" then
+														-- Do nothing, for now.
+													elseif spellName == "Warforged Nightmare" then
+														-- Do nothing, for now.
+													else
+														print("Unknown Skill",t.info.itemID, text, "'" .. spellName .. "'");
+													end
+												elseif spellName == "Previous Rank" then
+													-- Do nothing
+												elseif spellName == "" then
+													-- Do nothing
+												elseif spellName == "Brewfest" then
+													-- Do nothing, yet.
+												elseif spellName == "Call of the Scarab" then
+													-- Do nothing, yet.
+												elseif spellName == "Children's Week" then
+													-- Do nothing, yet.
+												elseif spellName == "Darkmoon Faire" then
+													-- Do nothing, yet.
+												elseif spellName == "Day of the Dead" then
+													-- Do nothing, yet.
+												elseif spellName == "Feast of Winter Veil" then
+													-- Do nothing, yet.
+												elseif spellName == "Hallow's End" then
+													-- Do nothing, yet.
+												elseif spellName == "Love is in the Air" then
+													-- Do nothing, yet.
+												elseif spellName == "Lunar Festival" then
+													-- Do nothing, yet.
+												elseif spellName == "Midsummer Fire Festival" then
+													-- Do nothing, yet.
+												elseif spellName == "Moonkin Festival" then
+													-- Do nothing, yet.
+												elseif spellName == "Noblegarden" then
+													-- Do nothing, yet.
+												elseif spellName == "Pilgrim's Bounty" then
+													-- Do nothing, yet.
+												elseif spellName == "Un'Goro Madness" then
+													-- Do nothing, yet.
+												elseif spellName == "Thousand Boat Bash" then
+													-- Do nothing, yet.
+												elseif spellName == "Glowcap Festival" then
+													-- Do nothing, yet.
+												elseif spellName == "Battle Pet Training" then
+													-- Do nothing.
+												elseif spellName == "Lockpicking" then
+													-- Do nothing.
+												elseif spellName == "Luminous Luminaries" then
+													-- Do nothing.
+												elseif spellName == "Pick Pocket" then
+													-- Do nothing.
+												elseif spellName == "WoW's 14th Anniversary" then
+													-- Do nothing.
+												elseif spellName == "WoW's 13th Anniversary" then
+													-- Do nothing.
+												elseif spellName == "WoW's 12th Anniversary" then
+													-- Do nothing.
+												elseif spellName == "WoW's 11th Anniversary" then
+													-- Do nothing.
+												elseif spellName == "WoW's 10th Anniversary" then
+													-- Do nothing.
+												elseif spellName == "WoW's Anniversary" then
+													-- Do nothing.
+												elseif spellName == "level 1 to 29" then
+													-- Do nothing.
+												elseif spellName == "level 1 to 39" then
+													-- Do nothing.
+												elseif spellName == "level 1 to 44" then
+													-- Do nothing.
+												elseif spellName == "level 1 to 49" then
+													-- Do nothing.
+												elseif spellName == "Unknown" then
+													-- Do nothing.
+												elseif spellName == "Open" then
+													-- Do nothing.
+												elseif spellName:find(" specialization") then
+													-- Do nothing.
+												elseif spellName:find(": ") then
+													-- Do nothing.
+												else
+													print("Unknown Spell",t.info.itemID, text, "'" .. spellName .. "'");
+												end
 											end
 										end
 									end
@@ -7848,20 +7174,17 @@ itemTooltipHarvesterFields.text = function(t)
 						end
 					end
 				end
+				-- if debugPrint then print("---") end
+				t.info.retries = nil;
+				t.text = link;
+				t.collected = true;
 			end
-			-- if debugPrint then print("---") end
-			t.info.retries = nil;
-			t.text = link;
-			t.collected = true;
+			ItemHarvester:Hide();
+			return link;
 		end
-		ItemHarvester:Hide();
-		return link;
 	end
-end
-app.BaseItemTooltipHarvester = app.BaseObjectFields(itemTooltipHarvesterFields, "BaseItemTooltipHarvester");
-app.CreateItemHarvester = function(id, t)
-	return setmetatable(constructor(id, t, "itemID"), app.BaseItemHarvester);
-end
+});
+
 
 -- Imports the raw information from the rawlink into the specified group
 app.ImportRawLink = function(group, rawlink, ignoreSource)
@@ -7887,12 +7210,9 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 			group.modItemID = nil;
 			if not ignoreSource then
 				-- does this link also have a sourceID?
-				local sourceID = GetSourceID(rawlink);
-				-- app.PrintDebug("IRL:sourceID",rawlink,sourceID)
+				local sourceID = app.GetSourceID(rawlink);
 				if sourceID then group.sourceID = sourceID; end
-				-- if app.Debugging then app.PrintTable(group) end
 			end
-			-- app.PrintDebug("IRL=",rawlink,group.itemID,group.modID,group.bonusID,"=>",group.modItemID);
 		end
 	end
 end
@@ -9141,96 +8461,6 @@ end
 app.DirectGroupRefresh = DirectGroupRefresh;
 end -- Processing Functions
 
--- Helper Methods
--- The following Helper Methods are used when you obtain a new appearance.
-function app.CompletionistItemCollectionHelper(sourceID, oldState)
-	-- Get the source info for this source ID.
-	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-	if sourceInfo then
-		-- Search ATT for the related sources.
-		-- Show the collection message.
-		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
-			local searchResults = SearchForField("sourceID", sourceID);
-			if #searchResults > 0 then
-				local firstMatch = searchResults[1];
-				print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
-			else
-				-- Use the Blizzard API... We don't have this item in the addon.
-				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
-				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
-				-- This is okay since items of this type share their appearance regardless of the power of the item.
-				local name, link = GetItemInfo(sourceInfo.itemID);
-
-				print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
-
-				-- Play a sound when a reportable error is found, if any sound setting is enabled
-				app.Audio:PlayReportSound();
-			end
-			Callback(app.Audio.PlayFanfare);
-			Callback(app.TakeScreenShot, "Transmog");
-		end
-
-		-- Update the groups for the sourceID results
-		UpdateRawID("sourceID", sourceID);
-	end
-end
-function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
-	-- Get the source info for this source ID.
-	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-	if sourceInfo then
-		-- Go through all of the shared appearances and see if we've "unlocked" any of them.
-		local unlockedSourceIDs, allSources = { sourceID }, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
-		for _,otherSourceID in ipairs(allSources) do
-			-- If this isn't the source we already did work on and we haven't already completed it
-			if otherSourceID ~= sourceID and not ATTAccountWideData.Sources[otherSourceID] then
-				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-				if otherSourceInfo and filter(otherSourceInfo, allSources) then
-					ATTAccountWideData.Sources[otherSourceID] = otherSourceInfo.isCollected and 1 or 2;
-					tinsert(unlockedSourceIDs, otherSourceID);
-				end
-			end
-		end
-
-		-- only consider new SourceID as unlocking all shared appearances, otherwise it only unlocks additional appearances
-		-- (i.e. current item was collected in Main Only due to alternate piece, but then learning the raw item itself or something... idk)
-		local newAppearancesLearned = oldState == 0 and #unlockedSourceIDs or (#unlockedSourceIDs - 1);
-
-		-- Show the collection message if learning this Source actually contributed as a new Unique appearance
-		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
-			-- Search for the item that actually was unlocked.
-			local searchResults = SearchForField("sourceID", sourceID);
-			if #searchResults > 0 then
-				local firstMatch = searchResults[1];
-				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
-					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, newAppearancesLearned));
-			else
-				-- Use the Blizzard API... We don't have this item in the addon.
-				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
-				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
-				-- This is okay since items of this type share their appearance regardless of the power of the item.
-				local name, link = GetItemInfo(sourceInfo.itemID);
-
-				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
-
-				-- Play a sound when a reportable error is found, if any sound setting is enabled
-				app.Audio:PlayReportSound();
-			end
-			Callback(app.Audio.PlayFanfare);
-			Callback(app.TakeScreenShot, "Transmog");
-		end
-
-		-- Update the groups for the sourceIDs
-		UpdateRawIDs("sourceID", unlockedSourceIDs);
-	end
-end
-function app.UniqueModeItemCollectionHelper(sourceID, oldState)
-	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.Modules.Filter.Filters.ItemSourceUnique);
-end
-function app.UniqueModeItemCollectionHelperOnlyMain(sourceID, oldState)
-	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.Modules.Filter.Filters.ItemSourceUniqueMainOnly);
-end
-app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
-
 -- Custom Collectibility
 do
 local SLCovenantId;
@@ -9978,144 +9208,8 @@ function app:CreateMiniListForGroup(group)
 			end
 			self:BaseUpdate(force or got, got);
 		end
-		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
-		-- TODO: modify parser to include known sources for unsorted before commenting this back in
-		-- if not group.sourceID or group.sourceID == 0 then
-		-- 	local sourceID, dressable = GetSourceID(group.text, group.itemID);
-		-- 	if dressable and sourceID and sourceID > 0 then
-		-- 		app.report("Item",group.itemID,group.modID,"is missing SourceID",sourceID);
-		-- 		group.sourceID = sourceID;
-		-- 	end
-		-- end
 		-- Create groups showing Appearance information
-		if group.sourceID then
-			-- print(group.__type)
-			-- app.PrintGroup(group)
-			-- source without an item, try to generate the valid item link for it
-			if not group.itemID and not group.artifactID then
-				app.ImportRawLink(group, app.DetermineItemLink(group.sourceID));
-				-- if we found a Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Havrest, add harvest, parse)
-				app.SaveHarvestSource(group);
-			end
-			-- Attempt to get information about the source ID.
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.sourceID);
-			if sourceInfo then
-				-- print("Source Info on popout")
-				-- app.PrintTable(sourceInfo)
-				-- Show a list of all of the Shared Appearances.
-				local g = {};
-				-- Go through all of the shared appearances and see if we've "unlocked" any of them.
-				for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-					-- If this isn't the source we already did work on and we haven't already completed it
-					if otherSourceID ~= group.sourceID then
-						local shared = app.SearchForMergedObject("sourceID", otherSourceID);
-						if shared then
-							shared = CreateObject(shared, true);
-							shared.hideText = true;
-							tinsert(g, shared);
-							-- print("ATT Appearance:",shared.hash,shared.modItemID)
-						else
-							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-							-- print("Missing Appearance")
-							-- app.PrintTable(otherSourceInfo)
-							if otherSourceInfo then
-								local newItem = app.CreateItemSource(otherSourceID);
-								if otherSourceInfo.isCollected then
-									ATTAccountWideData.Sources[otherSourceID] = 1;
-								end
-								tinsert(g, newItem);
-							end
-						end
-					end
-				end
-				local appearanceGroup;
-				if #g > 0 then
-					appearanceGroup = app.CreateNPC(app.HeaderConstants.SHARED_APPEARANCES, {
-						["OnUpdate"] = app.AlwaysShowUpdate,
-						["sourceIgnored"] = true,
-						["skipFill"] = true,
-						["g"] = g,
-					});
-				else
-					appearanceGroup = app.CreateNPC(app.HeaderConstants.UNIQUE_APPEARANCE, {
-						["OnUpdate"] = app.AlwaysShowUpdate,
-						["sourceIgnored"] = true,
-						["skipFill"] = true,
-					});
-				end
-				-- add the group showing the Appearance information for this popout
-				if group.g then tinsert(group.g, appearanceGroup)
-				else group.g = { appearanceGroup } end
-			end
-
-			-- Determine if this source is part of a set or two.
-			local allSets = {};
-			local sourceSets = {};
-			local GetVariantSets = C_TransmogSets.GetVariantSets;
-			local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
-			for i,data in ipairs(C_TransmogSets.GetAllSets()) do
-				local sources = GetAllSourceIDs(data.setID);
-				if #sources > 0 then allSets[data.setID] = sources; end
-				for j,sourceID in ipairs(sources) do
-					local sourceSet = sourceSets[sourceID];
-					if not sourceSet then
-						sourceSet = {};
-						sourceSets[sourceID] = sourceSet;
-					end
-					sourceSet[data.setID] = 1;
-				end
-				local variants = GetVariantSets(data.setID);
-				if type(variants) == "table" then
-					for j,data in ipairs(variants) do
-						local sources = GetAllSourceIDs(data.setID);
-						if #sources > 0 then allSets[data.setID] = sources; end
-						for k, sourceID in ipairs(sources) do
-							local sourceSet = sourceSets[sourceID];
-							if not sourceSet then
-								sourceSet = {};
-								sourceSets[sourceID] = sourceSet;
-							end
-							sourceSet[data.setID] = 1;
-						end
-					end
-				end
-			end
-			local data, g = sourceSets[group.sourceID];
-			if data then
-				for setID,value in pairs(data) do
-					g = {};
-					setID = tonumber(setID);
-					for _,sourceID in ipairs(allSets[setID]) do
-						local search = app.SearchForMergedObject("sourceID", sourceID);
-						if search then
-							search = CreateObject(search, true);
-							search.hideText = true;
-							tinsert(g, search);
-						else
-							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSourceInfo then
-								local newItem = app.CreateItemSource(sourceID);
-								if otherSourceInfo.isCollected then
-									ATTAccountWideData.Sources[sourceID] = 1;
-								end
-								tinsert(g, newItem);
-							end
-						end
-					end
-					-- add the group showing the related Set information for this popout
-					if not group.g then group.g = { app.CreateGearSet(setID, {
-						["OnUpdate"] = app.AlwaysShowUpdate,
-						["sourceIgnored"] = true,
-						["skipFill"] = true,
-						["g"] = g }) }
-					else tinsert(group.g, app.CreateGearSet(setID, {
-						["OnUpdate"] = app.AlwaysShowUpdate,
-						["sourceIgnored"] = true,
-						["skipFill"] = true,
-						["g"] = g })) end
-				end
-			end
-		end
+		app.BuildSourceInformationForPopout(group);
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
 			-- if the group was created from a popout and thus contains its own pre-req quests already, then clean out direct quest entries from the group
 			if group.g then
@@ -14731,7 +13825,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			local link, source = data.link or data.silentLink, data.sourceID;
 			if not link then return; end
 			-- If it doesn't, the source ID will need to be harvested.
-			local sourceID, success = GetSourceID(link);
+			local sourceID, success = app.GetSourceID(link);
 			-- app.PrintDebug("SourceIDs",link,data.modItemID,source,sourceID,success)
 			data._VerifyGroupSourceID = true;
 			if sourceID and sourceID > 0 then
@@ -17123,9 +16217,6 @@ app.Startup = function()
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 
-	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
-	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
 
@@ -17652,68 +16743,6 @@ app.events.TOYS_UPDATED = function(itemID, new)
 end
 
 
-local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
-app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
-	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
-	if sourceID then
-		-- Cache the previous state. This will help keep lag under control.
-		local oldState = ATTAccountWideData.Sources[sourceID] or 0;
-
-		-- Only do work if we weren't already learned.
-		-- We check here because Blizzard likes to double notify for items with timers.
-		if oldState ~= 1 then
-			ATTAccountWideData.Sources[sourceID] = 1;
-			app.ActiveItemCollectionHelper(sourceID, oldState);
-			app.WipeSearchCache();
-		end
-	end
-end
-app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
-	-- print("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
-	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
-	if oldState then
-		local unlearnedSourceIDs = { sourceID };
-		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-		ATTAccountWideData.Sources[sourceID] = nil;
-
-		-- If the user is a Completionist
-		if app.Settings:Get("Completionist") then
-			if app.Settings:GetTooltipSetting("Report:Collected") then
-				-- Oh shucks, that was nice of you to give this item to your friend.
-				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
-				local name, link = GetItemInfo(sourceInfo.itemID);
-				print(format(L["ITEM_ID_REMOVED"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
-			end
-		else
-			local shared = 0;
-			local categoryID, appearanceID, canEnchant, texture, isCollected, itemLink = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
-			if categoryID then
-				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-					if ATTAccountWideData.Sources[otherSourceID] then
-						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-						if not otherSourceInfo.isCollected and otherSourceInfo.categoryID == categoryID then
-							tinsert(unlearnedSourceIDs, otherSourceID);
-							ATTAccountWideData.Sources[otherSourceID] = nil;
-							shared = shared + 1;
-						end
-					end
-				end
-			end
-
-			if app.Settings:GetTooltipSetting("Report:Collected") then
-				-- Oh shucks, that was nice of you to give this item to your friend.
-				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
-				local name, link = GetItemInfo(sourceInfo.itemID);
-				print(format(L[shared > 0 and "ITEM_ID_REMOVED_SHARED" or "ITEM_ID_REMOVED"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, shared));
-			end
-		end
-
-		-- Refresh the Data and Cry!
-		UpdateRawIDs("sourceID", unlearnedSourceIDs);
-		Callback(app.Audio.PlayRemoveSound);
-		app.WipeSearchCache();
-	end
-end
 
 -- Vignette Functionality Scope
 do

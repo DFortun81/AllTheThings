@@ -12,8 +12,8 @@ if app.IsRetail then
 -- I'd much rather have parser export these.
 local wipe, math_max, tonumber, type, select, pcall, ipairs, pairs =
 	  wipe, math.max, tonumber, type, select, pcall, ipairs, pairs;
-local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, C_LegendaryCrafting_GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection_GetSourceInfo =
-	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, C_LegendaryCrafting.GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection.GetSourceInfo;
+local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, C_LegendaryCrafting_GetRuneforgePowerInfo, GetAchievementInfo =
+	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, C_LegendaryCrafting.GetRuneforgePowerInfo, GetAchievementInfo;
 local ATTAccountWideData
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
@@ -51,35 +51,6 @@ local function CacheAccountWideCompleteViaAchievement(accountWideData)
 		-- If you completed the achievement, then mark the associated quests.
 		collected = select(4, GetAchievementInfo(achievementQuests[1]));
 		for _,questID in ipairs(achievementQuests[2]) do
-			if collected then
-				-- Mark the quest as completed for the Account
-				acctQuests[questID] = 1;
-				if not oneTimeQuests[questID] and IsQuestFlaggedCompleted(questID) then
-					-- this once-per-account quest only counts for a specific character
-					oneTimeQuests[questID] = app.GUID;
-				end
-			end
-			-- otherwise indicate the one-time-nature of the quest
-			if oneTimeQuests[questID] == nil then
-				oneTimeQuests[questID] = false;
-			end
-		end
-	end
-end
-
-local function CacheQuestStatesViaAppearanceUnlocks(accountWideData)
-	local collected;
-	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
-	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
-	-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using a known sourceID.  (Secrets)
-	for _,appearanceQuests in ipairs({
-		-- Waist of Time isn't technically once-per-account, so don't fake the cached data
-		-- { 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
-	}) do
-		-- If you have the appearance, then mark the associated quests.
-		local sourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
-		collected = sourceInfo.isCollected;
-		for _,questID in ipairs(appearanceQuests[2]) do
 			if collected then
 				-- Mark the quest as completed for the Account
 				acctQuests[questID] = 1;
@@ -367,8 +338,6 @@ RefreshCollections = function()
 
 	CacheAccountWideCompleteViaAchievement(ATTAccountWideData);
 	coroutine.yield();
-	CacheQuestStatesViaAppearanceUnlocks(ATTAccountWideData);
-	coroutine.yield();
 	CacheAccountWideMiscQuests(ATTAccountWideData);
 	coroutine.yield();
 	CacheAccountWideSharedQuests(ATTAccountWideData);
@@ -382,12 +351,6 @@ RefreshCollections = function()
 	app.HandleEvent("OnRefreshCollections")
 
 	app:RecalculateAccountWideData();
-	coroutine.yield();
-
-	-- Refresh Sources from Cache if tracking Transmog
-	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
-		app.RefreshAppearanceSources();
-	end
 	coroutine.yield();
 
 	-- Need to update the Settings window as well if User does not have auto-refresh for Settings

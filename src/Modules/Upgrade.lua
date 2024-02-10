@@ -236,6 +236,16 @@ local function GetNextItemUnlockBonusID(item)
 end
 api.GetNextItemUnlockBonusID = GetNextItemUnlockBonusID;
 
+local function AsItemSource(t)
+	-- already an item source table
+	if t.__type == "ItemWithAppearance" then return t; end
+	local link = t.link or t.rawlink or t.silentLink;
+	if not link then return end
+	local sourceID = app.GetSourceID(link)
+	if sourceID then
+		return app.CreateItemSource(sourceID, t.itemID, t);
+	end
+end
 local function GetUpgrade(t, upmodID, upbonusID)
 	local itemID = t.itemID
 	local up = {
@@ -243,7 +253,7 @@ local function GetUpgrade(t, upmodID, upbonusID)
 		modID = upmodID > 0 and upmodID or nil,
 		bonusID = upbonusID > 0 and upbonusID or nil
 	}
-	return CreateItem(itemID, up).AsItemSource;
+	return AsItemSource(CreateItem(itemID, up));
 end
 api.GetUpgrade = GetUpgrade;
 

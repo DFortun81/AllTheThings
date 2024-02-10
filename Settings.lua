@@ -1450,9 +1450,6 @@ settings.UpdateMode = function(self, doRefresh)
 
 	if doRefresh then
 		self.NeedsRefresh = nil
-		if app.DoRefreshAppearanceSources then
-			app.RefreshAppearanceSources()
-		end
 		app:RefreshData(nil,nil,true)
 		app._SettingsRefresh = GetTimePreciseSec()
 	else

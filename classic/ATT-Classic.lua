@@ -266,7 +266,6 @@ app.IsComplete = function(o)
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
 end
-app.MaximumItemInfoRetries = 400;
 local function GetDisplayID(data)
 	if data.displayID then
 		return data.displayID;
@@ -4667,16 +4666,18 @@ else
 	end
 end
 
-local fields = app.CloneDictionary(itemFields);
-fields.collectible = function(t)
-	return app.Settings.Collectibles.Toys;
-end
-fields.collected = function(t)
-	return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0);
-end
-fields.itemID = function(t)
-	return t.toyID;
-end
+-- Toy Lib
+local toyFields = {
+	collectible = function(t)
+		return app.Settings.Collectibles.Toys;
+	end,
+	collected = function(t)
+		return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0);
+	end,
+	itemID = function(t)
+		return t.toyID;
+	end,
+};
 if C_ToyBox and app.GameBuildVersion >= 30000 then
 	-- Toy API is in!
 	local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
@@ -4685,7 +4686,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 			return true;
 		end
 	end
-	fields.collected = function(t)
+	toyFields.collected = function(t)
 		local toyID = t.toyID;
 		if isBNETCollectible(toyID) then
 			if ATTAccountWideData.Toys[toyID] then return 1; end
@@ -4694,12 +4695,12 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 			return app.SetCollected(t, "Toys", toyID, GetItemCount(toyID, true) > 0);
 		end
 	end;
-	fields.description = function(t)
+	toyFields.description = function(t)
 		if not isBNETCollectible(t.toyID) then
 			return "This is not a Toy as classified by Blizzard, but it is something that SHOULD be a Toy! Keep this in your inventory somewhere on an alt until Blizzard fixes it.";
 		end
 	end;
-	fields.isBNETCollectible = function(t)
+	toyFields.isBNETCollectible = function(t)
 		return isBNETCollectible(t.toyID);
 	end
 
@@ -4723,7 +4724,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 		coroutine.yield();
 	end);
 end
-app.CreateToy = app.CreateClass("Toy", "toyID", fields);
+app.CreateToy = app.ExtendClass("Item", "Toy", "toyID", toyFields);
 end)();
 
 -- NPC Lib
@@ -5364,15 +5365,7 @@ app.CreateDrakewatcherManuscript = function(id, t)
 	return { text = "DrakewatcherManuscript #" .. id, description = "This data type is not supported at this time." };
 end
 
-app.CreateGearSet = function(id, t)
-	return { text = "GearSet #" .. id, description = "This data type is not supported at this time." };
-end
-app.CreateGearSetHeader = function(id, t)
-	return { text = "GearSetHeader #" .. id, description = "This data type is not supported at this time." };
-end
-app.CreateGearSetSubHeader = function(id, t)
-	return { text = "GearSetSubHeader #" .. id, description = "This data type is not supported at this time." };
-end
+
 app.CreateMusicRoll = function(questID, t)
 	return { text = "MusicRoll #" .. questID, description = "This data type is not supported at this time." };
 end
@@ -5384,11 +5377,6 @@ app.CreateRuneforgeLegendary = function(id, t)
 end
 app.CreateSelfieFilter = function(id, t)
 	return { text = "SelfieFilter #" .. id, description = "This data type is not supported at this time." };
-end
-app.CreateItemSource = function(sourceID, itemID, t)
-	t = app.CreateItem(itemID, t);
-	t.sourceID = sourceID;
-	return t;
 end
 end)();
 

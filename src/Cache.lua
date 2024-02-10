@@ -680,12 +680,6 @@ local function SearchForFieldContainer(field)
 	-- Returns: A table containing all groups which contain a given field.
 	return currentCache[field];
 end
-local function SearchForSourceIDQuickly(sourceID)
-	-- Returns: The first found cached group for a given SourceID
-	-- NOTE: Do not use this function when the results are being passed into an Update afterward
-	-- or if ATT data has not been loaded yet
-	if sourceID then return SearchForField("sourceID", sourceID)[1]; end
-end
 
 -- Recursive Searching
 local function SearchForFieldRecursively(group, field, value)
@@ -1175,7 +1169,6 @@ app.SearchForFieldInAllCaches = SearchForFieldInAllCaches;
 app.SearchForManyInAllCaches = SearchForManyInAllCaches;
 app.SearchForObject = SearchForObject;
 app.SearchForRelativeItems = SearchForRelativeItems;
-app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
 app.SearchForSourcePath = SearchForSourcePath;
 app.SearchForSpecificGroups = SearchForSpecificGroups;
 app.VerifyCache = VerifyCache;
