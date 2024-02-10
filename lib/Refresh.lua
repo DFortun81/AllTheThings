@@ -12,8 +12,8 @@ if app.IsRetail then
 -- I'd much rather have parser export these.
 local wipe, math_max, tonumber, type, select, pcall, ipairs, pairs =
 	  wipe, math.max, tonumber, type, select, pcall, ipairs, pairs;
-local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, C_LegendaryCrafting_GetRuneforgePowerInfo, GetAchievementInfo =
-	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, C_LegendaryCrafting.GetRuneforgePowerInfo, GetAchievementInfo;
+local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, GetAchievementInfo =
+	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, GetAchievementInfo;
 local ATTAccountWideData
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
@@ -294,22 +294,6 @@ RefreshCollections = function()
 			-- remove Toys that the account doesnt actually have
 			if acctToys[id] then print("Removed Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
 			acctToys[id] = nil;
-		end
-	end
-	coroutine.yield();
-
-	-- Refresh RuneforgeLegendaries from Cache
-	local acctRFLs = ATTAccountWideData.RuneforgeLegendaries;
-	local state;
-	for id,_ in pairs(app.SearchForFieldContainer("runeforgePowerID")) do
-		state = (C_LegendaryCrafting_GetRuneforgePowerInfo(id) or app.EmptyTable).state;
-		if state == 0 then
-			if not acctRFLs[id] then print("Added Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
-			acctRFLs[id] = 1;
-		else
-			-- remove RFLs that the account doesnt actually have
-			if acctRFLs[id] then print("Removed Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
-			acctRFLs[id] = nil;
 		end
 	end
 	coroutine.yield();

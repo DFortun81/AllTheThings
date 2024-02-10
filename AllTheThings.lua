@@ -6574,47 +6574,87 @@ end
 
 -- Runeforge Legendary Lib
 (function()
-local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
-app.CreateRuneforgeLegendary = app.ExtendClass("BaseItem", "RuneforgeLegendary", "runeforgePowerID", {
-	collectible = function(t) return app.Settings.Collectibles.RuneforgeLegendaries; end,
-	collectibleAsCost = app.ReturnFalse,
-	collected = function(t)
-		local rfID = t.runeforgePowerID;
-		-- account-wide collected
-		if ATTAccountWideData.RuneforgeLegendaries[rfID] then return 1; end
-		-- fresh collected
-		local state = (C_LegendaryCrafting_GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
-		if state == 0 then
-			ATTAccountWideData.RuneforgeLegendaries[rfID] = 1;
-			return 1;
+if C_LegendaryCrafting then
+	local AccountWideRuneforgeLegendariesData = {};
+	local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
+	app.CreateRuneforgeLegendary = app.ExtendClass("BaseItem", "RuneforgeLegendary", "runeforgePowerID", {
+		collectible = function(t) return app.Settings.Collectibles.RuneforgeLegendaries; end,
+		collectibleAsCost = app.ReturnFalse,
+		collected = function(t)
+			local rfID = t.runeforgePowerID;
+			-- account-wide collected
+			if AccountWideRuneforgeLegendariesData[rfID] then return 1; end
+			-- fresh collected
+			local state = (C_LegendaryCrafting_GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
+			if state == 0 then
+				AccountWideRuneforgeLegendariesData[rfID] = 1;
+				return 1;
+			end
+		end,
+		lvl = function(t) return 60; end,
+	});
+	app.AddEventHandler("OnRefreshCollections", function()
+		local acctRFLs = AccountWideRuneforgeLegendariesData;
+		local state;
+		for id,_ in pairs(app.SearchForFieldContainer("runeforgePowerID")) do
+			state = (C_LegendaryCrafting_GetRuneforgePowerInfo(id) or app.EmptyTable).state;
+			if state == 0 then
+				if not acctRFLs[id] then print("Added Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
+				acctRFLs[id] = 1;
+			else
+				-- remove RFLs that the account doesnt actually have
+				if acctRFLs[id] then print("Removed Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
+				acctRFLs[id] = nil;
+			end
 		end
-	end,
-	lvl = function(t) return 60; end,
-});
+	end);
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		-- Runeforge Legendaries are no longer per-character.
+		currentCharacter.RuneforgeLegendaries = nil;
+		
+		local accountWide = accountWideData.RuneforgeLegendaries;
+		if accountWide then
+			AccountWideRuneforgeLegendariesData = accountWide;
+		else
+			accountWideData.RuneforgeLegendaries = AccountWideRuneforgeLegendariesData;
+		end
+	end);
+else
+	app.CreateRuneforgeLegendary = function(id, t)
+		return setmetatable({
+			text = "@CRIEVE: Runeforge Legendary #" .. id,
+			description = "This data type is not supported at this time.",
+			collected = false,
+			collectible = true
+		}, { __index = t });
+	end
+end
 end)();
 
 -- Conduit Lib
 (function()
-local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
-app.CreateConduit = app.ExtendClass("BaseItem", "Conduit", "conduitID", {
-	collectible = function(t) return app.Settings.Collectibles.Conduits; end,
-	collectibleAsCost = app.ReturnFalse,
-	collected = function(t)
-		local cID = t.conduitID;
-		-- character collected
-		if app.CurrentCharacter.Conduits[cID] then return 1; end
-		-- account-wide collected
-		if app.Settings.AccountWide.Conduits and ATTAccountWideData.Conduits[cID] then return 2; end
-		-- fresh collected
-		local state = C_Soulbinds_GetConduitCollectionData(cID);
-		if state ~= nil then
-			app.CurrentCharacter.Conduits[cID] = 1;
-			ATTAccountWideData.Conduits[cID] = 1;
-			return 1;
-		end
-	end,
-	lvl = function(t) return 60; end,
-});
+if C_Soulbinds then
+	local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
+	app.CreateConduit = app.ExtendClass("BaseItem", "Conduit", "conduitID", {
+		collectible = function(t) return app.Settings.Collectibles.Conduits; end,
+		collectibleAsCost = app.ReturnFalse,
+		collected = function(t)
+			local cID = t.conduitID;
+			-- character collected
+			if app.CurrentCharacter.Conduits[cID] then return 1; end
+			-- account-wide collected
+			if app.Settings.AccountWide.Conduits and ATTAccountWideData.Conduits[cID] then return 2; end
+			-- fresh collected
+			local state = C_Soulbinds_GetConduitCollectionData(cID);
+			if state ~= nil then
+				app.CurrentCharacter.Conduits[cID] = 1;
+				ATTAccountWideData.Conduits[cID] = 1;
+				return 1;
+			end
+		end,
+		lvl = function(t) return 60; end,
+	});
+end
 end)();
 
 -- Drakewatcher Manuscript Lib
@@ -16005,8 +16045,6 @@ app.Startup = function()
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-	-- not needed, account-wide by blizzard
-	currentCharacter.RuneforgeLegendaries = nil;
 	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
 
 	-- Update timestamps.
@@ -16045,7 +16083,6 @@ app.Startup = function()
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	if not accountWideData.Toys then accountWideData.Toys = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
-	if not accountWideData.RuneforgeLegendaries then accountWideData.RuneforgeLegendaries = {}; end
 	if not accountWideData.Conduits then accountWideData.Conduits = {}; end
 
 	-- Account Wide Settings
