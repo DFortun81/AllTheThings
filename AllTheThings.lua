@@ -1097,7 +1097,6 @@ local function RawCloneData(data, clone)
 	return clone;
 end
 
-
 app.IsComplete = function(o)
 	local total = o.total
 	if total and total > 0 then return total == o.progress; end
@@ -1627,6 +1626,21 @@ local function FillSymLinks(group, recursive)
 	return group;
 end
 app.FillSymLinks = FillSymLinks;
+app.RecreateObject = function(t)
+	-- Clones an Object, fills any symlinks, builds groups, and does an Update pass before returning the Object
+	local obj = CreateObject(t);
+	-- fill the copied Item's symlink if any
+	FillSymLinks(obj);
+	-- Build the Item's groups if any
+	AssignChildren(obj);
+	-- Update the group while ignoring some visibility functionality
+	obj.collectibleAsCost = false
+	obj.collectibleAsUpgrade = false
+	app.TopLevelUpdateGroup(obj);
+	obj.collectibleAsCost = nil
+	obj.collectibleAsUpgrade = nil
+	return obj;
+end
 
 -- Symlink Lib
 do
@@ -2456,6 +2470,7 @@ app.FillAchievementCriteriaAsync = function(o)
 	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 end	-- Symlink Lib
+
 
 -- Search Results Lib
 local searchCache, working = {};
@@ -4958,25 +4973,6 @@ app.events.UPDATE_INSTANCE_INFO = function()
 end
 app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 end -- Refresh Functions
-
--- Lib Helpers
-(function()
--- Clones an Object, fills any symlinks, builds groups, and does an Update pass before returning the Object
-app.RecreateObject = function(t)
-	local obj = CreateObject(t);
-	-- fill the copied Item's symlink if any
-	FillSymLinks(obj);
-	-- Build the Item's groups if any
-	AssignChildren(obj);
-	-- Update the group while ignoring some visibility functionality
-	obj.collectibleAsCost = false
-	obj.collectibleAsUpgrade = false
-	app.TopLevelUpdateGroup(obj);
-	obj.collectibleAsCost = nil
-	obj.collectibleAsUpgrade = nil
-	return obj;
-end
-end)();
 
 -- Achievement Lib
 do
