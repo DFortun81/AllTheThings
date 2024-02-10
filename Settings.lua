@@ -1300,14 +1300,11 @@ settings.UpdateMode = function(self, doRefresh)
 	local filterSet = app.Modules.Filter.Set
 	if self:Get("Completionist") then
 		filterSet.ItemSource()
-		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper
 	else
 		if self:Get("MainOnly") and not self:Get("AccountMode") and not self:Get("DebugMode") then
 			filterSet.ItemSource(true, true)
-			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelperOnlyMain
 		else
 			filterSet.ItemSource(true)
-			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelper
 		end
 	end
 	if self:Get("DebugMode") then
