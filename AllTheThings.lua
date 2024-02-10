@@ -7049,6 +7049,9 @@ local DifficultyIcons = {
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
 };
+app.GetRelativeDifficultyIcon = function(t)
+	return DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
+end
 local function GetDifficultyName(difficultyID)
 	return GetDifficultyInfo(difficultyID);
 end
