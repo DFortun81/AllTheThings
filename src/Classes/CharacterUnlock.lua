@@ -46,14 +46,14 @@ app.AddEventHandler("OnLoad", function()
 	-- Since these classes rely on classes currently-defined in ATT.lua, we can't define these until those are defined prior to OnLoad
 	-- If those classes move into class files, then this file can be adjusted
 
-	local CreateCharacterUnlockQuestItem = app.ExtendClass("BaseItem", "BaseCharacterUnlockQuestItem", "questID", {
+	local CreateCharacterUnlockQuestItem = app.ExtendClass("Item", "BaseCharacterUnlockQuestItem", "questID", {
 		collectible = Collectible,
 		collected = CollectedAsQuest,
 		trackable = app.ReturnTrue,
 		saved = SavedAsQuest,
 		characterUnlock = app.ReturnTrue,
 	})
-	local CreateCharacterUnlockSpellItem = app.ExtendClass("BaseItem", "BaseCharacterUnlockSpellItem", "spellID", {
+	local CreateCharacterUnlockSpellItem = app.ExtendClass("Item", "BaseCharacterUnlockSpellItem", "spellID", {
 		collectible = Collectible,
 		collected = CollectedAsSpell,
 		trackable = app.ReturnTrue,

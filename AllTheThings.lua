@@ -6128,9 +6128,6 @@ local function default_costCollectibles(t)
 	return app.EmptyTable;
 end
 local itemFields = {
-	["key"] = function(t)
-		return "itemID";
-	end,
 	["_cache"] = function(t)
 		return cache;
 	end,
@@ -6158,11 +6155,6 @@ local itemFields = {
 	["title"] = function(t)
 		return cache.GetCachedField(t, "title");
 	end,
-	-- ["f"] = function(t)
-	-- 	-- Unknown item type after Parser, so make sure we save the filter for later references
-	-- 	t.f = -1;
-	-- 	return t.f;
-	-- end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
 		if itemLink then
@@ -6184,10 +6176,6 @@ local itemFields = {
 		return modItemID;
 	end,
 	["indicatorIcon"] = app.GetQuestIndicator,
-	["trackableAsQuest"] = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable");
-	end,
 	["costCollectibles"] = function(t)
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
@@ -6195,14 +6183,30 @@ local itemFields = {
 	["costsCount"] = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
 	end,
-	["collectibleAsFaction"] = function(t)
-		return app.Settings.Collectibles.Reputations;
-	end,
-	["collectibleAsQuest"] = app.CollectibleAsQuest,
-	["collectedAsQuest"] = function(t)
+};
+-- Module imports
+itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
+itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
+app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
+"WithQuest", {
+	collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
+	locked = app.GlobalVariants.AndLockCriteria.locked,
+	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	["collectedAsFaction"] = function(t)
+	trackable = function(t)
+		-- raw repeatable quests can't really be tracked since they immediately unflag
+		return not rawget(t, "repeatable");
+	end,
+	saved = function(t)
+		return IsQuestFlaggedCompleted(t.questID);
+	end
+}, (function(t) return t.questID; end),
+"WithFaction", {
+	collectible = function(t)
+		return app.Settings.Collectibles.Reputations;
+	end,
+	collected = function(t)
 		local factionID = t.factionID;
 		if factionID then
 			if t.repeatable then
@@ -6232,45 +6236,10 @@ local itemFields = {
 			end
 		end
 	end,
-	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
-	end,
-};
--- Module imports
-itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
-itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
-app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
-
-local fields = RawCloneData(itemFields);
-fields.collectible = itemFields.collectibleAsFaction;
-fields.collected = itemFields.collectedAsFaction;
-app.BaseItemWithFactionID = app.BaseObjectFields(fields, "BaseItemWithFactionID");
-
-local fields = RawCloneData(itemFields);
-fields.collected = itemFields.collectedAsQuest;
-fields.trackable = itemFields.trackableAsQuest;
-fields.saved = itemFields.savedAsQuest;
--- this would be an actual variant once migrated
-fields.collectible = app.GlobalVariants.AndLockCriteria.collectible;
-fields.locked = app.GlobalVariants.AndLockCriteria.locked
-app.BaseItemWithQuestID = app.BaseObjectFields(fields, "BaseItemWithQuestID");
-
-app.CreateItem = function(id, t)
-	if t then
-		if t.sourceID then
-			print("CreateItemSource in CreateItem! WRONG! Use CreateItemSource instead!", t.sourceID, id);
-			return app.CreateItemSource(t.sourceID, id, t);
-		elseif t.factionID then
-			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
-		elseif t.questID then
-			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
-		end
-	end
-	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
-end
+}, (function(t) return t.factionID; end));
 
 -- Toy Lib
-app.CreateToy = app.ExtendClass("BaseItem", "Toy", "toyID", {
+app.CreateToy = app.ExtendClass("Item", "Toy", "toyID", {
 	filterID = function(t)
 		return 102;
 	end,
@@ -6290,7 +6259,7 @@ app.CreateToy = app.ExtendClass("BaseItem", "Toy", "toyID", {
 
 -- Items With Appearances (Item Source)
 -- TODO: Once the Item class is moved out, uncomment this in the Transmog file.
-local createItemWithAppearance = app.ExtendClass("BaseItem", "ItemWithAppearance", "sourceID", {
+local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Transmog;
 	end,
@@ -6351,7 +6320,7 @@ end
 if C_LegendaryCrafting then
 	local AccountWideRuneforgeLegendariesData = {};
 	local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
-	app.CreateRuneforgeLegendary = app.ExtendClass("BaseItem", "RuneforgeLegendary", "runeforgePowerID", {
+	app.CreateRuneforgeLegendary = app.ExtendClass("Item", "RuneforgeLegendary", "runeforgePowerID", {
 		collectible = function(t) return app.Settings.Collectibles.RuneforgeLegendaries; end,
 		collectibleAsCost = app.ReturnFalse,
 		collected = function(t)
@@ -6410,7 +6379,7 @@ end)();
 if C_Soulbinds then
 	local CurrentConduitsData, AccountWideConduitsData = {}, {};
 	local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
-	app.CreateConduit = app.ExtendClass("BaseItem", "Conduit", "conduitID", {
+	app.CreateConduit = app.ExtendClass("Item", "Conduit", "conduitID", {
 		collectible = function(t) return app.Settings.Collectibles.Conduits; end,
 		collectibleAsCost = app.ReturnFalse,
 		collected = function(t)
@@ -6459,7 +6428,7 @@ end)();
 -- Drakewatcher Manuscript Lib
 (function()
 if app.GameBuildVersion >= 100000 then	-- Dragonflight+
-	app.CreateDrakewatcherManuscript = app.ExtendClass("BaseItem", "DrakewatcherManuscript", "itemID", {
+	app.CreateDrakewatcherManuscript = app.ExtendClass("Item", "DrakewatcherManuscript", "itemID", {
 		collectible = function(t) return app.Settings.Collectibles.DrakewatcherManuscripts; end,
 		collected = function(t) return IsQuestFlaggedCompletedForObject(t); end
 	});
@@ -6560,7 +6529,7 @@ hierloomLevelFields.collected = hierloomLevelFields.saved;
 local CreateHeirloomLevel = app.CreateClass("HeirloomLevel", "heirloomLevelID", hierloomLevelFields);
 
 -- Heirloom Item
-local createHeirloom = app.ExtendClass("BaseItem", "Heirloom", "itemID", {
+local createHeirloom = app.ExtendClass("Item", "Heirloom", "itemID", {
 	icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end,
 	link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end,
 	collectibleAsCost = app.ReturnFalse,
@@ -6734,7 +6703,7 @@ end -- Heirloom Lib
 local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
-app.CreateItemHarvester = app.ExtendClass("BaseItem", "ItemHarvester", "itemID", {
+app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
 	visible = app.ReturnTrue,
 	collectible = app.ReturnTrue,
 	collected = app.ReturnFalse,
@@ -15394,7 +15363,7 @@ app.ProcessAuctionData = function()
 					for i=2,#searchResults,1 do
 						MergeObject(data, CreateObject(searchResults[i]));
 					end
-					if data.key == "npcID" then setmetatable(data, app.BaseItem); end
+					if data.key == "npcID" then app.CreateItem(data.itemID, data); end
 					data.auctions = {};
 					keys[value] = data;
 				end

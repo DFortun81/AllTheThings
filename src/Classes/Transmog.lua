@@ -534,8 +534,7 @@ if C_TransmogCollection then
 	-- Items With Appearances (Item Source)
 	-- At this time an appearance must be associated with an item. (TODO: Maybe not?)
 	--[[
-	-- This has a dependency on BaseItem being created first. (it's currently NOT created first)
-	local createItemWithAppearance = app.ExtendClass("BaseItem", "ItemWithAppearance", "sourceID", {
+	local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
 		["collectible"] = function(t)
 			return app.Settings.Collectibles.Transmog;
 		end,

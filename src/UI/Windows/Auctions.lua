@@ -348,7 +348,7 @@ app:CreateWindow("Auctions", {
 									data = keys[value];
 									if not data then
 										data = CloneReference(searchResult);
-										if data.key == "npcID" then setmetatable(data, app.BaseItem); end
+										if data.key == "npcID" then app.CreateItem(itemID, data); end
 										data.indent = 1;
 										keys[value] = data;
 									end
