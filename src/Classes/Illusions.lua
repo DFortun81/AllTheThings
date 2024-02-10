@@ -7,9 +7,8 @@ local app = select(2, ...);
 local GetItemInfo =
 	  GetItemInfo;
 
-local ATTAccountWideData
-
 -- Illusion Class
+local AccountWideIllusionData = {};
 local illusionFields = {
 	["filterID"] = function(t)
 		return 103;
@@ -24,7 +23,7 @@ local illusionFields = {
 		return app.Settings.Collectibles.Illusions;
 	end,
 	["collected"] = function(t)
-		return ATTAccountWideData.Illusions[t.illusionID];
+		return AccountWideIllusionData[t.illusionID];
 	end,
 };
 if C_TransmogCollection then
@@ -43,14 +42,16 @@ if C_TransmogCollection then
 			return "[Illusion: " .. t.illusionID .. " (Unsupported)]";
 		end
 	end
+	if illusionFields.link then
+		illusionFields.illusionLink = illusionFields.link;
+	end
 
 	local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 	if C_TransmogCollection_GetIllusions then
 		-- Add Harvest Illusion Collections to the OnRefreshCollections handler.
 		app.AddEventHandler("OnRefreshCollections", function()
-			local collectedIllusions = ATTAccountWideData.Illusions;
 			for _,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
-				if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
+				if illusion.isCollected then AccountWideIllusionData[illusion.sourceID] = 1; end
 			end
 		end);
 	end
@@ -79,7 +80,12 @@ app.CreateIllusion = app.CreateClass("Illusion", "illusionID", illusionFields,
 	end
 }, function(t) return t.itemID; end);
 
-app.AddEventHandler("OnStartup", function()
-	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
-end)
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	local accountWide = accountWideData.Illusions;
+	if accountWide then
+		AccountWideIllusionData = accountWide;
+	else
+		accountWideData.Illusions = AccountWideIllusionData;
+	end
+end);
 end
