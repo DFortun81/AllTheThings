@@ -49,7 +49,6 @@ local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemCount = _G["GetItemCount"];
-local C_ToyBox, PlayerHasToy = _G["C_ToyBox"], _G["PlayerHasToy"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
 	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown;
@@ -4665,66 +4664,6 @@ else
 		return app.CreateItem(id, t);
 	end
 end
-
--- Toy Lib
-local toyFields = {
-	collectible = function(t)
-		return app.Settings.Collectibles.Toys;
-	end,
-	collected = function(t)
-		return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0);
-	end,
-	itemID = function(t)
-		return t.toyID;
-	end,
-};
-if C_ToyBox and app.GameBuildVersion >= 30000 then
-	-- Toy API is in!
-	local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
-	local function isBNETCollectible(toyID)
-		if C_ToyBox_GetToyInfo(toyID) then
-			return true;
-		end
-	end
-	toyFields.collected = function(t)
-		local toyID = t.toyID;
-		if isBNETCollectible(toyID) then
-			if ATTAccountWideData.Toys[toyID] then return 1; end
-			return app.SetAccountCollected(t, "Toys", toyID, PlayerHasToy(toyID));
-		else
-			return app.SetCollected(t, "Toys", toyID, GetItemCount(toyID, true) > 0);
-		end
-	end;
-	toyFields.description = function(t)
-		if not isBNETCollectible(t.toyID) then
-			return "This is not a Toy as classified by Blizzard, but it is something that SHOULD be a Toy! Keep this in your inventory somewhere on an alt until Blizzard fixes it.";
-		end
-	end;
-	toyFields.isBNETCollectible = function(t)
-		return isBNETCollectible(t.toyID);
-	end
-
-	app.events.TOYS_UPDATED = function(toyID, new)
-		if toyID then
-			app.SetAccountCollected(app.SearchForField("toyID", toyID)[1] or app.CreateToy(toyID), "Toys", toyID, PlayerHasToy(toyID));
-			app:RefreshDataQuietly("TOYS_UPDATED", true);
-		end
-	end
-	app.AddEventHandler("OnReady", function()
-		app:RegisterEvent("TOYS_UPDATED");
-	end);
-	app.AddEventHandler("OnRefreshCollections", function()
-		-- Refresh Toys
-		local collected;
-		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
-			if #t > 0 then
-				collected = t[1].collected;	-- Run the collected field's code.
-			end
-		end
-		coroutine.yield();
-	end);
-end
-app.CreateToy = app.ExtendClass("Item", "Toy", "toyID", toyFields);
 end)();
 
 -- NPC Lib
@@ -5920,7 +5859,6 @@ app.events.ADDON_LOADED = function(addonName)
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-	if not currentCharacter.Toys then currentCharacter.Toys = {}; end
 
 	-- Update timestamps.
 	local now = time();
@@ -5952,12 +5890,10 @@ app.events.ADDON_LOADED = function(addonName)
 	if not accountWideData.Exploration then accountWideData.Exploration = {}; end
 	if not accountWideData.Factions then accountWideData.Factions = {}; end
 	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
-	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
 	if not accountWideData.Quests then accountWideData.Quests = {}; end
 	if not accountWideData.RWP then accountWideData.RWP = {}; end
 	if not accountWideData.Spells then accountWideData.Spells = {}; end
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
-	if not accountWideData.Toys then accountWideData.Toys = {}; end
 
 	-- Account Wide Settings
 	local accountWideSettings = app.Settings.AccountWide;

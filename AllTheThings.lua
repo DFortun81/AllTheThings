@@ -6238,25 +6238,6 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 	end,
 }, (function(t) return t.factionID; end));
 
--- Toy Lib
-app.CreateToy = app.ExtendClass("Item", "Toy", "toyID", {
-	filterID = function(t)
-		return 102;
-	end,
-	collectible = function(t)
-		return app.Settings.Collectibles.Toys;
-	end,
-	collected = function(t)
-		return ATTAccountWideData.Toys[t.itemID];
-	end,
-	tsm = function(t)
-		return ("i:%d"):format(t.itemID);
-	end,
-	itemID = function(t)
-		return t.toyID;
-	end
-});
-
 -- Items With Appearances (Item Source)
 -- TODO: Once the Item class is moved out, uncomment this in the Transmog file.
 local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
@@ -15852,12 +15833,10 @@ app.Startup = function()
 	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
 	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
 	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
-	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
 	if not accountWideData.Quests then accountWideData.Quests = {}; end
 	if not accountWideData.Sources then accountWideData.Sources = {}; end
 	if not accountWideData.Spells then accountWideData.Spells = {}; end
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
-	if not accountWideData.Toys then accountWideData.Toys = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
 	-- Account Wide Settings
@@ -16219,7 +16198,6 @@ app.InitDataCoroutine = function()
 	DelayedCallback(app.LocationTrigger, 3);
 
 	app:RegisterEvent("HEIRLOOMS_UPDATED");
-	app:RegisterEvent("TOYS_UPDATED");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
 	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
 	app:RegisterEvent("VIGNETTES_UPDATED");
@@ -16536,24 +16514,6 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		end
 	end
 end
-
-
-local PlayerHasToy = _G["PlayerHasToy"];
-app.events.TOYS_UPDATED = function(itemID, new)
-	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
-		ATTAccountWideData.Toys[itemID] = 1;
-		UpdateRawID("itemID", itemID);
-		app.Audio:PlayFanfare();
-		app:TakeScreenShot("Toys");
-		app.WipeSearchCache();
-
-		if app.Settings:GetTooltipSetting("Report:Collected") then
-			local name, link = GetItemInfo(itemID);
-			if link then print(format(L["ITEM_ID_ADDED"], link, itemID)); end
-		end
-	end
-end
-
 
 
 -- Vignette Functionality Scope

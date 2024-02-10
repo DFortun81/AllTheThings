@@ -92,6 +92,9 @@ src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 src\UI\World Map Button.lua
 
+# Once Item Class is added above, move this there.
+src\Classes\Toys.lua
+
 # Window Logic Overhaul
 src\UI\Shared Window Logic.lua
 src\UI\Retail Window Logic.lua

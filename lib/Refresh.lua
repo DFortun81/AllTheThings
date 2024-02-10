@@ -12,8 +12,8 @@ if app.IsRetail then
 -- I'd much rather have parser export these.
 local wipe, math_max, tonumber, type, select, pcall, ipairs, pairs =
 	  wipe, math.max, tonumber, type, select, pcall, ipairs, pairs;
-local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, GetAchievementInfo =
-	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, GetAchievementInfo;
+local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, GetAchievementInfo =
+	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, GetAchievementInfo;
 local ATTAccountWideData
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
@@ -282,20 +282,6 @@ RefreshCollections = function()
 
 	-- Harvest Item Collections that are used by the addon.
 	app:GetDataCache();
-	coroutine.yield();
-
-	-- Refresh Toys from Cache
-	local acctToys = ATTAccountWideData.Toys;
-	for id,_ in pairs(app.SearchForFieldContainer("toyID")) do
-		if PlayerHasToy(id) then
-			if not acctToys[id] then print("Added Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
-			acctToys[id] = 1;
-		else
-			-- remove Toys that the account doesnt actually have
-			if acctToys[id] then print("Removed Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
-			acctToys[id] = nil;
-		end
-	end
 	coroutine.yield();
 
 	-- Refresh Achievements
