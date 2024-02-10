@@ -15,6 +15,8 @@ local toyFields = {
 		return app.Settings.Collectibles.Toys;
 	end,
 	collected = function(t)
+		-- TODO: really don't want the evaluation of whether something is collected to be forcibly executed on EVERY check
+		-- should be a cached check with a re-evaluation if not cached state
 		return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0);
 	end,
 	itemID = function(t)
@@ -46,7 +48,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 			return "This is not a Toy as classified by Blizzard, but it is something that SHOULD be a Toy! Keep this in your inventory somewhere on an alt until Blizzard fixes it.";
 		end
 	end;
-	
+
 	-- This should probably be simplified.
 	app.events.TOYS_UPDATED = app.IsRetail and function(itemID, new)
 		if itemID and not AccountWideToyData[itemID] and PlayerHasToy(itemID) then
@@ -78,7 +80,6 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 				collected = t[1].collected;	-- Run the collected field's code.
 			end
 		end
-		coroutine.yield();
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		local accountWide = accountWideData.Toys;
@@ -87,7 +88,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 		else
 			accountWideData.Toys = AccountWideToyData;
 		end
-		
+
 		-- With Wrath Classic, toys became *mostly* account wide.
 		local characterData = currentCharacter.Toys;
 		if characterData then
@@ -110,7 +111,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 else
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter.Toys then currentCharacter.Toys = {}; end
-		
+
 		local accountWide = accountWideData.Toys;
 		if accountWide then
 			AccountWideToyData = accountWide;
