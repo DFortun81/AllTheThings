@@ -78,6 +78,7 @@ src\Classes\Title.lua
 src\Classes\CharacterUnlock.lua
 
 # Expansion specific source files
+src\Expansions\Warlords.lua
 src\Expansions\Legion.lua
 
 # Load primary addon source files

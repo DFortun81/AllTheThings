@@ -4476,7 +4476,7 @@ end
 -- Synchronization Functions
 (function()
 local outgoing,incoming,queue,active = {},{},{};
-local whiteListedFields = { --[["Achievements",]] "AzeriteEssenceRanks", "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Quests", "Spells", "Titles" };
+local whiteListedFields = { --[["Achievements",]] "AzeriteEssenceRanks", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "GarrisonBuildings", "Quests", "Spells", "Titles" };
 app.CharacterSyncTables = whiteListedFields;
 local function splittoarray(sep, inputstr)
 	local t = {};
@@ -6800,116 +6800,6 @@ local fields = {
 app.BaseFollower = app.BaseObjectFields(fields, "BaseFollower");
 app.CreateFollower = function(id, t)
 	return setmetatable(constructor(id, t, "followerID"), app.BaseFollower);
-end
-end)();
-
--- Garrison Lib
-(function()
-local C_Garrison_GetBuildingInfo = C_Garrison.GetBuildingInfo;
-local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
-local C_Garrison_GetTalentInfo = C_Garrison.GetTalentInfo;
-
-local cache = app.CreateCache("buildingID");
-local function CacheInfo(t, field)
-	local _t, id = cache.GetCached(t);
-	local _, name, _, icon, lore, _, _, _, _, _, uncollected = C_Garrison_GetBuildingInfo(id);
-	_t.name = name;
-	_t.lore = lore;
-	_t.icon = _t.icon or icon;
-	if not uncollected then
-		app.CurrentCharacter.Buildings[t.buildingID] = 1;
-		ATTAccountWideData.Buildings[t.buildingID] = 1;
-	end
-	-- item on a building can replace fields
-	if t.itemID then
-		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-		if link then
-			_t.icon = icon or _t.icon;
-			_t.link = link;
-		end
-	end
-	if field then return _t[field]; end
-end
-
-local fields = {
-	["key"] = function(t)
-		return "buildingID";
-	end,
-	["link"] = function(t)
-		return cache.GetCachedField(t, "link", CacheInfo);
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", CacheInfo);
-	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", CacheInfo);
-	end,
-	["filterID"] = function(t)
-		return t.itemID and 200;
-	end,
-	["collectible"] = function(t)
-		return t.itemID and app.Settings.Collectibles.Recipes;
-	end,
-	["collected"] = function(t)
-		local id = t.buildingID;
-		if app.CurrentCharacter.Buildings[id] then return 1; end
-		if not select(11, C_Garrison_GetBuildingInfo(id)) then
-			app.CurrentCharacter.Buildings[id] = 1;
-			ATTAccountWideData.Buildings[id] = 1;
-			return 1;
-		end
-		if app.Settings.AccountWide.Recipes and ATTAccountWideData.Buildings[id] then return 2; end
-	end,
-};
-app.BaseGarrisonBuilding = app.BaseObjectFields(fields, "BaseGarrisonBuilding");
-app.CreateGarrisonBuilding = function(id, t)
-	return setmetatable(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
-end
-
-local fields = {
-	["key"] = function(t)
-		return "missionID";
-	end,
-	["name"] = function(t)
-		return C_Garrison_GetMissionName(t.missionID);
-	end,
-	["icon"] = function(t)
-		return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
-	end,
-};
-app.BaseGarrisonMission = app.BaseObjectFields(fields, "BaseGarrisonMission");
-app.CreateGarrisonMission = function(id, t)
-	return setmetatable(constructor(id, t, "missionID"), app.BaseGarrisonMission);
-end
-
-local fields = {
-	["key"] = function(t)
-		return "talentID";
-	end,
-	["info"] = function(t)
-		-- TODO: use cache
-		return C_Garrison_GetTalentInfo(t.talentID) or {};
-	end,
-	["name"] = function(t)
-		return t.info.name;
-	end,
-	["icon"] = function(t)
-		return t.info.icon or "Interface/ICONS/INV_Icon_Mission_Complete_Order";
-	end,
-	["description"] = function(t)
-		return t.info.description;
-	end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
-		return IsQuestFlaggedCompleted(t.questID) or t.info.researched;
-	end,
-};
-app.BaseGarrisonTalent = app.BaseObjectFields(fields, "BaseGarrisonTalent");
-app.CreateGarrisonTalent = function(id, t)
-	return setmetatable(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
 end
 end)();
 
@@ -17172,7 +17062,6 @@ app.Startup = function()
 	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
 	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
-	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
 	if not currentCharacter.CommonItems then currentCharacter.CommonItems = {}; end
 	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
@@ -17212,7 +17101,6 @@ app.Startup = function()
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
 	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
 	if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
-	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
 	if not accountWideData.CommonItems then accountWideData.CommonItems = {}; end
 	if not accountWideData.Factions then accountWideData.Factions = {}; end
 	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
@@ -17505,7 +17393,7 @@ app.InitDataCoroutine = function()
 			end
 		end
 		if toClean then
-			local copyTables = { "Buildings","Factions","FlightPaths" };
+			local copyTables = { "Buildings","GarrisonBuildings","Factions","FlightPaths" };
 			local cleanCharacterFunc = function(guid)
 				-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
 				local character = characterData[guid];
