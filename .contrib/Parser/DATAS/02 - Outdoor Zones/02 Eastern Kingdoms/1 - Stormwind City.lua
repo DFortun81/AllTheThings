@@ -2677,7 +2677,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/1 Defias Docket
-							["provider"] = { "i", 5947 },	-- Defias Docket
+							["providers"] = {
+								{ "o", 21052 },	-- Defias Strongbox
+								{ "i", 5947 },	-- Defias Docket
+							},
 							["coord"] = { 24.0, 72.1, DUSKWOOD },
 						}),
 					},
