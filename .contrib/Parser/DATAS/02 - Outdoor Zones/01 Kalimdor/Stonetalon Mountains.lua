@@ -1590,6 +1590,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						o(203374, {	-- Elder Sareth'na's Sketch Book
+							i(56186),	-- Elder Sareth'na's Sketch Book (QI!)
+						}),
 						i(57457, {	-- Legguards of Winding Ways
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
