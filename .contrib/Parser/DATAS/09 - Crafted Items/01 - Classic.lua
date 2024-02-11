@@ -11,6 +11,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12190),	-- Dreamless Sleep Potion
 			i(8949),	-- Elixir of Agility
 			i(13453),	-- Elixir of Brute Force
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210708)),	-- Elixir of Coelesced Regret
+			-- #endif
 			i(3389),	-- Elixir of Defense
 			i(9224),	-- Elixir of Demonslaying
 			i(9233),	-- Elixir of Detect Demon
@@ -77,6 +80,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(3827),	-- Mana Potion
 			i(13442),	-- Mighty Rage Potion
 			i(20004),	-- Mighty Troll's Blood Elixir[Wrath+] / Major Troll's Blood Potion
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(215162)),	-- Mildly Irradiated Rejuvenation Potion
+			-- #endif
 			i(118),		-- Minor Healing Potion
 			i(3384, {["timeline"] = {REMOVED_5_0_4}}),	-- Minor Magic Resistance Potion
 			i(2455),	-- Minor Mana Potion
@@ -98,12 +104,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6372),	-- Swim Speed Potion
 			i(3382),	-- Weak Troll's Blood Elixir[Wrath+] / Weak Troll's Blood Potion
 			i(9144, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Wildvine Potion
-			-- #if SEASON_OF_DISCOVERY
-			n(SEASON_OF_DISCOVERY, {
-				applyclassicphase(SOD_PHASE_ONE, i(210708)),	-- Elixir of Coelesced Regret
-				applyclassicphase(SOD_PHASE_TWO, i(215162)),	-- Mildly Irradiated Rejuvenation Potion
-			}),
-			-- #endif
 		}),
 		filter(REAGENTS, {
 			i(12360),	-- Arcanite Bar
@@ -125,15 +125,13 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #endif
 			})),
 			i(3577),	-- Gold Bar
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(213372)),	-- Insulating Gniodine
+			-- #endif
 			i(12803),	-- Living Essence
 			i(3824, {["timeline"] = {REMOVED_4_0_3, ADDED_4_1_0}}),	-- Shadow Oil
 			i(13423),	-- Stonescale Oil
 			i(6037),	-- Truesilver Bar
-			-- #if SEASON_OF_DISCOVERY
-			n(SEASON_OF_DISCOVERY, {
-				applyclassicphase(SOD_PHASE_TWO, i(213372)),	-- Insulating Gniodine
-			}),
-			-- #endif
 		}),
 		filter(TRINKET_F, {
 			i(75525, {["timeline"] = {ADDED_5_0_4}}),	-- Alchemist's Flask
@@ -367,32 +365,35 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12636),	-- Helm of the Great Chief
 			i(12641),	-- Invulnerable Mail
 			i(12640),	-- Lionheart Helm
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210773)),	-- Mantle of the Second War
+			applyclassicphase(SOD_PHASE_TWO, i(215167, {	-- Reflective Truesilver Braincage
+				["requireSkill"] = BLACKSMITHING,
+			})),
+			applyclassicphase(SOD_PHASE_ONE, i(210794, {	-- Shifting Silver Breastplate
+				["requireSkill"] = BLACKSMITHING,
+			})),
+			-- #endif
 			i(12632),	-- Storm Gauntlets
 			i(12639),	-- Stronghold Gauntlets
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(215161, {	-- Tempered Interference-Negating Helmet
+				["requireSkill"] = BLACKSMITHING,
+			})),
+			-- #endif
 			applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 			i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
 			i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets
 			i(12633),	-- Whitesoul Helm
 			i(12624),	-- Wildthorn Mail
 			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			n(SEASON_OF_DISCOVERY, {
-				applyclassicphase(SOD_PHASE_ONE, i(210773)),	-- Mantle of the Second War
-				applyclassicphase(SOD_PHASE_TWO, i(215167, {	-- Reflective Truesilver Braincage
-					["requireSkill"] = BLACKSMITHING,
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(210794, {	-- Shifting Silver Breastplate
-					["requireSkill"] = BLACKSMITHING,
-				})),
-				applyclassicphase(SOD_PHASE_TWO, i(215161, {	-- Tempered Interference-Negating Helmet
-					["requireSkill"] = BLACKSMITHING,
-				})),
-			}),
-			-- #endif
 		}),
 		filter(MISC, {
 			i(16206, {["timeline"] = {REMOVED_5_0_4}}),	-- Arcanite Rod
 			i(15872),	-- Arcanite Skeleton Key
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(211845)),	-- Blackfathom Sharpening Stone
+			-- #endif
 			i(3478),	-- Coarse Grinding Stone
 			i(2863),	-- Coarse Sharpening Stone
 			i(3240),	-- Coarse Weightstone
@@ -409,6 +410,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7071),	-- Iron Buckle
 			i(6043),	-- Iron Counterweight
 			i(6042),	-- Iron Shield Spike
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(213376)),	-- Low-Background Truesilver Plates
+			-- #endif
 			i(7967),	-- Mithril Shield Spike
 			i(7969),	-- Mithril Spurs
 			i(3470),	-- Rough Grinding Stone
@@ -424,12 +428,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(11144, {["timeline"] = {REMOVED_5_0_4}}),	-- Truesilver Rod
 			i(15871),	-- Truesilver Skeleton Key
 			i(206648, {["timeline"] = {ADDED_10_1_5}}),	-- Undeath Metal
-			-- #if SEASON_OF_DISCOVERY
-			n(SEASON_OF_DISCOVERY, {
-				applyclassicphase(SOD_PHASE_ONE, i(211845)),	-- Blackfathom Sharpening Stone
-				applyclassicphase(SOD_PHASE_TWO, i(213376)),	-- Low-Background Truesilver Plates
-			}),
-			-- #endif
 		}),
 		n(WEAPONS, {
 			i(206493, {["timeline"] = {ADDED_10_1_5}}),	-- Axe of Sundered Bone

@@ -5,7 +5,7 @@
 -- Ex: Goblin Engineering, Gnomish Engineering, etc.
 
 -----------------
-i = GetRecipeHelperForProfession(COOKING);
+local i = GetRecipeHelperForProfession(COOKING);
 -----------------
 -- #IF AFTER CLASSIC
 i(21025, 25659, "removed 4.0.3"); -- Recipe: Dirge's Kickin' Chimaerok Chops (RECIPE!)

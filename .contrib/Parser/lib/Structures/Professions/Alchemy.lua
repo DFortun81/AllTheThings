@@ -55,7 +55,7 @@ EXPERT_ARTISAN_ALCHEMY = {
 		-- #if SEASON_OF_DISCOVERY
 		["OnUpdate"] = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
-		--end]],
+		end]],
 		-- #else
 		["lvl"] = 20,
 		-- #endif
@@ -70,7 +70,7 @@ EXPERT_ARTISAN_ALCHEMY = {
 		-- #if SEASON_OF_DISCOVERY
 		["OnUpdate"] = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
-		--end]],
+		end]],
 		-- #else
 		["lvl"] = 35,
 		-- #endif
