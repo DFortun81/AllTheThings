@@ -1354,10 +1354,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		q(14488, {	-- You've Been Served
 			["qg"] = 38208,	-- Investigator Fezzen Brasstacks
-			["sourceQuests"] = {
-				24792,	-- Man on the Inside (A)
-				24793,	-- Man on the Inside (H)
-			},
 			["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 			["maps"] = { SHADOWFANG_KEEP },
 			["isDaily"] = true,
