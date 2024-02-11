@@ -25,8 +25,18 @@ i(185922, 0);		-- Greater Drums of War
 -- PATCH 1.15.0 --
 ------------------
 --- QUEST ---
-i(0, 429869);	-- Void-Touched Leather Gauntlets
-i(0, 429354);	-- Void-Touched Leather Gloves
+i(0, 429869);		-- Void-Touched Leather Gauntlets
+i(0, 429354);		-- Void-Touched Leather Gloves
+
+------------------
+-- PATCH 1.15.1 --
+------------------
+--- ITEM ---
+i(215367, 435819);	-- Faintly Glowing Leather
+i(215152, 435904);	-- Glowing Gneuro-Linked Cowl
+i(215422, 435949);	-- Glowing Hyperconductive Scale Coif
+i(215423, 435951);	-- Gneuro-Conductive Channeler's Hood
+i(215424, 435953);	-- Rad-Resistant Scale Hood
 -- #endif
 
 -----------------

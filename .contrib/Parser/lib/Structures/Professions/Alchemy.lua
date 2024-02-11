@@ -159,7 +159,7 @@ WRATH_ALCHEMY = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(53898),	-- Elixir of Mighty Fortitude
 		r(54218),	-- Elixir of Mighty Strength
 		r(60367),	-- Elixir of Mighty Thoughts
-		r(60357),	-- Elixir of Versatility[Legion+] / Elixir of Spirit
+		r(53847),	-- Elixir of Versatility[Legion+] / Elixir of Spirit
 		r(58871),	-- Endless Healing Potion
 		r(58868),	-- Endless Mana Potion
 		r(53903),	-- Flask of Endless Rage

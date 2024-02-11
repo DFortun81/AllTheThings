@@ -1391,6 +1391,12 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(PROFESSIONS, {
+					prof(ALCHEMY, {
+						n(28703, {	-- Linzy Blackbolt <Alchemy Trainer>
+							["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
+							["groups"] = WRATH_ALCHEMY,
+						}),
+					}),
 					prof(BLACKSMITHING, {
 						n(28694, {	-- Alard Schmied <Blacksmithing Trainer>
 							["coord"] = { 45.8, 27.4, NORTHREND_DALARAN },

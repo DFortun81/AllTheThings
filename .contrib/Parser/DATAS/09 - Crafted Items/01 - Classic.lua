@@ -2027,6 +2027,15 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(TBC_PHASE_ONE, i(29964, {["timeline"] = {ADDED_2_0_5}})),	-- Blackstorm Leggings
 				applyclassicphase(TBC_PHASE_ONE, i(29970, {["timeline"] = {ADDED_2_0_5}})),	-- Wildfeather Leggings
 				-- #endif
+
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(215166, {	-- Glowing Gneuro-Linked Cowl
+					["requireSkill"] = LEATHERWORKING,
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215381, {	-- Gneuro-Conductive Channeler's Hood
+					["requireSkill"] = LEATHERWORKING,
+				})),
+				-- #endif
 			}),
 			filter(MAIL, {
 				i(132547, {["timeline"] = {ADDED_7_0_3}}),	-- Blue Chain Leggings
@@ -2133,6 +2142,15 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #if AFTER CATA
 				applyclassicphase(TBC_PHASE_ONE, i(29971, {["timeline"] = {ADDED_2_0_5}})),	-- Dragonstrike Leggings
 				-- #endif
+
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(215114, {	-- Glowing Hyperconductive Scale Coif
+					["requireSkill"] = LEATHERWORKING,
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215382, {	-- Rad-Resistant Scale Hood
+					["requireSkill"] = LEATHERWORKING,
+				})),
+				-- #endif
 			}),
 		}),
 		filter(COSMETIC, {
@@ -2167,6 +2185,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(8173),	-- Thick Armor Kit
 			i(4304),	-- Thick Leather
 			i(8218, {["timeline"] = {REMOVED_4_0_1}}),	-- Thick Leather Ammo Pouch
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(213369)),	-- Faintly Glowing Leather
+			-- #endif
 		}),
 		n(WEAPONS, {
 			i(203805, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi's Grasp

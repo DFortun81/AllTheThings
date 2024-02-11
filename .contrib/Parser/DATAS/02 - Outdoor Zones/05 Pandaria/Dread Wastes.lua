@@ -157,6 +157,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.0, 37.6, DREAD_WASTES },
 					}),
 				}),
+				n(PROFESSIONS, {
+					prof(ALCHEMY, {
+						n(65186, {	-- Poisoncrafter Kil'zit <Alchemy Trainer>
+							["coord"] = { 55.6, 35.2, DREAD_WASTES },
+							["g"] = MOP_ALCHEMY,
+						}),
+					}),
+				}),
 				n(QUESTS, {	-- NOTE:: this zone is largely driven by reputation. If verifying any sourceQuest chains, I recommend doing all dailies in Klaxxi'vess as they become available to ensure you don't miss something
 					q(31178, {	-- A Bloody Delight
 						["coord"] = { 25.7, 50.2, DREAD_WASTES },

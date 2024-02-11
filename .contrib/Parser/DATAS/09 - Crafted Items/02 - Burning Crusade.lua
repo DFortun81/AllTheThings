@@ -15,6 +15,12 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			r(28591),	-- Flask of Pure Death
 			r(28589),	-- Flask of Relentless Assault
 			r(28586),	-- Super Rejuvenation Potion
+			r(28585),	-- Transmute: Primal Earth to Life
+			r(28583),	-- Transmute: Primal Fire to Mana
+			r(28584),	-- Transmute: Primal Life to Earth
+			r(28582),	-- Transmute: Primal Mana to Fire
+			r(28580),	-- Transmute: Primal Shadow to Water
+			r(28581),	-- Transmute: Primal Water to Shadow
 		}),
 		filter(CONSUMABLES, {
 			i(28103, {["timeline"] = {ADDED_2_1_0}}),	-- Adept's Elixir

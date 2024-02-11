@@ -1,19 +1,26 @@
 local i = GetRecipeHelperForProfession(ENCHANTING);
 
 -- #if ANYCLASSIC
-------------------
--- PATCH 1.15.0 --
-------------------
--- #if SEASON_OF_DISCOVERY
---- ITEM ---
-i(211849, 430409);	-- Blackfathom Mana Oil
--- #endif
-
 -----------------
 -- PATCH 2.5.1 --
 -----------------
 --- ITEM ---
 i(186683, 27927);	-- Stats
+-- #endif
+
+-- #if SEASON_OF_DISCOVERY
+------------------
+-- PATCH 1.15.0 --
+------------------
+--- ITEM ---
+i(211849, 430409);	-- Blackfathom Mana Oil
+
+------------------
+-- PATCH 1.15.1 --
+------------------
+--- ITEM ---
+i(215138, 435903);	-- Enchant Chest - Retricutioner
+i(215129, 435481);	-- Enchant Weapon - Dismantle
 -- #endif
 
 -----------------
