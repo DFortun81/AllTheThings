@@ -295,7 +295,30 @@ local function ProcessAddonMessageMethod(self, method, sender, text)
 end
 
 -- Account Wide Data handlers
-local AccountWideDataHandlers = {};
+local AccountWideDataHandlers = {
+	Deaths = function(data)
+		local deaths = 0;
+		for guid,character in pairs(CharacterData) do
+			if character.Deaths then
+				deaths = deaths + character.Deaths;
+			end
+		end
+		AccountWideData.Deaths = deaths;
+	end,
+};
+local function DefaultAccountWideDataHandler(data, key)
+	if type(data) == "table" then
+		wipe(data);
+		for guid,character in pairs(CharacterData) do
+			local characterData = character[key];
+			if characterData then
+				for index,_ in pairs(characterData) do
+					data[index] = 1;
+				end
+			end
+		end
+	end
+end
 if C_MountJournal then
 	local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 	local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
@@ -303,8 +326,8 @@ if C_MountJournal then
 		local allMountIDs = C_MountJournal_GetMountIDs();
 		if allMountIDs and #allMountIDs > 0 then
 			for i,mountID in ipairs(allMountIDs) do
-				local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
-				if spellID then data[spellID] = 1; end
+				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+				if spellID and isCollected then data[spellID] = 1; end
 			end
 		end
 	end
@@ -335,27 +358,8 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 end
 local function RecalculateAccountWideData()
 	for key,data in pairs(AccountWideData) do
-		if type(data) == "table" then
-			wipe(data);
-			for guid,character in pairs(CharacterData) do
-				local characterData = character[key];
-				if characterData then
-					for index,_ in pairs(characterData) do
-						data[index] = 1;
-					end
-				end
-			end
-			local handler = AccountWideDataHandlers[key];
-			if handler then handler(data); end
-		end
+		(AccountWideDataHandlers[key] or DefaultAccountWideDataHandler)(data, key);
 	end
-	local deaths = 0;
-	for guid,character in pairs(CharacterData) do
-		if character.Deaths then
-			deaths = deaths + character.Deaths;
-		end
-	end
-	AccountWideData.Deaths = deaths;
 end
 
 -- Data Handling
