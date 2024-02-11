@@ -415,7 +415,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9436, {	-- Bloodscalp Insight (H)
 					["qg"] = 17094,	-- Nemeth Hawkeye
 					-- #if AFTER CATA
-					["sourceQuest"] = 26321,	-- I Think She's Hungry
+					["sourceQuests"] = {
+						26321,	-- I Think She's Hungry
+						26279,	-- The Defense of Grom'gol: Ogre Oppression
+						26280,	-- The Defense of Grom'gol: Murloc Menace
+					},
 					["coord"] = { 38.1, 50.0, NORTHERN_STRANGLETHORN },
 					-- #else
 					["coord"] = { 32, 28.6, STRANGLETHORN_VALE },
