@@ -84,5 +84,3 @@ else
 		-- app.PrintDebugPrior("HandleEvent")
 	end
 end
-
-app.PrintDebug("src/Events")
