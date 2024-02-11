@@ -322,6 +322,17 @@ if C_PetJournal then
 		end
 	end
 end
+if C_ToyBox and app.GameBuildVersion >= 30000 then
+	-- After the C_ToyBox API was added, nearly every toy became account wide learned.
+	local PlayerHasToy = _G["PlayerHasToy"];
+	AccountWideDataHandlers.Toys = function(data)
+		for toyID,_ in pairs(app.SearchForFieldContainer("toyID")) do
+			if not data[toyID] and PlayerHasToy(toyID) then
+				data[toyID] = 1;
+			end
+		end
+	end
+end
 local function RecalculateAccountWideData()
 	for key,data in pairs(AccountWideData) do
 		if type(data) == "table" then
