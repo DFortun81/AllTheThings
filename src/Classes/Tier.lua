@@ -1,17 +1,28 @@
 do
 -- App locals
-local appName,app = ...;
-local pairs, tostring, math_floor = pairs, tostring, math.floor;
-local EJ_GetTierInfo, GetTierName = EJ_GetTierInfo;
+local _,app = ...;
+local pairs, tostring, math_floor, setmetatable, rawget
+	= pairs, tostring, math.floor, setmetatable, rawget
+local EJ_GetTierInfo = EJ_GetTierInfo;
+local GetTierName
 if EJ_GetTierInfo then
 	GetTierName = function(tierID)
 		-- only use API for name if not set from locale (this throws errors randomly for no reason, but not consistently)
 		local success, name = pcall(EJ_GetTierInfo, tierID);
 		if success then return name; end
-		return UNKNOWN;
+		-- this value is cached, don't return if it's not a real value
 	end
 else
 	GetTierName = function(tierID) return UNKNOWN; end
+end
+local GetTierInfoMeta = function(t, key)
+	local tierID = rawget(t, "tierID")
+	local name = GetTierName(tierID)
+	if name then
+		t.name = name
+		setmetatable(t, nil)
+	end
+	return rawget(t, key)
 end
 
 -- TODO: Maybe rename tierID to expansionID?
@@ -29,14 +40,13 @@ setmetatable(TierInfoByID, {
 				name = tostring(tierID).."."..tostring(patch).."."..tostring(rev),
 			}, { __index = TierInfoByID[tierID] });
 		else
-			info = TIER_DATA[tierID];
-			if info then
-				if not info.name then info.name = GetTierName(tierID); end
-			else
-				info = { name = GetTierName(tierID) };
+			info = setmetatable({tierID=tierID}, { __index = GetTierInfoMeta });
+			-- copy raw data from locale
+			for k,v in pairs(TIER_DATA[tierID]) do
+				info[k] = v
 			end
 		end
-		rawset(t, patchID, info);
+		t[patchID] = info
 		return info;
 	end
 });
