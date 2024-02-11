@@ -570,6 +570,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(205224),	-- Just a Rock
 						},
 					}),
+					q(78661, {	-- Excavation: Treasures in the Cliffside
+						["coord"] = { 17.1, 16.4, THE_FORBIDDEN_REACH },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
+					}),
 					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
 						["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
 					}),
