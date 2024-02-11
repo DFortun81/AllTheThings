@@ -1,14 +1,14 @@
-do
 -- App locals
 local appName,app = ...;
 
 local C_TransmogCollection = C_TransmogCollection;
 if C_TransmogCollection then
 	-- Transmog is supported!
-	local ipairs, select, tinsert
-		= ipairs, select, tinsert;
-	local GetItemInfoInstant
-		= GetItemInfoInstant;
+	-- Global locals
+	local ipairs, select, tinsert, pairs
+		= ipairs, select, tinsert, pairs;
+	local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
+		= GetItemInfoInstant, C_Item.IsDressableItemByID, GetItemInfo, C_Transmog.GetSlotForInventoryType
 	local Callback = app.CallbackHandlers.Callback;
 	local Colorize = app.Modules.Color.Colorize;
 	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -20,9 +20,10 @@ if C_TransmogCollection then
 		= C_TransmogCollection.GetAppearanceSourceInfo, C_TransmogCollection.GetAllAppearanceSources;
 	local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance
 		= C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
-	
+
+	local ATTAccountWideData
+
 	-- Inventory Slot Harvester
-	local GetSlotForInventoryType = C_Transmog.GetSlotForInventoryType;
 	local SlotByInventoryType = setmetatable({}, {
 		__index = function(t, key)
 			local slot = GetSlotForInventoryType(key);
@@ -30,7 +31,7 @@ if C_TransmogCollection then
 			return slot;
 		end
 	});
-	
+
 	-- Source ID Harvester
 	local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 		["INVTYPE_HEAD"] = {1},
@@ -57,7 +58,6 @@ if C_TransmogCollection then
 		["INVTYPE_HOLDABLE"] = {17},
 		["INVTYPE_TABARD"] = {19},
 	};
-	local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 	local DressUpModel = CreateFrame('DressUpModel');
 	local function GetSourceID(itemLink)
 		if not itemLink or not C_Item_IsDressableItemByID(itemLink) then return nil, false end
@@ -99,7 +99,7 @@ if C_TransmogCollection then
 		return nil, true;
 	end
 	app.GetSourceID = GetSourceID;
-	
+
 	-- Attempts to determine an ItemLink which will return the provided SourceID
 	app.DetermineItemLink = function(sourceID)
 		local link;
@@ -147,7 +147,7 @@ if C_TransmogCollection then
 		end
 		-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 	end
-	
+
 	local function SearchForSourceIDQuickly(sourceID)
 		-- Returns: The first found cached group for a given SourceID
 		-- NOTE: Do not use this function when the results are being passed into an Update afterward
@@ -263,8 +263,8 @@ if C_TransmogCollection then
 			return false;
 		end
 	end
-	
-	
+
+
 	-- The following Helper Methods are used when you obtain a new appearance.
 	local function CompletionistItemCollectionHelper(sourceID, oldState)
 		-- Get the source info for this source ID.
@@ -341,7 +341,7 @@ if C_TransmogCollection then
 			end
 
 			-- Update the groups for the sourceIDs
-			UpdateRawIDs("sourceID", unlockedSourceIDs);
+			app.UpdateRawIDs("sourceID", unlockedSourceIDs);
 		end
 	end
 	local function UniqueModeItemCollectionHelper(sourceID, oldState)
@@ -530,7 +530,7 @@ if C_TransmogCollection then
 			RefreshAppearanceSources();
 		end
 	end);
-	
+
 	-- Items With Appearances (Item Source)
 	-- At this time an appearance must be associated with an item. (TODO: Maybe not?)
 	--[[
@@ -560,7 +560,7 @@ if C_TransmogCollection then
 		return t;
 	end
 	]]--
-	
+
 	-- Gear Sets
 	local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
 	local C_TransmogSets_GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
@@ -652,9 +652,9 @@ if C_TransmogCollection then
 			end
 		end,
 	});
-	
+
 	-- External Functionality
-	app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
+	app.AddSourceInformation = function(sourceID, info, group, sourceGroup, itemString)
 		local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID);
 		if sourceInfo then
 			local working = false;
@@ -822,7 +822,7 @@ if C_TransmogCollection then
 					-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
 					-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 					-- this Account as being 'collected'
-					if isTopLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) }); end
+					tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) });
 					-- if the tooltip immediately refreshes for whatever reason then
 					-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
 					if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
@@ -973,7 +973,7 @@ if C_TransmogCollection then
 			end
 		end
 	end
-	
+
 	-- Event Handling
 	app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
@@ -1039,7 +1039,7 @@ if C_TransmogCollection then
 	app.AddEventHandler("OnStartup", function()
 		app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 		app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-		
+
 		local conversions = app.Settings.AdditionalIDValueConversions;
 		conversions.sourceID = function(sourceID)
 			-- add a value conversion for sourceID to include a checkmark/x
@@ -1047,7 +1047,10 @@ if C_TransmogCollection then
 			return sourceID .. " " .. app.GetCollectionIcon(info and info.isCollected)
 		end
 	end);
-	
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		ATTAccountWideData = accountWideData
+	end);
+
 	-- Extend the Filter Module to include ItemSource
 	app.Modules.Filter.Set.ItemSource = function(useUnique, useMainOnly)
 		if useUnique then
@@ -1062,7 +1065,7 @@ if C_TransmogCollection then
 			app.ItemSourceFilter = FilterItemSource;
 			ActiveItemCollectionHelper = CompletionistItemCollectionHelper;
 		end
-	end	
+	end
 else
 	-- Transmog is NOT supported.
 	-- Gear Sets
@@ -1095,12 +1098,11 @@ else
 		t.sourceID = sourceID;
 		return t;
 	end
-	
+
 	-- External Functionality
 	app.AddSourceInformation = app.DoNothing;
 	app.BuildSourceInformationForPopout = app.DoNothing;
-	
+
 	-- Extend the Filter Module to include ItemSource
 	app.Modules.Filter.Set.ItemSource = app.DoNothing;
-end
 end

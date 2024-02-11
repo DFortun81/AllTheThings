@@ -2702,7 +2702,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		if isTopLevelSearch then
-			if app.AddSourceInformation(sourceID, info, group, sourceGroup) then
+			if app.AddSourceInformation(sourceID, info, group, sourceGroup, itemString) then
 				working = true;
 			end
 

@@ -5,14 +5,16 @@ local appName,app = ...;
 -- Check to see if Artifact APIs are available for Legion
 local C_ArtifactUI = C_ArtifactUI;
 if C_ArtifactUI then
-	local CurrentArtifactRelicItemLevels, AccountWideArtifactData = {}, {};
+	local CurrentArtifactRelicItemLevels = {}
 	local pairs, select, math_floor
 		= pairs, select, math.floor;
 	local L, ColorizeRGB = app.L, app.Modules.Color.ColorizeRGB;
 	local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 	local GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem;
 	local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
-	
+
+	local ATTAccountWideData, ATTAccountWideDataArtifacts
+
 	-- Artifact Class
 	app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 		["artifactinfo"] = function(t)
@@ -32,14 +34,14 @@ if C_ArtifactUI then
 			return app.Settings.Collectibles.Transmog;
 		end,
 		["collected"] = function(t)
-			if AccountWideArtifactData[t.artifactID] then return 1; end
+			if ATTAccountWideDataArtifacts[t.artifactID] then return 1; end
 			-- This artifact is listed for the current class
 			if not GetRelativeField(t, "nmc", true) and t.artifactinfo[5] then
-				AccountWideArtifactData[t.artifactID] = 1;
+				ATTAccountWideDataArtifacts[t.artifactID] = 1;
 				return 1;
 			end
 		end,
-		["text"] = function(t)
+		["name"] = function(t)
 			if not t.artifactinfo then return end
 			local id = t.parent;
 			id = id and id.headerID;
@@ -112,7 +114,7 @@ if C_ArtifactUI then
 			local sourceID = t.silentLink;
 			if sourceID then
 				sourceID = app.GetSourceID(sourceID);
-				-- print("Artifact Source",sourceID,t.silentLink)
+				-- app.PrintDebug("Artifact Source",sourceID,t.silentLink)
 				if sourceID and sourceID > 0 then
 					t.sourceID = sourceID;
 					app.SaveHarvestSource(t)
@@ -126,7 +128,7 @@ if C_ArtifactUI then
 			end
 		end,
 	});
-	
+
 	-- External Functionality
 	-- TODO: Eventually I'd like for this to not be externally referenced and to instead use an event handler or to register with the Settings Menu or something (be able to turn it off)
 	app.AddArtifactRelicInformation = function(itemID, rawlink, info, group)
@@ -170,7 +172,7 @@ if C_ArtifactUI then
 			end
 		end
 	end
-	
+
 	-- Resolve Functionality
 	local tremove, contains = tremove, app.contains;
 	local RelicTypeNameByKey = setmetatable({}, {
@@ -193,7 +195,7 @@ if C_ArtifactUI then
 			return name;
 		end
 	});
-	
+
 	-- Symlink Resolve Functions
 	-- Instruction to include only search results where an item is of a specific relic type
 	local function ResolveRelicType(finalized, searchResults, o, cmd, ...)
@@ -202,7 +204,7 @@ if C_ArtifactUI then
 			app.print("'",cmd,"' had empty value set")
 			return;
 		end
-		
+
 		local types = {...};
 		-- replace the short constant values with in-game localized values
 		for i=#types,1,-1 do
@@ -219,7 +221,7 @@ if C_ArtifactUI then
 			end
 		end
 	end;
-	
+
 	-- Subroutines
 	local function legion_relinquished_base(ResolveFunctions)
 		local select, pop, where, is, finalize, merge, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.finalize, ResolveFunctions.merge, ResolveFunctions.extract;
@@ -391,7 +393,7 @@ if C_ArtifactUI then
 			modID(finalized, searchResults, o, "modID", 43);	-- apply the relinquished modID
 		end
 	end
-	
+
 	-- Event Handling
 	app.events.ARTIFACT_UPDATE = function(...)
 		local itemID = C_ArtifactUI.GetArtifactInfo();
@@ -427,12 +429,14 @@ if C_ArtifactUI then
 		else
 			currentCharacter.ArtifactRelicItemLevels = CurrentArtifactRelicItemLevels;
 		end
-		
+
+		ATTAccountWideData = accountWideData
 		local accountWide = accountWideData.Artifacts;
 		if accountWide then
-			AccountWideArtifactData = accountWide;
+			ATTAccountWideDataArtifacts = accountWide;
 		else
-			accountWideData.Artifacts = AccountWideArtifactData;
+			ATTAccountWideDataArtifacts = {}
+			accountWideData.Artifacts = ATTAccountWideDataArtifacts;
 		end
 	end);
 else
