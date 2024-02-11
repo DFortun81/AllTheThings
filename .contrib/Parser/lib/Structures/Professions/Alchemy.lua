@@ -142,96 +142,21 @@ TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 		["rank"] = 5,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264213, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Alchemy
-		cat(632, {	-- Cauldrons
-			r(41458),	-- Cauldron of Major Arcane Protection
-			r(41500),	-- Cauldron of Major Fire Protection
-			r(41501),	-- Cauldron of Major Frost Protection
-			r(41502),	-- Cauldron of Major Nature Protection
-			r(41503),	-- Cauldron of Major Shadow Protection
-		}),
-		cat(634, {	-- Elixirs
-			r(33740),	-- Adept's Elixir
-			r(39637),	-- Earthen Elixir
-			r(28543),	-- Elixir of Camouflage
-			r(39638),	-- Elixir of Draenic Wisdom
-			r(28578),	-- Elixir of Empowerment
-			r(28545),	-- Elixir of Healing Power
-			r(39639),	-- Elixir of Ironskin
-			r(28553),	-- Elixir of Major Agility
-			r(28557),	-- Elixir of Major Defense
-			r(28556),	-- Elixir of Major Firepower
-			r(39636),	-- Elixir of Major Fortitude
-			r(28549),	-- Elixir of Major Frost Power
-			r(28570),	-- Elixir of Major Mageblood
-			r(28558),	-- Elixir of Major Shadow Power
+		filter(CONSUMABLES, {
+			r(33740, {["timeline"] = {ADDED_2_1_0}}),	-- Adept's Elixir
+			r(39638, {["timeline"] = {ADDED_2_1_0}}),	-- Elixir of Draenic Wisdom
+			r(28545, {["timeline"] = {ADDED_2_1_0}}),	-- Elixir of Healing Power
 			r(28544),	-- Elixir of Major Strength
+			r(39636, {["timeline"] = {ADDED_2_1_0}}),	-- Elixir of Major Fortitude
 			r(33741),	-- Elixir of Mastery
-			r(28552),	-- Elixir of the Searching Eye
-			r(38960),	-- Fel Strength Elixir
+			r(45061, {["timeline"] = {ADDED_2_3_0}}),	-- Mad Alchemist's Potion
 			r(33738),	-- Onslaught Elixir
-
-		}),
-		cat(635, {	-- Flasks
-			r(28590),	-- Flask of Blinding Light
-			r(28587),	-- Flask of Fortification
-			r(28588),	-- Flask of Mighty Versatility
-			r(28591),	-- Flask of Pure Death
-			r(28589),	-- Flask of Relentless Assault
-			applyclassicphase(TBC_PHASE_THREE, {
-				r(42736, {	-- Flask of Chromatic Wonder
-					["timeline"] = { REMOVED_5_0_1 },
-				}),
-			}),
-		}),
-		cat(644, {	-- Materials
-			r(38070),	-- Mercurial Stone
-		}),
-		cat(633, {	-- Potions
-			r(28565),	-- Destruction Potion
-			r(38961),	-- Fel Mana Potion
-			r(38962),	-- Fel Regeneration Potion
-			r(28564),	-- Haste Potion
-			r(28563),	-- Heroic Potion
-			r(28550),	-- Insane Strength Potion
-			r(28579),	-- Ironshield Potion
-			r(45061),	-- Mad Alchemist's Potion
-			r(28575),	-- Major Arcane Protection Potion
-			r(28562),	-- Major Dreamless Sleep Potion
-			r(28571),	-- Major Fire Protection Potion
-			r(28572),	-- Major Frost Protection Potion
-			r(28577),	-- Major Holy Protection Potion
-			r(28573),	-- Major Nature Protection Potion
-			r(28576),	-- Major Shadow Protection Potion
-			r(28554),	-- Shrouding Potion
-			r(28546),	-- Sneaking Potion
 			r(28551),	-- Super Healing Potion
-			r(28555),	-- Super Mana Potion
-			r(28586),	-- Super Rejuvenation Potion
 			r(33733),	-- Unstable Mana Potion
 			r(33732),	-- Volatile Healing Potion
 		}),
-		cat(636, {	-- Transmutation
-			r(32765),	-- Transmute: Earthstorm Diamond
-			r(28566),	-- Transmute: Primal Air to Fire
-			r(28585),	-- Transmute: Primal Earth to Life
-			r(28567),	-- Transmute: Primal Earth to Water
-			r(28583),	-- Transmute: Primal Fire to Mana
-			r(28584),	-- Transmute: Primal Life to Earth
-			r(28582),	-- Transmute: Primal Mana to Fire
-			r(29688),	-- Transmute: Primal Might
-			r(28580),	-- Transmute: Primal Shadow to Water
-			r(28569),	-- Transmute: Primal Water to Air
-			r(28581),	-- Transmute: Primal Water to Shadow
-			r(32766),	-- Transmute: Skyfire Diamond
-		}),
-		cat(637, {	-- Trinkets
-			r(17632),	-- Alchemist Stone
-			applyclassicphase(TBC_PHASE_FIVE, {
-				r(47050),	-- Assassin's Alchemist Stone
-				r(47046),	-- Guardian's Alchemist Stone
-				r(47049),	-- Redeemer's Alchemist Stone
-				r(47048),	-- Sorcerer's Alchemist Stone
-			}),
+		filter(TRINKET_F, {
+			r(38070),	-- Mercurial Stone
 		}),
 	}));
 --[[ WRATH_ALCHEMY = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {

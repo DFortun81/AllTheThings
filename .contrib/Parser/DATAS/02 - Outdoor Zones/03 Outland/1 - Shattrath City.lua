@@ -948,27 +948,6 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					}),
-					q(10902, {	-- Master of Elixirs (2/2)
-						["qg"] = 19052,	-- Lorokeem <Master Alchemy Trainer>
-						["sourceQuest"] = 10906,	-- Master of Elixirs (1/2)
-						["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
-						["coord"] = { 45.8, 20.4, SHATTRATH_CITY },
-						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
-						["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
-						["requireSkill"] = ALCHEMY,
-						["altQuests"] = {
-							10902,	-- Master of Elixirs (2/2)
-							--10897,	-- Master of Potions (2/2)
-							10899,	-- Master of Transmutation (2/2)
-						},
-						["cost"] = {
-							{ "i", 31753, 10 },	-- Essence of Infinity
-							{ "i", 22834, 5 },	-- Elixir of Major Defense
-							{ "i", 28104, 5 },	-- Elixir of Mastery
-							{ "i", 22831, 5 },	-- Elixir of Major Agility
-						},
-						["lvl"] = 68,
-					}),
 					q(10025, {	-- More Basilisk Eyes
 						["qg"] = 18596,	-- Arcanist Adyria
 						["sourceQuest"] = 10024,	-- Voren'thal's Visions

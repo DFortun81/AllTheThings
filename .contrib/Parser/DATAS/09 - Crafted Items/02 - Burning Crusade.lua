@@ -1,24 +1,59 @@
----------------------------------------------2.1
+---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 	prof(ALCHEMY, {
-		category(632, {	-- Cauldrons
-			i(32839),	-- Cauldron of Major Arcane Protection
-			i(32849),	-- Cauldron of Major Fire Protection
-			i(32850),	-- Cauldron of Major Frost Protection
-			i(32851),	-- Cauldron of Major Nature Protection
-			i(32852),	-- Cauldron of Major Shadow Protection
+		n(DISCOVERY, {
+			r(41458, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Arcane Protection
+			r(41500, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Fire Protection
+			r(41501, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Frost Protection
+			r(41502, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Nature Protection
+			r(41503, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Shadow Protection
+			r(28590),	-- Flask of Blinding Light
+			r(28587),	-- Flask of Fortification
+			r(28588),	-- Flask of Mighty Versatility / Flask of Mighty Restoration
+			r(28591),	-- Flask of Pure Death
+			r(28589),	-- Flask of Relentless Assault
+			r(28586),	-- Super Rejuvenation Potion
 		}),
-		category(633, {	-- Potions
+		filter(CONSUMABLES, {
+			i(28103, {["timeline"] = {ADDED_2_1_0}}),	-- Adept's Elixir
+			i(32839, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Arcane Protection
+			i(32849, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Fire Protection
+			i(32850, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Frost Protection
+			i(32851, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Nature Protection
+			i(32852, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Shadow Protection
 			i(22839),	-- Destruction Potion
+			i(32063, {["timeline"] = {ADDED_2_1_0}}),	-- Earthen Elixir
+			i(22823),	-- Elixir of Camouflage
+			i(32067, {["timeline"] = {ADDED_2_1_0}}),	-- Elixir of Draenic Wisdom
+			i(22848),	-- Elixir of Empowerment
+			i(22825, {["timeline"] = {ADDED_2_1_0}}),	-- Elixir of Healing Power
+			i(32068, {["timeline"] = {ADDED_2_1_0}}),	-- Elixir of Ironskin
+			i(22831),	-- Elixir of Major Agility
+			i(22834),	-- Elixir of Major Defense
+			i(22833),	-- Elixir of Major Firepower
+			i(32062, {["timeline"] = {ADDED_2_1_0}}),	-- Elixir of Major Fortitude
+			i(22827),	-- Elixir of Major Frost Power
+			i(22840),	-- Elixir of Major Mageblood
+			i(22835),	-- Elixir of Major Shadow Power
+			i(22824),	-- Elixir of Major Strength
+			i(28104),	-- Elixir of Mastery
+			i(22830),	-- Elixir of the Searching Eye
 			i(31677),	-- Fel Mana Potion
 			i(31676),	-- Fel Regeneration Potion
+			i(31679),	-- Fel Strength Elixir
+			i(22861),	-- Flask of Blinding Light
+			applyclassicphase(TBC_PHASE_THREE, i(33208, {["timeline"] = {ADDED_2_2_0, REMOVED_5_0_4}})),	-- Flask of Chromatic Wonder
+			i(22851),	-- Flask of Fortification
+			i(22853),	-- Flask of Mighty Versatility / Flask of Mighty Restoration
+			i(22866),	-- Flask of Pure Death
+			i(22854),	-- Flask of Relentless Assault
 			i(22838),	-- Haste Potion
 			i(22837),	-- Heroic Potion
 			i(22828),	-- Insane Strength Potion
 			i(22849),	-- Ironshield Potion
-			i(34440),	-- Mad Alchemist's Potion
+			i(34440, {["timeline"] = {ADDED_2_3_0}}),	-- Mad Alchemist's Potion
 			i(22845),	-- Major Arcane Protection Potion
 			i(22836),	-- Major Dreamless Sleep Potion
 			i(22841),	-- Major Fire Protection Potion
@@ -26,6 +61,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(22847),	-- Major Holy Protection Potion
 			i(22844),	-- Major Nature Protection Potion
 			i(22846),	-- Major Shadow Protection Potion
+			i(28102),	-- Onslaught Elixir
 			i(22871),	-- Shrouding Potion
 			i(22826),	-- Sneaking Potion
 			i(22829),	-- Super Healing Potion
@@ -34,59 +70,14 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(28101),	-- Unstable Mana Potion
 			i(28100),	-- Volatile Healing Potion
 		}),
-		category(634, {	-- Elixirs
-			i(28103),	-- Adept's Elixir
-			i(32063),	-- Earthen Elixir
-			i(22823),	-- Elixir of Camouflage
-			i(32067),	-- Elixir of Draenic Wisdom
-			i(22848),	-- Elixir of Empowerment
-			i(22825),	-- Elixir of Healing Power
-			i(32068),	-- Elixir of Ironskin
-			i(22831),	-- Elixir of Major Agility
-			i(22834),	-- Elixir of Major Defense
-			i(22833),	-- Elixir of Major Firepower
-			i(32062),	-- Elixir of Major Fortitude
-			i(22827),	-- Elixir of Major Frost Power
-			i(22840),	-- Elixir of Major Mageblood
-			i(22835),	-- Elixir of Major Shadow Power
-			i(22824),	-- Elixir of Major Strength
-			i(28104),	-- Elixir of Mastery
-			i(22830),	-- Elixir of the Searching Eye
-			i(31679),	-- Fel Strength Elixir
-			i(28102),	-- Onslaught Elixir
-		}),
-		category(635, {	-- Flasks
-			i(22861),	-- Flask of Blinding Light
-			-- #if BEFORE 5.0.1.20000
-			applyclassicphase(TBC_PHASE_THREE, i(33208, {	-- Flask of Chromatic Wonder
-				["timeline"] = { "removed 5.0.1.20000" },
-			})),
-			-- #endif
-			i(22851),	-- Flask of Fortification
-			i(22853),	-- Flask of Mighty Versatility
-			i(22866),	-- Flask of Pure Death
-			i(22854),	-- Flask of Relentless Assault
-		}),
-		category(636, {	-- Transmutation
-			i(25867),	-- Earthstorm Diamond
-			i(23571),	-- Primal Might
-			i(25868),	-- Skyfire Diamond
-		}),
-		category(637, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(13503),	-- Alchemist Stone
-			applyclassicphase(TBC_PHASE_FIVE, i(35751)),	-- Assassin's Alchemist Stone
-			applyclassicphase(TBC_PHASE_FIVE, i(35748)),	-- Guardian's Alchemist Stone
-			applyclassicphase(TBC_PHASE_FIVE, i(35750)),	-- Redeemer's Alchemist Stone
-			applyclassicphase(TBC_PHASE_FIVE, i(35749)),	-- Sorcerer's Alchemist Stone
-			-- #if AFTER 3.1.0
-			i(31080),	-- Mercurial Stone
-			-- #endif
-		}),
-		-- #if BEFORE 3.1.0
-		category(644, {	-- Materials
+			applyclassicphase(TBC_PHASE_FIVE, i(35751, {["timeline"] = {ADDED_2_4_0}})),	-- Assassin's Alchemist Stone
+			applyclassicphase(TBC_PHASE_FIVE, i(35748, {["timeline"] = {ADDED_2_4_0}})),	-- Guardian's Alchemist Stone
+			applyclassicphase(TBC_PHASE_FIVE, i(35750, {["timeline"] = {ADDED_2_4_0}})),	-- Redeemer's Alchemist Stone
+			applyclassicphase(TBC_PHASE_FIVE, i(35749, {["timeline"] = {ADDED_2_4_0}})),	-- Sorcerer's Alchemist Stone
 			i(31080),	-- Mercurial Stone
 		}),
-		-- #endif
 	}),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA

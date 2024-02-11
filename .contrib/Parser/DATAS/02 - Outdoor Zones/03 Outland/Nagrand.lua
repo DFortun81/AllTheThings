@@ -1951,6 +1951,7 @@ root(ROOTS.Zones, {
 							}),
 							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
+								["timeline"] = { ADDED_2_1_0 },
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
 								["cost"] = {
@@ -2051,6 +2052,7 @@ root(ROOTS.Zones, {
 							}),
 							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
+								["timeline"] = { ADDED_2_1_0 },
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
 								["cost"] = {

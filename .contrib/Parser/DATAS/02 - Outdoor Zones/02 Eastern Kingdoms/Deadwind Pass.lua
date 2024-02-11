@@ -96,12 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(TBC_PHASE_THREE, i(33124, {["timeline"] = {ADDED_2_2_0}})),	-- Pattern: Cloak of Darkness (RECIPE!)
 						applyclassicphase(TBC_PHASE_THREE, i(33205, {["timeline"] = {ADDED_2_2_0}})),	-- Pattern: Shadowprowler's Chestguard (RECIPE!)
 						applyclassicphase(TBC_PHASE_THREE, i(33209, {	-- Recipe: Flask of Chromatic Wonder (RECIPE!)
-							-- #if BEFORE MOP
-							["spellID"] = 42736,	-- Flask of Chromatic Wonder
-							["requireSkill"] = ALCHEMY,
-							["f"] = RECIPES,
-							-- #endif
-							["timeline"] = { "removed 5.0.1.20000" },
+							["timeline"] = { ADDED_2_2_0, REMOVED_5_0_4 },
 						})),
 						i(29187),	-- Inscription of Endurance
 						-- #if BEFORE CATA

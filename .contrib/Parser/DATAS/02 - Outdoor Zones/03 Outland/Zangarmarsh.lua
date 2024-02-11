@@ -950,32 +950,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(10897, {	-- Master of Potions (2/2)
-						["qg"] = 17909,	-- Lauranna Thar'well <Expedition Cataloguer>
-						["sourceQuest"] = 10905,	-- Master of Potions (1/2)
-						["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
-						["coord"] = { 44.1, 36.6, ZANGARMARSH },
-						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
-						["maps"] = { TEMPEST_KEEP_BOTANICA },
-						["requireSkill"] = ALCHEMY,
-						["altQuests"] = {
-							10902,	-- Master of Elixirs (2/2)
-							--10897,	-- Master of Potions (2/2)
-							10899,	-- Master of Transmutation (2/2)
-						},
-						["cost"] = {
-							{ "i", 22829, 5 },	-- Super Healing Potion
-							{ "i", 22832, 5 },	-- Super Mana Potion
-							{ "i", 22836, 5 },	-- Major Dreamless Sleep Potion
-						},
-						["lvl"] = 68,
-						["groups"] = {
-							objective(1, {	-- 0/1 Botanist's Field Guide
-								["provider"] = { "i", 31744 },	-- Botanist's Field Guide
-								["cr"] = 17975,	-- High Botanist Freywinn
-							}),
-						},
-					}),
 					q(9791, {	-- Menacing Marshfangs [Alliance]
 						["qg"] = 18006,	-- Noraani
 						["coord"] = { 67.6, 47.8, ZANGARMARSH },
@@ -1344,7 +1318,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
-							objective(1, {	-- 0/10 
+							objective(1, {	-- 0/10
 								["provider"] = { "i", 24497 },	-- Feralfen Protection Totem
 								["coord"] = { 45.8, 60.6, ZANGARMARSH },
 								["crs"] = {
@@ -2097,7 +2071,9 @@ root(ROOTS.Zones, {
 							i(31392),	-- Plans: Wildguard Helm (RECIPE!)
 							i(31391),	-- Plans: Wildguard Leggings (RECIPE!)
 							i(25836),	-- Preserver's Cudgel
-							i(32070),	-- Recipe: Earthen Elixir (RECIPE!)
+							i(32070, {	-- Recipe: Earthen Elixir (RECIPE!)
+								["timeline"] = { ADDED_2_1_0 },
+							}),
 							i(31356),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
 							i(22922),	-- Recipe: Major Nature Protection Potion (RECIPE!)
 							i(25869),	-- Recipe: Transmute Earthstorm Diamond (RECIPE!)

@@ -139,11 +139,166 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["timeline"] = { ADDED_4_3_0 },
 			["repeatable"] = true,
 		}, {
-			q(29481),	-- Elixir Master
-			q(29067),	-- Potion Master
-			q(29482),	-- Transmutation Master
+			q(29481, {	-- Elixir Master
+				["g"] = {
+					r(28677, {	-- Elixir Master
+						-- #if NOT ANYCLASSIC
+						["collectible"] = false
+						-- #endif
+					}),
+				},
+			}),
+			q(29067, {	-- Potion Master
+				["g"] = {
+					r(28675, {	-- Potion Master
+						-- #if NOT ANYCLASSIC
+						["collectible"] = false
+						-- #endif
+					}),
+				},
+			}),
+			q(29482, {	-- Transmutation Master
+				["g"] = {
+					r(28672, {	-- Transmutation Master
+						-- #if NOT ANYCLASSIC
+						["collectible"] = false
+						-- #endif
+					}),
+				},
+			}),
 		})),
 	}),
+	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+		q(10906, {	-- Master of Elixirs (1/2)
+			["qgs"] = {
+				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+				18802,	-- Alchemist Gribble <Alchemy Trainer>
+			},
+			["coords"] = {
+				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
+				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
+			},
+			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["altQuests"] = {
+				10905,	-- Master of Potions (1/2)
+				10907,	-- Master of Transmutation (1/2)
+			},
+			["isBreadcrumb"] = true,
+			["lvl"] = 68,
+		}),
+		q(10902, {	-- Master of Elixirs (2/2)
+			["qg"] = 19052,	-- Lorokeem <Master Alchemy Trainer>
+			["sourceQuest"] = 10906,	-- Master of Elixirs (1/2)
+			["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
+			["coord"] = { 45.8, 20.4, SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
+			["altQuests"] = {
+				10897,	-- Master of Potions (2/2)
+				10899,	-- Master of Transmutation (2/2)
+			},
+			["cost"] = {
+				{ "i", 31753, 10 },	-- Essence of Infinity
+				{ "i", 22834, 5 },	-- Elixir of Major Defense
+				{ "i", 28104, 5 },	-- Elixir of Mastery
+				{ "i", 22831, 5 },	-- Elixir of Major Agility
+			},
+			["lvl"] = 68,
+			["g"] = {
+				r(28677, {	-- Elixir Master
+					-- #if NOT ANYCLASSIC
+					["collectible"] = false
+					-- #endif
+				}),
+			},
+		}),
+		q(10905, {	-- Master of Potions (1/2)
+			["qgs"] = {
+				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+				18802,	-- Alchemist Gribble <Alchemy Trainer>
+			},
+			["coords"] = {
+				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
+				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
+			},
+			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["altQuests"] = {
+				10906,	-- Master of Elixirs (1/2)
+				10907,	-- Master of Transmutation (1/2)
+			},
+			["isBreadcrumb"] = true,
+			["lvl"] = 68,
+		}),
+		q(10897, {	-- Master of Potions (2/2)
+			["qg"] = 17909,	-- Lauranna Thar'well <Expedition Cataloguer>
+			["sourceQuest"] = 10905,	-- Master of Potions (1/2)
+			["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
+			["coord"] = { 44.1, 36.6, ZANGARMARSH },
+			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["maps"] = { TEMPEST_KEEP_BOTANICA },
+			["altQuests"] = {
+				10902,	-- Master of Elixirs (2/2)
+				10899,	-- Master of Transmutation (2/2)
+			},
+			["cost"] = {
+				{ "i", 22829, 5 },	-- Super Healing Potion
+				{ "i", 22832, 5 },	-- Super Mana Potion
+				{ "i", 22836, 5 },	-- Major Dreamless Sleep Potion
+			},
+			["lvl"] = 68,
+			["groups"] = {
+				objective(1, {	-- 0/1 Botanist's Field Guide
+					["provider"] = { "i", 31744 },	-- Botanist's Field Guide
+					["cr"] = 17975,	-- High Botanist Freywinn
+				}),
+				r(28675, {	-- Potion Master
+					-- #if NOT ANYCLASSIC
+					["collectible"] = false
+					-- #endif
+				}),
+			},
+		}),
+		q(10907, {	-- Master of Transmutation (1/2)
+			["qgs"] = {
+				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+				18802,	-- Alchemist Gribble <Alchemy Trainer>
+			},
+			["coords"] = {
+				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
+				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
+			},
+			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["requireSkill"] = ALCHEMY,
+			["altQuests"] = {
+				10906,	-- Master of Elixirs (1/2)
+				10905,	-- Master of Potions (1/2)
+			},
+			["isBreadcrumb"] = true,
+			["lvl"] = 68,
+		}),
+		q(10899, {	-- Master of Transmutation (2/2)
+			["qg"] = 22427,	-- Zarevhi
+			["sourceQuest"] = 10907,	-- Master of Transmutation (1/2)
+			["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
+			["coord"] = { 44.1, 36.6, NETHERSTORM },
+			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
+			["altQuests"] = {
+				10902,	-- Master of Elixirs (2/2)
+				10897,	-- Master of Potions (2/2)
+			},
+			["cost"] = {
+				{ "i", 23571, 4 },	-- Primal Might
+			},
+			["lvl"] = 68,
+			["g"] = {
+				r(28672, {	-- Transmutation Master
+					-- #if NOT ANYCLASSIC
+					["collectible"] = false
+					-- #endif
+				}),
+			},
+		}),
+	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(39325, {	-- Get Your Mix On
 			["provider"] = { "n", 92458 },	-- Deucus Valdera

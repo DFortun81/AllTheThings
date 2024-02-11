@@ -838,23 +838,6 @@ root(ROOTS.Zones, {
 							i(30252),	-- Unearthed Enkaat Wand
 						},
 					}),
-					q(10899, {	-- Master of Transmutation (2/2)
-						["qg"] = 22427,	-- Zarevhi
-						["sourceQuest"] = 10907,	-- Master of Transmutation (1/2)
-						["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
-						["coord"] = { 44.1, 36.6, NETHERSTORM },
-						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
-						["requireSkill"] = ALCHEMY,
-						["altQuests"] = {
-							10902,	-- Master of Elixirs (2/2)
-							10897,	-- Master of Potions (2/2)
-							10899,	-- Master of Transmutation (2/2)
-						},
-						["cost"] = {
-							{ "i", 23571, 4 },	-- Primal Might
-						},
-						["lvl"] = 68,
-					}),
 					q(10332, {	-- Master Smith Rhonsus
 						["qg"] = 20463,	-- Apprentice Andrethan
 						["coord"] = { 57.7, 85.2, NETHERSTORM },
