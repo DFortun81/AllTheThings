@@ -358,5 +358,4 @@ RefreshCollections = function()
 end
 end
 
-app.RefreshCollections = app.IsRetail and function() app.StartCoroutine("RefreshingCollections", RefreshCollections) end
-										or function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections); end
+app.RefreshCollections = function() app:StartATTCoroutine("RefreshingCollections", RefreshCollections) end

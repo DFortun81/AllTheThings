@@ -139,15 +139,8 @@ else
 		end
 	end
 end
-local UpdateLocation
-if app.IsClassic then
-	UpdateLocation = function()
-		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
-	end
-else
-	UpdateLocation = function()
-		app.StartCoroutine("UpdateLocation", UpdateLocationCoroutine);
-	end
+local function UpdateLocation()
+	app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
 end
 app.events.ZONE_CHANGED = UpdateLocation;
 app.events.ZONE_CHANGED_INDOORS = UpdateLocation;
