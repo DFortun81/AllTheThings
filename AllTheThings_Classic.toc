@@ -17,14 +17,26 @@ lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 db\RaceDB.lua
-src\base.lua
-lib\Callback.lua
-lib\Colors.lua
+
+# Libs (no dependencies, only app assignment)
+lib\Debugging.lua
+lib\Print.lua
+lib\EventRegistration.lua
 # lib\Runner.lua
-lib\Audio.lua
-lib\Refresh.lua
+lib\Colors.lua
 lib\Sort.lua
 lib\Table.lua
+
+# Dependent Libs (may require another lib)
+lib\Callback.lua
+
+# Base ATT functionalities
+src\base.lua
+src\Events.lua
+
+# Not really a lib concept...
+lib\Refresh.lua
+lib\Audio.lua
 
 # Load localization modules
 # locales\en.lua

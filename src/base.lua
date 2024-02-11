@@ -36,15 +36,6 @@ app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
-app.print = function(...)
-	print(app.L.TITLE, ...);
-end
-app.report = function(...)
-	if ... then
-		app.print(...);
-	end
-	app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
-end
 
 -- External API
 -- TODO: We will use a common API eventually.
@@ -53,69 +44,6 @@ if not _G["ATTC"] then
 end
 if not _G["AllTheThings"] then
 	_G["AllTheThings"] = app;
-end
-
--- Debugging
--- app.Debugging = true;
--- app.DebuggingEvents = true;	-- Do not force debug prints to be linked to all the Event spam
-
--- Consolidated debug-only print with preceding precise timestamp
-local GetTimePreciseSec = GetTimePreciseSec;
-local DEBUG_PRINT_LAST;
-app.PrintDebug = function(...)
-	DEBUG_PRINT_LAST = GetTimePreciseSec();
-	if app.Debugging then print(DEBUG_PRINT_LAST,...) end
-end
--- Consolidated debug-only print with precise frame duration since last successful print
-app.PrintDebugPrior = function(...)
-	if app.Debugging then
-		local now = GetTimePreciseSec();
-		if DEBUG_PRINT_LAST then
-			local diff = now - DEBUG_PRINT_LAST;
-			print(now,"<>",diff,"Stutter @", math.ceil(1 / diff), ...)
-		else
-			print(now,0,...)
-		end
-		DEBUG_PRINT_LAST = GetTimePreciseSec();
-	end
-end
-app.PrintTable = function(t,depth)
-	-- only allowing table prints when Debug print is active
-	if not app.Debugging then return; end
-	if t == nil then print("nil"); return; end
-	if type(t) ~= "table" then print(type(t),t); return; end
-	depth = depth or 0;
-	if depth == 0 then app._PrintTable = {}; end
-	local p = "";
-	for i=1,depth,1 do
-		p = p .. "-";
-	end
-	-- dont accidentally recursively print the same table
-	if not app._PrintTable[t] then
-		app._PrintTable[t] = true;
-		print(p,tostring(t),"__type",t.__type," {");
-		for k,v in pairs(t) do
-			if type(v) == "table" then
-				print(p,k,":");
-				if k == "parent" or k == "sourceParent" then
-					print("SKIPPED")
-				elseif k == "g" then
-					print("#",v and #v)
-				else
-					app.PrintTable(v,depth + 1);
-				end
-			else
-				print(p,k,":",tostring(v))
-			end
-		end
-		if getmetatable(t) then
-			print(p,"__index:");
-			app.PrintTable(getmetatable(t).__index, depth + 1);
-		end
-		print(p,"}");
-	else
-		print(p,tostring(t),"RECURSIVE");
-	end
 end
 
 -- API Functions
@@ -211,65 +139,6 @@ app.CloneReference = CloneReference;
 app.GetRelativeField = GetRelativeField;
 app.GetRelativeValue = GetRelativeValue;
 
--- Declare Custom Event Handlers
-do
-local EventHandlers = setmetatable({
-	OnReady = {},
-	OnRecalculate = {},
-	OnRefreshCollections = {},
-}, {
-	__index = function(t, key)
-		local item = {};
-		rawset(t, key, item);
-		return item;
-	end,
-})
-app.AddEventHandler = function(eventName, handler)
-	if type(handler) ~= "function" then
-		app.print("AddEventHandler was provided a non-function",handler)
-		return
-	end
-	local handlers = EventHandlers[eventName]
-	handlers[#handlers + 1] = handler;
-	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
-end
-app.RemoveEventHandler = function(handler)
-	if type(handler) ~= "function" then
-		app.print("RemoveEventHandler was provided a non-function",handler)
-		return
-	end
-	for eventName,handlers in pairs(EventHandlers) do
-		local count = #handlers
-		local shift = count
-		while shift > 0 do
-			if handler == handlers[shift] then
-				-- app.PrintDebug("Remove Handler",handler,"@",shift,"/",#handlers,"in Event",eventName)
-				break
-			end
-			shift = shift - 1
-		end
-		if shift > 0 then
-			local next = shift + 1
-			while shift < count do
-				handlers[shift] = handlers[next]
-				shift = shift + 1
-				next = next + 1
-			end
-			handlers[#handlers] = nil;
-			-- app.PrintDebug("Handlers",#handlers,"in Event",eventName)
-		-- else app.PrintDebug("Handler",handler,"not in Event",eventName)
-		end
-	end
-end
-app.HandleEvent = function(eventName, ...)
-	-- app.PrintDebug("HandleEvent",eventName)
-	for i,handler in ipairs(EventHandlers[eventName]) do
-		handler(...);
-	end
-	-- app.PrintDebugPrior("HandleEvent")
-end
-end
-
 -- Cache information about the player.
 app.Gender = UnitSex("player");
 app.GUID = UnitGUID("player");
@@ -303,64 +172,6 @@ local raceIndex = app.RaceDB[race] or raceID;
 app.RaceIndex = type(raceIndex) == "table" and raceIndex[factionGroup] or raceIndex;
 app.RaceID = raceID;
 app.Race = race;
-
--- Create an Event Processor.
-local events = setmetatable({}, {
-	-- undefined event handler
-	__index = function(t, key)
-		local unhandledEventFunction = function(...)
-			print("UNHANDLED EVENT",key,...)
-		end
-		t[key] = unhandledEventFunction
-		return unhandledEventFunction
-	end
-});
-local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
-frame.Suffix = "ATTFRAME";
-if app.DebuggingEvents then
-frame:SetScript("OnEvent", function(self, e, ...)
-	app.PrintDebug(e,...);
-	events[e](...);
-	app.PrintDebugPrior(e);
-end);
-else
-frame:SetScript("OnEvent", function(self, e, ...) events[e](...); end);
-end
-frame:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
-frame:SetSize(1, 1);
-frame:Show();
-app.frame = frame;
-app.events = events;
-app.RegisterEvent = function(self, ...)
-	frame:RegisterEvent(...);
-end
--- TODO: could be nice to allow defining the event func at the same time as the Register
--- app.RegisterFuncEvent = function(self, event, func)
--- 	frame:RegisterEvent(event);
--- 	if func then
--- 		app.events[event] = func
--- 	end
--- end
-app.UnregisterEvent = function(self, ...)
-	frame:UnregisterEvent(...);
-end
-app.SetScript = function(self, ...)
-	local scriptName, method = ...;
-	if method then
-		frame:SetScript(scriptName, function(...)
-			method(app, ...);
-		end);
-	else
-		frame:SetScript(scriptName, nil);
-	end
-end
-
--- Simple Events
-app:RegisterEvent("PLAYER_LEVEL_UP");
-app.events.PLAYER_LEVEL_UP = function(newLevel)
-	app.Level = newLevel;
-	app.HandleEvent("OnPlayerLevelUp");
-end
 
 -- Whether ATT should ignore saving data experienced during the play session
 app.IgnoreDataCaching = function()
@@ -409,6 +220,7 @@ end
 -- Extend the Frame Class and give them ATT-Style Coroutines and Tooltips!
 local coroutineStack = {};
 local tinsert, tremove = tinsert, tremove;
+local frame = app.frame
 local function OnCoroutineUpdate()
 	for i=#coroutineStack,1,-1 do
 		if not coroutineStack[i][3]() then
@@ -473,8 +285,15 @@ end
 local frameClass = getmetatable(frame).__index;
 frameClass.SetATTTooltip = SetATTTooltip;
 frameClass.StartATTCoroutine = StartATTCoroutine;
-app.StartATTCoroutine = function(self, ...)
-	StartATTCoroutine(frame, ...);
+if app.IsRetail then
+	local StartCoroutine = app.StartCoroutine
+	app.StartATTCoroutine = function(self, ...)
+		StartCoroutine(...);
+	end
+else
+	app.StartATTCoroutine = function(self, ...)
+		StartATTCoroutine(frame, ...);
+	end
 end
 
 local button = CreateFrame("BUTTON", nil, frame);

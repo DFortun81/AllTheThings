@@ -1,5 +1,7 @@
 
 -- Callback Lib
+-- Dependencies: lib/EventRegistration
+
 local _, app = ...;
 
 -- Global locals
