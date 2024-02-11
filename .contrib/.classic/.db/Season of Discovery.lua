@@ -81,8 +81,7 @@ local OnTooltipFor_ACA_SDL = [[function(t)
 	end
 end]];
 local OnUpdateFor_ACA_SDL = [[function(t)
-	local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
-	t.minReputation = { t.factionID, (season == 2 and ]] .. HONORED .. [[) or (season == 3 and ]] .. REVERED .. [[) or ]] .. EXALTED .. [[; };
+	t.minReputation = { t.factionID, (_.GameBuildVersion == 11500 and ]] .. HONORED .. [[) or (_.GameBuildVersion == 11501 and ]] .. REVERED .. [[) or ]] .. EXALTED .. [[; };
 end]];
 
 local AZEROTH_COMMERCE_AUTHORITY_VENDORS = {	-- Azeroth Commerce Authority
@@ -1183,6 +1182,13 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["repeatable"] = true,
 					["lvl"] = 18,
 				}),
+				q(80307, {	-- A Full Shipment [iLvl 40 - Gathered]
+					["provider"] = { "i", 217337 },	-- Supply Shipment [iLvl 40 - Gathered]
+					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
+					["description"] = "Grants 700 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 28,
+				}),
 				q(79102, {	-- A Full Shipment [iLvl 25 - Crafted (Tier 1)]
 					["provider"] = { "i", 211840 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
@@ -1197,21 +1203,21 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["repeatable"] = true,
 					["lvl"] = 25,
 				}),
-				q(80307, {	-- A Full Shipment [iLvl 30 - Gathered]
-					["provider"] = { "i", 217337 },	-- Supply Shipment [iLvl 30 - Gathered]
-					-- TODO: ["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-					-- TODO: ["description"] = "Grants 800 reputation.",
+				q(80308, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 3)]
+					["provider"] = { "i", 217338 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
+					["description"] = "Grants 850 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 35,
+				}),
+				q(80309, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 4)]
+					["provider"] = { "i", 217339 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
+					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
+					["description"] = "Grants 1000 reputation.",
 					["repeatable"] = true,
 					["lvl"] = 40,
 				}),
-				q(80308, {	-- A Full Shipment [iLvl 30 - Crafted (Tier 3)]
-					["provider"] = { "i", 217338 },	-- Supply Shipment [iLvl 30 - Crafted (Tier 2)]
-					-- TODO: ["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-					-- TODO: ["description"] = "Grants 800 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 40,
-				}),
-				-- TODO: These were only in Phase 1, in Phase 2 you can only hand in full shipments (but you can carry multiple empty ones)
+				-- These were only in Phase 1, in Phase 2 you can only hand in full shipments (but you can carry multiple empty ones)
 				q(79100, {	-- A Waylaid Shipment [iLvl 10]
 					["providers"] = {
 						{ "i", 211331 },	-- Waylaid Supplies: Brilliant Smallfish
@@ -1238,6 +1244,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
 					["description"] = "Grants 100 reputation.",
+					["timeline"] = { "added 1.15.0", "removed 1.15.1" },
 					["repeatable"] = true,
 					["lvl"] = 8,
 				}),
@@ -1267,6 +1274,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
 					["description"] = "Grants 200 reputation.",
+					["timeline"] = { "added 1.15.0", "removed 1.15.1" },
 					["repeatable"] = true,
 					["lvl"] = 15,
 				}),
@@ -1438,47 +1446,79 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 				}),
 
-				-- iLvl 30 - Crafted Supplies (Tier 3)
+				-- iLvl 40 - Crafted Supplies (Tier 3)
 				i(215402, { -- Waylaid Supplies: Big Iron Bombs
 					["cost"] = { { "i", 4394, 8 } },	-- Big Iron Bomb
 					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
 				i(215403, { -- Waylaid Supplies: Deadly Scopes
 					["cost"] = { { "i", 10546, 4 } },	-- Deadly Scopes
 					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
 				i(215413, { -- Waylaid Supplies: Formal White Shirts
 					["cost"] = { { "i", 4334, 3 } },	-- Formal White Shirts
 					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
 				i(215411, { -- Waylaid Supplies: Frost Leather Cloaks
 					["cost"] = { { "i", 7377, 3 } },	-- Frost Leather Cloaks
 					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
 				i(215398, { -- Waylaid Supplies: Green Iron Bracers
 					["cost"] = { { "i", 3835, 5 } },	-- Green Iron Bracers
 					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
 				i(215408, { -- Waylaid Supplies: Guardian Gloves
 					["cost"] = { { "i", 5966, 6 } },	-- Guardian Gloves
 					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
 				i(215400, { -- Waylaid Supplies: Solid Grinding Stones
 					["cost"] = { { "i", 7966, 10 } },	-- Solid Grinding Stones
 					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
+				
+				-- iLvl 40 - Crafted Supplies (Tier 4)
+				i(215396, { -- Waylaid Supplies: Elixirs of Greater Defense
+					["cost"] = { { "i", 8951, 14 } },	-- Elixir of Greater Defense
+					["groups"] = {
+						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
+					},
+				}),
+				i(215397, { -- Waylaid Supplies: Massive Iron Axes
+					["cost"] = { { "i", 3855, 2 } },	-- Massive Iron Axe
+					["groups"] = {
+						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
+					},
+				}),
+				i(215404, { -- Waylaid Supplies: Mithril Blunderbuss
+					["cost"] = { { "i", 10508, 2 } },	-- Mithril Blunderbuss
+					["groups"] = {
+						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
+					},
+				}),
+				i(215416, { -- Waylaid Supplies: White Bandit Masks
+					["cost"] = { { "i", 10008, 4 } },	-- White Bandit Mask
+					["groups"] = {
+						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
+					},
+				}),
+				i(215409, { -- Waylaid Supplies: Turtle Scale Bracers
+					["cost"] = { { "i", 8198, 3 } },	-- Turtle Scale Bracers
+					["groups"] = {
+						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				}),
 			}),
@@ -1611,35 +1651,35 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 				}),
 
-				-- iLvl 30 - Gathering Supplies
-				i(215389, {-- Waylaid Supplies: Fadeleaf
+				-- iLvl 40 - Gathering Supplies
+				i(215389, {	-- Waylaid Supplies: Fadeleaf
 					["cost"] = { { "i", 3818, 16 } },	-- Fadeleaf
 					["groups"] = {
-						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				}),
-				i(215421, { -- Waylaid Supplies: Fire Oil
+				i(215421, {	-- Waylaid Supplies: Fire Oil
 					["cost"] = { { "i", 6371, 10 } },	-- Fire Oil
 					["groups"] = {
-						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				}),
-				i(215387, {-- Waylaid Supplies: Heavy Hide
+				i(215387, {	-- Waylaid Supplies: Heavy Hide
 					["cost"] = { { "i", 4235, 5 } },	-- Heavy Hide
 					["groups"] = {
-						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				}),
-				i(215420, { -- Waylaid Supplies: Rockscale Cod
+				i(215420, {	-- Waylaid Supplies: Rockscale Cod
 					["cost"] = { { "i", 4594, 40 } },	-- Rockscale Cod
 					["groups"] = {
-						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				}),
-				i(215391, {-- Waylaid Supplies: Wintersbite
+				i(215391, {	-- Waylaid Supplies: Wintersbite
 					["cost"] = { { "i", 3819, 20 } },	-- Wintersbite
 					["groups"] = {
-						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				}),
 			}),
