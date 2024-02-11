@@ -40,10 +40,11 @@ setmetatable(TierInfoByID, {
 				name = tostring(tierID).."."..tostring(patch).."."..tostring(rev),
 			}, { __index = TierInfoByID[tierID] });
 		else
-			info = setmetatable({tierID=tierID}, { __index = GetTierInfoMeta });
-			-- copy raw data from locale
-			for k,v in pairs(TIER_DATA[tierID]) do
-				info[k] = v
+			-- We want to use the same reference table from the locales if possible
+			info = TIER_DATA[tierID] or { name = GetTierName(tierID) };
+			info.tierID = tierID;
+			if not info.name then
+				setmetatable(info, {__index = GetTierInfoMeta });
 			end
 		end
 		t[patchID] = info
