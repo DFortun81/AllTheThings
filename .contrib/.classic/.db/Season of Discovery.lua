@@ -1196,6 +1196,21 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["repeatable"] = true,
 					["lvl"] = 25,
 				}),
+				q(80307, {	-- A Full Shipment [iLvl 30 - Gathered]
+					["provider"] = { "i", 217337 },	-- Supply Shipment [iLvl 30 - Gathered]
+					-- TODO: ["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+					-- TODO: ["description"] = "Grants 800 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 40,
+				}),
+				q(80308, {	-- A Full Shipment [iLvl 30 - Crafted (Tier 3)]
+					["provider"] = { "i", 217338 },	-- Supply Shipment [iLvl 30 - Crafted (Tier 2)]
+					-- TODO: ["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+					-- TODO: ["description"] = "Grants 800 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 40,
+				}),
+				-- TODO: These were only in Phase 1, in Phase 2 you can only hand in full shipments (but you can carry multiple empty ones)
 				q(79100, {	-- A Waylaid Shipment [iLvl 10]
 					["providers"] = {
 						{ "i", 211331 },	-- Waylaid Supplies: Brilliant Smallfish
@@ -1421,6 +1436,50 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
+
+				-- iLvl 30 - Crafted Supplies (Tier 3)
+				i(215402, { -- Waylaid Supplies: Big Iron Bombs
+					["cost"] = { { "i", 4394, 8 } },	-- Big Iron Bomb
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+					},
+				}),
+				i(215403, { -- Waylaid Supplies: Deadly Scopes
+					["cost"] = { { "i", 10546, 4 } },	-- Deadly Scopes
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+					},
+				}),
+				i(215413, { -- Waylaid Supplies: Formal White Shirts
+					["cost"] = { { "i", 4334, 3 } },	-- Formal White Shirts
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+					},
+				}),
+				i(215411, { -- Waylaid Supplies: Frost Leather Cloaks
+					["cost"] = { { "i", 7377, 3 } },	-- Frost Leather Cloaks
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+					},
+				}),
+				i(215398, { -- Waylaid Supplies: Green Iron Bracers
+					["cost"] = { { "i", 3835, 5 } },	-- Green Iron Bracers
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+					},
+				}),
+				i(215408, { -- Waylaid Supplies: Guardian Gloves
+					["cost"] = { { "i", 5966, 6 } },	-- Guardian Gloves
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+					},
+				}),
+				i(215400, { -- Waylaid Supplies: Solid Grinding Stones
+					["cost"] = { { "i", 7966, 10 } },	-- Solid Grinding Stones
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 30 - Crafted (Tier 3)]
+					},
+				}),
 			}),
 			n(createHeader({	-- Gathering
 				readable = "Gathering",
@@ -1548,6 +1607,38 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["cost"] = { { "i", 2452, 20 } },	-- Swiftthistle
 					["groups"] = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+
+				-- iLvl 30 - Gathering Supplies
+				i(215389, {-- Waylaid Supplies: Fadeleaf
+					["cost"] = { { "i", 3818, 16 } },	-- Fadeleaf
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+					},
+				}),
+				i(215421, { -- Waylaid Supplies: Fire Oil
+					["cost"] = { { "i", 6371, 10 } },	-- Fire Oil
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+					},
+				}),
+				i(215387, {-- Waylaid Supplies: Heavy Hide
+					["cost"] = { { "i", 4235, 5 } },	-- Heavy Hide
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+					},
+				}),
+				i(215420, { -- Waylaid Supplies: Rockscale Cod
+					["cost"] = { { "i", 4594, 40 } },	-- Rockscale Cod
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
+					},
+				}),
+				i(215391, {-- Waylaid Supplies: Wintersbite
+					["cost"] = { { "i", 3819, 20 } },	-- Wintersbite
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 30 - Gathered]
 					},
 				}),
 			}),
