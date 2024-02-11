@@ -8,8 +8,8 @@ local _, app = ...;
 -- Capability to add to and run a sequence of Functions with a specific allotment being processed individually each frame
 
 -- Global locals
-local wipe, math_max, tonumber, unpack, coroutine, type, select, tremove, tinsert, pcall, C_Timer_After =
-	  wipe, math.max, tonumber, unpack, coroutine, type, select, tremove, tinsert, pcall,  C_Timer.After;
+local wipe, math_max, tonumber, unpack, coroutine, type, select, tremove, pcall, C_Timer_After =
+	  wipe, math.max, tonumber, unpack, coroutine, type, select, tremove, pcall,  C_Timer.After;
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
