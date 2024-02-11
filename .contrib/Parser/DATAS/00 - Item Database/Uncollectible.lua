@@ -28,8 +28,6 @@ i(127768);	-- Fel Petal
 i(37431);	-- Fetch Ball
 i(116984);	-- Frost Wyrm Egg
 i(44618);	-- Glass of Aged Dalaran Red
-i(179006);	-- Glowing Endmire Dust
-i(178175);	-- Gooey Sap
 i(18269);	-- Gordok Green Grog
 i(153188);	-- Greater Blessed Bandage
 i(19296);	-- Greater Darkmoon Prize
@@ -58,7 +56,6 @@ i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
 i(43352);	-- Pet Grooming Kit
-i(179004);	-- Polished Silver Tithe
 i(33448);	-- Runic Mana Potion
 i(165699);	-- Scarlet Herring Lure
 i(116411);	-- Scroll of Protection
@@ -66,7 +63,6 @@ i(116410);	-- Scroll of Speed
 i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
-i(179308);	-- Shadeskin Brandy Phial
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(118905);	-- Sinister Spores
@@ -310,9 +306,18 @@ i(123865);	-- Relic of Ursol
 -- PATCH 9.0.1 --
 -----------------
 --- Trash ---
+i(180286);	-- Broken Fishing Pole
+i(179006);	-- Glowing Endmire Dust
+i(178175);	-- Gooey Sap
+i(177026);	-- Lost Earring
 i(169821);	-- Ogre Effigy
 i(174790);	-- Overseer's Mandate
+i(179004);	-- Polished Silver Tithe
+i(177028);	-- Rusty Chain
 i(175242);	-- Waterlogged Supplies
+--- Common ---
+i(180168);	-- Oribobber
+i(179308);	-- Shadeskin Brandy Phial
 
 -----------------
 -- PATCH 9.0.2 --

@@ -2456,7 +2456,6 @@ root(ROOTS.Unsorted, {
 				i(180890),	-- Bloodstained Gambrel
 				i(181281),	-- Boss 10 Lure
 				i(178543),	-- Broiled Blood Sausage
-				i(180286),	-- Broken Fishing Pole
 				i(176810),	-- Centurion Core
 				i(177035),	-- Colored Liquid Set
 				i(172496),	-- Conduit Keystone
@@ -2517,7 +2516,6 @@ root(ROOTS.Unsorted, {
 				i(183808),	-- Leashed Construct
 				i(182188),	-- Lesser Phial of Serenity
 				i(169823),	-- Lordaeron Coin
-				i(177026),	-- Lost Earring
 				i(181388),	-- Lush Marrowroot
 				i(178088),	-- Maldraxxus Unique Loot
 				i(180509),	-- Mane Hair Harp
@@ -2534,7 +2532,6 @@ root(ROOTS.Unsorted, {
 				i(183795),	-- Notice of Special Delivery
 				i(174363),	-- Old Empty Bottle
 				i(177039),	-- Olive-Stuffed Barbouni
-				i(180168),	-- Oribobber
 				i(177278),	-- Phial of Serenity
 				i(181247),	-- Pointy Stick
 				i(180887),	-- Preserved Organ
@@ -2545,7 +2542,6 @@ root(ROOTS.Unsorted, {
 				i(171310),	-- Ring of Stonebound Control
 				i(180354),	-- Ripped Stuffing
 				i(182299),	-- Ruined Carapace
-				i(177028),	-- Rusty Chain
 				i(183046),	-- Serrated Inking Spines
 				i(183187),	-- Shadeweaver Incantation
 				i(180350),	-- Simple Stone Loop
