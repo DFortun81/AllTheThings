@@ -125,6 +125,7 @@ end
 local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 	readable = "Season of Discovery",
 	icon = "Interface\\Icons\\inv_misc_map_01",
+	constant = "SEASON_OF_DISCOVERY",
 	text = {
 		en = "Season of Discovery",
 		es = "Temporada de Descubrimiento",

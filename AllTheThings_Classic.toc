@@ -147,6 +147,7 @@ src\UI\Windows\Random.lua
 src\UI\Windows\Removed From Game.lua
 src\UI\Windows\Removed With Patch Drops.lua
 src\UI\Windows\Removed With Patch Loot.lua
+src\UI\Windows\Season of Discovery.lua
 src\UI\Windows\Soft Reserves.lua
 src\UI\Windows\Sync.lua
 src\UI\Windows\Titles.lua
