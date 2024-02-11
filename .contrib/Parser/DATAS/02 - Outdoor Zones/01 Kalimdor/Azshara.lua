@@ -2211,6 +2211,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #IF AFTER SHADOWLANDS
+				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
+					["coord"] = { 29.4, 66.1, AZSHARA },
+					["timeline"] = { "added 4.0.1.12984" },
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
+				-- #ENDIF
 				n(36365, {	-- Zoey Wizzlespark <Xylem's Apprentice>
 					["coord"] = { 55.8, 12.0, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },

@@ -5016,6 +5016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #IF BEFORE SHADOWLANDS
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
 					["coord"] = { 36.2, 83.2, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
@@ -5029,6 +5030,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #ENDIF
 			}),
 		},
 	}),
