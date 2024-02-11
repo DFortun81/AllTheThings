@@ -1400,9 +1400,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["groups"] = {
 					i(LOVE_TOKEN),
 					i(210658),	-- Discarded Perfume Bottle
-					i(210416),	-- Formula: Intoxicating Toxic Perfume (QI!)
-					i(210413),	-- Map of Shadowfang Keep Security (QI)
-					i(210417),	-- Memo from Apothecary Hummel (QI!) [book]
+					o(410998, {	-- Formula: Intoxicating Toxic Perfume
+						i(210416),	-- Formula: Intoxicating Toxic Perfume (QI!)
+					}),
+					o(410994, {	-- Map of Shadowfang Keep Security
+						i(210413),	-- Map of Shadowfang Keep Security (QI!)
+					}),
+					o(410999, {	-- Memo from Apothecary Hummel
+						i(210417),	-- Memo from Apothecary Hummel (QI!) [book]
+					}),
 					i(213091),	-- Memo from Apothecary Hummel [book] (awared to player after turn in this quest)
 					i(210332),	-- O.D.I.E.'s Remote Control (QI!)
 				},
