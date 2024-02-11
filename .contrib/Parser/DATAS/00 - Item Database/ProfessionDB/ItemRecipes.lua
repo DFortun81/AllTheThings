@@ -5,26 +5,6 @@
 -- Ex: Goblin Engineering, Gnomish Engineering, etc.
 
 -----------------
-local i = GetRecipeHelperForProfession(ALCHEMY);
------------------
--- #IF AFTER CLASSIC
-i(13492, 17572); -- Recipe: Purification Potion
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
-i(6454, 7935); -- Manual: Strong Anti-Venom
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
 i = GetRecipeHelperForProfession(COOKING);
 -----------------
 -- #IF AFTER CLASSIC

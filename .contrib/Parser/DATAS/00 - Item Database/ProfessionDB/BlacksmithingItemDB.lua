@@ -14,6 +14,14 @@ i(0, 429348);		-- Shifting Silver Breastplate
 --- ITEM ---
 i(211846, 430397);	-- Blackfathom Sharpening Stone
 i(210779, 427061);	-- Mantle of the Second War
+
+------------------
+-- PATCH 1.15.1 --
+------------------
+--- ITEM ---
+i(215384, 435910);	-- Low-Background Truesilver Plates
+i(215383, 435906);	-- Reflective Truesilver Braincage
+i(215155, 435908);	-- Tempered Interference-Negating Helmet
 -- #endif
 
 -----------------

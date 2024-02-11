@@ -124,6 +124,10 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(108996),	-- Alchemical Catalyst
 			i(109123),	-- Crescent Oil
 			i(128159, {["timeline"] = {ADDED_6_2_0}}),	-- Elemental Distillate
+			i(113264, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Air
+			i(113263, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Earth
+			i(113261, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Fire
+			i(113262, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Water
 			i(128158, {["timeline"] = {ADDED_6_2_0}}),	-- Wildswater
 		}),
 		filter(TRINKET_F, {

@@ -3459,9 +3459,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		}),
 		-- #endif
 		prof(ALCHEMY, {
-			-- #if AFTER 8.0.1.10000
-			i(6454),	-- Manual: Strong Anti-Venom
-			-- #endif
+			i(6454, {	-- Manual: Strong Anti-Venom
+				["timeline"] = { ADDED_8_0_1 },
+			}),
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
 			i(9297),	-- Recipe: Elixir of Dream Vision (RECIPE!)
 			i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
@@ -3648,11 +3648,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 2.0.3", "deleted 4.0.1" },	-- Taught by trainer
 			}),
 		}),
-		-- #if BEFORE 8.0.1.10000
 		prof(FIRST_AID, {
-			i(6454),	-- Manual: Strong Anti-Venom
+			i(6454, {	-- Manual: Strong Anti-Venom
+				["timeline"] = { REMOVED_8_0_1 },
+			}),
 		}),
-		-- #endif
 		applyclassicphase(TBC_PHASE_ONE, prof(JEWELCRAFTING, {
 			i(20976),	-- Design: Citrine Pendant of Golden Healing
 			i(21953),	-- Design: Emerald Owl

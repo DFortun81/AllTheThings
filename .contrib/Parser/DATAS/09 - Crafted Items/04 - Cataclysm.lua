@@ -3,28 +3,62 @@
 ---------------------------------------------
 root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
+		filter(CONSUMABLES, {
+			i(65460),	-- Big Cauldron of Battle
+			i(62288),	-- Cauldron of Battle
+			i(58142),	-- Deathblood Venom
+			i(67415),	-- Draught of War
+			i(58090),	-- Earthen Potion
+			i(58093),	-- Elixir of Deep Earth
+			i(58094),	-- Elixir of Impossible Accuracy
+			i(58144),	-- Elixir of Mighty Speed
+			i(58092),	-- Elixir of the Cobra
+			i(58148),	-- Elixir of the Master
+			i(58089),	-- Elixir of the Naga
+			i(58149, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Flask of Enhancement
+			i(67438),	-- Flask of Flowing Water
+			i(58085),	-- Flask of Steelskin
+			i(58086),	-- Flask of the Draconic Mind
+			i(58087),	-- Flask of the Winds
+			i(58088),	-- Flask of Titanic Strength
+			i(58084),	-- Ghost Elixir
+			i(58146),	-- Golemblood Potion
+			i(57193),	-- Mighty Rejuvenation Potion
+			i(57099),	-- Mysterious Potion
+			i(57191),	-- Mythical Healing Potion
+			i(57192),	-- Mythical Mana Potion
+			i(57194),	-- Potion of Concentration
+			i(58487),	-- Potion of Deepholm
+			i(58489),	-- Potion of Illusion
+			i(58145),	-- Potion of the Tol'vir
+			i(58488),	-- Potion of Treasure Finding
+			i(58143),	-- Prismatic Elixir
+			i(58091),	-- Volcanic Potion
+		}),
 		filter(MOUNTS, {
 			i(65891),	-- Sandstone Drake (MOUNT!)
 		}),
-		i(58488, {	-- Potion of Treasure Finding
-			i(67539, {	-- Tiny Treasure Chest
-			--[[
-				i(53010),	-- Embersilk Cloth
-				i(52183),	-- Pyrite Ore
-				i(52185),	-- Elementium Ore
-				i(52328),	-- Volatile Air
-				i(52327),	-- Volatile Earth
-				i(52326),	-- Volatile Water
-				i(52325),	-- Volatile Fire
-				i(52329),	-- Volatile Life
-			--]]
-			}),
+		filter(REAGENTS, {
+			i(56850),	-- Deepstone Oil
+			i(52195),	-- Amberjewel
+			i(52194),	-- Demonseye
+			i(52192),	-- Dream Emerald
+			i(52193),	-- Ember Topaz
+			i(52190),	-- Inferno Ruby
+			i(52191),	-- Ocean Sapphire
+			i(51950),	-- Pyrium Bar
+			i(52303),	-- Shadowspirit Diamond
+			i(58480),	-- Truegold
+			i(52328),	-- Volatile Air
+			i(52327),	-- Volatile Earth
+			i(52325),	-- Volatile Fire
+			i(52326),	-- Volatile Water
 		}),
 		filter(TRINKET_F, {
 			i(58483),	-- Lifebound Alchemist Stone
-			i(68776),	-- Quicksilver Alchemist Stone
-			i(68777),	-- Vibrant Alchemist Stone
-			i(68775),	-- Volatile Alchemist Stone
+			i(68776, {["timeline"] = {ADDED_4_0_6}}),	-- Quicksilver Alchemist Stone
+			i(68777, {["timeline"] = {ADDED_4_0_6}}),	-- Vibrant Alchemist Stone
+			i(68775, {["timeline"] = {ADDED_4_0_6}}),	-- Volatile Alchemist Stone
 		}),
 	}),
 	prof(BLACKSMITHING, {

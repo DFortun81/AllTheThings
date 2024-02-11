@@ -1494,15 +1494,6 @@ root(ROOTS.Zones, {
 							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
-					applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
-						["qg"] = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
-						["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
-						["requireSkill"] = ALCHEMY,
-						["repeatable"] = true,
-						["groups"] = {
-							recipe(66659),	-- Transmute: Cardinal Ruby
-						},
-					})),
 					{	-- Cheese for Glowergold
 						["allianceQuestData"] = q(13103, {	-- Cheese for Glowergold [A]
 							["qg"] = 28705,	-- Katherine Lee

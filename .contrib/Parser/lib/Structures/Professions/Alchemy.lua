@@ -21,22 +21,12 @@ APPRENTICE_JOURNEYMAN_ALCHEMY = {
 		["rank"] = 2,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264211, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Alchemy
-	--[[ Later
-	r(63732, {	-- Elixir of Minor Accuracy
-			["timeline"] = { ADDED_3_0_1 },
-		}),
-	-- #if AFTER 8.0.1
-	-- Moved from First Aid with BFA.
-	--cat(1124, {	-- Anti-Venoms
-	--	r(7934),	-- Anti-Venom
-	--	r(7935),	-- Strong Anti-Venom
-	--}),
-	-- #endif
-	--]]
 	filter(CONSUMABLES, {
+		r(7934, {["timeline"] = {ADDED_8_0_1}}),	-- Anti-Venom
 		r(3177),	-- Elixir of Defense
 		r(7845),	-- Elixir of Firepower
 		r(2329),	-- Elixir of Lion's Strength
+		r(63732, {["timeline"] = {ADDED_3_1_0}}),	-- Elixir of Minor Accuracy
 		r(7183),	-- Elixir of Minor Defense
 		r(2334),	-- Elixir of Minor Fortitude
 		r(7179),	-- Elixir of Water Breathing
@@ -87,12 +77,6 @@ EXPERT_ARTISAN_ALCHEMY = {
 		-- #endif
 		["rank"] = 4,
 	}),
-	-- #if AFTER 8.0.1
-	-- Moved from First Aid with BFA.
-	cat(1124, {	-- Anti-Venoms
-		r(23787),	-- Powerful Anti-Venom
-	}),
-	-- #endif
 	filter(CONSUMABLES, {
 		r(11461),	-- Arcane Elixir
 		r(12609),	-- Catseye Elixir
@@ -159,7 +143,7 @@ TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 			r(38070),	-- Mercurial Stone
 		}),
 	}));
---[[ WRATH_ALCHEMY = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+WRATH_ALCHEMY = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
 	r(51304, {	-- Alchemy (Grand Master)
 		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -168,112 +152,51 @@ TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 		["rank"] = 6,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264220, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Alchemy
-	cat(627, {	-- Elixirs
-		r(60354),	-- Elixir of Accuracy
-		r(60365),	-- Elixir of Armor Piercing
-		r(60355),	-- Elixir of Deadly Strikes
-		r(60357),	-- Elixir of Expertise
-		r(60366),	-- Elixir of Lightning Speed
+	r(53042, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Mixology
+	r(60893),	-- Northrend Alchemy Research
+	filter(CONSUMABLES, {
 		r(53840),	-- Elixir of Mighty Agility
-		r(60356),	-- Elixir of Mighty Defense
 		r(53898),	-- Elixir of Mighty Fortitude
-		r(56519),	-- Elixir of Mighty Mageblood
 		r(54218),	-- Elixir of Mighty Strength
 		r(60367),	-- Elixir of Mighty Thoughts
-		r(54220),	-- Elixir of Protection
-		r(53847),	-- Elixir of Spirit
-		r(62410),	-- Elixir of Water Walking
-		r(53848),	-- Guru's Elixir
-		r(53842),	-- Spellpower Elixir
-		r(53841),	-- Wrath Elixir
-	}),
-	cat(628, {	-- Flasks
+		r(60357),	-- Elixir of Versatility[Legion+] / Elixir of Spirit
+		r(58871),	-- Endless Healing Potion
+		r(58868),	-- Endless Mana Potion
 		r(53903),	-- Flask of Endless Rage
 		r(54213),	-- Flask of Pure Mojo
 		r(53902),	-- Flask of Stoneblood
 		r(53901),	-- Flask of the Frost Wyrm
-		r(67025, {	-- Flask of the North
-			["timeline"] = { REMOVED_5_0_4 },
-		}),
-		r(53899),	-- Lesser Flask of Toughness
-		r(62213, {	-- Lesser Flask of Resistance
-			["timeline"] = { REMOVED_5_0_4 },
-		}),
-	}),
-	cat(631, {	-- Oils
-		r(62409),	-- Ethereal Oil
-		r(53812),	-- Pygmy Oil
-	}),
-	cat(626, {	-- Potions
-		r(53895),	-- Crazy Alchemist's Potion
-		r(58871),	-- Endless Healing Potion
-		r(58868),	-- Endless Mana Potion
+		r(67025, {["timeline"] = {ADDED_3_2_0, REMOVED_5_0_4}}),	-- Flask of the North
+		r(53848),	-- Guru's Elixir
 		r(53839),	-- Icy Mana Potion
 		r(53905),	-- Indestructible Potion
-		r(53936),	-- Mighty Arcane Protection Potion
-		r(53939),	-- Mighty Fire Protection Potion
-		r(53937),	-- Mighty Frost Protection Potion
-		r(53942),	-- Mighty Nature Protection Potion
-		r(53938),	-- Mighty Shadow Protection Potion
+		r(62213, {["timeline"] = {ADDED_3_0_8, REMOVED_5_0_4}}),	-- Lesser Flask of Resistance
+		r(53899),	-- Lesser Flask of Toughness
 		r(53900),	-- Potion of Nightmares
-		r(54221),	-- Potion of Speed
-		r(54222),	-- Potion of Wild Magic
-		r(53904),	-- Powerful Rejuvenation Potion
 		r(53838),	-- Resurgent Healing Potion
 		r(53836),	-- Runic Healing Potion
 		r(53837),	-- Runic Mana Potion
+		r(53842),	-- Spellpower Elixir
+		r(53841),	-- Wrath Elixir
 	}),
-	cat(625, {	-- Research
-		r(60893, {	-- Northrend Alchemy Research
-			["groups"] = {
-				r(53895),	-- Crazy Alchemist's Potion
-				r(60354),	-- Elixir of Accuracy
-				r(60365),	-- Elixir of Armor Piercing
-				r(60355),	-- Elixir of Deadly Strikes
-				r(60357),	-- Elixir of Expertise
-				r(60366),	-- Elixir of Lightning Speed
-				r(60356),	-- Elixir of Mighty Defense
-				r(56519),	-- Elixir of Mighty Mageblood
-				r(54220),	-- Elixir of Protection
-				r(62410),	-- Elixir of Water Walking
-				r(54221),	-- Potion of Speed
-				r(54222),	-- Potion of Wild Magic
-				r(53904),	-- Powerful Rejuvenation Potion
-			},
-		}),
-	}),
-	cat(629, {	-- Transmutation
+	filter(REAGENTS, {
+		r(62409, {["timeline"] = {ADDED_3_0_8}}),	-- Ethereal Oil
+		r(53812),	-- Pygmy Oil
+		applyclassicphase(WRATH_PHASE_THREE, r(66658, {["timeline"] = {ADDED_3_2_0}})),	-- Transmute: Ametrine
 		r(57427),	-- Transmute: Earthsiege Diamond
-		r(53777),	-- Transmute: Eternal Air to Earth
-		r(53776),	-- Transmute: Eternal Air to Water
-		r(53781),	-- Transmute: Eternal Earth to Air
-		r(53782),	-- Transmute: Eternal Earth to Shadow
-		r(53775),	-- Transmute: Eternal Fire to Life
-		r(53774),	-- Transmute: Eternal Fire to Water
-		r(53773),	-- Transmute: Eternal Life to Fire
-		r(53771),	-- Transmute: Eternal Life to Shadow
-		r(53779),	-- Transmute: Eternal Shadow to Earth
-		r(53780),	-- Transmute: Eternal Shadow to Life
-		r(53783),	-- Transmute: Eternal Water to Air
-		r(53784),	-- Transmute: Eternal Water to Fire
+		applyclassicphase(WRATH_PHASE_THREE, r(66662, {["timeline"] = {ADDED_3_2_0}})),	-- Transmute: Dreadstone
+		applyclassicphase(WRATH_PHASE_THREE, r(66664, {["timeline"] = {ADDED_3_2_0}})),	-- Transmute: Eye of Zul
+		applyclassicphase(WRATH_PHASE_THREE, r(66660, {["timeline"] = {ADDED_3_2_0}})),	-- Transmute: King's Amber
+		applyclassicphase(WRATH_PHASE_THREE, r(66663, {["timeline"] = {ADDED_3_2_0}})),	-- Transmute: Majestic Zircon
 		r(57425),	-- Transmute: Skyflare Diamond
 		r(60350),	-- Transmute: Titanium
-		applyclassicphase(WRATH_PHASE_THREE, {
-			r(66658),	-- Transmute: Ametrine
-			r(66659),	-- Transmute: Cardinal Ruby
-			r(66662),	-- Transmute: Dreadstone
-			r(66664),	-- Transmute: Eye of Zul
-			r(66660),	-- Transmute: King's Amber
-			r(66663),	-- Transmute: Majestic Zircon
-		}),
 	}),
-	cat(630, {	-- Trinkets
+	filter(TRINKET_F, {
 		r(60403),	-- Indestructible Alchemist Stone
 		r(60396),	-- Mercurial Alchemist Stone
 		r(60405),	-- Mighty Alchemist Stone
 	}),
 }));
-]]--
 CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	r(80731, {	-- Alchemy (Illustrious)
 		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -293,7 +216,7 @@ CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(80484),	-- Elixir of the Cobra
 		r(80497),	-- Elixir of the Master
 		r(80480),	-- Elixir of the Naga
-		r(80724, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_5_0_4}}),	-- Flask of Enhancement
+		r(80724, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Flask of Enhancement
 		r(94162),	-- Flask of Flowing Water
 		r(80719),	-- Flask of Steelskin
 		r(80720),	-- Flask of the Draconic Mind
@@ -329,9 +252,9 @@ CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	}),
 	filter(TRINKET_F, {
 		r(80508),	-- Lifebound Alchemist Stone
-		r(96253),	-- Quicksilver Alchemist Stone
-		r(96254),	-- Vibrant Alchemist Stone
-		r(96252),	-- Volatile Alchemist Stone
+		r(96253, {["timeline"] = {ADDED_4_0_6}}),	-- Quicksilver Alchemist Stone
+		r(96254, {["timeline"] = {ADDED_4_0_6}}),	-- Vibrant Alchemist Stone
+		r(96252, {["timeline"] = {ADDED_4_0_6}}),	-- Volatile Alchemist Stone
 	}),
 }));
 MOP_ALCHEMY = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {

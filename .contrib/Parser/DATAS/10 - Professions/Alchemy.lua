@@ -299,6 +299,26 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 	})),
+	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_0 } }, {
+		applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
+			["qg"] = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
+			["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
+			["repeatable"] = true,
+			["groups"] = {
+				r(66659),	-- Transmute: Cardinal Ruby (RECIPE!)
+			},
+		})),
+	})),
+	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 } }, {
+		q(30597, {	-- Strange Spherical Stone
+			["provider"] = { "i", 80240 },	-- Strange Spherical Stone
+			["maps"] = { PANDARIA },
+			["cost"] = {{ "i", 72238, 3 }},	-- 3x Golden Lotus
+			["g"] = {
+				i(75274),	-- Zen Alchemist Stone
+			},
+		}),
+	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(39325, {	-- Get Your Mix On
 			["provider"] = { "n", 92458 },	-- Deucus Valdera

@@ -19,10 +19,10 @@ i(215163, 435971);	-- Mildly Irradiated Rejuvenation Potion
 --   CLASSIC   --
 -----------------
 --- TRAINER ---
-i(0, 2259);			-- Alchemy (Apprentice) [REMOVED 8.0.1]
-i(0, 3101);			-- Alchemy (Journeyman) [REMOVED 8.0.1]
-i(0, 3464);			-- Alchemy (Expert) [REMOVED 8.0.1]
-i(0, 11611);		-- Alchemy (Artisan) [REMOVED 8.0.1]
+i(0, 2259);			-- Alchemy (Apprentice) [REMOVED: 8.0.1]
+i(0, 3101);			-- Alchemy (Journeyman) [REMOVED: 8.0.1]
+i(0, 3464);			-- Alchemy (Expert) [REMOVED: 8.0.1]
+i(0, 11611);		-- Alchemy (Artisan) [REMOVED: 8.0.1]
 i(0, 11461);		-- Arcane Elixir
 i(0, 7836);			-- Blackmouth Oil
 i(0, 12609);		-- Catseye Elixir
@@ -59,7 +59,7 @@ i(0, 11457);		-- Superior Healing Potion
 i(0, 7841);			-- Swim Speed Potion
 i(0, 3170);			-- Weak Troll's Blood Elixir
 --- ITEM ---
-i(4597, 4508);		-- Discolored Healing Potion [REMOVED 4.0.3]
+i(4597, 4508);		-- Discolored Healing Potion [REMOVED: 4.0.3]
 i(13481, 17557);	-- Elixir of Brute Force [TRAINER: 4.0.3]
 i(9300, 11477);		-- Elixir of Demonslaying
 i(3832, 3453);		-- Elixir of Detect Lesser Invisibility
@@ -77,10 +77,10 @@ i(13478, 17554);	-- Elixir of Superior Defense
 i(13491, 17571);	-- Elixir of the Mongoose
 i(13479, 17555);	-- Elixir of the Sages [TRAINER: 4.0.3]
 i(6055, 7257);		-- Fire Protection Potion
-i(13522, 17638);	-- Flask of Chromatic Resistance [REMOVED 5.0.4, See 2.0.5]
+i(13522, 17638);	-- Flask of Chromatic Resistance [REMOVED: 5.0.4, See 2.0.5]
 i(13520, 17636);	-- Flask of Distilled Wisdom [See 2.0.5]
-i(13519, 17635);	-- Flask of the Titans [REMOVED 6.0.2, See 2.0.5]
-i(13521, 17637);	-- Flask of Supreme Power [REMOVED 5.0.4, See 2.0.5]
+i(13519, 17635);	-- Flask of the Titans [REMOVED: 6.0.2, See 2.0.5]
+i(13521, 17637);	-- Flask of Supreme Power [REMOVED: 5.0.4, See 2.0.5]
 i(5642, 6624);		-- Free Action Potion
 i(14634, 3454);		-- Frost Oil
 i(6056, 7258);		-- Frost Protection Potion
@@ -148,7 +148,7 @@ i(13500, 17579);	-- Greater Holy Protection Potion
 -- PATCH 2.0.5 --
 -----------------
 --- TRAINER ---
-i(0, 28596);		-- Alchemy (Master) [REMOVED 8.0.1]
+i(0, 28596);		-- Alchemy (Master) [REMOVED: 8.0.1]
 i(0, 28677);		-- Elixir Master
 i(0, 28675);		-- Potion Master
 i(0, 28672);		-- Transmutation Master
@@ -205,7 +205,7 @@ i(29232, 32766);	-- Transmute: Skyfire Diamond [H]
 --- DISCOVERY ---
 i(0, 28590);		-- Flask of Blinding Light
 i(0, 28587);		-- Flask of Fortification
-i(0, 28588);		-- Flask of Mighty Versatility / Flask of Mighty Restoration
+i(0, 28588);		-- Flask of Mighty Versatility[Legion+] / Flask of Mighty Restoration
 i(0, 28591);		-- Flask of Pure Death
 i(0, 28589);		-- Flask of Relentless Assault
 i(0, 28586);		-- Super Rejuvenation Potion
@@ -245,6 +245,8 @@ i(33209, 42736);	-- Flask of Chromatic Wonder [REMOVED: 5.0.4]
 -----------------
 --- TRAINER ---
 i(0, 45061);		-- Mad Alchemist's Potion
+--- NYI ---
+i(34481, 0);		-- Recipe: Mad Alchemist's Potion
 
 -----------------
 -- PATCH 2.4.0 --
@@ -252,254 +254,252 @@ i(0, 45061);		-- Mad Alchemist's Potion
 --- ITEM ---
 i(35755, 47050);	-- Assassin's Alchemist Stone
 i(35752, 47046);	-- Guardian's Alchemist Stone
-i(35295, 28564);	-- Haste Potion (BoP Version)
+i(35295, 28564);	-- Haste Potion
 i(35754, 47049);	-- Redeemer's Alchemist Stone
 i(35753, 47048);	-- Sorcerer's Alchemist Stone
 
 -----------------
--- PATCH 3.0.1 --
------------------
--- TRAINER --
-i(0, 51304);	-- Alchemy (Grand Master) [REMOVED 8.0.1]
-i(0, 54218);	-- Elixir of Mighty Strength
-i(0, 53848);	-- Guru's Elixir
-i(0, 60893);	-- Northrend Alchemy Research
--- DISCOVERY --
-i(0, 53777);	-- Transmute: Eternal Air to Earth
-i(0, 53776);	-- Transmute: Eternal Air to Water
-i(0, 53781);	-- Transmute: Eternal Earth to Air
-i(0, 53782);	-- Transmute: Eternal Earth to Shadow
-i(0, 53775);	-- Transmute: Eternal Fire to Life
-i(0, 53774);	-- Transmute: Eternal Fire to Water
-i(0, 53773);	-- Transmute: Eternal Life to Fire
-i(0, 53771);	-- Transmute: Eternal Life to Shadow
-i(0, 53779);	-- Transmute: Eternal Shadow to Earth
-i(0, 53780);	-- Transmute: Eternal Shadow to Life
-i(0, 53783);	-- Transmute: Eternal Water to Air
-i(0, 53784);	-- Transmute: Eternal Water to Fire
-
------------------
 -- PATCH 3.0.2 --
 -----------------
--- TRAINER --
-i(0, 53840);	-- Elixir of Mighty Agility
-i(0, 53898);	-- Elixir of Mighty Fortitude
-i(0, 60367);	-- Elixir of Mighty Thoughts
-i(0, 53847);	-- Elixir of Versatility / Elixir of Spirit (7.0.3)
-i(0, 58871);	-- Endless Healing Potion
-i(0, 58868);	-- Endless Mana Potion
-i(0, 53903);	-- Flask of Endless Rage
-i(0, 54213);	-- Flask of Pure Mojo
-i(0, 53902);	-- Flask of Stoneblood
-i(0, 53901);	-- Flask of the Frost Wyrm
-i(0, 53839);	-- Icy Mana Potion
-i(0, 60403);	-- Indestructible Alchemist Stone
-i(0, 53899);	-- Lesser Flask of Toughness
-i(0, 60396);	-- Mercurial Alchemist Stone
-i(0, 60405);	-- Mighty Alchemist Stone
-i(0, 53042);	-- Mixology
-i(0, 53900);	-- Potion of Nightmares
-i(0, 53812);	-- Pygmy Oil
-i(0, 53838);	-- Resurgent Healing Potion
-i(0, 53836);	-- Runic Healing Potion
-i(0, 53837);	-- Runic Mana Potion
-i(0, 53842);	-- Spellpower Elixir
-i(0, 57427);	-- Transmute: Earthsiege Diamond
-i(0, 57425);	-- Transmute: Skyflare Diamond
-i(0, 60350);	-- Transmute: Titanium
-i(0, 53841);	-- Wrath Elixir
--- DISCOVERY --
-i(0, 53895);	-- Crazy Alchemist's Potion
-i(0, 60354);	-- Elixir of Accuracy
-i(0, 60365);	-- Elixir of Armor Piercing
-i(0, 60355);	-- Elixir of Deadly Strikes
-i(0, 60357);	-- Elixir of Expertise / Elixir of Mighty Intellect
-i(0, 60366);	-- Elixir of Lightning Speed
-i(0, 60356);	-- Elixir of Mighty Defense
-i(0, 56519);	-- Elixir of Mighty Mageblood
-i(0, 54220);	-- Elixir of Protection
-i(0, 54221);	-- Potion of Speed
-i(0, 54222);	-- Potion of Wild Magic
-i(0, 53904);	-- Powerful Rejuvenation Potion
--- NYI --
-i(0, 54020);	-- Transmute: Eternal Might
-i(0, 53846);	-- Unknown
+--- NYI ---
+i(0, 54020);		-- Transmute: Eternal Might
+i(0, 53846);		-- Unknown
 
 -----------------
 -- PATCH 3.0.3 --
 -----------------
--- TRAINER --
-i(0, 53905);	-- Indestructible Potion
--- ITEM --
+--- TRAINER ---
+i(0, 51304);		-- Alchemy (Grand Master) [REMOVED: 8.0.1]
+i(0, 53042);		-- Mixology
+i(0, 60893);		-- Northrend Alchemy Research
+i(0, 53840);		-- Elixir of Mighty Agility
+i(0, 53898);		-- Elixir of Mighty Fortitude
+i(0, 54218);		-- Elixir of Mighty Strength
+i(0, 60367);		-- Elixir of Mighty Thoughts
+i(0, 53847);		-- Elixir of Versatility[Legion+] / Elixir of Spirit
+i(0, 58871);		-- Endless Healing Potion
+i(0, 58868);		-- Endless Mana Potion
+i(0, 53903);		-- Flask of Endless Rage
+i(0, 54213);		-- Flask of Pure Mojo
+i(0, 53902);		-- Flask of Stoneblood
+i(0, 53901);		-- Flask of the Frost Wyrm
+i(0, 53848);		-- Guru's Elixir
+i(0, 53839);		-- Icy Mana Potion
+i(0, 60403);		-- Indestructible Alchemist Stone
+i(0, 53905);		-- Indestructible Potion
+i(0, 53899);		-- Lesser Flask of Toughness
+i(0, 60396);		-- Mercurial Alchemist Stone
+i(0, 60405);		-- Mighty Alchemist Stone
+i(0, 53900);		-- Potion of Nightmares
+i(0, 53812);		-- Pygmy Oil
+i(0, 53838);		-- Resurgent Healing Potion
+i(0, 53836);		-- Runic Healing Potion
+i(0, 53837);		-- Runic Mana Potion
+i(0, 53842);		-- Spellpower Elixir
+i(0, 57427);		-- Transmute: Earthsiege Diamond
+i(0, 57425);		-- Transmute: Skyflare Diamond
+i(0, 60350);		-- Transmute: Titanium
+i(0, 53841);		-- Wrath Elixir
+--- ITEM ---
 i(44564, 53936);	-- Mighty Arcane Protection Potion
 i(44565, 53939);	-- Mighty Fire Protection Potion
 i(44566, 53937);	-- Mighty Frost Protection Potion
 i(44567, 53942);	-- Mighty Nature Protection Potion
 i(44568, 53938);	-- Mighty Shadow Protection Potion
+--- DISCOVERY ---
+i(0, 53895);		-- Crazy Alchemist's Potion
+i(0, 60354);		-- Elixir of Accuracy
+i(0, 60365);		-- Elixir of Armor Piercing
+i(0, 60355);		-- Elixir of Deadly Strikes
+i(0, 60366);		-- Elixir of Lightning Speed
+i(0, 60356);		-- Elixir of Mighty Defense
+i(0, 60357);		-- Elixir of Mighty Intellect[10.1.7+] / Elixir of Expertise
+i(0, 56519);		-- Elixir of Mighty Mageblood
+i(0, 54220);		-- Elixir of Protection
+i(0, 54221);		-- Potion of Speed
+i(0, 54222);		-- Potion of Wild Magic
+i(0, 53904);		-- Powerful Rejuvenation Potion
+i(0, 53777);		-- Transmute: Eternal Air to Earth
+i(0, 53776);		-- Transmute: Eternal Air to Water
+i(0, 53781);		-- Transmute: Eternal Earth to Air
+i(0, 53782);		-- Transmute: Eternal Earth to Shadow
+i(0, 53775);		-- Transmute: Eternal Fire to Life
+i(0, 53774);		-- Transmute: Eternal Fire to Water
+i(0, 53773);		-- Transmute: Eternal Life to Fire
+i(0, 53771);		-- Transmute: Eternal Life to Shadow
+i(0, 53779);		-- Transmute: Eternal Shadow to Earth
+i(0, 53780);		-- Transmute: Eternal Shadow to Life
+i(0, 53783);		-- Transmute: Eternal Water to Air
+i(0, 53784);		-- Transmute: Eternal Water to Fire
 
 -----------------
 -- PATCH 3.0.8 --
 -----------------
--- TRAINER --
-i(0, 62409);	-- Ethereal Oil
-i(0, 62213);	-- Lesser Flask of Resistance [REMOVED 5.0.4]
--- DISCOVERY --
-i(0, 62410);	-- Elixir of Water Walking
+--- TRAINER ---
+i(0, 62409);		-- Ethereal Oil
+i(0, 62213);		-- Lesser Flask of Resistance [REMOVED: 5.0.4]
+--- DISCOVERY ---
+i(0, 62410);		-- Elixir of Water Walking
 
 -----------------
 -- PATCH 3.1.0 --
 -----------------
--- TRAINER --
-i(0, 63732);	-- Elixir of Minor Accuracy
+--- TRAINER ---
+i(0, 63732);		-- Elixir of Minor Accuracy
 
 -----------------
 -- PATCH 3.2.0 --
 -----------------
--- TRAINER --
-i(0, 67025);	-- Flask of the North [REMOVED 5.0.4]
--- QUEST --
-i(0, 66658);	-- Transmute: Ametrine
-i(0, 66659);	-- Transmute: Cardinal Ruby
-i(0, 66662);	-- Transmute: Dreadstone
-i(0, 66664);	-- Transmute: Eye of Zul
-i(0, 66660);	-- Transmute: King's Amber
-i(0, 66663);	-- Transmute: Majestic Zircon
+--- TRAINER ---
+i(0, 67025);		-- Flask of the North [REMOVED: 5.0.4]
+i(0, 66658);		-- Transmute: Ametrine
+i(0, 66662);		-- Transmute: Dreadstone
+i(0, 66664);		-- Transmute: Eye of Zul
+i(0, 66660);		-- Transmute: King's Amber
+i(0, 66663);		-- Transmute: Majestic Zircon
+--- QUEST ---
+i(0, 66659);		-- Transmute: Cardinal Ruby
 
 -----------------
 -- PATCH 4.0.3 --
 -----------------
--- TRAINER --
-i(0, 80731);	-- Alchemy (Illustrious) [REMOVED 8.0.1]
-i(0, 80479);	-- Deathblood Venom
-i(0, 80486);	-- Deepstone Oil
-i(0, 93935);	-- Draught of War
-i(0, 80478);	-- Earthen Potion
-i(0, 80488);	-- Elixir of Deep Earth
-i(0, 80491);	-- Elixir of Impossible Accuracy
-i(0, 80493);	-- Elixir of Mighty Speed
-i(0, 80484);	-- Elixir of the Cobra
-i(0, 80497);	-- Elixir of the Master
-i(0, 80480);	-- Elixir of the Naga
-i(0, 80724);	-- Flask of Enhancement
-i(0, 94162);	-- Flask of Flowing Water
-i(0, 80719);	-- Flask of Steelskin
-i(0, 80720);	-- Flask of the Draconic Mind
-i(0, 80721);	-- Flask of the Winds
-i(0, 80723);	-- Flask of Titanic Strength
-i(0, 80477);	-- Ghost Elixir
-i(0, 80496);	-- Golemblood Potion
-i(0, 80508);	-- Lifebound Alchemist Stone
-i(0, 80490);	-- Mighty Rejuvenation Potion
-i(0, 80487);	-- Mysterious Potion
-i(0, 80498);	-- Mythical Healing Potion
-i(0, 80494);	-- Mythical Mana Potion
-i(0, 80482);	-- Potion of Concentration
-i(0, 80725);	-- Potion of Deepholm
-i(0, 80269);	-- Potion of Illusion
-i(0, 80495);	-- Potion of the Tol'vir
-i(0, 80726);	-- Potion of Treasure Finding
-i(0, 80492);	-- Prismatic Elixir
-i(0, 80247);	-- Transmute: Amberjewel
-i(0, 80248);	-- Transmute: Demonseye
-i(0, 80251);	-- Transmute: Dream Emerald
-i(0, 80250);	-- Transmute: Ember Topaz
-i(0, 80245);	-- Transmute: Inferno Ruby
-i(0, 78866);	-- Transmute: Living Elements
-i(0, 80246);	-- Transmute: Ocean Sapphire
-i(0, 80244);	-- Transmute: Pyrium Bar
-i(0, 80237);	-- Transmute: Shadowspirit Diamond
-i(0, 80243);	-- Transmute: Truegold
-i(0, 80481);	-- Volcanic Potion
--- ITEM --
+--- TRAINER ---
+i(0, 80731);		-- Alchemy (Illustrious) [REMOVED: 8.0.1]
+i(0, 80479);		-- Deathblood Venom
+i(0, 80486);		-- Deepstone Oil
+i(0, 93935);		-- Draught of War
+i(0, 80478);		-- Earthen Potion
+i(0, 80488);		-- Elixir of Deep Earth
+i(0, 80491);		-- Elixir of Impossible Accuracy
+i(0, 80493);		-- Elixir of Mighty Speed
+i(0, 80484);		-- Elixir of the Cobra
+i(0, 80497);		-- Elixir of the Master
+i(0, 80480);		-- Elixir of the Naga
+i(0, 80724);		-- Flask of Enhancement [REMOVED: 5.0.4]
+i(0, 94162);		-- Flask of Flowing Water
+i(0, 80719);		-- Flask of Steelskin
+i(0, 80720);		-- Flask of the Draconic Mind
+i(0, 80721);		-- Flask of the Winds
+i(0, 80723);		-- Flask of Titanic Strength
+i(0, 80477);		-- Ghost Elixir
+i(0, 80496);		-- Golemblood Potion
+i(0, 80508);		-- Lifebound Alchemist Stone
+i(0, 80490);		-- Mighty Rejuvenation Potion
+i(0, 80487);		-- Mysterious Potion
+i(0, 80498);		-- Mythical Healing Potion
+i(0, 80494);		-- Mythical Mana Potion
+i(0, 80482);		-- Potion of Concentration
+i(0, 80725);		-- Potion of Deepholm
+i(0, 80269);		-- Potion of Illusion
+i(0, 80495);		-- Potion of the Tol'vir
+i(0, 80726);		-- Potion of Treasure Finding
+i(0, 80492);		-- Prismatic Elixir
+i(0, 80247);		-- Transmute: Amberjewel
+i(0, 80248);		-- Transmute: Demonseye
+i(0, 80251);		-- Transmute: Dream Emerald
+i(0, 80250);		-- Transmute: Ember Topaz
+i(0, 80245);		-- Transmute: Inferno Ruby
+i(0, 78866);		-- Transmute: Living Elements
+i(0, 80246);		-- Transmute: Ocean Sapphire
+i(0, 80244);		-- Transmute: Pyrium Bar
+i(0, 80237);		-- Transmute: Shadowspirit Diamond
+i(0, 80243);		-- Transmute: Truegold
+i(0, 80481);		-- Volcanic Potion
+--- ITEM ---
 i(65498, 92688);	-- Big Cauldron of Battle
 i(65435, 92643);	-- Cauldron of Battle
 i(67538, 93328);	-- Vial of the Sands
--- NYI --
-i(0, 85621);	-- Alchemy Tarot
+--- NYI ---
+i(0, 85621);		-- Alchemy Tarot
 
 -----------------
 -- PATCH 4.0.6 --
 -----------------
--- TRAINER --
-i(0, 96253);	-- Quicksilver Alchemist Stone
-i(0, 96254);	-- Vibrant Alchemist Stone
-i(0, 96252);	-- Volatile Alchemist Stone
--- NYI --
-i(0, 101823);	-- Unknown
-i(0, 101824);	-- Unknown
-i(0, 101825);	-- Unknown
-i(0, 101826);	-- Unknown
-i(0, 101827);	-- Unknown
-i(0, 101828);	-- Unknown
+--- TRAINER ---
+i(0, 96253);		-- Quicksilver Alchemist Stone
+i(0, 96254);		-- Vibrant Alchemist Stone
+i(0, 96252);		-- Volatile Alchemist Stone
+
+-----------------
+-- PATCH 4.3.0 --
+-----------------
+--- NYI ---
+i(71955, 101826);	-- Transmute: Deepholm Iolite
+i(71956, 101828);	-- Transmute: Elven Peridot
+i(71958, 101827);	-- Transmute: Lava Coral
+i(71957, 101825);	-- Transmute: Lightstone
+i(71960, 101823);	-- Transmute: Queen's Garnet
+i(71959, 101824);	-- Transmute: Shadow Spinel
 
 -----------------
 -- PATCH 5.0.4 --
 -----------------
--- TRAINER --
-i(0, 114786);	-- Alchemist's Flask
-i(0, 114751);	-- Alchemist's Rejuvenation
-i(0, 105206);	-- Alchemy (Zen Master) [REMOVED 8.0.1]
-i(0, 114752);	-- Master Healing Potion
--- DISCOVERY --
-i(0, 114774);	-- Darkwater Potion
-i(0, 114761);	-- Desecrated Oil
-i(0, 114763);	-- Elixir of Mirrors
-i(0, 114764);	-- Elixir of Peace
-i(0, 114762);	-- Elixir of Perfection
-i(0, 114759);	-- Elixir of the Rapids
-i(0, 114756);	-- Elixir of Weaponry
-i(0, 114772);	-- Flask of Falling Leaves
-i(0, 114769);	-- Flask of Spring Blossoms
-i(0, 114770);	-- Flask of the Earth
-i(0, 114771);	-- Flask of the Warm Sun
-i(0, 114773);	-- Flask of Winter's Bite
-i(0, 114754);	-- Mad Hozen Elixir
-i(0, 114755);	-- Mantid Elixir
-i(0, 114775);	-- Master Mana Potion
-i(0, 114758);	-- Monk's Elixir
-i(0, 114782);	-- Potion of Focus
-i(0, 114779);	-- Potion of Luck
-i(0, 114760);	-- Potion of Mogu Power
-i(0, 114757);	-- Potion of the Jade Serpent
-i(0, 114753);	-- Potion of the Mountains
-i(0, 130326);	-- Riddle of Steel
-i(0, 114777);	-- Transmute: Imperial Amethyst
-i(0, 114780);	-- Transmute: Living Steel
-i(0, 114781);	-- Transmute: Primal Diamond
-i(0, 114784);	-- Transmute: Primordial Ruby
-i(0, 114766);	-- Transmute: River's Heart
-i(0, 114778);	-- Transmute: Sun's Radiance
-i(0, 114783);	-- Transmute: Trillium Bar
-i(0, 114776);	-- Transmute: Vermilion Onyx
-i(0, 114767);	-- Transmute: Wild Jade
-i(0, 114765);	-- Virmen's Bite
+--- TRAINER ---
+i(0, 105206);		-- Alchemy (Zen Master) [REMOVED: 8.0.1]
+i(0, 114786);		-- Alchemist's Flask
+i(0, 114751);		-- Alchemist's Rejuvenation
+i(0, 114752);		-- Master Healing Potion
+--- DISCOVERY ---
+i(0, 114774);		-- Darkwater Potion
+i(0, 114761);		-- Desecrated Oil
+i(0, 114763);		-- Elixir of Mirrors
+i(0, 114764);		-- Elixir of Peace
+i(0, 114762);		-- Elixir of Perfection
+i(0, 114759);		-- Elixir of the Rapids
+i(0, 114756);		-- Elixir of Weaponry
+i(0, 114772);		-- Flask of Falling Leaves
+i(0, 114769);		-- Flask of Spring Blossoms
+i(0, 114770);		-- Flask of the Earth
+i(0, 114771);		-- Flask of the Warm Sun
+i(0, 114773);		-- Flask of Winter's Bite
+i(0, 114754);		-- Mad Hozen Elixir
+i(0, 114755);		-- Mantid Elixir
+i(0, 114775);		-- Master Mana Potion
+i(0, 114758);		-- Monk's Elixir
+i(0, 114782);		-- Potion of Focus
+i(0, 114779);		-- Potion of Luck
+i(0, 114760);		-- Potion of Mogu Power
+i(0, 114757);		-- Potion of the Jade Serpent
+i(0, 114753);		-- Potion of the Mountains
+i(0, 130326);		-- Riddle of Steel
+i(0, 114777);		-- Transmute: Imperial Amethyst
+i(0, 114780);		-- Transmute: Living Steel
+i(0, 114781);		-- Transmute: Primal Diamond
+i(0, 114784);		-- Transmute: Primordial Ruby
+i(0, 114766);		-- Transmute: River's Heart
+i(0, 114778);		-- Transmute: Sun's Radiance
+i(0, 114783);		-- Transmute: Trillium Bar
+i(0, 114776);		-- Transmute: Vermilion Onyx
+i(0, 114767);		-- Transmute: Wild Jade
+i(0, 114765);		-- Virmen's Bite
 
 -----------------
 -- PATCH 5.2.0 --
 -----------------
 --- TRAINER ---
-i(0, 136197);	-- Zen Alchemist Stone
+i(0, 136197);		-- Zen Alchemist Stone
 
 -----------------
 -- PATCH 6.0.2 --
 -----------------
 --- NYI ---
 i(0, 168042);		-- Alchemical Catalyst
-i(0, 156588);		-- Alchemical Catalyst - Fireweed
-i(0, 156589);		-- Alchemical Catalyst - Flytrap
-i(0, 156593);		-- Alchemical Catalyst - Lotus
-i(0, 156592);		-- Alchemical Catalyst - Orchid
-i(0, 156590);		-- Alchemical Catalyst - Starflower
 i(0, 156586);		-- Alchemist's Cauldron
 i(0, 156567);		-- Draenor Armor Flask
-i(0, 156562);		-- UNUSED
-i(0, 156565);		-- UNUSED
-i(0, 156566);		-- UNUSED
-i(0, 156570);		-- UNUSED
-i(0, 156573);		-- UNUSED
-i(0, 156574);		-- UNUSED
-i(0, 156575);		-- UNUSED
-i(0, 156583);		-- UNUSED
+i(0, 156566);		-- Draenor Spirit Flask
+i(0, 156575);		-- Greater Draenor Armor Flask
+i(0, 156574);		-- Greater Draenor Spirit Flask
+i(0, 156583);		-- Draenor Treasure Finding Potion
+i(112049, 156588);	-- Alchemical Catalyst - Fireweed
+i(112050, 156589);	-- Alchemical Catalyst - Flytrap
+i(112054, 156593);	-- Alchemical Catalyst - Lotus
+i(112053, 156592);	-- Alchemical Catalyst - Orchid
+i(112051, 156590);	-- Alchemical Catalyst - Starflower
+i(112025, 156562);	-- Draenor Haste Flask
+i(113625, 156565);	-- Draenor Versatility Flask
+i(112032, 156570);	-- Greater Draenor Haste Flask
+i(113626, 156573);	-- Greater Draenor Versatility Flask
+i(112052 ,0);		-- Alchemical Catalyst - Arrowbloom
 i(112043, 0);		-- Draenic Mana Potion
 i(120132, 0);		-- Secrets of Draenor Alchemy
 
@@ -569,9 +569,9 @@ i(128160, 188674);	-- Wildswater
 -----------------
 -- PATCH 7.0.3 --
 -----------------
--- TRAINER --
+--- TRAINER ---
 i(0, 195095);		-- Alchemy (Legion) [REMOVED 8.0.1]
--- ITEM --
+--- ITEM ---
 i(127898, 188297);	-- Ancient Healing Potion [Rank 1]
 i(127917, 188299);	-- Ancient Healing Potion [Rank 2]
 i(127935, 188300);	-- Ancient Healing Potion [Rank 3]
@@ -666,7 +666,7 @@ i(151703, 247688);	-- Tears of the Naaru [Rank 1]
 i(151704, 247690);	-- Tears of the Naaru [Rank 2]
 i(151705, 247691);	-- Tears of the Naaru [Rank 3]
 i(151710, 247701);	-- Transmute: Primal Sargerite
--- NYI --
+--- NYI ---
 i(0, 251660);		-- Unknown
 i(0, 251661);		-- Unknown
 i(0, 251662);		-- Unknown
@@ -741,7 +741,7 @@ i(0, 251808);		-- Transmute: Meat to Pet
 i(0, 251310);		-- Transmute: Ore to Cloth
 i(0, 251311);		-- Transmute: Ore to Gems
 i(0, 251309);		-- Transmute: Ore to Herbs
--- ITEM --
+--- ITEM ---
 i(163314, 279161);	-- Battle Potion of Agility [Rank 3] (A)
 i(163313, 279161);	-- Battle Potion of Agility [Rank 3] (H)
 i(163316, 279164);	-- Battle Potion of Intellect [Rank 3] (A)
@@ -784,17 +784,15 @@ i(162128, 252336);	-- Steelskin Potion [Rank 3] (A)
 i(162691, 252336);	-- Steelskin Potion [Rank 3] (H)
 i(162139, 252381);	-- Surging Alchemist Stone [Rank 3] (A)
 i(162702, 252381);	-- Surging Alchemist Stone [Rank 3] (H)
--- #if AFTER 8.0.1
--- * means done
+--- First Aid Migration ---
 i(0, 7934);			-- Anti-Venom
-i(160663, 172540);	-- Healing Tonic*
-i(160661, 172542);	-- Fire Ammonite Oil*
+i(160663, 172540);	-- Healing Tonic
+i(160661, 172542);	-- Fire Ammonite Oil
 i(6454, 7935);		-- Strong Anti-Venom
 i(19442, 23787);	-- Powerful Anti-Venom
-i(160662, 172541);	-- Blackwater Anti-Venom*
-i(160664, 221690);	-- Silvery Salve*
--- #endif
--- NYI --
+i(160662, 172541);	-- Blackwater Anti-Venom
+i(160664, 221690);	-- Silvery Salve
+--- NYI ---
 i(0, 252365);		-- Unknown
 i(0, 252366);		-- Unknown
 i(0, 252367);		-- Unknown
@@ -886,9 +884,9 @@ i(169497, 298743);	-- Superior Battle Potion of Intellect [Rank 3]
 i(169498, 298749);	-- Superior Battle Potion of Stamina [Rank 3]
 i(169499, 298752);	-- Superior Battle Potion of Strength [Rank 3]
 i(169496, 298736);	-- Superior Steelskin Potion [Rank 3]
--- NYI --
-i(0, 298737);		-- Potion of Reconstitution
-i(0, 298738);		-- Potion of Reconstitution
+--- NYI ---
+i(0, 298737);		-- Potion of Reconstitution [Rank 1]
+i(0, 298738);		-- Potion of Reconstitution [Rank 2]
 i(169493, 298740);	-- Recipe: Potion of Reconstitution [Rank 3]
 i(169601, 298740);	-- Recipe: Potion of Reconstitution [Rank 3]
 

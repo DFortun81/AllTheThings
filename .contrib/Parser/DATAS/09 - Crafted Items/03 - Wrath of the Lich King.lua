@@ -3,16 +3,63 @@
 ---------------------------------------------
 root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 	prof(ALCHEMY, {
-		category(633, {	-- Potions
+		n(DISCOVERY, {
+			spell(60893, {	-- Northrend Alchemy Research
+				r(53895),	-- Crazy Alchemist's Potion
+				r(60354),	-- Elixir of Accuracy
+				r(60365),	-- Elixir of Armor Piercing
+				r(60355),	-- Elixir of Deadly Strikes
+				r(60366),	-- Elixir of Lightning Speed
+				r(60356),	-- Elixir of Mighty Defense
+				r(60357),	-- Elixir of Mighty Intellect[10.1.7+] / Elixir of Expertise
+				r(56519),	-- Elixir of Mighty Mageblood
+				r(54220),	-- Elixir of Protection
+				r(62410, {["timeline"] = {ADDED_3_0_8}}),	-- Elixir of Water Walking
+				r(54221),	-- Potion of Speed
+				r(54222),	-- Potion of Wild Magic
+				r(53904),	-- Powerful Rejuvenation Potion
+				r(53777),	-- Transmute: Eternal Air to Earth
+				r(53776),	-- Transmute: Eternal Air to Water
+				r(53781),	-- Transmute: Eternal Earth to Air
+				r(53782),	-- Transmute: Eternal Earth to Shadow
+				r(53775),	-- Transmute: Eternal Fire to Life
+				r(53774),	-- Transmute: Eternal Fire to Water
+				r(53773),	-- Transmute: Eternal Life to Fire
+				r(53771),	-- Transmute: Eternal Life to Shadow
+				r(53779),	-- Transmute: Eternal Shadow to Earth
+				r(53780),	-- Transmute: Eternal Shadow to Life
+				r(53783),	-- Transmute: Eternal Water to Air
+				r(53784),	-- Transmute: Eternal Water to Fire
+			}),
+		}),
+		filter(CONSUMABLES, {
 			i(40077),	-- Crazy Alchemist's Potion
-			i(43569, {	-- Endless Healing Potion
-				["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
-			}),
-			i(43570, {	-- Endless Mana Potion
-				["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
-			}),
+			i(44325),	-- Elixir of Accuracy
+			i(44330),	-- Elixir of Armor Piercing
+			i(44327),	-- Elixir of Deadly Strikes
+			i(44331),	-- Elixir of Lightning Speed
+			i(39666),	-- Elixir of Mighty Agility
+			i(44328),	-- Elixir of Mighty Defense
+			i(40078),	-- Elixir of Mighty Fortitude
+			i(44329),	-- Elixir of Mighty Intellect[10.1.7+] / Elixir of Expertise
+			i(40109),	-- Elixir of Mighty Mageblood
+			i(40073),	-- Elixir of Mighty Strength
+			i(44332),	-- Elixir of Mighty Thoughts
+			i(40097),	-- Elixir of Protection
+			i(40072),	-- Elixir of Versatility[Legion+] / Elixir of Spirit
+			i(8827, {["timeline"] = {ADDED_3_0_8}}),	-- Elixir of Water Walking
+			i(43569),	-- Endless Healing Potion
+			i(43570),	-- Endless Mana Potion
+			i(46377),	-- Flask of Endless Rage
+			i(46378),	-- Flask of Pure Mojo
+			i(46379),	-- Flask of Stoneblood
+			i(46376),	-- Flask of the Frost Wyrm
+			i(47499, {["timeline"] = {ADDED_3_2_0, REMOVED_5_0_4}}),	-- Flask of the North
+			i(40076),	-- Guru's Elixir
 			i(40067),	-- Icy Mana Potion
 			i(40093),	-- Indestructible Potion
+			i(44939, {["timeline"] = {ADDED_3_0_8, REMOVED_5_0_4}}),	-- Lesser Flask of Resistance
+			i(40079),	-- Lesser Flask of Toughness
 			i(40213),	-- Mighty Arcane Protection Potion
 			i(40214),	-- Mighty Fire Protection Potion
 			i(40215),	-- Mighty Frost Protection Potion
@@ -25,49 +72,31 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(39671),	-- Resurgent Healing Potion
 			i(33447),	-- Runic Healing Potion
 			i(33448),	-- Runic Mana Potion
-		}),
-		category(634, {	-- Elixirs
-			i(44325),	-- Elixir of Accuracy
-			i(44330),	-- Elixir of Armor Piercing
-			i(44327),	-- Elixir of Deadly Strikes
-			i(44329),	-- Elixir of Expertise / DF+:Elixir of Mighty Intellect
-			i(44331),	-- Elixir of Lightning Speed
-			i(39666),	-- Elixir of Mighty Agility
-			i(44328),	-- Elixir of Mighty Defense
-			i(40078),	-- Elixir of Mighty Fortitude
-			i(40109),	-- Elixir of Mighty Mageblood
-			i(40073),	-- Elixir of Mighty Strength
-			i(44332),	-- Elixir of Mighty Thoughts
-			i(45621),	-- Elixir of Minor Accuracy
-			i(40097),	-- Elixir of Protection
-			i(40072),	-- Elixir of Spirit
-			i(40076),	-- Guru's Elixir
 			i(40070),	-- Spellpower Elixir
 			i(40068),	-- Wrath Elixir
 		}),
-		category(635, {	-- Flasks
-			i(46377),	-- Flask of Endless Rage
-			i(46378),	-- Flask of Pure Mojo
-			i(46379),	-- Flask of Stoneblood
-			i(46376),	-- Flask of the Frost Wyrm
-			i(47499, {	-- Flask of the North
-				["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
-			}),
-			i(44939),	-- Lesser Flask of Resistance
-			i(40079),	-- Lesser Flask of Toughness
-		}),
-		category(636, {	-- Transmutation
-			i(41334),	-- Earthsiege Diamond
+		filter(REAGENTS, {
+			i(36931),	-- Ametrine
+			applyclassicphase(WRATH_PHASE_THREE, i(36919, {["timeline"] = {ADDED_3_2_0}})),	-- Cardinal Ruby
+			applyclassicphase(WRATH_PHASE_THREE, i(36928, {["timeline"] = {ADDED_3_2_0}})),	-- Dreadstone
+			applyclassicphase(WRATH_PHASE_THREE, i(41334, {["timeline"] = {ADDED_3_2_0}})),	-- Earthsiege Diamond
+			i(35623),	-- Eternal Air
+			i(35624),	-- Eternal Earth
+			i(36860),	-- Eternal Fire
+			i(35625),	-- Eternal Life
+			i(35627),	-- Eternal Shadow
+			i(35622),	-- Eternal Water
+			i(44958, {["timeline"] = {ADDED_3_0_8}}),	-- Ethereal Oil
+			applyclassicphase(WRATH_PHASE_THREE, i(36934, {["timeline"] = {ADDED_3_2_0}})),	-- Eye of Zul
+			applyclassicphase(WRATH_PHASE_THREE, i(36922, {["timeline"] = {ADDED_3_2_0}})),	-- King's Amber
+			applyclassicphase(WRATH_PHASE_THREE, i(36925, {["timeline"] = {ADDED_3_2_0}})),	-- Majestic Zircon
+			i(40195),	-- Pygmy Oil
 			i(41266),	-- Skyflare Diamond
 		}),
 		filter(TRINKET_F, {
 			i(44323),	-- Indestructible Alchemist Stone
 			i(44322),	-- Mercurial Alchemist Stone
 			i(44324),	-- Mighty Alchemist Stone
-		}),
-		category(644, {	-- Materials
-			i(44958),	-- Ethereal Oil
-			i(40195),	-- Pygmy Oil
 		}),
 	}),
 	prof(BLACKSMITHING, {

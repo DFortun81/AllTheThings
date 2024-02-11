@@ -827,7 +827,6 @@ root(ROOTS.NeverImplemented, {
 				q(30294, { ["name"] = "Small Comforts", }),	-- Small Comforts
 				q(29744, { ["name"] = "Some \"Pupil of Nature\"", }),	-- Some "Pupil of Nature"
 				q(30759, { ["name"] = "Sotelo's Quest", }),	-- Sotelo's Quest
-				q(30597, { ["name"] = "Strange Spherical Stone", ["_drop"] = { "g" }, }),	-- Strange Spherical Stone
 				q(29554, { ["name"] = "Sunken Junk", }),	-- Sunken Junk
 				q(30250, { ["name"] = "Survival Ring: Thunder", }),	-- Survival Ring: Thunder
 				q(29713, { ["name"] = "Standard Protocol", }),	-- Standard Protocol

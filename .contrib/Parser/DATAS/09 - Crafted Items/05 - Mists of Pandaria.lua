@@ -4,41 +4,38 @@
 root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
-			["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
-			["groups"] = {
-				r(114774),	-- Darkwater Potion
-				r(114761),	-- Desecrated Oil
-				r(114763),	-- Elixir of Mirrors
-				r(114764),	-- Elixir of Peace
-				r(114762),	-- Elixir of Perfection
-				r(114756),	-- Elixir of Weaponry
-				r(114759),	-- Elixir of the Rapids
-				r(114772),	-- Flask of Falling Leaves
-				r(114769),	-- Flask of Spring Blossoms
-				r(114770),	-- Flask of the Earth
-				r(114771),	-- Flask of the Warm Sun
-				r(114773),	-- Flask of Winter's Bite
-				r(114754),	-- Mad Hozen Elixir
-				r(114755),	-- Mantid Elixir
-				r(114775),	-- Master Mana Potion
-				r(114758),	-- Monk's Elixir
-				r(114782),	-- Potion of Focus
-				r(114760),	-- Potion of Mogu Power
-				r(114779),	-- Potion of Luck
-				r(114757),	-- Potion of the Jade Serpent
-				r(114753),	-- Potion of the Mountains
-				r(130326),	-- Riddle of Steel
-				r(114777),	-- Transmute: Imperial Amethyst
-				r(114780),	-- Transmute: Living Steel
-				r(114781),	-- Transmute: Primal Diamond
-				r(114784),	-- Transmute: Primordial Ruby
-				r(114766),	-- Transmute: River's Heart
-				r(114778),	-- Transmute: Sun's Radiance
-				r(114783),	-- Transmute: Trillium Bar
-				r(114776),	-- Transmute: Vermilion Onyx
-				r(114767),	-- Transmute: Wild Jade
-				r(114765),	-- Virmen's Bite
-			},
+			r(114774),	-- Darkwater Potion
+			r(114761),	-- Desecrated Oil
+			r(114763),	-- Elixir of Mirrors
+			r(114764),	-- Elixir of Peace
+			r(114762),	-- Elixir of Perfection
+			r(114756),	-- Elixir of Weaponry
+			r(114759),	-- Elixir of the Rapids
+			r(114772),	-- Flask of Falling Leaves
+			r(114769),	-- Flask of Spring Blossoms
+			r(114770),	-- Flask of the Earth
+			r(114771),	-- Flask of the Warm Sun
+			r(114773),	-- Flask of Winter's Bite
+			r(114754),	-- Mad Hozen Elixir
+			r(114755),	-- Mantid Elixir
+			r(114775),	-- Master Mana Potion
+			r(114758),	-- Monk's Elixir
+			r(114782),	-- Potion of Focus
+			r(114760),	-- Potion of Mogu Power
+			r(114779),	-- Potion of Luck
+			r(114757),	-- Potion of the Jade Serpent
+			r(114753),	-- Potion of the Mountains
+			r(130326),	-- Riddle of Steel
+			r(114777),	-- Transmute: Imperial Amethyst
+			r(114780),	-- Transmute: Living Steel
+			r(114781),	-- Transmute: Primal Diamond
+			r(114784),	-- Transmute: Primordial Ruby
+			r(114766),	-- Transmute: River's Heart
+			r(114778),	-- Transmute: Sun's Radiance
+			r(114783),	-- Transmute: Trillium Bar
+			r(114776),	-- Transmute: Vermilion Onyx
+			r(114767),	-- Transmute: Wild Jade
+			r(114765),	-- Virmen's Bite
 		}),
 		filter(CONSUMABLES, {
 			i(76094),	-- Alchemist's Rejuvenation
@@ -68,9 +65,18 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		}),
 		filter(REAGENTS, {
 			i(87872),	-- Desecrated Oil
+			i(76141),	-- Imperial Amethyst
+			i(72104),	-- Living Steel
+			i(76132),	-- Primal Diamond
+			i(76131),	-- Primordial Ruby
+			i(76138),	-- River's Heart
+			i(76142),	-- Sun's Radiance
+			i(72095),	-- Trillium Bar
+			i(76140),	-- Vermilion Onyx
+			i(76139),	-- Wild Jade
 		}),
 		filter(TRINKET_F, {
-			i(75274),	-- Zen Alchemist Stone
+			i(75274, {["timeline"] = {ADDED_5_2_0}}),	-- Zen Alchemist Stone
 		}),
 	}),
 	prof(BLACKSMITHING, {

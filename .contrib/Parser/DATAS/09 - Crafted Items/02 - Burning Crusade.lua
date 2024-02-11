@@ -11,7 +11,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			r(41503, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Shadow Protection
 			r(28590),	-- Flask of Blinding Light
 			r(28587),	-- Flask of Fortification
-			r(28588),	-- Flask of Mighty Versatility / Flask of Mighty Restoration
+			r(28588),	-- Flask of Mighty Versatility[Legion+] / Flask of Mighty Restoration
 			r(28591),	-- Flask of Pure Death
 			r(28589),	-- Flask of Relentless Assault
 			r(28586),	-- Super Rejuvenation Potion
@@ -46,7 +46,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(22861),	-- Flask of Blinding Light
 			applyclassicphase(TBC_PHASE_THREE, i(33208, {["timeline"] = {ADDED_2_2_0, REMOVED_5_0_4}})),	-- Flask of Chromatic Wonder
 			i(22851),	-- Flask of Fortification
-			i(22853),	-- Flask of Mighty Versatility / Flask of Mighty Restoration
+			i(22853),	-- Flask of Mighty Versatility[Legion+] / Flask of Mighty Restoration
 			i(22866),	-- Flask of Pure Death
 			i(22854),	-- Flask of Relentless Assault
 			i(22838),	-- Haste Potion
@@ -69,6 +69,18 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(22850),	-- Super Rejuvenation Potion
 			i(28101),	-- Unstable Mana Potion
 			i(28100),	-- Volatile Healing Potion
+		}),
+		filter(REAGENTS, {
+			i(25867),	-- Earthstorm Diamond
+			i(22451),	-- Primal Air
+			i(22452),	-- Primal Earth
+			i(21884),	-- Primal Fire
+			i(21886),	-- Primal Life
+			i(22457),	-- Primal Mana
+			i(23571),	-- Primal Might
+			i(22456),	-- Primal Shadow
+			i(21885),	-- Primal Water
+			i(25868),	-- Skyfire Diamond
 		}),
 		filter(TRINKET_F, {
 			i(13503),	-- Alchemist Stone

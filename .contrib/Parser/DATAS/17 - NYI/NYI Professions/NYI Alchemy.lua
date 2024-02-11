@@ -6,8 +6,42 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			tier(CLASSIC_TIER, {
 				i(5632),	-- Cowardly Flight Potion
-				i(8827),	-- Elixir of Water Walking
 				i(17967),	-- Refined Scale of Onyxia
+			}),
+			tier(WOTLK_TIER, {
+				-- 3.0.2
+				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+					i(40248),	-- Eternal Might
+				})),
+			}),
+			tier(CATA_TIER, {
+				-- 4.0.3
+				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+					i(61939),	-- Artisan Alchemist's Tarot
+					i(61938),	-- Expert Alchemist's Tarot
+					i(61941),	-- Grand Master Alchemist's Tarot
+					i(61380),	-- Journeyman Alchemist's Tarot
+					i(61940),	-- Master Alchemist's Tarot
+				})),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					i(109227),	-- UNUSED
+					i(109146),	-- UNUSED
+					i(109149),	-- UNUSED
+					i(109150),	-- UNUSED
+					i(109154),	-- UNUSED
+					i(109157),	-- UNUSED
+					i(109158),	-- UNUSED
+					i(109159),	-- UNUSED
+				})),
+			}),
+			tier(BFA_TIER, {
+				-- 8.2.0
+				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+					i(168502),	-- Potion of Reconstitution
+				})),
 			}),
 			tier(SL_TIER, {
 				-- 9.0.1
@@ -51,6 +85,91 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(5641),	-- Recipe: Cowardly Flight Potion
 				i(2556),	-- Recipe: Elixir of Tongues
 				i(13500),	-- Recipe: Greater Holy Protection Potion
+			}),
+			tier(TBC_TIER, {
+				-- 2.3.0
+				tier(TBC_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
+					-- Without SpellID attched
+					i(34481),	-- Recipe: Mad Alchemist's Potion
+				})),
+			}),
+			tier(WOTLK_TIER, {
+				-- 3.0.2
+				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+					r(54020),	-- Transmute: Eternal Might
+					r(53846),	-- Unknown
+				})),
+			}),
+			tier(CATA_TIER, {
+				-- 4.0.3
+				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+					r(85621),	-- Alchemy Tarot
+				})),
+
+				-- 4.3.0
+				tier(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+					-- With SpellID attched
+					i(71955),	-- Recipe: Transmute Deepholm Iolite
+					i(71956),	-- Recipe: Transmute Elven Peridot
+					i(71958),	-- Recipe: Transmute Lava Coral
+					i(71957),	-- Recipe: Transmute Lightstone
+					i(71960),	-- Recipe: Transmute Queen's Garnet
+					i(71959),	-- Recipe: Transmute Shadow Spinel
+				})),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					r(168042),	-- Alchemical Catalyst
+					r(156586),	-- Alchemist's Cauldron
+					r(156567),	-- Draenor Armor Flask
+					r(156566),	-- Draenor Spirit Flask
+					r(156575),	-- Greater Draenor Armor Flask
+					r(156574),	-- Greater Draenor Spirit Flask
+					r(156583),	-- Draenor Treasure Finding Potion
+					-- With SpellID attched
+					i(112049),	--  Recipe: Alchemical Catalyst - Fireweed
+					i(112050),	--  Recipe: Alchemical Catalyst - Flytrap
+					i(112054),	--  Recipe: Alchemical Catalyst - Lotus
+					i(112053),	--  Recipe: Alchemical Catalyst - Orchid
+					i(112051),	--  Recipe: Alchemical Catalyst - Starflower
+					i(112025),	--  Recipe: Draenor Haste Flask
+					i(113625),	--  Recipe: Draenor Versatility Flask
+					i(112032),	--  Recipe: Greater Draenor Haste Flask
+					i(113626),	--  Recipe: Greater Draenor Versatility Flask
+					-- Without SpellID attched
+					i(112052),	-- Recipe: Alchemical Catalyst - Arrowbloom
+					i(112043),	-- Draenic Mana Potion
+					i(120132),	-- Secrets of Draenor Alchemy
+				})),
+			}),
+			tier(LEGION_TIER, {
+				-- 7.3.0
+				tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+					r(251660),	-- Unknown
+					r(251661),	-- Unknown
+					r(251662),	-- Unknown
+				})),
+			}),
+			tier(BFA_TIER, {
+				-- 8.0.1
+				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+					r(252365),	-- Unknown
+					r(252366),	-- Unknown
+					r(252367),	-- Unknown
+					r(252373),	-- Unknown
+					r(252374),	-- Unknown
+					r(252375),	-- Unknown
+				})),
+
+				-- 8.2.0
+				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+					r(298737),	-- Potion of Reconstitution [Rank 1]
+					r(298738),	-- Potion of Reconstitution [Rank 2]
+					-- With SpellID attched
+					i(169493),	-- Recipe: Potion of Reconstitution [Rank 3]
+					i(169601),	-- Recipe: Potion of Reconstitution [Rank 3]
+				})),
 			}),
 			tier(SL_TIER, {
 				-- 9.0.1
