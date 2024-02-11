@@ -2709,7 +2709,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5188, {	-- Garyl <Tabard Vendor>
-					["coord"] = { 47.6, 75.6, ORGRIMMAR },
+					["coord"] =
+					-- #IF AFTER 10.0.5
+					{ 46.4, 79.4, ORGRIMMAR },	-- moved due to Trading Post
+					-- #ELSE
+					{ 47.6, 75.6, ORGRIMMAR },
+					-- #ENDIF
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"select", "itemID",

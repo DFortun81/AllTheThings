@@ -293,7 +293,7 @@ CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(80484),	-- Elixir of the Cobra
 		r(80497),	-- Elixir of the Master
 		r(80480),	-- Elixir of the Naga
-		r(80724),	-- Flask of Enhancement
+		r(80724, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_5_0_4}}),	-- Flask of Enhancement
 		r(94162),	-- Flask of Flowing Water
 		r(80719),	-- Flask of Steelskin
 		r(80720),	-- Flask of the Draconic Mind

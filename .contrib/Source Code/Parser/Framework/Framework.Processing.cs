@@ -1762,7 +1762,7 @@ namespace ATT
                 // -> modifiertree -> parent[collection] -> type=4(creature target) -> Asset
             }
 
-            long spellID = criteriaData.GetSpellID();
+            long spellID = criteriaData.GetKnownSpellID();
             if (spellID > 0)
             {
                 // Only try to nest actually visible Criteria under a Spell
@@ -1790,6 +1790,12 @@ namespace ATT
                     Objects.Merge(data, "_spells", new List<object> { spellID });
                     //}
                 }
+            }
+
+            spellID = criteriaData.GetCastedSpellID();
+            if (spellID > 0)
+            {
+                // TODO: do something interesting where a spell needs to be 'casted' for Achievement Criteria
             }
 
             long achievementID = criteriaData.GetRequiredAchievement();
