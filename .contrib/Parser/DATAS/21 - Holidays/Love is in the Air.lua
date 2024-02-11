@@ -1435,8 +1435,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(LOVE_TOKEN),
-					i(210431),	-- Artisanal Bon-Bombs (QI!)
-					i(211127),	-- Note from Bang Sparknozzle (QI!) [book]
+					o(413126, {	-- Box of Artisanal Goods})
+						i(210431),	-- Artisanal Bon-Bombs (QI!)
+						i(211127),	-- Note from Bang Sparknozzle (QI!) [book]
+					}),
 				},
 			}),
 			q(78379, {	-- The Stench of Revenge (A)

@@ -632,7 +632,6 @@ local keys = {
 [30520]="Tummy Trouble",
 [30537]="A Fizzy Fusion",
 [30538]="Fun for the Little Ones",
-[30597]="Strange Spherical Stone",
 [30609]="Exit Strategy",
 [30677]="Shuttle Service",
 [30704]="Hozen in the Mist",

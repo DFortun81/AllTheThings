@@ -329,6 +329,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
+						["lockCriteria"] = { 1, "factionID", 1106.8 },	-- Argent Crusade, Exalted
+						-- #endif
 						["groups"] = {
 							i(43556, {	-- Patroller's Pack
 								["description"] = "Small chance to contain listed items.",
