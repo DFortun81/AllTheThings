@@ -294,3 +294,80 @@ app.CreateDynamicHeaderByValue = app.CreateClass("DynamicValues", "dynamicValueI
 	-- Always ignore dynamic categories for progress propagation
 	["sourceIgnored"] = app.ReturnTrue,
 });
+
+local BaseClass__class = app.BaseClass.__class
+local VisualHeaderFields = {
+	-- back = function(t)
+	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- end,
+	__type = function() return "VisualHeader" end,
+	hash = BaseClass__class.hash,
+	text = BaseClass__class.text,
+}
+local CreateVisualHeader, CreateVisualHeader__class
+CreateVisualHeader, CreateVisualHeader__class = app.CreateClass("VisualHeader", "noKey", VisualHeaderFields);
+app.CreateVisualHeader = CreateVisualHeader
+local Wrap = app.WrapObject;
+app.CreateVisualHeaderWithGroups = function(base, groups)
+	return Wrap(CreateVisualHeader(nil, {g=groups}), base)
+end
+
+-- modify some things of this class... the returned Class is actually the metatable for a Class object, so __class contains the actual field functions
+CreateVisualHeader__class = CreateVisualHeader__class.__class
+-- We don't want the BaseClass fields to be part of the VisualHeader __class (due to them being copied from DefaultFields)
+-- since that prevents those fields from falling through to the BaseObject as expected
+for k, v in pairs(BaseClass__class) do
+	if not VisualHeaderFields[k] then
+		CreateVisualHeader__class[k] = nil
+	end
+end
+-- manually remove the 'key' field since it isn't in BaseClass
+CreateVisualHeader__class.key = nil
+local Empty = app.EmptyFunction
+-- Fields which should not pass-through a value in a visual header
+for _,field in ipairs({
+	"collectible",
+	"sourceParent",
+	"customCollect",
+	"minReputation",
+	"maxReputation",
+	"OnUpdate",
+	"OnTooltip",
+	"_CheckCollectible",
+	"_SettingsRefresh",
+	"_up",
+	"up",
+	"races",
+	"r",
+	"c",
+	"nmc",
+	"nmr",
+	"expanded",
+	"indent",
+	"g",
+	"progress",
+	"total",
+	"visible",
+	"modItemID",
+	"rawlink",
+	"sourceIgnored",
+	"costTotal",
+	"upgradeTotal",
+	"iconPath",
+	"tooltipInfo",
+	"working",
+	"TLUG",
+	"e",
+	"u",
+	"pb",
+	"pvp",
+	"races",
+	"isDaily",
+	"isWeekly",
+	"isMonthly",
+	"isYearly",
+	"repeatable",
+	"requireSkill",
+}) do
+	CreateVisualHeader__class[field] = Empty
+end

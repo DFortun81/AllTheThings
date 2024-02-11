@@ -11698,7 +11698,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 				expanded = true,
 				g = g,
 			};
-			
+
 			-- Cache all maps by their ID number, starting with maps we reference in our DB.
 			local mapsByID = {};
 			for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
@@ -11712,7 +11712,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					mapObject.g = {};	-- Doing this prevents the CreateMap function from creating an exploration header.
 				end
 			end
-			
+
 			-- Go through all of the possible maps, including only maps that have C_Map data.
 			for mapID=1,10000,1 do
 				if not mapsByID[mapID] then
@@ -11728,7 +11728,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					end
 				end
 			end
-			
+
 			-- Iterate through the maps we have cached, determine their parents and link them together.
 			-- Also push them on to the stack.
 			for mapID,mapObject in pairs(mapsByID) do
@@ -11747,7 +11747,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 				mapObject.parent = parent;
 				tinsert(parent.g, mapObject);
 			end
-			
+
 			-- Sort the maps by number of relative maps, then by name if matching.
 			app.Sort(g, function(a, b)
 				local aSize, bSize = #a.g, #b.g;
@@ -11759,14 +11759,14 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					return false;
 				end
 			end, true);
-			
+
 			-- Now finally, clear out unused gs.
 			for i,mapObject in ipairs(g) do
 				if #mapObject.g < 1 then
 					mapObject.g = nil;
 				end
 			end
-			
+
 			self:SetData(rootData);
 		end
 
@@ -11827,43 +11827,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 			end
 		end
-		local Wrap = app.WrapObject;
-		local BaseVisualHeaderClone = app.BaseObjectFields({
-			-- ["back"] = function(t)
-			-- 	return 0.3;	-- visibility of which rows are cloned
-			-- end,
-		}, "VisualHeaderClone");
-		-- We don't want the BaseClass fields to be part of the VisualHeaderClone __class
-		-- since that prevents those fields from falling through to the BaseObject as expected
-		wipe(BaseVisualHeaderClone.__class)
-		-- Fields in the wrapped object which should not persist when represented as a Header
-		for field,_ in pairs(app.MergeSkipFields) do
-			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
-		end
-		for _,field in ipairs({
-			"collectible",
-			"sourceParent",
-			"customCollect",
-			"minReputation",
-			"maxReputation",
-			"OnUpdate",
-			"OnTooltip",
-			"_CheckCollectible",
-			"_SettingsRefresh",
-			"_up",
-			"up",
-			"races",
-			"r",
-			"c",
-			"nmc",
-			"nmr",
-		}) do
-			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
-		end
-		-- Wraps a given object such that it can act as a filtered Header of the base group
-		local CreateWrapVisualHeader = function(base, groups)
-			return Wrap(setmetatable(constructor(nil, {g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
-		end
+		-- Wraps a given object such that it can act as an unfiltered Header of the base group
+		local CreateWrapVisualHeader = app.CreateVisualHeaderWithGroups
 		-- Returns the consolidated data format for the next header level
 		-- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
 		local function CreateHeaderData(group, header)
@@ -12837,11 +12802,11 @@ customWindowUpdates["Random"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
-			
+
 			-- For this window's options to work, Prime needs to be fully initialized.
 			local prime = app:GetWindow("Prime");
 			prime:Update(true);
-			
+
 			local function SearchRecursively(group, field, temp, func)
 				if group.visible and not (group.saved or group.collected) then
 					if group.g then
@@ -15899,7 +15864,7 @@ app.Startup = function()
 	app.IsAccountCached = IsAccountCached
 	app.SetBatchAccountCached = SetBatchAccountCached
 	app.SetBatchCached = SetBatchCached
-	
+
 	-- Notify Event Handlers that Saved Variable Data is available.
 	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
 
