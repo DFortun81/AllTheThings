@@ -11163,25 +11163,8 @@ local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
 local SearchGroups = {};
 local KeepFields = {}
-local Wrap = app.WrapObject;
-local BaseFilterHeaderClone = app.BaseObjectFields({
-	-- Fields in the wrapped object which should not persist when represented as a Header
-	["collectible"] = app.EmptyFunction,
-	["trackable"] = app.EmptyFunction,
-	["collectibleAsCost"] = app.EmptyFunction,
-	["costCollectibles"] = app.EmptyFunction,
-	["costTotal"] = app.EmptyFunction,
-	["upgradeTotal"] = app.EmptyFunction,
-	["g"] = app.EmptyFunction,
-	["visible"] = app.EmptyFunction,
-	-- ["back"] = function(t)
-	-- 	return 0.3;	-- visibility of which rows are cloned
-	-- end,
-}, "FilterHeaderClone");
--- Wraps a given object such that it can act as a filtered Header of the base group
-local CreateWrapFilterHeader = function(base)
-	return Wrap(setmetatable(constructor(nil, {g={}}, "WrapFilterHeader"), BaseFilterHeaderClone), base);
-end
+-- Wraps a given object such that it can act as an unfiltered Header of the base group
+local CreateWrapFilterHeader = app.CreateVisualHeaderWithGroups
 local function CloneGroupIntoHeirarchy(group)
 	local groupCopy = CreateWrapFilterHeader(group);
 	ClonedHierarachyMapping[group] = groupCopy;
