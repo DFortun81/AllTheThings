@@ -3083,105 +3083,107 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				for i=1,#entries do
 					item = entries[i];
 					entry = item.group;
-					left = TryColorizeName(entry, entry.text or RETRIEVING_DATA);
-					if not working and IsRetrieving(left) then working = true; end
+					if not entry.objectiveID then
+						left = TryColorizeName(entry, entry.text or RETRIEVING_DATA);
+						if not working and IsRetrieving(left) then working = true; end
 
-					-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
-					if entry.c and entry.key ~= "classID" and #entry.c == 1 then
-						left = left .. " [" .. TryColorizeName(entry, app.ClassInfoByID[entry.c[1]].name) .. "]";
-					end
-					if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
-
-					-- If this entry has specialization requirements, let's attempt to show the specialization icons.
-					right = item.right;
-					local specs = entry.specs;
-					if specs and #specs > 0 then
-						right = GetSpecsString(specs, false, false) .. right;
-					end
-
-					-- If this entry has customCollect requirements, list them for clarity
-					if entry.customCollect then
-						for i,c in ipairs(entry.customCollect) do
-							local icon_color_str = L["CUSTOM_COLLECTS_REASONS"][c]["icon"].." |c"..L["CUSTOM_COLLECTS_REASONS"][c]["color"]..L["CUSTOM_COLLECTS_REASONS"][c]["text"];
-							if i > 1 then
-								right = icon_color_str .. " / " .. right;
-							else
-								right = icon_color_str .. "  " .. right;
-							end
+						-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
+						if entry.c and entry.key ~= "classID" and #entry.c == 1 then
+							left = left .. " [" .. TryColorizeName(entry, app.ClassInfoByID[entry.c[1]].name) .. "]";
 						end
-					end
+						if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
 
-					-- If this entry is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
-					if entry.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
-						-- Add the Zone name
-						local field, id;
-						for _,v in ipairs(TooltipSourceFields) do
-							id = RecursiveParentField(entry, v, true);
-							-- print("check",v,id)
-							if id then
-								field = v;
-								break;
-							end
+						-- If this entry has specialization requirements, let's attempt to show the specialization icons.
+						right = item.right;
+						local specs = entry.specs;
+						if specs and #specs > 0 then
+							right = GetSpecsString(specs, false, false) .. right;
 						end
-						if field then
-							local locationGroup, locationName;
-							-- convert maps
-							if field == "maps" then
-								-- if only a few maps, list them all
-								local count = #id;
-								if count == 1 then
-									id = id[1];
-									locationGroup = C_Map_GetMapInfo(id);
-									locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name or locationGroup.text);
+
+						-- If this entry has customCollect requirements, list them for clarity
+						if entry.customCollect then
+							for i,c in ipairs(entry.customCollect) do
+								local icon_color_str = L["CUSTOM_COLLECTS_REASONS"][c]["icon"].." |c"..L["CUSTOM_COLLECTS_REASONS"][c]["color"]..L["CUSTOM_COLLECTS_REASONS"][c]["text"];
+								if i > 1 then
+									right = icon_color_str .. " / " .. right;
 								else
-									local mapsConcat, names, name = {}, {};
-									for i=1,count,1 do
-										name = app.GetMapName(id[i]);
-										if name and not names[name] then
-											names[name] = true;
-											tinsert(mapsConcat, name);
+									right = icon_color_str .. "  " .. right;
+								end
+							end
+						end
+
+						-- If this entry is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
+						if entry.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
+							-- Add the Zone name
+							local field, id;
+							for _,v in ipairs(TooltipSourceFields) do
+								id = RecursiveParentField(entry, v, true);
+								-- print("check",v,id)
+								if id then
+									field = v;
+									break;
+								end
+							end
+							if field then
+								local locationGroup, locationName;
+								-- convert maps
+								if field == "maps" then
+									-- if only a few maps, list them all
+									local count = #id;
+									if count == 1 then
+										id = id[1];
+										locationGroup = C_Map_GetMapInfo(id);
+										locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name or locationGroup.text);
+									else
+										local mapsConcat, names, name = {}, {};
+										for i=1,count,1 do
+											name = app.GetMapName(id[i]);
+											if name and not names[name] then
+												names[name] = true;
+												tinsert(mapsConcat, name);
+											end
+										end
+										-- up to 3 unqiue map names displayed
+										if #mapsConcat < 4 then
+											locationName = app.TableConcat(mapsConcat, nil, nil, "/");
+										else
+											mapsConcat[4] = "+++";
+											locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
 										end
 									end
-									-- up to 3 unqiue map names displayed
-									if #mapsConcat < 4 then
-										locationName = app.TableConcat(mapsConcat, nil, nil, "/");
-									else
-										mapsConcat[4] = "+++";
-										locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
-									end
-								end
-							else
-								locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
-								locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name or locationGroup.text);
-							end
-							-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
-							if locationName then
-								-- Add the immediate parent group Vendor name
-								local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
-								-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
-								if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
-									right = locationName .. " > " .. sParent.text .. " " .. right;
 								else
-									right = locationName .. " " .. right;
+									locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
+									locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name or locationGroup.text);
 								end
-							-- else
-								-- print("No Location name for item",entry.itemID,id,field)
+								-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
+								if locationName then
+									-- Add the immediate parent group Vendor name
+									local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
+									-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
+									if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
+										right = locationName .. " > " .. sParent.text .. " " .. right;
+									else
+										right = locationName .. " " .. right;
+									end
+								-- else
+									-- print("No Location name for item",entry.itemID,id,field)
+								end
 							end
 						end
-					end
 
-					if not working and IsRetrieving(right) then working = true; end
+						if not working and IsRetrieving(right) then working = true; end
 
-					-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
-					if entry.criteriaID and entry.achievementID then
-						local rawParent = rawget(entry, "parent");
-						if not rawParent or rawParent.achievementID ~= entry.achievementID then
-							local critAch = SearchForObject("achievementID", entry.achievementID, "key");
-							left = left .. " > " .. (critAch and critAch.text or "???");
+						-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
+						if entry.criteriaID and entry.achievementID then
+							local rawParent = rawget(entry, "parent");
+							if not rawParent or rawParent.achievementID ~= entry.achievementID then
+								local critAch = SearchForObject("achievementID", entry.achievementID, "key");
+								left = left .. " > " .. (critAch and critAch.text or "???");
+							end
 						end
-					end
 
-					tinsert(info, { left = item.prefix .. left, right = right });
+						tinsert(info, { left = item.prefix .. left, right = right });
+					end
 				end
 
 				if ContainsExceeded > 0 then
@@ -9472,7 +9474,7 @@ RowOnEnter = function (self)
 				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "objectID", reference.objectID);
 			elseif reference.titleID then
 				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
-			elseif refQuestID then
+			elseif refQuestID and not reference.objectiveID then
 				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "questID", refQuestID);
 			elseif reference.flightPathID then
 				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "flightPathID", reference.flightPathID);
