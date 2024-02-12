@@ -416,11 +416,13 @@ if C_ArtifactUI then
 		end
 	end
 	app.AddEventHandler("OnLoad", function()
-		app:RegisterEvent("ARTIFACT_UPDATE");
 		app.RegisterSymlinkResolveFunction("relictype", ResolveRelicType);
 		app.RegisterSymlinkSubroutine("legion_relinquished_base", legion_relinquished_base);
 		app.RegisterSymlinkSubroutine("legion_relinquished", legion_relinquished);
 		app.RegisterSymlinkSubroutine("legion_relinquished_relic", legion_relinquished_relic);
+	end);
+	app.AddEventHandler("OnReady", function()
+		app:RegisterEvent("ARTIFACT_UPDATE");
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		local characterData = currentCharacter.ArtifactRelicItemLevels;
