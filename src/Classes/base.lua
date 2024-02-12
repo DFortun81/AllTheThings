@@ -553,9 +553,7 @@ app.CreateUnimplementedClass = function(className, classKey)
 		title = function(t)
 			return app.L.DATA_TYPE_NOT_SUPPORTED;
 		end,
-		isInvalid = function(t)
-			return true;
-		end,
+		isInvalid = app.ReturnTrue,
 		collected = app.ReturnFalse,
 		collectible = app.ReturnTrue,
 	});
