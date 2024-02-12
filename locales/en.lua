@@ -104,6 +104,7 @@ local L = {
 	["OBJECTIVES"] = "Objectives";
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
+	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
 	["AND_"] = "And ";
 	["_AND"] = " and";
 	["_MORE"] = " more";

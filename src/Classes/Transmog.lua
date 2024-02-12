@@ -1069,30 +1069,9 @@ if C_TransmogCollection then
 else
 	-- Transmog is NOT supported.
 	-- Gear Sets
-	app.CreateGearSet = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Gear Set #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
-	app.CreateGearSetHeader = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Gear Set Header #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
-	app.CreateGearSetSubHeader = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Gear Set Sub Header #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateGearSet = app.CreateUnimplementedClass("GearSet", "setID");
+	app.CreateGearSetHeader = app.CreateUnimplementedClass("GearSetHeader", "setID");
+	app.CreateGearSetSubHeader = app.CreateUnimplementedClass("GearSetSubHeader", "setID");
 	app.CreateItemSource = function(sourceID, itemID, t)
 		t = app.CreateItem(itemID, t);
 		t.sourceID = sourceID;

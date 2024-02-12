@@ -16,6 +16,7 @@ local L = {
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
 	["PERCENTAGES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
+	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
 	
 	["OPEN_MINILIST_FOR"] = "Open mini list for ";
 

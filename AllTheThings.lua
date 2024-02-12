@@ -6319,14 +6319,7 @@ if C_LegendaryCrafting then
 		end
 	end);
 else
-	app.CreateRuneforgeLegendary = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Runeforge Legendary #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgePowerID");
 end
 end)();
 
@@ -6370,14 +6363,7 @@ if C_Soulbinds then
 		end
 	end);
 else
-	app.CreateConduit = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Conduit #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateConduit = app.CreateUnimplementedClass("Conduit", "conduitID");
 end
 end)();
 
@@ -6389,14 +6375,7 @@ if app.GameBuildVersion >= 100000 then	-- Dragonflight+
 		collected = function(t) return IsQuestFlaggedCompletedForObject(t); end
 	});
 else
-	app.CreateDrakewatcherManuscript = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Drakewatcher Manuscript #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", "itemID");
 end
 end)();
 

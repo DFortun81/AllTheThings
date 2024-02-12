@@ -542,6 +542,24 @@ app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 	classesByKey[classKey] = classConstructor;
 	return classConstructor;
 end
+app.CreateUnimplementedClass = function(className, classKey)
+	return app.CreateClass(className, classKey, {
+		name = function(t)
+			return className;
+		end,
+		icon = function(t)
+			return "Interface\\Icons\\INV_Misc_QuestionMark";
+		end,
+		title = function(t)
+			return app.L.DATA_TYPE_NOT_SUPPORTED;
+		end,
+		isInvalid = function(t)
+			return true;
+		end,
+		collected = app.ReturnFalse,
+		collectible = app.ReturnTrue,
+	});
+end
 app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 	local baseClass = classDefinitions[baseClassName];
 	if baseClass then

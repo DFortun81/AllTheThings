@@ -226,13 +226,6 @@ if C_AzeriteEssence and app.GameBuildVersion >= 80000 then
 		end
 	end);
 else
-	app.CreateAzeriteEssence = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Azerite Essence #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateAzeriteEssence = app.CreateUnimplementedClass("AzeriteEssence", "azeriteEssenceID");
 end
 end

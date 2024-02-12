@@ -1835,6 +1835,8 @@ local function SearchForLink(link)
 			kind = "filterForRWP";
 		elseif kind == "pettype" or kind == "pettypeID" then
 			kind = "petTypeID";
+		elseif kind == "azeriteessence" or kind == "azeriteessenceID" then
+			kind = "azeriteEssenceID";
 		end
 		local cache;
 		if id then
@@ -1873,9 +1875,9 @@ local function SearchForLink(link)
 			cache = {};
 			tinsert(cache, obj);
 		end
-		return cache, kind, id;
+		return cache;
 	end
-	return {}, "", 0;
+	return {};
 end
 app.SearchForLink = SearchForLink;
 
@@ -5293,26 +5295,12 @@ end)();
 
 -- Unsupported Libs
 (function()
-app.CreateConduit = function(id, t)
-	return { text = "Conduit #" .. id, description = "This data type is not supported at this time." };
-end
-app.CreateDrakewatcherManuscript = function(id, t)
-	return { text = "DrakewatcherManuscript #" .. id, description = "This data type is not supported at this time." };
-end
-
-
-app.CreateMusicRoll = function(questID, t)
-	return { text = "MusicRoll #" .. questID, description = "This data type is not supported at this time." };
-end
-app.CreatePetAbility = function(id, t)
-	return { text = "PetAbility #" .. id, description = "This data type is not supported at this time." };
-end
-app.CreateRuneforgeLegendary = function(id, t)
-	return { text = "RuneforgeLegendary #" .. id, description = "This data type is not supported at this time." };
-end
-app.CreateSelfieFilter = function(id, t)
-	return { text = "SelfieFilter #" .. id, description = "This data type is not supported at this time." };
-end
+app.CreateConduit = app.CreateUnimplementedClass("Conduit", "conduitID");
+app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", "questID");
+app.CreateMusicRoll = app.CreateUnimplementedClass("MusicRoll", "questID");
+app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
+app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgePowerID");
+app.CreateSelfieFilter = app.CreateUnimplementedClass("SelfieFilter", "questID");
 end)();
 
 -- Automatically Refresh Saved Instances

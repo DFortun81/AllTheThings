@@ -57,13 +57,6 @@ if C_CreatureInfo_GetRaceInfo then
 		end,
 	});
 else
-	app.CreateRace = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Race #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateRace = app.CreateUnimplementedClass("Race", "raceID");
 end
 end

@@ -444,13 +444,6 @@ if C_ArtifactUI then
 else
 	-- Artifacts are not supported by this version of the game client.
 	app.AddArtifactRelicInformation = app.DoNothing;
-	app.CreateArtifact = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Artifact #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateArtifact = app.CreateUnimplementedClass("Artifact", "artifactID");
 end
 end

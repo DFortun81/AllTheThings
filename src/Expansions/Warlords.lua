@@ -234,37 +234,9 @@ if C_Garrison then
 		end
 	end);
 else
-	app.CreateGarrisonBuilding = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: GarrisonBuilding #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
-	app.CreateGarrisonMission = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: GarrisonMission #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
-	app.CreateGarrisonTalent = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: GarrisonTalent #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
-	app.CreateFollower = function(id, t)
-		return setmetatable({
-			text = "@CRIEVE: Follower #" .. id,
-			description = "This data type is not supported at this time.",
-			collected = false,
-			collectible = true
-		}, { __index = t });
-	end
+	app.CreateGarrisonBuilding = app.CreateUnimplementedClass("GarrisonBuilding", "garrisonBuildingID");
+	app.CreateGarrisonMission = app.CreateUnimplementedClass("GarrisonMission", "missionID");
+	app.CreateGarrisonTalent = app.CreateUnimplementedClass("GarrisonTalent", "garrisonTalentID");
+	app.CreateFollower = app.CreateUnimplementedClass("Follower", "followerID");
 end
 end
