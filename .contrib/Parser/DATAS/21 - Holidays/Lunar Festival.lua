@@ -221,6 +221,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { "added 8.3.0.33115" },
 			["groups"] = {
+				objective(1, {	-- 0/3 Flower of Thoughtfulness
+					["providers"] = {
+						{ "o", 332292 },	-- Flower of Thoughtfulness
+						{ "i", 170319 },	-- Flower of Thoughtfulness (QI!)
+					},
+					["coord"] = { 49, 23, HILLSBRAD_FOOTHILLS },
+				}),
+				objective(2, {	-- 0/3 Flower of Luck
+					["providers"] = {
+						{ "o", 332293 },	-- Flower of Luck
+						{ "i", 170321 },	-- Flower of Luck (QI!)
+					},
+					["coord"] = { 48, 55, DUN_MOROGH },
+				}),
+				objective(3, {	-- 0/3 Flower of Generosity
+					["providers"] = {
+						{ "o", 332294 },	-- Flower of Generosity
+						{ "i", 170322 },	-- Flower of Generosity (QI!)
+					},
+					["coord"] = { 48, 55, DUN_MOROGH },
+				}),
 				i(169208, {	-- Crown of Everlasting Fortune
 					["timeline"] = { "added 8.3.0.33115" },
 				}),
@@ -1461,10 +1482,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			-- #endif
 			["groups"] = {
 				i(74611, {	-- Festival Lantern (PET!)
+					-- #if AFTER 8.1.0
+					["races"] = HORDE_ONLY,
+					-- #endif
 					["timeline"] = { "added 4.3.0.15005" },
 					["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 				}),
 				i(74610, {	-- Lunar Lantern (PET!)
+					-- #if AFTER 8.1.0
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
 					["timeline"] = { "added 4.3.0.15005" },
 					["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 				}),
