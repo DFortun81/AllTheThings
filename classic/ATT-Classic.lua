@@ -5463,6 +5463,7 @@ app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 
 -- TomTom Support
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
+local TheRealmTomTom;	-- Define this locally so that Carbonite can't inject its garbage into it.
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
 	rawset(t, y, o);
@@ -5681,7 +5682,7 @@ app.AddEventHandler("OnReady", function()
 							opts.minimap_icon = first.icon;
 							opts.worldmap_icon = first.icon;
 						end
-						local callbacks = TomTom:DefaultCallbacks();
+						local callbacks = (TheRealmTomTom or TomTom):DefaultCallbacks();
 						callbacks.minimap.tooltip_update = nil;
 						callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
 							tooltip:ClearLines();
@@ -5785,259 +5786,264 @@ end);
 end)();
 
 -- Startup Event
+local ADDON_LOADED_HANDLERS = {
+	[appName] = function()
+		AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
+		if not AllTheThingsAD then
+			AllTheThingsAD = _G["ATTClassicAD"];
+			if AllTheThingsAD then
+				_G["ATTClassicAD"] = nil;
+			else
+				AllTheThingsAD = { };
+			end
+			_G["AllTheThingsAD"] = AllTheThingsAD;
+		end
+		
+		-- Cache the Localized Category Data
+		AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+		app.CategoryNames = nil;
+
+		-- Cache the Localized Flight Path Data
+		AllTheThingsAD.LocalizedFlightPathNames = setmetatable(AllTheThingsAD.LocalizedFlightPathNames or {}, { __index = app.FlightPathNames });
+		app.FlightPathDB = nil;
+
+		-- Character Data Storage
+		local characterData = ATTCharacterData;
+		if not characterData then
+			characterData = {};
+			ATTCharacterData = characterData;
+		end
+		local currentCharacter = characterData[app.GUID];
+		if not currentCharacter then
+			currentCharacter = {};
+			characterData[app.GUID] = currentCharacter;
+		end
+		local name, realm = UnitName("player");
+		if not realm then realm = GetRealmName(); end
+		if name then currentCharacter.name = name; end
+		if realm then currentCharacter.realm = realm; end
+		if app.Me then currentCharacter.text = app.Me; end
+		if app.GUID then currentCharacter.guid = app.GUID; end
+		if app.Level then currentCharacter.lvl = app.Level; end
+		if app.FactionID then currentCharacter.factionID = app.FactionID; end
+		if app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
+		if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
+		if app.Class then currentCharacter.class = app.Class; end
+		if race then currentCharacter.race = race; end
+		if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
+		if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
+		if not currentCharacter.BattlePets then currentCharacter.BattlePets = {}; end
+		if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+		if not currentCharacter.Exploration then currentCharacter.Exploration = {}; end
+		if not currentCharacter.Factions then currentCharacter.Factions = {}; end
+		if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
+		if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
+		if not currentCharacter.Quests then currentCharacter.Quests = {}; end
+		if not currentCharacter.RWP then currentCharacter.RWP = {}; end
+		if not currentCharacter.Spells then currentCharacter.Spells = {}; end
+		if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
+		if not currentCharacter.Titles then currentCharacter.Titles = {}; end
+
+		-- Update timestamps.
+		local now = time();
+		local timeStamps = currentCharacter.TimeStamps;
+		if not timeStamps then
+			timeStamps = {};
+			currentCharacter.TimeStamps = timeStamps;
+		end
+		for key,value in pairs(currentCharacter) do
+			if type(value) == "table" and not timeStamps[key] then
+				timeStamps[key] = now;
+			end
+		end
+		currentCharacter.lastPlayed = now;
+		app.CurrentCharacter = currentCharacter;
+		app.AddEventHandler("OnPlayerLevelUp", function()
+			currentCharacter.lvl = app.Level;
+		end);
+
+		-- Account Wide Data Storage
+		local accountWideData = ATTAccountWideData;
+		if not accountWideData then
+			accountWideData = {};
+			ATTAccountWideData = accountWideData;
+		end
+		if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+		if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
+		if not accountWideData.Deaths then accountWideData.Deaths = 0; end
+		if not accountWideData.Exploration then accountWideData.Exploration = {}; end
+		if not accountWideData.Factions then accountWideData.Factions = {}; end
+		if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
+		if not accountWideData.Quests then accountWideData.Quests = {}; end
+		if not accountWideData.RWP then accountWideData.RWP = {}; end
+		if not accountWideData.Spells then accountWideData.Spells = {}; end
+		if not accountWideData.Titles then accountWideData.Titles = {}; end
+
+		-- Account Wide Settings
+		local accountWideSettings = app.Settings.AccountWide;
+		local function SetAccountCollected(t, field, id, collected)
+			local container = accountWideData[field];
+			local oldstate = container[id];
+			if collected then
+				if not oldstate then
+					local now = time();
+					timeStamps[field] = now;
+					currentCharacter.lastPlayed = now;
+					AddToCollection(t);
+					container[id] = 1;
+				end
+				return 1;
+			elseif oldstate then
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				RemoveFromCollection(t);
+				container[id] = nil;
+			end
+		end
+		local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
+			local container = accountWideData[field];
+			local oldstate = container[id];
+			if collected then
+				if not oldstate then
+					local now = time();
+					timeStamps[field] = now;
+					currentCharacter.lastPlayed = now;
+					AddToCollection(t);
+					container[id] = 1;
+				end
+				return 1;
+			elseif oldstate then
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				RemoveFromCollection(t);
+				container[id] = nil;
+			end
+		end
+		local function SetCollected(t, field, id, collected)
+			local container = currentCharacter[field];
+			local oldstate = container[id];
+			if collected then
+				if not oldstate then
+					if t and not (accountWideSettings[field] and accountWideData[field][id]) then
+						--print("SetCollected", field, id, accountWideSettings[field], accountWideData[field][id]);
+						AddToCollection(t);
+					end
+					container[id] = 1;
+					accountWideData[field][id] = 1;
+					local now = time();
+					timeStamps[field] = now;
+					currentCharacter.lastPlayed = now;
+				else
+					accountWideData[field][id] = 1;
+				end
+				return 1;
+			elseif oldstate then
+				container[id] = nil;
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				for guid,other in pairs(characterData) do
+					local otherContainer = other[field];
+					if otherContainer and otherContainer[id] then
+						accountWideData[field][id] = 1;
+						return accountWideSettings[field] and 2;
+					end
+				end
+				if accountWideData[field][id] then
+					RemoveFromCollection(t);
+					accountWideData[field][id] = nil;
+				end
+			elseif accountWideSettings[field] and accountWideData[field][id] then
+				return 2;
+			end
+		end
+		local function SetCollectedForSubType(t, field, subtype, id, collected)
+			local container = currentCharacter[field];
+			local oldstate = container[id];
+			if collected then
+				if not oldstate then
+					if t and not (accountWideSettings[subtype] and accountWideData[field][id]) then
+						--print("SetCollectedForSubType", field, subtype, id, accountWideSettings[subtype], accountWideData[field][id]);
+						AddToCollection(t);
+					end
+					container[id] = 1;
+					accountWideData[field][id] = 1;
+					local now = time();
+					timeStamps[field] = now;
+					currentCharacter.lastPlayed = now;
+				else
+					accountWideData[field][id] = 1;
+				end
+				return 1;
+			elseif oldstate then
+				container[id] = nil;
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				for guid,other in pairs(characterData) do
+					local otherContainer = other[field];
+					if otherContainer and otherContainer[id] then
+						accountWideData[field][id] = 1;
+						return accountWideSettings[subtype] and 2;
+					end
+				end
+				if accountWideData[field][id] then
+					RemoveFromCollection(t);
+					accountWideData[field][id] = nil;
+				end
+			elseif accountWideSettings[subtype] and accountWideData[field][id] then
+				return 2;
+			end
+		end
+		app.SetAccountCollected = SetAccountCollected;
+		app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
+		app.SetCollected = SetCollected;
+		app.SetCollectedForSubType = SetCollectedForSubType;
+		
+		-- Notify Event Handlers that Saved Variable Data is available.
+		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
+		
+		-- Check to see if we have a leftover ItemDB cache
+		GetDataMember("GroupQuestsByGUID", {});
+		GetDataMember("ValidSuffixesPerItemID", {});
+
+		-- Clean up settings
+		local oldsettings = {};
+		for i,key in ipairs({
+			"GroupQuestsByGUID",
+			"LocalizedCategoryNames",
+			"LocalizedFlightPathNames",
+			"Reagents",
+			"SoftReserves",
+			"SoftReservePersistence",
+			"ValidSuffixesPerItemID",
+		}) do
+			oldsettings[key] = AllTheThingsAD[key];
+		end
+		wipe(AllTheThingsAD);
+		for key,value in pairs(oldsettings) do
+			AllTheThingsAD[key] = value;
+		end
+
+		-- Wipe the Debugger Data
+		ATTClassicDebugData = nil;
+
+		-- Tooltip Settings
+		app.Settings:Initialize();
+	end,
+	TomTom = function()
+		TheRealmTomTom = _G.TomTom;
+	end,
+};
 app:RegisterEvent("ADDON_LOADED");
-app:RegisterEvent("VARIABLES_LOADED");
 app.events.ADDON_LOADED = function(addonName)
-	-- Only execute for this addon.
-	if addonName ~= appName then return; end
-	app:UnregisterEvent("ADDON_LOADED");
-
-	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
-	if not AllTheThingsAD then
-		AllTheThingsAD = _G["ATTClassicAD"];
-		if AllTheThingsAD then
-			_G["ATTClassicAD"] = nil;
-		else
-			AllTheThingsAD = { };
-		end
-		_G["AllTheThingsAD"] = AllTheThingsAD;
-	end
-	
-	-- Cache the Localized Category Data
-	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
-	app.CategoryNames = nil;
-
-	-- Cache the Localized Flight Path Data
-	AllTheThingsAD.LocalizedFlightPathNames = setmetatable(AllTheThingsAD.LocalizedFlightPathNames or {}, { __index = app.FlightPathNames });
-	app.FlightPathDB = nil;
-
-	-- Character Data Storage
-	local characterData = ATTCharacterData;
-	if not characterData then
-		characterData = {};
-		ATTCharacterData = characterData;
-	end
-	local currentCharacter = characterData[app.GUID];
-	if not currentCharacter then
-		currentCharacter = {};
-		characterData[app.GUID] = currentCharacter;
-	end
-	local name, realm = UnitName("player");
-	if not realm then realm = GetRealmName(); end
-	if name then currentCharacter.name = name; end
-	if realm then currentCharacter.realm = realm; end
-	if app.Me then currentCharacter.text = app.Me; end
-	if app.GUID then currentCharacter.guid = app.GUID; end
-	if app.Level then currentCharacter.lvl = app.Level; end
-	if app.FactionID then currentCharacter.factionID = app.FactionID; end
-	if app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
-	if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
-	if app.Class then currentCharacter.class = app.Class; end
-	if race then currentCharacter.race = race; end
-	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
-	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
-	if not currentCharacter.BattlePets then currentCharacter.BattlePets = {}; end
-	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
-	if not currentCharacter.Exploration then currentCharacter.Exploration = {}; end
-	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
-	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
-	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
-	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
-	if not currentCharacter.RWP then currentCharacter.RWP = {}; end
-	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
-	if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
-	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-
-	-- Update timestamps.
-	local now = time();
-	local timeStamps = currentCharacter.TimeStamps;
-	if not timeStamps then
-		timeStamps = {};
-		currentCharacter.TimeStamps = timeStamps;
-	end
-	for key,value in pairs(currentCharacter) do
-		if type(value) == "table" and not timeStamps[key] then
-			timeStamps[key] = now;
-		end
-	end
-	currentCharacter.lastPlayed = now;
-	app.CurrentCharacter = currentCharacter;
-	app.AddEventHandler("OnPlayerLevelUp", function()
-		currentCharacter.lvl = app.Level;
-	end);
-
-	-- Account Wide Data Storage
-	local accountWideData = ATTAccountWideData;
-	if not accountWideData then
-		accountWideData = {};
-		ATTAccountWideData = accountWideData;
-	end
-	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
-	if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
-	if not accountWideData.Deaths then accountWideData.Deaths = 0; end
-	if not accountWideData.Exploration then accountWideData.Exploration = {}; end
-	if not accountWideData.Factions then accountWideData.Factions = {}; end
-	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
-	if not accountWideData.Quests then accountWideData.Quests = {}; end
-	if not accountWideData.RWP then accountWideData.RWP = {}; end
-	if not accountWideData.Spells then accountWideData.Spells = {}; end
-	if not accountWideData.Titles then accountWideData.Titles = {}; end
-
-	-- Account Wide Settings
-	local accountWideSettings = app.Settings.AccountWide;
-	local function SetAccountCollected(t, field, id, collected)
-		local container = accountWideData[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				AddToCollection(t);
-				container[id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
-			RemoveFromCollection(t);
-			container[id] = nil;
-		end
-	end
-	local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
-		local container = accountWideData[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				AddToCollection(t);
-				container[id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
-			RemoveFromCollection(t);
-			container[id] = nil;
-		end
-	end
-	local function SetCollected(t, field, id, collected)
-		local container = currentCharacter[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				if t and not (accountWideSettings[field] and accountWideData[field][id]) then
-					--print("SetCollected", field, id, accountWideSettings[field], accountWideData[field][id]);
-					AddToCollection(t);
-				end
-				container[id] = 1;
-				accountWideData[field][id] = 1;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-			else
-				accountWideData[field][id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			container[id] = nil;
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
-			for guid,other in pairs(characterData) do
-				local otherContainer = other[field];
-				if otherContainer and otherContainer[id] then
-					accountWideData[field][id] = 1;
-					return accountWideSettings[field] and 2;
-				end
-			end
-			if accountWideData[field][id] then
-				RemoveFromCollection(t);
-				accountWideData[field][id] = nil;
-			end
-		elseif accountWideSettings[field] and accountWideData[field][id] then
-			return 2;
-		end
-	end
-	local function SetCollectedForSubType(t, field, subtype, id, collected)
-		local container = currentCharacter[field];
-		local oldstate = container[id];
-		if collected then
-			if not oldstate then
-				if t and not (accountWideSettings[subtype] and accountWideData[field][id]) then
-					--print("SetCollectedForSubType", field, subtype, id, accountWideSettings[subtype], accountWideData[field][id]);
-					AddToCollection(t);
-				end
-				container[id] = 1;
-				accountWideData[field][id] = 1;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-			else
-				accountWideData[field][id] = 1;
-			end
-			return 1;
-		elseif oldstate then
-			container[id] = nil;
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
-			for guid,other in pairs(characterData) do
-				local otherContainer = other[field];
-				if otherContainer and otherContainer[id] then
-					accountWideData[field][id] = 1;
-					return accountWideSettings[subtype] and 2;
-				end
-			end
-			if accountWideData[field][id] then
-				RemoveFromCollection(t);
-				accountWideData[field][id] = nil;
-			end
-		elseif accountWideSettings[subtype] and accountWideData[field][id] then
-			return 2;
-		end
-	end
-	app.SetAccountCollected = SetAccountCollected;
-	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
-	app.SetCollected = SetCollected;
-	app.SetCollectedForSubType = SetCollectedForSubType;
-	
-	-- Notify Event Handlers that Saved Variable Data is available.
-	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
-	
-	-- Check to see if we have a leftover ItemDB cache
-	GetDataMember("GroupQuestsByGUID", {});
-	GetDataMember("ValidSuffixesPerItemID", {});
-
-	-- Clean up settings
-	local oldsettings = {};
-	for i,key in ipairs({
-		"GroupQuestsByGUID",
-		"LocalizedCategoryNames",
-		"LocalizedFlightPathNames",
-		"Reagents",
-		"SoftReserves",
-		"SoftReservePersistence",
-		"ValidSuffixesPerItemID",
-	}) do
-		oldsettings[key] = AllTheThingsAD[key];
-	end
-	wipe(AllTheThingsAD);
-	for key,value in pairs(oldsettings) do
-		AllTheThingsAD[key] = value;
-	end
-
-	-- Wipe the Debugger Data
-	ATTClassicDebugData = nil;
-
-	-- Tooltip Settings
-	app.Settings:Initialize();
+	local handler = ADDON_LOADED_HANDLERS[addonName];
+	if handler then handler(); end
 end
 
+app:RegisterEvent("VARIABLES_LOADED");
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()
 		coroutine.yield();
