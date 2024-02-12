@@ -350,6 +350,15 @@ applyclassicphase = function(phase, data, force)
 	return data;
 end
 -- #endif
+local function ProcessProviderForRetailAsUncollectible(provider)
+	if provider then
+		if provider[1] == "i" then
+			-- TODO: If ya'll actually use Objectives some day I'd be thrilled,
+			-- but if not, this will move that stuff into uncollectible for ya!
+			root(ROOTS.Uncollectible, { i(provider[2]) });
+		end
+	end
+end
 
 local squishes = {};
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
@@ -990,7 +999,20 @@ qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI un
 	return t;
 end
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
-	return struct("objectiveID", id, t);
+	t = struct("objectiveID", id, t);
+	-- #if NOT ANYCLASSIC
+	ProcessProviderForRetailAsUncollectible(t.provider);
+	if t.providers then
+		for i,provider in ipairs(t.providers) do
+			ProcessProviderForRetailAsUncollectible(provider);
+		end
+	end
+	-- #endif
+	if t.itemID then
+		print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
+		print("Use a provider entry instead!");
+	end
+	return t;
 end
 objective = questobjective;								-- Create a QUEST OBJECTIVE Object (alternative shortcut)
 qo = questobjective;									-- Create a QUEST OBJECTIVE Object (alternative shortcut)
