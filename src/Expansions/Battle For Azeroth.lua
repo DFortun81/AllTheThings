@@ -56,7 +56,7 @@ if C_AzeriteEssence and app.GameBuildVersion >= 80000 then
 			return t.info.rank or 0;
 		end,
 	});
-	
+
 	-- Subroutines
 	local select = select;
 	local function ContainsValue(val, ...)
@@ -201,9 +201,9 @@ if C_AzeriteEssence and app.GameBuildVersion >= 80000 then
 			end
 		end
 	end
-	
+
 	-- Event Handling
-	app.AddEventHandler("OnReady", function()
+	app.AddEventHandler("OnLoad", function()
 		app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_dungeons", bfa_azerite_armor_chest_dungeons);
 		app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_warfront", bfa_azerite_armor_chest_warfront);
 		app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_zonedrops", bfa_azerite_armor_chest_zonedrops);
@@ -217,7 +217,7 @@ if C_AzeriteEssence and app.GameBuildVersion >= 80000 then
 		else
 			currentCharacter.AzeriteEssenceRanks = CurrentAzeriteEssenceRanks;
 		end
-		
+
 		local accountWide = accountWideData.AzeriteEssenceRanks;
 		if accountWide then
 			AccountWideAzeriteEssenceRanks = accountWide;

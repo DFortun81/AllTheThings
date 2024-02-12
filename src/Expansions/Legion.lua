@@ -415,7 +415,7 @@ if C_ArtifactUI then
 			end
 		end
 	end
-	app.AddEventHandler("OnReady", function()
+	app.AddEventHandler("OnLoad", function()
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app.RegisterSymlinkResolveFunction("relictype", ResolveRelicType);
 		app.RegisterSymlinkSubroutine("legion_relinquished_base", legion_relinquished_base);

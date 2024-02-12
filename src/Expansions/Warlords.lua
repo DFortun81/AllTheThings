@@ -7,7 +7,7 @@ local C_Garrison = C_Garrison;
 if C_Garrison then
 	local select, setmetatable = select, setmetatable;
 	local L = app.L;
-	
+
 	-- Buildings
 	local CurrentGarrisonBuildings = {};
 	local C_Garrison_GetBuildingInfo, GetItemInfo, GetItemInfoInstant
@@ -65,7 +65,7 @@ if C_Garrison then
 			return app.SetCollected(t, "GarrisonBuildings", id, not select(11, C_Garrison_GetBuildingInfo(id)));
 		end,
 	}, (function(t) return t.itemID; end));
-	
+
 	-- Missions
 	local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
 	app.CreateGarrisonMission = app.CreateClass("GarrisonMission", "missionID", {
@@ -76,7 +76,7 @@ if C_Garrison then
 			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
 		end,
 	});
-	
+
 	-- Talents
 	local C_Garrison_GetTalentInfo = C_Garrison.GetTalentInfo;
 	local GarrisonTalentInfoMeta = { __index = function(t, key)
@@ -111,7 +111,7 @@ if C_Garrison then
 			return C_Garrison_GetTalentInfo(t.garrisonTalentID).researched;
 		end,
 	});
-	
+
 	-- Followers (Not Warlords exclusive, but the API originally was added with Warlords!)
 	local CurrentFollowers, AccountWideFollowers = {}, {};
 	local C_Garrison_GetFollowerInfo, C_Garrison_GetFollowerLinkByID, C_Garrison_IsFollowerCollected
@@ -170,7 +170,7 @@ if C_Garrison then
 			end
 		end,
 	});
-	
+
 	-- Subroutines
 	local function common_wod_dungeon_drop(ResolveFunctions)
 		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
@@ -191,9 +191,9 @@ if C_Garrison then
 			where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
 		end
 	end
-	
+
 	-- Event Handling
-	app.AddEventHandler("OnReady", function()
+	app.AddEventHandler("OnLoad", function()
 		app.RegisterSymlinkSubroutine("common_wod_dungeon_drop", common_wod_dungeon_drop);
 		app.RegisterSymlinkSubroutine("common_wod_dungeon_drop_tw", common_wod_dungeon_drop_tw);
 	end);
@@ -207,7 +207,7 @@ if C_Garrison then
 			accountWideData.GarrisonBuildings = accountWideData.Buildings;
 			accountWideData.Buildings = nil;
 		end
-		
+
 		-- Cache the current character's garrison buildings
 		local characterData = currentCharacter.GarrisonBuildings;
 		if characterData then
@@ -218,7 +218,7 @@ if C_Garrison then
 		if not accountWideData.GarrisonBuildings then
 			accountWideData.GarrisonBuildings = {};
 		end
-		
+
 		-- Follower API might have originated with Warlords, but they use this for BFA+ as well.
 		local characterData = currentCharacter.Followers;
 		if characterData then

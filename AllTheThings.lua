@@ -1998,9 +1998,6 @@ local ResolveFunctions = {
 		end
 	end,
 };
-app.RegisterSymlinkResolveFunction = function(name, method)
-	ResolveFunctions[name] = method;
-end
 
 -- Replace achievementy_criteria function if criteria API doesn't exist
 if GetAchievementNumCriteria then
@@ -2256,10 +2253,33 @@ local SubroutineCache = {
 		end
 	end,
 };
+app.RegisterSymlinkResolveFunction = function(name, method)
+	ResolveFunctions[name] = method;
+end
 app.RegisterSymlinkSubroutine = function(name, method)
 	-- NOTE: This passes a function to call immediately and cache used resolve functions.
 	SubroutineCache[name] = method(ResolveFunctions);
 end
+-- TODO: when symlink becomes a stand-alone Module, it should work like this
+-- Don't expect every caller to know what event is proper for registering a symlink
+-- Plus we need to ensure RegisterSymlinkResolveFunction handles additions prior to all RegisterSymlinkSubroutine
+-- Since we won't know the order of the callers assigning the handlers
+-- local RegisteredSymlinkSubroutines, RegisteredResolveFunctions = {}
+-- app.RegisterSymlinkResolveFunction = function(name, method)
+-- 	RegisteredResolveFunctions[name] = method
+-- end
+-- app.RegisterSymlinkSubroutine = function(name, method)
+-- 	-- NOTE: This stores a function to call immediately OnLoad and cache used resolve functions.
+-- 	RegisteredSymlinkSubroutines[name] = method
+-- end
+-- app.AddEventHandler("OnLoad", function()
+-- 	for name,method in pairs(RegisteredResolveFunctions) do
+-- 		ResolveFunctions[name] = method
+-- 	end
+-- 	for name,method in pairs(RegisteredSymlinkSubroutines) do
+-- 		SubroutineCache[name] = method(ResolveFunctions)
+-- 	end
+-- end);
 -- Instruction to perform a specific subroutine using provided input values
 ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 	local subroutine = SubroutineCache[sub];
@@ -2541,12 +2561,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		print("GetSearchResults: Invalid paramA: nil");
 		return nil, true;
 	end
-	
+
 	-- If we are searching for only one parameter, it is a raw link.
 	local rawlink;
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
-	
+
 	-- This method can be called nested, and some logic should only process for the initial call
 	local isTopLevelSearch;
 	if not InitialCachedSearch then
@@ -2715,7 +2735,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
 				end
 			end
-			
+
 			app.AddArtifactRelicInformation(itemID, rawlink, info, group);
 		end
 	end

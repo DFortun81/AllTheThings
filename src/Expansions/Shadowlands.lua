@@ -15,9 +15,9 @@ if app.GameBuildVersion > 90000 then
 			invtype(finalized, searchResults, o, "invtype", inv);	-- Only slot-specific
 		end
 	end
-	
+
 	-- Event Handling
-	app.AddEventHandler("OnReady", function()
+	app.AddEventHandler("OnLoad", function()
 		app.RegisterSymlinkSubroutine("korthian_armaments", korthian_armaments);
 	end);
 end
