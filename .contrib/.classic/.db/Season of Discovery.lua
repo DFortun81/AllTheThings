@@ -1447,14 +1447,45 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				}),
 
 				-- iLvl 40 - Crafted Supplies (Tier 3)
+				i(215407, {	-- Waylaid Supplies: Barbaric Shoulders
+					["cost"] = { { "i", 5964, 4 } },	-- Barbaric Shoulders
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
 				i(215402, { -- Waylaid Supplies: Big Iron Bombs
 					["cost"] = { { "i", 4394, 8 } },	-- Big Iron Bomb
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
+				i(215401, {	-- Waylaid Supplies: Compact Harvest Reaper Kits
+					["cost"] = { { "i", 4391, 2 } },	-- Compact Harvest Reaper Kits
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
+				i(215414, {	-- Waylaid Supplies: Crimson Silk Pantaloons
+					["cost"] = { { "i", 7062, 4 } },	-- Crimson Silk Pantaloons
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
 				i(215403, { -- Waylaid Supplies: Deadly Scopes
 					["cost"] = { { "i", 10546, 4 } },	-- Deadly Scopes
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
+				i(215410, {	-- Waylaid Supplies: Dusky Belts
+					-- TODO: Cost is currently bugged ingame. Fix when Blizzard also does.
+					["cost"] = { { "i", 2840, 20 } },	-- Dusky Belts
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
+				i(215395, {	-- Waylaid Supplies: Elixirs of Agility
+					["cost"] = { { "i", 8949, 12 } },	-- Elixirs of Agility
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
@@ -1471,6 +1502,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
+				i(215385, {	-- Waylaid Supplies: Gold Bars
+					["cost"] = { { "i", 3577, 4 } },	-- Gold Bars
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
+				i(215393, {	-- Waylaid Supplies: Greater Healing Potions
+					["cost"] = { { "i", 1710, 16 } },	-- Greater Healing Potions
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
 				i(215398, { -- Waylaid Supplies: Green Iron Bracers
 					["cost"] = { { "i", 3835, 5 } },	-- Green Iron Bracers
 					["groups"] = {
@@ -1483,13 +1526,32 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
+				i(215399, {	-- Waylaid Supplies: Heavy Mithril Gauntlets
+					["cost"] = { { "i", 7919, 4 } },	-- Heavy Mithril Gauntlets
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
+				i(215415, {	-- Waylaid Supplies: Rich Purple Silk Shirts
+					["cost"] = { { "i", 4335, 5 } },	-- Rich Purple Silk Shirts
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
+				i(215412, {	-- Waylaid Supplies: Shadowskin Gloves
+					-- TODO: Cost is currently bugged ingame. Fix when Blizzard also does.
+					["cost"] = { { "i", 2840, 20 } },	-- Dusky Belts
+					["groups"] = {
+						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					},
+				}),
 				i(215400, { -- Waylaid Supplies: Solid Grinding Stones
 					["cost"] = { { "i", 7966, 10 } },	-- Solid Grinding Stones
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				}),
-				
+
 				-- iLvl 40 - Crafted Supplies (Tier 4)
 				i(215396, { -- Waylaid Supplies: Elixirs of Greater Defense
 					["cost"] = { { "i", 8951, 14 } },	-- Elixir of Greater Defense
@@ -1670,8 +1732,50 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				}),
+				i(215419, {	-- Waylaid Supplies: Heavy Silk Bandages
+					["cost"] = { { "i", 6451, 10 } },	-- Heavy Silk Bandages
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				}),
+				i(215390, {	-- Waylaid Supplies: Khadgar's Whisker
+					["cost"] = { { "i", 3358, 10 } },	-- Khadgar's Whisker
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				}),
+				i(215386, {	-- Waylaid Supplies: Mithril Bars
+					["cost"] = { { "i", 3860, 6 } },	-- Mithril Bars
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				}),
+				i(215392, {	-- Waylaid Supplies: Purple Lotus
+					["cost"] = { { "i", 8831, 8 } },	-- Purple Lotus
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				}),
 				i(215420, {	-- Waylaid Supplies: Rockscale Cod
 					["cost"] = { { "i", 4594, 40 } },	-- Rockscale Cod
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				}),
+				i(215417, {	-- Waylaid Supplies: Soothing Turtle Bisque
+					["cost"] = { { "i", 3729, 10 } },	-- Soothing Turtle Bisque
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				}),
+				i(215418, {	-- Waylaid Supplies: Spider Sausages
+					["cost"] = { { "i", 17222, 10 } },	-- Spider Sausages
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				}),
+				i(215388, {	-- Waylaid Supplies: Thick Leather
+					["cost"] = { { "i", 4304, 10 } },	-- Thick Leather
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
