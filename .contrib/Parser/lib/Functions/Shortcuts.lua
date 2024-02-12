@@ -1001,7 +1001,7 @@ qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI un
 end
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	t = struct("objectiveID", id, t);
-	-- #if NOT ANYCLASSIC
+	-- #if NOT OBJECTIVES
 	ProcessProviderForRetailAsUncollectible(t.provider);
 	if t.providers then
 		for i,provider in ipairs(t.providers) do
