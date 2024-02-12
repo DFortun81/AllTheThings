@@ -1665,31 +1665,22 @@ local ResolveFunctions = {
 	-- Instruction to select the parent object of the group that owns the symbolic link
 	["selectparent"] = function(finalized, searchResults, o, cmd, level)
 		level = level or 1;
-		local parent = o.sourceParent or o.parent
-		-- app.PrintDebug("selectparent",level,parent and parent.hash)
-		while level > 1 do
-			parent = parent and parent.parent;
-			level = level - 1;
-			-- app.PrintDebug("selectparent",level,parent and parent.hash)
-		end
-		if parent then
-			tinsert(searchResults, parent);
-		else
-			-- an extra search for the specific 'o' to retrieve the source parent since the parent is not actually attached to the reference resolving the symlink
-			local searchedObject = app.SearchForMergedObject(o.key, o[o.key]);
-			if searchedObject then
-				parent = searchedObject.parent;
-				while level > 1 do
-					parent = parent and parent.parent;
-					level = level - 1;
-				end
-				if parent then
-					tinsert(searchResults, parent);
-					return;
-				end
+		-- an search for the specific 'o' to retrieve the source parent since the parent is not always actually attached to the reference resolving the symlink
+		local parent
+		local searchedObject = app.SearchForMergedObject(o.key, o[o.key]);
+		if searchedObject then
+			parent = searchedObject.parent;
+			while level > 1 do
+				parent = parent and parent.parent;
+				level = level - 1;
 			end
-			app.print("Failed to select parent for",o.hash);
+			if parent then
+				-- app.PrintDebug("selectparent-searched",level,parent.hash,parent.text)
+				tinsert(searchResults, parent);
+				return;
+			end
 		end
+		app.print("'selectparent' failed for",o.hash);
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
 	["selectprofession"] = function(finalized, searchResults, o, cmd, requireSkill)

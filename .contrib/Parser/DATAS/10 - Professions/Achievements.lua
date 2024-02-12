@@ -294,8 +294,17 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	}),
 	ach(13516, {	-- Massive Tool
 		-- #if AFTER 10.1.7
-		-- Identical Criteria as Main Achievement
-		["sym"] = {{"partial_achievement",18778}},	-- Massive Toolshed
+		-- Since all possible Criteria are actual Acheivements... technically meta-achievement status
+		["sym"] = {{"meta_achievement",
+			18775,	-- Iwen's Enchanting Rod
+			18773,	-- Jewelhammer's Focus
+			18771,	-- Khaz'gorian Smithing Hammer
+			18777,	-- Mallet of Thunderous Skins
+			18772,	-- Sanguine Feather Quill of Lana'thel
+			18770,	-- Silas' Sphere of Transmutation
+			18774,	-- Synchronous Thread
+			18776,	-- The Ub3r-Spanner
+		}},
 		-- #else
 		["providers"] = {
 			{ "i", 164766 },	-- Iwen's Enchanting Rod

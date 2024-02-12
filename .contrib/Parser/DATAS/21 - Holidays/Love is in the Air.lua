@@ -2823,8 +2823,8 @@ for i,o in ipairs({
 		},
 		-- #if AFTER MOP
 		["sym"] = {
-			{ "selectparent" },	-- Select the holiday root.
-			{ "pop" },	-- Get the Rewards.
+			{ "selectparent", 2 },	-- >Bosses>LITA
+			{ "pop" },	-- >Rewards
 			{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
 			{ "pop" },	-- Get the Rewards.
 			{ "exclude", "itemID", 22218 },	-- Exclude Handful of Rose Petals
