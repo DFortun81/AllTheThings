@@ -355,7 +355,8 @@ local function ProcessProviderForRetailAsUncollectible(provider)
 		if provider[1] == "i" then
 			-- TODO: If ya'll actually use Objectives some day I'd be thrilled,
 			-- but if not, this will move that stuff into uncollectible for ya!
-			root(ROOTS.Uncollectible, { i(provider[2]) });
+			local itemID = provider[2];
+			root(ROOTS.Uncollectible)[itemID] = { ["itemID"] = itemID };
 		end
 	end
 end
