@@ -7,6 +7,9 @@ BURDEN_OF_ETERNITY = createHeader({
 	text = {
 		en = [[~GetSpellInfo(147343)]],
 	},
+	-- TODO: would like a way to make the custom header use automatic header logic in-game
+	-- to get an Item-link formatted name for further clarity on the purpose of the header and in tooltips
+	-- e.g. auto = i:103982
 	lore = {
 		en = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 		fr = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
@@ -14,7 +17,7 @@ BURDEN_OF_ETERNITY = createHeader({
 		cn = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
 	},
 });
---[[
+--[[]]
 -- NOTE: Leaving this document in here if we ever adjust toolips to function properly.
 -- This would be the desired format for how upgrades should be.
 root(ROOTS.Zones, {
@@ -2231,7 +2234,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(103982, {	-- Burden of Eternity
-						["sym"] = { {"fill"} },	-- fill this item with cached data
 						["crs"] = {
 							73174,	-- Archiereus of Flame
 							73666,	-- Archiereus of Flame
@@ -2268,16 +2270,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(102318, {	-- Timeless Cloak
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101889),	-- Amaranthine Cloak
-								i(101879),	-- Cliffbreaker Drape
-								i(101939),	-- Elder Tortoiseshell Drape
-								i(101935),	-- Kiln-Stoker Cloak
-								i(101917),	-- Warmsun Cloak
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101889),	-- Amaranthine Cloak
+						-- 		i(101879),	-- Cliffbreaker Drape
+						-- 		i(101939),	-- Elder Tortoiseshell Drape
+						-- 		i(101935),	-- Kiln-Stoker Cloak
+						-- 		i(101917),	-- Warmsun Cloak
+						-- 	}
+						-- }),
 						i(101800),	-- Amaranthine Cloak
 						i(101790),	-- Cliffbreaker Drape
 						i(101852),	-- Elder Tortoiseshell Drape
@@ -2306,90 +2308,90 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(102287, {	-- Timeless Cloth Helm
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101891),	-- Amaranthine Cowl
-								i(101901),	-- Cloudscorcher Cowl
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101891),	-- Amaranthine Cowl
+						-- 		i(101901),	-- Cloudscorcher Cowl
+						-- 	}
+						-- }),
 						i(101802),	-- Amaranthine Cowl
 						i(101812),	-- Cloudscorcher Cowl
 					}),
 					i(102289, {	-- Timeless Cloth Spaulders
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101897),	-- Amaranthine Shoulderpads
-								i(101906),	-- Cloudscorcher Shoulderpads
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101897),	-- Amaranthine Shoulderpads
+						-- 		i(101906),	-- Cloudscorcher Shoulderpads
+						-- 	}
+						-- }),
 						i(101808),	-- Amaranthine Shoulderpads
 						i(101817),	-- Cloudscorcher Shoulderpads
 					}),
 					i(102284, {	-- Timeless Cloth Robes
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101895),	-- Amaranthine Robes
-								i(101904),	-- Cloudscorcher Robes
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101895),	-- Amaranthine Robes
+						-- 		i(101904),	-- Cloudscorcher Robes
+						-- 	}
+						-- }),
 						i(101806),	-- Amaranthine Robes
 						i(101815),	-- Cloudscorcher Robes
 					}),
 					i(102321, {	-- Timeless Cloth Bracers
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101899),	-- Amaranthine Wristwraps
-								i(101907),	-- Cloudscorcher Wristwraps
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101899),	-- Amaranthine Wristwraps
+						-- 		i(101907),	-- Cloudscorcher Wristwraps
+						-- 	}
+						-- }),
 						i(101810),	-- Amaranthine Wristwraps
 						i(101818),	-- Cloudscorcher Wristwraps
 					}),
 					i(102286, {	-- Timeless Cloth Gloves
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101892),	-- Amaranthine Handwraps
-								i(101902),	-- Cloudscorcher Handwraps
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101892),	-- Amaranthine Handwraps
+						-- 		i(101902),	-- Cloudscorcher Handwraps
+						-- 	}
+						-- }),
 						i(101803),	-- Amaranthine Handwraps
 						i(101813),	-- Cloudscorcher Handwraps
 					}),
 					i(102290, {	-- Timeless Cloth Belt
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101890),	-- Amaranthine Cord
-								i(101900),	-- Cloudscorcher Belt
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101890),	-- Amaranthine Cord
+						-- 		i(101900),	-- Cloudscorcher Belt
+						-- 	}
+						-- }),
 						i(101801),	-- Amaranthine Cord
 						i(101811),	-- Cloudscorcher Belt
 					}),
 					i(102288, {	-- Timeless Cloth Leggings
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101893),	-- Amaranthine Leggings
-								i(101903),	-- Cloudscorcher Leggings
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101893),	-- Amaranthine Leggings
+						-- 		i(101903),	-- Cloudscorcher Leggings
+						-- 	}
+						-- }),
 						i(101804),	-- Amaranthine Leggings
 						i(101814),	-- Cloudscorcher Leggings
 					}),
 					i(102285, {	-- Timeless Cloth Boots
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101896),	-- Amaranthine Sandals
-								i(101905),	-- Cloudscorcher Sandals
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101896),	-- Amaranthine Sandals
+						-- 		i(101905),	-- Cloudscorcher Sandals
+						-- 	}
+						-- }),
 						i(101807),	-- Amaranthine Sandals
 						i(101816),	-- Cloudscorcher Sandals
 					}),
@@ -2415,90 +2417,90 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(102280, {	-- Timeless Leather Helm
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101953),	-- Cranefeather Hood
-								i(101874),	-- Fire-Chanter Hood
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101953),	-- Cranefeather Hood
+						-- 		i(101874),	-- Fire-Chanter Hood
+						-- 	}
+						-- }),
 						i(101866),	-- Cranefeather Hood
 						i(101785),	-- Fire-Chanter Hood
 					}),
 					i(102282, {	-- Timeless Leather Spaulders
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101955),	-- Cranefeather Shoulders
-								i(101876),	-- Fire-Chanter Shoulders
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101955),	-- Cranefeather Shoulders
+						-- 		i(101876),	-- Fire-Chanter Shoulders
+						-- 	}
+						-- }),
 						i(101868),	-- Cranefeather Shoulders
 						i(101787),	-- Fire-Chanter Shoulders
 					}),
 					i(102277, {	-- Timeless Leather Chestpiece
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101954),	-- Cranefeather Jerkin
-								i(101875),	-- Fire-Chanter Jerkin
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101954),	-- Cranefeather Jerkin
+						-- 		i(101875),	-- Fire-Chanter Jerkin
+						-- 	}
+						-- }),
 						i(101867),	-- Cranefeather Jerkin
 						i(101786),	-- Fire-Chanter Jerkin
 					}),
 					i(102322, {	-- Timeless Leather Bracers
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101949),	-- Cranefeather Bindings
-								i(101870),	-- Fire-Chanter Bindings
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101949),	-- Cranefeather Bindings
+						-- 		i(101870),	-- Fire-Chanter Bindings
+						-- 	}
+						-- }),
 						i(101862),	-- Cranefeather Bindings
 						i(101781),	-- Fire-Chanter Bindings
 					}),
 					i(102279, {	-- Timeless Leather Gloves
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101952),	-- Cranefeather Gloves
-								i(101873),	-- Fire-Chanter Gloves
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101952),	-- Cranefeather Gloves
+						-- 		i(101873),	-- Fire-Chanter Gloves
+						-- 	}
+						-- }),
 						i(101865),	-- Cranefeather Gloves
 						i(101784),	-- Fire-Chanter Gloves
 					}),
 					i(102283, {	-- Timeless Leather Belt
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101956),	-- Cranefeather Waistband
-								i(101877),	-- Fire-Chanter Waistband
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101956),	-- Cranefeather Waistband
+						-- 		i(101877),	-- Fire-Chanter Waistband
+						-- 	}
+						-- }),
 						i(101869),	-- Cranefeather Waistband
 						i(101788),	-- Fire-Chanter Waistband
 					}),
 					i(102281, {	-- Timeless Leather Leggings
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101951),	-- Cranefeather Britches
-								i(101872),	-- Fire-Chanter Britches
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101951),	-- Cranefeather Britches
+						-- 		i(101872),	-- Fire-Chanter Britches
+						-- 	}
+						-- }),
 						i(101864),	-- Cranefeather Britches
 						i(101783),	-- Fire-Chanter Britches
 					}),
 					i(102278, {	-- Timeless Leather Boots
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101950),	-- Cranefeather Boots
-								i(101871),	-- Fire-Chanter Boots
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101950),	-- Cranefeather Boots
+						-- 		i(101871),	-- Fire-Chanter Boots
+						-- 	}
+						-- }),
 						i(101863),	-- Cranefeather Boots
 						i(101782),	-- Fire-Chanter Boots
 					}),
@@ -2524,90 +2526,90 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(102273, {	-- Timeless Mail Helm
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101931),	-- Crimsonscale Helm
-								i(101923),	-- Ordon Legend-Keeper Helm
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101931),	-- Crimsonscale Helm
+						-- 		i(101923),	-- Ordon Legend-Keeper Helm
+						-- 	}
+						-- }),
 						i(101842),	-- Crimsonscale Helm
 						i(101834),	-- Ordon Legend-Keeper Helm
 					}),
 					i(102275, {	-- Timeless Mail Shoulders
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101933),	-- Crimsonscale Spaulders
-								i(101925),	-- Ordon Legend-Keeper Spaulders
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101933),	-- Crimsonscale Spaulders
+						-- 		i(101925),	-- Ordon Legend-Keeper Spaulders
+						-- 	}
+						-- }),
 						i(101844),	-- Crimsonscale Spaulders
 						i(101836),	-- Ordon Legend-Keeper Spaulders
 					}),
 					i(102270, {	-- Timeless Mail Chestpiece
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101934),	-- Crimsonscale Vest
-								i(101926),	-- Ordon Legend-Keeper Vest
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101934),	-- Crimsonscale Vest
+						-- 		i(101926),	-- Ordon Legend-Keeper Vest
+						-- 	}
+						-- }),
 						i(101845),	-- Crimsonscale Vest
 						i(101837),	-- Ordon Legend-Keeper Vest
 					}),
 					i(102323, {	-- Timeless Mail Bracers
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101928),	-- Crimsonscale Bracers
-								i(101920),	-- Ordon Legend-Keeper Bracers
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101928),	-- Crimsonscale Bracers
+						-- 		i(101920),	-- Ordon Legend-Keeper Bracers
+						-- 	}
+						-- }),
 						i(101839),	-- Crimsonscale Bracers
 						i(101831),	-- Ordon Legend-Keeper Bracers
 					}),
 					i(102272, {	-- Timeless Mail Gloves
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101929),	-- Crimsonscale Gauntlets
-								i(101921),	-- Ordon Legend-Keeper Gauntlets
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101929),	-- Crimsonscale Gauntlets
+						-- 		i(101921),	-- Ordon Legend-Keeper Gauntlets
+						-- 	}
+						-- }),
 						i(101840),	-- Crimsonscale Gauntlets
 						i(101832),	-- Ordon Legend-Keeper Gauntlets
 					}),
 					i(102276, {	-- Timeless Mail Belt
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101927),	-- Crimsonscale Belt
-								i(101919),	-- Ordon Legend-Keeper Belt
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101927),	-- Crimsonscale Belt
+						-- 		i(101919),	-- Ordon Legend-Keeper Belt
+						-- 	}
+						-- }),
 						i(101838),	-- Crimsonscale Belt
 						i(101830),	-- Ordon Legend-Keeper Belt
 					}),
 					i(102274, {	-- Timeless Mail Leggings
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101932),	-- Crimsonscale Legguards
-								i(101924),	-- Ordon Legend-Keeper Legguards
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101932),	-- Crimsonscale Legguards
+						-- 		i(101924),	-- Ordon Legend-Keeper Legguards
+						-- 	}
+						-- }),
 						i(101843),	-- Crimsonscale Legguards
 						i(101835),	-- Ordon Legend-Keeper Legguards
 					}),
 					i(102271, {	-- Timeless Mail Boots
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101930),	-- Crimsonscale Greaves
-								i(101922),	-- Ordon Legend-Keeper Greaves
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101930),	-- Crimsonscale Greaves
+						-- 		i(101922),	-- Ordon Legend-Keeper Greaves
+						-- 	}
+						-- }),
 						i(101841),	-- Crimsonscale Greaves
 						i(101833),	-- Ordon Legend-Keeper Greaves
 					}),
@@ -2641,120 +2643,120 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(102266, {	-- Timeless Plate Helm
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101882),	-- Cliffbreaker Helm
-								i(101942),	-- Elder Tortoiseshell Helm
-								i(101911),	-- Everbright Helm
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101882),	-- Cliffbreaker Helm
+						-- 		i(101942),	-- Elder Tortoiseshell Helm
+						-- 		i(101911),	-- Everbright Helm
+						-- 	}
+						-- }),
 						i(101793),	-- Cliffbreaker Helm
 						i(101855),	-- Elder Tortoiseshell Helm
 						i(101822),	-- Everbright Helm
 					}),
 					i(102268, {	-- Timeless Plate Spaulders
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101885),	-- Cliffbreaker Pauldrons
-								i(101945),	-- Elder Tortoiseshell Pauldrons
-								i(101913),	-- Everbright Pauldrons
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101885),	-- Cliffbreaker Pauldrons
+						-- 		i(101945),	-- Elder Tortoiseshell Pauldrons
+						-- 		i(101913),	-- Everbright Pauldrons
+						-- 	}
+						-- }),
 						i(101796),	-- Cliffbreaker Pauldrons
 						i(101858),	-- Elder Tortoiseshell Pauldrons
 						i(101824),	-- Everbright Pauldrons
 					}),
 					i(102263, {	-- Timeless Plate Chestpiece
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101878),	-- Cliffbreaker Breastplate
-								i(101938),	-- Elder Tortoiseshell Breastplate
-								i(101908),	-- Everbright Breastplate
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101878),	-- Cliffbreaker Breastplate
+						-- 		i(101938),	-- Elder Tortoiseshell Breastplate
+						-- 		i(101908),	-- Everbright Breastplate
+						-- 	}
+						-- }),
 						i(101789),	-- Cliffbreaker Breastplate
 						i(101851),	-- Elder Tortoiseshell Breastplate
 						i(101819),	-- Everbright Breastplate
 					}),
 					i(102320, {	-- Timeless Plate Bracers
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101888),	-- Cliffbreaker Vambraces
-								i(101948),	-- Elder Tortoiseshell Vambraces
-								i(101915),	-- Everbright Vambraces
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101888),	-- Cliffbreaker Vambraces
+						-- 		i(101948),	-- Elder Tortoiseshell Vambraces
+						-- 		i(101915),	-- Everbright Vambraces
+						-- 	}
+						-- }),
 						i(101799),	-- Cliffbreaker Vambraces
 						i(101861),	-- Elder Tortoiseshell Vambraces
 						i(101826),	-- Everbright Vambraces
 					}),
 					i(102265, {	-- Timeless Plate Gloves
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101880),	-- Cliffbreaker Gauntlets
-								i(101940),	-- Elder Tortoiseshell Gauntlets
-								i(101909),	-- Everbright Gauntlets
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101880),	-- Cliffbreaker Gauntlets
+						-- 		i(101940),	-- Elder Tortoiseshell Gauntlets
+						-- 		i(101909),	-- Everbright Gauntlets
+						-- 	}
+						-- }),
 						i(101791),	-- Cliffbreaker Gauntlets
 						i(101853),	-- Elder Tortoiseshell Gauntlets
 						i(101820),	-- Everbright Gauntlets
 					}),
 					i(102269, {	-- Timeless Plate Belt
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101881),	-- Cliffbreaker Girdle
-								i(101941),	-- Elder Tortoiseshell Girdle
-								i(101910),	-- Everbright Girdle
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101881),	-- Cliffbreaker Girdle
+						-- 		i(101941),	-- Elder Tortoiseshell Girdle
+						-- 		i(101910),	-- Everbright Girdle
+						-- 	}
+						-- }),
 						i(101792),	-- Cliffbreaker Girdle
 						i(101854),	-- Elder Tortoiseshell Girdle
 						i(101821),	-- Everbright Girdle
 					}),
 					i(102267, {	-- Timeless Plate Leggings
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101883),	-- Cliffbreaker Legplates
-								i(101943),	-- Elder Tortoiseshell Legplates
-								i(101912),	-- Everbright Legplates
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101883),	-- Cliffbreaker Legplates
+						-- 		i(101943),	-- Elder Tortoiseshell Legplates
+						-- 		i(101912),	-- Everbright Legplates
+						-- 	}
+						-- }),
 						i(101794),	-- Cliffbreaker Legplates
 						i(101856),	-- Elder Tortoiseshell Legplates
 						i(101823),	-- Everbright Legplates
 					}),
 					i(102264, {	-- Timeless Plate Boot
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101886),	-- Cliffbreaker Sabatons
-								i(101946),	-- Elder Tortoiseshell Sabatons
-								i(101914),	-- Everbright Sabatons
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101886),	-- Cliffbreaker Sabatons
+						-- 		i(101946),	-- Elder Tortoiseshell Sabatons
+						-- 		i(101914),	-- Everbright Sabatons
+						-- 	}
+						-- }),
 						i(101797),	-- Cliffbreaker Sabatons
 						i(101859),	-- Elder Tortoiseshell Sabatons
 						i(101825),	-- Everbright Sabatons
 					}),
 					i(104345, {	-- Timeless Lavalliere
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101894),	-- Amaranthine Necklace
-								i(101884),	-- Cliffbreaker Neck
-								i(101944),	-- Elder Tortoiseshell Neck
-								i(101936),	-- Kiln-Stoker Collar
-								i(101916),	-- Warmsun Choker
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101894),	-- Amaranthine Necklace
+						-- 		i(101884),	-- Cliffbreaker Neck
+						-- 		i(101944),	-- Elder Tortoiseshell Neck
+						-- 		i(101936),	-- Kiln-Stoker Collar
+						-- 		i(101916),	-- Warmsun Choker
+						-- 	}
+						-- }),
 						i(101805),	-- Amaranthine Necklace
 						i(101795),	-- Cliffbreaker Choker
 						i(101857),	-- Elder Tortoiseshell Gorget
@@ -2762,15 +2764,15 @@ root(ROOTS.Zones, {
 						i(101827),	-- Warmsun Choker
 					}),
 					i(102291, {	-- Timeless Signet
-						n(BURDEN_OF_ETERNITY, {
-							["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
-							["groups"] = {
-								i(101898),	-- Cliffbreaker Seal
-								i(101947),	-- Elder Tortoiseshell Seal
-								i(101937),	-- Kiln-Stoker Ring
-								i(101918),	-- Warmsun Ring
-							}
-						}),
+						-- n(BURDEN_OF_ETERNITY, {
+						-- 	["cost"] = { { "i", 103982, 1 } },	-- Burden of Eternity
+						-- 	["groups"] = {
+						-- 		i(101898),	-- Cliffbreaker Seal
+						-- 		i(101947),	-- Elder Tortoiseshell Seal
+						-- 		i(101937),	-- Kiln-Stoker Ring
+						-- 		i(101918),	-- Warmsun Ring
+						-- 	}
+						-- }),
 						i(101809),	-- Amaranthine Signet
 						i(101798),	-- Cliffbreaker Seal
 						i(101860),	-- Elder Tortoiseshell Seal
