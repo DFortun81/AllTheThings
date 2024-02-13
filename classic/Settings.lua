@@ -2198,7 +2198,7 @@ WrathPhasesLabel:SetText("|CFFAAFFAAWrath Phases|r");
 WrathPhasesLabel:Show();
 
 last, xoffset, yoffset = WrathPhasesLabel, 0, -4;
-for i,o in ipairs({ { 30, 0, 0 }, {3001, spacing, -vspacing }, { 31, 0, -vspacing }, {3101, spacing, -vspacing }, { 32, 0, -vspacing }, { 33, 0 }, {3301, spacing, -vspacing }, { 34, 0, -vspacing }, { 35, 0, -vspacing }, }) do
+for i,o in ipairs({ { 30, 0, 0 }, {3001, spacing, -vspacing }, { 31, 0, -vspacing }, {3101, spacing, -vspacing }, { 32, 0, -vspacing }, { 33, 0 }, {3301, spacing, -vspacing }, {3302, spacing }, {3303, spacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local reason = reasons[u];

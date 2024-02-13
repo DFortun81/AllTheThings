@@ -13,7 +13,7 @@ ELEMENTAL_UNREST = createHeader({
 		en = "The Elemental Unrest was a world event that heralded the Cataclysm. The event culminated in elementals attacking Stormwind, Orgrimmar, Ironforge, and Thunder Bluff. Players defeating these elementals and freeing trapped citizens within their entire city were granted access to two special boss encounters.",
 	},
 });
-root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(ELEMENTAL_UNREST,
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n(ELEMENTAL_UNREST,
 	bubbleDown({
 		["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 		-- #if ANYCLASSIC
@@ -22,7 +22,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(ELEMENTAL_UNREST,
 				t.u = ]] .. REMOVED_FROM_GAME .. [[;
 				t.rwp = nil;
 			else
-				t.u = ]] .. WRATH_PHASE_SIX .. [[;
+				t.u = ]] .. WRATH_PHASE_FOUR_ELEMENTAL_INVASION .. [[;
 				t.rwp = 40003;
 			end
 		end]],
