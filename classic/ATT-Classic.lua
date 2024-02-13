@@ -6031,6 +6031,9 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Wipe the Debugger Data
 		ATTClassicDebugData = nil;
+		
+		-- Refresh Collections
+		app.RefreshCollections();
 
 		-- Tooltip Settings
 		app.Settings:Initialize();

@@ -7,6 +7,11 @@ local coroutine, InCombatLockdown = coroutine, InCombatLockdown;
 
 -- Refresh collection data.
 local RefreshCollections;
+
+-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
+local print = app.EmptyFunction;
+local __FirstRefresh = true;
+
 if app.IsRetail then
 -- CRIEVE NOTE: I really don't like the explicit listed data here
 -- I'd much rather have parser export these.
@@ -242,18 +247,16 @@ local function FixWrongAccountWideQuests(accountWideData)
 	end
 end
 
+
 RefreshCollections = function()
 	local currentCharacter = app.CurrentCharacter;
 	local charGuid = app.GUID;
-	-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
-	local print = app.__FirstRefresh and app.EmptyFunction or app.print;
-	app.__FirstRefresh = nil;
 	if InCombatLockdown() then
 		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
+		while InCombatLockdown() do coroutine.yield(); end
 	else
 		print(app.L.REFRESHING_COLLECTION);
 	end
-	while InCombatLockdown() do coroutine.yield(); end
 
 	-- Refresh Mounts / Pets
 	local acctSpells, charSpells = ATTAccountWideData.Spells, currentCharacter.Spells;
@@ -335,6 +338,10 @@ RefreshCollections = function()
 
 	-- Report success once refresh is done
 	print(app.L.DONE_REFRESHING);
+	if __FirstRefresh then
+		__FirstRefresh = nil;
+		print = app.print;
+	end
 end
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
@@ -346,15 +353,23 @@ else
 -- expecting the function to look like at the end. Probably also add an event handler
 -- to proc when it's "done". Like OnRefreshCollectionsComplete or something?
 RefreshCollections = function()
-	while InCombatLockdown() do coroutine.yield(); end
-	app.print("Refreshing collection...");
+	if InCombatLockdown() then
+		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
+		while InCombatLockdown() do coroutine.yield(); end
+	else
+		print(app.L.REFRESHING_COLLECTION);
+	end
 
 	-- Execute the OnRefreshCollections handlers.
 	app.HandleEvent("OnRefreshCollections");
 	coroutine.yield();
 
 	app:RefreshDataCompletely("RefreshCollections");
-	app.print("Done refreshing collection.");
+	print(app.L.DONE_REFRESHING);
+	if __FirstRefresh then
+		__FirstRefresh = nil;
+		print = app.print;
+	end
 end
 end
 

@@ -16041,8 +16041,7 @@ app.InitDataCoroutine = function()
 	
 	-- Prepare the Sound Pack!
 	app.Audio:ReloadSoundPack();
-
-	app.__FirstRefresh = true;
+	
 	app.RefreshCollections();
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected

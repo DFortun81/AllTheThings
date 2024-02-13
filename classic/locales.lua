@@ -19,6 +19,8 @@ local L = {
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
 	
 	["OPEN_MINILIST_FOR"] = "Open mini list for ";
+	["REFRESHING_COLLECTION"] = "Refreshing collection...";
+	["DONE_REFRESHING"] = "Done refreshing collection.";
 
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
