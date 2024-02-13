@@ -1517,6 +1517,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					--[[
+					-- CRIEVE NOTE: I wanted to show how you'd add the section below as an objective.
+					objective(1, {	-- 0/12 Grizzly Hills Flower
+						-- All this does it make the tooltip for the objective show up when showing the tooltip for anything listed in the provider and also gives the objective entry the icon of whatever is first in the provider's list, which is the flower item itself. Once you've completed the objective, all of the associated things would appear as completed in their tooltips!
+						["providers"] = {
+							{ "i", 210719 },	-- Grizzly Hills Flower
+							{ "o", 411560 },	-- Lavenbloom
+							{ "o", 416448 },	-- Lush Lavenbloom
+							{ "o", 416450 },	-- Lush Orange Illicium
+							{ "o", 416449 },	-- Lush Sugar Orchid
+							{ "o", 411562 },	-- Orange Illicium
+							{ "o", 411561 },	-- Sugar Orchid
+						},
+					}),
+					]]--
 					o_repeated({
 						i(210719),	-- Grizzly Hills Flower (QI!)
 						o(411560),	-- Lavenbloom
@@ -1532,6 +1547,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["coord"] = { 41.5, 16.1, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
+					--[[
+					-- CRIEVE NOTE: I wanted to show how you'd add the section below as an objective.
+					objective(1, {	-- 0/12 Grizzly Hills Flower
+						["providers"] = {
+							{ "i", 210719 },	-- Grizzly Hills Flower
+							{ "o", 411560 },	-- Lavenbloom
+							{ "o", 416448 },	-- Lush Lavenbloom
+							{ "o", 416450 },	-- Lush Orange Illicium
+							{ "o", 416449 },	-- Lush Sugar Orchid
+							{ "o", 411562 },	-- Orange Illicium
+							{ "o", 411561 },	-- Sugar Orchid
+						},
+					}),
+					]]--
 					o_repeated({
 						i(210719),	-- Grizzly Hills Flower (QI!)
 						o(411560),	-- Lavenbloom
