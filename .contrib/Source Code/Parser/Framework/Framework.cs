@@ -1,13 +1,13 @@
 ﻿using ATT.DB;
 using ATT.FieldTypes;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Diagnostics.Eventing.Reader;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using static ATT.Export;
 
 namespace ATT
@@ -1736,10 +1736,13 @@ namespace ATT
                         Objects.ExportDB(debugFolder.FullName);
 
                         // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
+                        var culture = Thread.CurrentThread.CurrentCulture;
+                        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
                         foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
                         {
                             File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), ToJSON(dbKeyDatas.Value), Encoding.UTF8);
                         }
+                        Thread.CurrentThread.CurrentCulture = culture;
 
                         // Export the Category DB file.
                         if (CategoryDB.Any())
