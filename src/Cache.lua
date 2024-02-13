@@ -18,8 +18,6 @@ local containerMeta = {
 			local container = {};
 			t[id] = container;
 			return container;
-		else
-			error("Attempting to get a nil cache container!");
 		end
 	end,
 };
@@ -29,8 +27,6 @@ local fieldMeta = {
 			local container = setmetatable({}, containerMeta);
 			t[field] = container;
 			return container;
-		else
-			error("Attempting to get a nil field on cache " .. t.name);
 		end
 	end,
 	__newindex = function(t, field, value)
@@ -38,8 +34,6 @@ local fieldMeta = {
 			local container = setmetatable(value, containerMeta);
 			rawset(t, field, value);
 			return container;
-		else
-			error("Attempting to assign a nil field on cache " .. t.name);
 		end
 	end,
 };
