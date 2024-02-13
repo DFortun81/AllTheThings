@@ -323,6 +323,7 @@ if C_MountJournal then
 	local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 	local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
 	AccountWideDataHandlers.Spells = function(data)
+		DefaultAccountWideDataHandler(data, "Spells");
 		local allMountIDs = C_MountJournal_GetMountIDs();
 		if allMountIDs and #allMountIDs > 0 then
 			for i,mountID in ipairs(allMountIDs) do

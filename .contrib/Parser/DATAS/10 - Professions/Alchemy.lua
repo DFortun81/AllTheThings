@@ -144,6 +144,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 					r(28677, {	-- Elixir Master
 						-- #if NOT ANYCLASSIC
 						["collectible"] = false
+						-- #else
+						["requireSkill"] = 28677,	-- Elixir Master
 						-- #endif
 					}),
 				},
@@ -153,6 +155,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 					r(28675, {	-- Potion Master
 						-- #if NOT ANYCLASSIC
 						["collectible"] = false
+						-- #else
+						["requireSkill"] = 28675,	-- Potion Master
 						-- #endif
 					}),
 				},
@@ -162,6 +166,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 					r(28672, {	-- Transmutation Master
 						-- #if NOT ANYCLASSIC
 						["collectible"] = false
+						-- #else
+						["requireSkill"] = 28672,	-- Transmutation Master
 						-- #endif
 					}),
 				},
@@ -208,6 +214,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				r(28677, {	-- Elixir Master
 					-- #if NOT ANYCLASSIC
 					["collectible"] = false
+					-- #else
+					["requireSkill"] = 28677,	-- Elixir Master
 					-- #endif
 				}),
 			},
@@ -254,6 +262,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				r(28675, {	-- Potion Master
 					-- #if NOT ANYCLASSIC
 					["collectible"] = false
+					-- #else
+					["requireSkill"] = 28675,	-- Potion Master
 					-- #endif
 				}),
 			},
@@ -294,6 +304,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				r(28672, {	-- Transmutation Master
 					-- #if NOT ANYCLASSIC
 					["collectible"] = false
+					-- #else
+					["requireSkill"] = 28672,	-- Transmutation Master
 					-- #endif
 				}),
 			},

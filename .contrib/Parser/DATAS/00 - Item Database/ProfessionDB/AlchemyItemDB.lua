@@ -149,9 +149,9 @@ i(13500, 17579);	-- Greater Holy Protection Potion
 -----------------
 --- TRAINER ---
 i(0, 28596);		-- Alchemy (Master) [REMOVED: 8.0.1]
-i(0, 28677);		-- Elixir Master
-i(0, 28675);		-- Potion Master
-i(0, 28672);		-- Transmutation Master
+i(0, 28677, nil, 28677);		-- Elixir Master
+i(0, 28675, nil, 28675);		-- Potion Master
+i(0, 28672, nil, 28672);		-- Transmutation Master
 i(0, 28544);		-- Elixir of Major Strength
 i(0, 33741);		-- Elixir of Mastery
 i(0, 38070);		-- Mercurial Stone

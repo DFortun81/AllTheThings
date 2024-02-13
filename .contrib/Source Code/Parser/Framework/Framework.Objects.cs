@@ -783,6 +783,9 @@ namespace ATT
             {
                 // Alchemy Skills
                 {171, 171},     // Alchemy [7.3.5]
+                {28677, 28677},   // Elixir Master
+                {28675, 28675},   // Potion Master
+                {28672, 28672},   // Transmutation Master
                 {2485, 171},    // Classic Alchemy [8.0.1]
                 {2484, 171},    // Outland Alchemy [8.0.1]
                 {2483, 171},    // Northrend Alchemy [8.0.1]
