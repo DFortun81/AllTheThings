@@ -5465,7 +5465,6 @@ app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 
 -- TomTom Support
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
-local TheRealmTomTom;	-- Define this locally so that Carbonite can't inject its garbage into it.
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
 	rawset(t, y, o);
@@ -5635,7 +5634,9 @@ local function AddTomTomWaypoint(group)
 					end
 				end
 			end
-			TomTom:SetClosestWaypoint();
+			if TomTom.SetClosestWaypoint then
+				TomTom:SetClosestWaypoint();
+			end
 		end
 		if C_SuperTrack and group.questID and C_QuestLog_IsOnQuest(group.questID) then
 			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
@@ -5684,29 +5685,31 @@ app.AddEventHandler("OnReady", function()
 							opts.minimap_icon = first.icon;
 							opts.worldmap_icon = first.icon;
 						end
-						local callbacks = (TheRealmTomTom or TomTom):DefaultCallbacks();
-						callbacks.minimap.tooltip_update = nil;
-						callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
-							tooltip:ClearLines();
-							for i,o in ipairs(root) do
-								local line = tooltip:NumLines() + 1;
-								tooltip:AddLine(o.text);
-								if o.title and not o.explorationID then tooltip:AddLine(o.title); end
-								local key = o.key;
-								if key == "objectiveID" then
-									if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
-								elseif key == "criteriaID" then
-									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(o.achievementID));
-								else
-									if key == "npcID" then key = "creatureID"; end
-									AttachTooltipSearchResults(tooltip, line, SearchForField, key, o[o.key]);
+						if TomTom.DefaultCallbacks then
+							local callbacks = TomTom:DefaultCallbacks();
+							callbacks.minimap.tooltip_update = nil;
+							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
+								tooltip:ClearLines();
+								for i,o in ipairs(root) do
+									local line = tooltip:NumLines() + 1;
+									tooltip:AddLine(o.text);
+									if o.title and not o.explorationID then tooltip:AddLine(o.title); end
+									local key = o.key;
+									if key == "objectiveID" then
+										if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
+									elseif key == "criteriaID" then
+										tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(o.achievementID));
+									else
+										if key == "npcID" then key = "creatureID"; end
+										AttachTooltipSearchResults(tooltip, line, SearchForField, key, o[o.key]);
+									end
 								end
+								tooltip:Show();
 							end
-							tooltip:Show();
+							callbacks.world.tooltip_update = nil;
+							callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
+							opts.callbacks = callbacks;
 						end
-						callbacks.world.tooltip_update = nil;
-						callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
-						opts.callbacks = callbacks;
 					else
 						print("Failed to rebuild TomTom Waypoint", waypointUID);
 					end
@@ -6037,9 +6040,6 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Tooltip Settings
 		app.Settings:Initialize();
-	end,
-	TomTom = function()
-		TheRealmTomTom = _G.TomTom;
 	end,
 };
 app:RegisterEvent("ADDON_LOADED");
