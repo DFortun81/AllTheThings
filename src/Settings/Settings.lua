@@ -277,9 +277,11 @@ settings.Initialize = function(self)
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
 		app:GetWindow("WorldQuests"):Show()
 	end
-
-	settings.__RefreshActiveAdditionalIDs()
-	settings.__RefreshActiveAdditionalIDs = nil
+	
+	if settings.__RefreshActiveAdditionalIDs then
+		settings.__RefreshActiveAdditionalIDs()
+		settings.__RefreshActiveAdditionalIDs = nil
+	end
 
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
