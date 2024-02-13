@@ -6279,9 +6279,7 @@ if C_LegendaryCrafting then
 	app.CreateRuneforgeLegendary = app.ExtendClass("Item", "RuneforgeLegendary", KEY, {
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collectibleAsCost = app.ReturnFalse,
-		collected = function(t)
-			return app.IsAccountCached(CACHE, t[KEY])
-		end,
+		collected = function(t) return app.IsAccountCached(CACHE, t[KEY]) end,
 		lvl = function(t) return 60; end,
 	});
 	app.AddEventHandler("OnRefreshCollections", function()
@@ -6316,7 +6314,7 @@ end)();
 
 -- Conduit Lib
 (function()
-	local KEY, CACHE = "conduitID", "Conduits"
+local KEY, CACHE = "conduitID", "Conduits"
 if C_Soulbinds then
 	local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
 	app.CreateConduit = app.ExtendClass("Item", "Conduit", KEY, {
@@ -6360,13 +6358,14 @@ end)();
 
 -- Drakewatcher Manuscript Lib
 (function()
+local KEY, CACHE = "itemID", "DrakewatcherManuscripts"
 if app.GameBuildVersion >= 100000 then	-- Dragonflight+
-	app.CreateDrakewatcherManuscript = app.ExtendClass("Item", "DrakewatcherManuscript", "itemID", {
-		collectible = function(t) return app.Settings.Collectibles.DrakewatcherManuscripts; end,
-		collected = function(t) return IsQuestFlaggedCompletedForObject(t); end
+	app.CreateDrakewatcherManuscript = app.ExtendClass("Item", "DrakewatcherManuscript", KEY, {
+		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
+		collected = function(t) return app.IsAccountCached("Quests", t.questID) end,
 	});
 else
-	app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", "itemID");
+	app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", KEY);
 end
 end)();
 
