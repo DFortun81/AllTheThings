@@ -1517,7 +1517,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["coord"] = { 34.3, 51.6, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(210719),	-- Grizzly Hills Flower (QI!)
+					o_repeated({
+						i(210719),	-- Grizzly Hills Flower (QI!)
+						o(411560),	-- Lavenbloom
+						o(416448),	-- Lush Lavenbloom
+						o(416450),	-- Lush Orange Illicium
+						o(411562),	-- Orange Illicium
+						o(411561),	-- Sugar Orchid
+					}),
 				},
 			}),
 			q(78986, {	-- Getaway to Scenic Grizzly Hills! (H)
@@ -1525,7 +1532,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["coord"] = { 41.5, 16.1, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(210719),	-- Grizzly Hills Flower (QI!)
+					o_repeated({
+						i(210719),	-- Grizzly Hills Flower (QI!)
+						o(411560),	-- Lavenbloom
+						o(416448),	-- Lush Lavenbloom
+						o(416450),	-- Lush Orange Illicium
+						o(411562),	-- Orange Illicium
+						o(411561),	-- Sugar Orchid
+					}),
 				},
 			}),
 			q(78591, {	-- Getaway to Scenic Nagrand! (A)
@@ -1555,6 +1569,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
 				["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					objective(1, {	-- 0/15 Treats Consumed
+					["providers"] = {
+						{ "i", 210929 },	-- Comfort Food Package
+						{ "i", 210928 },	-- Healthy Body Package
+						{ "i", 210926 },	-- Me, Myself, and Chocolate Package
+					},
+				}),
+				},
 			}),
 			q(78727, {	-- Loving Yourself, Your Way (A)
 				["qg"] = 213262,	-- Ying
@@ -1740,12 +1763,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 			},
 		})),
+		n(213094, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Bimble Longberry
+			["coord"] = { 33.7, 51.3, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(210928),	-- Healthy Body Package
+			},
+		})),
 		n(214482, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Grogg Skullsmasher <Fruit Vendor>
 			["coord"] = { 41.2, 18.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				i(210821),	-- Berry Chocolate Tart
 				i(210819),	-- Chocolate-Covered Cherries
+			},
+		})),
+		n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Guo Plumpaw
+			["coord"] = { 3357, 50.9, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(210841),	-- Buttered Oysters
+				i(210929),	-- Comfort Food Package
+				i(210842),	-- Fresh Fig
 			},
 		})),
 		n(214488, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Hana Breezeheart <Flower Vendor>
@@ -2235,6 +2274,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["coord"] = { 33.6, 49.8, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
+				i(210926),	-- Me, Myself, and Chocolate Package
 				i(49909, {	-- Box of Chocolates
 					["cost"] = {{"i", LOVE_TOKEN, 10}},
 					["g"] = {
@@ -2267,6 +2307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["g"] = {
 				i(210821),	-- Berry Chocolate Tart
 				i(210819),	-- Chocolate-Covered Cherries
+				i(210928),	-- Healthy Body Package
 			},
 		})),
 		n(211887, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Sylandra Silverbreeze <Flower Vendor>
