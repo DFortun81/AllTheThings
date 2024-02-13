@@ -226,9 +226,9 @@ if C_Garrison then
 		else
 			currentCharacter.Followers = CurrentFollowers;
 		end
-		local accountWideData = accountWideData.Followers;
-		if accountWideData then
-			AccountWideFollowers = accountWideData;
+		local accountWideFollowers = accountWideData.Followers;
+		if accountWideFollowers then
+			AccountWideFollowers = accountWideFollowers;
 		else
 			accountWideData.Followers = AccountWideFollowers;
 		end
