@@ -6292,7 +6292,6 @@ if C_LegendaryCrafting then
 			if check and check.state == 0 then
 				saved[id] = true
 			else
-				-- remove RFLs that the account doesnt actually have
 				none[id] = true
 			end
 		end
@@ -6307,6 +6306,7 @@ if C_LegendaryCrafting then
 	app.AddEventHandler("OnReady", function()
 		app:RegisterFuncEvent("NEW_RUNEFORGE_POWER_ADDED", function(id)
 			app.SetAccountCollected(app.SearchForObject(KEY, id), CACHE, id, true)
+			app.UpdateRawID(KEY, id)
 		end);
 	end)
 else
@@ -6316,45 +6316,45 @@ end)();
 
 -- Conduit Lib
 (function()
+	local KEY, CACHE = "conduitID", "Conduits"
 if C_Soulbinds then
-	local CurrentConduitsData, AccountWideConduitsData = {}, {};
 	local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
-	app.CreateConduit = app.ExtendClass("Item", "Conduit", "conduitID", {
-		collectible = function(t) return app.Settings.Collectibles.Conduits; end,
+	app.CreateConduit = app.ExtendClass("Item", "Conduit", KEY, {
+		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collectibleAsCost = app.ReturnFalse,
 		collected = function(t)
-			local cID = t.conduitID;
+			local id = t[KEY];
 			-- character collected
-			if CurrentConduitsData[cID] then return 1; end
+			if app.IsCached(CACHE, id) then return 1; end
 			-- account-wide collected
-			if app.Settings.AccountWide.Conduits and AccountWideConduitsData[cID] then return 2; end
-			-- fresh collected
-			local state = C_Soulbinds_GetConduitCollectionData(cID);
-			if state ~= nil then
-				CurrentConduitsData[cID] = 1;
-				AccountWideConduitsData[cID] = 1;
-				return 1;
-			end
+			if app.Settings.AccountWide[CACHE] and app.IsAccountCached(CACHE, id) then return 2; end
 		end,
 		lvl = function(t) return 60; end,
 	});
-	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-		local characterData = currentCharacter.Conduits;
-		if characterData then
-			CurrentConduitsData = characterData;
-		else
-			currentCharacter.Conduits = CurrentConduitsData;
+	app.AddEventHandler("OnRefreshCollections", function()
+		local state
+		local saved, none = {}, {}
+		for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+			state = C_Soulbinds_GetConduitCollectionData(id)
+			if state ~= nil then
+				saved[id] = true
+			else
+				none[id] = true
+			end
 		end
-		
-		local accountWide = accountWideData.Conduits;
-		if accountWide then
-			AccountWideConduitsData = accountWide;
-		else
-			accountWideData.Conduits = AccountWideConduitsData;
-		end
+		-- Character Cache
+		app.SetBatchCached(CACHE, saved, 1)
+		app.SetBatchCached(CACHE, none)
+		-- Account Cache (removals handled by Sync)
+		app.SetBatchAccountCached(CACHE, saved, 1)
 	end);
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+	-- No known 'on learned' Event
 else
-	app.CreateConduit = app.CreateUnimplementedClass("Conduit", "conduitID");
+	app.CreateConduit = app.CreateUnimplementedClass("Conduit", KEY);
 end
 end)();
 
