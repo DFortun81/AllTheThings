@@ -123,6 +123,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 32.6, 24.2, THE_EXODAR },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = { DRAENEI },
+					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
@@ -131,6 +132,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.2, 29.6, IRONFORGE },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = { DRAENEI },
+					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
@@ -139,6 +141,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 61.8, 83.8, STORMWIND_CITY },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = { DRAENEI },
+					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
@@ -153,6 +156,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
+					["classes"] = { SHAMAN },
 					["lvl"] = 30,
 				}),
 				q(9553, {	-- Call of Air (3/4)
@@ -161,6 +165,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = { DRAENEI },
+					["classes"] = { SHAMAN },
 					["lvl"] = 30,
 				}),
 				q(9554, {	-- Call of Air (4/4)
@@ -172,6 +177,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = { DRAENEI },
+					["classes"] = { SHAMAN },
 					["lvl"] = 30,
 					["groups"] = {
 						i(5178, {	-- Air Totem
