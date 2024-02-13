@@ -257,10 +257,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["maps"] = { FERALAS },
 			["groups"] = {
 				crit(64676, {	-- Novelty
+					["description"] = "Require to pickup Shiny New Weapon from table.",
 					["coord"] = { 69.01, 72.4, FERALAS },
 					["provider"] = { "o", 411691 },	-- Shiny New Weapon
 				}),
 				crit(64680, {	-- Beauty
+					["description"] = "Require to pickup Mystery Gift (Flower) from table.",
 					["providers"] = {
 						{ "n",212817 },	-- Bratley Graston
 						{ "i",211922 },	-- Bouquet of Flowers
@@ -268,10 +270,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["coord"] = { 69.09, 72.93, FERALAS },
 				}),
 				crit(64681, {	-- Comfort
-					["description"] = "While holding any 'gift', use /hug.",
+					["description"] = "/hug him",
 					["coord"] = { 69.95, 74.1, FERALAS },
 				}),
 				crit(64677, {	-- Festivity
+					["description"] = "Require to pickup Barrel of Wine from table.",
 					["providers"] = {
 						{ "n", 212815 },	-- Clarissa Buchannan
 						{ "n", 411744 },	-- Barrel of Wine
@@ -279,14 +282,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["coord"] = { 69.16, 72.66, FERALAS },
 				}),
 				crit(64679, {	-- Challenge
+					["description"] = "Require to pickup Shiny New Weapon from table.",
 					["coord"] = { 69.64, 73.35, FERALAS },
 					["provider"] = { "o", 411691 },	-- Shiny New Weapon
 				}),
 				crit(64682, {	-- Respect
-					["description"] = "While holding any 'gift', use /bow.",
+					["description"] = "/bow at him",
 					["coord"] = { 69.19, 72.62, FERALAS },
 				}),
 				crit(64678, {	-- Companionship
+					["description"] = "Require you to bring back his puppy.",
 					["providers"] = {
 						{ "n", 212811 },	-- Angus Flagonshot
 						{ "n", 212850 },	-- Lost Puppy
@@ -294,10 +299,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["coord"] = { 69.78, 74.08, FERALAS },
 				}),
 				crit(64683, {	-- Attention
-					["description"] = "While holding any 'gift', follow the 'talk' dialog options after asking about the gift.",
+					["description"] = "Listen her entire dialog options after asking about the gift.",
 					["coord"] = { 68.75, 72.1, FERALAS },
 				}),
 				crit(64736, {	-- Style
+					["description"] = "Require to pickup Mystery Gift (Flower) from table.",
 					["providers"] = {
 						{ "n",215148 },	-- Halene Mistrunner
 						{ "i",211922 },	-- Bouquet of Flowers
@@ -305,6 +311,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["coord"] = { 68.78, 73.66, FERALAS },
 				}),
 				crit(64703, {	-- Praise
+					["description"] = "Require to pickup Mystery Gift (Sealer Letted) from table.",
 					["provider"] = {"i",211923},	-- Sealed Letter
 					["coord"] = { 69.95, 73.32, FERALAS },
 				}),
