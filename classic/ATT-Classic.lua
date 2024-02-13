@@ -1133,8 +1133,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				paramA = "itemID";
 				paramB = itemID;
 			end
+			if not itemID or itemID == 0 then return nil, true; end
 		else
 			local kind, id = (":"):split(rawlink);
+			if id == "" then return nil, true; end
 			kind = kind:lower();
 			if id then id = tonumber(id); end
 			if kind == "itemid" then
