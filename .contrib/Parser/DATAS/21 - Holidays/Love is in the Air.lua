@@ -2407,6 +2407,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(210927),	-- Fruity Cocktail Flight
 			},
 		})),
+		n(212587, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Wobbley Sugarfizz <House of Chocolates>
+			["coord"] = { 33.5, 50.1, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(210695),	-- Delightful Chocolate Sample
+			},
+		})),
 		n(214489, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Zikky <Lovely Novelties>
 			["coord"] = { 41.0, 17.2, DUROTAR },
 			["races"] = HORDE_ONLY,

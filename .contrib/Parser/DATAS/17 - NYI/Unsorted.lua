@@ -1026,7 +1026,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(211429),	-- Bundle of Love Tokens
 			i(211430),	-- Bundle of Love Tokens
-			i(210695),	-- Delightful Chocolate Sample
 			-- Quest Items
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
