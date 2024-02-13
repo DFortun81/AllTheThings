@@ -32,13 +32,12 @@ app.events = events;
 app.RegisterEvent = function(self, ...)
 	frame:RegisterEvent(...);
 end
--- TODO: could be nice to allow defining the event func at the same time as the Register
--- app.RegisterFuncEvent = function(self, event, func)
--- 	frame:RegisterEvent(event);
--- 	if func then
--- 		app.events[event] = func
--- 	end
--- end
+app.RegisterFuncEvent = function(self, event, func)
+	if func then
+		frame:RegisterEvent(event);
+		app.events[event] = func
+	end
+end
 app.UnregisterEvent = function(self, ...)
 	frame:UnregisterEvent(...);
 end
