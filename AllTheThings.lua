@@ -15706,7 +15706,7 @@ app.Startup = function()
 	local accountWideSettings = app.Settings.AccountWide;
 	-- Returns the cached status for this Account for a given field ID
 	local function IsAccountCached(field, id)
-		return accountWideSettings[field] and accountWideData[field][id] and 2 or nil
+		return accountWideSettings[field] and accountWideData[field][id] or nil
 	end
 	-- Returns the cached status for this Character for a given field ID
 	local function IsCached(field, id)
