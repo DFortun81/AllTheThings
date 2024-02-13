@@ -98,8 +98,10 @@ src\Expansions\Legion.lua
 src\Expansions\Battle For Azeroth.lua
 src\Expansions\Shadowlands.lua
 
+# Load the Settings Menu
+src\Settings\Settings.xml
+
 # Load primary addon source files
-Settings.lua
 AllTheThings.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
