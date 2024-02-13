@@ -272,6 +272,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(70808, {	-- Initial Mysteries of the Dragon Isles Drakes
 					["provider"] = { "n", 188265 },	-- Rae'ana
 					["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+					["lockCriteria"] = { 4,
+						"questID", 69570,	-- Brown Hair
+						"questID", 69587,	-- Spiked Jaw
+						"questID", 69564,	-- Maned Crest
+						"questID", 69561,	-- Spined Brow
+					},
 					["g"] = {
 						i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
 							["timeline"] = { ADDED_10_0_7 },
@@ -497,6 +503,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(70809, {	-- Deeper Mysteries of the Dragon Isles Drakes
 					["provider"] = { "n", 188265 },	-- Rae'ana
 					["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+					["lockCriteria"] = { 4,
+						"questID", 69559,	-- Curved Spiked Brow
+						"questID", 69596,	-- Harrier Pattern
+						"questID", 69603,	-- Spiked Club Tail
+						"questID", 69575,	-- Swept Horns
+					},
 					["g"] = {
 						i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
 							["timeline"] = { ADDED_10_0_7 },
@@ -599,10 +611,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(70810, {	-- Broader Mysteries of the Dragon Isles Drakes
 					["provider"] = { "n", 188265 },	-- Rae'anna
 					["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+					["lockCriteria"] = { 4,
+						"questID", 69345,	-- Highland Drake
+						"questID", 69210,	-- Cliffside Wylderdrake
+						"questID", 69818,	-- Windborne Velocidrake
+						"questID", 73844,	-- Winding Slitherdrake
+					},
 					["g"] = {
 						i(197144),	-- Highland Drake: Red Scales (DM!)
 						i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
 						i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
+						i(203353, {["timeline"] = ADDED_10_1_0}),	-- Winding Slitherdrake: Red Scales (DM!)
 					},
 				}),
 				q(72047, {	-- Dragon Isles Supplies
