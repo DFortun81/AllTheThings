@@ -414,14 +414,14 @@ local fieldConverters = {
 			end);
 			-- Is there a situation where we would actually want the associated quest to show the data for the group since NOT being flagged is the trigger for it being available...?
 			CacheField(group, "mapID", mapID);
-			
+
 			local mapIDCache = currentCache.mapID;
 			tinsert(runners, function()
 				mapIDCache = mapIDCache[originalMapID];
 				for i,o in ipairs(mapIDCache) do
 					if o == group then
 						table.remove(mapIDCache, i);
-						
+
 						local artIDs = app.L.ART_ID_TO_MAP_ID[originalMapID];
 						if not artIDs then
 							artIDs = {};
@@ -647,6 +647,10 @@ if app.IsRetail then
 			any = cacheMapID(group, coord[3]) or any
 		end
 		return any;
+	end
+
+	fieldConverters.conduitID = function(group, id)
+		CacheField(group, "conduitID", id);
 	end
 	fieldConverters.up = function(group, up)
 		CacheField(group, "up", up);
