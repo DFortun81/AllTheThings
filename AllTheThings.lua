@@ -6273,53 +6273,44 @@ end
 
 -- Runeforge Legendary Lib
 (function()
+local KEY, CACHE = "runeforgePowerID", "RuneforgeLegendaries"
 if C_LegendaryCrafting then
-	local AccountWideRuneforgeLegendariesData = {};
 	local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
-	app.CreateRuneforgeLegendary = app.ExtendClass("Item", "RuneforgeLegendary", "runeforgePowerID", {
-		collectible = function(t) return app.Settings.Collectibles.RuneforgeLegendaries; end,
+	app.CreateRuneforgeLegendary = app.ExtendClass("Item", "RuneforgeLegendary", KEY, {
+		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collectibleAsCost = app.ReturnFalse,
 		collected = function(t)
-			local rfID = t.runeforgePowerID;
-			-- account-wide collected
-			if AccountWideRuneforgeLegendariesData[rfID] then return 1; end
-			-- fresh collected
-			local state = (C_LegendaryCrafting_GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
-			if state == 0 then
-				AccountWideRuneforgeLegendariesData[rfID] = 1;
-				return 1;
-			end
+			return app.IsAccountCached(CACHE, t[KEY])
 		end,
 		lvl = function(t) return 60; end,
 	});
 	app.AddEventHandler("OnRefreshCollections", function()
-		local acctRFLs = AccountWideRuneforgeLegendariesData;
-		local state;
-		for id,_ in pairs(app.SearchForFieldContainer("runeforgePowerID")) do
-			state = (C_LegendaryCrafting_GetRuneforgePowerInfo(id) or app.EmptyTable).state;
-			if state == 0 then
-				if not acctRFLs[id] then print("Added Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
-				acctRFLs[id] = 1;
+		local check
+		local saved, none = {}, {}
+		for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+			check = C_LegendaryCrafting_GetRuneforgePowerInfo(id)
+			if check and check.state == 0 then
+				saved[id] = true
 			else
 				-- remove RFLs that the account doesnt actually have
-				if acctRFLs[id] then print("Removed Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
-				acctRFLs[id] = nil;
+				none[id] = true
 			end
 		end
+		app.SetBatchAccountCached(CACHE, saved, 1)
+		app.SetBatchAccountCached(CACHE, none)
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		-- Runeforge Legendaries are no longer per-character.
-		currentCharacter.RuneforgeLegendaries = nil;
-		
-		local accountWide = accountWideData.RuneforgeLegendaries;
-		if accountWide then
-			AccountWideRuneforgeLegendariesData = accountWide;
-		else
-			accountWideData.RuneforgeLegendaries = AccountWideRuneforgeLegendariesData;
-		end
+		currentCharacter[CACHE] = nil;
+		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end);
+	app.AddEventHandler("OnReady", function()
+		app:RegisterFuncEvent("NEW_RUNEFORGE_POWER_ADDED", function(id)
+			app.SetAccountCollected(app.SearchForObject(KEY, id), CACHE, id, true)
+		end);
+	end)
 else
-	app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgePowerID");
+	app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", KEY);
 end
 end)();
 
