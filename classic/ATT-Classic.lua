@@ -984,8 +984,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
 
 	-- Call to the method to search the database.
-	local group = method(paramA, paramB);
+	local group, a, b = method(paramA, paramB);
 	if group then
+		if a then paramA = a; end
+		if b then paramB = b; end
 		-- Move all post processing here?
 		if paramA == "creatureID" or paramA == "encounterID" then
 			local difficultyID = app.GetCurrentDifficultyID();

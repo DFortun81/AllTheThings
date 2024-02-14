@@ -2566,8 +2566,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Call to the method to search the database.
-	local group = method(paramA, paramB);
+	local group, a, b = method(paramA, paramB);
 	if group then
+		if a then paramA = a; end
+		if b then paramB = b; end
 		-- Move all post processing here?
 		if #group > 0 then
 			-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
