@@ -564,6 +564,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(205224),	-- Just a Rock
 						},
 					}),
+					q(78649, {	-- Excavation: Something Big Beneath the Riverbed
+						["coord"] = { 66.4, 46.1, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
+					}),
 					q(78739, {	-- Excavation: The Trove in the Tower
 						["coord"] = { 46.9, 48.8, ZARALEK_CAVERN },
 						["g"] = {
