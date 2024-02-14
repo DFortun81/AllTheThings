@@ -329,7 +329,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		i(33825, {["timeline"] = {ADDED_2_3_0}}),	-- Skullfish Soup
 		i(27667),	-- Spicy Crawdad
 		i(33872, {["timeline"] = {ADDED_2_3_0}}),	-- Spicy Hot Talbuk
-		i(27656),	-- Sporeling Snack
+		i(27656, {["timeline"] = {ADDED_2_0_5, REMOVED_4_2_0}}),	-- Sporeling Snack
 		applyclassicphase(TBC_PHASE_TWO, i(33048, {["timeline"] = {ADDED_2_1_2}})),	-- Stewed Trout
 		i(33866, {["timeline"] = {ADDED_2_3_0}}),	-- Stormchops
 		i(27660),	-- Talbuk Steak
