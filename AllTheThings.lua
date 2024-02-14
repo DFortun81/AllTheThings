@@ -7381,7 +7381,7 @@ local npcFields = {
 	end,
 	["indicatorIcon"] = function(t)
 		if app.CurrentVignettes["npcID"][t.npcID] then
-			return app.asset("Category_Secrets");
+			return app.asset("Interface_Ping");
 		end
 	end,
 	-- use custom to track opposite faction questID collection in account/debug if the NPC is considered collectible
