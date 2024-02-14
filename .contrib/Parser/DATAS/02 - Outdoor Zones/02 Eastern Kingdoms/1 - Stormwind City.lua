@@ -2533,7 +2533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 391,	-- The Stockage Riots
 					-- #if AFTER WRATH
-					["coord"] = { 51.5, 69.3, STORMWIND_CITY },
+					["coord"] = { 51.6, 69.4, STORMWIND_CITY },
 					-- #else
 					["coord"] = { 41.2, 58, STORMWIND_CITY },
 					-- #endif

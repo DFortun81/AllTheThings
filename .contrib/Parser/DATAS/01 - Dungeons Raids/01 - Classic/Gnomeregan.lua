@@ -146,7 +146,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				q(2928, {	-- Gyrodrillmatic Excavationators
 					["qg"] = 6579,	-- Shoni the Shilent
-					["coord"] = { 55.6, 12.8, STORMWIND_CITY },
+					-- #if AFTER WRATH
+					["coord"] = { 62.8, 34.8, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 55.5, 12.5, STORMWIND_CITY },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -480,7 +484,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				q(2923, {	-- Tinkmaster Overspark
 					["qg"] = 7917,	-- Brother Sarno
+					-- #if AFTER WRATH
+					["coord"] = { 51.6, 48.6, STORMWIND_CITY },
+					-- #else
 					["coord"] = { 40.6, 30.0, STORMWIND_CITY },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

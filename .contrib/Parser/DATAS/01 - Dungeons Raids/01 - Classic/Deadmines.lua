@@ -26,7 +26,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		n(QUESTS, {
 			q(168, {	-- Collecting Memories
 				["qg"] = 656,	-- Wilder Thistlenettle
+				-- #if AFTER WRATH
+				["coord"] = { 70.2, 40.8, STORMWIND_CITY },
+				-- #else
 				["coord"] = { 65.4, 21.2, STORMWIND_CITY },
+				-- #endif
 				["timeline"] = { "removed 4.0.3" },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 14,
@@ -102,7 +106,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			q(167, {	-- Oh Brother. . .
 				["qg"] = 656,	-- Wilder Thistlenettle
+				-- #if AFTER WRATH
+				["coord"] = { 70.2, 40.8, STORMWIND_CITY },
+				-- #else
 				["coord"] = { 65.4, 21.2, STORMWIND_CITY },
+				-- #endif
 				["timeline"] = { "removed 4.0.3" },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 15,
@@ -261,10 +269,16 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(373, {	-- The Unsent Letter
-				["provider"] = { "i", 2874 },	-- An Unsent Letter
+				["providers"] = {
+					{ "i", 2874 },	-- An Unsent Letter
+					{ "n", 1646 },	-- Baros Alexston <City Architect>
+				},
 				["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
-				["qg"] = 1646,	-- Baros Alexston <City Architect>
-				["coord"] = { 49.2, 30.0, STORMWIND_CITY },
+				-- #if AFTER WRATH
+				["coord"] = { 57.7, 47.9, STORMWIND_CITY },
+				-- #else
+				["coord"] = { 49, 30.2, STORMWIND_CITY },
+				-- #endif
 				["timeline"] = { "removed 4.0.3" },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,
@@ -285,7 +299,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			q(2040, {	-- Underground Assault
 				["qg"] = 6579,	-- Shoni the Shilent
 				["sourceQuest"] = 2041,	-- Speak with Shoni
+				-- #if AFTER WRATH
+				["coord"] = { 62.8, 34.8, STORMWIND_CITY },
+				-- #else
 				["coord"] = { 55.5, 12.5, STORMWIND_CITY },
+				-- #endif
 				["timeline"] = { "removed 4.0.3" },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 15,
