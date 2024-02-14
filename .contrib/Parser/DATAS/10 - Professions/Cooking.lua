@@ -416,39 +416,78 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-		ach(10589),	-- Legion Cook
-		ach(10593, {	-- Everything Tastes Better
-			["cost"] = {{"i", 133681, 6}},	-- 6x Crispy Bacon
+		n(ACHIEVEMENTS, {
+			ach(10589),	-- Legion Cook
+			ach(10593, {	-- Everything Tastes Better
+				["cost"] = {{"i", 133681, 6}},	-- 6x Crispy Bacon
+			}),
+			ach(10592, {	-- Never A Day's Rest
+				["provider"] = { "n", 101846 },	-- Nomi
+				["coords"] = {
+					{ 69.8, 38.6, LEGION_DALARAN },
+					{ 40.2, 65.8, LEGION_DALARAN },
+				},
+			}),
+			ach(10762, {	-- The Legion Menu
+				crit(31253, { ["provider"] = { "i", 133557 } } ),	-- Salt and Pepper Shank
+				crit(31254, { ["provider"] = { "i", 133561 } } ),	-- Deep-Fried Mossgill
+				crit(31255, { ["provider"] = { "i", 133562 } } ),	-- Pickled Stormray
+				crit(31256, { ["provider"] = { "i", 133563 } } ),	-- Faronaar Fizz
+				crit(31257, { ["provider"] = { "i", 133564 } } ),	-- Spiced Rib Roast
+				crit(31258, { ["provider"] = { "i", 133565 } } ),	-- Leybeque Ribs
+				crit(31259, { ["provider"] = { "i", 133566 } } ),	-- Suramar Surf and Turf
+				crit(31260, { ["provider"] = { "i", 133567 } } ),	-- Barracuda Mrglgagh
+				crit(31261, { ["provider"] = { "i", 133568 } } ),	-- Koi-Scented Stormray
+				crit(31262, { ["provider"] = { "i", 133569 } } ),	-- Drogbar-Style Salmon
+				crit(31263, { ["provider"] = { "i", 133570 } } ),	-- The Hungry Magister
+				crit(31264, { ["provider"] = { "i", 133571 } } ),	-- Azshari Salad
+				crit(31265, { ["provider"] = { "i", 133572 } } ),	-- Nightborne Delicacy Platter
+				crit(31266, { ["provider"] = { "i", 133573 } } ),	-- Seed-Battered Fish Plate
+				crit(31267, { ["provider"] = { "i", 133574 } } ),	-- Fishbrul Special
+				crit(31268, { ["provider"] = { "i", 133575 } } ),	-- Dried Mackerel Strips
+				crit(31269, { ["provider"] = { "i", 133576 } } ),	-- Bear Tartare
+				crit(31270, { ["provider"] = { "i", 133577 } } ),	-- Fighter Chow
+				crit(31271, { ["provider"] = { "i", 133578 } } ),	-- Hearty Feast
+				crit(31272, { ["provider"] = { "i", 133579 } } ),	-- Lavish Suramar Feast
+				crit(31273, { ["provider"] = { "i", 133681 } } ),	-- Crispy Bacon
+			}),
 		}),
-		ach(10592, {	-- Never A Day's Rest
-			["provider"] = { "n", 101846 },	-- Nomi
-			["coords"] = {
-				{ 69.8, 38.6, LEGION_DALARAN },
-				{ 40.2, 65.8, LEGION_DALARAN },
-			},
-		}),
-		ach(10762, {	-- The Legion Menu
-			crit(31253, { ["provider"] = { "i", 133557 } } ),	-- Salt and Pepper Shank
-			crit(31254, { ["provider"] = { "i", 133561 } } ),	-- Deep-Fried Mossgill
-			crit(31255, { ["provider"] = { "i", 133562 } } ),	-- Pickled Stormray
-			crit(31256, { ["provider"] = { "i", 133563 } } ),	-- Faronaar Fizz
-			crit(31257, { ["provider"] = { "i", 133564 } } ),	-- Spiced Rib Roast
-			crit(31258, { ["provider"] = { "i", 133565 } } ),	-- Leybeque Ribs
-			crit(31259, { ["provider"] = { "i", 133566 } } ),	-- Suramar Surf and Turf
-			crit(31260, { ["provider"] = { "i", 133567 } } ),	-- Barracuda Mrglgagh
-			crit(31261, { ["provider"] = { "i", 133568 } } ),	-- Koi-Scented Stormray
-			crit(31262, { ["provider"] = { "i", 133569 } } ),	-- Drogbar-Style Salmon
-			crit(31263, { ["provider"] = { "i", 133570 } } ),	-- The Hungry Magister
-			crit(31264, { ["provider"] = { "i", 133571 } } ),	-- Azshari Salad
-			crit(31265, { ["provider"] = { "i", 133572 } } ),	-- Nightborne Delicacy Platter
-			crit(31266, { ["provider"] = { "i", 133573 } } ),	-- Seed-Battered Fish Plate
-			crit(31267, { ["provider"] = { "i", 133574 } } ),	-- Fishbrul Special
-			crit(31268, { ["provider"] = { "i", 133575 } } ),	-- Dried Mackerel Strips
-			crit(31269, { ["provider"] = { "i", 133576 } } ),	-- Bear Tartare
-			crit(31270, { ["provider"] = { "i", 133577 } } ),	-- Fighter Chow
-			crit(31271, { ["provider"] = { "i", 133578 } } ),	-- Hearty Feast
-			crit(31272, { ["provider"] = { "i", 133579 } } ),	-- Lavish Suramar Feast
-			crit(31273, { ["provider"] = { "i", 133681 } } ),	-- Crispy Bacon
+		n(QUESTS, {
+			q(40990, {	-- A Good Recipe List
+				["sourceQuests"] = {
+					40988,	-- Too Many Cooks
+					40989,	-- The Prodigal Sous Chef
+				},
+				["coord"] = { 69.8, 38.8, LEGION_DALARAN },
+				["provider"] = { "n", 101846 },	-- Nomi
+			}),
+			q(40991, {	-- Opening the Test Kitchen
+				["sourceQuests"] = { 40990 },	-- A Good Recipe List
+				["provider"] = { "n", 101846 },	-- Nomi
+				["g"] = {
+					ach(10591),	-- All Grown Up
+				},
+			}),
+			q(44581, {	-- Spicing Things Up
+				["provider"] = { "n", 101846 },	-- Nomi
+				["g"] = {
+					i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40989, {	-- The Prodigal Sous Chef
+				["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
+				["provider"] = { "n", 102546 },	-- Nomi
+				["groups"] = {
+					i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40988, {	-- Too Many Chefs
+				["description"] = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
+				["provider"] = { "n", 102546 },	-- Nomi
+				["groups"] = {
+					i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
+				},
+			}),
 		}),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {

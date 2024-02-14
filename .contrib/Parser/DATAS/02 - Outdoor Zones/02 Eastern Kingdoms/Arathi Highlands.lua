@@ -1900,6 +1900,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select", "itemID",
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
+						12228,	-- Recipe: Roast Raptor (RECIPE!)
 					}},
 					["groups"] = {
 						-- #if AFTER TBC
@@ -1907,7 +1908,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #endif
-						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
@@ -1945,6 +1945,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select", "itemID",
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
+						12228,	-- Recipe: Roast Raptor (RECIPE!)
 					}},
 					["groups"] = {
 						-- #if AFTER TBC
@@ -1956,7 +1957,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
 						}),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
-						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(9555, {	-- Mu'uta <Bowyer>

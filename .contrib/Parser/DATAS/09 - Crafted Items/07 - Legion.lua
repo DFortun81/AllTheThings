@@ -191,6 +191,31 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(136683),	-- Terrorspike
 		}),
 	}),
+	prof(COOKING, {
+		i(133571),	-- Azshari Salad
+		i(133567),	-- Barracuda Mrglgagh
+		i(133576),	-- Bear Tartare
+		i(133681),	-- Crispy Bacon
+		i(133561),	-- Deep-Fried Mossgill
+		i(133575),	-- Dried Mackerel Strips
+		i(133569),	-- Drogbar-Style Salmon
+		i(133563),	-- Faronaar Fizz
+		i(152564, {["timeline"] = {ADDED_7_3_0}}),	-- Feast of the Fishes
+		i(133577),	-- Fighter Chow
+		i(133574),	-- Fishbrul Special
+		i(133578),	-- Hearty Feast
+		i(133568),	-- Koi-Scented Stormray
+		i(133579),	-- Lavish Suramar Feast
+		i(133565),	-- Leybeque Ribs
+		i(133572),	-- Nightborne Delicacy Platter
+		i(133562),	-- Pickled Stormray
+		i(133557),	-- Salt and Pepper Shank
+		i(133573),	-- Seed-Battered Fish Plate
+		i(142334, {["timeline"] = {ADDED_7_1_0}}),	-- Spiced Falcosaur Omelet
+		i(133564),	-- Spiced Rib Roast
+		i(133566),	-- Suramar Surf and Turf
+		i(133570),	-- The Hungry Magister
+	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
 			i(124440),	-- Arkhana

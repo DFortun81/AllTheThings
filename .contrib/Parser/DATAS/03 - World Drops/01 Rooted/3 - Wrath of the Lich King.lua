@@ -1115,15 +1115,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(37254),	-- Super Simian Sphere (TOY!)
 	}),
 	filter(RECIPES, {
-		-- #if AFTER 6.0.1.18297
-		prof(ALCHEMY, {
-			-- NOTE: This recipe was added to the game files but never actually made it into the game.
-			-- This shound be moved to NYI?
-			i(112022, {	-- Recipe: Mighty Shadow Protection Potion
-				["timeline"] = { "created 6.0.1.18297" },
-			}),
-		}),
-		-- #endif
 		prof(COOKING, {
 			i(43509),	-- Recipe: Bad Clams (RECIPE!)
 			i(43510),	-- Recipe: Haunted Herring (RECIPE!)

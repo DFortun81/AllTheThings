@@ -312,25 +312,26 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		i(27657),	-- Blackened Basilisk
 		i(27663),	-- Blackened Sporefish
 		i(27661),	-- Blackened Trout
-		i(33867),	-- Broiled Bloodfin
+		i(33867, {["timeline"] = {ADDED_2_3_0}}),	-- Broiled Bloodfin
 		i(27651),	-- Buzzard Bites
 		i(30155),	-- Clam Bar
 		i(31673),	-- Crunchy Serpent
 		i(27662),	-- Feltail Delight
-		applyclassicphase(TBC_PHASE_TWO, i(33052)),	-- Fisherman's Feast
+		applyclassicphase(TBC_PHASE_TWO, i(33052, {["timeline"] = {ADDED_2_1_2}})),	-- Fisherman's Feast
 		i(27666),	-- Golden Fish Sticks
 		i(27664),	-- Grilled Mudfish
-		applyclassicphase(TBC_PHASE_TWO, i(33053)),	-- Hot Buttered Trout
-		i(33874),	-- Kibler's Bits
+		applyclassicphase(TBC_PHASE_TWO, i(33053, {["timeline"] = {ADDED_2_1_2}})),	-- Hot Buttered Trout
+		i(33874, {["timeline"] = {ADDED_2_3_0}}),	-- Kibler's Bits
 		i(31672),	-- Mok'Nathal Shortribs
 		i(27665),	-- Poached Bluefish
 		i(27655),	-- Ravager Dog
 		i(27658),	-- Roasted Clefthoof
-		i(33825),	-- Skullfish Soup
+		i(33825, {["timeline"] = {ADDED_2_3_0}}),	-- Skullfish Soup
 		i(27667),	-- Spicy Crawdad
-		i(33872),	-- Spicy Hot Talbuk
-		applyclassicphase(TBC_PHASE_TWO, i(33048)),	-- Stewed Trout
-		i(33866),	-- Stormchops
+		i(33872, {["timeline"] = {ADDED_2_3_0}}),	-- Spicy Hot Talbuk
+		i(27656),	-- Sporeling Snack
+		applyclassicphase(TBC_PHASE_TWO, i(33048, {["timeline"] = {ADDED_2_1_2}})),	-- Stewed Trout
+		i(33866, {["timeline"] = {ADDED_2_3_0}}),	-- Stormchops
 		i(27660),	-- Talbuk Steak
 		i(27659),	-- Warp Burger
 	}),

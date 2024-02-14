@@ -501,6 +501,7 @@ i(112032, 156570);	-- Greater Draenor Haste Flask
 i(113626, 156573);	-- Greater Draenor Versatility Flask
 i(112052 ,0);		-- Alchemical Catalyst - Arrowbloom
 i(112043, 0);		-- Draenic Mana Potion
+i(112022, 0);		-- Mighty Shadow Protection Potion
 i(120132, 0);		-- Secrets of Draenor Alchemy
 
 -----------------

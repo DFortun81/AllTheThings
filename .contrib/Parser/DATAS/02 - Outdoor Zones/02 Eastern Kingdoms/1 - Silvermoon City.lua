@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local REDEMPTION = recipe(7328);	-- Redemption
 local SUMMON_VOIDWALKER = recipe(697);	-- Summon Voidwalker
-local ANDRA_ZYANDREL_GROUPS, QUELIS_GROUPS = {}, {};
+local ANDRA_ZYANDREL_GROUPS = {};
 local LYNA_GROUPS = {
 	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
 		["isLimited"] = true,
@@ -680,7 +680,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16677, {	-- Quelis <Cooking Supplies>
 					["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = QUELIS_GROUPS,
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(16678, {	-- Rahein <Blade Vendor>
 					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
@@ -876,10 +879,6 @@ for i,o in ipairs({
 	i(3428),	-- Common Gray Shirt
 	i(16060),	-- Common White Shirt
 }) do table.insert(ANDRA_ZYANDREL_GROUPS, o); end
-for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-}) do table.insert(QUELIS_GROUPS, o); end
 for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)

@@ -184,13 +184,11 @@ root(ROOTS.WorldDrops, {
 					4414,   -- Schematic: Portable Bronze Mortar
 					13063,  -- Starfaller
 				}},
-				-- #if AFTER 10.1.7
 				["groups"] = {
-					i(7678,	{	-- Recipe: Thistle Tea
+					i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
 						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
-				-- #endif
 			}),
 			i(31952, {	-- Khorium Lockbox
 				["timeline"] = { "added 2.1.0.6678" },
@@ -244,22 +242,14 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(5758,	{	-- Mithril Lockbox
-				-- #if AFTER 10.1.7
-				["groups"] = {
-					i(7678,	{	-- Recipe: Thistle Tea
-						["timeline"] = { ADDED_10_1_7 },
-					}),
-				},
-				-- #endif
+				i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 			}),
 			i(4632, {	-- Ornate Bronze Lockbox
-				-- #if AFTER 10.1.7
-				["groups"] = {
-					i(7678,	{	-- Recipe: Thistle Tea
-						["timeline"] = { ADDED_10_1_7 },
-					}),
-				},
-				-- #endif
+				i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 			}),
 			i(180532, {	-- Oxxein Lockbox
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
@@ -356,13 +346,11 @@ root(ROOTS.WorldDrops, {
 					10606,  -- Schematic: Parachute Cloak
 					4414    -- Schematic: Portable Bronze Mortar
 				}},
-				-- #if AFTER 10.1.7
 				["groups"] = {
-					i(7678,	{	-- Recipe: Thistle Tea
+					i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
 						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
-				-- #endif
 			}),
 			i(29569, {	-- Strong Junkbox
 				["timeline"] = { "added 2.0.1.6180" },

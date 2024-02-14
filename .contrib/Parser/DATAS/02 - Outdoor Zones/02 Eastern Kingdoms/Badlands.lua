@@ -1852,9 +1852,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(48060, {	-- "Chef" Overheat <Cooking Supplies>
 					["coord"] = { 65.0, 38.8, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),

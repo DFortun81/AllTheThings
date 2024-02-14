@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local GORNII_GROUPS, PHEA_GROUPS = {}, {};
 local EGOMIS_GROUPS = {
 	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
 		["isLimited"] = true,
@@ -437,6 +436,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						201,    -- Thick Cloth Pants
 						202,    -- Thick Cloth Shoes
 						200,    -- Thick Cloth Vest
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
 					}},
 				}),
 				n(16753, {	-- Gotaan
@@ -562,6 +562,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16718, {	-- Phea <Cooking Supplies>
 					["coord"] = { 54.4, 26.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					}},
 					["groups"] = PHEA_GROUPS,
 				}),
 				n(21019, {	-- Sixx <Moth Keeper>
@@ -670,15 +673,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 REDEMPTION.u = nil;
 
 -- Add in items that aren't supposed to be marked with a phase release.
-for i,o in ipairs({
-	i(16059),	-- Common Brown Shirt
-	i(3428),	-- Common Gray Shirt
-	i(16060),	-- Common White Shirt
-}) do table.insert(GORNII_GROUPS, o); end
-for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-}) do table.insert(PHEA_GROUPS, o); end
 for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)

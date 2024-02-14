@@ -135,6 +135,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 				}),
+				prof(COOKING, {
+					n(5482, {	-- Stephen Ryback <Cooking Trainer>
+						["coord"] = { 76.8, 53.6, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_COOKING,
+							-- #if AFTER CATA
+							CATA_COOKING
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 				prof(ENCHANTING, {
 					n(1317, {	-- Lucan Cordell <Enchanting Trainer>
 						["coord"] = { 53.0, 74.2, STORMWIND_CITY },
@@ -4414,10 +4427,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.4, 18.0, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5.25716" },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
 					-- #if AFTER WRATH
@@ -5015,7 +5028,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(49701, {	-- Jon Casper <Sous Chef>
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
@@ -5039,7 +5052,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
 						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
 						chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
-						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout (RECIPE!)
+						chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
+							["timeline"] = { ADDED_4_0_6 },
+						})),
 						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
 						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
 						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)

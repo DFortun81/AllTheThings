@@ -2414,10 +2414,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)
-							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
+							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(35566, {	-- Recipe: Juicy Bear Burger (RECIPE!)
-							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
+							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
@@ -2434,10 +2434,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(48580, {	-- Desaan <Cooking Supplies>
 					["coord"] = { 43.8, 29.8, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(2803, {	-- Malygen <General Goods>
 					-- #if AFTER CATA
@@ -2448,10 +2448,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)
-							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
+							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(35566, {	-- Recipe: Juicy Bear Burger (RECIPE!)
-							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
+							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},

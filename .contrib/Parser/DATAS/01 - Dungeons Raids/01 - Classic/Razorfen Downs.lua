@@ -304,20 +304,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(202249),	-- Recipe: Goldthorn Tea (RECIPE!)
 				},
 			})),
-			n(8696, {	-- Henry Stern
+			n(8696, bubbleDownSelf({ ["timeline"] = { REMOVED_6_0_2 } }, {	-- Henry Stern
 				["description"] = "The only source of acquiring Goldthorn Tea.",
-				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
-					{
-						["recipeID"] = 13028,	-- Goldthorn Tea
-						["timeline"] = { "removed 6.0.2" },
-						["requireSkill"] = COOKING,
+					recipe(13028, {	-- Goldthorn Tea
 						-- #if AFTER 6.0.2
 						["description"] = "Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
 						-- #endif
-					},
+					}),
 				},
-			}),
+			})),
 			n(75813, {	-- Sah'rhee
 				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you can click his body to start the encounter.",
 				["coord"] = { 80.0, 26.0, RAZORFEN_DOWNS },	-- The Murder Pens

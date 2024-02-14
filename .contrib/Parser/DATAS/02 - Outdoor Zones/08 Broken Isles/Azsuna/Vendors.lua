@@ -74,6 +74,7 @@ root(ROOTS.Zones, {
 						}),
 						i(142331, {	-- Recipe: Spiced Falcosaur Omelet (RECIPE!)
 							["cost"] = 10000000,	-- 1,000g
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(137713, {	-- Schematic: Bolt-Action Headgun [Rank 3] (RECIPE!)
 							["cost"] = 5500000,		-- 550g

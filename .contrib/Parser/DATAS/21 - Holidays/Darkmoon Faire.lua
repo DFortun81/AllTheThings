@@ -4185,10 +4185,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			n(56069, {	-- Tatia Brine <Fishing Supplies>
 				["coord"] = { 52.37, 88.76, DARKMOON_ISLAND },
 				["timeline"] = { "added 4.3.0.14942" },
-				["groups"] = {
-					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-				},
+				["sym"] = {{"select", "itemID",
+					6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+				}},
 			}),
 		}),
 		category(3, {	-- Tarot Decks

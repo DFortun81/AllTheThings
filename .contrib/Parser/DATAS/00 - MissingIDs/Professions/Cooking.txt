@@ -1,59 +1,6 @@
-0.5.3.3368
-r(2538),	-- Charred Wolf Meat
-r(2539),	-- Spiced Wolf Meat
-r(2540),	-- Roasted Boar Meat
-r(2541),	-- Coyote Steak
-r(2544),	-- Crab Cake
-r(2546),	-- Dry Pork Ribs
-r(2550),	-- Cooking
-r(3102),	-- Cooking
-r(3413),	-- Cooking
-r(6499),	-- Boiled Clams
-r(6500),	-- Goblin Deviled Clams
-0.5.5.3494
-r(8604),	-- Herb Baked Egg
-1.0.0.3980
-r(18260),	-- Cooking
-1.13.0.28211
-r(21175),	-- Spider Sausage
-2.0.0.6080
-r(33285),	-- Sporeling Snack
-r(33359),	-- Cooking
-2.4.3.8606
-r(37836),	-- Spice Bread
-r(42296),	-- Stewed Trout
-r(42302),	-- Fisherman's Feast
-r(42305),	-- Hot Buttered Trout
-3.0.1.8303
-r(45549),	-- Mammoth Meal
-r(45550),	-- Shoveltusk Steak
-r(45551),	-- Worm Delight
-r(45552),	-- Roasted Worg
-r(45553),	-- Rhino Dogs
-r(45554),	-- Great Feast
-r(45560),	-- Smoked Rockfin
-r(45561),	-- Grilled Bonescale
-r(45562),	-- Sauteed Goby
-r(45563),	-- Grilled Sculpin
-r(45564),	-- Smoked Salmon
-r(45565),	-- Poached Nettlefish
-r(45566),	-- Pickled Fangtooth
-r(45569),	-- Baked Manta Ray
-3.0.1.8622
-r(51296),	-- Cooking
-3.1.0.9767
-r(58065),	-- Dalaran Clam Chowder
-r(64358),	-- Black Jelly
-4.0.1.12911
-r(88006),	-- Blackened Surprise
-r(88015),	-- Darkbrew Lager
-r(88053),	-- Cooking
-4.3.4.15595
-r(93741),	-- Venison Jerky
 5.0.3.15890
 r(104381),	-- Cooking
 6.0.1.18179
-r(89719),	-- Archaeology
 r(145167),	-- Grand Noodle Cart Kit
 r(145170),	-- Grand Deluxe Noodle Cart Kit
 r(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
@@ -85,24 +32,9 @@ r(161000),	-- Gorgrond Chowder
 7.3.0.24473
 r(173978),	-- Feast of Blood
 r(173979),	-- Feast of the Waters
-r(195128),	-- Cooking
 8.0.1.25902
-r(264632),	-- Classic Cooking
-r(264634),	-- Outland Cooking
-r(264636),	-- Northrend Cooking
-r(264638),	-- Cataclysm Cooking
 r(264640),	-- Pandaria Cooking
 r(264642),	-- Draenor Cooking
-r(264644),	-- Legion Cooking
-8.0.1.25976
-r(265815),	-- Zandalari Tailoring
 
 
-
-
-Missing in CookingItemDB.lua
-
-6.0.1.18179
-r(89719),	-- Archaeology
-8.0.1.25976
-r(265815),	-- Zandalari Tailoring
+Nothing is Missing in CookingItemDB.lua! Good Work!

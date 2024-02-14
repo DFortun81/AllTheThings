@@ -6,35 +6,6 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
 			n(PROFESSIONS, {
-				prof(COOKING, {
-					i(133817, {	-- Recipe: Suramar Surf and Turf [Rank 1] (RECIPE!)
-						["cost"] = {
-							{ "i", 141011, 1 },	-- Recipe: Surf
-							{ "i", 141012, 1 },	-- Recipe: Turf
-						},
-					}),
-					i(141011, {	-- Recipe: Surf
-						["description"] = "Drops from any marine mob in the zone.",
-						["crs"] = {
-							99720,	-- Coastal Spikeback
-							99506,	-- Colossal Striper
-							100864,	-- Cora'kar
-							99504,	-- Deepwater Spikeback
-							107312,	-- Frothing Crab
-							107846,	-- Pinchshank
-							99893,	-- Razortail Hammerhead
-							103575,	-- Reef Lord Raj'his
-							102819,	-- Sashj'tar Pincher
-							99070,	-- Sashj'tar Reef Runner
-							99075,	-- Sashj'tar Stormcaller
-							110824,	-- Tideclaw
-							99304,	-- Trenchwalker Scavenger
-						},
-					}),
-					i(141012, {	-- Recipe: Turf
-						["description"] = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
-					}),
-				}),
 				prof(FISHING, {
 					faction(2101, {	-- Sha'leth
 						["creatureID"] = 120459,

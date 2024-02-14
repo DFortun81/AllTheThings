@@ -1056,10 +1056,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6482, {	-- Firewalker Boots
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						-- #if BEFORE 4.0.3
-						-- Recipe is not unobtainable, sold by Zargh in Nothern Barrens
-						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
-						-- #endif
+						i(3735, {	-- Recipe: Hot Lion Chops (RECIPE!)
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
 					},
 				}),
 				q(502, {	-- Elixir of Pain (2/2)
@@ -2877,11 +2876,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.0, 19.6, HILLSBRAD_FOOTHILLS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
 					-- #if AFTER CATA
@@ -2955,11 +2954,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.6, 61.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
+						6369,	-- Recipe: Rockscale Cod (RECIPE!)
+					}},
 				}),
 				-- #endif
 				n(2394, {	-- Mallen Swain <Tailoring Supplies>
@@ -2997,6 +2996,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.0, 55.2, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
 							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
@@ -3017,8 +3020,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -3113,7 +3114,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.0, 45.8, HILLSBRAD_FOOTHILLS },
 					["classes"] = { ROGUE },
 					["groups"] = {
-						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
+						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { "added 1.3.0", REMOVED_6_0_2, ADDED_7_1_0 },
+						}),
 					},
 				}),
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer> (Alterac Mountains)

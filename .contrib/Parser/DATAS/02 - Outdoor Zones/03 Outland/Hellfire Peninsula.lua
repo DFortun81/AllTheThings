@@ -3140,7 +3140,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
-								["timeline"] = { "removed 3.1.0" },
+								["timeline"] = { REMOVED_3_1_0 },
 								["rank"] = 5,
 							}),
 						},
@@ -3206,7 +3206,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
-								["timeline"] = { "removed 3.1.0" },
+								["timeline"] = { REMOVED_3_1_0 },
 								["rank"] = 5,
 							}),
 						},

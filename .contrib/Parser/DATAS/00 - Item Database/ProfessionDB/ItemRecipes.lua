@@ -7,20 +7,8 @@
 -----------------
 local i = GetRecipeHelperForProfession(COOKING);
 -----------------
--- #IF AFTER CLASSIC
-i(21025, 25659, "removed 4.0.3"); -- Recipe: Dirge's Kickin' Chimaerok Chops (RECIPE!)
-applyevent(EVENTS.FEAST_OF_WINTER_VEIL, i(17200, 21143)); -- Recipe: Gingerbread Cookie (RECIPE!)
-i(3737, 3400, "removed 4.0.3.2000"); -- Recipe: Soothing Turtle Bisque (RECIPE!)
-i(7678, 9513, "removed 4.0.3"); -- Recipe: Thistle Tea (RECIPE!)
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
 -- #IF AFTER MOP
 i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun (RECIPE!)
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
 -- #ENDIF
 
 -----------------

@@ -91,7 +91,6 @@ r(15255),	-- Mechanical Repair Kit
 1.1.2.4125
 r(19567),	-- Salt Shaker
 r(19788),	-- Dense Blasting Powder
-r(19800),	-- Thorium Shells
 r(20219),	-- Gnomish Engineer
 r(20222),	-- Goblin Engineer
 1.13.0.28211

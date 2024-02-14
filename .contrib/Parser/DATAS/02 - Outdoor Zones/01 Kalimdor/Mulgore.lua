@@ -1890,10 +1890,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.6, 55.0, MULGORE },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
+						6328,	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+					}},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(205635, {	-- Takoda Sunmane <Naturalist>

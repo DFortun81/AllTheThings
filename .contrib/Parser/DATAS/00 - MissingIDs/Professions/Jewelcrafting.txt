@@ -179,6 +179,7 @@ r(36525),	-- Red Ring of Destruction
 r(36526),	-- Diamond Focus Ring
 r(37818),	-- Bronze Band of Force
 r(37855),	-- Ring of Arcane Shielding
+r(38068),	-- Mercurial Adamantite
 r(38175),	-- Bronze Torc
 r(38503),	-- The Frozen Eye
 r(38504),	-- The Natural Ward

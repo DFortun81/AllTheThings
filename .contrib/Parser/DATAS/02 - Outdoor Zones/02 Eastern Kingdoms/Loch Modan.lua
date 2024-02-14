@@ -1861,6 +1861,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1684, {	-- Khara Deepwater <Fishing Supplies>
 					["coord"] = { 40.4, 39.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select", "itemID",
+						6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
+						6328,	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+					}},
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(208855, {	-- Rainbow Fin Albacore Chum
@@ -1868,9 +1872,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = 526,	-- 5s 26c
 						})),
 						-- #endif
-						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6329),	-- Recipe: Loch Frenzy Delight (RECIPE!)
-						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY

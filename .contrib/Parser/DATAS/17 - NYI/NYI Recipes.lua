@@ -10,14 +10,6 @@ root(ROOTS.NeverImplemented, {
 				i(16073),	-- Artisan Cookbook
 				i(6891),	-- Recipe: Herb Baked Egg
 			}),
-			tier(WOTLK_TIER, {
-				-- 3.0.1
-				tier(WOTLK_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 3.0.1"} }, {
-					i(34126),	-- Recipe: Shoveltusk Soup
-					i(39692),	-- Recipe: Succulent Orca Stew
-					i(39644),	-- Recipe: Kungaloosh
-				})),
-			}),
 			tier(MOP_TIER, {
 				-- 5.0.1
 				tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
@@ -134,7 +126,6 @@ root(ROOTS.NeverImplemented, {
 				i(16085),	-- Artisan First Aid - Heal Thyself
 				i(8547),	-- Formula: Powerful Smelling Salts
 				i(23689),	-- Manual: Crystal Infused Bandage
-				i(23690),	-- Recipe: Crystal Flake Throat Lozenge
 			}),
 		}),
 		prof(FISHING, {

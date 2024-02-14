@@ -291,6 +291,54 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			-- #endif
 		}),
 	}),
+	prof(COOKING, {
+		i(43491),	-- Bad Clams
+		i(42942),	-- Baked Manta Ray
+		i(45932, {["timeline"] = {ADDED_3_1_0}}),	-- Black Jelly
+		i(42999),	-- Blackened Dragonfin
+		i(42997),	-- Blackened Worg Steak
+		i(43004),	-- Critter Bites
+		i(42998),	-- Cuttlesteak
+		i(43268),	-- Dalaran Clam Chowder
+		i(43000),	-- Dragonfin Filet
+		i(34767),	-- Firecracker Salmon
+		i(43015, {["timeline"] = {ADDED_3_0_8}}),	-- Fish Feast
+		i(43478),	-- Gigantic Feast
+		i(34753),	-- Great Feast
+		i(34760),	-- Grilled Bonescale
+		i(34762),	-- Grilled Sculpin
+		i(43492),	-- Haunted Herring
+		i(42995),	-- Hearty Rhino
+		i(34769),	-- Imperial Manta Steak
+		i(39520),	-- Kungaloosh
+		i(43488),	-- Last Week's Mammoth
+		i(34748),	-- Mammoth Meal
+		i(34754),	-- Mega Mammoth Meal
+		i(34758),	-- Mighty Rhino Dogs
+		i(34747),	-- Northern Stew
+		i(34765),	-- Pickled Fangtooth
+		i(34764),	-- Poached Nettlefish
+		i(34766),	-- Poached Northern Sculpin
+		i(34752),	-- Rhino Dogs
+		i(42994),	-- Rhinolicious Wormsteak
+		i(34751),	-- Roasted Worg
+		i(34761),	-- Sauteed Goby
+		i(34749),	-- Shoveltusk Steak
+		i(43480),	-- Small Feast
+		i(34759),	-- Smoked Rockfin
+		i(34763),	-- Smoked Salmon
+		i(42996),	-- Snapper Extreme
+		i(43005),	-- Spiced Mammoth Treats
+		i(34756),	-- Spiced Worm Burger
+		i(34768),	-- Spicy Blue Nettlefish
+		i(42993),	-- Spicy Fried Herring
+		i(43490),	-- Tasty Cupcake
+		i(34755),	-- Tender Shoveltusk Steak
+		i(43001),	-- Tracker Snacks
+		i(34757),	-- Very Burnt Worg
+		i(44953, {["timeline"] = {ADDED_3_0_8}}),	-- Worg Tartare
+		i(34750),	-- Worm Delight
+	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
 			i(34057),	-- Abyss Crystal

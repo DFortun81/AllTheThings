@@ -6,11 +6,6 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(PROFESSIONS,  {
-				prof(COOKING, {
-					i(133820, {	-- Recipe: Drogbar-Style Salmon [Rank 1] (RECIPE!)
-						["description"] = "Can drop from any Drogbar.",
-					}),
-				}),
 				prof(FISHING, {
 					faction(2099, {	-- Akule Riverhorn
 						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 40.9|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",

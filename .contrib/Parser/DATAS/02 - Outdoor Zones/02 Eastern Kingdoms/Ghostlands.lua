@@ -3,10 +3,6 @@
 ---------------------------------------------------
 -- CRIEVE NOTE: Don't touch this file without asking. <-- Did someone forget?
 -- Burden of Truth: Classic & TBC.
-local MASTER_CHEF_GROUPS = {
-	i(27687),	-- Recipe: Bat Bites (RECIPE!)
-	i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
-};
 local RATHIS_TOMBER_GROUPS = {};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(GHOSTLANDS, {
@@ -1271,7 +1267,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16253, {	-- Master Chef Mouldier <Cooking Trainer & Supplies>
 					["coord"] = { 48.4, 31.0, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["groups"] = MASTER_CHEF_GROUPS,
+					-- #if AFTER WRATH
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
+					-- #endif
+					["g"] = {
+						i(27687),	-- Recipe: Bat Bites (RECIPE!)
+					},
 				}),
 				n(16528, {	-- Provisioner Vredigar
 					["coord"] = { 47.6, 32.2, GHOSTLANDS },
@@ -1362,14 +1366,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-
--- #if AFTER WRATH
--- Add the 2 recipes that aren't TBC Phase One, they get added to his loot table in Wrath.
-for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-}) do table.insert(MASTER_CHEF_GROUPS, o); end
--- #endif
 
 -- Add the recipes to Rathis' loot table, these were available long before TBC.
 for i,o in ipairs({

@@ -191,6 +191,41 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(70165, {["timeline"] = {ADDED_4_2_0}}),	-- Witch-Hunter's Harvester
 		}),
 	}),
+	prof(COOKING, {
+		i(62661),	-- Baked Rockfish
+		i(62665),	-- Basilisk Liverdog
+		i(62670),	-- Beer-Basted Crocolisk
+		i(62668),	-- Blackbelly Sushi
+		i(62676),	-- Blackened Surprise
+		i(62289),	-- Broiled Dragon Feast
+		i(62655),	-- Broiled Mountain Trout
+		i(62680),	-- Chocolate Cookie
+		i(62664),	-- Crocolisk Au Gratin
+		i(62790),	-- Darkbrew Lager
+		i(62666),	-- Delicious Sagefish Tail
+		i(62673),	-- Feathered Lure
+		i(62677),	-- Fish Fry
+		i(62649),	-- Fortune Cookie
+		i(62662),	-- Grilled Dragon
+		i(62659),	-- Hearty Seafood Soup
+		i(62674),	-- Highland Spirits
+		i(62654),	-- Lavascale Fillet
+		i(62663),	-- Lavascale Minestrone
+		i(62651),	-- Lightly Fried Lurker
+		i(62657),	-- Lurker Lunch
+		i(62667),	-- Mushroom Sauce Mudfish
+		i(62660),	-- Pickled Guppy
+		i(62653),	-- Salted Eye
+		i(68687, {["timeline"] = {ADDED_4_0_6}}),	-- Scalding Murglesnout
+		i(62290),	-- Seafood Magnifique Feast
+		i(62652),	-- Seasoned Crab
+		i(62671),	-- Severed Sagefish Head
+		i(62669),	-- Skewered Eel
+		i(62672),	-- South Island Iced Tea
+		i(62675),	-- Starfire Espresso
+		i(62658),	-- Tender Baked Turtle
+		i(62656),	-- Whitecrest Gumbo
+	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
 			i(52719),	-- Greater Celestial Essence

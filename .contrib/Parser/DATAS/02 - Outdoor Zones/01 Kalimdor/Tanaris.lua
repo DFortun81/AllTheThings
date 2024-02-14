@@ -3289,9 +3289,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 35,
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
-						-- #if AFTER WRATH
-						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
-						-- #endif
+						recipe(18260, {	-- Cooking (Artisan)
+							["timeline"] = { REMOVED_3_1_0 },
+						}),
+						recipe(64054, {	-- Clamlette Magnifique (RECIPE!)
+							["timeline"] = { ADDED_3_1_0 },
+						}),
 					},
 				}),
 				q(13825, {	-- Clamlette Surprise
@@ -3303,6 +3306,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
+						recipe(18260, {	-- Cooking (Artisan)
+							["timeline"] = { REMOVED_3_1_0 },
+						}),
 						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 					},
 				}),
@@ -5218,9 +5224,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.6, 22.1, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(13939, {	-- Recipe: Spotted Yellowtail (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
-						}),
 						i(13942, {	-- Recipe: Grilled Squid (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
@@ -5228,6 +5231,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 						i(13946, {	-- Recipe: Poached Sunscale Salmon (RECIPE!)
+							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
+						}),
+						i(13939, {	-- Recipe: Spotted Yellowtail (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 					},

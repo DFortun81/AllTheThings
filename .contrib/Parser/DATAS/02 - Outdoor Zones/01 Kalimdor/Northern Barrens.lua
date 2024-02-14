@@ -2008,7 +2008,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
 						}),
-						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
+						i(9513, {	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { "removed 1.3.0" },
+						}),
+						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },
+						}),
 					}
 				}),
 				q(29111, {	-- Mor'shan Caravan Delivery
@@ -4010,10 +4015,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 62.8, 38.2, THE_BARRENS },
 					-- #endif
-					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					}},
 				}),
 				n(3658, {	-- Lizzarik <Weapon Dealer>
 					["coords"] = {
@@ -4099,10 +4104,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 32.0, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
 					-- #if AFTER CATA

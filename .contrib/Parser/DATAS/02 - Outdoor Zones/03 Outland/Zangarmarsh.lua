@@ -2212,7 +2212,7 @@ root(ROOTS.Zones, {
 							}),
 							i(27689, {	-- Recipe: Sporeling Snack (RECIPE!)
 								["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
-								["timeline"] = { "removed 4.2.0", "deleted 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 							}),
 							i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)
 								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
@@ -2244,7 +2244,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 78.5, 63.0, ZANGARMARSH },
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
-								["timeline"] = { "removed 3.1.0" },
+								["timeline"] = { REMOVED_3_1_0 },
 								["rank"] = 5,
 							}),
 						},

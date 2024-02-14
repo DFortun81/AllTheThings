@@ -2021,15 +2021,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(2664, {	-- Kelsey Yance <Cook>
 					["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
+					["sym"] = {{"select", "itemID",
+						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
+						6369,	-- Recipe: Rockscale Cod (RECIPE!)
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 					["groups"] = {
 						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
 						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
 						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
 						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
@@ -2057,9 +2059,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
 					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.2.0.14241" },
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),

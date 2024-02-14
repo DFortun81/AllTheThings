@@ -1843,11 +1843,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 8.0, 58.3, WETLANDS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						6369,	-- Recipe: Rockscale Cod (RECIPE!)
+					}},
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>
 					-- #if AFTER CATA

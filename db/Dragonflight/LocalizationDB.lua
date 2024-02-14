@@ -8,9 +8,6 @@ local L = _.L;
 -- Category Database Module
 _.CategoryNames = {
 	[3] = "Tarot Decks",
-	[58] = "Holiday Cooking",
-	[63] = "Everyday Cooking",
-	[70] = "Unusual Delights",
 	[106] = "Card",
 	[107] = "Scrolls",
 	[167] = "Crowns",
@@ -83,9 +80,6 @@ _.CategoryNames = {
 }
 _.CategoryIcons = {
 	[3] = "Interface/Icons/Inv_misc_ticket_tarot_portal_01",
-	[58] = "Interface/Icons/INV_Misc_Food_62",
-	[63] = "Interface/Icons/INV_Misc_Food_12",
-	[70] = "Interface/Icons/INV_Helmet_66",
 	[106] = "Interface/Icons/Inv_misc_ticket_tarot_portal_01",
 	[107] = "Interface/Icons/inv_scroll_03",
 	[167] = "Interface/Icons/inv_crown_13",
@@ -23968,9 +23962,6 @@ localize(_.ObjectNames, {
 end
 if simplifiedLocale == "ko" then
 localize(_.CategoryNames, {
-	[58] = "축제 요리",
-	[63] = "일반 요리",
-	[70] = "특별한 별미",
 	[167] = "머리",
 	[168] = "재료",
 	[183] = "부품",

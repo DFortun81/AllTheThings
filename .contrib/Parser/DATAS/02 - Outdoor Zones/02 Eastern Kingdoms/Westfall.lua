@@ -587,7 +587,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 3.0.2
 						recipe(8681),	-- Instant Poison
 						-- #endif
-						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
+						i(9513, {	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { "removed 1.3.0" },
+						}),
+						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },
+						}),
 					},
 				}),
 				q(26228, {	-- Livin' the Life
@@ -1642,10 +1647,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4305, {	-- Kriggon Talsone <Fisherman>
 					["coord"] = { 36.2, 90.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select", "itemID",
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						6326,	-- Recipe: Slitherskin Mackerel (RECIPE!)
+					}},
 					["groups"] = {
 						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
-						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),

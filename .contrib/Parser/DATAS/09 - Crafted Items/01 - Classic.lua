@@ -555,142 +555,122 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 	}),
 	prof(COOKING, {
-		category(63, {	-- Everyday Cooking
-			i(13935),	-- Baked Salmon
-			i(4457),	-- Barbecued Buzzard Wing
-			applyclassicphase(TBC_PHASE_ONE, i(27636)),	-- Bat Bites
-			i(2888),	-- Beer Basted Boar Ribs
-			i(3726),	-- Big Bear Steak
-			i(3220),	-- Blood Sausage
-			i(5525),	-- Boiled Clams
-			i(6290),	-- Brilliant Smallfish
-			i(4593),	-- Bristle Whisker Catfish
-			i(12213),	-- Carrion Surprise
-			applyclassicphase(TBC_PHASE_ONE, i(35563)),	-- Charred Bear Kabobs
-			i(2679),	-- Charred Wolf Meat
-			i(5526),	-- Clam Chowder
-			applyclassicphase(WRATH_PHASE_ONE, i(33004)),	-- Clamlette Magnifique
-			i(2682),	-- Cooked Crab Claw
-			i(13927),	-- Cooked Glossy Mightfish
-			i(2684),	-- Coyote Steak
-			i(2683),	-- Crab Cake
-			i(12224),	-- Crispy Bat Wing
-			i(5479),	-- Crispy Lizard Tail
-			i(3664),	-- Crocolisk Gumbo
-			i(3662),	-- Crocolisk Steak
-			applyclassicphase(TBC_PHASE_ONE, i(22645)),	-- Crunchy Spider Surprise
-			i(3665),	-- Curiously Tasty Omelet
-			applyclassicphase(TBC_PHASE_ONE, i(33924)),	-- Delicious Chocolate Cake
-			i(5478),	-- Dig Rat Stew
-			i(2687),	-- Dry Pork Ribs
-			i(184690, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Fancy Darkmoon Feast
-			i(184682, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Lemony Herb Filet
-			i(184624, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Sugary Fish Feast
-			-- #if AFTER WOD
-			applyclassicphase(WOD_PHASE_ONE, i(126935)),	-- Fancy Darkmoon Feast
-			-- #endif
-			i(13930),	-- Filet of Redgill
-			i(5476),	-- Fillet of Frenzy
-			i(6038),	-- Giant Clam Scorcho
-			i(5527),	-- Goblin Deviled Clams
-			i(10841, {	-- Goldthorn Tea
-				["timeline"] = { "removed 6.0.1", ADDED_10_0_5 },
-			}),
-			i(3666),	-- Gooey Spider Cake
-			i(724),		-- Goretusk Liver Pie
-			i(13928),	-- Grilled Squid
-			i(20074),	-- Heavy Crocolisk Stew
-			i(12215),	-- Heavy Kodo Stew
-			i(6888),	-- Herb Baked Egg
-			i(3727),	-- Hot Lion Chops
-			i(13929),	-- Hot Smoked Bass
-			i(13851),	-- Hot Wolf Ribs
-			applyclassicphase(TBC_PHASE_ONE, i(35565)),	-- Juicy Bear Burger
-			i(12212),	-- Jungle Stew
-			i(5472),	-- Kaldorei Spider Kabob
-			i(5480, {	-- Lean Venison
-				["timeline"] = { "removed 4.0.3", ADDED_9_1_0 },
-			}),
-			i(12209, {	-- Lean Wolf Steak
-				["timeline"] = { "removed 5.0.4", ADDED_9_1_0 },
-			}),
-			-- #if AFTER WOD
-			applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet
-			-- #endif
-			i(13933),	-- Lobster Stew
-			i(6316),	-- Loch Frenzy Delight
-			i(4592),	-- Longjaw Mud Snapper
-			applyclassicphase(TBC_PHASE_ONE, i(27635)),	-- Lynx Steak
-			i(13934),	-- Mightfish Steak
-			i(8364),	-- Mithril Head Trout
-			i(12218),	-- Monster Omelet
-			i(3663),	-- Murloc Fin Soup
-			i(12214),	-- Mystery Stew
-			i(13931),	-- Nightfin Soup
-			i(13932),	-- Poached Sunscale Salmon
-			i(5095),	-- Rainbow Fin Albacore
-			i(1082),	-- Redridge Goulash
-			i(12210),	-- Roast Raptor
-			i(2681),	-- Roasted Boar Meat
-			i(5474),	-- Roasted Kodo Meat
-			applyclassicphase(TBC_PHASE_ONE, i(24105)),	-- Roasted Moongraze Tenderloin
-			i(4594),	-- Rockscale Cod
-			applyclassicphase(PHASE_ONE_DIREMAUL, i(18254)),	-- Runn Tum Tuber Surprise
-			i(21217),	-- Sagefish Delight
-			i(5473),	-- Scorpid Surprise
-			i(1017),	-- Seasoned Wolf Kabob
-			i(787),		-- Slitherskin Mackerel
-			i(6890),	-- Smoked Bear Meat
-			applyclassicphase(PHASE_FOUR, i(20452)),	-- Smoked Desert Dumplings
-			i(21072),	-- Smoked Sagefish
-			i(3729),	-- Soothing Turtle Bisque
-			applyclassicphase(TBC_PHASE_ONE, i(30816)),	-- Spice Bread
-			i(12216),	-- Spiced Chili Crab
-			i(2680),	-- Spiced Wolf Meat
-			i(17222),	-- Spider Sausage
-			i(6887),	-- Spotted Yellowtail
-			i(5477),	-- Strider Stew
-			i(2685),	-- Succulent Pork Ribs
-			-- #if AFTER WOD
-			applyclassicphase(WOD_PHASE_ONE, i(126936)),	-- Sugar-Crusted Fish Feast
-			-- #endif
-			i(3728),	-- Tasty Lion Steak
-			i(18045),	-- Tender Wolf Steak
-			i(16766),	-- Undermine Clam Chowder
-			-- #if AFTER CATA
-			applyclassicphase(CATA_PHASE_ONE, i(67230)),	-- Venison Jerky
-			-- #endif
-			i(733),		-- Westfall Stew
-		}),
-		category(58, {	-- Holiday Cooking
-			-- #if AFTER WRATH
-			applyclassicphase(WRATH_PHASE_ONE, i(46691)),	-- Bread of the Dead [Day of the Dead]
-			applyclassicphase(WRATH_PHASE_ONE, i(44839)),	-- Candied Sweet Potato [Pilgrim's Bounty]
-			applyclassicphase(WRATH_PHASE_ONE, i(44840)),	-- Cranberry Chutney [Pilgrim's Bounty]
-			-- #endif
-			-- #if BEFORE MOP
-			i(17198),	-- Egg Nog (name changed)
-			-- #endif
-			i(17197),	-- Gingerbread Cookie
-			-- #if AFTER TBC
-			applyclassicphase(TBC_PHASE_ONE, i(34411)),	-- Hot Apple Cider
-			-- #endif
-			-- #if AFTER WRATH
-			applyclassicphase(WRATH_PHASE_ONE, i(44836)),	-- Pumpkin Pie [Pilgrim's Bounty]
-			applyclassicphase(WRATH_PHASE_ONE, i(44838)),	-- Slow-Roasted Turkey [Pilgrim's Bounty]
-			applyclassicphase(WRATH_PHASE_ONE, i(44837)),	-- Spice Bread Stuffing [Pilgrim's Bounty]
-			-- #endif
-			-- #if AFTER MOP
-			i(17198),	-- Winter Veil Egg Nog (name changed)
-			-- #endif
-		}),
-		category(70, {	-- Unusual Delights
-			applyclassicphase(TBC_PHASE_ONE, i(34832)),	-- Captain Rumsey's Lager
-			applyclassicphase(PHASE_FIVE, i(21023)),	-- Dirge's Kickin' Chimaerok Chops
-			i(12217),	-- Dragonbreath Chili
-			i(6657),	-- Savory Deviate Delight
-			i(7676),	-- Thistle Tea
-		}),
+		i(13935),	-- Baked Salmon
+		i(4457),	-- Barbecued Buzzard Wing
+		applyclassicphase(TBC_PHASE_ONE, i(27636, {["timeline"] = {ADDED_2_0_5}})),	-- Bat Bites
+		i(2888),	-- Beer Basted Boar Ribs
+		i(3726, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Big Bear Steak
+		i(3220),	-- Blood Sausage
+		i(5525),	-- Boiled Clams
+		applyclassicphase(WRATH_PHASE_ONE, i(46691, {["timeline"] = {ADDED_3_2_2}})),	-- Bread of the Dead [Day of the Dead]
+		i(6290),	-- Brilliant Smallfish
+		i(4593),	-- Bristle Whisker Catfish
+		applyclassicphase(WRATH_PHASE_ONE, i(44839, {["timeline"] = {ADDED_3_2_2}})),	-- Candied Sweet Potato [Pilgrim's Bounty]
+		applyclassicphase(TBC_PHASE_ONE, i(34832, {["timeline"] = {ADDED_2_4_0}})),	-- Captain Rumsey's Lager
+		i(12213),	-- Carrion Surprise
+		applyclassicphase(TBC_PHASE_ONE, i(35563, {["timeline"] = {ADDED_2_4_0}})),	-- Charred Bear Kabobs
+		i(2679),	-- Charred Wolf Meat
+		i(5526),	-- Clam Chowder
+		applyclassicphase(WRATH_PHASE_ONE, i(33004, {["timeline"] = {ADDED_3_1_0}})),	-- Clamlette Magnifique
+		i(2682),	-- Cooked Crab Claw
+		i(13927),	-- Cooked Glossy Mightfish
+		i(2684),	-- Coyote Steak
+		i(2683),	-- Crab Cake
+		applyclassicphase(WRATH_PHASE_ONE, i(44840, {["timeline"] = {ADDED_3_2_2}})),	-- Cranberry Chutney [Pilgrim's Bounty]
+		i(12224),	-- Crispy Bat Wing
+		i(5479),	-- Crispy Lizard Tail
+		i(3664),	-- Crocolisk Gumbo
+		i(3662),	-- Crocolisk Steak
+		applyclassicphase(TBC_PHASE_ONE, i(22645, {["timeline"] = {ADDED_2_0_5}})),	-- Crunchy Spider Surprise
+		i(3665),	-- Curiously Tasty Omelet
+		applyclassicphase(TBC_PHASE_ONE, i(33924, {["timeline"] = {ADDED_2_3_0}})),	-- Delicious Chocolate Cake
+		i(5478),	-- Dig Rat Stew
+		applyclassicphase(PHASE_FIVE, i(21023, {["timeline"] = {REMOVED_4_0_3}})),	-- Dirge's Kickin' Chimaerok Chops
+		i(12217),	-- Dragonbreath Chili
+		i(2687),	-- Dry Pork Ribs
+		-- #if BEFORE 5.4.1
+		i(17198),	-- Egg Nog / Winter Veil Egg Nog[5.4.1+]
+		-- #endif
+		i(184690, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Fancy Darkmoon Feast
+		i(184682, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Lemony Herb Filet
+		i(184624, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Sugary Fish Feast
+		-- #if AFTER WOD
+		applyclassicphase(WOD_PHASE_ONE, i(126935)),	-- Fancy Darkmoon Feast
+		-- #endif
+		i(13930),	-- Filet of Redgill
+		i(5476),	-- Fillet of Frenzy
+		i(6038),	-- Giant Clam Scorcho
+		i(17197),	-- Gingerbread Cookie
+		i(5527),	-- Goblin Deviled Clams
+		i(10841, {["timeline"] = {REMOVED_6_0_2, ADDED_10_0_0}}),	-- Goldthorn Tea
+		i(3666),	-- Gooey Spider Cake
+		i(724),		-- Goretusk Liver Pie
+		i(13928),	-- Grilled Squid
+		i(20074),	-- Heavy Crocolisk Stew
+		i(12215),	-- Heavy Kodo Stew
+		i(6888),	-- Herb Baked Egg
+		applyclassicphase(TBC_PHASE_ONE, i(34411, {["timeline"] = {ADDED_2_3_0}})),	-- Hot Apple Cider
+		i(3727),	-- Hot Lion Chops
+		i(13929),	-- Hot Smoked Bass
+		i(13851),	-- Hot Wolf Ribs
+		applyclassicphase(TBC_PHASE_ONE, i(35565, {["timeline"] = {ADDED_2_4_0}})),	-- Juicy Bear Burger
+		i(12212),	-- Jungle Stew
+		i(5472),	-- Kaldorei Spider Kabob
+		i(5480, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Lean Venison
+		i(12209, {["timeline"] = {REMOVED_5_0_4, ADDED_9_1_0}}),	-- Lean Wolf Steak
+		-- #if AFTER WOD
+		applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet
+		-- #endif
+		i(13933),	-- Lobster Stew
+		i(6316),	-- Loch Frenzy Delight
+		i(4592),	-- Longjaw Mud Snapper
+		applyclassicphase(TBC_PHASE_ONE, i(27635, {["timeline"] = {ADDED_2_0_5}})),	-- Lynx Steak
+		i(13934),	-- Mightfish Steak
+		i(8364),	-- Mithril Head Trout
+		i(12218),	-- Monster Omelet
+		i(3663),	-- Murloc Fin Soup
+		i(12214),	-- Mystery Stew
+		i(13931),	-- Nightfin Soup
+		i(13932),	-- Poached Sunscale Salmon
+		applyclassicphase(WRATH_PHASE_ONE, i(44836, {["timeline"] = {ADDED_3_2_2}})),	-- Pumpkin Pie [Pilgrim's Bounty]
+		i(5095),	-- Rainbow Fin Albacore
+		i(1082),	-- Redridge Goulash
+		i(12210),	-- Roast Raptor
+		i(2681),	-- Roasted Boar Meat
+		i(5474),	-- Roasted Kodo Meat
+		applyclassicphase(TBC_PHASE_ONE, i(24105, {["timeline"] = {ADDED_2_0_5}})),	-- Roasted Moongraze Tenderloin
+		i(4594),	-- Rockscale Cod
+		applyclassicphase(PHASE_ONE_DIREMAUL, i(18254)),	-- Runn Tum Tuber Surprise
+		i(21217),	-- Sagefish Delight
+		i(6657),	-- Savory Deviate Delight
+		i(5473),	-- Scorpid Surprise
+		i(1017),	-- Seasoned Wolf Kabob
+		i(787),		-- Slitherskin Mackerel
+		applyclassicphase(WRATH_PHASE_ONE, i(44838, {["timeline"] = {ADDED_3_2_2}})),	-- Slow-Roasted Turkey [Pilgrim's Bounty]
+		i(6890),	-- Smoked Bear Meat
+		applyclassicphase(PHASE_FOUR, i(20452)),	-- Smoked Desert Dumplings
+		i(21072),	-- Smoked Sagefish
+		i(3729),	-- Soothing Turtle Bisque
+		applyclassicphase(TBC_PHASE_ONE, i(30816, {["timeline"] = {ADDED_2_0_5}})),	-- Spice Bread
+		applyclassicphase(WRATH_PHASE_ONE, i(44837, {["timeline"] = {ADDED_3_2_2}})),	-- Spice Bread Stuffing [Pilgrim's Bounty]
+		i(12216),	-- Spiced Chili Crab
+		i(2680),	-- Spiced Wolf Meat
+		i(17222),	-- Spider Sausage
+		i(6887),	-- Spotted Yellowtail
+		i(5477),	-- Strider Stew
+		i(2685),	-- Succulent Pork Ribs
+		-- #if AFTER WOD
+		applyclassicphase(WOD_PHASE_ONE, i(126936)),	-- Sugar-Crusted Fish Feast
+		-- #endif
+		i(3728),	-- Tasty Lion Steak
+		i(18045),	-- Tender Wolf Steak
+		i(7676, {["timeline"] = {REMOVED_6_0_2, ADDED_7_1_0}}),	-- Thistle Tea
+		i(16766),	-- Undermine Clam Chowder
+		applyclassicphase(CATA_PHASE_ONE, i(67230, {["timeline"] = {ADDED_4_0_3}})),	-- Venison Jerky
+		i(733),		-- Westfall Stew
+		-- #if AFTER 5.4.1
+		i(17198),	-- Winter Veil Egg Nog[5.4.1+] / Egg Nog
+		-- #endif
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant

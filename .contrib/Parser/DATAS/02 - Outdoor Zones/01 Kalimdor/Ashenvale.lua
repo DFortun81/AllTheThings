@@ -3600,7 +3600,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(16072, {	-- Expert Cookbook
-							["timeline"] = { "removed 3.1.0" },
+							["timeline"] = { REMOVED_3_1_0 },
 							-- #if SEASON_OF_DISCOVERY
 							["OnUpdate"] = [[function(t)
 								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -3622,10 +3622,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -3636,10 +3636,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 11.8, 34.0, ASHENVALE },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
+						6369,	-- Recipe: Rockscale Cod (RECIPE!)
+					}},
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

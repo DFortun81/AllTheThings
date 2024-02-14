@@ -7,6 +7,9 @@ root(ROOTS.Zones, {
 		m(HIGHMOUNTAIN, {
 			n(ZONE_DROPS, {
 				i(144312),	-- Formula: Enchant Neck - Mark of the Versatile [Rank 2] (RECIPE!)
+				i(133820, {	-- Recipe: Drogbar-Style Salmon [Rank 1] (RECIPE!)
+					["description"] = "Can drop from any Drogbar.",
+				}),
 				i(121069, {	-- Brulwurm Scale
 					["bonusID"] = 1812,
 				}),

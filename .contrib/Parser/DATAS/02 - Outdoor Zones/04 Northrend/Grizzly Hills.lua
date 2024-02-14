@@ -1741,10 +1741,10 @@ root(ROOTS.Zones, {
 						n(26868, {	-- Provisioner Lorkran <General Goods>
 							["coord"] = { 22.6, 66.0, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-								i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-							},
+							["sym"] = {{"select", "itemID",
+								21219,	-- Recipe: Sagefish Delight (RECIPE!)
+								21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+							}},
 						}),
 						n(27730, {	-- Purkom <Venture Coin Vendor>
 							["coord"] = { 13.8, 86.2, GRIZZLY_HILLS },

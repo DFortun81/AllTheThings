@@ -4,6 +4,17 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(COOKING, {
 		n(CRAFTABLES, {
+			tier(CLASSIC_TIER, {
+				i(23683),	-- Crystal Flake Throat Lozenge
+			}),
+			tier(WOTLK_TIER, {
+				-- 3.0.2
+				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+					-- With SpellID attached
+					i(34125),	-- Shoveltusk Soup
+					i(39691),	-- Succulent Orca Stew
+				})),
+			}),
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -38,6 +49,20 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			tier(CLASSIC_TIER, {
+				-- With SpellID attached
+				i(23690),	-- Recipe: Crystal Flake Throat Lozenge / Crystal Throat Lozenge
+			}),
+			tier(WOTLK_TIER, {
+				-- 3.0.2
+				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+					-- With SpellID attached
+					i(34126),	-- Recipe: Shoveltusk Soup
+					i(39692),	-- Recipe: Succulent Orca Stew
+					-- Without SpellID attached
+					i(39644),	-- Recipe: Kungaloosh
+				})),
+			}),
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {

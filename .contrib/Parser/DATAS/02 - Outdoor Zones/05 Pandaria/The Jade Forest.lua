@@ -2668,10 +2668,10 @@ root(ROOTS.Zones, {
 					n(56687, {	-- Metalworker Sashi <Trade Goods>
 						["coord"] = { 58.1, 83.6, THE_JADE_FOREST },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						["sym"] = {{"select", "itemID",
+							21219,	-- Recipe: Sagefish Delight (RECIPE!)
+							21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+						}},
 					}),
 					n(56406, {	-- Rivett Clutchpop
 						["coords"] = {	-- apparently this NPC can be found in different places throughout the horde jade forest questline.

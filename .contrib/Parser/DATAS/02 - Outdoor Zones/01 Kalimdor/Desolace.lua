@@ -2347,7 +2347,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 						i(12239, {	-- Recipe: Dragonbreath Chili (RECIPE!)
@@ -2357,7 +2357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(12227, {	-- Recipe: Lean Wolf Steak (RECIPE!)
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 							["isLimited"] = true,
 						}),
 						i(12233, {	-- Recipe: Mystery Stew (RECIPE!)
@@ -2379,6 +2379,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
 						14635,	-- Pattern: Gem-studded Leather Belt (RECIPE!)
 						7613,	-- Pattern: Green Leather Armor (RECIPE!)
+						12228,	-- Recipe: Roast Raptor (RECIPE!)
 					}},
 					["groups"] = {
 						i(12232, {	-- Recipe: Carrion Surprise (RECIPE!)
@@ -2397,10 +2398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
-							["timeline"] = { "removed 5.0.4" },
-							["isLimited"] = true,
-						}),
-						i(12228, {	-- Recipe: Roast Raptor (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },
 							["isLimited"] = true,
 						}),
 					},
@@ -2408,9 +2406,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12033, {	-- Wulan <Cooking Supplies>
 					["coord"] = { 26.2, 69.8, DESOLACE },
 					["races"] = HORDE_ONLY,
+					["sym"] = {{"select", "itemID",
+						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
+						6369,	-- Recipe: Rockscale Cod (RECIPE!)
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 					["groups"] = {
 						i(16072, {	-- Expert Cookbook
-							["timeline"] = { "removed 3.1.0" },
+							["timeline"] = { REMOVED_3_1_0 },
 							-- #if SEASON_OF_DISCOVERY
 							["OnUpdate"] = [[function(t)
 								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -2421,10 +2425,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 							["rank"] = 3,
 						}),
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 			}),

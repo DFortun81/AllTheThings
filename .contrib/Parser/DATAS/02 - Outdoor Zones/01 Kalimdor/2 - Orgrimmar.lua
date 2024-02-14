@@ -200,6 +200,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 				}),
+				prof(COOKING, {
+					n(3399, {	-- Zamja <Cooking Trainer>
+						["coord"] = { 32.2, 69.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(CLASSIC_COOKING,
+							-- #if AFTER CATA
+							CATA_COOKING
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 				prof(ENCHANTING, {
 					n(3345, {	-- Godan <Enchanting Trainer>
 						["coord"] = { 53.4, 49.4, ORGRIMMAR },
@@ -2452,10 +2465,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.0, 79.4, ORGRIMMAR },
 					["timeline"] = { "added 7.3.5.25692" },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				-- #if NOT ANYCLASSIC
 				-- TODO: Finish this part.
@@ -2900,10 +2913,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.0, 85.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(3331, {	-- Kareth
 					["coord"] = { 46.8, 63.6, ORGRIMMAR },
@@ -4247,7 +4260,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(49737, {	-- Shazdar <Sous Chef>
 					["coord"] = { 56.8, 62.6, ORGRIMMAR },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
@@ -4271,7 +4284,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
 						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
 						chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
-						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout (RECIPE!)
+						chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
+							["timeline"] = { ADDED_4_0_6 },
+						})),
 						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
 						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
 						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
@@ -4447,10 +4462,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.6, 61.2, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(3356, {	-- Sumi <Blacksmithing Supplies>
 					-- #if AFTER CATA

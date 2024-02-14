@@ -708,6 +708,12 @@ root(ROOTS.Zones, {
 							["groups"] = TBC_ARMORSMITHING,
 						}),
 					}),
+					prof(COOKING, {
+						n(19185, {	-- Jack Trapper <Cooking Trainer>
+							["coord"] = { 63.2, 68.6, SHATTRATH_CITY },
+							["groups"] = TBC_COOKING,
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					q(10420, {	-- A Cleansing Light
@@ -1626,31 +1632,28 @@ root(ROOTS.Zones, {
 						},
 					})),
 				}),
-				n(REWARDS, {
-					["requireSkill"] = COOKING,
-					["groups"] = {
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
-							-- #if AFTER 3.2.0
-							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-							-- #endif
-							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
-							i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
-							i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
-							i(33871),	-- Recipe: Stormchops (RECIPE!)
+				n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_2_3_0 } }, {
+					i(33844, {	-- Barrel of Fish
+						i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
+						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							["timeline"] = { ADDED_3_2_0 },
 						}),
-						i(33857, {	-- Crate of Meat
-							-- #if AFTER 3.2.0
-							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-							-- #endif
-							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
-							i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
-							i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
-							i(33871),	-- Recipe: Stormchops (RECIPE!)
-							i(33855),	-- Tarnished Silver Ring
+						i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+						i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+						i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
+						i(33871),	-- Recipe: Stormchops (RECIPE!)
+					}),
+					i(33857, {	-- Crate of Meat
+						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							["timeline"] = { ADDED_3_2_0 },
 						}),
-					},
-				}),
+						i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+						i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+						i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
+						i(33871),	-- Recipe: Stormchops (RECIPE!)
+						i(33855),	-- Tarnished Silver Ring
+					}),
+				})),
 				n(VENDORS, {
 					n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
 						["coord"] = { 64.0, 71.8, SHATTRATH_CITY },
@@ -2220,10 +2223,10 @@ root(ROOTS.Zones, {
 					n(19195, {	-- Jim Saltit <Cooking Supplies>
 						["coord"] = { 63.4, 68.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
-						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						["sym"] = {{"select", "itemID",
+							21219,	-- Recipe: Sagefish Delight (RECIPE!)
+							21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+						}},
 					}),
 					n(19049, {	-- Karokka  <Alchemy Trainer>
 						["coord"] = { 45.6, 19.8, SHATTRATH_CITY },
@@ -2251,17 +2254,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #endif
-					-- #if BEFORE 4.0.1
 					n(19186, {	-- Kylene <Barmaid>
 						["description"] = "Speak to her and tell her she's quite the cook to learn these recipes.",
 						["coord"] = { 75.6, 32.6, SHATTRATH_CITY },
-						["groups"] = applyclassicphase(TBC_PHASE_TWO, bubbleDown({ ["requireSkill"] = COOKING }, {
-							recipe(42302),	-- Fisherman's Feast
-							recipe(42305),	-- Hot Buttered Trout
-							recipe(42296),	-- Stewed Trout
+						["groups"] = applyclassicphase(TBC_PHASE_TWO, sharedData({ ["requireSkill"] = COOKING, ["timeline"] = { ADDED_2_1_2, REMOVED_4_0_1} }, {
+							recipe(42302),	-- Fisherman's Feast (RECIPE!)
+							recipe(42305),	-- Hot Buttered Trout (RECIPE!)
+							recipe(42296),	-- Stewed Trout (RECIPE!)
 						})),
 					}),
-					-- #endif
 					n(19047, {	-- Lissaf
 						["coord"] = { 51.8, 17.8, SHATTRATH_CITY },
 						["sym"] = {{"select", "itemID",

@@ -2083,9 +2083,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
 					["cr"] = 3444,	-- Dig Rat
 				}),
-				i(78342, {	-- Plump Dig Rat
+				i(78342, {	-- Plump Dig Rat (RECIPE!)
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
-					["requireSkill"] = COOKING,
 					["cr"] = 3444,	-- Dig Rat
 				}),
 				i(5093, {	-- Razormane Backstabber

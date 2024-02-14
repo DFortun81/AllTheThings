@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						}),
 						i(152565, {	-- Recipe: Feast of the Fishes [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 146959, 50 }, },	-- 50x Corrupted Globule
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(133705, {		-- Rotten Fishbone
 							["cost"] = { { "i", 146959, 25 }, },	-- 25x Corrupted Globule

@@ -654,7 +654,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					34684,	-- Laha Farplain
 					34683,	-- Rose Standish
 				},
-				["groups"] = {
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_3_2_2 } }, {
 					i(44835),	-- Autumnal Herbs
 					i(46888, {	-- Bountiful Basket
 						["cost"] = {
@@ -689,7 +689,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						},
 					}),
 					i(44853),	-- Honey
-				},
+				}),
 			}),
 			n(34685, {	-- Dalni Tallgrass <Pilgrim's Bounty Vendor>
 				["coord"] = { 46.6, 13.8, DUROTAR },

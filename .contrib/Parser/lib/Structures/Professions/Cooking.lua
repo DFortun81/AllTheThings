@@ -1,7 +1,127 @@
 -------------
 -- COOKING --
 -------------
+CLASSIC_COOKING = {
+	r(2550,	{	-- Cooking (Apprentice)
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
+		-- #endif
+		["rank"] = 1,
+	}),
+	r(3102,	{	-- Cooking (Journeyman)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
+		-- #endif
+		["rank"] = 2,
+	}),
+	r(3538, {	-- Blacksmithing (Expert)
+		["timeline"] = { ADDED_3_1_0, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 20,
+		-- #endif
+		["rank"] = 3,
+	}),
+	r(9785, {	-- Blacksmithing (Artisan)
+		["timeline"] = { ADDED_3_1_0, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 35,
+		-- #endif
+		["rank"] = 4,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264632, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Classic Cooking
+	r(818),		-- Cooking Fire
+	r(6499),	-- Boiled Clams
+	r(46684, {["timeline"] = {ADDED_4_1_0}}),	-- Charred Bear Kabobs
+	r(2538),	-- Charred Wolf Meat
+	r(2541),	-- Coyote Steak
+	r(2544),	-- Crab Cake
+	r(2546),	-- Dry Pork Ribs
+	r(6415, {["timeline"] = {ADDED_4_0_3}}),	-- Fillet of Frenzy
+	r(6500),	-- Goblin Deviled Clams
+	r(18240, {["timeline"] = {ADDED_4_0_3}}),	-- Grilled Squid
+	r(8604),	-- Herb Baked Egg
+	r(46688, {["timeline"] = {ADDED_4_1_0}}),	-- Juicy Bear Burger
+	r(6412, {["timeline"] = {ADDED_4_0_3}}),	-- Kaldorei Spider Kabob
+	r(18243, {["timeline"] = {ADDED_4_0_3}}),	-- Nightfin Soup
+	r(18244, {["timeline"] = {ADDED_4_0_3}}),	-- Poached Sunscale Salmon
+	r(2540),	-- Roasted Boar Meat
+	r(3400, {["timeline"] = {ADDED_4_0_3}}),	-- Soothing Turtle Bisque
+	r(37836, {["timeline"] = {ADDED_2_0_5}}),	-- Spice Bread
+	r(2539),	-- Spiced Wolf Meat
+	r(21175),	-- Spider Sausage
+	r(18238, {["timeline"] = {ADDED_4_0_3}}),	-- Spotted Yellowtail
+	r(3399, {["timeline"] = {ADDED_4_0_3}}),	-- Tasty Lion Steak
+	r(93741, {["timeline"] = {ADDED_4_0_3}}),	-- Venison Jerky
+};
+TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_1_0 } }, {
+	r(33359, {	-- Cooking (Master)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
+		-- #endif
+		["rank"] = 5,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264634, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Cooking
+	r(818),		-- Cooking Fire
+	r(42302, {["timeline"] = {ADDED_4_0_1}}),	-- Fisherman's Feast
+	r(42305, {["timeline"] = {ADDED_4_0_1}}),	-- Hot Buttered Trout
+	r(42296, {["timeline"] = {ADDED_4_0_1}}),	-- Stewed Trout
+}));
+WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(51296, {	-- Cooking (Grand Master)
+		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 65,
+		-- #endif
+		["rank"] = 6,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264636, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Cooking
+	r(818),		-- Cooking Fire
+	r(45569),	-- Baked Manta Ray
+	r(64358, {["timeline"] = {ADDED_3_1_0}}),	-- Black Jelly
+	r(58065),	-- Dalaran Clam Chowder
+	r(45554),	-- Great Feast
+	r(45561),	-- Grilled Bonescale
+	r(45563),	-- Grilled Sculpin
+	r(45549),	-- Mammoth Meal
+	r(45566),	-- Pickled Fangtooth
+	r(45565),	-- Poached Nettlefish
+	r(45553),	-- Rhino Dogs
+	r(45552),	-- Roasted Worg
+	r(45562),	-- Sauteed Goby
+	r(45550),	-- Shoveltusk Steak
+	r(45560),	-- Smoked Rockfin
+	r(45564),	-- Smoked Salmon
+	r(45551),	-- Worm Delight
+}));
+CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	r(88053, {	-- Cooking (Illustrious)
+		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 7,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264638, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Cooking
+	r(818),		-- Cooking Fire
+	r(88006),	-- Blackened Surprise
+	r(88015),	-- Darkbrew Lager
+}));
 BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	r(818),		-- Cooking Fire
 	r(290471, {["timeline"] = {ADDED_8_1_0}}),	-- Boralus Blood Sausage [Rank 1]
 	r(259421),	-- Bountiful Captain's Feast [Rank 1]
 	r(259418),	-- Galley Banquet [Rank 1]
@@ -48,6 +168,7 @@ NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] 
 }));
 SL_COOKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309830),	-- Shadowlands Cooking
+	r(818),		-- Cooking Fire
 	r(308415),	-- Banana Beef Pudding
 	r(308410),	-- Biscuits and Caviar
 	r(308397),	-- Butterscotch Marinated Ribs
@@ -67,6 +188,7 @@ SL_COOKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] 
 }));
 DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366256),	-- Dragon Isles Cooking
+	r(818),		-- Cooking Fire
 	r(381364),	-- Assorted Exotic Spices
 	r(381371),	-- Breakfast of Draconic Champions
 	r(381367),	-- Cheese and Quackers

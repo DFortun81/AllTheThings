@@ -19,8 +19,6 @@ r(50619),	-- Scroll of Stamina VII
 r(50620),	-- Scroll of Stamina VIII
 r(52175),	-- Decipher
 r(52183),	--
-r(52738),	-- Ivory Ink
-r(52840),	-- Weapon Vellum
 3.1.0.9767
 r(56943),	-- Glyph of Frenzied Regeneration
 r(56944),	-- Glyph of Growl
@@ -303,12 +301,10 @@ r(59326),	-- Glyph of Ghost Wolf
 r(59338),	-- Glyph of Rune Tap
 r(59339),	-- Glyph of Blood Strike
 r(59340),	-- Glyph of Death Strike
-r(59488),	-- Weapon Vellum II
 r(59495),	-- Hellfire Tome
 r(59496),	-- Book of Clever Tricks
 r(59497),	-- Iron-bound Tome
 r(59498),	-- Faces of Doom
-r(59499),	-- Armor Vellum II
 r(59500),	-- Armor Vellum III
 r(59501),	-- Weapon Vellum III
 r(59503),	-- Greater Darkmoon Card
@@ -322,7 +318,6 @@ r(61118),	-- Master's Inscription of the Crag
 r(61119),	-- Master's Inscription of the Pinnacle
 r(61120),	-- Master's Inscription of the Storm
 r(61177),	-- Northrend Inscription Research
-r(61288),	-- Minor Inscription Research
 r(61677),	-- Glyph of Frostfire
 r(62162),	-- Glyph of Focus
 r(64051),	-- Rituals of the Moon \\ Rituals of the New Moon

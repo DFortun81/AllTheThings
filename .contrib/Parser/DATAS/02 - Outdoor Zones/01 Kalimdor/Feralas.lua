@@ -2865,10 +2865,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 15.2, FERALAS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 				n(40226, {	-- Pratt McGrubben <Leatherworking Supplies>
 					["coord"] = { 45.4, 41.2, FERALAS },

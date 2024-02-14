@@ -3208,9 +3208,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 31.6, 44.6, DUN_MOROGH },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
+					}},
 				}),
 				n(1247, {	-- Innkeeper Belm <Innkeeper>
 					-- #if AFTER CATA

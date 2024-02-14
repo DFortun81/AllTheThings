@@ -2576,10 +2576,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3550, {	-- Martine Tramblay <Fishing Supplies>
 					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
+						6326,	-- Recipe: Slitherskin Mackerel (RECIPE!)
+					}},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(2127, {	-- Rupert Boch <Warlock Trainer>

@@ -896,7 +896,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(34413, {	-- Recipe: Hot Apple Cider (RECIPE!)
-				["timeline"] = { "added 2.3.0.7501" },
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 			-- #else
 			i(17724),	-- Pattern: Green Holiday Shirt
@@ -2279,15 +2279,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(34262, {	-- Pattern: Winter Boots (RECIPE!)
 					["timeline"] = { ADDED_2_3_0 },
 				}),
-				-- #if BEFORE CATA
-				i(17201),	-- Recipe: Egg Nog / Recipe: Winter Veil Egg Nog [CATA+] (RECIPE!)
+				-- #if BEFORE 5.4.1
+				i(17201),	-- Recipe: Egg Nog / Recipe: Winter Veil Egg Nog[5.4.1+] (RECIPE!)
 				-- #endif
 				i(17200),	-- Recipe: Gingerbread Cookie (RECIPE!)
 				i(34413, {	-- Recipe: Hot Apple Cider (RECIPE!)
-					["timeline"] = { "added 2.3.0.7501" },
+					["timeline"] = { ADDED_2_3_0 },
 				}),
-				-- #if AFTER CATA
-				i(17201),	-- Recipe: Winter Veil Egg Nog [CATA+] / Recipe: Egg Nog (RECIPE!)
+				-- #if AFTER 5.4.1
+				i(17201),	-- Recipe: Winter Veil Egg Nog[5.4.1+] / Recipe: Egg Nog (RECIPE!)
 				-- #endif
 				i(188680, {	-- Winter Veil Chorus Book (TOY!)
 					["timeline"] = { ADDED_9_1_5 },

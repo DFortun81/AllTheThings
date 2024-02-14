@@ -1411,6 +1411,17 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_ARMORSMITHING,
 						}),
 					}),
+					prof(COOKING, {
+						["crs"] = {
+							28705,	-- Katherine Lee <Cooking Trainer> [A]
+							29631,	-- Awilo Lon'gomba <Cooking Trainer> [H]
+						},
+						["coords"] = {
+							{ 41.6, 64.6, NORTHREND_DALARAN },
+							{ 52.2, 36.4, NORTHREND_DALARAN },
+						},
+						["groups"] = WRATH_COOKING,
+					}),
 					prof(ENCHANTING, {
 						n(28693, {	-- Enchanter Nalthanis <Enchanting Trainer>
 							["coord"] = { 39.4, 41.2, NORTHREND_DALARAN },
@@ -3274,7 +3285,9 @@ root(ROOTS.Zones, {
 							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
 							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
 							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(5, i(43017, {	-- Recipe: Fish Feast (RECIPE!)
+								["timeline"] = { ADDED_3_0_8 },
+							})),
 							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
 							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
 							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
@@ -3291,7 +3304,9 @@ root(ROOTS.Zones, {
 							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
 							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
 							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
+							epicurean(3, i(44954, {	-- Recipe: Worg Tartare (RECIPE!)
+								["timeline"] = { ADDED_3_0_8 },
+							})),
 						},
 					}),
 					n(34252, {	-- Dubin Clay <Plate Armor Merchant>
@@ -3923,7 +3938,9 @@ root(ROOTS.Zones, {
 							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
 							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
 							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(5, i(43017, {	-- Recipe: Fish Feast (RECIPE!)
+								["timeline"] = { ADDED_3_0_8 },
+							})),
 							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
 							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
 							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
@@ -3940,7 +3957,9 @@ root(ROOTS.Zones, {
 							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
 							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
 							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
+							epicurean(3, i(44954, {	-- Recipe: Worg Tartare (RECIPE!)
+								["timeline"] = { ADDED_3_0_8 },
+							})),
 						},
 					}),
 					n(29529, {	-- Ninsianna <Relics>

@@ -139,8 +139,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(113626),	--  Recipe: Greater Draenor Versatility Flask
 					-- Without SpellID attched
 					i(112052),	-- Recipe: Alchemical Catalyst - Arrowbloom
-					i(112043),	-- Draenic Mana Potion
-					i(120132),	-- Secrets of Draenor Alchemy
+					i(112043),	-- Recipe: Draenic Mana Potion
+					i(112022),	-- Recipe: Mighty Shadow Protection Potion
+					i(120132),	-- Recipe: Secrets of Draenor Alchemy
 				})),
 			}),
 			tier(LEGION_TIER, {

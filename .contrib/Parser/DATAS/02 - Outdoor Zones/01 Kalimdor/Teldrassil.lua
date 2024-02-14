@@ -2165,10 +2165,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.2, 92.4, TELDRASSIL },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						6326,	-- Recipe: Slitherskin Mackerel (RECIPE!)
+					}},
 				}),
 				n(4265, {	-- Nyoma <Cooking Supplies>
 					-- #if AFTER CATA
@@ -2177,12 +2177,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.2, 61.2, TELDRASSIL },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					["sym"] = {{"select", "itemID",
+						6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
+						6328,	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+					}},
 				}),
 			}),
 			n(ZONE_DROPS, {

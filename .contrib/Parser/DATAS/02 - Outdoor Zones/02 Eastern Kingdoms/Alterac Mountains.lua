@@ -658,7 +658,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 86.0, 79.6, ALTERAC_MOUNTAINS },
 					["classes"] = { ROGUE },
 					["groups"] = {
-						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
+						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { "added 1.3.0", REMOVED_6_0_2, ADDED_7_1_0 },
+						}),
 					},
 				}),
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer>
