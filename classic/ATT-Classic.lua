@@ -1879,7 +1879,7 @@ local function SearchForLink(link)
 			cache = {};
 			tinsert(cache, obj);
 		end
-		return cache;
+		return cache, kind, id;
 	end
 	return {};
 end
