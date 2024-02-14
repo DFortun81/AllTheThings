@@ -721,34 +721,19 @@ root(ROOTS.Unsorted, {
 				------
 				i(212489),	-- Copy of a Damaged Apprentice Journal
 				i(212468),	-- Copy of Blinking Rules & Regulations
-				i(212465),	-- Copy of Bundle of Romantic Correspondences
-				i(212463),	-- Copy of Common / Orcish Dictionary
 				i(212460),	-- Copy of Excerpts from the Journal of Archmage Vargoth
 				i(212461),	-- Copy of Kirin Tor Monthly (March Issue)
 				i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
-				i(212464),	-- Copy of Kirin Tor Monthly (November Issue)
-				i(212466),	-- Copy of Losses of the Third War
 				i(212487),	-- Copy of On the Virtues of Magic
-				i(212469),	-- Copy of Polymorphic Rules & Regulations
 				i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
 				i(212473),	-- Copy of The Archmage Antonidas - Part I
 				i(212474),	-- Copy of The Archmage Antonidas - Part II
-				i(212475),	-- Copy of The Archmage Antonidas - Part III
 				i(212476),	-- Copy of The Dangers of Magic Abuse
-				i(212472),	-- Copy of The Fluffy Bunny
-				i(212471),	-- Copy of the Journal of Archmage Antonidas
 				i(212459),	-- Copy of The Old Wizard's Almanac
-				i(212477),	-- Copy of The Schools of Arcane Magic - Introduction
-				i(212478),	-- Copy of The Schools of Arcane Magic - Abjuration
 				i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
 				i(212480),	-- Copy of The Schools of Arcane Magic - Divination
 				i(212481),	-- Copy of The Schools of Arcane Magic - Enchantment
-				i(212482),	-- Copy of The Schools of Arcane Magic - Illusion
-				i(212483),	-- Copy of The Schools of Arcane Magic - Necromancy
 				i(212484),	-- Copy of The Schools of Arcane Magic - Transmutation
-				i(212486),	-- Copy of The Worst Mage in Dalaran: A Children's Book
-				i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
-				i(212485),	-- Copy of Weathered Diary - Dates from the Third War
 				i(212784),	-- Destroyed Relic
 				i(212467),	-- Discarded Advertisement
 				i(212608),	-- Duck Potion
