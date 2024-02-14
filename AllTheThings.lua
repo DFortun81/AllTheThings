@@ -1205,7 +1205,7 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 		end
 	end
 	-- check exact specific match for other keys
-	if group[key] == value then return true; end
+	if group.key == key and group[key] == value then return true; end
 	-- Other fields can require further verification
 	-- Some objects also need to check altquestID for questID
 	if key == "questID" then
@@ -2884,12 +2884,15 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							else
 								local otherRoot = root;
 								-- app.PrintDebug("replace root",otherRoot.key,otherRoot[otherRoot.key]);
+								-- app.PrintTable(o)
 								root = o;
 								MergeProperties(root, otherRoot);
 								-- previous root content will be nested after
 								MergeObjects(nested, otherRoot.g);
 							end
 						else
+							-- app.PrintDebug("first root",o.key,o[o.key]);
+							-- app.PrintTable(o)
 							root = o;
 						end
 						filtered = true
@@ -4337,8 +4340,36 @@ local function UpdateRawIDs(field, ids)
 end
 app.UpdateRawIDs = UpdateRawIDs;
 
+do
+local KeyMaps = setmetatable({
+	a = "achievementID",
+	achievement = "achievementID",
+	azessence = "azeriteEssenceID",
+	battlepet = "speciesID",
+	c = "currencyID",
+	currency = "currencyID",
+	enchant = "spellID",
+	follower = "followerID",
+	garrfollower = "followerID",
+	i = "itemID",
+	mount = "spellID",
+	mountid = "spellID",
+	n = "creatureID",
+	npcid = "creatureID",
+	o = "objectID",
+	object = "objectID",
+	rfp = "runeforgePowerID",
+	s = "sourceID",
+	source = "sourceID",
+	species = "speciesID",
+	spell = "spellID",
+	talent = "spellID",
+	q = "questID",
+	quest = "questID",
+}, { __index = function(t,key) return key:gsub("id", "ID") end})
+
 local function SearchForLink(link)
-	if link:match("item") then
+	if link:match("item:") then
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = link:match("item[%-?%d:]+") or link;
 		if itemString then
@@ -4370,52 +4401,28 @@ local function SearchForLink(link)
 				end
 			end
 		end
-	else
-		local kind, id = (":"):split(link);
-		kind = kind:lower();
-		if kind:sub(1,2) == "|c" then
-			kind = kind:sub(11);
-		end
-		if kind:sub(1,2) == "|h" then
-			kind = kind:sub(3);
-		end
-		if id then id = tonumber(select(1, ("|["):split(id)) or id); end
-		if not id or not kind then
-			-- can't search for nothing!
-			return;
-		end
-		--print(link:gsub("|c", "c"):gsub("|h", "h"));
-		-- app.PrintDebug("SEARCH FOR FIELD",kind,id)
-		if kind == "itemid" or kind == "i" then
-			return SearchForField("itemID", id);
-		elseif kind == "sourceid" or kind == "source" or kind == "s" then
-			return SearchForField("sourceID", id);
-		elseif kind == "questid" or kind == "quest" or kind == "q" then
-			return SearchForField("questID", id);
-		elseif kind == "creatureid" or kind == "npcid" or kind == "n" then
-			return SearchForField("creatureID", id);
-		elseif kind == "achievementid" or kind == "achievement" or kind == "a" then
-			return SearchForField("achievementID", id);
-		elseif kind == "currencyid" or kind == "currency" or kind == "c" then
-			return SearchForField("currencyID", id);
-		elseif kind == "spellid" or kind == "spell" or kind == "enchant" or kind == "talent" or kind == "mount" or kind == "mountid" then
-			return SearchForField("spellID", id);
-		elseif kind == "speciesid" or kind == "species" or kind == "battlepet" then
-			return SearchForField("speciesID", id);
-		elseif kind == "follower" or kind == "followerid" or kind == "garrfollower" then
-			return SearchForField("followerID", id);
-		elseif kind == "azessence" or kind == "azeriteessenceid" then
-			return SearchForField("azeriteEssenceID", id);
-		elseif kind == "rfp" or kind == "runeforgepowerid" then
-			return SearchForField("runeforgePowerID", id);
-		elseif kind == "objectID" or kind == "object" or kind == "o" then
-			return SearchForField("objectID", id);
-		else
-			return SearchForField(kind:gsub("id", "ID"), id);
-		end
 	end
+
+	local kind, id = (":"):split(link);
+	kind = kind:lower();
+	if kind:sub(1,2) == "|c" then
+		kind = kind:sub(11);
+	end
+	if kind:sub(1,2) == "|h" then
+		kind = kind:sub(3);
+	end
+	if id then id = tonumber(select(1, ("|["):split(id)) or id); end
+	if not id or not kind then
+		-- can't search for nothing!
+		return;
+	end
+	--print(link:gsub("|c", "c"):gsub("|h", "h"));
+	-- app.PrintDebug("SEARCH FOR FIELD",kind,">",KeyMaps[kind],id)
+	kind = KeyMaps[kind]
+	return SearchForField(kind, id), kind, id
 end
 app.SearchForLink = SearchForLink;
+end
 
 
 -- Map Information Lib
