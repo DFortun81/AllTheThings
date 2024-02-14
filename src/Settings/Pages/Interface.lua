@@ -1101,6 +1101,7 @@ local ids = {
 	["instanceID"] = L["INSTANCE_ID"],
 	["itemID"] = L["ITEM_ID"],
 	["itemString"] = L["ITEM_STRING"],
+	["Layer"] = L["LAYER"],
 	["mapID"] = L["MAP_ID"],
 	["modID"] = L["MOD_ID"],
 	["objectID"] = L["OBJECT_ID"],

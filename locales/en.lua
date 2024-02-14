@@ -92,6 +92,7 @@ local L = {
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
+	["LAYER"] = "Layer";
 	["BINDING"] = "Binding";
 	["BONUS_ID"] = "Bonus ID";
 	["CONDUIT_ID"] = "Conduit ID";

@@ -21,6 +21,24 @@ local L = {
 	["OPEN_MINILIST_FOR"] = "Open mini list for ";
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
 	["DONE_REFRESHING"] = "Done refreshing collection.";
+	["ADDED_WITH_PATCH"] = "Added With Patch";
+	["REMOVED_WITH_PATCH"] = "Removed With Patch";
+	["ALIVE"] = "Alive";
+	["SPAWNED"] = "Spawned";
+	["LAYER"] = "Layer";
+	["BINDING"] = "Binding";
+	["BONUS_ID"] = "Bonus ID";
+	["CONDUIT_ID"] = "Conduit ID";
+	["DISPLAY_ID"] = "Display ID";
+	["EVENT_ID"] = "Event ID";
+	["ICON_PATH"] = "Icon Path";
+	["ITEM_STRING"] = "Item String";
+	["MOD_ID"] = "Mod ID";
+	["OBJECT_TYPE"] = "Object Type";
+	["OBJECTIVES"] = "Objectives";
+	["QUEST_GIVERS"] = "Quest Givers";
+	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
+	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
 
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";

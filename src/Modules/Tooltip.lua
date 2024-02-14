@@ -77,6 +77,9 @@ local function GetBestObjectIDForName(name)
 	end
 end
 
+-- Server GUID
+local ServerUID = select(2, ("-"):split(app.GUID));
+
 -- Player Tooltip Functions
 local PLAYER_TOOLTIPS = {
 	["Player-4647-031D0890"] = function(self, target)
@@ -636,9 +639,12 @@ if TooltipDataProcessor then
 						local serverTime = GetServerTime();
 						local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
 						if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-						if showAliveTime then self:AddDoubleLine("Alive", app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-						if showSpawnTime then self:AddDoubleLine("Spawned", app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
+						if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+						if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
 					end
+				end
+				if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
+					self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
 				end
 				AttachTooltipSearchResults(self, 1, SearchForField, "creatureID", tonumber(npc_id));
 			end
@@ -782,9 +788,12 @@ else
 									local serverTime = GetServerTime();
 									local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
 									if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-									if showAliveTime then self:AddDoubleLine("Alive", app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-									if showSpawnTime then self:AddDoubleLine("Spawned", app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
+									if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+									if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
 								end
+							end
+							if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
+								self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
 							end
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
 							AttachTooltipSearchResults(self, 1, SearchForField, "creatureID", tonumber(npcID));

@@ -2595,9 +2595,9 @@ DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
 local ids = {
 	["achievementID"] = "Achievement ID",
-	["Alive"] = "Alive",
+	["Alive"] = L.ALIVE,
 	["artID"] = "Art ID",
-	["awp"] = "Added With Patch",
+	["awp"] = L.ADDED_WITH_PATCH,
 	["creatureID"] = "Creature ID",
 	["Coordinates"] = "Coordinates",
 	["currencyID"] = "Currency ID",
@@ -2611,6 +2611,7 @@ local ids = {
 	["itemID"] = "Item ID",
 	["itemLevel"] = "Item Level",
 	["itemString"] = "Item String",
+	["Layer"] = L.LAYER,
 	["Lore"] = "Lore",
 	["mapID"] = "Map ID",
 	["modelID"] = "Model ID",
@@ -2644,7 +2645,7 @@ for _,id in pairs({"Alive","awp","rwp","achievementID","artID","creatureID","Coo
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemLevel","itemString","Lore","mapID","modelID","objectID","__type","Objectives","questID","QuestGivers","sourceID","Spawned","speciesID","spellID","titleID"}) do
+for _,id in pairs({"itemLevel","itemString","Layer","Lore","mapID","modelID","objectID","__type","Objectives","questID","QuestGivers","sourceID","Spawned","speciesID","spellID","titleID"}) do
 	local filter = child:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
