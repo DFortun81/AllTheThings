@@ -3262,12 +3262,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(6610, {	-- Clamlette Surprise
-					-- #if AFTER CATA
+					-- #if BEFORE 4.0.3
+					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Alliance breadcrumb for this quest is called 'I Know A Guy...' and is picked up from cooking trainer Daryl Riknussun in Ironforge. The Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar.",
+					["qg"] = 8125,	-- Dirge Quikcleave
+					["coord"] = { 52.63, 28.12, TANARIS },
+					-- #elseif AFTER 8.0.1
+					["description"] = "Becomes available at Classic Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
 					["qg"] = 40589,	-- Dirge Quikcleave
 					["coord"] = { 52.4, 29.0, TANARIS },
 					-- #else
-					["qg"] = 8125,	-- Dirge Quikcleave
-					["coord"] = { 52.63, 28.12, TANARIS },
+					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
+					["qg"] = 40589,	-- Dirge Quikcleave
+					["coord"] = { 52.4, 29.0, TANARIS },
 					-- #endif
 					["requireSkill"] = COOKING,
 					["altQuests"] = { 13825 },	-- Clamlette Surprise
@@ -4710,12 +4716,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
-					["qg"] = 3399,	-- Zamja
-					-- #if AFTER CATA
+					-- #if BEFORE 4.0.3
+					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
+					["coord"] = { 57.4, 53.6, ORGRIMMAR },
+					-- #elseif AFTER 8.0.1
+					["description"] = "Becomes available at Classic Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 32.2, 69.4, ORGRIMMAR },
 					-- #else
-					["coord"] = { 57.4, 53.6, ORGRIMMAR },
+					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
+					["coord"] = { 32.2, 69.4, ORGRIMMAR },
 					-- #endif
+					["qg"] = 3399,	-- Zamja
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
