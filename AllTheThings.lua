@@ -8329,7 +8329,6 @@ app.RefreshCustomCollectibility = function()
 end
 end	-- Custom Collectibility
 
-
 -- Panel Class Library
 (function()
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
@@ -15182,7 +15181,7 @@ app.ProcessAuctionData = function()
 	local filterID;
 	local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
 	for k,v in pairs(AllTheThingsAuctionData) do
-		searchResults = SearchForLink(v.itemLink);
+		searchResults = app.SearchForLink(v.itemLink);
 		if searchResults then
 			if #searchResults > 0 then
 				searchResult = searchResults[1];
@@ -16017,7 +16016,7 @@ app.InitDataCoroutine = function()
 			end
 		end
 	end);
-	
+
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
 
@@ -16046,10 +16045,10 @@ app.InitDataCoroutine = function()
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- app.PrintDebug("Yield prior to Refresh")
 	coroutine.yield();
-	
+
 	-- Prepare the Sound Pack!
 	app.Audio:ReloadSoundPack();
-	
+
 	app.RefreshCollections();
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
@@ -16156,7 +16155,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 
 		-- Search for the Link in the database
 		app.SetSkipLevel(2);
-		local group = app.GetCachedSearchResults(SearchForLink, cmd);
+		local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
 		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
