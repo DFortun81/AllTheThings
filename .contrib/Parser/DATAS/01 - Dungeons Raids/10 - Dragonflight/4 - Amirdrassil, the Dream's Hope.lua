@@ -735,7 +735,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				BossOnly(FYRAKK, {
 					i(210871),	-- Greater Ember of Fyr'alath (There are multiple versions?)
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
-					i(206448),	-- Fyr'alath the Dreamrender
+					i(207728, {	-- Fyr'alath the Dreamrender (QI)
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
+					}),
 				}),
 			}),
 			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
@@ -853,7 +855,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				BossOnly(FYRAKK, {
 					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }}),	-- Ahead of the Curve: Fyrakk the Blazing
 					i(211375),	-- Everglowing Ember (QS!)
-					i(207728),	-- Fyr'alath the Dreamrender (QI)
 				}),
 			}),
 			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
