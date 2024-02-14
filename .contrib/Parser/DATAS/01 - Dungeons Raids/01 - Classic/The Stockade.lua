@@ -12,8 +12,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["sins"] = { [[~DUNGEON_FLOOR_THESTOCKADE1]] },
 		-- #if AFTER CATA
 		["coord"] = { 50.48, 66.46, STORMWIND_CITY },
+		-- #elseif AFTER WRATH
+		["coord"] = { 51.6, 69.4, STORMWIND_CITY },
 		-- #else
-		["coord"] = { 39.77, 54.21, STORMWIND_CITY },
+		["coord"] = { 41.2, 58, STORMWIND_CITY },
 		-- #endif
 		["mapID"] = THE_STOCKADE,
 		["lvl"] = 15,
