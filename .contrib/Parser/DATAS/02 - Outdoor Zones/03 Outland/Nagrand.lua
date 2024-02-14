@@ -1750,9 +1750,8 @@ root(ROOTS.Zones, {
 								["classes"] = { SHAMAN },
 							}),
 							i(141059, {	-- Technique: Glyph of Flickering (RECIPE!)
-								["description"] = "Currently this Technique can only be learned by Shamans.  We suggest submitting a bug report to Blizzard to have it usuable by all scribes.",
 								["timeline"] = { "added 7.0.3.22248" },
-								["classes"] = { SHAMAN },
+								["requireSkill"] = INSCRIPTION,
 							}),
 							i(136938, {	-- Tome of Hex: Compy (CI!)
 								["timeline"] = { "added 7.0.3.22248" },
