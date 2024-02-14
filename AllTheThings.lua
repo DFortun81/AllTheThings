@@ -6371,7 +6371,7 @@ local KEY, CACHE = "itemID", "DrakewatcherManuscripts"
 if app.GameBuildVersion >= 100000 then	-- Dragonflight+
 	app.CreateDrakewatcherManuscript = app.ExtendClass("Item", "DrakewatcherManuscript", KEY, {
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
-		collected = function(t) return app.IsAccountCached("Quests", t.questID) end,
+		collected = function(t) return app.IsAccountCached("Quests", t.questID) and 1 end,
 	});
 else
 	app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", KEY);
