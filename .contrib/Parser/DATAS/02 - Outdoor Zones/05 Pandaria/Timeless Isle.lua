@@ -1362,10 +1362,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73281,  {	-- Dread Ship Vazuvius
-						["description"] = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
 						["questID"] = 33314,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
-						["isDaily"] = true,
+						["providers"] = {
+							{ "i", 104115 },	-- Mist-Filled Spirit Lantern
+							{ "o", 223139 },	-- Cursed Gravestone
+						},
+						["description"] = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
 						["coord"] = { 26.5, 27.8, TIMELESS_ISLE },
+						["isDaily"] = true,
 						["g"] = {
 							i(104294),	-- Rime of the Time-Lost Mariner (TOY!)
 						},
@@ -1390,7 +1394,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["g"] = {
 							i(104115, {	-- Mist-Filled Spirit Lantern
-								["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius. This item will mark itself collected when you get the Rime of the Time-Lost Mariner criteria for the Bigger Bag achievement.",
+								["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius.",
 							}),
 						},
 					}),
