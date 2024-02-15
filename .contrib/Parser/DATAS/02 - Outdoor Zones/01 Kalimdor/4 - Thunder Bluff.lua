@@ -375,7 +375,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
-						i(5083),	-- Pattern: Kodo Hide Bag (RECIPE!)
+						i(5083, {	-- Pattern: Kodo Hide Bag (RECIPE!)
+							-- #if BEFORE 9.2.5
+							["description"] = "This recipe is not soulbound and can be mailed to Horde alts.",
+							-- #else
+							["description"] = "This recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+							-- #endif
+						}),
 					},
 				}),
 				q(1130, {	-- Melor Sends Word
