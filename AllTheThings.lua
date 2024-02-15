@@ -6288,7 +6288,7 @@ if C_LegendaryCrafting then
 	app.CreateRuneforgeLegendary = app.ExtendClass("Item", "RuneforgeLegendary", KEY, {
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collectibleAsCost = app.ReturnFalse,
-		collected = function(t) return app.IsAccountCached(CACHE, t[KEY]) end,
+		collected = function(t) return app.IsAccountCached(CACHE, t[KEY]) and 1 end,
 		lvl = function(t) return 60; end,
 	});
 	app.AddEventHandler("OnRefreshCollections", function()
@@ -6334,7 +6334,7 @@ if C_Soulbinds then
 			-- character collected
 			if app.IsCached(CACHE, id) then return 1; end
 			-- account-wide collected
-			if app.Settings.AccountWide[CACHE] and app.IsAccountCached(CACHE, id) then return 2; end
+			if app.IsAccountTracked(CACHE, id) then return 2; end
 		end,
 		lvl = function(t) return 60; end,
 	});
@@ -15713,11 +15713,15 @@ app.Startup = function()
 	local accountWideSettings = app.Settings.AccountWide;
 	-- Returns the cached status for this Account for a given field ID
 	local function IsAccountCached(field, id)
-		return accountWideSettings[field] and accountWideData[field][id] or nil
+		return accountWideData[field][id] or nil
 	end
 	-- Returns the cached status for this Character for a given field ID
 	local function IsCached(field, id)
 		return currentCharacter[field][id] or nil
+	end
+	-- Returns the tracked status for this Account for a given field ID
+	local function IsAccountTracked(field, id)
+		return accountWideSettings[field] and accountWideData[field][id] or nil
 	end
 	-- Allows directly saving a cached state for a table of ids for a given field at the Account level
 	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
@@ -15835,6 +15839,7 @@ app.Startup = function()
 	app.SetCollectedForSubType = SetCollectedForSubType;
 	app.IsCached = IsCached
 	app.IsAccountCached = IsAccountCached
+	app.IsAccountTracked = IsAccountTracked
 	app.SetBatchAccountCached = SetBatchAccountCached
 	app.SetBatchCached = SetBatchCached
 
