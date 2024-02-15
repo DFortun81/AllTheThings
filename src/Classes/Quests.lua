@@ -286,7 +286,7 @@ if app.IsRetail then
 		if questID then
 			if IsQuestFlaggedCompleted(questID) then return 1; end
 			if not t.repeatable then
-				return app.IsAccountCached("Quests", questID) and 2
+				return app.IsAccountTracked("Quests", questID) and 2
 			end
 		end
 		-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
