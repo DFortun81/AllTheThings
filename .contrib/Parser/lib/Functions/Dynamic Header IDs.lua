@@ -182,6 +182,7 @@ HeaderAssignments = {
 	["Junkyard"] = -1000305,
 	["Kalimdor Cup"] = -1000211,
 	["Kalu'ak Fishing Derby"] = -1000219,
+	["Kukuru's Cache"] = -1000381,
 	["Legendaries"] = -1000105,
 	["Legendary"] = -1000104,
 	["Legs"] = -1000067,
@@ -383,4 +384,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000381;
+NextHeaderID = -1000382;

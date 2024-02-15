@@ -1692,6 +1692,62 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(createHeader({	-- Kukuru's Cache
+						readable = "Kukuru's Cache",
+						icon = "348554",
+						text = {
+							en = "Kukuru's Cache",
+							es = "Alijo de Kukuru",
+							de = "Kukurus Schatzkammer",
+							fr = "Cache de Koukourou",
+							it = "Cassa di Kukuru",
+							pt = "Baú de Kukuru",
+							ru = "клада Кукуру",
+							ko = "사부 쿠쿠루 보관함",
+							cn = "库库鲁的宝箱",
+						},
+						description = {
+							en = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
+						},
+					}), {
+						["providers"] = {
+							{ "i", 101538 },	-- Kukuru's Cache Key
+							{ "o", 220994 },	-- Timeless Chest
+							{ "o", 220995 },	-- Timeless Chest
+							{ "o", 220996 },	-- Timeless Chest
+							{ "o", 220997 },	-- Timeless Chest
+							{ "o", 220998 },	-- Timeless Chest
+							{ "o", 220999 },	-- Timeless Chest
+							{ "o", 221000 },	-- Timeless Chest
+							{ "o", 221001 },	-- Timeless Chest
+							{ "o", 221002 },	-- Timeless Chest
+							{ "o", 221003 },	-- Timeless Chest
+							{ "o", 221004 },	-- Timeless Chest
+							{ "o", 221005 },	-- Timeless Chest
+							{ "o", 221006 },	-- Timeless Chest
+							{ "o", 221007 },	-- Timeless Chest
+							{ "o", 221008 },	-- Timeless Chest
+							{ "o", 221009 },	-- Timeless Chest
+							{ "o", 221010 },	-- Timeless Chest
+							{ "o", 221013 },	-- Timeless Chest
+							{ "o", 221014 },	-- Timeless Chest
+							{ "o", 221015 },	-- Timeless Chest
+							{ "o", 221016 },	-- Timeless Chest
+							{ "o", 221017 },	-- Timeless Chest
+							{ "o", 221018 },	-- Timeless Chest
+							{ "o", 221019 },	-- Timeless Chest
+							{ "o", 221020 },	-- Timeless Chest
+							{ "o", 221021 },	-- Timeless Chest
+							{ "o", 221022 },	-- Timeless Chest
+							{ "o", 221023 },	-- Timeless Chest
+							{ "o", 221024 },	-- Timeless Chest
+							{ "o", 221026 },	-- Timeless Chest
+						},
+						["groups"] = {
+							i(104202),	-- Bonkers (PET!)
+							i(103982),	-- Burden of Eternity
+						},
+					}),
 					o(221670, {	-- Moss-Covered Chest
 						["questID"] = 33170,
 						["coord"] = { 36.6, 34.0, TIMELESS_ISLE },
@@ -1936,15 +1992,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(72007, {	-- Master Kukuru
-						["description"] = "Buy Kukuru's Cache Key and open chests for a chance at the pet.",
-						["g"] = {
-							i(101538, {	-- Kukuru's Cache Key
-								["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
-								["g"] = {
-									i(104202),	-- Bonkers (PET!)
-								},
-							}),
-						},
+						i(101538, {	-- Kukuru's Cache Key
+							["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
+						}),
 					}),
 					n(73305, {	-- Mistweaver Ai <Timeless Artifacts>
 						["coord"] = { 42.6, 55.7, TIMELESS_ISLE },
