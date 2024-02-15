@@ -341,6 +341,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(768, {	-- Gathering Leather
+					-- #if BEFORE 8.0.1
+					["description"] = "This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
+					-- #else
+					["description"] = "This quest becomes available at Classic Skinning skill level 1 when the character level requirement is met.",
+					-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["cost"] = { { "i", 2318, 12 } },	-- Light Leather
@@ -359,6 +364,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(769, {	-- Kodo Hide Bag
+					-- #if BEFORE 8.0.1
+					["description"] = "This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
+					-- #else
+					["description"] = "This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
+					-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44, 44.6, THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
