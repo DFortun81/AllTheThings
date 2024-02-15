@@ -1334,10 +1334,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(72045,  {	-- Chelon
-						["description"] = "Click on Conspicuously Empty Shell to spawn Chelon.",
 						["questID"] = 32966,
-						["isDaily"] = true,
+						["provider"] = { "o", 221027 },	-- Conspicuously Empty Shell
+						["description"] = "Click on Conspicuously Empty Shell to spawn Chelon.",
 						["coord"] = { 25.2, 35.8, TIMELESS_ISLE },
+						["isDaily"] = true,
 						["g"] = {
 							i(86584),	-- Hardened Shell (TOY!)
 						},
