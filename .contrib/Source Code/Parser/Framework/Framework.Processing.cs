@@ -390,6 +390,8 @@ namespace ATT
                 {
                     if (itemObj is IDictionary<string, object> item)
                     {
+                        // Capture references to specified Debug DB keys for Debug output
+                        CaptureDebugDBData(item);
                         decimal itemID = Items.GetSpecificItemID(item);
                         if (Items.IsItemReferenced(itemID))
                         {
@@ -461,26 +463,7 @@ namespace ATT
             if (DebugMode && MergeItemData)
             {
                 // Capture references to specified Debug DB keys for Debug output
-                foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
-                {
-                    if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) && keyValue > 0)
-                    {
-                        if (!dbKeyDatas.Value.TryGetValue(keyValue, out IDictionary<string, object> keyValueValues))
-                            dbKeyDatas.Value[keyValue] = keyValueValues = new Dictionary<string, object>();
-
-                        Dictionary<string, object> clone = new Dictionary<string, object>(data);
-                        clone.Remove("g");
-                        // special case for criteria, to list under their achievement instead of into it since they contain the same achID
-                        if (data.ContainsKey("criteriaID"))
-                        {
-                            Objects.Merge(keyValueValues, "g", clone);
-                        }
-                        else
-                        {
-                            Objects.Merge(keyValueValues, clone);
-                        }
-                    }
-                }
+                CaptureDebugDBData(data);
             }
 
             // handle the current processing against the data
@@ -554,6 +537,31 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void CaptureDebugDBData(IDictionary<string, object> data)
+        {
+            foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
+            {
+                if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) || dbKeyDatas.Key == "questID" && (
+                    data.TryGetValue("questIDA", out keyValue) || data.TryGetValue("questIDA", out keyValue)) && keyValue > 0)
+                {
+                    if (!dbKeyDatas.Value.TryGetValue(keyValue, out IDictionary<string, object> keyValueValues))
+                        dbKeyDatas.Value[keyValue] = keyValueValues = new Dictionary<string, object>();
+
+                    Dictionary<string, object> clone = new Dictionary<string, object>(data);
+                    clone.Remove("g");
+                    // special case for criteria, to list under their achievement instead of into it since they contain the same achID
+                    if (data.ContainsKey("criteriaID"))
+                    {
+                        Objects.Merge(keyValueValues, "g", clone);
+                    }
+                    else
+                    {
+                        Objects.Merge(keyValueValues, clone);
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -999,6 +1007,8 @@ namespace ATT
             {
                 data.Remove(key);
             }
+
+            CaptureDebugDBData(data);
 
             return true;
         }
