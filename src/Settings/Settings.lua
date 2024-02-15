@@ -74,8 +74,28 @@ local Things = {
 	"Toys",
 	"Transmog",
 }
+local ForceAccountWide = {
+	BattlePets = true,
+	DrakewatcherManuscripts = true,
+	Heirlooms = true,
+	Illusions = true,
+	Mounts = true,
+	RuneforgeLegendaries = true,
+	Toys = true,
+	Transmo = true,
+}
 local GeneralSettingsBase = {
 	__index = {
+		-- Forced Account-Wide
+		-- ["AccountWide:BattlePets"] = true,
+		-- ["AccountWide:DrakewatcherManuscripts"] = true,
+		-- ["AccountWide:Heirlooms"] = true,
+		-- ["AccountWide:Illusions"] = true,
+		-- ["AccountWide:Mounts"] = true,
+		-- ["AccountWide:RuneforgeLegendaries"] = true,
+		-- ["AccountWide:Toys"] = true,
+		-- ["AccountWide:Transmog"] = true,
+
 		["AccountMode"] = false,
 		["Completionist"] = true,
 		["MainOnly"] = false,
@@ -83,23 +103,15 @@ local GeneralSettingsBase = {
 		["FactionMode"] = false,
 		["AccountWide:Achievements"] = true,
 		["AccountWide:AzeriteEssences"] = true,
-		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:CharacterUnlocks"] = true,
 		["AccountWide:Conduits"] = true,
-		-- ["AccountWide:DrakewatcherManuscripts"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
-		-- ["AccountWide:Heirlooms"] = true,
-		-- ["AccountWide:Illusions"] = true,
-		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRollsAndSelfieFilters"] = true,
 		["AccountWide:Quests"] = true,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
-		-- ["AccountWide:RuneforgeLegendaries"] = true,
 		["AccountWide:Titles"] = true,
-		-- ["AccountWide:Toys"] = true,
-		-- ["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
 		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
@@ -232,6 +244,7 @@ settings.Initialize = function(self)
 	end
 
 	-- Initialise custom colors, iterate so if app.Colors gets new colors they aren't lost
+	-- Don't think this needs to be global...
 	if not DefaultColors then
 		local originalDefaultColors = app.Colors;
 		DefaultColors = originalDefaultColors;
@@ -261,7 +274,7 @@ settings.Initialize = function(self)
 	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
-	
+
 	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
@@ -277,10 +290,18 @@ settings.Initialize = function(self)
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
 		app:GetWindow("WorldQuests"):Show()
 	end
-	
+
 	if settings.__RefreshActiveAdditionalIDs then
 		settings.__RefreshActiveAdditionalIDs()
 		settings.__RefreshActiveAdditionalIDs = nil
+	end
+
+	-- Somehow some forced Account-Wide Things were set to false in user Profiles, so using app.IsAccountTracked ALWAYS returned false
+	-- so let's erase that data, and assign those Things in the Base General class
+	for thing,_ in pairs(ForceAccountWide) do
+		settings:Set("AccountWide:"..thing, nil)
+		GeneralSettingsBase[thing] = true
+		settings.AccountWide[thing] = true
 	end
 
 	app._SettingsRefresh = GetTimePreciseSec()
