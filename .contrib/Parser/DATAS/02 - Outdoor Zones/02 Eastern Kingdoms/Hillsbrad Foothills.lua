@@ -2876,11 +2876,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.0, 19.6, HILLSBRAD_FOOTHILLS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
 					-- #if AFTER CATA
@@ -2954,11 +2954,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.6, 61.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
-						6369,	-- Recipe: Rockscale Cod (RECIPE!)
-					}},
+					["groups"] = {
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+					},
 				}),
 				-- #endif
 				n(2394, {	-- Mallen Swain <Tailoring Supplies>
@@ -2996,10 +2996,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.0, 55.2, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
 							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
@@ -3020,6 +3016,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						-- #endif
 					},
 				}),

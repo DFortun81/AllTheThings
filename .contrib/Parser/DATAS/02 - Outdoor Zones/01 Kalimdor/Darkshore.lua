@@ -2681,13 +2681,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
-					["sym"] = {{"select", "itemID",
-						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
-						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						6369,	-- Recipe: Rockscale Cod (RECIPE!)
-					}},
 					["groups"] = {
 						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					},
 					-- #endif
 				}),

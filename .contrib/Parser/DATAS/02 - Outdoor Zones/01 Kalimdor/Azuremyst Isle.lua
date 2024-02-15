@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local COOKIE_GROUPS = {};
 root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(AZUREMYST_ISLE, {
 		["lore"] = "Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",
@@ -1560,10 +1561,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(17246, {	-- "Cookie" McWeaksauce <Cooking Trainer & Supplies>
 					["coord"] = { 46.6, 70.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = COOKIE_GROUPS,
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -1612,3 +1610,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
+
+-- Add the items that aren't marked with a phase.
+appendGroups({
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+}, COOKIE_GROUPS);

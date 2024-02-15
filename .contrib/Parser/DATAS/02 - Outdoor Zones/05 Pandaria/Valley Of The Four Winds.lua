@@ -5632,10 +5632,10 @@ root(ROOTS.Zones, {
 					}),
 					n(64465, {	-- Noodles <Cooking Supplies>
 						["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-						["sym"] = {{"select", "itemID",
-							21219,	-- Recipe: Sagefish Delight (RECIPE!)
-							21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-						}},
+						["g"] = {
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
 					}),
 					faction(1276, {	-- Old Hillpaw
 						["g"] = {

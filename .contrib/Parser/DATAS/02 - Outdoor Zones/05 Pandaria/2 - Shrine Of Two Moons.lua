@@ -79,10 +79,10 @@ root(ROOTS.Zones, m(PANDARIA, {
 			},{
 				n(64067, {	-- Barleyflower <Cooking Supplies>
 					["coord"] = { 68.7, 69.5, 392 },
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["g"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor>
 					["coord"] = { 42.9, 74.7, 392 },
@@ -1362,10 +1362,10 @@ root(ROOTS.Zones, m(PANDARIA, {
 				}),
 				n(64126, {	-- Stephen Wong <Cooking Supplies>
 					["coord"] = { 27.5, 65.0, 391 },
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["g"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(74019, {	-- Tu'aho Pathcutter <Mythic Vendor>
 					["coord"] = { 43.4, 80.4, 392 },

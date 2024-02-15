@@ -3335,10 +3335,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(4894, {	-- Craig Nollward <Cooking Trainer> [CATA+] / <Cook>
 					["coord"] = { 66.8, 45.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				-- #endif
 				n(6567, {	-- Ghok'kah <Tailoring Supplies>
@@ -3377,9 +3377,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(4897, {	-- Helenia Olden <Trade Supplies>
 					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						12228,	-- Recipe: Roast Raptor (RECIPE!)
-					}},
 					["groups"] = {
 						i(21941, {	-- Design: Black Pearl Panther
 							["timeline"] = { "added 2.0.1.6180" },
@@ -3394,6 +3391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
 						i(12233),	-- Recipe: Mystery Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer> [CATA+] / <Bowyer>
@@ -3441,13 +3439,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(4879, {	-- Ogg'marr <Butcher>
 					["coord"] = { 36.6, 31.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						12228,	-- Recipe: Roast Raptor (RECIPE!)
-					}},
 					["groups"] = {
 						i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
 						i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
 						i(20075),	-- Recipe: Heavy Crocolisk Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>

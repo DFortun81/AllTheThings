@@ -2695,14 +2695,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(66, {	-- Tharynn Bouden <Trade Supplies>
 					["coord"] = { 41.8, 67.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
-						6328,	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-					}},
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
 						}),
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
 			}),

@@ -2465,10 +2465,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.0, 79.4, ORGRIMMAR },
 					["timeline"] = { "added 7.3.5.25692" },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				-- #if NOT ANYCLASSIC
 				-- TODO: Finish this part.
@@ -2913,10 +2913,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.0, 85.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(3331, {	-- Kareth
 					["coord"] = { 46.8, 63.6, ORGRIMMAR },
@@ -4462,10 +4462,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.6, 61.2, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(3356, {	-- Sumi <Blacksmithing Supplies>
 					-- #if AFTER CATA

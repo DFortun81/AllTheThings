@@ -1740,10 +1740,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 33.0, 17.8, SILVERPINE_FOREST },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6328,	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					}},
+					["groups"] = {
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
 					-- #if AFTER CATA

@@ -1647,12 +1647,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4305, {	-- Kriggon Talsone <Fisherman>
 					["coord"] = { 36.2, 90.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						6326,	-- Recipe: Slitherskin Mackerel (RECIPE!)
-					}},
 					["groups"] = {
 						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),

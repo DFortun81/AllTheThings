@@ -2223,10 +2223,10 @@ root(ROOTS.Zones, {
 					n(19195, {	-- Jim Saltit <Cooking Supplies>
 						["coord"] = { 63.4, 68.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
-						["sym"] = {{"select", "itemID",
-							21219,	-- Recipe: Sagefish Delight (RECIPE!)
-							21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-						}},
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
 					}),
 					n(19049, {	-- Karokka  <Alchemy Trainer>
 						["coord"] = { 45.6, 19.8, SHATTRATH_CITY },

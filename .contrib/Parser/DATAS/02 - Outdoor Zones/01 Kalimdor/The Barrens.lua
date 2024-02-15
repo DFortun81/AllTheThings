@@ -4433,10 +4433,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 62.8, 38.2, THE_BARRENS },
 					-- #endif
-					["sym"] = {{"select", "itemID",
-						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					}},
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(208773, {	-- Fishing Harpoon
@@ -4445,6 +4441,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = 526,	-- 5s 26c
 						})),
 						-- #endif
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
 				}),
 				n(3658, {	-- Lizzarik <Weapon Dealer>
@@ -4543,10 +4541,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 32.0, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
 					-- #if AFTER CATA

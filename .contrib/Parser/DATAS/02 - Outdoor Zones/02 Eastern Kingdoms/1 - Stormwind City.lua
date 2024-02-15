@@ -4427,10 +4427,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.4, 18.0, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5.25716" },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
 					-- #if AFTER WRATH

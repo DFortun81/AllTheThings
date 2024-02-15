@@ -3636,10 +3636,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 11.8, 34.0, ASHENVALE },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
-						6369,	-- Recipe: Rockscale Cod (RECIPE!)
-					}},
+					["groups"] = {
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+					},
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

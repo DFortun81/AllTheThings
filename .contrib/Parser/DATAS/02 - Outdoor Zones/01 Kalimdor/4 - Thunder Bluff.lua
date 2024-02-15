@@ -1258,11 +1258,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
 					["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-					}},
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					},
 				}),
 				n(8363, {	-- Shadi Mistrunner <Trade Supplies>

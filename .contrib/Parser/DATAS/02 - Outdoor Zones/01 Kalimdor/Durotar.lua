@@ -3846,10 +3846,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.0, 73.4, DUROTAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					}},
 					["groups"] = {
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),

@@ -879,10 +879,10 @@ root(ROOTS.Zones, m(PANDARIA, {
 				}),
 				n(64084, {	-- Jojo <Cooking Supplies>
 					["coord"] = { 63.0, 26.8, 393 },
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["g"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(66678, {	-- Krystel
 					["coord"] = { 84.6, 60.4, VALE_OF_ETERNAL_BLOSSOMS },

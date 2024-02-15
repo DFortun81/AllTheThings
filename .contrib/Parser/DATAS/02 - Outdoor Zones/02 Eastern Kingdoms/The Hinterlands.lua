@@ -2023,10 +2023,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(14738, {	-- Otho Moji'ko <Cooking Supplies>
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
 					["coord"] = { 34.2, 37.8, THE_HINTERLANDS },

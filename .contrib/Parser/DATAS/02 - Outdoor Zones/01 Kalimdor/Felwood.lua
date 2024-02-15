@@ -2434,10 +2434,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(48580, {	-- Desaan <Cooking Supplies>
 					["coord"] = { 43.8, 29.8, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(2803, {	-- Malygen <General Goods>
 					-- #if AFTER CATA

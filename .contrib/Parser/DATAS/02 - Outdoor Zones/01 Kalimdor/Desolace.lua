@@ -2379,7 +2379,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
 						14635,	-- Pattern: Gem-studded Leather Belt (RECIPE!)
 						7613,	-- Pattern: Green Leather Armor (RECIPE!)
-						12228,	-- Recipe: Roast Raptor (RECIPE!)
 					}},
 					["groups"] = {
 						i(12232, {	-- Recipe: Carrion Surprise (RECIPE!)
@@ -2398,7 +2397,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
-							["timeline"] = { REMOVED_5_0_4 },
+							["timeline"] = { "removed 5.0.4" },
+							["isLimited"] = true,
+						}),
+						i(12228, {	-- Recipe: Roast Raptor (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2406,12 +2408,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12033, {	-- Wulan <Cooking Supplies>
 					["coord"] = { 26.2, 69.8, DESOLACE },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
-						6369,	-- Recipe: Rockscale Cod (RECIPE!)
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
 					["groups"] = {
 						i(16072, {	-- Expert Cookbook
 							["timeline"] = { REMOVED_3_1_0 },
@@ -2425,6 +2421,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 							["rank"] = 3,
 						}),
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 			}),

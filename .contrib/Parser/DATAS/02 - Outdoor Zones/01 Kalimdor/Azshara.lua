@@ -2171,10 +2171,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.0, 50.6, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(49884, {	-- Sally "Salvager" Sandscrew <Armor Vendor>
 					["coord"] = { 60.8, 50.2, AZSHARA },

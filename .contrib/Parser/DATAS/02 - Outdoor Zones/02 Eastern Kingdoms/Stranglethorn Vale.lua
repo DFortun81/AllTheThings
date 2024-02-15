@@ -2583,17 +2583,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
 					-- #endif
-					["sym"] = {{"select", "itemID",
-						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
-						6369,	-- Recipe: Rockscale Cod (RECIPE!)
-						21219,	-- Recipe: Sagefish Delight (RECIPE!)
-						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
-					}},
 					["groups"] = {
 						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
 						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
 						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
 						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>

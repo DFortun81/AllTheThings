@@ -1799,13 +1799,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
 					["coord"] = { 81.0, 30.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						6325,	-- Recipe: Brilliant Smallfish (RECIPE!)
-						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						6328,	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-						17062,	-- Recipe: Mithril Head Trout (RECIPE!)
-						6369,	-- Recipe: Rockscale Cod (RECIPE!)
-					}},
+					["groups"] = {
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+					},
 				}),
 				n(4557, {	-- Louis Warren
 					["coord"] = { 62.0, 41.2, UNDERCITY },
@@ -1957,6 +1956,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
