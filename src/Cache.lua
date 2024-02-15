@@ -32,7 +32,7 @@ local fieldMeta = {
 	__newindex = function(t, field, value)
 		if field then
 			local container = setmetatable(value, containerMeta);
-			rawset(t, field, value);
+			rawset(t, field, container);
 			return container;
 		end
 	end,
