@@ -1743,6 +1743,7 @@ root(ROOTS.Zones, {
 							{ "o", 221024 },	-- Timeless Chest
 							{ "o", 221026 },	-- Timeless Chest
 						},
+						["coord"] = { 59.0, 41.0, TIMELESS_ISLE },
 						["groups"] = {
 							i(104202),	-- Bonkers (PET!)
 							i(103982),	-- Burden of Eternity
