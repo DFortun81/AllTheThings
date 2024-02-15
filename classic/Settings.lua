@@ -10,7 +10,7 @@ local L = app.L;
 local ATTClassicSettings, ATTClassicSettingsPerCharacter = {}, {};
 
 -- The Settings Frame
-local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer);
 settings:SetAllPoints();
 app.Settings = settings;
 settings.AccountWide = {
@@ -396,29 +396,18 @@ local function CreateCheckBox(self, text, OnRefresh, OnClick)
 	return cb;
 end
 settings.CreateOptionsPage = function(self, text, isTopLevel)
-	local subcategory = CreateFrame("ScrollFrame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer, "UIPanelScrollFrameTemplate");
+	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
 	subcategory:SetAllPoints();
 	if isTopLevel then
-		-- Set the scrollFrame to its proper size (only needed for top-level category)
-		subcategory.ScrollBar:Hide();
 		subcategory.name = appName;
 		InterfaceOptions_AddCategory(subcategory);
 	else
-		-- Move the scrollbar to its proper position (only needed for subcategories)
-		subcategory.ScrollBar:ClearPoint("RIGHT")
-		subcategory.ScrollBar:SetPoint("RIGHT", -36, 0)
-		
 		subcategory.name = text;
 		subcategory.parent = appName;
 		InterfaceOptions_AddCategory(subcategory);
 	end
-	
-	local scrollChild = CreateFrame("Frame", subcategory:GetName().."-Child")
-	scrollChild:SetWidth(1)	-- This is automatically defined, so long as the attribute exists at all
-	scrollChild:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
-	subcategory:SetScrollChild(scrollChild);
-	scrollChild.CreateCheckBox = CreateCheckBox;
-	return scrollChild;
+	subcategory.CreateCheckBox = CreateCheckBox;
+	return subcategory;
 end
 settings.ShowCopyPasteDialog = function(self)
 	app:ShowPopupDialogWithEditBox("Ctrl+A, Ctrl+C to Copy to your Clipboard.", self.copypasta or self:GetText(), nil, 10);
@@ -750,7 +739,6 @@ end;
 ------------------------------------------
 -- The "General" Tab.					--
 ------------------------------------------
-local line;
 (function()
 local child = settings:CreateOptionsPage("General", true);
 
@@ -758,7 +746,7 @@ local child = settings:CreateOptionsPage("General", true);
 
 -- Top 1
 local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", settings, "TOPLEFT", 8, -8);
+logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 logo:SetTexture(app.asset("Discord_2_64"));
 logo:SetSize(36, 36);
 logo:Show();
@@ -771,13 +759,13 @@ title:SetScale(1.5);
 title:Show();
 
 local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
+version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
 version:SetJustifyH("RIGHT");
 version:SetText(app.Version);
 version:Show();
 
-local curse = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
-curse:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6);
+local curse = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
+curse:SetPoint("TOPLEFT", child, "BOTTOMLEFT", 0, -6);
 curse.copypasta = "https://www.curseforge.com/wow/addons/all-the-things";
 curse:SetText("CurseForge");
 curse:SetWidth(140);
@@ -786,7 +774,7 @@ curse:RegisterForClicks("AnyUp");
 curse:SetScript("OnClick", settings.ShowCopyPasteDialog);
 curse:SetATTTooltip("Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.");
 
-local discord = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
+local discord = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
 discord:SetPoint("TOPLEFT", curse, "TOPRIGHT", 4, 0);
 discord.copypasta = "discord.gg/allthethings";
 discord:SetText("Discord");
@@ -796,7 +784,7 @@ discord:RegisterForClicks("AnyUp");
 discord:SetScript("OnClick", settings.ShowCopyPasteDialog);
 discord:SetATTTooltip("Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!");
 
-local twitch = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
+local twitch = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
 twitch:SetPoint("TOPLEFT", discord, "TOPRIGHT", 4, 0);
 twitch.copypasta = "twitch.tv/crieve";
 twitch:SetText("Twitch");
@@ -807,9 +795,9 @@ twitch:SetScript("OnClick", settings.ShowCopyPasteDialog);
 twitch:SetATTTooltip("Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!");
 
 
-line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", settings, "LEFT", 4, 0);
-line:SetPoint("RIGHT", settings, "RIGHT", -4, 0);
+local line = child:CreateTexture(nil, "ARTWORK");
+line:SetPoint("LEFT", child, "LEFT", 4, 0);
+line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
 line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
 line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
@@ -894,7 +882,7 @@ LootCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, 4);
 
 -- This creates the "Precision" slider.
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
-PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+PrecisionSlider:SetPoint("RIGHT", child, "RIGHT", -20, 0);
 PrecisionSlider:SetPoint("TOP", ModeLabel, "BOTTOM", 0, -12);
 settings.PrecisionSlider = PrecisionSlider;
 PrecisionSlider.tooltipText = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
@@ -921,7 +909,7 @@ end);
 
 -- This creates the "Minimap Button Size" slider.
 local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", child, "OptionsSliderTemplate");
-MinimapButtonSizeSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+MinimapButtonSizeSlider:SetPoint("RIGHT", child, "RIGHT", -20, 0);
 MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -28);
 settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
 MinimapButtonSizeSlider.tooltipText = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
@@ -1936,6 +1924,33 @@ end)();
 ------------------------------------------
 (function()
 local child = settings:CreateOptionsPage("Filters");
+
+local logo = child:CreateTexture(nil, "ARTWORK");
+logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+logo:SetTexture(app.asset("Discord_2_64"));
+logo:SetSize(36, 36);
+logo:Show();
+
+local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+title:SetJustifyH("LEFT");
+title:SetText(L["TITLE"]);
+title:SetScale(1.5);
+title:Show();
+
+local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
+version:SetJustifyH("RIGHT");
+version:SetText(app.Version);
+version:Show();
+
+local line = child:CreateTexture(nil, "ARTWORK");
+line:SetPoint("LEFT", child, "LEFT", 4, 0);
+line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
+line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+line:SetColorTexture(1, 1, 1, 0.4);
+line:SetHeight(2);
+
 app.AddEventHandler("OnSettingsRefreshed", function()
 	if app.MODE_ACCOUNT or app.MODE_DEBUG then
 		--child:Disable();
@@ -2041,8 +2056,8 @@ for i,filterID in ipairs({ 113, 55, 104, 36 }) do
 	yoffset = 6;
 end
 
-local classDefaultsButton = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
-classDefaultsButton:SetPoint("BOTTOMLEFT", settings, "BOTTOMLEFT", 8, 8);
+local classDefaultsButton = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
+classDefaultsButton:SetPoint("BOTTOMLEFT", child, "BOTTOMLEFT", 8, 8);
 classDefaultsButton:SetText("Class Defaults");
 classDefaultsButton:SetWidth(120);
 classDefaultsButton:SetHeight(24);
@@ -2062,7 +2077,7 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	end
 end);
 
-local allButton = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
+local allButton = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
 allButton:SetPoint("TOPLEFT", classDefaultsButton, "TOPRIGHT", 3, 0);
 allButton:SetText("All");
 allButton:SetWidth(80);
@@ -2124,6 +2139,33 @@ end)();
 ------------------------------------------
 (function()
 local child = settings:CreateOptionsPage("Phases");
+
+local logo = child:CreateTexture(nil, "ARTWORK");
+logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+logo:SetTexture(app.asset("Discord_2_64"));
+logo:SetSize(36, 36);
+logo:Show();
+
+local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+title:SetJustifyH("LEFT");
+title:SetText(L["TITLE"]);
+title:SetScale(1.5);
+title:Show();
+
+local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
+version:SetJustifyH("RIGHT");
+version:SetText(app.Version);
+version:Show();
+
+local line = child:CreateTexture(nil, "ARTWORK");
+line:SetPoint("LEFT", child, "LEFT", 4, 0);
+line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
+line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+line:SetColorTexture(1, 1, 1, 0.4);
+line:SetHeight(2);
+
 app.AddEventHandler("OnSettingsRefreshed", function()
 	if app.MODE_DEBUG then
 		-- Disable this Page?
@@ -2218,6 +2260,33 @@ end)();
 ------------------------------------------
 (function()
 local child = settings:CreateOptionsPage("Interface");
+
+local logo = child:CreateTexture(nil, "ARTWORK");
+logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+logo:SetTexture(app.asset("Discord_2_64"));
+logo:SetSize(36, 36);
+logo:Show();
+
+local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+title:SetJustifyH("LEFT");
+title:SetText(L["TITLE"]);
+title:SetScale(1.5);
+title:Show();
+
+local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
+version:SetJustifyH("RIGHT");
+version:SetText(app.Version);
+version:Show();
+
+local line = child:CreateTexture(nil, "ARTWORK");
+line:SetPoint("LEFT", child, "LEFT", 4, 0);
+line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
+line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+line:SetColorTexture(1, 1, 1, 0.4);
+line:SetHeight(2);
+
 local TooltipLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 TooltipLabel:SetJustifyH("LEFT");
@@ -2663,9 +2732,9 @@ for _,id in pairs({"itemLevel","itemString","Layer","Lore","mapID","modelID","ob
 end
 
 -- This creates the "Main List Scale" slider.
-local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
+local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", child, "OptionsSliderTemplate");
 MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", ShowRaceRequirementsCheckBox, "BOTTOM", 0, -15);
+MainListScaleSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "BOTTOM", 0, -15);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.currentValue = 0;
 MainListScaleSlider.tooltipText = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
@@ -2693,7 +2762,7 @@ MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 end);
 
 -- This creates the "Mini List Scale" slider.
-local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", settings, "OptionsSliderTemplate");
+local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", child, "OptionsSliderTemplate");
 MiniListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
 MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -32);
 settings.MiniListScaleSlider = MiniListScaleSlider;
@@ -2726,7 +2795,7 @@ MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 end);
 
 -- This creates the "Locations" slider.
-local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
+local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", child, "OptionsSliderTemplate");
 LocationsSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
 LocationsSlider:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -32);
 settings.LocationsSlider = LocationsSlider;
@@ -2768,6 +2837,33 @@ end)();
 ------------------------------------------
 (function()
 local child = settings:CreateOptionsPage("Features");
+
+local logo = child:CreateTexture(nil, "ARTWORK");
+logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+logo:SetTexture(app.asset("Discord_2_64"));
+logo:SetSize(36, 36);
+logo:Show();
+
+local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+title:SetJustifyH("LEFT");
+title:SetText(L["TITLE"]);
+title:SetScale(1.5);
+title:Show();
+
+local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
+version:SetJustifyH("RIGHT");
+version:SetText(app.Version);
+version:Show();
+
+local line = child:CreateTexture(nil, "ARTWORK");
+line:SetPoint("LEFT", child, "LEFT", 4, 0);
+line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
+line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+line:SetColorTexture(1, 1, 1, 0.4);
+line:SetHeight(2);
+
 local CelebrationsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 330, -8);
 CelebrationsLabel:SetJustifyH("LEFT");
@@ -2945,9 +3041,36 @@ end)();
 ------------------------------------------
 (function()
 local child = settings:CreateOptionsPage("About");
+
+local logo = child:CreateTexture(nil, "ARTWORK");
+logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+logo:SetTexture(app.asset("Discord_2_64"));
+logo:SetSize(36, 36);
+logo:Show();
+
+local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+title:SetJustifyH("LEFT");
+title:SetText(L["TITLE"]);
+title:SetScale(1.5);
+title:Show();
+
+local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
+version:SetJustifyH("RIGHT");
+version:SetText(app.Version);
+version:Show();
+
+local line = child:CreateTexture(nil, "ARTWORK");
+line:SetPoint("LEFT", child, "LEFT", 4, 0);
+line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
+line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+line:SetColorTexture(1, 1, 1, 0.4);
+line:SetHeight(2);
+
 local AboutText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-AboutText:SetPoint("TOPLEFT", settings, "TOPLEFT", 8, -8);
-AboutText:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
+AboutText:SetPoint("TOPLEFT", line, "TOPLEFT", 8, -8);
+AboutText:SetPoint("TOPRIGHT", line, "TOPRIGHT", -8, -8);
 AboutText:SetJustifyH("LEFT");
 AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|C" .. app.Colors.Raid .. "Crieve (DFortun81 on GitHub)|CFFFFFFFF\n\nIf you wish to play with us, we're on Atiesh (Alliance) in the <All The Things> guild!|r\n\n\nContributors working on Classic:\n |CFFFFFFFF\nPr3vention, Avella, Mogwai, Crieve and Talonzor |r\n\n\n\nIf we're missing something, please let us know!\n\nStill lots of things to add, but thankfully there is a finite number of things in WoW Classic and TBC Classic, so we should eventually get it all!");
 AboutText:Show();
