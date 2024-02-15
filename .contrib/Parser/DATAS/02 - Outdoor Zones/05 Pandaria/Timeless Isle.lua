@@ -1565,10 +1565,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(71864,  {	-- Spelurk
-						["description"] = "Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave and spawn the rare.  Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
 						["questID"] = 32960,
-						["isDaily"] = true,
+						["providers"] = {
+							{ "o", 220904 },	-- Rock-breaking Hammer
+							{ "o", 220815 },	-- Cave-in
+						},
+						["description"] = "Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave and spawn the rare.  Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
 						["coord"] = { 59.5, 48.9, TIMELESS_ISLE },
+						["isDaily"] = true,
 						["g"] = {
 							i(104320),	-- Cursed Talisman
 						},
