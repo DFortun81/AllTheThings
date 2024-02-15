@@ -16238,7 +16238,7 @@ end
 			if data1 == "search" then
 				local cmd = data2 .. ":" .. data3;
 				app.SetSkipLevel(2);
-				local group = app.GetCachedSearchResults(SearchForLink, cmd);
+				local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
 				app.SetSkipLevel(0);
 				app:CreateMiniListForGroup(group);
 				return true;
