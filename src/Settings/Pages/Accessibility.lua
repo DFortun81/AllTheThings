@@ -5,7 +5,7 @@ local HexToARGB = app.Modules.Color.HexToARGB
 local RGBToHex = app.Modules.Color.RGBToHex
 
 -- Settings: Accessibility Page
-local child = settings:CreateOptionsPage(L["ACCESSIBILITY_PAGE"], true)
+local child = settings:CreateOptionsPage(L["ACCESSIBILITY_PAGE"], L.INTERFACE_PAGE)
 
 -- Column 1
 local headerColors = child:CreateHeaderLabel(L["COLORS_ICONS"])
@@ -122,3 +122,104 @@ local buttonMountColor = child:CreateButton(
 	end,
 })
 buttonMountColor:SetPoint("TOPLEFT", textMount, "BOTTOMLEFT", 0, -5)
+
+
+
+local headerWindowColors = child:CreateHeaderLabel(L["WINDOW_COLORS"])
+headerWindowColors:SetPoint("LEFT", headerColors, 0, 0)
+headerWindowColors:SetPoint("TOP", buttonMountColor, "BOTTOM", 0, -20)
+
+-- Color Picker
+local function changeBackgroundColor(restore)
+	local newR, newG, newB, newA
+	if restore then
+		newR, newG, newB, newA = unpack(restore)
+	else
+		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
+	end
+
+	-- Update our internal storage
+	settings:Set("Window:BackgroundColor", {r = newR, g = newG, b = newB, a = newA})
+
+ 	-- And update the actual windows
+	settings.ApplyAllWindowColors()
+end
+
+local function changeBorderColor(restore)
+	local newR, newG, newB, newA
+	if restore then
+		newR, newG, newB, newA = unpack(restore)
+	else
+		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
+	end
+
+	-- Update our internal storage
+	settings:Set("Window:BorderColor", {r = newR, g = newG, b = newB, a = newA})
+
+ 	-- And update the actual windows
+	settings.ApplyAllWindowColors()
+end
+
+settings.ShowColorPicker = function(r, g, b, a, changedCallback)
+	ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = (a ~= nil), a
+	ColorPickerFrame.previousValues = {r,g,b,a}
+	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc, ColorPickerFrame.swatchFunc = changedCallback, changedCallback, changedCallback, changedCallback
+	ColorPickerFrame.Content.ColorPicker:SetColorRGB(r,g,b)
+	ColorPickerFrame:Hide()	-- Need to run the OnShow handler
+	ColorPickerFrame:Show()
+end
+
+local buttonBackgroundColor = child:CreateButton(
+{ text = L["BACKGROUND"], tooltip = L["BACKGROUND_TOOLTIP"], },
+{
+	OnClick = function(self)
+		local r = tonumber(settings:Get("Window:BackgroundColor").r) or 0
+		local g = tonumber(settings:Get("Window:BackgroundColor").g) or 0
+		local b = tonumber(settings:Get("Window:BackgroundColor").b) or 0
+		local a = tonumber(settings:Get("Window:BackgroundColor").a) or 0
+		settings.ShowColorPicker(r, g, b, a, changeBackgroundColor)
+	end,
+})
+buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
+
+local buttonBorderColor = child:CreateButton(
+{ text = L["BORDER"], tooltip = L["BORDER_TOOLTIP"], },
+{
+	OnClick = function(self)
+		local r = tonumber(settings:Get("Window:BorderColor").r) or 0
+		local g = tonumber(settings:Get("Window:BorderColor").g) or 0
+		local b = tonumber(settings:Get("Window:BorderColor").b) or 0
+		local a = tonumber(settings:Get("Window:BorderColor").a) or 0
+		settings.ShowColorPicker(r, g, b, a, changeBorderColor)
+	end,
+})
+buttonBorderColor:SetPoint("BOTTOMLEFT", buttonBackgroundColor, "BOTTOMRIGHT", 5, 0)
+buttonBorderColor.OnRefresh = function(self)
+	if settings:GetTooltipSetting("Window:UseClassForBorder") then
+		self:Disable()
+	else
+		self:Enable()
+	end
+end
+
+local buttonResetColor = child:CreateButton(
+{ text = L["RESET"], tooltip = L["RESET_TOOLTIP"], },
+{
+	OnClick = function(self)
+		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
+		settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
+		settings.ApplyAllWindowColors()
+	end,
+})
+buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
+
+local checkboxUseClassColorForBorder = child:CreateCheckBox(L["CLASS_BORDER"],	-- LOCALISE
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Window:UseClassForBorder"))
+end,
+function(self)
+	settings:SetTooltipSetting("Window:UseClassForBorder", self:GetChecked())
+	settings.ApplyAllWindowColors()
+end)
+checkboxUseClassColorForBorder:SetATTTooltip(L["CLASS_BORDER_TOOLTIP"])
+checkboxUseClassColorForBorder:SetPoint("TOPLEFT", buttonBackgroundColor, "BOTTOMLEFT", -2, 0)

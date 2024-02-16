@@ -47,16 +47,6 @@ settings.Collectibles = {
 	Toys = true,
 };
 settings:Hide();
-
-settings.Open = function(self)
-	-- Open the Options menu.
-	if InterfaceOptionsFrame:IsVisible() then
-		InterfaceOptionsFrame_Show();
-	else
-		InterfaceOptionsFrame_OpenToCategory(appName);
-		InterfaceOptionsFrame_OpenToCategory(appName);
-	end
-end
 settings:SetScript("OnShow", function(self)
 	self:Refresh();
 end);
@@ -395,20 +385,39 @@ local function CreateCheckBox(self, text, OnRefresh, OnClick)
 	cb:SetHitRectInsets(0,0 - cb.Text:GetUnboundedStringWidth(),0,0);
 	return cb;
 end
-settings.CreateOptionsPage = function(self, text, isTopLevel)
+
+local RootCategoryID, Categories = appName, {};
+local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
+settings.Open = function(self) openToCategory(RootCategoryID); end
+settings.CreateOptionsPage = function(self, text, parentCategory)
 	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
+	subcategory.CreateCheckBox = CreateCheckBox;
+	--Mixin(subcategory, ATTSettingsPanelMixin);
+	--self:RegisterObject(subcategory);
 	subcategory:SetAllPoints();
-	if isTopLevel then
-		subcategory.name = appName;
-		InterfaceOptions_AddCategory(subcategory);
+	
+	if Settings and Settings.RegisterCanvasLayoutCategory then
+		local category;
+		if text == appName then
+			category = Settings.RegisterCanvasLayoutCategory(subcategory, text)
+			RootCategoryID = category.ID;
+			Settings.RegisterAddOnCategory(category);
+		else
+			parentCategory = Categories[parentCategory or appName];
+			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory.category, subcategory, text)
+		end
+		subcategory:Hide();
+		subcategory.category = category;
 	else
 		subcategory.name = text;
-		subcategory.parent = appName;
+		if text ~= appName then subcategory.parent = parentCategory or appName; end
 		InterfaceOptions_AddCategory(subcategory);
 	end
+	Categories[text] = subcategory;
 	subcategory.CreateCheckBox = CreateCheckBox;
 	return subcategory;
 end
+
 settings.ShowCopyPasteDialog = function(self)
 	app:ShowPopupDialogWithEditBox("Ctrl+A, Ctrl+C to Copy to your Clipboard.", self.copypasta or self:GetText(), nil, 10);
 end
@@ -740,7 +749,7 @@ end;
 -- The "General" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage("General", true);
+local child = settings:CreateOptionsPage(appName);
 
 -- CONTENT
 

@@ -3,7 +3,7 @@ local L, settings, tinsert = app.L, app.Settings, tinsert;
 local Callback = app.CallbackHandlers.Callback;
 
 -- Settings: Profiles Page
-local child = settings:CreateOptionsPage(L["PROFILES_PAGE"], true)
+local child = settings:CreateOptionsPage(L["PROFILES_PAGE"])
 
 -- CONTENT
 local headerProfiles = child:CreateHeaderLabel(L["PROFILES_PAGE"])

@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Settings: Sync Page
-local child = settings:CreateOptionsPage(L["SYNC_PAGE"], true)
+local child = settings:CreateOptionsPage(L["SYNC_PAGE"])
 
 -- CONTENT
 local headerSync = child:CreateHeaderLabel(L["ACCOUNT_SYNCHRONIZATION"])
@@ -31,7 +31,7 @@ local function InitializeATTSyncWindow()
 	syncWindow:SetPoint("LEFT", headerSync, 0, 0)
 	syncWindow:SetPoint("RIGHT", headerSync, "LEFT", 300, 0)
 	syncWindow:SetPoint("TOP", checkboxAutoSync, "BOTTOM", 0, 4)
-	syncWindow:SetPoint("BOTTOM", child, 0, -592)
+	syncWindow:SetHeight(560);
 	syncWindow:SetClampedToScreen(false)
 	pcall(syncWindow.SetUserPlaced, syncWindow, false)
 	syncWindow:SetToplevel(false)
@@ -41,7 +41,7 @@ local function InitializeATTSyncWindow()
 
 	child:SetScript("OnShow", function()
 		local function refresh()
-			syncWindow:Refresh()
+			syncWindow:Update()
 		end
 		RunNextFrame(refresh)
 	end)

@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Settings: General Page
-local child = settings:CreateOptionsPage("General", false)
+local child = settings:CreateOptionsPage("Filters")
 
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
@@ -73,157 +73,20 @@ end
 
 
 -- Top 1
-local logo = child:CreateTexture(nil, "ARTWORK")
-logo:SetPoint("TOPLEFT", child, 0, 0)
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36)
-logo:Show()
-
-local headerTitle = child:CreateHeaderLabel(L["TITLE"])
-headerTitle:SetPoint("CENTER", logo, 0, 0)
-headerTitle:SetPoint("LEFT", logo, "RIGHT", 0, 0)
-headerTitle:SetScale(1.5)
-
-local buttonDiscord = child:CreateButton(
-{ text = L["DISCORD_BUTTON_LABEL"], tooltip = L["DISCORD_BUTTON_TOOLTIP"], },
-{
-	OnClick = function(self)
-		app:ShowPopupDialogWithEditBox(nil, "discord.gg/allthethings", nil, 10)
-	end,
-})
-buttonDiscord:SetPoint("CENTER", headerTitle, 0, 0)
-buttonDiscord:SetPoint("LEFT", headerTitle, "RIGHT", 10, 0)
-
-local buttonTwitch = child:CreateButton(
-{	text = L["TWITCH_BUTTON_LABEL"], tooltip = L["TWITCH_BUTTON_TOOLTIP"], },
-{
-	OnClick = function(self)
-		app:ShowPopupDialogWithEditBox(nil, "twitch.tv/crieve", nil, 10)
-	end,
-})
-buttonTwitch:SetPoint("TOPLEFT", buttonDiscord, "TOPRIGHT", 4, 0)
-
-local buttonPatreon = child:CreateButton(
-{ text = L["PATREON_BUTTON_LABEL"], tooltip = L["PATREON_BUTTON_TOOLTIP"], },
-{
-	OnClick = function(self)
-		app:ShowPopupDialogWithEditBox(nil, "patreon.com/allthethings", nil, 10)
-	end,
-})
-buttonPatreon:SetPoint("TOPLEFT", buttonTwitch, "TOPRIGHT", 4, 0)
-
-local buttonMerch = child:CreateButton(
-{ text = L["MERCH_BUTTON_LABEL"], tooltip = L["MERCH_BUTTON_TOOLTIP"], },
-{
-	OnClick = function(self)
-		app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10)
-	end,
-})
-buttonMerch:SetPoint("TOPLEFT", buttonPatreon, "TOPRIGHT", 4, 0)
-
-local headerVersion = child:CreateHeaderLabel(" ")
-headerVersion:SetPoint("TOPRIGHT", child, "TOPLEFT", 638, 0)
-headerVersion:SetJustifyH("RIGHT")
-headerVersion.OnRefresh = function(self)
-	self:SetText(app.Version)
-end
-
--- Top 2
 local headerMode = child:CreateHeaderLabel("")
-headerMode:SetPoint("LEFT", child, 0, 0)
-headerMode:SetPoint("TOP", logo, "BOTTOM", 0, 0)
+headerMode:SetPoint("TOPLEFT", child, 0, 0)
 headerMode.OnRefresh = function(self)
 	self:SetText(settings:GetModeString())
 end
 
 local textModeExplain = child:CreateTextLabel(L["MODE_EXPLAIN_LABEL"])
 textModeExplain:SetPoint("TOPLEFT", headerMode, "BOTTOMLEFT", 0, -4)
-
-local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
-function(self)
-	self:SetChecked(app.MODE_DEBUG)
-end,
-function(self)
-	settings:SetDebugMode(self:GetChecked())
-end)
-checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
-checkboxDebugMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", -2, -2)
-
-local checkboxAccountMode = child:CreateCheckBox(L["ACCOUNT_MODE"],
-function(self)
-	self:SetChecked(app.MODE_ACCOUNT)
-	if app.MODE_DEBUG then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetAccountMode(self:GetChecked())
-end)
-checkboxAccountMode:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"])
-checkboxAccountMode:AlignBelow(checkboxDebugMode)
-
-local checkboxFactionMode = child:CreateCheckBox(L["FACTION_MODE"],
-function(self)
-	local englishFaction = UnitFactionGroup("player")
-	if englishFaction == "Alliance" then
-		self.Text:SetText(app.ccColors.Alliance..self.Text:GetText())
-	elseif englishFaction == "Horde" then
-		self.Text:SetText(app.ccColors.Horde..self.Text:GetText())
-	else
-		self.Text:SetText(app.ccColors.Default..self.Text:GetText())
-	end
-	self:SetChecked(settings:Get("FactionMode"))
-	if app.MODE_DEBUG or not app.MODE_ACCOUNT then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetFactionMode(self:GetChecked())
-end)
-checkboxFactionMode:SetATTTooltip(L["FACTION_MODE_TOOLTIP"])
-checkboxFactionMode:AlignAfter(checkboxAccountMode)
-
-local checkboxSkipAutoRefresh = child:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
-function(self)
-	self:SetChecked(settings:Get("Skip:AutoRefresh"))
-end,
-function(self)
-	settings:Set("Skip:AutoRefresh", self:GetChecked())
-end)
-checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
-checkboxSkipAutoRefresh:SetPoint("TOPLEFT", checkboxDebugMode, 320, 0)
-settings.checkboxSkipAutoRefresh = checkboxSkipAutoRefresh	-- So the Refresh function can find it
-
-local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:TrackableThings"))
-	if app.MODE_DEBUG then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:Set("Show:TrackableThings", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
-checkboxShowAllTrackableThings:AlignBelow(checkboxSkipAutoRefresh)
+textModeExplain:SetPoint("RIGHT", child, "RIGHT", 0)
 
 -- Column 1
 local headerAccountThings = child:CreateHeaderLabel(L["ACCOUNT_THINGS_LABEL"])
 headerAccountThings:SetPoint("LEFT", headerMode, 0, 0)
-headerAccountThings:SetPoint("TOP", checkboxAccountMode, "BOTTOM", 0, -10)
+headerAccountThings:SetPoint("TOP", textModeExplain, "BOTTOM", 0, -10)
 headerAccountThings.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
@@ -444,8 +307,89 @@ child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts
 	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
 
 -- Column 2
+
+local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
+function(self)
+	self:SetChecked(app.MODE_DEBUG)
+end,
+function(self)
+	settings:SetDebugMode(self:GetChecked())
+end)
+checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
+checkboxDebugMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", 320, -2)
+
+local checkboxAccountMode = child:CreateCheckBox(L["ACCOUNT_MODE"],
+function(self)
+	self:SetChecked(app.MODE_ACCOUNT)
+	if app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetAccountMode(self:GetChecked())
+end)
+checkboxAccountMode:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"])
+checkboxAccountMode:AlignBelow(checkboxDebugMode)
+
+local checkboxFactionMode = child:CreateCheckBox(L["FACTION_MODE"],
+function(self)
+	local englishFaction = UnitFactionGroup("player")
+	if englishFaction == "Alliance" then
+		self.Text:SetText(app.ccColors.Alliance..self.Text:GetText())
+	elseif englishFaction == "Horde" then
+		self.Text:SetText(app.ccColors.Horde..self.Text:GetText())
+	else
+		self.Text:SetText(app.ccColors.Default..self.Text:GetText())
+	end
+	self:SetChecked(settings:Get("FactionMode"))
+	if app.MODE_DEBUG or not app.MODE_ACCOUNT then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetFactionMode(self:GetChecked())
+end)
+checkboxFactionMode:SetATTTooltip(L["FACTION_MODE_TOOLTIP"])
+checkboxFactionMode:AlignAfter(checkboxAccountMode)
+
+local checkboxSkipAutoRefresh = child:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
+function(self)
+	self:SetChecked(settings:Get("Skip:AutoRefresh"))
+end,
+function(self)
+	settings:Set("Skip:AutoRefresh", self:GetChecked())
+end)
+checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
+checkboxSkipAutoRefresh:AlignBelow(checkboxAccountMode)
+
+local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:TrackableThings"))
+	if app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:Set("Show:TrackableThings", self:GetChecked())
+	settings:UpdateMode(1)
+end)
+checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
+checkboxShowAllTrackableThings:AlignBelow(checkboxSkipAutoRefresh)
+
 local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
-headerGeneralContent:SetPoint("TOPLEFT", headerAccountThings, 320, 0)
+headerGeneralContent:SetPoint("TOPLEFT", checkboxShowAllTrackableThings, "BOTTOMLEFT", 0, -8)
 headerGeneralContent.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
@@ -689,347 +633,3 @@ end
 		end
 		previousCheckbox = ccCheckbox
 	end
-
-local headerUnobtainableContent = child:CreateHeaderLabel(L["UNOBTAINABLE_LABEL"])
-headerUnobtainableContent:SetPoint("TOPLEFT", ccCheckbox, "BOTTOMLEFT", 0, -10)	-- Place under the last Automated Content checkbox
-headerUnobtainableContent.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
-
-	local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"]
-
-local checkboxShowAllUnobtainable = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
-	function(self)
-		local anyFiltered = false
-		for k,v in pairs(unobtainables) do
-			if not settings:GetValue("Unobtainable", k) then
-				anyFiltered = true
-				-- ensure the filter is specifically marked as 'false' if it's not enabled
-				settings:SetValue("Unobtainable", k, false)
-			end
-		end
-		self:SetChecked(not anyFiltered)
-		settings:SetValue("Unobtainable", "DoFiltering", anyFiltered)
-		if app.MODE_DEBUG then
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:Enable()
-			self:SetAlpha(1)
-		end
-	end,
-	function(self)
-		local checked = self:GetChecked()
-		for k,v in pairs(unobtainables) do
-			settings:SetValue("Unobtainable", k, checked)
-		end
-		self:OnRefresh();
-		settings:UpdateMode(1)
-	end
-)
-checkboxShowAllUnobtainable:SetPoint("TOPLEFT", headerUnobtainableContent, "BOTTOMLEFT", -2, 0)
-
-local checkboxShowAllNoChance = child:CreateCheckBox(L["NO_CHANCE_ALL"],
-function(self)
-	local anyFiltered = false
-	for k,v in pairs(unobtainables) do
-		if v[1] == 1 then
-			if not settings:GetValue("Unobtainable", k) then
-			anyFiltered = true
-			end
-		end
-	end
-	self:SetChecked(not anyFiltered)
-	if app.MODE_DEBUG then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	local checked = self:GetChecked()
-	for k,v in pairs(unobtainables) do
-		if v[1] == 1 then
-			settings:SetValue("Unobtainable", k, checked)
-		end
-	end
-	checkboxShowAllUnobtainable:OnRefresh();
-	settings:UpdateMode(1)
-end)
-checkboxShowAllNoChance:AlignBelow(checkboxShowAllUnobtainable, 1)
-
-local last = checkboxShowAllNoChance
-local count = 0
-for k,v in pairs(unobtainables) do
-	if v[1] == 1 then
-		local filter = child:CreateCheckBox(v[3],
-		function(self)
-			self:SetChecked(settings:GetValue("Unobtainable", k))
-			if app.MODE_DEBUG then
-				self:Disable()
-				self:SetAlpha(0.4)
-			else
-				self:Enable()
-				self:SetAlpha(1)
-			end
-		end,
-		function(self)
-			settings:SetValue("Unobtainable", k, self:GetChecked())
-			checkboxShowAllUnobtainable:OnRefresh();
-			settings:UpdateMode(1)
-		end)
-		filter:SetATTTooltip(v[2])
-		if count == 0 then
-			filter:AlignBelow(last, 1)
-		else
-			filter:AlignBelow(last)
-		end
-		last = filter
-		count = count + 1
-	end
-end
-
-local checkboxShowAllHighChance = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
-function(self)
-	local anyFiltered = false
-	for k,v in pairs(unobtainables) do
-		if v[1] == 2 or v[1] == 3 then
-			if not settings:GetValue("Unobtainable", k) then
-				anyFiltered = true
-			end
-		end
-	end
-	self:SetChecked(not anyFiltered)
-	if app.MODE_DEBUG then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	local checked = self:GetChecked()
-	for k,v in pairs(unobtainables) do
-		if v[1] == 2 or v[1] == 3 then
-			settings:SetValue("Unobtainable", k, checked)
-		end
-	end
-	checkboxShowAllUnobtainable:OnRefresh();
-	settings:UpdateMode(1)
-end)
-checkboxShowAllHighChance:AlignBelow(last, -1)
-
-last = checkboxShowAllHighChance
-count = 0
-for k,v in pairs(unobtainables) do
-	if v[1] == 2 or v[1] == 3 then
-		local filter = child:CreateCheckBox(v[3],
-		function(self)
-			self:SetChecked(settings:GetValue("Unobtainable", k))
-			if app.MODE_DEBUG then
-				self:Disable()
-				self:SetAlpha(0.4)
-			else
-				self:Enable()
-				self:SetAlpha(1)
-			end
-		end,
-		function(self)
-			settings:SetValue("Unobtainable", k, self:GetChecked())
-			checkboxShowAllUnobtainable:OnRefresh();
-			settings:UpdateMode(1)
-		end)
-		filter:SetATTTooltip(v[2])
-		if count == 0 then
-			filter:AlignBelow(last, 1)
-		else
-			filter:AlignBelow(last)
-		end
-		last = filter
-		count = count + 1
-	end
-end
-
--- Bottom
-local headerWeaponsAndArmor = child:CreateHeaderLabel(L["ITEM_FILTER_LABEL"])
-headerWeaponsAndArmor:SetPoint("LEFT", headerMode, 0, 0)
-headerWeaponsAndArmor:SetPoint("TOP", last, "BOTTOM", 0, -10)	-- Place under the last Unobtainable Content checkbox
-headerWeaponsAndArmor.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
-
-local textWeaponsAndArmorExplain = child:CreateTextLabel(L["ITEM_EXPLAIN_LABEL"])
-textWeaponsAndArmorExplain:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 0, -4)
-textWeaponsAndArmorExplain.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
-
--- Stuff to automatically generate the armor & weapon checkboxes
-local last = headerWeaponsAndArmor
-local itemFilterNames = L["FILTER_ID_TYPES"]
-local ItemFilterOnClick = function(self)
-	settings:SetFilter(self.filterID, self:GetChecked())
-end
-local ItemFilterOnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:SetChecked(settings:GetFilter(self.filterID))
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end
-
--- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords, Daggers, Fist Weapons, Polearms, Warglaives
-local awColumn1 = { 21, 22, 23, 24, 25, 26, 20, 34, 29, 35 }
-for i,filterID in ipairs(awColumn1) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 21 then
-		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", -2, -2)
-	else
-		filter:AlignBelow(last)
-	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
-	last = filter
-end
-
-local allEquipmentFilters = {	-- Filter IDs
-	11,	-- Artifacts
-	2,	-- Cosmetic
-	3,	-- Cloaks
-	10,	-- Shirts
-	9,	-- Tabards
-	33,	-- Crossbows
-	32,	-- Bows
-	31,	-- Guns
-	50,	-- Miscellaneous
-	57,	-- Profession Equipment
-	34,	-- Fist Weapons
-	35,	-- Warglaives
-	27,	-- Wands
-	21,	-- 1H Axes
-	22,	-- 2H Axes
-	23,	-- 1H Maces
-	24,	-- 2H Maces
-	25,	-- 1H Swords
-	26,	-- 2H Swords
-	1,	-- Held in Off-Hand
-	8,	-- Shields
-	4,	-- Cloth
-	5,	-- Leather
-	6,	-- Mail
-	7,	-- Plate
-	20,	-- Daggers
-	29,	-- Polearms
-	28,	-- Staves
-}
-
--- The 3 buttons
-local buttonClassDefaults = child:CreateButton(
-{ text = L["CLASS_DEFAULTS_BUTTON"], tooltip = L["CLASS_DEFAULTS_BUTTON_TOOLTIP"], },
-{
-	OnClick = function(self)
-		for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
-			AllTheThingsSettingsPerCharacter.Filters[key] = nil
-		end
-		settings:UpdateMode(1)
-	end,
-})
-buttonClassDefaults:SetPoint("LEFT", headerMode, 0, 0)
-buttonClassDefaults:SetPoint("TOP", last, "BOTTOM", 0, -10)
-buttonClassDefaults.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
-local buttonAll = child:CreateButton(
-{ text = L["ALL_BUTTON"], tooltip = L["ALL_BUTTON_TOOLTIP"], },
-{
-	OnClick = function(self)
-		for k,v in pairs(allEquipmentFilters) do
-			AllTheThingsSettingsPerCharacter.Filters[v] = true
-		end
-		settings:UpdateMode(1)
-	end,
-})
-buttonAll:SetPoint("TOPLEFT", buttonClassDefaults, "TOPRIGHT", 5, 0)
-buttonAll.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
-local buttonNone = child:CreateButton(
-{ text = L["UNCHECK_ALL_BUTTON"], tooltip = L["UNCHECK_ALL_BUTTON_TOOLTIP"], },
-{
-	OnClick = function(self)
-		for k,v in pairs(allEquipmentFilters) do
-			AllTheThingsSettingsPerCharacter.Filters[v] = false
-		end
-		settings:UpdateMode(1)
-	end,
-})
-buttonNone:SetPoint("TOPLEFT", buttonAll, "TOPRIGHT", 5, 0)
-buttonNone.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
--- Bows, Crossbows, Guns, Staves, Wands, Shields, Off-hands
-local awColumn2 = { 32, 33, 31, 28, 27, 8, 1 }
-for i,filterID in ipairs(awColumn2) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 32 then
-		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", 160, -2)
-	else
-		filter:AlignBelow(last)
-	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
-	last = filter
-end
-
--- Cloth, Leather, Mail, Plate + Cosmetic, Cloak, Shirt, Tabard + Artifacts, Profession Tools
-local awColumn3 = { 4, 5, 6, 7, 2, 3, 10, 9, 11, 57 }
-for i,filterID in ipairs(awColumn3) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 4 then
-		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", 320, -2)
-	-- Spacing
-	elseif filterID == 2 or filterID == 11 then
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 0)
-	else
-		filter:AlignBelow(last)
-	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
-	last = filter
-end

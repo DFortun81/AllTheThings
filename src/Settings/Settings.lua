@@ -3,7 +3,9 @@ local L = app.L
 local Callback = app.CallbackHandlers.Callback;
 
 -- The Settings Frame
-local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate")
+local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer)
+settings:SetAllPoints();
+settings.name = appName;
 app.Settings = settings
 settings.AccountWide = {
 	Achievements = true,
@@ -36,17 +38,8 @@ settings.Collectibles = {
 	Titles = true,
 	Toys = true,
 };
-settings.name = appName;
 settings.Objects = {}
-do	-- Add the ATT Settings frame into the WoW Settings options
-	local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
-	category.ID = settings.name
-	Settings.RegisterAddOnCategory(category)
-	settings.Open = function(self)
-		-- Open the Options menu.
-		Settings.OpenToCategory(self.name)
-	end
-end
+settings:Hide();
 
 -- Settings Class
 local Things = {
@@ -1156,36 +1149,36 @@ end
 
 Mixin(settings, ATTSettingsPanelMixin);
 
--- Create a scrollframe and nested subcategory
-settings.CreateOptionsPage = function(self, name, nested)
-	-- Create the ScrollFrame
-	local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..app.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
-	local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..app.UniqueCounter.AddScrollableframe)
-	Mixin(scrollChild, ATTSettingsPanelMixin);
-	self:RegisterObject(scrollChild);
-	scrollFrame:SetScrollChild(scrollChild)
-	scrollChild:SetWidth(1)	-- This is automatically defined, so long as the attribute exists at all
-	scrollChild:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
-
-	if nested == false then
-		-- Set the scrollFrame to its proper size (only needed for top-level category)
-		scrollFrame:SetPoint("TOPLEFT", 0, 0)
-		scrollFrame:SetPoint("BOTTOMRIGHT", -25, 0)	-- Allow space for the scrollbar
+local RootCategoryID, Categories = appName, {};
+local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
+settings.Open = function(self)
+	openToCategory(RootCategoryID);
+end
+settings.CreateOptionsPage = function(self, text, parentCategory)
+	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
+	Mixin(subcategory, ATTSettingsPanelMixin);
+	self:RegisterObject(subcategory);
+	subcategory:SetAllPoints();
+	
+	if Settings and Settings.RegisterCanvasLayoutCategory then
+		local category;
+		if text == appName then
+			category = Settings.RegisterCanvasLayoutCategory(subcategory, text)
+			RootCategoryID = category.ID;
+			Settings.RegisterAddOnCategory(category);
+		else
+			parentCategory = Categories[parentCategory or appName];
+			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory.category, subcategory, text)
+		end
+		subcategory:Hide();
+		subcategory.category = category;
+	else
+		subcategory.name = text;
+		if text ~= appName then subcategory.parent = parentCategory or appName; end
+		InterfaceOptions_AddCategory(subcategory);
 	end
-
-	if nested == true then
-		-- Move the scrollbar to its proper position (only needed for subcategories)
-		scrollFrame.ScrollBar:ClearPoint("RIGHT")
-		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
-		-- Create the nested subcategory
-		scrollFrame.name = name
-		scrollFrame.parent = "AllTheThings"
-		InterfaceOptions_AddCategory(scrollFrame)
-	end
-
-	-- Return the scrollable child
-	return scrollChild
+	Categories[text] = subcategory;
+	return subcategory;
 end
 
 settings.ShowCopyPasteDialog = function(self)
