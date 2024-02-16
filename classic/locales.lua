@@ -17,6 +17,7 @@ local L = {
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
 	["PERCENTAGES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
+	["CLIPBOARDCOPYPASTE"] = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	
 	["OPEN_MINILIST_FOR"] = "Open mini list for ";
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
@@ -39,7 +40,24 @@ local L = {
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
-
+	
+	-- About tab
+	["ABOUT_PAGE"] = "About";
+	["ABOUT_TOP"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
+	["ABOUT_BOTTOM"] = "Active Contributors: |CFFFFFFFF(in no particular order)\nGold, Dead Serious, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, Jezartroz, Pr3vention, AlexSoft, Jenstonedart\n\n|rHall of Fame: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Avella, Aiue, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
+	["TWITCH_BUTTON_LABEL"] = "Twitch";
+	["CURSEFORGE_BUTTON_LABEL"] = "Curse";
+	["CURSEFORGE_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+	["DISCORD_BUTTON_LABEL"] = "Discord";
+	["PATREON_BUTTON_LABEL"] = "Patreon";
+	["MERCH_BUTTON_LABEL"] = "Merch";
+	["WAGO_BUTTON_LABEL"] = "Wago.io";
+	["WAGO_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
+	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
+	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
+	["MERCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
+	
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r";

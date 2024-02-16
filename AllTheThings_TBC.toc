@@ -98,10 +98,11 @@ src\Expansions\Legion.lua
 src\Expansions\Battle For Azeroth.lua
 src\Expansions\Shadowlands.lua
 
+# Load the Settings Menu
+src\Settings\Classic Settings.xml
+
 # Load primary addon source files
-# Settings.lua
 # AllTheThings.lua
-classic\Settings.lua
 classic\ATT-Classic.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua

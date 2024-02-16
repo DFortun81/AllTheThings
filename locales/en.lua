@@ -90,6 +90,7 @@ local L = {
 	["MIN_MAX_STANDING"] = "Requires a standing between";
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
+	["CLIPBOARDCOPYPASTE"] = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
 	["LAYER"] = "Layer";

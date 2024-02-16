@@ -109,9 +109,7 @@ local buttonClassDefaults = child:CreateButton(
 { text = L["CLASS_DEFAULTS_BUTTON"], tooltip = L["CLASS_DEFAULTS_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
-		for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
-			AllTheThingsSettingsPerCharacter.Filters[key] = nil
-		end
+		wipe(AllTheThingsSettingsPerCharacter.Filters);
 		settings:UpdateMode(1)
 	end,
 })

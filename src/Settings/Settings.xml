@@ -1,6 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 	<Script file="Settings.lua"/>
+	<Script file="Retail Settings.lua"/>
 	<Script file="Pages/About.lua"/>
 	<Script file="Pages/Filters.lua"/>
 	<Script file="Pages/Filters - Weapons &amp; Armor.lua"/>
