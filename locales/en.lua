@@ -361,9 +361,13 @@ local L = {
 
 	["GENERAL_CONTENT"] = "General Content";
 	["TWITCH_BUTTON_LABEL"] = "Twitch";
+	["CURSEFORGE_BUTTON_LABEL"] = "Curse";
+	["CURSEFORGE_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
 	["DISCORD_BUTTON_LABEL"] = "Discord";
 	["PATREON_BUTTON_LABEL"] = "Patreon";
 	["MERCH_BUTTON_LABEL"] = "Merch";
+	["WAGO_BUTTON_LABEL"] = "Wago.io";
+	["WAGO_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
 	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
 	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
 	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
