@@ -173,7 +173,141 @@ i(215370, 435848);	-- Invoker's Mantle
 i(211247, 428424);	-- Phoenix Bindings
 -- #endif
 
+-------------------
+--- PATCH 2.0.1 ---
+-------------------
+--- TRAINER ---
+i(0, 26745);	-- Bolt of Netherweave
+i(0, 26746);	-- Netherweave Bag
+i(0, 26765);	-- Netherweave Belt
+i(0, 26772);	-- Netherweave Boots
+i(0, 26764);	-- Netherweave Bracers
+i(0, 26770);	-- Netherweave Gloves
+i(0, 31460);	-- Netherweave Net
+i(0, 26771);	-- Netherweave Pants
+--- ITEM ---
+i(21907, 26784);	-- Arcanoweave Robe
+i(24314, 31459);	-- Bag of Jewels
+i(24313, 31456);	-- Battlecast Hood
+i(24310, 31453);	-- Battlecast Pants
+i(21892, 26747);	-- Bolt of Imbued Netherweave
+i(21894, 26750);	-- Bolt of Soulcloth
+i(24297, 31435);	-- Bracers of Havok
+i(30833, 37873);	-- Cloak of Arcane Evasion
+i(24299, 31438);	-- Cloak of the Black Void
+i(30842, 37882);	-- Flameheart Bracers
+i(30843, 37883);	-- Flameheart Gloves
+i(30844, 37884);	-- Flameheart Vest
+i(24295, 31433);	-- Golden Spellthread
+i(21893, 26749);	-- Imbued Netherweave Bag
+i(21899, 26776);	-- Imbued Netherweave Boots
+i(21898, 26775);	-- Imbued Netherweave Pants
+i(21900, 26777);	-- Imbued Netherweave Robe
+i(21901, 26778);	-- Imbued Netherweave Tunic
+i(24292, 31430);	-- Mystic Spellthread
+i(21896, 26773);	-- Netherweave Robe
+i(21897, 26774);	-- Netherweave Tunic
+i(21895, 26751);	-- Primal Mooncloth
+i(21919, 26763);	-- Primal Mooncloth Bag
+i(21916, 26760);	-- Primal Mooncloth Belt
+i(21917, 26762);	-- Primal Mooncloth Robe
+i(21918, 26761);	-- Primal Mooncloth Shoulders
+i(24305, 31448);	-- Resolute Cape
+i(24294, 31432);	-- Runic Spellthread
+i(30483, 36686);	-- Shadowcloth
+i(24293, 31431);	-- Silver Spellthread
+i(24316, 31373);	-- Spellcloth
+i(21911, 26755);	-- Spellfire Bag
+i(24296, 31434);	-- Unyielding Bracers
+i(35309, 31442);	-- Unyielding Girdle
+i(24306, 31449);	-- Vengeance Wrap
+i(24301, 31441);	-- White Remedy Cape
+--- NYI ---
+i(24315, 31461);	-- Heavy Netherweave Net
+i(0, 36670);		-- Lifeblood Belt
+i(30474, 36672);	-- Lifeblood Bracers
+i(30472, 36669);	-- Lifeblood Leggings
+i(0, 36667);		-- Netherflame Belt
+i(30471, 36668);	-- Netherflame Boots
+i(30469, 36665);	-- Netherflame Robe
 
+-------------------
+--- PATCH 2.0.3 ---
+-------------------
+--- TRAINER ---
+i(0, 26798);	-- Mooncloth Tailoring [REMOVED 4.0.1]
+i(0, 26801);	-- Shadoweave Tailoring [REMOVED 4.0.1]
+i(0, 26797);	-- Spellfire Tailoring [REMOVED 4.0.1]
+i(0, 26790);	-- Tailoring (Master) [REMOVED 8.0.1]
+--- ITEM ---
+i(21906, 26783);	-- Arcanoweave Boots
+i(21905, 26782);	-- Arcanoweave Bracers
+i(30280, 36315);	-- Belt of Blasting
+i(24304, 31444);	-- Black Belt of Knowledge
+i(24298, 31437);	-- Blackstrike Bracers
+i(30282, 36317);	-- Boots of Blasting
+i(24300, 31440);	-- Cloak of Eternity
+i(21915, 26759);	-- Ebon Shadowbag
+i(21914, 26757);	-- Frozen Shadoweave Boots
+i(21913, 26758);	-- Frozen Shadoweave Robe
+i(21912, 26756);	-- Frozen Shadoweave Shoulders
+i(24303, 31443);	-- Girdle of Ruination
+i(24307, 31450);	-- Manaweave Cloak
+i(21908, 26752);	-- Spellfire Belt
+i(21909, 26753);	-- Spellfire Gloves
+i(21910, 26754);	-- Spellfire Robe
+i(24312, 31455);	-- Spellstrike Hood
+i(24309, 31452);	-- Spellstrike Pants
+i(21902, 26779);	-- Soulcloth Gloves
+i(21903, 26780);	-- Soulcloth Shoulders
+i(21904, 26781);	-- Soulcloth Vest
+i(24311, 31454);	-- Whitemend Hood
+i(24308, 31451);	-- Whitemend Pants
+
+-------------------
+--- PATCH 2.1.0 ---
+-------------------
+--- ITEM ---
+i(30281, 36316);	-- Belt of the Long Road
+i(30283, 36318);	-- Boots of the Long Road
+i(32754, 41205);	-- Bracers of Nimble Thought
+i(32755, 41206);	-- Mantle of Nimble Thought
+i(32447, 40060);	-- Night's End
+i(32438, 40021);	-- Soulguard Bracers
+i(32440, 40024);	-- Soulguard Girdle
+i(32439, 40023);	-- Soulguard Leggings
+i(32437, 40020);	-- Soulguard Slippers
+i(32753, 41208);	-- Swiftheal Mantle
+i(32752, 41207);	-- Swiftheal Wraps
+
+-------------------
+--- PATCH 2.3.0 ---
+-------------------
+--- ITEM ---
+i(34261, 44950);	-- Green Winter Clothes
+i(34319, 44958);	-- Red Winter Clothes
+
+-------------------
+--- PATCH 2.4.0 ---
+-------------------
+--- ITEM ---
+i(35205, 46129);	-- Hands of Eternal Light
+i(35207, 46131);	-- Robe of Eternal Light
+i(35204, 46128);	-- Sunfire Handwraps
+i(35206, 46130);	-- Sunfire Robe
+
+-------------------
+--- PATCH 2.4.2 ---
+-------------------
+--- ITEM ---
+i(37915, 49677);	-- Dress Shoes
+i(38327, 50644);	-- Haliscan Jacket
+i(38328, 50647);	-- Haliscan Pantaloons
+
+-------------------
+--- PATCH 2.4.3 ---
+-------------------
+i(38229, 50194);	-- Mycah's Botanical Bag
 
 -----------------
 -- PATCH 9.0.1 --
