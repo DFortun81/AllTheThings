@@ -1665,6 +1665,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(212466),	-- Copy of Losses of the Third War
 					i(212464),	-- Copy of Kirin Tor Monthly (November Issue)
 					i(212475),	-- Copy of The Archmage Antonidas - Part III
+					i(212476),	-- Copy of The Dangers of Magic Abuse
 					i(212472),	-- Copy of The Fluffy Bunny
 					i(212471),	-- Copy of the Journal of Archmage Antonidas
 					i(212477),	-- Copy of The Schools of Arcane Magic - Introduction

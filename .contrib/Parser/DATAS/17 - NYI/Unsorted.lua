@@ -728,7 +728,6 @@ root(ROOTS.Unsorted, {
 				i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
 				i(212473),	-- Copy of The Archmage Antonidas - Part I
 				i(212474),	-- Copy of The Archmage Antonidas - Part II
-				i(212476),	-- Copy of The Dangers of Magic Abuse
 				i(212459),	-- Copy of The Old Wizard's Almanac
 				i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
 				i(212480),	-- Copy of The Schools of Arcane Magic - Divination
