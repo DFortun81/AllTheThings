@@ -1261,8 +1261,16 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.Group(true)
 		filterSet.DefaultGroup(true)
 		filterSet.DefaultThing(true)
-		-- specifically hiding something
-		if settings:GetValue("Unobtainable", "DoFiltering") then
+		
+		-- Check for any unobtainable filters.
+		local anyFiltered = false
+		for u,v in pairs(L.UNOBTAINABLE_ITEM_REASONS) do
+			if not settings:GetUnobtainable(u) then
+				anyFiltered = true;
+				break;
+			end
+		end
+		if anyFiltered then
 			filterSet.Unobtainable(true)
 		else
 			filterSet.Unobtainable()

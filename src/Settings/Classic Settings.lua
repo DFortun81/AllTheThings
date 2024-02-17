@@ -862,15 +862,16 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.Group(true)
 		filterSet.DefaultGroup(true)
 		filterSet.DefaultThing(true)
-		-- specifically hiding something
+		
+		-- Check for any inactive unobtainable filters.
 		local anyFiltered = false
-		for k,v in pairs(L.UNOBTAINABLE_ITEM_REASONS) do
-			if not ATTClassicSettings.Unobtainable[k] then
+		for u,v in pairs(L.UNOBTAINABLE_ITEM_REASONS) do
+			if not settings:GetUnobtainable(u) then
 				anyFiltered = true;
 				break;
 			end
 		end
-		if settings:GetValue("Unobtainable", "DoFiltering") then
+		if anyFiltered then
 			filterSet.Unobtainable(true)
 		else
 			filterSet.Unobtainable()
