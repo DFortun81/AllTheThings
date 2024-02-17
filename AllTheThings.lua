@@ -2511,6 +2511,10 @@ local TooltipSourceFields = {
 local InitialCachedSearch;
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
+	if not method then
+		print("GetSearchResults: Invalid method: nil");
+		return nil, true;
+	end
 	if not paramA then
 		print("GetSearchResults: Invalid paramA: nil");
 		return nil, true;
@@ -8859,7 +8863,7 @@ function app:CreateMiniListForGroup(group)
 			if not group.g and not group.criteriaID and app.ThingKeys[key] then
 				local cmd = group.link or key .. ":" .. group[key];
 				app.SetSkipLevel(2);
-				local groupSearch = app.GetCachedSearchResults(SearchForLink, cmd);
+				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd);
 				app.SetSkipLevel(0);
 
 				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
@@ -8904,7 +8908,7 @@ function app:CreateMiniListForGroup(group)
 		--	-- make a search for this group if it is an item/currency and not already a container for things
 		-- 	if not group.g and (group.itemID or group.currencyID) then
 		-- 		local cmd = group.key .. ":" .. group[group.key];
-		-- 		group = app.GetCachedSearchResults(SearchForLink, cmd);
+		-- 		group = app.GetCachedSearchResults(app.SearchForLink, cmd);
 		-- 	else
 		-- 		group = CreateObject(group);
 		-- 	end
