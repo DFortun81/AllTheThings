@@ -95,30 +95,30 @@ for i,u in ipairs(UnobtainableFilters) do
 end
 
 
-
-local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"])
-headerAutomatedContent:SetPoint("TOP", headerUnobtainableContent, "TOP", 0, 0)
-headerAutomatedContent:SetPoint("LEFT", headerUnobtainableContent, 320, 0)
-headerAutomatedContent.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
-
-local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
-textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
-textAutomatedContentExplain:SetWidth(320)
-textAutomatedContentExplain.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
-
+-- Automated Content Section
 if app.GameBuildVersion > 90000 then
+	local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"])
+	headerAutomatedContent:SetPoint("TOP", headerUnobtainableContent, "TOP", 0, 0)
+	headerAutomatedContent:SetPoint("LEFT", headerUnobtainableContent, 320, 0)
+	headerAutomatedContent.OnRefresh = function(self)
+		if app.MODE_DEBUG then
+			self:SetAlpha(0.4)
+		else
+			self:SetAlpha(1)
+		end
+	end
+
+	local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
+	textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
+	textAutomatedContentExplain:SetWidth(320)
+	textAutomatedContentExplain.OnRefresh = function(self)
+		if app.MODE_DEBUG then
+			self:SetAlpha(0.4)
+		else
+			self:SetAlpha(1)
+		end
+	end
+	
 	-- Automated Content toggles
 	local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"]
 	local previousCheckbox = textAutomatedContentExplain
