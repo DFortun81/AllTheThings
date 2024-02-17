@@ -114,10 +114,10 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(55849),	-- Leggings of Iridescent Clouds
 						i(55842),	-- Legguards of Winnowing Wind
 						i(55846),	-- Lightningflash
-						i(55853),	-- Lunar Halo
+						i(55848),	-- Lunar Halo
 						i(55851),	-- Ring of Frozen Rain
 						i(55850),	-- Shadow of Perfect Bliss
-						i(55848),	-- Thundercall
+						i(55853),	-- Thundercall
 					},
 				}),
 			})),
@@ -223,6 +223,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 							i(56374),	-- Lunar Halo
 							i(56373),	-- Ring of Frozen Rain
 							i(56371),	-- Shadow of Perfect Bliss
+							i(56376),	-- Thundercall
 						},
 					}),
 				},
@@ -234,9 +235,6 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						ach(5064),	-- Heroic: The Vortex Pinnacle
 						ach(5137),	-- Heroic: The Vortex Pinnacle Guild Run
 						ach(5288),	-- No Static at All
-						i(56376, {	-- Thundercall
-							["timeline"] = { REMOVED_7_3_5 },
-						}),
 					},
 				}),
 			}),

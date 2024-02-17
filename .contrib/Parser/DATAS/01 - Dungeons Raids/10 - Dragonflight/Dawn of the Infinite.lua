@@ -158,6 +158,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(6682),	-- Death Speaker Robes				(Removed)
 			ig(134784),	-- Entrenched Raiment				(Removed)
 			ig(134722),	-- Icyweave Robes					(Removed)
+			ig(21040),	-- Narain's Robe					(Removed)
 			ig(14150),	-- Robe of Evocation				(Removed)
 			ig(134751),	-- Veiled Raiment					(Removed)
 
@@ -379,6 +380,8 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Bow completed.",
 			["collectible"] = false,
 		}),
+		ig(5748),	-- Centaur Longbow						(NYI)
+		ig(204674),	-- Cursed Demonbone Longbow				(NYI)
 		ig(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
 			["bonusID"] = 451,
 		}),
@@ -405,7 +408,11 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
 		ig(134749),	-- Covert Rifle							(Removed)
-		ig(56376),	-- Thundercall							(Removed)
+		
+		-- TODO: This does not work, idk why and have no time to fix this now
+		ig(55853, {	-- Thundercall							(Removed)
+			["modID"] = 1,
+		}),
 	}),
 	i(208125, {	-- Quantum Focus
 		q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
@@ -543,6 +550,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(18303),	-- Nimble Buckler						(NYI)
 		ig(108242),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(108243),	-- Peerless Draenic Steel Bulwark		(NYI)
+		ig(108244),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(108245),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(3988),	-- Plate Wall Shield					(NYI)
 		ig(3991),	-- Plated Buckler						(NYI)

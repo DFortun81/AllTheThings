@@ -10,7 +10,6 @@ root(ROOTS.NeverImplemented, {
 				i(20313),	-- 63 Green Rogue Bow
 				i(20278),	-- 90 Epic Rogue Bow
 				i(20299),	-- 90 Green Rogue Bow
-				i(5748),	-- Centaur Longbow
 				i(20368),	-- Bland Bow of Steadiness
 				i(19868),	-- Mandokir's Sting DEPRECATED
 				i(19966),	-- Thrice Strung Longbow DEPRECATED
@@ -22,11 +21,6 @@ root(ROOTS.NeverImplemented, {
 					i(189127),	-- 10.0 QRP Template <Descriptor> Longbow
 					i(189346),	-- 10.0 Zone Uncommon Template <Descriptor> Longbow
 				}),
-
-				-- 10.0.7
-				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
-					i(204674),	-- Cursed Demonbone Longbow
-				})),
 			}),
 		}),
 		filter(CROSSBOWS, {
