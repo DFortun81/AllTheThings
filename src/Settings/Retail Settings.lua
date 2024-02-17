@@ -485,9 +485,6 @@ end
 settings.GetValue = function(self, container, setting)
 	return RawSettings[container][setting]
 end
-settings.GetUnobtainable = function(self, u)
-	return not u or RawSettings.Unobtainable[u]
-end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID]
 end
@@ -706,6 +703,13 @@ end
 settings.SetPersonal = function(self, setting, value)
 	AllTheThingsSettingsPerCharacter[setting] = value
 	self:Refresh()
+end
+settings.GetUnobtainableFilter = function(self, u)
+	return not u or RawSettings.Unobtainable[u]
+end
+settings.SetUnobtainableFilter = function(self, u, value)
+	self:SetValue("Unobtainable", u, value)
+	self:UpdateMode(1);
 end
 
 local Callback = app.CallbackHandlers.Callback;
@@ -1193,13 +1197,6 @@ settings.ToggleBOEItems = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"))
 end
-settings.GetUnobtainableFilter = function(self, u)
-	return self:GetValue("Unobtainable", u)
-end
-settings.SetUnobtainableFilter = function(self, u, value)
-	self:SetValue("Unobtainable", u, value)
-	self:UpdateMode(1);
-end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
 -- so force it always
 settings.ForceRefreshFromToggle = function(self)
@@ -1265,7 +1262,7 @@ settings.UpdateMode = function(self, doRefresh)
 		-- Check for any inactive unobtainable filters.
 		local anyFiltered = false
 		for u,v in pairs(L.UNOBTAINABLE_ITEM_REASONS) do
-			if not settings:GetUnobtainable(u) then
+			if not settings:GetUnobtainableFilter(u) then
 				anyFiltered = true;
 				break;
 			end

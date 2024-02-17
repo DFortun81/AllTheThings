@@ -79,6 +79,11 @@ if child.separator then
 else
 	headerMode:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
+if child.separator then
+	headerMode:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerMode:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 headerMode.OnRefresh = function(self)
 	self:SetText(settings:GetModeString())
 end
@@ -87,10 +92,64 @@ local textModeExplain = child:CreateTextLabel(L["MODE_EXPLAIN_LABEL"])
 textModeExplain:SetPoint("TOPLEFT", headerMode, "BOTTOMLEFT", 0, -4)
 textModeExplain:SetPoint("RIGHT", child, "RIGHT", 0)
 
+
+
 -- Column 1
+local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
+function(self)
+	self:SetChecked(app.MODE_DEBUG)
+end,
+function(self)
+	settings:SetDebugMode(self:GetChecked())
+end)
+checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
+checkboxDebugMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", 0, -2)
+
+local checkboxAccountMode = child:CreateCheckBox(L["ACCOUNT_MODE"],
+function(self)
+	self:SetChecked(app.MODE_ACCOUNT)
+	if app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetAccountMode(self:GetChecked())
+end)
+checkboxAccountMode:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"])
+checkboxAccountMode:AlignBelow(checkboxDebugMode)
+
+local checkboxFactionMode = child:CreateCheckBox(L["FACTION_MODE"],
+function(self)
+	local englishFaction = UnitFactionGroup("player")
+	if englishFaction == "Alliance" then
+		self.Text:SetText(app.ccColors.Alliance..self.Text:GetText())
+	elseif englishFaction == "Horde" then
+		self.Text:SetText(app.ccColors.Horde..self.Text:GetText())
+	else
+		self.Text:SetText(app.ccColors.Default..self.Text:GetText())
+	end
+	self:SetChecked(settings:Get("FactionMode"))
+	if app.MODE_DEBUG or not app.MODE_ACCOUNT then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetFactionMode(self:GetChecked())
+end)
+checkboxFactionMode:SetATTTooltip(L["FACTION_MODE_TOOLTIP"])
+checkboxFactionMode:AlignAfter(checkboxAccountMode)
+
 local headerAccountThings = child:CreateHeaderLabel(L["ACCOUNT_THINGS_LABEL"])
 headerAccountThings:SetPoint("LEFT", headerMode, 0, 0)
-headerAccountThings:SetPoint("TOP", textModeExplain, "BOTTOM", 0, -10)
+headerAccountThings:SetPoint("TOP", checkboxFactionMode, "BOTTOM", 0, -10)
 headerAccountThings.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
@@ -269,101 +328,7 @@ local checkboxTitles =
 child:CreateTrackingCheckbox("TITLES", "Titles")
 	:AlignAfter(accwideCheckboxTitles)
 
-local headerExpansionThings = child:CreateHeaderLabel(L["EXPANSION_THINGS_LABEL"])
-headerExpansionThings:SetPoint("LEFT", headerMode, 0, 0)
-headerExpansionThings:SetPoint("TOP", checkboxTitles, "BOTTOM", 0, -10)
-headerExpansionThings.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
-
-local accwideCheckboxMusicRollsAndSelfieFilters =
-child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-	:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
-accwideCheckboxMusicRollsAndSelfieFilters:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
-
-local accwideCheckboxAzeriteEssences =
-child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
-	:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
-child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
-	:AlignAfter(accwideCheckboxAzeriteEssences)
-
-local accwideCheckboxConduits =
-child:CreateAccountWideCheckbox("SOULBINDCONDUITS", "Conduits")
-	:AlignBelow(accwideCheckboxAzeriteEssences)
-child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits")
-	:AlignAfter(accwideCheckboxConduits)
-
-local accwideCheckboxRunecarvingPowers =
-child:CreateForcedAccountWideCheckbox()
-	:AlignBelow(accwideCheckboxConduits)
-child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
-	:AlignAfter(accwideCheckboxRunecarvingPowers)
-
-local accwideCheckboxDrakewatcherManuscripts =
-child:CreateForcedAccountWideCheckbox()
-	:AlignBelow(accwideCheckboxRunecarvingPowers)
-child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
-	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
-
 -- Column 2
-
-local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
-function(self)
-	self:SetChecked(app.MODE_DEBUG)
-end,
-function(self)
-	settings:SetDebugMode(self:GetChecked())
-end)
-checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
-checkboxDebugMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", 320, -2)
-
-local checkboxAccountMode = child:CreateCheckBox(L["ACCOUNT_MODE"],
-function(self)
-	self:SetChecked(app.MODE_ACCOUNT)
-	if app.MODE_DEBUG then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetAccountMode(self:GetChecked())
-end)
-checkboxAccountMode:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"])
-checkboxAccountMode:AlignBelow(checkboxDebugMode)
-
-local checkboxFactionMode = child:CreateCheckBox(L["FACTION_MODE"],
-function(self)
-	local englishFaction = UnitFactionGroup("player")
-	if englishFaction == "Alliance" then
-		self.Text:SetText(app.ccColors.Alliance..self.Text:GetText())
-	elseif englishFaction == "Horde" then
-		self.Text:SetText(app.ccColors.Horde..self.Text:GetText())
-	else
-		self.Text:SetText(app.ccColors.Default..self.Text:GetText())
-	end
-	self:SetChecked(settings:Get("FactionMode"))
-	if app.MODE_DEBUG or not app.MODE_ACCOUNT then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetFactionMode(self:GetChecked())
-end)
-checkboxFactionMode:SetATTTooltip(L["FACTION_MODE_TOOLTIP"])
-checkboxFactionMode:AlignAfter(checkboxAccountMode)
-
 local checkboxSkipAutoRefresh = child:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
 function(self)
 	self:SetChecked(settings:Get("Skip:AutoRefresh"))
@@ -372,7 +337,8 @@ function(self)
 	settings:Set("Skip:AutoRefresh", self:GetChecked())
 end)
 checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
-checkboxSkipAutoRefresh:AlignBelow(checkboxAccountMode)
+checkboxSkipAutoRefresh:SetPoint("TOP", checkboxDebugMode, "TOP", 0, 0)
+checkboxSkipAutoRefresh:SetPoint("LEFT", textModeExplain, "LEFT", 320, 0)
 
 local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
 function(self)
@@ -393,7 +359,8 @@ checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_
 checkboxShowAllTrackableThings:AlignBelow(checkboxSkipAutoRefresh)
 
 local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
-headerGeneralContent:SetPoint("TOPLEFT", checkboxShowAllTrackableThings, "BOTTOMLEFT", 0, -8)
+headerGeneralContent:SetPoint("TOP", headerAccountThings, "TOP", 0, 0)
+headerGeneralContent:SetPoint("LEFT", checkboxShowAllTrackableThings, "LEFT", 0, 0)
 headerGeneralContent.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
@@ -532,3 +499,46 @@ local checkboxShowUnavailablePersonalLoot = child:CreateCheckBox(L["SHOW_UNAVAIL
 	end)
 checkboxShowUnavailablePersonalLoot:SetATTTooltip(L["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP"])
 checkboxShowUnavailablePersonalLoot:AlignBelow(checkboxShowPvP)
+
+
+
+local headerExpansionThings = child:CreateHeaderLabel(L["EXPANSION_THINGS_LABEL"])
+headerExpansionThings:SetPoint("LEFT", headerGeneralContent, 0, 0)
+headerExpansionThings:SetPoint("TOP", headerGeneralThings, "TOP", 0, 0)
+headerExpansionThings.OnRefresh = function(self)
+	if app.MODE_DEBUG then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
+
+local accwideCheckboxMusicRollsAndSelfieFilters =
+child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+	:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
+accwideCheckboxMusicRollsAndSelfieFilters:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
+
+local accwideCheckboxAzeriteEssences =
+child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
+	:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
+child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
+	:AlignAfter(accwideCheckboxAzeriteEssences)
+
+local accwideCheckboxConduits =
+child:CreateAccountWideCheckbox("SOULBINDCONDUITS", "Conduits")
+	:AlignBelow(accwideCheckboxAzeriteEssences)
+child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits")
+	:AlignAfter(accwideCheckboxConduits)
+
+local accwideCheckboxRunecarvingPowers =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxConduits)
+child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
+	:AlignAfter(accwideCheckboxRunecarvingPowers)
+
+local accwideCheckboxDrakewatcherManuscripts =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxRunecarvingPowers)
+child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
+	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)

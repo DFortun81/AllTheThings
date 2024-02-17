@@ -866,7 +866,7 @@ settings.UpdateMode = function(self, doRefresh)
 		-- Check for any inactive unobtainable filters.
 		local anyFiltered = false
 		for u,v in pairs(L.UNOBTAINABLE_ITEM_REASONS) do
-			if not settings:GetUnobtainable(u) then
+			if not settings:GetUnobtainableFilter(u) then
 				anyFiltered = true;
 				break;
 			end
