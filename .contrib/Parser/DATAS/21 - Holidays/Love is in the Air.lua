@@ -2935,6 +2935,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			-- #endif
 		},
 	}),
+	prof(FISHING, {
+		i(211383, {	-- Luvkip
+			["description"] = "Fished in Olivia's pond during event.",
+			["timeline"] = { ADDED_10_2_5 },
+		}),
+	}),
 })));
 
 for i,o in ipairs({

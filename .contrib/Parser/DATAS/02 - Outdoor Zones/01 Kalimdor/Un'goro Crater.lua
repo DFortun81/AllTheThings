@@ -1435,6 +1435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24694, {	-- The Shaper's Terrace
 					["qg"] = 38504,	-- Un'Goro Examinant
 					["sourceQuests"] = {
+						24720,	-- Crystals of Power (Reported on Discord 16-Feb-2024)
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon

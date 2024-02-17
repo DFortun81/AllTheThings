@@ -733,7 +733,6 @@ root(ROOTS.Unsorted, {
 				i(212784),	-- Destroyed Relic
 				i(212467),	-- Discarded Advertisement
 				i(212608),	-- Duck Potion
-				i(211383),	-- Luvkip
 			}),
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
