@@ -2,15 +2,42 @@ local _, app = ...;
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: Features Page
-local child = settings:CreateOptionsPage(L["FEATURES_PAGE"], nil, true)
+local child = settings:CreateOptionsPage(L["FEATURES_PAGE"])
 
 -- Column 1
-local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
+local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])
 if child.separator then
-	headerMinimapButton:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+	headerChatCommands:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
-	headerMinimapButton:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+	headerChatCommands:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
+
+local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
+textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)
+textChatCommands:SetWidth(320)
+
+
+-- Column 2
+local headerIconLegend = child:CreateHeaderLabel(L["ICON_LEGEND_LABEL"])
+headerIconLegend:SetPoint("TOPLEFT", headerChatCommands, 320, 0)
+
+local textIconLegend = child:CreateTextLabel(L["ICON_LEGEND_TEXT"])
+textIconLegend:SetPoint("TOPLEFT", headerIconLegend, "BOTTOMLEFT", 0, -4)
+textIconLegend:SetWidth(320)
+
+local headerKeybindings = child:CreateHeaderLabel(L["KEYBINDINGS"])
+headerKeybindings:SetPoint("TOPLEFT", textIconLegend, "BOTTOMLEFT", 0, -15)
+
+local textKeybindings = child:CreateTextLabel(app.Modules.Color.Colorize(L["KEYBINDINGS_TEXT"], app.Colors.White))
+textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
+textKeybindings:SetWidth(320)
+
+
+
+
+local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
+headerMinimapButton:SetPoint("TOPLEFT", textKeybindings, "BOTTOMLEFT", 0, -15)
+
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
@@ -192,27 +219,3 @@ function(self)
 end)
 checkboxShowAHModule:SetATTTooltip(L["AUCTION_TAB_CHECKBOX_TOOLTIP"])
 checkboxShowAHModule:AlignBelow(checkboxAutomaticallyOpenWorldQuestList)
-
--- Column 2
-local headerIconLegend = child:CreateHeaderLabel(L["ICON_LEGEND_LABEL"])
-headerIconLegend:SetPoint("TOPLEFT", headerMinimapButton, 320, 0)
-
-local textIconLegend = child:CreateTextLabel(L["ICON_LEGEND_TEXT"])
-textIconLegend:SetPoint("TOPLEFT", headerIconLegend, "BOTTOMLEFT", 0, -4)
-textIconLegend:SetWidth(320)
-
-local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])
-headerChatCommands:SetPoint("LEFT", headerIconLegend, 0, 0)
-headerChatCommands:SetPoint("TOP", textIconLegend, "BOTTOM", 0, -15)
-
-local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
-textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)
-textChatCommands:SetWidth(320)
-
-local headerKeybindings = child:CreateHeaderLabel(L["KEYBINDINGS"])
-headerKeybindings:SetPoint("LEFT", headerChatCommands, 0, 0)
-headerKeybindings:SetPoint("TOP", textChatCommands, "BOTTOM", 0, -15)
-
-local textKeybindings = child:CreateTextLabel(app.Modules.Color.Colorize(L["KEYBINDINGS_TEXT"], app.Colors.White))
-textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
-textKeybindings:SetWidth(320)
