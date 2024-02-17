@@ -1468,13 +1468,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37172,	-- Detective Snip Snagglebolt
 				["coord"] = { 41.6, 17.7, DUROTAR },
 				["races"] = HORDE_ONLY,
-				["groups"] = { i(LOVE_TOKEN) },
+				["groups"] = {
+					i(LOVE_TOKEN),
+					i(211778),	-- O.D.I.E.'s Remote Control (QI!)
+				},
 			}),
 			q(78983, {	-- An Unwelcome Gift (H)
 				["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
 				["sourceQuest"] = 78982,	-- I Smell Trouble (H)
 				["races"] = HORDE_ONLY,
-				["groups"] = { i(LOVE_TOKEN) },
+				["groups"] = {
+					i(LOVE_TOKEN),
+					i(211781),	-- O.D.I.E.'s Remote Control (QI!)
+				},
 			}),
 			q(78978, {	-- Raising a Stink (H)
 				["qg"] = 214707,	-- Detective Snip Snagglebolt (portable version)
@@ -1657,17 +1663,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(212468),	-- Copy of Blinking Rules & Regulations
 					i(212465),	-- Copy of Bundle of Romantic Correspondences
 					i(212463),	-- Copy of Common / Orcish Dictionary
+					i(212460),	-- Copy of Excerpts from the Journal of Archmage Vargoth
 					i(212469),	-- Copy of Polymorphic Rules & Regulations
 					i(212473),	-- Copy of The Archmage Antonidas - Part I
 					i(212474),	-- Copy of The Archmage Antonidas - Part II
 					i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
 					i(212489),	-- Copy of a Damaged Apprentice Journal
 					i(212466),	-- Copy of Losses of the Third War
+					i(212461),	-- Copy of Kirin Tor Monthly (March Issue)
 					i(212464),	-- Copy of Kirin Tor Monthly (November Issue)
 					i(212475),	-- Copy of The Archmage Antonidas - Part III
 					i(212476),	-- Copy of The Dangers of Magic Abuse
 					i(212472),	-- Copy of The Fluffy Bunny
 					i(212471),	-- Copy of the Journal of Archmage Antonidas
+					i(212459),	-- Copy of The Old Wizard's Almanac
 					i(212477),	-- Copy of The Schools of Arcane Magic - Introduction
 					i(212478),	-- Copy of The Schools of Arcane Magic - Abjuration
 					i(212480),	-- Copy of The Schools of Arcane Magic - Divination
@@ -1678,7 +1687,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(212485),	-- Copy of Weathered Diary - Dates from the Third War
 					i(3899),	-- Legends of the Gurubashi, Volume 3
 					i(142250),	-- Aegwynn and the Dragon Hunt
+					i(145306),	-- Archimonde's Return and the Flight to Kalimdor
 					i(145278),	-- Beyond the Dark Portal
+					i(145282),	-- Charge of the Dragonflights
 					i(145309),	-- Civil War in the Plaguelands
 					i(145313),	-- Empires' Fall
 					i(145286),	-- Exile of the High Elves
@@ -1688,8 +1699,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(145280),	-- Sargeras and the Betrayal
 					i(145298),	-- The Alliance of Lordaeron
 					i(145300),	-- The Battle of Grim Batol
+					i(145273),	-- The Birth of the Lich King
 					i(145294),	-- The Last Guardian
 					i(145302),	-- The New Horde
+					i(145281),	-- The Old Gods and the Ordering of Azeroth
 					i(145304),	-- The Scourge of Lordaeron
 					i(145287),	-- The Sentinels and the Long Vigil
 					i(145292),	-- The Seven Kingdoms

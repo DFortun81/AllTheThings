@@ -721,14 +721,11 @@ root(ROOTS.Unsorted, {
 				------
 				i(212489),	-- Copy of a Damaged Apprentice Journal
 				i(212468),	-- Copy of Blinking Rules & Regulations
-				i(212460),	-- Copy of Excerpts from the Journal of Archmage Vargoth
-				i(212461),	-- Copy of Kirin Tor Monthly (March Issue)
 				i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
 				i(212487),	-- Copy of On the Virtues of Magic
 				i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
 				i(212473),	-- Copy of The Archmage Antonidas - Part I
 				i(212474),	-- Copy of The Archmage Antonidas - Part II
-				i(212459),	-- Copy of The Old Wizard's Almanac
 				i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
 				i(212480),	-- Copy of The Schools of Arcane Magic - Divination
 				i(212481),	-- Copy of The Schools of Arcane Magic - Enchantment
@@ -1013,8 +1010,6 @@ root(ROOTS.Unsorted, {
 			-- Quest Items
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
-			i(211778),	-- O.D.I.E.'s Remote Control
-			i(211781),	-- O.D.I.E.'s Remote Control
 
 			------ Hearthstone ------
 			-- Misc
