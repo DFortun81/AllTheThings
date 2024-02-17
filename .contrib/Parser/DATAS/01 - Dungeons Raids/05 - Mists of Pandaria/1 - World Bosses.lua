@@ -4,12 +4,13 @@
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
-		["lvl"] = 80,
-		["g"] = {
-			e(814, {	-- Nalak, The Storm Lord
-				["isWeekly"] = true,
+		["g"] = sharedData({
+			["isRaid"] = true,
+			["isWeekly"] = true,
+		},{
+			e(814, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
+				["crs"] = { 69099 },	-- Nalak, the Storm Lord
 				["questID"] = 32518,
-				["isRaid"] = true,
 				["coord"] = { 60.0, 37.7, ISLE_OF_THUNDER },
 				["maps"] = {	-- all Isle of Thunder maps
 					505,	-- Lightning Vein Mine
@@ -17,14 +18,12 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					516,	-- Scenario [Phase 1]
 					517,	-- Lightning Vein Mine
 				},
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 69099,	-- Nalak, the Storm Lord
 				["g"] = {
 					ach(8137),	-- Nalak Guild Run
 					ach(8028),	-- Praise the Sun!
 					-- Mounts, Caches, and Quest Items!
 					i(95057),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
-					i(95602, {	-- Stormtouched Cache	-- TODO: should be symlink for duplicate rewards
+					i(95602, {	-- Stormtouched Cache
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
 						i(95961),	-- Abandoned Zandalari Firecord
@@ -336,14 +335,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 				},
-			}),
-			e(826, {	-- Oondasta
-				["isWeekly"] = true,
+			})),
+			e(826, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Oondasta
 				["questID"] = 32519,
-				["isRaid"] = true,
 				["coord"] = { 49.9, 56.8, ISLE_OF_GIANTS },
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 69161,	-- Oondasta
+				["crs"] = { 69161 },	-- Oondasta
 				["g"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					ach(8138),	-- Oondasta Guild Run
@@ -420,18 +416,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					i(95167),	-- Ring of King Kangrom
 					i(95163),	-- Ring of Shamuru
 				},
-			}),
-			e(861, bubbleDownSelf({["u"]=38},{	-- Ordos, Fire-God of the Yaungol / Ordos - Legendary Cloak Filter
+			})),
+			e(861, bubbleDownSelf({	-- Ordos, Fire-God of the Yaungol
+				["u"] = 38,	-- Legendary Cloak Filter
+				["timeline"] = { ADDED_5_4_0 },
+			}, {
 				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
-				["isWeekly"] = true,
 				["questID"] = 33118,
-				["isRaid"] = true,
 				["coord"] = { 54.9, 17.3, TIMELESS_ISLE },
 				["maps"] = {	-- all Timeless Isle maps
 					555,	-- Cavern of Lost Spirits
 				},
-				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 72057,	-- Ordos, Fire-God of the Yaungol
+				["crs"] = { 72057 },	-- Ordos, Fire-God of the Yaungol
 				["g"] = {
 					ach(8533),	-- Ordos
 					ach(8790),	-- Ordos Guild Run
@@ -449,12 +445,12 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							i(105827),	-- Kalaena's Arcane Handwraps (confirmed to drop from Ordos cache on April 28, 2020)
 							i(105833),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos cache on November 14, 2019)
 							i(105834),	-- Marco's Crackling Gloves Normal (confirmed to drop from Ordos cache on May 6, 2020)
-							-- i(105835),	-- Romy's Reliable Grips Normal
+							i(105835),	-- Romy's Reliable Grips Normal
 							-- i(105828),	-- Seebo's Sainted Touch Normal
 							i(105831),	-- Siid's Silent Stranglers Normal (confirmed to drop from Ordos cache on December 29, 2019)
 							i(105839),	-- Turtleshell Greatcloak Normal (confirmed to drop from Ordos cache on May 5, 2020)
 							i(105836),	-- Zoid's Molten Gauntlets Normal (confirmed to drop from Ordos cache on December 31, 2019)
-							-- i(87522),	-- Star-Carrier Bracers (Discord - 2021-11-24), maybe symlink
+							i(87522),	-- Star-Carrier Bracers (Discord - 2021-11-24), maybe symlink
 						},
 					}),
 					-- Head
@@ -525,15 +521,12 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				},
 			})),
 			e(725, {	-- Saylis's Warband [Galleon]
-				["isWeekly"] = true,
 				["questID"] = 32098,
-				["isRaid"] = true,
 				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
 				["maps"] = {	-- all Valley of the Four Winds maps
 					377,	-- Cavern of Endless Echoes
 				},
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 62346,	-- Galleon
+				["crs"] = { 62346 },	-- Galleon
 				["g"] = {
 					ach(6517),	-- Extinction Event
 					ach(6708),	-- Salyis's Warband Guild Run
@@ -655,9 +648,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				},
 			}),
 			e(691, {	-- Sha of Anger
-				["isWeekly"] = true,
 				["questID"] = 32099,
-				["isRaid"] = true,
 				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
 				["maps"] = {	-- all Kun-Lai Summit maps
 					380,	-- Howlingwind Cavern
@@ -670,8 +661,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					387,	-- Ruins of Korune (Lower Floor)
 					434,	-- The Ancient Passage
 				},
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 60491,	-- Sha of Anger
+				["crs"] = { 60491 },	-- Sha of Anger
 				["g"] = {
 					ach(6480),	-- Settle Down, Bro
 					ach(6709),	-- Sha of Anger Guild Run
@@ -886,12 +876,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				},
 			}),
 			header(HEADERS.Achievement, 8535, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Challenge
-				["isWeekly"] = true,
 				["questID"] = 33117,
 				["maps"] = {	-- all Timeless Isle maps
 					555,	-- Cavern of Lost Spirits
 				},
-				["isRaid"] = true,
 				["coord"] = { 38.87, 55.29, TIMELESS_ISLE },
 				["crs"] = {
 					71952,	-- Chi-Ji, The Red Crane
@@ -1239,7 +1227,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					i(103517),	-- Prideful Gladiator's Signet of Cruelty
 				},
 			})),
-		},
+		}),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers,{
