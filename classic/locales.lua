@@ -144,6 +144,23 @@ for key,value in pairs({
 	
 	["CRITERIA_FOR"] = "Criteria for";
 	["CURRENCY_FOR"] = "Currency for";
+	["FEATURES_PAGE"] = FEATURES_LABEL;
+	["CELEBRATIONS_LABEL"] = "Celebrations & Sound Effects";
+	["AUDIO_CHANNEL"] = "Audio Channel";
+	["CHANNEL_MASTER"] = MASTER;
+	["CHANNEL_MUSIC"] = MUSIC_VOLUME;
+	["CHANNEL_SFX"] = FX_VOLUME;
+	["CHANNEL_AMBIENCE"] = AMBIENCE_VOLUME;
+	["CHANNEL_DIALOG"] = DIALOG_VOLUME;
+	["CELEBRATE_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Celebration";
+	["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
+	["SOUNDPACK"] = "Soundpack";
+	["PLAY_DEATH_SOUND_CHECKBOX"] = "Play a Sound Effect when you Die";
+	["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a sound effect when you die.";
+	["WARN_REMOVED_CHECKBOX"] = "Removed Things Trigger a Warning";
+	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
+	["SCREENSHOT_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Screenshot";
+	["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to take a screenshot for every Thing you collect.";
 
 	-- Icons and Collection Text
 	["COLLECTED_ICON"] = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.

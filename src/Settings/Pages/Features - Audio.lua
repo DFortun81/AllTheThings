@@ -117,6 +117,13 @@ checkboxCelebrateCollectedThings:SetATTTooltip(L["CELEBRATE_COLLECTED_CHECKBOX_T
 checkboxCelebrateCollectedThings:AlignBelow(checkboxEffectsChannel, -1)
 checkboxCelebrateCollectedThings:SetPoint("TOP", checkboxEffectsChannel, "BOTTOM", 0, -8)
 
+-- Screenshot
+function app:TakeScreenShot(type)
+	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
+		Screenshot();
+	end
+end
+
 local checkboxScreenshotCollectedThings = child:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Screenshot"))
@@ -124,7 +131,7 @@ local checkboxScreenshotCollectedThings = child:CreateCheckBox(L["SCREENSHOT_COL
 	function(self)
 		settings:SetTooltipSetting("Screenshot", self:GetChecked())
 	end)
-checkboxScreenshotCollectedThings:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"])
+checkboxScreenshotCollectedThings:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] .. (app.IsClassic and "\n\nNOTE: Classic has little to NO support for this feature at this time!" or ""))
 checkboxScreenshotCollectedThings:AlignBelow(checkboxCelebrateCollectedThings)
 
 local checkboxWarnRemovedThings = child:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
@@ -137,14 +144,14 @@ end)
 checkboxWarnRemovedThings:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"])
 checkboxWarnRemovedThings:AlignBelow(checkboxScreenshotCollectedThings)
 
-local checkboxPlayDeathSound = child:CreateCheckBox("Play a sound when you die" --[[L["PLAY_DEATH_SOUND_CHECKBOX"] ]],
+local checkboxPlayDeathSound = child:CreateCheckBox(L["PLAY_DEATH_SOUND_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("PlayDeathSound"))
 end,
 function(self)
 	settings:SetTooltipSetting("PlayDeathSound", self:GetChecked())
 end)
---checkboxPlayDeathSound:SetATTTooltip(L["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"])
+checkboxPlayDeathSound:SetATTTooltip(L["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"])
 checkboxPlayDeathSound:AlignBelow(checkboxWarnRemovedThings)
 
 local textSoundpack = child:CreateTextLabel("|cffFFFFFF"..L["SOUNDPACK"])
@@ -156,25 +163,29 @@ dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", -15, 0)
 UIDropDownMenu_SetWidth(dropdownSoundpack, 270) -- Use in place of dropDown:SetWidth
 
 -- Set the dropdown's current text to the active soundpack
-AllTheThings.Audio:RegisterForSoundPackEvents(function(event, soundPack)
-	UIDropDownMenu_SetText(dropdownSoundpack, AllTheThings.Audio:GetActiveSoundPack().name)
+app.Audio:RegisterForSoundPackEvents(function(event, soundPack)
+	UIDropDownMenu_SetText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
 end)
 
 -- Change the active soundpack based on user selection
 local function WPDropDownDemo_OnClick(self, arg1)
-	AllTheThings.Audio:ActivateSoundPack(arg1)
-	UIDropDownMenu_SetText(dropdownSoundpack, AllTheThings.Audio:GetActiveSoundPack().name)
-	AllTheThings.Audio:PlayFanfare()
+	app.Audio:ActivateSoundPack(arg1)
+	UIDropDownMenu_SetText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
+	app.Audio:PlayFanfare()
 end
 
 -- Populate the dropdown menu with all existing soundpacks
 function WPDropDownDemo_Menu(frame, level, menuList)
+	local soundPacks = {};
+	for i, soundPack in pairs(app.Audio:GetAllSoundPacks()) do
+		tinsert(soundPacks, soundPack.name);
+	end
+	table.sort(soundPacks);
+	
 	local info = UIDropDownMenu_CreateInfo()
 	info.func = WPDropDownDemo_OnClick
-
-	local soundPacks = AllTheThings.Audio:GetAllSoundPacks()
-	for i, sounds in pairs(soundPacks) do
-		info.text, info.arg1 = sounds.name, sounds.name
+	for i, name in ipairs(soundPacks) do
+		info.text, info.arg1 = name, name
 		UIDropDownMenu_AddButton(info)
 	end
 end

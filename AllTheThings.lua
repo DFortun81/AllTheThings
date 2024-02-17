@@ -529,12 +529,7 @@ app.RefreshTradeSkillCache = function()
 end
 end -- TradeSkill Functionality
 
--- Screenshot
-function app:TakeScreenShot(type)
-	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
-		Screenshot();
-	end
-end
+
 
 local function GetCollectionIcon(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];

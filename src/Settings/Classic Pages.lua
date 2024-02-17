@@ -1873,13 +1873,7 @@ end)();
 -- The "Features" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage("Features");
-
-local CelebrationsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-CelebrationsLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 330, -8);
-CelebrationsLabel:SetJustifyH("LEFT");
-CelebrationsLabel:SetText("Celebrations & Sound Effects");
-CelebrationsLabel:Show();
+local child = settings:CreateOptionsPage(L["FEATURES_PAGE"]);
 
 local ChangeSkipCutsceneState = function(self, checked)
 	if checked then
@@ -1905,50 +1899,7 @@ function(self)
 	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
 end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip("Enable this option if you want ATT to automatically skip all cutscenes on your behalf.");
-AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", CelebrationsLabel, "BOTTOMLEFT", 4, 0);
-
-local UseMasterAudioChannel = child:CreateCheckBox("Use the Master Audio Channel",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Channel") == "master");
-end,
-function(self)
-	local state = self:GetChecked() and "master" or "sound";
-	if settings:GetTooltipSetting("Channel") ~= state then
-		settings:SetTooltipSetting("Channel", state);
-	end
-end);
-UseMasterAudioChannel:SetATTTooltip("Enable this option if you want the celebrations and other ATT sound effects to play on the 'MASTER' audio channel.\n\nDefault: Yes\n\nA lot of people play with sound effects off, so this option allows the ATT sounds to bypass that should it be desired.");
-UseMasterAudioChannel:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, 4);
-
-local CelebrateCollectedThingsCheckBox = child:CreateCheckBox("Collected Things Trigger a Celebration",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Celebrate"));
-end,
-function(self)
-	settings:SetTooltipSetting("Celebrate", self:GetChecked());
-end);
-CelebrateCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.");
-CelebrateCollectedThingsCheckBox:SetPoint("TOPLEFT", UseMasterAudioChannel, "BOTTOMLEFT", 0, 4);
-
-local DeathSoundCheckBox = child:CreateCheckBox("Play a Sound Effect when you Die",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("PlayDeathSound"));
-end,
-function(self)
-	settings:SetTooltipSetting("PlayDeathSound", self:GetChecked());
-end);
-DeathSoundCheckBox:SetATTTooltip("Enable this option if you want to hear a sound effect when you die.");
-DeathSoundCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local WarnRemovedThingsCheckBox = child:CreateCheckBox("Removed Things Trigger a Warning",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"));
-end,
-function(self)
-	settings:SetTooltipSetting("Warn:Removed", self:GetChecked());
-end);
-WarnRemovedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.");
-WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", DeathSoundCheckBox, "BOTTOMLEFT", 0, 4);
+AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 330, -8);
 
 local ModulesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ModulesLabel:SetPoint("TOP", WarnRemovedThingsCheckBox, "BOTTOM", 0, -8);
