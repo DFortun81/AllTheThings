@@ -494,53 +494,65 @@ local checkboxShowUnavailablePersonalLoot = child:CreateCheckBox(L["SHOW_UNAVAIL
 checkboxShowUnavailablePersonalLoot:SetATTTooltip(L["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP"])
 checkboxShowUnavailablePersonalLoot:AlignBelow(checkboxShowPvP)
 
-
-
-local headerExpansionThings = child:CreateHeaderLabel(L["EXPANSION_THINGS_LABEL"])
-headerExpansionThings:SetPoint("LEFT", headerGeneralContent, 0, 0)
-headerExpansionThings:SetPoint("TOP", headerGeneralThings, "TOP", 0, 0)
-headerExpansionThings.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
+-- Expansion Things
+if app.GameBuildVersion >= 60000 then
+	-- This section is hidden until after Warlords!
+	local headerExpansionThings = child:CreateHeaderLabel(L["EXPANSION_THINGS_LABEL"])
+	headerExpansionThings:SetPoint("LEFT", headerGeneralContent, 0, 0)
+	headerExpansionThings:SetPoint("TOP", headerGeneralThings, "TOP", 0, 0)
+	headerExpansionThings.OnRefresh = function(self)
+		if app.MODE_DEBUG then
+			self:SetAlpha(0.4)
+		else
+			self:SetAlpha(1)
+		end
+	end
+	
+	-- Followers (Warlords+)
+	local accwideCheckboxFollowers =
+	child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
+	accwideCheckboxFollowers:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
+	child:CreateTrackingCheckbox("FOLLOWERS", "Followers")
+		:AlignAfter(accwideCheckboxFollowers)
+	
+	-- Music Rolls & Selfie Filters (Warlords+) [TODO: Do we want to split these up?]
+	local accwideCheckboxMusicRollsAndSelfieFilters =
+	child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+		:AlignBelow(accwideCheckboxFollowers)
+	child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+		:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
+	
+	if app.GameBuildVersion >= 80000 then
+		-- Azerite Essences (BFA+)
+		local accwideCheckboxAzeriteEssences =
+		child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
+			:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
+		child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
+			:AlignAfter(accwideCheckboxAzeriteEssences)
+		
+		if app.GameBuildVersion >= 90000 then
+			-- Conduits (Shadowlands+)
+			local accwideCheckboxConduits =
+			child:CreateAccountWideCheckbox("SOULBINDCONDUITS", "Conduits")
+				:AlignBelow(accwideCheckboxAzeriteEssences)
+			child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits")
+				:AlignAfter(accwideCheckboxConduits)
+			
+			-- Runeforge Legendaries (Shadowlands+)
+			local accwideCheckboxRunecarvingPowers =
+			child:CreateForcedAccountWideCheckbox()
+				:AlignBelow(accwideCheckboxConduits)
+			child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
+				:AlignAfter(accwideCheckboxRunecarvingPowers)
+			
+			if app.GameBuildVersion >= 90000 then
+				-- Drakewatcher Manuscripts (Dragonflight+)
+				local accwideCheckboxDrakewatcherManuscripts =
+				child:CreateForcedAccountWideCheckbox()
+					:AlignBelow(accwideCheckboxRunecarvingPowers)
+				child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
+					:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
+			end
+		end
 	end
 end
-
-
-
-local accwideCheckboxFollowers =
-child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
-accwideCheckboxFollowers:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
-child:CreateTrackingCheckbox("FOLLOWERS", "Followers")
-	:AlignAfter(accwideCheckboxFollowers)
-
-local accwideCheckboxMusicRollsAndSelfieFilters =
-child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-	:AlignBelow(accwideCheckboxFollowers)
-child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-	:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
-
-local accwideCheckboxAzeriteEssences =
-child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
-	:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
-child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
-	:AlignAfter(accwideCheckboxAzeriteEssences)
-
-local accwideCheckboxConduits =
-child:CreateAccountWideCheckbox("SOULBINDCONDUITS", "Conduits")
-	:AlignBelow(accwideCheckboxAzeriteEssences)
-child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits")
-	:AlignAfter(accwideCheckboxConduits)
-
-local accwideCheckboxRunecarvingPowers =
-child:CreateForcedAccountWideCheckbox()
-	:AlignBelow(accwideCheckboxConduits)
-child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
-	:AlignAfter(accwideCheckboxRunecarvingPowers)
-
-local accwideCheckboxDrakewatcherManuscripts =
-child:CreateForcedAccountWideCheckbox()
-	:AlignBelow(accwideCheckboxRunecarvingPowers)
-child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
-	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
