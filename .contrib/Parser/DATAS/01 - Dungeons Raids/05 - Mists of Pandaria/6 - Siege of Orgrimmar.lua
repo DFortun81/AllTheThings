@@ -1917,12 +1917,25 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
 			d(LFR_RAID, {
-				i(104275, {	-- Twisted Treasures of the Vale
-					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-					["timeline"] = { ADDED_5_4_0, REMOVED_8_0_1 },
-					["sym"] = {
-						{ "select", "headerID", 104275 },
-						{ "pop" },
+				header(HEADERS.Item, 104275, {	-- Twisted Treasures of the Vale
+					["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Siege of Orgrimmar.",
+					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
+					["sym"] = {MOP_SYM_PETS},
+					["g"] = {
+						i(105824),	-- Aeth's Swiftcinder Cloak
+						i(105816),	-- Brave Niunai's Cloak
+						i(105812),	-- Cape of the Alpha
+						i(105818),	-- Crimson Gauntlets of Death
+						i(105815),	-- Drape of the Omega
+						i(105823),	-- Gauntlets of Discarded Time
+						i(105813),	-- Kalaena's Arcane Handwraps
+						i(105819),	-- Keengrip Arrowpullers
+						i(105820),	-- Marco's Crackling Gloves
+						i(105821),	-- Romy's Reliable Grips
+						i(105814),	-- Seebo's Sainted Touch
+						i(105817),	-- Siid's Silent Stranglers
+						i(105825),	-- Turtleshell Greatcloak
+						i(105822),	-- Zoid's Molten Gauntlets
 					},
 				}),
 				un(REMOVED_FROM_GAME, i(105714, {	-- Coalesced Turmoil
