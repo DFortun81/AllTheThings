@@ -1094,36 +1094,6 @@ function(self)
 end);
 HidePvPCheckBox:SetATTTooltip("Enable this setting if you want to hide all PVP related activities, items, and achievements.");
 HidePvPCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local ReportCollectedThingsCheckBox = child:CreateCheckBox("Report Collected Things",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:Collected"));
-end,
-function(self)
-	settings:SetTooltipSetting("Report:Collected", self:GetChecked());
-end);
-ReportCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.");
-ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", HidePvPCheckBox, "BOTTOMLEFT", 0, -4);
-
-local ReportCompletedQuestsCheckBox = child:CreateCheckBox("Report Completed Quests",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"));
-end,
-function(self)
-	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked());
-end);
-ReportCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you want to see the Quest ID for any quest you complete immediately after it happens. (For reporting bugs, trackings purposes, etc)");
-ReportCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local ReportUnsortedCompletedQuestsCheckBox = child:CreateCheckBox("Only Unsorted Quests",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"));
-end,
-function(self)
-	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked());
-end);
-ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you only want to see the Quest ID for any quest you complete that isn't already listed in the addon.");
-ReportUnsortedCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCompletedQuestsCheckBox, "BOTTOMLEFT", 4, 4);
 end)();
 
 ------------------------------------------
