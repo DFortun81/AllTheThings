@@ -1171,10 +1171,19 @@ root(ROOTS.ExpansionFeatures,
 												i(165629),	-- Sentinel's Spellblade
 												i(166483),	-- Sentinel's Tomahawk
 												i(165625),	-- Sentinel's Warhammer
-												i(166758),	-- Moonpriest's Cloak
-												i(166759),	-- Darkwood Sentinel's Drape
-												i(166760),	-- Kaldorei Archer's Greatcloak
-												i(166761),	-- Wardenguard's Drape
+												i(166758, {	-- Moonpriest's Cloak
+												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													["description"] = "This might be only available as Cloth class.",
+												}),
+												i(166759, {	-- Darkwood Sentinel's Drape
+													["description"] = "This might be only available as Leather class.",
+												}),
+												i(166760, {	-- Kaldorei Archer's Greatcloak
+													["description"] = "This might be only available as Mail class.",
+												}),
+												i(166761, {	-- Wardenguard's Drape
+													["description"] = "This might be only available as Plate class.",
+												}),
 												i(166572),	-- Moonpriest's Visor
 												i(165435),	-- Moonpriest's Coronet
 												i(166558),	-- Moonpriest's Epaulets
@@ -1243,10 +1252,19 @@ root(ROOTS.ExpansionFeatures,
 												i(165629),	-- Sentinel's Spellblade
 												i(166483),	-- Sentinel's Tomahawk
 												i(165625),	-- Sentinel's Warhammer
-												i(166758),	-- Moonpriest's Cloak
-												i(166759),	-- Darkwood Sentinel's Drape
-												i(166760),	-- Kaldorei Archer's Greatcloak
-												i(166761),	-- Wardenguard's Drape
+												i(166758, {	-- Moonpriest's Cloak
+												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													["description"] = "This might be only available as Cloth class.",
+												}),
+												i(166759, {	-- Darkwood Sentinel's Drape
+													["description"] = "This might be only available as Leather class.",
+												}),
+												i(166760, {	-- Kaldorei Archer's Greatcloak
+													["description"] = "This might be only available as Mail class.",
+												}),
+												i(166761, {	-- Wardenguard's Drape
+													["description"] = "This might be only available as Plate class.",
+												}),
 												i(166572),	-- Moonpriest's Visor
 												i(165435),	-- Moonpriest's Coronet
 												i(166558),	-- Moonpriest's Epaulets
@@ -1452,10 +1470,19 @@ root(ROOTS.ExpansionFeatures,
 												i(165610),	-- Plaguebringer's Dirk
 												i(165613),	-- Plaguebringer's Halberd
 												i(166802),	-- Plaguebringer's Spellblade
-												i(166762),	-- Plaguebringer's Drape
-												i(166763),	-- Deathstalker's Cloak
-												i(166764),	-- Blightguard's Cloak
-												i(166765),	-- Deathguard's Greatcloak
+												i(166762, {	-- Plaguebringer's Drape
+												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													["description"] = "This might be only available as Cloth class.",
+												}),
+												i(166763, {	-- Deathstalker's Cloak
+													["description"] = "This might be only available as Leather class.",
+												}),
+												i(166764, {	-- Blightguard's Cloak
+													["description"] = "This might be only available as Mail class.",
+												}),
+												i(166765, {	-- Deathguard's Greatcloak
+													["description"] = "This might be only available as Plate class.",
+												}),
 												i(165467),	-- Plaguebringer's Cowl
 												i(166564),	-- Plaguebringer's Skullcap
 												i(166554),	-- Plaguebringer's Mantle
@@ -1524,10 +1551,19 @@ root(ROOTS.ExpansionFeatures,
 												i(165610),	-- Plaguebringer's Dirk
 												i(165613),	-- Plaguebringer's Halberd
 												i(166802),	-- Plaguebringer's Spellblade
-												i(166762),	-- Plaguebringer's Drape
-												i(166763),	-- Deathstalker's Cloak
-												i(166764),	-- Blightguard's Cloak
-												i(166765),	-- Deathguard's Greatcloak
+												i(166762, {	-- Plaguebringer's Drape
+												--	["classes"] = { MAGE, PRIEST, WARLOCK },
+													["description"] = "This might be only available as Cloth class.",
+												}),
+												i(166763, {	-- Deathstalker's Cloak
+													["description"] = "This might be only available as Leather class.",
+												}),
+												i(166764, {	-- Blightguard's Cloak
+													["description"] = "This might be only available as Mail class.",
+												}),
+												i(166765, {	-- Deathguard's Greatcloak
+													["description"] = "This might be only available as Plate class.",
+												}),
 												i(165467),	-- Plaguebringer's Cowl
 												i(166564),	-- Plaguebringer's Skullcap
 												i(166554),	-- Plaguebringer's Mantle
