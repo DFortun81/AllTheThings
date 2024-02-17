@@ -569,7 +569,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.TOGGLE_COMPLETIONIST_MODE = "切换完美主义者模式";
 		L.TOGGLE_DEBUG_MODE = "切换调试模式";
 		L.TOGGLE_FACTION_MODE = "切换阵营模式";
-		L.PREFERENCES = "偏好";
 		L.TOGGLE_COMPLETEDTHINGS = "隐藏/显示已完成组和项";
 		L.TOGGLE_COMPLETEDGROUPS = "隐藏/显示已完成组";
 		L.TOGGLE_COLLECTEDTHINGS = "隐藏/显示已收藏项";

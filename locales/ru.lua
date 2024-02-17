@@ -569,7 +569,6 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.TOGGLE_COMPLETIONIST_MODE = "Переключить режим Собирателя";
 		L.TOGGLE_DEBUG_MODE = "Переключить режим Отладки";
 		L.TOGGLE_FACTION_MODE = "Переключить режим Фракции";
-		L.PREFERENCES = "Настройки";
 		L.TOGGLE_COMPLETEDTHINGS = "Переключить Собранные Предметы (Все)";
 		L.TOGGLE_COMPLETEDGROUPS = "Переключить Собранные Группы";
 		L.TOGGLE_COLLECTEDTHINGS = "Переключить Собранные Предметы";

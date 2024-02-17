@@ -562,7 +562,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 		L.TOGGLE_COMPLETIONIST_MODE = "Completionist Modus ein/aus";
 		L.TOGGLE_DEBUG_MODE = "Debug Modus ein/aus";
 		L.TOGGLE_FACTION_MODE = "Fraktions Modus ein/aus";
-		L.PREFERENCES = "Präferenzen";
 		L.TOGGLE_COMPLETEDTHINGS = "Erledigte Dinge ein/aus (Beides)";
 		L.TOGGLE_COMPLETEDGROUPS = "Abgeschlossene Gruppen ein/aus";
 		L.TOGGLE_COLLECTEDTHINGS = "Gesammelte Dinge ein/aus";
