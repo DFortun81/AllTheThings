@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings, tinsert = app.L, app.Settings, tinsert;
+local L, settings, tinsert = app.L.SETTINGS_MENU, app.Settings, tinsert;
 local Callback = app.CallbackHandlers.Callback;
 
 -- Settings: Profiles Page

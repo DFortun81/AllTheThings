@@ -39,6 +39,7 @@ lib\Refresh.lua
 lib\Audio.lua
 
 # Load localization modules
+locales\Default Locale.lua
 # locales\en.lua
 # locales\es.lua
 # locales\de.lua

@@ -2,11 +2,9 @@
 --						L O C A L I Z A T I O N  F I L E					  --
 --------------------------------------------------------------------------------
 local name, app = ...;
-local L = {
+local L = app.L;
+for key,value in pairs({
 	-- General Text
-	["TITLE"] = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	["SHORTTITLE"] = "|c" .. app.Colors.ATT .. "ATT|r";
-	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!";
@@ -702,52 +700,15 @@ local L = {
 		[3302] = {2, "|CFFAAFFAAThis became available with the release of Ruby Sanctum during Wrath Classic.|r", "Ruby Sanctum", 30400, 30403, "\n \n|CFFFFAAAAIncluded The Ruby Sanctum.|r" },
 		[3303] = {2, "|CFFAAFFAAThis became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.|r", "Elemental Unrest", 30400, 30404, "\n \n|CFFFFAAAAThe Elemental Unrest Pre-Expansion Event?|r" },
 	};
-};
-app.L = L;
-
--- Crieve tested all professions in non-english locales and the skill was not detected without these.
-L["SPELL_NAME_TO_SPELL_ID"] = {
-	-- Riding
-	["Riding"] = 33388,
-	["Equitación"] = 33388,
-	["Reiten"] = 33388,
-	["Monte"] = 33388,
-	["Montaria"] = 33388,
-	["Верховая езда"] = 33388,
-	["탈것 타기"] = 33388,
-	["骑术"] = 33388,
-	
-	-- Herb Gathering
-	-- The skill name is "Herbalism", not "Herb Gathering"
-	["Herbalism"] = 2366,
-	["Herboristería"] = 2366,
-	["Kräuterkunde"] = 2366,
-	["Herboristerie"] = 2366,
-	["Herborismo"] = 2366,
-	["Травничество"] = 2366,
-	["약초채집"] = 2366,
-	["草药学"] = 2366,
-	["草藥學"] = 2366,
-	
-	-- French (Classic Era)
-	["Ingénierie"] = 4036,    -- Engineering
-	["Secourisme"] = 3273,    -- First Aid
-	
-	-- Spanish (Classic Era)
-	["Costura"] = 3908,	-- Tailoring
-	["Marroquinería"] = 2108,    -- Leatherworking
-	
-	["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
-	["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
-	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
-};
+}) do
+	L[key] = value;
+end
 
 
 
 if GetLocale() == "zhCN" or GetLocale() == "zhTW" then
 
 -- General Text
-L["TITLE"] = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r"
 L["DESCRIPTION"] = '"你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收集者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。"'
 
 -- Instructional Text 指引

@@ -1,5 +1,5 @@
 local appName, app = ...
-local L = app.L
+local L = app.L.SETTINGS_MENU;
 local settings = app.Settings;
 
 settings.AccountWide = {

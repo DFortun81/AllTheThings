@@ -3,14 +3,10 @@
 --------------------------------------------------------------------------------
 --						English / United States (default)					  --
 --------------------------------------------------------------------------------
---				Maintained By Dylan Fortune (http://dylanfortune.com)		  --
---------------------------------------------------------------------------------
---	 A localization file contains a single dictionary that populates a table  --
---------------------------------------------------------------------------------
---				This script is called directly after the Core.lua file. 	  --
---------------------------------------------------------------------------------
-
+-- This file has been deprecated. All custom headers in this file MUST be moved into the proper addon database.
+-- All shared locales will be moved to the Default Locale file.
 local name, app = ...;
+local L = app.L;
 
 -- Global locals
 local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
@@ -21,11 +17,8 @@ DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
 local TRACK_ACC_WIDE = app.ccColors.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
 local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R by default.";
 
-local L = {
+for key, value in pairs({
 	-- General Text
-	["TITLE"] = app.ccColors.ATT.."ALL THE THINGS|r";
-	["AUCTION_TAB"] = app.ccColors.ATT.."ATT|r";
-	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!|r";
@@ -1359,34 +1352,6 @@ local L = {
 		["SL_COV_NFA"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_nightfae")..":0|t", color = "ffA330C9", text = GetSpellInfo(321077) },
 		["SL_COV_VEN"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_venthyr")..":0|t", color = "fffe040f", text = GetSpellInfo(321079) },
 	};
-};
-app.L = L;
-
--- Crieve tested all professions in non-english locales and the following skills were not detected without these.
-L["SPELL_NAME_TO_SPELL_ID"] = {
-	-- Riding
-	["Riding"] = 33388,
-	["Equitación"] = 33388,
-	["Reiten"] = 33388,
-	["Monte"] = 33388,
-	["Montaria"] = 33388,
-	["Верховая езда"] = 33388,
-	["탈것 타기"] = 33388,
-	["骑术"] = 33388,
-
-	-- Herb Gathering
-	-- The skill name is "Herbalism", not "Herb Gathering"
-	["Herbalism"] = 2366,
-	["Herboristería"] = 2366,
-	["Kräuterkunde"] = 2366,
-	["Herboristerie"] = 2366,
-	["Herborismo"] = 2366,
-	["Травничество"] = 2366,
-	["약초채집"] = 2366,
-	["草药学"] = 2366,
-	["草藥學"] = 2366,
-
-	["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
-	["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
-	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
-};
+}) do
+	L[key] = value;
+end

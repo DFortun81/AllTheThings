@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings = app.L, app.Settings;
+local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: Sync Page
 local child = settings:CreateOptionsPage(L["SYNC_PAGE"])

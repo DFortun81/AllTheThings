@@ -15396,7 +15396,7 @@ app.OpenAuctionModule = function(self)
 		local tabID = AuctionHouseFrame.numTabs+1;
 		local button = CreateFrame("Button", "AuctionHouseFrameTab"..tabID, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
 		button:SetID(tabID);
-		button:SetText(L["AUCTION_TAB"]);
+		button:SetText(L.SHORTTITLE);
 		button:SetNormalFontObject(GameFontHighlightSmall);
 		button:SetPoint("LEFT", AuctionHouseFrame.Tabs[tabID-1], "RIGHT", -15, 0);
 		tinsert(AuctionHouseFrame.Tabs, button);
