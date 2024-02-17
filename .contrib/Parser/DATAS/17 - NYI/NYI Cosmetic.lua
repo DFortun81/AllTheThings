@@ -281,12 +281,12 @@ root(ROOTS.NeverImplemented, {
 					------ Sarong ------
 					i(210861),	-- Trader's Aquatic Sarong
 					i(210849),	-- Trader's Azure Sarong
+					i(210855),	-- Trader's Brick Sarong
 					i(210854),	-- Trader's Camo Sarong
 					i(210852),	-- Trader's Cloudy Sarong
 					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
-					i(210855),	-- Trader's Lively Sarong
 					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
 					i(210850),	-- Trader's Sepia Sarong

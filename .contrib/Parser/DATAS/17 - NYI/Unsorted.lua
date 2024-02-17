@@ -571,6 +571,13 @@ root(ROOTS.Unsorted, {
 				i(208446),	-- Fyrn (PET!) [Promotion]
 			}),
 			filter(COSMETIC, {
+				i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
+				i(190924),	-- Arsenal: Ruby Felfire Armaments
+				i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
+				i(200918),	-- Ensemble: Void-Bound Raiment
+				i(200924),	-- Ensemble: Void-Bound Battlegear
+				i(201000),	-- Ensemble: Void-Bound Chains
+				i(201001),	-- Ensemble: Void-Bound Warplate
 				i(211926),	-- Riders of Azeroth Tabard [Cup]
 
 				------ Skyborn Blades ------
@@ -638,16 +645,22 @@ root(ROOTS.Unsorted, {
 
 				------ Single Pieces ------
 				i(190859),	-- Apprentice's Twisted Crook
+				i(190807),	-- Artisan's Work Shirt
 				i(213078),	-- Assassin's Bandolier
 				i(212576),	-- Blackrock Executioner
 				i(213162),	-- Blessed Bow of the Windseeker
+				i(190669),	-- Burnished Helm of Righteousness
+				i(190692),	-- Champion's Battle Standard
 				i(212789),	-- Champion's Jade Cleaver
 				i(190890),	-- Chipped Warblade
 				i(212544),	-- Classic Aquatic Tabard
 				i(212990),	-- Classic Violet Tabard
 				i(212790),	-- Codex of Classic Conjurations
 				i(212530),	-- Corroded Augari Defender
+				i(190847),	-- Deathmantle Assassin's Barb
 				i(190805),	-- Deforester's Hatchet
+				i(190090),	-- Dessicated Bouquet
+				i(190908),	-- Devourer's Skullscythe
 				i(212574),	-- Dueler's Aquatic Shoulder Cape
 				i(212627),	-- Dueler's Azure Shoulder Cape
 				i(212623),	-- Dueler's Brick Shoulder Cape
@@ -668,6 +681,8 @@ root(ROOTS.Unsorted, {
 				i(190819),	-- Emerald Guardian's Longbow
 				i(213073),	-- Faded Floral Staff
 				i(212542),	-- Flowing Aquatic Gloves
+				i(190816),	-- Forgehand's "Stable" Fuel Cell
+				i(190849),	-- Forgemaster's Gavel
 				i(190857),	-- Gilded Emerald Longcloak
 				i(212787),	-- Gloves of the Violet Gala
 				i(212788),	-- Gossamer Emerald Gown
@@ -675,17 +690,25 @@ root(ROOTS.Unsorted, {
 				i(212555),	-- Guise of the Royal Masquerade
 				i(212556),	-- Guise of the Shining Masquerade
 				i(212785),	-- Helm of the Stout
+				i(190860),	-- Initiate's Bo
+				i(190893),	-- Jeweled Valkyrion Cape
 				i(213077),	-- Lavender Bow-quet
 				i(213065),	-- Lavish Floral Edge
 				i(213068),	-- Lavish Floral Stalk
+				i(190822),	-- Mo'arg Enforcer's Halberd
 				i(213076),	-- Orchid Bow-quet
 				i(213062),	-- Paradise's Golden Axe
 				i(213063),	-- Paradise's Ruby Axe
 				i(213064),	-- Paradise's Violet Axe
 				i(213070),	-- Pristine Floral Stalk
+				i(190900),	-- Prototype Farstrider Sniper Rifle
+				i(190820),	-- Restless Void Handaxe
 				i(213066),	-- Rosy Floral Edge
 				i(213069),	-- Rosy Floral Stalk
 				i(213072),	-- Ruby Floral Staff
+				i(190891),	-- Shabby Battleaxe
+				i(190688),	-- Silvered Helm of Righteousness
+				i(190903),	-- Soulburner Warscythe
 				i(212705),	-- Spring Reveler's Cornsilk Attire
 				i(212706),	-- Spring Reveler's Cornsilk Belt
 				i(212707),	-- Spring Reveler's Cornsilk Boots
@@ -704,30 +727,28 @@ root(ROOTS.Unsorted, {
 				i(212711),	-- Spring Reveler's Turquoise Dress
 				i(212985),	-- Spring Reveler's Turquoise Pants
 				i(212715),	-- Spring Reveler's Turquoise Sun Hat
+				i(190818),	-- Steamwheedle Artifact Extractor
 				i(213075),	-- Sunny Bow-quet
 				i(213071),	-- Sunny Floral Staff
 				i(213161),	-- Titan Thunderbow
-				i(210855),	-- Trader's Brick Sarong
+				i(190844),	-- Valarjar Champion's Greatsword
 				i(213067),	-- Violet Floral Edge
 				i(190873),	-- Warhammer of Hubris
+				i(190902),	-- Will of the Titanforged
 				i(212613),	-- Wings of the Amber Monarch
 				i(212612),	-- Wings of the Amethyst Monarch
 				i(212610),	-- Wings of the Emerald Monarch
 				i(212611),	-- Wings of the Tourmaline Monarch
+				i(190889),	-- Woodsman's Hatchet
+				i(190848),	-- [DNT] Do not use
 			}),
 			filter(MISC, {
 				------ Warlock ------
 				i(211949),	-- Durumu's Glass Pupil
 				------
-				i(212489),	-- Copy of a Damaged Apprentice Journal
-				i(212468),	-- Copy of Blinking Rules & Regulations
 				i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
 				i(212487),	-- Copy of On the Virtues of Magic
-				i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
-				i(212473),	-- Copy of The Archmage Antonidas - Part I
-				i(212474),	-- Copy of The Archmage Antonidas - Part II
 				i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
-				i(212480),	-- Copy of The Schools of Arcane Magic - Divination
 				i(212481),	-- Copy of The Schools of Arcane Magic - Enchantment
 				i(212484),	-- Copy of The Schools of Arcane Magic - Transmutation
 				i(212784),	-- Destroyed Relic
@@ -742,7 +763,6 @@ root(ROOTS.Unsorted, {
 				i(212920),	-- Savage Blue Battle Turtle (MOUNT!) [Trading Post]
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
 				i(212632),	-- Starry Twilight Peafowl (MOUNT!)
-				i(211486),	-- Winding Slitherdrake (MOUNT!)
 			}),
 			n(PVP, {
 				i(213106),	-- Gladiator's Serrated Greatsword
@@ -1003,9 +1023,6 @@ root(ROOTS.Unsorted, {
 			i(212371),	-- Azerothian Archivist Initiation Token
 			i(211266),	-- Archivist's Fire Totem
 			------ Love in the Air ------
-			-- Misc
-			i(211429),	-- Bundle of Love Tokens
-			i(211430),	-- Bundle of Love Tokens
 			-- Quest Items
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
@@ -1025,38 +1042,6 @@ root(ROOTS.Unsorted, {
 			i(212607),	-- Reno's Lucky Hat [Hearthstone]
 			i(212644),	-- Taverner's Belt [Hearthstone]
 			i(212336),	-- The Tavern's Tabard
-
-
-			------
-			i(190090),	-- Dessicated Bouquet
-			i(190609),	-- Watcher of the Huntress
-			i(190669),	-- Burnished Helm of Righteousness
-			i(190688),	-- Silvered Helm of Righteousness
-			i(190692),	-- Champion's Battle Standard
-			i(190807),	-- Artisan's Work Shirt
-			i(190816),	-- Forgehand's "Stable" Fuel Cell
-			i(190818),	-- Steamwheedle Artifact Extractor
-			i(190820),	-- Restless Void Handaxe
-			i(190822),	-- Mo'arg Enforcer's Halberd
-			i(190844),	-- Valarjar Champion's Greatsword
-			i(190847),	-- Deathmantle Assassin's Barb
-			i(190848),	-- [DNT] Do not use
-			i(190849),	-- Forgemaster's Gavel
-			i(190860),	-- Initiate's Bo
-			i(190889),	-- Woodsman's Hatchet
-			i(190891),	-- Shabby Battleaxe
-			i(190893),	-- Jeweled Valkyrion Cape
-			i(190900),	-- Prototype Farstrider Sniper Rifle
-			i(190902),	-- Will of the Titanforged
-			i(190903),	-- Soulburner Warscythe
-			i(190908),	-- Devourer's Skullscythe
-			i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
-			i(190924),	-- Arsenal: Ruby Felfire Armaments
-			i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
-			i(200918),	-- Ensemble: Void-Bound Raiment
-			i(200924),	-- Ensemble: Void-Bound Battlegear
-			i(201000),	-- Ensemble: Void-Bound Chains
-			i(201001),	-- Ensemble: Void-Bound Warplate
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211927),	-- Tattered Dreamleaf
@@ -1078,15 +1063,7 @@ root(ROOTS.Unsorted, {
 			i(210028),	-- Extracted Ashen Dust
 			i(210223),	-- Unstable Element
 			i(210240),	-- Stabilized Element
-			i(210255),	-- Alydrus' Research Notes
-			i(210321),	-- The Reforging of the Tyr's Guard
 			i(190875),	-- Chilled Touch of the Condemned
-			i(190925),	-- Buttercup
-			i(210780),	-- Lesser Ember of Fyr'alath
-			i(210871),	-- Greater Ember of Fyr'alath
-			i(190887),	-- Highlord's Ceremonial Drape
-			i(190892),	-- Orange-Sleeved Shirt
-			i(190854),	-- Heavily Stitched Wallet
 			i(213580),	-- Heart-Lesion Helm
 			i(213581),	-- Heart-Lesion Helm
 			filter(MISC, {

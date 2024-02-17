@@ -857,5 +857,11 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				-- ["displayID"] = ,
 			}),
 		})),
+
+		-- 10.2.5
+		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			-- Without MountID Attached
+			i(211486),	-- Winding Slitherdrake (MOUNT!)
+		})),
 	}),
 }));

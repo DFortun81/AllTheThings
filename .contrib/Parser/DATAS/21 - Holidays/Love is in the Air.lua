@@ -386,6 +386,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["collectible"] = false,
 					["isDaily"] = true,
 				}),
+				i(211429),	-- Bundle of Love Tokens
 				i(211430),	-- Bundle of Love Tokens
 			},
 		}),

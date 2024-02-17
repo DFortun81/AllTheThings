@@ -1177,12 +1177,6 @@ root(ROOTS.NeverImplemented, {
 					["displayID"] = 92261,
 				}),
 			})),
-
-			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
-				-- Without SpeciesID Attached
-				i(190586),	-- Lil' Ursoc (PET!) [Item Never Available]
-			})),
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
@@ -1279,21 +1273,14 @@ root(ROOTS.NeverImplemented, {
 				}),
 			})),
 
-			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
-				-- Without SpeciesID Attached
-				i(190583),	-- Ichabod (PET!) [Item Never Available]
-			})),
-
 			-- 10.0.5
 			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
-				-- Only SpeciesID
-				pet(3254, {	-- Watcher of the Huntress (PET!)
-					["displayID"] = 105429,
-				}),
 				-- With SpeciesID Attached
 				i(190173, {	-- Lil' Maka'jin (PET!)
 					["displayID"] = 83638,
+				}),
+				i(190609, {	-- Watcher of the Huntress (PET!)
+					["displayID"] = 105429,
 				}),
 			})),
 
@@ -1444,12 +1431,6 @@ root(ROOTS.NeverImplemented, {
 				i(206174, {	-- Blub (PET!)
 					["displayID"] = 112678,
 				}),
-			})),
-
-			-- 10.1.7
-			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-				-- Without SpeciesID Attached
-				i(208850),	-- Lil' Maggz (PET!) [Item Never Available]
 			})),
 
 			-- 10.2.0

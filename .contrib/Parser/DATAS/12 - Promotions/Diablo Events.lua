@@ -111,7 +111,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 					["questID"] = 76215,
 					["isDaily"] = true,
 					["groups"] = {
-						i(206018),	-- Baa'lial Soulstone
+						i(206018),	-- Baa'lial (PET!)
 						i(206039, {	-- Enmity Bundle
 							i(206004),	-- Enmity Cloak
 							i(206020),	-- Enmity Hood

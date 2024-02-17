@@ -5,6 +5,14 @@ local i = function(itemID)
 	Items[itemID] = item;
 	return item;
 end
+-------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
+-- Put items between these two bars if you dont want to sort them /Braghe
+
+
+-------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
+
+-- Dont add anything here /Braghe
+-------------------------------------------------------------------- NOT SORTED --------------------------------------------------------------------
 i(23820);	-- Critter Enlarger
 i(139786);	-- Ancient Mana Crystal
 i(103644);	-- Blessed Bandage
@@ -116,7 +124,6 @@ i(169165);	-- Father's Sword
 i(128419);	-- Fel Essence (N)
 i(128420);	-- Fel Essence (H)
 i(128421);	-- Fel Essence (M)
-i(180451);	-- Grand Inquisitor's Sinstone Fragment
 i(169228);	-- Hazardous Container
 i(118383);	-- Heart of Stone (N)
 i(118386);	-- Heart of Stone (H)
@@ -274,9 +281,8 @@ i(89427);	-- Ancient Mogu Treasure
 i(85224);	-- Basic Seed Pack
 i(140360);	-- Rockwurm Barb
 i(153119);	-- Wyrmtongue Cache of Finery
+-------------------------------------------------------------------- NOT SORTED --------------------------------------------------------------------
 
-
--- ^^ Not cleaned
 -----------------
 -- PATCH 4.0.3 --
 -----------------
@@ -302,18 +308,10 @@ i(123865);	-- Relic of Ursol
 -- PATCH 9.0.1 --
 -----------------
 --- Trash ---
-i(180286);	-- Broken Fishing Pole
-i(179006);	-- Glowing Endmire Dust
-i(178175);	-- Gooey Sap
-i(177026);	-- Lost Earring
 i(169821);	-- Ogre Effigy
 i(174790);	-- Overseer's Mandate
-i(179004);	-- Polished Silver Tithe
-i(177028);	-- Rusty Chain
 i(175242);	-- Waterlogged Supplies
 --- Common ---
-i(180168);	-- Oribobber
-i(179308);	-- Shadeskin Brandy Phial
 
 -----------------
 -- PATCH 9.0.2 --
@@ -456,6 +454,7 @@ i(178178);	-- Brittle Bark
 i(183596);	-- Broken Artifact
 i(183927);	-- Broken Centurian Mechanism
 i(183923);	-- Broken Claw
+i(180286);	-- Broken Fishing Pole
 i(183913);	-- Broken Flute Stem
 i(179372);	-- Broken Mawrat Trap
 i(183930);	-- Broken Vambrace Clasp
@@ -565,7 +564,9 @@ i(180883);	-- Gleaming Crystal
 i(183062);	-- Gleaming Replica of Partannas
 i(173360);	-- Glossy Fur
 i(181487);	-- Glowberry Bead String
+i(179006);	-- Glowing Endmire Dust
 i(182733);	-- Gnawed Animacorns
+i(178175);	-- Gooey Sap
 i(182765);	-- Golden Wren
 i(180514);	-- Gorm Bracelet
 i(176087);	-- Gorm Chitin
@@ -608,6 +609,7 @@ i(171346);	-- Letters from the City
 i(180517);	-- Lifecrafted Flute
 i(180519);	-- Lifeless Branch
 i(174999);	-- Long-Forgotten Sinstone
+i(177026);	-- Lost Earring
 i(183071);	-- Lucky Sinrunner Horseshoe
 i(173362);	-- Lustrous Scale
 i(176873);	-- Macerated Ribs
@@ -648,6 +650,7 @@ i(183075);	-- Phantasmal Masquerade Guise
 i(183205);	-- Plated Horn of Battle
 i(176858);	-- Pliable Tail Fin
 i(173361);	-- Polished Claw
+i(179004);	-- Polished Silver Tithe
 i(183048);	-- Power of the Darkhound
 i(183209);	-- Prime Enforcer's Seal
 i(181728);	-- Pristine Fleshstitcher Needles
@@ -663,6 +666,7 @@ i(182761);	-- Refined Gold Ingot
 i(178132);	-- Richly Calligraphed Invitation
 i(183073);	-- Royal Sinvyr Cooking Set
 i(184207);	-- Rusting Covenant Spaulder
+i(177028);	-- Rusty Chain
 i(180382);	-- Scaldhead
 i(181713);	-- Scorched Letter
 i(183915);	-- Scrap of Streamer
@@ -763,9 +767,11 @@ i(184485);	-- Mawforged Key
 i(181558);	-- Missing Ritual Pages
 i(180222);	-- Mortal Recipe Book
 i(180225);	-- Murder Mystery
+i(180168);	-- Oribobber
 i(180053);	-- Right Gem Eye
 i(180219);	-- Romance Novel
 i(180228);	-- Self-Help Book
+i(179308);	-- Shadeskin Brandy Phial
 i(183799);	-- Shifting Catalyst
 i(180223);	-- Sinstone Archival Records
 i(178150);	-- Tasty Purian
@@ -1518,29 +1524,28 @@ i(7005);	-- Skinning Knife
 -- PATCH 10.0.7 --
 ------------------
 --- Trash ---
-i(204234);	-- Dead Worms
-i(204308);	-- Sturdy Bone
-i(201173);	-- Handful of Teeth
-i(192668);	-- Short Rib
+i(205241);	-- Bone Necklace
 i(204442);	-- Clump of Tar
+i(204234);	-- Dead Worms
 i(200846);	-- Fletching-less Arrows
-i(204873);	-- Tied-up Envelope
+i(205239);	-- Fluffy Ear
+i(201173);	-- Handful of Teeth
 i(205235);	-- Hound Paw
 i(205236);	-- Long-Toed Talon
 i(205237);	-- Pristine Beast Fur
 i(205238);	-- Rain-soaked Feather
-i(205239);	-- Fluffy Ear
-i(205240);	-- Wooden Eagle Statue
-i(205241);	-- Bone Necklace
-i(205242);	-- Serrated Stone
-i(205243);	-- Spare Bow String
 i(205244);	-- Rain-soaked pelt
+i(205242);	-- Serrated Stone
+i(192668);	-- Short Rib
+i(205243);	-- Spare Bow String
+i(204308);	-- Sturdy Bone
+i(204873);	-- Tied-up Envelope
+i(203988);	-- Warshard of the Hakkari, Unborn
+i(203989);	-- Warshard of the Hakkari, Unborn
+i(205240);	-- Wooden Eagle Statue
 --- Common ---
 i(204237);	-- Clockwork Azshara
 i(204235);	-- Kaldorei Fruitcake
---- Misc ---
-i(203988);	-- Warshard of the Hakkari, Unborn
-i(203989);	-- Warshard of the Hakkari, Unborn
 
 ------------------
 -- PATCH 10.1.0 --
@@ -1584,7 +1589,6 @@ i(204817);	-- Underlight Cocoon Fibers
 i(205169);	-- Glimmer Mushroom
 i(205179);	-- Glimmerfish Scale
 i(205217);	-- Sharpbeak's Feed
-
 --- Trash ---
 i(201166);	-- Gilded Hilt
 i(200107);	-- Tarnished Engagement Ring
@@ -1642,28 +1646,28 @@ i(207035);	-- Thunderbolt
 ------------------
 --- Trash ---
 i(204720);	-- Join the New Scarlet Crusade!
-i(209033);	-- Worn Felsteel Prayer Rod (Dropped in Argus during Seeing Red Quests)
 i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red Quests)
+i(209033);	-- Worn Felsteel Prayer Rod (Dropped in Argus during Seeing Red Quests)
 
 ------------------
 -- PATCH 10.2.0 --
 ------------------
 --- Trash ---
+i(210445);	-- Ash Pouch
 i(210554);	-- Blazing Feather
 i(210444);	-- Burning Flower
 i(210451);	-- Imp Tail
-i(210445);	-- Ash Pouch
-i(210452);	-- Small Demon Horn
 i(211270);	-- Pristine Core Leather
+i(210452);	-- Small Demon Horn
 
 ------------------
 -- PATCH 10.2.5 --
 ------------------
---- White Consumable ---
-i(211943);	-- Scarlet Silk Bandage
 --- Trash ---
-i(211937);	-- Scarlet Pendant
 i(211938);	-- Flame Inscribed Band
+i(211937);	-- Scarlet Pendant
+--- Common ---
+i(211943);	-- Scarlet Silk Bandage
 --- Azerothian Archives Trash ---
 i(212766);	-- Amphora Fragment
 i(213362);	-- Ancient Drakonid Candy
