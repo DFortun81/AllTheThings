@@ -370,10 +370,18 @@ root(ROOTS.Zones, {
 							{ 68.4, 60.4, TIMELESS_ISLE },
 						},
 						["g"] = {
-							crit(24006),	-- Cloudstrike Family Helm
-							crit(24140),	-- Flameheart Shawl
-							crit(24141),	-- Riverspeaker's Trident
-							crit(24142),	-- Snowdrift Tiger Talons
+							crit(24006, {	-- Cloudstrike Family Helm
+								["provider"] = { "o", 222796 },	-- Cloudstrike Family Helm
+							}),
+							crit(24140, {	-- Flameheart Shawl
+								["provider"] = { "o", 223537 },	-- Flameheart Shawl
+							}),
+							crit(24141, {	-- Riverspeaker's Trident
+								["provider"] = { "o", 223538 },	-- Riverspeaker's Trident
+							}),
+							crit(24142, {	-- Snowdrift Tiger Talons
+								["provider"] = { "o", 223539 },	-- Snowdrift Tiger Talons
+							}),
 							ach(8723),	-- Legend of the Past
 						},
 					}),
@@ -1741,8 +1749,9 @@ root(ROOTS.Zones, {
 						["providers"] = {
 							{ "o", 220904 },	-- Rock-breaking Hammer
 							{ "o", 220815 },	-- Cave-in
+							{ "o", 222796 },	-- Cloudstrike Family Helm
 						},
-						["description"] = "Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave and spawn the rare.  Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
+						["description"] = "Use the Cloudstrike ability from the Cloudstrike Family Helm to break down the caved in rocks. If you AFK inside the cave or Mage Blink / Warrior Leap through the rocks, you can interact with the Rock-breaking Hammer to open the way.",
 						["coord"] = { 59.5, 48.9, TIMELESS_ISLE },
 						["isDaily"] = true,
 						["g"] = {

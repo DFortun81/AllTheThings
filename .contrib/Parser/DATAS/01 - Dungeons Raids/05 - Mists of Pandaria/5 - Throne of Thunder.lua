@@ -111,7 +111,16 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
-					i(97153),	-- Spoils of the Thunder King
+					i(97153, {	-- Spoils of the Thunder King
+						["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
+						["g"] = {
+							i(95215),	-- Abandoned Zandalari Bucklebreaker
+							i(95202),	-- Necklace of the Terra-Cotta Archer
+							i(95203),	-- Necklace of the Terra-Cotta Invoker
+							i(95204),	-- Necklace of the Terra-Cotta Mender
+							i(95959),	-- Spiderweb Tabi
+						},
+					}),
 				},
 			}, {
 				q(32711, {	-- Agony and Anima
@@ -139,18 +148,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					["provider"] = { "n", 69843 },	-- Zao'cho <The Emperor's Shield>
 				}),
 			})),
-			n(REWARDS, {
-				i(97153, {	-- Spoils of the Thunder King
-					["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
-					["g"] = {
-						i(95215),	-- Abandoned Zandalari Bucklebreaker
-						i(95202),	-- Necklace of the Terra-Cotta Archer
-						i(95203),	-- Necklace of the Terra-Cotta Invoker
-						i(95204),	-- Necklace of the Terra-Cotta Mender
-						i(95959),	-- Spiderweb Tabi
-					},
-				}),
-			}),
 			n(DROPS, {
 				i(94574, {	-- Pygmy Direhorn (PET!)
 					["crs"] = { 68476 },	-- Horridon
@@ -176,7 +173,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					["crs"] = { 68220 },	-- Gastropod
 				}),
 				i(212750, {	-- Grimoire of the Ancient Observer (CI!)
-					["description"] = "Guide TBW...",
+					["description"] = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumus Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
 					["timeline"] = { ADDED_10_2_5 },
 				}),
 				i(94125, {	-- Living Sandling (PET!)
@@ -241,12 +238,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
 			d(RAID_FINDER, {
-				i(95343, {	-- Treasures of the Thunder
-					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-					["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },
-					["sym"] = {
-						{ "select", "headerID", 95343 },
-						{ "pop" },
+				header(HEADERS.Item, 95343, {	-- Treasures of the Thunder
+					-- Could sym it to every Throne boss for MOP Classic
+					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
+					["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Throne of Thunder.",
+					["sym"] = {MOP_SYM_PETS},
+					["g"] = {
+						i(95972),	-- Abandoned Zandalari Arrowlinks
+						i(95976),	-- Abandoned Zandalari Bucklebreaker
+						i(95961),	-- Abandoned Zandalari Firecord
+						i(95975),	-- Abandoned Zandalari Goreplate
+						i(95974),	-- Abandoned Zandalari Greatbelt
+						i(95971),	-- Abandoned Zandalari Moonstrap
+						i(95962),	-- Abandoned Zandalari Shadowgirdle
+						i(95970),	-- Abandoned Zandalari Silentbelt
+						i(95973),	-- Abandoned Zandalari Waterchain
+						i(95979),	-- Columnbreaker Stompers
+						i(95966),	-- Deeproot Treads
+						i(95965),	-- Home-Warding Slippers
+						i(95978),	-- Locksmasher Greaves
+						i(95958),	-- Necklace of the Terra-Cotta Archer
+						i(95969),	-- Necklace of the Terra-Cotta Mender
+						i(95980),	-- Necklace of the Terra-Cotta Protector
+						i(95960),	-- Scalehide Spurs
+						i(95963),	-- Silentflame Sandals
+						i(95959),	-- Spiderweb Tabi
+						i(95967),	-- Spiritbound Boots
+						i(95968),	-- Vaultwalker Sabatons
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {

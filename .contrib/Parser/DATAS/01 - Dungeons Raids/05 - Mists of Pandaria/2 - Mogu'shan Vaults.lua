@@ -86,11 +86,32 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				["ignoreBonus"] = true,
 				["g"] = {
 					i(95618, {	-- Cache of Mogu Riches
-						["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
+						-- Could sym it to every Mogu boss for MOP Classic
+						["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Mogu'shan Vaults.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
-						["sym"] = {
-							{ "select", "headerID", 95618 },
-							{ "pop" },
+						["sym"] = {MOP_SYM_PETS},
+						["g"] = {
+							i(95972),	-- Abandoned Zandalari Arrowlinks
+							i(95976),	-- Abandoned Zandalari Bucklebreaker
+							i(95961),	-- Abandoned Zandalari Firecord
+							i(95975),	-- Abandoned Zandalari Goreplate
+							i(95974),	-- Abandoned Zandalari Greatbelt
+							i(95971),	-- Abandoned Zandalari Moonstrap
+							i(95962),	-- Abandoned Zandalari Shadowgirdle
+							i(95970),	-- Abandoned Zandalari Silentbelt
+							i(95973),	-- Abandoned Zandalari Waterchain
+							i(95979),	-- Columnbreaker Stompers
+							i(95966),	-- Deeproot Treads
+							i(95965),	-- Home-Warding Slippers
+							i(95978),	-- Locksmasher Greaves
+							i(95958),	-- Necklace of the Terra-Cotta Archer
+							i(95969),	-- Necklace of the Terra-Cotta Mender
+							i(95980),	-- Necklace of the Terra-Cotta Protector
+							i(95960),	-- Scalehide Spurs
+							i(95963),	-- Silentflame Sandals
+							i(95959),	-- Spiderweb Tabi
+							i(95967),	-- Spiritbound Boots
+							i(95968),	-- Vaultwalker Sabatons
 						},
 					}),
 					header(HEADERS.Achievement, 6458, {	-- Guardians of Mogu'shan

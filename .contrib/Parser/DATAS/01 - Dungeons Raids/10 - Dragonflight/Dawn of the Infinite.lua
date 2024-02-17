@@ -285,6 +285,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114267),	-- Firefly Trousers					(NYI)
 			ig(3957),	-- Mesh Pants						(NYI)(Unique)
 			ig(121511),	-- Runespeaker's Leggings			(NYI)
+			ig(22342),	-- Trousers of Pain					(NYI)
 			ig(114391),	-- Trousers of Hooded Nightmares	(NYI)
 
 			ig(23173),	-- Abomination Skin Leggings		(Removed)
@@ -339,6 +340,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
 			ig(108182),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108190),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108198),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108214),	-- Peerless Draenic Steel Legguards	(NYI)

@@ -28,18 +28,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(195783, {	-- Clerk Nemora <General Goods>
 				["coord"] = { 31.2, 69.2, VALDRAKKEN },
 				["g"] = {
-					i(197752),	-- Conveniently Packaged Ingredients
-					i(200860),	-- Draconic Stopper
-					i(191474),	-- Draconic Vial+
-					i(194784),	-- Glittering Parchment
-					i(198487),	-- Iridescent Water
-					i(192833),	-- Misshapen Filigree
-					i(197749),	-- Ohn'ahran Potato
-					i(197751),	-- Pastry Packets
-					i(190452),	-- Primal Flux
-					i(197753),	-- Thaldraszian Cocoa Powder
-					i(197750),	-- Three-Cheese Blend
-					i(188152),	-- Gateway Control Shard
 				},
 			}),
 			n(197080, {	-- Cadrestrasz <Fallingwater Host>
