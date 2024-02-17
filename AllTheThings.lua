@@ -2463,43 +2463,6 @@ app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 
 do
-local function GetPatchString(patch, color)
-	patch = tonumber(patch)
-	return patch and Colorize(math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10), color)
-end
-local conversions = app.Settings.AdditionalIDValueConversions
--- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
-conversions.questID = function(questID, group)
-	local otherFactionQuestID = group.otherFactionQuestID;
-	if otherFactionQuestID then
-		return "["..(app.FactionID == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE).." "..otherFactionQuestID.."] "..questID
-	end
-	return questID
-end
-conversions.awp = function(val) return GetPatchString(val, app.Colors.AddedWithPatch) end
-conversions.rwp = function(val) return GetPatchString(val, app.Colors.RemovedWithPatch) end
-app.AddAdditionalIDsTooltipLines = function(infoOrTooltip, group)
-	local val, convfunc
-	local idLocales, conv, recur = app.Settings.AdditionalIDs, app.Settings.AdditionalIDValueConversions, app.Settings.AdditionalIDRecursive
-	local isTooltip = infoOrTooltip.AddLine and true
-	if isTooltip then
-		for _,id in ipairs(app.Settings.ActiveAdditionalIDs) do
-			val = group[id] or recur[id] and GetRelativeValue(group, id)
-			if val then
-				convfunc = conv[id]
-				infoOrTooltip:AddDoubleLine(idLocales[id], convfunc and convfunc(val, group) or val)
-			end
-		end
-	else
-		for _,id in ipairs(app.Settings.ActiveAdditionalIDs) do
-			val = group[id] or recur[id] and GetRelativeValue(group, id)
-			if val then
-				convfunc = conv[id]
-				tinsert(infoOrTooltip, { left = idLocales[id], right = convfunc and convfunc(val, group) or val });
-			end
-		end
-	end
-end
 local ContainsLimit, ContainsExceeded;
 local function BuildContainsInfo(item, entries, indent, layer)
 	local g = item and item.g;

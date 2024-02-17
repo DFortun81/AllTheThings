@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: Sync Page
-local child = settings:CreateOptionsPage(L["SYNC_PAGE"], "Features")
+local child = settings:CreateOptionsPage(L["SYNC_PAGE"], L["FEATURES_PAGE"])
 
 -- CONTENT
 local headerSync = child:CreateHeaderLabel(L["ACCOUNT_SYNCHRONIZATION"])

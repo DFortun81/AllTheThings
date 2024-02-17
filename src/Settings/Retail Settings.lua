@@ -1,4 +1,4 @@
-local appName, app = ...
+local appName, app = ...;
 local L = app.L.SETTINGS_MENU;
 local settings = app.Settings;
 
@@ -8,6 +8,7 @@ settings.AccountWide = {
 	Deaths = true,
 	Exploration = true,
 	FlightPaths = true,
+	Heirlooms = true,
 	Illusions = true,
 	Mounts = true,
 	PVPRanks = true,
@@ -23,6 +24,7 @@ settings.Collectibles = {
 	BattlePets = true,
 	Exploration = true,
 	FlightPaths = true,
+	Heirlooms = true,
 	Illusions = true,
 	Loot = true,
 	Mounts = true,
