@@ -93,3 +93,71 @@ for i,u in ipairs(UnobtainableFilters) do
 		yoffset = yoffset - 12;
 	end
 end
+
+
+
+local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"])
+headerAutomatedContent:SetPoint("TOP", headerUnobtainableContent, "TOP", 0, 0)
+headerAutomatedContent:SetPoint("LEFT", headerUnobtainableContent, 320, 0)
+headerAutomatedContent.OnRefresh = function(self)
+	if app.MODE_DEBUG then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
+
+local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
+textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
+textAutomatedContentExplain:SetWidth(320)
+textAutomatedContentExplain.OnRefresh = function(self)
+	if app.MODE_DEBUG then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
+
+if app.GameBuildVersion > 90000 then
+	-- Automated Content toggles
+	local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"]
+	local previousCheckbox = textAutomatedContentExplain
+	local xInitalOffset, yInitialOffset, inital = -2, -2, true
+	for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN", "NPE", "SL_SKIP"}) do
+		local filterID = "CC:" .. cc
+		local reason = customCollects[cc]
+		local text = reason["icon"].." "..reason["text"]
+		ccCheckbox = child:CreateCheckBox(text,
+		function(self)
+			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
+			self:SetChecked(automatic or settings:Get(filterID))
+			if automatic then
+				self:SetAlpha(0.6)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
+		end,
+		function(self)
+			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
+			-- prevent toggling automatic filter without requiring it to be disabled (TODO add this logic as part of the checkbox itself somehow instead of manually?)
+			if automatic then
+				self:SetChecked(true)
+				return
+			end
+			settings:Set(filterID, self:GetChecked())
+			settings:UpdateMode(1)
+		end)
+		ccCheckbox:SetATTTooltip(L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT:format(text))
+		if inital then
+			ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0)
+			ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset)
+			inital = nil
+		else
+			ccCheckbox:AlignBelow(previousCheckbox)
+		end
+		previousCheckbox = ccCheckbox
+	end
+end
