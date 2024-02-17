@@ -1010,11 +1010,15 @@ local Pets = root("_petDB");
 local Items = ItemDBConditional;
 local i = function(itemID, speciesID, altSpeciesID)
 	local item = Items[itemID];
-	item.speciesID = speciesID;
 	item.ignoreBonus = true;
-	local spellID = CompanionPetSpeciesIDToSpellID[speciesID];
-	if spellID then item.spellID = spellID; end
-	if altSpeciesID then item.altSpeciesID = altSpeciesID; end
+	if speciesID > 0 then
+		item.speciesID = speciesID;
+		local spellID = CompanionPetSpeciesIDToSpellID[speciesID];
+		if spellID then item.spellID = spellID; end
+		if altSpeciesID then item.altSpeciesID = altSpeciesID; end
+	elseif item.speciesID then
+		item.speciesID = nil;
+	end
 	return item;
 end
 local n = function(npcID, speciesID)
