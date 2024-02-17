@@ -747,25 +747,6 @@ i(182708);	-- Wood Carved Chomper Protector
 i(178108);	-- Wool of Dredbat
 i(180885);	-- Worn Rune-Adorned Pouch
 --- Common ---
-i(183952);	-- Machinist's Oil
-i(173168);	-- Laestrite Setting
-i(183954);	-- Malleable Wire
-i(183950);	-- Distilled Death Extract
-i(180732);	-- Rune Etched Vial
-i(183951);	-- Immortal Shard
-i(173060);	-- Aerated Water
-i(175886);	-- Dark Parchment
-i(183953);	-- Sealing Wax
-i(177061);	-- Twilight Bark
-i(183955);	-- Curing Salt
-i(177062);	-- Penumbra Thread
-i(180733);	-- Luminous Flux
-i(178787);	-- Orboreal Shard
-i(172057);	-- Inconceivably Aged Vinegar
-i(178786);	-- Lusterwheat Flour
-i(172056);	-- Medley of Transplanar Spices
-i(172059);	-- Rich Grazer Milk
-i(172058);	-- Smuggled Azerothian Produce
 i(178149);	-- Centurion Anima Core
 i(181394);	-- Empty Plague Bottle
 i(183718);	-- Extra Gooey Gorm Gunk
@@ -1207,18 +1188,6 @@ i(198453);	-- Unstable Azerite Grenade
 i(201438);	-- Weary Sands
 i(198486);	-- Windscale Rider
 i(194889);	-- XD-57 "Bullseye" Guided Rocket Kit
-i(197752);	-- Conveniently Packaged Ingredients
-i(200860);	-- Draconic Stopper
-i(191474);	-- Draconic Vial+
-i(194784);	-- Glittering Parchment
-i(198487);	-- Iridescent Water
-i(192833);	-- Misshapen Filigree
-i(197749);	-- Ohn'ahran Potato
-i(197751);	-- Pastry Packets
-i(190452);	-- Primal Flux
-i(197753);	-- Thaldraszian Cocoa Powder
-i(197750);	-- Three-Cheese Blend
-i(188152);	-- Gateway Control Shard
 --- Consumables Character Created ---
 i(198832);	-- Conjured Blubbery Muffin
 i(198833);	-- Conjured Celebratory Cake

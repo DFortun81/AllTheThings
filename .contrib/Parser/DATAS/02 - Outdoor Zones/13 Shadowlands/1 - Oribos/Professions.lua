@@ -7,63 +7,63 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 			n(156692, {	-- Distributor Au'burk <Engineering Supplies>
 				["coord"] = { 37.8, 43.6, ORIBOS },
 				["g"] = {
-				--	i(183952),	-- Machinist's Oil
+					i(183952),	-- Machinist's Oil
 				},
 			}),
 			n(156733, {	-- Distributor Au'kharn <Jewelcrafting Supplies>
 				["coord"] = { 39.2, 39.8, ORIBOS },
 				["g"] = {
-				--	i(173168),	-- Laestrite Setting
-				--	i(183954),	-- Malleable Wire
+					i(173168),	-- Laestrite Setting
+					i(183954),	-- Malleable Wire
 				},
 			}),
 			n(156689, {	-- Distributor Au'naci <Alchemy Supplies>
 				["coord"] = { 39.2, 39.8, ORIBOS },
 				["g"] = {
-				--	i(183950),	-- Distilled Death Extract
-				--	i(180732),	-- Rune Etched Vial
+					i(183950),	-- Distilled Death Extract
+					i(180732),	-- Rune Etched Vial
 				},
 			}),
 			n(156694, {	-- Distributor Au'resh <Enchanting Supplies>
 				["coord"] = { 47.6, 28.6, ORIBOS },
 				["g"] = {
-				--	i(183951),	-- Immortal Shard
+					i(183951),	-- Immortal Shard
 				},
 			}),
 			n(156732, {	-- Distributor Au'sha <Inscription Supplies>
 				["coord"] = { 36.2, 38.6, ORIBOS },
 				["g"] = {
-				--	i(173060),	-- Aerated Water
-				--	i(175886),	-- Dark Parchment
-				--	i(183953),	-- Sealing Wax
-				--	i(177061),	-- Twilight Bark
+					i(173060),	-- Aerated Water
+					i(175886),	-- Dark Parchment
+					i(183953),	-- Sealing Wax
+					i(177061),	-- Twilight Bark
 				},
 			}),
 			n(156696, {	-- Distributor Au'tem <Leatherworking & Tailoring Supplies>
 				["coord"] = { 44.6, 27.0, ORIBOS },
 				["g"] = {
-				--	i(183955),	-- Curing Salt
-				--	i(177062),	-- Penumbra Thread
+					i(183955),	-- Curing Salt
+					i(177062),	-- Penumbra Thread
 				},
 			}),
 			n(156777, {	-- Distributor Au'til <Trade Supplies>
 				["coord"] = { 39.6, 33.2, ORIBOS },
 				["g"] = {
-				--	i(180733),	-- Luminous Flux
-				--	i(178787),	-- Orboreal Shard
+					i(180733),	-- Luminous Flux
+					i(178787),	-- Orboreal Shard
 				},
 			}),
 			n(168353, {	-- Distributor Au'van <Cooking Vendor>
 				["coord"] = { 47.2, 23.8, ORIBOS },
 				["g"] = {
-				--	i(187812, {	-- Empty Kettle
-				--		["timeline"] = { ADDED_9_2_0 },
-				--	}),
-				--	i(172057),	-- Inconceivably Aged Vinegar
-				--	i(178786),	-- Lusterwheat Flour
-				--	i(172056),	-- Medley of Transplanar Spices
-				--	i(172059),	-- Rich Grazer Milk
-				--	i(172058),	-- Smuggled Azerothian Produce
+					i(187812, {	-- Empty Kettle
+						["timeline"] = { ADDED_9_2_0 },
+					}),
+					i(172057),	-- Inconceivably Aged Vinegar
+					i(178786),	-- Lusterwheat Flour
+					i(172056),	-- Medley of Transplanar Spices
+					i(172059),	-- Rich Grazer Milk
+					i(172058),	-- Smuggled Azerothian Produce
 				},
 			}),
 			prof(ALCHEMY, {
