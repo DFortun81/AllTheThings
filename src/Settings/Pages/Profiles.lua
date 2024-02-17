@@ -7,7 +7,11 @@ local child = settings:CreateOptionsPage(L["PROFILES_PAGE"])
 
 -- CONTENT
 local headerProfiles = child:CreateHeaderLabel(L["PROFILES_PAGE"])
-headerProfiles:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerProfiles:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerProfiles:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 local textCurrentProfile = child:CreateHeaderLabel(REFORGE_CURRENT..":")
 textCurrentProfile:SetPoint("TOPLEFT", headerProfiles, "BOTTOMLEFT", 0, -10)
@@ -38,8 +42,10 @@ local profileSelector = child:CreateScrollFrame()
 local profileScroller = profileSelector.ScrollContainer
 profileScroller:SetPoint("TOPLEFT", textboxNewProfile, "BOTTOMLEFT", 0, -10)
 profileScroller:SetPoint("RIGHT", textboxNewProfile, "RIGHT", 25, 0)
-profileScroller:SetHeight(475)
-settings.ApplyBackdropColor(profileScroller, 20, 20, 20, 1)
+profileScroller:SetHeight(420)
+local back = profileScroller:CreateTexture(nil, "BACKGROUND")
+back:SetColorTexture(20/255,20/255,20/255,1)
+back:SetAllPoints(profileScroller)
 
 -- Initialize Profiles Button
 local SelectedProfile;

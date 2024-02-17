@@ -40,6 +40,7 @@ local L = {
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
+	["UNOBTAINABLE_LABEL"] = "Unobtainable Content";
 	
 	-- About tab
 	["ABOUT_PAGE"] = "About";

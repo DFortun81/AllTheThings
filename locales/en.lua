@@ -499,7 +499,7 @@ local L = {
 
 	-- Filters tab
 	["TRACKING_PAGE"] = TRACKING;
-	["ITEM_FILTER_LABEL"] = AUCTION_CATEGORY_WEAPONS.." & "..ARMOR;
+	["ITEM_FILTER_LABEL"] = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
 	["CLASS_DEFAULTS_BUTTON_TOOLTIP"] = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";

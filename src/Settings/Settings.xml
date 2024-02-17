@@ -3,12 +3,13 @@
 	<Script file="Settings.lua"/>
 	<Script file="Retail Settings.lua"/>
 	<Script file="Pages/About.lua"/>
-	<Script file="Pages/Filters.lua"/>
-	<Script file="Pages/Filters - Weapons &amp; Armor.lua"/>
-	<Script file="Pages/Filters - Unobtainable.lua"/>
+	<Script file="Pages/General.lua"/>
+	<Script file="Pages/General - Filters.lua"/>
+	<Script file="Pages/General - Phases.lua"/>
+	<Script file="Pages/General - Unobtainables.lua"/>
 	<Script file="Pages/Interface.lua"/>
 	<Script file="Pages/Accessibility.lua"/>
-	<Script file="Pages/Debugging.lua"/>
+	<Script file="Pages/Information.lua"/>
 	<Script file="Pages/Features.lua"/>
 	<Script file="Pages/Sync.lua"/>
 	<Script file="Pages/Profiles.lua"/>

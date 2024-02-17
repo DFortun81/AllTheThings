@@ -6,7 +6,11 @@ local child = settings:CreateOptionsPage(L["INTERFACE_PAGE"])
 
 -- Column 1
 local headerTooltips = child:CreateHeaderLabel(L["TOOLTIP_LABEL"])
-headerTooltips:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerTooltips:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerTooltips:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 local checkboxShowTooltipHelp = child:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
 function(self)

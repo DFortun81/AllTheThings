@@ -729,13 +729,6 @@ settings.Refresh = function(self)
 	Callback(Refresh, self)
 end
 
--- Applies a basic backdrop color to a given frame
--- r/g/b expected in 1-255 range
-settings.ApplyBackdropColor = function(frame, r, g, b, a)
-	frame.back = frame:CreateTexture(nil, "BACKGROUND")
-	frame.back:SetColorTexture(r/255,g/255,b/255,a)
-	frame.back:SetAllPoints(frame)
-end
 local function Mixin(o, mixin)
 	for k,v in pairs(mixin) do
 		o[k] = v;
@@ -1058,7 +1051,7 @@ local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsF
 settings.Open = function(self)
 	openToCategory(RootCategoryID);
 end
-settings.CreateOptionsPage = function(self, text, parentCategory)
+settings.CreateOptionsPage = function(self, text, parentCategory, doNOTShowCommonHeader)
 	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
 	Mixin(subcategory, ATTSettingsPanelMixin);
 	self:RegisterObject(subcategory);
@@ -1082,6 +1075,30 @@ settings.CreateOptionsPage = function(self, text, parentCategory)
 		InterfaceOptions_AddCategory(subcategory);
 	end
 	Categories[text] = subcategory;
+	
+	if not doNOTShowCommonHeader then
+		local logo = subcategory:CreateTexture(nil, "ARTWORK");
+		logo:SetPoint("TOPLEFT", subcategory, "TOPLEFT", 8, -8);
+		logo:SetTexture(app.asset("Discord_2_64"));
+		logo:SetSize(36, 36);
+		logo:Show();
+
+		local title = subcategory:CreateHeaderLabel(L.TITLE);
+		title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+		title:SetScale(1.5);
+
+		local version = subcategory:CreateHeaderLabel(app.Version);
+		version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -8, -8);
+		version:SetJustifyH("RIGHT");
+
+		local separator = subcategory:CreateTexture(nil, "ARTWORK");
+		separator:SetPoint("LEFT", subcategory, "LEFT", 4, 0);
+		separator:SetPoint("RIGHT", subcategory, "RIGHT", -4, 0);
+		separator:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+		separator:SetColorTexture(1, 1, 1, 0.4);
+		separator:SetHeight(2);
+		subcategory.separator = separator;
+	end
 	return subcategory;
 end
 
@@ -1175,6 +1192,13 @@ end
 settings.ToggleBOEItems = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"))
+end
+settings.GetUnobtainableFilter = function(self, u)
+	return self:GetValue("Unobtainable", u)
+end
+settings.SetUnobtainableFilter = function(self, u, value)
+	self:SetValue("Unobtainable", u, value)
+	self:UpdateMode(1);
 end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
 -- so force it always

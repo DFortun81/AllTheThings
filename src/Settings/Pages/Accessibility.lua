@@ -9,7 +9,11 @@ local child = settings:CreateOptionsPage(L["ACCESSIBILITY_PAGE"], L.INTERFACE_PA
 
 -- Column 1
 local headerColors = child:CreateHeaderLabel(L["COLORS_ICONS"])
-headerColors:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerColors:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerColors:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 local textHeader = child:CreateTextLabel(Colorize(L["ACCESSIBILITY_EXPLAIN"], app.Colors.White))
 textHeader:SetPoint("TOPLEFT", headerColors, "BOTTOMLEFT", 0, -4)

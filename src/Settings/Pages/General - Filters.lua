@@ -2,11 +2,15 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Settings: General Page
-local child = settings:CreateOptionsPage("Weapons & Armor", "Filters")
+local child = settings:CreateOptionsPage("Filters", "General")
 
 -- Top 1
-local headerWeaponsAndArmor = child:CreateHeaderLabel(L["ITEM_FILTER_LABEL"])
-headerWeaponsAndArmor:SetPoint("TOPLEFT", child, 0, 0)
+local headerWeaponsAndArmor = child:CreateHeaderLabel(L.ITEM_FILTER_LABEL)
+if child.separator then
+	headerWeaponsAndArmor:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerWeaponsAndArmor:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 headerWeaponsAndArmor.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)

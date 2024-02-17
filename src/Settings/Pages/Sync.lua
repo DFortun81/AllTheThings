@@ -6,7 +6,11 @@ local child = settings:CreateOptionsPage(L["SYNC_PAGE"])
 
 -- CONTENT
 local headerSync = child:CreateHeaderLabel(L["ACCOUNT_SYNCHRONIZATION"])
-headerSync:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerSync:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerSync:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 local checkboxAutoSync = child:CreateCheckBox(L["AUTO_SYNC_ACC_DATA_CHECKBOX"],
 function(self)
@@ -31,7 +35,7 @@ local function InitializeATTSyncWindow()
 	syncWindow:SetPoint("LEFT", headerSync, 0, 0)
 	syncWindow:SetPoint("RIGHT", headerSync, "LEFT", 300, 0)
 	syncWindow:SetPoint("TOP", checkboxAutoSync, "BOTTOM", 0, 4)
-	syncWindow:SetHeight(560);
+	syncWindow:SetHeight(620);
 	syncWindow:SetClampedToScreen(false)
 	pcall(syncWindow.SetUserPlaced, syncWindow, false)
 	syncWindow:SetToplevel(false)

@@ -2,45 +2,6 @@ local appName, app = ...;
 local L = app.L;
 local settings = app.Settings;
 
--- Temporary stuff
-local UnobtainableSettingsBase = settings.__UnobtainableSettingsBase;
-
-local reasons = L["UNOBTAINABLE_ITEM_REASONS"];
-local UnobtainableFilterOnClick = function(self)
-	local checked = self:GetChecked();
-	if checked then
-		-- If the phase is active, fall through to the base setting.
-		if UnobtainableSettingsBase.__index[self.u] then
-			settings:SetUnobtainableFilter(self.u, nil);
-		else
-			settings:SetUnobtainableFilter(self.u, true);
-		end
-	else
-		settings:SetUnobtainableFilter(self.u, false);
-	end
-end;
-local UnobtainableOnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:SetChecked(settings:GetUnobtainableFilter(self.u));
-
-		local minimumBuild = reasons[self.u][4];
-		if minimumBuild and minimumBuild > app.GameBuildVersion then
-			self:Disable();
-			self:SetAlpha(0.2);
-		else
-			self:Enable();
-			self:SetAlpha(1);
-			if UnobtainableSettingsBase.__index[self.u] then
-				self.Text:SetTextColor(0.6, 0.7, 1);
-			else
-				self.Text:SetTextColor(1, 1, 1);
-			end
-		end
-	end
-end;
 
 ------------------------------------------
 -- The "General" Tab.					--
@@ -48,37 +9,8 @@ end;
 (function()
 local child = settings:CreateOptionsPage("General");
 
--- CONTENT
-
--- Top 1
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
 local ModeLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ModeLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ModeLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);
 ModeLabel:SetJustifyH("LEFT");
 ModeLabel:Show();
 app.AddEventHandler("OnSettingsRefreshed", function()
@@ -1198,36 +1130,10 @@ end)();
 -- The "Filters" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage("Filters");
-
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
+local child = settings:CreateOptionsPage("Filters", "General");
 
 local ItemFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ItemFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ItemFiltersLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);
 ItemFiltersLabel:SetJustifyH("LEFT");
 ItemFiltersLabel:SetText("Armor / Weapon Filters");
 ItemFiltersLabel:Show();
@@ -1409,143 +1315,7 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	end
 end);
 
-local GeneralUnobtainableFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-GeneralUnobtainableFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMRIGHT", -200, -8);
-GeneralUnobtainableFiltersLabel:SetJustifyH("LEFT");
-GeneralUnobtainableFiltersLabel:SetText("|CFFFFAAAAGeneral Unobtainable Filters|r");
-GeneralUnobtainableFiltersLabel:Show();
 
--- General Unobtainable Filters
-yoffset = -4;
-last = GeneralUnobtainableFiltersLabel;
-for i,u in ipairs({ 1, 2, 3, 4 }) do
-	local filter = child:CreateCheckBox(reasons[u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reasons[u][2]);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.u = u;
-	last = filter;
-	yoffset = 6;
-end
-end)();
-
-------------------------------------------
--- The "Phases" Tab.					--
-------------------------------------------
-(function()
-local child = settings:CreateOptionsPage("Phases");
-
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
-app.AddEventHandler("OnSettingsRefreshed", function()
-	if app.MODE_DEBUG then
-		-- Disable this Page?
-	else
-		-- Enable this Page?
-	end
-end);
-
--- Update the default unobtainable states based on build version.
-for u,reason in pairs(reasons) do
-	if reason[4] then
-		if app.GameBuildVersion >= reason[4] then
-			if reason[5] and app.GameBuildVersion >= reason[5] then
-				UnobtainableSettingsBase.__index[u] = true;
-			else
-				UnobtainableSettingsBase.__index[u] = false;
-			end
-		else
-			UnobtainableSettingsBase.__index[u] = false;
-		end
-	end
-end
-UnobtainableSettingsBase.__index[11] = true;
-
-local ClassicPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ClassicPhasesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
-ClassicPhasesLabel:SetJustifyH("LEFT");
-ClassicPhasesLabel:SetText("|CFFAAFFAAClassic Phases|r");
-ClassicPhasesLabel:Show();
-
--- Classic Phases
-local last, xoffset, yoffset, spacing, vspacing = ClassicPhasesLabel, 0, -4, 8, 1;
-for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, 0, -vspacing }, { 1604, 0, -vspacing }, { 1605, 0, -vspacing }, { 1606, spacing, -vspacing }, }) do
-	local u = o[1];
-	yoffset = o[3] or 6;
-	local reason = reasons[u];
-	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("LEFT", ClassicPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.8 or 1);
-	filter.u = u;
-	last = filter;
-end
-
-local TBCPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-TBCPhasesLabel:SetPoint("TOP", ClassicPhasesLabel, "TOP", 0, 0);
-TBCPhasesLabel:SetPoint("LEFT", line, "LEFT", 208, 0);
-TBCPhasesLabel:SetJustifyH("LEFT");
-TBCPhasesLabel:SetText("|CFFAAFFAATBC Phases|r");
-TBCPhasesLabel:Show();
-
-last, xoffset, yoffset = TBCPhasesLabel, 0, -4;
-for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing }, { 1802, spacing }, { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 1902, spacing }, { 20, 0, -vspacing }, { 21, 0 }, {2101, spacing, -vspacing }, { 2102, spacing }, { 2103, spacing }, { 2104, spacing }, { 2105, spacing }, { 2106, spacing }, { 2107, spacing }, { 1601, spacing, -vspacing }, }) do
-	local u = o[1];
-	yoffset = o[3] or 6;
-	local reason = reasons[u];
-	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("LEFT", TBCPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.8 or 1);
-	filter.u = u;
-	last = filter;
-end
-
-local WrathPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-WrathPhasesLabel:SetPoint("TOP", ClassicPhasesLabel, "TOP", 0, 0);
-WrathPhasesLabel:SetPoint("LEFT", line, "LEFT", 408, 0);
-WrathPhasesLabel:SetJustifyH("LEFT");
-WrathPhasesLabel:SetText("|CFFAAFFAAWrath Phases|r");
-WrathPhasesLabel:Show();
-
-last, xoffset, yoffset = WrathPhasesLabel, 0, -4;
-for i,o in ipairs({ { 30, 0, 0 }, {3001, spacing, -vspacing }, { 31, 0, -vspacing }, {3101, spacing, -vspacing }, { 32, 0, -vspacing }, { 33, 0 }, {3301, spacing, -vspacing }, {3302, spacing }, {3303, spacing }, }) do
-	local u = o[1];
-	yoffset = o[3] or 6;
-	local reason = reasons[u];
-	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("LEFT", WrathPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.8 or 1);
-	filter.u = u;
-	last = filter;
-end
 
 end)();
 
@@ -1555,34 +1325,8 @@ end)();
 (function()
 local child = settings:CreateOptionsPage("Interface");
 
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
 local TooltipLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+TooltipLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);
 TooltipLabel:SetJustifyH("LEFT");
 TooltipLabel:SetText("Tooltips");
 TooltipLabel:Show();
@@ -1952,7 +1696,7 @@ ShowPercentageCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
 ShowPercentageCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
 
 local DebuggingLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
+DebuggingLabel:SetPoint("TOPRIGHT", child.separator or child, "BOTTOMRIGHT", -220, -8);
 DebuggingLabel:SetJustifyH("LEFT");
 DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
@@ -2132,34 +1876,8 @@ end)();
 (function()
 local child = settings:CreateOptionsPage("Features");
 
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
 local CelebrationsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-CelebrationsLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 330, -8);
+CelebrationsLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 330, -8);
 CelebrationsLabel:SetJustifyH("LEFT");
 CelebrationsLabel:SetText("Celebrations & Sound Effects");
 CelebrationsLabel:Show();
@@ -2267,7 +1985,7 @@ OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenAuctionListAutomatically
 
 -- Window Manager
 local WindowButtons = {};
-local lastWindowButtonRow, lastWindowButtonDistance = line, -8;
+local lastWindowButtonRow, lastWindowButtonDistance = child.separator or child, -8;
 local OnClickForWindowButton = function(self)
 	if SettingsPanel and SettingsPanel:IsShown() then SettingsPanel:Hide(); end
 	local window = app:GetWindow(self.Suffix);
@@ -2288,8 +2006,8 @@ local SetWindowForButton = function(self, window)
 end
 local CreateWindowButton = function()
 	local row = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-	row:SetPoint("LEFT", line, "LEFT", 8, -8);
-	row:SetPoint("RIGHT", line, "LEFT", 300, -8);
+	row:SetPoint("LEFT", child.separator or child, "LEFT", 8, -8);
+	row:SetPoint("RIGHT", child.separator or child, "LEFT", 300, -8);
 	row:SetPoint("TOP", lastWindowButtonRow, "BOTTOM", 0, lastWindowButtonDistance);
 	row:SetHeight(17);
 	row:RegisterForClicks("AnyUp");

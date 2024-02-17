@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Settings: General Page
-local child = settings:CreateOptionsPage("Filters")
+local child = settings:CreateOptionsPage("General", nil, true)
 
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
@@ -74,7 +74,11 @@ end
 
 -- Top 1
 local headerMode = child:CreateHeaderLabel("")
-headerMode:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerMode:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerMode:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 headerMode.OnRefresh = function(self)
 	self:SetText(settings:GetModeString())
 end

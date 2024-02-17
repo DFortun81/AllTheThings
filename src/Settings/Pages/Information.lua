@@ -2,11 +2,15 @@ local _, app = ...;
 local L, settings, ipairs = app.L, app.Settings, ipairs;
 
 -- Settings: Interface Page
-local child = settings:CreateOptionsPage("Debugging", L.INTERFACE_PAGE)
+local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
 
 -- Column 1
 local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
-headerAdditionalInformation:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerAdditionalInformation:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerAdditionalInformation:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 -- TODO: localize
 local ids = {
@@ -120,7 +124,7 @@ for idNo,id in ipairs(idsArray) do
 end
 
 local headerReporting = child:CreateHeaderLabel(L["REPORTING_LABEL"])
-headerReporting:SetPoint("LEFT", child, 0, 0)
+headerReporting:SetPoint("LEFT", headerAdditionalInformation, 0, 0)
 headerReporting:SetPoint("TOP", last, "BOTTOM", 0, -8)
 
 local checkboxReportCollectedThings = child:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],

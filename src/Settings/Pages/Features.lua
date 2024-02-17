@@ -2,13 +2,17 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Settings: Features Page
-local child = settings:CreateOptionsPage(L["FEATURES_PAGE"])
+local child = settings:CreateOptionsPage(L["FEATURES_PAGE"], nil, true)
 
 -- CONTENT
 
 -- Column 1
 local headerCelebrations = child:CreateHeaderLabel(L["CELEBRATIONS_LABEL"])
-headerCelebrations:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerCelebrations:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerCelebrations:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 local textSoundChannel = child:CreateTextLabel("|cffFFFFFF"..L["AUDIO_CHANNEL"])
 textSoundChannel:SetPoint("TOPLEFT", headerCelebrations, "BOTTOMLEFT", 0, -8)

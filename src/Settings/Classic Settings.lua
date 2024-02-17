@@ -110,11 +110,9 @@ local GeneralSettingsBase = {
 local FilterSettingsBase = {
 	__index = app.Presets[app.Class] or app.Presets.ALL,
 };
-print("FILTER SETTINGS BASE", FilterSettingsBase.__index);
 local RWPFilterSettingsBase = {
 	__index = app.PresetRWPs[app.Class] or app.PresetRWPs.ALL,
 };
-print("RWPFILTER SETTINGS BASE", RWPFilterSettingsBase.__index);
 local TooltipSettingsBase = {
 	__index = {
 		["Auto:AuctionList"] = true,
@@ -360,14 +358,6 @@ end
 
 
 settings.Objects = {};
-
--- Applies a basic backdrop color to a given frame
--- r/g/b expected in 1-255 range
-settings.ApplyBackdropColor = function(frame, r, g, b, a)
-	frame.back = frame:CreateTexture(nil, "BACKGROUND")
-	frame.back:SetColorTexture(r/255,g/255,b/255,a)
-	frame.back:SetAllPoints(frame)
-end
 local function Mixin(o, mixin)
 	for k,v in pairs(mixin) do
 		o[k] = v;
@@ -696,7 +686,7 @@ Mixin(settings, ATTSettingsPanelMixin);
 local RootCategoryID, Categories = appName, {};
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
 settings.Open = function(self) openToCategory(RootCategoryID); end
-settings.CreateOptionsPage = function(self, text, parentCategory)
+settings.CreateOptionsPage = function(self, text, parentCategory, doNOTShowCommonHeader)
 	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
 	subcategory.CreateCheckBox = CreateCheckBox;
 	subcategory.CreateHeaderLabel = CreateHeaderLabel;
@@ -723,6 +713,30 @@ settings.CreateOptionsPage = function(self, text, parentCategory)
 		InterfaceOptions_AddCategory(subcategory);
 	end
 	Categories[text] = subcategory;
+	
+	if not doNOTShowCommonHeader then
+		local logo = subcategory:CreateTexture(nil, "ARTWORK");
+		logo:SetPoint("TOPLEFT", subcategory, "TOPLEFT", 8, -8);
+		logo:SetTexture(app.asset("Discord_2_64"));
+		logo:SetSize(36, 36);
+		logo:Show();
+
+		local title = subcategory:CreateHeaderLabel(L.TITLE);
+		title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+		title:SetScale(1.5);
+
+		local version = subcategory:CreateHeaderLabel(app.Version);
+		version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -8, -8);
+		version:SetJustifyH("RIGHT");
+
+		local separator = subcategory:CreateTexture(nil, "ARTWORK");
+		separator:SetPoint("LEFT", subcategory, "LEFT", 4, 0);
+		separator:SetPoint("RIGHT", subcategory, "RIGHT", -4, 0);
+		separator:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+		separator:SetColorTexture(1, 1, 1, 0.4);
+		separator:SetHeight(2);
+		subcategory.separator = separator;
+	end
 	return subcategory;
 end
 
@@ -849,7 +863,14 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.DefaultGroup(true)
 		filterSet.DefaultThing(true)
 		-- specifically hiding something
-		if true--[[settings:GetValue("Unobtainable", "DoFiltering")]] then
+		local anyFiltered = false
+		for k,v in pairs(L.UNOBTAINABLE_ITEM_REASONS) do
+			if not ATTClassicSettings.Unobtainable[k] then
+				anyFiltered = true;
+				break;
+			end
+		end
+		if settings:GetValue("Unobtainable", "DoFiltering") then
 			filterSet.Unobtainable(true)
 		else
 			filterSet.Unobtainable()

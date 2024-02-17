@@ -4,29 +4,12 @@ local L, settings = app.L, app.Settings;
 -- Settings: About Page
 local child = settings:CreateOptionsPage(appName)
 
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateHeaderLabel(L.TITLE);
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetScale(1.5);
-
-local version = child:CreateHeaderLabel(app.Version);
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
 local textAbout = child:CreateTextLabel(L.TITLE .. L.ABOUT_TOP)
-textAbout:SetPoint("TOPLEFT", line, 8, -8)
+if child.separator then
+	textAbout:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	textAbout:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 local SocialButtonEvents = {
 	OnClick = function(self)
