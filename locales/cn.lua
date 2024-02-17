@@ -562,7 +562,7 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	-- About tab
 		L.ABOUT_PAGE = "关于";
 		L.ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
-		L.ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（排名不分先后）\nGold，Dead Serious，Sanctuari，Molkree，Runawaynow，Braghe，Myrhial，Darkal，Tag，Jezartroz，Pr3vention, AlexSoft，Jenstonedart！\n|r名人堂：|CFFFFFFFF（排名不分先后）\nDaktar，Lucetia，Slumber，Avella，Aiue，Oiche，Oxlotus，Eiltherune，Blueyleader，Iyanden，BigBlaris，Talonzor，Mogwai，Heallie，Eckhardt，Boohyaka，Sadidorf\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以获得包中物品的收藏图标！ %s %s %s\n\n如需在线收集比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";
+		L.ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（排名不分先后）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先后）\n%s\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以获得包中物品的收藏图标！ %s %s %s\n\n如需在线收集比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";
 
 	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "切换账号模式";

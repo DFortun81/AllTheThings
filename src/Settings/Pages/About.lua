@@ -47,5 +47,43 @@ local buttonWago = child:CreateButton(
 buttonWago:SetPoint("TOPLEFT", buttonTwitch, "TOPRIGHT", 4, 0)
 buttonWago.copypasta = "https://addons.wago.io/addons/allthethings";
 
-local textShoutout = child:CreateTextLabel(L.ABOUT_BOTTOM:format(L.COLLECTED_ICON, L.COLLECTED_APPEARANCE_ICON, L.NOT_COLLECTED_ICON))
+local ACTIVE_CONTRIBUTORS = {
+	"AlexSoft",
+	"Braghe",
+	"Darkal",
+	"DeadSerious",
+	"Gold",
+	"Jenstonedart",
+	"Jezartroz",
+	"Molkree",
+	"Myrhial",
+	"Pr3vention",
+	"Runawaynow",
+	"Sanctuari",
+	"Tag",
+};
+local HALL_OF_FAME = {
+	"Aiue",
+	"Avella",
+	"BigBlaris",
+	"Blueyleader",
+	"Boohyaka",
+	"Daktar",
+	"Eckhardt",
+	"Eiltherune",
+	"Heallie",
+	"Iyanden",
+	"Lucetia",
+	"Mogwai",
+	"Oiche",
+	"Oxlotus",
+	"Sadidorf",
+	"Slumber",
+	"Talonzor",
+};
+
+local textShoutout = child:CreateTextLabel(L.ABOUT_BOTTOM:format(
+	app.TableConcat(ACTIVE_CONTRIBUTORS, nil, nil, ", "),
+	app.TableConcat(HALL_OF_FAME, nil, nil, ", "),
+	L.COLLECTED_ICON, L.COLLECTED_APPEARANCE_ICON, L.NOT_COLLECTED_ICON))
 textShoutout:SetPoint("BOTTOMLEFT", buttonCurseForge, "TOPLEFT", 0, 20)
