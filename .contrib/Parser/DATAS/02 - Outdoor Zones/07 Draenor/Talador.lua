@@ -2504,7 +2504,6 @@ root(ROOTS.Zones, {
 					o(228483, {	-- Rusted Lockbox
 						["questID"] = 34276,
 						["description"] = "Swim down to the bottom of the cavern.",
-						["modelID"] = 34286,
 						["coord"] = { 66.0, 85.1, TALADOR },
 						["sym"] = COMMON_TREASURE_SYM,
 					}),

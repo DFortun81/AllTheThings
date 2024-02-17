@@ -3,7 +3,7 @@
 -------------------------------------------
 root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_5 } }, {
 	header(HEADERS.Item, 186553, {	-- Gurgl
-		["modelID"] = 100676,
+		["displayID"] = 100676,
 		["modelScale"] = 1.1,
 		["g"] = {
 			q(64167,{	-- Pets Detective

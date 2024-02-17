@@ -226,7 +226,7 @@ local function TrySetModel(reference)
 			end
 		end
 
-		local displayID = AllowedDisplayID[reference.displayID] or reference.modelID;
+		local displayID = AllowedDisplayID[reference.displayID];
 		if displayID then
 			GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
 			GameTooltipModel.Model:SetCamDistanceScale(reference.modelScale or 1);

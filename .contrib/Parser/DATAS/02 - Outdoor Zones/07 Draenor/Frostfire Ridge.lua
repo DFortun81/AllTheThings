@@ -1694,7 +1694,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(226983, {	-- Crag-Leaper's Cache
-						["modelID"] = 65118,
 						["questID"] = 33940,
 						["coord"] = { 42.65, 31.74, FROSTFIRE_RIDGE },
 						["g"] = {
@@ -1937,7 +1936,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(220641, {	-- Thunderlord Cache
-						["modelID"] = 65118,
 						["questID"] = 32803,
 						["coord"] = { 34.2, 23.4, FROSTFIRE_RIDGE },
 						["g"] = {

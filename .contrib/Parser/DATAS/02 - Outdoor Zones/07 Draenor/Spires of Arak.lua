@@ -1998,7 +1998,6 @@ root(ROOTS.Zones, {
 					o(235168, {	-- Outcast's Pouch
 						["questID"] = 36446,
 						["coord"] = { 46.9, 34.0, SPIRES_OF_ARAK },
-						["modelID"] = 32854,
 						["sym"] = COMMON_TREASURE_SYM,
 					}),
 					o(234449, {	-- Relics of the Outcasts
@@ -2138,7 +2137,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(235307, {	-- Waterlogged Satchel
-						["modelID"] = 32854,
 						["questID"] = 36455,
 						["coord"] = { 66.5, 56.5, SPIRES_OF_ARAK },
 						["sym"] = COMMON_TREASURE_SYM,

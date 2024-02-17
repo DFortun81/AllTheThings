@@ -3,7 +3,7 @@
 -------------------------------------------
 root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } }, {
 	header(HEADERS.Spell, 329900, {	-- Glimr
-		["modelID"] = 96259,
+		["displayID"] = 96259,
 		["modelScale"] = 1.1,
 		["g"] = {
 			q(60605, {	-- Glimmerfin Scale

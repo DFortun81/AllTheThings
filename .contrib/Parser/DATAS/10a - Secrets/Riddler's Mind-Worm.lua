@@ -6,7 +6,7 @@ root(ROOTS.Secrets, {
 	header(HEADERS.Spell, 243025, {	-- Riddler's Mind-Worm
 		["description"] = "***'Show All Trackable Things' is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
 		["modelScale"] = .7,
-		["modelID"] = 74314,
+		["displayID"] = 74314,
 		["g"] = {
 			o(148502, {	-- Step 1: Page 9
 				["model"] = 305393,

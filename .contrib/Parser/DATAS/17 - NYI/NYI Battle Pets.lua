@@ -6,32 +6,32 @@ root(ROOTS.NeverImplemented, {
 		tier(CLASSIC_TIER, {
 			-- Without SpeciesID Attached
 			i(21168, {	-- Baby Shark (PET!)
-				["modelID"] = 21168,
+				["displayID"] = 21168,
 			}),
 			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
-				["modelID"] = 9209,
+				["displayID"] = 9209,
 			}),
 			i(18963, {	-- Turtle Egg (Albino)
-				-- ["modelID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(18964, {	-- Loggerhead Snapjaw / Turtle Egg (Loggerhead) (PET!)
-				["modelID"] = 14657,
+				["displayID"] = 14657,
 			}),
 			i(18965, {	-- Turtle Egg (Hawksbill)
-				-- ["modelID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(18966, {	-- Turtle Egg (Leatherback)
-				-- ["modelID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(18967, {	-- Turtle Egg (Olive)
-				-- ["modelID"] = ,
+				-- ["displayID"] = ,
 			}),
 
 			i(13342, {	-- Pet Fish (PET!)
-				-- ["modelID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(13343, {	-- Pet Stone (PET!)
-				-- ["modelID"] = ,
+				-- ["displayID"] = ,
 			}),
 		}),
 		tier(TBC_TIER, {
@@ -39,7 +39,7 @@ root(ROOTS.NeverImplemented, {
 			tier(TBC_TIER, 1.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_1 } }, {
 				-- Without SpeciesID Attached
 				i(31665, {	-- Toy RC Mortar Tank (PET!)
-					["modelID"] = 15382,
+					["displayID"] = 15382,
 				}),
 			})),
 
@@ -47,7 +47,7 @@ root(ROOTS.NeverImplemented, {
 			tier(TBC_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_2 } }, {
 				-- With SpeciesID Attached
 				i(32465, {	-- Lucky (PET!)
-					["modelID"] = 21328
+					["displayID"] = 21328
 				}),
 			})),
 
@@ -56,7 +56,7 @@ root(ROOTS.NeverImplemented, {
 			tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 				-- With SpeciesID Attached
 				i(23712, {	-- White Tiger Cub (PET!),  Comment: Later reused for Ash'ana.
-					["modelID"] = 16942,
+					["displayID"] = 16942,
 				}),
 			})),
 			-- #endif
@@ -66,7 +66,7 @@ root(ROOTS.NeverImplemented, {
 			tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 				-- Without SpeciesID Attached
 				i(39148, {	-- Baby Coralshell Turtle (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 			})),
 
@@ -74,7 +74,7 @@ root(ROOTS.NeverImplemented, {
 			tier(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
 				-- Without SpeciesID Attached
 				i(45942, {	-- XS-001 Constructor Bot (PET!)
-					["modelID"] = 29060,
+					["displayID"] = 29060,
 				}),
 			})),
 
@@ -82,7 +82,7 @@ root(ROOTS.NeverImplemented, {
 			tier(WOTLK_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_2 } }, {
 				-- Only SpeciesID
 				pet(230, {	-- Macabre Marionette (PET!)
-					["modelID"] = 29404,
+					["displayID"] = 29404,
 				}),
 			})),
 		}),
@@ -91,22 +91,22 @@ root(ROOTS.NeverImplemented, {
 			tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 				-- Without SpeciesID Attached
 				i(67417, {	-- [DND] Lil' Deathwing Placeholder (PET!)
-					["modelID"] = 28456,
+					["displayID"] = 28456,
 				}),
 				i(44972, {	-- Alarming Clockbot (NOT IN USE) (PET!)
-					["modelID"] = 14473,
+					["displayID"] = 14473,
 				}),
 				-- Special: Only SpellIDs (Not in PetDB!)
 				spell(89929, {	-- Rumbling Rockling (PET!)
-					["modelID"] = 36129,
+					["displayID"] = 36129,
 					["crs"] = { 48376 },	-- Rumbling Rockling
 				}),
 				spell(89930, {	-- Swirling Stormling (PET!)
-					["modelID"] = 36130,
+					["displayID"] = 36130,
 					["crs"] = { 48377 },	-- Swirling Stormling
 				}),
 				spell(89931, {	-- Whirling Waveling (PET!)
-					["modelID"] = 36131,
+					["displayID"] = 36131,
 					["crs"] = { 48378 },	-- Whirling Waveling
 				}),
 			})),
@@ -115,16 +115,16 @@ root(ROOTS.NeverImplemented, {
 			tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 				-- Without SpeciesID Attached
 				i(66075, {	-- Bubbles (PET!)
-					["modelID"] = 38311
+					["displayID"] = 38311
 				}),
 				i(62769, {	-- Hardboiled Egg (PET!)
-					["modelID"] = 15393
+					["displayID"] = 15393
 				}),
 				i(67600, {	-- Lil' Alexstrasza (PET!)
-					["modelID"] = 6290
+					["displayID"] = 6290
 				}),
 				i(66070, {	-- Lizzy (PET!)
-					["modelID"] = 36583
+					["displayID"] = 36583
 				}),
 			})),
 
@@ -132,7 +132,7 @@ root(ROOTS.NeverImplemented, {
 			tier(CATA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_2_0 } }, {
 				-- Only SpeciesID
 				pet(257, {	-- Murkimus the Gladiator (PET!)
-					["modelID"] = 28734,
+					["displayID"] = 28734,
 				}),
 			})),
 
@@ -140,10 +140,10 @@ root(ROOTS.NeverImplemented, {
 			tier(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
 				-- Only SpeciesID
 				pet(344, {	-- Green Balloon (PET!)
-					["modelID"] = 38340,
+					["displayID"] = 38340,
 				}),
 				pet(345, {	-- Yellow Balloon (PET!)
-					["modelID"] = 38341,
+					["displayID"] = 38341,
 				}),
 			})),
 		}),
@@ -286,97 +286,97 @@ root(ROOTS.NeverImplemented, {
 				pet(886),	-- Young Beaky (PET!)
 				-- Only SpeciesID
 				pet(705, {	-- Amorous Rooster (PET!)
-					["modelID"] = 304,
+					["displayID"] = 304,
 				}),
 				pet(832, {	-- Boomy Jr. (PET!)
-					["modelID"] = 8909,
+					["displayID"] = 8909,
 				}),
 				pet(1354, {	-- C92 Annihilator (PET!)
-					["modelID"] = 51661,
+					["displayID"] = 51661,
 				}),
 				pet(1257, {	-- Crafty (PET!)
-					["modelID"] = 49086,
+					["displayID"] = 49086,
 				}),
 				pet(390, {	-- Deer (PET!)
-					["modelID"] = 347,
+					["displayID"] = 347,
 				}),
 				pet(833, {	-- Dr. Stinky (PET!)
-					["modelID"] = 31275,
+					["displayID"] = 31275,
 				}),
 				pet(2, {	-- Dumptruck (PET!)
-					["modelID"] = 42299,
+					["displayID"] = 42299,
 				}),
 				pet(476, {	-- Gazelle (PET!)
-					["modelID"] = 1547,
+					["displayID"] = 1547,
 				}),
 				pet(462, {	-- Jacob the Test Seagull (PET!)
-					["modelID"] = 36499,
+					["displayID"] = 36499,
 				}),
 				pet(827, {	-- Lady Burninator (PET!)
-					["modelID"] = 42745,
+					["displayID"] = 42745,
 				}),
 				pet(828, {	-- Lord Landslide (PET!)
-					["modelID"] = 35015,
+					["displayID"] = 35015,
 				}),
 				pet(829, {	-- Madam Flapsalot (PET!)
-					["modelID"] = 16731,
+					["displayID"] = 16731,
 				}),
 				pet(831, {	-- Miss Mystical (PET!)
-					["modelID"] = 65833,
+					["displayID"] = 65833,
 				}),
 				pet(825, {	-- Mr. Growls (PET!)
-					["modelID"] = 36549,
+					["displayID"] = 36549,
 				}),
 				pet(826, {	-- Mrs. Skitters (PET!)
-					["modelID"] = 43199,
+					["displayID"] = 43199,
 				}),
 				pet(824, {	-- Ms. Croaker (PET!)
-					["modelID"] = 6297,
+					["displayID"] = 6297,
 				}),
 				pet(800, {	-- Muffin (PET!)
-					["modelID"] = 44604,
+					["displayID"] = 44604,
 				}),
 				pet(486, {	-- Mule Deer (PET!)
-					["modelID"] = 45890,
+					["displayID"] = 45890,
 				}),
 				pet(384, {	-- Otter Pup (PET!)
-					["modelID"] = 42983,
+					["displayID"] = 42983,
 				}),
 				pet(354, {	-- PattyMack - WildBattlePet Test (PET!)
-					["modelID"] = 10090,
+					["displayID"] = 10090,
 				}),
 				pet(444, {	-- PattyMack 2.0 - WildBattlePet Test (PET!)
-					["modelID"] = 10090,
+					["displayID"] = 10090,
 				}),
 				pet(510, {	-- Rabbot (PET!)
-					["modelID"] = 33559,
+					["displayID"] = 33559,
 				}),
 				pet(434, {	-- Ram (PET!)
-					["modelID"] = 10000,
+					["displayID"] = 10000,
 				}),
 				pet(394, {	-- Sheep (PET!)
-					["modelID"] = 856,
+					["displayID"] = 856,
 				}),
 				pet(830, {	-- Sir Buckethead (PET!)
-					["modelID"] = 28734,
+					["displayID"] = 28734,
 				}),
 				pet(864, {	-- Spider (PET!)
-					["modelID"] = 44816,
+					["displayID"] = 44816,
 				}),
 				pet(375, {	-- The Gurkster (PET!)
-					["modelID"] = 32313,
+					["displayID"] = 32313,
 				}),
 				pet(863, {	-- Widow Spiderling (PET!)
-					["modelID"] = 35424,
+					["displayID"] = 35424,
 				}),
 				pet(715, {	-- Wild Silkworm (PET!)
-					["modelID"] = 40630,
+					["displayID"] = 40630,
 				}),
 				pet(71, {	-- Unknown (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				pet(73, {	-- Unknown (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				-- Without SpeciesID Attached
 				i(88148),	-- Jade Crane Chick (PET!) [Jade Crane Chick, item was never used]
@@ -463,13 +463,13 @@ root(ROOTS.NeverImplemented, {
 				pet(1319),	-- Zao, Calfling of Niuzao (PET!)
 				-- Only SpeciesID
 				pet(1258, {	-- Angara (PET!)
-					["modelID"] = 42229,
+					["displayID"] = 42229,
 				}),
 				pet(1354, {	-- C92 Annihilator (PET!)
-					["modelID"] = 51661,
+					["displayID"] = 51661,
 				}),
 				pet(1257, {	-- Crafty (PET!)
-					["modelID"] = 49086,
+					["displayID"] = 49086,
 				}),
 			})),
 		}),
@@ -539,32 +539,32 @@ root(ROOTS.NeverImplemented, {
 				pet(1550),	-- Wolfus (PET!)
 				-- Only SpeciesID
 				pet(1423, {	-- Bitey (PET!)
-					["modelID"] = 47731,
+					["displayID"] = 47731,
 				}),
 				pet(1420, {	-- Evil Widowling (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				pet(1352, {	-- Lord Piglet (PET!)
-					["modelID"] = 22938,
+					["displayID"] = 22938,
 				}),
 				pet(1404, {	-- Mechanical Scorpid (PET!)
-					["modelID"] = 5905,
+					["displayID"] = 5905,
 				}),
 				pet(1410, {	-- Mechanical Training Dummy (PET!)
-					["modelID"] = 33559,
+					["displayID"] = 33559,
 				}),
 				pet(1610, {	-- Unborn Val'kyr (PET!)
-					["modelID"] = 48650,
+					["displayID"] = 48650,
 				}),
 				pet(1259, {	-- Widowling (PET!)
-					["modelID"] = 40337,
+					["displayID"] = 40337,
 				}),
 				-- With SpeciesID Attached
 				i(118597, {	-- Kelp Sproutling (PET!)
-					["modelID"] = 57822,
+					["displayID"] = 57822,
 				}),
 				i(118596, {	-- Sassy Sproutling (PET!)
-					["modelID"] = 57820,
+					["displayID"] = 57820,
 				}),
 				-- Without SpeciesID Attached
 				i(113569),	-- Autumnal Sproutling (PET!) [Autumnal Sproutling, item was never used]
@@ -705,13 +705,13 @@ root(ROOTS.NeverImplemented, {
 				pet(1772),	-- Wumpas (PET!)
 				-- With SpeciesID Attached
 				i(136907, {	-- Black Piglet (PET!)
-					["modelID"] = 65670,
+					["displayID"] = 65670,
 				}),
 				i(136906, {	-- Brown Piglet (PET!)
-					["modelID"] = 65669,
+					["displayID"] = 65669,
 				}),
 				i(129108, {	-- Son of Goredome (PET!)
-					["modelID"] = 65527,
+					["displayID"] = 65527,
 				}),
 				-- Without SpeciesID Attached
 				i(136897),	-- Northern Hawk Owl (PET!) [Northern Hawk Owl, item was never used]
@@ -759,7 +759,7 @@ root(ROOTS.NeverImplemented, {
 				pet(1991),	-- Vilefang (PET!)
 				-- Only SpeciesID
 				pet(2046, {	-- Arne's Test Pet (PET!)
-					["modelID"] = 70068,
+					["displayID"] = 70068,
 				}),
 			})),
 
@@ -780,7 +780,7 @@ root(ROOTS.NeverImplemented, {
 				pet(2023),	-- Unfortunate Defias (PET!)
 				-- Only SpeciesID
 				pet(2061, {	-- Test Dragon Pet (PET!)
-					["modelID"] = 90413,
+					["displayID"] = 90413,
 				}),
 			})),
 
@@ -810,7 +810,7 @@ root(ROOTS.NeverImplemented, {
 				pet(2107),	-- Watcher (PET!)
 				-- Only SpeciesID
 				pet(2048, {	-- Golden Retriever (PET!)
-					["modelID"] = 76046,
+					["displayID"] = 76046,
 				}),
 			})),
 		}),
@@ -886,36 +886,36 @@ root(ROOTS.NeverImplemented, {
 				pet(2366),	-- Whiplash (PET!)
 				-- Only SpeciesID
 				pet(2076, {	-- SpeedyNumberIII (PET!)
-					["modelID"] = 304,
+					["displayID"] = 304,
 				}),
 				-- With SpeciesID Attached
 				i(162686, {	-- REUSE \\ Demon Goat (PET!)
-					["modelID"] = 80456,
+					["displayID"] = 80456,
 				}),
 				-- Without SpeciesID Attached
 				i(163553, {	-- Digitized Assistant (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(163554, {	-- Finicky Gauntlet (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(163557, {	-- Gigan Tarantula (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(154703, {	-- Hot Air Baloon (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(163556, {	-- Mechanized Gulper (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(163559, {	-- Queen Cobra (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(152879, {	-- REUSE ME (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(152880, {	-- REUSE ME (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 			})),
 
@@ -943,14 +943,14 @@ root(ROOTS.NeverImplemented, {
 				pet(2497),	-- Ultra Safe Napalm Carrier (PET!)
 				-- Only SpeciesID
 				pet(2481, {	-- Unknown (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				-- With SpeciesID Attached
 				i(166358, {	-- Proper Parrot (PET!)
-					["modelID"] = 80413,
+					["displayID"] = 80413,
 				}),
 				i(164629, {	-- Test Pet (PET!)
-					["modelID"] = 38484,
+					["displayID"] = 38484,
 				}),
 				-- Without SpeciesID Attached
 				i(166791),	-- Corlain Falcon (PET!) [Item was never used]
@@ -960,7 +960,7 @@ root(ROOTS.NeverImplemented, {
 			tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
 				-- With SpeciesID Attached
 				i(154902, {	-- Perculia's Peculiar Parrot (PET!)
-					["modelID"] = 58823,
+					["displayID"] = 58823,
 				}),
 			})),
 
@@ -1017,7 +1017,7 @@ root(ROOTS.NeverImplemented, {
 				pet(2607),	-- Zasz the Tiny (PET!)
 				-- Without SpeciesID Attached
 				i(169195, {	-- Golden Cricket (PET!)
-					["modelID"] = 88784,
+					["displayID"] = 88784,
 				}),
 			})),
 
@@ -1058,7 +1058,7 @@ root(ROOTS.NeverImplemented, {
 				pet(2821),	-- Wilbur (PET!)
 				-- Only SpeciesID
 				pet(2871, {	-- Pet Training Dummy (PET!)
-					["modelID"] = 3019,
+					["displayID"] = 3019,
 				}),
 			})),
 		}),
@@ -1107,7 +1107,7 @@ root(ROOTS.NeverImplemented, {
 				pet(2996),	-- Wretch (PET!)
 				-- Only SpeciesID
 				pet(2951, {	-- PH Slime (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				-- Without SpeciesID Attached
 				i(180838),	-- Blue Etherwyrm (PET!) [Wild Etherwyrm, item was never used]
@@ -1156,7 +1156,7 @@ root(ROOTS.NeverImplemented, {
 				pet(3090),	-- Squibbles (PET!)
 				-- Without SpeciesID Attached
 				i(186545, {	-- REUSE (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 			})),
 
@@ -1164,7 +1164,7 @@ root(ROOTS.NeverImplemented, {
 			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 				-- Only SpeciesID
 				pet(3188, {	-- Trub'ul (PET!)
-					["modelID"] = 103091,
+					["displayID"] = 103091,
 				}),
 				-- Without SpeciesID Attached
 				i(188837),	-- Blinky Egg (PET!) [Item Never Available]
@@ -1174,7 +1174,7 @@ root(ROOTS.NeverImplemented, {
 			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
 				-- Only SpeciesID
 				pet(3246, {	-- Tezpet (PET!)
-					["modelID"] = 92261,
+					["displayID"] = 92261,
 				}),
 			})),
 
@@ -1207,75 +1207,75 @@ root(ROOTS.NeverImplemented, {
 				-- Only SpeciesID
 				pet(3339, {	-- Black Dragon Whelp (PET!)
 					["name"] = "Black Dragon Whelp",
-					["modelID"] = 107459,
+					["displayID"] = 107459,
 				}),
 				pet(3340, {	-- Blue Dragon Whelp (PET!)
 					["name"] = "Blue Dragon Whelp",
-					["modelID"] = 107460,
+					["displayID"] = 107460,
 				}),
 				pet(3343, {	-- Bronze Dragon Whelp (PET!)
 					["name"] = "Bronze Dragon Whelp",
-					["modelID"] = 107461,
+					["displayID"] = 107461,
 				}),
 				pet(3361, {	-- Diamond Crab (PET!)
-					["modelID"] = 107825,
+					["displayID"] = 107825,
 				}),
 				pet(3341, {	-- Red Dragon Whelp (PET!)
 					["name"] = "Red Dragon Whelp",
-					["modelID"] = 107464,
+					["displayID"] = 107464,
 				}),
 				pet(3362, {	-- Sapphire Crab (PET!)
-					["modelID"] = 107826,
+					["displayID"] = 107826,
 				}),
 				pet(3364, {	-- Striped Snakebiter (PET!)
-					["modelID"] = 107830,
+					["displayID"] = 107830,
 				}),
 				pet(3257, {	-- Test Beetle (PET!)
-					["modelID"] = 100375,
+					["displayID"] = 100375,
 				}),
 				pet(3308, {	-- Time-Lost Duckling (PET!)
-					["modelID"] = 106641,
+					["displayID"] = 106641,
 				}),
 				pet(3363, {	-- Truesilver Crab (PET!)
-					["modelID"] = 107827,
+					["displayID"] = 107827,
 				}),
 				-- With SpeciesID Attached
 				i(193614, {	-- Groundshaker (PET!)
-					["modelID"] = 106649,
+					["displayID"] = 106649,
 				}),
 				i(191946, {	-- Mister Muskoxeles (PET!)
-					["modelID"] = 106681,
+					["displayID"] = 106681,
 				}),
 				i(193380, {	-- Pink Salamanther (PET!)
-					["modelID"] = 106629,
+					["displayID"] = 106629,
 				}),
 				i(193587, {	-- Time-Lost Duck (PET!)
-					["modelID"] = 106635,
+					["displayID"] = 106635,
 				}),
 				i(193620, {	-- Time-Lost Slyvern (PET!)
-					["modelID"] = 106661,
+					["displayID"] = 106661,
 				}),
 				i(193068, {	-- Time-Lost Treeflitter (PET!)
-					["modelID"] = 106606,
+					["displayID"] = 106606,
 				}),
 				-- Without SpeciesID Attached
 				i(191126, {	-- Obsidian Whelpling (PET!)
-					["modelID"] = 107454,
+					["displayID"] = 107454,
 				}),
 				i(192050, {	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE] (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(193863, {	-- zzOld - [PH] Dark Baby Vorquin (REUSE) (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(193063, {	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE) (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(193862, {	-- zzOld - [PH] Pale Baby Vorquin (REUSE) (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 				i(191929, {	-- zzOld - [PH] White Flying Squirrel (REUSE) (PET!)
-					-- ["modelID"] = ,
+					-- ["displayID"] = ,
 				}),
 			})),
 
@@ -1289,11 +1289,11 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				-- Only SpeciesID
 				pet(3254, {	-- Watcher of the Huntress (PET!)
-					["modelID"] = 105429,
+					["displayID"] = 105429,
 				}),
 				-- With SpeciesID Attached
 				i(190173, {	-- Lil' Maka'jin (PET!)
-					["modelID"] = 83638,
+					["displayID"] = 83638,
 				}),
 			})),
 
@@ -1334,20 +1334,20 @@ root(ROOTS.NeverImplemented, {
 				pet(3455),	-- Yu'shor (PET!)
 				-- Only SpeciesID
 				pet(3424, {	-- [DNT] Storm Pet Boss - Epic (PET!)
-					["modelID"] = 106894,
+					["displayID"] = 106894,
 				}),
 				pet(3422, {	-- [DNT] Storm Pet Boss - Legendary (PET!)
-					["modelID"] = 106894,
+					["displayID"] = 106894,
 				}),
 				pet(3425, {	-- [DNT] Storm Pet Boss - Rare (PET!)
-					["modelID"] = 106894,
+					["displayID"] = 106894,
 				}),
 				pet(3423, {	-- [DNT] Storm Pet Fodder (PET!)
-					["modelID"] = 106894,
+					["displayID"] = 106894,
 				}),
 				pet(3471, {	-- Gilded Mechafrog (PET!)
 					["name"] = "Gilded Mechafrog",
-					["modelID"] = 111667,
+					["displayID"] = 111667,
 				}),
 			})),
 
@@ -1368,67 +1368,67 @@ root(ROOTS.NeverImplemented, {
 				pet(3569),	-- Tempe (PET!)
 				-- With SpeciesID Attached
 				i(205004, {	-- Azure Swoglet (PET!)
-					["modelID"] = 112144,
+					["displayID"] = 112144,
 				}),
 				i(205054, {	-- Amador (PET!)
-					["modelID"] = 112171,
+					["displayID"] = 112171,
 				}),
 				i(205032, {	-- Bestial Lurker (PET!)
-					["modelID"] = 112162,
+					["displayID"] = 112162,
 				}),
 				i(205011, {	-- Bronze Swoglet (PET!)
-					["modelID"] = 112148,
+					["displayID"] = 112148,
 				}),
 				i(205017, {	-- Byrn (PET!)
-					["modelID"] = 112151,
+					["displayID"] = 112151,
 				}),
 				i(205008, {	-- Emerald Swoglet (PET!)
-					["modelID"] = 112145,
+					["displayID"] = 112145,
 				}),
 				i(205148, {	-- Dread Shalewing (PET!)
-					["modelID"] = 112186,
+					["displayID"] = 112186,
 				}),
 				i(205018, {	-- Jade Skitterbug (PET!)
-					["modelID"] = 112155,
+					["displayID"] = 112155,
 				}),
 				i(205116, {	-- Jerrie (PET!)
-					["modelID"] = 112173,
+					["displayID"] = 112173,
 				}),
 				i(205166, {	-- Kromos (PET!)
-					["modelID"] = 112205,
+					["displayID"] = 112205,
 				}),
 				i(205013, {	-- Lettuce (PET!)
-					["modelID"] = 112149,
+					["displayID"] = 112149,
 				}),
 				i(205153, {	-- Mikah (PET!)
-					["modelID"] = 112190,
+					["displayID"] = 112190,
 				}),
 				i(205149, {	-- Ravenous Shalewing (PET!)
-					["modelID"] = 112187,
+					["displayID"] = 112187,
 				}),
 				i(205122, {	-- Roseshell (PET!)
-					["modelID"] = 112179,
+					["displayID"] = 112179,
 				}),
 				i(205053, {	-- Rusty (PET!)
-					["modelID"] = 112170,
+					["displayID"] = 112170,
 				}),
 				i(205023, {	-- Savage Lobstrok (PET!)
-					["modelID"] = 112158,
+					["displayID"] = 112158,
 				}),
 				i(205164, {	-- Senega (PET!)
-					["modelID"] = 112203,
+					["displayID"] = 112203,
 				}),
 				i(205150, {	-- Shalewing Devourer (PET!)
-					["modelID"] = 112188,
+					["displayID"] = 112188,
 				}),
 				i(205035, {	-- Snapjaw Lurker (PET!)
-					["modelID"] = 112163,
+					["displayID"] = 112163,
 				}),
 				i(205157, {	-- Undermoth (PET!)
-					["modelID"] = 112196,
+					["displayID"] = 112196,
 				}),
 				i(205037, {	-- Void Lurker (PET!)
-					["modelID"] = 112164,
+					["displayID"] = 112164,
 				}),
 			})),
 
@@ -1442,7 +1442,7 @@ root(ROOTS.NeverImplemented, {
 				pet(4237),	-- Treanthony (PET!)
 				-- With SpeciesID Attached
 				i(206174, {	-- Blub (PET!)
-					["modelID"] = 112678,
+					["displayID"] = 112678,
 				}),
 			})),
 
@@ -1456,7 +1456,7 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				-- With SpeciesID Attached
 				i(210409, {	-- Aura (PET!) [Trading Post?]
-					["modelID"] = 114495,
+					["displayID"] = 114495,
 				}),
 			})),
 		}),

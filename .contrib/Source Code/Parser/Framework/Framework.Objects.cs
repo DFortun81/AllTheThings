@@ -1554,7 +1554,6 @@ end");
                         case "creatureID":
                         case "criteriaID":
                         case "displayID":   // This is now dynamic!
-                        case "modelID":   // This is now dynamic!
                         case "sourceID":
                         case "ilvl":
                         case "b":
@@ -1868,7 +1867,6 @@ end");
                     case "class":
                     case "subclass":
                     case "inventoryType":
-                    case "modelID":
                     case "style":
                     case "creatureID":
                     case "npcID":

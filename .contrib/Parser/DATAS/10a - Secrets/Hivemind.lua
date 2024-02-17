@@ -6,7 +6,7 @@ root(ROOTS.Secrets, {
 	n(-807, {	-- The Hivemind
 		["description"] = "Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
 		["modelScale"] = 1.1,
-		["modelID"] = 88835,
+		["displayID"] = 88835,
 		["g"] = {
 			o(13000000, {	-- Step 1: Purchase Talisman of True Treasure Tracking
 				["description"] = "|cFFFFFFFFSTEP 1:|r Purchase |cFFFFD700Talisman of True Treasure Tracking|r. This can be bought from |cFFFFD700Griftah|r in |cFFFFD700Shattrath City|r at |cFFFFFFFF65.6, 69.3|r for 35g\n",

@@ -1340,7 +1340,6 @@ namespace ATT
                 case "maps":
                 case "missionID":
                 case "model":
-                case "modelID":
                 case "modelRotation":
                 case "modelScale":
                 case "musicRollID":

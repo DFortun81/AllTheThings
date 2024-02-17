@@ -1560,7 +1560,6 @@ root(ROOTS.Zones, {
 					}),
 					o(236755, {	-- Dusty Lockbox
 						["description"] = "Go up the path and jump on the standing stones.  Follow them across to the second set of coords.",
-						["modelID"] = 34286,
 						["questID"] = 36879,
 						["coords"] = {
 							{ 28.0, 38.5, DRAENOR_SHADOWMOON_VALLEY },	-- Path up starts
@@ -1680,7 +1679,6 @@ root(ROOTS.Zones, {
 					o(226861, {	-- Ronokk's Belongings
 						["questID"] = 33886,
 						["coord"] = { 31.3, 39.1, DRAENOR_SHADOWMOON_VALLEY },
-						["modelID"] = 34286,
 						["g"] = {
 							i(109081),	-- Ronokk's Greatcloak
 						},

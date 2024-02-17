@@ -7,7 +7,7 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { A
 	["lvl"] = 110,
 	["g"] = {
 		o(9999946, {	-- Summon Baa'l
-			["modelID"] = 80456,	-- Baa'l
+			["displayID"] = 80456,	-- Baa'l
 			["questID"] = 52829,
 			["sourceQuests"] = { 52828 },
 			["description"] = "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!",

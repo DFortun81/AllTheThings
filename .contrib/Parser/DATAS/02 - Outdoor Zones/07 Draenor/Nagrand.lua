@@ -2141,7 +2141,6 @@ root(ROOTS.Zones, {
 					o(233658, {	-- Adventurer's Pouch
 						["description"] = "Follow coords in order, start at cave and follow ramp to reach the pouch.",
 						["questID"] = 36088,
-						["modelID"] = 32854,
 						["coords"] = {
 							{ 56.4, 61.8, DRAENOR_NAGRAND },	-- Cave Entrance
 							{ 64.2, 37.9, 553 },	-- Start of Ramp
@@ -2152,11 +2151,9 @@ root(ROOTS.Zones, {
 					o(233623, {	-- Adventurer's Pouch
 						["questID"] = 36050,
 						["coord"] = { 56.6, 72.9, DRAENOR_NAGRAND },
-						["modelID"] = 32854,
 						["sym"] = COMMON_TREASURE_SYM,
 					}),
 					o(233499, {	-- Adventurer's Sack
-						["modelID"] = 32854,
 						["questID"] = 35955,
 						["coord"] = { 73.9, 14.1, DRAENOR_NAGRAND },
 						["sym"] = COMMON_TREASURE_SYM,

@@ -6,7 +6,7 @@ root(ROOTS.Secrets, {
 	header(HEADERS.Spell, 247402, {	-- Lucid Nightmare
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
 		["modelScale"] = .8,
-		["modelID"] = 78092,
+		["displayID"] = 78092,
 		["g"] = {
 			o(270855, {	-- Step 1: Inconspicuous Note
 				["model"] = 1661948,

@@ -1179,9 +1179,6 @@ local function RowOnEnter(self)
 		if reference.displayID and app.Settings:GetTooltipSetting("displayID") then
 			GameTooltip:AddDoubleLine("Display ID", reference.displayID);
 		end
-		if reference.modelID and app.Settings:GetTooltipSetting("modelID") then
-			GameTooltip:AddDoubleLine("Model ID", reference.modelID);
-		end
 		if reference.cost then
 			if type(reference.cost) == "table" then
 				local _, name, icon, amount;
