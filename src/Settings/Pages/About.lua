@@ -50,6 +50,7 @@ buttonWago.copypasta = "https://addons.wago.io/addons/allthethings";
 local ACTIVE_CONTRIBUTORS = {
 	"AlexSoft",
 	"Braghe",
+	"Danny Donkey",
 	"Darkal",
 	"DeadSerious",
 	"Gold",
@@ -60,6 +61,7 @@ local ACTIVE_CONTRIBUTORS = {
 	"Pr3vention",
 	"Runawaynow",
 	"Sanctuari",
+	"ShadowBrooks",
 	"Tag",
 };
 local HALL_OF_FAME = {
@@ -78,6 +80,7 @@ local HALL_OF_FAME = {
 	"Oiche",
 	"Oxlotus",
 	"Sadidorf",
+	"Silly",
 	"Slumber",
 	"Talonzor",
 };
