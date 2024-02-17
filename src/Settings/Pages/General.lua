@@ -294,15 +294,9 @@ child:CreateAccountWideCheckbox("FLIGHT_PATHS", "FlightPaths")
 child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths")
 	:AlignAfter(accwideCheckboxFlightPaths)
 
-local accwideCheckboxFollowers =
-child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
-	:AlignBelow(accwideCheckboxFlightPaths)
-child:CreateTrackingCheckbox("FOLLOWERS", "Followers")
-	:AlignAfter(accwideCheckboxFollowers)
-
 local accwideCheckboxQuests =
 child:CreateAccountWideCheckbox("QUESTS", "Quests")
-	:AlignBelow(accwideCheckboxFollowers)
+	:AlignBelow(accwideCheckboxFlightPaths)
 local checkboxQuests =
 child:CreateTrackingCheckbox("QUESTS", "Quests")
 	:AlignAfter(accwideCheckboxQuests)
@@ -513,11 +507,19 @@ headerExpansionThings.OnRefresh = function(self)
 	end
 end
 
+
+
+local accwideCheckboxFollowers =
+child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
+accwideCheckboxFollowers:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
+child:CreateTrackingCheckbox("FOLLOWERS", "Followers")
+	:AlignAfter(accwideCheckboxFollowers)
+
 local accwideCheckboxMusicRollsAndSelfieFilters =
 child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+	:AlignBelow(accwideCheckboxFollowers)
 child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
 	:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
-accwideCheckboxMusicRollsAndSelfieFilters:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
 
 local accwideCheckboxAzeriteEssences =
 child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
