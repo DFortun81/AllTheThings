@@ -222,7 +222,7 @@ localize(L.HEADER_NAMES, {
 	[-1000003] = "West",
 	[-1000004] = ACHIEVEMENTS,
 	[-1000005] = TRACKER_HEADER_BONUS_OBJECTIVES,
-	[-1000006] = _.L.BONUS_ROLL,
+	[-1000006] = "Bonus Roll",
 	[-1000007] = RAID_BOSSES,
 	[-1000008] = "Class Trial",
 	[-1000009] = CLASS,
@@ -10612,6 +10612,7 @@ localize(_.CategoryNames, {
 	[1022] = "Köder",
 });
 localize(L.HEADER_NAMES, {
+	[-1000006] = "Zusätzliche Beute",
 	[-1000008] = "Klassenprozess",
 	[-1000010] = "Gemeinsame Bossbeute",
 	[-1000019] = "Erkundung",
@@ -14109,6 +14110,7 @@ localize(_.CategoryNames, {
 	[1022] = "Señuelos",
 });
 localize(L.HEADER_NAMES, {
+	[-1000006] = "Rollo de Donificación",
 	[-1000008] = "Prueba de Clase",
 	[-1000087] = "Asaltos de las Curias",
 	[-1000089] = "Mejoras del sagrario",
@@ -17498,6 +17500,7 @@ localize(L.HEADER_NAMES, {
 	[-1000001] = "Nord",
 	[-1000002] = "Sud",
 	[-1000003] = "Ouest",
+	[-1000006] = "Rouleau Bonus",
 	[-1000008] = "Essai de Classe",
 	[-1000012] = "Objet commun de donjon",
 	[-1000013] = "Objets communs des vendeurs",
@@ -21004,6 +21007,7 @@ localize(_.CategoryNames, {
 	[1022] = "Esche",
 });
 localize(L.HEADER_NAMES, {
+	[-1000006] = "Tiro Bonus",
 	[-1000008] = "Prova di Classe",
 	[-1000087] = "Assalti delle Congreghe",
 	[-1000089] = "Potenziamenti al Santuario",
@@ -24230,6 +24234,7 @@ localize(_.CategoryNames, {
 	[1022] = "미끼",
 });
 localize(L.HEADER_NAMES, {
+	[-1000006] = "보너스 롤",
 	[-1000008] = "학급 재판",
 	[-1000087] = "성약의 습격",
 	[-1000089] = "성소 강화",
@@ -27374,6 +27379,7 @@ localize(_.CategoryNames, {
 	[1022] = "Iscas",
 });
 localize(L.HEADER_NAMES, {
+	[-1000006] = "Rolo de Bônus",
 	[-1000008] = "Teste de Classe",
 	[-1000087] = "Ataques Pactos",
 	[-1000089] = "Aprimoramentos de Santuário",
@@ -30743,6 +30749,7 @@ localize(L.HEADER_NAMES, {
 	[-1000001] = "Север",
 	[-1000002] = "Юг",
 	[-1000003] = "Запад",
+	[-1000006] = "Бонусный бросок",
 	[-1000008] = "Испытание класса",
 	[-1000010] = "Общая добыча с боссов",
 	[-1000011] = "Обычная добыча из Сундуков",
@@ -34352,6 +34359,7 @@ localize(L.HEADER_NAMES, {
 	[-1000001] = "北部",
 	[-1000002] = "南部",
 	[-1000003] = "西部",
+	[-1000006] = "额外奖励",
 	[-1000008] = "职业试玩",
 	[-1000011] = "一般宝箱掉落",
 	[-1000012] = "一般地下城掉落",
