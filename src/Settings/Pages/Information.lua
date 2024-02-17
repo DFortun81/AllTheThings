@@ -93,7 +93,7 @@ settings.AdditionalIDRecursive = {
 	awp = true,
 	rwp = true,
 }
-local last = nil
+local last, lowest = nil, nil
 local split1 = math.ceil(#idsArray / 3)
 local split2 = 2 * split1
 for idNo,id in ipairs(idsArray) do
@@ -112,6 +112,7 @@ for idNo,id in ipairs(idsArray) do
 	-- Column 2
 	elseif idNo > split1 then
 		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+		lowest = last;
 		split1 = 999
 	-- Column 3
 	elseif idNo > split2 then
@@ -125,7 +126,7 @@ end
 
 local headerReporting = child:CreateHeaderLabel(L["REPORTING_LABEL"])
 headerReporting:SetPoint("LEFT", headerAdditionalInformation, 0, 0)
-headerReporting:SetPoint("TOP", last, "BOTTOM", 0, -8)
+headerReporting:SetPoint("TOP", lowest or last, "BOTTOM", 0, -8)
 
 local checkboxReportCollectedThings = child:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
 function(self)
