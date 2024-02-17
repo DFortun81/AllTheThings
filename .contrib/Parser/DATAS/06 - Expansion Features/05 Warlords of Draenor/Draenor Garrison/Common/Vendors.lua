@@ -78,6 +78,7 @@ i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
 }),
 i(122599, {	-- Tome of Sorcerous Elements (RECIPE!)
 	["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+	["filterID"] = MISC,
 	["g"] = {
 		r(181637),	-- Transmute: Sorcerous Air to Earth
 		r(181633),	-- Transmute: Sorcerous Air to Fire
@@ -95,6 +96,7 @@ i(122599, {	-- Tome of Sorcerous Elements (RECIPE!)
 }),
 i(122605, {	-- Tome of the Stones (RECIPE!)
 	["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+	["filterID"] = MISC,
 	["g"] = {
 		r(181650),	-- Stone of Fire
 		r(181648),	-- Stone of the Earth
