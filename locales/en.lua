@@ -115,7 +115,6 @@ for key, value in pairs({
 	["LOOT_TABLE_CHANCE"] = "Loot Table Chance";
 	["BEST_BONUS_ROLL_CHANCE"] = "Best Bonus Roll Chance";
 	["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance";
-	["BONUS_ROLL"] = "Bonus Roll";
 	["PREREQUISITE_QUESTS"] = "There are prerequisite quests that must be completed before this may be obtained:";
 	["BREADCRUMBS"] = "Breadcrumbs";
 	["BREADCRUMBS_WARNING"] = "There are breadcrumb quests that may not be obtainable after completing this:";
@@ -700,26 +699,6 @@ for key, value in pairs({
 	["ABOUT_TOP"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
 	["ABOUT_BOTTOM"] = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
 
-	-- Binding Localizations
-	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
-	["TOGGLE_COMPLETIONIST_MODE"] = "Toggle Completionist Mode";
-	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
-	["TOGGLE_FACTION_MODE"] = "Toggle Faction Mode";
-	["PREFERENCES"] = PREFERENCES;	-- Preferences
-	["TOGGLE_COMPLETEDTHINGS"] = "Toggle Completed Things (Both)";
-	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";
-	["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things";
-	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
-	["TOGGLE_SOURCETEXT"] = "Toggle Source Locations";
-	["MODULES"] = "Modules";
-	["TOGGLE_MAINLIST"] = "Toggle ATT Main List";
-	["TOGGLE_MINILIST"] = "Toggle ATT Mini List";
-	["TOGGLE_PROFESSION_LIST"] = "Toggle ATT Profession List";
-	["TOGGLE_WORLD_QUESTS_LIST"] = "Toggle ATT World Quests";
-	["TOGGLE_RAID_ASSISTANT"] = "Toggle ATT Raid Assistant";
-	["TOGGLE_RANDOM"] = "Toggle ATT Random";
-	["REROLL_RANDOM"] = "Reroll the Random Selection";
-
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
 	["ITEM_ID_ADDED_RANK"] = "%s (%d) [Rank %d] was added to your collection.";
@@ -746,8 +725,6 @@ for key, value in pairs({
 	["REMOVED_WITH_PATCH_FORMAT"] = "Removed in %s";
 
 	-- Filter Text
-	["ACHIEVEMENT_ID"] = "Achievement ID";
-	["ACHIEVEMENT_CATEGORY_ID"] = "Achievement Category ID";
 	["ARTIFACT_ID"] = "Artifact ID";
 	["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
 	["CREATURE_ID"] = "Creature ID";
@@ -1288,26 +1265,6 @@ for key, value in pairs({
 
 	-- NYI
 		[-11111] = "TradingPost",												-- Trading Post NYI
-	};
-
-	-- Deprecated! (move these eventually)
-	["HEADER_DESCRIPTIONS"] = {};
-	["HEADER_EVENTS"] = {};
-	["HEADER_LORE"] = {};
-	["EVENT_REMAPPING"] = {};
-	["EVENT_TOOLTIPS"] = {};
-
-	-- These are alternative map names that we don't want to display, but used for mapID calculations.
-	-- If there is a name provided in the table above, it will prefer that name association.
-	["ART_ID_TO_MAP_ID"] = {};
-	["MAP_ID_TO_ZONE_TEXT"] = {};
-	["QUEST_ID_TO_MAP_ID"] = {};
-	["ZONE_TEXT_TO_MAP_ID"] = {};
-	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
-		["Gates of Ahn'Qiraj"] = 1451,
-		["The Temple of Atal'Hakkar"] = 220,
-		["The Battle for Mount Hyjal"] = 329,
-		["The Eye"] = 334,
 	};
 
 	-- Module Localizations

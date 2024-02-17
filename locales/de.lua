@@ -103,7 +103,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	L.LOOT_TABLE_CHANCE = "Beute Chance";
 	L.BEST_BONUS_ROLL_CHANCE = "Beste Zusätzliche Beute Chance";
 	L.BEST_PERSONAL_LOOT_CHANCE = "Beste Personliche Beute Chance";
-	L.BONUS_ROLL = "Zusätzliche Beute";
 	L.PREREQUISITE_QUESTS = "Es gibt Quests, deren Abschluss Voraussetzung ist um dies zu erhalten:";
 	L.BREADCRUMBS = "Brotkrumenquests";	--TODO: article?
 	L.BREADCRUMBS_WARNING = "Es gibt Brotkrumenquests, die nicht mehr abschließbar sind, nachdem dies abgeschlossen wurde:";
@@ -698,6 +697,12 @@ for key,value in pairs({
 
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visionen von N'Zoth",							-- Visions of N'Zoth
+})
+do a[key] = value; end
+
+local a = L.SETTINGS_MENU;
+for key,value in pairs({
+	--TODO: ACHIEVEMENT_ID = "Achievement ID";
 })
 do a[key] = value; end
 

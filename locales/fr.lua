@@ -102,7 +102,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	--TODO: L.LOOT_TABLE_CHANCE = "Loot Table Chance";
 	--TODO: L.BEST_BONUS_ROLL_CHANCE = "Best Bonus Roll Chance";
 	--TODO: L.BEST_PERSONAL_LOOT_CHANCE = "Best Personal Loot Chance";
-	--TODO: L.BONUS_ROLL = "Bonus Roll";
 	--TODO: L.PREREQUISITE_QUESTS = "There are prerequisite quests that must be completed before this may be obtained:";
 	--TODO: L.BREADCRUMBS = "Breadcrumbs";
 	--TODO: L.BREADCRUMBS_WARNING = "There are breadcrumb quests that may not be obtainable after completing this:";
@@ -724,6 +723,12 @@ for key,value in pairs({
 		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
 		[-10081] = "Zone corrompue",								-- Corrupted Area
 		[-10082] = "Zone perdue",									-- Lost Area
+})
+do a[key] = value; end
+
+local a = L.SETTINGS_MENU;
+for key,value in pairs({
+	--TODO: ACHIEVEMENT_ID = "Achievement ID";
 })
 do a[key] = value; end
 

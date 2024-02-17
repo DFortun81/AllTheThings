@@ -79,23 +79,7 @@ for key,value in pairs({
 	["ITEM_GIVES_REP"] = "Provides Reputation with '";
 
 	-- Binding Localizations
-	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
-	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
-	["TOGGLE_FACTION_MODE"] = "Toggle Faction Mode";
-	["PREFERENCES"] = "Preferences";
-	["TOGGLE_COMPLETEDTHINGS"] = "Toggle Completed Things (Both)";
-	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";
-	["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things";
-	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
 	["TOGGLE_LOOTDROPS"] = "Toggle Loot/Drops/Items";
-	["TOGGLE_SOURCETEXT"] = "Toggle Source Locations";
-	["MODULES"] = "Modules";
-	["TOGGLE_MAINLIST"] = "Toggle ATT Main List";
-	["TOGGLE_MINILIST"] = "Toggle ATT Mini List";
-	["TOGGLE_PROFESSION_LIST"] = "Toggle ATT Profession List";
-	["TOGGLE_RAID_ASSISTANT"] = "Toggle ATT Raid Assistant";
-	["TOGGLE_RANDOM"] = "Toggle ATT Random";
-	["REROLL_RANDOM"] = "Reroll the Random Selection";
 
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
@@ -126,7 +110,6 @@ for key,value in pairs({
 	["HEIRLOOMS_UPGRADES_DESC"] = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
 
 	-- Filter Text
-	["ACHIEVEMENT_ID"] = "Achievement ID";
 	["ARTIFACT_ID"] = "Artifact ID";
 	["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
 	["ART_ID"] = "Art ID";
@@ -548,15 +531,6 @@ for key,value in pairs({
 		[15301] = { -1, "Expansion Features" },
 	},
 	
-	-- Deprecated! (move these eventually)
-	["HEADER_ICONS"] = {};
-	["HEADER_NAMES"] = {},
-	["HEADER_DESCRIPTIONS"] = {};
-	["HEADER_EVENTS"] = {};
-	["HEADER_LORE"] = {};
-	["EVENT_REMAPPING"] = {};
-	["EVENT_TOOLTIPS"] = {};
-	
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 	
@@ -620,19 +594,6 @@ for key,value in pairs({
 			["lore"] = "Dragonflight is the ninth expansion. The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
 			["lvl"] = 58,
 		},
-	};
-	
-	-- These are alternative map names that we don't want to display, but used for mapID calculations.
-	-- If there is a name provided in the table above, it will prefer that name association.
-	["ART_ID_TO_MAP_ID"] = {};
-	["MAP_ID_TO_ZONE_TEXT"] = {};
-	["QUEST_ID_TO_MAP_ID"] = {};
-	["ZONE_TEXT_TO_MAP_ID"] = {};
-	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
-		["Gates of Ahn'Qiraj"] = 1451,
-		["The Temple of Atal'Hakkar"] = 220,
-		["The Battle for Mount Hyjal"] = 329,
-		["The Eye"] = 334,
 	};
 	
 	-- Unobtainable Listing
@@ -721,7 +682,6 @@ L["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ff左键：展开／折叠|r\n|cff3399
 -- Binding Localizations 按键设置
 L["TOGGLE_ACCOUNT_MODE"] = "切换账号模式"
 L["TOGGLE_DEBUG_MODE"] = "切换调试模式"
-L["PREFERENCES"] = "偏好"
 L["TOGGLE_COMPLETEDTHINGS"] = "Toggle Completed Things (Both)"
 L["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups"
 L["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things"

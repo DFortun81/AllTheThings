@@ -14,8 +14,8 @@ end
 
 -- TODO: localize
 local ids = {
-	["achievementID"] = L["ACHIEVEMENT_ID"],
-	["achievementCategoryID"] = L["ACHIEVEMENT_CATEGORY_ID"],
+	["achievementID"] = L.ACHIEVEMENT_ID,
+	["achievementCategoryID"] = L.ACHIEVEMENT_CATEGORY_ID,
 	["Alive"] = L["ALIVE"],
 	["awp"] = L["ADDED_WITH_PATCH"],
 	["artifactID"] = L["ARTIFACT_ID"],

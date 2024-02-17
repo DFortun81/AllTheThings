@@ -9972,9 +9972,9 @@ RowOnEnter = function (self)
 								if totalItems > 0 then
 									chance = 100 / (totalItems - specHits[id]);
 									color = GetProgressColor(chance / 100);
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
+									GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 								else
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
+									GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "N/A");
 								end
 							end
 						end

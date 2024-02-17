@@ -105,7 +105,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.LOOT_TABLE_CHANCE = "拾取列表几率";
 	L.BEST_BONUS_ROLL_CHANCE = "最佳额外投骰几率";
 	L.BEST_PERSONAL_LOOT_CHANCE = "最佳个人拾取几率";
-	L.BONUS_ROLL = "额外奖励";
 	L.PREREQUISITE_QUESTS = "必须先完成一些前置任务才有可能获得：";
 	L.BREADCRUMBS = "无关紧要";
 	L.BREADCRUMBS_WARNING = "完成此任务后可能无法获得无关紧要的任务：";
@@ -610,7 +609,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.REMOVED_WITH_PATCH_FORMAT = "补丁 %s 中被删除";
 
 	-- Filter Text
-		L.ACHIEVEMENT_ID = "成就 ID";
 		L.ARTIFACT_ID = "神器 ID";
 		L.AZERITE_ESSENCE_ID = "艾泽里特精华 ID";
 		L.CREATURE_ID = "生物 ID";
@@ -760,6 +758,12 @@ if GetLocale() == "zhTW" then
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
 end
+
+local a = L.SETTINGS_MENU;
+for key,value in pairs({
+	ACHIEVEMENT_ID = "成就 ID";
+})
+do a[key] = value; end
 
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({

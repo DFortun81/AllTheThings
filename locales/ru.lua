@@ -104,7 +104,6 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.LOOT_TABLE_CHANCE = "Общий шанс получения";
 	L.BEST_BONUS_ROLL_CHANCE = "Наилучший шанс бонусного броска";
 	L.BEST_PERSONAL_LOOT_CHANCE = "Наилучший шанс Персональной добычи";
-	L.BONUS_ROLL = "Бонусный бросок";
 	L.PREREQUISITE_QUESTS = "Есть предшествующие задания, которые должны быть выполнены перед получением:";
 	L.BREADCRUMBS = "Задания-\"хлебные крохи\"";
 	L.BREADCRUMBS_WARNING = "Есть задания-\"хлебные крохи\", которые могут быть недоступны после выполнения:";
@@ -724,6 +723,12 @@ for key,value in pairs({
 		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
 		[-10081] = "Заражённая область",							-- Corrupted Area
 		[-10082] = "Захваченная область",							-- Lost Area
+})
+do a[key] = value; end
+
+local a = L.SETTINGS_MENU;
+for key,value in pairs({
+	--TODO: ACHIEVEMENT_ID = "Achievement ID";
 })
 do a[key] = value; end
 
