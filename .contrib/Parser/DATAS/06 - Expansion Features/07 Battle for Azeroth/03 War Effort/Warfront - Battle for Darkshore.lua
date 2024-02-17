@@ -1615,8 +1615,7 @@ root(ROOTS.ExpansionFeatures,
 							})),
 							n(REWARDS, {
 								["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
-								["modID"] = 3,
-								["groups"] = {
+								["g"] = bubbleDown({["modID"] = 3}, {
 									-- ALLIANCE SET --
 									un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
 									i(166898),	-- Sentinel's Blade
@@ -1741,7 +1740,7 @@ root(ROOTS.ExpansionFeatures,
 									i(165495),	-- Deathguard's Waistplate
 									i(165493),	-- Deathguard's Greaves
 									i(165489),	-- Deathguard's Sabatons
-								},
+								}),
 							}),
 						},
 					}),
