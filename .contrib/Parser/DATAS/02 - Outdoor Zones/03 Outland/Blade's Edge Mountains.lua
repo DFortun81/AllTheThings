@@ -11,28 +11,28 @@ local OnTooltipForOgrila = [[function(t)
 			if f and #f > 0 then t.banished = f[1]; end
 		end
 		local banishedRep = isHuman and 385 or 350;
-		GameTooltip:AddDoubleLine(t.banished.text or RETRIEVING_DATA, _.L[t.banished.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. banishedRep .. " Rep");
+		GameTooltip:AddDoubleLine(t.banished.text or RETRIEVING_DATA, _.GetCollectionIcon(t.banished.saved) .. " " .. banishedRep .. " Rep");
 
 		if not t.bombed then
 			local f = _.SearchForField("questID", 11023);
 			if f and #f > 0 then t.bombed = f[1]; end
 		end
 		local bombedRep = isHuman and 550 or 500;
-		GameTooltip:AddDoubleLine((t.bombed.text or RETRIEVING_DATA), _.L[t.bombed.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. bombedRep .. " Rep");
+		GameTooltip:AddDoubleLine((t.bombed.text or RETRIEVING_DATA), _.GetCollectionIcon(t.bombed.saved) .. " " .. bombedRep .. " Rep");
 
 		if not t.relic then
 			local f = _.SearchForField("questID", 11080);
 			if f and #f > 0 then t.relic = f[1]; end
 		end
 		local relicRep = isHuman and 385 or 350;
-		GameTooltip:AddDoubleLine((t.relic.text or RETRIEVING_DATA), _.L[t.relic.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. relicRep .. " Rep");
+		GameTooltip:AddDoubleLine((t.relic.text or RETRIEVING_DATA), _.GetCollectionIcon(t.relic.saved) .. " " .. relicRep .. " Rep");
 
 		if not t.wrangled then
 			local f = _.SearchForField("questID", 11066);
 			if f and #f > 0 then t.wrangled = f[1]; end
 		end
 		local wrangledRep = isHuman and 385 or 350;
-		GameTooltip:AddDoubleLine((t.wrangled.text or RETRIEVING_DATA), _.L[t.wrangled.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. wrangledRep .. " Rep");
+		GameTooltip:AddDoubleLine((t.wrangled.text or RETRIEVING_DATA), _.GetCollectionIcon(t.wrangled.saved) .. " " .. wrangledRep .. " Rep");
 
 		local repPerDay = banishedRep + bombedRep + relicRep + wrangledRep;
 		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);

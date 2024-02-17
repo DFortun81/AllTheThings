@@ -8,12 +8,12 @@ local OnTooltipForSonsOfHodir = [[function(t)
 			local f = _.SearchForField("questID", 12915);
 			if f and #f > 0 then t.mending = f[1]; end
 		end
-		GameTooltip:AddDoubleLine("Complete " .. (t.mending.text or RETRIEVING_DATA), _.L[t.mending.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		GameTooltip:AddDoubleLine("Complete " .. (t.mending.text or RETRIEVING_DATA), _.GetCollectionIcon(t.mending.saved));
 		if not t.spark then
 			local f = _.SearchForField("questID", 12956);
 			if f and #f > 0 then t.spark = f[1]; end
 		end
-		GameTooltip:AddDoubleLine("Complete " .. (t.spark.text or RETRIEVING_DATA), _.L[t.spark.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		GameTooltip:AddDoubleLine("Complete " .. (t.spark.text or RETRIEVING_DATA), _.GetCollectionIcon(t.spark.saved));
 	elseif reputation < 42000 then
 		local isHuman = _.RaceIndex == 1;
 		local viscousRep, callRep, coldRep, dragonRep = 0, 0, 0, 0;
@@ -24,7 +24,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		if t.helm.saved then
 			viscousRep = isHuman and 385 or 350;
 		else
-			GameTooltip:AddDoubleLine("Complete " .. (t.helm.text or RETRIEVING_DATA), _.L[t.helm.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+			GameTooltip:AddDoubleLine("Complete " .. (t.helm.text or RETRIEVING_DATA), _.GetCollectionIcon(t.helm.saved));
 		end
 
 		if not t.monument then
@@ -34,7 +34,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		if t.monument.saved then
 			callRep = isHuman and 385 or 350;
 		else
-			GameTooltip:AddDoubleLine("Complete " .. (t.monument.text or RETRIEVING_DATA), _.L[t.monument.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+			GameTooltip:AddDoubleLine("Complete " .. (t.monument.text or RETRIEVING_DATA), _.GetCollectionIcon(t.monument.saved));
 		end
 
 		if not t.elements then
@@ -44,7 +44,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		if t.elements.saved then
 			coldRep = isHuman and 385 or 350;
 		else
-			GameTooltip:AddDoubleLine("Complete " .. (t.elements.text or RETRIEVING_DATA), _.L[t.elements.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+			GameTooltip:AddDoubleLine("Complete " .. (t.elements.text or RETRIEVING_DATA), _.GetCollectionIcon(t.elements.saved));
 		end
 
 		if not t.spear then
@@ -54,7 +54,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		if t.spear.saved then
 			dragonRep = isHuman and 550 or 500;
 		else
-			GameTooltip:AddDoubleLine("Complete " .. (t.spear.text or RETRIEVING_DATA), _.L[t.spear.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+			GameTooltip:AddDoubleLine("Complete " .. (t.spear.text or RETRIEVING_DATA), _.GetCollectionIcon(t.spear.saved));
 		end
 
 		GameTooltip:AddLine("Daily Quests:");
@@ -63,7 +63,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 				local f = _.SearchForField("questID", 13006);
 				if f and #f > 0 then t.viscous = f[1]; end
 			end
-			GameTooltip:AddDoubleLine(t.viscous.text or RETRIEVING_DATA, _.L[t.viscous.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. viscousRep .. " Rep");
+			GameTooltip:AddDoubleLine(t.viscous.text or RETRIEVING_DATA, _.GetCollectionIcon(t.viscous.saved) .. " " .. viscousRep .. " Rep");
 		end
 		local feedingRep = 0;
 		if reputation >= ]] .. REVERED .. [[ then
@@ -72,28 +72,28 @@ local OnTooltipForSonsOfHodir = [[function(t)
 				local f = _.SearchForField("questID", 13046);
 				if f and #f > 0 then t.feeding = f[1]; end
 			end
-			GameTooltip:AddDoubleLine(t.feeding.text or RETRIEVING_DATA, _.L[t.feeding.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. feedingRep .. " Rep");
+			GameTooltip:AddDoubleLine(t.feeding.text or RETRIEVING_DATA, _.GetCollectionIcon(t.feeding.saved) .. " " .. feedingRep .. " Rep");
 		end
 		if callRep > 0 then
 			if not t.call then
 				local f = _.SearchForField("questID", 12977);
 				if f and #f > 0 then t.call = f[1]; end
 			end
-			GameTooltip:AddDoubleLine(t.call.text or RETRIEVING_DATA, _.L[t.call.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. callRep .. " Rep");
+			GameTooltip:AddDoubleLine(t.call.text or RETRIEVING_DATA, _.GetCollectionIcon(t.call.saved) .. " " .. callRep .. " Rep");
 		end
 		if coldRep > 0 then
 			if not t.cold then
 				local f = _.SearchForField("questID", 12981);
 				if f and #f > 0 then t.cold = f[1]; end
 			end
-			GameTooltip:AddDoubleLine(t.cold.text or RETRIEVING_DATA, _.L[t.cold.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. coldRep .. " Rep");
+			GameTooltip:AddDoubleLine(t.cold.text or RETRIEVING_DATA, _.GetCollectionIcon(t.cold.saved) .. " " .. coldRep .. " Rep");
 		end
 		if dragonRep > 0 then
 			if not t.dragon then
 				local f = _.SearchForField("questID", 13003);
 				if f and #f > 0 then t.dragon = f[1]; end
 			end
-			GameTooltip:AddDoubleLine(t.dragon.text or RETRIEVING_DATA, _.L[t.dragon.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. dragonRep .. " Rep");
+			GameTooltip:AddDoubleLine(t.dragon.text or RETRIEVING_DATA, _.GetCollectionIcon(t.dragon.saved) .. " " .. dragonRep .. " Rep");
 		end
 		local spyRep = 0;
 		if reputation >= ]] .. HONORED .. [[ then
@@ -102,7 +102,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 				local f = _.SearchForField("questID", 12994);
 				if f and #f > 0 then t.spy = f[1]; end
 			end
-			GameTooltip:AddDoubleLine(t.spy.text or RETRIEVING_DATA, _.L[t.spy.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. spyRep .. " Rep");
+			GameTooltip:AddDoubleLine(t.spy.text or RETRIEVING_DATA, _.GetCollectionIcon(t.spy.saved) .. " " .. spyRep .. " Rep");
 		end
 
 		local repPerDay = viscousRep + callRep + coldRep + dragonRep + feedingRep + spyRep;

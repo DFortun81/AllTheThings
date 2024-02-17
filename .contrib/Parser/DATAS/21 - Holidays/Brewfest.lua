@@ -109,26 +109,26 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddLine("One-Time Quests:");
 	local coren = _.IsQuestFlaggedCompleted(12491);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Direbrew's Dire Brew", _.L[coren and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Direbrew's Dire Brew", _.GetCompletionIcon(coren));
 
 	-- #if AFTER WRATH
 	local pink = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 11120 or 11118);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Pink Elekks On Parade", _.L[pink and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Pink Elekks On Parade", _.GetCompletionIcon(pink));
 	-- #endif
 
 	local chucked = _.IsQuestFlaggedCompleted(12022);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Chug and Chuck", _.L[chucked and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Chug and Chuck", _.GetCompletionIcon(chucked));
 
 	local back = _.IsQuestFlaggedCompleted(11122);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for There And Back Again", _.L[back and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for There And Back Again", _.GetCompletionIcon(back));
 
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddLine("Daily Quests:");
 	local barked = _.IsQuestFlaggedCompleted(11293);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 15 for Brewfest Barking", _.L[barked and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 15 for Brewfest Barking", _.GetCollectionIcon(barked));
 
 	local invasion = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.L[invasion and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.GetCollectionIcon(invasion));
 	GameTooltip:AddLine(" " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)");
 	GameTooltip:AddLine("** Log out in a rested location and it will be reset after 8 hours.");
 

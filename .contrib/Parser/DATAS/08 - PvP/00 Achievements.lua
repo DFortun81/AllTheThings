@@ -83,9 +83,9 @@ end]];
 local THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip = [[function(t)
 	if t.collectible then
 		GameTooltip:AddLine(" ");
-		GameTooltip:AddDoubleLine(" |T" .. t.wsg.icon .. ":0|t " .. t.wsg.text, _.L[t.wsg.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.ab.icon .. ":0|t " .. t.ab.text, _.L[t.ab.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.av.icon .. ":0|t " .. t.av.text, _.L[t.av.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+		GameTooltip:AddDoubleLine(" |T" .. t.wsg.icon .. ":0|t " .. t.wsg.text, _.GetCollectionIcon(t.wsg.standing == 8), 1, 1, 1);
+		GameTooltip:AddDoubleLine(" |T" .. t.ab.icon .. ":0|t " .. t.ab.text, _.GetCollectionIcon(t.ab.standing == 8), 1, 1, 1);
+		GameTooltip:AddDoubleLine(" |T" .. t.av.icon .. ":0|t " .. t.av.text, _.GetCollectionIcon(t.av.standing == 8), 1, 1, 1);
 	end
 end]];
 root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
