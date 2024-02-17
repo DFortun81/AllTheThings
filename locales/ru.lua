@@ -104,7 +104,6 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.LOOT_TABLE_CHANCE = "Общий шанс получения";
 	L.BEST_BONUS_ROLL_CHANCE = "Наилучший шанс бонусного броска";
 	L.BEST_PERSONAL_LOOT_CHANCE = "Наилучший шанс Персональной добычи";
-	L.BONUS_ROLL = "Бонусный бросок";
 	L.PREREQUISITE_QUESTS = "Есть предшествующие задания, которые должны быть выполнены перед получением:";
 	L.BREADCRUMBS = "Задания-\"хлебные крохи\"";
 	L.BREADCRUMBS_WARNING = "Есть задания-\"хлебные крохи\", которые могут быть недоступны после выполнения:";
@@ -562,14 +561,13 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	-- About tab
 		L.ABOUT_PAGE = "Об аддоне";
 		L.ABOUT_TOP = " |CFFFFFFFF- модификация для отслеживания коллекции, которая показывает Вам где и как получить всё в игре! У нас большое сообщество в Discord (ссылка внизу), где Вы можете спрашивать, оставлять предложения, а также сообщать об ошибках и пропавших предметах. Если Вы нашли предмет или задание, которые не задокументированы, Вы можете сказать нам в Discord, для более технически подкованных у нас Git, в котором Вы можете участвовать.\n\nПока мы стремимся к выполнению, есть множество вещей, что добавляются в игру с каждым патчем, и если что-то отсутствует, пожалуйста, поймите, у нас небольшая команда, пытающаяся держать темп с изменениями, в то же время собирая Штучки. :D\n\nНе стесняйтесь спрашивать меня во время трансляций, даже если вопрос не связан напрямую с ATT (стандартное программирование аддонов WoW тоже).\nПримечание переводчика: на английском языке.\n\n- |r|Cffff8000Crieve|r";
-		L.ABOUT_BOTTOM = "Активные Участники: |CFFFFFFFF(в произвольном порядке)\nGold, Dead Serious, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, Jezartroz, Pr3vention, AlexSoft, Jenstonedart и весь остальной ALL THE THINGS Discord!\n|rЗал Славы: |CFFFFFFFF(в произвольном порядке)\nDaktar, Lucetia, Slumber, Avella, Aiue, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe). Вы просто обязаны загрузить их аддоны для иконок коллекций в Ваших сумках! %s %s %s\n\nДля онлайн-сравнения коллекций посетите DataForAzeroth.com от Shoogen и WoWthing.org от Freddie!|r";
+		L.ABOUT_BOTTOM = "Активные Участники: |CFFFFFFFF(в произвольном порядке)\n%s!\n|rЗал Славы: |CFFFFFFFF(в произвольном порядке)\n%s\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe). Вы просто обязаны загрузить их аддоны для иконок коллекций в Ваших сумках! %s %s %s\n\nДля онлайн-сравнения коллекций посетите DataForAzeroth.com от Shoogen и WoWthing.org от Freddie!|r";
 
 	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "Переключить режим Аккаунта";
 		L.TOGGLE_COMPLETIONIST_MODE = "Переключить режим Собирателя";
 		L.TOGGLE_DEBUG_MODE = "Переключить режим Отладки";
 		L.TOGGLE_FACTION_MODE = "Переключить режим Фракции";
-		L.PREFERENCES = "Настройки";
 		L.TOGGLE_COMPLETEDTHINGS = "Переключить Собранные Предметы (Все)";
 		L.TOGGLE_COMPLETEDGROUPS = "Переключить Собранные Группы";
 		L.TOGGLE_COLLECTEDTHINGS = "Переключить Собранные Предметы";
@@ -725,6 +723,12 @@ for key,value in pairs({
 		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
 		[-10081] = "Заражённая область",							-- Corrupted Area
 		[-10082] = "Захваченная область",							-- Lost Area
+})
+do a[key] = value; end
+
+local a = L.SETTINGS_MENU;
+for key,value in pairs({
+	--TODO: ACHIEVEMENT_ID = "Achievement ID";
 })
 do a[key] = value; end
 

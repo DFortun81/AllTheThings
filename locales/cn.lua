@@ -105,7 +105,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.LOOT_TABLE_CHANCE = "拾取列表几率";
 	L.BEST_BONUS_ROLL_CHANCE = "最佳额外投骰几率";
 	L.BEST_PERSONAL_LOOT_CHANCE = "最佳个人拾取几率";
-	L.BONUS_ROLL = "额外奖励";
 	L.PREREQUISITE_QUESTS = "必须先完成一些前置任务才有可能获得：";
 	L.BREADCRUMBS = "无关紧要";
 	L.BREADCRUMBS_WARNING = "完成此任务后可能无法获得无关紧要的任务：";
@@ -562,14 +561,13 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	-- About tab
 		L.ABOUT_PAGE = "关于";
 		L.ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
-		L.ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（排名不分先后）\nGold，Dead Serious，Sanctuari，Molkree，Runawaynow，Braghe，Myrhial，Darkal，Tag，Jezartroz，Pr3vention, AlexSoft，Jenstonedart！\n|r名人堂：|CFFFFFFFF（排名不分先后）\nDaktar，Lucetia，Slumber，Avella，Aiue，Oiche，Oxlotus，Eiltherune，Blueyleader，Iyanden，BigBlaris，Talonzor，Mogwai，Heallie，Eckhardt，Boohyaka，Sadidorf\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以获得包中物品的收藏图标！ %s %s %s\n\n如需在线收集比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";
+		L.ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（排名不分先后）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先后）\n%s\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以获得包中物品的收藏图标！ %s %s %s\n\n如需在线收集比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";
 
 	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "切换账号模式";
 		L.TOGGLE_COMPLETIONIST_MODE = "切换完美主义者模式";
 		L.TOGGLE_DEBUG_MODE = "切换调试模式";
 		L.TOGGLE_FACTION_MODE = "切换阵营模式";
-		L.PREFERENCES = "偏好";
 		L.TOGGLE_COMPLETEDTHINGS = "隐藏/显示已完成组和项";
 		L.TOGGLE_COMPLETEDGROUPS = "隐藏/显示已完成组";
 		L.TOGGLE_COLLECTEDTHINGS = "隐藏/显示已收藏项";
@@ -611,7 +609,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.REMOVED_WITH_PATCH_FORMAT = "补丁 %s 中被删除";
 
 	-- Filter Text
-		L.ACHIEVEMENT_ID = "成就 ID";
 		L.ARTIFACT_ID = "神器 ID";
 		L.AZERITE_ESSENCE_ID = "艾泽里特精华 ID";
 		L.CREATURE_ID = "生物 ID";
@@ -761,6 +758,12 @@ if GetLocale() == "zhTW" then
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
 end
+
+local a = L.SETTINGS_MENU;
+for key,value in pairs({
+	ACHIEVEMENT_ID = "成就 ID";
+})
+do a[key] = value; end
 
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({

@@ -3,14 +3,10 @@
 --------------------------------------------------------------------------------
 --						English / United States (default)					  --
 --------------------------------------------------------------------------------
---				Maintained By Dylan Fortune (http://dylanfortune.com)		  --
---------------------------------------------------------------------------------
---	 A localization file contains a single dictionary that populates a table  --
---------------------------------------------------------------------------------
---				This script is called directly after the Core.lua file. 	  --
---------------------------------------------------------------------------------
-
+-- This file has been deprecated. All custom headers in this file MUST be moved into the proper addon database.
+-- All shared locales will be moved to the Default Locale file.
 local name, app = ...;
+local L = app.L;
 
 -- Global locals
 local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
@@ -21,11 +17,8 @@ DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
 local TRACK_ACC_WIDE = app.ccColors.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
 local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R by default.";
 
-local L = {
+for key, value in pairs({
 	-- General Text
-	["TITLE"] = app.ccColors.ATT.."ALL THE THINGS|r";
-	["AUCTION_TAB"] = app.ccColors.ATT.."ATT|r";
-	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!|r";
@@ -90,6 +83,7 @@ local L = {
 	["MIN_MAX_STANDING"] = "Requires a standing between";
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
+	["CLIPBOARDCOPYPASTE"] = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
 	["LAYER"] = "Layer";
@@ -121,7 +115,6 @@ local L = {
 	["LOOT_TABLE_CHANCE"] = "Loot Table Chance";
 	["BEST_BONUS_ROLL_CHANCE"] = "Best Bonus Roll Chance";
 	["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance";
-	["BONUS_ROLL"] = "Bonus Roll";
 	["PREREQUISITE_QUESTS"] = "There are prerequisite quests that must be completed before this may be obtained:";
 	["BREADCRUMBS"] = "Breadcrumbs";
 	["BREADCRUMBS_WARNING"] = "There are breadcrumb quests that may not be obtainable after completing this:";
@@ -404,7 +397,7 @@ local L = {
 	["CHARACTERUNLOCKS_CHECKBOX_TOOLTIP"] = "Enable this option to track "..CHARACTER.." "..UNLOCK.."s. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
 	["FLIGHT_PATHS_CHECKBOX"] = app.ccColors.Insane .. "Flight Paths & Ferry Stations";
 	["FLIGHT_PATHS_CHECKBOX_TOOLTIP"] = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
-	["FOLLOWERS_CHECKBOX"] = app.ccColors.Insane .. GARRISON_FOLLOWERS.." & "..COVENANT_MISSIONS_FOLLOWERS;
+	["FOLLOWERS_CHECKBOX"] = "|T"..app.asset("Expansion_WOD")..":0|t " .. app.ccColors.Insane .. GARRISON_FOLLOWERS.." & "..COVENANT_MISSIONS_FOLLOWERS;
 	["FOLLOWERS_CHECKBOX_TOOLTIP"] = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
 	["HEIRLOOMS_CHECKBOX"] = app.ccColors.Insane .. HEIRLOOMS;
 	["HEIRLOOMS_CHECKBOX_TOOLTIP"] = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.\n\n"..ACC_WIDE_DEFAULT;
@@ -434,7 +427,7 @@ local L = {
 	["TITLES_CHECKBOX_TOOLTIP"] = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 	["TOYS_CHECKBOX"] = app.ccColors.Insane .. TOY_BOX;
 	["TOYS_CHECKBOX_TOOLTIP"] = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\n"..ACC_WIDE_DEFAULT;
-	["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX"] = app.ccColors.Insane .. "Show Unavailable Personal Loot";
+	["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX"] = "Show Unavailable Personal Loot";
 	["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP"] = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 	["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
@@ -498,7 +491,7 @@ local L = {
 
 	-- Filters tab
 	["TRACKING_PAGE"] = TRACKING;
-	["ITEM_FILTER_LABEL"] = AUCTION_CATEGORY_WEAPONS.." & "..ARMOR;
+	["ITEM_FILTER_LABEL"] = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
 	["CLASS_DEFAULTS_BUTTON_TOOLTIP"] = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
@@ -704,27 +697,7 @@ local L = {
 	-- About tab
 	["ABOUT_PAGE"] = "About";
 	["ABOUT_TOP"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
-	["ABOUT_BOTTOM"] = "Active Contributors: |CFFFFFFFF(in no particular order)\nGold, Dead Serious, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, Jezartroz, Pr3vention, AlexSoft, Jenstonedart\n\n|rHall of Fame: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Avella, Aiue, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
-
-	-- Binding Localizations
-	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
-	["TOGGLE_COMPLETIONIST_MODE"] = "Toggle Completionist Mode";
-	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
-	["TOGGLE_FACTION_MODE"] = "Toggle Faction Mode";
-	["PREFERENCES"] = PREFERENCES;	-- Preferences
-	["TOGGLE_COMPLETEDTHINGS"] = "Toggle Completed Things (Both)";
-	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";
-	["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things";
-	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
-	["TOGGLE_SOURCETEXT"] = "Toggle Source Locations";
-	["MODULES"] = "Modules";
-	["TOGGLE_MAINLIST"] = "Toggle ATT Main List";
-	["TOGGLE_MINILIST"] = "Toggle ATT Mini List";
-	["TOGGLE_PROFESSION_LIST"] = "Toggle ATT Profession List";
-	["TOGGLE_WORLD_QUESTS_LIST"] = "Toggle ATT World Quests";
-	["TOGGLE_RAID_ASSISTANT"] = "Toggle ATT Raid Assistant";
-	["TOGGLE_RANDOM"] = "Toggle ATT Random";
-	["REROLL_RANDOM"] = "Reroll the Random Selection";
+	["ABOUT_BOTTOM"] = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
 
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
@@ -752,8 +725,6 @@ local L = {
 	["REMOVED_WITH_PATCH_FORMAT"] = "Removed in %s";
 
 	-- Filter Text
-	["ACHIEVEMENT_ID"] = "Achievement ID";
-	["ACHIEVEMENT_CATEGORY_ID"] = "Achievement Category ID";
 	["ARTIFACT_ID"] = "Artifact ID";
 	["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
 	["CREATURE_ID"] = "Creature ID";
@@ -1296,26 +1267,6 @@ local L = {
 		[-11111] = "TradingPost",												-- Trading Post NYI
 	};
 
-	-- Deprecated! (move these eventually)
-	["HEADER_DESCRIPTIONS"] = {};
-	["HEADER_EVENTS"] = {};
-	["HEADER_LORE"] = {};
-	["EVENT_REMAPPING"] = {};
-	["EVENT_TOOLTIPS"] = {};
-
-	-- These are alternative map names that we don't want to display, but used for mapID calculations.
-	-- If there is a name provided in the table above, it will prefer that name association.
-	["ART_ID_TO_MAP_ID"] = {};
-	["MAP_ID_TO_ZONE_TEXT"] = {};
-	["QUEST_ID_TO_MAP_ID"] = {};
-	["ZONE_TEXT_TO_MAP_ID"] = {};
-	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
-		["Gates of Ahn'Qiraj"] = 1451,
-		["The Temple of Atal'Hakkar"] = 220,
-		["The Battle for Mount Hyjal"] = 329,
-		["The Eye"] = 334,
-	};
-
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
@@ -1358,34 +1309,6 @@ local L = {
 		["SL_COV_NFA"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_nightfae")..":0|t", color = "ffA330C9", text = GetSpellInfo(321077) },
 		["SL_COV_VEN"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_venthyr")..":0|t", color = "fffe040f", text = GetSpellInfo(321079) },
 	};
-};
-app.L = L;
-
--- Crieve tested all professions in non-english locales and the following skills were not detected without these.
-L["SPELL_NAME_TO_SPELL_ID"] = {
-	-- Riding
-	["Riding"] = 33388,
-	["Equitación"] = 33388,
-	["Reiten"] = 33388,
-	["Monte"] = 33388,
-	["Montaria"] = 33388,
-	["Верховая езда"] = 33388,
-	["탈것 타기"] = 33388,
-	["骑术"] = 33388,
-
-	-- Herb Gathering
-	-- The skill name is "Herbalism", not "Herb Gathering"
-	["Herbalism"] = 2366,
-	["Herboristería"] = 2366,
-	["Kräuterkunde"] = 2366,
-	["Herboristerie"] = 2366,
-	["Herborismo"] = 2366,
-	["Травничество"] = 2366,
-	["약초채집"] = 2366,
-	["草药学"] = 2366,
-	["草藥學"] = 2366,
-
-	["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
-	["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
-	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
-};
+}) do
+	L[key] = value;
+end

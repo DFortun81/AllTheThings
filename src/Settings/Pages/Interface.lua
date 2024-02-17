@@ -1,12 +1,16 @@
 local _, app = ...;
-local L, settings, ipairs = app.L, app.Settings, ipairs;
+local L, settings, ipairs = app.L.SETTINGS_MENU, app.Settings, ipairs;
 
 -- Settings: Interface Page
-local child = settings:CreateOptionsPage(L["INTERFACE_PAGE"], true)
+local child = settings:CreateOptionsPage(L["INTERFACE_PAGE"])
 
 -- Column 1
 local headerTooltips = child:CreateHeaderLabel(L["TOOLTIP_LABEL"])
-headerTooltips:SetPoint("TOPLEFT", child, 0, 0)
+if child.separator then
+	headerTooltips:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+else
+	headerTooltips:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+end
 
 local checkboxShowTooltipHelp = child:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
 function(self)
@@ -226,7 +230,7 @@ sliderSummarizeThings.OnRefresh = function(self)
 end
 
 local textTooltipShownInfo = child:CreateTextLabel("|cffFFFFFF"..L["TOOLTIP_SHOW_LABEL"])
-textTooltipShownInfo:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, -15)
+textTooltipShownInfo:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, -30)
 textTooltipShownInfo:SetPoint("LEFT", headerTooltips, "LEFT", 0, 0)
 textTooltipShownInfo.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") then
@@ -869,7 +873,7 @@ checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
 
 local sliderPercentagePrecision = CreateFrame("Slider", "ATTsliderPercentagePrecision", child, "OptionsSliderTemplate")
 sliderPercentagePrecision:SetPoint("LEFT", sliderMainListScale, 0, 0)
-sliderPercentagePrecision:SetPoint("TOP", checkboxShowPercentageCount, "BOTTOM", 0, -12)
+sliderPercentagePrecision:SetPoint("TOP", checkboxShowPercentageCount, "BOTTOM", 0, -24)
 table.insert(settings.Objects, sliderPercentagePrecision)
 settings.sliderPercentagePrecision = sliderPercentagePrecision
 sliderPercentagePrecision.tooltipText = L["PRECISION_SLIDER_TOOLTIP"]
@@ -966,218 +970,3 @@ function(self)
 end)
 checkboxDynamicNested:AlignAfter(checkboxDynamicSimple)
 checkboxDynamicNested:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
-
-local headerWindowColors = child:CreateHeaderLabel(L["WINDOW_COLORS"])
-headerWindowColors:SetPoint("LEFT", headerListBehavior, 0, 0)
-headerWindowColors:SetPoint("TOP", checkboxDynamicOff, "BOTTOM", 0, -10)
-
--- Color Picker
-local function changeBackgroundColor(restore)
-	local newR, newG, newB, newA
-	if restore then
-		newR, newG, newB, newA = unpack(restore)
-	else
-		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
-	end
-
-	-- Update our internal storage
-	settings:Set("Window:BackgroundColor", {r = newR, g = newG, b = newB, a = newA})
-
- 	-- And update the actual windows
-	settings.ApplyAllWindowColors()
-end
-
-local function changeBorderColor(restore)
-	local newR, newG, newB, newA
-	if restore then
-		newR, newG, newB, newA = unpack(restore)
-	else
-		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
-	end
-
-	-- Update our internal storage
-	settings:Set("Window:BorderColor", {r = newR, g = newG, b = newB, a = newA})
-
- 	-- And update the actual windows
-	settings.ApplyAllWindowColors()
-end
-
-settings.ShowColorPicker = function(r, g, b, a, changedCallback)
-	ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = (a ~= nil), a
-	ColorPickerFrame.previousValues = {r,g,b,a}
-	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc, ColorPickerFrame.swatchFunc = changedCallback, changedCallback, changedCallback, changedCallback
-	ColorPickerFrame.Content.ColorPicker:SetColorRGB(r,g,b)
-	ColorPickerFrame:Hide()	-- Need to run the OnShow handler
-	ColorPickerFrame:Show()
-end
-
-local buttonBackgroundColor = child:CreateButton(
-{ text = L["BACKGROUND"], tooltip = L["BACKGROUND_TOOLTIP"], },
-{
-	OnClick = function(self)
-		local r = tonumber(settings:Get("Window:BackgroundColor").r) or 0
-		local g = tonumber(settings:Get("Window:BackgroundColor").g) or 0
-		local b = tonumber(settings:Get("Window:BackgroundColor").b) or 0
-		local a = tonumber(settings:Get("Window:BackgroundColor").a) or 0
-		settings.ShowColorPicker(r, g, b, a, changeBackgroundColor)
-	end,
-})
-buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
-
-local buttonBorderColor = child:CreateButton(
-{ text = L["BORDER"], tooltip = L["BORDER_TOOLTIP"], },
-{
-	OnClick = function(self)
-		local r = tonumber(settings:Get("Window:BorderColor").r) or 0
-		local g = tonumber(settings:Get("Window:BorderColor").g) or 0
-		local b = tonumber(settings:Get("Window:BorderColor").b) or 0
-		local a = tonumber(settings:Get("Window:BorderColor").a) or 0
-		settings.ShowColorPicker(r, g, b, a, changeBorderColor)
-	end,
-})
-buttonBorderColor:SetPoint("BOTTOMLEFT", buttonBackgroundColor, "BOTTOMRIGHT", 5, 0)
-buttonBorderColor.OnRefresh = function(self)
-	if settings:GetTooltipSetting("Window:UseClassForBorder") then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
-local buttonResetColor = child:CreateButton(
-{ text = L["RESET"], tooltip = L["RESET_TOOLTIP"], },
-{
-	OnClick = function(self)
-		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
-		settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
-		settings.ApplyAllWindowColors()
-	end,
-})
-buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
-
-local checkboxUseClassColorForBorder = child:CreateCheckBox(L["CLASS_BORDER"],	-- LOCALISE
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Window:UseClassForBorder"))
-end,
-function(self)
-	settings:SetTooltipSetting("Window:UseClassForBorder", self:GetChecked())
-	settings.ApplyAllWindowColors()
-end)
-checkboxUseClassColorForBorder:SetATTTooltip(L["CLASS_BORDER_TOOLTIP"])
-checkboxUseClassColorForBorder:SetPoint("TOPLEFT", buttonBackgroundColor, "BOTTOMLEFT", -2, 0)
-
---Bottom
-local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
-headerAdditionalInformation:SetPoint("LEFT", headerTooltips, 0, 0)
-headerAdditionalInformation:SetPoint("TOP", checkboxUseClassColorForBorder, "BOTTOM", 0, -10)
-
--- TODO: localize
-local ids = {
-	["achievementID"] = L["ACHIEVEMENT_ID"],
-	["achievementCategoryID"] = L["ACHIEVEMENT_CATEGORY_ID"],
-	["Alive"] = L["ALIVE"],
-	["awp"] = L["ADDED_WITH_PATCH"],
-	["artifactID"] = L["ARTIFACT_ID"],
-	["azeriteEssenceID"] = L["AZERITE_ESSENCE_ID"],
-	["b"] = L["BINDING"],
-	["bonusID"] = L["BONUS_ID"],
-	["conduitID"] = L["CONDUIT_ID"],
-	["creatureID"] = L["CREATURE_ID"],
-	["creatures"] = "Creatures List",
-	["criteriaID"] = "Criteria ID",
-	["currencyID"] = "Currency ID",
-	["difficultyID"] = L["DIFFICULTY_ID"],
-	["displayID"] = L["DISPLAY_ID"],
-	["encounterID"] = L["ENCOUNTER_ID"],
-	["e"] = L["EVENT_ID"],
-	["factionID"] = L["FACTION_ID"],
-	["filterID"] = L["FILTER_ID"],
-	["flightPathID"] = L["FLIGHT_PATH_ID"],
-	["followerID"] = L["FOLLOWER_ID"],
-	["guid"] = L["GUID"],
-	["headerID"] = L["HEADER_ID"],
-	["iconPath"] = L["ICON_PATH"],
-	["illusionID"] = L["ILLUSION_ID"],
-	["instanceID"] = L["INSTANCE_ID"],
-	["itemID"] = L["ITEM_ID"],
-	["itemString"] = L["ITEM_STRING"],
-	["Layer"] = L["LAYER"],
-	["mapID"] = L["MAP_ID"],
-	["modID"] = L["MOD_ID"],
-	["objectID"] = L["OBJECT_ID"],
-	["__type"] = L["OBJECT_TYPE"],
-	["Objectives"] = L["OBJECTIVES"],
-	["questID"] = L["QUEST_ID"],
-	["QuestGivers"] = L["QUEST_GIVERS"],
-	["rwp"] = L["REMOVED_WITH_PATCH"],
-	["runeforgePowerID"] = L["RUNEFORGE_POWER_ID"],
-	["setID"] = L["SET_ID"],
-	["sourceID"] = L["SOURCE_ID"],
-	["Spawned"] = L["SPAWNED"],
-	["speciesID"] = L["SPECIES_ID"],
-	["spellID"] = L["SPELL_ID"],
-	["tierID"] = L["EXPANSION_ID"],
-	["titleID"] = L["TITLE_ID"],
-	["visualID"] = L["VISUAL_ID"],
-}
-local idsArray = {}
-for id,_ in pairs(ids) do
-	idsArray[#idsArray + 1] = id
-end
-table.sort(idsArray, function(a,b) return a:lower() < b:lower() end)
-local activeIds = {}
--- Table of AdditionalID/Localize Name Mappings
-settings.AdditionalIDs = ids
--- Array of currently-active AdditionalIDs. Refreshed when AdditionalIDs change
-settings.ActiveAdditionalIDs = activeIds
-local function RefreshActiveAdditionalIDs()
-	wipe(activeIds)
-	for _,id in ipairs(idsArray) do
-		if settings:GetTooltipSetting(id) then
-			activeIds[#activeIds + 1] = id
-		end
-	end
-end
-settings.__RefreshActiveAdditionalIDs = RefreshActiveAdditionalIDs
-settings.AdditionalIDValueConversions = {
-	filterID = function(val)
-		return L["FILTER_ID_TYPES"][val]
-	end,
-	b = function(val)
-		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
-	end,
-}
--- Some additional data we want to show the field value if any recursive parent includes the field
-settings.AdditionalIDRecursive = {
-	awp = true,
-	rwp = true,
-}
-local last = nil
-local split1 = math.ceil(#idsArray / 3)
-local split2 = 2 * split1
-for idNo,id in ipairs(idsArray) do
-	local filter = child:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id))
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked())
-		RefreshActiveAdditionalIDs()
-		settings:Refresh()
-	end)
-	-- Column 1
-	if idNo == 1 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
-	-- Column 2
-	elseif idNo > split1 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
-		split1 = 999
-	-- Column 3
-	elseif idNo > split2 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
-		split2 = 999
-	else
-		filter:AlignBelow(last)
-	end
-	last = filter
-end

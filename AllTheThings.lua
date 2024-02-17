@@ -17,7 +17,7 @@ BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L.TOGGLE_COMPLETIONIST_MODE
 BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L.TOGGLE_DEBUG_MODE
 BINDING_NAME_ALLTHETHINGS_TOGGLEFACTIONMODE = L.TOGGLE_FACTION_MODE
 
-BINDING_HEADER_ALLTHETHINGS_PREFERENCES = L.PREFERENCES
+BINDING_HEADER_ALLTHETHINGS_PREFERENCES = PREFERENCES
 BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L.TOGGLE_COMPLETEDTHINGS
 BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L.TOGGLE_COMPLETEDGROUPS
 BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L.TOGGLE_COLLECTEDTHINGS
@@ -9972,9 +9972,9 @@ RowOnEnter = function (self)
 								if totalItems > 0 then
 									chance = 100 / (totalItems - specHits[id]);
 									color = GetProgressColor(chance / 100);
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
+									GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 								else
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
+									GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "N/A");
 								end
 							end
 						end
@@ -15396,7 +15396,7 @@ app.OpenAuctionModule = function(self)
 		local tabID = AuctionHouseFrame.numTabs+1;
 		local button = CreateFrame("Button", "AuctionHouseFrameTab"..tabID, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
 		button:SetID(tabID);
-		button:SetText(L["AUCTION_TAB"]);
+		button:SetText(L.SHORTTITLE);
 		button:SetNormalFontObject(GameFontHighlightSmall);
 		button:SetPoint("LEFT", AuctionHouseFrame.Tabs[tabID-1], "RIGHT", -15, 0);
 		tinsert(AuctionHouseFrame.Tabs, button);

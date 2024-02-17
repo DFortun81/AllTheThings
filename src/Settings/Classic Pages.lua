@@ -1,809 +1,16 @@
---------------------------------------------------------------------------------
---                        A L L   T H E   T H I N G S                         --
---------------------------------------------------------------------------------
---				Copyright 2017-2024 Dylan Fortune (Crieve-Sargeras)           --
---------------------------------------------------------------------------------
 local appName, app = ...;
-local L = app.L;
+local L = app.L.SETTINGS_MENU;
+local settings = app.Settings;
 
--- Local cache
-local ATTClassicSettings, ATTClassicSettingsPerCharacter = {}, {};
-
--- The Settings Frame
-local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer);
-settings:SetAllPoints();
-app.Settings = settings;
-settings.AccountWide = {
-	Achievements = true,
-	BattlePets = true,
-	Deaths = true,
-	Exploration = true,
-	FlightPaths = true,
-	Heirlooms = true,
-	Illusions = true,
-	Mounts = true,
-	PVPRanks = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	RWP = true,
-	Titles = true,
-	Toys = true,
-};
-settings.Collectibles = {
-	Achievements = true,
-	BattlePets = true,
-	Exploration = true,
-	FlightPaths = true,
-	Heirlooms = true,
-	Illusions = true,
-	Loot = true,
-	Mounts = true,
-	Quests = true,
-	Recipes = true,
-	Reputations = true,
-	RWP = true,
-	Titles = true,
-	Toys = true,
-};
-settings:Hide();
-
-settings.Open = function(self)
-	-- Open the Options menu.
-	if InterfaceOptionsFrame:IsVisible() then
-		InterfaceOptionsFrame_Show();
-	else
-		InterfaceOptionsFrame_OpenToCategory(appName);
-		InterfaceOptionsFrame_OpenToCategory(appName);
-	end
-end
-settings:SetScript("OnShow", function(self)
-	self:Refresh();
-end);
-
--- Settings Class
-local Things = {
-	"Achievements",
-	"AzeriteEssences",
-	"BattlePets",
-	"CharacterUnlocks",
-	"Conduits",
-	"Deaths",
-	"DrakewatcherManuscripts",
-	"Exploration",
-	"FlightPaths",
-	"Followers",
-	"Heirlooms",
-	"HeirloomUpgrades",
-	"Illusions",
-	"Mounts",
-	"MusicRollsAndSelfieFilters",
-	"Quests",
-	"QuestsLocked",
-	"PVPRanks",
-	"Recipes",
-	"Reputations",
-	"RuneforgeLegendaries",
-	"RWP",
-	"Titles",
-	"Toys",
-	"Transmog",
-}
-local GeneralSettingsBase = {
-	__index = {
-		["AccountMode"] = false,
-		["DebugMode"] = false,
-		["FactionMode"] = false,
-		["AccountWide:Achievements"] = false,
-		["AccountWide:BattlePets"] = true,
-		["AccountWide:Deaths"] = true,
-		["AccountWide:Exploration"] = false,
-		["AccountWide:FlightPaths"] = false,
-		["AccountWide:Heirlooms"] = true,
-		["AccountWide:Illusions"] = true,
-		["AccountWide:Mounts"] = true,
-		["AccountWide:PVPRanks"] = false,
-		["AccountWide:Quests"] = false,
-		["AccountWide:Recipes"] = true,
-		["AccountWide:Reputations"] = false,
-		["AccountWide:RWP"] = true,
-		["AccountWide:Titles"] = false,
-		["AccountWide:Toys"] = true,
-		["Hide:PvP"] = false,
-		["DeathTracker"] = app.GameBuildVersion < 40000,
-		["Thing:Achievements"] = true,
-		["Thing:BattlePets"] = true,
-		["Thing:Exploration"] = true,
-		["Thing:FlightPaths"] = true,
-		["Thing:Heirlooms"] = true,
-		["Thing:Illusions"] = true,
-		--["Thing:Loot"] = false,
-		["Thing:Mounts"] = true,
-		--["Thing:PVPRanks"] = false,
-		["Thing:Quests"] = true,
-		["Thing:QuestsLocked"] = false,
-		["Thing:Recipes"] = true,
-		["Thing:Reputations"] = true,
-		--["Thing:RWP"] = false,
-		["Thing:Titles"] = true,
-		["Thing:Toys"] = true,
-		["Show:CompletedGroups"] = false,
-		["Show:CollectedThings"] = false,
-		["Show:OnlyActiveEvents"] = true,
-	},
-};
-local FilterSettingsBase = {
-	__index = {
-
-	},
-};
-local RWPFilterSettingsBase = {
-	__index = {
-
-	},
-};
-local TooltipSettingsBase = {
-	__index = {
-		["Auto:AuctionList"] = true,
-		["Auto:ProfessionList"] = true,
-		["Celebrate"] = true,
-		["Channel"] = "master",
-		["ClassRequirements"] = true,
-		["Coordinates"] = true,
-		["Descriptions"] = true,
-		["DisplayInCombat"] = true,
-		["Enabled"] = true,
-		["Enabled:Mod"] = "None",
-		["KnownBy"] = true,
-		["Locations"] = 5,
-		["Lore"] = true,
-		["MainListScale"] = 1,
-		["MiniListScale"] = 1,
-		["WorldMapButton"] = true,
-		["MinimapButton"] = true,
-		["MinimapSize"] = 36,
-		["Models"] = true,
-		["Objectives"] = true,
-		["PlayDeathSound"] = false,
-		["Precision"] = 2,
-		["Progress"] = true,
-		["QuestGivers"] = true,
-		["RaceRequirements"] = true,
-		["Report:Collected"] = true,
-		["Report:CompletedQuests"] = false,
-		["ShowIconOnly"] = false,
-		["Show:CraftedItems"] = false,
-		["Show:OtherCharacterQuests"] = false,
-		["Show:Recipes"] = false,
-		["Show:Remaining"] = false,
-		["Show:Percentage"] = true,
-		["Show:SpellRanks"] = true,
-		["SoftReserves"] = true,
-		["SoftReservePersistence"] = false,
-		["SourceLocations"] = true,
-		["SourceLocations:Completed"] = true,
-		["SourceLocations:Creatures"] = true,
-		["SourceLocations:Things"] = true,
-		["SummarizeThings"] = true,
-		["Warn:Removed"] = true,
-		["creatures"] = true,
-		["awp"] = true,
-		["rwp"] = true,
-	},
-};
-local UnobtainableSettingsBase = {
-	__index = {
-		[1] = false,	-- Never Implemented
-		[2] = false,	-- Removed From Game
-		[3] = false,	-- Blizzard Balance
-	},
-};
-local RawSettings;
-settings.Initialize = function(self)
-	local global_ATTClassicSettings = _G["ATTClassicSettings"];
-	if global_ATTClassicSettings then ATTClassicSettings = global_ATTClassicSettings; end
-	_G["ATTClassicSettings"] = ATTClassicSettings;
-	RawSettings = ATTClassicSettings;
-
-	local global_ATTClassicSettingsPerCharacter = _G["ATTClassicSettingsPerCharacter"];
-	if global_ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = global_ATTClassicSettingsPerCharacter; end
-	_G["ATTClassicSettingsPerCharacter"] = ATTClassicSettingsPerCharacter;
-
-	-- Assign the default settings
-	if not ATTClassicSettings.General then ATTClassicSettings.General = {}; end
-	if not ATTClassicSettings.Tooltips then ATTClassicSettings.Tooltips = {}; end
-	if not ATTClassicSettings.Unobtainable then
-		if ATTClassicSettings.Unobtainables then
-			ATTClassicSettings.Unobtainable = ATTClassicSettings.Unobtainables;
-		else
-			ATTClassicSettings.Unobtainable = {};
-		end
-	end
-	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
-	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
-	setmetatable(ATTClassicSettings.Unobtainable, UnobtainableSettingsBase);
-	
-	-- Check for Season of Discovery
-	local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
-	if season > 0 then
-		local states = getmetatable(ATTClassicSettings.Unobtainable).__index;
-		if season == 1 then	-- SOM
-			states[1604] = true;
-		end
-		if season == 2 then	-- SOD
-			states[1605] = app.GameBuildVersion >= 11500;
-			states[1606] = app.GameBuildVersion >= 11501;
-			if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
-			elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
-			else app.MaximumSkillLevel = 150; end
-		end
-	end
-
-	-- Assign the preset filters for your character class as the default states
-	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
-	if not ATTClassicSettingsPerCharacter.RWPFilters then ATTClassicSettingsPerCharacter.RWPFilters = {}; end
-	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
-	RWPFilterSettingsBase.__index = app.PresetRWPs[app.Class] or app.PresetRWPs.ALL;
-	setmetatable(ATTClassicSettingsPerCharacter.Filters, FilterSettingsBase);
-	setmetatable(ATTClassicSettingsPerCharacter.RWPFilters, RWPFilterSettingsBase);
-
-	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
-	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
-	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
-	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
-	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
-	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
-	app.SetMinimapButtonSettings(
-		self:GetTooltipSetting("MinimapButton"),
-		self:GetTooltipSetting("MinimapSize"));
-	self:UpdateMode();
-end
-settings.Get = function(self, setting)
-	return ATTClassicSettings.General[setting];
-end
-settings.GetFilter = function(self, filterID)
-	return ATTClassicSettingsPerCharacter.Filters[filterID];
-end
-settings.GetFilterForRWPBase = function(self, filterID)
-	return app.PresetRWPs.ALL[filterID];
-end
-settings.GetFilterForRWP = function(self, filterID)
-	return ATTClassicSettingsPerCharacter.RWPFilters[filterID];
-end
-settings.GetRawFilters = function(self)
-	return ATTClassicSettingsPerCharacter.Filters;
-end
-settings.GetRawSettings = function(self, name)
-	return RawSettings[name];
-end
-settings.GetModeString = function(self)
-	local mode = "Mode";
-	if app.MODE_DEBUG then
-		mode = "Debug " .. mode;
-	else
-		if app.MODE_ACCOUNT then
-			if self:Get("FactionMode") then
-				mode = FACTION .. " " .. mode;
-			else
-				mode = "Account " .. mode;
-			end
-		end
-
-		if self:Get("Hide:PvP") then
-			mode = "PvE " .. mode;
-		end
-
-		local things = {};
-		local thingCount = 0;
-		local totalThingCount = 0;
-		local excludes = {
-			["DeathTracker"] = true,
-			["Thing:QuestsLocked"] = true,
-			["Thing:RWP"] = true,
-		};
-		if not (C_TransmogCollection and C_TransmogCollection.GetIllusions) then
-			excludes["Thing:Illusions"] = true;
-		end
-		for key,_ in pairs(GeneralSettingsBase.__index) do
-			if key:sub(1, 6) == "Thing:" and not excludes[key] then
-				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
-					thingCount = thingCount + 1;
-					tinsert(things, key:sub(7));
-				end
-			end
-		end
-		if thingCount == 0 then
-			if self:Get("Thing:RWP") then
-				mode = "RWP Only " .. mode;
-			else
-				mode = "None of the Things " .. mode;
-			end
-		else
-			if thingCount == 1 then
-				mode = things[1] .. " Only " .. mode;
-			elseif thingCount == 2 then
-				mode = things[1] .. " + " .. things[2] .. " Only " .. mode;
-			elseif thingCount == totalThingCount then
-				mode = "Insane " .. mode;
-			else
-				mode = "Normal " .. mode;
-			end
-			if self:Get("Thing:RWP") then
-				mode = mode .. " + RWP";
-			end
-		end
-	end
-	if self:Get("Filter:ByLevel") then
-		mode = "Level " .. app.Level .. " " .. mode;
-	end
-	return mode;
-end
-settings.GetShortModeString = function(self)
-	if app.MODE_DEBUG then
-		return "D";
-	elseif app.MODE_ACCOUNT then
-		return "A";
-	else
-		return "N";
-	end
-end
-settings.GetPersonal = function(self, setting)
-	return ATTClassicSettingsPerCharacter[setting];
-end
-settings.GetTooltipSetting = function(self, setting)
-	return ATTClassicSettings.Tooltips[setting];
-end
-settings.GetValue = function(self, container, setting)
-	return RawSettings[container][setting]
-end
-settings.GetUnobtainableFilter = function(self, u)
-	return ATTClassicSettings.Unobtainable[u];
-end
-settings.Set = function(self, setting, value)
-	ATTClassicSettings.General[setting] = value;
-	self:Refresh();
-end
-settings.SetFilter = function(self, filterID, value)
-	ATTClassicSettingsPerCharacter.Filters[filterID] = value;
-	self:UpdateMode(1);
-end
-settings.SetTooltipSetting = function(self, setting, value)
-	ATTClassicSettings.Tooltips[setting] = value;
-	app.WipeSearchCache();
-	self:Refresh();
-end
-settings.SetUnobtainableFilter = function(self, u, value)
-	ATTClassicSettings.Unobtainable[u] = value;
-	self:UpdateMode(1);
-end
-settings.SetPersonal = function(self, setting, value)
-	ATTClassicSettingsPerCharacter[setting] = value;
-	self:Refresh();
-end
-settings.Refresh = function(self)
-	app.HandleEvent("OnSettingsRefreshed");
-end
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. app.UniqueCounter.Child, self, "InterfaceOptionsCheckButtonTemplate");
-	cb:SetScript("OnClick", OnClick);
-	app.AddEventHandler("OnSettingsRefreshed", function()
-		OnRefresh(cb);
-	end);
-	cb.Text:SetText(text);
-	cb.Text:SetWordWrap(false)
-	cb:SetHitRectInsets(0,0 - cb.Text:GetUnboundedStringWidth(),0,0);
-	return cb;
-end
-settings.CreateOptionsPage = function(self, text, isTopLevel)
-	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
-	subcategory:SetAllPoints();
-	if isTopLevel then
-		subcategory.name = appName;
-		InterfaceOptions_AddCategory(subcategory);
-	else
-		subcategory.name = text;
-		subcategory.parent = appName;
-		InterfaceOptions_AddCategory(subcategory);
-	end
-	subcategory.CreateCheckBox = CreateCheckBox;
-	return subcategory;
-end
-settings.ShowCopyPasteDialog = function(self)
-	app:ShowPopupDialogWithEditBox("Ctrl+A, Ctrl+C to Copy to your Clipboard.", self.copypasta or self:GetText(), nil, 10);
-end
-
-settings.SetAccountMode = function(self, accountMode)
-	self:Set("AccountMode", accountMode);
-	self:UpdateMode(1);
-end
-settings.ToggleAccountMode = function(self)
-	self:SetAccountMode(not self:Get("AccountMode"));
-end
-settings.SetDebugMode = function(self, debugMode)
-	self:Set("DebugMode", debugMode);
-	self:UpdateMode(1);
-end
-settings.ToggleDebugMode = function(self)
-	self:SetDebugMode(not self:Get("DebugMode"));
-end
-settings.SetFactionMode = function(self, factionMode)
-	self:Set("FactionMode", factionMode);
-	self:UpdateMode(1);
-end
-settings.ToggleFactionMode = function(self)
-	self:SetFactionMode(not self:Get("FactionMode"));
-end
-settings.SetCompletedThings = function(self, checked)
-	self:Set("Show:CompletedGroups", checked);
-	self:Set("Show:CollectedThings", checked);
-	self:UpdateMode(1);
-end
-settings.ToggleCompletedThings = function(self)
-	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
-end
-settings.SetCompletedGroups = function(self, checked)
-	self:Set("Show:CompletedGroups", checked);
-	self:UpdateMode(1);
-end
-settings.ToggleCompletedGroups = function(self)
-	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
-end
-settings.SetCollectedThings = function(self, checked)
-	self:Set("Show:CollectedThings", checked);
-	self:UpdateMode(1);
-end
-settings.ToggleCollectedThings = function(self)
-	settings:SetCollectedThings(not self:Get("Show:CollectedThings", checked));
-end
-settings.SetHideBOEItems = function(self, checked)
-	self:Set("Hide:BoEs", checked);
-	self:UpdateMode(1);
-end
-settings.ToggleBOEItems = function(self)
-	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
-end
-settings.SetLootMode = function(self, checked)
-	self:Set("Thing:Loot", checked);
-	self:UpdateMode(1);
-end
-settings.ToggleLootMode = function(self)
-	self:SetLootMode(not self:Get("Thing:Loot"));
-end
-settings.SetSourceLocations = function(self, checked)
-	self:SetTooltipSetting("SourceLocations", checked);
-end
-settings.ToggleSourceLocations = function(self)
-	self:SetSourceLocations(not self:GetTooltipSetting("SourceLocations"));
-end
--- Setup tracking for all Things based on the Settings value, or whether it is forcibly tracked or forced AccountWide
-settings.SetThingTracking = function(self, force)
-	if force == "Debug" then
-		for _,thing in ipairs(Things) do
-			self.AccountWide[thing] = true
-			self.Collectibles[thing] = true
-		end
-	elseif force == "Account" then
-		for _,thing in ipairs(Things) do
-			self.AccountWide[thing] = true
-			self.Collectibles[thing] = self:Get("Thing:"..thing)
-		end
-	else
-		for _,thing in ipairs(Things) do
-			self.AccountWide[thing] = self:Get("AccountWide:"..thing)
-			self.Collectibles[thing] = self:Get("Thing:"..thing)
-		end
-	end
-end
-settings.UpdateMode = function(self, doRefresh)
-	local filterSet = app.Modules.Filter.Set;
-	if self:Get("DebugMode") then
-		app.MODE_ACCOUNT = nil;
-		app.MODE_DEBUG = true
-		
-		filterSet.Group()
-		filterSet.Unobtainable()
-		filterSet.Visible(true)
-		filterSet.FilterID()
-		filterSet.Class()
-		filterSet.Race()
-		filterSet.RequireSkill()
-		filterSet.Event()
-		filterSet.MinReputation()
-		filterSet.CustomCollect()
-		-- Default filter fallback in Debug mode is based on Show Completed toggles so that uncollectible/completed content can still be hidden in Debug if desired
-		filterSet.DefaultGroup(not self:Get("Show:CompletedGroups"))
-		filterSet.DefaultThing(not self:Get("Show:CollectedThings"))
-		filterSet.Trackable()
-
-		--settings:SetThingTracking("Debug")
-		local accountWideSettings = self.AccountWide;
-		for key,value in pairs(accountWideSettings) do
-			accountWideSettings[key] = true;
-		end
-
-		local collectibleSettings = self.Collectibles;
-		for key,value in pairs(collectibleSettings) do
-			collectibleSettings[key] = true;
-		end
-
-		-- Modules
-		app.Modules.PVPRanks.SetCollectible(true);
-	else
-		app.MODE_DEBUG = nil;
-		filterSet.Visible(true)
-		filterSet.Group(true)
-		filterSet.DefaultGroup(true)
-		filterSet.DefaultThing(true)
-		-- specifically hiding something
-		if true--[[settings:GetValue("Unobtainable", "DoFiltering")]] then
-			filterSet.Unobtainable(true)
-		else
-			filterSet.Unobtainable()
-		end
-		if self:Get("Show:TrackableThings") then
-			filterSet.Trackable(true)
-		else
-			filterSet.Trackable()
-		end
-
-		if self:Get("AccountMode") then
-			app.MODE_ACCOUNT = true;
-			filterSet.FilterID()
-			filterSet.Class()
-			filterSet.RequireSkill()
-			filterSet.MinReputation()
-			filterSet.CustomCollect()
-			if self:Get("FactionMode") then
-				filterSet.Race(true, true)
-			else
-				filterSet.Race()
-			end
-
-			-- Force Account-Wide with Account Mode otherwise you get really dumb situations
-			settings:SetThingTracking("Account")
-		else
-			app.MODE_ACCOUNT = nil;
-			filterSet.FilterID(true)
-			filterSet.Class(true)
-			filterSet.Race(true)
-			filterSet.RequireSkill(true)
-			filterSet.MinReputation(true)
-			filterSet.CustomCollect(true)
-
-			settings:SetThingTracking()
-		end
-		
-		-- Old Filters
-		local accountWideSettings = self.AccountWide;
-		for key,value in pairs(accountWideSettings) do
-			accountWideSettings[key] = self:Get("AccountWide:" .. key);
-		end
-
-		local collectibleSettings = self.Collectibles;
-		for key,value in pairs(collectibleSettings) do
-			collectibleSettings[key] = self:Get("Thing:" .. key);
-		end
-
-		-- Modules
-		app.Modules.PVPRanks.SetCollectible(self:Get("Thing:PVPRanks"));
-
-		if self:Get("Show:OnlyActiveEvents") then
-			filterSet.Event(true)
-		else
-			filterSet.Event()
-		end
-	end
-	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
-
-	local filters = ATTClassicSettingsPerCharacter.Filters;
-	for filterID,state in pairs({
-		[100] = self.Collectibles.Mounts,
-		[101] = self.Collectibles.BattlePets,
-		[102] = self.Collectibles.Toys,
-		[200] = self.Collectibles.Recipes,
-	}) do
-		filters[filterID] = state;
-	end
-	
-	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
-		filterSet.CompletedGroups()
-	else
-		filterSet.CompletedGroups(true)
-	end
-	if self:Get("Show:CollectedThings") or self:Get("DebugMode") then
-		filterSet.CompletedThings()
-	else
-		filterSet.CompletedThings(true)
-	end
-	
-	--[[
-	-- This isn't here?
-	if self.AccountWide.Achievements then
-		app.AchievementFilter = 4
-	else
-		app.AchievementFilter = 13
-	end
-	]]--
-	
-	
-	if self:Get("Filter:BoEs") then
-		filterSet.ItemUnbound(true)
-	else
-		filterSet.ItemUnbound()
-	end
-	if self:Get("Hide:BoEs") then
-		filterSet.Bound(true)
-	else
-		filterSet.Bound()
-	end
-	if self:Get("Hide:PvP") then
-		filterSet.PvP(true)
-	else
-		filterSet.PvP()
-	end
-	if self:Get("Show:PetBattles") then
-		filterSet.PetBattles()
-	else
-		filterSet.PetBattles(true)
-	end
-	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
-		filterSet.Level(true)
-	else
-		filterSet.Level()
-	end
-	
-	if self:Get("Filter:BySkillLevel") and not self:Get("DebugMode") then
-		filterSet.SkillLevel(true)
-	else
-		filterSet.SkillLevel()
-	end
-	app:UnregisterEvent("GOSSIP_SHOW");
-	app:UnregisterEvent("TAXIMAP_OPENED");
-	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
-		app:RegisterEvent("GOSSIP_SHOW");
-		app:RegisterEvent("TAXIMAP_OPENED");
-	end
-	if doRefresh then
-		app._SettingsRefresh = GetTimePreciseSec()
-		app:RefreshDataCompletely("UpdateMode");
-	end
-	self:Refresh();
-end
-
-local ModifierFuncs = {
-	["Shift"] = IsShiftKeyDown,
-	["Ctrl"] = IsControlKeyDown,
-	["Alt"] = IsAltKeyDown,
-	["Cmd"] = IsMetaKeyDown,
-}
-settings.GetTooltipSettingWithMod = function(self, setting)
-	-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
-	local v = ATTClassicSettings.Tooltips[setting]
-	if not v then return v end
-	local k = ATTClassicSettings.Tooltips[setting..":Mod"]
-	if k == "None" then
-		return v
-	end
-	local func = ModifierFuncs[k]
-	if func and func() then
-		return v
-	end
-end
-
-app.AddEventHandler("OnPlayerLevelUp", function()
-	if settings:Get("Filter:ByLevel") then
-		app:RefreshDataCompletely("PLAYER_LEVEL_UP");
-	end
-end);
-
-
-
-local reasons = L["UNOBTAINABLE_ITEM_REASONS"];
-local UnobtainableFilterOnClick = function(self)
-	local checked = self:GetChecked();
-	if checked then
-		-- If the phase is active, fall through to the base setting.
-		if UnobtainableSettingsBase.__index[self.u] then
-			settings:SetUnobtainableFilter(self.u, nil);
-		else
-			settings:SetUnobtainableFilter(self.u, true);
-		end
-	else
-		settings:SetUnobtainableFilter(self.u, false);
-	end
-end;
-local UnobtainableOnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:SetChecked(settings:GetUnobtainableFilter(self.u));
-
-		local minimumBuild = reasons[self.u][4];
-		if minimumBuild and minimumBuild > app.GameBuildVersion then
-			self:Disable();
-			self:SetAlpha(0.2);
-		else
-			self:Enable();
-			self:SetAlpha(1);
-			if UnobtainableSettingsBase.__index[self.u] then
-				self.Text:SetTextColor(0.6, 0.7, 1);
-			else
-				self.Text:SetTextColor(1, 1, 1);
-			end
-		end
-	end
-end;
 
 ------------------------------------------
 -- The "General" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage("General", true);
-
--- CONTENT
-
--- Top 1
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local curse = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-curse:SetPoint("TOPLEFT", child, "BOTTOMLEFT", 0, -6);
-curse.copypasta = "https://www.curseforge.com/wow/addons/all-the-things";
-curse:SetText("CurseForge");
-curse:SetWidth(140);
-curse:SetHeight(30);
-curse:RegisterForClicks("AnyUp");
-curse:SetScript("OnClick", settings.ShowCopyPasteDialog);
-curse:SetATTTooltip("Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.");
-
-local discord = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-discord:SetPoint("TOPLEFT", curse, "TOPRIGHT", 4, 0);
-discord.copypasta = "discord.gg/allthethings";
-discord:SetText("Discord");
-discord:SetWidth(140);
-discord:SetHeight(30);
-discord:RegisterForClicks("AnyUp");
-discord:SetScript("OnClick", settings.ShowCopyPasteDialog);
-discord:SetATTTooltip("Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!");
-
-local twitch = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-twitch:SetPoint("TOPLEFT", discord, "TOPRIGHT", 4, 0);
-twitch.copypasta = "twitch.tv/crieve";
-twitch:SetText("Twitch");
-twitch:SetWidth(140);
-twitch:SetHeight(30);
-twitch:RegisterForClicks("AnyUp");
-twitch:SetScript("OnClick", settings.ShowCopyPasteDialog);
-twitch:SetATTTooltip("Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!");
-
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
+local child = settings:CreateOptionsPage("General");
 
 local ModeLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ModeLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ModeLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);
 ModeLabel:SetJustifyH("LEFT");
 ModeLabel:Show();
 app.AddEventHandler("OnSettingsRefreshed", function()
@@ -1923,44 +1130,10 @@ end)();
 -- The "Filters" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage("Filters");
-
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
-app.AddEventHandler("OnSettingsRefreshed", function()
-	if app.MODE_ACCOUNT or app.MODE_DEBUG then
-		--child:Disable();
-	else
-		--child:Enable();
-	end
-end);
+local child = settings:CreateOptionsPage("Filters", "General");
 
 local ItemFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ItemFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ItemFiltersLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);
 ItemFiltersLabel:SetJustifyH("LEFT");
 ItemFiltersLabel:SetText("Armor / Weapon Filters");
 ItemFiltersLabel:Show();
@@ -1968,6 +1141,37 @@ ItemFiltersLabel:Show();
 -- Armor
 local last, xoffset, yoffset = ItemFiltersLabel, 0, -4;
 local itemFilterNames = L["FILTER_ID_TYPES"];
+local allEquipmentFilters = {	-- Filter IDs
+	11,	-- Artifacts
+	2,	-- Cosmetic
+	3,	-- Cloaks
+	10,	-- Shirts
+	9,	-- Tabards
+	33,	-- Crossbows
+	32,	-- Bows
+	31,	-- Guns
+	50,	-- Miscellaneous
+	57,	-- Profession Equipment
+	34,	-- Fist Weapons
+	35,	-- Warglaives
+	27,	-- Wands
+	21,	-- 1H Axes
+	22,	-- 2H Axes
+	23,	-- 1H Maces
+	24,	-- 2H Maces
+	25,	-- 1H Swords
+	26,	-- 2H Swords
+	1,	-- Held in Off-Hand
+	8,	-- Shields
+	4,	-- Cloth
+	5,	-- Leather
+	6,	-- Mail
+	7,	-- Plate
+	20,	-- Daggers
+	29,	-- Polearms
+	28,	-- Staves
+}
+
 
 -- Primary Armor Class
 local ItemFilterOnClick = function(self)
@@ -1977,7 +1181,7 @@ local ItemFilterOnRefresh = function(self)
 	if app.MODE_ACCOUNT or app.MODE_DEBUG then
 		self:Disable();
 		self:SetAlpha(0.2);
-	elseif FilterSettingsBase.__index[self.filterID] then
+	elseif getmetatable(ATTClassicSettingsPerCharacter.Filters).__index[self.filterID] then
 		self:SetChecked(settings:GetFilter(self.filterID));
 		self:Enable();
 		self:SetAlpha(1);
@@ -2063,9 +1267,7 @@ classDefaultsButton:SetWidth(120);
 classDefaultsButton:SetHeight(24);
 classDefaultsButton:RegisterForClicks("AnyUp");
 classDefaultsButton:SetScript("OnClick", function(self)
-	for key,value in pairs(ATTClassicSettingsPerCharacter.Filters) do
-		ATTClassicSettingsPerCharacter.Filters[key] = nil;
-	end
+	wipe(ATTClassicSettingsPerCharacter.Filters);
 	settings:UpdateMode(1);
 end);
 classDefaultsButton:SetATTTooltip("Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.");
@@ -2085,22 +1287,20 @@ allButton:SetHeight(24);
 allButton:RegisterForClicks("AnyUp");
 allButton:SetScript("OnClick", function(self)
 	local active, count = 0, 0;
-	for key,value in pairs(FilterSettingsBase.__index) do
-		if value then
-			count = count + 1;
-			if ATTClassicSettingsPerCharacter.Filters[key] then
-				active = active + 1;
-			end
+	for i,filterID in ipairs(allEquipmentFilters) do
+		count = count + 1;
+		if ATTClassicSettingsPerCharacter.Filters[filterID] then
+			active = active + 1;
 		end
 	end
 	if count > 0 then
 		if (active / count) > 0.5 then
-			for key,value in pairs(FilterSettingsBase.__index) do
-				if value then ATTClassicSettingsPerCharacter.Filters[key] = false; end
+			for i,filterID in ipairs(allEquipmentFilters) do
+				ATTClassicSettingsPerCharacter.Filters[filterID] = false;
 			end
 		else
-			for key,value in pairs(FilterSettingsBase.__index) do
-				if value then ATTClassicSettingsPerCharacter.Filters[key] = true; end
+			for i,filterID in ipairs(allEquipmentFilters) do
+				ATTClassicSettingsPerCharacter.Filters[filterID] = true;
 			end
 		end
 		settings:UpdateMode(1);
@@ -2115,143 +1315,7 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	end
 end);
 
-local GeneralUnobtainableFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-GeneralUnobtainableFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMRIGHT", -200, -8);
-GeneralUnobtainableFiltersLabel:SetJustifyH("LEFT");
-GeneralUnobtainableFiltersLabel:SetText("|CFFFFAAAAGeneral Unobtainable Filters|r");
-GeneralUnobtainableFiltersLabel:Show();
 
--- General Unobtainable Filters
-yoffset = -4;
-last = GeneralUnobtainableFiltersLabel;
-for i,u in ipairs({ 1, 2, 3, 4 }) do
-	local filter = child:CreateCheckBox(reasons[u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reasons[u][2]);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.u = u;
-	last = filter;
-	yoffset = 6;
-end
-end)();
-
-------------------------------------------
--- The "Phases" Tab.					--
-------------------------------------------
-(function()
-local child = settings:CreateOptionsPage("Phases");
-
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
-app.AddEventHandler("OnSettingsRefreshed", function()
-	if app.MODE_DEBUG then
-		-- Disable this Page?
-	else
-		-- Enable this Page?
-	end
-end);
-
--- Update the default unobtainable states based on build version.
-for u,reason in pairs(reasons) do
-	if reason[4] then
-		if app.GameBuildVersion >= reason[4] then
-			if reason[5] and app.GameBuildVersion >= reason[5] then
-				UnobtainableSettingsBase.__index[u] = true;
-			else
-				UnobtainableSettingsBase.__index[u] = false;
-			end
-		else
-			UnobtainableSettingsBase.__index[u] = false;
-		end
-	end
-end
-UnobtainableSettingsBase.__index[11] = true;
-
-local ClassicPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ClassicPhasesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
-ClassicPhasesLabel:SetJustifyH("LEFT");
-ClassicPhasesLabel:SetText("|CFFAAFFAAClassic Phases|r");
-ClassicPhasesLabel:Show();
-
--- Classic Phases
-local last, xoffset, yoffset, spacing, vspacing = ClassicPhasesLabel, 0, -4, 8, 1;
-for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, 0, -vspacing }, { 1604, 0, -vspacing }, { 1605, 0, -vspacing }, { 1606, spacing, -vspacing }, }) do
-	local u = o[1];
-	yoffset = o[3] or 6;
-	local reason = reasons[u];
-	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("LEFT", ClassicPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.8 or 1);
-	filter.u = u;
-	last = filter;
-end
-
-local TBCPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-TBCPhasesLabel:SetPoint("TOP", ClassicPhasesLabel, "TOP", 0, 0);
-TBCPhasesLabel:SetPoint("LEFT", line, "LEFT", 208, 0);
-TBCPhasesLabel:SetJustifyH("LEFT");
-TBCPhasesLabel:SetText("|CFFAAFFAATBC Phases|r");
-TBCPhasesLabel:Show();
-
-last, xoffset, yoffset = TBCPhasesLabel, 0, -4;
-for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing }, { 1802, spacing }, { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 1902, spacing }, { 20, 0, -vspacing }, { 21, 0 }, {2101, spacing, -vspacing }, { 2102, spacing }, { 2103, spacing }, { 2104, spacing }, { 2105, spacing }, { 2106, spacing }, { 2107, spacing }, { 1601, spacing, -vspacing }, }) do
-	local u = o[1];
-	yoffset = o[3] or 6;
-	local reason = reasons[u];
-	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("LEFT", TBCPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.8 or 1);
-	filter.u = u;
-	last = filter;
-end
-
-local WrathPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-WrathPhasesLabel:SetPoint("TOP", ClassicPhasesLabel, "TOP", 0, 0);
-WrathPhasesLabel:SetPoint("LEFT", line, "LEFT", 408, 0);
-WrathPhasesLabel:SetJustifyH("LEFT");
-WrathPhasesLabel:SetText("|CFFAAFFAAWrath Phases|r");
-WrathPhasesLabel:Show();
-
-last, xoffset, yoffset = WrathPhasesLabel, 0, -4;
-for i,o in ipairs({ { 30, 0, 0 }, {3001, spacing, -vspacing }, { 31, 0, -vspacing }, {3101, spacing, -vspacing }, { 32, 0, -vspacing }, { 33, 0 }, {3301, spacing, -vspacing }, {3302, spacing }, {3303, spacing }, }) do
-	local u = o[1];
-	yoffset = o[3] or 6;
-	local reason = reasons[u];
-	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("LEFT", WrathPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.8 or 1);
-	filter.u = u;
-	last = filter;
-end
 
 end)();
 
@@ -2261,34 +1325,8 @@ end)();
 (function()
 local child = settings:CreateOptionsPage("Interface");
 
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
 local TooltipLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+TooltipLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);
 TooltipLabel:SetJustifyH("LEFT");
 TooltipLabel:SetText("Tooltips");
 TooltipLabel:Show();
@@ -2658,7 +1696,7 @@ ShowPercentageCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
 ShowPercentageCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
 
 local DebuggingLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
+DebuggingLabel:SetPoint("TOPRIGHT", child.separator or child, "BOTTOMRIGHT", -220, -8);
 DebuggingLabel:SetJustifyH("LEFT");
 DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
@@ -2838,34 +1876,8 @@ end)();
 (function()
 local child = settings:CreateOptionsPage("Features");
 
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
 local CelebrationsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-CelebrationsLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 330, -8);
+CelebrationsLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 330, -8);
 CelebrationsLabel:SetJustifyH("LEFT");
 CelebrationsLabel:SetText("Celebrations & Sound Effects");
 CelebrationsLabel:Show();
@@ -2973,7 +1985,7 @@ OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenAuctionListAutomatically
 
 -- Window Manager
 local WindowButtons = {};
-local lastWindowButtonRow, lastWindowButtonDistance = line, -8;
+local lastWindowButtonRow, lastWindowButtonDistance = child.separator or child, -8;
 local OnClickForWindowButton = function(self)
 	if SettingsPanel and SettingsPanel:IsShown() then SettingsPanel:Hide(); end
 	local window = app:GetWindow(self.Suffix);
@@ -2994,8 +2006,8 @@ local SetWindowForButton = function(self, window)
 end
 local CreateWindowButton = function()
 	local row = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-	row:SetPoint("LEFT", line, "LEFT", 8, -8);
-	row:SetPoint("RIGHT", line, "LEFT", 300, -8);
+	row:SetPoint("LEFT", child.separator or child, "LEFT", 8, -8);
+	row:SetPoint("RIGHT", child.separator or child, "LEFT", 300, -8);
 	row:SetPoint("TOP", lastWindowButtonRow, "BOTTOM", 0, lastWindowButtonDistance);
 	row:SetHeight(17);
 	row:RegisterForClicks("AnyUp");
@@ -3034,44 +2046,4 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 		WindowButtons[i]:Hide();
 	end
 end);
-end)();
-
-------------------------------------------
--- The "About" Tab.				--
-------------------------------------------
-(function()
-local child = settings:CreateOptionsPage("About");
-
-local logo = child:CreateTexture(nil, "ARTWORK");
-logo:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-logo:SetTexture(app.asset("Discord_2_64"));
-logo:SetSize(36, 36);
-logo:Show();
-
-local title = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-title:SetJustifyH("LEFT");
-title:SetText(L["TITLE"]);
-title:SetScale(1.5);
-title:Show();
-
-local version = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-version:SetPoint("TOPRIGHT", child, "TOPRIGHT", -8, -8);
-version:SetJustifyH("RIGHT");
-version:SetText(app.Version);
-version:Show();
-
-local line = child:CreateTexture(nil, "ARTWORK");
-line:SetPoint("LEFT", child, "LEFT", 4, 0);
-line:SetPoint("RIGHT", child, "RIGHT", -4, 0);
-line:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-line:SetColorTexture(1, 1, 1, 0.4);
-line:SetHeight(2);
-
-local AboutText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-AboutText:SetPoint("TOPLEFT", line, "TOPLEFT", 8, -8);
-AboutText:SetPoint("TOPRIGHT", line, "TOPRIGHT", -8, -8);
-AboutText:SetJustifyH("LEFT");
-AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|C" .. app.Colors.Raid .. "Crieve (DFortun81 on GitHub)|CFFFFFFFF\n\nIf you wish to play with us, we're on Atiesh (Alliance) in the <All The Things> guild!|r\n\n\nContributors working on Classic:\n |CFFFFFFFF\nPr3vention, Avella, Mogwai, Crieve and Talonzor |r\n\n\n\nIf we're missing something, please let us know!\n\nStill lots of things to add, but thankfully there is a finite number of things in WoW Classic and TBC Classic, so we should eventually get it all!");
-AboutText:Show();
 end)();

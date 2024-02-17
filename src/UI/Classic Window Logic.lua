@@ -869,22 +869,22 @@ local function RowOnEnter(self)
 		end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then
 			if reference.filterForRWP then
-				GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f]) .. " -> " .. tostring(L["FILTER_ID_TYPES"][reference.filterForRWP]));
+				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.FILTER_ID, tostring(L["FILTER_ID_TYPES"][reference.f]) .. " -> " .. tostring(L["FILTER_ID_TYPES"][reference.filterForRWP]));
 			else
-				GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f]));
+				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.FILTER_ID, tostring(L["FILTER_ID_TYPES"][reference.f]));
 			end
 		end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then
-			GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID));
+			GameTooltip:AddDoubleLine(L.SETTINGS_MENU.ACHIEVEMENT_ID, tostring(reference.achievementID));
 			if reference.sourceQuests and not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
 				GameTooltip:AddLine("This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.", 0.4, 0.8, 1, true);
 			end
 		end
 		if app.Settings:GetTooltipSetting("creatureID") then
 			if reference.creatureID then
-				GameTooltip:AddDoubleLine(L["CREATURE_ID"], tostring(reference.creatureID));
+				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.CREATURE_ID, tostring(reference.creatureID));
 			elseif reference.npcID then
-				GameTooltip:AddDoubleLine(L["NPC_ID"], tostring(reference.npcID));
+				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.NPC_ID, tostring(reference.npcID));
 			end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end

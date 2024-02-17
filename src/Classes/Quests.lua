@@ -72,7 +72,7 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 			return name;
 		end
 	end});
-	QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, id)
+	QuestNameFromID = setmetatable(L.QUEST_NAMES, { __index = function(t, id)
 		return QuestNameFromServer[id] or QuestNameDefault[id]
 	end});
 	ResetQuestName = function(questID)
@@ -128,7 +128,7 @@ else
 		rawset(t, questID, 0);
 		return 0;
 	end });
-	QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, questID)
+	QuestNameFromID = setmetatable(L.QUEST_NAMES, { __index = function(t, questID)
 		local title = GetTitleForQuestID(questID);
 		if IsRetrieving(title) then
 			local retries = QuestRetries[questID];

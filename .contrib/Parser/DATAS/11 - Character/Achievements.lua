@@ -69,7 +69,7 @@ local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t)
 	if not fs then return; end
 	GameTooltip:AddLine(" ");
 	for i,f in ipairs(fs) do
-		GameTooltip:AddDoubleLine(" |T" .. f.icon .. ":0|t " .. f.text, _.L[f.saved == 1 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+		GameTooltip:AddDoubleLine(" |T" .. f.icon .. ":0|t " .. f.text, _.GetCollectionIcon(f.saved), 1, 1, 1);
 	end
 end]];
 root(ROOTS.Character, n(ACHIEVEMENTS, {

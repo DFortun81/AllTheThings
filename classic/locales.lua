@@ -2,11 +2,9 @@
 --						L O C A L I Z A T I O N  F I L E					  --
 --------------------------------------------------------------------------------
 local name, app = ...;
-local L = {
+local L = app.L;
+for key,value in pairs({
 	-- General Text
-	["TITLE"] = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	["SHORTTITLE"] = "|c" .. app.Colors.ATT .. "ATT|r";
-	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!";
@@ -17,6 +15,7 @@ local L = {
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
 	["PERCENTAGES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
+	["CLIPBOARDCOPYPASTE"] = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	
 	["OPEN_MINILIST_FOR"] = "Open mini list for ";
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
@@ -39,7 +38,25 @@ local L = {
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
-
+	["UNOBTAINABLE_LABEL"] = "Unobtainable Content";
+	
+	-- About tab
+	["ABOUT_PAGE"] = "About";
+	["ABOUT_TOP"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
+	["ABOUT_BOTTOM"] = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
+	["TWITCH_BUTTON_LABEL"] = "Twitch";
+	["CURSEFORGE_BUTTON_LABEL"] = "Curse";
+	["CURSEFORGE_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+	["DISCORD_BUTTON_LABEL"] = "Discord";
+	["PATREON_BUTTON_LABEL"] = "Patreon";
+	["MERCH_BUTTON_LABEL"] = "Merch";
+	["WAGO_BUTTON_LABEL"] = "Wago.io";
+	["WAGO_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
+	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
+	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
+	["MERCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
+	
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r";
@@ -62,23 +79,7 @@ local L = {
 	["ITEM_GIVES_REP"] = "Provides Reputation with '";
 
 	-- Binding Localizations
-	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
-	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
-	["TOGGLE_FACTION_MODE"] = "Toggle Faction Mode";
-	["PREFERENCES"] = "Preferences";
-	["TOGGLE_COMPLETEDTHINGS"] = "Toggle Completed Things (Both)";
-	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";
-	["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things";
-	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
 	["TOGGLE_LOOTDROPS"] = "Toggle Loot/Drops/Items";
-	["TOGGLE_SOURCETEXT"] = "Toggle Source Locations";
-	["MODULES"] = "Modules";
-	["TOGGLE_MAINLIST"] = "Toggle ATT Main List";
-	["TOGGLE_MINILIST"] = "Toggle ATT Mini List";
-	["TOGGLE_PROFESSION_LIST"] = "Toggle ATT Profession List";
-	["TOGGLE_RAID_ASSISTANT"] = "Toggle ATT Raid Assistant";
-	["TOGGLE_RANDOM"] = "Toggle ATT Random";
-	["REROLL_RANDOM"] = "Reroll the Random Selection";
 
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
@@ -109,7 +110,6 @@ local L = {
 	["HEIRLOOMS_UPGRADES_DESC"] = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
 
 	-- Filter Text
-	["ACHIEVEMENT_ID"] = "Achievement ID";
 	["ARTIFACT_ID"] = "Artifact ID";
 	["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
 	["ART_ID"] = "Art ID";
@@ -531,15 +531,6 @@ local L = {
 		[15301] = { -1, "Expansion Features" },
 	},
 	
-	-- Deprecated! (move these eventually)
-	["HEADER_ICONS"] = {};
-	["HEADER_NAMES"] = {},
-	["HEADER_DESCRIPTIONS"] = {};
-	["HEADER_EVENTS"] = {};
-	["HEADER_LORE"] = {};
-	["EVENT_REMAPPING"] = {};
-	["EVENT_TOOLTIPS"] = {};
-	
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 	
@@ -603,19 +594,6 @@ local L = {
 			["lore"] = "Dragonflight is the ninth expansion. The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
 			["lvl"] = 58,
 		},
-	};
-	
-	-- These are alternative map names that we don't want to display, but used for mapID calculations.
-	-- If there is a name provided in the table above, it will prefer that name association.
-	["ART_ID_TO_MAP_ID"] = {};
-	["MAP_ID_TO_ZONE_TEXT"] = {};
-	["QUEST_ID_TO_MAP_ID"] = {};
-	["ZONE_TEXT_TO_MAP_ID"] = {};
-	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
-		["Gates of Ahn'Qiraj"] = 1451,
-		["The Temple of Atal'Hakkar"] = 220,
-		["The Battle for Mount Hyjal"] = 329,
-		["The Eye"] = 334,
 	};
 	
 	-- Unobtainable Listing
@@ -683,52 +661,15 @@ local L = {
 		[3302] = {2, "|CFFAAFFAAThis became available with the release of Ruby Sanctum during Wrath Classic.|r", "Ruby Sanctum", 30400, 30403, "\n \n|CFFFFAAAAIncluded The Ruby Sanctum.|r" },
 		[3303] = {2, "|CFFAAFFAAThis became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.|r", "Elemental Unrest", 30400, 30404, "\n \n|CFFFFAAAAThe Elemental Unrest Pre-Expansion Event?|r" },
 	};
-};
-app.L = L;
-
--- Crieve tested all professions in non-english locales and the skill was not detected without these.
-L["SPELL_NAME_TO_SPELL_ID"] = {
-	-- Riding
-	["Riding"] = 33388,
-	["Equitación"] = 33388,
-	["Reiten"] = 33388,
-	["Monte"] = 33388,
-	["Montaria"] = 33388,
-	["Верховая езда"] = 33388,
-	["탈것 타기"] = 33388,
-	["骑术"] = 33388,
-	
-	-- Herb Gathering
-	-- The skill name is "Herbalism", not "Herb Gathering"
-	["Herbalism"] = 2366,
-	["Herboristería"] = 2366,
-	["Kräuterkunde"] = 2366,
-	["Herboristerie"] = 2366,
-	["Herborismo"] = 2366,
-	["Травничество"] = 2366,
-	["약초채집"] = 2366,
-	["草药学"] = 2366,
-	["草藥學"] = 2366,
-	
-	-- French (Classic Era)
-	["Ingénierie"] = 4036,    -- Engineering
-	["Secourisme"] = 3273,    -- First Aid
-	
-	-- Spanish (Classic Era)
-	["Costura"] = 3908,	-- Tailoring
-	["Marroquinería"] = 2108,    -- Leatherworking
-	
-	["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
-	["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
-	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
-};
+}) do
+	L[key] = value;
+end
 
 
 
 if GetLocale() == "zhCN" or GetLocale() == "zhTW" then
 
 -- General Text
-L["TITLE"] = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r"
 L["DESCRIPTION"] = '"你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收集者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。"'
 
 -- Instructional Text 指引
@@ -741,7 +682,6 @@ L["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ff左键：展开／折叠|r\n|cff3399
 -- Binding Localizations 按键设置
 L["TOGGLE_ACCOUNT_MODE"] = "切换账号模式"
 L["TOGGLE_DEBUG_MODE"] = "切换调试模式"
-L["PREFERENCES"] = "偏好"
 L["TOGGLE_COMPLETEDTHINGS"] = "Toggle Completed Things (Both)"
 L["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups"
 L["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things"
