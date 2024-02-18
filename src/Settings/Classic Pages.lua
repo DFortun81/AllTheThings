@@ -1871,13 +1871,6 @@ end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip("Enable this option if you want ATT to automatically skip all cutscenes on your behalf.");
 AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 330, -8);
 
-local ModulesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ModulesLabel:SetPoint("TOP", WarnRemovedThingsCheckBox, "BOTTOM", 0, -8);
-ModulesLabel:SetPoint("LEFT", CelebrationsLabel, "LEFT", 0, 0);
-ModulesLabel:SetJustifyH("LEFT");
-ModulesLabel:SetText("Modules & Mini Lists");
-ModulesLabel:Show();
-
 local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
@@ -1891,7 +1884,7 @@ function(self)
 	end
 end);
 OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Auction List\n\nShortcut Command: /attauctions");
-OpenAuctionListAutomatically:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
+OpenAuctionListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, -8);
 
 local OpenProfessionListAutomatically = child:CreateCheckBox("Automatically Open the Profession List",
 function(self)
@@ -1903,67 +1896,5 @@ end);
 OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /attskills");
 OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenAuctionListAutomatically, "BOTTOMLEFT", 0, 4);
 
--- Window Manager
-local WindowButtons = {};
-local lastWindowButtonRow, lastWindowButtonDistance = child.separator or child, -8;
-local OnClickForWindowButton = function(self)
-	if SettingsPanel and SettingsPanel:IsShown() then SettingsPanel:Hide(); end
-	local window = app:GetWindow(self.Suffix);
-	if window then window:Show(); end
-end;
-local SetWindowForButton = function(self, window)
-	local text = window.Suffix;
-	self.Suffix = text;
-	if window.data then
-		local SettingsName = window.SettingsName;
-		if SettingsName then text = SettingsName; end
-		local icon = window.data.icon;
-		if icon then text = "|T" .. icon .. ":0|t " .. text; end
-	end
-	
-	if window.Commands then text = text .. " ( /" .. window.Commands[1] .. " )"; end
-	self:SetText(text);
-end
-local CreateWindowButton = function()
-	local row = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-	row:SetPoint("LEFT", child.separator or child, "LEFT", 8, -8);
-	row:SetPoint("RIGHT", child.separator or child, "LEFT", 300, -8);
-	row:SetPoint("TOP", lastWindowButtonRow, "BOTTOM", 0, lastWindowButtonDistance);
-	row:SetHeight(17);
-	row:RegisterForClicks("AnyUp");
-	row:SetScript("OnClick", OnClickForWindowButton);
-	lastWindowButtonDistance = -1;
-	lastWindowButtonRow = row;
-	tinsert(WindowButtons, row);
-	return row;
-end
-app.AddEventHandler("OnSettingsRefreshed", function()
-	local keys,sortedList,topKeys = {},{},{};
-	for suffix,window in pairs(app.Windows) do
-		if window.IsTopLevel then
-			tinsert(topKeys, suffix);
-		else
-			keys[suffix] = window;
-		end
-	end
-	for suffix,window in pairs(keys) do
-		tinsert(sortedList, suffix);
-	end
-	app.Sort(sortedList, app.SortDefaults.Strings);
-	for i,suffix in ipairs(topKeys) do
-		tinsert(sortedList, 1, suffix);
-	end
-	local j = 1;
-	for i,suffix in ipairs(sortedList) do
-		local window = app.Windows[suffix];
-		if window and not window.dynamic and window.Commands and not window.HideFromSettings then
-			local button = WindowButtons[j] or CreateWindowButton();
-			SetWindowForButton(button, window);
-			j = j + 1;
-		end
-	end
-	for i=#WindowButtons,j,-1 do
-		WindowButtons[i]:Hide();
-	end
-end);
+
 end)();

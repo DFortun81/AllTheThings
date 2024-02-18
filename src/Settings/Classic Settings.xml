@@ -10,14 +10,17 @@
 	<Script file="Pages/General - Unobtainables.lua"/>
 	<!--
 	<Script file="Pages/Interface.lua"/>
-	<Script file="Pages/Accessibility.lua"/>
-	<Script file="Pages/Information.lua"/>
+	<Script file="Pages/Interface - Accessibility.lua"/>
+	<Script file="Pages/Interface - Information.lua"/>
 	<Script file="Pages/Features.lua"/>
 	-->
 	<Script file="Pages/Features - Audio.lua"/>
 	<Script file="Pages/Features - Reporting.lua"/>
 	<!--
 	<Script file="Pages/Features - Sync.lua"/>
+	-->
+	<Script file="Pages/Features - Windows.lua"/>
+	<!--
 	<Script file="Pages/Profiles.lua"/>
 	-->
 </Ui>
