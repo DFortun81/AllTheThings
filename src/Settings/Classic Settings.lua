@@ -220,6 +220,11 @@ settings.Initialize = function(self)
 	setmetatable(ATTClassicSettingsPerCharacter.Filters, FilterSettingsBase);
 	setmetatable(ATTClassicSettingsPerCharacter.RWPFilters, RWPFilterSettingsBase);
 
+	if settings.RefreshActiveInformationTypes then
+		settings.RefreshActiveInformationTypes()
+		settings.RefreshActiveInformationTypes = nil
+	end
+
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));

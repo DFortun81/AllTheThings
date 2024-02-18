@@ -1475,6 +1475,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if group.pvp then
 		tinsert(info, { left = L["REQUIRES_PVP"] });
 	end
+	
+	-- Add various extra field info if enabled in settings
+	app.AddActiveInformationTypesForInfo(info, group);
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
 	if app.Settings:GetTooltipSetting("SummarizeThings") then

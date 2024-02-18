@@ -797,7 +797,6 @@ else
 							if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
 								self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
 							end
-							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
 							AttachTooltipSearchResults(self, 1, SearchForField, "creatureID", tonumber(npcID));
 						end
 

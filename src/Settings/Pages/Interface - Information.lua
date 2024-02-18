@@ -33,9 +33,9 @@ local ConversionMethods = setmetatable({
 	b = function(val)
 		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
 	end,
-	questID = function(questID, group)
+	questID = function(questID, reference)
 		-- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
-		local otherFactionQuestID = group.otherFactionQuestID;
+		local otherFactionQuestID = reference.otherFactionQuestID;
 		if otherFactionQuestID then
 			return "["..(app.FactionID == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE).." "..otherFactionQuestID.."] "..questID
 		end
@@ -43,6 +43,7 @@ local ConversionMethods = setmetatable({
 	end,
 	awp = function(val) return GetPatchString(val, app.Colors.AddedWithPatch) end,
 	rwp = function(val) return GetPatchString(val, app.Colors.RemovedWithPatch) end,
+	spellID = function(spellID, reference) return tostring(spellID) .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")" end,
 }, {
 	__index = function(t, key)
 		return DefaultConversionMethod;
@@ -57,6 +58,18 @@ end
 local function GetRecursiveValueForInformationType(t, group)
 	local informationTypeID = t.informationTypeID;
 	return group[informationTypeID] or GetRelativeValue(group, informationTypeID);
+end
+local function ProcessInformationTypeForInfo(t, group, info)
+	local val = t.GetValue(t, group);
+	if val then
+		tinsert(info, { left = t.text, right = ConversionMethods[t.informationTypeID](val, group)});
+	end
+end
+local function ProcessInformationTypeForRow(t, group, tooltip)
+	local val = t.GetValue(t, group);
+	if val then
+		tooltip:AddDoubleLine(t.text, ConversionMethods[t.informationTypeID](val, group))
+	end
 end
 local CreateInformationType = app.CreateClass("InformationType", "informationTypeID", {
 	text = function(t)
@@ -73,6 +86,12 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 	GetValue = function()
 		return GetValueForInformationType;
 	end,
+	ProcessForInfo = function()
+		return ProcessInformationTypeForInfo;
+	end,
+	ProcessForRow = function()
+		return ProcessInformationTypeForRow;
+	end,
 	ShouldDisplayForInfo = app.ReturnTrue,
 	ShouldDisplayForRow = app.ReturnTrue,
 },
@@ -86,55 +105,70 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 local ActiveInformationTypesForInfo, ActiveInformationTypesForRow = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
 for i,informationType in ipairs({
-	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID }),
-	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
-	CreateInformationType("Alive", { text = L.ALIVE, priority = 1, ShouldDisplayForRow = false }),
+	-- Only displayed in NPC Tooltips that are alive and exist in the world.
+	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
+	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
+	CreateInformationType("Layer", { text = L.LAYER, priority = 1, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
+	
+	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
+	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
+	--CreateInformationType("lvl", { text = L.LEVEL, priority = 2 }),	-- TODO: Listed as "LevelRequirements"
+	
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),
-	CreateInformationType("artID", { text = L.ART_ID }),
+	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),
+	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4 }),
+	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4 }),
+	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
+	CreateInformationType("sourceID", { text = L.SOURCE_ID, priority = 5 }),
+	CreateInformationType("bonusID", { text = L.BONUS_ID, priority = 6 }),
+	CreateInformationType("modID", { text = L.MOD_ID, priority = 6 }),
+	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
+	CreateInformationType("displayID", { text = L.DISPLAY_ID, priority = 7 }),
+	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForInfo = false, priority = 7 }),
+	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
+	
+	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID, priority = 8 }),
+	--[[ FOR CLASSIC, when an achievementID is displayed and its before wrath classic ]]--
+	--[[	if reference.sourceQuests and not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
+				GameTooltip:AddLine("This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.", 0.4, 0.8, 1, true);
+			end
+	]]--
+	
+	CreateInformationType("questID", { text = L.QUEST_ID, priority = 8 }),
+	CreateInformationType("QuestGivers", { text = L.QUEST_GIVERS, priority = 8 }),
+	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
+	
+	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
 	CreateInformationType("artifactID", { text = L.ARTIFACT_ID }),
 	CreateInformationType("azeriteEssenceID", { text = L.AZERITE_ESSENCE_ID }),
-	CreateInformationType("b", { text = L.BINDING, priority = 9000 }),
-	CreateInformationType("bonusID", { text = L.BONUS_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
 	CreateInformationType("creatures", { text = "Creatures List" }),
 	CreateInformationType("criteriaID", { text = "Criteria ID" }),
 	CreateInformationType("currencyID", { text = "Currency ID" }),
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),
-	CreateInformationType("displayID", { text = L.DISPLAY_ID }),
 	CreateInformationType("encounterID", { text = L.ENCOUNTER_ID }),
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
-	CreateInformationType("factionID", { text = L.FACTION_ID }),
-	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4 }),
 	CreateInformationType("flightPathID", { text = L.FLIGHT_PATH_ID }),
 	CreateInformationType("followerID", { text = L.FOLLOWER_ID }),
-	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
 	CreateInformationType("headerID", { text = L.HEADER_ID }),
-	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForInfo = false }),
 	CreateInformationType("illusionID", { text = L.ILLUSION_ID }),
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
-	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
-	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 5 }),
-	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 5 }),
-	CreateInformationType("Layer", { text = L.LAYER, priority = 2, ShouldDisplayForRow = false }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
-	CreateInformationType("modID", { text = L.MOD_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
-	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001 }),
 	CreateInformationType("Objectives", { text = L.OBJECTIVES }),
-	CreateInformationType("questID", { text = L.QUEST_ID }),
-	CreateInformationType("QuestGivers", { text = L.QUEST_GIVERS }),
-	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("runeforgePowerID", { text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
-	CreateInformationType("sourceID", { text = L.SOURCE_ID, priority = 5 }),
-	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 1, ShouldDisplayForRow = false }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
 	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
-	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 5 }),
+	
+	-- We want these last, usually.
+	CreateInformationType("b", { text = L.BINDING, priority = 9000 }),
+	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
+	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001 }),
 }) do
 	SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
 	SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
@@ -181,25 +215,14 @@ local function OnRefreshForInformationCheckBox(self)
 	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
 end
 
-
-
-
 app.AddActiveInformationTypesForInfo = function(info, group)
-	local val
 	for _,informationType in ipairs(ActiveInformationTypesForInfo) do
-		val = informationType.GetValue(informationType, group)
-		if val then
-			tinsert(info, { left = informationType.text, right = ConversionMethods[informationType.informationTypeID](val, group)});
-		end
+		informationType.ProcessForInfo(informationType, group, info);
 	end
 end
 app.AddActiveInformationTypesForRow = function(tooltip, group)
-	local val
 	for _,informationType in ipairs(ActiveInformationTypesForRow) do
-		val = informationType.GetValue(informationType, group)
-		if val then
-			tooltip:AddDoubleLine(informationType.text, ConversionMethods[informationType.informationTypeID](val, group))
-		end
+		informationType.ProcessForRow(informationType, group, tooltip);
 	end
 end
 

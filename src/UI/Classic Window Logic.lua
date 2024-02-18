@@ -875,19 +875,10 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then
-			GameTooltip:AddDoubleLine(L.SETTINGS_MENU.ACHIEVEMENT_ID, tostring(reference.achievementID));
 			if reference.sourceQuests and not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
 				GameTooltip:AddLine("This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.", 0.4, 0.8, 1, true);
 			end
 		end
-		if app.Settings:GetTooltipSetting("creatureID") then
-			if reference.creatureID then
-				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.CREATURE_ID, tostring(reference.creatureID));
-			elseif reference.npcID then
-				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.NPC_ID, tostring(reference.npcID));
-			end
-		end
-		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
 			local msg = "Requires a minimum standing of"
@@ -924,13 +915,7 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(msg);
 			end
 		end
-		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
-		if reference.objectID and app.Settings:GetTooltipSetting("objectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
-		if reference.sourceID and app.Settings:GetTooltipSetting("sourceID") then GameTooltip:AddDoubleLine(L["SOURCE_ID"], tostring(reference.sourceID)); end
-		if reference.speciesID and app.Settings:GetTooltipSetting("speciesID") then GameTooltip:AddDoubleLine(L["SPECIES_ID"], tostring(reference.speciesID)); end
 		if reference.spellID then
-			if app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID) .. " (" .. (app.GetSpellName(reference.spellID, reference.rank) or "??") .. ")"); end
-
 			-- If the item is a recipe, then show which characters know this recipe.
 			if not reference.collectible and app.Settings:GetTooltipSetting("KnownBy") then
 				local knownBy = {};
@@ -953,11 +938,6 @@ local function RowOnEnter(self)
 				end
 			end
 		end
-		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
-		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
-		if reference.explorationID and app.Settings:GetTooltipSetting("explorationID") then GameTooltip:AddDoubleLine(L["EXPLORATION_ID"], tostring(reference.explorationID)); end
-		if reference.artID and app.Settings:GetTooltipSetting("artID") then GameTooltip:AddDoubleLine(L["ART_ID"], tostring(reference.artID)); end
-		--if reference.hash then GameTooltip:AddDoubleLine("Hash", tostring(reference.hash)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
 			local currentMapID, j, str = app.CurrentMapID, 0;
 			for i,coord in ipairs(reference.coords) do
@@ -1113,10 +1093,8 @@ local function RowOnEnter(self)
 			if reference.sym then GameTooltip:AddLine("Right click to view more information.", 0.8, 0.8, 1, true); end
 		end
 		if reference.titleID then
-			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
 			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
 		end
-		if reference.questID and app.Settings:GetTooltipSetting("questID") then GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID)); end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
 				for i,qg in ipairs(reference.qgs) do
@@ -1139,46 +1117,8 @@ local function RowOnEnter(self)
 				end
 			end
 		end
-		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local classes_tbl = {};
-			for i,cl in ipairs(reference.c) do
-				local info = app.ClassInfoByID[cl];
-				if info.isValid then classes_tbl[#classes_tbl + 1] = info.icontext; end
-			end
-			local str = app.TableConcat(classes_tbl, nil, nil, ", ")
-			if #classes_tbl > 4 then
-				GameTooltip:AddLine("Classes " .. str, nil, nil, nil, 1);
-			else
-				GameTooltip:AddDoubleLine("Classes", str);
-			end
-		end
-		if app.Settings:GetTooltipSetting("RaceRequirements") then
-			if reference.races then
-				local races_tbl = {};
-				for i,race in ipairs(reference.races) do
-					local info = C_CreatureInfo.GetRaceInfo(race);
-					if info then races_tbl[#races_tbl + 1] = info.raceName; end
-				end
-				local str = app.TableConcat(races_tbl, nil, nil, ", ")
-				if #races_tbl > 4 then
-					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
-				else
-					GameTooltip:AddDoubleLine("Races", str);
-				end
-			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
-			end
-		end
-		if reference.isDaily then GameTooltip:AddLine("This can be completed daily.");
-		elseif reference.isWeekly then GameTooltip:AddLine("This can be completed weekly.");
-		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
-		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
-		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
-		if reference.pvp and not reference.itemID then GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true); end
 		GameTooltip:SetATTReference(reference);
-		if reference.displayID and app.Settings:GetTooltipSetting("displayID") then
-			GameTooltip:AddDoubleLine("Display ID", reference.displayID);
-		end
+		
 		if reference.cost then
 			if type(reference.cost) == "table" then
 				local _, name, icon, amount;
@@ -1213,17 +1153,54 @@ local function RowOnEnter(self)
 			GameTooltipTextRight1:SetText(progressText);
 			GameTooltipTextRight1:Show();
 		end
+		
+		-- Add any ID toggle fields
+		app.AddActiveInformationTypesForRow(GameTooltip, reference)
 
+		-- Show lockout information about an Instance (Raid or Dungeon)
+		app.AddLockoutInformationToTooltip(GameTooltip, reference);
+		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
+			local classes_tbl = {};
+			for i,cl in ipairs(reference.c) do
+				local info = app.ClassInfoByID[cl];
+				if info.isValid then classes_tbl[#classes_tbl + 1] = info.icontext; end
+			end
+			local str = app.TableConcat(classes_tbl, nil, nil, ", ")
+			if #classes_tbl > 4 then
+				GameTooltip:AddLine("Classes " .. str, nil, nil, nil, 1);
+			else
+				GameTooltip:AddDoubleLine("Classes", str);
+			end
+		end
+		if app.Settings:GetTooltipSetting("RaceRequirements") then
+			if reference.races then
+				local races_tbl = {};
+				for i,race in ipairs(reference.races) do
+					local info = C_CreatureInfo.GetRaceInfo(race);
+					if info then races_tbl[#races_tbl + 1] = info.raceName; end
+				end
+				local str = app.TableConcat(races_tbl, nil, nil, ", ")
+				if #races_tbl > 4 then
+					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
+				else
+					GameTooltip:AddDoubleLine("Races", str);
+				end
+			elseif reference.r and reference.r > 0 then
+				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
+			end
+		end
+		
 		-- Show Breadcrumb information
 		if reference.isBreadcrumb then
 			GameTooltip:AddLine("This is a breadcrumb quest.");
 		end
-
-		GameTooltip:AddDoubleLine("Type", reference.__type);
-
-		-- Show lockout information about an Instance (Raid or Dungeon)
-		app.AddLockoutInformationToTooltip(GameTooltip, reference);
-
+		if reference.isDaily then GameTooltip:AddLine("This can be completed daily.");
+		elseif reference.isWeekly then GameTooltip:AddLine("This can be completed weekly.");
+		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
+		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
+		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
+		if reference.pvp and not reference.itemID then GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true); end
+		
 		if reference.OnTooltip then reference:OnTooltip(); end
 
 		if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
