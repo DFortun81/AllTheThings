@@ -85,6 +85,7 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.MIN_MAX_STANDING = "需要站在";
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
+	--TODO: L.CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	--TODO: L.ALIVE = "Alive";
 	--TODO: L.SPAWNED = "Spawned";
 	--TODO: L.OBJECT_TYPE = "Object Type";

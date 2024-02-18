@@ -83,6 +83,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.MIN_MAX_STANDING = "Il faut avoir obtenu une note entre";
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
+	--TODO: L.CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	--TODO: L.ALIVE = "Alive";
 	--TODO: L.SPAWNED = "Spawned";
 	--TODO: L.OBJECT_TYPE = "Object Type";

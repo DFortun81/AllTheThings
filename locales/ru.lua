@@ -84,6 +84,7 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.MIN_MAX_STANDING = "Требуется отношение между";
 	L.ADDED_WITH_PATCH = "Добавлено в патче";
 	L.REMOVED_WITH_PATCH = "Убрано в патче";
+	L.CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C, чтобы скопировать в буфер обмена.";
 	--TODO: L.ALIVE = "Alive";
 	--TODO: L.SPAWNED = "Spawned";
 	L.OBJECT_TYPE = "Тип Объекта";
