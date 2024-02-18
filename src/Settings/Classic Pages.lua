@@ -1239,7 +1239,7 @@ end)();
 -- The "Interface" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage("Interface");
+local child = settings:CreateOptionsPage(L.INTERFACE_PAGE);
 
 local TooltipLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 TooltipLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);

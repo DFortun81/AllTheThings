@@ -123,6 +123,7 @@ for key,value in pairs({
 	["FILTER_ID"] = "Filter ID";
 	["FOLLOWER_ID"] = "Follower ID";
 	["GUID"] = "Global ID";
+	["HEADER_ID"] = "Header ID";
 	["ILLUSION_ID"] = "Illusion ID";
 	["INSTANCE_ID"] = "Instance ID";
 	["ITEM_ID"] = "Item ID";
@@ -143,6 +144,7 @@ for key,value in pairs({
 	["VISUAL_ID"] = "Visual ID";
 	
 	
+	["INTERFACE_PAGE"] = UIOPTIONS_MENU;
 	["ADDITIONAL_LABEL"] = "Additional Information";
 	["CRITERIA_FOR"] = "Criteria for";
 	["CURRENCY_FOR"] = "Currency for";

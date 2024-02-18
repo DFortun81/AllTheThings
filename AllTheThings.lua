@@ -3230,7 +3230,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		-- Add various extra field info if enabled in settings
-		app.AddActiveInformationTypes(info, group)
+		app.AddActiveInformationTypesForInfo(info, group)
 
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
@@ -9832,7 +9832,7 @@ RowOnEnter = function (self)
 			end
 
 			-- Add any ID toggle fields
-			app.AddActiveInformationTypes(GameTooltip, reference)
+			app.AddActiveInformationTypesForRow(GameTooltip, reference)
 
 			-- Tooltip for something which was not attached via search, so mark it as complete here
 			GameTooltip.ATTAttachComplete = true;

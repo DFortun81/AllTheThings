@@ -73,6 +73,8 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 	GetValue = function()
 		return GetValueForInformationType;
 	end,
+	ShouldDisplayForInfo = app.ReturnTrue,
+	ShouldDisplayForRow = app.ReturnTrue,
 },
 "AsRecursive", {
 	GetValue = function()
@@ -81,17 +83,17 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 },
 (function(t) return t.isRecursive; end));
 
-local ActiveInformationTypes, priorityA, priorityB = {};
-local SortedInformationTypes, SortedInformationTypesByName = {}, {};
+local ActiveInformationTypesForInfo, ActiveInformationTypesForRow = {}, {};
+local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
 for i,informationType in ipairs({
 	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID }),
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
-	CreateInformationType("Alive", { text = L.ALIVE, priority = 1 }),
+	CreateInformationType("Alive", { text = L.ALIVE, priority = 1, ShouldDisplayForRow = false }),
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("artID", { text = L.ART_ID }),
 	CreateInformationType("artifactID", { text = L.ARTIFACT_ID }),
 	CreateInformationType("azeriteEssenceID", { text = L.AZERITE_ESSENCE_ID }),
-	CreateInformationType("b", { text = L.BINDING }),
+	CreateInformationType("b", { text = L.BINDING, priority = 9000 }),
 	CreateInformationType("bonusID", { text = L.BONUS_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
@@ -109,13 +111,13 @@ for i,informationType in ipairs({
 	CreateInformationType("followerID", { text = L.FOLLOWER_ID }),
 	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
 	CreateInformationType("headerID", { text = L.HEADER_ID }),
-	CreateInformationType("iconPath", { text = L.ICON_PATH }),
+	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForInfo = false }),
 	CreateInformationType("illusionID", { text = L.ILLUSION_ID }),
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
 	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 5 }),
 	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 5 }),
-	CreateInformationType("Layer", { text = L.LAYER, priority = 2 }),
+	CreateInformationType("Layer", { text = L.LAYER, priority = 2, ShouldDisplayForRow = false }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("modID", { text = L.MOD_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
@@ -127,7 +129,7 @@ for i,informationType in ipairs({
 	CreateInformationType("runeforgePowerID", { text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("sourceID", { text = L.SOURCE_ID, priority = 5 }),
-	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 1 }),
+	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 1, ShouldDisplayForRow = false }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
 	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
@@ -151,11 +153,17 @@ local function SortInformationTypesByPriority(a,b)
 	end
 end
 local function RefreshActiveInformationTypes()
-	wipe(ActiveInformationTypes);
+	wipe(ActiveInformationTypesForInfo);
+	wipe(ActiveInformationTypesForRow);
 	
 	for _,informationType in ipairs(SortedInformationTypes) do
 		if settings:GetTooltipSetting(informationType.informationTypeID) then
-			ActiveInformationTypes[#ActiveInformationTypes + 1] = informationType;
+			if informationType.ShouldDisplayForInfo then
+				ActiveInformationTypesForInfo[#ActiveInformationTypesForInfo + 1] = informationType;
+			end
+			if informationType.ShouldDisplayForRow then
+				ActiveInformationTypesForRow[#ActiveInformationTypesForRow + 1] = informationType;
+			end
 		end
 	end
 end
@@ -176,21 +184,21 @@ end
 
 
 
-app.AddActiveInformationTypes = function(infoOrTooltip, group)
+app.AddActiveInformationTypesForInfo = function(info, group)
 	local val
-	if infoOrTooltip.AddLine then
-		for _,informationType in ipairs(ActiveInformationTypes) do
-			val = informationType.GetValue(informationType, group)
-			if val then
-				infoOrTooltip:AddDoubleLine(informationType.text, ConversionMethods[informationType.informationTypeID](val, group))
-			end
+	for _,informationType in ipairs(ActiveInformationTypesForInfo) do
+		val = informationType.GetValue(informationType, group)
+		if val then
+			tinsert(info, { left = informationType.text, right = ConversionMethods[informationType.informationTypeID](val, group)});
 		end
-	else
-		for _,informationType in ipairs(ActiveInformationTypes) do
-			val = informationType.GetValue(informationType, group)
-			if val then
-				tinsert(infoOrTooltip, { left = informationType.text, right = ConversionMethods[informationType.informationTypeID](val, group)});
-			end
+	end
+end
+app.AddActiveInformationTypesForRow = function(tooltip, group)
+	local val
+	for _,informationType in ipairs(ActiveInformationTypesForRow) do
+		val = informationType.GetValue(informationType, group)
+		if val then
+			tooltip:AddDoubleLine(informationType.text, ConversionMethods[informationType.informationTypeID](val, group))
 		end
 	end
 end
