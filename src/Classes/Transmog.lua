@@ -1040,7 +1040,7 @@ if C_TransmogCollection then
 		app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 		app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 
-		local conversions = app.Settings.AdditionalIDValueConversions;
+		local conversions = app.Settings.InformationTypeConversionMethods;
 		conversions.sourceID = function(sourceID)
 			-- add a value conversion for sourceID to include a checkmark/x
 			local info = C_TransmogCollection_GetSourceInfo(sourceID)

@@ -18,7 +18,46 @@ else
 	headerAdditionalInformation:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 
+-- Conversion Methods for specific formats for a given Information Type.
+local function GetPatchString(patch, color)
+	patch = tonumber(patch)
+	return patch and Colorize(math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10), color)
+end
+local DefaultConversionMethod = function(value)
+	return value;
+end
+local ConversionMethods = setmetatable({
+	filterID = function(val)
+		return L["FILTER_ID_TYPES"][val]
+	end,
+	b = function(val)
+		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
+	end,
+	questID = function(questID, group)
+		-- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
+		local otherFactionQuestID = group.otherFactionQuestID;
+		if otherFactionQuestID then
+			return "["..(app.FactionID == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE).." "..otherFactionQuestID.."] "..questID
+		end
+		return questID
+	end,
+	awp = function(val) return GetPatchString(val, app.Colors.AddedWithPatch) end,
+	rwp = function(val) return GetPatchString(val, app.Colors.RemovedWithPatch) end,
+}, {
+	__index = function(t, key)
+		return DefaultConversionMethod;
+	end
+});
+settings.InformationTypeConversionMethods = ConversionMethods;
+
 -- Class Template for creating an Information Type instance.
+local function GetValueForInformationType(t, group)
+	return group[t.informationTypeID];
+end
+local function GetRecursiveValueForInformationType(t, group)
+	local informationTypeID = t.informationTypeID;
+	return group[informationTypeID] or GetRelativeValue(group, informationTypeID);
+end
 local CreateInformationType = app.CreateClass("InformationType", "informationTypeID", {
 	text = function(t)
 		return RETRIEVING_DATA;
@@ -31,14 +70,13 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 	priority = function(t)
 		return 100;
 	end,
-	GetValue = function(t, group)
-		return group[t.informationTypeID];
+	GetValue = function()
+		return GetValueForInformationType;
 	end,
 },
 "AsRecursive", {
-	GetValue = function(t, group)
-		local informationTypeID = t.informationTypeID;
-		return group[informationTypeID] or GetRelativeValue(group, informationTypeID);
+	GetValue = function()
+		return GetRecursiveValueForInformationType;
 	end,
 },
 (function(t) return t.isRecursive; end));
@@ -77,7 +115,7 @@ for i,informationType in ipairs({
 	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 5 }),
 	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 5 }),
-	CreateInformationType("Layer", { text = L.LAYER }),
+	CreateInformationType("Layer", { text = L.LAYER, priority = 2 }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("modID", { text = L.MOD_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
@@ -136,57 +174,22 @@ local function OnRefreshForInformationCheckBox(self)
 end
 
 
-local function GetPatchString(patch, color)
-	patch = tonumber(patch)
-	return patch and Colorize(math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10), color)
-end
-local DefaultConversionMethod = function(value)
-	return value;
-end
-local ConversionMethods = setmetatable({
-	filterID = function(val)
-		return L["FILTER_ID_TYPES"][val]
-	end,
-	b = function(val)
-		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
-	end,
-	questID = function(questID, group)
-		-- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
-		local otherFactionQuestID = group.otherFactionQuestID;
-		if otherFactionQuestID then
-			return "["..(app.FactionID == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE).." "..otherFactionQuestID.."] "..questID
-		end
-		return questID
-	end,
-	awp = function(val) return GetPatchString(val, app.Colors.AddedWithPatch) end,
-	rwp = function(val) return GetPatchString(val, app.Colors.RemovedWithPatch) end,
-}, {
-	__index = function(t, key)
-		return DefaultConversionMethod;
-	end
-});
-settings.AdditionalIDValueConversions = ConversionMethods;
--- Some additional data we want to show the field value if any recursive parent includes the field
-local RecursiveAdditionalTypes = {
-	awp = true,
-	rwp = true,
-}
+
+
 app.AddActiveInformationTypes = function(infoOrTooltip, group)
 	local val
 	if infoOrTooltip.AddLine then
 		for _,informationType in ipairs(ActiveInformationTypes) do
-			local informationTypeID = informationType.informationTypeID;
-			val = group[informationTypeID] or (RecursiveAdditionalTypes[informationTypeID] and GetRelativeValue(group, informationTypeID))
+			val = informationType.GetValue(informationType, group)
 			if val then
-				infoOrTooltip:AddDoubleLine(informationType.text, ConversionMethods[informationTypeID](val, group))
+				infoOrTooltip:AddDoubleLine(informationType.text, ConversionMethods[informationType.informationTypeID](val, group))
 			end
 		end
 	else
 		for _,informationType in ipairs(ActiveInformationTypes) do
-			local informationTypeID = informationType.informationTypeID;
-			val = group[informationTypeID] or (RecursiveAdditionalTypes[informationTypeID] and GetRelativeValue(group, informationTypeID))
+			val = informationType.GetValue(informationType, group)
 			if val then
-				tinsert(infoOrTooltip, { left = informationType.text, right = ConversionMethods[informationTypeID](val, group)});
+				tinsert(infoOrTooltip, { left = informationType.text, right = ConversionMethods[informationType.informationTypeID](val, group)});
 			end
 		end
 	end

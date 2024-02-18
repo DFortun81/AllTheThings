@@ -143,6 +143,7 @@ for key,value in pairs({
 	["VISUAL_ID"] = "Visual ID";
 	
 	
+	["ADDITIONAL_LABEL"] = "Additional Information";
 	["CRITERIA_FOR"] = "Criteria for";
 	["CURRENCY_FOR"] = "Currency for";
 	["FEATURES_PAGE"] = FEATURES_LABEL;
