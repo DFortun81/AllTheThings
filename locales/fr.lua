@@ -118,7 +118,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.DEBUG_LOGIN = "Récompensé pour s’être connecté.\nBon travail ! VOUS L’AVEZ FAIT !\nSeulement visible en mode débogage.";
 	L.UNSORTED_1 = "Non trié";
 	L.UNSORTED_2 = " (Non trié)";
-	L.UNSORTED_DESC = "Ces données n’ont pas encore été ajoutées.";
+	L.UNSORTED_DESC = "Ces données n’ont pas encore été ajoutées. ATT " .. app.Version;
 	L.NEVER_IMPLEMENTED = "Jamais mis en place";
 	L.NEVER_IMPLEMENTED_DESC = "Ces objets existent techniquement dans le jeu mais n’ont jamais été mis à la disposition des joueurs";
 	--TODO: L.HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";
@@ -508,6 +508,8 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 		--TODO: L.CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
 		--TODO: L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
 		--TODO: L.SOUNDPACK = "Soundpack";
+		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
+		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
 		--TODO: L.WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
 		--TODO: L.WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
 		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
@@ -557,7 +559,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	-- About tab
 		L.ABOUT_PAGE = "À Propos";
 		L.ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
-		L.ABOUT_BOTTOM = "Contributeurs actifs : |CFFFFFFFF(pas d’ordre particulier)\n%s\n|rPanthéon des membres : |CFFFFFFFF(pas d’ordre particulier)\n%s\n\nSpéciale dédicace à AmiYuy (CanIMogIt) et Caerdon (Caerdon Wardrobe). Vous devriez absolument télécharger leurs addons pour afficher des icônes sur les objets à collectionner dans vos sacs ! %s %s %s\n\nPour afficher vos collections en ligne, vous pouvez visiter DataForAzeroth.com, créé par Shoogen ou WoWthing.org créé par Freddie !|r";
+		L.ABOUT_BOTTOM = "Contributeurs actifs : |CFFFFFFFF(pas d’ordre particulier)\n%s\n|rPanthéon des membres : |CFFFFFFFF(pas d’ordre particulier)\n%s\n\nSpéciale dédicace à AmiYuy (CanIMogIt) et Caerdon (Caerdon Wardrobe). Vous devriez absolument télécharger leurs addons pour afficher des icônes sur les objets à collectionner dans vos sacs ! %s %s %s\n\nPour afficher vos collections en ligne, vous pouvez visiter DataForAzeroth.com, créé par Shoogen ou WoWthing.org créé par Freddie !|r";	--TODO: now in alphabetical order
 
 	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "Afficher / masquer le mode Compte";
