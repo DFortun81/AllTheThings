@@ -31,6 +31,7 @@ for key,value in pairs({
 	["DISPLAY_ID"] = "Display ID";
 	["EVENT_ID"] = "Event ID";
 	["ICON_PATH"] = "Icon Path";
+	["ITEM_LEVEL"] = "iLvl";
 	["ITEM_STRING"] = "Item String";
 	["MOD_ID"] = "Mod ID";
 	["OBJECT_TYPE"] = "Object Type";

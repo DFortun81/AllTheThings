@@ -1192,7 +1192,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 		local itemName, itemLink = GameTooltip:GetItem();
 		if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-		if app.Settings:GetTooltipSetting("itemLevel") then tinsert(info, { left = "Item Level", right = select(4, GetItemInfo(itemLink or itemID)) }); end
+		if app.Settings:GetTooltipSetting("iLvl") then tinsert(info, { left = "Item Level", right = select(4, GetItemInfo(itemLink or itemID)) }); end
 		if app.Settings:GetTooltipSetting("itemString") and itemLink then tinsert(info, { left = "Item String", right = itemLink:match("item[%-?%d:]+") }); end
 		app.ShowSoftReservesForItem(itemID, info);
 

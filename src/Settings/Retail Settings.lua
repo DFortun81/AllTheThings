@@ -279,9 +279,9 @@ settings.Initialize = function(self)
 		app:GetWindow("WorldQuests"):Show()
 	end
 
-	if settings.__RefreshActiveAdditionalIDs then
-		settings.__RefreshActiveAdditionalIDs()
-		settings.__RefreshActiveAdditionalIDs = nil
+	if settings.RefreshActiveInformationTypes then
+		settings.RefreshActiveInformationTypes()
+		settings.RefreshActiveInformationTypes = nil
 	end
 
 	-- Somehow some forced Account-Wide Things were set to false in user Profiles, so using app.IsAccountTracked ALWAYS returned false

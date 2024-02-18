@@ -87,12 +87,15 @@ for key, value in pairs({
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
 	["LAYER"] = "Layer";
+	["ART_ID"] = "Art ID";
 	["BINDING"] = "Binding";
 	["BONUS_ID"] = "Bonus ID";
 	["CONDUIT_ID"] = "Conduit ID";
 	["DISPLAY_ID"] = "Display ID";
+	["EXPLORATION_ID"] = "Exploration ID";
 	["EVENT_ID"] = "Event ID";
 	["ICON_PATH"] = "Icon Path";
+	["ITEM_LEVEL"] = "iLvl";
 	["ITEM_STRING"] = "Item String";
 	["MOD_ID"] = "Mod ID";
 	["OBJECT_TYPE"] = "Object Type";

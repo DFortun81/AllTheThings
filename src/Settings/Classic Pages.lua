@@ -1632,7 +1632,7 @@ local ids = {
 	["flightPathID"] = "Flight Path ID",
 	["guid"] = L["GUID"],
 	["itemID"] = "Item ID",
-	["itemLevel"] = "Item Level",
+	["iLvl"] = "Item Level",
 	["itemString"] = "Item String",
 	["Layer"] = L.LAYER,
 	["Lore"] = "Lore",
@@ -1667,7 +1667,7 @@ for _,id in pairs({"Alive","awp","rwp","achievementID","artID","creatureID","Coo
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemLevel","itemString","Layer","Lore","mapID","objectID","__type","Objectives","questID","QuestGivers","sourceID","Spawned","speciesID","spellID","titleID"}) do
+for _,id in pairs({"iLvl","itemString","Layer","Lore","mapID","objectID","__type","Objectives","questID","QuestGivers","sourceID","Spawned","speciesID","spellID","titleID"}) do
 	local filter = child:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
