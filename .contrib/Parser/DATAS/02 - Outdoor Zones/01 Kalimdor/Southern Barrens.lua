@@ -1883,6 +1883,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.6, 83.8, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["description"] = "This rare NPC is friendly to Alliance players.",
 				}),
 				n(5849, {	-- Digger Flameforge <Excavation Specialist>
 					-- #if AFTER CATA
@@ -1891,10 +1892,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.6, 85.6, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["description"] = "This rare NPC is friendly to Alliance players.",
 					["groups"] = {
 						i(4785, {	-- Brimstone Belt
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+							-- #elseif AFTER 10.1.7
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mob that drop this item.",
 							-- #endif
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 11.09.2023
 						}),
@@ -1942,12 +1946,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.0, 83.8, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["description"] = "This rare NPC is friendly to Alliance players.",
 					["groups"] = {
 						i(2035, {	-- Sword of the Night Sky
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							-- #else
-							["description"] = "The mob dropping this item is friendly to the alliance.",
+							-- #elseif AFTER 10.1.7
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mob that drop this item.",
 							-- #endif
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
@@ -1960,6 +1965,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.4, 84.4, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["description"] = "This rare NPC is friendly to Alliance players and functions as a vendor.",
 				}),
 				n(3253, {	-- Silithid Harvester
 					-- #if AFTER CATA
