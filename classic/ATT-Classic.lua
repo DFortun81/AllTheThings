@@ -4332,9 +4332,6 @@ local itemFields = {
 		local link = t.link;
 		return link and GetItemInfo(link);
 	end,
-	["b"] = function(t)
-		return 2;
-	end,
 	["f"] = function(t)
 		if t.questID then return app.FilterConstants.QUEST_ITEMS; end
 		if #SearchForField("itemIDAsCost", t.itemID) > 0 then
@@ -4423,11 +4420,14 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 	-- Clone base item fields and extend the properties.
 	local heirloomFields = {
 		icon = function(t)
-			return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID));
+			return select(4, C_Heirloom_GetHeirloomInfo(t.heirloomID)) or select(5, GetItemInfoInstant(t.heirloomID));
 		end,
 		link = function(t)
-			return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
+			return C_Heirloom_GetHeirloomLink(t.heirloomID) or select(2, GetItemInfo(t.heirloomID));
 		end,
+		itemID = function(t)
+			return t.heirloomID;
+		end
 	};
 
 	-- Are heirloom upgrades available? (6.1.0.19445)
@@ -4616,7 +4616,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 		end
 	end
 
-	local CreateHeirloom = app.ExtendClass("Item", "Heirloom", "itemID", heirloomFields,
+	local CreateHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", heirloomFields,
 	"AsRWP", {
 		collectible = function(t)
 			return t.collectibleAsCost or app.Settings.Collectibles.RWP;
