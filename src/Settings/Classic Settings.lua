@@ -224,7 +224,7 @@ settings.Initialize = function(self)
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
-	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
+	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"));
 	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),

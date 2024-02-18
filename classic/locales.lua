@@ -166,6 +166,25 @@ for key,value in pairs({
 	["REPORT_UNSORTED_CHECKBOX"] = "Only 'Unsourced'";
 	["REPORT_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
 	
+	["CHAT_COMMANDS_LABEL"] = "Chat Commands";
+	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp*\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
+	["ICON_LEGEND_LABEL"] = "Icon Legend";
+	["ICON_LEGEND_TEXT"] = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
+	["KEYBINDINGS"] = SETTINGS_KEYBINDINGS_LABEL;
+	["KEYBINDINGS_TEXT"] = "You can set keybindings for ATT in the game's options.";
+	["MINIMAP_LABEL"] = "Minimap Button";
+	["MODULES_LABEL"] = "Modules & Mini Lists";
+	["AUTO_PROF_LIST_CHECKBOX"] = "Automatically Open the Profession List";
+	["AUTO_PROF_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
+	["SKIP_CUTSCENES_CHECKBOX"] = "Automatically Skip Cutscenes";
+	["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
+	["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
+	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
+	["MINIMAP_SLIDER"] = "Minimap Button Size";
+	["MINIMAP_SLIDER_TOOLTIP"] = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
+	["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
+	["WORLDMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
+	
 	["REPORTING_LABEL"] = "Reporting";
 	["REPORT_COLLECTED_THINGS_CHECKBOX"] = "Report Collected Things";
 	["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";

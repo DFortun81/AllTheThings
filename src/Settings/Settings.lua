@@ -11,6 +11,7 @@ local L = setmetatable(appL.SETTINGS_MENU, {
 			return str;
 		else
 			print("SETTINGS_MENU", key, "missing reference");
+			return "INVALID LOCALIZATION";
 		end
 	end
 });

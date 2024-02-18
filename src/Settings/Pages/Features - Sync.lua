@@ -1,4 +1,5 @@
 local _, app = ...;
+if app.IsClassic then return; end	-- Classic uses its own windows... for now!
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: Sync Page

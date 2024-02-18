@@ -114,36 +114,6 @@ PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
 	app.HandleEvent("OnRenderDirty");
 end);
 
--- This creates the "Minimap Button Size" slider.
-local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", child, "OptionsSliderTemplate");
-MinimapButtonSizeSlider:SetPoint("RIGHT", child, "RIGHT", -20, 0);
-MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -28);
-settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
-MinimapButtonSizeSlider.tooltipText = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
-MinimapButtonSizeSlider:SetOrientation('HORIZONTAL');
-MinimapButtonSizeSlider:SetWidth(260);
-MinimapButtonSizeSlider:SetHeight(20);
-MinimapButtonSizeSlider:SetValueStep(1);
-MinimapButtonSizeSlider:SetMinMaxValues(18, 48);
-MinimapButtonSizeSlider:SetObeyStepOnDrag(true);
-_G[MinimapButtonSizeSlider:GetName() .. 'Low']:SetText('18')
-_G[MinimapButtonSizeSlider:GetName() .. 'High']:SetText('48')
-_G[MinimapButtonSizeSlider:GetName() .. 'Text']:SetText("Minimap Button Size")
-MinimapButtonSizeSlider.Label = MinimapButtonSizeSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-MinimapButtonSizeSlider.Label:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, 0);
-MinimapButtonSizeSlider.Label:SetText(MinimapButtonSizeSlider:GetValue());
-MinimapButtonSizeSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("MinimapSize") then
-		return 1;
-	end
-	settings:SetTooltipSetting("MinimapSize", newValue)
-	app.SetMinimapButtonSettings(
-		settings:GetTooltipSetting("MinimapButton"),
-		settings:GetTooltipSetting("MinimapSize"));
-end);
-
-
 
 local ThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ThingsLabel:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, -16);
@@ -907,30 +877,6 @@ end
 ToysAccountWideCheckBox:SetPoint("TOPRIGHT", ToysCheckBox, "TOPLEFT", 4, 0);
 ToysAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
-local ShowMinimapButtonCheckBox = child:CreateCheckBox("Show the Minimap Button",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapButton"));
-end,
-function(self)
-	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
-	app.SetMinimapButtonSettings(
-		settings:GetTooltipSetting("MinimapButton"),
-		settings:GetTooltipSetting("MinimapSize"));
-end);
-ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
-ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 360, 0);
-
-local ShowWorldMapButtonCheckBox = child:CreateCheckBox("Show the World Map Button",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("WorldMapButton"));
-end,
-function(self)
-	settings:SetTooltipSetting("WorldMapButton", self:GetChecked());
-	app.SetWorldMapButtonSettings(settings:GetTooltipSetting("WorldMapButton"));
-end);
-ShowWorldMapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.");
-ShowWorldMapButtonCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 0, 4);
-
 local ShowCompletedGroupsCheckBox = child:CreateCheckBox("Show Completed Groups",
 function(self)
 	self:SetChecked(settings:Get("Show:CompletedGroups"));
@@ -948,7 +894,7 @@ function(self)
 	app:RefreshDataQuietly("ShowCompletedGroupsCheckBox");
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", ShowWorldMapButtonCheckBox, "BOTTOMLEFT", 0, -4);
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 360, 0);
 
 local ShowCollectedThingsCheckBox = child:CreateCheckBox("Show Collected Things",
 function(self)
@@ -1835,66 +1781,6 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 		LocationsSlider:SetAlpha(1);
 	end
 end);
-
-
-end)();
-
-------------------------------------------
--- The "Features" Tab.					--
-------------------------------------------
-(function()
-local child = settings:CreateOptionsPage(L["FEATURES_PAGE"]);
-
-local ChangeSkipCutsceneState = function(self, checked)
-	if checked then
-		self:RegisterEvent("PLAY_MOVIE");
-		self:RegisterEvent("CINEMATIC_START");
-	else
-		self:UnregisterEvent("PLAY_MOVIE");
-		self:UnregisterEvent("CINEMATIC_START");
-	end
-end
-local AutomaticallySkipCutscenesCheckBox = child:CreateCheckBox("Automatically Skip Cutscenes",
-function(self)
-	local checked = settings:GetTooltipSetting("Skip:Cutscenes");
-	self:SetChecked(checked);
-	self:SetScript("OnEvent", function(self, ...)
-		-- print(self, "OnEvent", ...);
-		MovieFrame:Hide();
-		CinematicFrame_CancelCinematic();
-	end);
-	ChangeSkipCutsceneState(self, checked);
-end,
-function(self)
-	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
-end);
-AutomaticallySkipCutscenesCheckBox:SetATTTooltip("Enable this option if you want ATT to automatically skip all cutscenes on your behalf.");
-AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 330, -8);
-
-local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
-end,
-function(self)
-	local checked = self:GetChecked();
-	settings:SetTooltipSetting("Auto:AuctionList", checked);
-	if checked then
-		local window = app:GetWindow("Auctions");
-		if window then window:UpdatePosition(); end
-	end
-end);
-OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Auction List\n\nShortcut Command: /attauctions");
-OpenAuctionListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, -8);
-
-local OpenProfessionListAutomatically = child:CreateCheckBox("Automatically Open the Profession List",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"));
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked());
-end);
-OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /attskills");
-OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenAuctionListAutomatically, "BOTTOMLEFT", 0, 4);
 
 
 end)();
