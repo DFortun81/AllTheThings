@@ -70,6 +70,18 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 		if window and not window.dynamic and window.Commands and not window.HideFromSettings then
 			local button = WindowButtons[j] or CreateWindowButton();
 			SetWindowForButton(button, window);
+			-- TODO: Preferred new style, once we get the window template designed
+			--settings:CreateOptionsPage("/" .. window.Commands[1], "Windows")
+			--[[
+			local text = window.Suffix;
+			if window.data then
+				local SettingsName = window.SettingsName;
+				if SettingsName then text = SettingsName; end
+				local icon = window.data.icon;
+				if icon then text = "|T" .. icon .. ":0|t " .. text; end
+			end
+			settings:CreateOptionsPage(text, "Windows")
+			]]--
 			j = j + 1;
 		end
 	end
