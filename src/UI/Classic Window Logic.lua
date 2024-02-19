@@ -874,11 +874,6 @@ local function RowOnEnter(self)
 				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.FILTER_ID, tostring(L["FILTER_ID_TYPES"][reference.f]));
 			end
 		end
-		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then
-			if reference.sourceQuests and not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
-				GameTooltip:AddLine("This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.", 0.4, 0.8, 1, true);
-			end
-		end
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
 			local msg = "Requires a minimum standing of"
@@ -1191,9 +1186,7 @@ local function RowOnEnter(self)
 		end
 		
 		-- Show Breadcrumb information
-		if reference.isBreadcrumb then
-			GameTooltip:AddLine("This is a breadcrumb quest.");
-		end
+		if reference.isBreadcrumb then GameTooltip:AddLine("This is a breadcrumb quest."); end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily.");
 		elseif reference.isWeekly then GameTooltip:AddLine("This can be completed weekly.");
 		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
