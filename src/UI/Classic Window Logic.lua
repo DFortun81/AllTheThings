@@ -6,7 +6,6 @@ local AssignChildren, CloneClassInstance, CloneReference
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local HexToARGB = app.Modules.Color.HexToARGB;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
 local GetCompletionIcon = app.GetCompletionIcon;
@@ -769,6 +768,8 @@ local function RowOnEnter(self)
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
 	
+	-- Build tooltip information.
+	local info = {};
 	GameTooltip:ClearLines();
 	GameTooltip:ClearATTReferenceTexture();
 	if self:GetCenter() > (UIParent:GetWidth() / 2) then
@@ -785,21 +786,6 @@ local function RowOnEnter(self)
 				pcall(GameTooltip.SetHyperlink, GameTooltip, link);
 			else
 				GameTooltip:AddLine("Item #" .. reference.itemID);
-				if reference and reference.u then
-					local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
-				end
-				if reference.e then
-					local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
-					if reason then
-						local left, right = DESCRIPTION_SEPARATOR:split(reason);
-						if right then
-							GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
-						else
-							GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
-						end
-					end
-				end
 				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "itemID", reference.itemID);
 			end
 		elseif reference.currencyID then
@@ -935,27 +921,25 @@ local function RowOnEnter(self)
 		end
 	end
 
-	if not reference.itemID then
-		if reference.questID and not reference.objectiveID then
-			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
-		end
-		if reference.u then
-			local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-			if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
-		end
-		if reference.e then
-			local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
-			if reason then
-				local left, right = DESCRIPTION_SEPARATOR:split(reason);
-				if right then
-					GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
-				else
-					GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
-				end
+	if reference.questID and not reference.objectiveID then
+		app.AddQuestObjectivesToTooltip(GameTooltip, reference);
+	end
+	if reference.u then
+		local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
+		if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
+	end
+	if reference.e then
+		local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
+		if reason then
+			local left, right = DESCRIPTION_SEPARATOR:split(reason);
+			if right then
+				GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
+			else
+				GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
 			end
 		end
-		if reference.sym then GameTooltip:AddLine("Right click to view more information.", 0.8, 0.8, 1, true); end
 	end
+	if reference.sym then GameTooltip:AddLine("Right click to view more information.", 0.8, 0.8, 1, true); end
 	if reference.titleID then
 		AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
 	end
@@ -1019,7 +1003,9 @@ local function RowOnEnter(self)
 	end
 	
 	-- Add any ID toggle fields
-	app.AddActiveInformationTypesForRow(GameTooltip, reference)
+	local info = {};
+	app.ProcessInformationTypes(info, reference);
+	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 	
 	-- Show Breadcrumb information
 	if reference.isBreadcrumb then GameTooltip:AddLine("This is a breadcrumb quest."); end

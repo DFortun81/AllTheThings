@@ -3214,7 +3214,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		
 		
 		-- Add various extra field info if enabled in settings
-		app.AddActiveInformationTypesForTooltip(info, group, itemString)
+		app.ProcessInformationTypesForExternalTooltips(info, group, itemString)
 
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
@@ -9364,9 +9364,9 @@ RowOnEnter = function (self)
 		-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
 		GameTooltip:SetOwner(self, tooltipAnchor);
 	else
-		-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.ATTAttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
+		-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.ATTAttachComplete,GameTooltip:NumLines());
 		-- complete tooltip already exists and hasn't been cleared elsewhere, don't touch it
-		if GameTooltip.ATTAttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then
+		if GameTooltip.ATTAttachComplete and GameTooltip:NumLines() > 0 then
 			-- app.PrintDebug("RowOnEnter, complete");
 			return;
 		end
@@ -9423,7 +9423,6 @@ RowOnEnter = function (self)
 	end
 	
 	-- Miscellaneous fields
-	local missingMiscData;
 	-- app.PrintDebug("Adding misc fields");
 	if app.Settings:GetTooltipSetting("Progress") then
 		if reference.total and reference.total >= 2 then
@@ -9554,7 +9553,6 @@ RowOnEnter = function (self)
 				GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", app.TableConcat(lineStrings));
 			else
 				GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", RETRIEVING_DATA);
-				missingMiscData = true;
 			end
 			if first > 25 then
 				GameTooltip:AddDoubleLine(" ", (L.AND_MORE):format(#reference.providers - first));
@@ -9626,7 +9624,6 @@ RowOnEnter = function (self)
 					icon = nil;
 					amount = GetMoneyString(v[2]);
 				end
-				missingMiscData = missingMiscData or not name;
 				GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA));
 			end
 		else
@@ -9677,7 +9674,9 @@ RowOnEnter = function (self)
 		end
 
 		-- Add any ID toggle fields
-		app.AddActiveInformationTypesForRow(GameTooltip, reference)
+		local info = {};
+		app.ProcessInformationTypes(info, reference);
+		app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 
 		-- Tooltip for something which was not attached via search, so mark it as complete here
 		GameTooltip.ATTAttachComplete = true;
@@ -10009,8 +10008,7 @@ RowOnEnter = function (self)
 	end
 	GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 	-- END DEBUGGING]]
-
-	GameTooltip.MiscFieldsComplete = not missingMiscData;
+	
 	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 	GameTooltip:Show();
 	-- app.PrintDebug("OnRowEnter-Return");

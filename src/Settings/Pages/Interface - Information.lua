@@ -91,8 +91,8 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 	Process = function()
 		return ProcessInformationType;
 	end,
-	ShouldDisplayForTooltip = app.ReturnTrue,
-	ShouldDisplayForRow = app.ReturnTrue,
+	IsStandaloneProperty = app.ReturnTrue,
+	ShouldDisplayInExternalTooltips = app.ReturnTrue,
 },
 "AsRecursive", {
 	GetValue = function()
@@ -104,12 +104,12 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 -- All of the Default Information Types.
 local InformationTypes = {
 	-- Only displayed in NPC Tooltips that are alive and exist in the world.
-	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
-	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
-	CreateInformationType("Layer", { text = L.LAYER, priority = 1, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
+	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, IsStandaloneProperty = false }),
+	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, IsStandaloneProperty = false }),
+	CreateInformationType("Layer", { text = L.LAYER, priority = 1, IsStandaloneProperty = false }),
 	
 	-- Contextual fields
-	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayForTooltip = false,
+	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, info)
 			if not reference.itemID then
 				local parent = reference.parent or reference.sourceParent;
@@ -127,7 +127,7 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
-	CreateInformationType("lvl", { text = LEVEL, priority = 2, ShouldDisplayForTooltip = false,
+	CreateInformationType("lvl", { text = LEVEL, priority = 2, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, info)
 			local lvl = reference.lvl;-- or GetRelativeValue(reference, "lvl");	-- TODO: Investigate if we want this.
 			if lvl then
@@ -157,7 +157,7 @@ local InformationTypes = {
 	
 	-- Quest Fields
 	-- Providers
-	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayForTooltip = false,
+	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, info)
 			local coords = reference.coords;
 			if not coords then
@@ -200,7 +200,7 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayForTooltip = false,
+	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, info)
 			local coord = reference.playerCoord;
 			if coord then
@@ -280,7 +280,7 @@ local InformationTypes = {
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4,
 		Process = function(t, reference, info)
-			local f = reference.filterID;
+			local f = reference.filterID or reference.f;
 			if f then
 				local filterForRWP = reference.filterForRWP;
 				if filterForRWP then
@@ -297,13 +297,13 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4, ShouldDisplayForRow = false }),
+	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4 }),
 	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
 	CreateInformationType("sourceID", { text = L.SOURCE_ID, priority = 5 }),
 	CreateInformationType("bonusID", { text = L.BONUS_ID, priority = 6 }),
 	CreateInformationType("modID", { text = L.MOD_ID, priority = 6 }),
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
-	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForTooltip = false, priority = 7 }),
+	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayInExternalTooltips = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 	
 	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID, priority = 8,
@@ -353,11 +353,11 @@ local InformationTypes = {
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
-	CreateInformationType("spellName", { text = L.SPELL_NAME, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
+	CreateInformationType("spellName", { text = L.SPELL_NAME, IsStandaloneProperty = false }),	-- Included as a parameter for the spellID field.
 	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
 	
-	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayForTooltip = false,
+	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, info)
 			local c = reference.c;-- or GetRelativeValue(reference, "c");	-- TODO: Investigate if we want this.
 			if c then
@@ -381,7 +381,7 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("r", { text = RACES, priority = 8000, ShouldDisplayForTooltip = false,
+	CreateInformationType("r", { text = RACES, priority = 8000, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, info)
 			local r = reference.r;-- or GetRelativeValue(reference, "r");	-- TODO: Investigate if we want this.
 			if r and r > 0 then
@@ -432,9 +432,9 @@ local InformationTypes = {
 	}),
 	
 	-- We want these last, usually.
-	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayForTooltip = false, }),
+	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayInExternalTooltips = false, }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
-	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayForTooltip = false, }),
+	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayInExternalTooltips = false, }),
 };
 settings.InformationTypes = InformationTypes;
 settings.CreateInformationType = function(key, t)
@@ -457,7 +457,7 @@ local PostProcessor = CreateInformationType("__postprocessor", {
 	end,
 });
 
-local ActiveInformationTypesForRow, ActiveInformationTypesForTooltip = {}, {};
+local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
 local function SortInformationTypesByLocalizedName(a,b)
 	return a.textLower < b.textLower;
@@ -472,60 +472,33 @@ local function SortInformationTypesByPriority(a,b)
 	end
 end
 local function RefreshActiveInformationTypes()
-	wipe(ActiveInformationTypesForTooltip);
-	wipe(ActiveInformationTypesForRow);
+	wipe(ActiveInformationTypesForExternalTooltips);
+	wipe(ActiveInformationTypes);
 	
 	for _,informationType in ipairs(SortedInformationTypes) do
 		if settings:GetTooltipSetting(informationType.informationTypeID) then
-			if informationType.ShouldDisplayForTooltip then
-				ActiveInformationTypesForTooltip[#ActiveInformationTypesForTooltip + 1] = informationType;
-			end
-			if informationType.ShouldDisplayForRow then
-				ActiveInformationTypesForRow[#ActiveInformationTypesForRow + 1] = informationType;
+			if informationType.IsStandaloneProperty then
+				ActiveInformationTypes[#ActiveInformationTypes + 1] = informationType;
+				if informationType.ShouldDisplayInExternalTooltips then
+					ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = informationType;
+				end
 			end
 		end
 	end
 	
 	-- Insert the Post Processor last!
-	ActiveInformationTypesForTooltip[#ActiveInformationTypesForTooltip + 1] = PostProcessor;
-	ActiveInformationTypesForRow[#ActiveInformationTypesForRow + 1] = PostProcessor;
+	ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = PostProcessor;
+	ActiveInformationTypes[#ActiveInformationTypes + 1] = PostProcessor;
 end
 
-app.AddActiveInformationTypesForRow = function(tooltip, reference)
-	local info = {};
-	for _,informationType in ipairs(ActiveInformationTypesForRow) do
+app.ProcessInformationTypes = function(info, reference)
+	for _,informationType in ipairs(ActiveInformationTypes) do
 		informationType.Process(informationType, reference, info);
 	end
-	for _,entry in ipairs(info) do
-		if entry.color then
-			entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color);
-			entry.color = nil;
-		end
-		local left, right = (entry.left or " "), entry.right;
-		if right then
-			if entry.r then
-				tooltip:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
-			else
-				tooltip:AddDoubleLine(left, right);
-			end
-		elseif entry.r then
-			if entry.wrap then
-				tooltip:AddLine(left, entry.r, entry.g, entry.b, 1);
-			else
-				tooltip:AddLine(left, entry.r, entry.g, entry.b);
-			end
-		else
-			if entry.wrap then
-				tooltip:AddLine(left, nil, nil, nil, 1);
-			else
-				tooltip:AddLine(left);
-			end
-		end
-	end
 end
-app.AddActiveInformationTypesForTooltip = function(info, reference, itemString)
+app.ProcessInformationTypesForExternalTooltips = function(info, reference, itemString)
 	reference.itemString = itemString;
-	for _,informationType in ipairs(ActiveInformationTypesForTooltip) do
+	for _,informationType in ipairs(ActiveInformationTypesForExternalTooltips) do
 		informationType.Process(informationType, reference, info);
 	end
 	reference.itemString = nil;

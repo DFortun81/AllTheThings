@@ -1405,7 +1405,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
-		app.AddActiveInformationTypesForTooltip(info, group, itemString);
+		app.ProcessInformationTypesForExternalTooltips(info, group, itemString);
 	end
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");

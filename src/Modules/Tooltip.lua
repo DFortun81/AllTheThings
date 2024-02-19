@@ -373,61 +373,68 @@ app.ShouldFillPurchasesForItemID = function(itemID)
 end
 
 -- Shared Tooltip Functions
+local left, right;
+local function AttachTooltipInformationEntry(tooltip, entry)
+	if entry.color then
+		entry.a, entry.r, entry.g, entry.b = app.Modules.Color.HexToARGB(entry.color);
+		entry.color = nil;
+	end
+	left, right = (entry.left or " "), entry.right;
+	if right then
+		if entry.r then
+			tooltip:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
+		else
+			tooltip:AddDoubleLine(left, right);
+		end
+	elseif entry.r then
+		if entry.wrap then
+			tooltip:AddLine(left, entry.r, entry.g, entry.b, 1);
+		else
+			tooltip:AddLine(left, entry.r, entry.g, entry.b);
+		end
+	else
+		if entry.wrap then
+			tooltip:AddLine(left, nil, nil, nil, 1);
+		else
+			tooltip:AddLine(left);
+		end
+	end
+end
+local function AttachTooltipInformation(tooltip, info)
+	if info and #info > 0 then
+		-- if app.Debugging then app.PrintTable(info) end
+		for _,entry in ipairs(info) do
+			AttachTooltipInformationEntry(tooltip, entry);
+		end
+	end
+end
 local function CanAttachTooltips()
 	-- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
 	return app.IsReady and (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
 end
-local function ClearTooltip(self)
-	-- app.PrintDebug("Clear Tooltip",self:GetName());
-	self.AllTheThingsProcessing = nil;
-	self.ATTAttachComplete = nil;
-	self.MiscFieldsComplete = nil;
-	self.UpdateTooltip = nil;
+local function ClearTooltip(tooltip)
+	-- app.PrintDebug("Clear Tooltip",tooltip:GetName());
+	tooltip.AllTheThingsProcessing = nil;
+	tooltip.ATTAttachComplete = nil;
+	tooltip.UpdateTooltip = nil;
 end
-local function AttachTooltipRawSearchResults(self, lineNumber, group)
+local function AttachTooltipRawSearchResults(tooltip, lineNumber, group)
 	if not group then return end
 	-- If nothing was put into the tooltip initially, mark the text of the source.
-	if self:NumLines() == 0 then
-		self:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
+	if tooltip:NumLines() == 0 then
+		tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
 	end
 
 	-- If there was info text generated for this search result, then display that first.
-	local tooltipInfo = group.tooltipInfo;
-	if tooltipInfo and #tooltipInfo > 0 then
-		-- app.PrintDebug("Tooltip lines before search results",group.hash,tooltipInfo and #tooltipInfo)
-		-- if app.Debugging then app.PrintTable(tooltipInfo) end
-		local left, right;
-		for _,entry in ipairs(tooltipInfo) do
-			left, right = (entry.left or " "), entry.right;
-			if right then
-				if entry.r then
-					self:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
-				else
-					self:AddDoubleLine(left, right);
-				end
-			elseif entry.r then
-				if entry.wrap then
-					self:AddLine(left, entry.r, entry.g, entry.b, 1);
-				else
-					self:AddLine(left, entry.r, entry.g, entry.b);
-				end
-			else
-				if entry.wrap then
-					self:AddLine(left, nil, nil, nil, 1);
-				else
-					self:AddLine(left);
-				end
-			end
-		end
-	end
+	AttachTooltipInformation(tooltip, group.tooltipInfo);
 
 	-- If the user has Show Collection Progress turned on.
 	if group.encounterID then
-		self:Show();
-	elseif group.collectionText and self:NumLines() > 0 then
-		local rightSide = _G[self:GetName() .. "TextRight" .. (lineNumber or 1)];
+		tooltip:Show();
+	elseif group.collectionText and tooltip:NumLines() > 0 then
+		local rightSide = _G[tooltip:GetName() .. "TextRight" .. (lineNumber or 1)];
 		if rightSide then
-			if self.CloseButton then
+			if tooltip.CloseButton then
 				-- dont think the region for the rightText can be modified within the tooltip, so pad instead
 				rightSide:SetText(group.collectionText .. "     ");
 			else
@@ -437,14 +444,14 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 		end
 	end
 
-	self.ATTAttachComplete = not group.working;
+	tooltip.ATTAttachComplete = not group.working;
 end
-local function AttachTooltipSearchResults(self, lineNumber, method, ...)
+local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
 	local status, group = pcall(app.GetCachedSearchResults, method, ...)
 	if status then
-		AttachTooltipRawSearchResults(self, lineNumber, group)
+		AttachTooltipRawSearchResults(tooltip, lineNumber, group)
 	else
 		print(status, group);
 		app.PrintDebug("pcall tooltip failed",group)
@@ -453,34 +460,34 @@ local function AttachTooltipSearchResults(self, lineNumber, method, ...)
 end
 
 -- Battle Pet Tooltips
-local function AttachBattlePetTooltip(self, data, quantity, detail)
+local function AttachBattlePetTooltip(tooltip, data, quantity, detail)
 	if not data or data.att or not data.speciesID then return end
 	data.att = 1;
 
 	-- GameTooltip_ShowCompareItem
 	local searchResults = SearchForField("speciesID", data.speciesID);
 	local owned = C_PetJournal.GetOwnedBattlePetString(data.speciesID);
-	self.Owned:SetText(owned);
+	tooltip.Owned:SetText(owned);
 	if owned == nil then
-		if self.Delimiter then
+		if tooltip.Delimiter then
 			-- if .Delimiter is present it requires special handling (FloatingBattlePetTooltip)
-			self:SetSize(260,150 + h)
-			self.Delimiter:ClearAllPoints()
-			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-5)
+			tooltip:SetSize(260,150 + h)
+			tooltip.Delimiter:ClearAllPoints()
+			tooltip.Delimiter:SetPoint("TOPLEFT",tooltip.SpeedTexture,"BOTTOMLEFT",-6,-5)
 		else
-			self:SetSize(260,122)
+			tooltip:SetSize(260,122)
 		end
 	else
-		local h = self.Owned:GetHeight() or 0;
-		if self.Delimiter then
-			self:SetSize(260,150 + h)
-			self.Delimiter:ClearAllPoints()
-			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-(5 + h))
+		local h = tooltip.Owned:GetHeight() or 0;
+		if tooltip.Delimiter then
+			tooltip:SetSize(260,150 + h)
+			tooltip.Delimiter:ClearAllPoints()
+			tooltip.Delimiter:SetPoint("TOPLEFT",tooltip.SpeedTexture,"BOTTOMLEFT",-6,-(5 + h))
 		else
-			self:SetSize(260,122 + h)
+			tooltip:SetSize(260,122 + h)
 		end
 	end
-	self:Show()
+	tooltip:Show()
 	return true;
 end
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
@@ -961,6 +968,8 @@ end
 -- Access via AllTheThings.Modules.Tooltip
 local api = {};
 app.Modules.Tooltip = api;
+api.AttachTooltipInformation = AttachTooltipInformation;
+api.AttachTooltipInformationEntry = AttachTooltipInformationEntry;
 api.AttachTooltipRawSearchResults = AttachTooltipRawSearchResults;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
