@@ -59,16 +59,10 @@ local function GetRecursiveValueForInformationType(t, reference)
 	local informationTypeID = t.informationTypeID;
 	return reference[informationTypeID] or GetRelativeValue(reference, informationTypeID);
 end
-local function ProcessInformationTypeForInfo(t, reference, info)
+local function ProcessInformationType(t, reference, info)
 	local val = t.GetValue(t, reference);
 	if val then
 		tinsert(info, { left = t.text, right = ConversionMethods[t.informationTypeID](val, reference)});
-	end
-end
-local function ProcessInformationTypeForRow(t, reference, tooltip)
-	local val = t.GetValue(t, reference);
-	if val then
-		tooltip:AddDoubleLine(t.text, ConversionMethods[t.informationTypeID](val, reference))
 	end
 end
 local CreateInformationType = app.CreateClass("InformationType", "informationTypeID", {
@@ -83,11 +77,8 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 	GetValue = function()
 		return GetValueForInformationType;
 	end,
-	ProcessForInfo = function()
-		return ProcessInformationTypeForInfo;
-	end,
-	ProcessForRow = function()
-		return ProcessInformationTypeForRow;
+	Process = function()
+		return ProcessInformationType;
 	end,
 	ShouldDisplayForInfo = app.ReturnTrue,
 	ShouldDisplayForRow = app.ReturnTrue,
@@ -103,7 +94,7 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 local PostProcessors = {};
 local PostProcessor = CreateInformationType("__postprocessor", {
 	priority = 99999999,
-	ProcessForInfo = function(t, group, info)
+	Process = function(t, reference, info)
 		if #PostProcessors > 0 then
 			for i,entry in ipairs(PostProcessors) do
 				tinsert(info, entry);
@@ -111,33 +102,6 @@ local PostProcessor = CreateInformationType("__postprocessor", {
 			wipe(PostProcessors);
 		end
 	end,
-	ProcessForRow = function(t, group, tooltip)
-		if #PostProcessors > 0 then
-			for i,entry in ipairs(PostProcessors) do
-				local left, right = (entry.left or " "), entry.right;
-				if right then
-					if entry.r then
-						tooltip:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
-					else
-						tooltip:AddDoubleLine(left, right);
-					end
-				elseif entry.r then
-					if entry.wrap then
-						tooltip:AddLine(left, entry.r, entry.g, entry.b, 1);
-					else
-						tooltip:AddLine(left, entry.r, entry.g, entry.b);
-					end
-				else
-					if entry.wrap then
-						tooltip:AddLine(left, nil, nil, nil, 1);
-					else
-						tooltip:AddLine(left);
-					end
-				end
-			end
-			wipe(PostProcessors);
-		end
-	end
 });
 
 local ActiveInformationTypesForInfo, ActiveInformationTypesForRow = {}, {};
@@ -149,6 +113,23 @@ for i,informationType in ipairs({
 	CreateInformationType("Layer", { text = L.LAYER, priority = 1, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
 	
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
+	CreateInformationType("parent", { text = "Parent", priority = 2, ShouldDisplayForInfo = false,
+		Process = function(t, reference, info)
+			if not reference.itemID then
+				local parent = reference.parent or reference.sourceParent;
+				if parent then
+					-- Only show this for 2 depth hierarchies and above.
+					local grandparent = parent.parent or parent.sourceParent;
+					if grandparent then
+						tinsert(info, {
+							left = grandparent.text or RETRIEVING_DATA,
+							right = parent.text or RETRIEVING_DATA
+						});
+					end
+				end
+			end
+		end,
+	}),
 	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
 	--CreateInformationType("lvl", { text = L.LEVEL, priority = 2 }),	-- TODO: Listed as "LevelRequirements"
 	
@@ -257,14 +238,37 @@ local function RefreshActiveInformationTypes()
 	ActiveInformationTypesForRow[#ActiveInformationTypesForRow + 1] = PostProcessor;
 end
 
-app.AddActiveInformationTypesForInfo = function(info, group)
+app.AddActiveInformationTypesForInfo = function(info, reference)
 	for _,informationType in ipairs(ActiveInformationTypesForInfo) do
-		informationType.ProcessForInfo(informationType, group, info);
+		informationType.Process(informationType, reference, info);
 	end
 end
-app.AddActiveInformationTypesForRow = function(tooltip, group)
+app.AddActiveInformationTypesForRow = function(tooltip, reference)
+	local info = {};
 	for _,informationType in ipairs(ActiveInformationTypesForRow) do
-		informationType.ProcessForRow(informationType, group, tooltip);
+		informationType.Process(informationType, reference, info);
+	end
+	for _,entry in ipairs(info) do
+		local left, right = (entry.left or " "), entry.right;
+		if right then
+			if entry.r then
+				tooltip:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
+			else
+				tooltip:AddDoubleLine(left, right);
+			end
+		elseif entry.r then
+			if entry.wrap then
+				tooltip:AddLine(left, entry.r, entry.g, entry.b, 1);
+			else
+				tooltip:AddLine(left, entry.r, entry.g, entry.b);
+			end
+		else
+			if entry.wrap then
+				tooltip:AddLine(left, nil, nil, nil, 1);
+			else
+				tooltip:AddLine(left);
+			end
+		end
 	end
 end
 

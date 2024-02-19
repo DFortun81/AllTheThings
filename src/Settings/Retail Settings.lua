@@ -203,6 +203,7 @@ local TooltipSettingsBase = {
 		["CompletedBy"] = true,
 		["Updates:AdHoc"] = true,
 		["creatures"] = true,
+		["parent"] = true,
 		["awp"] = true,
 		["rwp"] = true,
 	},

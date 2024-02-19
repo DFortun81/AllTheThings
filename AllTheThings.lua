@@ -9459,15 +9459,6 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- Relative ATT location
-		if reference.parent and not reference.itemID then
-			if reference.parent.parent then
-				GameTooltip:AddDoubleLine(reference.parent.parent.text or RETRIEVING_DATA, reference.parent.text or RETRIEVING_DATA);
-			else
-				--GameTooltip:AddLine(reference.parent.text or RETRIEVING_DATA, 1, 1, 1);
-			end
-		end
-
 		local title = reference.title;
 		if title then
 			local left, right = DESCRIPTION_SEPARATOR:split(title);

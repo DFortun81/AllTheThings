@@ -159,7 +159,10 @@ local TooltipSettingsBase = {
 		["SourceLocations:Things"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
+		
+		-- Information Types
 		["creatures"] = true,
+		["parent"] = true,
 		["awp"] = true,
 		["rwp"] = true,
 	},
