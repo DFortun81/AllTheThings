@@ -350,7 +350,7 @@ local InformationTypes = {
 	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
 	
-	CreateInformationType("c", { text = L.CLASSES, priority = 8000, --ShouldDisplayForInfo = false,
+	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayForInfo = false,
 		Process = function(t, reference, info)
 			local c = reference.c;-- or GetRelativeValue(reference, "c");	-- TODO: Investigate if we want this.
 			if c then
@@ -374,7 +374,7 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("r", { text = RACES, priority = 8000, --ShouldDisplayForInfo = false,
+	CreateInformationType("r", { text = RACES, priority = 8000, ShouldDisplayForInfo = false,
 		Process = function(t, reference, info)
 			local r = reference.r;-- or GetRelativeValue(reference, "r");	-- TODO: Investigate if we want this.
 			if r and r > 0 then
@@ -425,9 +425,9 @@ local InformationTypes = {
 	}),
 	
 	-- We want these last, usually.
-	CreateInformationType("b", { text = L.BINDING, priority = 9000 }),
+	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayForInfo = false, }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
-	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001 }),
+	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayForInfo = false, }),
 };
 settings.InformationTypes = InformationTypes;
 settings.CreateInformationType = function(key, t)

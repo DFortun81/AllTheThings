@@ -924,7 +924,6 @@ else
 		end
 		if CanAttachTooltips() then
 			AttachTooltipSearchResults(self, 1, SearchForField, "currencyID", currencyID);
-			if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 			self:Show();
 		end
 	end
@@ -938,7 +937,6 @@ else
 				local currencyID = select(12, GetCurrencyListInfo(tokenID));
 				if currencyID then
 					AttachTooltipSearchResults(self, 1, SearchForField, "currencyID", currencyID);
-					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 					self:Show();
 				end
 			end
@@ -963,6 +961,7 @@ end
 -- Access via AllTheThings.Modules.Tooltip
 local api = {};
 app.Modules.Tooltip = api;
+api.AttachTooltipRawSearchResults = AttachTooltipRawSearchResults;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
 app.AddEventHandler("OnLoad", function()
