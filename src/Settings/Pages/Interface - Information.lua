@@ -91,23 +91,8 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 },
 (function(t) return t.isRecursive; end));
 
--- The post processor uses a dynamic list to fill additional data as needed.
-local PostProcessors = {};
-local PostProcessor = CreateInformationType("__postprocessor", {
-	priority = 99999999,
-	Process = function(t, reference, info)
-		if #PostProcessors > 0 then
-			for i,entry in ipairs(PostProcessors) do
-				tinsert(info, entry);
-			end
-			wipe(PostProcessors);
-		end
-	end,
-});
-
-local ActiveInformationTypesForInfo, ActiveInformationTypesForRow = {}, {};
-local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
-for i,informationType in ipairs({
+-- All of the Default Information Types.
+local InformationTypes = {
 	-- Only displayed in NPC Tooltips that are alive and exist in the world.
 	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
 	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
@@ -196,7 +181,6 @@ for i,informationType in ipairs({
 	CreateInformationType("bonusID", { text = L.BONUS_ID, priority = 6 }),
 	CreateInformationType("modID", { text = L.MOD_ID, priority = 6 }),
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
-	CreateInformationType("displayID", { text = L.DISPLAY_ID, priority = 7 }),
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForInfo = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 	
@@ -231,6 +215,7 @@ for i,informationType in ipairs({
 	CreateInformationType("criteriaID", { text = "Criteria ID" }),
 	CreateInformationType("currencyID", { text = "Currency ID" }),
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),
+	CreateInformationType("displayID", { text = L.DISPLAY_ID }),
 	CreateInformationType("encounterID", { text = L.ENCOUNTER_ID }),
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
@@ -327,13 +312,30 @@ for i,informationType in ipairs({
 	CreateInformationType("b", { text = L.BINDING, priority = 9000 }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001 }),
-}) do
-	SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
-	if informationType.text then
-		SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
-	end
+};
+settings.InformationTypes = InformationTypes;
+settings.CreateInformationType = function(key, t)
+	local informationType = CreateInformationType(key, t);
+	tinsert(InformationTypes, informationType);
+	return informationType;
 end
 
+-- The post processor uses a dynamic list to fill additional data as needed.
+local PostProcessors = {};
+local PostProcessor = CreateInformationType("__postprocessor", {
+	priority = 99999999,
+	Process = function(t, reference, info)
+		if #PostProcessors > 0 then
+			for i,entry in ipairs(PostProcessors) do
+				tinsert(info, entry);
+			end
+			wipe(PostProcessors);
+		end
+	end,
+});
+
+local ActiveInformationTypesForInfo, ActiveInformationTypesForRow = {}, {};
+local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
 local function SortInformationTypesByLocalizedName(a,b)
 	return a.textLower < b.textLower;
 end
@@ -413,6 +415,14 @@ local function OnRefreshForInformationCheckBox(self)
 	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
 end
 settings.RefreshActiveInformationTypes = function()
+	wipe(SortedInformationTypes);
+	wipe(SortedInformationTypesByName);
+	for i,informationType in ipairs(InformationTypes) do
+		SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
+		if informationType.text then
+			SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
+		end
+	end
 	table.sort(SortedInformationTypes, SortInformationTypesByPriority);
 	table.sort(SortedInformationTypesByName, SortInformationTypesByLocalizedName);
 	RefreshActiveInformationTypes();

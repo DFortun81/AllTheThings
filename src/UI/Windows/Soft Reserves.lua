@@ -376,19 +376,25 @@ UpdateSoftReserve = function(guid, itemID, timeStamp, silentMode, isCurrentPlaye
 	end
 end
 
--- External API Functions
-app.ShowSoftReservesForItem = function(itemID, info)
-	local reservesForItem = SoftReservesByItemID[itemID];
-	if reservesForItem and app.Settings:GetTooltipSetting("SoftReserves") then
-		local left = "Soft Reserves";
-		for i,guid in ipairs(reservesForItem) do
-			if guid and IsGUIDInGroup(guid) then
-				tinsert(info, { left = left, right = app.CreateSoftReserveUnit(guid).tooltipText });
-				left = nil;
+app.Settings.CreateInformationType("SoftReserves", {
+	priority = 2.9,
+	text = "Soft Reserves",
+	Process = function(t, reference, info)
+		local itemID = reference.itemID;
+		if itemID then
+			local reservesForItem = SoftReservesByItemID[itemID];
+			if reservesForItem then
+				local left = t.text;
+				for i,guid in ipairs(reservesForItem) do
+					if guid and IsGUIDInGroup(guid) then
+						tinsert(info, { left = left, right = app.CreateSoftReserveUnit(guid).tooltipText });
+						left = nil;
+					end
+				end
 			end
 		end
-	end
-end
+	end,
+});
 
 -- Event Handlers
 local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
