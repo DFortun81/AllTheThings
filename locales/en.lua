@@ -553,8 +553,6 @@ for key, value in pairs({
 	["ONLY_RELEVANT_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
 	["PROFESSION_CHECKBOX"] = TRADE_SKILLS;	-- Professions
 	["PROFESSION_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the profession requirements in the tooltip.";
-	["LEVELREQ_CHECKBOX"] = "Levels";
-	["LEVELREQ_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the level requirements in the tooltip.";
 	["CLASSES_CHECKBOX"] = "Classes";
 	["CLASSES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of class requirements in the tooltip.";
 	["RACES_CHECKBOX"] = RACES;

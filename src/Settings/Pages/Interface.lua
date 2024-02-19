@@ -309,23 +309,6 @@ end)
 checkboxProfessions:SetATTTooltip(L["PROFESSION_CHECKBOX_TOOLTIP"])
 checkboxProfessions:AlignBelow(checkboxKnownBy)
 
-local checkboxLevels = child:CreateCheckBox(L["LEVELREQ_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("LevelRequirements"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("LevelRequirements", self:GetChecked())
-end)
-checkboxLevels:SetATTTooltip(L["LEVELREQ_CHECKBOX_TOOLTIP"])
-checkboxLevels:AlignBelow(checkboxProfessions)
-
 local checkboxClasses = child:CreateCheckBox(L["CLASSES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"))
@@ -341,7 +324,7 @@ function(self)
 	settings:SetTooltipSetting("ClassRequirements", self:GetChecked())
 end)
 checkboxClasses:SetATTTooltip(L["CLASSES_CHECKBOX_TOOLTIP"])
-checkboxClasses:AlignBelow(checkboxLevels)
+checkboxClasses:AlignBelow(checkboxProfessions)
 
 local checkboxRaces = child:CreateCheckBox(L["RACES_CHECKBOX"],
 function(self)

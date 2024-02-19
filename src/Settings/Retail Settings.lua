@@ -199,12 +199,14 @@ local TooltipSettingsBase = {
 		["QuestChain:Nested"] = true,
 		["WorldQuestsList:Currencies"] = true,
 		["ProfessionRequirements"] = true,
-		["LevelRequirements"] = true,
 		["CompletedBy"] = true,
 		["Updates:AdHoc"] = true,
+		
+		-- Information Types
 		["creatures"] = true,
 		["parent"] = true,
 		["awp"] = true,
+		["lvl"] = true,
 		["rwp"] = true,
 	},
 }

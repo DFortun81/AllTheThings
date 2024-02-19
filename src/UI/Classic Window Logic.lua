@@ -834,22 +834,6 @@ local function RowOnEnter(self)
 		elseif reference.retries then
 			GameTooltip:AddLine("Failed to acquire information. This may have been removed from the game.", 1, 1, 1);
 		end
-		if reference.lvl then
-			local minlvl, maxlvl;
-			if type(reference.lvl) == "table" then
-				minlvl = reference.lvl[1] or 0;
-				maxlvl = reference.lvl[2] or 0;
-			else
-				minlvl = reference.lvl;
-			end
-			-- i suppose a maxlvl of 1 might exist?
-			if maxlvl and maxlvl > 0 then
-				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
-			-- no point to show 'requires lvl 1'
-			elseif minlvl and minlvl > 1 then
-				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
-			end
-		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then
 			local professionName = GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA;

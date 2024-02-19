@@ -9470,25 +9470,6 @@ RowOnEnter = function (self)
 		-- elseif refQuestID and reference.retries and not reference.itemID then
 		-- 	GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
 		end
-		if reference.lvl then
-			local minlvl;
-			local maxlvl;
-			if type(reference.lvl) == "table" then
-				minlvl = reference.lvl[1] or 0;
-				maxlvl = reference.lvl[2] or 0;
-			else
-				minlvl = reference.lvl;
-			end
-			if app.Settings:GetTooltipSetting("LevelRequirements") then
-				-- i suppose a maxlvl of 1 might exist?
-				if maxlvl and maxlvl > 0 then
-					GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
-				-- no point to show 'requires lvl 1'
-				elseif minlvl and minlvl > 1 then
-					GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
-				end
-			end
-		end
 		if reference.requireSkill and app.Settings:GetTooltipSetting("ProfessionRequirements") then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
 		if reference.crs then
 			-- extreme amounts of creatures tagged, then only list a summary of how many...

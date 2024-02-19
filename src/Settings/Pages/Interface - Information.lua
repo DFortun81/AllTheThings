@@ -131,7 +131,33 @@ for i,informationType in ipairs({
 		end,
 	}),
 	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
-	--CreateInformationType("lvl", { text = L.LEVEL, priority = 2 }),	-- TODO: Listed as "LevelRequirements"
+	CreateInformationType("lvl", { text = LEVEL, priority = 2, ShouldDisplayForInfo = false,
+		Process = function(t, reference, info)
+			local lvl = reference.lvl;-- or GetRelativeValue(reference, "lvl");	-- TODO: Investigate if we want this.
+			if lvl then
+				local minlvl, maxlvl;
+				if type(lvl) == "table" then
+					minlvl = lvl[1] or 0;
+					maxlvl = lvl[2] or 0;
+				else
+					minlvl = lvl;
+				end
+				-- i suppose a maxlvl of 1 might exist?
+				if maxlvl and maxlvl > 0 then
+					tinsert(info, {
+						left = L["REQUIRES_LEVEL"],
+						right = tostring(minlvl) .. " to " .. tostring(maxlvl),
+					});
+				-- no point to show 'requires lvl 1'
+				elseif minlvl and minlvl > 1 then
+					tinsert(info, {
+						left = L["REQUIRES_LEVEL"],
+						right = tostring(minlvl),
+					});
+				end
+			end
+		end,
+	}),
 	
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),

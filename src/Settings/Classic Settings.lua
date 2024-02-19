@@ -164,6 +164,7 @@ local TooltipSettingsBase = {
 		["creatures"] = true,
 		["parent"] = true,
 		["awp"] = true,
+		["lvl"] = true,
 		["rwp"] = true,
 	},
 };
