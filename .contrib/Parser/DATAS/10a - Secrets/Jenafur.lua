@@ -19,6 +19,7 @@ root(ROOTS.Secrets, {
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 58076,	-- Step 1: Speak to Amara
 				["coord"] = { 44.2, 53.0, ELWYNN_FOREST },
+				["lockCriteria"] = { 1, "questID", 58099 },	-- Amara's Wish
 			}),
 			q(58099, {	-- Amara's Wish
 				["description"] = "|cFFFFFFFFStep 3:|r This step requires collecting various meats throughout |cffffd200Return to Karazhan|r and placing them in the Opera Hall to mimic a section of the Amara's Wish sheet music.\n\n|cffde1c1cOnce the items are picked up, you have 5 minutes to place them into the puzzle.  Once placed, they despawn after 5 minutes and 20 seconds.  Because of these time limits, it may be wise to ensure you have cleared the trash in the dungeon and have acquainted yourself with the locations of all the meats you need to pick up.\n\nTurn on Debug Mode to see descriptions for the locations of each meat and how to place them in the correct order!|r\n\nYou will need to collect items from Moroes' room as well as the hallways near Maiden of Virtue, and then take the items back to the audience area of the Opera Hall to place them.\n",
