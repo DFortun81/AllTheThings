@@ -534,6 +534,8 @@ for key, value in pairs({
 	["COORDINATES_CHECKBOX"] = "Coordinates";
 	["COORDINATES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.";
 	["DESCRIPTIONS"] = "Descriptions";
+	["LOCKOUTS"] = "Lockouts";
+	["RESETS"] = "Resets";
 	["LORE"] = "Lore";
 	["KNOWN_BY_CHECKBOX"] = "Known By";
 	["KNOWN_BY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";

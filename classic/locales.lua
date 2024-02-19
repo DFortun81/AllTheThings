@@ -95,6 +95,8 @@ for key,value in pairs({
 	["DROP_RATE"] = "Drop Rate";
 	["QUEST_GIVER"] = "Quest Giver";
 	["LOCKOUT"] = "Lockout";
+	["LOCKOUTS"] = "Lockouts";
+	["RESETS"] = "Resets";
 	["SHARED"] = "Shared";
 	["SPLIT"] = "Per Difficulty";
 	["REQUIRES"] = "Requires";
@@ -759,7 +761,6 @@ L["ITEM_ID_REMOVED_SHARED"] = "%s (%d) [+%d] 已从收藏中移除。"
 -- Tooltip Text 鼠标提示
 L["DROP_RATE"] = "掉率"
 L["QUEST_GIVER"] = "任务发放者"
-L["LOCKOUT"] = "Lockout"
 L["REQUIRES"] = "要求"
 L["REQUIRES_LEVEL"] = "要求等级"
 
@@ -770,7 +771,6 @@ L["FILTER_ID"] = "过滤器ID"
 L["ITEM_ID"] = "物品ID"
 L["FACTION_ID"] = "阵营ID"
 L["MAP_ID"] = "地图ID"
-L["NPC_ID"] = "NPC ID"
 L["OBJECT_ID"] = "Object ID"
 L["QUEST_ID"] = "任务ID"
 L["SPELL_ID"] = "法术ID"

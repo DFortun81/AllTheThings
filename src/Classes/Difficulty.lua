@@ -173,14 +173,20 @@ end
 app.AddEventHandler("OnLoad", function()
 	app.Settings.CreateInformationType("locks", {
 		priority = 10000,
-		text = "Lockouts",
+		text = L.LOCKOUTS,
 		Process = function(t, reference, info)
+			if reference.instanceID then
+				tinsert(info, {
+					left = L.LOCKOUT,
+					right = L[reference.isLockoutShared and "SHARED" or "SPLIT"],
+				});
+			end
 			local locks = reference.locks;
 			if locks then
 				if locks.encounters then
-					SummarizeLockout(info, locks, "Resets");
+					SummarizeLockout(info, locks, L.RESETS);
 				elseif reference.isLockoutShared and locks.shared then
-					SummarizeLockout(info, locks.shared, "Shared");
+					SummarizeLockout(info, locks.shared, L.SHARED);
 				else
 					for key,lockout in pairs(locks) do
 						if key == "shared" then

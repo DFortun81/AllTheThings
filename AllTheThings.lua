@@ -9510,9 +9510,6 @@ RowOnEnter = function (self)
 			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
 			GameTooltip:AddLine(msg);
 		end
-		if reference.instanceID then
-			GameTooltip:AddDoubleLine(L["LOCKOUT"], L[reference.isLockoutShared and "SHARED" or "SPLIT"]);
-		end
 		if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
 			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
 		end
