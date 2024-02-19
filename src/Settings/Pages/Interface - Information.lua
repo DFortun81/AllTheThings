@@ -52,29 +52,26 @@ local ConversionMethods = setmetatable({
 settings.InformationTypeConversionMethods = ConversionMethods;
 
 -- Class Template for creating an Information Type instance.
-local function GetValueForInformationType(t, group)
-	return group[t.informationTypeID];
+local function GetValueForInformationType(t, reference)
+	return reference[t.informationTypeID];
 end
-local function GetRecursiveValueForInformationType(t, group)
+local function GetRecursiveValueForInformationType(t, reference)
 	local informationTypeID = t.informationTypeID;
-	return group[informationTypeID] or GetRelativeValue(group, informationTypeID);
+	return reference[informationTypeID] or GetRelativeValue(reference, informationTypeID);
 end
-local function ProcessInformationTypeForInfo(t, group, info)
-	local val = t.GetValue(t, group);
+local function ProcessInformationTypeForInfo(t, reference, info)
+	local val = t.GetValue(t, reference);
 	if val then
-		tinsert(info, { left = t.text, right = ConversionMethods[t.informationTypeID](val, group)});
+		tinsert(info, { left = t.text, right = ConversionMethods[t.informationTypeID](val, reference)});
 	end
 end
-local function ProcessInformationTypeForRow(t, group, tooltip)
-	local val = t.GetValue(t, group);
+local function ProcessInformationTypeForRow(t, reference, tooltip)
+	local val = t.GetValue(t, reference);
 	if val then
-		tooltip:AddDoubleLine(t.text, ConversionMethods[t.informationTypeID](val, group))
+		tooltip:AddDoubleLine(t.text, ConversionMethods[t.informationTypeID](val, reference))
 	end
 end
 local CreateInformationType = app.CreateClass("InformationType", "informationTypeID", {
-	text = function(t)
-		return RETRIEVING_DATA;
-	end,
 	textLower = function(t)
 		local textLower = t.text:lower();
 		t.textLower = textLower;
@@ -102,6 +99,47 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 },
 (function(t) return t.isRecursive; end));
 
+-- The post processor uses a dynamic list to fill additional data as needed.
+local PostProcessors = {};
+local PostProcessor = CreateInformationType("__postprocessor", {
+	priority = 99999999,
+	ProcessForInfo = function(t, group, info)
+		if #PostProcessors > 0 then
+			for i,entry in ipairs(PostProcessors) do
+				tinsert(info, entry);
+			end
+			wipe(PostProcessors);
+		end
+	end,
+	ProcessForRow = function(t, group, tooltip)
+		if #PostProcessors > 0 then
+			for i,entry in ipairs(PostProcessors) do
+				local left, right = (entry.left or " "), entry.right;
+				if right then
+					if entry.r then
+						tooltip:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
+					else
+						tooltip:AddDoubleLine(left, right);
+					end
+				elseif entry.r then
+					if entry.wrap then
+						tooltip:AddLine(left, entry.r, entry.g, entry.b, 1);
+					else
+						tooltip:AddLine(left, entry.r, entry.g, entry.b);
+					end
+				else
+					if entry.wrap then
+						tooltip:AddLine(left, nil, nil, nil, 1);
+					else
+						tooltip:AddLine(left);
+					end
+				end
+			end
+			wipe(PostProcessors);
+		end
+	end
+});
+
 local ActiveInformationTypesForInfo, ActiveInformationTypesForRow = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
 for i,informationType in ipairs({
@@ -127,12 +165,23 @@ for i,informationType in ipairs({
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForInfo = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 	
-	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID, priority = 8 }),
-	--[[ FOR CLASSIC, when an achievementID is displayed and its before wrath classic ]]--
-	--[[	if reference.sourceQuests and not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
-				GameTooltip:AddLine("This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.", 0.4, 0.8, 1, true);
+	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID, priority = 8,
+		GetValue = app.GameBuildVersion >= 30000 and GetValueForInformationType or function(t, reference)
+			local value = GetValueForInformationType(t, reference);
+			if value then
+				if reference.sourceQuest or reference.sourceQuests then
+					tinsert(PostProcessors, {
+						left = L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO,
+						wrap = true,
+						r = 0.4,
+						g = 0.8,
+						b = 1,
+					});
+				end
+				return value;
 			end
-	]]--
+		end
+	}),
 	
 	CreateInformationType("questID", { text = L.QUEST_ID, priority = 8 }),
 	CreateInformationType("QuestGivers", { text = L.QUEST_GIVERS, priority = 8 }),
@@ -171,7 +220,9 @@ for i,informationType in ipairs({
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001 }),
 }) do
 	SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
-	SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
+	if informationType.text then
+		SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
+	end
 end
 
 local function SortInformationTypesByLocalizedName(a,b)
@@ -200,19 +251,10 @@ local function RefreshActiveInformationTypes()
 			end
 		end
 	end
-end
-settings.RefreshActiveInformationTypes = function()
-	table.sort(SortedInformationTypes, SortInformationTypesByPriority);
-	table.sort(SortedInformationTypesByName, SortInformationTypesByLocalizedName);
-	RefreshActiveInformationTypes();
-end
-local function OnClickForInformationCheckBox(self)
-	settings:SetTooltipSetting(self.informationTypeID, self:GetChecked())
-	RefreshActiveInformationTypes()
-	settings:Refresh()
-end
-local function OnRefreshForInformationCheckBox(self)
-	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
+	
+	-- Insert the Post Processor last!
+	ActiveInformationTypesForInfo[#ActiveInformationTypesForInfo + 1] = PostProcessor;
+	ActiveInformationTypesForRow[#ActiveInformationTypesForRow + 1] = PostProcessor;
 end
 
 app.AddActiveInformationTypesForInfo = function(info, group)
@@ -226,26 +268,40 @@ app.AddActiveInformationTypesForRow = function(tooltip, group)
 	end
 end
 
-local last, lowest = nil, nil
-local split1 = math.ceil(#SortedInformationTypesByName / 3)
-local split2 = 2 * split1
-for idNo,informationType in ipairs(SortedInformationTypesByName) do
-	local filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
-	filter.informationTypeID = informationType.informationTypeID;
-	-- Column 1
-	if idNo == 1 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
-	-- Column 2
-	elseif idNo > split1 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
-		lowest = last;
-		split1 = 999
-	-- Column 3
-	elseif idNo >= split2 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
-		split2 = 999
-	else
-		filter:AlignBelow(last)
+local function OnClickForInformationCheckBox(self)
+	settings:SetTooltipSetting(self.informationTypeID, self:GetChecked())
+	RefreshActiveInformationTypes()
+	settings:Refresh()
+end
+local function OnRefreshForInformationCheckBox(self)
+	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
+end
+settings.RefreshActiveInformationTypes = function()
+	table.sort(SortedInformationTypes, SortInformationTypesByPriority);
+	table.sort(SortedInformationTypesByName, SortInformationTypesByLocalizedName);
+	RefreshActiveInformationTypes();
+	
+	local last, lowest = nil, nil
+	local split1 = math.ceil(#SortedInformationTypesByName / 3)
+	local split2 = 2 * split1
+	for idNo,informationType in ipairs(SortedInformationTypesByName) do
+		local filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
+		filter.informationTypeID = informationType.informationTypeID;
+		-- Column 1
+		if idNo == 1 then
+			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
+		-- Column 2
+		elseif idNo > split1 then
+			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+			lowest = last;
+			split1 = 999
+		-- Column 3
+		elseif idNo >= split2 then
+			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
+			split2 = 999
+		else
+			filter:AlignBelow(last)
+		end
+		last = filter
 	end
-	last = filter
 end

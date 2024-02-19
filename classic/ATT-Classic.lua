@@ -251,6 +251,7 @@ local function GetRemovedWithPatchString(rwp)
 		return L.REMOVED_WITH_PATCH_FORMAT:format(math_floor(rwp / 10000) .. "." .. (math_floor(rwp / 100) % 10) .. "." .. (rwp % 10));
 	end
 end
+app.GetCollectionIcon = GetCollectionIcon;
 app.GetCollectionText = GetCollectionText;
 app.GetCompletionIcon = GetCompletionIcon;
 app.GetCompletionText = GetCompletionText;
@@ -1476,8 +1477,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		tinsert(info, { left = L["REQUIRES_PVP"] });
 	end
 	
-	-- Add various extra field info if enabled in settings
-	app.AddActiveInformationTypesForInfo(info, group);
+	if isTopLevelSearch then
+		-- Add various extra field info if enabled in settings
+		app.AddActiveInformationTypesForInfo(info, group);
+	end
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
 	if app.Settings:GetTooltipSetting("SummarizeThings") then

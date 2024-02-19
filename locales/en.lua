@@ -760,6 +760,7 @@ for key, value in pairs({
 	["TOY_ID"] = "Toy ID";
 	["VISUAL_ID"] = "Visual ID";
 	["iLvl"] = "iLvl";
+	["ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO"] = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
 
 	-- Artifact Relic Completion
 	["ARTIFACT_RELIC_CACHE"] = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
