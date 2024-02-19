@@ -9501,7 +9501,9 @@ RowOnEnter = function (self)
 		GameTooltip:AddLine(msg);
 	end
 	if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
-		app.AddQuestObjectivesToTooltip(GameTooltip, reference);
+		local info = {};
+		app.AddQuestObjectives(info, reference);
+		app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 	end
 	if reference.providers then
 		local first = 1;

@@ -1641,17 +1641,28 @@ app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
 		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 	end,
 });
-app.AddQuestObjectivesToTooltip = function(tooltip, reference)
+app.AddQuestObjectives = function(info, reference)
 	local objectified = false;
 	local questLogIndex = GetQuestLogIndexByID(reference.questID);
 	if questLogIndex then
 		local lore, objective = GetQuestLogQuestText(questLogIndex);
 		if lore and app.Settings:GetTooltipSetting("Lore") then
-			tooltip:AddLine(Colorize(lore, app.Colors.TooltipLore), 1, 1, 1, 1);
+			tinsert(info, {
+				left = lore,
+				color = app.Colors.TooltipLore,
+				wrap = true,
+			});
 		end
 		if objective and app.Settings:GetTooltipSetting("Objectives") then
-			tooltip:AddLine(REQUIREMENTS, 1, 1, 1, 1);
-			tooltip:AddLine(objective, 0.4, 0.8, 1, 1);
+			tinsert(info, {
+				left = REQUIREMENTS,
+				r = 1, g = 1, b = 1,
+			});
+			tinsert(info, {
+				left = objective,
+				r = 0.4, g = 0.8, b = 1,
+				wrap = true,
+			});
 			objectified = true;
 		end
 	end
@@ -1659,14 +1670,22 @@ app.AddQuestObjectivesToTooltip = function(tooltip, reference)
 		local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
 		if objectives and #objectives > 0 then
 			if not objectified then
-				tooltip:AddLine(REQUIREMENTS, 1, 1, 1, 1);
+				tinsert(info, {
+					left = REQUIREMENTS,
+					r = 1, g = 1, b = 1,
+				});
 			end
 			for i,objective in ipairs(objectives) do
 				local _ = objective.text;
 				if not _ or _:sub(1, 1) == " " then
 					_ = RETRIEVING_DATA;
 				end
-				tooltip:AddDoubleLine("  " .. _, app.GetCompletionIcon(objective.finished), 1, 1, 1, 1);
+				tinsert(info, {
+					left = "  " .. _,
+					right = app.GetCompletionIcon(objective.finished),
+					r = 1, g = 1, b = 1,
+					wrap = true,
+				});
 			end
 		end
 	end
