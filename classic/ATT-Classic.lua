@@ -1091,9 +1091,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
 	
 	-- Determine if this is a search for an item
-	local itemID;
+	local itemID, itemString;
 	if rawlink then
-		local itemString = rawlink:match("item[%-?%d:]+");
+		itemString = rawlink:match("item[%-?%d:]+");
 		if itemString then
 			local itemID2 = select(2, (":"):split(itemString));
 			if itemID2 then
@@ -1405,7 +1405,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
-		app.AddActiveInformationTypesForInfo(info, group);
+		app.AddActiveInformationTypesForTooltip(info, group, itemString);
 	end
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");

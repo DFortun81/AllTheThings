@@ -2610,7 +2610,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if itemString then
 			sourceID = app.GetSourceID(rawlink);
 			-- print("Rawlink SourceID",sourceID,rawlink)
-			if isTopLevelSearch and app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 			local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
 			if itemID2 then
 				itemID = tonumber(itemID2);
@@ -3214,9 +3213,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
 		end
-
+		
+		
 		-- Add various extra field info if enabled in settings
-		app.AddActiveInformationTypesForInfo(info, group)
+		app.AddActiveInformationTypesForTooltip(info, group, itemString)
 
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then

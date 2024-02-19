@@ -450,7 +450,7 @@ local PostProcessor = CreateInformationType("__postprocessor", {
 	end,
 });
 
-local ActiveInformationTypesForInfo, ActiveInformationTypesForRow = {}, {};
+local ActiveInformationTypesForRow, ActiveInformationTypesForTooltip = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
 local function SortInformationTypesByLocalizedName(a,b)
 	return a.textLower < b.textLower;
@@ -465,13 +465,13 @@ local function SortInformationTypesByPriority(a,b)
 	end
 end
 local function RefreshActiveInformationTypes()
-	wipe(ActiveInformationTypesForInfo);
+	wipe(ActiveInformationTypesForTooltip);
 	wipe(ActiveInformationTypesForRow);
 	
 	for _,informationType in ipairs(SortedInformationTypes) do
 		if settings:GetTooltipSetting(informationType.informationTypeID) then
 			if informationType.ShouldDisplayForTooltip then
-				ActiveInformationTypesForInfo[#ActiveInformationTypesForInfo + 1] = informationType;
+				ActiveInformationTypesForTooltip[#ActiveInformationTypesForTooltip + 1] = informationType;
 			end
 			if informationType.ShouldDisplayForRow then
 				ActiveInformationTypesForRow[#ActiveInformationTypesForRow + 1] = informationType;
@@ -480,15 +480,10 @@ local function RefreshActiveInformationTypes()
 	end
 	
 	-- Insert the Post Processor last!
-	ActiveInformationTypesForInfo[#ActiveInformationTypesForInfo + 1] = PostProcessor;
+	ActiveInformationTypesForTooltip[#ActiveInformationTypesForTooltip + 1] = PostProcessor;
 	ActiveInformationTypesForRow[#ActiveInformationTypesForRow + 1] = PostProcessor;
 end
 
-app.AddActiveInformationTypesForInfo = function(info, reference)
-	for _,informationType in ipairs(ActiveInformationTypesForInfo) do
-		informationType.Process(informationType, reference, info);
-	end
-end
 app.AddActiveInformationTypesForRow = function(tooltip, reference)
 	local info = {};
 	for _,informationType in ipairs(ActiveInformationTypesForRow) do
@@ -520,6 +515,13 @@ app.AddActiveInformationTypesForRow = function(tooltip, reference)
 			end
 		end
 	end
+end
+app.AddActiveInformationTypesForTooltip = function(info, reference, itemString)
+	reference.itemString = itemString;
+	for _,informationType in ipairs(ActiveInformationTypesForTooltip) do
+		informationType.Process(informationType, reference, info);
+	end
+	reference.itemString = nil;
 end
 
 local function OnClickForInformationCheckBox(self)
