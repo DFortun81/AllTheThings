@@ -134,6 +134,7 @@ end)
 checkboxAutomaticallySkipCutscenes:SetATTTooltip(L["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"])
 checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEFT", -2, 0)
 
+local checkboxAutomaticallyOpenBountyList;
 if app.IsRetail then
 -- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
 local checkboxAutomaticallyOpenMainList = child:CreateCheckBox(L["AUTO_MAIN_LIST_CHECKBOX"],
@@ -156,7 +157,7 @@ end)
 checkboxAutomaticallyOpenMiniList:SetATTTooltip(L["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"])
 checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
 
-local checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
+checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"))
 end,
