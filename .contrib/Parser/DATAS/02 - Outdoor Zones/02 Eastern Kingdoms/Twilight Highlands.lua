@@ -581,6 +581,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26788, {	-- Cementing Our Victory
 					["qg"] = 44042,	-- Ornak
+					["coord"] = { 74.2, 53.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27807, {	-- Clan Mullan

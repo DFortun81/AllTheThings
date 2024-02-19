@@ -182,6 +182,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
+							["groups"] = {
+								i(58361),	-- Blackrock Orc Weapon
+							},
 						}),
 						q(6, {	-- Bounty on Garrick Padfoot
 							["qg"] = 823,	-- Deputy Willem
@@ -337,6 +340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
+								i(58362),	-- Milly's Fire Extinguisher (QI!)
 								i(57247, {	-- Grape-Picking Sack
 									["timeline"] = { "added 4.0.3.13277" },
 								}),

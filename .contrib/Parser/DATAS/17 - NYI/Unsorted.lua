@@ -1053,7 +1053,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(208597),	-- Eadweard's Notes
 			i(208782),	-- Symbiotic Glowspore Grip
-			i(208826),	-- Letter from Valunei
 			i(208839),	-- Rune of Adaptive Binding
 			i(208840),	-- Concentrated Sophic Vellum
 			i(208887),	-- Erdan's Notes

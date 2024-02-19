@@ -442,6 +442,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								ach(18958, {	-- Of the Tyr's Guard
 									title(516),	-- <Name> Of the Tyr's Guard
 								}),
+								-- This item arrives in mailbox after completion of quest
+								i(208826),	-- Letter from Valunei (QI!)
 							},
 						}),
 						q(77341, {	-- Logotyrapy
