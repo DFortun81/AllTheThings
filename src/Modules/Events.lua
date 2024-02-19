@@ -299,9 +299,6 @@ local function GetEventName(e)
 	end
 	return "Event #" .. e;
 end
-local function GetEventTooltipNoteForGroup(group)
-	return L["EVENT_TOOLTIPS"][group.e] or ("|CFF00FFDE" .. L["REQUIRES"] .. "|r`|CFF00FFDE" .. GetEventName(group.e) .. "|r");
-end
 local function GetEventTimeString(d)
 	if d then
 		if d.weekday then
@@ -317,38 +314,6 @@ local function GetEventTimeString(d)
 	end
 	return "??";
 end
-local function ProcessEventSchedule(info, nextEvent)
-	if nextEvent then
-		if nextEvent.remappedID then
-			local mapID = RemappedEventToMapID[nextEvent.remappedID];
-			if mapID then
-				tinsert(info, {
-					left = L.EVENT_WHERE,
-					right = app.GetMapName(mapID),
-					color = app.Colors.TooltipDescription,
-				});
-			end
-		end
-		if nextEvent.endTime then
-			tinsert(info, {
-				left = L.EVENT_START,
-				right = GetEventTimeString(nextEvent.startTime),
-				color = app.Colors.TooltipDescription,
-			});
-			tinsert(info, {
-				left = L.EVENT_END,
-				right = GetEventTimeString(nextEvent.endTime),
-				color = app.Colors.TooltipDescription,
-			});
-		else
-			tinsert(info, {
-				left = L.EVENT_ACTIVE,
-				right = GetEventTimeString(nextEvent.startTime),
-				color = app.Colors.TooltipDescription,
-			});
-		end
-	end
-end
 
 -- Event API Implementation
 -- Access via AllTheThings.Modules.Events
@@ -361,7 +326,6 @@ events.GetEventActive = function(eventID)
 end;
 events.GetEventCache = GetEventCache;	-- This should be executed before GetDataCache, or at the start of GetDataCache.
 events.GetEventName = GetEventName;
-events.GetEventTooltipNoteForGroup = GetEventTooltipNoteForGroup;
 events.GetEventInformation = function(eventID)
 	return EventInformation[eventID];
 end;
@@ -417,7 +381,51 @@ app.AddEventHandler("OnLoad", function()
 		priority = 2.3,
 		text = L.EVENT_SCHEDULE,
 		Process = function(t, reference, info)
-			ProcessEventSchedule(info, reference.nextEvent);
+			local nextEvent = reference.nextEvent;
+			if nextEvent then
+				if nextEvent.remappedID then
+					local mapID = RemappedEventToMapID[nextEvent.remappedID];
+					if mapID then
+						tinsert(info, {
+							left = L.EVENT_WHERE,
+							right = app.GetMapName(mapID),
+							color = app.Colors.TooltipDescription,
+						});
+					end
+				end
+				if nextEvent.endTime then
+					tinsert(info, {
+						left = L.EVENT_START,
+						right = GetEventTimeString(nextEvent.startTime),
+						color = app.Colors.TooltipDescription,
+					});
+					tinsert(info, {
+						left = L.EVENT_END,
+						right = GetEventTimeString(nextEvent.endTime),
+						color = app.Colors.TooltipDescription,
+					});
+				else
+					tinsert(info, {
+						left = L.EVENT_ACTIVE,
+						right = GetEventTimeString(nextEvent.startTime),
+						color = app.Colors.TooltipDescription,
+					});
+				end
+			end
+		end,
+	});
+	app.Settings.CreateInformationType("requireEvent", {
+		priority = 2.7,
+		text = L.REQUIRES_EVENT,
+		Process = function(t, reference, info)
+			local e = reference.e;
+			if e then
+				tinsert(info, {
+					left = t.text,
+					right = GetEventName(e),
+					color = "FF00FFDE",
+				});
+			end
 		end,
 	});
 end);

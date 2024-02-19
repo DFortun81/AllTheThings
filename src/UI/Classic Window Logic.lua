@@ -978,26 +978,6 @@ local function RowOnEnter(self)
 			});
 		end
 	end
-	if reference.e then
-		local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
-		if reason then
-			local left, right = DESCRIPTION_SEPARATOR:split(reason);
-			if right then
-				tinsert(info, {
-					left = left,
-					right = right,
-					r = 0.4, g = 0.8, b = 1,
-					wrap = true,
-				});
-			else
-				tinsert(info, {
-					left = left,
-					r = 0.4, g = 0.8, b = 1,
-					wrap = true,
-				});
-			end
-		end
-	end
 	if reference.sym then
 		tinsert(info, {
 			left = "Right click to view more information.",

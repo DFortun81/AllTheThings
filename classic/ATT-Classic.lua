@@ -1145,17 +1145,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				tinsert(info, { left = reason[2], wrap = true });
 			end
 		end
-		if e then
-			local reason = app.Modules.Events.GetEventTooltipNoteForGroup({ e = e });
-			if reason then
-				local left, right = DESCRIPTION_SEPARATOR:split(reason);
-				if right then
-					tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
-				else
-					tinsert(info, { left = left, color = app.Colors.TooltipDescription });
-				end
-			end
-		end
 
 		local reagentCache = app.GetDataSubMember("Reagents", itemID);
 		if reagentCache then

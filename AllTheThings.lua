@@ -2998,17 +2998,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 		end
-		if group.e then
-			local reason = app.Modules.Events.GetEventTooltipNoteForGroup(group);
-			if reason then
-				local left, right = DESCRIPTION_SEPARATOR:split(reason);
-				if right then
-					tinsert(info, { left = left, right = right, color = app.Colors.TooltipDescription });
-				else
-					tinsert(info, { left = left, color = app.Colors.TooltipDescription });
-				end
-			end
-		end
 		-- an item used for a faction which is repeatable
 		if group.itemID and group.factionID and group.repeatable then
 			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
@@ -9661,18 +9650,6 @@ RowOnEnter = function (self)
 		-- Unobtainable
 		if reference.u then
 			GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-		end
-		-- Event Data
-		if reference.e then
-			local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
-			if reason then
-				local left, right = DESCRIPTION_SEPARATOR:split(reason);
-				if right then
-					GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
-				else
-					GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
-				end
-			end
 		end
 		-- Pet Battles
 		if reference.pb then

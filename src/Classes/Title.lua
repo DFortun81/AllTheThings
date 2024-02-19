@@ -8,7 +8,7 @@ local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
 	  GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles
 
 -- Module
-local DESCRIPTION_SEPARATOR, GetProgressColor = app.DESCRIPTION_SEPARATOR, app.Modules.Color.GetProgressColor;
+local GetProgressColor = app.Modules.Color.GetProgressColor;
 
 -- App
 local ATTAccountWideData

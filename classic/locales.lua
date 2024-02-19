@@ -102,6 +102,7 @@ for key,value in pairs({
 	["EVENT_START"] = "Start:";
 	["EVENT_END"] = "End:";
 	["EVENT_WHERE"] = "Where:";
+	["REQUIRES_EVENT"] = "Requires Event";
 	["MAPS"] = "Maps";
 	["LOCKOUT"] = "Lockout";
 	["LOCKOUTS"] = "Lockouts";

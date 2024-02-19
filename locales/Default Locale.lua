@@ -11,14 +11,13 @@ local L = setmetatable({
 	DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	
 	-- These are populated by the LocalizationDB.
-	QUEST_NAMES = {};
-	HEADER_NAMES = {};
-	HEADER_ICONS = {};
+	EVENT_REMAPPING = {};
 	HEADER_DESCRIPTIONS = {};
 	HEADER_EVENTS = {};
+	HEADER_ICONS = {};
 	HEADER_LORE = {};
-	EVENT_REMAPPING = {};
-	EVENT_TOOLTIPS = {};
+	HEADER_NAMES = {};
+	QUEST_NAMES = {};
 	
 	-- These are alternative map names that we don't want to display, but used for mapID calculations.
 	-- If there is a name provided in the table above, it will prefer that name association.

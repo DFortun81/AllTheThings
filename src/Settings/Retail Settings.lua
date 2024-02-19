@@ -201,6 +201,7 @@ local TooltipSettingsBase = {
 		["creatures"] = true,
 		["description"] = true,
 		["playerCoord"] = true,
+		["requireEvent"] = true,
 		["nextEvent"] = true,
 		["spellName"] = true,
 		["coords"] = true,
