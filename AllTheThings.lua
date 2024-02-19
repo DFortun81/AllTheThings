@@ -2989,12 +2989,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		-- Description for Items
-		if group.lore and app.Settings:GetTooltipSetting("Lore") then
-			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
-		end
-		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
-			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
-		end
 		if group.nextEvent then
 			local timeStrings = app.Modules.Events.GetEventTimeStrings(group.nextEvent);
 			if timeStrings then
@@ -9713,14 +9707,6 @@ RowOnEnter = function (self)
 
 		-- Additional information (search will insert this information if found in search)
 		if GameTooltip.ATTAttachComplete == nil then
-			-- Lore
-			if reference.lore and app.Settings:GetTooltipSetting("Lore") then
-				GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
-			end
-			-- Description
-			if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
-				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
-			end
 			if reference.nextEvent then
 				local timeStrings = app.Modules.Events.GetEventTimeStrings(reference.nextEvent);
 				if timeStrings then

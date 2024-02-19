@@ -116,6 +116,7 @@ for key,value in pairs({
 	["ART_ID"] = "Art ID";
 	["CREATURE_ID"] = "Creature ID";
 	["CURRENCY_ID"] = "Currency ID";
+	["DESCRIPTIONS"] = "Descriptions";
 	["DIFFICULTY_ID"] = "Difficulty ID";
 	["ENCOUNTER_ID"] = "Encounter ID";
 	["EXPANSION_ID"] = "Expansion ID";
@@ -129,6 +130,7 @@ for key,value in pairs({
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
 	["FLIGHT_PATH_ID"] = "Flight Path ID";
+	["LORE"] = "Lore";
 	["MAP_ID"] = "Map ID";
 	["MOUNT_ID"] = "Mount ID";
 	["MUSIC_ROLL_ID"] = "Music Roll ID";

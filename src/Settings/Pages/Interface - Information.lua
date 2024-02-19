@@ -6,6 +6,7 @@ local pairs, ipairs, tonumber, math_floor, tinsert
 	= pairs, ipairs, tonumber, math.floor, tinsert;
 local Colorize = app.Modules.Color.Colorize;
 local GetRelativeValue = app.GetRelativeValue;
+local HexToARGB = app.Modules.Color.HexToARGB;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -112,7 +113,7 @@ for i,informationType in ipairs({
 	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
 	CreateInformationType("Layer", { text = L.LAYER, priority = 1, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
 	
-	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
+	-- Contextual fields
 	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayForInfo = false,
 		Process = function(t, reference, info)
 			if not reference.itemID then
@@ -159,6 +160,33 @@ for i,informationType in ipairs({
 		end,
 	}),
 	
+	-- Description fields
+	CreateInformationType("lore", { text = L.LORE, priority = 2.5,
+		Process = function(t, reference, info)
+			local lore = reference.lore;
+			if lore then
+				tinsert(info, {
+					left = lore,
+					color = app.Colors.TooltipLore,
+					wrap = true,
+				});
+			end
+		end,
+	}),
+	CreateInformationType("description", { text = L.DESCRIPTIONS, priority = 2.5,
+		Process = function(t, reference, info)
+			local description = reference.description;
+			if description then
+				tinsert(info, {
+					left = description,
+					color = app.Colors.TooltipDescription,
+					wrap = true,
+				});
+			end
+		end,
+	}),
+	
+	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4 }),
@@ -349,6 +377,10 @@ app.AddActiveInformationTypesForRow = function(tooltip, reference)
 		informationType.Process(informationType, reference, info);
 	end
 	for _,entry in ipairs(info) do
+		if entry.color then
+			entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color);
+			entry.color = nil;
+		end
 		local left, right = (entry.left or " "), entry.right;
 		if right then
 			if entry.r then

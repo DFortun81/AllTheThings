@@ -1395,23 +1395,6 @@ end);
 ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
 ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowSpellRanksCheckBox, "BOTTOMLEFT", -8, 4);
 
-local ShowDescriptionsCheckBox = child:CreateCheckBox("Show Descriptions",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Descriptions"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Descriptions", self:GetChecked());
-end);
-ShowDescriptionsCheckBox:SetATTTooltip("Enable this option to show descriptions within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or a custom description added by a Contributor who felt some additional information was necessary.\n\nYou might want to keep this turned on.");
-ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
-
 local ShowKnownByCheckBox = child:CreateCheckBox("Show Known By",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
@@ -1428,7 +1411,7 @@ function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked());
 end);
 ShowKnownByCheckBox:SetATTTooltip("Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.");
-ShowKnownByCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowKnownByCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowModelsCheckBox = child:CreateCheckBox("Show Model Preview",
 function(self)

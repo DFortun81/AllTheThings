@@ -360,40 +360,6 @@ end)
 checkboxCoordinates:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"])
 checkboxCoordinates:AlignBelow(checkboxDropChances)
 
-local checkboxDescriptions = child:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Descriptions"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Descriptions", self:GetChecked())
-end)
-checkboxDescriptions:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"])
-checkboxDescriptions:AlignBelow(checkboxCoordinates)
-
-local checkboxLore = child:CreateCheckBox(L["LORE_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Lore"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Lore", self:GetChecked())
-end)
-checkboxLore:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"])
-checkboxLore:AlignBelow(checkboxDescriptions)
-
 local checkboxModelPreview = child:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Models"))
@@ -409,7 +375,7 @@ function(self)
 	settings:SetTooltipSetting("Models", self:GetChecked())
 end)
 checkboxModelPreview:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"])
-checkboxModelPreview:AlignBelow(checkboxLore)
+checkboxModelPreview:AlignBelow(checkboxCoordinates)
 
 local checkboxCurrencyCalculation = child:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
 function(self)

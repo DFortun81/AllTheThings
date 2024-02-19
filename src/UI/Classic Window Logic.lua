@@ -965,19 +965,8 @@ local function RowOnEnter(self)
 		end
 
 		if not reference.itemID then
-			if reference.lore and app.Settings:GetTooltipSetting("Lore") then
-				local lore = reference.lore;
-				if not linesByText[lore] then
-					local _,r,g,b = HexToARGB(app.Colors.TooltipLore);
-					GameTooltip:AddLine(lore, r, g, b, 1);
-				end
-			end
 			local description = reference.description;
 			if description and app.Settings:GetTooltipSetting("Descriptions") then
-				if not linesByText[description] then
-					local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
-					GameTooltip:AddLine(description, r, g, b, 1);
-				end
 				if reference.maps then
 					local description,maps,umaps,name = "Maps: ",{},{};
 					for i=1,#reference.maps,1 do

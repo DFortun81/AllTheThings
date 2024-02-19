@@ -1081,20 +1081,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 			if #regroup > 0 then
-				if app.Settings:GetTooltipSetting("Lore") then
-					for i,j in ipairs(regroup) do
-						if j.lore and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = j.lore, wrap = true, color = app.Colors.TooltipLore });
-						end
-					end
-				end
-				if app.Settings:GetTooltipSetting("Descriptions") then
-					for i,j in ipairs(regroup) do
-						if j.description and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = j.description, wrap = true, color = app.Colors.TooltipDescription });
-						end
-					end
-				end
 				app.Sort(regroup, function(a, b)
 					return not (a.headerID and a.headerID == app.HeaderConstants.COMMON_BOSS_DROPS) and b.headerID and b.headerID == app.HeaderConstants.COMMON_BOSS_DROPS;
 				end);
@@ -1433,14 +1419,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				MergeObject(group.g, usedToBuy);
 			end
 		end
-	end
-
-	if group.lore and app.Settings:GetTooltipSetting("Lore") and not (paramA == "titleID") then
-		tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
-	end
-
-	if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "titleID") then
-		tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
 	end
 
 	if group.nextEvent then

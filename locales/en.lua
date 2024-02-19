@@ -533,10 +533,8 @@ for key, value in pairs({
 	["ICON_ONLY_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...";
 	["COORDINATES_CHECKBOX"] = "Coordinates";
 	["COORDINATES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.";
-	["DESCRIPTIONS_CHECKBOX"] = "Descriptions";
-	["DESCRIPTIONS_CHECKBOX_TOOLTIP"] = "Enable this option to show descriptions within the tooltip. This may include the descriptive text added by a Contributor that felt some additional information was necessary.\n\nYou might want to keep this turned on.";
-	["LORE_CHECKBOX"] = "Lore";
-	["LORE_CHECKBOX_TOOLTIP"] = "Enable this option to show lore within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or for flavor by a Contributor.";
+	["DESCRIPTIONS"] = "Descriptions";
+	["LORE"] = "Lore";
 	["KNOWN_BY_CHECKBOX"] = "Known By";
 	["KNOWN_BY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
 	["COMPLETED_BY_CHECKBOX"] = "Completed By";

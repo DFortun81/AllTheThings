@@ -152,7 +152,6 @@ local TooltipSettingsBase = {
 		["Coordinates"] = true,
 		["Screenshot"] = false,
 		["Channel"] = "Master",
-		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Enabled:Mod"] = "None",
@@ -166,7 +165,6 @@ local TooltipSettingsBase = {
 		["KnownBy"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
-		["Lore"] = true,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["Objectives"] = true,
@@ -202,7 +200,9 @@ local TooltipSettingsBase = {
 		
 		-- Information Types
 		["creatures"] = true,
+		["description"] = true,
 		["parent"] = true,
+		["lore"] = true,
 		["awp"] = true,
 		["lvl"] = true,
 		["rwp"] = true,
