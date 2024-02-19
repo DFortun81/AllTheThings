@@ -553,10 +553,7 @@ for key, value in pairs({
 	["ONLY_RELEVANT_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
 	["PROFESSION_CHECKBOX"] = TRADE_SKILLS;	-- Professions
 	["PROFESSION_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the profession requirements in the tooltip.";
-	["CLASSES_CHECKBOX"] = "Classes";
-	["CLASSES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of class requirements in the tooltip.";
-	["RACES_CHECKBOX"] = RACES;
-	["RACES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of race requirements in the tooltip.";
+	["CLASSES"] = "Classes";
 	["SPEC_CHECKBOX"] = "Specializations";
 	["SPEC_CHECKBOX_TOOLTIP"] = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.";
 	["SUMMARIZE_CHECKBOX"] = "Summarize Things";

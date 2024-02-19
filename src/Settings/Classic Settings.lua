@@ -120,7 +120,6 @@ local TooltipSettingsBase = {
 		["Celebrate"] = true,
 		["Channel"] = "Master",
 		["Screenshot"] = false,
-		["ClassRequirements"] = true,
 		["Coordinates"] = true,
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
@@ -140,7 +139,6 @@ local TooltipSettingsBase = {
 		["Precision"] = 2,
 		["Progress"] = true,
 		["QuestGivers"] = true,
-		["RaceRequirements"] = true,
 		["Report:Collected"] = true,
 		["Report:CompletedQuests"] = true,
 		["Report:UnsortedQuests"] = true,
@@ -166,6 +164,8 @@ local TooltipSettingsBase = {
 		["awp"] = true,
 		["lvl"] = true,
 		["rwp"] = true,
+		["c"] = true,
+		["r"] = true,
 	},
 };
 local UnobtainableSettingsBase = {

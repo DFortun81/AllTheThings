@@ -152,7 +152,6 @@ local TooltipSettingsBase = {
 		["Coordinates"] = true,
 		["Screenshot"] = false,
 		["Channel"] = "Master",
-		["ClassRequirements"] = true,
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
@@ -175,7 +174,6 @@ local TooltipSettingsBase = {
 		["PlayDeathSound"] = false,
 		["Progress"] = true,
 		["QuestGivers"] = true,
-		["RaceRequirements"] = true,
 		["Report:Collected"] = true,
 		["Report:CompletedQuests"] = true,
 		["Report:UnsortedQuests"] = true,
@@ -208,6 +206,8 @@ local TooltipSettingsBase = {
 		["awp"] = true,
 		["lvl"] = true,
 		["rwp"] = true,
+		["c"] = true,
+		["r"] = true,
 	},
 }
 local UnobtainableSettingsBase = {

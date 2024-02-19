@@ -113,7 +113,7 @@ for i,informationType in ipairs({
 	CreateInformationType("Layer", { text = L.LAYER, priority = 1, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
 	
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
-	CreateInformationType("parent", { text = "Parent", priority = 2, ShouldDisplayForInfo = false,
+	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayForInfo = false,
 		Process = function(t, reference, info)
 			if not reference.itemID then
 				local parent = reference.parent or reference.sourceParent;
@@ -191,7 +191,7 @@ for i,informationType in ipairs({
 	}),
 	
 	CreateInformationType("questID", { text = L.QUEST_ID, priority = 8 }),
-	CreateInformationType("QuestGivers", { text = L.QUEST_GIVERS, priority = 8 }),
+	--CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 8 }), -- TODO
 	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
 	
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
@@ -220,6 +220,81 @@ for i,informationType in ipairs({
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
 	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
+	
+	CreateInformationType("c", { text = L.CLASSES, priority = 8000, --ShouldDisplayForInfo = false,
+		Process = function(t, reference, info)
+			local c = reference.c;-- or GetRelativeValue(reference, "c");	-- TODO: Investigate if we want this.
+			if c then
+				local classes_tbl = {};
+				for i,cl in ipairs(c) do
+					local info = app.ClassInfoByID[cl];
+					if info.isValid then classes_tbl[#classes_tbl + 1] = info.icontext; end
+				end
+				local str = app.TableConcat(classes_tbl, nil, nil, ", ")
+				if #classes_tbl > 4 then
+					tinsert(info, {
+						left = t.text .. " " .. str,
+						wrap = true,
+					});
+				else
+					tinsert(info, {
+						left = t.text,
+						right = str,
+					});
+				end
+				print("classes", str);
+			end
+		end,
+	}),
+	CreateInformationType("r", { text = RACES, priority = 8000, --ShouldDisplayForInfo = false,
+		Process = function(t, reference, info)
+			local r = reference.r;-- or GetRelativeValue(reference, "r");	-- TODO: Investigate if we want this.
+			if r and r > 0 then
+				local usecolors = app.Settings:GetTooltipSetting("UseMoreColors");
+				if r == 2 then
+					tinsert(info, {
+						left = t.text,
+						right = usecolors and Colorize(ITEM_REQ_ALLIANCE, app.Colors.Alliance) or ITEM_REQ_ALLIANCE
+					});
+				elseif r == 1 then
+					tinsert(info, {
+						left = t.text,
+						right = usecolors and Colorize(ITEM_REQ_HORDE, app.Colors.Horde) or ITEM_REQ_HORDE
+					});
+				else
+					tinsert(info, {
+						left = t.text,
+						right = UNKNOWN
+					});
+				end
+			else
+				r = reference.races;-- or GetRelativeValue(reference, "races");	-- TODO: Investigate if we want this.
+				if r then
+					local races_tbl = {}
+					-- temp ref with .raceID of only a single race so we can simply use TryColorizeName
+					local temp_ref, raceName = {}
+					local usecolors = app.Settings:GetTooltipSetting("UseMoreColors");
+					for i,race in ipairs(r) do
+						temp_ref.raceID = race
+						raceName = C_CreatureInfo.GetRaceInfo(race).raceName
+						races_tbl[#races_tbl + 1] = usecolors and app.TryColorizeName(temp_ref, raceName) or raceName
+					end
+					local str = app.TableConcat(races_tbl, nil, nil, ", ")
+					if #races_tbl > 4 then
+						tinsert(info, {
+							left = t.text .. " " .. str,
+							wrap = true,
+						});
+					else
+						tinsert(info, {
+							left = t.text,
+							right = str
+						});
+					end
+				end
+			end
+		end,
+	}),
 	
 	-- We want these last, usually.
 	CreateInformationType("b", { text = L.BINDING, priority = 9000 }),

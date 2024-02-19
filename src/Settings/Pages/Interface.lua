@@ -309,40 +309,6 @@ end)
 checkboxProfessions:SetATTTooltip(L["PROFESSION_CHECKBOX_TOOLTIP"])
 checkboxProfessions:AlignBelow(checkboxKnownBy)
 
-local checkboxClasses = child:CreateCheckBox(L["CLASSES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("ClassRequirements", self:GetChecked())
-end)
-checkboxClasses:SetATTTooltip(L["CLASSES_CHECKBOX_TOOLTIP"])
-checkboxClasses:AlignBelow(checkboxProfessions)
-
-local checkboxRaces = child:CreateCheckBox(L["RACES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("RaceRequirements", self:GetChecked())
-end)
-checkboxRaces:SetATTTooltip(L["RACES_CHECKBOX_TOOLTIP"])
-checkboxRaces:AlignBelow(checkboxClasses)
-
 local checkboxSpecializations = child:CreateCheckBox(L["SPEC_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
@@ -358,7 +324,7 @@ function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
 end)
 checkboxSpecializations:SetATTTooltip(L["SPEC_CHECKBOX_TOOLTIP"])
-checkboxSpecializations:AlignBelow(checkboxRaces)
+checkboxSpecializations:AlignBelow(checkboxProfessions)
 
 local checkboxDropChances = child:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
 function(self)

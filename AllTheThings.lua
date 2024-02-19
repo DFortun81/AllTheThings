@@ -9645,46 +9645,7 @@ RowOnEnter = function (self)
 				end
 			end
 		end
-		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local classes_tbl = {};
-			for i,cl in ipairs(reference.c) do
-				local info = app.ClassInfoByID[cl];
-				if info.isValid then classes_tbl[#classes_tbl + 1] = info.icontext; end
-			end
-			local str = app.TableConcat(classes_tbl, nil, nil, ", ")
-			if #classes_tbl > 4 then
-				GameTooltip:AddLine(L["CLASSES_CHECKBOX"] .. " " .. str, nil, nil, nil, 1);
-			else
-				GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
-			end
-		end
-		if app.Settings:GetTooltipSetting("RaceRequirements") then
-			local usecolors = app.Settings:GetTooltipSetting("UseMoreColors")
-			if reference.races then
-				local races_tbl = {}
-				-- temp ref with .raceID of only a single race so we can simply use TryColorizeName
-				local temp_ref, raceName = {}
-				for i,race in ipairs(reference.races) do
-					temp_ref.raceID = race
-					raceName = C_CreatureInfo_GetRaceInfo(race).raceName
-					races_tbl[#races_tbl + 1] = usecolors and TryColorizeName(temp_ref, raceName) or raceName
-				end
-				local str = app.TableConcat(races_tbl, nil, nil, ", ")
-				if #races_tbl > 4 then
-					GameTooltip:AddLine(L["RACES_CHECKBOX"] .. " " .. str, nil, nil, nil, 1);
-				else
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], str);
-				end
-			elseif reference.r and reference.r > 0 then
-				if reference.r == 2 then
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], usecolors and Colorize(ITEM_REQ_ALLIANCE, app.Colors.Alliance) or ITEM_REQ_ALLIANCE)
-				elseif reference.r == 1 then
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], usecolors and Colorize(ITEM_REQ_HORDE, app.Colors.Horde) or ITEM_REQ_HORDE)
-				else
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], "Unknown");
-				end
-			end
-		end
+		
 		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
 		if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
 		elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);

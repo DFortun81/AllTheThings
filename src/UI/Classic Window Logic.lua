@@ -1129,36 +1129,6 @@ local function RowOnEnter(self)
 
 		-- Show lockout information about an Instance (Raid or Dungeon)
 		app.AddLockoutInformationToTooltip(GameTooltip, reference);
-		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local classes_tbl = {};
-			for i,cl in ipairs(reference.c) do
-				local info = app.ClassInfoByID[cl];
-				if info.isValid then classes_tbl[#classes_tbl + 1] = info.icontext; end
-			end
-			local str = app.TableConcat(classes_tbl, nil, nil, ", ")
-			if #classes_tbl > 4 then
-				GameTooltip:AddLine("Classes " .. str, nil, nil, nil, 1);
-			else
-				GameTooltip:AddDoubleLine("Classes", str);
-			end
-		end
-		if app.Settings:GetTooltipSetting("RaceRequirements") then
-			if reference.races then
-				local races_tbl = {};
-				for i,race in ipairs(reference.races) do
-					local info = C_CreatureInfo.GetRaceInfo(race);
-					if info then races_tbl[#races_tbl + 1] = info.raceName; end
-				end
-				local str = app.TableConcat(races_tbl, nil, nil, ", ")
-				if #races_tbl > 4 then
-					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
-				else
-					GameTooltip:AddDoubleLine("Races", str);
-				end
-			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
-			end
-		end
 		
 		-- Show Breadcrumb information
 		if reference.isBreadcrumb then GameTooltip:AddLine("This is a breadcrumb quest."); end

@@ -1464,40 +1464,6 @@ end);
 ShowOtherCharactersCheckBox:SetATTTooltip("Enable this option if you want to see all of the characters on your account that still need to complete a quest in its tooltip.\n\nIE: You can look at a quest item and see that it may still be useful to a different character before getting rid of it.");
 ShowOtherCharactersCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowClassRequirementsCheckBox = child:CreateCheckBox("Show Class Requirements",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("ClassRequirements", self:GetChecked());
-end);
-ShowClassRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of class requirements in the tooltip.");
-ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowOtherCharactersCheckBox, "BOTTOMLEFT", 0, 4);
-
-local ShowRaceRequirementsCheckBox = child:CreateCheckBox("Show Race Requirements",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("RaceRequirements", self:GetChecked());
-end);
-ShowRaceRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of race requirements in the tooltip.");
-ShowRaceRequirementsCheckBox:SetPoint("TOPLEFT", ShowClassRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
-
 local ShowSoftReservesCheckBox = child:CreateCheckBox("Show Soft Reserves",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SoftReserves"));
@@ -1513,7 +1479,7 @@ function(self)
 	settings:SetTooltipSetting("SoftReserves", self:GetChecked());
 end);
 ShowSoftReservesCheckBox:SetATTTooltip("Enable this option if you want to see Soft Reserves made by your Raid Members within the ATT database in the tooltip.");
-ShowSoftReservesCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowSoftReservesCheckBox:SetPoint("TOPLEFT", ShowOtherCharactersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowSourceLocationsCheckBox = child:CreateCheckBox("Show Source Locations",
 function(self)
