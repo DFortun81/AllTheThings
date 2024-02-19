@@ -2989,14 +2989,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		-- Description for Items
-		if group.nextEvent then
-			local timeStrings = app.Modules.Events.GetEventTimeStrings(group.nextEvent);
-			if timeStrings then
-				for i,timeString in ipairs(timeStrings) do
-					tinsert(info, 1, { left = timeString, wrap = true, color = app.Colors.TooltipDescription });
-				end
-			end
-		end
 		if group.u and (not group.crs or group.itemID or group.sourceID) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
@@ -9704,20 +9696,6 @@ RowOnEnter = function (self)
 
 		-- Additional information (search will insert this information if found in search)
 		if GameTooltip.ATTAttachComplete == nil then
-			if reference.nextEvent then
-				local timeStrings = app.Modules.Events.GetEventTimeStrings(reference.nextEvent);
-				if timeStrings then
-					for i,timeString in ipairs(timeStrings) do
-						local left, right = DESCRIPTION_SEPARATOR:split(timeString);
-						if right then
-							GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
-						else
-							GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
-						end
-					end
-				end
-			end
-
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then
 				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);

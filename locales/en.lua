@@ -711,6 +711,11 @@ for key, value in pairs({
 	-- Tooltip Text
 	["DROP_RATE"] = "Drop Rate";
 	["QUEST_GIVER"] = "Quest Giver";
+	["EVENT_SCHEDULE"] = "Event Schedule";
+	["EVENT_ACTIVE"] = "Active:";
+	["EVENT_START"] = "Start:";
+	["EVENT_END"] = "End:";
+	["EVENT_WHERE"] = "Where:";
 	["MAPS"] = "Maps";
 	["LOCKOUT"] = "Lockout";
 	["SHARED"] = "Shared";

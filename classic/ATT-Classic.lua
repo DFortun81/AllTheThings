@@ -1416,15 +1416,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 	end
 
-	if group.nextEvent then
-		local timeStrings = app.Modules.Events.GetEventTimeStrings(group.nextEvent);
-		if timeStrings then
-			for i,timeString in ipairs(timeStrings) do
-				tinsert(info, 1, { left = timeString, wrap = true, color = app.Colors.TooltipDescription });
-			end
-		end
-	end
-
 	local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
 	local awpGreaterThanRWP = true;
 	if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then

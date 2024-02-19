@@ -159,6 +159,7 @@ local TooltipSettingsBase = {
 		-- Information Types
 		["creatures"] = true,
 		["description"] = true,
+		["nextEvent"] = true,
 		["parent"] = true,
 		["locks"] = true,
 		["lore"] = true,

@@ -965,20 +965,6 @@ local function RowOnEnter(self)
 		end
 
 		if not reference.itemID then
-			if reference.nextEvent then
-				local timeStrings = app.Modules.Events.GetEventTimeStrings(reference.nextEvent);
-				if timeStrings then
-					local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
-					for i,timeString in ipairs(timeStrings) do
-						local left, right = DESCRIPTION_SEPARATOR:split(timeString);
-						if right then
-							GameTooltip:AddDoubleLine(left, right, r, g, b, r, g, b, 1);
-						else
-							GameTooltip:AddLine(left, r, g, b, 1);
-						end
-					end
-				end
-			end
 			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
 			if rwp then
 				local rwpString = app.GetRemovedWithPatchString(rwp);

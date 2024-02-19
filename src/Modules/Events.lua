@@ -1,6 +1,4 @@
 do
--- CRIEVE NOTE: This file is currently identical in both Retail and Classic.
--- DO NOT TOUCH IT.
 local app = select(2, ...);
 local L = app.L;
 
@@ -319,22 +317,36 @@ local function GetEventTimeString(d)
 	end
 	return "??";
 end
-local function GetEventTimeStrings(nextEvent)
+local function ProcessEventSchedule(info, nextEvent)
 	if nextEvent then
-		local schedule = {};
-		if nextEvent.endTime then
-			tinsert(schedule, "Start:`" .. GetEventTimeString(nextEvent.startTime));
-			tinsert(schedule, "End:`" .. GetEventTimeString(nextEvent.endTime));
-		else
-			tinsert(schedule, "Active:`" .. GetEventTimeString(nextEvent.startTime));
-		end
 		if nextEvent.remappedID then
 			local mapID = RemappedEventToMapID[nextEvent.remappedID];
 			if mapID then
-				tinsert(schedule, "Where:`" .. (app.GetMapName(mapID) or ("Map ID #" .. mapID)));
+				tinsert(info, {
+					left = L.EVENT_WHERE,
+					right = app.GetMapName(mapID),
+					color = app.Colors.TooltipDescription,
+				});
 			end
 		end
-		return schedule;
+		if nextEvent.endTime then
+			tinsert(info, {
+				left = L.EVENT_START,
+				right = GetEventTimeString(nextEvent.startTime),
+				color = app.Colors.TooltipDescription,
+			});
+			tinsert(info, {
+				left = L.EVENT_END,
+				right = GetEventTimeString(nextEvent.endTime),
+				color = app.Colors.TooltipDescription,
+			});
+		else
+			tinsert(info, {
+				left = L.EVENT_ACTIVE,
+				right = GetEventTimeString(nextEvent.startTime),
+				color = app.Colors.TooltipDescription,
+			});
+		end
 	end
 end
 
@@ -349,7 +361,6 @@ events.GetEventActive = function(eventID)
 end;
 events.GetEventCache = GetEventCache;	-- This should be executed before GetDataCache, or at the start of GetDataCache.
 events.GetEventName = GetEventName;
-events.GetEventTimeStrings = GetEventTimeStrings;
 events.GetEventTooltipNoteForGroup = GetEventTooltipNoteForGroup;
 events.GetEventInformation = function(eventID)
 	return EventInformation[eventID];
@@ -399,4 +410,15 @@ fields.nextEvent = function(t)
 	return NextEventSchedule[t.eventID];
 end;
 events.Fields = fields;
+
+-- Information Type hook for Events
+app.AddEventHandler("OnLoad", function()
+	app.Settings.CreateInformationType("nextEvent", {
+		priority = 2.3,
+		text = L.EVENT_SCHEDULE,
+		Process = function(t, reference, info)
+			ProcessEventSchedule(info, reference.nextEvent);
+		end,
+	});
+end);
 end
