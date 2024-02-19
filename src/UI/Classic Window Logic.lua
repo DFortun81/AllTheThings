@@ -765,6 +765,10 @@ local function RowOnEnter(self)
 	local GameTooltip = GameTooltip;
 	if not GameTooltip then return end;
 	
+	-- Always display tooltip data when viewing information from our windows.
+	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
+	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
+	
 	GameTooltip:ClearLines();
 	GameTooltip:ClearATTReferenceTexture();
 	if self:GetCenter() > (UIParent:GetWidth() / 2) then
@@ -772,7 +776,7 @@ local function RowOnEnter(self)
 	else
 		GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 	end
-
+	
 	-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
 	if not reference.creatureID then
 		if reference.itemID then
@@ -1117,6 +1121,9 @@ local function RowOnEnter(self)
 		end
 	end
 	GameTooltip:Show();
+	
+	-- Reactivate the original tooltip integrations setting.
+	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 end
 local function RowOnLeave(self)
 	GameTooltip:ClearLines();

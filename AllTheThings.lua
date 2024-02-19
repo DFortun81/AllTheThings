@@ -9345,6 +9345,10 @@ RowOnEnter = function (self)
 	local GameTooltip = GameTooltip;
 	if not GameTooltip then return end;
 	
+	-- Always display tooltip data when viewing information from our windows.
+	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
+	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
+	
 	local tooltipAnchor;
 	local initialBuild = not GameTooltip.IsRefreshing;
 	GameTooltip.IsRefreshing = true;
@@ -9369,10 +9373,7 @@ RowOnEnter = function (self)
 		-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
 		GameTooltip:ClearLines();
 	end
-
-	-- all tooltips from ATT windows should always show expected data
-	local toggleAttachTooltips = not app.Settings:GetTooltipSetting("Enabled")
-	if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", true) end
+	
 	local link = reference.link or reference.silentLink;
 	local _, linkAdded;
 	if link and (reference.key ~= "questID" or reference.itemID or not app.Settings:GetTooltipSetting("QuestReplacement")) then
@@ -9420,9 +9421,7 @@ RowOnEnter = function (self)
 			-- app.PrintDebug("No Search Data",reference.hash)
 		end
 	end
-
-	if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", false) end
-
+	
 	-- Miscellaneous fields
 	local missingMiscData;
 	-- app.PrintDebug("Adding misc fields");
@@ -10015,6 +10014,9 @@ RowOnEnter = function (self)
 	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 	GameTooltip:Show();
 	-- app.PrintDebug("OnRowEnter-Return");
+	
+	-- Reactivate the original tooltip integrations setting.
+	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 end
 RowOnLeave = function (self)
 	GameTooltip:ClearLines();
