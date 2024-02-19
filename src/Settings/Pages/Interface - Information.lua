@@ -48,7 +48,13 @@ local ConversionMethods = setmetatable({
 	end,
 	awp = function(val) return GetPatchString(val, app.Colors.AddedWithPatch) end,
 	rwp = function(val) return GetPatchString(val, app.Colors.RemovedWithPatch) end,
-	spellID = function(spellID, reference) return tostring(spellID) .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")" end,
+	spellID = function(spellID, reference)
+		if app.Settings:GetTooltipSetting("spellName") then
+			return tostring(spellID) .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
+		else
+			return tostring(spellID);
+		end
+	end,
 }, {
 	__index = function(t, key)
 		return DefaultConversionMethod;
@@ -291,7 +297,7 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4, ShouldDisplayForRow = false, }),
+	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4, ShouldDisplayForRow = false }),
 	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
 	CreateInformationType("sourceID", { text = L.SOURCE_ID, priority = 5 }),
 	CreateInformationType("bonusID", { text = L.BONUS_ID, priority = 6 }),
@@ -347,6 +353,7 @@ local InformationTypes = {
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
+	CreateInformationType("spellName", { text = L.SPELL_NAME, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
 	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
 	

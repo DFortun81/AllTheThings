@@ -2644,7 +2644,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		itemID = GetItemIDAndModID(paramB) or paramB;
 	end
 
-	if itemID then
+	if itemID and isTopLevelSearch then
 		-- Merge the source group for all matching Sources of the search results
 		local sourceGroup;
 		for i,j in ipairs(group.g or group) do
@@ -2674,24 +2674,22 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		else
 			sourceGroup.missing = true;
 		end
-
-		if isTopLevelSearch then
-			if app.AddSourceInformation(sourceID, info, group, sourceGroup, itemString) then
-				working = true;
-			end
-
-			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-				local specs = GetFixedItemSpecInfo(itemID);
-				-- specs is already filtered/sorted to only current class
-				if specs and #specs > 0 then
-					tinsert(info, { right = GetSpecsString(specs, true, true) });
-				elseif sourceID then
-					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
-				end
-			end
-
-			app.AddArtifactRelicInformation(itemID, rawlink, info, group);
+		
+		if app.AddSourceInformation(sourceID, info, group, sourceGroup, itemString) then
+			working = true;
 		end
+
+		if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+			local specs = GetFixedItemSpecInfo(itemID);
+			-- specs is already filtered/sorted to only current class
+			if specs and #specs > 0 then
+				tinsert(info, { right = GetSpecsString(specs, true, true) });
+			elseif sourceID then
+				tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
+			end
+		end
+
+		app.AddArtifactRelicInformation(itemID, rawlink, info, group);
 	end
 
 	-- Create a list of sources

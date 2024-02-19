@@ -755,6 +755,7 @@ for key, value in pairs({
 	["SOURCE_ID"] = "Source ID";
 	["SPECIES_ID"] = "Species ID";
 	["SPELL_ID"] = "Spell ID";
+	["SPELL_NAME"] = "Spell Name";
 	["TITLE_ID"] = "Title ID";
 	["TOY_ID"] = "Toy ID";
 	["VISUAL_ID"] = "Visual ID";

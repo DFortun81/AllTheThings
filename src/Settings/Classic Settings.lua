@@ -159,6 +159,7 @@ local TooltipSettingsBase = {
 		["creatures"] = true,
 		["description"] = true,
 		["playerCoord"] = true,
+		["spellName"] = true,
 		["nextEvent"] = true,
 		["coords"] = true,
 		["parent"] = true,

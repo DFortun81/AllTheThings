@@ -151,6 +151,7 @@ for key,value in pairs({
 	["SET_ID"] = "Gear Set ID";
 	["SOURCE_ID"] = "Source ID";
 	["SPELL_ID"] = "Spell ID";
+	["SPELL_NAME"] = "Spell Name";
 	["SPECIES_ID"] = "Species ID";
 	["TITLE_ID"] = "Title ID";
 	["TOY_ID"] = "Toy ID";

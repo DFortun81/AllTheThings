@@ -202,6 +202,7 @@ local TooltipSettingsBase = {
 		["description"] = true,
 		["playerCoord"] = true,
 		["nextEvent"] = true,
+		["spellName"] = true,
 		["coords"] = true,
 		["parent"] = true,
 		["locks"] = true,
