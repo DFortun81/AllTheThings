@@ -232,33 +232,12 @@ local function GetProgressTextForTooltip(data)
 		return GetCompletionText(data.saved);
 	end
 end
-local function GetAddedWithPatchString(awp, addedBack)
-	if awp then
-		awp = tonumber(awp);
-		local formatString = "ADDED";
-		if app.GameBuildVersion == awp then
-			formatString = "WAS_" .. formatString;
-		elseif app.GameBuildVersion > awp then
-			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
-		end
-		if addedBack then formatString = formatString .. "_BACK"; end
-		return L[formatString .. "_WITH_PATCH_FORMAT"]:format(math_floor(awp / 10000) .. "." .. (math_floor(awp / 100) % 10) .. "." .. (awp % 10));
-	end
-end
-local function GetRemovedWithPatchString(rwp)
-	if rwp then
-		rwp = tonumber(rwp);
-		return L.REMOVED_WITH_PATCH_FORMAT:format(math_floor(rwp / 10000) .. "." .. (math_floor(rwp / 100) % 10) .. "." .. (rwp % 10));
-	end
-end
 app.GetCollectionIcon = GetCollectionIcon;
 app.GetCollectionText = GetCollectionText;
 app.GetCompletionIcon = GetCompletionIcon;
 app.GetCompletionText = GetCompletionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
 app.GetProgressTextForTooltip = GetProgressTextForTooltip;
-app.GetAddedWithPatchString = GetAddedWithPatchString;
-app.GetRemovedWithPatchString = GetRemovedWithPatchString;
 
 
 app.IsComplete = function(o)
@@ -1414,23 +1393,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				MergeObject(group.g, usedToBuy);
 			end
 		end
-	end
-
-	local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
-	local awpGreaterThanRWP = true;
-	if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
-		awpGreaterThanRWP = rwp and awp >= rwp;
-		local awpString = app.GetAddedWithPatchString(awp, awpGreaterThanRWP);
-		if awpString then
-			if app.Settings:GetTooltipSetting("awp") then
-				tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
-			end
-		else
-			awpGreaterThanRWP = true;
-		end
-	end
-	if rwp and app.Settings:GetTooltipSetting("rwp") then
-		tinsert(info, awpGreaterThanRWP and 1 or 2, { left = app.GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 	end
 
 	if group.isLimited then

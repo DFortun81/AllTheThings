@@ -929,23 +929,6 @@ local function RowOnEnter(self)
 		end
 
 		if not reference.itemID then
-			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
-			if rwp then
-				local rwpString = app.GetRemovedWithPatchString(rwp);
-				if not linesByText[rwpString] and app.Settings:GetTooltipSetting("rwp") then
-					local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
-					GameTooltip:AddLine(rwpString, r, g, b, 1);
-				end
-			end
-			if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
-				local awpString = app.GetAddedWithPatchString(awp, awp and rwp and awp > rwp);
-				if awpString and not linesByText[awpString] then
-					if app.Settings:GetTooltipSetting("awp") then
-						local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
-						GameTooltip:AddLine(awpString, r, g, b, 1);
-					end
-				end
-			end
 			if reference.questID and not reference.objectiveID then
 				app.AddQuestObjectivesToTooltip(GameTooltip, reference);
 			end
@@ -992,6 +975,11 @@ local function RowOnEnter(self)
 			end
 		end
 		GameTooltip:SetATTReference(reference);
+		local progressText = GetProgressTextForTooltip(reference);
+		if progressText and progressText ~= "" and progressText ~= "---" then
+			GameTooltipTextRight1:SetText(progressText);
+			GameTooltipTextRight1:Show();
+		end
 		
 		if reference.cost then
 			if type(reference.cost) == "table" then
@@ -1021,11 +1009,6 @@ local function RowOnEnter(self)
 			else
 				GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));
 			end
-		end
-		local progressText = GetProgressTextForTooltip(reference);
-		if progressText and progressText ~= "" and progressText ~= "---" then
-			GameTooltipTextRight1:SetText(progressText);
-			GameTooltipTextRight1:Show();
 		end
 		
 		-- Add any ID toggle fields
