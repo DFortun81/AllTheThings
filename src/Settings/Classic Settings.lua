@@ -160,6 +160,7 @@ local TooltipSettingsBase = {
 		["creatures"] = true,
 		["description"] = true,
 		["parent"] = true,
+		["locks"] = true,
 		["lore"] = true,
 		["awp"] = true,
 		["lvl"] = true,

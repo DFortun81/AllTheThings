@@ -1115,9 +1115,6 @@ local function RowOnEnter(self)
 		
 		-- Add any ID toggle fields
 		app.AddActiveInformationTypesForRow(GameTooltip, reference)
-
-		-- Show lockout information about an Instance (Raid or Dungeon)
-		app.AddLockoutInformationToTooltip(GameTooltip, reference);
 		
 		-- Show Breadcrumb information
 		if reference.isBreadcrumb then GameTooltip:AddLine("This is a breadcrumb quest."); end

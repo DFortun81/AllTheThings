@@ -10017,9 +10017,6 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- Show lockout information about an Instance (Raid or Dungeon)
-		app.AddLockoutInformationToTooltip(GameTooltip, reference);
-
 		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
 
 		if app.Settings:GetTooltipSetting("Show:TooltipHelp") then

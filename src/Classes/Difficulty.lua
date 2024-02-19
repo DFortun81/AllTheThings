@@ -158,35 +158,42 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 }, (function(t) return t.difficulties; end));
 
 -- External Functionality
-app.AddLockoutInformationToTooltip = function(tooltip, reference)
-	local locks = reference.locks;
-	if locks then
-		if locks.encounters then
-			tooltip:AddDoubleLine("Resets", date("%c", locks.reset));
-			for encounterIter,encounter in pairs(locks.encounters) do
-				tooltip:AddDoubleLine(" " .. encounter.name, app.GetCompletionIcon(encounter.isKilled));
-			end
-		else
-			if reference.isLockoutShared and locks.shared then
-				tooltip:AddDoubleLine("Shared", date("%c", locks.shared.reset));
-				for encounterIter,encounter in pairs(locks.shared.encounters) do
-					tooltip:AddDoubleLine(" " .. encounter.name, app.GetCompletionIcon(encounter.isKilled));
-				end
-			else
-				for key,value in pairs(locks) do
-					if key == "shared" then
-						-- Skip
-					else
-						tooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
-						for encounterIter,encounter in pairs(value.encounters) do
-							tooltip:AddDoubleLine(" " .. encounter.name, app.GetCompletionIcon(encounter.isKilled));
+local function SummarizeLockout(info, lockout, leftText)
+	tinsert(info, {
+		left = leftText,
+		right = date("%c", lockout.reset),
+	});
+	for encounterIter,encounter in pairs(lockout.encounters) do
+		tinsert(info, {
+			left = " " .. encounter.name,
+			right = app.GetCompletionIcon(encounter.isKilled),
+		});
+	end
+end
+app.AddEventHandler("OnLoad", function()
+	app.Settings.CreateInformationType("locks", {
+		priority = 10000,
+		text = "Lockouts",
+		Process = function(t, reference, info)
+			local locks = reference.locks;
+			if locks then
+				if locks.encounters then
+					SummarizeLockout(info, locks, "Resets");
+				elseif reference.isLockoutShared and locks.shared then
+					SummarizeLockout(info, locks.shared, "Shared");
+				else
+					for key,lockout in pairs(locks) do
+						if key == "shared" then
+							-- Skip
+						else
+							SummarizeLockout(info, lockout, Colorize(GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty));
 						end
 					end
 				end
 			end
-		end
-	end
-end
+		end,
+	});
+end);
 app.GetCurrentDifficultyID = function()
 	return IsInInstance() and select(3, GetInstanceInfo()) or 0;
 end
