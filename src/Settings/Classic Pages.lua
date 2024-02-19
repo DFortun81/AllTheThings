@@ -1577,83 +1577,9 @@ end);
 ShowPercentageCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
 ShowPercentageCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
 
-local DebuggingLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-DebuggingLabel:SetPoint("TOPRIGHT", child.separator or child, "BOTTOMRIGHT", -220, -8);
-DebuggingLabel:SetJustifyH("LEFT");
-DebuggingLabel:SetText("Debugging");
-DebuggingLabel:Show();
-local ids = {
-	["achievementID"] = "Achievement ID",
-	["Alive"] = L.ALIVE,
-	["artID"] = "Art ID",
-	["awp"] = L.ADDED_WITH_PATCH,
-	["creatureID"] = "Creature ID",
-	["Coordinates"] = "Coordinates",
-	["currencyID"] = "Currency ID",
-	["Descriptions"] = "Descriptions",
-	["displayID"] = "Display ID",
-	["explorationID"] = "Exploration ID",
-	["factionID"] = "Faction ID",
-	["filterID"] = "Filter ID",
-	["flightPathID"] = "Flight Path ID",
-	["guid"] = L["GUID"],
-	["itemID"] = "Item ID",
-	["iLvl"] = "Item Level",
-	["itemString"] = "Item String",
-	["Layer"] = L.LAYER,
-	["Lore"] = "Lore",
-	["mapID"] = "Map ID",
-	["objectID"] = "Object ID",
-	["__type"] = "Object Type",
-	["Objectives"] = "Objectives",
-	["questID"] = "Quest ID",
-	["QuestGivers"] = "Quest Givers",
-	["rwp"] = "Removed With Patch",
-	["Spawned"] = "Spawned",
-	["speciesID"] = "Species ID",
-	["spellID"] = "Spell ID",
-	["sourceID"] = "Source ID",
-	["titleID"] = "Title ID",
-};
-local last = nil;
-for _,id in pairs({"Alive","awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID","guid","itemID"}) do
-	local filter = child:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id));
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked());
-		settings:Refresh();
-	end);
-	if not last then
-		filter:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 4, 0);
-	else
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
-	end
-	last = filter;
-end
-last = nil;
-for _,id in pairs({"iLvl","itemString","Layer","Lore","mapID","objectID","__type","Objectives","questID","QuestGivers","sourceID","Spawned","speciesID","spellID","titleID"}) do
-	local filter = child:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id));
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked());
-		settings:Refresh();
-	end);
-	if not last then
-		filter:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 164, 0);
-	else
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
-	end
-	last = filter;
-end
-
 -- This creates the "Main List Scale" slider.
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", child, "OptionsSliderTemplate");
-MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "BOTTOM", 0, -15);
+MainListScaleSlider:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 320, -24);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.currentValue = 0;
 MainListScaleSlider.tooltipText = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
@@ -1682,8 +1608,7 @@ end);
 
 -- This creates the "Mini List Scale" slider.
 local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", child, "OptionsSliderTemplate");
-MiniListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -32);
+MiniListScaleSlider:SetPoint("TOPLEFT", MainListScaleSlider, "BOTTOMLEFT", 0, -32);
 settings.MiniListScaleSlider = MiniListScaleSlider;
 MiniListScaleSlider.currentValue = 0;
 MiniListScaleSlider.tooltipText = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
@@ -1715,8 +1640,7 @@ end);
 
 -- This creates the "Locations" slider.
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", child, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-LocationsSlider:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -32);
+LocationsSlider:SetPoint("TOPLEFT", MiniListScaleSlider, "BOTTOMLEFT", 0, -32);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 LocationsSlider:SetOrientation('HORIZONTAL');
