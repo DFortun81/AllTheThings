@@ -146,7 +146,7 @@ local InformationTypes = {
 	}),
 	
 	-- Description fields
-	CreateInformationType("lore", { text = L.LORE, priority = 2.5,
+	CreateInformationType("lore", { text = L.LORE, priority = 2.4,
 		Process = function(t, reference, info)
 			local lore = reference.lore;
 			if lore then
@@ -167,6 +167,42 @@ local InformationTypes = {
 					color = app.Colors.TooltipDescription,
 					wrap = true,
 				});
+			end
+		end,
+	}),
+	CreateInformationType("maps", { text = L.MAPS, priority = 2.6,
+		Process = function(t, reference, info)
+			local maps = reference.maps;
+			if maps and #maps > 0 then
+				local currentMapID = app.CurrentMapID;
+				local mapNames,uniques,name = {},{};
+				local rootMapID = reference.mapID;
+				if rootMapID then uniques[app.GetMapName(rootMapID) or rootMapID] = true; end
+				for i,mapID in ipairs(maps) do
+					if mapID ~= currentMapID then
+						name = app.GetMapName(mapID);
+						if name and not uniques[name] then
+							uniques[name] = true;
+							tinsert(mapNames, name);
+						end
+					end
+				end
+				if #mapNames > 0 then
+					-- If there's a description and it is visible, add some visual space.
+					local description = reference.description;
+					if description and app.Settings:GetTooltipSetting("description") then
+						tinsert(info, {
+							left = " ",
+							color = app.Colors.TooltipDescription,
+							wrap = true,
+						});
+					end
+					tinsert(info, {
+						left = t.text .. ": " .. app.TableConcat(mapNames, nil, nil, ", "),
+						color = app.Colors.TooltipDescription,
+						wrap = true,
+					});
+				end
 			end
 		end,
 	}),

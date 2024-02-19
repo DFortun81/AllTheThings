@@ -162,6 +162,7 @@ local TooltipSettingsBase = {
 		["parent"] = true,
 		["locks"] = true,
 		["lore"] = true,
+		["maps"] = true,
 		["awp"] = true,
 		["lvl"] = true,
 		["rwp"] = true,

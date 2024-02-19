@@ -94,6 +94,7 @@ for key,value in pairs({
 	-- Tooltip Text
 	["DROP_RATE"] = "Drop Rate";
 	["QUEST_GIVER"] = "Quest Giver";
+	["MAPS"] = "Maps";
 	["LOCKOUT"] = "Lockout";
 	["LOCKOUTS"] = "Lockouts";
 	["RESETS"] = "Resets";

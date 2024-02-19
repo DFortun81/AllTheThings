@@ -965,41 +965,6 @@ local function RowOnEnter(self)
 		end
 
 		if not reference.itemID then
-			local description = reference.description;
-			if description and app.Settings:GetTooltipSetting("Descriptions") then
-				if reference.maps then
-					local description,maps,umaps,name = "Maps: ",{},{};
-					for i=1,#reference.maps,1 do
-						name = app.GetMapName(reference.maps[i]);
-						if name and not umaps[name] then
-							umaps[name] = true;
-							tinsert(maps, name);
-						end
-					end
-					for i,name in ipairs(maps) do
-						if i > 1 then description = description .. ", "; end
-						description = description .. name;
-					end
-					GameTooltip:AddLine(" ", 1, 1, 1, 1);
-					local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
-					GameTooltip:AddLine(description, r, g, b, 1);
-				end
-			elseif reference.maps then
-				local description,maps,umaps,name = "Maps: ",{},{};
-				for i=1,#reference.maps,1 do
-					name = app.GetMapName(reference.maps[i]);
-					if name and not umaps[name] then
-						umaps[name] = true;
-						tinsert(maps, name);
-					end
-				end
-				for i,name in ipairs(maps) do
-					if i > 1 then description = description .. ", "; end
-					description = description .. name;
-				end
-				local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
-				GameTooltip:AddLine(description, r, g, b, 1);
-			end
 			if reference.nextEvent then
 				local timeStrings = app.Modules.Events.GetEventTimeStrings(reference.nextEvent);
 				if timeStrings then
