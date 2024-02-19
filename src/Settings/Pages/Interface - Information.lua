@@ -272,7 +272,25 @@ local InformationTypes = {
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),
-	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4 }),
+	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4,
+		Process = function(t, reference, info)
+			local f = reference.filterID;
+			if f then
+				local filterForRWP = reference.filterForRWP;
+				if filterForRWP then
+					tinsert(info, {
+						left = t.text,
+						right = ConversionMethods.filterID(f, reference) .. " -> " .. ConversionMethods.filterID(filterForRWP, reference),
+					});
+				else
+					tinsert(info, {
+						left = t.text,
+						right = ConversionMethods.filterID(f, reference),
+					});
+				end
+			end
+		end,
+	}),
 	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4 }),
 	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
 	CreateInformationType("sourceID", { text = L.SOURCE_ID, priority = 5 }),

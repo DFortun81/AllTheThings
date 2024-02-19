@@ -841,13 +841,6 @@ local function RowOnEnter(self)
 		elseif reference.learnedAt then
 			GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(reference.learnedAt));
 		end
-		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then
-			if reference.filterForRWP then
-				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.FILTER_ID, tostring(L["FILTER_ID_TYPES"][reference.f]) .. " -> " .. tostring(L["FILTER_ID_TYPES"][reference.filterForRWP]));
-			else
-				GameTooltip:AddDoubleLine(L.SETTINGS_MENU.FILTER_ID, tostring(L["FILTER_ID_TYPES"][reference.f]));
-			end
-		end
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
 			local msg = "Requires a minimum standing of"
