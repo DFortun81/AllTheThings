@@ -3151,7 +3151,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 
 				if ContainsExceeded > 0 then
-					tinsert(info, { left = (L.AND_MORE):format(ContainsExceeded));
+					tinsert(info, { left = (L.AND_MORE):format(ContainsExceeded) });
 				end
 
 				if app.Settings:GetTooltipSetting("Currencies") then
