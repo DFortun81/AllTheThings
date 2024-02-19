@@ -35,30 +35,58 @@ ALLIANCE_ONLY = {
 	DWARF,
 	NIGHTELF,
 	GNOME,
+	-- #if AFTER TBC
 	DRAENEI,
-	WORGEN,
-	PANDAREN_ALLIANCE,
-	VOIDELF,
-	LIGHTFORGED,
-	KULTIRAN,
-	DARKIRON,
-	MECHAGNOME,
-	DRACTHYR_ALLIANCE,
+		-- #if AFTER CATA
+		WORGEN,
+			-- #if AFTER MOP
+			PANDAREN_ALLIANCE,
+				-- #if AFTER 7.3.5
+				VOIDELF,
+				LIGHTFORGED,
+					-- #if AFTER BFA
+					KULTIRAN,
+					DARKIRON,
+						-- #if AFTER 8.3.0
+						MECHAGNOME,
+							-- #if AFTER 10.0.2
+							DRACTHYR_ALLIANCE,
+							-- #endif
+						-- #endif
+					-- #endif
+				-- #endif
+			-- #endif
+		-- #endif
+	-- #endif
 };
 HORDE_ONLY = {
 	ORC,
 	UNDEAD,
 	TAUREN,
 	TROLL,
-	GOBLIN,
+	-- #if AFTER TBC
 	BLOODELF,
-	PANDAREN_HORDE,
-	NIGHTBORNE,
-	HIGHMOUNTAIN_TAUREN,
-	ZANDALARI,
-	MAGHAR,
-	VULPERA,
-	DRACTHYR_HORDE,
+		-- #if AFTER CATA
+		GOBLIN,
+			-- #if AFTER MOP
+			PANDAREN_HORDE,
+				-- #if AFTER 7.3.5
+				NIGHTBORNE,
+				HIGHMOUNTAIN_TAUREN,
+					-- #if AFTER BFA
+					ZANDALARI,
+					MAGHAR,
+						-- #if AFTER 8.3.0
+						VULPERA,
+							-- #if AFTER 10.0.2
+							DRACTHYR_HORDE,
+							-- #endif
+						-- #endif
+					-- #endif
+				-- #endif
+			-- #endif
+		-- #endif
+	-- #endif
 };
 ALL_RACES = { PANDAREN_NEUTRAL }
 for _,v in pairs(ALLIANCE_ONLY) do table.insert(ALL_RACES,v) end

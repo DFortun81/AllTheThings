@@ -16,17 +16,25 @@ EVOKER = 13;
 ALL_CLASSES = {
 	WARRIOR,
 	PALADIN,
-	HUNTER,
-	ROGUE,
-	PRIEST,
-	DEATHKNIGHT,
 	SHAMAN,
-	MAGE,
-	WARLOCK,
-	MONK,
+	HUNTER,
 	DRUID,
-	DEMONHUNTER,
-	EVOKER,
+	ROGUE,
+	MAGE,
+	PRIEST,
+	WARLOCK,
+	-- #if AFTER WRATH
+	DEATHKNIGHT,
+		-- #if AFTER MOP
+		MONK,
+			-- #if AFTER 7.3.5
+			DEMONHUNTER,
+				-- #if AFTER 10.0.2
+				EVOKER,
+				-- #endif
+			-- #endif
+		-- #endif
+	-- #endif
 };
 TANKS = {
 	DEATHKNIGHT,
