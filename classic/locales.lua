@@ -94,6 +94,9 @@ for key,value in pairs({
 	-- Tooltip Text
 	["DROP_RATE"] = "Drop Rate";
 	["QUEST_GIVER"] = "Quest Giver";
+	["COORDINATES"] = "Coordinates";
+	["AND_MORE"] = "And %s more...";
+	["PLAYER_COORDINATES"] = "Player Coordinates";
 	["EVENT_SCHEDULE"] = "Event Schedule";
 	["EVENT_ACTIVE"] = "Active:";
 	["EVENT_START"] = "Start:";

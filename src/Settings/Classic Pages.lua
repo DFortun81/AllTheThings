@@ -1378,23 +1378,6 @@ end);
 ShowSpellRanksCheckBox:SetATTTooltip("Enable this option if you want to see the best spell rank of triviality for any unleveled related profession for a reagent in its tooltip.\n\nSpell Ranks of 'trivial' or lesser will not be displayed.\nWhile on Account or Debug Mode, this will show for all of your characters that you have cached in ATT.");
 ShowSpellRanksCheckBox:SetPoint("TOPLEFT", ShowRecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowCoordinatesCheckBox = child:CreateCheckBox("Show Coordinates",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Coordinates", self:GetChecked());
-end);
-ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
-ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowSpellRanksCheckBox, "BOTTOMLEFT", -8, 4);
-
 local ShowKnownByCheckBox = child:CreateCheckBox("Show Known By",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
@@ -1411,7 +1394,7 @@ function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked());
 end);
 ShowKnownByCheckBox:SetATTTooltip("Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.");
-ShowKnownByCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
+ShowKnownByCheckBox:SetPoint("TOPLEFT", ShowSpellRanksCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowModelsCheckBox = child:CreateCheckBox("Show Model Preview",
 function(self)

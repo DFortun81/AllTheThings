@@ -343,23 +343,6 @@ end)
 checkboxDropChances:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"])
 checkboxDropChances:AlignBelow(checkboxSpecializations)
 
-local checkboxCoordinates = child:CreateCheckBox(L["COORDINATES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Coordinates"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Coordinates", self:GetChecked())
-end)
-checkboxCoordinates:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"])
-checkboxCoordinates:AlignBelow(checkboxDropChances)
-
 local checkboxModelPreview = child:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Models"))
@@ -375,7 +358,7 @@ function(self)
 	settings:SetTooltipSetting("Models", self:GetChecked())
 end)
 checkboxModelPreview:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"])
-checkboxModelPreview:AlignBelow(checkboxCoordinates)
+checkboxModelPreview:AlignBelow(checkboxDropChances)
 
 local checkboxCurrencyCalculation = child:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
 function(self)

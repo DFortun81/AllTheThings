@@ -497,7 +497,7 @@ local createMap = app.CreateClass("Map", "mapID", {
 	["lvl"] = function(t)
 		return C_Map_GetMapLevels(t.mapID);
 	end,
-	["coord_tooltip"] = function(t)
+	["playerCoord"] = function(t)
 		-- if this map is the same map as the one the player is currently within, allow displaying the player's current coordinates
 		if t.isCurrentMap then
 			local position = C_Map_GetPlayerMapPosition(CurrentMapID, "player")

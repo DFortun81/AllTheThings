@@ -834,7 +834,6 @@ local function RowOnEnter(self)
 		elseif reference.retries then
 			GameTooltip:AddLine("Failed to acquire information. This may have been removed from the game.", 1, 1, 1);
 		end
-		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then
 			local professionName = GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA;
 			if reference.learnedAt then professionName = professionName .. " (" .. reference.learnedAt .. ")"; end
@@ -907,34 +906,6 @@ local function RowOnEnter(self)
 
 				end
 			end
-		end
-		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
-			local currentMapID, j, str = app.CurrentMapID, 0;
-			for i,coord in ipairs(reference.coords) do
-				local x, y = coord[1], coord[2];
-				local mapID = coord[3] or currentMapID;
-				if mapID ~= currentMapID then
-					str = app.GetMapName(mapID) or "??";
-					if app.Settings:GetTooltipSetting("mapID") then
-						str = str .. " (" .. mapID .. ")";
-					end
-					str = str .. ": ";
-				else
-					str = "";
-				end
-				GameTooltip:AddDoubleLine(j == 0 and "Coordinates" or " ",
-					str.. GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
-				j = j + 1;
-				if j > 8 then
-					break;
-				end
-			end
-		end
-		local coord = reference.coord or reference.coord_tooltip;
-		if coord and app.Settings:GetTooltipSetting("Coordinates") then
-			GameTooltip:AddDoubleLine("Coordinate",
-				GetNumberWithZeros(math_floor(coord[1] * 10) * 0.1, 1) .. ", " ..
-				GetNumberWithZeros(math_floor(coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
 		if reference.providers then
 			local counter = 0;

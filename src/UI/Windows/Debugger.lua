@@ -16,7 +16,9 @@ app:CreateWindow("Debugger", {
 				local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 				if pos then
 					local px, py = pos:GetXY();
-					info.coord = { px * 100, py * 100, mapID };
+					info.coords = {
+						{ px * 100, py * 100, mapID }
+					};
 				end
 				repeat
 					mapInfo = C_Map_GetMapInfo(mapID);

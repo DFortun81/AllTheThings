@@ -5,6 +5,7 @@ local L, settings, ipairs = app.L.SETTINGS_MENU, app.Settings, ipairs;
 local pairs, ipairs, tonumber, math_floor, tinsert
 	= pairs, ipairs, tonumber, math.floor, tinsert;
 local Colorize = app.Modules.Color.Colorize;
+local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetRelativeValue = app.GetRelativeValue;
 local HexToARGB = app.Modules.Color.HexToARGB;
 
@@ -20,6 +21,9 @@ else
 end
 
 -- Conversion Methods for specific formats for a given Information Type.
+local function GetCoordString(x, y)
+	return GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1);
+end
 local function GetPatchString(patch, color)
 	patch = tonumber(patch)
 	return patch and Colorize(math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10), color)
@@ -141,6 +145,64 @@ local InformationTypes = {
 						right = tostring(minlvl),
 					});
 				end
+			end
+		end,
+	}),
+	
+	-- Quest Fields
+	-- Providers
+	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayForInfo = false,
+		Process = function(t, reference, info)
+			local coords = reference.coords;
+			if not coords then
+				coords = reference.coord;
+				if not coords then return; end
+				coords = { coords };
+			end
+			
+			local coordCount = #coords;
+			if coordCount < 1 then return; end
+			
+			local maxCoords = 10;
+			local currentMapID, j, str = app.CurrentMapID, 0;
+			local showMapID = app.Settings:GetTooltipSetting("mapID");
+			for i,coord in ipairs(coords) do
+				local x, y = coord[1], coord[2];
+				local mapID = coord[3] or currentMapID;
+				if mapID ~= currentMapID then
+					str = app.GetMapName(mapID);
+					if showMapID then
+						str = str .. " (" .. mapID .. ")";
+					end
+					str = str .. ": ";
+				else
+					str = "";
+				end
+				tinsert(info, {
+					left = j == 0 and t.text,
+					right = str .. GetCoordString(x, y),
+					r = 1, g = 1, b = 1
+				});
+				j = j + 1;
+				if j > maxCoords then
+					tinsert(info, {
+						right = (L.AND_MORE):format(coordCount - maxCoords),
+						r = 1, g = 1, b = 1
+					});
+					break;
+				end
+			end
+		end,
+	}),
+	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayForInfo = false,
+		Process = function(t, reference, info)
+			local coord = reference.playerCoord;
+			if coord then
+				tinsert(info, {
+					left = t.text,
+					right = GetCoordString(coord[1], coord[2]),
+					r = 1, g = 1, b = 1
+				});
 			end
 		end,
 	}),

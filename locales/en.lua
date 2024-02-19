@@ -31,7 +31,10 @@ for key, value in pairs({
 	["COLLECTION_PROGRESS"] = "Collection Progress";
 	["CONTAINS"] = "Contains:";
 	["FACTIONS"] = "Factions";
-	["COORDINATES_STRING"] = "Coordinates";
+	["COORDINATES"] = "Coordinates";
+	["AND_MORE"] = "And %s more...";
+	["AND_OTHER_SOURCES"] = "And %s other sources...";
+	["PLAYER_COORDINATES"] = "Player Coordinates";
 	["NO_COORDINATES_FORMAT"] = "No known coordinates for %s";
 	["TOM_TOM_NOT_FOUND"] = "You must have TomTom installed to plot coordinates.";
 	["FLIGHT_PATHS"] = "Flight Paths";
@@ -103,10 +106,7 @@ for key, value in pairs({
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
-	["AND_"] = "And ";
 	["_AND"] = " and";
-	["_MORE"] = " more";
-	["_OTHER_SOURCES"] = " other sources";
 	["DURING_WQ_ONLY"] = "Can be completed when the World Quest is active";
 	["COMPLETED_DAILY"] = "Can be completed daily";
 	["COMPLETED_WEEKLY"] = "Can be completed weekly";
@@ -531,8 +531,6 @@ for key, value in pairs({
 	["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
 	["ICON_ONLY_CHECKBOX"] = "Icon Only";
 	["ICON_ONLY_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...";
-	["COORDINATES_CHECKBOX"] = "Coordinates";
-	["COORDINATES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.";
 	["DESCRIPTIONS"] = "Descriptions";
 	["LOCKOUTS"] = "Lockouts";
 	["RESETS"] = "Resets";

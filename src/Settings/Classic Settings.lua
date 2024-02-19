@@ -120,7 +120,6 @@ local TooltipSettingsBase = {
 		["Celebrate"] = true,
 		["Channel"] = "Master",
 		["Screenshot"] = false,
-		["Coordinates"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Enabled:Mod"] = "None",
@@ -159,7 +158,9 @@ local TooltipSettingsBase = {
 		-- Information Types
 		["creatures"] = true,
 		["description"] = true,
+		["playerCoord"] = true,
 		["nextEvent"] = true,
+		["coords"] = true,
 		["parent"] = true,
 		["locks"] = true,
 		["lore"] = true,

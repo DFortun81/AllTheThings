@@ -2756,7 +2756,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 			if count > maximum then
-				tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
+				tinsert(listing, 1, (L.AND_OTHER_SOURCES):format(count - maximum));
 			end
 			for _,text in ipairs(listing) do
 				if not working and IsRetrieving(text) then working = true; end
@@ -3151,7 +3151,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 
 				if ContainsExceeded > 0 then
-					tinsert(info, { left = L["AND_"]..ContainsExceeded..L["_MORE"].."..." });
+					tinsert(info, { left = (L.AND_MORE):format(ContainsExceeded));
 				end
 
 				if app.Settings:GetTooltipSetting("Currencies") then
@@ -9558,48 +9558,11 @@ RowOnEnter = function (self)
 					missingMiscData = true;
 				end
 				if first > 25 then
-					GameTooltip:AddDoubleLine(" ", L.AND_ .. (#reference.providers - first) .. L._MORE .. "...");
+					GameTooltip:AddDoubleLine(" ", (L.AND_MORE):format(#reference.providers - first));
 					break
 				end
 				first = first + 1;
 			end
-		end
-		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
-			local currentMapID, str = app.CurrentMapID;
-			local coords = reference.coords;
-			-- more than 10 coords, put into an additional line
-			local coordLimit, coordCount = 11, #coords;
-			local additionaLine, coord;
-			if coordCount > coordLimit then
-				coordLimit = coordLimit - 1;
-				additionaLine = "+ "..(coordCount - coordLimit)..L["_MORE"];
-				coordCount = coordLimit;
-			end
-			for i=1,coordCount do
-				coord = coords[i];
-				local x, y = coord[1], coord[2];
-				local mapID = coord[3] or currentMapID;
-				if mapID ~= currentMapID then
-					str = app.GetMapName(mapID);
-					if app.Settings:GetTooltipSetting("mapID") then
-						str = str .. " (" .. mapID .. ")";
-					end
-					str = str .. ": ";
-				else
-					str = "";
-				end
-				GameTooltip:AddDoubleLine(i == 1 and L["COORDINATES_STRING"] or " ",
-					str.. GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
-			end
-			if additionaLine then
-				GameTooltip:AddDoubleLine(" ", additionaLine, 1, 1, 1, 1, 1, 1);
-			end
-		end
-		local coord = reference.coord or reference.coord_tooltip;
-		if coord and app.Settings:GetTooltipSetting("Coordinates") then
-			GameTooltip:AddDoubleLine("Coordinate",
-				GetNumberWithZeros(math_floor(coord[1] * 10) * 0.1, 1) .. ", " ..
-				GetNumberWithZeros(math_floor(coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
 		if reference.speciesID then
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);

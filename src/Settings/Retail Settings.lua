@@ -149,7 +149,6 @@ local TooltipSettingsBase = {
 		["Auto:Sync"] = true,
 		["Auto:AH"] = false,
 		["Celebrate"] = true,
-		["Coordinates"] = true,
 		["Screenshot"] = false,
 		["Channel"] = "Master",
 		["DisplayInCombat"] = true,
@@ -201,7 +200,9 @@ local TooltipSettingsBase = {
 		-- Information Types
 		["creatures"] = true,
 		["description"] = true,
+		["playerCoord"] = true,
 		["nextEvent"] = true,
+		["coords"] = true,
 		["parent"] = true,
 		["locks"] = true,
 		["lore"] = true,
