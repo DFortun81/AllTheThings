@@ -286,9 +286,9 @@ local InformationTypes = {
 					-- temp ref with .raceID of only a single race so we can simply use TryColorizeName
 					local temp_ref, raceName = {}
 					local usecolors = app.Settings:GetTooltipSetting("UseMoreColors");
-					for i,race in ipairs(r) do
-						temp_ref.raceID = race
-						raceName = C_CreatureInfo.GetRaceInfo(race).raceName
+					for i,raceID in ipairs(r) do
+						temp_ref.raceID = raceID
+						raceName = app.GetRaceName(raceID);
 						races_tbl[#races_tbl + 1] = usecolors and app.TryColorizeName(temp_ref, raceName) or raceName
 					end
 					local str = app.TableConcat(races_tbl, nil, nil, ", ")

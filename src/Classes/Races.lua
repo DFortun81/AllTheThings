@@ -23,6 +23,10 @@ if C_CreatureInfo_GetRaceInfo then
 			return "Interface\\Icons\\achievement_character_"..race.."_"..gender;
 		end
 	end
+	local function GetRaceName(raceID)
+		local info = C_CreatureInfo_GetRaceInfo(raceID);
+		return info and info.raceName or (RACE .. " #" .. tostring(raceID));
+	end
 	
 	-- Allied Race Support
 	local C_AlliedRaces_GetRaceInfoByID = C_AlliedRaces and C_AlliedRaces.GetRaceInfoByID;
@@ -42,12 +46,12 @@ if C_CreatureInfo_GetRaceInfo then
 
 	local cache = app.CreateCache("raceID");
 	local function default_name(t)
-		local info = C_CreatureInfo_GetRaceInfo(t.raceID);
-		return info and info.raceName or UNKNOWN;
+		return GetRaceName(t.raceID);
 	end
 	local function default_icon(t)
 		return GetRaceIcon(t.raceID);
 	end
+	app.GetRaceName = GetRaceName;
 	app.CreateRace = app.CreateClass("Race", "raceID", {
 		["icon"] = function(t)
 			return cache.GetCachedField(t, "icon", default_icon);
@@ -57,6 +61,9 @@ if C_CreatureInfo_GetRaceInfo then
 		end,
 	});
 else
+	app.GetRaceName = function(raceID)
+		return RACE .. " #" .. tostring(raceID);
+	end;
 	app.CreateRace = app.CreateUnimplementedClass("Race", "raceID");
 end
 end
