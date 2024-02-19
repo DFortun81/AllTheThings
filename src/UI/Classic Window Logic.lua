@@ -760,361 +760,363 @@ local function RowOnClick(self, button)
 	end
 end
 local function RowOnEnter(self)
-	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
-	if reference then
-		GameTooltip:ClearLines();
-		GameTooltip:ClearATTReferenceTexture();
-		if self:GetCenter() > (UIParent:GetWidth() / 2) then
-			GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+	local reference = self.ref;
+	if not reference then return; end
+	local GameTooltip = GameTooltip;
+	if not GameTooltip then return end;
+	
+	GameTooltip:ClearLines();
+	GameTooltip:ClearATTReferenceTexture();
+	if self:GetCenter() > (UIParent:GetWidth() / 2) then
+		GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+	else
+		GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+	end
+
+	-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
+	if not reference.creatureID then
+		if reference.itemID then
+			local link = reference.link;
+			if link and link ~= "" then
+				pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+			else
+				GameTooltip:AddLine("Item #" .. reference.itemID);
+				if reference and reference.u then
+					local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
+					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
+				end
+				if reference.e then
+					local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
+					if reason then
+						local left, right = DESCRIPTION_SEPARATOR:split(reason);
+						if right then
+							GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
+						else
+							GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
+						end
+					end
+				end
+				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "itemID", reference.itemID);
+			end
+		elseif reference.currencyID then
+			GameTooltip:SetCurrencyByID(reference.currencyID, 1);
+		elseif reference.key ~= "questID" then
+			local link = reference.link;
+			if link then
+				pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+				--local spellID = reference.spellID;
+				--if spellID then AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "spellID", spellID); end
+			end
+		end
+	end
+
+	-- Miscellaneous fields
+	if GameTooltip:NumLines() < 1 then
+		GameTooltip:AddLine(reference.text);
+	end
+	if app.Settings:GetTooltipSetting("Progress") then
+		if reference.trackable and reference.total and reference.total >= 2 then
+			GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
+		end
+	end
+
+	local linesByText = {}, title;
+	for i=1,GameTooltip:NumLines() do
+		title = _G["GameTooltipTextLeft"..i]:GetText();
+		if title then linesByText[title] = true; end
+	end
+
+	title = reference.title;
+	if title then
+		local left, right = DESCRIPTION_SEPARATOR:split(title);
+		if right then
+			GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 		else
-			GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+			GameTooltip:AddLine(title, 1, 1, 1);
 		end
-
-		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
-		if not reference.creatureID then
-			if reference.itemID then
-				local link = reference.link;
-				if link and link ~= "" then
-					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
-				else
-					GameTooltip:AddLine("Item #" .. reference.itemID);
-					if reference and reference.u then
-						local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-						if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
-					end
-					if reference.e then
-						local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
-						if reason then
-							local left, right = DESCRIPTION_SEPARATOR:split(reason);
-							if right then
-								GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
-							else
-								GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
-							end
-						end
-					end
-					AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "itemID", reference.itemID);
-				end
-			elseif reference.currencyID then
-				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
-			elseif reference.key ~= "questID" then
-				local link = reference.link;
-				if link then
-					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
-					--local spellID = reference.spellID;
-					--if spellID then AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "spellID", spellID); end
-				end
-			end
-		end
-
-		-- Miscellaneous fields
-		if GameTooltip:NumLines() < 1 then
-			GameTooltip:AddLine(reference.text);
-		end
-		if app.Settings:GetTooltipSetting("Progress") then
-			if reference.trackable and reference.total and reference.total >= 2 then
-				GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
-			end
-		end
-
-		local linesByText = {}, title;
-		for i=1,GameTooltip:NumLines() do
-			title = _G["GameTooltipTextLeft"..i]:GetText();
-			if title then linesByText[title] = true; end
-		end
-
-		title = reference.title;
-		if title then
-			local left, right = DESCRIPTION_SEPARATOR:split(title);
-			if right then
-				GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
-			else
-				GameTooltip:AddLine(title, 1, 1, 1);
-			end
-		elseif reference.retries then
-			GameTooltip:AddLine("Failed to acquire information. This may have been removed from the game.", 1, 1, 1);
-		end
-		if reference.requireSkill then
-			local professionName = GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA;
-			if reference.learnedAt then professionName = professionName .. " (" .. reference.learnedAt .. ")"; end
-			GameTooltip:AddDoubleLine(L["REQUIRES"], professionName);
-		elseif reference.learnedAt then
-			GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(reference.learnedAt));
-		end
-		if reference.minReputation and not reference.maxReputation then
-			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
+	elseif reference.retries then
+		GameTooltip:AddLine("Failed to acquire information. This may have been removed from the game.", 1, 1, 1);
+	end
+	if reference.requireSkill then
+		local professionName = GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA;
+		if reference.learnedAt then professionName = professionName .. " (" .. reference.learnedAt .. ")"; end
+		GameTooltip:AddDoubleLine(L["REQUIRES"], professionName);
+	elseif reference.learnedAt then
+		GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(reference.learnedAt));
+	end
+	if reference.minReputation and not reference.maxReputation then
+		local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
+		local msg = "Requires a minimum standing of"
+		if offset ~= 0 then msg = msg .. " " .. offset end
+		msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
+		GameTooltip:AddLine(msg);
+	end
+	if reference.maxReputation and not reference.minReputation then
+		local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
+		local msg = "Requires a standing lower than"
+		if offset ~= 0 then msg = msg .. " " .. offset end
+		msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
+		GameTooltip:AddLine(msg);
+	end
+	if reference.minReputation and reference.maxReputation then
+		local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
+		local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
+		if reference.maxReputation[1] == reference.minReputation[1] then
+			local msg = "Requires a standing between"
+			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " and"
+			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. ".";
+			GameTooltip:AddLine(msg);
+		else
 			local msg = "Requires a minimum standing of"
-			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
+			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
+			GameTooltip:AddLine(msg);
+
+			msg = "Requires a standing lower than"
+			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
 			GameTooltip:AddLine(msg);
 		end
-		if reference.maxReputation and not reference.minReputation then
-			local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
-			local msg = "Requires a standing lower than"
-			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
-			GameTooltip:AddLine(msg);
-		end
-		if reference.minReputation and reference.maxReputation then
-			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
-			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
-			if reference.maxReputation[1] == reference.minReputation[1] then
-				local msg = "Requires a standing between"
-				if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-				msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " and"
-				if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-				msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. ".";
-				GameTooltip:AddLine(msg);
-			else
-				local msg = "Requires a minimum standing of"
-				if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-				msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
-				GameTooltip:AddLine(msg);
+	end
+	if reference.spellID then
+		-- If the item is a recipe, then show which characters know this recipe.
+		if not reference.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+			local knownBy = {};
+			for _,character in pairs(ATTCharacterData) do
+				if character.ActiveSkills and not character.ignored then
+					local skills = character.ActiveSkills[reference.spellID];
+					if skills then tinsert(knownBy, { character, skills[1], skills[2] }); end
+				end
+			end
+			if #knownBy > 0 then
+				app.Sort(knownBy, function(a, b)
+					return a[2] > b[2];
+				end);
+				GameTooltip:AddLine("|c" .. app.Colors.TooltipDescription .. "Known by:|r");
+				for i,data in ipairs(knownBy) do
+					local character = data[1];
+					GameTooltip:AddDoubleLine("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
+				end
 
-				msg = "Requires a standing lower than"
-				if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-				msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
-				GameTooltip:AddLine(msg);
 			end
 		end
-		if reference.spellID then
-			-- If the item is a recipe, then show which characters know this recipe.
-			if not reference.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-				local knownBy = {};
-				for _,character in pairs(ATTCharacterData) do
-					if character.ActiveSkills and not character.ignored then
-						local skills = character.ActiveSkills[reference.spellID];
-						if skills then tinsert(knownBy, { character, skills[1], skills[2] }); end
-					end
+	end
+	if reference.providers then
+		local counter = 0;
+		for i,provider in pairs(reference.providers) do
+			local providerType = provider[1];
+			local providerID = provider[2] or 0;
+			local providerString = UNKNOWN;
+			if providerType == "o" then
+				providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
+				if app.Settings:GetTooltipSetting("objectID") then
+					providerString = providerString .. ' (' .. providerID .. ')';
 				end
-				if #knownBy > 0 then
-					app.Sort(knownBy, function(a, b)
-						return a[2] > b[2];
-					end);
-					GameTooltip:AddLine("|c" .. app.Colors.TooltipDescription .. "Known by:|r");
-					for i,data in ipairs(knownBy) do
-						local character = data[1];
-						GameTooltip:AddDoubleLine("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
-					end
+			elseif providerType == "n" then
+				providerString = (providerID > 0 and app.NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
+				if app.Settings:GetTooltipSetting("creatureID") then
+					providerString = providerString .. ' (' .. providerID .. ')';
+				end
+			elseif providerType == "i" then
+				local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
+				providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
+				if app.Settings:GetTooltipSetting("itemID") then
+					providerString = providerString .. ' (' .. providerID .. ')';
+				end
+			end
+			GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString);
+			counter = counter + 1;
+		end
+	end
 
+	if not reference.itemID then
+		if reference.questID and not reference.objectiveID then
+			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
+		end
+		if reference.u then
+			local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
+			if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
+		end
+		if reference.e then
+			local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
+			if reason then
+				local left, right = DESCRIPTION_SEPARATOR:split(reason);
+				if right then
+					GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
+				else
+					GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
 				end
 			end
 		end
-		if reference.providers then
-			local counter = 0;
-			for i,provider in pairs(reference.providers) do
-				local providerType = provider[1];
-				local providerID = provider[2] or 0;
-				local providerString = UNKNOWN;
-				if providerType == "o" then
-					providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
-					if app.Settings:GetTooltipSetting("objectID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
-					end
-				elseif providerType == "n" then
-					providerString = (providerID > 0 and app.NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
-					if app.Settings:GetTooltipSetting("creatureID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
-					end
-				elseif providerType == "i" then
-					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
-					providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
-					if app.Settings:GetTooltipSetting("itemID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
-					end
-				end
-				GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString);
-				counter = counter + 1;
+		if reference.sym then GameTooltip:AddLine("Right click to view more information.", 0.8, 0.8, 1, true); end
+	end
+	if reference.titleID then
+		AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
+	end
+	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
+		if app.Settings:GetTooltipSetting("creatureID") then
+			for i,qg in ipairs(reference.qgs) do
+				GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and app.NPCNameFromID[qg] or "") .. " (" .. qg .. ")");
+			end
+		else
+			for i,qg in ipairs(reference.qgs) do
+				GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and app.NPCNameFromID[qg] or qg));
 			end
 		end
+	end
+	if reference.crs then
+		if app.Settings:GetTooltipSetting("creatureID") then
+			for i,cr in ipairs(reference.crs) do
+				GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and app.NPCNameFromID[cr] or "") .. " (" .. cr .. ")");
+			end
+		else
+			for i,cr in ipairs(reference.crs) do
+				GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and app.NPCNameFromID[cr] or cr));
+			end
+		end
+	end
+	GameTooltip:SetATTReference(reference);
+	local progressText = GetProgressTextForTooltip(reference);
+	if progressText and progressText ~= "" and progressText ~= "---" then
+		GameTooltipTextRight1:SetText(progressText);
+		GameTooltipTextRight1:Show();
+	end
+	
+	if reference.cost then
+		if type(reference.cost) == "table" then
+			local _, name, icon, amount;
+			for k,v in pairs(reference.cost) do
+				_ = v[1];
+				if _ == "g" then
+					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", GetCoinTextureString(v[2]));
+				else
+					if _ == "i" then
+						local item = app.CreateItem(v[2]);
+						name = item.name;
+						icon = item.icon;
+					elseif _ == "c" then
+						local currency = app.CreateCurrencyClass(v[2]);
+						name = currency.text;
+						icon = currency.icon;
+					end
+					name = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA);
+					_ = (v[3] or 1);
+					if _ > 1 then
+						name = _ .. "x  " .. name;
+					end
+					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", name);
+				end
+			end
+		else
+			GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));
+		end
+	end
+	
+	-- Add any ID toggle fields
+	app.AddActiveInformationTypesForRow(GameTooltip, reference)
+	
+	-- Show Breadcrumb information
+	if reference.isBreadcrumb then GameTooltip:AddLine("This is a breadcrumb quest."); end
+	if reference.isDaily then GameTooltip:AddLine("This can be completed daily.");
+	elseif reference.isWeekly then GameTooltip:AddLine("This can be completed weekly.");
+	elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
+	elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
+	elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
+	if reference.pvp and not reference.itemID then GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true); end
+	
+	if reference.OnTooltip then reference:OnTooltip(); end
 
-		if not reference.itemID then
-			if reference.questID and not reference.objectiveID then
-				app.AddQuestObjectivesToTooltip(GameTooltip, reference);
-			end
-			if reference.u then
-				local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-				if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
-			end
-			if reference.e then
-				local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
-				if reason then
-					local left, right = DESCRIPTION_SEPARATOR:split(reason);
-					if right then
-						GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
-					else
-						GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
-					end
+	if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
+		if not reference.repeatable and app.Settings:GetTooltipSetting("Show:OtherCharacterQuests") then
+			local incompletes, realmName = {}, GetRealmName();
+			for guid,character in pairs(ATTCharacterData) do
+				if not character.ignored and character.realm == realmName
+					and (not reference.r or (character.factionID and reference.r == character.factionID))
+					and (not reference.races or (character.raceID and contains(reference.races, character.raceID)))
+					and (not reference.c or (character.classID and contains(reference.c, character.classID)))
+					and (character.Quests and not character.Quests[reference.questID]) then
+					incompletes[guid] = character;
 				end
 			end
-			if reference.sym then GameTooltip:AddLine("Right click to view more information.", 0.8, 0.8, 1, true); end
-		end
-		if reference.titleID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
-		end
-		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
-			if app.Settings:GetTooltipSetting("creatureID") then
-				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and app.NPCNameFromID[qg] or "") .. " (" .. qg .. ")");
-				end
-			else
-				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and app.NPCNameFromID[qg] or qg));
-				end
+			incompletes[app.GUID] = nil;
+			local desc, j = "", 0;
+			for guid,character in pairs(incompletes) do
+				if j > 0 then desc = desc .. ", "; end
+				desc = desc .. (character.text or guid);
+				j = j + 1;
+			end
+			if j > 0 then
+				GameTooltip:AddLine("Incomplete on " .. desc:gsub("-" .. realmName, ""), 1, 1, 1, true);
 			end
 		end
-		if reference.crs then
-			if app.Settings:GetTooltipSetting("creatureID") then
-				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and app.NPCNameFromID[cr] or "") .. " (" .. cr .. ")");
-				end
-			else
-				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and app.NPCNameFromID[cr] or cr));
-				end
-			end
-		end
-		GameTooltip:SetATTReference(reference);
-		local progressText = GetProgressTextForTooltip(reference);
-		if progressText and progressText ~= "" and progressText ~= "---" then
-			GameTooltipTextRight1:SetText(progressText);
-			GameTooltipTextRight1:Show();
-		end
-		
-		if reference.cost then
-			if type(reference.cost) == "table" then
-				local _, name, icon, amount;
-				for k,v in pairs(reference.cost) do
-					_ = v[1];
-					if _ == "g" then
-						GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", GetCoinTextureString(v[2]));
-					else
-						if _ == "i" then
-							local item = app.CreateItem(v[2]);
-							name = item.name;
-							icon = item.icon;
-						elseif _ == "c" then
-							local currency = app.CreateCurrencyClass(v[2]);
-							name = currency.text;
-							icon = currency.icon;
-						end
-						name = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA);
-						_ = (v[3] or 1);
-						if _ > 1 then
-							name = _ .. "x  " .. name;
-						end
-						GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", name);
-					end
-				end
-			else
-				GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));
-			end
-		end
-		
-		-- Add any ID toggle fields
-		app.AddActiveInformationTypesForRow(GameTooltip, reference)
-		
-		-- Show Breadcrumb information
-		if reference.isBreadcrumb then GameTooltip:AddLine("This is a breadcrumb quest."); end
-		if reference.isDaily then GameTooltip:AddLine("This can be completed daily.");
-		elseif reference.isWeekly then GameTooltip:AddLine("This can be completed weekly.");
-		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
-		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
-		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
-		if reference.pvp and not reference.itemID then GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true); end
-		
-		if reference.OnTooltip then reference:OnTooltip(); end
+	end
 
-		if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
-			if not reference.repeatable and app.Settings:GetTooltipSetting("Show:OtherCharacterQuests") then
-				local incompletes, realmName = {}, GetRealmName();
-				for guid,character in pairs(ATTCharacterData) do
-					if not character.ignored and character.realm == realmName
-						and (not reference.r or (character.factionID and reference.r == character.factionID))
-						and (not reference.races or (character.raceID and contains(reference.races, character.raceID)))
-						and (not reference.c or (character.classID and contains(reference.c, character.classID)))
-						and (character.Quests and not character.Quests[reference.questID]) then
-						incompletes[guid] = character;
-					end
-				end
-				incompletes[app.GUID] = nil;
-				local desc, j = "", 0;
-				for guid,character in pairs(incompletes) do
-					if j > 0 then desc = desc .. ", "; end
-					desc = desc .. (character.text or guid);
-					j = j + 1;
-				end
-				if j > 0 then
-					GameTooltip:AddLine("Incomplete on " .. desc:gsub("-" .. realmName, ""), 1, 1, 1, true);
-				end
-			end
-		end
-
-		-- Show Quest Prereqs
-		local isDebugMode = app.MODE_DEBUG;
-		if reference.sourceQuests and (isDebugMode or not reference.saved) then
-			local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
-			for i,sourceQuestID in ipairs(reference.sourceQuests) do
-				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
-					local sqs = SearchForField("questID", sourceQuestID);
-					if #sqs > 0 then
-						local bestMatch = nil;
-						for j,sq in ipairs(sqs) do
-							if sq.questID == sourceQuestID and not sq.objectiveID then
-								if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
-									if sq.sourceQuests then
-										-- Always prefer the source quest with additional source quest data.
-										bestMatch = sq;
-									elseif not sq.itemID and (not bestMatch or not bestMatch.sourceQuests) then
-										-- Otherwise try to find the version of the quest that isn't an item.
-										bestMatch = sq;
-									end
+	-- Show Quest Prereqs
+	local isDebugMode = app.MODE_DEBUG;
+	if reference.sourceQuests and (isDebugMode or not reference.saved) then
+		local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
+		for i,sourceQuestID in ipairs(reference.sourceQuests) do
+			if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
+				local sqs = SearchForField("questID", sourceQuestID);
+				if #sqs > 0 then
+					local bestMatch = nil;
+					for j,sq in ipairs(sqs) do
+						if sq.questID == sourceQuestID and not sq.objectiveID then
+							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
+								if sq.sourceQuests then
+									-- Always prefer the source quest with additional source quest data.
+									bestMatch = sq;
+								elseif not sq.itemID and (not bestMatch or not bestMatch.sourceQuests) then
+									-- Otherwise try to find the version of the quest that isn't an item.
+									bestMatch = sq;
 								end
 							end
 						end
-						if bestMatch then
-							if bestMatch.isBreadcrumb then
-								tinsert(bc, bestMatch);
-							else
-								tinsert(prereqs, bestMatch);
-							end
-						end
-					else
-						tinsert(prereqs, app.CreateQuest(sourceQuestID));
 					end
-				end
-			end
-
-			if prereqs and #prereqs > 0 then
-				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
-				for i,prereq in ipairs(prereqs) do
-					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					local mapID = app.GetBestMapForGroup(prereq, currentMapID);
-					if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
-					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
-				end
-			end
-			if bc and #bc > 0 then
-				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
-				for i,prereq in ipairs(bc) do
-					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					local mapID = app.GetBestMapForGroup(prereq, currentMapID);
-					if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
-					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
+					if bestMatch then
+						if bestMatch.isBreadcrumb then
+							tinsert(bc, bestMatch);
+						else
+							tinsert(prereqs, bestMatch);
+						end
+					end
+				else
+					tinsert(prereqs, app.CreateQuest(sourceQuestID));
 				end
 			end
 		end
 
-		if reference.g then
-			-- If we're at the Auction House
-			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
-			else
-				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
+		if prereqs and #prereqs > 0 then
+			GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
+			for i,prereq in ipairs(prereqs) do
+				local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+				local mapID = app.GetBestMapForGroup(prereq, currentMapID);
+				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
+				GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 			end
 		end
-		GameTooltip:Show();
+		if bc and #bc > 0 then
+			GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
+			for i,prereq in ipairs(bc) do
+				local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+				local mapID = app.GetBestMapForGroup(prereq, currentMapID);
+				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
+				GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
+			end
+		end
 	end
+
+	if reference.g then
+		-- If we're at the Auction House
+		if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+			GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
+		else
+			GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
+		end
+	end
+	GameTooltip:Show();
 end
 local function RowOnLeave(self)
 	GameTooltip:ClearLines();

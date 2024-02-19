@@ -85,7 +85,7 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 	Process = function()
 		return ProcessInformationType;
 	end,
-	ShouldDisplayForInfo = app.ReturnTrue,
+	ShouldDisplayForTooltip = app.ReturnTrue,
 	ShouldDisplayForRow = app.ReturnTrue,
 },
 "AsRecursive", {
@@ -98,12 +98,12 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 -- All of the Default Information Types.
 local InformationTypes = {
 	-- Only displayed in NPC Tooltips that are alive and exist in the world.
-	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
-	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
-	CreateInformationType("Layer", { text = L.LAYER, priority = 1, ShouldDisplayForRow = false, ShouldDisplayForInfo = false }),
+	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
+	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
+	CreateInformationType("Layer", { text = L.LAYER, priority = 1, ShouldDisplayForRow = false, ShouldDisplayForTooltip = false }),
 	
 	-- Contextual fields
-	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayForInfo = false,
+	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayForTooltip = false,
 		Process = function(t, reference, info)
 			if not reference.itemID then
 				local parent = reference.parent or reference.sourceParent;
@@ -121,7 +121,7 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
-	CreateInformationType("lvl", { text = LEVEL, priority = 2, ShouldDisplayForInfo = false,
+	CreateInformationType("lvl", { text = LEVEL, priority = 2, ShouldDisplayForTooltip = false,
 		Process = function(t, reference, info)
 			local lvl = reference.lvl;-- or GetRelativeValue(reference, "lvl");	-- TODO: Investigate if we want this.
 			if lvl then
@@ -151,7 +151,7 @@ local InformationTypes = {
 	
 	-- Quest Fields
 	-- Providers
-	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayForInfo = false,
+	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayForTooltip = false,
 		Process = function(t, reference, info)
 			local coords = reference.coords;
 			if not coords then
@@ -194,7 +194,7 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayForInfo = false,
+	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayForTooltip = false,
 		Process = function(t, reference, info)
 			local coord = reference.playerCoord;
 			if coord then
@@ -291,13 +291,13 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4 }),
+	CreateInformationType("itemString", { text = L.ITEM_STRING, priority = 4, ShouldDisplayForRow = false, }),
 	CreateInformationType("itemID", { text = L.ITEM_ID, priority = 5 }),
 	CreateInformationType("sourceID", { text = L.SOURCE_ID, priority = 5 }),
 	CreateInformationType("bonusID", { text = L.BONUS_ID, priority = 6 }),
 	CreateInformationType("modID", { text = L.MOD_ID, priority = 6 }),
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
-	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForInfo = false, priority = 7 }),
+	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayForTooltip = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 	
 	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID, priority = 8,
@@ -350,7 +350,7 @@ local InformationTypes = {
 	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
 	
-	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayForInfo = false,
+	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayForTooltip = false,
 		Process = function(t, reference, info)
 			local c = reference.c;-- or GetRelativeValue(reference, "c");	-- TODO: Investigate if we want this.
 			if c then
@@ -374,7 +374,7 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("r", { text = RACES, priority = 8000, ShouldDisplayForInfo = false,
+	CreateInformationType("r", { text = RACES, priority = 8000, ShouldDisplayForTooltip = false,
 		Process = function(t, reference, info)
 			local r = reference.r;-- or GetRelativeValue(reference, "r");	-- TODO: Investigate if we want this.
 			if r and r > 0 then
@@ -425,9 +425,9 @@ local InformationTypes = {
 	}),
 	
 	-- We want these last, usually.
-	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayForInfo = false, }),
+	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayForTooltip = false, }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
-	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayForInfo = false, }),
+	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayForTooltip = false, }),
 };
 settings.InformationTypes = InformationTypes;
 settings.CreateInformationType = function(key, t)
@@ -470,7 +470,7 @@ local function RefreshActiveInformationTypes()
 	
 	for _,informationType in ipairs(SortedInformationTypes) do
 		if settings:GetTooltipSetting(informationType.informationTypeID) then
-			if informationType.ShouldDisplayForInfo then
+			if informationType.ShouldDisplayForTooltip then
 				ActiveInformationTypesForInfo[#ActiveInformationTypesForInfo + 1] = informationType;
 			end
 			if informationType.ShouldDisplayForRow then

@@ -9342,691 +9342,681 @@ local function RowOnClick(self, button)
 	end
 end
 RowOnEnter = function (self)
-	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
-	if reference and GameTooltip then
-		local GameTooltip = GameTooltip;
-		local tooltipAnchor;
-		local initialBuild = not GameTooltip.IsRefreshing;
-		GameTooltip.IsRefreshing = true;
+	local reference = self.ref;
+	if not reference then return; end
+	local GameTooltip = GameTooltip;
+	if not GameTooltip then return end;
+	
+	local tooltipAnchor;
+	local initialBuild = not GameTooltip.IsRefreshing;
+	GameTooltip.IsRefreshing = true;
 
-		if initialBuild then
-			-- app.PrintDebug("RowOnEnter-Initial");
-			GameTooltip:ClearATTReferenceTexture();
-			if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
-				tooltipAnchor = "ANCHOR_LEFT";
-			else
-				tooltipAnchor = "ANCHOR_RIGHT";
-			end
-			-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
-			GameTooltip:SetOwner(self, tooltipAnchor);
+	if initialBuild then
+		-- app.PrintDebug("RowOnEnter-Initial");
+		GameTooltip:ClearATTReferenceTexture();
+		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
+			tooltipAnchor = "ANCHOR_LEFT";
 		else
-			-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.ATTAttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
-			-- complete tooltip already exists and hasn't been cleared elsewhere, don't touch it
-			if GameTooltip.ATTAttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then
-				-- app.PrintDebug("RowOnEnter, complete");
-				return;
+			tooltipAnchor = "ANCHOR_RIGHT";
+		end
+		-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
+		GameTooltip:SetOwner(self, tooltipAnchor);
+	else
+		-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.ATTAttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
+		-- complete tooltip already exists and hasn't been cleared elsewhere, don't touch it
+		if GameTooltip.ATTAttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then
+			-- app.PrintDebug("RowOnEnter, complete");
+			return;
+		end
+		-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
+		GameTooltip:ClearLines();
+	end
+
+	-- all tooltips from ATT windows should always show expected data
+	local toggleAttachTooltips = not app.Settings:GetTooltipSetting("Enabled")
+	if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", true) end
+	local link = reference.link or reference.silentLink;
+	local _, linkAdded;
+	if link and (reference.key ~= "questID" or reference.itemID or not app.Settings:GetTooltipSetting("QuestReplacement")) then
+		-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
+		-- Safely attempt setting the tooltip link from the data
+		_, linkAdded = pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+	end
+
+	local doSearch = linkAdded == false;
+	-- Nothing generated into tooltip based on the link, or no link exists
+	if GameTooltip:NumLines() < 1 then
+		-- Mark the tooltip as being complete, and insert the same text from the row itself
+		if doSearch then
+			GameTooltip:Hide();
+			GameTooltip:SetOwner(self, tooltipAnchor);
+		end
+		GameTooltip:AddLine(reference.text);
+		doSearch = true;
+	end
+
+	-- Determine search results to add if nothing was added from being searched
+	-- ATTAttachComplete will be true or false if ATT has processed the tooltip/search results already
+	-- nil means no search results were attached, so we can manually add it below
+	local refQuestID = reference.questID;
+	if doSearch or GameTooltip.ATTAttachComplete == nil then
+		if reference.creatureID or reference.encounterID then
+			-- rows with these fields should not include the extra search info
+		elseif reference.currencyID then
+			GameTooltip:SetCurrencyByID(reference.currencyID, 1);
+		elseif reference.azeriteEssenceID then
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
+		elseif reference.speciesID then
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "speciesID", reference.speciesID);
+		elseif reference.objectID then
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "objectID", reference.objectID);
+		elseif reference.titleID then
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
+		elseif refQuestID and not reference.objectiveID then
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "questID", refQuestID);
+		elseif reference.flightPathID then
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "flightPathID", reference.flightPathID);
+		elseif reference.achievementID and not reference.criteriaID then
+			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID);
+		else
+			-- app.PrintDebug("No Search Data",reference.hash)
+		end
+	end
+
+	if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", false) end
+
+	-- Miscellaneous fields
+	local missingMiscData;
+	-- app.PrintDebug("Adding misc fields");
+	if app.Settings:GetTooltipSetting("Progress") then
+		if reference.total and reference.total >= 2 then
+			-- if collecting this reference type, then show Collection State
+			if reference.collectible then
+				GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));
+			-- if completion/tracking is available, show Completion State
+			elseif reference.trackable then
+				GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));
 			end
-			-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
-			GameTooltip:ClearLines();
 		end
+	end
 
-		local toggleAttachTooltips = not app.Settings:GetTooltipSetting("Enabled")
-		-- all tooltips from ATT windows should always show expected data
-		if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", true) end
-		local link = reference.link or reference.silentLink;
-		local _, linkAdded;
-		if link and (reference.key ~= "questID" or reference.itemID or not app.Settings:GetTooltipSetting("QuestReplacement")) then
-			-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
-			-- Safely attempt setting the tooltip link from the data
-			_, linkAdded = pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+	-- achievement progress. If it has a measurable statistic, show it under the achievement description
+	if reference.achievementID then
+		if reference.statistic then
+			GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)
 		end
+	end
 
-		local doSearch = linkAdded == false;
-		-- Nothing generated into tooltip based on the link, or no link exists
-		if GameTooltip:NumLines() < 1 then
-			-- Mark the tooltip as being complete, and insert the same text from the row itself
-			if doSearch then
-				GameTooltip:Hide();
-				GameTooltip:SetOwner(self, tooltipAnchor);
+	local title = reference.title;
+	if title then
+		local left, right = DESCRIPTION_SEPARATOR:split(title);
+		if right then
+			GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
+		else
+			GameTooltip:AddLine(title, 1, 1, 1);
+		end
+	-- elseif refQuestID and reference.retries and not reference.itemID then
+	-- 	GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
+	end
+	if reference.requireSkill and app.Settings:GetTooltipSetting("ProfessionRequirements") then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
+	if reference.crs then
+		-- extreme amounts of creatures tagged, then only list a summary of how many...
+		if #reference.crs > 25 then
+			GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
+		elseif app.Settings:GetTooltipSetting("creatureID") then
+			for i,cr in ipairs(reference.crs) do
+				GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]) .. " (" .. cr .. ")");
 			end
-			GameTooltip:AddLine(reference.text);
-			doSearch = true;
-		end
-
-		-- Determine search results to add if nothing was added from being searched
-		-- ATTAttachComplete will be true or false if ATT has processed the tooltip/search results already
-		-- nil means no search results were attached, so we can manually add it below
-		local refQuestID = reference.questID;
-		if doSearch or GameTooltip.ATTAttachComplete == nil then
-			if reference.creatureID or reference.encounterID then
-				-- rows with these fields should not include the extra search info
-			elseif reference.currencyID then
-				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
-			elseif reference.azeriteEssenceID then
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
-			elseif reference.speciesID then
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "speciesID", reference.speciesID);
-			elseif reference.objectID then
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "objectID", reference.objectID);
-			elseif reference.titleID then
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
-			elseif refQuestID and not reference.objectiveID then
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "questID", refQuestID);
-			elseif reference.flightPathID then
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "flightPathID", reference.flightPathID);
-			elseif reference.achievementID and not reference.criteriaID then
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID);
-			else
-				-- app.PrintDebug("No Search Data",reference.hash)
+		else
+			for i,cr in ipairs(reference.crs) do
+				GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]));
 			end
 		end
-
-		if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", false) end
-
-		-- Miscellaneous fields
-		local missingMiscData;
-		-- app.PrintDebug("Adding misc fields");
-		if app.Settings:GetTooltipSetting("Progress") then
-			if reference.total and reference.total >= 2 then
-				-- if collecting this reference type, then show Collection State
-				if reference.collectible then
-					GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));
-				-- if completion/tracking is available, show Completion State
-				elseif reference.trackable then
-					GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));
+	end
+	local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
+	if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
+		local standingId, offset = app.GetReputationStanding(reference.minReputation)
+		local factionID = reference.minReputation[1];
+		local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
+		local msg = L["MINUMUM_STANDING"]
+		if offset ~= 0 then msg = msg .. " " .. offset end
+		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
+		GameTooltip:AddLine(msg);
+	end
+	if maxReputation and (not minReputation or minReputation[1] ~= maxReputation[1]) then
+		local standingId, offset = app.GetReputationStanding(reference.maxReputation)
+		local factionID = reference.maxReputation[1];
+		local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
+		local msg = L["MAXIMUM_STANDING"]
+		if offset ~= 0 then msg = msg .. " " .. offset end
+		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
+		GameTooltip:AddLine(msg);
+	end
+	if minReputation and maxReputation and minReputation[1] == maxReputation[1] then
+		local minStandingId, minOffset = app.GetReputationStanding(reference.minReputation)
+		local maxStandingId, maxOffset = app.GetReputationStanding(reference.maxReputation)
+		local factionID = reference.minReputation[1];
+		local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
+		local msg = L["MIN_MAX_STANDING"]
+		if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
+		if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
+		GameTooltip:AddLine(msg);
+	end
+	if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
+		app.AddQuestObjectivesToTooltip(GameTooltip, reference);
+	end
+	if reference.providers then
+		local first = 1;
+		local providerType, providerID
+		local CREATURE, OBJECT, ITEM = CREATURE, "Object", L.ITEM
+		local lineStrings = {}
+		for i,provider in ipairs(reference.providers) do
+			providerType = provider[1];
+			providerID = provider[2] or 0;
+			wipe(lineStrings)
+			if providerType == "o" then
+				lineStrings[1] = OBJECT;
+				lineStrings[2] = ": "
+				lineStrings[3] = app.ObjectNames[providerID] or RETRIEVING_DATA
+				if app.Settings:GetTooltipSetting("objectID") then
+					lineStrings[4] = " ("
+					lineStrings[5] = providerID
+					lineStrings[6] = ")"
 				end
-			end
-		end
-
-		-- achievement progress. If it has a measurable statistic, show it under the achievement description
-		if reference.achievementID then
-			if reference.statistic then
-				GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)
-			end
-		end
-
-		local title = reference.title;
-		if title then
-			local left, right = DESCRIPTION_SEPARATOR:split(title);
-			if right then
-				GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
-			else
-				GameTooltip:AddLine(title, 1, 1, 1);
-			end
-		-- elseif refQuestID and reference.retries and not reference.itemID then
-		-- 	GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
-		end
-		if reference.requireSkill and app.Settings:GetTooltipSetting("ProfessionRequirements") then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
-		if reference.crs then
-			-- extreme amounts of creatures tagged, then only list a summary of how many...
-			if #reference.crs > 25 then
-				GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
-			elseif app.Settings:GetTooltipSetting("creatureID") then
-				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]) .. " (" .. cr .. ")");
+			elseif providerType == "n" then
+				lineStrings[1] = CREATURE
+				lineStrings[2] = ": "
+				lineStrings[3] = providerID > 0 and app.NPCNameFromID[providerID] or RETRIEVING_DATA;
+				if app.Settings:GetTooltipSetting("creatureID") then
+					lineStrings[4] = " ("
+					lineStrings[5] = providerID
+					lineStrings[6] = ")"
 				end
-			else
-				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]));
-				end
-			end
-		end
-		local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
-		if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
-			local standingId, offset = app.GetReputationStanding(reference.minReputation)
-			local factionID = reference.minReputation[1];
-			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
-			local msg = L["MINUMUM_STANDING"]
-			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-			GameTooltip:AddLine(msg);
-		end
-		if maxReputation and (not minReputation or minReputation[1] ~= maxReputation[1]) then
-			local standingId, offset = app.GetReputationStanding(reference.maxReputation)
-			local factionID = reference.maxReputation[1];
-			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
-			local msg = L["MAXIMUM_STANDING"]
-			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-			GameTooltip:AddLine(msg);
-		end
-		if minReputation and maxReputation and minReputation[1] == maxReputation[1] then
-			local minStandingId, minOffset = app.GetReputationStanding(reference.minReputation)
-			local maxStandingId, maxOffset = app.GetReputationStanding(reference.maxReputation)
-			local factionID = reference.minReputation[1];
-			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
-			local msg = L["MIN_MAX_STANDING"]
-			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
-			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
-			GameTooltip:AddLine(msg);
-		end
-		if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
-			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
-		end
-		if reference.providers then
-			local first = 1;
-			local providerType, providerID
-			local CREATURE, OBJECT, ITEM = CREATURE, "Object", L.ITEM
-			local lineStrings = {}
-			for i,provider in ipairs(reference.providers) do
-				providerType = provider[1];
-				providerID = provider[2] or 0;
-				wipe(lineStrings)
-				if providerType == "o" then
-					lineStrings[1] = OBJECT;
+			elseif providerType == "i" then
+				local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
+				if name then
+					lineStrings[1] = ITEM
 					lineStrings[2] = ": "
-					lineStrings[3] = app.ObjectNames[providerID] or RETRIEVING_DATA
-					if app.Settings:GetTooltipSetting("objectID") then
-						lineStrings[4] = " ("
-						lineStrings[5] = providerID
-						lineStrings[6] = ")"
+					if icon then
+						lineStrings[3] = "|T"
+						lineStrings[4] = icon
+						lineStrings[5] = ":0|t"
 					end
-				elseif providerType == "n" then
-					lineStrings[1] = CREATURE
-					lineStrings[2] = ": "
-					lineStrings[3] = providerID > 0 and app.NPCNameFromID[providerID] or RETRIEVING_DATA;
-					if app.Settings:GetTooltipSetting("creatureID") then
-						lineStrings[4] = " ("
-						lineStrings[5] = providerID
-						lineStrings[6] = ")"
-					end
-				elseif providerType == "i" then
-					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
-					if name then
-						lineStrings[1] = ITEM
-						lineStrings[2] = ": "
-						if icon then
-							lineStrings[3] = "|T"
-							lineStrings[4] = icon
-							lineStrings[5] = ":0|t"
-						end
-						local count = #lineStrings
-						lineStrings[count + 1] = name;
-						if app.Settings:GetTooltipSetting("itemID") then
-							lineStrings[count + 2] = " ("
-							lineStrings[count + 3] = providerID
-							lineStrings[count + 4] = ")"
-						end
+					local count = #lineStrings
+					lineStrings[count + 1] = name;
+					if app.Settings:GetTooltipSetting("itemID") then
+						lineStrings[count + 2] = " ("
+						lineStrings[count + 3] = providerID
+						lineStrings[count + 4] = ")"
 					end
 				end
-				if #lineStrings > 0 then
-					GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", app.TableConcat(lineStrings));
-				else
-					GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", RETRIEVING_DATA);
-					missingMiscData = true;
-				end
-				if first > 25 then
-					GameTooltip:AddDoubleLine(" ", (L.AND_MORE):format(#reference.providers - first));
-					break
-				end
-				first = first + 1;
 			end
-		end
-		if reference.speciesID then
-			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
-			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
-		end
-		if reference.titleID then
-			GameTooltip:AddDoubleLine(" ", L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
-		end
-		if refQuestID then
-			local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
-			if oneTimeQuestCharGuid then
-				local charData = ATTCharacterData[oneTimeQuestCharGuid];
-				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(charData and charData.text or UNKNOWN));
-			elseif oneTimeQuestCharGuid == false then
-				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
-			end
-		end
-		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
-			if app.Settings:GetTooltipSetting("creatureID") then
-				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]) .. " (" .. qg .. ")");
-				end
+			if #lineStrings > 0 then
+				GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", app.TableConcat(lineStrings));
 			else
-				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]));
-				end
+				GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", RETRIEVING_DATA);
+				missingMiscData = true;
+			end
+			if first > 25 then
+				GameTooltip:AddDoubleLine(" ", (L.AND_MORE):format(#reference.providers - first));
+				break
+			end
+			first = first + 1;
+		end
+	end
+	if reference.speciesID then
+		local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
+		if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
+	end
+	if reference.titleID then
+		GameTooltip:AddDoubleLine(" ", L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
+	end
+	if refQuestID then
+		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
+		if oneTimeQuestCharGuid then
+			local charData = ATTCharacterData[oneTimeQuestCharGuid];
+			GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(charData and charData.text or UNKNOWN));
+		elseif oneTimeQuestCharGuid == false then
+			GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
+		end
+	end
+	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
+		if app.Settings:GetTooltipSetting("creatureID") then
+			for i,qg in ipairs(reference.qgs) do
+				GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]) .. " (" .. qg .. ")");
+			end
+		else
+			for i,qg in ipairs(reference.qgs) do
+				GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]));
 			end
 		end
-		
-		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
-		if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
-		elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);
-		elseif reference.isMonthly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
-		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
-		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
-		if initialBuild then GameTooltip:SetATTReference(reference, self); end
-		if reference.cost then
-			if type(reference.cost) == "table" then
-				local _, name, icon, amount;
-				for k,v in pairs(reference.cost) do
-					_ = v[1];
-					if _ == "i" then
-						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
-						amount = v[3];
-						if amount > 1 then
-							amount = formatNumericWithCommas(amount) .. "x ";
-						else
-							amount = "";
-						end
-					elseif _ == "c" then
-						amount = v[3];
-						local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2]);
-						name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or (currencyData and currencyData.name) or "Unknown";
-						icon = currencyData and currencyData.iconFileID or nil;
-						if amount > 1 then
-							amount = formatNumericWithCommas(amount) .. "x ";
-						else
-							amount = "";
-						end
-					elseif _ == "g" then
-						name = "";
-						icon = nil;
-						amount = GetMoneyString(v[2]);
-					end
-					missingMiscData = missingMiscData or not name;
-					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA));
-				end
-			else
-				local amount = GetMoneyString(reference.cost);
-				GameTooltip:AddDoubleLine(L["COST"], amount);
-			end
-		end
-		if reference.achievementID and reference.criteriaID then
-			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
-		end
-		if app.Settings:GetTooltipSetting("Progress") then
-			local right = GetProgressTextForTooltip(reference);
-			if right and right ~= "" and right ~= "---" then
-				GameTooltipTextRight1:SetText(right);
-				GameTooltipTextRight1:Show();
-			end
-		end
-
-		-- Various Settings IDs/Raw Values
-		-- TODO: maybe eventually a nice clean way of doing this instead of having to manually add every ID to tooltip
-		-- local settings = app.Settings;
-		-- local val;
-		-- for key,name in pairs(app.Settings.DataKeys) do
-		-- 	val = reference[key];
-		-- 	if val and type(val) ~= "table" and settings:GetTooltipSetting(key) then
-		-- 		GameTooltip:AddDoubleLine(name, val);
-		-- 	end
-		-- end
-
-		-- Additional information (search will insert this information if found in search)
-		if GameTooltip.ATTAttachComplete == nil then
-			-- an item used for a faction which is repeatable
-			if reference.itemID and reference.factionID and reference.repeatable then
-				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
-			end
-			-- Unobtainable
-			if reference.u then
-				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-			end
-			-- Event Data
-			if reference.e then
-				local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
-				if reason then
-					local left, right = DESCRIPTION_SEPARATOR:split(reason);
-					if right then
-						GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
+	end
+	
+	if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
+	if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
+	elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);
+	elseif reference.isMonthly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
+	elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
+	elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
+	if initialBuild then GameTooltip:SetATTReference(reference, self); end
+	if reference.cost then
+		if type(reference.cost) == "table" then
+			local _, name, icon, amount;
+			for k,v in pairs(reference.cost) do
+				_ = v[1];
+				if _ == "i" then
+					_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
+					amount = v[3];
+					if amount > 1 then
+						amount = formatNumericWithCommas(amount) .. "x ";
 					else
-						GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
+						amount = "";
 					end
+				elseif _ == "c" then
+					amount = v[3];
+					local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2]);
+					name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or (currencyData and currencyData.name) or "Unknown";
+					icon = currencyData and currencyData.iconFileID or nil;
+					if amount > 1 then
+						amount = formatNumericWithCommas(amount) .. "x ";
+					else
+						amount = "";
+					end
+				elseif _ == "g" then
+					name = "";
+					icon = nil;
+					amount = GetMoneyString(v[2]);
+				end
+				missingMiscData = missingMiscData or not name;
+				GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA));
+			end
+		else
+			local amount = GetMoneyString(reference.cost);
+			GameTooltip:AddDoubleLine(L["COST"], amount);
+		end
+	end
+	if reference.achievementID and reference.criteriaID then
+		GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
+	end
+	if app.Settings:GetTooltipSetting("Progress") then
+		local right = GetProgressTextForTooltip(reference);
+		if right and right ~= "" and right ~= "---" then
+			GameTooltipTextRight1:SetText(right);
+			GameTooltipTextRight1:Show();
+		end
+	end
+
+	-- Additional information (search will insert this information if found in search)
+	if GameTooltip.ATTAttachComplete == nil then
+		-- an item used for a faction which is repeatable
+		if reference.itemID and reference.factionID and reference.repeatable then
+			GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
+		end
+		-- Unobtainable
+		if reference.u then
+			GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
+		end
+		-- Event Data
+		if reference.e then
+			local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
+			if reason then
+				local left, right = DESCRIPTION_SEPARATOR:split(reason);
+				if right then
+					GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
+				else
+					GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
 				end
 			end
-			-- Pet Battles
-			if reference.pb then
-				GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
-			end
-			-- PvP
-			if reference.pvp then
-				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
-			end
-
-			-- Add any ID toggle fields
-			app.AddActiveInformationTypesForRow(GameTooltip, reference)
-
-			-- Tooltip for something which was not attached via search, so mark it as complete here
-			GameTooltip.ATTAttachComplete = true;
+		end
+		-- Pet Battles
+		if reference.pb then
+			GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
+		end
+		-- PvP
+		if reference.pvp then
+			GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
 		end
 
-		-- Has a symlink for additonal information
-		if reference.sym then
-			GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
-		end
+		-- Add any ID toggle fields
+		app.AddActiveInformationTypesForRow(GameTooltip, reference)
 
-		-- Ignored for Source/Progress
-		if reference.sourceIgnored then
-			GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
-		end
-		-- Further conditional texts that can be displayed
-		if reference.timeRemaining then
-			GameTooltip:AddLine(app.GetColoredTimeRemaining(reference.timeRemaining));
-		end
+		-- Tooltip for something which was not attached via search, so mark it as complete here
+		GameTooltip.ATTAttachComplete = true;
+	end
 
-		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
-		if reference.itemID and not reference.speciesID and not reference.spellID and app.Settings:GetTooltipSetting("DropChances") then
-			local numSpecializations = GetNumSpecializations();
-			if numSpecializations and numSpecializations > 0 then
-				local encounterID = GetRelativeValue(reference.parent, "encounterID");
-				if encounterID then
-					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
-					local encounterCache = SearchForField("encounterID", encounterID);
-					if #encounterCache > 0 then
-						local itemList = {};
-						for i,encounter in ipairs(encounterCache) do
-							if encounter.g and GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
-								app.SearchForRelativeItems(encounter, itemList);
+	-- Has a symlink for additonal information
+	if reference.sym then
+		GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
+	end
+
+	-- Ignored for Source/Progress
+	if reference.sourceIgnored then
+		GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
+	end
+	-- Further conditional texts that can be displayed
+	if reference.timeRemaining then
+		GameTooltip:AddLine(app.GetColoredTimeRemaining(reference.timeRemaining));
+	end
+
+	-- Calculate Best Drop Percentage. (Legacy Loot Mode)
+	if reference.itemID and not reference.speciesID and not reference.spellID and app.Settings:GetTooltipSetting("DropChances") then
+		local numSpecializations = GetNumSpecializations();
+		if numSpecializations and numSpecializations > 0 then
+			local encounterID = GetRelativeValue(reference.parent, "encounterID");
+			if encounterID then
+				local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
+				local encounterCache = SearchForField("encounterID", encounterID);
+				if #encounterCache > 0 then
+					local itemList = {};
+					for i,encounter in ipairs(encounterCache) do
+						if encounter.g and GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
+							app.SearchForRelativeItems(encounter, itemList);
+						end
+					end
+					local specHits = {};
+					for _,item in ipairs(itemList) do
+						local specs = item.specs;
+						if specs then
+							for j,spec in ipairs(specs) do
+								specHits[spec] = (specHits[spec] or 0) + 1;
 							end
 						end
-						local specHits = {};
-						for _,item in ipairs(itemList) do
-							local specs = item.specs;
-							if specs then
-								for j,spec in ipairs(specs) do
-									specHits[spec] = (specHits[spec] or 0) + 1;
+					end
+
+					local totalItems = #itemList; -- if somehow encounter drops 0 items but an item still references the encounter
+					local chance, color;
+					local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
+
+					-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
+					if totalItems > 0 then
+						chance = 100 / totalItems;
+						color = GetProgressColor(chance / 100);
+						GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
+					else
+						GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
+					end
+
+					local specs = reference.specs;
+					if specs and #specs > 0 then
+						-- Available for one or more loot specialization.
+						local least, bestSpecs = 999, {};
+						for _,spec in ipairs(specs) do
+							local specHit = specHits[spec] or 0;
+							-- For Personal Loot!
+							if specHit > 0 and specHit <= least then
+								least = specHit;
+								bestSpecs[spec] = specHit;
+							end
+						end
+						-- something has a best spec
+						if least < 999 then
+							-- define the best specs based on min
+							local rollSpec = {};
+							for specID,count in pairs(bestSpecs) do
+								if count == least then
+									tinsert(rollSpec, specID);
 								end
 							end
-						end
-
-						local totalItems = #itemList; -- if somehow encounter drops 0 items but an item still references the encounter
-						local chance, color;
-						local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
-
-						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
-						if totalItems > 0 then
-							chance = 100 / totalItems;
+							chance = 100 / least;
 							color = GetProgressColor(chance / 100);
-							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
-						else
-							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
+							-- print out the specs with min items
+							local specString = GetSpecsString(rollSpec, true, true) or "???";
+							GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r");
 						end
-
-						local specs = reference.specs;
-						if specs and #specs > 0 then
-							-- Available for one or more loot specialization.
-							local least, bestSpecs = 999, {};
-							for _,spec in ipairs(specs) do
-								local specHit = specHits[spec] or 0;
-								-- For Personal Loot!
-								if specHit > 0 and specHit <= least then
-									least = specHit;
-									bestSpecs[spec] = specHit;
-								end
+					elseif legacyLoot then
+						-- Not available at all, best loot spec is the one with the most number of items in it.
+						local most = 0;
+						local bestSpecID
+						for i=1,numSpecializations,1 do
+							local id = GetSpecializationInfo(i);
+							local specHit = specHits[id] or 0;
+							if specHit > most then
+								most = specHit;
+								bestSpecID = i;
 							end
-							-- something has a best spec
-							if least < 999 then
-								-- define the best specs based on min
-								local rollSpec = {};
-								for specID,count in pairs(bestSpecs) do
-									if count == least then
-										tinsert(rollSpec, specID);
-									end
-								end
-								chance = 100 / least;
+						end
+						if bestSpecID then
+							local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+							if totalItems > 0 then
+								chance = 100 / (totalItems - specHits[id]);
 								color = GetProgressColor(chance / 100);
-								-- print out the specs with min items
-								local specString = GetSpecsString(rollSpec, true, true) or "???";
-								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r");
-							end
-						elseif legacyLoot then
-							-- Not available at all, best loot spec is the one with the most number of items in it.
-							local most = 0;
-							local bestSpecID
-							for i=1,numSpecializations,1 do
-								local id = GetSpecializationInfo(i);
-								local specHit = specHits[id] or 0;
-								if specHit > most then
-									most = specHit;
-									bestSpecID = i;
-								end
-							end
-							if bestSpecID then
-								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
-								if totalItems > 0 then
-									chance = 100 / (totalItems - specHits[id]);
-									color = GetProgressColor(chance / 100);
-									GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
-								else
-									GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "N/A");
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-
-		-- Show info about if this Thing cannot be collected due to a custom collectibility
-		-- restriction on the Thing which this character does not meet
-		if reference.customCollect then
-			local customCollectEx;
-			local requires = L["REQUIRES"];
-			for i,c in ipairs(reference.customCollect) do
-				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
-				local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or "[MISSING_LOCALE_KEY]");
-				if not app.CurrentCharacter.CustomCollects[c] then
-					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. icon_color_str, customCollectEx["desc"] or "");
-				else
-					GameTooltip:AddDoubleLine(requires .. ": " .. icon_color_str, customCollectEx["desc"] or "");
-				end
-			end
-		end
-
-		-- Show Quest Prereqs
-		local isDebugMode, sqs, bestMatch = app.MODE_DEBUG;
-		if reference.sourceQuests and (not reference.saved or isDebugMode) then
-			local prereqs, bc = {}, {};
-			for i,sourceQuestID in ipairs(reference.sourceQuests) do
-				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
-					sqs = SearchForField("questID", sourceQuestID);
-					if #sqs > 0 then
-						bestMatch = nil;
-						for j,sq in ipairs(sqs) do
-							if sq.questID == sourceQuestID then
-								if isDebugMode or (not IsQuestFlaggedCompleted(sourceQuestID) and app.GroupFilter(sq)) then
-									if sq.sourceQuests then
-										-- Always prefer the source quest with additional source quest data.
-										bestMatch = sq;
-									elseif not sq.itemID and (not bestMatch or not bestMatch.sourceQuests) then
-										-- Otherwise try to find the version of the quest that isn't an item.
-										bestMatch = sq;
-									end
-								end
-							end
-						end
-						if bestMatch then
-							if bestMatch.isBreadcrumb then
-								tinsert(bc, bestMatch);
+								GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 							else
-								tinsert(prereqs, bestMatch);
+								GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "N/A");
 							end
 						end
-					else
-						tinsert(prereqs, app.CreateQuest(sourceQuestID));
 					end
 				end
 			end
-			if prereqs and #prereqs > 0 then
-				GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
-				AddQuestInfoToTooltip(GameTooltip, prereqs);
-			end
-			if bc and #bc > 0 then
-				GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
-				AddQuestInfoToTooltip(GameTooltip, bc);
+		end
+	end
+
+	-- Show info about if this Thing cannot be collected due to a custom collectibility
+	-- restriction on the Thing which this character does not meet
+	if reference.customCollect then
+		local customCollectEx;
+		local requires = L["REQUIRES"];
+		for i,c in ipairs(reference.customCollect) do
+			customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
+			local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or "[MISSING_LOCALE_KEY]");
+			if not app.CurrentCharacter.CustomCollects[c] then
+				GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. icon_color_str, customCollectEx["desc"] or "");
+			else
+				GameTooltip:AddDoubleLine(requires .. ": " .. icon_color_str, customCollectEx["desc"] or "");
 			end
 		end
+	end
 
-		-- Show Breadcrumb information
-		local lockedWarning;
-		if reference.isBreadcrumb then
-			GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.Breadcrumb, L["THIS_IS_BREADCRUMB"]));
-			if reference.nextQuests then
-				local isBreadcrumbAvailable = true;
-				local nextq, nq = {};
-				for _,nextQuestID in ipairs(reference.nextQuests) do
-					if nextQuestID > 0 then
-						nq = app.SearchForObject("questID", nextQuestID, "field");
-						-- existing quest group
-						if nq then
-							tinsert(nextq, nq);
+	-- Show Quest Prereqs
+	local isDebugMode, sqs, bestMatch = app.MODE_DEBUG;
+	if reference.sourceQuests and (not reference.saved or isDebugMode) then
+		local prereqs, bc = {}, {};
+		for i,sourceQuestID in ipairs(reference.sourceQuests) do
+			if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
+				sqs = SearchForField("questID", sourceQuestID);
+				if #sqs > 0 then
+					bestMatch = nil;
+					for j,sq in ipairs(sqs) do
+						if sq.questID == sourceQuestID then
+							if isDebugMode or (not IsQuestFlaggedCompleted(sourceQuestID) and app.GroupFilter(sq)) then
+								if sq.sourceQuests then
+									-- Always prefer the source quest with additional source quest data.
+									bestMatch = sq;
+								elseif not sq.itemID and (not bestMatch or not bestMatch.sourceQuests) then
+									-- Otherwise try to find the version of the quest that isn't an item.
+									bestMatch = sq;
+								end
+							end
+						end
+					end
+					if bestMatch then
+						if bestMatch.isBreadcrumb then
+							tinsert(bc, bestMatch);
 						else
-							tinsert(nextq, app.CreateQuest(nextQuestID));
-						end
-						if IsQuestFlaggedCompleted(nextQuestID) then
-							isBreadcrumbAvailable = false;
+							tinsert(prereqs, bestMatch);
 						end
 					end
-				end
-				if isBreadcrumbAvailable then
-					-- The character is able to accept the breadcrumb quest without Party Sync
-					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
-					AddQuestInfoToTooltip(GameTooltip, nextq);
-				elseif reference.DisablePartySync == false then
-					-- unknown if party sync will function for this Thing
-					GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
-					AddQuestInfoToTooltip(GameTooltip, nextq);
-				elseif not reference.DisablePartySync then
-					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-					GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
-					AddQuestInfoToTooltip(GameTooltip, nextq);
 				else
-					-- known to not be possible in party sync
-					GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
+					tinsert(prereqs, app.CreateQuest(sourceQuestID));
 				end
-				lockedWarning = true;
 			end
 		end
+		if prereqs and #prereqs > 0 then
+			GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
+			AddQuestInfoToTooltip(GameTooltip, prereqs);
+		end
+		if bc and #bc > 0 then
+			GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
+			AddQuestInfoToTooltip(GameTooltip, bc);
+		end
+	end
 
-		-- Show information about it becoming locked due to some criteira
-		local lockCriteria = reference.lc;
-		if lockCriteria then
-			-- list the reasons this may become locked due to lock criteria
-			local critKey, critValue;
-			local critFuncs = app.QuestLockCriteriaFunctions;
-			local critFunc;
-			GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, lockCriteria[1]));
-			for i=2,#lockCriteria,1 do
-				critKey = lockCriteria[i];
-				i = i + 1;
-				critValue = lockCriteria[i];
-				critFunc = critFuncs[critKey];
-				if critFunc then
-					local label = critFuncs["label_"..critKey];
-					local text = critFuncs["text_"..critKey](critValue);
-					GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+	-- Show Breadcrumb information
+	local lockedWarning;
+	if reference.isBreadcrumb then
+		GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.Breadcrumb, L["THIS_IS_BREADCRUMB"]));
+		if reference.nextQuests then
+			local isBreadcrumbAvailable = true;
+			local nextq, nq = {};
+			for _,nextQuestID in ipairs(reference.nextQuests) do
+				if nextQuestID > 0 then
+					nq = app.SearchForObject("questID", nextQuestID, "field");
+					-- existing quest group
+					if nq then
+						tinsert(nextq, nq);
+					else
+						tinsert(nextq, app.CreateQuest(nextQuestID));
+					end
+					if IsQuestFlaggedCompleted(nextQuestID) then
+						isBreadcrumbAvailable = false;
+					end
 				end
 			end
-		end
-		local altQuests = reference.altQuests;
-		if altQuests then
-			-- list the reasons this may become locked due to altQuests specifically
-			local critValue;
-			local critFuncs = app.QuestLockCriteriaFunctions;
-			local critFunc = critFuncs["questID"];
-			local label = critFuncs["label_questID"];
-			local text;
-			GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, 1));
-			for i=1,#altQuests,1 do
-				critValue = altQuests[i];
-				if critFunc then
-					text = critFuncs["text_questID"](critValue);
-					GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
-				end
-			end
-		end
-
-		-- it is locked and no warning has been added to the tooltip
-		if not lockedWarning and reference.locked then
-			if reference.DisablePartySync == false then
+			if isBreadcrumbAvailable then
+				-- The character is able to accept the breadcrumb quest without Party Sync
+				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
+				AddQuestInfoToTooltip(GameTooltip, nextq);
+			elseif reference.DisablePartySync == false then
 				-- unknown if party sync will function for this Thing
 				GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
+				AddQuestInfoToTooltip(GameTooltip, nextq);
 			elseif not reference.DisablePartySync then
-				-- should be possible in party sync
-				GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
+				-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
+				GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
+				AddQuestInfoToTooltip(GameTooltip, nextq);
 			else
 				-- known to not be possible in party sync
 				GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
 			end
+			lockedWarning = true;
 		end
-
-		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
-
-		if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
-			if reference.g then
-				-- If we're at the Auction House
-				if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-					GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
-				else
-					GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
-				end
-			end
-			if refQuestID then
-				GameTooltip:AddLine(L["QUEST_ROW_INSTRUCTIONS"], 1, 1, 1);
-			end
-		end
-		-- Add info in tooltip for the header of a Window for whether it is locked or not
-		if self.index == 0 then
-			local owner = self:GetParent():GetParent();
-			if owner and owner.isLocked then
-				GameTooltip:AddLine(L["TOP_ROW_TO_UNLOCK"], 1, 1, 1);
-			elseif app.Settings:GetTooltipSetting("Show:TooltipHelp") then
-				GameTooltip:AddLine(L["TOP_ROW_TO_LOCK"], 1, 1, 1);
-			end
-		end
-
-		--[[ ROW DEBUGGING ]
-		-- GameTooltip:AddDoubleLine("Self",tostring(reference));
-		-- GameTooltip:AddDoubleLine("Base",tostring(getmetatable(reference)));
-		-- GameTooltip:AddDoubleLine("Parent",tostring(rawget(reference, "parent")));
-		-- GameTooltip:AddDoubleLine("ParentText",tostring((rawget(reference, "parent") or app.EmptyTable).text));
-		-- GameTooltip:AddDoubleLine("SourceParent",tostring(rawget(reference, "sourceParent")));
-		-- GameTooltip:AddDoubleLine("SourceParentText",tostring((rawget(reference, "sourceParent") or app.EmptyTable).text));
-		GameTooltip:AddLine("-- Ref Fields:");
-		for key,val in pairs(reference) do
-			if key ~= "lore" and key ~= "description" then
-				GameTooltip:AddDoubleLine(key,tostring(val));
-			end
-		end
-		local fields = {
-			"__type",
-			-- "key",
-			-- "hash",
-			-- "name",
-			-- "link",
-			-- "sourceIgnored",
-			-- "collectible",
-			-- "collected",
-			-- "trackable",
-			-- "saved",
-			"collectibleAsCost",
-			"costTotal",
-			"filledCost",
-			"isUpgrade",
-			"collectibleAsUpgrade",
-			"upgradeTotal",
-			"filledUpgrade",
-			"skipFill",
-			-- "itemID",
-			-- "modItemID"
-		};
-		GameTooltip:AddLine("-- Extra Fields:");
-		for _,key in ipairs(fields) do
-			GameTooltip:AddDoubleLine(key,tostring(reference[key]));
-		end
-		GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
-		-- END DEBUGGING]]
-
-		GameTooltip.MiscFieldsComplete = not missingMiscData;
-		-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
-		GameTooltip:Show();
-		-- app.PrintDebug("OnRowEnter-Return");
 	end
+
+	-- Show information about it becoming locked due to some criteira
+	local lockCriteria = reference.lc;
+	if lockCriteria then
+		-- list the reasons this may become locked due to lock criteria
+		local critKey, critValue;
+		local critFuncs = app.QuestLockCriteriaFunctions;
+		local critFunc;
+		GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, lockCriteria[1]));
+		for i=2,#lockCriteria,1 do
+			critKey = lockCriteria[i];
+			i = i + 1;
+			critValue = lockCriteria[i];
+			critFunc = critFuncs[critKey];
+			if critFunc then
+				local label = critFuncs["label_"..critKey];
+				local text = critFuncs["text_"..critKey](critValue);
+				GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+			end
+		end
+	end
+	local altQuests = reference.altQuests;
+	if altQuests then
+		-- list the reasons this may become locked due to altQuests specifically
+		local critValue;
+		local critFuncs = app.QuestLockCriteriaFunctions;
+		local critFunc = critFuncs["questID"];
+		local label = critFuncs["label_questID"];
+		local text;
+		GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, 1));
+		for i=1,#altQuests,1 do
+			critValue = altQuests[i];
+			if critFunc then
+				text = critFuncs["text_questID"](critValue);
+				GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+			end
+		end
+	end
+
+	-- it is locked and no warning has been added to the tooltip
+	if not lockedWarning and reference.locked then
+		if reference.DisablePartySync == false then
+			-- unknown if party sync will function for this Thing
+			GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
+		elseif not reference.DisablePartySync then
+			-- should be possible in party sync
+			GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
+		else
+			-- known to not be possible in party sync
+			GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
+		end
+	end
+
+	if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
+
+	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
+		if reference.g then
+			-- If we're at the Auction House
+			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
+			else
+				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
+			end
+		end
+		if refQuestID then
+			GameTooltip:AddLine(L["QUEST_ROW_INSTRUCTIONS"], 1, 1, 1);
+		end
+	end
+	-- Add info in tooltip for the header of a Window for whether it is locked or not
+	if self.index == 0 then
+		local owner = self:GetParent():GetParent();
+		if owner and owner.isLocked then
+			GameTooltip:AddLine(L["TOP_ROW_TO_UNLOCK"], 1, 1, 1);
+		elseif app.Settings:GetTooltipSetting("Show:TooltipHelp") then
+			GameTooltip:AddLine(L["TOP_ROW_TO_LOCK"], 1, 1, 1);
+		end
+	end
+
+	--[[ ROW DEBUGGING ]
+	-- GameTooltip:AddDoubleLine("Self",tostring(reference));
+	-- GameTooltip:AddDoubleLine("Base",tostring(getmetatable(reference)));
+	-- GameTooltip:AddDoubleLine("Parent",tostring(rawget(reference, "parent")));
+	-- GameTooltip:AddDoubleLine("ParentText",tostring((rawget(reference, "parent") or app.EmptyTable).text));
+	-- GameTooltip:AddDoubleLine("SourceParent",tostring(rawget(reference, "sourceParent")));
+	-- GameTooltip:AddDoubleLine("SourceParentText",tostring((rawget(reference, "sourceParent") or app.EmptyTable).text));
+	GameTooltip:AddLine("-- Ref Fields:");
+	for key,val in pairs(reference) do
+		if key ~= "lore" and key ~= "description" then
+			GameTooltip:AddDoubleLine(key,tostring(val));
+		end
+	end
+	local fields = {
+		"__type",
+		-- "key",
+		-- "hash",
+		-- "name",
+		-- "link",
+		-- "sourceIgnored",
+		-- "collectible",
+		-- "collected",
+		-- "trackable",
+		-- "saved",
+		"collectibleAsCost",
+		"costTotal",
+		"filledCost",
+		"isUpgrade",
+		"collectibleAsUpgrade",
+		"upgradeTotal",
+		"filledUpgrade",
+		"skipFill",
+		-- "itemID",
+		-- "modItemID"
+	};
+	GameTooltip:AddLine("-- Extra Fields:");
+	for _,key in ipairs(fields) do
+		GameTooltip:AddDoubleLine(key,tostring(reference[key]));
+	end
+	GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
+	-- END DEBUGGING]]
+
+	GameTooltip.MiscFieldsComplete = not missingMiscData;
+	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
+	GameTooltip:Show();
+	-- app.PrintDebug("OnRowEnter-Return");
 end
 RowOnLeave = function (self)
 	GameTooltip:ClearLines();

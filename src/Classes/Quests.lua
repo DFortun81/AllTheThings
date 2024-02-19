@@ -1650,7 +1650,7 @@ app.AddQuestObjectivesToTooltip = function(tooltip, reference)
 			tooltip:AddLine(Colorize(lore, app.Colors.TooltipLore), 1, 1, 1, 1);
 		end
 		if objective and app.Settings:GetTooltipSetting("Objectives") then
-			tooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
+			tooltip:AddLine(REQUIREMENTS, 1, 1, 1, 1);
 			tooltip:AddLine(objective, 0.4, 0.8, 1, 1);
 			objectified = true;
 		end
@@ -1659,7 +1659,7 @@ app.AddQuestObjectivesToTooltip = function(tooltip, reference)
 		local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
 		if objectives and #objectives > 0 then
 			if not objectified then
-				tooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
+				tooltip:AddLine(REQUIREMENTS, 1, 1, 1, 1);
 			end
 			for i,objective in ipairs(objectives) do
 				local _ = objective.text;
