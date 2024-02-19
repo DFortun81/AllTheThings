@@ -9562,13 +9562,16 @@ RowOnEnter = function (self)
 		end
 	end
 	if reference.speciesID then
+		-- TODO: Once we move the Battle Pets to their own class file, add this using settings.AppendInformationTextEntry to the speciesID InformationType.
 		local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 		if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
 	end
 	if reference.titleID then
+		-- TODO: Once we move the Titles to their own class file (in all environments), add this using settings.AppendInformationTextEntry to the titleID InformationType.
 		GameTooltip:AddDoubleLine(" ", L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
 	end
 	if refQuestID then
+		-- TODO: This could be moved to the Quests lib and hook in using settings.AppendInformationTextEntry.
 		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
 		if oneTimeQuestCharGuid then
 			local charData = ATTCharacterData[oneTimeQuestCharGuid];
@@ -9577,6 +9580,8 @@ RowOnEnter = function (self)
 			GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 		end
 	end
+	
+	-- TODO: Convert all of these to InformationTypes.
 	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 		if app.Settings:GetTooltipSetting("creatureID") then
 			for i,qg in ipairs(reference.qgs) do
@@ -9588,7 +9593,6 @@ RowOnEnter = function (self)
 			end
 		end
 	end
-	
 	if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
 	if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
 	elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);
@@ -9596,6 +9600,8 @@ RowOnEnter = function (self)
 	elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
 	elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
 	if initialBuild then GameTooltip:SetATTReference(reference, self); end
+	
+	-- TODO: Convert cost to an InformationType.
 	if reference.cost then
 		if type(reference.cost) == "table" then
 			local _, name, icon, amount;
@@ -9631,6 +9637,8 @@ RowOnEnter = function (self)
 			GameTooltip:AddDoubleLine(L["COST"], amount);
 		end
 	end
+	
+	-- TODO: Convert this to an InformationType.
 	if reference.achievementID and reference.criteriaID then
 		GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
 	end

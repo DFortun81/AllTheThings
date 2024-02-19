@@ -101,6 +101,25 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 },
 (function(t) return t.isRecursive; end));
 
+-- The post processor uses a dynamic list to append additional entries as needed.
+local AppendedInformationTextEntries = {};
+local PostProcessor = CreateInformationType("__postprocessor", {
+	priority = 99999999,
+	Process = function(t, reference, info)
+		if #AppendedInformationTextEntries > 0 then
+			for i,entry in ipairs(AppendedInformationTextEntries) do
+				tinsert(info, entry);
+			end
+			wipe(AppendedInformationTextEntries);
+		end
+	end,
+});
+local function AppendInformationTextEntry(entry)
+	-- You should call this from within the Process function of an information text object.
+	tinsert(AppendedInformationTextEntries, entry);
+end
+settings.AppendInformationTextEntry = AppendInformationTextEntry;
+
 -- All of the Default Information Types.
 local InformationTypes = {
 	-- Only displayed in NPC Tooltips that are alive and exist in the world.
@@ -311,7 +330,7 @@ local InformationTypes = {
 			local value = GetValueForInformationType(t, reference);
 			if value then
 				if reference.sourceQuest or reference.sourceQuests then
-					tinsert(PostProcessors, {
+					AppendInformationTextEntry({
 						left = L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO,
 						wrap = true,
 						r = 0.4,
@@ -442,20 +461,6 @@ settings.CreateInformationType = function(key, t)
 	tinsert(InformationTypes, informationType);
 	return informationType;
 end
-
--- The post processor uses a dynamic list to fill additional data as needed.
-local PostProcessors = {};
-local PostProcessor = CreateInformationType("__postprocessor", {
-	priority = 99999999,
-	Process = function(t, reference, info)
-		if #PostProcessors > 0 then
-			for i,entry in ipairs(PostProcessors) do
-				tinsert(info, entry);
-			end
-			wipe(PostProcessors);
-		end
-	end,
-});
 
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {};
