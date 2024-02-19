@@ -242,7 +242,6 @@ for i,informationType in ipairs({
 						right = str,
 					});
 				end
-				print("classes", str);
 			end
 		end,
 	}),
