@@ -137,6 +137,7 @@ namespace ATT
                 lua.DoString(ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
                 Framework.Validator = new DataValidator(lua, Framework.Config);
+                Framework.CurrentFileName = null;
 
                 // Try to Copy in the Alliance Only / Horde Only / All Races lists
                 try
