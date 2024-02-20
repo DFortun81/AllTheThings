@@ -814,10 +814,12 @@ i(180486);	-- Chiu's Lute
 i(178888);	-- Choofa
 i(181364);	-- Cluster of Seeds
 i(181361);	-- Court Gossip
+i(178889);	-- Cryptkeeper Kassir
 i(181344);	-- Droman Aliothe
 i(181454);	-- Duskmire Ruse
 i(181369);	-- Giant Lungcap
 i(181342);	-- Hunt-Captain Korayn
+i(181346);	-- Kleia and Pelagos
 i(181338);	-- Lady Moonberry
 i(182212);	-- Magical Curio
 i(180484);	-- Noko's Flute

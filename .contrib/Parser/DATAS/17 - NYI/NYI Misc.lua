@@ -468,7 +468,6 @@ root(ROOTS.NeverImplemented, {
 				i(180621),	-- Court of Harvesters Tribute
 				i(181514),	-- Court of Harvesters Tribute
 				i(175030),	-- Critical Swiftmend
-				i(178889),	-- Cryptkeeper Kassir
 				i(178139),	-- Cypher of Relocation
 				i(178556),	-- Cypher of Relocation
 				i(178721),	-- Dark Star
@@ -504,7 +503,6 @@ root(ROOTS.NeverImplemented, {
 				i(175040),	-- Infused Bark
 				i(179652),	-- Infused Ruby
 				i(180743),	-- Jeweler's Journal
-				i(181346),	-- Kleia and Pelagos
 				i(181750),	-- Kleia and Pelagos Elated PH Reward
 				i(181752),	-- Kleia and Pelagos Happy PH Reward
 				i(181751),	-- Kleia and Pelagos Very Happy PH Reward
