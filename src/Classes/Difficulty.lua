@@ -2,7 +2,6 @@ do
 -- App locals
 local appName,app = ...;
 local L, contains, GetRelativeValue = app.L, app.contains, app.GetRelativeValue;
-local Colorize = app.Modules.Color.Colorize;
 
 -- Global locals
 local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo
@@ -158,10 +157,11 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 }, (function(t) return t.difficulties; end));
 
 -- External Functionality
-local function SummarizeLockout(info, lockout, leftText)
+local function SummarizeLockout(info, lockout, leftText, color)
 	tinsert(info, {
 		left = leftText,
 		right = date("%c", lockout.reset),
+		color = color,
 	});
 	for encounterIter,encounter in pairs(lockout.encounters) do
 		tinsert(info, {
@@ -192,7 +192,7 @@ app.AddEventHandler("OnLoad", function()
 						if key == "shared" then
 							-- Skip
 						else
-							SummarizeLockout(info, lockout, Colorize(GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty));
+							SummarizeLockout(info, lockout, GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty);
 						end
 					end
 				end

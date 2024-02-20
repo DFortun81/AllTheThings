@@ -2649,18 +2649,18 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		local sourceGroup;
 		for i,j in ipairs(group.g or group) do
 			-- app.PrintDebug("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
-			if sourceID and GroupMatchesParams(j, "sourceID", sourceID) then
+			if sourceID and app.GroupMatchesParams(j, "sourceID", sourceID) then
 				-- app.PrintDebug("sourceID match",sourceID)
-				if sourceGroup then MergeProperties(sourceGroup, j)
-				else sourceGroup = CreateObject(j); end
-			elseif GroupMatchesParams(j, paramA, paramB) then
+				if sourceGroup then app.MergeProperties(sourceGroup, j)
+				else sourceGroup = app.__CreateObject(j); end
+			elseif app.GroupMatchesParams(j, paramA, paramB) then
 				-- app.PrintDebug("exact match",paramA,paramB)
-				if sourceGroup then MergeProperties(sourceGroup, j, true)
-				else sourceGroup = CreateObject(j); end
-			elseif GroupMatchesParams(j, paramA, paramB, true) then
+				if sourceGroup then app.MergeProperties(sourceGroup, j, true)
+				else sourceGroup = app.__CreateObject(j); end
+			elseif app.GroupMatchesParams(j, paramA, paramB, true) then
 				-- app.PrintDebug("match",paramA,paramB)
-				if sourceGroup then MergeProperties(sourceGroup, j, true)
-				else sourceGroup = CreateObject(j); end
+				if sourceGroup then app.MergeProperties(sourceGroup, j, true)
+				else sourceGroup = app.__CreateObject(j); end
 			end
 		end
 
@@ -2675,7 +2675,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			sourceGroup.missing = true;
 		end
 		
-		if app.AddSourceInformation(sourceID, info, group, sourceGroup, itemString) then
+		if app.AddSourceInformation(sourceID, info, group, sourceGroup) then
 			working = true;
 		end
 

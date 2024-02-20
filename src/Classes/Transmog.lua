@@ -10,7 +10,6 @@ if C_TransmogCollection then
 	local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
 		= GetItemInfoInstant, C_Item.IsDressableItemByID, GetItemInfo, C_Transmog.GetSlotForInventoryType
 	local Callback = app.CallbackHandlers.Callback;
-	local Colorize = app.Modules.Color.Colorize;
 	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 	local L, contains, containsAny, SearchForField, SearchForFieldContainer
 		= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer;
@@ -654,7 +653,7 @@ if C_TransmogCollection then
 	});
 
 	-- External Functionality
-	app.AddSourceInformation = function(sourceID, info, group, sourceGroup, itemString)
+	app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 		local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID);
 		if sourceInfo then
 			local working = false;
@@ -822,7 +821,10 @@ if C_TransmogCollection then
 					-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
 					-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 					-- this Account as being 'collected'
-					tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) });
+					tinsert(info, {
+						left = L["ADHOC_UNIQUE_COLLECTED_INFO"],
+						color = app.Colors.ChatLinkError
+					});
 					-- if the tooltip immediately refreshes for whatever reason then
 					-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
 					if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
@@ -832,9 +834,15 @@ if C_TransmogCollection then
 			end
 
 			if app.IsReady and sourceInfo.categoryID > 0 and sourceGroup.missing then
-				tinsert(info, { left = Colorize("Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
-				tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
-				tinsert(info, { left = Colorize(itemString, app.Colors.SourceIgnored) });
+				-- Do not localize first part of the message, it is for contribs
+				tinsert(info, {
+					left = "Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"],
+					color = app.Colors.ChatLinkError
+				});	
+				tinsert(info, {
+					left = sourceID .. ":" .. tostring(sourceInfo.visualID),
+					color = app.Colors.SourceIgnored
+				});
 			end
 			for _,j in ipairs(group.g or group) do
 				j.visualID = sourceInfo.visualID
