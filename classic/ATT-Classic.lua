@@ -1387,10 +1387,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if group.isLimited then
 		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = app.Colors.TooltipDescription });
 	end
-
-	if group.pvp then
-		tinsert(info, { left = L["REQUIRES_PVP"] });
-	end
 	
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings

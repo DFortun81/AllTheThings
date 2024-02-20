@@ -29,6 +29,7 @@ for key,value in pairs({
 	["BONUS_ID"] = "Bonus ID";
 	["CONDUIT_ID"] = "Conduit ID";
 	["DISPLAY_ID"] = "Display ID";
+	["PET_BATTLES"] = "Pet Battles";
 	["EVENT_ID"] = "Event ID";
 	["ICON_PATH"] = "Icon Path";
 	["ITEM_LEVEL"] = "iLvl";
@@ -72,7 +73,8 @@ for key,value in pairs({
 	["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache.";
 
 	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
-	["REQUIRES_PVP"] = "|CFF00FFDEThis may require participation in PvP.|r";
+	["REQUIRES_PVP"] = "|CFF00FFDERequires PvP Activities or Currencies|r";
+	["REQUIRES_PETBATTLES"] = "|CFF00FFDERequires Pet Battling|r";
 	["PLEASE_REPORT_MESSAGE"] = "Please report this to the ATT Discord in #retail-errors! Thanks!";
 	["REPORT_TIP"] = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
 	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";

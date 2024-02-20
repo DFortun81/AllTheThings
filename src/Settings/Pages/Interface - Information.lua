@@ -293,6 +293,30 @@ local InformationTypes = {
 			end
 		end,
 	}),
+	CreateInformationType("pb", {
+		priority = 2.7,
+		text = L.PET_BATTLES,
+		Process = function(t, reference, info)
+			if reference.pb then
+				tinsert(info, {
+					left = L.REQUIRES_PETBATTLES,
+					wrap = true,
+				});
+			end
+		end,
+	});
+	CreateInformationType("pvp", {
+		priority = 2.7,
+		text = PVP,
+		Process = function(t, reference, info)
+			if reference.pvp then
+				tinsert(info, {
+					left = L.REQUIRES_PVP,
+					wrap = true,
+				});
+			end
+		end,
+	});
 	
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),

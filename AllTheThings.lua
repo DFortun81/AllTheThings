@@ -3002,14 +3002,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if group.itemID and group.factionID and group.repeatable then
 			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
 		end
-		-- Pet Battles
-		if group.pb then
-			tinsert(info, { left = L["REQUIRES_PETBATTLES"] });
-		end
-		-- PvP
-		if group.pvp then
-			tinsert(info, { left = L["REQUIRES_PVP"] });
-		end
 		if paramA == "itemID" and paramB == 137642 then
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], color = app.Colors.SourceIgnored });
@@ -9650,14 +9642,6 @@ RowOnEnter = function (self)
 		-- Unobtainable
 		if reference.u then
 			GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-		end
-		-- Pet Battles
-		if reference.pb then
-			GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
-		end
-		-- PvP
-		if reference.pvp then
-			GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
 		end
 
 		-- Add any ID toggle fields

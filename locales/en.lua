@@ -234,6 +234,7 @@ for key, value in pairs({
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
 	["DONE_REFRESHING"] = "Done refreshing collection.";
 	["ADHOC_UNIQUE_COLLECTED_INFO"] = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
+	["PET_BATTLES"] = "Pet Battles";
 	["REQUIRES_PVP"] = "|CFF00FFDERequires PvP Activities or Currencies|r";
 	["REQUIRES_PETBATTLES"] = "|CFF00FFDERequires Pet Battling|r";
 	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";

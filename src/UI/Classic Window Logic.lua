@@ -1080,12 +1080,6 @@ local function RowOnEnter(self)
 		elseif reference.isYearly then tinsert(info, { left = "This can be completed yearly." });
 		else tinsert(info, { left = "This can be completed multiple times.", wrap = true }); end
 	end
-	if reference.pvp and not reference.itemID then
-		tinsert(info, {
-			left = L.REQUIRES_PVP,
-			wrap = true,
-		});
-	end
 	
 	-- Attach all of the Information to the tooltip.
 	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);

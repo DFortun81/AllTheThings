@@ -212,6 +212,8 @@ local TooltipSettingsBase = {
 		["awp"] = true,
 		["lvl"] = true,
 		["rwp"] = true,
+		["pvp"] = true,
+		["pb"] = true,
 		["c"] = true,
 		["r"] = true,
 	},
