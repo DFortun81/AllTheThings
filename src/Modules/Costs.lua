@@ -313,3 +313,168 @@ app.AddEventHandler("OnStartup", function()
 	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
 end)
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateCosts)
+
+-- Cost Capture Handling
+do
+	local setmetatable, tonumber, wipe = setmetatable, tonumber, wipe
+	-- probably fine to only have 1 Runner for cost collector... I mean how many popouts can one person make...
+	local CollectorRunner = app.CreateRunner("cost_collector")
+	local function AddCost(costType, id, amount)
+		-- app.PrintDebug("Cost",costType.type,id,amount)
+		costType[id] = costType[id] + amount
+	end
+	local __costType = { __index = function() return 0 end}
+	local __costData = { __index = function(t, key)
+		local k = setmetatable({}, __costType)
+		-- app.PrintDebug("CostType",key)
+		k.type = key
+		t[key] = k
+		return k
+	end}
+
+	local function AddGroupCosts(o, Collector)
+		-- app.PrintDebug("AGC",o.hash)
+		if not o.visible or o.saved or o.collected then return end
+		-- only add costs once per hash in case it is duplicated
+		local hash = o.hash
+		if Collector.Hashes[hash] then return end
+		Collector.Hashes[hash] = true
+
+		local cost = o.cost;
+		cost = cost and type(cost) == "table" and cost;
+		local providers = o.providers;
+		if not cost and not providers then return; end
+
+		-- Gold cost currently ignored
+		-- app.PrintDebug("AGC:Add",o.hash)
+		-- app.PrintTable(cost)
+		-- app.PrintTable(providers)
+		local Data = Collector.Data
+		if cost then
+			local type
+			for _,c in ipairs(cost) do
+				type = c[1]
+				if type == "c" or type == "i" then
+					AddCost(Data[type], c[2], c[3])
+				-- elseif type == "g" then
+					-- special gold cost blah
+					-- AddCost(Data[type], 1, c[2])
+				end
+			end
+		end
+		if providers then
+			local type
+			for _,c in ipairs(providers) do
+				type = c[1]
+				if type == "i" then
+					AddCost(Data[type], c[2], 1)
+				end
+			end
+		end
+	end
+	local function ScanGroups(group, Collector)
+
+		-- ignore costs for and within certain groups
+		if not group.visible or group.sourceIgnored then return end
+
+		CollectorRunner.Run(AddGroupCosts, group, Collector)
+		local g = group.g
+		if not g then return end
+
+		-- don't scan groups inside groups which have a cost/provider (i.e. ensembles)
+		-- this leads to wildly bloated totals
+		if group.cost or group.providers or group.filledCost then return end
+
+		for _,o in ipairs(g) do
+			ScanGroups(o, Collector)
+		end
+	end
+	local function StartUpdating(Collector)
+		local group = Collector.__group
+		if not group then return end
+
+		Collector.Reset()
+		local text = group.text
+		Collector.__text = text
+		group.text = (text or "").."  "..BLIZZARD_STORE_PROCESSING
+		group.OnUpdate = app.AlwaysShowUpdate
+		-- app.PrintDebug("StartUpdating",group.text)
+		app.DirectGroupUpdate(group)
+	end
+	local function EndUpdating(Collector)
+		local group = Collector.__group
+		if not group then return end
+
+		-- app.PrintDebug("AGC:End")
+		-- app.PrintTable(Collector.Data)
+		group.text = Collector.__text
+		-- Build all the cost data which is available to the current filters into the cost group
+		local Filter = app.RecursiveGroupRequirementsFilter
+		local costItems = group.g
+		for costKey,costType in pairs(Collector.Data) do
+			if type(costType) == "table" then
+				local costThing
+				for id,amount in pairs(costType) do
+					id = tonumber(id)
+					if id then
+						if costKey == "c" then
+							costThing = app.CreateCostCurrency(
+								app.SearchForObject("currencyID", id, "key")
+									or app.CreateCurrencyClass(id), amount)
+						elseif costKey == "i" then
+							costThing = app.CreateCostItem(
+								app.SearchForObject("itemID", id, "field")
+									or app.CreateItem(id), amount)
+						-- elseif costKey == "g" then
+						-- 	costThing = app.CreateRawText(
+						-- 		app.SearchForObject("itemID", id, "field")
+						-- 			or app.CreateItem(id), amount)
+						end
+						if costThing and Filter(costThing) then
+							costItems[#costItems + 1] = costThing
+						-- else app.PrintDebug("Filtered?") app.PrintTable(costThing)
+						end
+					end
+				end
+			end
+		end
+		if #costItems > 0 then
+			app.Sort(costItems, app.SortDefaults.Total)
+			app.AssignChildren(group)
+		else
+			group.OnUpdate = nil
+		end
+		app.DirectGroupUpdate(group)
+		Collector.Reset()
+	end
+
+	api.GetCostCollector = function()
+
+		local Collector = {}
+
+		-- Table which can capture cost information for a collector
+		Collector.Data = setmetatable({}, __costData)
+		Collector.Hashes = {}
+
+		Collector.ScanGroups = function(group, costGroup)
+			Collector.__group = costGroup
+			CollectorRunner.SetPerFrame(25)
+			CollectorRunner.Run(StartUpdating, Collector)
+			local g = group.g
+			if g then
+				for _,o in ipairs(g) do
+					ScanGroups(o, Collector)
+				end
+			end
+			CollectorRunner.Run(EndUpdating, Collector)
+		end
+
+		Collector.Reset = function()
+			wipe(Collector.Data)
+			wipe(Collector.Hashes)
+		end
+
+		return Collector
+	end
+
+end	-- Cost Collector Handling

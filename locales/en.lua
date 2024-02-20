@@ -48,6 +48,8 @@ for key, value in pairs({
 	["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	["COST"] = "Cost";
 	["COST_DESC"] = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
+	["COST_TOTAL"] = "Total Cost";
+	["COST_TOTAL_DESC"] = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
 	["SOURCES"] = "Source(s)";
 	["SOURCES_DESC"] = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	["WRONG_FACTION"] = "You might need to be on the other faction to view this.";

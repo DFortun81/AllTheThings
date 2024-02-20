@@ -3647,6 +3647,45 @@ app.BuildCost = function(group)
 	NestObject(group, costGroup, nil, 1);
 end
 
+-- Begins an async operation using a Runner to progressively accummulate the entirety of the 'cost'/'provider'
+-- information contained by all groups within the provided 'group'
+-- and captures the information into trackable Cost groups under a 'Total Costs' header
+app.BuildTotalCost = function(group)
+	if not group.g then return end
+
+	-- Pop out the cost totals into their own sub-groups for accessibility
+	local costGroup = app.CreateRawText(L.COST_TOTAL, {
+		["description"] = L.COST_TOTAL_DESC,
+		["icon"] = "Interface\\Icons\\inv_misc_coinbag_special",
+		["sourceIgnored"] = true,
+		["skipFill"] = true,
+		["g"] = {},
+		OnClick = app.UI.OnClick.IgnoreRightClick,
+	});
+
+	local Collector = app.Modules.Costs.GetCostCollector()
+
+	local function RefreshCollector()
+		wipe(costGroup.g)
+		-- app.DirectGroupUpdate(costGroup)
+		-- this triggers prior to the update in the window completing, and cost groups are determined by visibility
+		-- so delay the refresh
+		DelayedCallback(Collector.ScanGroups, 1, group, costGroup)
+	end
+
+	RefreshCollector()
+
+	-- we need to make sure we have a window reference for this group's Collector
+	-- so that when the window is expired, we know to remove the necessary Handler(s)
+	if group.window then
+		-- changing settings should refresh the Collector...
+		group.window:AddEventHandler("OnRecalculate_NewSettings", RefreshCollector)
+	end
+
+	-- Add the cost group to the popout
+	NestObject(group, costGroup, nil, 1);
+end
+
 (function()
 -- Keys for groups which are in-game 'Things'
 app.ThingKeys = {
@@ -9087,6 +9126,8 @@ function app:CreateMiniListForGroup(group)
 		app.BuildSourceParent(popout.data);
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
 		app.BuildCost(popout.data);
+		-- sum up all the sub-group costs into a Total Costs group
+		app.BuildTotalCost(popout.data)
 
 		popout.data.hideText = true;
 		popout.data.visible = true;
