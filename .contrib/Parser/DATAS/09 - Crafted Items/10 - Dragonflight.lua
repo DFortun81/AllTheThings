@@ -2837,8 +2837,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		spell(2575, {	-- Mining
 			i(203418, {["timeline"] = {ADDED_10_0_7}}),	-- Amplified Quaking Stone
 			i(189143),	-- Draconium Ore+
-			i(188658),	-- Draconium Ore++
-			i(190311),	-- Draconium Ore+++
+			i(188658, {["_drop"] = {"requireSkill"}}),	-- Draconium Ore++
+			i(190311, {["_drop"] = {"requireSkill"}}),	-- Draconium Ore+++
 			i(202011),	-- Elementally-Charged Stone
 			i(194039),	-- Heated Ore Sample
 			i(201301),	-- Iridescent Ore
