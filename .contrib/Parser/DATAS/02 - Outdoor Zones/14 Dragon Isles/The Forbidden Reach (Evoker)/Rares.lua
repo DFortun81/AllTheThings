@@ -3,7 +3,9 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	m(THE_FORBIDDEN_REACH_EVOKER, bubbleDownSelf({ ["classes"] = { EVOKER }, ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
-		n(RARES, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		},{
 			n(191729, {	-- Deathrip
 				["coord"] = { 32.9, 41.2, THE_FORBIDDEN_REACH_EVOKER },
 				["questID"] = 66966,
@@ -54,6 +56,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					i(197727),	-- Mystical Water Vial
 				},
 			}),
-		}),
+		})),
 	})),
 })));
