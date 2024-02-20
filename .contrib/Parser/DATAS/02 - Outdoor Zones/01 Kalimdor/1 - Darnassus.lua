@@ -957,6 +957,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				o(240625, {	-- High Priestess' Reliquary
 					["description"] = "Loot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.",
+					["coord"] = { 43, 75.8, DARNASSUS },
 					["timeline"] = { "added 6.1.0.19508" },
 					["groups"] = {
 						i(122239, {	-- Music Roll: Shalandis Isle

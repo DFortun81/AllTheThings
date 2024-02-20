@@ -870,10 +870,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26443, {	-- Diabolical Plans [Alliance]
 					["providers"] = {
 						{ "i", 23777 },	-- Diabolical Plans
-						{ "i", 23780 },	-- Diabolical Plans
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(23780),	-- Diabolical Plans (QI!)
+					},
 				}),
 				q(9520, {	-- Diabolical Plans [Alliance]
 					["providers"] = {
@@ -1578,6 +1580,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(24118, {	-- Signet of Argas
 							["timeline"] = { "added 2.0.1" },
 						}),
+						i(45476),	-- Seeker's Fel Spear (QI!)
+						i(45477),	-- Gorgannon's Flaming Blade (QI!)
 					},
 				}),
 				q(9522, {	-- Never Again! [Alliance]
