@@ -842,19 +842,7 @@ local function RowOnEnter(self)
 			r = 1, g = 1, b = 1,
 		});
 	end
-	if reference.requireSkill then
-		local professionName = GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA;
-		if reference.learnedAt then professionName = professionName .. " (" .. reference.learnedAt .. ")"; end
-		tinsert(info, {
-			left = L.REQUIRES,
-			right = professionName,
-		});
-	elseif reference.learnedAt then
-		tinsert(info, {
-			left = L.REQUIRES,
-			right = tostring(reference.learnedAt),
-		});
-	end
+	
 	if reference.minReputation and not reference.maxReputation then
 		local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
 		local msg = "Requires a minimum standing of"

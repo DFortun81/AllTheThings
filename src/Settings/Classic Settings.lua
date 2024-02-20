@@ -160,6 +160,7 @@ local TooltipSettingsBase = {
 		["description"] = true,
 		["playerCoord"] = true,
 		["requireEvent"] = true,
+		["requireSkill"] = true,
 		["spellName"] = true,
 		["nextEvent"] = true,
 		["coords"] = true,

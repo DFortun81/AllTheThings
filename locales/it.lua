@@ -425,7 +425,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX = "Only Relevant";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
-		--TODO: L.PROFESSION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the profession requirements in the tooltip.";
 		--TODO: L.CLASSES = "Classes";
 		--TODO: L.SPEC_CHECKBOX = "Specializations";
 		--TODO: L.SPEC_CHECKBOX_TOOLTIP = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.";

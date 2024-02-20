@@ -193,7 +193,6 @@ local TooltipSettingsBase = {
 		["NPCData:Nested"] = false,
 		["QuestChain:Nested"] = true,
 		["WorldQuestsList:Currencies"] = true,
-		["ProfessionRequirements"] = true,
 		["CompletedBy"] = true,
 		["Updates:AdHoc"] = true,
 		
@@ -202,6 +201,7 @@ local TooltipSettingsBase = {
 		["description"] = true,
 		["playerCoord"] = true,
 		["requireEvent"] = true,
+		["requireSkill"] = true,
 		["nextEvent"] = true,
 		["spellName"] = true,
 		["coords"] = true,

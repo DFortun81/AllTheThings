@@ -324,7 +324,7 @@ function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
 end)
 checkboxSpecializations:SetATTTooltip(L["SPEC_CHECKBOX_TOOLTIP"])
-checkboxSpecializations:AlignBelow(checkboxProfessions)
+checkboxSpecializations:AlignBelow(checkboxKnownBy)
 
 local checkboxDropChances = child:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
 function(self)

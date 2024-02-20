@@ -429,7 +429,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜欢在鼠标提示中的共享外观列表中看到原始来源信息，请启用此选项。";
 		L.ONLY_RELEVANT_CHECKBOX = "仅相关";
 		L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观，请启用此选项。\n\n注意：我们建议你保持这个关闭，因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收藏。";
-		L.PROFESSION_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中查看专业要求，请启用此选项。";
 		L.CLASSES = "职业";
 		L.SPEC_CHECKBOX = "专精";
 		L.SPEC_CHECKBOX_TOOLTIP = "启用该选项，可以在游戏客户端提供的物品鼠标提示中显示物品的战利品专精信息。\n\n注意：无论该设置如何，这些图标仍将出现在 ATT 小列表中。";

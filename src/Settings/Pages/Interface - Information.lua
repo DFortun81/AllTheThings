@@ -55,6 +55,9 @@ local ConversionMethods = setmetatable({
 			return tostring(spellID);
 		end
 	end,
+	professionName = function(spellID)
+		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or RETRIEVING_DATA;
+	end,
 }, {
 	__index = function(t, key)
 		return DefaultConversionMethod;
@@ -489,6 +492,24 @@ local InformationTypes = {
 						});
 					end
 				end
+			end
+		end,
+	}),
+	CreateInformationType("requireSkill", { text = TRADE_SKILLS, priority = 8000,
+		Process = function(t, reference, info)
+			local requireSkill, learnedAt = reference.requireSkill, reference.learnedAt;
+			if requireSkill then
+				local professionName = ConversionMethods.professionName(requireSkill);
+				if learnedAt then professionName = professionName .. " (" .. learnedAt .. ")"; end
+				tinsert(info, {
+					left = L.REQUIRES,
+					right = professionName,
+				});
+			elseif learnedAt then
+				tinsert(info, {
+					left = L.REQUIRES,
+					right = tostring(learnedAt),
+				});
 			end
 		end,
 	}),

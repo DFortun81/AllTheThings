@@ -42,6 +42,7 @@ local GetAchievementLink = _G["GetAchievementLink"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
+local GetSpellInfo = GetSpellInfo;
 local InCombatLockdown = _G["InCombatLockdown"];
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
@@ -527,6 +528,12 @@ app.RefreshTradeSkillCache = function()
 		end
 	end
 end
+app.AddEventHandler("OnStartup", function()
+	local conversions = app.Settings.InformationTypeConversionMethods;
+	conversions.professionName = function(spellID)
+		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
+	end;
+end);
 end -- TradeSkill Functionality
 
 
@@ -7003,7 +7010,6 @@ do
 local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
 local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
-local GetSpellInfo = GetSpellInfo;
 local GetSpellLink = GetSpellLink;
 
 local PerCharacterMountSpells = {
@@ -9477,7 +9483,6 @@ RowOnEnter = function (self)
 	-- elseif refQuestID and reference.retries and not reference.itemID then
 	-- 	GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
 	end
-	if reference.requireSkill and app.Settings:GetTooltipSetting("ProfessionRequirements") then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
 	if reference.crs then
 		-- extreme amounts of creatures tagged, then only list a summary of how many...
 		if #reference.crs > 25 then

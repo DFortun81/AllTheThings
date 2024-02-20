@@ -542,7 +542,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 			-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
 			if known ~= 1 then
 				tinsert(skills, "|"..profID..":");
-				tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4));
+				tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4)); 
 			end
 		end
 		tinsert(info, "skills"..(app.TableConcat(skills) or ""));
