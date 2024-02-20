@@ -236,6 +236,7 @@ for key, value in pairs({
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
 	["DONE_REFRESHING"] = "Done refreshing collection.";
 	["ADHOC_UNIQUE_COLLECTED_INFO"] = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
+	["AVAILABILITY"] = "Availability";
 	["PET_BATTLES"] = "Pet Battles";
 	["REQUIRES_PVP"] = "|CFF00FFDERequires PvP Activities or Currencies|r";
 	["REQUIRES_PETBATTLES"] = "|CFF00FFDERequires Pet Battling|r";
@@ -1288,7 +1289,7 @@ for key, value in pairs({
 		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
 		app.asset("status-seasonal-available"),	-- Seasonal available
 	};
-	["UNOBTAINABLE_ITEM_REASONS"] = {
+	["AVAILABILITY_CONDITIONS"] = {
 		-- [id] = {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"}, -- No Hope
 		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"}, -- No Hope

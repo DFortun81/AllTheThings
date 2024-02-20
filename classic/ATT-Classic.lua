@@ -902,9 +902,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then
-					local reason = L["UNOBTAINABLE_ITEM_REASONS"][group.u];
-					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-						o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]];
+					local condition = L["AVAILABILITY_CONDITIONS"][group.u];
+					if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
+						o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]];
 					end
 				elseif group.e then
 					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
@@ -1140,9 +1140,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 		if u < 99999999 then
-			local reason = L["UNOBTAINABLE_ITEM_REASONS"][u];
-			if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-				tinsert(info, { left = reason[2], wrap = true });
+			local condition = L["AVAILABILITY_CONDITIONS"][u];
+			if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
+				tinsert(info, { left = condition[2], wrap = true });
 			end
 		end
 
@@ -1192,9 +1192,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 				local right = " ";
 				if j.u then
-					local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
-					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-						right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t";
+					local condition = L["AVAILABILITY_CONDITIONS"][j.u];
+					if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
+						right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]] .. ":0|t";
 					end
 				end
 				if j.rwp then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][2] .. ":0|t"; end

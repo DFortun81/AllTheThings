@@ -728,7 +728,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.UNOBTAINABLE_ITEM_REASONS;
+local a = L.AVAILABILITY_CONDITIONS;
 for key,value in pairs({
 	[1] = {1, "|CFFFF0000Никогда не был доступен игрокам.|r", "Никогда Не Доступны"}, -- No Hope
 	[2] = {1, "|CFFFF0000Был убран из игры.|r", "Убраны Из Игры"}, -- No Hope

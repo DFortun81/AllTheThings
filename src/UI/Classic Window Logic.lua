@@ -227,9 +227,9 @@ local function CalculateRowIndicatorTexture(group)
 	end
 	
 	if group.u then
-		local reason = L["UNOBTAINABLE_ITEM_REASONS"][group.u];
-		if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-			return L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]];
+		local condition = L["AVAILABILITY_CONDITIONS"][group.u];
+		if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
+			return L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]];
 		end
 	end
 	return group.e and L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
@@ -967,16 +967,6 @@ local function RowOnEnter(self)
 
 	if reference.questID and not reference.objectiveID then
 		app.AddQuestObjectives(info, reference);
-	end
-	if reference.u then
-		local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-		if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
-			tinsert(info, {
-				left = reason[2],
-				r = 1, g = 1, b = 1,
-				wrap = true,
-			});
-		end
 	end
 	if reference.sym then
 		tinsert(info, {

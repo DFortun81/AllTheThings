@@ -761,7 +761,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.UNOBTAINABLE_ITEM_REASONS;
+local a = L.AVAILABILITY_CONDITIONS;
 for key,value in pairs({
 	-- Arbitrary Filters
 	[1] = {1, "|CFFFF0000此项玩家永远无法获得。|r", "从未实施"}, -- No Hope

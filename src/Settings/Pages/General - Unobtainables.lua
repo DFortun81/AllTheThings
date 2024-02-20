@@ -18,7 +18,7 @@ app.AddEventHandler("OnSettingsRefresh", function()
 	end
 end);
 
-local unobtainables = L.UNOBTAINABLE_ITEM_REASONS;
+local conditions = L.AVAILABILITY_CONDITIONS;
 local UnobtainableFilterOnClick = function(self)
 	settings:SetUnobtainableFilter(self.u, self:GetChecked());
 end;
@@ -33,7 +33,7 @@ local UnobtainableOnRefresh = function(self)
 		self.Text:SetTextColor(1, 1, 1);
 	end
 end;
-local UnobtainableFilters = {
+local AvailabilityConditions = {
 	1,	-- Never Implemented
 	2,	-- Removed From Game
 	0,	-- Blank Space
@@ -69,7 +69,7 @@ if app.IsClassic then
 	end;
 	
 	-- The ids are different in classic.
-	UnobtainableFilters = {
+	AvailabilityConditions = {
 		1,	-- Never Implemented
 		2,	-- Removed From Game
 		0,	-- Blank Space
@@ -80,11 +80,11 @@ end
 
 local yoffset = -4;
 local last = headerUnobtainableContent
-for i,u in ipairs(UnobtainableFilters) do
+for i,u in ipairs(AvailabilityConditions) do
 	if u > 0 then
-		local unobtainable = unobtainables[u];
-		local filter = child:CreateCheckBox(unobtainable[3], UnobtainableOnRefresh, UnobtainableFilterOnClick)
-		filter:SetATTTooltip(unobtainable[2] .. "\n\nID: " .. u)
+		local condition = conditions[u];
+		local filter = child:CreateCheckBox(condition[3], UnobtainableOnRefresh, UnobtainableFilterOnClick)
+		filter:SetATTTooltip(condition[2] .. "\n\nID: " .. u)
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 		filter.u = u;
 		last = filter

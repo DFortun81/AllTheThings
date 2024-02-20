@@ -22,6 +22,7 @@ for key,value in pairs({
 	["DONE_REFRESHING"] = "Done refreshing collection.";
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
+	["AVAILABILITY"] = "Availability";
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
 	["LAYER"] = "Layer";
@@ -671,7 +672,7 @@ for key,value in pairs({
 		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
 		app.asset("status-seasonal-available"),	-- Seasonal available
 	};
-	["UNOBTAINABLE_ITEM_REASONS"] = {
+	["AVAILABILITY_CONDITIONS"] = {
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"},
 		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"},
 		[3] = {2, "|CFFFF0000This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.|r", "Blizzard Balance", nil, nil, "\n \n|CFFFFAAAAThe act of encouraging the use of real money in the Classic version of the game is widely frowned upon. Participate in this content at your own risk.|r" },

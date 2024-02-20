@@ -764,22 +764,22 @@ app.SourceSpecificFields = {
 		-- print("GetMostObtainableValue:")
 		local max, check, new = -1;
 		-- app.PrintTable(vals)
-		local reasons = L["UNOBTAINABLE_ITEM_REASONS"];
-		local record, u;
+		local conditions = L["AVAILABILITY_CONDITIONS"];
+		local condition, u;
 		local vals = select("#", ...);
 		for i=1,vals do
 			u = select(i, ...);
 			-- missing u value means NOT unobtainable
 			if not u then return; end
-			record = reasons[u];
-			if record then
-				check = record[1];
+			condition = conditions[u];
+			if condition then
+				check = condition[1];
 			else
 				-- otherwise it's an invalid unobtainable filter
 				app.print("Invalid Unobtainable Filter:",u);
 				return;
 			end
-			-- track the highest unobtainable value, which is the most obtainable (according to UNOBTAINABLE_ITEM_REASONS)
+			-- track the highest unobtainable value, which is the most obtainable (according to AVAILABILITY_CONDITIONS)
 			if check > max then
 				new = u;
 				max = check;
@@ -1079,7 +1079,7 @@ local function GetUnobtainableTexture(group)
 		if u > 1 and u < 12 and (group.b or 0) == 0 then
 			filter = 2;
 		else
-			local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
+			local record = L["AVAILABILITY_CONDITIONS"][u];
 			if record then
 				filter = record[1] or 0;
 			else
@@ -2991,7 +2991,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
 				tinsert(info, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
 			else
-				tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
 				-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
 				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 3524) ~= 3524 then
 					if isTopLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
@@ -9682,10 +9681,6 @@ RowOnEnter = function (self)
 		if reference.itemID and reference.factionID and reference.repeatable then
 			GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
 		end
-		-- Unobtainable
-		if reference.u then
-			GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-		end
 
 		-- Add any ID toggle fields
 		local info = {};
@@ -11367,7 +11362,7 @@ customWindowUpdates["AuctionData"] = function(self)
 					["OnClick"] = function()
 						local show = not app.Settings:GetValue("Unobtainable", 7);
 						app.Settings:SetValue("Unobtainable", 7, show);
-						for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+						for k,v in pairs(L["AVAILABILITY_CONDITIONS"]) do
 							if v[1] == 1 or v[1] == 2 or v[1] == 3 then
 								if k ~= 7 then
 									app.Settings:SetValue("Unobtainable", k, show);

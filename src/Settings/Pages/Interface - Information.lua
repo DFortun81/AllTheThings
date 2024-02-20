@@ -317,6 +317,25 @@ local InformationTypes = {
 			end
 		end,
 	});
+	CreateInformationType("u", {
+		priority = 2.7,
+		text = L.AVAILABILITY,
+		Process = function(t, reference, info)
+			local u = reference.u;
+			if u then
+				local condition = L.AVAILABILITY_CONDITIONS[u];
+				if condition then
+					local buildVersion = condition[5];
+					if not buildVersion or app.GameBuildVersion < buildVersion then
+						tinsert(info, {
+							left = condition[2],
+							wrap = true,
+						});
+					end
+				end
+			end
+		end,
+	});
 	
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),

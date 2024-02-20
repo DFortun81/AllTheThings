@@ -174,6 +174,7 @@ local TooltipSettingsBase = {
 		["pb"] = true,
 		["c"] = true,
 		["r"] = true,
+		["u"] = true,
 	},
 };
 local UnobtainableSettingsBase = {
@@ -884,7 +885,7 @@ settings.UpdateMode = function(self, doRefresh)
 		
 		-- Check for any inactive unobtainable filters.
 		local anyFiltered = false
-		for u,v in pairs(L.UNOBTAINABLE_ITEM_REASONS) do
+		for u,v in pairs(L.AVAILABILITY_CONDITIONS) do
 			if not settings:GetUnobtainableFilter(u) then
 				anyFiltered = true;
 				break;
