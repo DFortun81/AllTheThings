@@ -2674,7 +2674,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		else
 			sourceGroup.missing = true;
 		end
-		
+
 		if app.AddSourceInformation(sourceID, info, group, sourceGroup) then
 			working = true;
 		end
@@ -3192,8 +3192,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
 		end
-		
-		
+
+
 		-- Add various extra field info if enabled in settings
 		app.ProcessInformationTypesForExternalTooltips(info, group, itemString)
 
@@ -3609,6 +3609,7 @@ app.BuildCost = function(group)
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		["skipFill"] = true,
 		["g"] = {},
+		OnClick = app.UI.OnClick.IgnoreRightClick,
 	});
 	-- Gold cost currently ignored
 	-- print("BuildCost",group.hash)
@@ -3845,6 +3846,7 @@ app.BuildSourceParent = function(group)
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["skipFill"] = true,
 				["g"] = {},
+				OnClick = app.UI.OnClick.IgnoreRightClick,
 			})
 			local clonedParent, keepSource;
 			local clones = {};
@@ -9325,11 +9327,11 @@ RowOnEnter = function (self)
 	if not reference then return; end
 	local GameTooltip = GameTooltip;
 	if not GameTooltip then return end;
-	
+
 	-- Always display tooltip data when viewing information from our windows.
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
-	
+
 	local tooltipAnchor;
 	local initialBuild = not GameTooltip.IsRefreshing;
 	GameTooltip.IsRefreshing = true;
@@ -9354,7 +9356,7 @@ RowOnEnter = function (self)
 		-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
 		GameTooltip:ClearLines();
 	end
-	
+
 	local link = reference.link or reference.silentLink;
 	local _, linkAdded;
 	if link and (reference.key ~= "questID" or reference.itemID or not app.Settings:GetTooltipSetting("QuestReplacement")) then
@@ -9402,7 +9404,7 @@ RowOnEnter = function (self)
 			-- app.PrintDebug("No Search Data",reference.hash)
 		end
 	end
-	
+
 	-- Miscellaneous fields
 	-- app.PrintDebug("Adding misc fields");
 	if app.Settings:GetTooltipSetting("Progress") then
@@ -9563,7 +9565,7 @@ RowOnEnter = function (self)
 			GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 		end
 	end
-	
+
 	-- TODO: Convert all of these to InformationTypes.
 	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 		if app.Settings:GetTooltipSetting("creatureID") then
@@ -9583,7 +9585,7 @@ RowOnEnter = function (self)
 	elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
 	elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
 	if initialBuild then GameTooltip:SetATTReference(reference, self); end
-	
+
 	-- TODO: Convert cost to an InformationType.
 	if reference.cost then
 		if type(reference.cost) == "table" then
@@ -9620,7 +9622,7 @@ RowOnEnter = function (self)
 			GameTooltip:AddDoubleLine(L["COST"], amount);
 		end
 	end
-	
+
 	-- TODO: Convert this to an InformationType.
 	if reference.achievementID and reference.criteriaID then
 		GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
@@ -9979,11 +9981,11 @@ RowOnEnter = function (self)
 	end
 	GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 	-- END DEBUGGING]]
-	
+
 	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 	GameTooltip:Show();
 	-- app.PrintDebug("OnRowEnter-Return");
-	
+
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 end
@@ -13048,9 +13050,6 @@ customWindowUpdates["Sync"] = function(self)
 		if not self.initialized then
 			self.initialized = true;
 
-			local function OnClick_IgnoreRightButton(row, button)
-				return button == "RightButton";
-			end
 			local function OnRightButtonDeleteCharacter(row, button)
 				if button == "RightButton" then
 					app:ShowPopupDialog("CHARACTER DATA: " .. (row.ref.text or RETRIEVING_DATA) .. L["CONFIRM_DELETE"],
@@ -13119,7 +13118,7 @@ customWindowUpdates["Sync"] = function(self)
 				['visible'] = true,
 				['back'] = 1,
 				['OnUpdate'] = app.AlwaysShowUpdate,
-				["OnClick"] = OnClick_IgnoreRightButton,
+				OnClick = app.UI.OnClick.IgnoreRightClick,
 				['g'] = {
 					{
 						['text'] = L["ADD_LINKED_CHARACTER_ACCOUNT"],
@@ -13145,7 +13144,7 @@ customWindowUpdates["Sync"] = function(self)
 						['visible'] = true,
 						['expanded'] = true,
 						['g'] = {},
-						["OnClick"] = OnClick_IgnoreRightButton,
+						OnClick = app.UI.OnClick.IgnoreRightClick,
 						['OnUpdate'] = function(data)
 							local g = {};
 							for guid,character in pairs(ATTCharacterData) do
@@ -13167,7 +13166,7 @@ customWindowUpdates["Sync"] = function(self)
 									['text'] = L["NO_CHARACTERS_FOUND"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
-									["OnClick"] = OnClick_IgnoreRightButton,
+									OnClick = app.UI.OnClick.IgnoreRightClick,
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							else
@@ -13186,7 +13185,7 @@ customWindowUpdates["Sync"] = function(self)
 						["description"] = L["LINKED_ACCOUNTS_TOOLTIP"],
 						['visible'] = true,
 						['g'] = {},
-						["OnClick"] = OnClick_IgnoreRightButton,
+						OnClick = app.UI.OnClick.IgnoreRightClick,
 						['OnUpdate'] = function(data)
 							data.g = {};
 							local charactersByName = {};
@@ -13236,7 +13235,7 @@ customWindowUpdates["Sync"] = function(self)
 									['text'] = L["NO_LINKED_ACCOUNTS"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
-									["OnClick"] = OnClick_IgnoreRightButton,
+									OnClick = app.UI.OnClick.IgnoreRightClick,
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							end
