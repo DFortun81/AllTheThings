@@ -1209,6 +1209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(26701, {	-- Flight to Brackenwall
+					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from an ogre swimming in a circle near the pier at Booty Bay in The Cape of Stranglethorn.",
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 26696,	-- The Call of Kalimdor
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
@@ -1218,6 +1219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 35,
 				}),
 				q(26702, {	-- Flight to Theramore
+					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from Corporal Jeyne on the pier at Booty Bay in The Cape of Stranglethorn.",
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 26596,	-- The Call of Kalimdor
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
