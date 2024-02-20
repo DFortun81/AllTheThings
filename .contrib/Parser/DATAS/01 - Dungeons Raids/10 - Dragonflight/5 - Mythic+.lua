@@ -167,5 +167,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				spell(424167),	-- Path of Heart's Bane
 			}),
 		})),
+		m(2266),	-- Millenia's Threshold
 	}),
 })));
