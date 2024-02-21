@@ -242,6 +242,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(134793),	-- Ruinous Gloves					(Removed)
 		}),
 		filter(MAIL, {
+			q(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
+				["name"] = "Quantum Gloves (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
 			ig(113222, {	-- Keengrip Arrowpullers 		(NYI)
 				["modID"] = 4,	-- should be sourceID 62173	-- Might need modID from pre 6.0 LFR (0?)
@@ -721,6 +725,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
 					["name"] = "Quantum Chestpiece (Mail) completed.",
+				}),
+				q(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
+					["name"] = "Quantum Gloves (Mail) completed.",
 				}),
 				q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
 					["name"] = "Quantum Gloves (Plate) completed.",
