@@ -2544,7 +2544,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			end
 		end
 	end
-	fields.OnTooltip = function(t)
+	fields.OnTooltip = function()
 		return onTooltipForAchievement;
 	end
 	categoryFields.text = function(t)

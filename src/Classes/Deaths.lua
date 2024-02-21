@@ -5,6 +5,28 @@ local app = select(2, ...);
 local ATTAccountWideData, ATTCharacterData
 
 -- Death Tracker Lib
+local function OnTooltipForDeathTracker(t, tooltipInfo)
+	local c = {};
+	for guid,character in pairs(ATTCharacterData) do
+		if character and character.Deaths and character.Deaths > 0 then
+			tinsert(c, character);
+		end
+	end
+	if #c > 0 then
+		tooltipInfo[#tooltipInfo + 1] = { left = " " };
+		tooltipInfo[#tooltipInfo + 1] = { left = "Deaths Per Character:" };
+		app.Sort(c, function(a, b)
+			return a.Deaths > b.Deaths;
+		end);
+		for i,character in ipairs(c) do
+			tooltipInfo[#tooltipInfo + 1] = {
+				left = "  " .. character.text:gsub("-" .. GetRealmName(), ""),
+				right = character.Deaths,
+				r = 1, g = 1, b = 1,
+			};
+		end
+	end
+end
 local fields = {
 	["text"] = function(t)
 		return "Total Deaths";
@@ -18,23 +40,8 @@ local fields = {
 	["progress"] = function(t)
 		return math.min(t.total, app.Settings.AccountWide.Deaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
 	end,
-	["OnTooltip"] = function(t)
-		local c = {};
-		for guid,character in pairs(ATTCharacterData) do
-			if character and character.Deaths and character.Deaths > 0 then
-				tinsert(c, character);
-			end
-		end
-		if #c > 0 then
-			GameTooltip:AddLine(" ");
-			GameTooltip:AddLine("Deaths Per Character:");
-			app.Sort(c, function(a, b)
-				return a.Deaths > b.Deaths;
-			end);
-			for i,character in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. character.text:gsub("-" .. GetRealmName(), ""), character.Deaths, 1, 1, 1);
-			end
-		end
+	["OnTooltip"] = function()
+		return OnTooltipForDeathTracker;
 	end,
 };
 if C_GameRules and C_GameRules.IsHardcoreActive() then
