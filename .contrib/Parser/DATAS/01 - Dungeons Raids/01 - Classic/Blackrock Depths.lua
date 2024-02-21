@@ -23,31 +23,33 @@ SHADOWFORGE_CITY = createHeader({
 		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS2]],
 	},
 });
-local OnTooltipForThoriumBrotherhood = [[function(t)
+local OnTooltipForThoriumBrotherhood = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Turn In Blood & Cores (1x each)",
 -- #if AFTER TBC
-		local repPerTurnIn = isHuman and 550 or 500;
+		500,
 -- #else
-		local repPerTurnIn = isHuman and 220 or 200;
+		200,
 -- #endif
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn In Blood & Cores (1x each)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		42000);
+		
+		addRepInfo(tooltipInfo, reputation, "Turn In Core Leather (2x each)",
 -- #if AFTER TBC
-		local repPerTurnIn = isHuman and 385 or 350;
+		350,
 -- #else
-		local repPerTurnIn = isHuman and 165 or 150;
+		150,
 -- #endif
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn In Core Leather (2x each)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		42000);
+		
+		addRepInfo(tooltipInfo, reputation, "Turn In Dark Iron Ore (10x each)",
 -- #if AFTER TBC
-		local repPerTurnIn = isHuman and 82.5 or 75;
+		75,
 -- #else
-		local repPerTurnIn = isHuman and 55 or 50;
+		50,
 -- #endif
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn In Dark Iron Ore (10x each)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		42000);
 	end
 end]];
 root(ROOTS.Instances, tier(CLASSIC_TIER, {

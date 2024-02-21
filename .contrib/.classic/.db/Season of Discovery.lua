@@ -49,34 +49,33 @@ SODItem(211941, POLEARMS);	-- Windwalker's Yari
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end
-local OnTooltipFor_ACA_SDL = [[function(t)
+local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman, repPerTurnIn, x, n = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		if reputation < ]] .. FRIENDLY .. [[ then
-			repPerTurnIn = isHuman and 495 or 450;
-			x, n = math.ceil((]] .. FRIENDLY .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 10 - Crafted]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			repPerTurnIn = isHuman and 330 or 300;
-			x, n = math.ceil((]] .. FRIENDLY .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 10 - Gathered]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			repPerTurnIn = isHuman and 110 or 100;
-			x, n = math.ceil((]] .. FRIENDLY .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("A Waylaid Shipment [iLvl 10]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			GameTooltip:AddLine("PROTIP: Save higher iLvl Supply Shipments until later!", 1, 0.1, 0.1);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 10 - Crafted]", 450, ]] .. FRIENDLY .. [[);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 10 - Gathered]", 300, ]] .. FRIENDLY .. [[);
+			-- #if BEFORE 1.15.1
+			addRepInfo(tooltipInfo, reputation, "A Waylaid Shipment [iLvl 10]", 100, ]] .. FRIENDLY .. [[);
+			-- #endif
+			
+			tinsert(tooltipInfo, {
+				left = "PROTIP: Save higher iLvl Supply Shipments until later!",
+				r=1,g=0.1,b=0.1,
+				wrap = true
+			});
 		elseif reputation < ]] .. HONORED .. [[ then
-			repPerTurnIn = isHuman and 880 or 880;
-			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 25 - Crafted (Tier 2)]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			repPerTurnIn = isHuman and 715 or 650;
-			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 25 - Crafted (Tier 1)]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			repPerTurnIn = isHuman and 550 or 500;
-			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 25 - Gathered]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			repPerTurnIn = isHuman and 220 or 200;
-			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("A Waylaid Shipment [iLvl 25]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 25 - Crafted (Tier 2)]", 800, ]] .. HONORED .. [[);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 25 - Crafted (Tier 1)]", 650, ]] .. HONORED .. [[);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 25 - Gathered]", 500, ]] .. HONORED .. [[);
+			-- #if BEFORE 1.15.1
+			addRepInfo(tooltipInfo, reputation, "A Waylaid Shipment [iLvl 25]", 200, ]] .. HONORED .. [[);
+			-- #endif
+		elseif reputation < ]] .. REVERED .. [[ and _.GameBuildVersion >= 11501 then
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 40 - Crafted (Tier 4)]", 1000, ]] .. REVERED .. [[);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 40 - Crafted (Tier 3)]", 850, ]] .. REVERED .. [[);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 40 - Gathered]", 700, ]] .. REVERED .. [[);
 		end
 	end
 end]];

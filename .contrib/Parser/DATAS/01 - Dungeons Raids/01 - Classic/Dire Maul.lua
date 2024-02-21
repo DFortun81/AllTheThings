@@ -49,74 +49,44 @@ CAPITAL_GARDENS = createHeader({
 	},
 });
 -- #if BEFORE 4.0.3
-local OnTooltipForShendralar = [[function(t)
+local OnTooltipForShendralar = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Libram Turn Ins",
 -- #if AFTER TBC
-		local repPerTurnIn = isHuman and 550 or 500;
+		500,
 -- #else
-		local repPerTurnIn = isHuman and 220 or 200;
+		200,
 -- #endif
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Libram Turn Ins", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		42000);
 	end
 end]];
-local OnTooltipForSteamweedle = [[function(t)
-	GameTooltip:AddLine("This is a hidden reputation. It might not count towards reputation achievements.", 1, 1, 1);
-	local isHuman = _.RaceIndex == 1;
+local OnTooltipForSteamweedle = [[function(t, tooltipInfo)
+	tinsert(tooltipInfo, { left = "This is a hidden reputation. It might not count towards reputation achievements.", r=1,g=1,b=1, wrap=true });
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		if reputation < 0 then
-			local repPerKill = isHuman and 2.75 or 2.5;
-			local x, n = math.ceil((20999 - t.reputation) / repPerKill), math.ceil(63001 / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Venture Co. (STV)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			GameTooltip:AddDoubleLine("Kill Southsea Pirates. (Tanaris & Barrens)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-			local repPerTurnIn = isHuman and 28 or 25;
-			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(84000 / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Complete Zapping Quests (Feralas)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
--- #if AFTER TBC
-			local repPerTurnIn = isHuman and 385 or 350;
--- #else
-			local repPerTurnIn = isHuman and 165 or 150;
--- #endif
-			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(84000 / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Complete Free Knot! (Dire Maul)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
--- #if AFTER TBC
-			local repPerTurnIn = isHuman and 82.5 or 75;
--- #else
-			local repPerTurnIn = isHuman and 55 or 50;
--- #endif
-			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(84000 / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Complete The Gordok Ogre Suit (Dire Maul)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		else
-			if reputation < 20999 then
-				local repPerKill = isHuman and 2.75 or 2.5;
-				local x, n = math.ceil((20999 - t.reputation) / repPerKill), math.ceil(20999 / repPerKill);
-				GameTooltip:AddLine("To 11999 Honored:", 1, 1, 1);
-				GameTooltip:AddDoubleLine(" Kill Venture Co. (STV)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-				GameTooltip:AddDoubleLine(" Kill Southsea Pirates. (Tanaris & Barrens)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			end
-
-			local repPerTurnIn = isHuman and 28 or 25;
-			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Complete Zapping Quests (Feralas)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
--- #if AFTER TBC
-			local repPerTurnIn = isHuman and 385 or 350;
--- #else
-			local repPerTurnIn = isHuman and 165 or 150;
--- #endif
-			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Complete Free Knot! (Dire Maul)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
--- #if AFTER TBC
-			local repPerTurnIn = isHuman and 82.5 or 75;
--- #else
-			local repPerTurnIn = isHuman and 55 or 50;
--- #endif
-			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Complete The Gordok Ogre Suit (Dire Maul)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		if reputation < 20999 then
+			tinsert(tooltipInfo, { left = "To 11999 Honored:", r=1,g=1,b=1 });
+			addRepInfo(tooltipInfo, reputation, " Kill Venture Co. (STV)", 2.5, 20999);
+			addRepInfo(tooltipInfo, reputation, " Kill Southsea Pirates. (Tanaris & Barrens)", 2.5, 20999);
 		end
+		addRepInfo(tooltipInfo, reputation, "Complete Zapping Quests (Feralas)", 25, 42000);
+		addRepInfo(tooltipInfo, reputation, "Complete Free Knot! (Dire Maul)",
+-- #if AFTER TBC
+		350,
+-- #else
+		150,
+-- #endif
+		42000);
+		
+		addRepInfo(tooltipInfo, reputation, "Complete The Gordok Ogre Suit (Dire Maul)",
+-- #if AFTER TBC
+		75,
+-- #else
+		50,
+-- #endif
+		42000);
 	end
 end]];
 -- #endif
