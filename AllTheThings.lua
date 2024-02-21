@@ -2606,9 +2606,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		group = {};
 	end
 
-	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, info = false, {};
-
 	-- Determine if this is a cache for an item
 	local itemID, sourceID, modID, bonusID, itemString;
 	if rawlink then
@@ -2650,7 +2647,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- itemID should only be the itemID, not including modID
 		itemID = GetItemIDAndModID(paramB) or paramB;
 	end
-
+	
+	-- Determine if this tooltip needs more work the next time it refreshes.
+	local working, info = false, {};
+	
 	if itemID and isTopLevelSearch then
 		-- Merge the source group for all matching Sources of the search results
 		local sourceGroup;
@@ -8707,8 +8707,8 @@ local StoreWindowPosition = function(self)
 	end
 end
 -- Adds ATT information about the list of Quests into the provided tooltip
-local function AddQuestInfoToTooltip(tooltip, quests)
-	if quests and tooltip.AddLine then
+local function AddQuestInfoToTooltip(info, quests)
+	if quests then
 		local text, mapID;
 		for _,q in ipairs(quests) do
 			text = GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. (q.text or RETRIEVING_DATA);
@@ -8719,7 +8719,9 @@ local function AddQuestInfoToTooltip(tooltip, quests)
 			if mapID then
 				text = text .. " (" .. app.GetMapName(mapID) .. ")";
 			end
-			tooltip:AddLine(text);
+			tinsert(info, {
+				left = text
+			});
 		end
 	end
 end
@@ -9353,11 +9355,10 @@ local function RowOnClick(self, button)
 					local locked = not window.isLocked;
 					window.isLocked = locked;
 					window:StorePosition();
+					
 					-- force tooltip to refresh since locked state drives tooltip content
-					if GameTooltip then
-						RowOnLeave(self);
-						RowOnEnter(self);
-					end
+					RowOnLeave(self);
+					RowOnEnter(self);
 				else
 					self:SetScript("OnMouseUp", function(self)
 						self:SetScript("OnMouseUp", nil);
@@ -9378,6 +9379,8 @@ RowOnEnter = function (self)
 	-- Always display tooltip data when viewing information from our windows.
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
+	
+	local info = {};
 
 	local tooltipAnchor;
 	local initialBuild = not GameTooltip.IsRefreshing;
@@ -9421,6 +9424,11 @@ RowOnEnter = function (self)
 			GameTooltip:SetOwner(self, tooltipAnchor);
 		end
 		GameTooltip:AddLine(reference.text);
+		--[[
+		tinsert(info, {
+			left = reference.text,
+		});
+		]]--
 		doSearch = true;
 	end
 
@@ -9458,10 +9466,16 @@ RowOnEnter = function (self)
 		if reference.total and reference.total >= 2 then
 			-- if collecting this reference type, then show Collection State
 			if reference.collectible then
-				GameTooltip:AddDoubleLine(L["COLLECTION_PROGRESS"], GetCollectionText(reference.collected or reference.saved));
+				tinsert(info, {
+					left = L.COLLECTION_PROGRESS,
+					right = GetCollectionText(reference.collected or reference.saved),
+				});
 			-- if completion/tracking is available, show Completion State
 			elseif reference.trackable then
-				GameTooltip:AddDoubleLine(L["TRACKING_PROGRESS"], GetCompletionText(reference.saved));
+				tinsert(info, {
+					left = L.TRACKING_PROGRESS,
+					right = GetCompletionText(reference.saved),
+				});
 			end
 		end
 	end
@@ -9469,7 +9483,10 @@ RowOnEnter = function (self)
 	-- achievement progress. If it has a measurable statistic, show it under the achievement description
 	if reference.achievementID then
 		if reference.statistic then
-			GameTooltip:AddDoubleLine(L["PROGRESS"], reference.statistic)
+			tinsert(info, {
+				left = L.PROGRESS,
+				right = reference.statistic,
+			});
 		end
 	end
 
@@ -9477,12 +9494,21 @@ RowOnEnter = function (self)
 	if title then
 		local left, right = DESCRIPTION_SEPARATOR:split(title);
 		if right then
-			GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
+			tinsert(info, {
+				left = left,
+				right = right,
+				r = 1, g = 1, b = 1
+			});
 		else
-			GameTooltip:AddLine(title, 1, 1, 1);
+			tinsert(info, {
+				left = title,
+				r = 1, g = 1, b = 1
+			});
 		end
 	-- elseif refQuestID and reference.retries and not reference.itemID then
-	-- 	GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
+		tinsert(info, {
+			left = L.QUEST_MAY_BE_REMOVED .. tostring(reference.retries),
+		});
 	end
 	local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
 	if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
@@ -9492,7 +9518,9 @@ RowOnEnter = function (self)
 		local msg = L["MINUMUM_STANDING"]
 		if offset ~= 0 then msg = msg .. " " .. offset end
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-		GameTooltip:AddLine(msg);
+		tinsert(info, {
+			left = msg,
+		});
 	end
 	if maxReputation and (not minReputation or minReputation[1] ~= maxReputation[1]) then
 		local standingId, offset = app.GetReputationStanding(reference.maxReputation)
@@ -9501,7 +9529,9 @@ RowOnEnter = function (self)
 		local msg = L["MAXIMUM_STANDING"]
 		if offset ~= 0 then msg = msg .. " " .. offset end
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-		GameTooltip:AddLine(msg);
+		tinsert(info, {
+			left = msg,
+		});
 	end
 	if minReputation and maxReputation and minReputation[1] == maxReputation[1] then
 		local minStandingId, minOffset = app.GetReputationStanding(reference.minReputation)
@@ -9513,7 +9543,9 @@ RowOnEnter = function (self)
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
 		if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
-		GameTooltip:AddLine(msg);
+		tinsert(info, {
+			left = msg,
+		});
 	end
 	if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
 		local info = {};
@@ -9567,12 +9599,20 @@ RowOnEnter = function (self)
 				end
 			end
 			if #lineStrings > 0 then
-				GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", app.TableConcat(lineStrings));
+				tinsert(info, {
+					left = (first == 1 and L.PROVIDERS),
+					right = app.TableConcat(lineStrings),
+				});
 			else
-				GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", RETRIEVING_DATA);
+				tinsert(info, {
+					left = (first == 1 and L.PROVIDERS),
+					right = RETRIEVING_DATA,
+				});
 			end
 			if first > 25 then
-				GameTooltip:AddDoubleLine(" ", (L.AND_MORE):format(#reference.providers - first));
+				tinsert(info, {
+					right = (L.AND_MORE):format(#reference.providers - first),
+				});
 				break
 			end
 			first = first + 1;
@@ -9581,20 +9621,32 @@ RowOnEnter = function (self)
 	if reference.speciesID then
 		-- TODO: Once we move the Battle Pets to their own class file, add this using settings.AppendInformationTextEntry to the speciesID InformationType.
 		local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
-		if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
+		if total then
+			tinsert(info, {
+				left = tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"],
+			});
+		end
 	end
 	if reference.titleID then
 		-- TODO: Once we move the Titles to their own class file (in all environments), add this using settings.AppendInformationTextEntry to the titleID InformationType.
-		GameTooltip:AddDoubleLine(" ", L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
+		tinsert(info, {
+			right = L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"],
+		});
 	end
 	if refQuestID then
 		-- TODO: This could be moved to the Quests lib and hook in using settings.AppendInformationTextEntry.
 		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
 		if oneTimeQuestCharGuid then
 			local charData = ATTCharacterData[oneTimeQuestCharGuid];
-			GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(charData and charData.text or UNKNOWN));
+			tinsert(info, {
+				left = L.QUEST_ONCE_PER_ACCOUNT,
+				right = L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(charData and charData.text or UNKNOWN),
+			});
 		elseif oneTimeQuestCharGuid == false then
-			GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
+			tinsert(info, {
+				left = L.QUEST_ONCE_PER_ACCOUNT,
+				color = "ffcf271b",
+			});
 		end
 	end
 
@@ -9602,20 +9654,46 @@ RowOnEnter = function (self)
 	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 		if app.Settings:GetTooltipSetting("creatureID") then
 			for i,qg in ipairs(reference.qgs) do
-				GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]) .. " (" .. qg .. ")");
+				tinsert(info, {
+					left = (k == 1 and L.QUEST_GIVER),
+					right = tostring(app.NPCNameFromID[qg]) .. " (" .. qg .. ")",
+				});
 			end
 		else
 			for i,qg in ipairs(reference.qgs) do
-				GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]));
+				tinsert(info, {
+					left = (k == 1 and L.QUEST_GIVER),
+					right = tostring(app.NPCNameFromID[qg]),
+				});
 			end
 		end
 	end
-	if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
-	if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
-	elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);
-	elseif reference.isMonthly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
-	elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
-	elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
+	if reference.isWorldQuest then
+		tinsert(info, {
+			left = L.DURING_WQ_ONLY,
+		});
+	end
+	if reference.isDaily then
+		tinsert(info, {
+			left = L.COMPLETED_DAILY,
+		});
+	elseif reference.isWeekly then
+		tinsert(info, {
+			left = L.COMPLETED_WEEKLY,
+		});
+	elseif reference.isMonthly then
+		tinsert(info, {
+			left = L.COMPLETED_MONTHLY,
+		});
+	elseif reference.isYearly then
+		tinsert(info, {
+			left = L.COMPLETED_YEARLY,
+		});
+	elseif reference.repeatable then
+		tinsert(info, {
+			left = L.COMPLETED_MULTIPLE,
+		});
+	end
 
 	-- TODO: Convert cost to an InformationType.
 	if reference.cost then
@@ -9646,17 +9724,25 @@ RowOnEnter = function (self)
 					icon = nil;
 					amount = GetMoneyString(v[2]);
 				end
-				GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA));
+				tinsert(info, {
+					left = (k == 1 and L["COST"]),
+					right = amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA),
+				});
 			end
 		else
-			local amount = GetMoneyString(reference.cost);
-			GameTooltip:AddDoubleLine(L["COST"], amount);
+			tinsert(info, {
+				left = L.COST,
+				right = GetMoneyString(reference.cost),
+			});
 		end
 	end
 
 	-- TODO: Convert this to an InformationType.
 	if reference.achievementID and reference.criteriaID then
-		GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
+		tinsert(info, {
+			left = L.CRITERIA_FOR,
+			right = GetAchievementLink(reference.achievementID),
+		});
 	end
 	if app.Settings:GetTooltipSetting("Progress") then
 		local right = GetProgressTextForTooltip(reference);
@@ -9670,13 +9756,16 @@ RowOnEnter = function (self)
 	if GameTooltip.ATTAttachComplete == nil then
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
-			GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
+			tinsert(info, {
+				left = L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+				color = app.Colors.TooltipDescription,
+				wrap = true,
+			});
+			
 		end
 
 		-- Add any ID toggle fields
-		local info = {};
 		app.ProcessInformationTypes(info, reference);
-		app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 
 		-- Tooltip for something which was not attached via search, so mark it as complete here
 		GameTooltip.ATTAttachComplete = true;
@@ -9684,16 +9773,24 @@ RowOnEnter = function (self)
 
 	-- Has a symlink for additonal information
 	if reference.sym then
-		GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
+		tinsert(info, {
+			left = L.SYM_ROW_INFORMATION,
+			wrap = true,
+		});
 	end
 
 	-- Ignored for Source/Progress
 	if reference.sourceIgnored then
-		GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
+		tinsert(info, {
+			left = L.DOES_NOT_CONTRIBUTE_TO_PROGRESS,
+			wrap = true,
+		});
 	end
 	-- Further conditional texts that can be displayed
 	if reference.timeRemaining then
-		GameTooltip:AddLine(app.GetColoredTimeRemaining(reference.timeRemaining));
+		tinsert(info, {
+			left = app.GetColoredTimeRemaining(reference.timeRemaining),
+		});
 	end
 
 	-- Calculate Best Drop Percentage. (Legacy Loot Mode)
@@ -9729,9 +9826,15 @@ RowOnEnter = function (self)
 					if totalItems > 0 then
 						chance = 100 / totalItems;
 						color = GetProgressColor(chance / 100);
-						GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
+						tinsert(info, {
+							left = L["LOOT_TABLE_CHANCE"],
+							right = "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r",
+						});
 					else
-						GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
+						tinsert(info, {
+							left = L["LOOT_TABLE_CHANCE"],
+							right = "N/A",
+						});
 					end
 
 					local specs = reference.specs;
@@ -9759,7 +9862,10 @@ RowOnEnter = function (self)
 							color = GetProgressColor(chance / 100);
 							-- print out the specs with min items
 							local specString = GetSpecsString(rollSpec, true, true) or "???";
-							GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r");
+							tinsert(info, {
+								left = legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],
+								right = specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r",
+							});
 						end
 					elseif legacyLoot then
 						-- Not available at all, best loot spec is the one with the most number of items in it.
@@ -9778,9 +9884,15 @@ RowOnEnter = function (self)
 							if totalItems > 0 then
 								chance = 100 / (totalItems - specHits[id]);
 								color = GetProgressColor(chance / 100);
-								GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
+								tinsert(info, {
+									left = L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL],
+									right = "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r",
+								});
 							else
-								GameTooltip:AddDoubleLine(L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL], "N/A");
+								tinsert(info, {
+									left = L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL],
+									right = "N/A",
+								});
 							end
 						end
 					end
@@ -9798,9 +9910,15 @@ RowOnEnter = function (self)
 			customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
 			local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or "[MISSING_LOCALE_KEY]");
 			if not app.CurrentCharacter.CustomCollects[c] then
-				GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. icon_color_str, customCollectEx["desc"] or "");
+				tinsert(info, {
+					left = "|cffc20000" .. requires .. ":|r " .. icon_color_str,
+					right = customCollectEx["desc"] or "",
+				});
 			else
-				GameTooltip:AddDoubleLine(requires .. ": " .. icon_color_str, customCollectEx["desc"] or "");
+				tinsert(info, {
+					left = requires .. ": " .. icon_color_str,
+					right = customCollectEx["desc"] or "",
+				});
 			end
 		end
 	end
@@ -9840,19 +9958,26 @@ RowOnEnter = function (self)
 			end
 		end
 		if prereqs and #prereqs > 0 then
-			GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
-			AddQuestInfoToTooltip(GameTooltip, prereqs);
+			tinsert(info, {
+				left = L.PREREQUISITE_QUESTS,
+			});
+			AddQuestInfoToTooltip(info, prereqs);
 		end
 		if bc and #bc > 0 then
-			GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
-			AddQuestInfoToTooltip(GameTooltip, bc);
+			tinsert(info, {
+				left = L.BREADCRUMBS_WARNING,
+			});
+			AddQuestInfoToTooltip(info, bc);
 		end
 	end
 
 	-- Show Breadcrumb information
 	local lockedWarning;
 	if reference.isBreadcrumb then
-		GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.Breadcrumb, L["THIS_IS_BREADCRUMB"]));
+		tinsert(info, {
+			left = L.THIS_IS_BREADCRUMB,
+			color = app.Colors.Breadcrumb,
+		});
 		if reference.nextQuests then
 			local isBreadcrumbAvailable = true;
 			local nextq, nq = {};
@@ -9872,19 +9997,29 @@ RowOnEnter = function (self)
 			end
 			if isBreadcrumbAvailable then
 				-- The character is able to accept the breadcrumb quest without Party Sync
-				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
-				AddQuestInfoToTooltip(GameTooltip, nextq);
+				tinsert(info, {
+					left = L.BREADCRUMB_PARTYSYNC,
+				});
+				AddQuestInfoToTooltip(info, nextq);
 			elseif reference.DisablePartySync == false then
 				-- unknown if party sync will function for this Thing
-				GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
-				AddQuestInfoToTooltip(GameTooltip, nextq);
+				tinsert(info, {
+					left = L.BREADCRUMB_PARTYSYNC_4,
+					color = app.Colors.LockedWarning,
+				});
+				AddQuestInfoToTooltip(info, nextq);
 			elseif not reference.DisablePartySync then
 				-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-				GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
-				AddQuestInfoToTooltip(GameTooltip, nextq);
+				tinsert(info, {
+					left = L.BREADCRUMB_PARTYSYNC_2,
+					color = app.Colors.LockedWarning,
+				});
+				AddQuestInfoToTooltip(info, nextq);
 			else
 				-- known to not be possible in party sync
-				GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
+				tinsert(info, {
+					left = L.DISABLE_PARTYSYNC,
+				});
 			end
 			lockedWarning = true;
 		end
@@ -9897,7 +10032,10 @@ RowOnEnter = function (self)
 		local critKey, critValue;
 		local critFuncs = app.QuestLockCriteriaFunctions;
 		local critFunc;
-		GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, lockCriteria[1]));
+		tinsert(info, {
+			left = L.UNAVAILABLE_WARNING_FORMAT:format(lockCriteria[1]),
+			color = app.Colors.LockedWarning,
+		});
 		for i=2,#lockCriteria,1 do
 			critKey = lockCriteria[i];
 			i = i + 1;
@@ -9906,7 +10044,9 @@ RowOnEnter = function (self)
 			if critFunc then
 				local label = critFuncs["label_"..critKey];
 				local text = critFuncs["text_"..critKey](critValue);
-				GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+				tinsert(info, {
+					left = GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
+				});
 			end
 		end
 	end
@@ -9918,12 +10058,17 @@ RowOnEnter = function (self)
 		local critFunc = critFuncs["questID"];
 		local label = critFuncs["label_questID"];
 		local text;
-		GameTooltip:AddLine(L.UNAVAILABLE_WARNING_FORMAT:format(app.Colors.LockedWarning, 1));
+		tinsert(info, {
+			left = L.UNAVAILABLE_WARNING_FORMAT:format(1),
+			color = app.Colors.LockedWarning,
+		});
 		for i=1,#altQuests,1 do
 			critValue = altQuests[i];
 			if critFunc then
 				text = critFuncs["text_questID"](critValue);
-				GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+				tinsert(info, {
+					left = GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
+				});
 			end
 		end
 	end
@@ -9932,52 +10077,97 @@ RowOnEnter = function (self)
 	if not lockedWarning and reference.locked then
 		if reference.DisablePartySync == false then
 			-- unknown if party sync will function for this Thing
-			GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
+			tinsert(info, {
+				left = L.BREADCRUMB_PARTYSYNC_4,
+				color = app.Colors.LockedWarning,
+			});
 		elseif not reference.DisablePartySync then
 			-- should be possible in party sync
-			GameTooltip:AddLine(("|c%s%s|r"):format(app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
+			tinsert(info, {
+				left = L.BREADCRUMB_PARTYSYNC_3,
+				color = app.Colors.LockedWarning,
+			});
 		else
 			-- known to not be possible in party sync
-			GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
+			tinsert(info, {
+				left = L.DISABLE_PARTYSYNC,
+			});
 		end
 	end
-
+	
+	
+	-- Attach all of the Information to the tooltip.
+	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
+	wipe(info);	-- Temporary, until 
 	if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
 
 	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 		if reference.g then
 			-- If we're at the Auction House
 			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
+				tinsert(info, {
+					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
+				});
 			else
-				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
+				tinsert(info, {
+					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
+				});
 			end
 		end
 		if refQuestID then
-			GameTooltip:AddLine(L["QUEST_ROW_INSTRUCTIONS"], 1, 1, 1);
+			tinsert(info, {
+				left = L.QUEST_ROW_INSTRUCTIONS,
+			});
 		end
 	end
 	-- Add info in tooltip for the header of a Window for whether it is locked or not
 	if self.index == 0 then
 		local owner = self:GetParent():GetParent();
 		if owner and owner.isLocked then
-			GameTooltip:AddLine(L["TOP_ROW_TO_UNLOCK"], 1, 1, 1);
+			tinsert(info, {
+				left = L.TOP_ROW_TO_UNLOCK,
+			});
 		elseif app.Settings:GetTooltipSetting("Show:TooltipHelp") then
-			GameTooltip:AddLine(L["TOP_ROW_TO_LOCK"], 1, 1, 1);
+			tinsert(info, {
+				left = L.TOP_ROW_TO_LOCK,
+			});
 		end
 	end
 
 	--[[ ROW DEBUGGING ]
-	-- GameTooltip:AddDoubleLine("Self",tostring(reference));
-	-- GameTooltip:AddDoubleLine("Base",tostring(getmetatable(reference)));
-	-- GameTooltip:AddDoubleLine("Parent",tostring(rawget(reference, "parent")));
-	-- GameTooltip:AddDoubleLine("ParentText",tostring((rawget(reference, "parent") or app.EmptyTable).text));
-	-- GameTooltip:AddDoubleLine("SourceParent",tostring(rawget(reference, "sourceParent")));
-	-- GameTooltip:AddDoubleLine("SourceParentText",tostring((rawget(reference, "sourceParent") or app.EmptyTable).text));
-	GameTooltip:AddLine("-- Ref Fields:");
+	tinsert(info, {
+		left = "Self",
+		right = tostring(reference),
+	});
+	tinsert(info, {
+		left = "Base",
+		right = tostring(getmetatable(reference)),
+	});
+	tinsert(info, {
+		left = "Parent",
+		right = tostring(rawget(reference, "parent")),
+	});
+	tinsert(info, {
+		left = "ParentText",
+		right = tostring((rawget(reference, "parent") or app.EmptyTable).text),
+	});
+	tinsert(info, {
+		left = "SourceParent",
+		right = tostring(rawget(reference, "sourceParent")),
+	});
+	tinsert(info, {
+		left = "SourceParentText",
+		right = tostring((rawget(reference, "sourceParent") or app.EmptyTable).text),
+	});
+	tinsert(info, {
+		left = "-- Ref Fields:",
+	});
 	for key,val in pairs(reference) do
 		if key ~= "lore" and key ~= "description" then
-			GameTooltip:AddDoubleLine(key,tostring(val));
+			tinsert(info, {
+				left = key,
+				right = tostring(val),
+			});
 		end
 	end
 	local fields = {
@@ -10002,13 +10192,25 @@ RowOnEnter = function (self)
 		-- "itemID",
 		-- "modItemID"
 	};
-	GameTooltip:AddLine("-- Extra Fields:");
+	tinsert(info, {
+		left = "-- Extra Fields:",
+	});
 	for _,key in ipairs(fields) do
-		GameTooltip:AddDoubleLine(key,tostring(reference[key]));
+		tinsert(info, {
+			left = key,
+			right = tostring(reference[key]),
+		});
 	end
-	GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
+	tinsert(info, {
+		left = "Row Indent",
+		right = tostring(CalculateRowIndent(reference)),
+	});
 	-- END DEBUGGING]]
-
+	
+	
+	-- Attach all of the Information to the tooltip. (again, this is temporary until some more adjustments are made!)
+	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
+	
 	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 	if initialBuild then GameTooltip:SetATTReferenceForTexture(reference, self); end
 	GameTooltip:Show();
