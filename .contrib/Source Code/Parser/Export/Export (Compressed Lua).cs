@@ -1,4 +1,5 @@
 ﻿using ATT.FieldTypes;
+using KeraLua;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -212,7 +213,30 @@ namespace ATT
                         }
                         else if (field == "OnClick" || field == "OnUpdate" || field == "OnTooltip")
                         {
-                            builder.Append(SimplifyFunctionBody(data[field]));
+                            var functionBody = SimplifyFunctionBody(data[field]);
+                            if (functionBody.StartsWith("function("))
+                            {
+                                // Attempt to validate the format of the function.
+                                try
+                                {
+                                    var functionAssignment = $"{field} = {functionBody}";
+                                    Lua lua = new Lua();
+                                    if (lua.DoString(functionAssignment))
+                                    {
+                                        System.Diagnostics.Trace.WriteLine("There appears to be a syntax error in the following function:");
+                                        System.Diagnostics.Trace.WriteLine(functionAssignment);
+                                        Console.ReadLine();
+                                    }
+                                    lua.Close();
+                                }
+                                catch (Exception ex)
+                                {
+                                    System.Diagnostics.Trace.WriteLine(ex);
+                                    System.Diagnostics.Trace.WriteLine(functionBody);
+                                    Console.ReadLine();
+                                }
+                            }
+                            builder.Append(functionBody);
                         }
                         else ExportCompressedLua(builder, data[field]);
                     }
