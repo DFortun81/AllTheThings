@@ -30,7 +30,7 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 	GameTooltip:ClearATTReferenceTexture();
 	local reference = app:GetDataCache();
 	if reference then
-		GameTooltip:SetATTReference(reference);
+		GameTooltip:SetATTReferenceForTexture(reference);
 		
 		local left, right = DESCRIPTION_SEPARATOR:split(reference.title);
 		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);

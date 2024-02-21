@@ -9629,7 +9629,6 @@ RowOnEnter = function (self)
 	elseif reference.isMonthly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
 	elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
 	elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
-	if initialBuild then GameTooltip:SetATTReference(reference, self); end
 
 	-- TODO: Convert cost to an InformationType.
 	if reference.cost then
@@ -10024,6 +10023,7 @@ RowOnEnter = function (self)
 	-- END DEBUGGING]]
 
 	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
+	if initialBuild then GameTooltip:SetATTReferenceForTexture(reference, self); end
 	GameTooltip:Show();
 	-- app.PrintDebug("OnRowEnter-Return");
 

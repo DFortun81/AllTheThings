@@ -292,23 +292,6 @@ end)
 checkboxKnownBy:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"])
 checkboxKnownBy:AlignBelow(checkboxProgressIconOnly, -1)
 
-local checkboxProfessions = child:CreateCheckBox(L["PROFESSION_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("ProfessionRequirements"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("ProfessionRequirements", self:GetChecked())
-end)
-checkboxProfessions:SetATTTooltip(L["PROFESSION_CHECKBOX_TOOLTIP"])
-checkboxProfessions:AlignBelow(checkboxKnownBy)
-
 local checkboxSpecializations = child:CreateCheckBox(L["SPEC_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))

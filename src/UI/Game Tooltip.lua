@@ -274,7 +274,7 @@ GameTooltip.ClearATTReferenceTexture = function()
 	GameTooltipModel:Hide();
 end
 
-GameTooltip.SetATTReference = function(self, reference)
+GameTooltip.SetATTReferenceForTexture = function(self, reference)
 	if TrySetModel(reference) or SetReferenceTexture(reference) then
 		GameTooltipIcon:ClearAllPoints();
 		GameTooltipModel:ClearAllPoints();

@@ -1000,12 +1000,7 @@ local function RowOnEnter(self)
 			end
 		end
 	end
-	GameTooltip:SetATTReference(reference);
-	local progressText = GetProgressTextForTooltip(reference);
-	if progressText and progressText ~= "" and progressText ~= "---" then
-		GameTooltipTextRight1:SetText(progressText);
-		GameTooltipTextRight1:Show();
-	end
+	
 	
 	if reference.cost then
 		if type(reference.cost) == "table" then
@@ -1150,6 +1145,12 @@ local function RowOnEnter(self)
 		else
 			GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
 		end
+	end
+	GameTooltip:SetATTReferenceForTexture(reference);
+	local progressText = GetProgressTextForTooltip(reference);
+	if progressText and progressText ~= "" and progressText ~= "---" then
+		GameTooltipTextRight1:SetText(progressText);
+		GameTooltipTextRight1:Show();
 	end
 	GameTooltip:Show();
 	
