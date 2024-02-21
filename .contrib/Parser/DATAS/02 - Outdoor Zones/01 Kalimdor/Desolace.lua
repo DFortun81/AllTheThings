@@ -1,19 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
--- #if BEFORE CATA
-local OnTooltipForCentaurs = [[function(t)
-	local reputation = t.reputation;
-	local isHuman = _.RaceIndex == 1;
-	if reputation > 0 then
-		if reputation < ]] .. HONORED .. [[ then
-			local repPerKill = isHuman and 22 or 20;
-			local x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerKill), math.ceil(]] .. HONORED .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Centaurs to Honored.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-	end
-end]];
--- #endif
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DESOLACE, {
 		-- #if AFTER CATA
@@ -134,7 +121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE CATA
 					["minReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be Honored.
 					["maxReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
-					["OnTooltip"] = OnTooltipForCentaurs,
+					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
 					-- #endif
 				}),
 				faction(93, {	-- Magram Clan Centaur
@@ -146,7 +133,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE CATA
 					["minReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be Honored.
 					["maxReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
-					["OnTooltip"] = OnTooltipForCentaurs,
+					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
 					-- #endif
 				}),
 			}),
