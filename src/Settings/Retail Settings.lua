@@ -197,7 +197,6 @@ local TooltipSettingsBase = {
 		["Updates:AdHoc"] = true,
 		
 		-- Information Types
-		["creatures"] = true,
 		["description"] = true,
 		["playerCoord"] = true,
 		["requireEvent"] = true,
@@ -210,6 +209,7 @@ local TooltipSettingsBase = {
 		["lore"] = true,
 		["maps"] = true,
 		["awp"] = true,
+		["crs"] = true,
 		["lvl"] = true,
 		["rwp"] = true,
 		["pvp"] = true,

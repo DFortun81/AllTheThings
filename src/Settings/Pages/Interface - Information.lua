@@ -398,7 +398,35 @@ local InformationTypes = {
 	CreateInformationType("azeriteEssenceID", { text = L.AZERITE_ESSENCE_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
-	CreateInformationType("creatures", { text = "Creatures List" }),
+	CreateInformationType("crs", { text = L.CREATURES_LIST,
+		limit = 25,
+		Process = function(t, reference, info)
+			local crs = reference.crs;
+			if crs then
+				-- extreme amounts of creatures tagged, then only list a summary of how many...
+				if #crs > t.limit then
+					tinsert(info, {
+						left = CREATURE,
+						right = L.CREATURES_COUNT:format(#crs),
+					});
+				elseif app.Settings:GetTooltipSetting("creatureID") then
+					for i,cr in ipairs(crs) do
+						tinsert(info, {
+							left = (i == 1 and CREATURE),
+							right = tostring(cr > 0 and app.NPCNameFromID[cr] or "") .. " (" .. cr .. ")",
+						});
+					end
+				else
+					for i,cr in ipairs(crs) do
+						tinsert(info, {
+							left = (i == 1 and CREATURE),
+							right = tostring(cr > 0 and app.NPCNameFromID[cr] or cr),
+						});
+					end
+				end
+			end
+		end,
+	}),
 	CreateInformationType("criteriaID", { text = "Criteria ID" }),
 	CreateInformationType("currencyID", { text = "Currency ID" }),
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),

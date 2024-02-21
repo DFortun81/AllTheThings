@@ -23,6 +23,8 @@ for key,value in pairs({
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
 	["AVAILABILITY"] = "Availability";
+	["CREATURES_COUNT"] = "[%s Creatures]";
+	["CREATURES_LIST"] = "Creatures List";
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
 	["LAYER"] = "Layer";

@@ -983,23 +983,6 @@ local function RowOnEnter(self)
 			end
 		end
 	end
-	if reference.crs then
-		if app.Settings:GetTooltipSetting("creatureID") then
-			for i,cr in ipairs(reference.crs) do
-				tinsert(info, {
-					left = (i == 1 and CREATURE),
-					right = tostring(cr > 0 and app.NPCNameFromID[cr] or "") .. " (" .. cr .. ")",
-				});
-			end
-		else
-			for i,cr in ipairs(reference.crs) do
-				tinsert(info, {
-					left = (i == 1 and CREATURE),
-					right = tostring(cr > 0 and app.NPCNameFromID[cr] or cr),
-				});
-			end
-		end
-	end
 	
 	
 	if reference.cost then

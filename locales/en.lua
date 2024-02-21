@@ -735,6 +735,8 @@ for key, value in pairs({
 	["ARTIFACT_ID"] = "Artifact ID";
 	["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
 	["CREATURE_ID"] = "Creature ID";
+	["CREATURES_COUNT"] = "[%s Creatures]";
+	["CREATURES_LIST"] = "Creatures List";
 	["CURRENCY_ID"] = "Currency ID";
 	["DIFFICULTY_ID"] = "Difficulty ID";
 	["ENCOUNTER_ID"] = "Encounter ID";

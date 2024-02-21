@@ -9483,20 +9483,6 @@ RowOnEnter = function (self)
 	-- elseif refQuestID and reference.retries and not reference.itemID then
 	-- 	GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
 	end
-	if reference.crs then
-		-- extreme amounts of creatures tagged, then only list a summary of how many...
-		if #reference.crs > 25 then
-			GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
-		elseif app.Settings:GetTooltipSetting("creatureID") then
-			for i,cr in ipairs(reference.crs) do
-				GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]) .. " (" .. cr .. ")");
-			end
-		else
-			for i,cr in ipairs(reference.crs) do
-				GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]));
-			end
-		end
-	end
 	local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
 	if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
 		local standingId, offset = app.GetReputationStanding(reference.minReputation)
