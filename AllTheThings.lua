@@ -9506,9 +9506,11 @@ RowOnEnter = function (self)
 			});
 		end
 	-- elseif refQuestID and reference.retries and not reference.itemID then
+	--[[
 		tinsert(info, {
 			left = L.QUEST_MAY_BE_REMOVED .. tostring(reference.retries),
 		});
+	--]]
 	end
 	local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
 	if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
