@@ -49,3 +49,13 @@ api.FACTION_RACES = {
 		70, -- Dracthyr [Horde]
 	}
 };
+
+local isHuman, remainingTurnIns, totalTurnIns = app.RaceIndex == 1;
+api.AddReputationTooltipInfo = function(tooltipInfo, text, repPerTurnIn, maxReputation)
+	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
+	local remainingTurnIns, totalTurnIns = math.ceil((maxReputation - reputation) / repPerTurnIn), math.ceil(maxReputation / repPerTurnIn);
+	tooltipInfo[#tooltipInfo + 1] = {
+		left = text, right = (totalTurnIns - remainingTurnIns) .. " / " .. totalTurnIns .. " (" .. remainingTurnIns .. ")",
+		r = 1, g = 1, b = 1
+	};
+end

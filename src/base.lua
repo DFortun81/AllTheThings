@@ -272,7 +272,11 @@ local SetATTTooltip = function(self, text)
 	self:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 		GameTooltip:SetText(text, nil, nil, nil, nil, true);
-		if self.OnTooltip then self:OnTooltip(); end
+		if self.OnTooltip then
+			local tooltipInfo = {};
+			self:OnTooltip(tooltipInfo);
+			app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, tooltipInfo);
+		end
 		GameTooltip:Show();
 	end);
 	self:SetScript("OnLeave", function(self)

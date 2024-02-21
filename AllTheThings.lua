@@ -10099,7 +10099,7 @@ RowOnEnter = function (self)
 	-- Attach all of the Information to the tooltip.
 	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 	wipe(info);	-- Temporary, until 
-	if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
+	if reference.OnTooltip then reference:OnTooltip(info); end
 
 	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 		if reference.g then
