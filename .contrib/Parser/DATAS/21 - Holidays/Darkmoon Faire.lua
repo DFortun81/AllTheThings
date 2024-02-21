@@ -149,44 +149,45 @@ local TATTERED_DARKMOON_PRIZE_TICKET = i(19182, {	-- Tattered Darkmoon Faire Pri
 -- The "More" quests appear to be infinitely repeatable, with 0 reputation gains.
 -- local TIER_FIVE_MAX_REPUTATION = { 909, HONORED - 1 };	-- Darkmoon Faire, must be less than Honored
 
-local OnTooltipForDarkmoonFaire = [[function(t)
+local OnTooltipForDarkmoonFaire = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 -- #if AFTER TBC
-		local repPerDeckTurnIn = isHuman and 385 or 350;
-		local repPerTierTurnIn = isHuman and 275 or 250;
+		local repPerTierTurnIn = 250;
 -- #else
-		local repPerDeckTurnIn = isHuman and 165 or 150;
-		local repPerTierTurnIn = isHuman and 110 or 100;
+		local repPerTierTurnIn = 100;
 -- #endif
 		local tierOneMaxRep = ]] .. TIER_ONE_MAX_REPUTATION[2] .. [[;
 		if reputation < tierOneMaxRep then
-			local x, n = math.ceil((tierOneMaxRep - reputation) / repPerDeckTurnIn), math.ceil(tierOneMaxRep / repPerDeckTurnIn);
-			GameTooltip:AddDoubleLine("Complete Tier 1 Quests", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Complete Tier 1 Quests", repPerTierTurnIn, tierOneMaxRep);
+		else
+			local tierTwoMaxRep = ]] .. TIER_TWO_MAX_REPUTATION[2] .. [[;
+			if reputation < tierTwoMaxRep then
+				addRepInfo(tooltipInfo, reputation, "Complete Tier 2 Quests", repPerTierTurnIn, tierTwoMaxRep);
+			else
+				local tierThreeMaxRep = ]] .. TIER_THREE_MAX_REPUTATION[2] .. [[;
+				if reputation < tierThreeMaxRep then
+					addRepInfo(tooltipInfo, reputation, "Complete Tier 3 Quests", repPerTierTurnIn, tierThreeMaxRep);
+				else
+					local tierFourMaxRep = ]] .. TIER_FOUR_MAX_REPUTATION[2] .. [[;
+					if reputation < tierFourMaxRep then
+						addRepInfo(tooltipInfo, reputation, "Complete Tier 4 Quests", repPerTierTurnIn, tierFourMaxRep);
+					else
+						local tierFiveMaxRep = ]] .. TIER_FIVE_MAX_REPUTATION[2] .. [[;
+						if reputation < tierFiveMaxRep then
+							addRepInfo(tooltipInfo, reputation, "Complete Tier 5 Quests", repPerTierTurnIn, tierFiveMaxRep);
+						end
+					end
+				end
+			end
 		end
-		local tierTwoMaxRep = ]] .. TIER_TWO_MAX_REPUTATION[2] .. [[;
-		if reputation >= tierOneMaxRep and reputation < tierTwoMaxRep then
-			local x, n = math.ceil((tierTwoMaxRep - reputation) / repPerDeckTurnIn), math.ceil(tierTwoMaxRep / repPerDeckTurnIn);
-			GameTooltip:AddDoubleLine("Complete Tier 2 Quests", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		local tierThreeMaxRep = ]] .. TIER_THREE_MAX_REPUTATION[2] .. [[;
-		if reputation >= tierTwoMaxRep and reputation < tierThreeMaxRep then
-			local x, n = math.ceil((tierThreeMaxRep - reputation) / repPerDeckTurnIn), math.ceil(tierThreeMaxRep / repPerDeckTurnIn);
-			GameTooltip:AddDoubleLine("Complete Tier 3 Quests", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		local tierFourMaxRep = ]] .. TIER_FOUR_MAX_REPUTATION[2] .. [[;
-		if reputation >= tierThreeMaxRep and reputation < tierFourMaxRep then
-			local x, n = math.ceil((tierFourMaxRep - reputation) / repPerDeckTurnIn), math.ceil(tierFourMaxRep / repPerDeckTurnIn);
-			GameTooltip:AddDoubleLine("Complete Tier 4 Quests", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		local tierFiveMaxRep = ]] .. TIER_FIVE_MAX_REPUTATION[2] .. [[;
-		if reputation >= tierFourMaxRep and reputation < tierFiveMaxRep then
-			local x, n = math.ceil((tierFiveMaxRep - reputation) / repPerDeckTurnIn), math.ceil(tierFiveMaxRep / repPerDeckTurnIn);
-			GameTooltip:AddDoubleLine("Complete Tier 5 Quests", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		local x, n = math.ceil((42000 - reputation) / repPerDeckTurnIn), math.ceil(42000 / repPerDeckTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Decks.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+-- #if AFTER TBC
+		local repPerDeckTurnIn = 350;
+-- #else
+		local repPerDeckTurnIn = 150;
+-- #endif
+		addRepInfo(tooltipInfo, reputation, "Turn in Decks.", repPerDeckTurnIn, 42000);
 	end
 end]];
 
