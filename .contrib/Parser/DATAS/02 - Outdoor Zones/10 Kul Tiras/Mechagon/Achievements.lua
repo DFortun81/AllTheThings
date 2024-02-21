@@ -61,7 +61,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13475),	-- Junkyard Scavenger
-			ach(13476),	-- Junkyard Tinkerer
+			ach(13476, {	-- Junkyard Tinkerer
+				["_noautomation"] = true,
+			}),
 			ach(13791, {	-- Making the Mount
 				["sym"] = {{ "achievement_criteria" }},
 			}),
