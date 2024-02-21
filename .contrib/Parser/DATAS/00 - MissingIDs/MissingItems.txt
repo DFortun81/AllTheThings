@@ -18612,7 +18612,6 @@ i(90659),	-- Jasmine Tea \\ ine Tea
 i(90660),	-- Black Tea \\ k Tea
 i(90715),	-- Charred Glyph \\ red Glyph
 i(90716),	-- Good Fortune \\ Fortune
-i(90735),	-- Goodies from Nomi \\ ies from Nomi
 i(90892),	-- Winter Veil Gift \\ er Veil Gift
 i(90986),	-- Ruby Bracelet \\ Bracelet
 i(91030),	-- Glowing Eye \\ ing Eye

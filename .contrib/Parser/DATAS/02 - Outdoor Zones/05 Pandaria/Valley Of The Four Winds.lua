@@ -957,6 +957,10 @@ root(ROOTS.Zones, {
 									{ "n", 64337 },	-- Nomi
 									{ "i", 86425 },	-- Cooking School Bell
 								},
+								["groups"] = {
+									currency(402),	-- Ironpaw Token
+									i(90735),	-- Goodies from Nomi
+								},
 							}),
 							q(31471, {	-- Agile as a Tiger
 								["sourceQuests"] = { 31470 },	-- Way of the Wok

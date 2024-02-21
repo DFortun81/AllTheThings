@@ -20,7 +20,7 @@ local COOKING_AWARD_GROUPS = {
 	-- #if AFTER 5.0.4
 	currency(81),	-- Epicurean's Award
 	-- #else
-	currency(402),	-- Chef's Award
+	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
 	-- #endif
 };
 local FISHING_AWARD_GROUPS = {
