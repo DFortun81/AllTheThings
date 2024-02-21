@@ -59,3 +59,11 @@ api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTur
 		r = 1, g = 1, b = 1
 	};
 end
+api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation, multiplier)
+	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
+	local remainingTurnIns, totalTurnIns = math.ceil((maxReputation - reputation) / repPerTurnIn), math.ceil(maxReputation / repPerTurnIn);
+	tooltipInfo[#tooltipInfo + 1] = {
+		left = text, right = ((totalTurnIns - remainingTurnIns) * multiplier) .. " / " .. (totalTurnIns * multiplier) .. " (" .. (remainingTurnIns * multiplier) .. ")",
+		r = 1, g = 1, b = 1
+	};
+end

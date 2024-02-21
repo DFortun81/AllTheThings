@@ -1038,8 +1038,8 @@ local function RowOnEnter(self)
 	end
 	
 	-- Attach all of the Information to the tooltip.
-	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 	if reference.OnTooltip then reference:OnTooltip(info); end
+	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 
 	if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
 		if not reference.repeatable and app.Settings:GetTooltipSetting("Show:OtherCharacterQuests") then
@@ -2500,7 +2500,7 @@ local function OnInitForPopout(self, group)
 			usedtobuy.text = "Used to Buy";
 			usedtobuy.icon = "Interface\\Icons\\INV_Misc_Coin_01";
 			usedtobuy.description = "This tooltip dynamically calculates the total number you need based on what is still visible below this header.";
-			usedtobuy.OnTooltip = function(t)
+			usedtobuy.OnTooltip = function(t, tooltipInfo)
 				local total = 0;
 				for _,o in ipairs(t.g) do
 					if o.visible then
@@ -2520,7 +2520,10 @@ local function OnInitForPopout(self, group)
 						end
 					end
 				end
-				GameTooltip:AddDoubleLine("Total Needed", total);
+				tooltipInfo[#tooltipInfo + 1] = {
+					left = "Total Needed",
+					right = total
+				};
 			end
 			MergeObjects(usedtobuy.g, searchResults);
 			if not self.data.g then self.data.g = {}; end
@@ -2538,7 +2541,7 @@ local function OnInitForPopout(self, group)
 			tradedin.text = "Used For";
 			tradedin.icon = "Interface\\Icons\\INV_Misc_Coin_01";
 			tradedin.description = "This tooltip dynamically calculates the total number you need based on what is still visible below this header.";
-			tradedin.OnTooltip = function(t)
+			tradedin.OnTooltip = function(t, tooltipInfo)
 				local total = 0;
 				for _,o in ipairs(t.g) do
 					if o.visible then
@@ -2558,7 +2561,10 @@ local function OnInitForPopout(self, group)
 						end
 					end
 				end
-				GameTooltip:AddDoubleLine("Total Needed", total);
+				tooltipInfo[#tooltipInfo + 1] = {
+					left = "Total Needed",
+					right = total
+				};
 			end
 			MergeObjects(tradedin.g, searchResults);
 			if not self.data.g then self.data.g = {}; end

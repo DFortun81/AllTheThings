@@ -25,9 +25,6 @@ local CRUSADER_DAILY_OnClick = [[function(row, button)
 		return true;
 	end
 end]];
-local CRUSADER_DAILY_OnTooltip = [[function(t)
-	if t.ach then GameTooltip:AddLine("Requires " .. t.ach.text .. "."); end
-end]];
 local CRUSADER_DAILY_OnUpdate = [[function(t)
 	if not t.ach then
 		local f = _.SearchForField("achievementID", _.Faction == "Horde" and 2771 or 2817);
@@ -46,9 +43,6 @@ local SILVER_COVENTANT_DAILY_OnClick = [[function(row, button)
 		_:CreateMiniListForGroup(row.ref.ach);
 		return true;
 	end
-end]];
-local SILVER_COVENTANT_DAILY_OnTooltip = [[function(t)
-	if t.ach then GameTooltip:AddLine("Requires " .. t.ach.text .. "."); end
 end]];
 local SILVER_COVENTANT_DAILY_OnUpdate = [[function(t)
 	if not t.ach then
@@ -69,9 +63,6 @@ local SUNREAVERS_DAILY_OnClick = [[function(row, button)
 		return true;
 	end
 end]];
-local SUNREAVERS_DAILY_OnTooltip = [[function(t)
-	if t.ach then GameTooltip:AddLine("Requires " .. t.ach.text .. "."); end
-end]];
 local SUNREAVERS_DAILY_OnUpdate = [[function(t)
 	if not t.ach then
 		local f = _.SearchForField("achievementID", 3677);
@@ -84,6 +75,9 @@ local SUNREAVERS_DAILY_OnUpdate = [[function(t)
 			end
 		end
 	end
+end]];
+local FACTION_DAILY_OnTooltip = [[function(t, tooltipInfo)
+	if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
 end]];
 -- #IF ANYCLASSIC
 -- Forcibly changing visibility on groups is bad. These quests are impossible to see even in Debug unless actually being on the respective quest.
@@ -847,7 +841,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14143, {	-- A Leg Up (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -855,7 +849,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -1906,7 +1900,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["crs"] = {
 						34839,	-- Kvaldir Mist Binder
 						34838,	-- Kvaldir Reaver
@@ -1929,7 +1923,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14092, {	-- Breakfast Of Champions (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
@@ -1937,7 +1931,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["maps"] = { THE_STORM_PEAKS },
 					["isDaily"] = true,
@@ -1978,7 +1972,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Deathspeaker Kharos slain
@@ -1993,7 +1987,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Drottinn Hrothgar slain
@@ -2029,7 +2023,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/8 Hurl Spears at North Sea Kraken
@@ -2052,7 +2046,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14141, {	-- Gormok Wants His Snobolds (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
@@ -2060,7 +2054,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["maps"] = { THE_STORM_PEAKS },
 					["isDaily"] = true,
@@ -2081,7 +2075,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["cr"] = 34925,	-- North Sea Kraken
 					["isDaily"] = true,
 				})),
@@ -2259,7 +2253,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- Mistcaller Yngvar slain
@@ -2277,7 +2271,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- Ornolf the Scarred slain
@@ -2333,7 +2327,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14136, {	-- Rescue at Sea (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -2341,7 +2335,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -2379,7 +2373,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14140, {	-- Stop The Aggressors (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -2387,7 +2381,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -2927,7 +2921,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
+					["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/6 Fallen Hero's Spirit blessed
@@ -3269,7 +3263,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14144, {	-- The Light's Mercy (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -3277,7 +3271,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -4031,7 +4025,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
@@ -4039,7 +4033,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -4087,7 +4081,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = SILVER_COVENTANT_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["hordeQuestData"] = q(14142, {	-- You've Really Done It This Time, Kul (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -4095,7 +4089,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = SUNREAVERS_DAILY_OnTooltip,
+						["OnTooltip"] = FACTION_DAILY_OnTooltip,
 					}),
 					["isDaily"] = true,
 					["groups"] = {

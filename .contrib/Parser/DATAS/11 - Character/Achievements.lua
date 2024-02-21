@@ -64,12 +64,16 @@ local INSANE_IN_THE_MEMBRANE_OnUpdate = [[function(t)
 		t:SetAchievementCollected(t.achievementID, collected);
 	end
 end]];
-local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t)
+local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t, tooltipInfo)
 	local fs = t:CacheFactions();
 	if not fs then return; end
-	GameTooltip:AddLine(" ");
+	tinsert(tooltipInfo, { left = " " });
 	for i,f in ipairs(fs) do
-		GameTooltip:AddDoubleLine(" |T" .. f.icon .. ":0|t " .. f.text, _.GetCollectionIcon(f.saved), 1, 1, 1);
+		tinsert(tooltipInfo, {
+			left = " |T" .. f.icon .. ":0|t " .. f.text,
+			right = _.GetCollectionIcon(f.saved),
+			r = 1, g = 1, b = 1
+		});
 	end
 end]];
 root(ROOTS.Character, n(ACHIEVEMENTS, {

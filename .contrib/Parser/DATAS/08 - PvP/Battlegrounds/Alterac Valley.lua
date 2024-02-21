@@ -1,35 +1,19 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-local OnTooltipForAlteracValley = [[function(t)
+local OnTooltipForAlteracValley = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 -- #if BEFORE TBC
-		local repPerConcertedEffort = isHuman and 175 or 150;
-		local x, n = math.ceil((42000 - reputation) / repPerConcertedEffort), math.ceil(42000 / repPerConcertedEffort);
-		GameTooltip:AddDoubleLine("Concerted Efforts", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		addRepInfo(tooltipInfo, reputation, "Concerted Efforts", 150, 42000);
 -- #endif
-		local repPerFlagKill = isHuman and 427.9 or 389;
-		local x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
-		GameTooltip:AddDoubleLine("Kill the General", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-		repPerFlagKill = isHuman and 137.5 or 125;
-		x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
-		GameTooltip:AddDoubleLine("Kill a Captain", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-		repPerFlagKill = isHuman and 13.2 or 12;
-		x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
-		GameTooltip:AddDoubleLine("Kill a Commander", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-		repPerFlagKill = isHuman and 5.5 or 5;
-		x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
-		GameTooltip:AddDoubleLine("Kill an Air Master", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
+		addRepInfo(tooltipInfo, reputation, "Kill the General", 389, 42000);
+		addRepInfo(tooltipInfo, reputation, "Kill a Captain", 125, 42000);
+		addRepInfo(tooltipInfo, reputation, "Kill a Commander", 12, 42000);
+		addRepInfo(tooltipInfo, reputation, "Kill an Air Master", 5, 42000);
 		if reputation < 21000 then
-			repPerFlagKill = isHuman and 5.5 or 5;
-			x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
-			GameTooltip:AddDoubleLine("Kill a Guard", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Kill a Guard (To Revered)", 5, 21000);
 		end
 	end
 end]];

@@ -880,12 +880,12 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 					{ "i", 36860, 1 },	-- Eternal Fire
 					{ "i", 35627, 1 },	-- Eternal Shadow
 				},
-				["OnTooltip"] = [[function(t)
+				["OnTooltip"] = [[function(t, tooltipInfo)
 					if _.CurrentCharacter.Spells[55208] then
 						if GetSpellCooldown(55208) > 0 then
-							GameTooltip:AddLine("Your Titansteel cooldown is unavailable.");
+							tinsert(tooltipInfo, { left = "Your Titansteel cooldown is unavailable." });
 						else
-							GameTooltip:AddLine("Your Titansteel cooldown is available.");
+							tinsert(tooltipInfo, { left = "Your Titansteel cooldown is available." });
 						end
 					end
 				end]]

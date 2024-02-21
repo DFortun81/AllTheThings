@@ -101,36 +101,54 @@ local BREWFEST_REGALIA = {
 		["cost"] = BREWFEST_TOKEN_COST(100),
 	}),
 };
-local BREWFEST_VENDOR_OnTooltip = [[function(t)
+local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 	local itemID = 37829;
 	local item = _.SearchForField("itemID", itemID)[1];
 	local icon = "|T" .. item.icon .. ":0|t";
 	local link = item.link or RETRIEVING_DATA;
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddLine("One-Time Quests:");
+	tinsert(tooltipInfo, { left = " " });
+	tinsert(tooltipInfo, { left = "One-Time Quests:" });
 	local coren = _.IsQuestFlaggedCompleted(12491);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Direbrew's Dire Brew", _.GetCompletionIcon(coren));
+	tinsert(tooltipInfo, {
+		left = " " .. icon .. " 40 for Direbrew's Dire Brew",
+		right = _.GetCompletionIcon(coren)
+	});
 
 	-- #if AFTER WRATH
 	local pink = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 11120 or 11118);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Pink Elekks On Parade", _.GetCompletionIcon(pink));
+	tinsert(tooltipInfo, {
+		left = " " .. icon .. " 40 for Pink Elekks On Parade",
+		right = _.GetCompletionIcon(pink)
+	});
 	-- #endif
 
 	local chucked = _.IsQuestFlaggedCompleted(12022);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Chug and Chuck", _.GetCompletionIcon(chucked));
+	tinsert(tooltipInfo, {
+		left = " " .. icon .. " 10 for Chug and Chuck",
+		right = _.GetCompletionIcon(chucked)
+	});
 
 	local back = _.IsQuestFlaggedCompleted(11122);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for There And Back Again", _.GetCompletionIcon(back));
+	tinsert(tooltipInfo, {
+		left = " " .. icon .. " 10 for There And Back Again",
+		right = _.GetCompletionIcon(back)
+	});
 
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddLine("Daily Quests:");
+	tinsert(tooltipInfo, { left = " " });
+	tinsert(tooltipInfo, { left = "Daily Quests:" });
 	local barked = _.IsQuestFlaggedCompleted(11293);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 15 for Brewfest Barking", _.GetCollectionIcon(barked));
+	tinsert(tooltipInfo, {
+		left = " " .. icon .. " 15 for Brewfest Barking",
+		right = _.GetCollectionIcon(barked)
+	});
 
 	local invasion = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
-	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.GetCollectionIcon(invasion));
-	GameTooltip:AddLine(" " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)");
-	GameTooltip:AddLine("** Log out in a rested location and it will be reset after 8 hours.");
+	tinsert(tooltipInfo, {
+		left = " " .. icon .. " 10 for Dark Iron Invasion",
+		right = _.GetCollectionIcon(invasion)
+	});
+	tinsert(tooltipInfo, { left = " " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)" });
+	tinsert(tooltipInfo, { left = "** Log out in a rested location and it will be reset after 8 hours." });
 
 	local today = date("*t");
 	local start = time({day=20,month=9,year=today.year,hour=0,min=0,sec=0});
@@ -144,19 +162,19 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 		local secondsPerDay = 86400;
 		local totalDays = math.floor(difftime(ends, start) / secondsPerDay);
 		local m = 60 + (25 * totalDays);
-		GameTooltip:AddLine(" ");
-		GameTooltip:AddDoubleLine("Currently", GetItemCount(itemID, true) .. "x " .. icon .. " " .. link);
-		GameTooltip:AddDoubleLine("Total Possible*", m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. link);
+		tinsert(tooltipInfo, { left = " " });
+		tinsert(tooltipInfo, { left = "Currently", right = GetItemCount(itemID, true) .. "x " .. icon .. " " .. link });
+		tinsert(tooltipInfo, { left = "Total Possible*", right = m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. link });
 
 		local remaining = math.floor(difftime(ends, now) / secondsPerDay);
 		if remaining <= 1 then
 			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0);
-			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. link);
+			tinsert(tooltipInfo, { left = "Total Remaining*", right = baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. link });
 		else
 			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0) + (25 * remaining);
-			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. link);
+			tinsert(tooltipInfo, { left = "Total Remaining*", right = baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. link });
 		end
-		GameTooltip:AddLine("* Based on if you didn't miss a single day and only whole days count.");
+		tinsert(tooltipInfo, { left = "* Based on if you didn't miss a single day and only whole days count." });
 	end
 end]];
 

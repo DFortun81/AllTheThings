@@ -2,12 +2,16 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 local HK_OnUpdate = [[function(t) t:SetAchievementCollected(t.achievementID, GetPVPLifetimeStats() >= t.rank); end]];
-local HK_OnTooltip = [[function(t)
+local HK_OnTooltip = [[function(t, tooltipInfo)
 	local summary = "Get " .. t.rank .. " honorable kill" .. (t.rank == 1 and "" or "s") .. ".";
 	if not t.collected then
-		GameTooltip:AddDoubleLine(summary, select(1, GetPVPLifetimeStats()) .. " / " .. t.rank, 1, 1, 1);
+		tinsert(tooltipInfo, {
+			left = summary,
+			right = select(1, GetPVPLifetimeStats()) .. " / " .. t.rank,
+			r = 1, g = 1, b = 1
+		});
 	else
-		GameTooltip:AddLine(summary);
+		tinsert(tooltipInfo, { left = summary });
 	end
 end]];
 local THE_CONQUEROR_OnUpdate = [[function(t)
@@ -80,12 +84,24 @@ local THE_JUSTICAR_AND_THE_CONQUEROR_OnClick = [[function(row, button)
 		return true;
 	end
 end]];
-local THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip = [[function(t)
+local THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip = [[function(t, tooltipInfo)
 	if t.collectible then
-		GameTooltip:AddLine(" ");
-		GameTooltip:AddDoubleLine(" |T" .. t.wsg.icon .. ":0|t " .. t.wsg.text, _.GetCollectionIcon(t.wsg.standing == 8), 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.ab.icon .. ":0|t " .. t.ab.text, _.GetCollectionIcon(t.ab.standing == 8), 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.av.icon .. ":0|t " .. t.av.text, _.GetCollectionIcon(t.av.standing == 8), 1, 1, 1);
+		tinsert(tooltipInfo, { left = " " });
+		tinsert(tooltipInfo, {
+			left = " |T" .. t.wsg.icon .. ":0|t " .. t.wsg.text,
+			right = _.GetCollectionIcon(t.wsg.standing == 8),
+			r = 1, g = 1, b = 1
+		});
+		tinsert(tooltipInfo, {
+			left = " |T" .. t.ab.icon .. ":0|t " .. t.ab.text,
+			right = _.GetCollectionIcon(t.ab.standing == 8),
+			r = 1, g = 1, b = 1
+		});
+		tinsert(tooltipInfo, {
+			left = " |T" .. t.av.icon .. ":0|t " .. t.av.text,
+			right = _.GetCollectionIcon(t.av.standing == 8),
+			r = 1, g = 1, b = 1
+		});
 	end
 end]];
 root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {

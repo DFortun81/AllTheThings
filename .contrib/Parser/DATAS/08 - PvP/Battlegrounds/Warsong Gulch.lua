@@ -55,29 +55,22 @@ local HORDE_BATTLE_FOR_WSG_TIER_2 = {	-- Repeatables
 	8434,	-- Battle of Warsong Gulch
 	8435,	-- Battle of Warsong Gulch
 };
-local OnTooltipForWarsongGulch = [[function(t)
+local OnTooltipForWarsongGulch = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 -- #if BEFORE TBC
-		local repPerConcertedEffort = isHuman and 110 or 100;
-		local x, n = math.ceil((42000 - reputation) / repPerConcertedEffort), math.ceil(42000 / repPerConcertedEffort);
-		GameTooltip:AddDoubleLine("Concerted Efforts", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		addRepInfo(tooltipInfo, reputation, "Concerted Efforts", 100, 42000);
 -- #endif
-		local repPerFlagCapture = isHuman and 38.5 or 35;
-		local x, n = math.ceil((42000 - reputation) / repPerFlagCapture), math.ceil(42000 / repPerFlagCapture);
-		GameTooltip:AddDoubleLine("Flags Captured", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddLine(" Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", 1, 1, 1);
+		local repPerFlagCapture = 35;
+		addRepInfo(tooltipInfo, reputation, "Flags Captured", repPerFlagCapture, 42000);
+		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", r = 1, g = 1, b = 1 });
 -- #if SEASON_OF_DISCOVERY
 		if reputation < ]] .. HONORED .. [[ then
-			GameTooltip:AddLine(" ", 1, 1, 1);
-			GameTooltip:AddLine("Battle for Ashenvale PvP World Event:", 1, 1, 1);
-			local repPerKill = isHuman and 220 or 200;
-			local x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerKill), math.ceil(]] .. HONORED .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("  Defeat a Lieutenant (To Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			local repPerWin = isHuman and 660 or 600;
-			local x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerWin), math.ceil(]] .. HONORED .. [[ / repPerWin);
-			GameTooltip:AddDoubleLine("  Win the Battle (To Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			tinsert(tooltipInfo, { left = " " });
+			tinsert(tooltipInfo, { left = "Battle for Ashenvale PvP World Event:" });
+			addRepInfo(tooltipInfo, reputation, "  Defeat a Lieutenant (To Honored)", 200, ]] .. HONORED .. [[);
+			addRepInfo(tooltipInfo, reputation, "  Win the Battle (To Honored)", 600, ]] .. HONORED .. [[);
 		end
 -- #endif
 	end

@@ -1,20 +1,16 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-local OnTooltipForArathiBasin = [[function(t)
+local OnTooltipForArathiBasin = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 -- #if BEFORE TBC
-		local repPerConcertedEffort = isHuman and 110 or 100;
-		local x, n = math.ceil((42000 - reputation) / repPerConcertedEffort), math.ceil(42000 / repPerConcertedEffort);
-		GameTooltip:AddDoubleLine("Concerted Efforts", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		addRepInfo(tooltipInfo, reputation, "Concerted Efforts", 100, 42000);
 -- #endif
-		local repPerResourceTick = isHuman and 11 or 10;
-		local x, n = math.ceil((42000 - reputation) / repPerResourceTick), math.ceil(42000 / repPerResourceTick);
-		GameTooltip:AddDoubleLine("Total Resources", ((n - x) * 200) .. " / " .. (n * 200) .. " (" .. (x * 200) .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine("Resource Ticks", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddLine(" Every 200 or 150 Resources during AB Weekend.", 1, 1, 1);
+		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Resources", 10, 42000, 200);
+		addRepInfo(tooltipInfo, reputation, "Resource Ticks", 10, 42000);
+		tinsert(tooltipInfo, { left = " Every 200 or 150 Resources during AB Weekend.", r = 1, g = 1, b = 1 });
 	end
 end]];
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
