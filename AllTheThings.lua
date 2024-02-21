@@ -3519,7 +3519,7 @@ local function FillGroupsRecursive(group, FillData)
 		end
 	end
 end
--- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FillRunner to recursively follow the next layer of groups
+-- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FillData.Runner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	if SkipFillingGroup(group, FillData) then
@@ -3558,7 +3558,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	local g = group.g;
 	if g then
 		-- app.PrintDebug(".g",group.hash,#g)
-		local Run = app.FillRunner.Run;
+		local Run = FillData.Runner.Run;
 		-- Then nest anything further
 		for _,o in ipairs(g) do
 			Run(FillGroupsRecursiveAsync, o, FillData);
@@ -3583,7 +3583,8 @@ app.FillGroups = function(group)
 
 	-- Fill the group with all nestable content
 	if groupWindow then
-		local Runner = app.FillRunner;
+		local Runner = groupWindow:GetRunner();
+		FillData.Runner = Runner
 		Runner.OnEnd(groupWindow.StopProcessing);
 		groupWindow.StartProcessing();
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
@@ -10238,6 +10239,14 @@ local function RemoveEventHandlers(self)
 		end
 	end
 end
+-- returns a Runner specific to the 'self' window
+local function GetRunner(self)
+	local Runner = self.__Runner
+	if Runner then return Runner end
+	Runner = app.CreateRunner(self.Suffix)
+	self.__Runner = Runner
+	return Runner
+end
 function app:GetWindow(suffix, parent, onUpdate)
 	if app.GetCustomWindowParam(suffix, "reset") then
 		ResetWindow(suffix);
@@ -10259,6 +10268,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.StorePosition = StoreWindowPosition;
 		window.SetData = SetData;
 		window.BuildData = BuildData;
+		window.GetRunner = GetRunner;
 
 		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
@@ -11667,6 +11677,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			local currentMaps, mapID = {}, self.mapID
+
+			-- Reset the minilist Runner before building new data
+			self:GetRunner().Reset()
 
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups or are under Unsorted
 			results = CleanInheritingGroups(SearchForField("mapID", mapID), "sourceIgnored");
@@ -13656,12 +13669,13 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			end
 		end
 		app.HarvestRecipes = function()
-			app.FunctionRunner.SetPerFrame(100);
-			local Run = app.FunctionRunner.Run;
+			local Runner = self:GetRunner()
+			Runner.SetPerFrame(100);
+			local Run = Runner.Run;
 			for spellID,data in pairs(SearchForFieldContainer("spellID")) do
 				Run(CacheRecipeSchematic, spellID);
 			end
-			app.FunctionRunner.OnEnd(function()
+			Runner.OnEnd(function()
 				app.print("Harvested all Sourced Recipes & Reagents => [Reagents]")
 			end);
 		end
@@ -13802,9 +13816,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					updates["Recipes"] = nil;
 				end
 
-				app.FunctionRunner.Run(UpdateLocalizedCategories, self, updates);
-				app.FunctionRunner.Run(UpdateLearnedRecipes, self, updates);
-				app.FunctionRunner.Run(UpdateData, self, updates);
+				local Runner = self:GetRunner()
+				Runner.Run(UpdateLocalizedCategories, self, updates);
+				Runner.Run(UpdateLearnedRecipes, self, updates);
+				Runner.Run(UpdateData, self, updates);
 			end
 		end
 
