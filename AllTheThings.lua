@@ -1638,8 +1638,8 @@ local function Resolve_Find(results, groups, field, val)
 				results[#results + 1] = o
 			else
 				Resolve_Find(results, o.g, field, val)
+			end
 		end
-	end
 	end
 end
 local GetAchievementNumCriteria = GetAchievementNumCriteria

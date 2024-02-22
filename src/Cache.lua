@@ -625,8 +625,11 @@ if app.IsRetail then
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
 		for _,group in ipairs(cacheGroupForModItemID) do
 			modItemID = group.modItemID
-			if modItemID and modItemID ~= group.itemID then
-				CacheField(group, "itemID", modItemID)
+			if modItemID then
+				CacheField(group, "modItemID", modItemID)
+				if modItemID ~= group.itemID then
+					CacheField(group, "itemID", modItemID)
+				end
 			end
 		end
 		wipe(cacheGroupForModItemID)
@@ -709,7 +712,7 @@ local function GetRawField(field, id)
 	-- NOTE: Can be nil for simplicity in use
 	local container = rawget(currentCache, field)
 	if not container then return end
-	return rawget(container, id), field, id;
+	return rawget(container, id);
 end
 local function GetRawFieldContainer(field)
 	-- Returns: The actual table containing all groups which contain a given field
@@ -783,23 +786,23 @@ local function SearchForObject(field, id, require, allowMultiple)
 	-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
 	-- match requirement accuracy
 	if field == "itemID" then
-		-- if we're NOT searching for a plain itemID, we have to be more careful
-		local idBase = math_floor(id)
-		if idBase ~= id then
-			fcache = SearchForField(field, id);
-			if #fcache == 0 then
-				-- if we found no specific modItemID results, then we can revert to basic itemID search
+		-- try searching by modItemID cache, any results are the EXACT id searched for
+		fcache = GetRawField("modItemID", id)
+		if fcache and #fcache > 0 then
+			-- use modItemID as the field for 'require' since it returned results
+			field = "modItemID"
+		else
+			local idBase = math_floor(id)
+			-- if we're NOT searching for a plain itemID and found no results, we can revert to the plain itemID
+			if idBase ~= id and (not fcache or #fcache == 0) then
 				id = idBase
-				fcache = SearchForField(field, id)
-			else
-				-- otherwise use modItemID as the field for 'require' since it returned results
-				field = "modItemID"
+				fcache = nil
 			end
 		end
 	end
-	fcache = fcache or SearchForField(field, id);
-	count = #fcache;
-	if count == 0 then
+	fcache = fcache or GetRawField(field, id)
+	count = fcache and #fcache;
+	if not count or count == 0 then
 		-- app.PrintDebug("SFO",field,id,require,"0~")
 		return allowMultiple and app.EmptyTable or nil
 	end
