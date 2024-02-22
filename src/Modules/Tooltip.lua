@@ -697,7 +697,7 @@ if TooltipDataProcessor then
 			if type == "Player" then
 				local method = PLAYER_TOOLTIPS[id];
 				if method then method(self, target); end
-				if app.Settings:GetTooltipSetting("Others:Progress") then
+				if app.Settings:GetTooltipSetting("SocialProgress") then
 					local version = app.PlayerProgressCacheByGUID[id];
 					if version then
 						self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
