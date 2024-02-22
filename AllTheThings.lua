@@ -9376,7 +9376,7 @@ RowOnEnter = function (self)
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
 	
-	local info = {};
+	local tooltipInfo = {};
 
 	local tooltipAnchor;
 	local initialBuild = not GameTooltip.IsRefreshing;
@@ -9421,7 +9421,7 @@ RowOnEnter = function (self)
 		end
 		GameTooltip:AddLine(reference.text);
 		--[[
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = reference.text,
 		});
 		]]--
@@ -9462,13 +9462,13 @@ RowOnEnter = function (self)
 		if reference.total and reference.total >= 2 then
 			-- if collecting this reference type, then show Collection State
 			if reference.collectible then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.COLLECTION_PROGRESS,
 					right = GetCollectionText(reference.collected or reference.saved),
 				});
 			-- if completion/tracking is available, show Completion State
 			elseif reference.trackable then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.TRACKING_PROGRESS,
 					right = GetCompletionText(reference.saved),
 				});
@@ -9479,7 +9479,7 @@ RowOnEnter = function (self)
 	-- achievement progress. If it has a measurable statistic, show it under the achievement description
 	if reference.achievementID then
 		if reference.statistic then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.PROGRESS,
 				right = reference.statistic,
 			});
@@ -9490,20 +9490,20 @@ RowOnEnter = function (self)
 	if title then
 		local left, right = DESCRIPTION_SEPARATOR:split(title);
 		if right then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = left,
 				right = right,
 				r = 1, g = 1, b = 1
 			});
 		else
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = title,
 				r = 1, g = 1, b = 1
 			});
 		end
 	-- elseif refQuestID and reference.retries and not reference.itemID then
 	--[[
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.QUEST_MAY_BE_REMOVED .. tostring(reference.retries),
 		});
 	--]]
@@ -9516,7 +9516,7 @@ RowOnEnter = function (self)
 		local msg = L["MINUMUM_STANDING"]
 		if offset ~= 0 then msg = msg .. " " .. offset end
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = msg,
 		});
 	end
@@ -9527,7 +9527,7 @@ RowOnEnter = function (self)
 		local msg = L["MAXIMUM_STANDING"]
 		if offset ~= 0 then msg = msg .. " " .. offset end
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = msg,
 		});
 	end
@@ -9541,12 +9541,12 @@ RowOnEnter = function (self)
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
 		if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
 		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = msg,
 		});
 	end
 	if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
-		app.AddQuestObjectives(info, reference);
+		app.AddQuestObjectives(tooltipInfo, reference);
 	end
 	if reference.providers then
 		local first = 1;
@@ -9595,18 +9595,18 @@ RowOnEnter = function (self)
 				end
 			end
 			if #lineStrings > 0 then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = (first == 1 and L.PROVIDERS),
 					right = app.TableConcat(lineStrings),
 				});
 			else
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = (first == 1 and L.PROVIDERS),
 					right = RETRIEVING_DATA,
 				});
 			end
 			if first > 25 then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					right = (L.AND_MORE):format(#reference.providers - first),
 				});
 				break
@@ -9618,14 +9618,14 @@ RowOnEnter = function (self)
 		-- TODO: Once we move the Battle Pets to their own class file, add this using settings.AppendInformationTextEntry to the speciesID InformationType.
 		local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 		if total then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"],
 			});
 		end
 	end
 	if reference.titleID then
 		-- TODO: Once we move the Titles to their own class file (in all environments), add this using settings.AppendInformationTextEntry to the titleID InformationType.
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			right = L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"],
 		});
 	end
@@ -9634,12 +9634,12 @@ RowOnEnter = function (self)
 		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
 		if oneTimeQuestCharGuid then
 			local charData = ATTCharacterData[oneTimeQuestCharGuid];
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.QUEST_ONCE_PER_ACCOUNT,
 				right = L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(charData and charData.text or UNKNOWN),
 			});
 		elseif oneTimeQuestCharGuid == false then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.QUEST_ONCE_PER_ACCOUNT,
 				color = "ffcf271b",
 			});
@@ -9650,14 +9650,14 @@ RowOnEnter = function (self)
 	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 		if app.Settings:GetTooltipSetting("creatureID") then
 			for i,qg in ipairs(reference.qgs) do
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = (k == 1 and L.QUEST_GIVER),
 					right = tostring(app.NPCNameFromID[qg]) .. " (" .. qg .. ")",
 				});
 			end
 		else
 			for i,qg in ipairs(reference.qgs) do
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = (k == 1 and L.QUEST_GIVER),
 					right = tostring(app.NPCNameFromID[qg]),
 				});
@@ -9665,28 +9665,28 @@ RowOnEnter = function (self)
 		end
 	end
 	if reference.isWorldQuest then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.DURING_WQ_ONLY,
 		});
 	end
 	if reference.isDaily then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.COMPLETED_DAILY,
 		});
 	elseif reference.isWeekly then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.COMPLETED_WEEKLY,
 		});
 	elseif reference.isMonthly then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.COMPLETED_MONTHLY,
 		});
 	elseif reference.isYearly then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.COMPLETED_YEARLY,
 		});
 	elseif reference.repeatable then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.COMPLETED_MULTIPLE,
 		});
 	end
@@ -9720,13 +9720,13 @@ RowOnEnter = function (self)
 					icon = nil;
 					amount = GetMoneyString(v[2]);
 				end
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = (k == 1 and L["COST"]),
 					right = amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA),
 				});
 			end
 		else
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.COST,
 				right = GetMoneyString(reference.cost),
 			});
@@ -9735,20 +9735,20 @@ RowOnEnter = function (self)
 
 	-- TODO: Convert this to an InformationType.
 	if reference.achievementID and reference.criteriaID then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.CRITERIA_FOR,
 			right = GetAchievementLink(reference.achievementID),
 		});
 	end
 	if app.Settings:GetTooltipSetting("Progress") then
-		tinsert(info, 1, { progress = GetProgressTextForTooltip(reference) });
+		tinsert(tooltipInfo, 1, { progress = GetProgressTextForTooltip(reference) });
 	end
 
 	-- Additional information (search will insert this information if found in search)
 	if GameTooltip.ATTAttachComplete == nil then
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'",
 				color = app.Colors.TooltipDescription,
 				wrap = true,
@@ -9757,7 +9757,7 @@ RowOnEnter = function (self)
 		end
 
 		-- Add any ID toggle fields
-		app.ProcessInformationTypes(info, reference);
+		app.ProcessInformationTypes(tooltipInfo, reference);
 
 		-- Tooltip for something which was not attached via search, so mark it as complete here
 		GameTooltip.ATTAttachComplete = true;
@@ -9765,7 +9765,7 @@ RowOnEnter = function (self)
 
 	-- Has a symlink for additonal information
 	if reference.sym then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.SYM_ROW_INFORMATION,
 			wrap = true,
 		});
@@ -9773,14 +9773,14 @@ RowOnEnter = function (self)
 
 	-- Ignored for Source/Progress
 	if reference.sourceIgnored then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.DOES_NOT_CONTRIBUTE_TO_PROGRESS,
 			wrap = true,
 		});
 	end
 	-- Further conditional texts that can be displayed
 	if reference.timeRemaining then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = app.GetColoredTimeRemaining(reference.timeRemaining),
 		});
 	end
@@ -9818,12 +9818,12 @@ RowOnEnter = function (self)
 					if totalItems > 0 then
 						chance = 100 / totalItems;
 						color = GetProgressColor(chance / 100);
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = L["LOOT_TABLE_CHANCE"],
 							right = "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r",
 						});
 					else
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = L["LOOT_TABLE_CHANCE"],
 							right = "N/A",
 						});
@@ -9854,7 +9854,7 @@ RowOnEnter = function (self)
 							color = GetProgressColor(chance / 100);
 							-- print out the specs with min items
 							local specString = GetSpecsString(rollSpec, true, true) or "???";
-							tinsert(info, {
+							tinsert(tooltipInfo, {
 								left = legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],
 								right = specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r",
 							});
@@ -9876,12 +9876,12 @@ RowOnEnter = function (self)
 							if totalItems > 0 then
 								chance = 100 / (totalItems - specHits[id]);
 								color = GetProgressColor(chance / 100);
-								tinsert(info, {
+								tinsert(tooltipInfo, {
 									left = L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL],
 									right = "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r",
 								});
 							else
-								tinsert(info, {
+								tinsert(tooltipInfo, {
 									left = L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL],
 									right = "N/A",
 								});
@@ -9902,12 +9902,12 @@ RowOnEnter = function (self)
 			customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
 			local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or "[MISSING_LOCALE_KEY]");
 			if not app.CurrentCharacter.CustomCollects[c] then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = "|cffc20000" .. requires .. ":|r " .. icon_color_str,
 					right = customCollectEx["desc"] or "",
 				});
 			else
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = requires .. ": " .. icon_color_str,
 					right = customCollectEx["desc"] or "",
 				});
@@ -9950,23 +9950,23 @@ RowOnEnter = function (self)
 			end
 		end
 		if prereqs and #prereqs > 0 then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.PREREQUISITE_QUESTS,
 			});
-			AddQuestInfoToTooltip(info, prereqs);
+			AddQuestInfoToTooltip(tooltipInfo, prereqs);
 		end
 		if bc and #bc > 0 then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.BREADCRUMBS_WARNING,
 			});
-			AddQuestInfoToTooltip(info, bc);
+			AddQuestInfoToTooltip(tooltipInfo, bc);
 		end
 	end
 
 	-- Show Breadcrumb information
 	local lockedWarning;
 	if reference.isBreadcrumb then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.THIS_IS_BREADCRUMB,
 			color = app.Colors.Breadcrumb,
 		});
@@ -9989,27 +9989,27 @@ RowOnEnter = function (self)
 			end
 			if isBreadcrumbAvailable then
 				-- The character is able to accept the breadcrumb quest without Party Sync
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.BREADCRUMB_PARTYSYNC,
 				});
-				AddQuestInfoToTooltip(info, nextq);
+				AddQuestInfoToTooltip(tooltipInfo, nextq);
 			elseif reference.DisablePartySync == false then
 				-- unknown if party sync will function for this Thing
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.BREADCRUMB_PARTYSYNC_4,
 					color = app.Colors.LockedWarning,
 				});
-				AddQuestInfoToTooltip(info, nextq);
+				AddQuestInfoToTooltip(tooltipInfo, nextq);
 			elseif not reference.DisablePartySync then
 				-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.BREADCRUMB_PARTYSYNC_2,
 					color = app.Colors.LockedWarning,
 				});
-				AddQuestInfoToTooltip(info, nextq);
+				AddQuestInfoToTooltip(tooltipInfo, nextq);
 			else
 				-- known to not be possible in party sync
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.DISABLE_PARTYSYNC,
 				});
 			end
@@ -10024,7 +10024,7 @@ RowOnEnter = function (self)
 		local critKey, critValue;
 		local critFuncs = app.QuestLockCriteriaFunctions;
 		local critFunc;
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.UNAVAILABLE_WARNING_FORMAT:format(lockCriteria[1]),
 			color = app.Colors.LockedWarning,
 		});
@@ -10036,7 +10036,7 @@ RowOnEnter = function (self)
 			if critFunc then
 				local label = critFuncs["label_"..critKey];
 				local text = critFuncs["text_"..critKey](critValue);
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
 				});
 			end
@@ -10050,7 +10050,7 @@ RowOnEnter = function (self)
 		local critFunc = critFuncs["questID"];
 		local label = critFuncs["label_questID"];
 		local text;
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = L.UNAVAILABLE_WARNING_FORMAT:format(1),
 			color = app.Colors.LockedWarning,
 		});
@@ -10058,7 +10058,7 @@ RowOnEnter = function (self)
 			critValue = altQuests[i];
 			if critFunc then
 				text = critFuncs["text_questID"](critValue);
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
 				});
 			end
@@ -10069,19 +10069,19 @@ RowOnEnter = function (self)
 	if not lockedWarning and reference.locked then
 		if reference.DisablePartySync == false then
 			-- unknown if party sync will function for this Thing
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.BREADCRUMB_PARTYSYNC_4,
 				color = app.Colors.LockedWarning,
 			});
 		elseif not reference.DisablePartySync then
 			-- should be possible in party sync
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.BREADCRUMB_PARTYSYNC_3,
 				color = app.Colors.LockedWarning,
 			});
 		else
 			-- known to not be possible in party sync
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.DISABLE_PARTYSYNC,
 			});
 		end
@@ -10091,17 +10091,17 @@ RowOnEnter = function (self)
 		if reference.g then
 			-- If we're at the Auction House
 			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
 				});
 			else
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
 				});
 			end
 		end
 		if refQuestID then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.QUEST_ROW_INSTRUCTIONS,
 			});
 		end
@@ -10110,47 +10110,47 @@ RowOnEnter = function (self)
 	if self.index == 0 then
 		local owner = self:GetParent():GetParent();
 		if owner and owner.isLocked then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.TOP_ROW_TO_UNLOCK,
 			});
 		elseif app.Settings:GetTooltipSetting("Show:TooltipHelp") then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L.TOP_ROW_TO_LOCK,
 			});
 		end
 	end
 
 	--[[ ROW DEBUGGING ]
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "Self",
 		right = tostring(reference),
 	});
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "Base",
 		right = tostring(getmetatable(reference)),
 	});
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "Parent",
 		right = tostring(rawget(reference, "parent")),
 	});
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "ParentText",
 		right = tostring((rawget(reference, "parent") or app.EmptyTable).text),
 	});
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "SourceParent",
 		right = tostring(rawget(reference, "sourceParent")),
 	});
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "SourceParentText",
 		right = tostring((rawget(reference, "sourceParent") or app.EmptyTable).text),
 	});
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "-- Ref Fields:",
 	});
 	for key,val in pairs(reference) do
 		if key ~= "lore" and key ~= "description" then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = key,
 				right = tostring(val),
 			});
@@ -10178,16 +10178,16 @@ RowOnEnter = function (self)
 		-- "itemID",
 		-- "modItemID"
 	};
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "-- Extra Fields:",
 	});
 	for _,key in ipairs(fields) do
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = key,
 			right = tostring(reference[key]),
 		});
 	end
-	tinsert(info, {
+	tinsert(tooltipInfo, {
 		left = "Row Indent",
 		right = tostring(CalculateRowIndent(reference)),
 	});
@@ -10195,7 +10195,7 @@ RowOnEnter = function (self)
 	
 	
 	-- Attach all of the Information to the tooltip. (again, this is temporary until some more adjustments are made!)
-	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
+	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, tooltipInfo);
 	
 	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 	if initialBuild then GameTooltip:SetATTReferenceForTexture(reference); end

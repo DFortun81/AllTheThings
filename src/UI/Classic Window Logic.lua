@@ -769,7 +769,7 @@ local function RowOnEnter(self)
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
 	
 	-- Build tooltip information.
-	local info = {};
+	local tooltipInfo = {};
 	GameTooltip:ClearLines();
 	GameTooltip:ClearATTReferenceTexture();
 	if self:GetCenter() > (UIParent:GetWidth() / 2) then
@@ -802,7 +802,7 @@ local function RowOnEnter(self)
 	local linesByText = {}, title;
 	local numLines = GameTooltip:NumLines();
 	if numLines < 1 then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = reference.text,
 		});
 	else
@@ -814,7 +814,7 @@ local function RowOnEnter(self)
 	
 	if app.Settings:GetTooltipSetting("Progress") then
 		if reference.trackable and reference.total and reference.total >= 2 then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = "Tracking Progress",
 				right = GetCompletionText(reference.saved),
 			});
@@ -825,19 +825,19 @@ local function RowOnEnter(self)
 	if title then
 		local left, right = DESCRIPTION_SEPARATOR:split(title);
 		if right then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = left,
 				right = right,
 				r = 1, g = 1, b = 1,
 			});
 		else
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = title,
 				r = 1, g = 1, b = 1,
 			});
 		end
 	elseif reference.retries then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = "Failed to acquire information. This may have been removed from the game.",
 			r = 1, g = 1, b = 1,
 		});
@@ -845,7 +845,7 @@ local function RowOnEnter(self)
 	
 	local progressText = GetProgressTextForTooltip(reference);
 	if progressText then
-		tinsert(info, { progress = progressText });
+		tinsert(tooltipInfo, { progress = progressText });
 	end
 	
 	if reference.minReputation and not reference.maxReputation then
@@ -853,7 +853,7 @@ local function RowOnEnter(self)
 		local msg = "Requires a minimum standing of"
 		if offset ~= 0 then msg = msg .. " " .. offset end
 		msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = msg,
 			wrap = true,
 		});
@@ -863,7 +863,7 @@ local function RowOnEnter(self)
 		local msg = "Requires a standing lower than"
 		if offset ~= 0 then msg = msg .. " " .. offset end
 		msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = msg,
 			wrap = true,
 		});
@@ -877,7 +877,7 @@ local function RowOnEnter(self)
 			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " and"
 			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
 			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. ".";
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = msg,
 				wrap = true,
 			});
@@ -885,7 +885,7 @@ local function RowOnEnter(self)
 			local msg = "Requires a minimum standing of"
 			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
 			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = msg,
 				wrap = true,
 			});
@@ -893,7 +893,7 @@ local function RowOnEnter(self)
 			msg = "Requires a standing lower than"
 			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
 			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = msg,
 				wrap = true,
 			});
@@ -913,13 +913,13 @@ local function RowOnEnter(self)
 				app.Sort(knownBy, function(a, b)
 					return a[2] > b[2];
 				end);
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = "Known by:",
 					color = app.Colors.TooltipDescription,
 				});
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = ("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), "")),
 						right = data[2] .. " / " .. data[3],
 					});
@@ -950,7 +950,7 @@ local function RowOnEnter(self)
 					providerString = providerString .. ' (' .. providerID .. ')';
 				end
 			end
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = (counter == 0 and "Provider(s)"),
 				right = providerString,
 			});
@@ -959,10 +959,10 @@ local function RowOnEnter(self)
 	end
 
 	if reference.questID and not reference.objectiveID then
-		app.AddQuestObjectives(info, reference);
+		app.AddQuestObjectives(tooltipInfo, reference);
 	end
 	if reference.sym then
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = "Right click to view more information.",
 			r = 0.8, g = 0.8, b = 1,
 			wrap = true,
@@ -974,14 +974,14 @@ local function RowOnEnter(self)
 	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 		if app.Settings:GetTooltipSetting("creatureID") then
 			for i,qg in ipairs(reference.qgs) do
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = (i == 1 and L.QUEST_GIVER),
 					right = tostring(qg > 0 and app.NPCNameFromID[qg] or "") .. " (" .. qg .. ")",
 				});
 			end
 		else
 			for i,qg in ipairs(reference.qgs) do
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = (i == 1 and L.QUEST_GIVER),
 					right = tostring(cr > 0 and app.NPCNameFromID[cr] or cr),
 				});
@@ -996,7 +996,7 @@ local function RowOnEnter(self)
 			for k,v in pairs(reference.cost) do
 				_ = v[1];
 				if _ == "g" then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = (k == 1 and "Cost"),
 						right = GetCoinTextureString(v[2]),
 					});
@@ -1015,14 +1015,14 @@ local function RowOnEnter(self)
 					if _ > 1 then
 						name = _ .. "x  " .. name;
 					end
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = (k == 1 and "Cost"),
 						right = name,
 					});
 				end
 			end
 		else
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = "Cost",
 				right = GetCoinTextureString(reference.cost),
 			});
@@ -1030,16 +1030,16 @@ local function RowOnEnter(self)
 	end
 	
 	-- Process all Information Types
-	app.ProcessInformationTypes(info, reference);
+	app.ProcessInformationTypes(tooltipInfo, reference);
 	
 	-- Show Breadcrumb information
-	if reference.isBreadcrumb then tinsert(info, { left = "This is a breadcrumb quest." }); end
+	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = "This is a breadcrumb quest." }); end
 	if reference.repeatable then
-		if reference.isDaily then tinsert(info, { left = "This can be completed daily." });
-		elseif reference.isWeekly then tinsert(info, { left = "This can be completed weekly." });
-		elseif reference.isMontly then tinsert(info, { left = "This can be completed monthly." });
-		elseif reference.isYearly then tinsert(info, { left = "This can be completed yearly." });
-		else tinsert(info, { left = "This can be completed multiple times.", wrap = true }); end
+		if reference.isDaily then tinsert(tooltipInfo, { left = "This can be completed daily." });
+		elseif reference.isWeekly then tinsert(tooltipInfo, { left = "This can be completed weekly." });
+		elseif reference.isMontly then tinsert(tooltipInfo, { left = "This can be completed monthly." });
+		elseif reference.isYearly then tinsert(tooltipInfo, { left = "This can be completed yearly." });
+		else tinsert(tooltipInfo, { left = "This can be completed multiple times.", wrap = true }); end
 	end
 
 	if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
@@ -1062,7 +1062,7 @@ local function RowOnEnter(self)
 				j = j + 1;
 			end
 			if j > 0 then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = "Incomplete on " .. desc:gsub("-" .. realmName, ""),
 					r = 1, g = 1, b = 1,
 					wrap = true,
@@ -1107,7 +1107,7 @@ local function RowOnEnter(self)
 		end
 
 		if prereqs and #prereqs > 0 then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = "This quest has an incomplete prerequisite quest that you need to complete first.",
 				wrap = true,
 			});
@@ -1115,14 +1115,14 @@ local function RowOnEnter(self)
 				local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 				local mapID = app.GetBestMapForGroup(prereq, currentMapID);
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = text,
 					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
 				});
 			end
 		end
 		if bc and #bc > 0 then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = "This quest has a breadcrumb quest that you may be unable to complete after completing this one.",
 				wrap = true,
 			});
@@ -1130,7 +1130,7 @@ local function RowOnEnter(self)
 				local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 				local mapID = app.GetBestMapForGroup(prereq, currentMapID);
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = text,
 					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
 				});
@@ -1141,13 +1141,13 @@ local function RowOnEnter(self)
 	if reference.g then
 		-- If we're at the Auction House
 		if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
 				r = 1, g = 1, b = 1,
 				wrap = true,
 			});
 		else
-			tinsert(info, {
+			tinsert(tooltipInfo, {
 				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
 				r = 1, g = 1, b = 1,
 				wrap = true,
@@ -1156,7 +1156,7 @@ local function RowOnEnter(self)
 	end
 	
 	-- Attach all of the Information to the tooltip.
-	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
+	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, tooltipInfo);
 	GameTooltip:SetATTReferenceForTexture(reference);
 	GameTooltip:Show();
 	

@@ -474,10 +474,10 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 		end
 	end
 end
-local function AttachTooltipInformation(tooltip, info)
-	if info and #info > 0 then
-		-- if app.Debugging then app.PrintTable(info) end
-		for _,entry in ipairs(info) do
+local function AttachTooltipInformation(tooltip, tooltipInfo)
+	if tooltipInfo and #tooltipInfo > 0 then
+		-- if app.Debugging then app.PrintTable(tooltipInfo) end
+		for _,entry in ipairs(tooltipInfo) do
 			AttachTooltipInformationEntry(tooltip, entry);
 		end
 	end
