@@ -697,11 +697,9 @@ if TooltipDataProcessor then
 			if type == "Player" then
 				local method = PLAYER_TOOLTIPS[id];
 				if method then method(self, target); end
-				if app.Settings:GetTooltipSetting("SocialProgress") then
-					local version = app.PlayerProgressCacheByGUID[id];
-					if version then
-						self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
-					end
+				local version = app.PlayerProgressCacheByGUID[id];
+				if version and app.Settings:GetTooltipSetting("SocialProgress") then
+					self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
 				end
 			elseif type == "Creature" or type == "Vehicle" then
 				if spawn_uid then
@@ -852,6 +850,10 @@ else
 						if type == "Player" then
 							local method = PLAYER_TOOLTIPS[guid];
 							if method then method(self, target); end
+							local version = app.PlayerProgressCacheByGUID[guid];
+							if version and app.Settings:GetTooltipSetting("SocialProgress") then
+								self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
+							end
 						elseif type == "Creature" or type == "Vehicle" then
 							if spawn_uid then
 								local showAliveTime = app.Settings:GetTooltipSetting("Alive");
