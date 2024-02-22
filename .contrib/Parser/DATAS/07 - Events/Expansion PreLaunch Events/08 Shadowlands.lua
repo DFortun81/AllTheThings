@@ -858,7 +858,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			n(173791, {	-- Crusader Adevald Ironbeard
-				["description"] = "Sells gear from the Shadowlands Pre-Launch event but you must have leftover tokens from the event to buy them.",
+				["description"] = "While this vendor and his items are still available, the currency required to buy the items is not.\nTagging the vendor and his goods as removed as otherwise they would show up as collectible.",
 				["coord"] = { 69.4, 23.3, ICECROWN },
 				["groups"] = sharedData({ ["cost"] = { { "c", 1754, 15 } } }, {	-- 15x Argent Commendation
 				-- Alliance items
