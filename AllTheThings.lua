@@ -2647,10 +2647,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- itemID should only be the itemID, not including modID
 		itemID = GetItemIDAndModID(paramB) or paramB;
 	end
-	
+
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	local working, info = false, {};
-	
+
 	if itemID and isTopLevelSearch then
 		-- Merge the source group for all matching Sources of the search results
 		local sourceGroup;
@@ -3378,12 +3378,37 @@ local function DetermineCraftedGroups(group, FillData)
 	end
 	return groups;
 end
+local function GetAllNestedGroupsByFunc(results, groups, func)
+	local g
+	for _,o in ipairs(groups) do
+		if func(o) then results[#results + 1] = o end
+		g = o.g
+		if g then
+			for _,t in ipairs(g) do
+				GetAllNestedGroupsByFunc(results, t, func)
+			end
+		end
+	end
+end
+local function GetNpcIDForDrops(group)
+	-- assuming for any 'crs' references on an encounter/header group that all crs are linked to the same resulting content
+	-- Fyrakk Assaults uses two headers with 'crs' test that when changing this check
+	return group.npcID or group.creatureID or (group.encounterID and group.crs and group.crs[1])
+end
 local function DetermineSymlinkGroups(group)
 	if group.sym then
 		-- app.PrintDebug("DSG-Now",group.hash);
 		local groups = ResolveSymbolicLink(group);
 		-- make sure this group doesn't waste time getting resolved again somehow
 		group.sym = nil;
+		if groups and #groups > 0 then
+			-- flag all nested symlinked content so that any NPC groups do not nest NPC data
+			local results = {}
+			GetAllNestedGroupsByFunc(results, groups, GetNpcIDForDrops)
+			for _,o in ipairs(results) do
+				o.NestNPCDataSkip = true
+			end
+		end
 		-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
 		return groups;
 	end
@@ -3402,10 +3427,9 @@ local NPCExpandHeaders = {
 -- Pulls in Common drop content for specific NPCs if any exists
 -- (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group, FillData)
-	-- assuming for any 'crs' references on an encounter/header group that all crs are linked to the same resulting content
-	-- Fyrakk Assaults uses two headers with 'crs' test that when changing this check
-	local npcID = group.npcID or group.creatureID or (group.encounterID and group.crs and group.crs[1]);
-	if npcID and FillData.NestNPCData then
+	if not FillData.NestNPCData or group.NestNPCDataSkip then return end
+	local npcID = GetNpcIDForDrops(group)
+	if npcID then
 		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
 		local npcGroups = SearchForField("npcID", npcID);
