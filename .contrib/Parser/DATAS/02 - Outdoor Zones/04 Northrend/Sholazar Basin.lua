@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForFrenzyheart = [[function(t)
+local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
 		local champion = t.champion;
@@ -9,19 +9,27 @@ local OnTooltipForFrenzyheart = [[function(t)
 			champion = _.SearchForField("questID", 12582)[1];
 			t.champion = champion;
 		end
-		GameTooltip:AddDoubleLine("Complete " .. (champion.text or RETRIEVING_DATA), _.GetCollectionIcon(champion.saved));
+		tinsert(tooltipInfo, {
+			left = "Complete " .. (champion.text or RETRIEVING_DATA),
+			right = _.GetCollectionIcon(champion.saved),
+			r = 1, g = 1, b = 1
+		});
 	elseif reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		GameTooltip:AddLine("Daily Quests:");
-		local chickenRep = isHuman and 550 or 500;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		tinsert(tooltipInfo, { left = "Daily Quests:" });
+		local chickenRep = 500;
 		local chicken = t.chicken;
 		if not chicken then
 			chicken = _.SearchForField("questID", 12702)[1];
 			t.chicken = chicken;
 		end
-		GameTooltip:AddDoubleLine(chicken.text or RETRIEVING_DATA, _.GetCollectionIcon(chicken.saved) .. " " .. chickenRep .. " Rep");
+		tinsert(tooltipInfo, {
+			left = " " .. (chicken.text or RETRIEVING_DATA),
+			right = _.GetCollectionIcon(chicken.saved),
+			r = 1, g = 1, b = 1
+		});
 
-		local rejekRep = isHuman and 550 or 500;
+		local rejekRep = 500;
 		local rejek = t.rejek;
 		if not rejek then
 			rejek = {};
@@ -36,10 +44,15 @@ local OnTooltipForFrenzyheart = [[function(t)
 		end
 		local completedAny = false;
 		for i,quest in ipairs(rejek) do if quest.saved then completedAny = true; break; end end
-		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Rejek:", _.GetCollectionIcon(completedAny) .. " " .. rejekRep .. " Rep");
-		for i,quest in ipairs(rejek) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
+		tinsert(tooltipInfo, {
+			left = "Complete 1 of 4 quests offered by Rejek:",
+			right = _.GetCollectionIcon(completedAny),
+		});
+		for i,quest in ipairs(rejek) do
+			tinsert(tooltipInfo, { left = "  " .. (quest.text or RETRIEVING_DATA) });
+		end
 
-		local vekgarRep = isHuman and 770 or 700;
+		local vekgarRep = 700;
 		local vekgar = t.vekgar;
 		if not vekgar then
 			vekgar = {};
@@ -52,15 +65,20 @@ local OnTooltipForFrenzyheart = [[function(t)
 			end
 			t.vekgar = vekgar;
 		end
-		GameTooltip:AddDoubleLine("Complete 1 of 3 quests offered by Vekgar:", _.GetCollectionIcon(vekgar[1].saved) .. " " .. vekgarRep .. " Rep");
-		for i,quest in ipairs(vekgar) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
-
-		local repPerDay = chickenRep + rejekRep + vekgarRep;
-		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
-		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		tinsert(tooltipInfo, {
+			left = "Complete 1 of 3 quests offered by Vekgar:",
+			right = _.GetCollectionIcon(vekgar[1].saved),
+		});
+		for i,quest in ipairs(vekgar) do
+			tinsert(tooltipInfo, {
+				left = "  " .. (quest.text or RETRIEVING_DATA),
+			});
+		end
+		
+		addRepInfo(tooltipInfo, reputation, "Complete Dailies Everyday", chickenRep + rejekRep + vekgarRep, 42000);
 	end
 end]];
-local OnTooltipForOracles = [[function(t)
+local OnTooltipForOracles = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
 		local hand = t.hand;
@@ -68,19 +86,26 @@ local OnTooltipForOracles = [[function(t)
 			hand = _.SearchForField("questID", 12689)[1];
 			t.hand = hand;
 		end
-		GameTooltip:AddDoubleLine("Complete " .. (hand.text or RETRIEVING_DATA), _.GetCollectionIcon(hand.saved));
+		tinsert(tooltipInfo, {
+			left = "Complete " .. (hand.text or RETRIEVING_DATA),
+			right = _.GetCollectionIcon(hand.saved),
+			r = 1, g = 1, b = 1
+		});
 	elseif reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		GameTooltip:AddLine("Daily Quests:");
-		local appeasingRep = isHuman and 550 or 500;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		tinsert(tooltipInfo, { left = "Daily Quests:" });
+		local appeasingRep = 500;
 		local appeasing = t.appeasing;
 		if not appeasing then
 			appeasing = _.SearchForField("questID", 12704)[1];
 			t.appeasing = appeasing;
 		end
-		GameTooltip:AddDoubleLine(appeasing.text or RETRIEVING_DATA, _.GetCollectionIcon(appeasing.saved) .. " " .. appeasingRep .. " Rep");
+		tinsert(tooltipInfo, {
+			left = " " .. (appeasing.text or RETRIEVING_DATA),
+			right = _.GetCollectionIcon(appeasing.saved)
+		});
 
-		local soodowRep = isHuman and 770 or 700;
+		local soodowRep = 700;
 		if not t.soodow then
 			local soodow = {};
 			for i,questID in ipairs({ 12761, 12762, 12705 }) do
@@ -92,10 +117,17 @@ local OnTooltipForOracles = [[function(t)
 			end
 			t.soodow = soodow;
 		end
-		GameTooltip:AddDoubleLine("Complete 1 of 3 quests offered by Oracle Soo-dow:", _.GetCollectionIcon(t.soodow[1].saved) .. " " .. soodowRep .. " Rep");
-		for i,quest in ipairs(t.soodow) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
+		tinsert(tooltipInfo, {
+			left = "Complete 1 of 3 quests offered by Oracle Soo-dow:",
+			right = _.GetCollectionIcon(t.soodow[1].saved)
+		});
+		for i,quest in ipairs(t.soodow) do
+			tinsert(tooltipInfo, {
+				left = "  " .. (quest.text or RETRIEVING_DATA)
+			});
+		end
 
-		local sooneeRep = isHuman and 550 or 500;
+		local sooneeRep = 500;
 		if not t.soonee then
 			local soonee = {};
 			for i,questID in ipairs({ 12735, 12737, 12736, 12726 }) do
@@ -109,12 +141,17 @@ local OnTooltipForOracles = [[function(t)
 		end
 		local completedAny = false;
 		for i,quest in ipairs(t.soonee) do if quest.saved then completedAny = true; break; end end
-		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Oracle Soo-nee:", _.GetCollectionIcon(completedAny) .. " " .. sooneeRep .. " Rep");
-		for i,quest in ipairs(t.soonee) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
-
-		local repPerDay = appeasingRep + soodowRep + sooneeRep;
-		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
-		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		tinsert(tooltipInfo, {
+			left = "Complete 1 of 4 quests offered by Oracle Soo-nee:",
+			right = _.GetCollectionIcon(completedAny)
+		});
+		
+		for i,quest in ipairs(t.soonee) do
+			tinsert(tooltipInfo, {
+				left = "  " .. (quest.text or RETRIEVING_DATA)
+			});
+		end
+		addRepInfo(tooltipInfo, reputation, "Complete Dailies Everyday", appeasingRep + soodowRep + sooneeRep, 42000);
 	end
 end]];
 root(ROOTS.Zones, {

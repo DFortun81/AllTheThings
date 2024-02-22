@@ -31,7 +31,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			if f and #f > 0 then t.helm = f[1]; end
 		end
 		if t.helm.saved then
-			viscousRep = isHuman and 385 or 350;
+			viscousRep = 350;
 		else
 			tinsert(tooltipInfo, {
 				left = "Complete " .. (t.helm.text or RETRIEVING_DATA),
@@ -45,7 +45,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			if f and #f > 0 then t.monument = f[1]; end
 		end
 		if t.monument.saved then
-			callRep = isHuman and 385 or 350;
+			callRep = 350;
 		else
 			tinsert(tooltipInfo, {
 				left = "Complete " .. (t.monument.text or RETRIEVING_DATA),
@@ -59,7 +59,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			if f and #f > 0 then t.elements = f[1]; end
 		end
 		if t.elements.saved then
-			coldRep = isHuman and 385 or 350;
+			coldRep = 350;
 		else
 			tinsert(tooltipInfo, {
 				left = "Complete " .. (t.elements.text or RETRIEVING_DATA),
@@ -73,7 +73,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			if f and #f > 0 then t.spear = f[1]; end
 		end
 		if t.spear.saved then
-			dragonRep = isHuman and 550 or 500;
+			dragonRep = 500;
 		else
 			tinsert(tooltipInfo, {
 				left = "Complete " .. (t.spear.text or RETRIEVING_DATA),
@@ -90,20 +90,20 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = t.viscous.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.viscous.saved) .. " " .. viscousRep .. " Rep",
+				right = _.GetCollectionIcon(t.viscous.saved),
 				r = 1, g = 1, b = 1
 			});
 		end
 		local feedingRep = 0;
 		if reputation >= ]] .. REVERED .. [[ then
-			feedingRep = isHuman and 385 or 350;
+			feedingRep = 350;
 			if not t.feeding then
 				local f = _.SearchForField("questID", 13046);
 				if f and #f > 0 then t.feeding = f[1]; end
 			end
 			tinsert(tooltipInfo, {
 				left = t.feeding.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.feeding.saved) .. " " .. feedingRep .. " Rep",
+				right = _.GetCollectionIcon(t.feeding.saved),
 				r = 1, g = 1, b = 1
 			});
 		end
@@ -114,7 +114,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = t.call.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.call.saved) .. " " .. callRep .. " Rep",
+				right = _.GetCollectionIcon(t.call.saved),
 				r = 1, g = 1, b = 1
 			});
 		end
@@ -125,7 +125,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = t.cold.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.cold.saved) .. " " .. coldRep .. " Rep",
+				right = _.GetCollectionIcon(t.cold.saved),
 				r = 1, g = 1, b = 1
 			});
 		end
@@ -136,20 +136,20 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = t.dragon.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.dragon.saved) .. " " .. dragonRep .. " Rep",
+				right = _.GetCollectionIcon(t.dragon.saved),
 				r = 1, g = 1, b = 1
 			});
 		end
 		local spyRep = 0;
 		if reputation >= ]] .. HONORED .. [[ then
-			spyRep = isHuman and 385 or 350;
+			spyRep = 350;
 			if not t.spy then
 				local f = _.SearchForField("questID", 12994);
 				if f and #f > 0 then t.spy = f[1]; end
 			end
 			tinsert(tooltipInfo, {
 				left = t.spy.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.spy.saved) .. " " .. spyRep .. " Rep",
+				right = _.GetCollectionIcon(t.spy.saved),
 				r = 1, g = 1, b = 1
 			});
 		end
