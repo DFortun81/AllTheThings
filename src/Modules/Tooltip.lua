@@ -374,11 +374,11 @@ end
 
 -- Shared Tooltip Functions
 local left, right;
-function FindCommandEnd(txt, i, l)
+local function FindCommandEnd(txt, i, l)
 	-- Make sure string is in bounds.
 	local j = i + 1;
 	if j > l then return false; end
-	
+
 	-- Check for a command character.
 	local c = txt:sub(j,j);
 	if not (c == "C" or c == "c" or c == "T") then
@@ -396,7 +396,7 @@ function FindCommandEnd(txt, i, l)
 	end
 	return true, j;
 end
-function StripColorAndTextureData(txt)
+local function StripColorAndTextureData(txt)
 	local str, l, c, c2 = "", txt:len();
 	local i = 1;
 	while i < l do
@@ -425,7 +425,7 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 		entry.a, entry.r, entry.g, entry.b = app.Modules.Color.HexToARGB(entry.color);
 		entry.color = nil;
 	end
-	
+
 	left, right = entry.left, entry.right;
 	if right then
 		if entry.r2 then
@@ -522,7 +522,7 @@ local function AttachBattlePetTooltip(tooltip, data, quantity, detail)
 	data.att = 1;
 
 	-- GameTooltip_ShowCompareItem
-	local searchResults = SearchForField("speciesID", data.speciesID);
+	-- local searchResults = SearchForField("speciesID", data.speciesID);
 	local owned = C_PetJournal.GetOwnedBattlePetString(data.speciesID);
 	tooltip.Owned:SetText(owned);
 	if owned == nil then
@@ -798,7 +798,7 @@ if TooltipDataProcessor then
 	end);
 else
 	-- Pre-10.0.2 (Legacy)
-	function AttachTooltip(self)
+	local function AttachTooltip(self)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 		if not self.AllTheThingsProcessing then
 			self.AllTheThingsProcessing = true;
