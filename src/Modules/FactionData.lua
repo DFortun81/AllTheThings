@@ -54,32 +54,46 @@ local isHuman, remainingTurnIns, totalTurnIns = app.RaceIndex == 1;
 api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
 	local remainingTurnIns, totalTurnIns = math.ceil((maxReputation - reputation) / repPerTurnIn), math.ceil(maxReputation / repPerTurnIn);
+	local minimum = totalTurnIns - remainingTurnIns;
+	if minimum < 0 then
+		totalTurnIns = totalTurnIns - minimum;
+		minimum = 0;
+	end
 	tooltipInfo[#tooltipInfo + 1] = {
-		left = text, right = (totalTurnIns - remainingTurnIns) .. " / " .. totalTurnIns .. " (" .. remainingTurnIns .. ")",
+		left = text, right = minimum .. " / " .. totalTurnIns .. " (" .. remainingTurnIns .. ")",
 		r = 1, g = 1, b = 1
 	};
 	return repPerTurnIn;
 end
 api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation, multiplier)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
-	local remainingTurnIns, totalTurnIns = math.ceil((maxReputation - reputation) / repPerTurnIn), math.ceil(maxReputation / repPerTurnIn);
+	local remainingTurnIns, totalTurnIns =
+		math.ceil((maxReputation - reputation) / repPerTurnIn) * multiplier,
+		math.ceil(maxReputation / repPerTurnIn) * multiplier;
+	local minimum = totalTurnIns - remainingTurnIns;
+	if minimum < 0 then
+		totalTurnIns = totalTurnIns - minimum;
+		minimum = 0;
+	end
 	tooltipInfo[#tooltipInfo + 1] = {
-		left = text, right = ((totalTurnIns - remainingTurnIns) * multiplier) .. " / " .. (totalTurnIns * multiplier) .. " (" .. (remainingTurnIns * multiplier) .. ")",
+		left = text, right = minimum .. " / " .. totalTurnIns .. " (" .. remainingTurnIns .. ")",
 		r = 1, g = 1, b = 1
 	};
 	return repPerTurnIn;
 end
-api.AddQuestTooltip = function(tooltipInfo, prefix, quest)
+api.AddQuestTooltip = function(tooltipInfo, formatter, quest)
+	local questText = quest.text or RETRIEVING_DATA;
 	tooltipInfo[#tooltipInfo + 1] = {
-		left = prefix .. (quest.text or RETRIEVING_DATA),
+		left = formatter and (formatter):format(questText) or questText,
 		right = app.GetCollectionIcon(quest.saved),
 		r = 1, g = 1, b = 1
 	};
 end
-api.AddQuestTooltipWithReputation = function(tooltipInfo, prefix, quest, repPerTurnIn)
+api.AddQuestTooltipWithReputation = function(tooltipInfo, formatter, quest, repPerTurnIn)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
+	local questText = quest.text or RETRIEVING_DATA;
 	tooltipInfo[#tooltipInfo + 1] = {
-		left = prefix .. (quest.text or RETRIEVING_DATA),
+		left = formatter and (formatter):format(questText) or questText,
 		right = "+" .. repPerTurnIn .. " Rep " .. app.GetCollectionIcon(quest.saved),
 	};
 	return repPerTurnIn;

@@ -9,12 +9,12 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 			local f = _.SearchForField("questID", 12915);
 			if f and #f > 0 then t.mending = f[1]; end
 		end
-		AddQuestTooltip(tooltipInfo, "Complete ", t.mending);
+		AddQuestTooltip(tooltipInfo, "Complete %s", t.mending);
 		if not t.spark then
 			local f = _.SearchForField("questID", 12956);
 			if f and #f > 0 then t.spark = f[1]; end
 		end
-		AddQuestTooltip(tooltipInfo, "Complete ", t.spark);
+		AddQuestTooltip(tooltipInfo, "Complete %s", t.spark);
 	elseif reputation < 42000 then
 		local AddQuestTooltip = _.Modules.FactionData.AddQuestTooltip;
 		local viscousRep, callRep, coldRep, dragonRep = 0, 0, 0, 0;
@@ -25,7 +25,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.helm.saved then
 			viscousRep = 350;
 		else
-			AddQuestTooltip(tooltipInfo, "Complete ", t.helm);
+			AddQuestTooltip(tooltipInfo, "Complete %s", t.helm);
 		end
 
 		if not t.monument then
@@ -35,7 +35,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.monument.saved then
 			callRep = 350;
 		else
-			AddQuestTooltip(tooltipInfo, "Complete ", t.monument);
+			AddQuestTooltip(tooltipInfo, "Complete %s", t.monument);
 		end
 
 		if not t.elements then
@@ -45,7 +45,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.elements.saved then
 			coldRep = 350;
 		else
-			AddQuestTooltip(tooltipInfo, "Complete ", t.elements);
+			AddQuestTooltip(tooltipInfo, "Complete %s", t.elements);
 		end
 
 		if not t.spear then
@@ -55,7 +55,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.spear.saved then
 			dragonRep = 500;
 		else
-			AddQuestTooltip(tooltipInfo, "Complete ", t.spear);
+			AddQuestTooltip(tooltipInfo, "Complete %s", t.spear);
 		end
 		
 		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
@@ -65,7 +65,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 				local f = _.SearchForField("questID", 13006);
 				if f and #f > 0 then t.viscous = f[1]; end
 			end
-			viscousRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.viscous, viscousRep);
+			viscousRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.viscous, viscousRep);
 		end
 		local feedingRep = 0;
 		if reputation >= ]] .. REVERED .. [[ then
@@ -73,28 +73,28 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 				local f = _.SearchForField("questID", 13046);
 				if f and #f > 0 then t.feeding = f[1]; end
 			end
-			feedingRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.feeding, 350);
+			feedingRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.feeding, 350);
 		end
 		if callRep > 0 then
 			if not t.call then
 				local f = _.SearchForField("questID", 12977);
 				if f and #f > 0 then t.call = f[1]; end
 			end
-			callRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.call, callRep);
+			callRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.call, callRep);
 		end
 		if coldRep > 0 then
 			if not t.cold then
 				local f = _.SearchForField("questID", 12981);
 				if f and #f > 0 then t.cold = f[1]; end
 			end
-			coldRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.cold, coldRep);
+			coldRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.cold, coldRep);
 		end
 		if dragonRep > 0 then
 			if not t.dragon then
 				local f = _.SearchForField("questID", 13003);
 				if f and #f > 0 then t.dragon = f[1]; end
 			end
-			dragonRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.dragon, dragonRep);
+			dragonRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.dragon, dragonRep);
 		end
 		local spyRep = 0;
 		if reputation >= ]] .. HONORED .. [[ then
@@ -102,7 +102,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 				local f = _.SearchForField("questID", 12994);
 				if f and #f > 0 then t.spy = f[1]; end
 			end
-			spyRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.spy, 350);
+			spyRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.spy, 350);
 		end
 
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;

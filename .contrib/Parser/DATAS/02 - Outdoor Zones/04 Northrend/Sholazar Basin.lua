@@ -9,7 +9,7 @@ local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 			champion = _.SearchForField("questID", 12582)[1];
 			t.champion = champion;
 		end
-		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete ", champion);
+		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", champion);
 	elseif reputation < 42000 then
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
 		local chicken = t.chicken;
@@ -17,7 +17,7 @@ local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 			chicken = _.SearchForField("questID", 12702)[1];
 			t.chicken = chicken;
 		end
-		local chickenRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " ", chicken, 250);
+		local chickenRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " %s", chicken, 250);
 		
 		local rejek = t.rejek;
 		if not rejek then
@@ -58,7 +58,7 @@ local OnTooltipForOracles = [[function(t, tooltipInfo)
 			hand = _.SearchForField("questID", 12689)[1];
 			t.hand = hand;
 		end
-		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete ", hand);
+		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", hand);
 	elseif reputation < 42000 then
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
 		local appeasing = t.appeasing;
@@ -66,7 +66,7 @@ local OnTooltipForOracles = [[function(t, tooltipInfo)
 			appeasing = _.SearchForField("questID", 12704)[1];
 			t.appeasing = appeasing;
 		end
-		local appeasingRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " ", appeasing, 250);
+		local appeasingRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " %s", appeasing, 250);
 		
 		local soodow = t.soodow;
 		if not soodow then

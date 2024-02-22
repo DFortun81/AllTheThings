@@ -2,10 +2,10 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- CRIEVE NOTE: Dredgers at Honored in Retail? They go to Exalted in TBC Classic. (someone test this on Retail)
-local OnTooltipForSporeggar = [[function(t)
+local OnTooltipForSporeggar = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		if not t.plight then
 			local f = _.SearchForField("questID", 9739);
 			if f and #f > 0 then t.plight = f[1]; end
@@ -14,55 +14,26 @@ local OnTooltipForSporeggar = [[function(t)
 			local f = _.SearchForField("questID", 9743);
 			if f and #f > 0 then t.natenemies = f[1]; end
 		end
-		if not t.plight.collected then GameTooltip:AddLine("Complete '" .. (t.plight.text or RETRIEVING_DATA) .. "'.", 1, 1, 1); end
-		if not t.natenemies.collected then GameTooltip:AddLine("Complete '" .. (t.natenemies.text or RETRIEVING_DATA) .. "'.", 1, 1, 1); end
+		if not t.plight.saved then _.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.plight); end
+		if not t.natenemies.saved then _.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.natenemies); end
 
 		if reputation < ]] .. REVERED .. [[ then
-			local repPerKill = isHuman and 16.5 or 15;
-			local x, n = math.ceil((]] .. (REVERED - UNFRIENDLY) .. [[ - (reputation - ]] .. UNFRIENDLY .. [[)) / repPerKill), math.ceil(]] .. (REVERED - UNFRIENDLY) .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Bog Lords. (To Revered)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Kill Bog Lords. (To Revered)", 15, ]] .. REVERED .. [[);
 		end
-
-		local repPerKill = isHuman and 16.5 or 15;
-		local x, n = math.ceil((]] .. (EXALTED - UNFRIENDLY) .. [[ - (reputation - ]] .. UNFRIENDLY .. [[)) / repPerKill), math.ceil(]] .. (EXALTED - UNFRIENDLY) .. [[ / repPerKill);
-		GameTooltip:AddDoubleLine("Kill Dredgers & Lurkers.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		
+		addRepInfo(tooltipInfo, reputation, "Kill Dredgers & Lurkers.", 15, ]] .. EXALTED .. [[);
 
 		if reputation < ]] .. FRIENDLY .. [[ then
-			local repPerTurnIn = isHuman and 275 or 250;
-			local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Turn in Spore Sacs (x10) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-			-- #if AFTER CATA
-			local repPerTurnIn = isHuman and 275 or 250;
-			-- #else
-			local repPerTurnIn = isHuman and 825 or 750;
-			-- #endif
-			local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Turn in Tendrils (x6) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Turn in Spore Sacs (x10) (To Friendly)", 250, ]] .. FRIENDLY .. [[);
+			addRepInfo(tooltipInfo, reputation, "Turn in Tendrils (x6) (To Friendly)", 750, ]] .. FRIENDLY .. [[);
 		end
 
 		if reputation >= ]] .. NEUTRAL .. [[ then
 			if reputation < ]] .. FRIENDLY .. [[ then
-				local repPerTurnIn = isHuman and 275 or 250;
-				local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
-				GameTooltip:AddDoubleLine("Turn in Glowcap (x10) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+				addRepInfo(tooltipInfo, reputation, "Turn in Glowcap (x10) (To Friendly)", 250, ]] .. FRIENDLY .. [[);
 			end
-
-			-- #if AFTER CATA
-			local repPerTurnIn = isHuman and 275 or 250;
-			-- #else
-			local repPerTurnIn = isHuman and 825 or 750;
-			-- #endif
-			local x, n = math.ceil((]] .. EXALTED .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. EXALTED .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Turn in Fertile Spores (x6)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-			-- #if AFTER CATA
-			local repPerTurnIn = isHuman and 275 or 250;
-			-- #else
-			local repPerTurnIn = isHuman and 825 or 750;
-			-- #endif
-			local x, n = math.ceil((]] .. EXALTED .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. EXALTED .. [[ / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Turn in Sanguine Hibiscus (x5)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Turn in Fertile Spores (x6)", 750, ]] .. EXALTED .. [[);
+			addRepInfo(tooltipInfo, reputation, "Turn in Sanguine Hibiscus (x5)", 750, ]] .. EXALTED .. [[);
 		end
 	end
 end]];
@@ -2014,7 +1985,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-								["OnTooltip"] = [[function(t)
+								["OnTooltip"] = [[function(t, tooltipInfo)
 									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
 									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);

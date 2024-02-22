@@ -1,35 +1,30 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForTheKaluak = [[function(t)
+local OnTooltipForTheKaluak = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		GameTooltip:AddLine("Daily Quests:");
-		local preparingRep = isHuman and 550 or 500;
+		tinsert(tooltipInfo, { left = "Daily Quests:" });
 		if not t.preparing then
 			local f = _.SearchForField("questID", 11945);
 			if f and #f > 0 then t.preparing = f[1]; end
 		end
-		GameTooltip:AddDoubleLine((t.preparing.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. BOREAN_TUNDRA .. [[) .. ")", _.GetCollectionIcon(t.preparing.saved) .. " " .. preparingRep .. " Rep");
-
-		local puppyRep = isHuman and 550 or 500;
+		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
+		local preparingRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(]] .. BOREAN_TUNDRA .. [[) .. ")", t.preparing, 500);
+		
 		if not t.puppy then
 			local f = _.SearchForField("questID", 11960);
 			if f and #f > 0 then t.puppy = f[1]; end
 		end
-		GameTooltip:AddDoubleLine((t.puppy.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. DRAGONBLIGHT .. [[) .. ")", _.GetCollectionIcon(t.puppy.saved) .. " " .. puppyRep .. " Rep");
-
-		local heartRep = isHuman and 550 or 500;
+		local puppyRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(]] .. DRAGONBLIGHT .. [[) .. ")", t.puppy, 500);
+		
 		if not t.heart then
 			local f = _.SearchForField("questID", 11472);
 			if f and #f > 0 then t.heart = f[1]; end
 		end
-		GameTooltip:AddDoubleLine((t.heart.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. HOWLING_FJORD .. [[) .. ")", _.GetCollectionIcon(t.heart.saved) .. " " .. heartRep .. " Rep");
-
-		local repPerDay = preparingRep + puppyRep + heartRep;
-		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
-		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		local heartRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(]] .. HOWLING_FJORD .. [[) .. ")", t.heart, 500);
+		
+		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", preparingRep + puppyRep + heartRep, 42000);
 	end
 end]];
 root(ROOTS.Zones, {
