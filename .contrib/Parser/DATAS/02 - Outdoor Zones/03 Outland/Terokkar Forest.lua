@@ -10,24 +10,15 @@ local HUNGRY_NETHER_RAYS_GROUPS = {
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
-local OnTooltipForSkyguard = [[function(t)
+local OnTooltipForSkyguard = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		GameTooltip:AddLine("Protip: Join a rep farming group.", 1, 0.5, 0.5);
-
-		local isHuman = _.RaceIndex == 1;
-		local repPerKill = isHuman and 5.5 or 5;
-		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
-		GameTooltip:AddDoubleLine("Kill Arokkoa.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-		local repPerKill = isHuman and 110 or 100;
-		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
-		GameTooltip:AddDoubleLine("Summon Bosses.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-		local repPerTurnIn = isHuman and 165 or 150;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Shadow Dust.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine(" ", (x * 6) .. " Dust to go!", 1, 1, 1);
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		tinsert(tooltipInfo, { left = "Protip: Join a rep farming group.", r = 1, g = 0.5, b = 0.5 });
+		addRepInfo(tooltipInfo, reputation, "Kill Arokkoa.", 5, 42000);
+		addRepInfo(tooltipInfo, reputation, "Summon Bosses.", 100, 42000);
+		addRepInfo(tooltipInfo, reputation, "Turn in Shadow Dust.", 150, 42000);
+		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Dust", 150, 42000, 6);
 	end
 end]];
 root(ROOTS.Zones, {

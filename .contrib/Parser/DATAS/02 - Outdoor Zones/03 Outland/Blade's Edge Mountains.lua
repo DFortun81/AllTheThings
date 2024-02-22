@@ -1,42 +1,37 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForOgrila = [[function(t)
+local OnTooltipForOgrila = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		GameTooltip:AddLine("Daily Quests:");
+		tinsert(tooltipInfo, { left = "Daily Quests:" });
 		if not t.banished then
 			local f = _.SearchForField("questID", 11051);
 			if f and #f > 0 then t.banished = f[1]; end
 		end
-		local banishedRep = isHuman and 385 or 350;
-		GameTooltip:AddDoubleLine(t.banished.text or RETRIEVING_DATA, _.GetCollectionIcon(t.banished.saved) .. " " .. banishedRep .. " Rep");
+		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
+		local banishedRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.banished, 350);
 
 		if not t.bombed then
 			local f = _.SearchForField("questID", 11023);
 			if f and #f > 0 then t.bombed = f[1]; end
 		end
-		local bombedRep = isHuman and 550 or 500;
-		GameTooltip:AddDoubleLine((t.bombed.text or RETRIEVING_DATA), _.GetCollectionIcon(t.bombed.saved) .. " " .. bombedRep .. " Rep");
+		local bombedRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.bombed, 500);
 
 		if not t.relic then
 			local f = _.SearchForField("questID", 11080);
 			if f and #f > 0 then t.relic = f[1]; end
 		end
-		local relicRep = isHuman and 385 or 350;
-		GameTooltip:AddDoubleLine((t.relic.text or RETRIEVING_DATA), _.GetCollectionIcon(t.relic.saved) .. " " .. relicRep .. " Rep");
+		local relicRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.relic, 350);
 
 		if not t.wrangled then
 			local f = _.SearchForField("questID", 11066);
 			if f and #f > 0 then t.wrangled = f[1]; end
 		end
-		local wrangledRep = isHuman and 385 or 350;
-		GameTooltip:AddDoubleLine((t.wrangled.text or RETRIEVING_DATA), _.GetCollectionIcon(t.wrangled.saved) .. " " .. wrangledRep .. " Rep");
+		local wrangledRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.wrangled, 350);
 
 		local repPerDay = banishedRep + bombedRep + relicRep + wrangledRep;
-		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
-		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", repPerDay, 42000);
 	end
 end]];
 root(ROOTS.Zones, {

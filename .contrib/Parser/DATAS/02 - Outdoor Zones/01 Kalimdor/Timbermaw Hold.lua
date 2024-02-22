@@ -13,10 +13,10 @@ TIMBERMAW_HOLD = createHeader({
 		en = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
 	},
 });
-local OnTooltipForTimbermawHold = [[function(t)
+local OnTooltipForTimbermawHold = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		-- #if BEFORE CATA
 		if reputation >= ]] .. NEUTRAL .. [[ then
 			if not t.deadwood then
@@ -27,46 +27,49 @@ local OnTooltipForTimbermawHold = [[function(t)
 				local f = _.SearchForField("questID", 8471);
 				if f and #f > 0 then t.winterfall = f[1]; end
 			end
-			if not t.deadwood.collected then GameTooltip:AddLine("Complete 'Deadwood Ritual Totem'.", 1, 1, 1); end
-			if not t.winterfall.collected then GameTooltip:AddLine("Complete 'Winterfall Ritual Totem'.", 1, 1, 1); end
+			if not t.deadwood.saved then
+				_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.deadwood);
+			end
+			if not t.winterfall.saved then
+				_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.winterfall);
+			end
 		end
 		-- #endif
 		-- #if AFTER CATA
-		local repPerKill = isHuman and 22 or 20;
-		local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
-		GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs", 20, 42000, ]] .. UNFRIENDLY .. [[);
 		-- #elseif AFTER TBC
 		if reputation < ]] .. (REVERED - 1) .. [[ then
-			local repPerKill = isHuman and 11 or 10;
-			local x, n = math.ceil((]] .. (REVERED - 1) .. [[ - t.reputation) / repPerKill), math.ceil(]] .. ((REVERED - 1) + 42000) .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Revered)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs (Stops at Revered)", 10, ]] .. (REVERED - 1) .. [[, ]] .. UNFRIENDLY .. [[);
 		end
 		-- #else
 		if reputation < ]] .. (HONORED - 1) .. [[ then
-			local repPerKill = isHuman and 5.5 or 5;
-			local x, n = math.ceil((]] .. (HONORED - 1) .. [[ - t.reputation) / repPerKill), math.ceil(]] .. ((HONORED - 1) + 42000) .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs (Stops at Honored)", 5, ]] .. (HONORED - 1) .. [[, ]] .. UNFRIENDLY .. [[);
 		end
 		-- #endif
 		-- #if AFTER CATA
-		local repPerTurnIn = isHuman and 2200 or 2000;
+		local repPerTurnIn = 2000;
 		-- #elseif AFTER WRATH
-		local repPerTurnIn = isHuman and 330 or 300;
+		local repPerTurnIn = 300;
 		-- #elseif AFTER TBC
-		local repPerTurnIn = isHuman and 165 or 150;
+		local repPerTurnIn = 150;
 		-- #else
-		local repPerTurnIn = isHuman and 55 or 50;
+		local repPerTurnIn = 50;
 		-- #endif
-		local x, n = math.ceil((42000 - t.reputation) / repPerTurnIn), math.ceil(84000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Deadwood Feathers (x5) in Felwood", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine("Turn in Winterfall Beads (x5) in Winterspring", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		local remaining = ((x * 5) - GetItemCount(21383, true) - GetItemCount(21377, true));
-		if remaining > 0 then GameTooltip:AddLine("You need " .. remaining .. " more feathers/beads for Exalted.", 1, 1, 0); end
+		addRepInfo(tooltipInfo, reputation, "Turn in Deadwood Feathers (x5) in Felwood", repPerTurnIn, 42000);
+		local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Winterfall Beads (x5) in Winterspring", repPerTurnIn, 42000);
+		local remaining = ((remainingTurnIns * 5) - GetItemCount(21383, true) - GetItemCount(21377, true));
+		if remaining > 0 then
+			tinsert(tooltipInfo, { left = "You need " .. remaining .. " more feathers/beads for Exalted.", r = 1, g = 1, b = 0 });
+		end
 		-- #if BEFORE CATA
 		-- #if BEFORE TBC
-		if reputation < ]] .. (HONORED - 1) .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Honored!", 1, 0.2, 0.2); end
+		if reputation < ]] .. (HONORED - 1) .. [[ then
+			tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in the totems or feathers until after Honored!", r = 1, g = 0.5, b = 0.5 });
+		end
 		-- #else
-		if reputation < ]] .. (REVERED - 1) .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Revered!", 1, 0.2, 0.2); end
+		if reputation < ]] .. (REVERED - 1) .. [[ then
+			tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in the totems or feathers until after Revered!", r = 1, g = 0.5, b = 0.5 });
+		end
 		-- #endif
 		-- #endif
 	end

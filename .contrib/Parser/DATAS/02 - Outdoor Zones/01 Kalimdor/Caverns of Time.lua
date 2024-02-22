@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if BEFORE 4.2.0
 							-- #if ANYCLASSIC
 							-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-							["OnTooltip"] = [[function(t)
+							["OnTooltip"] = [[function(t, tooltipInfo)
 								local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
 								if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 									tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);

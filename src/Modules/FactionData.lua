@@ -63,7 +63,7 @@ api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTur
 		left = text, right = minimum .. " / " .. totalTurnIns .. " (" .. remainingTurnIns .. ")",
 		r = 1, g = 1, b = 1
 	};
-	return repPerTurnIn;
+	return repPerTurnIn, remainingTurnIns;
 end
 api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation, multiplier)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
@@ -79,7 +79,7 @@ api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, t
 		left = text, right = minimum .. " / " .. totalTurnIns .. " (" .. remainingTurnIns .. ")",
 		r = 1, g = 1, b = 1
 	};
-	return repPerTurnIn;
+	return repPerTurnIn, remainingTurnIns;
 end
 api.AddQuestTooltip = function(tooltipInfo, formatter, quest)
 	local questText = quest.text or RETRIEVING_DATA;

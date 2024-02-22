@@ -4,41 +4,44 @@
 -- #if BEFORE CATA
 local OnUpdateForBloodsail = [[function(t)
 	if t.collectible then
-		local isHuman = _.RaceIndex == 1;
-		local repForDressing = isHuman and 11 or 10;
 		if not t.dressing then
 			local f = _.SearchForField("questID", 9272);
 			if f and #f > 0 then t.dressing = f[1]; end
 		end
+		if not t.admiral then
+			local f = _.SearchForField("questID", 4621);
+			if f and #f > 0 then t.admiral = f[1]; end
+		end
+-- #if BEFORE WRATH
+		local isHuman = _.RaceIndex == 1;
+		local repForDressing = isHuman and 11 or 10;
 		if t.dressing.collected then repForDressing = 0; end
 -- #if AFTER TBC
 		local repForAdmiral = isHuman and 550 or 500;
 -- #else
 		local repForAdmiral = isHuman and 220 or 200;
 -- #endif
-		if not t.admiral then
-			local f = _.SearchForField("questID", 4621);
-			if f and #f > 0 then t.admiral = f[1]; end
-		end
 		if t.admiral.collected then repForAdmiral = 0; end
 		t.minReputation[2] = math.max(t.reputation, 41999) + repForDressing + repForAdmiral;
+-- #endif
 	end
 end]];
-local OnTooltipForBloodsail = [[function(t)
+local OnTooltipForBloodsail = [[function(t, tooltipInfo)
+	if not t.collectible then return; end
 	local reputation = t.reputation;
 	if reputation < 41999 then
-		local isHuman = _.RaceIndex == 1;
-		GameTooltip:AddLine("Reminder: Do all of the Goblin quests prior to starting this grind.", 1, 0.5, 0.5);
-		GameTooltip:AddLine("Do NOT turn in the Bloodsail quests if you intend to get to Exalted!", 1, 0.5, 0.5);
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		tinsert(tooltipInfo, { left = "Reminder: Do all of the Goblin quests prior to starting this grind.", r = 1, g = 0.5, b = 0.5, wrap = true });
+		tinsert(tooltipInfo, { left = "Do NOT turn in the Bloodsail quests if you intend to get to Exalted!", r = 1, g = 0.5, b = 0.5, wrap = true });
 		if reputation < 20999 then
-			local repPerKill = isHuman and 27.5 or 25;
-			local x, n = math.ceil((20999 - reputation) / repPerKill), math.ceil(63000 / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Booty Bay Bruisers.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Kill Booty Bay Bruisers.", 25, 20999, ]] .. HATED .. [[);
 		else
-			local repPerKill = isHuman and 5.5 or 5;
-			local x, n = math.ceil((41999 - reputation) / repPerKill), math.ceil(21000 / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Jazzrik.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			GameTooltip:AddDoubleLine(" 5.33 - 8.5 Minute respawn", math.floor((x * 5.33) / 60.0) .. " - " .. math.ceil((x * 8.5) / 60.0) .. " Hours to go!", 1, 1, 1);
+			local repPerKill, remaining = addRepInfo(tooltipInfo, reputation, "Kill Jazzrik.", 5, 41999, 21000);
+			tinsert(tooltipInfo, {
+				left = " 5.33 - 8.5 Minute respawn",
+				right = math.floor((remaining * 5.33) / 60.0) .. " - " .. math.ceil((remaining * 8.5) / 60.0) .. " Hours to go!",
+				r = 1, g = 1, b = 1
+			});
 			if not t.eventful then
 				t.eventful = true;
 				if DBM then
@@ -63,26 +66,21 @@ local OnTooltipForBloodsail = [[function(t)
 			end
 		end
 	else
-		if not t.dressing.collected then GameTooltip:AddLine("Complete 'Dressing the Part'.", 1, 1, 1); end
-		if not t.admiral.collected then GameTooltip:AddLine("Complete 'Avast Ye Admiral'.", 1, 1, 1); end
+		if not t.dressing.saved then
+			_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.dressing);
+		end
+		if not t.admiral.saved then
+			_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.admiral);
+		end
 	end
 end]];
-local OnTooltipForBootyBay = [[function(t)
+local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		if reputation < 0 then
-			local repPerKill = isHuman and 2.75 or 2.5;
-			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Pirates near Ratchet*", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			GameTooltip:AddDoubleLine("Kill Pirates in Tanaris", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		else
-			local repPerKill = isHuman and 2.75 or 2.5;
-			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(42000 / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Pirates near Ratchet*", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			GameTooltip:AddDoubleLine("Kill Pirates in Tanaris", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		GameTooltip:AddLine(" * PROTIP: Ratchet is faster.", 1, 1, 1);
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Ratchet*", 2.5, 42000);
+		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
+		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
 	end
 end]];
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
@@ -208,8 +206,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
 					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
-					-- #if BEFORE CATA
+					-- #if BEFORE WRATH
 					["minReputation"] = { 87, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
+					-- #endif
+					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForBloodsail,
 					["OnUpdate"] = OnUpdateForBloodsail,
 					["maps"] = { BADLANDS },

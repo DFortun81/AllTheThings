@@ -1,57 +1,44 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForConsortium = [[function(t)
+local OnTooltipForConsortium = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		local repPerTurnIn = isHuman and 275 or 250;
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		if not t.secrets then
 			local f = _.SearchForField("questID", 10971);
 			if f and #f > 0 then t.secrets = f[1]; end
 		end
-		if not t.secrets.collected then
-			GameTooltip:AddLine("Complete '" .. (t.secrets.text or RETRIEVING_DATA) .. "' in Netherstorm.", 1, 1, 1);
+		if not t.secrets.saved then
+			_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete '%s' in Netherstorm.", t.secrets);
 		else
-			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-			GameTooltip:AddDoubleLine("Turn in Ethereum Prisoner I.D. Tags in Netherstorm.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			addRepInfo(tooltipInfo, reputation, "Turn in Ethereum Prisoner I.D. Tags in Netherstorm.", 250, 42000);
 		end
-
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Obsidian Warbeads.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Beads to go!", 1, 1, 1);
+		
+		addRepInfo(tooltipInfo, reputation, "Turn in Obsidian Warbeads.", 500, 42000);
+		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
 	end
 end]];
-local OnTooltipForKurenai = [[function(t)
+local OnTooltipForKurenai = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
-		GameTooltip:AddLine("Complete Quests in Orebor Harborage, Zangarmarsh.", 1, 1, 1);
+		tinsert(tooltipInfo, { left = "Complete Quests in Orebor Harborage, Zangarmarsh.", r = 1, g = 1, b = 1 });
 	elseif reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		local repPerKill = isHuman and 11 or 10;
-		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
-		GameTooltip:AddDoubleLine("Kill Bolderfist Ogres.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-		local repPerTurnIn = isHuman and 550 or 500;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Obsidian Warbeads.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Beads to go!", 1, 1, 1);
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Kill Bolderfist Ogres.", 10, 42000);
+		addRepInfo(tooltipInfo, reputation, "Turn in Obsidian Warbeads.", 500, 42000);
+		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
 	end
 end]];
-local OnTooltipForMaghar = [[function(t)
+local OnTooltipForMaghar = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
-		GameTooltip:AddLine("Complete Quests in Mag'har Post, Hellfire Peninsula.", 1, 1, 1);
+		tinsert(tooltipInfo, { left = "Complete Quests in Mag'har Post, Hellfire Peninsula.", r = 1, g = 1, b = 1 });
 	elseif reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		local repPerKill = isHuman and 11 or 10;
-		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
-		GameTooltip:AddDoubleLine("Kill Bolderfist Ogres.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-
-		local repPerTurnIn = isHuman and 550 or 500;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Obsidian Warbeads.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Beads to go!", 1, 1, 1);
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Kill Bolderfist Ogres.", 10, 42000);
+		addRepInfo(tooltipInfo, reputation, "Turn in Obsidian Warbeads.", 500, 42000);
+		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
 	end
 end]];
 root(ROOTS.Zones, {

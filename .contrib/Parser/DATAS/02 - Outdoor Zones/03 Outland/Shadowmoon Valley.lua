@@ -1,13 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForNetherwing = [[function(t)
+local OnTooltipForNetherwing = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		local repPerTurnIn = isHuman and 275 or 250;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Netherwing Eggs.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Turn in Netherwing Eggs.", 250, 42000);
 	end
 end]];
 root(ROOTS.Zones, {
