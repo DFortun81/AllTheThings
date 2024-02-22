@@ -4666,7 +4666,10 @@ app.NPCDisplayIDFromID = NPCDisplayIDFromID;
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
 local NPCNameFromID, NPCTitlesFromID = {},{};
-local blacklisted = { [TOOLTIP_UNIT_LEVEL:format("??")] = true, };
+local blacklisted = {
+	[TOOLTIP_UNIT_LEVEL:format("??")] = true,
+	[TOOLTIP_UNIT_LEVEL_TYPE:format("??", ELITE)] = true,
+};
 local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)

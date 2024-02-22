@@ -1300,7 +1300,10 @@ app.GetFixedItemSpecInfo = GetFixedItemSpecInfo;
 local NPCNameFromID, NPCTitlesFromID = {},{};
 local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 local IsRetrievingData = app.Modules.RetrievingData.IsRetrievingData;
-local blacklisted = { [TOOLTIP_UNIT_LEVEL:format("??")] = true, };
+local blacklisted = {
+	[TOOLTIP_UNIT_LEVEL:format("??")] = true,
+	[TOOLTIP_UNIT_LEVEL_TYPE:format("??", ELITE)] = true,
+};
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		id = tonumber(id);
