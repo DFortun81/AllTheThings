@@ -12323,6 +12323,19 @@ customWindowUpdates["NWP"] = function(self)
 		self:BaseUpdate(true);
 	end
 end;
+customWindowUpdates["Prime"] = function(self, ...)
+	self:BaseUpdate(...);
+	
+	-- Write the current character's progress.
+	local rootData = self.data;
+	if rootData and rootData.total and rootData.total > 0 then
+		app.CurrentCharacter.PrimeData = {
+			progress = rootData.progress,
+			total = rootData.total,
+			modeString = rootData.modeString,
+		};
+	end
+end
 customWindowUpdates["RaidAssistant"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
