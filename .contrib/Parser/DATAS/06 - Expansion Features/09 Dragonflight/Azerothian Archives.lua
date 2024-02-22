@@ -594,6 +594,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					q(76734, {	-- Research: Djaradin of Zaralek Cavern
 						["coord"] = { 44.1, 54.1, ZARALEK_CAVERN },
 					}),
+					q(76911, {	-- Research: Drakonid of the Waking Shores
+						["coord"] = { 56.8, 45.4, THE_WAKING_SHORES },
+					}),
 					q(76739, {	-- Research: Niffen of Zaralek Cavern
 						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
 					}),
