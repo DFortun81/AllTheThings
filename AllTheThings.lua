@@ -13300,16 +13300,24 @@ customWindowUpdates["Sync"] = function(self)
 				end
 				return true;
 			end
-			local function OnTooltipForCharacter(t)
+			local function OnTooltipForCharacter(t, tooltipInfo)
 				local character = ATTCharacterData[t.unit];
 				if character then
 					-- last login info
 					local login = character.lastPlayed;
 					if login then
 						local d = C_DateAndTime.GetCalendarTimeFromEpoch(login * 1e6);
-						GameTooltip:AddDoubleLine(PLAYED, ("%d-%02d-%02d %02d:%02d"):format(d.year, d.month, d.monthDay, d.hour, d.minute), 0.8, 0.8, 0.8);
+						tinsert(tooltipInfo, {
+							left = PLAYED,
+							right = ("%d-%02d-%02d %02d:%02d"):format(d.year, d.month, d.monthDay, d.hour, d.minute),
+							r = 0.8, g = 0.8, b = 0.8
+						});
 					else
-						GameTooltip:AddDoubleLine(PLAYED, NEVER, 0.8, 0.8, 0.8);
+						tinsert(tooltipInfo, {
+							left = PLAYED,
+							right = NEVER,
+							r = 0.8, g = 0.8, b = 0.8
+						});
 					end
 					local total = 0;
 					for i,field in ipairs(app.CharacterSyncTables) do
@@ -13322,20 +13330,40 @@ customWindowUpdates["Sync"] = function(self)
 								end
 							end
 							total = total + subtotal;
-							GameTooltip:AddDoubleLine(field, tostring(subtotal), 1, 1, 1);
+							tinsert(tooltipInfo, {
+								left = field,
+								right = tostring(subtotal),
+								r = 1, g = 1, b = 1
+							});
 						end
 					end
-					GameTooltip:AddLine(" ", 1, 1, 1);
-					GameTooltip:AddDoubleLine("Total", tostring(total), 0.8, 0.8, 1);
-					GameTooltip:AddLine(L["DELETE_CHARACTER"], 1, 0.8, 0.8);
+					tinsert(tooltipInfo, { left = " " });
+					tinsert(tooltipInfo, {
+						left = "Total",
+						right = tostring(total),
+						r = 0.8, g = 0.8, b = 1
+					});
+					tinsert(tooltipInfo, {
+						left = L.DELETE_CHARACTER,
+						r = 1, g = 0.8, b = 0.8
+					});
 				end
 			end
-			local function OnTooltipForLinkedAccount(t)
+			local function OnTooltipForLinkedAccount(t, tooltipInfo)
 				if t.unit then
-					GameTooltip:AddLine(L["LINKED_ACCOUNT_TOOLTIP"], 0.8, 0.8, 1, true);
-					GameTooltip:AddLine(L["DELETE_LINKED_CHARACTER"], 1, 0.8, 0.8);
+					tinsert(tooltipInfo, {
+						left = L.LINKED_ACCOUNT_TOOLTIP,
+						r = 0.8, g = 0.8, b = 1, wrap = true,
+					});
+					tinsert(tooltipInfo, {
+						left = L.DELETE_LINKED_CHARACTER,
+						r = 1, g = 0.8, b = 0.8
+					});
 				else
-					GameTooltip:AddLine(L["DELETE_LINKED_ACCOUNT"], 1, 0.8, 0.8);
+					tinsert(tooltipInfo, {
+						left = L.DELETE_LINKED_ACCOUNT,
+						r = 1, g = 0.8, b = 0.8
+					});
 				end
 			end
 

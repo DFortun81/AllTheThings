@@ -2300,7 +2300,7 @@ end,
 		t:SetAchievementCollected(t.achievementID, r.standing == 8);
 	end
 end,
-["EXALTED_REP_OnTooltip"] = function(t)
+["EXALTED_REP_OnTooltip"] = function(t, tooltipInfo)
 	if t.collectible then
 		local r = t.rep or (t.BuildReputation and t:BuildReputation());
 		if r then
@@ -2351,7 +2351,7 @@ end,
 		return true;
 	end
 end,
-["EXALTED_REPS_OnTooltip"] = function(t)
+["EXALTED_REPS_OnTooltip"] = function(t, tooltipInfo)
 	if t.collectible then
 		local reps = t.reps or (t.BuildReputations and t:BuildReputations());
 		if reps then
@@ -2489,7 +2489,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	fields.isStatistic = function(t)
 		return select(15, GetAchievementInfo(t.achievementID));
 	end
-	local onTooltipForAchievement = function(t)
+	local onTooltipForAchievement = function(t, tooltipInfo)
 		local achievementID = t.achievementID;
 		if achievementID and IsShiftKeyDown() then
 			local criteriaDatas,criteriaDatasByUID = {}, {};
@@ -2524,7 +2524,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			end
 		end
 	end
-	local onTooltipForAchievementCriteria = function(t)
+	local onTooltipForAchievementCriteria = function(t, tooltipInfo)
 		local achievementID = t.achievementID;
 		if achievementID then
 			GameTooltip:AddDoubleLine(L.CRITERIA_FOR, "|cffffff00[" .. (select(2, GetAchievementInfo(achievementID)) or RETRIEVING_DATA) .. "]|r");
@@ -2891,7 +2891,7 @@ else
 		end
 		return true;
 	end
-	commonAchievementHandlers.COMPANIONS_OnTooltip = function(t)
+	commonAchievementHandlers.COMPANIONS_OnTooltip = function(t, tooltipInfo)
 		GameTooltip:AddLine("Collect " .. t.rank .. " companion pets.");
 		if t.total and t.progress < t.total and t.rank >= 25 then
 			GameTooltip:AddLine(" ");
@@ -3028,7 +3028,7 @@ else
 			return true;
 		end
 	end
-	commonAchievementHandlers.KNOW_SPELLS_OnTooltip = function(t)
+	commonAchievementHandlers.KNOW_SPELLS_OnTooltip = function(t, tooltipInfo)
 		if t.collectible and t.spells then
 			GameTooltip:AddLine(" ");
 			for i,spell in ipairs(t.spells) do
@@ -3067,7 +3067,7 @@ else
 			return LOREMASTER_EXPLICIT_OnUpdate(t);
 		end
 	end
-	commonAchievementHandlers.LOREMASTER_OnTooltip = function(t)
+	commonAchievementHandlers.LOREMASTER_OnTooltip = function(t, tooltipInfo)
 		if t.collectible and t.p and not t.collected then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddDoubleLine(" ", app.Modules.Color.GetProgressText(min(t.rank, t.p),t.rank), 1, 1, 1);
@@ -3129,7 +3129,7 @@ else
 			return true;
 		end
 	end
-	commonAchievementHandlers.META_OnTooltip = function(t)
+	commonAchievementHandlers.META_OnTooltip = function(t, tooltipInfo)
 		if t.collectible and t.achievements then
 			GameTooltip:AddLine(" ");
 			for i,achievement in ipairs(t.achievements) do
@@ -3185,7 +3185,7 @@ else
 		end
 		return true;
 	end
-	commonAchievementHandlers.MOUNTS_OnTooltip = function(t)
+	commonAchievementHandlers.MOUNTS_OnTooltip = function(t, tooltipInfo)
 		GameTooltip:AddLine("Collect " .. t.rank .. " mounts.");
 		if t.total and t.progress < t.total and t.rank >= 25 then
 			GameTooltip:AddLine(" ");
@@ -3255,7 +3255,7 @@ else
 		end
 		return true;
 	end
-	commonAchievementHandlers.REPUTATIONS_OnTooltip = function(t)
+	commonAchievementHandlers.REPUTATIONS_OnTooltip = function(t, tooltipInfo)
 		GameTooltip:AddLine("Raise " .. t.rank .. " reputations to Exalted.");
 		if t.total and t.progress < t.total and t.rank >= 25 then
 			GameTooltip:AddLine(" ");
