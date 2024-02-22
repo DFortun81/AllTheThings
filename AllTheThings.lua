@@ -9646,24 +9646,6 @@ RowOnEnter = function (self)
 		end
 	end
 
-	-- TODO: Convert all of these to InformationTypes.
-	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
-		if app.Settings:GetTooltipSetting("creatureID") then
-			for i,qg in ipairs(reference.qgs) do
-				tinsert(tooltipInfo, {
-					left = (k == 1 and L.QUEST_GIVER),
-					right = tostring(app.NPCNameFromID[qg]) .. " (" .. qg .. ")",
-				});
-			end
-		else
-			for i,qg in ipairs(reference.qgs) do
-				tinsert(tooltipInfo, {
-					left = (k == 1 and L.QUEST_GIVER),
-					right = tostring(app.NPCNameFromID[qg]),
-				});
-			end
-		end
-	end
 	if reference.isWorldQuest then
 		tinsert(tooltipInfo, {
 			left = L.DURING_WQ_ONLY,

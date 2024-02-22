@@ -55,6 +55,13 @@ local ConversionMethods = setmetatable({
 			return tostring(spellID);
 		end
 	end,
+	creatureName = function(creatureID, reference)
+		if app.Settings:GetTooltipSetting("creatureID") then
+			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or "") .. " (" .. creatureID .. ")";
+		else
+			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or "");
+		end
+	end,
 	professionName = function(spellID)
 		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or RETRIEVING_DATA;
 	end,
@@ -390,7 +397,19 @@ local InformationTypes = {
 	}),
 	
 	CreateInformationType("questID", { text = L.QUEST_ID, priority = 8 }),
-	--CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 8 }), -- TODO
+	CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 8,
+		Process = function(t, reference, info)
+			local qgs = reference.qgs;
+			if qgs then
+				for i,creatureID in ipairs(qgs) do
+					tinsert(info, {
+						left = (i == 1 and L.QUEST_GIVER),
+						right = ConversionMethods.creatureName(creatureID, reference),
+					});
+				end
+			end
+		end,
+	}),
 	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
 	
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
@@ -409,18 +428,11 @@ local InformationTypes = {
 						left = CREATURE,
 						right = L.CREATURES_COUNT:format(#crs),
 					});
-				elseif app.Settings:GetTooltipSetting("creatureID") then
-					for i,cr in ipairs(crs) do
-						tinsert(info, {
-							left = (i == 1 and CREATURE),
-							right = tostring(cr > 0 and app.NPCNameFromID[cr] or "") .. " (" .. cr .. ")",
-						});
-					end
 				else
-					for i,cr in ipairs(crs) do
+					for i,creatureID in ipairs(crs) do
 						tinsert(info, {
 							left = (i == 1 and CREATURE),
-							right = tostring(cr > 0 and app.NPCNameFromID[cr] or cr),
+							right = ConversionMethods.creatureName(creatureID, reference),
 						});
 					end
 				end

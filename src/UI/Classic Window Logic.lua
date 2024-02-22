@@ -971,23 +971,6 @@ local function RowOnEnter(self)
 	if reference.titleID then
 		AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
 	end
-	if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
-		if app.Settings:GetTooltipSetting("creatureID") then
-			for i,qg in ipairs(reference.qgs) do
-				tinsert(tooltipInfo, {
-					left = (i == 1 and L.QUEST_GIVER),
-					right = tostring(qg > 0 and app.NPCNameFromID[qg] or "") .. " (" .. qg .. ")",
-				});
-			end
-		else
-			for i,qg in ipairs(reference.qgs) do
-				tinsert(tooltipInfo, {
-					left = (i == 1 and L.QUEST_GIVER),
-					right = tostring(cr > 0 and app.NPCNameFromID[cr] or cr),
-				});
-			end
-		end
-	end
 	
 	
 	if reference.cost then
