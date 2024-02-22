@@ -490,7 +490,6 @@ local function ClearTooltip(tooltip)
 	-- app.PrintDebug("Clear Tooltip",tooltip:GetName());
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATTAttachComplete = nil;
-	tooltip.UpdateTooltip = nil;
 end
 local function AttachTooltipRawSearchResults(tooltip, lineNumber, group)
 	if not group then return end

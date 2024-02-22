@@ -24,6 +24,7 @@ local L = app.L;
 local ipairs, pairs, pcall, tinsert, tremove, math_floor
 	= ipairs, pairs, pcall, tinsert, tremove, math.floor;
 local C_QuestLog_IsOnQuest, GetTimePreciseSec = C_QuestLog.IsOnQuest, GetTimePreciseSec;
+local IsModifierKeyDown = IsModifierKeyDown;
 local GameTooltip = GameTooltip;
 
 -- Implementation
@@ -761,8 +762,25 @@ end
 local function RowOnEnter(self)
 	local reference = self.ref;
 	if not reference then return; end
-	local GameTooltip = GameTooltip;
-	if not GameTooltip then return end;
+	local tooltip = GameTooltip;
+	if not tooltip then return end;
+	local IsRefreshing = tooltip.ATT_IsRefreshing;
+	if IsRefreshing then
+		local modifier = IsModifierKeyDown();
+		local modded = tooltip.ATT_IsModifierKeyDown;
+		if modded ~= modifier then
+			tooltip.ATT_IsModifierKeyDown = modifier;
+			--print("Modifier change detected!");
+		else
+			--print("Ignoring refresh.");
+			return;
+		end
+	else
+		tooltip.ATT_IsRefreshing = true;
+		tooltip:ClearATTReferenceTexture();
+	end
+	--print("RowOnEnter", "Rebuilding...");
+	
 	
 	-- Always display tooltip data when viewing information from our windows.
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
@@ -770,12 +788,11 @@ local function RowOnEnter(self)
 	
 	-- Build tooltip information.
 	local tooltipInfo = {};
-	GameTooltip:ClearLines();
-	GameTooltip:ClearATTReferenceTexture();
-	if self:GetCenter() > (UIParent:GetWidth() / 2) then
-		GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+	tooltip:ClearLines();
+	if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
+		tooltip:SetOwner(self, "ANCHOR_LEFT");
 	else
-		GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+		tooltip:SetOwner(self, "ANCHOR_RIGHT");
 	end
 	
 	-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
@@ -783,36 +800,27 @@ local function RowOnEnter(self)
 		if reference.itemID then
 			local link = reference.link;
 			if link and link ~= "" then
-				pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+				pcall(tooltip.SetHyperlink, tooltip, link);
 			else
-				GameTooltip:AddLine("Item #" .. reference.itemID);
-				AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "itemID", reference.itemID);
+				tooltip:AddLine("Item #" .. reference.itemID);
+				AttachTooltipSearchResults(tooltip, 1, SearchForField, "itemID", reference.itemID);
 			end
 		elseif reference.currencyID then
-			GameTooltip:SetCurrencyByID(reference.currencyID, 1);
+			tooltip:SetCurrencyByID(reference.currencyID, 1);
 		elseif reference.key ~= "questID" then
 			local link = reference.link;
 			if link then
-				pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+				pcall(tooltip.SetHyperlink, tooltip, link);
 			end
 		end
 	end
 	if reference.titleID then
-		AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
+		AttachTooltipSearchResults(tooltip, 1, SearchForField, "titleID", reference.titleID);
 	end
 
 	-- Miscellaneous fields
-	local linesByText = {}, title;
-	local numLines = GameTooltip:NumLines();
-	if numLines < 1 then
-		tinsert(tooltipInfo, {
-			left = reference.text,
-		});
-	else
-		for i=1,numLines do
-			title = _G["GameTooltipTextLeft"..i]:GetText();
-			if title then linesByText[title] = true; end
-		end
+	if tooltip:NumLines() < 1 then
+		tinsert(tooltipInfo, { left = reference.text });
 	end
 	
 	if app.Settings:GetTooltipSetting("Progress") then
@@ -824,7 +832,7 @@ local function RowOnEnter(self)
 		end
 	end
 
-	title = reference.title;
+	local title = reference.title;
 	if title then
 		local left, right = DESCRIPTION_SEPARATOR:split(title);
 		if right then
@@ -1139,17 +1147,20 @@ local function RowOnEnter(self)
 	end
 	
 	-- Attach all of the Information to the tooltip.
-	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, tooltipInfo);
-	GameTooltip:SetATTReferenceForTexture(reference);
-	GameTooltip:Show();
+	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
+	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
+	tooltip:Show();
 	
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 end
 local function RowOnLeave(self)
-	GameTooltip:ClearLines();
-	GameTooltip:Hide();
-	GameTooltip:ClearATTReferenceTexture();
+	local tooltip = GameTooltip;
+	tooltip.ATT_IsRefreshing = nil;
+	tooltip.ATT_IsModifierKeyDown = nil;
+	tooltip:ClearATTReferenceTexture();
+	tooltip:ClearLines();
+	tooltip:Hide();
 end
 CreateRow = function(self)
 	local row = CreateFrame("Button", nil, self);
@@ -1214,6 +1225,9 @@ CreateRow = function(self)
 	row.Texture.Border:SetPoint("BOTTOM");
 	row.Texture.Border:SetPoint("TOP");
 	row.Texture.Border:SetWidth(row:GetHeight());
+
+	-- Forced/External Update of a Tooltip produced by an ATT row to use the same function which created it
+	row.UpdateTooltip = RowOnEnter;
 
 	-- Clear the Row Data Initially
 	SetRowData(self, row, nil);
