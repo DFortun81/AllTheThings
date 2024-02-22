@@ -362,6 +362,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						},
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "i", 210199 },	-- Tattered Dreamleaf
+						["classes"] = IGNORED_VALUE,	-- prevent bubbleDown... this was given to my Hunter
+						["description"] = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
 						["g"] = {
 							i(208587),	-- Budding Restoration Mote (QI!)
 							i(208588),	-- Burgeoning Restoration Mote (QI!)
