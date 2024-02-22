@@ -290,7 +290,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 		},
 		["g"] = {
 			header(HEADERS.Item, 206448, {	-- Fyr'alath the Dreamrender
-				n(QUESTS, bubbleDownSelf({
+				n(QUESTS, bubbleDown({
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				}, {
 					q(77093, {	-- The Shadowflame Axe
