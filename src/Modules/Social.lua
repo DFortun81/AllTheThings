@@ -138,13 +138,15 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 					if character then
 						local data = character.PrimeData;
 						if data then
-							response = "ATTC\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString;
+							response = "ATTC\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString .. "\t" .. data.guid;
 						end
 					end
 				end
 				if response then SendResponseMessage("!\t" .. response, sender); end
 			elseif cmd == "!" then	-- Query Response
 				if a == "ATTC" then
+					local guid = args[6];
+					if guid then PlayerProgressCacheByGUID[guid] = { tonumber(args[3]), tonumber(args[4]), args[5] }; end
 					print(target .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
 				else
 					local response;
