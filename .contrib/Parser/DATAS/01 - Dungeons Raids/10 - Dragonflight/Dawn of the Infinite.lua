@@ -134,6 +134,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
 			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
+			ig(108183),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108191),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108207),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
@@ -203,6 +204,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
+			ig(108162),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108186),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108202),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108210),	-- Peerless Draenic Steel Chestplate	(NYI)
@@ -386,14 +388,17 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(5748),	-- Centaur Longbow						(NYI)
 		ig(204674),	-- Cursed Demonbone Longbow				(NYI)
-		ig(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
+		i(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
 			["bonusID"] = 451,
+			["modID"] = 0,
 		}),
-		ig(186414, {	-- Rae'shalare, Death's Whisper (Heroic)	(NYI)
+		i(186414, {	-- Rae'shalare, Death's Whisper (HC)	(NYI)
 			["bonusID"] = 1,
+			["modID"] = 0,
 		}),
-		ig(186414, {	-- Rae'shalare, Death's Whisper (Mythic)	(NYI)
+		i(186414, {	-- Rae'shalare, Death's Whisper (M)		(NYI)
 			["bonusID"] = 450,
+			["modID"] = 0,
 		}),
 		ig(115294),	-- Spectral Longbow						(NYI)
 
@@ -412,9 +417,7 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
 		ig(134749),	-- Covert Rifle							(Removed)
-		
-		-- TODO: This does not work, idk why and have no time to fix this now
-		ig(55853, {	-- Thundercall							(Removed)
+		i(55853, {	-- Thundercall							(Removed)
 			["modID"] = 1,
 		}),
 	}),
@@ -499,7 +502,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208121, {	-- Quantum Knuckles
 		q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
-			["name"] = "Quantum Fist Weapon completed.",
+			["name"] = "Quantum Knuckles/Fist Weapon completed.",
 			["collectible"] = false,
 		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
@@ -585,6 +588,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134582),	-- Vanguard Staff						(Removed)
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
+		q(77595, {	-- when you learn everything from Quantum Sword (One-Handed)
+			["name"] = "Quantum Sword (One-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(134613),	-- Scorching Quickblade					(NYI)
 		ig(166364),	-- Song of the Fallen					(NYI)
 		ig(155074),	-- Toll Enforcer						(NYI)
@@ -760,7 +767,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["name"] = "Quantum Greatsword (Two-Handed) completed.",
 				}),
 				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
-					["name"] = "Quantum Knuckles completed.",
+					["name"] = "Quantum Knuckles/Fist Weapon completed.",
 				}),
 				q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
 					["name"] = "Quantum Mace (One-Handed) completed.",
@@ -770,6 +777,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 				q(77601, {	-- when you learn everything from Quantum Staff
 					["name"] = "Quantum Staff completed.",
+				}),
+				q(77595, {	-- when you learn everything from Quantum Sword (One-Handed)
+					["name"] = "Quantum Sword (One-Handed) completed.",
 				}),
 				q(77610, {	-- when you learn everything from Quantum Wand
 					["name"] = "Quantum Wand completed.",
@@ -1272,7 +1282,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77853),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421487)
 
 		-- Quantum Items
-		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
 		-- q(77608),	-- when you learn everything from Quantum ?
@@ -1281,7 +1290,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
 		-- q(77629),	-- when you learn everything from Quantum ?
-		-- q(77631),	-- when you learn everything from Quantum ?
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
