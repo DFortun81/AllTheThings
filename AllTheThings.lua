@@ -3192,13 +3192,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 
 		-- If the user wants to show the progress of this search result, do so
-		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
-			group.collectionText = GetProgressTextForTooltip(group);
-
-			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
-			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
+		if app.Settings:GetTooltipSetting("Progress") then
+			tinsert(info, 1, { progress = GetProgressTextForTooltip(group) });
 		end
-
 
 		-- Add various extra field info if enabled in settings
 		app.ProcessInformationTypesForExternalTooltips(info, group, itemString)
@@ -9747,11 +9743,7 @@ RowOnEnter = function (self)
 		});
 	end
 	if app.Settings:GetTooltipSetting("Progress") then
-		local right = GetProgressTextForTooltip(reference);
-		if right and right ~= "" and right ~= "---" then
-			GameTooltipTextRight1:SetText(right);
-			GameTooltipTextRight1:Show();
-		end
+		tinsert(info, 1, { progress = GetProgressTextForTooltip(reference) });
 	end
 
 	-- Additional information (search will insert this information if found in search)

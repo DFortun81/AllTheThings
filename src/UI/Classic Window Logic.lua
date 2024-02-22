@@ -843,6 +843,11 @@ local function RowOnEnter(self)
 		});
 	end
 	
+	local progressText = GetProgressTextForTooltip(reference);
+	if progressText then
+		tinsert(info, { progress = progressText });
+	end
+	
 	if reference.minReputation and not reference.maxReputation then
 		local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
 		local msg = "Requires a minimum standing of"
@@ -1130,11 +1135,6 @@ local function RowOnEnter(self)
 		end
 	end
 	GameTooltip:SetATTReferenceForTexture(reference);
-	local progressText = GetProgressTextForTooltip(reference);
-	if progressText and progressText ~= "" and progressText ~= "---" then
-		GameTooltipTextRight1:SetText(progressText);
-		GameTooltipTextRight1:Show();
-	end
 	GameTooltip:Show();
 	
 	-- Reactivate the original tooltip integrations setting.

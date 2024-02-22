@@ -844,13 +844,18 @@ local function OnClickForLinkedAccount(row, button)
 	end
 	return true;
 end
-local function OnTooltipForCharacter(t)
+local function OnTooltipForCharacter(t, tooltipInfo)
 	local character = CharacterData[t.unit];
 	if character then
 		local primeData = character.PrimeData;
 		if primeData then
-			GameTooltipTextRight1:SetText(GetProgressColorText(primeData.progress, primeData.total));
-			GameTooltip:AddLine(primeData.modeString, 1, 1, 1);
+			tinsert(tooltipInfo, {
+				left = primeData.modeString,
+				r = 1, g = 1, b = 1
+			});
+			tinsert(tooltipInfo, {
+				progress = GetProgressColorText(primeData.progress, primeData.total),
+			});
 		end
 		
 		local total = 0;
@@ -864,28 +869,60 @@ local function OnTooltipForCharacter(t)
 					end
 				end
 				total = total + subtotal;
-				GameTooltip:AddDoubleLine(field, tostring(subtotal), 1, 1, 1);
+				tinsert(tooltipInfo, {
+					left = field,
+					right = tostring(subtotal),
+					r = 1, g = 1, b = 1
+				});
 			end
 		end
-		GameTooltip:AddLine(" ", 1, 1, 1);
-		GameTooltip:AddDoubleLine("Total", tostring(total), 0.8, 0.8, 1);
-		GameTooltip:AddLine("Left Click to Sync this Character", 0.8, 1, 0.8);
-		GameTooltip:AddLine("Right Click to Delete this Character", 1, 0.8, 0.8);
+		tinsert(tooltipInfo, { left = " " });
+		tinsert(tooltipInfo, {
+			left = "Total",
+			right = tostring(total),
+			r = 1, g = 0.8, b = 0.8
+		});
+		tinsert(tooltipInfo, {
+			left = "Left Click to Sync this Character",
+			r = 0.8, g = 1, b = 0.8
+		});
+		tinsert(tooltipInfo, {
+			left = "Right Click to Delete this Character",
+			r = 1, g = 0.8, b = 0.8
+		});
 		if character.ignored then
-			GameTooltip:AddLine("Alt-Right Click to Unignore this Character", 1, 0.8, 0.8);
-			GameTooltip:AddLine(" ");
-			GameTooltip:AddLine("Ignored Characters will not appear in the tooltip when using 'Show Other Characters' nor will they be sync'd with your other accounts. Characters from other accounts that are ignored on your current account will still receive updates from your other accounts.", 1, 1, 1, true);
+			tinsert(tooltipInfo, {
+				left = "Alt-Right Click to Unignore this Character",
+				r = 1, g = 0.8, b = 0.8
+			});
+			tinsert(tooltipInfo, { left = " " });
+			tinsert(tooltipInfo, {
+				left = "Ignored Characters will not appear in the tooltip when using 'Show Other Characters' nor will they be sync'd with your other accounts. Characters from other accounts that are ignored on your current account will still receive updates from your other accounts.",
+				r = 1, g = 1, b = 1, wrap = true
+			});
 		else
-			GameTooltip:AddLine("Alt-Right Click to Ignore this Character", 1, 0.8, 0.8);
+			tinsert(tooltipInfo, {
+				left = "Alt-Right Click to Ignore this Character",
+				r = 1, g = 0.8, b = 0.8
+			});
 		end
 	end
 end
-local function OnTooltipForLinkedAccount(t)
+local function OnTooltipForLinkedAccount(t, tooltipInfo)
 	if t.unit then
-		GameTooltip:AddLine("This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.", 0.8, 0.8, 1, true);
-		GameTooltip:AddLine("Right Click to Delete this Linked Character", 1, 0.8, 0.8);
+		tinsert(tooltipInfo, {
+			left = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.",
+			r = 0.8, g = 0.8, b = 1, wrap = true
+		});
+		tinsert(tooltipInfo, {
+			left = "Right Click to Delete this Linked Character",
+			r = 1, g = 0.8, b = 0.8
+		});
 	else
-		GameTooltip:AddLine("Right Click to Delete this Linked Account", 1, 0.8, 0.8);
+		tinsert(tooltipInfo, {
+			left = "Right Click to Delete this Linked Account",
+			r = 1, g = 0.8, b = 0.8
+		});
 	end
 end
 

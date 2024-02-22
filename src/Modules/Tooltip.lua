@@ -374,29 +374,101 @@ end
 
 -- Shared Tooltip Functions
 local left, right;
+function FindCommandEnd(txt, i, l)
+	-- Make sure string is in bounds.
+	local j = i + 1;
+	if j > l then return false; end
+	
+	-- Check for a command character.
+	local c = txt:sub(j,j);
+	if not (c == "C" or c == "c" or c == "T") then
+		return false;
+	end
+	for j=j+1,l,1 do
+		c = txt:sub(j,j);
+		if c == "|" then
+			local k = j + 1;
+			c = txt:sub(k,k);
+			if c == "r" or c == "t" then
+				return true, k;
+			end
+		end
+	end
+	return true, j;
+end
+function StripColorAndTextureData(txt)
+	local str, l, c, c2 = "", txt:len();
+	local i = 1;
+	while i < l do
+		c = txt:sub(i,i);
+		if c == "|" then
+			local foundCommand, j = FindCommandEnd(txt, i, l)
+			if foundCommand then
+				i = j;
+			else
+				str = str .. "\\" .. c;
+			end
+		else
+			str = str .. c;
+		end
+		i = i + 1;
+	end;
+	return str;
+end
+--[[
+app.StripColorAndTextureData = function()
+	return StripColorAndTextureData("|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t2 |cffff0000GOLD|r Coins")
+end;
+]]--
 local function AttachTooltipInformationEntry(tooltip, entry)
 	if entry.color then
 		entry.a, entry.r, entry.g, entry.b = app.Modules.Color.HexToARGB(entry.color);
 		entry.color = nil;
 	end
-	left, right = (entry.left or " "), entry.right;
+	
+	left, right = entry.left, entry.right;
 	if right then
 		if entry.r then
-			tooltip:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
+			tooltip:AddDoubleLine(left or " ", right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
 		else
-			tooltip:AddDoubleLine(left, right);
+			tooltip:AddDoubleLine(left or " ", right);
 		end
-	elseif entry.r then
-		if entry.wrap then
-			tooltip:AddLine(left, entry.r, entry.g, entry.b, 1);
+	elseif left then
+		if entry.r then
+			if entry.wrap then
+				tooltip:AddLine(left, entry.r, entry.g, entry.b, 1);
+			else
+				tooltip:AddLine(left, entry.r, entry.g, entry.b);
+			end
 		else
-			tooltip:AddLine(left, entry.r, entry.g, entry.b);
+			if entry.wrap then
+				tooltip:AddLine(left, nil, nil, nil, 1);
+			else
+				tooltip:AddLine(left);
+			end
 		end
 	else
-		if entry.wrap then
-			tooltip:AddLine(left, nil, nil, nil, 1);
-		else
-			tooltip:AddLine(left);
+		local progressText = entry.progress;
+		if progressText and progressText ~= "" and progressText ~= "---" then
+			local prefix = tooltip:GetName() .. "Text";
+			local leftText = _G[prefix .. "Left1"];
+			if leftText then
+				local rightText = _G[prefix .. "Right1"];
+				if rightText then
+					local strippedText = StripColorAndTextureData((leftText:GetText() or "  ") .. progressText);
+					if strippedText:len() < 80 then
+						if tooltip.CloseButton then
+							-- dont think the region for the rightText can be modified within the tooltip, so pad instead
+							progressText = progressText .. "     ";
+						end
+						rightText:SetText(progressText);
+						rightText:Show();
+					else
+						tooltip:AddDoubleLine(L.PROGRESS, progressText);
+						tooltip:AddDoubleLine("STRIPPED", strippedText .. (" " .. strippedText:len()));
+					end
+				end
+			end
 		end
 	end
 end
@@ -427,23 +499,6 @@ local function AttachTooltipRawSearchResults(tooltip, lineNumber, group)
 
 	-- If there was info text generated for this search result, then display that first.
 	AttachTooltipInformation(tooltip, group.tooltipInfo);
-
-	-- If the user has Show Collection Progress turned on.
-	if group.encounterID then
-		tooltip:Show();
-	elseif group.collectionText and tooltip:NumLines() > 0 then
-		local rightSide = _G[tooltip:GetName() .. "TextRight" .. (lineNumber or 1)];
-		if rightSide then
-			if tooltip.CloseButton then
-				-- dont think the region for the rightText can be modified within the tooltip, so pad instead
-				rightSide:SetText(group.collectionText .. "     ");
-			else
-				rightSide:SetText(group.collectionText);
-			end
-			rightSide:Show();
-		end
-	end
-
 	tooltip.ATTAttachComplete = not group.working;
 end
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)

@@ -1658,11 +1658,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- If the user wants to show the progress of this search result, do so.
-	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-		group.collectionText = GetProgressTextForTooltip(group);
-
-		-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
-		if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
+	if app.Settings:GetTooltipSetting("Progress") then
+		tinsert(info, 1, { progress = GetProgressTextForTooltip(group) });
 	end
 
 	-- If there was any informational text generated, then attach that info.
