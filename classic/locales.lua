@@ -791,7 +791,7 @@ L["MAP_ID"] = "地图ID"
 L["OBJECT_ID"] = "Object ID"
 L["QUEST_ID"] = "任务ID"
 L["SPELL_ID"] = "法术ID"
-L["iLvl"] = "物品等级"
+L["ITEM_LEVEL"] = "物品等级"
 
 -- Icons and Collection Text
 L["COLLECTED"] = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "已收集|r" -- Acquired the colors and icon from CanIMogIt.

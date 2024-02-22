@@ -632,7 +632,7 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.TITLE_ID = "头衔 ID";
 		L.TOY_ID = "玩具 ID";
 		L.VISUAL_ID = "外观 ID";
-		L.iLvl = "物品等级";
+		L.ITEM_LEVEL = "物品等级";
 
 	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "打开所有神器武器的神器用户界面以缓存这是否是升级。这对于确定您是否可以将此物品交易给小伙伴很有用。 ";

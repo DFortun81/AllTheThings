@@ -160,7 +160,7 @@ if C_ArtifactUI then
 						local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(relicID);
 						tinsert(info, 1, {
 							left = link and ("   " .. ((icon and ("|T" .. icon .. ":0|t ") or "") .. link)) or RETRIEVING_DATA,
-							right = L["iLvl"] .. " " .. infoString,
+							right = L.ITEM_LEVEL .. " " .. infoString,
 						});
 					end
 				end
