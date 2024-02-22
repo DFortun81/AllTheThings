@@ -4225,7 +4225,7 @@ function app:SynchronizeWithPlayer(playerName)
 		C_ChatInfo.SendAddonMessage("ATT", "?\tsync\t" .. battleTag, "WHISPER", playerName);
 	end
 end
-app.AddEventHandler("OnStartup", function()
+app.AddEventHandler("OnReady", function()
 	-- Attempt to register for the addon message prefix.
 	-- NOTE: This is only used by this old sync module and will be removed at some point.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
@@ -11108,6 +11108,9 @@ local function RefreshData()
 	else
 		app:UpdateWindows(nil, app.refreshDataGot);
 	end
+	
+	-- Execute the OnRefreshComplete handlers.
+	app.HandleEvent("OnRefreshComplete");
 end
 function app:RefreshData(lazy, got, manual)
 	app.Processing_RefreshData = true;

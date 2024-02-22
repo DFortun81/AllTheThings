@@ -2,8 +2,8 @@
 local _, app = ...;
 
 -- Global locals
-local print, select, tonumber, tremove
-	= print, select, tonumber, tremove;
+local print, rawget, select, tonumber, tremove
+	= print, rawget, select, tonumber, tremove;
 local C_ChatInfo, GetRealmName, IsInGuild, IsInGroup, IsInInstance, IsInRaid, UnitGUID, UnitInParty, UnitInRaid, UnitIsPlayer, UnitName
 	= C_ChatInfo, GetRealmName, IsInGuild, IsInGroup, IsInInstance, IsInRaid, UnitGUID, UnitInParty, UnitInRaid, UnitIsPlayer, UnitName;
 local LE_PARTY_CATEGORY_INSTANCE, LE_PARTY_CATEGORY_HOME
@@ -37,6 +37,29 @@ local function SendResponseMessage(msg, player)
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", player);
 	end
 end
+
+-- Player Progress Cache
+local PlayerProgressCacheByGUID = {};
+app.PlayerProgressCacheByGUID = PlayerProgressCacheByGUID;
+
+-- Version Cache
+local major,minor,build,versionString,versionUID;
+local VersionCache = setmetatable({
+	["[Git]"] = 1,
+}, {
+	__index = function(t, version)
+		versionString = version:match('%d[%d.,]*');
+		major,minor,build = ("."):split(versionString);
+		major = tonumber(major or "0");
+		minor = tonumber(minor or "0");
+		build = tonumber(build or "0");
+		versionUID = (major * 1000) + (major * 10) + build;
+		--print("GenerateVersionUniqueID", versionString, major,minor,build, versionUID);
+		t[version] = versionUID;
+		return versionUID;
+	end
+});
+local CurrentVersion = VersionCache[app.Version];
 
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 	if not target then target = sender; end
@@ -155,6 +178,13 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 				if myName == name and (not server or server == "" or GetRealmName() == server) then
 					app.events.CHAT_MSG_ADDON(prefix, text:sub(5 + a:len()), "WHISPER", sender);
 				end
+			elseif cmd == "A" then -- Version Command
+				local guid = args[6];
+				if guid then PlayerProgressCacheByGUID[guid] = { tonumber(args[3]), tonumber(args[4]), args[5] }; end
+				if a ~= "[Git]" and not rawget(VersionCache, a) and CurrentVersion < VersionCache[a] then
+					local flavors = app.L.NEW_VERSION_FLAVORS;
+					print(app.L.NEW_VERSION_AVAILABLE:format(app.L.TITLE, flavors[math.random(#flavors)]));
+				end
 			end
 		end
 	elseif prefix == "ATT" then	-- old format, supported until Retail supports the new sync window
@@ -251,12 +281,25 @@ end
 local lastProgressUpdateMessage;
 app.AddEventHandler("OnRefreshComplete", function()
 	-- Send a message to your party members.
-	local data = (app.CurrentCharacter and app.CurrentCharacter.PrimeData) or app:GetDataCache();
-	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString;
+	local currentCharacter = app.CurrentCharacter and app.CurrentCharacter;
+	local data = currentCharacter.PrimeData or app:GetDataCache();
+	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString .. "\t" .. currentCharacter.guid;
 	if lastProgressUpdateMessage ~= msg then
 		lastProgressUpdateMessage = msg;
 		SendGroupMessage(msg);
 		SendGuildMessage(msg);
+	end
+end);
+app.AddEventHandler("OnSavedVariablesAvailable", function()
+	local savedCache = AllTheThingsSavedVariables.PlayerProgressCacheByGUID;
+	if savedCache then
+		for guid,progress in pairs(PlayerProgressCacheByGUID) do
+			savedCache[guid] = progress;
+		end
+		PlayerProgressCacheByGUID = savedCache;
+		app.PlayerProgressCacheByGUID = savedCache;
+	else
+		AllTheThingsSavedVariables.PlayerProgressCacheByGUID = PlayerProgressCacheByGUID;
 	end
 end);
 app.AddEventHandler("OnReady", function()

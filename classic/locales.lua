@@ -9,6 +9,16 @@ for key,value in pairs({
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!";
 	
+	-- Social Module
+	["NEW_VERSION_AVAILABLE"] = "A newer version of %s is available. Please update the AddOn, %s.";
+	["NEW_VERSION_FLAVORS"] = {
+		"or we'll give Sylvanas another lighter",
+		"Alexstrasza is worried about you",
+		"and Invincible will drop |cffffaaaafor sure|r next time",
+		"this was merely a setback",
+	};
+	["SOCIAL_PROGRESS"] = "Social Progress";
+	
 	-- Settings
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";

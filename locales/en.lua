@@ -335,6 +335,19 @@ for key, value in pairs({
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["COMPLETED_BY"] = "Completed By: %s";
 	["OWNED_BY"] = "Owned by %s";
+	
+	-- Social Module
+	["NEW_VERSION_AVAILABLE"] = "A newer version of %s is available. Please update the AddOn, %s.";
+	["NEW_VERSION_FLAVORS"] = {
+		"or we'll give Sylvanas another lighter",
+		"Alexstrasza is worried about you",
+		"and Invincible will drop |cffffaaaafor sure|r next time",
+		"this was merely a setback",
+		"time to drop your % down",
+		"and a turtle will make it to the water",
+		"CHAMPYUUN, DE AZURIITE",
+	};
+	["SOCIAL_PROGRESS"] = "Social Progress";
 
 	-- Settings.lua
 		["SKIP_AUTO_REFRESH"] = "Skip Settings-Toggle Data Refreshes!";

@@ -136,6 +136,7 @@ local InformationTypes = {
 	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, IsStandaloneProperty = false }),
 	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, IsStandaloneProperty = false }),
 	CreateInformationType("Layer", { text = L.LAYER, priority = 1, IsStandaloneProperty = false }),
+	CreateInformationType("SocialProgress", { text = L.SOCIAL_PROGRESS, priority = 1, IsStandaloneProperty = false }),
 	
 	-- Contextual fields
 	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayInExternalTooltips = false,

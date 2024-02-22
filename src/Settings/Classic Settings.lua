@@ -153,6 +153,7 @@ local TooltipSettingsBase = {
 		["SourceLocations:Things"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
+		["SocialProgress"] = true,
 		
 		-- Information Types
 		["description"] = true,

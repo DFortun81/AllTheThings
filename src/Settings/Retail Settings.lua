@@ -194,6 +194,7 @@ local TooltipSettingsBase = {
 		["WorldQuestsList:Currencies"] = true,
 		["CompletedBy"] = true,
 		["Updates:AdHoc"] = true,
+		["SocialProgress"] = true,
 		
 		-- Information Types
 		["description"] = true,
