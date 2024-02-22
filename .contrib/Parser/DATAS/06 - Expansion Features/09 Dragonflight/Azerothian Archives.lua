@@ -552,6 +552,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					--79994,	-- Gaze of Neltharion, Zaralek Cavern Site
 				},
 				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+					q(78662, {	-- Excavation: A Cliffside Full of Caches
+						["coord"] = { 14.9, 18.2, THE_FORBIDDEN_REACH },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
+					}),
 					q(78645, {	-- Excavation: Buried in the Riverbed
 						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
 						["g"] = {
