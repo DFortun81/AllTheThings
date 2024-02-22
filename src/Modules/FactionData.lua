@@ -58,6 +58,7 @@ api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTur
 		left = text, right = (totalTurnIns - remainingTurnIns) .. " / " .. totalTurnIns .. " (" .. remainingTurnIns .. ")",
 		r = 1, g = 1, b = 1
 	};
+	return repPerTurnIn;
 end
 api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation, multiplier)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
@@ -66,4 +67,39 @@ api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, t
 		left = text, right = ((totalTurnIns - remainingTurnIns) * multiplier) .. " / " .. (totalTurnIns * multiplier) .. " (" .. (remainingTurnIns * multiplier) .. ")",
 		r = 1, g = 1, b = 1
 	};
+	return repPerTurnIn;
 end
+api.AddQuestTooltip = function(tooltipInfo, prefix, quest)
+	tooltipInfo[#tooltipInfo + 1] = {
+		left = prefix .. (quest.text or RETRIEVING_DATA),
+		right = app.GetCollectionIcon(quest.saved),
+		r = 1, g = 1, b = 1
+	};
+end
+api.AddQuestTooltipWithReputation = function(tooltipInfo, prefix, quest, repPerTurnIn)
+	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
+	tooltipInfo[#tooltipInfo + 1] = {
+		left = prefix .. (quest.text or RETRIEVING_DATA),
+		right = "+" .. repPerTurnIn .. " Rep " .. app.GetCollectionIcon(quest.saved),
+	};
+	return repPerTurnIn;
+end
+api.AddQuestsTooltipWithReputation = function(tooltipInfo, text, quests, repPerTurnIn)
+	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
+	local completedAny = false;
+	for i,quest in ipairs(quests) do if quest.saved then completedAny = true; break; end end
+	local count = #tooltipInfo + 1;
+	tooltipInfo[count] = {
+		left = text,
+		right = "+" .. repPerTurnIn .. " Rep " .. app.GetCollectionIcon(completedAny)
+	};
+	for i,quest in ipairs(quests) do
+		count = count + 1;
+		tooltipInfo[count] = {
+			left = "  " .. (quest.text or RETRIEVING_DATA)
+		};
+	end
+	return repPerTurnIn;
+end
+
+        

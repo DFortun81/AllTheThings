@@ -9,27 +9,16 @@ local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 			champion = _.SearchForField("questID", 12582)[1];
 			t.champion = champion;
 		end
-		tinsert(tooltipInfo, {
-			left = "Complete " .. (champion.text or RETRIEVING_DATA),
-			right = _.GetCollectionIcon(champion.saved),
-			r = 1, g = 1, b = 1
-		});
+		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete ", champion);
 	elseif reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		local chickenRep = 500;
 		local chicken = t.chicken;
 		if not chicken then
 			chicken = _.SearchForField("questID", 12702)[1];
 			t.chicken = chicken;
 		end
-		tinsert(tooltipInfo, {
-			left = " " .. (chicken.text or RETRIEVING_DATA),
-			right = _.GetCollectionIcon(chicken.saved),
-			r = 1, g = 1, b = 1
-		});
-
-		local rejekRep = 500;
+		local chickenRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " ", chicken, 250);
+		
 		local rejek = t.rejek;
 		if not rejek then
 			rejek = {};
@@ -42,17 +31,9 @@ local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 			end
 			t.rejek = rejek;
 		end
-		local completedAny = false;
-		for i,quest in ipairs(rejek) do if quest.saved then completedAny = true; break; end end
-		tinsert(tooltipInfo, {
-			left = "Complete 1 of 4 quests offered by Rejek:",
-			right = _.GetCollectionIcon(completedAny),
-		});
-		for i,quest in ipairs(rejek) do
-			tinsert(tooltipInfo, { left = "  " .. (quest.text or RETRIEVING_DATA) });
-		end
+		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
+		local rejekRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 4 quests offered by Rejek:", rejek, 250);
 
-		local vekgarRep = 700;
 		local vekgar = t.vekgar;
 		if not vekgar then
 			vekgar = {};
@@ -65,17 +46,8 @@ local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 			end
 			t.vekgar = vekgar;
 		end
-		tinsert(tooltipInfo, {
-			left = "Complete 1 of 3 quests offered by Vekgar:",
-			right = _.GetCollectionIcon(vekgar[1].saved),
-		});
-		for i,quest in ipairs(vekgar) do
-			tinsert(tooltipInfo, {
-				left = "  " .. (quest.text or RETRIEVING_DATA),
-			});
-		end
-		
-		addRepInfo(tooltipInfo, reputation, "Complete Dailies Everyday", chickenRep + rejekRep + vekgarRep, 42000);
+		local vekgarRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 3 quests offered by Vekgar:", vekgar, 350);
+		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", chickenRep + rejekRep + vekgarRep, 42000);
 	end
 end]];
 local OnTooltipForOracles = [[function(t, tooltipInfo)
@@ -86,28 +58,19 @@ local OnTooltipForOracles = [[function(t, tooltipInfo)
 			hand = _.SearchForField("questID", 12689)[1];
 			t.hand = hand;
 		end
-		tinsert(tooltipInfo, {
-			left = "Complete " .. (hand.text or RETRIEVING_DATA),
-			right = _.GetCollectionIcon(hand.saved),
-			r = 1, g = 1, b = 1
-		});
+		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete ", hand);
 	elseif reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		local appeasingRep = 500;
 		local appeasing = t.appeasing;
 		if not appeasing then
 			appeasing = _.SearchForField("questID", 12704)[1];
 			t.appeasing = appeasing;
 		end
-		tinsert(tooltipInfo, {
-			left = " " .. (appeasing.text or RETRIEVING_DATA),
-			right = _.GetCollectionIcon(appeasing.saved)
-		});
-
-		local soodowRep = 700;
-		if not t.soodow then
-			local soodow = {};
+		local appeasingRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " ", appeasing, 250);
+		
+		local soodow = t.soodow;
+		if not soodow then
+			soodow = {};
 			for i,questID in ipairs({ 12761, 12762, 12705 }) do
 				for j,quest in ipairs(_.SearchForField("questID", questID)) do
 					if quest.questID == questID then
@@ -117,19 +80,12 @@ local OnTooltipForOracles = [[function(t, tooltipInfo)
 			end
 			t.soodow = soodow;
 		end
-		tinsert(tooltipInfo, {
-			left = "Complete 1 of 3 quests offered by Oracle Soo-dow:",
-			right = _.GetCollectionIcon(t.soodow[1].saved)
-		});
-		for i,quest in ipairs(t.soodow) do
-			tinsert(tooltipInfo, {
-				left = "  " .. (quest.text or RETRIEVING_DATA)
-			});
-		end
-
-		local sooneeRep = 500;
-		if not t.soonee then
-			local soonee = {};
+		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
+		local soodowRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 3 quests offered by Oracle Soo-dow:", soodow, 350);
+		
+		local soonee = t.soonee;
+		if not soonee then
+			soonee = {};
 			for i,questID in ipairs({ 12735, 12737, 12736, 12726 }) do
 				for j,quest in ipairs(_.SearchForField("questID", questID)) do
 					if quest.questID == questID then
@@ -139,19 +95,8 @@ local OnTooltipForOracles = [[function(t, tooltipInfo)
 			end
 			t.soonee = soonee;
 		end
-		local completedAny = false;
-		for i,quest in ipairs(t.soonee) do if quest.saved then completedAny = true; break; end end
-		tinsert(tooltipInfo, {
-			left = "Complete 1 of 4 quests offered by Oracle Soo-nee:",
-			right = _.GetCollectionIcon(completedAny)
-		});
-		
-		for i,quest in ipairs(t.soonee) do
-			tinsert(tooltipInfo, {
-				left = "  " .. (quest.text or RETRIEVING_DATA)
-			});
-		end
-		addRepInfo(tooltipInfo, reputation, "Complete Dailies Everyday", appeasingRep + soodowRep + sooneeRep, 42000);
+		local sooneeRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 4 quests offered by Oracle Soo-nee:", soonee, 250);
+		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", appeasingRep + soodowRep + sooneeRep, 42000);
 	end
 end]];
 root(ROOTS.Zones, {

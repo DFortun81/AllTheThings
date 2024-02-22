@@ -4,27 +4,19 @@
 local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
+		local AddQuestTooltip = _.Modules.FactionData.AddQuestTooltip;
 		if not t.mending then
 			local f = _.SearchForField("questID", 12915);
 			if f and #f > 0 then t.mending = f[1]; end
 		end
-		tinsert(tooltipInfo, {
-			left = "Complete " .. (t.mending.text or RETRIEVING_DATA),
-			right = _.GetCollectionIcon(t.mending.saved),
-			r = 1, g = 1, b = 1
-		});
+		AddQuestTooltip(tooltipInfo, "Complete ", t.mending);
 		if not t.spark then
 			local f = _.SearchForField("questID", 12956);
 			if f and #f > 0 then t.spark = f[1]; end
 		end
-		tinsert(tooltipInfo, {
-			left = "Complete " .. (t.spark.text or RETRIEVING_DATA),
-			right = _.GetCollectionIcon(t.spark.saved),
-			r = 1, g = 1, b = 1
-		});
+		AddQuestTooltip(tooltipInfo, "Complete ", t.spark);
 	elseif reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		local isHuman = _.RaceIndex == 1;
+		local AddQuestTooltip = _.Modules.FactionData.AddQuestTooltip;
 		local viscousRep, callRep, coldRep, dragonRep = 0, 0, 0, 0;
 		if not t.helm then
 			local f = _.SearchForField("questID", 12987);
@@ -33,11 +25,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.helm.saved then
 			viscousRep = 350;
 		else
-			tinsert(tooltipInfo, {
-				left = "Complete " .. (t.helm.text or RETRIEVING_DATA),
-				right = _.GetCollectionIcon(t.helm.saved),
-				r = 1, g = 1, b = 1
-			});
+			AddQuestTooltip(tooltipInfo, "Complete ", t.helm);
 		end
 
 		if not t.monument then
@@ -47,11 +35,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.monument.saved then
 			callRep = 350;
 		else
-			tinsert(tooltipInfo, {
-				left = "Complete " .. (t.monument.text or RETRIEVING_DATA),
-				right = _.GetCollectionIcon(t.monument.saved),
-				r = 1, g = 1, b = 1
-			});
+			AddQuestTooltip(tooltipInfo, "Complete ", t.monument);
 		end
 
 		if not t.elements then
@@ -61,11 +45,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.elements.saved then
 			coldRep = 350;
 		else
-			tinsert(tooltipInfo, {
-				left = "Complete " .. (t.elements.text or RETRIEVING_DATA),
-				right = _.GetCollectionIcon(t.elements.saved),
-				r = 1, g = 1, b = 1
-			});
+			AddQuestTooltip(tooltipInfo, "Complete ", t.elements);
 		end
 
 		if not t.spear then
@@ -75,85 +55,57 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		if t.spear.saved then
 			dragonRep = 500;
 		else
-			tinsert(tooltipInfo, {
-				left = "Complete " .. (t.spear.text or RETRIEVING_DATA),
-				right = _.GetCollectionIcon(t.spear.saved),
-				r = 1, g = 1, b = 1
-			});
+			AddQuestTooltip(tooltipInfo, "Complete ", t.spear);
 		end
-
+		
+		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
 		if viscousRep > 0 then
 			if not t.viscous then
 				local f = _.SearchForField("questID", 13006);
 				if f and #f > 0 then t.viscous = f[1]; end
 			end
-			tinsert(tooltipInfo, {
-				left = t.viscous.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.viscous.saved),
-				r = 1, g = 1, b = 1
-			});
+			viscousRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.viscous, viscousRep);
 		end
 		local feedingRep = 0;
 		if reputation >= ]] .. REVERED .. [[ then
-			feedingRep = 350;
 			if not t.feeding then
 				local f = _.SearchForField("questID", 13046);
 				if f and #f > 0 then t.feeding = f[1]; end
 			end
-			tinsert(tooltipInfo, {
-				left = t.feeding.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.feeding.saved),
-				r = 1, g = 1, b = 1
-			});
+			feedingRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.feeding, 350);
 		end
 		if callRep > 0 then
 			if not t.call then
 				local f = _.SearchForField("questID", 12977);
 				if f and #f > 0 then t.call = f[1]; end
 			end
-			tinsert(tooltipInfo, {
-				left = t.call.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.call.saved),
-				r = 1, g = 1, b = 1
-			});
+			callRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.call, callRep);
 		end
 		if coldRep > 0 then
 			if not t.cold then
 				local f = _.SearchForField("questID", 12981);
 				if f and #f > 0 then t.cold = f[1]; end
 			end
-			tinsert(tooltipInfo, {
-				left = t.cold.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.cold.saved),
-				r = 1, g = 1, b = 1
-			});
+			coldRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.cold, coldRep);
 		end
 		if dragonRep > 0 then
 			if not t.dragon then
 				local f = _.SearchForField("questID", 13003);
 				if f and #f > 0 then t.dragon = f[1]; end
 			end
-			tinsert(tooltipInfo, {
-				left = t.dragon.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.dragon.saved),
-				r = 1, g = 1, b = 1
-			});
+			dragonRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.dragon, dragonRep);
 		end
 		local spyRep = 0;
 		if reputation >= ]] .. HONORED .. [[ then
-			spyRep = 350;
 			if not t.spy then
 				local f = _.SearchForField("questID", 12994);
 				if f and #f > 0 then t.spy = f[1]; end
 			end
-			tinsert(tooltipInfo, {
-				left = t.spy.text or RETRIEVING_DATA,
-				right = _.GetCollectionIcon(t.spy.saved),
-				r = 1, g = 1, b = 1
-			});
+			spyRep = AddQuestTooltipWithReputation(tooltipInfo, " ", t.spy, 350);
 		end
 
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		local repPerDay = viscousRep + callRep + coldRep + dragonRep + feedingRep + spyRep;
 		addRepInfo(tooltipInfo, reputation, "Complete Dailies Everyday", repPerDay, 42000);
 		addRepInfo(tooltipInfo, reputation, "Turn in Everfrost.", 350, 42000);
