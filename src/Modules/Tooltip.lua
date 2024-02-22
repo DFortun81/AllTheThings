@@ -559,7 +559,7 @@ if TooltipDataProcessor then
 		[Enum_TooltipDataType.Toy] = "itemID",
 		[Enum_TooltipDataType.Item] = "itemID",
 		[Enum_TooltipDataType.Spell] = "spellID",
-		[Enum_TooltipDataType.UnitAura] = "spellID",
+		--[Enum_TooltipDataType.UnitAura] = "spellID",
 		-- [Enum_TooltipDataType.Mount] = "spellID",	-- need special conversion
 		--[Enum_TooltipDataType.Macro] = "spellID",	-- Possibly?
 		[Enum_TooltipDataType.Achievement] = "achievementID",
