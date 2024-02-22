@@ -797,6 +797,9 @@ local function RowOnEnter(self)
 			end
 		end
 	end
+	if reference.titleID then
+		AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
+	end
 
 	-- Miscellaneous fields
 	local linesByText = {}, title;
@@ -967,9 +970,6 @@ local function RowOnEnter(self)
 			r = 0.8, g = 0.8, b = 1,
 			wrap = true,
 		});
-	end
-	if reference.titleID then
-		AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
 	end
 	
 	

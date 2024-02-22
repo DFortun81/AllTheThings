@@ -4291,6 +4291,10 @@ local itemFields = {
 		local link = t.link;
 		return link and GetItemInfo(link);
 	end,
+	["iLvl"] = function(t)
+		local link = t.link;
+		return link and select(4, GetItemInfo(link));
+	end,
 	["f"] = function(t)
 		if t.questID then return app.FilterConstants.QUEST_ITEMS; end
 		if #SearchForField("itemIDAsCost", t.itemID) > 0 then
