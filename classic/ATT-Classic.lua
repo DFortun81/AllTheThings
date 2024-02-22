@@ -2304,8 +2304,12 @@ end,
 	if t.collectible then
 		local r = t.rep or (t.BuildReputation and t:BuildReputation());
 		if r then
-			GameTooltip:AddLine(" ");
-			GameTooltip:AddDoubleLine(" |T" .. r.icon .. ":0|t " .. r.text, app.L[r.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+			tinsert(tooltipInfo, { left = " " });
+			tinsert(tooltipInfo, {
+				left = " |T" .. r.icon .. ":0|t " .. r.text,
+				right = app.L[r.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"],
+				r = 1, g = 1, b = 1
+			});
 		end
 	end
 end,
@@ -2355,9 +2359,13 @@ end,
 	if t.collectible then
 		local reps = t.reps or (t.BuildReputations and t:BuildReputations());
 		if reps then
-			GameTooltip:AddLine(" ");
+			tinsert(tooltipInfo, { left = " " });
 			for i,faction in ipairs(reps) do
-				GameTooltip:AddDoubleLine(" |T" .. faction.icon .. ":0|t " .. faction.text, app.L[faction.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+				tinsert(tooltipInfo, {
+					left = " |T" .. faction.icon .. ":0|t " .. faction.text,
+					right = app.L[faction.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"],
+					r = 1, g = 1, b = 1
+				});
 			end
 		end
 	end
@@ -2516,10 +2524,18 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 				end
 			end
 			if #criteriaDatas > 0 then
-				GameTooltip:AddLine(" ", 1, 1, 1);
-				GameTooltip:AddDoubleLine("Total Criteria", tostring(#criteriaDatas), 0.8, 0.8, 1);
+				tinsert(tooltipInfo, { left = " " });
+				tinsert(tooltipInfo, {
+					left = "Total Criteria",
+					right = tostring(#criteriaDatas),
+					r = 0.8, g = 0.8, b = 1
+				});
 				for i,criteriaData in ipairs(criteriaDatas) do
-					GameTooltip:AddDoubleLine(criteriaData[1], criteriaData[2], 1, 1, 1, 1, 1, 1);
+					tinsert(tooltipInfo, {
+						left = criteriaData[1],
+						right = criteriaData[2],
+						r = 1, g = 1, b = 1
+					});
 				end
 			end
 		end
@@ -2527,15 +2543,21 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	local onTooltipForAchievementCriteria = function(t, tooltipInfo)
 		local achievementID = t.achievementID;
 		if achievementID then
-			GameTooltip:AddDoubleLine(L.CRITERIA_FOR, "|cffffff00[" .. (select(2, GetAchievementInfo(achievementID)) or RETRIEVING_DATA) .. "]|r");
+			tinsert(tooltipInfo, {
+				left = L.CRITERIA_FOR,
+				right = "|cffffff00[" .. (select(2, GetAchievementInfo(achievementID)) or RETRIEVING_DATA) .. "]|r",
+			});
 			if IsShiftKeyDown() then
 				local criteriaID = t.criteriaID;
 				if criteriaID then
-					GameTooltip:AddLine(" ", 1, 1, 1);
+					tinsert(tooltipInfo, { left = " " });
 					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = t.GetInfo(achievementID, criteriaID, true)
 					if criteriaString then
-						GameTooltip:AddDoubleLine(" [" .. criteriaUID .. "]: " .. tostring(criteriaString),
-							"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. GetCompletionIcon(completed), 1, 1, 1, 1, 1, 1);
+						tinsert(tooltipInfo, {
+							left = " [" .. criteriaUID .. "]: " .. tostring(criteriaString),
+							right = "(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. GetCompletionIcon(completed),
+							r = 1, g = 1, b = 1
+						});
 					end
 				end
 			end
@@ -2892,20 +2914,24 @@ else
 		return true;
 	end
 	commonAchievementHandlers.COMPANIONS_OnTooltip = function(t, tooltipInfo)
-		GameTooltip:AddLine("Collect " .. t.rank .. " companion pets.");
+		tinsert(tooltipInfo, { left = "Collect " .. t.rank .. " companion pets." });
 		if t.total and t.progress < t.total and t.rank >= 25 then
-			GameTooltip:AddLine(" ");
+			tinsert(tooltipInfo, { left = " " });
 			local c = 0;
 			for i,g in pairs(SearchForFieldContainer("speciesID")) do
 				local p = g[1];
 				if p.visible then
 					c = c + 1;
 					if c < 16 then
-						GameTooltip:AddDoubleLine(" |T" .. p.icon .. ":0|t " .. p.text, app.L[p.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+						tinsert(tooltipInfo, {
+							left = " |T" .. p.icon .. ":0|t " .. p.text,
+							right = app.L[p.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"],
+							r = 1, g = 1, b = 1
+						});
 					end
 				end
 			end
-			if c > 15 then GameTooltip:AddLine(" And " .. (c - 15) .. " more!"); end
+			if c > 15 then tinsert(tooltipInfo, { " And " .. (c - 15) .. " more!" }); end
 		end
 	end
 	commonAchievementHandlers.EXALTED_REPS_OnUpdate = function(t)
@@ -3030,9 +3056,13 @@ else
 	end
 	commonAchievementHandlers.KNOW_SPELLS_OnTooltip = function(t, tooltipInfo)
 		if t.collectible and t.spells then
-			GameTooltip:AddLine(" ");
+			tinsert(tooltipInfo, { left = " " });
 			for i,spell in ipairs(t.spells) do
-				GameTooltip:AddDoubleLine(" |T" .. spell.icon .. ":0|t " .. spell.text, app.L[spell.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+				tinsert(tooltipInfo, {
+					left = " |T" .. spell.icon .. ":0|t " .. spell.text,
+					right = app.L[spell.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"],
+					r = 1, g = 1, b = 1
+				});
 			end
 		end
 	end
@@ -3069,8 +3099,11 @@ else
 	end
 	commonAchievementHandlers.LOREMASTER_OnTooltip = function(t, tooltipInfo)
 		if t.collectible and t.p and not t.collected then
-			GameTooltip:AddLine(" ");
-			GameTooltip:AddDoubleLine(" ", app.Modules.Color.GetProgressText(min(t.rank, t.p),t.rank), 1, 1, 1);
+			tinsert(tooltipInfo, { left = " " });
+			tinsert(tooltipInfo, {
+				right = app.Modules.Color.GetProgressText(min(t.rank, t.p),t.rank),
+				r = 1, g = 1, b = 1
+			});
 		end
 	end
 	commonAchievementHandlers.META_ACHCAT_OnUpdate = function(t, achievementCategoryID)
@@ -3131,9 +3164,13 @@ else
 	end
 	commonAchievementHandlers.META_OnTooltip = function(t, tooltipInfo)
 		if t.collectible and t.achievements then
-			GameTooltip:AddLine(" ");
+			tinsert(tooltipInfo, { left = " " });
 			for i,achievement in ipairs(t.achievements) do
-				GameTooltip:AddDoubleLine(" |T" .. achievement.icon .. ":0|t " .. achievement.text, app.L[achievement.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+				tinsert(tooltipInfo, {
+					left = " |T" .. achievement.icon .. ":0|t " .. achievement.text,
+					right = app.L[achievement.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"],
+					r = 1, g = 1, b = 1
+				});
 			end
 		end
 	end
@@ -3186,9 +3223,9 @@ else
 		return true;
 	end
 	commonAchievementHandlers.MOUNTS_OnTooltip = function(t, tooltipInfo)
-		GameTooltip:AddLine("Collect " .. t.rank .. " mounts.");
+		tinsert(tooltipInfo, { left = "Collect " .. t.rank .. " mounts." });
 		if t.total and t.progress < t.total and t.rank >= 25 then
-			GameTooltip:AddLine(" ");
+			tinsert(tooltipInfo, { left = " " });
 			local c = 0;
 			local template,r = {},{};
 			for i,o in pairs(SearchForFieldContainer("spellID")) do
@@ -3199,12 +3236,16 @@ else
 					if p.visible then
 						c = c + 1;
 						if c < 16 then
-							GameTooltip:AddDoubleLine(" |T" .. p.icon .. ":0|t " .. p.text, app.L[p.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+							tinsert(tooltipInfo, {
+								left = " |T" .. p.icon .. ":0|t " .. p.text,
+								right = app.L[p.collected and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"],
+								r = 1, g = 1, b = 1
+							});
 						end
 					end
 				end
 			end
-			if c > 15 then GameTooltip:AddLine(" And " .. (c - 15) .. " more!"); end
+			if c > 15 then tinsert(tooltipInfo, { left = " And " .. (c - 15) .. " more!" }); end
 		end
 	end
 	commonAchievementHandlers.REPUTATIONS_OnUpdate = function(t)
@@ -3256,9 +3297,9 @@ else
 		return true;
 	end
 	commonAchievementHandlers.REPUTATIONS_OnTooltip = function(t, tooltipInfo)
-		GameTooltip:AddLine("Raise " .. t.rank .. " reputations to Exalted.");
+		tinsert(tooltipInfo, { left = "Raise " .. t.rank .. " reputations to Exalted." });
 		if t.total and t.progress < t.total and t.rank >= 25 then
-			GameTooltip:AddLine(" ");
+			tinsert(tooltipInfo, { left = " " });
 			local ignored = app.IgnoredReputationsForAchievements;
 			if not ignored then
 				ignored = {[169] = 1};
@@ -3268,7 +3309,11 @@ else
 				if o.headerID == app.HeaderConstants.FACTIONS then
 					for j,p in ipairs(o.g) do
 						if (p.visible or p.factionID == 909) and not ignored[p.factionID] and (not p.minReputation or (p.minReputation[1] == p.factionID and p.minReputation[2] >= 41999)) and (not p.maxReputation or (p.maxReputation[1] ~= p.factionID and p.reputation >= 0)) then
-							GameTooltip:AddDoubleLine(" |T" .. p.icon .. ":0|t " .. p.text, app.L[p.standing >= 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+							tinsert(tooltipInfo, {
+								left = " |T" .. p.icon .. ":0|t " .. p.text,
+								right = app.L[p.standing >= 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"],
+								r = 1, g = 1, b = 1
+							});
 						end
 					end
 				end

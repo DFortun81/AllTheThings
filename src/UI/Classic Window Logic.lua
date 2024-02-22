@@ -1041,9 +1041,6 @@ local function RowOnEnter(self)
 		elseif reference.isYearly then tinsert(info, { left = "This can be completed yearly." });
 		else tinsert(info, { left = "This can be completed multiple times.", wrap = true }); end
 	end
-	
-	-- Attach all of the Information to the tooltip.
-	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 
 	if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
 		if not reference.repeatable and app.Settings:GetTooltipSetting("Show:OtherCharacterQuests") then
@@ -1065,7 +1062,11 @@ local function RowOnEnter(self)
 				j = j + 1;
 			end
 			if j > 0 then
-				GameTooltip:AddLine("Incomplete on " .. desc:gsub("-" .. realmName, ""), 1, 1, 1, true);
+				tinsert(info, {
+					left = "Incomplete on " .. desc:gsub("-" .. realmName, ""),
+					r = 1, g = 1, b = 1,
+					wrap = true,
+				});
 			end
 		end
 	end
@@ -1106,21 +1107,33 @@ local function RowOnEnter(self)
 		end
 
 		if prereqs and #prereqs > 0 then
-			GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
+			tinsert(info, {
+				left = "This quest has an incomplete prerequisite quest that you need to complete first.",
+				wrap = true,
+			});
 			for i,prereq in ipairs(prereqs) do
 				local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 				local mapID = app.GetBestMapForGroup(prereq, currentMapID);
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
-				GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
+				tinsert(info, {
+					left = text,
+					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+				});
 			end
 		end
 		if bc and #bc > 0 then
-			GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
+			tinsert(info, {
+				left = "This quest has a breadcrumb quest that you may be unable to complete after completing this one.",
+				wrap = true,
+			});
 			for i,prereq in ipairs(bc) do
 				local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 				local mapID = app.GetBestMapForGroup(prereq, currentMapID);
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
-				GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
+				tinsert(info, {
+					left = text,
+					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+				});
 			end
 		end
 	end
@@ -1128,11 +1141,22 @@ local function RowOnEnter(self)
 	if reference.g then
 		-- If we're at the Auction House
 		if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-			GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
+			tinsert(info, {
+				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
+				r = 1, g = 1, b = 1,
+				wrap = true,
+			});
 		else
-			GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
+			tinsert(info, {
+				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
+				r = 1, g = 1, b = 1,
+				wrap = true,
+			});
 		end
 	end
+	
+	-- Attach all of the Information to the tooltip.
+	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 	GameTooltip:SetATTReferenceForTexture(reference);
 	GameTooltip:Show();
 	

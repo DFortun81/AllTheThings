@@ -10198,7 +10198,7 @@ RowOnEnter = function (self)
 	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 	
 	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
-	if initialBuild then GameTooltip:SetATTReferenceForTexture(reference, self); end
+	if initialBuild then GameTooltip:SetATTReferenceForTexture(reference); end
 	GameTooltip:Show();
 	-- app.PrintDebug("OnRowEnter-Return");
 
