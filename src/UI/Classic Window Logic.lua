@@ -1043,7 +1043,6 @@ local function RowOnEnter(self)
 	end
 	
 	-- Attach all of the Information to the tooltip.
-	if reference.OnTooltip then reference:OnTooltip(info); end
 	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 
 	if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then

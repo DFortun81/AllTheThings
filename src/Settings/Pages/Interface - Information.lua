@@ -546,6 +546,17 @@ local InformationTypes = {
 	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayInExternalTooltips = false, }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayInExternalTooltips = false, }),
+	
+	-- We want this after most of the regular fields.
+	CreateInformationType("OnTooltip", {
+		priority = 10000,
+		text = "OnTooltip",
+		ForceActive = true,
+		Process = function(t, reference, info)
+			local OnTooltip = reference.OnTooltip;
+			if OnTooltip then OnTooltip(reference, info); end
+		end,
+	});
 };
 settings.InformationTypes = InformationTypes;
 settings.CreateInformationType = function(key, t)
@@ -573,7 +584,7 @@ local function RefreshActiveInformationTypes()
 	wipe(ActiveInformationTypes);
 	
 	for _,informationType in ipairs(SortedInformationTypes) do
-		if settings:GetTooltipSetting(informationType.informationTypeID) then
+		if settings:GetTooltipSetting(informationType.informationTypeID) or informationType.ForceActive then
 			if informationType.IsStandaloneProperty then
 				ActiveInformationTypes[#ActiveInformationTypes + 1] = informationType;
 				if informationType.ShouldDisplayInExternalTooltips then
@@ -583,7 +594,7 @@ local function RefreshActiveInformationTypes()
 		end
 	end
 	
-	-- Insert the Post Processor last!
+	-- Insert the Post Processor
 	ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = PostProcessor;
 	ActiveInformationTypes[#ActiveInformationTypes + 1] = PostProcessor;
 end
@@ -614,7 +625,7 @@ settings.RefreshActiveInformationTypes = function()
 	wipe(SortedInformationTypesByName);
 	for i,informationType in ipairs(InformationTypes) do
 		SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
-		if informationType.text then
+		if not informationType.ForceActive then
 			SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
 		end
 	end

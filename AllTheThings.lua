@@ -9546,9 +9546,7 @@ RowOnEnter = function (self)
 		});
 	end
 	if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
-		local info = {};
 		app.AddQuestObjectives(info, reference);
-		app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
 	end
 	if reference.providers then
 		local first = 1;
@@ -10088,12 +10086,6 @@ RowOnEnter = function (self)
 			});
 		end
 	end
-	
-	
-	-- Attach all of the Information to the tooltip.
-	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, info);
-	wipe(info);	-- Temporary, until 
-	if reference.OnTooltip then reference:OnTooltip(info); end
 
 	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 		if reference.g then

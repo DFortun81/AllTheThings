@@ -428,7 +428,9 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 	
 	left, right = entry.left, entry.right;
 	if right then
-		if entry.r then
+		if entry.r2 then
+			tooltip:AddDoubleLine(left or " ", right, entry.r, entry.g, entry.b, entry.r2, entry.g2, entry.b2);
+		elseif entry.r then
 			tooltip:AddDoubleLine(left or " ", right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
 		else
 			tooltip:AddDoubleLine(left or " ", right);

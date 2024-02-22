@@ -114,7 +114,10 @@ PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
 	app.HandleEvent("OnRenderDirty");
 end);
 
-
+local OnTooltipForThing = function(t, tooltipInfo)
+	tinsert(tooltipInfo, { left = " " });
+	tinsert(tooltipInfo, { left = "Total " .. t.Text:GetText(), right =  t.total });
+end
 local ThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ThingsLabel:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, -16);
 ThingsLabel:SetJustifyH("LEFT");
@@ -152,11 +155,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 AchievementsCheckBox:SetATTTooltip("Enable this option to track achievements.\n\nNOTE: At this time, they are not officially implemented in WoW's API, but ATT can kinda make its own until then.");
-AchievementsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Achievements", t.total);
-end
 AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 22, -8);
+AchievementsCheckBox.OnTooltip = OnTooltipForThing;
 
 local AchievementsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -201,11 +201,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle & companion pets.\n\nNOTE: At this time, you cannot use them for battling, but they can follow you around and be all cute and stuff.\n\nGotta Horde 'em all!");
-BattlePetsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Battle Pets", t.total);
-end
 BattlePetsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
+BattlePetsCheckBox.OnTooltip = OnTooltipForThing;
 
 local BattlePetsAccountWideCheckBox;
 if C_PetJournal and app.GameBuildVersion > 30000 then
@@ -252,9 +249,9 @@ function(self)
 	settings:UpdateMode(1);
 end);
 DeathsCheckBox:SetATTTooltip("Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.");
-DeathsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Deaths", ATTAccountWideData.Deaths or 0);
+DeathsCheckBox.OnTooltip = function(t, tooltipInfo)
+	t.total = ATTAccountWideData.Deaths or 0;
+	OnTooltipForThing(t, tooltipInfo);
 end
 DeathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
 
@@ -301,11 +298,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ExplorationCheckBox:SetATTTooltip("Enable this option to track exploration completion for outdoor maps. If you want the Explorer title, completing this in preparation for Wrath Classic will greatly help you!");
-ExplorationCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Exploration", t.total);
-end
 ExplorationCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "BOTTOMLEFT", 0, 4);
+ExplorationCheckBox.OnTooltip = OnTooltipForThing;
 
 local ExplorationAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -350,11 +344,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 FlightPathsCheckBox:SetATTTooltip("Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\NOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.");
-FlightPathsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Flight Paths", t.total);
-end
 FlightPathsCheckBox:SetPoint("TOPLEFT", ExplorationCheckBox, "BOTTOMLEFT", 0, 4);
+FlightPathsCheckBox.OnTooltip = OnTooltipForThing;
 
 local FlightPathsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -402,11 +393,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 HeirloomsCheckBox:SetATTTooltip("Enable this option to track Heirlooms.");
-HeirloomsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Heirlooms", t.total);
-end
 HeirloomsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+HeirloomsCheckBox.OnTooltip = OnTooltipForThing;
 
 local HeirloomsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -445,11 +433,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions, which are really cool looking transmog effects you can apply to your weapons!");
-IllusionsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Illusions", t.total);
-end
 IllusionsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox or HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
+IllusionsCheckBox.OnTooltip = OnTooltipForThing;
 
 local IllusionsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -494,11 +479,8 @@ MountsCheckBox:SetATTTooltip("Enable this option to track mounts.");
 else
 MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nFair warning! Do this at your own risk, it will take up a lot of inventory space across your account and they can not be sent between characters!\n\nAdditionally, the cost of all Vendor mounts is reduced to 1/10 of their current prices with Wrath.");
 end
-MountsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Mounts", t.total);
-end
 MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox or HeirloomsCheckBox or FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+MountsCheckBox.OnTooltip = OnTooltipForThing;
 
 local MountsAccountWideCheckBox;
 if C_MountJournal then
@@ -553,11 +535,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 QuestsCheckBox:SetATTTooltip("Enable this option to track quests.\n\nYou can right click any quest in the lists to pop out their full quest chain to show your progress and any prerequisite or breadcrumb quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and Repeatable Quests are tracked in the Blizzard Database.");
-QuestsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Quests", t.total);
-end
 QuestsCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
+QuestsCheckBox.OnTooltip = OnTooltipForThing;
 
 local QuestsLockedCheckBox = child:CreateCheckBox("+Locked",
 function(self)
@@ -575,8 +554,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 QuestsLockedCheckBox:SetATTTooltip("Enable this option to show quests that are locked.");
-QuestsLockedCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
+QuestsLockedCheckBox.OnTooltip = function(t, tooltipInfo)
 	local total = 0;
 	local container = app.SearchForFieldContainer("questID");
 	for i,o in pairs(container) do
@@ -588,7 +566,8 @@ QuestsLockedCheckBox.OnTooltip = function(t)
 			end
 		end
 	end
-	GameTooltip:AddDoubleLine("Total Locked Quests", total);
+	t.total = total;
+	OnTooltipForThing(t, tooltipInfo);
 end
 QuestsLockedCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 110, 0);
 
@@ -640,11 +619,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 RecipesCheckBox:SetATTTooltip("Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.");
-RecipesCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Recipes", t.total);
-end
 RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
+RecipesCheckBox.OnTooltip = OnTooltipForThing;
 
 local RecipesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -689,11 +665,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ReputationsCheckBox:SetATTTooltip("Enable this option to track reputations.\n\nOnce you reach Exalted with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.");
-ReputationsCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Reputations", t.total);
-end
 ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
+ReputationsCheckBox.OnTooltip = OnTooltipForThing;
 
 local ReputationsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -743,11 +716,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 RWPCheckBox:SetATTTooltip("Enable this option to track future removed from game loot. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
-RWPCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total RWP", t.total);
-end
 RWPCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+RWPCheckBox.OnTooltip = OnTooltipForThing;
 
 local RWPAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -792,11 +762,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 TitlesCheckBox:SetATTTooltip("Enable this option to track character titles.");
-TitlesCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Titles", t.total);
-end
 TitlesCheckBox:SetPoint("TOPLEFT", RWPCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox.OnTooltip = OnTooltipForThing;
 
 local TitlesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
@@ -841,11 +808,8 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ToysCheckBox:SetATTTooltip("Enable this option to track items that currently act as a toy or become a collectible toy in the future.");
-ToysCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total Toys", t.total);
-end
 ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
+ToysCheckBox.OnTooltip = OnTooltipForThing;
 
 local ToysAccountWideCheckBox;
 if PlayerHasToy then
