@@ -1597,52 +1597,59 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	-- If the item is a recipe, then show which characters know this recipe.
 	if group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
 		local knownBy, kind = {}, nil;
-		if group.speciesID then
-			kind = "Owned by ";
-			for guid,character in pairs(ATTCharacterData) do
-				if character.BattlePets and character.BattlePets[group.speciesID] then
-					tinsert(knownBy, character);
-				end
-			end
-		elseif group.spellID then
-			kind = "Known by ";
+		if group.spellID then
+			kind = L.KNOWN_BY;
 			for guid,character in pairs(ATTCharacterData) do
 				if character.Spells and character.Spells[group.spellID] then
 					tinsert(knownBy, character);
 				end
 			end
-		elseif group.toyID then
-			kind = "Owned by ";
-			for guid,character in pairs(ATTCharacterData) do
-				if character.Toys and character.Toys[group.itemID] then
-					tinsert(knownBy, character);
-				end
-			end
-		elseif group.itemID then
-			kind = "Owned by ";
-			for guid,character in pairs(ATTCharacterData) do
-				if (character.RWP and character.RWP[group.itemID]) then
-					tinsert(knownBy, character);
-				end
-			end
-		elseif group.achievementID then
-			kind = "Completed by ";
-			for guid,character in pairs(ATTCharacterData) do
-				if character.Achievements and character.Achievements[group.achievementID] then
-					tinsert(knownBy, character);
-				end
-			end
-		elseif group.questID then
-			kind = "Completed by ";
+		elseif group.questID and not group.illusionID then
+			kind = L.COMPLETED_BY;
 			for guid,character in pairs(ATTCharacterData) do
 				if character.Quests and character.Quests[group.questID] then
 					tinsert(knownBy, character);
 				end
 			end
+		elseif app.GameBuildVersion < 40000 then
+			if group.achievementID then
+				-- Prior to Cata, Achievements were not tracked account wide
+				kind = L.COMPLETED_BY;
+				for guid,character in pairs(ATTCharacterData) do
+					if character.Achievements and character.Achievements[group.achievementID] then
+						tinsert(knownBy, character);
+					end
+				end
+			elseif group.itemID then
+				-- Prior to Cata, RWP (transmog) were not tracked account wide
+				kind = L.OWNED_BY;
+				for guid,character in pairs(ATTCharacterData) do
+					if (character.RWP and character.RWP[group.itemID]) then
+						tinsert(knownBy, character);
+					end
+				end
+			elseif app.GameBuildVersion < 30000 then
+				-- Prior to Wrath, pets and toys were not tracked account wide
+				if group.speciesID then
+					kind = L.OWNED_BY;
+					for guid,character in pairs(ATTCharacterData) do
+						if character.BattlePets and character.BattlePets[group.speciesID] then
+							tinsert(knownBy, character);
+						end
+					end
+				elseif group.toyID then
+					kind = L.OWNED_BY;
+					for guid,character in pairs(ATTCharacterData) do
+						if character.Toys and character.Toys[group.itemID] then
+							tinsert(knownBy, character);
+						end
+					end
+				end
+			end
 		end
 		if #knownBy > 0 and kind then
 			app.Sort(knownBy, app.SortDefaults.name);
-			local desc = kind;
+			local desc = "";
 			for i,character in ipairs(knownBy) do
 				if i > 1 then desc = desc .. ", "; end
 				desc = desc .. (character.text or "???");
@@ -1653,7 +1660,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					end
 				end
 			end
-			tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(info, { left = kind:format(desc:gsub("-" .. GetRealmName(), "")), wrap = true, color = app.Colors.TooltipDescription });
 		end
 	end
 

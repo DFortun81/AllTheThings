@@ -25,7 +25,7 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.NO_COORDINATES_FORMAT = "Нет координат для %s";
 	L.TOM_TOM_NOT_FOUND = "Нужен TomTom, чтобы ставить Указатели.";
 	L.FLIGHT_PATHS = "Пути Полётов";
-	L.KNOWN_BY = "Изучено ";
+	L.KNOWN_BY = "Изучено %s";
 	L.REQUIRES = "Требуется";
 	L.RACE_LOCKED = "Ограничено Расой";
 	L.PLEASE_REPORT_MESSAGE = "Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #retail-errors! Спасибо!";
@@ -245,7 +245,7 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
 	L.SYM_ROW_INFORMATION = "Правый клик - Показать дополнительный контент из других источников";
 	L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
-	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Выполнено На: %s";
+	L.COMPLETED_BY = "Выполнено На: %s";
 
 -- Settings.lua
 	L.SKIP_AUTO_REFRESH = "Не авто обновлять при изменении настроек!";	-- Skip Settings-Toggle Data Refreshes!

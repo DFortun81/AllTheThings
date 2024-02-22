@@ -26,6 +26,9 @@ for key,value in pairs({
 	["CREATURES_COUNT"] = "[%s Creatures]";
 	["CREATURES_LIST"] = "Creatures List";
 	["PROGRESS"] = "Progress";
+	["COMPLETED_BY"] = "Completed By: %s";
+	["KNOWN_BY"] = "Known by %s";
+	["OWNED_BY"] = "Owned by %s";
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
 	["LAYER"] = "Layer";

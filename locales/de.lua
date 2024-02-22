@@ -25,7 +25,7 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	--TODO: L.NO_COORDINATES_FORMAT = "No known coordinates for %s";
 	--TODO: L.TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
 	L.FLIGHT_PATHS = "Flugpunkte";
-	L.KNOWN_BY = "Bekannt durch ";
+	L.KNOWN_BY = "Bekannt durch %s";
 	L.REQUIRES = "Benötigt";
 	L.RACE_LOCKED = "Rasse Gesperrt";
 	L.PLEASE_REPORT_MESSAGE = "Bitte melden Sie den Fehler an das ATT Discord in #retail-errors! Danke!";
@@ -244,7 +244,7 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	L.QUEST_ROW_INSTRUCTIONS = "Rechtsklicken um Questreihen Anforderungen zu sehen.";
 	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
 	L.QUEST_ONCE_PER_ACCOUNT = "Einmalig pro Account Quest";
-	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Vervollständigt von: %s";
+	L.COMPLETED_BY = "Vervollständigt von: %s";
 
 -- Settings.lua
 	--TODO: L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";

@@ -3159,7 +3159,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.name);
-				local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
+				local desc = L.KNOWN_BY:format(app.TableConcat(knownBy, "text", "??", ", "));
 				tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
@@ -3178,7 +3178,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.name);
-				local desc = L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(app.TableConcat(knownBy, "text", "??", ", "));
+				local desc = L.COMPLETED_BY:format(app.TableConcat(knownBy, "text", "??", ", "));
 				tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
@@ -9639,7 +9639,7 @@ RowOnEnter = function (self)
 			local charData = ATTCharacterData[oneTimeQuestCharGuid];
 			tinsert(tooltipInfo, {
 				left = L.QUEST_ONCE_PER_ACCOUNT,
-				right = L.QUEST_ONCE_PER_ACCOUNT_FORMAT:format(charData and charData.text or UNKNOWN),
+				right = L.COMPLETED_BY:format(charData and charData.text or UNKNOWN),
 			});
 		elseif oneTimeQuestCharGuid == false then
 			tinsert(tooltipInfo, {

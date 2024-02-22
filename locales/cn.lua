@@ -27,7 +27,7 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.NO_COORDINATES_FORMAT = "%s 没有已知坐标";
 	L.TOM_TOM_NOT_FOUND = "必须安装 TomTom 才能绘制坐标。";
 	L.FLIGHT_PATHS = "飞行路线";
-	L.KNOWN_BY = "已知 ";
+	L.KNOWN_BY = "已知 %s";
 	L.REQUIRES = "需要";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = "请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
@@ -248,7 +248,7 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.QUEST_ROW_INSTRUCTIONS = "右击查看任何任务链要求";
 	L.SYM_ROW_INFORMATION = "右键单击以查看来自其他位置的其它内容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
-	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "完成：%s";
+	L.COMPLETED_BY = "完成：%s";
 
 -- Settings.lua
 	L.SKIP_AUTO_REFRESH = "不自动刷新！";

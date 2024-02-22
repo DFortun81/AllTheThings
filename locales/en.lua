@@ -38,7 +38,7 @@ for key, value in pairs({
 	["NO_COORDINATES_FORMAT"] = "No known coordinates for %s";
 	["TOM_TOM_NOT_FOUND"] = "You must have TomTom installed to plot coordinates.";
 	["FLIGHT_PATHS"] = "Flight Paths";
-	["KNOWN_BY"] = "Known by ";
+	["KNOWN_BY"] = "Known by %s";
 	["REQUIRES"] = "Requires";
 	["RACE_LOCKED"] = "Race Locked";
 	["PLEASE_REPORT_MESSAGE"] = "Please report this to the ATT Discord in #retail-errors! Thanks!";
@@ -333,7 +333,8 @@ for key, value in pairs({
 	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
 	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
-	["QUEST_ONCE_PER_ACCOUNT_FORMAT"] = "Completed By: %s";
+	["COMPLETED_BY"] = "Completed By: %s";
+	["OWNED_BY"] = "Owned by %s";
 
 	-- Settings.lua
 		["SKIP_AUTO_REFRESH"] = "Skip Settings-Toggle Data Refreshes!";

@@ -25,7 +25,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.NO_COORDINATES_FORMAT = "Aucune coordonnée connue pour %s";
 	L.TOM_TOM_NOT_FOUND = "Vous devez avoir installé TomTom pour pouvoir ajouter des coordonnées.";
 	L.FLIGHT_PATHS = "Trajets Aériens";
-	L.KNOWN_BY = "Connu par ";
+	L.KNOWN_BY = "Connu par %s";
 	L.REQUIRES = "Requiert";
 	L.RACE_LOCKED = "Race bloquée";
 	L.PLEASE_REPORT_MESSAGE = "Merci de signaler sur le serveur Discord d’ATT dans le canal #retail-errors ! Merci !";
@@ -243,7 +243,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.QUEST_ROW_INSTRUCTIONS = "Clic droit pour afficher les exigences de la chaîne de quêtes";
 	L.SYM_ROW_INFORMATION = "Clic droit afficher du contenu supplémentaire provenant d’un autre endroit.";
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
-	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Complété par : %s";
+	L.COMPLETED_BY = "Complété par : %s";
 
 -- Settings.lua
 	L.SKIP_AUTO_REFRESH = "Ne pas rafraîchir les données !";
