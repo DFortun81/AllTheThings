@@ -138,7 +138,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 					if character then
 						local data = character.PrimeData;
 						if data then
-							response = "ATTC\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString .. "\t" .. data.guid;
+							response = "ATTC\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString .. "\t" .. character.guid;
 						end
 					end
 				end
