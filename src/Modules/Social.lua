@@ -45,7 +45,7 @@ app.PlayerProgressCacheByGUID = PlayerProgressCacheByGUID;
 -- Version Cache
 local major,minor,build,versionString,versionUID;
 local VersionCache = setmetatable({
-	["[Git]"] = 1,
+	["[Git]"] = 999999,
 }, {
 	__index = function(t, version)
 		versionString = version:match('%d[%d.,]*');
