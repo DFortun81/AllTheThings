@@ -1071,9 +1071,6 @@ root(ROOTS.Unsorted, {
 				i(209863),	-- Moontouched Thorns
 				i(209864),	-- Moontouched Thorns
 				i(209865),	-- Moontouched Thorns
-				i(209860),	-- Thorn-Laden Heart
-				i(209861),	-- Thorn-Laden Heart
-				i(209862),	-- Thorn-Laden Heart
 				i(209866),	-- Thornspeaker Ritual Knife
 				i(209867),	-- Thornspeaker Ritual Knife
 				i(209868),	-- Thornspeaker Ritual Knife
