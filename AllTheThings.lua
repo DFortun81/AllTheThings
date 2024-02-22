@@ -3472,14 +3472,7 @@ local function SkipFillingGroup(group, FillData)
 		if parent and parent.questID and parent.saved then return true; end
 	end
 end
--- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
-local function FillGroupsRecursive(group, FillData)
-	if SkipFillingGroup(group, FillData) then
-		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),group.hash)
-		return;
-	end
-	-- app.PrintDebug("FGR",group.hash)
-
+local function FillGroupDirect(group, FillData, doDGU)
 	local groups;
 	local ignoreSkip = group.sym or group.headerID or group.classID
 	-- Determine Cost/Crafted/Symlink groups
@@ -3487,8 +3480,8 @@ local function FillGroupsRecursive(group, FillData)
 		DeterminePurchaseGroups(group, FillData),
 		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
-		DetermineSymlinkGroups(group),
-		DetermineNPCDrops(group, FillData));
+		DetermineNPCDrops(group, FillData),
+		DetermineSymlinkGroups(group));
 
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
@@ -3496,6 +3489,7 @@ local function FillGroupsRecursive(group, FillData)
 	if groups and #groups > 0 then
 		-- app.PrintDebug("FillGroups-MergeResults",group.hash,#groups)
 		AssignChildren(group);
+		if doDGU then app.DirectGroupUpdate(group); end
 		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
 		if not ignoreSkip then
 			local groupHash = group.hash;
@@ -3505,6 +3499,16 @@ local function FillGroupsRecursive(group, FillData)
 			end
 		end
 	end
+end
+-- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
+local function FillGroupsRecursive(group, FillData)
+	if SkipFillingGroup(group, FillData) then
+		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),group.hash)
+		return;
+	end
+	-- app.PrintDebug("FGR",group.hash)
+
+	FillGroupDirect(group, FillData)
 
 	local g = group.g;
 	if g then
@@ -3524,32 +3528,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	end
 	-- app.PrintDebug("FGRA",group.hash)
 
-	local groups;
-	local ignoreSkip = group.sym or group.headerID or group.classID
-	-- Determine Cost/Crafted/Symlink groups
-	groups = ArrayAppend(groups,
-		DeterminePurchaseGroups(group, FillData),
-		DetermineUpgradeGroups(group, FillData),
-		DetermineCraftedGroups(group, FillData),
-		DetermineSymlinkGroups(group),
-		DetermineNPCDrops(group, FillData));
-
-	-- Adding the groups normally based on available-source priority
-	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
-
-	if groups and #groups > 0 then
-		-- app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,#groups)
-		AssignChildren(group);
-		app.DirectGroupUpdate(group);
-		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
-		if not ignoreSkip then
-			local groupHash = group.hash;
-			if groupHash then
-				-- app.PrintDebug("FG-Included",groupHash,#groups)
-				FillData.Included[groupHash] = true;
-			end
-		end
-	end
+	FillGroupDirect(group, FillData, true)
 
 	local g = group.g;
 	if g then
