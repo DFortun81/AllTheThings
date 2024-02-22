@@ -1044,7 +1044,6 @@ root(ROOTS.Unsorted, {
 			i(212336),	-- The Tavern's Tabard
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			i(211927),	-- Tattered Dreamleaf
 			i(211260),	-- Crimson Gladiator's Spear
 			i(208878),	-- Adventurer's Footlocker
 			--
