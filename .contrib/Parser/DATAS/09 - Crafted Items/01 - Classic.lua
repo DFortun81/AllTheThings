@@ -594,9 +594,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		i(184690, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Fancy Darkmoon Feast
 		i(184682, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Lemony Herb Filet
 		i(184624, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Sugary Fish Feast
-		-- #if AFTER WOD
-		applyclassicphase(WOD_PHASE_ONE, i(126935)),	-- Fancy Darkmoon Feast
-		-- #endif
+		applyclassicphase(WOD_PHASE_ONE, i(126935, {["timeline"] = {ADDED_6_2_0}})),	-- Fancy Darkmoon Feast
 		i(13930),	-- Filet of Redgill
 		i(5476),	-- Fillet of Frenzy
 		i(6038),	-- Giant Clam Scorcho
@@ -618,9 +616,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		i(5472),	-- Kaldorei Spider Kabob
 		i(5480, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Lean Venison
 		i(12209, {["timeline"] = {REMOVED_5_0_4, ADDED_9_1_0}}),	-- Lean Wolf Steak
-		-- #if AFTER WOD
-		applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet
-		-- #endif
+		applyclassicphase(WOD_PHASE_ONE, i(126934, {["timeline"] = {ADDED_6_2_0}})),	-- Lemon Herb Filet
 		i(13933),	-- Lobster Stew
 		i(6316),	-- Loch Frenzy Delight
 		i(4592),	-- Longjaw Mud Snapper
@@ -659,9 +655,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		i(6887),	-- Spotted Yellowtail
 		i(5477),	-- Strider Stew
 		i(2685),	-- Succulent Pork Ribs
-		-- #if AFTER WOD
-		applyclassicphase(WOD_PHASE_ONE, i(126936)),	-- Sugar-Crusted Fish Feast
-		-- #endif
+		applyclassicphase(WOD_PHASE_ONE, i(126936, {["timeline"] = {ADDED_6_2_0}})),	-- Sugar-Crusted Fish Feast
 		i(3728),	-- Tasty Lion Steak
 		i(18045),	-- Tender Wolf Steak
 		i(7676, {["timeline"] = {REMOVED_6_0_2, ADDED_7_1_0}}),	-- Thistle Tea

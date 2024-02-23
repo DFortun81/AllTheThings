@@ -525,60 +525,60 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(84232),	-- Plans: Spiritguard Bracers
 					i(84237),	-- Plans: Spiritguard Shield
 				})),
-				tier(WOD_TIER, {
-					-- 6.0.2
-					tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
-						r(153631),	-- Draenic Steel Bulwark
-						r(153605),	-- Draenic Steel Chestplate
-						r(153629),	-- Draenic Steel Dagger
-						r(153607),	-- Draenic Steel Gauntlets
-						r(153611),	-- Draenic Steel Girdle
-						r(153608),	-- Draenic Steel Helm
-						r(153609),	-- Draenic Steel Legguards
-						r(153630),	-- Draenic Steel Mace
-						r(153610),	-- Draenic Steel Shoulders
-						r(153628),	-- Draenic Steel Sword
-						r(153627),	-- Draenic Steel War Axe
-						r(153606),	-- Draenic Steel Warboots
-						r(153612),	-- Draenic Steel Wristwraps
-						r(153655),	-- Hardened Draenic Steel Bulwark
-						r(153643),	-- Hardened Draenic Steel Chestplate
-						r(153653),	-- Hardened Draenic Steel Dagger
-						r(153645),	-- Hardened Draenic Steel Gauntlets
-						r(153649),	-- Hardened Draenic Steel Girdle
-						r(153646),	-- Hardened Draenic Steel Helm
-						r(153647),	-- Hardened Draenic Steel Legguards
-						r(153654),	-- Hardened Draenic Steel Mace
-						r(153648),	-- Hardened Draenic Steel Shoulders
-						r(153652),	-- Hardened Draenic Steel Sword
-						r(153651),	-- Hardened Draenic Steel War Axe
-						r(153644),	-- Hardened Draenic Steel Warboots
-						r(153650),	-- Hardened Draenic Steel Wristwraps
-						r(153668),	-- Peerless Draenic Steel Bulwark
-						r(153656),	-- Peerless Draenic Steel Chestplate
-						r(153666),	-- Peerless Draenic Steel Dagger
-						r(153658),	-- Peerless Draenic Steel Gauntlets
-						r(153659),	-- Peerless Draenic Steel Helm
-						r(153660),	-- Peerless Draenic Steel Legguards
-						r(153667),	-- Peerless Draenic Steel Mace
-						r(153661),	-- Peerless Draenic Steel Shoulders
-						r(153665),	-- Peerless Draenic Steel Sword
-						r(153664),	-- Peerless Draenic Steel War Axe
-						r(153657),	-- Peerless Draenic Steel Warboots
-						r(153663),	-- Peerless Draenic Steel Wristwraps
-						r(171718),	-- Truesteel Ingot
-						-- With SpellID attched
-						i(108421),	-- Plans: Blackrock Crucible
-						-- Without SpellID attached
-						i(116746),	-- Plans: Greater Steelforged Essence
-						i(122550),	-- Plans: Powerful Steelforged Essence
-						i(122552),	-- Plans: Powerful Truesteel Essence
-						i(116727),	-- Plans: Smoldering Breastplate
-						i(116726),	-- Plans: Smoldering Helm
-						i(116728),	-- Plans: Smoldering Greaves
-						i(120129),	-- Plans: Secrets of Draenor Blacksmithing
-					})),
-				}),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					r(153631),	-- Draenic Steel Bulwark
+					r(153605),	-- Draenic Steel Chestplate
+					r(153629),	-- Draenic Steel Dagger
+					r(153607),	-- Draenic Steel Gauntlets
+					r(153611),	-- Draenic Steel Girdle
+					r(153608),	-- Draenic Steel Helm
+					r(153609),	-- Draenic Steel Legguards
+					r(153630),	-- Draenic Steel Mace
+					r(153610),	-- Draenic Steel Shoulders
+					r(153628),	-- Draenic Steel Sword
+					r(153627),	-- Draenic Steel War Axe
+					r(153606),	-- Draenic Steel Warboots
+					r(153612),	-- Draenic Steel Wristwraps
+					r(153655),	-- Hardened Draenic Steel Bulwark
+					r(153643),	-- Hardened Draenic Steel Chestplate
+					r(153653),	-- Hardened Draenic Steel Dagger
+					r(153645),	-- Hardened Draenic Steel Gauntlets
+					r(153649),	-- Hardened Draenic Steel Girdle
+					r(153646),	-- Hardened Draenic Steel Helm
+					r(153647),	-- Hardened Draenic Steel Legguards
+					r(153654),	-- Hardened Draenic Steel Mace
+					r(153648),	-- Hardened Draenic Steel Shoulders
+					r(153652),	-- Hardened Draenic Steel Sword
+					r(153651),	-- Hardened Draenic Steel War Axe
+					r(153644),	-- Hardened Draenic Steel Warboots
+					r(153650),	-- Hardened Draenic Steel Wristwraps
+					r(153668),	-- Peerless Draenic Steel Bulwark
+					r(153656),	-- Peerless Draenic Steel Chestplate
+					r(153666),	-- Peerless Draenic Steel Dagger
+					r(153658),	-- Peerless Draenic Steel Gauntlets
+					r(153659),	-- Peerless Draenic Steel Helm
+					r(153660),	-- Peerless Draenic Steel Legguards
+					r(153667),	-- Peerless Draenic Steel Mace
+					r(153661),	-- Peerless Draenic Steel Shoulders
+					r(153665),	-- Peerless Draenic Steel Sword
+					r(153664),	-- Peerless Draenic Steel War Axe
+					r(153657),	-- Peerless Draenic Steel Warboots
+					r(153663),	-- Peerless Draenic Steel Wristwraps
+					r(171718),	-- Truesteel Ingot
+					-- With SpellID attched
+					i(108421),	-- Plans: Blackrock Crucible
+					-- Without SpellID attached
+					i(116746),	-- Plans: Greater Steelforged Essence
+					i(122550),	-- Plans: Powerful Steelforged Essence
+					i(122552),	-- Plans: Powerful Truesteel Essence
+					i(116727),	-- Plans: Smoldering Breastplate
+					i(116726),	-- Plans: Smoldering Helm
+					i(116728),	-- Plans: Smoldering Greaves
+					i(120129),	-- Plans: Secrets of Draenor Blacksmithing
+				})),
 			}),
 			tier(LEGION_TIER, {
 				-- 7.0.3

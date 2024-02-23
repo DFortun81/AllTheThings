@@ -234,6 +234,63 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			-- #endif
 		}),
 	}),
+	prof(COOKING, {
+		n(DISCOVERY, {
+			["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
+			["groups"] = {
+				i(110684),	-- Lil' Leftovers (PET!)
+				i(118323),	-- Recipe Idea: Blackrock Barbecue (RECIPE!)
+				i(118311),	-- Recipe Idea: Blackrock Ham (RECIPE!)
+				i(118313),	-- Recipe Idea: Braised Riverbeast (RECIPE!)
+				i(118326),	-- Recipe Idea: Calamari Crepes (RECIPE!)
+				i(118315),	-- Recipe Idea: Clefthoof Sausages (RECIPE!)
+				i(118319),	-- Recipe Idea: Fat Sleeper Cakes (RECIPE!)
+				i(118328),	-- Recipe Idea: Feast of Blood (RECIPE!)
+				i(118329),	-- Recipe Idea: Feast of the Waters (RECIPE!)
+				i(118320),	-- Recipe Idea: Fiery Calamari (RECIPE!)
+				i(118324),	-- Recipe Idea: Frosty Stew (RECIPE!)
+				i(118327),	-- Recipe Idea: Gorgrond Chowder (RECIPE!)
+				i(118317),	-- Recipe Idea: Grilled Gulper (RECIPE!)
+				i(118310),	-- Recipe Idea: Hearty Elekk Steak (RECIPE!)
+				i(118312),	-- Recipe Idea: Pan-Seared Talbuk (RECIPE!)
+				i(118314),	-- Recipe Idea: Rylak Crepes (RECIPE!)
+				i(118321),	-- Recipe Idea: Skulker Chowder (RECIPE!)
+				i(118325),	-- Recipe Idea: Sleeper Surprise (RECIPE!)
+				i(118316),	-- Recipe Idea: Steamed Scorpion (RECIPE!)
+				i(118318),	-- Recipe Idea: Sturgeon Stew (RECIPE!)
+				i(118322),	-- Recipe Idea: Talador Surf and Turf (RECIPE!)
+			},
+		}),
+		i(111449),	-- Blackrock Barbecue
+		i(111433),	-- Blackrock Ham
+		i(111436),	-- Braised Riverbeast
+		i(122348, {["timeline"] = {ADDED_6_1_0}}),	-- Buttered Sturgeon
+		i(111453),	-- Calamari Crepes
+		i(111438),	-- Clefthoof Sausages
+		i(111444),	-- Fat Sleeper Cakes
+		i(111457),	-- Feast of Blood
+		i(111458),	-- Feast of the Waters
+		i(128498, {["timeline"] = {ADDED_6_2_0}}),	-- Fel Eggs and Ham
+		i(111445),	-- Fiery Calamari
+		i(111450),	-- Frosty Stew
+		i(111454),	-- Gorgrond Chowder
+		i(111441),	-- Grilled Gulper
+		i(111456),	-- Grilled Saberfish
+		i(111431),	-- Hearty Elekk Steak
+		i(122346, {["timeline"] = {ADDED_6_1_0}}),	-- Jumbo Sea Dog
+		i(111434),	-- Pan-Seared Talbuk
+		i(122345, {["timeline"] = {ADDED_6_1_0}}),	-- Pickled Eel
+		i(111437),	-- Rylak Crepes
+		i(111455),	-- Saberfish Broth
+		i(122344, {["timeline"] = {ADDED_6_1_0}}),	-- Salty Squid Roll
+		i(111446),	-- Skulker Chowder
+		i(111452),	-- Sleeper Surprise
+		i(122343, {["timeline"] = {ADDED_6_1_0}}),	-- Sleeper Sushi
+		i(111439),	-- Steamed Scorpion
+		i(111442),	-- Sturgeon Stew
+		i(111447),	-- Talador Surf and Turf
+		i(122347, {["timeline"] = {ADDED_6_1_0}}),	-- Whiptail Fillet
+	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
 			i(109693),	-- Draenic Dust

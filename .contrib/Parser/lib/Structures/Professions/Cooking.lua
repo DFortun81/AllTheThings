@@ -151,47 +151,63 @@ MOP_COOKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 	r(124224),	-- Yak Cheese Curds
 }));
 WAY_OF_THE_BREW = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31479 } }, {
-	i(0, 125602);	-- Banquet of the Brew
-	i(0, 124052);	-- Ginseng Tea
-	i(0, 125603);	-- Great Banquet of the Brew
-	i(0, 124053);	-- Jade Witch Brew
-	i(0, 124054);	-- Mad Brewer's Breakfast
+	r(125602),	-- Banquet of the Brew
+	r(124052),	-- Ginseng Tea
+	r(125603),	-- Great Banquet of the Brew
+	r(124053),	-- Jade Witch Brew
+	r(124054),	-- Mad Brewer's Breakfast
 }));
 WAY_OF_THE_GRILL = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31311 } }, {
-	i(0, 125141);	-- Banquet of the Grill
-	i(0, 104300);	-- Black Pepper Ribs and Shrimp
-	i(0, 104298);	-- Charbroiled Tiger Steak
-	i(0, 104299);	-- Eternal Blossom Fish
-	i(0, 125142);	-- Great Banquet of the Grill
+	r(125141),	-- Banquet of the Grill
+	r(104300),	-- Black Pepper Ribs and Shrimp
+	r(104298),	-- Charbroiled Tiger Steak
+	r(104299),	-- Eternal Blossom Fish
+	r(125142),	-- Great Banquet of the Grill
 }));
 WAY_OF_THE_OVEN = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31478 } }, {
-	i(0, 125600);	-- Banquet of the Oven
-	i(0, 104312);	-- Chun Tian Spring Rolls
-	i(0, 125601);	-- Great Banquet of the Oven
-	i(0, 104311);	-- Twin Fish Platter
-	i(0, 104310);	-- Wildfowl Roast
+	r(125600),	-- Banquet of the Oven
+	r(104312),	-- Chun Tian Spring Rolls
+	r(125601),	-- Great Banquet of the Oven
+	r(104311),	-- Twin Fish Platter
+	r(104310),	-- Wildfowl Roast
 }));
 WAY_OF_THE_POT = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31472 } }, {
-	i(0, 125596);	-- Banquet of the Pot
-	i(0, 104305);	-- Braised Turtle
-	i(0, 125597);	-- Great Banquet of the Pot
-	i(0, 104306);	-- Mogu Fish Stew
-	i(0, 104307);	-- Shrimp Dumplings
+	r(125596),	-- Banquet of the Pot
+	r(104305),	-- Braised Turtle
+	r(125597),	-- Great Banquet of the Pot
+	r(104306),	-- Mogu Fish Stew
+	r(104307),	-- Shrimp Dumplings
 }));
 WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31475 } }, {
-	i(0, 125598);	-- Banquet of the Steamer
-	i(0, 104308);	-- Fire Spirit Salmon
-	i(0, 125599);	-- Great Banquet of the Steamer
-	i(0, 104309);	-- Steamed Crab Surprise
-	i(0, 104304);	-- Swirling Mist Soup
+	r(125598),	-- Banquet of the Steamer
+	r(104308),	-- Fire Spirit Salmon
+	r(125599),	-- Great Banquet of the Steamer
+	r(104309),	-- Steamed Crab Surprise
+	r(104304),	-- Swirling Mist Soup
 }));
 WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31470 } }, {
-	i(0, 125594);	-- Banquet of the Wok
-	i(0, 125595);	-- Great Banquet of the Wok
-	i(0, 104301);	-- Sauteed Carrots
-	i(0, 104303);	-- Sea Mist Rice Noodles
-	i(0, 104302);	-- Valley Stir Fry
+	r(125594),	-- Banquet of the Wok
+	r(125595),	-- Great Banquet of the Wok
+	r(104301),	-- Sauteed Carrots
+	r(104303),	-- Sea Mist Rice Noodles
+	r(104302),	-- Valley Stir Fry
 }));
+DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
+	["filterID"] = MISC,
+	["g"] = {
+		r(158765, {	-- Cooking (Draenor Master)
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+			["rank"] = 9,
+		}),
+		applyclassicphase(BFA_PHASE_ONE, r(264642, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Cooking
+		r(161002),	-- Grilled Saberfish
+		r(161001),	-- Saberfish Broth
+	},
+})));
 BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(818),		-- Cooking Fire
 	r(290471, {["timeline"] = {ADDED_8_1_0}}),	-- Boralus Blood Sausage [Rank 1]

@@ -5,49 +5,6 @@
 
 root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
-		prof(COOKING, {
-			tier(CLASSIC_TIER, {
-				i(16073),	-- Artisan Cookbook
-				i(6891),	-- Recipe: Herb Baked Egg
-			}),
-			tier(MOP_TIER, {
-				-- 5.0.1
-				tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
-					i(86512),	-- Journeyman Cookbook
-					i(86550),	-- Apprentice Cookbook
-					i(86551),	-- Expert Cookbook
-					i(86552),	-- Artisan Cookbook
-					i(86553),	-- Master Cookbook
-					i(86554),	-- Grand Master Cookbook
-				})),
-
-				-- 5.4.0
-				tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
-					i(101631),	-- Recipe: Noodle Cart Kit
-					i(101664),	-- Recipe: Deluxe Noodle Cart Kit
-					i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
-					i(101728),	-- Recipe: Grand Noodle Cart Kit
-					i(101741),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
-				})),
-			}),
-			tier(WOD_TIER, {
-				-- 6.0.1
-				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					-- Do we keep this here?
-					recipe(169696),	-- Marinated Elekk Steak (Never made it to Live)
-					recipe(169699),	-- Seasoned Elekk Ribeye (Never made it to Live)
-					recipe(169701),	-- Seasoned Elekk Ribeye (Never made it to Live)
-					recipe(169693),	-- Whole Pot-Roasted Elekk (Never made it to Live)
-				})),
-			}),
-			tier(BFA_TIER, {
-				-- 8.2.0
-				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
-					i(169457),	-- Recipe: Mecha-Bytes
-					i(170076, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Recipe: Unagi Skewer
-				})),
-			}),
-		}),
 		prof(ENGINEERING, {
 			tier(TBC_TIER, {
 				i(23813),	-- Schematic: Blue Smoke Flare [Removed in TBC Beta]

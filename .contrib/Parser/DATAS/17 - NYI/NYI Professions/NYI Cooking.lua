@@ -10,9 +10,30 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			tier(WOTLK_TIER, {
 				-- 3.0.2
 				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
-					-- With SpellID attached
 					i(34125),	-- Shoveltusk Soup
 					i(39691),	-- Succulent Orca Stew
+				})),
+			}),
+			tier(MOP_TIER, {
+				-- 5.4.0
+				tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+					i(101729),	-- Grand Deluxe Noodle Cart Kit
+					i(101727),	-- Grand Noodle Cart Kit
+					i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
+				})),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					i(111435),	-- Clefhoof Pot Roast
+					i(111440),	-- Crispy Fried Scorpion
+					i(111432),	-- Deep Fried Riverbeast
+					i(115300),	-- Marinated Elekk Steak
+					i(111448),	-- Nagrand Tempura
+					i(111443),	-- Salted Skulker
+					i(115302),	-- Seasoned Elekk Ribeye
+					i(111451),	-- Starflower Sandwich
+					i(115291),	-- Whole Pot-Roasted Elekk
 				})),
 			}),
 			tier(SL_TIER, {
@@ -52,6 +73,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			tier(CLASSIC_TIER, {
 				-- With SpellID attached
 				i(23690),	-- Recipe: Crystal Flake Throat Lozenge / Crystal Throat Lozenge
+				-- Without SpellID attached
+				i(16073),	-- Artisan Cookbook
+				i(6891),	-- Recipe: Herb Baked Egg
 			}),
 			tier(WOTLK_TIER, {
 				-- 3.0.2
@@ -61,6 +85,53 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(39692),	-- Recipe: Succulent Orca Stew
 					-- Without SpellID attached
 					i(39644),	-- Recipe: Kungaloosh
+				})),
+			}),
+			tier(MOP_TIER, {
+				-- 5.0.4
+				tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CRATED_5_0_4 } }, {
+					-- With SpellID attached
+					i(86550),	-- Apprentice Cookbook
+					i(86512),	-- Journeyman Cookbook
+					-- Without SpellID attached
+					i(86552),	-- Artisan Cookbook
+					i(86551),	-- Expert Cookbook
+					i(86554),	-- Grand Master Cookbook
+					i(86553),	-- Master Cookbook
+				})),
+
+				-- 5.4.0
+				tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+					-- With SpellID attached
+					i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
+					i(101728),	-- Recipe: Grand Noodle Cart Kit
+					i(101741),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
+					-- Without SpellID attached
+					i(101631),	-- Recipe: Noodle Cart Kit
+					i(101664),	-- Recipe: Deluxe Noodle Cart Kit
+					i(101663),	-- Recipe: Pandaren Treasure Noodle Cart Kit
+				})),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					r(160967),	-- Clefthoof Pot Roast
+					r(160976),	-- Crispy Fried Scorpion
+					r(160961),	-- Deep Fried Basilisk
+					r(169696),	-- Marinated Elekk Steak
+					r(160985),	-- Nagrand Tempura
+					r(160980),	-- Salted Skulker
+					r(169699),	-- Seasoned Elekk Ribeye
+					r(160988),	-- Starflower Sandwich
+					r(169693),	-- Whole Pot-Roasted Elekk
+				})),
+			}),
+			tier(BFA_TIER, {
+				-- 8.2.0
+				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+					-- Without SpellID attached
+					i(169457),	-- Recipe: Mecha-Bytes
+					i(170076),	-- Recipe: Unagi Skewer
 				})),
 			}),
 			tier(SL_TIER, {

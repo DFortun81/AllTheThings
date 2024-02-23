@@ -120,33 +120,10 @@ r(30309),	-- Felsteel Stabilizer
 r(30310),	-- Fel Iron Bomb
 r(30311),	-- Adamantite Grenade
 r(30312),	-- Fel Iron Musket
-r(30313),	-- Adamantite Rifle
-r(30314),	-- Felsteel Boomstick
-r(30315),	-- Ornate Khorium Rifle
-r(30316),	-- Cogspinner Goggles
-r(30317),	-- Power Amplification Goggles
-r(30318),	-- Ultra-Spectropic Detection Goggles
-r(30325),	-- Hyper-Vision Goggles
-r(30329),	-- Adamantite Scope
-r(30332),	-- Khorium Scope
-r(30334),	-- Stabilized Eternium Scope
-r(30337),	-- Crashin' Thrashin' Robot
-r(30341),	-- White Smoke Flare
-r(30342),	-- Red Smoke Flare
-r(30343),	-- Blue Smoke Flare
-r(30344),	-- Green Smoke Flare
 r(30346),	-- Fel Iron Shells
 r(30347),	-- Adamantite Shell Machine
-r(30348),	-- Fel Iron Toolbox
-r(30349),	-- Titanium Toolbox \\ Khorium Toolbox
 r(30350),	-- Engineering
-r(30547),	-- Elemental Seaforium Charge
-r(30548),	-- Zapthrottle Mote Extractor
-r(30549),	-- Critter Enlarger
-r(30551),	-- Healing Potion Injector
-r(30552),	-- Mana Potion Injector
 r(30555),	-- Remote Mail Terminal
-r(30556),	-- Rocket Boots Xtreme
 r(30558),	-- The Bigger One
 r(30560),	-- Super Sapper Charge
 r(30561),	-- Goblin Tonk Controller
@@ -159,9 +136,7 @@ r(30570),	-- Nigh-Invulnerability Belt
 r(30573),	-- Gnomish Tonk Controller
 r(30574),	-- Gnomish Power Goggles
 r(30575),	-- Gnomish Battle Goggles
-r(32814),	-- Purple Smoke Flare
 2.4.3.8606
-r(39895),	-- Fused Wiring
 r(39971),	-- Icy Blasting Primers
 r(39973),	-- Frost Grenade \\ Frost Grenades
 r(40274),	-- Furious Gizmatic Goggles
@@ -179,19 +154,6 @@ r(41321),	-- Powerheal 4000 Lens
 r(43676),	-- Adamantite Arrow Maker
 r(44155),	-- Flying Machine
 r(44157),	-- Turbo-Charged Flying Machine
-r(44391),	-- Field Repair Bot 110G
-r(46106),	-- Wonderheal XT68 Shades
-r(46107),	-- Justicebringer 3000 Specs
-r(46108),	-- Powerheal 9000 Lens
-r(46109),	-- Hyper-Magnified Moon Specs
-r(46110),	-- Primal-Attuned Goggles
-r(46111),	-- Annihilator Holo-Gogs
-r(46112),	-- Lightning Etched Specs
-r(46113),	-- Surestrike Goggles v3.0
-r(46114),	-- Mayhem Projection Goggles
-r(46115),	-- Hard Khorium Goggles
-r(46116),	-- Quad Deathblow X44 Goggles
-r(46697),	-- Rocket Boots Xtreme Lite
 3.0.1.8303
 r(49383),	-- Engineering
 3.0.1.8622
@@ -238,8 +200,6 @@ r(56487),	-- Electroflux Sight Enhancers
 r(56514),	-- Global Thermal Sapper Charge
 r(56574),	-- Truesight Ice Blinders
 3.1.0.9767
-r(60866),	-- Mechano-Hog \\ Mechano-hog
-r(60867),	-- Mekgineer's Chopper
 r(60874),	-- Nesingwary 4000
 r(61471),	-- Diamond-cut Refractor Scope
 r(61481),	-- Mechanized Snow Goggles
@@ -254,7 +214,6 @@ r(67326),	-- Goblin Beam Welder
 r(67790),	-- Dimensional Folder: K3
 r(67839),	-- Mind Amplification Dish
 r(67920),	-- Wormhole Generator: Northrend
-r(68067),	-- Jeeves
 r(72952),	-- Shatter Rounds
 r(72953),	-- Iceblade Arrow
 4.0.1.12911
@@ -305,8 +264,6 @@ r(94748),	-- Electrified Ether
 r(95703),	-- Electrostatic Condenser
 r(95705),	-- Gnomish Gravity Well
 r(95707),	-- Big Daddy
-r(100587),	-- Flintlocke's Woodchucker
-r(100687),	-- Extreme-Impact Hole Puncher
 r(105518),	-- Open Box
 5.0.3.15890
 r(108789),	--
@@ -339,9 +296,6 @@ r(127136),	-- Big Game Hunter
 r(127137),	-- Long-Range Trillium Sniper
 r(127138),	-- Depleted-Kyparium Rocket
 r(127139),	-- Geosynchronous World Spinner
-r(128260),	-- Celestial Firework
-r(128261),	-- Grand Celebration Firework
-r(128262),	-- Serpent's Heart Firework
 6.0.1.18179
 r(131211),	-- Flashing Tinker's Gear
 r(131212),	-- Fractured Tinker's Gear
@@ -351,128 +305,44 @@ r(131215),	-- Rigid Tinker's Gear
 r(131216),	-- Smooth Tinker's Gear
 r(131217),	-- Sparkling Tinker's Gear
 r(131218),	-- Subtle Tinker's Gear
-r(131256),	-- Autumn Flower Firework
-r(131258),	-- Jade Blossom Firework
 r(131353),	-- Pandaria Fireworks
 r(131563),	-- Tinker's Kit
 r(158739),	-- Engineering
 r(161543),	--
 7.3.0.24473
-r(162195),	-- Cybergenetic Mechshades
-r(162196),	-- Night-Vision Mechshades
-r(162197),	-- Plasma Mechshades
-r(162198),	-- Razorguard Mechshades
-r(162199),	-- Shrediron's Shredder
-r(162202),	-- Oglethorpe's Missile Splitter
-r(162203),	-- Megawatt Filament
-r(162205),	-- Findle's Loot-a-Rang
-r(162206),	-- World Shrinker
 r(162208),	-- Ultimate Gnomish Army Knife
-r(162209),	-- Mechanical Axebeak
-r(162210),	-- Lifelike Mechanical Frostboar
-r(162214),	-- Personal Hologram
-r(162216),	-- Wormhole Centrifuge
-r(162217),	-- Swapblaster
-r(162218),	-- Blingtron 5000
-r(169076),	-- Linkgrease Locksprocket
-r(169078),	-- Didi's Delicate Assembly
-r(171072),	-- Alliance Firework
-r(171073),	-- Horde Firework
-r(171074),	-- Snake Firework
-r(173289),	-- Hemet's Heartseeker
-r(176732),	-- Mechanical Scorpid
-r(177054),	-- Secrets of Draenor Engineering
-r(177363),	-- True Iron Trigger
 r(178242),	-- Gearspring Parts
-r(182120),	-- Primal Welding
-r(187496),	-- Advanced Muzzlesprocket
-r(187497),	-- Bi-Directional Fizzle Reducer
-r(187520),	-- Taladite Firing Pin
-r(187521),	-- Infrablue-Blocker Lenses
 r(195112),	-- Engineering
-r(198968),	-- Semi-Automagic Cranial Cannon
-r(198969),	-- Sawed-Off Cranial Cannon
-r(198970),	-- Double-Barreled Cranial Cannon
-r(198971),	-- Ironsight Cranial Cannon
 r(198972),	-- Deployable Bullet Dispenser
 r(198973),	-- Gunpowder Charge
-r(198979),	-- Intra-Dalaran Wormhole Generator
-r(198983),	-- Reaves Module: Wormhole Generator Mode
-r(198989),	-- Reaves Module: Bling Mode
-r(198995),	-- Semi-Automagic Cranial Cannon
-r(198996),	-- Sawed-Off Cranial Cannon
-r(198997),	-- Double-Barreled Cranial Cannon
-r(198998),	-- Ironsight Cranial Cannon
-r(198999),	-- Deployable Bullet Dispenser
-r(199000),	-- Gunpowder Charge
-r(199001),	-- Pump-Action Bandage Gun
-r(199002),	-- Gunpack
-r(199003),	-- Auto-Hammer
-r(199004),	-- Failure Detection Pylon
-r(199005),	-- Blink-Trigger Headgun
-r(199006),	-- Tactical Headgun
-r(199007),	-- Bolt-Action Headgun
-r(199008),	-- Reinforced Headgun
-r(199009),	-- Semi-Automagic Cranial Cannon
-r(199010),	-- Sawed-Off Cranial Cannon
-r(199011),	-- Double-Barreled Cranial Cannon
-r(199012),	-- Ironsight Cranial Cannon
-r(199013),	-- Deployable Bullet Dispenser
-r(199014),	-- Gunpowder Charge
-r(199015),	-- Pump-Action Bandage Gun
-r(199016),	-- Gunpack
-r(199017),	-- Auto-Hammer
-r(199018),	-- Failure Detection Pylon
-r(209501),	-- "The Felic"
-r(209502),	-- Shockinator
-r(209645),	-- Leystone Buoy
-r(209646),	-- Mecha-Bond Imprint Matrix
-r(235753),	-- Tailored Skullblasters
-r(235754),	-- Rugged Skullblasters
-r(235755),	-- Chain Skullblasters
-r(235756),	-- Heavy Skullblasters
 8.0.1.25902
 r(255392),	-- F.R.I.E.D.
 r(255393),	-- F.R.I.E.D.
-r(255394),	-- F.R.I.E.D.
 r(255395),	-- Thermo-Accelerated Plague Spreader
 r(255396),	-- Thermo-Accelerated Plague Spreader
-r(255397),	-- Thermo-Accelerated Plague Spreader
 r(255398),	-- Charged Refrigeration Projectile
 r(255399),	-- Charged Refrigeration Projectile
-r(255400),	-- Charged Refrigeration Projectile
 r(255401),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
 r(255402),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
-r(255403),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
 r(255404),	-- Neurological Immobilization Bomb
 r(255405),	-- Neurological Immobilization Bomb
-r(255406),	-- Neurological Immobilization Bomb
 r(255407),	-- Organic Discombobulation Grenade
 r(255408),	-- Organic Discombobulation Grenade
-r(255409),	-- Organic Discombobulation Grenade
 r(255410),	-- Catchroot Seed Spreader
 r(255411),	-- Catchroot Seed Spreader
-r(255412),	-- Catchroot Seed Spreader
 r(255413),	-- Electro-Induced Slumber Bomb
 r(255414),	-- Electro-Induced Slumber Bomb
-r(255415),	-- Electro-Induced Slumber Bomb
 r(255454),	-- REUSE ME \\ Monelite Boomstick \\ Monalite Boomstick
 r(255457),	-- Finely-Tuned Stormsteel Destroyer
 r(255458),	-- Finely-Tuned Stormsteel Destroyer
-r(255459),	-- Finely-Tuned Stormsteel Destroyer
 r(256070),	-- Electroshock Mount Motivator
 r(256071),	-- Electroshock Mount Motivator
-r(256072),	-- Electroshock Mount Motivator
 r(256073),	-- XA-1000 Surface Skimmer
 r(256074),	-- XA-1000 Surface Skimmer
-r(256075),	-- XA-1000 Surface Skimmer
 r(256080),	-- Interdimensional Companion Repository \\ Interdemensional Companion Repository
 r(256082),	-- Interdimensional Companion Repository \\ Interdemensional Companion Repository
-r(256084),	-- Interdimensional Companion Repository \\ Interdemensional Companion Repository
-r(256132),	-- Super-Charged Engine
 r(256154),	-- Deployable Attire Rearranger
 r(256155),	-- Deployable Attire Rearranger
-r(256156),	-- Deployable Attire Rearranger
 r(264475),	-- Engineering
 r(264479),	-- Outland Engineering
 r(264481),	-- Northrend Engineering
@@ -484,19 +354,14 @@ r(264492),	-- Kul Tiran Engineering
 r(253122),	-- Magnetic Discombobulator
 r(253150),	-- Precision Attitude Adjuster
 r(253151),	-- Precision Attitude Adjuster
-r(253152),	-- Precision Attitude Adjuster
 r(264960),	-- Crow's Nest Scope
 r(264961),	-- Crow's Nest Scope
-r(264962),	-- Crow's Nest Scope
 r(264964),	-- Monelite Scope of Alacrity \\ Monalite Scope of Alacrity
 r(264966),	-- Monelite Scope of Alacrity \\ Monalite Scope of Alacrity
-r(264967),	-- Monelite Scope of Alacrity \\ Monalite Scope of Alacrity
 r(265097),	-- Incendiary Ammunition
 r(265098),	-- Incendiary Ammunition
-r(265099),	-- Incendiary Ammunition
 r(265100),	-- Frost-Laced Ammunition
 r(265101),	-- Frost-Laced Ammunition
-r(265102),	-- Frost-Laced Ammunition
 r(265807),	-- Zandalari Engineering
 8.0.1.26175
 r(269126),	-- Belt Enchant: Miniaturized Plasma Shield
@@ -504,31 +369,16 @@ r(269205),	-- Belt Enchant: Holographic Horror Projector
 r(269208),	-- Belt Enchant: Personal Space Amplifier
 8.0.1.26231
 r(269724),	-- Honorable Combatant's Discombobulator
-r(269725),	-- Honorable Combatant's Discombobulator
-r(269726),	-- Honorable Combatant's Discombobulator
 r(269727),	-- Honorable Combatant's Stormsteel Destroyer
-r(269728),	-- Honorable Combatant's Stormsteel Destroyer
-r(269729),	-- Honorable Combatant's Stormsteel Destroyer
 8.0.1.26310
 r(272056),	-- AZ3-R1-T3 Synthetic Specs
-r(272057),	-- AZ3-R1-T3 Synthetic Specs
-r(272058),	-- AZ3-R1-T3 Synthetic Specs
 r(272059),	-- AZ3-R1-T3 Gearspun Goggles
-r(272060),	-- AZ3-R1-T3 Gearspun Goggles
-r(272061),	-- AZ3-R1-T3 Gearspun Goggles
 r(272062),	-- AZ3-R1-T3 Bionic Bifocals
-r(272063),	-- AZ3-R1-T3 Bionic Bifocals
-r(272064),	-- AZ3-R1-T3 Bionic Bifocals
 r(272065),	-- AZ3-R1-T3 Orthogonal Optics
-r(272066),	-- AZ3-R1-T3 Orthogonal Optics
-r(272067),	-- AZ3-R1-T3 Orthogonal Optics
-8.0.1.26476
-r(274621),	-- Mecha-Mogul Mk2
 8.0.1.26624
 r(255936),	-- Belt Enchant: Holographic Horror Projector \\ Belt Enchant - Holographic Horror Projector
 r(255940),	-- Belt Enchant: Personal Space Amplifier \\ Belt Enchant - Personal Space Amplifier
 r(269123),	-- Belt Enchant: Miniaturized Plasma Shield \\ Miniaturized Plasma Shield
-r(278411),	-- Makeshift Azerite Detector
 r(278413),	-- Monelite Fish Finder
 8.0.1.26871
 r(280732),	-- Magical Intrusion Dampener
@@ -536,89 +386,37 @@ r(280733),	-- Magical Intrusion Dampener
 r(280734),	-- Magical Intrusion Dampener
 8.1.0.27826
 r(282806),	-- Sinister Combatant's Discombobulator
-r(282807),	-- Sinister Combatant's Discombobulator
-r(282808),	-- Sinister Combatant's Discombobulator
 r(282809),	-- Sinister Combatant's Stormsteel Destroyer
-r(282810),	-- Sinister Combatant's Stormsteel Destroyer
-r(282811),	-- Sinister Combatant's Stormsteel Destroyer
 r(283914),	-- Unstable Temporal Time Shifter
-r(283915),	-- Unstable Temporal Time Shifter
-r(283916),	-- Unstable Temporal Time Shifter
-8.1.0.27934
-r(286478),	-- Mechantula
 8.1.0.27985
 r(286647),	-- Sanguinated Thermo-Degradation \\ Breath to Sanguicell
 r(286864),	-- Surging Bionic Bifocals
-r(286865),	-- SP1-R1-73D Bionic Bifocals
-r(286866),	-- Charged SP1-R1-73D Bionic Bifocals
 r(286867),	-- Surging Gearspun Goggles
-r(286868),	-- SP1-R1-73D Gearspun Goggles
-r(286869),	-- Charged SP1-R1-73D Gearspun Goggles
 r(286870),	-- Surging Orthogonal Optics
-r(286871),	-- SP1-R1-73D Orthogonal Optics
-r(286872),	-- Charged SP1-R1-73D Orthogonal Optics
 r(286873),	-- Surging Synthetic Specs
-r(286874),	-- SP1-R1-73D Synthetic Specs
-r(286875),	-- Charged SP1-R1-73D Synthetic Specs
 8.1.0.28048
 r(287279),	-- Aqueous Thermo-Degradation \\ Tidalcore to Hydrocore
 8.1.0.28616
 r(291089),	-- Imbued Synthetic Specs
-r(291090),	-- Emblazoned Synthetic Specs
 r(291091),	-- Imbued Gearspun Goggles
-r(291092),	-- Emblazoned Gearspun Goggles
 r(291093),	-- Imbued Bionic Bifocals
-r(291094),	-- Emblazoned Bionic Bifocals
 r(291095),	-- Imbued Orthogonal Optics
-r(291096),	-- Emblazoned Orthogonal Optics
 8.1.5.29220
 r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots \\ Ub3r-Module: Boom Bots
 r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 \\ Ub3r-Module: S3ntry MK X8.0
 r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy
 8.2.0.30080
 r(294784),	-- Notorious Combatant's Discombobulator
-r(294785),	-- Notorious Combatant's Discombobulator
-r(294786),	-- Notorious Combatant's Discombobulator
 r(294787),	-- Notorious Combatant's Stormsteel Destroyer
-r(294788),	-- Notorious Combatant's Stormsteel Destroyer
-r(294789),	-- Notorious Combatant's Stormsteel Destroyer
-r(298255),	-- Ub3r-Module: P.O.G.O. \\ Ub3r-Module: P.O.G.O
-r(298256),	-- Ub3r-Module: Scrap Cannon
-r(298257),	-- Ub3r-Module: Ub3r-Coil
-r(298930),	-- Blingtron 7000
 r(299004),	-- Abyssal Synthetic Specs
-r(299005),	-- A5C-3N-D3D Synthetic Specs
-r(299006),	-- Charged A5C-3N-D3D Synthetic Specs
 r(299007),	-- Abyssal Gearspun Goggles
-r(299008),	-- A5C-3N-D3D Gearspun Goggles
-r(299009),	-- Charged A5C-3N-D3D Gearspun Goggles
 r(299010),	-- Abyssal Bionic Bifocals
-r(299011),	-- A5C-3N-D3D Bionic Bifocals
-r(299012),	-- Charged A5C-3N-D3D Bionic Bifocals
 r(299013),	-- Abyssal Orthogonal Optics
-r(299014),	-- A5C-3N-D3D Orthogonal Optics
-r(299015),	-- Charged A5C-3N-D3D Orthogonal Optics
 r(299105),	-- Wormhole Generator: Kul Tiras
 r(299106),	-- Wormhole Generator: Zandalar
 8.3.0.32044
-r(305858),	-- Uncanny Combatant's Stormsteel Destroyer
-r(305859),	-- Uncanny Combatant's Stormsteel Destroyer
 r(305860),	-- Uncanny Combatant's Stormsteel Destroyer
-r(305861),	-- Uncanny Combatant's Discombobulator
-r(305862),	-- Uncanny Combatant's Discombobulator
 r(305863),	-- Uncanny Combatant's Discombobulator
-r(305940),	-- Paramount Gearspun Goggles
-r(305941),	-- Superior Gearspun Goggles
-r(305942),	-- A-N0M-A-L0U5 Gearspun Goggles
-r(305943),	-- Paramount Synthetic Specs
-r(305944),	-- Superior Synthetic Specs
-r(305945),	-- A-N0M-A-L0U5 Synthetic Specs
-r(305946),	-- Paramount Orthogonal Optics
-r(305947),	-- Superior Orthogonal Optics
-r(305948),	-- A-N0M-A-L0U5 Orthogonal Optics
-r(305949),	-- Paramount Bionic Bifocals
-r(305950),	-- Superior Bionic Bifocals
-r(305951),	-- A-N0M-A-L0U5 Bionic Bifocals
 r(307220),	-- Void Focus
 
 

@@ -6,7 +6,7 @@ local i = GetRecipeHelperForProfession(COOKING);
 --- TRAINER ---
 i(0, 2550);			-- Cooking (Apprentice) [REMOVED: 8.0.1]
 i(0, 3102);			-- Cooking (Journeyman) [REMOVED: 8.0.1]
-i(16072, 3413);		-- Cooking (Expert) [TRAINER: 3.1.0, REMOVED 8.0.1]
+i(16072, 3413);		-- Cooking (Expert) [TRAINER: 3.1.0, REMOVED: 8.0.1]
 i(0, 18260);		-- Cooking (Artisan) [REMOVED: 8.0.1]
 i(0, 818);			-- Cooking Fire / Basic Campfire
 i(0, 6499);			-- Boiled Clams
@@ -36,7 +36,7 @@ i(5488, 6418);		-- Crispy Lizard Tail
 i(3681, 3373);		-- Crocolisk Gumbo
 i(3678, 3370);		-- Crocolisk Steak
 i(3682, 3376);		-- Curiously Tasty Omelet
-i(5487, 6417);		-- Dig Rat Stew [REMOVED: 4.3.0, See 4.3.0]
+i(5487, 6417);		-- Dig Rat Stew [REMOVED: 4.3.0, See Also 4.3.0]
 i(21025, 25659);	-- Dirge's Kickin' Chimaerok Chops [REMOVED: 4.0.3]
 i(12239, 15906);	-- Dragonbreath Chili
 i(5485, 6415);		-- Fillet of Frenzy [TRAINER: 4.0.3]
@@ -96,6 +96,8 @@ i(0, 24801);		-- Smoked Desert Dumplings
 i(0, 13028);		-- Goldthorn Tea [REMOVED: 6.0.2, ADDED: 10.0.5]
 --- NYI ---
 i(23690, 30047);	-- Crystal Throat Lozenge / Crystal Flake Throat Lozenge
+i(16073, 0);		-- Artisan Cookbook
+i(6891, 0);			-- Herb Baked Egg
 
 -----------------
 -- PATCH 2.0.5 --
@@ -122,7 +124,7 @@ i(27688, 33284);	-- Ravager Dog
 i(27691, 33287);	-- Roasted Clefthoof
 i(27686, 33277);	-- Roasted Moongraze Tenderloin
 i(27700, 33296);	-- Spicy Crawdad
-i(27689, 33285);	-- Sporeling Snack [REMOVED 4.2.0]
+i(27689, 33285);	-- Sporeling Snack [REMOVED: 4.2.0]
 i(27693, 33289);	-- Talbuk Steak
 i(27692, 33288);	-- Warp Burger
 
@@ -224,11 +226,11 @@ i(44954, 62350);	-- Worg Tartare
 -- PATCH 3.1.0 --
 -----------------
 --- TRAINER ---
-i(0, 64358);	-- Black Jelly
+i(0, 64358);		-- Black Jelly
 --- ITEM ---
-i(44977, 6417);	-- Dig Rat Stew [DELETED 4.3.0, See 4.3.0]
+i(44977, 6417);		-- Dig Rat Stew [DELETED: 4.3.0, See also 4.3.0]
 --- QUEST ---
-i(0, 64054);	-- Clamlette Magnifique
+i(0, 64054);		-- Clamlette Magnifique
 
 -----------------
 -- PATCH 3.2.2 --
@@ -250,7 +252,7 @@ i(46803, 66038);	-- Spice Bread Stuffing (H)
 -- PATCH 4.0.3 --
 -----------------
 --- TRAINER ---
-i(0, 88053);		-- Cooking (Illustrious) [REMOVED 8.0.1]
+i(0, 88053);		-- Cooking (Illustrious) [REMOVED: 8.0.1]
 i(0, 88006);		-- Blackened Surprise
 i(0, 88015);		-- Darkbrew Lager
 i(0, 93741);		-- Venison Jerky
@@ -302,69 +304,69 @@ i(78342, 6417);		-- Dig Rat Stew
 -- PATCH 5.0.4 --
 -----------------
 --- TRAINER ---
-i(0, 104381);	-- Cooking (Zen Master) [REMOVED: 8.0.1]
-i(0, 124233);	-- Blanched Needle Mushrooms
-i(0, 124228);	-- Boiled Silkworm Pupa
-i(0, 124227);	-- Dried Needle Mushrooms
-i(0, 124226);	-- Dried Peaches
-i(0, 104297);	-- Fish Cake
-i(0, 104237);	-- Golden Carp Consomme
-i(0, 124231);	-- Green Curry Fish
-i(0, 124232);	-- Peach Pie
-i(0, 125080);	-- Pearl Milk Tea
-i(0, 125067);	-- Perfectly Cooked Instant Noodles
-i(0, 124223);	-- Pounded Rice Cake
-i(0, 124229);	-- Red Bean Bun
-i(0, 125122);	-- Rice Pudding
-i(0, 125078);	-- Roasted Barley Tea
-i(0, 124234);	-- Skewered Peanut Chicken
-i(0, 125117);	-- Sliced Peaches
-i(0, 124230);	-- Tangy Yogurt
-i(0, 124225);	-- Toasted Fish Jerky
-i(0, 125121);	-- Wildfowl Ginseng Soup
-i(0, 124224);	-- Yak Cheese Curds
+i(0, 104381);		-- Cooking (Zen Master) [REMOVED: 8.0.1]
+i(0, 124233);		-- Blanched Needle Mushrooms
+i(0, 124228);		-- Boiled Silkworm Pupa
+i(0, 124227);		-- Dried Needle Mushrooms
+i(0, 124226);		-- Dried Peaches
+i(0, 104297);		-- Fish Cake
+i(0, 104237);		-- Golden Carp Consomme
+i(0, 124231);		-- Green Curry Fish
+i(0, 124232);		-- Peach Pie
+i(0, 125080);		-- Pearl Milk Tea
+i(0, 125067);		-- Perfectly Cooked Instant Noodles
+i(0, 124223);		-- Pounded Rice Cake
+i(0, 124229);		-- Red Bean Bun
+i(0, 125122);		-- Rice Pudding
+i(0, 125078);		-- Roasted Barley Tea
+i(0, 124234);		-- Skewered Peanut Chicken
+i(0, 125117);		-- Sliced Peaches
+i(0, 124230);		-- Tangy Yogurt
+i(0, 124225);		-- Toasted Fish Jerky
+i(0, 125121);		-- Wildfowl Ginseng Soup
+i(0, 124224);		-- Yak Cheese Curds
 --- BREW ---
-i(0, 125589);	-- Way of the Brew
-i(0, 125602);	-- Banquet of the Brew
-i(0, 124052);	-- Ginseng Tea
-i(0, 125603);	-- Great Banquet of the Brew
-i(0, 124053);	-- Jade Witch Brew
-i(0, 124054);	-- Mad Brewer's Breakfast
+i(0, 125589);		-- Way of the Brew
+i(0, 125602);		-- Banquet of the Brew
+i(0, 124052);		-- Ginseng Tea
+i(0, 125603);		-- Great Banquet of the Brew
+i(0, 124053);		-- Jade Witch Brew
+i(0, 124054);		-- Mad Brewer's Breakfast
 --- GRILL ---
-i(0, 124694);	-- Way of the Grill
-i(0, 125141);	-- Banquet of the Grill
-i(0, 104300);	-- Black Pepper Ribs and Shrimp
-i(0, 104298);	-- Charbroiled Tiger Steak
-i(0, 104299);	-- Eternal Blossom Fish
-i(0, 125142);	-- Great Banquet of the Grill
+i(0, 124694);		-- Way of the Grill
+i(0, 125141);		-- Banquet of the Grill
+i(0, 104300);		-- Black Pepper Ribs and Shrimp
+i(0, 104298);		-- Charbroiled Tiger Steak
+i(0, 104299);		-- Eternal Blossom Fish
+i(0, 125142);		-- Great Banquet of the Grill
 --- OVEN ---
-i(0, 125588);	-- Way of the Oven
-i(0, 125600);	-- Banquet of the Oven
-i(0, 104312);	-- Chun Tian Spring Rolls
-i(0, 125601);	-- Great Banquet of the Oven
-i(0, 104311);	-- Twin Fish Platter
-i(0, 104310);	-- Wildfowl Roast
+i(0, 125588);		-- Way of the Oven
+i(0, 125600);		-- Banquet of the Oven
+i(0, 104312);		-- Chun Tian Spring Rolls
+i(0, 125601);		-- Great Banquet of the Oven
+i(0, 104311);		-- Twin Fish Platter
+i(0, 104310);		-- Wildfowl Roast
 --- POT ---
-i(0, 125586);	-- Way of the Pot
-i(0, 125596);	-- Banquet of the Pot
-i(0, 104305);	-- Braised Turtle
-i(0, 125597);	-- Great Banquet of the Pot
-i(0, 104306);	-- Mogu Fish Stew
-i(0, 104307);	-- Shrimp Dumplings
+i(0, 125586);		-- Way of the Pot
+i(0, 125596);		-- Banquet of the Pot
+i(0, 104305);		-- Braised Turtle
+i(0, 125597);		-- Great Banquet of the Pot
+i(0, 104306);		-- Mogu Fish Stew
+i(0, 104307);		-- Shrimp Dumplings
 --- STEAMER ---
-i(0, 125587);	-- Way of the Steamer
-i(0, 125598);	-- Banquet of the Steamer
-i(0, 104308);	-- Fire Spirit Salmon
-i(0, 125599);	-- Great Banquet of the Steamer
-i(0, 104309);	-- Steamed Crab Surprise
-i(0, 104304);	-- Swirling Mist Soup
+i(0, 125587);		-- Way of the Steamer
+i(0, 125598);		-- Banquet of the Steamer
+i(0, 104308);		-- Fire Spirit Salmon
+i(0, 125599);		-- Great Banquet of the Steamer
+i(0, 104309);		-- Steamed Crab Surprise
+i(0, 104304);		-- Swirling Mist Soup
 --- WOK ---
-i(0, 125584);	-- Way of the Wok
-i(0, 125594);	-- Banquet of the Wok
-i(0, 125595);	-- Great Banquet of the Wok
-i(0, 104301);	-- Sauteed Carrots
-i(0, 104303);	-- Sea Mist Rice Noodles
-i(0, 104302);	-- Valley Stir Fry
+i(0, 125584);		-- Way of the Wok
+i(0, 125594);		-- Banquet of the Wok
+i(0, 125595);		-- Great Banquet of the Wok
+i(0, 104301);		-- Sauteed Carrots
+i(0, 104303);		-- Sea Mist Rice Noodles
+i(0, 104302);		-- Valley Stir Fry
 --- ITEM ---
 i(87266, 126655);	-- Banana-Infused Rum
 i(86393, 126654);	-- Four Senses Brew
@@ -374,9 +376,13 @@ i(75013, 105190);	-- Pandaren Banquet
 i(74657, 125120);	-- Spicy Salmon
 i(74658, 125123);	-- Spicy Vegetable Chips
 i(85502, 124029);	-- Viseclaw Soup
--- NYI --
-i(0, 125889);	-- Apprentice Cookbook
-i(0, 125898);	-- Journeyman Cookbook
+--- NYI ---
+i(86550, 125889);	-- Apprentice Cookbook
+i(86512, 125898);	-- Journeyman Cookbook
+i(86552, 0);		-- Artisan Cookbook
+i(86551, 0);		-- Expert Cookbook
+i(86554, 0);		-- Grand Master Cookbook
+i(86553, 0);		-- Master Cookbook
 
 -----------------
 -- PATCH 5.4.0 --
@@ -389,22 +395,39 @@ i(101765, 145305);	-- Seasoned Pomfruit Slices
 i(101766, 145307);	-- Spiced Blossom Soup
 i(101769, 145310);	-- Stuffed Lushrooms
 --- QUEST ---
-i(0, 145061);	-- Deluxe Noodle Cart Kit
-i(0, 145038);	-- Noodle Cart Kit
-i(0, 145062);	-- Pandaren Treasure Noodle Cart Kit
--- NYI --
-i(0, 145170);	-- Grand Deluxe Noodle Cart Kit
-i(0, 145167);	-- Grand Noodle Cart Kit
-i(0, 145197);	-- Grand Pandaren Treasure Noodle Cart Kit
+i(0, 145061);		-- Deluxe Noodle Cart Kit
+i(0, 145038);		-- Noodle Cart Kit
+i(0, 145062);		-- Pandaren Treasure Noodle Cart Kit
+--- NYI ---
+i(101739, 145170);	-- Grand Deluxe Noodle Cart Kit
+i(101728, 145167);	-- Grand Noodle Cart Kit
+i(101741, 145197);	-- Grand Pandaren Treasure Noodle Cart Kit
+i(101631, 0);		-- Noodle Cart Kit
+i(101664, 0);		-- Deluxe Noodle Cart Kit
+i(101663, 0);		-- Pandaren Treasure Noodle Cart Kit
 
 -----------------
 -- PATCH 6.0.2 --
 -----------------
--- TRAINER --
-i(0, 158765);	-- Cooking (Draenor Master) [REMOVED 8.0.1]
-i(0, 161002);	-- Grilled Saberfish
-i(0, 161001);	-- Saberfish Broth
--- ITEM --
+--- NYI ---
+i(0, 160967);		-- Clefthoof Pot Roast
+i(0, 160976);		-- Crispy Fried Scorpion
+i(0, 160961);		-- Deep Fried Basilisk
+i(0, 169696);		-- Marinated Elekk Steak
+i(0, 160985);		-- Nagrand Tempura
+i(0, 160980);		-- Salted Skulker
+i(0, 169699);		-- Seasoned Elekk Ribeye
+i(0, 160988);		-- Starflower Sandwich
+i(0, 169693);		-- Whole Pot-Roasted Elekk
+
+-----------------
+-- PATCH 6.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 158765);		-- Cooking (Draenor Master) [REMOVED: 8.0.1]
+i(0, 161002);		-- Grilled Saberfish
+i(0, 161001);		-- Saberfish Broth
+--- ITEM ---
 i(118323, 160986);	-- Blackrock Barbecue
 i(118311, 160962);	-- Blackrock Ham
 i(118313, 160968);	-- Braised Riverbeast
@@ -425,21 +448,11 @@ i(118325, 160989);	-- Sleeper Surprise
 i(118316, 160973);	-- Steamed Scorpion
 i(118318, 160979);	-- Sturgeon Stew
 i(118322, 160984);	-- Talador Surf and Turf
--- NYI --
-i(0, 169696);	-- Marinated Elekk Steak
-i(0, 169699);	-- Seasoned Elekk Ribeye
-i(0, 160961);	-- UNUSED
-i(0, 160967);	-- UNUSED
-i(0, 160976);	-- UNUSED
-i(0, 160980);	-- UNUSED
-i(0, 160985);	-- UNUSED
-i(0, 160988);	-- UNUSED
-i(0, 169693);	-- Whole Pot-Roasted Elekk
 
 -----------------
 -- PATCH 6.1.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(122556, 180761);	-- Buttered Sturgeon
 i(122557, 180759);	-- Jumbo Sea Dog
 i(122558, 180758);	-- Pickled Eel
@@ -450,7 +463,7 @@ i(122560, 180760);	-- Whiptail Fillet
 -----------------
 -- PATCH 6.2.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(126929, 185705);	-- Fancy Darkmoon Feast
 i(128501, 190788);	-- Fel Eggs and Ham
 i(126928, 185704);	-- Lemon Herb Filet
@@ -460,7 +473,7 @@ i(126927, 185708);	-- Sugar-Crusted Fish Feast
 -- PATCH 7.0.3 --
 -----------------
 --- TRAINER ---
-i(0, 195128);		-- Cooking (Legion) [REMOVED 8.0.1]
+i(0, 195128);		-- Cooking (Legion) [REMOVED: 8.0.1]
 --- ITEM ---
 i(133822, 201506);	-- Azshari Salad [Rank 1]
 i(133842, 201535);	-- Azshari Salad [Rank 2]
@@ -635,6 +648,9 @@ i(168334, 297074);	-- Fragrant Kakavia [Rank 3]
 i(168330, 297080);	-- Mech-Dowel's "Big Mech" [Rank 3]
 i(170212, 301392);	-- Mecha-Bytes
 i(170075, 303788);	-- Unagi Skewer
+--- NYI ---
+i(169457, 0);		-- Mecha-Bytes
+i(170076, 0);		-- Unagi Skewer
 
 -----------------
 -- PATCH 8.3.0 --
