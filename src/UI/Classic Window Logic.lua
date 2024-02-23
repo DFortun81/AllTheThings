@@ -791,7 +791,7 @@ local function RowOnEnter(self)
 	-- Build tooltip information.
 	local tooltipInfo = {};
 	tooltip:ClearLines();
-	tooltip.ATT_IsRowOwned = reference;
+	app.ActiveRowReference = reference;
 	if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 		tooltip:SetOwner(self, "ANCHOR_LEFT");
 	else
@@ -1162,14 +1162,14 @@ local function RowOnEnter(self)
 	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
 	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
 	tooltip:Show();
-	tooltip.ATT_IsRowOwned = nil;
+	app.ActiveRowReference = nil;
 	
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 end
 local function RowOnLeave(self)
 	local tooltip = GameTooltip;
-	tooltip.ATT_IsRowOwned = nil;
+	app.ActiveRowReference = nil;
 	tooltip.ATT_IsRefreshing = nil;
 	tooltip.ATT_IsModifierKeyDown = nil;
 	tooltip:ClearATTReferenceTexture();

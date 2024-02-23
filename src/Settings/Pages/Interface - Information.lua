@@ -619,7 +619,7 @@ app.ProcessInformationTypes = function(info, reference)
 end
 app.ProcessInformationTypesForExternalTooltips = function(info, reference, itemString)
 	reference.itemString = itemString;
-	for _,informationType in ipairs(ActiveInformationTypesForExternalTooltips) do
+	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
 		informationType.Process(informationType, reference, info);
 	end
 	reference.itemString = nil;
