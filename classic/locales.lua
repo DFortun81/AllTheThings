@@ -18,6 +18,8 @@ for key,value in pairs({
 		"this was merely a setback",
 	};
 	["SOCIAL_PROGRESS"] = "Social Progress";
+	["TRACKING_PROGRESS"] = "Tracking Progress";
+	["COLLECTION_PROGRESS"] = "Collection Progress";
 	
 	-- Settings
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";

@@ -467,7 +467,6 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 						rightText:Show();
 					else
 						tooltip:AddDoubleLine(L.PROGRESS, progressText);
-						tooltip:AddDoubleLine("STRIPPED", strippedText .. (" " .. strippedText:len()));
 					end
 				end
 			end

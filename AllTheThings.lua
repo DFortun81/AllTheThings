@@ -9375,91 +9375,63 @@ end
 RowOnEnter = function (self)
 	local reference = self.ref;
 	if not reference then return; end
-	local GameTooltip = GameTooltip;
-	if not GameTooltip then return end;
+	local tooltip = GameTooltip;
+	if not tooltip then return end;
+	local modifier = IsModifierKeyDown();
+	local IsRefreshing = tooltip.ATT_IsRefreshing;
+	if IsRefreshing then
+		local modded = not not tooltip.ATT_IsModifierKeyDown;
+		if modded ~= modifier then
+			tooltip.ATT_IsModifierKeyDown = modifier;
+			--print("Modifier change detected!", modded, modifier);
+		else
+			--print("Ignoring refresh.");
+			return;
+		end
+	else
+		tooltip.ATT_IsModifierKeyDown = modifier;
+		tooltip.ATT_IsRefreshing = true;
+		tooltip:ClearATTReferenceTexture();
+	end
+	--print("RowOnEnter", "Rebuilding...");
 
 	-- Always display tooltip data when viewing information from our windows.
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
 	
+	-- Build tooltip information.
 	local tooltipInfo = {};
-
-	local tooltipAnchor;
-	local initialBuild = not GameTooltip.IsRefreshing;
-	GameTooltip.IsRefreshing = true;
-
-	if initialBuild then
-		-- app.PrintDebug("RowOnEnter-Initial");
-		GameTooltip:ClearATTReferenceTexture();
-		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
-			tooltipAnchor = "ANCHOR_LEFT";
-		else
-			tooltipAnchor = "ANCHOR_RIGHT";
-		end
-		-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
-		GameTooltip:SetOwner(self, tooltipAnchor);
+	tooltip:ClearLines();
+	tooltip.ATT_IsRowOwned = reference;
+	if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
+		tooltip:SetOwner(self, "ANCHOR_LEFT");
 	else
-		-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.ATTAttachComplete,GameTooltip:NumLines());
-		-- complete tooltip already exists and hasn't been cleared elsewhere, don't touch it
-		if GameTooltip.ATTAttachComplete and GameTooltip:NumLines() > 0 then
-			-- app.PrintDebug("RowOnEnter, complete");
-			return;
+		tooltip:SetOwner(self, "ANCHOR_RIGHT");
+	end
+	
+	-- Attempt to show the object as a hyperlink in the tooltip
+	local linkSuccessful;
+	if reference.key ~= "encounterID" and reference.key ~= "instanceID" then
+		-- Encounter & Instance Links break the tooltip.
+		local link = reference.link or reference.silentLink;
+		if link then
+			if reference.itemID or (reference.key ~= "questID" or (not app.Settings:GetTooltipSetting("QuestReplacement") and app.GameBuildVersion > 100000)) then
+				local ok, err = pcall(tooltip.SetHyperlink, tooltip, link);
+				if ok then
+					linkSuccessful = true;
+				end
+			end
 		end
-		-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
-		GameTooltip:ClearLines();
+		
+		-- Only if the link was unsuccessful.
+		if (not linkSuccessful or tooltip.ATTAttachComplete == nil) and reference.currencyID then
+			tooltip:SetCurrencyByID(reference.currencyID, 1);
+		end
 	end
 
-	local link = reference.link or reference.silentLink;
-	local _, linkAdded;
-	if link and (reference.key ~= "questID" or reference.itemID or not app.Settings:GetTooltipSetting("QuestReplacement")) then
-		-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
-		-- Safely attempt setting the tooltip link from the data
-		_, linkAdded = pcall(GameTooltip.SetHyperlink, GameTooltip, link);
-	end
-
-	local doSearch = linkAdded == false;
-	-- Nothing generated into tooltip based on the link, or no link exists
-	if GameTooltip:NumLines() < 1 then
-		-- Mark the tooltip as being complete, and insert the same text from the row itself
-		if doSearch then
-			GameTooltip:Hide();
-			GameTooltip:SetOwner(self, tooltipAnchor);
-		end
-		GameTooltip:AddLine(reference.text);
-		--[[
-		tinsert(tooltipInfo, {
-			left = reference.text,
-		});
-		]]--
-		doSearch = true;
-	end
-
-	-- Determine search results to add if nothing was added from being searched
-	-- ATTAttachComplete will be true or false if ATT has processed the tooltip/search results already
-	-- nil means no search results were attached, so we can manually add it below
-	local refQuestID = reference.questID;
-	if doSearch or GameTooltip.ATTAttachComplete == nil then
-		if reference.creatureID or reference.encounterID then
-			-- rows with these fields should not include the extra search info
-		elseif reference.currencyID then
-			GameTooltip:SetCurrencyByID(reference.currencyID, 1);
-		elseif reference.azeriteEssenceID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
-		elseif reference.speciesID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "speciesID", reference.speciesID);
-		elseif reference.objectID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "objectID", reference.objectID);
-		elseif reference.titleID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "titleID", reference.titleID);
-		elseif refQuestID and not reference.objectiveID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "questID", refQuestID);
-		elseif reference.flightPathID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "flightPathID", reference.flightPathID);
-		elseif reference.achievementID and not reference.criteriaID then
-			AttachTooltipSearchResults(GameTooltip, 1, SearchForField, "achievementID", reference.achievementID);
-		else
-			-- app.PrintDebug("No Search Data",reference.hash)
-		end
+	-- Default top row line if nothing is generated from a link.
+	if tooltip:NumLines() < 1 then
+		tinsert(tooltipInfo, { left = reference.text });
 	end
 
 	-- Miscellaneous fields
@@ -9507,12 +9479,6 @@ RowOnEnter = function (self)
 				r = 1, g = 1, b = 1
 			});
 		end
-	-- elseif refQuestID and reference.retries and not reference.itemID then
-	--[[
-		tinsert(tooltipInfo, {
-			left = L.QUEST_MAY_BE_REMOVED .. tostring(reference.retries),
-		});
-	--]]
 	end
 	local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
 	if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
@@ -9635,9 +9601,9 @@ RowOnEnter = function (self)
 			right = L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"],
 		});
 	end
-	if refQuestID then
+	if reference.questID then
 		-- TODO: This could be moved to the Quests lib and hook in using settings.AppendInformationTextEntry.
-		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
+		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[reference.questID];
 		if oneTimeQuestCharGuid then
 			local charData = ATTCharacterData[oneTimeQuestCharGuid];
 			tinsert(tooltipInfo, {
@@ -9733,7 +9699,7 @@ RowOnEnter = function (self)
 	end
 
 	-- Additional information (search will insert this information if found in search)
-	if GameTooltip.ATTAttachComplete == nil then
+	if tooltip.ATTAttachComplete == nil then
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
 			tinsert(tooltipInfo, {
@@ -9748,7 +9714,7 @@ RowOnEnter = function (self)
 		app.ProcessInformationTypes(tooltipInfo, reference);
 
 		-- Tooltip for something which was not attached via search, so mark it as complete here
-		GameTooltip.ATTAttachComplete = true;
+		tooltip.ATTAttachComplete = true;
 	end
 
 	-- Has a symlink for additonal information
@@ -10088,7 +10054,7 @@ RowOnEnter = function (self)
 				});
 			end
 		end
-		if refQuestID then
+		if reference.questID then
 			tinsert(tooltipInfo, {
 				left = L.QUEST_ROW_INSTRUCTIONS,
 			});
@@ -10182,22 +10148,23 @@ RowOnEnter = function (self)
 	-- END DEBUGGING]]
 	
 	
-	-- Attach all of the Information to the tooltip. (again, this is temporary until some more adjustments are made!)
-	app.Modules.Tooltip.AttachTooltipInformation(GameTooltip, tooltipInfo);
-	
-	-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
-	if initialBuild then GameTooltip:SetATTReferenceForTexture(reference); end
-	GameTooltip:Show();
-	-- app.PrintDebug("OnRowEnter-Return");
+	-- Attach all of the Information to the tooltip.
+	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
+	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
+	tooltip:Show();
+	tooltip.ATT_IsRowOwned = nil;
 
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 end
 RowOnLeave = function (self)
-	GameTooltip:ClearLines();
-	GameTooltip:Hide();
-	GameTooltip:ClearATTReferenceTexture();
-	GameTooltip.IsRefreshing = nil;
+	local tooltip = GameTooltip;
+	tooltip.ATT_IsRowOwned = nil;
+	tooltip.ATT_IsRefreshing = nil;
+	tooltip.ATT_IsModifierKeyDown = nil;
+	tooltip:ClearATTReferenceTexture();
+	tooltip:ClearLines();
+	tooltip:Hide();
 end
 CreateRow = function(self)
 	local row = CreateFrame("Button", nil, self);

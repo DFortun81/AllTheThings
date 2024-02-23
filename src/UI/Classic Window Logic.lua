@@ -764,10 +764,10 @@ local function RowOnEnter(self)
 	if not reference then return; end
 	local tooltip = GameTooltip;
 	if not tooltip then return end;
+	local modifier = IsModifierKeyDown();
 	local IsRefreshing = tooltip.ATT_IsRefreshing;
 	if IsRefreshing then
-		local modifier = IsModifierKeyDown();
-		local modded = tooltip.ATT_IsModifierKeyDown;
+		local modded = not not tooltip.ATT_IsModifierKeyDown;
 		if modded ~= modifier then
 			tooltip.ATT_IsModifierKeyDown = modifier;
 			--print("Modifier change detected!");
@@ -776,6 +776,7 @@ local function RowOnEnter(self)
 			return;
 		end
 	else
+		tooltip.ATT_IsModifierKeyDown = modifier;
 		tooltip.ATT_IsRefreshing = true;
 		tooltip:ClearATTReferenceTexture();
 	end
@@ -789,47 +790,36 @@ local function RowOnEnter(self)
 	-- Build tooltip information.
 	local tooltipInfo = {};
 	tooltip:ClearLines();
+	tooltip.ATT_IsRowOwned = reference;
 	if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 		tooltip:SetOwner(self, "ANCHOR_LEFT");
 	else
 		tooltip:SetOwner(self, "ANCHOR_RIGHT");
 	end
 	
-	-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
-	if not reference.creatureID then
-		if reference.itemID then
-			local link = reference.link;
-			if link and link ~= "" then
-				pcall(tooltip.SetHyperlink, tooltip, link);
-			else
-				tooltip:AddLine("Item #" .. reference.itemID);
-				AttachTooltipSearchResults(tooltip, 1, SearchForField, "itemID", reference.itemID);
-			end
-		elseif reference.currencyID then
-			tooltip:SetCurrencyByID(reference.currencyID, 1);
-		elseif reference.key ~= "questID" then
-			local link = reference.link;
-			if link then
-				pcall(tooltip.SetHyperlink, tooltip, link);
+	-- Attempt to show the object as a hyperlink in the tooltip
+	local linkSuccessful;
+	if reference.key ~= "encounterID" and reference.key ~= "instanceID" then
+		-- Encounter & Instance Links break the tooltip.
+		local link = reference.link or reference.silentLink;
+		if link then
+			if reference.itemID or (reference.key ~= "questID" or (not app.Settings:GetTooltipSetting("QuestReplacement") and app.GameBuildVersion > 100000)) then
+				local ok, err = pcall(tooltip.SetHyperlink, tooltip, link);
+				if ok then
+					linkSuccessful = true;
+				end
 			end
 		end
-	end
-	if reference.titleID then
-		AttachTooltipSearchResults(tooltip, 1, SearchForField, "titleID", reference.titleID);
+		
+		-- Only if the link was unsuccessful.
+		if (not linkSuccessful or tooltip.ATTAttachComplete == nil) and reference.currencyID then
+			tooltip:SetCurrencyByID(reference.currencyID, 1);
+		end
 	end
 
-	-- Miscellaneous fields
+	-- Default top row line if nothing is generated from a link.
 	if tooltip:NumLines() < 1 then
 		tinsert(tooltipInfo, { left = reference.text });
-	end
-	
-	if app.Settings:GetTooltipSetting("Progress") then
-		if reference.trackable and reference.total and reference.total >= 2 then
-			tinsert(tooltipInfo, {
-				left = "Tracking Progress",
-				right = GetCompletionText(reference.saved),
-			});
-		end
 	end
 
 	local title = reference.title;
@@ -857,6 +847,24 @@ local function RowOnEnter(self)
 	local progressText = GetProgressTextForTooltip(reference);
 	if progressText then
 		tinsert(tooltipInfo, { progress = progressText });
+	end
+	
+	if app.Settings:GetTooltipSetting("Progress") then
+		if reference.total and reference.total >= 2 then
+			-- if collecting this reference type, then show Collection State
+			if reference.collectible then
+				tinsert(tooltipInfo, {
+					left = L.COLLECTION_PROGRESS,
+					right = GetCollectionText(reference.collected or reference.saved),
+				});
+			-- if completion/tracking is available, show Completion State
+			elseif reference.trackable then
+				tinsert(tooltipInfo, {
+					left = "Tracking Progress",
+					right = GetCompletionText(reference.saved),
+				});
+			end
+		end
 	end
 	
 	if reference.minReputation and not reference.maxReputation then
@@ -1021,7 +1029,10 @@ local function RowOnEnter(self)
 	end
 	
 	-- Process all Information Types
-	app.ProcessInformationTypes(tooltipInfo, reference);
+	if tooltip.ATTAttachComplete == nil then
+		app.ProcessInformationTypes(tooltipInfo, reference);
+		tooltip.ATTAttachComplete = true;
+	end
 	
 	-- Show Breadcrumb information
 	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = "This is a breadcrumb quest." }); end
@@ -1150,12 +1161,14 @@ local function RowOnEnter(self)
 	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
 	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
 	tooltip:Show();
+	tooltip.ATT_IsRowOwned = nil;
 	
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 end
 local function RowOnLeave(self)
 	local tooltip = GameTooltip;
+	tooltip.ATT_IsRowOwned = nil;
 	tooltip.ATT_IsRefreshing = nil;
 	tooltip.ATT_IsModifierKeyDown = nil;
 	tooltip:ClearATTReferenceTexture();
