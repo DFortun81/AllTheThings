@@ -10,12 +10,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 		},
 		["g"] = {
 			n(QUESTS, {
-				q(33107, {	-- Bad Feeling, Worse Result
-					["provider"] = { "o", 221413 },	-- Lin Family Scroll
-					["coord"] = { 68.8, 58.4, 429 },
-					["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
-					["modelScale"] = 2,
-				}),
 				q(31356, {	-- Deep Doubts, Deep Wisdom
 					["provider"] = { "n", 64399 },	-- Master Windstrong
 					["coord"] = { 35.4, 44.4, 429 },

@@ -1325,17 +1325,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 73626 },			-- Little Tommy Newcomer
 						["isDaily"] = true,
 					}),
-					q(33018, {	-- Noodle Secrets Long Forgotten
-						["sourceQuests"] = {
-							31471,	-- Agile as a Tiger
-							31477,	-- Endurance
-							31480,	-- Have a Drink
-							31467,	-- Strong as a Tiger
-							31474,	-- The Soup of Contemplation
-							31476,	-- The Spirit of Cooking
-						},
-						["provider"] = { "o", 221376 },	-- Old Sign Fragment
-					}),
 					q(33379, {	-- One Final Turn
 						["sourceQuests"] = { 33378 },	-- Courting Destiny
 						["provider"] = { "n", 72870 },	-- Kairoz
@@ -1415,10 +1404,6 @@ root(ROOTS.Zones, {
 					q(33335, {	-- The Last Emperor
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
 						["provider"] = { "n", 72870 },	-- Kairoz
-					}),
-					q(33020, {	-- The Lost Secret of the Secret Ingredient
-						["sourceQuests"] = { 33018 },	-- Noodle Secrets Long Forgotten
-						["provider"] = { "n", 72426 },	-- Lin Chao-Wei
 					}),
 					q(33228, {	-- Time In Your Hands
 						["sourceQuests"] = {

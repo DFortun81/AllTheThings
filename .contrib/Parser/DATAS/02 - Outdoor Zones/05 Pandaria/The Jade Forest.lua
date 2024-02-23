@@ -2640,31 +2640,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(VENDORS, {
-					n(56707, {	-- Chin <Master of Noodles>
-						["coord"] = { 46.2, 45.4, THE_JADE_FOREST },
-						["g"] = {
-							recipe(124233),	-- Blanched Needle Mushrooms
-							recipe(124228),	-- Boiled Silkworm Pupa
-							recipe(124227),	-- Dried Needle Mushrooms
-							recipe(124226),	-- Dried Peaches
-							recipe(104297),	-- Fish Cake
-							recipe(104237),	-- Golden Carp Consomme
-							recipe(124231),	-- Green Curry Fish
-							recipe(124232),	-- Peach Pie
-							recipe(125080),	-- Pearl Milk Tea
-							recipe(125067),	-- Perfectly Cooked Instant Noodles
-							recipe(124223),	-- Pounded Rice Cake
-							recipe(124229),	-- Red Bean Bun
-							recipe(125122),	-- Rice Pudding
-							recipe(125078),	-- Roasted Barley Tea
-							recipe(124234),	-- Skewered Peanut Chicken
-							recipe(125117),	-- Sliced Peaches
-							recipe(124230),	-- Tangy Yogurt
-							recipe(124225),	-- Toasted Fish Jerky
-							recipe(125121),	-- Wildfowl Ginseng Soup
-							recipe(124224),	-- Yak Cheese Curds
-						},
-					}),
 					n(56687, {	-- Metalworker Sashi <Trade Goods>
 						["coord"] = { 58.1, 83.6, THE_JADE_FOREST },
 						["races"] = ALLIANCE_ONLY,

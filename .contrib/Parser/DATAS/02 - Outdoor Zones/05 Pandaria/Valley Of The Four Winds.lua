@@ -947,6 +947,38 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				}),
+				n(PROFESSIONS, {
+					prof(COOKING, {
+						n(58713, {	-- Anthea Ironpaw <Master of the Wok>
+							["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = WAY_OF_THE_WOK,
+						}),
+						n(58717, {	-- Bobo Ironpaw <Master of the Brew>
+							["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = WAY_OF_THE_BREW,
+						}),
+						n(58716, {	-- Jian Ironpaw <Master of the Oven>
+							["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = WAY_OF_THE_OVEN,
+						}),
+						n(58712, {	-- Kol Ironpaw <Master of the Grill>
+							["coord"] = { 53.0, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = WAY_OF_THE_GRILL,
+						}),
+						n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
+							["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = WAY_OF_THE_POT,
+						}),
+						n(64231, {	-- Sungshin Ironpaw <Guide to the Ways>
+							["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = MOP_COOKING,
+						}),
+						n(58715, {	-- Yan Ironpaw <Master of the Steamer>
+							["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = WAY_OF_THE_STEAMER,
+						}),
+					}),
+				}),
 				n(QUESTS, {
 					prof(COOKING, {
 						["requireSkill"] = COOKING,
@@ -962,28 +994,10 @@ root(ROOTS.Zones, {
 									i(90735),	-- Goodies from Nomi
 								},
 							}),
-							q(31471, {	-- Agile as a Tiger
-								["sourceQuests"] = { 31470 },	-- Way of the Wok
-								["provider"] = { "n", 58713 },	-- Anthea Ironpaw
-								["coord"] = { 52.7, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-							q(33022, {	-- Catch and Carry
-								["sourceQuests"] = { 33021 },	-- Secrets Lost, Forever?
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["g"] = {
-									recipe(145038),	-- Noodle Cart Kit
-								},
-							}),
 							q(30329, {	-- Cindergut Peppers
 								["isDaily"] = true,
 								["coord"] = { 52.7, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 								["provider"] = { "n", 58713 },	-- Anthea Ironpaw
-							}),
-							q(31477, {	-- Endurance
-								["sourceQuests"] = { 31478 },	-- Way of the Oven
-								["provider"] = { "n", 58716 },	-- Jian Ironpaw
-								["coord"] = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 							q(31486, {	-- Everything I Know About Cooking (A)
 							--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
@@ -1013,19 +1027,6 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 58712 },	-- Kol Ironpaw
 								["isDaily"] = true,
 								["coord"] = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-							q(31480, {	-- Have a Drink
-								["sourceQuests"] = { 31479 },	-- Way of the Brew
-								["provider"] = { "n", 58717 },	-- Bobo Ironpaw
-								["coord"] = { 53.2, 52.2, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-							q(33024, {	-- Is That A Real Measurement?
-								["sourceQuests"] = { 33022 },	-- Catch and Carry
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["g"] = {
-									recipe(145061),	-- Deluxe Noodle Cart Kit
-								},
 							}),
 							q(31332, {	-- Lesson 1: Sliced Peaches
 								["isDaily"] = true,
@@ -1072,65 +1073,16 @@ root(ROOTS.Zones, {
 								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 							}),
-							q(31536, {	-- Preserving Freshness
-								["sourceQuests"] = {
-									31471,	-- Agile as a Tiger
-									31477,	-- Endurance
-									31480,	-- Have a Drink
-									31467,	-- Strong as a Tiger
-									31474,	-- The Soup of Contemplation
-									31476,	-- The Spirit of Cooking
-								},
-								["provider"] = { "n", 64395 },	-- Nam Ironpaw
-								["coord"] = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-							q(31302, {	-- Ready for Greatness
-								["sourceQuests"] = { 31281 },	-- So You Want to be a Chef...
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-							}),
 							q(31535, {	-- Replenishing the Pantry
 								["sourceQuests"] = { 31536 },	-- Preserving Freshness
 								["repeatable"] = true,
 								["provider"] = { "n", 64395 },	-- Nam Ironpaw
 								["coord"] = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 							}),
-							q(33021, {	-- Secrets Lost, Forever?
-								["sourceQuests"] = { 33107 },	-- Bad Feeling, Worse Result
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-							}),
-							q(31281, {	-- So You Want to Be a Chef...
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-							q(31467, {	-- Strong as a Tiger
-								["sourceQuests"] = { 31311 },	-- Way of the Grill
-								["provider"] = { "n", 58712 },	-- Kol Ironpaw
-								["coord"] = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
-							}),
 							q(30331, {	-- The Mile-High Grub
 								["provider"] = { "n", 58714 },	-- Mei Mei Ironpaw
 								["isDaily"] = true,
 								["coord"] = { 52.5, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-							q(33027, {	-- The Secret Ingredient Is...
-								["sourceQuests"] = { 33026 },	-- These Aren't Your Fatty Goatsteaks
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["g"] = {
-									recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
-								},
-							}),
-							q(31474, {	-- The Soup of Contemplation
-								["sourceQuests"] = { 31472 },	-- Way of the Pot
-								["provider"] = { "n", 58714 },	-- Mei Mei Ironpaw
-								["coord"] = { 52.5, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-							q(31476, {	-- The Spirit of Cooking
-								["sourceQuests"] = { 31475 },	-- Way of the Steamer
-								["provider"] = { "n", 58715 },	-- Yan Ironpaw
-								["coord"] = { 52.5, 51.7, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 							q(30328, {	-- The Thousand-Year Dumpling
 								["isDaily"] = true,
@@ -1143,63 +1095,10 @@ root(ROOTS.Zones, {
 								["isDaily"] = true,
 								["coord"] = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 							}),
-							q(33026, {	-- These Aren't Your Fatty Goatsteaks
-								["sourceQuests"] = { 33024 },	-- Is That a Real Measurement?
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-							}),
 							q(31521, {	-- To Be a Master
 								["description"] = "You must master all 6 Pandaren cooking ways for this quest to become available.",
 								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-							}),
-							q(31479, {	-- Way of the Brew
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["g"] = {
-									sp(125589),	-- Way of the Brew
-								},
-							}),
-							q(31311, {	-- Way of the Grill
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["g"] = {
-									sp(124694),	-- Way of the Grill
-								},
-							}),
-							q(31478, {	-- Way of the Oven
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["g"] = {
-									sp(125588),	-- Way of the Oven
-								},
-							}),
-							q(31472, {	-- Way of the Pot
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["g"] = {
-									sp(125586),	-- Way of the Pot
-								},
-							}),
-							q(31475, {	-- Way of the Steamer
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["g"] = {
-									sp(125587),	-- Way of the Steamer
-								},
-							}),
-							q(31470, {	-- Way of the Wok
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
-								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["g"] = {
-									sp(125584),	-- Way of the Wok
-								},
 							}),
 						},
 					}),
@@ -5621,13 +5520,13 @@ root(ROOTS.Zones, {
 								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
 							}),
 							i(92748, {	-- Portable Refrigerator
-								["cost"] = { { "c", 402, MONK }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
 							}),
 							i(75017, {	-- Recipe: Great Pandaren Banquet (RECIPE!)
-								["cost"] = { { "c", 402, MONK }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
 							}),
 							i(75013, {	-- Recipe: Pandaren Banquet (RECIPE!)
-								["cost"] = { { "c", 402, MONK }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
 							}),
 							i(86558, {	-- Rolling Pin
 								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
@@ -6350,32 +6249,6 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 								}),
 							}),
-						},
-					}),
-					n(64231, {	-- Sungshin Ironpaw <Guide to the Ways>
-						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-						["g"] = {
-							-- TODO: https://www.wowhead.com/npc=64231/sungshin-ironpaw#starts
-							recipe(124233),	-- Blanched Needle Mushrooms
-							recipe(124228),	-- Boiled Silkworm Pupa
-							recipe(124227),	-- Dried Needle Mushrooms
-							recipe(124226),	-- Dried Peaches
-							recipe(104297),	-- Fish Cake
-							recipe(104237),	-- Golden Carp Consomme
-							recipe(124231),	-- Green Curry Fish
-							recipe(124232),	-- Peach Pie
-							recipe(125080),	-- Pearl Milk Tea
-							recipe(125067),	-- Perfectly Cooked Instant Noodles
-							recipe(124223),	-- Pounded Rice Cake
-							recipe(124229),	-- Red Bean Bun
-							recipe(125122),	-- Rice Pudding
-							recipe(125078),	-- Roasted Barley Tea
-							recipe(124234),	-- Skewered Peanut Chicken
-							recipe(125117),	-- Sliced Peaches
-							recipe(124230),	-- Tangy Yogurt
-							recipe(124225),	-- Toasted Fish Jerky
-							recipe(125121),	-- Wildfowl Ginseng Soup
-							recipe(124224),	-- Yak Cheese Curds
 						},
 					}),
 					n(59583, {	-- Trader Jambeezi <Adventuring Supplies>

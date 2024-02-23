@@ -5,14 +5,7 @@
 -- Ex: Goblin Engineering, Gnomish Engineering, etc.
 
 -----------------
-local i = GetRecipeHelperForProfession(COOKING);
------------------
--- #IF AFTER MOP
-i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun (RECIPE!)
--- #ENDIF
-
------------------
-i = GetRecipeHelperForProfession(JEWELCRAFTING);
+local i = GetRecipeHelperForProfession(JEWELCRAFTING);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC

@@ -301,37 +301,15 @@ i(78342, 6417);		-- Dig Rat Stew
 -----------------
 -- PATCH 5.0.4 --
 -----------------
--- TRAINER --
-i(0, 125602);	-- Banquet of the Brew
-i(0, 125141);	-- Banquet of the Grill
-i(0, 125600);	-- Banquet of the Oven
-i(0, 125596);	-- Banquet of the Pot
-i(0, 125598);	-- Banquet of the Steamer
-i(0, 125594);	-- Banquet of the Wok
-i(0, 104300);	-- Black Pepper Ribs and Shrimp
+--- TRAINER ---
+i(0, 104381);	-- Cooking (Zen Master) [REMOVED: 8.0.1]
 i(0, 124233);	-- Blanched Needle Mushrooms
 i(0, 124228);	-- Boiled Silkworm Pupa
-i(0, 104305);	-- Braised Turtle
-i(0, 104298);	-- Charbroiled Tiger Steak
-i(0, 104312);	-- Chun Tian Spring Rolls
-i(0, 104381);	-- Cooking (Zen Master) [REMOVED 8.0.1]
 i(0, 124227);	-- Dried Needle Mushrooms
 i(0, 124226);	-- Dried Peaches
-i(0, 104299);	-- Eternal Blossom Fish
-i(0, 104308);	-- Fire Spirit Salmon
 i(0, 104297);	-- Fish Cake
-i(0, 124052);	-- Ginseng Tea
 i(0, 104237);	-- Golden Carp Consomme
-i(0, 125603);	-- Great Banquet of the Brew
-i(0, 125142);	-- Great Banquet of the Grill
-i(0, 125601);	-- Great Banquet of the Oven
-i(0, 125597);	-- Great Banquet of the Pot
-i(0, 125599);	-- Great Banquet of the Steamer
-i(0, 125595);	-- Great Banquet of the Wok
 i(0, 124231);	-- Green Curry Fish
-i(0, 124053);	-- Jade Witch Brew
-i(0, 124054);	-- Mad Brewer's Breakfast
-i(0, 104306);	-- Mogu Fish Stew
 i(0, 124232);	-- Peach Pie
 i(0, 125080);	-- Pearl Milk Tea
 i(0, 125067);	-- Perfectly Cooked Instant Noodles
@@ -339,22 +317,56 @@ i(0, 124223);	-- Pounded Rice Cake
 i(0, 124229);	-- Red Bean Bun
 i(0, 125122);	-- Rice Pudding
 i(0, 125078);	-- Roasted Barley Tea
-i(0, 104301);	-- Sauteed Carrots
-i(0, 104303);	-- Sea Mist Rice Noodles
-i(0, 104307);	-- Shrimp Dumplings
 i(0, 124234);	-- Skewered Peanut Chicken
 i(0, 125117);	-- Sliced Peaches
-i(0, 104309);	-- Steamed Crab Surprise
-i(0, 104304);	-- Swirling Mist Soup
 i(0, 124230);	-- Tangy Yogurt
 i(0, 124225);	-- Toasted Fish Jerky
-i(0, 104311);	-- Twin Fish Platter
-i(0, 104302);	-- Valley Stir Fry
 i(0, 125121);	-- Wildfowl Ginseng Soup
-i(0, 104310);	-- Wildfowl Roast
 i(0, 124224);	-- Yak Cheese Curds
--- ITEM --
-i(87266, 126655);	-- Banana Infused Rum / Banana-Infused Rum
+--- BREW ---
+i(0, 125589);	-- Way of the Brew
+i(0, 125602);	-- Banquet of the Brew
+i(0, 124052);	-- Ginseng Tea
+i(0, 125603);	-- Great Banquet of the Brew
+i(0, 124053);	-- Jade Witch Brew
+i(0, 124054);	-- Mad Brewer's Breakfast
+--- GRILL ---
+i(0, 124694);	-- Way of the Grill
+i(0, 125141);	-- Banquet of the Grill
+i(0, 104300);	-- Black Pepper Ribs and Shrimp
+i(0, 104298);	-- Charbroiled Tiger Steak
+i(0, 104299);	-- Eternal Blossom Fish
+i(0, 125142);	-- Great Banquet of the Grill
+--- OVEN ---
+i(0, 125588);	-- Way of the Oven
+i(0, 125600);	-- Banquet of the Oven
+i(0, 104312);	-- Chun Tian Spring Rolls
+i(0, 125601);	-- Great Banquet of the Oven
+i(0, 104311);	-- Twin Fish Platter
+i(0, 104310);	-- Wildfowl Roast
+--- POT ---
+i(0, 125586);	-- Way of the Pot
+i(0, 125596);	-- Banquet of the Pot
+i(0, 104305);	-- Braised Turtle
+i(0, 125597);	-- Great Banquet of the Pot
+i(0, 104306);	-- Mogu Fish Stew
+i(0, 104307);	-- Shrimp Dumplings
+--- STEAMER ---
+i(0, 125587);	-- Way of the Steamer
+i(0, 125598);	-- Banquet of the Steamer
+i(0, 104308);	-- Fire Spirit Salmon
+i(0, 125599);	-- Great Banquet of the Steamer
+i(0, 104309);	-- Steamed Crab Surprise
+i(0, 104304);	-- Swirling Mist Soup
+--- WOK ---
+i(0, 125584);	-- Way of the Wok
+i(0, 125594);	-- Banquet of the Wok
+i(0, 125595);	-- Great Banquet of the Wok
+i(0, 104301);	-- Sauteed Carrots
+i(0, 104303);	-- Sea Mist Rice Noodles
+i(0, 104302);	-- Valley Stir Fry
+--- ITEM ---
+i(87266, 126655);	-- Banana-Infused Rum
 i(86393, 126654);	-- Four Senses Brew
 i(75017, 105194);	-- Great Pandaren Banquet
 i(85505, 124032);	-- Krasarang Fritters
@@ -362,13 +374,6 @@ i(75013, 105190);	-- Pandaren Banquet
 i(74657, 125120);	-- Spicy Salmon
 i(74658, 125123);	-- Spicy Vegetable Chips
 i(85502, 124029);	-- Viseclaw Soup
--- QUEST --
-i(0, 125589);	-- Way of the Brew
-i(0, 124694);	-- Way of the Grill
-i(0, 125588);	-- Way of the Oven
-i(0, 125586);	-- Way of the Pot
-i(0, 125587);	-- Way of the Steamer
-i(0, 125584);	-- Way of the Wok
 -- NYI --
 i(0, 125889);	-- Apprentice Cookbook
 i(0, 125898);	-- Journeyman Cookbook
@@ -376,14 +381,14 @@ i(0, 125898);	-- Journeyman Cookbook
 -----------------
 -- PATCH 5.4.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(101768, 145309);	-- Farmer's Delight
 i(101770, 145311);	-- Fluffy Silkfeather Omelet
 i(101767, 145308);	-- Mango Ice
 i(101765, 145305);	-- Seasoned Pomfruit Slices
 i(101766, 145307);	-- Spiced Blossom Soup
 i(101769, 145310);	-- Stuffed Lushrooms
--- QUEST --
+--- QUEST ---
 i(0, 145061);	-- Deluxe Noodle Cart Kit
 i(0, 145038);	-- Noodle Cart Kit
 i(0, 145062);	-- Pandaren Treasure Noodle Cart Kit

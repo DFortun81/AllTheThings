@@ -386,6 +386,75 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(94579, {["timeline"] = {ADDED_5_2_0}}),	-- Wicked Edge of the Planes, Reborn
 		}),
 	}),
+	prof(COOKING, {
+		i(86432),	-- Banana-Infused Rum
+		i(87246),	-- Banquet of the Brew
+		i(87226),	-- Banquet of the Grill
+		i(87242),	-- Banquet of the Oven
+		i(87234),	-- Banquet of the Pot
+		i(87238),	-- Banquet of the Steamer
+		i(87230),	-- Banquet of the Wok
+		i(74646),	-- Black Pepper Ribs and Shrimp
+		i(81412),	-- Blanched Needle Mushrooms
+		i(81405),	-- Boiled Silkworm Pupa
+		i(74649),	-- Braised Turtle
+		i(74642),	-- Charbroiled Tiger Steak
+		i(74656),	-- Chun Tian Spring Rolls
+		i(101661, {["timeline"] = {ADDED_5_4_0}}),	-- Deluxe Noodle Cart Kit
+		i(81404),	-- Dried Needle Mushrooms
+		i(81403),	-- Dried Peaches
+		i(74645),	-- Eternal Blossom Fish
+		i(101747, {["timeline"] = {ADDED_5_4_0}}),	-- Farmer's Delight
+		i(74652),	-- Fire Spirit Salmon
+		i(74641),	-- Fish Cake
+		i(101750, {["timeline"] = {ADDED_5_4_0}}),	-- Fluffy Silkfeather Omelet
+		i(87264),	-- Four Senses Brew
+		i(75026),	-- Ginseng Tea
+		i(74636),	-- Golden Carp Consomme
+		i(87248),	-- Great Banquet of the Brew
+		i(87228),	-- Great Banquet of the Grill
+		i(87244),	-- Great Banquet of the Oven
+		i(87236),	-- Great Banquet of the Pot
+		i(87240),	-- Great Banquet of the Steamer
+		i(87232),	-- Great Banquet of the Wok
+		i(75016),	-- Great Pandaren Banquet
+		i(81410),	-- Green Curry Fish
+		i(75037),	-- Jade Witch Brew
+		i(85504),	-- Krasarang Fritters
+		i(75038),	-- Mad Brewer's Breakfast
+		i(101745, {["timeline"] = {ADDED_5_4_0}}),	-- Mango Ice
+		i(74650),	-- Mogu Fish Stew
+		i(101630, {["timeline"] = {ADDED_5_4_0}}),	-- Noodle Cart Kit
+		i(74919),	-- Pandaren Banquet
+		i(101662, {["timeline"] = {ADDED_5_4_0}}),	-- Pandaren Treasure Noodle Cart Kit
+		i(81411),	-- Peach Pie
+		i(81414),	-- Pearl Milk Tea
+		i(86026),	-- Perfectly Cooked Instant Noodles
+		i(81400),	-- Pounded Rice Cake
+		i(81408),	-- Red Bean Bun
+		i(86069),	-- Rice Pudding
+		i(81406),	-- Roasted Barley Tea
+		i(74643),	-- Sauteed Carrots
+		i(74648),	-- Sea Mist Rice Noodles
+		i(101746, {["timeline"] = {ADDED_5_4_0}}),	-- Seasoned Pomfruit Slices
+		i(74651),	-- Shrimp Dumplings
+		i(81413),	-- Skewered Peanut Chicken
+		i(86057),	-- Sliced Peaches
+		i(101748, {["timeline"] = {ADDED_5_4_0}}),	-- Spiced Blossom Soup
+		i(86073),	-- Spicy Salmon
+		i(86074),	-- Spicy Vegetable Chips
+		i(74653),	-- Steamed Crab Surprise
+		i(101749, {["timeline"] = {ADDED_5_4_0}}),	-- Stuffed Lushrooms
+		i(74644),	-- Swirling Mist Soup
+		i(81409),	-- Tangy Yogurt
+		i(81402),	-- Toasted Fish Jerky
+		i(74655),	-- Twin Fish Platter
+		i(74647),	-- Valley Stir Fry
+		i(85501),	-- Viseclaw Soup
+		i(86070),	-- Wildfowl Ginseng Soup
+		i(74654),	-- Wildfowl Roast
+		i(81401),	-- Yak Cheese Curds
+	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
 			i(74247),	-- Ethereal Shard

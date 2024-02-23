@@ -25,7 +25,7 @@ root(ROOTS.NeverImplemented, {
 	filter(MISC),
 	filter(MOUNTS),					-- completed up to 10.2.5
 	n(PROFESSIONS, {
-		prof(ALCHEMY),
+		prof(ALCHEMY),				-- completed up to 10.2.5
 		prof(ARCANA_MANIPULATION),	-- completed up to 10.2.5
 		prof(ASCENSION_CRAFTING),	-- completed up to 10.2.5
 		prof(BLACKSMITHING),
