@@ -4,11 +4,7 @@ WEAPONS = createHeader({
 	-- #if NOT ANYCLASSIC
 	export = true,	-- This is referenced in the pvp_weapons symlink
 	-- #endif
-	-- #if AFTER WOD
-	icon = "Interface\\Icons\\garrison_purpleweapon",
-	-- #else
-	icon = "Interface\\Icons\\INV_Sword_23",
-	-- #endif
+	icon = [[~_.asset("Weapon_Type_Epic")]],
 	text = {
 		en = [[~AUCTION_CATEGORY_WEAPONS]],
 	},

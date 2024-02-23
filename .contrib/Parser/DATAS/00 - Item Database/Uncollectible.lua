@@ -70,7 +70,6 @@ i(141013);	-- Scroll of Town Portal: Shala'nir
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(118905);	-- Sinister Spores
-i(180318);	-- Soulful Mana Potion
 i(169856);	-- Spark-1351
 i(168271);	-- Stolen Ramkahen Banner
 i(119216);	-- Super Sticky Glitter Bomb
@@ -775,6 +774,7 @@ i(180228);	-- Self-Help Book
 i(179308);	-- Shadeskin Brandy Phial
 i(183799);	-- Shifting Catalyst
 i(180223);	-- Sinstone Archival Records
+i(180318);	-- Soulful Mana Potion
 i(178150);	-- Tasty Purian
 i(184759);	-- Tasty Purian
 i(180229);	-- Tubbins's Autobiography
