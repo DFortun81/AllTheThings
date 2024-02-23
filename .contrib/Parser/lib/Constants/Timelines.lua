@@ -362,3 +362,6 @@ REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on
 CREATED_11_0_0 = "created 11.0.0";						-- The War Within 11.0.0/Pre-Patch Launch on
 ADDED_11_0_0 = "added 11.0.0";							-- The War Within 11.0.0/Pre-Patch Launch on
 REMOVED_11_0_0 = "removed 11.0.0.";						-- The War Within 11.0.0/Pre-Patch Launch on
+CREATED_11_0_0_LAUNCH = "created 11.0.0";				-- The War Within Launch on
+ADDED_11_0_0_LAUNCH = "added 11.0.0";					-- The War Within Launch on
+REMOVED_11_0_0_LAUNCH = "removed 11.0.0.";				-- The War Within Launch on
