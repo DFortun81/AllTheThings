@@ -9385,7 +9385,7 @@ RowOnEnter = function (self)
 		if modded ~= modifier then
 			tooltip.ATT_IsModifierKeyDown = modifier;
 			--print("Modifier change detected!", modded, modifier);
-		else
+		elseif tooltip.ATTAttachComplete == true then
 			--print("Ignoring refresh.");
 			return;
 		end
