@@ -9382,7 +9382,7 @@ RowOnEnter = function (self)
 		if modded ~= modifier then
 			tooltip.ATT_IsModifierKeyDown = modifier;
 			--print("Modifier change detected!", modded, modifier);
-		elseif tooltip.ATTAttachComplete == true then
+		elseif tooltip.ATT_AttachComplete == true then
 			--print("Ignoring refresh.");
 			return;
 		end
@@ -9424,7 +9424,7 @@ RowOnEnter = function (self)
 		end
 		
 		-- Only if the link was unsuccessful.
-		if (not linkSuccessful or tooltip.ATTAttachComplete == nil) and reference.currencyID then
+		if (not linkSuccessful or tooltip.ATT_AttachComplete == nil) and reference.currencyID then
 			tooltip:SetCurrencyByID(reference.currencyID, 1);
 		end
 	end
@@ -9676,7 +9676,7 @@ RowOnEnter = function (self)
 	end
 
 	-- Additional information (search will insert this information if found in search)
-	if tooltip.ATTAttachComplete == nil then
+	if tooltip.ATT_AttachComplete == nil then
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
 			tinsert(tooltipInfo, {
@@ -9691,7 +9691,7 @@ RowOnEnter = function (self)
 		app.ProcessInformationTypes(tooltipInfo, reference);
 
 		-- Tooltip for something which was not attached via search, so mark it as complete here
-		tooltip.ATTAttachComplete = true;
+		tooltip.ATT_AttachComplete = true;
 	end
 
 	-- Has a symlink for additonal information
@@ -10137,6 +10137,7 @@ end
 RowOnLeave = function (self)
 	local tooltip = GameTooltip;
 	app.ActiveRowReference = nil;
+	tooltip.ATT_AttachComplete = nil;
 	tooltip.ATT_IsRefreshing = nil;
 	tooltip.ATT_IsModifierKeyDown = nil;
 	tooltip:ClearATTReferenceTexture();

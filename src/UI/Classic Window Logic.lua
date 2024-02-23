@@ -769,7 +769,7 @@ local function RowOnEnter(self)
 		if modded ~= modifier then
 			tooltip.ATT_IsModifierKeyDown = modifier;
 			--print("Modifier change detected!");
-		elseif tooltip.ATTAttachComplete == true then
+		elseif tooltip.ATT_AttachComplete == true then
 			--print("Ignoring refresh.");
 			return;
 		end
@@ -812,7 +812,7 @@ local function RowOnEnter(self)
 		end
 		
 		-- Only if the link was unsuccessful.
-		if (not linkSuccessful or tooltip.ATTAttachComplete == nil) and reference.currencyID then
+		if (not linkSuccessful or tooltip.ATT_AttachComplete == nil) and reference.currencyID then
 			tooltip:SetCurrencyByID(reference.currencyID, 1);
 		end
 	end
@@ -1006,9 +1006,9 @@ local function RowOnEnter(self)
 	end
 	
 	-- Process all Information Types
-	if tooltip.ATTAttachComplete == nil then
+	if tooltip.ATT_AttachComplete == nil then
 		app.ProcessInformationTypes(tooltipInfo, reference);
-		tooltip.ATTAttachComplete = true;
+		tooltip.ATT_AttachComplete = true;
 	end
 	
 	-- Show Breadcrumb information
@@ -1146,6 +1146,7 @@ end
 local function RowOnLeave(self)
 	local tooltip = GameTooltip;
 	app.ActiveRowReference = nil;
+	tooltip.ATT_AttachComplete = nil;
 	tooltip.ATT_IsRefreshing = nil;
 	tooltip.ATT_IsModifierKeyDown = nil;
 	tooltip:ClearATTReferenceTexture();

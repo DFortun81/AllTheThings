@@ -488,7 +488,7 @@ end
 local function ClearTooltip(tooltip)
 	-- app.PrintDebug("Clear Tooltip",tooltip:GetName());
 	tooltip.AllTheThingsProcessing = nil;
-	tooltip.ATTAttachComplete = nil;
+	tooltip.ATT_AttachComplete = nil;
 end
 local function AttachTooltipRawSearchResults(tooltip, lineNumber, group)
 	if not group then return end
@@ -499,7 +499,7 @@ local function AttachTooltipRawSearchResults(tooltip, lineNumber, group)
 
 	-- If there was info text generated for this search result, then display that first.
 	AttachTooltipInformation(tooltip, group.tooltipInfo);
-	tooltip.ATTAttachComplete = not group.working;
+	tooltip.ATT_AttachComplete = not group.working;
 end
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
@@ -789,7 +789,7 @@ if TooltipDataProcessor then
 		if GameTooltip and GameTooltip:IsVisible() then
 			-- app.PrintDebug("Auto-refresh tooltip")
 			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
-			GameTooltip.ATTAttachComplete = nil;
+			GameTooltip.ATT_AttachComplete = nil;
 			GameTooltip:Show();
 		end
 	end
