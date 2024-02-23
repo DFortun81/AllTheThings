@@ -10,6 +10,7 @@ local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
 local GetCompletionIcon = app.GetCompletionIcon;
 local GetCompletionText = app.GetCompletionText;
+local GetCollectionText = app.GetCollectionText;
 local GetProgressTextForRow = app.GetProgressTextForRow;
 local GetProgressTextForTooltip = app.GetProgressTextForTooltip;
 local GetRelativeValue = app.GetRelativeValue;

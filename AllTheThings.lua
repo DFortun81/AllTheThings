@@ -711,6 +711,7 @@ local function GetProgressTextForTooltip(data)
 end
 app.GetCollectionIcon = GetCollectionIcon;
 app.GetCompletionIcon = GetCompletionIcon;
+app.GetCollectionText = GetCollectionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
 
 -- Fields which are dynamic or pertain only to the specific ATT window and should never merge automatically
