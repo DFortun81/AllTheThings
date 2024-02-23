@@ -14361,6 +14361,10 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 								-- if mapID == 1355 then
 									-- app.PrintDebug("WQ",questObject.questID);
 								-- end
+								-- add the map POI coords to our new quest object
+								if poi.x and poi.y then
+									questObject.coords = {{ 100 * poi.x, 100 * poi.y, mapID }}
+								end
 								NestObject(mapObject, questObject);
 								-- see if need to retry based on missing data
 								-- if not self.retry and questObject.missingData then self.retry = true; end
