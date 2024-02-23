@@ -1431,6 +1431,7 @@ i(192664);	-- Serrated Pincer
 i(201182);	-- Serrated Stone
 i(192666);	-- Severed Roots
 i(200843);	-- Severely Chipped Broadsword
+i(202107);	-- Shadowscrawled Coin
 i(192632);	-- Sharp Bird Talon
 i(199206);	-- Shattered Adamant Scales
 i(201207);	-- Shells in a Conch
@@ -1522,6 +1523,8 @@ i(5956);	-- Blacksmith Hammer
 i(85663);	-- Herbalist's Spade
 i(2901);	-- Mining Pick
 i(7005);	-- Skinning Knife
+--- Vendor ---
+i(203478);	-- Field Deployable Heat Source
 
 ------------------
 -- PATCH 10.0.7 --

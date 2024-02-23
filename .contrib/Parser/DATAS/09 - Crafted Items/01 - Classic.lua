@@ -65,6 +65,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(929),		-- Healing Potion
 			i(6051),	-- Holy Protection Potion
 			i(9172),	-- Invisibility Potion
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217398)),	-- Lesser Arcane Elixir
+			-- #endif
 			i(858),		-- Lesser Healing Potion
 			i(3823),	-- Lesser Invisibility Potion
 			i(3385),	-- Lesser Mana Potion

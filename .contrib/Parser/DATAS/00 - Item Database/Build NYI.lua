@@ -3,14 +3,14 @@ root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER),
 	tier(SL_TIER),
 	tier(DF_TIER),
-	n(ACHIEVEMENTS),
+	n(ACHIEVEMENTS),				-- completed up to 10.2.5
 	n(ARMOR),
 	filter(BAGS),
 	filter(BATTLE_PETS),			-- completed up to 10.2.5
 	n(CONDUITS),
 	filter(CONSUMABLES),
 	filter(COSMETIC),
-	n(FACTIONS),
+	n(FACTIONS),					-- completed up to 10.2.5
 	n(FLIGHT_PATHS),				-- completed up to 10.2.5
 	n(FOLLOWERS, {					-- completed up to 10.2.5
 		["timeline"] = { "added 6.0.1" },
@@ -28,8 +28,8 @@ root(ROOTS.NeverImplemented, {
 		prof(ALCHEMY),				-- completed up to 10.2.5
 		prof(ARCANA_MANIPULATION),	-- completed up to 10.2.5
 		prof(ASCENSION_CRAFTING),	-- completed up to 10.2.5
-		prof(BLACKSMITHING),
-		prof(COOKING),
+		prof(BLACKSMITHING),		-- completed up to 10.2.5
+		prof(COOKING),				-- completed up to 10.2.5
 		prof(ENCHANTING),			-- completed up to 10.2.5
 		prof(ENGINEERING),
 		prof(FISHING),

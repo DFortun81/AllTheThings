@@ -413,6 +413,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["g"] = {
 						ach(17779),	-- A Serpentine Discovery
 						i(204361),	-- Winding Slitherdrake (MOUNT!)
+						i(205992),	-- Regurgitated Half-Digested Fish
 					},
 				}),
 				------ Chapter 5 ------

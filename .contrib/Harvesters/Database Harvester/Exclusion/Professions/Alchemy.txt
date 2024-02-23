@@ -1,5 +1,6 @@
 426607@@@Elixir of Coalesced Regret [Classic]
 435969@@@Insulating Gniodine [Classic]
+439960@@@Lesser Arcane Elixir [Classic]
 435971@@@Mildly Irradiated Rejuvenation Potion [Classic]
 11454@@@Inlaid Mithril Cylinder
 110955@@@Release Spirit

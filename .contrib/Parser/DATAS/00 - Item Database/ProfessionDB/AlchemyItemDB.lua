@@ -12,6 +12,7 @@ i(210709, 426607);	-- Elixir of Coalesced Regret
 ------------------
 --- ITEM ---
 i(215433, 435969);	-- Insulating Gniodine
+i(217399, 439960);	-- Lesser Arcane Elixir
 i(215163, 435971);	-- Mildly Irradiated Rejuvenation Potion
 -- #endif
 
