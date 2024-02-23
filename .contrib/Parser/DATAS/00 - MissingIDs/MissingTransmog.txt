@@ -5325,9 +5325,6 @@ s(161349)/i(14218),	-- ancer's Boots \\ Geomancer's Boots
 s(161350)/i(14219),	-- ancer's Cloak \\ Geomancer's Cloak
 s(161351)/i(14220),	-- ancer's Cap \\ Geomancer's Cap
 s(161352)/i(14221),	-- ancer's Bracers \\ Geomancer's Bracers
-s(161353)/i(14222),	-- ancer's Gloves \\ Geomancer's Gloves
-s(161354)/i(14223),	-- ancer's Spaulders \\ Geomancer's Spaulders
-s(161355)/i(14224),	-- ancer's Trousers \\ Geomancer's Trousers
 s(161356)/i(14225),	-- ancer's Wraps \\ Geomancer's Wraps
 s(161357)/i(14226),	-- rsilk Bracelets \\ Embersilk Bracelets
 s(161358)/i(14228),	-- rsilk Coronet \\ Embersilk Coronet
@@ -8834,7 +8831,6 @@ s(164858)/i(22215),	-- Monster - Dagger, Bonescraper
 s(164859)/i(22223),	-- man's Head Protector \\ Foreman's Head Protector
 s(164860)/i(22225),	-- onskin Cowl \\ Dragonskin Cowl
 s(164861)/i(22230),	-- htmaw Hide \\ Frightmaw Hide
-s(164862)/i(22231),	-- er's Boots of Precision \\ Kayser's Boots of Precision
 s(164863)/i(22232),	-- sman's Girdle \\ Marksman's Girdle
 s(164864)/i(22234),	-- le of Lost Hope \\ Mantle of Lost Hope
 s(164865)/i(22240),	-- ves of Withering Despair \\ Greaves of Withering Despair
@@ -15371,7 +15367,6 @@ s(126815)/i(14839),	-- nt's Greaves \\ Tyrant's Greaves
 s(126816)/i(14840),	-- nt's Legplates \\ Tyrant's Legplates
 s(126817)/i(14841),	-- nt's Epaulets \\ Tyrant's Epaulets
 s(126818)/i(14842),	-- nt's Shield \\ Tyrant's Shield
-s(126819)/i(14843),	-- nt's Helm \\ Tyrant's Helm
 s(126820)/i(14844),	-- cale Chestguard \\ Sunscale Chestguard
 s(126821)/i(14845),	-- Monster - Staff, Wooden Handle Rounded Head Low Yellow Glow
 s(126822)/i(14846),	-- cale Gauntlets \\ Sunscale Gauntlets
@@ -16179,7 +16174,6 @@ s(127753)/i(15862),	-- zcleaver \\ Blitzcleaver
 s(127754)/i(15863),	-- e Scepter \\ Grave Scepter
 s(127755)/i(15864),	-- or Bracers \\ Condor Bracers
 s(127756)/i(15865),	-- orhold Buckler \\ Anchorhold Buckler
-s(127757)/i(15866),	-- dust Medicine Bag \\ Veildust Medicine Bag
 s(127778)/i(15887),	-- ic Guard \\ Heroic Guard
 s(127779)/i(15890),	-- uard Shield \\ Vanguard Shield
 s(127780)/i(15891),	-- ing Shield \\ Hulking Shield
@@ -18177,7 +18171,6 @@ s(131777)/i(21338),	-- caller's Footwraps \\ Doomcaller's Footwraps
 s(131778)/i(21339),	-- Doomcaller's Handwraps [PH]
 s(131782)/i(21343),	-- ma Robes \\ Enigma Robes
 s(131783)/i(21344),	-- ma Boots \\ Enigma Boots
-s(131784)/i(21345),	-- ma Shoulderpads \\ Enigma Shoulderpads
 s(131785)/i(21346),	-- ma Leggings \\ Enigma Leggings
 s(131786)/i(21347),	-- ma Circlet \\ Enigma Circlet
 s(131787)/i(21348),	-- a of the Oracle \\ Tiara of the Oracle
@@ -53277,6 +53270,9 @@ s(69052)/i(122130),	--
 s(69053)/i(122131),	--
 s(69057)/i(122149),	--
 s(69058)/i(122151),	--
+s(69078)/i(120978),	-- Ashbringer \\ ringer
+s(69079)/i(120978),	-- Ashbringer \\ ringer
+s(69080)/i(120978),	-- Ashbringer \\ ringer
 s(69223)/i(122430),	--
 s(69224)/i(122432),	--
 s(69225)/i(122433),	--
@@ -53299,6 +53295,19 @@ s(69478)/i(124065),	--
 s(69498)/i(124079),	--
 s(69502)/i(124084),	--
 s(69505)/i(124092),	--
+s(70215)/i(120978),	-- Ashbringer \\ ringer
+s(70216)/i(120978),	-- Ashbringer \\ ringer
+s(70217)/i(120978),	-- Ashbringer \\ ringer
+s(70218)/i(120978),	-- Ashbringer \\ ringer
+s(70219)/i(120978),	-- Ashbringer \\ ringer
+s(70220)/i(120978),	-- Ashbringer \\ ringer
+s(70221)/i(120978),	-- Ashbringer \\ ringer
+s(70222)/i(120978),	-- Ashbringer \\ ringer
+s(70223)/i(120978),	-- Ashbringer \\ ringer
+s(70224)/i(120978),	-- Ashbringer \\ ringer
+s(70225)/i(120978),	-- Ashbringer \\ ringer
+s(70226)/i(120978),	-- Ashbringer \\ ringer
+s(70227)/i(120978),	-- Ashbringer \\ ringer
 s(70228)/i(124524),	--
 s(70232)/i(124529),	--
 s(70233)/i(124531),	--
@@ -53378,6 +53387,44 @@ s(72783)/i(127852),	--
 s(72784)/i(127852),	--
 s(72785)/i(127852),	--
 s(72787)/i(127862),	--
+s(72791)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72792)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72793)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72794)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72795)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72796)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72797)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72798)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72799)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72800)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72801)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72802)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72803)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72804)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72805)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72806)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72807)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72808)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72809)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72811)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72812)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72813)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72814)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72815)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72816)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72817)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72818)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72819)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72820)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72821)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72822)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72823)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72824)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72825)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72826)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72827)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72828)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(72829)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
 s(72830)/i(127971),	-- Gossamer Felscorched Scarf \\ amer Felscorched Scarf
 s(72833)/i(127972),	-- Spellcloak of Suramar \\ lcloak of Suramar
 s(72836)/i(127973),	-- Nether-Touched Cloak \\ er-Touched Cloak
@@ -53603,7 +53650,26 @@ s(73389)/i(128299),	-- Withering Waistwrap \\ ering Waistwrap
 s(73391)/i(128299),	-- Withering Waistwrap \\ ering Waistwrap
 s(73393)/i(128300),	-- Befouled Demonhide Belt \\ uled Demonhide Belt
 s(73395)/i(128300),	-- Befouled Demonhide Belt \\ uled Demonhide Belt
+s(73399)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73400)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73401)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73402)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73403)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73404)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73405)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
 s(73406)/i(128321),	--
+s(73409)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73410)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73411)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73412)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73415)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73416)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73417)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73418)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73419)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73420)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73421)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(73422)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
 s(73440)/i(128358),	--
 s(73441)/i(128359),	--
 s(73442)/i(128360),	--
@@ -53618,6 +53684,44 @@ s(73481)/i(128415),	--
 s(73482)/i(128442),	--
 s(73483)/i(128447),	--
 s(73484)/i(128448),	--
+s(73503)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73504)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73505)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73506)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73507)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73508)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73509)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73510)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73511)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73512)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73513)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73514)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73515)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73516)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73517)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73518)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73519)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73520)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73521)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(73523)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73524)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73525)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73526)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73527)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73528)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73529)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73530)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73531)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73532)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73533)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73534)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73535)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73536)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73537)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73538)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73539)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73540)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(73541)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
 s(73547)/i(128519),	--
 s(73548)/i(128520),	--
 s(73549)/i(128521),	--
@@ -53634,6 +53738,44 @@ s(73590)/i(128750),	--
 s(73661)/i(128828),	--
 s(73662)/i(128829),	--
 s(73663)/i(128830),	--
+s(73676)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73677)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73678)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73679)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73680)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73681)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73682)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73683)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73684)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73685)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73686)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73687)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73688)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73689)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73690)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73691)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73692)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73693)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73694)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(73696)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73697)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73698)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73699)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73700)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73701)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73702)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73703)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73704)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73705)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73706)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73707)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73708)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73709)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73710)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73711)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73712)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73713)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(73714)/i(128870),	-- The Kingslayers \\ Kingslayers
 s(73763)/i(128932),	--
 s(73784)/i(128961),	--
 s(73785)/i(128962),	--
@@ -53652,6 +53794,63 @@ s(73857)/i(129160),	--
 s(73858)/i(129162),	--
 s(73860)/i(129182),	-- Depleted Illidari Warglaive (no longer used) \\ eted Illidari Warglaive (no longer used)
 s(73864)/i(129189),	--
+s(73866)/i(127857),	-- Aluneth \\ eth
+s(73867)/i(127857),	-- Aluneth \\ eth
+s(73868)/i(127857),	-- Aluneth \\ eth
+s(73869)/i(127857),	-- Aluneth \\ eth
+s(73870)/i(127857),	-- Aluneth \\ eth
+s(73871)/i(127857),	-- Aluneth \\ eth
+s(73872)/i(127857),	-- Aluneth \\ eth
+s(73873)/i(127857),	-- Aluneth \\ eth
+s(73874)/i(127857),	-- Aluneth \\ eth
+s(73875)/i(127857),	-- Aluneth \\ eth
+s(73876)/i(127857),	-- Aluneth \\ eth
+s(73877)/i(127857),	-- Aluneth \\ eth
+s(73878)/i(127857),	-- Aluneth \\ eth
+s(73879)/i(127857),	-- Aluneth \\ eth
+s(73880)/i(127857),	-- Aluneth \\ eth
+s(73881)/i(127857),	-- Aluneth \\ eth
+s(73882)/i(127857),	-- Aluneth \\ eth
+s(73883)/i(127857),	-- Aluneth \\ eth
+s(73884)/i(127857),	-- Aluneth \\ eth
+s(73886)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73887)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73888)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73889)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73890)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73891)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73892)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73893)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73894)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73895)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73896)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73897)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73898)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73899)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73900)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73901)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73902)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73903)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73904)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(73906)/i(128288),	-- Scaleshard \\ eshard
+s(73907)/i(128288),	-- Scaleshard \\ eshard
+s(73908)/i(128288),	-- Scaleshard \\ eshard
+s(73909)/i(128288),	-- Scaleshard \\ eshard
+s(73910)/i(128288),	-- Scaleshard \\ eshard
+s(73911)/i(128288),	-- Scaleshard \\ eshard
+s(73912)/i(128288),	-- Scaleshard \\ eshard
+s(73913)/i(128288),	-- Scaleshard \\ eshard
+s(73914)/i(128288),	-- Scaleshard \\ eshard
+s(73915)/i(128288),	-- Scaleshard \\ eshard
+s(73916)/i(128288),	-- Scaleshard \\ eshard
+s(73917)/i(128288),	-- Scaleshard \\ eshard
+s(73918)/i(128288),	-- Scaleshard \\ eshard
+s(73919)/i(128288),	-- Scaleshard \\ eshard
+s(73920)/i(128288),	-- Scaleshard \\ eshard
+s(73921)/i(128288),	-- Scaleshard \\ eshard
+s(73922)/i(128288),	-- Scaleshard \\ eshard
+s(73923)/i(128288),	-- Scaleshard \\ eshard
+s(73924)/i(128288),	-- Scaleshard \\ eshard
 s(73963)/i(129275),	--
 s(73964)/i(129281),	--
 s(73965)/i(129282),	--
@@ -53740,6 +53939,25 @@ s(74396)/i(130004),	-- Shadowsong Vengeance Helm \\ owsong Vengeance Helm
 s(74398)/i(130006),	-- Ravencourt Liberator Shoulderguards \\ ncourt Liberator Shoulderguards
 s(74404)/i(130015),	-- Shadowsong Vengeance Faceguard \\ owsong Vengeance Faceguard
 s(74406)/i(130017),	-- Ravencourt Liberator Shoulderplates \\ ncourt Liberator Shoulderplates
+s(74461)/i(128862),	-- Ebonchill \\ chill
+s(74462)/i(128862),	-- Ebonchill \\ chill
+s(74463)/i(128862),	-- Ebonchill \\ chill
+s(74464)/i(128862),	-- Ebonchill \\ chill
+s(74465)/i(128862),	-- Ebonchill \\ chill
+s(74466)/i(128862),	-- Ebonchill \\ chill
+s(74467)/i(128862),	-- Ebonchill \\ chill
+s(74468)/i(128862),	-- Ebonchill \\ chill
+s(74469)/i(128862),	-- Ebonchill \\ chill
+s(74470)/i(128862),	-- Ebonchill \\ chill
+s(74471)/i(128862),	-- Ebonchill \\ chill
+s(74472)/i(128862),	-- Ebonchill \\ chill
+s(74473)/i(128862),	-- Ebonchill \\ chill
+s(74474)/i(128862),	-- Ebonchill \\ chill
+s(74475)/i(128862),	-- Ebonchill \\ chill
+s(74476)/i(128862),	-- Ebonchill \\ chill
+s(74477)/i(128862),	-- Ebonchill \\ chill
+s(74478)/i(128862),	-- Ebonchill \\ chill
+s(74479)/i(128862),	-- Ebonchill \\ chill
 s(74482)/i(130085),	--
 s(74483)/i(130086),	--
 s(74484)/i(130087),	--
@@ -53756,9 +53974,48 @@ s(74524)/i(130143),	--
 s(74526)/i(130163),	--
 s(74527)/i(130196),	--
 s(74528)/i(130213),	--
+s(74596)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74597)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74598)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74599)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74600)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74601)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74602)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74603)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74604)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74605)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74606)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74607)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74608)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74609)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74610)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74611)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74612)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74613)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(74614)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
 s(74623)/i(130280),	--
 s(74624)/i(130281),	--
 s(74663)/i(130327),	-- Artful Britches \\ ul Britches
+s(75201)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75202)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75203)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75204)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75205)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75206)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75207)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75208)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75209)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75210)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75211)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75212)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75213)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75214)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75215)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75216)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75217)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75218)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75220)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(75222)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
 s(75223)/i(130890),	-- Scissorblade \\ sorblade
 s(75535)/i(131254),	-- Huntsman's Chain Cuffs \\ sman's Chain Cuffs
 s(75907)/i(131626),	-- Shrouded Gauntlets \\ uded Gauntlets
@@ -53787,6 +54044,25 @@ s(76168)/i(132164),	-- Discarded Ship Wheel \\ arded Ship Wheel
 s(76170)/i(132170),	--
 s(76171)/i(132171),	--
 s(76172)/i(132179),	-- Hammer of Khaz'goroth \\ er of Khaz'goroth
+s(76174)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76175)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76176)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76177)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76178)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76179)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76180)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76181)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76182)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76183)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76184)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76185)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76186)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76187)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76188)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76189)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76190)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76191)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(76192)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
 s(76194)/i(132249),	--
 s(76196)/i(132258),	--
 s(76204)/i(130140),	--
@@ -53805,6 +54081,12 @@ s(76309)/i(132452),	-- Sephuz's Secret \\ uz's Secret
 s(76317)/i(132460),	-- Alythess's Pyrogenics \\ hess's Pyrogenics
 s(76318)/i(132465),	--
 s(76320)/i(132470),	-- 7.0 Weapon - Sword_1h_LordRavencrest_B_01 - Purple \\ Weapon - Sword_1h_LordRavencrest_B_01 - Purple
+s(76336)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(76337)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(76338)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(76339)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(76340)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(76341)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
 s(76342)/i(132485),	--
 s(76392)/i(132557),	--
 s(76429)/i(132766),	--
@@ -53832,6 +54114,27 @@ s(76513)/i(133005),	--
 s(76514)/i(133066),	--
 s(76515)/i(133067),	--
 s(76518)/i(133091),	--
+s(76520)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76539)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(76543)/i(128819),	-- Doomhammer \\ hammer
+s(76544)/i(128819),	-- Doomhammer \\ hammer
+s(76545)/i(128819),	-- Doomhammer \\ hammer
+s(76546)/i(128819),	-- Doomhammer \\ hammer
+s(76547)/i(128819),	-- Doomhammer \\ hammer
+s(76548)/i(128819),	-- Doomhammer \\ hammer
+s(76549)/i(128819),	-- Doomhammer \\ hammer
+s(76550)/i(128819),	-- Doomhammer \\ hammer
+s(76551)/i(128819),	-- Doomhammer \\ hammer
+s(76552)/i(128819),	-- Doomhammer \\ hammer
+s(76553)/i(128819),	-- Doomhammer \\ hammer
+s(76554)/i(128819),	-- Doomhammer \\ hammer
+s(76555)/i(128819),	-- Doomhammer \\ hammer
+s(76556)/i(128819),	-- Doomhammer \\ hammer
+s(76557)/i(128819),	-- Doomhammer \\ hammer
+s(76558)/i(128819),	-- Doomhammer \\ hammer
+s(76559)/i(128819),	-- Doomhammer \\ hammer
+s(76560)/i(128819),	-- Doomhammer \\ hammer
+s(76561)/i(128819),	-- Doomhammer \\ hammer
 s(76562)/i(133174),	--
 s(76563)/i(133175),	--
 s(76564)/i(133176),	--
@@ -53848,6 +54151,25 @@ s(76777)/i(133481),	--
 s(76778)/i(133482),	--
 s(76801)/i(133518),	--
 s(76802)/i(133519),	--
+s(76820)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76821)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76822)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76823)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76824)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76825)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76826)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76827)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76828)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76829)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76830)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76831)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76832)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76833)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76834)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76835)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76836)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76837)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(76838)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
 s(76839)/i(133554),	--
 s(76840)/i(133582),	-- Warmongering Gladiator's Runeaxe \\ ongering Gladiator's Runeaxe
 s(76841)/i(133583),	-- Warmongering Gladiator's Runeaxe \\ ongering Gladiator's Runeaxe
@@ -53894,11 +54216,258 @@ s(76925)/i(133789),	--
 s(76926)/i(133790),	--
 s(76927)/i(133792),	--
 s(76929)/i(133811),	--
+s(76930)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76931)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76932)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76933)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76934)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76935)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76936)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76937)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76938)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76939)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76940)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76941)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76942)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76943)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76944)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76945)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76946)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(76947)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
 s(76949)/i(133938),	--
+s(76950)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76951)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76952)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76953)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76954)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76955)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76956)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76957)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76958)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76959)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76960)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76961)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76962)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76963)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76964)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(76965)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76966)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76967)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76968)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76969)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76970)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76971)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76972)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76973)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76974)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76975)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76976)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76977)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76978)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76979)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76980)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76981)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76982)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76983)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(76984)/i(128403),	-- Apocalypse \\ alypse
+s(76985)/i(128403),	-- Apocalypse \\ alypse
+s(76986)/i(128403),	-- Apocalypse \\ alypse
+s(76987)/i(128403),	-- Apocalypse \\ alypse
+s(76988)/i(128403),	-- Apocalypse \\ alypse
+s(76989)/i(128403),	-- Apocalypse \\ alypse
+s(76990)/i(128403),	-- Apocalypse \\ alypse
+s(76991)/i(128403),	-- Apocalypse \\ alypse
+s(76992)/i(128403),	-- Apocalypse \\ alypse
+s(76993)/i(128403),	-- Apocalypse \\ alypse
+s(76994)/i(128403),	-- Apocalypse \\ alypse
+s(76995)/i(128403),	-- Apocalypse \\ alypse
+s(76996)/i(128403),	-- Apocalypse \\ alypse
+s(76997)/i(128403),	-- Apocalypse \\ alypse
+s(76998)/i(128403),	-- Apocalypse \\ alypse
+s(76999)/i(128403),	-- Apocalypse \\ alypse
+s(77000)/i(128403),	-- Apocalypse \\ alypse
+s(77001)/i(128403),	-- Apocalypse \\ alypse
+s(77002)/i(128403),	-- Apocalypse \\ alypse
+s(77003)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77004)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77005)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77006)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77007)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77008)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77009)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77010)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77011)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77012)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77013)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77014)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77015)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77016)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77017)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77018)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77019)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77020)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77021)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(77022)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(77023)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(77024)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(77025)/i(128861),	-- Titanstrike \\ nstrike
+s(77026)/i(128861),	-- Titanstrike \\ nstrike
+s(77027)/i(128861),	-- Titanstrike \\ nstrike
+s(77028)/i(128861),	-- Titanstrike \\ nstrike
+s(77029)/i(128861),	-- Titanstrike \\ nstrike
+s(77030)/i(128861),	-- Titanstrike \\ nstrike
+s(77031)/i(128861),	-- Titanstrike \\ nstrike
+s(77032)/i(128861),	-- Titanstrike \\ nstrike
+s(77033)/i(128861),	-- Titanstrike \\ nstrike
+s(77034)/i(128861),	-- Titanstrike \\ nstrike
+s(77035)/i(128861),	-- Titanstrike \\ nstrike
+s(77036)/i(128861),	-- Titanstrike \\ nstrike
+s(77037)/i(128861),	-- Titanstrike \\ nstrike
+s(77038)/i(128861),	-- Titanstrike \\ nstrike
+s(77039)/i(128861),	-- Titanstrike \\ nstrike
+s(77040)/i(128861),	-- Titanstrike \\ nstrike
+s(77041)/i(128861),	-- Titanstrike \\ nstrike
+s(77042)/i(128861),	-- Titanstrike \\ nstrike
+s(77043)/i(128861),	-- Titanstrike \\ nstrike
 s(77044)/i(133945),	--
+s(77045)/i(128808),	-- Talonclaw \\ nclaw
+s(77046)/i(128808),	-- Talonclaw \\ nclaw
+s(77047)/i(128808),	-- Talonclaw \\ nclaw
+s(77048)/i(128808),	-- Talonclaw \\ nclaw
+s(77049)/i(128808),	-- Talonclaw \\ nclaw
+s(77050)/i(128808),	-- Talonclaw \\ nclaw
+s(77051)/i(128808),	-- Talonclaw \\ nclaw
+s(77052)/i(128808),	-- Talonclaw \\ nclaw
+s(77053)/i(128808),	-- Talonclaw \\ nclaw
+s(77054)/i(128808),	-- Talonclaw \\ nclaw
+s(77055)/i(128808),	-- Talonclaw \\ nclaw
+s(77056)/i(128808),	-- Talonclaw \\ nclaw
+s(77057)/i(128808),	-- Talonclaw \\ nclaw
+s(77058)/i(128808),	-- Talonclaw \\ nclaw
+s(77059)/i(128808),	-- Talonclaw \\ nclaw
+s(77060)/i(128808),	-- Talonclaw \\ nclaw
+s(77061)/i(128808),	-- Talonclaw \\ nclaw
+s(77062)/i(128808),	-- Talonclaw \\ nclaw
+s(77063)/i(128808),	-- Talonclaw \\ nclaw
+s(77064)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77065)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77066)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77067)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77068)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77069)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77070)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77071)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77072)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77073)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77074)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77075)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77076)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77077)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77078)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77079)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77080)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77081)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77082)/i(128820),	-- Felo'melorn \\ 'melorn
+s(77083)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77084)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77085)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77086)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77087)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77088)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77089)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77090)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77091)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77092)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77093)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77094)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77095)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77096)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77097)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77098)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77099)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77100)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77101)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(77102)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77103)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77104)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77105)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77106)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77107)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77108)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77109)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77110)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77111)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77112)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77113)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77114)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77115)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77116)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77117)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77118)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77119)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77120)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(77122)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77123)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77124)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77125)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77126)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77127)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77128)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77129)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77130)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77131)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77132)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77133)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77134)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77135)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77136)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77137)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77138)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77139)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(77140)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
 s(77144)/i(133945),	--
+s(77145)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77146)/i(128823),	-- The Silver Hand \\ Silver Hand
 s(77154)/i(133969),	--
+s(77156)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77157)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77158)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77159)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77160)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77161)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77162)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77163)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77164)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77165)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77166)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77167)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77168)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77169)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77170)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77171)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77172)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77173)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(77174)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
 s(77175)/i(133982),	--
+s(77176)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77177)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77178)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77179)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77180)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77181)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77182)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77183)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77184)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77185)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77186)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77187)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77188)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77189)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77190)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77191)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77192)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77193)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(77194)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
 s(77195)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(77196)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(77197)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
@@ -53918,6 +54487,45 @@ s(77210)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(77211)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(77212)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(77213)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
+s(77215)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77216)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77217)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77218)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77219)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77220)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77221)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77222)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77223)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77224)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77225)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77226)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77227)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77228)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77229)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77230)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77231)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77232)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77233)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(77234)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(77235)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(77236)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(77237)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77238)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77239)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77240)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77241)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77242)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77243)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77244)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77245)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77246)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77247)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77248)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77249)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77250)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77251)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77252)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(77253)/i(128823),	-- The Silver Hand \\ Silver Hand
 s(77267)/i(134030),	--
 s(77268)/i(134035),	--
 s(77269)/i(134035),	--
@@ -53925,12 +54533,153 @@ s(77270)/i(134036),	--
 s(77271)/i(134037),	--
 s(77272)/i(134038),	--
 s(77273)/i(134039),	--
+s(77278)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(77279)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(77280)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(77281)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(77283)/i(128867),	-- Oathseeker \\ seeker
+s(77284)/i(128867),	-- Oathseeker \\ seeker
+s(77285)/i(128867),	-- Oathseeker \\ seeker
+s(77286)/i(128867),	-- Oathseeker \\ seeker
+s(77287)/i(128867),	-- Oathseeker \\ seeker
+s(77288)/i(128867),	-- Oathseeker \\ seeker
+s(77289)/i(128867),	-- Oathseeker \\ seeker
+s(77290)/i(128867),	-- Oathseeker \\ seeker
+s(77291)/i(128867),	-- Oathseeker \\ seeker
+s(77292)/i(128867),	-- Oathseeker \\ seeker
+s(77293)/i(128867),	-- Oathseeker \\ seeker
+s(77294)/i(128867),	-- Oathseeker \\ seeker
+s(77295)/i(128867),	-- Oathseeker \\ seeker
+s(77296)/i(128867),	-- Oathseeker \\ seeker
+s(77297)/i(128867),	-- Oathseeker \\ seeker
+s(77298)/i(128867),	-- Oathseeker \\ seeker
+s(77299)/i(128867),	-- Oathseeker \\ seeker
+s(77300)/i(128867),	-- Oathseeker \\ seeker
+s(77301)/i(128867),	-- Oathseeker \\ seeker
 s(77307)/i(134057),	--
+s(77308)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(77309)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(77310)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(77311)/i(128402),	-- Maw of the Damned \\ of the Damned
 s(77312)/i(134059),	--
+s(77313)/i(128866),	-- Truthguard \\ hguard
+s(77314)/i(128866),	-- Truthguard \\ hguard
+s(77315)/i(128866),	-- Truthguard \\ hguard
+s(77316)/i(128866),	-- Truthguard \\ hguard
+s(77317)/i(128866),	-- Truthguard \\ hguard
+s(77318)/i(128866),	-- Truthguard \\ hguard
+s(77319)/i(128866),	-- Truthguard \\ hguard
+s(77320)/i(128866),	-- Truthguard \\ hguard
+s(77321)/i(128866),	-- Truthguard \\ hguard
+s(77322)/i(128866),	-- Truthguard \\ hguard
+s(77323)/i(128866),	-- Truthguard \\ hguard
+s(77324)/i(128866),	-- Truthguard \\ hguard
+s(77325)/i(128866),	-- Truthguard \\ hguard
+s(77326)/i(128866),	-- Truthguard \\ hguard
+s(77327)/i(128866),	-- Truthguard \\ hguard
+s(77328)/i(128866),	-- Truthguard \\ hguard
+s(77329)/i(128866),	-- Truthguard \\ hguard
+s(77330)/i(128866),	-- Truthguard \\ hguard
+s(77331)/i(128866),	-- Truthguard \\ hguard
 s(77346)/i(129146),	--
 s(77347)/i(134121),	--
 s(77348)/i(134122),	--
 s(77350)/i(134126),	--
+s(77352)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77353)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77354)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77355)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77356)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77357)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77358)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77359)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77360)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77361)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77362)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77363)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77364)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77365)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77366)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77367)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77368)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77369)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77370)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(77371)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77372)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77373)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77374)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77375)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77376)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77377)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77378)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77379)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77380)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77381)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77382)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77383)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77384)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77385)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77386)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77387)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77388)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77389)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(77390)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77391)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77392)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77393)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77394)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77395)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77396)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77397)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77398)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77399)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77400)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77401)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77402)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77403)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77404)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77405)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77406)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77407)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77408)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(77410)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77411)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77412)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77413)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77414)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77415)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77416)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77417)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77418)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77419)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77420)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77421)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77422)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77423)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77424)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77425)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77426)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77427)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77428)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(77429)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77430)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77431)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77432)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77434)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77435)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77436)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77437)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77438)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77439)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77440)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77441)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77442)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77443)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77444)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77445)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77446)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77447)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(77448)/i(128872),	-- The Dreadblades \\ Dreadblades
 s(77457)/i(134144),	--
 s(77458)/i(134145),	--
 s(77491)/i(134188),	--
@@ -53942,8 +54691,122 @@ s(77560)/i(134277),	--
 s(77593)/i(134320),	--
 s(77594)/i(134321),	--
 s(77627)/i(134364),	--
+s(77653)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77654)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77655)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77656)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77657)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77658)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77659)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77660)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77661)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77662)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77663)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77664)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77665)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77666)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77667)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77668)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77669)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77670)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77671)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(77672)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77673)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77674)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77675)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77676)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77677)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77678)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77679)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77680)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77681)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77682)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77683)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77684)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77685)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77686)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77687)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77688)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77689)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77690)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(77691)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77692)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77693)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77694)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77695)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77696)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77697)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77698)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77699)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77700)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77701)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77702)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77703)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77704)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77705)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77706)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77707)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77708)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77709)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(77710)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77711)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77712)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77713)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77714)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77715)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77716)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77717)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77718)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77719)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77720)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77721)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77722)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77723)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77724)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77725)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77726)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77727)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77728)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(77729)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77730)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77731)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77732)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77733)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77734)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77735)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77736)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77737)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77738)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77739)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77740)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77741)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77742)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77743)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77744)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77745)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77746)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77747)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(77748)/i(134546),	-- Worgen Shotgun \\ en Shotgun
 s(77749)/i(134548),	-- Helya's Wrath \\ a's Wrath
+s(77752)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77753)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77754)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77755)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77756)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77757)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77758)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77759)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77760)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77761)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77762)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77763)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77764)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77765)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77766)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77767)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77768)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77769)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(77770)/i(134552),	-- The Dreadblades \\ Dreadblades
 s(77772)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(77773)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(77774)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
@@ -53954,6 +54817,15 @@ s(77778)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(77779)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(77780)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(77781)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77782)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77783)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77784)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77785)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77786)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77787)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77788)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77789)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(77790)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(77800)/i(134562),	-- Odyn's Fury \\ 's Fury
 s(77801)/i(134562),	-- Odyn's Fury \\ 's Fury
 s(77802)/i(134562),	-- Odyn's Fury \\ 's Fury
@@ -53974,6 +54846,26 @@ s(77816)/i(134562),	-- Odyn's Fury \\ 's Fury
 s(77817)/i(134562),	-- Odyn's Fury \\ 's Fury
 s(77818)/i(134562),	-- Odyn's Fury \\ 's Fury
 s(77819)/i(134563),	--
+s(77887)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77888)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77889)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77890)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77891)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77892)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77893)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77894)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77895)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77896)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77897)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77898)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77899)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77900)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77901)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77902)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77903)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77904)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77905)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(77906)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
 s(77907)/i(134842),	--
 s(77908)/i(134843),	--
 s(77909)/i(134844),	--
@@ -53984,6 +54876,9 @@ s(77913)/i(134848),	--
 s(77914)/i(134849),	--
 s(77915)/i(134850),	--
 s(77957)/i(134863),	--
+s(78421)/i(120978),	-- Ashbringer \\ ringer
+s(78422)/i(120978),	-- Ashbringer \\ ringer
+s(78423)/i(120978),	-- Ashbringer \\ ringer
 s(78428)/i(135551),	--
 s(78432)/i(135559),	--
 s(78433)/i(135560),	--
@@ -54019,6 +54914,22 @@ s(78640)/i(136828),	--
 s(78641)/i(136829),	--
 s(78642)/i(136830),	--
 s(78643)/i(136837),	--
+s(78644)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78645)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78646)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78647)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78648)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78649)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78650)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78651)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78652)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78653)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78654)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78655)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78656)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78657)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78658)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(78659)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
 s(78660)/i(136842),	--
 s(78700)/i(136982),	--
 s(78702)/i(137012),	--
@@ -54307,6 +55218,33 @@ s(80359)/i(139006),	--
 s(80360)/i(139007),	--
 s(80361)/i(139008),	--
 s(80362)/i(139009),	--
+s(80363)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80364)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80365)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80366)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80367)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80368)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80369)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80370)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80371)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80372)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80373)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80374)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80375)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80376)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80377)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80378)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80379)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80380)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80381)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80382)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80383)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80384)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80385)/i(137246),	-- Spine of Thal'kiel \\ e of Thal'kiel
+s(80386)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(80387)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(80388)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
+s(80389)/i(128943),	-- Skull of the Man'ari \\ l of the Man'ari
 s(80395)/i(139022),	--
 s(80399)/i(139042),	--
 s(80467)/i(139131),	--
@@ -54314,10 +55252,221 @@ s(80468)/i(139132),	--
 s(80485)/i(139174),	--
 s(80487)/i(139186),	--
 s(80511)/i(139210),	--
+s(80545)/i(127857),	-- Aluneth \\ eth
+s(80546)/i(127857),	-- Aluneth \\ eth
+s(80547)/i(127857),	-- Aluneth \\ eth
+s(80548)/i(127857),	-- Aluneth \\ eth
+s(80550)/i(128819),	-- Doomhammer \\ hammer
+s(80551)/i(128819),	-- Doomhammer \\ hammer
+s(80552)/i(128819),	-- Doomhammer \\ hammer
+s(80553)/i(128819),	-- Doomhammer \\ hammer
+s(80554)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80555)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80556)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80557)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80558)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80559)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80560)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80561)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80562)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80563)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80564)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80565)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80566)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80567)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80568)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80569)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80570)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80571)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80572)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80573)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80574)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80575)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80576)/i(128873),	-- Fury of the Stonemother \\ of the Stonemother
+s(80599)/i(128867),	-- Oathseeker \\ seeker
+s(80600)/i(128867),	-- Oathseeker \\ seeker
+s(80601)/i(128867),	-- Oathseeker \\ seeker
+s(80602)/i(128867),	-- Oathseeker \\ seeker
+s(80603)/i(128866),	-- Truthguard \\ hguard
+s(80604)/i(128866),	-- Truthguard \\ hguard
+s(80605)/i(128866),	-- Truthguard \\ hguard
+s(80606)/i(128866),	-- Truthguard \\ hguard
+s(80608)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(80609)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(80610)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(80611)/i(128402),	-- Maw of the Damned \\ of the Damned
+s(80612)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80613)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80614)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80615)/i(128292),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80616)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80617)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80618)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80619)/i(128293),	-- Blades of the Fallen Prince \\ es of the Fallen Prince
+s(80620)/i(128403),	-- Apocalypse \\ alypse
+s(80621)/i(128403),	-- Apocalypse \\ alypse
+s(80622)/i(128403),	-- Apocalypse \\ alypse
+s(80623)/i(128403),	-- Apocalypse \\ alypse
+s(80624)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80625)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80626)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80627)/i(127829),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80628)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80629)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80630)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80631)/i(127830),	-- Twinblades of the Deceiver \\ blades of the Deceiver
+s(80632)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(80633)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(80634)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(80635)/i(128832),	-- Aldrachi Warblades \\ achi Warblades
+s(80636)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(80637)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(80638)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(80639)/i(128831),	-- Aldrachi Warblades \\ achi Warblades
+s(80640)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(80641)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(80642)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(80643)/i(128858),	-- Scythe of Elune \\ he of Elune
+s(80644)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(80645)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(80646)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(80647)/i(128306),	-- G'Hanir, the Mother Tree \\ nir, the Mother Tree
+s(80648)/i(128861),	-- Titanstrike \\ nstrike
+s(80649)/i(128861),	-- Titanstrike \\ nstrike
+s(80650)/i(128861),	-- Titanstrike \\ nstrike
+s(80651)/i(128861),	-- Titanstrike \\ nstrike
+s(80652)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(80653)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(80654)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(80655)/i(128826),	-- Thas'dorah, Legacy of the Windrunners \\ 'dorah, Legacy of the Windrunners
+s(80656)/i(128808),	-- Talonclaw \\ nclaw
+s(80657)/i(128808),	-- Talonclaw \\ nclaw
+s(80658)/i(128808),	-- Talonclaw \\ nclaw
+s(80659)/i(128808),	-- Talonclaw \\ nclaw
+s(80660)/i(128820),	-- Felo'melorn \\ 'melorn
+s(80661)/i(128820),	-- Felo'melorn \\ 'melorn
+s(80662)/i(128820),	-- Felo'melorn \\ 'melorn
+s(80663)/i(128820),	-- Felo'melorn \\ 'melorn
+s(80664)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(80665)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(80666)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(80667)/i(133959),	-- Heart of the Phoenix \\ t of the Phoenix
+s(80668)/i(128862),	-- Ebonchill \\ chill
+s(80669)/i(128862),	-- Ebonchill \\ chill
+s(80670)/i(128862),	-- Ebonchill \\ chill
+s(80671)/i(128862),	-- Ebonchill \\ chill
+s(80672)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(80673)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(80674)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(80675)/i(128938),	-- Fu Zan, the Wanderer's Companion \\ an, the Wanderer's Companion
+s(80676)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(80677)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(80678)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(80679)/i(128937),	-- Sheilun, Staff of the Mists \\ lun, Staff of the Mists
+s(80680)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(80681)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(80682)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(80683)/i(128940),	-- Fists of the Heavens \\ s of the Heavens
+s(80684)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(80685)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(80686)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(80687)/i(133948),	-- Fists of the Heavens \\ s of the Heavens
+s(80688)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(80689)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(80690)/i(128823),	-- The Silver Hand \\ Silver Hand
+s(80691)/i(128823),	-- The Silver Hand \\ Silver Hand
 s(80692)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(80693)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(80694)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
 s(80695)/i(128824),	-- Tome of the Silver Hand \\ of the Silver Hand
+s(80696)/i(120978),	-- Ashbringer \\ ringer
+s(80697)/i(120978),	-- Ashbringer \\ ringer
+s(80698)/i(120978),	-- Ashbringer \\ ringer
+s(80699)/i(120978),	-- Ashbringer \\ ringer
+s(80700)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(80701)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(80702)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(80703)/i(128868),	-- Light's Wrath \\ t's Wrath
+s(80704)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(80705)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(80706)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(80707)/i(128825),	-- T'uure, Beacon of the Naaru \\ re, Beacon of the Naaru
+s(80708)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(80709)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(80710)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(80711)/i(128827),	-- Xal'atath, Blade of the Black Empire \\ atath, Blade of the Black Empire
+s(80712)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(80713)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(80714)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(80715)/i(133958),	-- Secrets of the Void \\ ets of the Void
+s(80716)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(80717)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(80718)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(80719)/i(128870),	-- The Kingslayers \\ Kingslayers
+s(80720)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(80721)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(80722)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(80723)/i(128869),	-- The Kingslayers \\ Kingslayers
+s(80724)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(80725)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(80726)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(80727)/i(128872),	-- The Dreadblades \\ Dreadblades
+s(80728)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(80729)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(80730)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(80731)/i(134552),	-- The Dreadblades \\ Dreadblades
+s(80732)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(80733)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(80734)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(80735)/i(128476),	-- Fangs of the Devourer \\ s of the Devourer
+s(80736)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(80737)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(80738)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(80739)/i(128479),	-- Fangs of the Devourer \\ s of the Devourer
+s(80740)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(80741)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(80742)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(80743)/i(128935),	-- The Fist of Ra-den \\ Fist of Ra-den
+s(80744)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(80745)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(80746)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(80747)/i(128936),	-- The Highkeeper's Ward \\ Highkeeper's Ward
+s(80748)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(80749)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(80750)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(80751)/i(128911),	-- Sharas'dal, Scepter of Tides \\ as'dal, Scepter of Tides
+s(80752)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(80753)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(80754)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(80755)/i(128934),	-- Shield of the Sea Queen \\ ld of the Sea Queen
+s(80756)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(80757)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(80758)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(80759)/i(128942),	-- Ulthalesh, the Deadwind Harvester \\ alesh, the Deadwind Harvester
+s(80760)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(80761)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(80762)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(80763)/i(128941),	-- Scepter of Sargeras \\ ter of Sargeras
+s(80764)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(80765)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(80766)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(80767)/i(128910),	-- Strom'kar, the Warbreaker \\ m'kar, the Warbreaker
+s(80768)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(80769)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(80770)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(80771)/i(128908),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(80772)/i(128288),	-- Scaleshard \\ eshard
+s(80773)/i(128288),	-- Scaleshard \\ eshard
+s(80774)/i(128288),	-- Scaleshard \\ eshard
+s(80775)/i(128288),	-- Scaleshard \\ eshard
+s(80776)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(80777)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(80778)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(80779)/i(128289),	-- Scale of the Earth-Warder \\ e of the Earth-Warder
+s(80780)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(80781)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(80782)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
+s(80783)/i(134553),	-- Warswords of the Valarjar \\ words of the Valarjar
 s(80801)/i(139414),	--
 s(80913)/i(139601),	-- Harpy-Hunter's Gloves \\ y-Hunter's Gloves
 s(80915)/i(139602),	-- Valarjar Runepriest's Vesture \\ rjar Runepriest's Vesture
@@ -55767,9 +56916,52 @@ s(90300)/i(152230),	--
 s(90521)/i(152426),	--
 s(90522)/i(152427),	--
 s(90523)/i(152428),	--
+s(90628)/i(152802),	-- Monel-Hardened Breastplate \\ Mariner's Breastplate
+s(90629)/i(152803),	-- Monel-Hardened Boots \\ Mariner's Boots
+s(90630)/i(152804),	-- Monel-Hardened Gauntlets \\ Mariner's Gauntlets
+s(90631)/i(152805),	-- Monel-Hardened Helm \\ Mariner's Helm
+s(90632)/i(152806),	-- Monel-Hardened Greaves \\ Mariner's Greaves
+s(90633)/i(152807),	-- Monel-Hardened Pauldrons \\ Mariner's Pauldrons
+s(90634)/i(152808),	-- Monel-Hardened Waistguard \\ Mariner's Waistguard
+s(90635)/i(152809),	-- Monel-Hardened Armguards \\ Mariner's Armguards
+s(90636)/i(152810),	-- Stormsteel Legguards
+s(90637)/i(152811),	-- Stormsteel Girdle
+s(90638)/i(152818),	-- Monel-Hardened Shield \\ Monel-Hardened Aegis \\ Mariner's Aegis
+s(90639)/i(152818),	-- Monel-Hardened Shield \\ Monel-Hardened Aegis \\ Mariner's Aegis
+s(90640)/i(152818),	-- Monel-Hardened Shield \\ Monel-Hardened Aegis \\ Mariner's Aegis
+s(90641)/i(152819),	-- Stormsteel Shield \\ Neptulon's Barrier
+s(90642)/i(152819),	-- Stormsteel Shield \\ Neptulon's Barrier
+s(90643)/i(152819),	-- Stormsteel Shield \\ Neptulon's Barrier
+s(90644)/i(152822),	-- Monel-Hardened Hatchet \\ Mariner's Hatchet
+s(90645)/i(152822),	-- Monel-Hardened Hatchet \\ Mariner's Hatchet
+s(90646)/i(152822),	-- Monel-Hardened Hatchet \\ Mariner's Hatchet
+s(90647)/i(152823),	-- Monel-Hardened Battleaxe \\ Mariner's Battleaxe
+s(90648)/i(152823),	-- Monel-Hardened Battleaxe \\ Mariner's Battleaxe
+s(90649)/i(152823),	-- Monel-Hardened Battleaxe \\ Mariner's Battleaxe
+s(90653)/i(152827),	-- Monel-Hardened Cutlass \\ Mariner's Cutlass
+s(90654)/i(152827),	-- Monel-Hardened Cutlass \\ Mariner's Cutlass
+s(90655)/i(152827),	-- Monel-Hardened Cutlass \\ Mariner's Cutlass
+s(90656)/i(152828),	-- Monel-Hardened Claymore \\ Mariner's Claymore
+s(90657)/i(152828),	-- Monel-Hardened Claymore \\ Mariner's Claymore
+s(90658)/i(152828),	-- Monel-Hardened Claymore \\ Mariner's Claymore
 s(90659)/i(152830),	-- Magnetic Discombobulator
 s(90660)/i(152830),	-- Magnetic Discombobulator
 s(90661)/i(152830),	-- Magnetic Discombobulator
+s(90662)/i(152831),	-- Monel-Hardened Deckpounder \\ Mariner's Deckpounder
+s(90663)/i(152831),	-- Monel-Hardened Deckpounder \\ Mariner's Deckpounder
+s(90664)/i(152831),	-- Monel-Hardened Deckpounder \\ Mariner's Deckpounder
+s(90665)/i(152832),	-- Monel-Hardened Shanker \\ Mariner's Shanker
+s(90666)/i(152832),	-- Monel-Hardened Shanker \\ Mariner's Shanker
+s(90667)/i(152832),	-- Monel-Hardened Shanker \\ Mariner's Shanker
+s(90668)/i(152833),	-- Monel-Hardened Polearm \\ Mariner's Polearm
+s(90669)/i(152833),	-- Monel-Hardened Polearm \\ Mariner's Polearm
+s(90670)/i(152833),	-- Monel-Hardened Polearm \\ Mariner's Polearm
+s(90671)/i(152834),	-- Stormsteel Spear
+s(90672)/i(152834),	-- Stormsteel Spear
+s(90673)/i(152834),	-- Stormsteel Spear
+s(90674)/i(152835),	-- Stormsteel Dagger
+s(90675)/i(152835),	-- Stormsteel Dagger
+s(90676)/i(152835),	-- Stormsteel Dagger
 s(90680)/i(152837),	-- Precision Attitude Adjuster
 s(90681)/i(152837),	-- Precision Attitude Adjuster
 s(90682)/i(152837),	-- Precision Attitude Adjuster
@@ -56554,6 +57746,26 @@ s(95883)/i(159401),	-- Nettlebite Mantle \\ 8.0 - PH Dungeon - Mail SHOULDER
 s(95884)/i(159401),	-- Nettlebite Mantle \\ 8.0 - PH Dungeon - Mail SHOULDER
 s(95888)/i(159838),	--
 s(95891)/i(159650),	-- Dismembered Submersible Claw \\ Detached Submersible Claw \\ 8.0 - PH Dungeon - Str 2h Mace
+s(95894)/i(159851),	-- Honorable Combatant's Shield \\ Honorable Combatant's Aegis
+s(95895)/i(159851),	-- Honorable Combatant's Shield \\ Honorable Combatant's Aegis
+s(95896)/i(159851),	-- Honorable Combatant's Shield \\ Honorable Combatant's Aegis
+s(95900)/i(159853),	-- Honorable Combatant's Cutlass
+s(95901)/i(159853),	-- Honorable Combatant's Cutlass
+s(95902)/i(159853),	-- Honorable Combatant's Cutlass
+s(95906)/i(159855),	-- Honorable Combatant's Deckpounder
+s(95907)/i(159855),	-- Honorable Combatant's Deckpounder
+s(95908)/i(159855),	-- Honorable Combatant's Deckpounder
+s(95912)/i(159857),	-- Honorable Combatant's Shanker
+s(95913)/i(159857),	-- Honorable Combatant's Shanker
+s(95914)/i(159857),	-- Honorable Combatant's Shanker
+s(95915)/i(159858),	-- Honorable Combatant's Polearm
+s(95916)/i(159858),	-- Honorable Combatant's Polearm
+s(95917)/i(159858),	-- Honorable Combatant's Polearm
+s(95920)/i(159860),	-- Honorable Combatant's Plate Boots
+s(95922)/i(159861),	-- Honorable Combatant's Plate Gauntlets
+s(95926)/i(159863),	-- Honorable Combatant's Plate Greaves
+s(95930)/i(159865),	-- Honorable Combatant's Plate Waistguard
+s(95932)/i(159866),	-- Honorable Combatant's Plate Armguards
 s(95934)/i(159882),	-- Bug Zapper \\ Stun Gun
 s(95935)/i(159883),	--
 s(95936)/i(159884),	-- Honorable Combatant's Leather Treads
@@ -56706,6 +57918,46 @@ s(96436)/i(160490),	-- AZ3-R1-T3 Bionic Bifocals
 s(96437)/i(160491),	-- AZ3-R1-T3 Orthogonal Optics
 s(96441)/i(160500),	--
 s(96442)/i(160501),	--
+s(96450)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96451)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96452)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96453)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96454)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96455)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96456)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96457)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96458)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96459)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96460)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96461)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96462)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96463)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96464)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96465)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96466)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96467)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96468)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96469)/i(128860),	-- Fangs of Ashamane \\ s of Ashamane
+s(96470)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96471)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96472)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96473)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96474)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96475)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96476)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96477)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96478)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96479)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96480)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96481)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96482)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96483)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96484)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96485)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96486)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96487)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96488)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
+s(96489)/i(128821),	-- Claws of Ursoc \\ s of Ursoc
 8.0.1.26367
 s(96529)/i(160570),	--
 s(96530)/i(160573),	--
@@ -56983,6 +58235,46 @@ s(97329)/i(161409),	-- Stormcrash Chestguard \\ 8.0 Raid - World - Boss 2 - Plat
 s(97330)/i(161410),	-- Spaulders of the Devouring Wastes \\ 8.0 Raid - World - Boss 3 - Plate SHOULDER 2 - Horde
 s(97331)/i(161410),	-- Spaulders of the Devouring Wastes \\ 8.0 Raid - World - Boss 3 - Plate SHOULDER 2 - Horde
 s(97332)/i(161410),	-- Spaulders of the Devouring Wastes \\ 8.0 Raid - World - Boss 3 - Plate SHOULDER 2 - Horde
+s(97333)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97334)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97335)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97336)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97337)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97338)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97339)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97340)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97341)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97342)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97343)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97344)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97345)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97346)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97347)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97348)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97349)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97350)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97351)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97352)/i(128822),	-- Claws of Ursoc \\ s of Ursoc
+s(97353)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97354)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97355)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97356)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97357)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97358)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97359)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97360)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97361)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97362)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97363)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97364)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97365)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97366)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97367)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97368)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97369)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97370)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97371)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
+s(97372)/i(128859),	-- Fangs of Ashamane \\ s of Ashamane
 s(97375)/i(161441),	--
 s(97377)/i(161445),	--
 s(97378)/i(161447),	--
@@ -57304,8 +58596,40 @@ s(97945)/i(161874),	-- Dread Combatant's Plate Armguards \\ PH Combatant's Plate
 s(97946)/i(161875),	-- Dread Combatant's Chain Armbands \\ PH Combatant's Mail Armbands
 s(97947)/i(161876),	-- Dread Combatant's Leather Bindings \\ PH Combatant's Leather Bindings
 s(97948)/i(161877),	-- Dread Combatant's Silk Cord \\ PH Combatant's Silk Cord
+s(97972)/i(161891),	-- Stormsteel Shield \\ Neptulon's Barrier
+s(97973)/i(161891),	-- Stormsteel Shield \\ Neptulon's Barrier
+s(97974)/i(161891),	-- Stormsteel Shield \\ Neptulon's Barrier
+s(97975)/i(161892),	-- Honorable Combatant's Aegis
+s(97976)/i(161892),	-- Honorable Combatant's Aegis
+s(97977)/i(161892),	-- Honorable Combatant's Aegis
+s(97978)/i(161893),	-- Honorable Combatant's Plate Boots
+s(97980)/i(161894),	-- Honorable Combatant's Plate Gauntlets
+s(97982)/i(161895),	-- Honorable Combatant's Plate Greaves
+s(97984)/i(161896),	-- Honorable Combatant's Plate Waistguard
+s(97986)/i(161897),	-- Honorable Combatant's Plate Armguards
 s(97988)/i(161904),	-- Dread Combatant's Drape \\ PH Combatant's Drape
 s(97989)/i(161905),	-- Dread Combatant's Cape \\ PH Combatant's Cape
+s(98004)/i(161917),	-- Monel-Hardened Polearm
+s(98005)/i(161917),	-- Monel-Hardened Polearm
+s(98006)/i(161917),	-- Monel-Hardened Polearm
+s(98007)/i(161918),	-- Stormsteel Spear
+s(98008)/i(161918),	-- Stormsteel Spear
+s(98009)/i(161918),	-- Stormsteel Spear
+s(98010)/i(161919),	-- Stormsteel Dagger
+s(98011)/i(161919),	-- Stormsteel Dagger
+s(98012)/i(161919),	-- Stormsteel Dagger
+s(98013)/i(161920),	-- Honorable Combatant's Cutlass
+s(98014)/i(161920),	-- Honorable Combatant's Cutlass
+s(98015)/i(161920),	-- Honorable Combatant's Cutlass
+s(98016)/i(161921),	-- Honorable Combatant's Deckpounder
+s(98017)/i(161921),	-- Honorable Combatant's Deckpounder
+s(98018)/i(161921),	-- Honorable Combatant's Deckpounder
+s(98019)/i(161922),	-- Honorable Combatant's Shanker
+s(98020)/i(161922),	-- Honorable Combatant's Shanker
+s(98021)/i(161922),	-- Honorable Combatant's Shanker
+s(98022)/i(161923),	-- Honorable Combatant's Polearm
+s(98023)/i(161923),	-- Honorable Combatant's Polearm
+s(98024)/i(161923),	-- Honorable Combatant's Polearm
 s(98030)/i(161935),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
 s(98041)/i(161946),	-- Hardened Tempest Boots
 s(98042)/i(161947),	-- Hardened Tempest Leggings
@@ -58074,6 +59398,16 @@ s(99934)/i(161966),	-- Honorable Combatant's Mail Waistguard
 s(99935)/i(161966),	-- Honorable Combatant's Mail Waistguard
 s(99936)/i(161967),	-- Honorable Combatant's Mail Armguards
 s(99937)/i(161967),	-- Honorable Combatant's Mail Armguards
+s(99938)/i(161893),	-- Honorable Combatant's Plate Boots
+s(99939)/i(161893),	-- Honorable Combatant's Plate Boots
+s(99940)/i(161894),	-- Honorable Combatant's Plate Gauntlets
+s(99941)/i(161894),	-- Honorable Combatant's Plate Gauntlets
+s(99942)/i(161895),	-- Honorable Combatant's Plate Greaves
+s(99943)/i(161895),	-- Honorable Combatant's Plate Greaves
+s(99944)/i(161896),	-- Honorable Combatant's Plate Waistguard
+s(99945)/i(161896),	-- Honorable Combatant's Plate Waistguard
+s(99946)/i(161897),	-- Honorable Combatant's Plate Armguards
+s(99947)/i(161897),	-- Honorable Combatant's Plate Armguards
 8.0.1.26734
 s(99952)/i(163831),	--
 s(99953)/i(163832),	--
@@ -58093,6 +59427,16 @@ s(100017)/i(159916),	-- Honorable Combatant's Satin Bracers
 s(100018)/i(159916),	-- Honorable Combatant's Satin Bracers
 s(100019)/i(159917),	-- Honorable Combatant's Satin Cloak
 s(100020)/i(159917),	-- Honorable Combatant's Satin Cloak
+s(100021)/i(159860),	-- Honorable Combatant's Plate Boots
+s(100022)/i(159860),	-- Honorable Combatant's Plate Boots
+s(100023)/i(159861),	-- Honorable Combatant's Plate Gauntlets
+s(100024)/i(159861),	-- Honorable Combatant's Plate Gauntlets
+s(100025)/i(159863),	-- Honorable Combatant's Plate Greaves
+s(100026)/i(159863),	-- Honorable Combatant's Plate Greaves
+s(100027)/i(159865),	-- Honorable Combatant's Plate Waistguard
+s(100028)/i(159865),	-- Honorable Combatant's Plate Waistguard
+s(100029)/i(159866),	-- Honorable Combatant's Plate Armguards
+s(100030)/i(159866),	-- Honorable Combatant's Plate Armguards
 s(100031)/i(159889),	-- Honorable Combatant's Mail Treads
 s(100032)/i(159889),	-- Honorable Combatant's Mail Treads
 s(100033)/i(159890),	-- Honorable Combatant's Mail Gauntlets
@@ -62066,7 +63410,6 @@ s(114278)/i(182578),	-- NPE Weapon 1H Mace AGI
 s(114279)/i(182578),	-- NPE Weapon 1H Mace AGI
 s(114280)/i(182571),	-- NPE Weapon Warglaive AGI
 s(114281)/i(182571),	-- NPE Weapon Warglaive AGI
-s(114282)/i(182568),	-- NPE Weapon 2H Axe STR
 s(114283)/i(182568),	-- NPE Weapon 2H Axe STR
 s(114285)/i(182563),	-- NPE Weapon Bow
 s(114286)/i(182565),	-- NPE Weapon 2H Mace STR
