@@ -142,6 +142,13 @@ for key,value in pairs({
 	["HEIRLOOM_TEXT"] = "Unlocked Heirloom";
 	["HEIRLOOM_TEXT_DESC"] = "This indicates whether or not you have acquired or purchased the heirloom yet.";
 	["HEIRLOOMS_UPGRADES_DESC"] = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
+	
+	["LOCK_CRITERIA_LEVEL_LABEL"] = "Player Level";
+	["LOCK_CRITERIA_QUEST_LABEL"] = "Completed Quest";
+	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
+	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
+	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
+	["TITLES_DESC"] = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 
 	-- Filter Text
 	["ARTIFACT_ID"] = "Artifact ID";
