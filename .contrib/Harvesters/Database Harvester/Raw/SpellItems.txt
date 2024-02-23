@@ -2445,6 +2445,8 @@
 7223@@@Retricutioner
 7224@@@Two-Handed Mastery
 7242@@@Fan of Knives
+1.15.1.53247
+7210@@@Dismantle
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
