@@ -188,20 +188,10 @@ if not C_QuestLog_IsComplete then
 end
 
 -- Quest Links
-local GetQuestLink, GetQuestLinkForObject = GetQuestLink;
-if app.IsRetail then
-	GetQuestLinkForObject = function(t)
-		local questID = t.questID;
-		if questID then return GetQuestLink(questID) or (
-			app.Settings:GetTooltipSetting("QuestReplacement") and ("[" .. t.name .. " (".. questID .. ")]")
-				or "quest:"..questID)
-		end
-	end
-else
-	-- Classic's #1 addon is actually Questie and they use this specific format for quest links which ATT interacts with.
-	GetQuestLinkForObject = function(t)
-		return "[" .. t.name .. " (".. t.questID .. ")]";
-	end
+local GetQuestLink = GetQuestLink;
+local function GetQuestLinkForObject(t)
+	local questID = t.questID;
+	if questID then return GetQuestLink(questID) or ("[" .. t.name .. " (".. questID .. ")]"); end
 end
 
 -- Quest Completion Lib

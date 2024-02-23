@@ -566,23 +566,6 @@ end)
 checkboxAllowWrapping:SetATTTooltip(L["WITH_WRAPPING_CHECKBOX_TOOLTIP"])
 checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
 
-local checkboxUseCustomQuestTooltips = child:CreateCheckBox(L["REPLACE_QUEST_TOOLTIPS"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("QuestReplacement"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("QuestReplacement", self:GetChecked())
-end)
-checkboxUseCustomQuestTooltips:SetATTTooltip(L["REPLACE_QUEST_TOOLTIPS_TOOLTIP"])
-checkboxUseCustomQuestTooltips:AlignBelow(checkboxAllowWrapping, -1)
-
 -- Column 2
 local headerListBehavior = child:CreateHeaderLabel(L["BEHAVIOR_LABEL"])
 headerListBehavior:SetPoint("TOPLEFT", headerTooltips, 320, 0)

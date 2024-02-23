@@ -772,7 +772,7 @@ local function RowOnEnter(self)
 		if modded ~= modifier then
 			tooltip.ATT_IsModifierKeyDown = modifier;
 			--print("Modifier change detected!");
-		else
+		elseif tooltip.ATTAttachComplete == true then
 			--print("Ignoring refresh.");
 			return;
 		end
@@ -800,15 +800,17 @@ local function RowOnEnter(self)
 	
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
-	if reference.key ~= "encounterID" and reference.key ~= "instanceID" then
-		-- Encounter & Instance Links break the tooltip.
-		local link = reference.link or reference.silentLink;
-		if link then
-			if reference.itemID or (reference.key ~= "questID" or (not app.Settings:GetTooltipSetting("QuestReplacement") and app.GameBuildVersion > 100000)) then
-				local ok, err = pcall(tooltip.SetHyperlink, tooltip, link);
-				if ok then
+	if reference.key ~= "encounterID" and reference.key ~= "instanceID" or reference.key ~= "questID" then
+		-- Encounter & Instance Links break the tooltip, Quest Links are inconsistent.
+		local link = reference.link or reference.silentLink
+		if link and link:sub(1, 1) ~= "[" then
+			if reference.itemID then
+				local ok, success = pcall(tooltip.SetHyperlink, tooltip, link);
+				if success then
 					linkSuccessful = true;
 				end
+				--print("Link:", link:gsub("|","\\"));
+				--print("Link Result!", success);
 			end
 		end
 		
