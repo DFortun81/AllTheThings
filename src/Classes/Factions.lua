@@ -272,9 +272,6 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 			return achievementID;
 		end
 	end,
-	["filterID"] = function(t)
-		return 112;
-	end,
 	["trackable"] = app.ReturnTrue,
 	["collectible"] = function(t)
 		if app.Settings.Collectibles.Reputations then
