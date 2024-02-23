@@ -1,0 +1,22 @@
+1.15.1.53247
+r(439105),	-- Big Voodoo Mask
+r(439108),	-- Big Voodoo Robe
+r(439110),	-- Guardian Leather Bracers
+r(439112),	-- Guardian Belt
+r(439114),	-- Guardian Pants
+r(439116),	-- Turtle Scale Breastplate
+r(439118),	-- Turtle Scale Gloves
+
+
+
+
+Missing in LeatherworkingItemDB.lua
+
+1.15.1.53247
+r(439105),	-- Big Voodoo Mask
+r(439108),	-- Big Voodoo Robe
+r(439110),	-- Guardian Leather Bracers
+r(439112),	-- Guardian Belt
+r(439114),	-- Guardian Pants
+r(439116),	-- Turtle Scale Breastplate
+r(439118),	-- Turtle Scale Gloves

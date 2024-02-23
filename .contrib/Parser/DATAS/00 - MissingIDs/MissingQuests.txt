@@ -353,6 +353,11 @@ q(80161),	--
 q(80180),	--
 q(80181),	--
 q(80182),	--
+1.15.1.53247
+q(80241),	-- CLASSIC:The Origins of Smithing
+q(80324),	-- CLASSIC:The Mad King
+q(80325),	-- CLASSIC:The Mad King
+q(80393),	--
 2.5.1.38043
 q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source
 q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild
@@ -1014,8 +1019,6 @@ q(29820),	-- Into the Nexus
 q(29853),	-- Champion of the King
 q(30119),	-- Well of Eternity RP Tracker
 q(30173),	-- War Pigs!
-6.0.1.18179
-q(32961),	-- Scary Ghosts and Nice Sprites - Tracking Quest
 7.3.0.24473
 q(8971),	-- REUSE
 q(37042),	--
@@ -1023,7 +1026,6 @@ q(37139),	--
 q(37200),	--
 q(37258),	--
 q(37267),	--
-q(37337),	-- Vignette: Strategist Ankor
 q(37519),	--
 q(37527),	--
 q(37529),	--
@@ -1046,46 +1048,6 @@ q(38033),	--
 q(38055),	--
 q(38056),	--
 q(38062),	--
-q(38063),	-- Unlock "Legends of Azeroth."
-q(38064),	-- Unlock "The Burning Legion."
-q(38065),	-- Unlock "Wrath of the Lich King."
-q(38066),	-- Unlock "The Shattering."
-q(38067),	-- Unlock "Heart of Pandaria."
-q(38068),	-- Unlock "A Siege of Worlds."
-q(38069),	-- Unlock "Stormwind."
-q(38070),	-- Unlock "Orgrimmar."
-q(38071),	-- Unlock "High Seas."
-q(38072),	-- Unlock "War March."
-q(38073),	-- Unlock "Ironforge."
-q(38074),	-- Unlock "Unlock Thunder Bluff."
-q(38075),	-- Unlock "Cold Mountain."
-q(38076),	-- Unlock "Mulgore Plains."
-q(38077),	-- Unlock "Night Song."
-q(38078),	-- Unlock "Undercity."
-q(38079),	-- Unlock "Gnomeregan"
-q(38080),	-- Unlock "Zul'Gurub Voo Doo"
-q(38081),	-- Unlock "Tinkertown"
-q(38082),	-- Unlock "The Zandalari"
-q(38083),	-- Unlock "Exodar"
-q(38084),	-- Unlock "Silvermoon"
-q(38085),	-- Unlock "Curse of the Worgen"
-q(38086),	-- Unlock "Rescue the Warchief"
-q(38087),	-- Unlock "Angelic"
-q(38088),	-- Unlock "Ghost"
-q(38089),	-- Unlock "Mountains"
-q(38090),	-- Unlock "Magic"
-q(38091),	-- Unlock "The Black Temple"
-q(38092),	-- Unlock "Invincible"
-q(38093),	-- Unlock "Karazhan Opera House"
-q(38094),	-- Unlock "The Argent Tournament"
-q(38095),	-- Unlock "Lament of the Highborne"
-q(38096),	-- Unlock "Faerie Dragon"
-q(38097),	-- Unlock "Totems of the Grizzlemaw"
-q(38098),	-- Unlock "Mountains of Thunder"
-q(38099),	-- Unlock "Darkmoon Carousel"
-q(38100),	-- Unlock "Shalandis Isle"
-q(38101),	-- Unlock "Way of the Monk"
-q(38102),	-- Unlock "Song of Liu Lang"
 q(38103),	-- Gossip Test Case 1
 q(38104),	-- Gossip Test Case 2
 q(38105),	-- Gossip Test Case 3
@@ -1132,9 +1094,6 @@ q(38590),	--
 q(38598),	-- TEST: Craft Some Legplates
 q(38606),	--
 q(38619),	--
-q(38625),	-- Hook & Sinker
-q(38627),	-- Worgen Stalkers (Horde Only)
-q(38630),	-- Horde Kill Squad (Alliance Only)
 q(38635),	--
 q(38636),	--
 q(38651),	--
@@ -1201,7 +1160,6 @@ q(39755),	--
 q(39760),	--
 q(39778),	--
 q(39779),	--
-q(39784),	-- Beastmaster Pao'lek
 q(39797),	-- Aponi Brightmane Slotted
 q(39833),	--
 q(39838),	-- Fire!
@@ -1264,9 +1222,7 @@ q(40295),	--
 q(40309),	--
 q(40318),	--
 q(40387),	--
-q(40413),	-- Amateur Hunters
 q(40421),	--
-q(40423),	-- Unethical Adventurers
 q(40501),	-- REUSEME_40501
 q(40548),	--
 q(40549),	--
@@ -1697,16 +1653,73 @@ q(48457),	-- Tracking Quest
 q(48796),	--
 q(48798),	--
 q(48937),	-- Create Netherwalker's Portal Generator
-7.3.5.25928
-q(49760),	--
-q(49761),	--
-q(49762),	--
-q(49763),	--
-q(49764),	--
-8.0.1.26567
-q(52781),	--
+8.0.1.26788
+q(53504),	--
+q(53505),	--
+q(53506),	--
+q(53507),	--
+q(53508),	--
+q(53509),	--
+q(53510),	--
+q(53511),	--
+q(53512),	--
+q(53513),	--
+q(53514),	--
+q(53515),	--
+q(53516),	--
+q(53517),	--
+q(53518),	--
+q(53519),	--
+q(53522),	--
+q(53523),	--
+q(53524),	--
+q(53525),	--
+q(53526),	--
+q(53527),	--
+q(53528),	--
+q(53529),	--
+q(53530),	--
+q(53531),	--
+8.1.0.27826
+q(54228),	--
+q(54230),	--
+q(54233),	--
+q(54235),	--
+q(54248),	--
+8.1.0.27985
+q(54279),	--
+q(54286),	--
+q(54290),	--
+q(54321),	--
+q(54398),	--
+q(54406),	--
+q(54409),	--
+q(54427),	--
+q(54429),	--
+8.1.0.28151
+q(54696),	--
+8.1.0.28366
+q(54885),	--
+q(54888),	--
+q(54894),	--
 8.1.5.29418
 q(55631),	--
+10.1.5.50130
+q(77605),	--
+q(77606),	--
+q(77608),	--
+q(77611),	--
+q(77622),	--
+q(77625),	--
+q(77626),	--
+q(77629),	--
+q(77632),	--
+q(77633),	--
+q(77634),	--
+q(77637),	--
+q(77638),	--
+q(77640),	--
+q(77641),	--
 10.2.0.52301
 q(77980),	--
 q(77993),	--
@@ -1721,14 +1734,10 @@ q(78122),	--
 q(76391),	--
 q(76392),	--
 q(76393),	--
-q(76911),	--
 q(77764),	-- Curious Find: Apprentice Astrologist Homework
 q(78174),	--
 q(78272),	-- Interrupting Duck
 q(78274),	--
-q(78649),	--
-q(78661),	--
-q(78662),	--
 q(78683),	--
 q(78893),	--
 q(78894),	--
@@ -1819,13 +1828,9 @@ q(79577),	--
 q(79578),	--
 q(79582),	--
 q(79583),	--
-q(79618),	--
-q(79619),	--
 q(79620),	--
 q(79621),	--
 10.2.5.52554
-q(79672),	--
-q(79674),	--
 q(79675),	--
 q(79676),	--
 q(79684),	--
