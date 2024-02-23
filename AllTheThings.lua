@@ -710,9 +710,11 @@ local function GetProgressTextForTooltip(data)
 	return app.TableConcat(text, nil, "", " ");
 end
 app.GetCollectionIcon = GetCollectionIcon;
-app.GetCompletionIcon = GetCompletionIcon;
 app.GetCollectionText = GetCollectionText;
+app.GetCompletionIcon = GetCompletionIcon;
+app.GetCompletionText = GetCompletionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
+app.GetProgressTextForTooltip = GetProgressTextForTooltip;
 
 -- Fields which are dynamic or pertain only to the specific ATT window and should never merge automatically
 -- Maybe build from /base.lua:DefaultFields since those always are able to be dynamic
@@ -3194,11 +3196,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Track if the result is not finished processing
 		group.working = working;
 		if isTopLevelSearch then InitialCachedSearch = nil; end
-
-		-- If the user wants to show the progress of this search result, do so
-		if app.Settings:GetTooltipSetting("Progress") then
-			tinsert(info, 1, { progress = GetProgressTextForTooltip(group) });
-		end
 
 		-- Add various extra field info if enabled in settings
 		app.ProcessInformationTypesForExternalTooltips(info, group, itemString)
@@ -9437,26 +9434,6 @@ RowOnEnter = function (self)
 		tinsert(tooltipInfo, { left = reference.text });
 	end
 
-	-- Miscellaneous fields
-	-- app.PrintDebug("Adding misc fields");
-	if app.Settings:GetTooltipSetting("Progress") then
-		if reference.total and reference.total >= 2 then
-			-- if collecting this reference type, then show Collection State
-			if reference.collectible then
-				tinsert(tooltipInfo, {
-					left = L.COLLECTION_PROGRESS,
-					right = GetCollectionText(reference.collected or reference.saved),
-				});
-			-- if completion/tracking is available, show Completion State
-			elseif reference.trackable then
-				tinsert(tooltipInfo, {
-					left = L.TRACKING_PROGRESS,
-					right = GetCompletionText(reference.saved),
-				});
-			end
-		end
-	end
-
 	-- achievement progress. If it has a measurable statistic, show it under the achievement description
 	if reference.achievementID then
 		if reference.statistic then
@@ -9696,9 +9673,6 @@ RowOnEnter = function (self)
 			left = L.CRITERIA_FOR,
 			right = GetAchievementLink(reference.achievementID),
 		});
-	end
-	if app.Settings:GetTooltipSetting("Progress") then
-		tinsert(tooltipInfo, 1, { progress = GetProgressTextForTooltip(reference) });
 	end
 
 	-- Additional information (search will insert this information if found in search)

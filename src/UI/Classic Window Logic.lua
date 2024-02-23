@@ -9,10 +9,7 @@ local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
 local GetCompletionIcon = app.GetCompletionIcon;
-local GetCompletionText = app.GetCompletionText;
-local GetCollectionText = app.GetCollectionText;
 local GetProgressTextForRow = app.GetProgressTextForRow;
-local GetProgressTextForTooltip = app.GetProgressTextForTooltip;
 local GetRelativeValue = app.GetRelativeValue;
 local ResolveSymbolicLink = app.ResolveSymbolicLink;
 local SearchForField = app.SearchForField;
@@ -845,29 +842,6 @@ local function RowOnEnter(self)
 			left = "Failed to acquire information. This may have been removed from the game.",
 			r = 1, g = 1, b = 1,
 		});
-	end
-	
-	local progressText = GetProgressTextForTooltip(reference);
-	if progressText then
-		tinsert(tooltipInfo, { progress = progressText });
-	end
-	
-	if app.Settings:GetTooltipSetting("Progress") then
-		if reference.total and reference.total >= 2 then
-			-- if collecting this reference type, then show Collection State
-			if reference.collectible then
-				tinsert(tooltipInfo, {
-					left = L.COLLECTION_PROGRESS,
-					right = GetCollectionText(reference.collected or reference.saved),
-				});
-			-- if completion/tracking is available, show Completion State
-			elseif reference.trackable then
-				tinsert(tooltipInfo, {
-					left = "Tracking Progress",
-					right = GetCompletionText(reference.saved),
-				});
-			end
-		end
 	end
 	
 	if reference.minReputation and not reference.maxReputation then

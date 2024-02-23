@@ -1664,11 +1664,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 	end
 
-	-- If the user wants to show the progress of this search result, do so.
-	if app.Settings:GetTooltipSetting("Progress") then
-		tinsert(info, 1, { progress = GetProgressTextForTooltip(group) });
-	end
-
 	-- If there was any informational text generated, then attach that info.
 	if #info > 0 then
 		local uniques, dupes, _ = {}, {};

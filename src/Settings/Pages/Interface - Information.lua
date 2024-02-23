@@ -80,10 +80,10 @@ local function GetRecursiveValueForInformationType(t, reference)
 	local informationTypeID = t.informationTypeID;
 	return reference[informationTypeID] or GetRelativeValue(reference, informationTypeID);
 end
-local function ProcessInformationType(t, reference, info)
+local function ProcessInformationType(t, reference, tooltipInfo)
 	local val = t.GetValue(t, reference);
 	if val then
-		tinsert(info, { left = t.text, right = ConversionMethods[t.informationTypeID](val, reference)});
+		tinsert(tooltipInfo, { left = t.text, right = ConversionMethods[t.informationTypeID](val, reference)});
 	end
 end
 local CreateInformationType = app.CreateClass("InformationType", "informationTypeID", {
@@ -115,10 +115,10 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 local AppendedInformationTextEntries = {};
 local PostProcessor = CreateInformationType("__postprocessor", {
 	priority = 99999999,
-	Process = function(t, reference, info)
+	Process = function(t, reference, tooltipInfo)
 		if #AppendedInformationTextEntries > 0 then
 			for i,entry in ipairs(AppendedInformationTextEntries) do
-				tinsert(info, entry);
+				tinsert(tooltipInfo, entry);
 			end
 			wipe(AppendedInformationTextEntries);
 		end
@@ -136,18 +136,43 @@ local InformationTypes = {
 	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, IsStandaloneProperty = false }),
 	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, IsStandaloneProperty = false }),
 	CreateInformationType("Layer", { text = L.LAYER, priority = 1, IsStandaloneProperty = false }),
+	
+	-- Progress Fields (top most)
+	CreateInformationType("Progress", { text = L.SOCIAL_PROGRESS, priority = 1, HideCheckBox = true,
+		Process = function(t, reference, tooltipInfo)
+			local progressText = app.GetProgressTextForTooltip(reference);
+			if progressText then
+				tinsert(tooltipInfo, { progress = progressText });
+				if reference.total and reference.total >= 2 then
+					-- if collecting this reference type, then show Collection State
+					if reference.collectible then
+						tinsert(tooltipInfo, {
+							left = L.COLLECTION_PROGRESS,
+							right = app.GetCollectionText(reference.collected or reference.saved),
+						});
+					-- if completion/tracking is available, show Completion State
+					elseif reference.trackable then
+						tinsert(tooltipInfo, {
+							left = L.TRACKING_PROGRESS,
+							right = app.GetCompletionText(reference.saved),
+						});
+					end
+				end
+			end
+		end,
+	}),
 	CreateInformationType("SocialProgress", { text = L.SOCIAL_PROGRESS, priority = 1, IsStandaloneProperty = false }),
 	
 	-- Contextual fields
-	CreateInformationType("parent", { text = "Parent", priority = 1, ShouldDisplayInExternalTooltips = false,
-		Process = function(t, reference, info)
+	CreateInformationType("parent", { text = "Parent", priority = 1.1, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
 			if not reference.itemID then
 				local parent = reference.parent or reference.sourceParent;
 				if parent then
 					-- Only show this for 2 depth hierarchies and above.
 					local grandparent = parent.parent or parent.sourceParent;
 					if grandparent then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = grandparent.text or RETRIEVING_DATA,
 							right = parent.text or RETRIEVING_DATA
 						});
@@ -158,7 +183,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("guid", { text = L.GUID, priority = 2 }),
 	CreateInformationType("lvl", { text = LEVEL, priority = 2, ShouldDisplayInExternalTooltips = false,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local lvl = reference.lvl;-- or GetRelativeValue(reference, "lvl");	-- TODO: Investigate if we want this.
 			if lvl then
 				local minlvl, maxlvl;
@@ -170,13 +195,13 @@ local InformationTypes = {
 				end
 				-- i suppose a maxlvl of 1 might exist?
 				if maxlvl and maxlvl > 0 then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = L["REQUIRES_LEVEL"],
 						right = tostring(minlvl) .. " to " .. tostring(maxlvl),
 					});
 				-- no point to show 'requires lvl 1'
 				elseif minlvl and minlvl > 1 then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = L["REQUIRES_LEVEL"],
 						right = tostring(minlvl),
 					});
@@ -188,7 +213,7 @@ local InformationTypes = {
 	-- Quest Fields
 	-- Providers
 	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local coords = reference.coords;
 			if not coords then
 				coords = reference.coord;
@@ -214,14 +239,14 @@ local InformationTypes = {
 				else
 					str = "";
 				end
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = j == 0 and t.text,
 					right = str .. GetCoordString(x, y),
 					r = 1, g = 1, b = 1
 				});
 				j = j + 1;
 				if j > maxCoords then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						right = (L.AND_MORE):format(coordCount - maxCoords),
 						r = 1, g = 1, b = 1
 					});
@@ -231,10 +256,10 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local coord = reference.playerCoord;
 			if coord then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = t.text,
 					right = GetCoordString(coord[1], coord[2]),
 					r = 1, g = 1, b = 1
@@ -245,10 +270,10 @@ local InformationTypes = {
 	
 	-- Description fields
 	CreateInformationType("lore", { text = L.LORE, priority = 2.4,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local lore = reference.lore;
 			if lore then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = lore,
 					color = app.Colors.TooltipLore,
 					wrap = true,
@@ -257,10 +282,10 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("description", { text = L.DESCRIPTIONS, priority = 2.5,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local description = reference.description;
 			if description then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = description,
 					color = app.Colors.TooltipDescription,
 					wrap = true,
@@ -269,7 +294,7 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("maps", { text = L.MAPS, priority = 2.6,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local maps = reference.maps;
 			if maps and #maps > 0 then
 				local currentMapID = app.CurrentMapID;
@@ -289,13 +314,13 @@ local InformationTypes = {
 					-- If there's a description and it is visible, add some visual space.
 					local description = reference.description;
 					if description and app.Settings:GetTooltipSetting("description") then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = " ",
 							color = app.Colors.TooltipDescription,
 							wrap = true,
 						});
 					end
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text .. ": " .. app.TableConcat(mapNames, nil, nil, ", "),
 						color = app.Colors.TooltipDescription,
 						wrap = true,
@@ -307,9 +332,9 @@ local InformationTypes = {
 	CreateInformationType("pb", {
 		priority = 2.7,
 		text = L.PET_BATTLES,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			if reference.pb then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.REQUIRES_PETBATTLES,
 					wrap = true,
 				});
@@ -319,9 +344,9 @@ local InformationTypes = {
 	CreateInformationType("pvp", {
 		priority = 2.7,
 		text = PVP,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			if reference.pvp then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.REQUIRES_PVP,
 					wrap = true,
 				});
@@ -331,14 +356,14 @@ local InformationTypes = {
 	CreateInformationType("u", {
 		priority = 2.7,
 		text = L.AVAILABILITY,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local u = reference.u;
 			if u then
 				local condition = L.AVAILABILITY_CONDITIONS[u];
 				if condition then
 					local buildVersion = condition[5];
 					if not buildVersion or app.GameBuildVersion < buildVersion then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = condition[2],
 							wrap = true,
 						});
@@ -352,17 +377,17 @@ local InformationTypes = {
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),
 	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local f = reference.filterID or reference.f;
 			if f then
 				local filterForRWP = reference.filterForRWP;
 				if filterForRWP then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text,
 						right = ConversionMethods.filterID(f, reference) .. " -> " .. ConversionMethods.filterID(filterForRWP, reference),
 					});
 				else
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text,
 						right = ConversionMethods.filterID(f, reference),
 					});
@@ -399,11 +424,11 @@ local InformationTypes = {
 	
 	CreateInformationType("questID", { text = L.QUEST_ID, priority = 8 }),
 	CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 8,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local qgs = reference.qgs;
 			if qgs then
 				for i,creatureID in ipairs(qgs) do
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = (i == 1 and L.QUEST_GIVER),
 						right = ConversionMethods.creatureName(creatureID, reference),
 					});
@@ -420,18 +445,18 @@ local InformationTypes = {
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
 	CreateInformationType("crs", { text = L.CREATURES_LIST,
 		limit = 25,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local crs = reference.crs;
 			if crs then
 				-- extreme amounts of creatures tagged, then only list a summary of how many...
 				if #crs > t.limit then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = CREATURE,
 						right = L.CREATURES_COUNT:format(#crs),
 					});
 				else
 					for i,creatureID in ipairs(crs) do
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = (i == 1 and CREATURE),
 							right = ConversionMethods.creatureName(creatureID, reference),
 						});
@@ -464,7 +489,7 @@ local InformationTypes = {
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
 	
 	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayInExternalTooltips = false,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local c = reference.c;-- or GetRelativeValue(reference, "c");	-- TODO: Investigate if we want this.
 			if c then
 				local classes_tbl = {};
@@ -474,12 +499,12 @@ local InformationTypes = {
 				end
 				local str = app.TableConcat(classes_tbl, nil, nil, ", ")
 				if #classes_tbl > 4 then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text .. " " .. str,
 						wrap = true,
 					});
 				else
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text,
 						right = str,
 					});
@@ -488,22 +513,22 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("r", { text = RACES, priority = 8000, ShouldDisplayInExternalTooltips = false,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local r = reference.r;-- or GetRelativeValue(reference, "r");	-- TODO: Investigate if we want this.
 			if r and r > 0 then
 				local usecolors = app.Settings:GetTooltipSetting("UseMoreColors");
 				if r == 2 then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text,
 						right = usecolors and Colorize(ITEM_REQ_ALLIANCE, app.Colors.Alliance) or ITEM_REQ_ALLIANCE
 					});
 				elseif r == 1 then
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text,
 						right = usecolors and Colorize(ITEM_REQ_HORDE, app.Colors.Horde) or ITEM_REQ_HORDE
 					});
 				else
-					tinsert(info, {
+					tinsert(tooltipInfo, {
 						left = t.text,
 						right = UNKNOWN
 					});
@@ -522,12 +547,12 @@ local InformationTypes = {
 					end
 					local str = app.TableConcat(races_tbl, nil, nil, ", ")
 					if #races_tbl > 4 then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = t.text .. " " .. str,
 							wrap = true,
 						});
 					else
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = t.text,
 							right = str
 						});
@@ -537,17 +562,17 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("requireSkill", { text = TRADE_SKILLS, priority = 8000,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local requireSkill, learnedAt = reference.requireSkill, reference.learnedAt;
 			if requireSkill then
 				local professionName = ConversionMethods.professionName(requireSkill);
 				if learnedAt then professionName = professionName .. " (" .. learnedAt .. ")"; end
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.REQUIRES,
 					right = professionName,
 				});
 			elseif learnedAt then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.REQUIRES,
 					right = tostring(learnedAt),
 				});
@@ -565,9 +590,9 @@ local InformationTypes = {
 		priority = 10000,
 		text = "OnTooltip",
 		ForceActive = true,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			local OnTooltip = reference.OnTooltip;
-			if OnTooltip then OnTooltip(reference, info); end
+			if OnTooltip then OnTooltip(reference, tooltipInfo); end
 		end,
 	});
 };
@@ -612,15 +637,15 @@ local function RefreshActiveInformationTypes()
 	ActiveInformationTypes[#ActiveInformationTypes + 1] = PostProcessor;
 end
 
-app.ProcessInformationTypes = function(info, reference)
+app.ProcessInformationTypes = function(tooltipInfo, reference)
 	for _,informationType in ipairs(ActiveInformationTypes) do
-		informationType.Process(informationType, reference, info);
+		informationType.Process(informationType, reference, tooltipInfo);
 	end
 end
-app.ProcessInformationTypesForExternalTooltips = function(info, reference, itemString)
+app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference, itemString)
 	reference.itemString = itemString;
 	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
-		informationType.Process(informationType, reference, info);
+		informationType.Process(informationType, reference, tooltipInfo);
 	end
 	reference.itemString = nil;
 end
@@ -638,7 +663,7 @@ settings.RefreshActiveInformationTypes = function()
 	wipe(SortedInformationTypesByName);
 	for i,informationType in ipairs(InformationTypes) do
 		SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
-		if not informationType.ForceActive then
+		if not (informationType.ForceActive or informationType.HideCheckBox) then
 			SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
 		end
 	end

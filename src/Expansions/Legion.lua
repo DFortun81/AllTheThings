@@ -132,6 +132,7 @@ if C_ArtifactUI then
 	-- External Functionality
 	-- TODO: Eventually I'd like for this to not be externally referenced and to instead use an event handler or to register with the Settings Menu or something (be able to turn it off)
 	app.AddArtifactRelicInformation = function(itemID, rawlink, info, group)
+		-- TODO: Change this to a different tooltip setting.
 		if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 			-- If the item is a relic, then let's compare against equipped relics.
 			if CurrentArtifactRelicItemLevels then
