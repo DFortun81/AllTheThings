@@ -120,3 +120,40 @@ def check_diff():
                 #build_list.writelines(build_dict[thing])
     with open(Path("Builds", "Retail2.txt"), "w") as build_list:
         build_list.writelines(main_list)
+
+def get_existing_ids_old(thing: type[Thing]) -> list[str]:
+    """Get the IDs of a thing from Categories.lua."""
+    if not thing.real_collectible:
+        raise NotImplementedError("This is not a real collectible.")
+    categories_path = Path("..", "..", "..", "ptr_db", "Dragonflight", "Categories.lua")
+    existing_ids = list[str]()
+    with open(categories_path, encoding="utf8") as categories_file:
+        for line in categories_file:
+            words = line.split(",")
+            for word in words:
+                if any(prefix in word for prefix in thing.existing_prefixes()):
+                    if thing == Pets and "fp(" in word:
+                        continue
+                    thing_id = re.sub("[^\\d^.]", "", word)
+                    existing_ids.append(thing_id + "\n")
+    return existing_ids
+def get_existing_ids_item(thing) -> list[str]:
+    """WORK IN PROGRESS Get the IDs of a thing from Categories.lua."""
+    id_path = Path("..", "..", "..", ".contrib", "Debugging", "AllItems.lua")
+    uncol_path = Path(DATAS_FOLDER, "00 - Item Database", "Uncollectible.lua")
+    existing_ids = list[str]()
+    with open(id_path, encoding="utf8") as id_file:
+        for line in id_file:
+            words = line.split(',')
+            for word in words:
+                if any(prefix in word for prefix in thing.existing_prefixes()):
+                    thing_id = re.sub("[^\\d^.]", "", word)
+                    existing_ids.append(thing_id + "\n")
+    with open(uncol_path, encoding="utf8") as id_file:
+        for line in id_file:
+            words = line.split(';')
+            for word in words:
+                if any(prefix in word for prefix in thing.existing_prefixes()):
+                    thing_id = re.sub("[^\\d^.]", "", word)
+                    existing_ids.append(thing_id + "\n")
+    return existing_ids

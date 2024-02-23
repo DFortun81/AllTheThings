@@ -4,6 +4,7 @@ from pathlib import Path
 from packaging import version
 
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
+DEBUGGING_FOLDER = Path("..", "..", "..", ".contrib", "Debugging")
 DELIMITER = "@@@"
 
 
@@ -19,6 +20,10 @@ class Thing(ABC):
     @abstractmethod
     def table() -> str:
         ...
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        raise NotImplementedError
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
@@ -44,6 +49,10 @@ class Achievements(Thing):
         return "achievement"
 
     @staticmethod
+    def debugDB_prefix() -> str:
+        return "ach"
+
+    @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
         return ("ach(",)
 
@@ -61,6 +70,10 @@ class Achievements(Thing):
 class Factions(Thing):
     @staticmethod
     def table() -> str:
+        return "faction"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
         return "faction"
 
     @staticmethod
@@ -87,6 +100,10 @@ class FlightPaths(Thing):
     @staticmethod
     def table() -> str:
         return "taxinodes"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "flightPath"
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
@@ -118,6 +135,10 @@ class Followers(Thing):
         return "garrfollower"
 
     @staticmethod
+    def debugDB_prefix() -> str:
+        return "follower"
+
+    @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
         return "follower(", "followerID"
 
@@ -142,6 +163,10 @@ class Illusions(Thing):
         return "transmogillusion"
 
     @staticmethod
+    def debugDB_prefix() -> str:
+        return "illusion"
+
+    @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
         return ("ill(",)
 
@@ -161,12 +186,37 @@ class Illusions(Thing):
         else:
             return None
 
+class Items(Thing):
+    @staticmethod
+    def table() -> str:
+        return "itemsparse"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "item"
+
+    @staticmethod
+    def existing_prefixes() -> tuple[str, ...]:
+        return "i(", "itemID", '"i"'
+
+    @staticmethod
+    def new_prefix() -> str:
+        return "i("
+
+    @staticmethod
+    def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
+        # Helps Toys and Transmog
+        return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
 
 class Mounts(Thing):
     db_path = Path(DATAS_FOLDER, "00 - DB", "MountDB.lua")
 
     @staticmethod
     def table() -> str:
+        return "mount"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
         return "mount"
 
     @staticmethod
@@ -198,6 +248,10 @@ class Pets(Thing):
         return "battlepetspecies"
 
     @staticmethod
+    def debugDB_prefix() -> str:
+        return "species"
+
+    @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
         return ("p(",)
 
@@ -226,6 +280,10 @@ class Quests(Thing):
         return "questv2"
 
     @staticmethod
+    def debugDB_prefix() -> str:
+        return "quest"
+
+    @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
         return "q(", "questID"
 
@@ -242,6 +300,10 @@ class Recipes(Thing):
     @staticmethod
     def table() -> str:
         return "skilllineability"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "recipe"
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
@@ -263,6 +325,10 @@ class Titles(Thing):
         return "chartitles"
 
     @staticmethod
+    def debugDB_prefix() -> str:
+        return "title"
+
+    @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
         return ("title(",)
 
@@ -282,6 +348,10 @@ class Toys(Thing):
 
     @staticmethod
     def table() -> str:
+        return "toy"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
         return "toy"
 
     @staticmethod
@@ -309,6 +379,10 @@ class Transmog(Thing):
     @staticmethod
     def table() -> str:
         return "itemmodifiedappearance"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "source"
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
@@ -378,22 +452,3 @@ class SkillLines(Thing):
             "DisplayName_lang" if "DisplayName_lang" in row else "DisplayName_lang[0]"
         )
         return f"{row['ID']}{DELIMITER}{row[name]}"
-
-
-class Items(Thing):
-    @staticmethod
-    def table() -> str:
-        return "itemsparse"
-
-    @staticmethod
-    def existing_prefixes() -> tuple[str, ...]:
-        return "i(", "itemID", '"i"'
-
-    @staticmethod
-    def new_prefix() -> str:
-        return "i("
-
-    @staticmethod
-    def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
-        # Helps Toys and Transmog
-        return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"

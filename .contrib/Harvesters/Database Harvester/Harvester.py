@@ -3,17 +3,20 @@
 import csv
 import re
 import requests
+import json
 from pathlib import Path
 from packaging import version
 from QuestNames import get_quest_names
 from ThingTypes import (
     DATAS_FOLDER,
+    DEBUGGING_FOLDER,
     DELIMITER,
     Achievements,
     Factions,
     FlightPaths,
     Followers,
     Illusions,
+    Items,
     Mounts,
     Pets,
     Quests,
@@ -25,7 +28,6 @@ from ThingTypes import (
     # SpellItems,
     SpellNames,
     # SkillLines,
-    Items,
     # Creatures,
     remove_non_digits,
 )
@@ -131,7 +133,7 @@ def get_thing_table(thing: type[Thing], build: str) -> list[str]:
 
 
 def add_latest_build(build: str) -> list[str]:
-    """Append the latest build to all the BuildList files."""
+    """Append the latest build to Builds.txt"""
     next_builds: list[str] = []
     with open("Builds.txt", "r") as build_list:
         build_lines: list[str] = build_list.readlines()
@@ -165,24 +167,6 @@ def get_thing_data(thing: type[Thing], build: str) -> list[str]:
     return thing_list
 
 
-def get_existing_ids(thing: type[Thing]) -> list[str]:
-    """Get the IDs of a thing from Categories.lua."""
-    if not thing.real_collectible:
-        raise NotImplementedError("This is not a real collectible.")
-    categories_path = Path("..", "..", "..", "ptr_db", "Dragonflight", "Categories.lua")
-    existing_ids = list[str]()
-    with open(categories_path, encoding="utf8") as categories_file:
-        for line in categories_file:
-            words = line.split(",")
-            for word in words:
-                if any(prefix in word for prefix in thing.existing_prefixes()):
-                    if thing == Pets and "fp(" in word:
-                        continue
-                    thing_id = re.sub("[^\\d^.]", "", word)
-                    existing_ids.append(thing_id + "\n")
-    return existing_ids
-
-
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
     profession_dict: dict[str, list[str]] = build_profession_dict()
@@ -208,6 +192,7 @@ def sort_raw_file_recipes() -> None:
 
 
 def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipes: list[str]) -> list[str]:
+    """Get itemDB difference for recipes"""
     itemdb_list = list[str]()
     itemdb_path = Path(
         DATAS_FOLDER,
@@ -232,8 +217,19 @@ def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipe
         return []
 
 
+def get_existing_ids(thing: type[Thing]) -> list[str]:
+    """Get existing IDs from debug"""
+    existing_ids = list[str]()
+    debug_path = Path(DEBUGGING_FOLDER, f"{thing.debugDB_prefix()}ID_DebugDB.json")
+    with open(debug_path, encoding="utf-8-sig") as debugDB_file:
+        json_file = json.loads(debugDB_file.readlines()[0])
+        for key in json_file.keys():
+            existing_ids.append(f"{key}\n")
+    return existing_ids
+
+
 def create_missing_recipes() -> None:
-    """Create a missing file for Recipes using difference between Categories.lua, raw file and exclusions."""
+    """Create a missing file for Recipes using difference between debug, raw file and exclusions."""
     profession_dict: dict[str, list[str]] = build_profession_dict()
     raw_path_dict: dict[str, Path] = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
@@ -274,30 +270,9 @@ def create_missing_recipes() -> None:
             missing_path_dict[profession].unlink()
     return
 
-def get_existing_ids_item(thing) -> list[str]:
-    """WORK IN PROGRESS Get the IDs of a thing from Categories.lua."""
-    id_path = Path("..", "..", "..", ".contrib", "Debugging", "AllItems.lua")
-    uncol_path = Path(DATAS_FOLDER, "00 - Item Database", "Uncollectible.lua")
-    existing_ids = list[str]()
-    with open(id_path, encoding="utf8") as id_file:
-        for line in id_file:
-            words = line.split(',')
-            for word in words:
-                if any(prefix in word for prefix in thing.existing_prefixes()):
-                    thing_id = re.sub("[^\\d^.]", "", word)
-                    existing_ids.append(thing_id + "\n")
-    with open(uncol_path, encoding="utf8") as id_file:
-        for line in id_file:
-            words = line.split(';')
-            for word in words:
-                if any(prefix in word for prefix in thing.existing_prefixes()):
-                    thing_id = re.sub("[^\\d^.]", "", word)
-                    existing_ids.append(thing_id + "\n")
-    return existing_ids
-
 
 def create_missing_file(thing: type[Thing]) -> None:
-    """Create a missing file for a thing using difference between Categories.lua, raw file and exclusions."""
+    """Create a missing file for a thing using difference between debug, raw file and exclusions."""
     if not thing.real_collectible:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
@@ -314,7 +289,6 @@ def create_missing_file(thing: type[Thing]) -> None:
         difference_db = None
         difference = sorted(
             set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
-            # set(raw_ids) - set(get_existing_ids_item(thing)) - set(excluded_ids),
             key=raw_ids.index,
         )
         if (difference := remove_empty_builds(difference)):
@@ -514,7 +488,7 @@ def post_process(thing: type[Thing]) -> None:
 
 
 def add_latest_data(build: str) -> None:
-    """Adds latest builds to build files and add latests data to raw files"""
+    """Adds latest builds to build file and add latest data to raw files"""
     things: list[type[Thing]] = things_version(build)
     next_builds: list[str] = add_latest_build(build)
     for thing in things:
@@ -551,11 +525,10 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing != Items:
-            print('Missing File: ', thing)
-            create_missing_file(thing)
-            print('Post Process: ', thing)
-            post_process(thing)
+        print('Missing File: ', thing)
+        create_missing_file(thing)
+        print('Post Process: ', thing)
+        post_process(thing)
 
 
 def give_name_item() -> None:
@@ -576,11 +549,18 @@ def give_name_item() -> None:
     with open("Fast.txt", "w") as missing_file:
         missing_file.writelines(lines)
 
-
-"""Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.2.5.53212")
-"""Step 2: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
-"""Step 3: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
+"""How to add latest data from a new Build"""
+"""Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
+# add_latest_data("10.2.5.53441")
+"""Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
+"""Step 3a: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
-"""Step 4: Run create_missing_files() and (you have to uncomment it)"""
+"""Step 2b: If new items has been detected. Please add them in Fast.txt in raw format and run give_name_item()"""
+# give_name_item()
+"""Step 3b: Add the new items to Unsorted.lua and empty Fast.txt"""
+
+"""How to generate Missing Files"""
+"""Step 1: Delete itemDB.json and questDB.json in DATAS/00 - Item Database folder"""
+"""Step 2: Parse Retail with Debug Mode. Change parser config to a PTR patch if you want to account for PTR things."""
+"""Step 3: Run create_missing_files() and (you have to uncomment it)"""
 # create_missing_files()
