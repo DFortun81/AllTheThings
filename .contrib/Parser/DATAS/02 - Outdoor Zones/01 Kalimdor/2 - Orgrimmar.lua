@@ -547,11 +547,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7979, {	-- Plans: Barbaric Iron Breastplate (RECIPE!)
-							-- #if BEFORE 9.2.5
-							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-							-- #else
-							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-							-- #endif
+						-- #if BEFORE 6.0.2
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #elseif AFTER 9.2.5
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						-- #else
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #endif
 						}),
 					},
 				}),
@@ -1019,10 +1021,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7980, {	-- Plans: Barbaric Iron Helm (RECIPE!)
-						-- #if BEFORE 9.2.5
+						-- #if BEFORE 6.0.2
 						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #elseif AFTER 9.2.5
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
 						-- #else
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						-- #endif
 						}),
 					},
@@ -1045,10 +1049,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7982, {	-- Plans: Barbaric Iron Gloves (RECIPE!)
-						-- #if BEFORE 9.2.5
+						-- #if BEFORE 6.0.2
 						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #elseif AFTER 9.2.5
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
 						-- #else
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						-- #endif
 						}),
 					},
@@ -1279,10 +1285,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
-						-- #if BEFORE 9.2.5
+						-- #if BEFORE 6.0.2
 						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #elseif AFTER 9.2.5
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
 						-- #else
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						-- #endif
 						}),
 					},
@@ -1642,6 +1650,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["races"] = HORDE_ONLY,
 				}),
+				q(6611, {	-- To Gadgetzan You Go!
+					-- #if BEFORE 4.0.3
+					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
+					["coord"] = { 57.4, 53.6, ORGRIMMAR },
+					-- #elseif AFTER 8.0.1
+					["description"] = "Becomes available at Classic Cooking skill level 225 when character level requirement is met.",
+					["coord"] = { 32.2, 69.4, ORGRIMMAR },
+					-- #else
+					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
+					["coord"] = { 32.2, 69.4, ORGRIMMAR },
+					-- #endif
+					["qg"] = 3399,	-- Zamja
+					["requireSkill"] = COOKING,
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(35, 35, 15),
+				}),
 				q(2380, {	-- To Orgrimmar!
 					["qg"] = 3170,	-- Kaplak
 					["altQuests"] = { 2378 },	-- Find the Shattered Hand
@@ -1705,10 +1730,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
-						-- #if BEFORE 9.2.5
+						-- #if BEFORE 6.0.2
 						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #elseif AFTER 9.2.5
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
 						-- #else
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						-- #endif
 						}),
 					},
