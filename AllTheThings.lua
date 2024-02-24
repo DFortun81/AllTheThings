@@ -9421,8 +9421,8 @@ RowOnEnter = function (self)
 			if success then
 				linkSuccessful = true;
 			end
-			print("Link:", link:gsub("|","\\"));
-			print("Link Result!", success, reference.key, reference.__type);
+			--print("Link:", link:gsub("|","\\"));
+			--print("Link Result!", success, reference.key, reference.__type);
 		end
 		
 		-- Only if the link was unsuccessful.
