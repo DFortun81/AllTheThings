@@ -24,10 +24,13 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.CONTAINS = "包含：";
 	L.FACTIONS = "阵营";
 	L.COORDINATES = "坐标";
+	L.AND_MORE = "和 %s 更多...";	--TODO: check
+	L.AND_OTHER_SOURCES = "和 %s 其他来源...";	--TODO: check
+	--TODO: L.PLAYER_COORDINATES = "Player Coordinates";
 	L.NO_COORDINATES_FORMAT = "%s 没有已知坐标";
 	L.TOM_TOM_NOT_FOUND = "必须安装 TomTom 才能绘制坐标。";
 	L.FLIGHT_PATHS = "飞行路线";
-	L.KNOWN_BY = "已知 %s";
+	L.KNOWN_BY = "已知 %s";	--TODO: check
 	L.REQUIRES = "需要";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = "请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
@@ -37,6 +40,8 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.ITEM_GIVES_REP = "提供声望 '";
 	L.COST = "花费";
 	L.COST_DESC = "这里面包含了获得或购买这个物品所需要的物品";
+	--TODO: L.COST_TOTAL = "Total Cost";
+	--TODO: L.COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
 	L.SOURCES = "来源";
 	L.SOURCES_DESC = "显示这个东西的来源。\n\n特别是特定商人/NPC，任务，战斗，等等。";
 	L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。";
@@ -92,8 +97,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	--TODO: L.OBJECTIVES = "Objectives";
 	--TODO: L.QUEST_GIVERS = "Quest Givers";
 	L._AND = " 和";
-	L.AND_MORE = "和 %s 更多...";
-	L.AND_OTHER_SOURCES = "和 %s 其他来源...";
 	L.DURING_WQ_ONLY = "可以在世界任务激活时完成";
 	L.COMPLETED_DAILY = "可以每天完成";
 	L.COMPLETED_WEEKLY = "可以每周完成";
@@ -209,6 +212,7 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.REFRESHING_COLLECTION = "刷新收藏…";
 	L.DONE_REFRESHING = "刷新收藏完成。";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由于缺少暴雪 API 信息而未能检测到。\n\n将在下次强制刷新后修复。";
+	--TODO: L.AVAILABILITY = "Availability";
 	L.REQUIRES_PVP = "|CFF00FFDE需要 PvP 活动或货币|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDE需要宠物对战|r";
 	L.REPORT_INACCURATE_QUEST = "错误任务信息！（点击报告）";
@@ -249,6 +253,20 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.SYM_ROW_INFORMATION = "右键单击以查看来自其他位置的其它内容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
 	L.COMPLETED_BY = "完成：%s";
+	--TODO: L.OWNED_BY = "Owned by %s";
+
+-- Social Module
+	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
+	--TODO: L.NEW_VERSION_FLAVORS = {
+	-- 	"or we'll give Sylvanas another lighter",
+	-- 	"Alexstrasza is worried about you",
+	-- 	"and Invincible will drop |cffffaaaafor sure|r next time",
+	-- 	"this was merely a setback",
+	-- 	"time to drop your % down",
+	-- 	"and a turtle will make it to the water",
+	-- 	"CHAMPYUUN, DE AZURIITE",
+	-- };
+	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
 
 -- Settings.lua
 	L.SKIP_AUTO_REFRESH = "不自动刷新！";
@@ -589,6 +607,12 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	-- Tooltip Text
 		L.DROP_RATE = "掉率";
 		L.QUEST_GIVER = "任务发放者";
+		--TODO: L.EVENT_SCHEDULE = "Event Schedule";
+		--TODO: L.EVENT_ACTIVE = "Active:";
+		--TODO: L.EVENT_START = "Start:";
+		--TODO: L.EVENT_END = "End:";
+		--TODO: L.EVENT_WHERE = "Where:";
+		--TODO: L.REQUIRES_EVENT = "Requires Event";
 		L.LOCKOUT = "锁定";
 		L.SHARED = "共享";
 		L.SPLIT = "按难度";
@@ -607,6 +631,8 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.ARTIFACT_ID = "神器 ID";
 		L.AZERITE_ESSENCE_ID = "艾泽里特精华 ID";
 		L.CREATURE_ID = "生物 ID";
+		--TODO: L.CREATURES_COUNT = "[%s Creatures]";
+		--TODO: L.CREATURES_LIST = "Creatures List";
 		L.CURRENCY_ID = "货币 ID";
 		L.DIFFICULTY_ID = "难度 ID";
 		L.ENCOUNTER_ID = "首领战斗 ID";

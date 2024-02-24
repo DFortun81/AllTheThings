@@ -22,6 +22,9 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	L.CONTAINS = "Enthält:";
 	L.FACTIONS = "Fraktionen";
 	L.COORDINATES = "Koordinaten";
+	L.AND_MORE = "Und %s mehr...";
+	L.AND_OTHER_SOURCES = "Und %s andere Quellen...";
+	--TODO: L.PLAYER_COORDINATES = "Player Coordinates";
 	--TODO: L.NO_COORDINATES_FORMAT = "No known coordinates for %s";
 	--TODO: L.TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
 	L.FLIGHT_PATHS = "Flugpunkte";
@@ -35,6 +38,8 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	L.ITEM_GIVES_REP = "Bietet Ruf mit '";
 	L.COST = "Kosten";
 	L.COST_DESC = "Dies zeigt eine visuelle Aufschlüsselung dessen, was benötigt wird um dieses Ding zu erhalten oder zu kaufen";
+	--TODO: L.COST_TOTAL = "Total Cost";
+	--TODO: L.COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
 	L.SOURCES = "Quelle(n)";
 	L.SOURCES_DESC = "Zeigt die Quelle dieses Dings an.\n\nInsbesondere, ein bestimmter Händler/NPC, Quest, Boss, etc.";
 	L.WRONG_FACTION = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um dies anschauen zu können.";
@@ -90,8 +95,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	--TODO: L.OBJECTIVES = "Objectives";
 	--TODO: L.QUEST_GIVERS = "Quest Givers";
 	L._AND = " und";
-	L.AND_MORE = "Und %s mehr...";
-	L.AND_OTHER_SOURCES = "Und %s andere Quellen...";
 	L.DURING_WQ_ONLY = "Dies kann nur abgeschlossen werden, solange die Weltquest aktiv ist.";
 	L.COMPLETED_DAILY = "Dies kann täglich abgeschlossen werden.";
 	L.COMPLETED_WEEKLY = "Dies kann wöchentlich abgeschlossen werden.";
@@ -207,6 +210,7 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	L.REFRESHING_COLLECTION = "Aktualisiere Sammlung...";
 	L.DONE_REFRESHING = "Aktualisierung der Sammlung erfolgreich.";
 	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
+	--TODO: L.AVAILABILITY = "Availability";
 	L.REQUIRES_PVP = "|CFF00FFDEDies erfordert Spieler gegen Spieler Aktivität oder eine Währung, die damit verbunden ist.|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDEDies erfodert Haustierkampf.|r";
 	L.REPORT_INACCURATE_QUEST = "Falsche Quest Informationen! (Klicken um zu melden)";
@@ -245,6 +249,20 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
 	L.QUEST_ONCE_PER_ACCOUNT = "Einmalig pro Account Quest";
 	L.COMPLETED_BY = "Vervollständigt von: %s";
+	--TODO: L.OWNED_BY = "Owned by %s";
+
+-- Social Module
+	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
+	--TODO: L.NEW_VERSION_FLAVORS = {
+	-- 	"or we'll give Sylvanas another lighter",
+	-- 	"Alexstrasza is worried about you",
+	-- 	"and Invincible will drop |cffffaaaafor sure|r next time",
+	-- 	"this was merely a setback",
+	-- 	"time to drop your % down",
+	-- 	"and a turtle will make it to the water",
+	-- 	"CHAMPYUUN, DE AZURIITE",
+	-- };
+	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
 
 -- Settings.lua
 	--TODO: L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
@@ -582,6 +600,12 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	-- Tooltip Text
 		L.DROP_RATE = "Drop Rate";
 		L.QUEST_GIVER = "Questgeber";
+		--TODO: L.EVENT_SCHEDULE = "Event Schedule";
+		--TODO: L.EVENT_ACTIVE = "Active:";
+		--TODO: L.EVENT_START = "Start:";
+		--TODO: L.EVENT_END = "End:";
+		--TODO: L.EVENT_WHERE = "Where:";
+		--TODO: L.REQUIRES_EVENT = "Requires Event";
 		L.LOCKOUT = "Sperre";
 		L.SHARED = "Geteilt";
 		L.SPLIT = "Pro Schwierigkeitsgrad";
@@ -594,6 +618,10 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
 		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Dies wird entfernt mit Patch %s";	--TODO: Removed in %s
+
+	-- Filter Text
+		--TODO: L.CREATURES_COUNT = "[%s Creatures]";
+		--TODO: L.CREATURES_LIST = "Creatures List";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";

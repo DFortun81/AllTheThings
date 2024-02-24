@@ -22,10 +22,13 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.CONTAINS = "Содержит:";
 	L.FACTIONS = "Фракции";
 	L.COORDINATES = "Координаты";
+	L.AND_MORE = "И ещё %s...";
+	L.AND_OTHER_SOURCES = "И %s других источников...";
+	L.PLAYER_COORDINATES = "Ваши Координаты";
 	L.NO_COORDINATES_FORMAT = "Нет координат для %s";
 	L.TOM_TOM_NOT_FOUND = "Нужен TomTom, чтобы ставить Указатели.";
 	L.FLIGHT_PATHS = "Пути Полётов";
-	L.KNOWN_BY = "Изучено %s";
+	L.KNOWN_BY = "Изучено на %s";
 	L.REQUIRES = "Требуется";
 	L.RACE_LOCKED = "Ограничено Расой";
 	L.PLEASE_REPORT_MESSAGE = "Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #retail-errors! Спасибо!";
@@ -35,6 +38,8 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.ITEM_GIVES_REP = "Улучшает Репутацию с '";
 	L.COST = "Стоимость";
 	L.COST_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения данной Штучки";
+	L.COST_TOTAL = "Полная Стоимость";
+	L.COST_TOTAL_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения всех Штучек в группе.\n\nЗаметка: На данный момент без учёта Реагентов/Рецептов!";
 	L.SOURCES = "Источник(и)";
 	L.SOURCES_DESC = "Показывает Источник этой Штучки.\n\nВ частности, конкретный торговец/НИП, Задание, Событие и т.д.";
 	L.WRONG_FACTION = "Вы должны быть за другую фракцию, чтобы видеть это.";
@@ -91,8 +96,6 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.OBJECTIVES = "Цели";
 	L.QUEST_GIVERS = "Квестодатели";
 	L._AND = " и";
-	L.AND_MORE = "И %s ещё...";
-	L.AND_OTHER_SOURCES = "И %s другие источники...";
 	L.DURING_WQ_ONLY = "Может быть выполнено, когда локальное задание активно.";
 	L.COMPLETED_DAILY = "Может быть выполнено ежедневно.";
 	L.COMPLETED_WEEKLY = "Может быть выполнено еженедельно.";
@@ -208,6 +211,7 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.REFRESHING_COLLECTION = "Обновление коллекции...";
 	L.DONE_REFRESHING = "Коллекция обновлена.";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "Этот Предмет сломан в ATT из-за отсутствующей информации от Blizzard. Можно поправить, если вручную обновить коллекцию (Shift+Клик на окне ATT).";
+	L.AVAILABILITY = "Доступность";
 	L.REQUIRES_PVP = "|CFF00FFDEЭта Штучка требует участия в ПвП или ПвП валюту.|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDEЭта Штучка требует игру с Боевыми Питомцами.|r";
 	L.REPORT_INACCURATE_QUEST = "Неверная Информация о Задании! (Нажмите для Отчёта)";
@@ -246,6 +250,19 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	L.SYM_ROW_INFORMATION = "Правый клик - Показать дополнительный контент из других источников";
 	L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
 	L.COMPLETED_BY = "Выполнено На: %s";
+	L.OWNED_BY = "Имеется на %s";
+
+-- Social Module
+	L.NEW_VERSION_AVAILABLE = "Доступна новая версия %s. Пожалуйста, обновите Аддон, %s.";
+	L.NEW_VERSION_FLAVORS = {
+		"или мы дадим Сильване ещё одну зажигалку",
+		"Алекстраза беспокоится о Вас",
+		"и Непобедимый |cffffaaaaточно|r дропнет в следующий раз",
+		"это была всего лишь мелкая помеха",
+		"время понизить Ваш %",
+		"и черепаха доберётся до воды",
+	};
+	L.SOCIAL_PROGRESS = "Социальный Прогресс";
 
 -- Settings.lua
 	L.SKIP_AUTO_REFRESH = "Не авто обновлять при изменении настроек!";	-- Skip Settings-Toggle Data Refreshes!
@@ -589,6 +606,12 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	-- Tooltip Text
 		L.DROP_RATE = "Шанс Выпадения";
 		L.QUEST_GIVER = "Начинает Задание";
+		L.EVENT_SCHEDULE = "Расписание События";
+		L.EVENT_ACTIVE = "Активно:";
+		L.EVENT_START = "Начало:";
+		L.EVENT_END = "Конец:";
+		L.EVENT_WHERE = "Когда:";
+		L.REQUIRES_EVENT = "Требуется Событие";
 		L.LOCKOUT = "Сохранение";
 		L.SHARED = "Все Сложности";
 		L.SPLIT = "Отдельные Сложности";
@@ -601,6 +624,10 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.ADDED_BACK_WITH_PATCH_FORMAT = "Добавлено снова в %s";
 		L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Добавлено снова в %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
+
+	-- Filter Text
+		L.CREATURES_COUNT = "[%s Существ]";
+		L.CREATURES_LIST = "Список Существ";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.

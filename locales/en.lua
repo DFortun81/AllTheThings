@@ -335,7 +335,7 @@ for key, value in pairs({
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["COMPLETED_BY"] = "Completed By: %s";
 	["OWNED_BY"] = "Owned by %s";
-	
+
 	-- Social Module
 	["NEW_VERSION_AVAILABLE"] = "A newer version of %s is available. Please update the AddOn, %s.";
 	["NEW_VERSION_FLAVORS"] = {

@@ -22,6 +22,9 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.CONTAINS = "Contient :";
 	L.FACTIONS = "Factions";
 	L.COORDINATES = "Coordonnées";
+	L.AND_MORE = "Et %s plus...";
+	L.AND_OTHER_SOURCES = "Et %s sources différentes...";
+	--TODO: L.PLAYER_COORDINATES = "Player Coordinates";
 	L.NO_COORDINATES_FORMAT = "Aucune coordonnée connue pour %s";
 	L.TOM_TOM_NOT_FOUND = "Vous devez avoir installé TomTom pour pouvoir ajouter des coordonnées.";
 	L.FLIGHT_PATHS = "Trajets Aériens";
@@ -35,6 +38,8 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.ITEM_GIVES_REP = "Fournit la réputation avec '";
 	L.COST = "Coût";
 	--TODO: L.COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
+	--TODO: L.COST_TOTAL = "Total Cost";
+	--TODO: L.COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
 	L.SOURCES = "Source(s)";
 	--TODO: L.SOURCES_DESC = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour afficher cela.";
@@ -90,8 +95,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	--TODO: L.OBJECTIVES = "Objectives";
 	--TODO: L.QUEST_GIVERS = "Quest Givers";
 	L._AND = " et";
-	L.AND_MORE = "Et %s plus...";
-	L.AND_OTHER_SOURCES = "Et %s sources différentes...";
 	L.DURING_WQ_ONLY = "Peut être réalisé uniquement lorsque la quête mondiale est active.";
 	L.COMPLETED_DAILY = "Peut être réalisé uniquement quotidiennement.";
 	L.COMPLETED_WEEKLY = "Peut être réalisé uniquement chaque semaine.";
@@ -206,6 +209,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.REFRESHING_COLLECTION = "Mise à jour de la collection...";
 	L.DONE_REFRESHING = "Collection mise à jour.";
 	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
+	--TODO: L.AVAILABILITY = "Availability";
 	--TODO: L.REQUIRES_PVP = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
@@ -244,6 +248,20 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.SYM_ROW_INFORMATION = "Clic droit afficher du contenu supplémentaire provenant d’un autre endroit.";
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
 	L.COMPLETED_BY = "Complété par : %s";
+	--TODO: L.OWNED_BY = "Owned by %s";
+
+-- Social Module
+	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
+	--TODO: L.NEW_VERSION_FLAVORS = {
+	-- 	"or we'll give Sylvanas another lighter",
+	-- 	"Alexstrasza is worried about you",
+	-- 	"and Invincible will drop |cffffaaaafor sure|r next time",
+	-- 	"this was merely a setback",
+	-- 	"time to drop your % down",
+	-- 	"and a turtle will make it to the water",
+	-- 	"CHAMPYUUN, DE AZURIITE",
+	-- };
+	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
 
 -- Settings.lua
 	L.SKIP_AUTO_REFRESH = "Ne pas rafraîchir les données !";
@@ -582,6 +600,12 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	-- Tooltip Text
 		L.DROP_RATE = "Taux de chance de tomber";
 		L.QUEST_GIVER = "Donneur de quête";
+		--TODO: L.EVENT_SCHEDULE = "Event Schedule";
+		--TODO: L.EVENT_ACTIVE = "Active:";
+		--TODO: L.EVENT_START = "Start:";
+		--TODO: L.EVENT_END = "End:";
+		--TODO: L.EVENT_WHERE = "Where:";
+		--TODO: L.REQUIRES_EVENT = "Requires Event";
 		L.LOCKOUT = "Verrouillage";
 		L.SHARED = "Partagé";
 		L.SPLIT = "Par difficulté";
@@ -594,6 +618,10 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
 		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s";	--TODO: Removed in %s
+
+	-- Filter Text
+		--TODO: L.CREATURES_COUNT = "[%s Creatures]";
+		--TODO: L.CREATURES_LIST = "Creatures List";
 
 	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "Ouvre l’interface des Armes prodigieuses pour toutes tes Armes prodigieuses afin de vérifier si c’est une amélioration ou non. Cela est utile pour déterminer si tu peux échanger cet objet à un Twink ou non.";
