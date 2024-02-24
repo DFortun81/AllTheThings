@@ -2548,6 +2548,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
+	-- app.PrintDebug("GetSearchResults:method",group and #group,a,b)
 	if group then
 		if a then paramA = a; end
 		if b then paramB = b; end
@@ -2625,7 +2626,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		itemString = rawlink:match("item[%-?%d:]+");
 		if itemString then
 			sourceID = app.GetSourceID(rawlink);
-			-- print("Rawlink SourceID",sourceID,rawlink)
+			-- app.PrintDebug("Rawlink SourceID",sourceID,rawlink)
 			local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
 			if itemID2 then
 				itemID = tonumber(itemID2);
@@ -4399,7 +4400,7 @@ local function SearchForLink(link)
 		return;
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
-	-- app.PrintDebug("SEARCH FOR FIELD",kind,">",KeyMaps[kind],id)
+	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">",#SearchForField(KeyMaps[kind], id))
 	kind = KeyMaps[kind]
 	return SearchForField(kind, id), kind, id
 end
@@ -10503,6 +10504,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 			if handler then
 				handler(self, ...);
 			else
+				app.PrintDebug("Unhandled Window Event",e,...)
 				self:Update();
 			end
 		end);
