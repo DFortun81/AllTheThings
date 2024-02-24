@@ -279,7 +279,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["classes"] = { EVOKER },
 			}),
 			q(73092, {	-- Something Like Family
-				["sourceQuests"] = { 75408 },	-- Calling All Dracthyr!
+				["sourceQuests"] = {
+					75408,	-- Calling All Dracthyr!
+					76597,	-- On New Wings
+					73085,	-- Cold Feet
+				},	
 				["provider"] = { "n", 201764 },	-- Talon Scaralesh
 				["coord"] = { 23.1, 32.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
