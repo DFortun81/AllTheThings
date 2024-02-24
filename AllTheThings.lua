@@ -5513,8 +5513,10 @@ app.RefreshAchievementCollection = function()
 		end
 	end
 end
-app:RegisterEvent("ACHIEVEMENT_EARNED");
-app.events.ACHIEVEMENT_EARNED = CheckAchievementCollectionStatus;
+app.AddEventHandler("OnReady", function()
+	app:RegisterFuncEvent("ACHIEVEMENT_EARNED", CheckAchievementCollectionStatus);
+	app:RegisterFuncEvent("RECEIVED_ACHIEVEMENT_LIST", app.UpdateWindows);
+end)
 end	-- Achievement Lib
 
 -- Battle Pet Lib
