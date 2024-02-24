@@ -14,9 +14,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				i(152945),	-- World-Defiler's Tuille
 				i(152948),	-- World-Defiler's Sabatons
 			}),
-			n(WEAPONS, {
-				i(152857),	-- Chipped Man'ari Blade
-			})
 		}),
 	}),
 })));

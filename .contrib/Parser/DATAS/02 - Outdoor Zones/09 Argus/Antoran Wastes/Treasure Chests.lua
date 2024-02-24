@@ -77,8 +77,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},		-- get Special
 					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
-				["g"] = {
-				-- Shared Rewards
+				["g"] = appendAllGroups({	-- Shared Rewards
 					i(152857),	-- Chipped Man'ari Blade
 					i(153344),	-- Triumvirate High Guard's Bracers
 					i(153340),	-- Triumvirate High Guard's Breastplate
@@ -88,10 +87,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					i(153342),	-- Triumvirate High Guard's Pauldrons
 					i(153338),	-- Triumvirate High Guard's Leggings
 					i(153345),	-- Triumvirate High Guard's Warboots
-				-- Common Objects
+				},sharedData({	-- Common Objects
+					["isDaily"] = true,
+				},{
 					o(273519, {	-- Legion War Supplies (east and south of small green lake in southeast area of map)
 						["questID"] = 48382,
-						["isDaily"] = true,
 						["coords"] = {
 							{ 61.3, 54.0, ANTORAN_WASTES },
 							{ 58.8, 64.8, ANTORAN_WASTES },
@@ -108,7 +108,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273521, {	-- Legion War Supplies (around Spirit Crucible)
-						["isDaily"] = true,
 						["questID"] = 48383,
 						["coords"] = {
 							{ 58.2, 40.2, ANTORAN_WASTES },
@@ -123,7 +122,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273523, {	-- Legion War Supplies (north central, possibly only in cave)
-						["isDaily"] = true,
 						["questID"] = 48384,
 						["coords"] = {
 							{ 60.9, 29.0, ANTORAN_WASTES },
@@ -136,7 +134,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273524, {	-- Legion War Supplies (southernmost point of wide green river, close to Felfire Armory)
-						["isDaily"] = true,
 						["questID"] = 48385,
 						["coords"] = {
 							{ 48.3, 54.4, ANTORAN_WASTES },
@@ -148,7 +145,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273527, {	-- Legion War Supplies (northeast, to the right of bridges)
-						["isDaily"] = true,
 						["questID"] = 48387,
 						["coords"] = {
 							{ 65.5, 28.5, ANTORAN_WASTES },
@@ -161,7 +157,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273528, {	-- Legion War Supplies (southeast, around Terminus)
-						["isDaily"] = true,
 						["questID"] = 48390,
 						["coords"] = {
 							{ 72.1, 56.8, ANTORAN_WASTES },
@@ -177,7 +172,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273533, {	-- Legion War Supplies (north - northeast of Spirit Crucible, west of bridges)
-						["isDaily"] = true,
 						["questID"] = 48388,
 						["coords"] = {
 							{ 51.5, 26.0, ANTORAN_WASTES },
@@ -191,7 +185,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273535, {	-- Legion War Supplies (around spiders)
-						["isDaily"] = true,
 						["questID"] = 48391,
 						["coords"] = {
 							{ 63.1, 57.5, ANTORAN_WASTES },
@@ -203,7 +196,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						},
 					}),
 					o(273538, {	-- Legion War Supplies (around Varga cave)
-						["isDaily"] = true,
 						["questID"] = 48389,
 						["coords"] = {
 							{ 65.2, 51.6, ANTORAN_WASTES },
@@ -217,7 +209,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							{ 60.6, 40.9, ANTORAN_WASTES },
 						},
 					}),
-				},
+				})),
 			}),
 		}),
 	}),

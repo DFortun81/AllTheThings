@@ -38,14 +38,17 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					i(153283),	-- Augari Wakener's Vestments
 				},
 			}),
-			o_repeated({
+			o_repeated({	-- Eredar War Supplies
 				["sym"] = {
 					{"select","mapID",KROKUUN},		-- get Krokuun
 					{"find","headerID",SPECIAL},	-- get Special
-					{"find","filterID",PLATE},		-- get Plate
-					{"find","headerID",WEAPONS},{"pop"},	-- get Weapons
+					{"find","filterID",PLATE},{"pop"},		-- get Plate
 				},
-				["g"] = sharedData({["isDaily"] = true,},{
+				["g"] = appendAllGroups({	-- Shared Rewards
+					i(152857),	-- Chipped Man'ari Blade
+				},sharedData({	-- Common Objects
+					["isDaily"] = true,
+				},{
 					o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)
 						["questID"] = 47753,
 						["coords"] = {
@@ -203,7 +206,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							{ 67.9, 62.5, KROKUUN },
 						},
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),
