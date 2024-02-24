@@ -194,9 +194,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 			un(REMOVED_FROM_GAME, ach(11772, {		-- Power Ascended
 				un(REMOVED_FROM_GAME, ach(11144)),		-- Power Realized
 			})),
-			un(REMOVED_FROM_GAME, ach(11610, {		-- Power Unleashed
-				un(REMOVED_FROM_GAME, ach(11609)),		-- Power Unbound
-			})),
+			ach(11610, {	-- Power Unleashed
+				ach(11609),	-- Power Unbound
+			}),
 		}),
 		n(FOLLOWERS, bubbleDownSelf({
 			["u"] = 15,	-- Temporary troops
