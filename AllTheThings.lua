@@ -4628,6 +4628,7 @@ end
 local function AddTomTomSearchResultWaypoints(group)
 	if group.visible then
 		local key = group.key;
+		if not key then return end
 		for _,o in ipairs(SearchForField(key, group[key], "field")) do
 			-- app.PrintDebug("WP:Search:",o.hash)
 			TryAddGroupWaypoints(o);
