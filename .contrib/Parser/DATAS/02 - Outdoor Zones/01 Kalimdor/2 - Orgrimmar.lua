@@ -527,14 +527,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2751, {	-- Barbaric Battlements
 					["qg"] = 7790,	-- Orokk Omosh
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
-						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
-						-- #endif
-					},
-					["description"] = "Requires skill 140 in Blacksmithing.",
+					-- #if BEFORE 4.0.3
+					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
+					["coord"] = { 79.4, 22.4, ORGRIMMAR },
+					-- #elseif AFTER 8.0.1
+					["description"] = "Becomes available at Classic Blacksmithing skill level 140 when character level requirement is met.", 
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #else
+					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #endif
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -545,8 +547,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7979, {	-- Plans: Barbaric Iron Breastplate (RECIPE!)
-							-- #if ANYCLASSIC
-							["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
+							-- #if BEFORE 9.2.5
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							-- #else
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
 							-- #endif
 						}),
 					},
@@ -995,13 +999,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2754, {	-- Horns of Frenzy
 					["qg"] = 7790,	-- Orokk Omosh
 					["sourceQuest"] = 2753,	-- Trampled Under Foot
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
-						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
-						-- #endif
-					},
+					-- #if BEFORE 4.0.3
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
+					["coord"] = { 79.4, 22.4, ORGRIMMAR },
+					-- #elseif AFTER 8.0.1
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.", 
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #else
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #endif
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -1012,30 +1019,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7980, {	-- Plans: Barbaric Iron Helm (RECIPE!)
-							-- #if ANYCLASSIC
-							["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
-							-- #endif
+						-- #if BEFORE 9.2.5
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #else
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						-- #endif
 						}),
 					},
 				}),
 				q(2755, {	-- Joys of Omosh
 					["qg"] = 7790,	-- Orokk Omosh
 					["sourceQuest"] = 2754,	-- Horns of Frenzy
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
-						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
-						-- #endif
-					},
+					-- #if BEFORE 4.0.3
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+					["coord"] = { 79.4, 22.4, ORGRIMMAR },
+					-- #elseif AFTER 8.0.1
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.", 
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #else
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #endif
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7982, {	-- Plans: Barbaric Iron Gloves (RECIPE!)
-							-- #if ANYCLASSIC
-							["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
-							-- #endif
+						-- #if BEFORE 9.2.5
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #else
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						-- #endif
 						}),
 					},
 				}),
@@ -1246,13 +1260,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2752, {	-- On Iron Pauldrons
 					["qg"] = 7790,	-- Orokk Omosh
 					["sourceQuest"] = 2751,	-- Barbaric Battlements
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
-						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
-						-- #endif
-					},
+					-- #if BEFORE 4.0.3
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+					["coord"] = { 79.4, 22.4, ORGRIMMAR },
+					-- #elseif AFTER 8.0.1
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.", 
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #else
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #endif
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -1262,9 +1279,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
-							-- #if ANYCLASSIC
-							["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
-							-- #endif
+						-- #if BEFORE 9.2.5
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #else
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						-- #endif
 						}),
 					},
 				}),
@@ -1666,13 +1685,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2753, {	-- Trampled Under Foot
 					["qg"] = 7790,	-- Orokk Omosh
 					["sourceQuest"] = 2752,	-- On Iron Pauldrons
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 76.2, 37.4, ORGRIMMAR },
-						-- #else
-						{ 79.4, 22.4, ORGRIMMAR },
-						-- #endif
-					},
+					-- #if BEFORE 4.0.3
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+					["coord"] = { 79.4, 22.4, ORGRIMMAR },
+					-- #elseif AFTER 8.0.1
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.", 
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #else
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+					["coord"] = { 76.2, 37.4, ORGRIMMAR },
+					-- #endif
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -1683,9 +1705,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
-							-- #if ANYCLASSIC
-							["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
-							-- #endif
+						-- #if BEFORE 9.2.5
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+						-- #else
+						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+						-- #endif
 						}),
 					},
 				}),
