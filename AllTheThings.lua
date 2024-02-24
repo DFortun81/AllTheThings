@@ -3710,6 +3710,7 @@ app.ThingKeys = {
 	["recipeID"] = true,
 	["runeforgePowerID"] = true,
 	["spellID"] = true,
+	["mountID"] = true,
 	["illusionID"] = true,
 	["questID"] = true,
 	["objectID"] = true,
