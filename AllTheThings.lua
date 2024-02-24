@@ -1209,8 +1209,6 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 			return itemID == value;
 		end
 	end
-	-- check exact specific match for other keys
-	if group.key == key and group[key] == value then return true; end
 	-- Other fields can require further verification
 	-- Some objects also need to check altquestID for questID
 	if key == "questID" then
@@ -1219,7 +1217,15 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 	elseif key == "npcID" or key == "creatureID" then
 		if group.creatureID == value then return true; end
 		if group.npcID == value then return true; end
+	-- Criteria contain identical achievementID field, so match by key when checking AchievementID
+	-- (currently not a way to directly search CriteriaID...)
+	elseif key == "achievementID" then
+		if group.key == key and group[key] == value then return true; end
+		return
 	end
+	-- check exact field match for other groups
+	if group[key] == value then return true; end
+	app.PrintDebug("GroupMatchesParams default return",group.hash,key,value)
 end
 app.GroupMatchesParams = GroupMatchesParams;
 -- Returns proper, class-filtered specs for a given itemID
