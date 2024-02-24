@@ -9413,18 +9413,16 @@ RowOnEnter = function (self)
 	
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
-	if reference.key ~= "encounterID" and reference.key ~= "instanceID" or reference.key ~= "questID" then
+	if reference.key ~= "encounterID" and reference.key ~= "instanceID" and reference.key ~= "questID" then
 		-- Encounter & Instance Links break the tooltip, Quest Links are inconsistent.
 		local link = reference.link or reference.silentLink
 		if link and link:sub(1, 1) ~= "[" then
-			if reference.itemID then
-				local ok, success = pcall(tooltip.SetHyperlink, tooltip, link);
-				if success then
-					linkSuccessful = true;
-				end
-				--print("Link:", link:gsub("|","\\"));
-				--print("Link Result!", success);
+			local ok, success = pcall(tooltip.SetHyperlink, tooltip, link);
+			if success then
+				linkSuccessful = true;
 			end
+			print("Link:", link:gsub("|","\\"));
+			print("Link Result!", success, reference.key, reference.__type);
 		end
 		
 		-- Only if the link was unsuccessful.
