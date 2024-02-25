@@ -406,6 +406,65 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(202213, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
 		}),
 	}),
+	prof(FISHING, {
+		DRAENOR_FISHING,
+		i(110508),	-- "Fragrant" Pheromone Fish
+		i(111664),	-- Abyssal Gulper Eel
+		i(110293),	-- Abyssal Gulper Eel Bait
+		i(109143),	-- Abyssal Gulper Eel Flesh
+		i(118414),	-- Awesomefish
+		i(111663),	-- Blackwater Whiptail
+		i(110294),	-- Blackwater Whiptail Bait
+		i(109144),	-- Blackwater Whiptail Flesh
+		i(116817),	-- Blackwater Whiptail Lunker
+		i(116820),	-- Blind Lake Lunker
+		i(111667),	-- Blind Lake Sturgeon
+		i(110290),	-- Blind Lake Sturgeon Bait
+		i(109140),	-- Blind Lake Sturgeon Flesh
+		i(111595),	-- Crescent Saberfish
+		i(109137),	-- Crescent Saberfish Flesh
+		i(111668),	-- Fat Sleeper
+		i(110289),	-- Fat Sleeper Bait
+		i(109139),	-- Fat Sleeper Flesh
+		i(116821),	-- Fat Sleeper Lunker
+		i(127991, {["timeline"] = {ADDED_6_2_0}}),	-- Felmouth Frenzy
+		i(128229, {["timeline"] = {ADDED_6_2_0}}),	-- Felmouth Frenzy Bait
+		i(127994, {["timeline"] = {ADDED_6_2_0}}),	-- Felmouth Frenzy Lunker
+		i(111666),	-- Fire Ammonite
+		i(110291),	-- Fire Ammonite Bait
+		i(116819),	-- Fire Ammonite Lunker
+		i(109141),	-- Fire Ammonite Tentacle
+		i(118416),	-- Fish Roe
+		i(111671),	-- Enormous Abyssal Gulper Eel
+		i(111670),	-- Enormous Blackwater Whiptail
+		i(111674),	-- Enormous Blind Lake Sturgeon
+		i(111601),	-- Enormous Crescent Saberfish
+		i(111675),	-- Enormous Fat Sleeper
+		i(111673),	-- Enormous Fire Ammonite
+		i(111676),	-- Enormous Jawless Skulker
+		i(111672),	-- Enormous Sea Scorpion
+		i(118415),	-- Grieferfish
+		i(111669),	-- Jawless Skulker
+		i(110274),	-- Jawless Skulker Bait
+		i(109138),	-- Jawless Skulker Flesh
+		i(116822),	-- Jawless Skulker Lunker
+		i(118046),	-- Rubber Duck
+		i(118565),	-- Savage Piranha
+		i(111665),	-- Sea Scorpion
+		i(110292),	-- Sea Scorpion Bait
+		i(122696, {["timeline"] = {ADDED_6_1_0}}),	-- Sea Scorpion Lunker
+		i(109142),	-- Sea Scorpion Segment
+		i(111659),	-- Small Abyssal Gulper Eel
+		i(111662),	-- Small Blackwater Whiptail
+		i(111652),	-- Small Blind Lake Sturgeon
+		i(111589),	-- Small Crescent Saberfish
+		i(111651),	-- Small Fat Sleeper
+		i(111656),	-- Small Fire Ammonite
+		i(111650),	-- Small Jawless Skulker
+		i(111658),	-- Small Sea Scorpion
+		i(118511),	-- Tyfish
+		i(118391),	-- Worm Supreme
+	}),
 	prof(HERBALISM, {
 		filter(BATTLE_PETS, {
 			i(118595, {	-- Nightshade Sproutling (PET!)

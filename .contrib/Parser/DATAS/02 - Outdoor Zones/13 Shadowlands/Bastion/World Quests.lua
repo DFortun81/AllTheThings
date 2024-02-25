@@ -38,11 +38,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(183045),	-- Korinna's Allaying Crook
 			}),
 			q(59601, {	-- Assault on the Vestibule
-				["g"] = {
-					i(176805),	-- Centurion Armor Fragment (QI!)
-					i(172451),	-- Weak Anima Mote (QI!)
-					i(176806),	-- Drained Anima-Core (QI!)
-				},
+				i(176805),	-- Centurion Armor Fragment (QI!)
+				i(172451),	-- Weak Anima Mote (QI!)
+				i(176806),	-- Drained Anima-Core (QI!)
 			}),
 			q(62451),	-- Assault on the Vestibule
 			q(60565),	-- A Steward for Every Occasion

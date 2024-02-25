@@ -89,7 +89,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			tier(MOP_TIER, {
 				-- 5.0.4
-				tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CRATED_5_0_4 } }, {
+				tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					-- With SpellID attached
 					i(86550),	-- Apprentice Cookbook
 					i(86512),	-- Journeyman Cookbook

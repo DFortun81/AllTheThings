@@ -48,6 +48,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					}),
 				}),
 			}),
+			prof(FISHING, {
+				n(122705, {	-- Silent Tali <Fishing Trainer>
+					["coord"] = { 50.6, 23.2, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						r(271677),	-- Zandalari Fishing
+						r(271990),	-- Fishing Journal
+					},
+				}),
+			}),
 			prof(HERBALISM, {
 				n(122704, {	-- Jahden Fla <Herbalism Trainer>
 					["coord"] = { 42.2, 35.6, DAZARALOR },
@@ -256,7 +266,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 			}),
 			prof(MINING, {
 				n(122694, {	-- Secott the Goldsmith <Mining Trainer>
-					["coord"] = { 75.2, 7.6, BORALUS },
+					["coord"] = { 75.2, 7.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = appendGroups(BFA_MINING, {
 						r(265853),	-- Mining (Zandalari)

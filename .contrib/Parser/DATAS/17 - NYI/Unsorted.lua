@@ -2694,15 +2694,10 @@ root(ROOTS.Unsorted, {
 				i(118492),	-- Schematic: Morden's Magnificent Contraption [Weird ItemID...]
 			}),
 			filter(QUEST_ITEMS, {
-				i(183877),	-- A Meandering Story
-				i(183881),	-- A Naughty Story
-				i(183880),	-- A Travel Journal
-				i(183878),	-- A Wandering Tale
 				i(172176),	-- Abomination Service Stub
 				i(183137),	-- Acolyte's Corpse
 				i(181463),	-- Alchemist's Crate of the Anonymous Buyer
 				i(175082),	-- Amulet of the Realms
-				i(183879),	-- An Escapist Novel
 				i(174062),	-- Ancient Anima Staff
 				i(174940),	-- Ancient Heartwood
 				i(183722),	-- Ancient Insignia
@@ -2733,84 +2728,45 @@ root(ROOTS.Unsorted, {
 				i(173380),	-- Book of the Unspeakable
 				i(172900),	-- Bounty Notes
 				i(174854),	-- Brimming Animus Core
-				i(173526),	-- Caer Darrow Scroll
 				i(174023),	-- Calibrated Mawstone
 				i(174024),	-- Calibrated Mawstone
 				i(173965),	-- Calibrated Mawstone
-				i(181473),	-- Candle Wax Chunk
-				i(178791),	-- Carved Cloudfeather Call
-				i(176805),	-- Centurion Armor Fragment
-				i(178580),	-- Champion's Coin
 				i(180802),	-- Chaotic Runes
 				i(172456),	-- Chipped Fel Core
-				i(179981),	-- Chipped Sinstone
-				i(183185),	-- Chromie's Scroll
-				i(183188),	-- Chromie's Scroll
 				i(171961),	-- Cleansing Chime
-				i(174526),	-- Clotting Patches
-				i(173702),	-- Cloudfeather Essence
-				i(183140),	-- Cloudstrider Antler
-				i(173690),	-- Cloudstrider Antler
-				i(178885),	-- Cloudstrider Pelt
 				i(182167),	-- Cobra Soul
 				i(172969),	-- Codex of Impossibilities
-				i(179327),	-- Coin of Brokerage
 				i(180801),	-- Coldheart Flight Routes
-				i(181253),	-- Collaborator's Hood
-				i(181254),	-- Collaborator's Robe
 				i(181350),	-- Collaborator's Robes
 				i(173364),	-- Collect Dummy
 				i(180846),	-- Colossal Feaster's Head
-				i(172039),	-- Comfy Comfort Pillow
 				i(175977),	-- Command Lattice Mir
 				i(173004),	-- Command Lattice Omu
 				i(175978),	-- Command Lattice Pio
 				i(136851),	-- Commander Domitille's Helm
-				i(177954),	-- Condensed Anima Mote
 				i(180785),	-- Condensed Essence
 				i(178142),	-- Condensed Stygia
 				i(174233),	-- Construct Field Plan
 				i(175757),	-- Construct Supply Key
-				i(174074),	-- Cooked Meat
 				i(178875),	-- Corpsehound Whistle
-				i(176846),	-- Corpselouse Bristles
 				i(175839),	-- Corrupted Anima
-				i(179980),	-- Cracked Sinstone
-				i(174336),	-- Crimson Cravat
 				i(167209),	-- Crude Map
-				i(183797),	-- Crusader's Dressing
-				i(183689),	-- Crusader's Dressing
 				i(173267),	-- Crystalized Gormgris
-				i(172512),	-- Culexwood Branch
 				i(180446),	-- Curiously Corrosive Concoction
 				i(180607),	-- Cypher of Blinding
 				i(180626),	-- Cypher of Melody
 				i(175012),	-- Dancing Cricket
 				i(171967),	-- Dark Cowl
 				i(177818),	-- Dark Mojo
-				i(171215),	-- Dark Sermon
 				i(174357),	-- Death Lotus Petal
-				i(174382),	-- Death Lotus Powder
-				i(174098),	-- Death Lotus Powder
-				i(174179),	-- Death Lotus Powder
 				i(172970),	-- Debris Searched
 				i(172967),	-- Deciphering Lens
 				i(170585),	-- Depleted Anima Core
-				i(172953),	-- Depleted Wildseed
 				i(174938),	-- Devourer Essence
-				i(174110),	-- Disassembly Flag
 				i(180808),	-- Discarded Torments
-				i(182735),	-- Domination Blade
 				i(171990),	-- Dormant Maldracite
-				i(180232),	-- Dranosh'ar Blockade Report
-				i(175410),	-- Dreadshade Extract
-				i(173292),	-- Dreamcatcher Anima
-				i(179002),	-- Dredger Chisel
 				i(174492),	-- Dripping Fangs
-				i(174864),	-- Droman's Hunting Horn
 				i(174923),	-- Duskmire Elixir
-				i(173286),	-- Duskmire Mushroom
-				i(177958),	-- Duskwood Report
 				i(173530),	-- Duskwood Scroll
 				i(173527),	-- Duskwood Scroll
 				i(177894),	-- Earthen Jar

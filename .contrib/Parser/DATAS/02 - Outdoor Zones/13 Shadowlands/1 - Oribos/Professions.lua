@@ -96,6 +96,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["g"] = SL_ENGINEERING,
 				}),
 			}),
+			prof(FISHING, {
+				n(156671, {	-- Retriever Au'prin <Fishing Trainer>
+					["coord"] = { 47.6, 24.0, ORIBOS },
+					["g"] = SL_FISHING,
+				}),
+			}),
 			prof(HERBALISM, {
 				n(156686, {	-- Selector Au'mar <Herbalism Trainer>
 					["coord"] = { 39.8, 38.6, ORIBOS },

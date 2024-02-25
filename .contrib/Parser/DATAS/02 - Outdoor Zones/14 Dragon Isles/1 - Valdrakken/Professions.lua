@@ -34,24 +34,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = DF_ENGINEERING,
 				}),
 			}),
-			prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHING }, {
+			prof(FISHING, {
 				n(185359, {	-- Toklo <Fishing Trainer>
 					["coord"] = { 44.6, 74.6, VALDRAKKEN },
-					["g"] = {
-						r(366253),	-- Dragon Isles Fishing
-						r(393061),	-- Aileron Seamoth School
-						r(393060),	-- Cerulean Spinefish School
-						r(393064),	-- Islefin Dorado Pool
-						r(393067),	-- Magma Thresher Pool
-						r(393068),	-- Prismatic Leaper School
-						r(393066),	-- Rimefin Tuna Pool
-						r(393063),	-- Scalebelly Mackerel
-						r(393065),	-- Shimmering Treasure Pool
-						r(393062),	-- Temporal Dragonhead School
-						r(393059),	-- Thousandbite Pirahna Swarm
-					},
+					["g"] = DF_FISHING,
 				}),
-			})),
+			}),
 			prof(HERBALISM, {
 				n(185549, {	-- Agrikus <Herbalism Trainer>
 					["coord"] = { 38.0, 68.6, VALDRAKKEN },

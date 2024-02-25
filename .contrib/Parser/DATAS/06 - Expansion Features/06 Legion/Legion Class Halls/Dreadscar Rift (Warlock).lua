@@ -235,7 +235,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							},
 							["g"] = {
 								i(139035),	-- Book of Medivh (QI!)
-								i(173526),	-- Caer Darrow Scroll (QI!)
+								i(173526, {	-- Caer Darrow Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 }
+								}),
 							},
 						}),
 						q(43153, {	-- An Eye for a Scepter

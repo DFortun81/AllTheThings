@@ -50,6 +50,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 			}),
 			prof(ENGINEERING, {
 			}),
+			prof(FISHING, {
+				n(136102, {	-- Alan Goyle <Fishing Trainer>
+					["coord"] = { 74.2, 5.7, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						r(271675),	-- Kul Tiran Fishing
+						r(271990),	-- Fishing Journal
+					},
+				}),
+			}),
 			prof(HERBALISM, {
 				n(136096, {	-- Declan Senal <Herbalism Trainer>
 					["coord"] = { 71.5, 4.9, BORALUS },

@@ -332,6 +332,41 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			},
 		},
 	}),
+	prof(FISHING, {
+		i(133742),	-- Ancient Black Barracuda
+		i(133733),	-- Ancient Highmountain Salmon
+		i(133730),	-- Ancient Mossgill
+		i(146960, {["timeline"] = {ADDED_7_3_0}}),	-- Ancient Totem Fragment
+		i(133740),	-- Axefish
+		i(124112),	-- Black Barracuda
+		i(133732),	-- Coldriver Carp
+		i(146959, {["timeline"] = {ADDED_7_3_0}}),	-- Corrupted Globule
+		i(124107),	-- Cursed Queenfish
+		i(146963, {["timeline"] = {ADDED_7_3_0}}),	-- Desecrated Seaweed
+		i(138448),	-- Emblem of Margoss
+		i(146848, {["timeline"] = {ADDED_7_3_0}}),	-- Fragmented Enchantment
+		i(133727),	-- Ghostly Queenfish
+		i(146962, {["timeline"] = {ADDED_7_3_0}}),	-- Golden Minnow
+		i(133735),	-- Graybelly Lobster
+		i(124109),	-- Highmountain Salmon
+		i(143748, {["timeline"] = {ADDED_7_1_0}}),	-- Leyscale Koi
+		i(133725),	-- Leyshimmer Blenny
+		i(133737),	-- Magic-Eater Frog
+		i(124108),	-- Mossgill Perch
+		i(133731),	-- Mountain Puffer
+		i(133726),	-- Nar'thalas Hermit
+		i(133734),	-- Oodelfjisk
+		i(124111),	-- Runescale Koi
+		i(133741),	-- Seabottom Squid
+		i(133738),	-- Seerspine Puffer
+		i(146961, {["timeline"] = {ADDED_7_3_0}}),	-- Shiny Bauble
+		i(133607),	-- Silver Mackerel
+		i(124110),	-- Stormray
+		i(133739),	-- Tainted Runescale Koi
+		i(133728),	-- Terrorfin
+		i(133729),	-- Thorned Flounder
+		i(133736),	-- Thundering Stormray
+	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
 			r(195114, {	-- Herb Gathering (Legion)

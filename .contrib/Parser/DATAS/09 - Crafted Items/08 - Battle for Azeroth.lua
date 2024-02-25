@@ -626,6 +626,21 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(168522),	-- Ub3r Module: Ub3r-Coil
 		}),
 	}),
+	prof(FISHING, {
+		i(174328, {["timeline"] = {ADDED_8_3_0}}),	-- Aberrant Voidfin
+		i(152545),	-- Frenzied Fangtooth
+		i(152547),	-- Great Sea Catfish
+		i(167562, {["timeline"] = {ADDED_8_2_0}}),	-- Ionized Minnow
+		i(152546),	-- Lane Snapper
+		i(174327, {["timeline"] = {ADDED_8_3_0}}),	-- Malformed Gnasher
+		i(168646, {["timeline"] = {ADDED_8_2_0}}),	-- Mauve Stinger
+		i(162515),	-- Midnight Salmon
+		i(152549),	-- Redtail Loach
+		i(152543),	-- Sand Shifter
+		i(152544),	-- Slimy Mackerel
+		i(152548),	-- Tiragarde Perch
+		i(168302, {["timeline"] = {ADDED_8_2_0}}),	-- Viper Fish
+	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
 			i(152507),	-- Akunda's Bite
