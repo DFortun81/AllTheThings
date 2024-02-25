@@ -566,14 +566,6 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 					},
 				}),
-				q(75519, {	-- The Long Hunt
-					["sourceQuests"] = {
-						57376,	-- The Hidden Need
-						72867,	-- I Am Forsaken
-					 },
-					["provider"] = { "n", 204250 },	-- Lilian Voss
-					["coord"] = { 63.0, 68.4, TIRISFAL_GLADES },
-				}),
 			},
 		}));
 	}),
