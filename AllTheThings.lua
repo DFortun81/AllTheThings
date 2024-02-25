@@ -2662,7 +2662,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, info = false, {};
+	local working, tooltipInfo = false, {};
 
 	if itemID and isTopLevelSearch then
 		-- Merge the source group for all matching Sources of the search results
@@ -2695,7 +2695,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			sourceGroup.missing = true;
 		end
 
-		if app.AddSourceInformation(sourceID, info, group, sourceGroup) then
+		if app.AddSourceInformation(sourceID, tooltipInfo, group, sourceGroup) then
 			working = true;
 		end
 
@@ -2703,13 +2703,13 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			local specs = GetFixedItemSpecInfo(itemID);
 			-- specs is already filtered/sorted to only current class
 			if specs and #specs > 0 then
-				tinsert(info, { right = GetSpecsString(specs, true, true) });
+				tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
 			elseif sourceID then
-				tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
+				tinsert(tooltipInfo, { right = L["NOT_AVAILABLE_IN_PL"] });
 			end
 		end
 
-		app.AddArtifactRelicInformation(itemID, rawlink, info, group);
+		app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
 	end
 
 	-- Create a list of sources
@@ -2778,7 +2778,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			for _,text in ipairs(listing) do
 				if not working and IsRetrieving(text) then working = true; end
 				local left, right = DESCRIPTION_SEPARATOR:split(text);
-				tinsert(info, 1, { left = left, right = right, wrap = wrap });
+				tinsert(tooltipInfo, 1, { left = left, right = right, wrap = wrap });
 			end
 		end
 	end
@@ -3002,28 +3002,28 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if isTopLevelSearch then
 		-- Add various text to the group now that it has been consolidated from all sources
 		if group.isLimited then
-			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
+			tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
 		end
 
 		-- Description for Items
 		if group.u and (not group.crs or group.itemID or group.sourceID) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
-				tinsert(info, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
+				tinsert(tooltipInfo, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
 			else
 				-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
 				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 3524) ~= 3524 then
-					if isTopLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
+					if isTopLevelSearch then tinsert(tooltipInfo, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
 				end
 			end
 		end
 		-- an item used for a faction which is repeatable
 		if group.itemID and group.factionID and group.repeatable then
-			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(tooltipInfo, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if paramA == "itemID" and paramB == 137642 then
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], color = app.Colors.SourceIgnored });
+				tinsert(tooltipInfo, 1, { left = L["MARKS_OF_HONOR_DESC"], color = app.Colors.SourceIgnored });
 			end
 		end
 
@@ -3038,7 +3038,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			-- app.PrintDebug(entries and #entries,"contains entries")
 			if #entries > 0 then
 				local left, right;
-				tinsert(info, { left = L["CONTAINS"] });
+				tinsert(tooltipInfo, { left = L["CONTAINS"] });
 				local item, entry;
 				local RecursiveParentField, SearchForObject = app.GetRelativeValue, app.SearchForObject;
 				for i=1,#entries do
@@ -3143,18 +3143,18 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							end
 						end
 
-						tinsert(info, { left = item.prefix .. left, right = right });
+						tinsert(tooltipInfo, { left = item.prefix .. left, right = right });
 					end
 				end
 
 				if ContainsExceeded > 0 then
-					tinsert(info, { left = (L.AND_MORE):format(ContainsExceeded) });
+					tinsert(tooltipInfo, { left = (L.AND_MORE):format(ContainsExceeded) });
 				end
 
 				if app.Settings:GetTooltipSetting("Currencies") then
 					local currencyCount = app.CalculateTotalCosts(group, paramB)
 					if currencyCount > 0 then
-						tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = formatNumericWithCommas(currencyCount) });
+						tinsert(tooltipInfo, { left = L["CURRENCY_NEEDED_TO_BUY"], right = formatNumericWithCommas(currencyCount) });
 					end
 				end
 			end
@@ -3173,7 +3173,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.name);
 				local desc = L.KNOWN_BY:format(app.TableConcat(knownBy, "text", "??", ", "));
-				tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+				tinsert(tooltipInfo, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
 
@@ -3192,7 +3192,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.name);
 				local desc = L.COMPLETED_BY:format(app.TableConcat(knownBy, "text", "??", ", "));
-				tinsert(info, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+				tinsert(tooltipInfo, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
 
@@ -3205,12 +3205,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 
 		-- Add various extra field info if enabled in settings
-		app.ProcessInformationTypesForExternalTooltips(info, group, itemString)
+		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString)
 
 		-- If there was any informational text generated, then attach that info.
-		if #info > 0 then
-			group.tooltipInfo = info;
-			for i,item in ipairs(info) do
+		if #tooltipInfo > 0 then
+			group.tooltipInfo = tooltipInfo;
+			for i,item in ipairs(tooltipInfo) do
 				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 			end
 		end
