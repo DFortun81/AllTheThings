@@ -87,33 +87,6 @@ end);
 LootCheckBox:SetATTTooltip("Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
 LootCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, 4);
 
--- This creates the "Precision" slider.
-local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
-PrecisionSlider:SetPoint("RIGHT", child, "RIGHT", -20, 0);
-PrecisionSlider:SetPoint("TOP", ModeLabel, "BOTTOM", 0, -12);
-settings.PrecisionSlider = PrecisionSlider;
-PrecisionSlider.tooltipText = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
-PrecisionSlider:SetOrientation('HORIZONTAL');
-PrecisionSlider:SetWidth(260);
-PrecisionSlider:SetHeight(20);
-PrecisionSlider:SetValueStep(1);
-PrecisionSlider:SetMinMaxValues(0, 8);
-PrecisionSlider:SetObeyStepOnDrag(true);
-_G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
-_G[PrecisionSlider:GetName() .. 'High']:SetText('8')
-_G[PrecisionSlider:GetName() .. 'Text']:SetText("Level of Precision for Percentage")
-PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 0);
-PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
-PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("Precision") then
-		return 1;
-	end
-	settings:SetTooltipSetting("Precision", newValue);
-	app.HandleEvent("OnRenderDirty");
-end);
-
 local OnTooltipForThing = function(t, tooltipInfo)
 	tinsert(tooltipInfo, { left = " " });
 	tinsert(tooltipInfo, { left = "Total " .. t.Text:GetText(), right =  t.total });
@@ -1553,7 +1526,7 @@ end);
 
 -- This creates the "Locations" slider.
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", child, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("TOPLEFT", MiniListScaleSlider, "BOTTOMLEFT", 0, -32);
+LocationsSlider:SetPoint("TOPLEFT", MiniListScaleSlider, "BOTTOMLEFT", 0, -48);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 LocationsSlider:SetOrientation('HORIZONTAL');
@@ -1585,5 +1558,33 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	end
 end);
 
+
+
+
+-- This creates the "Precision" slider.
+local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
+PrecisionSlider:SetPoint("TOPLEFT", LocationsSlider, "BOTTOMLEFT", 0, -48);
+settings.PrecisionSlider = PrecisionSlider;
+PrecisionSlider.tooltipText = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
+PrecisionSlider:SetOrientation('HORIZONTAL');
+PrecisionSlider:SetWidth(280);
+PrecisionSlider:SetHeight(20);
+PrecisionSlider:SetValueStep(1);
+PrecisionSlider:SetMinMaxValues(0, 8);
+PrecisionSlider:SetObeyStepOnDrag(true);
+_G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
+_G[PrecisionSlider:GetName() .. 'High']:SetText('8')
+_G[PrecisionSlider:GetName() .. 'Text']:SetText("Level of Precision for Percentage")
+PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 0);
+PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
+PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("Precision") then
+		return 1;
+	end
+	settings:SetTooltipSetting("Precision", newValue);
+	app.HandleEvent("OnRenderDirty");
+end);
 
 end)();
