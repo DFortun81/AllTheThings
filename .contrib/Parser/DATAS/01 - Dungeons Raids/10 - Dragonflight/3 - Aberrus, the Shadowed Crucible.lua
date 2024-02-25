@@ -502,6 +502,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				BossOnly(ASSAULT, {
 					i(205256, {	-- Satchel of Pilfered Recipes
 						i(194642),	-- Design: Choker of Shielding (RECIPE!)
+						i(201740, {	-- Elemental Codex of Ultimate Power
+							["collectible"] = false,
+							["g"] = {
+								r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
+								r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
+							},
+						}),
 						i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
 						i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
 						i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
