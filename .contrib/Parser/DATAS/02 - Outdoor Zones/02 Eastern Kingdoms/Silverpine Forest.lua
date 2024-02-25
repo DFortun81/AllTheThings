@@ -1857,8 +1857,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(5110, {	-- Dalaran Wizard's Robe
-					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						2120,	-- Archmage Ataeric
 						1867,	-- Dalaran Apprentice
@@ -1873,7 +1873,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1889,	-- Dalaran Wizard
 					},
 					-- #else
-					["description"] = "WARNING: This item will be made unavailable, but still learnable, by Alliance players. If you are Alliance, you may want to buy this now.",
 					["crs"] = {
 						45753,	-- Ambermill Portal Guardian
 						1913,	-- Ambermill Warder

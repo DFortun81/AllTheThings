@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(ZONE_DROPS, {
 			i(199216),	-- A Box of Rocks
 			i(202062, {	-- Ash Feather
-				["description"] = "Can be looted while Dragonriding.\nPer-Player visibility.\nSpawns nearby and disappears after ~1 minute.",
+				["description"] = "Can be collected in <10 minutes inside the Neltharus dungeon, by staying near the entrance. They spawn very quickly here for some reason.",
 				["cost"] = {{"i",199177,1}},	-- Ash Feather Amulet
 				["crs"] = {
 					195759,	-- Ash Feather
