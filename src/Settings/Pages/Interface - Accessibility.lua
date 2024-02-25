@@ -5,7 +5,7 @@ local HexToARGB = app.Modules.Color.HexToARGB
 local RGBToHex = app.Modules.Color.RGBToHex
 
 -- Settings: Accessibility Page
-local child = settings:CreateOptionsPage(L["ACCESSIBILITY_PAGE"], L.INTERFACE_PAGE)
+local child = settings:CreateOptionsPage(L.ACCESSIBILITY_PAGE, L.INTERFACE_PAGE)
 
 -- Column 1
 local headerColors = child:CreateHeaderLabel(L["COLORS_ICONS"])

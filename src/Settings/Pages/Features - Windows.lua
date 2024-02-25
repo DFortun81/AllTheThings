@@ -4,7 +4,7 @@ if app.IsRetail then return; end
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: Sync Page
-local child = settings:CreateOptionsPage("Windows", L["FEATURES_PAGE"])
+local child = settings:CreateOptionsPage("Windows", L.FEATURES_PAGE)
 
 -- CONTENT
 local headerSync = child:CreateHeaderLabel("Windows")

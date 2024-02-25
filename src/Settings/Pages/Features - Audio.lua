@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: Features Page
-local child = settings:CreateOptionsPage("Audio", L["FEATURES_PAGE"])
+local child = settings:CreateOptionsPage("Audio", L.FEATURES_PAGE)
 
 -- Column 1
 local headerCelebrations = child:CreateHeaderLabel(L["CELEBRATIONS_LABEL"])

@@ -1,8 +1,8 @@
-local _, app = ...;
+local appName, app = ...;
 local L, settings, ipairs = app.L.SETTINGS_MENU, app.Settings, ipairs;
 
 -- Settings: Interface Page
-local child = settings:CreateOptionsPage(L["INTERFACE_PAGE"])
+local child = settings:CreateOptionsPage(L.INTERFACE_PAGE, appName);
 
 -- Column 1
 local headerTooltips = child:CreateHeaderLabel(L["TOOLTIP_LABEL"])

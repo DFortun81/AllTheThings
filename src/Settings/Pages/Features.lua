@@ -1,8 +1,8 @@
-local _, app = ...;
+local appName, app = ...;
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: Features Page
-local child = settings:CreateOptionsPage(L["FEATURES_PAGE"])
+local child = settings:CreateOptionsPage(L.FEATURES_PAGE, appName)
 
 -- Column 1
 local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])

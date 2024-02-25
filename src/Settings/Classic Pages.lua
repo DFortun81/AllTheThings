@@ -7,7 +7,7 @@ local settings = app.Settings;
 -- The "General" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage("General");
+local child = settings:CreateOptionsPage("General", appName, true);
 
 local ModeLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ModeLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);
@@ -1203,7 +1203,7 @@ end)();
 -- The "Interface" Tab.					--
 ------------------------------------------
 (function()
-local child = settings:CreateOptionsPage(L.INTERFACE_PAGE);
+local child = settings:CreateOptionsPage(L.INTERFACE_PAGE, appName);
 
 local TooltipLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 TooltipLabel:SetPoint("TOPLEFT", child.separator or child, "BOTTOMLEFT", 8, -8);

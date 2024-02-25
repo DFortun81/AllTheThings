@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings, ipairs = app.L.SETTINGS_MENU, app.Settings, ipairs;
 
 -- Settings: Interface Page
-local child = settings:CreateOptionsPage("Reporting", L["FEATURES_PAGE"])
+local child = settings:CreateOptionsPage("Reporting", L.FEATURES_PAGE)
 
 local headerReporting = child:CreateHeaderLabel(L["REPORTING_LABEL"])
 if child.separator then

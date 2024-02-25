@@ -1065,12 +1065,14 @@ end
 
 Mixin(settings, ATTSettingsPanelMixin);
 
-local RootCategoryID, Categories = appName, {};
+local Categories, AddOnCategoryID, RootCategoryID = {}, appName;
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
 settings.Open = function(self)
-	openToCategory(RootCategoryID);
+	if not openToCategory(RootCategoryID or AddOnCategoryID) then
+		openToCategory(AddOnCategoryID);
+	end
 end
-settings.CreateOptionsPage = function(self, text, parentCategory, doNOTShowCommonHeader)
+settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory)
 	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
 	Mixin(subcategory, ATTSettingsPanelMixin);
 	self:RegisterObject(subcategory);
@@ -1080,11 +1082,12 @@ settings.CreateOptionsPage = function(self, text, parentCategory, doNOTShowCommo
 		local category;
 		if text == appName then
 			category = Settings.RegisterCanvasLayoutCategory(subcategory, text)
-			RootCategoryID = category.ID;
 			Settings.RegisterAddOnCategory(category);
+			AddOnCategoryID = category.ID;
 		else
 			parentCategory = Categories[parentCategory or appName];
 			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory.category, subcategory, text)
+			if isRootCategory then RootCategoryID = category.ID; end
 		end
 		subcategory:Hide();
 		subcategory.category = category;
@@ -1095,29 +1098,28 @@ settings.CreateOptionsPage = function(self, text, parentCategory, doNOTShowCommo
 	end
 	Categories[text] = subcategory;
 	
-	if not doNOTShowCommonHeader then
-		local logo = subcategory:CreateTexture(nil, "ARTWORK");
-		logo:SetPoint("TOPLEFT", subcategory, "TOPLEFT", 8, -8);
-		logo:SetTexture(app.asset("Discord_2_64"));
-		logo:SetSize(36, 36);
-		logo:Show();
+	-- Common Header
+	local logo = subcategory:CreateTexture(nil, "ARTWORK");
+	logo:SetPoint("TOPLEFT", subcategory, "TOPLEFT", 8, -8);
+	logo:SetTexture(app.asset("Discord_2_64"));
+	logo:SetSize(36, 36);
+	logo:Show();
 
-		local title = subcategory:CreateHeaderLabel(L.TITLE);
-		title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
-		title:SetScale(1.5);
+	local title = subcategory:CreateHeaderLabel(L.TITLE);
+	title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
+	title:SetScale(1.5);
 
-		local version = subcategory:CreateHeaderLabel(app.Version);
-		version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -8, -8);
-		version:SetJustifyH("RIGHT");
+	local version = subcategory:CreateHeaderLabel(app.Version);
+	version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -8, -8);
+	version:SetJustifyH("RIGHT");
 
-		local separator = subcategory:CreateTexture(nil, "ARTWORK");
-		separator:SetPoint("LEFT", subcategory, "LEFT", 4, 0);
-		separator:SetPoint("RIGHT", subcategory, "RIGHT", -4, 0);
-		separator:SetPoint("TOP", logo, "BOTTOM", 0, 0);
-		separator:SetColorTexture(1, 1, 1, 0.4);
-		separator:SetHeight(2);
-		subcategory.separator = separator;
-	end
+	local separator = subcategory:CreateTexture(nil, "ARTWORK");
+	separator:SetPoint("LEFT", subcategory, "LEFT", 4, 0);
+	separator:SetPoint("RIGHT", subcategory, "RIGHT", -4, 0);
+	separator:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+	separator:SetColorTexture(1, 1, 1, 0.4);
+	separator:SetHeight(2);
+	subcategory.separator = separator;
 	return subcategory;
 end
 
