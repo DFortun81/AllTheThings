@@ -3160,42 +3160,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 
-		-- If the item is a recipe, then show which characters know this recipe.
-		-- app.PrintDebug(isTopLevelSearch,group.spellID,group.filterID,group.collectible)
-		local groupSpellID = group.spellID;
-		if groupSpellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-			local knownBy = {};
-			for guid,character in pairs(ATTCharacterData) do
-				if character.Spells and character.Spells[groupSpellID] then
-					tinsert(knownBy, character);
-				end
-			end
-			if #knownBy > 0 then
-				app.Sort(knownBy, app.SortDefaults.name);
-				local desc = L.KNOWN_BY:format(app.TableConcat(knownBy, "text", "??", ", "));
-				tinsert(tooltipInfo, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
-			end
-		end
-
-		-- If the result has a QuestID, then show which characters have this QuestID.
-		-- app.PrintDebug(isTopLevelSearch,group.spellID,group.filterID,group.collectible)
-		local groupQuestID = group.questID;
-		if groupQuestID and not group.illusionID and app.Settings:GetTooltipSetting("CompletedBy") then
-			local knownBy = {};
-			local charQuests;
-			for guid,character in pairs(ATTCharacterData) do
-				charQuests = character.Quests;
-				if charQuests and charQuests[groupQuestID] then
-					tinsert(knownBy, character);
-				end
-			end
-			if #knownBy > 0 then
-				app.Sort(knownBy, app.SortDefaults.name);
-				local desc = L.COMPLETED_BY:format(app.TableConcat(knownBy, "text", "??", ", "));
-				tinsert(tooltipInfo, { left = desc:gsub("-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
-			end
-		end
-
 		group.isBaseSearchResult = true;
 
 		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",group.text or (group.key and group.key .. group[group.key]),group)

@@ -161,6 +161,7 @@ local TooltipSettingsBase = {
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
 		["Models"] = true,
+		["CompletedBy"] = true,
 		["KnownBy"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
@@ -192,7 +193,6 @@ local TooltipSettingsBase = {
 		["NPCData:Nested"] = false,
 		["QuestChain:Nested"] = true,
 		["WorldQuestsList:Currencies"] = true,
-		["CompletedBy"] = true,
 		["Updates:AdHoc"] = true,
 		["SocialProgress"] = true,
 		

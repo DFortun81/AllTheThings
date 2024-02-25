@@ -893,34 +893,6 @@ local function RowOnEnter(self)
 			});
 		end
 	end
-	if reference.spellID then
-		-- If the item is a recipe, then show which characters know this recipe.
-		if not reference.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-			local knownBy = {};
-			for _,character in pairs(ATTCharacterData) do
-				if character.ActiveSkills and not character.ignored then
-					local skills = character.ActiveSkills[reference.spellID];
-					if skills then tinsert(knownBy, { character, skills[1], skills[2] }); end
-				end
-			end
-			if #knownBy > 0 then
-				app.Sort(knownBy, function(a, b)
-					return a[2] > b[2];
-				end);
-				tinsert(tooltipInfo, {
-					left = "Known by:",
-					color = app.Colors.TooltipDescription,
-				});
-				for i,data in ipairs(knownBy) do
-					local character = data[1];
-					tinsert(tooltipInfo, {
-						left = ("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), "")),
-						right = data[2] .. " / " .. data[3],
-					});
-				end
-			end
-		end
-	end
 	if reference.providers then
 		local counter = 0;
 		for i,provider in pairs(reference.providers) do

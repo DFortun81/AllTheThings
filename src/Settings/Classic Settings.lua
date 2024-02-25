@@ -123,6 +123,7 @@ local TooltipSettingsBase = {
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Enabled:Mod"] = "None",
+		["CompletedBy"] = true,
 		["KnownBy"] = true,
 		["Locations"] = 5,
 		["MainListScale"] = 1,

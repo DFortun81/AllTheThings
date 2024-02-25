@@ -8,6 +8,7 @@ local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetRelativeValue = app.GetRelativeValue;
 local HexToARGB = app.Modules.Color.HexToARGB;
+local GetRealmName = GetRealmName;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -110,6 +111,153 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 	end,
 },
 (function(t) return t.isRecursive; end));
+
+-- Known By / Completed By
+local knownBy = {};
+local function BuildKnownByInfoForKind(tooltipInfo, kind)
+	if #knownBy > 0 and kind then
+		app.Sort(knownBy, app.SortDefaults.name);
+		local desc = "";
+		for i,character in ipairs(knownBy) do
+			if i > 1 then desc = desc .. ", "; end
+			desc = desc .. (character.text or "???");
+		end
+		tinsert(tooltipInfo, { left = kind:format(desc:gsub("-" .. GetRealmName(), "")), wrap = true, color = app.Colors.TooltipDescription });
+		wipe(knownBy);
+	end
+end
+local function ProcessForCompletedBy(t, reference, tooltipInfo)
+	-- If the item is a recipe, then show which characters know this recipe.
+	if reference.collectible then
+		-- Completed By for Quests
+		local id = reference.questID;
+		if id then
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Quests and character.Quests[id] then
+					tinsert(knownBy, character);
+				end
+			end
+			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+		end
+		
+		-- Pre-Cata Known By types
+		if app.GameBuildVersion < 40000 then
+			id = reference.achievementID;
+			if id then
+				-- Prior to Cata, Achievements were not tracked account wide
+				for guid,character in pairs(ATTCharacterData) do
+					if character.Achievements and character.Achievements[id] then
+						tinsert(knownBy, character);
+					end
+				end
+				BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+			end
+			
+			local itemID = reference.itemID;
+			if itemID then
+				local knownByGUID = {};
+				
+				-- Prior to Cata, RWP (transmog) were not tracked account wide
+				for guid,character in pairs(ATTCharacterData) do
+					if (character.RWP and character.RWP[itemID]) then
+						knownByGUID[guid] = character;
+					end
+				end
+				if app.GameBuildVersion < 30000 then
+					-- Prior to Wrath, mounts, pets, and toys were not tracked account wide
+					id = reference.spellID;
+					if id and reference.filterID == 100 then	-- Mounts only!
+						for guid,character in pairs(ATTCharacterData) do
+							if character.Spells and character.Spells[id] then
+								knownByGUID[guid] = character;
+							end
+						end
+					end
+					
+					id = reference.speciesID;
+					if id then
+						for guid,character in pairs(ATTCharacterData) do
+							if character.BattlePets and character.BattlePets[id] then
+								knownByGUID[guid] = character;
+							end
+						end
+					end
+					
+					if reference.toyID then
+						for guid,character in pairs(ATTCharacterData) do
+							if character.Toys and character.Toys[itemID] then
+								knownByGUID[guid] = character;
+							end
+						end
+					end
+				end
+				
+				-- For the current character, count how many of the thing they own.
+				local currentCharacter = knownByGUID[app.GUID];
+				if currentCharacter then
+					local text = currentCharacter.text or "???";
+					local count = GetItemCount(itemID, true);
+					if count and count > 1 then
+						text = text .. " (x" .. count .. ")";
+					end
+					knownByGUID[app.GUID] = setmetatable({ text = text }, { __index = currentCharacter });
+				end
+				
+				-- Convert the GUID dictionary to the knownBy list.
+				for guid,character in pairs(knownByGUID) do
+					tinsert(knownBy, character);
+				end
+				
+				-- All of this can be stored together.
+				BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY, knownBy);
+			end
+		end
+	end
+end
+local function ProcessForKnownBy(t, reference, tooltipInfo)
+	if reference.illusionID then return; end
+	
+	-- This is to show which characters have this profession.
+	local id = reference.spellID;
+	if id then
+		if reference.key == "professionID" and app.IsClassic then	-- Apparently Retail doesn't use ActiveSkills
+			for _,character in pairs(ATTCharacterData) do
+				if character.ActiveSkills and not character.ignored then
+					local skills = character.ActiveSkills[id];
+					if skills then tinsert(knownBy, { character, skills[1], skills[2] }); end
+				end
+			end
+			if #knownBy > 0 then
+				app.Sort(knownBy, function(a, b)
+					return a[2] > b[2];
+				end);
+				tinsert(tooltipInfo, {
+					left = L.KNOWN_BY:format(""),
+					color = app.Colors.TooltipDescription,
+				});
+				for i,data in ipairs(knownBy) do
+					local character = data[1];
+					tinsert(tooltipInfo, {
+						left = ("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), "")),
+						right = data[2] .. " / " .. data[3],
+					});
+				end
+				wipe(knownBy);
+				return;
+			end
+		end
+		
+		-- If the item is a recipe, then show which characters know this recipe.
+		if reference.collectible and reference.filterID ~= 100 then
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Spells and character.Spells[id] then
+					tinsert(knownBy, character);
+				end
+			end
+			BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
+		end
+	end
+end
 
 -- The post processor uses a dynamic list to append additional entries as needed.
 local AppendedInformationTextEntries = {};
@@ -584,6 +732,10 @@ local InformationTypes = {
 	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayInExternalTooltips = false, }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayInExternalTooltips = false, }),
+	
+	-- Summary Information Types
+	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
+	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
 	
 	-- We want this after most of the regular fields.
 	CreateInformationType("OnTooltip", {
