@@ -88,7 +88,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	L.MIN_MAX_STANDING = "Il faut avoir obtenu une note entre";
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
-	--TODO: L.CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	--TODO: L.ALIVE = "Alive";
 	--TODO: L.SPAWNED = "Spawned";
 	--TODO: L.OBJECT_TYPE = "Object Type";
@@ -285,24 +284,11 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 			L._BETA_LABEL = " |cff4AA7FF[Bêta]|R";
 
 		--TODO: L.GENERAL_CONTENT = "General Content";
-		--TODO: L.CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-		--TODO: L.MERCH_BUTTON_LABEL = "Merch";
-		--TODO: L.WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-		--TODO: L.TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
-		--TODO: L.DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
-		--TODO: L.PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
-		--TODO: L.MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
 		--TODO: L.MODE_EXPLAIN_LABEL = 	"|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		--TODO: L.DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
-		--TODO: L.DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 		--TODO: L.COMPLETIONIST_MODE = "+Sources";
 		--TODO: L.COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
 		--TODO: L.I_ONLY_CARE_ABOUT_MY_MAIN = "Main Only";
 		--TODO: L.MAIN_ONLY_MODE_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-		L.ACCOUNT_MODE = app.ccColors.Account.."Mode Compte";
-		L.ACCOUNT_MODE_TOOLTIP = "Activez cette option si vous souhaitez suivre tous les objets de tous vos personnages, sans tenir compte des filtres de classe et de race. Les filtres d’inaccessibilité s’appliquent toujours.";
-		L.FACTION_MODE = "Faction uniquement";
-		L.FACTION_MODE_TOOLTIP = "Activez cette option si vous souhaitez afficher les données du mode Compte uniquement pour les races et les classes de votre faction actuelle.";
 		L.PRECISION_SLIDER = "Niveau de précision";
 		L.PRECISION_SLIDER_TOOLTIP = "Utilisez cette option pour personnaliser le niveau de précision souhaité dans les calculs de pourcentage.\n\nDéfaut : 2";
 		L.MINIMAP_SLIDER = "Taille du bouton de la mini-carte";
@@ -564,11 +550,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 		L.DELETE_CHARACTER = "Clic droit pour supprimer ce personnage";
 		L.CONFIRM_DELETE = "\n\nÊtes-vous sûr de vouloir supprimer ce personnage ?";
 
-	-- About tab
-		L.ABOUT_PAGE = "À Propos";
-		L.ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
-		L.ABOUT_BOTTOM = "Contributeurs actifs : |CFFFFFFFF(pas d’ordre particulier)\n%s\n|rPanthéon des membres : |CFFFFFFFF(pas d’ordre particulier)\n%s\n\nSpéciale dédicace à AmiYuy (CanIMogIt) et Caerdon (Caerdon Wardrobe). Vous devriez absolument télécharger leurs addons pour afficher des icônes sur les objets à collectionner dans vos sacs ! %s %s %s\n\nPour afficher vos collections en ligne, vous pouvez visiter DataForAzeroth.com, créé par Shoogen ou WoWthing.org créé par Freddie !|r";	--TODO: now in alphabetical order
-
 	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "Afficher / masquer le mode Compte";
 		L.TOGGLE_COMPLETIONIST_MODE = "Afficher / masquer le mode Complétionniste";
@@ -751,6 +732,34 @@ do a[key] = value; end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
+	-- About Page
+	ABOUT_PAGE = "À Propos";
+	ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
+	ABOUT_BOTTOM = "Contributeurs actifs : |CFFFFFFFF(pas d’ordre particulier)\n%s\n|rPanthéon des membres : |CFFFFFFFF(pas d’ordre particulier)\n%s\n\nSpéciale dédicace à AmiYuy (CanIMogIt) et Caerdon (Caerdon Wardrobe). Vous devriez absolument télécharger leurs addons pour afficher des icônes sur les objets à collectionner dans vos sacs ! %s %s %s\n\nPour afficher vos collections en ligne, vous pouvez visiter DataForAzeroth.com, créé par Shoogen ou WoWthing.org créé par Freddie !|r";	--TODO: now in alphabetical order
+	--TODO: CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
+	--TODO: CURSEFORGE_BUTTON_LABEL = "Curse";
+	--TODO: CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+	--TODO: DISCORD_BUTTON_LABEL = "Discord";
+	--TODO: DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
+	--TODO: MERCH_BUTTON_LABEL = "Merch";
+	--TODO: MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
+	--TODO: PATREON_BUTTON_LABEL = "Patreon";
+	--TODO: PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
+	--TODO: TWITCH_BUTTON_LABEL = "Twitch";
+	--TODO: TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
+	--TODO: WAGO_BUTTON_LABEL = "Wago.io";
+	--TODO: WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+	
+	-- General Page
+	--TODO: DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
+	--TODO: DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+	ACCOUNT_MODE = app.ccColors.Account.."Mode Compte";
+	ACCOUNT_MODE_TOOLTIP = "Activez cette option si vous souhaitez suivre tous les objets de tous vos personnages, sans tenir compte des filtres de classe et de race. Les filtres d’inaccessibilité s’appliquent toujours.";
+	FACTION_MODE = "Faction uniquement";
+	FACTION_MODE_TOOLTIP = "Activez cette option si vous souhaitez afficher les données du mode Compte uniquement pour les races et les classes de votre faction actuelle.";
+	--TODO: LOOT_MODE = "Loot Mode";
+	--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
+	
 	--TODO: ACHIEVEMENT_ID = "Achievement ID";
 })
 do a[key] = value; end

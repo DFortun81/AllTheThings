@@ -18,32 +18,32 @@ local SocialButtonEvents = {
 };
 
 local buttonCurseForge = child:CreateButton(
-{ text = L["CURSEFORGE_BUTTON_LABEL"], tooltip = L["CURSEFORGE_BUTTON_TOOLTIP"], }, SocialButtonEvents)
+{ text = L.CURSEFORGE_BUTTON_LABEL, tooltip = L.CURSEFORGE_BUTTON_TOOLTIP, }, SocialButtonEvents)
 buttonCurseForge:SetPoint("BOTTOMLEFT", child, 0, 10)
 buttonCurseForge.copypasta = "https://www.curseforge.com/wow/addons/all-the-things";
 
 local buttonDiscord = child:CreateButton(
-{ text = L["DISCORD_BUTTON_LABEL"], tooltip = L["DISCORD_BUTTON_TOOLTIP"], }, SocialButtonEvents)
+{ text = L.DISCORD_BUTTON_LABEL, tooltip = L.DISCORD_BUTTON_TOOLTIP, }, SocialButtonEvents)
 buttonDiscord:SetPoint("TOPLEFT", buttonCurseForge, "TOPRIGHT", 4, 0)
 buttonDiscord.copypasta = "discord.gg/allthethings";
 
 local buttonMerch = child:CreateButton(
-{ text = L["MERCH_BUTTON_LABEL"], tooltip = L["MERCH_BUTTON_TOOLTIP"], }, SocialButtonEvents)
+{ text = L.MERCH_BUTTON_LABEL, tooltip = L.MERCH_BUTTON_TOOLTIP, }, SocialButtonEvents)
 buttonMerch:SetPoint("TOPLEFT", buttonDiscord, "TOPRIGHT", 4, 0)
 buttonMerch.copypasta = "designbyhumans.com/shop/allthethings";
 
 local buttonPatreon = child:CreateButton(
-{ text = L["PATREON_BUTTON_LABEL"], tooltip = L["PATREON_BUTTON_TOOLTIP"], }, SocialButtonEvents)
+{ text = L.PATREON_BUTTON_LABEL, tooltip = L.PATREON_BUTTON_TOOLTIP, }, SocialButtonEvents)
 buttonPatreon:SetPoint("TOPLEFT", buttonMerch, "TOPRIGHT", 4, 0)
 buttonPatreon.copypasta = "patreon.com/allthethings";
 
 local buttonTwitch = child:CreateButton(
-{ text = L["TWITCH_BUTTON_LABEL"], tooltip = L["TWITCH_BUTTON_TOOLTIP"], }, SocialButtonEvents)
+{ text = L.TWITCH_BUTTON_LABEL, tooltip = L.TWITCH_BUTTON_TOOLTIP, }, SocialButtonEvents)
 buttonTwitch:SetPoint("TOPLEFT", buttonPatreon, "TOPRIGHT", 4, 0)
 buttonTwitch.copypasta = "twitch.tv/crieve";
 
 local buttonWago = child:CreateButton(
-{ text = L["WAGO_BUTTON_LABEL"], tooltip = L["WAGO_BUTTON_TOOLTIP"], }, SocialButtonEvents)
+{ text = L.WAGO_BUTTON_LABEL, tooltip = L.WAGO_BUTTON_TOOLTIP, }, SocialButtonEvents)
 buttonWago:SetPoint("TOPLEFT", buttonTwitch, "TOPRIGHT", 4, 0)
 buttonWago.copypasta = "https://addons.wago.io/addons/allthethings";
 

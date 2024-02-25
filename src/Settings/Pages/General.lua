@@ -147,9 +147,26 @@ end)
 checkboxFactionMode:SetATTTooltip(L["FACTION_MODE_TOOLTIP"])
 checkboxFactionMode:AlignAfter(checkboxAccountMode)
 
+local checkboxLootMode = child:CreateCheckBox(L.LOOT_MODE,
+function(self)
+	self:SetChecked(settings:Get("Thing:Loot"));
+	if app.MODE_DEBUG then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetLootMode(self:GetChecked());
+end);
+checkboxLootMode:SetATTTooltip(L.LOOT_MODE_TOOLTIP);
+checkboxLootMode:AlignBelow(checkboxAccountMode)
+
 local headerAccountThings = child:CreateHeaderLabel(L["ACCOUNT_THINGS_LABEL"])
 headerAccountThings:SetPoint("LEFT", headerMode, 0, 0)
-headerAccountThings:SetPoint("TOP", checkboxFactionMode, "BOTTOM", 0, -10)
+headerAccountThings:SetPoint("TOP", checkboxLootMode, "BOTTOM", 0, -10)
 headerAccountThings.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)

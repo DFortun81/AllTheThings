@@ -88,7 +88,6 @@ for key, value in pairs({
 	["MIN_MAX_STANDING"] = "Requires a standing between";
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
-	["CLIPBOARDCOPYPASTE"] = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	["ALIVE"] = "Alive";
 	["SPAWNED"] = "Spawned";
 	["LAYER"] = "Layer";
@@ -374,29 +373,15 @@ for key, value in pairs({
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
 	["GENERAL_CONTENT"] = "General Content";
-	["TWITCH_BUTTON_LABEL"] = "Twitch";
-	["CURSEFORGE_BUTTON_LABEL"] = "Curse";
-	["CURSEFORGE_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-	["DISCORD_BUTTON_LABEL"] = "Discord";
-	["PATREON_BUTTON_LABEL"] = "Patreon";
-	["MERCH_BUTTON_LABEL"] = "Merch";
-	["WAGO_BUTTON_LABEL"] = "Wago.io";
-	["WAGO_BUTTON_TOOLTIP"] = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
-	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
-	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
-	["MERCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
+	
 	["MODE_EXPLAIN_LABEL"] = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-	["DEBUG_MODE"] = app.ccColors.Red.."Debug Mode|r (Show Everything)";
-	["DEBUG_MODE_TOOLTIP"] = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+	
 	["COMPLETIONIST_MODE"] = "+Sources";
 	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "Main Only";
 	["MAIN_ONLY_MODE_TOOLTIP"] = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-	["ACCOUNT_MODE"] = app.ccColors.Account.."Account Mode";
-	["ACCOUNT_MODE_TOOLTIP"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
-	["FACTION_MODE"] = "Faction Only";
-	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
+	
+	
 	["PRECISION_SLIDER"] = "Precision Level";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
@@ -707,9 +692,7 @@ for key, value in pairs({
 	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
 
 	-- About tab
-	["ABOUT_PAGE"] = "About";
-	["ABOUT_TOP"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
-	["ABOUT_BOTTOM"] = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
+	
 
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";

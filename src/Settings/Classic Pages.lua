@@ -17,17 +17,17 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	ModeLabel:SetText(settings:GetModeString());
 end);
 
-local DebugModeCheckBox = child:CreateCheckBox(app.ccColors.Red .. "Debug Mode|r (Show Everything)",
+local DebugModeCheckBox = child:CreateCheckBox(L.DEBUG_MODE,
 function(self)
 	self:SetChecked(app.MODE_DEBUG);
 end,
 function(self)
 	settings:SetDebugMode(self:GetChecked());
 end);
-DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
+DebugModeCheckBox:SetATTTooltip(L.DEBUG_MODE_TOOLTIP);
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -8);
 
-local AccountModeCheckBox = child:CreateCheckBox(app.ccColors.Account.."Account Mode|r",
+local AccountModeCheckBox = child:CreateCheckBox(L.ACCOUNT_MODE,
 function(self)
 	self:SetChecked(app.MODE_ACCOUNT);
 	if app.MODE_DEBUG then
@@ -41,11 +41,11 @@ end,
 function(self)
 	settings:SetAccountMode(self:GetChecked());
 end);
-AccountModeCheckBox:SetATTTooltip("Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.");
+AccountModeCheckBox:SetATTTooltip(L.ACCOUNT_MODE_TOOLTIP);
 AccountModeCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
 AccountModeCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
-local FactionModeCheckBox = child:CreateCheckBox("Only Current Faction",
+local FactionModeCheckBox = child:CreateCheckBox(L.FACTION_MODE,
 function(self)
 	local englishFaction = UnitFactionGroup("player")
 	if englishFaction == "Alliance" then
@@ -67,10 +67,10 @@ end,
 function(self)
 	settings:SetFactionMode(self:GetChecked());
 end);
-FactionModeCheckBox:SetATTTooltip(L["FACTION_MODE_TOOLTIP"]);
+FactionModeCheckBox:SetATTTooltip(L.FACTION_MODE_TOOLTIP);
 FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 140, 0);
 
-local LootCheckBox = child:CreateCheckBox("Loot Mode",
+local LootCheckBox = child:CreateCheckBox(L.LOOT_MODE,
 function(self)
 	self:SetChecked(settings:Get("Thing:Loot"));
 	if app.MODE_DEBUG then
@@ -84,7 +84,7 @@ end,
 function(self)
 	settings:SetLootMode(self:GetChecked());
 end);
-LootCheckBox:SetATTTooltip("Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
+LootCheckBox:SetATTTooltip(L.LOOT_MODE_TOOLTIP);
 LootCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, 4);
 
 local OnTooltipForThing = function(t, tooltipInfo)

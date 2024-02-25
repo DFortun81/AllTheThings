@@ -50,6 +50,7 @@ local Things = {
 	"Heirlooms",
 	"HeirloomUpgrades",
 	"Illusions",
+	"Loot",
 	"Mounts",
 	"MusicRollsAndSelfieFilters",
 	"Quests",
@@ -1213,6 +1214,13 @@ end
 settings.ToggleBOEItems = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"))
+end
+settings.SetLootMode = function(self, checked)
+	self:Set("Thing:Loot", checked);
+	self:UpdateMode(1);
+end
+settings.ToggleLootMode = function(self)
+	self:SetLootMode(not self:Get("Thing:Loot"));
 end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
 -- so force it always

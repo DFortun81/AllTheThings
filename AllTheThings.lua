@@ -7944,6 +7944,13 @@ local function SetThingVisibility(parent, group)
 		forceShowParent = visible;
 		-- if debug then print("trackable",visible) end
 	end
+	if not visible then
+		-- Loot Mode
+		if ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+			visible = true;
+		end
+		forceShowParent = visible;
+	end
 	-- Apply the visibility to the group
 	if visible then group.visible = true; end
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
