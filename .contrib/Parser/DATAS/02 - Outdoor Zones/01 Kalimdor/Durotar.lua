@@ -146,7 +146,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 						}),
@@ -167,7 +170,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 							["groups"] = {
@@ -194,7 +200,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 						}),
@@ -212,7 +221,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 							["groups"] = {
@@ -238,7 +250,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 						}),
@@ -256,7 +271,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 						}),
@@ -286,7 +304,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 						}),
@@ -403,7 +424,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 							["groups"] = {
@@ -562,7 +586,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 						}),
@@ -580,7 +607,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 							["isBreadcrumb"] = true,
@@ -599,7 +629,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 						}),
@@ -835,7 +868,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								PALADIN,
 								DEATHKNIGHT,
 								-- #if AFTER LEGION
-								DEMONHUNTER
+								DEMONHUNTER,
+								-- #endif
+								-- #if AFTER DF
+								EVOKER
 								-- #endif
 								}, ALL_CLASSES),
 							["groups"] = {
