@@ -167,7 +167,7 @@ for i,guid in ipairs({
 	"Player-3391-0C5619B9",	-- Lynnan-Silvermoon EU
 	"Player-3391-07568D56",	-- Maylesa-Silvermoon EU
 	"Player-3391-082E58AE",	-- Eliclia-Silvermoon EU
-	"Player-3391-08CFECDE",	-- Palach-Silvermoon EU
+	"Player-3391-0CC7EE6E",	-- Palach-Silvermoon EU
 	"Player-3391-0757575C",	-- Sianor-Silvermoon EU
 	"Player-3391-08D25BFA",	-- Smesue-Silvermoon EU
 	-- Danny Donkey
