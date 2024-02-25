@@ -961,7 +961,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
+	local working, tooltipInfo, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -1142,7 +1142,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if u < 99999999 then
 			local condition = L["AVAILABILITY_CONDITIONS"][u];
 			if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-				tinsert(info, { left = condition[2], wrap = true });
+				tinsert(tooltipInfo, { left = condition[2], wrap = true });
 			end
 		end
 
@@ -1244,20 +1244,20 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			for left,splitCount in pairs(splitCounts) do
 				if splitCount.count < 6 then
 					if #splitCount.variants == 0 then
-						tinsert(info, 1, { left = left, wrap = not left:find(" > ") });
+						tinsert(tooltipInfo, 1, { left = left, wrap = not left:find(" > ") });
 						count = count + 1;
 					else
 						for i,right in ipairs(splitCount.variants) do
-							tinsert(info, 1, { left = left, right = right, wrap = not left:find(" > ") });
+							tinsert(tooltipInfo, 1, { left = left, right = right, wrap = not left:find(" > ") });
 							count = count + 1;
 						end
 					end
 				else
-					tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not left:find(" > ") });
+					tinsert(tooltipInfo, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not left:find(" > ") });
 					count = count + 1;
 					for i,right in ipairs(splitCount.variants) do
 						if not right:find(ATTLE_PET_SOURCE_2) then
-							tinsert(info, 1, { left = left, right = right, wrap = not left:find(" > ") });
+							tinsert(tooltipInfo, 1, { left = left, right = right, wrap = not left:find(" > ") });
 							count = count + 1;
 						end
 					end
@@ -1265,9 +1265,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 			if count > maximum + 1 then
 				for i=count,maximum + 1,-1 do
-					tremove(info, 1);
+					tremove(tooltipInfo, 1);
 				end
-				tinsert(info, 1, "And " .. (count - maximum) .. " other sources...");
+				tinsert(tooltipInfo, 1, "And " .. (count - maximum) .. " other sources...");
 			end
 		end
 	end
@@ -1385,12 +1385,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	if group.isLimited then
-		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = app.Colors.TooltipDescription });
+		tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = app.Colors.TooltipDescription });
 	end
 	
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
-		app.ProcessInformationTypesForExternalTooltips(info, group, itemString);
+		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString);
 	end
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
@@ -1402,7 +1402,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if #entries > 0 then
 				local currentMapID = app.CurrentMapID;
 				local realmName, left, right = GetRealmName();
-				tinsert(info, { left = "Contains:" });
+				tinsert(tooltipInfo, { left = "Contains:" });
 				if #entries < 25 then
 					for i,item in ipairs(entries) do
 						left = item.group.text or RETRIEVING_DATA;
@@ -1410,7 +1410,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-						tinsert(info, { left = item.prefix .. left, right = item.right });
+						tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 
 						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
 							local incompletes = {};
@@ -1430,7 +1430,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								j = j + 1;
 							end
 							if j > 0 then
-								tinsert(info, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+								tinsert(tooltipInfo, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
 							end
 						end
 					end
@@ -1442,7 +1442,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-						tinsert(info, { left = item.prefix .. left, right = item.right });
+						tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 
 						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
 							local incompletes = {};
@@ -1457,11 +1457,11 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								desc = desc .. (character.text or guid);
 								j = j + 1;
 							end
-							tinsert(info, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+							tinsert(tooltipInfo, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
 						end
 					end
 					local more = #entries - 25;
-					if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+					if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 				end
 			end
 		end
@@ -1473,7 +1473,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					local left, right;
-					tinsert(info, { left = "Used to Craft:" });
+					tinsert(tooltipInfo, { left = "Used to Craft:" });
 					if #entries < 25 then
 						app.Sort(entries, function(a, b)
 							if a.group.name then
@@ -1488,7 +1488,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(info, { left = item.prefix .. left, right = item.right });
+							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 						end
 					else
 						for i=1,math.min(25, #entries) do
@@ -1496,10 +1496,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(info, { left = item.prefix .. left, right = item.right });
+							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 						end
 						local more = #entries - 25;
-						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 					end
 				end
 			end
@@ -1511,7 +1511,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				local entries, left, right = {};
 				BuildContainsInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
-					tinsert(info, { left = "Used in Recipes:" });
+					tinsert(tooltipInfo, { left = "Used in Recipes:" });
 					if #entries < 25 then
 						app.Sort(entries, function(a, b)
 							if a and a.group.name then
@@ -1526,7 +1526,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(info, { left = item.prefix .. left, right = item.right });
+							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 						end
 					else
 						for i=1,math.min(25, #entries) do
@@ -1534,10 +1534,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(info, { left = item.prefix .. left, right = item.right });
+							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 						end
 						local more = #entries - 25;
-						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 					end
 				end
 			end
@@ -1557,7 +1557,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					local entries, left, right = {};
 					BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 					if #entries > 0 then
-						tinsert(info, { left = "Available Skill Ups:" });
+						tinsert(tooltipInfo, { left = "Available Skill Ups:" });
 						if #entries < 25 then
 							app.Sort(entries, function(a, b)
 								if a.group.craftTypeID == b.group.craftTypeID then
@@ -1575,7 +1575,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								left = item.group.text or RETRIEVING_DATA;
 								if IsRetrieving(left) then working = true; end
 								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(info, { left = item.prefix .. left, right = item.right });
+								tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 							end
 						else
 							for i=1,math.min(25, #entries) do
@@ -1583,10 +1583,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								left = item.group.text or RETRIEVING_DATA;
 								if IsRetrieving(left) then working = true; end
 								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(info, { left = item.prefix .. left, right = item.right });
+								tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 							end
 							local more = #entries - 25;
-							if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+							if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 						end
 					end
 				end
@@ -1595,9 +1595,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- If there was any informational text generated, then attach that info.
-	if #info > 0 then
+	if #tooltipInfo > 0 then
 		local uniques, dupes, _ = {}, {};
-		for i,item in ipairs(info) do
+		for i,item in ipairs(tooltipInfo) do
 			_ = item.hash or item.left;
 			if not _ then
 				tinsert(uniques, item);
