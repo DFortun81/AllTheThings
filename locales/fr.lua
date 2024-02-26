@@ -715,82 +715,69 @@ do a[key] = value; end
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
 	-- About Page
-	ABOUT_PAGE = "À Propos";
-	ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
-	ABOUT_BOTTOM = "Contributeurs actifs : |CFFFFFFFF(pas d’ordre particulier)\n%s\n|rPanthéon des membres : |CFFFFFFFF(pas d’ordre particulier)\n%s\n\nSpéciale dédicace à AmiYuy (CanIMogIt) et Caerdon (Caerdon Wardrobe). Vous devriez absolument télécharger leurs addons pour afficher des icônes sur les objets à collectionner dans vos sacs ! %s %s %s\n\nPour afficher vos collections en ligne, vous pouvez visiter DataForAzeroth.com, créé par Shoogen ou WoWthing.org créé par Freddie !|r";	--TODO: now in alphabetical order
-	--TODO: CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
-	--TODO: CURSEFORGE_BUTTON_LABEL = "Curse";
-	--TODO: CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-	--TODO: DISCORD_BUTTON_LABEL = "Discord";
-	--TODO: DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
-	--TODO: MERCH_BUTTON_LABEL = "Merch";
-	--TODO: MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
-	--TODO: PATREON_BUTTON_LABEL = "Patreon";
-	--TODO: PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
-	--TODO: TWITCH_BUTTON_LABEL = "Twitch";
-	--TODO: TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
-	--TODO: WAGO_BUTTON_LABEL = "Wago.io";
-	--TODO: WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-	
+		ABOUT_PAGE = "À Propos";
+		ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
+		ABOUT_BOTTOM = "Contributeurs actifs : |CFFFFFFFF(pas d’ordre particulier)\n%s\n|rPanthéon des membres : |CFFFFFFFF(pas d’ordre particulier)\n%s\n\nSpéciale dédicace à AmiYuy (CanIMogIt) et Caerdon (Caerdon Wardrobe). Vous devriez absolument télécharger leurs addons pour afficher des icônes sur les objets à collectionner dans vos sacs ! %s %s %s\n\nPour afficher vos collections en ligne, vous pouvez visiter DataForAzeroth.com, créé par Shoogen ou WoWthing.org créé par Freddie !|r";	--TODO: now in alphabetical order
+		--TODO: CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
+		--TODO: CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+		--TODO: DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
+		--TODO: MERCH_BUTTON_LABEL = "Merch";
+		--TODO: MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
+		--TODO: PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
+		--TODO: TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
+		--TODO: WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+
 	-- General Page
-	--TODO: DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
-	--TODO: DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
-	ACCOUNT_MODE = app.ccColors.Account.."Mode Compte";
-	ACCOUNT_MODE_TOOLTIP = "Activez cette option si vous souhaitez suivre tous les objets de tous vos personnages, sans tenir compte des filtres de classe et de race. Les filtres d’inaccessibilité s’appliquent toujours.";
-	FACTION_MODE = "Faction uniquement";
-	FACTION_MODE_TOOLTIP = "Activez cette option si vous souhaitez afficher les données du mode Compte uniquement pour les races et les classes de votre faction actuelle.";
-	--TODO: LOOT_MODE = "Loot Mode";
-	--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
-		
+		--TODO: DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
+		--TODO: DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+		ACCOUNT_MODE = app.ccColors.Account.."Mode Compte";
+		ACCOUNT_MODE_TOOLTIP = "Activez cette option si vous souhaitez suivre tous les objets de tous vos personnages, sans tenir compte des filtres de classe et de race. Les filtres d’inaccessibilité s’appliquent toujours.";
+		FACTION_MODE = "Faction uniquement";
+		FACTION_MODE_TOOLTIP = "Activez cette option si vous souhaitez afficher les données du mode Compte uniquement pour les races et les classes de votre faction actuelle.";
+		--TODO: LOOT_MODE = "Loot Mode";
+		--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.";
+
 	-- General: Filters Page
-	--TODO: ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
-	ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
-	CLASS_DEFAULTS_BUTTON = "Votre classe";
-	CLASS_DEFAULTS_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour reinitialiser tous les filtres en rapport avec votre classe acutelle.\n\nNOTE : Seuls les filtres qui sont utilisables pour votre classe peuvent être activés.";
-	--TODO: ALL_BUTTON = ALL;
-	ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour activer toutes les options en même temps.";
-	--TODO: UNCHECK_ALL_BUTTON = NONE;
-	UNCHECK_ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour désactiver toutes les options en même temps.";
-	
+		ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
+		CLASS_DEFAULTS_BUTTON = "Votre classe";
+		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour reinitialiser tous les filtres en rapport avec votre classe acutelle.\n\nNOTE : Seuls les filtres qui sont utilisables pour votre classe peuvent être activés.";
+		ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour activer toutes les options en même temps.";
+		UNCHECK_ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour désactiver toutes les options en même temps.";
+
 	-- General: Phases Page
 	-- Classic Only, fully dynamic from within parser.
-	
+
 	-- General: Unobtainables Page
-	
-	
+
 	-- Interface Page
-	
+
 	-- Interface: Accessibility Page
-	
+
 	-- Interface: Information Page
-	--TODO: ACHIEVEMENT_ID = "Achievement ID";
-	--TODO: ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
-	
-	
+
 	-- Features Page
-	--TODO: FEATURES_PAGE = FEATURES_LABEL;
-	
+
 	-- Features: Audio Page
-	
+
 	-- Features: Reporting Page
-	REPORTING_LABEL = "Signalement";
-	--TODO: REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
-	--TODO: REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
-	REPORT_COMPLETED_QUESTS_CHECKBOX = "Afficher l’ID de quête";
-	REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher l’ID de quête pour toutes celles que vous acceptez ou terminez. (Sert à signaler des bogues, suivre des objectifs, etc.)";
-	--TODO: REPORT_UNSORTED_CHECKBOX = "Only 'Unsourced'";
-	--TODO: REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
-	
+		REPORTING_LABEL = "Signalement";
+		--TODO: REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
+		--TODO: REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
+		REPORT_COMPLETED_QUESTS_CHECKBOX = "Afficher l’ID de quête";
+		REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher l’ID de quête pour toutes celles que vous acceptez ou terminez. (Sert à signaler des bogues, suivre des objectifs, etc.)";
+		--TODO: REPORT_UNSORTED_CHECKBOX = "Only 'Unsourced'";
+		--TODO: REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
+
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
-	SYNC_PAGE = "Sync";
-	ACCOUNT_SYNCHRONIZATION = "Synchronisation du compte";
-	AUTO_SYNC_ACC_DATA_CHECKBOX = "Synchronisation automatique des données du compte";
-	AUTO_SYNC_ACC_DATA_TOOLTIP = "Activer cette option si vous souhaitez qu’ATT tente de synchroniser automatiquement les données entre les comptes lors de la connexion ou du rechargement de l’interface utilisateur.";
-	
+		SYNC_PAGE = "Sync";
+		ACCOUNT_SYNCHRONIZATION = "Synchronisation du compte";
+		AUTO_SYNC_ACC_DATA_CHECKBOX = "Synchronisation automatique des données du compte";
+		AUTO_SYNC_ACC_DATA_TOOLTIP = "Activer cette option si vous souhaitez qu’ATT tente de synchroniser automatiquement les données entre les comptes lors de la connexion ou du rechargement de l’interface utilisateur.";
+
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
-	
+
 	-- Profiles Page
 })
 do a[key] = value; end
