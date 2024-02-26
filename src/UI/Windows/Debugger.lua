@@ -94,11 +94,11 @@ app:CreateWindow("Debugger", {
 				local addonName = ...;
 				if addonName ~= appName then return; end
 				self:UnregisterEvent("ADDON_LOADED");
-				if not ATTClassicDebugData then
-					ATTClassicDebugData = app.GetDataMember("Debugger", {});
+				if not AllTheThingsDebugData then
+					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
 					app.SetDataMember("Debugger", nil);
 				end
-				self.rawData = ATTClassicDebugData;
+				self.rawData = AllTheThingsDebugData;
 				self.data.g = CloneClassInstance(self.rawData);
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);

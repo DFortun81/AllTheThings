@@ -5928,7 +5928,7 @@ local ADDON_LOADED_HANDLERS = {
 		end
 
 		-- Wipe the Debugger Data
-		ATTClassicDebugData = nil;
+		AllTheThingsDebugData = nil;
 		
 		-- Refresh Collections
 		app.RefreshCollections();
