@@ -179,46 +179,53 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			-- Repeatable Treasure Chests?
 			o_repeated({	-- Ritual Offerings
-				-- Contains
-				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
-				-- Objects
-				o(386088, {	-- Ritual Offerings
-					["coords"] = {
-						{ 41.7, 44.6, ZARALEK_CAVERN },
-						{ 40.0, 51.3, ZARALEK_CAVERN },
-						{ 38.1, 49.8, ZARALEK_CAVERN },
-						{ 40.8, 50.2, ZARALEK_CAVERN },
-					},
-					["questID"] = 73548,
+				["sym"] = {{"select","itemID",
+					205340,	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
+					205338,	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
+					205339,	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
+					205337,	-- Formula: Titan Training Matrix V (RECIPE!)
+				}},
+				["g"] = appendAllGroups({
+					-- Shared Drops
+					i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
+				},sharedData({
 					["isDaily"] = true,
-				}),
-				o(386089, {	-- Ritual Offerings
-					["coords"] = {
-						{ 33.0, 39.9, ZARALEK_CAVERN },
-						{ 31.9, 39.6, ZARALEK_CAVERN },
-					},
-					["questID"] = 73551,
-					["isDaily"] = true,
-				}),
-				o(386090, {	-- Ritual Offerings
-					["coords"] = {
-						{ 36.4, 52.3, ZARALEK_CAVERN },
-						{ 35.1, 52.2, ZARALEK_CAVERN },
-						{ 32.0, 52.9, ZARALEK_CAVERN },
-					},
-					["questID"] = 73552,
-					["isDaily"] = true,
-				}),
-				o(386091, {	-- Ritual Offerings
-					["coords"] = {
-						{ 28.6, 48.7, ZARALEK_CAVERN },
-						{ 27.3, 42.2, ZARALEK_CAVERN },
-						{ 28.9, 44.2, ZARALEK_CAVERN },
-						{ 28.2, 46.3, ZARALEK_CAVERN },
-					},
-					["questID"] = 73553,
-					["isDaily"] = true,
-				}),
+				},{
+					-- Objects
+					o(386088, {	-- Ritual Offerings
+						["questID"] = 73548,
+						["coords"] = {
+							{ 41.7, 44.6, ZARALEK_CAVERN },
+							{ 40.0, 51.3, ZARALEK_CAVERN },
+							{ 38.1, 49.8, ZARALEK_CAVERN },
+							{ 40.8, 50.2, ZARALEK_CAVERN },
+						},
+					}),
+					o(386089, {	-- Ritual Offerings
+						["questID"] = 73551,
+						["coords"] = {
+							{ 33.0, 39.9, ZARALEK_CAVERN },
+							{ 31.9, 39.6, ZARALEK_CAVERN },
+						},
+					}),
+					o(386090, {	-- Ritual Offerings
+						["questID"] = 73552,
+						["coords"] = {
+							{ 36.4, 52.3, ZARALEK_CAVERN },
+							{ 35.1, 52.2, ZARALEK_CAVERN },
+							{ 32.0, 52.9, ZARALEK_CAVERN },
+						},
+					}),
+					o(386091, {	-- Ritual Offerings
+						["questID"] = 73553,
+						["coords"] = {
+							{ 28.6, 48.7, ZARALEK_CAVERN },
+							{ 27.3, 42.2, ZARALEK_CAVERN },
+							{ 28.9, 44.2, ZARALEK_CAVERN },
+							{ 28.2, 46.3, ZARALEK_CAVERN },
+						},
+					}),
+				})),
 			}),
 			o_repeated({	-- Smelly Trash Pile
 				-- Shared

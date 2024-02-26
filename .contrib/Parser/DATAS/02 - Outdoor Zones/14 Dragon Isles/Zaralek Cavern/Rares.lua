@@ -6,6 +6,18 @@ local function bo(questID, isDaily)
 end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
+		n(RARES, {
+			n(COMMON_BOSS_DROPS, {
+				["sym"] = {
+					{"select","mapID",ZARALEK_CAVERN},
+					{"find","headerID",ZONE_REWARDS},{"pop"},
+					{"exclude","itemID",
+						204460,	-- Zaralek Glowspores
+						204911,	-- Propagated Spore
+					},
+				},
+			}),
+		}),
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(203515, {	-- Alcanon
 				["coord"] = { 56.4, 73.3, ZARALEK_CAVERN },

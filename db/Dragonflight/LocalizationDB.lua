@@ -572,7 +572,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
 	[-1000035] = "Naughty secrets...",
 	[-1000043] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
-	[-1000045] = "These items can drop from:\nEmissary Quest (Legion&later)\nRepeatable Treasure Chests (SL)\nTable missions (Legion&later)\nWish Crickets (SL)\nWorld Quests (Legion&later)",
+	[-1000045] = "These items can drop from:\nEmissary Quest (Legion&later)\nRepeatable Treasure Chests (SL)\nTable missions (Legion&later)\nWish Crickets (SL)\nWorld Quests (Legion&later)\nRare NPCs",
 	[-1000097] = "This section will show you things that you can buy in the In-Game Shop.",
 	[-1000162] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
 	[-1000163] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
