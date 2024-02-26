@@ -102,9 +102,7 @@ for filterID,filterData in pairs({
 		readable = "Artifacts",
 		icon = "Interface/Icons/Paladin_Protection",
 		constant = "ARTIFACTS",
-		-- #if AFTER LEGION
 		export = true,
-		-- #endif
 		text = {
 			en = "Artifacts",
 			de = "Artefakte",

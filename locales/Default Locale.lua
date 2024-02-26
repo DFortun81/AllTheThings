@@ -81,6 +81,16 @@ local L = setmetatable({
 		LOOT_MODE = "Loot Mode";
 		LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources. This can include items such as Rings, Trinkets, Necklaces and the like. Whether or not something is collectible is irrelevant when using this mode. Not recommended all the time, but if you want to see items that can come from a source like they do in AtlasLoot, you can enable this to see that information.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
 		
+		-- General: Filters Page
+		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
+		ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+		CLASS_DEFAULTS_BUTTON = "Class Defaults";
+		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
+		ALL_BUTTON = ALL;
+		ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
+		UNCHECK_ALL_BUTTON = NONE;
+		UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
+		
 		
 		ACHIEVEMENT_ID = "Achievement ID";
 		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";

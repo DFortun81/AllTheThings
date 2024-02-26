@@ -382,16 +382,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = TRACK_ACC_WIDE.."\n\nEnable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";	--TODO
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\nMost titles are tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";	--TODO
 
-	-- Filters tab
-		--TODO: L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		--TODO: L.CLASS_DEFAULTS_BUTTON = "Class Defaults";
-		--TODO: L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
-		--TODO: L.ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
-		--TODO: L.UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
-		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated Content";
-		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
-
 	-- Unobtainables tab
 		--TODO: L.UNOBTAINABLES_TAB = "Unobtainables";
 		--TODO: L.SEASONAL_LABEL = "Seasonal";
@@ -400,6 +390,9 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 		--TODO: L.UNOBTAINABLE_ALL = "|cffECBC21Show All Unobtainable";
 		--TODO: L.NO_CHANCE_ALL = "|cffECBC21Show All \"No Chance\"";
 		--TODO: L.HIGH_CHANCE_ALL = "|cffECBC21Show All \"High Chance\"";
+		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated Content";
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Interface tab
 		--TODO: L.TOOLTIP_LABEL = "Tooltips";
@@ -716,6 +709,16 @@ for key,value in pairs({
 	--TODO: FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
 	--TODO: LOOT_MODE = "Loot Mode";
 	--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
+		
+	-- General: Filters Page
+	--TODO: ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
+	--TODO: ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+	--TODO: CLASS_DEFAULTS_BUTTON = "Class Defaults";
+	--TODO: CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
+	--TODO: ALL_BUTTON = ALL;
+	--TODO: ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
+	--TODO: UNCHECK_ALL_BUTTON = NONE;
+	--TODO: UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
 	
 	--TODO: ACHIEVEMENT_ID = "Achievement ID";
 })

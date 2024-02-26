@@ -385,16 +385,6 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = TRACK_ACC_WIDE.."\n\nВключите, чтобы считать Проводники Медиумов собранными, если хотя бы один персонаж имеет к ним доступ.";
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\nБольшинство званий отслеживается на всю учётную запись, но некоторые престижные звания в WoW закреплены за персонажем, получившим их.\n\nПереключите эту опцию, если они Вам не важны, и Вы хотите видеть эти звания Собранными на Ваших альтах.";
 
-	-- Filters tab
-		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
-		L.CLASS_DEFAULTS_BUTTON = "Классовые";
-		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы сбросить все фильтры к стандартным для Вашего класса.\n\nПримечание: Только фильтры, которые могут быть собраны Вашим классом, будут включены.";
-		L.ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы включить все фильтры сразу.";
-		L.UNCHECK_ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы отключить все фильтры.";
-		L.CUSTOM_FILTERS_LABEL = "Автоматический контент";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
-		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
-
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "Недоступные";
 		L.SEASONAL_LABEL = "Сезонные";
@@ -403,6 +393,9 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.UNOBTAINABLE_ALL = "|cffECBC21Переключить Все Недоступные";
 		L.NO_CHANCE_ALL = "|cffECBC21Переключить Все \"Без Шансов\"";
 		L.HIGH_CHANCE_ALL = "|cffECBC21Переключить Все \"Высокий Шанс\"";
+		L.CUSTOM_FILTERS_LABEL = "Автоматический контент";
+		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
+		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 
 	-- Interface tab
 		L.TOOLTIP_LABEL = "Подсказки";
@@ -759,6 +752,16 @@ for key,value in pairs({
 	FACTION_MODE_TOOLTIP = "Включите данную настройку, если Вы хотите отслеживать Штучки в Режиме Аккаунта только для рас и классов Вашей текущей фракции.";
 	--TODO: LOOT_MODE = "Loot Mode";
 	--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
+		
+	-- General: Filters Page
+	--TODO: ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
+	ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
+	CLASS_DEFAULTS_BUTTON = "Классовые";
+	CLASS_DEFAULTS_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы сбросить все фильтры к стандартным для Вашего класса.\n\nПримечание: Только фильтры, которые могут быть собраны Вашим классом, будут включены.";
+	--TODO: ALL_BUTTON = ALL;
+	ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы включить все фильтры сразу.";
+	--TODO: UNCHECK_ALL_BUTTON = NONE;
+	UNCHECK_ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы отключить все фильтры.";
 	
 	-- Interface Page
 	

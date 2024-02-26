@@ -387,16 +387,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = TRACK_ACC_WIDE.."\n\n启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器，则将所有角色的灵魂羁绊的导灵器视为收藏。";
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
 
-	-- Filters tab
-		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 "..app.ccColors.Account.."帐号模式|cffFFFFFF。|r";
-		L.CLASS_DEFAULTS_BUTTON = "职业默认";
-		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "点击此按钮可将所有过滤重置为职业默认。\n\n注意：只能打开可为职业收藏的过滤。";
-		L.ALL_BUTTON_TOOLTIP = "点击此按钮一次启用所有设备过滤。";
-		L.UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一次禁用所有设备过滤。";
-		L.CUSTOM_FILTERS_LABEL = "自动化内容";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
-		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
-
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "不可获得";
 		L.SEASONAL_LABEL = "节日";
@@ -405,6 +395,9 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.UNOBTAINABLE_ALL = "|cffECBC21切换所有不可获得";
 		L.NO_CHANCE_ALL = "|cffECBC21切换所有 \"没有机会\"";
 		L.HIGH_CHANCE_ALL = "|cffECBC21切换所有 \"很大机会\"";
+		L.CUSTOM_FILTERS_LABEL = "自动化内容";
+		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
+		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
 	-- Interface tab
 		L.TOOLTIP_LABEL = "鼠标提示";
@@ -791,6 +784,16 @@ for key,value in pairs({
 	FACTION_MODE_TOOLTIP = "如果你想只看到你当前阵营的种族和职业的战网模式数据，请开启此设置。";
 	--TODO: LOOT_MODE = "Loot Mode";
 	--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
+		
+	-- General: Filters Page
+	--TODO: ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
+	ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 "..app.ccColors.Account.."帐号模式|cffFFFFFF。|r";
+	CLASS_DEFAULTS_BUTTON = "职业默认";
+	CLASS_DEFAULTS_BUTTON_TOOLTIP = "点击此按钮可将所有过滤重置为职业默认。\n\n注意：只能打开可为职业收藏的过滤。";
+	--TODO: ALL_BUTTON = ALL;
+	ALL_BUTTON_TOOLTIP = "点击此按钮一次启用所有设备过滤。";
+	--TODO: UNCHECK_ALL_BUTTON = NONE;
+	UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一次禁用所有设备过滤。";
 	
 	ACHIEVEMENT_ID = "成就 ID";
 })

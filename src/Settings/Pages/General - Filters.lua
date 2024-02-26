@@ -19,7 +19,7 @@ headerWeaponsAndArmor.OnRefresh = function(self)
 	end
 end
 
-local textWeaponsAndArmorExplain = child:CreateTextLabel(L["ITEM_EXPLAIN_LABEL"])
+local textWeaponsAndArmorExplain = child:CreateTextLabel(L.ITEM_EXPLAIN_LABEL)
 textWeaponsAndArmorExplain:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 0, -4)
 textWeaponsAndArmorExplain.OnRefresh = function(self)
 	if app.MODE_DEBUG then
@@ -31,7 +31,7 @@ end
 
 -- Stuff to automatically generate the armor & weapon checkboxes
 local last = headerWeaponsAndArmor
-local itemFilterNames = L["FILTER_ID_TYPES"]
+local itemFilterNames = L.FILTER_ID_TYPES
 local ItemFilterOnClick = function(self)
 	settings:SetFilter(self.filterID, self:GetChecked())
 end
@@ -66,7 +66,7 @@ for i,filterID in ipairs({
 		filter:AlignBelow(last)
 	end
 	filter.filterID = filterID
-	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
+	filter:SetATTTooltip(L.FILTER_ID ..": "..filterID)
 	last = filter
 end
 
@@ -122,7 +122,7 @@ for i,filterID in ipairs({ 32, 33, 31, 36, 27, 8, 1 }) do
 		filter:AlignBelow(last)
 	end
 	filter.filterID = filterID
-	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
+	filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
 	last = filter
 end
 
@@ -144,13 +144,13 @@ for i,filterID in ipairs({
 		filter:AlignBelow(last)
 	end
 	filter.filterID = filterID
-	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
+	filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
 	last = filter
 end
 
 -- The 3 buttons
 local buttonClassDefaults = child:CreateButton(
-{ text = L["CLASS_DEFAULTS_BUTTON"], tooltip = L["CLASS_DEFAULTS_BUTTON_TOOLTIP"], },
+{ text = L.CLASS_DEFAULTS_BUTTON, tooltip = L.CLASS_DEFAULTS_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
 		wipe(AllTheThingsSettingsPerCharacter.Filters);
@@ -168,7 +168,7 @@ buttonClassDefaults.OnRefresh = function(self)
 end
 
 local buttonAll = child:CreateButton(
-{ text = L["ALL_BUTTON"], tooltip = L["ALL_BUTTON_TOOLTIP"], },
+{ text = L.ALL_BUTTON, tooltip = L.ALL_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
 		for k,v in pairs(allEquipmentFilters) do
@@ -187,7 +187,7 @@ buttonAll.OnRefresh = function(self)
 end
 
 local buttonNone = child:CreateButton(
-{ text = L["UNCHECK_ALL_BUTTON"], tooltip = L["UNCHECK_ALL_BUTTON_TOOLTIP"], },
+{ text = L.UNCHECK_ALL_BUTTON, tooltip = L.UNCHECK_ALL_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
 		for k,v in pairs(allEquipmentFilters) do
