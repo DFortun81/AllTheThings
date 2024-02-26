@@ -820,7 +820,7 @@ root(ROOTS.Zones, {
 								q(32248, {	-- A Little Patience
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
-									["coord"] = { 89.4, 32.6, KRASARANG_WILDS },
+									["coord"] = { 89.5, 32.6, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["maps"] = { 487 },	-- A Little Patience
 									["lvl"] = 90,	-- 15

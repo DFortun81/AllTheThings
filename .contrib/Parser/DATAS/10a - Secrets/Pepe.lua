@@ -219,21 +219,21 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 			["customCollect"] = "SL_COV_NFA",
 		}),
 		i(213181, {	-- A Tiny Dragon Goblet
-			-- ["provider"] = { "o",  },	--
+			["provider"] = { "o", 421718 },	-- Dragon Pepe
 			["questID"] = 79547,
 			["coord"] = { 50.5, 52.9, VALDRAKKEN },
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 		i(213202, {	-- A Tiny Explorer's Hat
-			-- ["provider"] = { "o",  },	--
+			["provider"] = { "o", 421736 },	-- Explorer Pepe
 			["questID"] = 79550,
 			["coord"] = { 47.3, 82.7, THE_WAKING_SHORES },
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 		i(213207, {	-- A Tiny Ear Warmer
-			-- ["provider"] = { "o",  },	--
+			["provider"] = { "o", 421740 },	-- Tuskarr Pepe
 			["questID"] = 79551,
-			["coord"] = { 12.89, 48.59, THE_AZURE_SPAN },
+			["coord"] = { 12.99, 48.59, THE_AZURE_SPAN },
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 	},
