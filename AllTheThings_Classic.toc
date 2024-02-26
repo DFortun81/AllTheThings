@@ -8,8 +8,8 @@
 ## X-Interface: 11501
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
-## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, ATTClassicSettings, ATTClassicAuctionData, ATTClassicDebugData, AllTheThingsSettings
+## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter, AllTheThingsSettingsPerCharacter
 ## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
 ## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
 ## AddonCompartmentFuncOnLeave: AllTheThings_MinimapButtonOnLeave

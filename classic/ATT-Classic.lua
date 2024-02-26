@@ -5695,12 +5695,7 @@ local ADDON_LOADED_HANDLERS = {
 	[appName] = function()
 		AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 		if not AllTheThingsAD then
-			AllTheThingsAD = _G["ATTClassicAD"];
-			if AllTheThingsAD then
-				_G["ATTClassicAD"] = nil;
-			else
-				AllTheThingsAD = { };
-			end
+			AllTheThingsAD = { };
 			_G["AllTheThingsAD"] = AllTheThingsAD;
 		end
 		
