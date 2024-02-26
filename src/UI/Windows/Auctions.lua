@@ -50,7 +50,7 @@ app:CreateWindow("Auctions", {
 				end
 				
 				-- Write back the valid auction data to saved variables.
-				ATTClassicAuctionData = auctionData;
+				AllTheThingsAuctionData = auctionData;
 				wipe(self.data.g);
 				self:Update(true);
 			end
@@ -113,7 +113,13 @@ app:CreateWindow("Auctions", {
 	OnRebuild = function(self, ...)
 		if not self.data then
 			-- If we have left over auction data from previous, then use it.
-			if ATTClassicAuctionData and not ATTClassicAuctionData[1] then auctionData = ATTClassicAuctionData; end
+			if AllTheThingsAuctionData and not AllTheThingsAuctionData[1] then
+				auctionData = AllTheThingsAuctionData;
+			elseif ATTClassicAuctionData and not ATTClassicAuctionData[1] then
+				auctionData = ATTClassicAuctionData;
+				AllTheThingsAuctionData = auctionData;
+				ATTClassicAuctionData = nil;
+			end
 			self.data = {
 				text = "Auction Module",
 				icon = "INTERFACE\\ICONS\\INV_Misc_Coin_01", 
