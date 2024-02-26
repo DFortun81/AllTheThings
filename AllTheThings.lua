@@ -1225,7 +1225,6 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 	end
 	-- check exact field match for other groups
 	if group[key] == value then return true; end
-	app.PrintDebug("GroupMatchesParams default return",group.hash,key,value)
 end
 app.GroupMatchesParams = GroupMatchesParams;
 -- Returns proper, class-filtered specs for a given itemID
@@ -7944,8 +7943,8 @@ local function SetThingVisibility(parent, group)
 		forceShowParent = visible;
 		-- if debug then print("trackable",visible) end
 	end
+	-- Loot Mode
 	if not visible then
-		-- Loot Mode
 		if ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
 			visible = true;
 		end
@@ -9337,7 +9336,7 @@ local function RowOnClick(self, button)
 					local locked = not window.isLocked;
 					window.isLocked = locked;
 					window:StorePosition();
-					
+
 					-- force tooltip to refresh since locked state drives tooltip content
 					RowOnLeave(self);
 					RowOnEnter(self);
@@ -9378,7 +9377,7 @@ RowOnEnter = function (self)
 	-- Always display tooltip data when viewing information from our windows.
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
-	
+
 	-- Build tooltip information.
 	local tooltipInfo = {};
 	tooltip:ClearLines();
@@ -9388,7 +9387,7 @@ RowOnEnter = function (self)
 	else
 		tooltip:SetOwner(self, "ANCHOR_RIGHT");
 	end
-	
+
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
 	if reference.key ~= "encounterID" and reference.key ~= "instanceID" and reference.key ~= "questID" then
@@ -9664,7 +9663,7 @@ RowOnEnter = function (self)
 				color = app.Colors.TooltipDescription,
 				wrap = true,
 			});
-			
+
 		end
 
 		-- Add any ID toggle fields
@@ -10103,8 +10102,8 @@ RowOnEnter = function (self)
 		right = tostring(CalculateRowIndent(reference)),
 	});
 	-- END DEBUGGING]]
-	
-	
+
+
 	-- Attach all of the Information to the tooltip.
 	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
 	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
@@ -11034,7 +11033,7 @@ local function RefreshData()
 	else
 		app:UpdateWindows(nil, app.refreshDataGot);
 	end
-	
+
 	-- Execute the OnRefreshComplete handlers.
 	app.HandleEvent("OnRefreshComplete");
 end
@@ -12251,7 +12250,7 @@ customWindowUpdates["NWP"] = function(self)
 end;
 customWindowUpdates["Prime"] = function(self, ...)
 	self:BaseUpdate(...);
-	
+
 	-- Write the current character's progress.
 	local rootData = self.data;
 	if rootData and rootData.total and rootData.total > 0 then
