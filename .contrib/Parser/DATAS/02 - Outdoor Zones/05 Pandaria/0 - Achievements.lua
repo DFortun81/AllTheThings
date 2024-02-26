@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 						["description"] = "Recommended to be in a Healer Spec to guarantee this item.", -- verified ?? Shaman(Resto)
 					}),
 					i(86224, {	-- Steadfast Sprite Cape
-						["description"] = "Recommended to be in a Tank Spec to guarantee this item.", -- verified 2021-10-18 Paladin(Prot)
+						["description"] = "Recommended to be in a Strength Tank Spec to guarantee this item.", -- verified 2021-10-18 Paladin(Prot)
 					}),
 				},
 			}),
