@@ -1317,6 +1317,9 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	silentLink = function(t)
 		return GetQuestLinkForObject(t);
 	end,
+	tooltipLink = function(t)
+		return "quest:"..t.questID
+	end,
 	collectible = CollectibleAsQuest,
 	collected = IsQuestFlaggedCompletedForObject,
 	altcollected = function(t)

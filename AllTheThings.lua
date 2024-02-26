@@ -9390,18 +9390,20 @@ RowOnEnter = function (self)
 
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
-	if reference.key ~= "encounterID" and reference.key ~= "instanceID" and reference.key ~= "questID" then
-		-- Encounter & Instance Links break the tooltip, Quest Links are inconsistent.
-		local link = reference.link or reference.silentLink
+	local refkey = reference.key
+	if refkey ~= "encounterID" and refkey ~= "instanceID" and (refkey ~= "questID" or not app.Settings:GetTooltipSetting("QuestReplacement")) then
+		-- Encounter & Instance Links break the tooltip
+		local link = reference.link or reference.tooltipLink or reference.silentLink
 		if link and link:sub(1, 1) ~= "[" then
-			local ok, success = pcall(tooltip.SetHyperlink, tooltip, link);
-			if success then
+			local ok, result = pcall(tooltip.SetHyperlink, tooltip, link);
+			if ok and result then
 				linkSuccessful = true;
 			end
-			--print("Link:", link:gsub("|","\\"));
-			--print("Link Result!", success, reference.key, reference.__type);
+			-- app.PrintDebug("Link:", link:gsub("|","\\"));
+			-- app.PrintDebug("Link Result!", result, refkey, reference.__type);
+		-- elseif link then app.PrintDebug("Ignore tooltip link",link) else
 		end
-		
+
 		-- Only if the link was unsuccessful.
 		if (not linkSuccessful or tooltip.ATT_AttachComplete == nil) and reference.currencyID then
 			tooltip:SetCurrencyByID(reference.currencyID, 1);
@@ -9476,7 +9478,7 @@ RowOnEnter = function (self)
 			left = msg,
 		});
 	end
-	if reference.questID and not reference.objectiveID then
+	if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
 		app.AddQuestObjectives(tooltipInfo, reference);
 	end
 	if reference.providers then
