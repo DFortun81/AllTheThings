@@ -373,15 +373,15 @@ for key, value in pairs({
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
 	["GENERAL_CONTENT"] = "General Content";
-	
+
 	["MODE_EXPLAIN_LABEL"] = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-	
+
 	["COMPLETIONIST_MODE"] = "+Sources";
 	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "Main Only";
 	["MAIN_ONLY_MODE_TOOLTIP"] = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-	
-	
+
+
 	["PRECISION_SLIDER"] = "Precision Level";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
@@ -556,6 +556,8 @@ for key, value in pairs({
 	["FOR_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 	["WITH_WRAPPING_CHECKBOX"] = "Allow Wrapping",
 	["WITH_WRAPPING_CHECKBOX_TOOLTIP"] = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
+	["REPLACE_QUEST_TOOLTIPS"] = "Replace Quest Tooltips",
+	["REPLACE_QUEST_TOOLTIPS_TOOLTIP"] = "Enable this option to have ATT replace the default Quest tooltips with custom Quest information and objective tracking.",
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
@@ -667,7 +669,7 @@ for key, value in pairs({
 	["DELETE_LINKED_ACCOUNT"] = "Right Click to Delete this Linked Account";
 	["DELETE_CHARACTER"] = "Right Click to Delete this Character";
 	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
-	
+
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
 	["ITEM_ID_ADDED_RANK"] = "%s (%d) [Rank %d] was added to your collection.";
