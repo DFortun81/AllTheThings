@@ -9382,22 +9382,30 @@ RowOnEnter = function (self)
 	local tooltipInfo = {};
 	tooltip:ClearLines();
 	app.ActiveRowReference = reference;
+	local owner;
 	if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
-		tooltip:SetOwner(self, "ANCHOR_LEFT");
+		owner = "ANCHOR_LEFT"
 	else
-		tooltip:SetOwner(self, "ANCHOR_RIGHT");
+		owner = "ANCHOR_RIGHT"
 	end
+	tooltip:SetOwner(self, owner);
 
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
 	local refkey = reference.key
-	if refkey ~= "encounterID" and refkey ~= "instanceID" and (refkey ~= "questID" or not app.Settings:GetTooltipSetting("QuestReplacement")) then
+	local questReplace = app.Settings:GetTooltipSetting("QuestReplacement")
+	if refkey ~= "encounterID" and refkey ~= "instanceID" and (refkey ~= "questID" or not questReplace) then
 		-- Encounter & Instance Links break the tooltip
 		local link = reference.link or reference.tooltipLink or reference.silentLink
 		if link and link:sub(1, 1) ~= "[" then
 			local ok, result = pcall(tooltip.SetHyperlink, tooltip, link);
 			if ok and result then
 				linkSuccessful = true;
+			else
+				-- if a link fails to render a tooltip, it clears the tooltip and the owner
+				-- so we have to re-assign it here for it to use :Show()
+				tooltip:SetOwner(self, owner);
+				if not questReplace then questReplace = true end
 			end
 			-- app.PrintDebug("Link:", link:gsub("|","\\"));
 			-- app.PrintDebug("Link Result!", result, refkey, reference.__type);
@@ -9478,7 +9486,7 @@ RowOnEnter = function (self)
 			left = msg,
 		});
 	end
-	if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
+	if reference.questID and not reference.objectiveID and questReplace then
 		app.AddQuestObjectives(tooltipInfo, reference);
 	end
 	if reference.providers then
