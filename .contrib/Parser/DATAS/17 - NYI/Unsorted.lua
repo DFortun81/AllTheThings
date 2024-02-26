@@ -2595,7 +2595,6 @@ root(ROOTS.Unsorted, {
 				i(180786),	-- Empty Binding
 				i(180455),	-- Empty Dredge Vial
 				i(180448),	-- Eroded Heat Sink
-				i(175241),	-- Expedition Healing Potion
 				i(184033),	-- Extra-Spacious Knapsack
 				i(175243),	-- Faded Grimoire
 				i(180292),	-- Faerie Dust

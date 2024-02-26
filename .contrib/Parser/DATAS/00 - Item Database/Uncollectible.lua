@@ -307,6 +307,8 @@ i(123865);	-- Relic of Ursol
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+--- Consumable ---
+i(175241);	-- Expedition Healing Potion
 --- Trash ---
 i(169821);	-- Ogre Effigy
 i(174790);	-- Overseer's Mandate
