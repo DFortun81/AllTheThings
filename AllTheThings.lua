@@ -10845,6 +10845,13 @@ function app:GetDataCache()
 			-- Conduits
 			app.CreateDynamicHeader("conduitID", SimpleNPCGroup(-981, {suffix=EXPANSION_NAME8})),
 
+			-- Currencies
+			app.CreateDynamicHeaderByValue("currencyID", {
+				dynamic_withsubgroups = true,
+				name = CURRENCY,
+				icon = app.asset("Interface_Vendor")
+			}),
+
 			-- Drake Manuscripts (TODO)
 			-- app.CreateDynamicHeader("dmID", SimpleNPCGroup(app.HeaderConstants.DRA)),
 
