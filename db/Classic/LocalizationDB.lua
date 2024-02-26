@@ -389,7 +389,7 @@ localize(L.HEADER_ICONS, {
 	[-1000069] = "Interface/Icons/Inv_relics_libramofhope",
 	[-1000070] = "Interface/Icons/inv_shoulder_05",
 	[-1000072] = "Interface/Icons/inv_belt_24",
-	[-1000073] = "Interface/Icons/INV_Sword_23",
+	[-1000073] = _.asset("Weapon_Type_Epic"),
 	[-1000074] = "Interface/Icons/inv_bracer_07",
 	[-1000083] = _.asset("Category_Blackmarket"),
 	[-1000093] = "Interface/FriendsFrame/PlusManz-Alliance",

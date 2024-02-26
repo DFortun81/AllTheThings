@@ -1684,7 +1684,7 @@ function app:CreateWindow(suffix, settings)
 		window:SetSize(300, 300);
 		window:Hide();
 
-		if ATTClassicSettings then
+		if AllTheThingsSettings then
 			if suffix == "Prime" then
 				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
 			else

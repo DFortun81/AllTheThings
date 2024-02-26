@@ -36,6 +36,11 @@ local ItemFilterOnClick = function(self)
 	settings:SetFilter(self.filterID, self:GetChecked())
 end
 local ItemFilterOnRefresh = function(self)
+	if getmetatable(AllTheThingsSettingsPerCharacter.Filters).__index[self.filterID] then
+		self.Text:SetTextColor(0.6, 0.7, 1);
+	else
+		self.Text:SetTextColor(1, 1, 1);
+	end
 	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable()
 		self:SetAlpha(0.4)
@@ -46,13 +51,17 @@ local ItemFilterOnRefresh = function(self)
 	end
 end
 
--- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords, Daggers, Fist Weapons, Polearms, Warglaives
-local awColumn1 = { 21, 22, 23, 24, 25, 26, 20, 34, 29, 35 }
-for i,filterID in ipairs(awColumn1) do
+for i,filterID in ipairs({
+	21, 22, 23, 24, 25, 26,	-- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
+	20, 34, 29, 28, 35		-- Daggers, Fist Weapons, Polearms, Staves, Warglaives
+}) do
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 21 then
-		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", -2, -2)
+		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", -2, -6)
+	-- Spacing
+	elseif filterID == 20 then
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -2)
 	else
 		filter:AlignBelow(last)
 	end
@@ -63,6 +72,7 @@ end
 
 local allEquipmentFilters = {	-- Filter IDs
 	11,	-- Artifacts
+	54,	-- Artifact Relics
 	2,	-- Cosmetic
 	3,	-- Cloaks
 	10,	-- Shirts
@@ -70,6 +80,7 @@ local allEquipmentFilters = {	-- Filter IDs
 	33,	-- Crossbows
 	32,	-- Bows
 	31,	-- Guns
+	36,	-- Thrown
 	50,	-- Miscellaneous
 	57,	-- Profession Equipment
 	34,	-- Fist Weapons
@@ -90,15 +101,23 @@ local allEquipmentFilters = {	-- Filter IDs
 	20,	-- Daggers
 	29,	-- Polearms
 	28,	-- Staves
+	51,	-- Neck
+	52,	-- Finger
+	53,	-- Trinket
+	55,	-- Consumable
+	104,	-- Quest Items
+	113,	-- Bags
 }
 
--- Bows, Crossbows, Guns, Staves, Wands, Shields, Off-hands
-local awColumn2 = { 32, 33, 31, 28, 27, 8, 1 }
-for i,filterID in ipairs(awColumn2) do
+-- Bows, Crossbows, Guns, Thrown, Wands, Shields, Off-hands
+for i,filterID in ipairs({ 32, 33, 31, 36, 27, 8, 1 }) do
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
 	-- Start
 	if filterID == 32 then
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -10)
+	-- Spacing
+	elseif filterID == 8 then
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
 	else
 		filter:AlignBelow(last)
 	end
@@ -107,6 +126,27 @@ for i,filterID in ipairs(awColumn2) do
 	last = filter
 end
 
+-- Artifacts, Relics, Profession Tools
+for i,filterID in ipairs({
+	4, 5, 6, 7,		-- Cloth, Leather, Mail, Plate
+	2, 3, 10, 9,	-- Cosmetic, Cloak, Shirt, Tabard
+	11, 54, 57,		-- Artifacts, Relics, Profession Tools
+	50, 51, 52, 53, 113, 55, 104
+}) do
+	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
+	-- Start
+	if filterID == 4 then
+		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", 320, -6)
+	-- Spacing
+	elseif filterID == 2 or filterID == 11 or filterID == 51 then
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
+	else
+		filter:AlignBelow(last)
+	end
+	filter.filterID = filterID
+	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
+	last = filter
+end
 
 -- The 3 buttons
 local buttonClassDefaults = child:CreateButton(
@@ -118,7 +158,7 @@ local buttonClassDefaults = child:CreateButton(
 	end,
 })
 buttonClassDefaults:SetPoint("LEFT", headerWeaponsAndArmor, 0, 0)
-buttonClassDefaults:SetPoint("TOP", last, "BOTTOM", 0, -10)
+buttonClassDefaults:SetPoint("BOTTOM", child, "BOTTOM", 0, 10)
 buttonClassDefaults.OnRefresh = function(self)
 	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable()
@@ -163,22 +203,4 @@ buttonNone.OnRefresh = function(self)
 	else
 		self:Enable()
 	end
-end
-
--- Cloth, Leather, Mail, Plate + Cosmetic, Cloak, Shirt, Tabard + Artifacts, Profession Tools
-local awColumn3 = { 4, 5, 6, 7, 2, 3, 10, 9, 11, 57 }
-for i,filterID in ipairs(awColumn3) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 4 then
-		filter:SetPoint("TOPLEFT", textWeaponsAndArmorExplain, "BOTTOMLEFT", 320, -2)
-	-- Spacing
-	elseif filterID == 2 or filterID == 11 then
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 0)
-	else
-		filter:AlignBelow(last)
-	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID)
-	last = filter
 end

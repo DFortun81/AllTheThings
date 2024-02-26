@@ -189,35 +189,47 @@ local UnobtainableSettingsBase = {
 };
 settings.__UnobtainableSettingsBase = UnobtainableSettingsBase;
 local RawSettings;
-local ATTClassicSettings, ATTClassicSettingsPerCharacter = {}, {};
+local AllTheThingsSettings, AllTheThingsSettingsPerCharacter = {}, {};
 settings.Initialize = function(self)
-	local global_ATTClassicSettings = _G["ATTClassicSettings"];
-	if global_ATTClassicSettings then ATTClassicSettings = global_ATTClassicSettings; end
-	_G["ATTClassicSettings"] = ATTClassicSettings;
-	RawSettings = ATTClassicSettings;
+	local global_AllTheThingsSettings = _G["AllTheThingsSettings"];
+	if global_AllTheThingsSettings then AllTheThingsSettings = global_AllTheThingsSettings; end
+	global_AllTheThingsSettings = _G["ATTClassicSettings"];
+	if global_AllTheThingsSettings then
+		-- Purge the deprecated variable (remove this in a few versions)
+		AllTheThingsSettings = global_AllTheThingsSettings;
+		_G["ATTClassicSettings"] = nil;
+	end
+	_G["AllTheThingsSettings"] = AllTheThingsSettings;
+	RawSettings = AllTheThingsSettings;
 
-	local global_ATTClassicSettingsPerCharacter = _G["ATTClassicSettingsPerCharacter"];
-	if global_ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = global_ATTClassicSettingsPerCharacter; end
-	_G["ATTClassicSettingsPerCharacter"] = ATTClassicSettingsPerCharacter;
+	local global_AllTheThingsSettingsPerCharacter = _G["AllTheThingsSettingsPerCharacter"];
+	if global_AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = global_AllTheThingsSettingsPerCharacter; end
+	global_AllTheThingsSettingsPerCharacter = _G["ATTClassicSettingsPerCharacter"];
+	if global_AllTheThingsSettingsPerCharacter then
+		-- Purge the deprecated variable (remove this in a few versions)
+		AllTheThingsSettingsPerCharacter = global_AllTheThingsSettingsPerCharacter;
+		_G["ATTClassicSettingsPerCharacter"] = nil;
+	end
+	_G["AllTheThingsSettingsPerCharacter"] = AllTheThingsSettingsPerCharacter;
 
 	-- Assign the default settings
-	if not ATTClassicSettings.General then ATTClassicSettings.General = {}; end
-	if not ATTClassicSettings.Tooltips then ATTClassicSettings.Tooltips = {}; end
-	if not ATTClassicSettings.Unobtainable then
-		if ATTClassicSettings.Unobtainables then
-			ATTClassicSettings.Unobtainable = ATTClassicSettings.Unobtainables;
+	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
+	if not AllTheThingsSettings.Tooltips then AllTheThingsSettings.Tooltips = {}; end
+	if not AllTheThingsSettings.Unobtainable then
+		if AllTheThingsSettings.Unobtainables then
+			AllTheThingsSettings.Unobtainable = AllTheThingsSettings.Unobtainables;
 		else
-			ATTClassicSettings.Unobtainable = {};
+			AllTheThingsSettings.Unobtainable = {};
 		end
 	end
-	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
-	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
-	setmetatable(ATTClassicSettings.Unobtainable, UnobtainableSettingsBase);
+	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
+	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
+	setmetatable(AllTheThingsSettings.Unobtainable, UnobtainableSettingsBase);
 	
 	-- Check for Season of Discovery
 	local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
 	if season > 0 then
-		local states = getmetatable(ATTClassicSettings.Unobtainable).__index;
+		local states = getmetatable(AllTheThingsSettings.Unobtainable).__index;
 		if season == 1 then	-- SOM
 			states[1604] = true;
 		end
@@ -231,10 +243,10 @@ settings.Initialize = function(self)
 	end
 
 	-- Assign the preset filters for your character class as the default states
-	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
-	if not ATTClassicSettingsPerCharacter.RWPFilters then ATTClassicSettingsPerCharacter.RWPFilters = {}; end
-	setmetatable(ATTClassicSettingsPerCharacter.Filters, FilterSettingsBase);
-	setmetatable(ATTClassicSettingsPerCharacter.RWPFilters, RWPFilterSettingsBase);
+	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
+	if not AllTheThingsSettingsPerCharacter.RWPFilters then AllTheThingsSettingsPerCharacter.RWPFilters = {}; end
+	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
+	setmetatable(AllTheThingsSettingsPerCharacter.RWPFilters, RWPFilterSettingsBase);
 
 	if settings.RefreshActiveInformationTypes then
 		settings.RefreshActiveInformationTypes()
@@ -253,19 +265,19 @@ settings.Initialize = function(self)
 	self:UpdateMode();
 end
 settings.Get = function(self, setting)
-	return ATTClassicSettings.General[setting];
+	return AllTheThingsSettings.General[setting];
 end
 settings.GetFilter = function(self, filterID)
-	return ATTClassicSettingsPerCharacter.Filters[filterID];
+	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetFilterForRWPBase = function(self, filterID)
 	return app.PresetRWPs.ALL[filterID];
 end
 settings.GetFilterForRWP = function(self, filterID)
-	return ATTClassicSettingsPerCharacter.RWPFilters[filterID];
+	return AllTheThingsSettingsPerCharacter.RWPFilters[filterID];
 end
 settings.GetRawFilters = function(self)
-	return ATTClassicSettingsPerCharacter.Filters;
+	return AllTheThingsSettingsPerCharacter.Filters;
 end
 settings.GetRawSettings = function(self, name)
 	return RawSettings[name];
@@ -343,36 +355,36 @@ settings.GetShortModeString = function(self)
 	end
 end
 settings.GetPersonal = function(self, setting)
-	return ATTClassicSettingsPerCharacter[setting];
+	return AllTheThingsSettingsPerCharacter[setting];
 end
 settings.GetTooltipSetting = function(self, setting)
-	return ATTClassicSettings.Tooltips[setting];
+	return AllTheThingsSettings.Tooltips[setting];
 end
 settings.GetValue = function(self, container, setting)
 	return RawSettings[container][setting]
 end
 settings.GetUnobtainableFilter = function(self, u)
-	return ATTClassicSettings.Unobtainable[u];
+	return AllTheThingsSettings.Unobtainable[u];
 end
 settings.Set = function(self, setting, value)
-	ATTClassicSettings.General[setting] = value;
+	AllTheThingsSettings.General[setting] = value;
 	self:Refresh();
 end
 settings.SetFilter = function(self, filterID, value)
-	ATTClassicSettingsPerCharacter.Filters[filterID] = value;
+	AllTheThingsSettingsPerCharacter.Filters[filterID] = value;
 	self:UpdateMode(1);
 end
 settings.SetTooltipSetting = function(self, setting, value)
-	ATTClassicSettings.Tooltips[setting] = value;
+	AllTheThingsSettings.Tooltips[setting] = value;
 	app.WipeSearchCache();
 	self:Refresh();
 end
 settings.SetUnobtainableFilter = function(self, u, value)
-	ATTClassicSettings.Unobtainable[u] = value;
+	AllTheThingsSettings.Unobtainable[u] = value;
 	self:UpdateMode(1);
 end
 settings.SetPersonal = function(self, setting, value)
-	ATTClassicSettingsPerCharacter[setting] = value;
+	AllTheThingsSettingsPerCharacter[setting] = value;
 	self:Refresh();
 end
 settings.Refresh = function(self)
@@ -958,7 +970,7 @@ settings.UpdateMode = function(self, doRefresh)
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 
-	local filters = ATTClassicSettingsPerCharacter.Filters;
+	local filters = AllTheThingsSettingsPerCharacter.Filters;
 	for filterID,state in pairs({
 		[100] = self.Collectibles.Mounts,
 		[101] = self.Collectibles.BattlePets,
@@ -1041,9 +1053,9 @@ local ModifierFuncs = {
 }
 settings.GetTooltipSettingWithMod = function(self, setting)
 	-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
-	local v = ATTClassicSettings.Tooltips[setting]
+	local v = AllTheThingsSettings.Tooltips[setting]
 	if not v then return v end
-	local k = ATTClassicSettings.Tooltips[setting..":Mod"]
+	local k = AllTheThingsSettings.Tooltips[setting..":Mod"]
 	if k == "None" then
 		return v
 	end

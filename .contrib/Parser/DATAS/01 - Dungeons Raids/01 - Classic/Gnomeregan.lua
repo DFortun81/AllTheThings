@@ -3,7 +3,7 @@
 -----------------------------------------------------
 -- #if SEASON_OF_DISCOVERY
 local SOD_DISABLE_NORMAL_MODE = [[function(t)
-	if getmetatable(ATTClassicSettings.Unobtainable).__index[1605] then
+	if getmetatable(AllTheThingsSettings.Unobtainable).__index[1605] then
 		t.u = 2;
 		t.OnUpdate = nil;
 	end

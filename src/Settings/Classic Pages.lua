@@ -1034,7 +1034,7 @@ local ItemFilterOnRefresh = function(self)
 	if app.MODE_ACCOUNT or app.MODE_DEBUG then
 		self:Disable();
 		self:SetAlpha(0.2);
-	elseif getmetatable(ATTClassicSettingsPerCharacter.Filters).__index[self.filterID] then
+	elseif getmetatable(AllTheThingsSettingsPerCharacter.Filters).__index[self.filterID] then
 		self:SetChecked(settings:GetFilter(self.filterID));
 		self:Enable();
 		self:SetAlpha(1);
@@ -1120,7 +1120,7 @@ classDefaultsButton:SetWidth(120);
 classDefaultsButton:SetHeight(24);
 classDefaultsButton:RegisterForClicks("AnyUp");
 classDefaultsButton:SetScript("OnClick", function(self)
-	wipe(ATTClassicSettingsPerCharacter.Filters);
+	wipe(AllTheThingsSettingsPerCharacter.Filters);
 	settings:UpdateMode(1);
 end);
 classDefaultsButton:SetATTTooltip("Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.");
@@ -1142,18 +1142,18 @@ allButton:SetScript("OnClick", function(self)
 	local active, count = 0, 0;
 	for i,filterID in ipairs(allEquipmentFilters) do
 		count = count + 1;
-		if ATTClassicSettingsPerCharacter.Filters[filterID] then
+		if AllTheThingsSettingsPerCharacter.Filters[filterID] then
 			active = active + 1;
 		end
 	end
 	if count > 0 then
 		if (active / count) > 0.5 then
 			for i,filterID in ipairs(allEquipmentFilters) do
-				ATTClassicSettingsPerCharacter.Filters[filterID] = false;
+				AllTheThingsSettingsPerCharacter.Filters[filterID] = false;
 			end
 		else
 			for i,filterID in ipairs(allEquipmentFilters) do
-				ATTClassicSettingsPerCharacter.Filters[filterID] = true;
+				AllTheThingsSettingsPerCharacter.Filters[filterID] = true;
 			end
 		end
 		settings:UpdateMode(1);

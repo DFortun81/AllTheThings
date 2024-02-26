@@ -182,12 +182,12 @@ app:CreateWindow("Missing Quests", {
 		-- Force Debug Mode
 		local debugMode = app.MODE_DEBUG;
 		if not debugMode then
-			ATTClassicSettings.General.DebugMode = true;
+			AllTheThingsSettings.General.DebugMode = true;
 			app.Settings:UpdateMode();
 		end
 		self:DefaultUpdate(...);
 		if not debugMode then
-			ATTClassicSettings.General.DebugMode = debugMode;
+			AllTheThingsSettings.General.DebugMode = debugMode;
 			app.Settings:UpdateMode();
 		end
 		return false;

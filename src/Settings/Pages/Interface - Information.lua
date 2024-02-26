@@ -58,9 +58,9 @@ local ConversionMethods = setmetatable({
 	end,
 	creatureName = function(creatureID, reference)
 		if app.Settings:GetTooltipSetting("creatureID") then
-			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or "") .. " (" .. creatureID .. ")";
+			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or RETRIEVING_DATA) .. " (" .. creatureID .. ")";
 		else
-			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or "");
+			return tostring(creatureID > 0 and app.NPCNameFromID[creatureID] or RETRIEVING_DATA);
 		end
 	end,
 	professionName = function(spellID)
