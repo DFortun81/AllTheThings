@@ -737,7 +737,7 @@ for key,value in pairs({
 		FACTION_MODE = "Только Фракция";
 		FACTION_MODE_TOOLTIP = "Включите данную настройку, если Вы хотите отслеживать Штучки в Режиме Аккаунта только для рас и классов Вашей текущей фракции.";
 		LOOT_MODE = "Режим Лута";
-		LOOT_MODE_TOOLTIP = "Включите данную настройку, если Вы хотите отслеживать весь лут.\n\nYou can change which sort of loot displays for you based on the Filters tab.";
+		LOOT_MODE_TOOLTIP = "Включите данную настройку, если Вы хотите отслеживать весь лут.\n\nВы можете отрегулировать отображаемый лут на вкладке Фильтры.";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
