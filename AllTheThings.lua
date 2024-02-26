@@ -12166,11 +12166,12 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 			end
 
 			function self:Search(field, value)
-				app.PrintDebug("Search",field,value)
+				value = value or true
+				-- app.PrintDebug("Search",field,value)
 				local results = app:BuildSearchResponse(field, value, true);
-				app.PrintDebug("Results",#results)
+				-- app.PrintDebug("Results",#results)
 				ArrayAppend(self.data.g, results);
-				self.data.text = L["ITEM_FILTER_TEXT"]..("  [%s=%s]"):format(field,value);
+				self.data.text = L["ITEM_FILTER_TEXT"]..("  [%s=%s]"):format(field,tostring(value));
 			end
 
 			-- Item Filter
@@ -12193,7 +12194,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 								local f = tonumber(text);
 								if text ~= "" and tostring(f) ~= text then
 									text = text:gsub("-", "%%-");
-									app.PrintDebug("search match",text)
+									-- app.PrintDebug("search match",text)
 									-- The string form did not match, the filter must have been by name.
 									for id,filter in pairs(L["FILTER_ID_TYPES"]) do
 										if filter:lower():match(text) then
