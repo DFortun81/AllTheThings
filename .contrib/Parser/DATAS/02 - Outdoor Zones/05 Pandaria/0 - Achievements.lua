@@ -103,34 +103,34 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["coord"] = { 43.7, 92.3, KRASARANG_WILDS },
 				["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 				["questID"] = 31410,
-				["description"] = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest is personal loot and based on your current spec, NOT your Loot Spec.",
+				["description"] = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest may follow the personal loot rule and be based on your current spec, NOT your Loot Spec.",
 				["g"] = {
 					i(86122, {	-- Plankwalking Greaves
-						["description"] = "Only lootable while in a Strength DPS Spec.",
+						["description"] = "Recommended to be in a Strength DPS Spec to guarantee this item.",
 					}),
 					i(86115, {	-- Swashbuckling Boots
-						["description"] = "Only lootable while in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker).",
+						["description"] = "Recommended to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to guarantee this item.",
 					}),
 					i(86117, {	-- Seafarer's Treads of Precision
-						["description"] = "Only lootable while in a Cloth DPS Spec (Mage/Warlock).",
+						["description"] = "Recommended to be in a Cloth DPS Spec (Mage/Warlock) to guarantee this item.",
 					}),
 					i(86116, {	-- Agile Seafarer's Jackboots
-						["description"] = "Only lootable while in a Mail Agility Spec (Hunter/Enhancement).",
+						["description"] = "Recommended to be in a Mail Agility Spec (Hunter/Enhancement) to guarantee this item.",
 					}),
 					i(86123, {	-- Seafarer's Sturdy Boots
-						["description"] = "Only lootable while in a Strength Tank Spec.",
+						["description"] = "Recommended to be in a Strength Tank Spec to guarantee this item.",
 					}),
 					i(86118, {	-- Seafaring Advisor's Slippers
-						["description"] = "Only lootable as a Priest.",
+						["description"] = "Recommended to be a Priest (ingame class) to guarantee this item.",
 					}),
 					i(86119, {	-- Seafarer's Boots of Meditation
-						["description"] = "Only lootable while in a Leather Intellect Spec (Mistweaver/Balance/Restoration).",
+						["description"] = "Recommended to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to guarantee this item.",
 					}),
 					i(86120, {	-- Seafaring Sabatons of Meditation
-						["description"] = "Only lootable while in a Mail Intellect Spec (Elemental/Restoration).",
+						["description"] = "Recommended to be in a Mail Intellect Spec (Elemental/Restoration) to guarantee this item.",
 					}),
 					i(86121, {	-- Radiant Seafarer's Boots
-						["description"] = "Only lootable while in a Paladin Holy Spec.",
+						["description"] = "Recommended to be a Paladin in Holy Spec to guarantee this item.",
 					}),
 				},
 			}),
@@ -165,24 +165,24 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			}),
 			o(213751, {	-- Sprite's Cloth Chest
 				["questID"] = 31412,
-				["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and based on your current Spec, NOT your Loot Spec.",
+				["description"] = "Cave entrance is at 73.2, 73.6.  This chest might be personal loot and obey rules based on your current Spec, NOT your Loot Spec.",
 				["coord"] = { 74.6, 74.8, 381 },
 				["modelScale"] = 1.5,
 				["g"] = {
 					i(86223, {	-- Agile Sprite Cloak
-						["description"] = "Only lootable while in an Agility DPS Spec (Hunter/Rogue).", -- verified 2021-10-21 Hunter(Surv)
+						["description"] = "Recommended to be an Agility DPS Spec (Hunter/Rogue) to guarantee this item.", -- verified 2021-10-21 Hunter(Surv)
 					}),
 					i(86222, {	-- Precise Sprite Cloak
-						["description"] = "Only lootable while in an Intellect DPS Spec (Mage/Warlock).", -- verified 2021-10-18 Mage(Frost)
+						["description"] = "Recommended to be in an Intellect DPS Spec (Mage/Warlock) to guarantee this item.", -- verified 2021-10-18 Mage(Frost)
 					}),
 					i(86225, {	-- Strong Sprite Cloak
-						["description"] = "Only lootable while in a Strength DPS Spec.", -- verified 2021-10-22 DK(Unholy)
+						["description"] = "Recommended to be in a Strength DPS Spec to guarantee this item.", -- verified 2021-10-22 DK(Unholy)
 					}),
 					i(86221, {	-- Wise Sprite Cloak
-						["description"] = "Only lootable while in a Healer Spec.", -- verified ?? Shaman(Resto)
+						["description"] = "Recommended to be in a Healer Spec to guarantee this item.", -- verified ?? Shaman(Resto)
 					}),
 					i(86224, {	-- Steadfast Sprite Cape
-						["description"] = "Only lootable while in a Tank Spec.", -- verified 2021-10-18 Paladin(Prot)
+						["description"] = "Recommended to be in a Tank Spec to guarantee this item.", -- verified 2021-10-18 Paladin(Prot)
 					}),
 				},
 			}),
