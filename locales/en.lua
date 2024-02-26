@@ -461,12 +461,6 @@ for key, value in pairs({
 	["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
 	["WARN_DIFFICULTY_CHECKBOX"] = "Warn Completed Difficulty";
 	["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.";
-	["REPORT_COLLECTED_THINGS_CHECKBOX"] = "Report Collected Things";
-	["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
-	["REPORT_COMPLETED_QUESTS_CHECKBOX"] = "Report Quests";
-	["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
-	["REPORT_UNSORTED_CHECKBOX"] = "Only 'Unsourced'";
-	["REPORT_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
 	["BEHAVIOR_LABEL"] = "List Behavior";
 	["DYNAMIC_CATEGORY_LABEL"] = "Dynamic Categories";
 	["DYNAMIC_CATEGORY_OFF"] = OFF;
@@ -586,10 +580,8 @@ for key, value in pairs({
 	["CLASS_BORDER_TOOLTIP"] = "Use your class color for the borders. This updates when you log onto another class.";
 
 	-- Features tab
-	["FEATURES_PAGE"] = FEATURES_LABEL;
 	["MINIMAP_LABEL"] = "Minimap Button";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
-	["REPORTING_LABEL"] = "Reporting";
 	["ADHOC_UPDATES_CHECKBOX"] = "Ad-Hoc Window Updates";
 	["ADHOC_UPDATES_CHECKBOX_TOOLTIP"] = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 	["SKIP_CUTSCENES_CHECKBOX"] = "Automatically Skip Cutscenes";

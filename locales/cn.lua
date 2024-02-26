@@ -357,12 +357,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在进入地下城或团队副本时自动最小化小列表中未激活的难度标题，请启用此选项。\n\n比如：在普通难度地下城中最小化英雄标题。";
 		L.WARN_DIFFICULTY_CHECKBOX = "警告已完成难度";
 		L.WARN_DIFFICULTY_CHECKBOX_TOOLTIP = "如果希望在进入一个难度副本时被警告无法获得新的收藏，而你可以进入另一个未保存的难度，则启用此选项。";
-		L.REPORT_COLLECTED_THINGS_CHECKBOX = "报告已收藏事物";
-		L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "如果想在聊天中看到一条消息，详细说明收藏了哪些物品或从收藏中删除了哪些物品，请启用此选项。\n\n注意：这是因为暴雪默默地添加了外观和其他收藏品并且忽略了通知你可用的其他物品。\n\n我们建议你保持此设置。如果你打开了这个选项，你会听到警告声。";
-		L.REPORT_COMPLETED_QUESTS_CHECKBOX = "报告任务";
-		L.REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "如果希望在任务发生后立即看到你完成的任何任务的任务 ID，请启用此选项。（用于报告错误、追踪等）";
-		L.REPORT_UNSORTED_CHECKBOX = "仅'无来源'";
-		L.REPORT_UNSORTED_CHECKBOX_TOOLTIP = "如果只想查看任务 ID 且他还没有来源，请启用此选项。";
 		L.BEHAVIOR_LABEL = "列表行为";
 		L.DYNAMIC_CATEGORY_LABEL = "动态类别";
 		L.DYNAMIC_CATEGORY_OFF_TOOLTIP = "不生成任何动态类别。 ";
@@ -471,7 +465,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	-- Features tab
 		L.MINIMAP_LABEL = "小地图按钮";
 		L.MODULES_LABEL = "模块和小列表";
-		L.REPORTING_LABEL = "报告";
 		L.ADHOC_UPDATES_CHECKBOX = "使用临时窗口更新";
 		L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可见的 ATT 窗口请启用此选项。\n\n这可以大大减少加载时间并防止在某些情况下出现疯狂掉帧。";
 		L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
@@ -795,7 +788,42 @@ for key,value in pairs({
 	--TODO: UNCHECK_ALL_BUTTON = NONE;
 	UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一次禁用所有设备过滤。";
 	
+	-- General: Phases Page
+	-- Classic Only, fully dynamic from within parser.
+	
+	-- General: Unobtainables Page
+	
+	
+	-- Interface Page
+	
+	-- Interface: Accessibility Page
+	
+	-- Interface: Information Page
 	ACHIEVEMENT_ID = "成就 ID";
+	--TODO: ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
+	
+	
+	-- Features Page
+	--TODO: FEATURES_PAGE = FEATURES_LABEL;
+	
+	-- Features: Audio Page
+	
+	-- Features: Reporting Page
+	REPORTING_LABEL = "报告";
+	REPORT_COLLECTED_THINGS_CHECKBOX = "报告已收藏事物";
+	REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "如果想在聊天中看到一条消息，详细说明收藏了哪些物品或从收藏中删除了哪些物品，请启用此选项。\n\n注意：这是因为暴雪默默地添加了外观和其他收藏品并且忽略了通知你可用的其他物品。\n\n我们建议你保持此设置。如果你打开了这个选项，你会听到警告声。";
+	REPORT_COMPLETED_QUESTS_CHECKBOX = "报告任务";
+	REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "如果希望在任务发生后立即看到你完成的任何任务的任务 ID，请启用此选项。（用于报告错误、追踪等）";
+	REPORT_UNSORTED_CHECKBOX = "仅'无来源'";
+	REPORT_UNSORTED_CHECKBOX_TOOLTIP = "如果只想查看任务 ID 且他还没有来源，请启用此选项。";
+	
+	-- Features: Sync Page
+	-- Retail Only, deprecated.
+	
+	-- Features: Windows Page
+	-- Classic Only, nothing localizable atm.
+	
+	-- Profiles Page
 })
 do a[key] = value; end
 

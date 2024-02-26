@@ -352,12 +352,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 		--TODO: L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
 		--TODO: L.WARN_DIFFICULTY_CHECKBOX = "Warn Completed Difficulty";
 		--TODO: L.WARN_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.";
-		--TODO: L.REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
-		--TODO: L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
-		--TODO: L.REPORT_COMPLETED_QUESTS_CHECKBOX = "Report Quests";
-		--TODO: L.REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
-		--TODO: L.REPORT_UNSORTED_CHECKBOX = "Only 'Unsourced'";
-		--TODO: L.REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
 		--TODO: L.BEHAVIOR_LABEL = "List Behavior";
 		--TODO: L.DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
 		--TODO: L.DYNAMIC_CATEGORY_OFF_TOOLTIP = "Do not generate any Dynamic Categories.";
@@ -466,7 +460,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
-		--TODO: L.REPORTING_LABEL = "Reporting";
 		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
 		--TODO: L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
@@ -718,8 +711,42 @@ for key,value in pairs({
 	--TODO: UNCHECK_ALL_BUTTON = NONE;
 	--TODO: UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
 	
+	-- General: Phases Page
+	-- Classic Only, fully dynamic from within parser.
 	
+	-- General: Unobtainables Page
+	
+	
+	-- Interface Page
+	
+	-- Interface: Accessibility Page
+	
+	-- Interface: Information Page
 	--TODO: ACHIEVEMENT_ID = "Achievement ID";
+	--TODO: ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
+	
+	
+	-- Features Page
+	--TODO: FEATURES_PAGE = FEATURES_LABEL;
+	
+	-- Features: Audio Page
+	
+	-- Features: Reporting Page
+	--TODO: REPORTING_LABEL = "Reporting";
+	--TODO: REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
+	--TODO: REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
+	--TODO: REPORT_COMPLETED_QUESTS_CHECKBOX = "Report Quests";
+	--TODO: REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
+	--TODO: REPORT_UNSORTED_CHECKBOX = "Only 'Unsourced'";
+	--TODO: REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
+	
+	-- Features: Sync Page
+	-- Retail Only, deprecated.
+	
+	-- Features: Windows Page
+	-- Classic Only, nothing localizable atm.
+	
+	-- Profiles Page
 })
 do a[key] = value; end
 

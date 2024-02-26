@@ -353,12 +353,6 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите автоматически минимизировать заголовки в мини списке, которые не активны, когда Вы входите в подземелье или рейд.\n\nПример: Минимизировать Героический заголовок, когда в Обычной сложности подземелья.";
 		L.WARN_DIFFICULTY_CHECKBOX = "Предупреждать о\nВыполненной Сложности";
 		L.WARN_DIFFICULTY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите получать предупреждение, когда заходите в подземелье со сложностью, в которой Вы не сможете получить никаких новых штучек, когда есть альтернативная несохранённая сложность, в которую Вы можете пойти заместо текущей.";
-		L.REPORT_COLLECTED_THINGS_CHECKBOX = "Сообщать о Собранных Штучках";
-		L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть сообщение в чате, объясняющее, какие предметы Вы получили или удалили из коллекции.\n\nПримечание: Эта настройка присутствует потому, что Blizzard бесшумно добавляет облики и другие собираемые предметы и не считает нужным оповещать Вас о дополнительных предметах, доступных Вам.\n\nМы рекомендуем оставить эту опцию включенной. Вы будете всё также слышать фанфары, если отключите её, если они включены.";
-		L.REPORT_COMPLETED_QUESTS_CHECKBOX = "Сообщать о Заданиях";
-		L.REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть QuestID для каждого задания, которое Вы приняли или выполнили. (Для сообщения об ошибках, для отслеживания и т.п)";
-		L.REPORT_UNSORTED_CHECKBOX = "Только 'Без Источника'";
-		L.REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть QuestID задания, только если у него обозначен Источник.";
 		L.BEHAVIOR_LABEL = "Настройки Списков";
 		L.DYNAMIC_CATEGORY_LABEL = "Динамические Категории";
 		L.DYNAMIC_CATEGORY_OFF_TOOLTIP = "Не генерировать Динамические Категории.";
@@ -470,7 +464,6 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 	-- Features tab
 		L.MINIMAP_LABEL = "Кнопка у Миникарты";
 		L.MODULES_LABEL = "Модули и Мини Списки";
-		L.REPORTING_LABEL = "Сообщения";
 		L.ADHOC_UPDATES_CHECKBOX = "Обновлять только видимые окна";
 		L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите обновлять только открытые окна ATT.\n\nЭта опция может серьёзно ускорить загрузку и предотвратить фризы в некоторых ситуациях.";
 		L.SKIP_CUTSCENES_CHECKBOX = "Авто Пропуск Сцен";
@@ -763,10 +756,42 @@ for key,value in pairs({
 	--TODO: UNCHECK_ALL_BUTTON = NONE;
 	UNCHECK_ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы отключить все фильтры.";
 	
+	-- General: Phases Page
+	-- Classic Only, fully dynamic from within parser.
+	
+	-- General: Unobtainables Page
+	
+	
 	-- Interface Page
 	
-	-- Tooltip Information
+	-- Interface: Accessibility Page
+	
+	-- Interface: Information Page
 	--TODO: ACHIEVEMENT_ID = "Achievement ID";
+	--TODO: ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
+	
+	
+	-- Features Page
+	--TODO: FEATURES_PAGE = FEATURES_LABEL;
+	
+	-- Features: Audio Page
+	
+	-- Features: Reporting Page
+	REPORTING_LABEL = "Сообщения";
+	REPORT_COLLECTED_THINGS_CHECKBOX = "Сообщать о Собранных Штучках";
+	REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть сообщение в чате, объясняющее, какие предметы Вы получили или удалили из коллекции.\n\nПримечание: Эта настройка присутствует потому, что Blizzard бесшумно добавляет облики и другие собираемые предметы и не считает нужным оповещать Вас о дополнительных предметах, доступных Вам.\n\nМы рекомендуем оставить эту опцию включенной. Вы будете всё также слышать фанфары, если отключите её, если они включены.";
+	REPORT_COMPLETED_QUESTS_CHECKBOX = "Сообщать о Заданиях";
+	REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть QuestID для каждого задания, которое Вы приняли или выполнили. (Для сообщения об ошибках, для отслеживания и т.п)";
+	REPORT_UNSORTED_CHECKBOX = "Только 'Без Источника'";
+	REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть QuestID задания, только если у него обозначен Источник.";
+	
+	-- Features: Sync Page
+	-- Retail Only, deprecated.
+	
+	-- Features: Windows Page
+	-- Classic Only, nothing localizable atm.
+	
+	-- Profiles Page
 })
 do a[key] = value; end
 
