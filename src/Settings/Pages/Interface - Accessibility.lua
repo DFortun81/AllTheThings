@@ -8,17 +8,17 @@ local RGBToHex = app.Modules.Color.RGBToHex
 local child = settings:CreateOptionsPage(L.ACCESSIBILITY_PAGE, L.INTERFACE_PAGE)
 
 -- Column 1
-local headerColors = child:CreateHeaderLabel(L["COLORS_ICONS"])
+local headerColors = child:CreateHeaderLabel(L.COLORS_ICONS)
 if child.separator then
 	headerColors:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
 	headerColors:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 
-local textHeader = child:CreateTextLabel(Colorize(L["ACCESSIBILITY_EXPLAIN"], app.Colors.White))
+local textHeader = child:CreateTextLabel(Colorize(L.ACCESSIBILITY_EXPLAIN, app.Colors.White))
 textHeader:SetPoint("TOPLEFT", headerColors, "BOTTOMLEFT", 0, -4)
 
-local checkboxUseMoreColors = child:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
+local checkboxUseMoreColors = child:CreateCheckBox(L.MORE_COLORS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"))
 end,
@@ -26,11 +26,11 @@ function(self)
 	settings:SetTooltipSetting("UseMoreColors", self:GetChecked())
 	app:UpdateWindows()
 end)
-checkboxUseMoreColors:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"])
+checkboxUseMoreColors:SetATTTooltip(L.MORE_COLORS_CHECKBOX_TOOLTIP)
 checkboxUseMoreColors:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)
 
 local buttonDefault = child:CreateButton(
-{ text = L["DEFAULT"], tooltip = L["RESET_TOOLTIP"], },
+{ text = L.DEFAULT, tooltip = L.RESET_TOOLTIP, },
 {
 	OnClick = function(self)
 		wipe(app.Colors);
@@ -39,7 +39,7 @@ local buttonDefault = child:CreateButton(
 })
 buttonDefault:SetPoint("TOPLEFT", checkboxUseMoreColors.Text, "TOPRIGHT", 10, 5)
 
-local textBreadcrumbs = child:CreateTextLabel(Colorize(L["BREADCRUMBS"], app.Colors.White))
+local textBreadcrumbs = child:CreateTextLabel(Colorize(L.BREADCRUMBS, app.Colors.White))
 textBreadcrumbs:SetPoint("TOPLEFT", checkboxUseMoreColors, "BOTTOMLEFT", 0, -6)
 	
 local function breadcrumbColor(restore)
@@ -58,7 +58,7 @@ local function breadcrumbColor(restore)
 end
 
 local buttonBreadcrumbColor = child:CreateButton(
-{ text = L["COLOR"], },
+{ text = L.COLOR, },
 {
 	OnClick = function(self)
 		local a, r, g, b = HexToARGB(app.Colors.Breadcrumb)
@@ -69,7 +69,7 @@ buttonBreadcrumbColor:SetPoint("TOPLEFT", textBreadcrumbs, "BOTTOMLEFT", 0, -5)
 
 --
 
-local textLocked = child:CreateTextLabel(Colorize(L["LOCKED_QUESTS"], app.Colors.White))
+local textLocked = child:CreateTextLabel(Colorize(L.LOCKED_QUESTS, app.Colors.White))
 textLocked:SetPoint("TOPLEFT", buttonBreadcrumbColor, "BOTTOMLEFT", 0, -10)
 	
 local function lockedColor(restore)
@@ -88,7 +88,7 @@ local function lockedColor(restore)
 end
 
 local buttonLockedColor = child:CreateButton(
-{ text = L["COLOR"], },
+{ text = L.COLOR, },
 {
 	OnClick = function(self)
 		local a, r, g, b = HexToARGB(app.Colors.Locked)
@@ -99,7 +99,7 @@ buttonLockedColor:SetPoint("TOPLEFT", textLocked, "BOTTOMLEFT", 0, -5)
 
 --
 
-local textMount = child:CreateTextLabel(Colorize(L["MOUNTS"], app.Colors.White))
+local textMount = child:CreateTextLabel(Colorize(L.MOUNTS, app.Colors.White))
 textMount:SetPoint("TOPLEFT", buttonLockedColor, "BOTTOMLEFT", 0, -10)
 	
 local function mountColor(restore)
@@ -118,7 +118,7 @@ local function mountColor(restore)
 end
 
 local buttonMountColor = child:CreateButton(
-{ text = L["COLOR"], },
+{ text = L.COLOR, },
 {
 	OnClick = function(self)
 		local a, r, g, b = HexToARGB(app.Colors.Mount)
@@ -129,7 +129,7 @@ buttonMountColor:SetPoint("TOPLEFT", textMount, "BOTTOMLEFT", 0, -5)
 
 
 
-local headerWindowColors = child:CreateHeaderLabel(L["WINDOW_COLORS"])
+local headerWindowColors = child:CreateHeaderLabel(L.WINDOW_COLORS)
 headerWindowColors:SetPoint("LEFT", headerColors, 0, 0)
 headerWindowColors:SetPoint("TOP", buttonMountColor, "BOTTOM", 0, -20)
 
@@ -174,7 +174,7 @@ settings.ShowColorPicker = function(r, g, b, a, changedCallback)
 end
 
 local buttonBackgroundColor = child:CreateButton(
-{ text = L["BACKGROUND"], tooltip = L["BACKGROUND_TOOLTIP"], },
+{ text = L.BACKGROUND, tooltip = L.BACKGROUND_TOOLTIP, },
 {
 	OnClick = function(self)
 		local r = tonumber(settings:Get("Window:BackgroundColor").r) or 0
@@ -187,7 +187,7 @@ local buttonBackgroundColor = child:CreateButton(
 buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
 
 local buttonBorderColor = child:CreateButton(
-{ text = L["BORDER"], tooltip = L["BORDER_TOOLTIP"], },
+{ text = L.BORDER, tooltip = L.BORDER_TOOLTIP, },
 {
 	OnClick = function(self)
 		local r = tonumber(settings:Get("Window:BorderColor").r) or 0
@@ -207,7 +207,7 @@ buttonBorderColor.OnRefresh = function(self)
 end
 
 local buttonResetColor = child:CreateButton(
-{ text = L["RESET"], tooltip = L["RESET_TOOLTIP"], },
+{ text = L.RESET, tooltip = L.RESET_TOOLTIP, },
 {
 	OnClick = function(self)
 		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
@@ -217,7 +217,7 @@ local buttonResetColor = child:CreateButton(
 })
 buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
 
-local checkboxUseClassColorForBorder = child:CreateCheckBox(L["CLASS_BORDER"],	-- LOCALISE
+local checkboxUseClassColorForBorder = child:CreateCheckBox(L.CLASS_BORDER,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Window:UseClassForBorder"))
 end,
@@ -225,5 +225,5 @@ function(self)
 	settings:SetTooltipSetting("Window:UseClassForBorder", self:GetChecked())
 	settings.ApplyAllWindowColors()
 end)
-checkboxUseClassColorForBorder:SetATTTooltip(L["CLASS_BORDER_TOOLTIP"])
+checkboxUseClassColorForBorder:SetATTTooltip(L.CLASS_BORDER_TOOLTIP)
 checkboxUseClassColorForBorder:SetPoint("TOPLEFT", buttonBackgroundColor, "BOTTOMLEFT", -2, 0)
