@@ -523,11 +523,7 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."点击切换到它";
 		L.SHOW_PROFILE_LOADED = "显示在登录期间或在配置文件之间切换时加载的配置文件";
 
-	-- Sync tab
-		L.SYNC_PAGE = "同步";
-		L.ACCOUNT_SYNCHRONIZATION = "帐号同步";
-		L.AUTO_SYNC_ACC_DATA_CHECKBOX = "自动同步帐号数据";
-		L.AUTO_SYNC_ACC_DATA_TOOLTIP = "如果您希望 ATT 在登录或重新加载用户界面时尝试在帐号之间自动同步帐号数据，请启用此选项。";
+	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "帐号管理";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "此列表显示了与同步帐号数据相关的所有功能。";
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "添加关联角色/帐号";
@@ -819,6 +815,10 @@ for key,value in pairs({
 	
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
+	SYNC_PAGE = "同步";
+	ACCOUNT_SYNCHRONIZATION = "帐号同步";
+	AUTO_SYNC_ACC_DATA_CHECKBOX = "自动同步帐号数据";
+	AUTO_SYNC_ACC_DATA_TOOLTIP = "如果您希望 ATT 在登录或重新加载用户界面时尝试在帐号之间自动同步帐号数据，请启用此选项。";
 	
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.

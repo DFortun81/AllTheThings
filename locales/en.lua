@@ -650,11 +650,7 @@ for key, value in pairs({
 	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
 	["SHOW_PROFILE_LOADED"] = "Show which profile loads during login or when switching between profiles";
 
-	-- Sync tab
-	["SYNC_PAGE"] = "Sync";
-	["ACCOUNT_SYNCHRONIZATION"] = "Account Synchronization";
-	["AUTO_SYNC_ACC_DATA_CHECKBOX"] = "Automatically Sync Account Data";
-	["AUTO_SYNC_ACC_DATA_TOOLTIP"] = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+	-- Sync Window
 	["ACCOUNT_MANAGEMENT"] = "Account Management";
 	["ACCOUNT_MANAGEMENT_TOOLTIP"] = "This list shows you all of the functionality related to syncing account data.";
 	["ADD_LINKED_CHARACTER_ACCOUNT"] = "Add Linked Character / Account";
@@ -671,10 +667,7 @@ for key, value in pairs({
 	["DELETE_LINKED_ACCOUNT"] = "Right Click to Delete this Linked Account";
 	["DELETE_CHARACTER"] = "Right Click to Delete this Character";
 	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
-
-	-- About tab
 	
-
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
 	["ITEM_ID_ADDED_RANK"] = "%s (%d) [Rank %d] was added to your collection.";

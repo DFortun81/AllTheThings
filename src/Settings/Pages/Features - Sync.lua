@@ -6,14 +6,14 @@ local L, settings = app.L.SETTINGS_MENU, app.Settings;
 local child = settings:CreateOptionsPage(L.SYNC_PAGE, L.FEATURES_PAGE)
 
 -- CONTENT
-local headerSync = child:CreateHeaderLabel(L["ACCOUNT_SYNCHRONIZATION"])
+local headerSync = child:CreateHeaderLabel(L.ACCOUNT_SYNCHRONIZATION)
 if child.separator then
 	headerSync:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
 	headerSync:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 
-local checkboxAutoSync = child:CreateCheckBox(L["AUTO_SYNC_ACC_DATA_CHECKBOX"],
+local checkboxAutoSync = child:CreateCheckBox(L.AUTO_SYNC_ACC_DATA_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:Sync"))
 end,
@@ -22,7 +22,7 @@ function(self)
 	settings:SetTooltipSetting("Auto:Sync", checked)
 	if checked then app:Synchronize(true) end
 end)
-checkboxAutoSync:SetATTTooltip(L["AUTO_SYNC_ACC_DATA_TOOLTIP"])
+checkboxAutoSync:SetATTTooltip(L.AUTO_SYNC_ACC_DATA_TOOLTIP)
 checkboxAutoSync:SetPoint("TOPLEFT", headerSync, "BOTTOMLEFT", 4, 0)
 
 local function InitializeATTSyncWindow()

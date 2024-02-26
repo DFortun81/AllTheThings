@@ -515,11 +515,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 		L.PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n"..SHIFT_KEY_TEXT.." + clic pour accéder au profil sélectionné";
 		L.SHOW_PROFILE_LOADED = "Afficher le profil qui se charge lors de la connexion ou lors du passage d’un profil à l’autre";
 
-	-- Sync tab
-		L.SYNC_PAGE = "Sync";
-		L.ACCOUNT_SYNCHRONIZATION = "Synchronisation du compte";
-		L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Synchronisation automatique des données du compte";
-		L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Activer cette option si vous souhaitez qu’ATT tente de synchroniser automatiquement les données entre les comptes lors de la connexion ou du rechargement de l’interface utilisateur.";
+	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Gestion des comptes";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Cette liste affiche toutes les fonctionnalités liées à la synchronisation des données du compte.";
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "Ajouter un personnage / compte lié";
@@ -787,6 +783,10 @@ for key,value in pairs({
 	
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
+	SYNC_PAGE = "Sync";
+	ACCOUNT_SYNCHRONIZATION = "Synchronisation du compte";
+	AUTO_SYNC_ACC_DATA_CHECKBOX = "Synchronisation automatique des données du compte";
+	AUTO_SYNC_ACC_DATA_TOOLTIP = "Activer cette option si vous souhaitez qu’ATT tente de synchroniser automatiquement les données entre les comptes lors de la connexion ou du rechargement de l’interface utilisateur.";
 	
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.

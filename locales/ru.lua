@@ -522,11 +522,7 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.PROFILE_SWITCH_TOOLTIP = "Установить Выделенный Профиль как Текущий Профиль\n\nИли кликните на Профиль с зажатым "..SHIFT_KEY_TEXT;
 		L.SHOW_PROFILE_LOADED = "Показывать Текущий Профиль после загрузки и после смены Профиля";
 
-	-- Sync tab
-		L.SYNC_PAGE = "Синхронизация";
-		L.ACCOUNT_SYNCHRONIZATION = "Сихронизация Аккаунтов";
-		L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Автоматически Синхронизировать Данные Аккаунтов";
-		L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT пытался автоматически синхронизировать данные между учётными записями во время перезахода в игру или перезагрузки интерфейса.";
+	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Управление Аккаунтами";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Данный список отображает весь функционал относительно синхронизации данных учётной записи.";
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "Прикрепить Персонажа / Аккаунт";
@@ -787,6 +783,10 @@ for key,value in pairs({
 	
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
+	SYNC_PAGE = "Синхронизация";
+	ACCOUNT_SYNCHRONIZATION = "Сихронизация Аккаунтов";
+	AUTO_SYNC_ACC_DATA_CHECKBOX = "Автоматически Синхронизировать Данные Аккаунтов";
+	AUTO_SYNC_ACC_DATA_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT пытался автоматически синхронизировать данные между учётными записями во время перезахода в игру или перезагрузки интерфейса.";
 	
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.

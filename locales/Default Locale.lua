@@ -165,6 +165,10 @@ L.SETTINGS_MENU = {
 	
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
+	SYNC_PAGE = "Sync";
+	ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
+	AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
+	AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
 	
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.

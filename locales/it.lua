@@ -516,11 +516,7 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
 		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
-	-- Sync tab
-		--TODO: L.SYNC_PAGE = "Sync";
-		--TODO: L.ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
-		--TODO: L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
-		--TODO: L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+	-- Sync Window
 		--TODO: L.ACCOUNT_MANAGEMENT = "Account Management";
 		--TODO: L.ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
 		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
@@ -744,6 +740,10 @@ for key,value in pairs({
 	
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
+	--TODO: SYNC_PAGE = "Sync";
+	--TODO: ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
+	--TODO: AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
+	--TODO: AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
 	
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
