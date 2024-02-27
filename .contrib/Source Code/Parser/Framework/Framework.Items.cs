@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using static ATT.Framework;
 
 namespace ATT
 {
@@ -44,6 +45,22 @@ namespace ATT
             /// All of the specific ItemIDs and each corresponding SourceID value
             /// </summary>
             private static IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
+
+            /// <summary>
+            /// All of the specific ItemIDs and each corresponding SourceID value
+            /// </summary>
+            private static IDictionary<long, ConcurrentDictionary<decimal, long>> SOURCES_PER_ITEMID = new ConcurrentDictionary<long, ConcurrentDictionary<decimal, long>>();
+
+            /// <summary>
+            /// Get all of the sources available for a given itemID.
+            /// </summary>
+            /// <param name="itemID">The itemID.</param>
+            /// <returns>The sources dictionary.</returns>
+            private static ConcurrentDictionary<decimal, long> GetSourcesForItemID(long itemID)
+            {
+                if (SOURCES_PER_ITEMID.TryGetValue(itemID, out var sources)) return sources;
+                return SOURCES_PER_ITEMID[itemID] = new ConcurrentDictionary<decimal, long>();
+            }
 
             /// <summary>
             /// A list of fields that have already warned the programmer.
@@ -744,6 +761,7 @@ namespace ATT
                     Log($"-- Field Value Overwrite: s:{sourceID} => {newSourceID}");
                 }
                 SOURCES[specificItemID] = newSourceID;
+                GetSourcesForItemID(itemID)[specificItemID] = newSourceID;
             }
 
             public static void AddItemSourceID(KeyValuePair<decimal, object> itemSource)
@@ -751,6 +769,7 @@ namespace ATT
                 if (itemSource.Value.TryConvert(out long sourceID))
                 {
                     SOURCES[itemSource.Key] = sourceID;
+                    GetSourcesForItemID((long)Math.Floor(itemSource.Key))[itemSource.Key] = sourceID;
                 }
             }
 
@@ -759,6 +778,7 @@ namespace ATT
                 if (itemSource.Value.TryConvert(out long sourceID))
                 {
                     SOURCES[itemSource.Key] = sourceID;
+                    GetSourcesForItemID(itemSource.Key)[itemSource.Key] = sourceID;
                 }
             }
 
@@ -1018,12 +1038,6 @@ namespace ATT
             /// </summary>
             public static void DetermineSourceID(IDictionary<string, object> data)
             {
-                // Ignore assigning a SourceID if this build doesn't have Transmog
-                if (CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION)
-                {
-                    return;
-                }
-
                 const bool DoSpammyDebugLogging = false;
                 decimal sourceIDKey = GetSourceIDKey(data);
                 if (sourceIDKey == 0) return;
@@ -1069,6 +1083,55 @@ namespace ATT
                 // quite spammmmmy, only enable if needed
                 if (DoSpammyDebugLogging && !data.ContainsKey("sourceID"))
                     LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
+
+                // Find the best match sourceID for this item. (this is gonna be slow!)
+                if ((long)Math.Floor(sourceIDKey) is long itemID
+                    && itemID == (long)sourceIDKey  // This is only applicable in cases where no modID or bonusID are present.
+                    && SOURCES_PER_ITEMID.TryGetValue(itemID, out ConcurrentDictionary<decimal, long> sources))
+                {
+                    sourceID = sources[sources.Keys.First()];
+                    if (sources.Count == 1)
+                    {
+                        // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
+                        // quite spammmmmy, only enable if needed
+#pragma warning disable CS0162 // Unreachable code detected
+                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL) ==> s:{sourceID}");
+#pragma warning restore CS0162 // Unreachable code detected
+                        data["sourceID"] = sourceID;
+                        return;
+                    }
+
+                    // If there is more than one, but they're all the same, just grab the first one.
+                    bool theyAllMatch = true;
+                    foreach (var pair in sources)
+                    {
+                        if (pair.Value == sourceID) continue;
+                        theyAllMatch = false;
+                        break;
+                    }
+                    if (theyAllMatch)
+                    {
+                        // If there's only one unique sourceID, then assign it. Probably some dumb missing modID or something.
+                        // quite spammmmmy, only enable if needed
+#pragma warning disable CS0162 // Unreachable code detected
+                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL) ==> s:{sourceID}");
+#pragma warning restore CS0162 // Unreachable code detected
+                        data["sourceID"] = sourceID;
+                        return;
+                    }
+
+                    // Lastly, if there are no other matches, then the lowest modID version is the default value, use that.
+                    var keys = sources.Keys.ToList();
+                    keys.Sort();
+                    sourceID = sources[keys.First()];
+
+                    // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
+                    // quite spammmmmy, only enable if needed
+#pragma warning disable CS0162 // Unreachable code detected
+                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL) ==> s:{sourceID}");
+#pragma warning restore CS0162 // Unreachable code detected
+                    data["sourceID"] = sourceID;
+                }
             }
 
             /// <summary>

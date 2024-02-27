@@ -746,7 +746,7 @@ namespace ATT
 
             if (data.TryGetValue("sourceID", out f))
             {
-                if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION)
+                if (f < 1)
                 {
                     data.Remove("sourceID");
                 }
