@@ -15,11 +15,15 @@ local QUANTUM_GROUP = sharedData({
 	["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
 },{
 	-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
+	-- If the item needs other ModID or BonusID you need to use 'i()'
 	-- Which items you could get between 10.1.5 & 10.1.7 are saved at the bottom of the file as history
 	i(208061, {	-- Quantum Headpiece
 		filter(CLOTH, {
 			ig(114263),	-- Firefly Hood						(NYI)
 			ig(114387),	-- Hood of Hooded Nighmates			(NYI)
+			i(147517, {	-- Inquisitor's Battle Cowl			(NYI)
+				["modID"] = 2,
+			}),
 			ig(121507),	-- Runespeaker's Crown				(NYI)
 
 			ig(134670),	-- Auxiliary's Cowl					(Removed)
@@ -38,7 +42,7 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
-			ig(147516, {	-- Legion Stalker's Hood		(NYI)
+			i(147516, {	-- Legion Stalker's Hood		(NYI)
 				["modID"] = 2, -- Heroic dungeon
 			}),
 			ig(121509),	-- Runesworn Crown		 			(NYI)
@@ -227,6 +231,9 @@ local QUANTUM_GROUP = sharedData({
 			ig(114383),	-- Gloves of Hooded Nightmares		(NYI)
 			ig(3956),	-- Mesh Gloves
 			ig(189904),	-- Meticulous Architect's Mitts		(NYI)
+			i(113218, {	-- Seebo's Sainted Touch			(NYI)
+				["modID"] = 4,
+			}),
 
 			ig(20655),	-- Abyssal Cloth Handwraps			(Removed)
 			ig(134669),	-- Auxiliary's Handwraps			(Removed)
@@ -236,6 +243,9 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
 			ig(114384),	-- Gauntlets of Falling Leaves		(NYI)
+			i(113221, {	-- Siid's Silent Stranglers			(NYI)
+				["modID"] = 4,
+			}),
 			ig(3981),	-- Strapped Gloves					(NYI)
 			
 			ig(20661),	-- Abyssal Leather Gloves			(Removed)
@@ -249,10 +259,13 @@ local QUANTUM_GROUP = sharedData({
 				["collectible"] = false,
 			}),
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
-			ig(113222, {	-- Keengrip Arrowpullers 		(NYI)
-				["modID"] = 4,	-- should be sourceID 62173	-- Might need modID from pre 6.0 LFR (0?)
+			i(113222, {	-- Keengrip Arrowpullers 			(NYI)
+				["modID"] = 4,
 			}),
 			ig(114261),	-- Leafscale Gauntlets				(NYI)
+			i(113227, {	-- Marco's Crackling Gloves			(NYI)
+				["modID"] = 4,
+			}),
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
 			ig(51980),	-- Earthbound Handgrips				(Removed)
@@ -264,6 +277,9 @@ local QUANTUM_GROUP = sharedData({
 				["name"] = "Quantum Gloves (Plate) completed.",
 				["collectible"] = false,
 			}),
+			i(113228, {	-- Gauntlets of Discarded Time		(NYI)
+				["modID"] = 4,
+			}),
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
 			ig(108080),	-- Hardened Draenic Steel Guantlets	(NYI)
 			ig(108164),	-- Peerless Draenic Steel Guantlets	(NYI)
@@ -273,13 +289,13 @@ local QUANTUM_GROUP = sharedData({
 			ig(108204),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108212),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108220),	-- Peerless Draenic Steel Guantlets	(NYI)
-			ig(113219, {	-- Romy's Reliable Grips		(NYI)
-				["modID"] = 4,	-- should be soruceID 62173
+			i(113219, {	-- Romy's Reliable Grips			(NYI)
+				["modID"] = 4,
 			}),
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
 			ig(156752),	-- Skullbreaker Gauntlets			(NYI)
-			ig(113229, {	-- Zoid's Molten Gauntlets		(NYI)
-				["modID"] = 4, -- should be sourceID 62197
+			i(113229, {	-- Zoid's Molten Gauntlets			(NYI)
+				["modID"] = 4,
 			}),
 
 			ig(20653),	-- Abyssal Plate Gauntlets			(Removed)
@@ -328,7 +344,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114393),	-- Element-Binder Legguards			(NYI)
 			ig(189943),	-- Greaves of Cosmic Designs		(NYI)
 			ig(114269),	-- Leafscale Legguards				(NYI)
-			ig(147515, {	-- Hellblaze Invader's Greaves	(NYI)
+			i(147515, {	-- Hellblaze Invader's Greaves	(NYI)
 				["modID"] = 2, -- Heroic dungeon
 			}),
 			ig(4013),	-- Sterling Chain Pants				(NYI)
@@ -344,6 +360,9 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
+			i(147514, {	-- Felguard Destroyer's Legplates	(NYI)
+				["modID"] = 2,
+			}),
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
 			ig(108182),	-- Peerless Draenic Steel Legguards	(NYI)
@@ -469,10 +488,10 @@ local QUANTUM_GROUP = sharedData({
 			["collectible"] = false,
 		}),
 		ig(134746),	-- Covert Greatsword					(Removed)
-		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
+		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 2, -- Heroic raid
 		}),
-		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
+		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 6, -- Mythic raid
 		}),
 		ig(134606),	-- Scorching Greatsword					(Removed)

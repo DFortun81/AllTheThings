@@ -1963,7 +1963,8 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					},
 				})),
 				n(ZONE_DROPS, {
-					-- Confirmed drops are uncommented (Remove from NYI below when confirmed)
+					-- Confirmed drops are uncommented
+					-- Since patch 10.1.5 all hands/gloves are currently obtainable via quantum items in Dawn of the Infinite dungeon
 					-- i(113224),	-- Aeth's Swiftcinder Cloak
 					-- i(113231),	-- Brave Niunai's Cloak
 					-- i(113226),	-- Cape of the Alpha
@@ -3628,16 +3629,6 @@ root(ROOTS.NeverImplemented, {
 			i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
 			i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
 			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
-			d(LFR_RAID, {
-				n(ZONE_DROPS, {
-					i(113218),	-- Seebo's Sainted Touch
-					i(113221),	-- Siid's Silent Stranglers
-					i(113227),	-- Marco's Crackling Gloves
-					i(113228),	-- Gauntlets of Discarded Time
-					i(113219),	-- Romy's Reliable Grips
-					i(113229),	-- Zoid's Molten Gauntlets
-				}),
-			}),
 		}),
 	}),
 });

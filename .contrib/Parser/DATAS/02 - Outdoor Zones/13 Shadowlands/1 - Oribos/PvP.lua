@@ -1578,6 +1578,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188867),	-- Shoulderplates of the First
 								i(188869),	-- Vambraces of the First Eidolon
 								i(188868),	-- Visage of the First Eidolon
+								i(190467),	-- Girdle of Unity DK
 							}),
 						})),
 						i(201855, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
@@ -1606,6 +1607,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188900),	-- Mercurial Punisher's Mantle
 								i(188896),	-- Mercurial Punisher's Shoulderpads
 								i(188895),	-- Mercurial Punisher's Wristguards
+								i(190470),	-- Cinch of Unity DH
 							}),
 						})),
 						i(201854, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Druid Armor
@@ -1632,6 +1634,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188848),	-- Leggings of the Fixed Stars
 								i(188851),	-- Shoulderpads of the Fixed Stars
 								i(188871),	-- Wrap of the Fixed Stars
+								i(190465),	-- Cinch of Unity Druid
 							}),
 						})),
 						i(201853, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
@@ -1668,6 +1671,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188859),	-- Godstalker's Sallet
 								i(188860),	-- Godstalker's Tassets
 								i(188855),	-- Godstalker's Wristwraps
+								i(190466),	-- Clasp of Unity Hunter
 							}),
 						})),
 						i(201852, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Mage Armor
@@ -1694,6 +1698,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188839),	-- Erudite Occultist's Robes
 								i(188846),	-- Erudite Occultist's Shroud
 								i(188838),	-- Erudite Occultist's Treads
+								i(190464),	-- Cord of Unity Mage
 							}),
 						})),
 						i(201851, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Monk Armor
@@ -1719,6 +1724,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188911),	-- Legguards of the Grand Upwelling
 								i(188914),	-- Tassets of the Grand Upwelling
 								i(188915),	-- Waistwrap of the Grand Upwelling
+								i(190472),	-- Cinch of Unity Monk
 							}),
 						})),
 						i(201850, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
@@ -1747,6 +1753,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188931),	-- Luminous Chevalier's Robes
 								i(188930),	-- Luminous Chevalier's Spurs
 								i(188934),	-- Luminous Chevalier's Vambraces
+								i(190474),	-- Girdle of Unity Pala
 							}),
 						})),
 						i(201849, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Priest Armor
@@ -1778,6 +1785,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188878),	-- Leggings of the Empyrean
 								i(188877),	-- Sash of the Empyrean
 								i(188874),	-- Slippers of the Empyrean
+								i(190468),	-- Cord of Unity Priest
 							}),
 						})),
 						i(201848, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
@@ -1804,6 +1812,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188902),	-- Soulblade Leggings
 								i(188905),	-- Soulblade Nightwings
 								i(188904),	-- Soulblade Wristguard
+								i(190471),	-- Cinch of Unity Rogue
 							}),
 						})),
 						i(201847, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
@@ -1838,6 +1847,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188926),	-- Theurgic Starspeaker's Sabatons
 								i(188927),	-- Theurgic Starspeaker's Shawl
 								i(188924),	-- Theurgic Starspeaker's Tassets
+								i(190473, {	-- Clasp of Unity Shaman
+									["bonusID"] = 6896
+								}),
 							}),
 						})),
 						i(201846, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
@@ -1869,6 +1881,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188888),	-- Mantle of the Demon Star
 								i(188884),	-- Robes of the Demon Star
 								i(188886),	-- Waistwrap of the Demon Star
+								i(190469),	-- Cord of Unity Warlock
 							}),
 						})),
 						i(201845, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
@@ -1896,6 +1909,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188939),	-- March of the Infinite Infantry
 								i(188941),	-- Pauldrons of the Infinite Infantry
 								i(188943),	-- Vambraces of the Infinite Infantry
+								i(190475),	-- Girdle of Unity Warrior
 							}),
 						})),
 						i(201876, {	-- Arsenal: Unchained Gladiator's Weapons

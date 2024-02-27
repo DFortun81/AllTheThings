@@ -178,19 +178,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 205127 },    -- Newsy
 					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 					["g"] = {
-						spell(409471),    -- Drake Helms
-						-- auto learns these Drakewatcher Manuscripts
-						i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
-						i(197120),	-- Highland Drake: Ornate Helm (DM!)
-						i(197373),	-- Renewed Proto-Drake: Helm (DM!)
-						i(197600),	-- Windborne Velocidrake: Helm (DM!)
-						i(203326),	-- Winding Slitherdrake: Helm (DM!)
-						-- #if AFTER 10.2.0
-						i(210476),	-- Flourishing Whimsydrake: Helmet (DM!)
-						i(207770),	-- Grotto Netherwing Drake: Helm (DM!)
-						i(197119),	-- Highland Drake: Helm (DM!)
-						-- #endif
-					}
+						spell(409471, {	-- Drake Helms
+							-- auto learns these Drakewatcher Manuscripts
+							i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
+							i(197120),	-- Highland Drake: Ornate Helm (DM!)
+							i(197373),	-- Renewed Proto-Drake: Helm (DM!)
+							i(197600),	-- Windborne Velocidrake: Helm (DM!)
+							i(203326),	-- Winding Slitherdrake: Helm (DM!)
+							-- #if AFTER 10.2.0
+							i(210476),	-- Flourishing Whimsydrake: Helmet (DM!)
+							i(207770),	-- Grotto Netherwing Drake: Helm (DM!)
+							i(197119),	-- Highland Drake: Helm (DM!)
+							-- #endif
+						}),
+					},
 				}),
 			}, {	-- RENOWN 20 --
 				q(75744, {	-- A Token of Our Gratitude

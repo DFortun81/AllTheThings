@@ -1063,9 +1063,6 @@ root(ROOTS.NeverImplemented, {
 					i(134017),	-- Don Carlos' Famous Hat
 					i(138420),	-- Pilfered Ettin String
 				}),
-				tier(LEGION_TIER, 2.0, {
-					i(147517, {["modID"] = 2 }),	-- Inquisitor's Battle Cowl
-				}),
 				tier(LEGION_TIER, 3.0, {
 					i(153289),	-- Eredar Priestess' Tunic
 				}),
@@ -1101,7 +1098,6 @@ root(ROOTS.NeverImplemented, {
 					i(138489),	-- Kargath's Sacrified Hands
 				}),
 				tier(LEGION_TIER, 2.0, {
-					i(147514, {["modID"] = 2 }),	-- Felguard Destroyer's Legplates
 					i(147074),	-- Vambraces of Resoulte Justice
 				}),
 			}),
@@ -1653,6 +1649,9 @@ root(ROOTS.NeverImplemented, {
 					i(188108),	-- Cypher Attunement Waist
 					i(188113),	-- Cypher Attunement Wrist
 					--
+
+					-- Does not work now (fix would also need to re-harvest sources)
+					--[[
 					i(190621, {	-- Dealic Deterrent Stockings
 						["modID"] = 4
 					}),
@@ -1671,6 +1670,7 @@ root(ROOTS.NeverImplemented, {
 					i(190620, {	-- Sav'thul's Calamitous Tantour
 						["modID"] = 6,
 					}),
+					]]--
 				}),
 				tier(SL_TIER, 2.5, {
 					i(191425),	-- Choral Amice
@@ -1717,6 +1717,9 @@ root(ROOTS.NeverImplemented, {
 					i(190286),	-- Unbound Explorer's Trousers
 					i(190287),	-- Unbound Explorer's Waistwrap
 					--
+
+					-- Does not work now (fix would also need to re-harvest sources)
+					--[[
 					i(190618, {	-- Lattice of the Distant Keeper
 						["bonusID"] = 451
 					}),
@@ -1735,6 +1738,7 @@ root(ROOTS.NeverImplemented, {
 					i(190619, {	-- Antecedent's Aliform Joggers
 						["modID"] = 6
 					})
+					--]]
 				}),
 			}),
 			filter(MAIL, {
@@ -1779,7 +1783,8 @@ root(ROOTS.NeverImplemented, {
 					i(190296),	-- Transcendent Vagabond's Wristguards
 					--
 
-					--
+					-- Does not work now (fix would also need to re-harvest sources)
+					--[[
 					i(190616, {	-- Controlled Sequence Clasp
 						["bonusID"] = 451
 					}),
@@ -1798,6 +1803,7 @@ root(ROOTS.NeverImplemented, {
 					i(190617, {	-- Destruction-Core Handlers
 						["modID"] = 6
 					}),
+					--]]
 				}),
 			}),
 			filter(PLATE, {
@@ -1839,6 +1845,9 @@ root(ROOTS.NeverImplemented, {
 					i(190264),	-- Eternal Warder's Visor
 					i(190304),	-- Eternal Warder's Wristplates
 					--
+
+					-- Does not work now (fix would also need to re-harvest sources)
+					--[[
 					i(190614, {	-- Antros' Entrusted Bascinet
 						["modID"] = 4,
 					}),
@@ -1857,6 +1866,7 @@ root(ROOTS.NeverImplemented, {
 					i(190615, {	-- Cosmic Guardian's Casing
 						["modID"] = 6,
 					}),
+					--]]
 				}),
 			}),
 			filter(COSMETIC, {
@@ -2149,23 +2159,11 @@ root(ROOTS.NeverImplemented, {
 				i(190467, {	-- Girdle of Unity DK
 					["bonusID"] = 6895
 				}),
-				i(190467, {	-- Girdle of Unity DK
-					["bonusID"] = 6894
-				}),
 				i(190470, {	-- Cinch of Unity DH
 					["bonusID"] = 6895
 				}),
-				i(190470, {	-- Cinch of Unity DH
-					["bonusID"] = 6894
-				}),
 				i(190465, {	-- Cinch of Unity Druid
 					["bonusID"] = 6895
-				}),
-				i(190465, {	-- Cinch of Unity Druid
-					["bonusID"] = 6894
-				}),
-				i(190466, {	-- Clasp of Unity Hunter
-					["bonusID"] = 6894
 				}),
 				i(190466, {	-- Clasp of Unity Hunter
 					["bonusID"] = 6895
@@ -2173,50 +2171,26 @@ root(ROOTS.NeverImplemented, {
 				i(190464, {	-- Cord of Unity Mage
 					["bonusID"] = 6895
 				}),
-				i(190464, {	-- Cord of Unity Mage
-					["bonusID"] = 6894
-				}),
 				i(190472, {	-- Cinch of Unity Monk
 					["bonusID"] = 6895
-				}),
-				i(190472, {	-- Cinch of Unity Monk
-					["bonusID"] = 6894
 				}),
 				i(190474, {	-- Girdle of Unity Pala
 					["bonusID"] = 6895
 				}),
-				i(190474, {	-- Girdle of Unity Pala
-					["bonusID"] = 6894
-				}),
 				i(190468, {	-- Cord of Unity Priest
 					["bonusID"] = 6895
-				}),
-				i(190468, {	-- Cord of Unity Priest
-					["bonusID"] = 6894
 				}),
 				i(190471, {	-- Cinch of Unity Rogue
 					["bonusID"] = 6895
 				}),
-				i(190471, {	-- Cinch of Unity Rogue
-					["bonusID"] = 6894
-				}),
 				i(190473, {	-- Clasp of Unity Shaman
 					["bonusID"] = 6894
-				}),
-				i(190473, {	-- Clasp of Unity Shaman
-					["bonusID"] = 6896
 				}),
 				i(190469, {	-- Cord of Unity Warlock
 					["bonusID"] = 6895
 				}),
-				i(190469, {	-- Cord of Unity Warlock
-					["bonusID"] = 6894
-				}),
 				i(190475, {	-- Girdle of Unity Warrior
 					["bonusID"] = 6895
-				}),
-				i(190475, {	-- Girdle of Unity Warrior
-					["bonusID"] = 6894
 				}),
 			}),
 			filter(NECK_F, {
