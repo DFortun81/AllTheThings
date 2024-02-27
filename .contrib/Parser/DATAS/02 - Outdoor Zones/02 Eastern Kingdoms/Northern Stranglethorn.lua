@@ -335,9 +335,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(4110, {	-- Master Hunter's Bow
 							["timeline"] = { "removed 1.2.0" },
+							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
+							-- If anything, it should match the sourceID of the other item by that name. (7170)
+							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
 						}),
 						i(4111, {	-- Master Hunter's Rifle
 							["timeline"] = { "removed 1.2.0" },
+							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
+							-- If anything, it should match the sourceID of the other item by that name. (7171)
+							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
 						}),
 					},
 				}),

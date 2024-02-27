@@ -499,16 +499,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(17686, {	-- Master Hunter's Bow
-							["timeline"] = { "added 1.2.0", "removed 4.0.3", "added 5.0.4" },	-- NOTE: Confirm this made a comeback? WoWHead and WoWPedia both show this unavailable.
+							["timeline"] = { "added 1.2.0", "removed 4.0.3" },
 						}),
 						i(17687, {	-- Master Hunter's Rifle
 							["timeline"] = { "added 1.2.0", "removed 4.0.3" },
 						}),
 						i(4110, {	-- Master Hunter's Bow
 							["timeline"] = { "removed 1.2.0" },
+							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
+							-- If anything, it should match the sourceID of the other item by that name. (7170)
+							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
 						}),
 						i(4111, {	-- Master Hunter's Rifle
 							["timeline"] = { "removed 1.2.0" },
+							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
+							-- If anything, it should match the sourceID of the other item by that name. (7171)
+							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
 						}),
 					},
 				}),

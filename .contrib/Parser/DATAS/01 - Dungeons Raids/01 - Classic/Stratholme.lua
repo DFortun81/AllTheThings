@@ -940,9 +940,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								["description"] = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
 								-- #endif
 								["timeline"] = { "removed 3.0.2" },
-								-- #if NOT ANYCLASSIC
-								["u"] = 15,
-								-- #endif
+								["collectible"] = false,
 							}),
 						},
 					})),

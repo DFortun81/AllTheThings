@@ -889,6 +889,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18957),	-- Brushwood Blade
 						i(9602, {	-- Brushwood Blade
 							["timeline"] = { "removed 1.11.1.7272" },
+							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
+							-- If anything, it should match the sourceID of the other item by that name. (7540)
+							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
 						}),
 					},
 				}),
