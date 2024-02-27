@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1012, {	-- The MOTHERLODE!!
 		["coords"] = {
@@ -23,48 +22,16 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 			}),
 			n(WORLD_QUESTS, {
 				q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
-					["lvl"] = 120,
 					["isWorldQuest"] = true,
 				}),
 				q(52302, {	-- The MOTHERLODE!!: He's Got Really Big Bombs
-					["lvl"] = 120,
 					["isWorldQuest"] = true,
 				}),
 				q(52298, {	-- The MOTHERLODE!!: The Smarts Are In His Horn!
-					["lvl"] = 120,
 					["isWorldQuest"] = true,
 				}),
 			}),
-			n(ZONE_DROPS, sharedData({
-				["crs"] = {
-					136643,	-- Azerite Extractor
-					129214,	-- Coin-Operated Crowd Pummeler
-					130485,	-- Mechanized Peacekeeper
-					136139,	-- Mechanized Peacekeeper
-					133463,	-- Venture Co. War Machine
-					132713,	-- Mogul Razdunk
-				},
-				["requireSkill"] = ENGINEERING,
-			},{
-				i(161136, {	-- Azerite Forged Protection Plating
-					["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
-				}),
-				i(161137, {	-- Blast-Fired Electric Servomotor
-					["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
-				}),
-				i(161132, {	-- Crush Resistant Stabilizer
-					["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
-				}),
-			})),
 			n(ZONE_DROPS, {
-				i(161138, {	-- Azerite Inspir-A-Geneering Elixir
-					["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
-					["requireSkill"] = ENGINEERING,
-					["crs"] = {
-						133430,	-- Venture Co. Mastermind
-						140902,	-- Vog'rish, the Ascended
-					},
-				}),
 				i(168144, {	-- Extremely Precise Vial
 					["crs"] = {
 						133432,	-- Venture Co. Alchemist
@@ -73,10 +40,42 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					},
 				}),
 			}),
+			d(ALL_DIFFICULTIES_DUNGEON, {
+				e(2109, {	-- Coin-Operated Crowd Pummeler
+					["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
+					["g"] = {
+						ig(168153),	-- Coin Return Flipper
+					},
+				}),
+				e(2116, {	-- Mogul Razdunk
+					["crs"] = {
+						129232,	-- Mogul Razdunk
+						132713,	-- Mogul Razdunk
+					},
+					["g"] = {
+						ach(12844),	-- The MOTHERLODE!!
+						ig(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
+						ig(161136, {	-- Azerite Forged Protection Plating
+							["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
+						}),
+						ig(161137, {	-- Blast-Fired Electric Servomotor
+							["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
+						}),
+						ig(161132, {	-- Crush Resistant Stabilizer
+							["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
+						}),
+						ig(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
+							["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
+							["requireSkill"] = ENGINEERING,
+							["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
+						}),
+					},
+				}),
+			}),
 			d(NORMAL_DUNGEON, {
 				e(2109, {	-- Coin-Operated Crowd Pummeler
 					["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776}, {
 						i(159638),	-- Electro-Arm Bludgeoner
 						i(159663),	-- G0-4W4Y Crowd Repeller
 						i(158353),	-- Servo-Arm Bindings
@@ -84,12 +83,11 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						i(155864),	-- Power-Assisted Vicegrips
 						i(158350),	-- Rowdy Reveler's Legwraps
 						i(159462),	-- Footbomb Championship Ring
-						i(168153),	-- Coin Return Flipper
 					}),
 				}),
 				e(2114, {	-- Azerokk
 					["crs"] = { 129227 },	-- Azerokk
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776}, {
 						i(158357),	-- Bindings of Enraged Earth
 						i(158359),	-- Stonefury Vambraces
 						i(159231),	-- Mine Rat's Handwarmers
@@ -105,7 +103,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				}),
 				e(2115, {	-- Rixxa Fluxflame
 					["crs"] = { 129231 },	-- Rixxa Fluxflame
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776}, {
 						i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
 						i(159287),	-- Cloak of Questionable Intent
 						i(159240),	-- Rixxa's Sweat-Wicking Cuffs
@@ -120,8 +118,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						129232,	-- Mogul Razdunk
 						132713,	-- Mogul Razdunk
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-						ach(12844),	-- The MOTHERLODE!!
+					["g"] = bubbleDown({["bonusID"] = 4776}, {
 						i(159641),	-- G3T-00t
 						i(158364),	-- High Altitude Turban
 						i(159360),	-- Crashguard Spaulders
@@ -131,20 +128,10 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						i(158307),	-- Shrapnel-Dampening Chestguard
 						i(159298),	-- Venture Co. Plenipotentiary Vest
 						i(159611),	-- Razdunk's Big Red Button
-						i(163708, {	-- Ironfoe (Dark Iron Dwarf Quest Item)
-							["ignoreBonus"] = true,
-						}),
-						i(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
-							["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
-							["requireSkill"] = ENGINEERING,
-							["ignoreBonus"] = true,
-							["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
-						}),
 					}),
 				}),
 			}),
 			d(HEROIC_DUNGEON, {
-				["lvl"] = 120,
 				["g"] = {
 					e(2109, {	-- Coin-Operated Crowd Pummeler
 						["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
@@ -156,7 +143,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							i(155864),	-- Power-Assisted Vicegrips
 							i(158350),	-- Rowdy Reveler's Legwraps
 							i(159462),	-- Footbomb Championship Ring
-							i(168153),	-- Coin Return Flipper
 						},
 					}),
 					e(2114, {	-- Azerokk
@@ -203,23 +189,43 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							i(158307),	-- Shrapnel-Dampening Chestguard
 							i(159298),	-- Venture Co. Plenipotentiary Vest
 							i(159611),	-- Razdunk's Big Red Button
-							i(163708, {	-- Ironfoe (Dark Iron Dwarf Quest Item)
-								["ignoreBonus"] = true,
-							}),
-							i(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
-								["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
-								["requireSkill"] = ENGINEERING,
-								["ignoreBonus"] = true,
-								["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
-							}),
 						},
 					}),
 				},
 			}),
 			d(MYTHIC_DUNGEON, {
 				["difficulties"] = { 8, MYTHIC_DUNGEON },
-				["lvl"] = 120,
 				["g"] = {
+					n(ZONE_DROPS, {
+						ig(161138, {	-- Azerite Inspir-A-Geneering Elixir
+							["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
+							["requireSkill"] = ENGINEERING,
+							["crs"] = {
+								133430,	-- Venture Co. Mastermind
+								140902,	-- Vog'rish, the Ascended
+							},
+						}),
+					}),
+					n(ZONE_DROPS, sharedData({
+						["crs"] = {
+							136643,	-- Azerite Extractor
+							129214,	-- Coin-Operated Crowd Pummeler
+							130485,	-- Mechanized Peacekeeper
+							136139,	-- Mechanized Peacekeeper
+							133463,	-- Venture Co. War Machine
+						},
+						["requireSkill"] = ENGINEERING,
+					},{
+						ig(161136, {	-- Azerite Forged Protection Plating
+							["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
+						}),
+						ig(161137, {	-- Blast-Fired Electric Servomotor
+							["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
+						}),
+						ig(161132, {	-- Crush Resistant Stabilizer
+							["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
+						}),
+					})),
 					e(2109, {	-- Coin-Operated Crowd Pummeler
 						["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
 						["g"] = {
@@ -231,7 +237,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							i(155864),	-- Power-Assisted Vicegrips
 							i(158350),	-- Rowdy Reveler's Legwraps
 							i(159462),	-- Footbomb Championship Ring
-							i(168153),	-- Coin Return Flipper
 						},
 					}),
 					e(2114, {	-- Azerokk
@@ -283,15 +288,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							i(158307),	-- Shrapnel-Dampening Chestguard
 							i(159298),	-- Venture Co. Plenipotentiary Vest
 							i(159611),	-- Razdunk's Big Red Button
-							i(163708, {	-- Ironfoe (Dark Iron Dwarf Quest Item)
-								["ignoreBonus"] = true,
-							}),
-							i(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
-								["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
-								["requireSkill"] = ENGINEERING,
-								["ignoreBonus"] = true,
-								["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
-							}),
 						},
 					}),
 				},
