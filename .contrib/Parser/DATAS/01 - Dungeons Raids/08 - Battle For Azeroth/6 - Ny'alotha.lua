@@ -131,25 +131,13 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 			}),
 			d(LFR_RAID, {
 				n(ZONE_DROPS, {
-					i(175005, {	-- Belt of Concealed Intent
-						["f"] = MAIL,
-					}),
-					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = LEATHER,
-					}),
-					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = PLATE,
-					}),
-					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = CLOTH,
-					}),
+					i(175005),	-- Belt of Concealed Intent
+					i(175007),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175004),	-- Legwraps of Horrifying Figments
 					i(175008),	-- Lurking Schemer's Band
-					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = SHIELDS,
-					}),
-					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = HELD_IN_OFF_HAND,
-					}),
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
 				}),
 				header(HEADERS.Achievement, 14193, {	-- Vision of Destiny
 					e(2368, {	-- Wrathion, the Black Emperor
@@ -390,25 +378,13 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(175005, {	-- Belt of Concealed Intent
-						["f"] = MAIL,
-					}),
-					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = LEATHER,
-					}),
-					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = PLATE,
-					}),
-					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = CLOTH,
-					}),
+					i(175005),	-- Belt of Concealed Intent
+					i(175007),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175004),	-- Legwraps of Horrifying Figments
 					i(175008),	-- Lurking Schemer's Band
-					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = SHIELDS,
-					}),
-					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = HELD_IN_OFF_HAND,
-					}),
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -618,25 +594,13 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(175005, {	-- Belt of Concealed Intent
-						["f"] = MAIL,
-					}),
-					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = LEATHER,
-					}),
-					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = PLATE,
-					}),
-					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = CLOTH,
-					}),
+					i(175005),	-- Belt of Concealed Intent
+					i(175007),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175004),	-- Legwraps of Horrifying Figments
 					i(175008),	-- Lurking Schemer's Band
-					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = SHIELDS,
-					}),
-					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = HELD_IN_OFF_HAND,
-					}),
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -840,25 +804,13 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(175005, {	-- Belt of Concealed Intent
-						["f"] = MAIL,
-					}),
-					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = LEATHER,
-					}),
-					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = PLATE,
-					}),
-					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = CLOTH,
-					}),
+					i(175005),	-- Belt of Concealed Intent
+					i(175007),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175004),	-- Legwraps of Horrifying Figments
 					i(175008),	-- Lurking Schemer's Band
-					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = SHIELDS,
-					}),
-					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = HELD_IN_OFF_HAND,
-					}),
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
