@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["sourceQuest"] = 64957,	-- This Old Waystone (possibly earlier)
 					["coord"] = { 35.6, 57.5, ORIBOS },
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
 					["g"] = {
 						i(188778),	-- Cosmic Gladiator's Devouring Malediction
 						i(188691),	-- Cosmic Gladiator's Echoing Resolve

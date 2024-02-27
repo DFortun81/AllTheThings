@@ -232,6 +232,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62457, {	-- The Great Vault
 				["provider"] = { "n", 173350 },	-- Ba'vol
 				["coord"] = { 64.4, 35.8, ORIBOS },
+				["timeline"] = { REMOVED_10_0_2 },
 				["g"] = {
 					i(183251),	-- Memory of a Craven Strategem
 					i(183224),	-- Memory of a Deep Focus Draught
