@@ -21,9 +21,6 @@ i(1018, 25);	-- Chows Blade of DOOM! (Test)
 i(12939, 25);	-- Dal'Rend's Tribal Guardian
 i(19866, 25);	-- Warblade of the Hakkari
 
--- Two-Handed Maces
-i(17204, 24);	-- Eye of Sulfuras
-
 -- Fist Weapons
 i(19910, 34);	-- Arlokk's Grasp
 i(17738, 34);	-- Claw of Celebras

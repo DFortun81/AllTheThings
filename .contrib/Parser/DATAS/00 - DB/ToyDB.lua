@@ -88,6 +88,7 @@ i(37710);	-- Crashin' Thrashin' Racer Controller
 -----------------
 -- PATCH 3.0.3 --
 -----------------
+i(46349);	-- Chef's Hat
 i(36863);	-- Decahedral Dwarven Dice
 i(38578);	-- Flag of Ownership
 i(44719);	-- Frenzyheart Brew

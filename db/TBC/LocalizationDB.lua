@@ -525,7 +525,7 @@ localize(L.HEADER_ICONS, {
 	[-1000069] = "Interface/Icons/Inv_relics_libramofhope",
 	[-1000070] = "Interface/Icons/inv_shoulder_05",
 	[-1000072] = "Interface/Icons/inv_belt_24",
-	[-1000073] = "Interface/Icons/INV_Sword_23",
+	[-1000073] = _.asset("Weapon_Type_Epic"),
 	[-1000074] = "Interface/Icons/inv_bracer_07",
 	[-1000083] = _.asset("Category_Blackmarket"),
 	[-1000093] = "Interface/FriendsFrame/PlusManz-Alliance",
@@ -694,6 +694,7 @@ _.Modules.Events.SetEventInformation(201, {
 -- Filter Database Module
 _.FilterConstants = {
 	AMMO = 37,
+	ARTIFACTS = 11,
 	BAGS = 113,
 	BATTLE_PETS = 101,
 	BOWS = 32,
@@ -748,6 +749,7 @@ L.FILTER_ID_TYPES = {
 	[8] = GetItemSubClassInfo(4,6),
 	[9] = INVTYPE_TABARD,
 	[10] = INVTYPE_BODY,
+	[11] = "Artifacts",
 	[20] = GetItemSubClassInfo(2,15),
 	[21] = GetItemSubClassInfo(2,0),
 	[22] = GetItemSubClassInfo(2,1),
@@ -793,6 +795,7 @@ L.FILTER_ID_ICONS = {
 	[8] = "Interface/Icons/inv_shield_06",
 	[9] = "Interface/Icons/inv_shirt_guildtabard_01",
 	[10] = "Interface/Icons/inv_shirt_grey_01",
+	[11] = "Interface/Icons/Paladin_Protection",
 	[20] = "Interface/Icons/inv_weapon_shortblade_01",
 	[21] = "Interface/Icons/inv_axe_17",
 	[22] = "Interface/Icons/inv_axe_09",
@@ -2836,6 +2839,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Ein Waffenmeister ist ein NPC, der Charakteren die Möglichkeit bietet, bestimmte Waffenfertigkeiten zu erlernen, deren Verfügbarkeit von Waffenmeister zu Waffenmeister unterschiedlich ist. Alle Waffenfähigkeiten können auf Stufe 1 trainiert werden, mit Ausnahme von Stangenwaffen, für die Stufe 20 erforderlich ist.\n\nDas Training mit einem Waffenmeister wurde in Patch 4.0.1 obsolet, da nun alle klassengerechten Waffenfertigkeiten von jeder Klasse bei der Erstellung erlernt werden. Waffenmeister wurden kurz darauf aus dem Spiel entfernt.",
 	[-1000380] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
 });
+localize(L.FILTER_ID_TYPES, {
+	[11] = "Artefakte",
+});
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
 	[32] = "Versunkene Truhe",
@@ -4229,6 +4235,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
 	[-1000040] = "Un maître d'armes est un PNJ qui offre aux personnages la possibilité d'apprendre des compétences d'armes spécifiques, dont la disponibilité varie d'un maître d'armes à l'autre. Toutes les compétences d'armes peuvent être entraînées au niveau 1, à l'exception des armes d'hast qui nécessitent le niveau 20.\n\nL'entraînement avec un maître d'armes est devenu obsolète dans le patch 4.0.1, car toutes les compétences d'armes appropriées à la classe sont désormais apprises par chaque classe lors de sa création. Les maîtres d'armes ont été retirés du jeu peu de temps après.",
 	[-1000380] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
+});
+localize(L.FILTER_ID_TYPES, {
+	[11] = "Artéfact",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -6883,6 +6892,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Мастер оружия - это NPC, который предлагает персонажам возможность изучить определенные навыки обращения с оружием, доступность которых варьируется от одного мастера к другому. Все навыки обращения с оружием можно изучить на уровне 1, кроме древкового оружия, для которого требуется уровень 20.\n\nОбучение с мастером оружия стало устаревшим в патче 4.0.1, так как все соответствующие классу навыки владения оружием теперь изучаются каждым классом при создании. Вскоре после этого из игры были удалены мастера оружия.",
 	[-1000380] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 });
+localize(L.FILTER_ID_TYPES, {
+	[11] = "Артефакты",
+});
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
 	[32] = "Затонувший сундук",
@@ -7604,6 +7616,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-1000040] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个班级在创建时都会学习所有适合班级的武器熟练程度。不久之后，武器大师就被从游戏中删除了。",
 	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
+});
+localize(L.FILTER_ID_TYPES, {
+	[11] = "神器",
 });
 localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",

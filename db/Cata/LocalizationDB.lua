@@ -829,7 +829,7 @@ localize(L.HEADER_ICONS, {
 	[-1000069] = "Interface/Icons/Inv_relics_libramofhope",
 	[-1000070] = "Interface/Icons/inv_shoulder_05",
 	[-1000072] = "Interface/Icons/inv_belt_24",
-	[-1000073] = "Interface/Icons/INV_Sword_23",
+	[-1000073] = _.asset("Weapon_Type_Epic"),
 	[-1000074] = "Interface/Icons/inv_bracer_07",
 	[-1000083] = _.asset("Category_Blackmarket"),
 	[-1000093] = "Interface/FriendsFrame/PlusManz-Alliance",
@@ -974,6 +974,7 @@ _.Modules.Events.SetEventInformation(590, {
 -- Filter Database Module
 _.FilterConstants = {
 	AMMO = 37,
+	ARTIFACTS = 11,
 	BAGS = 113,
 	BATTLE_PETS = 101,
 	BOWS = 32,
@@ -1029,6 +1030,7 @@ L.FILTER_ID_TYPES = {
 	[8] = GetItemSubClassInfo(4,6),
 	[9] = INVTYPE_TABARD,
 	[10] = INVTYPE_BODY,
+	[11] = "Artifacts",
 	[20] = GetItemSubClassInfo(2,15),
 	[21] = GetItemSubClassInfo(2,0),
 	[22] = GetItemSubClassInfo(2,1),
@@ -1075,6 +1077,7 @@ L.FILTER_ID_ICONS = {
 	[8] = "Interface/Icons/inv_shield_06",
 	[9] = "Interface/Icons/inv_shirt_guildtabard_01",
 	[10] = "Interface/Icons/inv_shirt_grey_01",
+	[11] = "Interface/Icons/Paladin_Protection",
 	[20] = "Interface/Icons/inv_weapon_shortblade_01",
 	[21] = "Interface/Icons/inv_axe_17",
 	[22] = "Interface/Icons/inv_axe_09",
@@ -4324,6 +4327,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000380] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
 });
 localize(L.FILTER_ID_TYPES, {
+	[11] = "Artefakte",
 	[103] = "Waffenverzauberungen",
 });
 localize(_.ObjectNames, {
@@ -6330,6 +6334,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Les éléments de cette liste sont des apparences partagées pour l'élément ci-dessus. En mode Apparence unique, cette liste peut vous aider à comprendre pourquoi ou pourquoi un élément spécifique serait marqué Collecté.",
 	[-1000163] = "Cet article a une apparence unique. Vous devez collecter cet objet spécifiquement pour gagner l’apparence.",
 	[-1000380] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
+});
+localize(L.FILTER_ID_TYPES, {
+	[11] = "Artéfact",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -10294,6 +10301,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000380] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 });
 localize(L.FILTER_ID_TYPES, {
+	[11] = "Артефакты",
 	[103] = "Иллюзии",
 });
 localize(_.ObjectNames, {
@@ -11338,6 +11346,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
 });
 localize(L.FILTER_ID_TYPES, {
+	[11] = "神器",
 	[103] = "幻象",
 });
 localize(_.ObjectNames, {
