@@ -1588,6 +1588,20 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 	}),
 	-- #endif
+	-- #if AFTER 7.0.3
+	filter(COSMETIC, {
+		i(143539, {["timeline"] = {ADDED_7_1_0}}),	-- Hidden Belt
+		i(168664, {["timeline"] = {ADDED_8_2_0}}),	-- Hidden Boots
+		i(168665, {["timeline"] = {ADDED_8_2_0}}),	-- Hidden Bracers
+		i(168659, {["timeline"] = {ADDED_8_2_0}}),	-- Hidden Chestpiece
+		i(134111, {["timeline"] = {ADDED_7_0_3}}),	-- Hidden Cloak
+		i(158329, {["timeline"] = {ADDED_8_0_1}}),	-- Hidden Gloves
+		i(134110, {["timeline"] = {ADDED_7_0_3}}),	-- Hidden Helm
+		i(142503, {["timeline"] = {ADDED_7_1_0}}),	-- Hidden Shirt
+		i(134112, {["timeline"] = {ADDED_7_0_3}}),	-- Hidden Shoulder
+		i(142504, {["timeline"] = {ADDED_7_1_0}}),	-- Hidden Tabard
+	}),
+	-- #endif
 	filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" }, }, {
 		ill(5387),	-- Agility (ILLUSION!)
 		ill(5861),	-- Beastslayer (ILLUSION!)

@@ -1104,17 +1104,9 @@ root(ROOTS.NeverImplemented, {
 			filter(COSMETIC, {
 				tier(LEGION_TIER, 0.3, {
 					i(133996),	-- Burgy Blackheart's Handsome Hat
-					i(134110),	-- Hidden Helm
-					i(134111),	-- Hidden Cloak
-					i(134112),	-- Hidden Shoulder
 					i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 					i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
 					i(81862),	-- Art Template Robe Dress_B_03 - Blue
-				}),
-				tier(LEGION_TIER, 1.0, {
-					i(142504),	-- Hidden Tabard
-					i(143539),	-- Hidden Belt
-					i(142503),	-- Hidden Shirt
 				}),
 			}),
 			filter(TABARDS, {
@@ -1493,17 +1485,11 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(COSMETIC, {
 				tier(BFA_TIER, 0.1, {
-					i(158329),	-- Hidden Gloves
 					i(163922),	-- Kobold Candle Helm
 					i(163923),	-- Kobold Candle Helm
 				}),
 				tier(BFA_TIER, 1.5, {
 					i(168004),	-- Gift of N'Zoth
-				}),
-				tier(BFA_TIER, 2.0, {
-					i(168659),	-- Hidden Chestpiece
-					i(168664),	-- Hidden Boots
-					i(168665),	-- Hidden Bracers
 				}),
 			}),
 			filter(NECK_F, {
