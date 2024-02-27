@@ -1,0 +1,39 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="Prime.lua"/>
+	<Script file="Achievements.lua"/>
+	<Script file="Attunements.lua"/>
+	<Script file="Auctions.lua"/>
+	<Script file="Battle Pets.lua"/>
+	<Script file="Bounty.lua"/>
+	<Script file="Breadcrumbs.lua"/>
+	<Script file="Dailies.lua"/>
+	<Script file="Exploration.lua"/>
+	<Script file="Factions.lua"/>
+	<Script file="Find.lua"/>
+	<Script file="Flight Paths.lua"/>
+	<Script file="Heirlooms.lua"/>
+	<Script file="Hidden Achievement Triggers.lua"/>
+	<Script file="Hidden Quest Triggers.lua"/>
+	<Script file="Illusions.lua"/>
+	<Script file="Locked.lua"/>
+	<Script file="Maps.lua"/>
+	<Script file="Mini List.lua"/>
+	<Script file="Missing Quests.lua"/>
+	<Script file="Mounts.lua"/>
+	<Script file="Never Implemented.lua"/>
+	<Script file="Objects.lua"/>
+	<Script file="Quests.lua"/>
+	<Script file="Raid Assistant.lua"/>
+	<Script file="Random.lua"/>
+	<Script file="Removed From Game.lua"/>
+	<Script file="Removed With Patch Drops.lua"/>
+	<Script file="Removed With Patch Loot.lua"/>
+	<Script file="Season of Discovery.lua"/>
+	<Script file="Soft Reserves.lua"/>
+	<Script file="Sync.lua"/>
+	<Script file="Titles.lua"/>
+	<Script file="Toys.lua"/>
+	<Script file="Tradeskills.lua"/>
+	<Script file="Unsorted.lua"/>
+</Ui>

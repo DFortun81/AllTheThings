@@ -120,41 +120,7 @@ src\UI\Classic Window Logic.lua
 db\TBC\Categories.lua
 
 # Window Definitions
-src\UI\Windows\Prime.lua
-src\UI\Windows\Achievements.lua
-src\UI\Windows\Attunements.lua
-src\UI\Windows\Auctions.lua
-src\UI\Windows\Battle Pets.lua
-src\UI\Windows\Bounty.lua
-src\UI\Windows\Breadcrumbs.lua
-src\UI\Windows\Dailies.lua
-src\UI\Windows\Exploration.lua
-src\UI\Windows\Factions.lua
-src\UI\Windows\Find.lua
-src\UI\Windows\Flight Paths.lua
-# src\UI\Windows\Heirlooms.lua
-src\UI\Windows\Hidden Achievement Triggers.lua
-src\UI\Windows\Hidden Quest Triggers.lua
-src\UI\Windows\Illusions.lua
-src\UI\Windows\Locked.lua
-src\UI\Windows\Maps.lua
-src\UI\Windows\Mini List.lua
-src\UI\Windows\Missing Quests.lua
-src\UI\Windows\Mounts.lua
-src\UI\Windows\Never Implemented.lua
-src\UI\Windows\Objects.lua
-src\UI\Windows\Quests.lua
-src\UI\Windows\Raid Assistant.lua
-src\UI\Windows\Random.lua
-src\UI\Windows\Removed From Game.lua
-src\UI\Windows\Removed With Patch Drops.lua
-src\UI\Windows\Removed With Patch Loot.lua
-src\UI\Windows\Soft Reserves.lua
-src\UI\Windows\Sync.lua
-src\UI\Windows\Titles.lua
-src\UI\Windows\Toys.lua
-src\UI\Windows\Tradeskills.lua
-src\UI\Windows\Unsorted.lua
+src\UI\Windows\Windows.xml
 
 # Finally, prepare the Data Cache
 src\Root.lua
