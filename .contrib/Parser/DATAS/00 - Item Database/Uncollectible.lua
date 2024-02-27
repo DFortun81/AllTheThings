@@ -493,6 +493,7 @@ i(176875);	-- Crooked Horn
 i(178173);	-- Crumbling Sandstone
 i(183921);	-- Crumpled Napkin
 i(183922);	-- Crushed Nut Shells
+i(184402);	-- Culexwood Pan Flute
 i(178125);	-- Dancing Metal Slivers
 i(183065);	-- Dazzling Zircon Cube
 i(182758);	-- Decorative Sinsteel Dagger
@@ -673,6 +674,7 @@ i(180382);	-- Scaldhead
 i(181713);	-- Scorched Letter
 i(183915);	-- Scrap of Streamer
 i(180884);	-- Scroll of Foul Rites
+i(181488);	-- Shadowstalker Claw
 i(178130);	-- Shapeable Muck
 i(184377);	-- Shattered Firestone
 i(174104);	-- Shattered Memento
@@ -695,6 +697,7 @@ i(180513);	-- Sleepy Toadstool
 i(183917);	-- Slime-Stained Bowl
 i(176868);	-- Sliver of Entropy
 i(176393);	-- Slumber Powder
+i(181484);	-- Songwood Graft
 i(183047);	-- Soul of the Darkhound
 i(179369);	-- Spectral Key
 i(176853);	-- Spindly Flesh

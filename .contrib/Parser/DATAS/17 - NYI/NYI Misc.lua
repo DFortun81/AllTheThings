@@ -661,7 +661,6 @@ root(ROOTS.NeverImplemented, {
 				i(184575),	-- Byron Test Happy Fun Rock
 				i(184316),	-- Cache of Nathrian Treasures
 				i(184317),	-- Cache of Nathrian Treasures
-				i(184402),	-- Culexwood Pan Flute
 				i(184534),	-- Entitled Guest
 				i(184762),	-- Fragmented Sorrow
 				i(184684),	-- Grimoire of Knowledge
@@ -683,8 +682,6 @@ root(ROOTS.NeverImplemented, {
 				i(184153),	-- Polymorphic Polyhedron
 				i(184761),	-- Purified Misery
 				i(184760),	-- Quiescent Orb
-				i(181488),	-- Shadowstalker Claw
-				i(181484),	-- Songwood Graft
 				i(184120),	-- Spare Brain
 				i(184121),	-- Spare Eye
 				i(184122),	-- Spare Foot
