@@ -38,7 +38,9 @@ i(18660);	-- World Enlarger
 -----------------
 -- PATCH 2.0.1 --
 -----------------
+-- #if BEFORE 7.0.3
 i(30847);	-- X-52 Rocket Helmet
+-- #endif
 
 -----------------
 -- PATCH 2.0.5 --
@@ -109,7 +111,9 @@ i(36862);	-- Worn Troll Dice
 -----------------
 -- PATCH 3.1.0 --
 -----------------
+-- #if BEFORE 7.0.3
 i(46349);	-- Chef's Hat
+-- #endif
 i(45021);	-- Darnassus Banner
 i(45020);	-- Exodar Banner
 i(45063);	-- Foam Sword Rack
