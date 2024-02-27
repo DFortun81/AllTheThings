@@ -36,6 +36,11 @@ i(17712);	-- Winter Veil Disguise Kit
 i(18660);	-- World Enlarger
 
 -----------------
+-- PATCH 2.0.1 --
+-----------------
+i(30847);	-- X-52 Rocket Helmet
+
+-----------------
 -- PATCH 2.0.5 --
 -----------------
 i(23767);	-- Crashin' Thrashin' Robot
@@ -88,7 +93,6 @@ i(37710);	-- Crashin' Thrashin' Racer Controller
 -----------------
 -- PATCH 3.0.3 --
 -----------------
-i(46349);	-- Chef's Hat
 i(36863);	-- Decahedral Dwarven Dice
 i(38578);	-- Flag of Ownership
 i(44719);	-- Frenzyheart Brew
@@ -105,6 +109,7 @@ i(36862);	-- Worn Troll Dice
 -----------------
 -- PATCH 3.1.0 --
 -----------------
+i(46349);	-- Chef's Hat
 i(45021);	-- Darnassus Banner
 i(45020);	-- Exodar Banner
 i(45063);	-- Foam Sword Rack
