@@ -1081,9 +1081,12 @@ else
 	app.CreateGearSetHeader = app.CreateUnimplementedClass("GearSetHeader", "setID");
 	app.CreateGearSetSubHeader = app.CreateUnimplementedClass("GearSetSubHeader", "setID");
 	app.CreateItemSource = function(sourceID, itemID, t)
-		t = app.CreateItem(itemID, t);
-		t.sourceID = sourceID;
-		return t;
+		if not t then
+			t = { sourceID = sourceID };
+		else
+			t.sourceID = sourceID;
+		end
+		return app.CreateItem(itemID, t);
 	end
 
 	-- External Functionality
