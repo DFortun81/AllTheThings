@@ -3284,6 +3284,9 @@ local function DetermineCraftedGroups(group, FillData)
 	local craftableItemIDs = {}
 	-- track crafted items which are filled across the entire fill sequence
 	local craftedItems = FillData.CraftedItems
+	-- if we're filling a window (level 2) then we will allow showing the same crafted item multiple times
+	-- so that different reagents can all be visible for the same purpose
+	local skipLevel = FillData.SkipLevel or 0
 
 	-- item is BoP
 	-- if filterSkill then
@@ -3294,9 +3297,9 @@ local function DetermineCraftedGroups(group, FillData)
 	-- find recipe(s) which creates this item
 	for recipeID,info in pairs(itemRecipes) do
 		craftedItemID = info[1];
-		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
+		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID,skipLevel);
 		-- TODO: review how this can be nil
-		if craftedItemID and not craftableItemIDs[craftedItemID] and not craftedItems[craftedItemID] then
+		if craftedItemID and not craftableItemIDs[craftedItemID] and (skipLevel > 1 or not craftedItems[craftedItemID]) then
 			-- app.PrintDebug("recipeID",recipeID);
 			-- item is BoP
 			if filterSkill then
@@ -3545,6 +3548,7 @@ app.FillGroups = function(group)
 		CraftedItems = {},
 		InWindow = groupWindow and true or nil,
 		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
+		SkipLevel = app.GetSkipLevel()
 	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
@@ -11975,7 +11979,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- Swap out the map data for the header.
 				self:SetData(header);
 				-- Fill up the groups that need to be filled!
+				app.SetSkipLevel(2);
 				app.FillGroups(header);
+				app.SetSkipLevel(0);
 
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(header, "instanceID") then
