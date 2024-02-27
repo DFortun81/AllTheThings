@@ -12728,10 +12728,6 @@ customWindowUpdates["Random"] = function(self)
 		if not self.initialized then
 			self.initialized = true;
 
-			-- For this window's options to work, Prime needs to be fully initialized.
-			local prime = app:GetWindow("Prime");
-			prime:Update(true);
-
 			local function SearchRecursively(group, field, temp, func)
 				if group.visible and not (group.saved or group.collected) then
 					if group.g then
@@ -12740,18 +12736,6 @@ customWindowUpdates["Random"] = function(self)
 						end
 					end
 					if group[field] and (not func or func(group)) then
-						tinsert(temp, group);
-					end
-				end
-			end
-			local function SearchRecursivelyForEverything(group, temp)
-				if group.visible and not (group.saved or group.collected) then
-					if group.g then
-						for i, subgroup in ipairs(group.g) do
-							SearchRecursivelyForEverything(subgroup, temp);
-						end
-					end
-					if group.collectible then
 						tinsert(temp, group);
 					end
 				end
@@ -12768,12 +12752,24 @@ customWindowUpdates["Random"] = function(self)
 					end
 				end
 			end
-			function self:SelectAllTheThings()
+			local function SearchRecursivelyForEverything(group, temp)
+				if group.visible and not (group.saved or group.collected) then
+					if group.g then
+						for i, subgroup in ipairs(group.g) do
+							SearchRecursivelyForEverything(subgroup, temp);
+						end
+					end
+					if group.collectible then
+						tinsert(temp, group);
+					end
+				end
+			end
+			function self.SelectAllTheThings(rootData)
 				if searchCache["randomatt"] then
 					return searchCache["randomatt"];
 				else
 					local searchResults = {};
-					for i, subgroup in ipairs(app:GetWindow("Prime").data.g) do
+					for i, subgroup in ipairs(rootData.g) do
 						SearchRecursivelyForEverything(subgroup, searchResults);
 					end
 					if #searchResults > 0 then
@@ -12782,37 +12778,37 @@ customWindowUpdates["Random"] = function(self)
 					end
 				end
 			end
-			function self:SelectAchievement()
+			function self.SelectAchievement(rootData)
 				if searchCache["randomachievement"] then
 					return searchCache["randomachievement"];
 				else
 					local searchResults = {};
 					local func = function(o)
-						return o.collectible and not o.mapID;
+						return o.collectible and not o.collected and not o.mapID and not o.criteriaID;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "achievementID", searchResults, func);
+					SearchRecursively(rootData, "achievementID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomachievement"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectItem()
+			function self.SelectItem(rootData)
 				if searchCache["randomitem"] then
 					return searchCache["randomitem"];
 				else
 					local searchResults = {};
 					local func = function(o)
-						return o.collectible;
+						return o.collectible and not o.collected;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "itemID", searchResults, func);
+					SearchRecursively(rootData, "itemID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomitem"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectInstance()
+			function self.SelectInstance(rootData)
 				if searchCache["randominstance"] then
 					return searchCache["randominstance"];
 				else
@@ -12820,14 +12816,14 @@ customWindowUpdates["Random"] = function(self)
 					local func = function(o)
 						return ((o.total or 0) - (o.progress or 0)) > 0;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
+					SearchRecursively(rootData, "instanceID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randominstance"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectDungeon()
+			function self.SelectDungeon(rootData)
 				if searchCache["randomdungeon"] then
 					return searchCache["randomdungeon"];
 				else
@@ -12835,29 +12831,29 @@ customWindowUpdates["Random"] = function(self)
 					local func = function(o)
 						return not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
+					SearchRecursively(rootData, "instanceID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomdungeon"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectQuest()
+			function self.SelectQuest(rootData)
 				if searchCache["quests"] then
 					return searchCache["quests"];
 				else
 					local searchResults = {};
 					local func = function(o)
-						return o.collectible;
+						return o.collectible and not o.collected;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "questID", searchResults, func);
+					SearchRecursively(rootData, "questID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["quests"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectRaid()
+			function self.SelectRaid(rootData)
 				if searchCache["randomraid"] then
 					return searchCache["randomraid"];
 				else
@@ -12865,52 +12861,52 @@ customWindowUpdates["Random"] = function(self)
 					local func = function(o)
 						return o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
+					SearchRecursively(rootData, "instanceID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomraid"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectMount()
+			function self.SelectMount(rootData)
 				if searchCache["randommount"] then
 					return searchCache["randommount"];
 				else
 					local searchResults = {};
 					local func = function(o)
-						return o.collectible and (not o.achievementID or o.itemID);
+						return o.collectible and not o.collected and (not o.achievementID or o.itemID);
 					end
-					SearchRecursivelyForValue(app:GetWindow("Prime").data, "filterID", 100, searchResults, func);
+					SearchRecursivelyForValue(rootData, "filterID", 100, searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randommount"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectPet()
+			function self.SelectPet(rootData)
 				if searchCache["randompet"] then
 					return searchCache["randompet"];
 				else
 					local searchResults = {};
 					local func = function(o)
-						return o.collectible;
+						return o.collectible and not o.collected;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "speciesID", searchResults, func);
+					SearchRecursively(rootData, "speciesID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randompet"] = searchResults;
 						return searchResults;
 					end
 				end
 			end
-			function self:SelectToy()
+			function self.SelectToy(rootData)
 				if searchCache["randomtoy"] then
 					return searchCache["randomtoy"];
 				else
 					local searchResults = {};
 					local func = function(o)
-						return o.collectible;
+						return o.collectible and not o.collected;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "toyID", searchResults, func);
+					SearchRecursively(rootData, "toyID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomtoy"] = searchResults;
 						return searchResults;
@@ -12929,8 +12925,10 @@ customWindowUpdates["Random"] = function(self)
 				[905] = 1,	-- Argus
 				[876] = 1,	-- Kul'Tiras
 				[875] = 1,	-- Zandalar
+				[1550] = 1,	-- The Shadowlands
+				[1978] = 1,	-- Dragon Isles
 			};
-			function self:SelectZone()
+			function self.SelectZone(rootData)
 				if searchCache["randomzone"] then
 					return searchCache["randomzone"];
 				else
@@ -12938,7 +12936,7 @@ customWindowUpdates["Random"] = function(self)
 					local func = function(o)
 						return (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not excludedZones[o.mapID];
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "mapID", searchResults, func);
+					SearchRecursively(rootData, "mapID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomzone"] = searchResults;
 						return searchResults;
@@ -13143,16 +13141,20 @@ customWindowUpdates["Random"] = function(self)
 				-- Rebuild all the datas
 				wipe(self.data.g);
 
-				-- Call to our method and build a list to draw from
-				local method = app.GetDataMember("RandomSearchFilter", "Instance");
+				local primeWindow = app:GetWindow("Prime")
+				local primePending = primeWindow.HasPendingUpdate
+
+				-- Call to our method and build a list to draw from if Prime has been opened
+				local method = not primePending and app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
 					rerollOption.text = L["REROLL_2"] .. (method ~= appName and L[method:upper()] or method);
 					method = "Select" .. method;
-					local temp = self[method]() or app.EmptyTable;
+					local temp = self[method](primeWindow.data) or app.EmptyTable;
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
 						totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
 					end
+					-- app.PrintDebug("#random",temp and #temp,totalWeight)
 					if totalWeight > 0 and #temp > 0 then
 						local weight, selected = math.random(totalWeight), nil;
 						totalWeight = 0;
@@ -13163,6 +13165,7 @@ customWindowUpdates["Random"] = function(self)
 								break;
 							end
 						end
+						-- app.PrintDebug("select",weight,selected and (selected.text or selected.hash))
 						if not selected then selected = temp[#temp - 1]; end
 						if selected then
 							NestObject(self.data, selected, true);
@@ -13173,7 +13176,11 @@ customWindowUpdates["Random"] = function(self)
 						app.print(L["NOTHING_TO_SELECT_FROM"]);
 					end
 				else
-					app.print(L["NO_SEARCH_METHOD"]);
+					if primePending then
+						app.print(L["NOTHING_TO_SELECT_FROM"]);
+					else
+						app.print(L["NO_SEARCH_METHOD"]);
+					end
 				end
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
