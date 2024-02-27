@@ -787,6 +787,7 @@ i(162691, 252336);	-- Steelskin Potion [Rank 3] (H)
 i(162139, 252381);	-- Surging Alchemist Stone [Rank 3] (A)
 i(162702, 252381);	-- Surging Alchemist Stone [Rank 3] (H)
 --- First Aid Migration ---
+-- #if AFTER 8.0.1
 i(0, 7934);			-- Anti-Venom
 i(160663, 172540);	-- Healing Tonic
 i(160661, 172542);	-- Fire Ammonite Oil
@@ -794,6 +795,7 @@ i(6454, 7935);		-- Strong Anti-Venom
 i(19442, 23787);	-- Powerful Anti-Venom
 i(160662, 172541);	-- Blackwater Anti-Venom
 i(160664, 221690);	-- Silvery Salve
+-- #endif
 --- NYI ---
 i(0, 252365);		-- Unknown
 i(0, 252366);		-- Unknown
