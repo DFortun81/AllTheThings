@@ -150,6 +150,77 @@ AchievementsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Acc
 AchievementsAccountWideCheckBox:SetPoint("TOPRIGHT", AchievementsCheckBox, "TOPLEFT", 4, 0);
 AchievementsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
+local AppearancesCheckBox = child:CreateCheckBox("Appearances",
+function(self)
+	self:SetChecked(settings:Get("Thing:Transmog"));
+	if app.MODE_DEBUG then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+	if not self.total or self.total == 0 then
+		local total = 0;
+		local container = app.SearchForFieldContainer("sourceID");
+		for i,o in pairs(container) do
+			for i,p in ipairs(o) do
+				if p.sourceID then
+					total = total + 1;
+					break;
+				end
+			end
+		end
+		self.total = total;
+	end
+end,
+function(self)
+	settings:Set("Thing:Transmog", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+AppearancesCheckBox:SetATTTooltip("Enable this option to track appearance acquisition.\n\nYou can change which sort of items display for you based on the Filters tab.");
+AppearancesCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
+AppearancesCheckBox.OnTooltip = OnTooltipForThing;
+
+local AccountWideAppearancesCheckBox = child:CreateCheckBox("",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Transmog"));
+	if app.MODE_DEBUG or not settings:Get("Thing:Transmog") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Transmog", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+AccountWideAppearancesCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nTransmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.");
+AccountWideAppearancesCheckBox:SetPoint("TOPRIGHT", AppearancesCheckBox, "TOPLEFT", 4, 0);
+AccountWideAppearancesCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
+
+if app.GameBuildVersion < 40000 then
+local RWPCheckBox = child:CreateCheckBox("Only RWP",
+function(self)
+	self:SetChecked(settings:Get("Only:RWP"))
+	if not settings:Get("Thing:Transmog") or app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:Set("Only:RWP", self:GetChecked());
+	settings:UpdateMode(1);
+end)
+RWPCheckBox:SetATTTooltip("Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.")
+RWPCheckBox:AlignAfter(AppearancesCheckBox)
+end
+
 local BattlePetsCheckBox = child:CreateCheckBox(AUCTION_CATEGORY_BATTLE_PETS,
 function(self)
 	self:SetChecked(settings:Get("Thing:BattlePets"));
@@ -174,7 +245,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle & companion pets.\n\nNOTE: At this time, you cannot use them for battling, but they can follow you around and be all cute and stuff.\n\nGotta Horde 'em all!");
-BattlePetsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
+BattlePetsCheckBox:SetPoint("TOPLEFT", AppearancesCheckBox, "BOTTOMLEFT", 0, 4);
 BattlePetsCheckBox.OnTooltip = OnTooltipForThing;
 
 local BattlePetsAccountWideCheckBox;
@@ -660,57 +731,6 @@ ReputationsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Acco
 ReputationsAccountWideCheckBox:SetPoint("TOPRIGHT", ReputationsCheckBox, "TOPLEFT", 4, 0);
 ReputationsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
-local RWPCheckBox = child:CreateCheckBox("Removed With Patch Loot",
-function(self)
-	self:SetChecked(settings:Get("Thing:RWP"));
-	if app.MODE_DEBUG then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-	if not self.total or self.total == 0 then
-		local total = 0;
-		local container = app.SearchForFieldContainer("itemID");
-		for i,o in pairs(container) do
-			for i,p in ipairs(o) do
-				if p.itemID and p.rwp and p.f and app.Settings:GetFilterForRWPBase(p.f) then
-					total = total + 1;
-					break;
-				end
-			end
-		end
-		self.total = total;
-	end
-end,
-function(self)
-	settings:Set("Thing:RWP", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RWPCheckBox:SetATTTooltip("Enable this option to track future removed from game loot. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
-RWPCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
-RWPCheckBox.OnTooltip = OnTooltipForThing;
-
-local RWPAccountWideCheckBox = child:CreateCheckBox("",
-function(self)
-	self:SetChecked(settings:Get("AccountWide:RWP"));
-	if app.MODE_DEBUG or not settings:Get("Thing:RWP") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:RWP", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RWPAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nRemoved from Game Items should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.");
-RWPAccountWideCheckBox:SetPoint("TOPRIGHT", RWPCheckBox, "TOPLEFT", 4, 0);
-RWPAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
-
 local TitlesCheckBox = child:CreateCheckBox(PAPERDOLL_SIDEBAR_TITLES,
 function(self)
 	self:SetChecked(settings:Get("Thing:Titles"));
@@ -735,7 +755,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 TitlesCheckBox:SetATTTooltip("Enable this option to track character titles.");
-TitlesCheckBox:SetPoint("TOPLEFT", RWPCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
 TitlesCheckBox.OnTooltip = OnTooltipForThing;
 
 local TitlesAccountWideCheckBox = child:CreateCheckBox("",

@@ -15,9 +15,9 @@ settings.AccountWide = {
 	Quests = true,
 	Recipes = true,
 	Reputations = true,
-	RWP = true,
 	Titles = true,
 	Toys = true,
+	Transmog = true,
 };
 settings.Collectibles = {
 	Achievements = true,
@@ -31,9 +31,9 @@ settings.Collectibles = {
 	Quests = true,
 	Recipes = true,
 	Reputations = true,
-	RWP = true,
 	Titles = true,
 	Toys = true,
+	Transmog = true,
 };
 
 -- Settings Class

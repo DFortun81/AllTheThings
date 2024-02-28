@@ -1297,7 +1297,7 @@ app.Presets = {
 		[200] = true,
 	},
 }
-app.PresetRWPs = {
+app.PresetTransmogs = {
 	["ALL"] = {
 		true, -- [1] HELD_IN_OFF_HAND
 		true, -- [2] COSMETIC

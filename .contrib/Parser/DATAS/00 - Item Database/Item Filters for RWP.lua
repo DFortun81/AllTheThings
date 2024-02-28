@@ -170928,7 +170928,7 @@ for itemID,f in pairs(ITEM_FILTERS_FOR_CLASSIC) do
 			-- Blacklisted, we don't care about this.
 		else
 			-- HUH?! WHAT IS THIS? (maybe COSMETIC?)
-			print("ITEM FILTERS FOR RWP: " .. itemID .. ", " .. f .. " -> " .. retailF);
+			--print("ITEM FILTERS FOR RWP: " .. itemID .. ", " .. f .. " -> " .. retailF);
 			Items[itemID] = { filterForRWP = retailF };
 		end
 	end

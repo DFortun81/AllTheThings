@@ -157,9 +157,10 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 			if itemID then
 				local knownByGUID = {};
 				
-				-- Prior to Cata, RWP (transmog) were not tracked account wide
+				-- Prior to Cata, transmog was not tracked account wide
+				id = reference.sourceID;
 				for guid,character in pairs(ATTCharacterData) do
-					if (character.RWP and character.RWP[itemID]) then
+					if character.Transmog and character.Transmog[id] then
 						knownByGUID[guid] = character;
 					end
 				end

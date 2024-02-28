@@ -15,9 +15,9 @@ settings.AccountWide = {
 	Quests = true,
 	Recipes = true,
 	Reputations = true,
-	RWP = true,
 	Titles = true,
 	Toys = true,
+	Transmog = true,
 };
 settings.Collectibles = {
 	Achievements = true,
@@ -34,6 +34,7 @@ settings.Collectibles = {
 	RWP = true,
 	Titles = true,
 	Toys = true,
+	Transmog = true,
 };
 
 -- Settings Class
@@ -59,7 +60,6 @@ local Things = {
 	"Recipes",
 	"Reputations",
 	"RuneforgeLegendaries",
-	"RWP",
 	"Titles",
 	"Toys",
 	"Transmog",
@@ -81,9 +81,9 @@ local GeneralSettingsBase = {
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = false,
-		["AccountWide:RWP"] = true,
 		["AccountWide:Titles"] = false,
 		["AccountWide:Toys"] = true,
+		["AccountWide:Transmog"] = true,
 		["Hide:PvP"] = false,
 		["DeathTracker"] = app.GameBuildVersion < 40000,
 		["Thing:Achievements"] = true,
@@ -99,9 +99,10 @@ local GeneralSettingsBase = {
 		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
-		--["Thing:RWP"] = false,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
+		["Thing:Transmog"] = true,
+		["Only:RWP"] = app.GameBuildVersion < 40000,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
 		["Show:OnlyActiveEvents"] = true,
@@ -110,8 +111,8 @@ local GeneralSettingsBase = {
 local FilterSettingsBase = {
 	__index = app.Presets[app.Class] or app.Presets.ALL,
 };
-local RWPFilterSettingsBase = {
-	__index = app.PresetRWPs[app.Class] or app.PresetRWPs.ALL,
+local TransmogFilterSettingsBase = {
+	__index = app.PresetTransmogs[app.Class] or app.PresetTransmogs.ALL,
 };
 local TooltipSettingsBase = {
 	__index = {
@@ -244,9 +245,9 @@ settings.Initialize = function(self)
 
 	-- Assign the preset filters for your character class as the default states
 	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
-	if not AllTheThingsSettingsPerCharacter.RWPFilters then AllTheThingsSettingsPerCharacter.RWPFilters = {}; end
+	if not AllTheThingsSettingsPerCharacter.TransmogFilters then AllTheThingsSettingsPerCharacter.TransmogFilters = {}; end
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
-	setmetatable(AllTheThingsSettingsPerCharacter.RWPFilters, RWPFilterSettingsBase);
+	setmetatable(AllTheThingsSettingsPerCharacter.TransmogFilters, TransmogFilterSettingsBase);
 
 	if settings.RefreshActiveInformationTypes then
 		settings.RefreshActiveInformationTypes()
@@ -270,11 +271,11 @@ end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
-settings.GetFilterForRWPBase = function(self, filterID)
-	return app.PresetRWPs.ALL[filterID];
+settings.GetFilterForTransmogBase = function(self, filterID)
+	return app.PresetTransmogs.ALL[filterID];
 end
-settings.GetFilterForRWP = function(self, filterID)
-	return AllTheThingsSettingsPerCharacter.RWPFilters[filterID];
+settings.GetFilterForTransmog = function(self, filterID)
+	return AllTheThingsSettingsPerCharacter.TransmogFilters[filterID];
 end
 settings.GetRawFilters = function(self)
 	return AllTheThingsSettingsPerCharacter.Filters;
@@ -295,6 +296,10 @@ settings.GetModeString = function(self)
 			end
 		end
 
+		if self:Get("Only:RWP") and self.Collectibles.Transmog then
+			mode = "RWP " .. mode;
+		end
+
 		if self:Get("Hide:PvP") then
 			mode = "PvE " .. mode;
 		end
@@ -305,7 +310,6 @@ settings.GetModeString = function(self)
 		local excludes = {
 			["DeathTracker"] = true,
 			["Thing:QuestsLocked"] = true,
-			["Thing:RWP"] = true,
 		};
 		if not (C_TransmogCollection and C_TransmogCollection.GetIllusions) then
 			excludes["Thing:Illusions"] = true;
@@ -320,11 +324,7 @@ settings.GetModeString = function(self)
 			end
 		end
 		if thingCount == 0 then
-			if self:Get("Thing:RWP") then
-				mode = "RWP Only " .. mode;
-			else
-				mode = "None of the Things " .. mode;
-			end
+			mode = "None of the Things " .. mode;
 		else
 			if thingCount == 1 then
 				mode = things[1] .. " Only " .. mode;
@@ -334,9 +334,6 @@ settings.GetModeString = function(self)
 				mode = "Insane " .. mode;
 			else
 				mode = "Normal " .. mode;
-			end
-			if self:Get("Thing:RWP") then
-				mode = mode .. " + RWP";
 			end
 		end
 	end
@@ -895,6 +892,7 @@ settings.UpdateMode = function(self, doRefresh)
 
 		-- Modules
 		app.Modules.PVPRanks.SetCollectible(true);
+		self.OnlyRWP = false;
 	else
 		app.MODE_DEBUG = nil;
 		filterSet.Visible(true)
@@ -967,6 +965,7 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			filterSet.Event()
 		end
+		self.OnlyRWP = self:Get("Only:RWP");
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 
@@ -1032,6 +1031,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.SkillLevel()
 	end
+	
 	app:UnregisterEvent("GOSSIP_SHOW");
 	app:UnregisterEvent("TAXIMAP_OPENED");
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then

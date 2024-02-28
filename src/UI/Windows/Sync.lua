@@ -295,17 +295,6 @@ local function ProcessAddonMessageMethod(self, method, sender, text)
 end
 
 -- Account Wide Data handlers
-local AccountWideDataHandlers = {
-	Deaths = function(data)
-		local deaths = 0;
-		for guid,character in pairs(CharacterData) do
-			if character.Deaths then
-				deaths = deaths + character.Deaths;
-			end
-		end
-		AccountWideData.Deaths = deaths;
-	end,
-};
 local function DefaultAccountWideDataHandler(data, key)
 	if type(data) == "table" then
 		wipe(data);
@@ -319,6 +308,24 @@ local function DefaultAccountWideDataHandler(data, key)
 		end
 	end
 end
+local AccountWideDataHandlers = setmetatable({
+	Deaths = function(data)
+		local deaths = 0;
+		for guid,character in pairs(CharacterData) do
+			if character.Deaths then
+				deaths = deaths + character.Deaths;
+			end
+		end
+		AccountWideData.Deaths = deaths;
+	end,
+	IGNORE_QUEST_PRINT = function(data)
+		-- Do nothing.
+	end
+}, {
+	__index = function(t, key)
+		return DefaultAccountWideDataHandler;
+	end,
+});
 if C_MountJournal then
 	local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 	local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
@@ -359,7 +366,7 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 end
 local function RecalculateAccountWideData()
 	for key,data in pairs(AccountWideData) do
-		(AccountWideDataHandlers[key] or DefaultAccountWideDataHandler)(data, key);
+		AccountWideDataHandlers[key](data, key);
 	end
 end
 
@@ -859,7 +866,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 		end
 		
 		local total = 0;
-		for i,field in ipairs({ "Achievements", "BattlePets", "Exploration", "Factions", "FlightPaths", "RWP", "Spells", "Titles", "Toys", "Quests" }) do
+		for i,field in ipairs({ "Achievements", "BattlePets", "Exploration", "Factions", "FlightPaths", "Spells", "Titles", "Toys", "Transmog", "Quests" }) do
 			local values = character[field];
 			if values then
 				local subtotal = 0;

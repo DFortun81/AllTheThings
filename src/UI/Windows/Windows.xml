@@ -20,6 +20,7 @@
 	<Script file="Maps.lua"/>
 	<Script file="Mini List.lua"/>
 	<Script file="Missing Quests.lua"/>
+	<Script file="Missing Source IDs.lua"/>
 	<Script file="Mounts.lua"/>
 	<Script file="Never Implemented.lua"/>
 	<Script file="Objects.lua"/>

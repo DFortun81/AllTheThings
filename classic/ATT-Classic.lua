@@ -4085,9 +4085,6 @@ local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
 		return link;
 	end
 end });
-local BlacklistedRWPItems = {
-	[22736] = true,	-- Andonisus, Reaper of Souls
-};
 local baseGetItemCount = function(t)
 	return GetItemCount(t.itemID, true);
 end;
@@ -4176,39 +4173,58 @@ local collectibleAsQuest = function(t)
 		end
 	end
 end
-local isCollectibleRWP = function(t)
-	return t.f and (t.rwp or (t.u and (t.u == 2 or t.u == 3 or t.u == 4))) and not BlacklistedRWPItems[t.itemID] and app.Settings:GetFilterForRWPBase(t.f);
+local isCollectibleTransmog = function(t)
+	if t.f and app.Settings:GetFilterForTransmogBase(t.f) then
+		if t.sourceID then
+			return true;
+		end
+		local itemID = t.itemID;
+		if itemID and t.collectible ~= false then
+			--if t.rwp or (t.u and (t.u == 2 or t.u == 3 or t.u == 4)) then
+			--	print("Missing SourceID for RWP", itemID);
+			--end
+			t.missingSourceID = true;
+		end
+	end
 end
-local collectedAsRWP = function(t)
-	if app.Settings.Collectibles.RWP then
+local collectedAsTransmog = function(t)
+	local sourceID = t.sourceID;
+	if sourceID and app.Settings.Collectibles.Transmog then
 		-- If it's a BOE we can collect it on this character.
 		local id, b = t.itemID, t.b;
 		if not b or b == 2 or b == 3 then
 			-- This item is BOE. You CAN collect this on this character! (but not from a quest)
-			return app.SetCollected(t, "RWP", id, GetItemCount(id, true) > 0);
-		elseif app.Settings:GetFilterForRWP(t.f) or (t.filterForRWP and app.Settings:GetFilterForRWP(t.filterForRWP)) then
+			return app.SetCollected(t, "Transmog", sourceID, GetItemCount(id, true) > 0);
+		elseif app.Settings:GetFilterForTransmog(t.f) or (t.filterForRWP and app.Settings:GetFilterForTransmog(t.filterForRWP)) then
 			-- This character matches requirements
 			if GetItemCount(id, true) > 0 then
 				-- You kept this item. Nice!
-				return app.SetCollected(t, "RWP", id, true);
+				return app.SetCollected(t, "Transmog", sourceID, true);
 			else
 				-- Check to see if this item was a quest reward.
 				local searchResults = SearchForField("itemID", id);
 				if #searchResults > 0 then
 					for i,o in ipairs(searchResults) do
 						if ((o.key == "questID" and o.saved) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultCharacterRequirementsFilter(o) then
-							return app.SetCollected(t, "RWP", id, true);
+							return app.SetCollected(t, "Transmog", sourceID, true);
 						end
 					end
-					return app.SetCollected(t, "RWP", id, false);
+					return app.SetCollected(t, "Transmog", sourceID, false);
 				end
 			end
 		else
 			-- This character does NOT match requirements and the item is BOP. You can't collect these on this character. :(
-			return app.SetCollected(t, "RWP", id, false);
+			return app.SetCollected(t, "Transmog", sourceID, false);
 		end
 	end
 end;
+local isCollectibleTransmogField = function(t)
+	if t.collectibleAsCost then return true; end
+	if app.Settings.Collectibles.Transmog then
+		if app.Settings.OnlyRWP and not t.rwp then return false; end
+		return true;
+	end
+end
 local itemFields = {
 	["text"] = function(t)
 		return t.link;
@@ -4249,17 +4265,15 @@ local itemFields = {
 	["collectedAsCost"] = collectedAsCostForItem,
 };
 app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
-"AsRWP", {
-	collectible = function(t)
-		return t.collectibleAsCost or app.Settings.Collectibles.RWP;
-	end,
+"AsTransmog", {
+	collectible = isCollectibleTransmogField,
 	collected = function(t)
 		if t.collectedAsCost == false then
 			return;
 		end
-		return collectedAsRWP(t);
+		return collectedAsTransmog(t);
 	end,
-}, isCollectibleRWP,
+}, isCollectibleTransmog,
 "WithQuest", {
 	collectible = function(t)
 		return t.collectibleAsCost or collectibleAsQuest(t);
@@ -4512,20 +4526,20 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 	end
 
 	local CreateHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", heirloomFields,
-	"AsRWP", {
+	"AsTransmog", {
 		collectible = function(t)
-			return t.collectibleAsCost or app.Settings.Collectibles.RWP;
+			return t.collectibleAsCost or app.Settings.Collectibles.Transmog;
 		end,
 		collected = function(t)
 			if t.collectedAsCost == false then
 				return;
 			end
-			return collectedAsRWP(t);
+			return collectedAsTransmog(t);
 		end,
 		description = function()
-			return "This item also has an RWP sourceID with it, keep at least one somewhere on your account. I'm not sure if Blizzard is planning on deprecating this completely before transmog comes out or not!\n\n  - Crieve";
+			return "This item also has a sourceID with it, keep at least one somewhere on your account. I'm not sure if Blizzard is planning on deprecating this completely before transmog comes out or not!\n\n  - Crieve";
 		end,
-	}, isCollectibleRWP,
+	}, isCollectibleTransmog,
 	"WithFaction", {
 		collectible = function(t)
 			return t.collectibleAsCost or app.Settings.Collectibles.Reputations;
@@ -5739,10 +5753,10 @@ local ADDON_LOADED_HANDLERS = {
 		if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
 		if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 		if not currentCharacter.Quests then currentCharacter.Quests = {}; end
-		if not currentCharacter.RWP then currentCharacter.RWP = {}; end
 		if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 		if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
 		if not currentCharacter.Titles then currentCharacter.Titles = {}; end
+		if not currentCharacter.Transmog then currentCharacter.Transmog = {}; end
 
 		-- Update timestamps.
 		local now = time();
@@ -5775,9 +5789,9 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Factions then accountWideData.Factions = {}; end
 		if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
 		if not accountWideData.Quests then accountWideData.Quests = {}; end
-		if not accountWideData.RWP then accountWideData.RWP = {}; end
 		if not accountWideData.Spells then accountWideData.Spells = {}; end
 		if not accountWideData.Titles then accountWideData.Titles = {}; end
+		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;
@@ -5929,6 +5943,34 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Wipe the Debugger Data
 		AllTheThingsDebugData = nil;
+		
+		-- If we have RWP data on this character, let's update that to use Transmog.
+		for guid,character in pairs(characterData) do
+			local characterRWP = character.RWP;
+			if characterRWP then
+				local accountWideTransmog = accountWideData.Transmog;
+				local currentCharacterTransmog = character.Transmog;
+				if not currentCharacterTransmog then
+					currentCharacterTransmog = {};
+					character.Transmog = currentCharacterTransmog;
+				end
+				for itemID,collected in pairs(characterRWP) do
+					for _,item in ipairs(SearchForField("itemID", itemID)) do
+						if item.sourceID then
+							currentCharacterTransmog[item.sourceID] = collected;
+							accountWideTransmog[item.sourceID] = 1;
+							characterRWP[itemID] = nil;
+						end
+					end
+				end
+				local any = false;
+				for itemID,collected in pairs(characterRWP) do
+					any = true;
+					break;
+				end
+				if not any then character.RWP = nil; end
+			end
+		end
 		
 		-- Refresh Collections
 		app.RefreshCollections();
