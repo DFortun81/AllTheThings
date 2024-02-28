@@ -3,7 +3,7 @@ if GetLocale() ~= "ruRU" then return; end
 local app = select(2, ...);
 local L = app.L;
 
-DRAKE_MANUSCRIPTS = "Манускрипты наблюдений за драконами";
+local DRAKE_MANUSCRIPTS = "Манускрипты наблюдений за драконами";
 local TRACK_ACC_WIDE = app.ccColors.Account.."Отслеживать на весь аккаунт|R";
 
 -- General Text

@@ -3,7 +3,7 @@ if GetLocale() ~= "esES" and GetLocale() ~= "esMX" then return; end
 local app = select(2, ...);
 local L = app.L;
 
-DRAKE_MANUSCRIPTS = "Manuscrito de dracovigía";	--TODO: plural
+local DRAKE_MANUSCRIPTS = "Manuscrito de dracovigía";	--TODO: plural
 local TRACK_ACC_WIDE = app.ccColors.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";	--TODO
 
 -- General Text

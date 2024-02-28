@@ -13,7 +13,7 @@ local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.f
 -- Globals
 CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
 CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
-DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
+local DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
 local TRACK_ACC_WIDE = app.ccColors.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
 
 for key, value in pairs({

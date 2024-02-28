@@ -5,7 +5,7 @@ local L = app.L;
 
 CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "职业试玩";
 CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
-DRAKE_MANUSCRIPTS = "观龙者手稿";
+local DRAKE_MANUSCRIPTS = "观龙者手稿";
 local TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
 
 -- General Text
