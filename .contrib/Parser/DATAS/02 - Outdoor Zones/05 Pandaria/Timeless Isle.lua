@@ -1682,6 +1682,7 @@ root(ROOTS.Zones, {
 					n(72193,  {	-- Karkanos
 						["questID"] = 33292,
 						["isDaily"] = true,
+						["provider"] = { "n", 72151 },	-- Lin Longpaw
 						["coord"] = { 33.8, 85.8, TIMELESS_ISLE },
 						["g"] = {
 							i(104035),	-- Giant Purse of Timeless Coins
