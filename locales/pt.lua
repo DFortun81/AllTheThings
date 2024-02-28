@@ -284,11 +284,7 @@ local DRAKE_MANUSCRIPTS = "Manuscrito de Vigia-dracos";	--TODO: plural
 		--TODO: L.PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 		--TODO: L.MINIMAP_SLIDER = "Minimap Button Size";
 		--TODO: L.MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
-		L.ACCOUNT_THINGS_LABEL = ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." Things";	--TODO
-		--TODO: L.GENERAL_THINGS_LABEL = "General Things";
-		--TODO: L.EXPANSION_THINGS_LABEL = "Expansion Things";
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
-		--TODO: L.STRANGER_THINGS_LABEL = "Stranger Things";
 		--TODO: L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
 		L.TMOG_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";	--TODO
 		--TODO: L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
@@ -703,6 +699,10 @@ for key,value in pairs({
 		-- Collectible Things
 		--TODO: ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Nome da Conta|R by default.";
 		--TODO: TRACK_ACC_WIDE = app.ccColors.Account .. "Track Nome da Conta|R";
+		--TODO: ACCOUNT_THINGS_LABEL = "Account-Wide Things";
+		--TODO: GENERAL_THINGS_LABEL = "General Things";
+		--TODO: STRANGER_THINGS_LABEL = "Stranger Things";
+		--TODO: EXPANSION_THINGS_LABEL = "Expansion Things";
 
 	-- General: Filters Page
 		--TODO: ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";

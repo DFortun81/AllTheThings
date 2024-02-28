@@ -284,11 +284,7 @@ local DRAKE_MANUSCRIPTS = "Манускрипты наблюдений за др
 		L.PRECISION_SLIDER_TOOLTIP = 'Используйте для установления желаемой точности для процентных рассчётов.\n\nПо умолчанию: 2';
 		L.MINIMAP_SLIDER = "Размер Кнопки Миникарты";
 		L.MINIMAP_SLIDER_TOOLTIP = 'Используйте для установления желаемого размера Кнопки Миникарты.\n\nПо умолчанию: 36';
-		L.ACCOUNT_THINGS_LABEL = "Штучки для всего аккаунта";
-		L.GENERAL_THINGS_LABEL = "Общие Штучки";
-		L.EXPANSION_THINGS_LABEL = "Штучки Дополнений";
 		L.EXTRA_THINGS_LABEL = "Дополнительные Штучки";
-		L.STRANGER_THINGS_LABEL = "Очень Странные Штучки";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Включите для отслеживания достижений.";
 		L.TMOG_CHECKBOX_TOOLTIP = "Включите для отслеживания получения обликов.\n\nПримечание: Отключение данной опции также отключит все фанфары и рассчёты о получении. Вы можете отключить для избежания лагов во время занятия важным групповым контентом, но держите в уме, что рассчёты будут произведены при обратном включении.";
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Включите для отслеживания Азеритовых Сущностей.\n\nПо умолчанию отслеживается на каждом персонаже отдельно.";
@@ -745,6 +741,10 @@ for key,value in pairs({
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."Весь Аккаунт|R по умолчанию.";
 		TRACK_ACC_WIDE = app.ccColors.Account.."Отслеживать на весь аккаунт|R";
+		ACCOUNT_THINGS_LABEL = "Штучки для всего аккаунта";
+		GENERAL_THINGS_LABEL = "Общие Штучки";
+		STRANGER_THINGS_LABEL = "Очень Странные Штучки";
+		EXPANSION_THINGS_LABEL = "Штучки Дополнений";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";

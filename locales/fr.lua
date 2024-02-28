@@ -283,11 +283,7 @@ local DRAKE_MANUSCRIPTS = "Manuscrit guette-drake";	--TODO: plural
 		L.PRECISION_SLIDER_TOOLTIP = "Utilisez cette option pour personnaliser le niveau de précision souhaité dans les calculs de pourcentage.\n\nDéfaut : 2";
 		L.MINIMAP_SLIDER = "Taille du bouton de la mini-carte";
 		L.MINIMAP_SLIDER_TOOLTIP = "Utilisez cette option pour personnaliser la taille du bouton de la mini-carte.\n\nDéfaut: 36";
-		L.ACCOUNT_THINGS_LABEL = ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." Things";	--TODO
-		--TODO: L.GENERAL_THINGS_LABEL = "General Things";
-		--TODO: L.EXPANSION_THINGS_LABEL = "Expansion Things";
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
-		--TODO: L.STRANGER_THINGS_LABEL = "Stranger Things";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Activer cette option pour suivre les hauts faits.";
 		L.TMOG_CHECKBOX_TOOLTIP = "Activer cette option pour suivre l’obtention des apparences.\n\nREMARQUE : désactiver cette option désactive également toutes les fanfares et la logique d’acquisition. Vous pouvez utiliser cette option pour éviter les pics de retard lors de la création de contenu de groupe important, mais n’oubliez pas que le calcul devra être effectué une fois l’option réactivée.";
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Activer cette option pour suivre les essences d’Azérite.\n\nPar défaut, suivi actif sur le personnage.";
@@ -746,6 +742,10 @@ for key,value in pairs({
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensemble du compte|R.";
 		--TODO: TRACK_ACC_WIDE = app.ccColors.Account .. "Track l’ensemble du compte|R";
+		--TODO: ACCOUNT_THINGS_LABEL = "Account-Wide Things";
+		--TODO: GENERAL_THINGS_LABEL = "General Things";
+		--TODO: STRANGER_THINGS_LABEL = "Stranger Things";
+		--TODO: EXPANSION_THINGS_LABEL = "Expansion Things";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";

@@ -284,11 +284,7 @@ local DRAKE_MANUSCRIPTS = "Drachenwächtermanuskript";	--TODO: plural
 		--TODO: L.PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 		L.MINIMAP_SLIDER = "Minimap Knopf Größe";
 		L.MINIMAP_SLIDER_TOOLTIP = 'Nutze dies um die Größe des Minmimap Knopfes zu verändern.\n\nDefault: 36';
-		L.ACCOUNT_THINGS_LABEL = "Accountweite Dinge";
-		L.GENERAL_THINGS_LABEL = "Allgemeine Dinge";
-		L.EXPANSION_THINGS_LABEL = "Erweiterungs Dinge";
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
-		--TODO: L.STRANGER_THINGS_LABEL = "Stranger Things";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um Erfolge zu verfolgen.";
 		L.TMOG_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";	--TODO
 		--TODO: L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
@@ -719,6 +715,10 @@ for key,value in pairs({
 		-- Collectible Things
 		--TODO: ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Accountübergreifend|R by default.";
 		--TODO: TRACK_ACC_WIDE = app.ccColors.Account .. "Track Accountübergreifend|R";
+		ACCOUNT_THINGS_LABEL = "Accountweite Dinge";
+		GENERAL_THINGS_LABEL = "Allgemeine Dinge";
+		STRANGER_THINGS_LABEL = "Fremde Dinge";
+		EXPANSION_THINGS_LABEL = "Erweiterungs Dinge";
 
 	-- General: Filters Page
 		--TODO: ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";

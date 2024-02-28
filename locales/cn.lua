@@ -288,11 +288,7 @@ local DRAKE_MANUSCRIPTS = "观龙者手稿";
 		L.PRECISION_SLIDER_TOOLTIP = '使用此选项可自定义百分比计算中所需的精度级别。\n\n默认：2';
 		L.MINIMAP_SLIDER = "小地图按钮尺寸";
 		L.MINIMAP_SLIDER_TOOLTIP = '使用此选项可自定义小地图按钮的大小。\n\n默认：36';
-		L.ACCOUNT_THINGS_LABEL = "帐号通用事物";
-		L.GENERAL_THINGS_LABEL = "通用事物";
-		L.EXPANSION_THINGS_LABEL = "资料片事物";
 		L.EXTRA_THINGS_LABEL = "其他资源";
-		L.STRANGER_THINGS_LABEL = "陌生事物";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
 		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。";
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华。\n\n默认情况下每个角色都会被追踪。";
@@ -777,6 +773,10 @@ for key,value in pairs({
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. "账号通用|R 默认。";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 账号通用|R";
+		ACCOUNT_THINGS_LABEL = "帐号通用事物";
+		GENERAL_THINGS_LABEL = "通用事物";
+		STRANGER_THINGS_LABEL = "陌生事物";
+		EXPANSION_THINGS_LABEL = "资料片事物";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 "..app.ccColors.Account.."帐号模式|cffFFFFFF。|r";

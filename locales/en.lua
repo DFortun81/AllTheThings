@@ -373,11 +373,7 @@ for key, value in pairs({
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
 	["MINIMAP_SLIDER_TOOLTIP"] = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
-	["ACCOUNT_THINGS_LABEL"] = ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." Things";
-	["GENERAL_THINGS_LABEL"] = "General Things";
-	["EXPANSION_THINGS_LABEL"] = "Expansion Things";
 	["EXTRA_THINGS_LABEL"] = "Additional Resources";
-	["STRANGER_THINGS_LABEL"] = "Stranger Things";
 	["ACHIEVEMENTS_CHECKBOX"] = app.ccColors.Insane .. ACHIEVEMENTS;
 	["ACHIEVEMENTS_CHECKBOX_TOOLTIP"] = "Enable this option to track achievements.";
 	["TMOG_CHECKBOX"] = app.ccColors.Insane .. "Appearances";
