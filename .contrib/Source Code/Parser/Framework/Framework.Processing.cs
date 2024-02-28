@@ -41,8 +41,7 @@ namespace ATT
 
             // Merge the Item Data into the Containers.
             CurrentParseStage = ParseStage.Validation;
-            // ignore cleaning during validation pass so we can report contrib data errors
-            Validator.OnlyClean = false;
+            Validator.OnlyClean = (bool)Config["Validation"]["clean"];
             ProcessingFunction = DataValidation;
             foreach (var container in Objects.AllContainers)
             {
