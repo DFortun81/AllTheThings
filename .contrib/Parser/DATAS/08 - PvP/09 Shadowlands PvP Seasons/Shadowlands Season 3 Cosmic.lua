@@ -365,7 +365,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(188941),	-- Pauldrons of the Infinite Infantry
 							i(188943),	-- Vambraces of the Infinite Infantry
 						}),
-					}),				
+					}),
 				}),
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
@@ -519,8 +519,8 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							}),
 							-- #endif
 							-- #if AFTER 10.0.2
-							i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor						
-							-- #endif	
+							i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
+							-- #endif
 								i(186842),	-- Cosmic Gladiator's Plate Gauntlets
 								i(186850),	-- Cosmic Gladiator's Plate Girdle
 								i(186845),	-- Cosmic Gladiator's Plate Helmet

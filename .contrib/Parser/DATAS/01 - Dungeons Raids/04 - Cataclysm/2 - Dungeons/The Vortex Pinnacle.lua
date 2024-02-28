@@ -100,7 +100,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(55835),	-- Hail-Strung Belt
 						i(55838),	-- Mantle of Bestilled Winds
 						i(55839),	-- Skyshard Ring
-					}, 
+					},
 				}),
 				e(116, {	-- Asaad, Caliph of Zephyrs
 					["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
@@ -185,7 +185,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 							i(56358),	-- Headcover of Fog
 							i(157602, {	-- Ionized Choker
 								["timeline"] = { ADDED_7_3_5 },
-							}),				
+							}),
 							i(56360),	-- Red Sky Pendant
 							i(56356),	-- Stratosphere Belt
 							i(157603, {	-- Thundercleaver Axe
