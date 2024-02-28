@@ -88,24 +88,22 @@ headerMode.OnRefresh = function(self)
 	self:SetText(settings:GetModeString())
 end
 
-local textModeExplain = child:CreateTextLabel(L["MODE_EXPLAIN_LABEL"])
+local textModeExplain = child:CreateTextLabel(L.MODE_EXPLAIN_LABEL)
 textModeExplain:SetPoint("TOPLEFT", headerMode, "BOTTOMLEFT", 0, -4)
 textModeExplain:SetPoint("RIGHT", child, "RIGHT", 0)
 
-
-
 -- Column 1
-local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
+local checkboxDebugMode = child:CreateCheckBox(L.DEBUG_MODE,
 function(self)
 	self:SetChecked(app.MODE_DEBUG)
 end,
 function(self)
 	settings:SetDebugMode(self:GetChecked())
 end)
-checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
+checkboxDebugMode:SetATTTooltip(L.DEBUG_MODE_TOOLTIP)
 checkboxDebugMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", 0, -2)
 
-local checkboxAccountMode = child:CreateCheckBox(L["ACCOUNT_MODE"],
+local checkboxAccountMode = child:CreateCheckBox(L.ACCOUNT_MODE,
 function(self)
 	self:SetChecked(app.MODE_ACCOUNT)
 	if app.MODE_DEBUG then
@@ -119,10 +117,10 @@ end,
 function(self)
 	settings:SetAccountMode(self:GetChecked())
 end)
-checkboxAccountMode:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"])
+checkboxAccountMode:SetATTTooltip(L.ACCOUNT_MODE_TOOLTIP)
 checkboxAccountMode:AlignBelow(checkboxDebugMode)
 
-local checkboxFactionMode = child:CreateCheckBox(L["FACTION_MODE"],
+local checkboxFactionMode = child:CreateCheckBox(L.FACTION_MODE,
 function(self)
 	local englishFaction = UnitFactionGroup("player")
 	if englishFaction == "Alliance" then
@@ -144,7 +142,7 @@ end,
 function(self)
 	settings:SetFactionMode(self:GetChecked())
 end)
-checkboxFactionMode:SetATTTooltip(L["FACTION_MODE_TOOLTIP"])
+checkboxFactionMode:SetATTTooltip(L.FACTION_MODE_TOOLTIP)
 checkboxFactionMode:AlignAfter(checkboxAccountMode)
 
 local checkboxLootMode = child:CreateCheckBox(L.LOOT_MODE,
@@ -199,7 +197,7 @@ end)
 checkboxTransmog:SetATTTooltip(L["TMOG_CHECKBOX_TOOLTIP"])
 checkboxTransmog:AlignAfter(accwideCheckboxTransmog)
 
-local checkboxSources = child:CreateCheckBox(L["COMPLETIONIST_MODE"],
+local checkboxSources = child:CreateCheckBox(L.COMPLETIONIST_MODE,
 function(self)
 	self:SetChecked(settings:Get("Completionist"))
 	if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
@@ -213,10 +211,10 @@ end,
 function(self)
 	settings:SetCompletionistMode(self:GetChecked())
 end)
-checkboxSources:SetATTTooltip(L["COMPLETIONIST_MODE_TOOLTIP"])
+checkboxSources:SetATTTooltip(L.COMPLETIONIST_MODE_TOOLTIP)
 checkboxSources:AlignAfter(checkboxTransmog)
 
-local checkboxMainOnlyMode = child:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
+local checkboxMainOnlyMode = child:CreateCheckBox(L.MAIN_ONLY,
 function(self)
 	local _, classFilename = UnitClass("player")
 	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
@@ -235,7 +233,7 @@ end,
 function(self)
 	settings:SetMainOnlyMode(self:GetChecked())
 end)
-checkboxMainOnlyMode:SetATTTooltip(L["MAIN_ONLY_MODE_TOOLTIP"])
+checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
 checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
 
 local accwideCheckboxHeirlooms =
@@ -340,18 +338,7 @@ child:CreateTrackingCheckbox("TITLES", "Titles")
 	:AlignAfter(accwideCheckboxTitles)
 
 -- Column 2
-local checkboxSkipAutoRefresh = child:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
-function(self)
-	self:SetChecked(settings:Get("Skip:AutoRefresh"))
-end,
-function(self)
-	settings:Set("Skip:AutoRefresh", self:GetChecked())
-end)
-checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
-checkboxSkipAutoRefresh:SetPoint("TOP", checkboxDebugMode, "TOP", 0, 0)
-checkboxSkipAutoRefresh:SetPoint("LEFT", textModeExplain, "LEFT", 320, 0)
-
-local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
+local checkboxShowAllTrackableThings = child:CreateCheckBox(L.SHOW_INCOMPLETE_THINGS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:Get("Show:TrackableThings"))
 	if app.MODE_DEBUG then
@@ -366,10 +353,32 @@ function(self)
 	settings:Set("Show:TrackableThings", self:GetChecked())
 	settings:UpdateMode(1)
 end)
-checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
-checkboxShowAllTrackableThings:AlignBelow(checkboxSkipAutoRefresh)
+checkboxShowAllTrackableThings:SetATTTooltip(L.SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP)
+checkboxShowAllTrackableThings:SetPoint("TOP", checkboxDebugMode, "TOP", 0, 0)
+checkboxShowAllTrackableThings:SetPoint("LEFT", textModeExplain, "LEFT", 320, 0)
 
-local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
+-- Personal Loot was introduced with Mists of Pandaria
+if app.GameBuildVersion >= 50000 then
+	local checkboxShowUnavailablePersonalLoot = child:CreateCheckBox(L.SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX,
+		function(self)
+			self:SetChecked(settings:Get("Show:UnavailablePersonalLoot"))
+			if app.MODE_DEBUG then
+				self:Disable()
+				self:SetAlpha(0.4)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
+		end,
+		function(self)
+			settings:Set("Show:UnavailablePersonalLoot", self:GetChecked())
+			settings:UpdateMode(1)
+		end)
+	checkboxShowUnavailablePersonalLoot:SetATTTooltip(L.SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP)
+	checkboxShowUnavailablePersonalLoot:AlignBelow(checkboxShowAllTrackableThings)
+end
+
+local headerGeneralContent = child:CreateHeaderLabel(L.GENERAL_CONTENT)
 headerGeneralContent:SetPoint("TOP", headerAccountThings, "TOP", 0, 0)
 headerGeneralContent:SetPoint("LEFT", checkboxShowAllTrackableThings, "LEFT", 0, 0)
 headerGeneralContent.OnRefresh = function(self)
@@ -380,7 +389,7 @@ headerGeneralContent.OnRefresh = function(self)
 	end
 end
 
-local checkboxShowUnboundItems = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
+local checkboxShowUnboundItems = child:CreateCheckBox(L.SHOW_BOE_CHECKBOX,
 function(self)
 	self:SetChecked(not settings:Get("Hide:BoEs"))	-- Inversed, so enabled = show
 	if app.MODE_DEBUG then
@@ -394,10 +403,10 @@ end,
 function(self)
 	settings:SetHideBOEItems(not self:GetChecked())	-- Inversed, so enabled = show
 end)
-checkboxShowUnboundItems:SetATTTooltip(L["SHOW_BOE_CHECKBOX_TOOLTIP"])
+checkboxShowUnboundItems:SetATTTooltip(L.SHOW_BOE_CHECKBOX_TOOLTIP)
 checkboxShowUnboundItems:SetPoint("TOPLEFT", headerGeneralContent, "BOTTOMLEFT", -2, 0)
 
-local checkboxIgnoreUnboundFilters = child:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
+local checkboxIgnoreUnboundFilters = child:CreateCheckBox(L.IGNORE_FILTERS_FOR_BOES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:Get("Filter:BoEs"))
 	if settings:Get("Hide:BoEs") or app.MODE_ACCOUNT or app.MODE_DEBUG then
@@ -412,10 +421,10 @@ function(self)
 	settings:Set("Filter:BoEs", self:GetChecked())
 	settings:UpdateMode(1)
 end)
-checkboxIgnoreUnboundFilters:SetATTTooltip(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"])
+checkboxIgnoreUnboundFilters:SetATTTooltip(L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP)
 checkboxIgnoreUnboundFilters:AlignBelow(checkboxShowUnboundItems, 1)
 
-local checkboxNoLevelFilter = child:CreateCheckBox(L["FILTER_THINGS_BY_LEVEL_CHECKBOX"],
+local checkboxNoLevelFilter = child:CreateCheckBox(L.FILTER_THINGS_BY_LEVEL_CHECKBOX,
 function(self)
 	self:SetChecked(not settings:Get("Filter:ByLevel"))	-- Inversed, so enabled = show
 	if app.MODE_DEBUG then
@@ -430,7 +439,7 @@ function(self)
 	settings:Set("Filter:ByLevel", not self:GetChecked())	-- Inversed, so enabled = show
 	settings:UpdateMode(1)
 end)
-checkboxNoLevelFilter:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"])
+checkboxNoLevelFilter:SetATTTooltip(L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP)
 checkboxNoLevelFilter:AlignBelow(checkboxIgnoreUnboundFilters, -1)
 app.AddEventHandler("OnPlayerLevelUp", function()
 	if settings:Get("Filter:ByLevel") then
@@ -438,7 +447,7 @@ app.AddEventHandler("OnPlayerLevelUp", function()
 	end
 end);
 
-local checkboxNoSeasonalFilter = child:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
+local checkboxNoSeasonalFilter = child:CreateCheckBox(L.SHOW_ALL_SEASONAL,
 	function(self)
 		self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
 		if app.MODE_DEBUG then
@@ -454,10 +463,10 @@ local checkboxNoSeasonalFilter = child:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
 		settings:UpdateMode(1)
 	end
 )
-checkboxNoSeasonalFilter:SetATTTooltip(L["SHOW_ALL_SEASONAL_TOOLTIP"])
+checkboxNoSeasonalFilter:SetATTTooltip(L.SHOW_ALL_SEASONAL_TOOLTIP)
 checkboxNoSeasonalFilter:AlignBelow(checkboxNoLevelFilter)
 
-local checkboxShowPetBattles = child:CreateCheckBox(L["SHOW_PET_BATTLES_CHECKBOX"],
+local checkboxShowPetBattles = child:CreateCheckBox(L.SHOW_PET_BATTLES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:Get("Show:PetBattles"))
 	if app.MODE_DEBUG then
@@ -472,10 +481,10 @@ function(self)
 	settings:Set("Show:PetBattles", self:GetChecked())
 	settings:UpdateMode(1)
 end)
-checkboxShowPetBattles:SetATTTooltip(L["SHOW_PET_BATTLES_CHECKBOX_TOOLTIP"])
+checkboxShowPetBattles:SetATTTooltip(L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP)
 checkboxShowPetBattles:AlignBelow(checkboxNoSeasonalFilter)
 
-local checkboxShowPvP = child:CreateCheckBox(L["SHOW_PVP_CHECKBOX"],
+local checkboxShowPvP = child:CreateCheckBox(L.SHOW_PVP_CHECKBOX,
 function(self)
 	self:SetChecked(not settings:Get("Hide:PvP"))	-- Inversed, so enabled = show
 	if app.MODE_DEBUG then
@@ -490,26 +499,8 @@ function(self)
 	settings:Set("Hide:PvP", not self:GetChecked())	-- Inversed, so enabled = show
 	settings:UpdateMode(1)
 end)
-checkboxShowPvP:SetATTTooltip(L["SHOW_PVP_CHECKBOX_TOOLTIP"])
+checkboxShowPvP:SetATTTooltip(L.SHOW_PVP_CHECKBOX_TOOLTIP)
 checkboxShowPvP:AlignBelow(checkboxShowPetBattles)
-
-local checkboxShowUnavailablePersonalLoot = child:CreateCheckBox(L["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX"],
-	function(self)
-		self:SetChecked(settings:Get("Show:UnavailablePersonalLoot"))
-		if app.MODE_DEBUG then
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:Enable()
-			self:SetAlpha(1)
-		end
-	end,
-	function(self)
-		settings:Set("Show:UnavailablePersonalLoot", self:GetChecked())
-		settings:UpdateMode(1)
-	end)
-checkboxShowUnavailablePersonalLoot:SetATTTooltip(L["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP"])
-checkboxShowUnavailablePersonalLoot:AlignBelow(checkboxShowPvP)
 
 -- Expansion Things
 if app.GameBuildVersion >= 60000 then

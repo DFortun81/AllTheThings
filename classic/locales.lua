@@ -68,7 +68,6 @@ for key,value in pairs({
 	["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Search the Auction House|r";
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
-	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Click to Update Progress]";
 	["UPDATES_PAUSED"] = "Updates Paused";
 	["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache.";
@@ -79,9 +78,6 @@ for key,value in pairs({
 	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
 	["ITEM_GIVES_REP"] = "Provides Reputation with '";
-
-	-- Binding Localizations
-	["TOGGLE_LOOTDROPS"] = "Toggle Loot/Drops/Items";
 
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
@@ -223,7 +219,6 @@ for key,value in pairs({
 	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "Known on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
 	["SHOW_ALL_SEASONAL"] = "All Seasonal Events";
-	["SHOW_ALL_SEASONAL_TOOLTIP"] = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",

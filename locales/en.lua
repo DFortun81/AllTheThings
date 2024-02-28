@@ -349,8 +349,6 @@ for key, value in pairs({
 	["SOCIAL_PROGRESS"] = "Social Progress";
 
 	-- Settings.lua
-		["SKIP_AUTO_REFRESH"] = "Skip Settings-Toggle Data Refreshes!";
-		["SKIP_AUTO_REFRESH_TOOLTIP"] = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
 		["AFTER_REFRESH"] = "After Refresh";
 
 		-- General tab
@@ -372,16 +370,7 @@ for key, value in pairs({
 				["TITLE_SOLO"] = "Solo ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
-	["GENERAL_CONTENT"] = "General Content";
-
-	["MODE_EXPLAIN_LABEL"] = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-
-	["COMPLETIONIST_MODE"] = "+Sources";
-	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
-	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "Main Only";
-	["MAIN_ONLY_MODE_TOOLTIP"] = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-
-
+	
 	["PRECISION_SLIDER"] = "Precision Level";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
@@ -393,7 +382,7 @@ for key, value in pairs({
 	["STRANGER_THINGS_LABEL"] = "Stranger Things";
 	["ACHIEVEMENTS_CHECKBOX"] = app.ccColors.Insane .. ACHIEVEMENTS;
 	["ACHIEVEMENTS_CHECKBOX_TOOLTIP"] = "Enable this option to track achievements.";
-	["TMOG_CHECKBOX"] = app.ccColors.Insane .. WARDROBE;
+	["TMOG_CHECKBOX"] = app.ccColors.Insane .. "Appearances";
 	["TMOG_CHECKBOX_TOOLTIP"] = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\n"..ACC_WIDE_DEFAULT;
 	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t " .. app.ccColors.Insane .. SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE;
 	["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"] = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
@@ -433,8 +422,6 @@ for key, value in pairs({
 	["TITLES_CHECKBOX_TOOLTIP"] = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 	["TOYS_CHECKBOX"] = app.ccColors.Insane .. TOY_BOX;
 	["TOYS_CHECKBOX_TOOLTIP"] = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\n"..ACC_WIDE_DEFAULT;
-	["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX"] = "Show Unavailable Personal Loot";
-	["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP"] = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 	["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 	["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
@@ -443,20 +430,6 @@ for key, value in pairs({
 	["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
 	["SHOW_COLLECTED_THINGS_CHECKBOX"] = "Show Collected Things";
 	["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
-	["SHOW_INCOMPLETE_THINGS_CHECKBOX"] = "Show All Trackable Things";
-	["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.";
-	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = app.ccColors.Insane .. "No Level Restrictions";
-	["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.";
-	["SHOW_BOE_CHECKBOX"] = app.ccColors.Insane .. "BoE/BoA Items";
-	["SHOW_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-	["SHOW_PVP_CHECKBOX"] = "|T"..app.asset("Category_PvP")..":0|t " .. app.ccColors.Insane .. PVP_OPTIONS;
-	["SHOW_PVP_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
-	["SHOW_ALL_SEASONAL"] = app.ccColors.Insane .. "All Seasonal Events";
-	["SHOW_ALL_SEASONAL_TOOLTIP"] = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
-	["SHOW_PET_BATTLES_CHECKBOX"] = "|T"..app.asset("Category_PetBattles")..":0|t " .. app.ccColors.Insane .. SHOW_PET_BATTLES_ON_MAP_TEXT;
-	["SHOW_PET_BATTLES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show content which requires Pet Battles within the game.";
-	["IGNORE_FILTERS_FOR_BOES_CHECKBOX"] = "Ignore BoE/BoA Item Filters";
-	["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
 	["EXPAND_DIFFICULTY_CHECKBOX"] = "Expand Current Difficulty";
 	["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
 	["WARN_DIFFICULTY_CHECKBOX"] = "Warn Completed Difficulty";

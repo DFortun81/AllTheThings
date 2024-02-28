@@ -103,6 +103,7 @@ local GeneralSettingsBase = {
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = true,
 		["Only:RWP"] = app.GameBuildVersion < 40000,
+		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
 		["Show:OnlyActiveEvents"] = true,
@@ -753,7 +754,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	
 	-- Common Header
 	local logo = subcategory:CreateTexture(nil, "ARTWORK");
-	logo:SetPoint("TOPLEFT", subcategory, "TOPLEFT", 8, -8);
+	logo:SetPoint("TOPLEFT", subcategory, "TOPLEFT", 8, -2);
 	logo:SetTexture(app.asset("Discord_2_64"));
 	logo:SetSize(36, 36);
 	logo:Show();
@@ -763,16 +764,28 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	title:SetScale(1.5);
 
 	local version = subcategory:CreateHeaderLabel(app.Version);
-	version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -8, -8);
+	version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -8, 0);
 	version:SetJustifyH("RIGHT");
 
 	local separator = subcategory:CreateTexture(nil, "ARTWORK");
 	separator:SetPoint("LEFT", subcategory, "LEFT", 4, 0);
 	separator:SetPoint("RIGHT", subcategory, "RIGHT", -4, 0);
-	separator:SetPoint("TOP", logo, "BOTTOM", 0, 0);
+	separator:SetPoint("TOP", logo, "BOTTOM", 0, -2);
 	separator:SetColorTexture(1, 1, 1, 0.4);
 	separator:SetHeight(2);
 	subcategory.separator = separator;
+	
+	local checkboxSkipAutoRefresh = subcategory:CreateCheckBox(L.SKIP_AUTO_REFRESH,
+	function(self)
+		self:SetChecked(settings:Get("Skip:AutoRefresh"))
+	end,
+	function(self)
+		local skipRefresh = self:GetChecked();
+		settings:Set("Skip:AutoRefresh", skipRefresh)
+		if not skipRefresh then settings:UpdateMode("FORCE"); end
+	end)
+	checkboxSkipAutoRefresh:SetATTTooltip(L.SKIP_AUTO_REFRESH_TOOLTIP);
+	checkboxSkipAutoRefresh:SetPoint("BOTTOMRIGHT", separator, "TOPRIGHT", -(checkboxSkipAutoRefresh.Text:GetWidth() + checkboxSkipAutoRefresh:GetWidth()), 0)
 	return subcategory;
 end
 
@@ -1038,6 +1051,12 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RegisterEvent("GOSSIP_SHOW");
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
+	
+	-- FORCE = Force Update
+	-- 1 = Force Update IF NOT Skip
+	-- not = Soft Update
+	doRefresh = doRefresh == "FORCE" or
+		(doRefresh and not settings:Get("Skip:AutoRefresh"))
 	if doRefresh then
 		app._SettingsRefresh = GetTimePreciseSec()
 		app:RefreshDataCompletely("UpdateMode");

@@ -268,8 +268,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
 
 -- Settings.lua
-	L.SKIP_AUTO_REFRESH = "不自动刷新！";
-	L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."点击 ATT 窗口执行全部刷新。";
 	L.AFTER_REFRESH = "刷新后";
 
 	-- General tab
@@ -288,13 +286,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 			L.TITLE_SOLO = "个人 ";
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
-		L.GENERAL_CONTENT = "通用内容";
-
-		L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 "..app.ccColors.Insane.."彩色选项|cffFFFFFF 解锁 "..app.ccColors.Insane.."疯狂模式|cffFFFFFF。";	-- "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		L.COMPLETIONIST_MODE = "+来源";
-		L.COMPLETIONIST_MODE_TOOLTIP = "启用该模式，只有当特定物品已被解锁为给定外观时才将物品视为已收藏。\n\n这意味着你需要收藏物品的每一个共享外观。\n\n注意：默认情况下一旦你收藏了共享来源，游戏就会停止告诉你未收藏的物品，这将确保未收藏的物品会被追踪。";
-		L.I_ONLY_CARE_ABOUT_MY_MAIN = "仅主要";
-		L.MAIN_ONLY_MODE_TOOLTIP = "如果你还想让 ATT *假装*你赢得了所有未被其他种族或职业锁定的共享外观，请启用此设置。\n\n例如，如果你从冰冠堡垒收藏了一个仅限猎人使用的物品，并且在没有职业/种族限制的情况下，有一个来自副本的共享外观，那么 ATT 将*假装*你也获得了该外观来源。\n\n注意：以这种方式解锁时，切换到其他种族/职业将错误地报告你已经获得了尚未为新角色收藏的外观来源。";
 		L.PRECISION_SLIDER = "百分比精确度";
 		L.PRECISION_SLIDER_TOOLTIP = '使用此选项可自定义百分比计算中所需的精度级别。\n\n默认：2';
 		L.MINIMAP_SLIDER = "小地图按钮尺寸";
@@ -341,18 +332,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 		L.SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP = "如果想在标题中看到已完成的组和完成百分比，请启用此选项。如果一个组没有与你职业相关的内容，这个设置也会让这些组出现在列表中。\n\n我们建议你关闭此设置，因为它将节省小列表中的空间，并允许你快速查看区域中缺少的内容。";
 		L.SHOW_COLLECTED_THINGS_CHECKBOX = "显示已收藏事物";
 		L.SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "启用此选项可以看到已经收藏事物。\n\n建议关闭此设置因为它可以节省小列表中的空间并允许快速查看在该区域遗漏的内容。";
-		L.SHOW_INCOMPLETE_THINGS_CHECKBOX = "显示所有可追踪事物";
-		L.SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "如果想看到可以在游戏中追踪的物品、道具、NPC 等但不一定要被认为是'可收藏的'，请启用此选项。\n\n如果你还没有获得博学者成就可以用这个来帮助你获得它。\n\n注意：开启此设置后，稀有刷新和事件也会出现在列表中。";
-		L.FILTER_THINGS_BY_LEVEL_CHECKBOX = app.ccColors.Insane.."无等级限制";
-		L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物，请启用此设置。\n\n注意：这对新战网特别有用。";
-		L.SHOW_BOE_CHECKBOX = app.ccColors.Insane.."装备绑定/拾取绑定物品";
-		L.SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隐藏装备绑定/拾取绑定物品，请启用此设置。\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时，此设置非常有用。\n\n即：不要因为毁灭之锤而扰乱你的思绪。";
-		L.SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行 PvP 互动的内容，请启用此设置。";
-		L.SHOW_ALL_SEASONAL = app.ccColors.Insane .. "所有季节性事件";
-		L.SHOW_ALL_SEASONAL_TOOLTIP = "启用此设置可显示所有季节性事件，而不是仅显示当前活动的季节性事件。\n\n注意：季节性活动将提前7天自动显示为活动状态。";
-		L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "如果您想在游戏中显示需要宠物对战的内容，请启用此设置。";
-		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略装备绑定/拾取绑定的筛选";
-		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略装备绑定/拾取绑定物品的装备、武器、种族、等级或职业要求，请启用此设置。\n\n如果你正试图通过拍卖行扫描收藏你的物品，此模式可能对你有用。";
 		L.EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
 		L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在进入地下城或团队副本时自动最小化小列表中未激活的难度标题，请启用此选项。\n\n比如：在普通难度地下城中最小化英雄标题。";
 		L.WARN_DIFFICULTY_CHECKBOX = "警告已完成难度";
@@ -748,6 +727,10 @@ end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
+	-- Common Header
+		SKIP_AUTO_REFRESH = "不自动刷新！";
+		SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."点击 ATT 窗口执行全部刷新。";
+		
 	-- About Page
 		ABOUT_PAGE = "关于";
 		ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
@@ -770,6 +753,30 @@ for key,value in pairs({
 		FACTION_MODE_TOOLTIP = "如果你想只看到你当前阵营的种族和职业的战网模式数据，请开启此设置。";
 		--TODO: LOOT_MODE = "Loot Mode";
 		--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.";
+		MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 "..app.ccColors.Insane.."彩色选项|cffFFFFFF 解锁 "..app.ccColors.Insane.."疯狂模式|cffFFFFFF。";
+		COMPLETIONIST_MODE = "+来源";
+		COMPLETIONIST_MODE_TOOLTIP = "启用该模式，只有当特定物品已被解锁为给定外观时才将物品视为已收藏。\n\n这意味着你需要收藏物品的每一个共享外观。\n\n注意：默认情况下一旦你收藏了共享来源，游戏就会停止告诉你未收藏的物品，这将确保未收藏的物品会被追踪。";
+		MAIN_ONLY = "仅主要";
+		MAIN_ONLY_TOOLTIP = "如果你还想让 ATT *假装*你赢得了所有未被其他种族或职业锁定的共享外观，请启用此设置。\n\n例如，如果你从冰冠堡垒收藏了一个仅限猎人使用的物品，并且在没有职业/种族限制的情况下，有一个来自副本的共享外观，那么 ATT 将*假装*你也获得了该外观来源。\n\n注意：以这种方式解锁时，切换到其他种族/职业将错误地报告你已经获得了尚未为新角色收藏的外观来源。";
+		
+		-- General Content
+		GENERAL_CONTENT = "通用内容";
+		SHOW_INCOMPLETE_THINGS_CHECKBOX = "显示所有可追踪事物";
+		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "如果想看到可以在游戏中追踪的物品、道具、NPC 等但不一定要被认为是'可收藏的'，请启用此选项。\n\n如果你还没有获得博学者成就可以用这个来帮助你获得它。\n\n注意：开启此设置后，稀有刷新和事件也会出现在列表中。";
+		FILTER_THINGS_BY_LEVEL_CHECKBOX = app.ccColors.Insane.."无等级限制";
+		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物，请启用此设置。\n\n注意：这对新战网特别有用。";
+		SHOW_BOE_CHECKBOX = app.ccColors.Insane.."装备绑定/拾取绑定物品";
+		SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隐藏装备绑定/拾取绑定物品，请启用此设置。\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时，此设置非常有用。\n\n即：不要因为毁灭之锤而扰乱你的思绪。";
+		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略装备绑定/拾取绑定的筛选";
+		IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略装备绑定/拾取绑定物品的装备、武器、种族、等级或职业要求，请启用此设置。\n\n如果你正试图通过拍卖行扫描收藏你的物品，此模式可能对你有用。";
+		SHOW_ALL_SEASONAL = "|T"..app.asset("Category_Holidays")..":0|t " .. app.ccColors.Insane .. "所有季节性事件";
+		SHOW_ALL_SEASONAL_TOOLTIP = "启用此设置可显示所有季节性事件，而不是仅显示当前活动的季节性事件。\n\n注意：季节性活动将提前7天自动显示为活动状态。";
+		--TODO: SHOW_PET_BATTLES_CHECKBOX = "|T"..app.asset("Category_PetBattles")..":0|t " .. app.ccColors.Insane .. SHOW_PET_BATTLES_ON_MAP_TEXT;
+		SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "如果您想在游戏中显示需要宠物对战的内容，请启用此设置。";
+		--TODO: SHOW_PVP_CHECKBOX = "|T"..app.asset("Category_PvP")..":0|t " .. app.ccColors.Insane .. PVP_OPTIONS;
+		SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行 PvP 互动的内容，请启用此设置。";
+		--TODO: SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX = "Show Unavailable Personal Loot";
+		--TODO: SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 "..app.ccColors.Account.."帐号模式|cffFFFFFF。|r";

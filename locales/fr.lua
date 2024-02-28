@@ -263,8 +263,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
 
 -- Settings.lua
-	L.SKIP_AUTO_REFRESH = "Ne pas rafraîchir les données !";
-	L.SKIP_AUTO_REFRESH_TOOLTIP = "Par défaut (non coché), toute modification des paramètres susceptible d’affecter les données visibles entraînera un rafraîchissement automatique.\n\nEn activant cette option, les modifications des paramètres ne prendront effet dès que l’utilisateur effectuera un rafraîchissement complet en faisant "..SHIFT_KEY_TEXT.." + clic droit sur une fenêtre d’ATT.";
 	L.AFTER_REFRESH = "Après l’actualisation";
 
 	-- General tab
@@ -283,12 +281,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 			L.TITLE_SOLO = "Solo ";
 			L._BETA_LABEL = " |cff4AA7FF[Bêta]|R";
 
-		--TODO: L.GENERAL_CONTENT = "General Content";
-		--TODO: L.MODE_EXPLAIN_LABEL = 	"|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		--TODO: L.COMPLETIONIST_MODE = "+Sources";
-		--TODO: L.COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
-		--TODO: L.I_ONLY_CARE_ABOUT_MY_MAIN = "Main Only";
-		--TODO: L.MAIN_ONLY_MODE_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
 		L.PRECISION_SLIDER = "Niveau de précision";
 		L.PRECISION_SLIDER_TOOLTIP = "Utilisez cette option pour personnaliser le niveau de précision souhaité dans les calculs de pourcentage.\n\nDéfaut : 2";
 		L.MINIMAP_SLIDER = "Taille du bouton de la mini-carte";
@@ -335,18 +327,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 		--TODO: L.SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
 		--TODO: L.SHOW_COLLECTED_THINGS_CHECKBOX = "Show Collected Things";
 		--TODO: L.SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
-		--TODO: L.SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show All Trackable Things";
-		--TODO: L.SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.";
-		L.FILTER_THINGS_BY_LEVEL_CHECKBOX = app.ccColors.Insane .. "Aucune restriction de niveau";
-		L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez que le contenu soit disponible quel que soit le niveau du joueur.\n\nREMARQUE : désactiver cette option est utile pour les nouveaux comptes.";
-		L.SHOW_BOE_CHECKBOX = app.ccColors.Insane .. "Objets LqE / LaC";
-		L.SHOW_BOE_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher les objets Lié quand équipé ou Lié au compte..\n\nDésativer cette option est utile lorsque vous essayez de terminer un donjon classique pour un personnage et que vous ne souhaitez pas farmer des objets qui peuvent être obtenus sur des personnages secondaires ou à l’hôtel des ventes.\n\nCàD : Ne perdez pas votre temps pour le Pendule du destin."
-		L.SHOW_PVP_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez afficher le contenu qui 'peut' nécessiter des interactions Joueur contre Joueur dans le jeu.";
-		L.SHOW_ALL_SEASONAL = app.ccColors.Insane .. "Événemnts saisonniers";
-		L.SHOW_ALL_SEASONAL_TOOLTIP = "Activez cete option si vous souhaitez afficher tous les événements saisonniers, au lieu des seuls événements saisonniers en cours.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";	--TODO:
-		L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Activez cete option si vous souhaitez afficher du contenu nécessitant des combats de mascottes dans le jeu.";
-		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignorer les objets LqE / LqR";
-		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez ignorer les exigences en matière d’armure, d’arme, de race, de classe ou de profession pour les objets LqE / LqR.\n\nSi vous essayez de collecter des objets pour vos personnages secondaires via l’hôtel des ventes, ce mode peut vous être utile.";
 		--TODO: L.EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
 		--TODO: L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
 		--TODO: L.WARN_DIFFICULTY_CHECKBOX = "Warn Completed Difficulty";
@@ -716,6 +696,10 @@ do a[key] = value; end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
+	-- Common Header
+		SKIP_AUTO_REFRESH = "Ne pas rafraîchir les données !";
+		SKIP_AUTO_REFRESH_TOOLTIP = "Par défaut (non coché), toute modification des paramètres susceptible d’affecter les données visibles entraînera un rafraîchissement automatique.\n\nEn activant cette option, les modifications des paramètres ne prendront effet dès que l’utilisateur effectuera un rafraîchissement complet en faisant "..SHIFT_KEY_TEXT.." + clic droit sur une fenêtre d’ATT.";
+		
 	-- About Page
 		ABOUT_PAGE = "À Propos";
 		ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
@@ -738,6 +722,30 @@ for key,value in pairs({
 		FACTION_MODE_TOOLTIP = "Activez cette option si vous souhaitez afficher les données du mode Compte uniquement pour les races et les classes de votre faction actuelle.";
 		--TODO: LOOT_MODE = "Loot Mode";
 		--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.";
+		--TODO: MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
+		--TODO: COMPLETIONIST_MODE = "+Sources";
+		--TODO: COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
+		--TODO: MAIN_ONLY = "Main Only";
+		--TODO: MAIN_ONLY_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
+		
+		-- General Content
+		--TODO: GENERAL_CONTENT = "General Content";
+		--TODO: SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show All Trackable Things";
+		--TODO: SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.";
+		FILTER_THINGS_BY_LEVEL_CHECKBOX = app.ccColors.Insane .. "Aucune restriction de niveau";
+		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez que le contenu soit disponible quel que soit le niveau du joueur.\n\nREMARQUE : désactiver cette option est utile pour les nouveaux comptes.";
+		SHOW_BOE_CHECKBOX = app.ccColors.Insane .. "Objets LqE / LaC";
+		SHOW_BOE_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher les objets Lié quand équipé ou Lié au compte..\n\nDésativer cette option est utile lorsque vous essayez de terminer un donjon classique pour un personnage et que vous ne souhaitez pas farmer des objets qui peuvent être obtenus sur des personnages secondaires ou à l’hôtel des ventes.\n\nCàD : Ne perdez pas votre temps pour le Pendule du destin.";
+		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignorer les objets LqE / LqR";
+		IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez ignorer les exigences en matière d’armure, d’arme, de race, de classe ou de profession pour les objets LqE / LqR.\n\nSi vous essayez de collecter des objets pour vos personnages secondaires via l’hôtel des ventes, ce mode peut vous être utile.";
+		SHOW_ALL_SEASONAL = "|T"..app.asset("Category_Holidays")..":0|t " .. app.ccColors.Insane .. "Événemnts saisonniers";
+		SHOW_ALL_SEASONAL_TOOLTIP = "Activez cete option si vous souhaitez afficher tous les événements saisonniers, au lieu des seuls événements saisonniers en cours.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
+		--TODO: SHOW_PET_BATTLES_CHECKBOX = "|T"..app.asset("Category_PetBattles")..":0|t " .. app.ccColors.Insane .. SHOW_PET_BATTLES_ON_MAP_TEXT;
+		SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Activez cete option si vous souhaitez afficher du contenu nécessitant des combats de mascottes dans le jeu.";
+		--TODO: SHOW_PVP_CHECKBOX = "|T"..app.asset("Category_PvP")..":0|t " .. app.ccColors.Insane .. PVP_OPTIONS;
+		SHOW_PVP_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez afficher le contenu qui 'peut' nécessiter des interactions Joueur contre Joueur dans le jeu.";
+		--TODO: SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX = "Show Unavailable Personal Loot";
+		--TODO: SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
