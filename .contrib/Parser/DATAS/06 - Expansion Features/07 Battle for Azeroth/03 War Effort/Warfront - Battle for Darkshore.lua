@@ -79,6 +79,7 @@ root(ROOTS.ExpansionFeatures,
 							147708,	-- Athrikus Narassin
 							149660,	-- Blackpaw
 							148497,	-- Burninator Mark V
+							149141,	-- Burninator Mark V
 							147845,	-- Commander Drald
 							148025,	-- Commander Ralesh
 							147260,	-- Conflagros
@@ -96,6 +97,7 @@ root(ROOTS.ExpansionFeatures,
 							147970,	-- Mrggrmarr
 							147758,	-- Onu
 							149664,	-- Orwell Stevenson
+							149659,	-- Orwell Stevenson 
 							148103,	-- Sapper Odette
 							149665,	-- Scalefiend
 							149663,	-- Shadowclaw
