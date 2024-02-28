@@ -1625,6 +1625,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								186821,
 							}),
 							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+							-- Possible 7897 BonusID
 								i(188850),	-- Bracers of the Fixed Stars
 								i(188849),	-- Chestguard of the Fixed Stars
 								i(188852),	-- Cincture of the Fixed Stars
