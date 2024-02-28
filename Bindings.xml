@@ -11,6 +11,9 @@
 	<Binding name="ALLTHETHINGS_TOGGLEFACTIONMODE" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.Settings:ToggleFactionMode();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLELOOTMODE" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleLootMode();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" header="ALLTHETHINGS_PREFERENCES" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.Settings:ToggleCompletedThings();
 	</Binding>

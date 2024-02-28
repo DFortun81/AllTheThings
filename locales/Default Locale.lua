@@ -37,6 +37,7 @@ local L = setmetatable({
 	TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
 	TOGGLE_DEBUG_MODE = "Toggle Debug Mode";
 	TOGGLE_FACTION_MODE = "Toggle Faction Mode";
+	TOGGLE_LOOT_MODE = "Toggle Loot Mode";
 	TOGGLE_COMPLETEDTHINGS = "Toggle Completed Things (Both)";
 	TOGGLE_COMPLETEDGROUPS = "Toggle Completed Groups";
 	TOGGLE_COLLECTEDTHINGS = "Toggle Collected Things";
