@@ -2225,7 +2225,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(75497, {	-- The Catalyst's Boon
 					["provider"] = { "n", 196499 },	-- Therazal
 					["coord"] = { 50.2, 55.8, VALDRAKKEN },
-					["timeline"] = { ADDED_10_1_0 },
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				}),
 				q(79321, {	-- The Catalyst's Gift
 					["provider"] = { "n", 213930 },	-- Koszaru
