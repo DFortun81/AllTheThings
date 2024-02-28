@@ -3,7 +3,7 @@ local appName, app = ...;
 
 -- Check for Season of Discovery
 -- I only want this window to exist in SOD.
-if app.HeaderConstants.SEASON_OF_DISCOVERY then
+if app.GameBuildVersion >= 11500 and app.GameBuildVersion < 20000 then
 	local tinsert = tinsert;
 	
 	-- Implementation
