@@ -307,7 +307,144 @@ i(38328, 50647);	-- Haliscan Pantaloons
 -------------------
 --- PATCH 2.4.3 ---
 -------------------
+--- ITEM ---
 i(38229, 50194);	-- Mycah's Botanical Bag
+
+-------------------
+--- PATCH 3.0.1 ---
+-------------------
+--- TRAINER ---
+i(0, 51309);	-- Tailoring (Grand Master) [REMOVED 8.0.1]
+
+-------------------
+--- PATCH 3.0.2 ---
+-------------------
+--- TRAINER ---
+i(0, 56023);	-- Aurora Slippers
+i(0, 56010);	-- Azure Spellthread
+i(0, 55925);	-- Black Duskweave Leggings
+i(0, 55941);	-- Black Duskweave Robe
+i(0, 55943);	-- Black Duskweave Wristwraps
+i(0, 55899);	-- Bolt of Frostweave
+i(0, 55900);	-- Bolt of Imbued Frostweave
+i(0, 56015);	-- Cloak of Frozen Spirits
+i(0, 56014);	-- Cloak of the Moon
+i(0, 55769);	-- Darkglow Embroidery
+i(0, 56020);	-- Deep Frozen Cord
+i(0, 55914);	-- Duskweave Belt
+i(0, 55924);	-- Duskweave Boots
+i(0, 55919);	-- Duskweave Cowl
+i(0, 55922);	-- Duskweave Gloves
+i(0, 55901);	-- Duskweave Leggings
+i(0, 55921);	-- Duskweave Robe
+i(0, 55923);	-- Duskweave Shoulders
+i(0, 55920);	-- Duskweave Wristwraps
+i(0, 56002);	-- Ebonweave
+i(0, 56027);	-- Ebonweave Gloves
+i(0, 56026);	-- Ebonweave Robe
+i(0, 56021);	-- Frostmoon Pants
+i(0, 59582);	-- Frostsavage Belt
+i(0, 59585);	-- Frostsavage Boots
+i(0, 59583);	-- Frostsavage Bracers
+i(0, 59589);	-- Frostsavage Cowl
+i(0, 59586);	-- Frostsavage Gloves
+i(0, 59588);	-- Frostsavage Leggings
+i(0, 59587);	-- Frostsavage Robe
+i(0, 59584);	-- Frostsavage Shoulders
+i(0, 56007);	-- Frostweave Bag
+i(0, 55898);	-- Frostweave Net
+i(0, 55908);	-- Frostwoven Belt
+i(0, 55906);	-- Frostwoven Boots
+i(0, 55907);	-- Frostwoven Cowl
+i(0, 55904);	-- Frostwoven Gloves
+i(0, 56030);	-- Frostwoven Leggings
+i(0, 55903);	-- Frostwoven Robe
+i(0, 55902);	-- Frostwoven Shoulders
+i(0, 56031);	-- Frostwoven Wristwraps
+i(0, 60993);	-- Glacial Robe
+i(0, 60994);	-- Glacial Slippers
+i(0, 60990);	-- Glacial Waistband
+i(0, 56000);	-- Green Workman's Shirt
+i(0, 56018);	-- Hat of Wintry Doom
+i(0, 56022);	-- Light Blessed Mittens
+i(0, 55642);	-- Lightweave Embroidery [REMOVED 6.0.2]
+i(0, 56034);	-- Master's Spellthread
+i(0, 56001);	-- Moonshroud
+i(0, 56025);	-- Moonshroud Gloves
+i(0, 56024);	-- Moonshroud Robe
+i(0, 55911);	-- Mystic Frostwoven Robe
+i(0, 55910);	-- Mystic Frostwoven Shoulders
+i(0, 55913);	-- Mystic Frostwoven Wristwraps
+i(0, 56039);	-- Sanctified Spellthread
+i(0, 56008);	-- Shining Spellthread
+i(0, 56019);	-- Silky Iceshard Boots
+i(0, 56003);	-- Spellweave
+i(0, 56029);	-- Spellweave Gloves
+i(0, 56028);	-- Spellweave Robe
+i(0, 55777);	-- Swordguard Embroidery
+i(0, 55995);	-- Yellow Lumberjack Shirt
+--- ITEM ---
+i(42183, 56004);	-- Abyssal Bag
+i(42173, 55994);	-- Blue Lumberjack Shirt
+i(42176, 55998);	-- Blue Workman's Shirt
+i(42187, 56009);	-- Brilliant Spellthread
+i(43876, 59390);	-- Cloth Scavenging \\ Northern Cloth Scavenging
+i(42184, 56005);	-- Glacial Bag
+i(42175, 55996);	-- Green Lumberjack Shirt
+i(42185, 56006);	-- Mysterious Bag
+i(42172, 55993);	-- Red Lumberjack Shirt
+i(42177, 55997);	-- Red Workman's Shirt
+i(42178, 55999);	-- Rustic Workman's Shirt
+i(42188, 56011);	-- Sapphire Spellthread
+
+-------------------
+--- PATCH 3.0.3 ---
+-------------------
+--- TRAINER ---
+i(0, 60969);	-- Flying Carpet
+i(0, 60971);	-- Magnificent Flying Carpet
+
+-------------------
+--- PATCH 3.1.0 ---
+-------------------
+--- TRAINER ---
+i(0, 64730);	-- Cloak of Crimson Snow
+i(0, 64729);	-- Frostguard Drape
+i(0, 63742);	-- Spidersilk Drape
+--- ITEM ---
+i(45104, 63205);	-- Cord of the White Dawn
+i(45774, 63924);	-- Emerald Bag
+i(45102, 63203);	-- Sash of Ancient Power
+i(45105, 63206);	-- Savior's Slippers
+i(45103, 63204);	-- Spellslinger's Slippers
+
+-------------------
+--- PATCH 3.2.0 ---
+-------------------
+--- ITEM ---
+i(47654, 67079);	-- Bejeweled Wizard's Bracers [A]
+i(47639, 67145);    -- Bejeweled Wizard's Bracers [H]
+i(47655, 67066);	-- Merlin's Robe [A]
+i(47638, 67146);    -- Merlin's Robe [H]
+i(47656, 67065);	-- Royal Moonshroud Bracers [A]
+i(47637, 67147);    -- Royal Moonshroud Bracers [H]
+i(47657, 67064);	-- Royal Moonshroud Robe [A]
+i(47636, 67144);    -- Royal Moonshroud Robe [H]
+
+-------------------
+--- PATCH 3.3.0 ---
+-------------------
+--- ITEM ---
+i(49954, 70551);	-- Deathfrost Boots
+i(49953, 70550);	-- Leggings of Woven Death
+i(49955, 70552);	-- Lightweave Leggings
+i(49956, 70553);	-- Sandals of Consecration
+
+-------------------
+--- PATCH 3.3.3 ---
+-------------------
+--- ITEM ---
+i(54798, 75597);	-- Frosty Flying Carpet
 
 -----------------
 -- PATCH 9.0.1 --
