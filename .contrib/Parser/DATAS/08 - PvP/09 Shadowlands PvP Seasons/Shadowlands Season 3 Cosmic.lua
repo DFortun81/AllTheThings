@@ -229,7 +229,9 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 			})),
 			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
 				n(CLASSES,{
+					-- #if BEFORE 10.0.2
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
+					-- #endif
 					["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 						cl(DEATHKNIGHT, {
 							i(188864),	-- Carapace of the First Eidolon
@@ -363,7 +365,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(188941),	-- Pauldrons of the Infinite Infantry
 							i(188943),	-- Vambraces of the Infinite Infantry
 						}),
-					}),
+					}),				
 				}),
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
