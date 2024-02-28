@@ -45,7 +45,8 @@ local function GetBestObjectIDForName(name)
 		if pos then
 			local px, py = pos:GetXY();
 			px, py = px * 100, py * 100;
-			local closestDistance, closestObjectID, dist, searchCoord = 99999, o[1];
+			local closestDistance = 99999
+			local closestObjectID, dist, searchCoord
 			for i,objectID in ipairs(o) do
 				local searchResults = SearchForField("objectID", objectID);
 				if searchResults and #searchResults > 0 then
@@ -71,9 +72,10 @@ local function GetBestObjectIDForName(name)
 					end
 				end
 			end
-			return closestObjectID;
+			return closestObjectID;	-- When player has a valid position, only return valid objects
+		else
+			return o[1];	-- Some instances don't return a valid position, but can still contain objects.
 		end
-		return o[1];	-- Some instances don't return a valid position, but can still contain objects.
 	end
 end
 
