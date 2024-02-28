@@ -2922,9 +2922,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							},
 						}),
 						-- #endif
+						-- #if BEFORE 1.13.5
 						i(16724, {	-- Lightforge Gauntlets
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22207)),	-- Sash of the Grand Hunt
 						-- #if AFTER 7.3.2
 						i(12556, {	-- High Priestess Boots
