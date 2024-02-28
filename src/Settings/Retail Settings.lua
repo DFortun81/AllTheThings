@@ -35,6 +35,16 @@ settings.Collectibles = {
 	Toys = true,
 	Transmog = true,
 };
+settings.ForceAccountWide = {
+	BattlePets = true,
+	DrakewatcherManuscripts = true,
+	Heirlooms = true,
+	Illusions = true,
+	Mounts = true,
+	RuneforgeLegendaries = true,
+	Toys = true,
+	Transmog = true,
+}
 
 -- Settings Class
 local Things = {
@@ -62,16 +72,6 @@ local Things = {
 	"Titles",
 	"Toys",
 	"Transmog",
-}
-local ForceAccountWide = {
-	BattlePets = true,
-	DrakewatcherManuscripts = true,
-	Heirlooms = true,
-	Illusions = true,
-	Mounts = true,
-	RuneforgeLegendaries = true,
-	Toys = true,
-	Transmo = true,
 }
 local GeneralSettingsBase = {
 	__index = {
@@ -300,7 +300,7 @@ settings.Initialize = function(self)
 
 	-- Somehow some forced Account-Wide Things were set to false in user Profiles, so using app.IsAccountTracked ALWAYS returned false
 	-- so let's erase that data, and assign those Things in the Base General class
-	for thing,_ in pairs(ForceAccountWide) do
+	for thing,_ in pairs(settings.ForceAccountWide) do
 		settings:Set("AccountWide:"..thing, nil)
 		GeneralSettingsBase[thing] = true
 		settings.AccountWide[thing] = true

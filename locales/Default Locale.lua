@@ -153,6 +153,8 @@ L.SETTINGS_MENU = {
 		SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX = "Show Unavailable Personal Loot";
 		SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 		
+		-- Collectible Things
+		ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account Wide|R by default.";
 	
 	-- General: Filters Page
 		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;

@@ -36,6 +36,11 @@ settings.Collectibles = {
 	Toys = true,
 	Transmog = true,
 };
+settings.ForceAccountWide = {
+	Heirlooms = true,
+	Illusions = true,
+	Toys = true,
+}
 
 -- Settings Class
 local Things = {

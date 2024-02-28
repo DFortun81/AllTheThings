@@ -11,6 +11,9 @@ local child = settings:CreateOptionsPage("General", appName, true)
 child.CreateTrackingCheckbox = function(frame, localeKey, thing, parentThing)
 	local name = L[localeKey.."_CHECKBOX"]
 	local tooltip = L[localeKey.."_CHECKBOX_TOOLTIP"]
+	if settings.ForceAccountWide[thing] then
+		tooltip = tooltip .. "\n\n" .. L.ACC_WIDE_DEFAULT;
+	end
 	local trackingOption = "Thing:"..thing
 	local parentTrackingOption
 	if parentThing then
@@ -194,7 +197,11 @@ function(self)
 	end
 	settings:UpdateMode(1)
 end)
-checkboxTransmog:SetATTTooltip(L["TMOG_CHECKBOX_TOOLTIP"])
+local tooltip = L.TMOG_CHECKBOX_TOOLTIP;
+if settings.ForceAccountWide["Transmog"] then
+	tooltip = tooltip .. "\n\n" .. L.ACC_WIDE_DEFAULT;
+end
+checkboxTransmog:SetATTTooltip(tooltip)
 checkboxTransmog:AlignAfter(accwideCheckboxTransmog)
 
 local checkboxSources = child:CreateCheckBox(L.COMPLETIONIST_MODE,

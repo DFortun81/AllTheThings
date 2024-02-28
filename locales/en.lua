@@ -15,7 +15,6 @@ CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
 CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
 DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
 local TRACK_ACC_WIDE = app.ccColors.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
-local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R by default.";
 
 for key, value in pairs({
 	-- General Text
@@ -383,11 +382,11 @@ for key, value in pairs({
 	["ACHIEVEMENTS_CHECKBOX"] = app.ccColors.Insane .. ACHIEVEMENTS;
 	["ACHIEVEMENTS_CHECKBOX_TOOLTIP"] = "Enable this option to track achievements.";
 	["TMOG_CHECKBOX"] = app.ccColors.Insane .. "Appearances";
-	["TMOG_CHECKBOX_TOOLTIP"] = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\n"..ACC_WIDE_DEFAULT;
+	["TMOG_CHECKBOX_TOOLTIP"] = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";
 	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t " .. app.ccColors.Insane .. SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE;
 	["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"] = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
 	["BATTLE_PETS_CHECKBOX"] = app.ccColors.Insane .. PETS;
-	["BATTLE_PETS_CHECKBOX_TOOLTIP"] = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\n"..ACC_WIDE_DEFAULT;
+	["BATTLE_PETS_CHECKBOX_TOOLTIP"] = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.";
 	["CHARACTERUNLOCKS_CHECKBOX"] = app.ccColors.Insane..CHARACTER.." "..UNLOCK.."s";
 	["CHARACTERUNLOCKS_CHECKBOX_TOOLTIP"] = "Enable this option to track "..CHARACTER.." "..UNLOCK.."s. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
 	["FLIGHT_PATHS_CHECKBOX"] = app.ccColors.Insane .. "Flight Paths & Ferry Stations";
@@ -395,13 +394,13 @@ for key, value in pairs({
 	["FOLLOWERS_CHECKBOX"] = "|T"..app.asset("Expansion_WOD")..":0|t " .. app.ccColors.Insane .. GARRISON_FOLLOWERS.." & "..COVENANT_MISSIONS_FOLLOWERS;
 	["FOLLOWERS_CHECKBOX_TOOLTIP"] = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
 	["HEIRLOOMS_CHECKBOX"] = app.ccColors.Insane .. HEIRLOOMS;
-	["HEIRLOOMS_CHECKBOX_TOOLTIP"] = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.\n\n"..ACC_WIDE_DEFAULT;
+	["HEIRLOOMS_CHECKBOX_TOOLTIP"] = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
 	["HEIRLOOMS_UPGRADES_CHECKBOX"] = app.ccColors.Insane .. "+Upgrades";
 	["HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP"] = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
 	["ILLUSIONS_CHECKBOX"] = app.ccColors.Insane .. "Illusions";
-	["ILLUSIONS_CHECKBOX_TOOLTIP"] = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.\n\n"..ACC_WIDE_DEFAULT;
+	["ILLUSIONS_CHECKBOX_TOOLTIP"] = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";
 	["MOUNTS_CHECKBOX"] = app.ccColors.Insane .. MOUNTS;
-	["MOUNTS_CHECKBOX_TOOLTIP"] = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\n"..ACC_WIDE_DEFAULT;
+	["MOUNTS_CHECKBOX_TOOLTIP"] = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!";
 	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"] = "|T"..app.asset("Expansion_WOD")..":0|t " .. app.ccColors.Insane .. "Music Rolls & Selfie Filters";
 	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"] = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
 	["QUESTS_CHECKBOX"] = app.ccColors.Insane .. QUESTS_LABEL;
@@ -421,7 +420,8 @@ for key, value in pairs({
 	["TITLES_CHECKBOX"] = app.ccColors.Insane .. PAPERDOLL_SIDEBAR_TITLES;
 	["TITLES_CHECKBOX_TOOLTIP"] = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 	["TOYS_CHECKBOX"] = app.ccColors.Insane .. TOY_BOX;
-	["TOYS_CHECKBOX_TOOLTIP"] = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\n"..ACC_WIDE_DEFAULT;
+	["TOYS_CHECKBOX_TOOLTIP"] = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
+	
 	["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 	["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
