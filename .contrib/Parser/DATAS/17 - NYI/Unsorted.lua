@@ -580,11 +580,6 @@ root(ROOTS.Unsorted, {
 				i(201001),	-- Ensemble: Void-Bound Warplate
 				i(211926),	-- Riders of Azeroth Tabard [Cup]
 
-				------ Skyborn Blades ------
-				i(212577),	-- Arsenal: Skyborn Blades
-				i(212578),	-- Radiant Skyborn Blade
-				i(212579),	-- Skyborn Blade
-
 				------ Dark Ranger General ------
 				i(213158),	-- Ensemble: Dark Ranger General's Kit
 				i(213150),	-- Dark Ranger General's Boots

@@ -118,6 +118,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		q(76114, {	-- Report to the Trading Post -- Feb 2024
 			["timeline"] = { ADDED_10_2_5 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		q(76115, {	-- Report to the Trading Post -- March 2024
+			["timeline"] = { ADDED_10_2_5 },
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
 	n(YEAR2023, {
@@ -1420,7 +1425,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5"} }, {
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5", "removed 10.2.5.53495"} }, {
 			n(MONTHLY_REWARD, {
 				i(212220, {	-- Ensemble: Love Witch's Attire
 					i(212197),	-- Love Witch's Blouse
@@ -1550,6 +1555,122 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(212380, {	-- Twilight Witch's Gothic Stave
 					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+			}),
+		})),
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495"} }, {
+			n(MONTHLY_REWARD, {
+				-- pet
+			}),
+			filter(BATTLE_PETS, {
+			}),
+			filter(MOUNTS, {
+				mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+					["races"] = HORDE_ONLY,
+				}),
+			}),
+			filter(TOYS, {
+				i(212523, {	-- Delicate Jade Parasol
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(212577, {	-- Arsenal: Skyborn Blades
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["groups"] = {
+						i(212578),	-- Radiant Skyborn Blade
+						i(212579),	-- Skyborn Blade
+					},
+				}),
+				i(212576, {	-- Blackrock Executioner
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(212544, {	-- Classic Aquatic Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190890, {	-- Chipped Warblade
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(212530, {	-- Corroded Augari Defender
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(190080, {	-- Catastrophe's Edge
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(212574, {	-- Dueler's Aquatic Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(212573, {	-- Dueler's Cloudy Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(206322, {	-- Ensemble: Vagabond's Aquatic Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["groups"] = {
+						i(206289),	-- Vagabond's Aquatic Hood
+						i(206278),	-- Vagabond's Aquatic Cape
+					},
+				}),
+				i(206333, {	-- Ensemble: Wanderer's Aquatic Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["groups"] = {
+						i(206299),	-- Wanderer's Aquatic Scarf
+						i(206311),	-- Wanderer's Aquatic Cloak
+					},
+				}),
+				i(190690, {	-- Flame-Forged Fel Fang
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				i(190097, {	-- Fabulously Flashy Finery
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(212542, {	-- Flowing Aquatic Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212543, {	-- Gossamer Teal Gown
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(212555, {	-- Guise of the Royal Masquerade
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212556, {	-- Guise of the Shining Masquerade
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(190218, {	-- Jeweled Ripper
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(190215, {	-- Lost Crown of the Arcane
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(190814, {	-- Mephistroth's Razor
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(190428, {	-- Regal Warcloak
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(210078, {	-- Sky-Captain's Formal Attire
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+					["groups"] = {
+						i(210078),	-- Sky-Captain's Formal Attire
+						i(210066),	-- Sky-Captain's Formal Boots
+						i(210071),	-- Sky-Captain's Formal Cape
+						i(210067),	-- Sky-Captain's Formal Coat
+						i(210065),	-- Sky-Captain's Formal Hat
+						i(210068),	-- Sky-Captain's Formal Pants
+					},
+				}),
+				i(210861, {	-- Trader's Aquatic Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210852, {	-- Trader's Cloudy Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190219, {	-- Virulent Gavel
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
 			}),
 		})),
@@ -1828,7 +1949,6 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.5
 			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 					------ TRADING POST ------
-				i(206278),	-- Vagabond's Aquatic Cape
 				i(206279),	-- Vagabond's Plum Cape
 				i(206280),	-- Vagabond's Faded Cape
 				i(206281),	-- Vagabond's Brick Cape
@@ -1836,7 +1956,6 @@ root(ROOTS.NeverImplemented, {
 				i(206283),	-- Vagabond's Deep Cape
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206285),	-- Vagabond's Grassy Cape
-				i(206289),	-- Vagabond's Aquatic Hood
 				i(206290),	-- Vagabond's Plum Hood
 				i(206291),	-- Vagabond's Faded Hood
 				i(206292),	-- Vagabond's Brick Hood
@@ -1844,7 +1963,6 @@ root(ROOTS.NeverImplemented, {
 				i(206294),	-- Vagabond's Deep Hood
 				i(206295),	-- Vagabond's Cloudy Hood
 				i(206296),	-- Vagabond's Grassy Hood
-				i(206299),	-- Wanderer's Aquatic Scarf
 				i(206301),	-- Wanderer's Plum Scarf
 				i(206302),	-- Wanderer's Faded Scarf
 				i(206303),	-- Wanderer's Brick Scarf
@@ -1852,7 +1970,6 @@ root(ROOTS.NeverImplemented, {
 				i(206305),	-- Wanderer's Deep Scarf
 				i(206306),	-- Wanderer's Cloudy Scarf
 				i(206307),	-- Wanderer's Grassy Scarf
-				i(206311),	-- Wanderer's Aquatic Cloak
 				i(206312),	-- Wanderer's Plum Cloak
 				i(206313),	-- Wanderer's Faded Cloak
 				i(206314),	-- Wanderer's Brick Cloak
@@ -1860,7 +1977,6 @@ root(ROOTS.NeverImplemented, {
 				i(206316),	-- Wanderer's Deep Cloak
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206318),	-- Wanderer's Grassy Cloak
-				i(206322),	-- Ensemble: Vagabond's Aquatic Threads
 				i(206323),	-- Ensemble: Vagabond's Plum Threads
 				i(206324),	-- Ensemble: Vagabond's Faded Threads
 				i(206325),	-- Ensemble: Vagabond's Brick Threads
@@ -1868,7 +1984,6 @@ root(ROOTS.NeverImplemented, {
 				i(206327),	-- Ensemble: Vagabond's Deep Threads
 				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 				i(206329),	-- Ensemble: Vagabond's Grassy Threads
-				i(206333),	-- Ensemble: Wanderer's Aquatic Trappings
 				i(206334),	-- Ensemble: Wanderer's Plum Trappings
 				i(206335),	-- Ensemble: Wanderer's Faded Trappings
 				i(206336),	-- Ensemble: Wanderer's Brick Trappings
@@ -1892,14 +2007,6 @@ root(ROOTS.NeverImplemented, {
 					i(212591), -- Mantle of Unrelenting Justice
 					i(212592), -- Treads of Unrelenting Justice
 					i(211091), -- Tunic of Unrelenting Justice
-
-					------ Sky-Captain ------
-					i(210078),	-- Sky-Captain's Formal Attire
-					i(210066),	-- Sky-Captain's Formal Boots
-					i(210071),	-- Sky-Captain's Formal Cape
-					i(210067),	-- Sky-Captain's Formal Coat
-					i(210065),	-- Sky-Captain's Formal Hat
-					i(210068),	-- Sky-Captain's Formal Pants
 				}),
 				n(ARMOR, {
 					------ Sarong ------
