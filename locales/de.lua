@@ -4,7 +4,6 @@ local app = select(2, ...);
 local L = app.L;
 
 local DRAKE_MANUSCRIPTS = "Drachenwächtermanuskript";	--TODO: plural
-local TRACK_ACC_WIDE = app.ccColors.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";	--TODO
 
 -- General Text
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
@@ -341,17 +340,17 @@ local TRACK_ACC_WIDE = app.ccColors.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_T
 		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
 	-- Account-Wide Checkboxes
-		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = TRACK_ACC_WIDE.."\n\nAchievement tracking is usually "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";	--TODO
-		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = TRACK_ACC_WIDE.."\n\nAzerite Essences cannot technically be collected and used "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but if you only care about collecting them on your main character then you may prefer tracking them "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".";	--TODO
-		--TODO: L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = TRACK_ACC_WIDE.."\n\nConsider any Character Unlock collected if any character has collected it.";
-		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = TRACK_ACC_WIDE.."\n\nFlight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";	--TODO
-		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = TRACK_ACC_WIDE.."\n\nFollowers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";	--TODO
-		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = TRACK_ACC_WIDE.."\n\nMusic Rolls & Selfie Filters are not normally tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";	--TODO
-		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = TRACK_ACC_WIDE.."\n\nQuest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";	--TODO
-		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = TRACK_ACC_WIDE.."\n\nRecipes are not normally tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";	--TODO
-		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = TRACK_ACC_WIDE.."\n\nReputations are now tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." in Blizzard's database for achievements, so turning this on may be a good idea.";	--TODO
-		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = TRACK_ACC_WIDE.."\n\nEnable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";	--TODO
-		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\nMost titles are tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";	--TODO
+		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";	--TODO
+		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Azerite Essences cannot technically be collected and used "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but if you only care about collecting them on your main character then you may prefer tracking them "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".";	--TODO
+		--TODO: L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Consider any Character Unlock collected if any character has collected it.";
+		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";	--TODO
+		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";	--TODO
+		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "Music Rolls & Selfie Filters are not normally tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";	--TODO
+		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";	--TODO
+		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "Recipes are not normally tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";	--TODO
+		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." in Blizzard's database for achievements, so turning this on may be a good idea.";	--TODO
+		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";	--TODO
+		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";	--TODO
 
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "Unerreichbares";
@@ -719,6 +718,7 @@ for key,value in pairs({
 		
 		-- Collectible Things
 		--TODO: ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Accountübergreifend|R by default.";
+		--TODO: TRACK_ACC_WIDE = app.ccColors.Account .. "Track Accountübergreifend|R";
 
 	-- General: Filters Page
 		--TODO: ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";

@@ -70,7 +70,7 @@ child.CreateAccountWideCheckbox = function(frame, localeKey, thing)
 		end
 	)
 	cb:SetCheckedTexture(app.asset("TrackAccountWide"))
-	cb:SetATTTooltip(tooltip)
+	cb:SetATTTooltip(L.TRACK_ACC_WIDE.."\n\n" .. tooltip)
 	return cb
 end
 

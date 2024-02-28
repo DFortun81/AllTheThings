@@ -6,7 +6,6 @@ local L = app.L;
 CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "职业试玩";
 CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
 local DRAKE_MANUSCRIPTS = "观龙者手稿";
-local TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
 
 -- General Text
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
@@ -347,17 +346,17 @@ local TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 "..ITEM_UPGRADE_DISCOUNT_
 		L.KEYBINDINGS_TEXT = "可以在游戏选项中设置 ATT 的按键绑定。";
 
 	-- Account-Wide Checkboxes
-		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = TRACK_ACC_WIDE.."\n\n成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
-		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = TRACK_ACC_WIDE.."\n\n艾泽里特精华在技术上不能在整个战网内收藏和使用，但如果你只关心收藏你的主角色那么你可能更喜欢在整个战网上追踪它们。";
-		--TODO: L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = TRACK_ACC_WIDE.."\n\nConsider any Character Unlock collected if any character has collected it.";
-		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = TRACK_ACC_WIDE.."\n\n飞行路径追踪对每个角色都非常有用，但是你真的想要在所有50个角色上收藏它们吗？";
-		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = TRACK_ACC_WIDE.."\n\n随从通常是每个角色的，但是你真的想以每周1个的速度在一个角色上收藏243个随从吗？\n\n我想不行，好好先生。";
-		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = TRACK_ACC_WIDE.."\n\n在暴雪的数据库中通常不会在账号通用内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点。\n\n注意：你只能使用自动点唱机玩具播放音乐或使用你在当前角色上收藏的自拍相机玩具自拍。";
-		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = TRACK_ACC_WIDE.."\n\n任务完成通常是每个角色的，但是如果任何一个角色完成了特定的任务，这个任务就会被认为是完成了。";
-		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = TRACK_ACC_WIDE.."\n\n在暴雪的数据库中，图纸通常不会被账号通用追踪，但我们可以这样做。\n\n在一个角色上不可能收藏到所有的东西，所以有了这个，你就可以赋予你的小号和他们的专业以意义。";
-		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = TRACK_ACC_WIDE.."\n\n声望的成就现在会在暴雪的数据库中追踪账号通用，所以开启这个功能可能是个好主意。";
-		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = TRACK_ACC_WIDE.."\n\n启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器，则将所有角色的灵魂羁绊的导灵器视为收藏。";
-		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
+		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
+		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "艾泽里特精华在技术上不能在整个战网内收藏和使用，但如果你只关心收藏你的主角色那么你可能更喜欢在整个战网上追踪它们。";
+		--TODO: L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Consider any Character Unlock collected if any character has collected it.";
+		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飞行路径追踪对每个角色都非常有用，但是你真的想要在所有50个角色上收藏它们吗？";
+		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "随从通常是每个角色的，但是你真的想以每周1个的速度在一个角色上收藏243个随从吗？\n\n我想不行，好好先生。";
+		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "在暴雪的数据库中通常不会在账号通用内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点。\n\n注意：你只能使用自动点唱机玩具播放音乐或使用你在当前角色上收藏的自拍相机玩具自拍。";
+		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任务完成通常是每个角色的，但是如果任何一个角色完成了特定的任务，这个任务就会被认为是完成了。";
+		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的数据库中，图纸通常不会被账号通用追踪，但我们可以这样做。\n\n在一个角色上不可能收藏到所有的东西，所以有了这个，你就可以赋予你的小号和他们的专业以意义。";
+		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "声望的成就现在会在暴雪的数据库中追踪账号通用，所以开启这个功能可能是个好主意。";
+		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器，则将所有角色的灵魂羁绊的导灵器视为收藏。";
+		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
 
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "不可获得";
@@ -777,6 +776,7 @@ for key,value in pairs({
 		
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. "账号通用|R 默认。";
+		TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 账号通用|R";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 "..app.ccColors.Account.."帐号模式|cffFFFFFF。|r";

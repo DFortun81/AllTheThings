@@ -155,6 +155,7 @@ L.SETTINGS_MENU = {
 		
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account Wide|R by default.";
+		TRACK_ACC_WIDE = app.ccColors.Account .. "Track Account Wide|R";
 	
 	-- General: Filters Page
 		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
