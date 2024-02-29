@@ -672,29 +672,6 @@ end)
 checkboxShowCollectibleCostGroups:SetATTTooltip(L["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"])
 checkboxShowCollectibleCostGroups:AlignBelow(checkboxExpandDifficulty)
 
-local checkboxShowCompletedGroups = child:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:CompletedGroups"))
-end,
-function(self)
-	settings:SetCompletedGroups(self:GetChecked())
-	settings:Set("Cache:CompletedGroups", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxShowCompletedGroups:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"])
-checkboxShowCompletedGroups:AlignBelow(checkboxShowCollectibleCostGroups)
-
-local checkboxShowCollectedThings = child:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:CollectedThings"))
-end,
-function(self)
-	settings:SetCollectedThings(self:GetChecked())
-	settings:Set("Cache:CollectedThings", self:GetChecked())
-end)
-checkboxShowCollectedThings:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
-checkboxShowCollectedThings:AlignBelow(checkboxShowCompletedGroups)
-
 local checkboxNestedNPCData = child:CreateCheckBox(L["NPC_DATA_NESTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("NPCData:Nested"))
@@ -705,7 +682,7 @@ function(self)
 	app.LocationTrigger(true)
 end)
 checkboxNestedNPCData:SetATTTooltip(L["NPC_DATA_NESTED_CHECKBOX_TOOLTIP"])
-checkboxNestedNPCData:AlignBelow(checkboxShowCollectedThings)
+checkboxNestedNPCData:AlignBelow(checkboxShowCollectibleCostGroups)
 
 local checkboxNestedQuestChains = child:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)

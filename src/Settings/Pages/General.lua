@@ -371,6 +371,29 @@ checkboxShowAllTrackableThings:SetATTTooltip(L.SHOW_INCOMPLETE_THINGS_CHECKBOX_T
 checkboxShowAllTrackableThings:SetPoint("TOP", checkboxDebugMode, "TOP", 0, 0)
 checkboxShowAllTrackableThings:SetPoint("LEFT", textModeExplain, "LEFT", 320, 0)
 
+local checkboxShowCompletedGroups = child:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:CompletedGroups"))
+end,
+function(self)
+	settings:SetCompletedGroups(self:GetChecked())
+	settings:Set("Cache:CompletedGroups", self:GetChecked())
+	settings:UpdateMode(1)
+end)
+checkboxShowCompletedGroups:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"])
+checkboxShowCompletedGroups:AlignBelow(checkboxShowAllTrackableThings)
+
+local checkboxShowCollectedThings = child:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:CollectedThings"))
+end,
+function(self)
+	settings:SetCollectedThings(self:GetChecked())
+	settings:Set("Cache:CollectedThings", self:GetChecked())
+end)
+checkboxShowCollectedThings:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
+checkboxShowCollectedThings:AlignBelow(checkboxShowCompletedGroups)
+
 local headerGeneralContent = child:CreateHeaderLabel(L.GENERAL_CONTENT)
 headerGeneralContent:SetPoint("TOP", headerAccountThings, "TOP", 0, 0)
 headerGeneralContent:SetPoint("LEFT", checkboxShowAllTrackableThings, "LEFT", 0, 0)
