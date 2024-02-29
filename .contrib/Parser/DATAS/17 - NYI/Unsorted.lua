@@ -2636,7 +2636,6 @@ root(ROOTS.Unsorted, {
 				i(180350),	-- Simple Stone Loop
 				i(180891),	-- Smooshed Maggot
 				i(171948),	-- Soul Ash
-				i(180317),	-- Soulful Healing Potion
 				i(174464),	-- Spectral Bridle
 				i(173061),	-- Stabilizing Powder
 				i(180291),	-- Stranglevine Seed

@@ -70,6 +70,7 @@ i(141013);	-- Scroll of Town Portal: Shala'nir
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(118905);	-- Sinister Spores
+i(180317);	-- Soulful Healing Potion
 i(169856);	-- Spark-1351
 i(168271);	-- Stolen Ramkahen Banner
 i(119216);	-- Super Sticky Glitter Bomb
