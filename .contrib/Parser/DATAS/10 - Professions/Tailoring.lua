@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
+local EMBROIDERED_DEEP_SEA_SATIN = 158378;
 local TAILORING_KNOWLEDGE = 2026;
 root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -365,6 +366,77 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			})),
 		}),
+		n(SPECIAL, {
+			n(151903, {	-- Time-Lost Trader
+				["description"] = "This vendor spawns randomly when you close a time rift.",
+				["coords"] = {
+					-- Zuldazar
+					{ 45.0, 39.0, ZULDAZAR },	-- Ledge right before entrance to Atal'Dazar
+					{ 54.0, 61.0, ZULDAZAR },	-- On the beach below Mugambala
+					{ 59.0, 75.0, ZULDAZAR },	-- NW corner of Tuck Isle
+					{ 73.0, 67.0, ZULDAZAR },	-- East of Seeker's Outpost
+					{ 71.0, 35.0, ZULDAZAR },	-- Behind Savagelands Devilsaur
+					-- Nazmir
+					{ 38.0, 58.0, NAZMIR },	-- Under arch east side of Terrace of Sorrows
+					{ 55.0, 21.0, NAZMIR },
+					{ 53.0, 56.0, NAZMIR },	-- NE corner of Heart of Darkness
+					{ 43.0, 29.0, NAZMIR },	-- SE corner of Necropolis
+					{ 38.0, 89.0, NAZMIR },	-- The Shattered River, in front of broken totem
+					{ 29.0, 56.0, NAZMIR },
+					{ 26.0, 78.0, NAZMIR },	-- In front of waterfall
+					-- Drustvar
+					{ 23.0, 43.0, DRUSTVAR },	-- Just above Anyport
+					{ 36.0, 72.0, DRUSTVAR },
+					{ 33.0, 23.0, DRUSTVAR },
+					{ 63.0, 35.0, DRUSTVAR },
+					{ 46.0, 38.0, DRUSTVAR },	-- Highroad Pass, SE of Aroms Stand
+					-- Voldun
+					{ 54.0, 41.0, VOLDUN },	-- Behind a rock E of Darkwood Shoal
+					{ 50.0, 64.0, VOLDUN },	-- East side of Atul'aman
+					{ 49.0, 84.0, VOLDUN },	-- Redrock Lowlands
+					{ 41.0, 64.0, VOLDUN },	-- West of Goldtusk Inn
+					{ 37.0, 87.0, VOLDUN },	-- On the ledge, N of island off south coast
+					-- Tiragarde Sound
+					{ 85.0, 77.0, TIRAGARDE_SOUND },	-- Dock north of Freehold dungeon
+					{ 40.0, 24.0, TIRAGARDE_SOUND },
+				},
+				["g"] = {
+					i(167889, {	-- Pattern: Azure Silk Cloak
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 50}}
+					}),
+					i(167881, {	-- Pattern: Belt of the Archmage
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 100}}
+					}),
+					i(167887, {	-- Pattern: Cindercloth Gloves
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 75}}
+					}),
+					i(167886, {	-- Pattern: Cindercloth Vest
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 75}}
+					}),
+					i(167882, {	-- Pattern: Cloak of Warding
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 75}}
+					}),
+					i(167883, {	-- Pattern: Felcloth Gloves
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 100}}
+					}),
+					i(167890, {	-- Pattern: Icy Cloak
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 50}}
+					}),
+					i(167884, {	-- Pattern: Inferno Gloves
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 100}}
+					}),
+					i(167885, {	-- Pattern: Mooncloth Gloves
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 100}}
+					}),
+					i(167888, {	-- Pattern: Robe of Winter Night
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 100}}
+					}),
+					i(167880, {	-- Pattern: Robes of Arcana
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 100}}
+					}),
+				},
+			}),
+		}),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -693,7 +765,6 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 })));
 
 -- #if ANYCLASSIC
-local TIME_LOST_TRADER_GROUPS = {};
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
 	-- TODO: Solve this for classic, until then, only apply the filter to Retail.
@@ -5473,54 +5544,6 @@ profession(TAILORING, {
 				}
 			}
 		},
-		{
-			["name"] = "Tool of the Trade",
-			["categoryID"] = 1266,
-			["groups"] = {
-				{
-					["name"] = "Synchronous Thread",
-					["recipeID"] = 292946,
-					["groups"] = {
-						{	-- Time-Lost Trader
-							["npcID"] = 151903,		-- Time-Lost Trader
-							["description"] = "This vendor spawns randomly when you close a time rift.",
-							["coords"] = {
-								-- Zuldazar
-								{ 45.0, 39.0, ZULDAZAR },	-- Ledge right before entrance to Atal'Dazar
-								{ 54.0, 61.0, ZULDAZAR },	-- On the beach below Mugambala
-								{ 59.0, 75.0, ZULDAZAR },	-- NW corner of Tuck Isle
-								{ 73.0, 67.0, ZULDAZAR },	-- East of Seeker's Outpost
-								{ 71.0, 35.0, ZULDAZAR },	-- Behind Savagelands Devilsaur
-								-- Nazmir
-								{ 38.0, 58.0, NAZMIR },	-- Under arch east side of Terrace of Sorrows
-								{ 55.0, 21.0, NAZMIR },
-								{ 53.0, 56.0, NAZMIR },	-- NE corner of Heart of Darkness
-								{ 43.0, 29.0, NAZMIR },	-- SE corner of Necropolis
-								{ 38.0, 89.0, NAZMIR },	-- The Shattered River, in front of broken totem
-								{ 29.0, 56.0, NAZMIR },
-								{ 26.0, 78.0, NAZMIR },	-- In front of waterfall
-								-- Drustvar
-								{ 23.0, 43.0, DRUSTVAR },	-- Just above Anyport
-								{ 36.0, 72.0, DRUSTVAR },
-								{ 33.0, 23.0, DRUSTVAR },
-								{ 63.0, 35.0, DRUSTVAR },
-								{ 46.0, 38.0, DRUSTVAR },	-- Highroad Pass, SE of Aroms Stand
-								-- Voldun
-								{ 54.0, 41.0, VOLDUN },	-- Behind a rock E of Darkwood Shoal
-								{ 50.0, 64.0, VOLDUN },	-- East side of Atul'aman
-								{ 49.0, 84.0, VOLDUN },	-- Redrock Lowlands
-								{ 41.0, 64.0, VOLDUN },	-- West of Goldtusk Inn
-								{ 37.0, 87.0, VOLDUN },	-- On the ledge, N of island off south coast
-								-- Tiragarde Sound
-								{ 85.0, 77.0, TIRAGARDE_SOUND },	-- Dock north of Freehold dungeon
-								{ 40.0, 24.0, TIRAGARDE_SOUND },
-							},
-							["groups"] = TIME_LOST_TRADER_GROUPS,
-						},
-					},
-				}
-			}
-		},
 		n(DISCOVERY, {
 			{	-- Embroidered Deep Sea Breeches
 				["spellID"] = 257122,	-- Embroidered Deep Sea Breeches
@@ -5928,54 +5951,6 @@ profession(TAILORING, {
 		},
 	})),
 });
-
--- Add the following recipes to the Time Lost Trader without applying the phase release.
-for i,o in ipairs({
-	i(167889, {	-- Pattern: Azure Silk Cloak
-		["recipeID"] = 8786,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167881, {	-- Pattern: Belt of the Archmage
-		["recipeID"] = 22866,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167887, {	-- Pattern: Cindercloth Gloves
-		["recipeID"] = 18412,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167886, {	-- Pattern: Cindercloth Vest
-		["recipeID"] = 18408,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167882, {	-- Pattern: Cloak of Warding
-		["recipeID"] = 22870,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167883, {	-- Pattern: Felcloth Gloves
-		["recipeID"] = 22867,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167890, {	-- Pattern: Icy Cloak
-		["recipeID"] = 3862,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167884, {	-- Pattern: Inferno Gloves
-		["recipeID"] = 22868,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167885, {	-- Pattern: Mooncloth Gloves
-		["recipeID"] = 22869,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167888, {	-- Pattern: Robe of Winter Night
-		["recipeID"] = 18436,
-		["requiredSkill"] = TAILORING,
-	}),
-	i(167880, {  -- Pattern: Robes of Arcana
-		["recipeID"] = 6692,
-		["requiredSkill"] = TAILORING,
-	}),
-}) do table.insert(TIME_LOST_TRADER_GROUPS, o); end
 
 -- Tailoring Item Database
 local itemDB = ItemDBConditional;

@@ -9,6 +9,9 @@ local i = function(argument0, ...)
 		oi(...);
 	end
 end
+local MOONCLOTH = 26798;
+local SHADOWEAVE = 26801;
+local SPELLFIRE = 26797;
 
 -----------------
 --   CLASSIC   --
@@ -177,51 +180,9 @@ i(211247, 428424);	-- Phoenix Bindings
 --- PATCH 2.0.1 ---
 -------------------
 --- TRAINER ---
-i(0, 26745);	-- Bolt of Netherweave
-i(0, 26746);	-- Netherweave Bag
-i(0, 26765);	-- Netherweave Belt
-i(0, 26772);	-- Netherweave Boots
-i(0, 26764);	-- Netherweave Bracers
-i(0, 26770);	-- Netherweave Gloves
-i(0, 31460);	-- Netherweave Net
-i(0, 26771);	-- Netherweave Pants
+
 --- ITEM ---
-i(21907, 26784);	-- Arcanoweave Robe
-i(24314, 31459);	-- Bag of Jewels
-i(24313, 31456);	-- Battlecast Hood
-i(24310, 31453);	-- Battlecast Pants
-i(21892, 26747);	-- Bolt of Imbued Netherweave
-i(21894, 26750);	-- Bolt of Soulcloth
-i(24297, 31435);	-- Bracers of Havok
-i(30833, 37873);	-- Cloak of Arcane Evasion
-i(24299, 31438);	-- Cloak of the Black Void
-i(30842, 37882);	-- Flameheart Bracers
-i(30843, 37883);	-- Flameheart Gloves
-i(30844, 37884);	-- Flameheart Vest
-i(24295, 31433);	-- Golden Spellthread
-i(21893, 26749);	-- Imbued Netherweave Bag
-i(21899, 26776);	-- Imbued Netherweave Boots
-i(21898, 26775);	-- Imbued Netherweave Pants
-i(21900, 26777);	-- Imbued Netherweave Robe
-i(21901, 26778);	-- Imbued Netherweave Tunic
-i(24292, 31430);	-- Mystic Spellthread
-i(21896, 26773);	-- Netherweave Robe
-i(21897, 26774);	-- Netherweave Tunic
-i(21895, 26751);	-- Primal Mooncloth
-i(21919, 26763);	-- Primal Mooncloth Bag
-i(21916, 26760);	-- Primal Mooncloth Belt
-i(21917, 26762);	-- Primal Mooncloth Robe
-i(21918, 26761);	-- Primal Mooncloth Shoulders
-i(24305, 31448);	-- Resolute Cape
-i(24294, 31432);	-- Runic Spellthread
-i(30483, 36686);	-- Shadowcloth
-i(24293, 31431);	-- Silver Spellthread
-i(24316, 31373);	-- Spellcloth
-i(21911, 26755);	-- Spellfire Bag
-i(24296, 31434);	-- Unyielding Bracers
-i(35309, 31442);	-- Unyielding Girdle
-i(24306, 31449);	-- Vengeance Wrap
-i(24301, 31441);	-- White Remedy Cape
+
 --- NYI ---
 i(24315, 31461);	-- Heavy Netherweave Net
 i(0, 36670);		-- Lifeblood Belt
@@ -232,37 +193,102 @@ i(30471, 36668);	-- Netherflame Boots
 i(30469, 36665);	-- Netherflame Robe
 
 -------------------
---- PATCH 2.0.3 ---
+--- PATCH 2.0.5 ---
 -------------------
 --- TRAINER ---
-i(0, 26798);	-- Mooncloth Tailoring [REMOVED 4.0.1]
-i(0, 26801);	-- Shadoweave Tailoring [REMOVED 4.0.1]
-i(0, 26797);	-- Spellfire Tailoring [REMOVED 4.0.1]
 i(0, 26790);	-- Tailoring (Master) [REMOVED 8.0.1]
+i(0, 26745);	-- Bolt of Netherweave
+i(0, 26746);	-- Netherweave Bag
+i(0, 26765);	-- Netherweave Belt
+i(0, 26772);	-- Netherweave Boots
+i(0, 26764);	-- Netherweave Bracers
+i(0, 26770);	-- Netherweave Gloves
+i(0, 31460);	-- Netherweave Net
+i(0, 26771);	-- Netherweave Pants
 --- ITEM ---
 i(21906, 26783);	-- Arcanoweave Boots
 i(21905, 26782);	-- Arcanoweave Bracers
+i(21907, 26784);	-- Arcanoweave Robe
+i(24314, 31459);	-- Bag of Jewels
+i(24313, 31456);	-- Battlecast Hood
+i(24310, 31453);	-- Battlecast Pants
 i(30280, 36315);	-- Belt of Blasting
 i(24304, 31444);	-- Black Belt of Knowledge
 i(24298, 31437);	-- Blackstrike Bracers
+i(21892, 26747);	-- Bolt of Imbued Netherweave
+i(21894, 26750);	-- Bolt of Soulcloth
 i(30282, 36317);	-- Boots of Blasting
+i(24297, 31435);	-- Bracers of Havok
+i(30833, 37873);	-- Cloak of Arcane Evasion
 i(24300, 31440);	-- Cloak of Eternity
+i(24299, 31438);	-- Cloak of the Black Void
 i(21915, 26759);	-- Ebon Shadowbag
-i(21914, 26757);	-- Frozen Shadoweave Boots
-i(21913, 26758);	-- Frozen Shadoweave Robe
-i(21912, 26756);	-- Frozen Shadoweave Shoulders
+i(30842, 37882);	-- Flameheart Bracers
+i(30843, 37883);	-- Flameheart Gloves
+i(30844, 37884);	-- Flameheart Vest
 i(24303, 31443);	-- Girdle of Ruination
+i(24295, 31433);	-- Golden Spellthread
+i(21893, 26749);	-- Imbued Netherweave Bag
+i(21899, 26776);	-- Imbued Netherweave Boots
+i(21898, 26775);	-- Imbued Netherweave Pants
+i(21900, 26777);	-- Imbued Netherweave Robe
+i(21901, 26778);	-- Imbued Netherweave Tunic
 i(24307, 31450);	-- Manaweave Cloak
-i(21908, 26752);	-- Spellfire Belt
-i(21909, 26753);	-- Spellfire Gloves
-i(21910, 26754);	-- Spellfire Robe
-i(24312, 31455);	-- Spellstrike Hood
-i(24309, 31452);	-- Spellstrike Pants
+i(24292, 31430);	-- Mystic Spellthread
+i(21896, 26773);	-- Netherweave Robe
+i(21897, 26774);	-- Netherweave Tunic
+i(21895, 26751);	-- Primal Mooncloth
+i(21919, 26763);	-- Primal Mooncloth Bag
+i(24305, 31448);	-- Resolute Cape
+i(24294, 31432);	-- Runic Spellthread
+i(30483, 36686);	-- Shadowcloth
+i(24293, 31431);	-- Silver Spellthread
 i(21902, 26779);	-- Soulcloth Gloves
 i(21903, 26780);	-- Soulcloth Shoulders
 i(21904, 26781);	-- Soulcloth Vest
+i(24316, 31373);	-- Spellcloth
+i(21911, 26755);	-- Spellfire Bag
+i(24312, 31455);	-- Spellstrike Hood
+i(24309, 31452);	-- Spellstrike Pants
+i(24296, 31434);	-- Unyielding Bracers
+i(35309, 31442);	-- Unyielding Girdle
+i(24306, 31449);	-- Vengeance Wrap
+i(24301, 31441);	-- White Remedy Cape
 i(24311, 31454);	-- Whitemend Hood
 i(24308, 31451);	-- Whitemend Pants
+--- MOONCLOTH ---
+i(0, 26798, nil, MOONCLOTH);		-- Mooncloth Tailoring [REMOVED 4.0.1]
+-- #if BEFORE CATA
+i(21916, 26760, nil, MOONCLOTH);	-- Primal Mooncloth Belt
+i(21917, 26762, nil, MOONCLOTH);	-- Primal Mooncloth Robe
+i(21918, 26761, nil, MOONCLOTH);	-- Primal Mooncloth Shoulders
+-- #else
+i(21916, 26760);	-- Primal Mooncloth Belt
+i(21917, 26762);	-- Primal Mooncloth Robe
+i(21918, 26761);	-- Primal Mooncloth Shoulders
+-- #endif
+--- SHADOWEAVE ---
+i(0, 26801, nil, SHADOWEAVE);	-- Shadoweave Tailoring [REMOVED 4.0.1]
+-- #if BEFORE CATA
+i(21914, 26757, nil, SHADOWEAVE);	-- Frozen Shadoweave Boots
+i(21913, 26758, nil, SHADOWEAVE);	-- Frozen Shadoweave Robe
+i(21912, 26756, nil, SHADOWEAVE);	-- Frozen Shadoweave Shoulders
+-- #else
+i(21914, 26757);	-- Frozen Shadoweave Boots
+i(21913, 26758);	-- Frozen Shadoweave Robe
+i(21912, 26756);	-- Frozen Shadoweave Shoulders
+-- #endif
+--- SPELLFIRE ---
+i(0, 26797, nil, SPELLFIRE);	-- Spellfire Tailoring [REMOVED 4.0.1]
+-- #if BEFORE CATA
+i(21908, 26752, nil, SPELLFIRE);	-- Spellfire Belt
+i(21909, 26753, nil, SPELLFIRE);	-- Spellfire Gloves
+i(21910, 26754, nil, SPELLFIRE);	-- Spellfire Robe
+-- #else
+i(21908, 26752);	-- Spellfire Belt
+i(21909, 26753);	-- Spellfire Gloves
+i(21910, 26754);	-- Spellfire Robe
+-- #endif
 
 -------------------
 --- PATCH 2.1.0 ---
@@ -423,13 +449,13 @@ i(45103, 63204);	-- Spellslinger's Slippers
 -------------------
 --- ITEM ---
 i(47654, 67079);	-- Bejeweled Wizard's Bracers [A]
-i(47639, 67145);    -- Bejeweled Wizard's Bracers [H]
+i(47639, 67145);	   -- Bejeweled Wizard's Bracers [H]
 i(47655, 67066);	-- Merlin's Robe [A]
-i(47638, 67146);    -- Merlin's Robe [H]
+i(47638, 67146);	   -- Merlin's Robe [H]
 i(47656, 67065);	-- Royal Moonshroud Bracers [A]
-i(47637, 67147);    -- Royal Moonshroud Bracers [H]
+i(47637, 67147);	   -- Royal Moonshroud Bracers [H]
 i(47657, 67064);	-- Royal Moonshroud Robe [A]
-i(47636, 67144);    -- Royal Moonshroud Robe [H]
+i(47636, 67144);	   -- Royal Moonshroud Robe [H]
 
 -------------------
 --- PATCH 3.3.0 ---
