@@ -672,6 +672,9 @@ for key,value in pairs({
 		COMPLETIONIST_MODE_TOOLTIP = "Включите данный режим, чтобы считать все Предметы Собранными только тогда, когда определённый Предмет был открыт для данного Облика.\n\nЭто означает, что Вы должны получить каждый общий Облик для Предмета.\n\nПримечание: По умолчанию, игра перестаёт сообщать Вам о Предметах, которые Вы собрали после получения общего Источника, поэтому данный режим позволит отслеживать несобранные Предметы.";
 		MAIN_ONLY = "Только основной персонаж";
 		MAIN_ONLY_TOOLTIP = "Включите данную функцию, если Вы также хотите ATT *притворяться*, что Вы собрали все общие облики, непривязанные к определённому классу или расе.\n\nНапример, если Вы собрали набор Охотника из ЦЛК, и у него есть общие облики без ограничения по классу/расе, ATT *притворится*, что Вы также собрали этот источник облика.\n\nПримечание: Переключение на другую расу/класс некорректно сообщит, что Вы собрали источники обликов, которые на самом деле не собраны для этого персонажа.";
+		--TODO: ONLY_RWP = "Only RWP";
+		--TODO: ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
+		--TODO: UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
 
 	-- General Content
 		GENERAL_CONTENT = "Общее содержимое";
@@ -708,6 +711,10 @@ for key,value in pairs({
 		APPEARANCES_CHECKBOX_TOOLTIP = "Включите для отслеживания получения обликов.\n\nПримечание: Отключение данной опции также отключит все фанфары и рассчёты о получении. Вы можете отключить для избежания лагов во время занятия важным групповым контентом, но держите в уме, что рассчёты будут произведены при обратном включении.";
 		BATTLE_PETS_CHECKBOX = "Боевые питомцы";
 		BATTLE_PETS_CHECKBOX_TOOLTIP = "Включите для отслеживания боевых питомцев и спутников. Могут быть обнаружены в открытом мире или в качестве добычи с боссов в различных Подземельях или Рейдах, равно как у торговцев и различных фракций.";
+		--TODO: DEATHS_CHECKBOX = "Deaths";
+		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
+		--TODO: EXPLORATION_CHECKBOX = "Exploration";
+		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps. \n\nNOTE: Collection logic is based on the visible map data, so if it isn't marked collected, try reloading or relogging first.";
 		FLIGHT_PATHS_CHECKBOX = "Полёты & Паромные Станции";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Включите для отслеживания путей полётов и паромных станций.\n\nЧтобы *собрать* их, начните разговор с распорядителем полётов/паромной станции на каждом континенте.\n\nПримечание: Из-за технологии фазирования, Вам может потребоваться перейти в другую версию локации, чтобы засчитать эти достопримечательности.";
 		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;
@@ -751,8 +758,12 @@ for key,value in pairs({
 		
 		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Достижения обычно отслеживаются на всю учётную запись, но есть некоторые эксклюзивные для определённых классов или рас достижения, которые Вы не сможете получить на основном персонаже.";
+		--TODO: ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
 		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Азеритовые Сущности технически не могут быть собраны и использованы на всю учётную запись, но если Вам важно только собрать их на основном персонаже, то Вам предпочтительнее отслеживать их на всю учётную запись.";
+		--TODO: ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.";
 		ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Включите, чтобы считать Разблокирования Персонажа собранными, если хотя бы один персонаж имеет к ним доступ.";
+		--TODO: ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath Classic where a statistic wasn't available to know this information. Once achievements were implemented, this feature instead acquires data directly from the statistics API. You can use the tooltip on the Death Tracker to se";
+		--TODO: ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 		ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Отслеживание Путей Полётов отдельное на каждого персонажа, но Вы действительно хотите собирать их на всех Ваших 50 персонажах?";
 		ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Спутники обычно считаются по персонажу, но Вы же не хотите собирать 243 спутника в Таверне Гарнизона по одному в неделю?\n\nОчень сомневаюсь.";
 		ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "Музыкальные ролики и селфи-фильтры обычно не отслеживаются в базе данных Blizzard, но мы можем это сделать.\n\nПРИМЕЧАНИЕ. Вы можете воспроизводить музыкальные композиции только с помощью игрушки «Музыкальный автомат» или делать селфи с помощью игрушечной камеры S.E.L.F.I.E, которую Вы собрали для текущего персонажа.";

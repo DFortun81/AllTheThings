@@ -7,10 +7,14 @@ local child = settings:CreateOptionsPage("General", appName, true)
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
 -- thing: The settings lookup for this tracking option (i.e. 'HeirloomUpgrades')
+-- officiallySupported: Whether or not this thing is supported officially in the WoW API or if ATT is faking it. (pair with an app.GameBuildVersion check)
 -- parentThing: The settings lookup which must be enabled for this tracking checkbox to be enabled (i.e. 'Heirlooms')
-child.CreateTrackingCheckbox = function(frame, localeKey, thing, parentThing)
+child.CreateTrackingCheckbox = function(frame, localeKey, thing, officiallySupported, parentThing)
 	local name = L[localeKey.."_CHECKBOX"]
 	local tooltip = L[localeKey.."_CHECKBOX_TOOLTIP"]
+	if not officiallySupported then
+		tooltip = tooltip .. "\n\n" .. L.UNOFFICIAL_SUPPORT_TOOLTIP;
+	end
 	if settings.RequiredForInsaneMode[thing] then
 		name = app.ccColors.Insane .. name;
 	end
@@ -91,12 +95,13 @@ else
 	headerMode:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 app.AddEventHandler("OnSettingsRefreshed", function()
-	headerMode:SetText(settings:GetModeString());
+	headerMode:SetText(settings:GetModeString() .. " (" .. settings:GetShortModeString() .. ")");
 end);
 
 local textModeExplain = child:CreateTextLabel(L.MODE_EXPLAIN_LABEL)
 textModeExplain:SetPoint("TOPLEFT", headerMode, "BOTTOMLEFT", 0, -4)
-textModeExplain:SetPoint("RIGHT", child, "RIGHT", 0)
+textModeExplain:SetPoint("RIGHT", child.separator or child, "RIGHT", 8)
+textModeExplain:SetWordWrap(true)
 
 -- Column 1
 local checkboxDebugMode = child:CreateCheckBox(L.DEBUG_MODE,
@@ -205,82 +210,116 @@ function(self)
 	settings:UpdateMode(1)
 end)
 local tooltip = L.APPEARANCES_CHECKBOX_TOOLTIP;
+if app.GameBuildVersion < 40000 then
+	tooltip = tooltip .. "\n\n" .. L.UNOFFICIAL_SUPPORT_TOOLTIP;
+end
 if settings.ForceAccountWide["Transmog"] then
 	tooltip = tooltip .. "\n\n" .. L.ACC_WIDE_DEFAULT;
 end
 checkboxTransmog:SetATTTooltip(tooltip)
 checkboxTransmog:AlignAfter(accwideCheckboxTransmog)
 
-local checkboxSources = child:CreateCheckBox(L.COMPLETIONIST_MODE,
-function(self)
-	self:SetChecked(settings:Get("Completionist"))
-	if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetCompletionistMode(self:GetChecked())
-end)
-checkboxSources:SetATTTooltip(L.COMPLETIONIST_MODE_TOOLTIP)
-checkboxSources:AlignAfter(checkboxTransmog)
+local checkboxMainOnlyMode;
+if app.GameBuildVersion >= 40000 then	-- Transmog officially supported with Cataclysm.
+	local checkboxSources = child:CreateCheckBox(L.COMPLETIONIST_MODE,
+	function(self)
+		self:SetChecked(settings:Get("Completionist"))
+		if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:SetCompletionistMode(self:GetChecked())
+	end)
+	checkboxSources:SetATTTooltip(L.COMPLETIONIST_MODE_TOOLTIP)
+	checkboxSources:AlignAfter(checkboxTransmog)
 
-local checkboxMainOnlyMode = child:CreateCheckBox(L.MAIN_ONLY,
-function(self)
-	local _, classFilename = UnitClass("player")
-	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
-	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
-	self:SetChecked(settings:Get("MainOnly"))
-	if settings:Get("Completionist") or app.MODE_ACCOUNT or app.MODE_DEBUG then
-		self:SetChecked(false)
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
+	checkboxMainOnlyMode = child:CreateCheckBox(L.MAIN_ONLY,
+	function(self)
+		local _, classFilename = UnitClass("player")
+		local rPerc, gPerc, bPerc = GetClassColor(classFilename)
+		self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 		self:SetChecked(settings:Get("MainOnly"))
-		self:Enable()
-		self:SetAlpha(1)
+		if settings:Get("Completionist") or app.MODE_ACCOUNT or app.MODE_DEBUG then
+			self:SetChecked(false)
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:SetChecked(settings:Get("MainOnly"))
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:SetMainOnlyMode(self:GetChecked())
+	end)
+	checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
+	checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
+else
+	local checkboxOnlyRWP = child:CreateCheckBox(L.ONLY_RWP,
+	function(self)
+		self:SetChecked(settings:Get("Only:RWP"))
+		if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:Set("Only:RWP", self:GetChecked());
+		settings:UpdateMode(1);
+	end)
+	checkboxOnlyRWP:SetATTTooltip(L.ONLY_RWP_TOOLTIP)
+	checkboxOnlyRWP:AlignAfter(checkboxTransmog)
+end
+
+-- Heirlooms aren't in the game until late Wrath Classic.
+local accwideCheckboxHeirlooms;
+if C_Heirloom and app.GameBuildVersion >= 30000 then
+	accwideCheckboxHeirlooms =
+	child:CreateForcedAccountWideCheckbox()
+		:AlignBelow(checkboxMainOnlyMode or accwideCheckboxTransmog, checkboxMainOnlyMode and accwideCheckboxTransmog)
+	local checkboxHeirlooms =
+	child:CreateTrackingCheckbox("HEIRLOOMS", "Heirlooms", true)
+		:AlignAfter(accwideCheckboxHeirlooms)
+	if app.GameBuildVersion >= 60000 then	-- Heirloom Upgrades added with WOD
+		child:CreateTrackingCheckbox("HEIRLOOMS_UPGRADES", "HeirloomUpgrades", true, "Heirlooms")
+			:AlignAfter(checkboxHeirlooms)
 	end
-end,
-function(self)
-	settings:SetMainOnlyMode(self:GetChecked())
-end)
-checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
-checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
+end
 
-local accwideCheckboxHeirlooms =
+-- Illusions aren't in the game until Transmog is. (Still unknown if it'll come out with Cataclysm Classic or not)
+local accwideCheckboxIllusions;
+if C_TransmogCollection then
+accwideCheckboxIllusions =
 child:CreateForcedAccountWideCheckbox()
-	:AlignBelow(checkboxMainOnlyMode, accwideCheckboxTransmog)
-local checkboxHeirlooms =
-child:CreateTrackingCheckbox("HEIRLOOMS", "Heirlooms")
-	:AlignAfter(accwideCheckboxHeirlooms)
-child:CreateTrackingCheckbox("HEIRLOOMS_UPGRADES", "HeirloomUpgrades", "Heirlooms")
-	:AlignAfter(checkboxHeirlooms)
-
-local accwideCheckboxIllusions =
-child:CreateForcedAccountWideCheckbox()
-	:AlignBelow(accwideCheckboxHeirlooms)
-child:CreateTrackingCheckbox("ILLUSIONS", "Illusions")
+	:AlignBelow(accwideCheckboxHeirlooms or accwideCheckboxTransmog)
+child:CreateTrackingCheckbox("ILLUSIONS", "Illusions", true)
 	:AlignAfter(accwideCheckboxIllusions)
+end
 
 local accwideCheckboxMounts =
 child:CreateForcedAccountWideCheckbox()
-	:AlignBelow(accwideCheckboxIllusions)
-child:CreateTrackingCheckbox("MOUNTS", "Mounts")
+	:AlignBelow(accwideCheckboxIllusions or accwideCheckboxHeirlooms or accwideCheckboxTransmog)
+child:CreateTrackingCheckbox("MOUNTS", "Mounts", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
 	:AlignAfter(accwideCheckboxMounts)
 
 local accwideCheckboxBattlePets =
 child:CreateForcedAccountWideCheckbox()
 	:AlignBelow(accwideCheckboxMounts)
-child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets")
+child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath.
 	:AlignAfter(accwideCheckboxBattlePets)
 
 local accwideCheckboxToys =
 child:CreateForcedAccountWideCheckbox()
 	:AlignBelow(accwideCheckboxBattlePets)
-child:CreateTrackingCheckbox("TOYS", "Toys")
+child:CreateTrackingCheckbox("TOYS", "Toys", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
 	:AlignAfter(accwideCheckboxToys)
 
 local headerGeneralThings = child:CreateHeaderLabel(L.GENERAL_THINGS_LABEL)
@@ -307,48 +346,68 @@ end
 
 local accwideCheckboxAchievements =
 child:CreateAccountWideCheckbox("ACHIEVEMENTS", "Achievements")
-child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements")
+child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
 	:AlignAfter(accwideCheckboxAchievements)
 accwideCheckboxAchievements:SetPoint("TOPLEFT", headerGeneralThings, "BOTTOMLEFT", -2, 0)
 
-local accwideCheckboxCharacterUnlocks =
+local accwideCheckboxCharacterUnlocks;
+if app.IsRetail then
+-- Crieve doesn't like this class and thinks the functionality should remain on the Quest, Item, or Spell classes.
+accwideCheckboxCharacterUnlocks =
 child:CreateAccountWideCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks")
 	:AlignBelow(accwideCheckboxAchievements)
-child:CreateTrackingCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks")
+child:CreateTrackingCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks", true)
 	:AlignAfter(accwideCheckboxCharacterUnlocks)
+end
+
+local accwideCheckboxExploration;
+if app.IsClassic then
+-- Classic wants you to collect these, but Retail doesn't yet.
+local accwideCheckboxDeaths =
+child:CreateAccountWideCheckbox("DEATHS", "Deaths")
+	:AlignBelow(accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
+child:CreateTrackingCheckbox("DEATHS", "Deaths", true)
+	:AlignAfter(accwideCheckboxDeaths)
+
+accwideCheckboxExploration =
+child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
+	:AlignBelow(accwideCheckboxDeaths)
+child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
+	:AlignAfter(accwideCheckboxExploration)
+end
 
 local accwideCheckboxFlightPaths =
 child:CreateAccountWideCheckbox("FLIGHT_PATHS", "FlightPaths")
-	:AlignBelow(accwideCheckboxCharacterUnlocks)
-child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths")
+	:AlignBelow(accwideCheckboxExploration or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
+child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths", true)
 	:AlignAfter(accwideCheckboxFlightPaths)
 
 local accwideCheckboxQuests =
 child:CreateAccountWideCheckbox("QUESTS", "Quests")
 	:AlignBelow(accwideCheckboxFlightPaths)
 local checkboxQuests =
-child:CreateTrackingCheckbox("QUESTS", "Quests")
+child:CreateTrackingCheckbox("QUESTS", "Quests", true)
 	:AlignAfter(accwideCheckboxQuests)
-child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked")
+child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked", true)
 	:AlignAfter(checkboxQuests)
 
 local accwideCheckboxRecipes =
 child:CreateAccountWideCheckbox("RECIPES", "Recipes")
 	:AlignBelow(accwideCheckboxQuests)
-child:CreateTrackingCheckbox("RECIPES", "Recipes")
+child:CreateTrackingCheckbox("RECIPES", "Recipes", true)
 	:AlignAfter(accwideCheckboxRecipes)
 
 local accwideCheckboxReputations =
 child:CreateAccountWideCheckbox("REPUTATIONS", "Reputations")
 	:AlignBelow(accwideCheckboxRecipes)
-child:CreateTrackingCheckbox("REPUTATIONS", "Reputations")
+child:CreateTrackingCheckbox("REPUTATIONS", "Reputations", true)
 	:AlignAfter(accwideCheckboxReputations)
 
 local accwideCheckboxTitles =
 child:CreateAccountWideCheckbox("TITLES", "Titles")
 	:AlignBelow(accwideCheckboxReputations)
 local checkboxTitles =
-child:CreateTrackingCheckbox("TITLES", "Titles")
+child:CreateTrackingCheckbox("TITLES", "Titles", true)
 	:AlignAfter(accwideCheckboxTitles)
 
 -- Column 2
@@ -558,14 +617,14 @@ if app.GameBuildVersion >= 60000 then
 	local accwideCheckboxFollowers =
 	child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
 	accwideCheckboxFollowers:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
-	child:CreateTrackingCheckbox("FOLLOWERS", "Followers")
+	child:CreateTrackingCheckbox("FOLLOWERS", "Followers", true)
 		:AlignAfter(accwideCheckboxFollowers)
 	
 	-- Music Rolls & Selfie Filters (Warlords+) [TODO: Do we want to split these up?]
 	local accwideCheckboxMusicRollsAndSelfieFilters =
 	child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
 		:AlignBelow(accwideCheckboxFollowers)
-	child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+	child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters", true)
 		:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
 	
 	if app.GameBuildVersion >= 80000 then
@@ -573,7 +632,7 @@ if app.GameBuildVersion >= 60000 then
 		local accwideCheckboxAzeriteEssences =
 		child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
 			:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
-		child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
+		child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences", true)
 			:AlignAfter(accwideCheckboxAzeriteEssences)
 		
 		if app.GameBuildVersion >= 90000 then
@@ -581,14 +640,14 @@ if app.GameBuildVersion >= 60000 then
 			local accwideCheckboxConduits =
 			child:CreateAccountWideCheckbox("SOULBINDCONDUITS", "Conduits")
 				:AlignBelow(accwideCheckboxAzeriteEssences)
-			child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits")
+			child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits", true)
 				:AlignAfter(accwideCheckboxConduits)
 			
 			-- Runeforge Legendaries (Shadowlands+)
 			local accwideCheckboxRunecarvingPowers =
 			child:CreateForcedAccountWideCheckbox()
 				:AlignBelow(accwideCheckboxConduits)
-			child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
+			child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries", true)
 				:AlignAfter(accwideCheckboxRunecarvingPowers)
 			
 			if app.GameBuildVersion >= 90000 then
@@ -596,7 +655,7 @@ if app.GameBuildVersion >= 60000 then
 				local accwideCheckboxDrakewatcherManuscripts =
 				child:CreateForcedAccountWideCheckbox()
 					:AlignBelow(accwideCheckboxRunecarvingPowers)
-				child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
+				child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts", true)
 					:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
 			end
 		end

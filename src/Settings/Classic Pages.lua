@@ -341,7 +341,7 @@ function(self)
 	settings:Set("Thing:Exploration", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ExplorationCheckBox:SetATTTooltip("Enable this option to track exploration completion for outdoor maps. If you want the Explorer title, completing this in preparation for Wrath Classic will greatly help you!");
+ExplorationCheckBox:SetATTTooltip("Enable this option to track exploration completion for outdoor maps. Collection logic is based on the visible map data, so if it isn't marked collected, try reloading or relogging first.");
 ExplorationCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "BOTTOMLEFT", 0, 4);
 ExplorationCheckBox.OnTooltip = OnTooltipForThing;
 
