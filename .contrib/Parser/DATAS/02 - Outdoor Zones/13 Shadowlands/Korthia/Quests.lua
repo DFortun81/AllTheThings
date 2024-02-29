@@ -1353,7 +1353,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
-			q(64549, {	-- Legend of the Animaswell [Night Fae]
+			q(64549, {	-- Legend of the Animaswell [NIght Fae]
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187423 },	-- Legend of the Animaswell
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
@@ -1372,10 +1372,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187428 },	-- Legend of the Animaswell
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-			}),
-			q(64521, {	-- Helsworn Battle Plans
-				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-				["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
 			}),
 		})),
 		--	Dailies

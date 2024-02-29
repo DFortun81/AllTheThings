@@ -3333,6 +3333,7 @@ root(ROOTS.Unsorted, {
 				i(187002),	-- Delicious Pet Cookie
 				i(185727),	-- Draka's Battlehorn
 				i(185740),	-- Head of Azodius
+				i(187275),	-- Helsworn Battle Plans
 				i(185915),	-- Korthian Artifact
 				i(186733),	-- Lovely Pet Caller
 				i(185766),	-- Necrolite Focusing Crystal
