@@ -41,6 +41,20 @@ settings.ForceAccountWide = {
 	Illusions = true,
 	Toys = true,
 }
+settings.RequiredForInsaneMode = {
+	Achievements = true,
+	BattlePets = true,
+	FlightPaths = true,
+	Heirlooms = true,
+	Illusions = true,
+	Mounts = true,
+	Quests = true,
+	Recipes = true,
+	Reputations = true,
+	Titles = true,
+	Toys = true,
+	Transmog = true,
+}
 
 -- Settings Class
 local Things = {

@@ -3,8 +3,6 @@ if GetLocale() ~= "koKR" then return; end
 local app = select(2, ...);
 local L = app.L;
 
-local DRAKE_MANUSCRIPTS = "비룡감시자 필사본";	--TODO: plural
-
 -- General Text
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
@@ -285,35 +283,6 @@ local DRAKE_MANUSCRIPTS = "비룡감시자 필사본";	--TODO: plural
 		--TODO: L.MINIMAP_SLIDER = "Minimap Button Size";
 		--TODO: L.MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
-		--TODO: L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
-		L.TMOG_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";	--TODO
-		--TODO: L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
-		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.";	--TODO
-		--TODO: L.CHARACTERUNLOCKS_CHECKBOX = app.ccColors.Insane..CHARACTER.." "..UNLOCK.."s";
-		--TODO: L.CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track "..CHARACTER.." "..UNLOCK.."s. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
-		--TODO: L.FLIGHT_PATHS_CHECKBOX = app.ccColors.Insane .. "Flight Paths & Ferry Stations";
-		--TODO: L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
-		--TODO: L.FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
-		--TODO: L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
-		--TODO: L.HEIRLOOMS_UPGRADES_CHECKBOX = app.ccColors.Insane .. "+Upgrades";
-		--TODO: L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
-		L.ILLUSIONS_CHECKBOX = app.ccColors.Insane..WEAPON_ENCHANTMENT;	--TODO: make it plural
-		L.ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";	--TODO
-		L.MOUNTS_CHECKBOX_TOOLTIP = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!";	--TODO
-		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t " .. app.ccColors.Insane .. "Music Rolls & Selfie Filters";
-		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
-		--TODO: L.QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-		--TODO: L.QUESTS_LOCKED_CHECKBOX = app.ccColors.Insane .. "+Locked";
-		L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." Quests to incorporate progress from other characters.";	--TODO
-		--TODO: L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
-		--TODO: L.REPUTATIONS_CHECKBOX = app.ccColors.Insane .. "Reputations";
-		--TODO: L.REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
-		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t " .. app.ccColors.Insane .. "Runecarving Powers";
-		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
-		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;	--TODO
-		--TODO: L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Soulbind Conduits.";
-		--TODO: L.TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
-		L.TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";	--TODO
 		--TODO: L.MINIMAP_BUTTON_CHECKBOX = "Show the Minimap Button";
 		--TODO: L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 		--TODO: L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
@@ -629,7 +598,7 @@ for key,value in pairs({
 		[-924] = "이동 연결망",											-- Transport Network
 		[-967] = "거울 복구 작업",										-- Mirror Restoration
 	-- Dragonflight
-		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
+		[-1100] = "비룡감시자 필사본",										-- Drakewatcher Manuscripts
 		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
@@ -700,7 +669,53 @@ for key,value in pairs({
 		--TODO: ACCOUNT_THINGS_LABEL = "Account-Wide Things";
 		--TODO: GENERAL_THINGS_LABEL = "General Things";
 		--TODO: STRANGER_THINGS_LABEL = "Stranger Things";
+		
+		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
+		--TODO: ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
+		APPEARANCES_CHECKBOX = "형상";
+		--TODO: APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";
+		BATTLE_PETS_CHECKBOX = "전투 애완동물";
+		--TODO: BATTLE_PETS_CHECKBOX_TOOLTIP = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.";
+		--TODO: FLIGHT_PATHS_CHECKBOX = "Flight Paths";
+		--TODO: FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
+		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;
+		--TODO: HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
+		--TODO: HEIRLOOMS_UPGRADES_CHECKBOX = "+Upgrades";
+		--TODO: HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
+		--TODO: ILLUSIONS_CHECKBOX = "Illusions";
+		--TODO: ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";
+		--TODO: MOUNTS_CHECKBOX = MOUNTS;
+		--TODO: MOUNTS_CHECKBOX_TOOLTIP = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!";
+		--TODO: QUESTS_CHECKBOX = QUESTS_LABEL;
+		--TODO: QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
+		--TODO: QUESTS_LOCKED_CHECKBOX = "+Locked";
+		--TODO: QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
+		RECIPES_CHECKBOX = "제조법";
+		--TODO: RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
+		--TODO: REPUTATIONS_CHECKBOX = "Reputations";
+		--TODO: REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
+		TITLES_CHECKBOX = "칭호";
+		--TODO: TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
+		--TODO: TOYS_CHECKBOX = TOY_BOX;
+		--TODO: TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
+		
+		-- Expansion Things
 		--TODO: EXPANSION_THINGS_LABEL = "Expansion Things";
+		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 아제로스의 심장 정수";
+		--TODO: AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
+		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 비룡감시자 필사본";
+		--TODO: DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track Dragonflight 비룡감시자 필사본";
+		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 추종자 및 동료";
+		--TODO: FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
+		--TODO: MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Music Rolls & Selfie Filters";
+		--TODO: MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
+		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 룬조각 능력";
+		--TODO: RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
+		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 도관";
+		--TODO: SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands 도관.";
+		
+		--TODO: CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
+		--TODO: CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
 
 	-- General: Filters Page
 	--TODO: ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";

@@ -45,6 +45,28 @@ settings.ForceAccountWide = {
 	Toys = true,
 	Transmog = true,
 }
+settings.RequiredForInsaneMode = {
+	Achievements = true,
+	AzeriteEssences = true,
+	BattlePets = true,
+	CharacterUnlocks = true,
+	Conduits = true,
+	DrakewatcherManuscripts = true,
+	FlightPaths = true,
+	Followers = true,
+	Heirlooms = true,
+	HeirloomUpgrades = true,
+	Illusions = true,
+	Mounts = true,
+	MusicRollsAndSelfieFilters = true,
+	Quests = true,
+	Recipes = true,
+	Reputations = true,
+	RuneforgeLegendaries = true,
+	Titles = true,
+	Toys = true,
+	Transmog = true,
+}
 
 -- Settings Class
 local Things = {
@@ -544,18 +566,28 @@ settings.GetModeString = function(self)
 		local things = {}
 		local thingCount = 0
 		local totalThingCount = 0
-		local keyPrefix
+		local keyPrefix, thingName, thingActive
+		local insaneTotalCount, insaneCount = 0, 0;
 		local solo = true
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			keyPrefix = key:sub(1, 6)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1
-				if settings:Get(key) and
+				thingActive = settings:Get(key);
+				thingName = key:sub(7);
+				if thingActive then
 					-- Heirloom Upgrades only count when Heirlooms are enabled
-					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
-					then
-					thingCount = thingCount + 1
-					table.insert(things, key:sub(7))
+					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
+					if key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms") then
+						thingCount = thingCount + 1
+						table.insert(things, thingName)
+					end
+					if self.RequiredForInsaneMode[thingName] then
+						insaneTotalCount = insaneTotalCount + 1;
+						insaneCount = insaneCount + 1;
+					end
+				elseif self.RequiredForInsaneMode[thingName] then
+					insaneTotalCount = insaneTotalCount + 1;
 				end
 			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
 				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
@@ -568,7 +600,7 @@ settings.GetModeString = function(self)
 			mode = things[1] .. L["TITLE_ONLY"] .. mode
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. L["TITLE_ONLY"] .. mode
-		elseif thingCount == totalThingCount then
+		elseif insaneCount == insaneTotalCount then
 			-- only insane if not hiding anything!
 			if settings:NonInsane() then
 				-- don't add insane :)

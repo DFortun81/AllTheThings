@@ -11,6 +11,9 @@ local child = settings:CreateOptionsPage("General", appName, true)
 child.CreateTrackingCheckbox = function(frame, localeKey, thing, parentThing)
 	local name = L[localeKey.."_CHECKBOX"]
 	local tooltip = L[localeKey.."_CHECKBOX_TOOLTIP"]
+	if settings.RequiredForInsaneMode[thing] then
+		name = app.ccColors.Insane .. name;
+	end
 	if settings.ForceAccountWide[thing] then
 		tooltip = tooltip .. "\n\n" .. L.ACC_WIDE_DEFAULT;
 	end
@@ -179,7 +182,11 @@ end
 local accwideCheckboxTransmog = child:CreateForcedAccountWideCheckbox()
 accwideCheckboxTransmog:SetPoint("TOPLEFT", headerAccountThings, "BOTTOMLEFT", -2, 0)
 
-local checkboxTransmog = child:CreateCheckBox(L["TMOG_CHECKBOX"],
+local name = L.APPEARANCES_CHECKBOX;
+if settings.RequiredForInsaneMode["Transmog"] then
+	name = app.ccColors.Insane .. name;
+end
+local checkboxTransmog = child:CreateCheckBox(name,
 function(self)
 	self:SetChecked(settings:Get("Thing:Transmog"))
 	if app.MODE_DEBUG then
@@ -197,7 +204,7 @@ function(self)
 	end
 	settings:UpdateMode(1)
 end)
-local tooltip = L.TMOG_CHECKBOX_TOOLTIP;
+local tooltip = L.APPEARANCES_CHECKBOX_TOOLTIP;
 if settings.ForceAccountWide["Transmog"] then
 	tooltip = tooltip .. "\n\n" .. L.ACC_WIDE_DEFAULT;
 end
