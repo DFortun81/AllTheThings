@@ -115,6 +115,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["DisablePartySync"] = true,
+					["lockCriteria"] = { 1, "questID", 78386 }	-- Emerald Reawakening
 				}),
 			}, {	-- RENOWN 3 --
 				q(78385, {	-- Small Dreamseeds
