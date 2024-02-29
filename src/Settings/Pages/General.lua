@@ -168,7 +168,7 @@ end);
 checkboxLootMode:SetATTTooltip(L.LOOT_MODE_TOOLTIP);
 checkboxLootMode:AlignBelow(checkboxAccountMode)
 
-local headerAccountThings = child:CreateHeaderLabel(L["ACCOUNT_THINGS_LABEL"])
+local headerAccountThings = child:CreateHeaderLabel(L.ACCOUNT_THINGS_LABEL)
 headerAccountThings:SetPoint("LEFT", headerMode, 0, 0)
 headerAccountThings:SetPoint("TOP", checkboxLootMode, "BOTTOM", 0, -10)
 headerAccountThings.OnRefresh = function(self)
@@ -283,7 +283,7 @@ child:CreateForcedAccountWideCheckbox()
 child:CreateTrackingCheckbox("TOYS", "Toys")
 	:AlignAfter(accwideCheckboxToys)
 
-local headerGeneralThings = child:CreateHeaderLabel(L["GENERAL_THINGS_LABEL"])
+local headerGeneralThings = child:CreateHeaderLabel(L.GENERAL_THINGS_LABEL)
 headerGeneralThings:SetPoint("LEFT", headerMode, 0, 0)
 headerGeneralThings:SetPoint("TOP", accwideCheckboxToys, "BOTTOM", 0, -10)
 headerGeneralThings.OnRefresh = function(self)
@@ -371,7 +371,7 @@ checkboxShowAllTrackableThings:SetATTTooltip(L.SHOW_INCOMPLETE_THINGS_CHECKBOX_T
 checkboxShowAllTrackableThings:SetPoint("TOP", checkboxDebugMode, "TOP", 0, 0)
 checkboxShowAllTrackableThings:SetPoint("LEFT", textModeExplain, "LEFT", 320, 0)
 
-local checkboxShowCompletedGroups = child:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
+local checkboxShowCompletedGroups = child:CreateCheckBox(L.SHOW_COMPLETED_GROUPS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:Get("Show:CompletedGroups"))
 end,
@@ -380,10 +380,10 @@ function(self)
 	settings:Set("Cache:CompletedGroups", self:GetChecked())
 	settings:UpdateMode(1)
 end)
-checkboxShowCompletedGroups:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"])
+checkboxShowCompletedGroups:SetATTTooltip(L.SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP)
 checkboxShowCompletedGroups:AlignBelow(checkboxShowAllTrackableThings)
 
-local checkboxShowCollectedThings = child:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
+local checkboxShowCollectedThings = child:CreateCheckBox(L.SHOW_COLLECTED_THINGS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:Get("Show:CollectedThings"))
 end,
@@ -391,7 +391,7 @@ function(self)
 	settings:SetCollectedThings(self:GetChecked())
 	settings:Set("Cache:CollectedThings", self:GetChecked())
 end)
-checkboxShowCollectedThings:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
+checkboxShowCollectedThings:SetATTTooltip(L.SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP)
 checkboxShowCollectedThings:AlignBelow(checkboxShowCompletedGroups)
 
 local headerGeneralContent = child:CreateHeaderLabel(L.GENERAL_CONTENT)
@@ -543,7 +543,7 @@ checkboxShowPvP:AlignBelow(checkboxShowPetBattles)
 -- Expansion Things
 if app.GameBuildVersion >= 60000 then
 	-- This section is hidden until after Warlords!
-	local headerExpansionThings = child:CreateHeaderLabel(L["EXPANSION_THINGS_LABEL"])
+	local headerExpansionThings = child:CreateHeaderLabel(L.EXPANSION_THINGS_LABEL)
 	headerExpansionThings:SetPoint("LEFT", headerGeneralContent, 0, 0)
 	headerExpansionThings:SetPoint("TOP", headerGeneralThings, "TOP", 0, 0)
 	headerExpansionThings.OnRefresh = function(self)

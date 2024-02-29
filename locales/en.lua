@@ -378,10 +378,6 @@ for key, value in pairs({
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 	["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
 	["WORLDMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
-	["SHOW_COMPLETED_GROUPS_CHECKBOX"] = "Show Completed Groups";
-	["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
-	["SHOW_COLLECTED_THINGS_CHECKBOX"] = "Show Collected Things";
-	["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
 	["EXPAND_DIFFICULTY_CHECKBOX"] = "Expand Current Difficulty";
 	["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
 	["WARN_DIFFICULTY_CHECKBOX"] = "Warn Completed Difficulty";
