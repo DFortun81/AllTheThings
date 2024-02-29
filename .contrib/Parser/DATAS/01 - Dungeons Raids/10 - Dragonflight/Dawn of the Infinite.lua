@@ -60,7 +60,6 @@ local QUANTUM_GROUP = sharedData({
 				["collectible"] = false,
 			}),
 			ig(114389),	-- Element-Binder Helm				(NYI)
-			ig(18304),	-- Greenroot Mail					(NYI Unique)
 			ig(114265),	-- Leafscale Helm					(NYI)
 			ig(121508),	-- Stormborn Crown					(NYI)
 
@@ -194,9 +193,11 @@ local QUANTUM_GROUP = sharedData({
 				["collectible"] = false,
 			}),
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
+			ig(18304),	-- Greenroot Mail					(NYI Unique)
 			ig(114252),	-- Leafscale Chestguard				(NYI)
 			ig(4015),	-- Sterling Chain Armor				(NYI)
 
+			ig(2016),	-- Dusty Chain Armor				(Removed)
 			ig(134732),	-- Frigidlink Armor					(Removed)
 			ig(6773),	-- Gelkis Marauder Chain			(Removed)
 			ig(2273),	-- Guerrilla Armor					(Removed)
@@ -500,9 +501,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
 		ig(108054),	-- Draenic Steel Dagger					(NYI)
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
+		ig(108234),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108235),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger		(NYI)
-		ig(108234),	-- Peerless Draenic Steel Dagger		(NYI)
+		ig(108237),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(115295),	-- Spectral Dagger						(NYI)
 		ig(2664),	-- Spinner Fang							(NYI)
 		ig(3222),	-- Wicked Dagger						(NYI)

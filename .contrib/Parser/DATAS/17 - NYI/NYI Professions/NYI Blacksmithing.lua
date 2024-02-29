@@ -81,7 +81,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108084),	-- Hardened Draenic Steel Girdle
 					i(108079),	-- Hardened Draenic Steel Warboots
 					i(108085),	-- Hardened Draenic Steel Wristwraps
-					i(108237),	-- Peerless Draenic Steel Dagger
 					i(108178),	-- Peerless Draenic Steel Chestplate
 					i(108194),	-- Peerless Draenic Steel Chestplate
 					i(108168),	-- Peerless Draenic Steel Girdle
