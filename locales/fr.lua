@@ -687,6 +687,8 @@ for key,value in pairs({
 		--TODO: SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX = "Aucune restriction de niveau";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez que le contenu soit disponible quel que soit le niveau du joueur.\n\nREMARQUE : désactiver cette option est utile pour les nouveaux comptes.";
+		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
+		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
 		SHOW_BOE_CHECKBOX = "Objets LqE / LaC";
 		SHOW_BOE_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher les objets Lié quand équipé ou Lié au compte..\n\nDésativer cette option est utile lorsque vous essayez de terminer un donjon classique pour un personnage et que vous ne souhaitez pas farmer des objets qui peuvent être obtenus sur des personnages secondaires ou à l’hôtel des ventes.\n\nCàD : Ne perdez pas votre temps pour le Pendule du destin.";
 		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignorer les objets LqE / LqR";

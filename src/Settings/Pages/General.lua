@@ -57,6 +57,10 @@ end
 -- localeKey: The prefix of the locale lookup value (i.e. ACHIEVEMENTS)
 -- thing: The settings lookup for this tracking option (i.e. 'Achievements')
 child.CreateAccountWideCheckbox = function(frame, localeKey, thing)
+	if settings.ForceAccountWide[thing] then
+		return frame:CreateForcedAccountWideCheckbox();
+	end
+	
 	local tooltip = L["ACCOUNT_WIDE_"..localeKey.."_TOOLTIP"]
 	local trackingOption = "Thing:"..thing
 	local accountWideOption = "AccountWide:"..thing
@@ -184,7 +188,7 @@ headerAccountThings.OnRefresh = function(self)
 	end
 end
 
-local accwideCheckboxTransmog = child:CreateForcedAccountWideCheckbox()
+local accwideCheckboxTransmog = child:CreateAccountWideCheckbox("APPEARANCES", "Transmog")
 accwideCheckboxTransmog:SetPoint("TOPLEFT", headerAccountThings, "BOTTOMLEFT", -2, 0)
 
 local name = L.APPEARANCES_CHECKBOX;
@@ -283,7 +287,7 @@ end
 local accwideCheckboxHeirlooms;
 if C_Heirloom and app.GameBuildVersion >= 30000 then
 	accwideCheckboxHeirlooms =
-	child:CreateForcedAccountWideCheckbox()
+	child:CreateAccountWideCheckbox("HEIRLOOMS", "Heirlooms")
 		:AlignBelow(checkboxMainOnlyMode or accwideCheckboxTransmog, checkboxMainOnlyMode and accwideCheckboxTransmog)
 	local checkboxHeirlooms =
 	child:CreateTrackingCheckbox("HEIRLOOMS", "Heirlooms", true)
@@ -298,26 +302,26 @@ end
 local accwideCheckboxIllusions;
 if C_TransmogCollection then
 accwideCheckboxIllusions =
-child:CreateForcedAccountWideCheckbox()
+child:CreateAccountWideCheckbox("ILLUSIONS", "Illusions")
 	:AlignBelow(accwideCheckboxHeirlooms or accwideCheckboxTransmog)
 child:CreateTrackingCheckbox("ILLUSIONS", "Illusions", true)
 	:AlignAfter(accwideCheckboxIllusions)
 end
 
 local accwideCheckboxMounts =
-child:CreateForcedAccountWideCheckbox()
+child:CreateAccountWideCheckbox("MOUNTS", "Mounts")
 	:AlignBelow(accwideCheckboxIllusions or accwideCheckboxHeirlooms or accwideCheckboxTransmog)
 child:CreateTrackingCheckbox("MOUNTS", "Mounts", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
 	:AlignAfter(accwideCheckboxMounts)
 
 local accwideCheckboxBattlePets =
-child:CreateForcedAccountWideCheckbox()
+child:CreateAccountWideCheckbox("BATTLE_PETS", "BattlePets")
 	:AlignBelow(accwideCheckboxMounts)
 child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath.
 	:AlignAfter(accwideCheckboxBattlePets)
 
 local accwideCheckboxToys =
-child:CreateForcedAccountWideCheckbox()
+child:CreateAccountWideCheckbox("TOYS", "Toys")
 	:AlignBelow(accwideCheckboxBattlePets)
 child:CreateTrackingCheckbox("TOYS", "Toys", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
 	:AlignAfter(accwideCheckboxToys)
@@ -522,6 +526,27 @@ app.AddEventHandler("OnPlayerLevelUp", function()
 	end
 end);
 
+local checkboxNoSkillLevelFilter;
+if app.GameBuildVersion < 20000 then
+checkboxNoSkillLevelFilter = child:CreateCheckBox("|T1530081:0|t " .. app.ccColors.Insane .. L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX,
+function(self)
+	self:SetChecked(not settings:Get("Filter:BySkillLevel"))	-- Inversed, so enabled = show
+	if app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:Set("Filter:BySkillLevel", not self:GetChecked())	-- Inversed, so enabled = show
+	settings:UpdateMode(1)
+end)
+checkboxNoSkillLevelFilter:SetATTTooltip(L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP)
+checkboxNoSkillLevelFilter:AlignBelow(checkboxNoLevelFilter)
+end
+
 -- Personal Loot was introduced with Mists of Pandaria
 local checkboxShowAllLearnableQuestRewards;
 if app.GameBuildVersion >= 50000 then
@@ -561,7 +586,7 @@ local checkboxNoSeasonalFilter = child:CreateCheckBox("|T"..app.asset("Category_
 	end
 )
 checkboxNoSeasonalFilter:SetATTTooltip(L.SHOW_ALL_SEASONAL_TOOLTIP)
-checkboxNoSeasonalFilter:AlignBelow(checkboxShowAllLearnableQuestRewards or checkboxNoLevelFilter)
+checkboxNoSeasonalFilter:AlignBelow(checkboxShowAllLearnableQuestRewards or checkboxNoSkillLevelFilter or checkboxNoLevelFilter)
 
 local checkboxShowPetBattles = child:CreateCheckBox("|T"..app.asset("Category_PetBattles")..":0|t " .. app.ccColors.Insane .. L.SHOW_PET_BATTLES_CHECKBOX,
 function(self)

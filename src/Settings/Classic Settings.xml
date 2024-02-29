@@ -4,8 +4,8 @@
 	<Script file="Classic Settings.lua"/>
 	<!-- <Script file="Retail Settings.lua"/> -->
 	<Script file="Pages/About.lua"/>
+	<Script file="Pages/General.lua"/>
 	<Script file="Classic Pages.lua"/>
-	<!-- <Script file="Pages/General.lua"/> -->
 	<Script file="Pages/General - Filters.lua"/>
 	<Script file="Pages/General - Phases.lua"/>
 	<Script file="Pages/General - Unobtainables.lua"/>

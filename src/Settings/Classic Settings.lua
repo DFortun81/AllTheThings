@@ -37,13 +37,18 @@ settings.Collectibles = {
 	Transmog = true,
 };
 settings.ForceAccountWide = {
+	BattlePets = true,
 	Heirlooms = true,
 	Illusions = true,
+	Mounts = true,
 	Toys = true,
+	Transmog = true,
 }
 settings.RequiredForInsaneMode = {
 	Achievements = true,
 	BattlePets = true,
+	Deaths = true,
+	Exploration = true,
 	FlightPaths = true,
 	Heirlooms = true,
 	Illusions = true,

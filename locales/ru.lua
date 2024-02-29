@@ -684,9 +684,10 @@ for key,value in pairs({
 		SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть выполненные группы как заголовок с процентом выполнения. Если группа не имеет ничего важного для Вашего класса, эта настройка также отобразит такие группы в списке.\n\nМы рекомендуем Вам отключить эту настройку, поскольку будет занимать место в Мини списке и мешать быстро определить, что доступно в текущей зоне.";
 		SHOW_COLLECTED_THINGS_CHECKBOX = "Показать Собранные Штучки";
 		SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Включите данную опцию, чтобы видеть Штучки, которые уже были Собраны.\n\nМы рекомендуем Вам отключить эту настройку, поскольку будет занимать место в Мини списке и мешать быстро определить, что доступно в текущей зоне.";
-		FILTER_THINGS_BY_LEVEL_CHECKBOX = "No Level Restrictions";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX = "Без Фильтра по Уровню";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть контент, который может быть недоступен Вам по уровню.\n\nПримечание: Особенно полезно выключать на пробных учётных записях.";
+		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
+		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
 		SHOW_BOE_CHECKBOX = "БоЕ/БоА Предметы";
 		SHOW_BOE_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите отслеживать Персональные при Надевании/Привязанные к аккаунту предметы.\n\nПолезно выключить, когда Вы пытаетесь закончить Классические Подземелья для персонажа и не хотите специально фармить предметы, которые могут быть получены на альтах или Аукционе.\n\nТо есть: Не лишитесь рассудка во время гринда Маятника Рока.";
 		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Игнорировать Фильтры БоЕ/БоА";
