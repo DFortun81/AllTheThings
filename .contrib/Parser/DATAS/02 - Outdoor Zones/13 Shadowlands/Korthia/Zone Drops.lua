@@ -103,6 +103,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}),
 				},
 			}),
+			i(187275, {	-- Helsworn Battle Plans (QI!)
+				["crs"] = {
+					177413,    -- Avowed Soulbreaker
+					177418,    -- Chained Bonesculpter
+					177135,    -- Helsworn Beastlord
+					177301,    -- Helsworn Dominator
+					177131,    -- Helsworn Inquisitor
+					177257,    -- Helsworn Inquisitor
+					177168,    -- Helsworn Soulbreaker
+					177271,    -- Ironkeeper Salryx
+					177134,    -- Maldraxxi Defector
+					177133,    -- Mawsworn Deathsinger
+					176262,    -- Mawsworn Keeper
+					176259,    -- Mawsworn Sky Hunter
+					177129,    -- Weaponmaster Hyrev
+				},
+			}),
 		-- Patterns
 			i(186995),	-- Pattern: Shrouded Hand Towel
 		--	Korthian Relics (putting here barring a better place for them)

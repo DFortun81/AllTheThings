@@ -484,19 +484,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
 			}),
-			q(64521, {	-- Helsworn Battle Plans
-				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-				["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
-				["timeline"] = { ADDED_9_1_0 },
-				["crs"] = {
-					177413,	-- Avowed Soulbreaker
-					177418,	-- Chained Bonesculpter
-					177135,	-- Helsworn Beastlord
-					177131,	-- Helsworn Inquisitor
-					177134,	-- Maldraxxi Defector
-					177133,	-- Mawsworn Deathsinger
-				},
-			}),
 			q(60646, {	-- Misery Business
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
