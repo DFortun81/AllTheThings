@@ -123,7 +123,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28324),	-- Gauntlets of Cruel Intention
 						i(28323),	-- Ring of Umbral Doom
 						i(28322),	-- Runed Dagger of Solace
-						i(24310),	-- Pattern: Battlecast Pants
+						i(24310),	-- Pattern: Battlecast Pants (RECIPE!)
 					},
 				}),
 				e(561, {	-- Laj
@@ -177,7 +177,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
 						-- #endif
 						i(28341),	-- Warpstaff of Arcanum
-						i(24311),	-- Pattern: Whitemend Hood
+						i(24311),	-- Pattern: Whitemend Hood (RECIPE!)
 						i(31085),	-- Top Shard of the Arcatraz Key
 					},
 				}),
@@ -252,7 +252,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28324),	-- Gauntlets of Cruel Intention
 							i(28323),	-- Ring of Umbral Doom
 							i(28322),	-- Runed Dagger of Solace
-							i(24310),	-- Pattern: Battlecast Pants
+							i(24310),	-- Pattern: Battlecast Pants (RECIPE!)
 						},
 					}),
 					e(561, {	-- Laj
@@ -305,7 +305,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
 							-- #endif
 							i(28341),	-- Warpstaff of Arcanum
-							i(24311),	-- Pattern: Whitemend Hood
+							i(24311),	-- Pattern: Whitemend Hood (RECIPE!)
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(31085),	-- Top Shard of the Arcatraz Key
 							i(33859),	-- Warp Splinter Clipping

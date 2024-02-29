@@ -1310,18 +1310,18 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(29731),	-- Pattern: Windstrike Gloves (RECIPE!) (BoE version)
 		}),
 		prof(TAILORING, {
-			i(24298),	-- Pattern: Blackstrike Bracers
-			i(24304),	-- Pattern: Black Belt of Knowledge
-			i(24297),	-- Pattern: Bracers of Havok
-			i(24300),	-- Pattern: Cloak of Eternity
-			i(24299),	-- Pattern: Cloak of the Black Void
-			i(24303),	-- Pattern: Girdle of Ruination
-			i(24307),	-- Pattern: Manaweave Cloak
-			i(24305),	-- Pattern: Resolute Cape
-			i(24296),	-- Pattern: Unyielding Bracers
-			i(24302),	-- Pattern: Unyielding Girdle
-			i(24306),	-- Pattern: Vengeance Wrap
-			i(24301),	-- Pattern: White Remedy Cape
+			i(24304),	-- Pattern: Black Belt of Knowledge (RECIPE!)
+			i(24298),	-- Pattern: Blackstrike Bracers (RECIPE!)
+			i(24297),	-- Pattern: Bracers of Havok (RECIPE!)
+			i(24300),	-- Pattern: Cloak of Eternity (RECIPE!)
+			i(24299),	-- Pattern: Cloak of the Black Void (RECIPE!)
+			i(24303),	-- Pattern: Girdle of Ruination (RECIPE!)
+			i(24307),	-- Pattern: Manaweave Cloak (RECIPE!)
+			i(24305),	-- Pattern: Resolute Cape (RECIPE!)
+			i(24296),	-- Pattern: Unyielding Bracers (RECIPE!)
+			i(24302),	-- Pattern: Unyielding Girdle (RECIPE!)
+			i(24306),	-- Pattern: Vengeance Wrap (RECIPE!)
+			i(24301),	-- Pattern: White Remedy Cape (RECIPE!)
 		}),
 	}),
 })));

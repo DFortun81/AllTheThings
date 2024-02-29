@@ -517,12 +517,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = { { "sub", "common_recipes_vendor", 3364 } }, -- Borya <Tailoring Supplies>
 					-- #endif
 					["groups"] = {
-						i(21892),	-- Pattern: Bolt of Imbued Netherweave
-						i(21894, {	-- Pattern: Bolt of Soulcloth
+						i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
+						i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(21896),	-- Pattern: Netherweave Robe
-						i(21897),	-- Pattern: Netherweave Tunic
+						i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
+						i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
 					},
 				}),
 				n(16670, {	-- Eriden <Blacksmithing Supplies>

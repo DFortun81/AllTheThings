@@ -982,8 +982,10 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 				["cost"] = { { "i", 23424, 2 } },    -- Fel Iron Ore
 			}),
 			i(23448, {    -- Felsteel Bar
-				["cost"] = { { "i", 23445, 3 } },    -- Fel Iron Bar
-				["cost"] = { { "i", 23447, 2 } },    -- Eternium Bar
+				["cost"] = {
+					{ "i", 23445, 3 },	-- Fel Iron Bar
+					{ "i", 23447, 2 },	-- Eternium Bar
+				},
 			}),
 			i(23573, {    -- Hardened Adamantite Bar
 				["cost"] = { { "i", 23446, 10 } },    -- Adamantite Bar

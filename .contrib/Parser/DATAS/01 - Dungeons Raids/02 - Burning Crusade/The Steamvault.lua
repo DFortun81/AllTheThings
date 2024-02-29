@@ -198,7 +198,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(30543),	-- Pontifex Kilt
 						-- #endif
 						i(27805),	-- Ring of the Silver Hand
-						i(24313),	-- Pattern: Battlecast Hood
+						i(24313),	-- Pattern: Battlecast Hood (RECIPE!)
 					},
 				}),
 			}),
@@ -297,7 +297,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27874),	-- Beast Lord Leggings
 							i(30543),	-- Pontifex Kilt
 							i(27805),	-- Ring of the Silver Hand
-							i(24313),	-- Pattern: Battlecast Hood
+							i(24313),	-- Pattern: Battlecast Hood (RECIPE!)
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(31721),	-- Kalithresh's Trident
 							i(33827),	-- The Warlord's Treatise

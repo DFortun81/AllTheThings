@@ -179,10 +179,6 @@ i(211247, 428424);	-- Phoenix Bindings
 -------------------
 --- PATCH 2.0.1 ---
 -------------------
---- TRAINER ---
-
---- ITEM ---
-
 --- NYI ---
 i(24315, 31461);	-- Heavy Netherweave Net
 i(0, 36670);		-- Lifeblood Belt
@@ -212,12 +208,10 @@ i(21907, 26784);	-- Arcanoweave Robe
 i(24314, 31459);	-- Bag of Jewels
 i(24313, 31456);	-- Battlecast Hood
 i(24310, 31453);	-- Battlecast Pants
-i(30280, 36315);	-- Belt of Blasting
 i(24304, 31444);	-- Black Belt of Knowledge
 i(24298, 31437);	-- Blackstrike Bracers
 i(21892, 26747);	-- Bolt of Imbued Netherweave
 i(21894, 26750);	-- Bolt of Soulcloth
-i(30282, 36317);	-- Boots of Blasting
 i(24297, 31435);	-- Bracers of Havok
 i(30833, 37873);	-- Cloak of Arcane Evasion
 i(24300, 31440);	-- Cloak of Eternity
@@ -250,8 +244,8 @@ i(24316, 31373);	-- Spellcloth
 i(21911, 26755);	-- Spellfire Bag
 i(24312, 31455);	-- Spellstrike Hood
 i(24309, 31452);	-- Spellstrike Pants
-i(24296, 31434);	-- Unyielding Bracers
-i(35309, 31442);	-- Unyielding Girdle
+i(24296, 31434);	-- Unyielding Bracers [See Also 2.4.0]
+i(24302, 31442);	-- Unyielding Girdle [See Also 2.4.0]
 i(24306, 31449);	-- Vengeance Wrap
 i(24301, 31441);	-- White Remedy Cape
 i(24311, 31454);	-- Whitemend Hood
@@ -290,11 +284,17 @@ i(21909, 26753);	-- Spellfire Gloves
 i(21910, 26754);	-- Spellfire Robe
 -- #endif
 
+
+
+
+
 -------------------
 --- PATCH 2.1.0 ---
 -------------------
 --- ITEM ---
+i(30280, 36315);	-- Belt of Blasting
 i(30281, 36316);	-- Belt of the Long Road
+i(30282, 36317);	-- Boots of Blasting
 i(30283, 36318);	-- Boots of the Long Road
 i(32754, 41205);	-- Bracers of Nimble Thought
 i(32755, 41206);	-- Mantle of Nimble Thought
@@ -321,6 +321,10 @@ i(35205, 46129);	-- Hands of Eternal Light
 i(35207, 46131);	-- Robe of Eternal Light
 i(35204, 46128);	-- Sunfire Handwraps
 i(35206, 46130);	-- Sunfire Robe
+
+
+i(35308, 31434);	-- Unyielding Bracers [See Also 2.4.0]
+i(35309, 31442);	-- Unyielding Girdle [See Also 2.4.0]
 
 -------------------
 --- PATCH 2.4.2 ---

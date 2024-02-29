@@ -2660,11 +2660,11 @@ root(ROOTS.Zones, {
 					n(29512, {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
 						["groups"] = {
-							i(21895),	-- Pattern: Primal Mooncloth
-							i(21919),	-- Pattern: Primal Mooncloth Bag
-							i(21916),	-- Pattern: Primal Mooncloth Belt
-							i(21917),	-- Pattern: Primal Mooncloth Robe
-							i(21918),	-- Pattern: Primal Mooncloth Shoulders
+							i(21895),	-- Pattern: Primal Mooncloth (RECIPE!)
+							i(21919),	-- Pattern: Primal Mooncloth Bag (RECIPE!)
+							i(21916),	-- Pattern: Primal Mooncloth Belt (RECIPE!)
+							i(21917),	-- Pattern: Primal Mooncloth Robe (RECIPE!)
+							i(21918),	-- Pattern: Primal Mooncloth Shoulders (RECIPE!)
 						},
 					}),
 					n(29628, {	-- Angelique Butler <First Aid Supplies>
@@ -3771,11 +3771,11 @@ root(ROOTS.Zones, {
 					n(29511, {	-- Lalla Brightweave <Spellfire Tailoring Specialist>
 						["coord"] = { 36.6, 32.8, NORTHREND_DALARAN },
 						["groups"] = {
-							i(24316),	-- Pattern: Spellcloth
-							i(21911),	-- Pattern: Spellfire Bag
-							i(21908),	-- Pattern: Spellfire Belt
-							i(21909),	-- Pattern: Spellfire Gloves
-							i(21910),	-- Pattern: Spellfire Robe
+							i(24316),	-- Pattern: Spellcloth (RECIPE!)
+							i(21911),	-- Pattern: Spellfire Bag (RECIPE!)
+							i(21908),	-- Pattern: Spellfire Belt (RECIPE!)
+							i(21909),	-- Pattern: Spellfire Gloves (RECIPE!)
+							i(21910),	-- Pattern: Spellfire Robe (RECIPE!)
 						},
 					}),
 					-- #if BEFORE 4.0.1
@@ -3797,11 +3797,11 @@ root(ROOTS.Zones, {
 					n(29510, {	-- Linna Bruder <Shadoweave Tailoring Specialist>
 						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
 						["groups"] = {
-							i(21915),	-- Pattern: Ebon Shadowbag
-							i(21914),	-- Pattern: Frozen Shadoweave Boots
-							i(21912),	-- Pattern: Frozen Shadoweave Shoulders
-							i(21913),	-- Pattern: Frozen Shadoweave Robe
-							i(30483),	-- Pattern: Shadowcloth
+							i(21915),	-- Pattern: Ebon Shadowbag (RECIPE!)
+							i(21914),	-- Pattern: Frozen Shadoweave Boots (RECIPE!)
+							i(21912),	-- Pattern: Frozen Shadoweave Shoulders (RECIPE!)
+							i(21913),	-- Pattern: Frozen Shadoweave Robe (RECIPE!)
+							i(30483),	-- Pattern: Shadowcloth (RECIPE!)
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(37941, {	-- Magister Arlan <Legacy Justice Quartermaster> / <Emblem of Frost Quartermaster> [WRATH]

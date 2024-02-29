@@ -74,7 +74,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cr"] = 19710,	-- Gatewatcher Iron-Hand
 				}),
 				-- #endif
-				i(21906, {	-- Pattern: Arcanoweave Boots
+				i(21906, {	-- Pattern: Arcanoweave Boots (RECIPE!)
 					["cr"] = 19168,	-- Sunseeker Astromage
 				}),
 				i(22920, {	-- Recipe: Major Fire Protection Potion (RECIPE!)
@@ -172,7 +172,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER 7.3.5
 						i(30533),	-- Vanquisher's Legplates
 						-- #endif
-						i(21907),	-- Pattern: Arcanoweave Robe
+						i(21907),	-- Pattern: Arcanoweave Robe (RECIPE!)
 						i(31086),	-- Bottom Shard of the Arcatraz Key
 					},
 				}),
@@ -264,7 +264,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(29362),	-- The Sun Eater
 							i(28204),	-- Tunic of Assassination
 							i(30533),	-- Vanquisher's Legplates
-							i(21907),	-- Pattern: Arcanoweave Robe
+							i(21907),	-- Pattern: Arcanoweave Robe (RECIPE!)
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(31086),	-- Bottom Shard of the Arcatraz Key
 							i(33860),	-- Pathaleon's Projector

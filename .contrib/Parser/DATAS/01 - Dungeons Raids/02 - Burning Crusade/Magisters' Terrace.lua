@@ -114,11 +114,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					i(35302),	-- Pattern: Cobrascale Gloves (RECIPE!)
 					i(35303),	-- Pattern: Gloves of the Living Touch (RECIPE!)
 					i(35301),	-- Pattern: Netherdrake Gloves (RECIPE!)
-					i(35308),	-- Pattern: Unyielding Bracers
-					i(35309),	-- Pattern: Unyielding Girdle
+					i(35308),	-- Pattern: Unyielding Bracers (RECIPE!)
+					i(35309),	-- Pattern: Unyielding Girdle (RECIPE!)
 					i(35300),	-- Pattern: Windstrike Gloves (RECIPE!)
-					i(35296),	-- Plans: Adamantite Weapon Chain
-					i(35294),	-- Recipe: Elixir of Empowerment
+					i(35296),	-- Plans: Adamantite Weapon Chain (RECIPE!)
+					i(35294),	-- Recipe: Elixir of Empowerment (RECIPE!)
 					i(35295),	-- Recipe: Haste Potion (BoP Version) (RECIPE!)
 					i(35310),	-- Schematic: Healing Potion Injector
 					i(35311),	-- Schematic: Mana Potion Injector

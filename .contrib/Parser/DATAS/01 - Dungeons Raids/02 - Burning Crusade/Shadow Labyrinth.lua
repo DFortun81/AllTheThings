@@ -262,7 +262,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(30532),	-- Kirin Tor Master's Trousers
 						-- #endif
 						i(27902),	-- Silent Slippers of Meditation
-						i(24309),	-- Pattern: Spellstrike Pants
+						i(24309),	-- Pattern: Spellstrike Pants (RECIPE!)
 					},
 				}),
 			}),
@@ -356,7 +356,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(29261),	-- Girdle of Ferocity
 							i(30532),	-- Kirin Tor Master's Trousers
 							i(27902),	-- Silent Slippers of Meditation
-							i(24309),	-- Pattern: Spellstrike Pants
+							i(24309),	-- Pattern: Spellstrike Pants (RECIPE!)
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33840),	-- Murmur's Whisper
 							i(31722),	-- Murmur's Essence

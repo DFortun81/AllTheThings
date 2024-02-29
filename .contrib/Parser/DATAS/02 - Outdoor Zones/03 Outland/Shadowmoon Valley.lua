@@ -1969,10 +1969,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.8, 58.2, SHADOWMOON_VALLEY },
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
-							i(21900, {	-- Pattern: Imbued Netherweave Robe
+							i(21900, {	-- Pattern: Imbued Netherweave Robe (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(21901, {	-- Pattern: Imbued Netherweave Tunic
+							i(21901, {	-- Pattern: Imbued Netherweave Tunic (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

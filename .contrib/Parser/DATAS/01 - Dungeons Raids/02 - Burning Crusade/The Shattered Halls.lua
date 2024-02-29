@@ -414,7 +414,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
-						i(24312),	-- Pattern: Spellstrike Hood
+						i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
 						i(23726, {	-- Fel Ember
 							["description"] = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
 							["cost"] = {
@@ -529,7 +529,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
-							i(24312),	-- Pattern: Spellstrike Hood
+							i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
 							i(23726, {	-- Fel Ember
 								["description"] = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
 								["cost"] = {

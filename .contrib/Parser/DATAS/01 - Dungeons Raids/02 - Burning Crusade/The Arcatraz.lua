@@ -130,7 +130,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility (RECIPE!)
 					["cr"] = 20880,	-- Eredar Deathbringer
 				}),
-				i(21905, {	-- Pattern: Arcanoweave Bracers
+				i(21905, {	-- Pattern: Arcanoweave Bracers (RECIPE!)
 					["cr"] = 20869,	-- Arcatraz Sentinel
 				}),
 				i(29672, {	-- Pattern: Flame Armor Kit (RECIPE!)
@@ -185,7 +185,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER 7.3.5
 						i(28384),	-- Outland Striders (7.3.5 - Originally only dropped from Zereketh)
 						-- #endif
-						i(24308),	-- Pattern: Whitemend Pants
+						i(24308),	-- Pattern: Whitemend Pants (RECIPE!)
 					},
 				}),
 				e(550, {	-- Wrath-Scryer Soccothrates
@@ -311,7 +311,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER 7.3.5
 							i(28384),	-- Outland Striders (7.3.5 - Originally only dropped from Zereketh)
 							-- #endif
-							i(24308),	-- Pattern: Whitemend Pants
+							i(24308),	-- Pattern: Whitemend Pants (RECIPE!)
 						},
 					}),
 					e(550, {	-- Wrath-Scryer Soccothrates

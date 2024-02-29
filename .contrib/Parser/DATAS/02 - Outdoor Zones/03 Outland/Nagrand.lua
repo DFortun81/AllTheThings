@@ -14,7 +14,7 @@ local OnTooltipForConsortium = [[function(t, tooltipInfo)
 		else
 			addRepInfo(tooltipInfo, reputation, "Turn in Ethereum Prisoner I.D. Tags in Netherstorm.", 250, 42000);
 		end
-		
+
 		addRepInfo(tooltipInfo, reputation, "Turn in Obsidian Warbeads.", 500, 42000);
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
 	end
@@ -1682,10 +1682,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.2, 71.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(21894, {	-- Pattern: Bolt of Soulcloth
+							i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(21902, {	-- Pattern: Soulcloth Gloves
+							i(21902, {	-- Pattern: Soulcloth Gloves (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1761,11 +1761,11 @@ root(ROOTS.Zones, {
 						},
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(21894, {	-- Pattern: Bolt of Soulcloth
+							i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(21893),	-- Pattern: Imbued Netherweave Bag
-							i(21902, {	-- Pattern: Soulcloth Gloves
+							i(21893),	-- Pattern: Imbued Netherweave Bag (RECIPE!)
+							i(21902, {	-- Pattern: Soulcloth Gloves (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1826,7 +1826,7 @@ root(ROOTS.Zones, {
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard
 							i(29116),	-- Nomad's Leggings
-							i(24314),	-- Pattern: Bag of Jewels
+							i(24314),	-- Pattern: Bag of Jewels (RECIPE!)
 							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
 							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)

@@ -20,7 +20,7 @@ local OnTooltipForSporeggar = [[function(t, tooltipInfo)
 		if reputation < ]] .. REVERED .. [[ then
 			addRepInfo(tooltipInfo, reputation, "Kill Bog Lords. (To Revered)", 15, ]] .. REVERED .. [[);
 		end
-		
+
 		addRepInfo(tooltipInfo, reputation, "Kill Dredgers & Lurkers.", 15, ]] .. EXALTED .. [[);
 
 		if reputation < ]] .. FRIENDLY .. [[ then
@@ -2155,10 +2155,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.4, 28.2, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(21899, {	-- Pattern: Imbued Netherweave Boots
+							i(21899, {	-- Pattern: Imbued Netherweave Boots (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(21898, {	-- Pattern: Imbued Netherweave Pants
+							i(21898, {	-- Pattern: Imbued Netherweave Pants (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2236,10 +2236,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 85.2, 54.6, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(21899, {	-- Pattern: Imbued Netherweave Boots
+							i(21899, {	-- Pattern: Imbued Netherweave Boots (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(21898, {	-- Pattern: Imbued Netherweave Pants
+							i(21898, {	-- Pattern: Imbued Netherweave Pants (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(27695),	-- Recipe: Feltail Delight (RECIPE!)

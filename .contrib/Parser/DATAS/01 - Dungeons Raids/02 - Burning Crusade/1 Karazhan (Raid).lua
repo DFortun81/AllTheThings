@@ -663,10 +663,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(22545, {	-- Formula: Enchant Boots - Surefooted (RECIPE!)
 					["cr"] = 16472,	-- Phantom Stagehand
 				}),
-				i(21903, {	-- Pattern: Soulcloth Shoulders
+				i(21903, {	-- Pattern: Soulcloth Shoulders (RECIPE!)
 					["cr"] = 16406,	-- Phantom Attendant
 				}),
-				i(21904, {	-- Pattern: Soulcloth Vest
+				i(21904, {	-- Pattern: Soulcloth Vest (RECIPE!)
 					["cr"] = 16408,	-- Phantom Valet
 				}),
 				i(30642),	-- Drape of the Righteous

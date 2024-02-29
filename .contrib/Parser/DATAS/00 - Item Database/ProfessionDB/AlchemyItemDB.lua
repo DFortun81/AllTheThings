@@ -164,7 +164,7 @@ i(0, 33732);		-- Volatile Healing Potion
 i(13517, 17632);	-- Alchemist Stone
 i(22914, 28565);	-- Destruction Potion
 i(22900, 28543);	-- Elixir of Camouflage
-i(22926, 28578);	-- Elixir of Empowerment
+i(22926, 28578);	-- Elixir of Empowerment [See 2.4.0 Also]
 i(22905, 28553);	-- Elixir of Major Agility [A]
 i(24001, 28553);	-- Elixir of Major Agility [H]
 i(22909, 28557);	-- Elixir of Major Defense
@@ -254,6 +254,7 @@ i(34481, 0);		-- Recipe: Mad Alchemist's Potion
 -----------------
 --- ITEM ---
 i(35755, 47050);	-- Assassin's Alchemist Stone
+i(35294, 28578);	-- Elixir of Empowerment
 i(35752, 47046);	-- Guardian's Alchemist Stone
 i(35295, 28564);	-- Haste Potion
 i(35754, 47049);	-- Redeemer's Alchemist Stone

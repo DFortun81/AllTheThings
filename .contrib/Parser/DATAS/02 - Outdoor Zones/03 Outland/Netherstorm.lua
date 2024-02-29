@@ -1636,7 +1636,7 @@ root(ROOTS.Zones, {
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard
 							i(29116),	-- Nomad's Leggings
-							i(24314),	-- Pattern: Bag of Jewels
+							i(24314),	-- Pattern: Bag of Jewels (RECIPE!)
 							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
 							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
@@ -2097,10 +2097,10 @@ root(ROOTS.Zones, {
 					i(22551, {	-- Formula: Enchant Weapon - Major Intellect
 						["cr"] = 20136,	-- Sunfury Researcher
 					}),
-					i(21919, {	-- Pattern: Primal Mooncloth Bag
+					i(21919, {	-- Pattern: Primal Mooncloth Bag (RECIPE!)
 						["cr"] = 18872,	-- Disembodied Vindicator
 					}),
-					i(21911, {	-- Pattern: Spellfire Bag
+					i(21911, {	-- Pattern: Spellfire Bag (RECIPE!)
 						["cr"] = 20134,	-- Sunfury Arcanist
 					}),
 					i(23639, {	-- Plans: Greater Ward of Shielding (RECIPE!)

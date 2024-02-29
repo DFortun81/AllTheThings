@@ -1777,11 +1777,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 66.6, 68.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(21915),	-- Pattern: Ebon Shadowbag
-							i(21914),	-- Pattern: Frozen Shadoweave Boots
-							i(21913),	-- Pattern: Frozen Shadoweave Robe
-							i(21912),	-- Pattern: Frozen Shadoweave Shoulders
-							i(30483),	-- Pattern: Shadowcloth
+							i(21915),	-- Pattern: Ebon Shadowbag (RECIPE!)
+							i(21914),	-- Pattern: Frozen Shadoweave Boots (RECIPE!)
+							i(21913),	-- Pattern: Frozen Shadoweave Robe (RECIPE!)
+							i(21912),	-- Pattern: Frozen Shadoweave Shoulders (RECIPE!)
+							i(30483),	-- Pattern: Shadowcloth (RECIPE!)
 						},
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, n(27667, {	-- Anwehu <Weapons & Armorsmith>
@@ -1928,10 +1928,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 66.2, 68.8, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(21892),	-- Pattern: Bolt of Imbued Netherweave
-							i(21893),	-- Pattern: Imbued Netherweave Bag
-							i(21896),	-- Pattern: Netherweave Robe
-							i(21897),	-- Pattern: Netherweave Tunic
+							i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
+							i(21893),	-- Pattern: Imbued Netherweave Bag (RECIPE!)
+							i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
+							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
 						},
 					}),
 					n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
@@ -2111,11 +2111,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 66.6, 68.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(24316),	-- Pattern: Spellcloth
-							i(21911),	-- Pattern: Spellfire Bag
-							i(21908),	-- Pattern: Spellfire Belt
-							i(21909),	-- Pattern: Spellfire Gloves
-							i(21910),	-- Pattern: Spellfire Robe
+							i(24316),	-- Pattern: Spellcloth (RECIPE!)
+							i(21911),	-- Pattern: Spellfire Bag (RECIPE!)
+							i(21908),	-- Pattern: Spellfire Belt (RECIPE!)
+							i(21909),	-- Pattern: Spellfire Gloves (RECIPE!)
+							i(21910),	-- Pattern: Spellfire Robe (RECIPE!)
 						},
 					}),
 					n(19227, {	-- Griftah
@@ -2403,7 +2403,7 @@ root(ROOTS.Zones, {
 							i(31778),	-- Lower City Tabard
 							applyclassicphase(TBC_PHASE_TWO, i(35335)),	-- Mooncloth Mitts
 							applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
-							i(30833),	-- Pattern: Cloak of Arcane Evasion
+							i(30833),	-- Pattern: Cloak of Arcane Evasion (RECIPE!)
 							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
 								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
@@ -2427,11 +2427,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 66.4, 69.0, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(21895),	-- Pattern: Primal Mooncloth
-							i(21919),	-- Pattern: Primal Mooncloth Bag
-							i(21916),	-- Pattern: Primal Mooncloth Belt
-							i(21917),	-- Pattern: Primal Mooncloth Robe
-							i(21918),	-- Pattern: Primal Mooncloth Shoulders
+							i(21895),	-- Pattern: Primal Mooncloth (RECIPE!)
+							i(21919),	-- Pattern: Primal Mooncloth Bag (RECIPE!)
+							i(21916),	-- Pattern: Primal Mooncloth Belt (RECIPE!)
+							i(21917),	-- Pattern: Primal Mooncloth Robe (RECIPE!)
+							i(21918),	-- Pattern: Primal Mooncloth Shoulders (RECIPE!)
 						},
 					}),
 					-- #if AFTER WRATH
@@ -2593,14 +2593,14 @@ root(ROOTS.Zones, {
 							i(29704),	-- Pattern: Blastguard Belt (RECIPE!)
 							i(29703),	-- Pattern: Blastguard Boots (RECIPE!)
 							i(29702),	-- Pattern: Blastguard Pants (RECIPE!)
-							i(30842),	-- Pattern: Flameheart Bracers
-							i(30843),	-- Pattern: Flameheart Gloves
-							i(30844),	-- Pattern: Flameheart Vest
+							i(30842),	-- Pattern: Flameheart Bracers (RECIPE!)
+							i(30843),	-- Pattern: Flameheart Gloves (RECIPE!)
+							i(30844),	-- Pattern: Flameheart Vest (RECIPE!)
 							i(29693),	-- Pattern: Flamescale Belt (RECIPE!)
 							i(29691),	-- Pattern: Flamescale Boots (RECIPE!)
 							i(29689),	-- Pattern: Flamescale Leggings (RECIPE!)
-							i(24295),	-- Pattern: Golden Spellthread
-							i(24293),	-- Pattern: Silver Spellthread
+							i(24295),	-- Pattern: Golden Spellthread (RECIPE!)
+							i(24293),	-- Pattern: Silver Spellthread (RECIPE!)
 							i(25721),	-- Pattern: Vindicator's Armor Kit (RECIPE!)
 							i(23601),	-- Plans: Flamebane Bracers (RECIPE!)
 							i(23604),	-- Plans: Flamebane Breastplate (RECIPE!)
@@ -2637,8 +2637,8 @@ root(ROOTS.Zones, {
 							i(29682),	-- Pattern: Enchanted Felscale Gloves (RECIPE!)
 							i(29677),	-- Pattern: Enchanted Felscale Leggings (RECIPE!)
 							i(25722),	-- Pattern: Magister's Armor Kit (RECIPE!)
-							i(24292),	-- Pattern: Mystic Spellthread
-							i(24294),	-- Pattern: Runic Spellthread
+							i(24292),	-- Pattern: Mystic Spellthread (RECIPE!)
+							i(24294),	-- Pattern: Runic Spellthread (RECIPE!)
 							i(23597),	-- Plans: Enchanted Adamantite Belt (RECIPE!)
 							i(23598),	-- Plans: Enchanted Adamantite Boots (RECIPE!)
 							i(23599),	-- Plans: Enchanted Adamantite Breastplate (RECIPE!)
