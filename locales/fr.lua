@@ -695,18 +695,18 @@ for key,value in pairs({
 		--TODO: GENERAL_CONTENT = "General Content";
 		--TODO: SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show All Trackable Things";
 		--TODO: SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.";
-		FILTER_THINGS_BY_LEVEL_CHECKBOX = app.ccColors.Insane .. "Aucune restriction de niveau";
+		FILTER_THINGS_BY_LEVEL_CHECKBOX = "Aucune restriction de niveau";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez que le contenu soit disponible quel que soit le niveau du joueur.\n\nREMARQUE : désactiver cette option est utile pour les nouveaux comptes.";
-		SHOW_BOE_CHECKBOX = app.ccColors.Insane .. "Objets LqE / LaC";
+		SHOW_BOE_CHECKBOX = "Objets LqE / LaC";
 		SHOW_BOE_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher les objets Lié quand équipé ou Lié au compte..\n\nDésativer cette option est utile lorsque vous essayez de terminer un donjon classique pour un personnage et que vous ne souhaitez pas farmer des objets qui peuvent être obtenus sur des personnages secondaires ou à l’hôtel des ventes.\n\nCàD : Ne perdez pas votre temps pour le Pendule du destin.";
 		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignorer les objets LqE / LqR";
 		IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez ignorer les exigences en matière d’armure, d’arme, de race, de classe ou de profession pour les objets LqE / LqR.\n\nSi vous essayez de collecter des objets pour vos personnages secondaires via l’hôtel des ventes, ce mode peut vous être utile.";
-		SHOW_ALL_SEASONAL = "|T"..app.asset("Category_Holidays")..":0|t " .. app.ccColors.Insane .. "Événemnts saisonniers";
+		SHOW_ALL_SEASONAL = "Événemnts saisonniers";
 		SHOW_ALL_SEASONAL_TOOLTIP = "Activez cete option si vous souhaitez afficher tous les événements saisonniers, au lieu des seuls événements saisonniers en cours.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
 		SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Activez cete option si vous souhaitez afficher du contenu nécessitant des combats de mascottes dans le jeu.";
 		SHOW_PVP_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez afficher le contenu qui 'peut' nécessiter des interactions Joueur contre Joueur dans le jeu.";
-		--TODO: SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX = "Show Unavailable Personal Loot";
-		--TODO: SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
+		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
+		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 		
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensemble du compte|R.";

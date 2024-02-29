@@ -630,18 +630,28 @@ settings.GetShortModeString = function(self)
 		local things = {}
 		local thingCount = 0
 		local totalThingCount = 0
-		local keyPrefix
+		local keyPrefix, thingName, thingActive
+		local insaneTotalCount, insaneCount = 0, 0;
 		local solo = true
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			keyPrefix = key:sub(1, 6)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1
-				if settings:Get(key) and
+				thingActive = settings:Get(key);
+				thingName = key:sub(7);
+				if thingActive then
 					-- Heirloom Upgrades only count when Heirlooms are enabled
-					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
-					then
-					thingCount = thingCount + 1
-					table.insert(things, key:sub(7))
+					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
+					if key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms") then
+						thingCount = thingCount + 1
+						table.insert(things, thingName)
+					end
+					if self.RequiredForInsaneMode[thingName] then
+						insaneTotalCount = insaneTotalCount + 1;
+						insaneCount = insaneCount + 1;
+					end
+				elseif self.RequiredForInsaneMode[thingName] then
+					insaneTotalCount = insaneTotalCount + 1;
 				end
 			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
 				solo = nil
@@ -650,7 +660,7 @@ settings.GetShortModeString = function(self)
 		local style = ""
 		if thingCount == 0 then
 			style = "N"
-		elseif thingCount == totalThingCount then
+		elseif insaneCount == insaneTotalCount then
 			-- only insane if not hiding anything!
 			if settings:NonInsane() then
 				-- don't add insane :)
@@ -696,6 +706,8 @@ settings.NonInsane = function(self)
 	or not self:Get("Show:PetBattles")
 	-- Hiding any Seasonal content
 	or self:Get("Show:OnlyActiveEvents")
+	-- Hiding quest rewards that aren't available to your current character
+	or not self:Get("Show:UnavailablePersonalLoot")
 	-- Non-Account Mode with Covenants filtered
 	or (not self:Get("AccountMode")
 		-- TODO: maybe track custom collect filters through a different Get method for easier logic

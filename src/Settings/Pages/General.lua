@@ -371,27 +371,6 @@ checkboxShowAllTrackableThings:SetATTTooltip(L.SHOW_INCOMPLETE_THINGS_CHECKBOX_T
 checkboxShowAllTrackableThings:SetPoint("TOP", checkboxDebugMode, "TOP", 0, 0)
 checkboxShowAllTrackableThings:SetPoint("LEFT", textModeExplain, "LEFT", 320, 0)
 
--- Personal Loot was introduced with Mists of Pandaria
-if app.GameBuildVersion >= 50000 then
-	local checkboxShowUnavailablePersonalLoot = child:CreateCheckBox(L.SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX,
-		function(self)
-			self:SetChecked(settings:Get("Show:UnavailablePersonalLoot"))
-			if app.MODE_DEBUG then
-				self:Disable()
-				self:SetAlpha(0.4)
-			else
-				self:Enable()
-				self:SetAlpha(1)
-			end
-		end,
-		function(self)
-			settings:Set("Show:UnavailablePersonalLoot", self:GetChecked())
-			settings:UpdateMode(1)
-		end)
-	checkboxShowUnavailablePersonalLoot:SetATTTooltip(L.SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP)
-	checkboxShowUnavailablePersonalLoot:AlignBelow(checkboxShowAllTrackableThings)
-end
-
 local headerGeneralContent = child:CreateHeaderLabel(L.GENERAL_CONTENT)
 headerGeneralContent:SetPoint("TOP", headerAccountThings, "TOP", 0, 0)
 headerGeneralContent:SetPoint("LEFT", checkboxShowAllTrackableThings, "LEFT", 0, 0)
@@ -403,7 +382,7 @@ headerGeneralContent.OnRefresh = function(self)
 	end
 end
 
-local checkboxShowUnboundItems = child:CreateCheckBox(L.SHOW_BOE_CHECKBOX,
+local checkboxShowUnboundItems = child:CreateCheckBox("|T"..app.asset("Category_WorldDrops")..":0|t " .. app.ccColors.Insane .. L.SHOW_BOE_CHECKBOX,
 function(self)
 	self:SetChecked(not settings:Get("Hide:BoEs"))	-- Inversed, so enabled = show
 	if app.MODE_DEBUG then
@@ -438,7 +417,7 @@ end)
 checkboxIgnoreUnboundFilters:SetATTTooltip(L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP)
 checkboxIgnoreUnboundFilters:AlignBelow(checkboxShowUnboundItems, 1)
 
-local checkboxNoLevelFilter = child:CreateCheckBox(L.FILTER_THINGS_BY_LEVEL_CHECKBOX,
+local checkboxNoLevelFilter = child:CreateCheckBox("|T1530081:0|t " .. app.ccColors.Insane .. L.FILTER_THINGS_BY_LEVEL_CHECKBOX,
 function(self)
 	self:SetChecked(not settings:Get("Filter:ByLevel"))	-- Inversed, so enabled = show
 	if app.MODE_DEBUG then
@@ -461,7 +440,29 @@ app.AddEventHandler("OnPlayerLevelUp", function()
 	end
 end);
 
-local checkboxNoSeasonalFilter = child:CreateCheckBox(L.SHOW_ALL_SEASONAL,
+-- Personal Loot was introduced with Mists of Pandaria
+local checkboxShowAllLearnableQuestRewards;
+if app.GameBuildVersion >= 50000 then
+	checkboxShowAllLearnableQuestRewards = child:CreateCheckBox("|T"..app.asset("Interface_Quest_header")..":0|t " .. app.ccColors.Insane .. L.SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX,
+		function(self)
+			self:SetChecked(settings:Get("Show:UnavailablePersonalLoot"))
+			if app.MODE_DEBUG then
+				self:Disable()
+				self:SetAlpha(0.4)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
+		end,
+		function(self)
+			settings:Set("Show:UnavailablePersonalLoot", self:GetChecked())
+			settings:UpdateMode(1)
+		end)
+	checkboxShowAllLearnableQuestRewards:SetATTTooltip(L.SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP)
+	checkboxShowAllLearnableQuestRewards:AlignBelow(checkboxNoLevelFilter)
+end
+
+local checkboxNoSeasonalFilter = child:CreateCheckBox("|T"..app.asset("Category_Holidays")..":0|t " .. app.ccColors.Insane .. L.SHOW_ALL_SEASONAL,
 	function(self)
 		self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
 		if app.MODE_DEBUG then
@@ -478,9 +479,9 @@ local checkboxNoSeasonalFilter = child:CreateCheckBox(L.SHOW_ALL_SEASONAL,
 	end
 )
 checkboxNoSeasonalFilter:SetATTTooltip(L.SHOW_ALL_SEASONAL_TOOLTIP)
-checkboxNoSeasonalFilter:AlignBelow(checkboxNoLevelFilter)
+checkboxNoSeasonalFilter:AlignBelow(checkboxShowAllLearnableQuestRewards or checkboxNoLevelFilter)
 
-local checkboxShowPetBattles = child:CreateCheckBox(L.SHOW_PET_BATTLES_CHECKBOX,
+local checkboxShowPetBattles = child:CreateCheckBox("|T"..app.asset("Category_PetBattles")..":0|t " .. app.ccColors.Insane .. L.SHOW_PET_BATTLES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:Get("Show:PetBattles"))
 	if app.MODE_DEBUG then
@@ -498,7 +499,7 @@ end)
 checkboxShowPetBattles:SetATTTooltip(L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP)
 checkboxShowPetBattles:AlignBelow(checkboxNoSeasonalFilter)
 
-local checkboxShowPvP = child:CreateCheckBox(L.SHOW_PVP_CHECKBOX,
+local checkboxShowPvP = child:CreateCheckBox("|T"..app.asset("Category_PvP")..":0|t " .. app.ccColors.Insane .. L.SHOW_PVP_CHECKBOX,
 function(self)
 	self:SetChecked(not settings:Get("Hide:PvP"))	-- Inversed, so enabled = show
 	if app.MODE_DEBUG then

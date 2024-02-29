@@ -218,7 +218,6 @@ for key,value in pairs({
 	["INCOMPLETE"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "Known on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
-	["SHOW_ALL_SEASONAL"] = "All Seasonal Events";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
