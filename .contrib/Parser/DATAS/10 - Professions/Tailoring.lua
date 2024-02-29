@@ -368,7 +368,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		}),
 		n(SPECIAL, {
 			n(151903, {	-- Time-Lost Trader
-				["description"] = "This vendor spawns randomly when you close a time rift.",
+				["description"] = "This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",
+				["timeline"] = { "added 8.1.5" },
 				["coords"] = {
 					-- Zuldazar
 					{ 45.0, 39.0, ZULDAZAR },	-- Ledge right before entrance to Atal'Dazar
@@ -399,6 +400,26 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					-- Tiragarde Sound
 					{ 85.0, 77.0, TIRAGARDE_SOUND },	-- Dock north of Freehold dungeon
 					{ 40.0, 24.0, TIRAGARDE_SOUND },
+					-- #if AFTER 8.2.0
+					{ 26.8, 36.6, NAZJATAR },
+					{ 29.4, 45.2, NAZJATAR },
+					{ 36.6, 27.8, NAZJATAR },
+					{ 37.4, 68.0, NAZJATAR },
+					{ 37.8, 19.6, NAZJATAR },
+					{ 42.0, 47.0, NAZJATAR },
+					{ 43.8, 86.4, NAZJATAR },
+					{ 43.8, 86.6, NAZJATAR },
+					{ 44.4, 16.4, NAZJATAR },
+					{ 47.4, 75.8, NAZJATAR },
+					{ 50.4, 31.2, NAZJATAR },
+					{ 59.2, 15.0, NAZJATAR },
+					{ 62.4, 57.2, NAZJATAR },
+					{ 64.6, 46.8, NAZJATAR },
+					{ 69.8, 24.4, NAZJATAR },
+					{ 77.4, 25.4, NAZJATAR },
+					{ 77.6, 25.4, NAZJATAR },
+					{ 79.0, 51.8, NAZJATAR },
+					-- #endif
 				},
 				["g"] = {
 					i(167889, {	-- Pattern: Azure Silk Cloak
