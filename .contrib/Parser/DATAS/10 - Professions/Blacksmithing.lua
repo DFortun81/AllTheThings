@@ -4281,6 +4281,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Folded Ghost Iron",
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 126869,
 				},
 				{
