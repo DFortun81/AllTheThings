@@ -777,6 +777,7 @@ end
 local Callback = app.CallbackHandlers.Callback;
 settings.Objects = {};
 local function Refresh(self)
+	app.HandleEvent("OnSettingsRefreshed");
 	local objects = self.Objects
 	-- app.PrintDebug("Settings.Refresh",objects and #objects)
 	if objects then

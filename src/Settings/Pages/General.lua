@@ -90,9 +90,9 @@ if child.separator then
 else
 	headerMode:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
-headerMode.OnRefresh = function(self)
-	self:SetText(settings:GetModeString())
-end
+app.AddEventHandler("OnSettingsRefreshed", function()
+	headerMode:SetText(settings:GetModeString());
+end);
 
 local textModeExplain = child:CreateTextLabel(L.MODE_EXPLAIN_LABEL)
 textModeExplain:SetPoint("TOPLEFT", headerMode, "BOTTOMLEFT", 0, -4)
