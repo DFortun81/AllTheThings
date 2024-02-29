@@ -1353,7 +1353,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
-			q(64549, {	-- Legend of the Animaswell [NIght Fae]
+			q(64549, {	-- Legend of the Animaswell [Night Fae]
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187423 },	-- Legend of the Animaswell
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
