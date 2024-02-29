@@ -702,6 +702,8 @@ settings.NonInsane = function(self)
 	self:Get("Hide:BoEs")
 	-- Hiding PvP
 	or self:Get("Hide:PvP")
+	-- Hiding Higher Level Content
+	or self:Get("Filter:ByLevel")
 	-- Hiding Pet Battles
 	or not self:Get("Show:PetBattles")
 	-- Hiding any Seasonal content
