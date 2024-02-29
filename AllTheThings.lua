@@ -4605,9 +4605,11 @@ local function AddTomTomSearchResultWaypoints(group)
 		local key = group.key;
 		if not key then return end
 		for _,o in ipairs(SearchForField(key, group[key], "field")) do
-			-- app.PrintDebug("WP:Search:",o.hash)
-			TryAddGroupWaypoints(o);
-			AddTomTomParentCoord(o);
+			if not o.saved and not o.missingSourceQuests then
+				-- app.PrintDebug("WP:Search:",o.hash)
+				TryAddGroupWaypoints(o);
+				AddTomTomParentCoord(o);
+			end
 		end
 	end
 end
