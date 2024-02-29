@@ -561,7 +561,7 @@ if TooltipDataProcessor then
 	local TooltipTypes = {
 		[Enum_TooltipDataType.Toy] = "itemID",
 		[Enum_TooltipDataType.Item] = "itemID",
-		[Enum_TooltipDataType.Spell] = "spellID",
+		-- [Enum_TooltipDataType.Spell] = "spellID",
 		--[Enum_TooltipDataType.UnitAura] = "spellID",
 		-- [Enum_TooltipDataType.Mount] = "spellID",	-- need special conversion
 		--[Enum_TooltipDataType.Macro] = "spellID",	-- Possibly?
@@ -573,6 +573,12 @@ if TooltipDataProcessor then
 		[Enum_TooltipDataType.Currency] = "currencyID",
 		[Enum_TooltipDataType.InstanceLock] = "instanceID",
 	};
+	-- Currently, ATT has no desired handling for these types, and most instances of them are already
+	-- ignored via GetOwner() check. But we can avoid that sooner since the tooltip type is provided
+	local IgnoredTypes = {
+		[Enum_TooltipDataType.Spell] = true,
+		[Enum_TooltipDataType.UnitAura] = true,
+	}
 	--[[
 	for key,id in pairs(Enum_TooltipDataType) do
 		if not TooltipTypes[id] then
@@ -584,14 +590,16 @@ if TooltipDataProcessor then
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
-		-- Debugging without ATT exclusions
-		-- local ttType, ttId = ttdata and ttdata.type;
-		-- if ttType then
-		-- 	ttId = ttdata.id;
-		-- 	app.PrintDebug("TT Type",ttType,ttId)
-		-- 	-- app.PrintTable(ttdata)
-		-- end
-
+		local ttType, ttId = ttdata and ttdata.type;
+		if ttType then
+			ttId = ttdata.id;
+			-- Debugging without ATT exclusions
+			-- app.PrintDebug("TT Type",ttType,ttId)
+			-- app.PrintTable(ttdata)
+			if IgnoredTypes[ttType] then
+				return true
+			end
+		end
 
 		-- Does the tooltip have an owner?
 		local owner = self:GetOwner();
@@ -625,11 +633,6 @@ if TooltipDataProcessor then
 				AttachTooltipSearchResults(self, 1, SearchForField, "encounterID", tonumber(encounterID));
 				return true;
 			end
-		end
-
-		local ttType, ttId = ttdata and ttdata.type;
-		if ttType then
-			ttId = ttdata.id;
 		end
 
 		local link, target, spellID, id, _;
