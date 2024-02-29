@@ -94,7 +94,6 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 					------ TRADING POST ------
 				i(190075),	-- Mantle of the Scholarly Raven
-				i(190428),	-- Regal Warcloak
 				n(SETS, {
 					-- Highborne Scholar Set
 					i(190435),	-- Highborne Scholar's Belt
@@ -171,17 +170,14 @@ root(ROOTS.NeverImplemented, {
 					i(190675),	-- Arborcidal Peon's Chopper
 					i(190446),	-- Blazing Forgehammer
 					i(190445),	-- Envenomed Gutripper
-					i(190218),	-- Jeweled Ripper
 					i(190132),	-- Krokul Battlescythe
 					i(190148),	-- Ravencrest's Razor
 					i(189872),	-- Shattered Krokul Edge
 					i(190079),	-- Smoldering Forgeblade
 					i(189884),	-- Vengeful Nemesis Warblades
-					i(190219),	-- Virulent Gavel
 
 					-- Two-Hand Wep
 					i(190131),	-- Brick-on-a-Stick
-					i(190080),	-- Catastrophe's Edge
 					i(190714),	-- Gorian Pulverizer
 					i(190713),	-- Imperator's Command
 					i(189886),	-- Might of the Titanforged
@@ -210,7 +206,6 @@ root(ROOTS.NeverImplemented, {
 				i(206800),	-- Arcane Detection Rod
 				i(206806),	-- Part Dislocator
 					------ TRADING POST ------
-				i(206278),	-- Vagabond's Aquatic Cape
 				i(206279),	-- Vagabond's Plum Cape
 				i(206280),	-- Vagabond's Faded Cape
 				i(206281),	-- Vagabond's Brick Cape
@@ -218,7 +213,6 @@ root(ROOTS.NeverImplemented, {
 				i(206283),	-- Vagabond's Deep Cape
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206285),	-- Vagabond's Grassy Cape
-				i(206289),	-- Vagabond's Aquatic Hood
 				i(206290),	-- Vagabond's Plum Hood
 				i(206291),	-- Vagabond's Faded Hood
 				i(206292),	-- Vagabond's Brick Hood
@@ -226,7 +220,6 @@ root(ROOTS.NeverImplemented, {
 				i(206294),	-- Vagabond's Deep Hood
 				i(206295),	-- Vagabond's Cloudy Hood
 				i(206296),	-- Vagabond's Grassy Hood
-				i(206299),	-- Wanderer's Aquatic Scarf
 				i(206301),	-- Wanderer's Plum Scarf
 				i(206302),	-- Wanderer's Faded Scarf
 				i(206303),	-- Wanderer's Brick Scarf
@@ -234,7 +227,6 @@ root(ROOTS.NeverImplemented, {
 				i(206305),	-- Wanderer's Deep Scarf
 				i(206306),	-- Wanderer's Cloudy Scarf
 				i(206307),	-- Wanderer's Grassy Scarf
-				i(206311),	-- Wanderer's Aquatic Cloak
 				i(206312),	-- Wanderer's Plum Cloak
 				i(206313),	-- Wanderer's Faded Cloak
 				i(206314),	-- Wanderer's Brick Cloak
@@ -242,7 +234,6 @@ root(ROOTS.NeverImplemented, {
 				i(206316),	-- Wanderer's Deep Cloak
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206318),	-- Wanderer's Grassy Cloak
-				i(206322),	-- Ensemble: Vagabond's Aquatic Threads
 				i(206323),	-- Ensemble: Vagabond's Plum Threads
 				i(206324),	-- Ensemble: Vagabond's Faded Threads
 				i(206325),	-- Ensemble: Vagabond's Brick Threads
@@ -250,7 +241,6 @@ root(ROOTS.NeverImplemented, {
 				i(206327),	-- Ensemble: Vagabond's Deep Threads
 				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 				i(206329),	-- Ensemble: Vagabond's Grassy Threads
-				i(206333),	-- Ensemble: Wanderer's Aquatic Trappings
 				i(206334),	-- Ensemble: Wanderer's Plum Trappings
 				i(206335),	-- Ensemble: Wanderer's Faded Trappings
 				i(206336),	-- Ensemble: Wanderer's Brick Trappings
@@ -268,22 +258,11 @@ root(ROOTS.NeverImplemented, {
 			-- 10.2.0
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 					------ Trading Post ------
-				n(SETS, {
-					------ Sky-Captain ------
-					i(210078),	-- Sky-Captain's Formal Attire
-					i(210066),	-- Sky-Captain's Formal Boots
-					i(210071),	-- Sky-Captain's Formal Cape
-					i(210067),	-- Sky-Captain's Formal Coat
-					i(210065),	-- Sky-Captain's Formal Hat
-					i(210068),	-- Sky-Captain's Formal Pants
-				}),
 				n(ARMOR, {
 					------ Sarong ------
-					i(210861),	-- Trader's Aquatic Sarong
 					i(210849),	-- Trader's Azure Sarong
 					i(210855),	-- Trader's Brick Sarong
 					i(210854),	-- Trader's Camo Sarong
-					i(210852),	-- Trader's Cloudy Sarong
 					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong

@@ -564,7 +564,6 @@ root(ROOTS.Unsorted, {
 				ach(19031),	-- Fyrn [Promotion]
 			}),
 			filter(BATTLE_PETS, {
-				i(211432),	-- Teele (PET!) [Trading Post]
 				i(212606),	-- Sarge (PET!) [Hearthstone]
 				i(212786),	-- Lovely Duckling (PET!) [Noblegarden]
 				i(212791),	-- Beetriz (PET!) [Trading Post]
@@ -642,26 +641,20 @@ root(ROOTS.Unsorted, {
 				i(190859),	-- Apprentice's Twisted Crook
 				i(190807),	-- Artisan's Work Shirt
 				i(213078),	-- Assassin's Bandolier
-				i(212576),	-- Blackrock Executioner
 				i(213162),	-- Blessed Bow of the Windseeker
 				i(190669),	-- Burnished Helm of Righteousness
 				i(190692),	-- Champion's Battle Standard
 				i(212789),	-- Champion's Jade Cleaver
-				i(190890),	-- Chipped Warblade
-				i(212544),	-- Classic Aquatic Tabard
 				i(212990),	-- Classic Violet Tabard
 				i(212790),	-- Codex of Classic Conjurations
-				i(212530),	-- Corroded Augari Defender
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190805),	-- Deforester's Hatchet
 				i(190090),	-- Dessicated Bouquet
 				i(190908),	-- Devourer's Skullscythe
-				i(212574),	-- Dueler's Aquatic Shoulder Cape
 				i(212627),	-- Dueler's Azure Shoulder Cape
 				i(212623),	-- Dueler's Brick Shoulder Cape
 				i(212622),	-- Dueler's Camo Shoulder Cape
 				i(212619),	-- Dueler's Carrot Shoulder Cape
-				i(212573),	-- Dueler's Cloudy Shoulder Cape
 				i(212617),	-- Dueler's Crimson Shoulder Cape
 				i(212624),	-- Dueler's Deep Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
@@ -675,15 +668,11 @@ root(ROOTS.Unsorted, {
 				i(212616),	-- Dueler's Violet Shoulder Cape
 				i(190819),	-- Emerald Guardian's Longbow
 				i(213073),	-- Faded Floral Staff
-				i(212542),	-- Flowing Aquatic Gloves
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
 				i(190849),	-- Forgemaster's Gavel
 				i(190857),	-- Gilded Emerald Longcloak
 				i(212787),	-- Gloves of the Violet Gala
 				i(212788),	-- Gossamer Emerald Gown
-				i(212543),	-- Gossamer Teal Gown
-				i(212555),	-- Guise of the Royal Masquerade
-				i(212556),	-- Guise of the Shining Masquerade
 				i(212785),	-- Helm of the Stout
 				i(190860),	-- Initiate's Bo
 				i(190893),	-- Jeweled Valkyrion Cape
@@ -753,7 +742,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
 				i(212522),	-- Compass Rose (MOUNT!) [Hearthstone]
-				i(212630),	-- Majestic Azure Peafowl (MOUNT!) [Trading Post]
 				i(212599),	-- Noble Flying Carpet (MOUNT!) [Noblegarden]
 				i(212920),	-- Savage Blue Battle Turtle (MOUNT!) [Trading Post]
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
@@ -1006,7 +994,6 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(212524),	-- Delicate Crimson Parasol (TOY!) [Trading Post]
 				i(212525),	-- Delicate Ebony Parasol (TOY!) [Trading Post]
-				i(212523),	-- Delicate Jade Parasol (TOY!) [Trading Post]
 				i(212500),	-- Delicate Silk Parasol (TOY!) [Trading Post]
 				i(211946),	-- Hearthstone Game Table (TOY!) [Hearthstone]
 				i(212337),	-- Stone of the Hearth (TOY!) [Hearthstone]
@@ -1381,8 +1368,6 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-			i(207963),	-- Alabaster Thunderwing
-			i(207964),	-- Alabaster Stormtalon
 			n(QUESTS, {
 				-- 10.1.5.49516
 				q(76267),	--

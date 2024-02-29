@@ -621,11 +621,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(MOUNTS, {
-				mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+				i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+				i(207963, {	-- Alabaster Thunderwing (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 					["races"] = HORDE_ONLY,
 				}),
@@ -1560,22 +1560,25 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495"} }, {
 			n(MONTHLY_REWARD, {
-				-- pet
+				i(211432),	-- Teele (PET!)
 			}),
 			filter(BATTLE_PETS, {
 			}),
 			filter(MOUNTS, {
-				mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+				i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+				i(207963, {	-- Alabaster Thunderwing (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 					["races"] = HORDE_ONLY,
 				}),
+				i(212630, {	-- Majestic Azure Peafowl (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
 			}),
 			filter(TOYS, {
-				i(212523, {	-- Delicate Jade Parasol
+				i(212523, {	-- Delicate Jade Parasol (TOY!)
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
 			}),
@@ -1655,7 +1658,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(210078, {	-- Sky-Captain's Formal Attire
 					["cost"] = {{"c", TRADERS_TENDER, 800}},
 					["groups"] = {
-						i(210078),	-- Sky-Captain's Formal Attire
 						i(210066),	-- Sky-Captain's Formal Boots
 						i(210071),	-- Sky-Captain's Formal Cape
 						i(210067),	-- Sky-Captain's Formal Coat
@@ -1835,7 +1837,6 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 					------ TRADING POST ------
 				i(190075),	-- Mantle of the Scholarly Raven
-				i(190428),	-- Regal Warcloak
 				n(SETS, {
 					-- Highborne Scholar Set
 					i(190435),	-- Highborne Scholar's Belt
@@ -1912,17 +1913,14 @@ root(ROOTS.NeverImplemented, {
 					i(190675),	-- Arborcidal Peon's Chopper
 					i(190446),	-- Blazing Forgehammer
 					i(190445),	-- Envenomed Gutripper
-					i(190218),	-- Jeweled Ripper
 					i(190132),	-- Krokul Battlescythe
 					i(190148),	-- Ravencrest's Razor
 					i(189872),	-- Shattered Krokul Edge
 					i(190079),	-- Smoldering Forgeblade
 					i(189884),	-- Vengeful Nemesis Warblades
-					i(190219),	-- Virulent Gavel
 
 					-- Two-Hand Wep
 					i(190131),	-- Brick-on-a-Stick
-					i(190080),	-- Catastrophe's Edge
 					i(190714),	-- Gorian Pulverizer
 					i(190713),	-- Imperator's Command
 					i(189886),	-- Might of the Titanforged
@@ -1996,25 +1994,11 @@ root(ROOTS.NeverImplemented, {
 			-- 10.2.0
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 					------ Trading Post ------
-				n(SETS, {
-					------ Unrelenting Justice ------
-					i(211093), -- Belt of Unrelenting Justice
-					i(211092), -- Bracers of Unrelenting Justice
-					i(211095), -- Cloak of Unrelenting Justice
-					i(211088), -- Gloves of Unrelenting Justice
-					i(211090), -- Helm of Unrelenting Justice
-					i(211094), -- Leggings of Unrelenting Justice
-					i(212591), -- Mantle of Unrelenting Justice
-					i(212592), -- Treads of Unrelenting Justice
-					i(211091), -- Tunic of Unrelenting Justice
-				}),
 				n(ARMOR, {
 					------ Sarong ------
-					i(210861),	-- Trader's Aquatic Sarong
 					i(210849),	-- Trader's Azure Sarong
 					i(210855),	-- Trader's Brick Sarong
 					i(210854),	-- Trader's Camo Sarong
-					i(210852),	-- Trader's Cloudy Sarong
 					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
