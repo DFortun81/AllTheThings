@@ -111,6 +111,7 @@ root(ROOTS.ExpansionFeatures,
 						q(53052, {	-- Deeper Into Zandalar
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
+							["description"] = "Conquer one foothold, then relog while in Zandalar.",
 						}),
 						q(47099, {	-- Get Your Bearings
 							["coord"] = { 75.7, 23.5, BORALUS },
