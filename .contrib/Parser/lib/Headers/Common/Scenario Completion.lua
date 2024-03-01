@@ -2,6 +2,9 @@ SCENARIO_COMPLETION = createHeader({
 	readable = "Scenario Completion",
 	constant = "SCENARIO_COMPLETION",
 	icon = [[~_.asset("Interface_Rewards")]],
+	text = {
+		en = [[~QUEST_REWARDS]],
+	},
 	description = {
 		en = "Contains Things which are rewarded that upon completing that scenario.",
 		fr = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",

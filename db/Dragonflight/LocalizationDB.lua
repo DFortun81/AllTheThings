@@ -163,6 +163,7 @@ _.HeaderConstants = {
 	DROPS = -1000017,
 	EASTERN_KINGDOMS_CUP_HEADER = -1000210,
 	EMISSARY_QUESTS = -1000018,
+	EVENT_COMPLETION = -1000851,
 	EXPLORATION = -1000019,
 	FACTIONS = -1000020,
 	FEAST_OF_WINTER_VEIL_HEADER = -1000215,
@@ -193,6 +194,7 @@ _.HeaderConstants = {
 	QUESTS = -1000031,
 	RARES = -1000032,
 	REWARDS = -1000033,
+	SCENARIO_COMPLETION = -1000850,
 	SECRETS = -1000035,
 	SECRETS_OF_AZEROTH_HEADER = -1000360,
 	SHARED_APPEARANCES = -1000162,
@@ -564,6 +566,8 @@ localize(L.HEADER_NAMES, {
 	[-1000381] = "Kukuru's Cache",
 	[-1000382] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1000383] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1000850] = QUEST_REWARDS,
+	[-1000851] = QUEST_REWARDS,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -639,6 +643,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000368] = "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one.",
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 	[-1000381] = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
+	[-1000850] = "Contains Things which are rewarded that upon completing that scenario.",
+	[-1000851] = "Contains Things which are rewarded that upon completing that event.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -990,6 +996,8 @@ localize(L.HEADER_ICONS, {
 	[-1000379] = "Interface/Icons/Inv_bountyhunting",
 	[-1000380] = "Interface/Icons/Inv_bountyhunting",
 	[-1000381] = "348554",
+	[-1000850] = _.asset("Interface_Rewards"),
+	[-1000851] = _.asset("Interface_Rewards"),
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -17629,6 +17637,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Les éléments de cette liste sont des apparences partagées pour l'élément ci-dessus. En mode Apparence unique, cette liste peut vous aider à comprendre pourquoi ou pourquoi un élément spécifique serait marqué Collecté.",
 	[-1000163] = "Cet article a une apparence unique. Vous devez collecter cet objet spécifiquement pour gagner l’apparence.",
 	[-1000380] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
+	[-1000850] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
+	[-1000851] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
@@ -30945,6 +30955,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 	[-1000368] = "Путешествия во времени без надобности создают новые ID Источников для предметов, несмотря на то, что они имеют те же имена, облики и отображение в Коллекции.\n\nУбедительная просьба разработчикам Blizzard: Пожалуйста, почистите базу данных ID Источников и сделайте варианты предметов из Путешествий во времени/Кованные титанами с тем же ID Источника, что и оригинал, поскольку названия и облики абсолютно идентичны. Не только сделает вашу базу данных чище, но и позволит Собирателям относиться к новым Путешествиям во времени с воодушевлением, нежели с раздражением.\n\n - Crieve, Очень Огорченный Собиратель, у которого теперь всего лишь 64% выполнение Ульдуара, когда было 99%, потому что ваша команда продублировала ID Источников вместо использования уже имеющихся.",
 	[-1000380] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
+	[-1000850] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
+	[-1000851] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
@@ -34535,6 +34547,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "此列表中的物品是独特外观。你必须专门收藏这个物品以获得外观。",
 	[-1000368] = "时光难度为物品创建新的源 ID，尽管它们的名称、外观和在收藏选项卡中的显示完全相同。\n\n向暴雪开发部提出请求：请清理源码数据库让时光/泰坦造物物品使用相同的源码作为基础，前提是外观和名称完全相同。这不仅会让数据库变得更加干净，而且会让完成者们对更多的时光内容的感到兴奋而不是恐惧。\n\n - Crieve，非常苦逼的战网完成度，本来有99%的奥杜尔完成度，现在只有64%，因为暴雪团队复制了源码，而不是重复使用现有的源码。",
 	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
+	[-1000850] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
+	[-1000851] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
