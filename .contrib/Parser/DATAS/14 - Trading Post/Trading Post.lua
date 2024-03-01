@@ -120,10 +120,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		q(76115, {	-- Report to the Trading Post -- March 2024
-			["timeline"] = { ADDED_10_2_5 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-		}),
+		-- No quest in March 2024, probably only 12 quests (one for each month)
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, "removed 10.0.5.48317" } }, {
