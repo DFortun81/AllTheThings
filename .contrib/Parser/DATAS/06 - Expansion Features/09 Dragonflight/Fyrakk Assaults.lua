@@ -172,7 +172,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				i(203683),	-- Ward of Fyrakk
 			})),
-			n(REWARDS, {
+			n(EVENT_OR_SCENARIO_COMPLETION, {
 				["crs"] = {
 					201673,	-- Kretchenwrath
 					203411,	-- Shadeisethal

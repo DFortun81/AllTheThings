@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures,
 						crit(33147),		-- Cursed Tome (Shadowmoon Valley - D)
 					}),
 				}),
-				n(REWARDS, {
+				n(EVENT_OR_SCENARIO_COMPLETION, {
 					["crs"] = {
 						118180,	-- Dread Vizier Gra'tork <Legion Commander>
 						119579,	-- Fel Commander Erixtol

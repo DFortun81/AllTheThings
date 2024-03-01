@@ -1624,7 +1624,7 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 								}),
 							}),
-							n(REWARDS, {
+							n(EVENT_OR_SCENARIO_COMPLETION, {
 								-- 1 SourceIDs: Weapons
 								-- 3 SourceIDs: Cloaks, Armor (3) (5) (6/23)
 								-- 2 VisualIDs: Armor (3/5) (6/23)
