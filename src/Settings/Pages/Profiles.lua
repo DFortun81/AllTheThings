@@ -1,4 +1,5 @@
 local appName, app = ...;
+if app.IsClassic then return; end	-- Classic isn't ready for this yet, but I want it!
 local L, settings, tinsert = app.L.SETTINGS_MENU, app.Settings, tinsert;
 local Callback = app.CallbackHandlers.Callback;
 
@@ -6,7 +7,7 @@ local Callback = app.CallbackHandlers.Callback;
 local child = settings:CreateOptionsPage(L.PROFILES_PAGE, appName)
 
 -- CONTENT
-local headerProfiles = child:CreateHeaderLabel(L["PROFILES_PAGE"])
+local headerProfiles = child:CreateHeaderLabel(L.PROFILES_PAGE)
 if child.separator then
 	headerProfiles:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
@@ -34,7 +35,7 @@ local textboxNewProfile = child:CreateTextbox(
 	end,
 })
 textboxNewProfile:SetPoint("TOPLEFT", textCurrentProfile, "BOTTOMLEFT", 5, -20)
-textboxNewProfile:SetATTTooltip(L["PROFILE_NEW_TOOLTIP"])
+textboxNewProfile:SetATTTooltip(L.PROFILE_NEW_TOOLTIP)
 textboxNewProfile:Show()
 
 -- Profiles selector scrollbox
@@ -53,10 +54,10 @@ local function InitProfilesButton_Disable(self)
 	self:Disable()
 end
 local buttonInitializeProfiles = child:CreateButton(
-{ text = L["PROFILE_INITIALIZE"], tooltip = L["PROFILE_INITIALIZE_TOOLTIP"], },
+{ text = L.PROFILE_INITIALIZE, tooltip = L.PROFILE_INITIALIZE_TOOLTIP, },
 {
 	OnClick = function(self)
-		app:ShowPopupDialog(L["PROFILE_INITIALIZE_CONFIRM"],
+		app:ShowPopupDialog(L.PROFILE_INITIALIZE_CONFIRM,
 		function()
 			app.SetupProfiles()
 			Callback(InitProfilesButton_Disable, self)
@@ -97,7 +98,7 @@ buttonCreateProfile:SetPoint("TOPLEFT", textboxNewProfile, "TOPRIGHT", 5, 2)
 
 -- Delete Button
 local buttonDeleteProfile = child:CreateButton(
-{ text = DELETE, tooltip = L["PROFILE_DELETE_TOOLTIP"], },
+{ text = DELETE, tooltip = L.PROFILE_DELETE_TOOLTIP, },
 {
 	OnClick = function(self)
 		local profile = SelectedProfile
@@ -116,7 +117,7 @@ buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 5, -1
 
 -- Switch Button
 local buttonSwitchProfile = child:CreateButton(
-{ text = SWITCH, tooltip = L["PROFILE_SWITCH_TOOLTIP"], },
+{ text = SWITCH, tooltip = L.PROFILE_SWITCH_TOOLTIP, },
 {
 	OnClick = function(self)
 		local profile = SelectedProfile
@@ -132,7 +133,7 @@ buttonSwitchProfile:SetPoint("TOP", profileScroller, "TOP", 0, 2)
 
 -- Copy Button
 local buttonCopyProfile = child:CreateButton(
-{ text = CALENDAR_COPY_EVENT, tooltip = L["PROFILE_COPY_TOOLTIP"], },
+{ text = CALENDAR_COPY_EVENT, tooltip = L.PROFILE_COPY_TOOLTIP, },
 {
 	OnClick = function(self)
 		local profile = SelectedProfile
@@ -148,7 +149,7 @@ local buttonCopyProfile = child:CreateButton(
 buttonCopyProfile:SetPoint("TOPLEFT", buttonSwitchProfile, "BOTTOMLEFT", 0, -4)
 
 -- Checkbox to show profile loaded message
-local checkboxShowProfileLoaded = child:CreateCheckBox(L["SHOW_PROFILE_LOADED"],
+local checkboxShowProfileLoaded = child:CreateCheckBox(L.SHOW_PROFILE_LOADED,
 function(self)
 	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"))
 end,

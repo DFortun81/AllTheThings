@@ -286,6 +286,17 @@ L.SETTINGS_MENU = {
 	
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
+		WINDOWS_PAGE = "Windows";
 	
 	-- Profiles Page
+		PROFILES_PAGE = "Profiles";
+		PROFILE = "Profile";
+		PROFILE_INITIALIZE = "Initialize Profiles";
+		PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
+		PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
+		PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
+		PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
+		PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
+		PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
+		SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 };

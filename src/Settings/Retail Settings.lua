@@ -428,7 +428,7 @@ settings.ApplyProfile = function()
 		end
 
 		if app.IsReady and settings:Get("Profile:ShowProfileLoadedMessage") then
-			app.print(L["PROFILE"]..":",settings:GetProfile(true))
+			app.print(L.PROFILE..":",settings:GetProfile(true))
 		end
 		return true
 	end

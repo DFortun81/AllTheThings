@@ -439,18 +439,6 @@ CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
 		--TODO: L.COLORS_ICONS = "Colors and Icons";
 		--TODO: L.LOCKED_QUESTS = "Locked quests";
 
-	-- Profiles tab
-		L.PROFILES_PAGE = "配置文件";
-		L.PROFILE = "配置文件";
-		L.PROFILE_INITIALIZE = "初始化配置文件";
-		L.PROFILE_INITIALIZE_TOOLTIP = "这将使您的 ATT 保存变量能够支持和包含配置文件数据。您当前的设置和窗口信息将被复制到 '"..DEFAULT.."' 配置文件中，该配置文件无法删除，但可以修改并使用作为所有角色的初始配置文件。\n\n请务必将配置文件的任何异常行为或错误报告给 ATT Discord！";
-		L.PROFILE_INITIALIZE_CONFIRM = "确定要打开配置文件支持？";
-		L.PROFILE_NEW_TOOLTIP = "为当前角色创建一个空白配置文件";
-		L.PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
-		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
-		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."点击切换到它";
-		L.SHOW_PROFILE_LOADED = "显示在登录期间或在配置文件之间切换时加载的配置文件";
-
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "帐号管理";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "此列表显示了与同步帐号数据相关的所有功能。";
@@ -850,8 +838,19 @@ for key,value in pairs({
 
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
-
+		--TODO: WINDOWS_PAGE = "Windows";
+	
 	-- Profiles Page
+		PROFILES_PAGE = "配置文件";
+		PROFILE = "配置文件";
+		PROFILE_INITIALIZE = "初始化配置文件";
+		PROFILE_INITIALIZE_TOOLTIP = "这将使您的 ATT 保存变量能够支持和包含配置文件数据。您当前的设置和窗口信息将被复制到 '"..DEFAULT.."' 配置文件中，该配置文件无法删除，但可以修改并使用作为所有角色的初始配置文件。\n\n请务必将配置文件的任何异常行为或错误报告给 ATT Discord！";
+		PROFILE_INITIALIZE_CONFIRM = "确定要打开配置文件支持？";
+		PROFILE_NEW_TOOLTIP = "为当前角色创建一个空白配置文件";
+		PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
+		PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
+		PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."点击切换到它";
+		SHOW_PROFILE_LOADED = "显示在登录期间或在配置文件之间切换时加载的配置文件";
 })
 do a[key] = value; end
 

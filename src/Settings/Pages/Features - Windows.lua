@@ -3,11 +3,11 @@ if app.IsRetail then return; end
 
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
--- Settings: Sync Page
-local child = settings:CreateOptionsPage("Windows", L.FEATURES_PAGE)
+-- Settings: Windows Page
+local child = settings:CreateOptionsPage(L.WINDOWS_PAGE, L.FEATURES_PAGE)
 
 -- CONTENT
-local headerSync = child:CreateHeaderLabel("Windows")
+local headerSync = child:CreateHeaderLabel(L.WINDOWS_PAGE)
 if child.separator then
 	headerSync:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else

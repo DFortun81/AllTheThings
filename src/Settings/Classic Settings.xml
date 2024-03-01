@@ -18,5 +18,5 @@
 	<Script file="Pages/Features - Reporting.lua"/>
 	<Script file="Pages/Features - Sync.lua"/>
 	<Script file="Pages/Features - Windows.lua"/>
-	<!-- <Script file="Pages/Profiles.lua"/> -->
+	<Script file="Pages/Profiles.lua"/>
 </Ui>

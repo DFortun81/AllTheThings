@@ -430,18 +430,6 @@ local L = app.L;
 		--TODO: L.COLORS_ICONS = "Colors and Icons";
 		--TODO: L.LOCKED_QUESTS = "Locked quests";
 
-	-- Profiles tab
-		L.PROFILES_PAGE = "Profile";
-		L.PROFILE = "Profil";
-		L.PROFILE_INITIALIZE = "Initialisiere Profil";
-		--TODO: L.PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
-		L.PROFILE_INITIALIZE_CONFIRM = "Möchten Sie die Profilunterstützung wirklich aktivieren?";
-		L.PROFILE_NEW_TOOLTIP = "Erstelle ein leeres Profil, das vom aktuellen Charakter verwendet werden soll";
-		L.PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
-		L.PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
-		L.PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
-		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
-
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Accountverwaltung";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Diese Liste zeigt alle Funktionen, die mit der Synchronisierung von Accounts zusammenhängen.";
@@ -788,8 +776,19 @@ for key,value in pairs({
 
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
-
+		--TODO: WINDOWS_PAGE = "Windows";
+	
 	-- Profiles Page
+		PROFILES_PAGE = "Profile";
+		PROFILE = "Profil";
+		PROFILE_INITIALIZE = "Initialisiere Profil";
+		--TODO: PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
+		PROFILE_INITIALIZE_CONFIRM = "Möchten Sie die Profilunterstützung wirklich aktivieren?";
+		PROFILE_NEW_TOOLTIP = "Erstelle ein leeres Profil, das vom aktuellen Charakter verwendet werden soll";
+		PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
+		PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
+		PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
+		--TODO: SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 })
 do a[key] = value; end
 

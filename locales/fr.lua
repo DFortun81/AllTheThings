@@ -431,18 +431,6 @@ local L = app.L;
 		--TODO: L.COLORS_ICONS = "Colors and Icons";
 		--TODO: L.LOCKED_QUESTS = "Locked quests";
 
-	-- Profiles tab
-		L.PROFILES_PAGE = "Profils";
-		L.PROFILE = "Profil";
-		L.PROFILE_INITIALIZE = "Initialiser les profils";
-		L.PROFILE_INITIALIZE_TOOLTIP = "Cela permettra à vos variables sauvegardées pour ATT de supporter et de contenir des données de profil. Vos paramètres et informations de fenêtre actuels seront copiés dans le profil '"..DEFAULT.."'. Ce profil ne peut pas être supprimé, mais peut être modifié et sera utilisé comme profil initial pour tous les personnages. N’oubliez pas de signaler tout comportement inhabituel ou tout bogue lié aux profils sur le Discord d’ATT !";
-		L.PROFILE_INITIALIZE_CONFIRM = "Êtes-vous sûr de vouloir activer le support du profil ?";
-		L.PROFILE_NEW_TOOLTIP = "Créer un nouveau profil qui sera utilisé par le personnage actuel.";
-		L.PROFILE_COPY_TOOLTIP = "Copier le profil sélectionné dans le profil actuel";
-		L.PROFILE_DELETE_TOOLTIP = "Supprimer le profil sélectionné";
-		L.PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n"..SHIFT_KEY_TEXT.." + clic pour accéder au profil sélectionné";
-		L.SHOW_PROFILE_LOADED = "Afficher le profil qui se charge lors de la connexion ou lors du passage d’un profil à l’autre";
-
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Gestion des comptes";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Cette liste affiche toutes les fonctionnalités liées à la synchronisation des données du compte.";
@@ -815,8 +803,19 @@ for key,value in pairs({
 
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
-
+		--TODO: WINDOWS_PAGE = "Windows";
+	
 	-- Profiles Page
+		PROFILES_PAGE = "Profils";
+		PROFILE = "Profil";
+		PROFILE_INITIALIZE = "Initialiser les profils";
+		PROFILE_INITIALIZE_TOOLTIP = "Cela permettra à vos variables sauvegardées pour ATT de supporter et de contenir des données de profil. Vos paramètres et informations de fenêtre actuels seront copiés dans le profil '"..DEFAULT.."'. Ce profil ne peut pas être supprimé, mais peut être modifié et sera utilisé comme profil initial pour tous les personnages. N’oubliez pas de signaler tout comportement inhabituel ou tout bogue lié aux profils sur le Discord d’ATT !";
+		PROFILE_INITIALIZE_CONFIRM = "Êtes-vous sûr de vouloir activer le support du profil ?";
+		PROFILE_NEW_TOOLTIP = "Créer un nouveau profil qui sera utilisé par le personnage actuel.";
+		PROFILE_COPY_TOOLTIP = "Copier le profil sélectionné dans le profil actuel";
+		PROFILE_DELETE_TOOLTIP = "Supprimer le profil sélectionné";
+		PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n"..SHIFT_KEY_TEXT.." + clic pour accéder au profil sélectionné";
+		SHOW_PROFILE_LOADED = "Afficher le profil qui se charge lors de la connexion ou lors du passage d’un profil à l’autre";
 })
 do a[key] = value; end
 
