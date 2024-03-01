@@ -139,8 +139,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108183),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108191),	-- Peerless Draenic Steel Shoulders	(NYI)
+			ig(108199),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108207),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
+			ig(108223),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(114274),	-- Ruby Plate Shoulderguard			(NYI)
 
 			ig(134737),	-- Chillplate Shoulders				(Removed)
@@ -210,7 +212,9 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
 			ig(108162),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108178),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108186),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108194),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108202),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108210),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108218),	-- Peerless Draenic Steel Chestplate	(NYI)
@@ -366,6 +370,7 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
+			ig(108166),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108182),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108190),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108198),	-- Peerless Draenic Steel Legguards	(NYI)
