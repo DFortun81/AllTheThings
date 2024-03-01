@@ -63,6 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(1134, {	-- Gilneas
 					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(72, {	-- Stormwind
 					-- #if AFTER WRATH
