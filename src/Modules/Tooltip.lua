@@ -576,7 +576,8 @@ if TooltipDataProcessor then
 	-- Currently, ATT has no desired handling for these types, and most instances of them are already
 	-- ignored via GetOwner() check. But we can avoid that sooner since the tooltip type is provided
 	local IgnoredTypes = {
-		[Enum_TooltipDataType.Spell] = true,
+		-- Excluding spells also ignores chat-linked Recipe tooltips
+		-- [Enum_TooltipDataType.Spell] = true,
 		[Enum_TooltipDataType.UnitAura] = true,
 	}
 	--[[
