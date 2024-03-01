@@ -145,7 +145,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			})),
-			n(EVENT_OR_SCENARIO_COMPLETION, {
+			n(EVENT_COMPLETION, {
 				i(200094),	-- Caravan Strongbox
 			}),
 		})),

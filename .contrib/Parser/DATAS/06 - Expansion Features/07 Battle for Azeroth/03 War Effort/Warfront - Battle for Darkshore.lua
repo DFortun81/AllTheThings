@@ -1616,7 +1616,7 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 							})),
-							n(EVENT_OR_SCENARIO_COMPLETION {
+							n(SCENARIO_COMPLETION, {
 								["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 								["g"] = bubbleDown({["modID"] = 3}, {
 									-- ALLIANCE SET --

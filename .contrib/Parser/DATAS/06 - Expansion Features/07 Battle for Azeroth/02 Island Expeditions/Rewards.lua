@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(ISLAND_EXPEDITIONS, {
-		n(EVENT_OR_SCENARIO_COMPLETION, {
+		n(SCENARIO_COMPLETION, {
 			["description"] = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
 			["g"] = bubbleDown({["modID"] = 0}, {
 				i(173950, {	-- Crestfall Salvage

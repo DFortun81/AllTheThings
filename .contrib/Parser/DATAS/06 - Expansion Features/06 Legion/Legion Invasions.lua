@@ -31,49 +31,6 @@ root(ROOTS.ExpansionFeatures,
 						crit(33147),		-- Cursed Tome (Shadowmoon Valley - D)
 					}),
 				}),
-				n(EVENT_OR_SCENARIO_COMPLETION, {
-					["crs"] = {
-						118180,	-- Dread Vizier Gra'tork <Legion Commander>
-						119579,	-- Fel Commander Erixtol
-						118840,	-- Lord Commander Alexius
-						118975,	-- Xeritas
-					},
-					["sym"] = {
-						{"select", "headerID", -543},	-- Select Legion Invasions
-						{"pop"},	-- Push all of the groups contained to the processing layer.
-						{"where", "headerID", WORLD_QUESTS },
-						{"pop"},	-- Push all of the groups contained to the processing layer.
-						{"select", "itemID",
-							147216,	-- Dauntless Hood
-							147221,	-- Dauntless Choker
-							147218,	-- Dauntless Spaulders
-							147222,	-- Dauntless Cloak
-							147213,	-- Dauntless Tunic
-							147212,	-- Dauntless Bracers
-							147215,	-- Dauntless Gauntlets
-							147219,	-- Dauntless Girdle
-							147217,	-- Dauntless Leggings
-							147214,	-- Dauntless Treads
-							147220,	-- Dauntless Ring
-							147223,	-- Dauntless Trinket
-						},
-					},
-					["g"] = {
-						i(139158),	-- Battle Mace of the Niskaran Guard
-						i(139163),	-- Star of Niskara
-						i(138762),	-- Niskaran Morning Star
-						i(139155),	-- Legion's Edge
-						i(139157),	-- Dread Vanquisher's Hacker
-						i(139156),	-- Argus Decapitator
-						i(139159),	-- Face of Ruin
-						i(139160),	-- Eredar Battle Staff
-						i(139161),	-- Soulmage's Spire
-						i(139162),	-- Blood Guard's Tooth
-						i(139164),	-- Wrathblade
-						i(139165),	-- Bloodseeker's Bulwark
-						i(139166),	-- Soulstealer's Barrier
-					},
-				}),
 				n(QUESTS, {
 					q(46205, {	-- A Conduit No More
 						["sourceQuests"] = { 45795 },	-- Presence of Power
@@ -148,6 +105,49 @@ root(ROOTS.ExpansionFeatures,
 						["repeatable"] = true,
 						["provider"] = { "n", 116868 },	-- Vethir
 					}),
+				}),
+				n(SCENARIO_COMPLETION, {
+					["crs"] = {
+						118180,	-- Dread Vizier Gra'tork <Legion Commander>
+						119579,	-- Fel Commander Erixtol
+						118840,	-- Lord Commander Alexius
+						118975,	-- Xeritas
+					},
+					["sym"] = {
+						{"select", "headerID", -543},	-- Select Legion Invasions
+						{"pop"},	-- Push all of the groups contained to the processing layer.
+						{"where", "headerID", WORLD_QUESTS },
+						{"pop"},	-- Push all of the groups contained to the processing layer.
+						{"select", "itemID",
+							147216,	-- Dauntless Hood
+							147221,	-- Dauntless Choker
+							147218,	-- Dauntless Spaulders
+							147222,	-- Dauntless Cloak
+							147213,	-- Dauntless Tunic
+							147212,	-- Dauntless Bracers
+							147215,	-- Dauntless Gauntlets
+							147219,	-- Dauntless Girdle
+							147217,	-- Dauntless Leggings
+							147214,	-- Dauntless Treads
+							147220,	-- Dauntless Ring
+							147223,	-- Dauntless Trinket
+						},
+					},
+					["g"] = {
+						i(139158),	-- Battle Mace of the Niskaran Guard
+						i(139163),	-- Star of Niskara
+						i(138762),	-- Niskaran Morning Star
+						i(139155),	-- Legion's Edge
+						i(139157),	-- Dread Vanquisher's Hacker
+						i(139156),	-- Argus Decapitator
+						i(139159),	-- Face of Ruin
+						i(139160),	-- Eredar Battle Staff
+						i(139161),	-- Soulmage's Spire
+						i(139162),	-- Blood Guard's Tooth
+						i(139164),	-- Wrathblade
+						i(139165),	-- Bloodseeker's Bulwark
+						i(139166),	-- Soulstealer's Barrier
+					},
 				}),
 				n(WORLD_QUESTS, {
 					i(146766),  -- Nethercaller Cloak

@@ -20,7 +20,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					ach(16411),	-- Siege on Dragonbane Keep: Home Sweet Home
 					ach(16410),	-- Siege on Dragonbane Keep: Snack Attack
 				}),
-				n(EVENT_OR_SCENARIO_COMPLETION, {
+				n(EVENT_COMPLETION, {
 					i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 					i(202142),	-- Dragonbane Keep Strongbox [RARE]
 					i(200072, {	-- Dragonbane Keep Strongbox [EPIC]

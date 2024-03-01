@@ -195,7 +195,7 @@ root(ROOTS.ExpansionFeatures,
 						["lvl"] = 100,
 					}),
 				}),
-				n(EVENT_OR_SCENARIO_COMPLETION, {
+				n(EVENT_COMPLETION, {
 					i(120320, {	-- Invader's Abandoned Sack
 						["questID"] = 37638,
 						["isWeekly"] = true,

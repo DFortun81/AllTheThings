@@ -305,7 +305,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				})),
 			}),
-			n(EVENT_OR_SCENARIO_COMPLETION, {
+			n(EVENT_COMPLETION, {
 				["maps"] = {
 					OHNAHRAN_PLAINS,
 					THALDRASZUS,
