@@ -647,9 +647,10 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 --]]
 			}),
 			n(REWARDS, {
-				["description"] = "These are rewarded by completing the daily quests.",
 				["groups"] = {
-					currency(416),	-- Mark of the World Tree
+					currency(416, {	-- Mark of the World Tree
+						["description"] = "These are rewarded by completing the Molten Front related daily quests.",
+					}),
 				},
 			}),
 			n(VENDORS, {

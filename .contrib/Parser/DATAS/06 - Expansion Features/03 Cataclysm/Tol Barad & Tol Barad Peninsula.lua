@@ -572,9 +572,10 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 						}),
 					}),
 					n(REWARDS, {
-						["description"] = "These are rewarded by completing the daily quests.",
 						["groups"] = {
-							currency(391),	-- Tol Barad Commendation
+							currency(391, {	-- Tol Barad Commendation
+								["description"] = "These are rewarded by completing Tol Barad daily quests.",
+							}),
 						},
 					}),
 				},
