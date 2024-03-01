@@ -374,8 +374,6 @@ CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
 		L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩余事物数量而不是总进度，请启用此选项。";
 		L.PERCENTAGES_CHECKBOX = "显示完成百分比";
 		L.PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比请启用此选项。\n\n按完成度对组进行着色不受影响。";
-		L.MORE_COLORS_CHECKBOX = "显示颜色";
-		L.MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的颜色来帮助区分列表中事物的附加条件，请启用此选项（比如职业颜色，阵营颜色等。）";
 		L.TOOLTIP_HELP_CHECKBOX = "显示鼠标提示帮助";
 		L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "如果你想在 ATT 窗口鼠标提示中看到帮助信息，即显示 ATT 窗口功能的各种键/点击组合，请启用此选项。\n如果你已经知道所有的键/点击组合，你可能希望节省工具提示空间并禁用此选项。";
 		L.MAIN_LIST_SLIDER_LABEL = "主列表缩放";
@@ -383,12 +381,6 @@ CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
 		L.MINI_LIST_SLIDER_LABEL = "小列表缩放";
 		L.MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
 		L.ADDITIONAL_LABEL = "附加信息";
-		L.WINDOW_COLORS = "窗口颜色";
-		L.BACKGROUND_TOOLTIP = "设置所有 ATT 窗口的背景颜色和透明度。";
-		L.BORDER_TOOLTIP = "设置所有 ATT 窗口的边框颜色和透明度。";
-		--TODO: L.RESET_TOOLTIP = "Revert to default settings.";
-		L.CLASS_BORDER = "边框使用职业颜色";
-		L.CLASS_BORDER_TOOLTIP = "使用职业颜色作为边框。当登录到另一个职业时，此信息会更新。";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "小地图按钮";
@@ -434,10 +426,6 @@ CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
 		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "不可获得" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "仅在满足先决条件的情况下获得" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. AVAILABLE .."季节性内容" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. UNAVAILABLE .. "季节性内容" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "当前角色不可用";	--TODO: check (un)available seasonal content
 		L.CHAT_COMMANDS_LABEL = "聊天命令";
 		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打开主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打开小列表。\n\n|R/att bounty\n|cffFFFFFF打开被出错或未确认的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打开团队助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打开世界任务列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品链接]\n|cffFFFFFF打开一个共享外观的窗口。也适用于其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF显示所有未来用补丁删除的东西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打开随机列表。\n\n|R/att unsorted\n|cffFFFFFF打开未知源物品列表。最好在调试模式下打开。\n\n|R/rl\n|cffFFFFFF重载魔兽界面。|R";
-
-	-- Accessibility tab
-		--TODO: L.COLORS_ICONS = "Colors and Icons";
-		--TODO: L.LOCKED_QUESTS = "Locked quests";
 
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "帐号管理";
@@ -810,6 +798,20 @@ for key,value in pairs({
 	-- Interface Page
 
 	-- Interface: Accessibility Page
+		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
+		--TODO: ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
+		--TODO: COLORS_ICONS = "Colors and Icons";
+		--TODO: LOCKED_QUESTS = "Locked quests";
+		MORE_COLORS_CHECKBOX = "显示颜色";
+		MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的颜色来帮助区分列表中事物的附加条件，请启用此选项（比如职业颜色，阵营颜色等。）";
+		WINDOW_COLORS = "窗口颜色";
+		--TODO: BACKGROUND = EMBLEM_BACKGROUND;
+		BACKGROUND_TOOLTIP = "设置所有 ATT 窗口的背景颜色和透明度。";
+		--TODO: BORDER = EMBLEM_BORDER;
+		BORDER_TOOLTIP = "设置所有 ATT 窗口的边框颜色和透明度。";
+		--TODO: RESET_TOOLTIP = "Revert to default settings.";
+		CLASS_BORDER = "边框使用职业颜色";
+		CLASS_BORDER_TOOLTIP = "使用职业颜色作为边框。当登录到另一个职业时，此信息会更新。";
 
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "成就 ID";

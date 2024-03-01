@@ -257,6 +257,20 @@ L.SETTINGS_MENU = {
 	-- Interface Page
 	
 	-- Interface: Accessibility Page
+		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
+		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
+		COLORS_ICONS = "Colors and Icons";
+		LOCKED_QUESTS = "Locked quests";
+		MORE_COLORS_CHECKBOX = "Show Colors";
+		MORE_COLORS_CHECKBOX_TOOLTIP = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
+		WINDOW_COLORS = "Window Colors";
+		BACKGROUND = EMBLEM_BACKGROUND;
+		BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
+		BORDER = EMBLEM_BORDER;
+		BORDER_TOOLTIP = "Set the border color of all ATT windows.";
+		RESET_TOOLTIP = "Revert to default settings.";
+		CLASS_BORDER = "Use Class Color For Border";
+		CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 	
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "Achievement ID";

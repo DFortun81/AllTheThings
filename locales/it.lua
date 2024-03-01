@@ -369,8 +369,6 @@ local L = app.L;
 		--TODO: L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		--TODO: L.PERCENTAGES_CHECKBOX = "Show Percentage Completion";
 		--TODO: L.PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-		--TODO: L.MORE_COLORS_CHECKBOX = "Show Colors";
-		--TODO: L.MORE_COLORS_CHECKBOX_TOOLTIP = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
 		--TODO: L.TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
 		--TODO: L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
 		--TODO: L.MAIN_LIST_SLIDER_LABEL = "Main List Scale";
@@ -378,12 +376,6 @@ local L = app.L;
 		--TODO: L.MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		--TODO: L.MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
-		--TODO: L.WINDOW_COLORS = "Window Colors";
-		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
-		--TODO: L.BORDER_TOOLTIP = "Set the border color of all ATT windows.";
-		--TODO: L.RESET_TOOLTIP = "Revert to default settings.";
-		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
-		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";
@@ -427,10 +419,6 @@ local L = app.L;
 		--TODO: L.ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
 		--TODO: L.CHAT_COMMANDS_LABEL = "Chat Commands";
 		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
-
-	-- Accessibility tab
-		--TODO: L.COLORS_ICONS = "Colors and Icons";
-		--TODO: L.LOCKED_QUESTS = "Locked quests";
 
 	-- Sync Window
 		--TODO: L.ACCOUNT_MANAGEMENT = "Account Management";
@@ -735,6 +723,20 @@ for key,value in pairs({
 	-- Interface Page
 
 	-- Interface: Accessibility Page
+		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
+		--TODO: ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
+		--TODO: COLORS_ICONS = "Colors and Icons";
+		--TODO: LOCKED_QUESTS = "Locked quests";
+		--TODO: MORE_COLORS_CHECKBOX = "Show Colors";
+		--TODO: MORE_COLORS_CHECKBOX_TOOLTIP = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
+		--TODO: WINDOW_COLORS = "Window Colors";
+		--TODO: BACKGROUND = EMBLEM_BACKGROUND;
+		--TODO: BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
+		--TODO: BORDER = EMBLEM_BORDER;
+		--TODO: BORDER_TOOLTIP = "Set the border color of all ATT windows.";
+		--TODO: RESET_TOOLTIP = "Revert to default settings.";
+		--TODO: CLASS_BORDER = "Use Class Color For Border";
+		--TODO: CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
 	-- Interface: Information Page
 

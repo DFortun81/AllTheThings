@@ -433,48 +433,6 @@ settings.ApplyProfile = function()
 		return true
 	end
 end
-settings.GetWindowColors = function()
-	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
-
-	-- User-saved colors
-	local colorg = settings:Get("Window:BackgroundColor")
-	rBg = tonumber(colorg.r) or 0
-	gBg = tonumber(colorg.g) or 0
-	bBg = tonumber(colorg.b) or 0
-	aBg = tonumber(colorg.a) or 0
-
-	-- Border colors
-	if settings:GetTooltipSetting("Window:UseClassForBorder") then
-		-- Set all the borders to the current class color
-		local _, class = UnitClass("player")
-		rBd, gBd, bBd = GetClassColor(class)
-		aBd = 1
-	else
-		-- User-saved colors
-		local colord = settings:Get("Window:BorderColor")
-		rBd = tonumber(colord.r) or 0
-		gBd = tonumber(colord.g) or 0
-		bBd = tonumber(colord.b) or 0
-		aBd = tonumber(colord.a) or 0
-	end
-	return rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
-end
-settings.ApplyWindowColors = function(window)
-	-- Apply the user-set colours
-	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
-
-	window:SetBackdropColor(rBg, gBg, bBg, aBg)
-	window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
-end
-settings.ApplyAllWindowColors = function()
-	-- Apply the user-set colours
-	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
-
-	for suffix, window in pairs(app.Windows) do
-		window:SetBackdropColor(rBg, gBg, bBg, aBg)
-		window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
-	end
-end
 -- Allows moving an ATT window based on the position stored in the current Profile
 -- This would be used when creating a Window initially during a game session
 settings.SetWindowFromProfile = function(suffix)

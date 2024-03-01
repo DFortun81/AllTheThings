@@ -1264,8 +1264,14 @@ local function BuildSettingsForWindow(self, windowSettings, isForDefaults)
 	windowSettings.resizable = not not self:IsResizable();
 	if isForDefaults then
 		windowSettings.backdrop = defaultBackdrop;
-		windowSettings.backdropColor = { 0, 0, 0, 1 };
-		windowSettings.borderColor = { 1, 1, 1, 1 };
+		if app.IsReady and app.Settings.GetWindowColors then
+			local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = app.Settings.GetWindowColors()
+			windowSettings.backdropColor = { rBg, gBg, bBg, aBg };
+			windowSettings.borderColor = { rBd, gBd, bBd, aBd };
+		else
+			windowSettings.backdropColor = { 0, 0, 0, 1 };
+			windowSettings.borderColor = { 1, 1, 1, 1 };
+		end
 	else
 		windowSettings.backdrop = self:GetBackdrop();
 		local r, g, b, a = self:GetBackdropColor();

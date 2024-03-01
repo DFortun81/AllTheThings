@@ -371,8 +371,6 @@ local L = app.L;
 		L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите количество оставшися предметов вместо прогресса и общего числа.";
 		L.PERCENTAGES_CHECKBOX = "Показать Процент Завершения";
 		L.PERCENTAGES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть процент завершения в каждом ряду.\n\nНе влияет на окрашивание групп.";
-		L.MORE_COLORS_CHECKBOX = "Использовать Цвета";
-		L.MORE_COLORS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть больше использованных цветов, помогающих различать дополнительные условия для Штучек в списках (то есть цвета классов, фракций и т.п.)";
 		L.TOOLTIP_HELP_CHECKBOX = "Показать Помощь в Подсказке";
 		L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть вспомогательную информацию в подсказке над окнами ATT, показывающую различные комбинации клавиш для управления.\nЕсли Вы уже знаете все комбинации, вполне резонно отключить их, чтобы уменьшить размер подсказок.";
 		L.MAIN_LIST_SLIDER_LABEL = "Масштаб Основого Списка";
@@ -380,13 +378,6 @@ local L = app.L;
 		L.MINI_LIST_SLIDER_LABEL = "Масштаб Мини Списков";
 		L.MINI_LIST_SCALE_TOOLTIP = 'Используйте для изменения масштаба Мини и Других Списков.\n\nПо умолчанию: 1';
 		L.ADDITIONAL_LABEL = "Дополнительная Информация";
-		L.WINDOW_COLORS = "Цвет окна";
-		L.BACKGROUND_TOOLTIP = "Установка фонового цвета для всех окон ATT.";
-		L.BORDER = "Рамка";
-		L.BORDER_TOOLTIP = "Установка цвета рамки для всех окон ATT.";
-		L.RESET_TOOLTIP = "Сбросить к настройкам по умолчанию.";
-		L.CLASS_BORDER = "Использовать цвет класса для рамки";
-		L.CLASS_BORDER_TOOLTIP = "Использовать цвет вашего класса для рамки. Цвет также обновляется, когда Вы на другом классе.";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "Кнопка у Миникарты";
@@ -432,10 +423,6 @@ local L = app.L;
 		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Недоступно" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Доступно с условием" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Доступная Праздничная Штучка" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Недоступная Праздничная Штучка" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Недоступно на текущем персонаже";
 		L.CHAT_COMMANDS_LABEL = "Команды Чата";
 		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFили|R /things |cffFFFFFFиои|R /allthethings\n|cffFFFFFFОткрыть Главный Список.\n\n|R/att mini |cffFFFFFFиои|R /attmini\n|cffFFFFFFОткрыть Мини Список.\n\n|R/att bounty\n|cffFFFFFFОткрыть список забагованных или неподтверждённых предметов.\n\n|R/att ra |cffFFFFFFили|R /attra\n|cffFFFFFFОткрыть Рейдовый Помощник.\n\n|R/att wq |cffFFFFFFили|R /attwq\n|cffFFFFFFОткрыть Список Локальных Заданий.\n\n|R/att item:1234 |cffFFFFFFили|R /att [Ссылка на Предмет]\n|cffFFFFFFОткрыть окно общих моделей. Также работает с другими Штучками, например, |R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF или |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFПоказать все Штучки, которые будет невозможно получить в будущем.\n\n|R/att nwp\n|cffFFFFFFПоказать все Штучки, добавленные в последнем патче.\n\n|R/att random |cffFFFFFFили|R /attrandom |cffFFFFFFили|R /attran\n|cffFFFFFFОткрыть Случайный Список.\n\n|R/att unsorted\n|cffFFFFFFОткрыть список несортированных Штучек. Лучше в Режиме Отладки.\n\n|R/rl\n|cffFFFFFFПерезагрузить интерфейс WoW.|R";
-
-	-- Accessibility tab
-		L.COLORS_ICONS = "Цвета и Иконки";
-		L.LOCKED_QUESTS = "Ограниченные задания";
 
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Управление Аккаунтами";
@@ -777,6 +764,20 @@ for key,value in pairs({
 	-- Interface Page
 
 	-- Interface: Accessibility Page
+		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
+		--TODO: ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
+		COLORS_ICONS = "Цвета и Иконки";
+		LOCKED_QUESTS = "Ограниченные задания";
+		MORE_COLORS_CHECKBOX = "Использовать Цвета";
+		MORE_COLORS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть больше использованных цветов, помогающих различать дополнительные условия для Штучек в списках (то есть цвета классов, фракций и т.п.)";
+		WINDOW_COLORS = "Цвет окна";
+		--TODO: BACKGROUND = EMBLEM_BACKGROUND;
+		BACKGROUND_TOOLTIP = "Установка фонового цвета для всех окон ATT.";
+		BORDER = "Рамка";
+		BORDER_TOOLTIP = "Установка цвета рамки для всех окон ATT.";
+		RESET_TOOLTIP = "Сбросить к настройкам по умолчанию.";
+		CLASS_BORDER = "Использовать цвет класса для рамки";
+		CLASS_BORDER_TOOLTIP = "Использовать цвет вашего класса для рамки. Цвет также обновляется, когда Вы на другом классе.";
 
 	-- Interface: Information Page
 
