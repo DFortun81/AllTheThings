@@ -397,7 +397,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["g"] = {
-					ach(13435),	-- Doomsoul Surprise
+					ach(13435, {	-- Doomsoul Surprise
+						["races"] = HORDE_ONLY,
+					}),
 				},
 			}),
 			q(51972, {	-- Lost Goat

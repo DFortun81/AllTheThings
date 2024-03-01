@@ -2481,7 +2481,7 @@ root(ROOTS.Zones, {
 							i(25527),	-- Swift Red Gryphon (MOUNT!)
 						},
 					}),
-					n(32565, {	-- Gara Skullcrush <Horde Expedition Quartermaster>
+					n(32565, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Gara Skullcrush <Horde Expedition Quartermaster>
 						["coord"] = { 41.4, 53.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2501,7 +2501,7 @@ root(ROOTS.Zones, {
 							i(38461),	-- Warsong Shanker
 							i(38462),	-- Warsong Stormshield
 						},
-					}),
+					})),
 					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						["coord"] = { 46.7, 32.5, BOREAN_TUNDRA },
 						["groups"] = {
