@@ -1425,7 +1425,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5", "removed 10.2.5.53495"} }, {
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5", "removed 10.2.5"} }, {
+			-- removed 10.2.5.53495
 			n(MONTHLY_REWARD, {
 				i(212220, {	-- Ensemble: Love Witch's Attire
 					i(212197),	-- Love Witch's Blouse
