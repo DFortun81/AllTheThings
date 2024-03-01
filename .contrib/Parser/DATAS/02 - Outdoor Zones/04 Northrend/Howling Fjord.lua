@@ -2298,9 +2298,8 @@ root(ROOTS.Zones, {
 							i(40006),	-- Forsaken Sword
 						},
 					}),
-					n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
+					n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
 						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(50373, {	-- Arcanum of the Savage Gladiator
 								["timeline"] = { "removed 5.0.4" },
@@ -2318,7 +2317,7 @@ root(ROOTS.Zones, {
 							i(38461),	-- Warsong Shanker
 							i(38462),	-- Warsong Stormshield
 						},
-					}),
+					})),
 					n(24028, {	-- Talu Frosthoof <Bowyer>
 						["coord"] = { 48.2, 11.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
