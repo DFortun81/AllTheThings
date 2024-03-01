@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["isWeekly"] = true,
 					}),
 				})),
-				n(REWARDS, {
+				n(SCENARIO_COMPLETION, {
 					i(205260),	-- Fleeting Glowspores
 					i(205288),	-- Buried Niffen Collection (Frostfire)
 					i(205347),	-- Gathered Niffen Resources (Thieving Critters)
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							{"pop"},
 							{"where", "headerID", WORLD_QUESTS },
 							{"pop"},
-							{"where", "headerID", REWARDS },
+							{"where", "headerID", SCENARIO_COMPLETION },
 							{"pop"},
 						},
 					}),

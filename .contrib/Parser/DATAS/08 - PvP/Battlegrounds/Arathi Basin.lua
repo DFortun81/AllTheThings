@@ -1027,7 +1027,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "removed 3.3.3" },
 				}),
 				i(185048, {	-- Shoveltusk Soul
-					["description"] = "Availble during Brawl: Comp Stomp",
+					["description"] = "Available during Brawl: Comp Stomp",
 					["timeline"] = { ADDED_9_0_5 },
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				}),

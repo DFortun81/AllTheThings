@@ -382,7 +382,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 				}),
-				n(REWARDS, {
+				n(EVENT_COMPLETION, {
 					i(207582),	-- Box of Tampered Reality
 					i(207584, {	-- Box of Volatile Reality
 						["g"] = {

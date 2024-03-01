@@ -24,7 +24,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(REWARDS, {
+			n(SCENARIO_COMPLETION, {
 				-- #if BEFORE 5.0.4
 				i(89205, {	-- Mini Mana Bomb Toy (TOY!)
 					["timeline"] = { "added 5.0.1", "removed 5.0.4" },

@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 				}),
 			})),
-			n(REWARDS, {
+			n(EVENT_COMPLETION, {
 				i(205204),	-- Cataloged Shalewing (MOUNT!)
 				i(205026),	-- Devourer Lobstrok (PET!)
 				i(205369, {	-- Appreciative Researcher's Gift

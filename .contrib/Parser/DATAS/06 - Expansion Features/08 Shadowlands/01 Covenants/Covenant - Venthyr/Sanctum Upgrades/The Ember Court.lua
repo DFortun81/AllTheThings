@@ -710,7 +710,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							q(65054),	-- Training Dummies
 							q(62140),	-- Venthyr Provocateur
 						})),
-						n(REWARDS, {
+						n(SCENARIO_COMPLETION, {
 							["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
 							["g"] = {
 								o(356697, {	-- Alexandros Mograine's Extravagant Tribute
