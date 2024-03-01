@@ -10,9 +10,6 @@ local L = app.L;
 
 -- Global locals
 local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
--- Globals
-CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
-CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
 
 for key, value in pairs({
 	-- General Text
@@ -930,7 +927,7 @@ for key, value in pairs({
 		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
 		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 50 Class Trial
+		[-148] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." Class Trial",	-- Level 50 Class Trial
 		[-149] = sformat(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
 		[-150] = sformat(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 	-- Garrison
@@ -938,10 +935,10 @@ for key, value in pairs({
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 	-- Class Trial
 		[-154] = sformat(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
-		[-155] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 50 Character Boost
-		[-156] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 60 Character Boost
+		[-155] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." Character Boost",	-- Level 50 Character Boost
+		[-156] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." Character Boost",	-- Level 60 Character Boost
 	-- Class Trial
-		[-160] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
+		[-160] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." Class Trial",	-- Level 60 Class Trial
 	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- War Campaign

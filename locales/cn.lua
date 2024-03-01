@@ -3,9 +3,6 @@ if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
-CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "职业试玩";
-CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
-
 -- General Text
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
 	L.THINGS_UNTIL = " 事物到 ";
