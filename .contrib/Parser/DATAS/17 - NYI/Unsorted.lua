@@ -2638,7 +2638,6 @@ root(ROOTS.Unsorted, {
 				i(180292),	-- Faerie Dust
 				i(180449),	-- Failed Experiment
 				i(177042),	-- Five-Chime Batzos
-				i(177256),	-- Floundering Soul
 				i(180769),	-- Fractured Stonewing
 				i(180230),	-- Gemstone Chips
 				i(168208),	-- Gleaming Chest

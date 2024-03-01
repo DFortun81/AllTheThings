@@ -707,6 +707,7 @@ i(182762);	-- Ornately Jeweled Amulet
 i(178107);	-- Pallid Sinuous Hide
 i(176856);	-- Partially Digested Viscera
 i(177025);	-- Partially Eaten Fish
+i(177256);	-- Floundering Soul
 i(184076);	-- Partially Finished Stone Sentry
 i(176392);	-- Patterned Wing
 i(183072);	-- Perfume Bottles
