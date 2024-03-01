@@ -941,7 +941,6 @@ root(ROOTS.NeverImplemented, {
 				i(192560),	-- Bossy Storm Stuff
 				i(200824),	-- Bottled Lightning
 				i(192078),	-- Bottled Putrescence
-				i(200967),	-- Conquest
 				i(200950),	-- Consortium Packaging String
 				i(198541),	-- Depleted Violet Vapors
 				i(191058),	-- Dilapidated Parchment: Bottom Half

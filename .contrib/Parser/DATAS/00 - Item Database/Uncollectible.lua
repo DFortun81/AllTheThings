@@ -1238,6 +1238,8 @@ i(200635);	-- Refine Dragon Isles Herbs
 i(198424);	-- Refine Dragon Isles Hides
 i(198425);	-- Refine Dragon Isles Leather
 i(198426);	-- Refine Dragon Isles Scales
+--- PVP Currency ---
+i(200967);	-- Conquest
 --- Trash ---
 i(200823);	-- 300x Magnifying Glass
 i(200770);	-- A Brief History of Azeroth
