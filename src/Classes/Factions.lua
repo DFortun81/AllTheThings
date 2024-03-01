@@ -243,8 +243,7 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 	["key"] = function(t)
 		return "factionID";
 	end,
-	-- pseudo-headerID so that default Sorting considers Faction groups equivalent to Headers
-	["headerID"] = function()
+	["isHeader"] = function()
 		return true;
 	end,
 	["name"] = function(t)
