@@ -2059,7 +2059,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(78204),	-- First Week Trigger (spellID 423861)
 		-- PVP
 		q(79332, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
-		q(78011),	-- trigger after Brawl: Battleground Blitz (possibly criteria hqt for turn in Gotta Go Fast?)
 	}),
 
 	--------------------

@@ -1572,3 +1572,5 @@ i(208312, 419041);	-- Verdant Combatant's Emblem
 i(208311, 419040);	-- Verdant Combatant's Insignia of Alacrity
 i(208310, 419039);	-- Verdant Combatant's Medallion
 i(210491, 425958);	-- Winding Slitherdrake: Hairy Chin
+--- LEGENDARY ---
+i(0, 422337);		-- Lydiara's Binding Rune

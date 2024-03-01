@@ -941,6 +941,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(76542, 414988, ADDED_10_2_0);	-- Enchanted Wyrm's Dreaming Crest
 			FirstCraft(75315, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
 			FirstCraft(75235, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
+			-- Legendary
+			FirstCraft(78011, 422338, ADDED_10_2_0);	-- Shalasar's Sophic Vellum
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air (ILLUSION!)
@@ -1849,6 +1851,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(78896, 429149, ADDED_10_2_0);	-- Glyph of the Lunar Chameleon
 			FirstCraft(76602, 416137, ADDED_10_1_5);	-- Glyph of the Shath'Yar
 			FirstCraft(78708, 427956, ADDED_10_2_0);	-- Mark of the Auric Dreamstag
+			-- Legendary
+			FirstCraft(78010, 422337, ADDED_10_2_0);	-- Lydiara's Binding Rune
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -2753,6 +2757,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71773, 375172);	-- Tuskarr Beanbag
 			-- Artisan Curios
 			FirstCraft(74483, 400814, ADDED_10_0_7);	-- Reinforced Pristine Leather
+			-- Legendary
+			FirstCraft(78009, 422330, ADDED_10_2_0);	-- Erden's Glowspore Grip
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
