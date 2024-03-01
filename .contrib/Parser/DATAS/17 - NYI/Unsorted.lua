@@ -1391,6 +1391,38 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+			i(203458),	-- Black Dragonscale Robes
+			i(203396),	-- Displayed Armor Piece
+			i(203453),	-- Dragonbone Totem
+			i(203455),	-- Draketooth Fetish
+			i(202873),	-- Drooping Mushroom Cutting
+			i(204803),	-- Echoed Lurker Flesh
+			i(203394),	-- Elementally Charged Orb
+			i(204433),	-- Everburning Fireshard
+			i(203385),	-- Flamesight Rune
+			i(204801),	-- Gelcap Spores
+			i(205169),	-- Glimmer Mushroom
+			i(205179),	-- Glimmerfish Scale
+			i(204067),	-- Glowing Crystal
+			i(204694),	-- Greater Flamesight Rune
+			i(204070),	-- Magma Crystal
+			i(204792),	-- Nightlight Conkerbell Sample
+			i(203456),	-- Obsidian Prayer Beads
+			i(204435),	-- Obsidian Tablet
+			i(204088),	-- Quartzite Spore Bile
+			i(205217),	-- Sharpbeak's Feed
+			i(203442),	-- Snail Slime
+			i(203393),	-- Spongy Loamshroom
+			i(204273),	-- Stolen Supplies
+			i(204069),	-- Sulfuric Crystal
+			i(204713),	-- Sundered Flame Expedition Notes
+			i(204817),	-- Underlight Cocoon Fibers
+			i(203653),	-- Vacant Elemental Core
+			i(203012),	-- Viridian Heartcrystal
+			i(203457),	-- Volcanic Herb Sachet
+			i(204085),	-- Zaqali Dragonslayer's Spear
+			i(203454),	-- Zaqali Equipment
+			i(203654),	-- Zaqali Flame Totem
 			n(QUESTS, {
 				-- 10.1.0.48480
 				q(71053),	-- Hermit Kill Quest
@@ -1532,6 +1564,11 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+			i(202619),	-- Mender Supplies
+			i(202868),	-- Mender's Signal
+			i(202180),	-- Pipsee Cheese Snack
+			i(202647),	-- Stolen Goods
+			i(202620),	-- Toxin Antidote
 			n(ARMOR, {
 				i(204258),	-- Goblin Trainee's Wristwraps
 				i(204259),	-- Goblin Trainee's Cord
@@ -1756,6 +1793,8 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+			i(191552),	-- Expedition Metal Detector
+			i(191421),	-- Rudimentary Magical Lockpick
 			n(QUESTS, {
 				-- 10.0.0.44649
 				q(63520),	-- Winging It
@@ -2534,6 +2573,25 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(SL_TIER, {
 		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+			i(175504),	-- Cord of Pained Absolution
+			i(183830),	-- Do It Yourself Flag Kit
+			i(174780),	-- Emptied First Aid Kit
+			i(180451),	-- Grand Inquisitor's Sinstone Fragment
+			i(183964),	-- Lavish Anima Items
+			i(173349),	-- Misfiring Centurion Controller
+			i(175506),	-- Nightcloaked Waistcord
+			i(176093),	-- RSVP: Alexandros Mograine
+			i(176058),	-- RSVP: Baroness Vashj
+			i(176094),	-- RSVP: Honor 6
+			i(176090),	-- RSVP: Lady Moonberry
+			i(176092),	-- RSVP: Mikanikos
+			i(176091),	-- RSVP: The Countess
+			i(180289),	-- Sinvyr Statuette
+			i(175505),	-- Soul Hunter's Cinch
+			i(175239),	-- Standard Issue Knapsack
+			i(175503),	-- Stoneforged Greatbelt
+			i(181549),	-- Timeworn Sinstone
+			i(178152),	-- <Broker Adjective> Return Beacon
 			filter(MISC, {
 				i(183902),	-- A Faintly Glowing Seed
 				i(183616),	-- Accursed Keepsake
@@ -3302,6 +3360,9 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+			i(176921),	-- Temporal Leaves
+			i(176922),	-- Wild Nightbloom
+			i(176832),	-- Wildseed Root Grain
 			filter(QUEST_ITEMS, {
 				i(175841),	-- Ani-Matter Orb
 				i(175013),	-- Bug Dissolver
@@ -3325,6 +3386,9 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+			i(187552),	-- Perfectly-Forged Credentials
+			i(187551),	-- Small Korthian Supply Chest
+			i(185918),	-- Translated Cryptograms
 			filter(QUEST_ITEMS, {
 				i(185732),	-- Archive Tablet
 				i(187004),	-- Bone Chew

@@ -52437,7 +52437,6 @@ s(62129)/i(113128),	--
 s(62167)/i(113184),	--
 s(62168)/i(113185),	--
 s(62176)/i(113220),	-- Crimson Gauntlets of Death \\ son Gauntlets of Death
-s(62182)/i(113222),	-- Keengrip Arrowpullers \\ grip Arrowpullers
 s(62187)/i(113225),	-- Kalaena's Arcane Handwraps \\ ena's Arcane Handwraps
 s(62222)/i(113280),	--
 s(62223)/i(113281),	--
@@ -55222,8 +55221,6 @@ s(86444)/i(147492),	--
 s(86445)/i(147493),	--
 s(86446)/i(147494),	--
 s(86447)/i(147495),	--
-s(86451)/i(147515),	-- Hellblaze Invader's Greaves \\ blaze Invader's Greaves
-s(86453)/i(147516),	-- Legion Stalker's Hood \\ on Stalker's Hood
 s(86457)/i(147522),	--
 s(86458)/i(147562),	--
 s(86493)/i(147617),	--
@@ -55693,9 +55690,6 @@ s(92749)/i(156153),	--
 s(92750)/i(156154),	--
 s(92751)/i(156155),	--
 s(92752)/i(156156),	--
-s(92822)/i(156252),	-- Greaves of the Stonewarder
-s(92824)/i(156254),	-- Leggings of the Tortured Earth
-s(92826)/i(156256),	-- Grips of Chaos
 s(92896)/i(156342),	--
 s(92913)/i(156362),	--
 s(92914)/i(156363),	--
@@ -55742,13 +55736,6 @@ s(93000)/i(156449),	--
 s(93001)/i(156450),	--
 s(93004)/i(156453),	--
 s(93008)/i(156457),	--
-s(93010)/i(156460),	-- Mimiron's Repeater
-s(93011)/i(156461),	-- Adamant Handguards
-s(93014)/i(156465),	-- Iceshear Mantle
-s(93016)/i(156467),	-- Boots of Unsettled Prey
-s(93017)/i(156468),	-- Cloak of the Dormant Blaze
-s(93018)/i(156469),	-- Pillar of Fortitude
-s(93019)/i(156470),	-- Bloodcrush Cudgel
 s(93020)/i(156471),	--
 s(93047)/i(156547),	--
 s(93069)/i(156667),	--
@@ -63835,10 +63822,6 @@ s(181105)/i(195434),	--
 s(181106)/i(195435),	--
 s(181131)/i(195452),	--
 s(181132)/i(195454),	--
-s(181139)/i(195480),	-- Seal of Diurna's Chosen \\ Seal of Diurna's Chosesn \\ 10.0 Raid - Vault of the Incarnates - Boss 01 - Eranog - Accessory - Ring
-s(181155)/i(195496),	-- Eye of the Vengeful Hurricane \\ 10.0 Raid - Vault of the Incarnates - Boss 03 - Windform - Accessory - Neck
-s(181161)/i(195502),	-- Terros's Captive Core \\ Terros' Captive Core \\ 10.0 Raid - Vault of the Incarnates - Boss 04 - Terros - Accessory - Neck
-s(181185)/i(195526),	-- Seal of Filial Duty \\ 10.0 Raid - Vault of the Incarnates - Boss 07 - Diurna - Accessory - Ring
 s(181195)/i(196436),	--
 s(181196)/i(196437),	--
 s(181197)/i(196438),	--
@@ -64123,29 +64106,11 @@ s(183036)/i(200732),	--
 s(183122)/i(201046),	-- Dreamwarding Dripbrew \\ [NYI] PH Food - Late Night Lab
 10.0.2.46091
 s(184043)/i(201972),	-- Crimson Gladiator's Splitter
-s(184046)/i(201992),	-- Emissary's Flamewrought Seal \\ [PH] BoE Ring
 10.0.2.46259
 s(184086)/i(202041),	--
-s(184133)/i(202148),	-- Emissary's Flamewrought Seal
 s(184158)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 s(184159)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 10.0.5.47799
-s(169021)/i(190807),	-- Artisan's Work Shirt
-s(169030)/i(190816),	-- Forgehand's "Stable" Fuel Cell
-s(169034)/i(190820),	-- Restless Void Handaxe
-s(169036)/i(190822),	-- Mo'arg Enforcer's Halberd
-s(169057)/i(190844),	-- Valarjar Champion's Greatsword
-s(169060)/i(190847),	-- Deathmantle Assassin's Barb
-s(169061)/i(190848),	-- [DNT] Do not use
-s(169062)/i(190849),	-- Forgemaster's Gavel
-s(169069)/i(190860),	-- Initiate's Bo
-s(169096)/i(190889),	-- Woodsman's Hatchet
-s(169098)/i(190891),	-- Shabby Battleaxe
-s(169100)/i(190893),	-- Jeweled Valkyrion Cape
-s(169107)/i(190900),	-- Prototype Farstrider Sniper Rifle
-s(169109)/i(190902),	-- Will of the Titanforged
-s(169110)/i(190903),	-- Soulburner Warscythe
-s(169115)/i(190908),	-- Devourer's Skullscythe
 s(184146)/i(202153),	--
 s(184147)/i(202154),	--
 s(184149)/i(202155),	--
@@ -64532,14 +64497,6 @@ s(193978)/i(211079),	--
 10.2.0.51825
 s(194439)/i(211871),	--
 10.2.5.52206
-s(165310)/i(187651),	-- Evoker Tunic
-s(165311)/i(187652),	-- Evoker Boots
-s(165312)/i(187653),	-- Evoker Gloves
-s(165313)/i(187654),	-- Evoker Coif
-s(165314)/i(187655),	-- Evoker Legwraps
-s(165315)/i(187656),	-- Evoker Pauldrons
-s(165316)/i(187657),	-- Evoker Belt
-s(165317)/i(187658),	-- Evoker Armbands
 s(194709)/i(212342),	--
 s(194710)/i(212343),	--
 10.2.5.52330
@@ -64554,9 +64511,3 @@ s(195224)/i(213273),	--
 10.2.5.52968
 s(191960)/i(210191),	--
 s(191961)/i(210192),	--
-10.2.5.53104
-s(168243)/i(190090),	-- Dessicated Bouquet
-s(168920)/i(190669),	-- Burnished Helm of Righteousness
-s(168939)/i(190688),	-- Silvered Helm of Righteousness
-s(168943)/i(190692),	-- Champion's Battle Standard
-s(169032)/i(190818),	-- Steamwheedle Artifact Extractor

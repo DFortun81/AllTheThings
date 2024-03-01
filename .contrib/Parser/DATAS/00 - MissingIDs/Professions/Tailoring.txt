@@ -150,25 +150,14 @@ r(55924),	-- Duskweave Boots
 r(55925),	-- Black Duskweave Leggings
 r(55941),	-- Black Duskweave Robe
 r(55943),	-- Black Duskweave Wristwraps
-r(55993),	-- Red Lumberjack Shirt
-r(55994),	-- Blue Lumberjack Shirt
 r(55995),	-- Yellow Lumberjack Shirt
-r(55996),	-- Green Lumberjack Shirt
-r(55997),	-- Red Workman's Shirt
-r(55998),	-- Blue Workman's Shirt
-r(55999),	-- Rustic Workman's Shirt
 r(56000),	-- Green Workman's Shirt
 r(56001),	-- Moonshroud
 r(56002),	-- Ebonweave
 r(56003),	-- Spellweave
-r(56004),	-- Abyssal Bag
-r(56005),	-- Glacial Bag
-r(56006),	-- Mysterious Bag
 r(56007),	-- Frostweave Bag
 r(56008),	-- Shining Spellthread
-r(56009),	-- Brilliant Spellthread
 r(56010),	-- Azure Spellthread
-r(56011),	-- Sapphire Spellthread
 r(56014),	-- Cloak of the Moon
 r(56015),	-- Cloak of Frozen Spirits
 r(56018),	-- Hat of Wintry Doom
@@ -189,7 +178,6 @@ r(56034),	-- Master's Spellthread
 r(56039),	-- Sanctified Spellthread
 r(56048),	-- Duskweave Boots
 3.1.0.9767
-r(59390),	-- Cloth Scavenging \\ Northern Cloth Scavenging
 r(59582),	-- Frostsavage Belt
 r(59583),	-- Frostsavage Bracers
 r(59584),	-- Frostsavage Shoulders
@@ -203,28 +191,9 @@ r(60971),	-- Magnificent Flying Carpet
 r(60990),	-- Glacial Waistband
 r(60993),	-- Glacial Robe
 r(60994),	-- Glacial Slippers
-r(63203),	-- Sash of Ancient Power
-r(63204),	-- Spellslinger's Slippers
-r(63205),	-- Cord of the White Dawn
-r(63206),	-- Savior's Slippers
 r(63742),	-- Spidersilk Drape
-r(63924),	-- Emerald Bag
 r(64729),	-- Frostguard Drape
 r(64730),	-- Cloak of Crimson Snow
-3.3.5.12340
-r(67064),	-- Royal Moonshroud Robe
-r(67065),	-- Royal Moonshroud Bracers
-r(67066),	-- Merlin's Robe
-r(67079),	-- Bejeweled Wizard's Bracers
-r(67144),	-- Royal Moonshroud Robe
-r(67145),	-- Bejeweled Wizard's Bracers
-r(67146),	-- Merlin's Robe
-r(67147),	-- Royal Moonshroud Bracers
-r(70550),	-- Leggings of Woven Death
-r(70551),	-- Deathfrost Boots
-r(70552),	-- Lightweave Leggings
-r(70553),	-- Sandals of Consecration
-r(75597),	-- Frosty Flying Carpet
 4.0.1.12911
 r(74964),	-- Bolt of Embersilk Cloth
 r(75141),	-- Dream of Skywall
@@ -981,112 +950,10 @@ r(439097),	-- Boots of the Enchanter
 r(439098),	-- Crimson Silk Belt
 r(439100),	-- Earthen Vest
 r(439102),	-- Enchanter's Cowl
-3.0.1.8622
-r(51309),	-- Tailoring
 3.0.1.8874
-r(55642),	-- Lightweave Embroidery
-r(55769),	-- Darkglow Embroidery
-r(55777),	-- Swordguard Embroidery
-r(55898),	-- Frostweave Net
-r(55899),	-- Bolt of Frostweave
-r(55900),	-- Bolt of Imbued Frostweave
-r(55901),	-- Duskweave Leggings
-r(55902),	-- Frostwoven Shoulders
-r(55903),	-- Frostwoven Robe
-r(55904),	-- Frostwoven Gloves
-r(55906),	-- Frostwoven Boots
-r(55907),	-- Frostwoven Cowl
-r(55908),	-- Frostwoven Belt
-r(55910),	-- Mystic Frostwoven Shoulders
-r(55911),	-- Mystic Frostwoven Robe
-r(55913),	-- Mystic Frostwoven Wristwraps
-r(55914),	-- Duskweave Belt
-r(55919),	-- Duskweave Cowl
-r(55920),	-- Duskweave Wristwraps
-r(55921),	-- Duskweave Robe
-r(55922),	-- Duskweave Gloves
-r(55923),	-- Duskweave Shoulders
-r(55924),	-- Duskweave Boots
-r(55925),	-- Black Duskweave Leggings
-r(55941),	-- Black Duskweave Robe
-r(55943),	-- Black Duskweave Wristwraps
-r(55993),	-- Red Lumberjack Shirt
-r(55994),	-- Blue Lumberjack Shirt
-r(55995),	-- Yellow Lumberjack Shirt
-r(55996),	-- Green Lumberjack Shirt
-r(55997),	-- Red Workman's Shirt
-r(55998),	-- Blue Workman's Shirt
-r(55999),	-- Rustic Workman's Shirt
-r(56000),	-- Green Workman's Shirt
-r(56001),	-- Moonshroud
-r(56002),	-- Ebonweave
-r(56003),	-- Spellweave
-r(56004),	-- Abyssal Bag
-r(56005),	-- Glacial Bag
-r(56006),	-- Mysterious Bag
-r(56007),	-- Frostweave Bag
-r(56008),	-- Shining Spellthread
-r(56009),	-- Brilliant Spellthread
-r(56010),	-- Azure Spellthread
-r(56011),	-- Sapphire Spellthread
-r(56014),	-- Cloak of the Moon
-r(56015),	-- Cloak of Frozen Spirits
 r(56016),	-- Wispcloak
 r(56017),	-- Deathchill Cloak
-r(56018),	-- Hat of Wintry Doom
-r(56019),	-- Silky Iceshard Boots
-r(56020),	-- Deep Frozen Cord
-r(56021),	-- Frostmoon Pants
-r(56022),	-- Light Blessed Mittens
-r(56023),	-- Aurora Slippers
-r(56024),	-- Moonshroud Robe
-r(56025),	-- Moonshroud Gloves
-r(56026),	-- Ebonweave Robe
-r(56027),	-- Ebonweave Gloves
-r(56028),	-- Spellweave Robe
-r(56029),	-- Spellweave Gloves
-r(56030),	-- Frostwoven Leggings
-r(56031),	-- Frostwoven Wristwraps
-r(56034),	-- Master's Spellthread
-r(56039),	-- Sanctified Spellthread
 r(56048),	-- Duskweave Boots
-3.1.0.9767
-r(59390),	-- Cloth Scavenging \\ Northern Cloth Scavenging
-r(59582),	-- Frostsavage Belt
-r(59583),	-- Frostsavage Bracers
-r(59584),	-- Frostsavage Shoulders
-r(59585),	-- Frostsavage Boots
-r(59586),	-- Frostsavage Gloves
-r(59587),	-- Frostsavage Robe
-r(59588),	-- Frostsavage Leggings
-r(59589),	-- Frostsavage Cowl
-r(60969),	-- Flying Carpet
-r(60971),	-- Magnificent Flying Carpet
-r(60990),	-- Glacial Waistband
-r(60993),	-- Glacial Robe
-r(60994),	-- Glacial Slippers
-r(63203),	-- Sash of Ancient Power
-r(63204),	-- Spellslinger's Slippers
-r(63205),	-- Cord of the White Dawn
-r(63206),	-- Savior's Slippers
-r(63742),	-- Spidersilk Drape
-r(63924),	-- Emerald Bag
-r(64729),	-- Frostguard Drape
-r(64730),	-- Cloak of Crimson Snow
-3.3.5.12340
-r(67064),	-- Royal Moonshroud Robe
-r(67065),	-- Royal Moonshroud Bracers
-r(67066),	-- Merlin's Robe
-r(67079),	-- Bejeweled Wizard's Bracers
-r(67144),	-- Royal Moonshroud Robe
-r(67145),	-- Bejeweled Wizard's Bracers
-r(67146),	-- Merlin's Robe
-r(67147),	-- Royal Moonshroud Bracers
-r(70550),	-- Leggings of Woven Death
-r(70551),	-- Deathfrost Boots
-r(70552),	-- Lightweave Leggings
-r(70553),	-- Sandals of Consecration
-r(75597),	-- Frosty Flying Carpet
 4.0.1.12911
 r(74964),	-- Bolt of Embersilk Cloth
 r(75141),	-- Dream of Skywall

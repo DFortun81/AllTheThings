@@ -223,8 +223,16 @@ def get_existing_ids(thing: type[Thing]) -> list[str]:
     debug_path = Path(DEBUGGING_FOLDER, f"{thing.debugDB_prefix()}ID_DebugDB.json")
     with open(debug_path, encoding="utf-8-sig") as debugDB_file:
         json_file = json.loads(debugDB_file.readlines()[0])
-        for key in json_file.keys():
-            existing_ids.append(f"{key}\n")
+        if thing != Quests:
+            for key in json_file.keys():
+                existing_ids.append(f"{key}\n")
+        else:
+            for key in json_file.keys():
+                existing_ids.append(f"{key}\n")
+                try:
+                    existing_ids.append(f"{json_file[key]['questIDH']}\n")
+                except:
+                    continue
     return existing_ids
 
 
@@ -519,6 +527,18 @@ def add_latest_data(build: str) -> None:
             before_list = list(dict.fromkeys(before_list))
         with open(raw_path, "w") as raw_file:
             raw_file.writelines(before_list)
+        if difference and thing == Items:
+            with open("FastItem.txt", "w") as item_file:
+                for index, name_line in enumerate(difference):
+                    id: str = re.sub("[^\\d^.]", "", name_line.split(DELIMITER)[0].strip())
+                    try:
+                        name: str = name_line.split(DELIMITER)[1].strip()
+                    except KeyError:
+                        continue
+                    if id.isdigit():
+                        lines[index] = f"i({id}),\t-- {name}\n"
+                    else:
+                        lines[index] = lines[index]
 
 
 def create_missing_files() -> None:
@@ -551,7 +571,7 @@ def give_name_item() -> None:
 
 """How to add latest data from a new Build"""
 """Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
-# add_latest_data("10.2.5.53441")
+# add_latest_data("1.15.1.53495")
 """Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 3a: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()

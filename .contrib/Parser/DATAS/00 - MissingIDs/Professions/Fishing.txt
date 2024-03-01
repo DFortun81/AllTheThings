@@ -21,23 +21,15 @@ r(110410),	-- Fishing
 r(131474),	-- Fishing
 r(131476),	-- Fishing
 r(131490),	-- Fishing
-r(158743),	-- Fishing
 8.0.1.26287
 r(271616),	-- Fishing
 r(271656),	-- Outland Fishing
 r(271658),	-- Northrend Fishing
 r(271660),	-- Cataclysm Fishing
 r(271662),	-- Pandaria Fishing
-r(271664),	-- Draenor Fishing
 r(271672),	-- Legion Fishing
-r(271675),	-- Kul Tiran Fishing
-r(271677),	-- Zandalari Fishing
-8.0.1.26310
-r(271990),	-- Fishing Journal \\ Fishing Skills
 8.0.1.26367
 r(272011),	-- Fishing
-9.0.1.33978
-r(310675),	-- Shadowlands Fishing
 
 
 
@@ -67,20 +59,3 @@ r(110410),	-- Fishing
 r(131474),	-- Fishing
 r(131476),	-- Fishing
 r(131490),	-- Fishing
-r(158743),	-- Fishing
-8.0.1.26287
-r(271616),	-- Fishing
-r(271656),	-- Outland Fishing
-r(271658),	-- Northrend Fishing
-r(271660),	-- Cataclysm Fishing
-r(271662),	-- Pandaria Fishing
-r(271664),	-- Draenor Fishing
-r(271672),	-- Legion Fishing
-r(271675),	-- Kul Tiran Fishing
-r(271677),	-- Zandalari Fishing
-8.0.1.26310
-r(271990),	-- Fishing Journal \\ Fishing Skills
-8.0.1.26367
-r(272011),	-- Fishing
-9.0.1.33978
-r(310675),	-- Shadowlands Fishing
