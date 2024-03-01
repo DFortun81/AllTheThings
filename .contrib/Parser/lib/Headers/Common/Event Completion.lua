@@ -3,7 +3,7 @@ EVENT_COMPLETION = createHeader({
 	constant = "EVENT_COMPLETION",
 	icon = [[~_.asset("Interface_Rewards")]],
 	text = {
-		en = [[~QUEST_REWARDS]],
+		en = "Event Completion",
 	},
 	description = {
 		en = "Contains Things which are rewarded that upon completing that event.",
