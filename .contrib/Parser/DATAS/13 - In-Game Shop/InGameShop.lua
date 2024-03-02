@@ -161,7 +161,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.0.1.27602", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		i(212229, {	-- Twilight Sky Prowler (MOUNT!)
-			["timeline"] = { "added 10.2.5.53162", "removed 10.2.5.99999" },	-- Removed Feb 29th, 2024
+			["timeline"] = { "added 10.2.5.53162", "removed 10.2.5.53441" },	-- Removed Feb 29th, 2024
 		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },	-- removed from the store again on Jan 2 2023
@@ -182,8 +182,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
 		}),
-		mount(397406, {	-- Wonderous Wavewhisker
+		mount(397406, {	-- Wonderous Wavewhisker (MOUNT!)
 			["timeline"] = { "added 10.1.0.50000" },
+		}),
+		i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
+			["timeline"] = { "added 10.2.5.53441", "removed 10.2.6.99999" },	-- Removed from shop on Apr 1 2024
 		}),
 	}),
 	filter(BATTLE_PETS, {
@@ -240,7 +243,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 		}),
 		i(213556, {	-- Hoplet (PET!)
-			["timeline"] = { "added 10.2.5", "removed 10.2.5.99999" },	-- Removed Feb 29th, 2024
+			["timeline"] = { "added 10.2.5", "removed 10.2.5.53441" },	-- Removed Feb 29th, 2024
 		}),
 		i(49693, {	-- Lil' K.T.
 			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
@@ -263,7 +266,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(141893, {	-- Mischief (PET!)
 			["timeline"] = { "added 7.1.0.22996", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
-		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
+		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automatically
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 		}),
 		i(68618, {	-- Moonkin Hatchling [A] (PET!)
@@ -483,7 +486,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(210075),	-- Sky-Captain's Masquerade Pants
 		})),
 		i(212222,	-- Ensemble: Twilight Witch's Attire
-			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53162", "removed 10.2.5.99999" } }, {	-- Removed Feb 29th, 2024
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53162", "removed 10.2.5.53441" } }, {	-- Removed Feb 29th, 2024
 			i(212211),	-- Twilight Witch's Blouse
 			i(212212),	-- Twilight Witch's Boots
 			i(212213),	-- Twilight Witch's Gloves
@@ -492,6 +495,28 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(212216),	-- Twilight Witch's Shoulders
 			i(212215),	-- Twilight Witch's Skirt
 		})),
+		-- i(X,	-- Dreadlord's Venombane Set
+		-- 	bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
+		-- 	i(X),	-- Dreadlord's Venombane Breeches
+		-- 	i(X),	-- Dreadlord's Venombane Grips
+		-- 	i(X),	-- Dreadlord's Venombane Helm
+		-- 	i(X),	-- Dreadlord's Venombane Sash
+		-- 	i(X),	-- Dreadlord's Venombane Shoulderpads
+		-- 	i(X),	-- Dreadlord's Venombane Tunic
+		-- 	i(X),	-- Dreadlord's Venombane Wings
+		-- 	i(X),	-- Dreadlord's Venombane Wristband
+		-- })),
+		-- i(X,	-- Dreadlord's Shadowbane Set
+		-- 	bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
+		-- 	i(X),	-- Dreadlord's Shadowbane Breeches
+		-- 	i(X),	-- Dreadlord's Shadowbane Grips
+		-- 	i(X),	-- Dreadlord's Shadowbane Helm
+		-- 	i(X),	-- Dreadlord's Shadowbane Sash
+		-- 	i(X),	-- Dreadlord's Shadowbane Shoulderpads
+		-- 	i(X),	-- Dreadlord's Shadowbane Tunic
+		-- 	i(X),	-- Dreadlord's Shadowbane Wings
+		-- 	i(X),	-- Dreadlord's Shadowbane Wristband
+		-- })),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
