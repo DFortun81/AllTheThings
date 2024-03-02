@@ -46,6 +46,7 @@ local AvailabilityConditions = {
 	11,	-- Summon Items (TODO: Split up into a couple different ones
 	0,	-- Blank Space
 	45,	-- Broken Loot (not valid anymore?)
+	15, -- Unlearnable (currently cannot be permanently collected)
 };
 
 
