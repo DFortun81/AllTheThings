@@ -398,14 +398,14 @@ i(0, 56000);	-- Green Workman's Shirt
 i(0, 56018);	-- Hat of Wintry Doom
 i(0, 56022);	-- Light Blessed Mittens
 i(0, 55642);	-- Lightweave Embroidery [REMOVED 6.0.2]
-i(0, 56034);	-- Master's Spellthread
+i(0, 56034);	-- Master's Spellthread [Rank 1]
 i(0, 56001);	-- Moonshroud
 i(0, 56025);	-- Moonshroud Gloves
 i(0, 56024);	-- Moonshroud Robe
 i(0, 55911);	-- Mystic Frostwoven Robe
 i(0, 55910);	-- Mystic Frostwoven Shoulders
 i(0, 55913);	-- Mystic Frostwoven Wristwraps
-i(0, 56039);	-- Sanctified Spellthread
+i(0, 56039);	-- Sanctified Spellthread [Rank 1]
 i(0, 56008);	-- Shining Spellthread
 i(0, 56019);	-- Silky Iceshard Boots
 i(0, 56003);	-- Spellweave
@@ -475,6 +475,99 @@ i(49956, 70553);	-- Sandals of Consecration
 -------------------
 --- ITEM ---
 i(54798, 75597);	-- Frosty Flying Carpet
+
+--------------------
+--- PATCH 4.0.3a ---
+--------------------
+--- TRAINER ---
+i(0, 74964);	-- Bolt of Embersilk Cloth
+i(0, 75248);	-- Deathsilk Belt
+i(0, 75252);	-- Deathsilk Boots
+i(0, 75249);	-- Deathsilk Bracers
+i(0, 75256);	-- Deathsilk Cowl
+i(0, 75253);	-- Deathsilk Gloves
+i(0, 75254);	-- Deathsilk Leggings
+i(0, 75257);	-- Deathsilk Robe
+i(0, 75251);	-- Deathsilk Shoulders
+i(0, 75146);	-- Dream of Azshara
+i(0, 75142);	-- Dream of Deepholm
+i(0, 94743);	-- Dream of Destruction
+i(0, 75144);	-- Dream of Hyjal
+i(0, 75145);	-- Dream of Ragnaros
+i(0, 75141);	-- Dream of Skywall
+i(0, 75264);	-- Embersilk Bag
+i(0, 75247);	-- Embersilk Net
+i(0, 75250);	-- Enchanted Spellthread
+i(0, 75255);	-- Ghostly Spellthread
+i(0, 75268);	-- Hyjal Expedition Bag
+i(0, 75154);	-- Master's Spellthread [Rank 2]
+i(0, 75265);	-- Otherworldly Bag
+i(0, 75155);	-- Sanctified Spellthread [Rank 2]
+i(0, 75258);	-- Spiritmend Belt
+i(0, 75261);	-- Spiritmend Boots
+i(0, 75259);	-- Spiritmend Bracers
+i(0, 75266);	-- Spiritmend Cowl
+i(0, 75262);	-- Spiritmend Gloves
+i(0, 75263);	-- Spiritmend Leggings
+i(0, 75267);	-- Spiritmend Robe
+i(0, 75260);	-- Spiritmend Shoulders
+i(0, 75156);	-- Tailoring (Illustrious Grand Master) [REMOVED 8.0.1]
+--- ITEM ---
+i(54601, 75298);	-- Belt of the Depths
+i(68199, 75288);	-- Black Embersilk Gown
+i(54603, 75300);	-- Breeches of Mended Nightmares
+i(54602, 75299);	-- Dreamless Belt
+i(54604, 75301);	-- Flame-Ascended Pantaloons
+i(67541, 75289);	-- High Society Top Hat
+i(54605, 75308);	-- Illusionary Bag
+i(54599, 75309);	-- Powerful Enchanted Spellthread
+i(54600, 75310);	-- Powerful Ghostly Spellthread
+--- NYI ---
+i(0, 75183);	-- Unravel Embersilk Cloth
+i(0, 75143);	--
+i(0, 75172);	--
+i(0, 75175);	--
+i(0, 75178);	--
+
+-------------------
+--- PATCH 4.2.0 ---
+-------------------
+--- ITEM ---
+i(69976, 99460);	-- Boots of the Black Flame
+i(69966, 99449);	-- Don Tayo's Inferno Mittens
+i(69975, 99459);	-- Endless Dream Walkers
+i(69965, 99448);	-- Grips of Altered Reality
+i(70176, 100585);	-- Luxurious Silk Gem Bag
+
+-------------------
+--- PATCH 4.3.0 ---
+-------------------
+--- TRAINER ---
+i(0, 75293);	-- Vicious Embersilk Belt
+i(0, 75297);	-- Vicious Embersilk Boots
+i(0, 75270);	-- Vicious Embersilk Bracers
+i(0, 99537);	-- Vicious Embersilk Cape
+i(0, 75295);	-- Vicious Embersilk Gloves
+i(0, 75291);	-- Vicious Embersilk Shoulders
+i(0, 75269);	-- Vicious Fireweave Belt
+i(0, 75294);	-- Vicious Fireweave Boots
+i(0, 75290);	-- Vicious Fireweave Bracers
+i(0, 75296);	-- Vicious Fireweave Gloves
+i(0, 75292);	-- Vicious Fireweave Shoulders
+--- ITEM ---
+i(72004, 101923);	-- Bracers of Unconquered Power
+i(72003, 101922);	-- Dreamwraps of the Light
+i(72002, 101921);	-- Lavaquake Legwraps
+i(54593, 75306);	-- Vicious Embersilk Cowl
+i(54594, 75307);	-- Vicious Embersilk Pants
+i(54595, 75305);	-- Vicious Embersilk Robe
+i(54596, 75304);	-- Vicious Fireweave Cowl
+i(54597, 75302);	-- Vicious Fireweave Pants
+i(54598, 75303);	-- Vicious Fireweave Robe
+i(72000, 101920);	-- World Mender's Pants
+--- NYI ---
+i(0, 75287);	--
+i(0, 102171);	--
 
 -----------------
 -- PATCH 9.0.1 --
