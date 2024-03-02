@@ -976,7 +976,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32674, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Horde players upon reaching level 30.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1,
 						"spellID", 34090,	-- Expert Riding

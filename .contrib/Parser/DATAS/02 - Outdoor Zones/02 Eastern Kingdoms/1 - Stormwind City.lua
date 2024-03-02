@@ -1522,7 +1522,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32675, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Alliance players upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

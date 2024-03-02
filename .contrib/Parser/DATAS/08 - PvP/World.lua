@@ -31,12 +31,14 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			})),
 			q(52786, bubbleDownSelf({	-- The Alliance Slayer
 				["races"] = HORDE_ONLY,
+				["timeline"] = { REMOVED_10_0_2 },
 			},{
 				ach(12568),	-- The Alliance Slayer
 				title(376),	-- <Name>, the Alliance Slayer
 			})),
 			q(52784, bubbleDownSelf({	-- The Horde Slayer
 				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { REMOVED_10_0_2 },
 			},{
 				ach(12567),	-- The Horde Slayer
 				title(375),	-- <Name>, the Horde Slayer
