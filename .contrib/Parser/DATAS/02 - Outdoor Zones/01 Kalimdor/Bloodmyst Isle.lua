@@ -1339,7 +1339,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(23900, {	-- Tzerak's Armor Plate
+					["description"] = "Tzerak spawns at 38.5, 82.3, on the demon seal, then walks through Nazzivian to get to the monument at 36.6, 72.5.",
 					["cr"] = 17528,	-- Tzerak
+					["coords"] = {
+						{ 38.5, 82.3, BLOODMYST_ISLE },
+						{ 36.6, 72.5, BLOODMYST_ISLE },
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
