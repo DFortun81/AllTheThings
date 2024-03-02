@@ -703,17 +703,9 @@ root(ROOTS.Unsorted, {
 				i(190848),	-- [DNT] Do not use
 			}),
 			filter(MISC, {
-				------ Warlock ------
-				i(211949),	-- Durumu's Glass Pupil
 				------
-				i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
-				i(212487),	-- Copy of On the Virtues of Magic
-				i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
-				i(212481),	-- Copy of The Schools of Arcane Magic - Enchantment
-				i(212484),	-- Copy of The Schools of Arcane Magic - Transmutation
 				i(212784),	-- Destroyed Relic
 				i(212467),	-- Discarded Advertisement
-				i(212608),	-- Duck Potion
 			}),
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)

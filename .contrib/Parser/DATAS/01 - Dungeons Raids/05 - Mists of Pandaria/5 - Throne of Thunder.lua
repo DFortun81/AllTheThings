@@ -482,8 +482,15 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(95729),	-- Crimson Bloom Legguards
 							i(95741),	-- Deadly Glare Cape
 							i(95728),	-- Durumu's Baleful Gaze
-							i(95737),	-- Durumu's Severed Tentacle
 							i(95742),	-- Durumu's Captive Eyeball
+							i(211949, {	-- Durumu's Glass Pupil
+								["timeline"] = { ADDED_10_2_5 },
+								["classes"] = { WARLOCK },
+								["sym"] = {{"select","itemID",
+									212750,    -- Grimoire of the Ancient Observer (CI!)
+								}},
+							}),
+							i(95737),	-- Durumu's Severed Tentacle
 							i(95746),	-- Iceshatter Gauntlets
 							i(95739),	-- Leggings of Pulsing Blood
 							i(95733),	-- Legplates of the Dark Parasite
@@ -1001,6 +1008,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94929),	-- Deadly Glare Cape
 							i(94814),	-- Durumu's Baleful Gaze
 							i(94931),	-- Durumu's Captive Eyeball
+							i(211949, {	-- Durumu's Glass Pupil
+								["timeline"] = { ADDED_10_2_5 },
+								["classes"] = { WARLOCK },
+								["sym"] = {{"select","itemID",
+									212750,    -- Grimoire of the Ancient Observer (CI!)
+								}},
+							}),
 							i(95511),	-- Durumu's Severed Tentacle
 							i(94924),	-- Iceshatter Gauntlets
 							i(94923),	-- Leggings of Pulsing Blood
@@ -1709,8 +1723,15 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96473),	-- Crimson Bloom Legguards
 							i(96485),	-- Deadly Glare Cape
 							i(96472),	-- Durumu's Baleful Gaze
-							i(96481),	-- Durumu's Severed Tentacle
 							i(96486),	-- Durumu's Captive Eyeball
+							i(211949, {	-- Durumu's Glass Pupil
+								["timeline"] = { ADDED_10_2_5 },
+								["classes"] = { WARLOCK },
+								["sym"] = {{"select","itemID",
+									212750,    -- Grimoire of the Ancient Observer (CI!)
+								}},
+							}),
+							i(96481),	-- Durumu's Severed Tentacle
 							i(96490),	-- Iceshatter Gauntlets
 							i(96483),	-- Leggings of Pulsing Blood
 							i(96477),	-- Legplates of the Dark Parasite

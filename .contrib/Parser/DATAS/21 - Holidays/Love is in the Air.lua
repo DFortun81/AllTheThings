@@ -1650,6 +1650,69 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 213262,	-- Ying
 				["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(145277),	-- Aftermath of the Second War
+					i(145289),	-- Arathor and the Troll Wars
+					i(145307),	-- The Betrayer Ascendant
+					i(145312),	-- The Twin Empires
+					i(145297),	-- The Dark Portal and the Fall of Stormwind
+					i(212468),	-- Copy of Blinking Rules & Regulations
+					i(212465),	-- Copy of Bundle of Romantic Correspondences
+					i(212463),	-- Copy of Common / Orcish Dictionary
+					i(212460),	-- Copy of Excerpts from the Journal of Archmage Vargoth
+					i(212469),	-- Copy of Polymorphic Rules & Regulations
+					i(212473),	-- Copy of The Archmage Antonidas - Part I
+					i(212474),	-- Copy of The Archmage Antonidas - Part II
+					i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
+					i(212489),	-- Copy of a Damaged Apprentice Journal
+					i(212466),	-- Copy of Losses of the Third War
+					i(212461),	-- Copy of Kirin Tor Monthly (March Issue)
+					i(212464),	-- Copy of Kirin Tor Monthly (November Issue)
+					i(212475),	-- Copy of The Archmage Antonidas - Part III
+					i(212476),	-- Copy of The Dangers of Magic Abuse
+					i(212472),	-- Copy of The Fluffy Bunny
+					i(212471),	-- Copy of the Journal of Archmage Antonidas
+					i(212459),	-- Copy of The Old Wizard's Almanac
+					i(212477),	-- Copy of The Schools of Arcane Magic - Introduction
+					i(212478),	-- Copy of The Schools of Arcane Magic - Abjuration
+					i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
+					i(212480),	-- Copy of The Schools of Arcane Magic - Divination
+					i(212481),	-- Copy of The Schools of Arcane Magic - Enchantment
+					i(212482),	-- Copy of The Schools of Arcane Magic - Illusion
+					i(212483),	-- Copy of The Schools of Arcane Magic - Necromancy
+					i(212484),	-- Copy of The Schools of Arcane Magic - Transmutation
+					i(212486),	-- Copy of The Worst Mage in Dalaran: A Children's Book
+					i(212487),	-- Copy of On the Virtues of Magic
+					i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
+					i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
+					i(212485),	-- Copy of Weathered Diary - Dates from the Third War
+					i(3899),	-- Legends of the Gurubashi, Volume 3
+					i(142250),	-- Aegwynn and the Dragon Hunt
+					i(145306),	-- Archimonde's Return and the Flight to Kalimdor
+					i(145278),	-- Beyond the Dark Portal
+					i(145282),	-- Charge of the Dragonflights
+					i(145309),	-- Civil War in the Plaguelands
+					i(145313),	-- Empires' Fall
+					i(145286),	-- Exile of the High Elves
+					i(145284),	-- Mount Hyjal and Illidan's Gift
+					i(145308),	-- Rise of the Blood Elves
+					i(145296),	-- Rise of the Horde
+					i(145280),	-- Sargeras and the Betrayal
+					i(145298),	-- The Alliance of Lordaeron
+					i(145300),	-- The Battle of Grim Batol
+					i(145273),	-- The Birth of the Lich King
+					i(145294),	-- The Last Guardian
+					i(145302),	-- The New Horde
+					i(145281),	-- The Old Gods and the Ordering of Azeroth
+					i(145304),	-- The Scourge of Lordaeron
+					i(145287),	-- The Sentinels and the Long Vigil
+					i(145292),	-- The Seven Kingdoms
+					i(145285),	-- The World Tree and the Emerald Dream
+					i(145293),	-- War of the Three Hammers
+					i(145314),	-- Wrath of Soulflayer
+					i(203932),	-- Sentient Book
+					-- got tired of clicking books kek
+				},
 			}),
 			q(78991, {	-- The Gift of Relaxation (H)
 				["qg"] = 214591,	-- Ning
@@ -1680,10 +1743,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(212459),	-- Copy of The Old Wizard's Almanac
 					i(212477),	-- Copy of The Schools of Arcane Magic - Introduction
 					i(212478),	-- Copy of The Schools of Arcane Magic - Abjuration
+					i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
 					i(212480),	-- Copy of The Schools of Arcane Magic - Divination
+					i(212481),	-- Copy of The Schools of Arcane Magic - Enchantment
 					i(212482),	-- Copy of The Schools of Arcane Magic - Illusion
 					i(212483),	-- Copy of The Schools of Arcane Magic - Necromancy
+					i(212484),	-- Copy of The Schools of Arcane Magic - Transmutation
 					i(212486),	-- Copy of The Worst Mage in Dalaran: A Children's Book
+					i(212487),	-- Copy of On the Virtues of Magic
+					i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
 					i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
 					i(212485),	-- Copy of Weathered Diary - Dates from the Third War
 					i(3899),	-- Legends of the Gurubashi, Volume 3

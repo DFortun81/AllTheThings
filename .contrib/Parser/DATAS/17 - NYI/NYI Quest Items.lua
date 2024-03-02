@@ -361,6 +361,11 @@ root(ROOTS.NeverImplemented, {
 				i(208049),	-- Valarjar Trophy
 				i(208599),	-- Verdant Dream Seed
 			})),
+
+			-- 10.2.5
+			tier(DF_TIER, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(212608),	-- Duck Potion
+			})),
 		}),
 	}),
 });
