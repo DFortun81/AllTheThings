@@ -593,30 +593,6 @@ root(ROOTS.Unsorted, {
 				i(213155),	-- Dark Ranger General's Quiver
 				i(213148),	-- Dark Ranger General's Spaulders
 
-				------ Dreadlord's Shadowsbane Regalia ------
-				i(212218),	-- Ensemble: Dreadlord's Shadowsbane Regalia
-				i(212184),	-- Dreadlord's Shadowsbane Breeches
-				i(212180),	-- Dreadlord's Shadowsbane Cloak
-				i(212182),	-- Dreadlord's Shadowsbane Grips
-				i(212183),	-- Dreadlord's Shadowsbane Helm
-				i(212181),	-- Dreadlord's Shadowsbane Sabatons
-				i(212186),	-- Dreadlord's Shadowsbane Sash
-				i(212185),	-- Dreadlord's Shadowsbane Shoulderpads
-				i(212179),	-- Dreadlord's Shadowsbane Tunic
-				i(212187),	-- Dreadlord's Shadowsbane Wristbands
-
-				------ Dreadlord's Shadowsbane Regalia ------
-				i(212219),	-- Ensemble: Dreadlord's Venombane Regalia
-				i(212193),	-- Dreadlord's Venombane Breeches
-				i(212189),	-- Dreadlord's Venombane Cloak
-				i(212191),	-- Dreadlord's Venombane Grips
-				i(212192),	-- Dreadlord's Venombane Helm
-				i(212190),	-- Dreadlord's Venombane Sabatons
-				i(212195),	-- Dreadlord's Venombane Sash
-				i(212194),	-- Dreadlord's Venombane Shoulderpads
-				i(212188),	-- Dreadlord's Venombane Tunic
-				i(212196),	-- Dreadlord's Venombane Wristbands
-
 				------ Sky Witch's Attire ------
 				i(212221),	-- Ensemble: Sky Witch's Attire
 				i(212204),	-- Sky Witch's Blouse

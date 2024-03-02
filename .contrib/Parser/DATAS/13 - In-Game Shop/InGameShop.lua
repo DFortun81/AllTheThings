@@ -495,28 +495,30 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(212216),	-- Twilight Witch's Shoulders
 			i(212215),	-- Twilight Witch's Skirt
 		})),
-		-- i(X,	-- Dreadlord's Venombane Set
-		-- 	bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
-		-- 	i(X),	-- Dreadlord's Venombane Breeches
-		-- 	i(X),	-- Dreadlord's Venombane Grips
-		-- 	i(X),	-- Dreadlord's Venombane Helm
-		-- 	i(X),	-- Dreadlord's Venombane Sash
-		-- 	i(X),	-- Dreadlord's Venombane Shoulderpads
-		-- 	i(X),	-- Dreadlord's Venombane Tunic
-		-- 	i(X),	-- Dreadlord's Venombane Wings
-		-- 	i(X),	-- Dreadlord's Venombane Wristband
-		-- })),
-		-- i(X,	-- Dreadlord's Shadowbane Set
-		-- 	bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
-		-- 	i(X),	-- Dreadlord's Shadowbane Breeches
-		-- 	i(X),	-- Dreadlord's Shadowbane Grips
-		-- 	i(X),	-- Dreadlord's Shadowbane Helm
-		-- 	i(X),	-- Dreadlord's Shadowbane Sash
-		-- 	i(X),	-- Dreadlord's Shadowbane Shoulderpads
-		-- 	i(X),	-- Dreadlord's Shadowbane Tunic
-		-- 	i(X),	-- Dreadlord's Shadowbane Wings
-		-- 	i(X),	-- Dreadlord's Shadowbane Wristband
-		-- })),
+		i(212219,	-- Ensemble: Dreadlord's Venombane Regalia
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
+			i(212193),	-- Dreadlord's Venombane Breeches
+			i(212189),	-- Dreadlord's Venombane Cloak
+			i(212191),	-- Dreadlord's Venombane Grips
+			i(212192),	-- Dreadlord's Venombane Helm
+			i(212190),	-- Dreadlord's Venombane Sabatons
+			i(212195),	-- Dreadlord's Venombane Sash
+			i(212194),	-- Dreadlord's Venombane Shoulderpads
+			i(212188),	-- Dreadlord's Venombane Tunic
+			i(212196),	-- Dreadlord's Venombane Wristbands
+		})),
+		i(212218,	-- Ensemble: Dreadlord's Shadowsbane Regalia
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
+			i(212184),	-- Dreadlord's Shadowsbane Breeches
+			i(212180),	-- Dreadlord's Shadowsbane Cloak
+			i(212182),	-- Dreadlord's Shadowsbane Grips
+			i(212183),	-- Dreadlord's Shadowsbane Helm
+			i(212181),	-- Dreadlord's Shadowsbane Sabatons
+			i(212186),	-- Dreadlord's Shadowsbane Sash
+			i(212185),	-- Dreadlord's Shadowsbane Shoulderpads
+			i(212179),	-- Dreadlord's Shadowsbane Tunic
+			i(212187),	-- Dreadlord's Shadowsbane Wristbands
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
