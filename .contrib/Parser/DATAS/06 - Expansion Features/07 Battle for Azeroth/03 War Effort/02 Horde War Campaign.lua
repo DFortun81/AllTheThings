@@ -530,7 +530,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
 							["minReputation"] = { 2157, FRIENDLY+4500 },
-							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
+							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(51784, {	-- A Stroll Through a Cemetery
 							["sourceQuests"] = {
@@ -582,7 +582,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
 							["minReputation"] = { 2157, HONORED+3000 },
-							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
+							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(51797, {	-- Tracking Tidesages
 							["sourceQuests"] = {
@@ -646,7 +646,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
 							["minReputation"] = { 2157, HONORED+7500 },
-							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
+							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(52764, {	-- Journey to the Middle of Nowhere
 							["sourceQuests"] = {
@@ -733,7 +733,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
 							["minReputation"] = { 2157, REVERED },
-							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
+							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(52183, {	-- When a Plan Comes Together
 							["sourceQuests"] = {
