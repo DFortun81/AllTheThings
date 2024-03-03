@@ -114,7 +114,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 				}),
 				n(FOLLOWERS, bubbleDownSelf({
-					["u"] = 15,	-- Temporary troops
+					["collectible"] = false,
+					["u"] = UNLEARNABLE,	-- Temporary troops
 				}, {
 					follower(927),	-- Band of Zealots
 					follower(928),	-- Band of Zealots

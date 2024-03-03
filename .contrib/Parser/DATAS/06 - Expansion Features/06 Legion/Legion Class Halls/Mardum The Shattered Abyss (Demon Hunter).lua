@@ -8,7 +8,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 			["maps"] = { MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER, MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER },
 			["g"] = {
 				n(FOLLOWERS, bubbleDownSelf({
-					["u"] = 15,	-- Temporary troops
+					["collectible"] = false,
+					["u"] = UNLEARNABLE,	-- Temporary troops
 				}, {
 					follower(665),	-- Ashtongue Warriors
 					follower(878),	-- Ashtongue Warriors

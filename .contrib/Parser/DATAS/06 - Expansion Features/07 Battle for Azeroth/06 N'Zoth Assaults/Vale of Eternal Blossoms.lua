@@ -1041,7 +1041,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								["questID"] = 58907,
 								["g"] = {
 									follower(1187, {	-- Rajani Sparkcallers
-										["u"] = 15,	-- Temporary troop
+										["collectible"] = false,
+										["u"] = UNLEARNABLE,	-- Temporary troops
 									}),
 								},
 							}),

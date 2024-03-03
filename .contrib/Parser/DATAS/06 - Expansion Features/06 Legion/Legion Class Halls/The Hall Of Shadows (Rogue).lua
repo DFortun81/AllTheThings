@@ -48,7 +48,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 				}),
 				n(FOLLOWERS, bubbleDownSelf({
-					["u"] = 15,	-- Temporary troops
+					["collectible"] = false,
+					["u"] = UNLEARNABLE,	-- Temporary troops
 				}, {
 					follower(907),	-- Crew of Pirates
 					follower(917),	-- Crew of Pirates

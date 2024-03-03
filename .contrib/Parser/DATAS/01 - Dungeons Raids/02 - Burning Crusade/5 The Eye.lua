@@ -6,7 +6,7 @@ local legendary = function(itemID, creatureID)
 		["collectible"] = false,
 		["cr"] = creatureID,
 		-- #if NOT ANYCLASSIC
-		["u"] = 15,			-- Unlearnable Filter
+		["u"] = UNLEARNABLE,
 		-- #endif
 	});
 end;

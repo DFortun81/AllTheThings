@@ -259,14 +259,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["cost"] = { { "c", 1220, 900 } },	-- 900x Order Resources
 					["g"] = {
 						i(152097, {	-- Lightforged Bulwark
-							["groups"] = {
-								follower(1059, {	-- Lightforged Bulwark
-									["u"] = 15,	-- Temporary troop
-								}),
-								follower(1060, {	-- Lightforged Bulwark
-									["u"] = 15,	-- Temporary troop
-								}),
-							},
+							follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
+								["collectible"] = false,
+								["u"] = UNLEARNABLE,
+							}),
+							follower(1060, {	-- Lightforged Bulwark (Temporary Troop)
+								["collectible"] = false,
+								["u"] = UNLEARNABLE,
+							}),
 						}),
 					},
 				}),
@@ -339,14 +339,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["cost"] = { { "c", 1220, 150 } },	-- 150x Order Resources
 					["g"] = {
 						i(152097, {	-- Lightforged Bulwark
-							["groups"] = {
-								follower(1059, {	-- Lightforged Bulwark
-									["u"] = 15,	-- Temporary troop
-								}),
-								follower(1060, {	-- Lightforged Bulwark
-									["u"] = 15,	-- Temporary troop
-								}),
-							},
+							follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
+								["collectible"] = false,
+								["u"] = UNLEARNABLE,
+							}),
+							follower(1060, {	-- Lightforged Bulwark (Temporary Troop)
+								["collectible"] = false,
+								["u"] = UNLEARNABLE,
+							}),
 						}),
 					},
 				}),

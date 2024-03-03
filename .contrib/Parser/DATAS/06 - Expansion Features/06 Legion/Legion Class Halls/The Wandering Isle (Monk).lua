@@ -42,7 +42,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 				}),
 				n(FOLLOWERS, bubbleDownSelf({
-					["u"] = 15,	-- Temporary troops
+					["collectible"] = false,
+					["u"] = UNLEARNABLE,	-- Temporary troops
 				}, {
 					follower(702),	-- Echo of Chi-Ji
 					follower(701),	-- Echo of Niuzao

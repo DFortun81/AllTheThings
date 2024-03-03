@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures,
 						n(88283, {	-- Tailoring Follower (Alliance)
 							["description"] = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells.",
 							["races"] = ALLIANCE_ONLY,
-							["g"] = sharedData({["u"] = 15},{
+							["g"] = sharedData({["u"] = UNLEARNABLE},{
 								spell(176314), -- Fearsome Battle Standard [Alliance]
 								spell(176313),	-- Inspiring Battle Standard [Alliance]
 							}),
@@ -54,7 +54,7 @@ root(ROOTS.ExpansionFeatures,
 						n(88285, {	-- Tailoring Follower (Horde)
 							["description"] = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells.",
 							["races"] = HORDE_ONLY,
-							["g"] = sharedData({["u"] = 15},{
+							["g"] = sharedData({["u"] = UNLEARNABLE},{
 								spell(176316),	-- Fearsome Battle Standard [Horde]
 								spell(176315),	-- Inspiring Battle Standard [Horde]
 							}),

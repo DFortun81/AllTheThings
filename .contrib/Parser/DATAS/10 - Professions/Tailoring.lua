@@ -789,7 +789,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
 	-- TODO: Solve this for classic, until then, only apply the filter to Retail.
-	bubbleDown({ ["u"] = 15 }, g);	-- Training Recipes / Unlearnable
+	bubbleDown({ ["u"] = TRAINING }, g);	-- Training Recipes / Unlearnable
 	-- #endif
 	return g;
 end
@@ -4120,7 +4120,7 @@ profession(TAILORING, {
 					["races"] = ALLIANCE_ONLY,
 					["recipeID"] = 176314,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,
+					["u"] = TRAINING,
 					-- #endif
 				},
 				{
@@ -4128,7 +4128,7 @@ profession(TAILORING, {
 					["races"] = HORDE_ONLY,
 					["recipeID"] = 176316,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,
+					["u"] = TRAINING,
 					-- #endif
 				},
 				{
@@ -4136,7 +4136,7 @@ profession(TAILORING, {
 					["races"] = HORDE_ONLY,
 					["recipeID"] = 176315,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,
+					["u"] = TRAINING,
 					-- #endif
 				},
 				{
@@ -4144,7 +4144,7 @@ profession(TAILORING, {
 					["races"] = ALLIANCE_ONLY,
 					["recipeID"] = 176313,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,
+					["u"] = TRAINING,
 					-- #endif
 				},
 			},

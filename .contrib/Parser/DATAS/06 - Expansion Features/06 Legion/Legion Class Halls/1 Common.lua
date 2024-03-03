@@ -199,7 +199,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 			}),
 		}),
 		n(FOLLOWERS, bubbleDownSelf({
-			["u"] = 15,	-- Temporary troops
+			["collectible"] = false,
+			["u"] = UNLEARNABLE,	-- Temporary troops
 		}, {
 			-- Dinner Guests (Moroes Mission reward)
 			follower(983),	-- Baroness Dorothea Millstipe

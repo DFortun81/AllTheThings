@@ -116,14 +116,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuest"] = 48911,	-- Void Inoculation
 				["groups"] = {
 					i(152096, {	-- Void-Purged Krokul
-						["groups"] = {
-							follower(1057, {	-- Void-Purged Krokul
-								["u"] = 15,	-- Temporary troop
-							}),
-							follower(1058, {	-- Void-Purged Krokul
-								["u"] = 15,	-- Temporary troop
-							}),
-						},
+						follower(1057, {	-- Void-Purged Krokul (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
+						follower(1058, {	-- Void-Purged Krokul (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
 					}),
 				},
 			}),
@@ -226,14 +226,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 				["groups"] = {
 					i(152096, {	-- Void-Purged Krokul
-						["groups"] = {
-							follower(1057, {	-- Void-Purged Krokul
-								["u"] = 15,	-- Temporary troop
-							}),
-							follower(1058, {	-- Void-Purged Krokul
-								["u"] = 15,	-- Temporary troop
-							}),
-						},
+						follower(1057, {	-- Void-Purged Krokul (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
+						follower(1058, {	-- Void-Purged Krokul (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
 					}),
 				},
 			}),

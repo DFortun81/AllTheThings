@@ -201,7 +201,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 				}),
 				n(FOLLOWERS, bubbleDownSelf({
-					["u"] = 15,	-- Temporary troops
+					["collectible"] = false,
+					["u"] = UNLEARNABLE,	-- Temporary troops
 				}, {
 					follower(1012),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
 					follower(1013),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force

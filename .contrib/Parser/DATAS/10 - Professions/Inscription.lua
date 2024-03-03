@@ -4954,14 +4954,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 		cat(403, {	-- Merchant Orders
 			r(176513, {	-- Draenor Merchant Order
-				["u"] = 15,	-- Profession Training Recipe
+				["u"] = TRAINING,	-- Profession Training Recipe
 			}),
 		}),
 		cat(414, {	-- Reagents and Research
 			r(177045),	-- Secrets of Draenor Inscription
 			r(182125),	-- The Spirit of War
 			r(178240, {	-- War Paints
-				["u"] = 15, -- Beleive this is tied to the Draenic Mortar
+				["u"] = TRAINING, -- Beleive this is tied to the Draenic Mortar
 			}),
 			r(169081),	-- War Paints
 			r(167950, {	-- Research: Warbinder's Ink
@@ -4977,7 +4977,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(227562, {["timeline"]={"added 7.0.3"}}),	-- Codex of the Clear Mind*
 			r(227561, {["timeline"]={"added 7.0.3"}}),	-- Tome of the Clear Mind*
 			r(178550, {	-- Draenic Mortar
-				["u"] = 15, -- Not actually a temp training recipe but is only available to non-scribes who build the Scribe's Quarters so don't want this showing for scribes
+				["u"] = TRAINING, -- Not actually a temp training recipe but is only available to non-scribes who build the Scribe's Quarters so don't want this showing for scribes
 			}),
 		}),
 		cat(440, {	-- Mass Milling
@@ -5389,7 +5389,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(324195),	-- Missive of Versatility
 			r(343686),	-- Novice Crafter's Mark
 		}),
-		cat(1529, sharedDataSelf({ ["u"] = 15 }, {	-- Quest Recipes
+		cat(1529, sharedDataSelf({ ["u"] = TRAINING }, {	-- Quest Recipes
 			r(338227),	-- Ardenberry Ink
 			r(338234),	-- Catalog of Sins
 			r(338225),	-- Hymnal of Respite

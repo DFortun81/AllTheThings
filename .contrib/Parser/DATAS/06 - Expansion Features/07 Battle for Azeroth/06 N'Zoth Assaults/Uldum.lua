@@ -1498,7 +1498,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								["questID"] = 58906,
 								["g"] = {
 									follower(1186, {	-- Ramkahen Lancer
-										["u"] = 15,	-- Temporary troop
+										["collectible"] = false,
+										["u"] = UNLEARNABLE,	-- Temporary troops
 									}),
 								},
 							}),

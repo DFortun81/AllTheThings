@@ -1122,7 +1122,7 @@ root(ROOTS.HiddenQuestTriggers, {
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
 	-- TODO: Solve this for classic, until then, only apply the filter to Retail.
-	bubbleDown({ ["u"] = 15 }, g);	-- Training Recipes / Unlearnable
+	bubbleDown({ ["u"] = TRAINING }, g);	-- Training Recipes / Unlearnable
 	-- #endif
 	return g;
 end

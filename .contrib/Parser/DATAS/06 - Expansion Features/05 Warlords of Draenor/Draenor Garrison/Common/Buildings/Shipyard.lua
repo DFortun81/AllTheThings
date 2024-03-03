@@ -36,7 +36,8 @@ root(ROOTS.ExpansionFeatures,
 							}),
 						}),
 						n(FOLLOWERS, bubbleDown({	-- Followers
-							["u"] = 15,	-- (Ships aren't really permanently collectible because they get destroyed and have a cap)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,	-- (Ships aren't really permanently collectible because they get destroyed and have a cap)
 						},{
 							-- TODO: maybe put proper faction on each ship lol
 							i(128302, {	-- Ship: Battleship

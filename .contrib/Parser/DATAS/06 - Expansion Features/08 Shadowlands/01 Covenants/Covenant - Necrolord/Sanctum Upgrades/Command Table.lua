@@ -12,7 +12,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
 						["g"] = {
 							n(FOLLOWERS, bubbleDownSelf({
-								["u"] = 15,	-- Temporary troops
+								["collectible"] = false,
+								["u"] = UNLEARNABLE,	-- Temporary troops
 							}, {
 								follower(1243),	-- Maldraxxus Plaguesinger
 								follower(1314),	-- Maldraxxus Plaguesinger

@@ -316,14 +316,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
 				["groups"] = {
 					i(152095, {	-- Krokul Ridgestalker
-						["groups"] = {
-							follower(1055, {	-- Krokul Ridgestalker
-								["u"] = 15,	-- Temporary troop
-							}),
-							follower(1056, {	-- Krokul Ridgestalker
-								["u"] = 15,	-- Temporary troop
-							}),
-						},
+						follower(1055, {	-- Krokul Ridgestalker (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
+						follower(1056, {	-- Krokul Ridgestalker (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
 					}),
 				},
 			}),
@@ -340,14 +340,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 				["groups"] = {
 					i(152095, {	-- Krokul Ridgestalker
-						["groups"] = {
-							follower(1055, {	-- Krokul Ridgestalker
-								["u"] = 15,	-- Temporary troop
-							}),
-							follower(1056, {	-- Krokul Ridgestalker
-								["u"] = 15,	-- Temporary troop
-							}),
-						},
+						follower(1055, {	-- Krokul Ridgestalker (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
+						follower(1056, {	-- Krokul Ridgestalker (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
+						}),
 					}),
 				},
 			}),

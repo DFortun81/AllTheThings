@@ -33,7 +33,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					}),
 				}),
 				n(FOLLOWERS, bubbleDownSelf({
-					["u"] = 15,	-- Temporary troops
+					["collectible"] = false,
+					["u"] = UNLEARNABLE,	-- Temporary troops
 				}, {
 					follower(671),	-- Squad of Archers
 					follower(801),	-- Squad of Archers

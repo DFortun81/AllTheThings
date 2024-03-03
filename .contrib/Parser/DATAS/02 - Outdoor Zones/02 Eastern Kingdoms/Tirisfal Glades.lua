@@ -694,7 +694,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							-- #if AFTER 10.1.7
 							["description"] = "|CFFFF0000This item is currently unbound and cannot be learned. Please let us know in the ATT-Discord if you get one that is soulbound or binds when equipped.",
-							["collectible"] = false,	-- This item would be properly filtered as ["u"] = 15 (Unlearnable) if the toggle in 'General-Unobtainable.lua' was working.
+							["collectible"] = false,
+							--["u"] = UNLEARNABLE,-- This item would be properly filtered as Unlearnable if the toggle in 'General-Unobtainable.lua' was working.
 							-- #endif
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1916,	-- Stephen Bhartec

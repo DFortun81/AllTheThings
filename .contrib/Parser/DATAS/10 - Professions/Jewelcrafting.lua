@@ -4495,7 +4495,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Taladite Crystal",
 					["recipeID"] = 170700,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,
+					["u"] = TRAINING,
 					-- Beleive this is tied to the non-JC users
 					-- #endif
 				}
@@ -4682,28 +4682,28 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Empyrial Circlet",
 					["recipeID"] = 248937,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,				-- Profession Training Recipe
+					["u"] = TRAINING,				-- Profession Training Recipe
 					-- #endif
 				},
 				{
 					["name"] = "Empyrial Crown",
 					["recipeID"] = 248940,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,				-- Profession Training Recipe
+					["u"] = TRAINING,				-- Profession Training Recipe
 					-- #endif
 				},
 				{
 					["name"] = "Empyrial Florid Malachite Setting",
 					["recipeID"] = 248939,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,				-- Profession Training Recipe
+					["u"] = TRAINING,				-- Profession Training Recipe
 					-- #endif
 				},
 				{
 					["name"] = "Empyrial Hesselian Setting",
 					["recipeID"] = 248938,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,				-- Profession Training Recipe
+					["u"] = TRAINING,				-- Profession Training Recipe
 					-- #endif
 				},
 			},
@@ -5730,84 +5730,84 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Brilliant Bauble",
 					["recipeID"] = 338248,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Carved Crystal Ring",
 					["recipeID"] = 338244,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Engraved Phaedrum Band",
 					["recipeID"] = 338239,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Faceted Crystal",
 					["recipeID"] = 338246,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Fine Sinvyr Chain",
 					["recipeID"] = 338249,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Gem Studded Bangle",
 					["recipeID"] = 338238,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Gleaming Kyranite Necklace",
 					["recipeID"] = 338241,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Hollowed Crystal",
 					["recipeID"] = 338245,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Kyranite Dangle",
 					["recipeID"] = 338242,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Polished Gemstones",
 					["recipeID"] = 338240,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Sinister Choker",
 					["recipeID"] = 338247,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				},
 				{
 					["name"] = "Solenium Wire",
 					["recipeID"] = 338243,
 					-- #if NOT ANYCLASSIC
-					["u"] = 15,	-- Training Recipes / Unlearnable
+					["u"] = TRAINING,	-- Training Recipes / Unlearnable
 					-- #endif
 				}
 			}

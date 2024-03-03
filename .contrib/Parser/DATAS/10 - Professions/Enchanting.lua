@@ -1422,7 +1422,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 				r(217655),	-- Tome of Illusions: Draenor
 			},
 		}),
-		cat(399, sharedDataSelf({["u"] = 15},{	-- Illusions
+		cat(399, sharedDataSelf({["u"] = UNLEARNABLE},{	-- Illusions
 			r(173716),	-- Illusion: Agility
 			r(173717),	-- Illusion: Battlemaster
 			r(173718),	-- Illusion: Berserking
@@ -1483,7 +1483,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(182129, {["timeline"]={"added 6.1.0"}}),	-- Temporal Binding
 			r(169092),	-- Temporal Crystal
 		}),
-		cat(404, sharedData({["u"] = 15},{	-- Removal
+		cat(404, sharedData({["u"] = UNLEARNABLE},{	-- Removal
 			recipe(177355),	-- Remove Illusion
 		})),
 		cat(351, {	-- Ring

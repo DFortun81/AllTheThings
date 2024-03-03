@@ -158,8 +158,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 					["questID"] = 55968,
 					["g"] = {
-						follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries
-							["u"] = 15,	-- Temporary troop
+						follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
 						}),
 					},
 				}),
@@ -550,8 +551,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 					["questID"] = 55969,
 					["g"] = {
-						follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries
-							["u"] = 15,	-- Temporary troop
+						follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
+							["collectible"] = false,
+							["u"] = UNLEARNABLE,
 						}),
 					},
 				}),

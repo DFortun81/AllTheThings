@@ -5,7 +5,8 @@
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(WAR_EFFORT, {
 		n(FOLLOWERS, bubbleDownSelf({
-			["u"] = 15,	-- Temporary troops
+			["collectible"] = false,
+			["u"] = UNLEARNABLE,	-- Temporary troops
 		}, {
 			follower(1063),	-- Alliance:Dwarven Riflemen \\ Horde:Tauren Earthshakers
 			follower(1064),	-- Alliance:Gnomeregan Mechano-Tanks \\ Horde:Forsaken Dreadguards

@@ -277,14 +277,14 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 									i(34826),	-- Gold Wedding Band
 									i(118380, {	-- Hightfish Cap
 										["collectible"] = false,
-										["u"] = 15,
+										["u"] = UNLEARNABLE,
 									}),
 									i(34827),	-- Noble's Monocle
 									i(34829),	-- Ornate Drinking Stein
 									i(44983),	-- Strand Crawler (PET!)
 									i(118393, {	-- Tentacled Hat
 										["collectible"] = false,
-										["u"] = 15,
+										["u"] = UNLEARNABLE,
 									}),
 									i(67410),	-- Very Unlucky Rock
 								}),
@@ -300,14 +300,14 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 									i(34826),	-- Gold Wedding Band
 									i(118380, {	-- Hightfish Cap
 										["collectible"] = false,
-										["u"] = 15,
+										["u"] = UNLEARNABLE,
 									}),
 									i(34827),	-- Noble's Monocle
 									i(34829),	-- Ornate Drinking Stein
 									i(44983),	-- Strand Crawler (PET!)
 									i(118393, {	-- Tentacled Hat
 										["collectible"] = false,
-										["u"] = 15,
+										["u"] = UNLEARNABLE,
 									}),
 									i(67410),	-- Very Unlucky Rock
 								}),
