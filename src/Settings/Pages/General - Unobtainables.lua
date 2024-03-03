@@ -46,7 +46,9 @@ local AvailabilityConditions = {
 	11,	-- Summon Items (TODO: Split up into a couple different ones
 	0,	-- Blank Space
 	45,	-- Broken Loot (not valid anymore?)
-	15, -- Unlearnable (currently cannot be permanently collected)
+
+	-- The following filter it not working properly, and only functions to connect items with conditional descriptions from locales. Would be nice if this could work as a toggle-able filter.
+	-- 15, -- Unlearnable (currently cannot be permanently collected)
 };
 
 

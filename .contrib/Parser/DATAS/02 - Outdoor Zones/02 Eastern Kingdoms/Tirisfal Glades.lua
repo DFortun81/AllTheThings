@@ -693,9 +693,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
 							-- #endif
 							-- #if AFTER 10.1.7
-							["description"] = "This item is currently unbound and cannot be learned. Please let us know if you get one that is soulbound or binds when equipped.",
-							["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
-							["u"] = 15,			-- Unlearnable Filter
+							["description"] = "|CFFFF0000This item is currently unbound and cannot be learned. Please let us know in the ATT-Discord if you get one that is soulbound or binds when equipped.",
+							["collectible"] = false,	-- This item would be properly filtered as ["u"] = 15 (Unlearnable) if the toggle in 'General-Unobtainable.lua' was working.
 							-- #endif
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1916,	-- Stephen Bhartec
