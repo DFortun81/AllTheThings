@@ -3064,7 +3064,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						-- If this entry has customCollect requirements, list them for clarity
 						if entry.customCollect then
 							for i,c in ipairs(entry.customCollect) do
-								local icon_color_str = L["CUSTOM_COLLECTS_REASONS"][c]["icon"].." |c"..L["CUSTOM_COLLECTS_REASONS"][c]["color"]..L["CUSTOM_COLLECTS_REASONS"][c]["text"];
+								local reason = L["CUSTOM_COLLECTS_REASONS"][c];
+								local icon_color_str = reason.icon.." |c"..reason.color..reason.text;
 								if i > 1 then
 									right = icon_color_str .. " / " .. right;
 								else

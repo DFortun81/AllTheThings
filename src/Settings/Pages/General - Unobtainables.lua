@@ -130,7 +130,7 @@ if app.GameBuildVersion > 90000 then
 		local filterID = "CC:" .. cc
 		local reason = customCollects[cc]
 		local text = reason["icon"].." "..reason["text"]
-		ccCheckbox = child:CreateCheckBox(text,
+		ccCheckbox = child:CreateCheckBox(app.Modules.Color.Colorize(text, app.Colors.Insane),
 		function(self)
 			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
 				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
