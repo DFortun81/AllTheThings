@@ -668,135 +668,135 @@ root(ROOTS.Zones, {
 					}),
 
 					-- Leather
-					-- Cranefeather (Druid, Monk)
+					-- Cranefeather (Rogue, Druid, Monk, Evoker) [DPS]
 					i(101953, {	-- Cranefeather Hood
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102280, 1 },	-- Timeless Leather Helm
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
 					i(101955, {	-- Cranefeather Shoulders
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102282, 1 },	-- Timeless Leather Spaulders
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
 					i(101954, {	-- Cranefeather Jerkin
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
 					i(101949, {	-- Cranefeather Bindings
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102322, 1 },	-- Timeless Leather Bracers
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
 					i(101952, {	-- Cranefeather Gloves
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102279, 1 },	-- Timeless Leather Gloves
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
 					i(101956, {	-- Cranefeather Waistband
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102283, 1 },	-- Timeless Leather Belt
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
 					i(101951, {	-- Cranefeather Britches
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102281, 1 },	-- Timeless Leather Leggings
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
 					i(101950, {	-- Cranefeather Boots
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102278, 1 },	-- Timeless Leather Boots
 						},
-						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["description"] = "Set loot spec to Agility.",
+						["classes"] = LEATHER_CLASSES,
 					}),
-					-- Fire-Chanter (Rogue, Druid, Monk, Evoker) [DPS]
+					-- Fire-Chanter (Druid, Monk)
 					i(101874, {	-- Fire-Chanter Hood
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102280, 1 },	-- Timeless Leather Helm
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101876, {	-- Fire-Chanter Shoulders
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102282, 1 },	-- Timeless Leather Spaulders
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101875, {	-- Fire-Chanter Jerkin
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101870, {	-- Fire-Chanter Bindings
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102322, 1 },	-- Timeless Leather Bracers
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101873, {	-- Fire-Chanter Gloves
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102279, 1 },	-- Timeless Leather Gloves
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101877, {	-- Fire-Chanter Waistband
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102283, 1 },	-- Timeless Leather Belt
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101872, {	-- Fire-Chanter Britches
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102281, 1 },	-- Timeless Leather Leggings
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101871, {	-- Fire-Chanter Boots
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102278, 1 },	-- Timeless Leather Boots
 						},
-						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["description"] = "Set loot spec to Intellect.",
+						["classes"] = LEATHER_CLASSES_INTELLECT,
 					}),
 
 					-- Mail
