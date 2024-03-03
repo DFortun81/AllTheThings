@@ -668,7 +668,7 @@ root(ROOTS.Zones, {
 					}),
 
 					-- Leather
-					-- Cranefeather (Rogue, Druid, Monk, Evoker) [DPS]
+					-- Cranefeather (Rogue, Druid, Monk) [DPS]
 					i(101953, {	-- Cranefeather Hood
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
