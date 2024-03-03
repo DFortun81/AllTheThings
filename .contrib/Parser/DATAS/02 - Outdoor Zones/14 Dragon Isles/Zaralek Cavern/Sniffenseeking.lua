@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							{"pop"},
 							{"where", "headerID", WORLD_QUESTS },
 							{"pop"},
-							{"where", "headerID", SCENARIO_COMPLETION },
+							{"where", "headerID", REWARDS },
 							{"pop"},
 						},
 					}),
