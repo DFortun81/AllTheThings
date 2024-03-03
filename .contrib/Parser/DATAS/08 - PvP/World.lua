@@ -3,6 +3,10 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(-10058, {	-- World
 	tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+		n(ACHIEVEMENTS, {
+			ach(12567),	-- The Horde Slayer
+			ach(12568),	-- The Alliance Slayer
+		}),
 		n(BOUNTY, {	-- Bounty (for later). Contains every aspirant gear as well
 			i(163825),	-- Plundered Supplies
 			i(170539),	-- Plunderer Supplies (Nazjartar and maybe Mechagnom)
@@ -33,14 +37,12 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 				["races"] = HORDE_ONLY,
 				["timeline"] = { REMOVED_10_0_2 },
 			},{
-				ach(12568),	-- The Alliance Slayer
 				title(376),	-- <Name>, the Alliance Slayer
 			})),
 			q(52784, bubbleDownSelf({	-- The Horde Slayer
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { REMOVED_10_0_2 },
 			},{
-				ach(12567),	-- The Horde Slayer
 				title(375),	-- <Name>, the Horde Slayer
 			})),
 		}),
