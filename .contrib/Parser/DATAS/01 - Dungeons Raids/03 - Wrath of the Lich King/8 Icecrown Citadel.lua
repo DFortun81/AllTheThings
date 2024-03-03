@@ -1051,8 +1051,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(37184, {	-- Zafod Boombox
 					i(49278, {	-- Goblin Rocket Pack
-						-- #if NOT ANYCLASSIC
 						["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
+						-- #if NOT ANYCLASSIC
 						["u"] = 15,			-- Unlearnable Filter
 						-- #endif
 					}),

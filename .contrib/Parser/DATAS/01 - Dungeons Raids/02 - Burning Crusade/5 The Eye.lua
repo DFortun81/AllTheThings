@@ -1,32 +1,15 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
--- #if ANYCLASSIC
 local legendary = function(itemID, creatureID)
-	if creatureID then
-		return i(itemID, {
-			["cr"] = creatureID,
-		});
-	else
-		return i(itemID);
-	end
+	return i(itemID, {
+		["collectible"] = false,
+		["cr"] = creatureID,
+		-- #if NOT ANYCLASSIC
+		["u"] = 15,			-- Unlearnable Filter
+		-- #endif
+	});
 end;
--- #else
-local legendary = function(itemID, creatureID)
-	if creatureID then
-		return i(itemID, {
-			["collectible"] = false,
-			["cr"] = creatureID,
-			["u"] = 15,
-		});
-	else
-		return i(itemID, {
-			["collectible"] = false,
-			["u"] = 15,
-		});
-	end
-end;
--- #endif
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 	inst(749, {	-- The Eye
 		["lore"] = "With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",
