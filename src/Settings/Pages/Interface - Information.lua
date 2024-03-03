@@ -292,6 +292,9 @@ local InformationTypes = {
 			local progressText = app.GetProgressTextForTooltip(reference);
 			if progressText then
 				tinsert(tooltipInfo, { progress = progressText });
+				--[[
+				-- I don't remember what the original conditions for showing this were.
+				-- For now just disable it.
 				if reference.total and reference.total >= 2 then
 					-- if collecting this reference type, then show Collection State
 					if reference.collectible then
@@ -307,6 +310,7 @@ local InformationTypes = {
 						});
 					end
 				end
+				]]--
 			end
 		end,
 	}),
