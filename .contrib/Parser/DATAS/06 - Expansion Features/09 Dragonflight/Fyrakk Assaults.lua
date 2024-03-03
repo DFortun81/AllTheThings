@@ -268,7 +268,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			n(TREASURES, {
 				o_repeated({	-- Secured Shipment
 					["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
-					["sym"] = {{"select","headerID",FYRAKK_ASSAULTS},{"pop"},{"where","headerID",REWARDS},{"pop"}},	-- add Fyrakk Assault Rewards
+					["sym"] = {{"select","headerID",FYRAKK_ASSAULTS},{"pop"},{"where","headerID",EVENT_COMPLETION},{"pop"}},	-- add Fyrakk Assault Rewards
 					["g"] = {
 						-- Rewards
 						filter(BATTLE_PETS, {
