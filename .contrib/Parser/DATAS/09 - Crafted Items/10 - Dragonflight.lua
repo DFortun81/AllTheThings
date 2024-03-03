@@ -63,7 +63,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			},
 		}),
 		spell(370745, {	-- Advanced Potion Experimentation
-			["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
+			-- Nothing moved to Basic yet, so don't symlink to it
+			-- ["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
 			["g"] = {
 				i(193367, {	-- Advanced Potion Experimentation
 					-- Move to Basic Potion Experimentation if possible discovery
