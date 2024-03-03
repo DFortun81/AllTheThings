@@ -275,7 +275,10 @@ L.SETTINGS_MENU = {
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "Achievement ID";
 		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
-	
+		ADDED_WITH_PATCH_CLASSIC_FORMAT = "This gets added with patch %s";
+		READDED_WITH_PATCH_CLASSIC_FORMAT = "This gets readded with patch %s";
+		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
+		WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT = "This was added with patch %s";
 	
 	-- Features Page
 		FEATURES_PAGE = FEATURES_LABEL;

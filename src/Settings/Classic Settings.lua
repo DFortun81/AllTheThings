@@ -31,7 +31,6 @@ settings.Collectibles = {
 	Quests = true,
 	Recipes = true,
 	Reputations = true,
-	RWP = true,
 	Titles = true,
 	Toys = true,
 	Transmog = true,
@@ -58,7 +57,7 @@ settings.RequiredForInsaneMode = {
 	Reputations = true,
 	Titles = true,
 	Toys = true,
-	Transmog = true,
+	Transmog = app.GameBuildVersion >= 40000,
 }
 
 -- Settings Class
@@ -125,7 +124,7 @@ local GeneralSettingsBase = {
 		["Thing:Reputations"] = true,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
-		["Thing:Transmog"] = true,
+		["Thing:Transmog"] = app.GameBuildVersion >= 40000,
 		["Only:RWP"] = app.GameBuildVersion < 40000,
 		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,

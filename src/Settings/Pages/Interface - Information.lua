@@ -25,9 +25,9 @@ end
 local function GetCoordString(x, y)
 	return GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1);
 end
-local function GetPatchString(patch, color)
+local function GetPatchString(patch)
 	patch = tonumber(patch)
-	return patch and Colorize(math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10), color)
+	return patch and (math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10))
 end
 local DefaultConversionMethod = function(value)
 	return value;
@@ -47,8 +47,8 @@ local ConversionMethods = setmetatable({
 		end
 		return questID
 	end,
-	awp = function(val) return GetPatchString(val, app.Colors.AddedWithPatch) end,
-	rwp = function(val) return GetPatchString(val, app.Colors.RemovedWithPatch) end,
+	awp = function(val) return Colorize(GetPatchString(val), app.Colors.AddedWithPatch) end,
+	rwp = function(val) return Colorize(GetPatchString(val), app.Colors.RemovedWithPatch) end,
 	spellID = function(spellID, reference)
 		if app.Settings:GetTooltipSetting("spellName") then
 			return tostring(spellID) .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
@@ -523,8 +523,29 @@ local InformationTypes = {
 	});
 	
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
-	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3 }),
-	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3 }),
+	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3,
+		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
+			local awp = t.GetValue(t, reference);
+			if awp then
+				local formatter = L.WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT;
+				if awp >= app.GameBuildVersion then
+					-- Current build is before the awp.
+					local rwp = reference.rwp;
+					formatter = (rwp and rwp < awp and L.READDED_WITH_PATCH_CLASSIC_FORMAT) or L.ADDED_WITH_PATCH_CLASSIC_FORMAT;
+				end
+				tinsert(tooltipInfo, { left = Colorize(formatter:format(GetPatchString(awp)), app.Colors.AddedWithPatch)});
+			end
+		end,
+	}),
+	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3,
+		-- CRIEVE NOTE: Recursive is actually not true, some items get new sources later. The distinction for pre-Cata being non-recursive might be necessary, but since we're overriding the process function it should be fine this way.
+		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
+			local rwp = reference.rwp;	-- NOTE: For Retail, namely pre-Cata, this can't be recursive!
+			if rwp then
+				tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
+			end
+		end,
+	}),
 	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4,
 		Process = function(t, reference, tooltipInfo)
 			local f = reference.filterID or reference.f;
