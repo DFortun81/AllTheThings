@@ -31,12 +31,20 @@ i(0, 429354);		-- Void-Touched Leather Gloves
 ------------------
 -- PATCH 1.15.1 --
 ------------------
+--- TRAINER ---
+i(0, 439114);		-- Guardian Pants
+i(0, 439116);		-- Turtle Scale Breastplate
 --- ITEM ---
+i(217260, 439105);	-- Big Voodoo Mask
+i(217262, 439108);	-- Big Voodoo Robe
 i(215367, 435819);	-- Faintly Glowing Leather
 i(215152, 435904);	-- Glowing Gneuro-Linked Cowl
 i(215422, 435949);	-- Glowing Hyperconductive Scale Coif
 i(215423, 435951);	-- Gneuro-Conductive Channeler's Hood
-i(215424, 435953);	-- Rad-Resistant Scale Hood
+i(217266, 439112);	-- Guardian Belt
+i(217264, 439110);	-- Guardian Leather Bracers
+i(215424, 435953); -- Rad-Resistant Scale Hood
+i(217271, 439118);	-- Turtle Scale Gloves
 -- #endif
 
 -----------------

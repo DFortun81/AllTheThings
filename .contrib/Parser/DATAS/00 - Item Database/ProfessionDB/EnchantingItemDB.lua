@@ -18,9 +18,12 @@ i(211849, 430409);	-- Blackfathom Mana Oil
 ------------------
 -- PATCH 1.15.1 --
 ------------------
+--- TRAINER ---
+i(0, 439134);		-- Greater Mystic Wand
 --- ITEM ---
 i(215138, 435903);	-- Enchant Chest - Retricutioner
 i(215129, 435481);	-- Enchant Weapon - Dismantle
+i(215141, 439156);	-- Sigil of Innovation
 -- #endif
 
 -----------------

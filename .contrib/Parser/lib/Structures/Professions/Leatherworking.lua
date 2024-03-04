@@ -130,12 +130,18 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(3774),	-- Green Leather Belt
 		r(3776),	-- Green Leather Bracers
 		r(7156),	-- Guardian Gloves
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439114)),	-- Guardian Pants
+		-- #endif
 		r(7147),	-- Guardian Pants
 		r(10558),	-- Nightscape Boots
 		r(10507),	-- Nightscape Headband
 		r(10548),	-- Nightscape Pants
 		r(10499),	-- Nightscape Tunic
 		r(10518),	-- Turtle Scale Bracers
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439116)),	-- Turtle Scale Breastplate
+		-- #endif
 		r(10511),	-- Turtle Scale Breastplate
 		r(10552),	-- Turtle Scale Helm
 		r(10556),	-- Turtle Scale Leggings

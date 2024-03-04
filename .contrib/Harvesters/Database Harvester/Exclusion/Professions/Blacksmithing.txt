@@ -4,6 +4,13 @@
 435906@@@Reflective Truesilver Braincage [Classic]
 435908@@@Tempered Interference-Negating Helmet [Classic]
 435910@@@Low-Background Truesilver Plates [Classic]
+439120@@@Golden Scale Gauntlets [Classic]
+439122@@@Golden Scale Boots [Classic]
+439124@@@Golden Scale Cuirass [Classic]
+439126@@@Golden Scale Coif [Classic]
+439128@@@Moonsteel Broadsword [Classic]
+439130@@@Golden Scale Shoulders [Classic]
+439132@@@Golden Scale Leggings [Classic]
 110955@@@Release Spirit
 253151@@@Precision Attitude Adjuster [Engi]
 253152@@@Precision Attitude Adjuster [Engi]

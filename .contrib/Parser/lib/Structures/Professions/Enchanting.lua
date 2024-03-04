@@ -146,6 +146,9 @@ EXPERT_ARTISAN_ENCHANTING = {
 		r(13702, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Truesilver Rod
 	}),
 	n(WEAPONS, {
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439134)),	-- Greater Mystic Wand
+		-- #endif
 		r(14810),	-- Greater Mystic Wand
 		r(14809),	-- Lesser Mystic Wand
 	}),

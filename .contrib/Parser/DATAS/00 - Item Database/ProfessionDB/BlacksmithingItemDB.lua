@@ -19,6 +19,13 @@ i(210779, 427061);	-- Mantle of the Second War
 -- PATCH 1.15.1 --
 ------------------
 --- ITEM ---
+i(217276, 439122);	-- Golden Scale Boots
+i(217280, 439126);	-- Golden Scale Coif
+i(217278, 439124);	-- Golden Scale Cuirass
+i(217274, 439120);	-- Golden Scale Gauntlets
+i(217286, 439132);	-- Golden Scale Leggings
+i(217284, 439130);	-- Golden Scale Shoulders
+i(217282, 439128);	-- Moonsteel Broadsword
 i(215384, 435910);	-- Low-Background Truesilver Plates
 i(215383, 435906);	-- Reflective Truesilver Braincage
 i(215155, 435908);	-- Tempered Interference-Negating Helmet

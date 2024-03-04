@@ -257,12 +257,30 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(3474),	-- Gemmed Copper Gauntlets
 			applyclassicphase(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
 			applyclassicphase(PHASE_THREE, i(19057)),	-- Gloves of the Dawn
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217275)),	-- Golden Scale Boots
+			-- #endif
 			i(3847),	-- Golden Scale Boots
 			i(6040),	-- Golden Scale Bracers
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217279)),	-- Golden Scale Coif
+			-- #endif
 			i(3837),	-- Golden Scale Coif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217277)),	-- Golden Scale Cuirass
+			-- #endif
 			i(3845),	-- Golden Scale Cuirass
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217273)),	-- Golden Scale Gauntlets
+			-- #endif
 			i(9366, {["timeline"] = {REMOVED_4_0_3}}),	-- Golden Scale Gauntlets
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217285)),	-- Golden Scale Leggings
+			-- #endif
 			i(3843),	-- Golden Scale Leggings
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217283)),	-- Golden Scale Shoulders
+			-- #endif
 			i(3841),	-- Golden Scale Shoulders
 			i(3484),	-- Green Iron Boots
 			i(3835),	-- Green Iron Bracers
@@ -490,6 +508,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(206486, {["timeline"] = {ADDED_10_1_5}}),	-- Midnight's Graze
 			i(3492),	-- Mighty Iron Hammer
 			i(206480, {["timeline"] = {ADDED_10_1_5}}),	-- Mirah's Lullaby
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217281)),	-- Moonsteel Broadsword
+			-- #endif
 			i(3853),	-- Moonsteel Broadsword
 			i(12773),	-- Ornate Thorium Handaxe
 			i(203811, {["timeline"] = {ADDED_10_0_7}}),	-- Pitchfork of Madness
@@ -822,6 +843,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(11130, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Gold Rod
 			i(6339, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Silver Rod
 			i(11145, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Truesilver Rod
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217308)),	-- Enchanted Sigil: Innovation
+			-- #endif
 			applyclassicphase(PHASE_FIVE, i(20750)),	-- Wizard Oil
 		}),
 		filter(TRINKET_F, {
@@ -873,6 +897,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}))),
 		n(WEAPONS, {
 			i(11288),	-- Greater Magic Wand
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217287)),	-- Greater Mystic Wand
+			-- #endif
 			i(11290),	-- Greater Mystic Wand
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
@@ -1830,8 +1857,14 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(5739),	-- Barbaric Harness
 				i(5963),	-- Barbaric Leggings
 				i(5964),	-- Barbaric Shoulders
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(217259)),	-- Big Voodoo Mask
+				-- #endif
 				i(8201),	-- Big Voodoo Mask
 				i(8202),	-- Big Voodoo Pants
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(217261)),	-- Big Voodoo Robe
+				-- #endif
 				i(8200),	-- Big Voodoo Robe
 				i(20575),	-- Black Whelp Tunic
 				applyclassicphase(PHASE_FOUR, i(19688, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Blood Tiger Breastplate
@@ -1875,9 +1908,18 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(7375),	-- Green Whelp Armor
 				i(7386),	-- Green Whelp Bracers
 				i(4256),	-- Guardian Armor
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(217265)),	-- Guardian Belt
+				-- #endif
 				i(4258),	-- Guardian Belt
 				i(5966),	-- Guardian Gloves
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(217263)),	-- Guardian Leather Bracers
+				-- #endif
 				i(4260),	-- Guardian Leather Bracers
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(217267)),	-- Guardian Pants
+				-- #endif
 				i(5962),	-- Guardian Pants
 				i(4237),	-- Handstitched Leather Belt
 				i(2302),	-- Handstitched Leather Boots
@@ -2085,12 +2127,16 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(8206, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Tough Scorpid Leggings
 				i(8207, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Tough Scorpid Shoulders
 				i(8198),	-- Turtle Scale Bracers
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(217268)),	-- Turtle Scale Breastplate
+				-- #endif
 				i(8189),	-- Turtle Scale Breastplate
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(217270)),	-- Turtle Scale Gloves
+				-- #endif
 				i(8187),	-- Turtle Scale Gloves
 				i(8191),	-- Turtle Scale Helm
 				i(8185),	-- Turtle Scale Leggings
-
-
 				-- #if AFTER TBC
 				-- DragonScale
 				i(16984),	-- Black Dragonscale Boots
