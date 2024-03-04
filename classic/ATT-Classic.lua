@@ -304,37 +304,6 @@ end
 app.GetIconFromProviders = GetIconFromProviders;
 app.GetNameFromProviders = GetNameFromProviders;
 
-local function GetBestMapForGroup(group, currentMapID)
-	if group then
-		local mapID = group.mapID;
-		if mapID and mapID == currentMapID then
-			return mapID;
-		end
-
-		local coords = group.coords;
-		if coords then
-			for i,coord in ipairs(coords) do
-				mapID = coord[3];
-				if mapID == currentMapID then
-					return mapID;
-				end
-			end
-		end
-		local maps = group.maps;
-		if maps then
-			for i,otherMapID in ipairs(maps) do
-				mapID = otherMapID;
-				if mapID == currentMapID then
-					return mapID;
-				end
-			end
-		end
-
-		return mapID or GetBestMapForGroup(group.parent, currentMapID);
-	end
-end
-app.GetBestMapForGroup = GetBestMapForGroup;
-
 local MergeObject;
 local CloneArray = app.CloneArray;
 local function GetHash(t)

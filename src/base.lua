@@ -97,6 +97,36 @@ local function CloneReference(group)
 	end
 	return setmetatable(clone, { __index = group });
 end
+-- Returns the best mapID for a group based on that group's coordinate and map data. If the current mapID is included in any of those fields, it will return that. This is used exclusively within tooltips and does not need to reference the source parent.
+local function GetBestMapForGroup(group, currentMapID)
+	if group then
+		local mapID = group.mapID;
+		if mapID and mapID == currentMapID then
+			return mapID;
+		end
+
+		local coords = group.coords;
+		if coords then
+			for i,coord in ipairs(coords) do
+				mapID = coord[3];
+				if mapID == currentMapID then
+					return mapID;
+				end
+			end
+		end
+		local maps = group.maps;
+		if maps then
+			for i,otherMapID in ipairs(maps) do
+				mapID = otherMapID;
+				if mapID == currentMapID then
+					return mapID;
+				end
+			end
+		end
+
+		return mapID or GetBestMapForGroup(group.parent, currentMapID);
+	end
+end
 -- Returns the first matching relative value from the "oldest" parent in the hierarchy where you need to go recursively deeper in the hierarchy to find the value from the top down. (meaning if you're 4 headerIDs deep and looking for "headerID", it'll return the root category's headerID rather than the immediate parent or grandparent's headerID)
 local function GetDeepestRelativeValue(group, field)
 	if group then
@@ -142,6 +172,7 @@ app.AssignFieldValue = AssignFieldValue;
 app.CloneArray = CloneArray;
 app.CloneDictionary = CloneDictionary;
 app.CloneReference = CloneReference;
+app.GetBestMapForGroup = GetBestMapForGroup;
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 app.GetRelativeField = GetRelativeField;
 app.GetRelativeValue = GetRelativeValue;
