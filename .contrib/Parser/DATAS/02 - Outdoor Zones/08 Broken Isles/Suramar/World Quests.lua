@@ -188,7 +188,10 @@ root(ROOTS.Zones, {
 				q(43435),	-- The Battle Rages On
 				q(42089),	-- The Fallen Ones
 				q(43777),	-- The Magic of Flight
-				q(41895),	-- The Master of Pets
+				q(41895, {	-- The Master of Pets
+					["sourceQuest"] = 44052,	-- And They Will Tremble (wowhead report, maybe guessed)
+					["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
+				}),
 				q(42082),	-- The Shattered Locus
 				q(42015),	-- Threads of Fate
 				q(44002),	-- Undersea Survey
