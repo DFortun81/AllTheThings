@@ -2033,6 +2033,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 63.2, 79.2, AZSHARA },
 						{ 63.6, 81.4, AZSHARA },
 					},
+					["description"] = "Spawns at the coordinates 62.7, 75.6. Usually respawns in 30 to 60 minutes after last killed.",
 					-- #else
 					["coord"] = { 41.6, 51.8, AZSHARA },
 					-- #endif
