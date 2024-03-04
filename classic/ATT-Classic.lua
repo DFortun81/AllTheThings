@@ -355,13 +355,7 @@ local function GetRelativeDifficulty(group, difficultyID)
 		end
 	end
 end
-local function GetDeepestRelativeValue(group, field)
-	if group then
-		return GetDeepestRelativeValue(group.parent, field) or group[field];
-	end
-end
 app.GetBestMapForGroup = GetBestMapForGroup;
-app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 
 local MergeObject;
 local CloneArray = app.CloneArray;

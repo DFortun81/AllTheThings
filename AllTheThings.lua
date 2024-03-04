@@ -1151,11 +1151,6 @@ local function GetRelativeFieldInSet(group, field, set)
 	end
 end
 
-local function GetDeepestRelativeValue(group, field)
-	if group then
-		return GetDeepestRelativeValue(group.sourceParent or group.parent, field) or group[field];
-	end
-end
 -- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100 and bonusID/1000000
 -- or converts a raw ItemID/ModID/BonusID into the combined modItemID value
 -- Ex. 12345 (ModID 5) => 12345.05
