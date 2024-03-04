@@ -1039,7 +1039,7 @@ else
 end
 
 -- Set of questIDs which have a lock status cached. This is cleared during 'softRefresh' (i.e. any potential quest state change)
-local LockedQuestCache = {}
+local LockedQuestCache, LockedBreadcrumbCache = {}, {}
 -- Lock Criteria for Complex Quest Locking
 local criteriaFuncs = {
 	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
@@ -1146,7 +1146,7 @@ end
 local function LockedAsBreadcrumb(t)
 	local questID = t.questID;
 	-- already cached a locked status
-	local cached = LockedQuestCache[questID]
+	local cached = LockedBreadcrumbCache[questID]
 	if cached ~= nil then return cached end
 	if not IsQuestFlaggedCompleted(questID) then
 		local nextQuests = t.nextQuests;
@@ -1155,21 +1155,21 @@ local function LockedAsBreadcrumb(t)
 			for _,nqID in ipairs(nextQuests) do
 				if IsQuestFlaggedCompleted(nqID) then
 					-- app.PrintDebug("Locked Breadcrumb from",nqID,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
-					LockedQuestCache[questID] = true
+					LockedBreadcrumbCache[questID] = true
 					return true;
 				else
 					-- this questID may not even be available to pick up, so try to find a Thing with this questID to determine if the object is complete
 					nq = Search("questID", nqID, "field");
 					if nq and (nq.altcollected or nq.locked) then
 						-- app.PrintDebug("Locked Breadcrumb from",nq.hash,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
-						LockedQuestCache[questID] = true
+						LockedBreadcrumbCache[questID] = true
 						return true;
 					end
 				end
 			end
 		end
 		-- app.PrintDebug("Available Breadcrumb",app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
-		LockedQuestCache[questID] = false
+		LockedBreadcrumbCache[questID] = false
 		return false
 	else
 		-- completed quests can be permanently ignored for locked logic handling
@@ -1213,6 +1213,19 @@ local AndLockCriteria = {
 	end,
 }
 app.GlobalVariants.AndLockCriteria = AndLockCriteria
+-- bleh... ideally I'd prefer if the variant could be setup to refer to the original base class fields as well
+-- then appending a variant could append the additional logic, and still rely on the base logic if the additional
+-- logic fell through. i.e. for breadcrumbs... check variant of 'locked' and then fallback to the base breadcrumb.locked
+-- for now I guess this is an explicit variant which covers both
+local AndBreadcrumbWithLockCriteria = {
+	collectible = CollectibleAsQuestOrAsLocked,
+	locked = function(t)
+		return LockedAsQuest(t) or LockedAsBreadcrumb(t)
+	end,
+	__condition = function(t)
+		return t.lc or t.altQuests
+	end,
+}
 if app.IsRetail then
 	local WithTypeName = {
 		name = function(t)
@@ -1461,7 +1474,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end or CollectibleAsQuestOrAsLocked,
 	locked = LockedAsBreadcrumb,
 	variants = {
-		AndLockCriteria = AndLockCriteria,
+		AndBreadcrumbWithLockCriteria = AndBreadcrumbWithLockCriteria,
 	},
 }, (function(t) return t.isBreadcrumb; end)
 -- Both: World Quests (Baked back into Quest for now since multiple types can be WorldQuests)
@@ -1688,6 +1701,7 @@ end
 local softRefresh = function()
 	app.WipeSearchCache();
 	wipe(LockedQuestCache)
+	wipe(LockedBreadcrumbCache)
 end;
 app.events.BAG_NEW_ITEMS_UPDATED = softRefresh;
 if app.IsClassic then
