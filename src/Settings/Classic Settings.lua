@@ -1039,14 +1039,15 @@ settings.UpdateMode = function(self, doRefresh)
 	]]--
 	
 	
-	if self:Get("Filter:BoEs") then
-		filterSet.ItemUnbound(true)
-	else
-		filterSet.ItemUnbound()
-	end
 	if self:Get("Hide:BoEs") then
+		filterSet.ItemUnbound()
 		filterSet.Bound(true)
 	else
+		if self:Get("Filter:BoEs") then
+			filterSet.ItemUnbound(true)
+		else
+			filterSet.ItemUnbound()
+		end
 		filterSet.Bound()
 	end
 	if self:Get("Hide:PvP") then

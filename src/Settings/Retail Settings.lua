@@ -163,7 +163,9 @@ local GeneralSettingsBase = {
 		["Window:CustomColors"] = {},
 	},
 }
-local FilterSettingsBase = {}
+local FilterSettingsBase = {
+	__index = app.Presets[app.Class] or app.Presets.ALL,
+};
 local TooltipSettingsBase = {
 	__index = {
 		["Auto:BountyList"] = false,
@@ -281,7 +283,6 @@ settings.Initialize = function(self)
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {} end
 	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {} end
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase)
-	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL
 
 	-- force re-enable of optional filters which become not optional
 	-- (any filterID's here must be 'true' in all class presets)
@@ -814,8 +815,12 @@ ATTSettingsObjectMixin = {
 	end,
 	-- Registers an Object within itself
 	RegisterObject = function(self, o)
-		if not self.Objects then self.Objects = {} end
-		tinsert(self.Objects, o);
+		local objects = self.Objects
+		if not objects then
+			objects = {}
+			self.Objects = objects;
+		end
+		tinsert(objects, o);
 	end,
 	-- Allows an Object to Refresh all Objects
 	RefreshChildren = function(self)
@@ -1369,14 +1374,15 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.AchievementFilter = 13
 	end
-	if self:Get("Filter:BoEs") and not self:Get("Hide:BoEs") then
-		filterSet.ItemUnbound(true)
-	else
-		filterSet.ItemUnbound()
-	end
 	if self:Get("Hide:BoEs") then
+		filterSet.ItemUnbound()
 		filterSet.Bound(true)
 	else
+		if self:Get("Filter:BoEs") then
+			filterSet.ItemUnbound(true)
+		else
+			filterSet.ItemUnbound()
+		end
 		filterSet.Bound()
 	end
 	if self:Get("Hide:PvP") then
