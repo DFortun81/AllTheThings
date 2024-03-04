@@ -26,6 +26,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(131490),	-- Fishing
 				})),
 			}),
+			tier(BFA_TIER, {
+				-- 8.0.1
+				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+					r(272011),	-- Fishing
+				})),
+			}),
 		}),
 	}),
 }));

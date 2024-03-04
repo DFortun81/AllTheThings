@@ -60447,10 +60447,6 @@ s(109063)/i(175419),	-- Stoneforged Greatboots
 s(109064)/i(175420),	-- Slippers of Pained Absolution
 s(109065)/i(175421),	-- Soul Hunter's Sabatons \\ Soul Hunter's  Sabatons
 s(109066)/i(175422),	-- Nightcloaked Boots
-s(109146)/i(175503),	-- Stoneforged Greatbelt
-s(109147)/i(175504),	-- Cord of Pained Absolution
-s(109148)/i(175505),	-- Soul Hunter's Cinch \\ Soul Hunter's  Cinch
-s(109149)/i(175506),	-- Nightcloaked Waistcord
 s(109155)/i(175512),	-- Corpse-Stitcher's Raiment \\ Epidemiologist's Raiment
 s(109156)/i(175513),	-- Cruel Executioner's Breastplate
 s(109157)/i(175514),	-- Flesh Architect's Hauberk

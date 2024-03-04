@@ -234,8 +234,6 @@ r(75268),	-- Hyjal Expedition Bag
 r(75269),	-- Vicious Fireweave Belt
 r(75270),	-- Vicious Embersilk Bracers
 r(75287),	--
-r(75288),	-- Black Embersilk Gown
-r(75289),	-- High Society Top Hat
 r(75290),	-- Vicious Fireweave Bracers
 r(75291),	-- Vicious Embersilk Shoulders
 r(75292),	-- Vicious Fireweave Shoulders
@@ -244,31 +242,9 @@ r(75294),	-- Vicious Fireweave Boots
 r(75295),	-- Vicious Embersilk Gloves
 r(75296),	-- Vicious Fireweave Gloves
 r(75297),	-- Vicious Embersilk Boots
-r(75298),	-- Belt of the Depths
-r(75299),	-- Dreamless Belt
-r(75300),	-- Breeches of Mended Nightmares
-r(75301),	-- Flame-Ascended Pantaloons
-r(75302),	-- Vicious Fireweave Pants
-r(75303),	-- Vicious Fireweave Robe
-r(75304),	-- Vicious Fireweave Cowl
-r(75305),	-- Vicious Embersilk Robe
-r(75306),	-- Vicious Embersilk Cowl
-r(75307),	-- Vicious Embersilk Pants
-r(75308),	-- Illusionary Bag
-r(75309),	-- Powerful Enchanted Spellthread
-r(75310),	-- Powerful Ghostly Spellthread
 4.3.4.15595
 r(94743),	-- Dream of Destruction
-r(99448),	-- Grips of Altered Reality
-r(99449),	-- Don Tayo's Inferno Mittens
-r(99459),	-- Endless Dream Walkers
-r(99460),	-- Boots of the Black Flame
 r(99537),	-- Vicious Embersilk Cape
-r(100585),	-- Luxurious Silk Gem Bag
-r(101920),	-- World Mender's Pants
-r(101921),	-- Lavaquake Legwraps
-r(101922),	-- Dreamwraps of the Light
-r(101923),	-- Bracers of Unconquered Power
 r(102171),	--
 5.0.3.15890
 r(104115),	-- Release Fire Spirit
@@ -951,9 +927,9 @@ r(439098),	-- Crimson Silk Belt
 r(439100),	-- Earthen Vest
 r(439102),	-- Enchanter's Cowl
 3.0.1.8874
-i(0, 56016);	-- Wispcloak (Requires Northrend Dungeonmaster)
-i(0, 56017);	-- Deathchill Cloak (Requires Loremaster of Northrend)
-r(0, 56048),	-- Duskweave Boots (3.4.0 CLASSIC VERSION)
+r(56016),	-- Wispcloak
+r(56017),	-- Deathchill Cloak
+r(56048),	-- Duskweave Boots
 5.0.3.15890
 r(104115),	-- Release Fire Spirit
 r(110426),	-- Tailoring

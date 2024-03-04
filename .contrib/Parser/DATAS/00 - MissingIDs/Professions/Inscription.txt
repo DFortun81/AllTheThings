@@ -688,5 +688,3 @@ r(405005),	-- Glyph of Reckoning
 r(413897),	-- Glyph of Omen of Clarity
 3.4.2.49563
 r(414814),	-- Glyph of Shattering Throw
-10.2.0.52301
-r(422337),	-- Lydiara's Binding Rune
