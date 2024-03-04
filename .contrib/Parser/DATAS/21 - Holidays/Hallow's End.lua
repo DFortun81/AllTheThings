@@ -1937,7 +1937,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	-- #endif
 	n(23682, {	-- Headless Horseman
 		-- #if AFTER WRATH
+		-- #if BEFORE 10.1.7
 		["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
+		-- #endif
 		-- #else
 		["questID"] = 11392,	-- Call the Headless Horseman
 		-- #endif

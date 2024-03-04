@@ -487,6 +487,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #if AFTER 3.0.1
 		-- #if BEFORE 10.0.5
 		["description"] = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",
+		-- #endif
 		["maps"] = {
 			BLACKROCK_DEPTHS,
 			243,	-- Blackrock Depths
@@ -494,7 +495,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		-- #else
 		["questID"] = 12062,	-- Insult Coren Direbrew
 		["maps"] = { BLACKROCK_DEPTHS },
-		-- #endif
 		-- #endif
 		["timeline"] = { "added 2.0.1" },
 		["isDaily"] = true,
