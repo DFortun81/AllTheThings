@@ -333,28 +333,6 @@ local function GetBestMapForGroup(group, currentMapID)
 		return mapID or GetBestMapForGroup(group.parent, currentMapID);
 	end
 end
-local function GetRelativeDifficulty(group, difficultyID)
-	if group then
-		if group.difficultyID then
-			if group.difficultyID == difficultyID then
-				return true;
-			end
-			if group.difficulties then
-				for i, difficulty in ipairs(group.difficulties) do
-					if difficulty == difficultyID then
-						return true;
-					end
-				end
-			end
-			return false;
-		end
-		if group.parent then
-			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
-		else
-			return true;
-		end
-	end
-end
 app.GetBestMapForGroup = GetBestMapForGroup;
 
 local MergeObject;
@@ -937,6 +915,28 @@ app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 
 local InitialCachedSearch;
 local IsQuestReadyForTurnIn = app.IsQuestReadyForTurnIn;
+local function GetRelativeDifficulty(group, difficultyID)
+	if group then
+		if group.difficultyID then
+			if group.difficultyID == difficultyID then
+				return true;
+			end
+			if group.difficulties then
+				for i, difficulty in ipairs(group.difficulties) do
+					if difficulty == difficultyID then
+						return true;
+					end
+				end
+			end
+			return false;
+		end
+		if group.parent then
+			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
+		else
+			return true;
+		end
+	end
+end
 local function GetSearchResults(method, paramA, paramB, ...)
 	if not paramA then
 		print("GetSearchResults: Invalid paramA: nil");

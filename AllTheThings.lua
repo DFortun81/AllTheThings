@@ -1123,28 +1123,6 @@ app.GetIndicatorIcon = function(group)
 	return GetUnobtainableTexture(group);
 end
 
-local function GetRelativeDifficulty(group, difficultyID)
-	if group then
-		if group.difficultyID then
-			if group.difficultyID == difficultyID then
-				return true;
-			end
-			if group.difficulties then
-				for i, difficulty in ipairs(group.difficulties) do
-					if difficulty == difficultyID then
-						return true;
-					end
-				end
-			end
-			return false;
-		end
-		if group.parent then
-			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
-		else
-			return true;
-		end
-	end
-end
 local function GetRelativeFieldInSet(group, field, set)
 	if group then
 		return set[group[field]] or GetRelativeFieldInSet(group.sourceParent or group.parent, field, set);
@@ -2518,6 +2496,28 @@ local TooltipSourceFields = {
 	"questID"
 };
 local InitialCachedSearch;
+local function GetRelativeDifficulty(group, difficultyID)
+	if group then
+		if group.difficultyID then
+			if group.difficultyID == difficultyID then
+				return true;
+			end
+			if group.difficulties then
+				for i, difficulty in ipairs(group.difficulties) do
+					if difficulty == difficultyID then
+						return true;
+					end
+				end
+			end
+			return false;
+		end
+		if group.parent then
+			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
+		else
+			return true;
+		end
+	end
+end
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
 	if not method then
