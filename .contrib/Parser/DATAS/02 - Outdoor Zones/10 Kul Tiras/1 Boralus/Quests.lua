@@ -537,6 +537,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 140732 },	-- Flynn Fairwind
 				["coord"] = { 67.7, 22.1, BORALUS },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					o_repeated({
+						i(161438),	-- Large Azerite Grenade (QI!)
+						o(296252),	-- Box of Lare Azerite Grenades
+						o(293134),	-- Lare Azerite Grenade
+					}),
+				},
 			}),
 			q(51488, {	-- Archived Knowledge
 				["sourceQuests"] = { 51487 },	-- Searching for Answers
@@ -592,6 +599,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 140495 },	-- Katherine Proudmoore
 				["coord"] = { 67.0, 36.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(161437),	-- Shipping Contract (QI!)
+				},
 			}),
 			q(50787, {	-- Make Our Case
 				["sourceQuests"] = { 50795 },	-- Prepare for Trouble

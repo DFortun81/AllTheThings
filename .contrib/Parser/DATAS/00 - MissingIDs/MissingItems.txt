@@ -25707,7 +25707,6 @@ i(161433),	-- Thick Webbing
 i(161434),	-- Unbroken Makrura Carapace
 i(161435),	-- Rezan's Bone Splinter
 i(161436),	-- Elemental Pitch
-i(161437),	-- Shipping Contract
 i(161438),	-- Large Azerite Grenade
 i(161439),	-- Gleaming Spiral
 i(161440),	-- Sparkling Tidescale
