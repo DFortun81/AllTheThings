@@ -201,8 +201,8 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(23514),	-- Flamebane Gloves
 			i(23516),	-- Flamebane Helm
 			i(23532),	-- Gauntlets of the Iron Tower
-			applyclassicphase(TBC_PHASE_FIVE, i(34378,{["timeline"] = {ADDED_2_4_0}})),	-- Hard Khorium Battlefists
-			applyclassicphase(TBC_PHASE_FIVE, i(34377,{["timeline"] = {ADDED_2_4_0}})),	-- Hard Khorium Battleplate
+			applyclassicphase(TBC_PHASE_FIVE, i(34378, {["timeline"] = {ADDED_2_4_0}})),	-- Hard Khorium Battlefists
+			applyclassicphase(TBC_PHASE_FIVE, i(34377, {["timeline"] = {ADDED_2_4_0}})),	-- Hard Khorium Battleplate
 			i(23535),	-- Helm of the Stalwart Defender
 			i(31369),	-- Iceguard Breastplate
 			i(31371),	-- Iceguard Helm
@@ -559,12 +559,13 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 	}),
 	prof(FISHING, {
 		i(27422),	-- Barbed Gill Trout
-		i(33823),	-- Bloodfin Catfish
-		i(33824),	-- Crescent-Tail Skullfish
+		applyclassicphase(TBC_PHASE_FOUR, i(33823, {["timeline"] = {ADDED_2_3_0}})),	-- Bloodfin Catfish
+		applyclassicphase(TBC_PHASE_FOUR, i(33824, {["timeline"] = {ADDED_2_3_0}})),	-- Crescent-Tail Skullfish
 		i(27513),	-- Curious Crate
 		i(27516),	-- Enormous Barbed Gill Trout
 		i(27435),	-- Figluster's Mudfish
 		i(27439),	-- Furious Crawdad
+		applyclassicphase(TBC_PHASE_FIVE, i(35285, {["timeline"] = {ADDED_2_4_0}})),	-- Giant Sunfish
 		i(27438),	-- Golden Darter
 		i(27481),	-- Heavy Supply Crate
 		i(27515),	-- Huge Spotted Feltail

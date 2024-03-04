@@ -353,6 +353,19 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(59599),	-- Volatile Thunderstick*
 		}),
 	}),
+	prof(FISHING, {
+		i(53065),	-- Albino Cavefish
+		i(53071),	-- Algaefin Rockfish
+		i(53066),	-- Blackbelly Mudfish
+		i(53072),	-- Deepsea Sagefish
+		i(53070),	-- Fathom Eel
+		i(53064),	-- Highland Guppy
+		i(53068),	-- Lavascale Catfish
+		i(53063),	-- Mountain Trout
+		i(53069),	-- Murglesnout
+		i(53062),	-- Sharptooth
+		i(53067),	-- Striped Lurker
+	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
 			i(52985),	-- Azshara's Veil

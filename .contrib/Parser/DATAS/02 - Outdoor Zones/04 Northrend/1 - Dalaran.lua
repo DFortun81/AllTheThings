@@ -1428,6 +1428,12 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_ENCHANTING,
 						}),
 					}),
+					prof(FISHING, {
+						n(28742, {	-- Marcia Chase <Fishing Trainer & Supplies>
+							["coord"] = { 52.6, 65.6, NORTHREND_DALARAN },
+							["groups"] = WRATH_FISHING,
+						}),
+					}),
 					prof(HERBALISM, {
 						n(28704, {	-- Dorothy Egan <Herbalism Trainer>
 							["coord"] = { 43.8, 34.8, NORTHREND_DALARAN },

@@ -1498,11 +1498,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 16969 },	-- Savage Coast Blue Sailfin
 							["coord"] = { 26.3, 67.8, STRANGLETHORN_VALE },
 						}),
-						-- #if BEFORE CATA
 						recipe(18248, {	-- Fishing (Artisan)
 							["rank"] = 4,
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
-						-- #endif
 						i(45858, {	-- Nat's Lucky Fishing Pole
 							["timeline"] = { "added 3.1.0.9637" },
 						}),

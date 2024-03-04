@@ -556,6 +556,20 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(89992),    -- Schematic: Serpent's Heart Firework
 		}),
 	}),
+	prof(FISHING, {
+		i(74859),	-- Emperor Salmon
+		i(86542),	-- Flying Tiger Gourami
+		i(74857),	-- Giant Mantis Shrimp
+		i(74866),	-- Golden Carp
+		i(74856),	-- Jade Lungfish
+		i(74863),	-- Jewel Danio
+		i(74865),	-- Krasarang Paddlefish
+		i(86545),	-- Mimic Octopus
+		i(74860),	-- Redbelly Mandarin
+		i(74864),	-- Reef Octopus
+		i(86544),	-- Spinefish Alpha
+		i(74861),	-- Tiger Gourami
+	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
 			i(89639),	-- Desecrated Herb

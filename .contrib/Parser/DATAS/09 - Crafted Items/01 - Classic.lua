@@ -1297,13 +1297,30 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				},
 			}),
 		}),
-		-- #if AFTER TBC
+		i(13888),	-- Darkclaw Lobster
+		i(6291),	-- Raw Brilliant Smallfish
+		i(6308),	-- Raw Bristle Whisker Catfish
+		i(13754),	-- Raw Glossy Mightfish
+		i(21153),	-- Raw Greater Sagefish
+		i(6317),	-- Raw Loch Frenzy
+		i(6289),	-- Raw Longjaw Mud Snapper
+		i(8365),	-- Raw Mithril Head Trout
+		i(13759),	-- Raw Nightfin Snapper
+		i(6361),	-- Raw Rainbow Fin Albacore
+		i(13758),	-- Raw Redgill
+		i(6362),	-- Raw Rockscale Cod
+		i(21071),	-- Raw Sagefish
+		i(6303),	-- Raw Slitherskin Mackerel
+		i(4603),	-- Raw Spotted Yellowtail
+		i(13756),	-- Raw Summer Bass
+		i(13760),	-- Raw Sunscale Salmon
+		i(13889),	-- Raw Whitescale Salmon
 		filter(RECIPES, {
-			i(34109, {	-- Weather-Beaten Journal
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
+				["timeline"] = { ADDED_2_3_0 },
 			}),
 		}),
-		-- #endif
 	}),
 	prof(HERBALISM, {
 		i(11020, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Evergreen Pouch

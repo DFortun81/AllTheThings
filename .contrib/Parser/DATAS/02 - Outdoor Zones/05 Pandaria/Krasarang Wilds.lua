@@ -1522,6 +1522,7 @@ root(ROOTS.Zones, {
 								n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
 									["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
 									["g"] = {
+										MOP_FISHING,
 										i(85500, {	-- Angler's Fishing Raft (TOY!)
 											["cost"] = 8500000,	-- 850g
 										}),

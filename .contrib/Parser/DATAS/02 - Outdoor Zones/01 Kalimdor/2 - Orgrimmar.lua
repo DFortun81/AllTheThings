@@ -207,6 +207,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				prof(FISHING, {
+					n(3332, {	-- Lumak <Fishing Trainer>
+						["coord"] = { 66.6, 41.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(CLASSIC_FISHING,
+							-- #if AFTER CATA
+							CATA_FISHING
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { "added 2.4.0.7897" },
 					}),
@@ -531,7 +542,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
 					-- #elseif AFTER 8.0.1
-					["description"] = "Becomes available at Classic Blacksmithing skill level 140 when character level requirement is met.", 
+					["description"] = "Becomes available at Classic Blacksmithing skill level 140 when character level requirement is met.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #else
 					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
@@ -1005,7 +1016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
 					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.", 
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #else
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
@@ -1038,7 +1049,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
 					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.", 
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #else
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
@@ -1270,7 +1281,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
 					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.", 
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #else
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
@@ -1714,7 +1725,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
 					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.", 
+					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #else
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",

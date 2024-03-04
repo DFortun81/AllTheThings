@@ -146,6 +146,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				prof(FISHING, {
+					n(5493, {	-- Arnold Leland <Fishing Trainer>
+						["coord"] = { 54.8, 69.6, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_FISHING,
+							-- #if AFTER CATA
+							CATA_FISHING
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { "added 2.4.0.7897" },
 					}),

@@ -499,6 +499,11 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		i(34722),	-- Heavy Frostweave Bandage
 	}),
 	prof(FISHING, {
+		i(41812),	-- Barrelhead Goby
+		i(41808),	-- Bonescale Snapper
+		i(41805),	-- Borean Man O' War
+		i(41800),	-- Deep Sea Monsterbelly
+		i(41807),	-- Dragonfin Angelfish
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
 			["providers"] = {
@@ -514,6 +519,16 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 				{ "o", 192057 },	-- Nettlefish School
 			},
 		}),
+		i(41810),	-- Fangtooth Herring
+		i(43646),	-- Fountain Goldfish
+		i(41809),	-- Glacial Salmon
+		i(41814),	-- Glassfin Minnow
+		i(41802),	-- Imperial Manta Ray
+		i(43572),	-- Magic Eater
+		i(41801),	-- Moonglow Cuttlefish
+		i(41806),	-- Musselback Sculpin
+		i(41813),	-- Nettlefish
+		i(41803),	-- Rockfin Grouper
 		i(46109, {	-- Sea Turtle
 			["providers"] = {
 				{ "o", 192051 },	-- Borean Man O' War School
@@ -536,6 +551,9 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 				SHOLAZAR_BASIN,
 			},
 		}),
+		i(43571),	-- Sewer Carp
+		i(43647),	-- Shimmering Minnow
+		i(43652),	-- Slippery Eel
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering

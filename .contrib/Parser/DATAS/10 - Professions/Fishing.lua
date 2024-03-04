@@ -301,10 +301,8 @@ profession(FISHING, {
 	}),
 	-- TODO: The format of this is all sorts of messed up and should be sorted into the addon. Clean this up!
 	n(DROPS, {
-		i(34109, {	-- Weather-Beaten Journal
-			-- #if NOT ANYCLASSIC
-			["_drop"] = { "spellID", "recipeID" },
-			-- #endif
+		i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+			["timeline"] = { ADDED_2_3_0 },
 		}),
 		i(187877, {	-- Frog Soul
 			["description"] = "Fish anywhere in the Shadowlands to receive this soul.",

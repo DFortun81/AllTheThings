@@ -1516,7 +1516,7 @@ root(ROOTS.Zones, {
 							i(35349),	-- Snarly (PET!)
 							i(33816),	-- Toothy (PET!)
 							i(33820),	-- Weather-Beaten Fishing Hat
-							i(34109),	-- Weather-Beaten Journal
+							i(34109),	-- Weather-Beaten Journal (RECIPE!)
 						},
 					})),
 					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
@@ -1531,7 +1531,7 @@ root(ROOTS.Zones, {
 							i(34859),	-- Razor Sharp Fillet Knife
 							i(34836),	-- Spun Truesilver Fishing Line
 							i(33820),	-- Weather-Beaten Fishing Hat
-							i(34109),	-- Weather-Beaten Journal
+							i(34109),	-- Weather-Beaten Journal (RECIPE!)
 						},
 					})),
 				}),

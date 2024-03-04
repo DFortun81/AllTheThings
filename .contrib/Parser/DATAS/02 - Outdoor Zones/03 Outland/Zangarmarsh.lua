@@ -324,6 +324,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 17.2, 50.6, ZANGARMARSH },
 					}),
 				}),
+				n(PROFESSIONS, {
+					n(18911, {	-- Juno Dufrain <Fishing Trainer>
+						["coord"] = { 78.0, 66.0, ZANGARMARSH },
+						["groups"] = TBC_FISHING,
+					}),
+				}),
 				n(QUESTS, {
 					q(50130, {	-- A Friendly Gesture
 						["qg"] = 17924,	-- Msshi'fn

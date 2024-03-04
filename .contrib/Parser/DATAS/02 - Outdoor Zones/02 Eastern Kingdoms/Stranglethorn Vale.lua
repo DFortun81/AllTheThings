@@ -2680,7 +2680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
-							["timeline"] = { "removed 3.1.0" },
+							["timeline"] = { REMOVED_3_1_0 },
 							-- #if SEASON_OF_DISCOVERY
 							["OnUpdate"] = [[function(t)
 								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then

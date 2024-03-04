@@ -11,5 +11,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 		}),
+		filter(RECIPES, {
+			tier(WOTLK_TIER, {
+				-- 3.1.0
+				tier(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+					r(62734),	-- Fishing
+				})),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					r(131474),	-- Fishing
+					r(131476),	-- Fishing
+					r(131490),	-- Fishing
+				})),
+			}),
+		}),
 	}),
 }));
