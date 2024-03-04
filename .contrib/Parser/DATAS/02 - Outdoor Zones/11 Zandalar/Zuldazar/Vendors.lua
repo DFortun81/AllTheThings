@@ -984,7 +984,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 					i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
 					}),
 					i(168444, {	-- Churning Blood of the Conquered [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
