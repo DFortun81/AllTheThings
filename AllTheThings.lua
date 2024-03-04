@@ -4926,7 +4926,6 @@ local function CacheInfo(t, field)
 	_t.icon = icon or QUESTION_MARK_ICON;
 	if field then return _t[field]; end
 end
-app.AchievementFilter = 4;
 local fields = {
 	["key"] = function(t)
 		return "achievementID";

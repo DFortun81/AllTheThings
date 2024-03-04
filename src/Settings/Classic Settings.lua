@@ -1029,16 +1029,6 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.CompletedThings(true)
 	end
 	
-	--[[
-	-- This isn't here?
-	if self.AccountWide.Achievements then
-		app.AchievementFilter = 4
-	else
-		app.AchievementFilter = 13
-	end
-	]]--
-	
-	
 	if self:Get("Hide:BoEs") then
 		filterSet.ItemUnbound()
 		filterSet.Bound(true)
