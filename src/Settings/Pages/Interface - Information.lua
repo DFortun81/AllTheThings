@@ -128,7 +128,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 end
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	-- If the item is a recipe, then show which characters know this recipe.
-	if reference.collectible then
+	if reference.collectible and not reference.objectiveID then
 		-- Completed By for Quests
 		local id = reference.questID;
 		if id then
