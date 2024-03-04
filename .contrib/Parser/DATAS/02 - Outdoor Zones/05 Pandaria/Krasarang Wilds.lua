@@ -1521,8 +1521,7 @@ root(ROOTS.Zones, {
 							n(VENDORS, {
 								n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
 									["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
-									["g"] = {
-										MOP_FISHING,
+									["g"] = appendGroups(MOP_FISHING, {
 										i(85500, {	-- Angler's Fishing Raft (TOY!)
 											["cost"] = 8500000,	-- 850g
 										}),
@@ -1548,7 +1547,7 @@ root(ROOTS.Zones, {
 											["cost"] = 12750000,	-- 1,275g
 										}),
 										i(85447),	-- Tiny Goldfish (PET!)
-									},
+									}),
 								}),
 							}),
 						},

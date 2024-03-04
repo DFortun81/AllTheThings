@@ -576,7 +576,8 @@ root(ROOTS.Zones, {
 				}),
 				prof(FISHING, {
 					n(108825, {	-- Conjurer Margoss
-						LEGION_FISHING
+						["coord"] = { 50.0, 1.0, LEGION_DALARAN },
+						["g"] = LEGION_FISHING,
 					}),
 					faction(1975, {	-- Conjurer Margoss
 						["creatureID"] = 108825,
