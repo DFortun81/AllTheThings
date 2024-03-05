@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 from typing import NamedTuple
 
-WORK_DIR = Path(".contrib", "Parser", "DATAS", "00 - Item Database", "Conduits")
+WORK_DIR = Path(".contrib", "Parser", "DATAS", "00 - Item DB", "Conduits")
 
 
 class SpecXClass(NamedTuple):

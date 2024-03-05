@@ -12,7 +12,7 @@ class Conduit(NamedTuple):
     covenant_id: int = 0
 
 
-WORK_DIR = Path(".contrib", "Parser", "DATAS", "00 - Item Database", "Conduits")
+WORK_DIR = Path(".contrib", "Parser", "DATAS", "00 - Item DB", "Conduits")
 
 conduits: dict[int, Conduit] = {}
 with open(Path(WORK_DIR, "soulbindconduititem.csv"), newline="") as csvfile:
