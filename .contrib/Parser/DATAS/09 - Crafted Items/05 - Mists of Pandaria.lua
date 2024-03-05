@@ -556,6 +556,12 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(89992),    -- Schematic: Serpent's Heart Firework
 		}),
 	}),
+	-- #if BEFORE 8.0.1
+	prof(FIRST_AID, {
+		i(72986),	-- Heavy Windwool Bandage
+		i(72985),	-- Windwool Bandage
+	}),
+	-- #endif
 	prof(FISHING, {
 		i(74859),	-- Emperor Salmon
 		i(86542),	-- Flying Tiger Gourami

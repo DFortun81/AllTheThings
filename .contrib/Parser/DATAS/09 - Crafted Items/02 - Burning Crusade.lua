@@ -553,10 +553,12 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(34061),	-- Turbo-Charged Flying Machine (MOUNT!)
 		}),
 	}),
+	-- #if BEFORE 8.0.1
 	prof(FIRST_AID, {
-		i(21990),	-- Netherweave Bandage
 		i(21991),	-- Heavy Netherweave Bandage
+		i(21990),	-- Netherweave Bandage
 	}),
+	-- #endif
 	prof(FISHING, {
 		i(27422),	-- Barbed Gill Trout
 		applyclassicphase(TBC_PHASE_FOUR, i(33823, {["timeline"] = {ADDED_2_3_0}})),	-- Bloodfin Catfish

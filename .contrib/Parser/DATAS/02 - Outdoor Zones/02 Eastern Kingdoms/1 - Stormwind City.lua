@@ -145,6 +145,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 				}),
+				prof(FIRST_AID, {
+					n(56796, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 } }, {	-- Angela Leifeld <Bandage Trainer>
+						["coord"] = { 52.2, 45.4, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_FIRST_AID,
+							-- #if AFTER CATA
+							CATA_FIRST_AID
+							-- #else
+							{}
+							-- #endif
+						),
+					})),
+					n(2327, bubbleDownSelf({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Shaina Fuller <First Aid Trainer>
+						["coord"] = { 42.8, 26.6, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_FIRST_AID,
+							-- #if AFTER CATA
+							CATA_FIRST_AID
+							-- #else
+							{}
+							-- #endif
+						),
+					})),
+				}),
 				prof(FISHING, {
 					n(5493, {	-- Arnold Leland <Fishing Trainer>
 						["coord"] = { 54.8, 69.6, STORMWIND_CITY },

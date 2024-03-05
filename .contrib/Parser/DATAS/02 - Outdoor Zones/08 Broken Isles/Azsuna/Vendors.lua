@@ -69,8 +69,9 @@ root(ROOTS.Zones, {
 						i(136898, {	-- Fledgling Warden Owl (PET!)
 							["cost"] = 5000000,		-- 500g
 						}),
-						i(142333, {	-- Manual: Feathered Luffa
+						i(142333, {	-- Manual: Feathered Luffa (RECIPE!)
 							["cost"] = 6000000,		-- 600g
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142331, {	-- Recipe: Spiced Falcosaur Omelet (RECIPE!)
 							["cost"] = 10000000,	-- 1,000g

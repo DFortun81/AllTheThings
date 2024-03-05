@@ -175,6 +175,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(FIRST_AID, {
+					n(12939, {	-- Doctor Gustaf VanHowzen <Trauma Surgeon>
+						["coord"] = { 67.6, 48.8, DUSTWALLOW_MARSH },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 3.1.0
+						["groups"] = ARTISAN_FIRST_AID,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(1258, {	-- ... and Bugs
 					["qg"] = 4794,	-- Morgan Stern
@@ -2927,9 +2938,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								12938,	-- Injured Alliance Soldier
 							},
 						}),
-						-- #if BEFORE 3.1.0
-						recipe(10846, { ["rank"] = 4 }),	-- First Aid (Artisan)
-						-- #endif
+						recipe(10846, {	-- First Aid (Artisan)
+							["rank"] = 4,
+							["timeline"] = { REMOVED_3_1_0 },
+						}),
 						i(49193, {	-- Alliance Trauma Certification
 							["timeline"] = { "added 3.2.0.10192" },
 						}),
@@ -3309,8 +3321,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.4, 30.4, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16084, {	-- Expert First Aid - Under Wraps
-							["timeline"] = { "removed 3.1.0" },
+						i(16084, {	-- Expert First Aid - Under Wraps (RECIPE!)
+							["timeline"] = { REMOVED_3_1_0 },
 							-- #if SEASON_OF_DISCOVERY
 							["OnUpdate"] = [[function(t)
 								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -3321,11 +3333,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 							["rank"] = 3,
 						}),
-						i(16112, {	-- Manual: Heavy Silk Bandage
-							["timeline"] = { "removed 3.1.0" },
+						i(16112, {	-- Manual: Heavy Silk Bandage (RECIPE!)
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
-						i(16113, {	-- Manual: Mageweave Bandage
-							["timeline"] = { "removed 3.1.0" },
+						i(16113, {	-- Manual: Mageweave Bandage (RECIPE!)
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
 					},
 				}),

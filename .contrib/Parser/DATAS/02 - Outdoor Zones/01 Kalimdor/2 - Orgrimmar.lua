@@ -206,6 +206,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 				}),
+				prof(FIRST_AID, {
+					n(3373, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Arnok <First Aid Trainer>
+						["coord"] = { 34.0, 84.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_FIRST_AID,
+					})),
+					n(45540, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_7_3_5 } }, {	-- Krenk Choplimb <Bandage Trainer>
+						["coord"] = { 37.6, 87.2, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(CLASSIC_FIRST_AID,
+							-- #if AFTER CATA
+							CATA_FIRST_AID
+							-- #else
+							{}
+							-- #endif
+						),
+					})),
+					n(133109, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Mender Jessara <Bandage Trainer>
+						["coord"] = { 38.2, 86.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(CLASSIC_FIRST_AID,
+							-- #if AFTER CATA
+							CATA_FIRST_AID
+							-- #else
+							{}
+							-- #endif
+						),
+					})),
+				}),
 				prof(FISHING, {
 					n(3332, {	-- Lumak <Fishing Trainer>
 						["coord"] = { 66.6, 41.6, ORGRIMMAR },

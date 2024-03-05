@@ -494,10 +494,12 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(23775),	-- Titanium Toolbox*
 		}),
 	}),
+	-- #if BEFORE 8.0.1
 	prof(FIRST_AID, {
 		i(34721),	-- Frostweave Bandage
 		i(34722),	-- Heavy Frostweave Bandage
 	}),
+	-- #endif
 	prof(FISHING, {
 		i(41812),	-- Barrelhead Goby
 		i(41808),	-- Bonescale Snapper

@@ -148,6 +148,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(PROFESSIONS, {
+				prof(FIRST_AID, {
+					n(12920, {	-- Doctor Gregory Victor <Trauma Surgeon>
+						["coord"] = { 73.4, 36.8, ARATHI_HIGHLANDS },
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 3.1.0
+						["groups"] = ARTISAN_FIRST_AID,
+						-- #endif
+					}),
+				}),
 				prof(LEATHERWORKING, {
 					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
 						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
@@ -1421,9 +1430,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								12925,	-- Critically Injured Soldier
 							},
 						}),
-						-- #if BEFORE 3.1.0
-						recipe(10846, { ["rank"] = 4 }),	-- First Aid (Artisan)
-						-- #endif
+						recipe(10846, {	-- First Aid (Artisan)
+							["rank"] = 4,
+							["timeline"] = { REMOVED_3_1_0 },
+						}),
 						i(49192, {	-- Horde Trauma Certification
 							["timeline"] = { "added 3.2.0.10192" },
 						}),
@@ -1857,8 +1867,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 27.0, 58.8, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(16084, {	-- Expert First Aid - Under Wraps
-							["timeline"] = { "removed 3.1.0" },
+						i(16084, {	-- Expert First Aid - Under Wraps (RECIPE!)
+							["timeline"] = { REMOVED_3_1_0 },
 							-- #if SEASON_OF_DISCOVERY
 							["OnUpdate"] = [[function(t)
 								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -1869,11 +1879,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["rank"] = 3,
 						}),
-						i(16112, {	-- Manual: Heavy Silk Bandage
-							["timeline"] = { "removed 3.1.0" },
+						i(16112, {	-- Manual: Heavy Silk Bandage (RECIPE!)
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
-						i(16113, {	-- Manual: Mageweave Bandage
-							["timeline"] = { "removed 3.1.0" },
+						i(16113, {	-- Manual: Mageweave Bandage (RECIPE!)
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
 					},
 				}),

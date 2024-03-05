@@ -1428,6 +1428,12 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_ENCHANTING,
 						}),
 					}),
+					prof(FIRST_AID, {
+						n(28706, {	-- Olisarra the Kind <Bandage Trainer>
+							["coord"] = { 36.8, 37.0, NORTHREND_DALARAN },
+							["groups"] = WRATH_FIRST_AID,
+						}),
+					}),
 					prof(FISHING, {
 						n(28742, {	-- Marcia Chase <Fishing Trainer & Supplies>
 							["coord"] = { 52.6, 65.6, NORTHREND_DALARAN },

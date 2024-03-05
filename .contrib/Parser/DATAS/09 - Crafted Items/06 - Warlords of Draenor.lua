@@ -406,6 +406,14 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(202213, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
 		}),
 	}),
+	-- #if BEFORE 8.0.1
+	prof(FIRST_AID, {
+		i(111603),	-- Antiseptic Bandage
+		i(116979),	-- Blackwater Anti-Venom
+		i(116981),	-- Fire Ammonite Oil
+		i(109223),	-- Healing Tonic
+	}),
+	-- #endif
 	prof(FISHING, {
 		DRAENOR_FISHING,
 		i(110508),	-- "Fragrant" Pheromone Fish

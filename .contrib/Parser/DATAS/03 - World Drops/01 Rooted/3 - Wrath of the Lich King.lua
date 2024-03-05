@@ -1121,9 +1121,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(43508),	-- Recipe: Last Week's Mammoth (RECIPE!)
 			i(43507),	-- Recipe: Tasty Cupcake (RECIPE!)
 		}),
-		-- #if BEFORE 8.0.1.10000
+		-- #if BEFORE 8.0.1
 		prof(FIRST_AID, {
-			i(39152),	-- Manual: Heavy Frostweave Bandage
+			i(39152),	-- Manual: Heavy Frostweave Bandage (RECIPE!)
 		}),
 		-- #endif
 		prof(INSCRIPTION, {
@@ -1186,8 +1186,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(43876, {	-- A Guide to Northern Cloth Scavenging
 				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some point
 			}),
-			-- #if AFTER 8.0.1.10000
-			i(39152),	-- Manual: Heavy Frostweave Bandage
+			-- #if AFTER 8.0.1
+			i(39152),	-- Manual: Heavy Frostweave Bandage (RECIPE!)
 			-- #endif
 			i(42173),	-- Pattern: Blue Lumberjack Shirt
 			i(42176),	-- Pattern: Blue Workman's Shirt

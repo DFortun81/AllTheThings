@@ -332,6 +332,14 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			},
 		},
 	}),
+	-- #if BEFORE 8.0.1
+	prof(FIRST_AID, {
+		i(142332, {["timeline"] = {ADDED_7_1_0}}),	-- Feathered Luffa
+		i(133940),	-- Silkweave Bandage
+		i(133942),	-- Silkweave Splint
+		i(136653),	-- Silvery Salve
+	}),
+	-- #endif
 	prof(FISHING, {
 		i(133742),	-- Ancient Black Barracuda
 		i(133733),	-- Ancient Highmountain Salmon

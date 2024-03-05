@@ -912,5 +912,6 @@ root(ROOTS.WorldDrops, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3
 		i(114984),		-- Mysterious Satchel
 		i(116173),		-- Tattered Frostwolf Shroud
 		DRAENOR_COOKING,
+		DRAENOR_FIRST_AID,
 	}),
 })));

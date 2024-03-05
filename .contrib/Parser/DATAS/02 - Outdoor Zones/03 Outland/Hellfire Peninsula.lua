@@ -395,6 +395,17 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_BLACKSMITHING,
 					}),
+					prof(FIRST_AID, {
+						["crs"] = {
+							18990,	-- Burko <Bandage Trainer> (A)
+							18991,	-- Aresella <Bandage Trainer> (H)
+						},
+						["coords"] = {
+							{ 22.4, 39.2, HELLFIRE_PENINSULA },
+							{ 26.2, 62.0, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_FIRST_AID,
+					}),
 					prof(FISHING, {
 						i(34867),	-- Monstrous Felblood Snapper
 					}),
@@ -3085,10 +3096,10 @@ root(ROOTS.Zones, {
 					n(18991, {	-- Aresella <Medic>
 						["coord"] = { 26.2, 62.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["groups"] = sharedData({["timeline"] = { "added 2.2.0.7272", "removed 8.0"}},{
-							i(21993),	-- Manual: Heavy Netherweave Bandage
-							i(21992),	-- Manual: Netherweave Bandage
-							i(22012),	-- Master First Aid - Doctor in the House
+						["groups"] = sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_3_1_0 } }, {
+							i(21993),	-- Manual: Heavy Netherweave Bandage (RECIPE!)
+							i(21992),	-- Manual: Netherweave Bandage (RECIPE!)
+							i(22012),	-- Master First Aid - Doctor in the House (RECIPE!)
 						}),
 					}),
 					n(18267, {	-- Battlecryer Blackeye
@@ -3148,10 +3159,10 @@ root(ROOTS.Zones, {
 					n(18990, {	-- Burko <Medic>
 						["coord"] = { 22.4, 39.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = sharedData({["timeline"] = { "added 2.2.0.7272", "removed 8.0"}},{
-							i(21993),	-- Manual: Heavy Netherweave Bandage
-							i(21992),	-- Manual: Netherweave Bandage
-							i(22012),	-- Master First Aid - Doctor in the House
+						["groups"] = sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_3_1_0 } }, {
+							i(21993),	-- Manual: Heavy Netherweave Bandage (RECIPE!)
+							i(21992),	-- Manual: Netherweave Bandage (RECIPE!)
+							i(22012),	-- Master First Aid - Doctor in the House (RECIPE!)
 						}),
 					}),
 					n(16585, {	-- Cookie One-Eye <Food & Drink>

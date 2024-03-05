@@ -78,13 +78,6 @@ root(ROOTS.NeverImplemented, {
 				})),
 			}),
 		}),
-		prof(FIRST_AID, {
-			tier(CLASSIC_TIER, {
-				i(16085),	-- Artisan First Aid - Heal Thyself
-				i(8547),	-- Formula: Powerful Smelling Salts
-				i(23689),	-- Manual: Crystal Infused Bandage
-			}),
-		}),
 		prof(FISHING, {
 			tier(CLASSIC_TIER, {
 				i(16082),	-- Artisan Fishing - The Way of the Lure

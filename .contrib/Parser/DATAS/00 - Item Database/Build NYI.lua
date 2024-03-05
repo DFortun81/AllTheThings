@@ -32,7 +32,8 @@ root(ROOTS.NeverImplemented, {
 		prof(COOKING),				-- completed up to 10.2.5
 		prof(ENCHANTING),			-- completed up to 10.2.5
 		prof(ENGINEERING),
-		prof(FISHING),
+		prof(FIRST_AID),			-- completed up to 10.2.5
+		prof(FISHING),				-- completed up to 10.2.5
 		prof(HERBALISM),			-- completed up to 10.2.5
 		prof(INSCRIPTION),
 		prof(JEWELCRAFTING),

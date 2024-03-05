@@ -648,6 +648,17 @@ root(ROOTS.Zones, {
 							["g"] = MOP_ENCHANTING,
 						}),
 					}),
+					prof(FIRST_AID, {
+						["crs"] = {
+							65983,	-- Soraka <Bandage Trainer> (A)
+							66222,	-- Elder Muur <Bandage Trainer> (H)
+						},
+						["coords"] = {
+							{ 45.6, 85.8, THE_JADE_FOREST },
+							{ 28.2, 15.2, THE_JADE_FOREST },
+						},
+						["groups"] = MOP_FIRST_AID,
+					}),
 					prof(HERBALISM, {
 						n(66980, {	-- Grower Miao <Herbalism Trainer>
 							["races"] = HORDE_ONLY,

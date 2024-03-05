@@ -353,6 +353,14 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(59599),	-- Volatile Thunderstick*
 		}),
 	}),
+	-- #if BEFORE 8.0.1
+	prof(FIRST_AID, {
+		i(53051),	-- Dense Embersilk Bandage
+		i(53049),	-- Embersilk Bandage
+		i(53051),	-- Dense Embersilk Bandage
+		i(53050),	-- Heavy Embersilk Bandage
+	}),
+	-- #endif
 	prof(FISHING, {
 		i(53065),	-- Albino Cavefish
 		i(53071),	-- Algaefin Rockfish

@@ -574,6 +574,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				prof(FIRST_AID, {
+					n(93529, {	-- Olisarra the Kind <Bandage Trainer>
+						["coord"] = { 36.2, 37.6, LEGION_DALARAN },
+						["groups"] = LEGION_FIRST_AID,
+					}),
+				}),
 				prof(FISHING, {
 					n(108825, {	-- Conjurer Margoss
 						["coord"] = { 50.0, 1.0, LEGION_DALARAN },

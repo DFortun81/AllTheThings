@@ -1183,21 +1183,23 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10498),	-- Gyromatic Micro-Adjustor
 		}),
 	}),
+	-- #if BEFORE 8.0.1
 	prof(FIRST_AID, {
-		i(1251),	-- Linen Bandage
-		i(2581),	-- Heavy Linen Bandage
 		i(6452),	-- Anti-Venom
-		i(3530),	-- Wool Bandage
-		i(3531),	-- Heavy Wool Bandage
-		i(6453),	-- Strong Anti-Venom
-		i(6450),	-- Silk Bandage
-		i(6451),	-- Heavy Silk Bandage
-		i(8544),	-- Mageweave Bandage
+		i(2581),	-- Heavy Linen Bandage
 		i(8545),	-- Heavy Mageweave Bandage
-		i(14529),	-- Runecloth Bandage
 		i(14530),	-- Heavy Runecloth Bandage
+		i(6451),	-- Heavy Silk Bandage
+		i(3531),	-- Heavy Wool Bandage
+		i(1251),	-- Linen Bandage
+		i(8544),	-- Mageweave Bandage
 		i(19440),	-- Powerful Anti-Venom
+		i(14529),	-- Runecloth Bandage
+		i(6450),	-- Silk Bandage
+		i(6453),	-- Strong Anti-Venom
+		i(3530),	-- Wool Bandage
 	}),
+	-- #endif
 	prof(FISHING, {
 		filter(ONE_HANDED_MACES, {
 			i(6360, {	-- Steelscale Crushfish

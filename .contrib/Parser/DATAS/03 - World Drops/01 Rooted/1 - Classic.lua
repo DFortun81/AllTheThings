@@ -3459,7 +3459,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		}),
 		-- #endif
 		prof(ALCHEMY, {
-			i(6454, {	-- Manual: Strong Anti-Venom
+			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
 				["timeline"] = { ADDED_8_0_1 },
 			}),
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
@@ -3649,7 +3649,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			}),
 		}),
 		prof(FIRST_AID, {
-			i(6454, {	-- Manual: Strong Anti-Venom
+			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
 				["timeline"] = { REMOVED_8_0_1 },
 			}),
 		}),
