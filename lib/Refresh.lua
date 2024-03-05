@@ -57,8 +57,8 @@ local function CacheAccountWideCompleteViaAchievement(accountWideData)
 		collected = select(4, GetAchievementInfo(achievementQuests[1]));
 		for _,questID in ipairs(achievementQuests[2]) do
 			if collected then
-				-- Mark the quest as completed for the Account
-				acctQuests[questID] = 1;
+				-- Mark the quest as 'completed' for the Account
+				acctQuests[questID] = 2;
 				if not oneTimeQuests[questID] and IsQuestFlaggedCompleted(questID) then
 					-- this once-per-account quest only counts for a specific character
 					oneTimeQuests[questID] = app.GUID;

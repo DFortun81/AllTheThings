@@ -3914,7 +3914,7 @@ end
 -- Synchronization Functions
 (function()
 local outgoing,incoming,queue,active = {},{},{};
-local whiteListedFields = { --[["Achievements",]] "AzeriteEssenceRanks", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "GarrisonBuildings", "Quests", "Spells", "Titles" };
+local whiteListedFields = { --[["Achievements",]] "AzeriteEssenceRanks", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "GarrisonBuildings", --[["Quests",]] "Spells", "Titles" };
 app.CharacterSyncTables = whiteListedFields;
 local function splittoarray(sep, inputstr)
 	local t = {};
@@ -4027,10 +4027,11 @@ function app:IsAccountLinked(sender)
 	return AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[("-"):split(sender)];
 end
 local function DefaultSyncCharacterData(allCharacters, key)
+	local characterData
 	local data = ATTAccountWideData[key];
 	wipe(data);
 	for guid,character in pairs(allCharacters) do
-		local characterData = character[key];
+		characterData = character[key];
 		if characterData then
 			for index,_ in pairs(characterData) do
 				data[index] = 1;
@@ -4039,11 +4040,12 @@ local function DefaultSyncCharacterData(allCharacters, key)
 	end
 end
 local function RankSyncCharacterData(allCharacters, key)
+	local characterData
 	local data = ATTAccountWideData[key];
 	wipe(data);
 	local oldRank;
 	for guid,character in pairs(allCharacters) do
-		local characterData = character[key];
+		characterData = character[key];
 		if characterData then
 			for index,rank in pairs(characterData) do
 				oldRank = data[index];
@@ -4054,8 +4056,30 @@ local function RankSyncCharacterData(allCharacters, key)
 		end
 	end
 end
+local function SyncCharacterQuestData(allCharacters, key)
+	local characterData
+	local data = ATTAccountWideData[key];
+	-- don't completely wipe quest data, some questID are marked as 'complete' due to other restrictions on the account
+	-- so we want to maintain those even though no character actually has it completed
+	-- TODO: perhaps in the future we can instead treat these quests as 'uncollectible' for the account rather than 'complete'
+	for questID,completion in pairs(data) do
+		if completion ~= 2 then
+			data[questID] = nil
+		-- else app.PrintDebug("not-reset",questID,completion)
+		end
+	end
+	for guid,character in pairs(allCharacters) do
+		characterData = character[key];
+		if characterData then
+			for index,_ in pairs(characterData) do
+				data[index] = 1;
+			end
+		end
+	end
+end
 local SyncFunctions = setmetatable({
 	AzeriteEssenceRanks = RankSyncCharacterData,
+	Quests = SyncCharacterQuestData,
 }, { __index = function(t, key)
 	if contains(whiteListedFields, key) then
 		return DefaultSyncCharacterData
