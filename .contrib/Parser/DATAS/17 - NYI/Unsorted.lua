@@ -2557,7 +2557,6 @@ root(ROOTS.Unsorted, {
 			i(178152),	-- <Broker Adjective> Return Beacon
 			filter(MISC, {
 				i(183902),	-- A Faintly Glowing Seed
-				i(183616),	-- Accursed Keepsake
 				i(177036),	-- Aquatic Enticer
 				i(175923),	-- Ardenwood
 				i(178924),	-- Ash Clod
@@ -3421,7 +3420,6 @@ root(ROOTS.Unsorted, {
 				i(190971),	-- Terrace of Formation Report
 				i(187321),	-- Thermic Demolitor
 				i(188165),	-- Waterfall Water
-				i(187620),	-- Winding Seed
 				i(188192),	-- Worn Stone Fragment
 			}),
 		})),

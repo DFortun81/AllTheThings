@@ -211,6 +211,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 29.3, 15.3, 2027 },
 					["g"] = {
 						i(187619),	-- Winding Seed (QI!)
+						i(187620),	-- Winding Seed (QI!)
 					},
 				}),
 				q(64648, {	-- Reap What We Have Sown

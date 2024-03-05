@@ -422,6 +422,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					-- i(166802),	-- Plaguebringer's Spellblade
 				},
 			}),
+			n(COMMON_BOSS_DROPS, {
+				i(183616),	-- Accursed Keepsake
+			}),
 			-- rares spawn every 20 minutes
 			n(174065, {	-- Blood Queen Lana'thel (6)
 				["coord"] = { 49.6, 32.3, ICECROWN },
