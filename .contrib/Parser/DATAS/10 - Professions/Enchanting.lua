@@ -506,6 +506,9 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(193867),	-- Enchanted Relics (QI!)
+				},
 			}),
 			q(66884, {	-- Fireproof Gear
 				["description"] = "Requires 25 Skill.",

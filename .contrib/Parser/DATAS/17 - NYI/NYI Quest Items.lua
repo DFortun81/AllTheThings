@@ -201,7 +201,6 @@ root(ROOTS.NeverImplemented, {
 				i(194428),	-- Elemental Soul Cage NYI
 				i(192558),	-- Emerald Tear
 				i(191117),	-- Enchanted Claws
-				i(193867),	-- Enchanted Relics
 				i(193858),	-- Enchanted Tools
 				i(191551),	-- Encrusted Key [DNT]
 				i(191669),	-- Engraved Tusk

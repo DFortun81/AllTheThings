@@ -894,6 +894,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(204801),	-- Gelcap Spores (QI!)
+				},
 			}),
 			-- Patch 10.2.0
 			q(77933, {	-- Bubbling Discoveries

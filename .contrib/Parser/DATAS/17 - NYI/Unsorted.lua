@@ -1363,7 +1363,6 @@ root(ROOTS.Unsorted, {
 			i(203394),	-- Elementally Charged Orb
 			i(204433),	-- Everburning Fireshard
 			i(203385),	-- Flamesight Rune
-			i(204801),	-- Gelcap Spores
 			i(205169),	-- Glimmer Mushroom
 			i(205179),	-- Glimmerfish Scale
 			i(204067),	-- Glowing Crystal
