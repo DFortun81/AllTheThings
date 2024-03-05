@@ -2664,7 +2664,8 @@ namespace ATT
                                 }
 
                                 // Mark this as Never Implemented
-                                removed = 1;
+                                if (!ProcessingUnsortedCategory)
+                                    removed = 1;
                                 break;
                             }
                         case "added":
