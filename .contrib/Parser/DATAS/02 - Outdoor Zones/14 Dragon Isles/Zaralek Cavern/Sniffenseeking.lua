@@ -85,6 +85,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75397, {	-- Those Rascally Worms
 						["coord"] = { 57.3, 51.4, ZARALEK_CAVERN },
+						["g"] = {
+							i(202180),	-- Pipsee Cheese Snack (QI!)
+						},
 					}),
 					q(75390, {	-- Vertical Anomaly
 						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },

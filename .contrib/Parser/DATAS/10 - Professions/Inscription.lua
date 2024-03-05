@@ -3980,6 +3980,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(204435),	-- Obsidian Tablet (QI!)
+				},
 			}),
 			q(75573, {	-- Proclamation Reclamation
 				["provider"] = { "n", 203516 },	-- Kayann

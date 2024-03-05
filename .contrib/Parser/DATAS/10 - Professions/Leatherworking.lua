@@ -1109,6 +1109,9 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(204792),	-- Nightlight Conkerbell Sample (QI!)
+				},
 			}),
 			q(75368, {	-- Stones and Scales
 				["provider"] = { "n", 203516 },	-- Kayann

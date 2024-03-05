@@ -144,6 +144,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204607),	-- Bestowed Crushers
 						i(204583),	-- Endowed Mitts
 						i(204591),	-- Inherited Gloves
+						i(204713),	-- Sundered Flame Expedition Notes (QI!)
 					},
 				}),
 				q(72958, {	-- Save-A-Mole
@@ -226,7 +227,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204602),	-- Bequeathed Spaulders
 						i(204610),	-- Bestowed Pauldrons
 						i(204586),	-- Endowed Mantle
+						i(204694),	-- Greater Flamesight Rune (QI!)
 						i(204594),	-- Inherited Epaulets
+						i(203385),	-- Flamesight Rune (QI!)
 					},
 				}),
 				q(72910, {	-- Know Thy Enemy
@@ -244,6 +247,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204628),	-- Scaled Titan's Tooth
 						i(204624),	-- Staff of the Unlit Sky
 						i(204459),	-- Wand of Shifting Stone
+						i(203454),	-- Zaqali Equipment (QI!)
 					},
 				}),
 				q(72909, {	-- Legends of the Zaqali
@@ -268,6 +272,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72912 },	-- Consequences
 					["provider"] = { "n", 199863 },	-- Ebyssian
 					["coord"] = { 38.2, 48.5, ZARALEK_CAVERN },
+					["g"] = {
+						i(203653),	-- Vacant Elemental Core (QI!)
+						i(203654),	-- Zaqali Flame Totem (QI!)
+					},
 				}),
 				q(72914, {	-- Rushing Quality
 					["sourceQuests"] = { 72912 },	-- Consequences
@@ -307,6 +315,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 					["provider"] = { "n", 201647 },	-- Sabellian
 					["coord"] = { 29.3, 54.6, ZARALEK_CAVERN },
+					["g"] = {
+						i(204085),	-- Zaqali Dragonslayer's Spear (QI!)
+					},
 				}),
 				q(72917, {	-- From Hell's Heart
 					["sourceQuests"] = { 74494 },	-- A Scale for a Scale
@@ -613,6 +624,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
 				["g"] = {
 					i(205980),	-- Snail Lasso
+					i(203442),	-- Snail Slime (QI!)
 				},
 			}),
 			q(72879, {	-- Smells like Kith Spirit
@@ -730,6 +742,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
 				["provider"] = { "n", 201098 },	-- Brogg the Beast
 				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
+				["g"] = {
+					i(204803),	-- Echoed Lurker Flesh (QI!)
+					i(205169),	-- Glimmer Mushroom (QI!)
+				},
 			}),
 			q(73710, {	-- Rock By Rock
 				["sourceQuests"] = {
@@ -752,16 +768,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200291 },	-- Rupert, the Gentleman Elemental
 				["coord"] = { 40.1, 68.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(203012),	-- Viridian Heartcrystal (QI!)
+				},
 			}),
 			q(73036, {	-- Medicinal Fungi
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200298 },	-- Veritistrasz
 				["coord"] = { 40.2, 68.3, ZARALEK_CAVERN },
+				["g"] = {
+					i(202873),	-- Drooping Mushroom Cutting (QI!)
+				},
 			}),
 			q(75440, {	-- Satiating Sharpbeak
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200953 },	-- Earthmender Narvra
 				["coord"] = { 40.1, 68.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(205217),	-- Sharpbeak's Feed (QI!)
+				},
 			}),
 			q(73046, {	-- Cavernous Capers
 				["sourceQuests"] = {
@@ -777,7 +802,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200290 },	-- Voraxian
 				["coord"] = { 53.6, 79.5, ZARALEK_CAVERN },
 				["g"] = {
-					i(203395),	-- Research Journal
+					i(203394),	-- Elementally Charged Orb (QI!)
+					i(203395),	-- Research Journal (QI!)
+					i(203396),	-- Displayed Armor Piece (QI!)
 				},
 			}),
 			q(73040, {	-- Bringing Disorder to Order
@@ -864,6 +891,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 59.4, 63.8, ZARALEK_CAVERN },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
+				["g"] = {
+					i(204088),	-- Quartzite Spore Bile (QI!)
+					i(203393),	-- Spongy Loamshroom (QI!)
+				},
 			}),
 			q(73081, {	-- Stress Fractures
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes

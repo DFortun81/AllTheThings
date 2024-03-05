@@ -31,6 +31,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 73076 },	-- Return to the Reach
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202868),	-- Mender's Signal (QI!)
+					},
 				}),
 				q(74847, {	-- Emberthal Awaits
 					["timeline"] = { REMOVED_10_1_0 },
@@ -298,6 +301,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73189, {	-- Creche Cache
 				["provider"] = { "n", 200727 },	-- Volethi
 				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202619),	-- Mender Supplies (QI!)
+					i(202620),	-- Toxin Antidote (QI!)
+				},
 			}),
 			q(73139, {	-- Deep Sea Supplies
 				["provider"] = { "n", 200558 },	-- Tukkaraq
@@ -320,6 +327,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73178, {	-- Hands Off Our Booty!
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202647),	-- Stolen Goods (QI!)
+				},
 			}),
 			q(73191, {	-- Snake Wrangling
 				["provider"] = { "n", 201291 },	-- Cataloger Coralie

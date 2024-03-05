@@ -970,13 +970,7 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(215160),	-- The Big Dig Rig
 			-- Quest Items
-			i(212371),	-- Azerothian Archivist Initiation Token
 			i(211266),	-- Archivist's Fire Totem
-			------ Love in the Air ------
-			-- Quest Items
-			i(210720),	-- Delicate Flower
-			i(210721),	-- Fanciful Flower
-
 			------ Hearthstone ------
 			-- Misc
 			i(212157),	-- An Invitation
@@ -1166,9 +1160,10 @@ root(ROOTS.Unsorted, {
 			i(210028),	-- Extracted Ashen Dust
 			i(210223),	-- Unstable Element
 			i(210240),	-- Stabilized Element
-			i(190875),	-- Chilled Touch of the Condemned
 			i(213580),	-- Heart-Lesion Helm
 			i(213581),	-- Heart-Lesion Helm
+			-- Trading Post
+			i(190875),	-- Chilled Touch of the Condemned
 			filter(MISC, {
 				------ Tame Hunter Pets ------
 				-- Check if These pop any QuestIDs we can source them properly
@@ -1354,37 +1349,11 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			i(203458),	-- Black Dragonscale Robes
-			i(203396),	-- Displayed Armor Piece
-			i(203453),	-- Dragonbone Totem
-			i(203455),	-- Draketooth Fetish
-			i(202873),	-- Drooping Mushroom Cutting
-			i(204803),	-- Echoed Lurker Flesh
-			i(203394),	-- Elementally Charged Orb
-			i(204433),	-- Everburning Fireshard
-			i(203385),	-- Flamesight Rune
-			i(205169),	-- Glimmer Mushroom
-			i(205179),	-- Glimmerfish Scale
-			i(204067),	-- Glowing Crystal
-			i(204694),	-- Greater Flamesight Rune
-			i(204070),	-- Magma Crystal
-			i(204792),	-- Nightlight Conkerbell Sample
-			i(203456),	-- Obsidian Prayer Beads
-			i(204435),	-- Obsidian Tablet
-			i(204088),	-- Quartzite Spore Bile
-			i(205217),	-- Sharpbeak's Feed
-			i(203442),	-- Snail Slime
-			i(203393),	-- Spongy Loamshroom
-			i(204273),	-- Stolen Supplies
-			i(204069),	-- Sulfuric Crystal
-			i(204713),	-- Sundered Flame Expedition Notes
-			i(204817),	-- Underlight Cocoon Fibers
-			i(203653),	-- Vacant Elemental Core
-			i(203012),	-- Viridian Heartcrystal
-			i(203457),	-- Volcanic Herb Sachet
-			i(204085),	-- Zaqali Dragonslayer's Spear
-			i(203454),	-- Zaqali Equipment
-			i(203654),	-- Zaqali Flame Totem
+			i(203458),	-- Black Dragonscale Robes (QI!)
+			i(203453),	-- Dragonbone Totem (QI!)
+			i(203455),	-- Draketooth Fetish (QI!)
+			i(203456),	-- Obsidian Prayer Beads (QI!)
+			i(203457),	-- Volcanic Herb Sachet (QI!)
 			n(QUESTS, {
 				-- 10.1.0.48480
 				q(71053),	-- Hermit Kill Quest
@@ -1526,11 +1495,6 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
-			i(202619),	-- Mender Supplies
-			i(202868),	-- Mender's Signal
-			i(202180),	-- Pipsee Cheese Snack
-			i(202647),	-- Stolen Goods
-			i(202620),	-- Toxin Antidote
 			n(QUESTS, {
 				-- 10.0.7.47910
 				q(72425),	--
@@ -1745,8 +1709,6 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
-			i(191552),	-- Expedition Metal Detector
-			i(191421),	-- Rudimentary Magical Lockpick
 			n(QUESTS, {
 				-- 10.0.0.44649
 				q(63520),	-- Winging It

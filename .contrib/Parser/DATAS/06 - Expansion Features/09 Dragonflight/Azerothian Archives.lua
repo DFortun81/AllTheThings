@@ -301,6 +301,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(208451, {	-- Archivist's Buckled Cap
 							["provider"] = { "i", 212371 },	-- Azerothian Archivist Initiation Token
 						}),
+						i(212371),	-- Azerothian Archivist Initiation Token (QI!)
 					},
 				}),
 				q(77483, {	-- Technoscrying: Dragonskull Island

@@ -968,6 +968,7 @@ root(ROOTS.NeverImplemented, {
 				i(193659),	-- Ever-Decaying Spore
 				i(198723),	-- Expedition Binoculars (NYI)
 				i(192476),	-- Expedition Bullwhip
+				i(191552),	-- Expedition Metal Detector
 				i(198724),	-- Expedition Telescope (NYI)
 				i(199904),	-- Extraction: Awakened Air
 				i(199905),	-- Extraction: Awakened Earth
@@ -1031,6 +1032,7 @@ root(ROOTS.NeverImplemented, {
 				i(190319),	-- Resourceful!
 				i(191861),	-- Rocdrop Carapace
 				i(191864),	-- Rocdrop Pudgepart
+				i(191421),	-- Rudimentary Magical Lockpick
 				i(194025),	-- Runebound Parchment: Bottom Half
 				i(194024),	-- Runebound Parchment: Top Half
 				i(194075),	-- Sacrilegious Spear

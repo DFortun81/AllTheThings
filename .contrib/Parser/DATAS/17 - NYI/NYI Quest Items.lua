@@ -363,7 +363,9 @@ root(ROOTS.NeverImplemented, {
 
 			-- 10.2.5
 			tier(DF_TIER, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(210720),	-- Delicate Flower
 				i(212608),	-- Duck Potion
+				i(210721),	-- Fanciful Flower
 			})),
 		}),
 	}),

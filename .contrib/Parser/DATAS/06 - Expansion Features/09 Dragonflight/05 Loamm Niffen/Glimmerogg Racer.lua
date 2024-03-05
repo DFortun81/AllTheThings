@@ -74,8 +74,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(74516),	-- A Snail's Pace
 				q(74517),	-- All Terrain Snail
 				q(74519),	-- Good for Goo
-				q(74520),	-- Less Cargo
-				q(74518),	-- Resistance Training
+				q(74520, {	-- Less Cargo
+					i(204273),	-- Stolen Supplies (QI!)
+				}),
+				q(74518, {	-- Resistance Training
+					i(204067),	-- Glowing Crystal (QI!)
+					i(204070),	-- Magma Crystal (QI!)
+					i(204069),	-- Sulfuric Crystal (QI!)
+				}),
 				q(74515),	-- Snail Mail
 				q(74514, {	-- The Slowest Fan Club
 					i(204178),	-- Snailcatcher Net

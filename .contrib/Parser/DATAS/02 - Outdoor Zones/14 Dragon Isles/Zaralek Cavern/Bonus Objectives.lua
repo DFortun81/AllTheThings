@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(75611, {	-- Glimmerfish Before It's Gone
 					["coord"] = { 43.8, 69.0, ZARALEK_CAVERN },
+					["g"] = {
+						i(205179),	-- Glimmerfish Scale (QI!)
+					},
 				}),
 				q(75478, {	-- Hungry Hungry Hydra
 					["coord"] = { 46.8, 23.9, ZARALEK_CAVERN },

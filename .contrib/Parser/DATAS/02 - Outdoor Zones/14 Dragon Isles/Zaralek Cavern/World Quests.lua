@@ -59,6 +59,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75661, {  -- Curative Crystalline Collection
 						["coord"] = { 39.5, 74.3, ZARALEK_CAVERN },
+						["g"] = {
+							i(203012),	-- Viridian Heartcrystal (QI!)
+						},
 					}),
 					q(75346, {	-- Data Gathering
 						["coord"] = { 60.5, 69.4, ZARALEK_CAVERN },
