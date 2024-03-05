@@ -965,6 +965,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(70913, {	-- To Bear Our Mantle
 					["provider"] = { "n", 195770 },	-- Armorsmith Terisk
 					["coord"] = { 36.0, 49.7, VALDRAKKEN },
+					["lockCriteria"] = { 5,
+						"sourceID", 182182,	-- Amber Jeweled Shoulderpads
+						"sourceID", 182181,	-- Azure Jeweled Shoulderpads
+						"sourceID", 182183,	-- Emerald Jeweled Shoulderpads
+						"sourceID", 182180,	-- Obsidian Jeweled Shoulderpads
+						"sourceID", 182184,	-- Ruby Jeweled Shoulderpads
+					},
 					["g"] = {
 						i(199662),	-- Amber Jeweled Shoulderpads
 						i(199661),	-- Azure Jeweled Shoulderpads

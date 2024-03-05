@@ -1070,9 +1070,7 @@ local criteriaFuncs = {
         return app.CurrentCharacter.Spells[spellID] or app.CurrentCharacter.ActiveSkills[spellID];
     end,
 	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL or "Learned Spell/Mount/Recipe",
-    text_spellID = function(spellID)
-        return app.GetSpellName(spellID);
-    end,
+    text_spellID = app.GetSpellName,
 
     factionID = function(v)
 		-- v = factionID.standingRequiredToLock
@@ -1089,6 +1087,15 @@ local criteriaFuncs = {
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
 		local name = GetFactionInfoByID(factionID) or "#"..(factionID or "??");
         return (L.LOCK_CRITERIA_FACTION_FORMAT or "%s with %s (Current: %s)"):format(app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
+    end,
+
+    sourceID = function(sourceID)
+		return app.IsAccountCached("Sources", sourceID)
+	end,
+	label_sourceID = L.LOCK_CRITERIA_SOURCE_LABEL or "Known Appearance",
+    text_sourceID = function(sourceID)
+		local group = app.SearchForObject("sourceID", sourceID, "field") or app.CreateItemSource(sourceID)
+        return group.link or group.text or RETRIEVING_DATA;
     end,
 };
 local function IsGroupLocked(t)
