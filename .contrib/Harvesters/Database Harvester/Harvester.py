@@ -116,7 +116,6 @@ def build_profession_dict() -> dict[str, list[str]]:
         profession_dict[value[0]] = [key]
     profession_dict["Other"] = get_other_skilllines()
     profession_dict["Runeforging"] = ["776", "960"]
-    profession_dict["Lockpicking"] = ["181", "242", "633"]
     return profession_dict
 
 
@@ -196,9 +195,8 @@ def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipe
     itemdb_list = list[str]()
     itemdb_path = Path(
         DATAS_FOLDER,
-        "00 - Item Database",
-        "ProfessionDB",
-        f"{profession}ItemDB.lua",
+        "00 - ProfessionDB",
+        f"{profession}.lua",
     )
     try:
         with open(itemdb_path) as itemdb_file:
@@ -213,7 +211,7 @@ def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipe
             difference = remove_empty_builds(difference)
             return difference
     except FileNotFoundError:
-        print(f"This {profession} has no ItemDB.lua")
+        print(f"This {profession} has no ItemDB")
         return []
 
 
@@ -250,7 +248,7 @@ def create_missing_recipes() -> None:
     missing_path_dict: dict[str, Path] = {
         profession: Path(
             DATAS_FOLDER,
-            "00 - MissingIDs",
+            "00 - Missing DB",
             "Professions",
             f"{profession}.txt",
         )
@@ -270,10 +268,10 @@ def create_missing_recipes() -> None:
             else:
                 missing_file.write("Good Work! Nothing to do here!")
             if (difference_db := get_itemdb_difference(profession, raw_ids, excluded_ids)):
-                missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
+                missing_file.write(f"\n\n\n\nMissing in {profession}.lua\n\n")
                 missing_file.writelines(difference_db)
             else:
-                missing_file.write(f"\n\nNothing is Missing in {profession}ItemDB.lua! Good Work!")
+                missing_file.write(f"\n\nNothing is Missing in {profession}.lua! Good Work!")
         if not difference and not difference_db and missing_path_dict[profession].exists():
             missing_path_dict[profession].unlink()
     return
@@ -288,7 +286,7 @@ def create_missing_file(thing: type[Thing]) -> None:
         return
     missing_path = Path(
         DATAS_FOLDER,
-        "00 - MissingIDs",
+        "00 - Missing DB",
         f"Missing{thing.__name__}.txt",
     )
     with open(missing_path, "w") as missing_file:
@@ -328,7 +326,7 @@ def post_process_recipes() -> None:
     missing_path_dict: dict[str, Path] = {
         profession: Path(
             DATAS_FOLDER,
-            "00 - MissingIDs",
+            "00 - Missing DB",
             "Professions",
             f"{profession}.txt",
         )
@@ -363,7 +361,7 @@ def post_process(thing: type[Thing]) -> None:
         return
     missing_path = Path(
         DATAS_FOLDER,
-        "00 - MissingIDs",
+        "00 - Missing DB",
         f"Missing{thing.__name__}.txt",
     )
     if not missing_path.exists():

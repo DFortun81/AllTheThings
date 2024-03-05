@@ -3,7 +3,6 @@
 26@@@Combat Maneuvers
 38@@@Street Fighting
 39@@@Deception
-40@@@Poisons
 43@@@Swords
 44@@@Axes
 45@@@Bows
@@ -54,6 +53,7 @@
 172@@@Two-Handed Axes
 173@@@Daggers
 176@@@Thrown
+181@@@Lockpicking
 183@@@GENERIC (DND)
 184@@@Holy Strikes
 188@@@Pet - Imp
@@ -91,6 +91,7 @@
 238@@@Pick Pockets
 239@@@Stealth
 241@@@Disarm Traps
+242@@@Lockpicking
 243@@@Stances
 244@@@Shouts
 245@@@Advanced Combat
@@ -173,6 +174,7 @@
 218@@@Pet - Tallstrider
 236@@@Pet - Scorpid
 613@@@Discipline
+633@@@Lockpicking
 653@@@Pet - Bat
 654@@@Pet - Hyena
 655@@@Pet - Owl
