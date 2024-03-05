@@ -1531,16 +1531,6 @@ root(ROOTS.Unsorted, {
 			i(202180),	-- Pipsee Cheese Snack
 			i(202647),	-- Stolen Goods
 			i(202620),	-- Toxin Antidote
-			n(ARMOR, {
-				i(204258),	-- Goblin Trainee's Wristwraps
-				i(204259),	-- Goblin Trainee's Cord
-				i(204260),	-- Goblin Trainee's Leggings
-				i(204261),	-- Goblin Trainee's Vest
-				i(204266),	-- Gilnean Trainee's Vest
-				i(204267),	-- Gilnean Trainee's Leggings
-				i(204268),	-- Gilnean Trainee's Cord
-				i(204269),	-- Gilnean Trainee's Wristwraps
-			}),
 			n(QUESTS, {
 				-- 10.0.7.47910
 				q(72425),	--

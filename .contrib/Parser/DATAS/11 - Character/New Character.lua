@@ -1718,6 +1718,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 		}),
 	}),
+	-- #if AFTER 10.0.7
+	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+		["g"] = sharedData({
+			["description"] = "This item is obtained by a newly created worgen monk, but because it's soulbound cloth item, you can't learn it.",
+			["collectible"] = false,
+		},{
+			i(204268),	-- Gilnean Trainee's Cord
+			i(204267),	-- Gilnean Trainee's Leggings
+			i(204266),	-- Gilnean Trainee's Vest
+			i(204269),	-- Gilnean Trainee's Wristwraps
+		}),
+	})),
+	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+		["g"] = sharedData({
+			["description"] = "This item is obtained by a newly created goblin monk, but because it's soulbound cloth item, you can't learn it.",
+			["collectible"] = false,
+		},{
+			i(204259),	-- Goblin Trainee's Cord
+			i(204260),	-- Goblin Trainee's Leggings
+			i(204261),	-- Goblin Trainee's Vest
+			i(204258),	-- Goblin Trainee's Wristwraps
+		}),
+	})),
+	-- #endif
 }));
 
 root(ROOTS.HiddenQuestTriggers, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
