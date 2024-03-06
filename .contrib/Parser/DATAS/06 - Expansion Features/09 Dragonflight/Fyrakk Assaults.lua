@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(FYRAKK_ASSAULTS, {
 		["questID"] = 75467,	-- completion of the assault via killing the respective 'Disciple' dragon
 		["isWeekly"] = true,
@@ -327,7 +327,7 @@ root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { A
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(FYRAKK_ASSAULTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill

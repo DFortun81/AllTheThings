@@ -448,7 +448,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 }))));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(48058),	-- Ensemble: Mana-Etched Regalia
 		q(48059),	-- Ensemble: Der'izu Armor
 		q(48060),	-- Ensemble: Righteous Battleplate
@@ -459,12 +459,12 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(50346),	-- Ensemble: Crimson Sentinel Garb
 		q(50347),	-- Ensemble: Goldspine Plate
 	}),
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		q(53613),	-- Trial of Style: Using a Letter from an Admirer the 1st time
 		q(53614),	-- Trial of Style: Using a Letter from an Admirer the 2nd time
 		q(53615),	-- Trial of Style: Using a Letter from an Admirer the 3rd time
 	}),
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		q(55559),	-- Ensemble: Armor of the Amaranthine Path
 		q(55566),	-- Ensemble: Chainmail of the Timeless Hunt
 		q(55572),	-- Ensemble: Restless Dreambound Battlegear

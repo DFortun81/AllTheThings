@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(BUILDINGS, {
 				garrisonBuilding(63,  {	-- Frostwall Mines (rank 1: 61, rank 2: 62, rank 3: 63)

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(CATA_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	inst(74, {	-- Throne of the Four Winds
 		["isRaid"] = true,
 		["sharedLockout"] = 1,

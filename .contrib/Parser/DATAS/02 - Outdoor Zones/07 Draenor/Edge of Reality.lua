@@ -53,7 +53,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(37864),	-- Voidtalon of the Dark Star - triggers after the player leaves the scenario
 	}),
 });

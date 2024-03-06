@@ -4,9 +4,9 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JEWELCRAFTING, {
 		n(CRAFTABLES, {
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(173120),	-- 9.x Cut Rare
 					i(173118),	-- 9.x Cut Rare
 					i(173119),	-- 9.x Cut Rare
@@ -20,9 +20,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(173167),	-- [DNT] REUSE ME
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(193034),	-- Ludicrously Luxurious Lucky Loop
 					i(194112),	-- Straddling Illimited Diamond
 					i(194113),	-- Straddling Illimited Diamond
@@ -31,9 +31,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(311931),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 01
 					r(311933),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 02
 					r(311934),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 03
@@ -44,9 +44,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(311939),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 08
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382584),	-- Opening (RECIPE!)
 					r(391784),	-- Wisp of Tyr (RECIPE!)
 					-- With SpellID attached
@@ -106,13 +106,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.7
-				expansion(DF_TIER, 0.7, sharedDataSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, 0.7, sharedDataSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 					-- With SpellID attached
 					i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
 				})),
 
 				-- 10.1.5
-				expansion(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 					r(412557),	-- TEST CRUSHING (DNT) (RECIPE!)
 				})),
 			}),

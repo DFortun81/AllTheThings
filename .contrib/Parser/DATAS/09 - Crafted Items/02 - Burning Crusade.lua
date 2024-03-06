@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			r(41458, {["timeline"] = {ADDED_2_1_0}}),	-- Cauldron of Major Arcane Protection
@@ -1180,14 +1180,14 @@ root(ROOTS.Craftables, expansion(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubb
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(JEWELCRAFTING, {
-			expansion(TBC_TIER, {
+			expansion(EXPANSION.TBC, {
 				i(21793),	-- Arcanite Sword Pendant
 				i(21780),	-- Blood Crown
 				i(20956),	-- Silver Rose Pendant
 			}),
 		}),
 		prof(TAILORING, {
-			expansion(TBC_TIER, {
+			expansion(EXPANSION.TBC, {
 				i(30464),	-- Lifeblood Bracers
 				i(30463),	-- Lifeblood Belt
 				i(30465),	-- Lifeblood Leggings

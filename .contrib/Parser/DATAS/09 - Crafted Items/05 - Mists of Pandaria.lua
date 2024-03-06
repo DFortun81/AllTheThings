@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			r(114774),	-- Darkwater Potion
@@ -1348,18 +1348,18 @@ root(ROOTS.Craftables, expansion(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubb
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENGINEERING, {
-			expansion(MOP_TIER, {
+			expansion(EXPANSION.MOP, {
 				i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
 			}),
 		}),
 		prof(INSCRIPTION, {
-			expansion(MOP_TIER, {
+			expansion(EXPANSION.MOP, {
 				i(93440),	-- Crafted Dreadful Gladiator's Endgame
 				i(93450),	-- Crafted Dreadful Gladiator's Reprieve
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			expansion(MOP_TIER, {
+			expansion(EXPANSION.MOP, {
 				i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
 				i(93599),	-- Crafted Dreadful Gladiator's Slasher
 			}),

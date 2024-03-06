@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 100,
@@ -128,7 +128,7 @@ root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(WOD_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	n(WORLD_BOSSES, {
 		q(33069),	-- REUSEME - Supreme Lord Kazzak bonus roll
 		q(37675),	-- Short-Supply Reward - Tarlna the Ageless bonus roll & Drov the Ruiner bonus roll

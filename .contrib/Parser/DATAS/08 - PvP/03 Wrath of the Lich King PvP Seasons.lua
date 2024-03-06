@@ -62,7 +62,7 @@ local WRATHFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 40001; end
 end]];
 -- #endif
-root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(expansion(WOTLK_TIER, {
+root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(expansion(EXPANSION.WRATH, {
 	n(SEASON_DEADLY, {
 		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 3.0.1", "removed 3.1.0" },
@@ -94,7 +94,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },
 							},
 						}),
 						i(42557),	-- Savage Gladiator's Barrier
@@ -139,7 +139,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, DEATHKNIGHT },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, DEATHKNIGHT },
 							},
 						}),
 						i(40779, {	-- Savage Gladiator's Dreadplate Chestpiece
@@ -163,7 +163,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, DRUID },
 							},
 						}),
 						i(41770, {	-- Savage Gladiator's Dragonhide Gloves
@@ -217,7 +217,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, HUNTER },
 							},
 						}),
 						i(41084, {	-- Savage Gladiator's Chain Armor
@@ -241,7 +241,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, MAGE },
 							},
 						}),
 						i(41962, {	-- Savage Gladiator's Silk Amice
@@ -265,7 +265,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, PALADIN },
 							},
 						}),
 						i(40898, {	-- Savage Gladiator's Ornamented Chestguard
@@ -304,7 +304,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, PRIEST },
 							},
 						}),
 						i(41847, {	-- Savage Gladiator's Mooncloth Gloves
@@ -343,7 +343,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, ROGUE },
 							},
 						}),
 						i(41643, {	-- Savage Gladiator's Leather Gloves
@@ -367,7 +367,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, SHAMAN },
 							},
 						}),
 						i(41078, {	-- Savage Gladiator's Linked Armor
@@ -421,7 +421,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, WARLOCK },
 							},
 						}),
 						i(42008, {	-- Savage Gladiator's Felweave Amice
@@ -445,7 +445,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR, WARRIOR },
 							},
 						}),
 						i(40778, {	-- Savage Gladiator's Plate Chestpiece
@@ -499,7 +499,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },
 							},
 						}),
 						i(42563, {	-- Hateful Gladiator's Barrier
@@ -622,7 +622,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, DEATHKNIGHT },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, DEATHKNIGHT },
 								{"select", "itemID", 147583 },	-- Hateful Gladiator's Bracers of Victory
 								{"select", "itemID", 147584 },	-- Hateful Gladiator's Girdle of Victory
 								{"select", "itemID", 147585 },	-- Hateful Gladiator's Greaves of Victory
@@ -649,7 +649,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, DRUID },
 								{"select", "itemID", 41638 },	-- Hateful Gladiator's Armwraps of Dominance
 								{"select", "itemID", 41628 },	-- Hateful Gladiator's Belt of Dominance
 								{"select", "itemID", 41633 },	-- Hateful Gladiator's Boots of Dominance
@@ -709,7 +709,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, HUNTER },
 								{"select", "itemID", 41223 },	-- Hateful Gladiator's Wristguards of Triumph
 								{"select", "itemID", 41233 },	-- Hateful Gladiator's Waistguard of Triumph
 								{"select", "itemID", 41228 },	-- Hateful Gladiator's Sabatons of Triumph
@@ -736,7 +736,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, MAGE },
 								{"select", "itemID", 41907 },	-- Hateful Gladiator's Cuffs of Dominance
 								{"select", "itemID", 41896 },	-- Hateful Gladiator's Cord of Dominance
 								{"select", "itemID", 41901 },	-- Hateful Gladiator's Slippers of Dominance
@@ -763,7 +763,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, PALADIN },
 								{"select", "itemID", 40972 },	-- Hateful Gladiator's Bracers of Salvation
 								{"select", "itemID", 40966 },	-- Hateful Gladiator's Girdle of Salvation
 								{"select", "itemID", 40973 },	-- Hateful Gladiator's Greaves of Salvation
@@ -805,7 +805,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, PRIEST },
 								{"select", "itemID", 41878 },	-- Hateful Gladiator's Cuffs of Salvation
 								{"select", "itemID", 41877 },	-- Hateful Gladiator's Cord of Salvation
 								{"select", "itemID", 41879 },	-- Hateful Gladiator's Slippers of Salvation
@@ -847,7 +847,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, ROGUE },
 								{"select", "itemID", 41830 },	-- Hateful Gladiator's Armwraps of Triumph
 								{"select", "itemID", 41827 },	-- Hateful Gladiator's Belt of Triumph
 								{"select", "itemID", 41828 },	-- Hateful Gladiator's Boots of Triumph
@@ -874,7 +874,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, SHAMAN },
 								{"select", "itemID", 41063 },	-- Hateful Gladiator's Wristguards of Dominance
 								{"select", "itemID", 41068 },	-- Hateful Gladiator's Waistguard of Dominance
 								{"select", "itemID", 41073 },	-- Hateful Gladiator's Sabatons of Dominance
@@ -934,7 +934,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, WARLOCK },
 								{"select", "itemID", 147586 },	-- Hateful Gladiator's Cuffs of Ascendancy
 								{"select", "itemID", 147587 },	-- Hateful Gladiator's Cord of Ascendancy
 								{"select", "itemID", 147588 },	-- Hateful Gladiator's Slippers of Ascendancy
@@ -961,7 +961,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL, WARRIOR },
 								{"select", "itemID", 40887 },	-- Hateful Gladiator's Bracers of Triumph
 								{"select", "itemID", 40877 },	-- Hateful Gladiator's Girdle of Triumph
 								{"select", "itemID", 40878 },	-- Hateful Gladiator's Greaves of Triumph
@@ -1182,7 +1182,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },
 							},
 						}),
 						i(42564, {	-- Deadly Gladiator's Barrier
@@ -1305,7 +1305,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, DEATHKNIGHT },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, DEATHKNIGHT },
 								{"select", "itemID", 147589 },	-- Deadly Gladiator's Bracers of Victory
 								{"select", "itemID", 147590 },	-- Deadly Gladiator's Girdle of Victory
 								{"select", "itemID", 147591 },	-- Deadly Gladiator's Greaves of Victory
@@ -1332,7 +1332,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 41639 },	-- Deadly Gladiator's Armwraps of Dominance
 								{"select", "itemID", 41629 },	-- Deadly Gladiator's Belt of Dominance
 								{"select", "itemID", 41634 },	-- Deadly Gladiator's Boots of Dominance
@@ -1392,7 +1392,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 41224 },	-- Deadly Gladiator's Wristguards of Triumph
 								{"select", "itemID", 41234 },	-- Deadly Gladiator's Waistguard of Triumph
 								{"select", "itemID", 41229 },	-- Deadly Gladiator's Sabatons of Triumph
@@ -1419,7 +1419,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 41908 },	-- Deadly Gladiator's Cuffs of Dominance
 								{"select", "itemID", 41897 },	-- Deadly Gladiator's Cord of Dominance
 								{"select", "itemID", 41902 },	-- Deadly Gladiator's Treads of Dominance
@@ -1446,7 +1446,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 40982 },	-- Deadly Gladiator's Bracers of Salvation
 								{"select", "itemID", 40974 },	-- Deadly Gladiator's Girdle of Salvation
 								{"select", "itemID", 40975 },	-- Deadly Gladiator's Greaves of Salvation
@@ -1488,7 +1488,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 41892 },	-- Deadly Gladiator's Cuffs of Salvation
 								{"select", "itemID", 41880 },	-- Deadly Gladiator's Cord of Salvation
 								{"select", "itemID", 41884 },	-- Deadly Gladiator's Treads of Salvation
@@ -1530,7 +1530,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 41839 },	-- Deadly Gladiator's Armwraps of Triumph
 								{"select", "itemID", 41831 },	-- Deadly Gladiator's Belt of Triumph
 								{"select", "itemID", 41835 },	-- Deadly Gladiator's Boots of Triumph
@@ -1557,7 +1557,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 41064 },	-- Deadly Gladiator's Wristguards of Dominance
 								{"select", "itemID", 41069 },	-- Deadly Gladiator's Waistguard of Dominance
 								{"select", "itemID", 41074 },	-- Deadly Gladiator's Sabatons of Dominance
@@ -1617,7 +1617,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 147592 },	-- Deadly Gladiator's Cuffs of Ascendancy
 								{"select", "itemID", 147593 },	-- Deadly Gladiator's Cord of Ascendancy
 								{"select", "itemID", 147594 },	-- Deadly Gladiator's Treads of Ascendancy
@@ -1644,7 +1644,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 40888 },	-- Deadly Gladiator's Bracers of Triumph
 								{"select", "itemID", 40879 },	-- Deadly Gladiator's Girdle of Triumph
 								{"select", "itemID", 40880 },	-- Deadly Gladiator's Greaves of Triumph
@@ -1904,7 +1904,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },
 							},
 						}),
 						i(42565, {	-- Furious Gladiator's Barrier
@@ -2027,7 +2027,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, DEATHKNIGHT },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, DEATHKNIGHT },
 								{"select", "itemID", 40889 },	-- Furious Gladiator's Bracers of Triumph
 								{"select", "itemID", 40881 },	-- Furious Gladiator's Girdle of Triumph
 								{"select", "itemID", 40882 },	-- Furious Gladiator's Greaves of Triumph
@@ -2054,7 +2054,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 41640 },	-- Furious Gladiator's Armwraps of Dominance
 								{"select", "itemID", 41630 },	-- Furious Gladiator's Belt of Dominance
 								{"select", "itemID", 41635 },	-- Furious Gladiator's Boots of Dominance
@@ -2114,7 +2114,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 41225 },	-- Furious Gladiator's Wristguards of Triumph
 								{"select", "itemID", 41235 },	-- Furious Gladiator's Waistguard of Triumph
 								{"select", "itemID", 41230 },	-- Furious Gladiator's Sabatons of Triumph
@@ -2141,7 +2141,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 147595 },	-- Furious Gladiator's Cuffs of Ascendancy
 								{"select", "itemID", 147596 },	-- Furious Gladiator's Cord of Ascendancy
 								{"select", "itemID", 147597 },	-- Furious Gladiator's Slippers of Ascendancy
@@ -2168,7 +2168,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 40983 },	-- Furious Gladiator's Bracers of Salvation
 								{"select", "itemID", 40976 },	-- Furious Gladiator's Girdle of Salvation
 								{"select", "itemID", 40977 },	-- Furious Gladiator's Greaves of Salvation
@@ -2210,7 +2210,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 41893 },	-- Furious Gladiator's Cuffs of Salvation
 								{"select", "itemID", 41881 },	-- Furious Gladiator's Cord of Salvation
 								{"select", "itemID", 41885 },	-- Furious Gladiator's Treads of Salvation
@@ -2252,7 +2252,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 41840 },	-- Furious Gladiator's Armwraps of Triumph
 								{"select", "itemID", 41832 },	-- Furious Gladiator's Belt of Triumph
 								{"select", "itemID", 41836 },	-- Furious Gladiator's Boots of Triumph
@@ -2279,7 +2279,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 41065 },	-- Furious Gladiator's Wristguards of Dominance
 								{"select", "itemID", 41070 },	-- Furious Gladiator's Waistguard of Dominance
 								{"select", "itemID", 41075 },	-- Furious Gladiator's Sabatons of Dominance
@@ -2339,7 +2339,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 41909 },	-- Furious Gladiator's Cuffs of Dominance
 								{"select", "itemID", 41898 },	-- Furious Gladiator's Cord of Dominance
 								{"select", "itemID", 41903 },	-- Furious Gladiator's Slippers of Dominance
@@ -2366,7 +2366,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honors
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 147598 },	-- Furious Gladiator's Bracers of Victory
 								{"select", "itemID", 147599 },	-- Furious Gladiator's Girdle of Victory
 								{"select", "itemID", 147600 },	-- Furious Gladiator's Greaves of Victory
@@ -2649,7 +2649,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },
 							},
 						}),
 						i(42566, {	-- Relentless Gladiator's Barrier
@@ -2783,7 +2783,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, DEATHKNIGHT },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, DEATHKNIGHT },
 								{"select", "itemID", 40890 },	-- Relentless Gladiator's Bracers of Triumph
 								{"select", "itemID", 40883 },	-- Relentless Gladiator's Girdle of Triumph
 								{"select", "itemID", 147601 },	-- Relentless Gladiator's Greaves of Victory
@@ -2810,7 +2810,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 41641 },	-- Relentless Gladiator's Armwraps of Dominance
 								{"select", "itemID", 41631 },	-- Relentless Gladiator's Belt of Dominance
 								{"select", "itemID", 41636 },	-- Relentless Gladiator's Boots of Dominance
@@ -2870,7 +2870,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 41226 },	-- Relentless Gladiator's Wristguards of Triumph
 								{"select", "itemID", 41236 },	-- Relentless Gladiator's Waistguard of Triumph
 								{"select", "itemID", 41231 },	-- Relentless Gladiator's Sabatons of Triumph
@@ -2897,7 +2897,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 41910 },	-- Relentless Gladiator's Cuffs of Dominance
 								{"select", "itemID", 41899 },	-- Relentless Gladiator's Cord of Dominance
 								{"select", "itemID", 41904 },	-- Relentless Gladiator's Treads of Dominance
@@ -2925,7 +2925,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 40984 },	-- Relentless Gladiator's Bracers of Salvation
 								{"select", "itemID", 40978 },	-- Relentless Gladiator's Girdle of Salvation
 								{"select", "itemID", 40979 },	-- Relentless Gladiator's Greaves of Salvation
@@ -2967,7 +2967,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 41894 },	-- Relentless Gladiator's Cuffs of Salvation
 								{"select", "itemID", 41882 },	-- Relentless Gladiator's Cord of Salvation
 								{"select", "itemID", 41886 },	-- Relentless Gladiator's Treads of Salvation
@@ -3010,7 +3010,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 41841 },	-- Relentless Gladiator's Armwraps of Triumph
 								{"select", "itemID", 41833 },	-- Relentless Gladiator's Belt of Triumph
 								{"select", "itemID", 41837 },	-- Relentless Gladiator's Boots of Triumph
@@ -3037,7 +3037,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 41066 },	-- Relentless Gladiator's Wristguards of Dominance
 								{"select", "itemID", 41071 },	-- Relentless Gladiator's Waistguard of Dominance
 								{"select", "itemID", 41076 },	-- Relentless Gladiator's Sabatons of Dominance
@@ -3097,7 +3097,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 147602 },	-- Relentless Gladiator's Cuffs of Ascendancy
 								{"select", "itemID", 49183 },	-- Relentless Gladiator's Treads of Alacrity
 							},
@@ -3123,7 +3123,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 147603 },	-- Relentless Gladiator's Bracers of Victory
 								{"select", "itemID", 147604 },	-- Relentless Gladiator's Girdle of Victory
 								{"select", "itemID", 40884 },	-- Relentless Gladiator's Greaves of Triumph
@@ -3412,7 +3412,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },
 							},
 						}),
 						i(51452, {	-- Wrathful Gladiator's Barrier
@@ -3541,7 +3541,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, DEATHKNIGHT },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, DEATHKNIGHT },
 								{"select", "itemID", 51364 },	-- Wrathful Gladiator's Bracers of Triumph
 								{"select", "itemID", 51362 },	-- Wrathful Gladiator's Girdle of Triumph
 								{"select", "itemID", 51363 },	-- Wrathful Gladiator's Greaves of Triumph
@@ -3568,7 +3568,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 51345 },	-- Wrathful Gladiator's Armwraps of Dominance
 								{"select", "itemID", 51343 },	-- Wrathful Gladiator's Belt of Dominance
 								{"select", "itemID", 51344 },	-- Wrathful Gladiator's Boots of Dominance
@@ -3628,7 +3628,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 51352 },	-- Wrathful Gladiator's Wristguards of Triumph
 								{"select", "itemID", 51350 },	-- Wrathful Gladiator's Waistguard of Triumph
 								{"select", "itemID", 51351 },	-- Wrathful Gladiator's Sabatons of Triumph
@@ -3655,7 +3655,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 51329 },	-- Wrathful Gladiator's Cuffs of Dominance
 								{"select", "itemID", 51327 },	-- Wrathful Gladiator's Cord of Dominance
 								{"select", "itemID", 51328 },	-- Wrathful Gladiator's Treads of Dominance
@@ -3683,7 +3683,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 51361 },	-- Wrathful Gladiator's Bracers of Salvation
 								{"select", "itemID", 51359 },	-- Wrathful Gladiator's Girdle of Salvation
 								{"select", "itemID", 51360 },	-- Wrathful Gladiator's Greaves of Salvation
@@ -3725,7 +3725,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 51367 },	-- Wrathful Gladiator's Cuffs of Salvation
 								{"select", "itemID", 51365 },	-- Wrathful Gladiator's Cord of Salvation
 								{"select", "itemID", 51366 },	-- Wrathful Gladiator's Treads of Salvation
@@ -3768,7 +3768,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 51370 },	-- Wrathful Gladiator's Armwraps of Triumph
 								{"select", "itemID", 51368 },	-- Wrathful Gladiator's Belt of Triumph
 								{"select", "itemID", 51369 },	-- Wrathful Gladiator's Boots of Triumph
@@ -3795,7 +3795,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 51376 },	-- Wrathful Gladiator's Wristguards of Dominance
 								{"select", "itemID", 51374 },	-- Wrathful Gladiator's Waistguard of Dominance
 								{"select", "itemID", 51375 },	-- Wrathful Gladiator's Sabatons of Dominance
@@ -3855,7 +3855,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 147605 },	-- Wrathful Gladiator's Cuffs of Ascendancy
 								{"select", "itemID", 147606 },	-- Wrathful Gladiator's Cord of Ascendancy
 								{"select", "itemID", 51338 },	-- Wrathful Gladiator's Treads of Alacrity
@@ -3882,7 +3882,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 147607 },	-- Wrathful Gladiator's Bracers of Victory
 								{"select", "itemID", 147608 },	-- Wrathful Gladiator's Girdle of Victory
 								{"select", "itemID", 51363 },	-- Wrathful Gladiator's Greaves of Triumph
@@ -4139,7 +4139,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		-- PvP Ensembles
 		q(46555),	-- Savage Gladiator's Chain Armor (Hunter)
 		q(46556),	-- Savage Gladiator's Dragonhide Armor (Druid)

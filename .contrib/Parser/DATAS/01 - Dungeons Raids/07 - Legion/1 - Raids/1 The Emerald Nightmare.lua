@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(768, {	-- The Emerald Nightmare
 		["isRaid"] = true,
 		["coord"] = { 56.3, 36.9, VALSHARAH },
@@ -859,7 +859,7 @@ root(ROOTS.Instances, expansion(LEGION_TIER, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(44142),	-- Nythendra
 		q(44143),	-- Il'gynoth, Heart of Corruption
 		q(44144),	-- Elerethe Renferal

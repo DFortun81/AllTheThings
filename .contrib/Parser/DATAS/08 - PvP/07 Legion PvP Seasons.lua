@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, {
-	pvp(expansion(LEGION_TIER, {
+	pvp(expansion(EXPANSION.LEGION, {
 		n(SEASON_VINDICTIVE, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 7.0.3", "removed 7.1.0.23222" } }, {
 				ach(11017),	-- Challenger: Legion Season 1
@@ -107,8 +107,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 2
 							},
 							["g"] = {
 								i(135905),	-- Vindictive Combatant's Dreadcloak (A)
@@ -137,8 +137,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(136893),	-- Vindictive Combatant's Demonthread Cloak (A)
@@ -167,8 +167,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 2
 							},
 							["g"] = {
 								i(135831),	-- Vindictive Combatant's Dragonhide Belt (A)
@@ -197,8 +197,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(135840),	-- Vindictive Combatant's Chain Armband (A)
@@ -227,8 +227,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 2
 							},
 							["g"] = {
 								i(135846),	-- Vindictive Combatant's Silk Amice (A)
@@ -257,8 +257,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 2
 							},
 							["g"] = {
 								i(135855),	-- Vindictive Combatant's Ironskin Belt (A)
@@ -287,8 +287,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 2
 							},
 							["g"] = {
 								i(135914),	-- Vindictive Combatant's Greatcloak of Faith (A)
@@ -317,8 +317,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 2
 							},
 							["g"] = {
 								i(136867),	-- Vindictive Combatant's Drape of Piety (A)
@@ -347,8 +347,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 2
 							},
 							["g"] = {
 								i(135879),	-- Vindictive Combatant's Leather Belt (A)
@@ -377,8 +377,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 2
 							},
 							["g"] = {
 								i(135888),	-- Vindictive Combatant's Ringmail Armband (A)
@@ -407,8 +407,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 2
 							},
 							["g"] = {
 								i(135894),	-- Vindictive Combatant's Felweave Amice (A)
@@ -437,8 +437,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 2
 							},
 							["g"] = {
 								i(136887),	-- Vindictive Combatant's Cloak of Battle (A)
@@ -494,8 +494,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 2
 							},
 							["g"] = {
 								i(135679),	-- Vindictive Gladiator's Dreadcloak (A)
@@ -524,8 +524,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(136891),	-- Vindictive Gladiator's Demonthread Cloak (A)
@@ -554,8 +554,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 2
 							},
 							["g"] = {
 								i(135605),	-- Vindictive Gladiator's Dragonhide Belt (A)
@@ -584,8 +584,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(135614),	-- Vindictive Gladiator's Chain Armband (A)
@@ -614,8 +614,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 2
 							},
 							["g"] = {
 								i(135620),	-- Vindictive Gladiator's Silk Amice (A)
@@ -644,8 +644,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 2
 							},
 							["g"] = {
 								i(135629),	-- Vindictive Gladiator's Ironskin Belt (A)
@@ -674,8 +674,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 2
 							},
 							["g"] = {
 								i(135688),	-- Vindictive Gladiator's Greatcloak of Faith (A)
@@ -704,8 +704,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 2
 							},
 							["g"] = {
 								i(136861),	-- Vindictive Gladiator's Drape of Piety (A)
@@ -734,8 +734,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 2
 							},
 							["g"] = {
 								i(135653),	-- Vindictive Gladiator's Leather Belt (A)
@@ -764,8 +764,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 2
 							},
 							["g"] = {
 								i(135662),	-- Vindictive Gladiator's Ringmail Armband (A)
@@ -794,8 +794,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 2
 							},
 							["g"] = {
 								i(135668),	-- Vindictive Gladiator's Felweave Amice (A)
@@ -824,8 +824,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 2
 							},
 							["g"] = {
 								i(136885),	-- Vindictive Gladiator's Cloak of Battle (A)
@@ -881,8 +881,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136131)),	-- Vindictive Gladiator's Dreadcloak (A)
@@ -911,8 +911,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136895)),	-- Vindictive Gladiator's Demonthread Cloak (A)
@@ -941,8 +941,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136057)),	-- Vindictive Gladiator's Dragonhide Belt (A)
@@ -971,8 +971,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136066)),	-- Vindictive Gladiator's Chain Armband (A)
@@ -1001,8 +1001,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136072)),	-- Vindictive Gladiator's Silk Amice (A)
@@ -1031,8 +1031,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136081)),	-- Vindictive Gladiator's Ironskin Belt (A)
@@ -1061,8 +1061,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136140)),	-- Vindictive Gladiator's Greatcloak of Faith (A)
@@ -1091,8 +1091,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136873)),	-- Vindictive Gladiator's Drape of Piety (A)
@@ -1121,8 +1121,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136105)),	-- Vindictive Gladiator's Leather Belt (A)
@@ -1151,8 +1151,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136114)),	-- Vindictive Gladiator's Ringmail Armband (A)
@@ -1181,8 +1181,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136120)),	-- Vindictive Gladiator's Felweave Amice (A)
@@ -1211,8 +1211,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136889)),	-- Vindictive Gladiator's Cloak of Battle (A)
@@ -1270,8 +1270,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 3 items, as well as Shift+Click to refresh for your current faction.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 2
 							},
 							["g"] = {
 								i(136018),	-- Vindictive Combatant's Dreadcloak (H)
@@ -1300,8 +1300,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(136894),	-- Vindictive Combatant's Demonthread Cloak (H)
@@ -1330,8 +1330,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 2
 							},
 							["g"] = {
 								i(135944),	-- Vindictive Combatant's Dragonhide Belt (H)
@@ -1360,8 +1360,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(135953),	-- Vindictive Combatant's Chain Armband (H)
@@ -1390,8 +1390,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 2
 							},
 							["g"] = {
 								i(135959),	-- Vindictive Combatant's Silk Amice (H)
@@ -1420,8 +1420,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 2
 							},
 							["g"] = {
 								i(135968),	-- Vindictive Combatant's Ironskin Belt (H)
@@ -1450,8 +1450,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 2
 							},
 							["g"] = {
 								i(136027),	-- Vindictive Combatant's Greatcloak of Faith (H)
@@ -1480,8 +1480,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 2
 							},
 							["g"] = {
 								i(136870),	-- Vindictive Combatant's Drape of Piety (H)
@@ -1510,8 +1510,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 2
 							},
 							["g"] = {
 								i(135992),	-- Vindictive Combatant's Leather Belt (H)
@@ -1540,8 +1540,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 2
 							},
 							["g"] = {
 								i(136001),	-- Vindictive Combatant's Ringmail Armband (H)
@@ -1570,8 +1570,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 2
 							},
 							["g"] = {
 								i(136007),	-- Vindictive Combatant's Felweave Amice (H)
@@ -1600,8 +1600,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 2
 							},
 							["g"] = {
 								i(136888),	-- Vindictive Combatant's Cloak of Battle (H)
@@ -1657,8 +1657,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 2
 							},
 							["g"] = {
 								i(135792),	-- Vindictive Gladiator's Dreadcloak (H)
@@ -1687,8 +1687,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(136892),	-- Vindictive Gladiator's Demonthread Cloak (H)
@@ -1717,8 +1717,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 2
 							},
 							["g"] = {
 								i(135718),	-- Vindictive Gladiator's Dragonhide Belt (H)
@@ -1747,8 +1747,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 2
 							},
 							["g"] = {
 								i(135727),	-- Vindictive Gladiator's Chain Armband (H)
@@ -1777,8 +1777,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 2
 							},
 							["g"] = {
 								i(135733),	-- Vindictive Gladiator's Silk Amice (H)
@@ -1807,8 +1807,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 2
 							},
 							["g"] = {
 								i(135742),	-- Vindictive Gladiator's Ironskin Belt (H)
@@ -1837,8 +1837,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 2
 							},
 							["g"] = {
 								i(135801),	-- Vindictive Gladiator's Greatcloak of Faith (H)
@@ -1867,8 +1867,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 2
 							},
 							["g"] = {
 								i(136864),	-- Vindictive Gladiator's Drape of Piety (H)
@@ -1897,8 +1897,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 2
 							},
 							["g"] = {
 								i(135766),	-- Vindictive Gladiator's Leather Belt (H)
@@ -1927,8 +1927,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 2
 							},
 							["g"] = {
 								i(136866),	-- Vindictive Gladiator's Totemic Cloak (H)
@@ -1957,8 +1957,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 2
 							},
 							["g"] = {
 								i(135781),	-- Vindictive Gladiator's Felweave Amice (H)
@@ -1987,8 +1987,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 2
 							},
 							["g"] = {
 								i(136886),	-- Vindictive Gladiator's Cloak of Battle (H)
@@ -2044,8 +2044,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
@@ -2074,8 +2074,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136896)),	-- Vindictive Gladiator's Demonthread Cloak (H)
@@ -2104,8 +2104,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136170)),	-- Vindictive Gladiator's Dragonhide Belt (H)
@@ -2134,8 +2134,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136179)),	-- Vindictive Gladiator's Chain Armband (H)
@@ -2164,8 +2164,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136185)),	-- Vindictive Gladiator's Silk Amice (H)
@@ -2194,8 +2194,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136194)),	-- Vindictive Gladiator's Ironskin Belt (H)
@@ -2224,8 +2224,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136253)),	-- Vindictive Gladiator's Greatcloak of Faith (H)
@@ -2254,8 +2254,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136876)),	-- Vindictive Gladiator's Drape of Piety (H)
@@ -2284,8 +2284,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136218)),	-- Vindictive Gladiator's Leather Belt (H)
@@ -2314,8 +2314,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136227)),	-- Vindictive Gladiator's Ringmail Armband (H)
@@ -2344,8 +2344,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136233)),	-- Vindictive Gladiator's Felweave Amice (H)
@@ -2374,8 +2374,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 2
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136890)),	-- Vindictive Gladiator's Cloak of Battle (H)
@@ -3584,8 +3584,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 4
 							},
 							["g"] = {
 								i(145026),	-- Cruel Combatant's Dreadcloak (A)
@@ -3614,8 +3614,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(145028),	-- Cruel Combatant's Demonthread Cloak (A)
@@ -3644,8 +3644,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 4
 							},
 							["g"] = {
 								i(145094),	-- Cruel Combatant's Dragonhide Belt (A)
@@ -3674,8 +3674,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(145112),	-- Cruel Combatant's Chain Armband (A)
@@ -3704,8 +3704,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 4
 							},
 							["g"] = {
 								i(145124),	-- Cruel Combatant's Silk Amice (A)
@@ -3734,8 +3734,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 4
 							},
 							["g"] = {
 								i(145142),	-- Cruel Combatant's Ironskin Belt (A)
@@ -3764,8 +3764,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 4
 							},
 							["g"] = {
 								i(145038),	-- Cruel Combatant's Greatcloak of Faith (A)
@@ -3794,8 +3794,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 4
 							},
 							["g"] = {
 								i(145040),	-- Cruel Combatant's Drape of Piety (A)
@@ -3824,8 +3824,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 4
 							},
 							["g"] = {
 								i(145202),	-- Cruel Combatant's Leather Belt (A)
@@ -3854,8 +3854,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 4
 							},
 							["g"] = {
 								i(145220),	-- Cruel Combatant's Ringmail Armband (A)
@@ -3884,8 +3884,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 4
 							},
 							["g"] = {
 								i(145250),	-- Cruel Combatant's Felweave Amice (A)
@@ -3914,8 +3914,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 4
 							},
 							["g"] = {
 								i(145048),	-- Cruel Combatant's Cloak of Battle (A)
@@ -3999,8 +3999,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 4
 							},
 							["g"] = {
 								i(144534),	-- Cruel Gladiator's Dreadcloak (A)
@@ -4029,8 +4029,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(144536),	-- Cruel Gladiator's Demonthread Cloak (A)
@@ -4059,8 +4059,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 4
 							},
 							["g"] = {
 								i(144602),	-- Cruel Gladiator's Dragonhide Belt (A)
@@ -4089,8 +4089,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(144620),	-- Cruel Gladiator's Chain Armband (A)
@@ -4119,8 +4119,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 4
 							},
 							["g"] = {
 								i(144632),	-- Cruel Gladiator's Silk Amice (A)
@@ -4149,8 +4149,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 4
 							},
 							["g"] = {
 								i(144650),	-- Cruel Gladiator's Ironskin Belt (A)
@@ -4179,8 +4179,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 4
 							},
 							["g"] = {
 								i(144546),	-- Cruel Gladiator's Greatcloak of Faith (A)
@@ -4209,8 +4209,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 4
 							},
 							["g"] = {
 								i(144548),	-- Cruel Gladiator's Drape of Piety (A)
@@ -4239,8 +4239,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 4
 							},
 							["g"] = {
 								i(144710),	-- Cruel Gladiator's Leather Belt (A)
@@ -4269,8 +4269,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 4
 							},
 							["g"] = {
 								i(144728),	-- Cruel Gladiator's Ringmail Armband (A)
@@ -4299,8 +4299,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 4
 							},
 							["g"] = {
 								i(144758),	-- Cruel Gladiator's Felweave Amice (A)
@@ -4329,8 +4329,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 4
 							},
 							["g"] = {
 								i(144556),	-- Cruel Gladiator's Cloak of Battle (A)
@@ -4384,8 +4384,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144780)),	-- Cruel Gladiator's Dreadcloak (A)
@@ -4414,8 +4414,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144782)),	-- Cruel Gladiator's Demonthread Cloak (A)
@@ -4444,8 +4444,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144848)),	-- Cruel Gladiator's Dragonhide Belt (A)
@@ -4474,8 +4474,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144866)),	-- Cruel Gladiator's Chain Armband (A)
@@ -4504,8 +4504,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144878)),	-- Cruel Gladiator's Silk Amice (A)
@@ -4534,8 +4534,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144896)),	-- Cruel Gladiator's Ironskin Belt (A)
@@ -4564,8 +4564,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144792)),	-- Cruel Gladiator's Greatcloak of Faith (A)
@@ -4594,8 +4594,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144794)),	-- Cruel Gladiator's Drape of Piety (A)
@@ -4624,8 +4624,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144956)),	-- Cruel Gladiator's Leather Belt (A)
@@ -4654,8 +4654,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144974)),	-- Cruel Gladiator's Ringmail Armband (A)
@@ -4684,8 +4684,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(145004)),	-- Cruel Gladiator's Felweave Amice (A)
@@ -4714,8 +4714,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144802)),	-- Cruel Gladiator's Cloak of Battle (A)
@@ -4769,8 +4769,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 4
 							},
 							["g"] = {
 								i(145027),	-- Cruel Combatant's Dreadcloak (H)
@@ -4799,8 +4799,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(145073),	-- Cruel Combatant's Felskin Helm (H)
@@ -4829,8 +4829,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 4
 							},
 							["g"] = {
 								i(145095),	-- Cruel Combatant's Dragonhide Belt (H)
@@ -4859,8 +4859,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(145113),	-- Cruel Combatant's Chain Armband (H)
@@ -4889,8 +4889,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 4
 							},
 							["g"] = {
 								i(145125),	-- Cruel Combatant's Silk Amice (H)
@@ -4919,8 +4919,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 4
 							},
 							["g"] = {
 								i(145143),	-- Cruel Combatant's Ironskin Belt (H)
@@ -4949,8 +4949,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 4
 							},
 							["g"] = {
 								i(145039),	-- Cruel Combatant's Greatcloak of Faith (H)
@@ -4979,8 +4979,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 4
 							},
 							["g"] = {
 								i(145041),	-- Cruel Combatant's Drape of Piety (H)
@@ -5009,8 +5009,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 4
 							},
 							["g"] = {
 								i(145203),	-- Cruel Combatant's Leather Belt (H)
@@ -5039,8 +5039,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 4
 							},
 							["g"] = {
 								i(145221),	-- Cruel Combatant's Ringmail Armband (H)
@@ -5069,8 +5069,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 4
 							},
 							["g"] = {
 								i(145251),	-- Cruel Combatant's Felweave Amice (H)
@@ -5099,8 +5099,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 4
 							},
 							["g"] = {
 								i(145049),	-- Cruel Combatant's Cloak of Battle (H)
@@ -5184,8 +5184,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 4
 							},
 							["g"] = {
 								i(144535),	-- Cruel Gladiator's Dreadcloak (H)
@@ -5214,8 +5214,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(144537),	-- Cruel Gladiator's Demonthread Cloak (H)
@@ -5244,8 +5244,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 4
 							},
 							["g"] = {
 								i(144603),	-- Cruel Gladiator's Dragonhide Belt (H)
@@ -5274,8 +5274,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 4
 							},
 							["g"] = {
 								i(144621),	-- Cruel Gladiator's Chain Armband (H)
@@ -5304,8 +5304,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 4
 							},
 							["g"] = {
 								i(144633),	-- Cruel Gladiator's Silk Amice (H)
@@ -5334,8 +5334,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 4
 							},
 							["g"] = {
 								i(144651),	-- Cruel Gladiator's Ironskin Belt (H)
@@ -5364,8 +5364,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 4
 							},
 							["g"] = {
 								i(144547),	-- Cruel Gladiator's Greatcloak of Faith (H)
@@ -5394,8 +5394,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 4
 							},
 							["g"] = {
 								i(144549),	-- Cruel Gladiator's Drape of Piety (H)
@@ -5424,8 +5424,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 4
 							},
 							["g"] = {
 								i(144711),	-- Cruel Gladiator's Leather Belt (H)
@@ -5454,8 +5454,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 4
 							},
 							["g"] = {
 								i(144729),	-- Cruel Gladiator's Ringmail Armband (H)
@@ -5484,8 +5484,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 4
 							},
 							["g"] = {
 								i(144759),	-- Cruel Gladiator's Felweave Amice (H)
@@ -5514,8 +5514,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 4
 							},
 							["g"] = {
 								i(144557),	-- Cruel Gladiator's Cloak of Battle (H)
@@ -5569,8 +5569,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 6	},	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 6	},	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144781)),	-- Cruel Gladiator's Dreadcloak (H)
@@ -5599,8 +5599,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144783)),	-- Cruel Gladiator's Demonthread Cloak (H)
@@ -5629,8 +5629,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144849)),	-- Cruel Gladiator's Dragonhide Belt (H)
@@ -5659,8 +5659,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144867)),	-- Cruel Gladiator's Chain Armband (H)
@@ -5689,8 +5689,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 8	},	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 8	},	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144879)),	-- Cruel Gladiator's Silk Amice (H)
@@ -5719,8 +5719,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144897)),	-- Cruel Gladiator's Ironskin Belt (H)
@@ -5749,8 +5749,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 2	},	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 2	},	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144793)),	-- Cruel Gladiator's Greatcloak of Faith (H)
@@ -5779,8 +5779,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 5	},	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 5	},	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144795)),	-- Cruel Gladiator's Drape of Piety (H)
@@ -5809,8 +5809,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 4	},	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 4	},	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144957)),	-- Cruel Gladiator's Leather Belt (H)
@@ -5839,8 +5839,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144975)),	-- Cruel Gladiator's Ringmail Armband (H)
@@ -5869,8 +5869,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 9	},	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 9	},	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(145005)),	-- Cruel Gladiator's Felweave Amice (H)
@@ -5899,8 +5899,8 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 3
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 1	},	-- Season 4
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 1	},	-- Season 4
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144803)),	-- Cruel Gladiator's Cloak of Battle (H)
@@ -7213,9 +7213,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 7
 							},
 							["g"] = {
 								i(149505),	-- Fierce Combatant's Dreadcloak (A)
@@ -7253,9 +7253,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(149507),	-- Fierce Combatant's Demonthread Cloak (A)
@@ -7293,9 +7293,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 7
 							},
 							["g"] = {
 								i(149573),	-- Fierce Combatant's Dragonhide Belt (A)
@@ -7333,9 +7333,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(149592),	-- Fierce Combatant's Chain Armband (A)
@@ -7373,9 +7373,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 7
 							},
 							["g"] = {
 								i(149604),	-- Fierce Combatant's Silk Amice (A)
@@ -7413,9 +7413,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 7
 							},
 							["g"] = {
 								i(149622),	-- Fierce Combatant's Ironskin Belt (A)
@@ -7453,9 +7453,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 7
 							},
 							["g"] = {
 								i(149517),	-- Fierce Combatant's Greatcloak of Faith (A)
@@ -7493,9 +7493,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 7
 							},
 							["g"] = {
 								i(149519),	-- Fierce Combatant's Drape of Piety (A)
@@ -7533,9 +7533,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 7
 							},
 							["g"] = {
 								i(149682),	-- Fierce Combatant's Leather Belt (A)
@@ -7573,9 +7573,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 7
 							},
 							["g"] = {
 								i(149700),	-- Fierce Combatant's Ringmail Armband (A)
@@ -7613,9 +7613,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 7
 							},
 							["g"] = {
 								i(149730),	-- Fierce Combatant's Felweave Amice (A)
@@ -7653,9 +7653,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 7
 							},
 							["g"] = {
 								i(149527),	-- Fierce Combatant's Cloak of Battle (A)
@@ -7749,9 +7749,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 7
 							},
 							["g"] = {
 								i(147909),	-- Fierce Gladiator's Dreadcloak (A)
@@ -7789,9 +7789,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(147911),	-- Fierce Gladiator's Demonthread Cloak (A)
@@ -7829,9 +7829,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 7
 							},
 							["g"] = {
 								i(147977),	-- Fierce Gladiator's Dragonhide Belt (A)
@@ -7869,9 +7869,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(147995),	-- Fierce Gladiator's Chain Armband (A)
@@ -7909,9 +7909,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 7
 							},
 							["g"] = {
 								i(148007),	-- Fierce Gladiator's Silk Amice (A)
@@ -7949,9 +7949,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 7
 							},
 							["g"] = {
 								i(148025),	-- Fierce Gladiator's Ironskin Belt (A)
@@ -7989,9 +7989,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 7
 							},
 							["g"] = {
 								i(147921),	-- Fierce Gladiator's Greatcloak of Faith (A)
@@ -8029,9 +8029,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 7
 							},
 							["g"] = {
 								i(147923),	-- Fierce Gladiator's Drape of Piety (A)
@@ -8069,9 +8069,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 7
 							},
 							["g"] = {
 								i(148085),	-- Fierce Gladiator's Leather Belt (A)
@@ -8109,9 +8109,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 7
 							},
 							["g"] = {
 								i(148103),	-- Fierce Gladiator's Ringmail Armband (A)
@@ -8149,9 +8149,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 7
 							},
 							["g"] = {
 								i(148133),	-- Fierce Gladiator's Felweave Amice (A)
@@ -8189,9 +8189,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 7
 							},
 							["g"] = {
 								i(147931),	-- Fierce Gladiator's Cloak of Battle (A)
@@ -8254,9 +8254,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148155)),	-- Fierce Gladiator's Dreadcloak (A)
@@ -8294,9 +8294,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148157)),	-- Fierce Gladiator's Demonthread Cloak (A)
@@ -8334,9 +8334,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148223)),	-- Fierce Gladiator's Dragonhide Belt (A)
@@ -8374,9 +8374,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148241)),	-- Fierce Gladiator's Chain Armband (A)
@@ -8414,9 +8414,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148253)),	-- Fierce Gladiator's Silk Amice (A)
@@ -8454,9 +8454,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148271)),	-- Fierce Gladiator's Ironskin Belt (A)
@@ -8494,9 +8494,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148167)),	-- Fierce Gladiator's Greatcloak of Faith (A)
@@ -8534,9 +8534,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148169)),	-- Fierce Gladiator's Drape of Piety (A)
@@ -8574,9 +8574,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148331)),	-- Fierce Gladiator's Leather Belt (A)
@@ -8614,9 +8614,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148349)),	-- Fierce Gladiator's Ringmail Armband (A)
@@ -8654,9 +8654,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148379)),	-- Fierce Gladiator's Felweave Amice (A)
@@ -8694,9 +8694,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148177)),	-- Fierce Gladiator's Cloak of Battle (A)
@@ -8759,9 +8759,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 7
 							},
 							["g"] = {
 								i(149506),	-- Fierce Combatant's Dreadcloak (H)
@@ -8799,9 +8799,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(149508),	-- Fierce Combatant's Demonthread Cloak (H)
@@ -8839,9 +8839,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 7
 							},
 							["g"] = {
 								i(149575),	-- Fierce Combatant's Dragonhide Belt (H)
@@ -8879,9 +8879,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(149593),	-- Fierce Combatant's Chain Armband (H)
@@ -8919,9 +8919,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 7
 							},
 							["g"] = {
 								i(149605),	-- Fierce Combatant's Silk Amice (H)
@@ -8959,9 +8959,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 7
 							},
 							["g"] = {
 								i(149623),	-- Fierce Combatant's Ironskin Belt (H)
@@ -8999,9 +8999,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 7
 							},
 							["g"] = {
 								i(149518),	-- Fierce Combatant's Greatcloak of Faith (H)
@@ -9039,9 +9039,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 7
 							},
 							["g"] = {
 								i(149520),	-- Fierce Combatant's Drape of Piety (H)
@@ -9079,9 +9079,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 7
 							},
 							["g"] = {
 								i(149683),	-- Fierce Combatant's Leather Belt (H)
@@ -9119,9 +9119,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 7
 							},
 							["g"] = {
 								i(149701),	-- Fierce Combatant's Ringmail Armband (H)
@@ -9159,9 +9159,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 7
 							},
 							["g"] = {
 								i(149731),	-- Fierce Combatant's Felweave Amice (H)
@@ -9199,9 +9199,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 7
 							},
 							["g"] = {
 								i(149751),	-- Fierce Combatant's Plate Wristplates (H)
@@ -9294,9 +9294,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 7
 							},
 							["g"] = {
 								i(147910),	-- Fierce Gladiator's Dreadcloak (H)
@@ -9334,9 +9334,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(147912),	-- Fierce Gladiator's Demonthread Cloak (H)
@@ -9374,9 +9374,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 7
 							},
 							["g"] = {
 								i(147978),	-- Fierce Gladiator's Dragonhide Belt (H)
@@ -9414,9 +9414,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(147996),	-- Fierce Gladiator's Chain Armband (H)
@@ -9454,9 +9454,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 7
 							},
 							["g"] = {
 								i(148008),	-- Fierce Gladiator's Silk Amice (H)
@@ -9494,9 +9494,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 7
 							},
 							["g"] = {
 								i(148026),	-- Fierce Gladiator's Ironskin Belt (H)
@@ -9534,9 +9534,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 7
 							},
 							["g"] = {
 								i(147922),	-- Fierce Gladiator's Greatcloak of Faith (H)
@@ -9574,9 +9574,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 7
 							},
 							["g"] = {
 								i(147924),	-- Fierce Gladiator's Drape of Piety (H)
@@ -9614,9 +9614,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 7
 							},
 							["g"] = {
 								i(148086),	-- Fierce Gladiator's Leather Belt (H)
@@ -9654,9 +9654,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 7
 							},
 							["g"] = {
 								i(148104),	-- Fierce Gladiator's Ringmail Armband (H)
@@ -9694,9 +9694,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 7
 							},
 							["g"] = {
 								i(148134),	-- Fierce Gladiator's Felweave Amice (H)
@@ -9734,9 +9734,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 7
 							},
 							["g"] = {
 								i(147932),	-- Fierce Gladiator's Cloak of Battle (H)
@@ -9799,9 +9799,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148156)),	-- Fierce Gladiator's Dreadcloak (H)
@@ -9839,9 +9839,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148158)),	-- Fierce Gladiator's Demonthread Cloak (H)
@@ -9879,9 +9879,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148224)),	-- Fierce Gladiator's Dragonhide Belt (H)
@@ -9919,9 +9919,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148242)),	-- Fierce Gladiator's Chain Armband (H)
@@ -9959,9 +9959,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148254)),	-- Fierce Gladiator's Silk Amice (H)
@@ -9999,9 +9999,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148272)),	-- Fierce Gladiator's Ironskin Belt (H)
@@ -10039,9 +10039,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148168)),	-- Fierce Gladiator's Greatcloak of Faith (H)
@@ -10079,9 +10079,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148170)),	-- Fierce Gladiator's Drape of Piety (H)
@@ -10119,9 +10119,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE	},	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148332)),	-- Fierce Gladiator's Leather Belt (H)
@@ -10159,9 +10159,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148350)),	-- Fierce Gladiator's Ringmail Armband (H)
@@ -10199,9 +10199,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148380)),	-- Fierce Gladiator's Felweave Amice (H)
@@ -10239,9 +10239,9 @@ root(ROOTS.PVP, {
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", EXPANSION.LEGION, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 7
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148178)),	-- Fierce Gladiator's Cloak of Battle (H)
@@ -12754,7 +12754,7 @@ root(ROOTS.PVP, {
 });
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		-- PvP Ensembles
 		q(46352),	-- Vindictive Combatant's Chain Armor (Hunter - Alliance)
 		q(46354),	-- Vindictive Combatant's Chain Armor (Hunter - Horde)

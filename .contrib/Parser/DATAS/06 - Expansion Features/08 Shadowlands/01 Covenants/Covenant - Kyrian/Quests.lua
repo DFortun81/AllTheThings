@@ -47,7 +47,7 @@ local LFR_WEAPON_GROUP = {
 	i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(QUESTS, {
 			q(63211, {	-- Report to Adrestes

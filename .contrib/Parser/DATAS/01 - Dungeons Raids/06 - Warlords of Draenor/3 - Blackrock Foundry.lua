@@ -410,7 +410,7 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 
-root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(457, {	-- Blackrock Foundry
 		["mapID"] = 598,
 		["maps"] = { 596, 597, 599, 600 },
@@ -1247,7 +1247,7 @@ root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(34405),	-- DEPRECATED - REUSE - triggers after looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
 	}),
 });

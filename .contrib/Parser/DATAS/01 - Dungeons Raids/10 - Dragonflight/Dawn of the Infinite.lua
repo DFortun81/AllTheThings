@@ -669,7 +669,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 });
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 	inst(1209, {	-- Dawn of the Infinite
 		["coord"] = { 61.0, 84.3, THALDRASZUS },
 		["maps"] = {
@@ -1300,7 +1300,7 @@ root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(DF_TIER, {
+	expansion(EXPANSION.DF, {
 		-- Ensembles
 		q(77850),	-- Ensemble: Infinite Acolyte's Regalia (spellID 419820)
 		q(77851),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421485)

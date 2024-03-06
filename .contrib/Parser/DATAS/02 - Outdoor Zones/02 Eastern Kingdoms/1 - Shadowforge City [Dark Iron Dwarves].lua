@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["races"] = { DARKIRON },
 				["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 			}, {
-				expansion(CLASSIC_TIER, {
+				expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						q(53591, {	-- Fire Plume Ridge
 							["name"] = "Fire Plume Ridge",
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				expansion(TBC_TIER, {
+				expansion(EXPANSION.TBC, {
 					["groups"] = {
 						q(53592, {	-- Honor Hold [Outlands]
 							["name"] = "Honor Hold",
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				expansion(WOTLK_TIER, {
+				expansion(EXPANSION.WRATH, {
 					["groups"] = {
 						q(53586, {	-- Argent Tournament Grounds
 							["name"] = "Argent Tournament Grounds",
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				expansion(CATA_TIER, {
+				expansion(EXPANSION.CATA, {
 					["groups"] = {
 						q(53601, {	-- Sulfuron Spire
 							["name"] = "Sulfuron Spire",
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				expansion(MOP_TIER, {
+				expansion(EXPANSION.MOP, {
 					["groups"] = {
 						q(53595, {	-- One Keg
 							["name"] = "One Keg",
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				expansion(WOD_TIER, {
+				expansion(EXPANSION.WOD, {
 					["groups"] = {
 						q(53590, {	-- Elemental Plateau
 							["name"] = "Elemental Plateau",
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				expansion(LEGION_TIER, {
+				expansion(EXPANSION.LEGION, {
 					["groups"] = {
 						q(53589, {	-- Aalgen Point
 							["name"] = "Aalgen Point",

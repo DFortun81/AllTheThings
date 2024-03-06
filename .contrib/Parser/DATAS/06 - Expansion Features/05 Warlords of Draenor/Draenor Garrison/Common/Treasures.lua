@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(TREASURES, {
 				o(231063, {	-- Lady Sena's Materials Stash

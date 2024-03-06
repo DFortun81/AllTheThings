@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(CATA_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	inst(187, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
 		["maps"] = {

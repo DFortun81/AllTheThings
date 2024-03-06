@@ -6,7 +6,7 @@
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root(ROOTS.NeverImplemented, {
 	n(QUALITY_POOR, {
-		expansion(CLASSIC_TIER, {
+		expansion(EXPANSION.CLASSIC, {
 			-- NYI Classic Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -765,7 +765,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(TBC_TIER, {
+		expansion(EXPANSION.TBC, {
 			-- NYI The Burning Crusade Poor Items
 			n(ARMOR, {
 				filter(TRINKET_F, {
@@ -1428,7 +1428,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(WOTLK_TIER, {
+		expansion(EXPANSION.WRATH, {
 			-- NYI Wrath of the Lich King Poor Items
 			n(WEAPONS, {
 				filter(ONE_HANDED_AXES, {
@@ -1893,7 +1893,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(CATA_TIER, {
+		expansion(EXPANSION.CATA, {
 			-- NYI Cataclysm Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -2827,7 +2827,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(MOP_TIER, {
+		expansion(EXPANSION.MOP, {
 			-- NYI Mists of Pandaria Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -3012,7 +3012,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(WOD_TIER, {
+		expansion(EXPANSION.WOD, {
 			-- NYI Warlords of Draenor Poor Items
 			n(ARMOR, {
 				filter(COSMETIC, {
@@ -3168,7 +3168,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(LEGION_TIER, {
+		expansion(EXPANSION.LEGION, {
 			-- NYI Legion Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -3275,7 +3275,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(BFA_TIER, {
+		expansion(EXPANSION.BFA, {
 			-- NYI Battle for Azeroth Poor Items
 			n(ARMOR, {
 				filter(COSMETIC, {
@@ -3329,7 +3329,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(SL_TIER, {
+		expansion(EXPANSION.SL, {
 			-- NYI Shadowlands Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -3932,7 +3932,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(DF_TIER, {
+		expansion(EXPANSION.DF, {
 			-- NYI Dragonflight Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {

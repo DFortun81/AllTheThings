@@ -1118,7 +1118,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 })));
 
 root(ROOTS.NeverImplemented, {
-	expansion(SL_TIER, {
+	expansion(EXPANSION.SL, {
 		n(ARMOR, {
 			filter(CLOTH, {
 				i(175420),	-- Slippers of Pained Absolution

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to SL)
 		ach(15654, bubbleDownSelf({	-- Back from the Beyond
 			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },

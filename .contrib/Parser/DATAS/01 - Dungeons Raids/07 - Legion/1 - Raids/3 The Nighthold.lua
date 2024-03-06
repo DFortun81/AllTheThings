@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
 		["coords"] = {
@@ -1377,7 +1377,7 @@ root(ROOTS.Instances, expansion(LEGION_TIER, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(45318),	-- Skorpyron
 		q(45319),	-- Chronomatic Anomaly
 		q(45320),	-- Triliax

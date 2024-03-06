@@ -8,7 +8,7 @@ SIEGE_ON_DRAGONBANE_KEEP = createHeader({
 		en = [[~GetSpellInfo(388945)]],
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(SIEGE_ON_DRAGONBANE_KEEP, bubbleDownSelf({ ["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 5 } }, {
 			["questID"] = 70866,
@@ -82,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { A
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(SIEGE_ON_DRAGONBANE_KEEP, {
 			q(70867),	-- Scalebane Keep (seems to indicate if the community event timer is shown perhaps? unflagged when the siege was completed)

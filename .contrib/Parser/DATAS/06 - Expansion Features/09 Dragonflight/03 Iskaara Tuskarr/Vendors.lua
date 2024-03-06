@@ -19,7 +19,7 @@ local TEMPORAL_DRAGONHEAD = 194969;
 local THOUSANDBITE_PIRANHA = 194966;
 local TUFT_OF_PRIMAL_WOOL = 201405;
 local WILDERCLOTH = 193050;
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
 		n(VENDORS, {
 			n(186449, {	-- Arvik
@@ -889,7 +889,7 @@ root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { A
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
 		-- Ensembles
 		q(70804),	-- Ensemble: Tuskarr Trader's Leather Armor

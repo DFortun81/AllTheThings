@@ -1981,7 +1981,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(33443),	-- Barrier Destroyed - triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!" (questID 33408)
 		q(33847),	-- Flag: Seen Ga'nar Rolling Out - triggers when going into Chillfang's cave immediately upon getting to Draenor
 		q(33909),	-- Flag: Seen Ga'nar Rolling Out to Bladespire - triggers shortly after reaching Wor'gol during "Den of Wolves" (questID 34379)

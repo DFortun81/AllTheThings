@@ -177,7 +177,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
-	expansion(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 		n(GROUP_FINDER, {
 			i(187902, {	-- Sporebat Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -1234,7 +1234,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
-AddInstancesToRotation(TBC_TIER, {
+AddInstancesToRotation(EXPANSION.TBC, {
 	-- #if AFTER 7.2.5.23910
 	751,	-- Black Temple, not originally included with the rotation
 	-- #endif
@@ -1258,7 +1258,7 @@ AddInstancesToRotation(TBC_TIER, {
 
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
-	expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 		n(GROUP_FINDER, {
 			i(129928, {	-- Frigid Timewarped Prism
 				["description"] = "Drops from the last boss from any wotlk timewalking dungeon.",
@@ -2637,7 +2637,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
-AddInstancesToRotation(WOTLK_TIER, {
+AddInstancesToRotation(EXPANSION.WRATH, {
 	-- #if AFTER 7.2.5.23910
 	759,	-- Ulduar, not originally included with the rotation
 	-- #endif
@@ -2662,7 +2662,7 @@ AddInstancesToRotation(WOTLK_TIER, {
 
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
-	expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
+	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
 		n(GROUP_FINDER, {
 			i(185053, {	-- Kodo Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -3548,7 +3548,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
-AddInstancesToRotation(CATA_TIER, {
+AddInstancesToRotation(EXPANSION.CATA, {
 	-- #if AFTER 8.2.5.31958
 	78,	-- Firelands not originally included with the rotation
 	-- #endif
@@ -3570,7 +3570,7 @@ AddInstancesToRotation(CATA_TIER, {
 
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
-	expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
+	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
 		n(GROUP_FINDER, {
 			i(187904, {	-- Cloud Serpent Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -4025,7 +4025,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
-AddInstancesToRotation(MOP_TIER, {
+AddInstancesToRotation(EXPANSION.MOP, {
 	-- Raid not originally included with the rotation
 	-- It is expected that the raid will be Throne of Thunder.
 
@@ -4054,7 +4054,7 @@ local SKY = -145;
 local BLOOM = -146;
 -- local UBRS = -147;
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
-	expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
+	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
 		n(GROUP_FINDER, {
 			i(210062, {	-- Ironbound Satchel of Helpful Goods // Draenor TW Daily Reward
 				["description"] = "Rewarded for completing any Draenor timewalking dungeon.\nAvailable once per day.",
@@ -4903,7 +4903,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
-AddInstancesToRotation(WOD_TIER, {
+AddInstancesToRotation(EXPANSION.WOD, {
 	-- Raid not originally included with the rotation
 	-- It is expected that the raid will be Blackrock Foundry.
 
@@ -4924,7 +4924,7 @@ AddInstancesToRotation(WOD_TIER, {
 
 -- Legion Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
-	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
 		n(GROUP_FINDER, {
 			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 				["description"] = "Rewarded for completing any legion timewalking dungeon.\nAvailable once per day.",
@@ -5538,7 +5538,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
-AddInstancesToRotation(LEGION_TIER, {
+AddInstancesToRotation(EXPANSION.LEGION, {
 	-- Raid not originally included with the rotation
 	-- It is expected that the raid will be Nighthold.
 
@@ -5551,7 +5551,7 @@ AddInstancesToRotation(LEGION_TIER, {
 	707,	-- Vault of the Wardens
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(LEGION_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
 }));
 root(ROOTS.NeverImplemented, {

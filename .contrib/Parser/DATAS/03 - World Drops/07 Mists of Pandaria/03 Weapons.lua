@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		n(WEAPONS, {
 			filter(ONE_HANDED_AXES, {
 				i(90807),	-- Corroded Timber Axe

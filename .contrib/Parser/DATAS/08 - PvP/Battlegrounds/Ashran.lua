@@ -573,7 +573,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -585,7 +585,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["g"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -597,7 +597,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["g"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -610,7 +610,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -623,7 +623,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -635,7 +635,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["g"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -648,7 +648,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -661,7 +661,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -674,7 +674,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -686,7 +686,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["g"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -699,7 +699,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -712,7 +712,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -724,7 +724,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["g"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
@@ -736,7 +736,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["g"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
-							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},

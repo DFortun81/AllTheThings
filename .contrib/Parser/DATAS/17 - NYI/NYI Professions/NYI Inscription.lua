@@ -4,9 +4,9 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		n(CRAFTABLES, {
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172910),	-- Darkmoon Card of Repose
 					i(173052),	-- Deathbound Codex
 					i(173055),	-- Redeemer's Column
@@ -14,21 +14,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 9.2.0
-				expansion(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+				expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 					i(189721),	-- Glyph of the Sayaad
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(192464),	-- Darkmoon Deck: Ysera
 				})),
 			}),
 		}),
 		filter(RECIPES, {
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(343688),	-- Crafter's Mark III
 					r(343687),	-- Crafter's Mark IV
 					r(311407),	-- Deathbound Codex
@@ -36,9 +36,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(311690),	-- Redeemer's Spire
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382583),	-- Opening
 					r(391783),	-- Wisp of Tyr
 					r(388458),	-- Unknown

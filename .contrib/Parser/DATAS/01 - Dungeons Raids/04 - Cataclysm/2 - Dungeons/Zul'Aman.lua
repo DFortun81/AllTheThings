@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
 	inst(77, {	-- Zul'Aman
 		["mapID"] = ZULAMAN,
 		["isRaid"] = false,	-- prevent merging isRaid from BC version
@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35443),	-- Zul'Aman Reward Quest - Heroic completion
 	}),
 });

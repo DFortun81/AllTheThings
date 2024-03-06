@@ -273,7 +273,7 @@ InstanceHelper.UpgradeMapping = {
 	[HEROIC_RAID] = 6,
 };
 
-root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
 		["isRaid"] = true,
 		--["coord"] = { X, Y, EMERALD_DREAM },
@@ -974,7 +974,7 @@ root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
 		-- Normal
 		q(78311),	-- Gnalroot

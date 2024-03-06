@@ -88,7 +88,7 @@ end
 local VALIANT_DAILY_OnUpdate = function() end
 -- #ENDIF
 
-root(ROOTS.ExpansionFeatures, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	n(ARGENT_TOURNAMENT, {
 		["maps"] = { ICECROWN, 170 },
 		["groups"] = {
@@ -4255,7 +4255,7 @@ root(ROOTS.ExpansionFeatures, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHAS
 				-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
 				-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
-						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
+						{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
 						{"exclude", "itemID", 146550 },	-- Exclude DK Ensemble
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, TRINKET },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
@@ -4694,7 +4694,7 @@ root(ROOTS.ExpansionFeatures, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHAS
 				-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
 				-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
-						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
+						{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, TRINKET },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},

@@ -2269,7 +2269,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35874),	-- Apparatus - triggers after finishing "The Ebon Hunter" (questID 35835 & 35797)
 		q(35290),	-- Inn - Inn selected (A)
 		q(37315),	-- Inn - Inn selected (A)

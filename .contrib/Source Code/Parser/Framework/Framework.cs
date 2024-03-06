@@ -64,6 +64,9 @@ namespace ATT
             { "BFA", 80 },      // BFA_PHASE_ONE
             { "SHADOWLANDS", 90 },      // SHADOWLANDS_PHASE_ONE
             { "DF", 100 },      // DF_PHASE_ONE
+            { "TWW", 110 },     // TWW_PHASE_ONE
+            { "MID", 120 },     // MID_PHASE_ONE
+            { "TLT", 130 },     // TLT_PHASE_ONE
         };
 
         /// <summary>
@@ -84,6 +87,9 @@ namespace ATT
             { "BFA", 89 },      // BFA_PHASE_SIX?
             { "SHADOWLANDS", 99 },      // SHADOWLANDS_PHASE_SIX?
             { "DF", 99 },      // DF_PHASE_SIX?
+            { "TWW", 99 },      // TWW_PHASE_SIX?
+            { "MID", 99 },      // MID_PHASE_SIX?
+            { "TLT", 99 },      // TLT_PHASE_SIX?
         };
 
         /// <summary>
@@ -104,6 +110,9 @@ namespace ATT
             { "BFA", new int[] { 8, 0, 1, 27026 } },
             { "SHADOWLANDS", new int[] { 9, 0, 1, 36216 } },
             { "DF", new int[] { 10, 0, 0, 45335 } },
+            { "TWW", new int[] { 11, 0, 0, 52068 } },   // TODO
+            { "MID", new int[] { 12, 0, 0, 52068 } },   // TODO
+            { "TLT", new int[] { 13, 0, 0, 52068 } },   // TODO
         };
 
         /// <summary>
@@ -125,6 +134,9 @@ namespace ATT
             { "BFA", new int[] { 8, 3, 7, 35249 } },
             { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
             { "DF", new int[] { 10, 2, 0, 52068 } },
+            { "TWW", new int[] { 11, 0, 0, 52068 } },   // TODO
+            { "MID", new int[] { 12, 0, 0, 52068 } },   // TODO
+            { "TLT", new int[] { 13, 0, 0, 52068 } },   // TODO
         };
 
         /// <summary>
@@ -1677,7 +1689,13 @@ namespace ATT
 
         private static string GetBaseDBRootFolder()
         {
-#if DF
+#if TLT
+            return "TLT/";
+#elif MID
+            return "Midnight/";
+#elif TWW
+            return "TWW/";
+#elif DF
             return "Dragonflight/";
 #elif SHADOWLANDS
             return "Shadowlands/";

@@ -69,7 +69,7 @@ end
 
 
 
-root(ROOTS.Instances, expansion(MOP_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	inst(369, {	-- Siege of Orgrimmar
 		["isRaid"] = true,
 		["coords"] = {
@@ -3608,18 +3608,18 @@ root(ROOTS.Instances, expansion(MOP_TIER, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(33345),	-- Dark Shaman Weekly Attempt
 		q(33047),	-- Short-Supply Reward - Completed after looting an heirloom from Garrosh
 	}),
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
 		q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
 	}),
 });
 
 root(ROOTS.NeverImplemented, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		m(556, {	-- Siege of Orgrimmar
 			i(104986),	-- Unrepentant Heels
 			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)

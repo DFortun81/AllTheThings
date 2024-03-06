@@ -154,7 +154,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
 	})),
-	expansion(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(28778,  {	-- Broken Boar Figurine
 				["provider"] = { "i", 65895 },	-- Figurine - King of Boars
@@ -203,7 +203,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 	}))),
-	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18773, {	-- Jewelhammer's Focus
 				["provider"] = { "i", 153716 },	-- Jewelhammer's Focus
@@ -213,7 +213,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			------ Tools of Trade Questline ------
 		}),
 	})),
-	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18941, {	-- Dazzling Dragons
 			-- #if BEFORE 10.2.0
@@ -596,7 +596,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 -- #if ANYCLASSIC
 local REMOVED_WITH_CATA = "removed 4.0.1";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		filter(FINGER_F, {
 			{
 				["name"] = "Aquamarine Signet",
@@ -910,7 +910,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}),
 	}),
-	expansion(TBC_TIER, {
+	expansion(EXPANSION.TBC, {
 		{
 			["name"] = "Reagents",
 			["categoryID"] = 868,
@@ -1957,7 +1957,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	}),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 846,
@@ -2643,7 +2643,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 834,
@@ -3611,7 +3611,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 		{
 			["name"] = "Research",
 			["categoryID"] = 831,
@@ -4473,7 +4473,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
 		{
 			["name"] = "Reagents and Research",
 			["categoryID"] = 374,
@@ -4673,7 +4673,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
 		{
 			["name"] = "Training",
 			["categoryID"] = 536,
@@ -5293,7 +5293,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}),
 		}),
 	})),
-	applyclassicphase(BFA_PHASE_ONE, expansion(BFA_TIER, {
+	applyclassicphase(BFA_PHASE_ONE, expansion(EXPANSION.BFA, {
 		{
 			["name"] = "Gems",
 			["categoryID"] = 817,
@@ -5721,7 +5721,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			},
 		}),
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(SL_TIER, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
 		{
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1530,

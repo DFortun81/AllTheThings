@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(312, {	-- Shado-Pan Monastery
 		["coord"] = { 36.8 ,47.7, KUN_LAI_SUMMIT},
 		["maps"] = {
@@ -393,13 +393,13 @@ root(ROOTS.Instances, expansion(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(31632),	-- Shado-Pan Monastery Challenge Mode - Bronze Addition (Nth)
 		q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
 		q(31646),	-- Shado-Pan Monastery Challenge Mode - Gold Addition (Nth)
 		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
 	}),
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35319),	-- Shado-Pan Monastery Reward Quest - Normal completion
 		q(35320),	-- Shado-Pan Monastery Reward Quest - Heroic completion
 	}),

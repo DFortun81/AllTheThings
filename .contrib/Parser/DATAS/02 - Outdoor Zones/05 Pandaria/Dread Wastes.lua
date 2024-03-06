@@ -1550,7 +1550,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers,{
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(31666),	-- FLAG - Wind-Reaver's Dagger - second trigger for Wind-Reaver's Dagger of Quick Strikes treasure
 		q(31282),	-- Kaz'tik Tracking Quest - triggers after freeing Kaz'tik from amber
 		q(31343),	-- Kovok Tracking - triggers after turning in "Reunited" (questID 31091), allows Kovok to follow you
@@ -1565,7 +1565,7 @@ root(ROOTS.HiddenQuestTriggers,{
 	}),
 });
 root(ROOTS.NeverImplemented, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		n(WEAPONS, {
 			i(84085),	-- Dreadwaste Meditation Staff
 			i(84086),	-- Dreadwaste Diviner's Rod

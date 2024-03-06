@@ -5,7 +5,7 @@ root(ROOTS.NeverImplemented, {
 	-- TODO: Sort this file
 	n(WEAPONS, {
 		filter(BOWS, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(19490),	-- 2800 Test Bow 63 Blue
 				i(20313),	-- 63 Green Rogue Bow
 				i(20278),	-- 90 Epic Rogue Bow
@@ -15,8 +15,8 @@ root(ROOTS.NeverImplemented, {
 				i(19966),	-- Thrice Strung Longbow DEPRECATED
 				i(20488),	-- Rhok'delar, Longbow of the Ancient Keepers DEP
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189689),	-- 10.0 Dungeon Template - Bows - Ranged
 					i(189127),	-- 10.0 QRP Template <Descriptor> Longbow
 					i(189346),	-- 10.0 Zone Uncommon Template <Descriptor> Longbow
@@ -24,8 +24,8 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(CROSSBOWS, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189690),	-- 10.0 Dungeon Template - Crossbow - RangedRight
 					i(189128),	-- 10.0 QRP Template <Descriptor> Crossbow
 					i(189347),	-- 10.0 Zone Uncommon Template <Descriptor> Crossbow
@@ -33,12 +33,12 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(DAGGERS, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(24071),	-- Bland Dagger
 				i(17142),	-- Shard of the Defiler
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189680),	-- 10.0 Dungeon Template - Dagger - Agi - Weapon
 					i(189679),	-- 10.0 Dungeon Template - Dagger - Int - Weapon
 					i(189043),	-- 10.0 End Game Template <Descriptor> Kris
@@ -55,16 +55,16 @@ root(ROOTS.NeverImplemented, {
 		}),
 		-- #if AFTER 10.0.1
 		filter(PROFESSION_EQUIPMENT, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(199898),	-- Iskaara Fishing Pole
 				}),
 			}),
 		}),
 		-- #endif
 		filter(FIST_WEAPONS, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189699),	-- 10.0 Dungeon Template - FistWeapon - Weapon
 					i(189137),	-- 10.0 QRP Template <Descriptor> Fist
 					i(189356),	-- 10.0 Zone Uncommon Template <Descriptor> Fist
@@ -73,8 +73,8 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(GUNS, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189675),	-- 10.0 Dungeon Template - Guns - RangedRight
 					i(189042),	-- 10.0 End Game Template <Descriptor> Gun
 					i(189107),	-- 10.0 QRP Template <Descriptor> Gun
@@ -85,11 +85,11 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(19989),	-- Tome of Devouring Shadows
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189672),	-- 10.0 Dungeon Template - Generic - Holdable
 					i(189040),	-- 10.0 End Game Template <Descriptor> Offhand
 					i(189104),	-- 10.0 QRP Template <Descriptor> Offhand
@@ -98,31 +98,31 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.0.7
-				expansion(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 					i(203798),	-- Copy Jin'do's Bag of Whammies
 				})),
 			}),
 		}),
 		filter(ONE_HANDED_AXES, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189348),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
 					i(189349),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
 					i(189350),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
 				}),
 			}),
-			expansion(WOTLK_TIER, {
+			expansion(EXPANSION.WRATH, {
 				n(P3xx, {
 					i(50251),	-- Shadow's Edge One-Hander
 				}),
 			}),
-			expansion(LEGION_TIER, {
-				expansion(LEGION_TIER, 1.5, {
+			expansion(EXPANSION.LEGION, {
+				expansion(EXPANSION.LEGION, 1.5, {
 					i(144217),	-- Inelava, Spirit of Inebriation
 				}),
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189692),	-- 10.0 Dungeon Template - Axe1H - Agi - Weapon
 					i(189693),	-- 10.0 Dungeon Template - Axe1H - Int - Weapon
 					i(189691),	-- 10.0 Dungeon Template - Axe1H - Str - Weapon
@@ -136,12 +136,12 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(ONE_HANDED_MACES, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(17733),	-- Fist of Stone
 				i(16792),	-- Giant Club
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189688),	-- 10.0 Dungeon Template - Mace1H - Agi - Weapon
 					i(189694),	-- 10.0 Dungeon Template - Mace1H - Int - Weapon
 					i(189696),	-- 10.0 Dungeon Template - Mace1H - Str - Weapon
@@ -160,7 +160,7 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(ONE_HANDED_SWORDS, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(9380),	-- Jang'thraze the Protector
 				i(22805),	-- Naxxramas Sword 1H 1 PH
 				i(17802),	-- Thunderfury, Blessed Blade of the Windseeker DEPRECATED
@@ -168,13 +168,13 @@ root(ROOTS.NeverImplemented, {
 				i(18583),	-- Warglaive of Azzinoth (Right)
 				i(18584),	-- Warglaive of Azzinoth (Left)
 			}),
-			expansion(SL_TIER, {
-				expansion(SL_TIER, 1.5, {
+			expansion(EXPANSION.SL, {
+				expansion(EXPANSION.SL, 1.5, {
 					i(187568),	-- Duskwatch Arcblade
 				}),
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189681),	-- 10.0 Dungeon Template - Sword1H - Agi - Weapon
 					i(189695),	-- 10.0 Dungeon Template - Sword1H - Int - Weapon
 					i(189677),	-- 10.0 Dungeon Template - Sword1H - Str -Weapon
@@ -191,8 +191,8 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(POLEARMS, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189703),	-- 10.0 Dungeon Template - Polearms - Agi - 2 Hand
 					i(189678),	-- 10.0 Dungeon Template - Polearms - Int - 2 Hand
 					i(189054),	-- 10.0 End Game Template <Descriptor> Halberd
@@ -207,13 +207,13 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(SHIELDS, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(7748),	-- Forcestone Buckler
 				i(20502),	-- Ironbark Shield [NPC Shield]
 				i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189671),	-- 10.0 Dungeon Template - Shield - Shield
 					i(189039),	-- 10.0 End Game Template <Descriptor> Shield
 					i(189103),	-- 10.0 QRP Template <Descriptor> Shield
@@ -223,12 +223,12 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(STAVES, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(3738),	-- Brewing Rod
 				i(20522),	-- Feral Staff
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189674),	-- 10.0 Dungeon Template - Staff - Agi - 2 Hand
 					i(189687),	-- 10.0 Dungeon Template - Staff - Int - 2 Hand
 					i(189056),	-- 10.0 End Game Template <Descriptor> Staff
@@ -244,13 +244,13 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(THROWN, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(21135),	-- Broken Assassin's Throwing Axe
 			}),
 		}),
 		filter(TWO_HANDED_AXES, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189697),	-- 10.0 Dungeon Template - Axe2H - Str - 2 Hand
 					i(189135),	-- 10.0 QRP Template <Descriptor> Axe
 					i(189354),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
@@ -258,8 +258,8 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(TWO_HANDED_MACES, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189700),	-- 10.0 Dungeon Template - Mace2H - Int - 2 Hand
 					i(189673),	-- 10.0 Dungeon Template - Mace2H - Str - 2 Hand
 					i(189048),	-- 10.0 End Game Template <Descriptor> Great Mace
@@ -273,19 +273,19 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(13262),	-- Ashbringer
 				i(913),		-- Huge Ogre Sword
 				i(12469),	-- Mutilator
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189355),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
 					i(189358),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
 				}),
 			}),
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189701),	-- 10.0 Dungeon Template - Sword2H - Int - 2 Hand
 					i(189698),	-- 10.0 Dungeon Template - Sword2H - Str - 2 Hand
 					i(189136),	-- 10.0 QRP Template <Descriptor> Greatsword
@@ -296,8 +296,8 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(WANDS, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189702),	-- 10.0 Dungeon Template - Wand - RangedRight
 					i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 					i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
@@ -306,14 +306,14 @@ root(ROOTS.NeverImplemented, {
 					i(201246),	-- Coiled Green Draketail
 					i(201775),	-- Crimson Aspirant's Wand
 				}),
-				expansion(DF_TIER, 2.0, {
+				expansion(EXPANSION.DF, 2.0, {
 					i(210317),	-- Verdant Aspirant's Wand
 				}),
 			}),
 		}),
 		filter(WARGLAIVES, {
-			expansion(DF_TIER, {
-				expansion(DF_TIER, 0.01, {
+			expansion(EXPANSION.DF, {
+				expansion(EXPANSION.DF, 0.01, {
 					i(189676),	-- 10.0 Dungeon Template - Warglaives - Weapon
 					i(189057),	-- 10.0 End Game Template <Descriptor> Warglaive
 					i(189108),	-- 10.0 QRP Template <Descriptor> Glaive
@@ -714,20 +714,20 @@ root(ROOTS.NeverImplemented, {
 			-- ItemID/Retrieving
 			i(165682),	-- Fallback Weapon - Warglaives
 		}),
-		expansion(SL_TIER, {
-			expansion(SL_TIER, 2.0, {
+		expansion(EXPANSION.SL, {
+			expansion(EXPANSION.SL, 2.0, {
 				i(188133),	-- Owen Test
 			}),
 		}),
 	}),
 	n(WEAPONS, {
 		-- 10.1.0
-		expansion(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			i(204638),	-- Sunder Wing
 		})),
 
 		-- 10.1.5
-		expansion(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
 			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
 			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
@@ -738,13 +738,13 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 10.1.7
-		expansion(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
 			i(208987),	-- The Horseman's Sinister Slicer [Hallow's End]
 			i(209022),	-- The Horseman's Sinister Slicer [Hallow's End]
 		})),
 
 		-- 10.2.0
-		expansion(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 		})),
@@ -786,7 +786,7 @@ root(ROOTS.NeverImplemented, {
 		i(120273),	-- High Warlord's Razor
 	}),
 	n(WEAPONS, {
-		expansion(WOTLK_TIER, {
+		expansion(EXPANSION.WRATH, {
 			n(SEASON_DEADLY, {
 				-- #if NOT ANYCLASSIC
 				i(42444),	-- Savage Gladiator's War Edge (Throw Wep)
@@ -807,7 +807,7 @@ root(ROOTS.NeverImplemented, {
 				-- #endif
 			}),
 		}),
-		expansion(CATA_TIER, {
+		expansion(EXPANSION.CATA, {
 			n(SEASON_VICIOUS, {
 				i(64693),	-- Bloodthirsty Gladiator's Barrier
 				i(64694),	-- Bloodthirsty Gladiator's Baton of Light
@@ -847,7 +847,7 @@ root(ROOTS.NeverImplemented, {
 			i(54554),	-- Bejeweled Ship's Wheel
 			i(54553),	-- Kliklak's Fearsome Greatsword
 		}),
-		expansion(WOD_TIER, {
+		expansion(EXPANSION.WOD, {
 			n(SEASON_PRIMAL, {
 				i(180460),	-- Primal Combatant's Decapitator
 				i(111076),	-- Primal Gladiator's Staff (H), none elite
@@ -862,7 +862,7 @@ root(ROOTS.NeverImplemented, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(117993),	-- RENAME Rangari Boot Knife
 		}),
-		expansion(LEGION_TIER, {
+		expansion(EXPANSION.LEGION, {
 			n(ARTIFACTS, {
 				i(137661),	-- Truthguard
 				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
@@ -917,7 +917,7 @@ root(ROOTS.NeverImplemented, {
 				["timeline"] = { "created 7.3.0.24484" },
 			}),
 		}),
-		expansion(BFA_TIER, {
+		expansion(EXPANSION.BFA, {
 			n(SEASON_DREAD, {
 				i(159941),	-- Honorable Combatant's Inked Vessel
 				i(161937),	-- Honorable Combatant's Inked Vessel
@@ -1003,7 +1003,7 @@ root(ROOTS.NeverImplemented, {
 			i(159592),	-- Wintersail Sabre
 			i(159510),	-- Wintersail Strikers
 		}),
-		expansion(SL_TIER, {
+		expansion(EXPANSION.SL, {
 			inst(1193, {	-- Sanctum of Domination
 				i(181374),	-- Sylvanas Shadowlands Bow
 			}),

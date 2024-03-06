@@ -335,7 +335,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		-- Suramar - Withered Training
 		-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
 		q(43051),	-- 7.0 Suramar Collapse Scenario - Door 01

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
-root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	inst(69, {	-- Lost City of the Tol'vir
 		["mapID"] = 277,
 		["coord"] = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35413),	-- Lost City of the Tol'vir Reward Quest
 		q(35414),	-- Lost City of the Tol'vir Reward Quest
 	}),

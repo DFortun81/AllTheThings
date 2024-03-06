@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(BFA_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1030, {	-- Temple of Sethraliss
 		["coord"] = { 51.9, 25.4, VOLDUN },
 		["maps"] = {

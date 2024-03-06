@@ -4,7 +4,7 @@
 
 -- TODO: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe it's ModID3)
 root(ROOTS.PVP, {
-	pvp(expansion(BFA_TIER, {
+	pvp(expansion(EXPANSION.BFA, {
 		n(SEASON_DREAD, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
@@ -2229,7 +2229,7 @@ root(ROOTS.PVP, {
 });
 -- #if AFTER SHADOWLANDS
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(SL_TIER, {
+	expansion(EXPANSION.SL, {
 		-- PvP Ensembles
 		q(60674),	-- Dread Aspirant's Vestment (Priest, Mage, Warlock)
 		q(60675),	-- Dread Aspirant's Vestment (Priest, Mage, Warlock)

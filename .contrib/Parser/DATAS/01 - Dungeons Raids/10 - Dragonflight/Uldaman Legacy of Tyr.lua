@@ -4,7 +4,7 @@
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
-root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	inst(1197, {	-- Uldaman: Legacy of Tyr
 		["coord"] = {41.2, 10.3, BADLANDS },
 		["maps"] = {

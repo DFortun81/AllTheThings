@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(556, {	-- The Everbloom
 		["coord"] = { 59.55, 45.45, GORGROND },
 		["maps"] = { 620, 621 },
@@ -240,7 +240,7 @@ root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(34551),	-- Shaper Dungeon [PH] Challenge Mode - Bronze Addition (Nth)
 		q(34530),	-- Shaper Dungeon [PH] Challenge Mode - Consolation (Nth)
 		q(34553),	-- Shaper Dungeon [PH] Challenge Mode - Gold Addition (Nth)

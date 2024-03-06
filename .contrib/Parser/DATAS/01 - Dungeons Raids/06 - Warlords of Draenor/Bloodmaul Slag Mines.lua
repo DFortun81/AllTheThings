@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(385, {	-- Bloodmaul Slag Mines
 		["lvl"] = 90,
 		["mapID"] = 573,
@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)
 		q(34525),	-- Bloodmaul Slag Mines Challenge Mode - Consolation (Nth)
 		q(34535),	-- Bloodmaul Slag Mines Challenge Mode - Gold Addition (Nth)

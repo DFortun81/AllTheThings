@@ -4,7 +4,7 @@
 --[[
 local SymPvP = function(SeasonID)
 	SymLink = {
-		{"select", "expansionID", DF_TIER},		-- Select Dragonflight
+		{"select", "expansionID", EXPANSION.DF},		-- Select Dragonflight
 		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
 		{"where", "headerID", SeasonID},		-- Season
 		{"pop"},								-- Discard the Season Header and acquire all of their children.
@@ -12,7 +12,7 @@ local SymPvP = function(SeasonID)
 		{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "expansionID", DF_TIER},		-- Select Dragonflight
+		{"select", "expansionID", EXPANSION.DF},		-- Select Dragonflight
 		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
 		{"where", "headerID", SeasonID},		-- Season
 		{"pop"},								-- Discard the Season Header and acquire all of their children.
@@ -20,7 +20,7 @@ local SymPvP = function(SeasonID)
 		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "expansionID", DF_TIER},		-- Select Dragonflight
+		{"select", "expansionID", EXPANSION.DF},		-- Select Dragonflight
 		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
 		{"where", "headerID", SeasonID},		-- Season
 		{"pop"},								-- Discard the Season Header and acquire all of their children.
@@ -34,7 +34,7 @@ local SymPvP = function(SeasonID)
 end
 local SymRaid = function(InstanceID, Remove)
 	SymLink = {
-		{"select", "expansionID", DF_TIER},			-- Select Dragonflight
+		{"select", "expansionID", EXPANSION.DF},			-- Select Dragonflight
 		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
 		{"where", "instanceID", InstanceID},	-- Instance
 		{"pop"},								-- Discard the Instance Header and acquire all of their children.

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	expansion(CATA_TIER, {
+	expansion(EXPANSION.CATA, {
 		n(ARMOR, {
 			n(HEAD, {
 				i(62103),	-- Pockmarked Hat

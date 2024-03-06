@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(311, {	-- Scarlet Halls
 		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 		["timeline"] = { "added 5.0.4" },
@@ -264,14 +264,14 @@ root(ROOTS.Instances, expansion(CLASSIC_TIER, {
 }));
 -- #if AFTER MOP
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
 		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
 		q(31650),	-- Scarlet Halls Challenge Mode - Gold Addition (Nth)
 		q(31643),	-- Scarlet Halls Challenge Mode - Silver Addition (Nth)
 	}),
 	-- #if AFTER WOD
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35606),	-- Scarlet Halls Reward Quest - Normal completion
 		q(35607),	-- Scarlet Halls - Bonus Objective Reward Quest - kill Armsmaster Harlan
 		q(35608),	-- Scarlet Halls Reward Quest - Heroic completion

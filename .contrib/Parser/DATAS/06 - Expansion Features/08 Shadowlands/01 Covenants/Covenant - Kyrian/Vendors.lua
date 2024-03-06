@@ -29,7 +29,7 @@ local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 });
 
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(REWARDS, {
 			i(183701, {	-- Cleansing Rite Materials

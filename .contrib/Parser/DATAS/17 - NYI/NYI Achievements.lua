@@ -5,7 +5,7 @@
 -- #if AFTER WRATH
 root(ROOTS.NeverImplemented, {
 	n(ACHIEVEMENTS, {
-		expansion(WOTLK_TIER, {
+		expansion(EXPANSION.WRATH, {
 			-- 3.x.x
 			n(P3xx, {
 				ach(1),	-- Race/Level Achievement [PH]
@@ -320,7 +320,7 @@ root(ROOTS.NeverImplemented, {
 				ach(18602),	-- Defense Protocol Beta: Trial of The Champion
 			}),
 		}),
-		expansion(CATA_TIER, {
+		expansion(EXPANSION.CATA, {
 			-- 4.x.x
 			n(P4xx, {
 				ach(5846),	-- A Bunch of Lunch
@@ -344,7 +344,7 @@ root(ROOTS.NeverImplemented, {
 				ach(5085),	-- Zul'Aman Guild Run
 			}),
 		}),
-		expansion(MOP_TIER, {
+		expansion(EXPANSION.MOP, {
 			-- 5.x.x
 			n(P5xx, {
 				ach(7403),	-- Challenge mode dungeon completed the most
@@ -369,7 +369,7 @@ root(ROOTS.NeverImplemented, {
 				ach(7277),	-- Zero Bug Count
 			}),
 		}),
-		expansion(WOD_TIER, {
+		expansion(EXPANSION.WOD, {
 			-- 6.x.x
 			n(P6xx, {
 				ach(10060),	-- Garrison Followers recruited
@@ -383,9 +383,9 @@ root(ROOTS.NeverImplemented, {
 				ach(9368),	-- Total deaths in raids
 			}),
 		}),
-		expansion(LEGION_TIER, {
+		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
 				ach(11234),	-- Class Hall Champions recruited
 				ach(11235),	-- Class Hall Troops recruited
 				ach(11236),	-- Class Hall Missions completed
@@ -393,23 +393,23 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.2.0
-			expansion(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
+			expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
 				ach(11339),	-- Legion's Bane
 			})),
 
 			-- 7.3.0
-			expansion(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+			expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
 				ach(12107),	-- Season 3v3 victories on your current faction
 			})),
 
 			-- 7.3.2
-			expansion(LEGION_TIER, 3.2, bubbleDownSelf({ ["timeline"] = { "created 7.3.2" } }, {
+			expansion(EXPANSION.LEGION, 3.2, bubbleDownSelf({ ["timeline"] = { "created 7.3.2" } }, {
 				ach(12138),	-- Fierce Gladiator's Storm Dragon
 			})),
 		}),
-		expansion(BFA_TIER, {
+		expansion(EXPANSION.BFA, {
 			-- 8.0.1
-			expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
 				ach(12598),	-- <Hidden> Kul Tiras Continent Achievement
 				ach(12554),	-- <Hidden> Lordaeron Scenario Launch
 				ach(12920),	-- A Tiny Heart
@@ -434,7 +434,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.0
-			expansion(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
+			expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
 				ach(13318),	-- 100 Exalted Reputations
 				ach(13415),	-- Heroic: Crucible of Storms
 				ach(13432),	-- Mythic: Jadefire Masters
@@ -444,13 +444,13 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.5
-			expansion(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
+			expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
 				ach(13540),	-- Deaths from Battle for Wintergrasp
 				ach(13195),	-- Rumble Club
 			})),
 
 			-- 8.2.0
-			expansion(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+			expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
 				ach(13721),	-- Diligent Ally
 				ach(13471),	-- Diversed Investments
 				ach(13515),	-- Freedom Run
@@ -458,7 +458,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.3.0
-			expansion(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
+			expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
 				ach(14025),	-- <new achievement>
 				ach(14116),	-- All Bridges Burned
 				ach(14121),	-- Daring Defender
@@ -479,9 +479,9 @@ root(ROOTS.NeverImplemented, {
 				ach(13995),	-- Twilight over the White City
 			})),
 		}),
-		expansion(SL_TIER, {
+		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 				ach(14529),	-- <Hidden> Shadowlands Alt - Trigger Alt Progression
 				ach(14300),	-- Ardenweald Achieved \\ [PH] Ardenweald Zone Achievement
 				ach(14299),	-- Bastion Bested \\ [PH] Bastion Zone Achievement
@@ -557,29 +557,29 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.2
-			expansion(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
+			expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
 				ach(14838),	-- Champion of Connection
 			})),
 
 			-- 9.1.0
-			expansion(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
+			expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
 				ach(15074),	-- <Hidden> Razorwing Eggs Returned
 			})),
 
 			-- 9.1.5
-			expansion(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
+			expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
 				ach(15326),	-- [DNT] Rating Test Achievement
 			})),
 
 			-- 9.2.0
-			expansion(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+			expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
 				ach(15219),	-- Automa
 				ach(15557),	-- Murkastrasza
 			})),
 		}),
-		expansion(DF_TIER, {
+		expansion(EXPANSION.DF, {
 			-- 10.0.0
-			expansion(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 				ach(15644),	-- Good Things Come in Small Packages
 				ach(15517),	-- Solo Shuffle rounds participated in
 				ach(15516),	-- Solo Shuffle rounds won
@@ -587,7 +587,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.2
-			expansion(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+			expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 				ach(16731),	-- Court is Now in Session
 				ach(16794),	-- Dragon Isles Crafting Order Apprentice
 				ach(16795),	-- Dragon Isles Crafting Order Journeyman
@@ -595,14 +595,14 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.5
-			expansion(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+			expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				ach(17316),	-- Dragon Isles Crafting Order Apprentice
 				ach(17317),	-- Dragon Isles Crafting Order Journeyman
 				ach(17318),	-- Dragon Isles Crafting Order Master
 			})),
 
 			-- 10.0.7
-			expansion(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+			expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 				ach(17500),	-- Renowned Tribal Leatherworker
 				ach(17501),	-- Renowned Mooncloth Tailor
 				ach(17502),	-- Renowned Spellfire Tailor
@@ -614,12 +614,12 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.0
-			expansion(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				ach(18542),	-- Dragonflight Keystone Master: Season Two	-- shows as completed together with ach(17844), but this version is NYI
 			})),
 
 			--10.1.7
-			expansion(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 				ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
 				ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
 				ach(10705),	-- HS Achievement Fixup
@@ -631,7 +631,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			--10.2.5
-			expansion(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 				ach(19696),	-- Hearthstone Anniversary Mail
 			})),
 		}),

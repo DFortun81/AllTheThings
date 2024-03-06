@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(CATA_TIER, bubbleDown({ ["timeline"] = { "added 4.0.1" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = { "added 4.0.1" } }, {
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(4857),		-- Journeyman Archaeologist

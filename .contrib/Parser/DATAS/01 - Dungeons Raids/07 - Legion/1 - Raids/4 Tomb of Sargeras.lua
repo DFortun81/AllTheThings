@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(875, {	-- Tomb of Sargeras
 		["isRaid"] = true,
 		["coord"] = { 64.3, 21.0, BROKEN_SHORE },
@@ -1346,7 +1346,7 @@ root(ROOTS.Instances, expansion(LEGION_TIER, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(48064),	-- Goroth Intro - first time cinematic prior to Goroth
 		q(48643),	-- Goroth
 		q(48644),	-- Demonic Inquisition

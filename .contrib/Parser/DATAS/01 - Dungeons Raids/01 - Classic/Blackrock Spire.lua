@@ -2053,14 +2053,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 
 -- #if BEFORE 6.0.1
 -- With how we sort instances, this is actually "Blackrock Spire" before 6.0.1 and for Classic this puts it in the right spot.
-root(ROOTS.Instances, expansion(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	BLACKROCK_SPIRE_INSTANCE,
 }));
 -- #endif
 
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(36866),	-- Lower Blackrock Spires Reward Quest - Normal completion
 		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — kill Urok Doomhowl
 	}),

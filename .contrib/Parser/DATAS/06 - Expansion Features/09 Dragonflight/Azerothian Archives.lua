@@ -9,7 +9,7 @@ AZEROTHIAN_ARCHIVES = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	n(AZEROTHIAN_ARCHIVES, {
 		["maps"] = {
 			THALDRASZUS,
@@ -622,7 +622,7 @@ root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { A
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(AZEROTHIAN_ARCHIVES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 		q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
 		q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)

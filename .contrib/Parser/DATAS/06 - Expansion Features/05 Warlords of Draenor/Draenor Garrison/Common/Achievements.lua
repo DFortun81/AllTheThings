@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(ACHIEVEMENTS, {
 				ach(9130),		-- A Rare Friend

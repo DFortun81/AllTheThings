@@ -314,7 +314,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(43961),	-- Azsuna - WQ rare: Bestrix
 		q(44882),	-- Azsuna - WQ rare: Bloodgazer Matriarch
 		q(43960),	-- Azsuna - WQ rare: Cinderwing

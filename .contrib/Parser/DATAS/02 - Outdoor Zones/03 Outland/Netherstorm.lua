@@ -1344,28 +1344,28 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_FOUR, n(33933, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_THREE, n(33932, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.2.0.10314", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_TWO, n(33916, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.1.1.9806", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32355, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.0.2.8970", "removed 4.0.3.13277" },
 					})),
@@ -1373,13 +1373,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
 						-- #if BEFORE WRATH
 						["sym"] = {
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },	-- Brutal Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },	-- Brutal Gladiator's Set
 							-- #if ANYCLASSIC
 							-- For classic they added every season's gear to him... oh lord.
 							{ "finalize" },
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR }, { "finalize" },	-- Vengeful Gladiator's Set
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR }, { "finalize" },	-- Vengeful Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
 							-- #else
 							{ "pop" },
 							-- #endif
@@ -1389,7 +1389,7 @@ root(ROOTS.Zones, {
 					}),
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
@@ -1556,21 +1556,21 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_FOUR, n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
 						["coord"] = { 33.1, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
 						-- #endif
 						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_THREE, n(34091, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
 						["coord"] = { 33.1, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
 						-- #endif
 						["timeline"] = { "added 3.2.0.10314", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_TWO, n(34089, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S6 ELITE VENDOR
 						["coord"] = { 33.1, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 						-- #endif
 						["timeline"] = { "added 3.1.1.9806", "removed 4.0.3" },
 					})),
@@ -1578,7 +1578,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.1, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
 						["sym"] = {
-							{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },		-- Deadly Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },		-- Deadly Gladiator's Set
 							-- #if ANYCLASSIC
 							{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
 							-- #endif
@@ -1588,7 +1588,7 @@ root(ROOTS.Zones, {
 					})),
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
@@ -1650,15 +1650,15 @@ root(ROOTS.Zones, {
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },{"merge"},	-- Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },{"merge"},	-- Gladiator's Set
 							{"exclude","itemID",
 								28379,	-- Sergeant's Heavy Cape (A)
 								28378,	-- Sergeant's Heavy Cape (H)
 							},
 							-- #if BEFORE LEGION
 							{ "finalize" },
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 							-- #else
 							{ "pop" },
 							-- #endif
@@ -1668,40 +1668,40 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_FOUR, n(33940, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S8 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },{"pop"}},	-- Wrathful Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{"pop"}},	-- Wrathful Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_THREE, n(33931, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S7 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{"pop"}},	-- Relentless Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{"pop"}},	-- Relentless Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.2.0.10314", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_TWO, n(33918, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S6 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
 						-- #if BEFORE 4.0.3
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"pop"}},	-- Furious Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"pop"}},	-- Furious Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.1.1.9806", "removed 4.0.3" },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32405, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
 						-- #if BEFORE 4.0.3
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{"pop"}},	-- Deadly Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{"pop"}},	-- Deadly Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.0.1", "removed 4.0.3" },
 					})),
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE WRATH
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },{"pop"}},	-- Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },{"pop"}},	-- Gladiator's Set
 						-- #endif
 						["timeline"] = { "removed 3.0.1", "added 4.3.0.15005" },
 						-- #if AFTER 4.3.0.15005
@@ -1885,28 +1885,28 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_FOUR, n(33941, {	-- Leeni "Smiley" Smalls <Apprentice Arena Vendor> [WRATH] Original WOTLK S8 VENDOR
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"pop"}},	-- Furious Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"pop"}},	-- Furious Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_THREE, n(33930, {	-- Leeni "Smiley" Smalls <Apprentice Arena Vendor> [WRATH] Original WOTLK S7 VENDOR
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{"pop"}},	-- Deadly Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{"pop"}},	-- Deadly Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.2.0.10314", "removed 4.0.3.13277" },
 					})),
 					applyclassicphase(WRATH_PHASE_TWO, n(33919, {	-- Leeni "Smiley" Smalls <Apprentice Arena Vendor> [WRATH] Original WOTLK S6 VENDOR
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{"pop"}},	-- Hateful Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{"pop"}},	-- Hateful Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.1.1.9806", "removed 4.0.3" },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32354, {	-- Leeni "Smiley" Smalls <Apprentice Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE 4.0.3
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },{"pop"}},	-- Savage Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{"pop"}},	-- Savage Gladiator's Set
 						-- #endif
 						["timeline"] = { "added 3.0.1", "removed 4.0.3" },
 					})),

@@ -4,13 +4,13 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(LEATHERWORKING, {
 		n(CRAFTABLES, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(8195),	-- Nightscape Cloak
 				i(15141),	-- Onyxia Scale Breastplate
 			}),
-			expansion(WOTLK_TIER, {
+			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(WOTLK_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
 					i(41264),	-- Deflecting Bracers
 					i(39710),	-- Verdant Tundra Belt
 					i(39709),	-- Verdant Tundra Boots
@@ -19,9 +19,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(39708),	-- Verdant Tundra Shoulderpads
 				})),
 			}),
-			expansion(CATA_TIER, {
+			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 					i(56501),	-- Razorshell Belt
 					i(56493),	-- Razorshell Boots
 					i(56487),	-- Razorshell Bracers
@@ -41,31 +41,31 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 
 				})),
 			}),
-			expansion(WOD_TIER, {
+			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					i(118049),	-- Small Football
 				})),
 			}),
-			expansion(LEGION_TIER, {
+			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 					i(130878),	-- Shaved Felhide
 					i(129963),	-- Stonehide Boot Base
 				})),
 			}),
-			expansion(BFA_TIER, {
+			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
 					i(161974),	-- Honorable Combatant's Cestus [A]
 					i(159895),	-- Honorable Combatant's Cestus [H]
 					i(161973),	-- Honorable Combatant's Striker [A]
 					i(159894),	-- Honorable Combatant's Striker [H]
 				})),
 			}),
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
 					i(172343),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 06
 					i(172344),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 07
@@ -137,16 +137,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172338),	-- Loosened Belt
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(193475),	-- Masterwork Riding Crop
 					i(193495),	-- Savage Bow
 				})),
 			}),
 		}),
 		filter(RECIPES, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				-- With SpellID attached
 				i(8388),	-- Pattern: Nightscape Cloak
 				i(15780),	-- Pattern: Onyxia Scale Breastplate
@@ -160,22 +160,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(22692),	-- Pattern: Polar Tunic
 			}),
 			-- #if ANYCLASSIC
-			expansion(TBC_TIER, {
+			expansion(EXPANSION.TBC, {
 				applyclassicphase(TBC_PHASE_FOUR, i(185922, {	-- Pattern: Greater Drums of War
 					["description"] = "Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",
 				})),
 			}),
 			-- #endif
-			expansion(TBC_TIER, {
+			expansion(EXPANSION.TBC, {
 				-- 2.4.0
-				expansion(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+				expansion(EXPANSION.TBC, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 					-- Without SpellID attached
 					i(35528),	-- Pattern: Swiftstrike Shoulders
 				})),
 			}),
-			expansion(WOTLK_TIER, {
+			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(WOTLK_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
 					r(55243),	-- Bracers of Deflection
 					r(53681),	-- Garok's Battle
 					r(53686),	-- Verdant Tundra Belt
@@ -191,9 +191,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(38598),	-- Pattern: Dark Arctic Leggings
 				})),
 			}),
-			expansion(CATA_TIER, {
+			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 					r(74493),	-- Savage Leather
 					r(78421),	-- Unknown
 					r(78422),	-- Unknown
@@ -241,15 +241,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(67019),	-- Pattern: Twilight Leg Armor
 				})),
 			}),
-			expansion(MOP_TIER, {
+			expansion(EXPANSION.MOP, {
 				-- 5.0.4
-				expansion(WOD_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.WOD, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					i(86286),	-- Pattern: Sha Leather
 				})),
 			}),
-			expansion(WOD_TIER, {
+			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					r(171713),	-- Burnished Leather
 					-- With SpellID attached
 					i(118097),	-- Pattern: Small Football
@@ -263,9 +263,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(116323),	-- Pattern: Traveling Tunic
 				})),
 			}),
-			expansion(LEGION_TIER, {
+			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 					r(196388),	-- Tanned Fel Leather
 					r(196387),	-- Shaved Felhide
 					r(196425),	-- Stonehide Boot Base
@@ -295,9 +295,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(137870),	-- Pattern: Warhide Shoulderguard [Rank 2]
 				})),
 			}),
-			expansion(BFA_TIER, {
+			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(269549),	-- Honorable Combatant's Cestus [Rank 1]
 					r(269546),	-- Honorable Combatant's Striker [Rank 1]
 					-- With SpellID attached
@@ -313,13 +313,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 8.1.0
-				expansion(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+				expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 					i(166312),	-- Pattern: Coarse Leather Barding [Rank 2]
 				})),
 			}),
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(338261),	-- Almost Thing (RECIPE!)
 					r(309293),	-- Bonerivetted Armguards (RECIPE!)
 					r(309288),	-- Bonerivetted Gauntlets (RECIPE!)
@@ -388,9 +388,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(183869),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(375175),	-- Deathchill Hide (RECIPE!)
 					r(375177),	-- Drygrate Scales (RECIPE!)
 					r(375170),	-- Masterwork Riding Crop (RECIPE!)

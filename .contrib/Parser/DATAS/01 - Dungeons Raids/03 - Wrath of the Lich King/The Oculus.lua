@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(282, {	-- The Oculus
 		["mapID"] = THE_OCULUS,
 		["coord"] = { 28.1, 28.1, BOREAN_TUNDRA },
@@ -478,7 +478,7 @@ root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35446),	-- The Oculus Reward Quest - Normal completion
 		q(35447),	-- The Oculus Reward Quest - Heroic completion
 	}),

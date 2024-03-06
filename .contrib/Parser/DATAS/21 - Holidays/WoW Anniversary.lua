@@ -361,7 +361,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					ach(13931, {	-- Memories of Fel, Frost and Fire
 						i(172012),	-- Obsidian Worldbreaker (MOUNT!)
 					}),
-					expansion(TBC_TIER, {
+					expansion(EXPANSION.TBC, {
 						e(1572, {	-- Lady Vashj
 							["creatureID"] = 21212,	-- Lady Vashj
 							["groups"] = {
@@ -478,7 +478,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							},
 						}),
 					}),
-					expansion(WOTLK_TIER, {
+					expansion(EXPANSION.WRATH, {
 						e(1605, {	-- Heigan the Unclean
 							["creatureID"] = 15936,	-- Heigan the Unclean
 							["groups"] = {
@@ -771,7 +771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							},
 						}),
 					}),
-					expansion(CATA_TIER,  {
+					expansion(EXPANSION.CATA,  {
 						e(167, {	-- Cho'gall
 							["creatureID"] = 43324,
 							["groups"] = {

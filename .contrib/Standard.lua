@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	inst(1201, {	-- Algeth'ar Academy
 	}),
 })));
@@ -24,7 +24,7 @@ root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
 	n(ALLIED_RACES, {
 	}),
 })));
@@ -33,7 +33,7 @@ There could of course be expection to this and put the bubbleDownSelf on the nex
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(expansion(SL_TIER, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({
 		["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 	},{

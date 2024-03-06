@@ -68,7 +68,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 	})),
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			ach(17498, {	-- Renowned Leatherworking Specialist
 				["altQuests"] = {
@@ -182,7 +182,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		})),
 	}),
-	expansion(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18894, {	-- Free Stylin'
 				crit(61631, {	-- Stylin' Purple Hat
@@ -200,7 +200,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		})),
 	})),
-	expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(36176, {	-- A Call for Huntsman
 				["providers"] = {
@@ -237,7 +237,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 	})),
-	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(39958,  {	-- Skin Deep
 				["provider"] = { "n", 93523 },	-- Namha Moonwater
@@ -819,7 +819,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			})),
 		}),
 	})),
-	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18777, {	-- Mallet of Thunderous Skins
 				["provider"] = { "i", 164978 },	-- Mallet of Thunderous Skins
@@ -993,7 +993,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			})),
 		}),
 	})),
-	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
 			q(70362, {	-- Dragon Isles Leatherworking
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
@@ -1314,7 +1314,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 		q(55628),	-- Tracking Quest - 15 minutes timer for recieving 'Spirit of the Bested' from other rare kill again (itemID 168138) (resets every 00,15,30,45 minut of hour)
 	})),
 });
@@ -1474,7 +1474,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	}),
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -2864,7 +2864,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	}),
-	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -3559,7 +3559,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -4350,7 +4350,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -4826,7 +4826,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 		n(DISCOVERY, {
 			spell(142976, {  -- Hardened Magnificent Hide
 				recipe(143139),	-- Crafted Malevolent Gladiator's Chain Helm
@@ -6203,7 +6203,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -6549,7 +6549,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -7191,7 +7191,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(BFA_PHASE_ONE, expansion(BFA_TIER, {
+	applyclassicphase(BFA_PHASE_ONE, expansion(EXPANSION.BFA, {
 		n(DISCOVERY, {
 			{	-- Hardened Tempest Boots
 				["spellID"] = 256765,	-- Hardened Tempest Boots
@@ -8489,7 +8489,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(SL_TIER, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
 		applytraining({
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1531,

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
 		cl(MONK, bubbleDownSelf({ ["classes"] = { MONK } }, {
 			["maps"] = { THE_WANDERING_ISLE },
@@ -826,7 +826,7 @@ root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] =
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(40127),	-- Da-Nel's Quest - Da-Nel sends you from Dalaran to Peak of Serenity
 		q(40655),	-- Li Li - hopping on kite during "Off to Adventure!" (questID 40633)
 		q(40516),	-- The Dawning Bit -  triggered after accepting "The Dawning Light" (questID 40236)

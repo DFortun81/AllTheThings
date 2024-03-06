@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		["icon"] = "Interface\\Icons\\achievement_level_110",
 	}),
@@ -1280,7 +1280,7 @@ root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, {
 	})),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(48308),	-- Tracking Quest - triggered after obtaining "Azeroth Invasion Plans" (itemID 152316)
 		q(48309),	-- Tracking Quest - triggered after obtaining "Discharged Shock Lance" (itemID 152320)
 		q(48310),	-- Tracking Quest - triggered after obtaining "Sargerei Manifesto"  (itemID 152324)

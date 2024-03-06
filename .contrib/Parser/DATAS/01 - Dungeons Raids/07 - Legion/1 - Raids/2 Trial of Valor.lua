@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(861, {	-- Trial of Valor
 		["isRaid"] = true,
 		["coord"] = { 70.4, 69.4, STORMHEIM },
@@ -590,7 +590,7 @@ root(ROOTS.Instances, expansion(LEGION_TIER, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(46661),	-- Odyn LFR
 		q(46662),	-- Odyn Normal
 		q(46663),	-- Odyn Heroic

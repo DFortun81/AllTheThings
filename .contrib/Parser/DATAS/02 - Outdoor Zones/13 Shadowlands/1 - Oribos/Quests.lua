@@ -880,7 +880,7 @@ root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADD
 })));
 
 root(ROOTS.NeverImplemented, {
-	expansion(SL_TIER, {
+	expansion(EXPANSION.SL, {
 		n(ARMOR, {
 			filter(CLOTH, {
 				i(175679),	-- Oribos Quest Cloth Robe

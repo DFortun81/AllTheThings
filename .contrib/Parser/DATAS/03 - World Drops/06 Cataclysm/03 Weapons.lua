@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	expansion(CATA_TIER, {
+	expansion(EXPANSION.CATA, {
 		n(WEAPONS, {
 			filter(ONE_HANDED_AXES, {
 				i(55283),	-- Angerfang Axe

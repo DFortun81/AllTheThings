@@ -16,7 +16,7 @@ THE_FOUR_HORSEMEN = createHeader({
 		cn = "四骑士",
 	},
 });
-root(ROOTS.Instances, expansion(CLASSIC_TIER,
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC,
 -- #if BEFORE WRATH
 applyclassicphase(PHASE_SIX,
 -- #endif

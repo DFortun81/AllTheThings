@@ -77,7 +77,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 		}),
 	})),
-	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(39874, {	-- Some Enchanted Evening
 			["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 			["coord"] = { 38.6, 40.8, LEGION_DALARAN },
@@ -309,7 +309,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			},
 		}),
 	})),
-	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18775, {	-- Iwen's Enchanting Rod
 				["provider"] = { "i", 164766 },	-- Iwen's Enchanting Rod
@@ -409,7 +409,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			})),
 		}),
 	})),
-	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18764),	-- Break Upon Your Body
 			ach(18763, {
@@ -757,7 +757,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 
 -- #if ANYCLASSIC
 profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		r(7411, {	-- Enchanting (Apprentice)
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
@@ -1008,7 +1008,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			applyevent(EVENTS.FEAST_OF_WINTER_VEIL, r(21931)),	-- Winter's Might
 		}),
 	}),
-	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		r(28029, {	-- Enchanting (Master)
 			["timeline"]={ "added 2.0.1", "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
@@ -1148,7 +1148,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(27981),	-- Sunfire
 		}),
 	}))),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 		r(51313, {	-- Enchanting (Grand Master)
 			["timeline"]={ "added 3.0.2", "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
@@ -1257,7 +1257,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(60707, {["timeline"]={"added 3.1.0"}}),	-- Superior Potency
 		}),
 	}))),
-	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
 		r(74258, {	-- Enchanting (Illustrious)
 			["timeline"]={ "added 4.0.3", "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
@@ -1345,7 +1345,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(74244),	-- Windwalk
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
 		r(110400, {	-- Enchanting (Zen Master)
 			["timeline"]={ "added 5.0.4", "removed 8.0.1" },
 			["collectible"] = false,
@@ -1404,7 +1404,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(104425),	-- Windsong
 		}),
 	}))),
-	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
 			["collectible"] = false,
@@ -1514,7 +1514,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(159671),	-- Mark of Warsong
 		}),
 	}))),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
 		r(195096, {	-- Enchanting (Legion Master)
 			["timeline"]={ "added 7.0.3", "removed 8.0.1" },
 			["collectible"] = false,

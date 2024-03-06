@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
-root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	inst(65, {	-- Throne of the Tides
 		["mapID"] = 322,
 		["maps"] = { 323 },
@@ -256,7 +256,7 @@ root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35363),	-- Throne of the Tides Reward Quest - Normal completion
 		q(35365),	-- Throne of the Tides Reward Quest - Heroic completion / Timewalking completion
 		q(35364),	-- Throne of the Tides Bonus Reward - kill Mindbender Ghur'sha (Normal)

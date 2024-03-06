@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 		})),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	q(74926),	-- Tectonus secondary kill questID
 	q(74927),	-- Manathema secondary kill questID
 	q(74928),	-- Snarfang secondary kill questID

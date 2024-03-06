@@ -88,7 +88,7 @@ local WOD_CRAFTED_ITEM_DF_REMARKABLE = function(id, upgradeItem)
 	});
 end
 
-root(ROOTS.Craftables, expansion(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(116979, {["timeline"] = {ADDED_8_0_1}}),	-- Blackwater Anti-Venom
@@ -802,7 +802,7 @@ root(ROOTS.Craftables, expansion(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubb
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(TAILORING, {
-			expansion(WOD_TIER, {
+			expansion(EXPANSION.WOD, {
 				i(114833),	-- Miniature Flying Carpet
 				i(118052),	-- Murloc Chew Toy
 			}),

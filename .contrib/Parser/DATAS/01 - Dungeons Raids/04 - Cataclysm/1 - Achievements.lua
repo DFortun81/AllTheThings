@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
+root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 	n(ACHIEVEMENTS, {
 		ach(5535, {	-- 1000 Valor Points
 			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },

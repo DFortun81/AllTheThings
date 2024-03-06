@@ -42,7 +42,7 @@ AZERITE_ESSENCE_RANK_4 = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(AZERITE_ESSENCES, {
 		["description"] = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",
 		["g"] = {
@@ -440,7 +440,7 @@ root(ROOTS.ExpansionFeatures, expansion(BFA_TIER, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(AZERITE_ESSENCES, {
 		q(56951),	-- triggered when making r2 of the Eternal Palace HoA essence
 		q(56944),	-- triggered when making r2 of the Eternal Palace HoA essence

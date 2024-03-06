@@ -5,9 +5,9 @@
 -- #if AFTER WRATH
 root(ROOTS.NeverImplemented, {
 	filter(CONSUMABLES, {
-		expansion(WOTLK_TIER, {
+		expansion(EXPANSION.WRATH, {
 			-- 3.1.0
-			expansion(WOTLK_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
+			expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
 				i(44871),	-- Greater Inscription of the Axe
 				i(44872),	-- Greater Inscription of the Crag
 				i(44873),	-- Greater Inscription of the Pinnacle
@@ -15,9 +15,9 @@ root(ROOTS.NeverImplemented, {
 				i(45705),	-- Argent Tournament Invitation
 			})),
 		}),
-		expansion(SL_TIER, {
+		expansion(EXPANSION.SL, {
 			-- 9.2.0
-			expansion(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+			expansion(EXPANSION.SL, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 				i(185974),	-- Bahmeht Chain Link
 			})),
 		}),

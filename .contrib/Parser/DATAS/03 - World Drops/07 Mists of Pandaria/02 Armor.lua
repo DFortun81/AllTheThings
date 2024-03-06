@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		n(ARMOR, {
 			n(HEAD, {
 				i(90774),	-- Vermin-Gnawed Hat

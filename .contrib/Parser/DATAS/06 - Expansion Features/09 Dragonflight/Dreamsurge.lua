@@ -21,7 +21,7 @@ local DREAMSURGE_CHRYSALIS = 208153;
 -- #else
 local DREAMSURGE_CHRYSALIS = 210254;
 -- #endif
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
 			q(77423, {	-- Surging Dreams
@@ -367,7 +367,7 @@ root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { A
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		q(78276),	-- 1st kill day / weekly
 		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event

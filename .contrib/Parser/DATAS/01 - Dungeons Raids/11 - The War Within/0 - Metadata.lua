@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 --[[
-root(ROOTS.Instances, expansion(TWW_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	["timeline"] = { ADDED_11_0_0_LAUNCH },
 }));
 --]]

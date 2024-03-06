@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(CATA_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 	m(338, {	-- Molten Front
 		["description"] = "The Molten Front is a daily quest zone for level 32+ players added in 4.2. Players reach it via a portal in Mount Hyjal. This zone covers the initial attacks on Firelands. It is a volcanic zone covered in flame elementals and allies of Ragnarnos. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress.",
 		["timeline"] = { "added 4.2.0" },

@@ -1273,7 +1273,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(40340),	-- Alard Schmied Greeting Seen - "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(45518),	-- First Aid Shop Searched - triggered after searching first aid shop during "Confirming Suspicions" (questID 45414)
 		q(47282),	-- First Aid Shop Searched - triggered after searching first aid shop during "Confirming Suspicions" (questID 45414)
@@ -1282,7 +1282,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46835),	-- Whispers of a Frightened World Tracking - triggers while doing "Whispers of a Frightened World" (questID 46206)
 		q(41694),	-- World Quests Available - triggers when turning in "Uniting the Isles" (questID 45727)
 	}),
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		q(58658),	-- Selecting an option to hide Vulpera hyena mount canopy/sunshade
 	}),
 });

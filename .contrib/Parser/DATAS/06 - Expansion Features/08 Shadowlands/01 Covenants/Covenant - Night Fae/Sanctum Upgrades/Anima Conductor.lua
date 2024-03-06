@@ -75,7 +75,7 @@ local VALFIR = n(168647, {	-- Valfir the Unrelenting
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_ardenweald01",

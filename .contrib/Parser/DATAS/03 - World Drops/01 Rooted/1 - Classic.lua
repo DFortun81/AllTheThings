@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(CLASSIC_TIER, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(CLOAKS, {
 		i(9938),	-- Abjurer's Cloak
 		i(14116),	-- Aboriginal Cape

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 local SKINNING_KNOWLEDGE = 2033;
 
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
 			ach(16683, {	-- In Tyr's Footsteps

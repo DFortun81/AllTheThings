@@ -84,7 +84,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.NeverImplemented, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		n(WEAPONS, {
 			i(84527),	-- Hidden Pass Meditation Staff
 		}),

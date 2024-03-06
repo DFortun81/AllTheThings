@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(260, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
 		["zone-text-areaID"] = 3717,	-- The Slave Pens
@@ -377,11 +377,11 @@ root(ROOTS.Instances, expansion(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 })));
 -- #if AFTER TBC
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(TBC_TIER, {
+	expansion(EXPANSION.TBC, {
 		q(11115),	-- The Mark of Vashj (FLAG ONLY)
 	}),
 	-- #if AFTER WOD
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35561),	-- The Slave Pens Reward Quest - Normal completion
 		q(35562),	-- The Slave Pens Reward Quest - Heroic completion
 	}),

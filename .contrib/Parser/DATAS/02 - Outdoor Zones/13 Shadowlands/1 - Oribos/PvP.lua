@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201877, {	-- Arsenal: Unchained Aspirant's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = Sym_PvPWeaponsArsenal(SL_TIER, SEASON_UNCHAINED, PVP_ASPIRANT),
+							["sym"] = Sym_PvPWeaponsArsenal(EXPANSION.SL, SEASON_UNCHAINED, PVP_ASPIRANT),
 						}),
 						i(201860, {	-- Ensemble: Unchained Aspirant's Cloth Armor
 							["classes"] = CLOTH_CLASSES,
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201878, {	-- Arsenal: Sinful Aspirant's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = Sym_PvPWeaponsArsenal(SL_TIER, SEASON_SINFUL, PVP_ASPIRANT),
+							["sym"] = Sym_PvPWeaponsArsenal(EXPANSION.SL, SEASON_SINFUL, PVP_ASPIRANT),
 						}),
 						i(201868, {	-- Ensemble: Sinful Aspirant's Cloth Armor
 							["classes"] = CLOTH_CLASSES,
@@ -1543,8 +1543,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201873, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Arsenal: Cosmic Gladiator's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["sym"] = {
-								{"sub","pvp_weapons_ensemble",SL_TIER,SEASON_ETERNAL,PVP_GLADIATOR},
-								{"sub","pvp_weapons_ensemble",SL_TIER,SEASON_COSMIC,PVP_GLADIATOR},
+								{"sub","pvp_weapons_ensemble",EXPANSION.SL,SEASON_ETERNAL,PVP_GLADIATOR},
+								{"sub","pvp_weapons_ensemble",EXPANSION.SL,SEASON_COSMIC,PVP_GLADIATOR},
 							},
 						})),
 						i(201856, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
@@ -1916,7 +1916,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(201876, {	-- Arsenal: Unchained Gladiator's Weapons
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = Sym_PvPWeaponsArsenal(SL_TIER,SEASON_UNCHAINED,PVP_GLADIATOR),
+							["sym"] = Sym_PvPWeaponsArsenal(EXPANSION.SL,SEASON_UNCHAINED,PVP_GLADIATOR),
 						}),
 						i(201864, {	-- Ensemble: Unchained Gladiator's Cloth Armor
 							["classes"] = CLOTH_CLASSES,

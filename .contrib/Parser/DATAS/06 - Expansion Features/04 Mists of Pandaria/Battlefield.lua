@@ -9,7 +9,7 @@ local LATENT_KORKRON_GLOVES = 97828;
 local LATENT_KORKRON_BELT = 97832;
 local LATENT_KORKRON_LEGGINGS = 97830;
 local LATENT_KORKRON_BOOTS = 97827;
-root(ROOTS.ExpansionFeatures, expansion(MOP_TIER, bubbleDown({ ["timeline"] = { "added 5.3.0", "removed 5.4.0" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { "added 5.3.0", "removed 5.4.0" } }, {
 	n(-398, {	-- Battlefield: Barrens
 		["description"] = "During 5.3 a big battle occured in Barrens.",
 		["maps"] = {
@@ -310,7 +310,7 @@ root(ROOTS.ExpansionFeatures, expansion(MOP_TIER, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers,{
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(32860),	-- Battle of Razor Hill Tracking Quest
 		q(32890),	-- FLAG - Caravan Tutorial
 		q(32891),	-- FLAG - Commander Tutorial

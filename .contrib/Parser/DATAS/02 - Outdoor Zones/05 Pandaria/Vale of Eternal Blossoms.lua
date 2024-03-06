@@ -1981,7 +1981,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers,{
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(31652),	-- Roll Club: Serpent's Spine Tracking Quest
 	}),
 });

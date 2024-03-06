@@ -58,7 +58,7 @@ THE_FROSTWING_HALLS = createHeader({
 	},
 });
 
-root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { "added 3.3.0" } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { "added 3.3.0" } }, {
 	inst(758, {	-- Icecrown Citadel
 		["mapID"] = ICECROWN_CITADEL,
 		["maps"] = {
@@ -950,7 +950,7 @@ root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, 
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
 					["sym"] = {
-						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
+						{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, TRINKET, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
@@ -2490,7 +2490,7 @@ root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, 
 
 -- #if AFTER WRATH
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOTLK_TIER, {
+	expansion(EXPANSION.WRATH, {
 		q(24808),	-- Tank Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
 		q(24809),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
 		q(24810),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring

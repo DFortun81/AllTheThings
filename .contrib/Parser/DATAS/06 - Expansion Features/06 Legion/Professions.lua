@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(10600),	-- Legion Archaeologist
@@ -953,7 +953,7 @@ root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] =
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		--	Archaeology
 		q(41867),	-- FLAG - Brann Week 1
 		q(41868),	-- FLAG - Brann Week 2

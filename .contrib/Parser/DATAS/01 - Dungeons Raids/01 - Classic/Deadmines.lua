@@ -854,20 +854,20 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 
 -- #if AFTER 6.0.1
 -- With how we sort instances, this is actually "The Deadmines" before 6.0.1 and for Retail this puts it in the right spot.
-root(ROOTS.Instances, expansion(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	DEADMINES_INSTANCE,
 }));
 -- #endif
 
 -- #if AFTER 6.0.1
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		inst(63, {	-- Deadmines
 			q(35586),	-- Deadmines Reward Quest - Normal completion
 			q(35587),	-- Deadmines Reward Quest - Heroic completion
 		}),
 	}),
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		inst(63, {	-- Deadmines
 			q(42778),	-- [Scarlet Crusader] When completing 44930/using Ensemble: Blackened Defias Armor
 		}),

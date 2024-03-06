@@ -12,7 +12,7 @@ GARRISON_INVASIONS = createHeader({
 	},
 });
 root(ROOTS.ExpansionFeatures,
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(GARRISON_INVASIONS, {
 				n(ACHIEVEMENTS, {

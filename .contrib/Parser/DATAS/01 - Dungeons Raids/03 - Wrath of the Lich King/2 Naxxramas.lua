@@ -15,7 +15,7 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 end]];
 -- #endif
 local DEATHS_BARGAINING_CHIP = 206576;
-root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(754, {	-- Naxxramas
 		["mapID"] = NAXXRAMAS,
 		["maps"] = { 163, 164, 165, 166, 167 },

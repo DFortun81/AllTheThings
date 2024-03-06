@@ -54,7 +54,7 @@ local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30001; end
 end]];
 -- #endif
-root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(expansion(TBC_TIER, {
+root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(expansion(EXPANSION.TBC, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Wrath.
 		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, FILTERFUNC_itemID, {
@@ -385,7 +385,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 								"removed 7.2.5",
 							},
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },
 							},
 						}),
 						i(28302, {	-- Gladiator's Bonecracker
@@ -469,7 +469,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 28443 },	-- General's Dragonhide Belt
 								{"select", "itemID", 28444 },	-- General's Dragonhide Boots
 								{"select", "itemID", 31594 },	-- General's Kodohide Belt
@@ -537,7 +537,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 28450 },	-- General's Chain Girdle
 								{"select", "itemID", 28449 },	-- General's Chain Sabatons
 								{"select", "itemID", 28974 },	-- Marshal's Chain Girdle
@@ -565,7 +565,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 28409 },	-- General's Silk Belt
 								{"select", "itemID", 29001 },	-- Marshal's Silk Belt
 								{"select", "itemID", 28410 },	-- General's Silk Footguards
@@ -593,7 +593,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 28641 },	-- General's Lamellar Belt
 								{"select", "itemID", 28642 },	-- General's Lamellar Greaves
 								{"select", "itemID", 32982 },	-- General's Ornamented Belt
@@ -661,7 +661,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 147613 },	-- General's Satin Cord
 								{"select", "itemID", 147614 },	-- General's Satin Slippers
 								{"select", "itemID", 147771 },	-- General's Satin Cuffs
@@ -704,7 +704,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 28423 },	-- General's Leather Belt
 								{"select", "itemID", 28422 },	-- General's Leather Boots
 								{"select", "itemID", 28986 },	-- Marshal's Leather Belt
@@ -732,7 +732,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 28629 },	-- General's Linked Girdle
 								{"select", "itemID", 28630 },	-- General's Linked Sabatons
 								{"select", "itemID", 28639 },	-- General's Mail Girdle
@@ -800,7 +800,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
 								{"merge"},	-- Merge all sub results for processing
 								{"exclude", "itemID",
 									24553,	-- General's Dreadweave Hood
@@ -851,7 +851,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 28385 },	-- General's Plate Belt
 								{"select", "itemID", 28383 },	-- General's Plate Greaves
 								{"select", "itemID", 28995 },	-- Marshal's Plate Belt
@@ -1341,8 +1341,8 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },
-								{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },
 							},
 						}),
 						i(33313, {	-- Merciless Gladiator's Barrier
@@ -1432,7 +1432,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 32810 },	-- Veteran's Dragonhide Bracers
 								{"select", "itemID", 32798 },	-- Veteran's Dragonhide Belt
 								{"select", "itemID", 32786 },	-- Veteran's Dragonhide Boots
@@ -1497,7 +1497,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 32809 },	-- Veteran's Chain Bracers
 								{"select", "itemID", 32797 },	-- Veteran's Chain Girdle
 								{"select", "itemID", 32785 },	-- Veteran's Chain Sabatons
@@ -1524,7 +1524,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 32820 },	-- Veteran's Silk Cuffs
 								{"select", "itemID", 32807 },	-- Veteran's Silk Belt
 								{"select", "itemID", 32795 },	-- Veteran's Silk Footguards
@@ -1551,7 +1551,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 32813 },	-- Veteran's Lamellar Bracers
 								{"select", "itemID", 32801 },	-- Veteran's Lamellar Belt
 								{"select", "itemID", 32789 },	-- Veteran's Lamellar Greaves
@@ -1616,7 +1616,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 32980 },	-- Veteran's Mooncloth Cuffs
 								{"select", "itemID", 32979 },	-- Veteran's Mooncloth Belt
 								{"select", "itemID", 147609 },	-- Veteran's Satin Slippers
@@ -1659,7 +1659,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 147612 },	-- Veteran's Leather Wristguards
 								{"select", "itemID", 147610 },	-- Veteran's Leather Waistband
 								{"select", "itemID", 147611 },	-- Veteran's Leather Footguards
@@ -1686,7 +1686,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 32816 },	-- Veteran's Linked Bracers
 								{"select", "itemID", 32803 },	-- Veteran's Linked Girdle
 								{"select", "itemID", 32791 },	-- Veteran's Linked Sabatons
@@ -1751,7 +1751,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 32811 },	-- Veteran's Dreadweave Cuffs
 								{"select", "itemID", 32799 },	-- Veteran's Dreadweave Belt
 								{"select", "itemID", 32787 },	-- Veteran's Dreadweave Stalkers
@@ -1794,7 +1794,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 32818 },	-- Veteran's Plate Bracers
 								{"select", "itemID", 32805 },	-- Veteran's Plate Bel
 								{"select", "itemID", 32793 },	-- Veteran's Plate Greaves
@@ -2070,7 +2070,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },
 							},
 						}),
 						i(33661, {	-- Vengeful Gladiator's Barrier
@@ -2190,7 +2190,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 33881 },	-- Vindicator's Dragonhide Bracers
 								{"select", "itemID", 33879 },	-- Vindicator's Dragonhide Belt
 								{"select", "itemID", 33880 },	-- Vindicator's Dragonhide Boots
@@ -2255,7 +2255,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 33876 },	-- Vindicator's Chain Bracers
 								{"select", "itemID", 33877 },	-- Vindicator's Chain Girdle
 								{"select", "itemID", 33878 },	-- Vindicator's Chain Sabatons
@@ -2282,7 +2282,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 33913 },	-- Vindicator's Silk Cuffs
 								{"select", "itemID", 33912 },	-- Vindicator's Silk Belt
 								{"select", "itemID", 33914 },	-- Vindicator's Silk Footguards
@@ -2309,7 +2309,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 33889 },	-- Vindicator's Lamellar Bracers
 								{"select", "itemID", 33888 },	-- Vindicator's Lamellar Belt
 								{"select", "itemID", 33890 },	-- Vindicator's Lamellar Greaves
@@ -2374,7 +2374,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 33901 },	-- Vindicator's Mooncloth Cuffs
 								{"select", "itemID", 33900 },	-- Vindicator's Mooncloth Belt
 								{"select", "itemID", 33902 },	-- Vindicator's Mooncloth Slippers
@@ -2417,7 +2417,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 33891 },	-- Vindicator's Leather Belt
 								{"select", "itemID", 33892 },	-- Vindicator's Leather Boots
 								{"select", "itemID", 147670 },	-- Vindicator's Leather Wristguards
@@ -2444,7 +2444,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 33894 },	-- Vindicator's Linked Bracers
 								{"select", "itemID", 33895 },	-- Vindicator's Linked Girdle
 								{"select", "itemID", 33896 },	-- Vindicator's Linked Sabatons
@@ -2509,7 +2509,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 33883 },	-- Vindicator's Dreadweave Cuffs
 								{"select", "itemID", 33882 },	-- Vindicator's Dreadweave Belt
 								{"select", "itemID", 33884 },	-- Vindicator's Dreadweave Stalkers
@@ -2552,7 +2552,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 33813 },	-- Vindicator's Plate Bracers
 								{"select", "itemID", 33811 },	-- Vindicator's Plate Belt
 								{"select", "itemID", 33812 },	-- Vindicator's Plate Greaves
@@ -2842,7 +2842,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },
+								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },
 							},
 						}),
 						i(34986, {	-- Brutal Gladiator's Barrier
@@ -2971,7 +2971,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, DEATHKNIGHT },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, DEATHKNIGHT },
 								{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 								{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 								{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
@@ -2998,7 +2998,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, DRUID },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
 								{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
 								{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
@@ -3063,7 +3063,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, HUNTER },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 35166 },	-- Guardian's Chain Bracers
 								{"select", "itemID", 35151 },	-- Guardian's Chain Girdle
 								{"select", "itemID", 35136 },	-- Guardian's Chain Sabatons
@@ -3090,7 +3090,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, MAGE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 35179 },	-- Guardian's Silk Cuffs
 								{"select", "itemID", 35164 },	-- Guardian's Silk Belt
 								{"select", "itemID", 35149 },	-- Guardian's Silk Footguards
@@ -3117,7 +3117,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, PALADIN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 35170 },	-- Guardian's Lamellar Bracers
 								{"select", "itemID", 35155 },	-- Guardian's Lamellar Belt
 								{"select", "itemID", 35140 },	-- Guardian's Lamellar Greaves
@@ -3182,7 +3182,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, PRIEST },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 35174 },	-- Guardian's Mooncloth Cuffs
 								{"select", "itemID", 35159 },	-- Guardian's Mooncloth Belt
 								{"select", "itemID", 35144 },	-- Guardian's Mooncloth Slippers
@@ -3225,7 +3225,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, ROGUE },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 35171 },	-- Guardian's Leather Bracers
 								{"select", "itemID", 35156 },	-- Guardian's Leather Belt
 								{"select", "itemID", 35141 },	-- Guardian's Leather Boots
@@ -3252,7 +3252,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, SHAMAN },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 35172 },	-- Guardian's Linked Bracers
 								{"select", "itemID", 35157 },	-- Guardian's Linked Girdle
 								{"select", "itemID", 35142 },	-- Guardian's Linked Sabatons
@@ -3317,7 +3317,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, WARLOCK },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 35168 },	-- Guardian's Dreadweave Cuffs
 								{"select", "itemID", 35153 },	-- Guardian's Dreadweave Belt
 								{"select", "itemID", 35138 },	-- Guardian's Dreadweave Stalkers
@@ -3360,7 +3360,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["timeline"] = { "added 7.2.0.23436" },
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, WARRIOR },
+								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 								{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 								{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
@@ -3641,7 +3641,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 }))))));
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		-- PvP Ensembles
 		q(46621),	-- Gladiator's Chain Armor (Hunter)
 		q(46622),	-- Gladiator's Dragonhide Armor (Druid)
@@ -3691,7 +3691,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #endif
 -- #if AFTER TBC
 root(ROOTS.NeverImplemented, {
-	expansion(TBC_TIER, {
+	expansion(EXPANSION.TBC, {
 		-- #if BEFORE 4.0.1.12941
 		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 			["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor

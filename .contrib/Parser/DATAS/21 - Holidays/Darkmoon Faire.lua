@@ -4500,11 +4500,11 @@ STURDY_RECURVE.u = nil;
 FINE_SHORTBOW.u = nil;
 
 root(ROOTS.HiddenQuestTriggers,{
-	expansion(CATA_TIER, {
+	expansion(EXPANSION.CATA, {
 		q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
 		q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
 	}),
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
 		q(30556),	-- [DNT] A Wondrous Weapon TRACKER - triggers after completing A Wondrous Weapon (questID 29446)
@@ -4527,7 +4527,7 @@ root(ROOTS.HiddenQuestTriggers,{
 		q(30560),	-- [DNT] Tools of Divination TRACKER - triggers after completing Tools of Divination (questID 29464)
 		q(30546),	-- [DNT] Writing the Future TRACKER - triggers after completing Writing the Future (questID 29515)
 	}),
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		q(45038),	-- Hexsweeper lvl 1
 		q(45039),	-- Hexsweeper lvl 2
 		q(45040),	-- Hexsweeper lvl 3

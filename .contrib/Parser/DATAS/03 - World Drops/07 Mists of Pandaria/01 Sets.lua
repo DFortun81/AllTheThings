@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		n(SETS, {
 			i(82139),	-- Brewer's Cord
 			i(82140),	-- Brewer's Cowl

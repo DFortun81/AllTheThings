@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(285, {	-- Utgarde Keep
 		["mapID"] = UTGARDE_KEEP,
 		["coord"] = { 58.2, 48.9, HOWLING_FJORD },
@@ -445,7 +445,7 @@ root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35502),	-- Utgarde Keep Reward Quest - Normal completion
 		q(35512),	-- Utgarde Keep Reward Quest - Heroic completion
 	}),

@@ -4,7 +4,7 @@
 
 -- These are Quests which have no restriction on the Quest itself but requires some Profession-made Thing to start the Quest
 root(ROOTS.Craftables, {
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		n(QUESTS, {
 			q(31752, {	-- Blingtron 4000
 				["qg"] = 43929,	-- Blingtron 4000
@@ -30,7 +30,7 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	}),
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		n(QUESTS, {
 			q(34774, {	-- Blingtron 5000
 				["qg"] = 77789,	-- Blingtron 5000
@@ -52,7 +52,7 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	}),
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		n(QUESTS, {
 			q(40753, {	-- Blingtron 6000
 				["qg"] = 101527,	-- Blingtron 6000
@@ -74,7 +74,7 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	}),
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		n(QUESTS, {
 			q(56042, {	-- Blingtron 7000
 				["qg"] = 153897,	-- Blingtron 7000

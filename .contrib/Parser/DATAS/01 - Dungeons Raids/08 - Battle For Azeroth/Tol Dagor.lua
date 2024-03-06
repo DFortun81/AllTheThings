@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(BFA_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1002, {	-- Tol Dagor
 		["coord"] = { 38.8, 70.1, 1169 },
 		["maps"] = {

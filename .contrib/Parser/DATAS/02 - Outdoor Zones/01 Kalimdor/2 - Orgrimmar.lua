@@ -2316,7 +2316,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.2.0.16591" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
+						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
@@ -2509,7 +2509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.3.0.15050" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },
+						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
@@ -4138,7 +4138,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.6.13596" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_HONOR },
+						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
@@ -4326,7 +4326,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.2.0.16591" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized
+						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},

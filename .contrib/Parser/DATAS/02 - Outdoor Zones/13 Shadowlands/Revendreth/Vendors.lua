@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
-							{"select","expansionID",SL_TIER},	-- Select Shadowlands
+							{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),

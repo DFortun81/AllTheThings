@@ -5,7 +5,7 @@ local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
 	["description"] = "Rewarded at 52, 67 and 76 Renown.",
 });
 
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
@@ -74,7 +74,7 @@ root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] 
 
 WISPS_OF_MEMORY.customCollect = nil;
 
-root(ROOTS.HiddenQuestTriggers, expansion(SL_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(VENTHYR, {
 		n(RENOWN, {
 			q(62750),	-- hitting Renown 19

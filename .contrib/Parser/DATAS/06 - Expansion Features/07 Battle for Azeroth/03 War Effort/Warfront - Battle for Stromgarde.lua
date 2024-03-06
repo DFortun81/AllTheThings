@@ -136,7 +136,7 @@ local HORDE_WARFRONT_EQUIPMENT = {
 	i(163460),	-- Honorbound Centurion's Greaves
 };
 root(ROOTS.ExpansionFeatures,
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		n(WAR_EFFORT, {
 			m(ARATHI_HIGHLANDS, {	-- Outdoor Warfront-Phased Content
 				-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
@@ -1757,7 +1757,7 @@ root(ROOTS.ExpansionFeatures,
 );
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		n(WAR_EFFORT, {
 			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 				q(51342, {["repeatable"]=true}),	-- completion of Normal warfront

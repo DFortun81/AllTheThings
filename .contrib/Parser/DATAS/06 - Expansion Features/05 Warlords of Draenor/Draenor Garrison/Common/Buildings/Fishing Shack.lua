@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local NATS_LUCKY_COIN = 117397;
-root(ROOTS.ExpansionFeatures, expansion(WOD_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 		n(BUILDINGS, {
 			garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)

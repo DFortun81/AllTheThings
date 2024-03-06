@@ -2620,12 +2620,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 
 -- #if AFTER 6.0.1
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
 			["timeline"] = { "added 6.0.1" },
 		}),
 	}),
-	expansion(DF_TIER, {
+	expansion(EXPANSION.DF, {
 		q(77775, {	-- Daily kill of Coren Direbrew
 			["timeline"] = { ADDED_10_1_7 },
 		}),

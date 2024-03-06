@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(559, {	-- Upper Blackrock Spire
 		["coord"] = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
 		["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
@@ -288,7 +288,7 @@ root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(36865),	-- UBRS Event Dungeon Reward Quest
 		q(34554),	-- Upper Blackrock Spire Challenge Mode - Bronze Addition (Nth)
 		q(34531),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)

@@ -44,7 +44,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 	})),
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			ach(18765, {	-- Destined to be Legendary
 				["provider"] = { "i", 17193 },	-- Sulfuron Hammer
@@ -143,7 +143,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 	}),
-	expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18852, {	-- Weaponsmithing, Reborn
 				crit(61556, {	-- Wicked Edge of the Planes, Reborn
@@ -184,7 +184,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			})),
 		}),
 	})),
-	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(38499, {	-- Strange New Ores
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN },
@@ -670,7 +670,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		})),
 	})),
-	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18771, {	-- Khaz'gorian Smithing Hammer
 				["provider"] = { "i", 152839 },	-- Khaz'gorian Smithing Hammer
@@ -787,7 +787,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			})),
 		}),
 	})),
-	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
 			q(70358, {	-- Dragon Isles Blacksmithing
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
@@ -1319,7 +1319,7 @@ profession(BLACKSMITHING, {
 		},
 	}),
 	-- #endif
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -2608,7 +2608,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}),
-	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -3159,7 +3159,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -3731,7 +3731,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -4153,7 +4153,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
 		n(DISCOVERY, {
 			spell(143255, {	-- Balanced Trillium Ingot
 				recipe(143165),	-- Crafted Malevolent Gladiator's Dreadplate Helm
@@ -5158,7 +5158,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -5521,7 +5521,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",

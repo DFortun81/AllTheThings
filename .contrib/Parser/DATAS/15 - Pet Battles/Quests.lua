@@ -1068,7 +1068,7 @@ root(ROOTS.PetBattles, petbattle({
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31812 },	-- Zunta, The Pet Tramer
 		}),
-		expansion(TBC_TIER, {
+		expansion(EXPANSION.TBC, {
 			q(31922, {	-- Nicki Tinytech
 				["qg"] = 66550,	-- Nicki Tinytech
 				["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
@@ -1094,7 +1094,7 @@ root(ROOTS.PetBattles, petbattle({
 				["provider"] = { "n", 66553 },	-- Morulu The Elder
 			}),
 		}),
-		expansion(WOTLK_TIER, {
+		expansion(EXPANSION.WRATH, {
 			q(31932, {	-- Nearly Headless Jacob
 				["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
 				["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
@@ -1121,7 +1121,7 @@ root(ROOTS.PetBattles, petbattle({
 				["provider"] = { "n", 66639 },
 			}),
 		}),
-		expansion(CATA_TIER, {
+		expansion(EXPANSION.CATA, {
 			q(31972, {	-- Brok
 				["provider"] = { "n", 66819 },	-- Brok
 				["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
@@ -1144,7 +1144,7 @@ root(ROOTS.PetBattles, petbattle({
 				["repeatable"] = true,
 			}),
 		}),
-		expansion(MOP_TIER, {
+		expansion(EXPANSION.MOP, {
 			q(31957, {	-- Grand Master Shu
 				["coord"] = { 55.1, 37.6, DREAD_WASTES },
 				["provider"] = { "n", 66739 },	-- Wastewalker Shu
@@ -1320,7 +1320,7 @@ root(ROOTS.PetBattles, petbattle({
 				},
 			}),
 		}),
-		expansion(WOD_TIER, {
+		expansion(EXPANSION.WOD, {
 			q(37203, {	-- Ashlei
 				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				["provider"] = { "n", 87124 },	-- Ashlei

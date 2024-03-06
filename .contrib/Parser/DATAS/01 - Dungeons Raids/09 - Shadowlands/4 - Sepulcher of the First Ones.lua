@@ -354,7 +354,7 @@ local SymRaid = function(ClassID, ModID)
 	return SymLink
 end
 
-root(ROOTS.Instances, expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
@@ -1732,7 +1732,7 @@ root(ROOTS.Instances, expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(SL_TIER, {
+	expansion(EXPANSION.SL, {
 		inst(1195, {	-- Sepulcher of the First Ones
 		-- Normal
 			q(65356),	-- Entering the Raid

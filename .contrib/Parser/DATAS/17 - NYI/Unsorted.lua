@@ -16,7 +16,7 @@ SOURCELESS = createHeader({
 });
 root(ROOTS.Unsorted, {
 	n(SOURCELESS, {
-		expansion(BFA_TIER, {
+		expansion(EXPANSION.BFA, {
 			-------------------------------------------
 			-- DO NOT TOUCH THIS PART OR I KNIFE YOU --
 			----------------- DARKAL ------------------
@@ -558,8 +558,8 @@ root(ROOTS.Unsorted, {
 			q(64975),	--
 		}),
 	}),
-	expansion(DF_TIER, {
-		expansion(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+	expansion(EXPANSION.DF, {
+		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(19031),	-- Fyrn [Promotion]
 			}),
@@ -1142,7 +1142,7 @@ root(ROOTS.Unsorted, {
 				q(80066),	--
 			}),
 		})),
-		expansion(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211260),	-- Crimson Gladiator's Spear
 			i(208878),	-- Adventurer's Footlocker
 			--
@@ -1319,13 +1319,13 @@ root(ROOTS.Unsorted, {
 				q(78122),	--
 			}),
 		})),
-		expansion(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			n(QUESTS, {
 				-- 10.1.7.51754
 				q(75369),	-- Use Your Coin!
 			}),
 		})),
-		expansion(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			n(QUESTS, {
 				-- 10.1.5.49516
 				q(76267),	--
@@ -1348,7 +1348,7 @@ root(ROOTS.Unsorted, {
 				q(77641),	--
 			}),
 		})),
-		expansion(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			i(203458),	-- Black Dragonscale Robes (QI!)
 			i(203453),	-- Dragonbone Totem (QI!)
 			i(203455),	-- Draketooth Fetish (QI!)
@@ -1494,7 +1494,7 @@ root(ROOTS.Unsorted, {
 				q(75059),	--
 			}),
 		})),
-		expansion(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 			n(QUESTS, {
 				-- 10.0.7.47910
 				q(72425),	--
@@ -1564,7 +1564,7 @@ root(ROOTS.Unsorted, {
 				q(75449),	--
 			})
 		})),
-		expansion(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			n(QUESTS, {
 				-- 10.0.5.47799
 				q(66925),	-- [DNT] Boar-B-Q
@@ -1578,7 +1578,7 @@ root(ROOTS.Unsorted, {
 				q(74898),	--
 			}),
 		})),
-		expansion(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 			n(QUESTS, {
 				-- 10.0.2.45779
 				q(72350),	--
@@ -1708,7 +1708,7 @@ root(ROOTS.Unsorted, {
 				q(74416),	--
 			}),
 		})),
-		expansion(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			n(QUESTS, {
 				-- 10.0.0.44649
 				q(63520),	-- Winging It
@@ -2485,8 +2485,8 @@ root(ROOTS.Unsorted, {
 		i(199687),	-- BWU Test Hammer
 		i(199690),	-- BWU Test Profession Accessory
 	}),
-	expansion(SL_TIER, {
-		expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+	expansion(EXPANSION.SL, {
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(175504),	-- Cord of Pained Absolution
 			i(183830),	-- Do It Yourself Flag Kit
 			i(174780),	-- Emptied First Aid Kit
@@ -3271,7 +3271,7 @@ root(ROOTS.Unsorted, {
 				i(183919),	-- Ashen Core
 			}),
 		})),
-		expansion(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 			i(176921),	-- Temporal Leaves
 			i(176922),	-- Wild Nightbloom
 			i(176832),	-- Wildseed Root Grain
@@ -3297,7 +3297,7 @@ root(ROOTS.Unsorted, {
 				i(178585),	-- The Forgotten Key
 			}),
 		})),
-		expansion(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			i(187552),	-- Perfectly-Forged Credentials
 			i(187551),	-- Small Korthian Supply Chest
 			i(185918),	-- Translated Cryptograms
@@ -3323,13 +3323,13 @@ root(ROOTS.Unsorted, {
 				i(187005),	-- Wizard Pet Hat
 			}),
 		})),
-		expansion(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 			filter(QUEST_ITEMS, {
 				i(187520),	-- Gently Shaken Gift
 				i(187561),	-- Winter Veil Gift
 			}),
 		})),
-		expansion(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			filter(QUEST_ITEMS, {
 				i(187274),	-- Ancient Alloy
 				i(188522),	-- Ancient Archive
@@ -3374,7 +3374,7 @@ root(ROOTS.Unsorted, {
 				i(188192),	-- Worn Stone Fragment
 			}),
 		})),
-		expansion(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
+		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
 			filter(QUEST_ITEMS, {
 				i(192093),	-- Gently Shaken Gift
 				i(192094),	-- Winter Veil Gift

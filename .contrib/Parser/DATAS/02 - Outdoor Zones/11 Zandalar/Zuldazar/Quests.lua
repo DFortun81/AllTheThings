@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 	["sym"] = {
-		{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
+		{ "sub", "pvp_gear_base", EXPANSION.BFA, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
 		{ "pop" },	-- discard Aspirant / Combatant Gear header
 		{ "pop" },	-- discard item type headers
 		{ "modID", 47 },	-- blue.  still the wrong iLvl because i can't also apply 2, but it looks better

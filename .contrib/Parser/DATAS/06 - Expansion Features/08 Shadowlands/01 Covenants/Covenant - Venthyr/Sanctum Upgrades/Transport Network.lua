@@ -40,7 +40,7 @@ BROKEN_MIRROR_D1 = breakAnotherMirror( "D1" );
 BROKEN_MIRROR_D2 = breakAnotherMirror( "D2" );
 BROKEN_MIRROR_D3 = breakAnotherMirror( "D3" );
 
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",

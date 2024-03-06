@@ -3020,7 +3020,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers,{
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		-- RARES
 		q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu
 		q(33288),	-- Tracking Quest - First - Archiereus of Flame

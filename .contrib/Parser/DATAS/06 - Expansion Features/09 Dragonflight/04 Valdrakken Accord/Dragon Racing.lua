@@ -8,7 +8,7 @@ DRAGONRIDING_RACING = createHeader({
 		en = "Dragonriding Racing",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(DRAGONRIDING_RACING, bubbleDownSelf({ ["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 7 } }, {
 			header(HEADERS.Map, DRAGON_ISLES, {

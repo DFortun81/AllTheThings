@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
-root(ROOTS.Instances, expansion(BFA_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1022, {	-- The Underrot
 		["coord"] = { 51.6, 65.3, NAZMIR },
 		["maps"] = {

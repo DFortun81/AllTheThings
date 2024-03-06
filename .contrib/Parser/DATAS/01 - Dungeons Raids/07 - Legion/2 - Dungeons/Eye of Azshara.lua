@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(716, {	-- Eye of Azshara
 		["mapID"] = 713,
 		["coord"] = { 61.2, 41.1, AZSUNA },

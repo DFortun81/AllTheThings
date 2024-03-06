@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #if ANYCLASSIC
-	expansion(TBC_TIER, {
+	expansion(EXPANSION.TBC, {
 		["timeline"] = { "added 2.5.1" },
 		["groups"] = {
 			-- 2021 5th May until 5th Nov 2021
@@ -121,7 +121,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			}),
 		},
 	}),
-	expansion(WOTLK_TIER, {
+	expansion(EXPANSION.WRATH, {
 		["timeline"] = { "added 3.4.0" },
 		["groups"] = {
 			q(72523, {	-- Festering Emerald Drake [2022 11th November until 15th January 2023]

@@ -1,7 +1,7 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
-root(ROOTS.Secrets, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	header(HEADERS.Item, 206040, {	-- Mote of Nasz'uro
 		n(REWARDS, {
 			["maps"] = { 

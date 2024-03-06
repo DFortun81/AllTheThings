@@ -312,7 +312,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(47256),	-- learning Arsenal: Armaments of the Silver Hand
 	}),
 });

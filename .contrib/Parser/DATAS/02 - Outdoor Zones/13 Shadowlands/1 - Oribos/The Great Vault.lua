@@ -25,7 +25,7 @@ local SymPvP = function(SeasonID)
 end
 local SymRaid = function(InstanceID, Remove)
 	SymLink = {
-		{"select", "expansionID", SL_TIER},		-- Select Shadowlands
+		{"select", "expansionID", EXPANSION.SL},		-- Select Shadowlands
 		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
 		{"where", "instanceID", InstanceID},	-- Instance
 		{"pop"},								-- Discard the Instance Header and acquire all of their children.

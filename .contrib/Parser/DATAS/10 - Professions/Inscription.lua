@@ -3392,7 +3392,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 	})),
-	expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 		ach(18725, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Best Stellar
 			i(208421),	-- Compendium of the New Moon (TOY!)
 			crit(60884, {	-- Rituals of the New Moon - Black Wolf
@@ -3409,7 +3409,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		})),
 	})),
-	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(39847, {	-- Sign This
 			["provider"] = { "n", 92195 },	-- Professor Pallin
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
@@ -3736,7 +3736,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			},
 		})),
 	})),
-	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18772, {	-- Sanguine Feather Quill of Lana'thel
 				["provider"] = { "i", 153670 },	-- Sanguine Feather Quill of Lana'thel
@@ -3863,7 +3863,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			})),
 		}),
 	})),
-	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
 			q(70361, {	-- Dragon Isles Inscription
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
@@ -4694,7 +4694,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 	}),
 	-- Crieve NOTE: Inscription came out with Wrath and the other sections had like no content and a bunch of overlap.
 	-- So I merged them into Wrath for clarity.
-	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 		r(51005, {	-- Milling
 			-- #if NOT ANYCLASSIC
 			-- TODO: Check Retail ATT if this can be marked collectible, works fine in Classic.
@@ -4844,7 +4844,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(61120),	-- Master's Inscription of the Storm
 		}),
 	}))),
-	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
 		r(86008, {	-- Inscription (Cata)
 			["collectible"] = false,	-- the profession itself is not a recipe
 		});
@@ -4897,7 +4897,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(86644),	-- Origami Slime*
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
 		cat(779, {	-- Inks
 			r(111645),	-- Ink of Dreams
 			r(111646),	-- Starlight Ink
@@ -4954,7 +4954,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(127007),	-- Yu'lon Kite
 		}),
 	}))),
-	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 		cat(403, {	-- Merchant Orders
 			r(176513, {	-- Draenor Merchant Order
 				["u"] = TRAINING,	-- Profession Training Recipe
@@ -5034,7 +5034,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(166363),	-- Shadowtome
 		}),
 	}))),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
 		r(195115, {	-- Inscription (Legion)
 			["timeline"]={ "added 7.0.3", "deleted 8.0.1" },
 			["collectible"] = false,	-- the profession itself is not a recipe
@@ -5149,7 +5149,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(192895),	-- Vantus Rune: Xavius [Rank 3]
 		}),
 	}))),
-	applyclassicphase(BFA_PHASE_ONE, expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
+	applyclassicphase(BFA_PHASE_ONE, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
 		r(264508, {	-- Kul Tiran Inscription
 			["races"] = ALLIANCE_ONLY,
 			["collectible"] = false,	-- the profession itself is not a recipe
@@ -5344,7 +5344,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		})),
 	}))),
 	--[[
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		cat(1410, {	-- Contracts
 			r(354000, {["timeline"]={ADDED_9_1_0}}),	-- Contract: Death's Advance
 			r(311412),	-- Contract: Court of Harvesters

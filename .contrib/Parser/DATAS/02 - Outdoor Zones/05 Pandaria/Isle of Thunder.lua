@@ -1125,7 +1125,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers,{
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		q(32260),	-- Alliance Quest Choice: PvE
 		q(32261),	-- Alliance Quest Choice: PvP
 		q(32720),	-- Choose Your Assignment

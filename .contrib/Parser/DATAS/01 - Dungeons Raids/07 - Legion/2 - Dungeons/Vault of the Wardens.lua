@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(707, {	-- Vault of the Wardens
 		["coord"] = { 48.0, 82.1, AZSUNA },
 		["maps"] = { 710, 711, 712 },

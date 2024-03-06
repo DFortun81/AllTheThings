@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(536, {	-- Grimrail Depot
 		["coord"] = { 55.0, 31.3, GORGROND },
 		["maps"] = { 606, 607, 608, 609 },
@@ -162,7 +162,7 @@ root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(34548),	-- Iron Depot Challenge Mode - Bronze Addition (Nth)
 		q(34529),	-- Iron Depot Challenge Mode - Consolation (Nth)
 		q(34550),	-- Iron Depot Challenge Mode - Gold Addition (Nth)

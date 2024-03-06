@@ -3,14 +3,14 @@
 ---------------------------------------------------------------
 -- #if AFTER 8.0.1
 root(ROOTS.NeverImplemented, filter(ILLUSIONS, {
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		-- 8.2.5
-		expansion(BFA_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
+		expansion(EXPANSION.BFA, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
 			ill(6185),	-- Stinging Sands (ILLUSION!)
 		})),
 
 		-- 8.3.0
-		expansion(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
 			i(174933),	-- Voidwrath (ILLUSION!)
 		})),
 	}),

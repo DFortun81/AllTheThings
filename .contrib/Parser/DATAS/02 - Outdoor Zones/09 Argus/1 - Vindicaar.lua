@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(48668),	-- Lightforged Beacon: City Center - triggers during the cutscene while on "Into the Night" (questID 48440)
 		q(47888),	-- Triggers when turning in "Alone in the Abyss" (questID 46938)
 		q(47869),	-- Triggers when turning in "Light's Exodus" (questID 47223)

@@ -8,7 +8,7 @@ root(ROOTS.NeverImplemented, {
 		prof(SKINNING, {
 			filter(MISC, {
 				-- 10.0.2
-				expansion(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+				expansion(EXPANSION.DF, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 					i(194076),	-- Exotic Resilient Leather
 					i(194067),	-- Festering Carcass
 					i(194066),	-- Frigid Frostfur Pelt
@@ -18,15 +18,15 @@ root(ROOTS.NeverImplemented, {
 				})),
 			}),
 			n(CRAFTABLES, {
-				expansion(SL_TIER, {
+				expansion(EXPANSION.SL, {
 					-- 9.0.1
-					expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+					expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 						i(177279),	-- Gaunt Sinew
 					})),
 				}),
-				expansion(DF_TIER, {
+				expansion(EXPANSION.DF, {
 					-- 10.0.0
-					expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+					expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						i(193232),	-- Deathchill Hide+
 						i(193233),	-- Deathchill Hide++
 						i(193234),	-- Deathchill Hide+++
@@ -37,9 +37,9 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			filter(RECIPES, {
-				expansion(DF_TIER, {
+				expansion(EXPANSION.DF, {
 					-- 10.0.0
-					expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+					expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						r(382587),	-- Opening
 					})),
 				}),

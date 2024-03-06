@@ -5,7 +5,7 @@
 
 root(ROOTS.NeverImplemented, {
 	n(FLIGHT_PATHS, {
-		expansion(CLASSIC_TIER, {
+		expansion(EXPANSION.CLASSIC, {
 			--- 1.x.x
 			n(P1xx, {
 				fp(1, {["description"] = "Northshire Abbey"}),
@@ -31,7 +31,7 @@ root(ROOTS.NeverImplemented, {
 				fp(78, {["description"] = "Naxxramas"}),
 			}),
 		}),
-		expansion(TBC_TIER, {
+		expansion(EXPANSION.TBC, {
 			n(P2xx, {
 				fp(81, {["description"] = "Filming"}),
 				fp(88, {["description"] = "Transport, Exodar"}),
@@ -104,9 +104,9 @@ root(ROOTS.NeverImplemented, {
 				fp(220, {["description"] = ""}),
 			}),
 		}),
-		expansion(WOTLK_TIER, {
+		expansion(EXPANSION.WRATH, {
 			-- 3.0.1
-			expansion(WOTLK_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 3.0.1" } }, {
+			expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = { "created 3.0.1" } }, {
 				fp(165, {["description"] = "Transport, Northrend 2"}),
 				fp(175, {["description"] = "Transport, Howling Fjord"}),
 				fp(176, {["description"] = "Quest - Howling Fjord Tauren Canoe (Start)"}),
@@ -206,20 +206,20 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 3.1.0
-			expansion(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+			expansion(EXPANSION.WRATH, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
 				fp(341, {["description"] = "Ulduar Raid - Interior - Insertion Point"}),
 				fp(342, {["description"] = "Ulduar Raid - Iron Concourse"}),
 			})),
 
 			-- 3.2.0
-			expansion(WOTLK_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
+			expansion(EXPANSION.WRATH, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
 				fp(348, {["description"] = "Transport: Thunder Bluff <-> Org (Zep)"}),
 				fp(352, {["description"] = "Isle of Conquest - Gunships"}),
 				fp(353, {["description"] = ""}),
 			})),
 
 			-- 3.3.0
-			expansion(WOTLK_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_3_0 } }, {
+			expansion(EXPANSION.WRATH, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_3_0 } }, {
 				fp(357, {["description"] = ""}),
 				fp(358, {["description"] = "Quest - Icecrown - North Sea Kraken Bombing - Start"}),
 				fp(359, {["description"] = "Quest - Icecrown - North Sea Kraken Bombing - End"}),
@@ -241,9 +241,9 @@ root(ROOTS.NeverImplemented, {
 				fp(440, {["description"] = "Durotar - ET - CC Prologue - Troll Battle End"}),
 			})),
 		}),
-		expansion(CATA_TIER, {
+		expansion(EXPANSION.CATA, {
 			-- 4.0.1
-			expansion(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+			expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 				fp(343, {["description"] = "Splintertree, Ashenvale"}),
 				fp(344, {["description"] = "Quest - Splintertree  Post -> Zoramgar"}),
 				fp(345, {["description"] = "Quest - Zoramgar, Ashenvale"}),
@@ -284,21 +284,21 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 4.1.0
-			expansion(CATA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_1_0 } }, {
+			expansion(EXPANSION.CATA, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_1_0 } }, {
 				fp(682, {["description"] = "Quest Path 1843: Transport - Gadgetzan to ??? JZB RVM Test [DISABLED]"}),
 				fp(728, {["description"] = "Quest Path 2653: 4.1 - ZG Event - Rebel Camp -> Explorers' League"}),
 				fp(757, {["description"] = "Quest Path 2695: PattyMac Taxi Path Speed Test"}),
 			})),
 
 			-- 4.3.0
-			expansion(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+			expansion(EXPANSION.CATA, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
 				fp(906, {["description"] = "Dragon Soul Raid - Wyrmrest Temple Base"}),
 				fp(907, {["description"] = "Dragon Soul Raid - East Sarlac"}),
 			})),
 		}),
-		expansion(MOP_TIER, {
+		expansion(EXPANSION.MOP, {
 			-- 5.0.4
-			expansion(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+			expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 				fp(888, {["description"] = "Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines"}),
 				fp(918, {["description"] = "Quest Path 2954: Quest - Valley of the Four Winds (Flyback: Chen A) PRK"}),
 				fp(919, {["description"] = "Quest Path 2955: Quest - Valley of the Four Winds (Flyback: Chen B) PRK"}),
@@ -340,15 +340,15 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 5.4.0
-			expansion(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+			expansion(EXPANSION.MOP, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 				fp(1284, {["description"] = "Quest Path 3877: Garrosh Raid - Siege Engineer - Pipe Transfer"}),
 				fp(1291, {["description"] = "Quest Path 3885: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Up (RKS) [REUSEME]"}),
 				fp(1292, {["description"] = "Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]"}),
 			})),
 		}),
-		expansion(WOD_TIER, {
+		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				fp(1350, {["description"] = "Shadowmoon Valley 6.0 - Observatory (JP3)"}),
 				fp(1351, {["description"] = "Shadowmoon Valley 6.0 - Ironhorde POI (JP3)"}),
 				fp(1385, {["description"] = "Arkaat Outpost, Shadowmoon Valley"}),
@@ -389,7 +389,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 6.1.0
-			expansion(WOD_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_1_0 } }, {
+			expansion(EXPANSION.WOD, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_1_0 } }, {
 				fp(1599, {["description"] = "Quest Path 4958: Garrison - 6.1 Chapter - H - Taxi to Iron Docks - JMC"}),
 				fp(1601, {["description"] = "Quest Path 4960: Garrison - 6.1 Chapter - H - Taxi from Iron Docks to Garrison - JMC"}),
 				fp(1605, {["description"] = "Quest Path 4965: Garrison - 6.1 Chapter - A - Taxi from Garrison to Iron Docks - JMC"}),
@@ -397,7 +397,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 6.2.0
-			expansion(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
+			expansion(EXPANSION.WOD, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
 				fp(1614, {["description"] = "Quest Path 4974: 6.2 Tanaan - Quest - H - From Vol'mar to Iron Front - JMC"}),
 				fp(1625, {["description"] = "Quest Path 4987: 6.2 Tanaan - Lion's Watch - Taxi Path to Aktar's Post (LWB)"}),
 				fp(1626, {["description"] = "Quest Path 4988: 6.2 Tanaan - Volmar - Taxi Path to Aktar's Post (LWB)"}),
@@ -413,9 +413,9 @@ root(ROOTS.NeverImplemented, {
 				fp(1731, {["description"] = "Alliance Shipyard Taxi"}),
 			})),
 		}),
-		expansion(LEGION_TIER, {
+		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+			expansion(EXPANSION.LEGION, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 				fp(1634, {["description"] = "Quest Path 5017: 7.0 Azsuna - Rift 01 - East Chasm -> West Chasm"}),
 				fp(1635, {["description"] = "Quest Path 5018: 7.0 Azsuna - Rift 01 - West Chasm -> East Chasm"}),
 				fp(1636, {["description"] = "Quest Path 5019: 7.0 Azsuna - Rift 02 - Tower -> Rock (ZTO)"}),
@@ -462,12 +462,12 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.1.0
-			expansion(LEGION_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
+			expansion(EXPANSION.LEGION, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
 				fp(1894, {["description"] = "Quest Path 6009: 7.1 Suramar -> Black Rook Hold ('We Need Weapons' ) - ZTO"}),
 			})),
 
 			-- 7.2.0
-			expansion(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
+			expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 				fp(1892, {["description"] = "Quest Path 6004: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Ramparts - LWB"}),
 				fp(1893, {["description"] = "Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Top - LWB"}),
 				fp(1899, {["description"] = "Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Alliance) -> Broken Shore (1666) - JAP"}),
@@ -488,7 +488,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.3.0
-			expansion(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+			expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
 				fp(1934, {["description"] = "TEMPAREA1, Argus"}),
 				fp(1935, {["description"] = "TEMPAREA2, Argus"}),
 				fp(1947, {["description"] = "Quest Path 6175: 7.3 Argus - Isle 2 - Alleria Arc - Alleria Shadow Ball Taxi (JAK)"}),
@@ -500,13 +500,13 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.3.5
-			expansion(LEGION_TIER, 3.5, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
+			expansion(EXPANSION.LEGION, 3.5, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
 				fp(2058, {["description"] = "Staghelm Point, Silithus"}),
 			})),
 		}),
-		expansion(BFA_TIER, {
+		expansion(EXPANSION.BFA, {
 			-- 8.0.1
-			expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 				fp(1945, {["description"] = "Quest Path 6154: 8.0 Zuldazar - Quest - 'King Rastakhan' - ZTO"}),
 				fp(1961, {["description"] = "Quest Path 6233: 8.0 Nazmir - Q: 47250 - Taxi to Jeb'watha ruins - LWB"}),
 				fp(1962, {["description"] = "Quest Path 6234: 8.0 Nazmir - Q: 42750 - Flight from Jeb'watha -> Zul'jan - LWB"}),
@@ -549,7 +549,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.0
-			expansion(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+			expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 				fp(2282, {["description"] = "Quest Path 6478: 8.0 Nazmir - Zuldazar to Talanji's Camp - (STM)"}),
 				fp(2382, {["description"] = "Quest Path 7405: 8.1 War Campaign - A - Ch1 - South Shore -> Ramparts - KRB"}),
 				fp(2383, {["description"] = "Quest Path 7496: 8.1 War Campaign - A - Ch1 - Ramparts -> South Shore  - KRB"}),
@@ -557,7 +557,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.2.0
-			expansion(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+			expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 				fp(2392, {["description"] = "Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path"}),
 				fp(2467, {["description"] = "test node"}),
 				fp(2471, {["description"] = "test node"}),
@@ -567,9 +567,9 @@ root(ROOTS.NeverImplemented, {
 				fp(2475, {["description"] = "adams second test node"}),
 			})),
 		}),
-		expansion(SL_TIER, {
+		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 				fp(2393, {["description"] = "TEMP, 9.0, Oribos, Bastion"}),
 				fp(2394, {["description"] = "TEMP, 9.0, Oribos, Maldraxxus"}),
 				fp(2396, {["description"] = "TEMP, 9.0, Oribos, Ardenweald"}),
@@ -655,7 +655,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.2
-			expansion(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+			expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 				fp(2681, {["description"] = "Quest Path 8460: 9.0 Bastion - Cloudwalker Coffer - Zipline - To Memorial Shrine (MAH)"}),
 				fp(2683, {["description"] = "Quest Path 8472: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Amphitheater -> Covenant Hall - GJC"}),
 				fp(2684, {["description"] = "Quest Path 8473: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Amphitheater - GJC"}),
@@ -666,12 +666,12 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.5
-			expansion(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
+			expansion(EXPANSION.SL, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
 				fp(2690, {["description"] = "Quest Path 8500: 9.0.5 Maw - Hidden Object - Shadehound Mount - Perdition Upper to Zovaals - LJS"}),
 			})),
 
 			-- 9.1.0
-			expansion(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+			expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 				fp(2691, {["description"] = "Quest Path 8507: 9.1 Campaign- Ch 06 - House of Rituals - Surface -> Exoramas - KRB"}),
 				fp(2692, {["description"] = "Quest Path 8508: 9.1 Campaign- Ch 06 - House of Rituals - Exoramas -> Surface - KRB"}),
 				fp(2695, {["description"] = "Quest Path 8530: 9.1 - Dungeon - Broker City - RP Throughline - Elevator Taxi Path"}),
@@ -679,7 +679,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.1.5
-			expansion(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+			expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 				fp(2708, {["description"] = "Quest Path 8614: 9.0 Maw - Outdoor - Ve'nari -> Perdition Hold"}),
 				fp(2709, {["description"] = "Quest Path 8615: 9.0 Maw - Outdoor - Ve'nari -> Desmotaeron"}),
 				fp(2710, {["description"] = "Quest Path 8616: 9.0 Maw - Outdoor - Mawsworn Rifts - Desmotaeron -> Perdition Hold"}),
@@ -687,13 +687,13 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.0
-			expansion(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+			expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 				fp(2732, {["description"] = "[HIDDEN] - 9.2 Resonant Peaks - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (MAH/JDA)"}),
 			})),
 		}),
-		expansion(DF_TIER, {
+		expansion(EXPANSION.DF, {
 			-- 10.0.0
-			expansion(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 				fp(2693, {["description"] = "Seamless Proto, Revendreth"}),
 				fp(2694, {["description"] = "Seamless Proto, Boralus"}),
 				fp(2717, {["description"] = "Quest Path 8628: 10.0 - Pre-Prod - Krav'rel to Azure Archives - (STM)"}),
@@ -725,13 +725,13 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.7
-			expansion(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+			expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 				fp(2856, {["description"] = "Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC"}),
 				fp(2857, {["description"] = "Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC"}),
 			})),
 
 			-- 10.1.0
-			expansion(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				fp(2860, {["description"] = "10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)"}),
 				fp(2866, {["description"] = "Cascades Canyon, Ohn'ahran Plains"}),
 				fp(2867, {["description"] = "The Throughway, Zaralek Cavern"}),
@@ -742,7 +742,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.7
-			expansion(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 				fp(2887, {["description"] = "Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)"}),
 				fp(2892, {["description"] = "Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)"}),
 			})),

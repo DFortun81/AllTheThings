@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "removed 7.0.3.22810" } }, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		["lvl"] = 98,
 		["groups"] = {
 			n(ACHIEVEMENTS, {

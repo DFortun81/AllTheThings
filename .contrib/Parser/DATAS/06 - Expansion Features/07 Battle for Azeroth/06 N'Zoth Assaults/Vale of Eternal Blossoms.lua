@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS, {	-- Vale of Eternal Blossoms
 		["icon"] = "Interface\\Icons\\INV_FACTION_83_RAJANI",
 		["lvl"] = { 50 },

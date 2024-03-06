@@ -105,7 +105,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 	})),
-	expansion(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			ach(17499, {	-- Renowned Tailoring Specialist
 				["sourceQuests"] = {
@@ -186,7 +186,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 	}))),
-	expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18815, {	-- Speed Dreamin'
 				crit(61333),	-- Dream of Skywall
@@ -197,7 +197,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 	})),
-	expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 		n(QUESTS, {
 			q(36236, {	-- The Cryptic Tome of Tailoring
 				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
@@ -231,7 +231,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 	})),
-	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18774, {	-- Synchronous Thread
 				["provider"] = { "i", 164733 },	-- Synchronous Thread
@@ -459,7 +459,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 	})),
-	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18902, {	-- Uncertified Nurse
 				crit(61745, {
@@ -827,7 +827,7 @@ profession(TAILORING, {
 		},
 	})),
 	-- #endif
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",
@@ -1950,7 +1950,7 @@ profession(TAILORING, {
 		},
 		-- #endif
 	}),
-	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",
@@ -2431,7 +2431,7 @@ profession(TAILORING, {
 		}
 		-- #endif
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",
@@ -2975,7 +2975,7 @@ profession(TAILORING, {
 		},
 		-- #endif
 	})),
-	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",
@@ -3363,7 +3363,7 @@ profession(TAILORING, {
 		},
 		-- #endif
 	})),
-	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",
@@ -4073,7 +4073,7 @@ profession(TAILORING, {
 			}),
 		}),
 	})),
-	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
 		n(DROPS, {
 		}),
 		-- #if AFTER SHADOWLANDS
@@ -4288,7 +4288,7 @@ profession(TAILORING, {
 		},
 		-- #endif
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",
@@ -4813,7 +4813,7 @@ profession(TAILORING, {
 		},
 		-- #endif
 	})),
-	applyclassicphase(BFA_PHASE_ONE, expansion(BFA_TIER, {
+	applyclassicphase(BFA_PHASE_ONE, expansion(EXPANSION.BFA, {
 		{
 			["name"] = "Embroidery",
 			["categoryID"] = 1116,
@@ -5619,7 +5619,7 @@ profession(TAILORING, {
 			},
 		}),
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(SL_TIER, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
 		applytraining({
 			-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 			-- for world quests then disappear from the spellbook after the quest is completed.

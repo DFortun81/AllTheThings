@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(959, {	-- Invasion Points
 		["isRaid"] = true,
 		-- ["sourceQuests"] = { },	-- TODO pretty sure a quest is required to unlock these
@@ -432,7 +432,7 @@ root(ROOTS.Instances, expansion(LEGION_TIER, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
 		--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
 		q(49195),	-- Greater Invasion Point: Occularus - weekly completion

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(LEGION_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(740, {	-- Black Rook Hold
 		["maps"] = { 751, 752, 753, 754, 755, 756 },
 		["coord"] = { 38.4, 50.8, VALSHARAH },

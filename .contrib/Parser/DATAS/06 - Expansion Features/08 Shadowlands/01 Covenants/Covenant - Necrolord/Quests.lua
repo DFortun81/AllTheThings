@@ -48,7 +48,7 @@ local LFR_WEAPON_GROUP = {
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
 
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(QUESTS, {
 			q(63212, {	-- Report to Mevix

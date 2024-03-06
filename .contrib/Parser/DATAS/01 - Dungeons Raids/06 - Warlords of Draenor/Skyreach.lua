@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(476, {	-- Skyreach
 		["lvl"] = 96,
 		["maps"] = { 601, 602 },
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35961),	-- Skyreach Reward Quest
 		q(34542),	-- Spires of Arak Challenge Mode - Bronze Addition (Nth)
 		q(34524),	-- Spires of Arak Challenge Mode - Consolation (Nth)

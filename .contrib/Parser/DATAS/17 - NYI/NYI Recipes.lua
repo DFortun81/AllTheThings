@@ -6,32 +6,32 @@
 root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		prof(ENGINEERING, {
-			expansion(TBC_TIER, {
+			expansion(EXPANSION.TBC, {
 				i(23813),	-- Schematic: Blue Smoke Flare [Removed in TBC Beta]
 				i(23882),	-- Schematic: Critter Enlarger [Removed in TBC Beta]
 				i(23812),	-- Schematic: Red Smoke Flare [Removed in TBC Beta]
 			}),
-			expansion(WOTLK_TIER, {
+			expansion(EXPANSION.WRATH, {
 				i(37589),	-- Hyper-Powered Mote Extractor
 			}),
-			expansion(MOP_TIER, {
+			expansion(EXPANSION.MOP, {
 				-- 5.2.0
-				expansion(MOP_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
+				expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
 					i(94894),	-- Schematic: Advanced Refrigeration Unit
 					i(97230),	-- Schematic: Jard's Peculiar Energy Source
 					i(94893),	-- Schematic: Pierre
 					i(94880),	-- Schematic: Sky Golem
 				})),
 			}),
-			expansion(WOD_TIER, {
+			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
+				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
 					i(100907),	-- Schematic: Rascal-Bot
 				})),
 			}),
-			expansion(LEGION_TIER, {
+			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					i(137692),	-- Schematic: Blingtron's Circuit Design Tutorial
 					i(137697),	-- Schematic: Blink-Trigger Headgun (Rank 2)
 					i(137699),	-- Schematic: Bolt-Action Headgun (Rank 2)
@@ -42,19 +42,19 @@ root(ROOTS.NeverImplemented, {
 				})),
 
 				-- 7.1.5
-				expansion(LEGION_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 7.1.5"} }, {
+				expansion(EXPANSION.LEGION, 1.5, bubbleDownSelf({ ["timeline"] = {"created 7.1.5"} }, {
 					i(144343),	-- Schematic: Rechargeable Reaves Battery
 				})),
 
 				-- 7.3.0
-				expansion(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
+				expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
 					i(151714),	-- Schematic: Gravitational Reduction Slippers
 					i(151717),	-- Schematic: Wormhole Generator: Argus
 				})),
 			}),
-			expansion(BFA_TIER, {
+			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 					i(162333),	-- Schematic: Catchroot Seed Spreader
 					i(162737),	-- Schematic: Catchroot Seed Spreader
 					i(162334),	-- Schematic: Charged Refrigeration Projectile
@@ -67,46 +67,46 @@ root(ROOTS.NeverImplemented, {
 				})),
 
 				-- 8.1.5
-				expansion(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 8.1.5"} }, {
+				expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = {"created 8.1.5"} }, {
 					i(165843),	-- Schematic: Mechantula
 				})),
 			}),
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
 					i(183867),	-- [DNT][REUSE ME] Schematic: Crafter's Mark III
 				})),
 			}),
 		}),
 		prof(FISHING, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(16082),	-- Artisan Fishing - The Way of the Lure
 			}),
-			expansion(CATA_TIER, {
+			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
 					i(46054),	-- Journeyman Fishing - Fishing for Dummies
 					i(46055),	-- Grand Master Fishing - Deep Sea Adventures
 				})),
 			}),
 		}),
 		prof(INSCRIPTION, {
-			expansion(MOP_TIER, {
+			expansion(EXPANSION.MOP, {
 				-- 5.0.1
-				expansion(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
+				expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
 					i(87829),	-- Technique: Incarnadine Ink
 					i(87830),	-- Technique: Tigersblood Tincture
 				})),
 			}),
-			expansion(WOD_TIER, {
+			expansion(EXPANSION.WOD, {
 				-- 6.2.1
-				expansion(WOD_TIER, 2.1, bubbleDownSelf({ ["timeline"] = {"created 6.2.1"} }, {
+				expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = {"created 6.2.1"} }, {
 					i(129139),	-- Tome of Rapid Pathfinding
 				})),
 			}),
-			expansion(LEGION_TIER, {
+			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					-- #if BEFORE 10.1.5
 					i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
 					-- #endif
@@ -115,7 +115,7 @@ root(ROOTS.NeverImplemented, {
 				})),
 
 				-- 7.2.0
-				expansion(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
+				expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
 					i(146335),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 					i(146355),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 					i(146375),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
@@ -158,34 +158,34 @@ root(ROOTS.NeverImplemented, {
 				})),
 			}),
 			i(169550),	-- REUSE ME [MTMM]
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
 					i(183865),	-- [DNT][REUSE ME] Technique: Crafter's Mark III
 				})),
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			expansion(TBC_TIER, {
+			expansion(EXPANSION.TBC, {
 				-- 2.1.0
-				expansion(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 2.1.0"} }, {
+				expansion(EXPANSION.TBC, 1.0, bubbleDownSelf({ ["timeline"] = {"created 2.1.0"} }, {
 					i(32412),	-- Design: Relentless Earthstorm Diamond
 				})),
 
 				-- 2.1.3
-				expansion(TBC_TIER, 1.3, bubbleDownSelf({ ["timeline"] = {"created 2.1.3"} }, {
+				expansion(EXPANSION.TBC, 1.3, bubbleDownSelf({ ["timeline"] = {"created 2.1.3"} }, {
 					i(21958),	-- Design: Arcanite Sword Pendant
 					i(21959),	-- Design: Blood Crown
 					i(25888),	-- Primal Stone Statue
 				})),
 
 				-- 2.3.0
-				expansion(TBC_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 2.3.0"} }, {
+				expansion(EXPANSION.TBC, 3.0, bubbleDownSelf({ ["timeline"] = {"created 2.3.0"} }, {
 					i(34221),	-- Design: Chaotic Skyfire Diamond
 				})),
 
 				-- 2.4.0
-				expansion(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
+				expansion(EXPANSION.TBC, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
 					i(35533),	-- Design: Amulet of Flowing Life
 					i(35534),	-- Hard Khorium Band
 					i(35535),	-- Hard Khorium Choker
@@ -198,24 +198,24 @@ root(ROOTS.NeverImplemented, {
 				i(21951),	-- Design: Cut Azerothian Diamond
 				i(20972),	-- Design: Silver Rose Pendant
 			}),
-			expansion(CATA_TIER, {
+			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
 					r(73259),	-- Resolute Hessonite
 					r(73233),	-- Mystic Alicite
 				})),
 			}),
-			expansion(WOD_TIER, {
+			expansion(EXPANSION.WOD, {
 				-- 6.0.1
-				expansion(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+				expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(116080),	-- Design: Greater Taladite Amplifier
 				})),
 			}),
 		}),
 		prof(MINING, {
-			expansion(LEGION_TIER, {
+			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					i(124463),	-- Mining Technique: Leystone Deposit
 					i(124464),	-- Mining Technique: Leystone Deposit
 					i(124465),	-- Mining Technique: Leystone Deposit
@@ -240,7 +240,7 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		prof(TAILORING, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(7093),	-- Pattern: Boots of Darkness
 				r(8778),	-- Boots of Darkness
 				i(6273),	-- Pattern: Green Woolen Robe
@@ -259,7 +259,7 @@ root(ROOTS.NeverImplemented, {
 				r(12068),	-- Stormcloth Vest
 				i(21369),	-- Pattern: Felcloth Bag
 			}),
-			expansion(TBC_TIER, {
+			expansion(EXPANSION.TBC, {
 				i(24315),	-- Pattern: Heavy Netherweave Net
 				i(29120),	-- Pattern: Truefaith Vestments
 				i(30474),	-- Pattern: Lifeblood Bracers
@@ -275,7 +275,7 @@ root(ROOTS.NeverImplemented, {
 				i(30469),	-- Pattern: Netherflame Robe
 				r(36665),	-- Netherflame Robe
 			}),
-			expansion(WOTLK_TIER, {
+			expansion(EXPANSION.WRATH, {
 				i(42196),	-- Pattern: Aurora Slippers
 				i(42190),	-- Pattern: Deathchill Cloak
 				i(42180),	-- Pattern: Ebonweave
@@ -296,9 +296,9 @@ root(ROOTS.NeverImplemented, {
 				i(42189),	-- Pattern: Wispcloak
 				i(42174),	-- Pattern: Yellow Lumberjack Shirt
 			}),
-			expansion(WOD_TIER, {
+			expansion(EXPANSION.WOD, {
 				-- 6.0.1
-				expansion(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+				expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 					r(168851),	-- Miniature Flying Carpet
 					i(114872),	-- Pattern: Greater Hexweave Essence
@@ -307,16 +307,16 @@ root(ROOTS.NeverImplemented, {
 					r(173415),	-- Murloc Chew Toy
 				})),
 			}),
-			expansion(LEGION_TIER, {
+			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					i(137981),	-- Pattern: Silkweave Cloak
 					i(151746),	-- Pattern: Lightweave Breeches
 				})),
 			}),
-			expansion(BFA_TIER, {
+			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 					i(162424),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
 					i(162770),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
 					i(162426),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
@@ -325,15 +325,15 @@ root(ROOTS.NeverImplemented, {
 					i(162430),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 				})),
 			}),
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
 					i(183871),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 				})),
 			}),
 		}),
 		prof(POISONS, {
-			expansion(CLASSIC_TIER, {
+			expansion(EXPANSION.CLASSIC, {
 				i(5657),	-- Recipe: Instant Toxin
 			}),
 		}),

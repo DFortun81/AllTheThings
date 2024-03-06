@@ -16,7 +16,7 @@ CLAN_AYLAAG = createHeader({
 		cn = "艾拉格氏族",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
 		n(CLAN_AYLAAG, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 4 } }, {
 			n(ACHIEVEMENTS, {
@@ -152,7 +152,7 @@ root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { A
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
 		n(CLAN_AYLAAG, {
 			q(70922),	-- A > B Reward Test (Mini Boss Steps)

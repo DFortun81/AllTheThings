@@ -20,7 +20,7 @@ DAILY_EVENT_ROLL = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
 		cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
 			["maps"] = { HALL_OF_THE_GUARDIAN, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
@@ -972,7 +972,7 @@ root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] =
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(46768),	-- Akazamzarak 1 Week Cooldown - triggered after completing "Champion: Aethas Sunreaver"
 		q(46776),	-- Akazamzarak 1 Week Cooldown - triggered after completing "Champion: Aethas Sunreaver"
 		q(45914),	-- Ch 5 Soulstone Shielded Tracking Quest - triggers after completing "Keep it Secret, Keep it Safe" (questID 46351)

@@ -1097,7 +1097,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(ALLIED_RACES, {
 		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
 		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?

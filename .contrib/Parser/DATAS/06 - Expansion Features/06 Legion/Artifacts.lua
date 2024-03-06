@@ -175,7 +175,7 @@ local i = function(id, t)
 end
 
 root(ROOTS.ExpansionFeatures,
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		n(ARTIFACTS, {
 			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
 			["groups"] = {
@@ -2395,7 +2395,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		-- Death Knight
 		q(40722),	-- Blood Chosen - Blood Artifact chosen first
 		q(40723),	-- Frost Chosen - Frost Artifact chosen first
@@ -2598,7 +2598,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- Fill certain Artifacts into the Arch Achievement which is needed to earn them
 -- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
-root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, {
 			ach(10603, {	-- A Keen Eye

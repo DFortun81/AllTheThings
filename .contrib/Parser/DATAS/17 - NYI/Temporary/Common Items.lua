@@ -6,7 +6,7 @@
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root(ROOTS.NeverImplemented, {
 	n(QUALITY_COMMON, {
-		expansion(CLASSIC_TIER, {
+		expansion(EXPANSION.CLASSIC, {
 			-- NYI Classic Common Items
 			n(WEAPONS, {
 				filter(ONE_HANDED_AXES, {
@@ -136,7 +136,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(TBC_TIER, {
+		expansion(EXPANSION.TBC, {
 			-- NYI The Burning Crusade Common Items
 			n(WEAPONS, {
 				filter(ONE_HANDED_AXES, {
@@ -212,7 +212,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(WOTLK_TIER, {
+		expansion(EXPANSION.WRATH, {
 			-- NYI Wrath of the Lich King Common Items
 			n(WEAPONS, {
 				filter(ONE_HANDED_AXES, {
@@ -291,7 +291,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(CATA_TIER, {
+		expansion(EXPANSION.CATA, {
 			-- NYI Cataclysm Common Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -412,7 +412,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(MOP_TIER, {
+		expansion(EXPANSION.MOP, {
 			-- NYI Mists of Pandaria Common Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -460,7 +460,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(WOD_TIER, {
+		expansion(EXPANSION.WOD, {
 			-- NYI Warlods of Draenor Common Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -495,7 +495,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(LEGION_TIER, {
+		expansion(EXPANSION.LEGION, {
 			-- NYI Legion Common Items
 			n(ARMOR, {
 				filter(MAIL, {
@@ -560,7 +560,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(BFA_TIER, {
+		expansion(EXPANSION.BFA, {
 			-- NYI Battle for Azeroth Common Items
 			n(ARMOR, {
 				filter(LEATHER, {
@@ -640,7 +640,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(SL_TIER, {
+		expansion(EXPANSION.SL, {
 			-- NYI Shadowlands Common Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -726,7 +726,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		expansion(DF_TIER, {
+		expansion(EXPANSION.DF, {
 			-- NYI Dragonflight Common Items
 			n(WEAPONS, {
 				filter(TWO_HANDED_AXES, {

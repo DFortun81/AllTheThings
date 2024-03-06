@@ -365,7 +365,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35297),	-- FLAG: Army Pushed - triggers during "Blaze of Glory" when you approach Khadgar around 67.6,60.5
 		q(35983),	-- FLAG: Hansel Event Complete - triggers during "Onslaught's End" when door to Cho'gal is opened
 		q(34440),	-- FLAG: Khadgar out of Portal - triggers just before turning in "Ga'nar of the Frostwolf" (questID 34442) or "Polishing the Iron Throne" (questID 34925)

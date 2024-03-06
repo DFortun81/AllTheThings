@@ -52,7 +52,7 @@ local OnTooltipForThoriumBrotherhood = [[function(t, tooltipInfo)
 		42000);
 	end
 end]];
-root(ROOTS.Instances, expansion(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(228, {	-- Blackrock Depths
 		-- #if BEFORE MOP
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
@@ -2955,7 +2955,7 @@ root(ROOTS.Instances, expansion(CLASSIC_TIER, {
 }));
 -- #if AFTER 6.0.1
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35899),	-- Blackrock Depths (Detention Block) Reward Quest - Normal completion
 		q(35901),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest - Normal completion

@@ -149,7 +149,7 @@ local CHAMPIONS_PELT = 180478;
 local ELYSIAN_FEATHERS = 180477;
 local NIGHTFORGED_STEEL = 180595;
 local SOUL_MIRROR = 179378;
-root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",

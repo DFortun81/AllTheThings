@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(LEGION_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	expansion(EXPANSION.LEGION, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_HUNDRED, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			["description"] = "These were obtained by creating a Level 100 Class Trial for each class and specialization.",

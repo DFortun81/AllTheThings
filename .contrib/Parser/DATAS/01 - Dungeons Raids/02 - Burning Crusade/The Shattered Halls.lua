@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(259, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Shattered Halls
 		["lore"] = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
 		["zone-text-areaID"] = 3714,	-- The Shattered Halls
@@ -629,7 +629,7 @@ root(ROOTS.Instances, expansion(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 })));
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(35517),	-- Shattered Halls Reward Quest - Normal completion
 		q(35518),	-- Shattered Halls Reward Quest - Heroic completion
 	}),

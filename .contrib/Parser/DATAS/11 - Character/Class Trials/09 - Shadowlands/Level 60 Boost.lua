@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(SL_TIER, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+	expansion(EXPANSION.SL, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 		n(LEVEL_SIXTY, {
 			-- Note: [As of October 13th, 2020 Level 120 Boost became Level 50 Boost]
 			-- Note: [As of November 11th, 2021 SL Character boost increased from 50 to 60. Some of the old 50 items went to the new class trial level 50]

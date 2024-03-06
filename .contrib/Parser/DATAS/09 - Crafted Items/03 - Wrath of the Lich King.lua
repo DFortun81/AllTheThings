@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(60893, {	-- Northrend Alchemy Research
@@ -1044,12 +1044,12 @@ root(ROOTS.Craftables, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, 
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENGINEERING, {
-			expansion(WOTLK_TIER, {
+			expansion(EXPANSION.WRATH, {
 				i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			expansion(WOTLK_TIER, {
+			expansion(EXPANSION.WRATH, {
 				i(38378)	-- Wyrmscale Leg Armor
 			}),
 		}),

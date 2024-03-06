@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 -- #if AFTER 3.0.1
-root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, {
+root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
 	n(ACHIEVEMENTS, {
 		ach(11747, {["timeline"] = {ADDED_7_2_0}}),	-- Merely a Set (Serpentshrine Cavern and The Eye)
 		ach(1287, {		-- Outland Dungeon Hero

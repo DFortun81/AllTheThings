@@ -289,7 +289,7 @@ InstanceHelper.ExtraLoots = {
 	}
 }
 
-root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
 		["coord"] = { 73.0, 55.7, THALDRASZUS },
@@ -649,7 +649,7 @@ root(ROOTS.Instances, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1200, {	-- Vault of the Incarnates
 		q(72264),	-- 'Anicent Vault Artifact' first drop per week
 		q(72612),	-- Volcanius (trash)

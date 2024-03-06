@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
 		cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
 			["maps"] = { NETHERLIGHT_TEMPLE },
@@ -723,7 +723,7 @@ root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] =
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		q(42072),	-- Boros Tracker - triggers during "Out of the Darkness" (questID 41967)
 		q(44059),	-- Legion Attacks
 		q(43507),	-- Looted Priest Altar

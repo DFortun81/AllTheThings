@@ -4,9 +4,9 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(TAILORING, {
 		n(CRAFTABLES, {
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(173262),	-- [DNT] REUSE ME
 					i(173263),	-- [DNT] REUSE ME
 					i(173264),	-- [DNT] REUSE ME
@@ -52,16 +52,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(173205),	-- Winterweave Tunic
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(193531),	-- Blue Dragon Rider's Robe
 					i(193535),	-- Bronze Dragon Rider's Wraps
 					i(194051),	-- Wildercloth Weapon Upholstery
 				})),
 
 				-- 10.1.0
-				expansion(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 					i(205034),	-- Enormous Ball of Yarn (TOY!)
 					i(205027),	-- Explorer's Banner (TOY!)
 					i(205028),	-- Explorer's Banner of Comradery++
@@ -73,9 +73,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
-			expansion(SL_TIER, {
+			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(310933),	-- Craftsman's Pouch
 					r(310934),	-- Modified Crafting Reagent 02
 					r(310935),	-- Modified Crafting Reagent 03
@@ -113,9 +113,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(310888),	-- Winterweave Tunic
 				})),
 			}),
-			expansion(DF_TIER, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382588);	-- Opening
 					r(376697),	-- Pattern: Wisp of Tyr
 					-- With SpellID attached
@@ -127,7 +127,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.1.0
-				expansion(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 					r(408316),	-- Spore-Infused Combat Bandage
 					-- With SpellID attached
 					i(205141),	-- Pattern: Explorer's Banner (RECIPE!)

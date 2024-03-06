@@ -9,7 +9,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-----------------------
 	--      CLASSIC      --
 	-----------------------
-	expansion(CLASSIC_TIER, {
+	expansion(EXPANSION.CLASSIC, {
 		--	QUESTING / LEVELING
 		q(9611),	-- Azuremyst: aa - A - Quest Flag 000 — triggered after healing the NPC/killing the mob before you can pick up "A Hearty Thanks!" on Azuremyst Isle
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
@@ -18,7 +18,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-------------------
 	--      TBC      --
 	-------------------
-	expansion(TBC_TIER, {
+	expansion(EXPANSION.TBC, {
 		--	QUESTING / LEVELING
 		-- #if BEFORE WRATH
 		-- This got repurposed into an actual quest with Cata.
@@ -32,7 +32,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	---------------------
 	--      WOTLK      --
 	---------------------
-	expansion(WOTLK_TIER, {
+	expansion(EXPANSION.WRATH, {
 		--	DUNGEONS & RAIDS
 		q(24887, { ["_drop"] = { "g" },	}),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
 		q(24895, { ["_drop"] = { "g" },	}),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
@@ -57,7 +57,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--------------------
 	--      CATA      --
 	--------------------
-	expansion(CATA_TIER, {
+	expansion(EXPANSION.CATA, {
 		-- QUESTING
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
@@ -103,7 +103,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-------------------
 	--      MOP      --
 	-------------------
-	expansion(MOP_TIER, {
+	expansion(EXPANSION.MOP, {
 		-- Operation: Shieldwall / Dominance Offensive campaign
 		q(32357),	-- Tracking Event: Event Complete - triggeres after watching the RP after turning in "Heart of the Alliance" (questID 32316)
 		q(32356),	-- Tracking Event: Ambassadors Summoned - triggeres  "Heart of the Alliance" completion
@@ -183,7 +183,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-------------------
 	--      WOD      --
 	-------------------
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		--	QUESTING / LEVELING / VARIOUS
 		q(35266),	-- Boosted Character - triggered for character that used WoD boost (level 90)
 		q(37187),	-- The Dark Portal
@@ -400,7 +400,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	----------------------
 	--      LEGION      --
 	----------------------
-	expansion(LEGION_TIER, {
+	expansion(EXPANSION.LEGION, {
 		-- DUNGEONS & RAIDS
 		q(41710, { ["_drop"] = { "g" }, }),	-- Legion 110 A
 		q(41712, { ["_drop"] = { "g" },	}),	-- Legion 110 A
@@ -593,7 +593,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-------------------
 	--      BFA      --
 	-------------------
-	expansion(BFA_TIER, {
+	expansion(EXPANSION.BFA, {
 		--	VARIOUS
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
@@ -1436,7 +1436,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	--      SL      --
 	------------------
-	expansion(SL_TIER, {
+	expansion(EXPANSION.SL, {
 		-- PVP
 		q(62298, { ["_drop"] = { "g" },	}),	-- Classic 20-49
 		q(62299, { ["_drop"] = { "g" },	}),	-- Classic 20-49
@@ -2043,7 +2043,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	--      DF      --
 	------------------
-	expansion(DF_TIER, {
+	expansion(EXPANSION.DF, {
 		-- New Heritage questline start HQTs
 		q(75246),	-- Human Heritage (spellID 406118)
 		q(75247),	-- Orc Heritage (spellID 406119)

@@ -13,7 +13,7 @@ end
 local SymRaidAdmirdrassil = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1207,DiffID,ClassID}}
 end
-root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	o(382621, {	-- Revival Catalyst Console
 		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 		["coord"] = { 60.6, 53.8, THALDRASZUS },

@@ -114,7 +114,7 @@ local COOK_TRADER = sharedData({ ["timeline"] = { ADDED_6_1_0 } }, {
 	i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
 });
 root(ROOTS.ExpansionFeatures,
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(VENDORS, {
 				n(90894, {	-- Alexi Hackercam <Ore Trader>

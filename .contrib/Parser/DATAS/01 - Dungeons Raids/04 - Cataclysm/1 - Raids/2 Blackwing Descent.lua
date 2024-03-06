@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(CATA_TIER, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	inst(73, {	-- Blackwing Descent
 		["isRaid"] = true,
 		["sharedLockout"] = 1,

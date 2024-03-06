@@ -3115,7 +3115,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(WOD_TIER, {
+	expansion(EXPANSION.WOD, {
 		q(36249),	-- Active Choice: Lumbermill - triggers if the Lumbermill is currently active
 		q(36250),	-- Active Choice: Lumbermill - triggers if the Lumbermill is currently active
 		q(36251),	-- Active Choice: Sparring Arena - triggers if the Sparring Arena is currently active

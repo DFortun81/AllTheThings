@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(WOTLK_TIER, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, {
 	n(ACHIEVEMENTS, {
 		applyclassicphase(WRATH_PHASE_ONE, ach(2097, {	-- Get to the Choppa! (Engineering)
 			["providers"] = {

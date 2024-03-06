@@ -19,7 +19,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, DEATHKNIGHT },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, DEATHKNIGHT },
 				{"select","itemID",
 				    64684,    -- Bloodthirsty Gladiator's Armplates of Proficiency
 				    64753,    -- Bloodthirsty Gladiator's Girdle of Cruelty
@@ -55,7 +55,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, DRUID },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, DRUID },
 				{"select","itemID",
 				    64698,    -- Bloodthirsty Gladiator's Bindings of Meditation
 				    64699,    -- Bloodthirsty Gladiator's Bindings of Prowess
@@ -137,7 +137,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146419, {	-- Ensemble: Bloodthirsty Gladiator's Chain Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, HUNTER },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, HUNTER },
 				{"select","itemID",
 				    64872,    -- Bloodthirsty Gladiator's Wristguards of Accuracy
 				    64873,    -- Bloodthirsty Gladiator's Wristguards of Alacrity
@@ -179,7 +179,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, MAGE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, MAGE },
 				{"select","itemID",
 				    64723,    -- Bloodthirsty Gladiator's Cuffs of Accuracy
 				    64721,    -- Bloodthirsty Gladiator's Cord of Cruelty
@@ -215,7 +215,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, PALADIN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, PALADIN },
 				{"select","itemID",
 				    64704,    -- Bloodthirsty Gladiator's Bracers of Meditation
 				    64705,    -- Bloodthirsty Gladiator's Bracers of Prowess
@@ -277,7 +277,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146433, {	-- Ensemble: Bloodthirsty Gladiator's Satin Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, PRIEST },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, PRIEST },
 				{"select","itemID",
 				    64724,    -- Bloodthirsty Gladiator's Cuffs of Meditation
 				    64722,    -- Bloodthirsty Gladiator's Cord of Meditation
@@ -333,7 +333,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146427, {	-- Ensemble: Bloodthirsty Gladiator's Leather Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, ROGUE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, ROGUE },
 				{"select","itemID",
 				    64685,    -- Bloodthirsty Gladiator's Armwraps of Accuracy
 				    64686,    -- Bloodthirsty Gladiator's Armwraps of Alacrity
@@ -375,7 +375,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146431, {	-- Ensemble: Bloodthirsty Gladiator's Ringmail Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, SHAMAN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, SHAMAN },
 				{"select","itemID",
 				    64681,    -- Bloodthirsty Gladiator's Armbands of Meditation
 				    64682,    -- Bloodthirsty Gladiator's Armbands of Prowess
@@ -457,7 +457,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146425, {	-- Ensemble: Bloodthirsty Gladiator's Felweave Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, WARLOCK },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, WARLOCK },
 				{"select","itemID",
 				    64725,    -- Bloodthirsty Gladiator's Cuffs of Prowess
 				    64720,    -- Bloodthirsty Gladiator's Cord of Accuracy
@@ -493,7 +493,7 @@ local BLOODTHIRSTY_GROUPS = {
 		i(146429, {	-- Ensemble: Bloodthirsty Gladiator's Plate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_HONOR, WARRIOR },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, WARRIOR },
 				{"select","itemID",
 				    64683,    -- Bloodthirsty Gladiator's Armplates of Alacrity
 				    64754,    -- Bloodthirsty Gladiator's Girdle of Prowess
@@ -695,7 +695,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
 			["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_weapons_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },
+				{"sub", "pvp_weapons_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },
 			},
 		}),
 		i(73468, {	-- Cataclysmic Gladiator's Barrier
@@ -796,7 +796,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146443, {	-- Ensemble: Cataclysmic Gladiator's Dreadplate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, DEATHKNIGHT },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, DEATHKNIGHT },
 				{"select","itemID",
 				    73551,    -- Cataclysmic Gladiator's Armplates of Proficiency
 				    73555,    -- Cataclysmic Gladiator's Girdle of Cruelty
@@ -824,7 +824,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146441, {	-- Ensemble: Cataclysmic Gladiator's Dragonhide Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, DRUID },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, DRUID },
 				{"select","itemID",
 				    73608,    -- Cataclysmic Gladiator's Bindings of Meditation
 				    73600,    -- Cataclysmic Gladiator's Bindings of Prowess
@@ -885,7 +885,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146439, {	-- Ensemble: Cataclysmic Gladiator's Chain Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, HUNTER },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, HUNTER },
 				{"select","itemID",
 				    73585,    -- Cataclysmic Gladiator's Wristguards of Accuracy
 				    73586,    -- Cataclysmic Gladiator's Wristguards of Alacrity
@@ -916,7 +916,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146457, {	-- Ensemble: Cataclysmic Gladiator's Silk Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, MAGE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, MAGE },
 				{"select","itemID",
 				    73632,    -- Cataclysmic Gladiator's Cuffs of Prowess
 				    73639,    -- Cataclysmic Gladiator's Cord of Cruelty
@@ -944,7 +944,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146455, {	-- Ensemble: Cataclysmic Gladiator's Scaled Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, PALADIN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, PALADIN },
 				{"select","itemID",
 				    73561,    -- Cataclysmic Gladiator's Bracers of Meditation
 				    73562,    -- Cataclysmic Gladiator's Bracers of Prowess
@@ -993,7 +993,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146453, {	-- Ensemble: Cataclysmic Gladiator's Satin Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, PRIEST },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, PRIEST },
 				{"select","itemID",
 				    73631,    -- Cataclysmic Gladiator's Cuffs of Meditation
 				    73637,    -- Cataclysmic Gladiator's Cord of Meditation
@@ -1036,7 +1036,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146447, {	-- Ensemble: Cataclysmic Gladiator's Leather Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, ROGUE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, ROGUE },
 				{"select","itemID",
 				    73528,    -- Cataclysmic Gladiator's Armwraps of Accuracy
 				    73529,    -- Cataclysmic Gladiator's Armwraps of Alacrity
@@ -1067,7 +1067,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146451, {	-- Ensemble: Cataclysmic Gladiator's Ringmail Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, SHAMAN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, SHAMAN },
 				{"select","itemID",
 				    73518,    -- Cataclysmic Gladiator's Armbands of Meditation
 				    73519,    -- Cataclysmic Gladiator's Armbands of Prowess
@@ -1128,7 +1128,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146445, {	-- Ensemble: Cataclysmic Gladiator's Felweave Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, WARLOCK },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, WARLOCK },
 				{"select","itemID",
 				    73633,    -- Cataclysmic Gladiator's Cuffs of Accuracy
 				    73638,    -- Cataclysmic Gladiator's Cord of Accuracy
@@ -1156,7 +1156,7 @@ local CATACLYSMIC_GROUPS = {
 		i(146449, {	-- Ensemble: Cataclysmic Gladiator's Plate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR, WARRIOR },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR, WARRIOR },
 				{"select","itemID",
 				    73550,    -- Cataclysmic Gladiator's Armplates of Alacrity
 				    73554,    -- Cataclysmic Gladiator's Girdle of Prowess
@@ -1350,7 +1350,7 @@ local VICIOUS_GROUPS = {
 		i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
 			["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_weapons_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },
+				{"sub", "pvp_weapons_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },
 			},
 		}),
 		i(61360, {	-- Vicious Gladiator's Barrier
@@ -1451,7 +1451,7 @@ local VICIOUS_GROUPS = {
 		i(146523, {	-- Ensemble: Vicious Gladiator's Dreadplate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, DEATHKNIGHT },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, DEATHKNIGHT },
 				{"select","itemID",
 				    60523,    -- Vicious Gladiator's Armplates of Proficiency
 				    60508,    -- Vicious Gladiator's Girdle of Cruelty
@@ -1479,7 +1479,7 @@ local VICIOUS_GROUPS = {
 		i(146521, {	-- Ensemble: Vicious Gladiator's Dragonhide Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, DRUID },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, DRUID },
 				{"select","itemID",
 				    60582,    -- Vicious Gladiator's Bindings of Meditation
 				    60611,    -- Vicious Gladiator's Bindings of Prowess
@@ -1540,7 +1540,7 @@ local VICIOUS_GROUPS = {
 		i(146519, {	-- Ensemble: Vicious Gladiator's Chain Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, HUNTER },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, HUNTER },
 				{"select","itemID",
 				    60565,    -- Vicious Gladiator's Wristguards of Accuracy
 				    60559,    -- Vicious Gladiator's Wristguards of Alacrity
@@ -1571,7 +1571,7 @@ local VICIOUS_GROUPS = {
 		i(146537, {	-- Ensemble: Vicious Gladiator's Silk Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, MAGE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, MAGE },
 				{"select","itemID",
 				    60628,    -- Vicious Gladiator's Cuffs of Accuracy
 				    60612,    -- Vicious Gladiator's Cord of Cruelty
@@ -1599,7 +1599,7 @@ local VICIOUS_GROUPS = {
 		i(146535, {	-- Ensemble: Vicious Gladiator's Scaled Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, PALADIN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, PALADIN },
 				{"select","itemID",
 				    60541,    -- Vicious Gladiator's Bracers of Meditation
 				    60520,    -- Vicious Gladiator's Bracers of Prowess
@@ -1645,7 +1645,7 @@ local VICIOUS_GROUPS = {
 		i(146533, {	-- Ensemble: Vicious Gladiator's Satin Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, PRIEST },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, PRIEST },
 				{"select","itemID",
 				    60635,    -- Vicious Gladiator's Cuffs of Meditation
 				    60637,    -- Vicious Gladiator's Cord of Meditation
@@ -1688,7 +1688,7 @@ local VICIOUS_GROUPS = {
 		i(146527, {	-- Ensemble: Vicious Gladiator's Leather Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, ROGUE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, ROGUE },
 				{"select","itemID",
 				    60591,    -- Vicious Gladiator's Armwraps of Accuracy
 				    60594,    -- Vicious Gladiator's Armwraps of Alacrity
@@ -1719,7 +1719,7 @@ local VICIOUS_GROUPS = {
 		i(146531, {	-- Ensemble: Vicious Gladiator's Ringmail Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, SHAMAN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, SHAMAN },
 				{"select","itemID",
 				    60535,    -- Vicious Gladiator's Armbands of Meditation
 				    60569,    -- Vicious Gladiator's Armbands of Prowess
@@ -1780,7 +1780,7 @@ local VICIOUS_GROUPS = {
 		i(146525, {	-- Ensemble: Vicious Gladiator's Felweave Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, WARLOCK },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, WARLOCK },
 				{"select","itemID",
 				    60634,    -- Vicious Gladiator's Cuffs of Prowess
 				    60626,    -- Vicious Gladiator's Cord of Accuracy
@@ -1808,7 +1808,7 @@ local VICIOUS_GROUPS = {
 		i(146529, {	-- Ensemble: Vicious Gladiator's Plate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR, WARRIOR },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR, WARRIOR },
 				{"select","itemID",
 				    60512,    -- Vicious Gladiator's Armplates of Alacrity
 				    60521,    -- Vicious Gladiator's Girdle of Prowess
@@ -2002,7 +2002,7 @@ local RUTHLESS_GROUPS = {
 		i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 			["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_weapons_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
+				{"sub", "pvp_weapons_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },
 			},
 		}),
 		i(70242, {	-- Ruthless Gladiator's Barrier
@@ -2103,7 +2103,7 @@ local RUTHLESS_GROUPS = {
 		i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, DEATHKNIGHT },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, DEATHKNIGHT },
 				{"select","itemID",
 				    70327,    -- Ruthless Gladiator's Armplates of Proficiency
 				    70320,    -- Ruthless Gladiator's Girdle of Cruelty
@@ -2139,7 +2139,7 @@ local RUTHLESS_GROUPS = {
 		i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, DRUID },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, DRUID },
 				{"select","itemID",
 				    70345,    -- Ruthless Gladiator's Bindings of Meditation
 				    70359,    -- Ruthless Gladiator's Bindings of Prowess
@@ -2221,7 +2221,7 @@ local RUTHLESS_GROUPS = {
 		i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, HUNTER },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, HUNTER },
 				{"select","itemID",
 				    70340,    -- Ruthless Gladiator's Wristguards of Accuracy
 				    70338,    -- Ruthless Gladiator's Wristguards of Alacrity
@@ -2263,7 +2263,7 @@ local RUTHLESS_GROUPS = {
 		i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, MAGE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, MAGE },
 				{"select","itemID",
 				    70365,    -- Ruthless Gladiator's Cuffs of Prowess
 				    70360,    -- Ruthless Gladiator's Cord of Cruelty
@@ -2300,7 +2300,7 @@ local RUTHLESS_GROUPS = {
 		i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, PALADIN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, PALADIN },
 				{"select","itemID",
 				    70334,    -- Ruthless Gladiator's Bracers of Meditation
 				    70325,    -- Ruthless Gladiator's Bracers of Prowess
@@ -2362,7 +2362,7 @@ local RUTHLESS_GROUPS = {
 		i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, PRIEST },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, PRIEST },
 				{"select","itemID",
 				    70366,    -- Ruthless Gladiator's Cuffs of Meditation
 				    70368,    -- Ruthless Gladiator's Cord of Meditation
@@ -2418,7 +2418,7 @@ local RUTHLESS_GROUPS = {
 		i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, ROGUE },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, ROGUE },
 				{"select","itemID",
 				    70350,    -- Ruthless Gladiator's Armwraps of Accuracy
 				    70352,    -- Ruthless Gladiator's Armwraps of Alacrity
@@ -2460,7 +2460,7 @@ local RUTHLESS_GROUPS = {
 		i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, SHAMAN },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, SHAMAN },
 				{"select","itemID",
 				    70330,    -- Ruthless Gladiator's Armbands of Meditation
 				    70342,    -- Ruthless Gladiator's Armbands of Prowess
@@ -2542,7 +2542,7 @@ local RUTHLESS_GROUPS = {
 		i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, WARLOCK },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, WARLOCK },
 				{"select","itemID",
 				    70363,    -- Ruthless Gladiator's Cuffs of Accuracy
 				    70362,    -- Ruthless Gladiator's Cord of Accuracy
@@ -2578,7 +2578,7 @@ local RUTHLESS_GROUPS = {
 		i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
 			["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 			["sym"] = {
-				{"sub", "pvp_set_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR, WARRIOR },
+				{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR, WARRIOR },
 				{"select","itemID",
 				    70322,    -- Ruthless Gladiator's Armplates of Alacrity
 				    70326,    -- Ruthless Gladiator's Girdle of Prowess
@@ -5141,19 +5141,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(34088, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
 					-- #if BEFORE 4.0.3
-					["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 					-- #endif
 					["timeline"] = { "added 3.1.1.9806", "removed 4.0.3" },
 				}),
 				n(34090, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 					-- #if BEFORE 4.0.3.13277
-					["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
 					-- #endif
 					["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 				}),
 				n(34093, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
 					-- #if BEFORE 4.0.3.13277
-					["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
 					-- #endif
 					["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 				}),
