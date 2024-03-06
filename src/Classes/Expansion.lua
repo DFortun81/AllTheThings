@@ -40,7 +40,7 @@ setmetatable(ExpansionInfoByID, {
 			}, { __index = ExpansionInfoByID[expansionID] });
 		else
 			-- We want to use the same reference table from the locales if possible
-			info = TIER_DATA[expansionID] or { name = GetTierName(expansionID) };
+			info = TIER_DATA[expansionID] or { name = GetExpansionName(expansionID) };
 			info.expansionID = expansionID;
 			if not info.name then
 				setmetatable(info, {__index = GetExpansionInfoMeta });
