@@ -93,31 +93,31 @@ SL_TAILORING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"
 		["collectible"] = false,
 	}),
 	n(ARMOR, {
-		r(339003, {	-- Grim-Veiled Belt [Rank 1]
+		r(310885, {	-- Grim-Veiled Belt [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(339004, {	-- Grim-Veiled Bracers [Rank 1]
+		r(310886, {	-- Grim-Veiled Bracers [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(338995, {	-- Grim-Veiled Cape [Rank 1]
+		r(310880, {	-- Grim-Veiled Cape [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(339000, {	-- Grim-Veiled Hood [Rank 1]
+		r(310882, {	-- Grim-Veiled Hood [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(338998, {	-- Grim-Veiled Mittens [Rank 1]
+		r(310881, {	-- Grim-Veiled Mittens [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(339001, {	-- Grim-Veiled Pants [Rank 1]
+		r(310883, {	-- Grim-Veiled Pants [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(338996, {	-- Grim-Veiled Robe [Rank 1]
+		r(310879, {	-- Grim-Veiled Robe [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(338997, {	-- Grim-Veiled Sandals [Rank 1]
+		r(310878, {	-- Grim-Veiled Sandals [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
-		r(339002, {	-- Grim-Veiled Spaulders [Rank 1]
+		r(310884, {	-- Grim-Veiled Spaulders [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310903),	-- Shadowlace Cord
