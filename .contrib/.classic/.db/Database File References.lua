@@ -13,17 +13,16 @@
 -- #IMPORT: 00 - DB\\PetTypeDB.lua
 -- #IMPORT: 00 - DB\\ToyDB.lua
 -- #IMPORT: 00 - DB\\Dynamic\\
--- #IMPORT: 00 - Item Database\\Build NYI.lua
--- #IMPORT: 00 - Item Database\\ProfessionDB\\
--- #IMPORT: 00 - Item Database\\BindOnAccountItems.lua
--- #IMPORT: 00 - Item Database\\Blueprints.lua
--- #IMPORT: 00 - Item Database\\CharacterItemDB.lua
--- #IMPORT: 00 - Item Database\\Conduits.lua
--- #IMPORT: 00 - Item Database\\Garrison Buildings.lua
--- #IMPORT: 00 - Item Database\\Grand Commendations.lua
--- Can't use 00 - Item Database\\ItemRecipes.lua
--- #IMPORT: 00 - Item Database\\Item Filters for RWP.lua
--- #IMPORT: 00 - Item Database\\MusicRolls.lua
--- #IMPORT: 00 - Item Database\\RuneforgePowers.lua
--- #IMPORT: 00 - Item Database\\Source IDs\\
--- #IMPORT: 00 - Item Database\\Uncollectible.lua
+-- #IMPORT: 00 - Item DB\\Build NYI.lua
+-- #IMPORT: 00 - Item DB\\BindOnAccountItems.lua
+-- #IMPORT: 00 - Item DB\\Blueprints.lua
+-- #IMPORT: 00 - Item DB\\CharacterItemDB.lua
+-- #IMPORT: 00 - Item DB\\Conduits.lua
+-- #IMPORT: 00 - Item DB\\Garrison Buildings.lua
+-- #IMPORT: 00 - Item DB\\Grand Commendations.lua
+-- #IMPORT: 00 - Item DB\\Item Filters for RWP.lua
+-- #IMPORT: 00 - Item DB\\MusicRolls.lua
+-- #IMPORT: 00 - Item DB\\RuneforgePowers.lua
+-- #IMPORT: 00 - Item DB\\Source IDs\\
+-- #IMPORT: 00 - Item DB\\Uncollectible.lua
+-- #IMPORT: 00 - Profession DB\\

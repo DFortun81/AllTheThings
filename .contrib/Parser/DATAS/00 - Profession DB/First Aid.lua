@@ -16,7 +16,7 @@ i(0, 3275);			-- Linen Bandage
 i(0, 18629);		-- Runecloth Bandage
 i(0, 7928);			-- Silk Bandage
 i(0, 3277);			-- Wool Bandage
---- #endif
+-- #endif
 --- ITEM ---
 i(16084, 7924);		-- First Aid (Expert) [TRAINER: 3.1.0]
 -- #if BEFORE 8.0.1
@@ -24,7 +24,7 @@ i(16112, 7929);		-- Heavy Silk Bandage [TRAINER: 3.1.0]
 i(16113, 10840);	-- Mageweave Bandage [TRAINER: 3.1.0]
 i(19442, 23787);	-- Powerful Anti-Venom
 i(6454, 7935);		-- Strong Anti-Venom
---- #endif
+-- #endif
 --- QUEST ---
 i(0, 10846);		-- First Aid (Artisan) [TRAINER: 3.1.0]
 --- NYI ---
