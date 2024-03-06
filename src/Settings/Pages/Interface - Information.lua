@@ -9,7 +9,7 @@ local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
 -- local HexToARGB = app.Modules.Color.HexToARGB;	-- not used
-local GetRealmName = GetRealmName;
+local GetRealmName, GetSpellInfo = GetRealmName, GetSpellInfo
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -32,6 +32,14 @@ local function GetPatchString(patch)
 end
 local DefaultConversionMethod = function(value)
 	return value;
+end
+-- Handles checking the 'text' and assigning 'group.working' if the text is in a 'retrieving' state
+local function IsRetrievingConversionMethod(text, group)
+	if IsRetrieving(text) then
+		group.working = true
+		text = RETRIEVING_DATA
+	end
+	return text
 end
 local ConversionMethods = setmetatable({
 	filterID = function(val)
@@ -58,18 +66,14 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	creatureName = function(creatureID, reference)
-		local name = app.NPCNameFromID[creatureID]
-		if not reference.working and IsRetrieving(name) then
-			reference.working = true
-		end
 		if app.Settings:GetTooltipSetting("creatureID") then
-			return tostring(creatureID > 0 and name or RETRIEVING_DATA) .. " (" .. creatureID .. ")";
+			return IsRetrievingConversionMethod(app.NPCNameFromID[creatureID], reference) .. " (" .. creatureID .. ")";
 		else
-			return tostring(creatureID > 0 and name or RETRIEVING_DATA);
+			return IsRetrievingConversionMethod(app.NPCNameFromID[creatureID], reference)
 		end
 	end,
-	professionName = function(spellID)
-		return GetSpellInfo(app.SkillIDToSpellID[spellID] or 0) or RETRIEVING_DATA;
+	professionName = function(spellID, reference)
+		return IsRetrievingConversionMethod(GetSpellInfo(app.SkillIDToSpellID[spellID] or 0), reference)
 	end,
 }, {
 	__index = function(t, key)
@@ -330,9 +334,12 @@ local InformationTypes = {
 					-- Only show this for 2 depth hierarchies and above.
 					local grandparent = parent.parent or parent.sourceParent;
 					if grandparent then
+						local ptext, gptext =
+							IsRetrievingConversionMethod(parent.text, reference),
+							IsRetrievingConversionMethod(grandparent.text, reference)
 						tinsert(tooltipInfo, {
-							left = grandparent.text or RETRIEVING_DATA,
-							right = parent.text or RETRIEVING_DATA
+							left = gptext,
+							right = ptext
 						});
 					end
 				end
@@ -744,7 +751,7 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local requireSkill, learnedAt = reference.requireSkill, reference.learnedAt;
 			if requireSkill then
-				local professionName = ConversionMethods.professionName(requireSkill);
+				local professionName = ConversionMethods.professionName(requireSkill, reference);
 				if learnedAt then professionName = professionName .. " (" .. learnedAt .. ")"; end
 				tinsert(tooltipInfo, {
 					left = L.REQUIRES,
