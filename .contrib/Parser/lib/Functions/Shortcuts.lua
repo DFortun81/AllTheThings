@@ -773,6 +773,21 @@ e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	end
 end
 -- #endif
+expansion = function(id, patch, t)							-- Create an EXPANSION Object
+	-- patch is optional
+	if not t then
+		t = patch;
+	else
+		id = id + (patch / 100);
+		t = togroups(t);
+	end
+	t = struct("expansionID", id, t);
+	if not t.timeline then
+		t.timeline = { "added " .. math.floor(id) .. ".0" };
+	end
+	return t;
+end
+tier = expansion;										-- Deprecated shortcut for EXPANSION Objects.
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
@@ -1073,20 +1088,6 @@ spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
 sp = spell;												-- Create a SPELL Object (alternative shortcut)
-tier = function(id, patch, t)							-- Create a TIER Object
-	-- patch is optional
-	if not t then
-		t = patch;
-	else
-		id = id + (patch / 100);
-		t = togroups(t);
-	end
-	t = struct("tierID", id, t);
-	if not t.timeline then
-		t.timeline = { "added " .. math.floor(id) .. ".0" };
-	end
-	return t;
-end
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
 end

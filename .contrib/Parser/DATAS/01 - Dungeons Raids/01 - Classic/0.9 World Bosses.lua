@@ -8,7 +8,7 @@ local MATURE_BLUE_DRAGON_SINEW = i(18704, {	-- Mature Blue Dragon Sinew
 local THE_EYE_OF_SHADOW = i(18665, {	-- The Eye of Shadow
 	["classes"] = { PRIEST },
 });
-root(ROOTS.Instances, tier(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(CLASSIC_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 60,

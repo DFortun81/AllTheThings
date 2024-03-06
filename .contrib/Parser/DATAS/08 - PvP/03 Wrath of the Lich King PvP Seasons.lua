@@ -62,7 +62,7 @@ local WRATHFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 40001; end
 end]];
 -- #endif
-root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(tier(WOTLK_TIER, {
+root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(expansion(WOTLK_TIER, {
 	n(SEASON_DEADLY, {
 		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 3.0.1", "removed 3.1.0" },
@@ -4139,7 +4139,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- PvP Ensembles
 		q(46555),	-- Savage Gladiator's Chain Armor (Hunter)
 		q(46556),	-- Savage Gladiator's Dragonhide Armor (Druid)

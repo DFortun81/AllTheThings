@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.Instances, expansion(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	inst(1179, {	-- The Eternal Palace
 		["isRaid"] = true,
 		["coord"] = { 50.5, 11.9, NAZJATAR },
@@ -918,7 +918,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(BFA_TIER, {
 	inst(1179, {	-- The Eternal Palace
 		q(56948),	-- creating rank 1 Condensed Life-Force from Aqueous Reliquaries
 		q(56949),	-- creating rank 2 Condensed Life-Force from Aqueous Reliquaries

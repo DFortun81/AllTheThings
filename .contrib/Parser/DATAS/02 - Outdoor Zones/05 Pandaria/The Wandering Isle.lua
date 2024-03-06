@@ -572,7 +572,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers,{
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		q(30454),	-- Pandaren Alliance Tracking Quest - triggers after choosing Alliance faction
 		q(30455),	-- Pandaren Horde Tracking Quest - triggers after choosing Horde faction
 	}),

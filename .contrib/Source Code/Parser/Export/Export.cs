@@ -59,7 +59,7 @@ namespace ATT
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
             ObjectData.Create("achID",              "ach",          "_.CreateAchievement", "modID");
             ObjectData.Create("achievementCategoryID", "achcat",    "_.CreateAchievementCategory", "f");
-            ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
+            ObjectData.Create("expansionID",        "x",            "_.CreateExpansion", "f");
             ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
             ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(CATA_TIER, {
+root(ROOTS.Instances, expansion(CATA_TIER, {
 	inst(72, {	-- The Bastion of Twilight
 		["sharedLockout"] = 1,
 		["isRaid"] = true,

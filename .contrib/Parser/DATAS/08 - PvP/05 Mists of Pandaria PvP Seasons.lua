@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, {
-	pvp(tier(MOP_TIER, {
+	pvp(expansion(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
 				ach(8243, {	-- Hero of the Alliance: Malevolent
@@ -10285,7 +10285,7 @@ root(ROOTS.PVP, {
 });
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- PvP Ensembles
 		q(45583),	-- Dreadful Gladiator's Chain Armor (Hunter)
 		q(45584),	-- Dreadful Gladiator's Dragonhide Armor (Druid)
@@ -10390,7 +10390,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #endif
 -- The items never made it in.
 root(ROOTS.NeverImplemented, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
 			n(WEAPONS, {
 				i(84714),	-- Dreadful Gladiator's Barrier

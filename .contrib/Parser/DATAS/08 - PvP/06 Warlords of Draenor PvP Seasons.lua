@@ -8,7 +8,7 @@ root(ROOTS.PVP, {
 	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
 	---- for a total of 22 sources or a total of around
 	---- 10000 Items.
-	pvp(tier(WOD_TIER, {
+	pvp(expansion(WOD_TIER, {
 		n(SEASON_PRIMAL, {
 			un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(111599)),	-- Silver Strongbox
@@ -9767,7 +9767,7 @@ root(ROOTS.PVP, {
 });
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- PvP Ensembles
 		q(42975),	-- Wild Combatant's Chain Armor (Hunter - Alliance)
 		q(42992),	-- Wild Combatant's Chain Armor (Hunter - Horde)

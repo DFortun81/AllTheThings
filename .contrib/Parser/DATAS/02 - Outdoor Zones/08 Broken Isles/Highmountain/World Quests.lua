@@ -312,7 +312,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(45513),	-- Highmountain - WQ rare: Defilia
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki
 		q(48381),	-- Highmountain - WQ rare: Obsidian Deathwarder

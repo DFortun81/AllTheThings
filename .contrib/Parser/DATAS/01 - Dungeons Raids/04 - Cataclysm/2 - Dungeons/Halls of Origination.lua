@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
-root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	inst(70, {	-- Halls of Origination
 		["mapID"] = 297,
  		["maps"] = { 298, 299 },
@@ -327,7 +327,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35415),	-- Halls of Origination Reward Quest
 		q(35424),	-- Halls of Origination Reward Quest
 		q(35420),	-- Halls of Origination Bonus Rewards

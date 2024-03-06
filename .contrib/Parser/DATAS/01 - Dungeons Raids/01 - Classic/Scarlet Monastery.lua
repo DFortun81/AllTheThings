@@ -45,7 +45,7 @@ SCARLET_MONASTERY_CATHEDRAL = createHeader({
 		cn = "修道院",
 	},
 });
-root(ROOTS.Instances, tier(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(CLASSIC_TIER, {
 	inst(316, {	-- Scarlet Monastery
 		-- #if BEFORE MOP
 		["lore"] = "The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",
@@ -1165,14 +1165,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 }));
 -- #if AFTER MOP
 root(ROOTS.HiddenQuestTriggers, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		q(31637),	-- Scarlet Monastery Challenge Mode - Bronze Addition (Nth)
 		q(31629),	-- Scarlet Monastery Challenge Mode - Consolation (Nth)
 		q(31651),	-- Scarlet Monastery Challenge Mode - Gold Addition (Nth)
 		q(31644),	-- Scarlet Monastery Challenge Mode - Silver Addition (Nth)
 	}),
 	-- #if AFTER WOD
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35612),	-- Scarlet Monastery Reward Quest - Normal completion
 		q(35613),	-- Scarlet Monastery Reward Quest - Heroic completion
 	}),

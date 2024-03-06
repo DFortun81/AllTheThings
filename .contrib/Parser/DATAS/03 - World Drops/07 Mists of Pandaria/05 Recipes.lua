@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		filter(RECIPES, {
 			prof(BLACKSMITHING, {
 				i(100865, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)

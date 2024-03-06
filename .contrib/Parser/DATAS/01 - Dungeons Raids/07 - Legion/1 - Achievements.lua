@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
         ach(11164, {	-- Legion Dungeon Hero
             ["sym"] = {{"meta_achievement",

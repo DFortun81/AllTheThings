@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(WOD_TIER, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 		n(BUILDINGS, {
 			garrisonBuilding(161, pvp({	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
@@ -451,7 +451,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 		}),
 	})),
 }));
-root(ROOTS.HiddenQuestTriggers,  tier(WOD_TIER, {
+root(ROOTS.HiddenQuestTriggers,  expansion(WOD_TIER, {
 	n(GARRISONS, {
 		n(BUILDINGS, {
 			garrisonBuilding(161, pvp({	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)

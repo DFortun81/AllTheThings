@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(313, {	-- Temple of the Jade Serpent
 		["coord"] = { 56.0, 57.8, THE_JADE_FOREST },
 		["maps"] = {
@@ -395,13 +395,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		q(31499),	-- Jade Serpent Challenge Mode - Bronze Addition (Nth)
 		q(31498),	-- Jade Serpent Challenge Mode - Consolation (Nth)
 		q(31501),	-- Jade Serpent Challenge Mode - Gold Addition (Nth)
 		q(31500),	-- Jade Serpent Challenge Mode - Silver Addition (Nth)
 	}),
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35325),	-- Temple of the Jade Serpent Reward Quest
 		q(35327),	-- Temple of the Jade Serpent Reward Quest
 	}),

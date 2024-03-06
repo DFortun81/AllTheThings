@@ -157,7 +157,7 @@ WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 	},
 });
 root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_BALANCE }, {
-	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
+	expansion(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
 		["groups"] = {
 			n(QUESTS, {
@@ -259,7 +259,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			}),
 		},
 	})),
-	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, {
+	expansion(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["groups"] = {
 			ach(665, {	-- Collector's Edition: Netherwhelp
@@ -316,7 +316,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #endif
-	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
+	expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["groups"] = {
 			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
@@ -374,7 +374,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		}),
 	})),
 	-- #endif
-	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_3_2 } }, {
+	expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_3_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["groups"] = {
 			ach(5377),	-- Collector's Edition: Lil' Deathwing
@@ -406,7 +406,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		}),
 	})),
 	-- #endif
-	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_2, REMOVED_5_4_7 } }, {
+	expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_2, REMOVED_5_4_7 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
@@ -415,7 +415,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			i(85871),	-- Lucky Quilen Cub (PET!)
 		},
 	})),
-	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_2_2 } }, {
+	expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_2_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
 		["groups"] = {
 			ach(8917),	-- Collector's Edition: Dread Hatchling
@@ -424,7 +424,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			i(109013),	-- Dread Raven (MOUNT!)
 		},
 	})),
-	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 } }, {
+	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
 		["groups"] = {
 			ach(10321),	-- Collector's Edition: Nibbles
@@ -433,7 +433,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			i(128425),	-- Illidari Felstalker (MOUNT!)
 		},
 	})),
-	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 } }, {
+	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
 		["groups"] = {
 			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
@@ -444,7 +444,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			i(153541),	-- Tottle (PET!)
 		},
 	})),
-	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 } }, {
+	expansion(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",
 			["g"] = {
@@ -481,7 +481,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			},
 		}),
 	})),
-	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.1.7.51972" } }, {
+	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.1.7.51972" } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
 			["g"] = {

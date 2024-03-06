@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		n(-543, {	-- Broken Isles: Legion Invasions
 			["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
 			["maps"] = {
@@ -190,7 +190,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(46964),	-- Assault Treasure - Azsuna
 		q(46966),	-- Assault Treasure - Azsuna
 		q(46967),	-- Assault Treasure - Azsuna

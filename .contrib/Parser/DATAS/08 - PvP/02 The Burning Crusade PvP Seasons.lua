@@ -54,7 +54,7 @@ local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30001; end
 end]];
 -- #endif
-root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(tier(TBC_TIER, {
+root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(expansion(TBC_TIER, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Wrath.
 		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, FILTERFUNC_itemID, {
@@ -3641,7 +3641,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 }))))));
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- PvP Ensembles
 		q(46621),	-- Gladiator's Chain Armor (Hunter)
 		q(46622),	-- Gladiator's Dragonhide Armor (Druid)
@@ -3691,7 +3691,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #endif
 -- #if AFTER TBC
 root(ROOTS.NeverImplemented, {
-	tier(TBC_TIER, {
+	expansion(TBC_TIER, {
 		-- #if BEFORE 4.0.1.12941
 		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 			["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor

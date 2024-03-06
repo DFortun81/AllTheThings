@@ -18,7 +18,7 @@ local MageTowerFilter92 =
 }};
 -- #endif
 
-root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, {
 	-- Original Legion content
 	n(-10048, bubbleDown(MageTowerFilter, {	-- Mage Tower
 		["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
@@ -417,7 +417,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	})),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		q(64923),	-- unlocking Gravewarden Armaments set
 		q(64924),	-- unlocking Demonbane Armor set
 		q(64925),	-- unlocking Stormheart Raiment set

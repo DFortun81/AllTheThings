@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
 		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
 			["maps"] = { THE_HEART_Of_AZEROTH },
@@ -831,7 +831,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(41116),	-- 7.0 Artifacts - Shaman - Puzzle Room - Treasure - DGK - looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
 		q(44653),	-- Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
 		q(44654),	-- Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5

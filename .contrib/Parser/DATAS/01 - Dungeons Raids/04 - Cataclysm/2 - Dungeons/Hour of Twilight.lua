@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
+root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
 	inst(186, {	-- Hour of Twilight
 		["mapID"] = 399,
 		["maps"] = { 400 },
@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35439),	-- Hour of Twilight Quest Reward - Heroic completion
 	}),
 });

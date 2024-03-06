@@ -2338,7 +2338,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 
 root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
-		tier(CATA_TIER, {
+		expansion(CATA_TIER, {
 			q(14231),	-- Useless quest record
 		}),
 	}),

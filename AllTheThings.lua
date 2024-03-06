@@ -1002,8 +1002,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateCharacterClass(t.classID, t);
 		elseif t.headerID then
 			t = app.CreateNPC(t.headerID, t);
-		elseif t.tierID then
-			t = app.CreateTier(t.tierID, t);
+		elseif t.expansionID then
+			t = app.CreateExpansion(t.expansionID, t);
 		elseif t.unit then
 			t = app.CreateUnit(t.unit, t);
 		elseif t.difficultyID then
@@ -14610,7 +14610,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						local hg = {}
 						header.g = hg
 						if expansionLevel and not isHoliday then
-							header.icon = app.CreateTier(expansionLevel + 1).icon;
+							header.icon = app.CreateExpansion(expansionLevel + 1).icon;
 						elseif isTimeWalker then
 							header.icon = app.asset("Difficulty_Timewalking");
 						end

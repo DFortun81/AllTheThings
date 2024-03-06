@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Instances, expansion(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	inst(1031, {	-- Uldir
 		["isRaid"] = true,
 		["lvl"] = { 50 },

@@ -1312,6 +1312,7 @@ namespace ATT
                 case "encounterID":
                 case "equippable":
                 case "eventID":
+                case "expansionID":
                 case "factionID":
                 case "flightPathID":
                 case "followerID":
@@ -1375,7 +1376,6 @@ namespace ATT
                 case "title":
                 case "titleID":
                 case "text":
-                case "tierID":
                 case "vignetteID":
                 case "visualID":
                 case "zone-quest":

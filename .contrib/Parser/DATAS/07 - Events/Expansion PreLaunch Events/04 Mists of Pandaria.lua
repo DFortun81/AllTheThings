@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		["timeline"] = { "added 5.0.1" },
 		["OnUpdate"] = [[function(t)
 			if _.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then

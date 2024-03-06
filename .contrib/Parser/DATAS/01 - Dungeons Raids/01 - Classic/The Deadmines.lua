@@ -5,7 +5,7 @@
 -- With how we sort instances, this is actually "Deadmines" after 6.0.1
 -- See the "Deadmines" file for the actual content. -Crieve
 -- My OCD was really hating that "The Deadmines" was before "Dire Maul" in Classic. :)
-root(ROOTS.Instances, tier(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(CLASSIC_TIER, {
 	DEADMINES_INSTANCE,
 }));
 -- #endif

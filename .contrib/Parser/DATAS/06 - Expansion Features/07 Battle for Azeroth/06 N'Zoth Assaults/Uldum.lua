@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(BFA_TIER, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
 		["crs"] = {
@@ -1569,7 +1569,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(BFA_TIER, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		n(-10072, {	-- N'Zoth Assault
 			q(59061),	-- hatching Shadowbarb drone after the first phase

@@ -4,27 +4,27 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(COOKING, {
 		n(CRAFTABLES, {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				i(23683),	-- Crystal Flake Throat Lozenge
 			}),
-			tier(WOTLK_TIER, {
+			expansion(WOTLK_TIER, {
 				-- 3.0.2
-				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					i(34125),	-- Shoveltusk Soup
 					i(39691),	-- Succulent Orca Stew
 				})),
 			}),
-			tier(MOP_TIER, {
+			expansion(MOP_TIER, {
 				-- 5.4.0
-				tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+				expansion(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 					i(101729),	-- Grand Deluxe Noodle Cart Kit
 					i(101727),	-- Grand Noodle Cart Kit
 					i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
 				})),
 			}),
-			tier(WOD_TIER, {
+			expansion(WOD_TIER, {
 				-- 6.0.2
-				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					i(111435),	-- Clefhoof Pot Roast
 					i(111440),	-- Crispy Fried Scorpion
 					i(111432),	-- Deep Fried Riverbeast
@@ -36,9 +36,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(115291),	-- Whole Pot-Roasted Elekk
 				})),
 			}),
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172064),	-- zzOldArdenweald Zonewich
 					i(172065),	-- zzOldBastion Zonewich
 					i(172066),	-- zzOldMaldraxxus Zonewich
@@ -46,14 +46,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172067),	-- zzOldRevendreth Zonewich
 				})),
 			}),
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.0.0
-				tier(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(198396),	-- Ribbed Mollusk Meat
 				})),
 
 				-- 10.1.5
-				tier(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 					i(206188),	-- Druidic Dreamsalad
 					i(206189),	-- Fine Taladorian Cheese Platter
 					i(206187),	-- Highly Spiced Haunch
@@ -64,22 +64,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.2.0
-				tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				expansion(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 					i(210495),	-- Slumbering Peacebloom Tea
 				})),
 			}),
 		}),
 		filter(RECIPES, {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				-- With SpellID attached
 				i(23690),	-- Recipe: Crystal Flake Throat Lozenge / Crystal Throat Lozenge
 				-- Without SpellID attached
 				i(16073),	-- Artisan Cookbook
 				i(6891),	-- Recipe: Herb Baked Egg
 			}),
-			tier(WOTLK_TIER, {
+			expansion(WOTLK_TIER, {
 				-- 3.0.2
-				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					-- With SpellID attached
 					i(34126),	-- Recipe: Shoveltusk Soup
 					i(39692),	-- Recipe: Succulent Orca Stew
@@ -87,9 +87,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(39644),	-- Recipe: Kungaloosh
 				})),
 			}),
-			tier(MOP_TIER, {
+			expansion(MOP_TIER, {
 				-- 5.0.4
-				tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+				expansion(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					-- With SpellID attached
 					i(86550),	-- Apprentice Cookbook
 					i(86512),	-- Journeyman Cookbook
@@ -101,7 +101,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 5.4.0
-				tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+				expansion(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 					-- With SpellID attached
 					i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
 					i(101728),	-- Recipe: Grand Noodle Cart Kit
@@ -112,9 +112,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(101663),	-- Recipe: Pandaren Treasure Noodle Cart Kit
 				})),
 			}),
-			tier(WOD_TIER, {
+			expansion(WOD_TIER, {
 				-- 6.0.2
-				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					r(160967),	-- Clefthoof Pot Roast
 					r(160976),	-- Crispy Fried Scorpion
 					r(160961),	-- Deep Fried Basilisk
@@ -126,17 +126,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(169693),	-- Whole Pot-Roasted Elekk
 				})),
 			}),
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				-- 8.2.0
-				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+				expansion(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 					-- Without SpellID attached
 					i(169457),	-- Recipe: Mecha-Bytes
 					i(170076),	-- Recipe: Unagi Skewer
 				})),
 			}),
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(308421),	-- Ardenweald Zonewich
 					r(308422),	-- Bastion Zonewich
 					r(308423),	-- Maldraxxus Zonewich
@@ -144,9 +144,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(308424),	-- Revendreth Zonewich
 				})),
 			}),
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.0.0
-				tier(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					-- Without SpellID attached
 					i(198118),	-- Recipe: Aromatic Seafood Platter (RECIPE!)
 					i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
@@ -173,7 +173,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.1.5
-				tier(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 					r(412533),	-- Druidic Dreamsalad (RECIPE!)
 					r(412534),	-- Fine Taladorian Cheese Platter (RECIPE!)
 					r(412531),	-- Highly Spiced Haunch (RECIPE!)
@@ -184,7 +184,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.2.0
-				tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				expansion(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 					-- Without SpellID attached
 					i(210496),	-- Recipe: Slumbering Peacebloom Tea
 				})),

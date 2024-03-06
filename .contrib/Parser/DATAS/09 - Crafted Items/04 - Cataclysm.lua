@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(65460),	-- Big Cauldron of Battle
@@ -840,7 +840,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(JEWELCRAFTING, {
-			tier(CATA_TIER, {
+			expansion(CATA_TIER, {
 				i(52107),	-- Resolute Hessonite
 				i(52150),	-- Perfect Resolute Hessonite
 				i(52092),	-- Mystic Alicite

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(LEGION_TIER, {
+root(ROOTS.Instances, expansion(LEGION_TIER, {
 	inst(777, {	-- Assault of Violet Hold (Legion)
 		["lvl"] = 105,
 		["mapID"] = 732,

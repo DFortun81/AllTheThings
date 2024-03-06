@@ -37,7 +37,7 @@ local RED_HAKKARI_BIJOU = 203771;
 local SILVER_HAKKARI_BIJOU = 203772;
 local YELLOW_HAKKARI_BIJOU = 203773;
 local ZANDALAR_BARGAINING_TOKEN = 203914;
-root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
+root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
 	inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,
 		["isRaid"] = false,	-- prevent merging isRaid from Classic version
@@ -886,11 +886,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35411),	-- Zul'Gurub Reward Quest - Heroic completion
 		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest - kill Cache of Madness
 	}),
-	tier(DF_TIER, {
+	expansion(DF_TIER, {
 		q(74720),	-- Heruspec Ensemble
 		q(74721),	-- Predator Ensemble
 		q(74722),	-- Illusionist Ensemble

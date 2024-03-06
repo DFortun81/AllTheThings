@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(558, {	-- Iron Docks
 		["mapID"] = 595,
 		["coord"] = { 45.36, 13.52, GORGROND },
@@ -221,7 +221,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(34536),	-- Iron Docks Challenge Mode - Bronze Addition (Nth)
 		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)
 		q(34538),	-- Iron Docks Challenge Mode - Gold Addition (Nth)

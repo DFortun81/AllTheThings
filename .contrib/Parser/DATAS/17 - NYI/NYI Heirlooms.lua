@@ -5,18 +5,18 @@
 
 root(ROOTS.NeverImplemented, {
 	n(HEIRLOOMS, {
-		tier(CATA_TIER, {
-			tier(CATA_TIER, 0.3, {
+		expansion(CATA_TIER, {
+			expansion(CATA_TIER, 0.3, {
 				i(62035),	-- Antique Myrmidon's Signet
 				i(62036),	-- Ornate Band of Accuria
 				i(62037),	-- Gleaming seal of the archmagus
 			}),
-			tier(CATA_TIER, 1.0, {
+			expansion(CATA_TIER, 1.0, {
 				i(69891),	-- Burnished Dark Iron Ring
 			}),
 		}),
-		tier(SL_TIER, {
-			tier(SL_TIER, 0.1, {
+		expansion(SL_TIER, {
+			expansion(SL_TIER, 0.1, {
 				i(183143),	-- Heirloom Chestpiece
 				i(183146),	-- Heirloom Cloak
 				i(183144),	-- Heirloom Helm

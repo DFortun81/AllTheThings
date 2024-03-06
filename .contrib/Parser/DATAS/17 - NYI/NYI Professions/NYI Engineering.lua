@@ -4,9 +4,9 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ENGINEERING, {
 		n(CRAFTABLES, {
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
 					i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
 					i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
@@ -34,9 +34,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172922),	-- Re-Calibrated Proton Blaster
 				})),
 			}),
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.0.0
-				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(198836),	-- Arclight Vital Correctors
 					i(198250),	-- Convincingly Realistic Jumper Cables+
 					i(198251),	-- Convincingly Realistic Jumper Cables++
@@ -63,15 +63,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.5
-				tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+				expansion(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 					i(203382),	-- Peripheral Vision Projectors
 				})),
 			}),
 		}),
 		filter(RECIPES, {
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(310488),	-- Disposable Ectoplasmic Specs
 					r(310480),	-- Faerie Glider Kit
 					r(310515),	-- Hydrodynamic Accelerators \\ Phaevon Alloy
@@ -87,9 +87,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(310527),	-- Unknown
 				})),
 			}),
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.0.0
-				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382581),	-- Opening
 					r(382352),	-- Perfectly Calibrated Lenses
 					r(382360),	-- Tinker Removal Kit

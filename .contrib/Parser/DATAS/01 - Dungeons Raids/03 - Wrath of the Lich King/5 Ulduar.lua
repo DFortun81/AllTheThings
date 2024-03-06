@@ -7,7 +7,7 @@ local revampAch = function(id, t)
 	t.timeline = { "added 3.1.0", "removed 7.3.5.25727" };
 	return t;
 end
-root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
+root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 	inst(759, bubbleDownSelf({ ["timeline"] = { "added 3.1.0" } }, {	-- Ulduar
 		["mapID"] = ULDUAR,
 		["maps"] = { 148, 149, 150, 151, 152 },

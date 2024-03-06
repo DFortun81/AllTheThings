@@ -4,18 +4,18 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(SOUL_CYPHERING, {
 		n(CRAFTABLES, {
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(174992),	-- Cypher of Extrication
 					i(170463),	-- Jailer's Tower Key
 				})),
 			}),
 		}),
 		filter(RECIPES, {
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(317751),	-- Adamantine Cypher
 					r(317802),	-- Critical Damage
 					r(317852),	-- Critical Healing

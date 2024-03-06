@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(tier(SL_TIER, {
+root(ROOTS.PVP, pvp(expansion(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({
 		["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 	},{
@@ -821,7 +821,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	})),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		-- PvP Ensembles
 		q(74272),	-- Ensemble: Cosmic Aspirant's Cloth Armor
 		q(74271),	-- Ensemble: Cosmic Aspirant's Leather Armor

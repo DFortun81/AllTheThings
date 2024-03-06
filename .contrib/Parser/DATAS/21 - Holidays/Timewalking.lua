@@ -50,7 +50,7 @@ function AddInstancesToRotation(expansionTier, argument1, ...)
 			}));
 		end
 	end
-	root(ROOTS.Instances, tier(expansionTier, instances));
+	root(ROOTS.Instances, expansion(expansionTier, instances));
 end
 
 root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
@@ -177,7 +177,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
-	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+	expansion(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 		n(GROUP_FINDER, {
 			i(187902, {	-- Sporebat Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -1258,7 +1258,7 @@ AddInstancesToRotation(TBC_TIER, {
 
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
-	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+	expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 		n(GROUP_FINDER, {
 			i(129928, {	-- Frigid Timewarped Prism
 				["description"] = "Drops from the last boss from any wotlk timewalking dungeon.",
@@ -2662,7 +2662,7 @@ AddInstancesToRotation(WOTLK_TIER, {
 
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
-	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
+	expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
 		n(GROUP_FINDER, {
 			i(185053, {	-- Kodo Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -3570,7 +3570,7 @@ AddInstancesToRotation(CATA_TIER, {
 
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
-	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
+	expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
 		n(GROUP_FINDER, {
 			i(187904, {	-- Cloud Serpent Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -4054,7 +4054,7 @@ local SKY = -145;
 local BLOOM = -146;
 -- local UBRS = -147;
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
-	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
+	expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
 		n(GROUP_FINDER, {
 			i(210062, {	-- Ironbound Satchel of Helpful Goods // Draenor TW Daily Reward
 				["description"] = "Rewarded for completing any Draenor timewalking dungeon.\nAvailable once per day.",
@@ -4924,7 +4924,7 @@ AddInstancesToRotation(WOD_TIER, {
 
 -- Legion Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
-	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
+	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
 		n(GROUP_FINDER, {
 			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 				["description"] = "Rewarded for completing any legion timewalking dungeon.\nAvailable once per day.",
@@ -5551,7 +5551,7 @@ AddInstancesToRotation(LEGION_TIER, {
 	707,	-- Vault of the Wardens
 });
 
-root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(LEGION_TIER, {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
 }));
 root(ROOTS.NeverImplemented, {

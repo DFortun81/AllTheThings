@@ -146,7 +146,7 @@ VOLUNDS_FOLLY = createHeader({
 		cn = "沃伦德的愚行",
 	},
 });
-root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
 		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
 			["maps"] = { SKYHOLD },
@@ -883,7 +883,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(39174),	-- Guiding Light Tutorialized - triggers when you get your first artifact weapon and go back to Skyhold
 		q(44060),	-- Azsuna Teleport Learned - in Azurewing Repose
 		q(41359),	-- Highmountain Teleport Learned - in Thunder Totem

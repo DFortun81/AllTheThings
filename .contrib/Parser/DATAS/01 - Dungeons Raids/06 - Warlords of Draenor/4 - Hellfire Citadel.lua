@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 } }, {
+root(ROOTS.Instances, expansion(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 } }, {
 	inst(669, {	-- Hellfire Citadel
 		["mapID"] = 661,
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },

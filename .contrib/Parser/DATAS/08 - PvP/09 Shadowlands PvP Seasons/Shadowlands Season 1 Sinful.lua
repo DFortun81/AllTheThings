@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(tier(SL_TIER, {
+root(ROOTS.PVP, pvp(expansion(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({
 		["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH },
 	},{
@@ -538,7 +538,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 })));
 
 root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		header(HEADERS.Achievement, SEASON_SINFUL, {
 			["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 			["g"] = {
@@ -668,7 +668,7 @@ root(ROOTS.NeverImplemented, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		-- PvP Ensembles
 		q(74248),	-- Ensemble: Sinful Aspirant's Cloth Armor
 		q(74246),	-- Ensemble: Sinful Aspirant's Leather Armor

@@ -62,7 +62,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		}),
 	})),
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18730, {	-- Goblins vs Gnomes
 				["sourceQuests"] = {
@@ -452,7 +452,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		-- #endif
 	}),
-	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades
 			i(209063, {	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
 				i(208813),	-- Black Bio-Optic Killshades
@@ -483,7 +483,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 	})),
-	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		ach(18905, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Retinal Armor
 			i(209064, {	-- Ensemble: Chromatically Calibrated Retinal Armor
 				i(208802),	-- Black Retinal Armor
@@ -516,12 +516,12 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 	})),
-	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		ach(18895, {	-- You Had it Coming
 			["timeline"] = { ADDED_10_1_7 },
 		}),
 	})),
-	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		ach(18906, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons
 			i(209066, {	-- Ensemble: Chromatically Calibrated Cranial Cannons
 				i(208808),	-- Green Cranial Cannon
@@ -567,7 +567,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 	})),
-	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18776, {	-- The Ub3r-Spanner
 				["provider"] = { "i", 164740 },	-- Ub3r-Spanner
@@ -686,7 +686,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			})),
 		}),
 	})),
-	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	expansion(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		ach(18907, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Ectoplasmic Specs
 			i(209067, {	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
 				i(208817),	-- Blue Ectoplasmic Specs
@@ -708,7 +708,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 	})),
-	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18856),	-- Just an Ordinary Gas Cloud
 			ach(18857, {	-- That's No Ordinary Gas Cloud!
@@ -1109,7 +1109,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		q(78030),	-- Ensemble: Chromatically Calibrated Holo-Gogs
 		q(78031),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
 		q(78032),	-- Ensemble: Chromatically Calibrated Retinal Armor
@@ -1128,7 +1128,7 @@ local applytraining = function(g)
 end
 
 profession(ENGINEERING, {
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		-- #if BEFORE 4.0.1
 		{
 			["name"] = "Bullets",
@@ -1808,7 +1808,7 @@ profession(ENGINEERING, {
 			},
 		},
 	}),
-	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, {
 		-- #if BEFORE 4.0.1
 		{
 			["name"] = "Bullets",
@@ -2150,7 +2150,7 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
 		-- #if BEFORE 4.0.1
 		{
 			["name"] = "Bullets",
@@ -2466,7 +2466,7 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
 		{
 			["name"] = "Tinkers",
 			["categoryID"] = 735,
@@ -2654,7 +2654,7 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, {
 		{
 			["name"] = "Explosives",
 			["categoryID"] = 726,
@@ -2894,7 +2894,7 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, {
 		{
 			["name"] = "Reagents and Research",
 			["categoryID"] = 407,
@@ -3102,7 +3102,7 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, {
 		{
 			["name"] = "Goggles",
 			["categoryID"] = 470,
@@ -3454,7 +3454,7 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, {
+	applyclassicphase(BFA_PHASE_ONE, expansion(BFA_TIER, {
 		{
 			["name"] = "Belt Attachments",
 			["categoryID"] = 1096,
@@ -4236,7 +4236,7 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(SL_TIER, {
 		applytraining({
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1528,

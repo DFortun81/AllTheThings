@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.Instances, expansion(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	inst(317, {	-- Mogu'shan Vaults
 		["isRaid"] = true,
 		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },

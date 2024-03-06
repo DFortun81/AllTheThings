@@ -4,9 +4,9 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(SUPPLY_SHIPMENTS, {
 		filter(RECIPES, {
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.2.0
-				tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+				expansion(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 					r(424899),	-- Islefin Dorado Shipment
 					r(424881),	-- Hide Shipment
 					r(424529),	-- Hochenblume Shipment

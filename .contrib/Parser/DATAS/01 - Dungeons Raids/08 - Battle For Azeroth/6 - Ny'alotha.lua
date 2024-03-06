@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }, {
+root(ROOTS.Instances, expansion(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }, {
 	inst(1180, {	-- Ny'alotha
 		["coords"] = {
 			{ 55.1, 43.8, NZOTH_ASSAULT_ULDUM },
@@ -1033,7 +1033,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(BFA_TIER, {
 	inst(1180, {	-- Ny'alotha
 		q(58550),	-- Mythic: Prophet Skitra
 		q(58542),	-- Mythic: Vexiona

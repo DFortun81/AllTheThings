@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(CLASSIC_TIER, {
+root(ROOTS.Craftables, expansion(CLASSIC_TIER, {
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(6452, {["timeline"] = {ADDED_8_0_1}}),	-- Anti-Venom
@@ -2764,18 +2764,18 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				i(13262),	-- Ashbringer
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
 				i(15141),	-- Onyxia Scale Breastplate
 			}),
 		}),
 		prof(TAILORING, {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				i(7027),	-- Boots of Darkness
 				i(6243),	-- Green Woolen Robe
 				i(10039),	-- Stormcloth Boots

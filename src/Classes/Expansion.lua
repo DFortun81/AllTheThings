@@ -4,20 +4,20 @@ local _,app = ...;
 local pairs, tostring, math_floor, setmetatable, rawget
 	= pairs, tostring, math.floor, setmetatable, rawget
 local EJ_GetTierInfo = EJ_GetTierInfo;
-local GetTierName
+local GetExpansionName
 if EJ_GetTierInfo then
-	GetTierName = function(tierID)
+	GetExpansionName = function(expansionID)
 		-- only use API for name if not set from locale (this throws errors randomly for no reason, but not consistently)
-		local success, name = pcall(EJ_GetTierInfo, tierID);
+		local success, name = pcall(EJ_GetTierInfo, expansionID);
 		if success then return name; end
 		-- this value is cached, don't return if it's not a real value
 	end
 else
-	GetTierName = function(tierID) return UNKNOWN; end
+	GetExpansionName = function(expansionID) return UNKNOWN; end
 end
-local GetTierInfoMeta = function(t, key)
-	local tierID = rawget(t, "tierID")
-	local name = GetTierName(tierID)
+local GetExpansionInfoMeta = function(t, key)
+	local expansionID = rawget(t, "expansionID")
+	local name = GetExpansionName(expansionID)
 	if name then
 		t.name = name
 		setmetatable(t, nil)
@@ -25,26 +25,25 @@ local GetTierInfoMeta = function(t, key)
 	return rawget(t, key)
 end
 
--- TODO: Maybe rename tierID to expansionID?
-local TierInfoByID = {};
+local ExpansionInfoByID = {};
 local TIER_DATA = app.L.TIER_DATA;
-setmetatable(TierInfoByID, {
+setmetatable(ExpansionInfoByID, {
 	__index = function(t, patchID)
 		local info;
-		local tierID = math_floor(patchID);
-		if tierID ~= patchID then
-			local patch_decimal = 100 * (patchID - tierID);
+		local expansionID = math_floor(patchID);
+		if expansionID ~= patchID then
+			local patch_decimal = 100 * (patchID - expansionID);
 			local patch = math_floor(patch_decimal + 0.0001);
 			local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
 			info = setmetatable({
-				name = tostring(tierID).."."..tostring(patch).."."..tostring(rev),
-			}, { __index = TierInfoByID[tierID] });
+				name = tostring(expansionID).."."..tostring(patch).."."..tostring(rev),
+			}, { __index = ExpansionInfoByID[expansionID] });
 		else
 			-- We want to use the same reference table from the locales if possible
-			info = TIER_DATA[tierID] or { name = GetTierName(tierID) };
-			info.tierID = tierID;
+			info = TIER_DATA[expansionID] or { name = GetTierName(expansionID) };
+			info.expansionID = expansionID;
 			if not info.name then
-				setmetatable(info, {__index = GetTierInfoMeta });
+				setmetatable(info, {__index = GetExpansionInfoMeta });
 			end
 		end
 		t[patchID] = info
@@ -52,7 +51,7 @@ setmetatable(TierInfoByID, {
 	end
 });
 
-app.CreateTier = app.CreateClassWithInfo("Tier", "tierID", TierInfoByID, {
+app.CreateExpansion = app.CreateClassWithInfo("Expansion", "expansionID", ExpansionInfoByID, {
 	["ignoreSourceLookup"] = function(t)
 		return true;
 	end,

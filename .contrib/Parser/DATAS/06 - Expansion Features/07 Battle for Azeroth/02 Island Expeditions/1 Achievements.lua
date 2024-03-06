@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(BFA_TIER, {
 	n(ISLAND_EXPEDITIONS, {
 		n(ACHIEVEMENTS, {
 			ach(13142),		-- Archipelago Explorer

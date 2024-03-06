@@ -23,7 +23,7 @@ MECHAGON_WORKSHOP = createHeader({
 		en = [[~GetSpellInfo(251998)]],
 	},
 });
-root(ROOTS.Instances, tier(BFA_TIER, {
+root(ROOTS.Instances, expansion(BFA_TIER, {
 	inst(1178, {	-- Operation: Mechagon
 		["coord"] = { 73.1, 36.3, MECHAGON },
 		["maps"] = {

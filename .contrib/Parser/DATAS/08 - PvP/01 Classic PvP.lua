@@ -23,7 +23,7 @@ local function MarkOfWHOOOWHATNow(t)
 	-- #endif
 	return t;
 end
-root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
+root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(CLASSIC_TIER, {
 	["description"] = "In order to collect these, you need to have the original title associated with the gear.",
 	["groups"] = {
 		n(HONOR_TITLES, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.6692", "removed 2.0.0.13287" }}, {

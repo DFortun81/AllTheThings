@@ -5272,7 +5272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #IF ANYCLASSIC
 							{"sub", "pvp_gear_base", CLASSIC_TIER, FACTION_HEADER_ALLIANCE, WEAPONS },	-- Grand Marshal Weapons
 						-- #ELSE
-							{"select","tierID",CLASSIC_TIER},
+							{"select","expansionID",CLASSIC_TIER},
 							{"find","headerID",FACTION_HEADER_ALLIANCE},
 							{"find","headerID",WEAPONS},	-- Grand Marshal Weapons
 						-- #ENDIF
@@ -6036,7 +6036,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #IF ANYCLASSIC
 							{"sub", "pvp_gear_base", CLASSIC_TIER, FACTION_HEADER_ALLIANCE },
 						-- #ELSE
-							{"select","tierID",CLASSIC_TIER},
+							{"select","expansionID",CLASSIC_TIER},
 							{"find","headerID",FACTION_HEADER_ALLIANCE},
 						-- #ENDIF
 						{ "pop" },

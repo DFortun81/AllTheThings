@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
 	filter(QUEST_ITEMS, {
-		tier(CLASSIC_TIER, {
+		expansion(CLASSIC_TIER, {
 			-- 1.x.x
 			n(P1xx, {
 				i(17409),	-- Encrusted Crystal Fragment
@@ -14,35 +14,35 @@ root(ROOTS.NeverImplemented, {
 				i(17347),	-- Syndicate Man Tracker (MURP)
 			}),
 		}),
-		tier(WOTLK_TIER, {
+		expansion(WOTLK_TIER, {
 			-- 3.1.0
-			tier(WOTLK_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
+			expansion(WOTLK_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
 				i(42147),	-- Force Reaction Frost Giants
 				i(40796),	-- Force Reaction Frost Vrykul
 			})),
 		}),
-		tier(CATA_TIER, {
+		expansion(CATA_TIER, {
 			-- 4.0.3
-			tier(CATA_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 4.0.3" } }, {
+			expansion(CATA_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 4.0.3" } }, {
 				i(45818),	-- Force Quest Phase 1
 				i(46056),	-- Force Quest Phase 2
 			})),
 		}),
-		tier(MOP_TIER, {
+		expansion(MOP_TIER, {
 			-- 5.2.0
-			tier(MOP_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 5.2.0" } }, {
+			expansion(MOP_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 5.2.0" } }, {
 				i(93660),	-- Thunder-Laced Egg
 			})),
 		}),
-		tier(WOD_TIER, {
+		expansion(WOD_TIER, {
 			-- 6.0.1
-			tier(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+			expansion(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
 				i(109012),	-- Frostwolf Ancestral Totem
 			})),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- 7.2.0
-			tier(LEGION_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
+			expansion(LEGION_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
 				i(142362),	-- ZZZ OLD Fel-Etched Bone
 				i(142376),	-- ZZZ OLD Glowing Bloodthistle Petal
 				i(142371),	-- ZZZ OLD Inferno Stone
@@ -50,9 +50,9 @@ root(ROOTS.NeverImplemented, {
 				i(142378),	-- ZZZ OLD Vial of Ancient Mana
 			})),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- 8.0.1
-			tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
+			expansion(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
 				i(157772),	-- A Royal Concern
 				i(157775),	-- A Royal Concern
 				i(157788),	-- Saurid Egg
@@ -60,17 +60,17 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.0
-			tier(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+			expansion(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
 				i(164764),	-- Trident Head
 			})),
 
 			-- 8.1.5
-			tier(BFA_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 8.1.5" } }, {
+			expansion(BFA_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 8.1.5" } }, {
 				i(164776),	-- Schematic: The Ub3r-Spanner
 			})),
 
 			-- 8.2.0
-			tier(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
+			expansion(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
 				i(169326),	-- Abyssal Shard
 				i(167652),	-- Blueprint: Hundred-Fathom Lure
 				i(168023),	-- DNT- Smashed Transport Relay
@@ -88,9 +88,9 @@ root(ROOTS.NeverImplemented, {
 				i(169575),	-- Worthless data
 			})),
 		}),
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+			expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 				i(175265),	-- Belt of Prime Command
 				i(181241),	-- Blueprint: Charm of Buff 7
 				i(182654),	-- Bonescript Dispatches
@@ -104,17 +104,17 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
+			expansion(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
 				i(184169),	-- Vault Chain Pull
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
+			expansion(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
 				i(187863),	-- Key of Ephemera
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
+			expansion(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
 				i(187688),	-- [DNT] Rinanji's Key
 				i(187686),	-- [DNT] Suspicious Badge
 				i(188200),	-- Engraved Stone
@@ -133,9 +133,9 @@ root(ROOTS.NeverImplemented, {
 				i(185484),	-- Nathrezim Documents
 			})),
 		}),
-		tier(DF_TIER, {
+		expansion(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				i(194445),	-- [DNT] Ceremonial Necklace
 				i(191633),	-- A Shard of Crystallized Mana
 				i(191023),	-- Mudcaked Necklace
@@ -289,7 +289,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+			expansion(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 				i(194706),	-- [DEPRECATED]Illusionary Key
 				i(191069),	-- Beacon of the Black Prince
 				i(198848),	-- Flyspawn Thorax
@@ -299,7 +299,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.7
-			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+			expansion(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 				i(204089),	-- Atrenosh's Spellsworn Sigil
 				i(203998),	-- Beetle Juice
 				i(202396),	-- Plains Timber
@@ -311,7 +311,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.0
-			tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 				i(201956),	-- [DNT] Snakey Eyes
 				i(204351),	-- Animated Crystal Shard
 				i(204349),	-- Bigger Wrench
@@ -333,7 +333,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.5
-			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+			expansion(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 				i(202270),	-- [DNT] Twice-Woven Rope
 				i(202313),	-- Echolocator
 				i(202312),	-- Juicy Mammoth Steak
@@ -347,7 +347,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.2.0
-			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+			expansion(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				i(206378),	-- [DNT] Test Loot
 				i(206379),	-- [DNT] Test Loot
 				i(208703),	-- Blacksmith Bammer
@@ -362,7 +362,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.2.5
-			tier(DF_TIER, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+			expansion(DF_TIER, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
 				i(210720),	-- Delicate Flower
 				i(212608),	-- Duck Potion
 				i(210721),	-- Fanciful Flower

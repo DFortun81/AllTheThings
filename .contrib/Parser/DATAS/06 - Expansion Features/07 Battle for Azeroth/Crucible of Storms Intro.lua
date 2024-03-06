@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, {
-	tier(BFA_TIER, {
+	expansion(BFA_TIER, {
 		header(HEADERS.Object, 311218, {	-- Xal'atath, Blade of the Black Empire
 			q(54438, {	-- Crucible of Storms: Relics of Shadow
 				["sourceQuests"] = { 54126 },	-- Twist the Knife

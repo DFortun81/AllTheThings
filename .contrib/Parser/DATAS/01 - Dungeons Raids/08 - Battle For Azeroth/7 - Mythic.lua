@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } }, {
+root("Instances", expansion(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } }, {
 	d(MYTHIC_DUNGEON, {
 		n(AZERITE_ESSENCES, {
 			i(169491),	-- Focused Life Anima

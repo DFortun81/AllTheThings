@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, {
-	pvp(tier(LEGION_TIER, {
+	pvp(expansion(LEGION_TIER, {
 		n(SEASON_VINDICTIVE, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 7.0.3", "removed 7.1.0.23222" } }, {
 				ach(11017),	-- Challenger: Legion Season 1
@@ -12754,7 +12754,7 @@ root(ROOTS.PVP, {
 });
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- PvP Ensembles
 		q(46352),	-- Vindictive Combatant's Chain Armor (Hunter - Alliance)
 		q(46354),	-- Vindictive Combatant's Chain Armor (Hunter - Horde)

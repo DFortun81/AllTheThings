@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
 	n(ACHIEVEMENTS, {
 		ach(4784, {	-- Emblematic [A]
 			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },

@@ -4,7 +4,7 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(BLACKSMITHING, {
 		n(CRAFTABLES, {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				i(12795),	-- Blood Talon
 				i(12772),	-- Inlaid Thorium Hammer
 				i(6730),	-- Ironforge Chain
@@ -16,15 +16,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(5517),	-- Tiny Bronze Key
 				i(5518),	-- Tiny Iron Key
 			}),
-			tier(WOTLK_TIER, {
+			expansion(WOTLK_TIER, {
 				-- 3.0.2
-				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					i(41741),	-- Cobalt Rod
 				})),
 			}),
-			tier(MOP_TIER, {
+			expansion(MOP_TIER, {
 				-- 5.0.4
-				tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+				expansion(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					i(82918),	-- Lightsteel Belt
 					i(82917),	-- Lightsteel Boots
 					i(82913),	-- Lightsteel Breastplate
@@ -50,15 +50,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 5.2.0
-				tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+				expansion(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 					i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
 					i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 					i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
 				})),
 			}),
-			tier(WOD_TIER, {
+			expansion(WOD_TIER, {
 				-- 6.0.2
-				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					i(108422),	-- Blackrock Crucible
 					i(107968),	-- Draenic Steel Chestplate
 					i(107976),	-- Draenic Steel Chestplate
@@ -106,9 +106,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(122539),	-- Unstable Powerful Truesteel Essence
 				})),
 			}),
-			tier(LEGION_TIER, {
+			expansion(LEGION_TIER, {
 				-- 7.0.3
-				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 					i(124434),	-- Handmade Leystone Helm
 					i(124432),	-- Leystone Dome
 					i(124431),	-- Leystone Faceguard
@@ -116,9 +116,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(124006),	-- Leystone Slag
 				})),
 			}),
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				-- 8.0.1
-				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					i(159854, {["modID"] = 90, ["sourceID"] = 95903, ["name"] = "Honorable Combatant's Battleaxe", }),
 					i(159854, {["modID"] = 91, ["sourceID"] = 95904, ["name"] = "Honorable Combatant's Battleaxe", }),
 					i(159854, {["modID"] = 92, ["sourceID"] = 95905, ["name"] = "Honorable Combatant's Battleaxe", }),
@@ -253,9 +253,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(0, {["sourceID"] = 98009, ["name"] = "Stormsteel Spear", }),	-- i(161918),
 				})),
 			}),
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
 					i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
 					i(171426),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 07
@@ -343,9 +343,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(176899),	-- Solforged Warglaive
 				})),
 			}),
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.0.0
-				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(191261),	-- Draconium Repair Hammer
 					i(191884),	-- Draconium Repair Hammer
 					i(191885),	-- Draconium Repair Hammer
@@ -354,13 +354,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.2
-				tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+				expansion(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 					i(191882),	-- Serevite Repair Hammer
 					i(191883),	-- Serevite Repair Hammer
 				})),
 
 				-- 10.1.0
-				tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 					i(205040),	-- Shadowed Belt Buckle
 					i(205041),	-- Shadowed Belt Buckle
 					i(205042),	-- Shadowed Belt Buckle
@@ -371,7 +371,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				r(6470),	-- Tiny Bronze Key
 				r(6471),	-- Tiny Iron Key
 				-- With SpellID attched
@@ -394,9 +394,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(7986),	-- Plans: Ornate Mithril Breastplate
 				i(7987),	-- Plans: Ornate Mithril Helm
 			}),
-			tier(TBC_TIER, {
+			expansion(TBC_TIER, {
 				-- 2.1.0
-				tier(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
+				expansion(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
 					-- Without SpellID attached
 					i(35529),	-- Plans: Dawnsteel Bracers
 					i(35530),	-- Plans: Dawnsteel Shoulders
@@ -405,7 +405,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 2.4.0
-				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+				expansion(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 					-- Without SpellID attached
 					i(35553),	-- Plans: Hard Khorium Battlefists
 					i(35554),	-- Plans: Hard Khorium Battleplate
@@ -413,16 +413,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(35556),	-- Plans: Sunblessed Gauntlets
 				})),
 			}),
-			tier(WOTLK_TIER, {
+			expansion(WOTLK_TIER, {
 				-- 3.0.2
-				tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					r(55730),	-- Cobalt Rod
 					r(50465),	-- Socket One-Handed Weapon
 				})),
 			}),
-			tier(CATA_TIER, {
+			expansion(CATA_TIER, {
 				-- 4.0.1
-				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+				expansion(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 					r(85531),	-- Unknown
 					-- Without SpellID attached
 					i(66095),	-- Plans: Cold-Forged Shank
@@ -460,9 +460,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(66093),	-- Plans: Stormforged Shield
 				})),
 			}),
-			tier(MOP_TIER, {
+			expansion(MOP_TIER, {
 				-- 5.0.4
-				tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+				expansion(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					r(126867),	-- Unknown
 					r(113263),	-- Unknown
 					r(126864),	-- Unknown
@@ -520,9 +520,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(84237),	-- Plans: Spiritguard Shield
 				})),
 			}),
-			tier(WOD_TIER, {
+			expansion(WOD_TIER, {
 				-- 6.0.2
-				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					r(153631),	-- Draenic Steel Bulwark
 					r(153605),	-- Draenic Steel Chestplate
 					r(153629),	-- Draenic Steel Dagger
@@ -574,9 +574,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(120129),	-- Plans: Secrets of Draenor Blacksmithing
 				})),
 			}),
-			tier(LEGION_TIER, {
+			expansion(LEGION_TIER, {
 				-- 7.0.3
-				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+				expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 					r(184345),	-- Handmade Leystone Helm
 					r(184342),	-- Leystone Dome
 					r(184341),	-- Leystone Faceguard
@@ -598,15 +598,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 7.3.0
-				tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+				expansion(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
 					-- Without SpellID attached
 					i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 					i(151709),	-- Plans: Felslate Anchor
 				})),
 			}),
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				-- 8.0.1
-				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(253129),	-- 9.0 Blacksmithing - Modified Crafting Reagent 02
 					r(265939),	-- 9.0 Blacksmithing - Crafted Reagent 06
 					r(265938),	-- 9.0 Blacksmithing - Crafted Reagent 05
@@ -626,9 +626,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(253155),	-- REUSE ME \\ Stormsteel Greatsword
 				})),
 			}),
-			tier(SL_TIER, {
+			expansion(SL_TIER, {
 				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(307649),	-- 9.0 Blacksmithing - Crafted Reagent 03
 					r(307650),	-- 9.0 Blacksmithing - Crafted Reagent 04
 					r(280659),	-- 9.0 Blacksmithing - Crafted Reagent 07
@@ -713,9 +713,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(182670),	-- Plans: Reinforced Girdle
 				})),
 			}),
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.0.0
-				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(371396),	-- Draconium Repair Hammer
 					r(382579),	-- Opening
 					r(376698),	-- Wisp of Tyr

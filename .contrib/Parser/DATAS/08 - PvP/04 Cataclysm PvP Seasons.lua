@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, {
-	pvp(tier(CATA_TIER, {
+	pvp(expansion(CATA_TIER, {
 		n(RATED_BATTLEGROUNDS, {
 			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.|r",
 			["groups"] = {
@@ -4703,7 +4703,7 @@ root(ROOTS.PVP, {
 });
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- PvP Ensembles
 		q(46512),	-- Bloodthirsty Gladiator's Chain Armor (Hunter)
 		q(46513),	-- Bloodthirsty Gladiator's Dragonhide Armor (Druid)

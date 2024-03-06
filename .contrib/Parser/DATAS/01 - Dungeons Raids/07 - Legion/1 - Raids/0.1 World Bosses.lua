@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(LEGION_TIER, {
+root(ROOTS.Instances, expansion(LEGION_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 3,
@@ -344,7 +344,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
 		q(44501),	-- Tracking Quest - Ana-Mouz killID
 		q(44896),	-- Tracking Quest - Ana-Mouz bonus roll

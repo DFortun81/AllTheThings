@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
 	filter(MISC, {
-		tier(CLASSIC_TIER, {
+		expansion(CLASSIC_TIER, {
 			-- 1.x.x
 			n(P1xx, {
 				i(8502),	-- Bronze Lotterybox
@@ -41,9 +41,9 @@ root(ROOTS.NeverImplemented, {
 				i(8868),	-- Tome of Conjure Water VI
 			}),
 		}),
-		tier(TBC_TIER, {
+		expansion(TBC_TIER, {
 			-- 2.4.0
-			tier(TBC_TIER, 4.0, bubbleDown({ ["timeline"] = { "created 2.4.0" } }, {
+			expansion(TBC_TIER, 4.0, bubbleDown({ ["timeline"] = { "created 2.4.0" } }, {
 				i(34548),	-- Cache of the Shattered Sun
 				i(34544),	-- Essence of the Immortals
 				i(35728),	-- Greater Inscription of the Blade (arena realm only)
@@ -63,24 +63,24 @@ root(ROOTS.NeverImplemented, {
 				i(31498),	-- Tome of Frostbolt XIV
 			}),
 		}),
-		tier(WOTLK_TIER, {
+		expansion(WOTLK_TIER, {
 			-- 3.0.1
-			tier(WOTLK_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 3.0.1" } }, {
+			expansion(WOTLK_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 3.0.1" } }, {
 				i(41596),	-- Dalaran Jewelcrafter's Token
 			})),
 
 			-- 3.0.2
-			tier(WOTLK_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 3.0.2" } }, {
+			expansion(WOTLK_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 3.0.2" } }, {
 				i(43016),	-- Dalaran Cooking Award
 			})),
 
 			-- 3.1.0
-			tier(WOTLK_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
+			expansion(WOTLK_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
 				i(45924),	-- Certificate of Appreciation
 			})),
 
 			-- 3.3.3
-			tier(WOTLK_TIER, 3.3, bubbleDown({ ["timeline"] = { "created 3.3.3" } }, {
+			expansion(WOTLK_TIER, 3.3, bubbleDown({ ["timeline"] = { "created 3.3.3" } }, {
 				i(50329),	-- Icecrown-10 Normal Loot Token
 			})),
 
@@ -92,9 +92,9 @@ root(ROOTS.NeverImplemented, {
 				i(44126),	-- zzzOLDGreater Inscription of Template - PH
 			}),
 		}),
-		tier(CATA_TIER, {
+		expansion(CATA_TIER, {
 			-- 4.0.1
-			tier(CATA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 4.0.1" } }, {
+			expansion(CATA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 4.0.1" } }, {
 				i(42975),	-- Ace of Lords
 				i(42977),	-- Two of Lords
 				i(42978),	-- Three of Lords
@@ -108,7 +108,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 4.0.3
-			tier(CATA_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 4.0.3" } }, {
+			expansion(CATA_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 4.0.3" } }, {
 				i(55217),	-- Aqua Transform
 				i(43254),	-- Essence Crystal
 				i(55216),	-- Fiery Transform
@@ -118,7 +118,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 4.2.0
-			tier(CATA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 4.2.0" } }, {
+			expansion(CATA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 4.2.0" } }, {
 				i(71679),	-- Chest of the Fiery Conqueror
 				i(71686),	-- Chest of the Fiery Protector
 				i(71672),	-- Chest of the Fiery Vanquisher
@@ -131,7 +131,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 4.3.0
-			tier(CATA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 4.3.0" } }, {
+			expansion(CATA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 4.3.0" } }, {
 				i(78892),	-- Perfect Geode
 			})),
 
@@ -140,25 +140,25 @@ root(ROOTS.NeverImplemented, {
 				i(70104),	-- Unknown
 			}),
 		}),
-		tier(MOP_TIER, {
+		expansion(MOP_TIER, {
 			-- 5.0.1
-			tier(MOP_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
+			expansion(MOP_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
 				i(79907),	-- Spear of Xuen (Old Version)
 			})),
 
 			-- 5.1.0
-			tier(MOP_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 5.1.0" } }, {
+			expansion(MOP_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 5.1.0" } }, {
 				i(92563),	-- The Eye of the Storm
 			})),
 
 			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 5.3.0" } }, {
+			expansion(MOP_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 5.3.0" } }, {
 				i(98001),	-- Saurok Collection
 				i(98005),	-- Saurok Collection
 			})),
 
 			-- 5.4.0
-			tier(MOP_TIER, 4.0, bubbleDown({ ["timeline"] = { "created 5.4.0" } }, {
+			expansion(MOP_TIER, 4.0, bubbleDown({ ["timeline"] = { "created 5.4.0" } }, {
 				i(103535),	-- Bulging Bag of Charms (was planned for asia store)
 			})),
 
@@ -174,9 +174,9 @@ root(ROOTS.NeverImplemented, {
 				i(90569),	-- Unknown
 			}),
 		}),
-		tier(WOD_TIER, {
+		expansion(WOD_TIER, {
 			-- 6.0.1
-			tier(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+			expansion(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
 				i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
 				i(107459),	-- Black Iron Fragment
 				i(108882),	-- Bloodmaul Blasting Charge
@@ -193,7 +193,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 6.1.0
-			tier(WOD_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
+			expansion(WOD_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
 				i(122419),	-- Scouting Missive: Gorian Proving Grounds
 				i(122420),	-- Scouting Missive: Gorian Proving Grounds
 			})),
@@ -205,9 +205,9 @@ root(ROOTS.NeverImplemented, {
 				i(124644),	-- Unknown
 			}),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- 7.0.3
-			tier(LEGION_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
+			expansion(LEGION_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
 				i(134824),	-- "Sir Pugsington" Costume
 				i(132118),	-- Aggramar's Blessing
 				i(129742),	-- Badge of Timewalking Justice
@@ -227,7 +227,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.2.0
-			tier(LEGION_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
+			expansion(LEGION_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
 				n(SEASON_RUTHLESS, {
 					n(PVP_ELITE, {
 						i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
@@ -272,9 +272,9 @@ root(ROOTS.NeverImplemented, {
 				i(147904),	-- Cage Key
 			}),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- 8.0.1
-			tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
+			expansion(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
 				i(159734),	-- Add Keystone Affix: Fortified
 				i(159730),	-- Add Keystone Affix: Tyrannical
 				i(159732),	-- Add Keystone Affix: Bursting
@@ -334,7 +334,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.0
-			tier(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+			expansion(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
 				i(165730),	-- Cache of Dazar'alor Treasures
 				i(165731),	-- Cache of Dazar'alor Treasures
 				i(165732),	-- Cache of Dazar'alor Treasures
@@ -351,12 +351,12 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.5
-			tier(BFA_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 8.1.5" } }, {
+			expansion(BFA_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 8.1.5" } }, {
 				i(167026),	-- Cache of Crucible Treasures
 			})),
 
 			-- 8.2.0
-			tier(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
+			expansion(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
 				i(168272),	-- [PH] Amathet Cache
 				i(170501),	-- [PH] Mogu Cache
 				i(169154),	-- [PH] N'Zoth Cache
@@ -370,7 +370,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.2.5
-			tier(BFA_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 8.2.5" } }, {
+			expansion(BFA_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 8.2.5" } }, {
 				i(170488),	-- [DNT] Torn Journal Page #7
 				i(170484),	-- [DNT] Torn Journal Page #14
 				i(170487),	-- [DNT] Torn Journal Page #23
@@ -380,7 +380,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.3.0
-			tier(BFA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 8.3.0" } }, {
+			expansion(BFA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 8.3.0" } }, {
 				i(174455),	-- Add Keystone Affix: Awakened
 				i(169293),	-- Coalescing Visions
 				i(174838),	-- Collapsed Fusion Core
@@ -412,9 +412,9 @@ root(ROOTS.NeverImplemented, {
 				i(169192),	-- Unknown
 			}),
 		}),
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+			expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 				i(180483),	-- [PH] Legendary Dust
 				i(179367),	-- [PH] Torghast Boss Loot
 				i(180531),	-- [PH] Twisted Dust
@@ -651,7 +651,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
+			expansion(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
 				i(178659),	-- Abominable Backup
 				i(181739),	-- Bag of Soul Ash
 				i(184482),	-- Blueprint: Phial of Serenity
@@ -694,7 +694,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.5
-			tier(SL_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_9_0_5 } }, {
+			expansion(SL_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_9_0_5 } }, {
 				i(185472),	-- Heritage of the Shu'halo
 				i(185717),	-- Slumbering Spirit
 				i(186099),	-- Spatial Realignment Apparatus
@@ -702,7 +702,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
+			expansion(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
 				i(187524),	-- Add Keystone Affix: Tormented
 				i(186402),	-- Armament Ehancement Matrix
 				i(187120),	-- Blood Healing Shard 1 - Rank 5
@@ -794,7 +794,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.1.5
-			tier(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_9_1_5 } }, {
+			expansion(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_9_1_5 } }, {
 				i(189534),	-- Add Keystone Affix: Infernal
 				i(187610),	-- Court of Farondis Insignia
 				i(188168),	-- Kyrian Traveler's Anima Cache
@@ -806,7 +806,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
+			expansion(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
 				i(190938),	-- Add Keystone Affix: Encrypted
@@ -882,7 +882,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { CREATED_9_2_5 } }, {
+			expansion(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { CREATED_9_2_5 } }, {
 				i(191217),	-- [Daon Test]Beast Battle-Training Stone
 				i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
 				i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
@@ -893,7 +893,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.7
-			tier(SL_TIER, 2.7, bubbleDown({ ["timeline"] = { CREATED_9_2_7 } }, {
+			expansion(SL_TIER, 2.7, bubbleDown({ ["timeline"] = { CREATED_9_2_7 } }, {
 				i(200655),	-- Set Keystone Level: 36
 				i(200656),	-- Set Keystone Level: 37
 				i(200657),	-- Set Keystone Level: 38
@@ -907,9 +907,9 @@ root(ROOTS.NeverImplemented, {
 				i(173790),	-- Bunch of Berries
 			}),
 		}),
-		tier(DF_TIER, {
+		expansion(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				i(194719),	-- [DEPRECATED]Illusionary Coin
 				i(192600),	-- [DNT][PH] Meat
 				i(194110),	-- [PH] Dragon Rider's Honor
@@ -1095,7 +1095,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+			expansion(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 				i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 				i(193057),	-- 10.0 Placeholder Enchanting Crystal
 				i(193067),	-- Acadia's Tools [DNT/Unused]
@@ -1152,7 +1152,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.5
-			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+			expansion(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 				i(203461),	-- Chronologically Reallocated Rations
 				i(202112),	-- Crystal Shattering Armaments
 				i(202310),	-- Defective Doomsday Device
@@ -1163,7 +1163,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.7
-			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+			expansion(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 				i(202663),	-- [DNT] Dragonscale Expedition Item 01
 				i(202671),	-- [DNT] Dragonscale Expedition Item 02
 				i(202672),	-- [DNT] Dragonscale Expedition Item 03
@@ -1216,7 +1216,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.0
-			tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 				i(205934),	-- Add Keystone Affix: Afflicted
 				i(205933),	-- Add Keystone Affix: Entangling
 				i(205935),	-- Add Keystone Affix: Incorporeal
@@ -1250,7 +1250,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.5
-			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+			expansion(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 				i(208417),	-- Chromie's Certificate of Temporal Tidiness
 				i(208097),	-- Flamethrower
 				i(208108),	-- Madam Shadow's Old Grimoire
@@ -1262,7 +1262,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.7
-			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+			expansion(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
 				i(208549),	-- Canned Meat Product
 				i(208783),	-- Corrupted Blood
 				i(209832),	-- Crate of Dreambound Leather
@@ -1344,7 +1344,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.2.0
-			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+			expansion(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 				i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 				i(210040),	-- Set Keystone Map: Throne of the Tides

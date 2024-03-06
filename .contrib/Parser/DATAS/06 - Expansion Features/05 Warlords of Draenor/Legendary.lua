@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		n(QUALITY_LEGENDARY, {
 			["title"] = "Darkness Incarnate",
 			["icon"] = 1097305,

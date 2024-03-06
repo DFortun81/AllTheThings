@@ -13,7 +13,7 @@ local function FatedItem(modItemID, modID)
 	item.timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH };
 	return item;
 end
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1190, {	-- Castle Nathria
 		["isRaid"] = true,
 		["coord"] = { 46.1, 41.5, REVENDRETH },
@@ -1488,7 +1488,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 })));
 
 
-root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(SL_TIER, {
 	inst(1190, {	-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed
 

@@ -3718,7 +3718,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers,{
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		q(31123),	-- Chose Arms Warrior
 		q(31124),	-- Chose Brewmaster
 		q(31050),	-- Chose Fire Mage

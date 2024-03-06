@@ -644,6 +644,7 @@ local InformationTypes = {
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),
 	CreateInformationType("displayID", { text = L.DISPLAY_ID }),
 	CreateInformationType("encounterID", { text = L.ENCOUNTER_ID }),
+	CreateInformationType("expansionID", { text = L.EXPANSION_ID }),
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
 	CreateInformationType("flightPathID", { text = L.FLIGHT_PATH_ID }),
@@ -659,7 +660,6 @@ local InformationTypes = {
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),
 	CreateInformationType("spellName", { text = L.SPELL_NAME, IsStandaloneProperty = false }),	-- Included as a parameter for the spellID field.
-	CreateInformationType("tierID", { text = L.EXPANSION_ID }),
 	CreateInformationType("titleID", { text = L.TITLE_ID }),
 	
 	CreateInformationType("c", { text = L.CLASSES, priority = 8000, ShouldDisplayInExternalTooltips = false,

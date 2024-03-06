@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
+root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(276, {	-- Halls of Reflection
 		["mapID"] = HALLS_OF_REFLECTION,
 		["coord"] = { 52.3, 89.3, ICECROWN },
@@ -283,7 +283,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35441),	-- Halls of Reflection Reward Quest - Normal completion
 		q(35442),	-- Halls of Reflection Reward Quest - Heroic completion
 	}),

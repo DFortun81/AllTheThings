@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(LEGION_TIER, {
+root(ROOTS.Instances, expansion(LEGION_TIER, {
 	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
 			ach(11224, {	-- Realm First! Legion Keystone Master

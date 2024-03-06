@@ -10,7 +10,7 @@ local DREAM_INFUSION = createHeader({
 		ru = "Настой Сна",
 	},
 });
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	n(DREAM_WARDENS, {
 		n(DREAM_INFUSION, bubbleDownSelf({ ["minReputation"] = { FACTION_DREAM_WARDENS, 5 } }, {
 			q(78430, {	-- Mean Green Infusion Machine

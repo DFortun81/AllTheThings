@@ -1069,7 +1069,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(39607),	-- God-King Scene (Vault) - triggers when turning in "Ahead of the Game" (questID 39590)
 		q(43713),	-- Tracking - Statue Climbed - triggers at the top of Nashal the Watcher
 		q(38420),	-- Triggered when turning in "Cry Thunder!" (questID 38624)

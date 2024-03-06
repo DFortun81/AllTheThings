@@ -7,7 +7,7 @@ local OUTDOOR_ULDAMAN_CRS = {
 	4845,	-- Shadowforge Ruffian
 	4844,	-- Shadowforge Surveyor
 };
-root(ROOTS.Instances, tier(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(CLASSIC_TIER, {
 	inst(239, {	-- Uldaman
 		-- #if BEFORE MOP
 		["lore"] = "Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",
@@ -820,7 +820,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 }));
 -- #if AFTER 6.0.1
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35605),	-- Uldaman Reward Quest - Normal completion
 		q(35610),	-- Uldaman Bonus Reward
 	}),

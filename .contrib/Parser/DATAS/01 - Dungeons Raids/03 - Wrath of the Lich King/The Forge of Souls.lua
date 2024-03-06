@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
+root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(280, {	-- The Forge of Souls
 		["mapID"] = THE_FORGE_OF_SOULS,
 		["coord"] = { 52.3, 89.3, ICECROWN },
@@ -257,7 +257,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35436),	-- The Forge of Souls Reward Quest - Normal completion
 		q(35437),	-- The Forge of Souls Reward Quest - Heroic completion
 	}),

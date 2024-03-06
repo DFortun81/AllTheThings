@@ -9,7 +9,7 @@ local RUNOK_CRITERIA_UID_HEROIC_ALLIANCE = 12312;
 local COLOSOS_CRITERIA_UID_HEROIC_HORDE = 12320;
 local RUNOK_CRITERIA_UID_HEROIC_ALLIANCE = 12320;
 -- #endif
-root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
+root(ROOTS.Instances, expansion(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 	inst(284, {	-- Trial of the Champion
 		["mapID"] = TRIAL_OF_THE_CHAMPION,
 		["coord"] = { 74.0, 20.9, ICECROWN },
@@ -733,7 +733,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35950),	-- Trial of the Champion Reward Quest - Normal / Heroic completion
 	}),
 });

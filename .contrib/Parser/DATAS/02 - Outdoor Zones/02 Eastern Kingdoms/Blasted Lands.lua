@@ -2019,7 +2019,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 
 -- #if AFTER 6.0
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 	}),

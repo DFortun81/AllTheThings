@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(tier(SL_TIER, {
+root(ROOTS.PVP, pvp(expansion(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({
 		["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
 	},{

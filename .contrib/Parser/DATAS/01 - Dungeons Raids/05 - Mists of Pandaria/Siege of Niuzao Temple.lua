@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(324, {	-- Siege of Niuzao Temple
 		["coord"] = { 35, 82, TOWNLONG_STEPPES },
 		["maps"] = {
@@ -407,13 +407,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
 		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)
 		q(31647),	-- Siege of Niuzao Temple Challenge Mode - Gold Addition (Nth)
 		q(31640),	-- Siege of Niuzao Temple Challenge Mode - Silver Addition (Nth)
 	}),
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35312),	-- Siege of Niuzao Reward Quest
 		q(35461),	-- Siege of Niuzao Reward Quest
 	}),

@@ -6,7 +6,7 @@ local recipe = function(recipeID, t)
 end
 
 profession(FIRST_AID, {
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		recipe(3273, {	-- First Aid (Apprentice)
 			["rank"] = 1,
 		}),
@@ -55,7 +55,7 @@ profession(FIRST_AID, {
 		recipe(18630),	-- Heavy Runecloth Bandage
 		recipe(23787),	-- Powerful Anti-Venom
 	}),
-	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, {
 		recipe(27028, {	-- First Aid (Master)
 			["timeline"] = { "added 2.0.1", REMOVED_8_0_1 },
 			["rank"] = 5,
@@ -63,7 +63,7 @@ profession(FIRST_AID, {
 		recipe(27032),	-- Nethercloth Bandage
 		recipe(27033),	-- Heavy Nethercloth Bandage
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
 		ach(135, {	-- Grand Master in First Aid
 			["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
 		}),
@@ -74,23 +74,23 @@ profession(FIRST_AID, {
 		recipe(45545),	-- Frostweave Bandage
 		recipe(45546),	-- Heavy Frostweave Bandage
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
 		recipe(74556),	-- Embersilk Bandage
 		recipe(74557),	-- Heavy Embersilk Bandage
 		recipe(74558),	-- Field Bandage: Dense Embersilk
 		recipe(88893),	-- Dense Embersilk Bandage
 	})),
-	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, {
 		recipe(102697),	-- Windwool Bandage
 		recipe(102698),	-- Heavy Windwool Bandage
 	})),
-	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(WOD_TIER, {
 		recipe(172539),	-- Antiseptic Bandage
 		recipe(172541),	-- Blackwater Anti-Venom
 		recipe(172542),	-- Fire Ammonite Oil
 		recipe(172540),	-- Healing Tonic
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(LEGION_TIER, {
 		recipe(202853),	-- Silkweave Bandage
 		recipe(202854),	-- Silkweave Splint
 		recipe(230047),	-- Feathered Luffa

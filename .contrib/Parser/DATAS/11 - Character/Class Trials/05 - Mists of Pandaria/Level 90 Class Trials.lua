@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	tier(MOP_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	expansion(MOP_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_NINETY, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does not reward this gear anymore]
 			["description"] = "These were obtained by creating a Level 90 Class Trial for each class and specialization.",

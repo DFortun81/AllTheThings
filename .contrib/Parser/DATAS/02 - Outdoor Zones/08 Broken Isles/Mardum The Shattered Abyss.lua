@@ -540,7 +540,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(40375),	-- A New Direction: Obtained Altruis - chose Altruis during "A New Direction" (questID 40373) in the Vault of the Wardens scenario
 		q(40374),	-- A New Direction: Obtained Kayn - chose Kayn during "A New Direction" (questID 40373) in the Vault of the Wardens scenario
 		q(40087),	-- Enter the Illidari: Shivarra - Sevis Brightflame Sacrificed Tracking Event

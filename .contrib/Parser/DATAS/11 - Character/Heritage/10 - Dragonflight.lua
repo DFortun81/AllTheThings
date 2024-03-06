@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
-	tier(DF_TIER, {
+	expansion(DF_TIER, {
 		race(HUMAN, {
 			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",
 			["races"] = { HUMAN },
@@ -571,7 +571,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+	expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 		q(74894),	-- Triggers after the scene ends after 'Go with Honor, Friend' (questID 72452) (spellID 403652)
 		q(73705),	-- Triggers right after accepting 'The Kosh'harg' (questID 72464) (spellID 399758)
 		q(74541),	-- Triggers when you find a 'Mysterious Orc' during 'The Kosh'harg' (questID 72464) (spellID 401231)
@@ -585,7 +585,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72473),	-- Choosing Gorfax Angerfang (Dragonmaw clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398670)
 		q(72471),	-- Choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398674)
 	})),
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+	expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891) (spellID 415206)
 		q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203) (spellID 422467)
 		q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879) (spellID 421666)

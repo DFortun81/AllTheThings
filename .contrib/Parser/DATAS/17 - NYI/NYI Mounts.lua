@@ -2,7 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, filter(MOUNTS, {
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		mount(25863, {	-- Black Qiraji Battle Tank (MOUNT!)
 			["displayID"] = 15676
 		}),
@@ -114,9 +114,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			["displayID"] = 1166
 		}),
 	}),
-	tier(TBC_TIER, {
+	expansion(TBC_TIER, {
 		-- 2.0.1
-		tier(TBC_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
+		expansion(TBC_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
 			mount(33630, {	-- Blue Mechanostrider (MOUNT!)
 				["displayID"] = 6569.
 			}),
@@ -137,7 +137,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.0.5
-		tier(TBC_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_5 } }, {
+		expansion(TBC_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_5 } }, {
 			-- With MountID Attached
 			i(25664, {	-- Old Crappy McWeakSauce [Item: Crappy's Bell] (MOUNT!)
 				["displayID"] = 17701,
@@ -145,7 +145,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.0.8
-		tier(TBC_TIER, 0.8, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_8 } }, {
+		expansion(TBC_TIER, 0.8, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_8 } }, {
 			-- Without MountID Attached
 			i(29225, {	-- zzoldSwift Warstrider (MOUNT!)
 				["displayID"] = 20359,
@@ -153,14 +153,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.1.0
-		tier(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
+		expansion(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
 			mount(40212, {	-- Dragonmaw Nether Drake (MOUNT!)
 				["displayID"] = 16314,
 			}),
 		})),
 
 		-- 2.1.2
-		tier(TBC_TIER, 1.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_2 } }, {
+		expansion(TBC_TIER, 1.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_2 } }, {
 			mount(39949, {	-- Mount (Test Anim) (MOUNT!)
 				["displayID"] = 2404,
 			}),
@@ -174,7 +174,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 
 		-- #if ANYCLASSIC
 		-- 2.2.2
-		tier(TBC_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_2 } }, {
+		expansion(TBC_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_2 } }, {
 			i(33176, {	-- Flying Broom (MOUNT!)
 				["timeline"] = { "deleted 4.2.2" },
 			}),
@@ -182,7 +182,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- #endif
 
 		-- 2.2.3
-		tier(TBC_TIER, 2.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_3 } }, {
+		expansion(TBC_TIER, 2.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_3 } }, {
 			-- With MountID Attached
 			i(28482, {	-- Great Elite Elekk (MOUNT!)
 				["displayID"] = 17906,
@@ -190,7 +190,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.3.0
-		tier(TBC_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
+		expansion(TBC_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
 			mount(42929, {	-- [DNT] Test Mount (MOUNT!)
 				["displayID"] = 21268,
 			}),
@@ -201,14 +201,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.4.00
-		tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+		expansion(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 			mount(47037, {	-- Swift War Elekk (MOUNT!)
 				["displayID"] = 23928,
 			}),
 		})),
 
 		-- 2.4.1
-		tier(TBC_TIER, 4.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_1 } }, {
+		expansion(TBC_TIER, 4.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_1 } }, {
 			-- With MountID Attached
 			i(37827, {	-- Brewfest Riding Kodo (MOUNT!)
 				["displayID"] = 24758,
@@ -216,7 +216,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.4.3
-		tier(TBC_TIER, 4.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_3 } }, {
+		expansion(TBC_TIER, 4.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_3 } }, {
 			mount(55164, {	-- Swift Spectral Gryphon (MOUNT!)
 				["displayID"] = 26691,
 			}),
@@ -244,9 +244,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 		})),
 	}),
-	tier(WOTLK_TIER, {
+	expansion(WOTLK_TIER, {
 		-- 3.0.2
-		tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+		expansion(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 			mount(55293, {	-- Amani War Bear (MOUNT!)
 				["displayID"] = 22464,
 			}),
@@ -302,14 +302,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 3.0.8
-		tier(WOTLK_TIER, 0.8, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_8 } }, {
+		expansion(WOTLK_TIER, 0.8, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_8 } }, {
 			mount(61983, {	-- Dan's Test Mount (MOUNT!)
 				["displayID"] = 27659,
 			}),
 		})),
 
 		-- 3.1.0
-		tier(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+		expansion(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
 			mount(64992, {	-- Big Blizzard Bear [PH] (MOUNT!)
 				["displayID"] = 27567,
 			}),
@@ -323,7 +323,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 3.2.0
-		tier(WOTLK_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
+		expansion(WOTLK_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
 			mount(66907, {	-- Argent Warhorse (MOUNT!)
 				["displayID"] = 28918,
 			}),
@@ -339,7 +339,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 3.3.3
-		tier(WOTLK_TIER, 3.3, bubbleDownSelf({ ["timeline"] = { CREATED_3_3_3 } }, {
+		expansion(WOTLK_TIER, 3.3, bubbleDownSelf({ ["timeline"] = { CREATED_3_3_3 } }, {
 			mount(75387, {	-- Tiny Mooncloth Carpet (MOUNT!)
 				["displayID"] = 31837,
 			}),
@@ -347,7 +347,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 
 		-- #if ANYCLASSIC
 		-- 3.4.0
-		tier(WOTLK_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_4_0 } }, {
+		expansion(WOTLK_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_4_0 } }, {
 			mount(388516, {	-- Hao-Yue, River Foreseer (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -372,9 +372,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 		-- #endif
 	}),
-	tier(CATA_TIER, {
+	expansion(CATA_TIER, {
 		-- 4.0.3
-		tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+		expansion(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 			mount(68930, {	-- Brood of Onyxia (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -390,15 +390,15 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 4.3.2
-		tier(CATA_TIER, 3.2, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_2 } }, {
+		expansion(CATA_TIER, 3.2, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_2 } }, {
 			mount(121805, {	-- RAF Mount III (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 		})),
 	}),
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		-- 5.0.4
-		tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+		expansion(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 			mount(128859, {	-- zzOldDepleted-Kyparium Rocket (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -437,23 +437,23 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 5.1.0
-		tier(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
+		expansion(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
 			mount(134854, {	-- Cloud Mount (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 		})),
 
 		-- 5.4.0
-		tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+		expansion(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 			-- With MountID Attached
 			i(104011, {	-- Stormcrow (MOUNT!)
 				["displayID"] = 51323,
 			}),
 		})),
 	}),
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		-- 6.0.2
-		tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			mount(150926, {	-- Draenor Chimera (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -464,7 +464,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 6.2.0
-		tier(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
+		expansion(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
 			-- With MountID Attached
 			i(128480, {	-- Bristling Hellboar (MOUNT!)
 				["displayID"] = 64726,
@@ -472,15 +472,15 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 6.2.1
-		tier(WOD_TIER, 2.1, bubbleDownSelf({ ["timeline"] = { "created 6.2.1" } }, {
+		expansion(WOD_TIER, 2.1, bubbleDownSelf({ ["timeline"] = { "created 6.2.1" } }, {
 			mount(194046, {	-- Swift Spectral Rylak (MOUNT!)
 				["displayID"] = 65845,
 			}),
 		})),
 	}),
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- 7.0.3
-		tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			-- With MountID Attached
 			i(137615, {	-- Flarecore Infernal (MOUNT!)
 				["displayID"] = 70127,
@@ -495,7 +495,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 7.2.0
-		tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			mount(239363, {	-- Swift Spectral Hippogryph (MOUNT!)
 				["displayID"] = 75637,
 			}),
@@ -514,9 +514,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(143493),	-- Shadowblade's Murderous Omen (MOUNT!) [Item Never Available]
 		})),
 	}),
-	tier(BFA_TIER, {
+	expansion(BFA_TIER, {
 		-- 8.0.1
-		tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			mount(237285, {		-- Hyena Mount White (PH) (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -558,7 +558,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 8.1.0
-		tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 			-- Without MountID Attached
 			i(166417, {	-- Reins of the Onyx War Hyena (MOUNT!)
 				-- ["displayID"] = ,
@@ -566,7 +566,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 8.2.0
-		tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 			mount(301841, {	-- Kua'fon (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -588,9 +588,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 		})),
 	}),
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		-- 9.0.1
-		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			mount(312772, {	-- Gilded Prowler (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -620,14 +620,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 9.0.5
-		tier(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
+		expansion(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
 			mount(347813, {	-- Fireplume Phoenix (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 		})),
 
 		-- 9.1.0
-		tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			-- With MountID Attached
 			i(186639, {	-- Pilfered Gearglider (MOUNT!)
 				-- ["displayID"] = ,
@@ -645,14 +645,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 9.1.5
-		tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 			mount(350529, {	-- NAK's Test Mount [DNT] (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 		})),
 
 		-- 9.2.0
-		tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			mount(356802, {	-- Holy Lightstrider (MOUNT!)
 				["displayID"] = 101577,
 			}),
@@ -663,7 +663,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 9.2.5
-		tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
+		expansion(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
 			mount(367190, {	-- [DND] Test Mount JZB (MOUNT!)
 				["displayID"] = 88719,
 			}),
@@ -671,9 +671,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(190581),	-- Nether-Gorged Greatwyrm (MOUNT!) [Item Never Available]
 		})),
 	}),
-	tier(DF_TIER, {
+	expansion(DF_TIER, {
 		-- 10.0.0
-		tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			mount(371571, {	-- Dragon Isles Drake Model Test (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -784,7 +784,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 10.0.5
-		tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			mount(369480, {	-- Cerulean Marsh Hopper
 				["displayID"] = 105766,
 			}),
@@ -798,7 +798,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 10.1.0
-		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			-- With MountID Attached
 			i(205206, {	-- Shalewing, Fire (MOUNT!)
 				-- ["displayID"] =
@@ -808,19 +808,19 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 10.1.5
-		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			-- Without MountID Attached
 			i(190636),	-- Armored Siege Kodo (MOUNT!) [Item Never Available]
 		})),
 
 		-- 10.1.7
-		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			-- Without MountID Attached
 			i(203727),	-- Gleaming Moonbeast's Reins (MOUNT!) [Item Never Available]
 		})),
 
 		-- 10.2.0
-		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			-- With MountID Attached
 			i(210141, {	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
 				-- ["displayID"] = ,
@@ -859,7 +859,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 10.2.5
-		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			-- Without MountID Attached
 			i(211486),	-- Winding Slitherdrake (MOUNT!)
 		})),

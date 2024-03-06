@@ -314,7 +314,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(44880),	-- Stormheim - WQ rare: Direbeak Matriarch
 		q(45507),	-- Stormheim - WQ rare: Fjorlag
 		q(42721),	-- Stormheim - WQ rare: Urgev the Flaye

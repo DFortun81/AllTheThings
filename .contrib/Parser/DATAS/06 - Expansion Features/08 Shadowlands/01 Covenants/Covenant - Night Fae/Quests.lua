@@ -48,7 +48,7 @@ local LFR_WEAPON_GROUP = {
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
 
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(QUESTS, {
 			q(63214, {	-- Report to Moonberry
@@ -918,7 +918,7 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 end
 
 root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		n(WEAPONS, {
 			i(176017),	-- Ardenweald Quest 2H Mace
 			i(176018),	-- Ardenweald Quest 2H Mace

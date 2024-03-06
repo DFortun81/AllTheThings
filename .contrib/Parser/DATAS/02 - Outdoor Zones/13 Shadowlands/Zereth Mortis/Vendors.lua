@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["questID"] = 70705,
 						["cost"] = { { "g", 25000000 } },	-- 2500g
 						["sym"] = {
-							{"select","tierID",SL_TIER},	-- SL Tier
+							{"select","expansionID",SL_TIER},	-- Select Shadowlands
 							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["questID"] = 65694,
 						["cost"] = { { "g", 5000000 } },	-- 500g
 						["sym"] = {
-							{"select","tierID",SL_TIER},	-- SL Tier
+							{"select","expansionID",SL_TIER},	-- Select Shadowlands
 							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),

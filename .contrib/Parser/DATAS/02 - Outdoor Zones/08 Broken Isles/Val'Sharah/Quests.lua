@@ -785,7 +785,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(38666),	-- entering the burning house during 38644	(The Farmsteads)
 		q(45490),	-- Lytheron
 		q(44881),	-- Sharptalon Matriarch Tracking Q From the WQ Sharptalon

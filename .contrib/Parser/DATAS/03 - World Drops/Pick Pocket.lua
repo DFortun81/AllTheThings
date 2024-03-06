@@ -6,14 +6,14 @@ root(ROOTS.WorldDrops, {
 	header(HEADERS.Spell, 921, {	-- Pick Pocket
 		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
 		["groups"] = {
-			tier(CLASSIC_TIER, {
+			expansion(CLASSIC_TIER, {
 				-- #if NOT ANYCLASSIC
 				i(6150, {	-- A Frayed Knot
 					["description"] = "Can be pickpocketed from Classic humanoids.",
 				}),
 				-- #endif
 			}),
-			tier(WOTLK_TIER, {
+			expansion(WOTLK_TIER, {
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
 						["description"] = "Can be pickpocketed from Northrend humanoids.",
@@ -27,7 +27,7 @@ root(ROOTS.WorldDrops, {
 					}),
 				}),
 			}),
-			tier(CATA_TIER, {
+			expansion(CATA_TIER, {
 				filter(TOYS, {
 					i(63269, {	-- Loaded Gnomish Dice (TOY!)
 						["description"] = "Can be pickpocketed from Cataclysm humanoids.",
@@ -36,7 +36,7 @@ root(ROOTS.WorldDrops, {
 					}),
 				}),
 			}),
-			tier(WOD_TIER, {
+			expansion(WOD_TIER, {
 				q(39107, {	-- An Even Bigga Score
 					["qg"] = 83006,	-- Griftah
 					["classes"] = { ROGUE },
@@ -67,7 +67,7 @@ root(ROOTS.WorldDrops, {
 				i(113008),	-- Glowing Ancestral Idol: 20 coins
 				i(113007),	-- Magma-Infused War Beads: 20 coins
 			}),
-			tier(LEGION_TIER, {
+			expansion(LEGION_TIER, {
 				i(151165),	-- Verbellin Tourbillion Chronometer	20000
 				i(151164),	-- Sparkling Sin'dorei Signet	10000
 				i(151163),	-- Locket of Magical Memories	5000

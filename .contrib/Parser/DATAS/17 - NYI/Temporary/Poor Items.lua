@@ -6,7 +6,7 @@
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root(ROOTS.NeverImplemented, {
 	n(QUALITY_POOR, {
-		tier(CLASSIC_TIER, {
+		expansion(CLASSIC_TIER, {
 			-- NYI Classic Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -765,7 +765,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(TBC_TIER, {
+		expansion(TBC_TIER, {
 			-- NYI The Burning Crusade Poor Items
 			n(ARMOR, {
 				filter(TRINKET_F, {
@@ -1428,7 +1428,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(WOTLK_TIER, {
+		expansion(WOTLK_TIER, {
 			-- NYI Wrath of the Lich King Poor Items
 			n(WEAPONS, {
 				filter(ONE_HANDED_AXES, {
@@ -1893,7 +1893,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(CATA_TIER, {
+		expansion(CATA_TIER, {
 			-- NYI Cataclysm Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -2827,7 +2827,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(MOP_TIER, {
+		expansion(MOP_TIER, {
 			-- NYI Mists of Pandaria Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -3012,7 +3012,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(WOD_TIER, {
+		expansion(WOD_TIER, {
 			-- NYI Warlords of Draenor Poor Items
 			n(ARMOR, {
 				filter(COSMETIC, {
@@ -3168,7 +3168,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- NYI Legion Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -3275,7 +3275,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- NYI Battle for Azeroth Poor Items
 			n(ARMOR, {
 				filter(COSMETIC, {
@@ -3329,7 +3329,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- NYI Shadowlands Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {
@@ -3932,7 +3932,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		tier(DF_TIER, {
+		expansion(DF_TIER, {
 			-- NYI Dragonflight Poor Items
 			n(ARMOR, {
 				filter(CLOTH, {

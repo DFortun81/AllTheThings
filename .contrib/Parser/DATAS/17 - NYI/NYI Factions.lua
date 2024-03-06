@@ -8,7 +8,7 @@
 --[[
 root(ROOTS.NeverImplemented, {
 	n(FACTIONS, {
-		tier(CLASSIC_TIER, {
+		expansion(CLASSIC_TIER, {
 			-- 0.5.3.3368
 			faction(1),	-- PLAYER, Human \\ Human (Player)
 			faction(2),	-- PLAYER, Orc \\ Orc (Player)
@@ -183,7 +183,7 @@ root(ROOTS.NeverImplemented, {
 			--faction(2587),	-- Durotar Supply and Logistics
 			--faction(2588),	-- S03 - Scarlet Crusade Disguise
 		}),
-		tier(TBC_TIER, {
+		expansion(TBC_TIER, {
 			--2.0.0.6080
 			faction(914),	-- PLAYER, Blood Elf
 			faction(923),	-- Farstriders
@@ -293,9 +293,9 @@ root(ROOTS.NeverImplemented, {
 			faction(1081),	-- Object, Force Reaction
 			faction(1087),	-- Holiday Monster
 		}),
-		tier(WOTLK_TIER, {
+		expansion(WOTLK_TIER, {
 			-- 3.0.1
-			tier(WOTLK_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 3.0.1"} }, {
+			expansion(WOTLK_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 3.0.1"} }, {
 				faction(1045),	-- Vrykul
 				faction(1046),	-- Northsea Pirates
 				faction(1047),	-- Tuskarr
@@ -349,12 +349,12 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 3.1.0
-			tier(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 3.1.0"} }, {
+			expansion(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 3.1.0"} }, {
 				faction(1127),	-- Orgrimmar (Alex Test)
 			})),
 
 			-- 3.3.5
-			tier(WOTLK_TIER, 3.5, bubbleDownSelf({ ["timeline"] = {"created 3.3.5"} }, {
+			expansion(WOTLK_TIER, 3.5, bubbleDownSelf({ ["timeline"] = {"created 3.3.5"} }, {
 				faction(1136),	-- Tranquillien Conversion
 				faction(1137),	-- Wintersaber Conversion
 				faction(1145),	-- Hates Everything
@@ -364,9 +364,9 @@ root(ROOTS.NeverImplemented, {
 				faction(1160),	-- CTF - Flag - Horde 2
 			})),
 		}),
-		tier(CATA_TIER, {
+		expansion(CATA_TIER, {
 			-- 4.0.3
-			tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 4.0.3"} }, {
+			expansion(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 4.0.3"} }, {
 				faction(1128),	-- Twilight's Hammer
 				faction(1129),	-- Furbolg, Blackwood
 				faction(1130),	-- Stag, Darkshore
@@ -386,7 +386,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 4.3.0
-			tier(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 4.3.0"} }, {
+			expansion(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 4.3.0"} }, {
 				faction(1179),	-- Slime
 				faction(1181),	-- Friendly, New
 				faction(1189),	-- K3
@@ -399,9 +399,9 @@ root(ROOTS.NeverImplemented, {
 				faction(1265),	-- Shen'dralar
 			})),
 		}),
-		tier(MOP_TIER, {
+		expansion(MOP_TIER, {
 			-- 5.0.4
-			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = {"created 5.0.4"} }, {
+			expansion(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = {"created 5.0.4"} }, {
 				faction(1243),	-- Hozen
 				faction(1249),	-- PLAYER, Expansion 4 Neutral
 				faction(1252),	-- Sha
@@ -424,32 +424,32 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 5.1.0
-			tier(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 5.1.0"} }, {
+			expansion(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 5.1.0"} }, {
 				faction(1416),	-- Akama's Trust
 			})),
 
 			-- 5.2.0
-			tier(MOP_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
+			expansion(MOP_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
 				faction(1433),	-- Monster, Enforced Neutral For Force Reaction
 			})),
 
 			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 5.3.0"} }, {
+			expansion(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 5.3.0"} }, {
 				faction(1440),	-- Darkspear Rebellion
 				faction(1443),	-- Kor'kron
 				faction(1447),	-- Darkspear Trolls
 			})),
 
 			-- 5.4.0
-			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
+			expansion(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
 				faction(1457),	-- Forelings
 				faction(1491),	-- The Timewalkers
 				faction(1500),	-- Red Phantom
 			})),
 		}),
-		tier(WOD_TIER, {
+		expansion(WOD_TIER, {
 			-- 6.0.1
-			tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+			expansion(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 				faction(1483),	-- Foreling-Eaters
 				faction(1496),	-- Frostfire Ogres
 				faction(1508),	-- Shadowmoon Orcs \\ Shadowmoon Orc
@@ -479,7 +479,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 6.0.2
-			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
+			expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
 				faction(1756),	-- LVA_Looters
 				faction(1757),	-- LVA_Preservers
 				faction(1758),	-- LVA_Naturalists
@@ -487,9 +487,9 @@ root(ROOTS.NeverImplemented, {
 				faction(1760),	-- Highmaul Gladiators
 			})),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- 7.0.1
-			tier(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 7.0.1"} }, {
+			expansion(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 7.0.1"} }, {
 				faction(1786),	-- Burning Legion Invaders
 				faction(1815),	-- Gilnean Survivors
 				faction(1833),	-- Uncrowned
@@ -509,14 +509,14 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.0.3
-			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+			expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 				faction(1962),	-- Nightborne Civilian
 				faction(1984),	-- The First Responders
 				faction(1989),	-- Moon Guard
 			})),
 
 			-- 7.2.0
-			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
+			expansion(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
 				faction(2012),	-- Nightborne Rebels
 				faction(2040),	-- Talon's Vengeance
 				faction(2063),	-- Arne Test - Paragon Reputation Stormwind
@@ -530,23 +530,23 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.3.0
-			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
+			expansion(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
 				faction(2166),	-- Army of the Light (Paragon)
 				faction(2167),	-- Argussian Reach (Paragon)
 				faction(2180),	-- _JKL - test rep
 			})),
 
 			-- 7.3.5
-			tier(LEGION_TIER, 3.5, bubbleDownSelf({ ["timeline"] = {"created 7.3.5"} }, {
+			expansion(LEGION_TIER, 3.5, bubbleDownSelf({ ["timeline"] = {"created 7.3.5"} }, {
 				faction(2229),	-- PLAYER, Void Elf
 				faction(2230),	-- PLAYER, Highmountain Tauren
 				faction(2231),	-- PLAYER, Nightborne
 				faction(2232),	-- PLAYER, Lightforged Draenei
 			})),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- 8.0.1
-			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+			expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 				faction(2105),	-- Nazmani
 				faction(2111),	-- Zandalari Dinosaurs
 				faction(2120),	-- Kul Tiras - Tiragarde \\ Kul Tiras
@@ -578,7 +578,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.0
-			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
+			expansion(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
 				faction(2378),	-- Zandalari Empire (Paragon)
 				faction(2379),	-- Proudmoore Admiralty (Paragon)
 				faction(2380),	-- Talanji's Expedition (Paragon)
@@ -592,7 +592,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.2.0
-			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
+			expansion(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
 				faction(2374),	-- The Unshackled (Paragon) \\ Unshackled (Paragon)
 				faction(2392),	-- Rustbolt Resistance (Paragon)
 				faction(2394),	-- Hermit Crabs
@@ -602,16 +602,16 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.3.0
-			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 8.3.0"} }, {
+			expansion(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 8.3.0"} }, {
 				faction(2416),	-- Rajani (Paragon)
 				faction(2418),	-- Uldum Accord (Paragon)
 				faction(2419),	-- Nzoth
 				faction(2431),	-- Owen Test
 			})),
 		}),
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+			expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
 				faction(2404),	-- House of Constructs \\ 9.0 Maldraxxus - Abominations
 				faction(2405),	-- House of Rituals \\ 9.0 Maldraxxus - Lich
 				faction(2406),	-- House of the Chosen \\ 9.0 Maldraxxus - Warriors
@@ -629,7 +629,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
+			expansion(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
 				faction(2468),	-- Korthia
 				faction(2471),	-- Death's Advance (Paragon)
 				faction(2473),	-- The Archivists' Codex (Paragon) \\ The Archivist's Codex (Paragon)
@@ -637,7 +637,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 9.2.0"} }, {
+			expansion(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 9.2.0"} }, {
 				faction(2469),	-- Fractal Lore
 				faction(2479),	-- The Enlightened (Paragon)
 				faction(2480),	-- Automa
@@ -645,8 +645,8 @@ root(ROOTS.NeverImplemented, {
 				faction(2502),	-- Zereth Mortis Lured Monsters
 			})),
 		}),
-		tier(DF_TIER, {
-			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(DF_TIER, {
+			expansion(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 				faction(2504),	-- Maruuk Centaur (Paragon)
 				faction(2508),	-- Dragonscale Expedition (Paragon)
 				faction(2521),	-- Clan Nokhud (Paragon)
@@ -669,16 +669,16 @@ root(ROOTS.NeverImplemented, {
 				faction(2554),	-- Clan Toghus
 				faction(2555),	-- Clan Kaighan
 			})),
-			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+			expansion(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 				faction(2557),	-- Hearthfire Fellowship
 			})),
-			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				faction(2565),	-- Loamm Niffen (Paragon)
 			})),
-			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			expansion(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 				faction(2576),	-- Druids of the Flame
 			})),
-			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			expansion(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				faction(2575),	-- Dream Wardens (Paragon)
 			})),
 		}),

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	tier(BFA_TIER, {
+	expansion(BFA_TIER, {
 		n(WAR_EFFORT, {
 			m(DARKSHORE, {	-- Outdoor Warfront-Phased Content
 				-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is currently active
@@ -1753,7 +1753,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(BFA_TIER, {
 	n(WAR_EFFORT, {
 		n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 			q(54908),	-- Opening Darkshore Cache 60.8,22.2 (TODO: move to actual object above)

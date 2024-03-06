@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
 		n(VENDORS, {
 			n(202468, {	-- Harlowe Marl
@@ -239,7 +239,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, {
+	expansion(DF_TIER, {
 		-- Ensembles
 		q(75832),	-- Ensemble: Ornate Black Dragon Labwear
 	}),

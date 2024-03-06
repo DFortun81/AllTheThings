@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, { tier(LEGION_TIER, {
+root(ROOTS.Instances, { expansion(LEGION_TIER, {
 	inst(945, {	-- Seat of the Triumvirate
 		["lvl"] = 110,
 		["mapID"] = 903,
@@ -350,7 +350,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 	}),
 })});
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(48566),	-- learning Ensemble: Venerated Triumvirate Battleplate
 		q(48567),	-- learning Ensemble: Sterling Triumvirate Chainmail
 		q(48568),	-- learning Ensemble: Burnished Triumvirate Armor

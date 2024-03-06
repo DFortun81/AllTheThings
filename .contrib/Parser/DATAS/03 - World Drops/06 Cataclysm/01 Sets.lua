@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	tier(CATA_TIER, {
+	expansion(CATA_TIER, {
 		n(SETS, {
 			i(55635),	-- Aboraz Bindings
 			i(55653),	-- Aboraz Boots

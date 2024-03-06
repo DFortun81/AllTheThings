@@ -46,7 +46,7 @@ local excludedZones = {
 	[1945] = 1,	-- Outland (Classic)
 };
 local everythingFilter = function(t)
-	return (t.collectible and not t.collected) and not (t.mapID and excludedZones[t.mapID]) and not t.tierID;
+	return (t.collectible and not t.collected) and not (t.mapID and excludedZones[t.mapID]) and not t.expansionID;
 end;
 local zoneFilter = function(t)
 	return t.mapID and (not (t.saved or (t.collectible and t.collected)) and (t.total and t.progress < t.total)) and not excludedZones[t.mapID];

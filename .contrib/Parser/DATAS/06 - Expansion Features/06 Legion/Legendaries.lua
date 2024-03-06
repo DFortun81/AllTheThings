@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		n(LEGENDARIES, {
 			cl(DEMONHUNTER, {
 				i(137061),	-- Raddon's Cascading Eyes

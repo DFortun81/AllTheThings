@@ -4,18 +4,18 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JUNKYARD_TINKERING, {
 		n(CRAFTABLES, {
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				-- 8.2.0
-				tier(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
+				expansion(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
 					i(168221),	-- Encrypted Radio Receiver
 					i(137225),	-- Thunderfury, Blessed Blade of the Windseeker [Weird...]
 				})),
 			}),
 		}),
 		filter(RECIPES, {
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				-- 8.2.0
-				tier(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
+				expansion(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
 					r(296386),	-- Encrypted Radio Receiver
 					r(296388),	-- Disposable Radio
 					r(300465),	-- Pocket-Sized Computation Device

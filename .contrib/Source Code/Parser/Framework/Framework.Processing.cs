@@ -88,26 +88,26 @@ namespace ATT
                 unsorted = new List<object>();
                 Objects.AllContainers["Unsorted"] = unsorted;
             }
-            var tierLists = new Dictionary<int, TierList>();
-            int maxTierID = 10;// LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
-            for (int tierID = 1; tierID <= maxTierID; ++tierID)
+            var expansionLists = new Dictionary<int, TierList>();
+            int maxExpansionID = 10;// LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
+            for (int expansionID = 1; expansionID <= maxExpansionID; ++expansionID)
             {
-                // ensure the tier group exists
+                // ensure the expansion group exists
                 Objects.Merge(unsorted, new Dictionary<string, object>
                     {
-                        { "tierID", tierID },
+                        { "expansionID", expansionID },
                         { "g", new List<object>() },
                     });
-                // grab the resulting tier group 'g' list
-                unsorted.FindObject("tierID", tierID).TryGetValue("g", out listing);
-                // create a new TierList object tracking the specified g listing
-                tierLists[tierID] = new TierList
+                // grab the resulting expansion group 'g' list
+                unsorted.FindObject("expansionID", expansionID).TryGetValue("g", out listing);
+                // create a new ExpansionList object tracking the specified g listing
+                expansionLists[expansionID] = new TierList
                 {
                     Groups = listing
                 };
             }
-            TierList tier = tierLists[1];
-            var moreThanOne = tierLists.Count > 1;
+            TierList expansion = expansionLists[1];
+            var moreThanOne = expansionLists.Count > 1;
             foreach (var item in Items.AllItemsWithoutReferences)
             {
                 if (moreThanOne)
@@ -116,33 +116,33 @@ namespace ATT
                     // try to sort by itemID
                     if (item.TryGetValue("itemID", out long itemID))
                     {
-                        if (itemID < 22727) tier = tierLists[1]; // Classic
-                        else if (itemID < 29205) tier = tierLists[2];   // Burning Crusade
-                        else if (itemID < 37649) tier = tierLists[3];   // Wrath of the Lich King
-                        else if (itemID < 72019) tier = tierLists[4];   // Cataclysm
-                        else if (itemID < 100855) tier = tierLists[5];   // Mists of Pandaria
-                        else if (itemID < 130731) tier = tierLists[6];   // Warlords of Draenor
-                        else if (itemID < 156823) tier = tierLists[7];   // Legion
-                        else if (itemID < 174366) tier = tierLists[8];   // Battle For Azeroth
-                        else if (itemID < 190311) tier = tierLists[9];   // Shadowlands
-                        else tier = tierLists[10];   // Dragonflight
+                        if (itemID < 22727) expansion = expansionLists[1]; // Classic
+                        else if (itemID < 29205) expansion = expansionLists[2];   // Burning Crusade
+                        else if (itemID < 37649) expansion = expansionLists[3];   // Wrath of the Lich King
+                        else if (itemID < 72019) expansion = expansionLists[4];   // Cataclysm
+                        else if (itemID < 100855) expansion = expansionLists[5];   // Mists of Pandaria
+                        else if (itemID < 130731) expansion = expansionLists[6];   // Warlords of Draenor
+                        else if (itemID < 156823) expansion = expansionLists[7];   // Legion
+                        else if (itemID < 174366) expansion = expansionLists[8];   // Battle For Azeroth
+                        else if (itemID < 190311) expansion = expansionLists[9];   // Shadowlands
+                        else expansion = expansionLists[10];   // Dragonflight
                     }
-                    // sort by level into tier if not an item
+                    // sort by level into expansion if not an item
                     else if (level.HasValue)
                     {
-                        if (level <= 25) tier = tierLists[1]; // Classic
-                        else if (level <= 27) tier = tierLists[2];   // Burning Crusade
-                        else if (level <= 30) tier = tierLists[3];   // Wrath of the Lich King
-                        else if (level <= 32) tier = tierLists[4];   // Cataclysm
-                        else if (level <= 35) tier = tierLists[5];   // Mists of Pandaria
-                        else if (level <= 40) tier = tierLists[6];   // Warlords of Draenor
-                        else if (level <= 45) tier = tierLists[7];   // Legion
-                        else if (level <= 50) tier = tierLists[8];   // Battle For Azeroth
-                        else if (level <= 60) tier = tierLists[9];   // Shadowlands
-                        else tier = tierLists[10];   // Dragonflight
+                        if (level <= 25) expansion = expansionLists[1]; // Classic
+                        else if (level <= 27) expansion = expansionLists[2];   // Burning Crusade
+                        else if (level <= 30) expansion = expansionLists[3];   // Wrath of the Lich King
+                        else if (level <= 32) expansion = expansionLists[4];   // Cataclysm
+                        else if (level <= 35) expansion = expansionLists[5];   // Mists of Pandaria
+                        else if (level <= 40) expansion = expansionLists[6];   // Warlords of Draenor
+                        else if (level <= 45) expansion = expansionLists[7];   // Legion
+                        else if (level <= 50) expansion = expansionLists[8];   // Battle For Azeroth
+                        else if (level <= 60) expansion = expansionLists[9];   // Shadowlands
+                        else expansion = expansionLists[10];   // Dragonflight
                     }
-                    // default tier assignment
-                    else tier = tierLists[1];
+                    // default expansion assignment
+                    else expansion = expansionLists[1];
                 }
 
                 if (item.TryGetValue("f", out long filterID) && filterID >= 0 && (filterID < 56 || filterID > 90))
@@ -159,23 +159,23 @@ namespace ATT
                             break;
                         case Objects.Filters.Recipe:
                             {
-                                if (!tier.FilteredLists.TryGetValue(filterID, out listing))
+                                if (!expansion.FilteredLists.TryGetValue(filterID, out listing))
                                 {
-                                    tier.Groups.Add(new Dictionary<string, object>
+                                    expansion.Groups.Add(new Dictionary<string, object>
                                     {
                                         { "f", filterID },
-                                        { "g", listing = tier.FilteredLists[filterID] = new List<object>() }
+                                        { "g", listing = expansion.FilteredLists[filterID] = new List<object>() }
                                     });
                                 }
                                 if (item.TryGetValue("requireSkill", out object requireSkillRef))
                                 {
                                     requireSkill = Convert.ToInt64(requireSkillRef);
-                                    if (!tier.ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
+                                    if (!expansion.ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
                                     {
                                         listing.Add(new Dictionary<string, object>
                                         {
                                             {"professionID", requireSkill },
-                                            { "g", listing = tier.ProfessionLists[requireSkill] = new List<object>() }
+                                            { "g", listing = expansion.ProfessionLists[requireSkill] = new List<object>() }
                                         });
                                     }
                                     else
@@ -185,12 +185,12 @@ namespace ATT
                                 }
                                 else
                                 {
-                                    if (!tier.ProfessionLists.TryGetValue(-1, out List<object> sublisting))
+                                    if (!expansion.ProfessionLists.TryGetValue(-1, out List<object> sublisting))
                                     {
                                         listing.Add(new Dictionary<string, object>
                                         {
                                             { "f", (int)Objects.Filters.Miscellaneous },
-                                            { "g", listing = tier.ProfessionLists[-1] = new List<object>() }
+                                            { "g", listing = expansion.ProfessionLists[-1] = new List<object>() }
                                         });
                                     }
                                     else
@@ -222,12 +222,12 @@ namespace ATT
                                         break;
                                 }
                                 item.Remove("spellID");
-                                if (!tier.FilteredLists.TryGetValue(filterID, out listing))
+                                if (!expansion.FilteredLists.TryGetValue(filterID, out listing))
                                 {
-                                    tier.Groups.Add(new Dictionary<string, object>
+                                    expansion.Groups.Add(new Dictionary<string, object>
                                     {
                                         { "f", filterID },
-                                        { "g", listing = tier.FilteredLists[filterID] = new List<object>() }
+                                        { "g", listing = expansion.FilteredLists[filterID] = new List<object>() }
                                     });
                                 }
 

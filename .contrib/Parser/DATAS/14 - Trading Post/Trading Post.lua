@@ -1677,7 +1677,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
+	expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
 		-- These don't trigger when using ensembles, but they are listed on Wowhead
 		q(65568),	-- Arsenal: Blades of Elune
 		q(65502),	-- Ensemble: Fel-Automaton Exoplate
@@ -1782,7 +1782,7 @@ root(ROOTS.NeverImplemented, {
 			i(190201),	-- Sin'dorei Assassin's Shroud
 
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					------ TRADING POST ------
 				n(SETS, {
 					-- Honored Valarjar Set [Mail]
@@ -1832,7 +1832,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.5
-			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+			expansion(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 					------ TRADING POST ------
 				i(190075),	-- Mantle of the Scholarly Raven
 				n(SETS, {
@@ -1937,13 +1937,13 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.0
-			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 					------ TRADING POST ------
 				i(189885),	-- The Battlespoon
 			})),
 
 			-- 10.1.5
-			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+			expansion(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 					------ TRADING POST ------
 				i(206279),	-- Vagabond's Plum Cape
 				i(206280),	-- Vagabond's Faded Cape
@@ -1990,7 +1990,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.2.0
-			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+			expansion(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 					------ Trading Post ------
 				n(ARMOR, {
 					------ Sarong ------

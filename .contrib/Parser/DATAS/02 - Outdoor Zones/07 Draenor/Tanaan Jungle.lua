@@ -2305,7 +2305,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(38836),	-- Aktar's Post - Aktar's Post visited
 		q(39306),	-- Call to Arms - chosen during "Bring the Reinforcements"
 		q(39183),	-- FLAG - Immaculate Critical Strike Taladite - learning Immaculate Critical Strike Taladite at an Apexis Gemcutter
@@ -2342,10 +2342,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
 		q(39564),	-- Vignette: Murktide Alpha - learning Saberstalker's Teachings: Trailblazer
 	}),
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
 	}),
-	tier(BFA_TIER, {
+	expansion(BFA_TIER, {
 		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
 		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery
 	}),

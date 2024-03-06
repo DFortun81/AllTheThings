@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(45485),	-- Val'sharah - WQ rare: Aodh Witherpetal
 		q(45483),	-- Val'sharah - WQ rare: Ealdis
 		q(45484),	-- Val'sharah - WQ rare: Harbinger of Screams

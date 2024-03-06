@@ -5,9 +5,9 @@
 -- #if AFTER WOD
 root(ROOTS.NeverImplemented, {
 	n(FOLLOWERS, {
-		tier(WOD_TIER, {
+		expansion(WOD_TIER, {
 			-- 6.0.1
-			tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+			expansion(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 				follower(6),	-- Alliance:Horde:Orc Male \\ Horde:Human Male
 				follower(7),	-- Alliance:Horde:Abyssal \\ Horde:Rytama
 				follower(8),	-- Alliance:Horde:Abyssal \\ Horde:Genn Greymane
@@ -59,9 +59,9 @@ root(ROOTS.NeverImplemented, {
 				follower(475),	-- Alliance:Faal \\ Horde:Besandran Shatterfury
 			})),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- 7.0.1
-			tier(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 7.0.1"} }, {
+			expansion(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 7.0.1"} }, {
 				follower(497),	-- Druid Champion 1
 				follower(585),	-- Alliance:Commander Lynore Windstryke \\ Horde:Nazgrel
 				follower(587),	-- Eitrigg
@@ -107,9 +107,9 @@ root(ROOTS.NeverImplemented, {
 				follower(987),	-- Lady S'theno
 			})),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- 8.0.1
-			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+			expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 				follower(1074),	-- Alliance:Magister Umbric \\ Horde:Arcanist Valtrois
 				follower(1075),	-- Alliance:Recruit Alliance Troops \\ Horde:Recruit Horde Troops
 				follower(1188),	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries
@@ -134,9 +134,9 @@ root(ROOTS.NeverImplemented, {
 				follower(1207),	-- Alliance:Shandris Feathermoon \\ Horde:Lilian Voss
 			})),
 		}),
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+			expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
 				follower(1208),	-- Nadjia the Mistblade
 				follower(1211),	-- Eli the Brazen
 				follower(1212),	-- Anjali
@@ -157,7 +157,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
+			expansion(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
 				follower(1340),	-- Ella
 				follower(1344),	-- Ben Howell
 			})),

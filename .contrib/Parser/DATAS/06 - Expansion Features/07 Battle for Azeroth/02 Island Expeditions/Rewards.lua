@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(BFA_TIER, {
 	n(ISLAND_EXPEDITIONS, {
 		n(SCENARIO_COMPLETION, {
 			["description"] = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",

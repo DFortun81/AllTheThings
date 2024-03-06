@@ -92,12 +92,12 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			["cost"] = AwardsCost(100),
 		}),
 	})),
-	tier(CLASSIC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
+	expansion(CLASSIC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(123),	-- Classic Cook
 		ach(122),	-- Expert Cook
 		ach(121),	-- Journeyman Cook
 	})),
-	tier(TBC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
+	expansion(TBC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(124),	-- Outland Cook
 		ach(1801, {	-- Captain Rumsey's Lager
 			["provider"] = { "i", 34832 },	-- Captain Rumsey's Lager
@@ -133,7 +133,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(6786, { ["provider"] = { "i", 33048 } } ),	-- Stewed Trout
 		}),
 	})),
-	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+	expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 		ach(125),	-- Northrend Cook
 		ach(1781, {	-- Critter Gitter
 			["cost"] = {{"i", 43004, 10}},	-- 10x Critter Bites
@@ -206,7 +206,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(9421, { ["provider"] = { "i", 44953 } } ),	-- Worg Tartare
 		}),
 	})),
-	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(4916),	-- Cataclysmic Cook
 		ach(5845, {	-- A Bunch of Lunch
 			-- Meta Achievement
@@ -263,7 +263,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(15743, { ["provider"] = { "i", 62672 } } ),	-- South Island Iced Tea
 		}),
 	})),
-	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		ach(6365),	-- Zen Master Cook
 		ach(7306,  {	-- Master of Pandaren Cooking
 			-- Meta Achievement
@@ -546,7 +546,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			})),
 		}),
 	})),
-	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		ach(9500),	-- Draenor Cook
 		ach(9502, {	-- Draenor Cuisine
 			crit(25933),	-- Blackrock Barbecue
@@ -595,7 +595,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(25932, { ["provider"] = { "i", 111447 } } ),	-- Talador Surf and Turf
 		}),
 	})),
-	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(10589),	-- Legion Cook
 			ach(10593, {	-- Everything Tastes Better
@@ -670,7 +670,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			}),
 		}),
 	})),
-	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(12742, {	-- Kul Tiran Cook [A]
 				["races"] = ALLIANCE_ONLY,
@@ -740,10 +740,10 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			}),
 		}),
 	})),
-	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	expansion(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		ach(14332),	-- Shadowlands Cook
 	})),
-	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(16631),	-- Dragon Isles Cook
 			ach(17736, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- The Gift of Cheese
@@ -789,7 +789,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 
 -- #if ANYCLASSIC
 profession(COOKING, {
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		r(2550, {	-- Cooking (Apprentice)
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
@@ -1346,7 +1346,7 @@ profession(COOKING, {
 			}
 		},
 	}),
-	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, {
 		r(33359, {	-- Cooking (Master)
 			["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -1458,7 +1458,7 @@ profession(COOKING, {
 			["recipeID"] = 33288
 		}
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
 		r(51296, {	-- Cooking (Grand Master)
 			["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -1653,7 +1653,7 @@ profession(COOKING, {
 			["recipeID"] = 45551
 		}
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
 		{
 			["name"] = "Baked Rockfish",
 			["recipeID"] = 88003
@@ -1787,7 +1787,7 @@ profession(COOKING, {
 			["recipeID"] = 88017
 		},
 	})),
-	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, {
 		{
 			["name"] = "Way of the Grill",
 			["categoryID"] = 64,

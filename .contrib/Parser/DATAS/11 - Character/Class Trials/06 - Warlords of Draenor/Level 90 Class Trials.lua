@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	tier(WOD_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	expansion(WOD_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_NINETY, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does reward this gear instead]
 			-- Note: [As of --Date--(when this became class trial) you obtain the old Level 90 Boost Gear]

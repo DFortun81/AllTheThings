@@ -1,7 +1,7 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
-root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
+root(ROOTS.Secrets, expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
 	header(HEADERS.Item, 192485, {	-- Stored Wisdom Device
 		n(162804, {	-- Ve'nari
 			["description"] = "If you talk to Ve'nari at her usual location in her hideout in the Maw, you'll see that she is an echo and no longer physically present. Talking to her reveals an extra dialogue option, where she will mention that she has finally found Zereth Mortis.",

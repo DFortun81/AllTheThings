@@ -490,7 +490,7 @@ profession(SKINNING, {
 		i(130102),	--  Mother's Skinning Knife (TOY!)
 	}),
 	filter(RECIPES, {
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			recipe(194167),	-- Felhide [Rank 1]
 			recipe(194168),	-- Felhide [Rank 2]
 			recipe(194169),	-- Felhide [Rank 3]
@@ -508,7 +508,7 @@ profession(SKINNING, {
 			recipe(194171),	-- Unbroken Claw
 			recipe(194170),	-- Unbroken Tooth
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			recipe(257152),	-- Bone Gathering [Rank 1]
 			recipe(257153),	-- Bone Gathering [Rank 2]
 			recipe(257154),	-- Bone Gathering [Rank 3]

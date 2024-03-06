@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
-root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	inst(67, {	-- The Stonecore
 		["mapID"] = 324,
 		["coord"] = { 47.50, 52.05, DEEPHOLM },
@@ -261,7 +261,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(35911),	-- Stonecore Reward Quest - Normal completion
 		q(35913),	-- Stonecore (Heroic) Reward Quest - Heroic completion
 	}),

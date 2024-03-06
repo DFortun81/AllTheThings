@@ -285,7 +285,7 @@ root(ROOTS.Zones, {
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(42527),	-- FLAG - Portal - Guard Station - using "Portal Key: Sewer Guard Station" (itemID 138027)
 		q(42528),	-- FLAG - Portal - Black Market - using "Portal Key: Black Market" (itemID 138028)
 		q(42529),	-- FLAG - Portal - Inn Entrance - using "Portal Key: Inn Entrance" (itemID 138029)

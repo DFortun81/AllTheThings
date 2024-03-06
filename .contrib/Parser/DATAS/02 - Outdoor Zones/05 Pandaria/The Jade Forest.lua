@@ -2994,7 +2994,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers,{
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		q(29702),	-- Gorrok TRACKING
 		q(30486),	-- Jade Dragon Phased Terrain Tracking - triggers after placing the Cho family heirloom during "Last Piece of the Puzzle" (questID 30485 & 31362)
 		q(29695),	-- Kiryn TRACKING
@@ -3012,7 +3012,7 @@ root(ROOTS.HiddenQuestTriggers,{
 	}),
 });
 root(ROOTS.NeverImplemented, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
 				i(80948),	-- Peacebreaker's Silk Cowl

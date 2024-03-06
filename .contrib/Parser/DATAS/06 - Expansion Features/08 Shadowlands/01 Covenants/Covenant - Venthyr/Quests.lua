@@ -51,7 +51,7 @@ local LFR_WEAPON_GROUP = {
 -- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 -- But it is complete for my main, as well as 62921... /shrug
 
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root(ROOTS.ExpansionFeatures, expansion(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(QUESTS, {
 			q(63215, {	-- Report to Draven
@@ -884,7 +884,7 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(SL_TIER, {
 	n(VENTHYR, {
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"

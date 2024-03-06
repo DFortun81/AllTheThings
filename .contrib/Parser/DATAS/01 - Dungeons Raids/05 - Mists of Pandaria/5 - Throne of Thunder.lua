@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
+root(ROOTS.Instances, expansion(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
 	inst(362, {	-- Throne of Thunder
 		["isRaid"] = true,
 		["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
@@ -2051,7 +2051,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		q(32752),	-- Dark Animus Dead - triggers on the first kill of the week
 		q(32750),	-- Durumu Dead - triggers on the first kill of the week
 		q(32755),	-- Empyreal Queens Dead - triggers on the first kill of the week
@@ -2069,7 +2069,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 
 root(ROOTS.NeverImplemented, {
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		inst(362, {
 			filter(CONSUMABLES, {
 				i(96194),	-- Chest of the Crackling Vanquisher

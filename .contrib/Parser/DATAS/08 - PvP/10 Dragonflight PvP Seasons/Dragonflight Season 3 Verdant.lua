@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.PVP, pvp(expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	header(HEADERS.Achievement, SEASON_VERDANT, {
 		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator_green",
 		["g"] = {

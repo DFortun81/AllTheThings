@@ -5,7 +5,7 @@
 
 root(ROOTS.NeverImplemented, {
 	filter(BAGS, {
-		tier(CLASSIC_TIER, {
+		expansion(CLASSIC_TIER, {
 			-- 1.x.x
 			n(P1xx, {
 				i(21194),	-- D'Sak's Big Sack
@@ -16,39 +16,39 @@ root(ROOTS.NeverImplemented, {
 				i(22233),	-- Zigris' Footlocker
 			}),
 		}),
-		tier(TBC_TIER, {
+		expansion(TBC_TIER, {
 			-- 2.x.x
 			n(P2xx, {
 				i(35874),	-- Whizzlespark's Portable Pet Mansion
 			}),
 		}),
-		tier(WOTLK_TIER, {
+		expansion(WOTLK_TIER, {
 			-- 3.x.x
 			n(P3xx, {
 				i(38307),	-- Crafty's Bottomless Inscription Bag
 			}),
 		}),
-		tier(MOP_TIER, {
+		expansion(MOP_TIER, {
 			-- 5.1.0
-			tier(MOP_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 5.1.0" } }, {
+			expansion(MOP_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 5.1.0" } }, {
 				i(92746),	-- Portable Refrigerator
 			})),
 		}),
-		tier(WOD_TIER, {
+		expansion(WOD_TIER, {
 			-- 6.2.2
-			tier(WOD_TIER, 2.2, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
+			expansion(WOD_TIER, 2.2, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
 				i(130943),	-- Reusable Tote Bag
 			})),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- 7.0.3
-			tier(LEGION_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
+			expansion(LEGION_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
 				i(130156),	-- Crane Bag
 			})),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- 8.1.0
-			tier(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+			expansion(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
 				i(166699),	-- Desert Rucksack
 				i(166700),	-- Durable Sailor's Duffel
 			})),

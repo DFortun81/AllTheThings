@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	i(152668),	-- Expulsom
 	i(162460, {["timeline"] = {ADDED_8_1_0}}),	-- Hydrocore
 	i(162461, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguicell
@@ -1269,12 +1269,12 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENGINEERING, {
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				i(153505),	-- Monelite Boomstick
 			}),
 		}),
 		prof(TAILORING, {
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 				i(154701),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
 				i(161988),	-- Tidespray Linen Cloak of the Feather

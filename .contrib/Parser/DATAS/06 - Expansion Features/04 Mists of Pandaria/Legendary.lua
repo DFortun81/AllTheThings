@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		n(QUALITY_LEGENDARY, {
 			["title"] = "The Black Prince",
 			["icon"] = 656543,

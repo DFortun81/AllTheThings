@@ -2607,7 +2607,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		q(39783),	-- Battle Pet - Terky
 	}),
 });

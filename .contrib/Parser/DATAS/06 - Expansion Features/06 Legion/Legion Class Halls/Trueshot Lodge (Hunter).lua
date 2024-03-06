@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(LEGION_TIER, {
 	n(CLASS_HALL, {
 		cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
 			["maps"] = { TRUESHOT_LODGE },
@@ -980,7 +980,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(43366),	-- Talked With Mimiron
 		q(43158),	-- Tracking Quest - conversation flag for a hidden romance quest
 		q(43159),	-- Tracking Quest - triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories
@@ -997,7 +997,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44394),	-- Tracking Quest: Unseen Protection 4 - completed the "Unseen Protection: Coastal Invasion" mission
 		q(44395),	-- Tracking Quest: Unseen Protection 5 - completed the "Unseen Protection: Drogbar Delicacy" mission
 	}),
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		q(66309),	-- Ensemble: Dark Ranger's Attire
 	}),
 });

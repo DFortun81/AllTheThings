@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(HERITAGE, {
-	tier(BFA_TIER, {
+	expansion(BFA_TIER, {
 		race(BLOODELF, {
 			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
 			["races"] = { BLOODELF },
@@ -706,7 +706,7 @@ root(ROOTS.Character, n(HERITAGE, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(BFA_TIER, {
 	n(HERITAGE, {
 		q(54868),	-- During Heritage for Taurens in the End
 		q(54869),	-- Starting Heritage for Taurens.

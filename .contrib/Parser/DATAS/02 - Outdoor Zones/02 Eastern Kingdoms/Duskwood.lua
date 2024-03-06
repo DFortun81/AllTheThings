@@ -2521,11 +2521,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 
 -- #if AFTER 4.0.3
 root(ROOTS.HiddenQuestTriggers, {
-	tier(CATA_TIER, {
+	expansion(CATA_TIER, {
 		q(26673),	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670)
 	}),
 	-- #if AFTER LEGION
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(40937),	-- Tracking: Revil Defeated
 		q(41153),	-- Revil Defeated
 	}),

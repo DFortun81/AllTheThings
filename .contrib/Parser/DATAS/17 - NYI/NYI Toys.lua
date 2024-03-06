@@ -4,13 +4,13 @@
 root(ROOTS.NeverImplemented, {
 	filter(TOYS, {
 		-- #if BEFORE 3.0.0
-		tier(CLASSIC_TIER, {
+		expansion(CLASSIC_TIER, {
 			i(37460),	-- Rope Pet Leash
 		}),
 		-- #endif
-		tier(CATA_TIER, {
+		expansion(CATA_TIER, {
 			-- 4.3.0
-			tier(CATA_TIER, 3.0, sharedDataSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+			expansion(CATA_TIER, 3.0, sharedDataSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
 				i(72226),	-- Art Template Plate Belt - Plate_PVPWarrior_D_01 - Orange (TOY!)
 				i(72227),	-- Art Template Plate Boot - Plate_PVPWarrior_D_01 - Orange (TOY!)
 				i(72220),	-- Art Template Plate Chest - Plate_PVPWarrior_D_01 - Blue (TOY!)
@@ -27,15 +27,15 @@ root(ROOTS.NeverImplemented, {
 				i(72233),	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Orange (TOY!)
 			})),
 		}),
-		tier(MOP_TIER, {
+		expansion(MOP_TIER, {
 			-- 5.0.4
-			tier(MOP_TIER, 0.1, sharedDataSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+			expansion(MOP_TIER, 0.1, sharedDataSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 				i(88587),	-- Iron Belly Spirits (TOY!)
 			})),
 		}),
-		tier(WOD_TIER, {
+		expansion(WOD_TIER, {
 			-- 6.0.2
-			tier(WOD_TIER, 0.2, sharedDataSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+			expansion(WOD_TIER, 0.2, sharedDataSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				i(119220),	-- Alliance Gladiator's Banner (TOY!)
 				i(119221),	-- Horde Gladiator's Banner (TOY!)
 				i(119179),	-- Iron Star Roller (TOY!)
@@ -56,9 +56,9 @@ root(ROOTS.NeverImplemented, {
 				i(122235),	-- Unknown (TOY!)
 			})),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- 7.0.3
-			tier(LEGION_TIER, 0.3, sharedDataSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+			expansion(LEGION_TIER, 0.3, sharedDataSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 				i(140779),	-- Falanaar Echo (TOY!)
 				i(129111),	-- Kvaldir Raiding Horn (TOY!)
 				i(141300),	-- Magi Focusing Crystal (TOY!)
@@ -68,20 +68,20 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 7.1.0
-			tier(LEGION_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
+			expansion(LEGION_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
 				i(143545),	-- Fel Focusing Crystal (TOY!)
 			})),
 
 			-- 7.2.5
-			tier(LEGION_TIER, 2.5, sharedDataSelf({ ["timeline"] = { CREATED_7_2_5 } }, {
+			expansion(LEGION_TIER, 2.5, sharedDataSelf({ ["timeline"] = { CREATED_7_2_5 } }, {
 				i(142360),	-- Blazing Ember Signet (TOY!)
 				i(130194),	-- Silver Gilnean Brooch (TOY!)
 				i(129045),	-- Whitewater Tsunami (TOY!)
 			})),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- 8.0.1
-			tier(BFA_TIER, 0.1, sharedDataSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+			expansion(BFA_TIER, 0.1, sharedDataSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 				i(164372),	-- Jinyu Light Globe (TOY!)
 				i(164377),	-- Regenerating Banana Bunch (TOY!)
 				i(164371),	-- Yaungol Oil Stove (TOY!)
@@ -91,57 +91,57 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 8.1.0
-			tier(BFA_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+			expansion(BFA_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 				i(166851),	-- Kojo's Master Matching Set (TOY!)
 			})),
 
 			-- 8.2.0
-			tier(BFA_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+			expansion(BFA_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 				i(166782),	-- Pearl of the Abyss (TOY!)
 				i(168836);	-- Unknown (TOY!)
 			})),
 		}),
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, sharedDataSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+			expansion(SL_TIER, 0.1, sharedDataSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 				i(174445),	-- Glimmerfly Cocoon (TOY!)
 				i(182655),	-- Hill King's Roarbox (TOY!)
 				i(174286),	-- Kyrian Ritual Vestments (TOY!)
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, sharedDataSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+			expansion(SL_TIER, 0.2, sharedDataSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 				i(183810);	-- Shadowlands Mini: Grandmaster Vole (TOY!)
 			})),
 
 			-- 9.1.5
-			tier(SL_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+			expansion(SL_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 				i(187861),	-- Magical Seeds (TOY!)
 				i(187959),	-- PH - Banner of the Opportune (TOY!)
 			})),
 		}),
-		tier(DF_TIER, {
+		expansion(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(DF_TIER, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 				i(200142),	-- Generous Goblin Grenade (TOY!)
 				i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 				i(199926),	-- Portable J.A.M. (TOY!)
 			})),
 
 			-- 10.1.0
-			tier(DF_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(DF_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
 				i(205027),	-- Explorer's Banner (TOY!)
 			})),
 
 			-- 10.1.7
-			tier(DF_TIER, 1.7, sharedDataSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			expansion(DF_TIER, 1.7, sharedDataSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 				i(208880),	-- Brewhahat (TOY!)
 				i(208229),	-- Honor of the Forsaken (TOY!)
 			})),
 
 			-- 10.2.0
-			tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			expansion(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				i(208087),	-- Unknown (TOY!)
 			})),
 		}),

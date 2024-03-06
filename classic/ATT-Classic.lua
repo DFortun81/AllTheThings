@@ -440,9 +440,9 @@ subroutines = {
 			{"is", "itemID"},	-- Only Items
 		};
 	end,
-	["pvp_gear_base"] = function(tierID, headerID1, headerID2)
+	["pvp_gear_base"] = function(expansionID, headerID1, headerID2)
 		local b = {
-			{ "select", "tierID", tierID },	-- Select the Expansion header
+			{ "select", "expansionID", expansionID },	-- Select the Expansion header
 			{ "pop" },	-- Discard the Expansion header and acquire the children.
 			{ "where", "headerID", headerID1 },	-- Select the Season header
 		};
@@ -1943,19 +1943,19 @@ function app:GetDataCache()
 		-- Now assign the parent hierarchy for this cache.
 		AssignChildren(rootData);
 
-		-- Determine how many tierID instances could be found
-		local tierCounter = 0;
-		local tierCache = SearchForFieldContainer("tierID");
-		for key,value in pairs(tierCache) do
-			tierCounter = tierCounter + 1;
+		-- Determine how many expansionID instances could be found
+		local expansionCounter = 0;
+		local expansionCache = SearchForFieldContainer("expansionID");
+		for key,value in pairs(expansionCache) do
+			expansionCounter = expansionCounter + 1;
 		end
-		if tierCounter == 1 then
-			-- Purge the Tier Objects. This is the Classic Layout style.
-			for key,values in pairs(tierCache) do
+		if expansionCounter == 1 then
+			-- Purge the Expansion Objects. This is the Classic Layout style.
+			for key,values in pairs(expansionCache) do
 				for j,value in ipairs(values) do
 					local parent = value.parent;
 					if parent then
-						-- Remove the tier object reference.
+						-- Remove the expansion object reference.
 						for i=#parent.g,1,-1 do
 							if parent.g[i] == value then
 								tremove(parent.g, i);
@@ -1974,8 +1974,8 @@ function app:GetDataCache()
 				end
 			end
 
-			-- Wipe out the tier object cache.
-			wipe(tierCache);
+			-- Wipe out the expansion object cache.
+			wipe(expansionCache);
 		end
 
 		-- All future calls to this function will return the root data.

@@ -3244,7 +3244,7 @@ for i,o in ipairs({
 			]]--
 		},
 	})),
-	tier(WOTLK_TIER, {
+	expansion(WOTLK_TIER, {
 		inst(277, {	-- Halls of Stone
 			["maps"] = { HALLS_OF_STONE },
 			["groups"] = {
@@ -3267,7 +3267,7 @@ for i,o in ipairs({
 		}),
 	}),
 	-- #if AFTER CATA
-	tier(CATA_TIER, {
+	expansion(CATA_TIER, {
 		inst(66, {	-- Blackrock Caverns
 			["maps"] = { 283, 284 },
 			["groups"] = {
@@ -3371,7 +3371,7 @@ for i,o in ipairs({
 	}),
 	-- #endif
 	-- #if AFTER WOD
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		inst(537, {	-- Shadowmoon Burial Grounds
 			["maps"] = { 574, 575, 576 },
 			["groups"] = {
@@ -3390,7 +3390,7 @@ for i,o in ipairs({
 	}),
 	-- #endif
 	-- #if AFTER 9.1.5
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		inst(1194, {	-- Tazavesh, the Veiled Market
 			d(HEROIC_DUNGEON, {
 				e(2455, {	-- So'leah

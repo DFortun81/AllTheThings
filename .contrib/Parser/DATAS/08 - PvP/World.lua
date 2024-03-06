@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(-10058, {	-- World
-	tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+	expansion(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 		n(ACHIEVEMENTS, {
 			ach(12567),	-- The Horde Slayer
 			ach(12568),	-- The Alliance Slayer
@@ -47,12 +47,12 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			})),
 		}),
 	})),
-	tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+	expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 		n(BOUNTY, {	-- Bounty (for later). Contains every aspirant gear as well
 			i(184810),	-- Plundered Supplies [Shadowlands-Maldraxxus-(Ore)]
 		}),
 	})),
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(16599, {	-- A Champion's Pursuit
 				crit(55944, {	-- Krolkoth the Mountain
@@ -194,7 +194,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		q(72376),	-- looting first War Crate of the day
 		q(72377, {	-- looting first War Crate of the day
 			["name"] = "Warmode Crate Looted",

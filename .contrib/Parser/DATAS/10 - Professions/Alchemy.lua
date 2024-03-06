@@ -107,7 +107,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		ach(18735),	-- Powerful Concoctions II
 		ach(18734),	-- Powerful Concoctions I
 	})),
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18723, {	-- Look, You're Specialized!
 				["sourceQuests"] = {
@@ -174,7 +174,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		})),
 	}),
-	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+	expansion(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		q(10906, {	-- Master of Elixirs (1/2)
 			["qgs"] = {
 				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
@@ -311,7 +311,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 	})),
-	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_0 } }, {
+	expansion(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_0 } }, {
 		applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
 			["qg"] = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
 			["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
@@ -321,7 +321,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		})),
 	})),
-	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 } }, {
+	expansion(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 } }, {
 		q(30597, {	-- Strange Spherical Stone
 			["provider"] = { "i", 80240 },	-- Strange Spherical Stone
 			["maps"] = { PANDARIA },
@@ -331,7 +331,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 	})),
-	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(39325, {	-- Get Your Mix On
 			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
@@ -591,7 +591,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		})),
 	})),
-	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18770, {	-- Silas' Sphere of Transmutation
 				["provider"] = { "i", 156631 },	-- Silas' Sphere of Transmutation
@@ -759,7 +759,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			})),
 		}),
 	})),
-	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18805, {	-- Draconic Phial Cabinet
 				crit(61271),	-- Phial of Tepid Versatility
@@ -1076,7 +1076,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 -- #if ANYCLASSIC
 -- Alchemy - Skill ID 171 / Spell ID 2259
 root(ROOTS.Professions, prof(ALCHEMY, {
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		{
 			["name"] = "Materials",
 			["categoryID"] = 644,
@@ -1680,7 +1680,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 		}
 		-- #endif
 	});
-	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(TBC_TIER, {
 		n(DISCOVERY, {
 			["description"] = "Craft a Major Protection for a chance to Discover the associated Cauldron Recipe.\n\nThe other recipes can be discovered by Transmuting Primals or by crafting Flasks, Elixirs and Potions. The type of discovery generally has a better chance to proc if you craft something of a similar type.",
 			["groups"] = {
@@ -2031,7 +2031,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			}
 		},
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(WOTLK_TIER, {
 		n(DISCOVERY, {
 			["description"] = "The following recipes can be discovered by Transmuting Eternals.",
 			["groups"] = {
@@ -2385,7 +2385,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			}
 		}
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
+	applyclassicphase(CATA_PHASE_ONE, expansion(CATA_TIER, {
 		{
 			["name"] = "Cauldrons",
 			["categoryID"] = 617,
@@ -2615,7 +2615,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			}
 		}
 	})),
-	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(MOP_TIER, {
 		{
 			["name"] = "Potions",
 			["categoryID"] = 611,

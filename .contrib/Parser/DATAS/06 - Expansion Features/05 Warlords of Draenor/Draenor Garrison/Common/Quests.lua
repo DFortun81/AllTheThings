@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
+root(ROOTS.ExpansionFeatures, expansion(WOD_TIER, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 		n(QUESTS, {
 			n(-152,  {	-- Garrison Campaign
@@ -3425,7 +3425,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, tier(WOD_TIER, {
+root(ROOTS.HiddenQuestTriggers, expansion(WOD_TIER, {
 	n(GARRISONS, {
 		q(38276),	-- 6.1 Garrison - World Boss Invasion Loot - killing Commander Dro'gan
 		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance

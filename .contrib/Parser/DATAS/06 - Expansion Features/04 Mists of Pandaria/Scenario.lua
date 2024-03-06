@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures,
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		n(SCENARIOS, {
 			["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			["g"] = {

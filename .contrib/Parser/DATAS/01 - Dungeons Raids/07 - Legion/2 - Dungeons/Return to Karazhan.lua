@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(LEGION_TIER, {
+root(ROOTS.Instances, expansion(LEGION_TIER, {
 	inst(860, {	-- Return to Karazhan
 		["coord"] = { 46.7, 70.1, DEADWIND_PASS },
 		["maps"] = {
@@ -596,7 +596,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		q(45393),	-- Moroes cutscene
 		q(45394),	-- Maiden of Virtue Kill
 		q(45395),	-- Shade of Medivh Kill

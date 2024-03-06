@@ -4,9 +4,9 @@
 -- Everything in this file hasn't been implemented yet.
 root(ROOTS.NeverImplemented, {
 	n(CONDUITS, {
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+			expansion(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
 				i(179000),	-- [PH] Potency Conduit - Death Knight - Blood - Potency Trait 1
 				i(179027),	-- [PH] Potency Conduit - Death Knight - Blood - Potency Trait 2
 				i(179028),	-- [PH] Flex Conduit - Death Knight - Blood - Flex Trait 1

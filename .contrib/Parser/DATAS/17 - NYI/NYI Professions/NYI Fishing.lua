@@ -4,31 +4,31 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(FISHING, {
 		n(CRAFTABLES, {
-			tier(DF_TIER, {
+			expansion(DF_TIER, {
 				-- 10.0.0
-				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(198439),	-- Aged Recipe in a Bottle
 				})),
 			}),
 		}),
 		filter(RECIPES, {
-			tier(WOTLK_TIER, {
+			expansion(WOTLK_TIER, {
 				-- 3.1.0
-				tier(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+				expansion(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
 					r(62734),	-- Fishing
 				})),
 			}),
-			tier(WOD_TIER, {
+			expansion(WOD_TIER, {
 				-- 6.0.2
-				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					r(131474),	-- Fishing
 					r(131476),	-- Fishing
 					r(131490),	-- Fishing
 				})),
 			}),
-			tier(BFA_TIER, {
+			expansion(BFA_TIER, {
 				-- 8.0.1
-				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(272011),	-- Fishing
 				})),
 			}),

@@ -22,7 +22,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 	}),
-	tier(CLASSIC_TIER, {
+	expansion(CLASSIC_TIER, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
 			["description"] = "Rewarded for completing a random classic dungeon.",
 			["timeline"] = { "added 7.3.5.25600" },
@@ -171,7 +171,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 	}),
-	tier(TBC_TIER, {
+	expansion(TBC_TIER, {
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random burning crusade dungeon during leveling.",
@@ -245,7 +245,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		})),
 	}),
 	-- #if AFTER 6.0.1.18500
-	tier(WOTLK_TIER, {
+	expansion(WOTLK_TIER, {
 		i(156688, {	-- Icy Satchel of Helpful Goods
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random wrath of the lich king dungeon during leveling.",
@@ -323,7 +323,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 	}),
-	tier(CATA_TIER, {
+	expansion(CATA_TIER, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random cataclysm dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
@@ -442,7 +442,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		}),
 	}),
 	-- #endif
-	tier(MOP_TIER, {
+	expansion(MOP_TIER, {
 		i(156698, {	-- Tranquil Satchel of Helpful Goods
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random mists of pandaria dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
@@ -590,7 +590,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 	}),
-	tier(WOD_TIER, {
+	expansion(WOD_TIER, {
 		i(120334, {	-- Satchel of Cosmic Mysteries
 			["timeline"] = { "added 5.4.0", "removed 6.0.3" },
 			["sym"] = {
@@ -812,20 +812,20 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 	}),
-	tier(LEGION_TIER, {
+	expansion(LEGION_TIER, {
 		-- Listed under TW
 		-- i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 		i(140591, {	-- Shattered Satchel of Cooperation
 			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 }
 		}),
 	}),
-	tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
+	expansion(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
 		i(160054),	-- War-Torn Satchel of Cooperation
 	})),
-	tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }, {
+	expansion(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }, {
 		i(184522),	-- Veiled Satchel of Cooperation
 	})),
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		i(201326, {	-- Draconic Satchel of Cooperation
 			i(201325),	-- Draconic Augment Rune
 		}),

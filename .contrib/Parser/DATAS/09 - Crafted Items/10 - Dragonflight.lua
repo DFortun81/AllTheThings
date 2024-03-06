@@ -21,7 +21,7 @@ local function FirstSkin(questID, creatureID, added, group)
 	return t;
 end
 
-root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
 	i(198046),	-- Concentrated Primal Infusion
@@ -3423,7 +3423,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
-	tier(DF_TIER, {
+	expansion(DF_TIER, {
 		prof(ALCHEMY, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),

@@ -975,7 +975,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 })));
 
 root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
+	expansion(SL_TIER, {
 		n(WEAPONS, {
 			i(176012),	-- Ardenweald Quest Mace
 			i(176013),	-- Ardenweald Quest Mace

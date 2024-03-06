@@ -4,7 +4,7 @@
 -- #if AFTER 6.0.1
 -- With how we sort instances, this is actually "Lower Blackrock Spire" after 6.0.1
 -- See the "Blackrock Spire" file for the actual content. -Crieve
-root(ROOTS.Instances, tier(CLASSIC_TIER, {
+root(ROOTS.Instances, expansion(CLASSIC_TIER, {
 	BLACKROCK_SPIRE_INSTANCE,
 }));
 -- #endif

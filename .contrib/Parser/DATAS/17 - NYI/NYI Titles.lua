@@ -4,9 +4,9 @@
 -- #if AFTER 3.0.1
 root(ROOTS.NeverImplemented, {
 	filter(TITLES, {
-		tier(WOTLK_TIER, {
+		expansion(WOTLK_TIER, {
 			-- 3.0.2
-			tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 3.0.2" } }, {
+			expansion(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 3.0.2" } }, {
 				title(69),	-- Doctor <Name>
 				title(64),	-- Grand Master Alchemist <Name>
 				title(70),	-- Grand Master Angler <Name>
@@ -39,21 +39,21 @@ root(ROOTS.NeverImplemented, {
 				title(57),	-- Prophet <Name>
 			})),
 		}),
-		tier(LEGION_TIER, {
+		expansion(LEGION_TIER, {
 			-- 7.0.3
-			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+			expansion(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
 				title(330),	-- Master Assassin <Name>
 			})),
 		}),
-		tier(BFA_TIER, {
+		expansion(BFA_TIER, {
 			-- 8.2.0
-			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+			expansion(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
 				title(406),	-- Sparking <Name>
 			})),
 		}),
-		tier(SL_TIER, {
+		expansion(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+			expansion(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 				title(436),	-- <Name> the Avowed
 				title(424),	-- Deathbringer <Name>
 				title(408),	-- Pilgrim <Name> the Mallet Bearer
@@ -61,18 +61,18 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+			expansion(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
 				title(453),	-- <Name> the [PH] TBD Title
 			})),
 		}),
-		tier(DF_TIER, {
+		expansion(DF_TIER, {
 			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+			expansion(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 				title(480),	-- <Name>, Knight of Feathersworth
 			})),
 
 			-- 10.2.0
-			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			expansion(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				title(518),	-- <Name>, Honorary Historian
 			})),
 		}),
