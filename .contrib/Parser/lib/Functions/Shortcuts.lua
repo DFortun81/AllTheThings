@@ -787,7 +787,6 @@ expansion = function(id, patch, t)							-- Create an EXPANSION Object
 	end
 	return t;
 end
-tier = expansion;										-- Deprecated shortcut for EXPANSION Objects.
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
