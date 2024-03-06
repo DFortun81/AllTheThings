@@ -154,5 +154,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["provider"] = { "i", 167056 },
 			}),
 		})),
+		ach(11757, {["timeline"] = {ADDED_7_2_0}}),	-- Sha of Fabulous (Heart of Fear and Terrace of Endless Spring)
 	}),
 })));

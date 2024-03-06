@@ -168,6 +168,5 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 				}),
 			},
 		}),
-		ach(11757, {["timeline"] = {ADDED_7_2_0}}),	-- Sha of Fabulous (Heart of Fear and Terrace of Endless Spring)
 	}),
 })));
