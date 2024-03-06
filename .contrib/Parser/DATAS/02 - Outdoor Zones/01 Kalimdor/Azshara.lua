@@ -2017,11 +2017,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(6651, {	-- Gatekeeper Rageroar
+					-- #if BEFORE 4.0.3
 					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
-					-- #if AFTER CATA
+					["coord"] = { 38.4, 32.6, AZSHARA },
+					-- #elseif AFTER 4.1.0
+					-- The reputation penalty of killing this mob got removed with patch 4.1.0.
 					["coord"] = { 33.0, 32.6, AZSHARA },
 					-- #else
-					["coord"] = { 38.4, 32.6, AZSHARA },
+					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
+					["coord"] = { 33.0, 32.6, AZSHARA },
 					-- #endif
 				}),
 				n(6650, {	-- General Fangferror
