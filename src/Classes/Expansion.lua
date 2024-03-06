@@ -26,7 +26,7 @@ local GetExpansionInfoMeta = function(t, key)
 end
 
 local ExpansionInfoByID = {};
-local TIER_DATA = app.L.TIER_DATA;
+local EXPANSION_DATA = app.L.EXPANSION_DATA;
 setmetatable(ExpansionInfoByID, {
 	__index = function(t, patchID)
 		local info;
@@ -40,7 +40,7 @@ setmetatable(ExpansionInfoByID, {
 			}, { __index = ExpansionInfoByID[expansionID] });
 		else
 			-- We want to use the same reference table from the locales if possible
-			info = TIER_DATA[expansionID] or { name = GetExpansionName(expansionID) };
+			info = EXPANSION_DATA[expansionID] or { name = GetExpansionName(expansionID) };
 			info.expansionID = expansionID;
 			if not info.name then
 				setmetatable(info, {__index = GetExpansionInfoMeta });
