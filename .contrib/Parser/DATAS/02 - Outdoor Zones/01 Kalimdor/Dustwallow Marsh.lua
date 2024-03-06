@@ -3541,7 +3541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						16072,	-- Tidelord Rrurgaz
 					},
 					-- #elseif AFTER 10.1.7
-					["description"] = "This recipe have a low droprate from Spiny Rock Crabs, but can also drop from any rare creatures in the zone. Warning: This recipe binds to your character when looted.",
+					["description"] = "This recipe has a very low droprate & is recommend to farm from Spiny Rock Crabs, but can also drop from any other creature in the zone. Warning: This recipe binds to your character when looted.",
 					["coords"] = {
 						{ 70.2, 50.0, DUSTWALLOW_MARSH },
 						{ 69.0, 47.0, DUSTWALLOW_MARSH },
