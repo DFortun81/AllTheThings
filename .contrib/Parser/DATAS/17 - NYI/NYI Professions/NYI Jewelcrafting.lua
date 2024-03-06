@@ -23,6 +23,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
 				expansion(EXPANSION.DF, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+					i(191629),	-- 10.0 Jewelcrafting Gem Template (DNT)
 					i(193034),	-- Ludicrously Luxurious Lucky Loop
 					i(194112),	-- Straddling Illimited Diamond
 					i(194113),	-- Straddling Illimited Diamond

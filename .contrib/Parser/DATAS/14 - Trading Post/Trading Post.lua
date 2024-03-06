@@ -2016,6 +2016,9 @@ root(ROOTS.NeverImplemented, {
 					i(211071),	-- Lively Treads of the Kalu'ak
 					i(210999),	-- Ruby Faced Mobile Timepiece
 					i(211001),	-- Sapphire Faced Mobile Timepiece
+
+					------ Weapon ------
+					i(190875),	-- Chilled Touch of the Condemned
 				}),
 			})),
 		}),

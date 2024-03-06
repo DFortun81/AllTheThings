@@ -247,6 +247,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204628),	-- Scaled Titan's Tooth
 						i(204624),	-- Staff of the Unlit Sky
 						i(204459),	-- Wand of Shifting Stone
+						i(203458),	-- Black Dragonscale Robes (QI!)
+						i(203453),	-- Dragonbone Totem (QI!)
+						i(203455),	-- Draketooth Fetish (QI!)
+						i(203456),	-- Obsidian Prayer Beads (QI!)
+						i(203457),	-- Volcanic Herb Sachet (QI!)
 						i(203454),	-- Zaqali Equipment (QI!)
 					},
 				}),

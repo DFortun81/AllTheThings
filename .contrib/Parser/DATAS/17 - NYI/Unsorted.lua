@@ -567,6 +567,7 @@ root(ROOTS.Unsorted, {
 	}),
 	expansion(EXPANSION.DF, {
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			------ Next Check In Start of April ------
 			n(ACHIEVEMENTS, {
 				ach(19031),	-- Fyrn [Promotion]
 			}),
@@ -654,6 +655,8 @@ root(ROOTS.Unsorted, {
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
 				i(190849),	-- Forgemaster's Gavel
 				i(190857),	-- Gilded Emerald Longcloak
+				i(213107),	-- Gladiator's Ragged Greatsword
+				i(213106),	-- Gladiator's Serrated Greatsword
 				i(212787),	-- Gloves of the Violet Gala
 				i(212788),	-- Gossamer Emerald Gown
 				i(212785),	-- Helm of the Stout
@@ -722,14 +725,10 @@ root(ROOTS.Unsorted, {
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
 				i(212632),	-- Starry Twilight Peafowl (MOUNT!)
 			}),
-			n(PVP, {
-				i(213106),	-- Gladiator's Serrated Greatsword
-				i(213107),	-- Gladiator's Ragged Greatsword
-			}),
 			filter(QUEST_ITEMS, {
 				i(212643),	-- Golden Egg Heirloom
 			}),
-			n(SPECIAL, {	-- Timerunning: Pandamonium
+			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
 				n(BACK, {
 					i(210334),	-- Dreadweave Cloak
 					i(210333),	-- Jadeweave Cloak
@@ -1150,12 +1149,15 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			i(211260),	-- Crimson Gladiator's Spear
+			------ Next Check 10.2.7 ------
+			-- Class Trial [Darkal]
 			i(208878),	-- Adventurer's Footlocker
-			--
+			i(213580),	-- Heart-Lesion Helm
+			i(213581),	-- Heart-Lesion Helm
+			-- Winter Veil
 			i(209871),	-- Winter Veil Gift
 			i(210657),	-- Gently Shaken Gift
-			--
+			-- Fyralath [Darkal]
 			i(208597),	-- Eadweard's Notes
 			i(208782),	-- Symbiotic Glowspore Grip
 			i(208839),	-- Rune of Adaptive Binding
@@ -1167,10 +1169,6 @@ root(ROOTS.Unsorted, {
 			i(210028),	-- Extracted Ashen Dust
 			i(210223),	-- Unstable Element
 			i(210240),	-- Stabilized Element
-			i(213580),	-- Heart-Lesion Helm
-			i(213581),	-- Heart-Lesion Helm
-			-- Trading Post
-			i(190875),	-- Chilled Touch of the Condemned
 			filter(MISC, {
 				------ Tame Hunter Pets ------
 				-- Check if These pop any QuestIDs we can source them properly
@@ -1327,12 +1325,14 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			------ Next Check 10.2.7 ------
 			n(QUESTS, {
 				-- 10.1.7.51754
 				q(75369),	-- Use Your Coin!
 			}),
 		})),
 		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+			------ Next Check 10.2.7 ------
 			n(QUESTS, {
 				-- 10.1.5.49516
 				q(76267),	--
@@ -1355,32 +1355,6 @@ root(ROOTS.Unsorted, {
 				q(77641),	--
 			}),
 		})),
-		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			i(203458),	-- Black Dragonscale Robes (QI!)
-			i(203453),	-- Dragonbone Totem (QI!)
-			i(203455),	-- Draketooth Fetish (QI!)
-			i(203456),	-- Obsidian Prayer Beads (QI!)
-			i(203457),	-- Volcanic Herb Sachet (QI!)
-		})),
-		-- Profession?
-		i(190648),	-- Test Optional Reagent 01 with Quality 03 (DNT)
-		i(190653),	-- Test Finishing Reagent without Quality 01 (DNT)
-		i(191025),	-- Blacksmith Hammer - DO NOT USE
-		i(191033),	-- Blacksmith Hammer 2 - DO NOT USE
-		i(191070),	-- Blacksmithing Gloves
-		i(191078),	-- Gold Rolling Pin
-		i(191253),	-- DNT - TBD Placeholder - Optional Reagent
-		i(191257),	-- DNT - Stonename Whetstone
-		i(191258),	-- DNT - Stonename Weightstone
-		i(191259),	-- DNT - Stonename Razorstone
-		i(191629),	-- 10.0 Jewelcrafting Gem Template (DNT)
-		i(191783),	-- Draconic Treatise on Blacksmithing
-		i(194842),	-- Regal Barding Manuscript
-		i(194843),	-- Explorer's Barding Manuscript
-		i(197861),	-- Fleeting Philosopher's Stone
-
-		i(199687),	-- BWU Test Hammer
-		i(199690),	-- BWU Test Profession Accessory
 	}),
 	expansion(EXPANSION.SL, {
 		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {

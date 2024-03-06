@@ -941,6 +941,7 @@ root(ROOTS.NeverImplemented, {
 				i(192560),	-- Bossy Storm Stuff
 				i(200824),	-- Bottled Lightning
 				i(192078),	-- Bottled Putrescence
+				i(199690),	-- BWU Test Profession Accessory
 				i(200950),	-- Consortium Packaging String
 				i(198541),	-- Depleted Violet Vapors
 				i(191058),	-- Dilapidated Parchment: Bottom Half
@@ -952,6 +953,7 @@ root(ROOTS.NeverImplemented, {
 				i(191879),	-- DNT - Stonename Weightstone
 				i(191880),	-- DNT - Stonename Whetstone
 				i(191881),	-- DNT - Stonename Whetstone
+				i(191253),	-- DNT - TBD Placeholder - Optional Reagent
 				i(200262),	-- Do-It-Yourself Part Building Kit
 				i(191287),	-- Dragonscale Expedition Crate
 				i(191203),	-- Dragonscale Expedition Supplies
@@ -1075,6 +1077,8 @@ root(ROOTS.NeverImplemented, {
 				i(195464),	-- Sweetened Broadhoof Milk
 				i(198842),	-- Tallstrider Feather
 				i(187617),	-- Tempered Djaradin Steel
+				i(190653),	-- Test Finishing Reagent without Quality 01 (DNT)
+				i(190648),	-- Test Optional Reagent 01 with Quality 03 (DNT)
 				i(191087),	-- Treasure Map: Ohn'ahran Plains
 				i(194029),	-- Treasure Map: Thaldraszus
 				i(194026),	-- Treasure Map: The Azure Span

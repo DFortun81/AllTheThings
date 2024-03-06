@@ -346,6 +346,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
 				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+					i(191070),	-- Blacksmithing Gloves
+					i(191025),	-- Blacksmith Hammer - DO NOT USE
+					i(191033),	-- Blacksmith Hammer 2 - DO NOT USE
+					i(199687),	-- BWU Test Hammer
+					i(191259),	-- DNT - Stonename Razorstone
+					i(191258),	-- DNT - Stonename Weightstone
+					i(191257),	-- DNT - Stonename Whetstone
 					i(191261),	-- Draconium Repair Hammer
 					i(191884),	-- Draconium Repair Hammer
 					i(191885),	-- Draconium Repair Hammer

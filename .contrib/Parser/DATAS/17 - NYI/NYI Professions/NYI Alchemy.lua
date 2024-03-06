@@ -68,6 +68,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(191535),	-- Alchemical Flavor Pocket+
 					i(191536),	-- Alchemical Flavor Pocket++
 					i(191537),	-- Alchemical Flavor Pocket+++
+					i(197861),	-- Fleeting Philosopher's Stone
 					i(191402),	-- Potion of Burning Purification+
 					i(191403),	-- Potion of Burning Purification++
 					i(191404),	-- Potion of Burning Purification+++

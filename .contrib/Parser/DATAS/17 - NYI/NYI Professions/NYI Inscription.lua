@@ -21,7 +21,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
 				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+					i(194843),	-- Explorer's Barding Manuscript
 					i(192464),	-- Darkmoon Deck: Ysera
+					i(191783),	-- Draconic Treatise on Blacksmithing
+					i(191078),	-- Gold Rolling Pin
+					i(194842),	-- Regal Barding Manuscript
 				})),
 			}),
 		}),
