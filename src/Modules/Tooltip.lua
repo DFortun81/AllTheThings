@@ -605,10 +605,12 @@ if TooltipDataProcessor then
 		-- Does the tooltip have an owner?
 		local owner = self:GetOwner();
 		if owner then
-			if owner.SpellHighlightTexture
-			or owner.TrainBook
-			or owner.spendTextShadows then
-				-- Actionbars/Spellbook/Talents UI, don't want that.
+			if owner.SpellHighlightTexture	-- Action bars
+			or owner.TrainBook		-- Spellbook spell tooltips
+			or owner.Caster			-- Retail Death recap spell tooltips
+			or owner.numericValue	-- character 'Mastery' tooltip
+			or owner.spendTextShadows	-- Retail Talents UI tooltips
+			then
 				return true;
 			end
 			-- this is already covered by a default in-game tooltip line:
