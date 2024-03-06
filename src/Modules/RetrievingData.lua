@@ -9,6 +9,7 @@ local _, app = ...;
 -- Encapsulates the functionality for determining whether a value is to be considered 'retrieving'
 
 -- Global locals
+local RETRIEVING_DATA = RETRIEVING_DATA
 
 -- App locals
 
@@ -30,6 +31,7 @@ app.Modules.RetrievingData = api;
 api.IsRetrieving = function(text)
 	return (not text
 		or RetrievingTexts[text]
+		or text:find(RETRIEVING_DATA)
 		or text:find("^%[%]"))
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
