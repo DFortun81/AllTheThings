@@ -23,6 +23,7 @@ root(ROOTS.Zones, {
 			["lore"] = "A true enigma, the Timeless Isle has drifted in and out of Pandaria's mists for thousands of years. Here, time has no meaning, and the sun neither rises nor sets. Its unique characteristics have brought the Isle under the scrutiny of the bronze dragonflight, pandaren explorers, and the black dragon Wrathion.",
 			["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
 			["maps"] = { 555 },	-- Cavern of Lost Spirits
+			["timeline"] = { "added 5.4.0" },
 			["groups"] = {
 				petbattle(m(571, {	-- Celestial Tournament
 					["icon"] = "Interface/Icons/inv_misc_trinketpanda_07",
@@ -1710,6 +1711,24 @@ root(ROOTS.Zones, {
 							i(104168),	-- Spineclaw Crab (PET!)
 						},
 					}),
+					o(220807, {	-- Neverending Spritewood
+						["questID"] = 32961,
+						["description"] = "Click on this to receive a buff that will allow you to kill the sprites. Use your AOE attacks and run around the tree where they are clustered for maximum effect.",
+						["coords"] = {
+							{ 44.7, 70.5, TIMELESS_ISLE },
+							{ 46.3, 71.0, TIMELESS_ISLE },
+							{ 47.9, 73.5, TIMELESS_ISLE },
+							{ 45.0, 75.7, TIMELESS_ISLE },
+						},
+						["isDaily"] = true,
+						["crs"] = {
+							71824,	-- Angry Sprite
+							71826,	-- Scary Sprite
+						},
+						["g"] = {
+							i(104160),	-- Dandelion Frolicker (PET!)
+						},
+					}),
 					n(72048,  {	-- Rattleskew
 					--	no daily questID popped.  may have a one-time questID?
 						["coord"] = { 60.6, 87.8, TIMELESS_ISLE },	-- mapID needs verification
@@ -2337,17 +2356,6 @@ root(ROOTS.Zones, {
 				n(ZONE_DROPS, {
 					n(72766,  {	-- Ancient Spineclaw
 						i(104293),	-- Scuttler's Shell
-					}),
-					v(32961,  {	-- Angry Sprite & Scary Sprite
-						["description"] = "Click on the Neverending Spritewood (purple crystal) to transform and be able to attack the sprites.",
-						["isDaily"] = true,
-						["crs"] = {
-							71824,	-- Angry Sprite
-							71826,	-- Scary Sprite
-						},
-						["g"] = {
-							i(104160),	-- Dandelion Frolicker (PET!)
-						},
 					}),
 					n(72877,  {	-- Ashleaf Sprite
 						i(104289),	-- Faintly-Glowing Herb
