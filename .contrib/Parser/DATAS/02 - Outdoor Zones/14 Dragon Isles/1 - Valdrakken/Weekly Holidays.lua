@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					-]]
 				}),
 				i(209036, {	-- Cache of Amirdrassil Treasures (N)
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					--[[
 					["sym"] = {
 						{"select", "instanceID", 1207},			-- Amirdrassil, the Dream's Hope
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					-]]
 				}),
 				i(209037, {	-- Cache of Amirdrassil Treasures (H)
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					--[[
 					["sym"] = {
 						{"select", "instanceID", 1207},			-- Amirdrassil, the Dream's Hope

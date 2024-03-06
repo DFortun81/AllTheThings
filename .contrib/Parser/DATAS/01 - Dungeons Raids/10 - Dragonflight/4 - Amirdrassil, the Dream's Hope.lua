@@ -755,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				CommonBossDrops({
 					currency(WHELPLINGS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
@@ -817,7 +817,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(DRAKES_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				n(QUESTS, {
@@ -863,14 +863,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(SMOLDERON),
 				BossOnly(TINDRAL),
 				BossOnly(FYRAKK, {
-					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }}),	-- Ahead of the Curve: Fyrakk the Blazing
+					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Ahead of the Curve: Fyrakk the Blazing
 					i(211375),	-- Everglowing Ember (QS!)
 				}),
 			}),
 			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(WYRMS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				n(QUESTS, {
@@ -901,7 +901,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(MYTHIC_RAID).AddGroups({
 				CommonBossDrops({
 					currency(ASPECTS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				n(QUESTS, {
@@ -955,7 +955,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(19343, {	-- Mythic: Fyrakk the Blazing
 						title(530),	-- <Name> the Blazing
 					}),
-					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }}),	-- Cutting Edge: Fyrakk the Blazing
+					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Cutting Edge: Fyrakk the Blazing
 					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, "removed 10.2.5.53162" } }, {	-- Hall of Fame: Fyrakk the Blazing
 						title(528),	-- <Name>, Famed Slayer of Fyrakk
 					})),

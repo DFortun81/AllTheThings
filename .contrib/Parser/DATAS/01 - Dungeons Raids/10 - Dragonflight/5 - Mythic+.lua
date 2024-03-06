@@ -34,19 +34,19 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		}),
 		currency(WHELPLINGS_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 2-5.",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		currency(DRAKES_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 6-10",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		currency(WYRMS_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 11-15",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		currency(ASPECTS_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 16+",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
@@ -130,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_DREAMING, bubbleDownSelf({
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		},{
 			ach(19009),		-- Dragonflight Keystone Explorer: Season Three
 			ach(19010, {	-- Dragonflight Keystone Conqueror: Season Three

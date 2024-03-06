@@ -328,7 +328,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
 				}),
 				i(212554, {	-- Medal of Conquest
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 			},
 		}),
