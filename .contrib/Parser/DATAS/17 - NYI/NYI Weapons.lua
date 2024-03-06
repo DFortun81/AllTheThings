@@ -306,9 +306,6 @@ root(ROOTS.NeverImplemented, {
 					i(201246),	-- Coiled Green Draketail
 					i(201775),	-- Crimson Aspirant's Wand
 				}),
-				expansion(EXPANSION.DF, 2.0, {
-					i(210317),	-- Verdant Aspirant's Wand
-				}),
 			}),
 		}),
 		filter(WARGLAIVES, {

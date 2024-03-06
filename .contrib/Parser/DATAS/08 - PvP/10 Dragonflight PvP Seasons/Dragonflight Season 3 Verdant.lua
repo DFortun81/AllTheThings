@@ -402,6 +402,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 							i(210155, {	-- Verdant Aspirant's Torch
 								["cost"] = { { "c", HONOR, 425 } },
 							}),
+							i(210317, {	-- Verdant Aspirant's Wand
+								["cost"] = { { "c", HONOR, 875 } },
+								["timeline"] = { ADDED_10_2_5 },
+							}),
 							i(210156, {	-- Verdant Aspirant's Warglaive
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
