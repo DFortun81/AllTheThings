@@ -3,8 +3,12 @@ do
 local _,app = ...;
 local pairs, tostring, math_floor, setmetatable, rawget
 	= pairs, tostring, math.floor, setmetatable, rawget
+local function GetExpansionName(expansionID)
+	-- /script for key,value in pairs(_G) do if key:find("EXPANSION_NAME") then print(key, value); end end
+	return _G["EXPANSION_NAME" .. (expansionID - 1)] or UNKNOWN;
+end
+--[[
 local EJ_GetTierInfo = EJ_GetTierInfo;
-local GetExpansionName
 if EJ_GetTierInfo then
 	GetExpansionName = function(expansionID)
 		-- only use API for name if not set from locale (this throws errors randomly for no reason, but not consistently)
@@ -15,6 +19,7 @@ if EJ_GetTierInfo then
 else
 	GetExpansionName = function(expansionID) return UNKNOWN; end
 end
+]]--
 local GetExpansionInfoMeta = function(t, key)
 	local expansionID = rawget(t, "expansionID")
 	local name = GetExpansionName(expansionID)
