@@ -251,6 +251,7 @@ HeaderAssignments = {
 	["Riding Trainer"] = -1000034,
 	["Rune Engraving"] = -1000278,
 	["Sanctum Upgrades"] = -1000089,
+	["Sargerei War Council"] = -1000853,
 	["Scenario Completion"] = -1000850,
 	["Scenarios"] = -1000054,
 	["Scroll of Resurrection"] = -1000265,
@@ -386,4 +387,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000852;
+NextHeaderID = -1000854;

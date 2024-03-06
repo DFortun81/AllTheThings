@@ -2150,8 +2150,33 @@ root(ROOTS.Zones, {
 							i(116112),	-- Ra'kahn's Bite
 						},
 					}),
-					v(37337,   {	-- Sargerei War Council
-						["description"] = "Patrols the area in roughly a circle.",
+					n(createHeader({	-- Sargerei War Council
+						readable = "Sargerei War Council",
+						icon = 136156,
+						text = {
+							en = "Sargerei War Council",
+							es = "Consejo de guerra Sargerei",
+							de = "Kriegsrat der Sargerei",
+							fr = "Conseil de guerre sargereï",
+							it = "Concilio di Guerra Sargerei",
+							pt = "Conselho de Guerra Sargerei",
+							ru = "Саргерайский военный совет",
+							ko = "살게레이 전쟁의회",
+							cn = "萨格雷战争议会",
+						},
+						description = {
+							en = "Patrols the area in roughly a circle.",
+							es = "Patrulla el área aproximadamente en un círculo.",
+							de = "Streift ungefähr im Kreis durch das Gebiet.",
+							fr = "Patrouille dans la zone en formant à peu près un cercle.",
+							it = "Pattuglia l'area approssimativamente in cerchio.",
+							pt = "Patrulha a área aproximadamente em círculo.",
+							ru = "Патрулирует территорию примерно по кругу.",
+							ko = "대략 원을 그리며 해당 지역을 순찰합니다.",
+							cn = "大致绕一圈巡逻。",
+						},
+					}), {
+						["questID"] = 37337,
 						["isDaily"] = true,
 						["crs"] = {
 							88071,	-- Strategist Ankor
