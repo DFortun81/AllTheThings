@@ -97,10 +97,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
 					crit(52348, {	-- Remnant of Ner'zhul
-						["_encounter"] = { 2444, HEROIC_RAID },
+						["_encounter"] = { 2445, HEROIC_RAID },
 					}),
 					crit(52347, {	-- Soulrender Dormazain
-						["_encounter"] = { 2445, HEROIC_RAID },
+						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
 					crit(52349, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, HEROIC_RAID },
