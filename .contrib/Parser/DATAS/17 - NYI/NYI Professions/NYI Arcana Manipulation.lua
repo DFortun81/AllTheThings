@@ -1,6 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
+-- #if AFTER DF
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ARCANA_MANIPULATION, {
 		filter(RECIPES, {
@@ -14,3 +15,4 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 	}),
 }));
+-- #endif

@@ -40,6 +40,11 @@ local is = function(itemID, spellID, classID, raceID)
 		error("'characterUnlockSpellID' requires itemID or spellID to be parsed (itemID only will simply apply the data to the respective Item)")
 	end
 end
+-----------------
+--   CLASSIC   --
+-----------------
+--- NYI ---
+is(4144, 28270, MAGE);				-- Tome of Polymorph: Cow
 
 -----------------
 -- PATCH 1.7.0 --

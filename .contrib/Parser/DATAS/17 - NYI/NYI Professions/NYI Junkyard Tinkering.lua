@@ -1,6 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
+-- #if AFTER 8.2.0
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JUNKYARD_TINKERING, {
 		n(CRAFTABLES, {
@@ -35,3 +36,4 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 	}),
 }));
+-- #endif

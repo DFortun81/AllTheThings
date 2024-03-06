@@ -12,10 +12,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.CLASSIC, {
+				-- Without SpellID attached
+				i(16082),	-- Artisan Fishing - The Way of the Lure
+			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.1.0
 				expansion(EXPANSION.WRATH, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
 					r(62734),	-- Fishing
+				})),
+			}),
+			expansion(EXPANSION.CATA, {
+				-- 4.0.1
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+					-- Without SpellID attached
+					i(46055),	-- Grand Master Fishing - Deep Sea Adventures
+					i(46054),	-- Journeyman Fishing - Fishing for Dummies
 				})),
 			}),
 			expansion(EXPANSION.WOD, {

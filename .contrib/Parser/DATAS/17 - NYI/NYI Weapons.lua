@@ -2,7 +2,6 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
-	-- TODO: Sort this file
 	n(WEAPONS, {
 		filter(BOWS, {
 			expansion(EXPANSION.CLASSIC, {

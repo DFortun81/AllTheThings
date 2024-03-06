@@ -3,62 +3,54 @@ root(ROOTS.NeverImplemented, {
 	expansion(EXPANSION.MOP),
 	expansion(EXPANSION.SL),
 	expansion(EXPANSION.DF),
-	n(ACHIEVEMENTS),				-- completed up to 10.2.5
-	n(ARMOR),
-	filter(BAGS),
-	filter(BATTLE_PETS),			-- completed up to 10.2.5
-	n(CONDUITS),
-	filter(CONSUMABLES),
-	filter(COSMETIC),
-	n(FACTIONS),					-- completed up to 10.2.5
-	n(FLIGHT_PATHS),				-- completed up to 10.2.5
-	n(FOLLOWERS, {					-- completed up to 10.2.5
-		["timeline"] = { "added 6.0.1" },
+	n(ACHIEVEMENTS, {["timeline"] = {CREATED_3_0_2}}),					-- Completed up to 10.2.5
+	n(ARMOR),															-- Not Completed and Not Sorted
+	filter(BAGS),														-- Not Completed and Not Sorted
+	filter(BATTLE_PETS),												-- Completed up to 10.2.5
+	n(CLASSES),															-- Completed up to 10.2.5
+	n(CONDUITS, {["timeline"] = {CREATED_9_0_1}}),						-- Completed up to 10.2.5
+	filter(COSMETIC),													-- Not Completed and Not Sorted
+	--n(FACTIONS),														-- Completed up to 10.2.5
+	n(FLIGHT_PATHS),													-- Completed up to 10.2.5
+	n(FOLLOWERS, {["timeline"] = {CREATED_6_0_2}}),						-- Completed up to 10.2.5
+	n(HEIRLOOMS, {["timeline"] = {CREATED_4_0_1}}),						-- Not Completed and Not Sorted
+	filter(ILLUSIONS, {["timeline"] = {CREATED_8_0_1}}),				-- Completed up to 10.2.5
+	n(MAPS, {["timeline"] = {CREATED_7_2_0}}),							-- Not Completed
+	filter(MISC),														-- Not Completed and Not Sorted
+	filter(MOUNTS),														-- Completed up to 10.2.5
+	n(PROFESSIONS, {													-- Not Completed and Not Sorted
+		prof(ABOMINABLE_STITCHING, {["timeline"] = {CREATED_9_0_1}}),	-- Completed up to 10.2.5
+		prof(ALCHEMY),													-- Completed up to 10.2.5
+		prof(ARCANA_MANIPULATION, {["timeline"] = {CREATED_10_0_0}}),	-- Completed up to 10.2.5
+		prof(ASCENSION_CRAFTING, {["timeline"] = {CREATED_9_0_1}}),		-- Completed up to 10.2.5
+		prof(BLACKSMITHING),											-- Completed up to 10.2.5
+		prof(COOKING),													-- Completed up to 10.2.5
+		prof(ENCHANTING),												-- Completed up to 10.2.5
+		prof(ENGINEERING),												-- Not Completed and Not Sorted
+		prof(FIRST_AID),												-- Completed up to 10.2.5
+		prof(FISHING),													-- Completed up to 10.2.5
+		prof(HERBALISM),												-- Completed up to 10.2.5
+		prof(INSCRIPTION, {["timeline"] = {CREATED_3_0_2}}),			-- Not Completed and Not Sorted
+		prof(JEWELCRAFTING),											-- Not Completed and Not Sorted
+		prof(JUNKYARD_TINKERING, {["timeline"] = {CREATED_8_2_0}}),		-- Completed up to 10.2.5
+		prof(LEATHERWORKING),											-- Completed up to 10.2.5
+		prof(MINING),													-- Completed up to 10.2.5
+		prof(POISONS),													-- Not Completed and Not Sorted
+		prof(PROTOFORM_SYNTHESIS, {["timeline"] = {CREATED_9_2_0}}),	-- Completed up to 10.2.5
+		prof(SKINNING),													-- Not Completed and Not Sorted
+		prof(SOUL_CYPHERING, {["timeline"] = {CREATED_9_0_1}}),			-- Completed up to 10.2.5
+		--prof(STYGIA_CRAFTING, {["timeline"] = {CREATED_9_0_5}}),		-- Completed up to 10.2.5
+		prof(SUPPLY_SHIPMENTS, {["timeline"] = {CREATED_10_2_0}}),		-- Completed up to 10.2.5
+		prof(TAILORING),												-- Not Completed and Not Sorted
+		--prof(TUSKARR_FISHING_GEAR, {["timeline"] = {CREATED_10_0_0}}),-- Completed up to 10.2.5
 	}),
-	n(HEIRLOOMS),
-	-- #if AFTER 8.0.1
-	filter(ILLUSIONS),				-- completed up to 10.2.5
-	-- #endif
-	-- #if AFTER 7.2.0
-	n(MAPS),
-	-- #endif
-	filter(MISC),
-	filter(MOUNTS),					-- completed up to 10.2.5
-	n(PROFESSIONS, {
-		prof(ALCHEMY),				-- completed up to 10.2.5
-		prof(ARCANA_MANIPULATION),	-- completed up to 10.2.5
-		prof(ASCENSION_CRAFTING),	-- completed up to 10.2.5
-		prof(BLACKSMITHING),		-- completed up to 10.2.5
-		prof(COOKING),				-- completed up to 10.2.5
-		prof(ENCHANTING),			-- completed up to 10.2.5
-		prof(ENGINEERING),
-		prof(FIRST_AID),			-- completed up to 10.2.5
-		prof(FISHING),				-- completed up to 10.2.5
-		prof(HERBALISM),			-- completed up to 10.2.5
-		prof(INSCRIPTION),
-		prof(JEWELCRAFTING),
-		prof(JUNKYARD_TINKERING),	-- completed up to 10.2.5
-		prof(LEATHERWORKING),		-- completed up to 10.2.5
-		prof(MINING),				-- completed up to 10.2.5
-		prof(PROTOFORM_SYNTHESIS),	-- completed up to 10.2.5
-		prof(SKINNING),
-		prof(SOUL_CYPHERING),		-- completed up to 10.2.5
-		prof(STYGIA_CRAFTING),		-- completed up to 10.2.5
-		prof(SUPPLY_SHIPMENTS),		-- completed up to 10.2.5
-		prof(TAILORING),
-		prof(TUSKARR_FISHING_GEAR),	-- completed up to 10.2.5
-	}),
-	filter(QUEST_ITEMS),
-	n(QUESTS),
-	filter(RECIPES),
-	n(SETS),
-	n(SOURCELESS),	-- TODO: move these things into correct NYI.lua files
-	-- #if AFTER 3.0.1
-	filter(TITLES),					-- completed up to 10.2.5
-	-- #endif
-	filter(TOYS),					-- completed up to 10.2.5
-	n(TRADING_POST_NYI),
-	n(WEAPONS),
+	filter(QUEST_ITEMS),												-- Not Completed and Not Sorted
+	n(QUESTS),															-- Not Completed and Not Sorted
+	n(SETS),															-- Not Completed and Not Sorted
+	filter(TITLES, {["timeline"] = {CREATED_3_0_2}}),					-- Completed up to 10.2.5
+	filter(TOYS),														-- Completed up to 10.2.5
+	n(TRADING_POST_NYI, {["timeline"] = {CREATED_10_0_5}}),				-- Not Completed and Not Sorted
+	n(WEAPONS),															-- Not Completed and Not Sorted
 });
 root(ROOTS.HiddenAchievementTriggers, {
 	expansion(EXPANSION.WRATH),

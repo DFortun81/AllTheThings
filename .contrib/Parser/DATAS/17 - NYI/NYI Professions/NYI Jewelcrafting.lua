@@ -119,4 +119,52 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 	}),
+	-- Needs Sorting
+	prof(JEWELCRAFTING, {
+		expansion(EXPANSION.TBC, {
+			-- 2.1.0
+			expansion(EXPANSION.TBC, 1.0, bubbleDownSelf({ ["timeline"] = {"created 2.1.0"} }, {
+				i(32412),	-- Design: Relentless Earthstorm Diamond
+			})),
+
+			-- 2.1.3
+			expansion(EXPANSION.TBC, 1.3, bubbleDownSelf({ ["timeline"] = {"created 2.1.3"} }, {
+				i(21958),	-- Design: Arcanite Sword Pendant
+				i(21959),	-- Design: Blood Crown
+				i(25888),	-- Primal Stone Statue
+			})),
+
+			-- 2.3.0
+			expansion(EXPANSION.TBC, 3.0, bubbleDownSelf({ ["timeline"] = {"created 2.3.0"} }, {
+				i(34221),	-- Design: Chaotic Skyfire Diamond
+			})),
+
+			-- 2.4.0
+			expansion(EXPANSION.TBC, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
+				i(35533),	-- Design: Amulet of Flowing Life
+				i(35534),	-- Hard Khorium Band
+				i(35535),	-- Hard Khorium Choker
+				i(35536),	-- Loop of Forged Power
+				i(35537),	-- Pendant of Sunfire
+				i(35538),	-- Ring of Flowing Life
+			})),
+
+			i(21950),	-- Design: Cut Emerald - Deprecated
+			i(21951),	-- Design: Cut Azerothian Diamond
+			i(20972),	-- Design: Silver Rose Pendant
+		}),
+		expansion(EXPANSION.CATA, {
+			-- 4.0.1
+			expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
+				r(73259),	-- Resolute Hessonite
+				r(73233),	-- Mystic Alicite
+			})),
+		}),
+		expansion(EXPANSION.WOD, {
+			-- 6.0.1
+			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+				i(116080),	-- Design: Greater Taladite Amplifier
+			})),
+		}),
+	}),
 }));

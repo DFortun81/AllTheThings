@@ -56,6 +56,32 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(53417),	-- Unkown
 				})),
 			}),
+			expansion(EXPANSION.LEGION, {
+				-- 7.0.3
+				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+					-- Without SpellID attached
+					i(124475),	-- Mining Technique: Felslate Deposit
+					i(124476),	-- Mining Technique: Felslate Deposit
+					i(124477),	-- Mining Technique: Felslate Deposit
+					i(124479),	-- Mining Technique: Felslate Seam
+					i(124480),	-- Mining Technique: Felslate Seam
+					i(124481),	-- Mining Technique: Felslate Seam
+					i(124487),	-- Mining Technique: Infernal Brimstone
+					i(124488),	-- Mining Technique: Infernal Brimstone
+					i(124463),	-- Mining Technique: Leystone Deposit
+					i(124464),	-- Mining Technique: Leystone Deposit
+					i(124465),	-- Mining Technique: Leystone Deposit
+					i(124467),	-- Mining Technique: Leystone Seam
+					i(124468),	-- Mining Technique: Leystone Seam
+					i(124469),	-- Mining Technique: Leystone Seam
+					i(124471),	-- Mining Technique: Living Leystone
+					i(124472),	-- Mining Technique: Living Leystone
+					i(124473),	-- Mining Technique: Living Leystone
+					i(124483),	-- Mining Technique: Living Seam
+					i(124484),	-- Mining Technique: Living Seam
+					i(124485),	-- Mining Technique: Living Seam
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {

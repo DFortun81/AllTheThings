@@ -1,6 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
+-- #if AFTER WRATH
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		n(CRAFTABLES, {
@@ -115,4 +116,81 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 	}),
+	-- Needs Sorting
+	prof(INSCRIPTION, {
+		expansion(EXPANSION.MOP, {
+			-- 5.0.1
+			expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
+				i(87829),	-- Technique: Incarnadine Ink
+				i(87830),	-- Technique: Tigersblood Tincture
+			})),
+		}),
+		expansion(EXPANSION.WOD, {
+			-- 6.2.1
+			expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = {"created 6.2.1"} }, {
+				i(129139),	-- Tome of Rapid Pathfinding
+			})),
+		}),
+		expansion(EXPANSION.LEGION, {
+			-- 7.0.3
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+				-- #if BEFORE 10.1.5
+				i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
+				-- #endif
+				i(141065),	-- Technique: Grimoire of the Terrorguard (Item never made it into the game)
+				i(141065),	-- Technique: Grimoire of the Terrorguard
+			})),
+
+			-- 7.2.0
+			expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
+				i(146335),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
+				i(146355),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
+				i(146375),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
+				i(146344),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
+				i(146364),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
+				i(146384),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
+				i(146395),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
+				i(146397),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
+				i(146399),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
+				i(146336),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
+				i(146356),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
+				i(146376),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
+				i(146396),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
+				i(146398),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
+				i(146400),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
+				i(146337),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
+				i(146357),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
+				i(146377),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
+				i(146338),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
+				i(146358),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
+				i(146378),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
+				i(146339),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
+				i(146359),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
+				i(146379),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
+				i(146340),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
+				i(146360),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
+				i(146380),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
+				i(146345),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
+				i(146365),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
+				i(146385),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
+				i(146341),	-- Vantus Rune Technique: The Arcway (likely PTR version)
+				i(146361),	-- Vantus Rune Technique: The Arcway (likely PTR version)
+				i(146381),	-- Vantus Rune Technique: The Arcway (likely PTR version)
+				i(146342),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
+				i(146362),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
+				i(146382),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
+				i(146343),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
+				i(146363),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
+				i(146383),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
+			})),
+		}),
+		i(169550),	-- REUSE ME [MTMM]
+		expansion(EXPANSION.SL, {
+			-- 9.0.1
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+				i(183865),	-- [DNT][REUSE ME] Technique: Crafter's Mark III
+			})),
+		}),
+	}),
 }));
+-- #endif

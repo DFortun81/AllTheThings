@@ -1,6 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
+-- #if AFTER SHADOWLANDS
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ASCENSION_CRAFTING, {
 		n(CRAFTABLES, {
@@ -24,3 +25,4 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 	}),
 }));
+-- #endif

@@ -3690,6 +3690,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- #if AFTER TBC
+-- #if ANYCLASSIC
 root(ROOTS.NeverImplemented, {
 	expansion(EXPANSION.TBC, {
 		-- #if BEFORE 4.0.1.12941
@@ -3700,4 +3701,5 @@ root(ROOTS.NeverImplemented, {
 		-- #endif
 	}),
 });
+-- #endif
 -- #endif

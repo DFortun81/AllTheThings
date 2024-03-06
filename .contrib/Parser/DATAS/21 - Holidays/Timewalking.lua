@@ -5554,10 +5554,6 @@ AddInstancesToRotation(EXPANSION.LEGION, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
 }));
-root(ROOTS.NeverImplemented, {
-	n(SOURCELESS, {
-	}),
-});
 --[[
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()

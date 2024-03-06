@@ -160,4 +160,78 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 	}),
+	-- Needs Sorting
+	prof(ENGINEERING, {
+		expansion(EXPANSION.TBC, {
+			i(23813),	-- Schematic: Blue Smoke Flare [Removed in TBC Beta]
+			i(23882),	-- Schematic: Critter Enlarger [Removed in TBC Beta]
+			i(23812),	-- Schematic: Red Smoke Flare [Removed in TBC Beta]
+		}),
+		expansion(EXPANSION.WRATH, {
+			i(37589),	-- Hyper-Powered Mote Extractor
+		}),
+		expansion(EXPANSION.MOP, {
+			-- 5.2.0
+			expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
+				i(94894),	-- Schematic: Advanced Refrigeration Unit
+				i(97230),	-- Schematic: Jard's Peculiar Energy Source
+				i(94893),	-- Schematic: Pierre
+				i(94880),	-- Schematic: Sky Golem
+			})),
+		}),
+		expansion(EXPANSION.WOD, {
+			-- 6.0.2
+			expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
+				i(100907),	-- Schematic: Rascal-Bot
+			})),
+		}),
+		expansion(EXPANSION.LEGION, {
+			-- 7.0.3
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+				i(137692),	-- Schematic: Blingtron's Circuit Design Tutorial
+				i(137697),	-- Schematic: Blink-Trigger Headgun (Rank 2)
+				i(137699),	-- Schematic: Bolt-Action Headgun (Rank 2)
+				i(137693),	-- Schematic: Reaves Module: Failure Detection Mode
+				i(137700),	-- Schematic: Reinforced Headgun (Rank 2)
+				i(137725),	-- Schematic: Sonic Environment Enhancer
+				i(137698),	-- Schematic: Tactical Headgun (Rank 2)
+			})),
+
+			-- 7.1.5
+			expansion(EXPANSION.LEGION, 1.5, bubbleDownSelf({ ["timeline"] = {"created 7.1.5"} }, {
+				i(144343),	-- Schematic: Rechargeable Reaves Battery
+			})),
+
+			-- 7.3.0
+			expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
+				i(151714),	-- Schematic: Gravitational Reduction Slippers
+				i(151717),	-- Schematic: Wormhole Generator: Argus
+			})),
+		}),
+		expansion(EXPANSION.BFA, {
+			-- 8.0.1
+			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+				i(162333),	-- Schematic: Catchroot Seed Spreader
+				i(162737),	-- Schematic: Catchroot Seed Spreader
+				i(162334),	-- Schematic: Charged Refrigeration Projectile
+				i(162738),	-- Schematic: Charged Refrigeration Projectile
+				i(162338),	-- Schematic: Electro-Induced Slumber Bomb
+				i(162335),	-- Schematic: Fro-Grow Grenade
+				i(162739),	-- Schematic: Fro-Grow Grenade
+				i(162336),	-- Schematic: Neurological Immobilization Bomb
+				i(162740),	-- Schematic: Neurological Immobilization Bomb
+			})),
+
+			-- 8.1.5
+			expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = {"created 8.1.5"} }, {
+				i(165843),	-- Schematic: Mechantula
+			})),
+		}),
+		expansion(EXPANSION.SL, {
+			-- 9.0.1
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+				i(183867),	-- [DNT][REUSE ME] Schematic: Crafter's Mark III
+			})),
+		}),
+	}),
 }));

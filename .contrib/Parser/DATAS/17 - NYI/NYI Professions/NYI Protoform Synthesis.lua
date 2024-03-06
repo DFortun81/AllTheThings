@@ -1,19 +1,19 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
+-- #if AFTER 9.2.0
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(PROTOFORM_SYNTHESIS, {
 		filter(RECIPES, {
 			expansion(EXPANSION.SL, {
 				-- 9.2.0
 				expansion(EXPANSION.SL, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
-					q(65375),	-- Schematic Reassimilation: Pale Regal Cervid
+					r(365061),	-- Patient Bufonid
 					i(189455),	-- Schematic: Pale Regal Cervid
 					i(189470),	-- Schematic: Patient Bufonid
-					q(65392),	-- Schematic Reassimilation: Patient Bufonid
-					recipe(365061),	-- Patient Bufonid
 				})),
 			}),
 		}),
 	}),
 }));
+-- #endif

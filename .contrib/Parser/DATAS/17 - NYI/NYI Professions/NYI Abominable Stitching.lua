@@ -1,6 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
+-- #if AFTER SHADOWLANDS
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ABOMINABLE_STITCHING, {
 		n(CRAFTABLES, {
@@ -33,3 +34,4 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 	}),
 }));
+-- #endif

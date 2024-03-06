@@ -1,7 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- #if AFTER 8.0.1
+-- #if AFTER BFA
 root(ROOTS.NeverImplemented, filter(ILLUSIONS, {
 	expansion(EXPANSION.BFA, {
 		-- 8.2.5

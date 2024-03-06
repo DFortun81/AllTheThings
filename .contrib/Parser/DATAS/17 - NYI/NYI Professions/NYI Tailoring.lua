@@ -136,4 +136,98 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 	}),
+	-- Needs Sorting
+	prof(TAILORING, {
+		expansion(EXPANSION.CLASSIC, {
+			i(7093),	-- Pattern: Boots of Darkness
+			r(8778),	-- Boots of Darkness
+			i(6273),	-- Pattern: Green Woolen Robe
+			r(7636),	-- Green Woolen Robe
+			i(10324),	-- Pattern: Stormcloth Boots
+			r(12090),	-- Stormcloth Boots
+			i(10304),	-- Pattern: Stormcloth Gloves
+			r(12063),	-- Stormcloth Gloves
+			i(10319),	-- Pattern: Stormcloth Headband
+			r(12083),	-- Stormcloth Headband
+			i(10303),	-- Pattern: Stormcloth Pants
+			r(12062),	-- Stormcloth Pants
+			i(10322),	-- Pattern: Stormcloth Shoulders
+			r(12087),	-- Stormcloth Shoulders
+			i(10313),	-- Pattern: Stormcloth Vest
+			r(12068),	-- Stormcloth Vest
+			i(21369),	-- Pattern: Felcloth Bag
+		}),
+		expansion(EXPANSION.TBC, {
+			i(24315),	-- Pattern: Heavy Netherweave Net
+			i(29120),	-- Pattern: Truefaith Vestments
+			i(30474),	-- Pattern: Lifeblood Bracers
+			r(36672),	-- Lifeblood Bracers
+			i(30473),	-- Pattern: Lifeblood Belt
+			r(36670),	-- Lifeblood Belt
+			i(30472),	-- Pattern: Lifeblood Leggings
+			r(36669),	-- Lifeblood Leggings
+			i(30470),	-- Pattern: Netherflame Belt
+			r(36667),	-- Netherflame Belt
+			i(30471),	-- Pattern: Netherflame Boots
+			r(36668),	-- Netherflame Boots
+			i(30469),	-- Pattern: Netherflame Robe
+			r(36665),	-- Netherflame Robe
+		}),
+		expansion(EXPANSION.WRATH, {
+			i(42196),	-- Pattern: Aurora Slippers
+			i(42190),	-- Pattern: Deathchill Cloak
+			i(42180),	-- Pattern: Ebonweave
+			i(42200),	-- Pattern: Ebonweave Gloves
+			i(42199),	-- Pattern: Ebonweave Robe
+			i(42194),	-- Pattern: Frostmoon Pants
+			i(42186),	-- Pattern: Frostweave Bag
+			i(42179),	-- Pattern: Green Workman's Shirt
+			i(42191),	-- Pattern: Hat of Wintry Doom
+			i(42195),	-- Pattern: Light Blessed Mittens
+			i(42181),	-- Pattern: Moonshroud
+			i(42198),	-- Pattern: Moonshroud Gloves
+			i(42197),	-- Pattern: Moonshroud Robe
+			i(42192),	-- Pattern: Silky Iceshard Boots
+			i(42182),	-- Pattern: Spellweave
+			i(42202),	-- Pattern: Spellweave Gloves
+			i(42201),	-- Pattern: Spellweave Robe
+			i(42189),	-- Pattern: Wispcloak
+			i(42174),	-- Pattern: Yellow Lumberjack Shirt
+		}),
+		expansion(EXPANSION.WOD, {
+			-- 6.0.1
+			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+				i(114867),	-- Pattern: Miniature Flying Carpet - NYI
+				r(168851),	-- Miniature Flying Carpet
+				i(114872),	-- Pattern: Greater Hexweave Essence
+				r(169669),	-- Pattern: Hexweave Cloth
+				i(118098),	-- Pattern: Murloc Chew Toy
+				r(173415),	-- Murloc Chew Toy
+			})),
+		}),
+		expansion(EXPANSION.LEGION, {
+			-- 7.0.3
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+				i(137981),	-- Pattern: Silkweave Cloak
+				i(151746),	-- Pattern: Lightweave Breeches
+			})),
+		}),
+		expansion(EXPANSION.BFA, {
+			-- 8.0.1
+			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+				i(162424),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
+				i(162770),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
+				i(162426),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
+				i(162771),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
+				i(162428),	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
+				i(162430),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
+			})),
+		}),
+		expansion(EXPANSION.SL, {
+			-- 9.0.1
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+				i(183871),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
+			})),
+		}),
+	}),
 }));

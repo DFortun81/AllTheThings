@@ -11,6 +11,8 @@ i(0, 7738);			-- Fishing Poles
 i(16083, 7732);		-- Fishing (Expert) [TRAINER: 3.1.0, REMOVED: 8.0.1]
 --- QUEST ---
 i(0, 18248);		-- Fishing (Artisan) [TRAINER: 3.1.0, REMOVED: 8.0.1]
+--- NYI ---
+i(16082, 0);		-- Artisan Fishing - The Way of the Lure
 
 -----------------
 -- PATCH 2.0.5 --
@@ -35,6 +37,13 @@ i(0, 51294);		-- Fishing (Grand Master) [REMOVED: 8.0.1]
 -----------------
 --- NYI ---
 i(0, 62734);		-- Fishing
+
+-----------------
+-- PATCH 4.0.1 --
+-----------------
+--- NYI ---
+i(46055, 0);		-- Grand Master Fishing - Deep Sea Adventures
+i(46054, 0);		-- Journeyman Fishing - Fishing for Dummies
 
 -----------------
 -- PATCH 4.0.3 --
