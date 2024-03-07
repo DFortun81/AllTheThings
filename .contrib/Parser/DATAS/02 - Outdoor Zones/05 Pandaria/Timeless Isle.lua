@@ -1731,6 +1731,7 @@ root(ROOTS.Zones, {
 					}),
 					n(72048,  {	-- Rattleskew
 					--	no daily questID popped.  may have a one-time questID?
+						["provider"] = { "n", 55421 },	-- Ghost Pirate Battle Controller (note: this is more for linking it to the vignette than anything)
 						["coord"] = { 60.6, 87.8, TIMELESS_ISLE },	-- mapID needs verification
 						["g"] = {
 							i(104321),	-- Captain Zvezdan's Lost Leg
@@ -1821,6 +1822,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(71919,  {	-- Zhu-Gon the Sour
+						["providers"] = {
+							{ "n", 71944 },	-- Skunked Keg of Beer
+							{ "n", 71908 },	-- Skunky Brew Alemental
+						},
 						["description"] = "Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",
 						["questID"] = 32959,
 						["isDaily"] = true,
