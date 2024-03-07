@@ -14,6 +14,7 @@ if C_VignetteInfo then
 		= rawset, tonumber, ipairs, pairs
 
 	-- Module locals
+	local FlashClientIcon = FlashClientIcon;
 	local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
 	local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
 	local C_VignetteInfo_GetVignettePosition = C_VignetteInfo.GetVignettePosition;
@@ -138,6 +139,7 @@ if C_VignetteInfo then
 						if waypointLink then link = waypointLink .. " " .. link; end
 						app.print(L.NEARBY, link);
 						app.Audio:PlayRareFindSound();
+						if FlashClientIcon then FlashClientIcon(); end
 					end
 				end
 			end
