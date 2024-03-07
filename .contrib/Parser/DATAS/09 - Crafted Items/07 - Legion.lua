@@ -359,11 +359,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(124109),	-- Highmountain Salmon
 		i(143748, {["timeline"] = {ADDED_7_1_0}}),	-- Leyscale Koi
 		i(133725),	-- Leyshimmer Blenny
+		i(133887, {	-- Luminous Pearl
+			["description"] = "Pre-requisites:\n\n  Be level 45.\n  Have level 100 Legion Fishing.\n  Complete the achievement 'Bigger Fish to Fry'.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for this item.",
+			["lvl"] = { 45 },
+		}),
 		i(133737),	-- Magic-Eater Frog
 		i(124108),	-- Mossgill Perch
 		i(133731),	-- Mountain Puffer
 		i(133726),	-- Nar'thalas Hermit
 		i(133734),	-- Oodelfjisk
+		i(152912, {	-- Pond Nettle (MOUNT!)
+			["description"] = "Caught in green pools around Antoran Wastes.",
+			["timeline"] = { ADDED_7_3_0 },
+		}),
 		i(124111),	-- Runescale Koi
 		i(133741),	-- Seabottom Squid
 		i(133738),	-- Seerspine Puffer
@@ -374,6 +382,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133728),	-- Terrorfin
 		i(133729),	-- Thorned Flounder
 		i(133736),	-- Thundering Stormray
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {

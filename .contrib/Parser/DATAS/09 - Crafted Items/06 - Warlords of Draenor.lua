@@ -472,6 +472,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(111658),	-- Small Sea Scorpion
 		i(118511),	-- Tyfish
 		i(118391),	-- Worm Supreme
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		filter(BATTLE_PETS, {

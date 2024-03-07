@@ -279,6 +279,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(FISHING, {
+		i(187877, {	-- Frog Soul
+			["description"] = "Fish anywhere in the Shadowlands to receive this soul.",
+			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
+			["maps"] = {
+				ARDENWEALD,
+				BASTION,
+				REVENDRETH,
+				MALDRAXXUS,
+			},
+			["timeline"] = { ADDED_9_1_5 },
+		}),
 		i(173037),	-- Elysian Thade
 		i(173033),	-- Iridescent Amberjack
 		i(173032),	-- Lost Sole
@@ -286,6 +297,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		i(187702, {["timeline"] = {ADDED_9_2_0}}),	-- Precursor Placoderm
 		i(173034),	-- Silvergill Pike
 		i(173036),	-- Spinefin Piranha
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering

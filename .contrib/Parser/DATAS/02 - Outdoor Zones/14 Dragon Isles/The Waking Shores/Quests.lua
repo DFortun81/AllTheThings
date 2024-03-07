@@ -6,6 +6,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16334, {	-- Waking Hope
 				------ Prologue ------
+				q(70197, {	-- The Call of the Isles [A]
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(70198, {	-- The Call of the Isles [H]
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(67700, {	-- To The Dragon Isles! [A]
+					["sourceQuests"] = {
+						66596,	--  Whispers in the Winds [A]
+						70197,	--	The Call of the Isles [A]
+					},
+					["provider"] = { "n", 189077 },	-- Toddy Whiskers
+					["coord"] = { 22.7, 55.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(65444, {	-- To the Dragon Isles! [H]
+					["sourceQuests"] = {
+						65439,	-- Whispers on the Winds [H]
+						70198,	-- The Call of the Isles [H]
+					},
+					["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
+					["coord"] = { 55.8, 12.7, DUROTAR },
+					["races"] = HORDE_ONLY,
+				}),
 				q(70122, {	-- Explorers in Peril [A]
 					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 					["provider"] = { "n", 189022 },	-- Toddy Whiskers

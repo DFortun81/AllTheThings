@@ -573,8 +573,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(86545),	-- Mimic Octopus
 		i(74860),	-- Redbelly Mandarin
 		i(74864),	-- Reef Octopus
+		i(46109),	-- Sea Turtle (MOUNT!)
 		i(86544),	-- Spinefish Alpha
 		i(74861),	-- Tiger Gourami
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering

@@ -575,6 +575,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(27511),	-- Inscribed Scrollcase
 		i(27425),	-- Spotted Feltail
 		i(27429),	-- Zangarian Sporefish
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+				["timeline"] = { ADDED_2_3_0 },
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering

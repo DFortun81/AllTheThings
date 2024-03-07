@@ -495,11 +495,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 			}),
 		})),
-		prof(FIRST_AID, {
-			ach(6838, {	-- Zen Master Medic (600)
-				["timeline"] = { "added 5.0", "removed 8.0" },
-				["requireSkill"] = FIRST_AID,
-			}),
-		}),
 	}),
 })));

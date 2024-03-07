@@ -371,8 +371,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(53068),	-- Lavascale Catfish
 		i(53063),	-- Mountain Trout
 		i(53069),	-- Murglesnout
+		i(46109),	-- Sea Turtle (MOUNT!)
 		i(53062),	-- Sharptooth
 		i(53067),	-- Striped Lurker
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering

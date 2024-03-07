@@ -73,7 +73,6 @@ _.CategoryNames = {
 	[1010] = "Boots",
 	[1011] = "Cloaks",
 	[1012] = "Nets",
-	[1022] = "Lures",
 	[1026] = "Inks",
 	[1235] = "Follower Equipment",
 	[1242] = "Conversions",
@@ -135,7 +134,6 @@ _.CategoryIcons = {
 	[1009] = "Interface/Icons/inv_pants_06",
 	[1010] = "Interface/Icons/INV_Boots_01",
 	[1011] = "Interface/Icons/INV_Misc_Cape_18",
-	[1022] = "Interface/Icons/INV_Fishing_Lure_Worm",
 	[1026] = "Interface/Icons/inv_inscription_inkpurple01",
 }
 
@@ -570,8 +568,9 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Forsaken Deathsquad",
 	[-1000856] = "Worgen Stalkers",
 	[-1000858] = "Amateur Hunters",
-	[-1000859] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1000859] = ENCOUNTER_JOURNAL,
+	[-1000860] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1000861] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1010,6 +1009,7 @@ localize(L.HEADER_ICONS, {
 	[-1000855] = "463451",
 	[-1000856] = "463876",
 	[-1000858] = "626000",
+	[-1000859] = "Interface/Icons/inv_10_inscription2_book3_color5",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -10649,9 +10649,6 @@ _.ObjectModels = {
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "de" then
-localize(_.CategoryNames, {
-	[1022] = "Köder",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Zusätzliche Beute",
 	[-1000008] = "Klassenprozess",
@@ -10736,8 +10733,8 @@ localize(L.HEADER_NAMES, {
 	[-1000853] = "Kriegsrat der Sargerei",
 	[-1000855] = "Todesschwadron der Verlassenen",
 	[-1000858] = "Amateurjäger",
-	[-1000859] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1000860] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1000860] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1000861] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -14164,9 +14161,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "es" then
-localize(_.CategoryNames, {
-	[1022] = "Señuelos",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Rollo de Donificación",
 	[-1000008] = "Prueba de Clase",
@@ -14232,8 +14226,8 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Escuadrón de la Muerte Abandonado",
 	[-1000856] = "Acechadores Huargen",
 	[-1000858] = "Cazadores Aficionados",
-	[-1000859] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1000860] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1000861] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -17568,9 +17562,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "fr" then
-localize(_.CategoryNames, {
-	[1022] = "Appâts",
-});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Est",
 	[-1000001] = "Nord",
@@ -17685,8 +17676,8 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Escadron de la Mort Abandonné",
 	[-1000856] = "Traqueurs Worgens",
 	[-1000858] = "Chasseurs Amateurs",
-	[-1000859] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1000860] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1000860] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1000861] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -21099,9 +21090,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "it" then
-localize(_.CategoryNames, {
-	[1022] = "Esche",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Tiro Bonus",
 	[-1000008] = "Prova di Classe",
@@ -21155,8 +21143,8 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Squadra della Morte Abbandonata",
 	[-1000856] = "Cacciatori Worgen",
 	[-1000858] = "Cacciatori Dilettanti",
-	[-1000859] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1000860] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1000861] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -24345,7 +24333,6 @@ localize(_.CategoryNames, {
 	[1009] = "다리",
 	[1010] = "발",
 	[1011] = "등",
-	[1022] = "미끼",
 });
 localize(L.HEADER_NAMES, {
 	[-1000006] = "보너스 롤",
@@ -24399,8 +24386,8 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "포세이큰 데스스쿼드",
 	[-1000856] = "늑대인간 추적자",
 	[-1000858] = "아마추어 사냥꾼",
-	[-1000859] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1000860] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1000861] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -27506,9 +27493,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "pt" then
-localize(_.CategoryNames, {
-	[1022] = "Iscas",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Rolo de Bônus",
 	[-1000008] = "Teste de Classe",
@@ -27574,8 +27558,8 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Esquadrão da Morte Abandonado",
 	[-1000856] = "Perseguidores Worgens",
 	[-1000858] = "Caçadores Amadores",
-	[-1000859] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1000860] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1000861] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -30890,9 +30874,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "ru" then
-localize(_.CategoryNames, {
-	[1022] = "Наживки",
-});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Восток",
 	[-1000001] = "Север",
@@ -31060,8 +31041,8 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Отрекшийся отряд смерти",
 	[-1000856] = "Воргены-сталкеры",
 	[-1000858] = "Охотники-любители",
-	[-1000859] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1000860] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1000860] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1000861] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -34520,9 +34501,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "zh" then
-localize(_.CategoryNames, {
-	[1022] = "鱼竿",
-});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "东部",
 	[-1000001] = "北部",
@@ -34667,8 +34645,8 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "被遗忘者敢死队",
 	[-1000856] = "狼人追猎者",
 	[-1000858] = "业余猎人",
-	[-1000859] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1000860] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1000860] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1000861] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",

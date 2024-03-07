@@ -630,6 +630,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(174328, {["timeline"] = {ADDED_8_3_0}}),	-- Aberrant Voidfin
 		i(152545),	-- Frenzied Fangtooth
 		i(152547),	-- Great Sea Catfish
+		i(163131, {	-- Great Sea Ray (MOUNT!)
+			["description"] = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
+		}),
 		i(167562, {["timeline"] = {ADDED_8_2_0}}),	-- Ionized Minnow
 		i(152546),	-- Lane Snapper
 		i(174327, {["timeline"] = {ADDED_8_3_0}}),	-- Malformed Gnasher
@@ -640,6 +643,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152544),	-- Slimy Mackerel
 		i(152548),	-- Tiragarde Perch
 		i(168302, {["timeline"] = {ADDED_8_2_0}}),	-- Viper Fish
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering

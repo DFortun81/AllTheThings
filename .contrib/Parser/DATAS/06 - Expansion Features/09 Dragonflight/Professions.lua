@@ -350,29 +350,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			}),
 		}),
-		prof(FISHING, bubbleDown({ ["requireSkill"] = FISHING }, {
-			n(QUESTS, {
-				q(72252, {	-- Dragon Isles Fishing [A]
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing.",
-					["sourceQuests"] = { 67700 },	-- To the Dragon Isles! [A]
-					["provider"] = { "n", 191150 },	-- Danielle Anglers
-					["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
-					["races"] = ALLIANCE_ONLY,
-					["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
-				}),
-				q(72253, {	-- Dragon Isles Fishing [H]
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing.",
-					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-					["provider"] = { "n", 190524 },	-- Mora Cloudwalker <Fishing Trainer>
-					["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
-					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
-				}),
-				q(72729, {	-- The Great Swog
-					["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
-				}),
-			}),
-		})),
 		prof(SKINNING, bubbleDown({ ["requireSkill"] = SKINNING }, {
 			n(QUESTS, {
 				q(70363, {	-- Dragon Isles Skinning

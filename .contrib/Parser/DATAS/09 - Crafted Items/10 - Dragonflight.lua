@@ -1526,6 +1526,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(198614),	-- Soggy Clump of Darkmoon Cards
 		i(194969),	-- Temporal Dragonhead
 		i(194966),	-- Thousandbite Piranha
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering

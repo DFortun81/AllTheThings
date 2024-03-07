@@ -666,4 +666,37 @@ root(ROOTS.Zones, {
 			}),
 		},
 	})),
+	n(DUNGEON_JOURNAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		q(72743, {	-- A Piece of Copper
+			["description"] = "If you are lucky. You will get this quest from your adventure guide.",
+			["g"] = {
+				ach(16789),	-- Lucky Penny
+			},
+		}),
+		q(72746, {	-- A Piece of Silver
+			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
+			["sourceQuests"] = { 72743 },	-- A Piece of Copper
+		}),
+		q(72747, {	-- A Piece of Gold
+			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
+			["sourceQuests"] = { 72746 },	-- A Piece of Silver
+		}),
+		q(72748, {	-- A Bag of Gold
+			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
+			["sourceQuests"] = { 72747 },	-- A Piece of Gold
+		}),
+		q(72749, {	-- A Curious Coin
+			["description"] = "Available on the next reset after \"A Bag of Gold\", from the adventure guide.",
+			["sourceQuests"] = { 72748 },	-- A Bag of Gold
+			["g"] = {
+				ach(16790),	-- Curious Coin
+			},
+		}),
+	})),
 });
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		q(72751),	-- Triggers whenever you collect one of the Coin quests from your Adventurer's Journal.
+	})),
+}));

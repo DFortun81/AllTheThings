@@ -600,12 +600,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				},
 			}),
 		})),
-		prof(FIRST_AID, {
-			ach(9505, {	-- Draenor Medic (700)
-				["timeline"] = { "added 6.0", "removed 8.0" },
-				["requireSkill"] = FIRST_AID,
-			}),
-		}),
 	}),
 })));
 

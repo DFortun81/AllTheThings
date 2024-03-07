@@ -376,31 +376,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 				},
 			}),
 		})),
-		prof(FISHING, {
-			ach(5851, {	-- Gone Fishin'
-				["timeline"] = { "added 4.2.0" },
-				["requireSkill"] = FISHING,
-				["sym"] = {{"meta_achievement",
-					5848,	-- Fish or Cut Bait: Darnassus
-					5847,	-- Fish or Cut Bait: Ironforge
-					5476,	-- Fish or Cut Bait: Stormwind
-					5850,	-- Fish or Cut Bait: Undercity
-					5849,	-- Fish or Cut Bait: Thunder Bluff
-					5477,	-- Fish or Cut Bait: Orgrimmar
-				}},
-			}),
-		}),
-		prof(FIRST_AID, {
-			ach(4918, {	-- Illustrious Grand Master Medic (525)
-				["timeline"] = { "added 4.0.1", "removed 8.0" },
-				["requireSkill"] = FIRST_AID,
-			}),
-			-- #IF BEFORE BFA
-			ach(5480, {	-- Preparing for Disaster
-				["requireSkill"] = FIRST_AID,
-			}),
-			-- #ENDIF
-		}),
 		prof(TAILORING, {
 			-- #IF AFTER BFA
 			ach(5480, {	-- Preparing for Disaster

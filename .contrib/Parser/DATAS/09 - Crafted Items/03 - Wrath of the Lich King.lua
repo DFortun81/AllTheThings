@@ -531,7 +531,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(41806),	-- Musselback Sculpin
 		i(41813),	-- Nettlefish
 		i(41803),	-- Rockfin Grouper
-		i(46109, {	-- Sea Turtle
+		i(46109, {	-- Sea Turtle (MOUNT!)
 			["providers"] = {
 				{ "o", 192051 },	-- Borean Man O' War School
 				{ "o", 192053 },	-- Deep Sea Monsterbelly School
@@ -556,6 +556,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(43571),	-- Sewer Carp
 		i(43647),	-- Shimmering Minnow
 		i(43652),	-- Slippery Eel
+		filter(RECIPES, {
+			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
