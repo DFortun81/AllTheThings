@@ -206,6 +206,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coords"] = {
 							{ 33.0, 39.9, ZARALEK_CAVERN },
 							{ 31.9, 39.6, ZARALEK_CAVERN },
+							{ 35.2, 41.8, ZARALEK_CAVERN },
 						},
 					}),
 					o(386090, {	-- Ritual Offerings
@@ -214,6 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							{ 36.4, 52.3, ZARALEK_CAVERN },
 							{ 35.1, 52.2, ZARALEK_CAVERN },
 							{ 32.0, 52.9, ZARALEK_CAVERN },
+							{ 32.4, 50.3, ZARALEK_CAVERN },
 						},
 					}),
 					o(386091, {	-- Ritual Offerings
