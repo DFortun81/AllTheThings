@@ -1264,22 +1264,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199070),	-- Drakebreaker's Cleaver
-								i(199072),	-- Drakebreaker's Hacker
-								i(199071),	-- Drakebreaker's Hatchet
+								--i(199072),	-- Drakebreaker's Hacker	(currently not awarded)
+								--i(199071),	-- Drakebreaker's Hatchet	(currently not awarded)
 							},
 						}),
 						i(211144, {	-- Arsenal: Drakebreaker's Club
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
-								i(199088),	-- Drakebreaker's Cudgel
-								i(199087),	-- Drakebreaker's Maul
+								--i(199088),	-- Drakebreaker's Cudgel	(currently not awarded)
+								--i(199087),	-- Drakebreaker's Maul	(currently not awarded)
 								i(199086),	-- Drakebreaker's Scepter
 							},
 						}),
 						i(211153, {	-- Arsenal: Drakebreaker's Greatsword
 							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
-								i(199084),	-- Drakebreaker's Broadsword
+								--i(199084),	-- Drakebreaker's Broadsword	(currently not awarded)
 								i(199085),	-- Drakebreaker's Greatsword
 							},
 						}),
@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(211146, {	-- Arsenal: Drakebreaker's Knife
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
-								i(199077),	-- Drakebreaker's Dagger
+								--i(199077),	-- Drakebreaker's Dagger	(currently not awarded)
 								i(199078),	-- Drakebreaker's Shiv
 							},
 						}),
@@ -1305,7 +1305,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(211152, {	-- Arsenal: Drakebreaker's Polearm
 							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
-								i(199090),	-- Drakebreaker's Impaler
+								--i(199090),	-- Drakebreaker's Impaler	(currently not awarded)
 								i(199091),	-- Drakebreaker's Javelin
 							},
 						}),
@@ -1318,15 +1318,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(211143, {	-- Arsenal: Drakebreaker's Spiked Hammer
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
-								i(199095),	-- Drakebreaker's Crusher
+								--i(199095),	-- Drakebreaker's Crusher	(currently not awarded)
 								i(199096),	-- Drakebreaker's Mace
-								i(199094),	-- Drakebreaker's Mallet
+								--i(199094),	-- Drakebreaker's Mallet	(currently not awarded)
 							},
 						}),
 						i(211154, {	-- Arsenal: Drakebreaker's Stave
 							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
-								i(199082),	-- Drakebreaker's Pole
+								--i(199082),	-- Drakebreaker's Pole	(currently not awarded)
 								i(199081),	-- Drakebreaker's Staff
 							},
 						}),
@@ -1401,8 +1401,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(211172, {	-- Arsenal: Scalewarden's Axe
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
-								i(206242),	-- Scalewarden's Battleaxe
-								i(206244),	-- Scalewarden's Carver
+								--i(206242),	-- Scalewarden's Battleaxe	(currently not awarded)
+								--i(206244),	-- Scalewarden's Carver	(currently not awarded)
 								i(206243),	-- Scalewarden's Hatchet
 							},
 						}),
@@ -1410,30 +1410,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206256),	-- Scalewarden's Cudgel
-								i(206255),	-- Scalewarden's Hammer
-								i(206263),	-- Scalewarden's Scepter
+								--i(206255),	-- Scalewarden's Hammer	(currently not awarded)
+								--i(206263),	-- Scalewarden's Scepter	(currently not awarded)
 							},
 						}),
 						i(211175, {	-- Arsenal: Scalewarden's Mace
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
-								i(206254),	-- Scalewarden's Club
-								i(206262),	-- Scalewarden's Crusher
+								--i(206254),	-- Scalewarden's Club	(currently not awarded)
+								--i(206262),	-- Scalewarden's Crusher	(currently not awarded)
 								i(206261),	-- Scalewarden's Mace
 							},
 						}),
 						i(211177, {	-- Arsenal: Scalewarden's Shortsword
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
-								i(206265),	-- Scalewarden's Sabre
+								--i(206265),	-- Scalewarden's Sabre	(currently not awarded)
 								i(206248),	-- Scalewarden's Shortsword
-								i(206247),	-- Scalewarden's Spellblade
+								--i(206247),	-- Scalewarden's Spellblade	(currently not awarded)
 							},
 						}),
 						i(211169, {	-- Arsenal: Scalewarden's Greatsword
 							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
-								i(206253),	-- Scalewarden's Broadsword
+								--i(206253),	-- Scalewarden's Broadsword	(currently not awarded)
 								i(206252),	-- Scalewarden's Greatsword
 							},
 						}),
@@ -1447,7 +1447,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206820),	-- Scalewarden's Dagger
-								i(206830),	-- Scalewarden's Dirk
+								--i(206830),	-- Scalewarden's Dirk	(currently not awarded)
 							},
 						}),
 						i(211167, {	-- Arsenal: Scalewarden's Offhand
@@ -1459,7 +1459,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(211170, {	-- Arsenal: Scalewarden's Polearm
 							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
-								i(206258),	-- Scalewarden's Impaler
+								--i(206258),	-- Scalewarden's Impaler	(currently not awarded)
 								i(206259),	-- Scalewarden's Spear
 							},
 						}),
@@ -1473,7 +1473,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
 								i(206251),	-- Scalewarden's Battlestaff
-								i(206250),	-- Scalewarden's Spire
+								--i(206250),	-- Scalewarden's Spire	(currently not awarded)
 							},
 						}),
 						i(211166, {	-- Arsenal: Scalewarden's Wand
