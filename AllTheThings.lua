@@ -7164,7 +7164,7 @@ local RefreshMounts = function(newMountID)
 	end
 	UpdateRawIDs("spellID", newMounts);
 	if newMounts and #newMounts > 0 then
-		app.Audio:PlayRareFindSound();
+		app.Audio:PlayMountFanfare();
 		app:TakeScreenShot("Mounts");
 	end
 end
@@ -15590,7 +15590,7 @@ local function PendingCollectionCoroutine()
 
 		-- Check if there was a mount.
 		if allTypes[app.FilterConstants.MOUNTS] then
-			app.Audio:PlayRareFindSound();
+			app.Audio:PlayMountFanfare();
 		else
 			app.Audio:PlayFanfare();
 		end

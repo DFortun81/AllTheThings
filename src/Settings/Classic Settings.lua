@@ -146,6 +146,7 @@ local TooltipSettingsBase = {
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
 		["Celebrate"] = true,
+		["RareFind"] = true,
 		["Channel"] = "Master",
 		["Screenshot"] = false,
 		["DisplayInCombat"] = true,

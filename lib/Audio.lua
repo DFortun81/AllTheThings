@@ -79,8 +79,11 @@ local DefaultSoundPack = api:CreateSoundPack("Default", {
 		app.asset("fanfare5.ogg"),
 		app.asset("fanfare6.ogg"),
 	},
+	MOUNTFANFARE = {
+		app.asset("mountfanfare1.ogg"),
+	},
 	RAREFIND = {
-		app.asset("rarefind1.ogg"),
+		app.asset("rarefind1.wav"),
 	},
 	REMOVE = {
 		app.asset("remove1.ogg"),
@@ -115,6 +118,7 @@ local function PlayAudio(soundType, setting)
 					local soundFile = targetAudio[math.random(1, audioCount)];
 					if soundFile then
 						(type(soundFile) == "string" and PlaySoundFile or PlaySound)(soundFile, app.Settings:GetTooltipSetting("Channel"));
+						return true;
 					end
 				end
 			end
@@ -130,8 +134,13 @@ end
 function api:PlayFanfare()
 	PlayAudio("FANFARE", "Celebrate");
 end
+function api:PlayMountFanfare()
+	if not PlayAudio("MOUNTFANFARE", "Celebrate") then
+		PlayAudio("FANFARE", "Celebrate")
+	end
+end
 function api:PlayRareFindSound()
-	PlayAudio("RAREFIND", "Celebrate");
+	PlayAudio("RAREFIND", "RareFind");
 end
 function api:PlayRemoveSound()
 	PlayAudio("REMOVE", "Warn:Removed");

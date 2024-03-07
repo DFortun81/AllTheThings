@@ -71,6 +71,7 @@ if C_VignetteInfo then
 			local link = VignetteChatLinkFormat:format(app:Linkify(text, GetProgressColor(total == 0 and 1 or (prog / total)), "search:"..o.key..":"..o[o.key]), prog, total);
 			-- app.PrintDebug("link",link)
 			app.print(link);
+			app.Audio:PlayRareFindSound();
 		end
 		-- New keys assigned to the table indicate a new alert of the Vignette
 		-- Expects the 'type' of the host table to indicate the search field
@@ -121,6 +122,7 @@ if C_VignetteInfo then
 						local waypointLink = GetWaypointLink(guid);
 						if waypointLink then link = waypointLink .. " " .. link; end
 						app.print("Nearby:", link);
+						app.Audio:PlayRareFindSound();
 					end
 				end
 			end

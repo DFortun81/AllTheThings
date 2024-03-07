@@ -111,7 +111,7 @@ local function PendingCollectionCoroutine()
 
 		-- Check if there was a mount.
 		if allTypes[app.FilterConstants.MOUNTS] then
-			app.Audio:PlayRareFindSound();
+			app.Audio:PlayMountFanfare();
 		else
 			app.Audio:PlayFanfare();
 		end

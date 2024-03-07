@@ -174,6 +174,7 @@ local TooltipSettingsBase = {
 		["Auto:Sync"] = true,
 		["Auto:AH"] = false,
 		["Celebrate"] = true,
+		["RareFind"] = true,
 		["Screenshot"] = false,
 		["Channel"] = "Master",
 		["DisplayInCombat"] = true,
