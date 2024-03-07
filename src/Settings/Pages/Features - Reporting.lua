@@ -78,6 +78,23 @@ if C_VignetteInfo then
 	checkboxNearbyAutomaticallyPlot:SetATTTooltip(L.REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP)
 	checkboxNearbyAutomaticallyPlot:AlignBelow(checkboxReportNearby, 1)
 
+	local checkboxNearbyClearWaypoints = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Nearby:ClearWaypoints"))
+		if not (settings:GetTooltipSetting("Nearby:ReportContent") and settings:GetTooltipSetting("Nearby:PlotWaypoints")) then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:SetTooltipSetting("Nearby:ClearWaypoints", self:GetChecked())
+	end)
+	checkboxNearbyClearWaypoints:SetATTTooltip(L.REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP)
+	checkboxNearbyClearWaypoints:AlignBelow(checkboxNearbyAutomaticallyPlot, 1)
+
 	local checkboxNearbyIncludeCompleted = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Nearby:IncludeCompleted"))
@@ -94,7 +111,7 @@ if C_VignetteInfo then
 		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeCompleted:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP)
-	checkboxNearbyIncludeCompleted:AlignBelow(checkboxNearbyAutomaticallyPlot)
+	checkboxNearbyIncludeCompleted:AlignBelow(checkboxNearbyClearWaypoints, -1)
 
 	local checkboxNearbyIncludeUnknown = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX,
 	function(self)

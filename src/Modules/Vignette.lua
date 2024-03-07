@@ -6,6 +6,9 @@ app.ActiveVignettes = ActiveVignettes;
 
 -- This functionality is only available if the VignetteInfo api is available.
 if C_VignetteInfo then
+	-- locals
+	local L = app.L;
+	
 	-- Global locals
 	local rawset, tonumber, ipairs, pairs
 		= rawset, tonumber, ipairs, pairs
@@ -16,6 +19,7 @@ if C_VignetteInfo then
 	local C_VignetteInfo_GetVignettePosition = C_VignetteInfo.GetVignettePosition;
 
 	-- Helper Functions
+	local ActiveWaypointGUID;
 	local function GetWaypointLink(guid, text)
 		-- Generates a waypoint link with text (optional) inside the link should the vignette guid have a valid position.
 		if guid and C_VignetteInfo_GetVignettePosition then
@@ -24,6 +28,7 @@ if C_VignetteInfo then
 				local pos = C_VignetteInfo_GetVignettePosition(guid, mapID);
 				if pos then
 					if app.Settings:GetTooltipSetting("Nearby:PlotWaypoints") then
+						ActiveWaypointGUID = guid;
 						C_SuperTrack.SetSuperTrackedUserWaypoint(false);
 						C_Map.ClearUserWaypoint();
 						C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(mapID, pos.x, pos.y));
@@ -67,7 +72,7 @@ if C_VignetteInfo then
 		AddVignetteCache("objectID")
 
 		-- TODO: need to capture the ref object of the vignette and cache it for more thorough update. also link the raw coords of the vignette into the vignette group
-		local VignetteChatLinkFormat = "Nearby: %s (%d/%d)";
+		local VignetteChatLinkFormat = L.NEARBY .. " %s (%d/%d)";
 		local function PrintChatLink(o)
 			local text = o.text;
 			-- app.PrintDebug("Vignette Chat",o.hash,prog,total,text)
@@ -131,7 +136,7 @@ if C_VignetteInfo then
 						
 						local waypointLink = GetWaypointLink(info.vignetteGUID);
 						if waypointLink then link = waypointLink .. " " .. link; end
-						app.print("Nearby:", link);
+						app.print(L.NEARBY, link);
 						app.Audio:PlayRareFindSound();
 					end
 				end
@@ -162,6 +167,10 @@ if C_VignetteInfo then
 		if guid then
 			local vignetteInfo = CachedVignetteInfo[guid];
 			if vignetteInfo then
+				if ActiveWaypointGUID == guid and app.Settings:GetTooltipSetting("Nearby:ClearWaypoints") then
+					C_Map.ClearUserWaypoint();
+					ActiveWaypointGUID = nil;
+				end
 				CachedVignetteInfo[guid] = nil;
 				local searchType, id = vignetteInfo.SearchType, vignetteInfo.ID;
 				if searchType and id then
