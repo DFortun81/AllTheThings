@@ -93,8 +93,8 @@ if C_VignetteInfo then
 		local function NewAlerter(type)
 			return setmetatable({}, { __newindex = Alerter__newindex, __index = {type=type} });
 		end
-		ActiveVignettes.npc = NewAlerter("npcID"),
-		ActiveVignettes.object = NewAlerter("objectID"),
+		ActiveVignettes.npc = NewAlerter("npcID");
+		ActiveVignettes.object = NewAlerter("objectID");
 	else
 		-- Crieve's attempt at writing code his feable human mind can understand
 		-- that more or less does some of the things the above code does.
