@@ -5645,6 +5645,11 @@ end);
 		return text;
 	end
 	
+	function app:WaypointLink(mapID, x, y, text)
+		return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
+			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
+	end
+	
 	-- Stores some information for use by a report popup by id
 	local reports = {};
 	function app:SetupReportDialog(id, reportMessage, text)

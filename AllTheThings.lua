@@ -16269,6 +16269,10 @@ end
 		text = "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
 		return text;
 	end
+	function app:WaypointLink(mapID, x, y, text)
+		return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
+			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
+	end
 	-- Turns a bit of text into a chat-sendable link which other ATT users will attempt to understand
 	-- function app:ChatLink(text, operation)
 	-- 	text = "|Hgarrmission:ATT:"..operation.."|h["..text.."]|h";
