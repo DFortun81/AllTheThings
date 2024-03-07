@@ -105,7 +105,7 @@ if C_VignetteInfo then
 			__newindex = function(t, key, info)
 				rawset(t, key, info);
 				if info then
-					local guid = info.vignetteGUID;
+					local guid = info.objectGUID;
 					if guid and not ReportedVignettes[guid] then
 						ReportedVignettes[guid] = true;
 						
@@ -119,7 +119,7 @@ if C_VignetteInfo then
 							link = app:Linkify(info.name or info.ID, app.Colors.SourceIgnored, "search:" .. link);
 						end
 						
-						local waypointLink = GetWaypointLink(guid);
+						local waypointLink = GetWaypointLink(info.vignetteGUID);
 						if waypointLink then link = waypointLink .. " " .. link; end
 						app.print("Nearby:", link);
 						app.Audio:PlayRareFindSound();
