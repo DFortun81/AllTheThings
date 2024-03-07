@@ -146,7 +146,6 @@ local TooltipSettingsBase = {
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
 		["Celebrate"] = true,
-		["RareFind"] = true,
 		["Channel"] = "Master",
 		["Screenshot"] = false,
 		["DisplayInCombat"] = true,
@@ -165,9 +164,6 @@ local TooltipSettingsBase = {
 		["PlayDeathSound"] = false,
 		["Precision"] = 2,
 		["Progress"] = true,
-		["Report:Collected"] = true,
-		["Report:CompletedQuests"] = true,
-		["Report:UnsortedQuests"] = true,
 		["ShowIconOnly"] = false,
 		["Show:CraftedItems"] = false,
 		["Show:OtherCharacterQuests"] = false,
@@ -184,6 +180,18 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
 		["SocialProgress"] = true,
+		
+		-- Features: Reporting
+		["Report:Collected"] = true,
+		["Report:CompletedQuests"] = true,
+		["Report:UnsortedQuests"] = true,
+		
+		-- Nearby Content
+		["Nearby:ReportContent"] = true,
+		["Nearby:PlotWaypoints"] = false,
+		["Nearby:IncludeCompleted"] = true,
+		["Nearby:IncludeUnknown"] = true,
+		["RareFind"] = true,
 		
 		-- Information Types
 		["description"] = true,

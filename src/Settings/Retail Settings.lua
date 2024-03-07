@@ -174,7 +174,6 @@ local TooltipSettingsBase = {
 		["Auto:Sync"] = true,
 		["Auto:AH"] = false,
 		["Celebrate"] = true,
-		["RareFind"] = true,
 		["Screenshot"] = false,
 		["Channel"] = "Master",
 		["DisplayInCombat"] = true,
@@ -197,9 +196,6 @@ local TooltipSettingsBase = {
 		["Precision"] = 2,
 		["PlayDeathSound"] = false,
 		["Progress"] = true,
-		["Report:Collected"] = true,
-		["Report:CompletedQuests"] = true,
-		["Report:UnsortedQuests"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
 		["Show:Remaining"] = false,
@@ -221,6 +217,18 @@ local TooltipSettingsBase = {
 		["WorldQuestsList:Currencies"] = true,
 		["Updates:AdHoc"] = true,
 		["SocialProgress"] = true,
+		
+		-- Features: Reporting
+		["Report:Collected"] = true,
+		["Report:CompletedQuests"] = true,
+		["Report:UnsortedQuests"] = true,
+		
+		-- Nearby Content
+		["Nearby:ReportContent"] = true,
+		["Nearby:PlotWaypoints"] = false,
+		["Nearby:IncludeCompleted"] = true,
+		["Nearby:IncludeUnknown"] = true,
+		["RareFind"] = true,
 		
 		-- Information Types
 		["description"] = true,

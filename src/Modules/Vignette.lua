@@ -22,7 +22,15 @@ if C_VignetteInfo then
 			local mapID = app.CurrentMapID;
 			if mapID then
 				local pos = C_VignetteInfo_GetVignettePosition(guid, mapID);
-				if pos then return app:WaypointLink(mapID, pos.x, pos.y, text); end
+				if pos then
+					if app.Settings:GetTooltipSetting("Nearby:PlotWaypoints") then
+						C_SuperTrack.SetSuperTrackedUserWaypoint(false);
+						C_Map.ClearUserWaypoint();
+						C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(mapID, pos.x, pos.y));
+						C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+					end
+					return app:WaypointLink(mapID, pos.x, pos.y, text);
+				end
 			end
 		end
 	end
@@ -104,19 +112,21 @@ if C_VignetteInfo then
 		local AlertMeta = {
 			__newindex = function(t, key, info)
 				rawset(t, key, info);
-				if info then
+				if info and app.Settings:GetTooltipSetting("Nearby:ReportContent") then
 					local guid = info.objectGUID;
 					if guid and not ReportedVignettes[guid] then
 						ReportedVignettes[guid] = true;
 						
 						local link = info.SearchType .. ":" .. info.ID;
 						local group = app.GetCachedSearchResults(app.SearchForLink, link);
-						--if app.IsComplete(group) then return; end	-- TODO: Make this configurable.
+						if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and app.IsComplete(group) then return; end
 						local progressText = group.progressText or GetProgressColorText(group.progress or 0, group.total or 0);
 						if progressText then
 							link = app:Linkify(info.name or info.ID, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText;
-						else
+						elseif app.Settings:GetTooltipSetting("Nearby:IncludeUnknown") then
 							link = app:Linkify(info.name or info.ID, app.Colors.SourceIgnored, "search:" .. link);
+						else
+							return;
 						end
 						
 						local waypointLink = GetWaypointLink(info.vignetteGUID);
