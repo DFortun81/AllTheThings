@@ -1508,6 +1508,9 @@ root(ROOTS.Zones, {
 						["qg"] = 23773,	-- Chef Kettleblack
 						["coord"] = { 31.1, 40.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(34125),	-- Shoveltusk Soup
+						},
 					}),
 					q(11256, {	-- Skorn Must Fall!
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },

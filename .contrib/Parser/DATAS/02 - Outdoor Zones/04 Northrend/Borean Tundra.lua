@@ -1794,8 +1794,11 @@ root(ROOTS.Zones, {
 					}),
 					q(11564, {	-- Succulent Orca Stew
 						["qg"] = 25211,	-- Cleaver Bmurglbrm
-						["coord"] = { 42.0, 13.1, BOREAN_TUNDRA },
 						["sourceQuest"] = 11562,	-- I'm Being Blackmailed By My Cleaner
+						["coord"] = { 42.0, 13.1, BOREAN_TUNDRA },
+						["groups"] = {
+							i(39691),	-- Succulent Orca Stew
+						},
 					}),
 					q(11644, {	-- Super Strong Metal Plates!
 						["qg"] = 25475,	-- Mobu

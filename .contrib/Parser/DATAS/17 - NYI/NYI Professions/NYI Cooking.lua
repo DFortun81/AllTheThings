@@ -7,13 +7,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.CLASSIC, {
 				i(23683),	-- Crystal Flake Throat Lozenge
 			}),
-			expansion(EXPANSION.WRATH, {
-				-- 3.0.2
-				expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
-					i(34125),	-- Shoveltusk Soup
-					i(39691),	-- Succulent Orca Stew
-				})),
-			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.4.0
 				expansion(EXPANSION.MOP, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
