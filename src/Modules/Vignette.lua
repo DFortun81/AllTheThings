@@ -180,6 +180,34 @@ local function UpdateVignette(guid)
 					-- 	app.DirectGroupUpdate(vignetteGroup);
 					-- end
 				end
+			--[[
+			else
+				local isDifferent = false;
+				local oldVignetteInfo = CachedVignetteInfo[guid];
+				for key,value in pairs(vignetteInfo) do
+					local oldValue = oldVignetteInfo[key];
+					if oldValue ~= value then
+						-- It changed, but how so?
+						if type(value) == "table" then
+							if type(oldValue) == "table" then
+								-- Oh boy. Comparing a table. NICE.
+								-- Let's skip this for now...
+							else
+								-- Simple, we can print this.
+								print(" ", key, "added a table value");
+								isDifferent = true;
+							end
+						else
+							-- Simple, we can print this.
+							print(" ", key, oldValue, " -> ", value);
+							isDifferent = true;
+						end
+					end
+				end
+				if isDifferent then
+					print("Vignette info is different!!");
+				end
+			]]--
 			end
 		else
 			ClearVignette(guid);
