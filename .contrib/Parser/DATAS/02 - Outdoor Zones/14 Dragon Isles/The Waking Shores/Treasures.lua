@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(379296, {	-- Broken Banding
 				["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
+				["description"] = "Found on the right foot of the statue.",
 				["g"] = {
 					i(198475),	-- Broken Banding
 				},
@@ -50,6 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(380518, {	-- Dislodged Dragoneye
 				["coord"] = { 60.5, 57.8, THE_WAKING_SHORES },
+				["description"] = "Behind a pile of stones underneath the dragon statue.",
 				["g"] = {
 					i(198626),	-- Dislodged Dragoneye
 				},
@@ -69,6 +71,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381355, {	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
+				["description"] = "Underneath the dragon statue.",
 				["g"] = {
 					i(199841),	-- Finely Carved Wing
 				},
@@ -192,6 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(380430, {	-- Tail Fragment
 				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
+				["description"] = "Underneath the tail of the dragon statue.",
 				["g"] = {
 					i(198543),	-- Tail Fragment
 				},

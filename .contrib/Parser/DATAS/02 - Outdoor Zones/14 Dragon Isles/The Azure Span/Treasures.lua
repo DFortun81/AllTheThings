@@ -12,12 +12,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381362, {	-- Chunk of Sculpture
 				["coord"] = { 60.1, 60.1, THE_AZURE_SPAN },
+				["description"] = "Behind the dragon statue next to the mountain.",
 				["g"] = {
 					i(199895),	-- Chunk of Sculpture
 				},
 			}),
 			o(381356, {	-- Coldwashed Dragonclaw
 				["coord"] = { 47.1, 38.9, THE_AZURE_SPAN },
+				["description"] = "Underwater.",
 				["g"] = {
 					i(199843),	-- Coldwashed Dragonclaw
 				},
@@ -119,6 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381353, {	-- Stone Dragontooth
 				["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
+				["description"] = "Next to the dragon statue on the ground.",
 				["g"] = {
 					i(199842),	-- Stone Dragontooth
 				},
@@ -154,6 +157,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381354, {	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
+				["description"] = "Underneath the back left foot of the dragon statue.",
 				["g"] = {
 					i(199840),	-- Wrapped Gold Band
 				},

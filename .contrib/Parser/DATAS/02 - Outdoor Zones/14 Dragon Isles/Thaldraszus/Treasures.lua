@@ -36,12 +36,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(380429, {	-- Golden Claw
 				["coord"] = { 38.8, 45.01, THALDRASZUS },
+				["description"] = "Underneath the dragon statue.",
 				["g"] = {
 					i(198540),	-- Golden Claw
 				},
 			}),
 			o(381361, {	-- Precious Stone Fragment
 				["coord"] = { 57.1, 64.6, THALDRASZUS },
+				["description"] = "Underneath the right foot of the titan statue.",
 				["g"] = {
 					i(199893),	-- Precious Stone Fragment
 				},
