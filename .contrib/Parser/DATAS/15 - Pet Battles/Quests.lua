@@ -1321,63 +1321,64 @@ root(ROOTS.PetBattles, petbattle({
 			}),
 		}),
 		expansion(EXPANSION.WOD, {
+			-- Maybe rewards header for those 6 npc quests to show polished pet charms
 			q(37203, {	-- Ashlei
 				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				["provider"] = { "n", 87124 },	-- Ashlei
+				["_drop"] = { "g" },	-- Drops Polished Pet Charm
 				["g"] = {
+					-- #if BEFORE 10.2.5
 					SHINY_PET_CHARM,
-					-- #if AFTER 10.2.5
-					i(163036),	-- Polished Pet Charm
 					-- #endif
 				},
 			}),
 			q(37201, {	-- Cymre Brightblade
 				["coord"] = { 51.1, 70.6, GORGROND },
 				["provider"] = { "n", 83837 },	-- Cymre Brightblade
+				["_drop"] = { "g" },	-- Drops Polished Pet Charm
 				["g"] = {
+					-- #if BEFORE 10.2.5
 					SHINY_PET_CHARM,
-					-- #if AFTER 10.2.5
-					i(163036),	-- Polished Pet Charm
 					-- #endif
 				},
 			}),
 			q(37205, {	-- Gargra
 				["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
 				["provider"] = { "n", 87122 },	-- Gargra
+				["_drop"] = { "g" },	-- Drops Polished Pet Charm
 				["g"] = {
+					-- #if BEFORE 10.2.5
 					SHINY_PET_CHARM,
-					-- #if AFTER 10.2.5
-					i(163036),	-- Polished Pet Charm
 					-- #endif
 				},
 			}),
 			q(37208, {	-- Taralune
 				["coord"] = { 49.0, 80.3, TALADOR },
 				["provider"] = { "n", 87125 },	-- Taralune
+				["_drop"] = { "g" },	-- Drops Polished Pet Charm
 				["g"] = {
+					-- #if BEFORE 10.2.5
 					SHINY_PET_CHARM,
-					-- #if AFTER 10.2.5
-					i(163036),	-- Polished Pet Charm
 					-- #endif
 				},
 			}),
 			q(37206, {	-- Tarr the Terrible
 				["provider"] = { "n", 87110 },	-- Tar the Terrible
 				["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
+				["_drop"] = { "g" },	-- Drops Polished Pet Charm
 				["g"] = {
+					-- #if BEFORE 10.2.5
 					SHINY_PET_CHARM,
-					-- #if AFTER 10.2.5
-					i(163036),	-- Polished Pet Charm
 					-- #endif
 				},
 			}),
 			q(37207, {	-- Vesharr
 				["provider"] = { "n", 87123 },	-- Vesharr
 				["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
+				["_drop"] = { "g" },	-- Drops Polished Pet Charm
 				["g"] = {
+					-- #if BEFORE 10.2.5
 					SHINY_PET_CHARM,
-					-- #if AFTER 10.2.5
-					i(163036),	-- Polished Pet Charm
 					-- #endif
 				},
 			}),
