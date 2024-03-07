@@ -7357,7 +7357,7 @@ local npcFields = {
 		end
 	end,
 	["indicatorIcon"] = function(t)
-		if app.CurrentVignettes["npcID"][t.npcID] then
+		if app.ActiveVignettes.npc[t.npcID] then
 			return app.asset("Interface_Ping");
 		end
 	end,
@@ -16087,8 +16087,6 @@ app.InitDataCoroutine = function()
 
 	app:RegisterEvent("HEIRLOOMS_UPDATED");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
-	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
-	app:RegisterEvent("VIGNETTES_UPDATED");
 
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
