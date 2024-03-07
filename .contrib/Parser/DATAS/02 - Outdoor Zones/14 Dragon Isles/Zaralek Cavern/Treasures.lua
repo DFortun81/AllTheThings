@@ -229,19 +229,77 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				})),
 			}),
-			o_repeated({	-- Smelly Trash Pile
-				-- Shared
-				["sym"] = {{"select","itemID",
-					202275,	-- Renewed Proto-Drake: Plated Jaw (DM!)
-				}},
+			o(401845, {	-- Smelly Disturbed Dirt
+				["coords"] = {
+					{ 25.7, 43.6, ZARALEK_CAVERN },
+					{ 28.2, 53.7, ZARALEK_CAVERN },
+					{ 30.2, 40.1, ZARALEK_CAVERN },
+					{ 32.5, 53.0, ZARALEK_CAVERN },
+					{ 35.9, 45.2, ZARALEK_CAVERN },
+					{ 38.8, 84.9, ZARALEK_CAVERN },
+					{ 39.1, 62.0, ZARALEK_CAVERN },
+					{ 41.1, 35.0, ZARALEK_CAVERN },
+					{ 41.3, 55.9, ZARALEK_CAVERN },
+					{ 42.8, 78.1, ZARALEK_CAVERN },
+					{ 44.1, 41.5, ZARALEK_CAVERN },
+					{ 44.4, 35.1, ZARALEK_CAVERN },
+					{ 45.0, 15.7, ZARALEK_CAVERN },
+					{ 45.3, 70.2, ZARALEK_CAVERN },
+					{ 45.7, 52.6, ZARALEK_CAVERN },
+					{ 45.9, 22.4, ZARALEK_CAVERN },
+					{ 45.9, 22.5, ZARALEK_CAVERN },
+					{ 45.9, 87.3, ZARALEK_CAVERN },
+					{ 46.6, 80.5, ZARALEK_CAVERN },
+					{ 47.0, 26.7, ZARALEK_CAVERN },
+					{ 47.3, 62.0, ZARALEK_CAVERN },
+					{ 47.9, 48.8, ZARALEK_CAVERN },
+					{ 49.1, 40.9, ZARALEK_CAVERN },
+					{ 51.3, 24.3, ZARALEK_CAVERN },
+					{ 52.7, 65.4, ZARALEK_CAVERN },
+					{ 52.8, 32.3, ZARALEK_CAVERN },
+					{ 52.9, 23.4, ZARALEK_CAVERN },
+					{ 52.9, 23.5, ZARALEK_CAVERN },
+					{ 53.1, 47.6, ZARALEK_CAVERN },
+					{ 54.1, 77.6, ZARALEK_CAVERN },
+					{ 54.4, 22.9, ZARALEK_CAVERN },
+					{ 54.5, 22.9, ZARALEK_CAVERN },
+					{ 56.9, 31.0, ZARALEK_CAVERN },
+					{ 57.5, 70.4, ZARALEK_CAVERN },
+					{ 57.5, 70.5, ZARALEK_CAVERN },
+					{ 58.7, 43.7, ZARALEK_CAVERN },
+					{ 60.0, 63.0, ZARALEK_CAVERN },
+					{ 62.5, 42.0, ZARALEK_CAVERN },
+					{ 62.9, 69.9, ZARALEK_CAVERN },
+					{ 65.2, 55.3, ZARALEK_CAVERN },
+				},
+				["cost"] = {{"i",191304,1}},	-- Sturdy Expedition Shovel
 				["g"] = {
-					-- Contains
-					i(203313),	-- Winding Slitherdrake: Spiked Chin (DM!)
-					-- Objects
-					o(401844, {	-- Smelly Trash Pile
+					o(401846, {	-- Smelly Treasure Chest
 						["isRepeatable"] = true,
-						-- Dont link coords. Its 2 many
+						["sym"] = {
+							{"select","mapID",ZARALEK_CAVERN},
+							{"find","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Obtained Weapons/Armor confirmed by Wowhead/Runaway
+							{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (DM!)
+						},
 					}),
+				},
+			}),
+			o(401844, {	-- Smelly Trash Pile
+				["description"] = "These spawn basically everywhere in the zone, 120+ coords not listed :)",
+				["isRepeatable"] = true,
+				-- Dont link coords. Its 2 many
+				-- We need at least 1 coord to show object tooltips, otherwise the logic assumes it's a different object/zone...
+				["coords"] = {
+					{ 48.3, 52.0, ZARALEK_CAVERN },
+				},
+				["sym"] = {
+					{"select","mapID",ZARALEK_CAVERN},
+					{"find","headerID",COMMON_BOSS_DROPS},
+					{"find","headerID",BACK},{"pop"},		-- Only Cloak/Ring drop from these it appears
+					{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (DM!)
+				},
+				["g"] = {
+					i(203313),	-- Winding Slitherdrake: Spiked Chin (DM!)
 				},
 			}),
 			o_repeated({	-- Stolen Stash
