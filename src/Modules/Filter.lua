@@ -88,59 +88,54 @@ local function DefineToggleFilter(name, filterGroup, filter)
 end
 
 -- Whether the group has a binding designation, which means it basically cannot be moved to another Character
-local function FilterBind(group)	-- IsBoP
+local function FilterBind(group)
 	-- 1 = BoP, 4 = Quest Item... probably don't need that?
 	return group.b == 1;-- or group.b == 4;
 end
 api.Filters.Bind = FilterBind;
 -- Used in a lot of places, need to keep for now
 app.IsBoP = FilterBind;
-local function FilterInGame(item)	-- ItemIsInGame
+local function FilterInGame(item)
 	return not item.u or item.u > 2;
 end
 api.Filters.InGame = FilterInGame;
 -- manually track InGame in CurrentCharacterFilters
 RawCharacterFilters.InGame = api.Filters.InGame
 
--- Unobtainable 	-- FilterItemClass_UnobtainableItem
+-- Unobtainable
 DefineToggleFilter("Unobtainable", AccountFilters,
 function(item)
 	return not item.u or SettingsUnobtainable[item.u];
 end);
 
--- PvP	-- FilterItemClass_PvP
+-- PvP
 DefineToggleFilter("PvP", AccountFilters,
 function(item)
-	if item.pvp then
-		return false;
-	else
-		return true;
-	end
+	return not item.pvp or false
 end);
 
 -- PetBattles
 DefineToggleFilter("PetBattles", AccountFilters,
 function(item)
-	if item.pb then
-		return false;
-	else
-		return true;
-	end
+	return not item.pb or false
 end);
 
 -- UnavailablePersonalLoot
 DefineToggleFilter("UnavailablePersonalLoot", AccountFilters,
 function(item)
 
-	if not item.sourceID
-		or not item.sourceParent
-		or not item.sourceParent.questID
-		or not item.sourceParent.key == "questID" then
+	if not item.sourceID then
+		return true
+	end
+
+	local sp = item.sourceParent
+	if not sp
+	or not sp.questID
+	or not sp.key == "questID" then
 		return true;
 	end
 
 	local specs = app.GetFixedItemSpecInfo(item.itemID);
-
 	return specs and #specs > 0;
 end);
 
@@ -206,7 +201,7 @@ api.Set.ItemUnbound = function(active, nested)
 end
 api.Get.ItemUnbound = function() return SettingsFilterItemUnbound == api.Filters.ItemUnbound end
 
--- FilterID -- FilterItemClass_RequireItemFilter
+-- FilterID
 DefineToggleFilter("FilterID", CharacterFilters,
 function(item)
 	local f = item.f;
@@ -224,7 +219,7 @@ function(item)
 	end
 end);
 
--- Bound -- FilterItemClass_RequireBinding
+-- Bound
 DefineToggleFilter("Bound", CharacterFilters,
 function(item)
 	return not item.itemID or item.b == 1;
@@ -232,7 +227,7 @@ end);
 -- binding really doesn't matter as to whether current character can filter to it
 RawCharacterFilters.Bound = nil
 
--- RequireSkill -- FilterItemClass_RequiredSkill
+-- RequireSkill
 DefineToggleFilter("RequireSkill", CharacterFilters,
 app.IsRetail and function(item)
 	local requireSkill = item.requireSkill;
@@ -251,7 +246,7 @@ end or function(item)
 	end
 end);
 
--- Class -- FilterItemClass_RequireClasses
+-- Class
 DefineToggleFilter("Class", CharacterFilters,
 function(item)
 	return not item.nmc;
@@ -309,7 +304,7 @@ end
 -- manually track Race in CurrentCharacterFilters
 RawCharacterFilters.Race = api.Filters.Race;
 
--- CustomCollect -- FilterItemClass_CustomCollect
+-- CustomCollect
 DefineToggleFilter("CustomCollect", CharacterFilters,
 function(item)
 	local customCollect = item.customCollect;
@@ -323,7 +318,7 @@ function(item)
 	return true;
 end);
 
--- Level -- FilterGroupsByLevel
+-- Level
 DefineToggleFilter("Level", CharacterFilters,
 function(item)
 	-- after 9.0, transition to a req lvl range, either min, or min + max
@@ -352,7 +347,7 @@ end);
 -- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
 RawCharacterFilters.Level = nil;
 
--- SkillLevel -- FilterGroupsBySkillLevel
+-- SkillLevel
 app.MaximumSkillLevel = 99999;
 DefineToggleFilter("SkillLevel", CharacterFilters,
 function(group)
@@ -367,7 +362,7 @@ RawCharacterFilters.SkillLevel = nil;
 
 -- Trackable
 -- Whether this group can be 'tracked'
-local function FilterTrackable(group)	-- FilterItemTrackable
+local function FilterTrackable(group)
 	return group.trackable;
 end
 api.Filters.Trackable = FilterTrackable
@@ -387,7 +382,7 @@ api.Get.Visible = function() return app.VisibilityFilter == api.Filters.Visible 
 
 -- Completion
 -- Whether the group is not 'complete'
-local function FilterCompletion(group)	-- FilterGroupsByCompletion
+local function FilterCompletion(group)
 	local total = group.total;
 	return total and (group.progress or 0) < total;
 end
@@ -412,47 +407,17 @@ local function SettingsCharacterFilters(o)
 end
 
 -- Represents filters which should be applied during Updates to groups
-local function SettingsFilters(item)	-- FilterItemClass
-	-- check Account trait filters
-	if SettingsAccountFilters(item)
-		-- and SettingsFilterPvP(item)
-		-- and SettingsFilterPetBattles(item)
-		-- and SettingsFilterUnobtainable(item)
-		-- and SettingsFilterMinReputation(item)
-		-- and SettingsFilterEvent(item)
-		then
+local function SettingsFilters(item)
+	if SettingsAccountFilters(item) then
 		-- BoE can skip Character trait filters
 		if SettingsFilterItemUnbound(item) then return true; end
-		-- check Character trait filters
 		return SettingsCharacterFilters(item)
-			-- and SettingsFilterBound(item)
-			-- and SettingsFilterClass(item)
-			-- and SettingsFilterRace(item)
-			-- and SettingsFilterFilterID(item)
-			-- and SettingsFilterRequireSkill(item)
-			-- and SettingsFilterCustomCollect(item)
-			-- and SettingsFilterLevel(item);
 	end
 end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
-local function SettingsFilters_IgnoreBoEFilter(item)	-- FilterItemClass_IgnoreBoEFilter
-	-- check Account trait filters
-	if SettingsAccountFilters(item)
-		-- and SettingsFilterPvP(item)
-		-- and SettingsFilterPetBattles(item)
-		-- and SettingsFilterUnobtainable(item)
-		-- and SettingsFilterMinReputation(item)
-		-- and SettingsFilterEvent(item)
-		then
-		-- check Character trait filters
+local function SettingsFilters_IgnoreBoEFilter(item)
+	if SettingsAccountFilters(item) then
 		return SettingsCharacterFilters(item)
-			-- and SettingsFilterBound(item)
-			-- and SettingsFilterClass(item)
-			-- and SettingsFilterRace(item)
-			-- and SettingsFilterFilterID(item)
-			-- and SettingsFilterRequireSkill(item)
-			-- and SettingsFilterCustomCollect(item)
-			-- and SettingsFilterLevel(item);
 	end
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
