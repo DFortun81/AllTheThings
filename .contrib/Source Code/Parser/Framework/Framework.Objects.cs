@@ -159,7 +159,6 @@ namespace ATT
                 Quest = 104,
                 Achievement = 105,
                 Holiday = 106,
-                Vignette = 107,
                 MusicRoll = 108,
                 Heirloom = 109,
                 Title = 110,

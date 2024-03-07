@@ -23,39 +23,60 @@ root(ROOTS.Zones, {
 						["crs"] = { 109161 },    -- Holk the Wanderer
 					}),
 				})),
-				v(40413,  {	-- "Sure-Shot" Arnie, Dargok Thunderuin & Ryael Dawndrifter (Amateur Hunters)
-					["description"] = "There are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
+				n(createHeader({	-- Amateur Hunters
+					readable = "Amateur Hunters",
+					icon = 626000,
+					text = {
+						en = "Amateur Hunters",
+						es = "Cazadores Aficionados",
+						de = "Amateurjäger",
+						fr = "Chasseurs Amateurs",
+						it = "Cacciatori Dilettanti",
+						pt = "Caçadores Amadores",
+						ru = "Охотники-любители",
+						ko = "아마추어 사냥꾼",
+						cn = "业余猎人",
+					},
+					description = {
+						en = "Three hunters have surrounded Mara Swiftmane. Engage them in combat, and a Battered Chest will spawn near Mara Swiftmane. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
+						es = "Tres cazadores han rodeado a Mara Swiftmane. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Swiftmane. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre Maltratado.",
+						de = "Drei Jäger haben Mara Swiftmane umzingelt. Wenn Sie sie in den Kampf verwickeln, wird in der Nähe von Mara Swiftmane eine zerschlagene Truhe erscheinen. Sobald der Kampf vorbei ist, wird Mara sich bei Ihnen bedanken und Sie mit der ramponierten Truhe zurücklassen.",
+						fr = "Trois chasseurs ont encerclé Mara Swiftmane. Engagez-les au combat et un coffre battu apparaîtra près de Mara Swiftmane. Une fois la bataille terminée, Mara vous remerciera et vous laissera avec le coffre battu.",
+						it = "Tre cacciatori hanno circondato Mara Mantoveloce. Coinvolgili in combattimento e un forziere malconcio verrà generato vicino a Mara Swiftmane. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il baule malconcio.",
+						pt = "Três caçadores cercaram Mara Swiftmane. Envolva-os em combate e um baú maltratado aparecerá perto de Mara Swiftmane. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Maltratado.",
+						ru = "Трое охотников окружили Мару Быстрогривую. Вступите с ними в бой, и рядом с Марой Быстрогривой появится потрепанный сундук. Как только битва закончится, Мара поблагодарит вас и оставит с потрепанным сундуком.",
+						ko = "세 명의 사냥꾼이 마라 스위프트메인을 둘러싸고 있습니다. 전투에 참여하면 마라 스위프트메인 근처에 낡은 상자가 생성됩니다. 전투가 끝나면 마라는 감사 인사를 전하고 낡은 상자를 남겨줄 것입니다.",
+						cn = "三名猎人包围了玛拉·斯威夫迈恩。与他们交战，玛拉·迅鬃附近会生成一个破烂的宝箱。战斗结束后，玛拉会感谢你，并给你留下破损的宝箱。",
+					},
+				}), {
+					["questID"] = 40413,	-- Amateur Hunters
 					["coord"] = { 43.1, 47.9, HIGHMOUNTAIN },
 					["crs"] = {
+						100231,	-- Dargok Thunderuin <Amateur Hunter>
 						100232,	-- Ryael Dawndrifter <Amateur Hunter>
 						100230,	-- "Sure-Shot" Arnie <Amateur Hunter>
-						100231,	-- Dargok Thunderuin <Amateur Hunter>
+						100238,	-- Mara Swiftmane
 					},
 					["g"] = {
 						o(245479, {	-- Battered Chest
-							["displayID"] = 65118,
-							["g"] = {
-								i(131781),	-- Plate Hiking Boots
-							},
-						}),
-					},
-				}),
-				v(39784,  {	-- Beastmaster Pao'lek & Arru
-					["description"] = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
-					["coord"] = { 48.6, 50.0, HIGHMOUNTAIN },
-					["crs"] = {
-						97215,	-- Beastmaster Pao'lek
-						97220,	-- Arru <The Terror>
-					},
-					["g"] = {
-						o(244473, {	-- Thunder Totem Stolen Goods (No Model)
-							i(131756),	-- Fletcher's Nimble Grips
+							i(131781),	-- Plate Hiking Boots
 						}),
 					},
 				}),
 				n(104481,  {	-- Ala'washte
 					["questID"] = 45514,
 					["coord"] = { 28.4, 53.8, HIGHMOUNTAIN },
+				}),
+				n(97215,  {	-- Beastmaster Pao'lek
+					["questID"] = 39784,	-- Beastmaster Pao'lek
+					["description"] = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
+					["coord"] = { 48.6, 50.0, HIGHMOUNTAIN },
+					["crs"] = { 97220 },	-- Arru <The Terror>
+					["g"] = {
+						o(244473, {	-- Thunder Totem Stolen Goods
+							i(131756),	-- Fletcher's Nimble Grips
+						}),
+					},
 				}),
 				n(98299,  {	-- Bodash the Hoarder
 					["questID"] = 40084,
@@ -187,7 +208,21 @@ root(ROOTS.Zones, {
 						i(131793),	-- Oubdob's Smashin' Sweatband
 					},
 				}),
-				v(40423,  {	-- Puck (Unethical Adventurers)
+				n(97102,  {	-- Ram'Pag <The Treasure Worm>
+					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
+					["questID"] = 39766,
+					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
+				}),
+				n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
+					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
+					["questID"] = 39866,
+					["coord"] = { 54.5, 40.5, HIGHMOUNTAIN },
+					["g"] = {
+						i(131792),	-- Harefoot Pinnacle Wrap
+					},
+				}),
+				o(240353, {	-- Seemingly Unguarded Treasure
+					["questID"] = 40423,
 					["description"] = "Loot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure.",
 					["coord"] = { 52.3, 58.5, HIGHMOUNTAIN },
 					["crs"] = {
@@ -205,17 +240,11 @@ root(ROOTS.Zones, {
 						i(131767),	-- Xander's Gauntlets
 					},
 				}),
-				n(97102,  {	-- Ram'Pag <The Treasure Worm>
-					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
-					["questID"] = 39766,
-					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
-				}),
-				n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
-					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
-					["questID"] = 39866,
-					["coord"] = { 54.5, 40.5, HIGHMOUNTAIN },
+				n(101077, {	-- Sekhan
+					["questID"] = 40681,
+					["coord"] = { 45.5, 55.2, HIGHMOUNTAIN },
 					["g"] = {
-						i(131792),	-- Harefoot Pinnacle Wrap
+						i(131730),	-- Darksaber Leather Belt
 					},
 				}),
 				n(97093,  {	-- Shara Felbreath
@@ -223,13 +252,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 51.0, 25.8, HIGHMOUNTAIN },
 					["g"] = {
 						i(131791),	-- Felbreath Bloodsinger Robe
-					},
-				}),
-				n(101077, {	-- Sekhan
-					["questID"] = 40681,
-					["coord"] = { 45.5, 55.2, HIGHMOUNTAIN },
-					["g"] = {
-						i(131730),	-- Darksaber Leather Belt
 					},
 				}),
 				n(95872,  {	-- Skullhat

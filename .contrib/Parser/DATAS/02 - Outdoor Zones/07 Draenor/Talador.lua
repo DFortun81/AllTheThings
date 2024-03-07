@@ -2001,6 +2001,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(85572, {	-- Grrbrrgle
+						["provider"] = { "o", 235673 },	-- A Restless Crate
 						["description"] = "Click on the Restless Crate.",
 						["questID"] = 36919,
 						["coord"] = { 22.2, 74.2, TALADOR },

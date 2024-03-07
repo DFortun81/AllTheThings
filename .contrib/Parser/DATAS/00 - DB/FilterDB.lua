@@ -460,17 +460,6 @@ for filterID,filterData in pairs({
 			en = [[~CALENDAR_FILTER_WEEKLY_HOLIDAYS]],
 		},
 	},
-	[107] = {
-		readable = "Vignettes",
-		icon = "Interface/Icons/Inv_misc_head_human_01",
-		constant = "VIGNETTES",
-		text = {
-			en = "Vignettes",
-			fr = "Vignettes",
-			ru = "Особые",
-			cn = "事件",
-		},
-	},
 	[108] = {
 		readable = "Music Rolls",
 		icon = "Interface/Icons/Inv_misc_punchcards_yellow",

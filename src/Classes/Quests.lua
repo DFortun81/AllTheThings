@@ -1620,40 +1620,6 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		return 0;
 	end
 });
-app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
-	questID = function(t)
-		return t.vignetteID;
-	end,
-	name = function(t)
-		local crs = t.crs;
-		if crs then
-			local names, name, retry = {};
-			for i,creatureID in ipairs(crs) do
-				name = app.NPCNameFromID[creatureID];
-				if name then
-					tinsert(names, name);
-				else
-					retry = true;
-				end
-			end
-			if retry then return; end
-
-			local text = "";
-			app.Sort(names, app.SortDefaults.Strings);
-			for i,name in ipairs(names) do
-				if i > 1 then text = text .. ", "; end
-				text = text .. name;
-			end
-			t.name = text;
-			return text;
-		else
-			return "Invalid Vignette #" .. t.vignetteID;
-		end
-	end,
-	icon = function(t)
-		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
-	end,
-});
 app.AddQuestObjectives = function(info, reference)
 	local objectified = false;
 	local questLogIndex = GetQuestLogIndexByID(reference.questID);

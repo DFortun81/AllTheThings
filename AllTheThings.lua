@@ -991,12 +991,7 @@ local function CreateObject(t, rootOnly)
 		elseif t.npcID or t.creatureID then
 			t = app.CreateNPC(t.npcID or t.creatureID, t);
 		elseif t.questID then
-			if t.isVignette then
-				t = app.CreateVignette(t.questID, t);
-			else
-				t = app.CreateQuest(t.questID, t);
-			end
-
+			t = app.CreateQuest(t.questID, t);
 		-- Non-Thing groups
 		elseif t.classID then
 			t = app.CreateCharacterClass(t.classID, t);

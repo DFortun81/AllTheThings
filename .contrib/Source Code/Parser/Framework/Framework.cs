@@ -1388,7 +1388,6 @@ namespace ATT
                 case "title":
                 case "titleID":
                 case "text":
-                case "vignetteID":
                 case "visualID":
                 case "zone-quest":
                 case "zone-artIDs":

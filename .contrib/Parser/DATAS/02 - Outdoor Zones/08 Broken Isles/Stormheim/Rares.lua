@@ -41,40 +41,12 @@ root(ROOTS.Zones, {
 						i(129123),	-- Brvet's Hauberk of Command
 					},
 				}),
-				v(38627,  {	-- Champion Elodie (Worgen Stalkers — Horde Only)
-					["description"] = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
-					["coord"] = { 44.0, 22.9, STORMHEIM },
-					["races"] = HORDE_ONLY,
-					["crs"] = {
-						92604,	-- Champion Elodie
-						92609,	-- Tracker Jack
-						92611,	-- Ambusher Daggerfang
-						92613,	-- Priestess Liza
-					},
-					["groups"] = {
-						i(129264),	-- Patrol Captain's Gauntlets
-					},
-				}),
 				n(94313, {	-- Daniel "Boomer" Vorick
 					["questID"] = 39048,
 					["coord"] = { 58.2, 75.5, STORMHEIM },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(129144),	-- Boomer's Utility Belt
-					},
-				}),
-				v(38630,  {	-- Deathguard Adams (Horde Kill Squad — Alliance Only)
-					["description"] = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Horde Kill Squad.",
-					["coord"] = { 44.2, 22.8, STORMHEIM },
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
-						92626,	-- Deathguard Adams
-						92631,	-- Dark Ranger Jess
-						92633,	-- Assassin Huwe
-						92634,	-- Apothecary Perez
-					},
-					["groups"] = {
-						i(129266),	-- Raider Captain's Gauntlets
 					},
 				}),
 				n(94347, {	-- Dread-Rider Cortis
@@ -99,6 +71,45 @@ root(ROOTS.Zones, {
 						i(129206),	-- Andvari's Gift
 					},
 				}),
+				n(createHeader({	-- Forsaken Deathsquad
+					readable = "Forsaken Deathsquad",
+					icon = 463451,
+					text = {
+						en = "Forsaken Deathsquad",
+						es = "Escuadrón de la Muerte Abandonado",
+						de = "Todesschwadron der Verlassenen",
+						fr = "Escadron de la Mort Abandonné",
+						it = "Squadra della Morte Abbandonata",
+						pt = "Esquadrão da Morte Abandonado",
+						ru = "Отрекшийся отряд смерти",
+						ko = "포세이큰 데스스쿼드",
+						cn = "被遗忘者敢死队",
+					},
+					description = {
+						en = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Forsaken Deathsquad.",
+						es = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
+						de = "Es gibt einen laufenden 4x4-Kampf. Unterstützen Sie die Allianz, indem Sie die Todesschwadron der Forsaken besiegen.",
+						fr = "Il y a une bataille en 4x4 en cours. Aidez l'Alliance en battant l'escadron de la mort abandonné.",
+						it = "C'è una battaglia 4x4 in corso. Aiuta l'Alleanza sconfiggendo la Squadra della Morte dei Rinnegati.",
+						pt = "Há uma batalha 4x4 em andamento. Ajude a Aliança derrotando o Esquadrão da Morte Abandonado.",
+						ru = "Идет продолжающаяся битва четыре на четыре. Помогите Альянсу, победив Отрекшихся Отряд Смерти.",
+						ko = "4대4 전투가 진행 중입니다. Forsaken Deathsquad를 물리쳐 얼라이언스를 지원하세요.",
+						cn = "正在进行一场四对四的战斗。协助联盟击败被遗忘者敢死队。",
+					},
+				}), {
+					["providers"] = {
+						{ "n", 92626 },	-- Deathguard Adams
+						{ "n", 92631 },	-- Dark Ranger Jess
+						{ "n", 92633 },	-- Assassin Huwe
+						{ "n", 92634 },	-- Apothecary Perez
+					},
+					["questID"] = 38630,	-- Forsaken Deathsquad
+					["coord"] = { 44.2, 22.8, STORMHEIM },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(129266),	-- Raider Captain's Gauntlets
+					},
+				}),
 				n(91529,  {	-- Glimar Ironfist
 					["questID"] = 38333,
 					["coord"] = { 41.9, 66.5, STORMHEIM },
@@ -120,13 +131,11 @@ root(ROOTS.Zones, {
 						i(138417),	-- The Butcher's Apron
 					},
 				}),
-				v(38625,  {	-- Hook and Sinker (Alliance Only)
-					["races"] = ALLIANCE_ONLY,
+				n(92590, {	-- Hook
+					["questID"] = 38625,	-- Hook and Sinker
 					["coord"] = { 42.0, 57.6, STORMHEIM },
-					["crs"] = {
-						92590,	-- Hook
-						92591,	-- Sinker
-					},
+					["crs"] = { 92591 },	-- Sinker
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(129109),	-- Sinker's Line
 					},
@@ -252,6 +261,45 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.2, 51.1, STORMHEIM },
 					["groups"] = {
 						i(138418),	-- Typhoon Grips
+					},
+				}),
+				n(createHeader({	-- Worgen Stalkers
+					readable = "Worgen Stalkers",
+					icon = 463876,
+					text = {
+						en = "Worgen Stalkers",
+						es = "Acechadores Huargen",
+						--de = "Worgen Stalkers",
+						fr = "Traqueurs Worgens",
+						it = "Cacciatori Worgen",
+						pt = "Perseguidores Worgens",
+						ru = "Воргены-сталкеры",
+						ko = "늑대인간 추적자",
+						cn = "狼人追猎者",
+					},
+					description = {
+						en = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
+						es = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
+						de = "Es gibt einen laufenden 4x4-Kampf. Unterstützen Sie die Horde, indem Sie die Worgenpirscher besiegen.",
+						fr = "Il y a une bataille en 4x4 en cours. Aidez la Horde en battant les Worgen Stalkers.",
+						it = "C'è una battaglia 4x4 in corso. Aiuta l'Orda sconfiggendo i Worgen Stalker.",
+						pt = "Há uma batalha 4x4 em andamento. Ajude a Horda derrotando os Worgen Stalkers.",
+						ru = "Идет продолжающаяся битва четыре на четыре. Помогите Орде, победив воргенов-сталкеров.",
+						ko = "4대4 전투가 진행 중입니다. 늑대인간 추적자를 물리쳐 호드를 도와주세요.",
+						cn = "正在进行一场四对四的战斗。击败狼人追猎者，协助部落。",
+					},
+				}), {
+					["providers"] = {
+						{ "n", 92604 },	-- Champion Elodie
+						{ "n", 92609 },	-- Tracker Jack
+						{ "n", 92611 },	-- Ambusher Daggerfang
+						{ "n", 92613 },	-- Priestess Liza
+					},
+					["questID"] = 38627,	-- Worgen Stalkers
+					["coord"] = { 44.0, 22.9, STORMHEIM },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(129264),	-- Patrol Captain's Gauntlets
 					},
 				}),
 --[[ TODO:

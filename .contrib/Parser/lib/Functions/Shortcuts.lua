@@ -1100,15 +1100,6 @@ title_male = function(id, t)							-- Create a TITLE Object for Male Characters
 	t.gender = 2;
 	return t;
 end
-v = function(id, t)										-- Create a VIGNETTE Object
-	t.type = "vignetteID";
-	if t.cr or t.creatureID or t.qg or t.qgs then
-		error("Vignetts don't use cr, creatureID, qg, or qgs!", id);
-	elseif not t.crs then
-		error("Vignettes must supply a crs list!", id);
-	end
-	return struct("questID", id, t);
-end
 
 -- Common Object Types
 dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragonriding Race
