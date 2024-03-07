@@ -4321,6 +4321,7 @@ local KeyMaps = setmetatable({
 	mount = "spellID",
 	mountid = "spellID",
 	n = "creatureID",
+	npc = "creatureID",
 	npcid = "creatureID",
 	o = "objectID",
 	object = "objectID",
