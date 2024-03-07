@@ -5,7 +5,7 @@ local print
 	= print
 
 app.print = function(...)
-	print(app.L.TITLE, ...);
+	print(app.L.SHORTTITLE, ...);
 end
 app.report = function(...)
 	if ... then
