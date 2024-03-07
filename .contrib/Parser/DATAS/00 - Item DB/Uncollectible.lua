@@ -1533,6 +1533,7 @@ i(205465);	-- Gleaming Rock Viper Eye
 i(205870);	-- Glittering Spore Dust
 i(205871);	-- Glowing Underlight Wings
 i(205464);	-- Granite Scales
+i(204313);	-- Handful of Scales
 i(205468);	-- Hooked Tail Claw
 i(205459);	-- Luminous Gloop
 i(205698);	-- Mangled Niffen Pack

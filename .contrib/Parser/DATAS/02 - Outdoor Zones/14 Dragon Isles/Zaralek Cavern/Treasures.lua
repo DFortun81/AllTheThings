@@ -276,6 +276,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					o(401846, {	-- Smelly Treasure Chest
 						["isRepeatable"] = true,
+						["coords"] = {
+							{ 25.7, 43.6, ZARALEK_CAVERN },	-- one coord to show object tooltips
+						},
 						["sym"] = {
 							{"select","mapID",ZARALEK_CAVERN},
 							{"find","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Obtained Weapons/Armor confirmed by Wowhead/Runaway

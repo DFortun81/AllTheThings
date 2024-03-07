@@ -1207,7 +1207,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(203465),	-- Draconic Artifact
 			i(203210),	-- Dragonscale Supply Box
 			i(203466),	-- Dragonscale Surplus Crate
-			i(204313),	-- Handful of Scales
 			i(204330),	-- Inert Primordial Fragments
 			i(203218),	-- Iskaara Supply Pouch
 			i(203221),	-- Maruuk Supply Sack
