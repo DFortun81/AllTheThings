@@ -28,6 +28,11 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 	["model"] = function(t)
 		return app.ObjectModels[t.objectID];
 	end,
+	["indicatorIcon"] = function(t)
+		if app.ActiveVignettes.object[t.objectID] then
+			return app.asset("Interface_Ping");
+		end
+	end,
 },
 "AsGenericObjectContainer", {
 	trackable = app.ReturnTrue,
