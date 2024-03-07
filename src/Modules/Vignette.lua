@@ -82,7 +82,7 @@ local CurrentVignettes = {
 app.CurrentVignettes = CurrentVignettes;
 
 local function DelVignette(vignetteGUID)
-	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
+	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID) or CurrentVignettes[vignetteGUID]
 	if vignetteInfo and vignetteInfo.objectGUID then
 		local type, _, _, _, _, id, _ = ("-"):split(vignetteInfo.objectGUID);
 		id = id and tonumber(id);
@@ -91,7 +91,9 @@ local function DelVignette(vignetteGUID)
 			-- app.PrintDebug("Hidden Vignette",searchType,id)
 			CurrentVignettes[searchType][id] = nil;
 		end
+	else app.PrintDebug("No more Vignette info!",vignetteGUID)
 	end
+	CurrentVignettes[vignetteGUID] = nil
 end
 local function AddVignette(vignetteGUID)
 	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
@@ -104,10 +106,13 @@ local function AddVignette(vignetteGUID)
 			if vignetteInfo.isDead then
 				-- app.PrintDebug("Dead Vignette",searchType,id)
 				CurrentVignettes[searchType][id] = nil;
+				CurrentVignettes[vignetteGUID] = nil
 			else
 				-- app.PrintDebug("Visible Vignette",searchType,id)
 				-- app.PrintTable(vignetteInfo)
 				CurrentVignettes[searchType][id] = true;
+				-- need to persist the data for when it gets deleted, we can't retrieve it again afterwards
+				CurrentVignettes[vignetteGUID] = vignetteInfo
 				-- potentially can add groups into another window?
 				-- local vignetteGroup = app.SearchForObject(searchType, id, "field");
 				-- if vignetteGroup then
