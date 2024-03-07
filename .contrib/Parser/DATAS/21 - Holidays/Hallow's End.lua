@@ -2097,7 +2097,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(208485, {	-- The Scarlet Key
 						["timeline"] = { ADDED_10_1_7 },
 					}),
-					i(208680, {	-- Windborne Velocidrake: Hallow's End Armor
+					i(208680, {	-- Windborne Velocidrake: Hallow's End Armor (DM!)
 						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},

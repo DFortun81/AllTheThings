@@ -2,7 +2,6 @@
 root(ROOTS.NeverImplemented, {
 	expansion(EXPANSION.MOP),
 	expansion(EXPANSION.SL),
-	expansion(EXPANSION.DF),
 	n(ACHIEVEMENTS, {["timeline"] = {CREATED_3_0_2}}),					-- Completed up to 10.2.5
 	n(ARMOR),															-- Not Completed and Not Sorted
 	filter(BAGS),														-- Not Completed and Not Sorted
@@ -10,6 +9,7 @@ root(ROOTS.NeverImplemented, {
 	n(CLASSES),															-- Completed up to 10.2.5
 	n(CONDUITS, {["timeline"] = {CREATED_9_0_1}}),						-- Completed up to 10.2.5
 	filter(COSMETIC),													-- Not Completed and Not Sorted
+	n(DRAKEWATCHER_MANUSCRIPTS, {["timeline"] = {CREATED_10_0_0}}),		-- Completed up to 10.2.5
 	--n(FACTIONS),														-- Completed up to 10.2.5
 	n(FLIGHT_PATHS),													-- Completed up to 10.2.5
 	n(FOLLOWERS, {["timeline"] = {CREATED_6_0_2}}),						-- Completed up to 10.2.5
