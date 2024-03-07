@@ -120,7 +120,7 @@ if C_VignetteInfo then
 						local link = info.SearchType .. ":" .. info.ID;
 						local group = app.GetCachedSearchResults(app.SearchForLink, link);
 						if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and app.IsComplete(group) then return; end
-						local progressText = group.progressText or GetProgressColorText(group.progress or 0, group.total or 0);
+						local progressText = group.progressText or GetProgressColorText(group.progress or 0, group.total or 0) or (group.collectible and app.GetCollectionIcon(group.collected)) or (group.trackable and app.GetCompletionIcon(group.saved));
 						if progressText then
 							link = app:Linkify(info.name or info.ID, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText;
 						elseif app.Settings:GetTooltipSetting("Nearby:IncludeUnknown") then
