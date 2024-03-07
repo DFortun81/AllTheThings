@@ -247,6 +247,8 @@ if C_VignetteInfo then
 		app:RegisterEvent("VIGNETTES_UPDATED");
 		app.events.VIGNETTES_UPDATED();
 	end);
+	app.AddEventHandler("OnReportNearbySettingsChanged", app.events.VIGNETTES_UPDATED);
+	
 else
 	-- Fallback for if the Vignette class isn't supported.
 	setmetatable(ActiveVignettes, {

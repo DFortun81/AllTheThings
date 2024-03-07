@@ -56,6 +56,7 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:ReportContent", self:GetChecked())
+		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxReportNearby:SetATTTooltip(L.REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP)
 	checkboxReportNearby:AlignBelow(checkboxReportUnsourced, -1)
@@ -90,6 +91,7 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:IncludeCompleted", self:GetChecked())
+		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeCompleted:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeCompleted:AlignBelow(checkboxNearbyAutomaticallyPlot)
@@ -107,6 +109,7 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:IncludeUnknown", self:GetChecked())
+		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeUnknown:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeUnknown:AlignBelow(checkboxNearbyIncludeCompleted)
