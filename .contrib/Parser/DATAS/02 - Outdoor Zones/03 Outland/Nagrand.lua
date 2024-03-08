@@ -971,6 +971,9 @@ root(ROOTS.Zones, {
 						-- confirmed on a lvl 53, no party sync
 						-- ["lockCriteria"] = { 1, "lvl", 50 },
 						-- #endif
+						-- #if AFTER 10.0.2
+						["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
+						-- #endif
 					}),
 					q(9872, {	-- Murkblood Invaders (H)
 						["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
@@ -979,6 +982,9 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						-- #if AFTER 9.0.2
 						-- ["lockCriteria"] = { 1, "lvl", 50 },
+						-- #endif
+						-- #if AFTER 10.0.2
+						["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
 						-- #endif
 					}),
 					q(9867, {	-- Murkblood Leaders..
