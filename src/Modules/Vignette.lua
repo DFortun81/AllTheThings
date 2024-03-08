@@ -8,7 +8,7 @@ app.ActiveVignettes = ActiveVignettes;
 if C_VignetteInfo then
 	-- locals
 	local L = app.L;
-	
+
 	-- Global locals
 	local rawset, tonumber, ipairs, pairs
 		= rawset, tonumber, ipairs, pairs
@@ -41,118 +41,56 @@ if C_VignetteInfo then
 		end
 	end
 
-	if false then
-		-- CRIEVE NOTE: I don't understand this and rather than delete it, I'll preserve what it does, flip the false to true to test with OG methods.
-
-		-- App locals
-		local AssignChildren = app.AssignChildren
-		local Callback = app.CallbackHandlers.Callback;
-		local GetProgressColor = app.Modules.Color.GetProgressColor;
-		
-		-- OnLoad App locals
-		local CreateObject
-		app.AddEventHandler("OnLoad", function()
-			CreateObject = app.__CreateObject
-		end)
-		local VignetteCache = {};
-		local function AddVignetteCache(type)
-			VignetteCache[type] = setmetatable({}, {
-				__index = function(t, key)
-					-- app.PrintDebug("__index", type, key)
-					local o = CreateObject(app.SearchForObject(type, key, "field") or {[type]=key})
-					-- app.PrintDebug("object",o.hash)
-					app.FillGroups(o);
-					AssignChildren(o);
-					rawset(t, key, o);
-					return o;
-				end
-			});
+	-- Crieve's attempt at writing code his feable human mind can understand
+	-- that more or less does some of the things the above code does.
+	local GetProgressColorText = app.Modules.Color.GetProgressColorText;
+	local ReportedVignettes = {};
+	local function AlertForVignetteInfo(info)
+		local link = info.SearchType .. ":" .. info.ID;
+		local group = app.GetCachedSearchResults(app.SearchForLink, link);
+		if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and app.IsComplete(group) then return; end
+		local progressText = group.progressText
+			or GetProgressColorText(group.progress or 0, group.total or 0)
+			or (group.collectible and app.GetCollectionIcon(group.collected))
+			or (group.trackable and app.GetCompletionIcon(group.saved));
+		if progressText then
+			link = app:Linkify(info.name or info.ID, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText;
+		elseif app.Settings:GetTooltipSetting("Nearby:IncludeUnknown") then
+			link = app:Linkify(info.name or info.ID, app.Colors.SourceIgnored, "search:" .. link);
+		else
+			return;
 		end
 
-		AddVignetteCache("npcID")
-		AddVignetteCache("objectID")
-
-		-- TODO: need to capture the ref object of the vignette and cache it for more thorough update. also link the raw coords of the vignette into the vignette group
-		local VignetteChatLinkFormat = L.NEARBY .. " %s (%d/%d)";
-		local function PrintChatLink(o)
-			local text = o.text;
-			-- app.PrintDebug("Vignette Chat",o.hash,prog,total,text)
-			if not text then
-				Callback(PrintChatLink, o)
-				return
-			end
-			local prog, total = o.progress, o.total;
-			local link = VignetteChatLinkFormat:format(app:Linkify(text, GetProgressColor(total == 0 and 1 or (prog / total)), "search:"..o.key..":"..o[o.key]), prog, total);
-			-- app.PrintDebug("link",link)
-			app.print(link);
-			app.Audio:PlayRareFindSound();
-		end
-		-- New keys assigned to the table indicate a new alert of the Vignette
-		-- Expects the 'type' of the host table to indicate the search field
-		local function Alerter__newindex(t, key, info)
-			local type = t.type;
-			-- app.PrintDebug("__newindex", type, key, info)
-			-- app.PrintTable(t)
-			rawset(t, key, info);
-			key = tonumber(key);
-			local o = VignetteCache[type][key];
-			app.TopLevelUpdateGroup(o);
-			-- app.PrintDebug("TLUG",o.hash)
-			-- PrintChatLink(o)
-			app.FunctionRunner.Run(PrintChatLink, o);
-			-- attempt to grab the text so that it should most often be available when printed on the next frame
-			local _ = o.text;
-			-- app.PrintDebug("text",_)
-		end
-		-- Returns a table that acts as an alerter only when a new index is added
-		local function NewAlerter(type)
-			return setmetatable({}, { __newindex = Alerter__newindex, __index = {type=type} });
-		end
-		ActiveVignettes.npc = NewAlerter("npcID");
-		ActiveVignettes.object = NewAlerter("objectID");
-	else
-		-- Crieve's attempt at writing code his feable human mind can understand
-		-- that more or less does some of the things the above code does.
-		local GetProgressColorText = app.Modules.Color.GetProgressColorText;
-		local ReportedVignettes = {};
-		local AlertMeta = {
-			__newindex = function(t, key, info)
-				rawset(t, key, info);
-				if info and app.Settings:GetTooltipSetting("Nearby:ReportContent") then
-					local guid = info.objectGUID;
-					if guid and not ReportedVignettes[guid] then
-						ReportedVignettes[guid] = true;
-						
-						local link = info.SearchType .. ":" .. info.ID;
-						local group = app.GetCachedSearchResults(app.SearchForLink, link);
-						if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and app.IsComplete(group) then return; end
-						local progressText = group.progressText or GetProgressColorText(group.progress or 0, group.total or 0) or (group.collectible and app.GetCollectionIcon(group.collected)) or (group.trackable and app.GetCompletionIcon(group.saved));
-						if progressText then
-							link = app:Linkify(info.name or info.ID, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText;
-						elseif app.Settings:GetTooltipSetting("Nearby:IncludeUnknown") then
-							link = app:Linkify(info.name or info.ID, app.Colors.SourceIgnored, "search:" .. link);
-						else
-							return;
-						end
-						
-						local waypointLink = GetWaypointLink(info.vignetteGUID);
-						if waypointLink then link = waypointLink .. " " .. link; end
-						app.print(L.NEARBY, link);
-						app.Audio:PlayRareFindSound();
-						if FlashClientIcon then FlashClientIcon(); end
-					end
-				end
-			end
-		};
-		setmetatable(ActiveVignettes, {
-			__index = function(t, key)
-				local data = setmetatable({}, AlertMeta);
-				t[key] = data;
-				return data;
-			end
-		});
+		local waypointLink = GetWaypointLink(info.vignetteGUID);
+		if waypointLink then link = waypointLink .. " " .. link; end
+		app.print(L.NEARBY, link);
+		app.Audio:PlayRareFindSound();
+		if FlashClientIcon then FlashClientIcon(); end
 	end
-	
+	local AlertMeta = {
+		__newindex = function(t, key, info)
+			rawset(t, key, info);
+			if info and app.Settings:GetTooltipSetting("Nearby:ReportContent") then
+				local guid = info.objectGUID;
+				if guid and not ReportedVignettes[guid] then
+					ReportedVignettes[guid] = true;
+
+					-- if we encounter situations where a ton of vignettes all attempt to load in a single frame
+					-- each one processing fresh search results, we may want to easily split that reporting into
+					-- multiple frames to remove the lag spike potential
+					AlertForVignetteInfo(info)
+				end
+			end
+		end
+	};
+	setmetatable(ActiveVignettes, {
+		__index = function(t, key)
+			local data = setmetatable({}, AlertMeta);
+			t[key] = data;
+			return data;
+		end
+	});
+
 	-- Event Handling
 	local CachedVignetteInfo = {};
 	local VignetteSearchTypes = setmetatable({
@@ -161,7 +99,7 @@ if C_VignetteInfo then
 		Vehicle = "npc",
 	}, {
 		__index = function(t, vignetteType)
-			print("Unhandled Vignette Type", vignetteType);
+			app.PrintDebug("Unhandled Vignette Type", vignetteType);
 			return "npc";
 		end
 	});
@@ -237,29 +175,26 @@ if C_VignetteInfo then
 			end
 		end
 	end
-	app.events.VIGNETTE_MINIMAP_UPDATED = UpdateVignette;
-	app.events.VIGNETTES_UPDATED = function()
-		local vignettesByGUID = {};
-		local vignettes = C_VignetteInfo_GetVignettes();
-		if vignettes then
-			for _,guid in ipairs(vignettes) do
-				vignettesByGUID[guid] = true;
-				UpdateVignette(guid);
-			end
-		end
-		for guid,_ in pairs(CachedVignetteInfo) do
-			if not vignettesByGUID[guid] then
-				ClearVignette(guid);
-			end
-		end
-	end
 	app.AddEventHandler("OnReady", function()
-		app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
-		app:RegisterEvent("VIGNETTES_UPDATED");
+		app:RegisterFuncEvent("VIGNETTE_MINIMAP_UPDATED", UpdateVignette);
+		app:RegisterFuncEvent("VIGNETTES_UPDATED", function()
+			local vignettesByGUID = {};
+			local vignettes = C_VignetteInfo_GetVignettes();
+			if vignettes then
+				for _,guid in ipairs(vignettes) do
+					vignettesByGUID[guid] = true;
+					UpdateVignette(guid);
+				end
+			end
+			for guid,_ in pairs(CachedVignetteInfo) do
+				if not vignettesByGUID[guid] then
+					ClearVignette(guid);
+				end
+			end
+		end);
 		app.events.VIGNETTES_UPDATED();
+		app.AddEventHandler("OnReportNearbySettingsChanged", app.events.VIGNETTES_UPDATED);
 	end);
-	app.AddEventHandler("OnReportNearbySettingsChanged", app.events.VIGNETTES_UPDATED);
-	
 else
 	-- Fallback for if the Vignette class isn't supported.
 	setmetatable(ActiveVignettes, {
