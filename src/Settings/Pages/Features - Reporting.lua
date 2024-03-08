@@ -60,6 +60,7 @@ if C_VignetteInfo then
 	end)
 	checkboxReportNearby:SetATTTooltip(L.REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP)
 	checkboxReportNearby:AlignBelow(checkboxReportUnsourced, -1)
+	checkboxReportNearby:MarkAsWIP();
 
 	local checkboxNearbyAutomaticallyPlot = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX,
 	function(self)
