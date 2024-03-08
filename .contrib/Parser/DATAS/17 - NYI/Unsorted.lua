@@ -1043,7 +1043,6 @@ root(ROOTS.Unsorted, {
 				i(182363),	-- Enchanted Trickster Dust
 				i(181496),	-- Endmire Blossom
 				i(182314),	-- Endmire Vineroot
-				i(178581),	-- Engorged Gorm Larva
 				i(175793),	-- Enlarged Gluegland
 				i(177712),	-- Envoy's Letter
 				i(180990),	-- Eonian Lyre
@@ -1100,8 +1099,6 @@ root(ROOTS.Unsorted, {
 				i(181954),	-- Glorious Shimmerfin
 				i(173537),	-- Glowing Hearthstone
 				i(172516),	-- Glowing Viscera
-				i(178582),	-- Golden Death Mask
-				i(178575),	-- Golden Orb of Energy
 				i(174331),	-- Goliath Gauntlet
 				i(175829),	-- Gooey Bug Bites
 				i(178683),	-- Gorgebeak's Bill
@@ -1222,7 +1219,6 @@ root(ROOTS.Unsorted, {
 				i(180437),	-- Medallion of Dominion
 				i(175770),	-- Medallion of Dread
 				i(173976),	-- Medallion of Envy
-				i(178584),	-- Medallion of Orientation
 				i(179024),	-- Medallion of Pride
 				i(180797),	-- Memorial Offering Key
 				i(181720),	-- Menacing Sinvyr Ore
@@ -1248,7 +1244,6 @@ root(ROOTS.Unsorted, {
 				i(183725),	-- Moth Net
 				i(173899),	-- Mysterious Hooks
 				i(177881),	-- Nadjia's Sinstone
-				i(178577),	-- Nalthor's Phylactery Instructions
 				i(178729),	-- Necromancy Focus
 				i(171146),	-- Necrotic Deathward
 				i(170552),	-- Necrotic Fetish
@@ -1341,7 +1336,6 @@ root(ROOTS.Unsorted, {
 				i(175134),	-- Resistance Boots
 				i(180899),	-- Riding Hook
 				i(175794),	-- Ring of Keys
-				i(178572),	-- Ring of Otherworldly Metal
 				i(176446),	-- Ripened Anima Seed
 				i(174939),	-- Ritual Supplies
 				i(173266),	-- Ritual Vestments
@@ -1445,9 +1439,6 @@ root(ROOTS.Unsorted, {
 				i(181516),	-- Stone-Laced Infused Ruby
 				i(181500),	-- Stoneborn Glaive
 				i(174100),	-- Stonebreaker Mallet
-				i(178579),	-- Stradama's Lost Ledger
-				i(178578),	-- Strange Doll
-				i(178574),	-- Strange Ritual Mask
 				i(173732),	-- Strange Runestone
 				i(176808),	-- Stringy Growth
 				i(180271),	-- Stringy Spore
@@ -1472,7 +1463,6 @@ root(ROOTS.Unsorted, {
 				i(183874),	-- The Darkwing Flight Soars With Us!
 				i(182364),	-- The Everyday Assassin
 				i(173025),	-- The Infinite Treatises
-				i(178569),	-- The Origin of Death
 				i(183875),	-- The Tithes are a Lie!
 				i(177947),	-- Theotar's Lost Parasol
 				i(173158),	-- Theotar's Note
@@ -1484,7 +1474,6 @@ root(ROOTS.Unsorted, {
 				i(173523),	-- Tirisfal Camp Scroll
 				i(173270),	-- Toc's Bag of Parts
 				i(173312),	-- Toc's Key
-				i(178583),	-- Tome of Dredger Alchemy
 				i(171367),	-- Tonal Mallet
 				i(180274),	-- Torch
 				i(171440),	-- Torghast Door Key
@@ -1504,7 +1493,6 @@ root(ROOTS.Unsorted, {
 				i(171991),	-- Unadorned Weapon
 				i(175971),	-- Unexploded Blight Bomb
 				i(178662),	-- Unfinished Blade
-				i(178573),	-- Unusual Automaton Parts
 				i(180272),	-- Upper Reaches Key
 				i(173900),	-- Vanishing Ink
 				i(178940),	-- Vashj's Signal

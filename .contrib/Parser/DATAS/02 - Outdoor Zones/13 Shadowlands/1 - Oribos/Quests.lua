@@ -734,6 +734,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["_drop"] = { "g" },	-- Anima Trash
 				["g"] = {
 					i(178591),	-- Ancient Venthyr Relic
+					i(178575),	-- Golden Orb of Energy (QI!)
 					i(178593),	-- Intricate Fae Groveweave
 					i(178590),	-- Storied Maldraxxian Boneblade
 					i(178592),	-- Venerable Kyrian Defender
@@ -744,6 +745,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178569),	-- The Origin of Death (QI!)
+				},
 			}),
 			q(60251, {	-- A Valuable Find: Plaguefall
 				["sourceQuests"] = { 60274 },	-- Trading Favors
@@ -777,54 +781,81 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178574),	-- Strange Ritual Mask (QI!)
+				},
 			}),
 			q(60250, {	-- A Valuable Find: Theater of Pain
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178572),	-- Ring of Otherworldly Metal (QI!)
+				},
 			}),
 			q(60254, {	-- A Valuable Find: Tirna Scithe
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178573),	-- Unusual Automaton Parts (QI!)
+				},
 			}),
 			q(60244, {	-- Trading Favors: Halls of Atonement
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178583),	-- Tome of Dredger Alchemy (QI!)
+				},
 			}),
 			q(60242, {	-- Trading Favors: Necrotic Wake
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178577),	-- Nalthor's Phylactery Instructions (QI!)
+				},
 			}),
 			q(60248, {	-- Trading Favors: Plaguefall
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178579),	-- Stradama's Lost Ledger (QI!)
+				},
 			}),
 			q(60243, {	-- Trading Favors: Sanguine Depths
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178584),	-- Medallion of Orientation (QI!)
+				},
 			}),
 			q(60249, {	-- Trading Favors: Spires of Ascension
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178578),	-- Strange Doll (QI!)
+				},
 			}),
 			q(60245, {	-- Trading Favors: The Other Side
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178582),	-- Golden Death Mask (QI!)
+				},
 			}),
 			q(60247, {	-- Trading Favors: Theater of Pain
 				["sourceQuests"] = { 60274 },	-- Trading Favors
@@ -840,6 +871,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167880 },	-- Finder Ta'sul
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["groups"] = {
+					i(178581),	-- Engorged Gorm Larva (QI!)
+				},
 			}),
 		})),
 	}),

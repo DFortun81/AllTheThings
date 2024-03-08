@@ -1910,7 +1910,7 @@ root(ROOTS.Zones, {
 						["questID"] = 34647,
 						["coord"] = { 24.0, 12.9, FROSTFIRE_RIDGE },
 						["g"] = {
-							currency(824),	-- Garrison Cache
+							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(224613, {	-- Spectator's Chest
