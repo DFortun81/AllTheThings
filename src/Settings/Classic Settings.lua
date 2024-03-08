@@ -188,6 +188,8 @@ local TooltipSettingsBase = {
 		
 		-- Nearby Content
 		["Nearby:ReportContent"] = true,
+		["Nearby:Type:npc"] = true,
+		["Nearby:Type:object"] = true,
 		["Nearby:PlotWaypoints"] = false,
 		["Nearby:ClearWaypoints"] = true,
 		["Nearby:IncludeCompleted"] = true,

@@ -129,17 +129,12 @@ if C_VignetteInfo then
 					id = id and tonumber(id);
 					if id then
 						local searchType = VignetteSearchTypes[type];
-						vignetteInfo.SearchType = searchType;
-						vignetteInfo.ID = id;
-						CachedVignetteInfo[guid] = vignetteInfo;
-						ActiveVignettes[searchType][id] = vignetteInfo;
-						--print("VISIBLE VIGNETTE", type, searchType, id, "search:" .. searchType .. ":"..id);
-						-- potentially can add groups into another window?
-						-- local vignetteGroup = app.SearchForObject(searchType, id, "field");
-						-- if vignetteGroup then
-						-- 	app.PrintDebug("Found Vignette Group",vignetteGroup.hash)
-						-- 	app.DirectGroupUpdate(vignetteGroup);
-						-- end
+						if app.Settings:GetTooltipSetting("Nearby:Type:" .. searchType) then
+							vignetteInfo.SearchType = searchType;
+							vignetteInfo.ID = id;
+							CachedVignetteInfo[guid] = vignetteInfo;
+							ActiveVignettes[searchType][id] = vignetteInfo;
+						end
 					end
 				--[[
 				else

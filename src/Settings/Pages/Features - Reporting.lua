@@ -95,6 +95,42 @@ if C_VignetteInfo then
 	checkboxNearbyClearWaypoints:SetATTTooltip(L.REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP)
 	checkboxNearbyClearWaypoints:AlignBelow(checkboxNearbyAutomaticallyPlot, 1)
 
+	local checkboxNearbyIncludeCreatures = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Nearby:Type:npc"))
+		if not settings:GetTooltipSetting("Nearby:ReportContent") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:SetTooltipSetting("Nearby:Type:npc", self:GetChecked())
+		app.HandleEvent("OnReportNearbySettingsChanged");
+	end)
+	checkboxNearbyIncludeCreatures:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP)
+	checkboxNearbyIncludeCreatures:AlignBelow(checkboxNearbyClearWaypoints, -1)
+
+	local checkboxNearbyIncludeTreasures = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Nearby:Type:object"))
+		if not settings:GetTooltipSetting("Nearby:ReportContent") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:SetTooltipSetting("Nearby:Type:object", self:GetChecked())
+		app.HandleEvent("OnReportNearbySettingsChanged");
+	end)
+	checkboxNearbyIncludeTreasures:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP)
+	checkboxNearbyIncludeTreasures:AlignBelow(checkboxNearbyIncludeCreatures)
+
 	local checkboxNearbyIncludeCompleted = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Nearby:IncludeCompleted"))
@@ -111,7 +147,7 @@ if C_VignetteInfo then
 		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeCompleted:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP)
-	checkboxNearbyIncludeCompleted:AlignBelow(checkboxNearbyClearWaypoints, -1)
+	checkboxNearbyIncludeCompleted:AlignBelow(checkboxNearbyIncludeTreasures)
 
 	local checkboxNearbyIncludeUnknown = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX,
 	function(self)
