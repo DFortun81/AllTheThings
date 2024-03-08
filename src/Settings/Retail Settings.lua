@@ -835,7 +835,7 @@ ATTSettingsObjectMixin = {
 		wip:SetPoint("LEFT", self.Text or self, "RIGHT", 2, 0);
 		wip:SetTexture(app.asset("WIP"));
 		wip:SetScale(0.5);
-		wip:SetRotation(-270);
+		--wip:SetRotation(-270);
 		wip:Show();
 	end,
 	-- Registers an Object within itself
