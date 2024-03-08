@@ -629,7 +629,7 @@ local InformationTypes = {
 	CreateInformationType("azeriteEssenceID", { text = L.AZERITE_ESSENCE_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
-	CreateInformationType("crs", { text = L.CREATURES_LIST,
+	CreateInformationType("crs", { text = L.CREATURES_LIST, ShouldDisplayInExternalTooltips = false,
 		limit = 25,
 		Process = function(t, reference, tooltipInfo)
 			local crs = reference.crs;
