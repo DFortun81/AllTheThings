@@ -32,7 +32,7 @@ if C_VignetteInfo then
 						ActiveWaypointGUID = guid;
 						C_SuperTrack.SetSuperTrackedUserWaypoint(false);
 						C_Map.ClearUserWaypoint();
-						C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(mapID, pos.x, pos.y));
+						C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(mapID, pos.x, pos.y, pos.z));
 						C_SuperTrack.SetSuperTrackedUserWaypoint(true);
 					end
 					return app:WaypointLink(mapID, pos.x, pos.y, text);
