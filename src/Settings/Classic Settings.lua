@@ -187,7 +187,7 @@ local TooltipSettingsBase = {
 		["Report:UnsortedQuests"] = true,
 		
 		-- Nearby Content
-		["Nearby:ReportContent"] = true,
+		["Nearby:ReportContent"] = false,
 		["Nearby:Type:npc"] = true,
 		["Nearby:Type:object"] = true,
 		["Nearby:PlotWaypoints"] = false,
