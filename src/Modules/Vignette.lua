@@ -70,18 +70,22 @@ if C_VignetteInfo then
 	end
 	local AlertMeta = {
 		__newindex = function(t, key, info)
-			rawset(t, key, info);
-			if info and app.Settings:GetTooltipSetting("Nearby:ReportContent") then
-				local guid = info.objectGUID;
-				if guid and not ReportedVignettes[guid] then
-					-- if we encounter situations where a ton of vignettes all attempt to load in a single frame
-					-- each one processing fresh search results, we may want to easily split that reporting into
-					-- multiple frames to remove the lag spike potential
-					if AlertForVignetteInfo(info) then
-						-- If someone has completed turned off
-						ReportedVignettes[guid] = true;
+			if info then
+				if app.Settings:GetTooltipSetting("Nearby:ReportContent") then
+					local guid = info.objectGUID;
+					if guid and not ReportedVignettes[guid] then
+						-- if we encounter situations where a ton of vignettes all attempt to load in a single frame
+						-- each one processing fresh search results, we may want to easily split that reporting into
+						-- multiple frames to remove the lag spike potential
+						if AlertForVignetteInfo(info) then
+							-- If someone has completed turned off
+							ReportedVignettes[guid] = true;
+							rawset(t, key, info);
+						end
 					end
 				end
+			else
+				rawset(t, key, info);
 			end
 		end
 	};
@@ -126,46 +130,16 @@ if C_VignetteInfo then
 		if guid then
 			local vignetteInfo = C_VignetteInfo_GetVignetteInfo(guid);
 			if vignetteInfo and not vignetteInfo.isDead and vignetteInfo.objectGUID then
-				if not CachedVignetteInfo[guid] then
-					local type, _, _, _, _, id, _ = ("-"):split(vignetteInfo.objectGUID);
-					id = id and tonumber(id);
-					if id then
-						local searchType = VignetteSearchTypes[type];
-						if app.Settings:GetTooltipSetting("Nearby:Type:" .. searchType) then
-							vignetteInfo.SearchType = searchType;
-							vignetteInfo.ID = id;
-							CachedVignetteInfo[guid] = vignetteInfo;
-							ActiveVignettes[searchType][id] = vignetteInfo;
-						end
+				local type, _, _, _, _, id, _ = ("-"):split(vignetteInfo.objectGUID);
+				id = id and tonumber(id);
+				if id then
+					local searchType = VignetteSearchTypes[type];
+					if app.Settings:GetTooltipSetting("Nearby:Type:" .. searchType) then
+						vignetteInfo.SearchType = searchType;
+						vignetteInfo.ID = id;
+						CachedVignetteInfo[guid] = vignetteInfo;
+						ActiveVignettes[searchType][id] = vignetteInfo;
 					end
-				--[[
-				else
-					local isDifferent = false;
-					local oldVignetteInfo = CachedVignetteInfo[guid];
-					for key,value in pairs(vignetteInfo) do
-						local oldValue = oldVignetteInfo[key];
-						if oldValue ~= value then
-							-- It changed, but how so?
-							if type(value) == "table" then
-								if type(oldValue) == "table" then
-									-- Oh boy. Comparing a table. NICE.
-									-- Let's skip this for now...
-								else
-									-- Simple, we can print this.
-									print(" ", key, "added a table value");
-									isDifferent = true;
-								end
-							else
-								-- Simple, we can print this.
-								print(" ", key, oldValue, " -> ", value);
-								isDifferent = true;
-							end
-						end
-					end
-					if isDifferent then
-						print("Vignette info is different!!");
-					end
-				]]--
 				end
 			else
 				ClearVignette(guid);
