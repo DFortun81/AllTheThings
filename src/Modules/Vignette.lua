@@ -48,7 +48,7 @@ if C_VignetteInfo then
 	local function AlertForVignetteInfo(info)
 		local link = info.SearchType .. ":" .. info.ID;
 		local group = app.GetCachedSearchResults(app.SearchForLink, link);
-		if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and app.IsComplete(group) then return; end
+		if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and app.IsComplete(group) then return false; end
 		local progressText = group.progressText
 			or GetProgressColorText(group.progress or 0, group.total or 0)
 			or (group.collectible and app.GetCollectionIcon(group.collected))
@@ -58,7 +58,7 @@ if C_VignetteInfo then
 		elseif app.Settings:GetTooltipSetting("Nearby:IncludeUnknown") then
 			link = app:Linkify(info.name or info.ID, app.Colors.SourceIgnored, "search:" .. link);
 		else
-			return;
+			return true;
 		end
 
 		local waypointLink = GetWaypointLink(info.vignetteGUID);
@@ -66,6 +66,7 @@ if C_VignetteInfo then
 		app.print(L.NEARBY, link);
 		app.Audio:PlayRareFindSound();
 		if FlashClientIcon and app.Settings:GetTooltipSetting("Nearby:FlashTheTaskbar") then FlashClientIcon(); end
+		return true;
 	end
 	local AlertMeta = {
 		__newindex = function(t, key, info)
@@ -73,12 +74,13 @@ if C_VignetteInfo then
 			if info and app.Settings:GetTooltipSetting("Nearby:ReportContent") then
 				local guid = info.objectGUID;
 				if guid and not ReportedVignettes[guid] then
-					ReportedVignettes[guid] = true;
-
 					-- if we encounter situations where a ton of vignettes all attempt to load in a single frame
 					-- each one processing fresh search results, we may want to easily split that reporting into
 					-- multiple frames to remove the lag spike potential
-					AlertForVignetteInfo(info)
+					if AlertForVignetteInfo(info) then
+						-- If someone has completed turned off
+						ReportedVignettes[guid] = true;
+					end
 				end
 			end
 		end
