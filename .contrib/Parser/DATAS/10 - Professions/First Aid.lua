@@ -1,10 +1,24 @@
 root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRST_AID, ["timeline"] = { REMOVED_8_0_1 } }, {
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 } }, {
+	expansion(EXPANSION.CLASSIC, bubbleDownSelf({
+		["timeline"] = {
+			-- #if NOT ANYCLASSIC
+			ADDED_3_0_2,
+			-- #endif
+			REMOVED_8_0_1,
+	}}, {
 		ach(131),	-- Journeyman Medic
 		ach(132),	-- Expert Medic
 		ach(133),	-- Artisan Medic
 	})),
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 } }, {
+	expansion(EXPANSION.TBC, bubbleDownSelf({
+		["timeline"] = {
+			-- #if NOT ANYCLASSIC
+			ADDED_3_0_2,
+			-- #else
+			ADDED_2_0_5,
+			-- #endif
+			REMOVED_8_0_1,
+	}}, {
 		ach(134),	-- Master Medic
 	})),
 	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 } }, {

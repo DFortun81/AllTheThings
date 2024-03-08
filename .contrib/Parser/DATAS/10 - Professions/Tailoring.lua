@@ -186,16 +186,37 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 	}))),
+	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+		-- #if AFTER BFA
+		ach(137, {	-- Stocking Up
+			["provider"] = { "i", 34722 },	-- Heavy Frostweave Bandage
+		}),
+		ach(141, {	-- Ultimate Triage
+			["providers"] = {
+				{ "i", 34722 },	-- Heavy Frostweave Bandage
+				{ "i", 53049 },	-- Embersilk Bandage
+				{ "i", 53051 },	-- Dense Embersilk Bandage
+				{ "i", 72985 },	-- Windwool Bandage
+				{ "i", 72986 },	-- Heavy Windwool Bandage
+			},
+		}),
+		-- #endif
+	})),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			ach(18815, {	-- Speed Dreamin'
+		n(ACHIEVEMENTS, {
+			-- #if AFTER BFA
+			ach(5480, {	-- Preparing for Disaster
+				["provider"] = { "i", 53051 },	-- Dense Embersilk Bandage
+			}),
+			-- #endif
+			ach(18815, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Speed Dreamin'
 				crit(61333),	-- Dream of Skywall
 				crit(61334),	-- Dream of Deepholm
 				crit(61335),	-- Dream of Hyjal
 				crit(61336),	-- Dream of Ragnaros
 				crit(61337),	-- Dream of Azshara
-			}),
-		})),
+			})),
+		}),
 	})),
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 		n(QUESTS, {

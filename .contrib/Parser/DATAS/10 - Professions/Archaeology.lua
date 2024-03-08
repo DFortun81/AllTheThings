@@ -1,177 +1,201 @@
-root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
-		ach(1516, {	-- Accomplished Angler
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				1561,		-- 1000 Fish
-				1243,		-- Fish Don't Leave Footprints
-				130,		-- Grand Master Fisherman / Northrend Fisherman
-				306,		-- Master Angler of Azeroth
-				726,		-- Mr. Pinchy's Magical Crawdad Box
-				1517,		-- Northrend Angler
-				905,		-- Old Man Barlowned
-				878,		-- One That Didn't Get Away
-				1225,		-- Outland Angler
-				2096,		-- The Coin Master
-				150,		-- The Fishing Diplomat
-				144,		-- The Lurker Above
-				153,		-- The Old Gnome and the Sea
-				1257,		-- The Scavenger
-			}},
-			["timeline"] = { ADDED_3_0_3 },
-			["groups"] = {
-				title(51),	-- Salty <Name> (TITLE!)
-			},
-		}),
-		ach(1561),	-- 1000 Fish
-		ach(1560),	-- 500 Fish
-		ach(1559),	-- 250 Fish
-		ach(1558),	-- 100 Fish
-		ach(1557),	-- 50 Fish
-		ach(1556),	-- 25 Fish
-		ach(1243, {	-- Fish Don't Leave Footprints
-			["provider"] = { "i", 34109 },	-- Weather-Beaten Journal
-		}),
-		ach(878, {	-- One That Didn't Get Away
-			["providers"] = {
-				{ "i", 6295 },	-- 15 Pound Mud Snapper
-				{ "i", 13913 },	-- 22 Pound Lobster
-				{ "i", 13905 },	-- 29 Pound Salmon
-				{ "i", 6364 },	-- 32 Pound Catfish
-				{ "i", 13887 },	-- 52 Pound Redgill
-				{ "i", 13880 },	-- 68 Pound Grouper
-				{ "i", 13917 },	-- 103 Pound Mightfish
-				{ "i", 44703 },	-- Dark Herring
-				{ "i", 19808 },	-- Rockhide Strongfish
-				{ "i", 6360 },	-- Steelscale Crushfish
-			},
-		}),
-		ach(5478, {	-- The Limnologist
-			["sym"] = {{ "achievement_criteria" }},
-		}),
-		ach(5479, {	-- The Oceanographer
-			["sym"] = {{ "achievement_criteria" }},
-		}),
-		ach(153),	-- The Old Gnome and the Sea
-		ach(1257, {	-- The Scavenger
-			crit(3873, {	-- Bloodsail Wreckage
-				["provider"] = { "o", 180901 },	-- Bloodsail Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					THE_CAPE_OF_STRANGLETHORN,
-					NORTHERN_STRANGLETHORN,
-					-- #else
-					STRANGLETHORN_VALE,
-					-- #endif
-				},
-			}),
-			crit(3876, {	-- Floating Wreckage
-				["provider"] = { "o", 180751 },	-- Floating Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					BLASTED_LANDS,
-					EASTERN_PLAGUELANDS,
-					SWAMP_OF_SORROWS,
-					TANARIS,
-					THOUSAND_NEEDLES,
-					-- #else
-					AZSHARA,
-					FERALAS,
-					TANARIS,
-					-- #endif
-				},
-			}),
-			crit(3874, {	-- Schooner Wreckage
-				["provider"] = { "o", 180662 },	-- Schooner Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
-					-- #endif
-					HILLSBRAD_FOOTHILLS,
-					STONETALON_MOUNTAINS,
-					WETLANDS,
-				},
-			}),
-			crit(3872, {	-- Steam Pump Flotsam
-				["provider"] = { "o", 182952 },	-- Steam Pump Flotsam
-				["requireSkill"] = FISHING,
-				["maps"] = { ZANGARMARSH },
-			}),
-			crit(3875, {	-- Waterlogged Wreckage
-				["provider"] = { "o", 180685 },	-- Waterlogged Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					WESTERN_PLAGUELANDS,
-					-- #else
-					ALTERAC_MOUNTAINS,
-					ARATHI_HIGHLANDS,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					STRANGLETHORN_VALE,
-					-- #endif
-				},
-			}),
-		}),
-		ach(3218, {	-- Turtles All the Way Down
-			["provider"] = { "i", 46109 },	-- Sea Turtle
-			["timeline"] = { ADDED_3_0_3 },
-		}),
-	})),
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({
-		["timeline"] = {
-			-- #if NOT ANYCLASSIC
-			ADDED_3_0_2,
-			-- #endif
-	}}, {
-		ach(126),	-- Journeyman Fisherman
-		ach(127),	-- Expert Fisherman
-		ach(128),	-- Artisan Fisherman
-		ach(150, {	-- The Fishing Diplomat
-			crit(5274),	-- Ogrimmar
-			crit(5275),	-- Stormwind
-		}),
-	})),
-	expansion(EXPANSION.TBC, bubbleDownSelf({
-		["timeline"] = {
-			-- #if NOT ANYCLASSIC
-			ADDED_3_0_2,
-			-- #else
-			ADDED_2_0_5,
-			-- #endif
-	}}, {
-		ach(129),	-- Outland Fisherman
-		ach(1225, {	-- Outland Angler
-			["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
-			["sym"] = {{ "achievement_criteria" }},
-		}),
-	})),
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
-		ach(130),	-- Northrend Fisherman
-		ach(1517, {	-- Northrend Angler
-			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
-			["sym"] = {{ "achievement_criteria" }},
-		}),
-	})),
+root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-		ach(4917),	-- Cataclysmic Fisherman
-		ach(5851, {	-- Gone Fishin'
-			["timeline"] = { ADDED_4_2_0 },
-			["sym"] = {{"meta_achievement",
-				5848,	-- Fish or Cut Bait: Darnassus
-				5847,	-- Fish or Cut Bait: Ironforge
-				5476,	-- Fish or Cut Bait: Stormwind
-				5850,	-- Fish or Cut Bait: Undercity
-				5849,	-- Fish or Cut Bait: Thunder Bluff
-				5477,	-- Fish or Cut Bait: Orgrimmar
-			}},
+		ach(4857),	-- Journeyman Archaeologist
+		ach(4919),	-- Expert Archaeologist
+		ach(4920),	-- Artisan Archaeologist
+		ach(4921),	-- Master Archaeologist
+		ach(4922),	-- Grand Master Archaeologist
+		ach(4923),	-- Illustrious Grand Master Archaeologist
+		ach(5193, {	-- Blue Streak
+			crit(15058, {	-- Notched Sword of Tunadil the Redeemer
+				["provider"] = { "i", 64337 },	-- Notched Sword of Tunadil the Redeemer
+			}),
+			crit(15059, {	-- Dented Shield of Horuz Killcrow
+				["provider"] = { "i", 64362 },	-- Dented Shield of Horuz Killcrow
+			}),
+			crit(15060, {	-- Scorched Staff of Shadow Priest Anund
+				["provider"] = { "i", 64366 },	-- Scorched Staff of Shadow Priest Anund
+			}),
+			crit(15095, {	-- Silver Kris of Korl
+				["provider"] = { "i", 64483 },	-- Silver Kris of Korl
+			}),
+		}),
+		ach(5470),	-- Diggerest
+		ach(5469),	-- Diggerer
+		ach(5315),	-- Digger
+		ach(5511, {	-- It's Always in the Last Place You Look
+			crit(16197),		-- Draenei
+			crit(16198),		-- Dwarf
+			crit(16199),		-- Fossil
+			crit(16200),		-- Nerubian
+			crit(16201),		-- Night Elf
+			crit(16202),		-- Orc
+			crit(16203),		-- Tol'vir
+			crit(16204),		-- Troll
+			crit(16205),		-- Vrykul
+		}),
+		ach(4859, {	-- Kings Under the Mountain
+			crit(15062, {	-- Mithril Chain of Angerforge
+				["provider"] = { "i", 64368 },	-- Mithril Chain of Angerforge
+			}),
+			crit(15063, {	-- Moltenfist's Jeweled Goblet
+				["provider"] = { "i", 63414 },	-- Moltenfist's Jeweled Goblet
+			}),
+			crit(15064, {	-- Winged Helm of Corehammer
+				["provider"] = { "i", 64343 },	-- Winged Helm of Corehammer
+			}),
+			crit(15065, {	-- Ironstar's Petrified Shield
+				["provider"] = { "i", 64344 },	-- Ironstar's Petrified Shield
+			}),
+			crit(15066, {	-- Skull Staff of Shadowforge
+				["provider"] = { "i", 64371 },	-- Skull Staff of Shadowforge
+			}),
+			crit(15068, {	-- Spiked Gauntlets of Anvilrage
+				["provider"] = { "i", 64485 },	-- Spiked Gauntlets of Anvilrage
+			}),
+			crit(15069, {	-- Warmaul of Burningeye
+				["provider"] = { "i", 64484 },	-- Warmaul of Burningeye
+			}),
+		}),
+		ach(4858, {	-- Seven Scepters
+			crit(15051, {	-- Scepter of Charlga Razorflank
+				["provider"] = { "i", 64367 },	-- Scepter of Charlga Razorflank
+			}),
+			crit(15050, {	-- Atal'ai Scepter
+				["provider"] = { "i", 64348 },	-- Atal'ai Scepter
+			}),
+			crit(15052, {	-- Scepter of Xavius
+				["provider"] = { "i", 64382 },	-- Scepter of Xavius
+			}),
+			crit(15071, {	-- Scepter of Nekros Skullcrusher
+				["provider"] = { "i", 64420 },	-- Scepter of Nekros Skullcrusher
+			}),
+			crit(15074, {	-- Scepter of the Nathrezim
+				["provider"] = { "i", 64444 },	-- Scepter of the Nathrezim
+			}),
+			crit(15092, {	-- Scepter of Nezar'Azret
+				["provider"] = { "i", 64475 },	-- Scepter of Nezar'Azret
+			}),
+			crit(15096, {	-- Scepter of Bronzebeard
+				["provider"] = { "i", 64487 },	-- Scepter of Bronzebeard
+			}),
+		}),
+		ach(5301, {	-- The Boy Who Would be King
+			crit(15100, {	-- Cat Statue with Emerald Eyes
+				["provider"] = { "i", 64653 },	-- Cat Statue with Emerald Eyes
+			}),
+			crit(15101, {	-- Soapstone Scarab Necklace
+				["provider"] = { "i", 64654 },	-- Soapstone Scarab Necklace
+			}),
+			crit(15102, {	-- Tiny Oasis Mosaic
+				["provider"] = { "i", 64655 },	-- Tiny Oasis Mosaic
+			}),
+			crit(15103, {	-- Engraved Scimitar Hilt
+				["provider"] = { "i", 64656 },	-- Engraved Scimitar Hilt
+			}),
+			crit(15104, {	-- Sketch of a Desert Palace
+				["provider"] = { "i", 64658 },	-- Sketch of a Desert Palace
+			}),
+			crit(15105, {	-- Canopic Jar
+				["provider"] = { "i", 64657 },	-- Canopic Jar
+			}),
+		}),
+		ach(5192, {	-- The Harder they Fall
+			crit(15061, {	-- Tiny Bronze Scorpion
+				["provider"] = { "i", 64389 },	-- Tiny Bronze Scorpion
+			}),
+			crit(15070, {	-- Maul of Stone Guard Mur'og
+				["provider"] = { "i", 64417 },	-- Maul of Stone Guard Mur'og
+			}),
+			crit(15072, {	-- Gray Candle Stub
+				["provider"] = { "i", 64418 },	-- Gray Candle Stub
+			}),
+			crit(15073, {	-- Rusted Steak Knife
+				["provider"] = { "i", 64419 },	-- Rusted Steak Knife
+			}),
+		}),
+		ach(4854, {	-- I Had It in My Hand
+			title(148),		-- Assistant Professor <Name> (TITLE!)
+		}),
+		ach(4855, {	-- What was Briefly Yours is Now Mine
+			title(149),		-- Associate Professor <Name> (TITLE!)
+		}),
+		ach(4856, {	-- It Belongs in a Museum!
+			title(150),		-- Professor <Name> (TITLE!)
+		}),
+		ach(5191, {	-- Tragedy in Three Acts
+			crit(15053, {	-- Delicate Music Box
+				["provider"] = { "i", 64357 },	-- Delicate Music Box
+			}),
+			crit(15054, {	-- Cloak Clasp with Antlers
+				["provider"] = { "i", 63407 },	-- Cloak Clasp with Antlers
+			}),
+			crit(15055, {	-- Hairpin of Silver and Malachite
+				["provider"] = { "i", 64356 },	-- Hairpin of Silver and Malachite
+			}),
+			crit(15056, {	-- Chest of Tiny Glass Animals
+				["provider"] = { "i", 64379 },	-- Chest of Tiny Glass Animals
+			}),
+			crit(15057, {	-- Cracked Crystal Vial
+				["provider"] = { "i", 64381 },	-- Cracked Crystal Vial
+			}),
+			crit(15099, {	-- Silver Scroll Case
+				["provider"] = { "i", 64648 },	-- Silver Scroll Case
+			}),
+		}),
+		i(87534, {	-- Crate of Draenei Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 398, }	-- Draenei Archaeology Fragment
+			},
+		}),
+		i(87533, {	-- Crate of Dwarven Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 384, }	-- Dwarf Archaeology Fragment
+			},
+		}),
+		i(87535, {	-- Crate of Fossil Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 393, }	-- Fossil Archaeology Fragment
+			},
+		}),
+		i(87536, {	-- Crate of Night Elf Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 394, }	-- Night Elf Archaeology Fragment
+			},
+		}),
+		i(87537, {	-- Crate of Nerubian Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 400, }	-- Nerubian Archaeology Fragment
+			},
+		}),
+		i(87538, {	-- Crate of Orc Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 397, }	-- Orc Archaeology Fragment
+			},
+		}),
+		i(87539, {	-- Crate of Tol'vir Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 401, }	-- Tol'vir Archaeology Fragment
+			},
+		}),
+		i(87540, {	-- Crate of Troll Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 385, }	-- Troll Archaeology Fragment
+			},
+		}),
+		i(87541, {	-- Crate of Vrykul Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				{ ["currencyID"] = 399, }	-- Vrykul Archaeology Fragment
+			},
 		}),
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
@@ -750,40 +774,5 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				}),
 			}
 		})),
-	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-		ach(14333),	-- Shadowlands Fisherman
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-		n(ACHIEVEMENTS, {
-			ach(16632),	-- Dragon Isles Fisherman
-			ach(17207, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Discombobberlated
-				["provider"] = { "i", 136377 },	-- Oversized Bobber
-				["g"] = {
-					i(202207),	-- Reusable Oversized Bobber (TOY!)
-				},
-			})),
-		}),
-		n(QUESTS, {
-			q(72252, {	-- Dragon Isles Fishing [A]
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing.",
-				["sourceQuests"] = { 67700 },	-- To the Dragon Isles! [A]
-				["provider"] = { "n", 191150 },	-- Danielle Anglers
-				["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
-				["races"] = ALLIANCE_ONLY,
-				["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
-			}),
-			q(72253, {	-- Dragon Isles Fishing [H]
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing.",
-				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-				["provider"] = { "n", 190524 },	-- Mora Cloudwalker <Fishing Trainer>
-				["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
-				["races"] = HORDE_ONLY,
-				["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
-			}),
-			q(72729, {	-- The Great Swog
-				["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
-			}),
-		}),
 	})),
 })));
