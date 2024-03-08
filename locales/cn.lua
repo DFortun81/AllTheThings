@@ -408,17 +408,6 @@ local L = app.L;
 		L.NPC_DATA_NESTED_CHECKBOX_TOOLTIP = "如果希望在迷你列表中显示时将所有相关数据嵌套到给定的 NPC（常见首领掉落、掉落等），请启用此选项。此选项可能会导致大量重复，但其想法是该 NPC 将在迷你列表中保持可见，就好像需要特定于该 NPC 的内容一样。\n\n默认：关闭";
 		L.QUEST_CHAIN_NESTED_CHECKBOX = "显示嵌套任务链";
 		L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "如果你想让任务链要求（右键单击任务）窗口将所需任务显示为其后续任务的子组，即它们必须从内到外完成，请启用此选项。\n\n这一点很有用，不会错过个别任务，应该主要用于完成任务的考虑。\n\n否则任务链要求将以自上而下的方式显示，最早的任务在最上面。";
-		L.CELEBRATIONS_LABEL = "庆祝和音效";
-		L.AUDIO_CHANNEL = "声音通道";
-		L.CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效";
-		L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。";
-		L.SOUNDPACK = "声音包";
-		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
-		--TODO: L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
-		L.WARN_REMOVED_CHECKBOX = "移除事物触发警告";
-		L.WARN_REMOVED_CHECKBOX_TOOLTIP = "如果你想在你不小心卖掉或交易一个给予你外观的物品从而导致收藏中失去该外观时听到警告的声音效果，请启用这个选项。\n\n如果你的商品有购买计时这可能非常有用。该插件会告诉你你犯了一个错误。";
-		L.SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品后触发截图";
-		L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想为你收藏的每件物品进行截图请启用此选项。";
 		L.ICON_LEGEND_LABEL = "图标图例";
 		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "不可获得" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "仅在满足先决条件的情况下获得" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. AVAILABLE .."季节性内容" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. UNAVAILABLE .. "季节性内容" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "当前角色不可用";	--TODO: check (un)available seasonal content
 		L.CHAT_COMMANDS_LABEL = "聊天命令";
@@ -818,6 +807,17 @@ for key,value in pairs({
 	-- Features Page
 
 	-- Features: Audio Page
+		CELEBRATIONS_LABEL = "庆祝和音效";
+		AUDIO_CHANNEL = "声音通道";
+		CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效";
+		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。";
+		SOUNDPACK = "声音包";
+		--TODO: PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
+		--TODO: PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
+		WARN_REMOVED_CHECKBOX = "移除事物触发警告";
+		WARN_REMOVED_CHECKBOX_TOOLTIP = "如果你想在你不小心卖掉或交易一个给予你外观的物品从而导致收藏中失去该外观时听到警告的声音效果，请启用这个选项。\n\n如果你的商品有购买计时这可能非常有用。该插件会告诉你你犯了一个错误。";
+		SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品后触发截图";
+		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想为你收藏的每件物品进行截图请启用此选项。";
 
 	-- Features: Reporting Page
 		REPORTING_LABEL = "报告";

@@ -171,22 +171,6 @@ for key,value in pairs({
 	["ADDITIONAL_LABEL"] = "Additional Information";
 	["CRITERIA_FOR"] = "Criteria for";
 	["CURRENCY_FOR"] = "Currency for";
-	["CELEBRATIONS_LABEL"] = "Celebrations & Sound Effects";
-	["AUDIO_CHANNEL"] = "Audio Channel";
-	["CHANNEL_MASTER"] = MASTER;
-	["CHANNEL_MUSIC"] = MUSIC_VOLUME;
-	["CHANNEL_SFX"] = FX_VOLUME;
-	["CHANNEL_AMBIENCE"] = AMBIENCE_VOLUME;
-	["CHANNEL_DIALOG"] = DIALOG_VOLUME;
-	["CELEBRATE_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Celebration";
-	["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-	["SOUNDPACK"] = "Soundpack";
-	["PLAY_DEATH_SOUND_CHECKBOX"] = "Play a Sound Effect when you Die";
-	["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a sound effect when you die.";
-	["WARN_REMOVED_CHECKBOX"] = "Removed Things Trigger a Warning";
-	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-	["SCREENSHOT_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Screenshot";
-	["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to take a screenshot for every Thing you collect.";
 	
 	["CHAT_COMMANDS_LABEL"] = "Chat Commands";
 	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp*\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
