@@ -128,7 +128,7 @@ if C_VignetteInfo then
 		settings:SetTooltipSetting("Nearby:Type:object", self:GetChecked())
 		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
-	checkboxNearbyIncludeTreasures:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP)
+	checkboxNearbyIncludeTreasures:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeTreasures:AlignBelow(checkboxNearbyIncludeCreatures)
 
 	local checkboxNearbyIncludeCompleted = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX,
