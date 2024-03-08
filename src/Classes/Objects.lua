@@ -65,6 +65,19 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		end
 		return unsavedCoords;
 	end,
+	["indicatorIcon"] = function(t)
+		local anyActive
+		local activeObjectVignettes = app.ActiveVignettes.object
+		for _,group in ipairs(t.g) do
+			if group.objectID and activeObjectVignettes[group.objectID] then
+				anyActive = true;
+				break
+			end
+		end
+		if anyActive then
+			return app.asset("Interface_Ping");
+		end
+	end,
 	-- This is never used typically since this class is only generated for objects which have a raw .g
 	-- However there are situations where cloning an existing AsGenericObjectContainer object can expect removed .g (rootOnly)
 	-- Which then causes Lua exceptions due to the above logic not checking for existence
