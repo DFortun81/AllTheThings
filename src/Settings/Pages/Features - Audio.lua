@@ -5,18 +5,18 @@ local L, settings = app.L.SETTINGS_MENU, app.Settings;
 local child = settings:CreateOptionsPage("Audio", L.FEATURES_PAGE)
 
 -- Column 1
-local headerCelebrations = child:CreateHeaderLabel(L["CELEBRATIONS_LABEL"])
+local headerCelebrations = child:CreateHeaderLabel(L.CELEBRATIONS_LABEL)
 if child.separator then
 	headerCelebrations:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
 	headerCelebrations:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 
-local textSoundChannel = child:CreateTextLabel("|cffFFFFFF"..L["AUDIO_CHANNEL"])
+local textSoundChannel = child:CreateTextLabel("|cffFFFFFF"..L.AUDIO_CHANNEL)
 textSoundChannel:SetPoint("TOPLEFT", headerCelebrations, "BOTTOMLEFT", 0, -8)
 textSoundChannel:SetWidth(textSoundChannel:GetUnboundedStringWidth())
 
-local checkboxMasterChannel = child:CreateCheckBox(L["CHANNEL_MASTER"],
+local checkboxMasterChannel = child:CreateCheckBox(L.CHANNEL_MASTER,
 function(self)
 	-- Only check self if the setting is set to this option
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "Master")
@@ -34,7 +34,7 @@ function(self)
 end)
 checkboxMasterChannel:SetPoint("BOTTOMLEFT", textSoundChannel, "BOTTOMRIGHT", 2, -8)
 
-local checkboxMusicChannel = child:CreateCheckBox(L["CHANNEL_MUSIC"],
+local checkboxMusicChannel = child:CreateCheckBox(L.CHANNEL_MUSIC,
 function(self)
 	-- Only check self if the setting is set to this option
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "Music")
@@ -52,7 +52,7 @@ function(self)
 end)
 checkboxMusicChannel:AlignAfter(checkboxMasterChannel)
 
-local checkboxEffectsChannel = child:CreateCheckBox(L["CHANNEL_SFX"],
+local checkboxEffectsChannel = child:CreateCheckBox(L.CHANNEL_SFX,
 function(self)
 	-- Only check self if the setting is set to this option
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "SFX")
@@ -70,7 +70,7 @@ function(self)
 end)
 checkboxEffectsChannel:SetPoint("TOPLEFT", textSoundChannel, "BOTTOMLEFT", 6, -3)
 
-local checkboxAmbienceChannel = child:CreateCheckBox(L["CHANNEL_AMBIENCE"],
+local checkboxAmbienceChannel = child:CreateCheckBox(L.CHANNEL_AMBIENCE,
 function(self)
 	-- Only check self if the setting is set to this option
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "Ambience")
@@ -88,7 +88,7 @@ function(self)
 end)
 checkboxAmbienceChannel:AlignAfter(checkboxEffectsChannel)
 
-local checkboxDialogChannel = child:CreateCheckBox(L["CHANNEL_DIALOG"],
+local checkboxDialogChannel = child:CreateCheckBox(L.CHANNEL_DIALOG,
 function(self)
 	-- Only check self if the setting is set to this option
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "Dialog")
@@ -106,14 +106,14 @@ function(self)
 end)
 checkboxDialogChannel:AlignAfter(checkboxAmbienceChannel)
 
-local checkboxCelebrateCollectedThings = child:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
+local checkboxCelebrateCollectedThings = child:CreateCheckBox(L.CELEBRATE_COLLECTED_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Celebrate"))
 end,
 function(self)
 	settings:SetTooltipSetting("Celebrate", self:GetChecked())
 end)
-checkboxCelebrateCollectedThings:SetATTTooltip(L["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"])
+checkboxCelebrateCollectedThings:SetATTTooltip(L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP)
 checkboxCelebrateCollectedThings:AlignBelow(checkboxEffectsChannel, -1)
 checkboxCelebrateCollectedThings:SetPoint("TOP", checkboxEffectsChannel, "BOTTOM", 0, -8)
 
@@ -124,37 +124,37 @@ function app:TakeScreenShot(type)
 	end
 end
 
-local checkboxScreenshotCollectedThings = child:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
+local checkboxScreenshotCollectedThings = child:CreateCheckBox(L.SCREENSHOT_COLLECTED_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Screenshot"))
 	end,
 	function(self)
 		settings:SetTooltipSetting("Screenshot", self:GetChecked())
 	end)
-checkboxScreenshotCollectedThings:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] .. (app.IsClassic and "\n\nNOTE: Classic has little to NO support for this feature at this time!" or ""))
+checkboxScreenshotCollectedThings:SetATTTooltip(L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP .. (app.IsClassic and "\n\nNOTE: Classic has little to NO support for this feature at this time!" or ""))
 checkboxScreenshotCollectedThings:AlignBelow(checkboxCelebrateCollectedThings)
 
-local checkboxWarnRemovedThings = child:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
+local checkboxWarnRemovedThings = child:CreateCheckBox(L.WARN_REMOVED_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"))
 end,
 function(self)
 	settings:SetTooltipSetting("Warn:Removed", self:GetChecked())
 end)
-checkboxWarnRemovedThings:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"])
+checkboxWarnRemovedThings:SetATTTooltip(L.WARN_REMOVED_CHECKBOX_TOOLTIP)
 checkboxWarnRemovedThings:AlignBelow(checkboxScreenshotCollectedThings)
 
-local checkboxPlayDeathSound = child:CreateCheckBox(L["PLAY_DEATH_SOUND_CHECKBOX"],
+local checkboxPlayDeathSound = child:CreateCheckBox(L.PLAY_DEATH_SOUND_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("PlayDeathSound"))
 end,
 function(self)
 	settings:SetTooltipSetting("PlayDeathSound", self:GetChecked())
 end)
-checkboxPlayDeathSound:SetATTTooltip(L["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"])
+checkboxPlayDeathSound:SetATTTooltip(L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP)
 checkboxPlayDeathSound:AlignBelow(checkboxWarnRemovedThings)
 
-local textSoundpack = child:CreateTextLabel("|cffFFFFFF"..L["SOUNDPACK"])
+local textSoundpack = child:CreateTextLabel("|cffFFFFFF"..L.SOUNDPACK)
 textSoundpack:SetPoint("LEFT", headerCelebrations, 0, 0)
 textSoundpack:SetPoint("TOP", checkboxPlayDeathSound, "BOTTOM", 0, -8)
 
