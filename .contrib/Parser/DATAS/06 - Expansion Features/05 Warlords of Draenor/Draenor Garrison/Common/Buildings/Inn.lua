@@ -20,6 +20,7 @@ root(ROOTS.ExpansionFeatures,
 					-- Could potentially combine the list manually, but parser will do it for us and it will sort itself in the minilist
 					n(FOLLOWERS, {	-- (Alliance)
 						["cr"] = 84947,	-- Lysa Serion <Headhunter>
+						["SortType"] = "name",
 						["groups"] = {
 							follower(342),	-- "Doc" Schweitzer
 							follower(227),	-- Adelaide Kane
