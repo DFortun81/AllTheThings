@@ -167,6 +167,23 @@ if C_VignetteInfo then
 	checkboxNearbyIncludeUnknown:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeUnknown:AlignBelow(checkboxNearbyIncludeCompleted)
 
+	local checkboxNearbyFlashTheTaskbar = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Nearby:FlashTheTaskbar"))
+		if not settings:GetTooltipSetting("Nearby:ReportContent") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:SetTooltipSetting("Nearby:FlashTheTaskbar", self:GetChecked())
+	end)
+	checkboxNearbyFlashTheTaskbar:SetATTTooltip(L.REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP)
+	checkboxNearbyFlashTheTaskbar:AlignBelow(checkboxNearbyIncludeUnknown)
+
 	local checkboxNearbyPlaySoundEffect = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("RareFind"))
@@ -182,5 +199,5 @@ if C_VignetteInfo then
 		settings:SetTooltipSetting("RareFind", self:GetChecked())
 	end)
 	checkboxNearbyPlaySoundEffect:SetATTTooltip(L.REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP)
-	checkboxNearbyPlaySoundEffect:AlignBelow(checkboxNearbyIncludeUnknown)
+	checkboxNearbyPlaySoundEffect:AlignBelow(checkboxNearbyFlashTheTaskbar)
 end

@@ -65,7 +65,7 @@ if C_VignetteInfo then
 		if waypointLink then link = waypointLink .. " " .. link; end
 		app.print(L.NEARBY, link);
 		app.Audio:PlayRareFindSound();
-		if FlashClientIcon then FlashClientIcon(); end
+		if FlashClientIcon and app.Settings:GetTooltipSetting("Nearby:FlashTheTaskbar") then FlashClientIcon(); end
 	end
 	local AlertMeta = {
 		__newindex = function(t, key, info)

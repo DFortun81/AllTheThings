@@ -231,6 +231,7 @@ local TooltipSettingsBase = {
 		["Nearby:ClearWaypoints"] = true,
 		["Nearby:IncludeCompleted"] = true,
 		["Nearby:IncludeUnknown"] = true,
+		["Nearby:FlashTheTaskbar"] = true,
 		["RareFind"] = true,
 		
 		-- Information Types
