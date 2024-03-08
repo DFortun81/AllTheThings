@@ -304,18 +304,6 @@ local L = app.L;
 		L.READY_FORMAT = "%s загрузились";
 		L.KEYBINDINGS_TEXT = "Вы можете назначить клавиши для ATT в настройках игры.";
 
-	-- Unobtainables tab
-		L.UNOBTAINABLES_TAB = "Недоступные";
-		L.SEASONAL_LABEL = "Сезонные";
-		L.SEASONAL_ALL = "|cffECBC21Переключить Все Сезонные";
-		L.UNOBTAINABLE_LABEL = "Недоступный контент";
-		L.UNOBTAINABLE_ALL = "|cffECBC21Переключить Все Недоступные";
-		L.NO_CHANCE_ALL = "|cffECBC21Переключить Все \"Без Шансов\"";
-		L.HIGH_CHANCE_ALL = "|cffECBC21Переключить Все \"Высокий Шанс\"";
-		L.CUSTOM_FILTERS_LABEL = "Автоматический контент";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
-		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
-
 	-- Interface tab
 		L.TOOLTIP_LABEL = "Подсказки";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Интеграция Подсказок";
@@ -749,6 +737,11 @@ for key,value in pairs({
 	-- Classic Only, fully dynamic from within parser.
 
 	-- General: Unobtainables Page
+		UNOBTAINABLES_PAGE = "Недоступные";
+		UNOBTAINABLE_LABEL = "Недоступный контент";
+		CUSTOM_FILTERS_LABEL = "Автоматический контент";
+		CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
+		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 
 	-- Interface Page
 

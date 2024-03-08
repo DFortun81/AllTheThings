@@ -395,16 +395,6 @@ for key, value in pairs({
 	["KEYBINDINGS"] = SETTINGS_KEYBINDINGS_LABEL;
 	["KEYBINDINGS_TEXT"] = "You can set keybindings for ATT in the game's options.";
 
-	-- Unobtainables tab
-	["UNOBTAINABLES_TAB"] = "Unobtainables";
-	["UNOBTAINABLE_LABEL"] = "Unobtainable Content";
-	["UNOBTAINABLE_ALL"] = "|cffECBC21Show All Unobtainable";
-	["NO_CHANCE_ALL"] = "|cffECBC21Show All \"No Chance\"";
-	["HIGH_CHANCE_ALL"] = "|cffECBC21Show All \"High Chance\"";
-	["CUSTOM_FILTERS_LABEL"] = "Automated Content";
-	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
-
 	-- Interface tab
 	["INTERFACE_PAGE"] = UIOPTIONS_MENU;
 	["TOOLTIP_LABEL"] = "Tooltips";

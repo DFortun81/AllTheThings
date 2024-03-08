@@ -302,18 +302,6 @@ local L = app.L;
 		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
-	-- Unobtainables tab
-		--TODO: L.UNOBTAINABLES_TAB = "Unobtainables";
-		--TODO: L.SEASONAL_LABEL = "Seasonal";
-		--TODO: L.SEASONAL_ALL = "|cffECBC21Show All Seasonal";
-		--TODO: L.UNOBTAINABLE_LABEL = "Unobtainable Content";
-		--TODO: L.UNOBTAINABLE_ALL = "|cffECBC21Show All Unobtainable";
-		--TODO: L.NO_CHANCE_ALL = "|cffECBC21Show All \"No Chance\"";
-		--TODO: L.HIGH_CHANCE_ALL = "|cffECBC21Show All \"High Chance\"";
-		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated Content";
-		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
-
 	-- Interface tab
 		--TODO: L.TOOLTIP_LABEL = "Tooltips";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
@@ -708,6 +696,11 @@ for key,value in pairs({
 	-- Classic Only, fully dynamic from within parser.
 
 	-- General: Unobtainables Page
+		--TODO: UNOBTAINABLES_PAGE = "Unobtainables";
+		--TODO: UNOBTAINABLE_LABEL = "Unobtainable Content";
+		--TODO: CUSTOM_FILTERS_LABEL = "Automated Content";
+		--TODO: CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+		--TODO: CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Interface Page
 

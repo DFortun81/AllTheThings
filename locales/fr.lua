@@ -301,18 +301,6 @@ local L = app.L;
 		L.CLICK_TO_CREATE_FORMAT = "Cliquez pour créer %s";
 		L.KEYBINDINGS_TEXT = "Vous pouvez définir les raccourcis clavier pour ATT dans les options du jeu.";
 
-	-- Unobtainables tab
-		L.UNOBTAINABLES_TAB = "Inaccessibles";
-		L.SEASONAL_LABEL = "Saisonnier";
-		L.SEASONAL_ALL = "|cffECBC21Tous les saisonniers";
-		L.UNOBTAINABLE_LABEL = "Contenu inaccessible";
-		L.UNOBTAINABLE_ALL = "|cffECBC21Afficher tous les \"inaccessibles\"";
-		L.NO_CHANCE_ALL = "|cffECBC21Afficher tous les \"Aucune chance\"";
-		L.HIGH_CHANCE_ALL = "|cffECBC21Afficher tous les \"Grande chance\"";
-		L.CUSTOM_FILTERS_LABEL = "Contenu automatique";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché s’il est disponible pour votre personnage actuel ou si vous vous trouvez dans la section "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
-		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activer ce paramètre pour afficher le contenu de %s même s’il n’est pas disponible pour le personnage actuel.";
-
 	-- Interface tab
 		L.TOOLTIP_LABEL = "Infobulles";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Intégrations des infobulles";
@@ -751,6 +739,11 @@ for key,value in pairs({
 	-- Classic Only, fully dynamic from within parser.
 
 	-- General: Unobtainables Page
+		UNOBTAINABLES_PAGE = "Inaccessibles";
+		UNOBTAINABLE_LABEL = "Contenu inaccessible";
+		CUSTOM_FILTERS_LABEL = "Contenu automatique";
+		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché s’il est disponible pour votre personnage actuel ou si vous vous trouvez dans la section "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
+		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activer ce paramètre pour afficher le contenu de %s même s’il n’est pas disponible pour le personnage actuel.";
 
 	-- Interface Page
 

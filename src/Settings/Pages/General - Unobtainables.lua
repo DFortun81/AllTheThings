@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Settings: General Page
-local child = settings:CreateOptionsPage("Unobtainables", "General")
+local child = settings:CreateOptionsPage(L.UNOBTAINABLES_PAGE, "General")
 
 local headerUnobtainableContent = child:CreateHeaderLabel(L.UNOBTAINABLE_LABEL)
 if child.separator then
@@ -100,7 +100,7 @@ end
 
 -- Automated Content Section
 if app.GameBuildVersion > 90000 then
-	local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"])
+	local headerAutomatedContent = child:CreateHeaderLabel(L.CUSTOM_FILTERS_LABEL)
 	headerAutomatedContent:SetPoint("TOP", headerUnobtainableContent, "TOP", 0, 0)
 	headerAutomatedContent:SetPoint("LEFT", headerUnobtainableContent, 320, 0)
 	headerAutomatedContent.OnRefresh = function(self)
@@ -111,7 +111,7 @@ if app.GameBuildVersion > 90000 then
 		end
 	end
 
-	local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
+	local textAutomatedContentExplain = child:CreateTextLabel(L.CUSTOM_FILTERS_EXPLAIN_LABEL)
 	textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
 	textAutomatedContentExplain:SetWidth(320)
 	textAutomatedContentExplain.OnRefresh = function(self)
@@ -123,7 +123,7 @@ if app.GameBuildVersion > 90000 then
 	end
 	
 	-- Automated Content toggles
-	local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"]
+	local customCollects, ccCheckbox = L.CUSTOM_COLLECTS_REASONS
 	local previousCheckbox = textAutomatedContentExplain
 	local xInitalOffset, yInitialOffset, inital = -2, -2, true
 	for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN", "NPE", "SL_SKIP"}) do

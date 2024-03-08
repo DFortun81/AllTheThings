@@ -304,18 +304,6 @@ local L = app.L;
 		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 		L.KEYBINDINGS_TEXT = "可以在游戏选项中设置 ATT 的按键绑定。";
 
-	-- Unobtainables tab
-		L.UNOBTAINABLES_TAB = "不可获得";
-		L.SEASONAL_LABEL = "节日";
-		L.SEASONAL_ALL = "|cffECBC21切换所有节日";
-		L.UNOBTAINABLE_LABEL = "无法获取的内容";
-		L.UNOBTAINABLE_ALL = "|cffECBC21切换所有不可获得";
-		L.NO_CHANCE_ALL = "|cffECBC21切换所有 \"没有机会\"";
-		L.HIGH_CHANCE_ALL = "|cffECBC21切换所有 \"很大机会\"";
-		L.CUSTOM_FILTERS_LABEL = "自动化内容";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
-		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
-
 	-- Interface tab
 		L.TOOLTIP_LABEL = "鼠标提示";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "启用鼠标提示";
@@ -780,6 +768,11 @@ for key,value in pairs({
 	-- Classic Only, fully dynamic from within parser.
 
 	-- General: Unobtainables Page
+		UNOBTAINABLES_PAGE = "不可获得";
+		UNOBTAINABLE_LABEL = "无法获取的内容";
+		CUSTOM_FILTERS_LABEL = "自动化内容";
+		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
+		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
 	-- Interface Page
 
