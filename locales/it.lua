@@ -703,6 +703,7 @@ for key,value in pairs({
 		--TODO: CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Interface Page
+		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page
 		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;

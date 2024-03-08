@@ -460,7 +460,7 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 				local rightText = _G[prefix .. "Right1"];
 				if rightText then
 					local strippedText = StripColorAndTextureData((leftText:GetText() or "  ") .. progressText);
-					if strippedText:len() < 80 then
+					if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
 						if tooltip.CloseButton then
 							-- dont think the region for the rightText can be modified within the tooltip, so pad instead
 							progressText = progressText .. "     ";

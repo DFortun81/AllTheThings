@@ -746,6 +746,7 @@ for key,value in pairs({
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activer ce paramètre pour afficher le contenu de %s même s’il n’est pas disponible pour le personnage actuel.";
 
 	-- Interface Page
+		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
 	-- Interface: Accessibility Page
 		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;

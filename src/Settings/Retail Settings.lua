@@ -234,6 +234,9 @@ local TooltipSettingsBase = {
 		["Nearby:FlashTheTaskbar"] = true,
 		["RareFind"] = true,
 		
+		-- Information Type Behaviours
+		["MaxTooltipTopLineLength"] = 999,
+		
 		-- Information Types
 		["description"] = true,
 		["playerCoord"] = true,
@@ -306,6 +309,7 @@ settings.Initialize = function(self)
 		end
 	end
 
+	self.sliderMaxTooltipTopLineLength:SetValue(self:GetTooltipSetting("MaxTooltipTopLineLength"))
 	self.sliderSummarizeThings:SetValue(self:GetTooltipSetting("ContainsCount") or 25)
 	self.sliderSourceLocations:SetValue(self:GetTooltipSetting("Locations") or 5)
 	self.sliderMainListScale:SetValue(self:GetTooltipSetting("MainListScale"))

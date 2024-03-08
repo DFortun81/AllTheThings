@@ -197,6 +197,9 @@ local TooltipSettingsBase = {
 		["Nearby:FlashTheTaskbar"] = true,
 		["RareFind"] = true,
 		
+		-- Information Type Behaviours
+		["MaxTooltipTopLineLength"] = 999,
+		
 		-- Information Types
 		["description"] = true,
 		["playerCoord"] = true,

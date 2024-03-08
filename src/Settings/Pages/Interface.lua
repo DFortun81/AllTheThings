@@ -229,8 +229,28 @@ sliderSummarizeThings.OnRefresh = function(self)
 	end
 end
 
+local sliderMaxTooltipTopLineLength = CreateFrame("Slider", "ATTSliderMaxTooltipFirstLineLength", child, "OptionsSliderTemplate")
+sliderMaxTooltipTopLineLength:SetPoint("TOPLEFT", sliderSummarizeThings, "BOTTOMLEFT", 0, -25)
+table.insert(settings.Objects, sliderMaxTooltipTopLineLength)
+settings.sliderMaxTooltipTopLineLength = sliderMaxTooltipTopLineLength
+sliderMaxTooltipTopLineLength:SetOrientation('HORIZONTAL')
+sliderMaxTooltipTopLineLength:SetWidth(200)
+sliderMaxTooltipTopLineLength:SetHeight(20)
+sliderMaxTooltipTopLineLength:SetValueStep(1)
+sliderMaxTooltipTopLineLength:SetMinMaxValues(80, 1000)
+sliderMaxTooltipTopLineLength:SetObeyStepOnDrag(true)
+_G[sliderMaxTooltipTopLineLength:GetName() .. 'Low']:SetText('80')
+_G[sliderMaxTooltipTopLineLength:GetName() .. 'High']:SetText('1000')
+_G[sliderMaxTooltipTopLineLength:GetName() .. 'Text']:SetText(L.MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL)
+sliderMaxTooltipTopLineLength.Label = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+sliderMaxTooltipTopLineLength.Label:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, 0)
+sliderMaxTooltipTopLineLength:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(("%.0f"):format(newValue))
+	settings:SetTooltipSetting("MaxTooltipTopLineLength", newValue)
+end)
+
 local textTooltipShownInfo = child:CreateTextLabel("|cffFFFFFF"..L["TOOLTIP_SHOW_LABEL"])
-textTooltipShownInfo:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, -30)
+textTooltipShownInfo:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, -30)
 textTooltipShownInfo:SetPoint("LEFT", headerTooltips, "LEFT", 0, 0)
 textTooltipShownInfo.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") then

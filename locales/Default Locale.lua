@@ -264,6 +264,7 @@ L.SETTINGS_MENU = {
 		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
 	
 	-- Interface Page
+		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 	
 	-- Interface: Accessibility Page
 		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
