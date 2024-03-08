@@ -501,7 +501,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(71135, {	-- Loose Ends
 					["sourceQuests"] = {
 						71000,	-- Barst Recruited
-						71015,	-- All Brawn, No Brains [BUG QUEST CANT COMPLETE]
+						71012,	-- Varsek Recruited
 						71017,	-- Naluki's Letter
 					},
 					["provider"] = { "n", 196812 },	-- Old Grimtusk
