@@ -609,7 +609,7 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(122573),	-- Spiritguard Bracers
 	}),
 	filter(MISC, {
-		r(126869),	-- Folded Ghost Iron
+		r(126869, {["timeline"] = {REMOVED_10_0_2}}),	-- Folded Ghost Iron
 		r(122633),	-- Ghostly Skeleton Key
 	}),
 	filter(MISC, sharedData({

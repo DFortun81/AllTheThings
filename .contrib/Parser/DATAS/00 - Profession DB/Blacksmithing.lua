@@ -933,7 +933,7 @@ i(72012, 101925);	-- Unstoppable Destroyer's Legplates
 --- TRAINER ---
 i(0, 110396);		-- Blacksmithing (Zen Master) [REMOVED: 8.0.1]
 i(0, 122637);		-- Forgewire Axe
-i(0, 126869);		-- Folded Ghost Iron
+i(0, 126869);		-- Folded Ghost Iron [REMOVED: 10.0.2]
 i(0, 122641);		-- Ghost Shard
 i(0, 122583);		-- Ghost-Forged Belt
 i(0, 122638);		-- Ghost-Forged Blade
