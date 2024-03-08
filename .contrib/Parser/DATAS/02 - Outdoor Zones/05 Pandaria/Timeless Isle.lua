@@ -1364,7 +1364,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.4, 69.3, TIMELESS_ISLE },
 					}),
 					q(32976, {	-- Rolo's Riddle #3
-						["qg"] = 72754,	-- Mound of Dirt
+						["providers"] = {
+							{ "n", 72754 },	-- Mound of Dirt
+							{ "n", 72755 },	-- Rolo's Treasure
+						},
 						["sourceQuest"] = 32975,	-- Rolo's Riddle #2
 						["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
 						["coord"] = { 34.5, 26.5, TIMELESS_ISLE },
