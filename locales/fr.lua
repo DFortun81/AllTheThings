@@ -7,7 +7,7 @@ local L = app.L;
 	L.DESCRIPTION = "\"Sottement, vous avez cherché votre propre perte. Effrontément, vous avez ignoré des pouvoirs au-delà de votre compréhension. Vous vous êtes battus pour envahir le royaume du Collectionneur. Maintenant, il n’y a plus qu’une seule issue : emprunter le chemin solitaire... des damnés.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
 	--TODO: L.THING_UNTIL = " THING UNTIL ";
-	L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !|r";
+	L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "Progression";

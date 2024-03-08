@@ -7,7 +7,7 @@ local L = app.L;
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	L.THINGS_UNTIL = " DINGE BIS ";
 	L.THING_UNTIL = " DING BIS ";
-	--TODO: L.YOU_DID_IT = "YOU DID IT!|r";
+	--TODO: L.YOU_DID_IT = "YOU DID IT!";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "Fortschritt";

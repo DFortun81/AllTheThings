@@ -15,7 +15,7 @@ for key, value in pairs({
 	-- General Text
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
-	["YOU_DID_IT"] = "YOU DID IT!|r";
+	["YOU_DID_IT"] = "YOU DID IT!";
 
 	-- Big new chunk from AllTheThings.lua
 	["PROGRESS"] = "Progress";

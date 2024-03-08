@@ -7,7 +7,7 @@ local L = app.L;
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
 	L.THINGS_UNTIL = " 事物到 ";
 	L.THING_UNTIL = " 事物到 ";
-	L.YOU_DID_IT = "你做到了！|r";
+	L.YOU_DID_IT = "你做到了！";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "进度";
