@@ -106,27 +106,33 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(118529, {	-- Cache of Highmaul Treasures [Normal]
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["skipFill"] = true,
 							["sym"] = {{"select", "instanceID", 477}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 8, 51, 52, 53 }},
 						}),
 						i(118530, {	-- Cache of Highmaul Treasures [Heroic]
 							["skipFill"] = true,
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["sym"] = {{"select", "instanceID", 477}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 8, 51, 52, 53 }},
 						}),
 						i(118531, {	-- Cache of Highmaul Treasures [Mythic]
 							["skipFill"] = true,
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["sym"] = {{"select", "instanceID", 477}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 8, 51, 52, 53 }},
 						}),
 						i(122484, {	-- Blackrock Foundry Spoils [Normal]
 							["skipFill"] = true,
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 						}),
 						i(122485, {	-- Blackrock Foundry Spoils [Heroic]
 							["skipFill"] = true,
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 						}),
 						i(122486, {	-- Blackrock Foundry Spoils [Mythic]
 							["skipFill"] = true,
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 						}),
 						i(114108, {	-- Tormented Armament
@@ -578,6 +584,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(128391, {	-- Iron Fleet Treasure Chest [Raid Finder]
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},
@@ -588,6 +595,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(127853, {	-- Iron Fleet Treasure Chest [Normal]
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},
@@ -598,6 +606,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(127854, {	-- Iron Fleet Treasure Chest [Heroic]
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},
@@ -608,6 +617,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(127855, {	-- Iron Fleet Treasure Chest [Mythic]
+							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},
