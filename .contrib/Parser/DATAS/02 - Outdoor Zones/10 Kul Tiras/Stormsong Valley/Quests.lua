@@ -720,6 +720,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 137094 },	-- Farmer Max
 				["coord"] = { 55.0, 67.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(155878),	-- Sack of Grain (QI!)
+				},
 			}),
 			q(51752, {	-- Grizzled
 				["sourceQuests"] = { 52065 },	-- Worse Than it Looks
@@ -1480,6 +1483,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
+				["groups"] = {
+					o(281312, {	-- Stolen Supplies
+						["coords"] = {
+							{ 84.6, 54.0, STORMSONG_VALLEY },
+							{ 81.5, 49.9, STORMSONG_VALLEY },
+							{ 82.8, 44.0, STORMSONG_VALLEY },
+						},
+						["groups"] = {
+							i(157784),	-- Stolen Supplies (QI!)
+						},
+					}),
+				},
 			}),
 			q(49818, {	-- Trouble at Fort Daelin
 				["sourceQuests"] = {	-- needs confirmation.  may open as early as walking across the bridge north of brennadam.  it wasn't here prior to doing that, though.  it was available after turning these 3 in but before picking up or doing 'heavy artillery,' so the SQ is either these 3 or walking across the brennadam bridge to pick these 3 up.
