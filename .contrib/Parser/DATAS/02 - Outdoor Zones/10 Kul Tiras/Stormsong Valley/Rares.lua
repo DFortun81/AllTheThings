@@ -161,9 +161,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["description"] = "This Rare starts the Honeyback Harvester Event.\n\nYou can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill).  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
 				["g"] = {
-					i(172491),	-- Papi (PET!)
-					i(172492),	-- Sunsoaked Flitter (PET!)
-					i(170175),	-- Technique: Glyph of Dire Bees (RECIPE!)
+					n(EVENT_COMPLETION, {
+						i(172491),	-- Papi (PET!)
+						i(172492),	-- Sunsoaked Flitter (PET!)
+						i(170175),	-- Technique: Glyph of Dire Bees (RECIPE!)
+					}),
 				},
 			})),
 			n(154154, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {	-- Honey Smasher
