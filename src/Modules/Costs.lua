@@ -26,12 +26,16 @@ local function CanBeAccountCollected(ref)
 	return not questID or not ref.saved or not OneTimeQuests[questID]
 end
 
+local function Linkify(group)
+	return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
+end
+
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
 local function SubCheckCollectible(ref)
 	-- Collectibles that have a Cost but are already 'saved' should not indicate they are needed as a Cost
 	if CheckCanBeCollected and not CheckCanBeCollected(ref) then
-		-- app.PrintDebug("Saved Thing not collectible as cost",ref.hash,ref.questID,ref.saved,OneTimeQuests[ref.questID])
+		-- app.PrintDebug("Saved Quest not collectible as cost",Linkify(ref),ref.saved,OneTimeQuests[ref.questID])
 		return;
 	end
 	-- app.PrintDebug("SubCheckCollectible",ref.hash)
@@ -111,8 +115,8 @@ local function SetCostTotals(costs, isCost, refresh)
 				c.isCost = nil;
 				c._CheckCollectible = nil;
 				-- app.PrintDebug("Skipped cost under locked/saved parent"
-				-- 	,app:Linkify(c.hash, app.Colors.ChatLink, "search:"..c.key..":"..c[c.key])
-				-- 	,app:Linkify(blockedBy.hash, app.Colors.ChatLink, "search:"..blockedBy.key..":"..blockedBy[blockedBy.key]))
+				-- 	,Linkify(c)
+				-- 	,Linkify(blockedBy))
 			end
 		else
 			-- app.PrintDebug("Not a cost"
