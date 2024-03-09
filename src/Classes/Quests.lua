@@ -591,7 +591,8 @@ PrintQuestInfo = function(questID, new)
 				end
 			end
 			if not questRef then
-				app.PrintDebug(Colorize("Failed to check quest info for: "..(questID or "???"), app.Colors.ChatLinkError))
+				-- This basically happens when a quest is both Sourced 2+ times and none have a key of questID (DMs)
+				-- app.PrintDebug(Colorize("Failed to check quest info for: "..(questID or "???"), app.Colors.ChatLinkError))
 				questRef = searchResults[1]
 			end
 		end
