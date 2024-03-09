@@ -15,10 +15,11 @@ app:CreateWindow("Never Implemented", {
 				font = "GameFontNormalLarge",
 				visible = true,
 				hideText = true,
+				u = 1,
 				g = g,
 			});
-			app.AssignFieldValue(nyiData, "u", 1);
-			nyiData.u = nil;
+			--app.AssignFieldValue(nyiData, "u", 1);
+			--nyiData.u = nil;
 			self.data = nyiData;
 			self:AssignChildren();
 		end
