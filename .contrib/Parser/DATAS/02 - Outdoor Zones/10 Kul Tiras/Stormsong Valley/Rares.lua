@@ -148,7 +148,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 			}),
 			n(155069, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {	-- Honeyback Harvester
-				["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill).  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
 				["coords"] = {
 					{ 25.6, 73.2, STORMSONG_VALLEY },
 					{ 33.4, 32.8, STORMSONG_VALLEY },
@@ -160,6 +159,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 66.3, 69.9, STORMSONG_VALLEY },
 					{ 72.3, 52.2, STORMSONG_VALLEY },
 				},
+				["description"] = "This Rare starts the Honeyback Harvester Event.\n\nYou can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill).  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
 				["g"] = {
 					i(172491),	-- Papi (PET!)
 					i(172492),	-- Sunsoaked Flitter (PET!)
@@ -226,6 +226,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
+			--n(155176, {	-- Old Nasha // has no questID
+			--Under Honeyback Hive as their drop requires the faction unlocked, which horde cant.
 			n(141239, {	-- Osca the Bloodied
 				["questID"] = 52461,
 				["coord"] = { 42.2, 63.1, STORMSONG_VALLEY },

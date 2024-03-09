@@ -197,6 +197,26 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 							i(169106),	-- Thin Jelly
 						},
 					}),
+					n(RARES, sharedData({
+						["coords"] = {
+							{ 25.6, 73.2, STORMSONG_VALLEY },
+							{ 33.4, 32.8, STORMSONG_VALLEY },
+							{ 40.9, 62.1, STORMSONG_VALLEY },
+							{ 47.3, 32.1, STORMSONG_VALLEY },
+							{ 57.1, 51.2, STORMSONG_VALLEY },
+							{ 61.8, 30.9, STORMSONG_VALLEY },
+							{ 63.0, 21.2, STORMSONG_VALLEY },
+							{ 66.3, 69.9, STORMSONG_VALLEY },
+							{ 72.3, 52.2, STORMSONG_VALLEY },
+						},
+						["description"] = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
+					}, {
+						n(155176, {	-- Old Nasha
+							["groups"] = {
+								i(169659),	-- Old Nasha's Paw
+							},
+						}),						
+					})),	
 					n(VENDORS, {
 						n(153393, {	-- Barry
 							["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },
