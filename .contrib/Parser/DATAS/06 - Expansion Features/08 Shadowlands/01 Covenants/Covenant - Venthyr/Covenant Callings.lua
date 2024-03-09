@@ -137,6 +137,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					["provider"] = { "n", 158713 },	-- The Curator
 					--["coord"] = { ,  },
 					["g"] = {
+						i(179321),	-- Gildenite (QI!)
 						i(181556),	-- Tribute of the Court
 					},
 				}),

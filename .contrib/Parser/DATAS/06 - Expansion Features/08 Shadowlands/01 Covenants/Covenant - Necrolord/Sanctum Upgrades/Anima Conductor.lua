@@ -116,6 +116,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(58260, {	-- Queens and Future Kings
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
+									["g"] = {
+										i(173942),	-- Marrowbore Larva (QI!)
+									},
 								}),
 								q(57964, {	-- Revenge Is Easy
 									["provider"] = { "n", 160523 },	-- Cyrin Smirk
@@ -124,6 +127,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(60482, {	-- See With My Eyes
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
+									["g"] = {
+										i(178992),	-- Hidden Weapons (QI!)
+										i(178993),	-- Sightless Vision (QI!)
+									},
 								}),
 								q(60505, {	-- Spider's Lair
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless

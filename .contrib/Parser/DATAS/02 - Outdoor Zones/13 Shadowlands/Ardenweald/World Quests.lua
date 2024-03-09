@@ -85,6 +85,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60855),	-- Gormageddon
 			q(61543, {	-- Herbalism: Lambent Vigil's Torch
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(181757),	-- Lambent Vigil's Torch (QI!)
+				},
 			}),
 			q(61599, {	-- Inscription: Hymnal of Reprise
 				["requireSkill"] = INSCRIPTION,
@@ -129,9 +132,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61947),	-- Lurking In The Shadows
 			q(61530, {	-- Mining: Ligneous Phaedrum Cluster
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(181718),	-- Ligneous Phaedrum Ore (QI!)
+				},
 			}),
 			q(61946),	-- Natural Defenders
-			q(61411),	-- Our Heart Will Go On
+			q(61411, {	-- Our Heart Will Go On
+				["g"] = {
+					i(181284),	-- Gormling in a Bag (QI!)
+				},
+			}),
 			q(58975),	-- Pest Removal
 			q(60337, {	-- Pupa Trooper
 				["g"] = {

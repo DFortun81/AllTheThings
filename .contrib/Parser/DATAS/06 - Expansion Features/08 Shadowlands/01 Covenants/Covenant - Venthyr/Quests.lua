@@ -170,6 +170,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 57887 },	-- Killing the Messenger
 				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
+				["g"] = {
+					i(173358),	-- Invitations (QI!)
+				},
 			}),
 			q(57771, {	-- An Unwelcome Incursion
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
@@ -336,6 +339,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 				["provider"] = { "o", 352520 },	-- Medallion of Pride
 				["coord"] = { 56.8, 30.8, SINFALL_REACHES },
+				["g"] = {
+					i(179024),	-- Medallion of Pride (QI!)
+				},
 			}),
 			q(59676, {	-- Harvester of Desire
 				["sourceQuests"] = { 59706 },	-- Invitation for the Countess
@@ -471,7 +477,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					161480,	-- Blackbale Extortionist
 				},
 				["g"] = {
-					i(174211),	-- Maldraxxian Weapon (quest item in bags collected during quest)
+					i(174211),	-- Maldraxxian Weapon (QI!)
 				},
 			}),
 			q(60935, {	-- Medallion of Avarice
@@ -519,11 +525,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 57892 },	-- Enacting Immediate Justice
 				["provider"] = { "n", 159946 },	-- The Countess
 				["coord"] = { 56.9, 28.7, REVENDRETH },
+				["g"] = {
+					i(173287),	-- Medallion of Desire (QI!)
+				},
 			}),
 			q(58585, {	-- No Friend of Mine
 				["sourceQuests"] = { 58555 },	-- A Tense Reunion
 				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.6, BASTION },
+				["g"] = {
+					i(174466),	-- Mikanikos's Tool Chest (QI!)
+				},
 			}),
 			q(62921, {	-- Our True Purpose
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
@@ -577,6 +589,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
 				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
+				["g"] = {
+					i(174111),	-- Medallion of Avarice (QI!)
+				},
 			}),
 			q(58584, {	-- Right our Wrongs
 				["sourceQuests"] = { 58555 },	-- A Tense Reunion
@@ -775,6 +790,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 167689 },	-- Prince Renethal
 				["coord"] = { 71.9, 68.8, REVENDRETH },
 				["g"] = {
+					i(173976),	-- Medallion of Envy (QI!)
 					i(180923),	-- Fearstalker's Ebony Monnion
 					i(180922),	-- Soulbreaker's Ebony Mantle
 					i(180920),	-- Ebony Death Shroud Spaulders
@@ -786,6 +802,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 161298 },	-- Nourman <The Doorman>
 				["coord"] = { 77.5, 39.2, REVENDRETH },
 				["g"] = {
+					i(174092),	-- Mateo's Mirror Shard (QI!)
 					i(180913),	-- Soulbreaker's Ebony Hood
 					i(180915),	-- Ebony Death Shroud Hood
 					i(180914),	-- Fearstalker's Ebony Helm

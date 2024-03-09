@@ -133,6 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				--["provider"] = { "n",  },	--
 				--["coord"] = { , BASTION },
 				["g"] = {
+					i(179321),	-- Gildenite (QI!)
 					i(181372),	-- Tribute of the Ascended
 				},
 			}),

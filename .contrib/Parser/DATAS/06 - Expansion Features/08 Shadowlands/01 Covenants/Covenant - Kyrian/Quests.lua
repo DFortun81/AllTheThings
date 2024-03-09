@@ -212,6 +212,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58787 },	-- Trial of Ascension
 				["provider"] = { "n", 162542 },	-- Kleia
 				["coord"] = { 33.2, 26.1, BASTION },
+				["g"] = {
+					i(174821),	-- Incense of Guidance (QI!)
+				},
 			}),
 			q(61777, {	-- Charging The Blade
 				["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
@@ -444,6 +447,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58175 },	-- The Eternal Forge
 				["provider"] = { "n", 160648 },	-- Sika
 				["coord"] = { 50.1, 20.6, BASTION },
+				["g"] = {
+					i(173910),	-- Gracepetal Incense Burner (QI!)
+					i(173882),	-- Soulsteel Clamps (QI!)
+					i(173909),	-- Sparkling Driftglobe Core (QI!)
+				},
 			}),
 			q(62793, {	-- It's All Coming Together
 				["sourceQuests"] = { 62796 },	-- Return to Adrestes
@@ -603,6 +611,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 60.3, 60.8, REVENDRETH },
 				["g"] = {
 					i(176083),	-- A Personal Affront (QI!)
+					i(176082),	-- Inane Drabblings (QI!)
+					i(176084),	-- List of Demands (QI!)
+					i(174333),	-- Rumors of Favor (QI!)
 				},
 			}),
 			q(58570, {	-- Parting Words

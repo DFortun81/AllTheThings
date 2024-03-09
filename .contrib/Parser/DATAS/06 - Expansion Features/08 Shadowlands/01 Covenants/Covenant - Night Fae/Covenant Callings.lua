@@ -142,6 +142,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 					["coord"] = { 16.5, 52.4, ARDENWEALD },
 					["g"] = {
+						i(179321),	-- Gildenite (QI!)
 						i(181475),	-- Bounty of the Grove Wardens
 					},
 				}),

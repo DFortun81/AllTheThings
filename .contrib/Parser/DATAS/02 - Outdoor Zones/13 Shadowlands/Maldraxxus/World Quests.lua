@@ -124,6 +124,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61545, {	-- Herbalism: Engorged Marrowroot
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(181388),	-- Lush Marrowroot (QI!)
+				},
 			}),
 			q(61611, {	-- Inscription: Litany of Might
 				["requireSkill"] = INSCRIPTION,
@@ -170,6 +173,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61866),	-- Mighty Minions of Maldraxxus
 			q(61537, {	-- Mining: Monolithic Oxxein Cluster
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(181719),	-- Monolithic Oxxein Ore (QI!)
+				},
 			}),
 			q(59234),	-- Mixing a Mess
 			q(58437, {	-- Parts to a Whole
@@ -177,7 +183,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(174110),	-- Disassembly Flag (QI!)
 				},
 			}),
-			q(58505),	-- Planned Demise
+			q(58505, {	-- Planned Demise
+				["g"] = {
+					i(174233),	-- Construct Field Plan (QI!)
+					i(174231),	-- Lich Battle Plan (QI!)
+					i(174232),	-- Vyraz Tactical Plan (QI!)
+				},
+			}),
 			q(59642, {	-- Pulling Hairs
 				["g"] = {
 					i(176846),	-- Corpselouse Bristles (QI!)

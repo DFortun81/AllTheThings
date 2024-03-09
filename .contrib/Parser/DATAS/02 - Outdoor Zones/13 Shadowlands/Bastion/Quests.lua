@@ -82,6 +82,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, BASTION },
+					["g"] = {
+						i(172516),	-- Glowing Viscera (QI!)
+					},
 				}),
 				q(57267, {	-- The Cycle of Anima: Flower Power
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
@@ -613,6 +616,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59262 },	-- Broken Wings
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
+					["g"] = {
+						i(175792),	-- Larion Flight Feather (QI!)
+					},
 				}),
 				q(60660, {	-- Flight Test
 					["sourceQuests"] = { 59263 },	-- Feathers of Flight
@@ -691,6 +697,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.2, 56.8, BASTION },
 					["g"] = {
+						i(172141),	-- Korinna's Allaying Crook (QI!)
 						i(175616),	-- Courageous Aspirant's Gloves
 						i(175619),	-- Humble Aspirant's Gauntlets
 						i(175617),	-- Judicious Aspirant's Gauntlets
@@ -723,11 +730,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57861 },	-- Just Act Natural
 					["provider"] = { "n", 159272 },	-- Artificer Ligiea
 					["coord"] = { 42.7, 39.3, BASTION },
+					["g"] = {
+						i(175754),	-- Mark of Humility (QI!)
+					},
 				}),
 				q(57914, {	-- Mark of Knowledge
 					["sourceQuests"] = { 57861 },	-- Just Act Natural
 					["provider"] = { "n", 159272 },	-- Artificer Ligiea
 					["coord"] = { 42.7, 39.3, BASTION },
+					["g"] = {
+						i(175755),	-- Mark of Knowledge (QI!)
+					},
 				}),
 				q(57966, {	-- You Go First
 					["sourceQuests"] = {
@@ -1012,6 +1025,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "o", 352027 },	-- Wanted Scroll
 				["coord"] = { 53.2, 46.4, BASTION },
 				["g"] = {
+					i(178683),	-- Gorgebeak's Bill (QI!)
 					i(173345),	-- Cranefeather Bracers
 					i(173346),	-- Beakblockers
 					i(173347),	-- Down-Lined Wristguards

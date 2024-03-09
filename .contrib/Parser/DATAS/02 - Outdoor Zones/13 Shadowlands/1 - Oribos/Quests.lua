@@ -733,6 +733,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["g"] = {
+					i(178575),	-- Golden Orb of Energy (QI!)
 					i(178591),	-- Ancient Venthyr Relic
 					i(178575),	-- Golden Orb of Energy (QI!)
 					i(178593),	-- Intricate Fae Groveweave

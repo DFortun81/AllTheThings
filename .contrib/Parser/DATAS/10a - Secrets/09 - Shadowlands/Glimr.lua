@@ -14,6 +14,9 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60605 },	-- Glimmerfin Scale
 				["provider"] = { "n", 25197 },	-- King Mrgl-Mrgl
 				["coord"] = { 43.5, 13.9, BOREAN_TUNDRA },
+				["g"] = {
+					i(180010),	-- Meaty Crab Chunk (QI!)
+				},
 			}),
 			q(60614, {	-- A Big Horkin' Task
 				["sourceQuests"] = { 60606 },	-- Glimmerfin Welcome
@@ -29,6 +32,9 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60615 },	-- Seer of the Waves
 				["provider"] = { "n", 169415 },	-- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
+				["g"] = {
+					i(180026),	-- Giant Pearl (QI!)
+				},
 			}),
 			q(60617, {	-- Trainer's Test
 				["sourceQuests"] = { 60616 },	-- Pearl in the Deeps

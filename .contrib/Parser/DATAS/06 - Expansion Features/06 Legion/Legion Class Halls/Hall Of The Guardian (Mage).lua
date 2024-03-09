@@ -297,6 +297,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 42452,	-- Finding Ebonchill
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["coord"] = { 59.1, 43.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+							["g"] = {
+								i(141327),	-- Functional Ward (QI!)
+								i(173698),	-- Karazhan Scroll (QI!)
+								i(141329),	-- Ritual Focusing Crystal (QI!)
+								i(141328),	-- Ritual Notes (QI!)
+							},
 						}),
 						q(42477, {	-- Daio the Decrepit
 							["sourceQuest"] = 42452,	-- Finding Ebonchill

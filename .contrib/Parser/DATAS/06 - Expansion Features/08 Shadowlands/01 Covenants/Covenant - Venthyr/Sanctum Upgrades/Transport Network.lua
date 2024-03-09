@@ -290,6 +290,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
+										["g"] = {
+											i(182112),	-- Handcrafted Mirror Repair Kit (QI!)
+										},
 									}),
 								}),
 								n(REWARDS, {

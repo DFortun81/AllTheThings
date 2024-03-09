@@ -1190,6 +1190,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["coord"] = { 55.3, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183796),	-- Marrowgrub Flesh (QI!)
+											i(174270),	-- Tasty Bone (QI!)
+										},
 									}),
 									q(62261, {	-- Grinder
 										["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
@@ -1239,6 +1243,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["coord"] = { 55.3, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(177879),	-- Maldraxxi Bone Marrow (QI!)
+										},
 									}),
 									q(59293, {	-- Special Formula
 										["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag

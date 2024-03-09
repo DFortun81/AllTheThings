@@ -557,6 +557,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59063 },	-- Curses!
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
 				["coord"] = { 44.0, 37.1, THE_TRUNK },
+				["g"] = {
+					i(175139),	-- Mischief-touched Anima (QI!)
+				},
 			}),
 			q(59069, {	-- A Token of Lost Love
 				["sourceQuests"] = { 59063 },	-- Curses!
@@ -624,6 +627,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61061 },	-- Ulfar's Guidance
 				["provider"] = { "n", 141159 },	-- Ulfar
 				["coord"] = { 45.2, 45.8, DRUSTVAR },
+				["g"] = {
+					i(180625),	-- Imbued Drust Fetish (QI!)
+				},
 			}),
 			q(61102, {	-- Kivarr the Thornspeaker
 				["sourceQuests"] = { 61076 },	-- Into the Flame
@@ -644,6 +650,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61701 },	-- Searching the Grove
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 46.6, 73.1, ARDENWEALD },
+				["g"] = {
+					i(182639),	-- Gilded Skull Key (QI!)
+					i(182641),	-- Lustrous Silver Key (QI!)
+					i(180777),	-- Thros-Forged Key (QI!)
+				},
 			}),
 			q(61702, {	-- A Swift Intervention
 				["sourceQuests"] = { 58773 },	-- The Thornspeaker Captive
@@ -740,6 +751,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 58447 },	-- Monster Hunting
 				["provider"] = { "n", 165841 },	-- Huln Highmountain
 				["coord"] = { 35.3, 51.2, ARDENWEALD },
+				["g"] = {
+					i(175753),	-- Life-Hardened Anima (QI!)
+				},
 			}),
 			q(59721, {	-- Becoming the Hunt
 				["sourceQuests"] = {

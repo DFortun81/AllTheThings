@@ -138,6 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					--["provider"] = { "n",  },	--
 					--["coord"] = { , MALDRAXXUS },
 					["g"] = {
+						i(179321),	-- Gildenite (QI!)
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),

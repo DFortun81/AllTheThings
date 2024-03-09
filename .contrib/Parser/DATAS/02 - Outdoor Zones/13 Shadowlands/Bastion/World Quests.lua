@@ -35,7 +35,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(62235, {	-- Allay Their Fears
-				i(183045),	-- Korinna's Allaying Crook
+				["g"] = {
+					i(183045),	-- Korinna's Allaying Crook (QI!)
+				},
 			}),
 			q(59601, {	-- Assault on the Vestibule
 				i(176805),	-- Centurion Armor Fragment (QI!)
@@ -105,6 +107,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59658),	-- Express Dominance
 			q(61442, {	-- Fishing: Glorious Shimmerfin
 				["requireSkill"] = FISHING,
+				["g"] = {
+					i(181954),	-- Glorious Shimmerfin (QI!)
+				},
 			}),
 			q(60844),	-- Flight School: Falling With Style
 			q(60911, {	-- Flight School: Flapping Frenzy
@@ -166,8 +171,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61787),	-- Micro Defense Force
 			q(61467, {	-- Mining: Luminous Solenium Cluster
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(181450),	-- Luminous Solenium Ore (QI!)
+				},
 			}),
-			q(61967),	-- Remedial Lessons
+			q(61967, {	-- Remedial Lessons
+				["g"] = {
+					i(182457),	-- Mirror Fragment (QI!)
+					i(182458),	-- Mirror of Ancient Teachings (QI!)
+					i(182477),	-- Sacred Text (QI!)
+				},
+			}),
 			q(61468, {	-- Skinning: Plush Copperfur Pelts
 				["requireSkill"] = SKINNING,
 			}),

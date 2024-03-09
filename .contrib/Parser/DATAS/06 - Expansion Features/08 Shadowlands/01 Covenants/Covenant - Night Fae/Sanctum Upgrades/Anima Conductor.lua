@@ -195,6 +195,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								q(62081, {	-- Return Those Animacones!
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["g"] = {
+										i(182619),	-- Looted Animacone (QI!)
+									},
 								}),
 								q(62155, {	-- Runestone Roundup
 									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
@@ -210,8 +213,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(62068, {	-- Gormling Piper: Crumbled Ridge
 									i(182611),	-- Fae Flute (QI!)
 								}),
-								q(61394, {	-- Gormling Toss: Tranquil Pools
-									i(181284),	-- Gormling in a Bag (QI!)
+								q(61394, {	-- Gormling Piper: Tranquil Pools
+									["g"] = {
+										i(181284),	-- Gormling in a Bag (QI!)
+									},
 								}),
 								q(61717, {	-- Gormling Piper: Tranquil Pools
 									i(182189),	-- Fae Flute (QI!)

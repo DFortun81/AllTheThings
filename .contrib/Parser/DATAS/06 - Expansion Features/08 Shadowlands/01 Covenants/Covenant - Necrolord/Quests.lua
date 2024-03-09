@@ -235,6 +235,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61749 },	-- Necessary Ingredients
 				["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
 				["coord"] = { 69.9, 32.7, MALDRAXXUS },
+				["g"] = {
+					i(182678),	-- Intact Spore Cluster (QI!)
+				},
 			}),
 			q(61252, {	-- Call In a Favor
 				["sourceQuests"] = { 61230 },	-- Outside Influence
@@ -588,6 +591,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
 				["coord"] = { 50.0, 17.9, MALDRAXXUS },
+				["g"] = {
+					i(175796),	-- Loose Stitch's Key (QI!)
+					i(173312),	-- Toc's Key (QI!)
+				},
 			}),
 			q(58624, {	-- Pauldrons of Imperium
 				["sourceQuests"] = { 58608 },	-- It's Treason, Then

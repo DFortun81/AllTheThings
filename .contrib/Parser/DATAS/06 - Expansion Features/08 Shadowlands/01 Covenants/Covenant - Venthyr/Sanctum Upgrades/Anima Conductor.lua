@@ -100,6 +100,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173127 },	-- Thinman
 									["coord"] = { 71.4, 74.4, REVENDRETH },
+									["g"] = {
+										i(182583),	-- Mire Creeper (QI!)
+									},
 								}),
 								q(61734, {	-- Census of Sins
 									["provider"] = { "n", 173532 },	-- Lady Sinrender
@@ -108,6 +111,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(61707, {	-- Crumbled Reality
 									["provider"] = { "n", 173036 },	-- Thickman
 									["coord"] = { 71.3, 74.5, REVENDRETH },
+									["g"] = {
+										i(182158),	-- Infused Rubble (QI!)
+									},
 								}),
 								q(61846, {	-- Edict of Doom: Dredbats
 									-- ["sourceQuests"] = { ? },	--

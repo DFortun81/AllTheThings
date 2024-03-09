@@ -83,6 +83,11 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 161666 },	-- Austin Huxworth
 					["coord"] = { 52.4, 55.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(175979),	-- Ice Mote (QI!)
+						i(175981),	-- Rusted Chain (QI!)
+						i(175980),	-- Old Spring (QI!)
+					},
 				}),
 				q(59356, {	-- Hunting the Stalker [A]
 					["sourceQuests"] = { 59355 },	-- A Hunter's Trap [A]
@@ -107,6 +112,11 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 167215 },	-- Mithdran Dawntracker
 					["coord"] = { 52.4, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(175979),	-- Ice Mote (QI!)
+						i(175981),	-- Rusted Chain (QI!)
+						i(175980),	-- Old Spring (QI!)
+					},
 				}),
 				q(59953, {	-- Hunting the Stalker [H]
 					["sourceQuests"] = { 59952 },	-- A Hunter's Trap [H]
@@ -127,6 +137,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156886 },	-- Meredy Huntswell
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(175975),	-- Meredy's Spell Book (QI!)
+					},
 				}),
 				q(59354, {	-- The Best Way to Use Sheep [A]
 					["sourceQuests"] = { 59352 },	-- A Mage's Knowledge [A]
@@ -139,6 +152,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 167216 },	-- Grunt Throg
 					["coord"] = { 52.0, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(178229),	-- Herbert's Spell Book (QI!)
+					},
 				}),
 				q(59955, {	-- The Best Way to Use Sheep [H]
 					["sourceQuests"] = { 59954 },	-- A Mage's Knowledge

@@ -173,6 +173,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 168880,	-- Sentry Joren
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
+				["g"] = {
+					i(181497),	-- Interrogator's Key (QI!)
+				},
 			}),
 			q(62553, {	-- Delaying Their Efforts
 				["coord"] = { 71.0, 21.9, ICECROWN },
@@ -191,6 +194,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 167572,	-- Crystal Brightspark
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
+				["g"] = {
+					i(183139),	-- Mature Spore Sample (QI!)
+				},
 			}),
 			q(59782, {	-- The Deathspeaker's Devout
 				["coord"] = { 66.0, 21.9, ICECROWN },
@@ -371,6 +377,10 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["qg"] = 167577,	-- Brollen Wheatbeard
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
+				["g"] = {
+					i(183757),	-- Jagged Blade (QI!)
+					i(183758),	-- Battleworn Chainmail (QI!)
+				},
 			}),
 			-- repeatables below
 			q(62401, {	-- Strange Scourgestones

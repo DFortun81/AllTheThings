@@ -107,6 +107,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },	-- pre-SL scenario
+					["g"] = {
+						i(178553),	-- Mawsworn Key (QI!)
+					},
 				}),
 				q(59776, {	-- From the Mouths of Madness
 					["sourceQuests"] = {

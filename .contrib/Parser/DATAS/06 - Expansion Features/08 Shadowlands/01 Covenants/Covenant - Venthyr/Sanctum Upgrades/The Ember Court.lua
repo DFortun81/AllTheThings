@@ -999,6 +999,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(176131, {	-- Contract: Glimpse of the Wilds (EC!)
 											["questID"] = 59491,
 										}),
+										i(183944),	-- Heron Net (QI!)
 									},
 								}),
 								q(61704, {	-- Ember Court: Guest RSVPs
@@ -1043,6 +1044,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(176128, {	-- Contract: Mortal Reminders (EC!)
 											["questID"] = 59476,
 										}),
+										i(181356),	-- Glenzu Original (QI!)
+										i(181354),	-- Regenerative Magma (QI!)
+										i(181367),	-- Ta Cartel Restock List (QI!)
+										i(181336),	-- Talking Frog in a Jar (QI!)
 									},
 								}),
 								q(61406, {	-- Ember Court: Mushroom Surprise
@@ -1471,6 +1476,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["isDaily"] = true,
 									["coord"] = { 70.2, 56.1, REVENDRETH },
 									["g"] = {
+										i(178526),	-- Lost Cryptkeeper's Ring (QI!)
 										i(176120),	-- RSVP: Cryptkeeper Kassir
 									},
 								}),
@@ -1699,6 +1705,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 									["g"] = {
 										i(182683),	-- Dredger Butler (PET!)
+										i(182301),	-- Kaja-Infused Dredger Mix (QI!)
 									},
 								}),
 								q(62180, {	-- Green Muck Dye
@@ -1975,6 +1982,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 162487 },	-- Baroness Vashj
 									["coord"] = { 67.6, 45.9, MALDRAXXUS },
 									["g"] = {
+										i(180846),	-- Colossal Feaster's Head (QI!)
+										i(180850),	-- Morbid Boneguard's Head (QI!)
+										i(180849),	-- Soul-Rotted Flesh Head (QI!)
+										i(180848),	-- Steelskin Linebreaker's Head (QI!)
 										i(176097),	-- RSVP: Baroness Vashj
 									},
 								}),
@@ -2004,6 +2015,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 171106 },	-- The Countess
 									["coord"] = { 58.0, 27.4, REVENDRETH },
 									["g"] = {
+										i(180497),	-- House Iremoore Disguise (QI!)
 										i(176114),	-- RSVP: The Countess
 									},
 								}),

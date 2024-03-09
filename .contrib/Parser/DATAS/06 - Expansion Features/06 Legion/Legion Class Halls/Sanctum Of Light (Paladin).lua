@@ -183,6 +183,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+							["g"] = {
+								i(173537),	-- Glowing Hearthstone (QI!)
+							},
 						}),
 						q(42772, {	-- Sacred Ground
 							["sourceQuests"] = { 42770 },	-- Seeking Guidance
@@ -203,6 +206,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 42773 },	-- The Light Reveals
 							["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 52.1, 83.2, WESTERN_PLAGUELANDS },
+							["g"] = {
+								i(173538),	-- Hippogryph Whistle (QI!)
+							},
 						}),
 						q(38376, {	-- The Search for the Highlord
 							["sourceQuests"] = { 42774 },	-- Hope Prevails

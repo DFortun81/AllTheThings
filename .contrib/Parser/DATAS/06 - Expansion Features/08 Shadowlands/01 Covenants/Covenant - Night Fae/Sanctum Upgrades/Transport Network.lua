@@ -82,7 +82,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(62608),	-- A Royal Treat
-								q(60175),	-- A Taste of Tirna Noch
+								q(60175, {	-- A Taste of Tirna Noch
+									["g"] = {
+										i(178215),	-- Leafy Loam (QI!)
+									},
+								}),
 								q(62607),	-- Glittering Gritty Goodness
 								q(62614),	-- Hyphae Patrol: Eventide Grove
 								q(62615),	-- Hyphae Patrol: Gossamer Cliffs

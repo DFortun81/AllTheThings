@@ -139,6 +139,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 					["provider"] = { "n", 163576 },	-- Echelon
 					["coord"] = { 67.4, 53.5, REVENDRETH },
+					["g"] = {
+						i(171100),	-- Hidden Sinstone Fragment (QI!)
+						i(171101),	-- Hidden Sinstone Fragment (QI!)
+						i(171102),	-- Hidden Sinstone Fragment (QI!)
+						i(171103),	-- Inquisitor Sinstones (QI!)
+					},
 				}),
 				q(59023, {	-- Ending the Inquisitor
 					["sourceQuests"] = { 57175 },	-- Inquisitor Vilhelm's Sinstone
@@ -168,6 +174,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57180 },	-- The Accuser's Secret
 					["provider"] = { "n", 157084 },	-- Lord Chamberlain
 					["coord"] = { 66.3, 50.5, REVENDRETH },
+					["g"] = {
+						i(175756),	-- Medallion of Dominion (QI!)
+					},
 				}),
 				q(59232, {	-- A Lesson in Humility
 					["sourceQuests"] = { 57182 },	-- The Accuser's Fate
@@ -190,6 +199,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57098 },	-- The Grove of Terror
 					["provider"] = { "n", 169087 },	-- The Fearstalker
 					["coord"] = { 50.6, 73.8, REVENDRETH },
+					["g"] = {
+						i(179388),	-- Hopebreaker Soul Chains (QI!)
+					},
 				}),
 				q(58941, {	-- Alpha Bat
 					["sourceQuests"] = { 58916 },	-- Dread Priming
@@ -283,6 +295,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 168468 },	-- The Accuser
 					["coord"] = { 39.6, 81.2, REVENDRETH },
 					["g"] = {
+						i(175770),	-- Medallion of Dread (QI!)
 						i(175487),	-- Nightcloaked Shoes
 						i(175485),	-- Shoes of Pained Absolution
 						i(175486),	-- Soul Hunter's Boots
@@ -586,6 +599,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57471 },	-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
+					["g"] = {
+						i(171966),	-- Gem of Binding (QI!)
+					},
 				}),
 				q(57477, {	-- We're Gonna Need a Bigger Dredger
 					["sourceQuests"] = { 57474 },	-- Dredger Duty
@@ -697,11 +713,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60051 },	-- A Master of Their Craft
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, REVENDRETH },
+					["g"] = {
+						i(172074),	-- Laurent's Belongings (QI!)
+					},
 				}),
 				q(57532, {	-- Foraging for Fragments
 					["sourceQuests"] = { 57531 },	-- An Unfortunate Situation
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, REVENDRETH },
+					["g"] = {
+						i(172085),	-- Mirror Fragment (QI!)
+						i(172086),	-- Mirror Fragment (QI!)
+						i(172087),	-- Mirror Fragment (QI!)
+					},
 				}),
 				q(57571, {	-- Moving Mirrors
 					["sourceQuests"] = { 57532 },	-- Foraging for Fragments
@@ -806,16 +830,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
+						i(182315),	-- Infused Endmire Fruit (QI!)
 						i(182592),	-- Infused Endmire Fruit
-					}
+					},
 				}),
 				q(61844, {	-- Hungry Hungry Gorger
 					["sourceQuests"] = { 61842 },	-- Vineroot Will Not Do
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
+						i(182315),	-- Infused Endmire Fruit (QI!)
 						i(182593),	-- Sinrunner Carving
-					}
+					},
 				}),
 				q(62044, {	-- Standing Toe To Toe
 					["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
@@ -935,16 +961,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60480, {	-- The Endmire
 				["provider"] = { "n", 168618 },	-- Tessle the Snitch
 				["coord"] = { 65.1, 63.5, REVENDRETH },
+				["g"] = {
+					i(175751),	-- Infused Ruby (QI!)
+				},
 			}),
 			q(58060, {	-- The Night Market
 				["provider"] = { "n", 160100 },	-- Provisioner Dracho
 				["coord"] = { 61.0, 39.6, REVENDRETH },
+				["g"] = {
+					i(173689),	-- Hastily Wrapped Package (QI!)
+				},
 			}),
 			q(58272, {	-- Words Have Power
 				["sourceQuests"] = { 56942 },	-- On The Road Again
 				["provider"] = { "o", 352490 },	-- Join the Rebellion!
 				["coord"] = { 67.7, 67.6, REVENDRETH },
 				["g"] = {
+					i(173945),	-- Join the Prince! (QI!)
 					i(177665),	-- Spectral Hankerchief
 				},
 			}),

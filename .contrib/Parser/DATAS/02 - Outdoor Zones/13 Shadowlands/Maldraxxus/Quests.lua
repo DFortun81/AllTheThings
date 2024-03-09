@@ -197,6 +197,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59172 },	-- War is Deception
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, MALDRAXXUS },
+					["g"] = {
+						i(178684),	-- Maldracite Dust (QI!)
+					},
 				}),
 				q(59210, {	-- Tainted Cores
 					["sourceQuests"] = { 59172 },	-- War is Deception
@@ -211,6 +214,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 164297 },	-- Khaliiq
 					["coord"] = { 67.7, 45.6, MALDRAXXUS },
 					["g"] = {
+						i(178657),	-- Halen's Ritual Drafts (QI!)
+						i(178655),	-- Lye's Ritual Drafts (QI!)
+						i(178656),	-- Xeeli's Ritual Drafts (QI!)
 						i(175459),	-- Corpse-Stitcher's Hood
 						i(175446),	-- Cruel Executioner's Helmet
 						i(175461),	-- Deceitful Agent's Helm
@@ -586,6 +592,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62785 },	-- I Could Be A Contender
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+					["g"] = {
+						i(177837),	-- Bloodtusk Skull (QI!)
+						i(177835),	-- Louison's Gristle Cutter (QI!)
+					},
 				}),
 				q(59781, {	-- The Last Guy
 					["sourceQuests"] = { 62785 },	-- I Could Be A Contender
@@ -756,6 +766,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162474 },	-- Dundae
 					["coord"] = { 46.8, 48.5, MALDRAXXUS },
+					["g"] = {
+						i(174749),	-- Bone Splinter (QI!)
+						i(174751),	-- Juicy Nibbler (QI!)
+					},
 				}),
 				q(58794, {	-- Stabbing Wasteward
 					["sourceQuests"] = {
@@ -808,6 +822,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62462, {	-- WANTED: The Key of Eyes
 				["provider"] = { "o", 358382 },	-- Wanted: Chelicera
 				["coord"] = { 53.0, 41.4, MALDRAXXUS },
+				["g"] = {
+					i(183728),	-- Key of Eyes (QI!)
+				},
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands

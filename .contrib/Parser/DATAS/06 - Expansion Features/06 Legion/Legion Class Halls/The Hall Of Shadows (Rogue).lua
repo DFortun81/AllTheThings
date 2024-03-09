@@ -194,6 +194,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 							["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
+							["g"] = {
+								i(173528),	-- Gilded Hearthstone (QI!)
+							},
 						}),
 						q(40849, {	-- The Dreadblades
 							["sourceQuest"] = 40847,	-- A Friendly Accord

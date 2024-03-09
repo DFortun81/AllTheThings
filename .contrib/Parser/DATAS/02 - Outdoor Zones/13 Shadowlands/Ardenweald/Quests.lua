@@ -30,6 +30,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
 					["provider"] = { "n", 170324 },	-- Featherlight
 					["coord"] = { 67.7, 20.6, ARDENWEALD },
+					["g"] = {
+						i(180436),	-- List of wildseeds (QI!)
+					},
 				}),
 				q(60859, {	-- Souls of the Forest
 					["sourceQuests"] = { 60857 },	-- We Can't Save Them All
@@ -74,6 +77,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 169202 },	-- Dreamweaver
 					["coord"] = { 61.4, 40.9, ARDENWEALD },
 					["g"] = {
+						i(179921),	-- Hydra Gutter (QI!)
 						i(175673),	-- Dreamthorn Chain
 						i(175671),	-- Grove Warden's Girdle
 						i(175672),	-- Spirit Tender's Cord
@@ -98,6 +102,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 169217 },	-- Dreamweaver
 					["coord"] = { 62.1, 36.4, ARDENWEALD },
+					["g"] = {
+						i(179978),	-- Infused Animacones (QI!)
+						i(179983),	-- Infused Animacones (QI!)
+					},
 				}),
 				q(57947, {	-- Spirits of the Glen
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
@@ -373,6 +381,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58486 },	-- He's Drust in the Way
 					["provider"] = { "n", 161492 },	-- Ara'lon
 					["coord"] = { 71.4, 54.5, ARDENWEALD },
+					["g"] = {
+						i(174269),	-- Heart of Tirna Noch (QI!)
+					},
 				}),
 				q(58524, {	-- Sparkles Rain from Above
 					["sourceQuests"] = { 58488 },	-- Go for the Heart
@@ -502,6 +513,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57661 },	-- Silk Shortage
 					["provider"] = { "o", 350804 },	-- Broken Harp
 					["coord"] = { 38.1, 28.7, ARDENWEALD },
+					["g"] = {
+						i(178138),	-- Harp Piece (QI!)
+					},
 				}),
 				q(60063, {	-- A Song for Silkstriders
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
@@ -574,6 +588,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171195 },	-- Gorm Burrow
 					["coord"] = { 62.1, 29.9, ARDENWEALD },
+					["g"] = {
+						i(173534),	-- Gormherd Branch (QI!)
+					},
 				}),
 				q(58022, {	-- Finish What He Started
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
@@ -589,12 +606,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58023 },	-- One Big Problem
 					["provider"] = { "n", 160155 },	-- Guardian Kota
 					["coord"] = { 59.6, 33.4, ARDENWEALD },
+					["g"] = {
+						i(172955),	-- Gormherd Branch (QI!)
+						i(173534),	-- Gormherd Branch (QI!)
+					},
 				}),
 				q(58026, {	-- When a Gorm Eats a God
 					["sourceQuests"] = { 58025 },	-- Queen of the Underground
 					["provider"] = { "n", 160155 },	-- Guardian Kota
 					["coord"] = { 59.6, 33.4, ARDENWEALD },
 					["g"] = {
+						i(173534),	-- Gormherd Branch (QI!)
 						i(175665),	-- Dreamthorn Legguards
 						i(175663),	-- Grove Warden's Greaves
 						i(175664),	-- Spirit Tender's Leggings
@@ -631,6 +653,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
 					["coord"] = { 46.6, 29.4, ARDENWEALD },
+					["g"] = {
+						i(172950),	-- Jar of Clay (QI!)
+					},
 				}),
 				q(57656, {	-- Gifts of the Forest
 					["sourceQuests"] = {
@@ -889,6 +914,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(57652, {	-- Supplies Needed: Amber Grease
 				["provider"] = { "o", 348747 },	-- Muddy Scroll
 				["coord"] = { 46.9, 27.6, ARDENWEALD },
+				["g"] = {
+					i(172221),	-- Giant Gorm Gris (QI!)
+				},
 			}),
 			q(57655, {	-- Supplies Needed: More Husks!
 				["provider"] = { "o", 336415 },	-- Discarded Scroll
@@ -963,6 +991,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 63.3, 39.3, ARDENWEALD },
 					["g"] = {
 						i(172948),	-- Animacone (QI!)
+						i(179921),	-- Hydra Gutter (QI!)
 						i(181420),	-- Faemoss Amice
 						i(181421),	-- Gormhusk Mantle
 						i(181418),	-- Runetender Shoulderguards

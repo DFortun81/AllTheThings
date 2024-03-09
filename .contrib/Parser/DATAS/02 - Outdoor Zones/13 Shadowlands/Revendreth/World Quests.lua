@@ -110,6 +110,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59803),	-- For Honor
 			q(61544, {	-- Herbalism: Lush Widowbloom
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(181762),	-- Lush Widowbloom (QI!)
+				},
 			}),
 			q(61624, {	-- Inscription: Catalog of Sins
 				["requireSkill"] = INSCRIPTION,
@@ -161,8 +164,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62204),	-- Major Mirror Disruptions
 			q(61538, {	-- Mining: Menacing Sinvyr Cluser
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(181720),	-- Menacing Sinvyr Ore (QI!)
+				},
 			}),
-			q(60653),	-- Mirror Restoration
+			q(60653, {	-- Mirror Restoration
+				["g"] = {
+					i(175384),	-- Glass Shard (QI!)
+				},
+			}),
 			q(59808, {	-- Muck it Up
 				n(166292, {	-- Bog Beast
 					["description"] = "Only available when the |cFFFFD700Muck It Up|r world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
@@ -187,6 +197,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61627, {	-- Skinning: Horrific Leather Hide
 				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(181970),	-- Horrific Leather Hide (QI!)
+				},
 			}),
 			q(58084),	-- Soul Snares
 			q(59617),	-- Stone Fiend Saboteurs
