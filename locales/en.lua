@@ -127,7 +127,6 @@ for key, value in pairs({
 	["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 	["UNSORTED_1"] = "Unsorted";
-	["UNSORTED_2"] = " (Unsorted)";
 	["UNSORTED_DESC"] = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
 	["NEVER_IMPLEMENTED"] = "Never Implemented";
 	["NEVER_IMPLEMENTED_DESC"] = "Items here technically exist within the game but have never been made available to players";
