@@ -927,13 +927,6 @@ local function RowOnEnter(self)
 	if reference.questID and not reference.objectiveID then
 		app.AddQuestObjectives(tooltipInfo, reference);
 	end
-	if reference.sym then
-		tinsert(tooltipInfo, {
-			left = "Right click to view more information.",
-			r = 0.8, g = 0.8, b = 1,
-			wrap = true,
-		});
-	end
 	
 	
 	if reference.cost then

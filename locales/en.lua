@@ -318,6 +318,7 @@ for key, value in pairs({
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000"..ALT_KEY_TEXT.." click to Unlock this Window";
 	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
 	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
+	["SYM_ROW_SKIP_DESC"] = "Linked content is only displayed in the tooltip for this object.";
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["COMPLETED_BY"] = "Completed By: %s";
 	["OWNED_BY"] = "Owned by %s";

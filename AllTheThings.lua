@@ -9721,14 +9721,6 @@ RowOnEnter = function (self)
 		tooltip.ATT_AttachComplete = true;
 	end
 
-	-- Has a symlink for additonal information
-	if reference.sym then
-		tinsert(tooltipInfo, {
-			left = L.SYM_ROW_INFORMATION,
-			wrap = true,
-		});
-	end
-
 	-- Ignored for Source/Progress
 	if reference.sourceIgnored then
 		tinsert(tooltipInfo, {

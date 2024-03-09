@@ -540,7 +540,28 @@ local InformationTypes = {
 			end
 		end,
 	});
-
+	CreateInformationType("sym", {
+		priority = 2.8,
+		text = "SymLink",
+		ForceActive = true,
+		Process = function(t, reference, tooltipInfo)
+			if reference.skipFill then
+				tinsert(tooltipInfo, {
+					left = L.SYM_ROW_SKIP_DESC,
+					r = 0.8, g = 0.8, b = 1,
+					wrap = true,
+				});
+			end
+			if reference.sym then
+				tinsert(tooltipInfo, {
+					left = L.SYM_ROW_INFORMATION,
+					r = 0.8, g = 0.8, b = 1,
+					wrap = true,
+				});
+			end
+		end,
+	});
+	
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3,
 		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
