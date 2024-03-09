@@ -166,26 +166,27 @@ local function GetGroupSortValue(group)
 		return -2;
 	end
 end
+local function stringComparison(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		return false;
+	end
+	-- Any two similar-type groups with text
+	a = tostring(a):lower();
+	b = tostring(b):lower();
+	return a < b;
+end
 app.SortDefaults = setmetatable({
 	-- Naming Convention: Capital = Special Sort Function, lowercase = field on an object
 	Global = defaultComparison,
-	Strings = function(a,b)
-		-- If either object doesn't exist
-		if a then
-			if not b then
-				return true;
-			end
-		elseif b then
-			return false;
-		else
-			-- neither a or b exists, equality returns false
-			return false;
-		end
-		-- Any two similar-type groups with text
-		a = tostring(a):lower();
-		b = tostring(b):lower();
-		return a < b;
-	end,
+	Strings = stringComparison,
 	Values = function(a,b)
 		-- If either object doesn't exist
 		if a then
@@ -354,6 +355,9 @@ app.SortDefaults = setmetatable({
 	end,
 	progress = function(a, b)
 		return GetGroupSortValue(a) > GetGroupSortValue(b);
+	end,
+	IndexOneStrings = function(a,b)
+		return stringComparison(a[1], b[1]);
 	end,
 }, {
 	__index = function(t, sortType)
