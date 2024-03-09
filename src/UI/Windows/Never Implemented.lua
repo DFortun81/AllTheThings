@@ -1,5 +1,6 @@
 -- App locals
 local appName, app = ...;
+local L = app.L;
 
 -- Implementation
 app:CreateWindow("Never Implemented", {
@@ -8,15 +9,17 @@ app:CreateWindow("Never Implemented", {
 		local g = app.Categories.NeverImplemented;
 		if g then
 			local nyiData = app.CacheFields({
-				text = "Never Implemented",
+				text = L.NEVER_IMPLEMENTED,
 				icon = app.asset("Interface_Tchest"),
+				description = L.NEVER_IMPLEMENTED_DESC,
+				font = "GameFontNormalLarge",
 				visible = true,
 				hideText = true,
-				indent = 1,
+				u = 1,
 				g = g,
 			});
-			app.AssignFieldValue(nyiData, "u", 1);
-			nyiData.u = nil;
+			--app.AssignFieldValue(nyiData, "u", 1);
+			--nyiData.u = nil;
 			self.data = nyiData;
 			self:AssignChildren();
 		end

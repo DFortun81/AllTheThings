@@ -10,6 +10,9 @@ local L = app.L;
 local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
 
+-- Abbreviations
+L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
+
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L.TITLE
 BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L.TOGGLE_ACCOUNT_MODE
@@ -1088,7 +1091,12 @@ local function GetUnobtainableTexture(group)
 		else
 			local record = L["AVAILABILITY_CONDITIONS"][u];
 			if record then
-				filter = record[1] or 0;
+				if not record[5] or app.GameBuildVersion < record[5] then
+					filter = record[1] or 0;
+				else
+					-- This is a phase that's available. No icon.
+					return;
+				end
 			else
 				-- otherwise it's an invalid unobtainable filter
 				app.print("Invalid Unobtainable Filter:",u);
@@ -2492,6 +2500,33 @@ local TooltipSourceFields = {
 	"questID"
 };
 local InitialCachedSearch;
+local SourceLocationSettingsKey = setmetatable({
+	creatureID = "SourceLocations:Creatures",
+}, {
+	__index = function(t, key)
+		return "SourceLocations:Things";
+	end
+});
+local UnobtainableTexture = "|T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local function HasCost(group, idType, id)
+	-- check if the group has a cost which includes the given parameters
+	if group.cost and type(group.cost) == "table" then
+		if idType == "itemID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "i" then
+					return true;
+				end
+			end
+		elseif idType == "currencyID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "c" then
+					return true;
+				end
+			end
+		end
+	end
+	return false;
+end
 local function GetRelativeDifficulty(group, difficultyID)
 	if group then
 		if group.difficultyID then
@@ -2704,10 +2739,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
-	-- app.PrintDebug("SourceLocations?",isTopLevelSearch,app.Settings:GetTooltipSetting("SourceLocations"),paramA,app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))
-	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
 		local temp, text, parent = {};
-		local unfiltered, uTexture = {};
+		local unfiltered, right = {};
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
@@ -2716,60 +2750,60 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		local abbrevs = L["ABBREVIATIONS"];
 		for _,j in ipairs(group.g or group) do
 			parent = j.parent;
-			-- app.PrintDebug("SourceLine?",parent and parent.hash,parent and parent.hideText,parent and parent.parent,app.IsComplete(j),app.HasCost(j, paramA, paramB))
-			if parent and not parent.hideText and parent.parent
+			if parent and not FirstParent(j, "hideText") and parent.parent
 				and (showCompleted or not app.IsComplete(j))
-				and not app.HasCost(j, paramA, paramB)
+				and not HasCost(j, paramA, paramB)
 			then
 				text = app.GenerateSourcePathForTooltip(parent);
-				if showUnsorted or (not text:match(L["UNSORTED"]) and not text:match(L["HIDDEN_QUEST_TRIGGERS"])) then
+				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
 					for source,replacement in pairs(abbrevs) do
 						text = text:gsub(source, replacement);
 					end
 					-- doesn't meet current unobtainable filters
 					if not FilterUnobtainable(parent) then
-						tinsert(unfiltered, text .. " |TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t");
+						tinsert(unfiltered, { text, UnobtainableTexture });
 					-- from obtainable, different character source
 					elseif not FilterCharacter(parent) then
-						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Offline:0|t");
+						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
-						uTexture = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u"));
-						-- add the texture to the source line
-						if uTexture then
-							text = text .. " |T" .. uTexture .. ":0|t";
-						end
-						tinsert(temp, text);
+						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+						tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
 					end
 				end
 			end
 		end
 		-- if in Debug or no sources visible, add any unfiltered sources
 		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
-			for _,j in ipairs(unfiltered) do
-				tinsert(temp, j);
+			for _,data in ipairs(unfiltered) do
+				tinsert(temp, data);
 			end
 		end
 		if #temp > 0 then
 			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
 			local count = 0;
-			app.Sort(temp, app.SortDefaults.Strings);
-			for _,j in ipairs(temp) do
-				if not contains(listing, j) then
+			app.Sort(temp, app.SortDefaults.IndexOneStrings);
+			for _,data in ipairs(temp) do
+				text = data[1];
+				right = data[2];
+				if right and right:len() > 0 then
+					text = text .. " " .. right;
+				end
+				if not contains(listing, text) then
 					count = count + 1;
 					if count <= maximum then
-						tinsert(listing, 1, j);
+						tinsert(listing, text);
 					end
 				end
 			end
 			if count > maximum then
-				tinsert(listing, 1, (L.AND_OTHER_SOURCES):format(count - maximum));
+				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
 			end
 			for _,text in ipairs(listing) do
 				if not working and IsRetrieving(text) then working = true; end
 				local left, right = DESCRIPTION_SEPARATOR:split(text);
-				tinsert(tooltipInfo, 1, { left = left, right = right, wrap = wrap });
+				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
 			end
 		end
 	end
@@ -3884,25 +3918,6 @@ app.BuildSourceParent = function(group)
 	end
 end
 end)();
--- check if the group has a cost which includes the given parameters
-app.HasCost = function(group, idType, id)
-	if group.cost and type(group.cost) == "table" then
-		if idType == "itemID" then
-			for i,c in ipairs(group.cost) do
-				if c[2] == id and c[1] == "i" then
-					return true;
-				end
-			end
-		elseif idType == "currencyID" then
-			for i,c in ipairs(group.cost) do
-				if c[2] == id and c[1] == "c" then
-					return true;
-				end
-			end
-		end
-	end
-	return false;
-end
 
 
 
@@ -10979,23 +10994,19 @@ function app:GetDataCache()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	g = {};
-	local unsortedData = app.CreateRawText(L["TITLE"] .. " " .. L["UNSORTED"], {
-		title = L["UNSORTED"] .. DESCRIPTION_SEPARATOR .. app.Version,
-		icon = app.asset("logo_32x32"),
-		preview = app.asset("Discord_2_128"),
-		description = L["UNSORTED_DESC"],
+	local unsortedData = app.CreateRawText(L.UNSORTED, {
+		title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
+		icon = app.asset("WindowIcon_Unsorted"),
+		description = L.UNSORTED_DESC,
 		font = "GameFontNormalLarge",
 		g = g,
-	}, {
-		__index = function(t, key)
-		end
 	});
 
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
 		db = app.CreateRawText(L.NEVER_IMPLEMENTED)
 		db.g = app.Categories.NeverImplemented;
-		db.description = L["NEVER_IMPLEMENTED_DESC"];
+		db.description = L.NEVER_IMPLEMENTED_DESC;
 		db._nyi = true;
 		tinsert(g, db);
 		CacheFields(db, true);
@@ -11004,9 +11015,9 @@ function app:GetDataCache()
 
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
-		db = app.CreateRawText("Hidden Achievement Triggers")
+		db = app.CreateRawText(L.HIDDEN_ACHIEVEMENT_TRIGGERS)
 		db.g = app.Categories.HiddenAchievementTriggers;
-		db.description = "Hidden Achievement Triggers";
+		db.description = L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC;
 		db._hqt = true;
 		tinsert(g, db);
 		CacheFields(db, true);
@@ -11016,7 +11027,7 @@ function app:GetDataCache()
 	if app.Categories.HiddenQuestTriggers then
 		db = app.CreateRawText(L.HIDDEN_QUEST_TRIGGERS)
 		db.g = app.Categories.HiddenQuestTriggers;
-		db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
+		db.description = L.HIDDEN_QUEST_TRIGGERS_DESC;
 		db._hqt = true;
 		tinsert(g, db);
 		CacheFields(db, true);
@@ -11026,7 +11037,7 @@ function app:GetDataCache()
 	if app.Categories.Unsorted then
 		db = app.CreateRawText(L.UNSORTED)
 		db.g = app.Categories.Unsorted;
-		db.description = L["UNSORTED_DESC_2"];
+		db.description = L.UNSORTED_DESC_2;
 		-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
 		db._missing = true;
 		tinsert(g, db);

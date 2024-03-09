@@ -496,9 +496,10 @@ local InformationTypes = {
 	}),
 	CreateInformationType("pb", {
 		priority = 2.7,
+		isRecursive = true,
 		text = L.PET_BATTLES,
 		Process = function(t, reference, tooltipInfo)
-			if reference.pb then
+			if t.GetValue(t, reference) then
 				tinsert(tooltipInfo, {
 					left = L.REQUIRES_PETBATTLES,
 					wrap = true,
@@ -508,9 +509,10 @@ local InformationTypes = {
 	});
 	CreateInformationType("pvp", {
 		priority = 2.7,
+		isRecursive = true,
 		text = PVP,
 		Process = function(t, reference, tooltipInfo)
-			if reference.pvp then
+			if t.GetValue(t, reference) then
 				tinsert(tooltipInfo, {
 					left = L.REQUIRES_PVP,
 					wrap = true,
@@ -520,9 +522,10 @@ local InformationTypes = {
 	});
 	CreateInformationType("u", {
 		priority = 2.7,
+		isRecursive = true,
 		text = L.AVAILABILITY,
 		Process = function(t, reference, tooltipInfo)
-			local u = reference.u;
+			local u = t.GetValue(t, reference);
 			if u then
 				local condition = L.AVAILABILITY_CONDITIONS[u];
 				if condition then

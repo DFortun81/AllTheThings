@@ -10,6 +10,9 @@ local L = app.L;
 local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
 
+-- Abbreviations
+L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
+
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L.TITLE
 BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L.TOGGLE_ACCOUNT_MODE
@@ -239,6 +242,44 @@ app.GetCompletionIcon = GetCompletionIcon;
 app.GetCompletionText = GetCompletionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
 app.GetProgressTextForTooltip = GetProgressTextForTooltip;
+local function GetUnobtainableTexture(group)
+	if not group then return; end
+	if type(group) ~= "table" then
+		-- This function shouldn't be used with only u anymore!
+		app.print("Invalid use of GetUnobtainableTexture", group);
+		return;
+	end
+
+	-- Determine the texture color, default is green for events.
+	-- TODO: Use 4 for inactive events, use 5 for active events
+	local filter, u = 4, group.u;
+	if u then
+		-- only b = 0 (BoE), not BoA/BoP
+		-- removed, elite, bmah, tcg, summon
+		if u > 1 and u < 12 and (group.b or 0) == 0 then
+			filter = 2;
+		else
+			local record = L["AVAILABILITY_CONDITIONS"][u];
+			if record then
+				if not record[5] or app.GameBuildVersion < record[5] then
+					filter = record[1] or 0;
+				else
+					-- This is a phase that's available. No icon.
+					return;
+				end
+			else
+				-- otherwise it's an invalid unobtainable filter
+				app.print("Invalid Unobtainable Filter:",u);
+				return;
+			end
+		end
+		return L["UNOBTAINABLE_ITEM_TEXTURES"][filter];
+	end
+	if group.e then
+		return L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
+	end
+end
+app.GetUnobtainableTexture = GetUnobtainableTexture;
 
 
 app.IsComplete = function(o)
@@ -884,6 +925,33 @@ app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 
 local InitialCachedSearch;
 local IsQuestReadyForTurnIn = app.IsQuestReadyForTurnIn;
+local SourceLocationSettingsKey = setmetatable({
+	creatureID = "SourceLocations:Creatures",
+}, {
+	__index = function(t, key)
+		return "SourceLocations:Things";
+	end
+});
+local UnobtainableTexture = "|T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local function HasCost(group, idType, id)
+	-- check if the group has a cost which includes the given parameters
+	if group.cost and type(group.cost) == "table" then
+		if idType == "itemID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "i" then
+					return true;
+				end
+			end
+		elseif idType == "currencyID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "c" then
+					return true;
+				end
+			end
+		end
+	end
+	return false;
+end
 local function GetRelativeDifficulty(group, difficultyID)
 	if group then
 		if group.difficultyID then
@@ -1136,96 +1204,71 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
-	if app.Settings:GetTooltipSetting("SourceLocations") and (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things")) then
-		local temp = {};
-		local unfiltered = {};
+	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
+		local temp, text, parent = {};
+		local unfiltered, right = {};
+		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
+		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local FilterUnobtainable, FilterCharacter, FirstParent
+			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L["ABBREVIATIONS"];
-		for i,j in ipairs(group) do
-			if j.parent and not GetRelativeValue(j, "hideText") and j.parent.parent
-				and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
-				local text = app.GenerateSourcePathForTooltip(j.parent);
-				for source,replacement in pairs(abbrevs) do
-					text = text:gsub(source, replacement);
-				end
-
-				local right = " ";
-				if j.u then
-					local condition = L["AVAILABILITY_CONDITIONS"][j.u];
-					if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-						right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]] .. ":0|t";
+		for _,j in ipairs(group.g or group) do
+			parent = j.parent;
+			if parent and not FirstParent(j, "hideText") and parent.parent
+				and (showCompleted or not app.IsComplete(j))
+				and not HasCost(j, paramA, paramB)
+			then
+				text = app.GenerateSourcePathForTooltip(parent);
+				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+					for source,replacement in pairs(abbrevs) do
+						text = text:gsub(source, replacement);
 					end
-				end
-				if j.rwp then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][2] .. ":0|t"; end
-				if j.e then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][4] .. ":0|t"; end
-
-				if not app.RecursiveCharacterRequirementsFilter(j.parent) then
-					tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
-				elseif not app.RecursiveUnobtainableFilter(j.parent) then
-					tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" });
-				else
-					tinsert(temp, { text, right });
+					-- doesn't meet current unobtainable filters
+					if not FilterUnobtainable(parent) then
+						tinsert(unfiltered, { text, UnobtainableTexture });
+					-- from obtainable, different character source
+					elseif not FilterCharacter(parent) then
+						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+					else
+						-- check if this needs an unobtainable icon even though it's being shown
+						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+						tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
+					end
 				end
 			end
 		end
-		if (#temp < 1 and not (paramA == "creatureID")) or app.MODE_DEBUG then
-			for i,data in ipairs(unfiltered) do
+		-- if in Debug or no sources visible, add any unfiltered sources
+		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
+			for _,data in ipairs(unfiltered) do
 				tinsert(temp, data);
 			end
 		end
 		if #temp > 0 then
-			local listing, listingByText = {}, {};
+			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
-			for i,data in ipairs(temp) do
-				local text = data[1] or RETRIEVING_DATA;
-				if not listingByText[text] then
-					listingByText[text] = data;
-					tinsert(listing, 1, data);
-					if IsRetrieving(text) then working = true; end
+			local count = 0;
+			app.Sort(temp, app.SortDefaults.IndexOneStrings);
+			for _,data in ipairs(temp) do
+				text = data[1];
+				right = data[2];
+				if right and right:len() > 0 then
+					text = text .. " " .. right;
 				end
-			end
-			local count, splitCounts, splitCount = 0, { };
-			for i,data in ipairs(listing) do
-				local left, right = DESCRIPTION_SEPARATOR:split(data[1]);
-				left = left .. data[2];
-				splitCount = splitCounts[left];
-				if not splitCount then
-					splitCount = { count = 0, data=data, variants ={} };
-					splitCounts[left] = splitCount;
-				end
-				if right and not contains(splitCount.variants, right) then
-					tinsert(splitCount.variants, right);
-					if right:find(BATTLE_PET_SOURCE_2) then
-						splitCount.count = splitCount.count + 1;
-					end
-				end
-			end
-			for left,splitCount in pairs(splitCounts) do
-				if splitCount.count < 6 then
-					if #splitCount.variants == 0 then
-						tinsert(tooltipInfo, 1, { left = left, wrap = not left:find(" > ") });
-						count = count + 1;
-					else
-						for i,right in ipairs(splitCount.variants) do
-							tinsert(tooltipInfo, 1, { left = left, right = right, wrap = not left:find(" > ") });
-							count = count + 1;
-						end
-					end
-				else
-					tinsert(tooltipInfo, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not left:find(" > ") });
+				if not contains(listing, text) then
 					count = count + 1;
-					for i,right in ipairs(splitCount.variants) do
-						if not right:find(BATTLE_PET_SOURCE_2) then
-							tinsert(tooltipInfo, 1, { left = left, right = right, wrap = not left:find(" > ") });
-							count = count + 1;
-						end
+					if count <= maximum then
+						tinsert(listing, text);
 					end
 				end
 			end
-			if count > maximum + 1 then
-				for i=count,maximum + 1,-1 do
-					tremove(tooltipInfo, 1);
-				end
-				tinsert(tooltipInfo, 1, "And " .. (count - maximum) .. " other sources...");
+			if count > maximum then
+				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
+			end
+			for _,text in ipairs(listing) do
+				if not working and IsRetrieving(text) then working = true; end
+				local left, right = DESCRIPTION_SEPARATOR:split(text);
+				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
 			end
 		end
 	end

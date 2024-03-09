@@ -1,5 +1,6 @@
 -- App locals
 local appName, app = ...;
+local L = app.L;
 
 -- Implementation
 app:CreateWindow("Hiddent Achievement Triggers", {
@@ -9,9 +10,10 @@ app:CreateWindow("Hiddent Achievement Triggers", {
 		local hat = app.Categories.HiddenAchievementTriggers;
 		if hat then
 			self.data = app.CacheFields({
-				text = "Hidden Achievement Triggers",
+				text = L.HIDDEN_ACHIEVEMENT_TRIGGERS,
 				icon = app.asset("Category_Achievements"),
-				description = "Hidden Achievement Triggers",
+				description = L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC,
+				font = "GameFontNormalLarge",
 				visible = true,
 				g = hat,
 				_hqt = true,

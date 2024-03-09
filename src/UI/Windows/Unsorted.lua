@@ -1,6 +1,7 @@
 -- App locals
 local appName, app = ...;
 local L, CloneReference = app.L, app.CloneReference;
+local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 
 -- Global locals
 local tinsert = tinsert;
@@ -26,11 +27,10 @@ app:CreateWindow("Unsorted", {
 			local unsorted = app.Categories.Unsorted;
 			if unsorted then
 				self.data = {
-					text = L["TITLE"],
-					title = "Unsorted`" .. app.Version,
-					icon = app.asset("logo_32x32"),
-					preview = app.asset("Discord_2_128"),
-					description = "This data hasn't been implemented yet.",
+					text = L.UNSORTED,
+					title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
+					icon = app.asset("WindowIcon_Unsorted"),
+					description = L.UNSORTED_DESC_2,
 					font = "GameFontNormalLarge",
 					expanded = true,
 					visible = true,

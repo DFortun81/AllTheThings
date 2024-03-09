@@ -126,13 +126,6 @@ for key, value in pairs({
 	["NO_ENTRIES"] = "No entries matching your filters were found.";
 	["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
-	["UNSORTED"] = "Unsorted";
-	["UNSORTED_DESC"] = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
-	["NEVER_IMPLEMENTED"] = "Never Implemented";
-	["NEVER_IMPLEMENTED_DESC"] = "Items here technically exist within the game but have never been made available to players";
-	["HIDDEN_QUEST_TRIGGERS"] = "Hidden Quest Triggers";
-	["HIDDEN_QUEST_TRIGGERS_DESC"] = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-	["UNSORTED_DESC_2"] = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 	["OPEN_AUTOMATICALLY"] = "Open Automatically";
 	["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
 	["MINI_LIST"] = "Mini List";

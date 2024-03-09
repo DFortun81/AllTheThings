@@ -55,6 +55,17 @@ local L = setmetatable({
 	-- Features
 	NEARBY = "Nearby:";
 	
+	-- Windows
+	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
+	HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
+	HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";
+	HIDDEN_QUEST_TRIGGERS_DESC = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
+	NEVER_IMPLEMENTED = "Never Implemented";
+	NEVER_IMPLEMENTED_DESC = "Items here technically exist within the game but have never been made available to players";
+	UNSORTED = "Unsorted";
+	UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
+	UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
+	
 	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
