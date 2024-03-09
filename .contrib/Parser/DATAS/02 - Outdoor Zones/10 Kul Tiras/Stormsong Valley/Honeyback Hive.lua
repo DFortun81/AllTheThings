@@ -211,11 +211,36 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 						},
 						["description"] = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
 					}, {
+						n(155055, {	-- Gurg the Hivethief
+							["groups"] = {
+								i(169657),	-- Hivethief's Jelly Stash
+							},
+						}),	
+						n(155173, {	-- Honeyback Usurper
+							["groups"] = {
+								i(169658),	-- Usurper's Scent Gland
+							},
+						}),	
 						n(155176, {	-- Old Nasha
 							["groups"] = {
 								i(169659),	-- Old Nasha's Paw
 							},
-						}),						
+						}),
+						n(155171, {	-- The Hivekiller
+							["groups"] = {
+								i(169655),	-- Hivekiller Stinger
+							},
+						}),
+						n(155172, {	-- Trapdoor Bee Hunter
+							["groups"] = {
+								i(169656),	-- Envenomed Spider Fang
+							},
+						}),
+						n(155059, {	-- Yorag the Jelly Feaster
+							["groups"] = {
+								i(169654),	-- Spiral Yeti Horn
+							},
+						}),
 					})),	
 					n(VENDORS, {
 						n(153393, {	-- Barry
