@@ -907,16 +907,21 @@ local function GetRelativeDifficulty(group, difficultyID)
 	end
 end
 local function GetSearchResults(method, paramA, paramB, ...)
+	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
+	if not method then
+		print("GetSearchResults: Invalid method: nil");
+		return nil, true;
+	end
 	if not paramA then
 		print("GetSearchResults: Invalid paramA: nil");
 		return nil, true;
 	end
-	
+
 	-- If we are searching for only one parameter, it is a raw link.
 	local rawlink;
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
-	
+
 	-- This method can be called nested, and some logic should only process for the initial call
 	local isTopLevelSearch;
 	if not InitialCachedSearch then
