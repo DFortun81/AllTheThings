@@ -137,16 +137,12 @@ if app.Debugging and app.Version == "[Git]" then
 		end);
 		for _,data in ipairs(CUSTOM_HEADERS) do
 			local id = data[1];
-			print("Custom Header " .. id .. " has " .. data[2] .. " references" .. (data[3] or "."));
 			local header = {};
 			if L.HEADER_NAMES[id] then header.name = L.HEADER_NAMES[id]; end
 			if L.HEADER_ICONS[id] then header.icon = L.HEADER_ICONS[id]; end
 			if L.HEADER_DESCRIPTIONS[id] then header.description = L.HEADER_DESCRIPTIONS[id]; end
-			if data[3] then
-				data[3] = header;
-			else
-				tinsert(data, header);
-			end
+			print("Header " .. id .. " has " .. data[2] .. " references" .. (data[3] or "."), header.name);
+			tinsert(data, header);
 		end
 		app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
 	end

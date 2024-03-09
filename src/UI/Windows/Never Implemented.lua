@@ -18,8 +18,6 @@ app:CreateWindow("Never Implemented", {
 				u = 1,
 				g = g,
 			});
-			--app.AssignFieldValue(nyiData, "u", 1);
-			--nyiData.u = nil;
 			self.data = nyiData;
 			self:AssignChildren();
 		end
