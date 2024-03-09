@@ -1140,22 +1140,11 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		local temp = {};
 		local unfiltered = {};
 		local abbrevs = L["ABBREVIATIONS"];
-		local abbrevs_post = L["ABBREVIATIONS_POST"];
-		if not abbrevs_post[" true "] then
-			abbrevs_post[" %> " .. app.GetMapName(947)] = "";
-			abbrevs_post[" %> " .. app.GetMapName(1415)] = "";
-			abbrevs_post[" %> " .. app.GetMapName(1414)] = "";
-			abbrevs_post[" false "] = " 0 ";
-			abbrevs_post[" true "] = " 1 ";
-		end
 		for i,j in ipairs(group) do
 			if j.parent and not GetRelativeValue(j, "hideText") and j.parent.parent
 				and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
 				local text = app.GenerateSourcePathForTooltip(j.parent);
 				for source,replacement in pairs(abbrevs) do
-					text = text:gsub(source, replacement);
-				end
-				for source,replacement in pairs(abbrevs_post) do
 					text = text:gsub(source, replacement);
 				end
 
@@ -1225,7 +1214,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					tinsert(tooltipInfo, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not left:find(" > ") });
 					count = count + 1;
 					for i,right in ipairs(splitCount.variants) do
-						if not right:find(ATTLE_PET_SOURCE_2) then
+						if not right:find(BATTLE_PET_SOURCE_2) then
 							tinsert(tooltipInfo, 1, { left = left, right = right, wrap = not left:find(" > ") });
 							count = count + 1;
 						end
