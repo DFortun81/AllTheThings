@@ -2722,7 +2722,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				and not app.HasCost(j, paramA, paramB)
 			then
 				text = app.GenerateSourcePathForTooltip(parent);
-				if showUnsorted or (not text:match(L["UNSORTED_1"]) and not text:match(L["HIDDEN_QUEST_TRIGGERS"])) then
+				if showUnsorted or (not text:match(L["UNSORTED"]) and not text:match(L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = text:gsub(source, replacement);
 					end
@@ -10979,8 +10979,8 @@ function app:GetDataCache()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	g = {};
-	local unsortedData = app.CreateRawText(L["TITLE"] .. " " .. L["UNSORTED_1"], {
-		title = L["UNSORTED_1"] .. DESCRIPTION_SEPARATOR .. app.Version,
+	local unsortedData = app.CreateRawText(L["TITLE"] .. " " .. L["UNSORTED"], {
+		title = L["UNSORTED"] .. DESCRIPTION_SEPARATOR .. app.Version,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
 		description = L["UNSORTED_DESC"],
@@ -11024,7 +11024,7 @@ function app:GetDataCache()
 
 	-- Unsorted
 	if app.Categories.Unsorted then
-		db = app.CreateRawText(L.UNSORTED_1)
+		db = app.CreateRawText(L.UNSORTED)
 		db.g = app.Categories.Unsorted;
 		db.description = L["UNSORTED_DESC_2"];
 		-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
