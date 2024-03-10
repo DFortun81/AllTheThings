@@ -2694,125 +2694,128 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	local working, tooltipInfo = false, {};
-
-	if itemID and isTopLevelSearch then
-		-- Merge the source group for all matching Sources of the search results
-		local sourceGroup;
-		for i,j in ipairs(group.g or group) do
-			-- app.PrintDebug("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
-			if sourceID and app.GroupMatchesParams(j, "sourceID", sourceID) then
-				-- app.PrintDebug("sourceID match",sourceID)
-				if sourceGroup then app.MergeProperties(sourceGroup, j)
-				else sourceGroup = app.__CreateObject(j); end
-			elseif app.GroupMatchesParams(j, paramA, paramB) then
-				-- app.PrintDebug("exact match",paramA,paramB)
-				if sourceGroup then app.MergeProperties(sourceGroup, j, true)
-				else sourceGroup = app.__CreateObject(j); end
-			elseif app.GroupMatchesParams(j, paramA, paramB, true) then
-				-- app.PrintDebug("match",paramA,paramB)
-				if sourceGroup then app.MergeProperties(sourceGroup, j, true)
-				else sourceGroup = app.__CreateObject(j); end
+	
+	if isTopLevelSearch then
+		-- Create a list of sources
+		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
+			local temp, text, parent = {};
+			local unfiltered, right = {};
+			local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
+			local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+			local FilterUnobtainable, FilterCharacter, FirstParent
+				= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+			local abbrevs = L["ABBREVIATIONS"];
+			for _,j in ipairs(group.g or group) do
+				parent = j.parent;
+				if parent and not FirstParent(j, "hideText") and parent.parent
+					and (showCompleted or not app.IsComplete(j))
+					and not HasCost(j, paramA, paramB)
+				then
+					text = app.GenerateSourcePathForTooltip(parent);
+					if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+						for source,replacement in pairs(abbrevs) do
+							text = text:gsub(source, replacement);
+						end
+						-- doesn't meet current unobtainable filters
+						if not FilterUnobtainable(parent) then
+							tinsert(unfiltered, { text, UnobtainableTexture });
+						-- from obtainable, different character source
+						elseif not FilterCharacter(parent) then
+							tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+						else
+							-- check if this needs an unobtainable icon even though it's being shown
+							right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+							tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
+						end
+					end
+				end
+			end
+			-- if in Debug or no sources visible, add any unfiltered sources
+			if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
+				for _,data in ipairs(unfiltered) do
+					tinsert(temp, data);
+				end
+			end
+			if #temp > 0 then
+				local listing = {};
+				local maximum = app.Settings:GetTooltipSetting("Locations");
+				local count = 0;
+				app.Sort(temp, app.SortDefaults.IndexOneStrings);
+				for _,data in ipairs(temp) do
+					text = data[1];
+					right = data[2];
+					if right and right:len() > 0 then
+						text = text .. " " .. right;
+					end
+					if not contains(listing, text) then
+						count = count + 1;
+						if count <= maximum then
+							tinsert(listing, text);
+						end
+					end
+				end
+				if count > maximum then
+					tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
+				end
+				for _,text in ipairs(listing) do
+					if not working and IsRetrieving(text) then working = true; end
+					local left, right = DESCRIPTION_SEPARATOR:split(text);
+					tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
+				end
 			end
 		end
-
-		if not sourceGroup then sourceGroup = {}; end
-		-- Show the unobtainable source text, if necessary.
-		if sourceGroup.key then
-			-- Acquire the SourceID if it hadn't been determined yet.
-			if not sourceID and sourceGroup.link then
-				sourceID = app.GetSourceID(sourceGroup.link) or sourceGroup.sourceID;
+		
+		-- Shared Appearances and Stuff
+		if itemID then
+			-- Merge the source group for all matching Sources of the search results
+			local sourceGroup;
+			for i,j in ipairs(group.g or group) do
+				-- app.PrintDebug("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
+				if sourceID and app.GroupMatchesParams(j, "sourceID", sourceID) then
+					-- app.PrintDebug("sourceID match",sourceID)
+					if sourceGroup then app.MergeProperties(sourceGroup, j)
+					else sourceGroup = app.__CreateObject(j); end
+				elseif app.GroupMatchesParams(j, paramA, paramB) then
+					-- app.PrintDebug("exact match",paramA,paramB)
+					if sourceGroup then app.MergeProperties(sourceGroup, j, true)
+					else sourceGroup = app.__CreateObject(j); end
+				elseif app.GroupMatchesParams(j, paramA, paramB, true) then
+					-- app.PrintDebug("match",paramA,paramB)
+					if sourceGroup then app.MergeProperties(sourceGroup, j, true)
+					else sourceGroup = app.__CreateObject(j); end
+				end
 			end
-		else
-			sourceGroup.missing = true;
-		end
 
-		if app.AddSourceInformation(sourceID, tooltipInfo, group, sourceGroup) then
-			working = true;
-		end
-
-		if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-			local specs = GetFixedItemSpecInfo(itemID);
-			-- specs is already filtered/sorted to only current class
-			if specs and #specs > 0 then
-				tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
-			elseif sourceID then
-				tinsert(tooltipInfo, { right = L["NOT_AVAILABLE_IN_PL"] });
+			if not sourceGroup then sourceGroup = {}; end
+			-- Show the unobtainable source text, if necessary.
+			if sourceGroup.key then
+				-- Acquire the SourceID if it hadn't been determined yet.
+				if not sourceID and sourceGroup.link then
+					sourceID = app.GetSourceID(sourceGroup.link) or sourceGroup.sourceID;
+				end
+			else
+				sourceGroup.missing = true;
 			end
-		end
 
-		app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
+			if app.AddSourceInformation(sourceID, tooltipInfo, group, sourceGroup) then
+				working = true;
+			end
+
+			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+				local specs = GetFixedItemSpecInfo(itemID);
+				-- specs is already filtered/sorted to only current class
+				if specs and #specs > 0 then
+					tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
+				elseif sourceID then
+					tinsert(tooltipInfo, { right = L["NOT_AVAILABLE_IN_PL"] });
+				end
+			end
+
+			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
+		end
 	end
-
-	-- Create a list of sources
-	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
-		local temp, text, parent = {};
-		local unfiltered, right = {};
-		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
-		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
-		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-		local FilterUnobtainable, FilterCharacter, FirstParent
-			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
-		local abbrevs = L["ABBREVIATIONS"];
-		for _,j in ipairs(group.g or group) do
-			parent = j.parent;
-			if parent and not FirstParent(j, "hideText") and parent.parent
-				and (showCompleted or not app.IsComplete(j))
-				and not HasCost(j, paramA, paramB)
-			then
-				text = app.GenerateSourcePathForTooltip(parent);
-				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-					for source,replacement in pairs(abbrevs) do
-						text = text:gsub(source, replacement);
-					end
-					-- doesn't meet current unobtainable filters
-					if not FilterUnobtainable(parent) then
-						tinsert(unfiltered, { text, UnobtainableTexture });
-					-- from obtainable, different character source
-					elseif not FilterCharacter(parent) then
-						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
-					else
-						-- check if this needs an unobtainable icon even though it's being shown
-						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
-						tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
-					end
-				end
-			end
-		end
-		-- if in Debug or no sources visible, add any unfiltered sources
-		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
-			for _,data in ipairs(unfiltered) do
-				tinsert(temp, data);
-			end
-		end
-		if #temp > 0 then
-			local listing = {};
-			local maximum = app.Settings:GetTooltipSetting("Locations");
-			local count = 0;
-			app.Sort(temp, app.SortDefaults.IndexOneStrings);
-			for _,data in ipairs(temp) do
-				text = data[1];
-				right = data[2];
-				if right and right:len() > 0 then
-					text = text .. " " .. right;
-				end
-				if not contains(listing, text) then
-					count = count + 1;
-					if count <= maximum then
-						tinsert(listing, text);
-					end
-				end
-			end
-			if count > maximum then
-				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
-			end
-			for _,text in ipairs(listing) do
-				if not working and IsRetrieving(text) then working = true; end
-				local left, right = DESCRIPTION_SEPARATOR:split(text);
-				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
-			end
-		end
-	end
-
+	
 	-- Create clones of the search results
 	if not group.g then
 		-- Clone all the groups so that things don't get modified in the Source
