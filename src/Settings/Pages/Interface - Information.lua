@@ -2,14 +2,13 @@ local _, app = ...;
 local L, settings = app.L.SETTINGS_MENU, app.Settings;
 
 -- Global locals
-local pairs, ipairs, tonumber, math_floor, tostring, tinsert, RETRIEVING_DATA
-	= pairs, ipairs, tonumber, math.floor, tostring, tinsert, RETRIEVING_DATA;
+local pairs, ipairs, tonumber, math_floor, select, tostring, tinsert, RETRIEVING_DATA
+	= pairs, ipairs, tonumber, math.floor, select, tostring, tinsert, RETRIEVING_DATA;
 local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
--- local HexToARGB = app.Modules.Color.HexToARGB;	-- not used
-local GetRealmName, GetSpellInfo = GetRealmName, GetSpellInfo
+local GetRealmName, GetItemInfo, GetSpellInfo = GetRealmName, GetItemInfo, GetSpellInfo
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -70,6 +69,21 @@ local ConversionMethods = setmetatable({
 			return IsRetrievingConversionMethod(app.NPCNameFromID[creatureID], reference) .. " (" .. creatureID .. ")";
 		else
 			return IsRetrievingConversionMethod(app.NPCNameFromID[creatureID], reference)
+		end
+	end,
+	itemName = function(itemID, reference)
+		local name = select(2, GetItemInfo(providerID));
+		if app.Settings:GetTooltipSetting("itemID") then
+			return IsRetrievingConversionMethod(name, reference) .. " (" .. itemID .. ")";
+		else
+			return IsRetrievingConversionMethod(name, reference)
+		end
+	end,
+	objectName = function(objectID, reference)
+		if app.Settings:GetTooltipSetting("objectID") then
+			return IsRetrievingConversionMethod(app.ObjectNames[objectID], reference) .. " (" .. objectID .. ")";
+		else
+			return IsRetrievingConversionMethod(app.ObjectNames[objectID], reference)
 		end
 	end,
 	professionName = function(spellID, reference)
