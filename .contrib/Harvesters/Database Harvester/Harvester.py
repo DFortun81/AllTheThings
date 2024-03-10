@@ -44,8 +44,12 @@ def things_version(build: str) -> list[type[Thing]]:
         thing_list.remove(Illusions)
     if version.parse(build) < version.parse("5.0.3.15882"):
         thing_list.remove(Pets)
-    if version.parse("4.0.0.0") < version.parse(build) < version.parse("8.0.1.26367"):
-        thing_list.remove(SpellNames)
+    if (
+        version.parse("5.0.0.0") < version.parse(build) < version.parse("8.0.1.26367")
+        or version.parse(build) == version.parse("4.0.1.12911")
+        or version.parse(build) == version.parse("4.3.4.15595")
+        ):
+            thing_list.remove(SpellNames)
     return thing_list
 
 
@@ -534,9 +538,10 @@ def add_latest_data(build: str) -> None:
                     except KeyError:
                         continue
                     if id.isdigit():
-                        lines[index] = f"i({id}),\t-- {name}\n"
+                        difference[index] = f"i({id}),\t-- {name}\n"
                     else:
-                        lines[index] = lines[index]
+                        difference[index] = difference[index]
+                item_file.writelines(difference)
 
 
 def create_missing_files() -> None:
@@ -549,27 +554,9 @@ def create_missing_files() -> None:
         post_process(thing)
 
 
-def give_name_item() -> None:
-    """Ugly Function Helped me during Beta to get names to item... Need to add to PostProcess Properly Soon"""
-    with open("Fast.txt") as raw_file:
-        lines: list[str] = raw_file.readlines()
-        for index, missing_line in enumerate(lines):
-            print(missing_line)
-            id: str = re.sub("[^\\d^.]", "", missing_line.split(DELIMITER)[0].strip())
-            try:
-                name: str = missing_line.split(DELIMITER)[1].strip()
-            except KeyError:
-                continue
-            if id.isdigit():
-                lines[index] = f"i({id}),\t-- {name}\n"
-            else:
-                lines[index] = lines[index]
-    with open("Fast.txt", "w") as missing_file:
-        missing_file.writelines(lines)
-
 """How to add latest data from a new Build"""
 """Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
-# add_latest_data("10.2.5.53584")
+# add_latest_data("4.4.0.53627")
 """Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 3a: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()

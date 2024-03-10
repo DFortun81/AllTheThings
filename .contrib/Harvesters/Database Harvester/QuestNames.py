@@ -56,6 +56,7 @@ def get_quest_names() -> None:
         "CLASSIC": "classic",
         "TBC": "tbc",
         "WOTLK": "wotlk",
+        "CATA": "cata",
         "PTR": "ptr-2",
     }
     raw_path_dict: dict[str, Path] = {
@@ -106,6 +107,7 @@ def get_quest_names() -> None:
                         "CLASSIC": "classic",
                         "TBC": "tbc",
                         "WOTLK": "wotlk",
+                        "CATA": "cata",
                     }
                     print("Classic :", missing_line)
                 elif version.parse(missing_line) < version.parse("3.0.0.0"):
@@ -113,14 +115,22 @@ def get_quest_names() -> None:
                         "Retail": "",
                         "TBC": "tbc",
                         "WOTLK": "wotlk",
+                        "CATA": "cata",
                     }
                     print("TBC :", missing_line)
                 elif version.parse(missing_line) < version.parse("4.0.0.0"):
                     expansion_dict = {
                         "Retail": "",
                         "WOTLK": "wotlk",
+                        "CATA": "cata",
                     }
                     print("Wotlk :", missing_line)
+                elif version.parse(missing_line) < version.parse("5.0.0.0"):
+                    expansion_dict = {
+                        "Retail": "",
+                        "CATA": "cata",
+                    }
+                    print("Cata :", missing_line)
                 elif version.parse(missing_line) < version.parse("10.0.0.0"):
                     expansion_dict = {
                         "Retail": "",
