@@ -544,6 +544,7 @@ local InformationTypes = {
 		priority = 2.8,
 		text = "SymLink",
 		ForceActive = true,
+		ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			if reference.skipFill then
 				tinsert(tooltipInfo, {
