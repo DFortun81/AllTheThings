@@ -202,7 +202,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(58084),	-- Soul Snares
-			q(59617),	-- Stone Fiend Saboteurs
+			q(59617, {	-- Stone Fiend Saboteurs
+				i(176582),	-- Stolen Missive (QI!)
+			}),
 			q(60656, {	-- Summon Your Sins
 				n(170434, {	-- Amalgamation of Sin
 					["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r.  The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",

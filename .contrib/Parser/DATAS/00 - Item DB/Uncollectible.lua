@@ -396,6 +396,7 @@ i(176855);	-- Caustic Secretion
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals
 i(178149);	-- Centurion Anima Core
+i(176810);	-- Centurion Core
 i(181368);	-- Centurion Power Core
 i(174022);	-- Ceremonial Hand Bell
 i(182161);	-- Ceremonial Javelin
@@ -592,6 +593,7 @@ i(183933);	-- Guttered Crypt Candle
 i(184767);	-- Handheld Soul Mirror
 i(180429);	-- Hand-Formed Fleshbread
 i(184567);	-- Hand-Knitted Steward Sweater
+i(176852);	-- Hardened Tail Bone
 i(174322);	-- Harmonious Windchime
 i(173871);	-- Harrowed Ichor
 i(184384);	-- Hibernal Sproutling
@@ -1502,6 +1504,7 @@ i(205241);	-- Bone Necklace
 i(204237);	-- Clockwork Azshara
 i(204442);	-- Clump of Tar
 i(204234);	-- Dead Worms
+i(204312);	-- Ettin Skin
 i(200846);	-- Fletching-less Arrows
 i(205239);	-- Fluffy Ear
 i(201173);	-- Handful of Teeth

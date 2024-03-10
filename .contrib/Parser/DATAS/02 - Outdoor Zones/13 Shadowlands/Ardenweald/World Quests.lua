@@ -156,7 +156,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60585),	-- Spriggan Riot
 			q(60476),	-- Spriggan Size Me!
-			q(60770),	-- Squish and Burn
+			q(60770, {	-- Squish and Burn
+				i(180274),	-- Torch
+			}),
 			q(58993),	-- Swarm Defense
 			q(60786),	-- Swarm Defense
 			q(61604, {	-- Tailoring: Cloak of Camouflage

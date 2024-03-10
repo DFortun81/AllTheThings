@@ -817,7 +817,6 @@ root(ROOTS.Unsorted, {
 				i(180890),	-- Bloodstained Gambrel
 				i(181281),	-- Boss 10 Lure
 				i(178543),	-- Broiled Blood Sausage
-				i(176810),	-- Centurion Core
 				i(177035),	-- Colored Liquid Set
 				i(172496),	-- Conduit Keystone
 				i(178566),	-- Cracked Hand Mirror
@@ -866,7 +865,6 @@ root(ROOTS.Unsorted, {
 				i(178537),	-- Hair-Trussed Fungi
 				i(169819),	-- Handful of Blood Shards
 				i(180088),	-- Handwritten Note
-				i(176852),	-- Hardened Tail Bone
 				i(179376),	-- Hefty Diary Key
 				i(180888),	-- Illegible Journal
 				i(179310),	-- Jar of Muck
@@ -1124,7 +1122,6 @@ root(ROOTS.Unsorted, {
 				i(174330),	-- Perfected Circlet Mold
 				i(174061),	-- Phaestus, Genesis of Aeons
 				i(181777),	-- Phaeton's Key
-				i(174043),	-- Phylactery of Arin'gore
 				i(175276),	-- Phylactery of Kel'Thuzad
 				i(175137),	-- Piece of Shredded Scroll
 				i(180025),	-- Pile of Blubberfat
@@ -1260,7 +1257,6 @@ root(ROOTS.Unsorted, {
 				i(172226),	-- Stolen Anima
 				i(184015),	-- Stolen Memento
 				i(174219),	-- Stolen Memento
-				i(176582),	-- Stolen Missive
 				i(180249),	-- Stone Fiend Tracker
 				i(181516),	-- Stone-Laced Infused Ruby
 				i(181500),	-- Stoneborn Glaive
@@ -1282,7 +1278,6 @@ root(ROOTS.Unsorted, {
 				i(171104),	-- The Accuser's Sinstone
 				i(178018),	-- The Brand's Key
 				i(183874),	-- The Darkwing Flight Soars With Us!
-				i(182364),	-- The Everyday Assassin
 				i(173025),	-- The Infinite Treatises
 				i(183875),	-- The Tithes are a Lie!
 				i(177947),	-- Theotar's Lost Parasol
@@ -1293,7 +1288,6 @@ root(ROOTS.Unsorted, {
 				i(173523),	-- Tirisfal Camp Scroll
 				i(173270),	-- Toc's Bag of Parts
 				i(171367),	-- Tonal Mallet
-				i(180274),	-- Torch
 				i(171440),	-- Torghast Door Key
 				i(183698),	-- Torturer's Key
 				i(183121),	-- Training Gem

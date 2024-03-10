@@ -1632,6 +1632,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										i(181530, {	-- Stock: Greeting Kits (EC!)
 											["questID"] = 61497,
 										}),
+										i(182364),	-- The Everyday Assassin (QI!)
 									},
 								}),
 							},

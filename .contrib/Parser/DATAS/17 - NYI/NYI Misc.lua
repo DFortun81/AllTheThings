@@ -1201,7 +1201,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
 			i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
 			i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
-			i(204312),	-- Ettin Skin
 			i(203465),	-- Draconic Artifact
 			i(203210),	-- Dragonscale Supply Box
 			i(203466),	-- Dragonscale Surplus Crate

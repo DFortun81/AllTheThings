@@ -84,7 +84,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			q(61141),	-- Deathfang's Favorite Toy
-			q(61708),	-- Drawing Out The Poison
+			q(61708, {	-- Drawing Out The Poison
+				i(174043),	-- Phylactery of Arin'gore (QI!)
+			}),
 			q(61608, {	-- Enchanting: Unbreakable Crystal
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
