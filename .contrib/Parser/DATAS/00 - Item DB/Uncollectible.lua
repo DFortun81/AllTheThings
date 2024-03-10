@@ -799,6 +799,7 @@ i(184146);	-- Singed Soul Shackles
 i(180347);	-- Sinsteel Silverware
 i(180223);	-- Sinstone Archival Records
 i(184553);	-- Sinvyr Shards
+i(180289);	-- Sinvyr Statuette
 i(176870);	-- Skeletal Tusk
 i(179018);	-- Skullboar Chop
 i(180476);	-- Sleep Slime
@@ -863,6 +864,7 @@ i(183050);	-- The Endmire's Mists
 i(182120);	-- The Lich's Heart
 i(183051);	-- The Rushing Tide
 i(178602);	-- Thorny Loop
+i(181549);	-- Timeworn Sinstone
 i(178103);	-- Tiny Wing
 i(179001);	-- Tithe Jar
 i(184310);	-- Tod's Sinstone

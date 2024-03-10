@@ -657,6 +657,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["sourceQuests"] = { 60042 },	-- May I Take Your Order?
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
+										["g"] = {
+											i(183830),	-- Do It Yourself Flag Kit
+										},
 									}),
 									header(HEADERS.Quest, 60291, {	-- Triggered when completing 'Corspe Run' for the first time
 										["questID"] = 62535,

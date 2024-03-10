@@ -1009,6 +1009,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "o", 352028 },	-- Wanted Scroll
 				["coord"] = { 49.1, 72.8, BASTION },
+				["g"] = {
+					i(173349),	-- Misfiring Centurion Controller
+				},
 			}),
 			q(60366, {	-- WANTED: Darkwing
 				["sourceQuests"] = { 60735 },	-- Trouble in Paradise

@@ -715,6 +715,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 26.3, 49.0, REVENDRETH },
 					["g"] = {
 						i(172074),	-- Laurent's Belongings (QI!)
+						i(175504),	-- Cord of Pained Absolution
+						i(175506),	-- Nightcloaked Waistcord
+						i(175505),	-- Soul Hunter's Cinch
+						i(175503),	-- Stoneforged Greatbelt
 					},
 				}),
 				q(57532, {	-- Foraging for Fragments

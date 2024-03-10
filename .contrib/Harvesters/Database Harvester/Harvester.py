@@ -199,7 +199,7 @@ def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipe
     itemdb_list = list[str]()
     itemdb_path = Path(
         DATAS_FOLDER,
-        "00 - ProfessionDB",
+        "00 - Profession DB",
         f"{profession}.lua",
     )
     try:

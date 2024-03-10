@@ -384,12 +384,18 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156626 },	-- Captain Garrick
 					["coord"] = { 61.8, 82.8, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(174780),	-- Emptied First Aid Kit
+					},
 				}),
 				q(59930, {	-- Emergency First Aid [H]
 					["sourceQuests"] = { 59929 },	-- Murloc Mania [H]
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["coord"] = { 61.8, 82.8, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(174780),	-- Emptied First Aid Kit
+					},
 				}),
 				q(54952, {	-- Finding the Lost Expedition [A]
 					["sourceQuests"] = { 54951 },	-- Emergency First Aid [A]
@@ -582,12 +588,18 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 156807 },	-- Captain Garrick
 					["coord"] = { 52.3, 55.3, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(175239),	-- Standard Issue Knapsack
+					},
 				}),
 				q(59950, {	-- Stocking Up on Supplies [H]
 					["sourceQuests"] = { 59942 },	-- The Re-Deather
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
 					["coord"] = { 52.1, 55.3, EXILES_REACH },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(175239),	-- Standard Issue Knapsack
+					},
 				}),
 				q(55196, {	-- The Harpy Problem [A]
 					["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies [A]
