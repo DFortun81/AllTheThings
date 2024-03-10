@@ -1335,6 +1335,7 @@ app.PresetTransmogs = {
 		true, -- [34] FIST_WEAPONS
 		true, -- [35] WARGLAIVES
 		false, -- [36] THROWN
+		[57] = true,
 	},
 	["DEATHKNIGHT"] = {
 		true, -- [1] HELD_IN_OFF_HAND
