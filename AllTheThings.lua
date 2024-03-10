@@ -2449,6 +2449,7 @@ app.GetCachedData = function(cacheKey, method, ...)
 		end
 		return cache, working;
 	end
+	return cache;
 end
 app.WipeSearchCache = function()
 	wipe(searchCache);
