@@ -380,25 +380,6 @@ end)
 checkboxCurrencyCalculation:SetATTTooltip(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"])
 checkboxCurrencyCalculation:AlignBelow(checkboxModelPreview)
 
-if app.IsRetail then	-- No Classic logic to have default Quest tooltips I guess?
-	local checkboxUseCustomQuestTooltips = child:CreateCheckBox(L["REPLACE_QUEST_TOOLTIPS"],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("QuestReplacement"))
-		if not settings:GetTooltipSetting("Enabled") then
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:Enable()
-			self:SetAlpha(1)
-		end
-	end,
-	function(self)
-		settings:SetTooltipSetting("QuestReplacement", self:GetChecked())
-	end)
-	checkboxUseCustomQuestTooltips:SetATTTooltip(L["REPLACE_QUEST_TOOLTIPS_TOOLTIP"])
-	checkboxUseCustomQuestTooltips:AlignBelow(checkboxCurrencyCalculation)
-end
-
 local checkboxSharedAppearances = child:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"))

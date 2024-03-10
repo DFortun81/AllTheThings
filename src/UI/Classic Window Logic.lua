@@ -923,11 +923,6 @@ local function RowOnEnter(self)
 			counter = counter + 1;
 		end
 	end
-
-	if reference.questID and not reference.objectiveID then
-		app.AddQuestObjectives(tooltipInfo, reference);
-	end
-	
 	
 	if reference.cost then
 		if type(reference.cost) == "table" then

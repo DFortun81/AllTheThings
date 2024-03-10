@@ -1621,55 +1621,63 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		return 0;
 	end
 });
-app.AddQuestObjectives = function(info, reference)
-	local objectified = false;
-	local questLogIndex = GetQuestLogIndexByID(reference.questID);
-	if questLogIndex then
-		local lore, objective = GetQuestLogQuestText(questLogIndex);
-		if lore and app.Settings:GetTooltipSetting("Lore") then
-			tinsert(info, {
-				left = lore,
-				color = app.Colors.TooltipLore,
-				wrap = true,
-			});
-		end
-		if objective and app.Settings:GetTooltipSetting("Objectives") then
-			tinsert(info, {
-				left = REQUIREMENTS,
-				r = 1, g = 1, b = 1,
-			});
-			tinsert(info, {
-				left = objective,
-				r = 0.4, g = 0.8, b = 1,
-				wrap = true,
-			});
-			objectified = true;
-		end
-	end
-	if not reference.saved and app.Settings:GetTooltipSetting("Objectives") then
-		local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
-		if objectives and #objectives > 0 then
-			if not objectified then
-				tinsert(info, {
-					left = REQUIREMENTS,
-					r = 1, g = 1, b = 1,
-				});
-			end
-			for i,objective in ipairs(objectives) do
-				local _ = objective.text;
-				if not _ or _:sub(1, 1) == " " then
-					_ = RETRIEVING_DATA;
+app.AddEventHandler("OnLoad", function()
+	app.Settings.CreateInformationType("Objectives", {
+		priority = 2.9,
+		text = L.OBJECTIVES,
+		Process = function(t, reference, info)
+			if reference.questID and not reference.objectiveID then
+				local objectified = false;
+				local questLogIndex = GetQuestLogIndexByID(reference.questID);
+				if questLogIndex then
+					local lore, objective = GetQuestLogQuestText(questLogIndex);
+					if lore and app.Settings:GetTooltipSetting("Lore") then
+						tinsert(info, {
+							left = lore,
+							color = app.Colors.TooltipLore,
+							wrap = true,
+						});
+					end
+					if objective then
+						tinsert(info, {
+							left = REQUIREMENTS,
+							r = 1, g = 1, b = 1,
+						});
+						tinsert(info, {
+							left = objective,
+							r = 0.4, g = 0.8, b = 1,
+							wrap = true,
+						});
+						objectified = true;
+					end
 				end
-				tinsert(info, {
-					left = "  " .. _,
-					right = app.GetCompletionIcon(objective.finished),
-					r = 1, g = 1, b = 1,
-					wrap = true,
-				});
+				if not reference.saved then
+					local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
+					if objectives and #objectives > 0 then
+						if not objectified then
+							tinsert(info, {
+								left = REQUIREMENTS,
+								r = 1, g = 1, b = 1,
+							});
+						end
+						for i,objective in ipairs(objectives) do
+							local _ = objective.text;
+							if not _ or _:sub(1, 1) == " " then
+								_ = RETRIEVING_DATA;
+							end
+							tinsert(info, {
+								left = "  " .. _,
+								right = app.GetCompletionIcon(objective.finished),
+								r = 1, g = 1, b = 1,
+								wrap = true,
+							});
+						end
+					end
+				end
 			end
-		end
-	end
-end
+		end,
+	});
+end);
 
 -- Game Events that trigger visual updates, but no computation updates.
 local softRefresh = function()

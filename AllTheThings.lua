@@ -9431,7 +9431,7 @@ RowOnEnter = function (self)
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
 	local refkey = reference.key
-	local questReplace = app.Settings:GetTooltipSetting("QuestReplacement")
+	local questReplace = app.Settings:GetTooltipSetting("Objectives")
 	if refkey ~= "encounterID" and refkey ~= "instanceID" and (refkey ~= "questID" or not questReplace) then
 		-- Encounter & Instance Links break the tooltip
 		local link = reference.link or reference.tooltipLink or reference.silentLink
@@ -9523,9 +9523,6 @@ RowOnEnter = function (self)
 		tinsert(tooltipInfo, {
 			left = msg,
 		});
-	end
-	if reference.questID and not reference.objectiveID and questReplace then
-		app.AddQuestObjectives(tooltipInfo, reference);
 	end
 	if reference.providers then
 		local first = 1;
