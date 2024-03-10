@@ -205,9 +205,9 @@ r(75146),	-- Dream of Azshara
 r(75154),	-- Master's Spellthread
 r(75155),	-- Sanctified Spellthread
 r(75156),	-- Tailoring
-r(75172),	--
-r(75175),	--
-r(75178),	--
+r(75172),	-- Lightweave Embroidery
+r(75175),	-- Darkglow Embroidery
+r(75178),	-- Swordguard Embroidery
 r(75183),	-- Unravel Embersilk Cloth
 r(75247),	-- Embersilk Net
 r(75248),	-- Deathsilk Belt
@@ -245,7 +245,7 @@ r(75297),	-- Vicious Embersilk Boots
 4.3.4.15595
 r(94743),	-- Dream of Destruction
 r(99537),	-- Vicious Embersilk Cape
-r(102171),	--
+r(102171),	-- Black Silk Vest
 5.0.3.15890
 r(104115),	-- Release Fire Spirit
 r(110426),	-- Tailoring
@@ -518,6 +518,8 @@ r(264630),	-- Kul Tiran Tailoring
 8.0.1.25976
 r(265815),	-- Zandalari Tailoring
 8.0.1.26032
+r(45546),	-- Heavy Frostweave Bandage
+r(230047),	-- Feathered Luffa
 r(267201),	-- Tidespray Linen Bandage \\ Sun-Bleached Linen Bandage
 r(267202),	-- Deep Sea Bandage
 8.0.1.26175
@@ -676,7 +678,7 @@ r(330261),	-- Relic of the Past V
 
 
 
-Missing in TailoringItemDB.lua
+Missing in Tailoring.lua
 
 0.5.3.3368
 r(2385),	-- Brown Linen Vest

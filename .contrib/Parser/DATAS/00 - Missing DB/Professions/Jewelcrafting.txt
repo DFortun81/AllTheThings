@@ -66,7 +66,7 @@ r(28895),	-- Jewelcrafting
 r(28897),	-- Jewelcrafting
 r(28903),	-- Brilliant Blood Garnet \\ Teardrop Blood Garnet
 r(28905),	-- Bold Blood Garnet
-r(28906),	-- Runed Blood Garnet
+r(28906),	-- Brilliant Blood Garnet \\ Runed Blood Garnet
 r(28907),	-- Delicate Blood Garnet
 r(28910),	-- Inscribed Flame Spessarite
 r(28912),	-- Reckless Flame Spessarite \\ Luminous Flame Spessarite
@@ -75,19 +75,19 @@ r(28915),	-- Potent Flame Spessarite
 r(28916),	-- Radiant Deep Peridot
 r(28917),	-- Jagged Deep Peridot
 r(28918),	-- Regal Deep Peridot \\ Enduring Deep Peridot
-r(28924),	-- Dazzling Deep Peridot
+r(28924),	-- Purified Shadow Draenite \\ Dazzling Deep Peridot
 r(28925),	-- Timeless Shadow Draenite \\ Glowing Shadow Draenite
 r(28927),	-- Purified Shadow Draenite \\ Royal Shadow Draenite
 r(28933),	-- Shifting Shadow Draenite
 r(28936),	-- Sovereign Shadow Draenite
-r(28938),	-- Brilliant Golden Draenite
+r(28938),	-- Brilliant Blood Garnet \\ Brilliant Golden Draenite
 r(28944),	-- Smooth Golden Draenite \\ Gleaming Golden Draenite
 r(28947),	-- Subtle Golden Draenite \\ Thick Golden Draenite
 r(28948),	-- Rigid Azure Moonstone \\ Rigid Golden Draenite
 r(28950),	-- Solid Azure Moonstone
 r(28953),	-- Sparkling Azure Moonstone
 r(28955),	-- Stormy Azure Moonstone
-r(28957),	-- Lustrous Azure Moonstone
+r(28957),	-- Sparkling Azure Moonstone \\ Lustrous Azure Moonstone
 r(31048),	-- Fel Iron Blood Ring
 r(31049),	-- Golden Draenite Ring
 r(31050),	-- Azure Moonstone Ring
@@ -121,29 +121,29 @@ r(31082),	-- Figurine - Talasite Owl
 r(31083),	-- Figurine - Nightseye Panther
 r(31084),	-- Bold Living Ruby
 r(31085),	-- Delicate Living Ruby
-r(31087),	-- Teardrop Living Ruby
+r(31087),	-- Brilliant Living Ruby \\ Teardrop Living Ruby
 r(31088),	-- Brilliant Living Ruby \\ Runed Living Ruby
-r(31089),	-- Bright Living Ruby
+r(31089),	-- Delicate Living Ruby \\ Bright Living Ruby
 r(31090),	-- Subtle Dawnstone \\ Subtle Living Ruby
 r(31091),	-- Flashing Living Ruby
 r(31092),	-- Solid Star of Elune
-r(31094),	-- Lustrous Star of Elune
+r(31094),	-- Sparkling Star of Elune \\ Lustrous Star of Elune
 r(31095),	-- Stormy Star of Elune
-r(31096),	-- Brilliant Dawnstone
+r(31096),	-- Brilliant Living Ruby \\ Brilliant Dawnstone
 r(31097),	-- Smooth Dawnstone
 r(31098),	-- Rigid Star of Elune \\ Rigid Dawnstone
-r(31099),	-- Gleaming Dawnstone
-r(31100),	-- Thick Dawnstone
+r(31099),	-- Smooth Dawnstone \\ Gleaming Dawnstone
+r(31100),	-- Subtle Dawnstone \\ Thick Dawnstone
 r(31101),	-- Mystic Dawnstone
 r(31102),	-- Sovereign Nightseye
 r(31103),	-- Shifting Nightseye
 r(31104),	-- Timeless Nightseye \\ Glowing Nightseye
-r(31105),	-- Royal Nightseye
+r(31105),	-- Purified Nightseye \\ Royal Nightseye
 r(31106),	-- Inscribed Noble Topaz
 r(31107),	-- Potent Noble Topaz
 r(31108),	-- Reckless Noble Topaz \\ Luminous Noble Topaz
 r(31109),	-- Glinting Nightseye \\ Glinting Noble Topaz
-r(31110),	-- Enduring Talasite
+r(31110),	-- Regal Talasite \\ Enduring Talasite
 r(31111),	-- Radiant Talasite
 r(31112),	-- Purified Nightseye \\ Dazzling Talasite
 r(31113),	-- Jagged Talasite
@@ -183,43 +183,43 @@ r(38068),	-- Mercurial Adamantite
 r(38175),	-- Bronze Torc
 r(38503),	-- The Frozen Eye
 r(38504),	-- The Natural Ward
-r(39451),	-- Great Golden Draenite
-r(39452),	-- Great Dawnstone
-r(39455),	-- Balanced Shadow Draenite
-r(39458),	-- Infused Shadow Draenite
-r(39462),	-- Infused Nightseye
-r(39463),	-- Balanced Nightseye
+r(39451),	-- Rigid Azure Moonstone \\ Great Golden Draenite
+r(39452),	-- Rigid Star of Elune \\ Great Dawnstone
+r(39455),	-- Shifting Shadow Draenite \\ Balanced Shadow Draenite
+r(39458),	-- Shifting Shadow Draenite \\ Infused Shadow Draenite
+r(39462),	-- Glinting Nightseye \\ Infused Nightseye
+r(39463),	-- Shifting Nightseye \\ Balanced Nightseye
 r(39466),	-- Veiled Shadow Draenite \\ Veiled Flame Spessarite
 r(39467),	-- Deadly Flame Spessarite \\ Wicked Flame Spessarite
 r(39470),	-- Veiled Nightseye \\ Veiled Noble Topaz
 r(39471),	-- Deadly Noble Topaz \\ Wicked Noble Topaz
 r(39705),	-- Bold Crimson Spinel
 r(39706),	-- Delicate Crimson Spinel
-r(39710),	-- Teardrop Crimson Spinel
+r(39710),	-- Brilliant Crimson Spinel \\ Teardrop Crimson Spinel
 r(39711),	-- Brilliant Crimson Spinel \\ Runed Crimson Spinel
-r(39712),	-- Bright Crimson Spinel
+r(39712),	-- Delicate Crimson Spinel \\ Bright Crimson Spinel
 r(39713),	-- Subtle Lionseye \\ Subtle Crimson Spinel
 r(39714),	-- Flashing Crimson Spinel
 r(39715),	-- Solid Empyrean Sapphire
 r(39716),	-- Sparkling Empyrean Sapphire
-r(39717),	-- Lustrous Empyrean Sapphire
+r(39717),	-- Sparkling Empyrean Sapphire \\ Lustrous Empyrean Sapphire
 r(39718),	-- Stormy Empyrean Sapphire
-r(39719),	-- Brilliant Lionseye
+r(39719),	-- Brilliant Crimson Spinel \\ Brilliant Lionseye
 r(39720),	-- Smooth Lionseye
 r(39721),	-- Rigid Empyrean Sapphire \\ Rigid Lionseye
-r(39722),	-- Gleaming Lionseye
-r(39723),	-- Thick Lionseye
+r(39722),	-- Smooth Lionseye \\ Gleaming Lionseye
+r(39723),	-- Subtle Lionseye \\ Thick Lionseye
 r(39724),	-- Mystic Lionseye
-r(39725),	-- Great Lionseye
+r(39725),	-- Rigid Empyrean Sapphire \\ Great Lionseye
 r(39727),	-- Sovereign Shadowsong Amethyst
 r(39728),	-- Shifting Shadowsong Amethyst
-r(39729),	-- Balanced Shadowsong Amethyst
-r(39730),	-- Infused Shadowsong Amethyst
+r(39729),	-- Shifting Shadowsong Amethyst \\ Balanced Shadowsong Amethyst
+r(39730),	-- Glinting Shadowsong Amethyst \\ Infused Shadowsong Amethyst
 r(39731),	-- Timeless Shadowsong Amethyst \\ Glowing Shadowsong Amethyst
-r(39732),	-- Royal Shadowsong Amethyst
+r(39732),	-- Purified Shadowsong Amethyst \\ Royal Shadowsong Amethyst
 r(39733),	-- Inscribed Pyrestone
 r(39734),	-- Potent Pyrestone
-r(39735),	-- Luminous Pyrestone
+r(39735),	-- Reckless Pyrestone \\ Luminous Pyrestone
 r(39736),	-- Glinting Shadowsong Amethyst \\ Glinting Pyrestone
 r(39737),	-- Veiled Shadowsong Amethyst \\ Veiled Pyrestone
 r(39738),	-- Deadly Pyrestone \\ Wicked Pyrestone
@@ -272,27 +272,27 @@ r(51311),	-- Jewelcrafting
 r(53830),	-- Bold Scarlet Ruby
 r(53831),	-- Bold Bloodstone
 r(53832),	-- Delicate Bloodstone
-r(53834),	-- Runed Bloodstone
-r(53835),	-- Bright Bloodstone
+r(53834),	-- Brilliant Bloodstone \\ Runed Bloodstone
+r(53835),	-- Delicate Bloodstone \\ Bright Bloodstone
 r(53843),	-- Subtle Sun Crystal \\ Subtle Bloodstone
 r(53844),	-- Flashing Bloodstone
 r(53845),	-- Smooth Sun Crystal \\ Fractured Bloodstone
 r(53852),	-- Brilliant Bloodstone \\ Brilliant Sun Crystal
 r(53853),	-- Smooth Sun Crystal
 r(53854),	-- Rigid Chalcedony \\ Rigid Sun Crystal
-r(53855),	-- Thick Sun Crystal
+r(53855),	-- Subtle Sun Crystal \\ Thick Sun Crystal
 r(53856),	-- Quick Sun Crystal
 r(53857),	-- Mystic Sun Crystal
 r(53859),	-- Sovereign Shadow Crystal
 r(53860),	-- Shifting Shadow Crystal
 r(53861),	-- Glinting Shadow Crystal \\ Tenuous Shadow Crystal
-r(53862),	-- Glowing Shadow Crystal
+r(53862),	-- Timeless Shadow Crystal \\ Glowing Shadow Crystal
 r(53863),	-- Purified Shadow Crystal
-r(53864),	-- Royal Shadow Crystal
+r(53864),	-- Purified Shadow Crystal \\ Royal Shadow Crystal
 r(53865),	-- Mysterious Shadow Crystal
-r(53866),	-- Balanced Shadow Crystal
-r(53867),	-- Infused Shadow Crystal
-r(53868),	-- Regal Shadow Crystal
+r(53866),	-- Shifting Shadow Crystal \\ Balanced Shadow Crystal
+r(53867),	-- Glinting Shadow Crystal \\ Infused Shadow Crystal
+r(53868),	-- Regal Dark Jade \\ Regal Shadow Crystal
 r(53869),	-- Defender's Shadow Crystal
 r(53870),	-- Jagged Dark Jade \\ Puissant Shadow Crystal
 r(53871),	-- Guardian's Shadow Crystal
@@ -302,18 +302,18 @@ r(53874),	-- Champion's Huge Citrine
 r(53875),	-- Resplendent Huge Citrine
 r(53876),	-- Fierce Huge Citrine
 r(53877),	-- Deadly Huge Citrine
-r(53878),	-- Glinting Huge Citrine
+r(53878),	-- Glinting Shadow Crystal \\ Glinting Huge Citrine
 r(53879),	-- Lucent Huge Citrine
 r(53880),	-- Deft Huge Citrine
-r(53881),	-- Luminous Huge Citrine
+r(53881),	-- Reckless Huge Citrine \\ Luminous Huge Citrine
 r(53882),	-- Potent Huge Citrine
 r(53883),	-- Veiled Shadow Crystal \\ Veiled Huge Citrine
 r(53884),	-- Willful Huge Citrine \\ Durable Huge Citrine
 r(53885),	-- Reckless Huge Citrine
-r(53886),	-- Wicked Huge Citrine
-r(53887),	-- Pristine Huge Citrine
-r(53888),	-- Empowered Huge Citrine
-r(53889),	-- Stark Huge Citrine
+r(53886),	-- Deadly Huge Citrine \\ Wicked Huge Citrine
+r(53887),	-- Glinting Shadow Crystal \\ Pristine Huge Citrine
+r(53888),	-- Lucent Huge Citrine \\ Empowered Huge Citrine
+r(53889),	-- Deft Huge Citrine \\ Stark Huge Citrine
 r(53890),	-- Stalwart Huge Citrine
 r(53891),	-- Stalwart Huge Citrine \\ Glimmering Huge Citrine
 r(53892),	-- Accurate Shadow Crystal \\ Accurate Huge Citrine
@@ -329,10 +329,10 @@ r(53922),	-- Misty Dark Jade
 r(53923),	-- Lightning Dark Jade \\ Shining Dark Jade
 r(53924),	-- Turbid Dark Jade
 r(53925),	-- Energized Dark Jade \\ Intricate Dark Jade
-r(53926),	-- Dazzling Dark Jade
-r(53927),	-- Sundered Dark Jade
-r(53928),	-- Lambent Dark Jade
-r(53929),	-- Opaque Dark Jade
+r(53926),	-- Purified Shadow Crystal \\ Dazzling Dark Jade
+r(53927),	-- Misty Dark Jade \\ Sundered Dark Jade
+r(53928),	-- Lightning Dark Jade \\ Lambent Dark Jade
+r(53929),	-- Turbid Dark Jade \\ Opaque Dark Jade
 r(53930),	-- Energized Dark Jade
 r(53931),	-- Radiant Dark Jade
 r(53932),	-- Radiant Dark Jade \\ Tense Dark Jade
@@ -343,33 +343,33 @@ r(53941),	-- Sparkling Chalcedony \\ Lustrous Chalcedony
 r(53943),	-- Stormy Chalcedony
 r(53945),	-- Delicate Scarlet Ruby
 r(53946),	-- Brilliant Scarlet Ruby \\ Runed Scarlet Ruby
-r(53947),	-- Bright Scarlet Ruby
+r(53947),	-- Delicate Scarlet Ruby \\ Bright Scarlet Ruby
 r(53948),	-- Subtle Autumn's Glow \\ Subtle Scarlet Ruby
 r(53949),	-- Flashing Scarlet Ruby
-r(53950),	-- Fractured Scarlet Ruby
+r(53950),	-- Smooth Autumn's Glow \\ Fractured Scarlet Ruby
 r(53951),	-- Precise Scarlet Ruby
 r(53952),	-- Solid Sky Sapphire
 r(53953),	-- Sparkling Sky Sapphire
 r(53954),	-- Sparkling Sky Sapphire \\ Lustrous Sky Sapphire
 r(53955),	-- Stormy Sky Sapphire
-r(53956),	-- Brilliant Autumn's Glow
+r(53956),	-- Brilliant Scarlet Ruby \\ Brilliant Autumn's Glow
 r(53957),	-- Smooth Autumn's Glow
 r(53958),	-- Rigid Sky Sapphire \\ Rigid Autumn's Glow
-r(53959),	-- Thick Autumn's Glow
+r(53959),	-- Subtle Autumn's Glow \\ Thick Autumn's Glow
 r(53960),	-- Mystic Autumn's Glow
 r(53961),	-- Quick Autumn's Glow
 r(53962),	-- Sovereign Twilight Opal
 r(53963),	-- Shifting Twilight Opal
-r(53964),	-- Tenuous Twilight Opal
+r(53964),	-- Glinting Twilight Opal \\ Tenuous Twilight Opal
 r(53965),	-- Timeless Twilight Opal \\ Glowing Twilight Opal
 r(53966),	-- Purified Twilight Opal
-r(53967),	-- Royal Twilight Opal
+r(53967),	-- Purified Twilight Opal \\ Royal Twilight Opal
 r(53968),	-- Mysterious Twilight Opal
-r(53969),	-- Balanced Twilight Opal
-r(53970),	-- Infused Twilight Opal
-r(53971),	-- Regal Twilight Opal
+r(53969),	-- Shifting Twilight Opal \\ Balanced Twilight Opal
+r(53970),	-- Glinting Twilight Opal \\ Infused Twilight Opal
+r(53971),	-- Regal Forest Emerald \\ Regal Twilight Opal
 r(53972),	-- Defender's Twilight Opal
-r(53973),	-- Puissant Twilight Opal
+r(53973),	-- Jagged Forest Emerald \\ Puissant Twilight Opal
 r(53974),	-- Guardian's Twilight Opal
 r(53975),	-- Inscribed Monarch Topaz
 r(53976),	-- Etched Twilight Opal \\ Etched Monarch Topaz
@@ -379,36 +379,36 @@ r(53979),	-- Deadly Monarch Topaz
 r(53980),	-- Glinting Twilight Opal \\ Glinting Monarch Topaz
 r(53981),	-- Lucent Monarch Topaz
 r(53982),	-- Deft Monarch Topaz
-r(53983),	-- Luminous Monarch Topaz
+r(53983),	-- Reckless Monarch Topaz \\ Luminous Monarch Topaz
 r(53984),	-- Potent Monarch Topaz
 r(53985),	-- Veiled Twilight Opal \\ Veiled Monarch Topaz
 r(53986),	-- Willful Monarch Topaz \\ Durable Monarch Topaz
 r(53987),	-- Reckless Monarch Topaz
 r(53988),	-- Deadly Monarch Topaz \\ Wicked Monarch Topaz
-r(53989),	-- Pristine Monarch Topaz
-r(53990),	-- Empowered Monarch Topaz
+r(53989),	-- Glinting Twilight Opal \\ Pristine Monarch Topaz
+r(53990),	-- Lucent Monarch Topaz \\ Empowered Monarch Topaz
 r(53991),	-- Deft Monarch Topaz \\ Stark Monarch Topaz
 r(53992),	-- Stalwart Monarch Topaz
 r(53993),	-- Stalwart Monarch Topaz \\ Glimmering Monarch Topaz
 r(53994),	-- Accurate Twilight Opal \\ Accurate Monarch Topaz
-r(53995),	-- Timeless Forest Emerald
+r(53995),	-- Timeless Twilight Opal \\ Timeless Forest Emerald
 r(53996),	-- Jagged Forest Emerald
 r(53997),	-- Nimble Forest Emerald \\ Vivid Forest Emerald
 r(53998),	-- Regal Forest Emerald \\ Enduring Forest Emerald
 r(54000),	-- Steady Forest Emerald
 r(54001),	-- Forceful Forest Emerald
-r(54002),	-- Seer's Forest Emerald
+r(54002),	-- Purified Twilight Opal \\ Seer's Forest Emerald
 r(54003),	-- Misty Forest Emerald
-r(54004),	-- Shining Forest Emerald
+r(54004),	-- Lightning Forest Emerald \\ Shining Forest Emerald
 r(54005),	-- Turbid Forest Emerald
-r(54006),	-- Intricate Forest Emerald
-r(54007),	-- Dazzling Forest Emerald
-r(54008),	-- Sundered Forest Emerald
+r(54006),	-- Energized Forest Emerald \\ Intricate Forest Emerald
+r(54007),	-- Purified Twilight Opal \\ Dazzling Forest Emerald
+r(54008),	-- Misty Forest Emerald \\ Sundered Forest Emerald
 r(54009),	-- Lightning Forest Emerald \\ Lambent Forest Emerald
-r(54010),	-- Opaque Forest Emerald
+r(54010),	-- Turbid Forest Emerald \\ Opaque Forest Emerald
 r(54011),	-- Energized Forest Emerald
 r(54012),	-- Radiant Forest Emerald
-r(54013),	-- Tense Forest Emerald
+r(54013),	-- Radiant Forest Emerald \\ Tense Forest Emerald
 r(54014),	-- Shattered Forest Emerald
 r(54017),	-- Precise Bloodstone
 r(54019),	-- Fierce Monarch Topaz
@@ -439,12 +439,12 @@ r(55534),	-- Gem Perfection
 r(56049),	-- Bold Dragon's Eye
 r(56052),	-- Delicate Dragon's Eye
 r(56053),	-- Brilliant Dragon's Eye \\ Runed Dragon's Eye
-r(56054),	-- Bright Dragon's Eye
+r(56054),	-- Delicate Dragon's Eye \\ Bright Dragon's Eye
 r(56055),	-- Subtle Dragon's Eye
 r(56056),	-- Flashing Dragon's Eye
 r(56074),	-- Brilliant Dragon's Eye
-r(56076),	-- Fractured Dragon's Eye
-r(56077),	-- Lustrous Dragon's Eye
+r(56076),	-- Smooth Dragon's Eye \\ Fractured Dragon's Eye
+r(56077),	-- Sparkling Dragon's Eye \\ Lustrous Dragon's Eye
 r(56079),	-- Mystic Dragon's Eye
 r(56081),	-- Precise Dragon's Eye
 r(56083),	-- Quick Dragon's Eye
@@ -453,7 +453,7 @@ r(56085),	-- Smooth Dragon's Eye
 r(56086),	-- Solid Dragon's Eye
 r(56087),	-- Sparkling Dragon's Eye
 r(56088),	-- Stormy Dragon's Eye
-r(56089),	-- Thick Dragon's Eye
+r(56089),	-- Subtle Dragon's Eye \\ Thick Dragon's Eye
 r(56193),	-- Bloodstone Band
 r(56194),	-- Sun Rock Ring
 r(56195),	-- Jade Dagger Pendant
@@ -497,31 +497,31 @@ r(64726),	-- Sky Sapphire Amulet
 r(64727),	-- Runed Mana Band
 r(64728),	-- Scarlet Signet
 3.3.5.12340
-r(66430),	-- Dazzling Eye of Zul
-r(66433),	-- Seer's Eye of Zul
-r(66436),	-- Sundered Eye of Zul
-r(66437),	-- Shining Eye of Zul
-r(66438),	-- Tense Eye of Zul
-r(66440),	-- Intricate Eye of Zul
-r(66444),	-- Opaque Eye of Zul
-r(66449),	-- Bright Cardinal Ruby
-r(66451),	-- Fractured Cardinal Ruby
-r(66500),	-- Lustrous Majestic Zircon
-r(66503),	-- Brilliant King's Amber
-r(66504),	-- Thick King's Amber
-r(66553),	-- Balanced Dreadstone
-r(66555),	-- Glowing Dreadstone
-r(66558),	-- Royal Dreadstone
-r(66559),	-- Regal Dreadstone
-r(66563),	-- Puissant Dreadstone
-r(66564),	-- Infused Dreadstone
-r(66565),	-- Tenuous Dreadstone
-r(66566),	-- Luminous Ametrine
-r(66575),	-- Glinting Ametrine
-r(66577),	-- Wicked Ametrine
-r(66578),	-- Glimmering Ametrine
-r(66580),	-- Empowered Ametrine
-r(66587),	-- Stark Ametrine
+r(66430),	-- Purified Dreadstone \\ Dazzling Eye of Zul
+r(66433),	-- Purified Dreadstone \\ Seer's Eye of Zul
+r(66436),	-- Misty Eye of Zul \\ Sundered Eye of Zul
+r(66437),	-- Lightning Eye of Zul \\ Shining Eye of Zul
+r(66438),	-- Radiant Eye of Zul \\ Tense Eye of Zul
+r(66440),	-- Energized Eye of Zul \\ Intricate Eye of Zul
+r(66444),	-- Turbid Eye of Zul \\ Opaque Eye of Zul
+r(66449),	-- Delicate Cardinal Ruby \\ Bright Cardinal Ruby
+r(66451),	-- Smooth King's Amber \\ Fractured Cardinal Ruby
+r(66500),	-- Sparkling Majestic Zircon \\ Lustrous Majestic Zircon
+r(66503),	-- Brilliant Cardinal Ruby \\ Brilliant King's Amber
+r(66504),	-- Subtle King's Amber \\ Thick King's Amber
+r(66553),	-- Shifting Dreadstone \\ Balanced Dreadstone
+r(66555),	-- Timeless Dreadstone \\ Glowing Dreadstone
+r(66558),	-- Purified Dreadstone \\ Royal Dreadstone
+r(66559),	-- Regal Eye of Zul \\ Regal Dreadstone
+r(66563),	-- Jagged Eye of Zul \\ Puissant Dreadstone
+r(66564),	-- Glinting Dreadstone \\ Infused Dreadstone
+r(66565),	-- Glinting Dreadstone \\ Tenuous Dreadstone
+r(66566),	-- Purified Dreadstone \\ Luminous Ametrine
+r(66575),	-- Glinting Dreadstone \\ Glinting Ametrine
+r(66577),	-- Deadly Ametrine \\ Wicked Ametrine
+r(66578),	-- Stalwart Ametrine \\ Glimmering Ametrine
+r(66580),	-- Lucent Ametrine \\ Empowered Ametrine
+r(66587),	-- Deft Ametrine \\ Stark Ametrine
 4.0.1.12911
 r(73222),	-- Bold Carnelian
 r(73223),	-- Delicate Carnelian
@@ -1216,7 +1216,7 @@ r(382995),	-- Classic Prospecting
 
 
 
-Missing in JewelcraftingItemDB.lua
+Missing in Jewelcrafting.lua
 
 2.0.0.6080
 r(25229),	-- Jewelcrafting
@@ -1286,7 +1286,7 @@ r(28895),	-- Jewelcrafting
 r(28897),	-- Jewelcrafting
 r(28903),	-- Brilliant Blood Garnet \\ Teardrop Blood Garnet
 r(28905),	-- Bold Blood Garnet
-r(28906),	-- Runed Blood Garnet
+r(28906),	-- Brilliant Blood Garnet \\ Runed Blood Garnet
 r(28907),	-- Delicate Blood Garnet
 r(28910),	-- Inscribed Flame Spessarite
 r(28912),	-- Reckless Flame Spessarite \\ Luminous Flame Spessarite
@@ -1295,19 +1295,19 @@ r(28915),	-- Potent Flame Spessarite
 r(28916),	-- Radiant Deep Peridot
 r(28917),	-- Jagged Deep Peridot
 r(28918),	-- Regal Deep Peridot \\ Enduring Deep Peridot
-r(28924),	-- Dazzling Deep Peridot
+r(28924),	-- Purified Shadow Draenite \\ Dazzling Deep Peridot
 r(28925),	-- Timeless Shadow Draenite \\ Glowing Shadow Draenite
 r(28927),	-- Purified Shadow Draenite \\ Royal Shadow Draenite
 r(28933),	-- Shifting Shadow Draenite
 r(28936),	-- Sovereign Shadow Draenite
-r(28938),	-- Brilliant Golden Draenite
+r(28938),	-- Brilliant Blood Garnet \\ Brilliant Golden Draenite
 r(28944),	-- Smooth Golden Draenite \\ Gleaming Golden Draenite
 r(28947),	-- Subtle Golden Draenite \\ Thick Golden Draenite
 r(28948),	-- Rigid Azure Moonstone \\ Rigid Golden Draenite
 r(28950),	-- Solid Azure Moonstone
 r(28953),	-- Sparkling Azure Moonstone
 r(28955),	-- Stormy Azure Moonstone
-r(28957),	-- Lustrous Azure Moonstone
+r(28957),	-- Sparkling Azure Moonstone \\ Lustrous Azure Moonstone
 r(31048),	-- Fel Iron Blood Ring
 r(31049),	-- Golden Draenite Ring
 r(31050),	-- Azure Moonstone Ring
@@ -1341,29 +1341,29 @@ r(31082),	-- Figurine - Talasite Owl
 r(31083),	-- Figurine - Nightseye Panther
 r(31084),	-- Bold Living Ruby
 r(31085),	-- Delicate Living Ruby
-r(31087),	-- Teardrop Living Ruby
+r(31087),	-- Brilliant Living Ruby \\ Teardrop Living Ruby
 r(31088),	-- Brilliant Living Ruby \\ Runed Living Ruby
-r(31089),	-- Bright Living Ruby
+r(31089),	-- Delicate Living Ruby \\ Bright Living Ruby
 r(31090),	-- Subtle Dawnstone \\ Subtle Living Ruby
 r(31091),	-- Flashing Living Ruby
 r(31092),	-- Solid Star of Elune
-r(31094),	-- Lustrous Star of Elune
+r(31094),	-- Sparkling Star of Elune \\ Lustrous Star of Elune
 r(31095),	-- Stormy Star of Elune
-r(31096),	-- Brilliant Dawnstone
+r(31096),	-- Brilliant Living Ruby \\ Brilliant Dawnstone
 r(31097),	-- Smooth Dawnstone
 r(31098),	-- Rigid Star of Elune \\ Rigid Dawnstone
-r(31099),	-- Gleaming Dawnstone
-r(31100),	-- Thick Dawnstone
+r(31099),	-- Smooth Dawnstone \\ Gleaming Dawnstone
+r(31100),	-- Subtle Dawnstone \\ Thick Dawnstone
 r(31101),	-- Mystic Dawnstone
 r(31102),	-- Sovereign Nightseye
 r(31103),	-- Shifting Nightseye
 r(31104),	-- Timeless Nightseye \\ Glowing Nightseye
-r(31105),	-- Royal Nightseye
+r(31105),	-- Purified Nightseye \\ Royal Nightseye
 r(31106),	-- Inscribed Noble Topaz
 r(31107),	-- Potent Noble Topaz
 r(31108),	-- Reckless Noble Topaz \\ Luminous Noble Topaz
 r(31109),	-- Glinting Nightseye \\ Glinting Noble Topaz
-r(31110),	-- Enduring Talasite
+r(31110),	-- Regal Talasite \\ Enduring Talasite
 r(31111),	-- Radiant Talasite
 r(31112),	-- Purified Nightseye \\ Dazzling Talasite
 r(31113),	-- Jagged Talasite
@@ -1403,43 +1403,43 @@ r(38068),	-- Mercurial Adamantite
 r(38175),	-- Bronze Torc
 r(38503),	-- The Frozen Eye
 r(38504),	-- The Natural Ward
-r(39451),	-- Great Golden Draenite
-r(39452),	-- Great Dawnstone
-r(39455),	-- Balanced Shadow Draenite
-r(39458),	-- Infused Shadow Draenite
-r(39462),	-- Infused Nightseye
-r(39463),	-- Balanced Nightseye
+r(39451),	-- Rigid Azure Moonstone \\ Great Golden Draenite
+r(39452),	-- Rigid Star of Elune \\ Great Dawnstone
+r(39455),	-- Shifting Shadow Draenite \\ Balanced Shadow Draenite
+r(39458),	-- Shifting Shadow Draenite \\ Infused Shadow Draenite
+r(39462),	-- Glinting Nightseye \\ Infused Nightseye
+r(39463),	-- Shifting Nightseye \\ Balanced Nightseye
 r(39466),	-- Veiled Shadow Draenite \\ Veiled Flame Spessarite
 r(39467),	-- Deadly Flame Spessarite \\ Wicked Flame Spessarite
 r(39470),	-- Veiled Nightseye \\ Veiled Noble Topaz
 r(39471),	-- Deadly Noble Topaz \\ Wicked Noble Topaz
 r(39705),	-- Bold Crimson Spinel
 r(39706),	-- Delicate Crimson Spinel
-r(39710),	-- Teardrop Crimson Spinel
+r(39710),	-- Brilliant Crimson Spinel \\ Teardrop Crimson Spinel
 r(39711),	-- Brilliant Crimson Spinel \\ Runed Crimson Spinel
-r(39712),	-- Bright Crimson Spinel
+r(39712),	-- Delicate Crimson Spinel \\ Bright Crimson Spinel
 r(39713),	-- Subtle Lionseye \\ Subtle Crimson Spinel
 r(39714),	-- Flashing Crimson Spinel
 r(39715),	-- Solid Empyrean Sapphire
 r(39716),	-- Sparkling Empyrean Sapphire
-r(39717),	-- Lustrous Empyrean Sapphire
+r(39717),	-- Sparkling Empyrean Sapphire \\ Lustrous Empyrean Sapphire
 r(39718),	-- Stormy Empyrean Sapphire
-r(39719),	-- Brilliant Lionseye
+r(39719),	-- Brilliant Crimson Spinel \\ Brilliant Lionseye
 r(39720),	-- Smooth Lionseye
 r(39721),	-- Rigid Empyrean Sapphire \\ Rigid Lionseye
-r(39722),	-- Gleaming Lionseye
-r(39723),	-- Thick Lionseye
+r(39722),	-- Smooth Lionseye \\ Gleaming Lionseye
+r(39723),	-- Subtle Lionseye \\ Thick Lionseye
 r(39724),	-- Mystic Lionseye
-r(39725),	-- Great Lionseye
+r(39725),	-- Rigid Empyrean Sapphire \\ Great Lionseye
 r(39727),	-- Sovereign Shadowsong Amethyst
 r(39728),	-- Shifting Shadowsong Amethyst
-r(39729),	-- Balanced Shadowsong Amethyst
-r(39730),	-- Infused Shadowsong Amethyst
+r(39729),	-- Shifting Shadowsong Amethyst \\ Balanced Shadowsong Amethyst
+r(39730),	-- Glinting Shadowsong Amethyst \\ Infused Shadowsong Amethyst
 r(39731),	-- Timeless Shadowsong Amethyst \\ Glowing Shadowsong Amethyst
-r(39732),	-- Royal Shadowsong Amethyst
+r(39732),	-- Purified Shadowsong Amethyst \\ Royal Shadowsong Amethyst
 r(39733),	-- Inscribed Pyrestone
 r(39734),	-- Potent Pyrestone
-r(39735),	-- Luminous Pyrestone
+r(39735),	-- Reckless Pyrestone \\ Luminous Pyrestone
 r(39736),	-- Glinting Shadowsong Amethyst \\ Glinting Pyrestone
 r(39737),	-- Veiled Shadowsong Amethyst \\ Veiled Pyrestone
 r(39738),	-- Deadly Pyrestone \\ Wicked Pyrestone
@@ -1492,27 +1492,27 @@ r(51311),	-- Jewelcrafting
 r(53830),	-- Bold Scarlet Ruby
 r(53831),	-- Bold Bloodstone
 r(53832),	-- Delicate Bloodstone
-r(53834),	-- Runed Bloodstone
-r(53835),	-- Bright Bloodstone
+r(53834),	-- Brilliant Bloodstone \\ Runed Bloodstone
+r(53835),	-- Delicate Bloodstone \\ Bright Bloodstone
 r(53843),	-- Subtle Sun Crystal \\ Subtle Bloodstone
 r(53844),	-- Flashing Bloodstone
 r(53845),	-- Smooth Sun Crystal \\ Fractured Bloodstone
 r(53852),	-- Brilliant Bloodstone \\ Brilliant Sun Crystal
 r(53853),	-- Smooth Sun Crystal
 r(53854),	-- Rigid Chalcedony \\ Rigid Sun Crystal
-r(53855),	-- Thick Sun Crystal
+r(53855),	-- Subtle Sun Crystal \\ Thick Sun Crystal
 r(53856),	-- Quick Sun Crystal
 r(53857),	-- Mystic Sun Crystal
 r(53859),	-- Sovereign Shadow Crystal
 r(53860),	-- Shifting Shadow Crystal
 r(53861),	-- Glinting Shadow Crystal \\ Tenuous Shadow Crystal
-r(53862),	-- Glowing Shadow Crystal
+r(53862),	-- Timeless Shadow Crystal \\ Glowing Shadow Crystal
 r(53863),	-- Purified Shadow Crystal
-r(53864),	-- Royal Shadow Crystal
+r(53864),	-- Purified Shadow Crystal \\ Royal Shadow Crystal
 r(53865),	-- Mysterious Shadow Crystal
-r(53866),	-- Balanced Shadow Crystal
-r(53867),	-- Infused Shadow Crystal
-r(53868),	-- Regal Shadow Crystal
+r(53866),	-- Shifting Shadow Crystal \\ Balanced Shadow Crystal
+r(53867),	-- Glinting Shadow Crystal \\ Infused Shadow Crystal
+r(53868),	-- Regal Dark Jade \\ Regal Shadow Crystal
 r(53869),	-- Defender's Shadow Crystal
 r(53870),	-- Jagged Dark Jade \\ Puissant Shadow Crystal
 r(53871),	-- Guardian's Shadow Crystal
@@ -1522,18 +1522,18 @@ r(53874),	-- Champion's Huge Citrine
 r(53875),	-- Resplendent Huge Citrine
 r(53876),	-- Fierce Huge Citrine
 r(53877),	-- Deadly Huge Citrine
-r(53878),	-- Glinting Huge Citrine
+r(53878),	-- Glinting Shadow Crystal \\ Glinting Huge Citrine
 r(53879),	-- Lucent Huge Citrine
 r(53880),	-- Deft Huge Citrine
-r(53881),	-- Luminous Huge Citrine
+r(53881),	-- Reckless Huge Citrine \\ Luminous Huge Citrine
 r(53882),	-- Potent Huge Citrine
 r(53883),	-- Veiled Shadow Crystal \\ Veiled Huge Citrine
 r(53884),	-- Willful Huge Citrine \\ Durable Huge Citrine
 r(53885),	-- Reckless Huge Citrine
-r(53886),	-- Wicked Huge Citrine
-r(53887),	-- Pristine Huge Citrine
-r(53888),	-- Empowered Huge Citrine
-r(53889),	-- Stark Huge Citrine
+r(53886),	-- Deadly Huge Citrine \\ Wicked Huge Citrine
+r(53887),	-- Glinting Shadow Crystal \\ Pristine Huge Citrine
+r(53888),	-- Lucent Huge Citrine \\ Empowered Huge Citrine
+r(53889),	-- Deft Huge Citrine \\ Stark Huge Citrine
 r(53890),	-- Stalwart Huge Citrine
 r(53891),	-- Stalwart Huge Citrine \\ Glimmering Huge Citrine
 r(53892),	-- Accurate Shadow Crystal \\ Accurate Huge Citrine
@@ -1549,10 +1549,10 @@ r(53922),	-- Misty Dark Jade
 r(53923),	-- Lightning Dark Jade \\ Shining Dark Jade
 r(53924),	-- Turbid Dark Jade
 r(53925),	-- Energized Dark Jade \\ Intricate Dark Jade
-r(53926),	-- Dazzling Dark Jade
-r(53927),	-- Sundered Dark Jade
-r(53928),	-- Lambent Dark Jade
-r(53929),	-- Opaque Dark Jade
+r(53926),	-- Purified Shadow Crystal \\ Dazzling Dark Jade
+r(53927),	-- Misty Dark Jade \\ Sundered Dark Jade
+r(53928),	-- Lightning Dark Jade \\ Lambent Dark Jade
+r(53929),	-- Turbid Dark Jade \\ Opaque Dark Jade
 r(53930),	-- Energized Dark Jade
 r(53931),	-- Radiant Dark Jade
 r(53932),	-- Radiant Dark Jade \\ Tense Dark Jade
@@ -1563,33 +1563,33 @@ r(53941),	-- Sparkling Chalcedony \\ Lustrous Chalcedony
 r(53943),	-- Stormy Chalcedony
 r(53945),	-- Delicate Scarlet Ruby
 r(53946),	-- Brilliant Scarlet Ruby \\ Runed Scarlet Ruby
-r(53947),	-- Bright Scarlet Ruby
+r(53947),	-- Delicate Scarlet Ruby \\ Bright Scarlet Ruby
 r(53948),	-- Subtle Autumn's Glow \\ Subtle Scarlet Ruby
 r(53949),	-- Flashing Scarlet Ruby
-r(53950),	-- Fractured Scarlet Ruby
+r(53950),	-- Smooth Autumn's Glow \\ Fractured Scarlet Ruby
 r(53951),	-- Precise Scarlet Ruby
 r(53952),	-- Solid Sky Sapphire
 r(53953),	-- Sparkling Sky Sapphire
 r(53954),	-- Sparkling Sky Sapphire \\ Lustrous Sky Sapphire
 r(53955),	-- Stormy Sky Sapphire
-r(53956),	-- Brilliant Autumn's Glow
+r(53956),	-- Brilliant Scarlet Ruby \\ Brilliant Autumn's Glow
 r(53957),	-- Smooth Autumn's Glow
 r(53958),	-- Rigid Sky Sapphire \\ Rigid Autumn's Glow
-r(53959),	-- Thick Autumn's Glow
+r(53959),	-- Subtle Autumn's Glow \\ Thick Autumn's Glow
 r(53960),	-- Mystic Autumn's Glow
 r(53961),	-- Quick Autumn's Glow
 r(53962),	-- Sovereign Twilight Opal
 r(53963),	-- Shifting Twilight Opal
-r(53964),	-- Tenuous Twilight Opal
+r(53964),	-- Glinting Twilight Opal \\ Tenuous Twilight Opal
 r(53965),	-- Timeless Twilight Opal \\ Glowing Twilight Opal
 r(53966),	-- Purified Twilight Opal
-r(53967),	-- Royal Twilight Opal
+r(53967),	-- Purified Twilight Opal \\ Royal Twilight Opal
 r(53968),	-- Mysterious Twilight Opal
-r(53969),	-- Balanced Twilight Opal
-r(53970),	-- Infused Twilight Opal
-r(53971),	-- Regal Twilight Opal
+r(53969),	-- Shifting Twilight Opal \\ Balanced Twilight Opal
+r(53970),	-- Glinting Twilight Opal \\ Infused Twilight Opal
+r(53971),	-- Regal Forest Emerald \\ Regal Twilight Opal
 r(53972),	-- Defender's Twilight Opal
-r(53973),	-- Puissant Twilight Opal
+r(53973),	-- Jagged Forest Emerald \\ Puissant Twilight Opal
 r(53974),	-- Guardian's Twilight Opal
 r(53975),	-- Inscribed Monarch Topaz
 r(53976),	-- Etched Twilight Opal \\ Etched Monarch Topaz
@@ -1599,36 +1599,36 @@ r(53979),	-- Deadly Monarch Topaz
 r(53980),	-- Glinting Twilight Opal \\ Glinting Monarch Topaz
 r(53981),	-- Lucent Monarch Topaz
 r(53982),	-- Deft Monarch Topaz
-r(53983),	-- Luminous Monarch Topaz
+r(53983),	-- Reckless Monarch Topaz \\ Luminous Monarch Topaz
 r(53984),	-- Potent Monarch Topaz
 r(53985),	-- Veiled Twilight Opal \\ Veiled Monarch Topaz
 r(53986),	-- Willful Monarch Topaz \\ Durable Monarch Topaz
 r(53987),	-- Reckless Monarch Topaz
 r(53988),	-- Deadly Monarch Topaz \\ Wicked Monarch Topaz
-r(53989),	-- Pristine Monarch Topaz
-r(53990),	-- Empowered Monarch Topaz
+r(53989),	-- Glinting Twilight Opal \\ Pristine Monarch Topaz
+r(53990),	-- Lucent Monarch Topaz \\ Empowered Monarch Topaz
 r(53991),	-- Deft Monarch Topaz \\ Stark Monarch Topaz
 r(53992),	-- Stalwart Monarch Topaz
 r(53993),	-- Stalwart Monarch Topaz \\ Glimmering Monarch Topaz
 r(53994),	-- Accurate Twilight Opal \\ Accurate Monarch Topaz
-r(53995),	-- Timeless Forest Emerald
+r(53995),	-- Timeless Twilight Opal \\ Timeless Forest Emerald
 r(53996),	-- Jagged Forest Emerald
 r(53997),	-- Nimble Forest Emerald \\ Vivid Forest Emerald
 r(53998),	-- Regal Forest Emerald \\ Enduring Forest Emerald
 r(54000),	-- Steady Forest Emerald
 r(54001),	-- Forceful Forest Emerald
-r(54002),	-- Seer's Forest Emerald
+r(54002),	-- Purified Twilight Opal \\ Seer's Forest Emerald
 r(54003),	-- Misty Forest Emerald
-r(54004),	-- Shining Forest Emerald
+r(54004),	-- Lightning Forest Emerald \\ Shining Forest Emerald
 r(54005),	-- Turbid Forest Emerald
-r(54006),	-- Intricate Forest Emerald
-r(54007),	-- Dazzling Forest Emerald
-r(54008),	-- Sundered Forest Emerald
+r(54006),	-- Energized Forest Emerald \\ Intricate Forest Emerald
+r(54007),	-- Purified Twilight Opal \\ Dazzling Forest Emerald
+r(54008),	-- Misty Forest Emerald \\ Sundered Forest Emerald
 r(54009),	-- Lightning Forest Emerald \\ Lambent Forest Emerald
-r(54010),	-- Opaque Forest Emerald
+r(54010),	-- Turbid Forest Emerald \\ Opaque Forest Emerald
 r(54011),	-- Energized Forest Emerald
 r(54012),	-- Radiant Forest Emerald
-r(54013),	-- Tense Forest Emerald
+r(54013),	-- Radiant Forest Emerald \\ Tense Forest Emerald
 r(54014),	-- Shattered Forest Emerald
 r(54017),	-- Precise Bloodstone
 r(54019),	-- Fierce Monarch Topaz
@@ -1659,12 +1659,12 @@ r(55534),	-- Gem Perfection
 r(56049),	-- Bold Dragon's Eye
 r(56052),	-- Delicate Dragon's Eye
 r(56053),	-- Brilliant Dragon's Eye \\ Runed Dragon's Eye
-r(56054),	-- Bright Dragon's Eye
+r(56054),	-- Delicate Dragon's Eye \\ Bright Dragon's Eye
 r(56055),	-- Subtle Dragon's Eye
 r(56056),	-- Flashing Dragon's Eye
 r(56074),	-- Brilliant Dragon's Eye
-r(56076),	-- Fractured Dragon's Eye
-r(56077),	-- Lustrous Dragon's Eye
+r(56076),	-- Smooth Dragon's Eye \\ Fractured Dragon's Eye
+r(56077),	-- Sparkling Dragon's Eye \\ Lustrous Dragon's Eye
 r(56079),	-- Mystic Dragon's Eye
 r(56081),	-- Precise Dragon's Eye
 r(56083),	-- Quick Dragon's Eye
@@ -1673,7 +1673,7 @@ r(56085),	-- Smooth Dragon's Eye
 r(56086),	-- Solid Dragon's Eye
 r(56087),	-- Sparkling Dragon's Eye
 r(56088),	-- Stormy Dragon's Eye
-r(56089),	-- Thick Dragon's Eye
+r(56089),	-- Subtle Dragon's Eye \\ Thick Dragon's Eye
 r(56193),	-- Bloodstone Band
 r(56194),	-- Sun Rock Ring
 r(56195),	-- Jade Dagger Pendant
@@ -1717,79 +1717,31 @@ r(64726),	-- Sky Sapphire Amulet
 r(64727),	-- Runed Mana Band
 r(64728),	-- Scarlet Signet
 3.3.5.12340
-r(66338),	-- Regal Eye of Zul \\ Enduring Eye of Zul
-r(66428),	-- Steady Eye of Zul
-r(66429),	-- Nimble Eye of Zul \\ Vivid Eye of Zul
-r(66430),	-- Dazzling Eye of Zul
-r(66431),	-- Jagged Eye of Zul
-r(66432),	-- Timeless Dreadstone \\ Timeless Eye of Zul
-r(66433),	-- Seer's Eye of Zul
-r(66434),	-- Forceful Eye of Zul
-r(66435),	-- Misty Eye of Zul
-r(66436),	-- Sundered Eye of Zul
-r(66437),	-- Shining Eye of Zul
-r(66438),	-- Tense Eye of Zul
-r(66439),	-- Lightning Eye of Zul \\ Lambent Eye of Zul
-r(66440),	-- Intricate Eye of Zul
-r(66441),	-- Radiant Eye of Zul
-r(66442),	-- Energized Eye of Zul
-r(66443),	-- Shattered Eye of Zul
-r(66444),	-- Opaque Eye of Zul
-r(66445),	-- Turbid Eye of Zul
-r(66446),	-- Brilliant Cardinal Ruby \\ Runed Cardinal Ruby
-r(66447),	-- Bold Cardinal Ruby
-r(66448),	-- Delicate Cardinal Ruby
-r(66449),	-- Bright Cardinal Ruby
-r(66450),	-- Precise Cardinal Ruby
-r(66451),	-- Fractured Cardinal Ruby
-r(66452),	-- Subtle King's Amber \\ Subtle Cardinal Ruby
-r(66453),	-- Flashing Cardinal Ruby
-r(66497),	-- Solid Majestic Zircon
-r(66498),	-- Sparkling Majestic Zircon
-r(66499),	-- Stormy Majestic Zircon
-r(66500),	-- Lustrous Majestic Zircon
-r(66501),	-- Rigid Majestic Zircon \\ Rigid King's Amber
-r(66502),	-- Smooth King's Amber
-r(66503),	-- Brilliant King's Amber
-r(66504),	-- Thick King's Amber
-r(66505),	-- Mystic King's Amber
-r(66506),	-- Quick King's Amber
-r(66553),	-- Balanced Dreadstone
-r(66554),	-- Sovereign Dreadstone
-r(66555),	-- Glowing Dreadstone
-r(66556),	-- Purified Dreadstone
-r(66557),	-- Shifting Dreadstone
-r(66558),	-- Royal Dreadstone
-r(66559),	-- Regal Dreadstone
-r(66560),	-- Defender's Dreadstone
-r(66561),	-- Guardian's Dreadstone
-r(66562),	-- Mysterious Dreadstone
-r(66563),	-- Puissant Dreadstone
-r(66564),	-- Infused Dreadstone
-r(66565),	-- Tenuous Dreadstone
-r(66566),	-- Luminous Ametrine
-r(66567),	-- Inscribed Ametrine
-r(66568),	-- Deadly Ametrine
-r(66569),	-- Potent Ametrine
-r(66570),	-- Veiled Dreadstone \\ Veiled Ametrine
-r(66571),	-- Willful Ametrine \\ Durable Ametrine
-r(66572),	-- Etched Dreadstone \\ Etched Ametrine
-r(66573),	-- Glinting Dreadstone \\ Pristine Ametrine
-r(66574),	-- Reckless Ametrine
-r(66575),	-- Glinting Ametrine
-r(66576),	-- Accurate Dreadstone \\ Accurate Ametrine
-r(66577),	-- Wicked Ametrine
-r(66578),	-- Glimmering Ametrine
-r(66579),	-- Champion's Ametrine
-r(66580),	-- Empowered Ametrine
-r(66581),	-- Stalwart Ametrine
-r(66582),	-- Resplendent Ametrine
-r(66583),	-- Fierce Ametrine
-r(66584),	-- Deft Ametrine
-r(66585),	-- Lucent Ametrine
-r(66586),	-- Resolute Ametrine
-r(66587),	-- Stark Ametrine
-r(68253),	-- Nightmare Tear
+r(66430),	-- Purified Dreadstone \\ Dazzling Eye of Zul
+r(66433),	-- Purified Dreadstone \\ Seer's Eye of Zul
+r(66436),	-- Misty Eye of Zul \\ Sundered Eye of Zul
+r(66437),	-- Lightning Eye of Zul \\ Shining Eye of Zul
+r(66438),	-- Radiant Eye of Zul \\ Tense Eye of Zul
+r(66440),	-- Energized Eye of Zul \\ Intricate Eye of Zul
+r(66444),	-- Turbid Eye of Zul \\ Opaque Eye of Zul
+r(66449),	-- Delicate Cardinal Ruby \\ Bright Cardinal Ruby
+r(66451),	-- Smooth King's Amber \\ Fractured Cardinal Ruby
+r(66500),	-- Sparkling Majestic Zircon \\ Lustrous Majestic Zircon
+r(66503),	-- Brilliant Cardinal Ruby \\ Brilliant King's Amber
+r(66504),	-- Subtle King's Amber \\ Thick King's Amber
+r(66553),	-- Shifting Dreadstone \\ Balanced Dreadstone
+r(66555),	-- Timeless Dreadstone \\ Glowing Dreadstone
+r(66558),	-- Purified Dreadstone \\ Royal Dreadstone
+r(66559),	-- Regal Eye of Zul \\ Regal Dreadstone
+r(66563),	-- Jagged Eye of Zul \\ Puissant Dreadstone
+r(66564),	-- Glinting Dreadstone \\ Infused Dreadstone
+r(66565),	-- Glinting Dreadstone \\ Tenuous Dreadstone
+r(66566),	-- Purified Dreadstone \\ Luminous Ametrine
+r(66575),	-- Glinting Dreadstone \\ Glinting Ametrine
+r(66577),	-- Deadly Ametrine \\ Wicked Ametrine
+r(66578),	-- Stalwart Ametrine \\ Glimmering Ametrine
+r(66580),	-- Lucent Ametrine \\ Empowered Ametrine
+r(66587),	-- Deft Ametrine \\ Stark Ametrine
 4.0.1.12911
 r(73222),	-- Bold Carnelian
 r(73223),	-- Delicate Carnelian

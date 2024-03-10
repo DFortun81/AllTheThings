@@ -265,11 +265,11 @@ r(81720),	-- Energized Bio-Optic Killshades
 r(81722),	-- Agile Bio-Optic Killshades
 r(81724),	-- Camouflage Bio-Optic Killshades
 r(81725),	-- Lightweight Bio-Optic Killshades
-r(82175),	--
-r(82177),	--
-r(82180),	--
+r(82175),	-- Synapse Springs
+r(82177),	-- Quickflip Deflection Plates
+r(82180),	-- Tazik Shocker
 r(82200),	-- Spinal Healing Injector
-r(82201),	--
+r(82201),	-- Z50 Mana Gulper
 r(82774),	-- Engineering
 r(84344),	--
 r(84403),	-- Handful of Obsidium Bolts
@@ -624,7 +624,7 @@ r(307220),	-- Void Focus
 
 
 
-Missing in EngineeringItemDB.lua
+Missing in Engineering.lua
 
 0.5.3.3368
 r(3918),	-- Rough Blasting Powder
@@ -973,11 +973,11 @@ r(81720),	-- Energized Bio-Optic Killshades
 r(81722),	-- Agile Bio-Optic Killshades
 r(81724),	-- Camouflage Bio-Optic Killshades
 r(81725),	-- Lightweight Bio-Optic Killshades
-r(82175),	--
-r(82177),	--
-r(82180),	--
+r(82175),	-- Synapse Springs
+r(82177),	-- Quickflip Deflection Plates
+r(82180),	-- Tazik Shocker
 r(82200),	-- Spinal Healing Injector
-r(82201),	--
+r(82201),	-- Z50 Mana Gulper
 r(82774),	-- Engineering
 r(84344),	--
 r(84403),	-- Handful of Obsidium Bolts

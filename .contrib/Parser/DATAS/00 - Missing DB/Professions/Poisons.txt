@@ -1,0 +1,80 @@
+0.5.3.3368
+r(2818),	-- Deadly Poison
+r(2823),	-- Deadly Poison
+r(2835),	-- Deadly Poison
+r(2837),	-- Deadly Poison II
+r(2842),	-- Poisons
+r(3420),	-- Crippling Poison
+r(3421),	-- Crippling Poison II
+r(5395),	-- Death Capsule
+r(5763),	-- Mind-numbing Poison
+r(6510),	-- Blinding Powder
+r(6651),	-- Instant Toxin
+0.5.5.3494
+r(8681),	-- Instant Poison
+r(8687),	-- Instant Poison II
+r(8691),	-- Instant Poison III
+r(8694),	-- Mind-numbing Poison II
+0.7.0.3694
+r(11341),	-- Instant Poison IV
+r(11342),	-- Instant Poison V
+r(11343),	-- Instant Poison VI
+r(11357),	-- Deadly Poison III
+r(11358),	-- Deadly Poison IV
+r(11400),	-- Mind-numbing Poison III
+0.9.0.3807
+r(13220),	-- Wound Poison
+r(13228),	-- Wound Poison II
+r(13229),	-- Wound Poison III
+r(13230),	-- Wound Poison IV
+1.13.0.28211
+r(25347),	-- Deadly Poison V
+2.0.0.6080
+r(26786),	-- Anesthetic Poison
+r(26892),	-- Instant Poison VII
+r(26969),	-- Deadly Poison VI
+r(27282),	-- Deadly Poison VII
+r(27283),	-- Wound Poison V
+
+
+
+
+Missing in Poisons.lua
+
+0.5.3.3368
+r(2818),	-- Deadly Poison
+r(2823),	-- Deadly Poison
+r(2835),	-- Deadly Poison
+r(2837),	-- Deadly Poison II
+r(2842),	-- Poisons
+r(3420),	-- Crippling Poison
+r(3421),	-- Crippling Poison II
+r(5395),	-- Death Capsule
+r(5763),	-- Mind-numbing Poison
+r(6510),	-- Blinding Powder
+r(6651),	-- Instant Toxin
+0.5.5.3494
+r(8681),	-- Instant Poison
+r(8687),	-- Instant Poison II
+r(8691),	-- Instant Poison III
+r(8694),	-- Mind-numbing Poison II
+0.7.0.3694
+r(11341),	-- Instant Poison IV
+r(11342),	-- Instant Poison V
+r(11343),	-- Instant Poison VI
+r(11357),	-- Deadly Poison III
+r(11358),	-- Deadly Poison IV
+r(11400),	-- Mind-numbing Poison III
+0.9.0.3807
+r(13220),	-- Wound Poison
+r(13228),	-- Wound Poison II
+r(13229),	-- Wound Poison III
+r(13230),	-- Wound Poison IV
+1.13.0.28211
+r(25347),	-- Deadly Poison V
+2.0.0.6080
+r(26786),	-- Anesthetic Poison
+r(26892),	-- Instant Poison VII
+r(26969),	-- Deadly Poison VI
+r(27282),	-- Deadly Poison VII
+r(27283),	-- Wound Poison V

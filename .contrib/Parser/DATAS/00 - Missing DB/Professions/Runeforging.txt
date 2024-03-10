@@ -4,7 +4,7 @@ r(53428),	-- Runeforging
 
 
 
-Missing in RuneforgingItemDB.lua
+Missing in Runeforging.lua
 
 3.0.1.8622
 r(53323),	-- Rune of Swordshattering

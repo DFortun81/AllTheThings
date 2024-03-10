@@ -250,4 +250,4 @@ r(196484),	-- Houndstooth Hauberk
 r(278910),	-- Archaeology
 
 
-Nothing is Missing in ArchaeologyItemDB.lua! Good Work!
+Nothing is Missing in Archaeology.lua! Good Work!

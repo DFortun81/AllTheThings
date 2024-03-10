@@ -17,7 +17,7 @@ r(53664),	-- Master of Anatomy
 r(53665),	-- Master of Anatomy
 r(53666),	-- Master of Anatomy
 4.0.1.12911
-r(74495),	--
+r(74495),	-- Master of Anatomy
 r(74522),	-- Skinning
 5.0.3.15890
 r(102216),	-- Skinning
@@ -44,7 +44,7 @@ r(308569),	-- Skinning
 
 
 
-Missing in SkinningItemDB.lua
+Missing in Skinning.lua
 
 0.5.5.3494
 r(8613),	-- Skinning
@@ -65,7 +65,7 @@ r(53664),	-- Master of Anatomy
 r(53665),	-- Master of Anatomy
 r(53666),	-- Master of Anatomy
 4.0.1.12911
-r(74495),	--
+r(74495),	-- Master of Anatomy
 r(74522),	-- Skinning
 5.0.3.15890
 r(102216),	-- Skinning

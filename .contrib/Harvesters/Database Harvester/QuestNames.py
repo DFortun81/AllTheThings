@@ -69,7 +69,7 @@ def get_quest_names() -> None:
     }
     missing_path = Path(
         DATAS_FOLDER,
-        "00 - MissingIDs",
+        "00 - Missing DB",
         "MissingQuests.txt",
     )
     with open(missing_path, "r") as missing_file:
