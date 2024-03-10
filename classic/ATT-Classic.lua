@@ -914,9 +914,12 @@ app.GetCachedData = function(cacheKey, method, ...)
 	local cache = searchCache[cacheKey];
 	if not cache then
 		cache, working = method(...);
-		if not working then searchCache[cacheKey] = cache; end
+		if not working then
+			-- Only cache if the tooltip if no additional work is needed.
+			searchCache[cacheKey] = cache;
+		end
+		return cache, working;
 	end
-	return cache;
 end
 app.WipeSearchCache = function()
 	wipe(searchCache);

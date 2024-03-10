@@ -2439,12 +2439,16 @@ end	-- Symlink Lib
 -- Search Results Lib
 local searchCache, working = {};
 app.GetCachedData = function(cacheKey, method, ...)
+	if IsRetrieving(cacheKey) then return; end
 	local cache = searchCache[cacheKey];
 	if not cache then
 		cache, working = method(...);
-		if not working then searchCache[cacheKey] = cache; end
+		if not working then
+			-- Only cache if the tooltip if no additional work is needed.
+			searchCache[cacheKey] = cache;
+		end
+		return cache, working;
 	end
-	return cache;
 end
 app.WipeSearchCache = function()
 	wipe(searchCache);
