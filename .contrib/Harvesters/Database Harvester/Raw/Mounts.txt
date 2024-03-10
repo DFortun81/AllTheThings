@@ -304,6 +304,71 @@
 3.4.3.52237
 416158@@@Nightmarish Emerald Drake
 423869@@@Avatar of Flame
+4.4.0.53627
+10790@@@Tiger
+13819@@@Summon Warhorse
+23214@@@Summon Charger
+69820@@@Summon Sunwalker Kodo
+69826@@@Summon Great Sunwalker Kodo
+73629@@@Summon Exarch's Elekk
+73630@@@Summon Great Exarch's Elekk
+75207@@@Abyssal Seahorse
+84751@@@Fossilized Raptor
+87090@@@Goblin Trike
+87091@@@Goblin Turbo-Trike
+88331@@@Volcanic Stone Drake
+88335@@@Drake of the East Wind
+88718@@@Phosphorescent Stone Drake
+88741@@@Drake of the West Wind
+88742@@@Drake of the North Wind
+88744@@@Drake of the South Wind
+88746@@@Vitreous Stone Drake
+88748@@@Brown Riding Camel
+88749@@@Tan Riding Camel
+88750@@@Grey Riding Camel
+88990@@@Dark Phoenix
+90621@@@Golden King
+92155@@@Ultramarine Qiraji Battle Tank
+92231@@@Spectral Steed
+92232@@@Spectral Wolf
+93326@@@Sandstone Drake
+93623@@@Mottled Drake
+93644@@@Kor'kron Annihilator
+96491@@@Armored Razzashi Raptor
+96499@@@Swift Zulian Panther
+96503@@@Amani Dragonhawk
+97359@@@Flameward Hippogryph
+97493@@@Pureblood Fire Hawk
+97501@@@Green Fire Hawk
+97560@@@Corrupted Fire Hawk
+97581@@@Savage Raptor
+98204@@@Amani Battle Bear
+98718@@@Subdued Seahorse
+98727@@@Winged Guardian
+100332@@@Vicious War Steed
+100333@@@Vicious War Wolf
+101282@@@Vicious Gladiator's Twilight Drake
+101542@@@Flametalon of Alysrazor
+101573@@@Swift Shorestrider
+101821@@@Ruthless Gladiator's Twilight Drake
+102346@@@Swift Forest Strider
+102349@@@Swift Springstrider
+102350@@@Swift Lovebird
+102488@@@White Riding Camel
+102514@@@Corrupted Hippogryph
+103081@@@Darkmoon Dancing Bear
+103195@@@Mountain Horse
+103196@@@Swift Mountain Horse
+107203@@@Tyrael's Charger
+107516@@@Spectral Gryphon
+107517@@@Spectral Wind Rider
+107842@@@Blazing Drake
+107844@@@Twilight Harbinger
+107845@@@Life-Binder's Handmaiden
+110039@@@Experiment 12-B
+110051@@@Heart of the Aspects
+113120@@@Feldrake
+121820@@@Obsidian Nightwing
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -313,10 +378,8 @@
 6897@@@Blue Ram
 10787@@@Black Nightsaber
 10788@@@Leopard
-10790@@@Tiger
 10792@@@Spotted Panther
 10798@@@Obsidian Raptor
-13819@@@Summon Warhorse
 15781@@@Steel Mechanostrider
 16058@@@Primal Leopard
 16059@@@Tawny Sabercat
@@ -324,7 +387,6 @@
 17455@@@Purple Mechanostrider
 17456@@@Red and Blue Mechanostrider
 17458@@@Fluorescent Green Mechanostrider
-23214@@@Summon Charger
 23220@@@Swift Dawnsaber
 24576@@@Chromatic Mount
 25675@@@Reindeer
@@ -376,8 +438,6 @@
 68768@@@Little White Stallion
 68769@@@Little Ivory Raptor
 68930@@@Brood of Onyxia
-69820@@@Summon Sunwalker Kodo
-69826@@@Summon Great Sunwalker Kodo
 71342@@@Big Love Rocket
 71344@@@Big Love Rocket
 71345@@@Big Love Rocket
@@ -387,11 +447,8 @@
 72282@@@Invincible
 72283@@@Invincible
 72284@@@Invincible
-73629@@@Summon Exarch's Elekk
-73630@@@Summon Great Exarch's Elekk
 74854@@@Blazing Hippogryph
 74855@@@Blazing Hippogryph
-75207@@@Abyssal Seahorse
 75387@@@Tiny Mooncloth Carpet
 75617@@@Celestial Steed
 75618@@@Celestial Steed
@@ -401,68 +458,13 @@
 76153@@@Celestial Steed
 76154@@@X-53 Touring Rocket
 79361@@@Twilight Phoenix
-84751@@@Fossilized Raptor
 86579@@@Wooden Raft
-87090@@@Goblin Trike
-87091@@@Goblin Turbo-Trike
 87840@@@Running Wild
-88331@@@Volcanic Stone Drake
-88335@@@Drake of the East Wind
-88718@@@Phosphorescent Stone Drake
-88741@@@Drake of the West Wind
-88742@@@Drake of the North Wind
-88744@@@Drake of the South Wind
-88746@@@Vitreous Stone Drake
-88748@@@Brown Riding Camel
-88749@@@Tan Riding Camel
-88750@@@Grey Riding Camel
-88990@@@Dark Phoenix
 89520@@@Goblin Mini Hotrod
-90621@@@Golden King
-92155@@@Ultramarine Qiraji Battle Tank
-92231@@@Spectral Steed
-92232@@@Spectral Wolf
-93326@@@Sandstone Drake
-93623@@@Mottled Drake
-93644@@@Kor'kron Annihilator
-96491@@@Armored Razzashi Raptor
-96499@@@Swift Zulian Panther
-96503@@@Amani Dragonhawk
-97359@@@Flameward Hippogryph
 97390@@@Hitch Horse
-97493@@@Pureblood Fire Hawk
-97501@@@Green Fire Hawk
-97560@@@Corrupted Fire Hawk
-97581@@@Savage Raptor
-98204@@@Amani Battle Bear
-98718@@@Subdued Seahorse
-98727@@@Winged Guardian
-100332@@@Vicious War Steed
-100333@@@Vicious War Wolf
-101282@@@Vicious Gladiator's Twilight Drake
-101542@@@Flametalon of Alysrazor
-101573@@@Swift Shorestrider
 101641@@@Tarecgosa's Visage
-101821@@@Ruthless Gladiator's Twilight Drake
-102346@@@Swift Forest Strider
-102349@@@Swift Springstrider
-102350@@@Swift Lovebird
-102488@@@White Riding Camel
-102514@@@Corrupted Hippogryph
-103081@@@Darkmoon Dancing Bear
-103195@@@Mountain Horse
-103196@@@Swift Mountain Horse
 104515@@@Darkmoon Pony
 104517@@@Khaz Modan Ram
-107203@@@Tyrael's Charger
-107516@@@Spectral Gryphon
-107517@@@Spectral Wind Rider
-107842@@@Blazing Drake
-107844@@@Twilight Harbinger
-107845@@@Life-Binder's Handmaiden
-110039@@@Experiment 12-B
-110051@@@Heart of the Aspects
-113120@@@Feldrake
 113199@@@Jade Cloud Serpent
 118089@@@Azure Water Strider
 118737@@@Pandaren Kite
@@ -470,7 +472,6 @@
 120395@@@Green Dragon Turtle
 120822@@@Great Red Dragon Turtle
 121805@@@RAF Mount III
-121820@@@Obsidian Nightwing
 121836@@@Sapphire Panther
 121837@@@Jade Panther
 121838@@@Ruby Panther

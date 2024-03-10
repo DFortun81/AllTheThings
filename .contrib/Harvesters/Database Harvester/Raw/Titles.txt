@@ -218,6 +218,9 @@
 193@@@Cataclysmic Gladiator %s
 194@@@%s, Savior of Azeroth
 196@@@%s, Destroyer's End
+4.4.0.53627
+213@@@%s the Camel-Hoarder
+217@@@Warbringer %s
 5.0.3.15882
 195@@@Farmer %s
 197@@@%s the Beloved

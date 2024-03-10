@@ -3730,6 +3730,11 @@
 6181@@@Fangs of the Father
 6182@@@Fangs of the Father - Guild Edition
 6185@@@Murkablo
+4.4.0.53627
+6316@@@Hero of the Alliance: Ruthless
+6317@@@Hero of the Horde: Ruthless
+6321@@@Ruthless Gladiator's Twilight Drake
+6322@@@Ruthless Gladiator's Twilight Drake
 5.0.3.15882
 110@@@Lich King 5-player boss defeated the most
 131@@@Journeyman Medic
@@ -3770,9 +3775,6 @@
 6193@@@Level 90
 6300@@@Upjade Complete
 6301@@@Rally the Valley
-6316@@@Hero of the Alliance: Ruthless
-6317@@@Hero of the Horde: Ruthless
-6322@@@Ruthless Gladiator's Twilight Drake
 6332@@@That Rabbit's Dynamite!
 6337@@@Ossirian kills (Ruins of Ahn'Qiraj)
 6348@@@Mystically Superior

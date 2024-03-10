@@ -691,6 +691,8 @@
 781@@@Sanctuary of Malorne, Hyjal
 906@@@Dragon Soul Raid - Wyrmrest Temple Base
 907@@@Dragon Soul Raid - East Sarlac
+4.4.0.53627
+509@@@Quest Path 2063: Brian's 4.0 Test Path 
 5.0.3.15882
 888@@@Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines
 894@@@Grookin Hill, Jade Forest
@@ -2641,7 +2643,6 @@
 10.0.0.45454
 2842@@@Rubyscale Outpost, The Waking Shores
 10.0.2.46259
-509@@@Quest Path 2063: Brian's 4.0 Test Path 
 951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
 963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
 1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice 
