@@ -585,7 +585,12 @@ if TooltipDataProcessor then
 		end
 	end
 	]]--
-
+	
+	local function RerenderCurrency(self, currencyID)
+		if self:IsVisible() then
+			GameTooltip.SetCurrencyByID(self, currencyID, 1);
+		end
+	end
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
@@ -789,6 +794,9 @@ if TooltipDataProcessor then
 			if knownSearchField and ttId then
 				-- app.PrintDebug("TT Search",knownSearchField,ttId)
 				AttachTooltipSearchResults(self, 1, SearchForField, knownSearchField, tonumber(ttId));
+				if knownSearchField == "currencyID" and self.ATT_AttachComplete == false then
+					app.CallbackHandlers.DelayedCallback(RerenderCurrency, 0.05, self, ttId);
+				end
 				return true;
 			end
 		end
