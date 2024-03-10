@@ -8732,11 +8732,16 @@ local StoreWindowPosition = function(self)
 	end
 end
 -- Adds ATT information about the list of Quests into the provided tooltip
-local function AddQuestInfoToTooltip(info, quests)
+local function AddQuestInfoToTooltip(info, quests, reference)
 	if quests then
 		local text, mapID;
 		for _,q in ipairs(quests) do
-			text = GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. (q.text or RETRIEVING_DATA);
+			text = q.text;
+			if not text then
+				text = RETRIEVING_DATA;
+				reference.working = true;
+			end
+			text = GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. text;
 			mapID = q.mapID
 				or (q.maps and q.maps[1])
 				or (q.coord and q.coord[3])
@@ -9619,9 +9624,13 @@ RowOnEnter = function (self)
 					icon = nil;
 					amount = GetMoneyString(v[2]);
 				end
+				if not name then
+					reference.working = true;
+					name = RETRIEVING_DATA;
+				end
 				tinsert(tooltipInfo, {
 					left = (k == 1 and L["COST"]),
-					right = amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA),
+					right = amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. name,
 				});
 			end
 		else
@@ -9838,13 +9847,13 @@ RowOnEnter = function (self)
 			tinsert(tooltipInfo, {
 				left = L.PREREQUISITE_QUESTS,
 			});
-			AddQuestInfoToTooltip(tooltipInfo, prereqs);
+			AddQuestInfoToTooltip(tooltipInfo, prereqs, reference);
 		end
 		if bc and #bc > 0 then
 			tinsert(tooltipInfo, {
 				left = L.BREADCRUMBS_WARNING,
 			});
-			AddQuestInfoToTooltip(tooltipInfo, bc);
+			AddQuestInfoToTooltip(tooltipInfo, bc, reference);
 		end
 	end
 
@@ -9877,21 +9886,21 @@ RowOnEnter = function (self)
 				tinsert(tooltipInfo, {
 					left = L.BREADCRUMB_PARTYSYNC,
 				});
-				AddQuestInfoToTooltip(tooltipInfo, nextq);
+				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
 			elseif reference.DisablePartySync == false then
 				-- unknown if party sync will function for this Thing
 				tinsert(tooltipInfo, {
 					left = L.BREADCRUMB_PARTYSYNC_4,
 					color = app.Colors.LockedWarning,
 				});
-				AddQuestInfoToTooltip(tooltipInfo, nextq);
+				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
 			elseif not reference.DisablePartySync then
 				-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
 				tinsert(tooltipInfo, {
 					left = L.BREADCRUMB_PARTYSYNC_2,
 					color = app.Colors.LockedWarning,
 				});
-				AddQuestInfoToTooltip(tooltipInfo, nextq);
+				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
 			else
 				-- known to not be possible in party sync
 				tinsert(tooltipInfo, {
