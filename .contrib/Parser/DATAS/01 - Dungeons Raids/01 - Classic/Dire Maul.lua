@@ -428,9 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(5525, {	-- Free Knot!
 					["qg"] = 14338,	-- Knot Thimblejack
-					-- #if AFTER 4.0.3
-					["description"] = "This quest was removed with Cataclym, along with the rest of the fun things in the game. You would obtain the key from one of the ogres, turn it in, and he would present you with Knot Thimblejack's Cache.",
-					-- #else
+					-- #if BEFORE 4.0.3
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
@@ -441,9 +439,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(7429, {	-- Free Knot! (repeatable)
 					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 5525,	-- Free Knot!
-					-- #if AFTER 4.0.3
-					["description"] = "This quest was removed with Cataclym, along with the rest of the fun things in the game. You would obtain the key from one of the ogres, turn it in, and he would present you with Knot Thimblejack's Cache.",
-					-- #else
+					-- #if BEFORE 4.0.3
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
@@ -1289,7 +1285,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				["groups"] = {
 					n(ZONE_DROPS, bubbleDown({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
+							-- #if BEFORE 4.0.3
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
+							-- #endif
 							["crs"] = {
 								14325,	-- Captain Kromcrush
 								14321,	-- Guard Fengus
