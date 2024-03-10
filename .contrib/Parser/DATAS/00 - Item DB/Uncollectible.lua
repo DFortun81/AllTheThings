@@ -464,6 +464,7 @@ i(180660);	-- Darktower Parchments: Instant Polymorphist
 i(183065);	-- Dazzling Zircon Cube
 i(178900);	-- Death Pepper Decay
 i(182758);	-- Decorative Sinsteel Dagger
+i(182737);	-- Deep Fried Seraph Tenders
 i(173875);	-- Defiling Mire
 i(178540);	-- Delectable Dirt Dessert
 i(182776);	-- Demoltrov's Ritual Dagger
@@ -593,6 +594,7 @@ i(183933);	-- Guttered Crypt Candle
 i(184767);	-- Handheld Soul Mirror
 i(180429);	-- Hand-Formed Fleshbread
 i(184567);	-- Hand-Knitted Steward Sweater
+i(180088);	-- Handwritten Note
 i(176852);	-- Hardened Tail Bone
 i(174322);	-- Harmonious Windchime
 i(173871);	-- Harrowed Ichor

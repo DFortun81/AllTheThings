@@ -829,7 +829,6 @@ root(ROOTS.Unsorted, {
 				i(183122),	-- Death's Cloak
 				i(180811),	-- Deathfang's Favorite Skull
 				i(183695),	-- Decaying Dark Naaru Shard
-				i(182737),	-- Deep Fried Seraph Tenders
 				i(180308),	-- Determined Stone Visage
 				i(176806),	-- Drained Anima-Core
 				i(180412),	-- Dredhollow Apple Cider
@@ -864,7 +863,6 @@ root(ROOTS.Unsorted, {
 				i(172038),	-- Grim Iron Shackles
 				i(178537),	-- Hair-Trussed Fungi
 				i(169819),	-- Handful of Blood Shards
-				i(180088),	-- Handwritten Note
 				i(179376),	-- Hefty Diary Key
 				i(180888),	-- Illegible Journal
 				i(179310),	-- Jar of Muck
