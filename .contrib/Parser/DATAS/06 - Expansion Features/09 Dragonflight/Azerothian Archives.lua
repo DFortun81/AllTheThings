@@ -12,6 +12,7 @@ AZEROTHIAN_ARCHIVES = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	n(AZEROTHIAN_ARCHIVES, {
 		["maps"] = {
+			THE_AZURE_SPAN,
 			THALDRASZUS,
 		},
 		["g"] = {
