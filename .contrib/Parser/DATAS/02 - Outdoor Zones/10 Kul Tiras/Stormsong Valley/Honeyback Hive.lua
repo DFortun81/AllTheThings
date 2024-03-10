@@ -26,19 +26,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["cr"] = 155172,	-- Trapdoor Bee Hunter
+						--	["cr"] = 155172,	-- Trapdoor Bee Hunter
 						}),
 						q(56474, {	-- Hivekiller Stinger
 							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["cr"] = 155171,	-- The Hivekiller
+						--	["cr"] = 155171,	-- The Hivekiller
 						}),
 						q(56092, {	-- Hivethief's Jelly Stash
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["cr"] = 155055,	-- Gurg the Hivethief
+						--	["cr"] = 155055,	-- Gurg the Hivethief
 						}),
 						q(56108, {	-- Leaving the Hive
 							["provider"] = { "n", 155745 },	-- Honeyback Harvester
@@ -54,13 +54,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 							["provider"] = { "i", 169659 },	-- Old Nasha's Paw
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["cr"] = 155176,	-- Old Nasha
+						--	["cr"] = 155176,	-- Old Nasha
 						}),
 						q(56475, {	-- Spiral Yeti Horn
 							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["cr"] = 155059,	-- Yorag the Jelly Feaster
+						--	["cr"] = 155059,	-- Yorag the Jelly Feaster
 						}),
 						q(57670, {	-- Unbeelievable Quality
 							["providers"] = {
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["cr"] = 155173,	-- Honeyback Usurper
+						--	["cr"] = 155173,	-- Honeyback Usurper
 						}),
 					}),
 					o(327230, {	-- Jelly Deposit
