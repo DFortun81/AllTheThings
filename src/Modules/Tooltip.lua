@@ -498,7 +498,7 @@ end
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
-	local status, group = pcall(app.GetCachedSearchResults, method, ...)
+	local status, group, working = pcall(app.GetCachedSearchResults, method, ...)
 	if status then
 		if group then
 			-- If nothing was put into the tooltip initially, mark the text of the source.
@@ -508,12 +508,12 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 
 			-- If there was info text generated for this search result, then display that first.
 			AttachTooltipInformation(tooltip, group.tooltipInfo);
-			tooltip.ATT_AttachComplete = not group.working;
 		end
 	else
 		print(status, group);
 		app.PrintDebug("pcall tooltip failed",group)
 	end
+	tooltip.ATT_AttachComplete = not (working or (group and group.working));
 	app.SetSkipLevel(0);
 end
 

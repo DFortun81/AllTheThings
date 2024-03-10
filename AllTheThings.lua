@@ -3076,8 +3076,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					item = entries[i];
 					entry = item.group;
 					if not entry.objectiveID then
-						left = TryColorizeName(entry, entry.text or RETRIEVING_DATA);
-						if not working and IsRetrieving(left) then working = true; end
+						left = entry.text;
+						if not left or IsRetrieving(left) then
+							left = RETRIEVING_DATA;
+							working = true;
+						end
+						left = TryColorizeName(entry, left);
 
 						-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
 						if entry.c and entry.key ~= "classID" and #entry.c == 1 then
@@ -3154,7 +3158,11 @@ local function GetSearchResults(method, paramA, paramB, ...)
 									local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
 									-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
 									if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
-										right = locationName .. " > " .. sParent.text .. " " .. right;
+										local parentText = sParent.text;
+										if IsRetrieving(parentText) then
+											working = true;
+										end
+										right = locationName .. " > " .. parentText .. " " .. right;
 									else
 										right = locationName .. " " .. right;
 									end
@@ -3163,8 +3171,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								end
 							end
 						end
-
-						if not working and IsRetrieving(right) then working = true; end
 
 						-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
 						if entry.criteriaID and entry.achievementID then
