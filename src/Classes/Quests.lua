@@ -1663,10 +1663,15 @@ app.AddEventHandler("OnLoad", function()
 						for i,objective in ipairs(objectives) do
 							local text = objective.text;
 							if text then
-								local a, b = (" "):split(text);
-								if b == "" then
-									text = a .. " " .. RETRIEVING_DATA;
+								if text:sub(1,2) == " :" then
+									text = RETRIEVING_DATA .. text:sub(2);
 									reference.working = true;
+								else
+									local a, b = (" "):split(text);
+									if b == "" then
+										text = a .. " " .. RETRIEVING_DATA;
+										reference.working = true;
+									end
 								end
 							else
 								text = RETRIEVING_DATA;
