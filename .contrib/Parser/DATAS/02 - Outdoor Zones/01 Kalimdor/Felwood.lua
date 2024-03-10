@@ -2487,6 +2487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(21377, {	-- Deadwood Headdress Feather
+					["description"] = "Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",
 					["crs"] = {
 						9462,	-- Chieftain Bloodmaw
 						7157,	-- Deadwood Avenger
