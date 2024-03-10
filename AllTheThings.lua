@@ -3028,6 +3028,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	elseif #group.g == 0 then
 		group.g = nil;
 	end
+	group.working = nil;
 
 	if isTopLevelSearch then
 		-- Add various text to the group now that it has been consolidated from all sources
@@ -3196,11 +3197,11 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",group.text or (group.key and group.key .. group[group.key]),group)
 
 		-- Track if the result is not finished processing
-		if working then group.working = working; end
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 
 		-- Add various extra field info if enabled in settings
 		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString)
+		if group.working then working = true; end
 
 		-- If there was any informational text generated, then attach that info.
 		if #tooltipInfo > 0 then

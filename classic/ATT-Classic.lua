@@ -1128,6 +1128,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	else
 		group = {};
 	end
+	group.working = nil;
 
 	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
 	
@@ -1396,6 +1397,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
 		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString);
+		if group.working then working = true; end
 	end
 
 	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
