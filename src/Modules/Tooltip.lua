@@ -495,23 +495,21 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
-local function AttachTooltipRawSearchResults(tooltip, lineNumber, group)
-	if not group then return end
-	-- If nothing was put into the tooltip initially, mark the text of the source.
-	if tooltip:NumLines() == 0 then
-		tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
-	end
-
-	-- If there was info text generated for this search result, then display that first.
-	AttachTooltipInformation(tooltip, group.tooltipInfo);
-	tooltip.ATT_AttachComplete = not group.working;
-end
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
 	local status, group = pcall(app.GetCachedSearchResults, method, ...)
 	if status then
-		AttachTooltipRawSearchResults(tooltip, lineNumber, group)
+		if group then
+			-- If nothing was put into the tooltip initially, mark the text of the source.
+			if tooltip:NumLines() == 0 then
+				tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
+			end
+
+			-- If there was info text generated for this search result, then display that first.
+			AttachTooltipInformation(tooltip, group.tooltipInfo);
+			tooltip.ATT_AttachComplete = not group.working;
+		end
 	else
 		print(status, group);
 		app.PrintDebug("pcall tooltip failed",group)
@@ -1044,7 +1042,6 @@ local api = {};
 app.Modules.Tooltip = api;
 api.AttachTooltipInformation = AttachTooltipInformation;
 api.AttachTooltipInformationEntry = AttachTooltipInformationEntry;
-api.AttachTooltipRawSearchResults = AttachTooltipRawSearchResults;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
 app.AddEventHandler("OnLoad", function()
