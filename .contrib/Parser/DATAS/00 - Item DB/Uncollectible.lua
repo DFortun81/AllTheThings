@@ -1508,6 +1508,7 @@ i(201173);	-- Handful of Teeth
 i(205235);	-- Hound Paw
 i(204235);	-- Kaldorei Fruitcake
 i(205236);	-- Long-Toed Talon
+i(200829);	-- Pareidolic Image
 i(205237);	-- Pristine Beast Fur
 i(205238);	-- Rain-soaked Feather
 i(205244);	-- Rain-soaked pelt

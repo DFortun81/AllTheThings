@@ -1006,7 +1006,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(200948),	-- Obsidian Hunting Hook
 			i(191032),	-- Oily Fat
 			i(200844),	-- Overly Bent Bow
-			i(200829),	-- Pareidolic Image
 			i(191787),	-- Partially Digested Hand
 			i(190318),	-- Perception!
 			i(198653),	-- PH Profession Drop
