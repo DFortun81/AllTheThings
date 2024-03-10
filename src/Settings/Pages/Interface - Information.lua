@@ -32,10 +32,10 @@ end
 local DefaultConversionMethod = function(value)
 	return value;
 end
--- Handles checking the 'text' and assigning 'group.working' if the text is in a 'retrieving' state
-local function IsRetrievingConversionMethod(text, group)
+-- Handles checking the 'text' and assigning 'reference.working' if the text is in a 'retrieving' state
+local function IsRetrievingConversionMethod(text, reference)
 	if IsRetrieving(text) then
-		group.working = true
+		reference.working = true
 		text = RETRIEVING_DATA
 	end
 	return text
@@ -72,11 +72,30 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	itemName = function(itemID, reference)
-		local name = select(2, GetItemInfo(providerID));
+		local name = select(2, GetItemInfo(itemID));
+		if IsRetrieving(name) then
+			reference.working = true
+			name = "Item: " .. RETRIEVING_DATA;
+		end
 		if app.Settings:GetTooltipSetting("itemID") then
-			return IsRetrievingConversionMethod(name, reference) .. " (" .. itemID .. ")";
+			return name .. " (" .. itemID .. ")";
 		else
-			return IsRetrievingConversionMethod(name, reference)
+			return name;
+		end
+	end,
+	itemNameAndIcon = function(itemID, reference)
+		local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
+		if IsRetrieving(name) then
+			reference.working = true
+			name = "Item: " .. RETRIEVING_DATA;
+		end
+		if icon then
+			name = "|T" .. icon .. ":0|t" .. name;
+		end
+		if app.Settings:GetTooltipSetting("itemID") then
+			return name .. " (" .. itemID .. ")";
+		else
+			return name;
 		end
 	end,
 	objectName = function(objectID, reference)
@@ -94,6 +113,18 @@ local ConversionMethods = setmetatable({
 		return DefaultConversionMethod;
 	end
 });
+ConversionMethods.provider = function(provider, reference)
+	local providerType = provider[1];
+	local providerID = provider[2] or 0;
+	if providerType == "o" then
+		return ConversionMethods.objectName(providerID, reference);
+	elseif providerType == "n" then
+		return ConversionMethods.creatureName(providerID, reference);
+	elseif providerType == "i" then
+		return ConversionMethods.itemNameAndIcon(providerID, reference);
+	end
+	return UNKNOWN;
+end;
 settings.InformationTypeConversionMethods = ConversionMethods;
 
 -- Class Template for creating an Information Type instance.
@@ -390,7 +421,19 @@ local InformationTypes = {
 	}),
 
 	-- Quest Fields
-	-- Providers
+	CreateInformationType("providers", { text = L.PROVIDERS, priority = 2.05, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			local providers = t.GetValue(t, reference);
+			if providers then
+				for i,provider in pairs(providers) do
+					tinsert(tooltipInfo, {
+						left = (i == 1 and "Provider(s)"),
+						right = ConversionMethods.provider(provider, reference),
+					});
+				end
+			end
+		end,
+	}),
 	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local coords = reference.coords;

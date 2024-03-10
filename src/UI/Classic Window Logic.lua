@@ -893,36 +893,6 @@ local function RowOnEnter(self)
 			});
 		end
 	end
-	if reference.providers then
-		local counter = 0;
-		for i,provider in pairs(reference.providers) do
-			local providerType = provider[1];
-			local providerID = provider[2] or 0;
-			local providerString = UNKNOWN;
-			if providerType == "o" then
-				providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
-				if app.Settings:GetTooltipSetting("objectID") then
-					providerString = providerString .. ' (' .. providerID .. ')';
-				end
-			elseif providerType == "n" then
-				providerString = (providerID > 0 and app.NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
-				if app.Settings:GetTooltipSetting("creatureID") then
-					providerString = providerString .. ' (' .. providerID .. ')';
-				end
-			elseif providerType == "i" then
-				local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
-				providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
-				if app.Settings:GetTooltipSetting("itemID") then
-					providerString = providerString .. ' (' .. providerID .. ')';
-				end
-			end
-			tinsert(tooltipInfo, {
-				left = (counter == 0 and "Provider(s)"),
-				right = providerString,
-			});
-			counter = counter + 1;
-		end
-	end
 	
 	if reference.cost then
 		if type(reference.cost) == "table" then

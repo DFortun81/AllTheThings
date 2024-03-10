@@ -1661,12 +1661,20 @@ app.AddEventHandler("OnLoad", function()
 							});
 						end
 						for i,objective in ipairs(objectives) do
-							local _ = objective.text;
-							if not _ or _:sub(1, 1) == " " then
-								_ = RETRIEVING_DATA;
+							local text = objective.text;
+							if text then
+								local a, b = (" "):split(text);
+								if b == "" then
+									text = a .. " " .. RETRIEVING_DATA;
+									reference.working = true;
+								end
+							else
+								text = RETRIEVING_DATA;
+								reference.working = true;
 							end
+							
 							tinsert(info, {
-								left = "  " .. _,
+								left = "  " .. text,
 								right = app.GetCompletionIcon(objective.finished),
 								r = 1, g = 1, b = 1,
 								wrap = true,

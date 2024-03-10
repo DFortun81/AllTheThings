@@ -154,6 +154,7 @@ for key,value in pairs({
 	["MUSIC_ROLL_ID"] = "Music Roll ID";
 	["NPC_ID"] = "NPC ID";
 	["OBJECT_ID"] = "Object ID";
+	["PROVIDERS"] = "Provider(s)";
 	["QUEST_ID"] = "Quest ID";
 	["SET_ID"] = "Gear Set ID";
 	["SOURCE_ID"] = "Source ID";
