@@ -3195,7 +3195,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",group.text or (group.key and group.key .. group[group.key]),group)
 
 		-- Track if the result is not finished processing
-		group.working = working;
+		if working then group.working = working; end
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 
 		-- Add various extra field info if enabled in settings
@@ -9396,6 +9396,7 @@ end
 RowOnEnter = function (self)
 	local reference = self.ref;
 	if not reference then return; end
+	reference.working = nil;
 	local tooltip = GameTooltip;
 	if not tooltip then return end;
 	local modifier = IsModifierKeyDown();
@@ -9651,9 +9652,6 @@ RowOnEnter = function (self)
 
 		-- Add any ID toggle fields
 		app.ProcessInformationTypes(tooltipInfo, reference);
-
-		-- Tooltip for something which was not attached via search, so mark it as complete here
-		tooltip.ATT_AttachComplete = true;
 	end
 
 	-- Ignored for Source/Progress
@@ -10087,8 +10085,13 @@ RowOnEnter = function (self)
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
 	app.ActiveRowReference = nil;
+	
+	-- Tooltip for something which was not attached via search, so mark it as complete here
+	tooltip.ATT_AttachComplete = not reference.working;
 end
 RowOnLeave = function (self)
+	local reference = self.ref;
+	if reference then reference.working = nil; end
 	local tooltip = GameTooltip;
 	app.ActiveRowReference = nil;
 	tooltip.ATT_AttachComplete = nil;

@@ -760,6 +760,7 @@ end
 local function RowOnEnter(self)
 	local reference = self.ref;
 	if not reference then return; end
+	reference.working = nil;
 	local tooltip = GameTooltip;
 	if not tooltip then return end;
 	local modifier = IsModifierKeyDown();
@@ -936,7 +937,6 @@ local function RowOnEnter(self)
 	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
 		app.ProcessInformationTypes(tooltipInfo, reference);
-		tooltip.ATT_AttachComplete = true;
 	end
 	
 	-- Show Breadcrumb information
@@ -1070,8 +1070,13 @@ local function RowOnEnter(self)
 	
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
+	
+	-- Tooltip for something which was not attached via search, so mark it as complete here
+	tooltip.ATT_AttachComplete = not reference.working;
 end
 local function RowOnLeave(self)
+	local reference = self.ref;
+	if reference then reference.working = nil; end
 	local tooltip = GameTooltip;
 	app.ActiveRowReference = nil;
 	tooltip.ATT_AttachComplete = nil;
