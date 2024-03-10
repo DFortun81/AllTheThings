@@ -647,7 +647,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 	[-1000381] = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
 	[-1000850] = "Contains Things which are rewarded that upon completing that scenario.",
-	[-1000851] = "This contains things that are rewarded upon completing that event.",
+	[-1000851] = "Contains things that are rewarded upon completing that event.",
 	[-1000853] = "Patrols the area in roughly a circle.",
 	[-1000855] = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Forsaken Deathsquad.",
 	[-1000856] = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",

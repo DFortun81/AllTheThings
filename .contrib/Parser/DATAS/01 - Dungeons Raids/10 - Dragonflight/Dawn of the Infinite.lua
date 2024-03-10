@@ -234,6 +234,9 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			ig(114259),	-- Firefly Gloves					(NYI)
 			ig(114383),	-- Gloves of Hooded Nightmares		(NYI)
+			i(113225, {	-- Kalaena's Arcane Handwraps		(NYI)
+				["modID"] = 4,
+			}),
 			ig(3956),	-- Mesh Gloves
 			ig(189904),	-- Meticulous Architect's Mitts		(NYI)
 			i(113218, {	-- Seebo's Sainted Touch			(NYI)
@@ -247,6 +250,9 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(LEATHER, {
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
+			i(113220, {	-- Crimson Gauntlets of Death		(NYI)
+				["modID"] = 4,
+			}),
 			ig(114384),	-- Gauntlets of Falling Leaves		(NYI)
 			i(113221, {	-- Siid's Silent Stranglers			(NYI)
 				["modID"] = 4,
@@ -503,6 +509,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134606),	-- Scorching Greatsword					(Removed)
 	}),
 	i(208120, {	-- Quantum Knife
+		q(77606, {	-- when you learn everything from Quantum Knife (Dagger)
+			["name"] = "Quantum Knife/Dagger completed.",
+			["collectible"] = false,
+		}),
 		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
 		ig(108054),	-- Draenic Steel Dagger					(NYI)
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
@@ -791,6 +801,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				q(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
 					["name"] = "Quantum Greatsword (Two-Handed) completed.",
+				}),
+				q(77606, {	-- when you learn everything from Quantum Knife (Dagger)
+					["name"] = "Quantum Knife/Dagger completed.",
 				}),
 				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
 					["name"] = "Quantum Knuckles/Fist Weapon completed.",
@@ -1309,7 +1322,6 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Quantum Items
 		-- q(77605),	-- when you learn everything from Quantum ?
-		-- q(77606),	-- when you learn everything from Quantum ?
 		-- q(77608),	-- when you learn everything from Quantum ?
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?

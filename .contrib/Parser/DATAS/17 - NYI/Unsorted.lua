@@ -777,7 +777,6 @@ root(ROOTS.Unsorted, {
 				-- 10.1.5.50130
 				-- Probably Quantum Items
 				q(77605),	--
-				q(77606),	--
 				q(77608),	--
 				q(77611),	--
 				q(77622),	--
