@@ -989,7 +989,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(193774),	-- Furyforged Plating
 			i(198479),	-- Gale Rider
 			i(200607),	-- Half-Eaten Banana
-			i(200845),	-- Heavily Deformed Mace
 			i(199343),	-- Immaculate Sac of Swog Treasures
 			i(199187),	-- Impossible Sheet Music
 			i(191244),	-- I.P.F. Mark 15

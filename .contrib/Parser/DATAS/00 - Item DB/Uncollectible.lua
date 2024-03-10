@@ -1295,6 +1295,7 @@ i(201227);	-- Half-Eaten Stone
 i(201228);	-- Handful of Gravel
 i(192657);	-- Hardy Cloven Hoof
 i(193438);	-- Harrowing Osteal
+i(200845);	-- Heavily Deformed Mace
 i(201185);	-- Hidden Blade
 i(192703);	-- Hide-Piercing Horn
 i(192617);	-- Hound Paw
