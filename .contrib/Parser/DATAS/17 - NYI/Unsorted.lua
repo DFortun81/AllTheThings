@@ -4,7 +4,7 @@
 -- Everything in this file hasn't been sorted yet.
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.DF, {
-		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			------ Next Check In Start of April ------
 			n(ACHIEVEMENTS, {
 				ach(19031),	-- Fyrn [Promotion]
@@ -543,7 +543,7 @@ root(ROOTS.Unsorted, {
 				q(80066),	--
 			}),
 		})),
-		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 			------ Next Check 10.2.7 ------
 			-- Class Trial [Darkal]
 			i(208878),	-- Adventurer's Footlocker
@@ -719,14 +719,14 @@ root(ROOTS.Unsorted, {
 				q(78122),	--
 			}),
 		})),
-		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			------ Next Check 10.2.7 ------
 			n(QUESTS, {
 				-- 10.1.7.51754
 				q(75369),	-- Use Your Coin!
 			}),
 		})),
-		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 			------ Next Check 10.2.7 ------
 			n(QUESTS, {
 				-- 10.1.5.49516
@@ -751,7 +751,7 @@ root(ROOTS.Unsorted, {
 		})),
 	}),
 	expansion(EXPANSION.SL, {
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
 			i(180451),	-- Grand Inquisitor's Sinstone Fragment
 			i(176093),	-- RSVP: Alexandros Mograine
 			i(176058),	-- RSVP: Baroness Vashj
@@ -1324,7 +1324,7 @@ root(ROOTS.Unsorted, {
 				i(183919),	-- Ashen Core
 			}),
 		})),
-		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2 } }, {
 			i(176921),	-- Temporal Leaves
 			i(176922),	-- Wild Nightbloom
 			i(176832),	-- Wildseed Root Grain
@@ -1349,7 +1349,7 @@ root(ROOTS.Unsorted, {
 				i(178585),	-- The Forgotten Key
 			}),
 		})),
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(187552),	-- Perfectly-Forged Credentials
 			i(187551),	-- Small Korthian Supply Chest
 			i(185918),	-- Translated Cryptograms
@@ -1375,13 +1375,13 @@ root(ROOTS.Unsorted, {
 				i(187005),	-- Wizard Pet Hat
 			}),
 		})),
-		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
 			filter(QUEST_ITEMS, {
 				i(187520),	-- Gently Shaken Gift
 				i(187561),	-- Winter Veil Gift
 			}),
 		})),
-		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
 			filter(QUEST_ITEMS, {
 				i(187274),	-- Ancient Alloy
 				i(188522),	-- Ancient Archive
@@ -1426,7 +1426,7 @@ root(ROOTS.Unsorted, {
 				i(188192),	-- Worn Stone Fragment
 			}),
 		})),
-		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
+		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {
 			filter(QUEST_ITEMS, {
 				i(192093),	-- Gently Shaken Gift
 				i(192094),	-- Winter Veil Gift

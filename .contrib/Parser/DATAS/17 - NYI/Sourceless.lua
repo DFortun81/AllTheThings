@@ -556,7 +556,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		-- 9.1.5
 		q(64975),	--
 		expansion(EXPANSION.DF, {
-			expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
 				q(64764),	-- Flag Quest [DNT] (spellID 396726)
 				q(67045),	--
 				q(71054),	--
