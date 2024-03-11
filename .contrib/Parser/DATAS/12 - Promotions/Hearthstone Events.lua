@@ -143,14 +143,15 @@ root(ROOTS.Promotions, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 		q(79410),	-- after first daily (on account) kill Dr. Boom
-		q(79421),	-- after first daily (on account) kill Dr. Boom (looted Stolen Hearthstone Card)
+		q(79421),	-- after first daily (on account) kill Dr. Boom
 		q(79423),	-- after first daily (on account) kill Dr. Boom
 		q(79451),	-- after first daily (on account) kill Dr. Boom
 		q(79452),	-- after first daily (on account) kill Dr. Boom
 		-- ^ could be mount / bag / hs toy lockout?
 		q(79441),	-- pop after Sarge (pet) was looted
 		q(79429),	-- pop after Stone of the Hearth (toy) was looted
-		q(79408),	-- after earning achievementID 20033 (Hearthstone Beginner)
+		q(79407),	-- pop after Stone of the Hearth (toy) was looted
+		q(79408),	-- after earning achievementID 20033 (Hearthstone Beginner),  looted Stolen Hearthstone Card
 
 		q(79186),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
 		q(79189),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
