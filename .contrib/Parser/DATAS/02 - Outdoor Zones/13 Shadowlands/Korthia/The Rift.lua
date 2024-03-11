@@ -11,6 +11,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["provider"] = { "i", 187276 },	-- Stolen Korthian Supplies
 						["isWeekly"] = true,
 						["minReputation"] = { 2472, 3 },	-- Tier 3
+						["g"] = {
+							i(187551),	-- Small Korthian Supply Chest
+						},
 					}),
 				}),
 				n(RARES, {

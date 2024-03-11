@@ -94,6 +94,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 35.6, 57.5, ORIBOS },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
 					["g"] = {
+						i(190955),	-- Protoplasmic Thread (QI!)
 						i(188778),	-- Cosmic Gladiator's Devouring Malediction
 						i(188691),	-- Cosmic Gladiator's Echoing Resolve
 						i(188775),	-- Cosmic Gladiator's Eternal Aegis

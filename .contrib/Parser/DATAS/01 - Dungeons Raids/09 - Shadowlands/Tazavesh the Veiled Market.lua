@@ -116,6 +116,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 180750 },	-- Au'manal <Master Forger>
 					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
+					["g"] = {
+						i(187552),	-- Perfectly-Forged Credentials
+					},
 				}),
 				q(64571, {	-- Tazavesh: Seek and Do Not Destroyer
 					["_drop"] = { "g" },

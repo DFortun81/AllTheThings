@@ -1002,6 +1002,7 @@ i(187189);	-- Hyperlight Multitool
 i(187445);	-- Inert Spell Scroll
 i(186200);	-- Infused Dendrite
 i(187481);	-- Intact Razorwing Ribcage
+i(187500);	-- Intricately Etched Letter Opener
 i(187555);	-- Irredeemable Trash
 i(185477);	-- Irridescent Eye
 i(187213);	-- Jo's Intergalactic Cache
@@ -1039,6 +1040,7 @@ i(187320);	-- Portentous Shard of Zed
 i(187486);	-- Prismatic Glass Pyramids
 i(187493);	-- Pungent Mawshroom Residue
 i(187594);	-- P'ugh's Almanac
+i(187496);	-- Realms of the Shadowlands
 i(185615);	-- Recovered Phantasma
 i(187175);	-- Runekeeper's Ingot
 i(185969);	-- Rune-Etched Stone

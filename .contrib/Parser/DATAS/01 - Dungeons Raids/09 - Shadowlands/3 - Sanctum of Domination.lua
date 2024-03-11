@@ -630,7 +630,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["crs"] = { 175559 },	-- Kel'Thuzad
 						["g"] = {
 							i(186550),	-- Mawsworn Minion (PET!)
-							i(187542),	-- Jaithys, the Prison Blade
+							i(187542, {	-- Jaithys, the Prison Blade
+								["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },	-- This Item Doesnt Seem to Drop Anymore -- 13th March 2024 by Cromation
+							}),
 							i(186410, {	-- Jaithys, the Prison Blade
 								-- #if BEFORE 10.0.2
 								["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
@@ -856,7 +858,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["g"] = {
 						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
-						i(187542),	-- Jaithys, the Prison Blade
+						i(187542, {	-- Jaithys, the Prison Blade
+							["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },	-- This Item Doesnt Seem to Drop Anymore -- 13th March 2024 by Cromation
+						}),
 						i(186410, {	-- Jaithys, the Prison Blade
 							-- #if BEFORE 10.0.2
 							["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
@@ -1072,7 +1076,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
 						i(186550),	-- Mawsworn Minion (PET!)
-						i(187542),	-- Jaithys, the Prison Blade
+						i(187542, {	-- Jaithys, the Prison Blade
+							["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },	-- This Item Doesnt Seem to Drop Anymore -- 13th March 2024 by Cromation
+						}),
 						i(186410, {	-- Jaithys, the Prison Blade
 							-- #if BEFORE 10.0.2
 							["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
@@ -1301,7 +1307,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["g"] = {
 						ach(15120),	-- Mythic: Kel'Thuzad
 						i(186550),	-- Mawsworn Minion (PET!)
-						i(187542),	-- Jaithys, the Prison Blade
+						i(187542, {	-- Jaithys, the Prison Blade
+							["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },	-- This Item Doesnt Seem to Drop Anymore -- 13th March 2024 by Cromation
+						}),
 						i(186410, {	-- Jaithys, the Prison Blade
 							-- #if BEFORE 10.0.2
 							["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023

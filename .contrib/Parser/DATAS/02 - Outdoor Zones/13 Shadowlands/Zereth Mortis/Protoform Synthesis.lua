@@ -68,6 +68,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64745 },	-- Selfless Preservation
 					["provider"] = { "n", 181273 },	-- Tahli
 					["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+					["g"] = {
+						i(187941),	-- Depleted Automa Core (QI!)
+					},
 				}),
 				q(64759, {	-- Junk's Not Dead
 					["sourceQuests"] = { 64745 },	-- Selfless Preservation

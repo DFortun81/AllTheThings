@@ -265,24 +265,44 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["provider"] = { "n", 174273 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
+										["g"] = {
+											i(176921),	-- Temporal Leaves
+											i(176922),	-- Wild Nightbloom
+											i(176832),	-- Wildseed Root Grain
+										},
 									}),
 									q(62450, {	-- A Spirit's Heart
 										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
+										["g"] = {
+											i(176921),	-- Temporal Leaves
+											i(176922),	-- Wild Nightbloom
+											i(176832),	-- Wildseed Root Grain
+										},
 									}),
 									q(62452, {	-- A Spirit's Might
 										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
+										["g"] = {
+											i(176921),	-- Temporal Leaves
+											i(176922),	-- Wild Nightbloom
+											i(176832),	-- Wildseed Root Grain
+										},
 									}),
 									q(62445, {	-- A Spirit's Pride
 										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
+										["g"] = {
+											i(176921),	-- Temporal Leaves
+											i(176922),	-- Wild Nightbloom
+											i(176832),	-- Wildseed Root Grain
+										},
 									}),
 									q(62442, {	-- Aid the Covenant
 										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove

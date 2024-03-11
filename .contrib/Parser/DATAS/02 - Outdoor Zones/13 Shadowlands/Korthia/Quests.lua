@@ -556,6 +556,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["coord"] = { 54.6, 40.3, SINFALL_REACHES },
 					["g"] = {
 						i(185917),	-- Transcribed Infernal Cryptograms (QI!)
+						i(185918),	-- Translated Cryptograms
 					},
 				}),
 				q(63652, {	-- The "Unwelcome" Guests

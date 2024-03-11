@@ -2242,6 +2242,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["timeline"] = { "created 8.3.0", ADDED_9_0_1 },
 		}),
 	}),
+	n(TREASURES, {
+		o(180746, {	-- Gently Shaken Gift
+			i(178529, {	-- Gently Shaken Gift
+				["timeline"] = { ADDED_9_0_1 },
+			}),
+			i(187520, {	-- Gently Shaken Gift
+				["timeline"] = { ADDED_9_1_5 },
+			}),
+			i(192093, {	-- Gently Shaken Gift
+				["timeline"] = { "added 10.0.2.47213" },
+			}),
+			i(210657, {	-- Gently Shaken
+				["timeline"] = { "added 10.2.0.52649" },
+			}),
+		}),
+		o(187236, {	-- Winter Veil Gift
+			i(178528, {	-- Winter Veil Gift
+				["timeline"] = { ADDED_9_0_1 },
+			}),
+			i(187561, {	-- Winter Veil Gift
+				["timeline"] = { ADDED_9_1_5 },
+			}),
+			i(192094, {	-- Winter Veil Gift
+				["timeline"] = { "added 10.0.2.47213" },
+			}),
+			i(209871, {	-- Winter Veil Gift
+				["timeline"] = { "added 10.2.0.52649" },
+			}),
+		}),
+	}),
 	-- #endif
 	n(VENDORS, {
 		n(COMMON_VENDOR_ITEMS, {

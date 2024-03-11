@@ -258,7 +258,7 @@ local QUANTUM_GROUP = sharedData({
 				["modID"] = 4,
 			}),
 			ig(3981),	-- Strapped Gloves					(NYI)
-			
+
 			ig(20661),	-- Abyssal Leather Gloves			(Removed)
 			ig(134730),	-- Frosthide Gloves					(Removed)
 			ig(134675),	-- Rookie's Gloves					(Removed)
@@ -504,6 +504,18 @@ local QUANTUM_GROUP = sharedData({
 			["modID"] = 2, -- Heroic raid
 		}),
 		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
+			["modID"] = 6, -- Mythic raid
+		}),
+		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
+			["modID"] = 1, -- LFR raid
+		}),
+		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
+			["modID"] = 3, -- Normal raid
+		}),
+		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
+			["modID"] = 5, -- Heroic raid
+		}),
+		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 6, -- Mythic raid
 		}),
 		ig(134606),	-- Scorching Greatsword					(Removed)

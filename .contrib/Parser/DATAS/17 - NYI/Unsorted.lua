@@ -532,9 +532,6 @@ root(ROOTS.Unsorted, {
 			i(208878),	-- Adventurer's Footlocker
 			i(213580),	-- Heart-Lesion Helm
 			i(213581),	-- Heart-Lesion Helm
-			-- Winter Veil
-			i(209871),	-- Winter Veil Gift
-			i(210657),	-- Gently Shaken Gift
 			-- Fyralath [Darkal]
 			i(208597),	-- Eadweard's Notes
 			i(208782),	-- Symbiotic Glowspore Grip
@@ -700,13 +697,6 @@ root(ROOTS.Unsorted, {
 				q(78012),	--
 				q(78013),	--
 				q(78122),	--
-			}),
-		})),
-		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			------ Next Check 10.2.7 ------
-			n(QUESTS, {
-				-- 10.1.7.51754
-				q(75369),	-- Use Your Coin!
 			}),
 		})),
 		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -875,6 +865,7 @@ root(ROOTS.Unsorted, {
 				i(180058),	-- Relic of the Past III
 				i(180059),	-- Relic of the Past IV
 				i(180060),	-- Relic of the Past V
+				--- ??? ---
 				i(118492),	-- Schematic: Morden's Magnificent Contraption [Weird ItemID...]
 			}),
 			filter(QUEST_ITEMS, {
@@ -973,7 +964,6 @@ root(ROOTS.Unsorted, {
 				i(174775),	-- Fix-It-Stick
 				i(176814),	-- Fleshcrafter's Maldracite
 				i(171106),	-- Gathered Necrotic Shards
-				i(178529),	-- Gently Shaken Gift
 				i(173528),	-- Gilded Hearthstone
 				i(173537),	-- Glowing Hearthstone
 				i(183961),	-- Gorm "Juice"
@@ -1277,7 +1267,6 @@ root(ROOTS.Unsorted, {
 				i(180543),	-- Wild Gorm Gris
 				i(181749),	-- Windswept Rising Glory
 				i(177836),	-- Wingpierce Javelin
-				i(178528),	-- Winter Veil Gift
 				i(182963),	-- Witch's Satchel
 				i(180050),	-- Wither Blade
 				i(174916),	-- Withering Hemlock
@@ -1305,114 +1294,6 @@ root(ROOTS.Unsorted, {
 				i(183042),	-- Colossal Power Core
 				i(183912),	-- Scorched Mirror Fragment
 				i(183919),	-- Ashen Core
-			}),
-		})),
-		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2 } }, {
-			i(176921),	-- Temporal Leaves
-			i(176922),	-- Wild Nightbloom
-			i(176832),	-- Wildseed Root Grain
-			filter(QUEST_ITEMS, {
-				i(175841),	-- Ani-Matter Orb
-				i(175013),	-- Bug Dissolver
-				i(181824),	-- Corrosive Bile
-				i(177905),	-- Deathstone
-				i(176396),	-- Dredhollow Tools
-				i(184228),	-- Electrified Soul Remnant
-				i(184196),	-- Flask of Unravelling
-				i(180831),	-- Kivarr's Tonic
-				i(180775),	-- Memory of Home
-				i(184102),	-- Possessed Mask
-				i(178016),	-- Potential Catalyst
-				i(184229),	-- Shadowy Key
-				i(184488),	-- Sinstone Fragment
-				i(184355),	-- Soulkeeper
-				i(184356),	-- Soulkeeper
-				i(184357),	-- Soulkeeper
-				i(184358),	-- Soulkeeper
-				i(178585),	-- The Forgotten Key
-			}),
-		})),
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
-			i(187552),	-- Perfectly-Forged Credentials
-			i(187551),	-- Small Korthian Supply Chest
-			i(185918),	-- Translated Cryptograms
-			filter(QUEST_ITEMS, {
-				i(185732),	-- Archive Tablet
-				i(187004),	-- Bone Chew
-				i(185736),	-- Brilliant Golden Feather
-				i(187002),	-- Delicious Pet Cookie
-				i(185727),	-- Draka's Battlehorn
-				i(185740),	-- Head of Azodius
-				i(185915),	-- Korthian Artifact
-				i(186733),	-- Lovely Pet Caller
-				i(185766),	-- Necrolite Focusing Crystal
-				i(187003),	-- Pet Plushy
-				i(187055),	-- Pouch of Rune Chits
-				i(187177),	-- Researching Korthian Relics
-				i(185485),	-- Rune Remover
-				i(187033),	-- Small Offering Key
-				i(187001),	-- Stylish Pet Collar
-				i(187505),	-- Super Cool Dragon Head
-				i(185743),	-- Torn Page
-				i(185829),	-- Trueheart Spear
-				i(187005),	-- Wizard Pet Hat
-			}),
-		})),
-		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
-			filter(QUEST_ITEMS, {
-				i(187520),	-- Gently Shaken Gift
-				i(187561),	-- Winter Veil Gift
-			}),
-		})),
-		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
-			filter(QUEST_ITEMS, {
-				i(187274),	-- Ancient Alloy
-				i(188522),	-- Ancient Archive
-				i(187844),	-- Automa Protector Intact Resonator
-				i(187685),	-- Black Steel Fragment
-				i(187708),	-- Broken Helm
-				i(188002),	-- Broken Helm
-				i(188765),	-- Broker Studies
-				i(191038),	-- Bundle of Supplies
-				i(187987),	-- Call Bounding Bufonid
-				i(187949),	-- Catalyzed Apple
-				i(190323),	-- Chain Reactor
-				i(188214),	-- Core Vine Cluster [UNUSED]
-				i(187341),	-- Creation Codex: Animate
-				i(187340),	-- Creation Codex: Automa
-				i(187158),	-- Deobfuscating Oculus
-				i(187941),	-- Depleted Automa Core
-				i(187126),	-- Discarded Journal
-				i(188275),	-- Energized Roots [UNUSED]
-				i(188166),	-- Engraved Card
-				i(188118),	-- Enigmatic Scrolls
-				i(187841),	-- Explosive Core
-				i(190970),	-- Felicitous Glade Report
-				i(187516),	-- Firim's Forge-Tap
-				i(188678),	-- Firim's Motivator
-				i(190968),	-- Genesis Fields Report
-				i(188529),	-- Hexagonal Nectar
-				i(187808),	-- Ingress Phrase
-				i(187337),	-- Mawsworn Cache Key
-				i(187115),	-- Mawsworn Missive
-				i(187528),	-- Pristine Automa Core
-				i(187142),	-- Pristine Cervid Core
-				i(187141),	-- Pristine Lupine Core
-				i(187143),	-- Pristine Raptora Core
-				i(190955),	-- Protoplasmic Thread
-				i(190969),	-- Provis Flora Report
-				i(187618),	-- Site Oeth Circuit
-				i(188274),	-- Stolen Artifact
-				i(190971),	-- Terrace of Formation Report
-				i(187321),	-- Thermic Demolitor
-				i(188165),	-- Waterfall Water
-				i(188192),	-- Worn Stone Fragment
-			}),
-		})),
-		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {
-			filter(QUEST_ITEMS, {
-				i(192093),	-- Gently Shaken Gift
-				i(192094),	-- Winter Veil Gift
 			}),
 		})),
 	}),

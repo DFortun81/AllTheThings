@@ -199,6 +199,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63843, {	-- Heart and Soul
 							["provider"] = { "n", 177226 },	-- Artemede
 							["coord"] = { 42.3, 44.3, THE_MAW },
+							["g"] = {
+								i(185829),	-- Trueheart Spear (QI!)
+							},
 						}),
 						q(63853, {	-- Kill The Flame
 							["provider"] = { "n", 178005 },	-- Theotar
@@ -381,6 +384,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 32.9, 56.8, THE_MAW },
 							["g"] = {
 								i(185729),	-- Anima Charged Rune (QI!)
+								i(185485),	-- Rune Remover (QI!)
 							},
 						}),
 						q(63772, {	-- Waiting in the Wings

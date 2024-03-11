@@ -114,6 +114,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 35, 64.7, ZERETH_MORTIS },
 					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+						i(190968),	-- Genesis Fields Report (QI!)
+						i(190969),	-- Provis Flora Report (QI!)
+						i(190971),	-- Terrace of Formation Report (QI!)
 						i(188025),	-- Anthemic Links
 						i(188011),	-- Choral Sash
 						i(188033),	-- Harmonium Girdle
@@ -714,6 +717,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
 					["provider"] = { "n", 180903 },	-- Firim
 					["coord"] = { 56.9, 31.2, ZERETH_MORTIS },
+					["g"] = {
+						i(188678),	-- Firim's Motivator (QI!)
+					},
 				}),
 				q(64718, {	-- Keys To Victory
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
@@ -1180,6 +1186,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				["g"] = {
+					i(187516),	-- Firim's Forge-Tap (QI!)
 					i(187519),	-- Remnant Neomotes (QI!)
 				},
 			}),
@@ -1196,6 +1203,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				["g"] = {
 					i(187782),	-- Eidolic Fragment (QI!)
+					i(187516),	-- Firim's Forge-Tap (QI!)
 					i(187779),	-- Minor Enigmet (QI!)
 				},
 			}),

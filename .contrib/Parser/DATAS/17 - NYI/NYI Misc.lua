@@ -731,7 +731,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(186203),	-- Glowing Devourer Stomach
 			i(186396),	-- Intact Mauler Ridge
 			i(186681),	-- Intentionally Scattered Page
-			i(187500),	-- Intricately Etched Letter Opener
 			i(186394),	-- Item Ehancement Matrix
 			i(186443),	-- Item Enhancement Kit
 			i(186389),	-- Jailer's Stygian Badge
@@ -747,7 +746,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(187112),	-- Packaged Soul Ash
 			i(187149),	-- Partial Conduit Index
 			i(184826),	-- Random Package Ammo
-			i(187496),	-- Realms of the Shadowlands
 			i(186408),	-- Refracting Soul Stone
 			i(186397),	-- Reinforced Item Ehancement Matrix
 			i(186441),	-- Reinforced Item Enhancement Kit

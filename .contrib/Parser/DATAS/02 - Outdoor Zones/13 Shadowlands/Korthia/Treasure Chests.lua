@@ -5,6 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 	m(KORTHIA, {
 		n(TREASURES, {
 			n(REWARDS, {
+				i(187055),	-- Pouch of Rune Chits (QI!)
 				i(185962),	-- Rune Chit
 			}),
 			o(369194, {	-- Anima Laden Egg
@@ -261,6 +262,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					i(187344, {	-- Offering Kit Maker (TOY!)
 						i(187342),	-- Offering Preparation Kit
 					});
+				},
+			}),
+			o(369234, {	-- Offering Key
+				["coord"] = { 43.6, 67.4, KORTHIA },
+				["g"] = {
+					i(187033),	-- Small Offering Key
 				},
 			}),
 			o(369297, {	-- Pile of Bones

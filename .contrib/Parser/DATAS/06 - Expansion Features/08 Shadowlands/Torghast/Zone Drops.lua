@@ -217,6 +217,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					159190,	-- Synod
 				},
 			}),
+			i(178585),	-- The Forgotten Key (QI!)
 			i(183195, {	-- Torghast Lurker (PET!)
 				["crs"] = {
 					153011,	-- Binder Baritas

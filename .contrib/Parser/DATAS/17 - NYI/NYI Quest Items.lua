@@ -104,19 +104,67 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 		-- 9.0.2
 		expansion(EXPANSION.SL, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
+			i(175841),	-- Ani-Matter Orb
+			i(175013),	-- Bug Dissolver
+			i(181824),	-- Corrosive Bile
+			i(177905),	-- Deathstone
+			i(176396),	-- Dredhollow Tools
+			i(184228),	-- Electrified Soul Remnant
+			i(184196),	-- Flask of Unravelling
+			i(180831),	-- Kivarr's Tonic
+			i(180775),	-- Memory of Home
+			i(184102),	-- Possessed Mask
+			i(178016),	-- Potential Catalyst
+			i(184229),	-- Shadowy Key
+			i(184488),	-- Sinstone Fragment
+			i(184355),	-- Soulkeeper
+			i(184356),	-- Soulkeeper
+			i(184357),	-- Soulkeeper
+			i(184358),	-- Soulkeeper
 			i(184169),	-- Vault Chain Pull
 		})),
 
 		-- 9.1.0
 		expansion(EXPANSION.SL, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
+			i(185732),	-- Archive Tablet
+			i(187004),	-- Bone Chew
+			i(185736),	-- Brilliant Golden Feather
+			i(187002),	-- Delicious Pet Cookie
+			i(185727),	-- Draka's Battlehorn
 			i(187863),	-- Key of Ephemera
+			i(186733),	-- Lovely Pet Caller
+			i(185766),	-- Necrolite Focusing Crystal
+			i(187003),	-- Pet Plushy
+			i(187001),	-- Stylish Pet Collar
+			i(187505),	-- Super Cool Dragon Head
+			i(185743),	-- Torn Page
+			i(187005),	-- Wizard Pet Hat
 		})),
 
 		-- 9.2.0
 		expansion(EXPANSION.SL, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
 			i(187688),	-- [DNT] Rinanji's Key
 			i(187686),	-- [DNT] Suspicious Badge
+			i(187274),	-- Ancient Alloy
+			i(187844),	-- Automa Protector Intact Resonator
+			i(187685),	-- Black Steel Fragment
+			i(187708),	-- Broken Helm
+			i(188002),	-- Broken Helm
+			i(188765),	-- Broker Studies
+			i(191038),	-- Bundle of Supplies
+			i(190323),	-- Chain Reactor
+			i(188214),	-- Core Vine Cluster [UNUSED]
+			i(187341),	-- Creation Codex: Animate
+			i(187340),	-- Creation Codex: Automa
+			i(187158),	-- Deobfuscating Oculus
+			i(187126),	-- Discarded Journal
+			i(188275),	-- Energized Roots [UNUSED]
+			i(188166),	-- Engraved Card
 			i(188200),	-- Engraved Stone
+			i(190970),	-- Felicitous Glade Report
+			i(187808),	-- Ingress Phrase
+			i(187337),	-- Mawsworn Cache Key
+			i(187115),	-- Mawsworn Missive
 			i(191634),	-- Memory of Unity
 			i(191635),	-- Memory of Unity
 			i(191636),	-- Memory of Unity
@@ -130,6 +178,15 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(191644),	-- Memory of Unity
 			i(191645),	-- Memory of Unity
 			i(185484),	-- Nathrezim Documents
+			i(187528),	-- Pristine Automa Core
+			i(187142),	-- Pristine Cervid Core
+			i(187141),	-- Pristine Lupine Core
+			i(187143),	-- Pristine Raptora Core
+			i(187618),	-- Site Oeth Circuit
+			i(188274),	-- Stolen Artifact
+			i(187321),	-- Thermic Demolitor
+			i(188165),	-- Waterfall Water
+			i(188192),	-- Worn Stone Fragment
 		})),
 	}),
 	expansion(EXPANSION.DF, {

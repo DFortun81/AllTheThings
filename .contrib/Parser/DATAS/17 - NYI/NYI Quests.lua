@@ -8697,6 +8697,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(74288),	--
 			q(74289),	--
 			q(74846),	--
+			q(75369),	-- Use Your Coin!
 		})),
 	}),
 }));
