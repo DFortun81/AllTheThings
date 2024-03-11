@@ -48,9 +48,11 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		}),
 		ach(5478, {	-- The Limnologist
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 4.0.3" },
 		}),
 		ach(5479, {	-- The Oceanographer
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 4.0.3" },
 		}),
 		ach(153),	-- The Old Gnome and the Sea
 		ach(1257, {	-- The Scavenger
