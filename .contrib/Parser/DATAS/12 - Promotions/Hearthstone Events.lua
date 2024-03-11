@@ -92,6 +92,28 @@ root(ROOTS.Promotions, {
 						i(211965),   -- Hearthstone Wild Card
 					},
 				}),
+				q(79693, {	-- Play Hearthstone!
+					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
+					["coords"] = {
+						--	{ 61.6, 31.1, ORGRIMMAR },
+						--	{ 61.6, 31.1, STORMWIND },
+						--	{ 61.6, 31.1, VALDRAKKEN },
+						},
+						["groups"] = {
+							i(211965),   -- Hearthstone Wild Card
+						},
+				}),
+				q(79694, {	-- Play Hearthstone!
+					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
+					["coords"] = {
+						--	{ 61.6, 31.1, ORGRIMMAR },
+						--	{ 61.6, 31.1, STORMWIND },
+						--	{ 61.6, 31.1, VALDRAKKEN },
+						},
+						["groups"] = {
+							i(211965),   -- Hearthstone Wild Card
+						},
+				}),
 			}),
 			n(215146, {	-- Dr. Boom <"Dr. 7">
 				i(212335),	-- Collector's Carryall (BAG)
@@ -126,8 +148,44 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		-- ^ could be mount / bag / hs toy lockout?
 		q(79441),	-- pop after Sarge (pet) was looted
 		q(79429),	-- pop after Stone of the Hearth (toy) was looted
-		q(79408),	-- pop after Stolen Hearthstone Card was looted (inside was itemID 212934 (Hearthstone Card: Pyroblast))
-		q(79397),	-- pop after Stolen Hearthstone Card was looted (inside was itemID 212930 (Hearthstone Card: Blessing of Kings))
-		q(79400),	-- after earning achievementID 20033 (Hearthstone Beginner)
+		q(79408),	-- after earning achievementID 20033 (Hearthstone Beginner)
+
+
+
+		q(79409),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		q(79416),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		q(79419),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		q(79420),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		q(79422),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		q(79425),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		q(79428),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		q(79583),	-- Accepting 'Play Hearthstone!' (questID 79178)
+
+		q(79693),	-- Completing 'Play Hearthstone!' (questID 79178)
+		q(79694),	-- Completing 'Play Hearthstone!' (questID 79178)
+
+
+		-- Hearthstone Card Collection (achievementID 19724)
+		q(79392),	-- Abomination
+		q(79390),	-- Alley Cat
+		q(79394),	-- Ancient of Love
+		q(79399),	-- Arcane Explosion
+		q(79393),	-- Arcane Golem
+		q(79401),	-- Arcane Shot
+		q(79396),	-- Baron Geddon
+		q(79397),	-- Blessing of Kings
+		q(79460),	-- Cairne Bloodhoof
+		q(79406),	-- Chagred Devilsaur
+		q(79389),	-- Chillwind Yeti
+		q(79398),	-- Forbidden Words
+		q(79391),	-- Grove Tender
+		q(79582),	-- Hand of Protection
+		q(79395),	-- Hogger
+		q(79403),	-- Jive, Insect!
+		--q(),	-- Preparation
+		q(79400),	-- Pyroblast
+		q(79405),	-- Righteousness
+		--q(),	-- Scarlet Crusader
+		q(79385),	-- Shadow Word: Ruin
 	})),
 }));
