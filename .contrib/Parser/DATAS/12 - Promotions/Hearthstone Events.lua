@@ -142,6 +142,8 @@ root(ROOTS.Promotions, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+		q(79410),	-- after first daily (on account) kill Dr. Boom
+		q(79421),	-- after first daily (on account) kill Dr. Boom (looted Stolen Hearthstone Card)
 		q(79423),	-- after first daily (on account) kill Dr. Boom
 		q(79451),	-- after first daily (on account) kill Dr. Boom
 		q(79452),	-- after first daily (on account) kill Dr. Boom
@@ -150,7 +152,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79429),	-- pop after Stone of the Hearth (toy) was looted
 		q(79408),	-- after earning achievementID 20033 (Hearthstone Beginner)
 
-
+		q(79186),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
+		q(79189),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
 
 		q(79409),	-- Accepting 'Play Hearthstone!' (questID 79178)
 		q(79416),	-- Accepting 'Play Hearthstone!' (questID 79178)
@@ -160,8 +163,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79425),	-- Accepting 'Play Hearthstone!' (questID 79178)
 		q(79428),	-- Accepting 'Play Hearthstone!' (questID 79178)
 		q(79583),	-- Accepting 'Play Hearthstone!' (questID 79178)
-
-
 
 		-- Hearthstone Card Collection (achievementID 19724)
 		q(79392),	-- Abomination
@@ -180,7 +181,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79582),	-- Hand of Protection
 		q(79395),	-- Hogger
 		q(79403),	-- Jive, Insect!
-		--q(),	-- Preparation
+		q(79402),	-- Preparation
 		q(79400),	-- Pyroblast
 		q(79405),	-- Righteousness
 		q(79384),	-- Scarlet Crusader
