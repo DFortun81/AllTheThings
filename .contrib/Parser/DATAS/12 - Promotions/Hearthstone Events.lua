@@ -116,37 +116,40 @@ root(ROOTS.Promotions, {
 				}),
 			}),
 			n(215146, {	-- Dr. Boom <"Dr. 7">
-				i(212335),	-- Collector's Carryall (BAG)
-				i(212337),	-- Stone of the Hearth (TOY!)
-				i(212522),	-- Compass Rose (MOUNT!)
-				i(212606),	-- Sarge (PET!)
-				i(212607),	-- Reno's Lucky Hat (COSMETIC!)
-				i(212644),	-- Taverner's Belt (COSMETIC!)
-				i(212336),	-- The Tavern's Tabard (COSMETIC!)
-				i(211965),	-- Hearthstone Wild Card
-				i(212924, {	-- Stolen Hearthstone Card
-					i(212925),	-- Hearthstone Card: Abomination
-					i(212922),	-- Hearthstone Card: Alleycat
-					i(212927),	-- Hearthstone Card: Ancient of Lore
-					i(212932),	-- Hearthstone Card: Arcane Explosion
-					i(212926),	-- Hearthstone Card: Arcane Golem
-					i(212933),	-- Hearthstone Card: Arcane Shot
-					i(212929),	-- Hearthstone Card: Baron Geddon
-					i(212930),	-- Hearthstone Card: Blessing of Kings
-					i(213019),	-- Hearthstone Card: Cairne Bloodhoof
-					i(212938),	-- Hearthstone Card: Charged Devilsaur
-					i(212921),	-- Hearthstone Card: Chillwind Yeti
-					i(212931),	-- Hearthstone Card: Forbidden Words
-					i(212923),	-- Hearthstone Card: Grove Tender
-					i(213224),	-- Hearthstone Card: Hand of Protection
-					i(212928),	-- Hearthstone Card: Hogger
-					i(212939),	-- Hearthstone Card: Jive, Insect
-					i(212937),	-- Hearthstone Card: Preparation
-					i(212934),	-- Hearthstone Card: Pyroblast
-					i(212936),	-- Hearthstone Card: Righteousness
-					i(212871),	-- Hearthstone Card: Scarlet Crusader
-					i(212872),	-- Hearthstone Card: Shadow Word: Ruin
-				}),
+				["provider"] = { "n", 214985 },	-- Ominous Portal
+				["groups"] = {
+					i(212335),	-- Collector's Carryall (BAG)
+					i(212337),	-- Stone of the Hearth (TOY!)
+					i(212522),	-- Compass Rose (MOUNT!)
+					i(212606),	-- Sarge (PET!)
+					i(212607),	-- Reno's Lucky Hat (COSMETIC!)
+					i(212644),	-- Taverner's Belt (COSMETIC!)
+					i(212336),	-- The Tavern's Tabard (COSMETIC!)
+					i(211965),	-- Hearthstone Wild Card
+					i(212924, {	-- Stolen Hearthstone Card
+						i(212925),	-- Hearthstone Card: Abomination
+						i(212922),	-- Hearthstone Card: Alleycat
+						i(212927),	-- Hearthstone Card: Ancient of Lore
+						i(212932),	-- Hearthstone Card: Arcane Explosion
+						i(212926),	-- Hearthstone Card: Arcane Golem
+						i(212933),	-- Hearthstone Card: Arcane Shot
+						i(212929),	-- Hearthstone Card: Baron Geddon
+						i(212930),	-- Hearthstone Card: Blessing of Kings
+						i(213019),	-- Hearthstone Card: Cairne Bloodhoof
+						i(212938),	-- Hearthstone Card: Charged Devilsaur
+						i(212921),	-- Hearthstone Card: Chillwind Yeti
+						i(212931),	-- Hearthstone Card: Forbidden Words
+						i(212923),	-- Hearthstone Card: Grove Tender
+						i(213224),	-- Hearthstone Card: Hand of Protection
+						i(212928),	-- Hearthstone Card: Hogger
+						i(212939),	-- Hearthstone Card: Jive, Insect
+						i(212937),	-- Hearthstone Card: Preparation
+						i(212934),	-- Hearthstone Card: Pyroblast
+						i(212936),	-- Hearthstone Card: Righteousness
+						i(212871),	-- Hearthstone Card: Scarlet Crusader
+						i(212872),	-- Hearthstone Card: Shadow Word: Ruin
+					}),
+				},
 			}),
 			i(163186, {	-- Fiery Hearthsteed (MOUNT!)
 				["description"] = "Granted to Players who login to Hearthstone between March 11 2024 and May 14 2024.",
