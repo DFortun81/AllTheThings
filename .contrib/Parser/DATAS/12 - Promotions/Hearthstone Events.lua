@@ -53,31 +53,60 @@ root(ROOTS.Promotions, {
 	})),
 	n(HEARTHSTONE_10TH_ANNIVERSARY, {
 		-- Work in progress
+		["maps"] = {
+			ORGRIMMAR,
+			STORMWIND,
+			VALDRAKKEN,
+		},
 		["timeline"] = { ADDED_10_2_5 },
 		["groups"] = {
-			ach(19866),		-- Hearthstoned: Fiery Edition
-			ach(20033, {	-- Hearthstone Beginner
-				i(211946),	-- Hearthstone Game Table (TOY!)
+			n(ACHIEVEMENTS, {
+				ach(19866,	{	-- Hearthstoned: Fiery Edition
+					["provider"] = { "i", 163186 },	-- Fiery Hearthsteed (MOUNT!)
+				}),
+				ach(20033, {	-- Hearthstone Beginner
+					i(211946),	-- Hearthstone Game Table (TOY!)
+				}),
+				ach(19724),		-- Hearthstone Card Collection
 			}),
-			ach(19724),		-- Hearthstone Card Collection
-			q(79184, {	-- It's Hearthstone's Anniversary!
-				["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter
-				["groups"] = {
-					i(212157),   -- An Invitation
-				},
+			n(MAILBOX, {
+				i(212154),	-- Hearthstone Invitation Letter
 			}),
-			i(212335),   -- Collector's Carryall (BAG)
-			--i(),	-- Compass Rose (MOUNT!)
-			--i(212338),   -- DNT Hearthstone Loot Hat (Needs Art)	-- Doesnt load ingame
-			i(163186),	-- Fiery Hearthsteed (MOUNT!)
-			i(212154),	-- Hearthstone Invitation Letter
-			i(211965),   -- Hearthstone Wild Card
-			--pets(),	-- Sarge (PET!))
-			i(212337),   -- Stone of the Hearth (TOY!)
-			--i(212532),   -- Reno's Hat	-- Doesnt load ingame
-			i(212607),   -- Reno's Lucky Hat
-			i(212644),   -- Taverner's Belt
-			i(212336),   -- The Tavern's Tabard
+			n(QUESTS, {
+				q(79184, {	-- It's Hearthstone's Anniversary!
+					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter
+					["groups"] = {
+						i(212157),   -- An Invitation
+					},
+				}),
+				q(79178, {	-- Play Hearthstone!
+					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
+					["provider"] = { "n", 215409 },	-- MC Farala
+					["coords"] = {
+					--	{ 61.6, 31.1, ORGRIMMAR },
+					--	{ 61.6, 31.1, STORMWIND },
+					--	{ 61.6, 31.1, VALDRAKKEN },
+					},
+					["g"] = {
+					--	i(208084),	-- 
+					},
+				--	["provider"] = { "i", 212979 },	-- Starter Deck
+					["groups"] = {
+						i(211965),   -- Hearthstone Wild Card
+					},
+				}),
+			}),
+			--n(xxxxx, {	-- Whizbang
+				i(212335),   -- Collector's Carryall (BAG)
+				i(212522),	-- Compass Rose (MOUNT!)
+				i(212606),	-- Sarge (PET!) [Hearthstone]
+				i(212607),   -- Reno's Lucky Hat
+				i(212644),   -- Taverner's Belt
+				i(212336),   -- The Tavern's Tabard
+			--}),
+			i(163186, {	-- Fiery Hearthsteed (MOUNT!)
+				["description"] = "Granted to Players who login to Hearthstone between March 11 2024 and May 14 2024.",
+			}),
 		},
 	}),
 });

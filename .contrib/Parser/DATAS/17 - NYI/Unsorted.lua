@@ -10,7 +10,6 @@ root(ROOTS.Unsorted, {
 				ach(19031),	-- Fyrn [Promotion]
 			}),
 			filter(BATTLE_PETS, {
-				i(212606),	-- Sarge (PET!) [Hearthstone]
 				i(212786),	-- Lovely Duckling (PET!) [Noblegarden]
 				i(212791),	-- Beetriz (PET!) [Trading Post]
 				i(208446),	-- Fyrn (PET!) [Promotion]
@@ -157,7 +156,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
-				i(212522),	-- Compass Rose (MOUNT!) [Hearthstone]
 				i(212599),	-- Noble Flying Carpet (MOUNT!) [Noblegarden]
 				i(212920),	-- Savage Blue Battle Turtle (MOUNT!) [Trading Post]
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
