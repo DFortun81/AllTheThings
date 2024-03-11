@@ -199,7 +199,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(43303),	-- Time to Rumble!
 			q(40279, {	-- Training with Durian
 				["coord"] = { 46.4, 36.9, VALSHARAH },
+				-- #IF BEFORE 10.2.5
+				-- Not sure when they fixed this but you can repeat the battle now :D
 				["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
+				-- #ENDIF
 			}),
 			q(41992),	-- Twisted Ash
 			q(46766),	-- Ulgthax (Invasion wq)
