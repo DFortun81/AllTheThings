@@ -418,12 +418,8 @@ root(ROOTS.Unsorted, {
 			i(212155),	-- Hearthstone Invitation Letter
 			i(212156),	-- Hearthstone Invitation Letter
 			-- Rewards
-			i(212335),	-- Collector's Carryall
 			i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
 			i(212532),	-- Reno's Hat [Hearthstone]
-			i(212607),	-- Reno's Lucky Hat [Hearthstone]
-			i(212644),	-- Taverner's Belt [Hearthstone]
-			i(212336),	-- The Tavern's Tabard
 			n(QUESTS, {
 				-- 10.2.5.52206
 				q(76391),	--
