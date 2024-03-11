@@ -183,7 +183,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		--q(),	-- Preparation
 		q(79400),	-- Pyroblast
 		q(79405),	-- Righteousness
-		--q(),	-- Scarlet Crusader
+		q(79384),	-- Scarlet Crusader
 		q(79385),	-- Shadow Word: Ruin
 	})),
 }));

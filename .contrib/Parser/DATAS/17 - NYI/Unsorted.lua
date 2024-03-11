@@ -465,7 +465,6 @@ root(ROOTS.Unsorted, {
 				q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
 				q(79353),	--
 				q(79378),	--
-				q(79384),	--
 				q(79402),	--
 				q(79404),	--
 				q(79407),	--
