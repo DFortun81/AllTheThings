@@ -1,5 +1,6 @@
 -- App locals
 local appName, app = ...;
+local GetRelativeValue = app.GetRelativeValue;
 
 -- Global locals
 local ipairs, pairs, tinsert =
@@ -27,7 +28,11 @@ app:CreateWindow("Flight Paths", {
 						if not fps[i] then
 							local fp = app.CreateFlightPath(tonumber(i));
 							for j,o in ipairs(_) do
-								for key,value in pairs(o) do fp[key] = value; end
+								local u = GetRelativeValue(o, "u");
+								if u then fp.u = u; end
+								for key,value in pairs(o) do
+									fp[key] = value;
+								end
 							end
 							fps[i] = fp;
 							if not fp.u or fp.u ~= 1 then
