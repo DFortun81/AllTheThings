@@ -95,6 +95,7 @@ root(ROOTS.Promotions, {
 			}),
 			n(215146, {	-- Dr. Boom <"Dr. 7">
 				i(212335),	-- Collector's Carryall (BAG)
+				i(212337),	-- Stone of the Hearth (TOY!)
 				i(212522),	-- Compass Rose (MOUNT!)
 				i(212606),	-- Sarge (PET!)
 				i(212607),	-- Reno's Lucky Hat (COSMETIC!)
@@ -124,5 +125,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79452),	-- after first daily (on account) kill Dr. Boom
 		-- ^ could be mount / bag / hs toy lockout?
 		q(79441),	-- pop after Sarge (pet) was looted
+		q(79429),	-- pop after Stone of the Hearth (toy) was looted
+		q(79408),	-- pop after Stolen Hearthstone Card was looted (inside was itemID 212934 (Hearthstone Card: Pyroblast))
+		q(79397),	-- pop after Stolen Hearthstone Card was looted (inside was itemID 212930 (Hearthstone Card: Blessing of Kings))
+		q(79400),	-- after earning achievementID 20033 (Hearthstone Beginner)
 	})),
 }));

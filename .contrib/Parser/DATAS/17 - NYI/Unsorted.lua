@@ -406,7 +406,6 @@ root(ROOTS.Unsorted, {
 				i(212525),	-- Delicate Ebony Parasol (TOY!) [Trading Post]
 				i(212500),	-- Delicate Silk Parasol (TOY!) [Trading Post]
 				i(211946),	-- Hearthstone Game Table (TOY!) [Hearthstone]
-				i(212337),	-- Stone of the Hearth (TOY!) [Hearthstone]
 			}),
 			------ Azerothian Archives ------
 			-- Misc
@@ -476,10 +475,8 @@ root(ROOTS.Unsorted, {
 				q(79394),	--
 				q(79395),	--
 				q(79396),	--
-				q(79397),	--
 				q(79398),	--
 				q(79399),	--
-				q(79400),	--
 				q(79401),	--
 				q(79402),	--
 				q(79403),	--
@@ -487,7 +484,6 @@ root(ROOTS.Unsorted, {
 				q(79405),	--
 				q(79406),	--
 				q(79407),	--
-				q(79408),	--
 				q(79409),	--
 				q(79410),	--
 				q(79416),	--
@@ -502,7 +498,6 @@ root(ROOTS.Unsorted, {
 				q(79426),	--
 				q(79427),	--
 				q(79428),	--
-				q(79429),	--
 				q(79430),	--
 				q(79431),	--
 				q(79459),	--
