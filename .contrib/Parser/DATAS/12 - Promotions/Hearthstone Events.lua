@@ -127,27 +127,69 @@ root(ROOTS.Promotions, {
 					i(212336),	-- The Tavern's Tabard (COSMETIC!)
 					i(211965),	-- Hearthstone Wild Card
 					i(212924, {	-- Stolen Hearthstone Card
-						i(212925),	-- Hearthstone Card: Abomination
-						i(212922),	-- Hearthstone Card: Alleycat
-						i(212927),	-- Hearthstone Card: Ancient of Lore
-						i(212932),	-- Hearthstone Card: Arcane Explosion
-						i(212926),	-- Hearthstone Card: Arcane Golem
-						i(212933),	-- Hearthstone Card: Arcane Shot
-						i(212929),	-- Hearthstone Card: Baron Geddon
-						i(212930),	-- Hearthstone Card: Blessing of Kings
-						i(213019),	-- Hearthstone Card: Cairne Bloodhoof
-						i(212938),	-- Hearthstone Card: Charged Devilsaur
-						i(212921),	-- Hearthstone Card: Chillwind Yeti
-						i(212931),	-- Hearthstone Card: Forbidden Words
-						i(212923),	-- Hearthstone Card: Grove Tender
-						i(213224),	-- Hearthstone Card: Hand of Protection
-						i(212928),	-- Hearthstone Card: Hogger
-						i(212939),	-- Hearthstone Card: Jive, Insect
-						i(212937),	-- Hearthstone Card: Preparation
-						i(212934),	-- Hearthstone Card: Pyroblast
-						i(212936),	-- Hearthstone Card: Righteousness
-						i(212871),	-- Hearthstone Card: Scarlet Crusader
-						i(212872),	-- Hearthstone Card: Shadow Word: Ruin
+						i(212925, {	-- Hearthstone Card: Abomination
+							["questID"] = 79392,
+						}),
+						i(212922, {	-- Hearthstone Card: Alley Cat
+							["questID"] = 79390,
+						}),
+						i(212927, {	-- Hearthstone Card: Ancient of Lore
+							["questID"] = 79394,
+						}),
+						i(212932, {	-- Hearthstone Card: Arcane Explosion
+							["questID"] = 79399,
+						}),
+						i(212926, {	-- Hearthstone Card: Arcane Golem
+							["questID"] = 79393,
+						}),
+						i(212933, {	-- Hearthstone Card: Arcane Shot
+							["questID"] = 79401,
+						}),
+						i(212929, {	-- Hearthstone Card: Baron Geddon
+							["questID"] = 79396,
+						}),
+						i(212930, {	-- Hearthstone Card: Blessing of Kings
+							["questID"] = 79397,
+						}),
+						i(213019, {	-- Hearthstone Card: Cairne Bloodhoof
+							["questID"] = 79460,
+						}),
+						i(212938, {	-- Hearthstone Card: Charged Devilsaur
+							["questID"] = 79406,
+						}),
+						i(212921, {	-- Hearthstone Card: Chillwind Yeti
+							["questID"] = 79389,
+						}),
+						i(212931, {	-- Hearthstone Card: Forbidden Words
+							["questID"] = 79398,
+						}),
+						i(212923, {	-- Hearthstone Card: Grove Tender
+							["questID"] = 79391,
+						}),
+						i(213224, {	-- Hearthstone Card: Hand of Protection
+							["questID"] = 79582,
+						}),
+						i(212928, {	-- Hearthstone Card: Hogger
+							["questID"] = 79395,
+						}),
+						i(212939, {	-- Hearthstone Card: Jive, Insect!
+							["questID"] = 79403,
+						}),
+						i(212937, {	-- Hearthstone Card: Preparation
+							["questID"] = 79402,
+						}),
+						i(212934, {	-- Hearthstone Card: Pyroblast
+							["questID"] = 79400,
+						}),
+						i(212936, {	-- Hearthstone Card: Righteousness
+							["questID"] = 79405,
+						}),
+						i(212871, {	-- Hearthstone Card: Scarlet Crusader
+							["questID"] = 79384,
+						}),
+						i(212872, {	-- Hearthstone Card: Shadow Word: Ruin
+							["questID"] = 79385,
+						}),
 					}),
 				},
 			}),
