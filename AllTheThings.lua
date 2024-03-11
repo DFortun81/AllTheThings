@@ -10990,6 +10990,7 @@ function app:GetDataCache()
 		db.description = L.UNSORTED_DESC_2;
 		-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
 		db._missing = true;
+		db._unsorted = true;
 		tinsert(g, db);
 		CacheFields(db, true);
 	end

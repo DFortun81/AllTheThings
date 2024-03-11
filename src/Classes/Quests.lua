@@ -578,14 +578,14 @@ PrintQuestInfo = function(questID, new)
 			questRef = searchResults[1]
 			nmr = questRef.nmr
 			nmc = questRef.nmc
-			nyi = GetRelativeField(questRef, "u", 1)
+			nyi = GetRelativeField(questRef, "u", 1) or GetRelativeValue(questRef, "_unsorted")
 			hqt = GetRelativeValue(questRef, "_hqt")
 		else
 			for i,searchResult in ipairs(searchResults) do
 				if searchResult.key == "questID" then
 					nmr = nmr or searchResult.nmr
 					nmc = nmc or searchResult.nmc
-					nyi = nyi or GetRelativeField(searchResult, "u", 1)
+					nyi = nyi or GetRelativeField(searchResult, "u", 1) or GetRelativeValue(searchResult, "_unsorted")
 					hqt = hqt or GetRelativeValue(searchResult, "_hqt")
 					questRef = searchResult
 				end
