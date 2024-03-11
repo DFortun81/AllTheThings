@@ -1503,7 +1503,8 @@ end
 local BuildCategory = function(self, headers, searchResults, inst)
 	local sources, header, headerType = {}, self;
 	for j,o in ipairs(searchResults) do
-		if not o.u or o.u ~= 1 then
+		local u = GetRelativeValue(o, "u");
+		if not u or u ~= 1 then
 			app.MergeClone(sources, o);
 			if o.parent then
 				if not o.sourceQuests then
