@@ -161,8 +161,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79428),	-- Accepting 'Play Hearthstone!' (questID 79178)
 		q(79583),	-- Accepting 'Play Hearthstone!' (questID 79178)
 
-		q(79693),	-- Completing 'Play Hearthstone!' (questID 79178)
-		q(79694),	-- Completing 'Play Hearthstone!' (questID 79178)
 
 
 		-- Hearthstone Card Collection (achievementID 19724)
