@@ -414,9 +414,6 @@ root(ROOTS.Unsorted, {
 			-- Quest Items
 			i(211266),	-- Archivist's Fire Totem
 			------ Hearthstone ------
-			-- Misc
-			i(212157),	-- An Invitation
-			i(211965),	-- Hearthstone Wild Card
 			-- Quest Items
 			i(210081),	-- Flaming Torch
 			i(212155),	-- Hearthstone Invitation Letter
@@ -452,7 +449,6 @@ root(ROOTS.Unsorted, {
 				q(79135),	--
 				q(79136),	--
 				q(79155),	--
-				q(79178),	-- Play Hearthstone!
 				q(79186),	--
 				q(79189),	--
 				q(79207),	--
@@ -501,7 +497,6 @@ root(ROOTS.Unsorted, {
 				q(79420),	--
 				q(79421),	--
 				q(79422),	--
-				q(79423),	--
 				q(79424),	--
 				q(79425),	--
 				q(79426),	--
@@ -510,9 +505,6 @@ root(ROOTS.Unsorted, {
 				q(79429),	--
 				q(79430),	--
 				q(79431),	--
-				q(79441),	--
-				q(79451),	--
-				q(79452),	--
 				q(79459),	--
 				q(79460),	--
 				-- 10.2.5.52432

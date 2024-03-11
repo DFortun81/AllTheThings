@@ -93,17 +93,36 @@ root(ROOTS.Promotions, {
 					},
 				}),
 			}),
-			--n(xxxxx, {	-- Whizbang
-				i(212335),   -- Collector's Carryall (BAG)
+			n(215146, {	-- Dr. Boom <"Dr. 7">
+				i(212335),	-- Collector's Carryall (BAG)
 				i(212522),	-- Compass Rose (MOUNT!)
-				i(212606),	-- Sarge (PET!) [Hearthstone]
-				i(212607),   -- Reno's Lucky Hat
-				i(212644),   -- Taverner's Belt
-				i(212336),   -- The Tavern's Tabard
-			--}),
+				i(212606),	-- Sarge (PET!)
+				i(212607),	-- Reno's Lucky Hat (COSMETIC!)
+				i(212644),	-- Taverner's Belt (COSMETIC!)
+				i(212336),	-- The Tavern's Tabard (COSMETIC!)
+
+			}),
 			i(163186, {	-- Fiery Hearthsteed (MOUNT!)
 				["description"] = "Granted to Players who login to Hearthstone between March 11 2024 and May 14 2024.",
+			}),
+			n(VENDORS, {
+				n(215385, {	-- Shaday Dealer
+					["coord"] = { 60.6, 59.3, VALDRAKKEN },
+					["groups"] = {
+						i(211965),	-- Hearthstone Wild Card
+					},
+				}),
 			}),
 		},
 	}),
 });
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+		q(79423),	-- after first daily (on account) kill Dr. Boom
+		q(79451),	-- after first daily (on account) kill Dr. Boom
+		q(79452),	-- after first daily (on account) kill Dr. Boom
+		-- ^ could be mount / bag / hs toy lockout?
+		q(79441),	-- pop after Sarge (pet) was looted
+	})),
+}));
