@@ -123,7 +123,30 @@ root(ROOTS.Promotions, {
 				i(212607),	-- Reno's Lucky Hat (COSMETIC!)
 				i(212644),	-- Taverner's Belt (COSMETIC!)
 				i(212336),	-- The Tavern's Tabard (COSMETIC!)
-
+				i(211965),	-- Hearthstone Wild Card
+				i(212924, {	-- Stolen Hearthstone Card
+					i(212925),	-- Hearthstone Card: Abomination
+					i(212922),	-- Hearthstone Card: Alleycat
+					i(212927),	-- Hearthstone Card: Ancient of Lore
+					i(212932),	-- Hearthstone Card: Arcane Explosion
+					i(212926),	-- Hearthstone Card: Arcane Golem
+					i(212933),	-- Hearthstone Card: Arcane Shot
+					i(212929),	-- Hearthstone Card: Baron Geddon
+					i(212930),	-- Hearthstone Card: Blessing of Kings
+					i(213019),	-- Hearthstone Card: Cairne Bloodhoof
+					i(212938),	-- Hearthstone Card: Charged Devilsaur
+					i(212921),	-- Hearthstone Card: Chillwind Yeti
+					i(212931),	-- Hearthstone Card: Forbidden Words
+					i(212923),	-- Hearthstone Card: Grove Tender
+					i(213224),	-- Hearthstone Card: Hand of Protection
+					i(212928),	-- Hearthstone Card: Hogger
+					i(212939),	-- Hearthstone Card: Jive, Insect
+					i(212937),	-- Hearthstone Card: Preparation
+					i(212934),	-- Hearthstone Card: Pyroblast
+					i(212936),	-- Hearthstone Card: Righteousness
+					i(212871),	-- Hearthstone Card: Scarlet Crusader
+					i(212872),	-- Hearthstone Card: Shadow Word: Ruin
+				}),
 			}),
 			i(163186, {	-- Fiery Hearthsteed (MOUNT!)
 				["description"] = "Granted to Players who login to Hearthstone between March 11 2024 and May 14 2024.",
@@ -142,28 +165,37 @@ root(ROOTS.Promotions, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-		q(79410),	-- after first daily (on account) kill Dr. Boom
-		q(79421),	-- after first daily (on account) kill Dr. Boom
-		q(79423),	-- after first daily (on account) kill Dr. Boom
-		q(79451),	-- after first daily (on account) kill Dr. Boom
-		q(79452),	-- after first daily (on account) kill Dr. Boom
-		-- ^ could be mount / bag / hs toy lockout?
-		q(79441),	-- pop after Sarge (pet) was looted
-		q(79429),	-- pop after Stone of the Hearth (toy) was looted
-		q(79407),	-- pop after Stone of the Hearth (toy) was looted
-		q(79408),	-- after earning achievementID 20033 (Hearthstone Beginner),  looted Stolen Hearthstone Card
+		q(79451),	-- After first daily kill of Dr. Boom (maybe bag loot trigger?)
+		q(79452),	-- After first daily kill of Dr. Boom (maybe something else trigger?)
+		q(79441),	-- Looted Sarge (itemID 212606)
 
 		q(79186),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
 		q(79189),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
 
-		q(79409),	-- Accepting 'Play Hearthstone!' (questID 79178)
-		q(79416),	-- Accepting 'Play Hearthstone!' (questID 79178)
-		q(79419),	-- Accepting 'Play Hearthstone!' (questID 79178)
-		q(79420),	-- Accepting 'Play Hearthstone!' (questID 79178)
-		q(79422),	-- Accepting 'Play Hearthstone!' (questID 79178)
-		q(79425),	-- Accepting 'Play Hearthstone!' (questID 79178)
-		q(79428),	-- Accepting 'Play Hearthstone!' (questID 79178)
-		q(79583),	-- Accepting 'Play Hearthstone!' (questID 79178)
+		-- Account lockout from getting the same card again
+		-- Quest
+		q(79409),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		q(79416),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		q(79419),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		q(79420),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		q(79422),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		q(79425),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		q(79428),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		q(79583),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+		-- Loot
+		q(79407),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79408),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79410),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79417),	-- Stolen Hearthstone Card will contain 'Righteousness' card
+		q(79418),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79421),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79423),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79424),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79426),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79427),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79429),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79430),	-- Stolen Hearthstone Card will contain 'Forbidden Words' card
+		q(79431),	-- Stolen Hearthstone Card will contain 'TODO' card
 
 		-- Hearthstone Card Collection (achievementID 19724)
 		q(79392),	-- Abomination
