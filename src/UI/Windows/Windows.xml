@@ -23,6 +23,7 @@
 	<Script file="Missing Source IDs.lua"/>
 	<Script file="Mounts.lua"/>
 	<Script file="Never Implemented.lua"/>
+	<Script file="New With Patch.lua"/>
 	<Script file="Objects.lua"/>
 	<Script file="Quests.lua"/>
 	<Script file="Raid Assistant.lua"/>
