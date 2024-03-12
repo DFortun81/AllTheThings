@@ -84,9 +84,9 @@ local ServerUID = select(2, ("-"):split(app.GUID));
 
 -- Player Tooltip Functions
 local PLAYER_TOOLTIPS = {
-	["Player-4647-031D0890"] = function(self, target)
+	["Player-4647-031D0890"] = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 		local leftSide = _G[self:GetName() .. "TextLeft1"];
-		if leftSide then leftSide:SetText("|cff665a2c" .. UnitName(target) .. " the Time-Loser|r"); end
+		if leftSide then leftSide:SetText("|cff665a2c" .. name .. " the Time-Loser|r"); end
 		local rightSide = _G[self:GetName() .. "TextRight2"];
 		if rightSide then rightSide:SetText(GetCollectionIcon(0)); end
 		self:AddLine("This scumbag abused an auto-invite addon to steal the Time-Lost Proto Drake from a person that had them on their friends list. ATT has deemed this unacceptable behaviour and will forever stain this player's reputation so long as they remain on the server.", 0.4, 0.8, 1, true);
@@ -94,10 +94,10 @@ local PLAYER_TOOLTIPS = {
 };
 
 -- AUTHOR GUIDs
-local tooltipFunction = function(self, target)
+local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
-		leftSide:SetText("|c" .. app.Colors.Raid .. UnitName(target) .. " the Completionist|r");
+		leftSide:SetText("|c" .. app.Colors.Raid .. name .. " the Completionist|r");
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
@@ -119,7 +119,7 @@ for i,guid in ipairs({
 end
 
 -- CONTRIBUTOR GUIDS
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
 		leftSide:SetText("|cffa335ee" .. leftSide:GetText() .. "|r");
@@ -217,9 +217,9 @@ for i,guid in ipairs({
 end
 
 -- EXTERMINATOR GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|cffa335ee" .. UnitName(target) .. " the Exterminator|r"); end
+	if leftSide then leftSide:SetText("|cffa335ee" .. name .. " the Exterminator|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-00B131BB",	-- Aivet
@@ -283,9 +283,9 @@ for i,guid in ipairs({
 end
 
 -- GOLD_TYCOON GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Gold Tycoon " .. UnitName(target) .. "|r"); end
+	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Gold Tycoon " .. name .. "|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-004A0418",	-- Jubilee
@@ -298,9 +298,9 @@ for i,guid in ipairs({
 end
 
 -- SCARAB_LORD GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. UnitName(target) .. "|r"); end
+	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. name .. "|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-000B3C4D",	-- Congelatore
@@ -310,9 +310,9 @@ for i,guid in ipairs({
 end
 
 -- THE_HUGGLER GUIDs
-tooltipFunction = function(self, target)
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|cffF58CBA" .. UnitName(target) .. " the Huggler|r"); end
+	if leftSide then leftSide:SetText("|cffF58CBA" .. name .. " the Huggler|r"); end
 end
 for i,guid in ipairs({
 	"Player-4372-00006B41",	-- Tahiti-Atiesh
@@ -708,7 +708,7 @@ if TooltipDataProcessor then
 			-- print(target, type, npc_id);
 			if type == "Player" then
 				local method = PLAYER_TOOLTIPS[id];
-				if method then method(self, target); end
+				if method then method(self, GetPlayerInfoByGUID(id)); end
 				local version = app.PlayerProgressCacheByGUID[id];
 				if version and app.Settings:GetTooltipSetting("SocialProgress") then
 					self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
