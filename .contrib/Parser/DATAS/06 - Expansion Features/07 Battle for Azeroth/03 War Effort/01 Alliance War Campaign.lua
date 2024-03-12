@@ -674,6 +674,7 @@ root(ROOTS.ExpansionFeatures,
 							["sourceQuests"] = { 52146 },	-- Blood on the Sand
 							["minReputation"] = { 2159, FRIENDLY+4500 },
 							["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
+							["DisablePartySync"] = true,
 						}),
 						q(52147, {	-- Crippling the Horde
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
@@ -751,9 +752,9 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
-							["DisablePartySync"] = true,
 							["minReputation"] = { 2159, HONORED+3000 },
 							["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
+							["DisablePartySync"] = true,
 						}),
 						q(52154, {	-- Our Next Target
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
@@ -828,6 +829,7 @@ root(ROOTS.ExpansionFeatures,
 							["sourceQuests"] = { 52261 },	-- Gallywix Got Away
 							["minReputation"] = { 2159, HONORED+7500 },
 							["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
+							["DisablePartySync"] = true,
 						}),
 						q(52308, {	-- Intercepted Orders
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
@@ -905,6 +907,7 @@ root(ROOTS.ExpansionFeatures,
 							["sourceQuests"] = { 52496 },	-- A Clean Escape
 							["minReputation"] = { 2159, REVERED },
 							["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
+							["DisablePartySync"] = true,
 						}),
 						q(52473, {	-- Bringing Down the Fleet
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
