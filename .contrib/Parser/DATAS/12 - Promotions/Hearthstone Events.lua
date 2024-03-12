@@ -241,28 +241,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79429),	-- Stolen Hearthstone Card will contain 'TODO' card
 		q(79430),	-- Stolen Hearthstone Card will contain 'Forbidden Words' card
 		q(79431),	-- Stolen Hearthstone Card will contain 'TODO' card
-
-		-- Hearthstone Card Collection (achievementID 19724)
-		q(79392),	-- Abomination
-		q(79390),	-- Alley Cat
-		q(79394),	-- Ancient of Love
-		q(79399),	-- Arcane Explosion
-		q(79393),	-- Arcane Golem
-		q(79401),	-- Arcane Shot
-		q(79396),	-- Baron Geddon
-		q(79397),	-- Blessing of Kings
-		q(79460),	-- Cairne Bloodhoof
-		q(79406),	-- Chagred Devilsaur
-		q(79389),	-- Chillwind Yeti
-		q(79398),	-- Forbidden Words
-		q(79391),	-- Grove Tender
-		q(79582),	-- Hand of Protection
-		q(79395),	-- Hogger
-		q(79403),	-- Jive, Insect!
-		q(79402),	-- Preparation
-		q(79400),	-- Pyroblast
-		q(79405),	-- Righteousness
-		q(79384),	-- Scarlet Crusader
-		q(79385),	-- Shadow Word: Ruin
 	})),
 }));
