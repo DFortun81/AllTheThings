@@ -228,18 +228,18 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79428),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
 		q(79583),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
 		-- Loot
-		q(79407),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79408),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79410),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79407),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79408),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79410),	-- Stolen Hearthstone Card will contain 'TODO' card
 		q(79417),	-- Stolen Hearthstone Card will contain 'Righteousness' card
-		q(79418),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79421),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79423),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79424),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79426),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79427),	-- Stolen Hearthstone Card will contain 'TODO' card
-		q(79429),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79421),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79423),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79424),	-- Stolen Hearthstone Card will contain 'Abomination' card
+		--q(79426),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79427),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79429),	-- Stolen Hearthstone Card will contain 'TODO' card
 		q(79430),	-- Stolen Hearthstone Card will contain 'Forbidden Words' card
-		q(79431),	-- Stolen Hearthstone Card will contain 'TODO' card
+		--q(79431),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79459),	-- Stolen Hearthstone Card will contain 'Cairne Bloodhoof' card
 	})),
 }));
