@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 					-- technically not accurate, but no other way to lock this properly for first character
 					["lockCriteria"] = { 1, "questID", 72117 },	-- Cultural Exchange [Renown 3]
-					-- TODO: test Party Sync, add DisablePartySync if needed
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(189765),	-- Maruuk Centaur Supply Satchel
 					},
@@ -109,6 +109,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 					["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 					["lockCriteria"] = { 1, "questID", 71231 },	-- Call of the Hunt [Renown 5]
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(189765),	-- Maruuk Centaur Supply Satchel
 					},

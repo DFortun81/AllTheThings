@@ -240,6 +240,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			q(47032, {	-- Legion Threat: Azshara
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["DisablePartySync"] = true,
+				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["classes"] = {
 					DEATHKNIGHT,	-- Frost
 					DEMONHUNTER,	-- Havoc
@@ -247,13 +249,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					ROGUE,			-- Subtlety
 					WARRIOR,		-- Arms
 				},
-				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(47030, {	-- Legion Threat: Dalaran Infiltration
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 44821 },	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
+				["DisablePartySync"] = true,
 				["classes"] = {
 					DEATHKNIGHT,	-- Blood
 					DEMONHUNTER,	-- Vengeance
@@ -267,18 +269,21 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 44821 },	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["DisablePartySync"] = true,
+				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["classes"] = {
 					HUNTER,		-- Beast Mastery
 					MONK,		-- Windwalker
 					PRIEST,		-- Discipline
 					WARLOCK,	-- Destruction
 				},
-				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(47033, {	-- Legion Threat: Suramar
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["DisablePartySync"] = true,
+				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = {
 					MAGE,		-- Arcane
 					PALADIN,	-- Retribution
@@ -286,12 +291,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					SHAMAN,		-- Enhancement
 					WARLOCK,	-- Demonology
 				},
-				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 			}),
 			q(47035, {	-- Legion Threat: The Missing Mage
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
+				["DisablePartySync"] = true,
 				["classes"] = {
 					DEATHKNIGHT,	-- Unholy
 					DRUID,			-- Feral
@@ -300,12 +306,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					SHAMAN,			-- Elemental
 					WARRIOR,		-- Fury
 				},
-				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 			}),
 			q(47034, {	-- Legion Threat: The Necromancer
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
+				["DisablePartySync"] = true,
 				["classes"] = {
 					DRUID,		-- Balance
 					HUNTER,		-- Marksmanship
@@ -313,12 +320,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					PRIEST,		-- Shadow
 					WARLOCK,	-- Affliction
 				},
-				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 			}),
 			q(47027, {	-- Legion Threat: Val'sharah
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
+				["DisablePartySync"] = true,
 				["classes"] = {
 					DRUID,		-- Restoration
 					MONK,		-- Mistweaver
@@ -326,7 +334,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					PRIEST,		-- Holy
 					SHAMAN,		-- Restoration
 				},
-				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(47112, {	-- Lost Souls
 				["sourceQuests"] = { 47097 },	-- A Walk to Remember

@@ -521,11 +521,13 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 38445,
 						["isBreadcrumb"] = true,	-- The Assault Base
+						["DisablePartySync"] = true,
 					}),
 					q(39423, {	-- Shipyard Report
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 37935,
 						["isBreadcrumb"] = true,	-- The Assault Base
+						["DisablePartySync"] = true,
 					}),
 					q(38445, {	-- The Assault Base
 						["provider"] = { "n", 91923 },	-- Exarch Naielle

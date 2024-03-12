@@ -38,7 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 					-- technically not accurate, but no other way to lock this properly for first character
 					["lockCriteria"] = { 1, "questID", 75721 },	-- Bartering 101 [Renown 3]
-					-- TODO: test Party Sync, add DisablePartySync if needed
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(205964),	-- Small Loammian Supply Pack
 					},
@@ -109,7 +109,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 					-- technically not accurate, but no other way to lock this properly for first character
 					["lockCriteria"] = { 1, "questID", 75728 },	-- Bartering Boulders [Renown 12]
-					-- TODO: test Party Sync, add DisablePartySync if needed
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(205965),	-- Large Loammian Supply Pack
 					},
@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 					-- technically not accurate, but no other way to lock this properly for first character
 					["lockCriteria"] = { 1, "questID", 76030 },	-- Airborne Winding [Renown 16]
-					-- TODO: test Party Sync, add DisablePartySync if needed
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(205968),	-- Overflowing Loammian Supply Pack
 					},
@@ -168,7 +168,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 					-- technically not accurate, but no other way to lock this properly for first character
 					["lockCriteria"] = { 1, "questID", 75742 },	-- Drake Helms [Renown 19]
-					-- TODO: test Party Sync, add DisablePartySync if needed
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(205968),	-- Overflowing Loammian Supply Pack
 					},

@@ -444,6 +444,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 126560 },	-- Wardruid Loti
 				["coord"] = { 42.4, 9.00, DAZARALOR },
 				["races"] = HORDE_ONLY,
+				["DisablePartySync"] = true,
 			}),
 			q(49421, {	-- Hunting Zul
 				["sourceQuests"] = {	-- one or the other

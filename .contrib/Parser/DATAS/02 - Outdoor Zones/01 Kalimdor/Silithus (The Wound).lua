@@ -209,6 +209,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["DisablePartySync"] = true,
 						}),
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
@@ -216,6 +217,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
+							["DisablePartySync"] = true,
 						}),
 						q(55397, {	-- Before I Wake
 							["provider"] = { "n", 151825 },	-- Merithra of the Dream
@@ -566,6 +568,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["DisablePartySync"] = true,
 						}),
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
@@ -573,6 +576,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
+							["DisablePartySync"] = true,
 						}),
 						q(56190, {	-- Save Ebonhorn
 							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
@@ -725,6 +729,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["DisablePartySync"] = true,
 						}),
 						q(56260, {	-- Unlocking the Power (H)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
@@ -732,6 +737,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
+							["DisablePartySync"] = true,
 						}),
 						o(324407, {	-- Void Roots
 							["questID"] = 55467,
@@ -1287,7 +1293,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						{"select", "itemID", 137919 },    -- Pattern Gravenscale Leggings
 						{"select", "itemID", 137918 },    -- Pattern Gravenscale Spaulders
 						{"select", "itemID", 137922 },    -- Pattern Gravenscale Treads
-						{"select", "itemID", 137920 },    -- Pattern Gravenscale Warhelm						
+						{"select", "itemID", 137920 },    -- Pattern Gravenscale Warhelm
 					},
 				}),
 			}),

@@ -292,7 +292,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 					-- technically not accurate, but no other way to lock this properly for first character
 					["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
-					-- TODO: test Party Sync, add DisablePartySync if needed
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(198863),	-- Small Dragon Expedition Supply Pack
 					},
@@ -303,7 +303,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 					-- technically not accurate, but no other way to lock this properly for first character
 					["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
-					-- TODO: test Party Sync, add DisablePartySync if needed
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(198863),	-- Small Dragon Expedition Supply Pack
 					},

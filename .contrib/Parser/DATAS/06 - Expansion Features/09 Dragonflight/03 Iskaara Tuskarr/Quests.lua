@@ -419,6 +419,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 					["lockCriteria"] = { 1, "questID", 70967 },	-- Fishy Entertainment [Renown 17]
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(198867),	-- Large Iskaaran Supply Pack
 					},
@@ -456,6 +457,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 					["altQuests"] = { 70956 },	-- Of Azure Scales [Renown 19]
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(198867),	-- Large Iskaaran Supply Pack
 					},

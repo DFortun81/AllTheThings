@@ -1096,6 +1096,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58808,	-- Encased in Amber
 							58806,	-- Warmth of the Sun
@@ -1107,6 +1108,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58809,	-- A Shocking Technique
 							58806,	-- Warmth of the Sun
@@ -1118,6 +1120,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["description"] = "Can appear during Amathet invasions in Uldum.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58809,	-- A Shocking Technique
 							58808,	-- Encased in Amber
@@ -1129,6 +1132,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["description"] = "Can appear during Aqir invasions in Uldum.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58809,	-- A Shocking Technique
 							58808,	-- Encased in Amber
@@ -1170,6 +1174,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58817,	-- Action Figures
 							58818,	-- Bug Buddies
@@ -1181,6 +1186,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["description"] = "Can appear during Amathet invasions in Uldum.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58826,	-- A Bloody Treat
 							58818,	-- Bug Buddies
@@ -1192,6 +1198,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["description"] = "Can appear during Aqir invasions in Uldum.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58826,	-- A Bloody Treat
 							58817,	-- Action Figures
@@ -1203,6 +1210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58826,	-- A Bloody Treat
 							58817,	-- Action Figures
@@ -1234,6 +1242,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["description"] = "Can appear during Aqir invasions in Uldum.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58861,	-- The Mantids' Mettle
 							58862,	-- The Littlest Defender
@@ -1245,6 +1254,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58860,	-- Big Bad Beetle
 							58861,	-- The Mantids' Mettle
@@ -1256,6 +1266,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58860,	-- Big Bad Beetle
 							58862,	-- The Littlest Defender
@@ -1267,6 +1278,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["description"] = "Can appear during Amathet invasions in Uldum.",
+						["DisablePartySync"] = true,
 						["altQuests"] = {
 							58860,	-- Big Bad Beetle
 							58862,	-- The Littlest Defender
