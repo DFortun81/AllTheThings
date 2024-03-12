@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, CLOTH, {192319, 186873}),
+							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, LEATHER, {192319, 186873}),
 						}),
 						i(201842, {	-- Ensemble: Cosmic Aspirant's Mail Armor
 							["classes"] = MAIL_CLASSES,
@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, CLOTH, 185128),
+							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, LEATHER, 185128),
 						}),
 						i(201858, {	-- Ensemble: Unchained Aspirant's Mail Armor
 							["classes"] = MAIL_CLASSES,
@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, CLOTH, 175851),
+							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, LEATHER, 175851),
 						}),
 						i(201866, {	-- Ensemble: Sinful Aspirant's Mail Armor
 							["classes"] = MAIL_CLASSES,
