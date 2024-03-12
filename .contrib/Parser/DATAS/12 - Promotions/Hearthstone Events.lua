@@ -54,7 +54,7 @@ root(ROOTS.Promotions, {
 	n(HEARTHSTONE_10TH_ANNIVERSARY, {
 		-- Work in progress
 		["maps"] = {
-			ORGRIMMAR,
+			DUROTAR,
 			STORMWIND,
 			VALDRAKKEN,
 		},
