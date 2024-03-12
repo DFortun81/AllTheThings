@@ -229,7 +229,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79583),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
 		-- Loot
 		q(79407),	-- Stolen Hearthstone Card will contain 'Arcane Explosion' card
-		--q(79408),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79408),	-- Stolen Hearthstone Card will contain 'Pyroblast' card
 		--q(79410),	-- Stolen Hearthstone Card will contain 'TODO' card
 		q(79417),	-- Stolen Hearthstone Card will contain 'Righteousness' card
 		--q(79421),	-- Stolen Hearthstone Card will contain 'TODO' card
