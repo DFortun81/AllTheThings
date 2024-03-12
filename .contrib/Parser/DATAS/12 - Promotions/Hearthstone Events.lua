@@ -85,7 +85,7 @@ root(ROOTS.Promotions, {
 					--	["provider"] = { "i", 212979 },	-- Starter Deck
 					["coords"] = {
 					--	{ 61.6, 31.1, ORGRIMMAR },
-					--	{ 61.6, 31.1, STORMWIND },
+					--	{ 61.6, 31.1, STORMWIND_CITY },
 					--	{ 61.6, 31.1, VALDRAKKEN },
 					},
 					["groups"] = {
@@ -96,7 +96,7 @@ root(ROOTS.Promotions, {
 					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
 					["coords"] = {
 						--	{ 61.6, 31.1, ORGRIMMAR },
-						--	{ 61.6, 31.1, STORMWIND },
+						--	{ 61.6, 31.1, STORMWIND_CITY },
 						--	{ 61.6, 31.1, VALDRAKKEN },
 						},
 						["groups"] = {
@@ -107,7 +107,7 @@ root(ROOTS.Promotions, {
 					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
 					["coords"] = {
 						--	{ 61.6, 31.1, ORGRIMMAR },
-						--	{ 61.6, 31.1, STORMWIND },
+						--	{ 61.6, 31.1, STORMWIND_CITY },
 						--	{ 61.6, 31.1, VALDRAKKEN },
 						},
 						["groups"] = {
@@ -116,6 +116,11 @@ root(ROOTS.Promotions, {
 				}),
 			}),
 			n(215146, {	-- Dr. Boom <"Dr. 7">
+				["coords"] = {
+					{ 53.10, 16.17, DUROTAR },
+					{ 33.99, 20.52, STORMWIND_CITY },
+					{ 62.24, 66.97, VALDRAKKEN },
+				},
 				["provider"] = { "n", 214985 },	-- Ominous Portal
 				["groups"] = {
 					i(212335),	-- Collector's Carryall (BAG)
