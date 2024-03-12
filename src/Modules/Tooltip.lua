@@ -864,7 +864,7 @@ else
 						--print(guid, type, npcID);
 						if type == "Player" then
 							local method = PLAYER_TOOLTIPS[guid];
-							if method then method(self, target); end
+							if method then method(self, GetPlayerInfoByGUID(guid)); end
 							local version = app.PlayerProgressCacheByGUID[guid];
 							if version and app.Settings:GetTooltipSetting("SocialProgress") then
 								self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
