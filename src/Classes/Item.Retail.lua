@@ -401,3 +401,36 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 		end
 	end,
 }, (function(t) return t.factionID; end));
+
+local setmetatable = setmetatable
+local constructor = app.constructor
+-- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
+-- TODO: perhaps theres a way to make this use CreateClass... but dont think that really supports as is what this class is designed to do
+local BaseCostItem = app.BaseObjectFields({
+	-- total is the count of the cost item required
+	["total"] = function(t)
+		return t.count or 1;
+	end,
+	-- progress is how many of the cost item your character has anywhere
+	["progress"] = function(t)
+		return GetItemCount(t.itemID, true, nil, true) or 0;
+	end,
+	["collectible"] = app.ReturnFalse,
+	["trackable"] = app.ReturnTrue,
+	-- show a check when it is has matching quantity in your bags
+	["saved"] = function(t)
+		return GetItemCount(t.itemID) >= t.total;
+	end,
+	-- hide any irrelevant wrapped fields of a cost item
+	["g"] = app.EmptyFunction,
+	["costCollectibles"] = app.EmptyFunction,
+	["collectibleAsCost"] = app.EmptyFunction,
+	["costsCount"] = app.EmptyFunction,
+}, "BaseCostItem");
+app.CreateCostItem = function(t, total)
+	local c = app.WrapObject(setmetatable(constructor(t.itemID, nil, "itemID"), BaseCostItem), t);
+	c.count = total;
+	-- cost items should always be visible for clarity
+	c.OnUpdate = app.AlwaysShowUpdate;
+	return c;
+end
