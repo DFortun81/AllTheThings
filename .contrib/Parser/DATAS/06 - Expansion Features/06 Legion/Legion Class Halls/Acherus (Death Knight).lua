@@ -154,7 +154,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								{ 58.2, 60.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 							},
 							["g"] = {
-								i(173527),	-- Duskwood Scroll (QI!)
+								i(173527, {	-- Duskwood Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 							},
 						}),
 						q(40931, {	-- Following the Curse

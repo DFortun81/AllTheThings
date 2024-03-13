@@ -168,6 +168,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, MALDRAXXUS },
+					["g"] = {
+						i(174755),	-- Summons of the Chosen (QI!)
+					},
 				}),
 				q(58821, {	-- Glorious Pursuits
 					["sourceQuests"] = { 58751 },	-- A Common Peril

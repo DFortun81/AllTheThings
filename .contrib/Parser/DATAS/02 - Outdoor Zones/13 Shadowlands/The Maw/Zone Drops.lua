@@ -4,7 +4,10 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
 		n(ZONE_DROPS, {
+			i(180802),	-- Chaotic Runes (QI!)
+			i(180801),	-- Coldheart Flight Routes (QI!)
 			i(175769),	-- Constellan Writ
+			i(180808),	-- Discarded Torments (QI!)
 			i(182771, {	-- Flickering Eviscerator
 				["crs"] = { 170694 },	-- Spectral Assassin
 			}),
@@ -46,14 +49,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					176259,    -- Mawsworn Sky Hunter
 					177129,    -- Weaponmaster Hyrev
 				},
+				["timeline"] = { ADDED_9_1_0 },
 			}),
+			i(183058),	-- Indecipherable Map (QI!)
 			i(187253, {	-- Maw Guard's Spiked Spaulders
 				["crs"] = { 167322 },	-- Mawsworn Shackler
 				["timeline"] = { ADDED_9_1_0 },
 			}),
+			i(180799),	-- Mawsworn Patrol Map (QI!)
 			i(183059, {	-- Mawsworn Shackles
 				["crs"] = { 167322, 176198 },	-- Mawsworn Shackler
 			}),
+			i(180803),	-- Puzzling Cryptogram (QI!)
 			i(187252, {	-- Ritualist's Spiked Mantle
 				["crs"] = { 168977 },	-- Mawsworn Thaumaturge
 				["timeline"] = { ADDED_9_1_0 },
@@ -63,7 +70,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 62679,
 				["timeline"] = { ADDED_9_1_0 },
 			}),
+			i(180806),	-- Shadebound Testimonial (QI!)
+			i(178044),	-- Shifting Cryptogram (QI!)
+			i(180805),	-- Soulforge Blueprints (QI!)
 			i(186161),	-- Stygian Lockbox
+			i(180807),	-- Venthyr Concordat (QI!)
+			i(180804),	-- Worn Obleron Etching (QI!)
 		}),
 	}),
 })));

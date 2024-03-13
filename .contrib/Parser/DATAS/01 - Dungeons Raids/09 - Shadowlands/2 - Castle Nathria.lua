@@ -827,6 +827,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
 						["provider"] = { "n", 172653 },	-- General Draven
+						["g"] = {
+							i(182601),	-- Sludgefist's Head (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1034,6 +1037,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
 						["provider"] = { "n", 172653 },	-- General Draven
+						["g"] = {
+							i(182602),	-- Sludgefist's Head (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1263,6 +1269,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
 						["provider"] = { "n", 172653 },	-- General Draven
+						["g"] = {
+							i(182603),	-- Sludgefist's Head (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {

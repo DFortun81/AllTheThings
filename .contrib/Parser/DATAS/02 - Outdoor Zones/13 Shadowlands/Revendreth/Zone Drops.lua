@@ -148,6 +148,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				},
 			}),
+			i(174674, {	-- Bell of Remembrance (QI!)
+				["crs"] = { 160716 },	-- Sinstone Rampager
+			}),
 			i(177800),	-- Bubbling Concoction
 			i(180862),	-- Bulletslinger
 			i(179319),	-- Caged Cudgel

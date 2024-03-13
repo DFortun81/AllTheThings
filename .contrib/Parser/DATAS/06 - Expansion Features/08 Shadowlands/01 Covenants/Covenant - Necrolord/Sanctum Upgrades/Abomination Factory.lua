@@ -2,6 +2,8 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local ATTICUS_GROUP = {
+	i(175757),	-- Construct Supply Key
+	i(180276),	-- Locked Toolbox Key
 	i(181317, {	-- Dauntless Duskrunner	(MOUNT!)
 		["cost"] = { { "c", ANIMA, 5000 } },
 	}),

@@ -91,6 +91,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(175265),	-- Belt of Prime Command
+			i(181139),	-- Blueprint: Charm of Alacrity
 			i(181241),	-- Blueprint: Charm of Buff 7
 			i(182654),	-- Bonescript Dispatches
 			i(175253),	-- Desiccating Formula

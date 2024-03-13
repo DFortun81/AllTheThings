@@ -127,7 +127,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								{ 37.7, 31.8, DREADSCAR_RIFT },
 							},
 							["g"] = {
-								i(173527),	-- Duskwood Scroll (QI!)
+								i(173527, {	-- Duskwood Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 							},
 						}),
 						q(40588, {	-- Following the Curse

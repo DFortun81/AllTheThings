@@ -1113,6 +1113,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(QUESTS, sharedData({
 				["isDaily"] = true,
 				["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				["_drop"] = {"g"},
 			},{
 			q(58078, {	-- Favor: Bottle of Redelav Wine
 				["provider"] = { "i", 173718 },	-- Bottle of Redelav Wine

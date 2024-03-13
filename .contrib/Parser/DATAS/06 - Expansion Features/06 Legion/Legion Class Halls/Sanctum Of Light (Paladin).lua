@@ -184,7 +184,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
 							["g"] = {
-								i(173537),	-- Glowing Hearthstone (QI!)
+								i(173537, {	-- Glowing Hearthstone (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 							},
 						}),
 						q(42772, {	-- Sacred Ground
@@ -207,7 +209,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 52.1, 83.2, WESTERN_PLAGUELANDS },
 							["g"] = {
-								i(173538),	-- Hippogryph Whistle (QI!)
+								i(173538, {	-- Hippogryph Whistle (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 							},
 						}),
 						q(38376, {	-- The Search for the Highlord

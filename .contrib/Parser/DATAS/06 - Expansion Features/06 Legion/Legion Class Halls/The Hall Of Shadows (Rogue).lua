@@ -129,7 +129,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 							["g"] = {
-								i(173530),	-- Duskwood Scroll (QI!)
+								i(173530, {	-- Duskwood Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 								i(137678),	-- Fel Cipher (QI!)
 							},
 						}),
@@ -145,7 +147,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { DUSKWOOD },
 							["g"] = {
 								i(138113),	-- Blood of the Innocent (QI!)
-								i(173527),	-- Duskwood Scroll (QI!)
+								i(173527, {	-- Duskwood Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 								i(138112),	-- Skull of the Innocent (QI!)
 							},
 						}),
@@ -195,7 +199,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 							["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 							["g"] = {
-								i(173528),	-- Gilded Hearthstone (QI!)
+								i(173528, {	-- Gilded Hearthstone (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 							},
 						}),
 						q(40849, {	-- The Dreadblades

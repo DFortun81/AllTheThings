@@ -2,6 +2,11 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
+	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
+	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
+	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
+	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	i(152668),	-- Expulsom
 	i(162460, {["timeline"] = {ADDED_8_1_0}}),	-- Hydrocore
 	i(162461, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguicell

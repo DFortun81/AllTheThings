@@ -127,6 +127,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								["g"] = {
 									i(173721),	-- Love and Terror
 									i(184214),	-- Chained Manacles
+									i(180451),	-- Grand Inquisitor's Sinstone Fragment
 									i(180493),	-- Inquisitor's Robes
 									i(184213),	-- Ritualist's Soles
 									i(184217),	-- Sinstone Stompers
@@ -164,6 +165,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								},
 								["g"] = {
 									i(173721),	-- Love and Terror
+									i(180451),	-- Grand Inquisitor's Sinstone Fragment
 									i(184211),	-- High Inquisitor's Banded Cincture
 									i(184212),	-- Intimidator Trainer's Cuffs
 									i(184214),	-- Chained Manacles

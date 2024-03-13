@@ -299,7 +299,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 59.1, 43.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 							["g"] = {
 								i(141327),	-- Functional Ward (QI!)
-								i(173698),	-- Karazhan Scroll (QI!)
+								i(173698, {	-- Karazhan Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 								i(141329),	-- Ritual Focusing Crystal (QI!)
 								i(141328),	-- Ritual Notes (QI!)
 							},

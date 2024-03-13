@@ -1754,6 +1754,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, REVENDRETH },
+									["cost"] = {{ "i", 182298, 1 }},	-- 1x Kaja'Extreme
 									["g"] = {
 										i(184448),	-- Spicy Scorchshrooms (QI!)
 									},

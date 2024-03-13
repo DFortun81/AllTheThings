@@ -608,6 +608,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											{ "i", 181274, 1 },	-- 1xHeartpiercer Javelin
 										},
 									}),
+									q(60907, {	-- Ascension Calling: Kleia
+										["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
+									}),
 									q(61963, {	-- Called to the Hunt
 										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
 										["provider"] = { "n", 168430 },	-- Dactylis
@@ -801,9 +804,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									}),
 									n(172410, {	-- Nuuminuuru
 										n(COURAGE, {
-											q(60907, {	-- Ascension Calling: Kleia
-												["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
-											}),
+											i(182095),	-- Ascension Calling: Kleia (QI!)
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",

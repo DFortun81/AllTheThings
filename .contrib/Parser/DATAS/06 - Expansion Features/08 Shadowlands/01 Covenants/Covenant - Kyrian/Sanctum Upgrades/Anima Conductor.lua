@@ -108,6 +108,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								q(61166, {	-- Reduce, Reuse, Recycle
 									["provider"] = { "n", 171671 },    -- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
+									["g"] = {
+										i(180830),	-- Resonant Alloy (QI!)
+									},
 								}),
 								q(61159, {	-- Signs of Demise
 									["provider"] = { "n", 171676 },    -- Galakamos

@@ -2,6 +2,11 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
+	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
+	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
+	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
+	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(60893, {	-- Northrend Alchemy Research

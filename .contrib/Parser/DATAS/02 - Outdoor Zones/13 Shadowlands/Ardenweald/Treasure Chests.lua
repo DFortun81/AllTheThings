@@ -4,6 +4,12 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ARDENWEALD, {
 		n(TREASURES, {
+			o(364345, {	-- A Faintly Glowing Seed
+				["description"] = "Can be found anywhere in Ardenweald",
+				["g"] = {
+					i(183902),	-- A Faintly Glowing Seed
+				},
+			}),
 			n(171156, {		-- Aerto <Grove Ranger>
 				["coord"] = { 55.9, 21.0, ARDENWEALD },
 				["questID"] = 61072,

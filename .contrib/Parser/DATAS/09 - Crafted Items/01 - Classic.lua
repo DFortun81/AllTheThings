@@ -2,6 +2,11 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
+	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
+	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
+	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
+	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
+	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(6452, {["timeline"] = {ADDED_8_0_1}}),	-- Anti-Venom

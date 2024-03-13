@@ -319,6 +319,12 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 			},
 		}),
 	}),
+	i(182167, {	-- Cobra Soul (SS!)
+		["timeline"] = { ADDED_9_0_2_LAUNCH },
+	}),
+	i(182170, {	-- Gryphon Soul (SS!)
+		["timeline"] = { ADDED_9_0_2_LAUNCH },
+	}),
 	filter(RECIPES, bubbleDown({ ["timeline"] = { "added 7.0.3", "removed 8.0.1" }, }, {
 		-- #if BEFORE 8.0.1
 		["description"] = "This has a chance to drop from any rated battleground win during Legion.",
@@ -343,6 +349,9 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	title(96, {	-- %s the Flawless Victor
 		["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 		["collectible"] = false,
+	}),
+	i(182184, {	-- Wyvern Soul (SS!)
+		["timeline"] = { ADDED_9_0_2_LAUNCH },
 	}),
 })));
 

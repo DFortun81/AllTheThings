@@ -131,7 +131,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 108700 },	-- The Monkey King
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
 							["g"] = {
-								i(173704),	-- Granary Jug (QI!)
+								i(173704, {	-- Granary Jug (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 								i(138623),	-- Sack of Roasted Grain (QI!)
 							},
 						}),
@@ -144,7 +146,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 109049 },	-- The Monkey King
 							["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 							["g"] = {
-								i(173706),	-- Jade Jug (QI!)
+								i(173706, {	-- Jade Jug (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 							},
 						}),
 						q(42868, {	-- The Monkey King's Challenge

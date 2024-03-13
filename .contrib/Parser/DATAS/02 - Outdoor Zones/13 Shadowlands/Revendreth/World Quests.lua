@@ -284,7 +284,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(177839),	-- Anima Siphon (QI!)
 				},
 			}),
-			q(57328),	-- Trashin' the Camp
+			q(57328, {	-- Trashin' the Camp
+				i(171310),	-- Ring of Stonebound Control (QI!)
+			}),
 		})),
 	}),
 })));

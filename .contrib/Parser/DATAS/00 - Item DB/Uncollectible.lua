@@ -311,6 +311,9 @@ i(123865);	-- Relic of Ursol
 -- PATCH 9.0.1 --
 -----------------
 i(175241);	-- Expedition Healing Potion
+i(184033);	-- Extra-Spacious Knapsack
+i(169819);	-- Handful of Blood Shards
+i(183795);	-- Notice of Special Delivery
 i(169821);	-- Ogre Effigy
 i(174790);	-- Overseer's Mandate
 i(175242);	-- Waterlogged Supplies
@@ -344,6 +347,8 @@ i(180882);	-- Arena Writ
 i(180979);	-- Artisan's Large Satchel
 i(180976);	-- Artisan's Satchel
 i(180983);	-- Artisan's Stuffed Satchel
+i(178924);	-- Ash Clod
+i(180450);	-- Assorted Bolts
 i(184381);	-- Astral Sapwood
 i(176886);	-- Augmented Femur
 i(178217);	-- Azurebloom Tea
@@ -357,12 +362,14 @@ i(184773);	-- Battle-Tested Armor Component
 i(183208);	-- Beasts, and How to Eat Them: Volume I
 i(178538);	-- Beetle Juice
 i(183920);	-- Bent Fork
+i(178519);	-- Blank Sinstone
 i(176408);	-- Blinding Smoke Capsules
 i(181362);	-- Blob of Slime
 i(178552);	-- Blood Oranges
 i(180992);	-- Blood Red Plume
 i(181545);	-- Bloodbound Globule
 i(171209);	-- Blooded Satchel
+i(180890);	-- Bloodstained Gambrel
 i(182119);	-- Bloody Marileth
 i(178549);	-- Boiled Meat
 i(184150);	-- Bonded Tallow Candles
@@ -377,6 +384,7 @@ i(180381);	-- Brainwort
 i(182760);	-- Brilliant Azure Orb
 i(183723);	-- Brimming Anima Orb
 i(178178);	-- Brittle Bark
+i(178543);	-- Broiled Blood Sausage
 i(183596);	-- Broken Artifact
 i(183927);	-- Broken Centurian Mechanism
 i(183923);	-- Broken Claw
@@ -441,6 +449,7 @@ i(180521);	-- Creeping Hive Cobweb
 i(178122);	-- Crematoric Residue
 i(180991);	-- Crimson Ink Well
 i(176875);	-- Crooked Horn
+i(179375);	-- Crude Diary Key
 i(179535);	-- Crumbling Pride Extractors
 i(178173);	-- Crumbling Sandstone
 i(183921);	-- Crumpled Napkin
@@ -451,6 +460,7 @@ i(184402);	-- Culexwood Pan Flute
 i(180693);	-- Cyclonic Chronicles
 i(178125);	-- Dancing Metal Slivers
 i(178124);	-- Dancing Motes of Light
+i(180340);	-- Dark Deceits and Diversions
 i(181548);	-- Darkhaven Soul Lantern
 i(180411);	-- Darkhaven Stout
 i(179273);	-- Darkhound Tenderloin
@@ -462,6 +472,7 @@ i(177874);	-- Darkmoon Card of Voracity
 i(180661);	-- Darktower Parchments: Affliction Most Foul
 i(180660);	-- Darktower Parchments: Instant Polymorphist
 i(183065);	-- Dazzling Zircon Cube
+i(170498);	-- Deadsoul Hound Harness
 i(178900);	-- Death Pepper Decay
 i(182758);	-- Decorative Sinsteel Dagger
 i(182737);	-- Deep Fried Seraph Tenders
@@ -485,6 +496,8 @@ i(179307);	-- Drab of Tuica Moonshine
 i(180894);	-- Drained Flask
 i(184403);	-- Dreamlure Candle
 i(175962);	-- Dreamwood Antler
+i(180412);	-- Dredhollow Apple Cider
+i(179286);	-- Dried Cabbage Leaves
 i(181344);	-- Droman Aliothe
 i(178137);	-- Drop of Memory
 i(178017);	-- Drusty Molting
@@ -503,6 +516,7 @@ i(178136);	-- Emotional Residue
 i(180407);	-- Empty Brandy Bottle
 i(180408);	-- Empty Brandy Phial
 i(182715);	-- Empty Crate
+i(180455);	-- Empty Dredge Vial
 i(179294);	-- Empty Dredwing Skin
 i(181394);	-- Empty Plague Bottle
 i(173878);	-- Empyreal Horn
@@ -514,6 +528,7 @@ i(176861);	-- Engorged Venom Sac
 i(183945);	-- Enlarged Nerve
 i(182763);	-- Enormous Jade Pendant
 i(178134);	-- Ephemeral Digits
+i(180448);	-- Eroded Heat Sink
 i(184370);	-- Erratic Sparkshield
 i(180622);	-- Essence of Ephemeral Knowledge
 i(184294);	-- Ethereal Ambrosia
@@ -527,6 +542,7 @@ i(180330);	-- Fading Denathrius Pennant
 i(173870);	-- Fading Glimmerdust
 i(178123);	-- Fading Lightspawn Ember
 i(184378);	-- Faeweald Amber
+i(180449);	-- Failed Experiment
 i(180624);	-- Faintly Glowing Vellum
 i(184077);	-- Famous Sinstone Headers
 i(182709);	-- Fancy Half-Leggings
@@ -540,6 +556,7 @@ i(184392);	-- Fizzled Ritual Scroll
 i(182382);	-- Flask of Vile Resistance
 i(175957);	-- Fleecy Paw
 i(176443);	-- Fleeting Frenzy Potion
+i(177256);	-- Floundering Soul
 i(182710);	-- Fluffy Robe
 i(180310);	-- Fluttering Stone Wings
 i(181730);	-- Forged Oxxein Whetstone
@@ -554,6 +571,7 @@ i(182367);	-- Foul Bones
 i(184390);	-- Foul Ectoplasm
 i(178923);	-- Fractured Rubble
 i(176867);	-- Fractured Shackle
+i(180769);	-- Fractured Stonewing
 i(183926);	-- Frayed Leather Laces
 i(184208);	-- Fraying Covenant Belt
 i(184202);	-- Freeze-Dried Salted Meat
@@ -574,6 +592,7 @@ i(173360);	-- Glossy Fur
 i(181487);	-- Glowberry Bead String
 i(179006);	-- Glowing Endmire Dust
 i(182733);	-- Gnawed Animacorns
+i(178517);	-- Gold Tooth
 i(182765);	-- Golden Wren
 i(178175);	-- Gooey Sap
 i(180514);	-- Gorm Bracelet
@@ -581,6 +600,7 @@ i(176087);	-- Gorm Chitin
 i(183924);	-- Gorm Egg Shells
 i(176088);	-- Gormgris
 i(181491);	-- Gormgris Lamp
+i(183963);	-- Gormlet
 i(180880);	-- Gory Keepsake
 i(176881);	-- Grasping Tendril
 i(184777);	-- Gravedredger's Shovel
@@ -591,13 +611,15 @@ i(180224);	-- Gubbins's Lost Diary
 i(183049);	-- Guile of the Pack
 i(183914);	-- Gummy Napkin
 i(183933);	-- Guttered Crypt Candle
+i(178537);	-- Hair-Trussed Fungi
 i(184767);	-- Handheld Soul Mirror
+i(180088);	-- Handwritten Note
 i(180429);	-- Hand-Formed Fleshbread
 i(184567);	-- Hand-Knitted Steward Sweater
-i(180088);	-- Handwritten Note
 i(176852);	-- Hardened Tail Bone
 i(174322);	-- Harmonious Windchime
 i(173871);	-- Harrowed Ichor
+i(179376);	-- Hefty Diary Key
 i(184384);	-- Hibernal Sproutling
 i(180510);	-- Hibiscus Tea Bag
 i(180220);	-- Historical Treatise
@@ -609,6 +631,7 @@ i(180173);	-- House Grinchin Ring
 i(182968);	-- Humerus
 i(181342);	-- Hunt-Captain Korayn
 i(183822);	-- Icecrown Survival Kit
+i(180888);	-- Illegible Journal
 i(181377);	-- Illustrated Combat Meditation Aid
 i(179368);	-- Immutable Shackles
 i(184376);	-- Incinerated Arcane Tome
@@ -617,6 +640,7 @@ i(179993);	-- Infused Muck Water
 i(180735);	-- Innert Accolade
 i(173039);	-- Iridescent Amberjack Bait
 i(180518);	-- Ironwood Needle
+i(179310);	-- Jar of Muck
 i(183064);	-- Jewel of Opantriss
 i(180221);	-- Joke Book
 i(180980);	-- Journeyman's Large Satchel
@@ -624,6 +648,7 @@ i(180988);	-- Journeyman's Overflowing Satchel
 i(180975);	-- Journeyman's Satchel
 i(180984);	-- Journeyman's Stuffed Satchel
 i(179279);	-- Jug of Tuica Moonshine
+i(179285);	-- Jumari
 i(184774);	-- Juvenile Sporespindle
 i(176860);	-- Keen Incisor
 i(183207);	-- Keepsake of the First Conflict
@@ -640,6 +665,7 @@ i(181486);	-- Leafscale Coat
 i(176391);	-- Leafy Antenna
 i(180052);	-- Left Gem Eye
 i(180696);	-- Legion Wing Insignia
+i(182188);	-- Lesser Phial of Serenity
 i(171346);	-- Letters from the City
 i(180517);	-- Lifecrafted Flute
 i(180519);	-- Lifeless Branch
@@ -656,13 +682,17 @@ i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
 i(176887);	-- Malicious Essence
 i(180309);	-- Malicious Mandible
+i(180509);	-- Mane Hair Harp
 i(180881);	-- Mangled Toothpick
 i(183204);	-- Manual of Bonebending Methods
 i(179014);	-- Marbled Gorger Steak
 i(176862);	-- Marred Skin
 i(183203);	-- Massive Oxxein Tankard
 i(181546);	-- Mature Cryptbloom
+i(170499);	-- Maw Seeker Harness
 i(184485);	-- Mawforged Key
+i(168035);	-- Mawrat Harness
+i(183165);	-- Mawsworn Crossbow
 i(183110);	-- Mercurial Void
 i(181723);	-- Meticulously Pickled Head
 i(179283);	-- Millet Wafers
@@ -672,8 +702,12 @@ i(181558);	-- Missing Ritual Pages
 i(184387);	-- Misty Shimmerleaf
 i(184763);	-- Mnemis Neural Network
 i(183935);	-- Modified Death Warrant
+i(178551);	-- Monstrous Bloodtusk Haggis
 i(180222);	-- Mortal Recipe Book
 i(184281);	-- Muckfrosty
+i(179287);	-- Muck-Covered Morsels
+i(179300);	-- Muck-Hardened Marble
+i(183934);	-- Muck-Stained Napkin
 i(184315);	-- Multi-Modal Anima Container
 i(180225);	-- Murder Mystery
 i(183925);	-- Mushy Snowplum
@@ -700,6 +734,7 @@ i(180985);	-- Novice's Stuffed Satchel
 i(176331);	-- Obscuring Essence Potion
 i(179025);	-- Odorous Rice
 i(178110);	-- Oily Black Feather
+i(174363);	-- Old Empty Bottle
 i(177027);	-- Old Glove
 i(180176);	-- On the Nature of the Divine
 i(179392);	-- Orb of Burgeoning Ambition
@@ -711,23 +746,25 @@ i(182762);	-- Ornately Jeweled Amulet
 i(178107);	-- Pallid Sinuous Hide
 i(176856);	-- Partially Digested Viscera
 i(177025);	-- Partially Eaten Fish
-i(177256);	-- Floundering Soul
 i(184076);	-- Partially Finished Stone Sentry
 i(176392);	-- Patterned Wing
 i(183072);	-- Perfume Bottles
 i(181492);	-- Petrified Faeflower
 i(180511);	-- Petrified Leaf
 i(183075);	-- Phantasmal Masquerade Guise
+i(177278);	-- Phial of Serenity
 i(181347);	-- Plague Deviser Marileth
 i(183205);	-- Plated Horn of Battle
 i(176858);	-- Pliable Tail Fin
 i(181743);	-- Plume of the Archon
 i(184388);	-- Plump Glitterroot
 i(173041);	-- Pocked Bonefish Bait
+i(181247);	-- Pointy Stick
 i(178887);	-- Polemarch Adrestes
 i(173361);	-- Polished Claw
 i(179004);	-- Polished Silver Tithe
 i(183048);	-- Power of the Darkhound
+i(180887);	-- Preserved Organ
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
 i(179281);	-- Pridefall Borscht
@@ -764,6 +801,7 @@ i(180219);	-- Romance Novel
 i(184770);	-- Roster of the Forgotten
 i(179021);	-- Rosy Sweet Pepper
 i(183073);	-- Royal Sinvyr Cooking Set
+i(182299);	-- Ruined Carapace
 i(184207);	-- Rusting Covenant Spaulder
 i(177028);	-- Rusty Chain
 i(180405);	-- Rusty Gargon Chain
@@ -780,6 +818,7 @@ i(179278);	-- Shadeskin Brandy
 i(179308);	-- Shadeskin Brandy Phial
 i(179270);	-- Shadeskin Plum
 i(179992);	-- Shadespring Water
+i(183187);	-- Shadeweaver Incantation
 i(181488);	-- Shadowstalker Claw
 i(178130);	-- Shapeable Muck
 i(184377);	-- Shattered Firestone
@@ -815,12 +854,14 @@ i(184389);	-- Slumbering Starseed
 i(184201);	-- Slushy Water
 i(184373);	-- Small Anima Globe
 i(179013);	-- Smoked Muckfish
+i(180891);	-- Smooshed Maggot
 i(181484);	-- Songwood Graft
 i(183047);	-- Soul of the Darkhound
 i(184306);	-- Soulcatching Sludge
 i(180317);	-- Soulful Healing Potion
 i(180318);	-- Soulful Mana Potion
 i(182118);	-- Sour Nightcap
+i(174464);	-- Spectral Bridle
 i(179369);	-- Spectral Key
 i(181650);	-- Spellwarded Dissertation
 i(176853);	-- Spindly Flesh
@@ -847,15 +888,19 @@ i(183857);	-- Strength of Fire
 i(174283);	-- Stygian Stew
 i(183807);	-- Stygic Coercion
 i(183787);	-- Stygic Dampener
+i(179284);	-- Succulent Skullboar Bites
 i(175954);	-- Suffused Horn
+i(183135);	-- Summon the Fallen
 i(181724);	-- Tactics Vol. 83: Exploitation of Weather
 i(183108);	-- Tainted Void-Touched Core
 i(178115);	-- Tapping Stone Claw
 i(178150);	-- Tasty Purian
 i(184759);	-- Tasty Purian
+i(182459);	-- Tasty Toes
 i(178127);	-- Tattered Scraps of Clothing
 i(178536);	-- Tauralus Bone Marrow
 i(178548);	-- Tea Bones
+i(180892);	-- Teeth-Marked Bone Chips
 i(179017);	-- Telemea
 i(181715);	-- Temel's Certificate of Completion
 i(180709);	-- Tempered Armor Patch
@@ -869,6 +914,7 @@ i(182120);	-- The Lich's Heart
 i(183051);	-- The Rushing Tide
 i(178602);	-- Thorny Loop
 i(181549);	-- Timeworn Sinstone
+i(179309);	-- Tincture of Tuica Moonshine
 i(178103);	-- Tiny Wing
 i(179001);	-- Tithe Jar
 i(184310);	-- Tod's Sinstone
@@ -893,6 +939,8 @@ i(184394);	-- Vial of Bleak Blood
 i(176863);	-- Virulent Gland
 i(184371);	-- Vivacity of Collaboration
 i(179288);	-- Voltive Candles
+i(180674);	-- Wand of Grumpiness
+i(180675);	-- Wand of Regal Bearing
 i(181726);	-- Warfare Vol. 27: Behind Enemy Lines
 i(180889);	-- Warped Spectacles
 i(182713);	-- Water-Run Letter
@@ -908,10 +956,12 @@ i(182711);	-- Winner Caller's Warbler
 i(176885);	-- Wisp of Extinction
 i(178135);	-- Wisp of Life
 i(180344);	-- Wisps of Nightmares
+i(181246);	-- Withered Leaf
 i(180174);	-- Witherfall Varietals for the Discriminating Palate
 i(182708);	-- Wood Carved Chomper Protector
 i(178108);	-- Wool of Dredbat
 i(180885);	-- Worn Rune-Adorned Pouch
+i(181299);	-- Wornthrough Bag
 i(181648);	-- Ziggurat Focusing Crystal
 
 -----------------

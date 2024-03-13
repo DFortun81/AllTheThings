@@ -147,7 +147,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["maps"] = { LEGION_DALARAN },
 						["g"] = {
-							i(173373),	-- Faol's Hearthstone (QI!)
+							i(173373, {	-- Faol's Hearthstone (QI!)
+								["timeline"] = { ADDED_9_0_1 },
+							}),
 						},
 					}),
 					-- Artifact

@@ -419,6 +419,12 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+			i(178152),	-- <Broker Adjective> Return Beacon
+			i(171298),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 06
+			i(171299),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 07
+			i(171300),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 08
+			i(173063),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
+			i(173064),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
 			i(180483),	-- [PH] Legendary Dust
 			i(179367),	-- [PH] Torghast Boss Loot
 			i(180531),	-- [PH] Twisted Dust
@@ -434,12 +440,15 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(181482),	-- Anima Container 3
 			i(175028),	-- Animana Cores
 			i(174781),	-- Anisykos's Favorite Hammer
+			i(177036),	-- Aquatic Enticer
 			i(181542),	-- Ardenweald Anima 3
 			i(178081),	-- Ardenweald Epic Treasure
 			i(178080),	-- Ardenweald Rare Treasure
 			i(178079),	-- Ardenweald Uncommon Treasure
 			i(178089),	-- Ardenweald Unique Loot
+			i(175923),	-- Ardenwood
 			i(178147),	-- Army of the Darkness Insignia
+			i(175135),	-- Atticus's Spare Supplies
 			i(175050),	-- Bag o' Conduits
 			i(178084),	-- Bastion Epic Treasure
 			i(178083),	-- Bastion Rare Treasure
@@ -448,6 +457,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180736),	-- Blacksmith's Journal
 			i(175041),	-- Blinding Anima
 			i(175148),	-- Blooming Vale
+			i(181281),	-- Boss 10 Lure
 			i(180007),	-- Brewfest Pretzel Bowl
 			i(180829),	-- Cache of Anima Tolls
 			i(183939),	-- Carefully Bottled Holy Water
@@ -458,8 +468,10 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178720),	-- Chase the Sun
 			i(174038),	-- Chime of Celerity
 			i(182159),	-- Choofa Very Happy PH Reward
+			i(177035),	-- Colored Liquid Set
 			i(183125),	-- Combat Meditation: Power
 			i(175031),	-- Combo Wrath
+			i(172496),	-- Conduit Keystone
 			i(175036),	-- Conservation
 			i(175045),	-- Continuing Stampede
 			i(178726),	-- Continuing Stampede
@@ -471,15 +483,31 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180737),	-- Cook's Journal
 			i(180621),	-- Court of Harvesters Tribute
 			i(181514),	-- Court of Harvesters Tribute
+			i(178566),	-- Cracked Hand Mirror
 			i(175030),	-- Critical Swiftmend
+			i(180463),	-- Crusty Scepter
 			i(178139),	-- Cypher of Relocation
 			i(178556),	-- Cypher of Relocation
 			i(178721),	-- Dark Star
+			i(178112),	-- Death Venom Stinger
+			i(180811),	-- Deathfang's Favorite Skull
+			i(183122),	-- Death's Cloak
+			i(183695),	-- Decaying Dark Naaru Shard
+			i(180308),	-- Determined Stone Visage
 			i(181753),	-- Droman Aliothe Elated PH Reward
 			i(181755),	-- Droman Aliothe Happy PH Reward
 			i(181754),	-- Droman Aliothe Very Happy PH Reward
+			i(180423),	-- Duchess Helveera
+			i(176878),	-- Dulled Memento
+			i(179377),	-- Elegant Diary Key
+			i(170479),	-- Elevator Key: Level 5
+			i(170480),	-- Elevator Key: Level 10
+			i(170481),	-- Elevator Key: Level 15
+			i(170482),	-- Elevator Key: Level 20
+			i(180421),	-- Emberfall
 			i(183841),	-- Emergency Flare
 			i(181796),	-- Emergency Supplies Key
+			i(180786),	-- Empty Binding
 			i(180738),	-- Enchanter's Journal
 			i(180739),	-- Engineer's Journal
 			i(175043),	-- Entangling Vortex
@@ -487,19 +515,31 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178724),	-- Ethereal Shape
 			i(182698),	-- Exotic Purple Pigment
 			i(178564),	-- Eye of the Jailer:|CFFff2020 +1000 |R
+			i(175243),	-- Faded Grimoire
 			i(178588),	-- Fae Armaments
+			i(180292),	-- Faerie Dust
 			i(184041),	-- Festive Umbrella
 			i(174493),	-- First Bell of Markos
 			i(180740),	-- Fisherman's Journal
+			i(177042),	-- Five-Chime Batzos
 			i(180741),	-- Florist's Journal
 			i(175156),	-- Focus Fire
 			i(175033),	-- Focused Moonfire
 			i(175027),	-- Fulfilling Meditation
 			i(178966),	-- Gardener's Satchel
 			i(177034),	-- Gem Chisel Kit
+			i(180230),	-- Gemstone Chips
+			i(168208),	-- Gleaming Chest
+			i(168210),	-- Gleaming Chest: Azrafael
+			i(168211),	-- Gleaming Chest: Beneficus
+			i(168209),	-- Gleaming Chest: Olberic
+			i(179005),	-- Glinting Gold Fang
+			i(174746),	-- Golden Egg Shells
 			i(181345),	-- Grandmaster Vole
 			i(180852),	-- Granule of Stygia
 			i(183726),	-- Gratitude of the Liberated
+			i(170053),	-- Grek'og's Tusk
+			i(172038),	-- Grim Iron Shackles
 			i(180128),	-- Harvester's Elite Bounty Purse
 			i(175038),	-- Healthy Bear
 			i(177281),	-- Heavy Sorrowscale
@@ -513,9 +553,12 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178586),	-- Kyrian Armaments
 			i(178967),	-- Large Gardener's Satchel
 			i(182652),	-- Larion Tamer's Harness
+			i(183964),	-- Lavish Anima Items
+			i(183808),	-- Leashed Construct
 			i(180744),	-- Leatherworker's Journal
 			i(180278),	-- Legendary Powers
 			i(175025),	-- Lingering Moonfire
+			i(169823),	-- Lordaeron Coin
 			i(175044),	-- Louder Stampeding Roar
 			i(180054),	-- Lunar Dumplings
 			i(180056),	-- Lunar Rice Cake
@@ -524,7 +567,9 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(175963),	-- Maldraxxus Epic Treasure
 			i(175961),	-- Maldraxxus Rare Treasure
 			i(175958),	-- Maldraxxus Uncommon Treasure
+			i(178088),	-- Maldraxxus Unique Loot
 			i(183809),	-- Margrave Krexus Tribute
+			i(175111),	-- Marrow Larva
 			i(178725),	-- Master of Shapes
 			i(174745),	-- Memory Glass Shard
 			i(175147),	-- Meteoric Vale
@@ -536,8 +581,11 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(175752),	-- Mirror Fragment
 			i(177764),	-- Mirror Fragment
 			i(179664),	-- Mirror of Kalisthene
+			i(173941),	-- Monstrous Skull
 			i(183734),	-- Mysteriously Thrumming Orb
+			i(180399),	-- New Player Experience Box
 			i(180293),	-- Night Fae Insignia
+			i(177039),	-- Olive-Stuffed Barbouni
 			i(183873),	-- Otherworldy Tea Set
 			i(183190),	-- Oublion Cipher
 			i(183825),	-- Oversized Monocle
@@ -565,6 +613,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(175047),	-- Protective Rebirth
 			i(175144),	-- Purest Healing
 			i(178560),	-- Purity Contribution Progress
+			i(176442),	-- Ratwhisker Brew
 			i(175032),	-- Reactive Regrowth
 			i(175051),	-- Reactive Regrowth
 			i(178078),	-- Reborn Spirit Cache
@@ -574,11 +623,20 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(182699),	-- Refined Red Pigment
 			i(175039),	-- Reinforced Bark
 			i(183821),	-- Remornia
+			i(183872),	-- Residual Sorrow
+			i(171265),	-- REUSE ME
 			i(178087),	-- Revendreth Epic Treasure
 			i(178086),	-- Revendreth Rare Treasure
 			i(178085),	-- Revendreth Uncommon Treasure
 			i(178091),	-- Revendreth Unique Loot
+			i(180354),	-- Ripped Stuffing
 			i(175048),	-- Root Structure
+			i(176093),	-- RSVP: Alexandros Mograine
+			i(176058),	-- RSVP: Baroness Vashj
+			i(176094),	-- RSVP: Honor 6
+			i(176090),	-- RSVP: Lady Moonberry
+			i(176092),	-- RSVP: Mikanikos
+			i(176091),	-- RSVP: The Countess
 			i(178687),	-- RSVP: VIP 17
 			i(178688),	-- RSVP: VIP 18
 			i(178689),	-- RSVP: VIP 19
@@ -586,6 +644,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(179303),	-- Rusty Sword
 			i(180742),	-- Scribe's Journal
 			i(174495),	-- Second Bell of Markos
+			i(183046),	-- Serrated Inking Spines
 			i(181855),	-- Set Keystone Map: De Other Side
 			i(181852),	-- Set Keystone Map: Halls of Atonement
 			i(181851),	-- Set Keystone Map: Mists of Tirna Scithe
@@ -604,9 +663,11 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180746),	-- Skinner's Journal
 			i(178965),	-- Small Gardener's Satchel
 			i(172090),	-- Sorrowscale Fragment
+			i(171948),	-- Soul Ash
 			i(178045),	-- Soul Prism
 			i(181371),	-- Spare Head
 			i(175029),	-- Spreading Vale
+			i(173061),	-- Stabilizing Powder
 			i(180011),	-- Stale Brewfest Pretzel
 			i(178719),	-- Star Shower
 			i(178722),	-- Steel Leaves
@@ -619,8 +680,11 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(181773),	-- Stonehead Happy PH Reward
 			i(181772),	-- Stonehead Very Happy PH Reward
 			i(172459),	-- Storied Legion Emblem
+			i(180291),	-- Stranglevine Seed
 			i(181766),	-- Strike with Clarity
 			i(174942),	-- Stygia
+			i(183131),	-- Stygic Grapnel
+			i(177041),	-- Sunwarmed Xyfias
 			i(175037),	-- Symbiotic Growth
 			i(180747),	-- Tailor's Journal
 			i(178597),	-- TBD Maldraxxus Supplies
@@ -629,11 +693,14 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(176804),	-- Temp
 			i(178969),	-- Test Container
 			i(180217),	-- The Bad Container
+			i(180422),	-- The Banewood Road
 			i(180950),	-- The Maw - Pet Cosmetic - NYI
 			i(180951),	-- The Maw - POI Unlock - NYI
 			i(181391),	-- Theotar
 			i(175143),	-- Thicker Bark
 			i(174496),	-- Third Bell of Markos
+			i(180600),	-- Thistle Tea
+			i(179382),	-- Tiny, Wet Scroll
 			i(180695),	-- Tome of Spiritual Knowledge
 			i(174489),	-- Treated Animacone
 			i(178718),	-- Trinary Efflux
@@ -651,6 +718,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180006),	-- Warm Brewfest Pretzel
 			i(181392),	-- Watchmaster Boromod
 			i(178968),	-- Weekly Gardener's Satchel
+			i(179306),	-- Wingtip Warmer
 			i(177708),	-- Writ of Tribute
 		})),
 

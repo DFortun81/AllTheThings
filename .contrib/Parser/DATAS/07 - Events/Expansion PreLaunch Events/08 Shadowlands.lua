@@ -974,6 +974,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		}),
 		n(ZONE_DROPS, {
 			i(180720),	-- Darkened Scourgestone
+			i(180712),	-- Partially Digested Cloth
+			i(180719),	-- Partially Digested Leather
 		}),
 	}),
 })));
