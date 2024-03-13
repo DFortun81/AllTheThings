@@ -2,7 +2,13 @@
 -- App locals
 local _, app = ...;
 
-if app.GameBuildVersion < 90000 then return end
+if app.GameBuildVersion < 90000 then
+
+	app.CreateConduit = app.CreateUnimplementedClass("Conduit", "conduitID");
+	app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgePowerID");
+
+	return
+end
 
 local pairs = pairs
 
