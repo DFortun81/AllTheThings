@@ -421,6 +421,19 @@ i(208320, 419045);	-- Verdant Combatant's Plate Goggles
 --------------------------
 -- Season of Discovery ---
 --------------------------
+------------------
+-- PATCH 1.15.0 --
+------------------
 i(210178, 424641);	-- Shredder Autosalvage Unit
+
+------------------
+-- PATCH 1.15.1 --
+------------------
+--- ITEM ---
+i(215432, 435967);	-- Ez-Thro Radiation Bomb
+i(215431, 435965);	-- High-Yield Radiation Bomb
+i(215156, 435961);	-- Hyperconductive Goldwrap
+i(215429, 435957);	-- Polished Truesilver Gears
+i(215153, 435959);	-- Schematic: Whirling Truesilver Gearwall
 -- #endif
 -- #endif

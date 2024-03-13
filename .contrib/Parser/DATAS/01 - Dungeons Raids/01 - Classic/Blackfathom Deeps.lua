@@ -4,130 +4,130 @@
 -- #if SEASON_OF_DISCOVERY
 -- Item Database of drops in 10-Player BFD.
 local Items = ItemDBConditional;
-local BFDItem = function(itemID, f)
+local SetItemFilter = function(itemID, f)
 	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
 	local item = { ["b"] = 1, ["f"] = f };
 	Items[itemID] = item;
 	return item;
 end
-BFDItem(209694, DAGGERS);	-- Blackfathom Ritual Dagger
-BFDItem(209436, DAGGERS);	-- Chipped Bite of Serra'kis
-BFDItem(211456, DAGGERS);	-- Dagger of Willing Sacrifice
-BFDItem(209818, DAGGERS);	-- Sun-Touched Crescent
-BFDItem(209691, DAGGERS);	-- Vampiric Boot Knife
-BFDItem(209579, FIST_WEAPONS);	-- Crashing Thunder
-BFDItem(209580, FIST_WEAPONS);	-- Gusting Wind
-BFDItem(209564, POLEARMS);	-- Guardian's Trident
-BFDItem(209561, STAVES);	-- Rod of the Ancient Sleepwalker
-BFDItem(209559, STAVES);	-- Twilight Sage's Walking Stick
-BFDItem(209573, STAVES);	-- Wrathful Spire
-BFDItem(209567, TWO_HANDED_AXES);	-- Coral Reef Axe
-BFDItem(209560, ONE_HANDED_MACES);	-- Hammer of Righteous Judgement
-BFDItem(209822, ONE_HANDED_MACES);	-- Strength of Purpose
-BFDItem(209577, TWO_HANDED_MACES);	-- Fist of the Wild
-BFDItem(209525, ONE_HANDED_SWORDS);	-- Honed Darkwater Talwar
-BFDItem(209562, TWO_HANDED_SWORDS);	-- Deadly Strike of the Hydra
-BFDItem(204807, TWO_HANDED_SWORDS);	-- Fathomblade
+SetItemFilter(209694, DAGGERS);	-- Blackfathom Ritual Dagger
+SetItemFilter(209436, DAGGERS);	-- Chipped Bite of Serra'kis
+SetItemFilter(211456, DAGGERS);	-- Dagger of Willing Sacrifice
+SetItemFilter(209818, DAGGERS);	-- Sun-Touched Crescent
+SetItemFilter(209691, DAGGERS);	-- Vampiric Boot Knife
+SetItemFilter(209579, FIST_WEAPONS);	-- Crashing Thunder
+SetItemFilter(209580, FIST_WEAPONS);	-- Gusting Wind
+SetItemFilter(209564, POLEARMS);	-- Guardian's Trident
+SetItemFilter(209561, STAVES);	-- Rod of the Ancient Sleepwalker
+SetItemFilter(209559, STAVES);	-- Twilight Sage's Walking Stick
+SetItemFilter(209573, STAVES);	-- Wrathful Spire
+SetItemFilter(209567, TWO_HANDED_AXES);	-- Coral Reef Axe
+SetItemFilter(209560, ONE_HANDED_MACES);	-- Hammer of Righteous Judgement
+SetItemFilter(209822, ONE_HANDED_MACES);	-- Strength of Purpose
+SetItemFilter(209577, TWO_HANDED_MACES);	-- Fist of the Wild
+SetItemFilter(209525, ONE_HANDED_SWORDS);	-- Honed Darkwater Talwar
+SetItemFilter(209562, TWO_HANDED_SWORDS);	-- Deadly Strike of the Hydra
+SetItemFilter(204807, TWO_HANDED_SWORDS);	-- Fathomblade
 
-BFDItem(209590, HELD_IN_OFF_HAND);	-- Cracked Water Globe
-BFDItem(209570, HELD_IN_OFF_HAND);	-- Tome of Cavern Lore
-BFDItem(211458, HELD_IN_OFF_HAND);	-- Tome of Shadow Warding
-BFDItem(211460, SHIELDS);	-- Ancient Arctic Buckler
-BFDItem(209424, SHIELDS);	-- Shell Plate Barrier
+SetItemFilter(209590, HELD_IN_OFF_HAND);	-- Cracked Water Globe
+SetItemFilter(209570, HELD_IN_OFF_HAND);	-- Tome of Cavern Lore
+SetItemFilter(211458, HELD_IN_OFF_HAND);	-- Tome of Shadow Warding
+SetItemFilter(211460, SHIELDS);	-- Ancient Arctic Buckler
+SetItemFilter(209424, SHIELDS);	-- Shell Plate Barrier
 
-BFDItem(209563, BOWS);	-- Naga Heartrender
-BFDItem(209534, CROSSBOWS);	-- Azshari Arbalest
-BFDItem(209830, CROSSBOWS);	-- Ironhide Arbalest
-BFDItem(209688, GUNS);	-- Bael Modan Blunderbuss
-BFDItem(209571, WANDS);	-- Deadlight
-BFDItem(211461, WANDS);	-- Inscribed Gravestone Scepter
-BFDItem(209674, WANDS);	-- Phoenix Ignition
+SetItemFilter(209563, BOWS);	-- Naga Heartrender
+SetItemFilter(209534, CROSSBOWS);	-- Azshari Arbalest
+SetItemFilter(209830, CROSSBOWS);	-- Ironhide Arbalest
+SetItemFilter(209688, GUNS);	-- Bael Modan Blunderbuss
+SetItemFilter(209571, WANDS);	-- Deadlight
+SetItemFilter(211461, WANDS);	-- Inscribed Gravestone Scepter
+SetItemFilter(209674, WANDS);	-- Phoenix Ignition
 
-BFDItem(209423, CLOAKS);	-- Flowing Scarf
-BFDItem(209523, CLOAKS);	-- Shimmering Thresher Cape
-BFDItem(209680, CLOAKS);	-- Waterproof Scarf
-BFDItem(211464, CLOAKS);	-- Worn Prelacy Cape
+SetItemFilter(209423, CLOAKS);	-- Flowing Scarf
+SetItemFilter(209523, CLOAKS);	-- Shimmering Thresher Cape
+SetItemFilter(209680, CLOAKS);	-- Waterproof Scarf
+SetItemFilter(211464, CLOAKS);	-- Worn Prelacy Cape
 
-BFDItem(209679, CLOTH);	-- Azshari Novice's Shoulderpads
-BFDItem(209672, CLOTH);	-- Black Fingerless Gloves
-BFDItem(209675, CLOTH);	-- Clamweave Tunic
-BFDItem(211468, CLOTH);	-- Frayed Chestnut Mantle
-BFDItem(209667, CLOTH);	-- Gaze Dreamer Leggings
-BFDItem(209432, CLOTH);	-- Ghamoo-ra's Cinch
-BFDItem(211852, CLOTH);	-- Handwraps of Befouled Water
-BFDItem(211465, CLOTH).races = ALLIANCE_ONLY;	-- Nimbus Boots of Insight
-BFDItem(211842, CLOTH);	-- Rakkamar's Tattered Thinking Cap
-BFDItem(209670, CLOTH);	-- Skinwalkers
-BFDItem(209684, CLOTH);	-- Soul Leech Pants
-BFDItem(209828, CLOTH);	-- Sub-Zero Pauldrons
-BFDItem(209671, CLOTH);	-- Twilight Invoker's Robes
-BFDItem(209683, CLOTH);	-- Twilight Invoker's Shawl
-BFDItem(209669, CLOTH);	-- Twilight Invoker's Shoes
+SetItemFilter(209679, CLOTH);	-- Azshari Novice's Shoulderpads
+SetItemFilter(209672, CLOTH);	-- Black Fingerless Gloves
+SetItemFilter(209675, CLOTH);	-- Clamweave Tunic
+SetItemFilter(211468, CLOTH);	-- Frayed Chestnut Mantle
+SetItemFilter(209667, CLOTH);	-- Gaze Dreamer Leggings
+SetItemFilter(209432, CLOTH);	-- Ghamoo-ra's Cinch
+SetItemFilter(211852, CLOTH);	-- Handwraps of Befouled Water
+SetItemFilter(211465, CLOTH).races = ALLIANCE_ONLY;	-- Nimbus Boots of Insight
+SetItemFilter(211842, CLOTH);	-- Rakkamar's Tattered Thinking Cap
+SetItemFilter(209670, CLOTH);	-- Skinwalkers
+SetItemFilter(209684, CLOTH);	-- Soul Leech Pants
+SetItemFilter(209828, CLOTH);	-- Sub-Zero Pauldrons
+SetItemFilter(209671, CLOTH);	-- Twilight Invoker's Robes
+SetItemFilter(209683, CLOTH);	-- Twilight Invoker's Shawl
+SetItemFilter(209669, CLOTH);	-- Twilight Invoker's Shoes
 
-BFDItem(209685, LEATHER);	-- Ancient Moss Cinch
-BFDItem(211789, LEATHER);	-- Artemis Cowl
-BFDItem(209524, LEATHER);	-- Bindings of Serra'kis
-BFDItem(209572, LEATHER);	-- Black Boiled Leathers
-BFDItem(209421, LEATHER);	-- Cord of Aquanis
-BFDItem(209578, LEATHER);	-- Glowing Leather Bands
-BFDItem(209687, LEATHER);	-- Hydra Hide Cuirass
-BFDItem(209678, LEATHER);	-- Mantle of the Thresher Slayer
-BFDItem(209569, LEATHER);	-- Murloc Hide Kneeboots
-BFDItem(209527, LEATHER);	-- Naga Battle Gauntlets
-BFDItem(209692, LEATHER);	-- Sentinel Pauldrons
-BFDItem(211455, LEATHER);	-- Slick Fingerless Gloves
-BFDItem(209682, LEATHER);	-- Sturdy Hood
-BFDItem(211466, LEATHER).races = ALLIANCE_ONLY;	-- Tender's Heartwood Girdle
-BFDItem(211507, LEATHER);	-- Twilight Elementalist's Cowl
-BFDItem(211508, LEATHER);	-- Twilight Elementalist's Footpads
-BFDItem(211509, LEATHER);	-- Twilight Elementalist's Robe
-BFDItem(211510, LEATHER);	-- Twilight Slayer's Cowl
-BFDItem(211511, LEATHER);	-- Twilight Slayer's Footpads
-BFDItem(211512, LEATHER);	-- Twilight Slayer's Tunic
+SetItemFilter(209685, LEATHER);	-- Ancient Moss Cinch
+SetItemFilter(211789, LEATHER);	-- Artemis Cowl
+SetItemFilter(209524, LEATHER);	-- Bindings of Serra'kis
+SetItemFilter(209572, LEATHER);	-- Black Boiled Leathers
+SetItemFilter(209421, LEATHER);	-- Cord of Aquanis
+SetItemFilter(209578, LEATHER);	-- Glowing Leather Bands
+SetItemFilter(209687, LEATHER);	-- Hydra Hide Cuirass
+SetItemFilter(209678, LEATHER);	-- Mantle of the Thresher Slayer
+SetItemFilter(209569, LEATHER);	-- Murloc Hide Kneeboots
+SetItemFilter(209527, LEATHER);	-- Naga Battle Gauntlets
+SetItemFilter(209692, LEATHER);	-- Sentinel Pauldrons
+SetItemFilter(211455, LEATHER);	-- Slick Fingerless Gloves
+SetItemFilter(209682, LEATHER);	-- Sturdy Hood
+SetItemFilter(211466, LEATHER).races = ALLIANCE_ONLY;	-- Tender's Heartwood Girdle
+SetItemFilter(211507, LEATHER);	-- Twilight Elementalist's Cowl
+SetItemFilter(211508, LEATHER);	-- Twilight Elementalist's Footpads
+SetItemFilter(211509, LEATHER);	-- Twilight Elementalist's Robe
+SetItemFilter(211510, LEATHER);	-- Twilight Slayer's Cowl
+SetItemFilter(211511, LEATHER);	-- Twilight Slayer's Footpads
+SetItemFilter(211512, LEATHER);	-- Twilight Slayer's Tunic
 
-BFDItem(209418, MAIL);	-- Adamantine Tortoise Armor
-BFDItem(209568, MAIL);	-- Algae Gauntlets
-BFDItem(211463, MAIL);	-- Chittering Beetle Clasps
-BFDItem(209689, MAIL);	-- Crabshell Waders
-BFDItem(204804, MAIL);	-- Hydraxian Bangles
-BFDItem(209566, MAIL);	-- Leggings of the Faithful
-BFDItem(211843, MAIL);	-- Mask of Scorn
-BFDItem(209690, MAIL);	-- Shadowscale Coif
-BFDItem(209824, MAIL);	-- Shimmering Shoulderpads
-BFDItem(209676, MAIL);	-- Shoulderguards of Crushing Depths
-BFDItem(209581, MAIL);	-- Silver Hand Sabatons
-BFDItem(211506, MAIL);	-- Twilight Avenger's Boots
-BFDItem(211504, MAIL);	-- Twilight Avenger's Chain
-BFDItem(211505, MAIL);	-- Twilight Avenger's Helm
-BFDItem(211457, MAIL);	-- Twilight Defender's Girdle
+SetItemFilter(209418, MAIL);	-- Adamantine Tortoise Armor
+SetItemFilter(209568, MAIL);	-- Algae Gauntlets
+SetItemFilter(211463, MAIL);	-- Chittering Beetle Clasps
+SetItemFilter(209689, MAIL);	-- Crabshell Waders
+SetItemFilter(204804, MAIL);	-- Hydraxian Bangles
+SetItemFilter(209566, MAIL);	-- Leggings of the Faithful
+SetItemFilter(211843, MAIL);	-- Mask of Scorn
+SetItemFilter(209690, MAIL);	-- Shadowscale Coif
+SetItemFilter(209824, MAIL);	-- Shimmering Shoulderpads
+SetItemFilter(209676, MAIL);	-- Shoulderguards of Crushing Depths
+SetItemFilter(209581, MAIL);	-- Silver Hand Sabatons
+SetItemFilter(211506, MAIL);	-- Twilight Avenger's Boots
+SetItemFilter(211504, MAIL);	-- Twilight Avenger's Chain
+SetItemFilter(211505, MAIL);	-- Twilight Avenger's Helm
+SetItemFilter(211457, MAIL);	-- Twilight Defender's Girdle
 
-BFDItem(209820, NECK_F);	-- Black Shroud Choker
-BFDItem(209825, NECK_F);	-- Droplet Choker
-BFDItem(209673, NECK_F);	-- Glowing Fetish Amulet
-BFDItem(209422, NECK_F);	-- High Tide Choker
-BFDItem(209686, NECK_F);	-- Jagged Bone Necklace
-BFDItem(209817, NECK_F);	-- Voidwalker Brooch
+SetItemFilter(209820, NECK_F);	-- Black Shroud Choker
+SetItemFilter(209825, NECK_F);	-- Droplet Choker
+SetItemFilter(209673, NECK_F);	-- Glowing Fetish Amulet
+SetItemFilter(209422, NECK_F);	-- High Tide Choker
+SetItemFilter(209686, NECK_F);	-- Jagged Bone Necklace
+SetItemFilter(209817, NECK_F);	-- Voidwalker Brooch
 
-BFDItem(209565, FINGER_F);	-- Band of Deep Places
-BFDItem(211462, FINGER_F);	-- Ever-Sustaining Ring
-BFDItem(211467, FINGER_F).races = HORDE_ONLY;	-- Band of the Iron Fist
-BFDItem(209677, FINGER_F);	-- Loop of Swift Currents
-BFDItem(209821, FINGER_F);	-- Ring of Shadowsight
-BFDItem(209823, FINGER_F).classes = { HUNTER };	-- Signet of Beasts
-BFDItem(209668, FINGER_F);	-- Signet of the Twilight Lord
+SetItemFilter(209565, FINGER_F);	-- Band of Deep Places
+SetItemFilter(211462, FINGER_F);	-- Ever-Sustaining Ring
+SetItemFilter(211467, FINGER_F).races = HORDE_ONLY;	-- Band of the Iron Fist
+SetItemFilter(209677, FINGER_F);	-- Loop of Swift Currents
+SetItemFilter(209821, FINGER_F);	-- Ring of Shadowsight
+SetItemFilter(209823, FINGER_F).classes = { HUNTER };	-- Signet of Beasts
+SetItemFilter(209668, FINGER_F);	-- Signet of the Twilight Lord
 
-BFDItem(211451, TRINKET_F);	-- Acolyte's Void Pearl
-BFDItem(211449, TRINKET_F);	-- Avenger's Void Pearl
-BFDItem(209681, TRINKET_F);	-- Black Murloc Egg
-BFDItem(209816, TRINKET_F);	-- Fetish of Mischief
-BFDItem(211450, TRINKET_F);	-- Invoker's Void Pearl
-BFDItem(209576, TRINKET_F);	-- Mind-Expanding Mushroom
+SetItemFilter(211451, TRINKET_F);	-- Acolyte's Void Pearl
+SetItemFilter(211449, TRINKET_F);	-- Avenger's Void Pearl
+SetItemFilter(209681, TRINKET_F);	-- Black Murloc Egg
+SetItemFilter(209816, TRINKET_F);	-- Fetish of Mischief
+SetItemFilter(211450, TRINKET_F);	-- Invoker's Void Pearl
+SetItemFilter(209576, TRINKET_F);	-- Mind-Expanding Mushroom
 
-BFDItem(209574, LIBRAMS);	-- Discarded Tenets of the Silver Hand
-BFDItem(209575, TOTEMS);	-- Carved Driftwood Icon
+SetItemFilter(209574, LIBRAMS);	-- Discarded Tenets of the Silver Hand
+SetItemFilter(209575, TOTEMS);	-- Carved Driftwood Icon
 
-BFDItem(211491, BAGS);	-- Bottomless Murloc Skin Bag
-BFDItem(211492, BAGS);	-- Kelris's Satchel
+SetItemFilter(211491, BAGS);	-- Bottomless Murloc Skin Bag
+SetItemFilter(211492, BAGS);	-- Kelris's Satchel
 
 local SOD_DISABLE_NORMAL_MODE = [[function(t)
 	if C_Seasons and C_Seasons.GetActiveSeason() == 2 then

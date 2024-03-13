@@ -806,7 +806,7 @@ namespace ATT
                 var list = new List<object>();
                 foreach (var key in keyList)
                 {
-                    list.Add(ParseObject(table[key]));
+                    list.Add(ParseObject(table[key], key));
                 }
                 return list;
             }
@@ -869,7 +869,7 @@ namespace ATT
             {
                 if (key.TryConvert(out TKey tKey))
                 {
-                    dict[tKey] = ParseObject(table[key]);
+                    dict[tKey] = ParseObject(table[key], key);
                 }
                 else
                 {
@@ -882,11 +882,11 @@ namespace ATT
         static IDictionary<string, object> ParseAsStringDictionary(LuaTable table)
         {
             var dict = new Dictionary<string, object>();
-            foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key]);
+            foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key], key);
             return dict;
         }
 
-        static object ParseObject(object data)
+        static object ParseObject(object data, object key)
         {
             switch (data.GetType().ToString())
             {
@@ -904,8 +904,7 @@ namespace ATT
                     }
                 case "NLua.LuaFunction":
                     {
-                        Log($" ({data.GetType()}): ");
-                        LogWarn(data.GetType().FullName);
+                        Log($" {key} ({data.GetType()}): {data.GetType().FullName}");
                         LogWarn("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
                         Console.ReadLine();
                         break;

@@ -2980,6 +2980,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 5300,	-- Frayfeather Hippogryph
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(216645, {	-- Mote of Darkness
+					["provider"] = { "n", 218241 },	-- Shadowy Figure
+					["description"] = "After acquiring the Spent Voidcore, killing any mob in the zone can cause the Shadowy Figure to appear.",
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(216635, {	-- Spent Voidcore
+					["crs"] = {
+						5335,	-- Hatecrest Screamer
+						5337,	-- Hatecrest Siren
+						5336,	-- Hatecrest Sorceress
+					},
+				})),
+				-- #endif
 				-- #if AFTER 3.1.0
 				i(11474, {	-- Sprite Darter Egg (PET!)
 					["timeline"] = { "added 1.11.1.5462" },

@@ -174,6 +174,13 @@ i(0, 429351);	-- Extraplanar Spidersilk Boots
 i(215369, 435841);	-- Invoker's Cord
 i(215370, 435848);	-- Invoker's Mantle
 i(211247, 428424);	-- Phoenix Bindings
+
+------------------
+-- PATCH 1.15.1 --
+------------------
+--- ITEM ---
+i(215149, 435611);	-- Gneuro-Linked Arcano-Filament Monocle
+i(215368, 435828);	-- Hyperconductive Arcano-Filament
 -- #endif
 
 -------------------

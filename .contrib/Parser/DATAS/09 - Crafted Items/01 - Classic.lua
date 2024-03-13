@@ -993,6 +993,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 			},
 		}),
+		-- #if SEASON_OF_DISCOVERY
+		n(ARMOR, {
+			applyclassicphase(SOD_PHASE_TWO, i(215115)),	-- Hyperconductive Goldwrap
+		}),
+		-- #endif
 		filter(BATTLE_PETS, {
 			i(15996, {	-- Lifelike Toad (PET!)
 				["timeline"] = { "added 1.11.1.5462" },
@@ -1071,10 +1076,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4384),	-- Explosive Sheep
 			i(6714),	-- EZ-Thro Dynamite
 			i(18588),	-- EZ-Thro Dynamite II
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(215168)),	-- Ez-Thro Radiation Bomb
+			-- #endif
 			i(4852),	-- Flash Bomb
 			i(4395),	-- Goblin Land Mine
 			i(4378),	-- Heavy Dynamite
 			i(10562),	-- Hi-Explosive Bomb
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(215127)),	-- High-Yield Radiation Bomb
+			-- #endif
 			i(4390),	-- Iron Grenade
 			i(4370),	-- Large Copper Bomb
 			i(4398),	-- Large Seaforium Charge
@@ -1158,6 +1169,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4387),	-- Iron Strut
 			i(10561),	-- Mithril Casing
 			i(10559),	-- Mithril Tube
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(213383)),	-- Polished Truesilver Gears
+			-- #endif
 			i(4357),	-- Rough Blasting Powder
 			i(4404),	-- Silver Contact
 			i(10505),	-- Solid Blasting Powder
@@ -1177,6 +1191,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		filter(SHIELDS, {
 			i(18168),	-- Force Reactive Disk*
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(213390)),	-- Whirling Truesilver Gearwall
+			-- #endif
 		}),
 		category(191, {	-- Tools
 			i(6219),	-- Arclight Spanner
@@ -2451,6 +2468,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4305),	-- Bolt of Silk Cloth
 			i(2997),	-- Bolt of Woolen Cloth
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258)),	-- Gordok Ogre Suit
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(213379)),	-- Hyperconductive Arcano-Filament
+			-- #endif
 			i(14342),	-- Mooncloth
 		}),
 		category(233, {	-- Bags
@@ -2483,6 +2503,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10041),	-- Dreamweave Circlet
 			i(4322),	-- Enchanter's Cowl
 			i(14111),	-- Felcloth Hood
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(215111)),	-- Gneuro-Linked Arcano-Filament Monocle
+			-- #endif
 			i(203820, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Headdress
 			i(14140),	-- Mooncloth Circlet
 			i(10033),	-- Red Mageweave Headband

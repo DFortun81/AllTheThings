@@ -1,42 +1,54 @@
 -- #if SEASON_OF_DISCOVERY
 -- Item Database of new items
 local Items = ItemDBConditional;
-local SODItem = function(itemID, f)
+local SetItemFilter = function(itemID, f)
 	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
 	local item = { ["b"] = 1, ["f"] = f };
 	Items[itemID] = item;
 	return item;
 end
-SODItem(212588, CLOTH);	-- Provisioner's Gloves
-SODItem(212589, LEATHER);	-- Courier Treads
-SODItem(212590, MAIL);	-- Hoist Strap
-SODItem(211382, BAGS);	-- Small Courier Satchel
-SODItem(211384, BAGS);	-- Sturdy Courier Bag
-SODItem(211420, TRINKET);	-- Shifting Scale Talisman
+SetItemFilter(212588, CLOTH);	-- Provisioner's Gloves
+SetItemFilter(212589, LEATHER);	-- Courier Treads
+SetItemFilter(212590, MAIL);	-- Hoist Strap
+SetItemFilter(211382, BAGS);	-- Small Courier Satchel
+SetItemFilter(211384, BAGS);	-- Sturdy Courier Bag
+SetItemFilter(211420, TRINKET);	-- Shifting Scale Talisman
 
 -- Crafted Items
-SODItem(210795, CLOTH);	-- Extraplanar Spidersilk Boots
-SODItem(215366, CLOTH);	-- Invoker's Cord
-SODItem(215365, CLOTH);	-- Invoker's Mantle
-SODItem(210781, CLOTH);	-- Phoenix Bindings
-SODItem(211502, LEATHER);	-- Void-Touched Leather Gauntlets
-SODItem(211423, LEATHER);	-- Void-Touched Leather Gloves
-SODItem(210773, MAIL);	-- Mantle of the Second War
-SODItem(210794, MAIL);	-- Shifting Silver Breastplate
+SetItemFilter(215111, CLOTH);	-- Gneuro-Linked Arcano-Filament Monocle (Phase 2)
+SetItemFilter(215115, CLOTH);	-- Hyperconductive Goldwrap (Phase 2)
+SetItemFilter(217279, MAIL);	-- Golden Scale Coif (Phase 2)
+SetItemFilter(217283, MAIL);	-- Golden Scale Shoulders (Phase 2)
+SetItemFilter(217277, MAIL);	-- Golden Scale Cuirass (Phase 2)
+SetItemFilter(217273, MAIL);	-- Golden Scale Gauntlets (Phase 2)
+SetItemFilter(217285, MAIL);	-- Golden Scale Leggings (Phase 2)
+SetItemFilter(217275, MAIL);	-- Golden Scale Boots (Phase 2)
+SetItemFilter(217281, TWO_HANDED_SWORDS);	-- Moonsteel Broadsword (Phase 2)
+SetItemFilter(215167, PLATE);	-- Reflective Truesilver Braincage (Phase 2)
+SetItemFilter(215161, PLATE);	-- Tempered Interference-Negating Helmet (Phase 2)
+SetItemFilter(213390, SHIELDS);	-- Whirling Truesilver Gearwall (Phase 2)
+SetItemFilter(210795, CLOTH);	-- Extraplanar Spidersilk Boots
+SetItemFilter(215366, CLOTH);	-- Invoker's Cord
+SetItemFilter(215365, CLOTH);	-- Invoker's Mantle
+SetItemFilter(210781, CLOTH);	-- Phoenix Bindings
+SetItemFilter(211502, LEATHER);	-- Void-Touched Leather Gauntlets
+SetItemFilter(211423, LEATHER);	-- Void-Touched Leather Gloves
+SetItemFilter(210773, MAIL);	-- Mantle of the Second War
+SetItemFilter(210794, MAIL);	-- Shifting Silver Breastplate
 
 -- Quest Items for Runes
-SODItem(209420, ONE_HANDED_MACES);	-- Gillsbane
-SODItem(210696, ONE_HANDED_SWORDS);	-- Rot Bane
+SetItemFilter(209420, ONE_HANDED_MACES);	-- Gillsbane
+SetItemFilter(210696, ONE_HANDED_SWORDS);	-- Rot Bane
 
 -- NYI
-SODItem(211445, BOWS);	-- Barbaric Recurve
-SODItem(211443, TWO_HANDED_SWORDS);	-- Blade of Rage
-SODItem(211444, CLOAKS);	-- Summoner's Cloak
-SODItem(211501, PLATE);	-- Chestguard of Might
-SODItem(211263, PLATE);	-- Judgement Chestguard
-SODItem(211940, POLEARMS);	-- Ecks'av's Tribal Guardian
-SODItem(211944, POLEARMS);	-- Tojara's Will
-SODItem(211941, POLEARMS);	-- Windwalker's Yari
+SetItemFilter(211445, BOWS);	-- Barbaric Recurve
+SetItemFilter(211443, TWO_HANDED_SWORDS);	-- Blade of Rage
+SetItemFilter(211444, CLOAKS);	-- Summoner's Cloak
+SetItemFilter(211501, PLATE);	-- Chestguard of Might
+SetItemFilter(211263, PLATE);	-- Judgement Chestguard
+SetItemFilter(211940, POLEARMS);	-- Ecks'av's Tribal Guardian
+SetItemFilter(211944, POLEARMS);	-- Tojara's Will
+SetItemFilter(211941, POLEARMS);	-- Windwalker's Yari
 
 -- TODO: Mark these as unavailable in Phase 1
 -- spellID 3538 Blacksmithing (Rank 3)
