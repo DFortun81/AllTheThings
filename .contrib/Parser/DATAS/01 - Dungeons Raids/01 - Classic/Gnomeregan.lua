@@ -11,15 +11,19 @@ local SetItemFilter = function(itemID, f)
 	return item;
 end
 SetItemFilter(213410, DAGGERS);	-- Glimmering Gizmoblade
+SetItemFilter(213291, DAGGERS);	-- Toxic Revenger II
 SetItemFilter(213442, FIST_WEAPONS);	-- Cogmaster's Claw
 SetItemFilter(213409, FIST_WEAPONS);	-- Mekkatorque's Arcano-Shredder
 SetItemFilter(213408, POLEARMS);	-- Gyromatic Macro-Adjustor
+SetItemFilter(213353, STAVES);	-- Defibrillating Staff
+SetItemFilter(213289, STAVES);	-- Hydrostaff
 SetItemFilter(213354, STAVES);	-- Staff of the Evil Genius
 
 SetItemFilter(216679, ONE_HANDED_AXES);	-- Shoni's Dismantling Tool
 SetItemFilter(213295, ONE_HANDED_AXES);	-- Ultrasonic Vibroblade
 SetItemFilter(213296, TWO_HANDED_AXES);	-- Supercharged Headchopper
 SetItemFilter(213416, TWO_HANDED_AXES);	-- Thermaplugg's Rocket Cleaver
+SetItemFilter(213352, ONE_HANDED_MACES);	-- Gear-Mender's Grace
 SetItemFilter(213560, ONE_HANDED_MACES);	-- Mechanostrider Muffler
 SetItemFilter(213297, ONE_HANDED_MACES);	-- Oscillating Blasthammer
 SetItemFilter(210741, TWO_HANDED_MACES);	-- Automatic Crowd Pummeler
@@ -31,17 +35,19 @@ SetItemFilter(213419, HELD_IN_OFF_HAND);	-- 9-60 Repair Manual
 SetItemFilter(213412, SHIELDS);	-- Dielectric Safety Shield
 
 -- BOWS
--- CROSSBOWS
+SetItemFilter(213355, CROSSBOWS);	-- Falco's Sting
 SetItemFilter(213293, GUNS);	-- Hi-tech Supergun Mk.VII
 SetItemFilter(213356, GUNS);	-- Thermaplugg's Custom Blaster
 SetItemFilter(213411, WANDS);	-- Izzleflick's Inextinguishable Igniter
 SetItemFilter(213559, WANDS);	-- Mechanostrider Gear Shifter
 
 SetItemFilter(213309, CLOAKS);	-- Cloak of Invention
+SetItemFilter(213307, CLOAKS);	-- Drape of Dismantling
 SetItemFilter(213306, CLOAKS);	-- Ingenuity's Cover
 SetItemFilter(213308, CLOAKS);	-- Prototype Parachute Cloak
 SetItemFilter(217005, CLOAKS);	-- Repairman's Cape
 
+SetItemFilter(213290, CLOTH);	-- Acidic Waders
 SetItemFilter(213281, CLOTH);	-- Electromagnetic Hyperflux Reactivator
 SetItemFilter(213300, CLOTH);	-- Fighter Ace Gloves
 SetItemFilter(213311, CLOTH);	-- Hyperconductive Robe
@@ -53,13 +59,16 @@ SetItemFilter(213336, CLOTH);	-- Hyperconductive Walkers
 SetItemFilter(215377, CLOTH);	-- Irradiated Robe
 SetItemFilter(215379, CLOTH);	-- Irradiated Trousers
 SetItemFilter(215378, CLOTH);	-- Irradiated Boots
+SetItemFilter(213285, CLOTH);	-- Lev's Oil-Stained Bindings
 SetItemFilter(213414, CLOTH);	-- Mech-Mender's Sash
 SetItemFilter(213298, CLOTH);	-- Mechbuilder's Overalls
 SetItemFilter(216675, CLOTH);	-- Pristine Civinad Robes
 SetItemFilter(216608, CLOTH);	-- Radiant Ray Reflectors
 SetItemFilter(216680, CLOTH);	-- Shilly Mittens
+SetItemFilter(213301, CLOTH);	-- Synthetic Mantle
 SetItemFilter(213415, CLOTH);	-- Tinker's Wrist Wraps
 SetItemFilter(213278, LEATHER);	-- Bonk-Maestro's Handguards
+SetItemFilter(213413, LEATHER);	-- Generously Padded Shoulderpads
 SetItemFilter(213340, LEATHER);	-- Gnomebot Operators Boots
 SetItemFilter(213312, LEATHER);	-- Insulated Apron
 SetItemFilter(213331, LEATHER);	-- Insulated Leggings
@@ -68,8 +77,10 @@ SetItemFilter(213313, LEATHER);	-- Insulated Chestguard
 SetItemFilter(213332, LEATHER);	-- Insulated Legguards
 SetItemFilter(213341, LEATHER);	-- Insulated Workboots
 SetItemFilter(213319, LEATHER);	-- Machinist's Gloves
+SetItemFilter(213302, LEATHER);	-- Mantle of the Cunning Negotiator
 SetItemFilter(216676, LEATHER);	-- Nimble Triprunner Dungarees
 SetItemFilter(213318, LEATHER);	-- Ornate Dark Iron Bangles
+SetItemFilter(213299, LEATHER);	-- Petrolspill Pants
 SetItemFilter(213325, MAIL);	-- Darkvision Girdle
 SetItemFilter(213314, MAIL);	-- Electromantic Chainmail
 SetItemFilter(213315, MAIL);	-- Electromantic Chainshirt
@@ -899,7 +910,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 20,
 				}),
 			}),
+			-- #if NOT SEASON_OF_DISCOVERY
 			MATRIX_PUNCHOGRAPH_A,
+			-- #endif
 			n(6231, {	-- Techbot
 				["description"] = "Located outside the instance near the teleporter.",
 				["timeline"] = { "removed 4.0.3" },
@@ -1594,9 +1607,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(220007, {	-- Viscous Fallout
-						--["description"] = "",
+						["description"] = "He will drop pools of toxic slime that both damages and slows those that stand on it. Making sure to move the boss out of these will make it a lot easier for healers.\n\nThe Viscous Fallout boss will also sometimes spawn in 3x Irradiated Goo, these will run towards the fallen Desiccated Fallout in the ground, make sure to kill them before they make it to the corpses or they will respawn the Desiccated Fallout which cause a lot more raid-wide damage if not interrupted. This can be made easier by initially moving the boss to further from the Desiccated Fallout corpses to give longer leeway for killing the Irradiated Goo.",
 						["groups"] = {
-							--i(),	-- 
+							i(213291),	-- Toxic Revenger II
+							i(213352),	-- Gear-Mender's Grace
+							i(213353),	-- Defibrillating Staff
+							i(213289),	-- Hydrostaff
+							i(213355),	-- Falco's Sting
+							i(213307),	-- Drape of Dismantling
+							i(213413),	-- Generously Padded Shoulderpads
+							i(213302),	-- Mantle of the Cunning Negotiator
+							i(213299),	-- Petrolspill Pants
+							i(213301),	-- Synthetic Mantle
+							i(213285),	-- Lev's Oil-Stained Bindings
+							i(213290),	-- Acidic Waders
 						},
 					}),
 					n(220072, {	-- Electrocutioner 6000
