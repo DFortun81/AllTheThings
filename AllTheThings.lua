@@ -10228,6 +10228,10 @@ function app:GetDataCache()
 			-- Followers
 			app.CreateDynamicHeader("followerID", SimpleNPCGroup(app.HeaderConstants.FOLLOWERS)),
 
+			-- Garrison Buildings
+			-- TODO: doesn't seem to work...
+			-- app.CreateDynamicHeader("garrisonBuildingID", SimpleNPCGroup(app.HeaderConstants.BUILDINGS)),
+
 			-- Illusions
 			app.CreateDynamicHeader("illusionID", {
 				name = L["FILTER_ID_TYPES"][103],

@@ -1,19 +1,27 @@
-do
 -- App locals
-local appName,app = ...;
+local _, app = ...;
 
 -- Check to see if Garrison APIs are available for Warlords
 local C_Garrison = C_Garrison;
-if C_Garrison then
-	local select, setmetatable = select, setmetatable;
-	local L = app.L;
+if not C_Garrison then
+	app.CreateGarrisonBuilding = app.CreateUnimplementedClass("GarrisonBuilding", "garrisonBuildingID");
+	app.CreateGarrisonMission = app.CreateUnimplementedClass("GarrisonMission", "missionID");
+	app.CreateGarrisonTalent = app.CreateUnimplementedClass("GarrisonTalent", "garrisonTalentID");
+	app.CreateFollower = app.CreateUnimplementedClass("Follower", "followerID");
+	return
+end
 
-	-- Buildings
-	local CurrentGarrisonBuildings = {};
+local select, setmetatable, pairs
+	= select, setmetatable, pairs
+local L = app.L;
+
+-- Buildings
+do
+	local KEY, CACHE = "garrisonBuildingID", "GarrisonBuildings"
 	local C_Garrison_GetBuildingInfo, GetItemInfo, GetItemInfoInstant
 		= C_Garrison.GetBuildingInfo, GetItemInfo, GetItemInfoInstant;
 	local GarrisonBuildingInfoMeta = { __index = function(t, key)
-		local _, name, _, icon, lore = C_Garrison_GetBuildingInfo(t.garrisonBuildingID);
+		local _, name, _, icon, lore = C_Garrison_GetBuildingInfo(t[KEY]);
 		if not name then return nil; end
 		t.name = name;
 		t.icon = icon;
@@ -22,13 +30,13 @@ if C_Garrison then
 		return t[key];
 	end };
 	local GarrisonBuildingInfoByID = setmetatable({}, { __index = function(t, id)
-		local info = setmetatable({ garrisonBuildingID = id }, GarrisonBuildingInfoMeta);
+		local info = setmetatable({ [KEY] = id }, GarrisonBuildingInfoMeta);
 		t[id] = info;
 		return info;
 	end });
-	app.CreateGarrisonBuilding = app.CreateClass("GarrisonBuilding", "garrisonBuildingID", {
+	app.CreateGarrisonBuilding = app.CreateClass("GarrisonBuilding", KEY, {
 		info = function(t)
-			return GarrisonBuildingInfoByID[t.garrisonBuildingID];
+			return GarrisonBuildingInfoByID[t[KEY]];
 		end,
 		name = function(t)
 			return t.info.name;
@@ -56,17 +64,43 @@ if C_Garrison then
 		f = function(t)
 			return app.FilterConstants.RECIPES;
 		end,
-		collectible = function(t)
-			return app.Settings.Collectibles.Recipes;
-		end,
+		-- we collect the "Recipes" to know how to build the buildings
+		collectible = function(t) return app.Settings.Collectibles.Recipes; end,
 		collected = function(t)
-			local id = t.garrisonBuildingID;
-			if CurrentGarrisonBuildings[id] then return 1; end
-			return app.SetCollected(t, "GarrisonBuildings", id, not select(11, C_Garrison_GetBuildingInfo(id)));
+			local id = t[KEY];
+			-- character collected
+			if app.IsCached(CACHE, id) then return 1; end
+			-- account-wide collected
+			if app.IsAccountTracked(CACHE, id) then return 2; end
 		end,
 	}, (function(t) return t.itemID; end));
 
-	-- Missions
+	app.AddEventHandler("OnRefreshCollections", function()
+		local state
+		local saved, none = {}, {}
+		for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+			-- [11] = needsPlan
+			state = not select(11, C_Garrison_GetBuildingInfo(id))
+			if state then
+				saved[id] = true
+			else
+				none[id] = true
+			end
+		end
+		-- Character Cache
+		app.SetBatchCached(CACHE, saved, 1)
+		app.SetBatchCached(CACHE, none)
+		-- Account Cache (removals handled by Sync)
+		app.SetBatchAccountCached(CACHE, saved, 1)
+	end);
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+end
+
+-- Missions
+do
 	local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
 	app.CreateGarrisonMission = app.CreateClass("GarrisonMission", "missionID", {
 		name = function(t)
@@ -76,8 +110,10 @@ if C_Garrison then
 			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
 		end,
 	});
+end
 
-	-- Talents
+-- Talents
+do
 	local C_Garrison_GetTalentInfo = C_Garrison.GetTalentInfo;
 	local GarrisonTalentInfoMeta = { __index = function(t, key)
 		local info = C_Garrison_GetTalentInfo(t.garrisonTalentID);
@@ -111,12 +147,14 @@ if C_Garrison then
 			return C_Garrison_GetTalentInfo(t.garrisonTalentID).researched;
 		end,
 	});
+end
 
-	-- Followers (Not Warlords exclusive, but the API originally was added with Warlords!)
-	local CurrentFollowers, AccountWideFollowers = {}, {};
+-- Followers (Not Warlords exclusive, but the API originally was added with Warlords!)
+do
+	local KEY, CACHE = "followerID", "Followers"
 	local C_Garrison_GetFollowerInfo, C_Garrison_GetFollowerLinkByID, C_Garrison_IsFollowerCollected
 		= C_Garrison.GetFollowerInfo, C_Garrison.GetFollowerLinkByID, C_Garrison.IsFollowerCollected;
-	local cache = app.CreateCache("followerID");
+	local cache = app.CreateCache(KEY);
 	local function CacheInfo(t, field)
 		local _t, id = cache.GetCached(t);
 		local info = C_Garrison_GetFollowerInfo(id);
@@ -130,113 +168,99 @@ if C_Garrison then
 		_t.link = C_Garrison_GetFollowerLinkByID(id);
 		if field then return _t[field]; end
 	end
-	app.CreateFollower = app.CreateClass("Follower", "followerID", {
-		["name"] = function(t)
+	app.CreateFollower = app.CreateClass("Follower", KEY, {
+		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
 		end,
-		["icon"] = function(t)
+		icon = function(t)
 			return cache.GetCachedField(t, "icon", CacheInfo);
 		end,
-		["lvl"] = function(t)
+		lvl = function(t)
 			return cache.GetCachedField(t, "lvl", CacheInfo);
 		end,
-		["title"] = function(t)
+		title = function(t)
 			return cache.GetCachedField(t, "title", CacheInfo);
 		end,
-		["displayID"] = function(t)
+		displayID = function(t)
 			-- return cache.GetCachedField(t, "displayID", CacheInfo);
 		end,
-		["link"] = function(t)
+		link = function(t)
 			return cache.GetCachedField(t, "link", CacheInfo);
 		end,
-		["description"] = function(t)
+		description = function(t)
 			return L.FOLLOWERS_COLLECTION_DESC;
 		end,
-		["collectible"] = function(t)
-			return app.Settings.Collectibles.Followers;
+		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
+		collected = function(t)
+			local id = t[KEY];
+			-- character collected
+			if app.IsCached(CACHE, id) then return 1; end
+			-- account-wide collected
+			if app.IsAccountTracked(CACHE, id) then return 2; end
 		end,
-		["trackable"] = app.ReturnTrue,
-		["collected"] = function(t)
-			if t.saved then return 1; end
-			if app.Settings.AccountWide.Followers and AccountWideFollowers[t.followerID] then return 2; end
+		trackable = app.ReturnTrue,
+		saved = function(t)
+			local id = t[KEY];
+			-- character collected
+			if app.IsCached(CACHE, id) then return 1; end
 		end,
-		["saved"] = function(t)
-			local followerID = t.followerID;
-			if CurrentFollowers[followerID] then return true; end
-			if C_Garrison_IsFollowerCollected(followerID) then
-				CurrentFollowers[followerID] = 1;
-				AccountWideFollowers[followerID] = 1;
-				return true;
+
+		app.AddEventHandler("OnRefreshCollections", function()
+			local state
+			local saved = {}
+			for id,_ in pairs(app.SearchForFieldContainer(KEY)) do
+				-- this returns false when wrong SL covenant, so we can't clear followers once cached for a character
+				state = C_Garrison_IsFollowerCollected(id)
+				if state then
+					saved[id] = true
+				end
 			end
-		end,
+			-- Character Cache
+			app.SetBatchCached(CACHE, saved, 1)
+			-- Account Cache (removals handled by Sync)
+			app.SetBatchAccountCached(CACHE, saved, 1)
+		end);
+		app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+			if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+			if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+		end);
 	});
-
-	-- Subroutines
-	local function common_wod_dungeon_drop(ResolveFunctions)
-		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
-		return function(finalized, searchResults, o, cmd, difficultyID, headerID)
-			select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
-			pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
-			where(finalized, searchResults, o, "where", "difficultyID", difficultyID);	-- Normal/Heroic/Mythic/Timewalking
-			pop(finalized, searchResults);	-- Discard the Diffculty Header and acquire all of their children.
-			where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-		end
-	end
-	local function common_wod_dungeon_drop_tw(ResolveFunctions)
-		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
-		return function(finalized, searchResults, o, cmd, difficultyID, headerID)
-			select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
-			where(finalized, searchResults, o, "where", "e", 1271);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
-			pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
-			where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-		end
-	end
-
-	-- Event Handling
-	app.AddEventHandler("OnLoad", function()
-		app.RegisterSymlinkSubroutine("common_wod_dungeon_drop", common_wod_dungeon_drop);
-		app.RegisterSymlinkSubroutine("common_wod_dungeon_drop_tw", common_wod_dungeon_drop_tw);
-	end);
-	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-		-- Convert deprecated saved variable containers into the new structure
-		if currentCharacter.Buildings then
-			currentCharacter.GarrisonBuildings = currentCharacter.Buildings;
-			currentCharacter.Buildings = nil;
-		end
-		if accountWideData.Buildings then
-			accountWideData.GarrisonBuildings = accountWideData.Buildings;
-			accountWideData.Buildings = nil;
-		end
-
-		-- Cache the current character's garrison buildings
-		local characterData = currentCharacter.GarrisonBuildings;
-		if characterData then
-			CurrentGarrisonBuildings = characterData;
-		else
-			currentCharacter.GarrisonBuildings = CurrentGarrisonBuildings;
-		end
-		if not accountWideData.GarrisonBuildings then
-			accountWideData.GarrisonBuildings = {};
-		end
-
-		-- Follower API might have originated with Warlords, but they use this for BFA+ as well.
-		local characterData = currentCharacter.Followers;
-		if characterData then
-			CurrentFollowers = characterData;
-		else
-			currentCharacter.Followers = CurrentFollowers;
-		end
-		local accountWideFollowers = accountWideData.Followers;
-		if accountWideFollowers then
-			AccountWideFollowers = accountWideFollowers;
-		else
-			accountWideData.Followers = AccountWideFollowers;
-		end
-	end);
-else
-	app.CreateGarrisonBuilding = app.CreateUnimplementedClass("GarrisonBuilding", "garrisonBuildingID");
-	app.CreateGarrisonMission = app.CreateUnimplementedClass("GarrisonMission", "missionID");
-	app.CreateGarrisonTalent = app.CreateUnimplementedClass("GarrisonTalent", "garrisonTalentID");
-	app.CreateFollower = app.CreateUnimplementedClass("Follower", "followerID");
 end
+
+-- Subroutines
+local function common_wod_dungeon_drop(ResolveFunctions)
+	local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+	return function(finalized, searchResults, o, cmd, difficultyID, headerID)
+		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
+		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
+		where(finalized, searchResults, o, "where", "difficultyID", difficultyID);	-- Normal/Heroic/Mythic/Timewalking
+		pop(finalized, searchResults);	-- Discard the Diffculty Header and acquire all of their children.
+		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+	end
 end
+local function common_wod_dungeon_drop_tw(ResolveFunctions)
+	local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+	return function(finalized, searchResults, o, cmd, difficultyID, headerID)
+		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
+		where(finalized, searchResults, o, "where", "e", 1271);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
+		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
+		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+	end
+end
+
+-- Event Handling
+app.AddEventHandler("OnLoad", function()
+	app.RegisterSymlinkSubroutine("common_wod_dungeon_drop", common_wod_dungeon_drop);
+	app.RegisterSymlinkSubroutine("common_wod_dungeon_drop_tw", common_wod_dungeon_drop_tw);
+end);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	-- Convert deprecated saved variable containers into the new structure
+	if currentCharacter.Buildings then
+		currentCharacter.GarrisonBuildings = currentCharacter.Buildings;
+		currentCharacter.Buildings = nil;
+	end
+	if accountWideData.Buildings then
+		accountWideData.GarrisonBuildings = accountWideData.Buildings;
+		accountWideData.Buildings = nil;
+	end
+end);
