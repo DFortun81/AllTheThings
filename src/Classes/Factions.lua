@@ -20,9 +20,9 @@ local Colorize = app.Modules.Color.Colorize;
 local ColorizeRGB = app.Modules.Color.ColorizeRGB;
 
 -- Blizz locals
-local GetFriendshipReputation, GetFriendshipReputationRanks, GetFactionInfoByID, GetAchievementInfo, GetAchievementLink,
+local GetFriendshipReputation, GetFriendshipReputationRanks, GetFactionInfoByID,
 	GetRenownLevels, GetMajorFactionData =
-	  GetFriendshipReputation, GetFriendshipReputationRanks, GetFactionInfoByID, GetAchievementInfo, GetAchievementLink,
+	  GetFriendshipReputation, GetFriendshipReputationRanks, GetFactionInfoByID,
 	C_MajorFactions.GetRenownLevels, C_MajorFactions.GetMajorFactionData
 
 -- Faction API Implementation
@@ -253,20 +253,9 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["icon"] = function(t)
-		local icon = t.achievementID and select(10, GetAchievementInfo(t.achievementID))
-			or t.isFriend and GetFriendshipReputation(t.factionID, "texture");
+		local icon = t.isFriend and GetFriendshipReputation(t.factionID, "texture");
 		return icon ~= 0 and icon ~= "" and icon
 			or app.asset("Category_Factions");
-	end,
-	["link"] = function(t)
-		return t.achievementID and GetAchievementLink(t.achievementID);
-	end,
-	["achievementID"] = function(t)
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		if achievementID then
-			t.achievementID = achievementID;
-			return achievementID;
-		end
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collectible"] = function(t)
@@ -282,11 +271,6 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 	["collected"] = function(t)
 		if t.saved then return 1; end
 		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
-
-		-- If there's an associated achievement, return partial completion.
-		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
-			return 2;
-		end
 	end,
 	["saved"] = function(t)
 		local factionID = t.factionID;
