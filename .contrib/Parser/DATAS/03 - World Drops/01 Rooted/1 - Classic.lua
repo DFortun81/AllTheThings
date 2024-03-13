@@ -2020,7 +2020,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(1715),	-- Polished Jazeraint Armor
 		i(14794),	-- Protector Ankleguards
 		i(14788),	-- Protector Armguards
-		i(14789),	-- Protector Breastplate
+		i(14789, {	-- Protector Breastplate
+			-- #if AFTER 9.2.0
+			["description"] = "Is currently bugged and cannot be sold to vendor.",
+			-- #endif
+		}),
 		i(14792),	-- Protector Gauntlets
 		i(14795),	-- Protector Helm
 		i(14796),	-- Protector Legguards
