@@ -15973,6 +15973,11 @@ app.InitDataCoroutine = function()
 					if copyTable then
 						-- app.PrintDebug("Copying Dupe",tableName)
 						local currentTable = currentCharacter[tableName];
+						if not currentTable then
+							-- old/restored character missing copied data
+							currentTable = {}
+							currentCharacter[tableName] = currentTable
+						end
 						for ID,complete in pairs(copyTable) do
 							-- app.PrintDebug("Check",ID,complete,"?",currentTable[ID])
 							if complete and not currentTable[ID] then
