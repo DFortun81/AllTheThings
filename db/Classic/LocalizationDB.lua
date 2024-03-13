@@ -1336,6 +1336,11 @@ _.ObjectNames = {
 	[414663] = "Shatterspear Idol",
 	[414713] = "Storage Locker",
 	[415614] = "Mysterious Formulae",
+	[422483] = "The Salvagematic 9000",
+	[424074] = "Quadrangulation Beacon 001",
+	[424075] = "Quadrangulation Beacon 002",
+	[424076] = "Quadrangulation Beacon 003",
+	[424077] = "Quadrangulation Beacon 004",
 	[100000000] = "Archaeologist's Cart",
 	[100000001] = "Unlit Torch",
 }
@@ -2806,6 +2811,9 @@ localize(_.ObjectNames, {
 	[414646] = "Überreste",
 	[414658] = "Geröll",
 	[414663] = "Götze der Shatterspear",
+	[422483] = "Der Wiederverwertungsmat 9000",
+	[424074] = "Quadrangulationssignalgeber 001",
+	[424075] = "Quadrangulationssignalgeber 002",
 	[100000001] = "Nicht angezündete Fackel",
 });
 end
@@ -3368,6 +3376,8 @@ localize(_.ObjectNames, {
 	[414624] = "Alijo del faro",
 	[414646] = "Resto",
 	[415614] = "Fórmulas misteriosas",
+	[424074] = "Baliza de cuadrangulación 001",
+	[424075] = "Baliza de cuadrangulación 002",
 	[100000001] = "Antorcha apagada",
 });
 end
@@ -3974,6 +3984,9 @@ localize(_.ObjectNames, {
 	[414646] = "Vestige",
 	[414663] = "Idole Briselance",
 	[415614] = "Formules mystérieuses",
+	[422483] = "Recycle-o-Matic 9000",
+	[424074] = "Balise de quandrangulation 001",
+	[424075] = "Balise de quandrangulation 002",
 	[100000001] = "Torche éteinte",
 });
 end
@@ -4880,6 +4893,10 @@ localize(_.ObjectNames, {
 	[412224] = "암흑 의식용 돌",
 	[414532] = "폭포수 보관함",
 	[414624] = "등대 은닉함",
+	[422483] = "자동 수습기 9000",
+	[424074] = "사각 측량 신호기 001",
+	[424075] = "사각 측량 신호기 002",
+	[424077] = "사각 측량 신호기 004",
 	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
@@ -5384,6 +5401,7 @@ localize(_.ObjectNames, {
 	[406006] = "Ídolo",
 	[406736] = "Estoque Perdido",
 	[408014] = "Tomo Gnômico",
+	[424074] = "Sinalizador de Quadrangulação 001",
 	[100000001] = "Tocha Apagada",
 });
 end
@@ -5993,6 +6011,7 @@ localize(_.ObjectNames, {
 	[414624] = "Тайник в маяке",
 	[414663] = "Идол Пронзающего Копья",
 	[415614] = "Таинственные формулы",
+	[424075] = "Квадрангуляционный маяк 002",
 	[100000001] = "Незажженный факел",
 });
 end
@@ -6520,6 +6539,10 @@ localize(_.ObjectNames, {
 	[409692] = "卷轴",
 	[410369] = "秘密投放点",
 	[414624] = "灯塔藏匿物",
+	[424074] = "四边定位信标001",
+	[424075] = "四边定位信标002",
+	[424076] = "四边定位信标003",
+	[424077] = "四边定位信标004",
 	[100000001] = "未点燃的火把",
 });
 end

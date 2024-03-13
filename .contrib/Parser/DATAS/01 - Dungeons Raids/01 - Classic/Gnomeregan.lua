@@ -32,7 +32,9 @@ SetItemFilter(213286, ONE_HANDED_SWORDS);	-- Electrocutioner's Needle
 SetItemFilter(213292, TWO_HANDED_SWORDS);	-- Gizmotron Gigachopper
 
 SetItemFilter(213419, HELD_IN_OFF_HAND);	-- 9-60 Repair Manual
+SetItemFilter(213542, HELD_IN_OFF_HAND);	-- The Necro-Gnomicon
 SetItemFilter(213412, SHIELDS);	-- Dielectric Safety Shield
+SetItemFilter(213351, SHIELDS);	-- Irradiated Tower Shield
 
 -- BOWS
 SetItemFilter(213355, CROSSBOWS);	-- Falco's Sting
@@ -67,7 +69,9 @@ SetItemFilter(216608, CLOTH);	-- Radiant Ray Reflectors
 SetItemFilter(216680, CLOTH);	-- Shilly Mittens
 SetItemFilter(213301, CLOTH);	-- Synthetic Mantle
 SetItemFilter(213415, CLOTH);	-- Tinker's Wrist Wraps
+SetItemFilter(213321, CLOTH);	-- Volatile Concoction Belt
 SetItemFilter(213278, LEATHER);	-- Bonk-Maestro's Handguards
+SetItemFilter(213323, LEATHER);	-- Cord of Deep Earth
 SetItemFilter(213413, LEATHER);	-- Generously Padded Shoulderpads
 SetItemFilter(213340, LEATHER);	-- Gnomebot Operators Boots
 SetItemFilter(213312, LEATHER);	-- Insulated Apron
@@ -81,6 +85,7 @@ SetItemFilter(213302, LEATHER);	-- Mantle of the Cunning Negotiator
 SetItemFilter(216676, LEATHER);	-- Nimble Triprunner Dungarees
 SetItemFilter(213318, LEATHER);	-- Ornate Dark Iron Bangles
 SetItemFilter(213299, LEATHER);	-- Petrolspill Pants
+SetItemFilter(213322, LEATHER);	-- Skullduggery Waistband
 SetItemFilter(213325, MAIL);	-- Darkvision Girdle
 SetItemFilter(213314, MAIL);	-- Electromantic Chainmail
 SetItemFilter(213315, MAIL);	-- Electromantic Chainshirt
@@ -88,6 +93,7 @@ SetItemFilter(213333, MAIL);	-- Electromantic Chausses
 SetItemFilter(213334, MAIL);	-- Electromantic Gambeson
 SetItemFilter(213338, MAIL);	-- Electromantic Grounding Boots
 SetItemFilter(213339, MAIL);	-- Electromantic Grounding Sabatons
+SetItemFilter(213324, MAIL);	-- Electromagnetic Waistcord
 SetItemFilter(213317, MAIL);	-- Experimental Aim Stabilizers
 SetItemFilter(213320, MAIL);	-- Fingers of Arcane Accuracy
 SetItemFilter(213303, MAIL);	-- Lightning Rod Spaulders
@@ -95,6 +101,11 @@ SetItemFilter(213280, MAIL);	-- Marksman's Scopevisor
 SetItemFilter(215380, MAIL);	-- Power-Assisted Lifting Belt
 SetItemFilter(213279, MAIL);	-- Reflective Skullcap
 SetItemFilter(216678, MAIL);	-- Triple Reinforced Leggings
+SetItemFilter(213304, MAIL);	-- Troggslayer Pauldrons
+SetItemFilter(213327, PLATE);	-- Belt of the Trogg Berserker
+SetItemFilter(213294, PLATE);	-- Caverndeep Sabatons
+SetItemFilter(213326, PLATE);	-- Girdle of Reclamation
+SetItemFilter(213288, PLATE);	-- Grubbis Grubby Gauntlets
 SetItemFilter(213316, PLATE);	-- H.A.Z.A.R.D. Breastplate
 SetItemFilter(213330, PLATE);	-- H.A.Z.A.R.D. Legplates
 SetItemFilter(213335, PLATE);	-- H.A.Z.A.R.D. Boots
@@ -123,9 +134,11 @@ SetItemFilter(215461, TRINKET_F);	-- Domesticated Attack Chicken
 SetItemFilter(213349, TRINKET_F);	-- Gniodine Pill Bottle
 SetItemFilter(213348, TRINKET_F);	-- Gyromatic Experiment 420b
 SetItemFilter(213347, TRINKET_F);	-- Miniaturized Combustion Chamber
+SetItemFilter(215437, TRINKET_F);	-- Trogg Transfigurator 3000
 SetItemFilter(213350, TRINKET_F);	-- Wirdal's Hardened Core
--- LIBRAMS
--- TOTEMS
+SetItemFilter(216490, IDOLS);	-- Idol of Wrath
+SetItemFilter(215435, LIBRAMS);	-- Libram of Benediction
+SetItemFilter(215436, TOTEMS);	-- Totem of Invigorating Flame
 -- BAGS
 
 local SOD_DISABLE_NORMAL_MODE = [[function(t)
@@ -1601,9 +1614,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(217280, {	-- Grubbis
-						--["description"] = "",
+						["description"] = "The Grubbis fight starts with a short gauntlet style fight, a mix of Troggs will spawn in small waves followed by Poison Clouds, you should kite the the Troggs into the Poison Clouds. This causes the Poison Clouds to explode and kill the Troggs and then despawn.\n\nAfter a few waves, Grubbis spawns alongside his basilisk pet - Chomper, because of his pet this fight easier to manage with two tanks, but not required with disciplined damage dealers who focus Grubbis himself - this makes threat more manageable. Additionally, everyone with an interrupt must be paying close attention to Chomper's casts, to kick the Petrify cast - otherwise the only tank will lose threat of both bosses.\n\nOnce he spawns, the waves of Troggs and Poison Clouds continue to spawn, these can be managed through the same means as during the gauntlet by kiting the mobs into the clouds. It is possible to ignore the clouds for uptime and cleave or ignore the adds while focusing the boss but it is not recommended for the average raid.",
 						["groups"] = {
-							--i(),	-- 
+							i(213542),	-- The Necro-Gnomicon
+							i(213351),	-- Irradiated Tower Shield
+							i(213327),	-- Belt of the Trogg Berserker
+							i(213294),	-- Caverndeep Sabatons
+							i(213326),	-- Girdle of Reclamation
+							i(213288),	-- Grubbis Grubby Gauntlets
+							i(213324),	-- Electromagnetic Waistcord
+							i(213304),	-- Troggslayer Pauldrons
+							i(213323),	-- Cord of Deep Earth
+							i(213322),	-- Skullduggery Waistband
+							i(213321),	-- Volatile Concoction Belt
+							i(215437),	-- Trogg Transfigurator 3000
+							i(216490),	-- Idol of Wrath
+							i(215435),	-- Libram of Benediction
+							i(215436),	-- Totem of Invigorating Flame
 						},
 					}),
 					n(220007, {	-- Viscous Fallout
