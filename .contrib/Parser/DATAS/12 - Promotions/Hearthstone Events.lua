@@ -242,7 +242,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79424),	-- Stolen Hearthstone Card will contain 'Abomination' card
 		--q(79426),	-- Stolen Hearthstone Card will contain 'TODO' card
 		q(79427),	-- Stolen Hearthstone Card will contain 'Hogger' card
-		--q(79429),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79429),	-- Stolen Hearthstone Card will contain 'Blessing of Kings' card
 		q(79430),	-- Stolen Hearthstone Card will contain 'Forbidden Words' card
 		q(79431),	-- Stolen Hearthstone Card will contain 'Scarlet Crusader' card
 		q(79459),	-- Stolen Hearthstone Card will contain 'Cairne Bloodhoof' card
