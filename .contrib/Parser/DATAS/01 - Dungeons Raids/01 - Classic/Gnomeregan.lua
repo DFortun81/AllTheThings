@@ -1201,6 +1201,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["isBreadcrumb"] = true,
 							["lvl"] = 40,
 						}),
+						q(80160, {	-- More Sparklematic Action
+							["provider"] = { "o", 175084 },	-- The Sparklematic 5200
+							["sourceQuest"] = 80153,	-- The Sparklematic 5200!
+							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+							["repeatable"] = true,
+							["groups"] = {
+								i(9363),	-- Sparklematic-Wrapped Box
+							},
+						}),
+						q(80155, {	-- More Sparklematic Action
+							["provider"] = { "o", 142487 },	-- The Sparklematic 5200
+							["sourceQuest"] = 80158,	-- The Sparklematic 5200!
+							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+							["repeatable"] = true,
+							["groups"] = {
+								i(9363),	-- Sparklematic-Wrapped Box
+							},
+						}),
 						q(80141, {	-- Nogg's Ring Redo
 							["qg"] = 3412,	-- Nogg <Expert Engineer>
 							["sourceQuest"] = 80140,	-- Return of the Ring [Horde]
@@ -1408,6 +1426,40 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									i(213371),	-- Crate of Tainted Gniodine Solution
 									i(213373),	-- Reflective Scrapmetal
 								}),
+							},
+						}),
+						q(80161, {	-- The Sparklematic 5200!
+							["provider"] = { "o", 175084 },	-- The Sparklematic 5200
+							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+							["lvl"] = 40,
+							["groups"] = {
+								i(9363),	-- Sparklematic-Wrapped Box
+							},
+						}),
+						q(80153, {	-- The Sparklematic 5200!
+							["provider"] = { "o", 175084 },	-- The Sparklematic 5200
+							["sourceQuest"] = 80161,	-- The Sparklematic 5200!
+							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+							["lvl"] = 40,
+							["groups"] = {
+								i(9363),	-- Sparklematic-Wrapped Box
+							},
+						}),
+						q(80157, {	-- The Sparklematic 5200!
+							["provider"] = { "o", 142487 },	-- The Sparklematic 5200
+							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+							["lvl"] = 40,
+							["groups"] = {
+								i(9363),	-- Sparklematic-Wrapped Box
+							},
+						}),
+						q(80158, {	-- The Sparklematic 5200!
+							["provider"] = { "o", 142487 },	-- The Sparklematic 5200
+							["sourceQuest"] = 80157,	-- The Sparklematic 5200!
+							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+							["lvl"] = 40,
+							["groups"] = {
+								i(9363),	-- Sparklematic-Wrapped Box
 							},
 						}),
 						q(80138, {	-- Tinkmaster Overspark
