@@ -2171,9 +2171,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				i(8499, {	-- Crimson Whelpling (PET!)
+				i(8499, {	-- Tiny Crimson Whelpling (item) / Crimson Whelpling (PET!) 
 					-- #if AFTER CATA
-					["description"] = "The best spot to farm this pet is exactly at 67.3, 47.2. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",
+					["description"] = "Teaches you how to summon the pet Crimson Whelpling.\n\nThe best spot to farm this pet is exactly at 67.3, 47.2. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",
 					["crs"] = {
 						41425,	-- Bluegill Murloc
 						4040,	-- Cave Stalker

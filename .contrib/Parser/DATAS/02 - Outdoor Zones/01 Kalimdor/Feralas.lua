@@ -2996,7 +2996,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER 3.1.0
 				i(11474, {	-- Sprite Darter Egg (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
-					-- #if AFTER CATA
+					-- #if BEFORE 4.0.3
+					["description"] = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
+					["sourceQuest"] = 4298,	-- Becoming a Parent
+					["cr"] = 5278,	-- Sprite Darter
+					-- #else
+					["description"] = "Teaches you how to summon the pet Sprite Darter Hatchling.",
 					["crs"] = {
 						5300,	-- Frayfeather Hippogryph
 						5304,	-- Frayfeather Stagwing
@@ -3007,10 +3012,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5249,	-- Woodpaw Mogrel
 						5246,	-- Zukk'ash Worker
 					},
-					-- #else
-					["description"] = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
-					["sourceQuest"] = 4298,	-- Becoming a Parent
-					["cr"] = 5278,	-- Sprite Darter
 					-- #endif
 				}),
 				-- #endif
