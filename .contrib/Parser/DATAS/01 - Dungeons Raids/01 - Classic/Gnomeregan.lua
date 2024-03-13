@@ -11,20 +11,23 @@ local SetItemFilter = function(itemID, f)
 	return item;
 end
 SetItemFilter(213410, DAGGERS);	-- Glimmering Gizmoblade
+SetItemFilter(213442, FIST_WEAPONS);	-- Cogmaster's Claw
 SetItemFilter(213409, FIST_WEAPONS);	-- Mekkatorque's Arcano-Shredder
--- POLEARMS
+SetItemFilter(213408, POLEARMS);	-- Gyromatic Macro-Adjustor
 -- STAVES
 -- ONE_HANDED_AXES
 SetItemFilter(216679, ONE_HANDED_AXES);	-- Shoni's Dismantling Tool
+SetItemFilter(213295, ONE_HANDED_AXES);	-- Ultrasonic Vibroblade
 SetItemFilter(213296, TWO_HANDED_AXES);	-- Supercharged Headchopper
 SetItemFilter(213416, TWO_HANDED_AXES);	-- Thermaplugg's Rocket Cleaver
 SetItemFilter(213297, ONE_HANDED_MACES);	-- Oscillating Blasthammer
+SetItemFilter(210741, TWO_HANDED_MACES);	-- Automatic Crowd Pummeler
 SetItemFilter(217006, TWO_HANDED_MACES);	-- Mechanic's Pipehammer
 -- ONE_HANDED_SWORDS
--- TWO_HANDED_SWORDS
+SetItemFilter(213292, TWO_HANDED_SWORDS);	-- Gizmotron Gigachopper
 
--- HELD_IN_OFF_HAND
--- SHIELDS
+SetItemFilter(213419, HELD_IN_OFF_HAND);	-- 9-60 Repair Manual
+SetItemFilter(213412, SHIELDS);	-- Dielectric Safety Shield
 
 -- BOWS
 -- CROSSBOWS
@@ -48,6 +51,9 @@ SetItemFilter(215378, CLOTH);	-- Irradiated Boots
 SetItemFilter(216675, CLOTH);	-- Pristine Civinad Robes
 SetItemFilter(216608, CLOTH);	-- Radiant Ray Reflectors
 SetItemFilter(216680, CLOTH);	-- Shilly Mittens
+SetItemFilter(213415, CLOTH);	-- Tinker's Wrist Wraps
+SetItemFilter(213278, LEATHER);	-- Bonk-Maestro's Handguards
+SetItemFilter(213340, LEATHER);	-- Gnomebot Operators Boots
 SetItemFilter(213312, LEATHER);	-- Insulated Apron
 SetItemFilter(213331, LEATHER);	-- Insulated Leggings
 SetItemFilter(213342, LEATHER);	-- Insulated Galoshes
@@ -63,6 +69,7 @@ SetItemFilter(213333, MAIL);	-- Electromantic Chausses
 SetItemFilter(213334, MAIL);	-- Electromantic Gambeson
 SetItemFilter(213338, MAIL);	-- Electromantic Grounding Boots
 SetItemFilter(213339, MAIL);	-- Electromantic Grounding Sabatons
+SetItemFilter(213317, MAIL);	-- Experimental Aim Stabilizers
 SetItemFilter(213320, MAIL);	-- Fingers of Arcane Accuracy
 SetItemFilter(213303, MAIL);	-- Lightning Rod Spaulders
 SetItemFilter(213280, MAIL);	-- Marksman's Scopevisor
@@ -71,6 +78,7 @@ SetItemFilter(216678, MAIL);	-- Triple Reinforced Leggings
 SetItemFilter(213316, PLATE);	-- H.A.Z.A.R.D. Breastplate
 SetItemFilter(213330, PLATE);	-- H.A.Z.A.R.D. Legplates
 SetItemFilter(213335, PLATE);	-- H.A.Z.A.R.D. Boots
+SetItemFilter(213305, PLATE);	-- Machined Alloy Shoulderplates
 SetItemFilter(216485, PLATE);	-- Shockforged Breastplate
 SetItemFilter(216486, PLATE);	-- Shockforged Legplates
 SetItemFilter(216484, PLATE);	-- Shockforged Battleboots
@@ -1457,7 +1465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["provider"] = { "i", 216636 },	-- Charged Voidcore
 									["cost"] = {
 										{ "i", 216635, 1 },	-- Spent Voidcore
-										{ "i", 216645, i },	-- Mote of Darkness
+										{ "i", 216645, 1 },	-- Mote of Darkness
 									},
 								}),
 								i(213735),	-- Pristine G-7 C.O.R.E. Processor
@@ -1511,9 +1519,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(215728, {	-- Crowd Pummeler 9-60
-						--["description"] = "",
+						["description"] = "This fight only requires one tank and should just be tanked normally, the tank should be careful to not get knocked back in order to help with melee dps uptime.\n\nThe boss will initially throw out two gears onto the floor using Gear Toss, which you must dodge as they run linearly through the boss area, they're pretty slow so just position with them in mind since they can knock the players off the platforms and kill them.\n\nOccasionally, the boss will shoot out a frontal Gnomeregan Smash which targets a player and shoots a large projectile that will knock back and kill mainly via fall damage, this can easily be dodged by looking at the boss's feet to see where he's facing since the upper half of the body can be facing elsewhere.\n\nTowards the end of the fight (30%) the boss will also be able to cast The Claw! which will target a random player and dash to grab them and do significant damage - this is telegraphed quite well so healers should pay attention to it and keep that player alive through the initial damage and follow up.",
 						["groups"] = {
-							--i(),	-- 
+							i(213442),	-- Cogmaster's Claw
+							i(213295),	-- Ultrasonic Vibroblade
+							i(210741),	-- Automatic Crowd Pummeler
+							i(213292),	-- Gizmotron Gigachopper
+							i(213408),	-- Gyromatic Macro-Adjustor
+							i(213419),	-- 9-60 Repair Manual
+							i(213412),	-- Dielectric Safety Shield
+							i(213305),	-- Machined Alloy Shoulderplates
+							i(213317),	-- Experimental Aim Stabilizers
+							i(213278),	-- Bonk-Maestro's Handguards
+							i(213340),	-- Gnomebot Operators Boots
+							i(213415),	-- Tinker's Wrist Wraps
+							i(215449),	-- World Shrinker
 						},
 					}),
 					n(218242, {	-- Mechanical Menagerie (STX-04/BD)

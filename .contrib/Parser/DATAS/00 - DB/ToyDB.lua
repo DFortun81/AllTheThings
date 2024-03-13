@@ -34,6 +34,9 @@ i(17716);	-- Snowmaster 9000
 i(18986);	-- Ultrasafe Transporter: Gadgetzan
 i(17712);	-- Winter Veil Disguise Kit
 i(18660);	-- World Enlarger
+-- #if SEASON_OF_DISCOVERY
+i(215449);	-- World Shrinker
+-- #endif
 
 -----------------
 -- PATCH 2.0.1 --
