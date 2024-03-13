@@ -2758,9 +2758,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(3331, {	-- Melrache's Cape
-					-- #if BEFORE CATA
-					["description"] = "The NPC dropping this is friendly to the alliance.",
-					-- #endif
+					-- This item was given an description about how the NPC it drops from is friendly to the Alliance in pre-cata iterations of the game.
+					-- That information is incorrect unless someone can point to a specific patch where it would have merit. //Danny Donkey
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
 					["cr"] = 1665,	-- Captain Melrache
