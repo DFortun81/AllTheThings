@@ -5218,11 +5218,9 @@ end)();
 
 -- Unsupported Libs
 (function()
-app.CreateConduit = app.CreateUnimplementedClass("Conduit", "conduitID");
 app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", "questID");
 app.CreateMusicRoll = app.CreateUnimplementedClass("MusicRoll", "questID");
 app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
-app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgePowerID");
 app.CreateSelfieFilter = app.CreateUnimplementedClass("SelfieFilter", "questID");
 end)();
 
