@@ -244,7 +244,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		-- Loot
 		q(79407),	-- Stolen Hearthstone Card will contain 'Arcane Explosion' card
 		q(79408),	-- Stolen Hearthstone Card will contain 'Pyroblast' card
-		--q(79410),	-- Stolen Hearthstone Card will contain 'TODO' card
+		q(79410),	-- Stolen Hearthstone Card will contain 'Preparation' card
 		q(79417),	-- Stolen Hearthstone Card will contain 'Righteousness' card
 		q(79421),	-- Stolen Hearthstone Card will contain 'Chillwind Yeti' card
 		q(79423),	-- Stolen Hearthstone Card will contain 'Grove Tender' card
