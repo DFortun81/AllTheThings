@@ -14,16 +14,17 @@ SetItemFilter(213410, DAGGERS);	-- Glimmering Gizmoblade
 SetItemFilter(213442, FIST_WEAPONS);	-- Cogmaster's Claw
 SetItemFilter(213409, FIST_WEAPONS);	-- Mekkatorque's Arcano-Shredder
 SetItemFilter(213408, POLEARMS);	-- Gyromatic Macro-Adjustor
--- STAVES
--- ONE_HANDED_AXES
+SetItemFilter(213354, STAVES);	-- Staff of the Evil Genius
+
 SetItemFilter(216679, ONE_HANDED_AXES);	-- Shoni's Dismantling Tool
 SetItemFilter(213295, ONE_HANDED_AXES);	-- Ultrasonic Vibroblade
 SetItemFilter(213296, TWO_HANDED_AXES);	-- Supercharged Headchopper
 SetItemFilter(213416, TWO_HANDED_AXES);	-- Thermaplugg's Rocket Cleaver
+SetItemFilter(213560, ONE_HANDED_MACES);	-- Mechanostrider Muffler
 SetItemFilter(213297, ONE_HANDED_MACES);	-- Oscillating Blasthammer
 SetItemFilter(210741, TWO_HANDED_MACES);	-- Automatic Crowd Pummeler
 SetItemFilter(217006, TWO_HANDED_MACES);	-- Mechanic's Pipehammer
--- ONE_HANDED_SWORDS
+SetItemFilter(213286, ONE_HANDED_SWORDS);	-- Electrocutioner's Needle
 SetItemFilter(213292, TWO_HANDED_SWORDS);	-- Gizmotron Gigachopper
 
 SetItemFilter(213419, HELD_IN_OFF_HAND);	-- 9-60 Repair Manual
@@ -31,14 +32,18 @@ SetItemFilter(213412, SHIELDS);	-- Dielectric Safety Shield
 
 -- BOWS
 -- CROSSBOWS
+SetItemFilter(213293, GUNS);	-- Hi-tech Supergun Mk.VII
 SetItemFilter(213356, GUNS);	-- Thermaplugg's Custom Blaster
 SetItemFilter(213411, WANDS);	-- Izzleflick's Inextinguishable Igniter
+SetItemFilter(213559, WANDS);	-- Mechanostrider Gear Shifter
 
+SetItemFilter(213309, CLOAKS);	-- Cloak of Invention
 SetItemFilter(213306, CLOAKS);	-- Ingenuity's Cover
 SetItemFilter(213308, CLOAKS);	-- Prototype Parachute Cloak
 SetItemFilter(217005, CLOAKS);	-- Repairman's Cape
 
 SetItemFilter(213281, CLOTH);	-- Electromagnetic Hyperflux Reactivator
+SetItemFilter(213300, CLOTH);	-- Fighter Ace Gloves
 SetItemFilter(213311, CLOTH);	-- Hyperconductive Robe
 SetItemFilter(213328, CLOTH);	-- Hyperconductive Pantaloons
 SetItemFilter(213337, CLOTH);	-- Hyperconductive Sandals
@@ -48,6 +53,8 @@ SetItemFilter(213336, CLOTH);	-- Hyperconductive Walkers
 SetItemFilter(215377, CLOTH);	-- Irradiated Robe
 SetItemFilter(215379, CLOTH);	-- Irradiated Trousers
 SetItemFilter(215378, CLOTH);	-- Irradiated Boots
+SetItemFilter(213414, CLOTH);	-- Mech-Mender's Sash
+SetItemFilter(213298, CLOTH);	-- Mechbuilder's Overalls
 SetItemFilter(216675, CLOTH);	-- Pristine Civinad Robes
 SetItemFilter(216608, CLOTH);	-- Radiant Ray Reflectors
 SetItemFilter(216680, CLOTH);	-- Shilly Mittens
@@ -60,6 +67,7 @@ SetItemFilter(213342, LEATHER);	-- Insulated Galoshes
 SetItemFilter(213313, LEATHER);	-- Insulated Chestguard
 SetItemFilter(213332, LEATHER);	-- Insulated Legguards
 SetItemFilter(213341, LEATHER);	-- Insulated Workboots
+SetItemFilter(213319, LEATHER);	-- Machinist's Gloves
 SetItemFilter(216676, LEATHER);	-- Nimble Triprunner Dungarees
 SetItemFilter(213318, LEATHER);	-- Ornate Dark Iron Bangles
 SetItemFilter(213325, MAIL);	-- Darkvision Girdle
@@ -74,6 +82,7 @@ SetItemFilter(213320, MAIL);	-- Fingers of Arcane Accuracy
 SetItemFilter(213303, MAIL);	-- Lightning Rod Spaulders
 SetItemFilter(213280, MAIL);	-- Marksman's Scopevisor
 SetItemFilter(215380, MAIL);	-- Power-Assisted Lifting Belt
+SetItemFilter(213279, MAIL);	-- Reflective Skullcap
 SetItemFilter(216678, MAIL);	-- Triple Reinforced Leggings
 SetItemFilter(213316, PLATE);	-- H.A.Z.A.R.D. Breastplate
 SetItemFilter(213330, PLATE);	-- H.A.Z.A.R.D. Legplates
@@ -83,6 +92,7 @@ SetItemFilter(216485, PLATE);	-- Shockforged Breastplate
 SetItemFilter(216486, PLATE);	-- Shockforged Legplates
 SetItemFilter(216484, PLATE);	-- Shockforged Battleboots
 SetItemFilter(213417, PLATE);	-- Truesilver Filament Coif
+SetItemFilter(213418, PLATE);	-- Welded Truesilver Ringlets
 
 SetItemFilter(213344, NECK_F);	-- Gnomeregan Peace Officer's Torque
 SetItemFilter(213343, NECK_F);	-- Justice Badge
@@ -90,12 +100,14 @@ SetItemFilter(213346, NECK_F);	-- Pendant of Homecoming
 SetItemFilter(213345, NECK_F);	-- Piston Pendant
 
 SetItemFilter(216662, FINGER_F);	-- Brilliant Gold Ring
+SetItemFilter(213287, FINGER_F);	-- Electrocutioner Hexnut
 SetItemFilter(216674, FINGER_F);	-- Nogg's Brilliant Gold Ring
 SetItemFilter(216673, FINGER_F);	-- Talvash's Brilliant Gold Ring
 SetItemFilter(213283, FINGER_F);	-- Hypercharged Gear of Conflagration
 SetItemFilter(213284, FINGER_F);	-- Hypercharged Gear of Devastation
 SetItemFilter(213282, FINGER_F);	-- Hypercharged Gear of Innovation
 
+SetItemFilter(216494, TRINKET_F);	-- Aragriar's Whimsical World Warper
 SetItemFilter(215461, TRINKET_F);	-- Domesticated Attack Chicken
 SetItemFilter(213349, TRINKET_F);	-- Gniodine Pill Bottle
 SetItemFilter(213348, TRINKET_F);	-- Gyromatic Experiment 420b
@@ -1588,9 +1600,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(220072, {	-- Electrocutioner 6000
-						--["description"] = "",
+						["description"] = "The main mechanic of this fight comes from Static Arc, this ability does a chain lighting cast on a player and it bounces twice, hitting a total of three players - these get debuffed and cannot be hit by it again twice in a row or the 500% damage increase will kill them.\n\nThe way to deal with it is to have two pre-assigned groups be moving in and out of close proximity to the boss in order to soak every other Static Arc. Doing this will make the mechanic safe. Ideally have the caster damage dealers do this so that the melee can keep up high uptime on the boss. Healers can potentially be assigned for moving in and out as well, but ideally it's important that they can heal freely since the fight has somewhat respectable damage throughout.\n\nLastly, Magnetic Pulse is an ability that must be respected by everyone, if targeted the player must move out to a empty space or pre-assigned spot in order to avoid damaging other players as well. Just be aware that if targeted, the player should not by any means ever be further away from the boss than the groups soaking Static Arc, otherwise you'll get targeted by it instead and potentially killing the players with the debuff that are currently standing near the boss.",
 						["groups"] = {
-							--i(),	-- 
+							i(213560),	-- Mechanostrider Muffler
+							i(213286),	-- Electrocutioner's Needle
+							i(213354),	-- Staff of the Evil Genius
+							i(213293),	-- Hi-tech Supergun Mk.VII
+							i(213559),	-- Mechanostrider Gear Shifter
+							i(213309),	-- Cloak of Invention
+							i(213418),	-- Welded Truesilver Ringlets
+							i(213279),	-- Reflective Skullcap
+							i(213319),	-- Machinist's Gloves
+							i(213300),	-- Fighter Ace Gloves
+							i(213414),	-- Mech-Mender's Sash
+							i(213298),	-- Mechbuilder's Overalls
+							i(213287),	-- Electrocutioner Hexnut
+							i(216494),	-- Aragriar's Whimsical World Warper
 						},
 					}),
 					n(215728, {	-- Crowd Pummeler 9-60
