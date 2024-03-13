@@ -1087,7 +1087,7 @@ local criteriaFuncs = {
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
 		local name = GetFactionInfoByID(factionID) or "#"..(factionID or "??");
-        return (L.LOCK_CRITERIA_FACTION_FORMAT or "%s with %s (Current: %s)"):format(app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
+        return L.LOCK_CRITERIA_FACTION_FORMAT:format(app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
     end,
 
     sourceID = function(sourceID)
@@ -1625,25 +1625,25 @@ app.AddEventHandler("OnLoad", function()
 	app.Settings.CreateInformationType("Objectives", {
 		priority = 2.9,
 		text = L.OBJECTIVES,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			if reference.questID and not reference.objectiveID then
 				local objectified = false;
 				local questLogIndex = GetQuestLogIndexByID(reference.questID);
 				if questLogIndex then
 					local lore, objective = GetQuestLogQuestText(questLogIndex);
 					if lore and app.Settings:GetTooltipSetting("Lore") then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = lore,
 							color = app.Colors.TooltipLore,
 							wrap = true,
 						});
 					end
 					if objective then
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = REQUIREMENTS,
 							r = 1, g = 1, b = 1,
 						});
-						tinsert(info, {
+						tinsert(tooltipInfo, {
 							left = objective,
 							r = 0.4, g = 0.8, b = 1,
 							wrap = true,
@@ -1655,7 +1655,7 @@ app.AddEventHandler("OnLoad", function()
 					local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
 					if objectives and #objectives > 0 then
 						if not objectified then
-							tinsert(info, {
+							tinsert(tooltipInfo, {
 								left = REQUIREMENTS,
 								r = 1, g = 1, b = 1,
 							});
@@ -1678,7 +1678,7 @@ app.AddEventHandler("OnLoad", function()
 								reference.working = true;
 							end
 							
-							tinsert(info, {
+							tinsert(tooltipInfo, {
 								left = "  " .. text,
 								right = app.GetCompletionIcon(objective.finished),
 								r = 1, g = 1, b = 1,

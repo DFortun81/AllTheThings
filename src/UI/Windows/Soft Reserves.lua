@@ -379,7 +379,7 @@ end
 app.Settings.CreateInformationType("SoftReserves", {
 	priority = 2.9,
 	text = "Soft Reserves",
-	Process = function(t, reference, info)
+	Process = function(t, reference, tooltipInfo)
 		local itemID = reference.itemID;
 		if itemID then
 			local reservesForItem = SoftReservesByItemID[itemID];
@@ -387,7 +387,7 @@ app.Settings.CreateInformationType("SoftReserves", {
 				local left = t.text;
 				for i,guid in ipairs(reservesForItem) do
 					if guid and IsGUIDInGroup(guid) then
-						tinsert(info, { left = left, right = app.CreateSoftReserveUnit(guid).tooltipText });
+						tinsert(tooltipInfo, { left = left, right = app.CreateSoftReserveUnit(guid).tooltipText });
 						left = nil;
 					end
 				end

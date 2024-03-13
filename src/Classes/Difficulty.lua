@@ -157,14 +157,14 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 }, (function(t) return t.difficulties; end));
 
 -- External Functionality
-local function SummarizeLockout(info, lockout, leftText, color)
-	tinsert(info, {
+local function SummarizeLockout(tooltipInfo, lockout, leftText, color)
+	tinsert(tooltipInfo, {
 		left = leftText,
 		right = date("%c", lockout.reset),
 		color = color,
 	});
 	for encounterIter,encounter in pairs(lockout.encounters) do
-		tinsert(info, {
+		tinsert(tooltipInfo, {
 			left = " " .. encounter.name,
 			right = app.GetCompletionIcon(encounter.isKilled),
 		});
@@ -174,9 +174,9 @@ app.AddEventHandler("OnLoad", function()
 	app.Settings.CreateInformationType("locks", {
 		priority = 10000,
 		text = L.LOCKOUTS,
-		Process = function(t, reference, info)
+		Process = function(t, reference, tooltipInfo)
 			if reference.instanceID then
-				tinsert(info, {
+				tinsert(tooltipInfo, {
 					left = L.LOCKOUT,
 					right = L[reference.isLockoutShared and "SHARED" or "SPLIT"],
 				});
@@ -184,15 +184,15 @@ app.AddEventHandler("OnLoad", function()
 			local locks = reference.locks;
 			if locks then
 				if locks.encounters then
-					SummarizeLockout(info, locks, L.RESETS);
+					SummarizeLockout(tooltipInfo, locks, L.RESETS);
 				elseif reference.isLockoutShared and locks.shared then
-					SummarizeLockout(info, locks.shared, L.SHARED);
+					SummarizeLockout(tooltipInfo, locks.shared, L.SHARED);
 				else
 					for key,lockout in pairs(locks) do
 						if key == "shared" then
 							-- Skip
 						else
-							SummarizeLockout(info, lockout, GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty);
+							SummarizeLockout(tooltipInfo, lockout, GetDifficultyInfo(key) or LOCK, DifficultyColors[key] or app.Colors.DefaultDifficulty);
 						end
 					end
 				end
