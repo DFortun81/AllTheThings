@@ -5218,7 +5218,6 @@ end)();
 
 -- Unsupported Libs
 (function()
-app.CreateDrakewatcherManuscript = app.CreateUnimplementedClass("DrakewatcherManuscript", "questID");
 app.CreateMusicRoll = app.CreateUnimplementedClass("MusicRoll", "questID");
 app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
 app.CreateSelfieFilter = app.CreateUnimplementedClass("SelfieFilter", "questID");

@@ -99,6 +99,7 @@ src\Expansions\Warlords.lua
 src\Expansions\Legion.lua
 src\Expansions\Battle For Azeroth.lua
 src\Expansions\Shadowlands.lua
+src\Expansions\Dragonflight.lua
 
 # Load the Settings Menu
 src\Settings\Classic Settings.xml
