@@ -213,117 +213,139 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(205209, {	-- Boulder Hauler (MOUNT!)
 							["cost"] = BarterCost(170, 85),
 						}),
-						-- Professions
-						i(205440, {	-- Bartered Alchemy Journal
-							["questID"] = 75848,
-							["requireSkill"] = ALCHEMY,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205439, {	-- Bartered Blacksmithing Journal
-							["questID"] = 75849,
-							["requireSkill"] = BLACKSMITHING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205438, {	-- Bartered Enchanting Journal
-							["questID"] = 75850,
-							["requireSkill"] = ENCHANTING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205436, {	-- Bartered Engineering Journal
-							["questID"] = 75851,
-							["requireSkill"] = ENGINEERING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205445, {	-- Bartered Herbalism Journal
-							["questID"] = 75852,
-							["requireSkill"] = HERBALISM,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205441, {	-- Bartered Inscription Journal
-							["questID"] = 75853,
-							["requireSkill"] = INSCRIPTION,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205435, {	-- Bartered Jewelcrafting Journal
-							["questID"] = 75854,
-							["requireSkill"] = JEWELCRAFTING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205437, {	-- Bartered Leatherworking Journal
-							["questID"] = 75855,
-							["requireSkill"] = LEATHERWORKING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205443, {	-- Bartered Mining Journal
-							["questID"] = 75856,
-							["requireSkill"] = MINING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205444, {	-- Bartered Skinning Journal
-							["questID"] = 75857,
-							["requireSkill"] = SKINNING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205442, {	-- Bartered Tailoring Journal
-							["questID"] = 75858,
-							["requireSkill"] = TAILORING,
-							["cost"] = BarterCost(90, 40),
-						}),
-						i(205429, {	-- Bartered Alchemy Notes
-							["questID"] = 75847,
-							["requireSkill"] = ALCHEMY,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205428, {	-- Bartered Blacksmithing Notes
-							["questID"] = 75846,
-							["requireSkill"] = BLACKSMITHING,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205427, {	-- Bartered Enchanting Notes
-							["questID"] = 75845,
-							["requireSkill"] = ENCHANTING,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205425, {	-- Bartered Engineering Notes
-							["questID"] = 75844,
-							["requireSkill"] = ENGINEERING,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205434, {	-- Bartered Herbalism Notes
-							["questID"] = 75843,
-							["requireSkill"] = HERBALISM,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205430, {	-- Bartered Inscription Notes
-							["questID"] = 75842,
-							["requireSkill"] = INSCRIPTION,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205424, {	-- Bartered Jewelcrafting Notes
-							["questID"] = 75841,
-							["requireSkill"] = JEWELCRAFTING,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205426, {	-- Bartered Leatherworking Notes
-							["questID"] = 75840,
-							["requireSkill"] = LEATHERWORKING,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205432, {	-- Bartered Mining Notes
-							["questID"] = 75839,
-							["requireSkill"] = MINING,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205433, {	-- Bartered Skinning Notes
-							["questID"] = 75838,
-							["requireSkill"] = SKINNING,
-							["cost"] = BarterCost(35, 25),
-						}),
-						i(205431, {	-- Bartered Tailoring Notes
-							["questID"] = 75837,
-							["requireSkill"] = TAILORING,
-							["cost"] = BarterCost(35, 25),
-						}),
+							-- Professions
+							i(205440, {	-- Bartered Alchemy Journal
+								["questID"] = 75848,
+								["requireSkill"] = ALCHEMY,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205439, {	-- Bartered Blacksmithing Journal
+								["questID"] = 75849,
+								["requireSkill"] = BLACKSMITHING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205438, {	-- Bartered Enchanting Journal
+								["questID"] = 75850,
+								["requireSkill"] = ENCHANTING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205436, {	-- Bartered Engineering Journal
+								["questID"] = 75851,
+								["requireSkill"] = ENGINEERING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205445, {	-- Bartered Herbalism Journal
+								["questID"] = 75852,
+								["requireSkill"] = HERBALISM,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205441, {	-- Bartered Inscription Journal
+								["questID"] = 75853,
+								["requireSkill"] = INSCRIPTION,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205435, {	-- Bartered Jewelcrafting Journal
+								["questID"] = 75854,
+								["requireSkill"] = JEWELCRAFTING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205437, {	-- Bartered Leatherworking Journal
+								["questID"] = 75855,
+								["requireSkill"] = LEATHERWORKING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205443, {	-- Bartered Mining Journal
+								["questID"] = 75856,
+								["requireSkill"] = MINING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205444, {	-- Bartered Skinning Journal
+								["questID"] = 75857,
+								["requireSkill"] = SKINNING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205442, {	-- Bartered Tailoring Journal
+								["questID"] = 75858,
+								["requireSkill"] = TAILORING,
+								["cost"] = BarterCost(90, 40),
+								["collectible"] = false,
+							}),
+							i(205429, {	-- Bartered Alchemy Notes
+								["questID"] = 75847,
+								["requireSkill"] = ALCHEMY,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205428, {	-- Bartered Blacksmithing Notes
+								["questID"] = 75846,
+								["requireSkill"] = BLACKSMITHING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205427, {	-- Bartered Enchanting Notes
+								["questID"] = 75845,
+								["requireSkill"] = ENCHANTING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205425, {	-- Bartered Engineering Notes
+								["questID"] = 75844,
+								["requireSkill"] = ENGINEERING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205434, {	-- Bartered Herbalism Notes
+								["questID"] = 75843,
+								["requireSkill"] = HERBALISM,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205430, {	-- Bartered Inscription Notes
+								["questID"] = 75842,
+								["requireSkill"] = INSCRIPTION,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205424, {	-- Bartered Jewelcrafting Notes
+								["questID"] = 75841,
+								["requireSkill"] = JEWELCRAFTING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205426, {	-- Bartered Leatherworking Notes
+								["questID"] = 75840,
+								["requireSkill"] = LEATHERWORKING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205432, {	-- Bartered Mining Notes
+								["questID"] = 75839,
+								["requireSkill"] = MINING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205433, {	-- Bartered Skinning Notes
+								["questID"] = 75838,
+								["requireSkill"] = SKINNING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
+							i(205431, {	-- Bartered Tailoring Notes
+								["questID"] = 75837,
+								["requireSkill"] = TAILORING,
+								["cost"] = BarterCost(35, 25),
+								["collectible"] = false,
+							}),
 						-- Cosmetic
 						i(205421, {	-- Ponzo's Scheming Topper
 							["description"] = "Hat appears when you click dialog options (for the best price - click it a few times)",
