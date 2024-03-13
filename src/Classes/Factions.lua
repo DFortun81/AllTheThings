@@ -26,9 +26,6 @@ local GetFriendshipReputation, GetFriendshipReputationRanks, GetFactionInfoByID,
 	C_MajorFactions.GetRenownLevels, C_MajorFactions.GetMajorFactionData
 
 -- Faction API Implementation
--- Access via AllTheThings.Modules.Faction
-local api = {};
-app.Modules.Faction = api;
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 end)
