@@ -11,12 +11,12 @@ local SetItemFilter = function(itemID, f)
 	return item;
 end
 -- DAGGERS
--- FIST_WEAPONS
+SetItemFilter(213409, FIST_WEAPONS);	-- Mekkatorque's Arcano-Shredder
 -- POLEARMS
 -- STAVES
 -- ONE_HANDED_AXES
 SetItemFilter(216679, ONE_HANDED_AXES);	-- Shoni's Dismantling Tool
--- TWO_HANDED_AXES
+SetItemFilter(213416, TWO_HANDED_AXES);	-- Thermaplugg's Rocket Cleaver
 -- ONE_HANDED_MACES
 SetItemFilter(217006, TWO_HANDED_MACES);	-- Mechanic's Pipehammer
 -- ONE_HANDED_SWORDS
@@ -27,19 +27,24 @@ SetItemFilter(217006, TWO_HANDED_MACES);	-- Mechanic's Pipehammer
 
 -- BOWS
 -- CROSSBOWS
--- GUNS
+SetItemFilter(213356, GUNS);	-- Thermaplugg's Custom Blaster
 -- WANDS
 
 SetItemFilter(217005, CLOAKS);	-- Repairman's Cape
 
+SetItemFilter(213281, CLOTH);	-- Electromagnetic Hyperflux Reactivator
 SetItemFilter(213311, CLOTH);	-- Hyperconductive Robe
 SetItemFilter(213328, CLOTH);	-- Hyperconductive Pantaloons
 SetItemFilter(213337, CLOTH);	-- Hyperconductive Sandals
 SetItemFilter(213310, CLOTH);	-- Hyperconductive Shimmershirt
 SetItemFilter(213329, CLOTH);	-- Hyperconductive Skirt
 SetItemFilter(213336, CLOTH);	-- Hyperconductive Walkers
-SetItemFilter(216680, CLOTH);	-- Shilly Mittens
+SetItemFilter(215377, CLOTH);	-- Irradiated Robe
+SetItemFilter(215379, CLOTH);	-- Irradiated Trousers
+SetItemFilter(215378, CLOTH);	-- Irradiated Boots
 SetItemFilter(216675, CLOTH);	-- Pristine Civinad Robes
+SetItemFilter(216608, CLOTH);	-- Radiant Ray Reflectors
+SetItemFilter(216680, CLOTH);	-- Shilly Mittens
 SetItemFilter(213312, LEATHER);	-- Insulated Apron
 SetItemFilter(213331, LEATHER);	-- Insulated Leggings
 SetItemFilter(213342, LEATHER);	-- Insulated Galoshes
@@ -69,8 +74,15 @@ SetItemFilter(213345, NECK_F);	-- Piston Pendant
 SetItemFilter(216662, FINGER_F);	-- Brilliant Gold Ring
 SetItemFilter(216674, FINGER_F);	-- Nogg's Brilliant Gold Ring
 SetItemFilter(216673, FINGER_F);	-- Talvash's Brilliant Gold Ring
+SetItemFilter(213283, FINGER_F);	-- Hypercharged Gear of Conflagration
+SetItemFilter(213284, FINGER_F);	-- Hypercharged Gear of Devastation
+SetItemFilter(213282, FINGER_F);	-- Hypercharged Gear of Innovation
 
--- TRINKET_F
+SetItemFilter(215461, TRINKET_F);	-- Domesticated Attack Chicken
+SetItemFilter(213349, TRINKET_F);	-- Gniodine Pill Bottle
+SetItemFilter(213348, TRINKET_F);	-- Gyromatic Experiment 420b
+SetItemFilter(213347, TRINKET_F);	-- Miniaturized Combustion Chamber
+SetItemFilter(213350, TRINKET_F);	-- Wirdal's Hardened Core
 -- LIBRAMS
 -- TOTEMS
 -- BAGS
@@ -1435,7 +1447,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["provider"] = { "i", 216636 },	-- Charged Voidcore
 									["cost"] = {
 										{ "i", 216635, 1 },	-- Spent Voidcore
-										{ "i", 216645, 1 },	-- Mote of Darkness
+										{ "i", 216645, i },	-- Mote of Darkness
 									},
 								}),
 								i(213735),	-- Pristine G-7 C.O.R.E. Processor
@@ -1503,6 +1515,50 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13325),	-- Fluorescent Green Mechanostrider (MOUNT!)
 							i(217350),	-- Thermaplugg's Engineering Notes (A)
 							i(217351),	-- Thermaplugg's Engineering Notes (H)
+							-- Fist Weapons
+							i(213409),	-- Mekkatorque's Arcano-Shredder
+							-- Guns
+							i(213356),	-- Thermaplugg's Custom Blaster
+							-- Two-Handed Axe
+							i(213416),	-- Thermaplugg's Rocket Cleaver
+							-- Cloth
+							i(213281),	-- Electromagnetic Hyperflux Reactivator
+							i(216608),	-- Radiant Ray Reflectors
+							i(215377),	-- Irradiated Robe
+							i(215379),	-- Irradiated Trousers
+							i(215378),	-- Irradiated Boots
+							-- Rings
+							i(213283),	-- Hypercharged Gear of Conflagration
+							i(213284),	-- Hypercharged Gear of Devastation
+							i(213282),	-- Hypercharged Gear of Innovation
+							-- Trinkets
+							i(215461),	-- Domesticated Attack Chicken
+							i(213349),	-- Gniodine Pill Bottle
+							i(213348),	-- Gyromatic Experiment 420b
+							i(213347),	-- Miniaturized Combustion Chamber
+							i(213350),	-- Wirdal's Hardened Core
+							-- Original recipe drops.
+							i(4415),	-- Schematic: Craftsman's Monocle
+							i(4413),	-- Schematic: Discombobulator Ray
+							i(6716),	-- Schematic: EZ-Thro Dynamite
+							i(4411),	-- Schematic: Flame Deflector
+							i(6672),	-- Schematic: Flash Bomb
+							i(7742),	-- Schematic: Gnomish Cloaking Device
+							i(7560),	-- Schematic: Gnomish Universal Remote
+							i(7561),	-- Schematic: Goblin Jumper Cables
+							i(4416),	-- Schematic: Goblin Land Mine
+							i(7192, {	-- Schematic: Goblin Rocket Boots
+								["timeline"] = { "deleted 3.0.2" },
+							}),
+							i(4417),	-- Schematic: Large Seaforium Charge
+							i(4408),	-- Schematic: Mechanical Squirrel Box
+							i(4412),	-- Schematic: Moonsight Rifle
+							-- #if AFTER 3.1.0
+							i(11828),	-- Schematic: Pet Bombling
+							-- #endif
+							i(4414),	-- Schematic: Portable Bronze Mortar
+							i(4410),	-- Schematic: Shadow Goggles
+							i(4409),	-- Schematic: Small Seaforium Charge
 						},
 					}),
 				},
