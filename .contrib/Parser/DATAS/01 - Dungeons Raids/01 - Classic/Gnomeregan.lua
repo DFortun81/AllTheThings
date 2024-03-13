@@ -10,14 +10,15 @@ local SetItemFilter = function(itemID, f)
 	Items[itemID] = item;
 	return item;
 end
--- DAGGERS
+SetItemFilter(213410, DAGGERS);	-- Glimmering Gizmoblade
 SetItemFilter(213409, FIST_WEAPONS);	-- Mekkatorque's Arcano-Shredder
 -- POLEARMS
 -- STAVES
 -- ONE_HANDED_AXES
 SetItemFilter(216679, ONE_HANDED_AXES);	-- Shoni's Dismantling Tool
+SetItemFilter(213296, TWO_HANDED_AXES);	-- Supercharged Headchopper
 SetItemFilter(213416, TWO_HANDED_AXES);	-- Thermaplugg's Rocket Cleaver
--- ONE_HANDED_MACES
+SetItemFilter(213297, ONE_HANDED_MACES);	-- Oscillating Blasthammer
 SetItemFilter(217006, TWO_HANDED_MACES);	-- Mechanic's Pipehammer
 -- ONE_HANDED_SWORDS
 -- TWO_HANDED_SWORDS
@@ -28,8 +29,10 @@ SetItemFilter(217006, TWO_HANDED_MACES);	-- Mechanic's Pipehammer
 -- BOWS
 -- CROSSBOWS
 SetItemFilter(213356, GUNS);	-- Thermaplugg's Custom Blaster
--- WANDS
+SetItemFilter(213411, WANDS);	-- Izzleflick's Inextinguishable Igniter
 
+SetItemFilter(213306, CLOAKS);	-- Ingenuity's Cover
+SetItemFilter(213308, CLOAKS);	-- Prototype Parachute Cloak
 SetItemFilter(217005, CLOAKS);	-- Repairman's Cape
 
 SetItemFilter(213281, CLOTH);	-- Electromagnetic Hyperflux Reactivator
@@ -52,12 +55,18 @@ SetItemFilter(213313, LEATHER);	-- Insulated Chestguard
 SetItemFilter(213332, LEATHER);	-- Insulated Legguards
 SetItemFilter(213341, LEATHER);	-- Insulated Workboots
 SetItemFilter(216676, LEATHER);	-- Nimble Triprunner Dungarees
+SetItemFilter(213318, LEATHER);	-- Ornate Dark Iron Bangles
+SetItemFilter(213325, MAIL);	-- Darkvision Girdle
 SetItemFilter(213314, MAIL);	-- Electromantic Chainmail
 SetItemFilter(213315, MAIL);	-- Electromantic Chainshirt
 SetItemFilter(213333, MAIL);	-- Electromantic Chausses
 SetItemFilter(213334, MAIL);	-- Electromantic Gambeson
 SetItemFilter(213338, MAIL);	-- Electromantic Grounding Boots
 SetItemFilter(213339, MAIL);	-- Electromantic Grounding Sabatons
+SetItemFilter(213320, MAIL);	-- Fingers of Arcane Accuracy
+SetItemFilter(213303, MAIL);	-- Lightning Rod Spaulders
+SetItemFilter(213280, MAIL);	-- Marksman's Scopevisor
+SetItemFilter(215380, MAIL);	-- Power-Assisted Lifting Belt
 SetItemFilter(216678, MAIL);	-- Triple Reinforced Leggings
 SetItemFilter(213316, PLATE);	-- H.A.Z.A.R.D. Breastplate
 SetItemFilter(213330, PLATE);	-- H.A.Z.A.R.D. Legplates
@@ -65,6 +74,7 @@ SetItemFilter(213335, PLATE);	-- H.A.Z.A.R.D. Boots
 SetItemFilter(216485, PLATE);	-- Shockforged Breastplate
 SetItemFilter(216486, PLATE);	-- Shockforged Legplates
 SetItemFilter(216484, PLATE);	-- Shockforged Battleboots
+SetItemFilter(213417, PLATE);	-- Truesilver Filament Coif
 
 SetItemFilter(213344, NECK_F);	-- Gnomeregan Peace Officer's Torque
 SetItemFilter(213343, NECK_F);	-- Justice Badge
@@ -1455,7 +1465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
-						["description"] = "The following depleted gear tokens can drop from three of the bosses.",
+						["description"] = "The following can drop from three of the bosses.",
 						["crs"] = {
 							220072,	-- Electrocutioner 6000
 							218537,	-- Mekgineer Thermaplugg
@@ -1465,6 +1475,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(217008),	-- Power Depleted Chest
 							i(217009),	-- Power Depleted Legs
 							i(217007),	-- Power Depleted Boots
+							i(215377),	-- Irradiated Robe
+							i(215379),	-- Irradiated Trousers
+							i(215378),	-- Irradiated Boots
 						},
 					}),
 					n(216666, {	-- Techbot
@@ -1503,10 +1516,38 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							--i(),	-- 
 						},
 					}),
-					n(218242, {	-- STX-04/BD
-						--["description"] = "",
+					n(218242, {	-- Mechanical Menagerie (STX-04/BD)
+						["description"] = "The chicken, squirrel and whelp must be tanked, meaning it requires at least two tanks.\n\nThe sheep instead of being tanked, targets a player and slowly moves towards them. It must be kited, ideally somewhat near the other three but not close enough where it'll Binary Bleat silence the melee and tanks.\n\nRanged should stand near the middle so that the tank and melee can kite the bosses around the perimeter of the boss area.\n\nThe dps should try to damage the bosses somewhat evenly - but pay attention to which boss the whelp applies Overheat onto, since this causes that target to get damaged 25% more while the buff is active, making it more effective to focus while it's up.\n\nEvery boss should die at the same time, otherwise they cast Self Repair which only gets canceled by all of them being at 1hp - this ability will heal them for 31% of their total health.",
 						["groups"] = {
-							--i(),	-- 
+							i(213410),	-- Glimmering Gizmoblade
+							i(213297),	-- Oscillating Blasthammer
+							i(213296),	-- Supercharged Headchopper
+							i(213411),	-- Izzleflick's Inextinguishable Igniter
+							i(213306),	-- Ingenuity's Cover
+							i(213308),	-- Prototype Parachute Cloak
+							i(213280),	-- Marksman's Scopevisor
+							i(213303),	-- Lightning Rod Spaulders
+							i(213320),	-- Fingers of Arcane Accuracy
+							i(213325),	-- Darkvision Girdle
+							i(215380),	-- Power-Assisted Lifting Belt
+							i(213318),	-- Ornate Dark Iron Bangles
+							i(213417),	-- Truesilver Filament Coif
+							i(4415),	-- Schematic: Craftsman's Monocle
+							i(4413),	-- Schematic: Discombobulator Ray
+							i(6716),	-- Schematic: EZ-Thro Dynamite
+							i(4411),	-- Schematic: Flame Deflector
+							i(6672),	-- Schematic: Flash Bomb
+							i(7742),	-- Schematic: Gnomish Cloaking Device
+							i(7560),	-- Schematic: Gnomish Universal Remote
+							i(4416),	-- Schematic: Goblin Land Mine
+							i(7192, {	-- Schematic: Goblin Rocket Boots
+								["timeline"] = { "deleted 3.0.2" },
+							}),
+							i(4417),	-- Schematic: Large Seaforium Charge
+							i(4408),	-- Schematic: Mechanical Squirrel Box
+							i(4412),	-- Schematic: Moonsight Rifle
+							i(4414),	-- Schematic: Portable Bronze Mortar
+							i(4409),	-- Schematic: Small Seaforium Charge
 						},
 					}),
 					n(218537, {	-- Mekgineer Thermaplugg
@@ -1524,9 +1565,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- Cloth
 							i(213281),	-- Electromagnetic Hyperflux Reactivator
 							i(216608),	-- Radiant Ray Reflectors
-							i(215377),	-- Irradiated Robe
-							i(215379),	-- Irradiated Trousers
-							i(215378),	-- Irradiated Boots
 							-- Rings
 							i(213283),	-- Hypercharged Gear of Conflagration
 							i(213284),	-- Hypercharged Gear of Devastation
