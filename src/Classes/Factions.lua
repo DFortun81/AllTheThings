@@ -214,32 +214,17 @@ local function CacheInfo(t, field)
 	-- do not attempt caching more than 1 time per factionID since not every cached field may have a cached value
 	if _t.name then return end
 	local name, lore = GetFactionInfoByID(id);
-	local friendshipName = GetFriendshipReputation(id, "name");
-	name = name or friendshipName;
+	name = name;
 	_t.name = name or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
 	if lore then
 		_t.lore = lore;
 	elseif not name then
 		_t.description = L["FACTION_SPECIFIC_REP"];
 	end
-	if friendshipName then
-		t.isFriend = true;
-		local friendship = GetFriendshipReputation(id, "text");
-		if friendship then
-			if _t.lore then
-		 		_t.lore = _t.lore.."\n\n"..friendship;
-			else
-		 		_t.lore = friendship;
-			end
-		 end
-	end
 	if field then return _t[field]; end
 end
 
 app.CreateFaction = app.CreateClass("Faction", "factionID", {
-	["key"] = function(t)
-		return "factionID";
-	end,
 	["isHeader"] = function()
 		return true;
 	end,
@@ -253,9 +238,7 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["icon"] = function(t)
-		local icon = t.isFriend and GetFriendshipReputation(t.factionID, "texture");
-		return icon ~= 0 and icon ~= "" and icon
-			or app.asset("Category_Factions");
+		return app.asset("Category_Factions");
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collectible"] = function(t)
@@ -283,36 +266,15 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 	end,
 	["title"] = function(t)
 		local title = app.GetCurrentFactionStandingText(t.factionID);
-		if t.isFriend then
-			local reputation = t.reputation;
-			local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
-			if ceiling then
-				title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
-				if reputation < 42000 then
-					return title .. " (" .. (42000 - reputation) .. ")";
-				end
+		local reputation = t.reputation;
+		local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
+		if ceiling then
+			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
+			if reputation < 42000 then
+				return title .. " (" .. (42000 - reputation) .. " to " .. _G["FACTION_STANDING_LABEL8"] .. ")";
 			end
-			return title;
-		else
-			local reputation = t.reputation;
-			local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
-			if ceiling then
-				title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
-				if reputation < 42000 then
-					return title .. " (" .. (42000 - reputation) .. " to " .. _G["FACTION_STANDING_LABEL8"] .. ")";
-				end
-			end
-			return title;
 		end
-	end,
-	["isFriend"] = function(t)
-		if GetFriendshipReputation(t.factionID) then
-			t.isFriend = true;
-			return true;
-		else
-			t.isFriend = false;
-			return false;
-		end
+		return title;
 	end,
 	["reputation"] = function(t)
 		return select(6, GetFactionInfoByID(t.factionID)) or 0;
@@ -336,4 +298,40 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 	["sortProgress"] = function(t)
 		return ((t.reputation or -42000) + 42000) / 84000;
 	end,
-});
+},
+"AsFriend", {
+	isFriend = app.ReturnTrue,
+	icon = function(t)
+		local icon = GetFriendshipReputation(t.factionID, "texture");
+		return icon ~= 0 and icon ~= "" and icon
+			or app.asset("Category_Factions");
+	end,
+	title = function(t)
+		local title = app.GetCurrentFactionStandingText(t.factionID);
+		local reputation = t.reputation;
+		local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
+		if ceiling then
+			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
+			if reputation < 42000 then
+				return title .. " (" .. (42000 - reputation) .. ")";
+			end
+		end
+		return title;
+	end,
+	name = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo) or GetFriendshipReputation(t.factionID, "name");
+	end,
+	lore = function(t)
+		local lore = cache.GetCachedField(t, "lore", CacheInfo);
+		local friendship = GetFriendshipReputation(t.factionID, "text");
+		if friendship then
+			if lore and lore ~= "" then
+				return lore .. "\n\n" .. friendship;
+			else
+				return friendship;
+			end
+		end
+		return lore;
+	end,
+},
+function(t) return GetFriendshipReputation(t.factionID); end);
