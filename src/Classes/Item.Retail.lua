@@ -161,7 +161,70 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 	if group[key] == value then return true; end
 end
 app.GroupMatchesParams = GroupMatchesParams;
-
+-- Returns the depth at which a given Item matches the provided modItemID
+-- 1 = ItemID, 2 = ModID, 3 = BonusID
+local function ItemMatchDepth(item, modItemID)
+	if not item or not item.itemID then return; end
+	local i, m, b = GetItemIDAndModID(modItemID);
+	local depth = 0;
+	if item.itemID == i then
+		depth = 1;
+		if item.modID == m then
+			depth = 2;
+			if item.bonusID == b then
+				depth = 3;
+			end
+		end
+	end
+	return depth;
+end
+-- Refines a set of items down to the most-accurate matches to the provided modItemID
+-- The sets of items will be returned based on their respective match depth to the given modItemID
+-- Ex: { [1] = { { ItemID }, { ItemID2 } }, [2] = { { ModID } }, [3] = { { BonusID } } }
+app.GroupBestMatchingItems = function(items, modItemID)
+	if not items or #items == 0 then return; end
+	-- print("refining",#items,"by depth to",modItemID)
+	-- local i, m, b = GetItemIDAndModID(modItemID);
+	local refinedBuckets, depth = {};
+	for _,item in ipairs(items) do
+		depth = ItemMatchDepth(item, modItemID);
+		if depth then
+			-- print("added refined item",depth,item.modItemID,item.key,item.key and item[item.key])
+			if refinedBuckets[depth] then tinsert(refinedBuckets[depth], item)
+			else refinedBuckets[depth] = { item }; end
+		end
+	end
+	return refinedBuckets;
+end
+-- Imports the raw information from the rawlink into the specified group
+app.ImportRawLink = function(group, rawlink, ignoreSource)
+	rawlink = rawlink and rawlink:match("item[%-?%d:]+");
+	if rawlink and group then
+		group.rawlink = rawlink;
+		-- importing a rawlink will clear any cached upgrade info for the group
+		group._up = nil;
+		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = (":"):split(rawlink);
+		if linkItemID then
+			-- app.PrintDebug("IRL+",rawlink,linkItemID,modID,bonusCount,bonusID1);
+			-- set raw fields in the group based on the link
+			group.itemID = tonumber(linkItemID);
+			group.modID = modID and tonumber(modID) or nil;
+			-- only set the bonusID if there is actually bonusIDs indicated
+			if (tonumber(bonusCount) or 0) > 0 then
+				-- Don't use bonusID 3524 as an actual bonusID
+				local b = bonusID1 and tonumber(bonusID1) or nil;
+				if b ~= 3524 and b ~= 0 then
+					group.bonusID = b;
+				end
+			end
+			group.modItemID = nil;
+			if not ignoreSource then
+				-- maybe make this a class method...
+				app.GetGroupSourceID(group)
+			end
+		end
+	end
+end
 
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
 local cache = app.CreateCache("modItemID");

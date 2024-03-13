@@ -20,6 +20,7 @@ if not C_TransmogCollection then
 	-- External Functionality
 	app.AddSourceInformation = app.DoNothing;
 	app.BuildSourceInformationForPopout = app.DoNothing;
+	app.GetGroupSourceID = app.DoNothing
 
 	-- Extend the Filter Module to include ItemSource
 	app.Modules.Filter.Set.ItemSource = app.DoNothing;
@@ -121,6 +122,11 @@ local function GetSourceID(itemLink)
 	return nil, true;
 end
 app.GetSourceID = GetSourceID;
+app.GetGroupSourceID = function(group)
+	-- does this group rawlink also have a sourceID?
+	local sourceID = GetSourceID(group.rawlink);
+	if sourceID then group.sourceID = sourceID; end
+end
 
 -- Attempts to determine an ItemLink which will return the provided SourceID
 app.DetermineItemLink = function(sourceID)
@@ -553,32 +559,61 @@ app.AddEventHandler("OnRecalculate", function()
 	end
 end);
 
+-- Adds necessary SourceID information for Item data into the Harvest variable
+app.SaveHarvestSource = function(data)
+	local sourceID, itemID = data.sourceID, data.modItemID;
+	if sourceID and itemID then
+		-- app.PrintDebug("Harvest:sourceID",itemID,"=>",sourceID)
+		AllTheThingsHarvestItems[itemID] = sourceID;
+	end
+end
+
 -- Items With Appearances (Item Source)
--- At this time an appearance must be associated with an item. (TODO: Maybe not?)
-local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Transmog;
-	end,
-	["collected"] = function(t)
-		return ATTAccountWideData.Sources[t.sourceID];
-	end,
-	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-	["itemID"] = function(t)
-		if t.__autolink then return; end
-		-- async generation of the proper Item Link
-		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
-		t.__autolink = true;
-		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
-		-- app.GenerateGroupLinkUsingSourceID(t);
-		-- if a value was set within this logic, return it here. weird logic sequencing was previously able to generate the itemID while
-		-- caching the modItemID, leading to a 0 itemID return, and caching the item information into a 0-itemID cache record
-		return rawget(t, "itemID")
-	end,
-});
-app.CreateItemSource = function(sourceID, itemID, t)
-	t = createItemWithAppearance(sourceID, t);
-	t.itemID = itemID;
-	return t;
+do
+	-- Allows generating and capturing the specific ItemString which represents the SourceID of a group, if possible
+	local function GenerateGroupLinkUsingSourceID(group)
+		app.DirectGroupRefresh(group)
+		local sourceID = group and group.sourceID;
+		if not sourceID then return; end
+
+		local link = app.DetermineItemLink(sourceID);
+		if not link then return; end
+		-- app.PrintDebug("GGLUS",sourceID,link)
+
+		app.ImportRawLink(group, link, true);
+
+		local sourceGroup = app.SearchForObject("sourceID", sourceID, "key");
+		if not sourceGroup then
+			app.SaveHarvestSource(group);
+		end
+	end
+
+	-- At this time an appearance must be associated with an item. (TODO: Maybe not?)
+	local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
+		["collectible"] = function(t)
+			return app.Settings.Collectibles.Transmog;
+		end,
+		["collected"] = function(t)
+			return ATTAccountWideData.Sources[t.sourceID];
+		end,
+		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
+		["itemID"] = function(t)
+			if t.__autolink then return; end
+			-- async generation of the proper Item Link
+			-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
+			t.__autolink = true;
+			app.FunctionRunner.Run(GenerateGroupLinkUsingSourceID, t);
+			-- GenerateGroupLinkUsingSourceID(t);
+			-- if a value was set within this logic, return it here. weird logic sequencing was previously able to generate the itemID while
+			-- caching the modItemID, leading to a 0 itemID return, and caching the item information into a 0-itemID cache record
+			return rawget(t, "itemID")
+		end,
+	});
+	app.CreateItemSource = function(sourceID, itemID, t)
+		t = createItemWithAppearance(sourceID, t);
+		t.itemID = itemID;
+		return t;
+	end
 end
 
 -- Gear Sets
