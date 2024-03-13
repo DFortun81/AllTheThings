@@ -405,7 +405,6 @@ root(ROOTS.Unsorted, {
 				i(212524),	-- Delicate Crimson Parasol (TOY!) [Trading Post]
 				i(212525),	-- Delicate Ebony Parasol (TOY!) [Trading Post]
 				i(212500),	-- Delicate Silk Parasol (TOY!) [Trading Post]
-				i(211946),	-- Hearthstone Game Table (TOY!) [Hearthstone]
 			}),
 			------ Azerothian Archives ------
 			-- Misc
