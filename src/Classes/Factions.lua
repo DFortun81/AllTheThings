@@ -36,17 +36,18 @@ if C_GossipInfo then
 	local GetBlizzFriendship = C_GossipInfo.GetFriendshipReputation;
 	GetFriendshipReputation = function(factionID, field)
 		local friendInfo = GetBlizzFriendship(factionID);
-		local friendFactionID = friendInfo and friendInfo.friendshipFactionID or 0;
-		if friendFactionID ~= 0 then
+		if friendInfo and (friendInfo.friendshipFactionID or 0) ~= 0 then
 			return field and friendInfo[field] or true;
 		end
 	end
 	local GetBlizzFriendshipRanks = C_GossipInfo.GetFriendshipReputationRanks;
 	GetFriendshipReputationRanks = function(factionID)
 		local rankInfo = GetBlizzFriendshipRanks(factionID);
-		local maxLevel = rankInfo and rankInfo.maxLevel or 0;
-		if maxLevel ~= 0 then
-			return rankInfo.currentLevel, maxLevel;
+		if rankInfo then
+			local maxLevel = rankInfo.maxLevel or 0;
+			if maxLevel ~= 0 then
+				return rankInfo.currentLevel, maxLevel;
+			end
 		end
 	end
 end
@@ -223,8 +224,7 @@ local function CacheInfo(t, field)
 	-- do not attempt caching more than 1 time per factionID since not every cached field may have a cached value
 	if _t.name then return end
 	local name, lore = GetFactionInfoByID(id);
-	name = name;
-	_t.name = name or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
+	_t.name = name or (FACTION .. " #" .. id);
 	if lore then
 		_t.lore = lore;
 	elseif not name then
@@ -328,7 +328,7 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		return title;
 	end,
 	name = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo) or GetFriendshipReputation(t.factionID, "name");
+		return GetFriendshipReputation(t.factionID, "name") or cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	lore = function(t)
 		local lore = cache.GetCachedField(t, "lore", CacheInfo);
