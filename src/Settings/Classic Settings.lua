@@ -233,6 +233,23 @@ local UnobtainableSettingsBase = {
 		[3] = false,	-- Blizzard Balance
 	},
 };
+
+-- Check for Season of Discovery
+local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
+if season > 0 then
+	if season == 1 then	-- SOM
+		UnobtainableSettingsBase.__index[1604] = true;
+	end
+	if season == 2 then	-- SOD
+		local reasons = L.AVAILABILITY_CONDITIONS;
+		reasons[1605][5] = 11500;
+		reasons[1606][5] = 11501;
+		if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
+		elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
+		else app.MaximumSkillLevel = 150; end
+	end
+end
+
 settings.__UnobtainableSettingsBase = UnobtainableSettingsBase;
 local RawSettings;
 local AllTheThingsSettings, AllTheThingsSettingsPerCharacter = {}, {};
@@ -271,22 +288,6 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
 	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
 	setmetatable(AllTheThingsSettings.Unobtainable, UnobtainableSettingsBase);
-	
-	-- Check for Season of Discovery
-	local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
-	if season > 0 then
-		local states = getmetatable(AllTheThingsSettings.Unobtainable).__index;
-		if season == 1 then	-- SOM
-			states[1604] = true;
-		end
-		if season == 2 then	-- SOD
-			states[1605] = app.GameBuildVersion >= 11500;
-			states[1606] = app.GameBuildVersion >= 11501;
-			if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
-			elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
-			else app.MaximumSkillLevel = 150; end
-		end
-	end
 
 	-- Assign the preset filters for your character class as the default states
 	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
