@@ -641,7 +641,6 @@ namespace ATT
                     case "specs":
                     case "races":
                     case "sourceQuests":
-                    case "altAchievements":
                     case "altQuests":
                         {
                             Objects.MergeIntegerArrayData(item, field, value);
@@ -907,7 +906,6 @@ namespace ATT
                     case "e":
                     case "specs":
                     case "sourceQuests":
-                    case "altAchievements":
                     case "altQuests":
                     case "repeatable":
                     //case "pvp":

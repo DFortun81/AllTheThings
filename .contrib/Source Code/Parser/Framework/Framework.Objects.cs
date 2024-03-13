@@ -1496,7 +1496,6 @@ end");
                         case "questID":
                         case "aqd":
                         case "hqd":
-                        case "altAchievements":
                         case "altQuestID":
                         case "altQuests":
                         case "sourceQuests":
@@ -1971,7 +1970,6 @@ end");
                     case "specs":
                     case "difficulties":
                     case "sourceQuests":
-                    case "altAchievements":
                     case "altQuests":
                     case "races":
                     case "maps":

@@ -287,15 +287,6 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
 			return 2;
 		end
-
-		-- If this can be completed by completing a different achievement, return partial completion.
-		if t.altAchievements then
-			for i,achID in ipairs(t.altAchievements) do
-				if select(4, GetAchievementInfo(achID)) then
-					return 2;
-				end
-			end
-		end
 	end,
 	["saved"] = function(t)
 		local factionID = t.factionID;

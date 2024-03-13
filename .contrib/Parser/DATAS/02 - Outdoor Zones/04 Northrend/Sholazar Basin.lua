@@ -266,12 +266,10 @@ root(ROOTS.Zones, {
 					}),
 					faction(1104, {	-- Frenzyheart Tribe
 						["maxReputation"] = { 1105, NEUTRAL },	-- The Oracles, Neutral.
-						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 						["OnTooltip"] = OnTooltipForFrenzyheart,
 					}),
 					faction(1105, {	-- The Oracles
 						["maxReputation"] = { 1104, NEUTRAL },	-- Frenzyheart Tribe, Neutral.
-						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 						["OnTooltip"] = OnTooltipForOracles,
 					}),
 				}),

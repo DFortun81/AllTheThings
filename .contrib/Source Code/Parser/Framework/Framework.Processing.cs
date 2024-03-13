@@ -1488,12 +1488,6 @@ namespace ATT
         private static void Validate_Achievement(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("achID", out long achID) || data.ContainsKey("criteriaID")) return;
-
-            // Remove itself from the list of altAchievements
-            if (data.TryGetValue("altAchievements", out List<object> altAchievements))
-            {
-                altAchievements.Remove(achID);
-            }
         }
 
         private static void Incorporate_Achievement(IDictionary<string, object> data)

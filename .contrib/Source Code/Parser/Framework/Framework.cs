@@ -741,7 +741,6 @@ namespace ATT
                     case "specs":
                     case "races":
                     case "sourceQuests":
-                    case "altAchievements":
                     case "altQuests":
                     case "customCollect":
                     case "cost":
@@ -1209,14 +1208,6 @@ namespace ATT
                 case "sourceQuestIDs":
                     {
                         return "sourceQuests";
-                    }
-
-                case "altAchieves":
-                case "altAchievements":
-                case "alternateAchieves":
-                case "alternateAchievements":
-                    {
-                        return "altAchievements";
                     }
 
                 case "altQuests":

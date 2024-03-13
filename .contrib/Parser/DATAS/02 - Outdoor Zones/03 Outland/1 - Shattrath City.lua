@@ -676,11 +676,9 @@ root(ROOTS.Zones, {
 					}),
 					faction(932, {	-- The Aldor
 						["maxReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
-						["altAchievements"] = { 1205 },	-- Hero of Shattrath
 					}),
 					faction(934, {	-- The Scryers
 						["maxReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
-						["altAchievements"] = { 1205 },	-- Hero of Shattrath
 					}),
 					faction(935, {	-- The Sha'tar
 						["maps"] = { TEMPEST_KEEP_ARCATRAZ, TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
