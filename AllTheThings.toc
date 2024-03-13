@@ -79,6 +79,7 @@ src\Classes\CharacterClass.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
 src\Classes\Quests.lua
+src\Classes\Item.Retail.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
 src\Classes\Maps.lua
@@ -94,8 +95,7 @@ src\Classes\Title.lua
 src\Classes\Transmog.lua
 src\Classes\CharacterUnlock.lua
 
-# Item Classes
-src\Classes\Item.Retail.lua
+# Item Sub-Classes
 src\Classes\Toys.lua
 #src\Classes\Ensembles.lua
 

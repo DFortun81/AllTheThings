@@ -5843,34 +5843,6 @@ end	-- Flight Path Lib
 local GetItemCount
 	= GetItemCount;
 
--- Items With Appearances (Item Source)
--- TODO: Once the Item class is moved out, uncomment this in the Transmog file.
-local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Transmog;
-	end,
-	["collected"] = function(t)
-		return ATTAccountWideData.Sources[t.sourceID];
-	end,
-	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-	["itemID"] = function(t)
-		if t.__autolink then return; end
-		-- async generation of the proper Item Link
-		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
-		t.__autolink = true;
-		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
-		-- app.GenerateGroupLinkUsingSourceID(t);
-		-- if a value was set within this logic, return it here. weird logic sequencing was previously able to generate the itemID while
-		-- caching the modItemID, leading to a 0 itemID return, and caching the item information into a 0-itemID cache record
-		return rawget(t, "itemID")
-	end,
-});
-app.CreateItemSource = function(sourceID, itemID, t)
-	t = createItemWithAppearance(sourceID, t);
-	t.itemID = itemID;
-	return t;
-end
-
 -- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
 local BaseCostItem = app.BaseObjectFields({
 	-- total is the count of the cost item required

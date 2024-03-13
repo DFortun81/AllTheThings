@@ -5,8 +5,8 @@ local C_TransmogCollection = C_TransmogCollection;
 if C_TransmogCollection then
 	-- Transmog is supported!
 	-- Global locals
-	local ipairs, select, tinsert, pairs
-		= ipairs, select, tinsert, pairs;
+	local ipairs, select, tinsert, pairs, rawget
+		= ipairs, select, tinsert, pairs, rawget;
 	local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
 		= GetItemInfoInstant, C_Item.IsDressableItemByID, GetItemInfo, C_Transmog.GetSlotForInventoryType
 	local Callback = app.CallbackHandlers.Callback;
@@ -532,7 +532,6 @@ if C_TransmogCollection then
 
 	-- Items With Appearances (Item Source)
 	-- At this time an appearance must be associated with an item. (TODO: Maybe not?)
-	--[[
 	local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
 		["collectible"] = function(t)
 			return app.Settings.Collectibles.Transmog;
@@ -558,7 +557,6 @@ if C_TransmogCollection then
 		t.itemID = itemID;
 		return t;
 	end
-	]]--
 
 	-- Gear Sets
 	local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
@@ -838,7 +836,7 @@ if C_TransmogCollection then
 				tinsert(info, {
 					left = "Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"],
 					color = app.Colors.ChatLinkError
-				});	
+				});
 				tinsert(info, {
 					left = sourceID .. ":" .. tostring(sourceInfo.visualID),
 					color = app.Colors.SourceIgnored
