@@ -30,6 +30,7 @@ app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 end)
 
+
 -- 10.0 Blizz does some weird stuff with Friendship functions now, so let's try to wrap the functionality to work with what we expected before... at least for now
 if C_GossipInfo then
 	local GetBlizzFriendship = C_GossipInfo.GetFriendshipReputation;
@@ -49,6 +50,27 @@ if C_GossipInfo then
 		end
 	end
 end
+
+-- Faction Name
+local FactionIDByName, FactionNameByID = {}, {};
+setmetatable(FactionNameByID, { __index = function(t, id)
+	local name = select(1, GetFactionInfoByID(id)) or GetFriendshipReputation(id, "name");
+	if name then
+		t[id] = name;
+		FactionIDByName[name] = id;
+		return name;
+	end
+end });
+setmetatable(FactionIDByName, { __index = function(t, name)
+	for i=1,3000,1 do
+		if FactionNameByID[i] == name then
+			t[name] = i;
+			return i;
+		end
+	end
+end });
+
+-- Faction Standing
 local StandingByID = {
 	[0] = {	-- 0: No Standing (Not in a Guild)
 		["color"] = "00404040",
@@ -87,26 +109,14 @@ local StandingByID = {
 		["threshold"] = 42000,
 	},
 };
-app.FactionNameByID = setmetatable({}, { __index = function(t, id)
-	local name = select(1, GetFactionInfoByID(id)) or GetFriendshipReputation(id, "name");
-	if name then
-		t[id] = name;
-		app.FactionIDByName[name] = id;
-		return name;
+local StandingByName = {};
+setmetatable(StandingByName, { __index = function(t, name)
+	for id=1,8,1 do
+		t[_G["FACTION_STANDING_LABEL" .. id]] = StandingByID[id];
 	end
+	setmetatable(StandingByName, nil);
+	return StandingByName[name];
 end });
-app.FactionIDByName = setmetatable({}, { __index = function(t, name)
-	for i=1,3000,1 do
-		if app.FactionNameByID[i] == name then
-			t[name] = i;
-			return i;
-		end
-	end
-end });
-app.GetFactionIDByName = function(name)
-	name = name:trim();
-	return app.FactionIDByName[name] or name;
-end
 app.GetFactionStanding = function(reputationPoints)
 	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
 	if reputationPoints then
@@ -122,8 +132,8 @@ app.GetFactionStanding = function(reputationPoints)
 	end
 	return 1, 0
 end
--- Given a maxReputation/minReputation table, will return the proper StandingID and Amount into that Standing associated with the data
 app.GetReputationStanding = function(reputationInfo)
+	-- Given a maxReputation/minReputation table, will return the proper StandingID and Amount into that Standing associated with the data
 	local factionID, standingOrAmount = reputationInfo[1], reputationInfo[2];
 	-- check if the Faction is actually a 'Renown' faction (Major Faction)
 	local majorFactionData = GetMajorFactionData(factionID);
@@ -148,6 +158,15 @@ app.GetReputationStanding = function(reputationInfo)
 		end
 	end
 end
+local function ColorizeStandingText(standingID, text)
+	-- Returns the 'text' colorized to match a specific standard 'StandingID'
+	local standing = StandingByID[standingID];
+	if standing then
+		return Colorize(text, standing.color);
+	else
+		return text;
+	end
+end
 local function GetCurrentFactionStandings(factionID, requestedStanding)
 	-- check if the Faction is actually a 'Renown' faction (Major Faction)
 	local majorFactionData = GetMajorFactionData(factionID);
@@ -165,30 +184,21 @@ local function GetCurrentFactionStandings(factionID, requestedStanding)
 	return requestedStanding or standing or 1, maxStanding;
 end
 app.GetCurrentFactionStandings = GetCurrentFactionStandings;
--- Returns the 'text' colorized to match a specific standard 'StandingID'
-local function ColorizeStandingText(standingID, text)
-	local standing = StandingByID[standingID];
-	if standing then
-		return Colorize(text, standing.color);
-	else
-		local rgb = FACTION_BAR_COLORS[standingID];
-		return ColorizeRGB(text, rgb.r, rgb.g, rgb.b);
-	end
-end
--- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
+
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
-	local standing, maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
+	-- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
+	local standingID, maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
 	if isRenown then
-		local progress = math_min(standing, maxStanding) / maxStanding;
+		local progress = math_min(standingID, maxStanding) / maxStanding;
 			-- Renown %d
-		return Colorize(textOverride or COVENANT_RENOWN_LEVEL_TOAST:format(standing), GetProgressColor(progress));
+		return Colorize(textOverride or COVENANT_RENOWN_LEVEL_TOAST:format(standingID), GetProgressColor(progress));
 	end
 	local friendStandingText = GetFriendshipReputation(factionID, "reaction");
 	if friendStandingText then
 		-- adjust relative to max based on the actual max ranks of the friendship faction
-		-- prevent any weirdness of requesting a standing higher than the max for the friendship
-		local progress = math_min(standing, maxStanding) / maxStanding;
-		-- if we requested a specific standing, we can't rely on the friendship text to be accurate
+		-- prevent any weirdness of requesting a standingID higher than the max for the friendship
+		local progress = math_min(standingID, maxStanding) / maxStanding;
+		-- if we requested a specific standingID, we can't rely on the friendship text to be accurate
 		if requestedStanding and not textOverride then
 			-- Rank %d
 			friendStandingText = AZERITE_ESSENCE_RANK:format(requestedStanding);
@@ -196,15 +206,14 @@ app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textO
 		-- friendships simply colored based on rank progress, some friendships have more ranks than faction standings... makes it weird to correlate them
 		return Colorize(textOverride or friendStandingText, GetProgressColor(progress));
 	end
-	return ColorizeStandingText(standing, textOverride or friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
+	return ColorizeStandingText(standingID, textOverride or friendStandingText or _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
--- This is ONLY used by the ItemHarvester to try and find related Faction from an Item tooltip
-app.GetFactionStandingThresholdFromString = function(replevel)
-	replevel = replevel:trim();
-	for standing=1,8,1 do
-		if _G["FACTION_STANDING_LABEL" .. standing] == replevel then
-			return StandingByID[standing].threshold;
-		end
+app.CreateFactionStandingFromText = function(text)
+	local faction,replevel = ("-"):split(text);
+	local factionID = FactionIDByName[faction:trim()];
+	if factionID then
+		local standing = StandingByName[replevel:trim()];
+		if standing then return { factionID, standing.threshold }; end
 	end
 end
 
@@ -335,3 +344,55 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 	end,
 },
 function(t) return GetFriendshipReputation(t.factionID); end);
+
+-- Information Type hook for Events
+app.AddEventHandler("OnLoad", function()
+	app.Settings.CreateInformationType("Required Reputation", {
+		ShouldDisplayInExternalTooltips = false,
+		ForceActive = true,
+		HideCheckBox = true,
+		priority = 2.9,
+		text = "Required Reputation",
+		Process = function(t, reference, tooltipInfo)
+			local mi, ma = reference.minReputation, reference.maxReputation;
+			if mi or ma then
+				if mi and (not ma or mi[1] ~= ma[1]) then
+					local standingId, offset = app.GetReputationStanding(mi)
+					local factionID = mi[1];
+					local factionName = FactionNameByID[factionID] or "the opposite faction";
+					local msg = L["MINUMUM_STANDING"]
+					if offset ~= 0 then msg = msg .. " " .. offset end
+					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
+					tinsert(tooltipInfo, {
+						left = msg,
+					});
+				end
+				if ma and (not mi or mi[1] ~= ma[1]) then
+					local standingId, offset = app.GetReputationStanding(ma)
+					local factionID = ma[1];
+					local factionName = FactionNameByID[factionID] or "the opposite faction";
+					local msg = L["MAXIMUM_STANDING"]
+					if offset ~= 0 then msg = msg .. " " .. offset end
+					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
+					tinsert(tooltipInfo, {
+						left = msg,
+					});
+				end
+				if mi and ma and mi[1] == ma[1] then
+					local minStandingId, minOffset = app.GetReputationStanding(mi)
+					local maxStandingId, maxOffset = app.GetReputationStanding(ma)
+					local factionID = mi[1];
+					local factionName = FactionNameByID[factionID] or "the opposite faction";
+					local msg = L["MIN_MAX_STANDING"]
+					if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
+					if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
+					tinsert(tooltipInfo, {
+						left = msg,
+					});
+				end
+			end
+		end,
+	});
+end);

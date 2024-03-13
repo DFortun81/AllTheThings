@@ -45,8 +45,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
 									text = text:trim():sub(9);
 									if text:find("-") then
-										local faction,replevel = ("-"):split(text);
-										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
+										t.info.minReputation = app.CreateFactionStandingFromText(text);
 									else
 										if text:find("%(") then
 											if t.info.requireSkill then

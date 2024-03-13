@@ -6269,8 +6269,7 @@ app.CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHa
 									if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
 										text = text:trim():sub(9);
 										if text:find("-") then
-											local faction,replevel = ("-"):split(text);
-											t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
+											t.info.minReputation = app.CreateFactionStandingFromText(text);
 										else
 											if text:find("%(") then
 												if t.info.requireSkill then
@@ -8876,43 +8875,6 @@ RowOnEnter = function (self)
 				r = 1, g = 1, b = 1
 			});
 		end
-	end
-	local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
-	if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
-		local standingId, offset = app.GetReputationStanding(reference.minReputation)
-		local factionID = reference.minReputation[1];
-		local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
-		local msg = L["MINUMUM_STANDING"]
-		if offset ~= 0 then msg = msg .. " " .. offset end
-		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-		tinsert(tooltipInfo, {
-			left = msg,
-		});
-	end
-	if maxReputation and (not minReputation or minReputation[1] ~= maxReputation[1]) then
-		local standingId, offset = app.GetReputationStanding(reference.maxReputation)
-		local factionID = reference.maxReputation[1];
-		local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
-		local msg = L["MAXIMUM_STANDING"]
-		if offset ~= 0 then msg = msg .. " " .. offset end
-		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
-		tinsert(tooltipInfo, {
-			left = msg,
-		});
-	end
-	if minReputation and maxReputation and minReputation[1] == maxReputation[1] then
-		local minStandingId, minOffset = app.GetReputationStanding(reference.minReputation)
-		local maxStandingId, maxOffset = app.GetReputationStanding(reference.maxReputation)
-		local factionID = reference.minReputation[1];
-		local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
-		local msg = L["MIN_MAX_STANDING"]
-		if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
-		if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-		msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
-		tinsert(tooltipInfo, {
-			left = msg,
-		});
 	end
 	if reference.speciesID then
 		-- TODO: Once we move the Battle Pets to their own class file, add this using settings.AppendInformationTextEntry to the speciesID InformationType.
