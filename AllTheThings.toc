@@ -111,6 +111,7 @@ src\UI\World Map Button.lua
 
 # Once Item Class is added above, move this there.
 src\Classes\Toys.lua
+#src\Classes\Ensembles.lua
 
 # Window Logic Overhaul
 src\UI\Shared Window Logic.lua
