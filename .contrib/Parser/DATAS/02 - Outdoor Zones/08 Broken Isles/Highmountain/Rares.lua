@@ -128,7 +128,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(96072,  {	-- Durguth
-					["isWorldQuest"] = true,
+					["isDaily"] = true,
 					["description"] = "This rare is only available when its associated world quest is active.",
 					["questID"] = 41093,
 					["coord"] = { 43.8, 75.6, HIGHMOUNTAIN },
