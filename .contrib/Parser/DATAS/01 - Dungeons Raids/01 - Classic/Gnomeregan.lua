@@ -143,7 +143,8 @@ SetItemFilter(215436, TOTEMS);	-- Totem of Invigorating Flame
 
 local SOD_DISABLE_NORMAL_MODE = [[function(t)
 	if getmetatable(AllTheThingsSettings.Unobtainable).__index[1605] then
-		t.u = 2;
+		local function recurse(o) o.u = 2; if o.g then for i,p in ipairs(o.g) do recurse(p); end end end
+		recurse(t);
 		t.OnUpdate = nil;
 	end
 end]];
@@ -430,7 +431,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			MATRIX_PUNCHOGRAPH_C,
 			MATRIX_PUNCHOGRAPH_D,
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
-			d(NORMAL_DUNGEON, bubbleDownSelf({ ["OnUpdate"] = SOD_DISABLE_NORMAL_MODE }, {
+			d(NORMAL_DUNGEON, {
+				["OnUpdate"] = SOD_DISABLE_NORMAL_MODE,
+				["groups"] = {
 			-- #endif
 			n(QUESTS, {
 				q(2904, {	-- A Fine Mess
@@ -1064,7 +1067,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			})),
+			}}),
 			applyclassicphase(SOD_PHASE_TWO, d(3, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {	-- 10-Player
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
 				["difficulties"] = { 198 },
