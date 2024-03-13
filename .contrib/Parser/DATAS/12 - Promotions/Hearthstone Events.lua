@@ -34,6 +34,13 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 	icon = "Interface\\Icons\\Inv_misc_rune_01",
 	text = {
 		en = "Hearthstone's 10th Anniversary",
+		es = "10.º aniversario de Hearthstone",
+		de = "10. Jubiläum von Hearthstone",
+		fr = "10e anniversaire de Hearthstone",
+		it = "10° anniversario di Hearthstone",
+		pt = "10º Aniversário de Hearthstone",
+		ru = "10-я годовщина Hearthstone",
+		cn = "《炉石传说》10周年",
 	},
 });
 root(ROOTS.Promotions, {
@@ -55,7 +62,7 @@ root(ROOTS.Promotions, {
 		-- Work in progress
 		["maps"] = {
 			DUROTAR,
-			STORMWIND,
+			STORMWIND_CITY,
 			VALDRAKKEN,
 		},
 		["timeline"] = { ADDED_10_2_5 },
@@ -70,11 +77,11 @@ root(ROOTS.Promotions, {
 				ach(19724),		-- Hearthstone Card Collection
 			}),
 			n(MAILBOX, {
-				i(212154),	-- Hearthstone Invitation Letter
+				i(212154),	-- Hearthstone Invitation Letter (QI!)
 			}),
 			n(QUESTS, {
 				q(79184, {	-- It's Hearthstone's Anniversary!
-					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter
+					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter (QI!)
 					["groups"] = {
 						i(212157),   -- An Invitation
 					},
@@ -82,14 +89,14 @@ root(ROOTS.Promotions, {
 				q(79178, {	-- Play Hearthstone!
 					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
 					["provider"] = { "n", 215409 },	-- MC Farala
-					--	["provider"] = { "i", 212979 },	-- Starter Deck
 					["coords"] = {
 					--	{ 61.6, 31.1, ORGRIMMAR },
 					--	{ 61.6, 31.1, STORMWIND_CITY },
 					--	{ 61.6, 31.1, VALDRAKKEN },
 					},
 					["groups"] = {
-						i(211965),   -- Hearthstone Wild Card
+						i(211965),	-- Hearthstone Wild Card
+						i(212979),	-- Hearthstone Starter Pack
 					},
 				}),
 				q(79693, {	-- Play Hearthstone!
@@ -100,7 +107,8 @@ root(ROOTS.Promotions, {
 						--	{ 61.6, 31.1, VALDRAKKEN },
 						},
 						["groups"] = {
-							i(211965),   -- Hearthstone Wild Card
+							i(211965),	-- Hearthstone Wild Card
+							i(212979),	-- Hearthstone Starter Pack
 						},
 				}),
 				q(79694, {	-- Play Hearthstone!
@@ -111,7 +119,8 @@ root(ROOTS.Promotions, {
 						--	{ 61.6, 31.1, VALDRAKKEN },
 						},
 						["groups"] = {
-							i(211965),   -- Hearthstone Wild Card
+							i(211965),	-- Hearthstone Wild Card
+							i(212979),	-- Hearthstone Starter Pack
 						},
 				}),
 			}),
@@ -202,7 +211,7 @@ root(ROOTS.Promotions, {
 				["description"] = "Granted to Players who login to Hearthstone between March 11 2024 and May 14 2024.",
 			}),
 			n(VENDORS, {
-				n(215385, {	-- Shaday Dealer
+				n(215385, {	-- Shady Dealer
 					["coord"] = { 60.6, 59.3, VALDRAKKEN },
 					["groups"] = {
 						i(211965),	-- Hearthstone Wild Card
