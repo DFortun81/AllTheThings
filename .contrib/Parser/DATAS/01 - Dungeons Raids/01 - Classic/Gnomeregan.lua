@@ -171,16 +171,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
 			n(REWARDS, {
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, i(213641, {	-- Box of Gnomeregan Salvage
-					i(216637),	-- A Pile of Random Parts
-					i(213378),	-- Unstable Microfilament
-					i(213370),	-- Irradiated Leather Scraps
-					i(213381),	-- Pile of Tarnished Gears
-					i(213371),	-- Crate of Tainted Gniodine Solution
-					i(213373),	-- Reflective Scrapmetal
-				})),
-				-- #endif
 				i(9363, {	-- Sparklematic-Wrapped Box
 					["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
 					["groups"] = {
@@ -897,154 +887,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 20,
 				}),
 			}),
-			n(VENDORS, {
-				n(217689, {	-- Ziri "The Wrench" Littlesprocket <Gearhead>
-					["description"] = "Located in the Clean Zone.",
-					["groups"] = {
-						-- Recipes
-						i(215141, {	-- Enchanted Sigil: Innovation
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215138, {	-- Formula: Enchant Chest - Retricutioner
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215129, {	-- Formula: Enchant Weapon - Dismantle
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215367, {	-- Pattern: Faintly Glowing Leather
-							["cost"] = 150000,	-- 15g
-						}),
-						i(215152, {	-- Pattern: Glowing Gneuro-Linked Cowl
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215422, {	-- Pattern: Glowing Hyperconductive Scale Coif
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215423, {	-- Pattern: Gneuro-Conductive Channeler's Hood
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215149, {	-- Pattern: Gneuro-Linked Arcano-Filament Monocle
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215368, {	-- Pattern: Hyperconductive Arcano-Filament
-							["cost"] = 150000,	-- 15g
-						}),
-						i(215424, {	-- Pattern: Rad-Resistant Scale Hood
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215384, {	-- Plans: Low-Background Truesilver Plates
-							["cost"] = 150000,	-- 15g
-						}),
-						i(215383, {	-- Plans: Reflective Truesilver Braincage
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215155, {	-- Plans: Tempered Interference-Negating Helmet
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215433, {	-- Recipe: Insulating Gniodine
-							["cost"] = 150000,	-- 15g
-						}),
-						i(215163, {	-- Recipe: Mildly-Irradiated Rejuvenation Potion
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215432, {	-- Schematic: Ez-Thro Radiation Bomb
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215431, {	-- Schematic: High-Yield Radiation Bomb
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215156, {	-- Schematic: Hyperconductive Goldwrap
-							["cost"] = 250000,	-- 25g
-						}),
-						i(215429, {	-- Schematic: Polished Truesilver Gears
-							["cost"] = 250000,	-- 15g
-						}),
-						i(215153, {	-- Schematic: Whirling Truesilver Gearwall
-							["cost"] = 250000,	-- 25g
-						}),
-						-- Plate
-						i(213316, {	-- H.A.Z.A.R.D. Breastplate
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(213330, {	-- H.A.Z.A.R.D. Legplates
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(213335, {	-- H.A.Z.A.R.D. Boots
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						i(216485, {	-- Shockforged Breastplate
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(216486, {	-- Shockforged Legplates
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(216484, {	-- Shockforged Battleboots
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						-- Mail
-						i(213314, {	-- Electromantic Chainmail
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(213315, {	-- Electromantic Chainshirt
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(213333, {	-- Electromantic Chausses
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(213334, {	-- Electromantic Gambeson
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(213338, {	-- Electromantic Grounding Boots
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						i(213339, {	-- Electromantic Grounding Sabatons
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						-- Leather
-						i(213312, {	-- Insulated Apron
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(213331, {	-- Insulated Leggings
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(213342, {	-- Insulated Galoshes
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						i(213313, {	-- Insulated Chestguard
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(213332, {	-- Insulated Legguards
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(213341, {	-- Insulated Workboots
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						-- Cloth
-						i(213311, {	-- Hyperconductive Robe
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(213328, {	-- Hyperconductive Pantaloons
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(213337, {	-- Hyperconductive Sandals
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						i(213310, {	-- Hyperconductive Shimmershirt
-							["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
-						}),
-						i(213329, {	-- Hyperconductive Skirt
-							["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
-						}),
-						i(213336, {	-- Hyperconductive Walkers
-							["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
-						}),
-						i(216646, {	-- Ziri's Mystery Crate
-							["description"] = "Contains random reagents and world drops within. Can also contain epics!",
-							["cost"] = {{ "i", 216637, 3 }},	-- A Pile of Random Parts
-						}),
-					},
-				}),
-			}),
 			MATRIX_PUNCHOGRAPH_A,
 			n(6231, {	-- Techbot
 				["description"] = "Located outside the instance near the teleporter.",
@@ -1338,6 +1180,37 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(216674),	-- Nogg's Brilliant Gold Ring
 							},
 						}),
+						q(79984, {	-- Quadrangulation
+							["qg"] = 7853,	-- Scooty <Chief Engineer>
+							["sourceQuest"] = 79981,	-- The Corroded Core
+							["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
+							["description"] = "You can technically skip this quest if you get summoned to the next one... But you're a Completionist, right? Right?!",
+							["maps"] = {
+								DUSTWALLOW_MARSH,
+								DESOLACE,
+								TANARIS,
+								FERALAS,
+							},
+							["lvl"] = 40,
+							["groups"] = {
+								objective(1, {	-- Quadrangulation Beacon 001
+									["provider"] = { "o", 424074 },	-- Quadrangulation Beacon 001
+									["coord"] = { 58.6, 13.0, DUSTWALLOW_MARSH },
+								}),
+								objective(2, {	-- Quadrangulation Beacon 002
+									["provider"] = { "o", 424075 },	-- Quadrangulation Beacon 002
+									["coord"] = { 32.01, 72.72, DESOLACE },
+								}),
+								objective(3, {	-- Quadrangulation Beacon 003
+									["provider"] = { "o", 424076 },	-- Quadrangulation Beacon 003
+									["coord"] = { 37.8, 27.3, TANARIS },
+								}),
+								objective(4, {	-- Quadrangulation Beacon 004
+									["provider"] = { "o", 424077 },	-- Quadrangulation Beacon 004
+									["coord"] = { 29.3, 93.8, FERALAS },
+								}),
+							},
+						}),
 						q(79987, {	-- Return of the Ring [Alliance]
 							["providers"] = {
 								{ "i", 216662 },	-- Brilliant Gold Ring
@@ -1378,6 +1251,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(216676),	-- Nimble Triprunner Dungarees
 								i(216678),	-- Triple Reinforced Leggings
 							},
+						}),
+						q(79705, {	-- Salvaging the Salvagematic
+							["qg"] = 217689,	-- Ziri "The Wrench" Littlesprocket <Gearhead>
+							["sourceQuest"] = 79626,	-- The Salvagematic 9000!
+							["cost"] = {
+								{ "i", 3860, 10 },	-- Mithril Bar
+								{ "i", 11135, 5 },	-- Greater Mystic Essence
+								{ "i", 216634, 3 },	-- GG12-082 Cartridge Fuse
+								{ "i", 213735, 1 },	-- Pristine G-7 C.O.R.E. Processor
+							},
+							["lvl"] = 40,
 						}),
 						q(80137, {	-- Save Techbot's Brain!
 							["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
@@ -1443,6 +1327,48 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(213345),	-- Piston Pendant
 							},
 						}),
+						q(80182, {	-- The Only Cure is More Green Glow
+							["qg"] = 1268,	-- Ozzie Togglevolt
+							["sourceQuest"] = 80139,	-- Gnogaine
+							["coord"] = { 45.8, 49.2, DUN_MOROGH },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 40,
+							["groups"] = {
+								objective(1, {	-- 0/1 High Potency Radioactive Fallout
+									["provider"] = { "i", 9365 },	-- High Potency Radioactive Fallout
+									["cost"] = { { "i", 9364, 1 } },	-- Heavy Leaden Collection Phial
+									["cr"] = 6219,	-- Corrosive Lurker
+								}),
+							},
+						}),
+						q(79626, {	-- The Salvagematic 9000!
+							["provider"] = { "o", 422483 },	-- The Salvagematic 9000
+							["cost"] = {
+								{ "i", 213427, 1 },	-- Grime-Encrusted Salvage
+								{ "g", 3000 },	-- 30s
+							},
+							["lvl"] = 40,
+						}),
+						q(79704, {	-- The Salvagematic 9000!
+							["provider"] = { "o", 422483 },	-- The Salvagematic 9000
+							["sourceQuest"] = 79705,	-- Salvaging the Salvagematic
+							["cost"] = {
+								{ "i", 213427, 1 },	-- Grime-Encrusted Salvage
+								{ "g", 3000 },	-- 30s
+							},
+							["repeatable"] = true,	-- TODO: Confirm this?
+							["lvl"] = 40,
+							["groups"] = {
+								i(213641, {	-- Box of Gnomeregan Salvage
+									i(216637),	-- A Pile of Random Parts
+									i(213378),	-- Unstable Microfilament
+									i(213370),	-- Irradiated Leather Scraps
+									i(213381),	-- Pile of Tarnished Gears
+									i(213371),	-- Crate of Tainted Gniodine Solution
+									i(213373),	-- Reflective Scrapmetal
+								}),
+							},
+						}),
 						q(80138, {	-- Tinkmaster Overspark
 							["qg"] = 7917,	-- Brother Sarno
 							-- #if AFTER WRATH
@@ -1469,6 +1395,155 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								i(213735),	-- Pristine G-7 C.O.R.E. Processor
+							},
+						}),
+					}),
+					n(VENDORS, {
+						n(217689, {	-- Ziri "The Wrench" Littlesprocket <Gearhead>
+							["sourceQuest"] = 79705,	-- Salvaging the Salvagematic
+							["description"] = "Located in the Clean Zone.",
+							["groups"] = {
+								-- Recipes
+								i(215141, {	-- Enchanted Sigil: Innovation
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215138, {	-- Formula: Enchant Chest - Retricutioner
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215129, {	-- Formula: Enchant Weapon - Dismantle
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215367, {	-- Pattern: Faintly Glowing Leather
+									["cost"] = 150000,	-- 15g
+								}),
+								i(215152, {	-- Pattern: Glowing Gneuro-Linked Cowl
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215422, {	-- Pattern: Glowing Hyperconductive Scale Coif
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215423, {	-- Pattern: Gneuro-Conductive Channeler's Hood
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215149, {	-- Pattern: Gneuro-Linked Arcano-Filament Monocle
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215368, {	-- Pattern: Hyperconductive Arcano-Filament
+									["cost"] = 150000,	-- 15g
+								}),
+								i(215424, {	-- Pattern: Rad-Resistant Scale Hood
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215384, {	-- Plans: Low-Background Truesilver Plates
+									["cost"] = 150000,	-- 15g
+								}),
+								i(215383, {	-- Plans: Reflective Truesilver Braincage
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215155, {	-- Plans: Tempered Interference-Negating Helmet
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215433, {	-- Recipe: Insulating Gniodine
+									["cost"] = 150000,	-- 15g
+								}),
+								i(215163, {	-- Recipe: Mildly-Irradiated Rejuvenation Potion
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215432, {	-- Schematic: Ez-Thro Radiation Bomb
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215431, {	-- Schematic: High-Yield Radiation Bomb
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215156, {	-- Schematic: Hyperconductive Goldwrap
+									["cost"] = 250000,	-- 25g
+								}),
+								i(215429, {	-- Schematic: Polished Truesilver Gears
+									["cost"] = 250000,	-- 15g
+								}),
+								i(215153, {	-- Schematic: Whirling Truesilver Gearwall
+									["cost"] = 250000,	-- 25g
+								}),
+								-- Plate
+								i(213316, {	-- H.A.Z.A.R.D. Breastplate
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(213330, {	-- H.A.Z.A.R.D. Legplates
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(213335, {	-- H.A.Z.A.R.D. Boots
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								i(216485, {	-- Shockforged Breastplate
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(216486, {	-- Shockforged Legplates
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(216484, {	-- Shockforged Battleboots
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								-- Mail
+								i(213314, {	-- Electromantic Chainmail
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(213315, {	-- Electromantic Chainshirt
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(213333, {	-- Electromantic Chausses
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(213334, {	-- Electromantic Gambeson
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(213338, {	-- Electromantic Grounding Boots
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								i(213339, {	-- Electromantic Grounding Sabatons
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								-- Leather
+								i(213312, {	-- Insulated Apron
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(213331, {	-- Insulated Leggings
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(213342, {	-- Insulated Galoshes
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								i(213313, {	-- Insulated Chestguard
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(213332, {	-- Insulated Legguards
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(213341, {	-- Insulated Workboots
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								-- Cloth
+								i(213311, {	-- Hyperconductive Robe
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(213328, {	-- Hyperconductive Pantaloons
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(213337, {	-- Hyperconductive Sandals
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								i(213310, {	-- Hyperconductive Shimmershirt
+									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+								}),
+								i(213329, {	-- Hyperconductive Skirt
+									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+								}),
+								i(213336, {	-- Hyperconductive Walkers
+									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+								}),
+								i(216646, {	-- Ziri's Mystery Crate
+									["description"] = "Contains random reagents and world drops within. Can also contain epics!",
+									["cost"] = {{ "i", 216637, 3 }},	-- A Pile of Random Parts
+								}),
 							},
 						}),
 					}),
