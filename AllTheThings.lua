@@ -15575,6 +15575,9 @@ end
 		return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
 			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 	end
+	function app:SearchLink(group)
+		return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
+	end
 	-- Turns a bit of text into a chat-sendable link which other ATT users will attempt to understand
 	-- function app:ChatLink(text, operation)
 	-- 	text = "|Hgarrmission:ATT:"..operation.."|h["..text.."]|h";
