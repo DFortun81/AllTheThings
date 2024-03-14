@@ -38,10 +38,10 @@ local SILVER_HAKKARI_BIJOU = 203772;
 local YELLOW_HAKKARI_BIJOU = 203773;
 local ZANDALAR_BARGAINING_TOKEN = 203914;
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
-	inst(76, {	-- Zul'Gurub
+	applyclassicphase(CATA_PHASE_TWO, inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,
-		["isRaid"] = false,	-- prevent merging isRaid from Classic version
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
+		["isRaid"] = false,	-- prevent merging isRaid from Classic version
 		["groups"] = {
 			d(HEROIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
@@ -888,7 +888,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

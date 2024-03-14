@@ -916,14 +916,14 @@ root(ROOTS.Zones, {
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Furious Gladiator's Set
 								["timeline"] = { "added 5.2.0.16577" },
 							}),
-							applyclassicphase(CATA_PHASE_THREE, n(54653, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
+							applyclassicphase(CATA_PHASE_FOUR, n(54653, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 7.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},},	-- Cataclysmic Gladiator's Set
 								-- #endif
 								["timeline"] = { "added 4.3.0", "removed 7.0.1" },
 							})),
-							applyclassicphase(CATA_PHASE_TWO, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
+							applyclassicphase(CATA_PHASE_THREE, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
@@ -1046,13 +1046,13 @@ root(ROOTS.Zones, {
 								-- #endif
 								["timeline"] = { "added 5.2.0.16577" },
 							}),
-							applyclassicphase(CATA_PHASE_THREE, n(54651, {	-- Zom Bocom <Honor Quartermaster>
+							applyclassicphase(CATA_PHASE_FOUR, n(54651, {	-- Zom Bocom <Honor Quartermaster>
 								-- #if BEFORE 5.2.0.16577
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
 								-- #endif
 								["timeline"] = { "added 4.3.0", "removed 5.2.0.16577" },
 							})),
-							applyclassicphase(CATA_PHASE_TWO, n(52534, {	-- Zom Bocom <Honor Quartermaster>
+							applyclassicphase(CATA_PHASE_THREE, n(52534, {	-- Zom Bocom <Honor Quartermaster>
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set

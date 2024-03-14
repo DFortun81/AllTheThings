@@ -3097,7 +3097,7 @@ profession(TAILORING, {
 					["name"] = "Illusionary Bag",
 					["recipeID"] = 75308
 				},
-				applyclassicphase(CATA_PHASE_TWO, {
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Luxurious Silk Gem Bag",
 					["recipeID"] = 100585
 				}),
@@ -3185,7 +3185,7 @@ profession(TAILORING, {
 			["name"] = "Bracers",
 			["categoryID"] = 978,
 			["groups"] = {
-				applyclassicphase(CATA_PHASE_THREE, {
+				applyclassicphase(CATA_PHASE_FOUR, {
 					["name"] = "Bracers of Unconquered Power",
 					["recipeID"] = 101923
 				}),
@@ -3193,7 +3193,7 @@ profession(TAILORING, {
 					["name"] = "Deathsilk Bracers",
 					["recipeID"] = 75249
 				},
-				applyclassicphase(CATA_PHASE_THREE, {
+				applyclassicphase(CATA_PHASE_FOUR, {
 					["name"] = "Dreamwraps of the Light",
 					["recipeID"] = 101922
 				}),
@@ -3249,11 +3249,11 @@ profession(TAILORING, {
 					["name"] = "Deathsilk Gloves",
 					["recipeID"] = 75253
 				},
-				applyclassicphase(CATA_PHASE_TWO, {
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Don Tayo's Inferno Mittens",
 					["recipeID"] = 99449
 				}),
-				applyclassicphase(CATA_PHASE_TWO, {
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Grips of Altered Reality",
 					["recipeID"] = 99448
 				}),
@@ -3287,7 +3287,7 @@ profession(TAILORING, {
 					["name"] = "Flame-Ascended Pantaloons",
 					["recipeID"] = 75301
 				},
-				applyclassicphase(CATA_PHASE_THREE, {
+				applyclassicphase(CATA_PHASE_FOUR, {
 					["name"] = "Lavaquake Legwraps",
 					["recipeID"] = 101921
 				}),
@@ -3303,7 +3303,7 @@ profession(TAILORING, {
 					["name"] = "Vicious Fireweave Pants",
 					["recipeID"] = 75302
 				},
-				applyclassicphase(CATA_PHASE_THREE, {
+				applyclassicphase(CATA_PHASE_FOUR, {
 					["name"] = "World Mender's Pants",
 					["recipeID"] = 101920
 				}),
@@ -3313,7 +3313,7 @@ profession(TAILORING, {
 			["name"] = "Boots",
 			["categoryID"] = 982,
 			["groups"] = {
-				applyclassicphase(CATA_PHASE_TWO, {
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Boots of the Black Flame",
 					["recipeID"] = 99460
 				}),
@@ -3321,7 +3321,7 @@ profession(TAILORING, {
 					["name"] = "Deathsilk Boots",
 					["recipeID"] = 75252
 				},
-				applyclassicphase(CATA_PHASE_TWO, {
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Endless Dream Walkers",
 					["recipeID"] = 99459
 				}),
@@ -6369,19 +6369,19 @@ applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 44917, 26
 -- #if AFTER CATA
 itemrecipe("Pattern: Belt of the Depths", 54601, 75298, CATA_PHASE_ONE);
 itemrecipe("Pattern: Black Embersilk Gown", 68199, 75288, CATA_PHASE_ONE);
-itemrecipe("Pattern: Boots of the Black Flame", 69976, 99460, CATA_PHASE_TWO);
-itemrecipe("Pattern: Bracers of Unconquered Power", 72004, 101923, CATA_PHASE_THREE);
+itemrecipe("Pattern: Boots of the Black Flame", 69976, 99460, CATA_PHASE_THREE);
+itemrecipe("Pattern: Bracers of Unconquered Power", 72004, 101923, CATA_PHASE_FOUR);
 itemrecipe("Pattern: Breeches of Mended Nightmares", 54603, 75300, CATA_PHASE_ONE);
-itemrecipe("Pattern: Don Tayo's Inferno Mittens", 69966, 99449, CATA_PHASE_TWO);
+itemrecipe("Pattern: Don Tayo's Inferno Mittens", 69966, 99449, CATA_PHASE_THREE);
 itemrecipe("Pattern: Dreamless Belt", 54602, 75299, CATA_PHASE_ONE);
-itemrecipe("Pattern: Dreamwraps of the Light", 72003, 101922, CATA_PHASE_THREE);
+itemrecipe("Pattern: Dreamwraps of the Light", 72003, 101922, CATA_PHASE_FOUR);
 itemrecipe("Pattern: Endless Dream Walkers", 69975, 99459, CATA_PHASE_ONE);
 itemrecipe("Pattern: Flame-Ascended Pantaloons", 54604, 75301, CATA_PHASE_ONE);
-itemrecipe("Pattern: Grips of Altered Reality", 69965, 99448, CATA_PHASE_TWO);
+itemrecipe("Pattern: Grips of Altered Reality", 69965, 99448, CATA_PHASE_THREE);
 itemrecipe("Pattern: High Society Top Hat", 67541, 75289, CATA_PHASE_ONE);
 itemrecipe("Pattern: Illusionary Bag", 54605, 75308, CATA_PHASE_ONE);
-itemrecipe("Pattern: Lavaquake Legwraps", 72002, 101921, CATA_PHASE_THREE);
-itemrecipe("Pattern: Luxurious Silk Gem Bag", 70176, 100585, CATA_PHASE_TWO);
+itemrecipe("Pattern: Lavaquake Legwraps", 72002, 101921, CATA_PHASE_FOUR);
+itemrecipe("Pattern: Luxurious Silk Gem Bag", 70176, 100585, CATA_PHASE_THREE);
 itemrecipe("Pattern: Powerful Enchanted Spellthread", 54599, 75309, CATA_PHASE_ONE);
 itemrecipe("Pattern: Powerful Ghostly Spellthread", 54600, 75310, CATA_PHASE_ONE);
 itemrecipe("Pattern: Vicious Embersilk Cowl", 54593, 75306, CATA_PHASE_ONE);
@@ -6390,7 +6390,7 @@ itemrecipe("Pattern: Vicious Embersilk Robe", 54595, 75305, CATA_PHASE_ONE);
 itemrecipe("Pattern: Vicious Fireweave Cowl", 54596, 75304, CATA_PHASE_ONE);
 itemrecipe("Pattern: Vicious Fireweave Pants", 54597, 75302, CATA_PHASE_ONE);
 itemrecipe("Pattern: Vicious Fireweave Robe", 54598, 75303, CATA_PHASE_ONE);
-itemrecipe("Pattern: World Mender's Pants", 72000, 101920, CATA_PHASE_THREE);
+itemrecipe("Pattern: World Mender's Pants", 72000, 101920, CATA_PHASE_FOUR);
 -- #endif
 
 -- Never Implemented Recipe and Crafted Item Database

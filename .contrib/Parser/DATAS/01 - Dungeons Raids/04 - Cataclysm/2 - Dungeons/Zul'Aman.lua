@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
-	inst(77, {	-- Zul'Aman
+	applyclassicphase(CATA_PHASE_TWO, inst(77, {	-- Zul'Aman
 		["mapID"] = ZULAMAN,
-		["isRaid"] = false,	-- prevent merging isRaid from BC version
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
+		["isRaid"] = false,	-- prevent merging isRaid from BC version
 		["groups"] = {
 			d(HEROIC_DUNGEON, {
 				["groups"] = {
@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

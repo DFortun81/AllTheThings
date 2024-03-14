@@ -57,8 +57,9 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = 3303;
 -- NOTE: Reason for this is to show when stuff is going away eventually.
 -- Cataclysm Classic Phases
 CATA_PHASE_ONE = 40;
-CATA_PHASE_TWO = 41;
-CATA_PHASE_THREE = 42;
+CATA_PHASE_TWO = 41;	-- ZA/ZG
+CATA_PHASE_THREE = 42;	-- Firelands
+CATA_PHASE_FOUR = 43;	-- Dragonsoul
 
 -- Mists of Pandaria Classic Phases
 MOP_PHASE_ONE = 50;
