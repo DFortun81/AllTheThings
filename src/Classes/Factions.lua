@@ -176,9 +176,10 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 	end,
 	["title"] = function(t)
 		local title = t.standingText;
-		local reputation = t.reputation;
-		local amount, ceiling = select(2, GetFactionStanding(reputation)), t.ceiling;
-		if ceiling then
+		local ceiling = t.ceiling;
+		if ceiling and ceiling > 0 then
+			local reputation = t.reputation;
+			local amount = select(2, GetFactionStanding(reputation));
 			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
 			if reputation < 42000 then
 				return title .. " (" .. (42000 - reputation) .. " to " .. Exalted.name .. ")";
@@ -253,12 +254,12 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	end,
 	title = function(t)
 		local title = t.standingText;
-		local ceiling = t.ceiling;
-		if ceiling then
-			local reputation = t.reputation;
-			title = title .. DESCRIPTION_SEPARATOR .. reputation .. " / " .. ceiling;
-			if reputation < 42000 then
-				return title .. " (" .. (42000 - reputation) .. ")";
+		local info = t.friendInfo;
+		if info.reactionThreshold then
+			if info.nextThreshold then
+				title = title .. DESCRIPTION_SEPARATOR .. (info.standing - info.reactionThreshold) .. " / " .. (info.nextThreshold - info.reactionThreshold);
+				local remaining = info.maxRep - info.standing;
+				if remaining > 0 then return title .. " (" .. remaining .. ")"; end
 			end
 		end
 		return title;
@@ -304,12 +305,16 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 	end,
 	title = function(t)
 		local info = t.renownInfo;
-		local title = t.standingText .. DESCRIPTION_SEPARATOR .. info.renownReputationEarned .. " / " .. info.renownLevelThreshold;
-		
-		local maxstanding = t.maxstanding;
-		local remaining = (maxstanding * 2500) - (((info.renownLevel - 1) * 2500) + info.renownReputationEarned);	-- 2500 per renown level
-		if remaining > 0 then
-			title = title .. " (" .. remaining .. " to " .. COVENANT_RENOWN_LEVEL_TOAST:format(maxstanding)  .. ")";
+		local standing, maxstanding = info.renownLevel, t.maxstanding;
+		local title = Colorize(COVENANT_RENOWN_LEVEL_TOAST:format(standing),
+			GetProgressColor(math_min(standing, maxstanding) / maxstanding));
+		if standing < maxstanding then
+			title = title .. DESCRIPTION_SEPARATOR .. info.renownReputationEarned .. " / " .. info.renownLevelThreshold;
+			
+			local remaining = (maxstanding * 2500) - ((standing * 2500) + info.renownReputationEarned);	-- 2500 per renown level
+			if remaining > 0 then
+				title = title .. " (" .. remaining .. " to " .. COVENANT_RENOWN_LEVEL_TOAST:format(maxstanding)  .. ")";
+			end
 		end
 		return title;
 	end,
