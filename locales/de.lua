@@ -40,7 +40,6 @@ local L = app.L;
 	L.SOURCES_DESC = "Zeigt die Quelle dieses Dings an.\n\nInsbesondere, ein bestimmter Händler/NPC, Quest, Boss, etc.";
 	L.WRONG_FACTION = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um dies anschauen zu können.";
 	L.ARTIFACT_INTRO_REWARD = "Belohnung für das Abschließen der Einführungsquest dieses Artifakts.";
-	L.FACTION_SPECIFIC_REP = "Nicht alle Fraktionen können mit einem Charakter angesehen werden. z.B. der Kriegshymnenklan kann nicht mit einem Allianz Charakter angesehen werden, und die Silberschwingen können nicht mit einem Horde Charakter angesehen werden.";
 	L.VISIT_FLIGHT_MASTER = "Besucht den Greifenmeister für die Entdeckung.";
 	L.FLIGHT_PATHS_DESC = "Flugpunkte werden entdeckt, indem Ihr mit dem Flugmeister sprecht.\n  - Crieve";
 	L.FOLLOWERS_COLLECTION_DESC = "Anhänger können Accountweit gesammelt werden, wenn Ihr diese Einstellung aktiviert.\n\nIhr müsst das Addon manuell mit "..SHIFT_KEY_TEXT.." Linksklick auf die Kopfzeile aktualisieren, damit dies erkannt wird.";
@@ -78,11 +77,12 @@ local L = app.L;
 	L.AUCTIONATOR_GROUPS = "Suchen durch Gruppen-basis sind nur durch Auctionator möglich.";
 	L.TSM4_ERROR = "TSM4 is noch nicht kompatibel mit ATT. Wenn Sie wissen wie mann Presets kreiert so wie wir es mit TSM3 gemacht haben, bitte nehmem Sie Kontakt auf mit Crieve durch Discord.";
 	L.QUEST_MAY_BE_REMOVED = "Information konnte nicht beschaffen werden. Die Quest wurde möglicherweise von dem Spiel entfernt.";
-	L.MINUMUM_STANDING = "Erfordert mindestens einen Ruf von";
-	L._WITH_ = " bei ";
-	L._AND = " und";
-	L.MAXIMUM_STANDING = "Erfordert einen niedrigeren Ruf als";
-	L.MIN_MAX_STANDING = "Erfordert einen Ruf zwischen";
+	
+	L.FACTION_SPECIFIC_REP = "Nicht alle Fraktionen können mit einem Charakter angesehen werden. z.B. der Kriegshymnenklan kann nicht mit einem Allianz Charakter angesehen werden, und die Silberschwingen können nicht mit einem Horde Charakter angesehen werden.";
+	L.MINUMUM_STANDING_WITH_FACTION = "Erfordert mindestens einen Ruf von %s bei %s.";
+	L.MAXIMUM_STANDING_WITH_FACTION = "Erfordert einen niedrigeren Ruf als %s bei %s.";
+	L.MIN_MAX_STANDING_WITH_FACTION = "Erfordert einen Ruf zwischen %s und %s bei %s.";
+	
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
 	--TODO: L.ALIVE = "Alive";

@@ -376,11 +376,10 @@ app.AddEventHandler("OnLoad", function()
 					local threshold = faction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
 					faction.rank = standingId;
-					local msg = L["MINUMUM_STANDING"]
-					if offset ~= 0 then msg = msg .. " " .. offset end
-					msg = msg .. " " .. faction.rankText .. L["_WITH_"] .. faction.name .. "."
+					local rankText = faction.rankText;
+					if offset ~= 0 then rankText = offset .. " " .. rankText; end
 					tinsert(tooltipInfo, {
-						left = msg,
+						left = L.MINUMUM_STANDING_WITH_FACTION:format(rankText, faction.name),
 					});
 				end
 				if ma and (not mi or mi[1] ~= ma[1]) then
@@ -389,34 +388,32 @@ app.AddEventHandler("OnLoad", function()
 					local threshold = faction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
 					faction.rank = standingId;
-					local msg = L["MAXIMUM_STANDING"]
-					if offset ~= 0 then msg = msg .. " " .. offset end
-					msg = msg .. " " .. faction.rankText .. L["_WITH_"] .. faction.name .. "."
+					local rankText = faction.rankText;
+					if offset ~= 0 then rankText = offset .. " " .. rankText; end
 					tinsert(tooltipInfo, {
-						left = msg,
+						left = L.MAXIMUM_STANDING_WITH_FACTION:format(rankText, faction.name),
 					});
 				end
 				if mi and ma and mi[1] == ma[1] then
-					local faction = app.CreateFaction(mi[1]);
-					local msg = L["MIN_MAX_STANDING"]
-					
 					-- Min Standing
+					local faction = app.CreateFaction(mi[1]);
 					faction.reputation = mi[2];
 					local threshold = faction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
-					if offset ~= 0 then msg = msg .. " " .. offset end
 					faction.rank = standingId;
-					msg = msg .. " " .. faction.rankText .. L["_AND"]
+					local minRankText = faction.rankText;
+					if offset ~= 0 then minRankText = offset .. " " .. minRankText; end
 					
 					-- Max Standing
-					faction.reputation = ma[2];
-					local threshold = faction.reputationThreshold;
+					local maxFaction = app.CreateFaction(ma[1]);
+					maxFaction.reputation = ma[2];
+					local threshold = maxFaction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
-					if offset ~= 0 then msg = msg .. " " .. offset end
-					faction.rank = standingId;
-					msg = msg .. " " .. faction.rankText .. L["_WITH_"] .. faction.name .. ".";
+					maxFaction.rank = standingId;
+					local maxRankText = maxFaction.rankText;
+					if offset ~= 0 then maxRankText = offset .. " " .. maxRankText; end
 					tinsert(tooltipInfo, {
-						left = msg,
+						left = L.MIN_MAX_STANDING_WITH_FACTION:format(minRankText, maxRankText, faction.name);
 					});
 				end
 			end

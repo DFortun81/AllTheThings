@@ -75,12 +75,12 @@ for key, value in pairs({
 	["AUCTIONATOR_GROUPS"] = "Group-based searches are only supported using Auctionator.";
 	["TSM4_ERROR"] = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. ";
-	["MINUMUM_STANDING"] = "Requires a minimum standing of";
-	["_WITH_"] = " with ";
-	["_AND"] = " and";
-	["MAXIMUM_STANDING"] = "Requires a standing lower than";
-	["MIN_MAX_STANDING"] = "Requires a standing between";
+	
 	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	["MINUMUM_STANDING_WITH_FACTION"] = "Requires a minimum standing of %s with %s.";
+	["MAXIMUM_STANDING_WITH_FACTION"] = "Requires a standing lower than %s with %s.";
+	["MIN_MAX_STANDING_WITH_FACTION"] = "Requires a standing between %s and %s with %s.";
+	
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
 	["ALIVE"] = "Alive";

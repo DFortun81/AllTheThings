@@ -40,7 +40,6 @@ local L = app.L;
 	--TODO: L.SOURCES_DESC = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour afficher cela.";
 	L.ARTIFACT_INTRO_REWARD = "Attribué après avoir terminé la quête d’introduction de cet artefact.";
-	--TODO: L.FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	L.VISIT_FLIGHT_MASTER = "Rendez visite au Maître de vol pour mettre en cache.";
 	L.FLIGHT_PATHS_DESC = "Les trajets de vol sont mis en cache lorsque vous parlez au Maître de vol sur chaque continent.\n- Crieve";
 	--TODO: L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
@@ -78,11 +77,12 @@ local L = app.L;
 	--TODO: L.AUCTIONATOR_GROUPS = "Group-based searches are only supported using Auctionator.";
 	--TODO: L.TSM4_ERROR = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	L.QUEST_MAY_BE_REMOVED = "Impossible d’obtenir des informations. Cette quête a peut-être été supprimée du jeu. ";
-	L.MINUMUM_STANDING = "Il faut avoir obtenu une note minimale de";
-	L._WITH_ = " avec ";
-	L._AND = " et";
-	L.MAXIMUM_STANDING = "Il faut avoir obtenu une note inférieure à";
-	L.MIN_MAX_STANDING = "Il faut avoir obtenu une note entre";
+	
+	--TODO: L.FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	L.MINUMUM_STANDING_WITH_FACTION = "Il faut avoir obtenu une note minimale de %s avec %s.";
+	L.MAXIMUM_STANDING_WITH_FACTION = "Il faut avoir obtenu une note inférieure à %s avec %s.";
+	L.MIN_MAX_STANDING_WITH_FACTION = "Il faut avoir obtenu une note entre %s et %s avec %s.";
+	
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
 	--TODO: L.ALIVE = "Alive";

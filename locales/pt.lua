@@ -40,7 +40,6 @@ local L = app.L;
 	--TODO: L.SOURCES_DESC = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	--TODO: L.WRONG_FACTION = "You might need to be on the other faction to view this.";
 	--TODO: L.ARTIFACT_INTRO_REWARD = "Awarded for completing the introductory quest for this Artifact.";
-	--TODO: L.FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	--TODO: L.VISIT_FLIGHT_MASTER = "Visit the Flight Master to cache.";
 	--TODO: L.FLIGHT_PATHS_DESC = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
 	L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
@@ -78,11 +77,12 @@ local L = app.L;
 	--TODO: L.AUCTIONATOR_GROUPS = "Group-based searches are only supported using Auctionator.";
 	--TODO: L.TSM4_ERROR = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	--TODO: L.QUEST_MAY_BE_REMOVED = "Failed to acquire information. This quest may have been removed from the game. ";
-	--TODO: L.MINUMUM_STANDING = "Requires a minimum standing of";
-	--TODO: L._WITH_ = " with ";
-	--TODO: L._AND = " and";
-	--TODO: L.MAXIMUM_STANDING = "Requires a standing lower than";
-	--TODO: L.MIN_MAX_STANDING = "Requires a standing between";
+	
+	--TODO: L.FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	--TODO: L.MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s.";
+	--TODO: L.MAXIMUM_STANDING_WITH_FACTION = "Requires a standing lower than %s with %s.";
+	--TODO: L.MIN_MAX_STANDING_WITH_FACTION = "Requires a standing between %s and %s with %s.";
+	
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
 	--TODO: L.ALIVE = "Alive";
