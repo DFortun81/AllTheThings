@@ -68,6 +68,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 			}),
