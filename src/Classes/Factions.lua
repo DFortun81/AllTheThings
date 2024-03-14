@@ -302,6 +302,10 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 			return info.unlockDescription;
 		end
 	end,
+	title = function(t)
+		local info = t.renownInfo;
+		return t.standingText .. DESCRIPTION_SEPARATOR .. info.renownReputationEarned .. " / " .. info.renownLevelThreshold;
+	end,
 	reputationThreshold = function(t)
 		return { t.reputation, 0 };
 	end,
