@@ -118,22 +118,8 @@ setmetatable(StandingByName, { __index = function(t, name)
 	setmetatable(StandingByName, nil);
 	return StandingByName[name];
 end });
-app.GetFactionStanding = function(reputationPoints)
-	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
-	if reputationPoints then
-		if type(reputationPoints) == "table" then
-			return app.GetReputationStanding(reputationPoints);
-		end
-		for i=#StandingByID,1,-1 do
-			local threshold = StandingByID[i].threshold;
-			if reputationPoints >= threshold then
-				return i, threshold < 0 and (threshold - reputationPoints) or (reputationPoints - threshold);
-			end
-		end
-	end
-	return 1, 0
-end
-app.GetReputationStanding = function(reputationInfo)
+
+local function GetReputationStanding(reputationInfo)
 	-- Given a maxReputation/minReputation table, will return the proper StandingID and Amount into that Standing associated with the data
 	local factionID, standingOrAmount = reputationInfo[1], reputationInfo[2];
 	-- check if the Faction is actually a 'Renown' faction (Major Faction)
@@ -158,6 +144,21 @@ app.GetReputationStanding = function(reputationInfo)
 			end
 		end
 	end
+end
+local function GetFactionStanding(reputationPoints)
+	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
+	if reputationPoints then
+		if type(reputationPoints) == "table" then
+			return GetReputationStanding(reputationPoints);
+		end
+		for i=#StandingByID,1,-1 do
+			local threshold = StandingByID[i].threshold;
+			if reputationPoints >= threshold then
+				return i, threshold < 0 and (threshold - reputationPoints) or (reputationPoints - threshold);
+			end
+		end
+	end
+	return 1, 0
 end
 local function ColorizeStandingText(standingID, text)
 	-- Returns the 'text' colorized to match a specific standard 'StandingID'
@@ -184,9 +185,7 @@ local function GetCurrentFactionStandings(factionID, requestedStanding)
 	end
 	return requestedStanding or standing or 1, maxStanding;
 end
-app.GetCurrentFactionStandings = GetCurrentFactionStandings;
-
-app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
+local function GetCurrentFactionStandingText(factionID, requestedStanding, textOverride)
 	-- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
 	local standingID, maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
 	if isRenown then
@@ -209,14 +208,7 @@ app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textO
 	end
 	return ColorizeStandingText(standingID, textOverride or friendStandingText or _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
-app.CreateFactionStandingFromText = function(text)
-	local faction,replevel = ("-"):split(text);
-	local factionID = FactionIDByName[faction:trim()];
-	if factionID then
-		local standing = StandingByName[replevel:trim()];
-		if standing then return { factionID, standing.threshold }; end
-	end
-end
+
 
 local cache = app.CreateCache("factionID");
 local function CacheInfo(t, field)
@@ -233,9 +225,11 @@ local function CacheInfo(t, field)
 	if field then return _t[field]; end
 end
 
+
 app.CreateFaction = app.CreateClass("Faction", "factionID", {
-	["isHeader"] = function()
-		return true;
+	["text"] = function(t)
+		local name = t.name;
+		if name then return GetCurrentFactionStandingText(t.factionID, t.standing, name); end
 	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
@@ -250,10 +244,11 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		return app.asset("Category_Factions");
 	end,
 	["trackable"] = app.ReturnTrue,
+	["isHeader"] = app.ReturnTrue,
 	["collectible"] = function(t)
 		if app.Settings.Collectibles.Reputations then
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.
-			if not app.Settings.AccountWide.Reputations and t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
+			if not app.Settings.AccountWide.Reputations and t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= GetFactionStanding(t.maxReputation[2]) then
 				return false;
 			end
 			return true;
@@ -274,9 +269,9 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		end
 	end,
 	["title"] = function(t)
-		local title = app.GetCurrentFactionStandingText(t.factionID);
+		local title = GetCurrentFactionStandingText(t.factionID);
 		local reputation = t.reputation;
-		local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
+		local amount, ceiling = select(2, GetFactionStanding(reputation)), t.ceiling;
 		if ceiling then
 			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
 			if reputation < 42000 then
@@ -298,7 +293,7 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 	["maxstanding"] = function(t)
 		if t.minReputation and t.minReputation[1] == t.factionID then
 			app.PrintDebug("Faction with MinReputation??",t.factionID)
-			return app.GetFactionStanding(t.minReputation[2]);
+			return GetFactionStanding(t.minReputation[2]);
 		end
 		local _, maxStanding = GetCurrentFactionStandings(t.factionID);
 		t.maxStanding = maxStanding;
@@ -316,9 +311,9 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 			or app.asset("Category_Factions");
 	end,
 	title = function(t)
-		local title = app.GetCurrentFactionStandingText(t.factionID);
+		local title = GetCurrentFactionStandingText(t.factionID);
 		local reputation = t.reputation;
-		local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
+		local amount, ceiling = select(2, GetFactionStanding(reputation)), t.ceiling;
 		if ceiling then
 			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
 			if reputation < 42000 then
@@ -343,17 +338,31 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		return lore;
 	end,
 },
-function(t) return GetFriendshipReputation(t.factionID); end
---[[,
--- CRIEVE NOTE: At some point I'd like for this to interact with the renown API directly rather than in the helper files.
- Externally, we should be able to cache the faction object itself and have the faction object be responsible for this stuff.
+function(t) return GetFriendshipReputation(t.factionID); end,
 "WithRenown", {
-
+	
 }, function(t)
 	if GetMajorFactionData(t.factionID) then
 		return true;
 	end
-end]]);
+end);
+
+-- External APIs
+app.CreateFactionStandingFromText = function(text)
+	-- This is used by the ItemTooltipHarvester class.
+	local faction,replevel = ("-"):split(text);
+	local factionID = FactionIDByName[faction:trim()];
+	if factionID then
+		local standing = StandingByName[replevel:trim()];
+		if standing then return { factionID, standing.threshold }; end
+	end
+end
+
+-- TODO: For places that use these externally, use a cached faction object instead.
+-- I don't want to bloat helper functions with future faction api calls that don't exist.
+app.GetCurrentFactionStandings = GetCurrentFactionStandings;
+app.GetReputationStanding = GetReputationStanding;
+app.GetCurrentFactionStandingText = GetCurrentFactionStandingText;
 
 -- Information Type hook for Events
 app.AddEventHandler("OnLoad", function()
@@ -367,37 +376,37 @@ app.AddEventHandler("OnLoad", function()
 			local mi, ma = reference.minReputation, reference.maxReputation;
 			if mi or ma then
 				if mi and (not ma or mi[1] ~= ma[1]) then
-					local standingId, offset = app.GetReputationStanding(mi)
+					local standingId, offset = GetReputationStanding(mi)
 					local factionID = mi[1];
 					local factionName = FactionNameByID[factionID] or "the opposite faction";
 					local msg = L["MINUMUM_STANDING"]
 					if offset ~= 0 then msg = msg .. " " .. offset end
-					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
+					msg = msg .. " " .. GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
 					tinsert(tooltipInfo, {
 						left = msg,
 					});
 				end
 				if ma and (not mi or mi[1] ~= ma[1]) then
-					local standingId, offset = app.GetReputationStanding(ma)
+					local standingId, offset = GetReputationStanding(ma)
 					local factionID = ma[1];
 					local factionName = FactionNameByID[factionID] or "the opposite faction";
 					local msg = L["MAXIMUM_STANDING"]
 					if offset ~= 0 then msg = msg .. " " .. offset end
-					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
+					msg = msg .. " " .. GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
 					tinsert(tooltipInfo, {
 						left = msg,
 					});
 				end
 				if mi and ma and mi[1] == ma[1] then
-					local minStandingId, minOffset = app.GetReputationStanding(mi)
-					local maxStandingId, maxOffset = app.GetReputationStanding(ma)
+					local minStandingId, minOffset = GetReputationStanding(mi)
+					local maxStandingId, maxOffset = GetReputationStanding(ma)
 					local factionID = mi[1];
 					local factionName = FactionNameByID[factionID] or "the opposite faction";
 					local msg = L["MIN_MAX_STANDING"]
 					if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
+					msg = msg .. " " .. GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
 					if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-					msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
+					msg = msg .. " " .. GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
 					tinsert(tooltipInfo, {
 						left = msg,
 					});

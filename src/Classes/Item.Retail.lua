@@ -414,6 +414,21 @@ local itemFields = {
 -- Module imports
 itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
 itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
+
+-- This is used for the Grand Commendations unlocking Bonus Reputation
+local ItemWithFactionBonus = {
+	collected = function(t)
+		local factionID = t.factionID;
+		if ATTAccountWideData.FactionBonus[factionID] then return 1; end
+		if select(15, GetFactionInfoByID(factionID)) then
+			ATTAccountWideData.FactionBonus[factionID] = 1;
+			return 1;
+		end
+	end,
+	__condition = function(t)
+		return not t.repeatable;
+	end,
+}
 app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 "WithQuest", {
 	collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
@@ -435,34 +450,18 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 	end,
 	collected = function(t)
 		local factionID = t.factionID;
-		if factionID then
-			if t.repeatable then
-				-- This is used by reputation tokens. (turn in items)
-				-- quick cache checks
-				if app.CurrentCharacter.Factions[factionID] then return 1; end
-				if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[factionID] then return 2; end
+		-- This is used by reputation tokens. (turn in items)
+		-- quick cache checks
+		if app.CurrentCharacter.Factions[factionID] then return 1; end
+		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[factionID] then return 2; end
 
-				-- use the extended faction logic from the associated Faction for consistency
-				local cachedFaction = app.SearchForObject("factionID", factionID, "key");
-				if cachedFaction then return cachedFaction.collected; end
-
-				-- otherwise move on to the basic logic
-				local current, max = app.GetCurrentFactionStandings(factionID)
-				if current >= max then
-					app.CurrentCharacter.Factions[factionID] = 1;
-					ATTAccountWideData.Factions[factionID] = 1;
-					return 1;
-				end
-			else
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if ATTAccountWideData.FactionBonus[factionID] then return 1; end
-				if select(15, GetFactionInfoByID(factionID)) then
-					ATTAccountWideData.FactionBonus[factionID] = 1;
-					return 1;
-				end
-			end
-		end
+		-- use the extended faction logic from the associated Faction for consistency
+		local cachedFaction = app.SearchForObject("factionID", factionID, "key") or app.CreateFaction(factionID);
+		return cachedFaction.collected;
 	end,
+	variants = {
+		Bonus = ItemWithFactionBonus,
+	},
 }, (function(t) return t.factionID; end));
 
 local setmetatable = setmetatable
