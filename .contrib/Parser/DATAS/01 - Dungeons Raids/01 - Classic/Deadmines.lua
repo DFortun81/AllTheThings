@@ -707,10 +707,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					i(5191),	-- Cruel Barb
 					i(5443),	-- Gold-Plated Buckler
 					i(151062, {	-- Armbands of Exiled Architects
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151063, {	-- Gear-Marked Gauntlets
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132556, {	-- Smelter's Britches
 						["timeline"] = { "added 7.0.3.22248" },
@@ -726,13 +726,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					i(5187),	-- Foe Reaper [TBC+] / Rhahk'Zor's Hammer [Classic]
 					i(1937),	-- Buzz Saw
 					i(151066, {	-- Missing Diplomat's Pauldrons
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151064, {	-- Vest of the Curious Visitor
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151065, {	-- Old Friend's Gloves
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),

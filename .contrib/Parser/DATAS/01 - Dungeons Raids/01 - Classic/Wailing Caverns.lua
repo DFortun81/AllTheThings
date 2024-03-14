@@ -302,14 +302,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(9739),	-- Gem of Anacondra
 					i(151427, {	-- Snake-Charmer's Casque
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132737, {	-- Cavern Slitherer Pauldrons
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(5404),	-- Serpent's Shoulders
 					i(151426, {	-- Lady Anacondra's Satin Cuffs
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(10412),	-- Belt of the Fang
 					i(132740, {	-- Slither-Scale Cord
@@ -324,7 +324,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(13245),	-- Kresh's Back
 					i(6447),	-- Worn Turtle Shell Shield
 					i(151430, {	-- Hematite Tortoise Pendant
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -334,14 +334,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9740),	-- Gem of Pythas
 					i(6472),	-- Stinging Viper
 					i(151429, {	-- Lord Pythas' Pauldrons
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(6473),	-- Armor of the Fang
 					i(132739, {	-- Slither-Scale Hauberk
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(151428, {	-- Slumbersilk Waistcord
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),

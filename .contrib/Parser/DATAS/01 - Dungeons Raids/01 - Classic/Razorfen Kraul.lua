@@ -335,7 +335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { "added 6.0.2" },
 				["groups"] = {
 					i(151442, {	-- Bonetusk Cloak
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(6681),	-- Thornspike
 					i(6689, {	-- Wind Spirit Staff
@@ -349,7 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(6691),	-- Swinetusk Shank
 					i(151443, {	-- Roogug's Swinesteel Girdle
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132565, {	-- Carnal Britches
 						["timeline"] = { "added 7.0.3.22248" },
@@ -380,7 +380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(6686),	-- Tusken Helm
 					i(6685),	-- Death Speaker Mantle
 					i(151445, {	-- Porcine-Warlord's Legplates
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(6688, {	-- Whisperwind Headdress
 						["timeline"] = { ADDED_10_1_7 },

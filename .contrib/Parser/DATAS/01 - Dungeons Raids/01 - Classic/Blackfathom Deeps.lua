@@ -721,12 +721,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { "added 6.0.1.18322" },
 				["groups"] = {
 					i(151433, {	-- Thick Shellplate Shoulders
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(6907),	-- Tortoise Armor
 					i(6908),	-- Ghamoo-Ra's Bind
 					i(151432, {	-- Twilight Turtleskin Leggings
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -741,10 +741,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(888),		-- Naga Battle Gloves
 					i(151435, {	-- Domina's Deathmaw Greaves
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151434, {	-- Foul Shadowsleet Slippers
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -755,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(6905),	-- Reef Axe
 					i(6906),	-- Algae Fists
 					i(151436, {	-- Murloc Oppressor's Band
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -773,7 +773,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { "added 6.0.2.18816" },
 					}),
 					i(151437, {	-- Hook Charm Necklace
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -810,14 +810,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(1155),	-- Rod of the Sleepwalker
 					i(151440, {	-- Blackfathom Ascendant's Helm
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151439, {	-- Bathiel's Scale Spaulders
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(6903),	-- Gaze Dreamer Pants
 					i(151438, {	-- Hungering Deepwater Treads
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -836,7 +836,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(6910),	-- Leech Pants
 					i(151441, {	-- Aku'mai Worshipper's Greatboots
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),

@@ -3467,7 +3467,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						47835,	-- The Hand of Fate
 					},
 					["coord"] = { 58.2, 12.0, DUROTAR },
-					["timeline"] = { "added 7.3.0.24492" },
+					["timeline"] = { ADDED_7_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25194, {	-- Unbidden Visitors

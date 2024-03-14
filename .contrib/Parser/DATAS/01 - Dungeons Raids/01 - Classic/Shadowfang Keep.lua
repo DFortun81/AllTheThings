@@ -1964,16 +1964,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(6341),	-- Eerie Stable Lantern
 						-- #endif
 						i(151069, {	-- Breastplate of the Stilled Heart
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(151070, {	-- Gloves of the Greymane Wall
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(151067, {	-- Boots of Lingering Sorrow
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(151068, {	-- Boots of the Predator
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 					},
 				}),
@@ -2088,14 +2088,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(6318),	-- Odo's Ley Staff
 						i(6220),	-- Meteor Shard
 						i(151072, {	-- Worgen Hunter's Helm
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(3748),	-- Feline Mantle
 						i(151071, {	-- Gloves of the Uplifted Cup
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(151073, {	-- Greaves of the Misguided
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 					},
 				}),

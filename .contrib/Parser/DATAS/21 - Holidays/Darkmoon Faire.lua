@@ -3913,7 +3913,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 4.3.0.15005" },
 					})),
 					darkmoonprizeticket(1000, i(153485, {	-- Darkmoon Dirigible (MOUNT!)
-						["timeline"] = { "added 7.3.0.24781" },
+						["timeline"] = { ADDED_7_3_0 },
 					})),
 					darkmoonprizeticket(90, i(91003, {	-- Darkmoon Hatchling (PET!)
 						["timeline"] = { ADDED_5_1_0 },

@@ -371,11 +371,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(17702),	-- Celebrian Rod
 							i(17745),	-- Noxious Shooter
 							i(151450, {	-- Chainmail of the Noxious Hollow
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(17746),	-- Noxxion's Shackles
 							i(151449, {	-- Fungal-Spore Cinch
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(17744),	-- Heart of Noxxion
 						},
@@ -388,7 +388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(17749),	-- Phytoskin Spaulders
 							i(151451, {	-- Strip-Thorn Gauntlets
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(17750),	-- Chloromesh Girdle
 							i(17751),	-- Brusslehide Leggings
@@ -411,7 +411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(17717),	-- Megashot Rifle
 							i(17718),	-- Gizlock's Hypertech Buckler
 							i(151446, {	-- Tinkerer's Pinkie Cylinder
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 						},
 					}),
@@ -422,10 +422,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(17703),	-- Celebrian Diamond
 							i(17752),	-- Satyr's Lash
 							i(151448, {	-- Lord Vyletongue's Satyrplate
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(151447, {	-- Zaetar-kin Wristwraps
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(17755),	-- Satyrmane Sash
 							i(17754),	-- Infernal Trickster Leggings
@@ -481,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(17717),	-- Megashot Rifle
 							i(17718),	-- Gizlock's Hypertech Buckler
 							i(151446, {	-- Tinkerer's Pinkie Cylinder
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 						},
 					}),
@@ -493,7 +493,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(17730),	-- Gatorbite Axe
 							i(17732),	-- Rotgrip Mantle
 							i(151452, {	-- Crocolisk Wrestler's Waistguard
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(17728),	-- Albino Crocscale Boots
 							i(132564, {	-- Albino Crocscale Waders

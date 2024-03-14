@@ -105,10 +105,10 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { "added 7.3.2.25079" },
 	}),
 	h(i(151617, {	-- Orgrimmar Interceptor (MOUNT!)
-		["timeline"] = { "added 7.3.0.25021" },
+		["timeline"] = { ADDED_7_3_0 },
 	})),
 	a(i(151618, {	-- Stormwind Skychaser (MOUNT!)
-		["timeline"] = { "added 7.3.0.25021" },
+		["timeline"] = { ADDED_7_3_0 },
 	})),
 
 	ach(13138, {	-- Blizzcon 2018 - Flying Colors

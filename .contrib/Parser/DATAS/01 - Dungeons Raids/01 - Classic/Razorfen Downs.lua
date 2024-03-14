@@ -326,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10758),	-- X'caliboar
 					i(10760),	-- Swine Fists
 					i(151454, {	-- Splinterbone Sabatons
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -356,7 +356,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10772),	-- Glutton's Cleaver
 					i(10774),	-- Fleshhide Shoulders
 					i(151453, {	-- Grungy Necromantic Ring
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -410,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10760),	-- Swine Fists
 					i(10768),	-- Boar Champion's Belt
 					i(151454, {	-- Splinterbone Sabatons
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),

@@ -1541,7 +1541,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(191017),	-- Word of Strength [Rank 3]
 		}),
 		cat(506, {	-- Disenchant
-			r(252106, {["timeline"]={"added 7.3.0"}}),	-- Chaos Shatter
+			r(252106, {["timeline"]={ADDED_7_3_0}}),	-- Chaos Shatter
 			r(224199),	-- Ley Shatter
 		}),
 		cat(448, {	-- Glove Enchantments

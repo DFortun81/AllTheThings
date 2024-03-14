@@ -1514,19 +1514,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
 				i(151355, {	-- Crown of Courage
-					["timeline"] = { "added 7.3.0.24484" },
+					["timeline"] = { ADDED_7_3_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(151354, {	-- Crown of Prosperity
-					["timeline"] = { "added 7.3.0.24484" },
+					["timeline"] = { ADDED_7_3_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(151353, {	-- Crown of Dark Blossoms
-					["timeline"] = { "added 7.3.0.24484" },
+					["timeline"] = { ADDED_7_3_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(151352, {	-- Crown of Good Fortune
-					["timeline"] = { "added 7.3.0.24484" },
+					["timeline"] = { ADDED_7_3_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(21537, {	-- Festival Dumplings

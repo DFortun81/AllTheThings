@@ -3343,7 +3343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						48506,	-- The Hand of Fate
 					},
 					["coord"] = { 21.4, 30.4, STORMWIND_CITY },
-					["timeline"] = { "added 7.3.0" },
+					["timeline"] = { ADDED_7_3_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27060, {	-- Unholy Cow

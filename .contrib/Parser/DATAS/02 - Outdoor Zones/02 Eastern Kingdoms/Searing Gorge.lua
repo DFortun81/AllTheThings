@@ -1013,7 +1013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 7.3.0
 					["groups"] = {
 						i(10463, {	-- Pattern: Shadoweave Mask
-							["timeline"] = { "removed 4.0.3", "added 7.3.0" },
+							["timeline"] = { "removed 4.0.3", ADDED_7_3_0 },
 						}),
 					},
 					-- #endif
@@ -1385,7 +1385,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER 7.3.0
 				i(10463, {	-- Pattern: Shadoweave Mask
 					["description"] = "As of 7.3, Dark Iron Steamsmiths drop |cff3399ffPattern: Shadoweave Mask|r, which is required for the |cff3399ffLucid Nightmare|r mount.",
-					["timeline"] = { "removed 4.0.3", "added 7.3.0" },
+					["timeline"] = { "removed 4.0.3", ADDED_7_3_0 },
 					["cr"] = 5840,	-- Dark Iron Steamsmith
 				}),
 				-- #endif

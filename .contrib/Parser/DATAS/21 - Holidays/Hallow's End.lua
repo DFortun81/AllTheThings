@@ -116,7 +116,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
 	}),
 	i(151268, {	-- Exquisite Costume Set: "Xavius"
-		["timeline"] = { "added 7.3.0.24484" },
+		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
@@ -130,11 +130,11 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(151271, {	-- Horse Head Costume (TOY!)
-		["timeline"] = { "added 7.3.0.24484" },
+		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(151270, {	-- Horse Tail Costume (TOY!)
-		["timeline"] = { "added 7.3.0.24484" },
+		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
@@ -178,7 +178,7 @@ local PET_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(151269, {	-- Naxxy (PET!)
-		["timeline"] = { "added 7.3.0.24484" },
+		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(139036, {	-- Ominous Pet Treat

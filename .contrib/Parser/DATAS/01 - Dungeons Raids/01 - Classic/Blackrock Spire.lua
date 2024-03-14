@@ -1289,7 +1289,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(12336),	-- Gemstone of Spirestone
 					i(13167),	-- Fist of Omokk
 					i(151412, {	-- Ogre Highlord's Casque
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(13166),	-- Slamshot Shoulders
 					i(13168),	-- Plate of the Shaman King
@@ -1322,7 +1322,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { "removed 4.0.3" },
 					}),
 					i(151413, {	-- Smolderthorn Greatbelt
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					-- #if BEFORE 4.0.1
 					i(12654, {	-- Doomshot
@@ -1472,7 +1472,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(13183),	-- Venomspitter
 					i(151414, {	-- Arcanophile's Greatcloak
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(13244),	-- Gilded Gauntlets
 					i(16715, {	-- Wildheart Boots
@@ -1513,10 +1513,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13253),	-- Hands of Power
 					i(13252),	-- Cloudrunner Girdle
 					i(151416, {	-- Dark Horde Grunt's Legplates
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151415, {	-- Veteran Spearman's Chain Boots
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(13247, {	-- Quartermaster Zigris' Footlocker
 						["description"] = "Contains a random green item.",
@@ -1539,13 +1539,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(13205),	-- Rhombeard Protector
 					i(151418, {	-- Raider Aspirant's Helm
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(16718, {	-- Wildheart Spaulders
 						["timeline"] = { "removed 4.0.3" },
 					}),
 					i(151417, {	-- Worg-Keeper's Spaulders
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(13208),	-- Bleak Howler Armguards
 					i(13206),	-- Wolfshear Leggings

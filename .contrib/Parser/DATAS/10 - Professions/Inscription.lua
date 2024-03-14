@@ -473,7 +473,7 @@ GLYPH_OF_DANCING_RUNE_WEAPON = r(64297, {	-- Glyph of Dancing Rune Weapon
 });
 GLYPH_OF_DARK_ABSOLUTION = r(254238, {	-- Glyph of Dark Absolution
 	["name"] = "Glyph of Dark Absolution",
-	["timeline"] = { "added 7.3.0" },
+	["timeline"] = { ADDED_7_3_0 },
 });
 GLYPH_OF_DARK_COMMAND = r(57212, {	-- Glyph of Dark Command
 	["name"] = "Glyph of Dark Command",
@@ -763,7 +763,7 @@ GLYPH_OF_FEL_IMP = r(192839, {	-- Glyph of Fel Imp
 });
 GLYPH_OF_FEL_TOUCHED_SHARDS = r(246999, {	-- Glyph of Fel-Touched Shards
 	["name"] = "Glyph of Fel-Touched Shards",
-	["timeline"] = { "added 7.3.0" },
+	["timeline"] = { ADDED_7_3_0 },
 });
 GLYPH_OF_FEL_TOUCHED_SOULS = r(192849, {	-- Glyph of Fel Touched Souls
 	["name"] = "Glyph of Fel Touched Souls",
@@ -2408,7 +2408,7 @@ GLYPH_OF_THE_INQUISITORS_EYE = r(225554, {	-- Glyph of the Inquisitor's Eye
 });
 GLYPH_OF_THE_LIGHTSPAWN = r(254227, {	-- Glyph of the Lightspawn
 	["name"] = "Glyph of the Lightspawn",
-	["timeline"] = { "added 7.3.0" },
+	["timeline"] = { ADDED_7_3_0 },
 });
 GLYPH_OF_THE_OBSERVER = r(225555, {	-- Glyph of the Observer
 	["name"] = "Glyph of the Observer",
@@ -2488,7 +2488,7 @@ GLYPH_OF_THE_VALKYR = r(126696, {	-- Glyph of the Val'kyr
 });
 GLYPH_OF_THE_VOIDLING = r(254231, {	-- Glyph of the Voidling
 	["name"] = "Glyph of the Voidling",
-	["timeline"] = { "added 7.3.0" },
+	["timeline"] = { ADDED_7_3_0 },
 });
 GLYPH_OF_THE_VOIDLORD = r(225558, {	-- Glyph of the Voidlord
 	["name"] = "Glyph of the Voidlord",
@@ -5068,7 +5068,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		cat(492, {	-- Mass Milling
 			r(209658),	-- Mass Mill Aethril
-			r(247861, {["timeline"]={"added 7.3.0"}}),	-- Mass Mill Astral Glory
+			r(247861, {["timeline"]={ADDED_7_3_0}}),	-- Mass Mill Astral Glory
 			r(209659),	-- Mass Mill Dreamleaf
 			r(209664),	-- Mass Mill Felwort
 			r(209661),	-- Mass Mill Fjarnskaggl
@@ -5081,9 +5081,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(209511),	-- Straszan Mark
 		}),
 		cat(453, {	-- Vantus Runes
-			r(247614, {["timeline"]={"added 7.3.0"}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 1]
-			r(247615, {["timeline"]={"added 7.3.0"}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 2]
-			r(247616, {["timeline"]={"added 7.3.0"}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 3]
+			r(247614, {["timeline"]={ADDED_7_3_0}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 1]
+			r(247615, {["timeline"]={ADDED_7_3_0}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 2]
+			r(247616, {["timeline"]={ADDED_7_3_0}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 3]
 			r(192814),	-- Vantus Rune: Cenarius [Rank 1]
 			r(192866),	-- Vantus Rune: Cenarius [Rank 2]
 			r(192897),	-- Vantus Rune: Cenarius [Rank 3]

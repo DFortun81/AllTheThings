@@ -574,7 +574,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 151349 },	-- Toy Weapon Set [A] (TOY!)
 				{ "i", 151348 },	-- Toy Weapon Set [H] (TOY!)
 			},
-			["timeline"] = { "added 7.3.0.24473" },
+			["timeline"] = { ADDED_7_3_0 },
 		}),
 		ach(12850, {	-- At Least You're Being Careful (2018)
 			["providers"] = {
@@ -626,7 +626,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	filter(BATTLE_PETS, {
 		petbattle(pet(2114, {	-- Globe Yeti (PET!)
 			["description"] = "This pet spawns inside the globe located in Orgrimmar or Ironforge, and since 2019 its spawn rate has been greatly increased. Only one yeti is up at a time. When it spawns it will be a Level 1-3 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with an |cFFFFFFFFInteract With Target|r key bind.\n\nYou can also try doing it while in War Mode since there are usually less people.",
-			["timeline"] = { "added 7.3.0.24727" },
+			["timeline"] = { ADDED_7_3_0 },
 			["maps"] = {
 				ORGRIMMAR,
 				IRONFORGE,
@@ -1422,17 +1422,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 151350 },	-- Winter Veil Gift
 			},
 			["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-			["timeline"] = { "added 7.3.0.24484", "removed 8.0.1.26624" },
+			["timeline"] = { ADDED_7_3_0, "removed 8.0.1.26624" },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["lvl"] = 10,
 			["groups"] = {
 				i(151349, {	-- Toy Weapon Set [A] (TOY!)
-					["timeline"] = { "added 7.3.0.24484" },
+					["timeline"] = { ADDED_7_3_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(151348, {	-- Toy Weapon Set [H] (TOY!)
-					["timeline"] = { "added 7.3.0.24484" },
+					["timeline"] = { ADDED_7_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 			},
@@ -2161,11 +2161,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 						i(54437),	-- Tiny Green Ragdoll (TOY!)
 						i(44606),	-- Toy Train Set (TOY!)
 						i(151349, {	-- Toy Weapon Set [A] (TOY!)
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(151348, {	-- Toy Weapon Set [H] (TOY!)
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 							["races"] = HORDE_ONLY,
 						}),
 						i(172219, {	-- Wild Holly (TOY!)
@@ -2222,7 +2222,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 						}),
 						-- Trinkets
 						i(151351, {	-- Glowing Gift
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						-- Misc:
 						i(46725),	-- Red Rider Air Rifle

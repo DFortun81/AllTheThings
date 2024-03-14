@@ -303,7 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(10660),	-- First Mosh'aru Tablet
 					i(151456, {	-- Theka's Seal of Vigilance
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(18082),	-- Zum'rah's Vexing Cane
 					i(151457, {	-- Witch Doctor's Ritual Collar
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(18083),	-- Jumanza Grips
 				},
@@ -365,11 +365,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9470),	-- Bad Mojo Mask
 					i(9473),	-- Jinxed Hoodoo Skin
 					i(151459, {	-- Nekrum's Witherguard
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9474),	-- Jinxed Hoodoo Kilt
 					i(151458, {	-- Sezz'ziz's Captive Kickers
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -409,10 +409,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9479),	-- Embrace of the Lycan
 					i(9476),	-- Big Bad Pauldrons
 					i(151460, {	-- Farraki Ceremonial Robes
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151461, {	-- Ukorz's Chain Leggings
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(8707),	-- Gahz'rilla's Electrified Scale
 					i(9467),	-- Gahz'rilla Fang
 					i(151455, {	-- Gahz'rilla Scale Cloak
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9469),	-- Gahz'rilla Scale Armor
 				},

@@ -618,7 +618,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9400),	-- Baelog's Shortbow
 					i(9403),	-- Battered Viking Shield
 					i(151396, {	-- Erik's High-Performance Armbands
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(9394),	-- Horned Viking Helmet
 					i(9401),	-- Nordic Longshank
@@ -644,7 +644,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(9394),	-- Horned Viking Helmet
 					i(151396, {	-- Erik's High-Performance Armbands
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(132734, {	-- Viking Chain Boots
 						["timeline"] = { "added 7.0.3.22248"},
@@ -693,7 +693,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9388),	-- Revelosh's Armguards
 					i(9390),	-- Revelosh's Gloves
 					i(151395, {	-- Revelosh's Girdle
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(9387),	-- Revelosh's Boots
 				},
@@ -704,10 +704,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(9408),	-- Ironshod Bludgeon
 					i(151398, {	-- Hood of the Idle Architect
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(151420, {	-- Vault-Watcher's Breastplate
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(9409),	-- Ironaya's Bracers
 					i(9407),	-- Stoneweaver Leggings
@@ -721,7 +721,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(8053),	-- Obsidian Power Source
 					i(151399, {	-- Splintered Obsidian Shard
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 				},
 			}),
@@ -737,10 +737,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(9410),	-- Cragfists
 					i(151401, {	-- Titanic Stone Legguards
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(151400, {	-- Sand-Scoured Treads
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 				},
 			}),
@@ -772,7 +772,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9416),	-- Grimlock's Charge
 					i(9415),	-- Grimlock's Tribal Vestments
 					i(151402, {	-- Grimlock's Jagged Wristguards
-						["timeline"] = { "added 7.3.0.24484"},
+						["timeline"] = { ADDED_7_3_0},
 					}),
 					i(132735, {	-- Grimlock's Chain Chaps
 						["timeline"] = { "added 7.0.3.22248"},

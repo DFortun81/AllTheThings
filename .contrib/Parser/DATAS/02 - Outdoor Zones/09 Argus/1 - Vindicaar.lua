@@ -412,7 +412,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48069, {	-- The Wrench Calls
 					["qg"] = 125525,	-- Durael
 					["sourceQuest"] = 46941,	-- The Path Forward
-					["timeline"] = { "added 7.3.0.24614" },
+					["timeline"] = { ADDED_7_3_0 },
 					["requireSkill"] = ENGINEERING,
 				}),
 				q(48344, {	-- We Have a Problem

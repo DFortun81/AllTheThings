@@ -2520,7 +2520,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER 7.3.0
 				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
 				-- #endif
-				["timeline"] = { "removed 4.0.3", "added 7.3.0" },
+				["timeline"] = { "removed 4.0.3", ADDED_7_3_0 },
 			}),
 			i(7050),	-- Silk Headband
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757)),	-- Sylvan Crown

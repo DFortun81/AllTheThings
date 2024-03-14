@@ -471,13 +471,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { "added 5.0.4" },
 					}),
 					i(151422, {	-- Bonecoal Waistguard
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(82772, {	-- Snarlmouth Leggings
 						["timeline"] = { "added 5.0.4" },
 					}),
 					i(151421, {	-- Scorched Blazehound Boots
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -532,10 +532,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { "added 5.0.4" },
 					}),
 					i(151425, {	-- Gordoth's Crushers
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151424, {	-- Belt of Boundless Fury
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(82886, {	-- Gorewalker Treads
 						["timeline"] = { "added 5.0.4" },

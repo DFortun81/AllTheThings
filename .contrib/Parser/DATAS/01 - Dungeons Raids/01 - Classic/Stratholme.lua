@@ -749,7 +749,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13405),	-- Wailing Nightbane Pauldrons
 							i(13409),	-- Tearfall Bracers
 							i(151404, {	-- Gauntlets of Purged Sanity
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(16717, {	-- Wildheart Gloves
 								["timeline"] = { "removed 4.0.3" },
@@ -762,7 +762,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13401),	-- The Cruel Hand of Timmy
 							i(13400),	-- Vambraces of the Sadist
 							i(151403, {	-- Fetid Stranglers
-								["timeline"] = { "added 7.3.0.24484" },
+								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(16724, {	-- Lightforge Gauntlets
 								["timeline"] = { "removed 4.0.3" },

@@ -2588,7 +2588,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11839),	-- Chief Architect's Monocle
 						applyclassicphase(PHASE_FIVE, i(22223)),	-- Foreman's Head Protector
 						i(151406, {	-- Belt of the Eminent Mason
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(11842),	-- Land Surveyor's Mantle
 						i(11841),	-- Senior Designer's Pantaloons
@@ -2617,7 +2617,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_FIVE, i(22241)),	-- Dark Warder's Pauldrons
 						i(11783),	-- Chillsteel Girdle
 						i(151405, {	-- Cold-Forged Chestplate
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 					},
 				}),
@@ -2734,10 +2734,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(18044),	-- Hurley's Tankard
 						i(11735),	-- Ragefury Eyepatch
 						i(151408, {	-- Dark Iron Dredger's Pauldrons
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(151407, {	-- Blackened Pit Trousers
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(18043),	-- Coal Miner Boots
 						applyclassicphase(PHASE_FIVE, i(22275)),	-- Firemoss Boots
@@ -2765,7 +2765,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12791),	-- Barman Shanker
 						i(12793),	-- Mixologist's Tunic
 						i(151410, {	-- Bottle-Popper Ring
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 					},
 				}),
@@ -2797,7 +2797,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_FIVE, i(22204)),	-- Wristguards of Renown
 						i(11745),	-- Fists of Phalanx
 						i(151409, {	-- Ferrous Cord
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 					},
 				}),
@@ -2844,7 +2844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11935),	-- Magmus Stone
 						i(11746),	-- Golem Skull Helm
 						i(151411, {	-- Molten-Warden Leggings
-							["timeline"] = { "added 7.3.0.24484" },
+							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(22275),	-- Firemoss Boots
 						applyclassicphase(PHASE_FIVE, i(22400, {	-- Libram of Truth

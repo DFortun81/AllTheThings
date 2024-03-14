@@ -284,7 +284,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { "added 4.0.1.12984" },
 					}),
 					i(151077, {	-- Cast Iron Waistplate
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(63344, {	-- Standard Issue Prisoner Shoes
 						["timeline"] = { "added 4.0.1.12984" },
@@ -300,10 +300,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(62305),	-- Lord Overheat's Fiery Core
 					i(151075, {	-- Cinderstitch Tunic
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151076, {	-- Fire-Hardened Shackles
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					-- NOTE: The following items were previously Zone Drops inside of the Deadmines entry-way in Westfall and can still be found there.
 					i(4676),	-- Skeletal Gauntlets
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(1959),	-- Cold Iron Pick
 					i(151074, {	-- Turnkey's Pauldrons
-						["timeline"] = { "added 7.3.0.24484" },
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(1934),	-- Stonemason Trousers [Classic] / Hogger's Trousers [CATA+]
 					i(132569, {	-- Stolen Jailer's Greaves
