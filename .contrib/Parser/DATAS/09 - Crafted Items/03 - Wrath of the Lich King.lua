@@ -969,7 +969,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(41607),	-- Cloak of the Moon
 			i(41610),	-- Deathchill Cloak
 			i(45811),	-- Frostguard Drape
-			i(45626),	-- Spidersilk Drape
 			i(41609),	-- Wispcloak
 		}),
 		n(FEET, {
