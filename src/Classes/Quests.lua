@@ -1056,13 +1056,13 @@ local criteriaFuncs = {
     lvl = function(lvl)
         return app.Level >= lvl;
     end,
-	label_lvl = L.LOCK_CRITERIA_LEVEL_LABEL or "Player Level",
+	label_lvl = L.LOCK_CRITERIA_LEVEL_LABEL,
     text_lvl = function(lvl)
         return lvl;
     end,
 
     questID = IsQuestSaved,
-	label_questID = L.LOCK_CRITERIA_QUEST_LABEL or "Completed Quest",
+	label_questID = L.LOCK_CRITERIA_QUEST_LABEL,
     text_questID = function(questID)
         return ("[%d] %s"):format(questID, QuestNameFromID[questID] or RETRIEVING_DATA);
     end,
@@ -1070,7 +1070,7 @@ local criteriaFuncs = {
     spellID = function(spellID)
         return app.CurrentCharacter.Spells[spellID] or app.CurrentCharacter.ActiveSkills[spellID];
     end,
-	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL or "Learned Spell/Mount/Recipe",
+	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL,
     text_spellID = app.GetSpellName,
 
     factionID = function(v)
@@ -1081,7 +1081,7 @@ local criteriaFuncs = {
 		-- app.PrintDebug(("Check Faction %s Standing (%d) is locked @ (%d)"):format(factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
-	label_factionID = L.LOCK_CRITERIA_FACTION_LABEL or "Faction Reputation",
+	label_factionID = L.LOCK_CRITERIA_FACTION_LABEL,
     text_factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
