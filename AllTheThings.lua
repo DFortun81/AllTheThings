@@ -13117,15 +13117,26 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		local MissingRecipes = {}
 		-- Adds the pertinent information about a given recipeID to the reagentcache
 		local function CacheRecipeSchematic(recipeID)
-			-- TODO: this can be called successfilly without tradeskillUI open... potentially use function runner
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
 			if not craftedItemID then return end
-			if not app.SearchForObject("spellID",recipeID) then
+			local cachedRecipe = app.SearchForObject("spellID",recipeID)
+			if not cachedRecipe then
 				local tradeSkillID, skillLineName, parentTradeSkillID = C_TradeSkillUI_GetTradeSkillLineForRecipe(recipeID)
 				local missing = app.TableConcat({"Missing Recipe:",recipeID,skillLineName,tradeSkillID,"=>",parentTradeSkillID}, nil, nil, " ")
 				-- app.PrintDebug(missing)
 				MissingRecipes[#MissingRecipes + 1] = missing
+			elseif cachedRecipe.u == 1 then
+				local recipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID)
+				-- learned NYI recipe?
+				if recipeInfo and recipeInfo.learned then
+					-- known NYI recipes
+					app.PrintDebug("Learned NYI Recipe",app:SearchLink(cachedRecipe))
+				else
+					-- don't cache reagents for unknown NYI recipes
+					app.PrintDebug("Skip NYI Recipe",app:SearchLink(cachedRecipe))
+					return
+				end
 			end
 			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
 			-- Recipes now have Slots for available Regeants...
@@ -13135,6 +13146,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- app.PrintDebug("EMPTY SCHEMATICS",recipeID)
 				return;
 			end
+
 			local reagentCache = GetDataMember("Reagents", app.ReagentsDB);
 			local itemRecipes, reagentCount, reagentItemID;
 			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
