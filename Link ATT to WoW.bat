@@ -13,6 +13,7 @@ EXIT /B 0
 if exist "%~1\" (
 	call :link_expansion "%~1\_classic_"
 	call :link_expansion "%~1\_classic_era_"
+	call :link_expansion "%~1\_classic_beta_"
 	call :link_expansion "%~1\_classic_ptr_"
 	call :link_expansion "%~1\_classic_era_ptr_"
 	call :link_expansion "%~1\_retail_"
