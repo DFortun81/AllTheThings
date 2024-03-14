@@ -638,12 +638,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(62234),	-- Dungeoneering Guide
 			i(62233),	-- Lord Rottington's Pressed Wisp Book
 		}),
+		-- #if AFTER 5.0.1
 		filter(STAVES, {
-			i(87565),	-- Key to the Planes
-			i(87562),	-- Rosethorn Staff
-			i(87566),	-- Runed Staff
-			i(87561),	-- Silver Inlaid Staff
+			i(87565, {	-- Key to the Planes
+				["timeline"] = { "added 5.0.1" },
+			}),
+			i(87562, {	-- Rosethorn Staff
+				["timeline"] = { "added 5.0.1" },
+			}),
+			i(87566, {	-- Runed Staff
+				["timeline"] = { "added 5.0.1" },
+			}),
+			i(87561, {	-- Silver Inlaid Staff
+				["timeline"] = { "added 5.0.1" },
+			}),
 		}),
+		-- #endif
 	}),
 	prof(JEWELCRAFTING, {
 		filter(FIST_WEAPONS, {
