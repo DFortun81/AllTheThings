@@ -3,23 +3,23 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	inst(75, {	-- Baradin Hold
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 85,
+	applyclassicphase(CATA_PHASE_ONE, inst(75, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {	-- Baradin Hold
 		["mapID"] = 282,
 		["coord"] = { 46.1, 47.9, 244 },
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(CATA_PHASE_THREE, ach(5425, {	-- Baradin Hold Guild Run
 					crit(15480, {	-- Argaloth
-						["provider"] = { "n", 47120 },	-- Argaloth
+						["_npcs"] = { 47120 },	-- Argaloth
 					}),
 					crit(18478, {	-- Occu'thar
-						["provider"] = { "n", 52363 },	-- Occu'thar
+						["_npcs"] = { 52363 },	-- Occu'thar
 					}),
 					crit(18479, {	-- Alizabal, Mistress of Hate
-						["provider"] = { "n", 55869 },	-- Alizabal, Mistress of Hate
+						["_npcs"] = { 55869 },	-- Alizabal, Mistress of Hate
 					}),
 				})),
 			}),
@@ -480,5 +480,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}))),
 		},
-	}),
+	}))),
 }));

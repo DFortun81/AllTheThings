@@ -3,12 +3,12 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	inst(72, {	-- The Bastion of Twilight
+	applyclassicphase(CATA_PHASE_ONE, inst(72, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {	-- The Bastion of Twilight
+		["mapID"] = 294,
+		["coord"] = { 34.2, 77.7, TWILIGHT_HIGHLANDS },
+		["maps"] = { 295, 296 },
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["coord"] = { 34.2, 77.7, TWILIGHT_HIGHLANDS },
-		["mapID"] = 294,
-		["maps"] = { 295, 296 },
 		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -29,16 +29,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				ach(4986),	-- The Bastion of Twilight Guild Run
 			}),
 			n(ZONE_DROPS, {
-				["groups"] = {
-					i(60211),	-- Bracers of the Dark Pool
-					i(60202),	-- Tsanga's Helm
-					i(60201),	-- Phase-Twister Leggings
-					i(59901),	-- Heaving Plates of Protection
-					i(59521),	-- Soul Blade
-					i(59525),	-- Chelley's Staff of Dark Mending
-					i(60210),	-- Crossfire Carbine
-					i(59520),	-- Unheeded Warning
-				},
+				i(60211),	-- Bracers of the Dark Pool
+				i(60202),	-- Tsanga's Helm
+				i(60201),	-- Phase-Twister Leggings
+				i(59901),	-- Heaving Plates of Protection
+				i(59521),	-- Soul Blade
+				i(59525),	-- Chelley's Staff of Dark Mending
+				i(60210),	-- Crossfire Carbine
+				i(59520),	-- Unheeded Warning
 			}),
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
@@ -224,7 +222,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 					e(167, {	-- Cho'gall
 						["creatureID"] = 43324,
-						["sym"] = {{"select","itemID",175159}},	-- Sinister Shadows (Bag of Tricks addition)
 						["groups"] = {
 							ach(5120),	-- Heroic: Cho'gall
 							ach(5461),	-- Heroic: Cho'gall Guild Run
@@ -233,6 +230,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
 							i(152972, {	-- Faceless Minion (PET!)
 								["timeline"] = { ADDED_7_3_0 },
+							}),
+							ig(175159, {	-- Sinister Shadows (RI!)
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer
@@ -276,5 +276,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 		},
-	}),
+	}))),
 }));

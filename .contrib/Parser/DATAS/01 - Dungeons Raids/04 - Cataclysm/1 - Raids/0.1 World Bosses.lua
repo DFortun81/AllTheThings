@@ -3,14 +3,11 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	n(WORLD_BOSSES, {
+	applyclassicphase(CATA_PHASE_ONE, n(WORLD_BOSSES, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {
 		["isRaid"] = true,
 		["lvl"] = 85,
-		["groups"] = sharedData({
-			["isRaid"] = true,
-		},{
+		["groups"] = {
 			n(COMMON_BOSS_DROPS, {
-				["isRaid"] = false,
 				["crs"] = {
 					50063,	-- Akma'hat
 					50056,	-- Garr
@@ -41,6 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			n(50063, {	-- Akma'hat
 				["coord"] = { 38.0, 60.6, ULDUM },
+				["isRaid"] = true,
 				["groups"] = {
 					i(69877, {	-- Belt of a Thousand Gaping Mouths
 						["timeline"] = { "added 4.1.0" },
@@ -55,6 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 37.6, 73.4, MOUNT_HYJAL },
 					{ 40.4, 81.8, MOUNT_HYJAL },
 				},
+				["isRaid"] = true,
 				["groups"] = {
 					i(69842, {	-- Garr's Reinforced Girdle of Memories
 						["timeline"] = { "added 4.1.0" },
@@ -72,6 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 57.2, 7.8, TWILIGHT_HIGHLANDS },
 					{ 59.8, 6.8, TWILIGHT_HIGHLANDS },
 				},
+				["isRaid"] = true,
 				["groups"] = {
 					i(69844, {	-- Vitreous Beak of Julak-Doom
 						["timeline"] = { "added 4.1.0" },
@@ -89,6 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 75.6, 36.6, 204 },
 					{ 77.0, 25.4, 204 },
 				},
+				["isRaid"] = true,
 				["groups"] = {
 					i(69843, {	-- Mobus's Dripping Halberd
 						["timeline"] = { "added 4.1.0" },
@@ -106,6 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 56.6, 42.6, DEEPHOLM },
 					{ 57.2, 59.0, DEEPHOLM },
 				},
+				["isRaid"] = true,
 				["groups"] = {
 					i(69876, {	-- Xariona's Spectral Gauntlets
 						["timeline"] = { "added 4.1.0" },
@@ -115,6 +117,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				},
 			}),
-		}),
-	}),
+		},
+	}))),
 }));

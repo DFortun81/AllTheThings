@@ -887,7 +887,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
-						["sym"] = {{"select","itemID",175158}},	-- Flames of Fury (Bag of Tricks addition)
 						["groups"] = {
 							un(REMOVED_FROM_GAME, ach(5985)),	-- Realm First! Ragnaros
 							ach(5803, {	-- Heroic: Ragnaros
@@ -898,6 +897,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71684),	-- Crown of the Fiery Protector
 							i(71670),	-- Crown of the Fiery Vanquisher
 							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
+							ig(175158, {	-- Flames of Fury (RI!)
+								["timeline"] = { ADDED_8_3_0 },
+							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 							i(70723),	-- Sulfuras, the Extinguished Hand
 							i(71615),	-- Ko'gun, Hammer of the Firelord
