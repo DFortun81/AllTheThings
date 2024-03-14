@@ -582,7 +582,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(152978, {	-- Infernal Pyreclaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
-							i(122304),	-- Fandral's Seed Pouch (TOY!)
+							i(122304, {	-- Fandral's Seed Pouch (TOY!)
+								["timeline"] = { ADDED_6_1_0 },
+							}),
 							SHOULDER_CONQ,	-- Shoulders of the Fiery Conqueror
 							SHOULDER_PROT,	-- Shoulders of the Fiery Protector
 							SHOULDER_VANQ,	-- Shoulders of the Fiery Vanquisher
@@ -863,7 +865,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(152978, {	-- Infernal Pyreclaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
-							i(122304),	-- Fandral's Seed Pouch (TOY!)
+							i(122304, {	-- Fandral's Seed Pouch (TOY!)
+								["timeline"] = { ADDED_6_1_0 },
+							}),
 							i(71680),	-- Shoulders of the Fiery Conqueror
 							i(71687),	-- Shoulders of the Fiery Protector
 							i(71673),	-- Shoulders of the Fiery Vanquisher

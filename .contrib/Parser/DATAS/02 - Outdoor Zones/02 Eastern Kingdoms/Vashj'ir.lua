@@ -2189,7 +2189,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(50052, {	-- Burgy Blackheart
 							["coord"] = { 57.0, 69.6, 205 },
 							["groups"] = {
-								i(134022)	-- Burgy Blackheart's Handsome Hat (TOY!)
+								i(65665, {	-- Burgy Blackheart's Handsome Hat
+									["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+								}),
+								i(134022, {	-- Burgy Blackheart's Handsome Hat (TOY!)
+									["timeline"] = { "added 7.0.3" },
+								}),
 							},
 						}),
 						n(51071, {	-- Captain Florence: Does not drop collectible loot.

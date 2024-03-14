@@ -174,6 +174,9 @@ i(67097);	-- Grim Campfire
 i(64456);	-- Arrival of the Naaru
 i(64481);	-- Blessing of the Old God
 i(64646);	-- Bones of Transformation
+-- #if BEFORE 7.0.3
+i(65665);	-- Burgy Blackheart's Handsome Hat
+-- #endif
 i(64373);	-- Chalice of the Mountain Kings
 i(64361);	-- Druid and Priest Statue Set
 i(53057);	-- Faded Wizard Hat
@@ -200,6 +203,9 @@ i(68806);	-- Kalytha's Haunted Locket
 -- PATCH 4.1.0 --
 -----------------
 i(69776);	-- Ancient Amber
+-- #if BEFORE 7.0.3
+i(69262);	-- Black Ice
+-- #endif
 i(69227);	-- Fool's Gold
 i(69895);	-- Green Balloon
 i(69777);	-- Haunted War Drum

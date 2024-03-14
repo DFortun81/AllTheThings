@@ -256,7 +256,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(69262, {	-- Black Ice
 								["timeline"] = { "removed 7.0.3" },
 							}),
-							i(133997),	-- Black Ice (TOY!)
+							i(133997, {	-- Black Ice (TOY!)
+								["timeline"] = { "added 7.0.3" },
+							}),
 							i(69863),	-- Golden Necklace
 							i(69865),	-- Gem-Studded Bracelets
 							i(69864),	-- Tarnished Crown
@@ -276,7 +278,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(69262, {	-- Black Ice
 								["timeline"] = { "removed 7.0.3" },
 							}),
-							i(133997),	-- Black Ice (TOY!)
+							i(133997, {	-- Black Ice (TOY!)
+								["timeline"] = { "added 7.0.3" },
+							}),
 							i(69863),	-- Golden Necklace
 							i(69865),	-- Gem-Studded Bracelets
 							i(69864),	-- Tarnished Crown
