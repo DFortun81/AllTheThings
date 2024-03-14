@@ -1,0 +1,130 @@
+## Title: AllTheThings |cfd9b9b9b(Cataclysm)|r
+## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
+## Name: AllTheThings
+## Notes: Addon for Tracking Collections & Account Completion
+## Author: Crieve-Sargeras
+## Version: @project-version@
+## Interface: 40400
+## X-Interface: 40400
+## X-Wago-ID: yQKyY5K7
+## X-Curse-Project-ID: 267285
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, AllTheThingsSettings, AllTheThingsAuctionData, AllTheThingsDebugData, ATTClassicSettings, ATTClassicAuctionData
+## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter, ATTClassicSettingsPerCharacter
+## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
+## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
+## AddonCompartmentFuncOnLeave: AllTheThings_MinimapButtonOnLeave
+lib\LibStub\LibStub.lua
+lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+db\RaceDB.lua
+
+# Libs (no dependencies, only app assignment)
+lib\Debugging.lua
+lib\Print.lua
+lib\EventRegistration.lua
+# lib\Runner.lua
+lib\Colors.lua
+lib\Sort.lua
+lib\Table.lua
+
+# Dependent Libs (may require another lib)
+lib\Callback.lua
+
+# Base ATT functionalities
+src\base.lua
+src\Events.lua
+
+# Not really a lib concept...
+lib\Refresh.lua
+lib\Audio.lua
+
+# Load localization modules
+locales\Default Locale.lua
+# locales\en.lua
+# locales\es.lua
+# locales\de.lua
+# locales\fr.lua
+# locales\it.lua
+# locales\ko.lua
+# locales\pt.lua
+# locales\ru.lua
+# locales\cn.lua
+classic\locales.lua
+
+# Search Cache
+src\Cache.lua
+
+# Helper Modules
+src\Modules\RetrievingData.lua
+src\Modules\FactionData.lua
+src\Modules\Color.lua
+# src\Modules\Costs.lua
+src\Modules\Events.lua
+src\Modules\Filter.lua
+src\Modules\Social.lua
+src\Modules\Tooltip.lua
+# src\Modules\Upgrade.lua
+src\Modules\Vignette.lua
+
+# Expansion specific localization files
+db\Wrath\ExplorationDB.lua
+# db\Cata\ExplorationDB.lua
+db\Cata\LocalizationDB.lua
+# db\Cata\en_auto.lua
+# db\Cata\ReagentsDB.lua
+db\Presets.lua
+
+# Load object class templates
+src\Classes\base.lua
+src\Classes\CharacterClass.lua
+src\Classes\Difficulty.lua
+src\Classes\Factions.lua
+src\Classes\Quests.lua
+src\Classes\Encounter.lua
+src\Classes\Expansion.lua
+src\Classes\Maps.lua
+src\Classes\Objects.lua
+src\Classes\Category.lua
+src\Classes\Deaths.lua
+src\Classes\Dynamic Categories.lua
+src\Classes\Filter Types.lua
+src\Classes\Illusions.lua
+# src\Classes\Miscellaneous.lua
+src\Classes\PVP Ranks.lua
+src\Classes\Races.lua
+src\Classes\Title.lua
+src\Classes\Transmog.lua
+# src\Classes\CharacterUnlock.lua
+
+# Expansion specific source files
+src\Expansions\Warlords.lua
+src\Expansions\Legion.lua
+src\Expansions\Battle For Azeroth.lua
+src\Expansions\Shadowlands.lua
+src\Expansions\Dragonflight.lua
+
+# Load the Settings Menu
+src\Settings\Classic Settings.xml
+
+# Load primary addon source files
+# AllTheThings.lua
+classic\ATT-Classic.lua
+src\UI\Game Tooltip.lua
+src\UI\Minimap Button.lua
+src\UI\World Map Button.lua
+
+# Once Item Class is added above, move this there.
+src\Classes\Toys.lua
+
+# Window Logic Overhaul
+src\UI\Shared Window Logic.lua
+src\UI\Classic Window Logic.lua
+
+# Load expansion specific category database.
+db\Cata\Categories.lua
+
+# Window Definitions
+src\UI\Windows\Windows.xml
+
+# Finally, prepare the Data Cache
+src\Root.lua
