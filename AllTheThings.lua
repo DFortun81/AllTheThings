@@ -8885,12 +8885,6 @@ RowOnEnter = function (self)
 			});
 		end
 	end
-	if reference.titleID then
-		-- TODO: Once we move the Titles to their own class file (in all environments), add this using settings.AppendInformationTextEntry to the titleID InformationType.
-		tinsert(tooltipInfo, {
-			right = L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"],
-		});
-	end
 	if reference.questID then
 		-- TODO: This could be moved to the Quests lib and hook in using settings.AppendInformationTextEntry.
 		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[reference.questID];
