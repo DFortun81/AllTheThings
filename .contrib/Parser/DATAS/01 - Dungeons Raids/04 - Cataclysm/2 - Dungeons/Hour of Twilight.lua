@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
-	inst(186, {	-- Hour of Twilight
+	applyclassicphase(CATA_PHASE_FOUR, inst(186, {	-- Hour of Twilight
 		["mapID"] = 399,
 		["maps"] = { 400 },
 		["coords"] = {
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

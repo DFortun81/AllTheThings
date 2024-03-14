@@ -3,9 +3,9 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
-	inst(184, {	-- End Time
-	["mapID"] = 401,
-	["maps"] = { 402, 403, 404, 405, 406 },
+	applyclassicphase(CATA_PHASE_FOUR, inst(184, {	-- End Time
+		["mapID"] = 401,
+		["maps"] = { 402, 403, 404, 405, 406 },
 		["coords"] = {
 			{ 57.7, 30.4, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
