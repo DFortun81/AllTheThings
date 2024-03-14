@@ -2796,6 +2796,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4935, {	-- Tanaris Quests
 					["timeline"] = { "added 4.0.3" },
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Southsea Pirates (A)
 							["races"] = ALLIANCE_ONLY,
@@ -2833,6 +2834,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25107,	-- The Grand Goblet (H)
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 			}),

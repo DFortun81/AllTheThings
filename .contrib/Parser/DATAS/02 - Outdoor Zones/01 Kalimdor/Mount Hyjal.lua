@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(5483),	-- Bounce
 				ach(4870, {	-- Coming Down the Mountain
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					crit(1, {	-- The Return of the Ancients
 						["sourceQuest"] = 25584,	-- The Return of the Ancients
 					}),
@@ -49,6 +50,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					crit(9, {	-- Extinguish the Firelord
 						["sourceQuest"] = 25551,	-- The Firelord
 					}),
+					-- #endif
 					-- #ENDIF
 				}),
 				explorationAch(4863),	-- Explore Hyjal

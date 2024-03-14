@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4906, {	-- Northern Stranglethorn Quests
 					["timeline"] = { "added 4.0.3" },
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Ohgan'aka (A)
 							["races"] = ALLIANCE_ONLY,
@@ -44,6 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 				ach(940, {	-- The Green Hills of Stranglethorn

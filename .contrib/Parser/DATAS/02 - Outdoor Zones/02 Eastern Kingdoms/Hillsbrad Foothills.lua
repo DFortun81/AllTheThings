@@ -33,6 +33,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Sludge Fields
 							["sourceQuest"] = 28237,	-- A Blight Upon the Land
@@ -57,6 +58,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 			}),

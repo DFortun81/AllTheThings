@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Citizens of Tranquillien
 							["sourceQuests"] = {

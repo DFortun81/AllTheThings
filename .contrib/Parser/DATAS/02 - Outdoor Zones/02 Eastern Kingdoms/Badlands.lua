@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4900, {	-- Badlands Quests
 					["timeline"] = { "added 4.0.3" },
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Rhea
 							["sourceQuest"] = 27769,	-- Rhea Revealed
@@ -36,6 +37,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27715,	-- The Day that Deathwing Came: What Really Happened
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 				explorationAch(765, {	-- Explore Badlands

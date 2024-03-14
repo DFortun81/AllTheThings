@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { "added 4.0.3" },
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Preparation
 							["sourceQuests"] = {
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 			}),

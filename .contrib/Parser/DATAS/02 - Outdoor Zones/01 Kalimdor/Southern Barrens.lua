@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4937, {	-- Southern Barrens Quests (A)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
 						crit(38847, {	-- Honor's Stand
@@ -84,11 +85,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25185,	-- The Deed Is Done
 						}),
 					},
+					-- #endif
 				}),
 				ach(4981, {	-- Southern Barrens Quests (H)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Hunter's Hill
 							["sourceQuests"] = {
@@ -141,6 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 24747,	-- Sabotage!
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 			}),

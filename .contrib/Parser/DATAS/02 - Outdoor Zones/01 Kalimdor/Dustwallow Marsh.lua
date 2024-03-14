@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #IF ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
-						crit(1, {	--	Disgrace the Defectors
+						crit(1, {	-- Disgrace the Defectors
 							["sourceQuest"] = 27213,	-- The End of the Deserters
 						}),
 						crit(2, {	-- "Swamp Eye" Story
