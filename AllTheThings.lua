@@ -11044,17 +11044,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:Update();
 		end
 		-- local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
-		local function IsNotComplete(group) return not app.IsComplete(group) and app.RecursiveGroupRequirementsFilter(group); end
-		local function CheckGroup(group, func)
-			if func(group) then
-				return true;
-			end
-			if group.g then
-				for _,o in ipairs(group.g) do
-					if CheckGroup(o, func) then return true; end
-				end
-			end
-		end
 		-- Wraps a given object such that it can act as an unfiltered Header of the base group
 		local CreateWrapVisualHeader = app.CreateVisualHeaderWithGroups
 		-- Returns the consolidated data format for the next header level
@@ -11173,9 +11162,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- and actually match this minilist...
 						-- only if this group mapID matches the minilist mapID directly or by maps
 						and (group.mapID == mapID or (group.maps and contains(group.maps, mapID))) then
-						tinsert(rootGroups, group);
+						rootGroups[#rootGroups + 1] = group
 					else
-						tinsert(mapGroups, group);
+						mapGroups[#mapGroups + 1] = group
 					end
 				end
 				-- first merge all root groups into the list
