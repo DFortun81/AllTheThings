@@ -1903,10 +1903,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				o(240616, {	-- Frozen Supplies
 					["description"] = "Loot the Frozen Supplies in a nook at the base of the pillar.",
 					["coord"] = { 68.0, 73.9, WINTERSPRING },
-					["timeline"] = { "added 6.1.0.19622" },
+					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
 						i(122224, {	-- Music Roll: Mountains
-							["timeline"] = { "added 6.1.0.19622" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),

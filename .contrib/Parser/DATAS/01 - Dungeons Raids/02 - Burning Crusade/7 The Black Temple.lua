@@ -219,7 +219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["creatureID"] = 22887,
 						["groups"] = {
 							i(122104, {	-- Leviathan Hatchling (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(32248),	-- Halberd of Desolation
 							i(32236),	-- Rising Tide
@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["creatureID"] = 22898,
 						["groups"] = {
 							i(122106, {	-- Abyssius (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(32262),	-- Syphon of the Nathrezim
 							i(32254),	-- The Brutalizer
@@ -328,13 +328,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["creatureID"] = 23418,
 						["groups"] = {
 							i(122107, {	-- Fragment of Anger (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(122109, {	-- Fragment of Desire (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(122108, {	-- Fragment of Suffering (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(32332),	-- Torch of the Damned
 							i(32363),	-- Naaru-Blessed Life Rod
@@ -355,7 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["creatureID"] = 22947,
 						["groups"] = {
 							i(122110, {	-- Sister of Temptation (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(31101),	-- Pauldrons of the Forgotten Conqueror
 							i(31103),	-- Pauldrons of the Forgotten Protector
@@ -426,7 +426,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								-- #endif
 							})),
 							i(122196, {	-- Music Roll: The Burning Legion
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837)),	-- Warglaive of Azzinoth (LEGENDARY! MH)
 							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838)),	-- Warglaive of Azzinoth (LEGENDARY! OH)

@@ -3407,11 +3407,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				o(240617, {	-- Lost Sentinel's Pouch
 					["description"] = "Found inside a large hollow tree trunk.",
 					["coord"] = { 56.5, 49.3, ASHENVALE },
-					["timeline"] = { "added 6.1.0.19508" },
+					["timeline"] = { ADDED_6_1_0 },
 					["modelScale"] = 0.2,
 					["groups"] = {
 						i(122226, {	-- Music Roll: Magic
-							["timeline"] = { "added 6.1.0.19508" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),

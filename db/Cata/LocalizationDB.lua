@@ -990,7 +990,6 @@ _.FilterConstants = {
 	GUNS = 31,
 	HELD_IN_OFF_HAND = 1,
 	HOLIDAY = 106,
-	ILLUSIONS = 103,
 	LEATHER = 5,
 	MAIL = 6,
 	MISCELLANEOUS = 50,
@@ -1060,7 +1059,6 @@ L.FILTER_ID_TYPES = {
 	[100] = MOUNTS,
 	[101] = AUCTION_CATEGORY_BATTLE_PETS,
 	[102] = TOY,
-	[103] = "Illusions",
 	[104] = AUCTION_CATEGORY_QUEST_ITEMS,
 	[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,
 	[110] = PAPERDOLL_SIDEBAR_TITLES,
@@ -1108,7 +1106,6 @@ L.FILTER_ID_ICONS = {
 	[100] = _.asset("Category_Mounts"),
 	[101] = _.asset("Category_PetJournal"),
 	[102] = _.asset("Category_ToyBox"),
-	[103] = "Interface/Icons/inv_inscription_weaponscroll03",
 	[104] = _.asset("Interface_Quest_header"),
 	[106] = "Interface/Icons/INV_Holiday_Christmas_Present_01",
 	[110] = _.asset("Category_Titles"),
@@ -4333,7 +4330,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
-	[103] = "Waffenverzauberungen",
 });
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -10310,7 +10306,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
-	[103] = "Иллюзии",
 });
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -11356,7 +11351,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
-	[103] = "幻象",
 });
 localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",

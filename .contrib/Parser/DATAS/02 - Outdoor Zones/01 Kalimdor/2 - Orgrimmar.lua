@@ -800,10 +800,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 							["groups"] = {
 								i(122674, {	-- S.E.L.F.I.E. Camera MkII
-									["timeline"] = { "added 6.1.0" },
+									["timeline"] = { ADDED_6_1_0 },
 								}),
 							},
 						}),
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 60.8, 54.0, ORGRIMMAR },
 						}),
 						i(122637, {	-- S.E.L.F.I.E. Camera
-							["timeline"] = { "added 6.1.0.19508" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -2718,57 +2718,57 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(10, i(122369, {	-- Battleworn Thrash Blade
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(8, i(122376, {	-- Exceptional Stormshroud Shoulders
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(8, i(122378, {	-- Exquisite Sunderseer Mantle
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(4, i(122370, {	-- Inherited Insignia of the Horde
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(4, i(122530, {	-- Inherited Mark of Tyranny
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(10, i(122368, {	-- Grand Staff of Jordan
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(8, i(122377, {	-- Lasting Feralheart Spaulders
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(8, i(122373, {	-- Pristine Lightforge Spaulders
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(8, i(122374, {	-- Prized Beastmaster's Mantle
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(10, i(122365, {	-- Reforged Truesilver Champion
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(10, i(122364, {	-- Sharpened Scarlet Kris
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(8, i(122372, {	-- Strengthened Stockade Pauldrons
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(10, i(122367, {	-- The Blessed Hammer of Grace
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 						moh(10, i(122366, {	-- Unpgraded Dwarven Hand Cannon
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						})),
 					},
 				}),

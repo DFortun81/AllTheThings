@@ -120,7 +120,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 7.3.0.24781" },
 		}),
 		i(122469, {	-- Mystic Runesaber (MOUNT!)
-			["timeline"] = { "added 6.1.0.19445" },
+			["timeline"] = { ADDED_6_1_0 },
 		}),
 		mount(367676, {	-- Nether-Gorged Greatwyrm (MOUNT!)
 			["timeline"] = { "added 9.2.5.44730" },

@@ -2085,7 +2085,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["groups"] = appendGroups(BREWFEST_REGALIA, {
 					i(122339, {	-- Ancient Heirloom Scabbard
 						["cost"] = BREWFEST_TOKEN_COST(300),
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(167732, {	-- Battle-Hardened Heirloom Scabbard
@@ -2100,7 +2100,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard
 						["cost"] = BREWFEST_TOKEN_COST(500),
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(151615, {	-- Weathered Heirloom Scabbard
@@ -2271,7 +2271,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["groups"] = appendGroups(BREWFEST_REGALIA, {
 					i(122339, {	-- Ancient Heirloom Scabbard
 						["cost"] = BREWFEST_TOKEN_COST(300),
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(167732, {	-- Battle-Hardened Heirloom Scabbard
@@ -2286,7 +2286,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard
 						["cost"] = BREWFEST_TOKEN_COST(500),
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(151615, {	-- Weathered Heirloom Scabbard

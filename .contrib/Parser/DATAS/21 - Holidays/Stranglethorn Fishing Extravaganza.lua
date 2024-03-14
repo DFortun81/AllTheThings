@@ -22,7 +22,7 @@ local BOOTS_OF_THE_BAY = i(50287, {	-- Boots of the Bay
 	["timeline"] = { "added 3.3.0.10772" },
 });
 local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
-	["timeline"] = { "added 6.1.0.19480" },
+	["timeline"] = { ADDED_6_1_0 },
 });
 root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",

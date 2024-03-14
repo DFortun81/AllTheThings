@@ -874,7 +874,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(69621), 	-- Twinblade of the Hakkari
 						i(69623), 	-- Vestments of the Soulflayer
 						i(69627), 	-- Zulian Ward
-						h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
+						h(i(122215, {	-- Music Roll: Zul'Gurub Voodoo
+							["timeline"] = { ADDED_6_1_0 },
+						})),
 						n(52167, {	-- Gurubashi Spirit Warrior
 							["description"] = "|CFFFF0000MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r",
 						}),

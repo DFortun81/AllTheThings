@@ -1412,7 +1412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51798),	-- Valius, Gavel of the Lightbringer
 							i(51802),	-- Windrunner's Heartseeker
 							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
@@ -1757,7 +1757,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51944),	-- Valius, Gavel of the Lightbringer
 							i(51940),	-- Windrunner's Heartseeker
 							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
@@ -2104,7 +2104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50428),	-- Royal Scepter of Terenas II
 							i(49981),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
@@ -2474,7 +2474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50734),	-- Royal Scepter of Terenas II
 							i(50733),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229, {	-- Music Roll: Invincible
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown

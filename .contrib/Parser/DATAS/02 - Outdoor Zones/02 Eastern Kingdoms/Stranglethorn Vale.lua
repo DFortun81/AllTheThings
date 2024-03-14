@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
 					}),
 					i(122222, {	-- Music Roll: Angelic
-						["timeline"] = { "added 6.1.0.19480" },
+						["timeline"] = { ADDED_6_1_0 },
 					}),
 				},
 			})),

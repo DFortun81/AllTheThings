@@ -341,7 +341,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(36993),	-- Seal of the Pantheon
 						i(122237, {	-- Music Roll: Mountains of Thunder
-							["timeline"] = { "added 6.1.0.19480" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(36993),	-- Seal of the Pantheon (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(122237, {	-- Music Roll: Mountains of Thunder
-								["timeline"] = { "added 6.1.0.19480" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							-- #if BEFORE 4.0.1
 							i(43724),	-- Celestial Ruby Ring

@@ -11,9 +11,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 		["coord"] = { 46.1, 47.9, 244 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5425),	-- Baradin Hold Guild Run
+				applyclassicphase(CATA_PHASE_THREE, ach(5425, {	-- Baradin Hold Guild Run
+					crit(15480, {	-- Argaloth
+						["provider"] = { "n", 47120 },	-- Argaloth
+					}),
+					crit(18478, {	-- Occu'thar
+						["provider"] = { "n", 52363 },	-- Occu'thar
+					}),
+					crit(18479, {	-- Alizabal, Mistress of Hate
+						["provider"] = { "n", 55869 },	-- Alizabal, Mistress of Hate
+					}),
+				})),
 			}),
-			e(139, {	-- Argaloth
+			applyclassicphase(CATA_PHASE_ONE, e(139, {	-- Argaloth
 				["creatureID"] = 47120,
 				["groups"] = {
 					ach(5416),	-- Pit Lord Argaloth
@@ -154,8 +164,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					a(i(60800)),	-- Vicious Gladiator's Medallion of Tenacity (Alliance)
 					h(i(60807)),	-- Vicious Gladiator's Medallion of Tenacity (Horde)
 				},
-			}),
-			e(339, {	-- Alizabal, Mistress of Hate
+			})),
+			applyclassicphase(CATA_PHASE_THREE, e(339, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Alizabal, Mistress of Hate
 				["creatureID"] = 55869,
 				["groups"] = {
 					ach(6108),	-- Alizabal
@@ -311,8 +321,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					a(i(73536)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Alliance)
 					h(i(73537)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Horde)
 				},
-			}),
-			e(140, {	-- Occu'thar
+			}))),
+			applyclassicphase(CATA_PHASE_TWO, e(140, bubbleDownSelf({ ["timeline"] = { "added 4.2.0" }, }, {	-- Occu'thar
 				["creatureID"] = 52363,
 				["groups"] = {
 					ach(6045),	-- Occu'thar
@@ -468,7 +478,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					a(i(70392)),	-- Ruthless Gladiator's Medallion of Tenacity (Alliance)
 					h(i(70395)),	-- Ruthless Gladiator's Medallion of Tenacity (Horde)
 				},
-			}),
+			}))),
 		},
 	}),
 }));

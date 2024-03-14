@@ -2126,7 +2126,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["groups"] = {
 				i(122339, {	-- Ancient Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 200 } },	-- 200x Love Token
-					["timeline"] = { "added 6.1.0.19445" },
+					["timeline"] = { ADDED_6_1_0 },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
@@ -2141,7 +2141,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				i(122341, {	-- Timeworn Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
-					["timeline"] = { "added 6.1.0.19445" },
+					["timeline"] = { ADDED_6_1_0 },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(151615, {	-- Weathered Heirloom Scabbard

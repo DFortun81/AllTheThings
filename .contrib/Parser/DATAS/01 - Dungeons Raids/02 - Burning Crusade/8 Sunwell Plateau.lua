@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				["creatureID"] = 24882,
 				["groups"] = {
 					i(122113, {	-- Sunblade Micro-Defender (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					}),
 					i(34853),	-- Belt of the Forgotten Conqueror
 					i(34854),	-- Belt of the Forgotten Protector
@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				},
 				["groups"] = {
 					i(122115, {	-- Wretched Servant (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					}),
 					i(34853),	-- Belt of the Forgotten Conqueror
 					i(34854),	-- Belt of the Forgotten Protector
@@ -197,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						["timeline"] = { ADDED_8_3_0 },
 					}),
 					i(122114, {	-- Chaos Pup (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					}),
 					i(34214),	-- Muramasa
 					i(34231),	-- Aegis of Angelic Fortune (MISSING IN ADVENTURE GUIDE)

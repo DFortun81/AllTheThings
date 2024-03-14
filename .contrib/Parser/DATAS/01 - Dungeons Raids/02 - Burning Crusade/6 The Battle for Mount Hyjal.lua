@@ -996,7 +996,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				["creatureID"] = 17808,
 				["groups"] = {
 					i(122111, {	-- Stinkrot (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					}),
 					i(30881),	-- Blade of Infamy
 					i(30883),	-- Pillar of Ferocity
@@ -1033,7 +1033,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				["creatureID"] = 17842,
 				["groups"] = {
 					i(122105, {	-- Grotesque (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					}),
 					i(31092, {	-- Gloves of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },
@@ -1062,7 +1062,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["timeline"] = { "added 4.0.3" },
 					}),
 					i(122112, {	-- Hyjal Wisp (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					}),
 					i(31097, {	-- Helm of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },

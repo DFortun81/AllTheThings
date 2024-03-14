@@ -473,7 +473,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171506),	-- Leggings of Eternity
 								i(171497),	-- Legguards of Endless Rage
 								i(122112, {	-- Hyjal Wisp (PET!)
-									["timeline"] = { "added 6.1.0.19445" },
+									["timeline"] = { ADDED_6_1_0 },
 								}),
 							},
 						}),

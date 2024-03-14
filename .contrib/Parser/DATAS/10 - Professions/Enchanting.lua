@@ -1486,7 +1486,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(409, {	-- Reagents and Research
 			r(169091),	-- Luminous Shard
 			r(177043),	-- Secrets of Draenor Enchanting
-			r(182129, {["timeline"]={"added 6.1.0"}}),	-- Temporal Binding
+			r(182129, {["timeline"]={ADDED_6_1_0}}),	-- Temporal Binding
 			r(169092),	-- Temporal Crystal
 		}),
 		cat(404, sharedData({["u"] = UNLEARNABLE},{	-- Removal

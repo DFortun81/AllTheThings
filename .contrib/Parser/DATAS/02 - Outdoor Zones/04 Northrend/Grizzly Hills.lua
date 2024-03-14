@@ -1800,10 +1800,10 @@ root(ROOTS.Zones, {
 						}),
 						n(91632, {	-- Remington Brode <Traveling Lumberjack>
 							["description"] = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
-							["timeline"] = { "added 6.1.0.19480" },
+							["timeline"] = { ADDED_6_1_0 },
 							["groups"] = {
 								i(122236, {	-- Music Roll: Totems of the Grizzlemaw
-									["timeline"] = { "added 6.1.0.19480" },
+									["timeline"] = { ADDED_6_1_0 },
 								}),
 							},
 						}),

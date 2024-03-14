@@ -1492,19 +1492,19 @@ root(ROOTS.Zones, {
 							i(77777),	-- Replica Knight-Captain's Silk Legguards
 							i(77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
 							i(120993, {	-- Replica Knight-Lieutenant's Leather Clasp
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120992, {	-- Replica Knight-Lieutenant's Dragonhide Belt
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120996, {	-- Replica Knight-Lieutenant's Dreadweave Wrap
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120995, {	-- Replica Knight-Lieutenant's Satin Belt
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120994, {	-- Replica Knight-Lieutenant's Silk Cinch
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
 							i(77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
@@ -1749,7 +1749,7 @@ root(ROOTS.Zones, {
 							i(77864),	-- Replica Knight-Captain's Plate Leggings
 							i(77644),	-- Replica Knight-Lieutenant's Mail Greaves
 							i(120977, {	-- Replica Knight-Lieutenant's Plate Waistguard
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(77646),	-- Replica Knight-Lieutenant's Mail Vices
 							i(77735),	-- Replica Knight-Lieutenant's Plate Greaves
@@ -1759,13 +1759,13 @@ root(ROOTS.Zones, {
 							i(77723),	-- Replica Knight-Lieutenant's Chain Greaves
 							i(77722),	-- Replica Knight-Lieutenant's Chain Vices
 							i(120983, {	-- Replica Knight-Lieutenant's Chain Belt
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120982, {	-- Replica Knight-Lieutenant's Mail Links
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120981, {	-- Replica Knight-Lieutenant's Lamellar Girdle
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
 							i(77607),	-- Replica Lieutenant Commander's Chain Pauldrons
@@ -1842,7 +1842,7 @@ root(ROOTS.Zones, {
 							i(77768),	-- Replica Legionnaire's Chain Hauberk
 							i(77764),	-- Replica Blood Guard's Chain Vices
 							i(120991, {	-- Replica Blood Guard's Chain Belt
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(77833),	-- Replica Blood Guard's Mail Vices
 							i(77830),	-- Replica Blood Guard's Mail Greaves
@@ -1852,13 +1852,13 @@ root(ROOTS.Zones, {
 							i(77928),	-- Replica Blood Guard's Lamellar Sabatons
 							i(77929),	-- Replica Blood Guard's Lamellar Gauntlets
 							i(120976, {	-- Replica Blood Guard's Plate Waistguard
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120980, {	-- Replica Blood Guard's Lamellar Girdle
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120990, {	-- Replica Blood Guard's Mail Links
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(77861),	-- Replica First Sergeant's Plate Bracers
 							i(77828),	-- Replica Blood Guard's Mail Walkers
@@ -1969,23 +1969,23 @@ root(ROOTS.Zones, {
 							i(77803),	-- Replica Blood Guard's Satin Handwraps
 							i(77804),	-- Replica Blood Guard's Satin Walkers
 							i(120984, {	-- Replica Blood Guard's Dragonhide Belt
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120988, {	-- Replica Blood Guard's Satin Waistwrap
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120987, {	-- Replica Blood Guard's Silk Cinch
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(120986, {	-- Replica Blood Guard's Dreadweave Wrap
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(77747),	-- Replica Blood Guard's Dragonhide Treads
 							i(77783),	-- Replica Blood Guard's Silk Handwraps
 							i(77773),	-- Replica Blood Guard's Silk Walkers
 							i(77843),	-- Replica Blood Guard's Dreadweave Walkers
 							i(120985, {	-- Replica Blood Guard's Leather Clasp
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(77816),	-- Replica Blood Guard's Leather Walkers
 							i(77849),	-- Replica Blood Guard's Dreadweave Handwraps

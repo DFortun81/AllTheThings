@@ -1994,7 +1994,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(39421),	-- Gem of Imprisoned Vassals
 								i(39425),	-- Cloak of the Dying
 								i(122197, {	-- Music Roll: Wrath of the Lich King
-									["timeline"] = { "added 6.1.0.19445" },
+									["timeline"] = { ADDED_6_1_0 },
 								}),
 							},
 						}),
@@ -2851,7 +2851,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40398),	-- Leggings of Mortal Arrogance
 								i(40399),	-- Signet of Manifested Pain
 								i(122197, {	-- Music Roll: Wrath of the Lich King
-									["timeline"] = { "added 6.1.0.19445" },
+									["timeline"] = { ADDED_6_1_0 },
 								}),
 							},
 						}),

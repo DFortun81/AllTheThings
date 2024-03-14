@@ -84,7 +84,7 @@ root(ROOTS.ExpansionFeatures,
 							i(36659),	-- Shivery Wand
 							i(120952, {	-- Slarkhide
 							--	["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-								["timeline"] = { "added 6.1.0.19445", "removed 7.0.1" },
+								["timeline"] = { ADDED_6_1_0, "removed 7.0.1" },
 							}),
 							i(55316),	-- Sorrowmurk Cloak
 							i(55379),	-- Sorrowmurk Crystal

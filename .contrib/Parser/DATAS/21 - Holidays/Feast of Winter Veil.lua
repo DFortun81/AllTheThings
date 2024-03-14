@@ -559,7 +559,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		ach(9915, {	-- Crashin' Thrashin' Shredder (2014)
 			["provider"] = { "i", 116763 },	-- Crashin' Thrashin' Shredder Controller (TOY!)
-			["timeline"] = { "added 6.1.0.19533" },
+			["timeline"] = { ADDED_6_1_0 },
 		}),
 		ach(10337, {	-- Crashin' Thrashin' Flamer (2015)
 			["provider"] = { "i", 108632 },	-- Crashin' Thrashin' Flamer Controller (TOY!)

@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					i(122204, {	-- Music Roll: Cold Mountain
-						["timeline"] = { "added 6.1.0.19480" },
+						["timeline"] = { ADDED_6_1_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(34484, {	-- Old Ironjaw
@@ -150,14 +150,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38394,	-- Completionism
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["sym"] = { { "fill" } },	-- simply fill this item
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -488,14 +488,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38345,	-- Numismatics
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["sym"] = { { "fill" } },	-- simply fill this item
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -736,14 +736,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38344,	-- Mystery Notebook
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["sym"] = { { "fill" } },	-- simply fill this item
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -982,7 +982,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 38396,	-- A Curious Oddity
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,

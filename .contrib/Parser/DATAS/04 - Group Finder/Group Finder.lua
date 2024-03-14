@@ -618,7 +618,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
-		i(122607, bubbleDownSelf({ ["timeline"] = { "added 6.1.0", "removed 6.2.0" } }, {	-- Savage Satchel of Cooperation
+		i(122607, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0, "removed 6.2.0" } }, {	-- Savage Satchel of Cooperation
 			["g"] = {
 				i(122633, {	-- Shared Turbulent Armament
 					i(115319),	-- Turbulent Axe

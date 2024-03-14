@@ -69,7 +69,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 
 	ach(9763, {	-- Blizzcon 2014 - Grommloc
 		["provider"] = { "i", 118517 },	-- Grommloc (PET!)
-		["timeline"] = { "added 6.1.0.19445" },
+		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(118517, {	-- Grommloc (PET!)
 		["timeline"] = { ADDED_6_0_3 },

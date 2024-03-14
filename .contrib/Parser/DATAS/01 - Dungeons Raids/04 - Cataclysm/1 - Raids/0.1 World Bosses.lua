@@ -42,8 +42,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(50063, {	-- Akma'hat
 				["coord"] = { 38.0, 60.6, ULDUM },
 				["groups"] = {
-					i(69877),	-- Belt of a Thousand Gaping Mouths
-					un(REMOVED_FROM_GAME, i(67240)),	-- Belt of A Thousand Mouths [Replaced with 69877]
+					i(69877, {	-- Belt of a Thousand Gaping Mouths
+						["timeline"] = { "added 4.1.0" },
+					}),
+					i(67240, {	-- Belt of A Thousand Mouths
+						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+					}),
 				},
 			}),
 			n(50056, {	-- Garr
@@ -52,8 +56,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 40.4, 81.8, MOUNT_HYJAL },
 				},
 				["groups"] = {
-					i(69842),	-- Garr's Reinforced Girdle of Memories
-					un(REMOVED_FROM_GAME, i(67235)),	--	Garr's Girdle of Memories [Replaced with 69842]
+					i(69842, {	-- Garr's Reinforced Girdle of Memories
+						["timeline"] = { "added 4.1.0" },
+					}),
+					i(67235, {	-- Garr's Girdle of Memories
+						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+					}),
 				},
 			}),
 			n(50089, {	-- Julak-Doom
@@ -65,8 +73,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 59.8, 6.8, TWILIGHT_HIGHLANDS },
 				},
 				["groups"] = {
-					i(69844),	-- Vitreous Beak of Julak-Doom
-					un(REMOVED_FROM_GAME, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]
+					i(69844, {	-- Vitreous Beak of Julak-Doom
+						["timeline"] = { "added 4.1.0" },
+					}),
+					i(67246, {	-- Beak of Julak-Doom
+						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+					}),
 				},
 			}),
 			n(50009, {	-- Mobus
@@ -78,7 +90,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 77.0, 25.4, 204 },
 				},
 				["groups"] = {
-					i(69843),	-- Mobus's Dripping Halberd
+					i(69843, {	-- Mobus's Dripping Halberd
+						["timeline"] = { "added 4.1.0" },
+					}),
 					i(67153, {	-- Mobus's Vile Halberd
 						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
 					}),
@@ -93,8 +107,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					{ 57.2, 59.0, DEEPHOLM },
 				},
 				["groups"] = {
-					i(69876),	-- Xariona's Spectral Gauntlets
-					un(REMOVED_FROM_GAME, i(67239)),	-- Xariona's Spectral Claws [Replaced with 69876]
+					i(69876, {	-- Xariona's Spectral Gauntlets
+						["timeline"] = { "added 4.1.0" },
+					}),
+					i(67239, {	-- Xariona's Spectral Claws
+						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+					}),
 				},
 			}),
 		}),

@@ -3549,7 +3549,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { "added 6.0.1.18566" },
 					})),
 					darkmoonprizeticket(90, i(122238, {	-- Music Roll: Darkmoon Carousel
-						["timeline"] = { "added 6.1.0.19480" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(55, i(116134, {	-- Noble's Fancy Boots
 						["timeline"] = { "added 6.0.1.18566" },
@@ -3574,11 +3574,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["groups"] = {
 					darkmoonprizeticket(100, i(122338, {	-- Ancient Heirloom Armor Casing
 						["sym"] = { { "fill" } },	-- simply fill this item
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(120, i(122339, {	-- Ancient Heirloom Scabbard
 						["sym"] = { { "fill" } },	-- simply fill this item
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 
 					-- Old Heirlooms
@@ -3672,91 +3672,91 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 
 					-- New Heirlooms
 					darkmoonprizeticket(50, i(122350, {	-- Balanced Heartseeker
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(122349, {	-- Bloodied Arcanite Reaper
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122389, {	-- Bloodsoaked Skullforge Reaver
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122387, {	-- Burnished Breastplate of Might
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122388, {	-- Burnished Pauldrons of Might
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(122363, {	-- Burnished Warden Staff
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122356, {	-- Champion Herod's Shoulders
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122379, {	-- Champion's Deathdealer Breastplate
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(122352, {	-- Charmed Ancient Bone Bow
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122354, {	-- Devout Aurastone Hammer
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(122353, {	-- Dignified Headmaster's Charge
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(70, i(122362, {	-- Discerning Eye of the Beast
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122391, {	-- Flamescarred Draconian Deflector
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122390, {	-- Musty Tome of the Lost
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122357, {	-- Mystical Pauldrons of Elements
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122380, {	-- Mystical Vest of Elements
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122381, {	-- Polished Breastplate of Valor
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122355, {	-- Polished Spaulders of Valor
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122382, {	-- Preened Ironfeather Breastplate
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122359, {	-- Preened Ironfeather Shoulders
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(75, i(122386, {	-- Repurposed Lava Dredger
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122358, {	-- Stained Shadowcraft Spaulders
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122383, {	-- Stained Shadowcraft Tunic
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(70, i(122361, {	-- Swift Hand of Justice
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122360, {	-- Tattered Dreadmist Mantle
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122384, {	-- Tattered Dreadmist Robe
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122351, {	-- Venerable Dal'Rend's Sacred Charge
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122385, {	-- Venerable Mass of McGowan
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122392, {	-- Weathered Observer's Shield
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = { ADDED_6_1_0 },
 					})),
 				},
 			}),

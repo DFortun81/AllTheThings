@@ -339,7 +339,7 @@ root(ROOTS.ExpansionFeatures,
 						36012,	-- Reverse Piracy
 					},
 					["timeline"] = {
-						"added 6.1.0.19622",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 					["g"] = {
@@ -356,7 +356,7 @@ root(ROOTS.ExpansionFeatures,
 						36012,	-- Reverse Piracy
 					},
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 					["g"] = {
@@ -403,7 +403,7 @@ root(ROOTS.ExpansionFeatures,
 						39023,	-- Call of the Archmage
 					},
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 				}),
@@ -412,7 +412,7 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36017 },	-- Prisoner of the Mind
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 				}),
@@ -421,7 +421,7 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36017 },	-- Prisoner of the Mind
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 				}),
@@ -430,7 +430,7 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 37834 },	-- Orb of Dominion
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 				}),
@@ -439,7 +439,7 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 37836 },	-- Breaking Badness
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 				}),
@@ -448,7 +448,7 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 67.4, 6.6, TALADOR },
 					["sourceQuests"] = { 37964 },	-- To Gul'dan!
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 				}),
@@ -457,7 +457,7 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 67.4, 6.6, TALADOR },
 					["sourceQuests"] = { 37837 },	-- An Inside Job
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 					["g"] = {
@@ -469,7 +469,7 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 67.4, 6.6, TALADOR },
 					["sourceQuests"] = { 37837 },	-- An Inside Job
 					["timeline"] = {
-						"added 6.1.0.19702",
+						ADDED_6_1_0,
 						"removed 7.0.3.22248",
 					},
 				}),

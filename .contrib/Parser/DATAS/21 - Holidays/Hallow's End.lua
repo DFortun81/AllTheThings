@@ -23,7 +23,7 @@ HALLOWS_END_HEADER = createHeader({
 });
 local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { "added 6.1.0.19445" },
+		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
@@ -39,7 +39,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["timeline"] = { "added 6.1.0.19445" },
+		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),

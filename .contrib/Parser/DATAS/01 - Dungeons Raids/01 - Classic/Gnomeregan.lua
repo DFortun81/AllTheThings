@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
 					["groups"] = {
 						i(122207, {	-- Music Roll: Tinkertown
-							["timeline"] = { "added 6.1.0.19480" },
+							["timeline"] = { ADDED_6_1_0 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(9280),	-- Yellow Punch Card

@@ -1579,7 +1579,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["timeline"] = { "removed 6.1.0.19445" },
 		}),
 		i(120950, {	-- Battle Chain Vest
-			["timeline"] = { "added 6.1.0.19445" },
+			["timeline"] = { ADDED_6_1_0 },
 		}),
 		i(13126),	-- Battlecaller Gauntlets
 		i(6592),	-- Battleforge Armor
@@ -1629,7 +1629,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["timeline"] = { "removed 6.1.0.19445" },
 		}),
 		i(120954, {	-- Brackwater Legguards
-			["timeline"] = { "added 6.1.0.19445" },
+			["timeline"] = { ADDED_6_1_0 },
 		}),
 		i(3306),	-- Brackwater Vest
 		i(9926),	-- Brigade Boots
@@ -2138,7 +2138,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["timeline"] = { "removed 6.1.0.19445" },	-- Likely unobtainable since adding of Vetaran Legguards
 		}),
 		i(120953, {	-- Veteran Legguards
-			["timeline"] = { "added 6.1.0.19445" },
+			["timeline"] = { ADDED_6_1_0 },
 		}),
 		i(14722),	-- War Paint Anklewraps
 		i(14723),	-- War Paint Bindings

@@ -1931,7 +1931,9 @@ root(ROOTS.Zones, {
 							i(104198, {	-- Mantid Artifact Hunter's Kit
 								["cost"] = { { "i", 87399, 2 }, },	-- 2x Restored Artifact
 							}),
-							i(122221),	-- Music Roll: Song of Liu Lang
+							i(122221, {	-- Music Roll: Song of Liu Lang
+								["timeline"] = { ADDED_6_1_0 },
+							}),
 						},
 					}),
 				}),

@@ -2223,10 +2223,12 @@ root(ROOTS.Zones, {
 					o(240622, {	-- Warden's Scroll Case
 						["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
 						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
-						["timeline"] = { "added 6.1.0.19508" },
+						["timeline"] = { ADDED_6_1_0 },
 						["modelScale"] = .5,
 						["groups"] = {
-							i(122228),	-- Music Roll: The Black Temple
+							i(122228, {	-- Music Roll: The Black Temple
+								["timeline"] = { ADDED_6_1_0 },
+							}),
 						},
 					}),
 					i(140784, {	-- Fel Piston Stabilizer

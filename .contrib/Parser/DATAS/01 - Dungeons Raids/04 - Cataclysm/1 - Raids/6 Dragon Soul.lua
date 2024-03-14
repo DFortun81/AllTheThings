@@ -257,13 +257,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(152980, {	-- Corrupted Blood (PET!)
 						["timeline"] = { ADDED_7_3_0 },
 					}),
-					i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
+					i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
+						["timeline"] = { ADDED_6_1_0 },
+					}),
 				})),
 				cr(56173, e(333, {	-- Madness of Deathwing
 					i(152981, {	-- Unstable Tendril (PET!)
 						["timeline"] = { ADDED_7_3_0 },
 					}),
-					i(122198),	-- Music Roll: The Shattering [Confirmed in #errors]
+					i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
+						["timeline"] = { ADDED_6_1_0 },
+					}),
 					currency(615),	-- Essence of Corrupted Deathwing
 				})),
 			}),

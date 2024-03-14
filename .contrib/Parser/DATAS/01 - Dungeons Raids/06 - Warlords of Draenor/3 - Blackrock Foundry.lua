@@ -487,7 +487,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
 						["timeline"] = { ADDED_7_0_3 },
 					}),
-					i(122200),	-- Music Roll: A Siege of Worlds
+					i(122200, {	-- Music Roll: A Siege of Worlds
+						["timeline"] = { ADDED_6_1_0 },
+					}),
 				}),
 			}),
 			Difficulty(LFR_RAID, {	-- Queue NPC

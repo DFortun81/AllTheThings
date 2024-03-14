@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
@@ -684,7 +684,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
@@ -1145,7 +1145,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["timeline"] = {
-						"added 6.1.0.19480",
+						ADDED_6_1_0,
 						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
@@ -1293,13 +1293,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				o(240623, {	-- Sylvanas' Strongbox
 					["description"] = "Use Zidormi to access Tirisfal Glades of the past. Loot the strongbox at the base of a pillar to the left of Sylvanas Windrunner. Alliance characters *can* loot this.",
 					["coord"] = { 58.1, 93.8, UNDERCITY },
-					["timeline"] = { "added 6.1.0.19508" },
+					["timeline"] = { ADDED_6_1_0 },
 					["modelRotation"] = 270,
 					["modelScale"] = 1.3,
 					["icon"] = "Interface\\Icons\\Battleground_Strongbox_Skirmish_Horde",
 					["groups"] = {
 						i(122233, {	-- Music Roll: Lament of the Highborne
-							["timeline"] = { "added 6.1.0.19480" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),

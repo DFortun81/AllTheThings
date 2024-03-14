@@ -3,15 +3,15 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	inst(73, {	-- Blackwing Descent
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 85,
+	applyclassicphase(CATA_PHASE_ONE, inst(73, {	-- Blackwing Descent
+		["coord"] = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
 		["maps"] = {
 			285,	-- Blackwing Descent (The Broken Hall)
 			286,	-- Blackwing Descent (Vault of the Shadowflame)
 		},
-		["coord"] = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4842, {	-- Blackwing Descent
@@ -166,7 +166,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(63683),	-- Helm of the Forlorn Conqueror
 							i(63684),	-- Helm of the Forlorn Protector
 							i(63682),	-- Helm of the Forlorn Vanquisher
-							i(138802),	-- Illusion: Power Torrent (ILLUSION!)
+							i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
 							i(152968, {	-- Rattlejaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
@@ -183,7 +185,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(59450),	-- Belt of the Blackhand
 							i(59321),	-- Belt of the Nightmare
 							i(59441),	-- Prestor's Talisman of Machination
-							i(122195),	-- Music Roll: Legends of Azeroth
+							i(122195, {	-- Music Roll: Legends of Azeroth
+								["timeline"] = { ADDED_6_1_0 },
+							}),
 						},
 					}),
 				},
@@ -307,7 +311,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(65001),	-- Crown of the Forlorn Conqueror
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher
-							i(138802),	-- Illusion: Power Torrent (ILLUSION!)
+							i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
 							i(152968, {	-- Rattlejaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
@@ -324,11 +330,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(65022),	-- Belt of the Blackhand
 							i(65057),	-- Belt of the Nightmare
 							i(65026),	-- Prestor's Talisman of Machination
-							i(122195),	-- Music Roll: Legends of Azeroth
+							i(122195, {	-- Music Roll: Legends of Azeroth
+								["timeline"] = { ADDED_6_1_0 },
+							}),
 						},
 					}),
 				},
 			}),
 		},
-	}),
+	})),
 }));

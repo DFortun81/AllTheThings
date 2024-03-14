@@ -802,7 +802,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(122231, {	-- Music Roll: Karazhan Opera House
-								["timeline"] = { "added 6.1.0.19480" },
+								["timeline"] = { ADDED_6_1_0 },
 							}),
 							i(28593),	-- Eternium Greathelm
 							i(28589),	-- Beastmaw Pauldrons

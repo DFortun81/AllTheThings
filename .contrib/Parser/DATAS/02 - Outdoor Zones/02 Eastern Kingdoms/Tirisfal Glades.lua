@@ -2216,10 +2216,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				o(240624, {	-- Faerie Dragon Nest
 					["coord"] = { 17.6, 67.6, TIRISFAL_GLADES },
 					["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
-					["timeline"] = { "added 6.1.0.19508" },
+					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
 						i(122234, {	-- Music Roll: Faerie Dragon
-							["timeline"] = { "added 6.1.0.19508" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),

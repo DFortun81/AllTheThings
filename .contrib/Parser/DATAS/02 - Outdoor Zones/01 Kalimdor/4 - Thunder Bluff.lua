@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(122214, {	-- Music Roll: Mulgore Plains
 					["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
 					["coord"] = { 28.61, 24.61, THUNDER_BLUFF },
-					["timeline"] = { "added 6.1.0.19480" },
+					["timeline"] = { ADDED_6_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

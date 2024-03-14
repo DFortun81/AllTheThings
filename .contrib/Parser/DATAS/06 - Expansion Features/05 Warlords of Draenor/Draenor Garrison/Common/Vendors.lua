@@ -350,7 +350,7 @@ root(ROOTS.ExpansionFeatures,
 					["g"] = {
 						i(122711, {	-- Formula: Temporal Binding (RECIPE!)
 							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(120945, {	-- Primal Spirit
 							["cost"] = {
@@ -489,7 +489,7 @@ root(ROOTS.ExpansionFeatures,
 					["g"] = {
 						i(122711, {	-- Formula: Temporal Binding (RECIPE!)
 							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(120945, {	-- Primal Spirit
 							["cost"] = {

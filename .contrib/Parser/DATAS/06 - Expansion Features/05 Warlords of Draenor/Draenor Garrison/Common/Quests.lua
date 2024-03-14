@@ -2211,6 +2211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["sourceQuests"] = { 36615 },	-- My Very Own Castle
 				["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 				["coord"] = { 33.8, 36.4, LUNARFALL },
+				["timeline"] = { ADDED_6_1_0 },
 				["races"] = ALLIANCE_ONLY,
 				["_drop"] = { "races" },	-- bad API data
 				["g"] = {
@@ -2837,7 +2838,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["coord"] = { 33.8, 36.4, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = {
-					"added 6.1.0.19480",
+					ADDED_6_1_0,
 					REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 				},
 			}),
@@ -2847,7 +2848,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["timeline"] = {
-					"added 6.1.0.19480",
+					ADDED_6_1_0,
 					REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 				},
 			}),
