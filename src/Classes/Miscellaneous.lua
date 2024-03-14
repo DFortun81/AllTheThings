@@ -157,7 +157,7 @@ local function FillDynamicCategory(group, field, value)
 	-- app.PrintDebug("FDC:",group.dynamic,group.dynamic_value)
 	group.OnClick = false
 	group.OnUpdate = false
-	group.title = false
+	--group.title = false
 	-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 	group.dynamic = group.dynamicID or field;
 	group.dynamic_value = group.dynamic_value or value;
@@ -171,7 +171,7 @@ end
 local function NestDynamicValueCategories(group)
 	group.OnClick = false
 	group.OnUpdate = false
-	group.title = false
+	--group.title = false
 	local cat;
 	local field = group.dynamicValueID
 	local cache = SearchForFieldContainer(field);

@@ -10090,12 +10090,6 @@ function app:GetDataCache()
 		tinsert(g, db);
 	end
 
-	-- Factions
-	if app.Categories.Factions then
-		db = app.CreateNPC(app.HeaderConstants.FACTIONS, app.Categories.Factions);
-		tinsert(g, db);
-	end
-
 	-- Track Deaths!
 	tinsert(g, app:CreateDeathClass());
 
