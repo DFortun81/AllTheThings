@@ -88,7 +88,7 @@ end
 
 local TBCPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 TBCPhasesLabel:SetPoint("TOP", ClassicPhasesLabel, "TOP", 0, 0);
-TBCPhasesLabel:SetPoint("LEFT", child.separator or child, "LEFT", 208, 0);
+TBCPhasesLabel:SetPoint("LEFT", child.separator or child, "LEFT", 180, 0);
 TBCPhasesLabel:SetJustifyH("LEFT");
 TBCPhasesLabel:SetText("|CFFAAFFAATBC Phases|r");
 TBCPhasesLabel:Show();
@@ -109,7 +109,7 @@ end
 
 local WrathPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 WrathPhasesLabel:SetPoint("TOP", ClassicPhasesLabel, "TOP", 0, 0);
-WrathPhasesLabel:SetPoint("LEFT", child.separator or child, "LEFT", 408, 0);
+WrathPhasesLabel:SetPoint("LEFT", child.separator or child, "LEFT", 330, 0);
 WrathPhasesLabel:SetJustifyH("LEFT");
 WrathPhasesLabel:SetText("|CFFAAFFAAWrath Phases|r");
 WrathPhasesLabel:Show();
@@ -122,6 +122,27 @@ for i,o in ipairs({ { 30, 0, 0 }, {3001, spacing, -vspacing }, { 31, 0, -vspacin
 	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
 	filter:SetPoint("LEFT", WrathPhasesLabel, "LEFT", o[2], 0);
+	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
+	filter:SetScale(o[2] > 0 and 0.8 or 1);
+	filter.u = u;
+	last = filter;
+end
+
+local CataclysmPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+CataclysmPhasesLabel:SetPoint("TOP", ClassicPhasesLabel, "TOP", 0, 0);
+CataclysmPhasesLabel:SetPoint("LEFT", child.separator or child, "LEFT", 480, 0);
+CataclysmPhasesLabel:SetJustifyH("LEFT");
+CataclysmPhasesLabel:SetText("|CFFAAFFAACataclysm Phases|r");
+CataclysmPhasesLabel:Show();
+
+last, xoffset, yoffset = CataclysmPhasesLabel, 0, -4;
+for i,o in ipairs({ { 40, 0, 0 }, { 41, 0, -vspacing }, { 42, 0, -vspacing }, }) do
+	local u = o[1];
+	yoffset = o[3] or 6;
+	local reason = conditions[u];
+	local filter = child:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
+	filter:SetPoint("LEFT", CataclysmPhasesLabel, "LEFT", o[2], 0);
 	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
 	filter:SetScale(o[2] > 0 and 0.8 or 1);
 	filter.u = u;
