@@ -2,7 +2,7 @@ local appName, app = ...;
 local L = app.L.SETTINGS_MENU;
 local settings = app.Settings;
 
-settings.AccountWide = {
+settings.AccountWide = setmetatable({
 	Achievements = true,
 	BattlePets = true,
 	Deaths = true,
@@ -18,7 +18,14 @@ settings.AccountWide = {
 	Titles = true,
 	Toys = true,
 	Transmog = true,
-};
+}, { __index = function(t, key)
+	-- hopefully temporary...
+	-- GarrisonBuildings is captured in the cache, but tracked via Recipes...
+	-- would prefer they eventually become moved to CharacterUnlocks with special handling
+	if key == "GarrisonBuildings" then
+		return t.Recipes
+	end
+end})
 settings.Collectibles = {
 	Achievements = true,
 	BattlePets = true,
@@ -218,12 +225,12 @@ local TooltipSettingsBase = {
 		["WorldQuestsList:Currencies"] = true,
 		["Updates:AdHoc"] = true,
 		["SocialProgress"] = true,
-		
+
 		-- Features: Reporting
 		["Report:Collected"] = true,
 		["Report:CompletedQuests"] = true,
 		["Report:UnsortedQuests"] = true,
-		
+
 		-- Nearby Content
 		["Nearby:ReportContent"] = false,
 		["Nearby:Type:npc"] = true,
@@ -234,10 +241,10 @@ local TooltipSettingsBase = {
 		["Nearby:IncludeUnknown"] = true,
 		["Nearby:FlashTheTaskbar"] = true,
 		["RareFind"] = true,
-		
+
 		-- Information Type Behaviours
 		["MaxTooltipTopLineLength"] = 999,
-		
+
 		-- Information Types
 		["description"] = true,
 		["playerCoord"] = true,
@@ -1115,7 +1122,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	Mixin(subcategory, ATTSettingsPanelMixin);
 	self:RegisterObject(subcategory);
 	subcategory:SetAllPoints();
-	
+
 	if Settings and Settings.RegisterCanvasLayoutCategory then
 		local category;
 		if text == appName then
@@ -1135,7 +1142,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 		InterfaceOptions_AddCategory(subcategory);
 	end
 	Categories[text] = subcategory;
-	
+
 	-- Common Header
 	local logo = subcategory:CreateTexture(nil, "ARTWORK");
 	logo:SetPoint("TOPLEFT", subcategory, "TOPLEFT", 8, -2);
@@ -1158,7 +1165,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	separator:SetColorTexture(1, 1, 1, 0.4);
 	separator:SetHeight(2);
 	subcategory.separator = separator;
-	
+
 	local checkboxSkipAutoRefresh = subcategory:CreateCheckBox(L.SKIP_AUTO_REFRESH,
 	function(self)
 		self:SetChecked(settings:Get("Skip:AutoRefresh"))
@@ -1332,7 +1339,7 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.Group(true)
 		filterSet.DefaultGroup(true)
 		filterSet.DefaultThing(true)
-		
+
 		-- Check for any inactive unobtainable filters.
 		local anyFiltered = false
 		for u,v in pairs(L.AVAILABILITY_CONDITIONS) do
@@ -1396,7 +1403,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.CompletedThings(true)
 	end
-	
+
 	if self:Get("Hide:BoEs") then
 		filterSet.ItemUnbound()
 		filterSet.Bound(true)
