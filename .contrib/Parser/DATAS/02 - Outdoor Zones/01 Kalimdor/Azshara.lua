@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Defending Orgrimmar
 							["sourceQuest"] = 14155,	-- Arborcide
@@ -50,6 +51,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 				explorationAch(852, {	-- Explore Azshara

@@ -60,6 +60,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Good News, For Once
 							["sourceQuests"] = {
@@ -94,12 +95,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27787,	-- Skullcrusher the Mountain
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Goblin Work Ethic
 							["sourceQuest"] = 26337,	-- Beating the Market
@@ -126,6 +129,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27788,	-- Skullcrusher the Mountain
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 				ach(4960, {	-- Round Three. Fight!

@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4909, {	-- Blasted Lands Quests
 					["timeline"] = { "added 4.0.3" },
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Razelikh
 							["sourceQuests"] = {
@@ -35,6 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 				explorationAch(766, {	-- Explore Blasted Lands

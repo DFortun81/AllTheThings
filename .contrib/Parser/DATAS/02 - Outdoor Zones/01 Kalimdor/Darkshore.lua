@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4928, {	-- Darkshore Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38792, {	-- The Great Animal Spirit
 							["sourceQuests"] = {
@@ -40,6 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 13897,	-- The Battle for Darkshore
 						}),
 					},
+					-- #endif
 				}),
 				explorationAch(844, {	-- Explore Darkshore
 					-- #if BEFORE WRATH

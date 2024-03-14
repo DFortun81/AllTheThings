@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4930, {	-- Desolace Quests
 					["timeline"] = { "added 4.0.3" },
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Naga Threat
 							["sourceQuest"] = 14302,	-- Official Assessment
@@ -55,6 +56,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 				explorationAch(848, {	-- Explore Desolace

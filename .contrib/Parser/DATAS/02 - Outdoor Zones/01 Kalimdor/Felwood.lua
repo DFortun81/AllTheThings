@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4931, {	-- Felwood Quests
 					["timeline"] = { "added 4.0.3"},
 					-- #IF ANYCLASSIC
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Emerald Sanctuary
 							["sourceQuests"] = {
@@ -75,6 +76,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #endif
 					-- #ENDIF
 				}),
 			}),

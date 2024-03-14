@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4932, {	-- Feralas Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38913, {	-- The Fate of Taerar
 							["sourceQuest"] = 25398,	-- Sealing the Dream
@@ -37,10 +38,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25438,	-- Ysondre's Farewell
 						}),
 					},
+					-- #endif
 				}),
 				ach(4979, {	-- Feralas Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38919, {	-- The Fate of Taerar
 							["sourceQuest"] = 25250,	-- Sealing the Dream
@@ -58,6 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25383,	-- Ysondre's Farewell
 						}),
 					},
+					-- #endif
 				}),
 			}),
 			battlepets({
