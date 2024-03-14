@@ -2758,7 +2758,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(5542),	-- Pearl-Clasped Cloak
 			i(2580),	-- Reinforced Linen Cape
 			i(13860),	-- Runecloth Cloak
-			i(45626, {["timeline"] = { "added 3.4.0" }}),	-- Spidersilk Drape
+			i(45626, {["timeline"] = { "added 3.1.0" }}),	-- Spidersilk Drape
 			i(2584),	-- Woolen Cape
 		}),
 		category(243, {	-- Shirts
