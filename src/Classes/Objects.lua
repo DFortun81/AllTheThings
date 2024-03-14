@@ -41,7 +41,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		if spg then return spg end
 		-- direct object which is a child of a 'generic object container' can instead show the generic parent object content
 		-- when the direct object is the root of a window/tooltip
-		if rawget(t,"parent") then return end
+		if rawget(t,"parent") or app.GetRelativeValue(t, "window") then return end
 		local sp = t.sourceParent
 		if not sp or sp.__type ~= "ObjectAsGenericObjectContainer" then return end
 		spg = {}
@@ -53,6 +53,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		end
 		-- for cached reference
 		t._g = spg
+		-- app.PrintDebug("spg",#spg,t.hash,app:SearchLink(t))
 		return spg
 	end,
 },
