@@ -3284,7 +3284,7 @@ local speciesFields = {
 	["link"] = function(t)
 		if t.itemID then
 			local link = select(2, GetItemInfo(t.itemID));
-			if link then
+			if link and not IsRetrieving(link) then
 				t.link = link;
 				return link;
 			end
@@ -3330,6 +3330,7 @@ local mountFields = {
 };
 
 if C_PetJournal and app.GameBuildVersion > 30000 then
+	local C_PetJournal = _G["C_PetJournal"];
 	-- Once the Pet Journal API is available, then all pets become account wide.
 	SetBattlePetCollected = function(t, speciesID, collected)
 		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
@@ -3338,7 +3339,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end
 	speciesFields.name = function(t)
-		return C_PetJournal.GetPetInfoBySpeciesID(t.speciesID);
+		return C_PetJournal.GetPetInfoBySpeciesID(t.speciesID) or (t.itemID and GetItemInfo(t.itemID)) or RETRIEVING_DATA;
 	end
 	speciesFields.petTypeID = function(t)
 		return select(3, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));

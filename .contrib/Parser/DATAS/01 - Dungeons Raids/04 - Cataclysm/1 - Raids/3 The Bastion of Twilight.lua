@@ -124,7 +124,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(64315),	-- Mantle of the Forlorn Conqueror
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
-							i(152972),	-- Faceless Minion (PET!)
+							i(152972, {	-- Faceless Minion (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							ig(175159, {	-- Sinister Shadows (RI!)
 								["timeline"] = { ADDED_8_3_0 },
 							}),
@@ -229,7 +231,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
-							i(152972),	-- Faceless Minion (PET!)
+							i(152972, {	-- Faceless Minion (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer
 							i(68600),	-- Uhn'agh Fash, the Darkest Betrayal
