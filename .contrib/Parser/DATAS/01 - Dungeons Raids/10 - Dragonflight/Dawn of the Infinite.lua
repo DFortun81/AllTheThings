@@ -249,6 +249,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(134723),	-- Icyweave Gloves					(Removed)
 		}),
 		filter(LEATHER, {
+			q(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
+				["name"] = "Quantum Gloves (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
 			i(113220, {	-- Crimson Gauntlets of Death		(NYI)
 				["modID"] = 4,
@@ -279,9 +283,11 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
+			ig(20659),	-- Abyssal Mail Handguards			(Removed)
 			ig(51980),	-- Earthbound Handgrips				(Removed)
 			ig(134733),	-- Frigidlink Gauntlets				(Removed)
 			ig(134797),	-- Ironbranded Gauntlets			(Removed)
+			ig(23170),	-- The Frozen Clutch				(Removed)
 		}),
 		filter(PLATE, {
 			q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
@@ -780,6 +786,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
 					["name"] = "Quantum Chestpiece (Mail) completed.",
+				}),
+				q(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
+					["name"] = "Quantum Gloves (Leather) completed.",
 				}),
 				q(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
 					["name"] = "Quantum Gloves (Mail) completed.",
@@ -1340,7 +1349,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
 		-- q(77629),	-- when you learn everything from Quantum ?
-		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
 		-- q(77637),	-- when you learn everything from Quantum ?

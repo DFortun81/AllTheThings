@@ -3262,6 +3262,7 @@ local keys = {
 [77628]="Quantum Headpiece (Leather) completed.",
 [77630]="Quantum Gloves (Plate) completed.",
 [77631]="Quantum Gloves (Mail) completed.",
+[77632]="Quantum Gloves (Leather) completed.",
 [77635]="Quantum Chestpiece (Mail) completed.",
 [77636]="Quantum Chestpiece (Leather) completed.",
 [77639]="Quantum Shoulders (Mail) completed.",
