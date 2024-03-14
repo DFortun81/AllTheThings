@@ -304,7 +304,14 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 	end,
 	title = function(t)
 		local info = t.renownInfo;
-		return t.standingText .. DESCRIPTION_SEPARATOR .. info.renownReputationEarned .. " / " .. info.renownLevelThreshold;
+		local title = t.standingText .. DESCRIPTION_SEPARATOR .. info.renownReputationEarned .. " / " .. info.renownLevelThreshold;
+		
+		local maxstanding = t.maxstanding;
+		local remaining = (maxstanding * 2500) - (((info.renownLevel - 1) * 2500) + info.renownReputationEarned);	-- 2500 per renown level
+		if remaining > 0 then
+			title = title .. " (" .. remaining .. " to " .. COVENANT_RENOWN_LEVEL_TOAST:format(maxstanding)  .. ")";
+		end
+		return title;
 	end,
 	reputationThreshold = function(t)
 		return { t.reputation, 0 };
@@ -318,6 +325,7 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 			t.maxstanding = maxstanding;
 			return maxstanding;
 		end
+		return 25;
 	end,
 	standingName = function(t)
 		return COVENANT_RENOWN_LEVEL_TOAST:format(t.standing);
