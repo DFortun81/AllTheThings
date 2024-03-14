@@ -387,7 +387,6 @@ iq(205436, 75851);					-- Bartered Engineering Journal
 iq(205438, 75850);					-- Bartered Enchanting Journal
 iq(205439, 75849);					-- Bartered Blacksmithing Journal
 iq(205440, 75848);					-- Bartered Alchemy Journal
-iq(205984, 76077);					-- Bartered Dig Map
 iq(205451, 75866);					-- Flawless Crystal Scale
 
 ------------------

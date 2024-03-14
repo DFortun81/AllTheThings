@@ -4,7 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(SNIFFENSEEKING, {
-			["description"] = "",
 			["cost"] = {
 				{ "i", 205982, 1 },	-- 1x Lost Dig Map
 				{ "i", 205984, 1 },	-- 1x Bartered Dig Map

@@ -2512,6 +2512,12 @@ namespace ATT
             {
                 // Maybe this empty Item should actually be a Character Unlock
                 if (!data.ContainsKey("g") && !data.ContainsKey("sym") && !data.ContainsKey("type")
+                    // not repeatable of some sort
+                    && !data.ContainsKey("isDaily")
+                    && !data.ContainsKey("isWeekly")
+                    && !data.ContainsKey("isMonthly")
+                    && !data.ContainsKey("isYearly")
+                    && !data.ContainsKey("repeatable")
                     // not illusions...
                     && !data.ContainsKey("illusionID")
                     && data.TryGetValue("questID", out long questID))
