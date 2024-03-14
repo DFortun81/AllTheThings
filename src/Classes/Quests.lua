@@ -1077,7 +1077,7 @@ local criteriaFuncs = {
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-        local standing = app.GetCurrentFactionStandings(factionID);
+        local standing = app.CreateFaction(factionID).standing;
 		-- app.PrintDebug(("Check Faction %s Standing (%d) is locked @ (%d)"):format(factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
@@ -1085,9 +1085,9 @@ local criteriaFuncs = {
     text_factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
-		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-		local name = GetFactionInfoByID(factionID) or "#"..(factionID or "??");
-        return L.LOCK_CRITERIA_FACTION_FORMAT:format(app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
+		local faction = app.CreateFaction(factionID);
+		faction.rank = math_floor((v - factionID) * 10 + 0.00001);
+        return L.LOCK_CRITERIA_FACTION_FORMAT:format(faction.rankText, faction.name, faction.standingText);
     end,
 
     sourceID = function(sourceID)
@@ -1198,16 +1198,9 @@ local function QuestWithReputationCollectibleAsCost(t)
 	-- and the Faction itself is Collectible & Not Collected
 	-- and the Quest is not completed and not locked from being completed
 	if app.Settings.Collectibles.Reputations and not t.saved and not t.locked then
-		local factionID = t.maxReputation[1];
-		local factionRef = Search("factionID", factionID, "key");
-		if factionRef and not factionRef.collected then
-			-- compare the actual standing against the current standing rather than raw vaules (friendships are variable)
-			local maxStanding = app.GetReputationStanding(t.maxReputation);
-			if maxStanding > factionRef.standing then
-				-- app.PrintDebug("Quest",t.questID,"collectible for Faction",factionID,factionRef.text,factionRef.isFriend)
-				return true;
-			end
-		end
+		local faction = app.CreateFaction(t.maxReputation[1]);
+		faction.maxReputation = t.maxReputation;
+		return faction.maxstanding > faction.standing;
 	end
 end
 -- Basically anything in ATT which has QuestID needs to also support being Locked...

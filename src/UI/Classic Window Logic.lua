@@ -843,58 +843,6 @@ local function RowOnEnter(self)
 		});
 	end
 	
-	if reference.minReputation and not reference.maxReputation then
-		local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
-		local msg = "Requires a minimum standing of"
-		if offset ~= 0 then msg = msg .. " " .. offset end
-		msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
-		tinsert(tooltipInfo, {
-			left = msg,
-			wrap = true,
-		});
-	end
-	if reference.maxReputation and not reference.minReputation then
-		local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
-		local msg = "Requires a standing lower than"
-		if offset ~= 0 then msg = msg .. " " .. offset end
-		msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
-		tinsert(tooltipInfo, {
-			left = msg,
-			wrap = true,
-		});
-	end
-	if reference.minReputation and reference.maxReputation then
-		local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
-		local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
-		if reference.maxReputation[1] == reference.minReputation[1] then
-			local msg = "Requires a standing between"
-			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " and"
-			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. ".";
-			tinsert(tooltipInfo, {
-				left = msg,
-				wrap = true,
-			});
-		else
-			local msg = "Requires a minimum standing of"
-			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
-			tinsert(tooltipInfo, {
-				left = msg,
-				wrap = true,
-			});
-
-			msg = "Requires a standing lower than"
-			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
-			tinsert(tooltipInfo, {
-				left = msg,
-				wrap = true,
-			});
-		end
-	end
-	
 	if reference.cost then
 		if type(reference.cost) == "table" then
 			local _, name, icon, amount;

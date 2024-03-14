@@ -77,6 +77,7 @@ db\Presets.lu
 src\Classes\base.lua
 src\Classes\CharacterClass.lua
 src\Classes\Difficulty.lua
+src\Classes\Factions.lua
 src\Classes\Quests.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua

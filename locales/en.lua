@@ -48,7 +48,6 @@ for key, value in pairs({
 	["SOURCES_DESC"] = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	["WRONG_FACTION"] = "You might need to be on the other faction to view this.";
 	["ARTIFACT_INTRO_REWARD"] = "Awarded for completing the introductory quest for this Artifact.";
-	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache.";
 	["FLIGHT_PATHS_DESC"] = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
 	["FOLLOWERS_COLLECTION_DESC"] = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
@@ -78,8 +77,10 @@ for key, value in pairs({
 	["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. ";
 	["MINUMUM_STANDING"] = "Requires a minimum standing of";
 	["_WITH_"] = " with ";
+	["_AND"] = " and";
 	["MAXIMUM_STANDING"] = "Requires a standing lower than";
 	["MIN_MAX_STANDING"] = "Requires a standing between";
+	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
 	["ALIVE"] = "Alive";
@@ -101,7 +102,6 @@ for key, value in pairs({
 	["QUEST_GIVERS"] = "Quest Givers";
 	["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
 	["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
-	["_AND"] = " and";
 	["DURING_WQ_ONLY"] = "Can be completed when the World Quest is active";
 	["COMPLETED_DAILY"] = "Can be completed daily";
 	["COMPLETED_WEEKLY"] = "Can be completed weekly";

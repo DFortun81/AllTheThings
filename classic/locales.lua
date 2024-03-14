@@ -116,6 +116,13 @@ for key,value in pairs({
 	["WAS_ADDED_WITH_PATCH_FORMAT"] = "This was added with patch %s";
 	["WAS_ADDED_BACK_WITH_PATCH_FORMAT"] = "This was added back with patch %s";
 	
+	["MINUMUM_STANDING"] = "Requires a minimum standing of";
+	["_WITH_"] = " with ";
+	["_AND"] = " and";
+	["MAXIMUM_STANDING"] = "Requires a standing lower than";
+	["MIN_MAX_STANDING"] = "Requires a standing between";
+	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	
 	["HEIRLOOM_TEXT"] = "Unlocked Heirloom";
 	["HEIRLOOM_TEXT_DESC"] = "This indicates whether or not you have acquired or purchased the heirloom yet.";
 	["HEIRLOOMS_UPGRADES_DESC"] = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";

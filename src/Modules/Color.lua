@@ -188,9 +188,6 @@ app.TryColorizeName = function(group, name)
 	-- groups which are ignored for progress
 	elseif group.sourceIgnored then
 		return Colorize(name, colors.SourceIgnored);
-	-- faction rep status
-	elseif group.factionID and group.standing then
-		return app.GetCurrentFactionStandingText(group.factionID, group.standing, name);
 	-- locked things
 	elseif group.locked then
 		return Colorize(name, colors.Locked);
