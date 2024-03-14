@@ -500,8 +500,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["groups"] = {
 							ach(5813, {	-- Do a Barrel Roll!
 								crit(17533),	-- Brushfire
-								crit(15735),	-- Lava Spew
-								crit(15736),	-- Incendiary Cloud
+								crit(17535),	-- Lava Spew
+								crit(17536),	-- Incendiary Cloud
 								crit(17538),	-- Fiery Tornado
 							}),
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
