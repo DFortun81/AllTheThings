@@ -3810,7 +3810,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_CATACLYSMIC, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.4", "removed 5.0.5" }, }, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic
 					["races"] = ALLIANCE_ONLY,
 				}),

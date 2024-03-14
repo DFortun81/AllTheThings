@@ -406,7 +406,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_2, REMOVED_5_4_7 } }, {
+	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_1, REMOVED_5_4_7 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
@@ -670,11 +670,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 	})),
 
 	-- Other Blizzard Games
-	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {
+	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3 Collection.",
 		["groups"] = {
-			ach(7412),	-- Collector's Edition: Fetish Shaman
-			i(76062),	-- Fetish Shaman (PET!)
+			ach(7412, {	-- Collector's Edition: Fetish Shaman
+				["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 },
+			}),
+			i(76062, {	-- Fetish Shaman (PET!)
+				["timeline"] = { "created 4.3.0", ADDED_5_0_4 },
+			}),
 		},
 	})),
 	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { "added 5.4.2.17585" } }, {
@@ -727,3 +731,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 })));
+
+-- #if AFTER 4.3.0
+-- #if BEFORE 5.0.4
+root(ROOTS.NeverImplemented, {
+	expansion(EXPANSION.CATA, {
+		i(76062, {	-- Fetish Shaman (PET!)
+			["timeline"] = { "created 4.3.0", ADDED_5_0_4 },
+		}),
+	}),
+});
+-- #endif
+-- #endif

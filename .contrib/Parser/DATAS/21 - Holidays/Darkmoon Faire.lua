@@ -2927,7 +2927,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["isDaily"] = true,
 				["groups"] = {
 					ach(9894, {	-- Triumphant Turtle Tossing
-						i(122123),	-- Darkmoon Ring-Flinger (TOY!)
+						["timeline"] = { ADDED_6_1_0 },
+						["groups"] = {
+							i(122123, {	-- Darkmoon Ring-Flinger (TOY!)
+								["timeline"] = { ADDED_6_1_0 },
+							}),
+						},
 					}),
 					-- #if AFTER 5.2.0
 					DARKMOON_GAME_PRIZE,
@@ -3060,7 +3065,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["isDaily"] = true,
 				["groups"] = {
 					ach(9885, {	-- Ace Tonk Commander
-						i(122122),	-- Darkmoon Tonk Controller (TOY!)
+						["timeline"] = { ADDED_6_1_0 },
+						["groups"] = {
+							i(122122, {	-- Darkmoon Tonk Controller (TOY!)
+								["timeline"] = { ADDED_6_1_0 },
+							}),
+						},
 					}),
 					-- #if AFTER 5.2.0
 					DARKMOON_GAME_PRIZE,
