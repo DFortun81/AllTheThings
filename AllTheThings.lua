@@ -8976,7 +8976,7 @@ RowOnEnter = function (self)
 	end
 
 	-- TODO: Convert this to an InformationType.
-	if reference.achievementID and reference.criteriaID then
+	if reference.criteriaID and reference.achievementID and not (reference.parent and reference.parent.achievementID) then
 		tinsert(tooltipInfo, {
 			left = L.CRITERIA_FOR,
 			right = GetAchievementLink(reference.achievementID),
