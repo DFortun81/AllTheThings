@@ -4,6 +4,7 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(ULDUM, {
 		["lore"] = "Uldum, a new zone added with Cataclysm, was known as the Land of the Titans. An ancient desert formerly inaccessible to the Alliance and the Horde, it is rich with Titan lore and an advanced civilization, the Tol'vir. This region draws aesthetic influences heavily from Ancient Egypt, with pyramids, obelisks, similar deities, and irrigation systems.",
+		["icon"] = "Interface\\Icons\\Achievement_zone_uldum",
 		["timeline"] = { "added 4.0.3" },
 		--["maps"] = {
 			-- 737,	-- The Vortex Pinnacle

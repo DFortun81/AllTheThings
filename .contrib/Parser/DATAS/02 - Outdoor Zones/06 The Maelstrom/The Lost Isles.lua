@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(THE_MAELSTROM, {
 		m(THE_LOST_ISLES, {
 			["lore"] = "The Lost Isles are a chain of islands to the south of Azshara that the Bilgewater Cartel goblins reached after their shipwreck. Things get interesting when the orc ship Draka's Fury also crashes. This is a phased area that only leveling goblins can reach.",
-			["icon"] = "Interface\\Icons\\achievement_femalegoblinhead",
+			["icon"] = 463874,	-- Achievement_goblinhead
 			["races"] = { GOBLIN },
 			["maps"] = {
 				175,	-- Kaja'mite Cavern

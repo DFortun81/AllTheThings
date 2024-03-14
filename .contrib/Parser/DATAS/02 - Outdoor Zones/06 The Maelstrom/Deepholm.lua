@@ -14,6 +14,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(4871, {	-- Deep into Deepholm
+						-- #if AFTER MOP
 						crit(39584, {	-- The Middle World Pillar Fragment
 							["sourceQuest"] = 27938,	-- The Middle Fragment
 						}),
@@ -32,6 +33,7 @@ root(ROOTS.Zones, {
 						crit(39597, {	-- Mending the Wound
 							["sourceQuest"] = 26971,	-- The Binding
 						}),
+						-- #endif
 					}),
 					explorationAch(4864),	-- Explore Deepholm
 					achWithRep(4883, 1171),	-- Therazane
