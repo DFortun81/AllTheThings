@@ -3670,10 +3670,11 @@ end)();
 
 -- Faction Lib
 (function()
-local setFactionCollected = function(t, factionID, collected)
-	return app.SetCollectedForSubType(t, "Factions", "Reputations", factionID, collected);
-end
 local StandingByID = {
+	[0] = {	-- 0: No Standing (Not in a Guild)
+		["color"] = "00404040",
+		["threshold"] = -99999,
+	},
 	{	-- 1: HATED
 		["color"] = GetProgressColor(0),
 		["threshold"] = -42000,
@@ -3710,27 +3711,19 @@ local StandingByID = {
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
 	local name = GetFactionInfoByID(id);
 	if name then
-		rawset(t, id, name);
-		rawset(app.FactionIDByName, name, id);
+		t[id] = name;
+		app.FactionIDByName[name] = id;
 		return name;
 	end
 end });
 app.FactionIDByName = setmetatable({}, { __index = function(t, name)
 	for i=1,3000,1 do
 		if app.FactionNameByID[i] == name then
+			t[name] = i;
 			return i;
 		end
 	end
 end });
-app.ColorizeStandingText = function(standingID, text)
-	local standing = StandingByID[standingID];
-	if standing then
-		return Colorize(text, standing.color);
-	else
-		local rgb = FACTION_BAR_COLORS[standingID];
-		return ColorizeRGB(text, rgb.r, rgb.g, rgb.b);
-	end
-end
 app.GetFactionIDByName = function(name)
 	name = name:trim();
 	return app.FactionIDByName[name] or name;
@@ -3747,8 +3740,17 @@ app.GetFactionStanding = function(reputation)
 	end
 	return 1, 0
 end
+local function ColorizeStandingText(standingID, text)
+	local standing = StandingByID[standingID];
+	if standing then
+		return Colorize(text, standing.color);
+	else
+		local rgb = FACTION_BAR_COLORS[standingID];
+		return ColorizeRGB(text, rgb.r, rgb.g, rgb.b);
+	end
+end
 app.GetFactionStandingText = function(standingID)
-	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
+	return ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
 app.GetFactionStandingThresholdFromString = function(replevel)
 	replevel = replevel:trim();
@@ -3765,9 +3767,13 @@ app.GetCurrentFactionStandings = GetCurrentFactionStandings;	-- Quest Lib needs 
 app.IsFactionExclusive = function(factionID)
 	return factionID == 934 or factionID == 932 or factionID == 1104 or factionID == 1105;
 end
+
+local setFactionCollected = function(t, factionID, collected)
+	return app.SetCollectedForSubType(t, "Factions", "Reputations", factionID, collected);
+end
 local fields = {
 	["text"] = function(t)
-		return app.ColorizeStandingText(t.standing, t.name);
+		return ColorizeStandingText(t.standing, t.name);
 	end,
 	["name"] = function(t)
 		return app.FactionNameByID[t.factionID] or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);

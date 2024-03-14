@@ -342,8 +342,18 @@ app.CreateFaction = app.CreateClass("Faction", "factionID", {
 		end
 		return lore;
 	end,
-},
-function(t) return GetFriendshipReputation(t.factionID); end);
+}
+--[[,
+-- CRIEVE NOTE: At some point I'd like for this to interact with the renown API directly rather than in the helper files.
+ Externally, we should be able to cache the faction object itself and have the faction object be responsible for this stuff.
+function(t) return GetFriendshipReputation(t.factionID); end,
+"WithRenown", {
+
+}, function(t)
+	if GetMajorFactionData(t.factionID) then
+		return true;
+	end
+end]]);
 
 -- Information Type hook for Events
 app.AddEventHandler("OnLoad", function()
