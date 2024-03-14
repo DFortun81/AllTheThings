@@ -69,7 +69,7 @@ local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
 });
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	inst(78, {	-- Firelands
+	applyclassicphase(CATA_PHASE_TWO, inst(78, bubbleDownSelf({ ["timeline"] = { "added 4.2.0" }, }, {	-- Firelands
 		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },
 		["maps"] = { 367, 368, 369 },
 		["isRaid"] = true,
@@ -917,5 +917,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 		},
-	}),
+	}))),
 }));

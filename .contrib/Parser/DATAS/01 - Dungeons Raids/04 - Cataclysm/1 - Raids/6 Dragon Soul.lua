@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	inst(187, {	-- Dragon Soul
+	applyclassicphase(CATA_PHASE_THREE, inst(187, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
 		["maps"] = {
 			412,	-- Dragon Soul: Eye of Eternity
@@ -16,8 +16,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
-		["isRaid"] = true,
 		["sharedLockout"] = 1,
+		["isRaid"] = true,
 		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -850,5 +850,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 		},
-	}),
+	}))),
 }));
