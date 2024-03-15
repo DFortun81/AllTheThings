@@ -534,11 +534,13 @@ local createMap = app.CreateClass("Map", "mapID", {
 		return L.HEADER_DESCRIPTIONS[t.headerID];
 	end,
 }, (function(t)
-	local creatureID = t.creatureID;
+	local creatureID = t.creatureID or t.npcID;
 	if creatureID and creatureID < 0 then
 		t.headerID = creatureID;
 		t.creatureID = nil;
 		t.npcID = nil;
+		return true;
+	elseif t.headerID then
 		return true;
 	end
 end));

@@ -39,14 +39,6 @@ root(ROOTS.Zones, {
 							i(52907),	-- Snake Plate Belt
 						},
 					}),
-					q(24936, {	-- Body And Soul
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							un(REMOVED_FROM_GAME, i(52911)),	-- Yngwie's Vest
-							un(REMOVED_FROM_GAME, i(52957)),	-- Oomlot Staff
-							un(REMOVED_FROM_GAME, i(52935)),	-- Pygmy Cloak
-						},
-					}),
 					q(25099, {	-- Borrow Bastia
 						["coord"] = { 36.7, 43.1, THE_LOST_ISLES },
 						["qg"] = 38935,	-- Thrall
@@ -665,3 +657,16 @@ root(ROOTS.Zones, {
 		}),
 	}),
 });
+
+-- #if AFTER 4.0.3
+-- These quests never made it in.
+root(ROOTS.NeverImplemented, {
+	expansion(EXPANSION.CATA, {
+		q(24936, {	-- Body And Soul
+			i(52911),	-- Yngwie's Vest
+			i(52957),	-- Oomlot Staff
+			i(52935),	-- Pygmy Cloak
+		}),
+	}),
+});
+-- #endif

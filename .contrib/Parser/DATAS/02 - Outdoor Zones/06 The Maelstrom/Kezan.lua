@@ -51,17 +51,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24503, {	-- Fourth and Goal [Auto-Given in Mech]
-						["coord"] = { 47.7, 57.7, KEZAN },
+						["qg"] = 37106,	-- Coach Crosscheck
 						["sourceQuest"] = 24502,	-- Necessary Roughness
+						["coord"] = { 47.7, 57.7, KEZAN },
 						["groups"] = {
 							i(54294),	-- Athlete's Robe
 							i(54295),	-- Crosscheck Breastplate
 						},
 					}),
 					q(28414, {	-- Fourth and Goal [Quest Giver]
-						["coord"] = { 48.7, 57.7, KEZAN },
 						["qg"] = 37106,	-- Coach Crosscheck
 						["sourceQuest"] = 24502,	-- Necessary Roughness
+						["coord"] = { 48.7, 57.7, KEZAN },
 						["groups"] = {
 							i(54294),	-- Athlete's Robe
 							i(54295),	-- Crosscheck Breastplate

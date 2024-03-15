@@ -1001,6 +1001,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Gnome_Female")]],
 				-- #endif
+				-- #if BEFORE 6.0.0
+				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				["zone-text-areas"] = {
+					133,	-- New Tinkertown
+				},
+				-- #endif
 				["maps"] = { NEW_TINKERTOWN_LOWER },
 				["groups"] = {
 					battlepets({
@@ -1121,7 +1127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 63238,	-- Xi, Friend to the Small
 							["sourceQuest"] = 31135,	-- The Future of Gnomeregan
 							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
 						}),

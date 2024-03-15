@@ -2544,7 +2544,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["groups"] = {
 					objective(1, {	-- 0/250 Grisly Trophy
 						["providers"] = {
-							{ "i", 29433 },	-- Grisly Trophy
+							{ "i", 71096 },	-- Grisly Trophy
 							{ "i", 71634 },	-- Darkmoon Adventurer's Guide
 						},
 					}),
