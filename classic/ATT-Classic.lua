@@ -1654,81 +1654,80 @@ local function SearchForLink(link)
 				return SearchForField("itemID", itemID), "itemID", itemID;
 			end
 		end
-	else
-		local kind, id = (":"):split(link);
-		kind = kind:lower():gsub("id", "ID");
-		if kind:sub(1,2) == "|c" then
-			kind = kind:sub(11);
-		end
-		if kind:sub(1,2) == "|h" then
-			kind = kind:sub(3);
-		end
-		if id then id = tonumber(("|["):split(id) or id); end
-		--print("SearchForLink A:", kind, id);
-		--print("SearchForLink B:", link:gsub("|c", "c"):gsub("|h", "h"));
-		if kind == "i" then
-			kind = "itemID";
-		elseif kind == "quest" or kind == "q" then
-			kind = "questID";
-		elseif kind == "faction" or kind == "rep" then
-			kind = "factionID";
-		elseif kind == "ach" or kind == "achievement" then
-			kind = "achievementID";
-		elseif kind == "creature" or kind == "npcID" or kind == "npc" or kind == "n" then
-			kind = "creatureID";
-		elseif kind == "currency" then
-			kind = "currencyID";
-		elseif kind == "spell" or kind == "enchant" or kind == "talent" or kind == "recipe" or kind == "mount" then
-			kind = "spellID";
-		elseif kind == "pet" or kind == "battlepet" then
-			kind = "speciesID";
-		elseif kind == "filterforrwp" then
-			kind = "filterForRWP";
-		elseif kind == "pettype" or kind == "pettypeID" then
-			kind = "petTypeID";
-		elseif kind == "azeriteessence" or kind == "azeriteessenceID" then
-			kind = "azeriteEssenceID";
-		end
-		local cache;
-		if id then
-			cache = SearchForField(kind, id);
-			if #cache == 0 then
-				local obj = CloneClassInstance({
-					key = kind, [kind] = id,
-					hash = kind .. ":" .. id,
-				});
-				if not obj.__type then
-					obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
-					obj.text = "Search Results for '" .. obj.hash .. "'";
-					local response = app:BuildSearchResponse(app:GetDataCache().g, kind, id);
-					if response and #response > 0 then
-						obj.g = {};
-						for i,o in ipairs(response) do
-							tinsert(obj.g, o);
-						end
+	end
+	
+	local kind, id = (":"):split(link);
+	kind = kind:lower():gsub("id", "ID");
+	if kind:sub(1,2) == "|c" then
+		kind = kind:sub(11);
+	end
+	if kind:sub(1,2) == "|h" then
+		kind = kind:sub(3);
+	end
+	if id then id = tonumber(("|["):split(id) or id); end
+	--print("SearchForLink A:", kind, id);
+	--print("SearchForLink B:", link:gsub("|c", "c"):gsub("|h", "h"));
+	if kind == "i" then
+		kind = "itemID";
+	elseif kind == "quest" or kind == "q" then
+		kind = "questID";
+	elseif kind == "faction" or kind == "rep" then
+		kind = "factionID";
+	elseif kind == "ach" or kind == "achievement" then
+		kind = "achievementID";
+	elseif kind == "creature" or kind == "npcID" or kind == "npc" or kind == "n" then
+		kind = "creatureID";
+	elseif kind == "currency" then
+		kind = "currencyID";
+	elseif kind == "spell" or kind == "enchant" or kind == "talent" or kind == "recipe" or kind == "mount" then
+		kind = "spellID";
+	elseif kind == "pet" or kind == "battlepet" then
+		kind = "speciesID";
+	elseif kind == "filterforrwp" then
+		kind = "filterForRWP";
+	elseif kind == "pettype" or kind == "pettypeID" then
+		kind = "petTypeID";
+	elseif kind == "azeriteessence" or kind == "azeriteessenceID" then
+		kind = "azeriteEssenceID";
+	end
+	local cache;
+	if id then
+		cache = SearchForField(kind, id);
+		if #cache == 0 then
+			local obj = CloneClassInstance({
+				key = kind, [kind] = id,
+				hash = kind .. ":" .. id,
+			});
+			if not obj.__type then
+				obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
+				obj.text = "Search Results for '" .. obj.hash .. "'";
+				local response = app:BuildSearchResponse(app:GetDataCache().g, kind, id);
+				if response and #response > 0 then
+					obj.g = {};
+					for i,o in ipairs(response) do
+						tinsert(obj.g, o);
 					end
-				else
-					obj.description = "@Crieve: This has not been sourced in ATT yet!";
 				end
-				tinsert(cache, obj);
+			else
+				obj.description = "@Crieve: This has not been sourced in ATT yet!";
 			end
-		else
-			local obj = { hash = kind };
-			obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
-			obj.text = "Search Results for '" .. obj.hash .. "'";
-			local response = app:BuildSearchResponseForField(app:GetDataCache().g, kind);
-			if response and #response > 0 then
-				obj.g = {};
-				for i,o in ipairs(response) do
-					tinsert(obj.g, o);
-				end
-			end
-			cache = {};
 			tinsert(cache, obj);
 		end
-		return cache, kind, id;
+	else
+		local obj = { hash = kind };
+		obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
+		obj.text = "Search Results for '" .. obj.hash .. "'";
+		local response = app:BuildSearchResponseForField(app:GetDataCache().g, kind);
+		if response and #response > 0 then
+			obj.g = {};
+			for i,o in ipairs(response) do
+				tinsert(obj.g, o);
+			end
+		end
+		cache = {};
+		tinsert(cache, obj);
 	end
-	return {};
+	return cache, kind, id;
 end
 app.SearchForLink = SearchForLink;
 

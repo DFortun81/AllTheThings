@@ -2278,6 +2278,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.4, 68.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Linen Scrap
+							["provider"] = { "i", 1019 },	-- Linen Scrap
+							["crs"] = {
+								116,	-- Bandit
+								6866,	-- Bodyguard
+								6846,	-- Dockmaster
+								6927,	-- Dockworker
+								880,	-- Erlan Drudgemoor
+								13159,	-- James Clark
+								473,	-- Morgan the Collector
+								474,	-- Rogue Wizard
+								881,	-- Surena Caledon
+							},
+						}),
 						i(57405, {	-- Fine Leather Sash
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
@@ -2537,8 +2551,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
-						objective(1, {	-- 0/8 Prowler
-							["provider"] = { "n", 118 },	-- Prowler
+						objective(1, {	-- 0/8 Prowler (or Gray Forest Wolf after Cata)
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 1922 },	-- Gray Forest Wolf
+								-- #endif
+								{ "n", 118 },	-- Prowler
+							},
 						}),
 						objective(2, {	-- 0/5 Young Forest Bear
 							["provider"] = { "n", 822 },	-- Young Forest Bear
@@ -2722,6 +2741,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.0, 72.3, ELWYNN_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 James Clark's Head
+							["provider"] = { "i", 57122 },	-- James Clark's Head
+							["cr"] = 13159,	-- James Clark
+						}),
+					},
 				}),
 				q(176, {	-- Wanted: "Hogger"
 					["providers"] = {
