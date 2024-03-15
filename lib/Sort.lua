@@ -10,6 +10,7 @@ local ipairs, pairs, tostring, type, table_sort, pcall
 	= ipairs, pairs, tostring, type, table.sort, pcall;
 
 -- App locals
+local GetRelativeValue = app.GetRelativeValue;
 
 -- Module locals
 
@@ -29,11 +30,11 @@ local function calculateAccessibility(source)
 	if source.e then
 		score = score + 1;
 	end
-	if source.u then
-		score = score + 1;
-		if source.u < 3 then
+	local u = GetRelativeValue(source, "u");
+	if u then
+		if u < 3 then
 			score = score + 100;
-		elseif source.u < 4 then
+		elseif u < 4 then
 			score = score + 10;
 		else
 			score = score + 1;
@@ -202,7 +203,7 @@ app.SortDefaults = setmetatable({
 		return a < b;
 	end,
 	Accessibility = function(a, b)
-		return calculateAccessibility(a) <= calculateAccessibility(b);
+		return calculateAccessibility(a) < calculateAccessibility(b);
 	end,
 	-- Sorts objects first by whether they do not have sub-groups [.g] defined
 	Hierarchy = function(a,b)
