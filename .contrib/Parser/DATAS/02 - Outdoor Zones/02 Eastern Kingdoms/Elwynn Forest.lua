@@ -38,6 +38,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -49,6 +52,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -74,6 +80,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -90,6 +99,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -103,6 +115,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(57253, {	-- Northshire Abbot's Cinch
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -116,6 +131,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
@@ -132,6 +150,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(57253, {	-- Northshire Abbot's Cinch
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -145,6 +166,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(57253, {	-- Northshire Abbot's Cinch
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -158,6 +182,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { DEATHKNIGHT, DRUID, MONK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/6 Blackrock Worg slain
+									["provider"] = { "n", 49871 },	-- Blackrock Worg
+								}),
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
@@ -183,7 +210,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
-								i(58361),	-- Blackrock Orc Weapon
+								objective(1, {	-- 0/8 Blackrock Orc Weapon
+									["provider"] = { "i", 58361 },	-- Blackrock Orc Weapon
+									["cr"] = 42937,	-- Blackrock Invader
+								}),
 							},
 						}),
 						q(6, {	-- Bounty on Garrick Padfoot
@@ -252,7 +282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["groups"] = {
-								objective(1, {	-- Practive Charge
+								objective(1, {	-- Practice Charge
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
 							},
@@ -276,6 +306,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
+							["groups"] = {
+								objective(1, {	-- Practice Corruption
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						-- #endif
 						q(5261, {	-- Eagan Peltskinner
@@ -304,6 +339,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
+								objective(1, {	-- 0/1 Kurtok the Slayer slain
+									["provider"] = { "n", 42938 },	-- Kurtok the Slayer
+								}),
 								i(57393, {	-- Abbey Defender's Crossbow
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -345,7 +383,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
-								i(58362),	-- Milly's Fire Extinguisher (QI!)
+								objective(1, {	-- 0/8 Vineyard Fire Extinguished
+									["provider"] = { "i", 58362 },	-- Milly's Fire Extinguisher
+								}),
 								i(57247, {	-- Grape-Picking Sack
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -361,6 +401,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -375,6 +421,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57256, {	-- Northshire Abbot's Shoes
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -389,6 +441,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57256, {	-- Northshire Abbot's Shoes
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -403,6 +461,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -417,6 +481,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(131874, {	-- Light Gleaming Bracers
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -431,6 +501,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57256, {	-- Northshire Abbot's Shoes
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -445,6 +521,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -457,6 +539,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -478,6 +566,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_9_0_5 },
 							["races"] = { KULTIRAN },
 							["groups"] = {
+								objective(1, {	-- 0/4 Injured Soldier Revived
+									["providers"] = {
+										{ "n", 50047 },	-- Injured Stormwind Infantry
+										{ "i", 65733 },	-- Paxton's Prayer Book
+									},
+								}),
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -539,6 +633,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["groups"] = {
+								objective(1, {	-- Heal Wounded Trainee
+									["provider"] = { "n", 44564 },	-- Wounded Trainee
+								}),
+							},
 						}),
 						q(26914, {	-- Immolation [CATA] / Corruption [MOP]
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
@@ -547,6 +646,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
+							["groups"] = {
+								objective(1, {	-- Practice Immolation
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						-- #endif
 						q(5623, {	-- In Favor of the Light
@@ -668,6 +772,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["groups"] = {
+								objective(1, {	-- Practice Shadow Word: Pain
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						-- #endif
 						q(28771, {	-- Lions for Lambs
@@ -679,6 +788,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -693,6 +805,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57387, {	-- Spymaster's Legs
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -707,6 +822,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -721,6 +839,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -735,6 +856,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(131875, {	-- Spy Dispatchers Greaves
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -747,6 +871,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -770,6 +897,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { DEATHKNIGHT, DRUID, MONK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57387, {	-- Spymaster's Legs
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -784,6 +914,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -798,6 +931,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Blackrock Spy slain
+									["provider"] = { "n", 49874 },	-- Blackrock Spy
+								}),
 								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -810,6 +946,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
+							["groups"] = {
+								objective(1, {	-- Practice Frost Nova
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77619, {	-- Meditation on the Light
@@ -862,6 +1003,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
+							["groups"] = {
+								objective(1, {	-- Practice Tiger Palm
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77617, {	-- Relics of the Light
@@ -1007,6 +1153,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
+							["groups"] = {
+								objective(1, {	-- Practice Eviscerate
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						q(26917, {	-- The Hunter's Path
 							["qg"] = 43278,	-- Ashley Blank <Hunter Trainer>
@@ -1015,6 +1166,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
+							["groups"] = {
+								objective(1, {	-- Practice Steady Shot
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77616, {	-- The Lost Rune
@@ -1044,6 +1200,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
+							["groups"] = {
+								objective(1, {	-- Practice Seal of Command
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						q(28819, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
@@ -1142,6 +1303,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(11192),	-- Outfitter Gloves
 							},
 						}),
@@ -1154,6 +1318,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { DRUID, MONK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(2186),	-- Outfitter Gloves
 							},
 						}),
@@ -1166,6 +1333,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(11192),	-- Outfitter Gloves
 							},
 						}),
@@ -1178,6 +1348,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(2691),	-- Outfitter Boots
 							},
 						}),
@@ -1190,6 +1363,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(2186),	-- Outfitter Gloves
 							},
 						}),
@@ -1202,6 +1378,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(2691),	-- Outfitter Boots
 							},
 						}),
@@ -1214,6 +1393,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(131924, {	-- Outrider Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -1228,6 +1410,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(11192),	-- Outfitter Gloves
 							},
 						}),
@@ -1238,6 +1423,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
+								objective(1, {	-- 0/8 Goblin Assassin slain
+									["provider"] = { "n", 50039 },	-- Goblin Assassin
+								}),
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
