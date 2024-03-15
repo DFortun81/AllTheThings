@@ -4704,7 +4704,7 @@ end)();
 (function()
 app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
-	[794] = 158762,	-- Arch
+	[794] = 78670,	-- Arch
 	[261] = 5149,	-- Beast Training
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
