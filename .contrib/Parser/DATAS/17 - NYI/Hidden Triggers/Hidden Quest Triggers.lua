@@ -59,6 +59,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--------------------
 	expansion(EXPANSION.CATA, {
 		-- QUESTING
+		q(26151),	-- Dark Letter, human starting zone letter tracker. (This triggered for Crieve when he turned in "Simple Letter"
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
 		q(28889),	-- Arcane Instructions Tracking Quest
