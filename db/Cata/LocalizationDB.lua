@@ -999,6 +999,7 @@ _.FilterConstants = {
 	LEATHER = 5,
 	MAIL = 6,
 	MISCELLANEOUS = 50,
+	MOUNT_EQUIPMENT = 114,
 	MOUNTS = 100,
 	NECK = 51,
 	ONE_HANDED_AXES = 21,
@@ -1070,6 +1071,7 @@ L.FILTER_ID_TYPES = {
 	[110] = PAPERDOLL_SIDEBAR_TITLES,
 	[111] = GetItemClassInfo(16),
 	[113] = INVTYPE_BAG,
+	[114] = "Mount Equipment",
 	[200] = AUCTION_CATEGORY_RECIPES,
 }
 L.FILTER_ID_ICONS = {
@@ -1117,6 +1119,7 @@ L.FILTER_ID_ICONS = {
 	[110] = _.asset("Category_Titles"),
 	[111] = "Interface/Icons/Inv_glyph_minorwarrior",
 	[113] = "Interface/Icons/INV_Misc_Bag_08",
+	[114] = "Interface/Icons/Ability_mount_ridinghorse",
 	[200] = "Interface/Icons/inv_scroll_05",
 }
 
