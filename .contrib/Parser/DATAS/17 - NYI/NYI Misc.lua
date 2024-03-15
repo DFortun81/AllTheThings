@@ -1029,11 +1029,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(191287),	-- Dragonscale Expedition Crate
 			i(191203),	-- Dragonscale Expedition Supplies
 			i(194678),	-- Elemental Crystal
-			i(200969),	-- Elemental Shatter: Air
-			i(200984),	-- Elemental Shatter: Earth
-			i(200989),	-- Elemental Shatter: Fire
-			i(200991),	-- Elemental Shatter: Frost
-			i(200994),	-- Elemental Shatter: Order
 			i(194021),	-- Emblazoned Parchment: Bottom Half
 			i(194022),	-- Emblazoned Parchment: Top Half
 			i(195572),	-- Empty Elixir

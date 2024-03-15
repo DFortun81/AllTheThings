@@ -762,6 +762,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				i(201360),	-- Glimmer of Order
 			}),
 		}),
+		spell(391304, {	-- Elemental Shatter
+			i(200969),	-- Elemental Shatter: Air
+			i(200984),	-- Elemental Shatter: Earth
+			i(200989),	-- Elemental Shatter: Fire
+			i(200991),	-- Elemental Shatter: Frost
+			i(200994),	-- Elemental Shatter: Order
+		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(199934),	-- Enchant Boots - Plainsrunner's Breeze+
 			i(199976),	-- Enchant Boots - Plainsrunner's Breeze++
