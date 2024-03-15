@@ -10,23 +10,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(8359, {		-- Capping Spree
-					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
-				}),
-				ach(14187),		-- Cruisin' for a Brewsin'
-				ach(8358, {		-- Deepwind Gorge All-Star
-					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
-					["g"] = {
-						crit(23425),	-- Assault 1 mine
-						crit(23426),	-- Defend 1 mine
-						crit(23427),	-- Capture 1 mine cart
-						crit(23428),	-- Return 1 mine cart
-					},
-				}),
-				ach(8333),		-- Deepwind Gorge Perfection
-				ach(8332),		-- Deepwind Gorge Veteran
-				ach(8331),		-- Deepwind Gorge Victory
-				ach(14186),		-- Market Dominance
 				ach(8360, {		-- Master of Deepwind Gorge
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -61,6 +44,23 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						title(229),	-- Gorgeous
 					},
 				}),
+				ach(8359, {		-- Capping Spree
+					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
+				}),
+				ach(14187),		-- Cruisin' for a Brewsin'
+				ach(8358, {		-- Deepwind Gorge All-Star
+					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
+					["g"] = {
+						crit(23425),	-- Assault 1 mine
+						crit(23426),	-- Defend 1 mine
+						crit(23427),	-- Capture 1 mine cart
+						crit(23428),	-- Return 1 mine cart
+					},
+				}),
+				ach(8333),		-- Deepwind Gorge Perfection
+				ach(8332),		-- Deepwind Gorge Veteran
+				ach(8331),		-- Deepwind Gorge Victory
+				ach(14186),		-- Market Dominance
 				ach(8350, {		-- Mine! Mine! Mine!
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
 				}),
