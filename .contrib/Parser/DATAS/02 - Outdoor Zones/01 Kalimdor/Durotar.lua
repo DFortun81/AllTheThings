@@ -26,6 +26,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["icon"] = [[~_.asset("Achievement_Character_Troll_Male")]],
 				-- #endif
 				["timeline"] = { "added 4.0.3.13277" },
+				-- #if BEFORE 6.0.0
+				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				["zone-text-areas"] = {
+					368,	-- Echo Isles
+				},
+				-- #endif
 				["maps"] = { 464 },	-- Spitescale Cavern
 				["groups"] = {
 					n(QUESTS, bubbleDown({ ["races"] = HORDE_ONLY, ["timeline"] = { "added 4.0.3.13277" } }, {
