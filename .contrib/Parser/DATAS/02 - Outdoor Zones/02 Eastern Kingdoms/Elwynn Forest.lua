@@ -2362,7 +2362,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Bernice's Necklace
 							["provider"] = { "i", 981 },	-- Bernice's Necklace
+							-- #if AFTER CATA
+							["coord"] = { 40.2, 80.8, ELWYNN_FOREST },
+							-- #else
 							["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
+							-- #endif
 							["cr"] = 327,	-- Goldtooth
 						}),
 						i(1359),	-- Lion-stamped Gloves
@@ -2495,6 +2499,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
+					-- #if AFTER CATA
+					["groups"] = {
+						objective(1, {	-- 0/4 Tender Boar Meat
+							["provider"] = { "i", 60401 },	-- Tender Board Meat
+							["cr"] = 113,	-- Stonetusk Boar
+						}),
+					},
+					-- #endif
 				}),
 				q(88, {	-- Princess Must Die!
 					["qg"] = 244,	-- Ma Stonefield
@@ -2504,7 +2516,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Brass Collar
 							["provider"] = { "i", 1006 },	-- Brass Collar
+							-- #if AFTER CATA
+							["coord"] = { 33.6, 85.6, ELWYNN_FOREST },
+							-- #else
 							["coord"] = { 69.8, 79.4, ELWYNN_FOREST },
+							-- #endif
 							["cr"] = 330,	-- Princess
 						}),
 						i(1173),	-- Weather-worn Boots
