@@ -442,13 +442,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								ach(18958, {	-- Of the Tyr's Guard
 									title(516),	-- <Name> Of the Tyr's Guard
 								}),
-								-- This item arrives in mailbox after completion of quest
-								i(208826),	-- Letter from Valunei (QI!)
+								n(MAILBOX, {
+									i(208826),	-- Letter from Valunei (QI!)
+								}),
 							},
 						}),
 						q(77341, {	-- Logotyrapy
 							["sourceQuests"] = { 77344 }, -- Time to Process
 							["provider"] = { "i", 208826 },	-- Letter from Valunei (QI!)
+							["maps"] = { THALDRASZUS },
 							["groups"] = {
 								i(208199),	-- Tabard of the Tyr's Guard
 							},
