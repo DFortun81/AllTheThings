@@ -1066,6 +1066,14 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 94.5, 28.6, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										objective(1, {	-- 0/12 Lion's Landing Lumber
+											["providers"] = {
+												{ "i", 91907 },	-- Lion's Landing Lumber (QI!)
+												{ "o", 216229 },	-- Hastily Abandoned Lumber
+											},
+										}),
+									},
 								}),
 								q(32451, {	-- Send A Message
 									["provider"] = { "n", 68908 },	-- Amber Kearnen
@@ -1092,6 +1100,12 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 94.5, 28.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										objective(1, {	-- 0/1 Bilgewater Blasting Cap
+											["provider"] = { "i", 92493 },	-- Bilgewater Blasting Cap (QI!)
+											["cr"] = 67929,	-- Bilgewater Sapper
+										}),
+									},
 								}),
 								q(32426, {	-- Stirred, not Shaken
 									["sourceQuests"] = { 32381 },	-- To Catch a Spy
