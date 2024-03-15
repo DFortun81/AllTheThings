@@ -231,7 +231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
 					i(79048, {	-- Whimsical Skull Mask
-						["timeline"] = { "added 3.2.2.10505" },
+						["timeline"] = { "added 5.0.1" },
 					}),
 				},
 			}),
