@@ -9,39 +9,10 @@ local _, app = ...;
 local ipairs, pairs, tostring, type, table_sort, pcall
 	= ipairs, pairs, tostring, type, table.sort, pcall;
 
--- App locals
-local GetRelativeValue = app.GetRelativeValue;
-
 -- Module locals
 
 -- Sorting Logic
 local sortA, sortB;
-local function calculateAccessibility(source)
-	local score = 0;
-	if source.nmr then
-		score = score + 10;
-	end
-	if source.nmc then
-		score = score + 10;
-	end
-	if source.rwp then
-		score = score + 5;
-	end
-	if source.e then
-		score = score + 1;
-	end
-	local u = GetRelativeValue(source, "u");
-	if u then
-		if u < 3 then
-			score = score + 100;
-		elseif u < 4 then
-			score = score + 10;
-		else
-			score = score + 1;
-		end
-	end
-	return score;
-end
 local function calculateSourceQuestDepth(group, text)
 	if group.sourceQuestDepth then return group.sourceQuestDepth; end
 	if group.sourceQuests then
@@ -201,9 +172,6 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		return a < b;
-	end,
-	Accessibility = function(a, b)
-		return calculateAccessibility(a) < calculateAccessibility(b);
 	end,
 	-- Sorts objects first by whether they do not have sub-groups [.g] defined
 	Hierarchy = function(a,b)

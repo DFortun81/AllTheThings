@@ -1164,30 +1164,23 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	elseif paramA == "itemID" then
 		itemID = paramB;
 	end
+	
+	-- Find the most accessible version of the thing we're looking for.
+	app.Sort(group, app.SortDefaults.Accessibility);
+	--[[
+	for i,j in ipairs(group) do
+		print(i, j.text, j.AccessibilityScore);
+	end
+	]]--
+	for i,j in ipairs(group) do
+		if j[paramA] == paramB then
+			mostAccessibleSource = j;
+			--print("Most Accessible", i, j.text);
+			break;
+		end
+	end
 
 	if itemID then
-		-- Show the unobtainable source text
-		local u, e = 99999999;
-		app.Sort(group, app.SortDefaults.Accessibility);
-		for i,j in ipairs(group) do
-			if j.itemID == itemID then
-				mostAccessibleSource = j;
-				if j.u and u > j.u and (not j.crs or paramA == "itemID") then
-					u = j.u;
-				end
-				if j.e then
-					e = j.e;
-				end
-				break;
-			end
-		end
-		if u < 99999999 then
-			local condition = L["AVAILABILITY_CONDITIONS"][u];
-			if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-				tinsert(tooltipInfo, { left = condition[2], wrap = true });
-			end
-		end
-
 		local reagentCache = app.GetDataSubMember("Reagents", itemID);
 		if reagentCache then
 			for spellID,count in pairs(reagentCache[1]) do
@@ -1336,6 +1329,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	if mostAccessibleSource then
+		group.parent = mostAccessibleSource.parent;
 		group.rwp = mostAccessibleSource.rwp;
 		group.e = mostAccessibleSource.e;
 		group.u = mostAccessibleSource.u;

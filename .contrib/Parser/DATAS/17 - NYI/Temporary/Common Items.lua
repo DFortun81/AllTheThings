@@ -333,9 +333,6 @@ root(ROOTS.NeverImplemented, {
 					n(WRIST, {
 						i(57533),	-- Dwarven Iron Bracer
 					}),
-					n(HANDS, {
-						i(57392),	-- Willem's Mitts
-					}),
 				}),
 				filter(PLATE, {
 					n(WAIST, {
@@ -406,9 +403,6 @@ root(ROOTS.NeverImplemented, {
 					i(49607),	-- Battlescarred Claymore
 					i(56064),	-- Monster, Grimtotem Alliance Weapon (2H Sword)
 					i(49396),	-- Rusty Prybar
-				}),
-				filter(WANDS, {
-					i(57394),	-- Long Lost Wand
 				}),
 			}),
 		}),

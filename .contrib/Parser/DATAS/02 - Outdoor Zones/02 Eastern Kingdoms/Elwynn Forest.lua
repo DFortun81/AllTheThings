@@ -214,6 +214,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "i", 58361 },	-- Blackrock Orc Weapon
 									["cr"] = 42937,	-- Blackrock Invader
 								}),
+								-- #if BEFORE 7.3.5
+								-- CRIEVE NOTE: Not sure at which patch, but these were moved to Ending the Invasion
+								-- The shortsword was lost forever.
+								i(133699, {	-- Militia Dagger
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(2224, {	-- Militia Dagger
+									-- CRIEVE NOTE: Not sure at which patch, but the dagger was lost forever.
+									["timeline"] = { "removed 7.0.3.22248" },
+								}),
+								i(5580),	-- Militia Hammer
+								i(1161, {	-- Militia Shortsword
+									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
+								}),
+								i(5579),	-- Militia Warhammer
+								i(1159, {	-- Militia Quarterstaff
+									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
+								}),
+								i(85575, {	-- Peacebringer's Staff
+									-- At some point this staff replaced the other one.
+									["timeline"] = { "created 5.0.1.15650", "added 7.3.5" },
+								}),
+								-- #endif
 							},
 						}),
 						q(6, {	-- Bounty on Garrick Padfoot
@@ -252,11 +275,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["cr"] = 38,	-- Defias Thug
 								}),
 								i(2224, {	-- Militia Dagger
-									["timeline"] = { "removed 4.0.3.13277" },
+									-- CRIEVE NOTE: Not sure at which patch, but the dagger was lost forever.
+									["timeline"] = { "removed 7.3.5" },
 								}),
 								i(5580),	-- Militia Hammer
 								i(1161, {	-- Militia Shortsword
-									["timeline"] = { "removed 4.0.3.13277" },
+									-- CRIEVE NOTE: Not sure at which patch, but the shortsword was lost forever.
+									["timeline"] = { "removed 7.3.5" },
 								}),
 								i(5579),	-- Militia Warhammer
 								i(1159, {	-- Militia Quarterstaff
@@ -345,6 +370,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(57393, {	-- Abbey Defender's Crossbow
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
+								-- #if AFTER 7.3.5
+								-- CRIEVE NOTE: Not sure at which patch, but these were moved from Blackrock Invasion.
+								-- They ended up replacing the Mitts + Wand.
 								i(133699, {	-- Militia Dagger
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -352,6 +380,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(5579),	-- Militia Warhammer
 								i(85575, {	-- Peacebringer's Staff
 									["timeline"] = { "added 5.0.1.15650" },
+								}),
+								-- #endif
+								-- CRIEVE NOTE: The following two items were replaced with the above items.
+								i(57392, {	-- Willem's Mitts
+									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
+								}),
+								i(57394, {	-- Long Lost Wand
+									["timeline"] = { "added 4.0.3.13277", "removed 7.3.5" },
 								}),
 							},
 						}),
