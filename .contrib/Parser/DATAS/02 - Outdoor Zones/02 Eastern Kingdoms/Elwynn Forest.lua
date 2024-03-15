@@ -251,6 +251,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
+							["groups"] = {
+								objective(1, {	-- Practive Charge
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+							},
 						}),
 						q(3101, {	-- Consecrated Letter
 							["providers"] = {
