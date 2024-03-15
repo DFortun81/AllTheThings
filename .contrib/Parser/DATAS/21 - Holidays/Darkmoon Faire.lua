@@ -412,6 +412,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			a(ach(6030, {	-- Taking the Show on the Road (A)
 				["timeline"] = { "added 4.3.0.15005" },
 				["groups"] = {
+					-- #if ANYCLASSIC
+					crit(18294, {	-- Dalaran
+						["maps"] = { NORTHREND_DALARAN },
+					}),
+					crit(18290, {	-- Darnassus
+						["maps"] = { DARNASSUS },
+					}),
+					crit(18291, {	-- The Exodar
+						["maps"] = { THE_EXODAR },
+					}),
+					crit(18289, {	-- Ironforge
+						["maps"] = { IRONFORGE },
+					}),
+					crit(18298, {	-- Shattrath City
+						["maps"] = { SHATTRATH_CITY },
+					}),
+					crit(18288, {	-- Stormwind City
+						["maps"] = { STORMWIND_CITY },
+					}),
+					-- #else
 					crit(27718, {	-- Dalaran
 						["maps"] = { NORTHREND_DALARAN },
 					}),
@@ -430,11 +450,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					crit(27727, {	-- Stormwind City
 						["maps"] = { STORMWIND_CITY },
 					}),
+					-- #endif
 				},
 			})),
 			h(ach(6031, {	-- Taking the Show on the Road (H)
 				["timeline"] = { "added 4.3.0.15005" },
 				["groups"] = {
+					-- #if ANYCLASSIC
+					crit(18294, {	-- Dalaran
+						["maps"] = { NORTHREND_DALARAN },
+					}),
+					crit(18295, {	-- Orgrimmar
+						["maps"] = { ORGRIMMAR },
+					}),
+					crit(18298, {	-- Shattrath City
+						["maps"] = { SHATTRATH_CITY },
+					}),
+					crit(18296, {	-- Silvermoon City
+						["maps"] = { SILVERMOON_CITY },
+					}),
+					crit(18297, {	-- Thunder Bluff
+						["maps"] = { THUNDER_BLUFF },
+					}),
+					crit(18299, {	-- Undercity
+						["maps"] = { UNDERCITY },
+					}),
+					-- #else
 					crit(27718, {	-- Dalaran
 						["maps"] = { NORTHREND_DALARAN },
 					}),
@@ -453,6 +494,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					crit(27723, {	-- Undercity
 						["maps"] = { UNDERCITY },
 					}),
+					-- #endif
 				},
 			})),
 		}),
