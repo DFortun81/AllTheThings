@@ -231,6 +231,11 @@ or function(fields, className)
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
 	local class = { __type = function() return className; end };
+	app.__perf.CaptureTable(class, className)
+	app.__perf.AutoCaptureTable(class, className)
+	-- capture keys which are referenced but not implemented in a sub-table for better perf tracking
+	class.__missing = {}
+
 	if not classDefinitions[className] then
 		classDefinitions[className] = class;
 	else
@@ -248,15 +253,14 @@ or function(fields, className)
 			class[key] = method;
 		end
 	end
-	app.__perf.CaptureTable(class, className)
 	return {
 		__class = class,
 		__index = function(t, key)
-			_cache = class[key];
+			_cache = class[key] or class.__missing[key]
 			if _cache then return _cache(t); end
 			-- capture a new empty function return for missing keys so we can track how much missing keys are called on various classes
-			class[key] = function() end
-			return class[key]()
+			class.__missing[key] = function() end
+			return class.__missing[key]()
 		end
 	}
 end

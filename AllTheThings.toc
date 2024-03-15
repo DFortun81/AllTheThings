@@ -13,11 +13,11 @@
 ## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
 ## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
 ## AddonCompartmentFuncOnLeave: AllTheThings_MinimapButtonOnLeave
+#src\PerformanceTracking.lua
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 db\RaceDB.lua
-# src\PerformanceTracking.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua

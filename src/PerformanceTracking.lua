@@ -8,10 +8,11 @@ local appName, app = ...;
 -- Tables should represent a scope nested within their parent table's scope, etc.
 -- Functions should use their containing Table scope with a key name
 
-local unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table_concat, rawset, setmetatable
-	= unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table.concat, rawset, setmetatable
+local unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table_concat, rawset, setmetatable, getmetatable, tostring
+	= unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table.concat, rawset, setmetatable, getmetatable, tostring
 
-local debug = false
+local debug = true
+print("Perf:Loading:debug:",debug)
 local print = function(...)
 	if debug then print(...) end
 end
@@ -43,14 +44,11 @@ app.PrintPerf = function()
 		if type(typeData) == "table" then
 			for k,v in pairs(typeData) do
 				if type(v) == "table" then
-					if type(k) == "string" then
-						line[1] = typeKey;
-						line[2] = k;
-						line[3] = v.count;
-						line[4] = v.time;
-						tinsert(blob, table_concat(line, ","))
-					else print("Why is this a",type(k),typeKey,v)
-					end
+					line[1] = typeKey;
+					line[2] = tostring(k);
+					line[3] = v.count;
+					line[4] = v.time;
+					tinsert(blob, table_concat(line, ","))
 				-- else print("Why is this a",type(v),typeKey,k,v)
 				end
 			end
@@ -67,12 +65,12 @@ app.ClearPerf = function()
 end
 
 -- Logic of whether to ignore trying to performance wrap an object
-local function IgnorePerf(o)
+local function IgnorePerf(o, scope)
 	if not o then return true end
 	if type(o) == "table" then
 		local mt = getmetatable(o)
-		if mt and mt.__index and type(mt.__index) == "function" then print("Perf.Ignore: Meta Function Wrapper!",o) return true end
-		if o.IsForbidden then print("Perf.Ignore: Game Object!",o:GetName()) return true end
+		if mt and mt.__index and type(mt.__index) == "function" then return end
+		if o.IsForbidden then print("Perf.Ignore: Game Object!",scope,o:GetName()) return true end
 	end
 end
 
@@ -91,7 +89,7 @@ local function perf_replace_function(func, name)
 
 	-- Perf capture of func calls
 	local typePerf = perf[name];
-	print("Perf.F:",perf.__scope,name)
+	-- print("Perf.F:",perf.__scope,name)
 	return function(...)
 		local now = GetTimePreciseSec();
 		-- if app.IsReady then print(now,perf.__scope,name,">",...) end
@@ -112,16 +110,21 @@ local function CaptureFunction(func, name, scope)
 end
 
 local function CaptureTable(table, scope)
-	if IgnorePerf(table) then return table end
+	if IgnorePerf(table, scope) then return table end
 	GetPerfForScope(table, scope or tostring(table))
 
-	print("Perf.T:",scope)
+	-- print("Perf.T:",scope)
 	local keys = {}
 	for key,_ in pairs(table) do
 		keys[#keys + 1] = key
 	end
 	for _,key in ipairs(keys) do
 		table[key] = CaptureFunction(table[key], key, scope)
+	end
+	-- replace the __index function of this table as well if one is defined
+	local mt = getmetatable(table)
+	if mt and mt.__index and type(mt.__index) == "function" then
+		mt.__index = CaptureFunction(mt.__index, "__index", scope)
 	end
 	return table;
 end
@@ -183,4 +186,5 @@ performance.CaptureTable = CaptureTable
 performance.CaptureFunction = CaptureFunction
 
 -- Performance Tracking for AllTheThings Functionality
+print("Perf:Init")
 AutoCaptureTable(app, appName);
