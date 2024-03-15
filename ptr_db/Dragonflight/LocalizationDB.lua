@@ -73,7 +73,6 @@ _.CategoryNames = {
 	[1010] = "Boots",
 	[1011] = "Cloaks",
 	[1012] = "Nets",
-	[1022] = "Lures",
 	[1026] = "Inks",
 	[1235] = "Follower Equipment",
 	[1242] = "Conversions",
@@ -135,7 +134,6 @@ _.CategoryIcons = {
 	[1009] = "Interface/Icons/inv_pants_06",
 	[1010] = "Interface/Icons/INV_Boots_01",
 	[1011] = "Interface/Icons/INV_Misc_Cape_18",
-	[1022] = "Interface/Icons/INV_Fishing_Lure_Worm",
 	[1026] = "Interface/Icons/inv_inscription_inkpurple01",
 }
 
@@ -572,8 +570,13 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Forsaken Deathsquad",
 	[-1000856] = "Worgen Stalkers",
 	[-1000858] = "Amateur Hunters",
-	[-1000859] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1000859] = ENCOUNTER_JOURNAL,
+	[-1000860] = select(2, GetAchievementInfo(6002))..": Season 9",
+	[-1000861] = select(2, GetAchievementInfo(6124))..": Season 10",
+	[-1000862] = "Cataclysmic Gladiator: Season 11",
+	[-1000863] = PVP_RATED_BATTLEGROUND,
+	[-1000864] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1000865] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -650,11 +653,12 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 	[-1000381] = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
 	[-1000850] = "Contains Things which are rewarded that upon completing that scenario.",
-	[-1000851] = "Contains Things which are rewarded that upon completing that event.",
+	[-1000851] = "Contains things that are rewarded upon completing that event.",
 	[-1000853] = "Patrols the area in roughly a circle.",
 	[-1000855] = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Forsaken Deathsquad.",
 	[-1000856] = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
 	[-1000858] = "Three hunters have surrounded Mara Swiftmane. Engage them in combat, and a Battered Chest will spawn near Mara Swiftmane. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
+	[-1000863] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1013,6 +1017,11 @@ localize(L.HEADER_ICONS, {
 	[-1000855] = "463451",
 	[-1000856] = "463876",
 	[-1000858] = "626000",
+	[-1000859] = "Interface/Icons/inv_10_inscription2_book3_color5",
+	[-1000860] = "Interface/Icons/ability_mount_drake_twilight",
+	[-1000861] = "Interface/Icons/ability_mount_drake_twilight",
+	[-1000862] = "236235",
+	[-1000863] = "1455894",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -4414,6 +4423,7 @@ _.ObjectNames = {
 	[281079] = "Star Moss",
 	[281092] = "Witch Doctor's Hoard",
 	[281230] = "Formal Invitation",
+	[281312] = "Stolen Supplies",
 	[281348] = "Crumbling Letter",
 	[281397] = "Cutwater Treasure Chest",
 	[281494] = "Frosty Treasure Chest",
@@ -5012,6 +5022,7 @@ _.ObjectNames = {
 	[358855] = "Damaged Safe Fall Pack",
 	[360054] = "Sticky Cat",
 	[362489] = "Elysian Decree",
+	[364345] = "A Faintly Glowing Seed",
 	[364483] = "Empty Nightcap Cask",
 	[364899] = "Crystallized Stygia",
 	[364926] = "Runeforged Shackles",
@@ -5071,6 +5082,7 @@ _.ObjectNames = {
 	[369225] = "Infested Vestige",
 	[369227] = "Stolen Anima Vessel",
 	[369232] = "Offering Box",
+	[369234] = "Offering Key",
 	[369235] = "Stolen Anima Vessel",
 	[369236] = "Stolen Anima Vessel",
 	[369245] = "Korthian Relic Box",
@@ -5789,6 +5801,8 @@ _.ObjectNames = {
 	[401828] = "Nal ks'kol Reliquary",
 	[401839] = "Dreamer's Bounty",
 	[401844] = "Smelly Trash Pile",
+	[401845] = "Smelly Disturbed Dirt",
+	[401846] = "Smelly Treasure Chest",
 	[402578] = "Glowing Key",
 	[402609] = "Demonic Gateway",
 	[402627] = "Well-Worn Kiln",
@@ -9077,6 +9091,7 @@ _.ObjectModels = {
 	[281079] = 1794518,
 	[281092] = 1777743,
 	[281230] = 1267024,
+	[281312] = 1602493,
 	[281348] = 576627,
 	[281397] = 1806321,
 	[281494] = 1806321,
@@ -9675,6 +9690,7 @@ _.ObjectModels = {
 	[358855] = 534613,
 	[360054] = 3730958,
 	[362489] = 3045977,
+	[364345] = 3486892,
 	[364483] = 3036556,
 	[364899] = 3270074,
 	[364926] = 3579718,
@@ -9733,6 +9749,7 @@ _.ObjectModels = {
 	[369225] = 3846066,
 	[369227] = 3993862,
 	[369232] = 3998009,
+	[369234] = 970206,
 	[369235] = 3993862,
 	[369236] = 3993862,
 	[369245] = 4093879,
@@ -10451,6 +10468,8 @@ _.ObjectModels = {
 	[401828] = 4323481,
 	[401839] = 4216698,
 	[401844] = 1255023,
+	[401845] = 4539378,
+	[401846] = 1806318,
 	[402578] = 3656493,
 	[402609] = 607277,
 	[402627] = 4689413,
@@ -10649,9 +10668,6 @@ _.ObjectModels = {
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "de" then
-localize(_.CategoryNames, {
-	[1022] = "Köder",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Zusätzliche Beute",
 	[-1000008] = "Klassenprozess",
@@ -10730,14 +10746,16 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Ein gieriger Abgesandter",
 	[-1000373] = "Neuer Charakter",
 	[-1000374] = "Verbündete Völker",
+	[-1000375] = "10. Jubiläum von Hearthstone",
 	[-1000379] = "Kopfgeld",
 	[-1000380] = "Kopfgeld",
 	[-1000381] = "Kukurus Schatzkammer",
 	[-1000853] = "Kriegsrat der Sargerei",
 	[-1000855] = "Todesschwadron der Verlassenen",
 	[-1000858] = "Amateurjäger",
-	[-1000859] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1000860] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1000862] = "Kataklysmischer Gladiator: Season 11",
+	[-1000864] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1000865] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -12636,6 +12654,7 @@ localize(_.ObjectNames, {
 	[281079] = "Sternmoos",
 	[281092] = "Schatz des Hexendoktors",
 	[281230] = "Förmliche Einladung",
+	[281312] = "Gestohlene Versorgungsgüter",
 	[281348] = "Auseinanderfallender Brief",
 	[281397] = "Schatztruhe der Schwertwasserkorsaren",
 	[281494] = "Frostige Schatztruhe",
@@ -13230,6 +13249,7 @@ localize(_.ObjectNames, {
 	[358855] = "Beschädigter Rucksack des sicheren Fallens",
 	[360054] = "Klebrige Katze",
 	[362489] = "Elysischer Erlass",
+	[364345] = "Ein schwach leuchtender Samen",
 	[364483] = "Leeres Schlummertrunkfass",
 	[364899] = "Kristallisierte Stygia",
 	[364926] = "Runengeschmiedete Fesseln",
@@ -13289,6 +13309,7 @@ localize(_.ObjectNames, {
 	[369225] = "Befallener Überrest",
 	[369227] = "Gestohlenes Animagefäß",
 	[369232] = "Opferkiste",
+	[369234] = "Opferschlüssel",
 	[369235] = "Gestohlenes Animagefäß",
 	[369236] = "Gestohlenes Animagefäß",
 	[369245] = "Korthianische Reliktschatulle",
@@ -13994,6 +14015,8 @@ localize(_.ObjectNames, {
 	[401828] = "Reliquiar von Nal ks'kol",
 	[401839] = "Belohnung des Träumers",
 	[401844] = "Stinkender Müllhaufen",
+	[401845] = "Stinkende bewegte Erde",
+	[401846] = "Stinkende Schatztruhe",
 	[402578] = "Leuchtender Schlüssel",
 	[402609] = "Dämonisches Tor",
 	[402627] = "Abgenutzter Brennofen",
@@ -14162,9 +14185,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "es" then
-localize(_.CategoryNames, {
-	[1022] = "Señuelos",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Rollo de Donificación",
 	[-1000008] = "Prueba de Clase",
@@ -14223,6 +14243,7 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Un Emisario Codicioso",
 	[-1000373] = "Nueva personaje",
 	[-1000374] = "Razas aliadas",
+	[-1000375] = "10.º aniversario de Hearthstone",
 	[-1000379] = "Prima",
 	[-1000380] = "Prima",
 	[-1000381] = "Alijo de Kukuru",
@@ -14230,8 +14251,9 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Escuadrón de la Muerte Abandonado",
 	[-1000856] = "Acechadores Huargen",
 	[-1000858] = "Cazadores Aficionados",
-	[-1000859] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1000862] = "Gladiador cataclísmico: Season 11",
+	[-1000864] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1000865] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -16123,6 +16145,7 @@ localize(_.ObjectNames, {
 	[281079] = "Musgo estelar",
 	[281092] = "Tesoro de médico brujo",
 	[281230] = "Invitación formal",
+	[281312] = "Suministros robados",
 	[281348] = "Carta deshecha",
 	[281397] = "Arqueta Aguacortada",
 	[281494] = "Arqueta congelada",
@@ -16710,6 +16733,7 @@ localize(_.ObjectNames, {
 	[358855] = "Mochila de Caída segura dañada",
 	[360054] = "Gato pegajoso",
 	[362489] = "Decreto elisio",
+	[364345] = "Una semilla con resplandor tenue",
 	[364483] = "Tonel de trago vacío",
 	[364899] = "Estigia cristalizada",
 	[364926] = "Grilletes forjados con runas",
@@ -16769,6 +16793,7 @@ localize(_.ObjectNames, {
 	[369225] = "Vestigio infectado",
 	[369227] = "Receptáculo de ánima robado",
 	[369232] = "Caja de ofrendas",
+	[369234] = "Llave de ofrendas",
 	[369235] = "Receptáculo de ánima robado",
 	[369236] = "Receptáculo de ánima robado",
 	[369245] = "Caja de reliquias korthiana",
@@ -17449,6 +17474,8 @@ localize(_.ObjectNames, {
 	[401828] = "Relicario de Nal ks'kol",
 	[401839] = "Botín de soñador",
 	[401844] = "Montón de basura maloliente",
+	[401845] = "Tierra revuelta maloliente",
+	[401846] = "Arqueta olorosa",
 	[402578] = "Llave resplandeciente",
 	[402609] = "Portal demoníaco",
 	[402627] = "Fogón desgastado",
@@ -17564,9 +17591,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "fr" then
-localize(_.CategoryNames, {
-	[1022] = "Appâts",
-});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Est",
 	[-1000001] = "Nord",
@@ -17674,6 +17698,7 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Émissaire cupide",
 	[-1000373] = "Nouveau personnage",
 	[-1000374] = "Races alliées",
+	[-1000375] = "10e anniversaire de Hearthstone",
 	[-1000379] = "Prime",
 	[-1000380] = "Prime",
 	[-1000381] = "Cache de Koukourou",
@@ -17681,8 +17706,11 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Escadron de la Mort Abandonné",
 	[-1000856] = "Traqueurs Worgens",
 	[-1000858] = "Chasseurs Amateurs",
-	[-1000859] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1000860] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1000860] = select(2, GetAchievementInfo(6002))..": Saison 9",
+	[-1000861] = select(2, GetAchievementInfo(6124))..": Saison 10",
+	[-1000862] = "Gladiateur cataclysmique: Saison 11",
+	[-1000864] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1000865] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -19593,6 +19621,7 @@ localize(_.ObjectNames, {
 	[281079] = "Mousse étoilée",
 	[281092] = "Magot de féticheur",
 	[281230] = "Invitation officielle",
+	[281312] = "Fournitures volées",
 	[281348] = "Lettre désagrégée",
 	[281397] = "Coffre au trésor des Éperonneurs",
 	[281494] = "Coffre au trésor givré",
@@ -20189,6 +20218,7 @@ localize(_.ObjectNames, {
 	[358855] = "Sac à dos de chute amortie endommagé",
 	[360054] = "Chat collant",
 	[362489] = "Décret élyséen",
+	[364345] = "Graine faiblement luminescente",
 	[364483] = "Fût de pousse-café vide",
 	[364899] = "Stygies cristallisées",
 	[364926] = "Entraves runeforgées",
@@ -20248,6 +20278,7 @@ localize(_.ObjectNames, {
 	[369225] = "Vestiges contaminés",
 	[369227] = "Réceptacle d’anima volé",
 	[369232] = "Boîte d’offrandes",
+	[369234] = "Clé des offrandes",
 	[369235] = "Réceptacle d’anima volé",
 	[369236] = "Réceptacle d’anima volé",
 	[369245] = "Boîte à reliques korthienne",
@@ -20937,6 +20968,8 @@ localize(_.ObjectNames, {
 	[401828] = "Reliquaire de Nal Ks’kol",
 	[401839] = "Butin de la Rêveuse",
 	[401844] = "Tas de déchets kifouette",
+	[401845] = "Terre retournée kifouette",
+	[401846] = "Coffre au trésor kifouette",
 	[402578] = "Clé luminescente",
 	[402609] = "Porte des démons",
 	[402627] = "Four très usé",
@@ -21093,9 +21126,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "it" then
-localize(_.CategoryNames, {
-	[1022] = "Esche",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Tiro Bonus",
 	[-1000008] = "Prova di Classe",
@@ -21142,6 +21172,7 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Un emissario avido",
 	[-1000373] = "Nuovo personaggio",
 	[-1000374] = "Razze Alleate",
+	[-1000375] = "10° anniversario di Hearthstone",
 	[-1000379] = "Premio",
 	[-1000380] = "Premio",
 	[-1000381] = "Cassa di Kukuru",
@@ -21149,8 +21180,9 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Squadra della Morte Abbandonata",
 	[-1000856] = "Cacciatori Worgen",
 	[-1000858] = "Cacciatori Dilettanti",
-	[-1000859] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1000862] = "Gladiatore Cataclismico: Season 11",
+	[-1000864] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1000865] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -22931,6 +22963,7 @@ localize(_.ObjectNames, {
 	[281079] = "Muschio Stellare",
 	[281092] = "Scorta del Taumaturgo",
 	[281230] = "Invito Formale",
+	[281312] = "Scorte Rubate",
 	[281348] = "Lettera Accartocciata",
 	[281397] = "Cassa del Tesoro degli Sferzamaree",
 	[281494] = "Cassa del Tesoro Congelata",
@@ -23497,6 +23530,7 @@ localize(_.ObjectNames, {
 	[358855] = "Zaino della Caduta Sicura Danneggiato",
 	[360054] = "Gatto Appiccicoso",
 	[362489] = "Decreto Elisio",
+	[364345] = "Seme Debolmente Luminoso",
 	[364483] = "Barile di Cicchetti Vuoto",
 	[364899] = "Stigia Cristallizzata",
 	[364926] = "Catene Runaforgiate",
@@ -23556,6 +23590,7 @@ localize(_.ObjectNames, {
 	[369225] = "Vestigia Infestate",
 	[369227] = "Ricettacolo d'Animum Rubato",
 	[369232] = "Scatola delle Offerte",
+	[369234] = "Chiave delle Offerte",
 	[369235] = "Ricettacolo d'Animum Rubato",
 	[369236] = "Ricettacolo d'Animum Rubato",
 	[369245] = "Scatola di Reliquie di Korthia",
@@ -24206,6 +24241,8 @@ localize(_.ObjectNames, {
 	[401828] = "Reliquiario di Nal ks'kol",
 	[401839] = "Bottino del Sognatore",
 	[401844] = "Pila di Spazzatura Puzzolente",
+	[401845] = "Terra Smossa Puzzolente",
+	[401846] = "Cassa del Tesoro Puzzolente",
 	[402578] = "Chiave Luminosa",
 	[402627] = "Fornace Molto Consumata",
 	[402632] = "Anello di Salvataggio di Zolfo",
@@ -24337,7 +24374,6 @@ localize(_.CategoryNames, {
 	[1009] = "다리",
 	[1010] = "발",
 	[1011] = "등",
-	[1022] = "미끼",
 });
 localize(L.HEADER_NAMES, {
 	[-1000006] = "보너스 롤",
@@ -24391,8 +24427,9 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "포세이큰 데스스쿼드",
 	[-1000856] = "늑대인간 추적자",
 	[-1000858] = "아마추어 사냥꾼",
-	[-1000859] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1000862] = "격변한 검투사: Season 11",
+	[-1000864] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1000865] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -26749,6 +26786,7 @@ localize(_.ObjectNames, {
 	[358533] = "잊혀진 보급품",
 	[358855] = "손상된 안전 낙하 가방",
 	[362489] = "엘리시안 칙령",
+	[364345] = "희미하게 빛나는 씨앗",
 	[364483] = "텅 빈 취침주 통",
 	[364899] = "결정화 저승석",
 	[364926] = "룬벼림 족쇄",
@@ -26807,6 +26845,7 @@ localize(_.ObjectNames, {
 	[369225] = "감염된 잔재",
 	[369227] = "도둑맞은 령 용기",
 	[369232] = "공물 상자",
+	[369234] = "공물 열쇠",
 	[369235] = "도둑맞은 령 용기",
 	[369236] = "도둑맞은 령 용기",
 	[369245] = "코르시아 유물 상자",
@@ -27437,6 +27476,7 @@ localize(_.ObjectNames, {
 	[401828] = "날 크스콜 성물 보관소",
 	[401839] = "꿈꾸는 자의 은혜",
 	[401844] = "냄새나는 쓰레기 더미",
+	[401845] = "냄새나는 흐트러진 흙",
 	[402578] = "빛나는 열쇠",
 	[402627] = "마모된 가마",
 	[402632] = "유황석 구명환",
@@ -27497,9 +27537,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "pt" then
-localize(_.CategoryNames, {
-	[1022] = "Iscas",
-});
 localize(L.HEADER_NAMES, {
 	[-1000006] = "Rolo de Bônus",
 	[-1000008] = "Teste de Classe",
@@ -27558,6 +27595,7 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Um Emissário Ganancioso",
 	[-1000373] = "Novo personagem",
 	[-1000374] = "Raças Aliadas",
+	[-1000375] = "10º Aniversário de Hearthstone",
 	[-1000379] = "Recompensa",
 	[-1000380] = "Recompensa",
 	[-1000381] = "Baú de Kukuru",
@@ -27565,8 +27603,9 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Esquadrão da Morte Abandonado",
 	[-1000856] = "Perseguidores Worgens",
 	[-1000858] = "Caçadores Amadores",
-	[-1000859] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1000860] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1000862] = "Gladiador Cataclísmico: Season 11",
+	[-1000864] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1000865] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -29443,6 +29482,7 @@ localize(_.ObjectNames, {
 	[281079] = "Musgo-estrela",
 	[281092] = "Tesouro do Mandingueiro",
 	[281230] = "Convite Formal",
+	[281312] = "Suprimentos Roubados",
 	[281348] = "Carta Arruinada",
 	[281397] = "Baú do Tesouro dos Corta-água",
 	[281494] = "Baú do Tesouro Revestido de Gelo",
@@ -30014,6 +30054,7 @@ localize(_.ObjectNames, {
 	[358855] = "Mochila de Queda Segura Danificada",
 	[360054] = "Gato Grudento",
 	[362489] = "Decreto Elísio",
+	[364345] = "Semente Levemente Chamejante",
 	[364483] = "Barril da Saideira Esvaziado",
 	[364899] = "Estígia Cristalizada",
 	[364926] = "Grilhões Forjados em Runas",
@@ -30073,6 +30114,7 @@ localize(_.ObjectNames, {
 	[369225] = "Vestígio Infestado",
 	[369227] = "Recipiente de Ânima Roubada",
 	[369232] = "Caixa de Oferenda",
+	[369234] = "Chave da Oferenda",
 	[369235] = "Recipiente de Ânima Roubada",
 	[369236] = "Recipiente de Ânima Roubada",
 	[369245] = "Caixa de Relíquias Korthianas",
@@ -30744,6 +30786,8 @@ localize(_.ObjectNames, {
 	[401828] = "Relicário de Nal Ks'kol",
 	[401839] = "Tesouro da Sonhadora",
 	[401844] = "Lixo Fedorento",
+	[401845] = "Poeira Fedorenta Revolvida",
+	[401846] = "Baú do Tesouro Fedorento",
 	[402578] = "Chave Chamejante",
 	[402609] = "Portal Demoníaco",
 	[402627] = "Fornalha Desgastada",
@@ -30879,9 +30923,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "ru" then
-localize(_.CategoryNames, {
-	[1022] = "Наживки",
-});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Восток",
 	[-1000001] = "Север",
@@ -31043,6 +31084,7 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Алчный посланец",
 	[-1000373] = "Новый персонаж",
 	[-1000374] = "Союзные расы",
+	[-1000375] = "10-я годовщина Hearthstone",
 	[-1000379] = "Премия",
 	[-1000380] = "Премия",
 	[-1000381] = "клада Кукуру",
@@ -31050,8 +31092,11 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "Отрекшийся отряд смерти",
 	[-1000856] = "Воргены-сталкеры",
 	[-1000858] = "Охотники-любители",
-	[-1000859] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1000860] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1000860] = select(2, GetAchievementInfo(6002))..": Сезон 9",
+	[-1000861] = select(2, GetAchievementInfo(6124))..": Сезон 10",
+	[-1000862] = "Гладиатор Катаклизма: Сезон 11",
+	[-1000864] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1000865] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -32969,6 +33014,7 @@ localize(_.ObjectNames, {
 	[281079] = "Звездный мох",
 	[281092] = "Схрон знахаря",
 	[281230] = "Официальное приглашение",
+	[281312] = "Украденные припасы",
 	[281348] = "Ветхое письмо",
 	[281397] = "Сундук с сокровищами братства Волнорезов",
 	[281494] = "Покрытый инеем сундук с сокровищами",
@@ -33566,6 +33612,7 @@ localize(_.ObjectNames, {
 	[358855] = "Поврежденный набор для безопасного падения",
 	[360054] = "Липкая кошка",
 	[362489] = "Элизийский декрет",
+	[364345] = "Тускло мерцающее семя",
 	[364483] = "Пустой бочонок для вечернего вина",
 	[364899] = "Кристаллизованная стигия",
 	[364926] = "Выкованные в кузне рун оковы",
@@ -33625,6 +33672,7 @@ localize(_.ObjectNames, {
 	[369225] = "Зараженная сумка",
 	[369227] = "Сосуд с украденной анимой",
 	[369232] = "Коробка для подношений",
+	[369234] = "Ключ от подношений",
 	[369235] = "Сосуд с украденной анимой",
 	[369236] = "Сосуд с украденной анимой",
 	[369245] = "Ларец с кортийскими реликвиями",
@@ -34334,6 +34382,8 @@ localize(_.ObjectNames, {
 	[401828] = "Реликварий Нал-кс'кола",
 	[401839] = "Дар Дремлющей",
 	[401844] = "Пахучая куча мусора",
+	[401845] = "Пахучая потревоженная почва",
+	[401846] = "Пахучий сундук с сокровищами",
 	[402578] = "Светящийся ключ",
 	[402609] = "Демонические врата",
 	[402627] = "Старый потертый горн",
@@ -34508,9 +34558,6 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "zh" then
-localize(_.CategoryNames, {
-	[1022] = "鱼竿",
-});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "东部",
 	[-1000001] = "北部",
@@ -34648,6 +34695,7 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "贪婪的特使",
 	[-1000373] = "新角色",
 	[-1000374] = "同盟种族",
+	[-1000375] = "《炉石传说》10周年",
 	[-1000379] = "赏金任务",
 	[-1000380] = "赏金任务",
 	[-1000381] = "库库鲁的宝箱",
@@ -34655,8 +34703,11 @@ localize(L.HEADER_NAMES, {
 	[-1000855] = "被遗忘者敢死队",
 	[-1000856] = "狼人追猎者",
 	[-1000858] = "业余猎人",
-	[-1000859] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1000860] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1000860] = select(2, GetAchievementInfo(6002)).."：第9赛季",
+	[-1000861] = select(2, GetAchievementInfo(6124)).."：第10赛季",
+	[-1000862] = "灾变角斗士：第11赛季",
+	[-1000864] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1000865] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
@@ -36518,6 +36569,7 @@ localize(_.ObjectNames, {
 	[281079] = "星光苔",
 	[281092] = "巫医的珍藏",
 	[281230] = "正式邀请函",
+	[281312] = "失窃的补给品",
 	[281348] = "破碎的信件",
 	[281397] = "破浪宝箱",
 	[281494] = "冰霜宝箱",
@@ -37110,6 +37162,7 @@ localize(_.ObjectNames, {
 	[358855] = "损坏的安全降落包",
 	[360054] = "黏黏猫",
 	[362489] = "极乐敕令",
+	[364345] = "散发微光的种子",
 	[364483] = "空空的睡帽酒酒桶",
 	[364899] = "晶体冥殇",
 	[364926] = "符文熔铸镣铐",
@@ -37169,6 +37222,7 @@ localize(_.ObjectNames, {
 	[369225] = "孳生残迹",
 	[369227] = "失窃的心能容器",
 	[369232] = "供品盒",
+	[369234] = "供品钥匙",
 	[369235] = "失窃的心能容器",
 	[369236] = "失窃的心能容器",
 	[369245] = "刻希亚圣物箱",

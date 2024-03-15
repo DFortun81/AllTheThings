@@ -756,7 +756,6 @@ for key, value in pairs({
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
 	-- PvP Headers
-		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
 		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
 		[-651] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Prideful (S15)
@@ -937,8 +936,6 @@ for key, value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-543] = "Legion Invasions",											-- Legion Invasions
-	-- Cataclysm PvP Seasons
-		[-650] = PVP_RATED_BATTLEGROUND,										-- Rated Battleground
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
 		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)

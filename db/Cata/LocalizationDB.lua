@@ -742,6 +742,7 @@ localize(L.HEADER_NAMES, {
 	[-1000860] = select(2, GetAchievementInfo(6002))..": Season 9",
 	[-1000861] = select(2, GetAchievementInfo(6124))..": Season 10",
 	[-1000862] = "Cataclysmic Gladiator: Season 11",
+	[-1000863] = PVP_RATED_BATTLEGROUND,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -778,6 +779,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000272] = "This Category contains Things that probably exist in the game but no known source.",
 	[-1000284] = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
+	[-1000863] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -947,6 +949,7 @@ localize(L.HEADER_ICONS, {
 	[-1000860] = "Interface/Icons/ability_mount_drake_twilight",
 	[-1000861] = "Interface/Icons/ability_mount_drake_twilight",
 	[-1000862] = "236235",
+	[-1000863] = "Interface/Icons/INV_BannerPVP_03",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,

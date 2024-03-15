@@ -248,6 +248,7 @@ HeaderAssignments = {
 	["Rank 4"] = -1000339,
 	["Rare"] = -1000107,
 	["Rares"] = -1000032,
+	["Rated Battlegrounds"] = -1000863,
 	["Recruit A Friend"] = -1000283,
 	["Relentless Gladiator"] = -1000134,
 	["Relics"] = -1000069,
@@ -394,4 +395,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000863;
+NextHeaderID = -1000864;
