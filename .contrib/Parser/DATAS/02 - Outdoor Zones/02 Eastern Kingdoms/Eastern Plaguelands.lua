@@ -738,7 +738,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4892, {	-- Eastern Plaguelands Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #if AFTER MOP
 					["sym"] = {{ "achievement_criteria" }},
+					-- #endif
 				}),
 				explorationAch(771, {	-- Explore Eastern Plaguelands
 					-- #if BEFORE WRATH
