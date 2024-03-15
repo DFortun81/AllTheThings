@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
-	inst(70, {	-- Halls of Origination
+	applyclassicphase(CATA_PHASE_ONE, inst(70, {	-- Halls of Origination
 		["mapID"] = 297,
  		["maps"] = { 298, 299 },
 		["coord"] = { 71.81, 52.16, ULDUM },	-- Halls of Origination
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

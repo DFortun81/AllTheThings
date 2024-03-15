@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
-	inst(66, {	-- Blackrock Caverns
+	applyclassicphase(CATA_PHASE_ONE, inst(66, {	-- Blackrock Caverns
 		["mapID"] = 283,
 		["maps"] = { 284 },
 		["coord"] = { 71.77, 52.98, BLACKROCK_MOUNTAIN_LEVEL2 },
@@ -332,7 +332,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

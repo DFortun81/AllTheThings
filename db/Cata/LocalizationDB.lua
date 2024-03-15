@@ -739,6 +739,9 @@ localize(L.HEADER_NAMES, {
 	[-1000289] = select(2,GetAchievementInfo(6131)),
 	[-1000373] = "New Character",
 	[-1000380] = "Bounty",
+	[-1000860] = select(2, GetAchievementInfo(6002))..": Season 9",
+	[-1000861] = select(2, GetAchievementInfo(6124))..": Season 10",
+	[-1000862] = "Cataclysmic Gladiator: Season 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -941,6 +944,9 @@ localize(L.HEADER_ICONS, {
 	[-1000289] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000373] = "1530081",
 	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
+	[-1000860] = "Interface/Icons/ability_mount_drake_twilight",
+	[-1000861] = "Interface/Icons/ability_mount_drake_twilight",
+	[-1000862] = "236235",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -4318,6 +4324,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Das Szepter der Sandstürme",
 	[-1000373] = "Neuer Charakter",
 	[-1000380] = "Kopfgeld",
+	[-1000862] = "Kataklysmischer Gladiator: Season 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -5312,6 +5319,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "El cetro del Mar de Dunas",
 	[-1000373] = "Nueva personaje",
 	[-1000380] = "Prima",
+	[-1000862] = "Gladiador cataclísmico: Season 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -6328,6 +6336,9 @@ localize(L.HEADER_NAMES, {
 	[-1000247] = "Édition BC Classic Deluxe",
 	[-1000373] = "Nouveau personnage",
 	[-1000380] = "Prime",
+	[-1000860] = select(2, GetAchievementInfo(6002))..": Saison 9",
+	[-1000861] = select(2, GetAchievementInfo(6124))..": Saison 10",
+	[-1000862] = "Gladiateur cataclysmique: Saison 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -7326,6 +7337,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Scettro delle Sabbie Mutevoli",
 	[-1000373] = "Nuovo personaggio",
 	[-1000380] = "Premio",
+	[-1000862] = "Gladiatore Cataclismico: Season 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -8326,6 +8338,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "흐르는 모래의 홀",
 	[-1000373] = "새로운 캐릭터",
 	[-1000380] = "하사품",
+	[-1000862] = "격변한 검투사: Season 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -9285,6 +9298,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Cetro das Areias Cambiantes",
 	[-1000373] = "Novo personagem",
 	[-1000380] = "Recompensa",
+	[-1000862] = "Gladiador Cataclísmico: Season 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -10293,6 +10307,9 @@ localize(L.HEADER_NAMES, {
 	[-1000284] = "Годовщина WoW",
 	[-1000373] = "Новый персонаж",
 	[-1000380] = "Премия",
+	[-1000860] = select(2, GetAchievementInfo(6002))..": Сезон 9",
+	[-1000861] = select(2, GetAchievementInfo(6124))..": Сезон 10",
+	[-1000862] = "Гладиатор Катаклизма: Сезон 11",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -11337,6 +11354,9 @@ localize(L.HEADER_NAMES, {
 	[-1000272] = "无来源",
 	[-1000373] = "新角色",
 	[-1000380] = "赏金任务",
+	[-1000860] = select(2, GetAchievementInfo(6002)).."：第9赛季",
+	[-1000861] = select(2, GetAchievementInfo(6124)).."：第10赛季",
+	[-1000862] = "灾变角斗士：第11赛季",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

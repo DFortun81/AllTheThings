@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
-	inst(69, {	-- Lost City of the Tol'vir
+	applyclassicphase(CATA_PHASE_ONE, inst(69, {	-- Lost City of the Tol'vir
 		["mapID"] = 277,
 		["coord"] = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
 		["groups"] = {
@@ -291,7 +291,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

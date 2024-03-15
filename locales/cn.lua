@@ -553,12 +553,6 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-520] = "资料片前夕",											-- Expansion Pre-Launch
 		[-543] = "军团入侵",											-- Legion Invasions
-	-- Cataclysm PvP Seasons
-		[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
-		[-656] = "荣誉装备冷酷赛季",									-- Honor Gear Ruthless (S10)
-		[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
-		[-654] = "荣誉装备灾变赛季",									-- Honor Gear Cataclysmic (S11)
-		[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
 		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)

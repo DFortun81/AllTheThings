@@ -528,12 +528,6 @@ for key,value in pairs({
 	-- Misc
 		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
 		[-543] = "Invasions de Legion ",							-- Legion Invasions
-	-- Cataclysm PvP Seasons
-		[-672] = select(2, GetAchievementInfo(6002)).." : Saison 9",	-- Vicious Gladiator: Season 9
-		[-656] = "Équipement Honneur Gladiateur sans pitié",			-- Honor Gear Ruthless Season
-		[-673] = select(2, GetAchievementInfo(6124)).." : Saison 10",	-- Ruthless Gladiator: Season 10
-		[-654] = "Équipement Honneur Saison Cataclysmique",				-- Honor Gear Cataclysmic Season
-		[-674] = select(2, GetAchievementInfo(6938)).." : Saison 11",	-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
 		[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season

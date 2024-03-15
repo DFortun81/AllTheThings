@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
-	inst(65, {	-- Throne of the Tides
+	applyclassicphase(CATA_PHASE_ONE, inst(65, {	-- Throne of the Tides
 		["mapID"] = 322,
 		["maps"] = { 323 },
 		["coord"] = { 71.00, 29.00, 204 },	-- Abyssal Depths, Vashj'ir
@@ -252,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

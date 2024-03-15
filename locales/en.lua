@@ -762,12 +762,6 @@ for key, value in pairs({
 		[-651] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Prideful (S15)
 		[-652] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Grievous (S14)
 		[-653] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Tyrannical (S13)
-		[-654] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Cataclysmic (S11)
-		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Ruthless (S10)
-	-- Cataclysm PvP Seasons
-		[-672] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Vicious Gladiator: Season 9
-		[-673] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Ruthless Gladiator: Season 10
-		[-674] = 236235,																	-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Malevolent Gladiator: Season 12
 		[-676] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Tyrannical Gladiator: Season 13
@@ -943,21 +937,8 @@ for key, value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-543] = "Legion Invasions",											-- Legion Invasions
-	-- PvP Header
-		-- Special Season Tags
-		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
-		--[-651] = "Honor Gear Prideful Season",								-- Listed under MoP PvP Seasons
-		--[-652] = "Honor Gear Grievous Season",								-- Listed under MoP PvP Seasons
-		--[-653] = "Honor Gear Tyrannical Season",								-- Listed under MoP PvP Seasons
-		--[-654] = "Honor Gear Cataclysmic Season",								-- Listed under Cata PvP Seasons
-		--[-656] = "Honor Gear Ruthless Season",								-- Listed under Cata PvP Seasons
 	-- Cataclysm PvP Seasons
 		[-650] = PVP_RATED_BATTLEGROUND,										-- Rated Battleground
-		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
-		[-656] = "Honor Gear Ruthless Season",									-- Honor Gear Ruthless (S10)
-		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
-		[-654] = "Honor Gear Cataclysmic Season",								-- Honor Gear Cataclysmic (S11)
-		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
 		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)

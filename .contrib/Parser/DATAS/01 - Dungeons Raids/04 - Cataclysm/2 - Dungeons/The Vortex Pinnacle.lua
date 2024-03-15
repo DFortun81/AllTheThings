@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
-	inst(68, {	-- The Vortex Pinnacle
+	applyclassicphase(CATA_PHASE_ONE, inst(68, {	-- The Vortex Pinnacle
 		["mapID"] = 325,
 		["coord"] = { 76.76, 84.44, ULDUM },	-- Vortex Pinnacle
 		["groups"] = {
@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				i(206184),	-- Skyshard Ring
 			})),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

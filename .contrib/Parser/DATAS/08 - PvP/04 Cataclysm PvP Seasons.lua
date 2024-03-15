@@ -1,11 +1,29 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-
+local function MarkOfWHOOOWHATNow(t)
+	-- #if BEFORE 7.0.3.22248
+	-- Programmatically remove all references to Mark of Honor.
+	if t.cost then
+		local totalCosts = #t.cost;
+		for i=totalCosts,1,-1 do
+			if t.cost[i][2] == 137642 then
+				-- Mark of Honor, remove it!
+				table.remove(t.cost, i);
+				totalCosts = totalCosts - 1;
+			end
+		end
+		if totalCosts == 0 then
+			t.cost = nil;
+		end
+	end
+	-- #endif
+	return t;
+end
 root(ROOTS.PVP, {
-	pvp(expansion(EXPANSION.CATA, {
+	applyclassicphase(CATA_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CATA, {
 		n(RATED_BATTLEGROUNDS, {
-			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.|r",
+			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
 			["groups"] = {
 				n(FACTION_HEADER_ALLIANCE, {
 					["races"] = ALLIANCE_ONLY,
@@ -442,8 +460,10 @@ root(ROOTS.PVP, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, DEATHKNIGHT },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, DEATHKNIGHT },
 							{"select", "itemID", 64684 },	-- Bloodthirsty Gladiator's Armplates of Proficiency
 							{"select", "itemID", 64753 },	-- Bloodthirsty Gladiator's Girdle of Cruelty
 							{"select", "itemID", 64870 },	-- Bloodthirsty Gladiator's Warboots of Cruelty
@@ -456,39 +476,31 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70573 },	-- Vicious Gladiator's Girdle of Cruelty
 							{"select", "itemID", 70668 },	-- Vicious Gladiator's Warboots of Cruelty
 						},
-						["groups"] = {
-							i(64735, {	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64736, {	-- Bloodthirsty Gladiator's Dreadplate Gauntlets
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64737, {	-- Bloodthirsty Gladiator's Dreadplate Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64738, {	-- Bloodthirsty Gladiator's Dreadplate Legguards
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64739, {	-- Bloodthirsty Gladiator's Dreadplate Shoulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
-							i(70559),	-- Vicious Gladiator's Dreadplate Gauntlets
-							i(70560),	-- Vicious Gladiator's Dreadplate Helm
-							i(70561),	-- Vicious Gladiator's Dreadplate Legguards
-							i(70562),	-- Vicious Gladiator's Dreadplate Shoulders
-							i(70514),	-- Vicious Gladiator's Armplates of Proficiency
-							i(70573),	-- Vicious Gladiator's Girdle of Cruelty
-							i(70668),	-- Vicious Gladiator's Warboots of Cruelty
-						},
+					}),
+					i(64735, {	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64736, {	-- Bloodthirsty Gladiator's Dreadplate Gauntlets
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64737, {	-- Bloodthirsty Gladiator's Dreadplate Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64738, {	-- Bloodthirsty Gladiator's Dreadplate Legguards
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64739, {	-- Bloodthirsty Gladiator's Dreadplate Shoulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
 				cl(DRUID, {
 					i(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, DRUID },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, DRUID },
 							{"select", "itemID", 64698 },	-- Bloodthirsty Gladiator's Bindings of Meditation
 							{"select", "itemID", 64699 },	-- Bloodthirsty Gladiator's Bindings of Prowess
 							{"select", "itemID", 64696 },	-- Bloodthirsty Gladiator's Belt of Cruelty
@@ -517,82 +529,61 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70571 },	-- Vicious Gladiator's Footguards of Alacrity
 							{"select", "itemID", 70572 },	-- Vicious Gladiator's Footguards of Meditation
 						},
-						["groups"] = {
-							i(64727, {	-- Bloodthirsty Gladiator's Dragonhide Gloves
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64728, {	-- Bloodthirsty Gladiator's Dragonhide Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64729, {	-- Bloodthirsty Gladiator's Dragonhide Legguards
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64730, {	-- Bloodthirsty Gladiator's Dragonhide Robes
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64731, {	-- Bloodthirsty Gladiator's Dragonhide Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64764, {	-- Bloodthirsty Gladiator's Kodohide Gloves
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64765, {	-- Bloodthirsty Gladiator's Kodohide Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64766, {	-- Bloodthirsty Gladiator's Kodohide Legguards
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64767, {	-- Bloodthirsty Gladiator's Kodohide Robes
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64768, {	-- Bloodthirsty Gladiator's Kodohide Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64874, {	-- Bloodthirsty Gladiator's Wyrmhide Gloves
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64875, {	-- Bloodthirsty Gladiator's Wyrmhide Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64876, {	-- Bloodthirsty Gladiator's Wyrmhide Legguards
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64877, {	-- Bloodthirsty Gladiator's Wyrmhide Robes
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64878, {	-- Bloodthirsty Gladiator's Wyrmhide Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(70550),	-- Vicious Gladiator's Dragonhide Gloves
-							i(70551),	-- Vicious Gladiator's Dragonhide Helm
-							i(70552),	-- Vicious Gladiator's Dragonhide Legguards
-							i(70553),	-- Vicious Gladiator's Dragonhide Robes
-							i(70554),	-- Vicious Gladiator's Dragonhide Spaulders
-							i(70580),	-- Vicious Gladiator's Kodohide Gloves
-							i(70581),	-- Vicious Gladiator's Kodohide Helm
-							i(70582),	-- Vicious Gladiator's Kodohide Legguards
-							i(70583),	-- Vicious Gladiator's Kodohide Robes
-							i(70584),	-- Vicious Gladiator's Kodohide Spaulders
-							i(70671),	-- Vicious Gladiator's Wyrmhide Gloves
-							i(70672),	-- Vicious Gladiator's Wyrmhide Helm
-							i(70673),	-- Vicious Gladiator's Wyrmhide Legguards
-							i(70674),	-- Vicious Gladiator's Wyrmhide Robes
-							i(70675),	-- Vicious Gladiator's Wyrmhide Spaulders
-							i(70525),	-- Vicious Gladiator's Bindings of Meditation
-							i(70526),	-- Vicious Gladiator's Bindings of Prowess
-							i(70523),	-- Vicious Gladiator's Belt of Cruelty
-							i(70524),	-- Vicious Gladiator's Belt of Meditation
-							i(70571),	-- Vicious Gladiator's Footguards of Alacrity
-							i(70572),	-- Vicious Gladiator's Footguards of Meditation
-						},
+					}),
+					i(64727, {	-- Bloodthirsty Gladiator's Dragonhide Gloves
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64728, {	-- Bloodthirsty Gladiator's Dragonhide Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64729, {	-- Bloodthirsty Gladiator's Dragonhide Legguards
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64730, {	-- Bloodthirsty Gladiator's Dragonhide Robes
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64731, {	-- Bloodthirsty Gladiator's Dragonhide Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64764, {	-- Bloodthirsty Gladiator's Kodohide Gloves
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64765, {	-- Bloodthirsty Gladiator's Kodohide Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64766, {	-- Bloodthirsty Gladiator's Kodohide Legguards
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64767, {	-- Bloodthirsty Gladiator's Kodohide Robes
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64768, {	-- Bloodthirsty Gladiator's Kodohide Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64874, {	-- Bloodthirsty Gladiator's Wyrmhide Gloves
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64875, {	-- Bloodthirsty Gladiator's Wyrmhide Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64876, {	-- Bloodthirsty Gladiator's Wyrmhide Legguards
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64877, {	-- Bloodthirsty Gladiator's Wyrmhide Robes
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64878, {	-- Bloodthirsty Gladiator's Wyrmhide Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
 				cl(HUNTER, {
 					i(146419, {	-- Ensemble: Bloodthirsty Gladiator's Chain Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, HUNTER },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, HUNTER },
 							{"select", "itemID", 64872 },	-- Bloodthirsty Gladiator's Wristguards of Accuracy
 							{"select", "itemID", 64873 },	-- Bloodthirsty Gladiator's Wristguards of Alacrity
 							{"select", "itemID", 64781 },	-- Bloodthirsty Gladiator's Links of Accuracy
@@ -611,42 +602,31 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70639 },	-- Vicious Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 70641 },	-- Vicious Gladiator's Sabatons of Cruelty
 						},
-						["groups"] = {
-							i(64708, {	-- Bloodthirsty Gladiator's Chain Armor
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64709, {	-- Bloodthirsty Gladiator's Chain Gauntlets
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64710, {	-- Bloodthirsty Gladiator's Chain Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64711, {	-- Bloodthirsty Gladiator's Chain Leggings
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64712, {	-- Bloodthirsty Gladiator's Chain Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(70533),	-- Vicious Gladiator's Chain Armor
-							i(70534),	-- Vicious Gladiator's Chain Gauntlets
-							i(70535),	-- Vicious Gladiator's Chain Helm
-							i(70536),	-- Vicious Gladiator's Chain Leggings
-							i(70537),	-- Vicious Gladiator's Chain Spaulders
-							i(70669),	-- Vicious Gladiator's Wristguards of Accuracy
-							i(70670),	-- Vicious Gladiator's Wristguards of Alacrity
-							i(70641),	-- Vicious Gladiator's Sabatons of Cruelty
-							i(70639),	-- Vicious Gladiator's Sabatons of Alacrity
-							i(70595),	-- Vicious Gladiator's Links of Accuracy
-							i(70596),	-- Vicious Gladiator's Links of Cruelty
-						},
+					}),
+					i(64708, {	-- Bloodthirsty Gladiator's Chain Armor
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64709, {	-- Bloodthirsty Gladiator's Chain Gauntlets
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64710, {	-- Bloodthirsty Gladiator's Chain Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64711, {	-- Bloodthirsty Gladiator's Chain Leggings
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64712, {	-- Bloodthirsty Gladiator's Chain Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
 				cl(MAGE, {
 					i(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, MAGE },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, MAGE },
 							{"select", "itemID", 64723 },	-- Bloodthirsty Gladiator's Cuffs of Accuracy
 							{"select", "itemID", 64721 },	-- Bloodthirsty Gladiator's Cord of Cruelty
 							{"select", "itemID", 64863 },	-- Bloodthirsty Gladiator's Treads of Cruelty
@@ -659,30 +639,8 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70545 },	-- Vicious Gladiator's Cord of Cruelty
 							{"select", "itemID", 70661 },	-- Vicious Gladiator's Treads of Cruelty
 						},
+						-- #if AFTER 7.2.0.23436
 						["groups"] = {
-							i(64853, {	-- Bloodthirsty Gladiator's Silk Amice
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64854, {	-- Bloodthirsty Gladiator's Silk Cowl
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64855, {	-- Bloodthirsty Gladiator's Silk Handguards
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64856, {	-- Bloodthirsty Gladiator's Silk Robe
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64857, {	-- Bloodthirsty Gladiator's Silk Trousers
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(70655),	-- Vicious Gladiator's Silk Amice
-							i(70656),	-- Vicious Gladiator's Silk Cowl
-							i(70657),	-- Vicious Gladiator's Silk Handguards
-							i(70658),	-- Vicious Gladiator's Silk Robe
-							i(70659),	-- Vicious Gladiator's Silk Trousers
-							i(70547),	-- Vicious Gladiator's Cuffs of Accuracy
-							i(70545),	-- Vicious Gladiator's Cord of Cruelty
-							i(70661),	-- Vicious Gladiator's Treads of Cruelty
 							i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
 							i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
 							i(64930),	-- Gladiator's Silk Handguards - confirmed 14/10/21
@@ -694,14 +652,65 @@ root(ROOTS.PVP, {
 							i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
 							i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
 						},
+						-- #endif
 					}),
+					i(64853, {	-- Bloodthirsty Gladiator's Silk Amice
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64854, {	-- Bloodthirsty Gladiator's Silk Cowl
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64855, {	-- Bloodthirsty Gladiator's Silk Handguards
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64856, {	-- Bloodthirsty Gladiator's Silk Robe
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64857, {	-- Bloodthirsty Gladiator's Silk Trousers
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					-- #if BEFORE 7.2.0.23436
+					-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
+					i(64928, {	-- Gladiator's Silk Trousers - confirmed 14/10/21
+						["timeline"] = { "created 4.0.3" },
+					}),
+					i(64929, {	-- Gladiator's Silk Robe - confirmed 14/10/21
+						["timeline"] = { "created 4.0.3" },
+					}),
+					i(64930, {	-- Gladiator's Silk Handguards - confirmed 14/10/21
+						["timeline"] = { "created 4.0.3" },
+					}),
+					i(64931, {	-- Gladiator's Silk Cowl - confirmed 14/10/21
+						["timeline"] = { "created 4.0.3" },
+					}),
+					i(64932, {	-- Gladiator's Silk Amice - confirmed 14/10/21
+						["timeline"] = { "created 4.0.3" },
+					}),
+					i(88251, {	-- Gladiator's Silk Amice - confirmed 14/10/21
+						["timeline"] = { "created 5.0.1" },
+					}),
+					i(88252, {	-- Gladiator's Silk Cowl - confirmed 14/10/21
+						["timeline"] = { "created 5.0.1" },
+					}),
+					i(88253, {	-- Gladiator's Silk Handguards - confirmed 14/10/21
+						["timeline"] = { "created 5.0.1" },
+					}),
+					i(88254, {	-- Gladiator's Silk Robe - confirmed 14/10/21
+						["timeline"] = { "created 5.0.1" },
+					}),
+					i(88255, {	-- Gladiator's Silk Trousers - confirmed 14/10/21
+						["timeline"] = { "created 5.0.1" },
+					}),
+					-- #endif
 				}),
 				cl(PALADIN, {
 					i(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, PALADIN },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, PALADIN },
 							{"select", "itemID", 64704 },	-- Bloodthirsty Gladiator's Bracers of Meditation
 							{"select", "itemID", 64705 },	-- Bloodthirsty Gladiator's Bracers of Prowess
 							{"select", "itemID", 64715 },	-- Bloodthirsty Gladiator's Clasp of Cruelty
@@ -725,62 +734,46 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70575 },	-- Vicious Gladiator's Greaves of Alacrity
 							{"select", "itemID", 70576 },	-- Vicious Gladiator's Greaves of Meditation
 						},
-						["groups"] = {
-							i(64802, {	-- Bloodthirsty Gladiator's Ornamented Chestguard
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64803, {	-- Bloodthirsty Gladiator's Ornamented Gloves
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64804, {	-- Bloodthirsty Gladiator's Ornamented Headcover
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64805, {	-- Bloodthirsty Gladiator's Ornamented Legplates
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64806, {	-- Bloodthirsty Gladiator's Ornamented Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64843, {	-- Bloodthirsty Gladiator's Scaled Chestpiece
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64844, {	-- Bloodthirsty Gladiator's Scaled Gauntlets
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64845, {	-- Bloodthirsty Gladiator's Scaled Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64846, {	-- Bloodthirsty Gladiator's Scaled Legguards
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64847, {	-- Bloodthirsty Gladiator's Scaled Shoulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(70615),	-- Vicious Gladiator's Ornamented Chestguard
-							i(70616),	-- Vicious Gladiator's Ornamented Gloves
-							i(70617),	-- Vicious Gladiator's Ornamented Headcover
-							i(70618),	-- Vicious Gladiator's Ornamented Legplates
-							i(70619),	-- Vicious Gladiator's Ornamented Spaulders
-							i(70648),	-- Vicious Gladiator's Scaled Chestpiece
-							i(70649),	-- Vicious Gladiator's Scaled Gauntlets
-							i(70650),	-- Vicious Gladiator's Scaled Helm
-							i(70651),	-- Vicious Gladiator's Scaled Legguards
-							i(70652),	-- Vicious Gladiator's Scaled Shoulders
-							i(70529),	-- Vicious Gladiator's Bracers of Meditation
-							i(70530),	-- Vicious Gladiator's Bracers of Prowess
-							i(70540),	-- Vicious Gladiator's Clasp of Cruelty
-							i(70541),	-- Vicious Gladiator's Clasp of Meditation
-							i(70575),	-- Vicious Gladiator's Greaves of Alacrity
-							i(70576),	-- Vicious Gladiator's Greaves of Meditation
-						},
+					}),
+					i(64802, {	-- Bloodthirsty Gladiator's Ornamented Chestguard
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64803, {	-- Bloodthirsty Gladiator's Ornamented Gloves
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64804, {	-- Bloodthirsty Gladiator's Ornamented Headcover
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64805, {	-- Bloodthirsty Gladiator's Ornamented Legplates
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64806, {	-- Bloodthirsty Gladiator's Ornamented Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64843, {	-- Bloodthirsty Gladiator's Scaled Chestpiece
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64844, {	-- Bloodthirsty Gladiator's Scaled Gauntlets
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64845, {	-- Bloodthirsty Gladiator's Scaled Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64846, {	-- Bloodthirsty Gladiator's Scaled Legguards
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64847, {	-- Bloodthirsty Gladiator's Scaled Shoulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
 				cl(PRIEST, {
 					i(146433, {	-- Ensemble: Bloodthirsty Gladiator's Satin Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, PRIEST },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, PRIEST },
 							{"select", "itemID", 64724 },	-- Bloodthirsty Gladiator's Cuffs of Meditation
 							{"select", "itemID", 64722 },	-- Bloodthirsty Gladiator's Cord of Meditation
 							{"select", "itemID", 64864 },	-- Bloodthirsty Gladiator's Treads of Meditation
@@ -798,59 +791,46 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70546 },	-- Vicious Gladiator's Cord of Meditation
 							{"select", "itemID", 70662 },	-- Vicious Gladiator's Treads of Meditation
 						},
-						["groups"] = {
-							i(64795, {	-- Bloodthirsty Gladiator's Mooncloth Gloves
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64796, {	-- Bloodthirsty Gladiator's Mooncloth Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64797, {	-- Bloodthirsty Gladiator's Mooncloth Leggings
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64798, {	-- Bloodthirsty Gladiator's Mooncloth Mantle
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64799, {	-- Bloodthirsty Gladiator's Mooncloth Robe
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64838, {	-- Bloodthirsty Gladiator's Satin Gloves
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64839, {	-- Bloodthirsty Gladiator's Satin Hood
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64840, {	-- Bloodthirsty Gladiator's Satin Leggings
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64841, {	-- Bloodthirsty Gladiator's Satin Mantle
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64842, {	-- Bloodthirsty Gladiator's Satin Robe
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(70608),	-- Vicious Gladiator's Mooncloth Gloves
-							i(70609),	-- Vicious Gladiator's Mooncloth Helm
-							i(70610),	-- Vicious Gladiator's Mooncloth Leggings
-							i(70611),	-- Vicious Gladiator's Mooncloth Mantle
-							i(70612),	-- Vicious Gladiator's Mooncloth Robe
-							i(70643),	-- Vicious Gladiator's Satin Gloves
-							i(70644),	-- Vicious Gladiator's Satin Hood
-							i(70645),	-- Vicious Gladiator's Satin Leggings
-							i(70646),	-- Vicious Gladiator's Satin Mantle
-							i(70647),	-- Vicious Gladiator's Satin Robe
-							i(70548),	-- Vicious Gladiator's Cuffs of Meditation
-							i(70546),	-- Vicious Gladiator's Cord of Meditation
-							i(70662),	-- Vicious Gladiator's Treads of Meditation
-						},
+					}),
+					i(64795, {	-- Bloodthirsty Gladiator's Mooncloth Gloves
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64796, {	-- Bloodthirsty Gladiator's Mooncloth Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64797, {	-- Bloodthirsty Gladiator's Mooncloth Leggings
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64798, {	-- Bloodthirsty Gladiator's Mooncloth Mantle
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64799, {	-- Bloodthirsty Gladiator's Mooncloth Robe
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64838, {	-- Bloodthirsty Gladiator's Satin Gloves
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64839, {	-- Bloodthirsty Gladiator's Satin Hood
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64840, {	-- Bloodthirsty Gladiator's Satin Leggings
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64841, {	-- Bloodthirsty Gladiator's Satin Mantle
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64842, {	-- Bloodthirsty Gladiator's Satin Robe
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
 				cl(ROGUE, {
 					i(146427, {	-- Ensemble: Bloodthirsty Gladiator's Leather Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, ROGUE },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, ROGUE },
 							{"select", "itemID", 64685 },	-- Bloodthirsty Gladiator's Armwraps of Accuracy
 							{"select", "itemID", 64686 },	-- Bloodthirsty Gladiator's Armwraps of Alacrity
 							{"select", "itemID", 64865 },	-- Bloodthirsty Gladiator's Waistband of Accuracy
@@ -869,42 +849,31 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70527 },	-- Vicious Gladiator's Boots of Alacrity
 							{"select", "itemID", 70528 },	-- Vicious Gladiator's Boots of Cruelty
 						},
-						["groups"] = {
-							i(64769, {	-- Bloodthirsty Gladiator's Leather Gloves
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64770, {	-- Bloodthirsty Gladiator's Leather Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64771, {	-- Bloodthirsty Gladiator's Leather Legguards
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64772, {	-- Bloodthirsty Gladiator's Leather Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64773, {	-- Bloodthirsty Gladiator's Leather Tunic
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(70585),	-- Vicious Gladiator's Leather Gloves
-							i(70586),	-- Vicious Gladiator's Leather Helm
-							i(70587),	-- Vicious Gladiator's Leather Legguards
-							i(70588),	-- Vicious Gladiator's Leather Spaulders
-							i(70589),	-- Vicious Gladiator's Leather Tunic
-							i(70515),	-- Vicious Gladiator's Armwraps of Accuracy
-							i(70516),	-- Vicious Gladiator's Armwraps of Alacrity
-							i(70663),	-- Vicious Gladiator's Waistband of Accuracy
-							i(70664),	-- Vicious Gladiator's Waistband of Cruelty
-							i(70527),	-- Vicious Gladiator's Boots of Alacrity
-							i(70528),	-- Vicious Gladiator's Boots of Cruelty
-						},
+					}),
+					i(64769, {	-- Bloodthirsty Gladiator's Leather Gloves
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64770, {	-- Bloodthirsty Gladiator's Leather Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64771, {	-- Bloodthirsty Gladiator's Leather Legguards
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64772, {	-- Bloodthirsty Gladiator's Leather Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64773, {	-- Bloodthirsty Gladiator's Leather Tunic
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
 				cl(SHAMAN, {
 					i(146431, {	-- Ensemble: Bloodthirsty Gladiator's Ringmail Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, SHAMAN },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, SHAMAN },
 							{"select", "itemID", 64681 },	-- Bloodthirsty Gladiator's Armbands of Meditation
 							{"select", "itemID", 64682 },	-- Bloodthirsty Gladiator's Armbands of Prowess
 							{"select", "itemID", 64867 },	-- Bloodthirsty Gladiator's Waistguard of Cruelty
@@ -933,82 +902,61 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70640 },	-- Vicious Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 70642 },	-- Vicious Gladiator's Sabatons of Meditation
 						},
-						["groups"] = {
-							i(64776, {	-- Bloodthirsty Gladiator's Linked Armor
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64777, {	-- Bloodthirsty Gladiator's Linked Gauntlets
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64778, {	-- Bloodthirsty Gladiator's Linked Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64779, {	-- Bloodthirsty Gladiator's Linked Leggings
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64780, {	-- Bloodthirsty Gladiator's Linked Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64784, {	-- Bloodthirsty Gladiator's Mail Armor
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64785, {	-- Bloodthirsty Gladiator's Mail Gauntlets
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64786, {	-- Bloodthirsty Gladiator's Mail Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64787, {	-- Bloodthirsty Gladiator's Mail Leggings
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64788, {	-- Bloodthirsty Gladiator's Mail Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64827, {	-- Bloodthirsty Gladiator's Ringmail Armor
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64828, {	-- Bloodthirsty Gladiator's Ringmail Gauntlets
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64829, {	-- Bloodthirsty Gladiator's Ringmail Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64830, {	-- Bloodthirsty Gladiator's Ringmail Leggings
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64831, {	-- Bloodthirsty Gladiator's Ringmail Spaulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(70590),	-- Vicious Gladiator's Linked Armor
-							i(70591),	-- Vicious Gladiator's Linked Gauntlets
-							i(70592),	-- Vicious Gladiator's Linked Helm
-							i(70593),	-- Vicious Gladiator's Linked Leggings
-							i(70594),	-- Vicious Gladiator's Linked Spaulders
-							i(70597),	-- Vicious Gladiator's Mail Armor
-							i(70598),	-- Vicious Gladiator's Mail Gauntlets
-							i(70599),	-- Vicious Gladiator's Mail Helm
-							i(70600),	-- Vicious Gladiator's Mail Leggings
-							i(70601),	-- Vicious Gladiator's Mail Spaulders
-							i(70632),	-- Vicious Gladiator's Ringmail Armor
-							i(70633),	-- Vicious Gladiator's Ringmail Gauntlets
-							i(70634),	-- Vicious Gladiator's Ringmail Helm
-							i(70635),	-- Vicious Gladiator's Ringmail Leggings
-							i(70636),	-- Vicious Gladiator's Ringmail Spaulders
-							i(70511),	-- Vicious Gladiator's Armbands of Meditation
-							i(70512),	-- Vicious Gladiator's Armbands of Prowess
-							i(70665),	-- Vicious Gladiator's Waistguard of Cruelty
-							i(70666),	-- Vicious Gladiator's Waistguard of Meditation
-							i(70640),	-- Vicious Gladiator's Sabatons of Alacrity
-							i(70642),	-- Vicious Gladiator's Sabatons of Meditation
-						},
+					}),
+					i(64776, {	-- Bloodthirsty Gladiator's Linked Armor
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64777, {	-- Bloodthirsty Gladiator's Linked Gauntlets
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64778, {	-- Bloodthirsty Gladiator's Linked Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64779, {	-- Bloodthirsty Gladiator's Linked Leggings
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64780, {	-- Bloodthirsty Gladiator's Linked Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64784, {	-- Bloodthirsty Gladiator's Mail Armor
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64785, {	-- Bloodthirsty Gladiator's Mail Gauntlets
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64786, {	-- Bloodthirsty Gladiator's Mail Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64787, {	-- Bloodthirsty Gladiator's Mail Leggings
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64788, {	-- Bloodthirsty Gladiator's Mail Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64827, {	-- Bloodthirsty Gladiator's Ringmail Armor
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64828, {	-- Bloodthirsty Gladiator's Ringmail Gauntlets
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64829, {	-- Bloodthirsty Gladiator's Ringmail Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64830, {	-- Bloodthirsty Gladiator's Ringmail Leggings
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64831, {	-- Bloodthirsty Gladiator's Ringmail Spaulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
 				cl(WARLOCK, {
 					i(146425, {	-- Ensemble: Bloodthirsty Gladiator's Felweave Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, WARLOCK },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, WARLOCK },
 							{"select", "itemID", 64725 },	-- Bloodthirsty Gladiator's Cuffs of Prowess
 							{"select", "itemID", 64720 },	-- Bloodthirsty Gladiator's Cord of Accuracy
 							{"select", "itemID", 64862 },	-- Bloodthirsty Gladiator's Treads of Alacrity
@@ -1021,39 +969,31 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70544 },	-- Vicious Gladiator's Cord of Accuracy
 							{"select", "itemID", 70660 },	-- Vicious Gladiator's Treads of Alacrity
 						},
-						["groups"] = {
-							i(64745, {	-- Bloodthirsty Gladiator's Felweave Amice
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64746, {	-- Bloodthirsty Gladiator's Felweave Cowl
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64747, {	-- Bloodthirsty Gladiator's Felweave Handguards
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64748, {	-- Bloodthirsty Gladiator's Felweave Raiment
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64749, {	-- Bloodthirsty Gladiator's Felweave Trousers
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(70566),	-- Vicious Gladiator's Felweave Amice
-							i(70567),	-- Vicious Gladiator's Felweave Cowl
-							i(70568),	-- Vicious Gladiator's Felweave Handguards
-							i(70569),	-- Vicious Gladiator's Felweave Rainment
-							i(70570),	-- Vicious Gladiator's Felweave Trousers
-							i(70549),	-- Vicious Gladiator's Cuffs of Prowess
-							i(70544),	-- Vicious Gladiator's Cord of Accuracy
-							i(70660),	-- Vicious Gladiator's Treads of Alacrity
-						},
+					}),
+					i(64745, {	-- Bloodthirsty Gladiator's Felweave Amice
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64746, {	-- Bloodthirsty Gladiator's Felweave Cowl
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64747, {	-- Bloodthirsty Gladiator's Felweave Handguards
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64748, {	-- Bloodthirsty Gladiator's Felweave Raiment
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64749, {	-- Bloodthirsty Gladiator's Felweave Trousers
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
 				cl(WARRIOR, {
 					i(146429, {	-- Ensemble: Bloodthirsty Gladiator's Plate Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["timeline"] = { "added 7.2.0.23436" },
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR, WARRIOR },
+							{"sub", "pvp_set_ensemble", EXPANSION.CATA, SEASON_RUTHLESS, PVP_HONOR, WARRIOR },
 							{"select", "itemID", 64683 },	-- Bloodthirsty Gladiator's Armplates of Alacrity
 							{"select", "itemID", 64754 },	-- Bloodthirsty Gladiator's Girdle of Prowess
 							{"select", "itemID", 64869 },	-- Bloodthirsty Gladiator's Warboots of Alacrity
@@ -1066,31 +1006,21 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 70574 },	-- Vicious Gladiator's Girdle of Prowess
 							{"select", "itemID", 70667 },	-- Vicious Gladiator's Warboots of Alacrity
 						},
-						["groups"] = {
-							i(64811, {	-- Bloodthirsty Gladiator's Plate Chestpiece
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64812, {	-- Bloodthirsty Gladiator's Plate Gauntlets
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(64813, {	-- Bloodthirsty Gladiator's Plate Helm
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64814, {	-- Bloodthirsty Gladiator's Plate Legguards
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(64815, {	-- Bloodthirsty Gladiator's Plate Shoulders
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(70623),	-- Vicious Gladiator's Plate Chestpiece
-							i(70624),	-- Vicious Gladiator's Plate Gauntlets
-							i(70625),	-- Vicious Gladiator's Plate Helm
-							i(70626),	-- Vicious Gladiator's Plate Legguards
-							i(70627),	-- Vicious Gladiator's Plate Shoulders
-							i(70513),	-- Vicious Gladiator's Armplates of Alacrity
-							i(70574),	-- Vicious Gladiator's Girdle of Prowess
-							i(70667),	-- Vicious Gladiator's Warboots of Alacrity
-						},
+					}),
+					i(64811, {	-- Bloodthirsty Gladiator's Plate Chestpiece
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64812, {	-- Bloodthirsty Gladiator's Plate Gauntlets
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					}),
+					i(64813, {	-- Bloodthirsty Gladiator's Plate Helm
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64814, {	-- Bloodthirsty Gladiator's Plate Legguards
+						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+					}),
+					i(64815, {	-- Bloodthirsty Gladiator's Plate Shoulders
+						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
 				n(BACK, {
@@ -2217,7 +2147,28 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 				}),
 			})),
-			n(HONOR_RUTHLESS, {
+		}),
+		applyclassicphase(CATA_PHASE_THREE, n(SEASON_RUTHLESS, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
+				ach(6316, {	-- Hero of the Alliance: Ruthless
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(6317, {	-- Hero of the Horde: Ruthless
+					["races"] = HORDE_ONLY,
+				}),
+				ach(6124, {	-- Ruthless Gladiator: Cataclysm Season 2
+					title(192),	-- Ruthless Gladiator <Name>
+				}),
+				ach(6322, {	-- Ruthless Gladiator's Twilight Drake
+					["provider"] = { "i", 71954 },	-- Ruthless Gladiator's Twilight Drake
+					["filterID"] = MOUNTS,
+				}),
+				i(71954, {	-- Ruthless Gladiator's Twilight Drake
+					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
+				}),
+				ach(11715, {["timeline"] = {ADDED_7_2_0}}),	-- (Ruth)less is More (PvP Season 10)
+			})),
+			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
 					i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
 					i(70559),	-- Vicious Gladiator's Dreadplate Gauntlets
@@ -2438,27 +2389,6 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(70607)),	-- Vicious Gladiator's Medallion of Tenacity (H)
 				}),
 			}),
-		}),
-		n(SEASON_RUTHLESS, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
-				ach(6316, {	-- Hero of the Alliance: Ruthless
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(6317, {	-- Hero of the Horde: Ruthless
-					["races"] = HORDE_ONLY,
-				}),
-				ach(6124, {	-- Ruthless Gladiator: Cataclysm Season 2
-					title(192),	-- Ruthless Gladiator <Name>
-				}),
-				ach(6322, {	-- Ruthless Gladiator's Twilight Drake
-					["provider"] = { "i", 71954 },	-- Ruthless Gladiator's Twilight Drake
-					["filterID"] = MOUNTS,
-				}),
-				i(71954, {	-- Ruthless Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
-				}),
-				ach(11715, {["timeline"] = {ADDED_7_2_0}}),	-- (Ruth)less is More (PvP Season 10)
-			})),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
@@ -3601,7 +3531,28 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
 			})),
-			n(HONOR_CATACLYSMIC, {
+		})),
+		applyclassicphase(CATA_PHASE_FOUR, n(SEASON_CATACLYSMIC, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.4", "removed 5.0.5" }, }, {
+				ach(6939, {	-- Hero of the Alliance: Cataclysmic
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(6940, {	-- Hero of the Horde: Cataclysmic
+					["races"] = HORDE_ONLY,
+				}),
+				ach(6938, {	-- Cataclysmic Gladiator: Cataclysm Season 3
+					title(193),	-- Cataclysmic Gladiator <Name>
+				}),
+				ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
+					["provider"] = { "i", 85785 },	-- Cataclysmic Gladiator's Twilight Drake
+					["filterID"] = MOUNTS,
+				}),
+				i(85785, {	-- Cataclysmic Gladiator's Twilight Drake
+					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
+				}),
+				ach(11716, {["timeline"] = {ADDED_7_2_0}}),	-- Cataclysmic Catwalk (PvP Season 11)
+			})),
+			n(PVP_HONOR, {
 				["description"] = "These items are only available from Ruthless Gladiator class ensembles.",
 				["groups"] = {
 					cl(DEATHKNIGHT, {
@@ -3808,27 +3759,6 @@ root(ROOTS.PVP, {
 					}),
 				},
 			}),
-		}),
-		n(SEASON_CATACLYSMIC, {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.4", "removed 5.0.5" }, }, {
-				ach(6939, {	-- Hero of the Alliance: Cataclysmic
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(6940, {	-- Hero of the Horde: Cataclysmic
-					["races"] = HORDE_ONLY,
-				}),
-				ach(6938, {	-- Cataclysmic Gladiator: Cataclysm Season 3
-					title(193),	-- Cataclysmic Gladiator <Name>
-				}),
-				ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
-					["provider"] = { "i", 85785 },	-- Cataclysmic Gladiator's Twilight Drake
-					["filterID"] = MOUNTS,
-				}),
-				i(85785, {	-- Cataclysmic Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
-				}),
-				ach(11716, {["timeline"] = {ADDED_7_2_0}}),	-- Cataclysmic Catwalk (PvP Season 11)
-			})),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
@@ -4698,8 +4628,8 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(73412)),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
 				}),
 			})),
-		}),
-	})),
+		})),
+	})))),
 });
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {

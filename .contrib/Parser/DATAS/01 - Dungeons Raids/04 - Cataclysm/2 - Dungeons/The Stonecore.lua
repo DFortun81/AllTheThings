@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
-	inst(67, {	-- The Stonecore
+	applyclassicphase(CATA_PHASE_ONE, inst(67, {	-- The Stonecore
 		["mapID"] = 324,
 		["coord"] = { 47.50, 52.05, DEEPHOLM },
 		["groups"] = {
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
