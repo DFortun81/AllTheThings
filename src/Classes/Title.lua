@@ -93,7 +93,7 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 		return app.asset("Category_Titles");
 	end,
 	["description"] = function(t)
-		return L["TITLES_DESC"];
+		return L.TITLES_DESC;
 	end,
 	["text"] = function(t)
 		return "|c" .. app.Colors.Account .. t.name .. "|r";

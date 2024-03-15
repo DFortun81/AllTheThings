@@ -234,7 +234,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 	end
 end
 SLASH_ALLTHETHINGSGUILD1 = "/attguild";
-SlashCmdList["ALLTHETHINGSGUILD"] = function(cmd)
+SlashCmdList.ALLTHETHINGSGUILD = function(cmd)
 	if not cmd or cmd == "" then
 		cmd = "?";
 	elseif cmd:sub(1,1) ~= "?" then
@@ -246,7 +246,7 @@ SLASH_ALLTHETHINGSRAID1 = "/attraid";
 SLASH_ALLTHETHINGSRAID2 = "/attgroup";
 SLASH_ALLTHETHINGSRAID3 = "/attparty";
 SLASH_ALLTHETHINGSRAID4 = "/attinstance";
-SlashCmdList["ALLTHETHINGSRAID"] = function(cmd)
+SlashCmdList.ALLTHETHINGSRAID = function(cmd)
 	if not cmd or cmd == "" then
 		cmd = "?";
 	elseif cmd:sub(1,1) ~= "?" then
@@ -255,7 +255,7 @@ SlashCmdList["ALLTHETHINGSRAID"] = function(cmd)
 	SendGroupMessage(cmd);
 end
 SLASH_ALLTHETHINGSYOU1 = "/attu";
-SlashCmdList["ALLTHETHINGSYOU"] = function(cmd)
+SlashCmdList.ALLTHETHINGSYOU = function(cmd)
 	local name,server = UnitName("target");
 	if name then
 		if UnitIsPlayer("target") then
@@ -275,7 +275,7 @@ end
 if app.IsClassic then
 	-- Yell is only supported in Classic Game Clients.
 	SLASH_ALLTHETHINGSYELL1 = "/attyell";
-	SlashCmdList["ALLTHETHINGSYELL"] = function(cmd)
+	SlashCmdList.ALLTHETHINGSYELL = function(cmd)
 		C_ChatInfo.SendAddonMessage("ATTC", "?", "YELL");
 	end
 end

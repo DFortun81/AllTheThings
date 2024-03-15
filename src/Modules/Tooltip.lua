@@ -102,12 +102,12 @@ local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gen
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
-		leftSide:SetText(L["TITLE"]);
+		leftSide:SetText(L.TITLE);
 		leftSide:Show();
 		rightSide:SetText(app.Modules.Color.Colorize("Author", app.Colors.White));
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L["TITLE"], app.Modules.Color.Colorize("Author", app.Colors.White));
+		self:AddDoubleLine(L.TITLE, app.Modules.Color.Colorize("Author", app.Colors.White));
 	end
 end
 for i,guid in ipairs({
@@ -127,12 +127,12 @@ tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, n
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	local leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
-		leftSide:SetText(L["TITLE"]);
+		leftSide:SetText(L.TITLE);
 		leftSide:Show();
 		rightSide:SetText(app.Modules.Color.Colorize("Contributor", app.Colors.White));
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L["TITLE"], app.Modules.Color.Colorize("Contributor", app.Colors.White));
+		self:AddDoubleLine(L.TITLE, app.Modules.Color.Colorize("Contributor", app.Colors.White));
 	end
 end
 for i,guid in ipairs({
@@ -585,7 +585,7 @@ if TooltipDataProcessor then
 		end
 	end
 	]]--
-	
+
 	local function RerenderCurrency(self, currencyID)
 		if self:IsVisible() then
 			GameTooltip.SetCurrencyByID(self, currencyID, 1);
@@ -621,11 +621,11 @@ if TooltipDataProcessor then
 			-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
 			--	-- print("AH General Item Tooltip")
 			--	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
-			-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
+			-- 	self:AddLine(L.AUCTION_GENERALIZED_ITEM_WARNING);
 			-- end
 			-- print("AttachTooltip-HasOwner");
 
-			--[[--
+			--[[--]
 			-- Debug all of the available fields on the owner.
 			self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
 			for i,j in pairs(owner) do
@@ -703,7 +703,7 @@ if TooltipDataProcessor then
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then
-			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
+			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, id) end
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(id);
 			-- print(target, type, npc_id);
 			if type == "Player" then
@@ -859,7 +859,7 @@ else
 					-- Yes.
 					local guid = UnitGUID(target);
 					if guid then
-						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
+						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
 						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
 						--print(guid, type, npcID);
 						if type == "Player" then

@@ -93,7 +93,7 @@ local function CreateHash(t)
 			-- app.PrintDebug("hash.rank",hash)
 		end
 		if t.nomerge then
-			hash = hash.."__"..UniqueCounter["Hash"];
+			hash = hash.."__"..UniqueCounter.Hash;
 		end
 		t.hash = hash;
 		return hash;
@@ -323,7 +323,7 @@ local function CloneClassInstance(object, ignoreChildren)
 				end
 			end
 		end
-		
+
 		-- If the object has a metatable, assign that, otherwise try to find it.
 		-- that's the only difference between this function and CloneObject.
 		-- Use CloneObject if you can guarantee that the metatable exists.

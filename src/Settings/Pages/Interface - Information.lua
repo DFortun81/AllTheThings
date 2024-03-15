@@ -14,7 +14,7 @@ local GetRealmName, GetItemInfo, GetSpellInfo = GetRealmName, GetItemInfo, GetSp
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
 
 -- Column 1
-local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
+local headerAdditionalInformation = child:CreateHeaderLabel(L.ADDITIONAL_LABEL)
 if child.separator then
 	headerAdditionalInformation:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
@@ -42,7 +42,7 @@ local function IsRetrievingConversionMethod(text, reference)
 end
 local ConversionMethods = setmetatable({
 	filterID = function(val)
-		return L["FILTER_ID_TYPES"][val]
+		return L.FILTER_ID_TYPES[val]
 	end,
 	b = function(val)
 		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
@@ -406,13 +406,13 @@ local InformationTypes = {
 				-- i suppose a maxlvl of 1 might exist?
 				if maxlvl and maxlvl > 0 then
 					tinsert(tooltipInfo, {
-						left = L["REQUIRES_LEVEL"],
+						left = L.REQUIRES_LEVEL,
 						right = tostring(minlvl) .. " to " .. tostring(maxlvl),
 					});
 				-- no point to show 'requires lvl 1'
 				elseif minlvl and minlvl > 1 then
 					tinsert(tooltipInfo, {
-						left = L["REQUIRES_LEVEL"],
+						left = L.REQUIRES_LEVEL,
 						right = tostring(minlvl),
 					});
 				end
@@ -619,7 +619,7 @@ local InformationTypes = {
 			end
 		end,
 	});
-	
+
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3,
 		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)

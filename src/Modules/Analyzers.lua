@@ -44,7 +44,7 @@ local OnUpdate_CheckSymlinks = function(self, force)
 	end
 end
 api.CheckSymlinks = function()
-	if not added["CheckSymlinks"] then
+	if not added.CheckSymlinks then
 		app.AddCustomWindowOnUpdate("AnalyzerCheckSymlinks", OnUpdate_CheckSymlinks)
 	end
 

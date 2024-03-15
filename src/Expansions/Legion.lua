@@ -64,7 +64,7 @@ if C_ArtifactUI then
 			return "|cffe6cc80" .. (t.artifactinfo[3] or "???") .. "|r";
 		end,
 		["description"] = function(t)
-			return t.artifactinfo[6] or L["ARTIFACT_INTRO_REWARD"];
+			return t.artifactinfo[6] or L.ARTIFACT_INTRO_REWARD;
 		end,
 		["atlas"] = function(t)
 			return "Forge-ColorSwatchBorder";
@@ -166,10 +166,10 @@ if C_ArtifactUI then
 					end
 				end
 				if total > 0 then
-					tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+					tinsert(info, 1, { left = L.ARTIFACT_RELIC_COMPLETION, right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
 				end
 			else
-				tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = app.Colors.TooltipDescription });
+				tinsert(info, 1, { left = L.ARTIFACT_RELIC_CACHE, wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
 	end

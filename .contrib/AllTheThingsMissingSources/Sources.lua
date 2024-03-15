@@ -39,7 +39,7 @@ local function iterator()
 end
 
 SLASH_ATTMSSCAN1 = '/attms'
-_G.SlashCmdList["ATTMSSCAN"] = function(args)
+_G.SlashCmdList.ATTMSSCAN = function(args)
    if scanning then
       print("Halting scan.")
       scanning = false

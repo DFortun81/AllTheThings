@@ -2,7 +2,7 @@ ClassInfoDB = {
 ["Spec"] = {},
 ["SpecSet"] = {},
 ["GetClassesBySet"] = function(specSetID)
-	local classes = ClassInfoDB["SpecSet"][specSetID];
+	local classes = ClassInfoDB.SpecSet[specSetID];
 	-- if all classes are valid, then no need to define
 	if #classes < 13 then
 		return classes;

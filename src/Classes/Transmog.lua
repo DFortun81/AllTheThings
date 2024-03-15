@@ -717,7 +717,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 		if #allVisualSources < 1 or not contains(allVisualSources, sourceID) then
 			-- Items with SourceInfo which don't register as having any visual data or don't include themselves as a shared appearance...
 			-- This typically happens on Items which can have a collectible SourceID, but not usable for Transmog
-			tinsert(info, 1, { left = L["FORCE_REFRESH_REQUIRED"], wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(info, 1, { left = L.FORCE_REFRESH_REQUIRED, wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if app.Settings:GetTooltipSetting("SharedAppearances") then
 			local text;
@@ -832,7 +832,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 							if sourceGroup.f ~= otherATTSource.f then
 								-- This is NOT the same type. Therefore, no credit for you!
 								if #failText > 0 then failText = failText .. ", "; end
-								failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
+								failText = failText .. (L.FILTER_ID_TYPES[otherATTSource.f] or "???");
 							elseif otherATTSource.nmc then
 								-- This is NOT for your class. Therefore, no credit for you!
 								if #failText > 0 then failText = failText .. ", "; end
@@ -844,7 +844,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 							elseif otherATTSource.nmr then
 								-- This is NOT for your race. Therefore, no credit for you!
 								if #failText > 1 then failText = failText .. ", "; end
-								failText = failText .. L["RACE_LOCKED"];
+								failText = failText .. L.RACE_LOCKED;
 							else
 								-- Should be fine
 							end
@@ -878,7 +878,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 				-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 				-- this Account as being 'collected'
 				tinsert(info, {
-					left = L["ADHOC_UNIQUE_COLLECTED_INFO"],
+					left = L.ADHOC_UNIQUE_COLLECTED_INFO,
 					color = app.Colors.ChatLinkError
 				});
 				-- if the tooltip immediately refreshes for whatever reason then
@@ -892,7 +892,7 @@ app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
 		if app.IsReady and sourceInfo.categoryID > 0 and sourceGroup.missing then
 			-- Do not localize first part of the message, it is for contribs
 			tinsert(info, {
-				left = "Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"],
+				left = "Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L.SOURCE_ID_MISSING,
 				color = app.Colors.ChatLinkError
 			});
 			tinsert(info, {

@@ -70,7 +70,7 @@ if app.IsClassic then
 			end
 		end
 	end;
-	
+
 	-- The ids are different in classic.
 	AvailabilityConditions = {
 		1,	-- Never Implemented
@@ -121,7 +121,7 @@ if app.GameBuildVersion > 90000 then
 			self:SetAlpha(1)
 		end
 	end
-	
+
 	-- Automated Content toggles
 	local customCollects, ccCheckbox = L.CUSTOM_COLLECTS_REASONS
 	local previousCheckbox = textAutomatedContentExplain
@@ -129,7 +129,7 @@ if app.GameBuildVersion > 90000 then
 	for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN", "NPE", "SL_SKIP"}) do
 		local filterID = "CC:" .. cc
 		local reason = customCollects[cc]
-		local text = reason["icon"].." "..reason["text"]
+		local text = reason.icon.." "..reason.text
 		ccCheckbox = child:CreateCheckBox(app.Modules.Color.Colorize(text, app.Colors.Insane),
 		function(self)
 			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT

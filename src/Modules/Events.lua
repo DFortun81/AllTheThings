@@ -350,10 +350,10 @@ end;
 local texcoordForEvents = { 0.0, 0.7109375, 0.0, 0.7109375 };
 local fields = {};
 fields.name = function(t)
-	return L["HEADER_NAMES"][t.headerID] or t.eventInfo.name;
+	return L.HEADER_NAMES[t.headerID] or t.eventInfo.name;
 end;
 fields.icon = function(t)
-	return L["HEADER_ICONS"][t.headerID] or t.eventInfo.icon;
+	return L.HEADER_ICONS[t.headerID] or t.eventInfo.icon;
 end;
 fields.texcoord = function(t)
 	if t.icon == t.eventInfo.icon then

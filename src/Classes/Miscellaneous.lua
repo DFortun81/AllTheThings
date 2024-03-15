@@ -198,7 +198,7 @@ local function NestDynamicValueCategories(group)
 end
 
 local function dynamic_title(t)
-	local title = app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L["DYNAMIC_CATEGORY_LABEL"])
+	local title = app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L.DYNAMIC_CATEGORY_LABEL)
 	t.title = title
 	return title
 end

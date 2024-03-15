@@ -60,7 +60,7 @@ child.CreateAccountWideCheckbox = function(frame, localeKey, thing)
 	if settings.ForceAccountWide[thing] then
 		return frame:CreateForcedAccountWideCheckbox();
 	end
-	
+
 	local tooltip = L["ACCOUNT_WIDE_"..localeKey.."_TOOLTIP"]
 	local trackingOption = "Thing:"..thing
 	local accountWideOption = "AccountWide:"..thing
@@ -192,7 +192,7 @@ local accwideCheckboxTransmog = child:CreateAccountWideCheckbox("APPEARANCES", "
 accwideCheckboxTransmog:SetPoint("TOPLEFT", headerAccountThings, "BOTTOMLEFT", -2, 0)
 
 local name = L.APPEARANCES_CHECKBOX;
-if settings.RequiredForInsaneMode["Transmog"] then
+if settings.RequiredForInsaneMode.Transmog then
 	name = app.ccColors.Insane .. name;
 end
 local checkboxTransmog = child:CreateCheckBox(name,
@@ -217,7 +217,7 @@ local tooltip = L.APPEARANCES_CHECKBOX_TOOLTIP;
 if app.GameBuildVersion < 40000 then
 	tooltip = tooltip .. "\n\n" .. L.UNOFFICIAL_SUPPORT_TOOLTIP;
 end
-if settings.ForceAccountWide["Transmog"] then
+if settings.ForceAccountWide.Transmog then
 	tooltip = tooltip .. "\n\n" .. L.ACC_WIDE_DEFAULT;
 end
 checkboxTransmog:SetATTTooltip(tooltip)
@@ -637,21 +637,21 @@ if app.GameBuildVersion >= 60000 then
 			self:SetAlpha(1)
 		end
 	end
-	
+
 	-- Followers (Warlords+)
 	local accwideCheckboxFollowers =
 	child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
 	accwideCheckboxFollowers:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
 	child:CreateTrackingCheckbox("FOLLOWERS", "Followers", true)
 		:AlignAfter(accwideCheckboxFollowers)
-	
+
 	-- Music Rolls & Selfie Filters (Warlords+) [TODO: Do we want to split these up?]
 	local accwideCheckboxMusicRollsAndSelfieFilters =
 	child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
 		:AlignBelow(accwideCheckboxFollowers)
 	child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters", true)
 		:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
-	
+
 	if app.GameBuildVersion >= 80000 then
 		-- Azerite Essences (BFA+)
 		local accwideCheckboxAzeriteEssences =
@@ -659,7 +659,7 @@ if app.GameBuildVersion >= 60000 then
 			:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
 		child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences", true)
 			:AlignAfter(accwideCheckboxAzeriteEssences)
-		
+
 		if app.GameBuildVersion >= 90000 then
 			-- Conduits (Shadowlands+)
 			local accwideCheckboxConduits =
@@ -667,14 +667,14 @@ if app.GameBuildVersion >= 60000 then
 				:AlignBelow(accwideCheckboxAzeriteEssences)
 			child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits", true)
 				:AlignAfter(accwideCheckboxConduits)
-			
+
 			-- Runeforge Legendaries (Shadowlands+)
 			local accwideCheckboxRunecarvingPowers =
 			child:CreateForcedAccountWideCheckbox()
 				:AlignBelow(accwideCheckboxConduits)
 			child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries", true)
 				:AlignAfter(accwideCheckboxRunecarvingPowers)
-			
+
 			if app.GameBuildVersion >= 90000 then
 				-- Drakewatcher Manuscripts (Dragonflight+)
 				local accwideCheckboxDrakewatcherManuscripts =

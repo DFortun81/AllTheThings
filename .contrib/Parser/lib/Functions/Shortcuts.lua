@@ -513,7 +513,7 @@ end
 ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
 		t = struct("allianceAchievementID", id, t or {});
-		t["hordeAchievementID"] = altID;
+		t.hordeAchievementID = altID;
 	else
 		t = struct("achievementID", id, altID);
 	end
@@ -624,7 +624,7 @@ end
 az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
 	if t or type(rank) == "number" then
 		t = struct("azeriteEssenceID", id, t or {});
-		t["rank"] = rank;
+		t.rank = rank;
 		return t;
 	else
 		return struct("azeriteEssenceID", id, rank);

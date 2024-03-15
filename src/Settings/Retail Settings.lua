@@ -518,32 +518,32 @@ settings.GetRawSettings = function(self, name)
 	return RawSettings[name];
 end
 settings.GetModeString = function(self)
-	local mode = L["MODE"]
+	local mode = L.MODE
 	if settings:Get("Thing:Transmog") or app.MODE_DEBUG then
 		if self:Get("Completionist") then
-			mode = L["TITLE_COMPLETIONIST"] .. mode
+			mode = L.TITLE_COMPLETIONIST .. mode
 		else
-			mode = L["TITLE_UNIQUE_APPEARANCE"] .. mode
+			mode = L.TITLE_UNIQUE_APPEARANCE .. mode
 		end
 	end
 	if self:Get("DebugMode") then
-		mode = L["TITLE_DEBUG"] .. mode
+		mode = L.TITLE_DEBUG .. mode
 	else
 		if self:Get("AccountMode") then
 			if self:Get("FactionMode") then
 				local englishFaction = UnitFactionGroup("player")
 				if englishFaction == "Alliance" then
-					mode = L["TITLE_ALLIANCE"] .. " " .. mode
+					mode = L.TITLE_ALLIANCE .. " " .. mode
 				elseif englishFaction == "Horde" then
-					mode = L["TITLE_HORDE"] .. " " .. mode
+					mode = L.TITLE_HORDE .. " " .. mode
 				else
-					mode = L["TITLE_NEUTRAL"] .. " " .. mode
+					mode = L.TITLE_NEUTRAL .. " " .. mode
 				end
 			else
-				mode = L["TITLE_ACCOUNT"] .. mode
+				mode = L.TITLE_ACCOUNT .. mode
 			end
 		elseif self:Get("MainOnly") and not self:Get("Completionist") then
-			mode = app.ClassName .. " " .. mode .. L["TITLE_MAIN_ONLY"]
+			mode = app.ClassName .. " " .. mode .. L.TITLE_MAIN_ONLY
 		else
 			mode = app.ClassName .. " " .. mode
 		end
@@ -580,31 +580,31 @@ settings.GetModeString = function(self)
 			end
 		end
 		if thingCount == 0 then
-			mode = L["TITLE_NONE_THINGS"] .. mode
+			mode = L.TITLE_NONE_THINGS .. mode
 		elseif thingCount == 1 then
-			mode = things[1] .. L["TITLE_ONLY"] .. mode
+			mode = things[1] .. L.TITLE_ONLY .. mode
 		elseif thingCount == 2 then
-			mode = things[1] .. " + " .. things[2] .. L["TITLE_ONLY"] .. mode
+			mode = things[1] .. " + " .. things[2] .. L.TITLE_ONLY .. mode
 		elseif insaneCount == insaneTotalCount then
 			-- only insane if not hiding anything!
 			if settings:NonInsane() then
 				-- don't add insane :)
 			else
-				mode = L["TITLE_INSANE"] .. mode
+				mode = L.TITLE_INSANE .. mode
 			end
 		elseif not settings:Get("Thing:Transmog") then
-			mode = L["TITLE_SOME_THINGS"] .. mode
+			mode = L.TITLE_SOME_THINGS .. mode
 		end
 		if solo then
-			mode = L["TITLE_SOLO"]..mode
+			mode = L.TITLE_SOLO..mode
 		end
 	end
 	if self:Get("Filter:ByLevel") then
-		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode
+		mode = L.TITLE_LEVEL .. app.Level .. " " .. mode
 	end
 	-- Waiting on Refresh to properly show values
 	if self.NeedsRefresh then
-		mode = L["AFTER_REFRESH"] .. ": " .. mode
+		mode = L.AFTER_REFRESH .. ": " .. mode
 	end
 	return mode
 end
@@ -698,10 +698,10 @@ settings.NonInsane = function(self)
 	-- Non-Account Mode with Covenants filtered
 	or (not self:Get("AccountMode")
 		-- TODO: maybe track custom collect filters through a different Get method for easier logic
-		and (not (ccs["SL_COV_KYR"] or self:Get("CC:SL_COV_KYR"))
-			or not (ccs["SL_COV_NEC"] or self:Get("CC:SL_COV_NEC"))
-			or not (ccs["SL_COV_NFA"] or self:Get("CC:SL_COV_NFA"))
-			or not (ccs["SL_COV_VEN"] or self:Get("CC:SL_COV_VEN"))))
+		and (not (ccs.SL_COV_KYR or self:Get("CC:SL_COV_KYR"))
+			or not (ccs.SL_COV_NEC or self:Get("CC:SL_COV_NEC"))
+			or not (ccs.SL_COV_NFA or self:Get("CC:SL_COV_NFA"))
+			or not (ccs.SL_COV_VEN or self:Get("CC:SL_COV_VEN"))))
 end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting]

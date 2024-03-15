@@ -8,7 +8,7 @@ local child = settings:CreateOptionsPage("Phases", "General")
 -- Temporary stuff
 local UnobtainableSettingsBase = settings.__UnobtainableSettingsBase;
 
-local conditions = L["AVAILABILITY_CONDITIONS"];
+local conditions = L.AVAILABILITY_CONDITIONS;
 local UnobtainableFilterOnClick = function(self)
 	local checked = self:GetChecked();
 	if checked then

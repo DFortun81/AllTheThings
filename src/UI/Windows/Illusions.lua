@@ -14,7 +14,7 @@ app:CreateWindow("Illusions", {
 	Commands = { "attillusions" },
 	OnInit = function(self, handlers)
 		self.data = {
-			text = L["FILTER_ID_TYPES"][103],
+			text = L.FILTER_ID_TYPES[103],
 			icon = 132853,
 			description = "This list shows you all of the illusions that you can collect.",
 			visible = true,
