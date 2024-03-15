@@ -605,6 +605,13 @@ if TooltipDataProcessor then
 			end
 		end
 
+		-- Debug all of the available fields on the self.
+		-- self:AddDoubleLine("Self", tostring(self:GetName()));
+		-- for i,j in pairs(self) do
+		-- 	self:AddDoubleLine(tostring(i), tostring(j));
+		-- end
+		-- self:Show();
+
 		-- Does the tooltip have an owner?
 		local owner = self:GetOwner();
 		if owner then
@@ -660,7 +667,8 @@ if TooltipDataProcessor then
 				else
 					self.AllTheThingsProcessing = target;
 				end
-			else
+			elseif self:GetName() == "ItemRefTooltip" then
+				-- only allow spell info to attach to chat-link standalone ItemRefTooltip
 				-- name, spellID
 				_, spellID = TooltipUtil.GetDisplayedSpell(self);
 				if spellID then
@@ -802,18 +810,18 @@ if TooltipDataProcessor then
 		end
 		-- print("AttachTooltip-Return");
 	end
-	app.events.TOOLTIP_DATA_UPDATE = function(...)
-		if GameTooltip and GameTooltip:IsVisible() then
-			-- app.PrintDebug("Auto-refresh tooltip")
-			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
-			GameTooltip.ATT_AttachComplete = nil;
-			GameTooltip:Show();
-		end
-	end
+
 	app.AddEventHandler("OnReady", function()
 		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
-		app:RegisterEvent("TOOLTIP_DATA_UPDATE");
+		app:RegisterFuncEvent("TOOLTIP_DATA_UPDATE", function(...)
+			if GameTooltip and GameTooltip:IsVisible() then
+				-- app.PrintDebug("Auto-refresh tooltip")
+				-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+				GameTooltip.ATT_AttachComplete = nil;
+				GameTooltip:Show();
+			end
+		end);
 	end);
 else
 	-- Pre-10.0.2 (Legacy)
