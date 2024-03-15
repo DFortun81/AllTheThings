@@ -26,6 +26,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4903, {	-- Westfall Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38343, {	-- Crime Scene Investigation
 							["sourceQuest"] = 26270,	-- You Have Our Thanks
@@ -37,6 +38,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26370,	-- Return to Sentinel Hill
 						}),
 					},
+					-- #endif
 				}),
 			}),
 			battlepets({
