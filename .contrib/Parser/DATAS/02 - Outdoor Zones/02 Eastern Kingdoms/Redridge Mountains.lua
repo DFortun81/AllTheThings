@@ -231,7 +231,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 28.6, 17.8, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/1 Blackrock Lever Key
-							["provider"] = { "i", 59033 },	-- Blackrock Lever Key
+							["providers"] = {
+								{ "i", 59033 },	-- Blackrock Lever Key
+								{ "o", 204403 },	-- Chain Lever
+							},
+							["coord"] = { 27.8, 17.9, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
@@ -302,7 +306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 48.5, 64.5, REDRIDGE_MOUNTAINS },
 						}),
-						objective(1, {	-- 0/5 Fox Poop
+						objective(2, {	-- 0/5 Fox Poop
 							["providers"] = {
 								{ "i", 59153 },	-- Fox Poop
 								{ "o", 204425 },	-- Fox Poop

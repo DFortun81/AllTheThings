@@ -41,5 +41,19 @@
 			cn = "[Blackrock Holding Pen]",
 		},
 	},
+	[204403] = {
+		readable = "Chain Lever",
+		text = {
+			en = "Chain Lever",
+			es = "[Chain Lever]",
+			de = "[Chain Lever]",
+			fr = "[Chain Lever]",
+			it = "[Chain Lever]",
+			pt = "[Chain Lever]",
+			ru = "[Chain Lever]",
+			ko = "[Chain Lever]",
+			cn = "[Chain Lever]",
+		},
+	},
 })
 do ObjectDB[objectID] = objectData; end

@@ -2577,6 +2577,7 @@ _.ObjectNames = {
 	[204352] = "Redridge Supply Crate",
 	[204388] = "Blackrock Coffer",
 	[204389] = "Blackrock Key Pouch",
+	[204403] = "Chain Lever",
 	[204406] = "Half-Buried Bottle",
 	[204424] = "Pile of Leaves",
 	[204425] = "Fox Poop",
