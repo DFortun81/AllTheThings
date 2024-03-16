@@ -154,7 +154,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(QUESTS, {
 				q(6181, {	-- A Swift Message
-					["qg"] = 491,	-- Quartermaster Lewis
 					["providers"] = {
 						{ "n", 491 },	-- Quartermaster Lewis
 						{ "i", 15998 },	-- Lewis' Note
@@ -170,6 +169,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.8, 65.1, WESTFALL },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Vision of the Past uncovered
+							["provider"] = { "i", 58147 },	-- Incense Burner
+							["coord"] = { 42.56, 71.71, WESTFALL },
+						}),
+					},
 				}),
 				q(26291, {	-- Big Trouble in Moonbrook
 					["qg"] = 7024,	-- Agent Kearnen
@@ -243,19 +248,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 				}),
 				q(26354, {	-- Captain Sanders' Hidden Treasure (2/4)
-					["provider"] = { "o", 307330 },	-- Captain's Footlocker
+					["providers"] = {
+						{ "o", 307330 },	-- Captain's Footlocker
+						{ "i", 1358 },	-- A Clue to Sander's Treasure
+					},
 					["sourceQuest"] = 26353,	-- Captain Sanders' Hidden Treasure (1/4)
 					["coord"] = { 25.9, 47.7, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (3/4)
-					["provider"] = { "o", 307307 },	-- Broken Barrel
+					["providers"] = {
+						{ "o", 307307 },	-- Broken Barrel
+						{ "i", 1361 },	-- Another Clue to Sander's Treasure
+					},
 					["sourceQuest"] = 26354,	-- Captain Sanders' Hidden Treasure (2/4)
 					["coord"] = { 40.6, 47.8, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 				}),
 				q(26356, {	-- Captain Sanders' Hidden Treasure (4/4)
-					["provider"] = { "o", 307277 },	-- Old Jug
+					["providers"] = {
+						{ "o", 307277 },	-- Old Jug
+						{ "i", 1362 },	-- Final Clue to Sander's Treasure
+						{ "o", 307340 },	-- Locked Chest
+					},
 					["sourceQuest"] = 26355,	-- Captain Sanders' Hidden Treasure (3/4)
 					["coord"] = { 40.5, 16.8, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
@@ -342,6 +357,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Red Bandana
+							["provider"] = { "i", 58118 },	-- Red Bandana
+							["cr"] = 42677,	-- Moonbrook Thug
+						}),
 						i(58921, {	-- Evidence Collection Gloves
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -362,6 +381,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.4, 19.2, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Coyote Tail
+							["provider"] = { "i", 57787 },	-- Coyote Tail
+							["crs"] = {
+								834,	-- Coyote
+								833,	-- Coyote Packleader
+							},
+						}),
+						objective(2, {	-- 0/5 Fresh Dirt
+							["providers"] = {
+								{ "i",  57789 },	-- Fresh Dirt
+								{ "o", 203972 },	-- Fresh Dirt
+							},
+						}),
+					},
 				}),
 				q(26271, {	-- Feeding the Hungry and the Hopeless
 					["qg"] = 42575,	-- Hope Saldean
@@ -369,6 +403,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.9, 47.1, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Westfall Homeless fed
+							["providers"] = {
+								{ "n", 42617 },	-- Westfall Stew
+								{ "i", 57991 },	-- Westfall Stew
+							},
+							["crs"] = {
+								42386,	-- Homeless Stormwind Citizen
+								42384,	-- Homeless Stormwind Citizen
+							},
+						}),
+					},
 				}),
 				q(26289, {	-- Find Agent Kearnen
 					["qg"] = 234,	-- Marshal Gryan Stoutmantle
@@ -444,7 +490,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(26266, {	-- Hope for the People
-					["qg"] = 235,	-- Salma Saldean
+					["providers"] = {
+						{ "n", 235 },	-- Salma Saldean
+						{ "i", 57988 },	-- Westfall Stew
+					},
 					["sourceQuest"] = 26270,	-- You Have Our Thanks
 					["coord"] = { 56.3, 30.5, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
@@ -456,6 +505,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.1, 19.4, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Murloc Clue
+							["provider"] = { "i", 57756 },	-- Murloc Clue
+							["coord"] = { 55.2, 11.0, WESTFALL },
+							["crs"] = {
+								515,	-- Murloc Raider
+								126,	-- Murloc Coastrunner
+							},
+						}),
+					},
 				}),
 				q(26213, {	-- Hot On the Trail: The Riverpaw Clan
 					["qg"] = 42308,	-- Lieutenant Horatio Laine
@@ -463,6 +522,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.1, 19.4, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Riverpaw Gnoll Clue
+							["provider"] = { "i", 57755 },	-- Riverpaw Gnoll Clue
+							["coord"] = { 57.8, 14.2, WESTFALL },
+							["crs"] = {
+								500,	-- Riverpaw Scout
+								117,	-- Riverpaw Gnoll
+							},
+						}),
+					},
 				}),
 				q(26286, {	-- In Defense of Westfall
 					["qg"] = 234,	-- Marshal Gryan Stoutmantle
@@ -471,6 +540,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Gnoll Attack Orders
+							["provider"] = { "i", 58111 },	-- Gnoll Attack Orders
+							["coord"] = { 52.6, 53.4, WESTFALL },
+							["crs"] = {
+								54372,	-- Riverpaw Brute
+								124,	-- Riverpaw Brute
+								54371,	-- Riverpaw Bandit
+								54373,	-- Riverpaw Herbalist
+								501,	-- Riverpaw Herbalist
+								452,	-- Riverpaw Bandit
+							},
+						}),
 						i(58914, {	-- Sentinel Hill Breastplate
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -492,6 +573,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Kobold Digger slain
+							["provider"] = { "n", 1236 },	-- Kobold Digger
+						}),
 						i(58905, {	-- Kobold Basher
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -516,6 +600,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Overloaded Harvest Golem enabled
+							["providers"] = {
+								{ "i", 57954 },	-- Harvest Watcher Heart
+								{ "n", 42601 },	-- Overloaded Harvest Golem
+							},
+						}),
+						objective(2, {	-- 0/25 Energized Harvest Reaper
+							["provider"] = { "n", 42342 },	-- Energized Harvest Reaper
+							["coord"] = { 45.0, 35.4, WESTFALL },
+						}),
 						i(58916, {	-- Chewed Belt
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -537,6 +631,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Riverpaw Mystic slain
+							["provider"] = { "n", 453 },	-- Riverpaw Mystic
+							["coord"] = { 62.8, 73.4, WESTFALL },
+						}),
+						objective(2, {	-- 0/5 Riverpaw Taskmaster slain
+							["provider"] = { "n", 98 },	-- Riverpaw Taskmaster
+							["coord"] = { 60.6, 74.6, WESTFALL },
+						}),
+						objective(3, {	-- 0/5 Jango Spothide slain
+							["provider"] = { "n", 42653 },	-- Jango Spothide
+							["coord"] = { 62.2, 76.2, WESTFALL },
+						}),
 						i(58920, {	-- Dust Plains Greaves
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -563,6 +669,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30.5, 85.4, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Chasm Ooze
+							["provider"] = { "i", 58204 },	-- Chasm Ooze
+							["coord"] = { 38.8, 44.4, WESTFALL },
+							["cr"] = 42669,	-- Chasm Slime
+						}),
+					},
 				}),
 				q(2359, {	-- Klaven's Tower
 					["providers"] = {
@@ -603,6 +716,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.7, 19.5, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Livin' the Life!
+							["provider"] = { "i", 57761 },	-- Two-Shoed Lou's Old House
+							["coord"] = { 63.9, 26.2, 54 },	-- Jangolode Mine
+							--["coord"] = { 46.5, 19.3, WESTFALL },
+						}),
+					},
 				}),
 				q(26232, {	-- Lou's Parting Thoughts
 					["qg"] = 42405,	-- Two-Shoed Lou
@@ -610,6 +730,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.7, 19.5, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Eavesdrop on Thugs.
+							["provider"] = { "n", 42387 },	-- Thug
+							["coord"] = { 48.2, 19.6, WESTFALL },
+						}),
+					},
 				}),
 				q(26215, {	-- Meet Two-Shoed Lou
 					["qg"] = 42308,	-- Lieutenant Horatio Laine
@@ -628,6 +754,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Clue #1 obtained
+							["providers"] = {
+								{ "n", 42384 },	-- Homeless Stormwind Citizen
+								{ "n", 42386 },	-- Homeless Stormwind Citizen
+								{ "n", 42391 },	-- West Plains Drifter
+								{ "n", 42383 },	-- Transient
+							},
+						}),
+						objective(2, {	-- Clue #2 obtained
+							["providers"] = {
+								{ "n", 42384 },	-- Homeless Stormwind Citizen
+								{ "n", 42386 },	-- Homeless Stormwind Citizen
+								{ "n", 42391 },	-- West Plains Drifter
+								{ "n", 42383 },	-- Transient
+							},
+						}),
+						objective(3, {	-- Clue #3 obtained
+							["providers"] = {
+								{ "n", 42384 },	-- Homeless Stormwind Citizen
+								{ "n", 42386 },	-- Homeless Stormwind Citizen
+								{ "n", 42391 },	-- West Plains Drifter
+								{ "n", 42383 },	-- Transient
+							},
+						}),
+						objective(4, {	-- Clue #4 obtained
+							["providers"] = {
+								{ "n", 42384 },	-- Homeless Stormwind Citizen
+								{ "n", 42386 },	-- Homeless Stormwind Citizen
+								{ "n", 42391 },	-- West Plains Drifter
+								{ "n", 42383 },	-- Transient
+							},
+						}),
 						i(58907, {	-- Crime Scene Tape
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -698,6 +856,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.2, 64.0, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Informational Pamphlet
+							["providers"] = {
+								{ "i", 58113 },	-- Informational Pamphlet
+								{ "o", 204014 },	-- Informational Pamphlet
+							},
+							["coord"] = { 41.5, 66.5, WESTFALL },
+						}),
+						objective(2, {	-- 0/1 Issue of the Moonbrook Times
+							["providers"] = {
+								{ "i", 58114 },	-- Issue of the Moonbrook Times
+								{ "o", 204015 },	-- The Moonbrook Times
+							},
+							["coord"] = { 44.5, 68.3, WESTFALL },
+						}),
+						objective(3, {	-- 0/1 Secret Journal
+							["providers"] = {
+								{ "i", 58115 },	-- Secret Journal
+								{ "o", 204016 },	-- Secret Journal
+							},
+							["coord"] = { 43.5, 66.7, WESTFALL },
+						}),
+						objective(4, {	-- 0/1 Mysterious Propaganda
+							["providers"] = {
+								{ "i", 58116 },	-- Mysterious Propaganda
+								{ "o", 204017 },	-- Mysterious Propaganda
+							},
+							["coord"] = { 42.5, 71.7, WESTFALL },
+						}),
+					},
 				}),
 				q(153, {	-- Red Leather Bandanas
 					["qg"] = 878,	-- Scout Galiaan
@@ -799,6 +987,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 68.2, 70.4, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Helix's Secret Revealed
+							["provider"] = { "i", 58112 },	-- Potion of Shrouding
+							["coord"] = { 70.4, 74.2, WESTFALL },
+							["cr"] = 42753,	-- Helix Gearbreaker
+						}),
+					},
 				}),
 				q(26319, {	-- Secrets Revealed
 					["qg"] = 42425,	-- Captain Alpert
@@ -920,6 +1115,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30.5, 85.4, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Murloc Tidehunter slain
+							["provider"] = { "n", 127 },	-- Murloc Tidehunter
+						}),
+						objective(2, {	-- 0/7 Murloc Oracle slain
+							["provider"] = { "n", 517 },	-- Murloc Oracle
+						}),
+					},
 				}),
 				q(104, {	-- The Coastal Menace
 					["qg"] = 392,	-- Captain Grayson
@@ -945,6 +1148,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Scale of Old Murk-Eye
+							["provider"] = { "i", 3636 },	-- Scale of Old Murk-Eye
+							["coord"] = { 34.4, 84.6, WESTFALL },
+							["cr"] = 391,	-- Old Murk-Eye
+						}),
 						i(1557),	-- Buckler of the Seas
 						i(1172),	-- Grayson's Torch
 						i(5240),	-- Torchlight Wand
@@ -1126,6 +1334,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Attacking Riverpaw Gnoll slain
+							["providers"] = {
+								{ "n", 452 },	-- Riverpaw Bandit
+								{ "n", 54371 },	-- Riverpaw Bandit
+								{ "n", 124 },	-- Riverpaw Brute
+								{ "n", 54372 },	-- Riverpaw Brute
+								{ "n", 501 },	-- Riverpaw Herbalist
+								{ "n", 54373 },	-- Riverpaw Herbalist
+							},
+						}),
+					},
 				}),
 				q(26761, {	-- Threat to the Kingdom
 					["qg"] = 234,	-- Marshal Gryan Stoutmantle
@@ -1154,6 +1374,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 55.9, 31.3, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Harvest Watcher slain
+							["provider"] = { "n", 114 },	-- Harvest Watcher
+							["coord"] = { 54.6, 33.6, WESTFALL },
+						}),
+					},
 				}),
 				q(26292, {	-- To Moonbrook!
 					["qg"] = 234,	-- Marshal Gryan Stoutmantle
@@ -1203,6 +1429,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Okra
+							["provider"] = { "i", 57911 },	-- Okra
+							["coord"] = { 54.6, 33.6, WESTFALL },
+							["cr"] = 114,	-- Harvest Watcher
+						}),
+						objective(2, {	-- 0/6 Goretusk Flank
+							["provider"] = { "i", 57788 },	-- Goretusk Flank
+							["coord"] = { 52.6, 22.2, WESTFALL },
+							["crs"] = {
+								157,	-- Goretusk
+								454,	-- Young Goretusk
+								42357,	-- Hulking Goretusk
+							},
+						}),
+						objective(3, {	-- 0/6 Stringy Fleshripper Meat
+							["provider"] = { "i", 57786 },	-- Stringy Fleshripper Meat
+							["coord"] = { 49.0, 27.4, WESTFALL },
+							["crs"] = {
+								1109,	-- Fleshripper
+								199,	-- Young Fleshripper
+								154,	-- Greater Fleshripper
+							},
+						}),
 						i(58910, {	-- Boiled Boots
 							["timeline"] = { "added 4.0.3" },
 						}),
