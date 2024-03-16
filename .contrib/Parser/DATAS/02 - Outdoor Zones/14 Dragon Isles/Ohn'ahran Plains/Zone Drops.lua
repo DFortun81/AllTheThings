@@ -27,7 +27,55 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{"i",200194,1},	-- 1x Nokhud Battle Tunic
 				},
 			}),
-			i(201934),	-- Nokhud Whittling Knife
+			i(201028, {	-- Nokhudon Boots
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201027, {	-- Nokhudon Breeches
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201031, {	-- Nokhudon Cloak
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201034, {	-- Nokhudon Girdle
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201030, {	-- Nokhudon Grips
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201025, {	-- Nokhudon Harness
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201029, {	-- Nokhudon Hood
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201024, {	-- Nokhudon Mantle
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201032, {	-- Nokhudon Wraps
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),	
+			-- Weps
+			i(201382, {	-- Centaur Warglaives
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201384, {	-- Centaur Tracker's Javelin
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201381, {	-- Nokhud Battle-Knife
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201380, {	-- Nokhud Hunter's Bow
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201385, {	-- Nokhud Centaur Warstaff
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201383, {	-- Nokhud Stalker's Spear
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
+			i(201934, {	-- Nokhud Whittling Knife
+				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
+			}),
 			i(201439, {	-- Renewed Dream
 				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
 				["g"] = {

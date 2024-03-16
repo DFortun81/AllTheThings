@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sym"] = {
 					{"select", "mapID",
 						DRAGON_ISLES,
-						THE_WAKING_SHORES,
+					--	THE_WAKING_SHORES,	-- Does not Reward Citadel Crusher/Obsidian Cosmetic Items 	March 2024
 						OHNAHRAN_PLAINS,
 						THE_AZURE_SPAN,
 						THALDRASZUS,
@@ -32,12 +32,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(376581, {	-- Clan Chest
 				["coords"] = {
 					{ 35.3, 37.0, OHNAHRAN_PLAINS },
-					{ 36.1, 41.8, OHNAHRAN_PLAINS },
-					{ 32.7, 37.1, OHNAHRAN_PLAINS },
-					{ 34.8, 37.1, OHNAHRAN_PLAINS },
-					{ 35.3, 36.9, OHNAHRAN_PLAINS },
-					{ 36.0, 41.1, OHNAHRAN_PLAINS },
+					{ 25.0, 37.8, OHNAHRAN_PLAINS },
+					{ 25.3, 37.4, OHNAHRAN_PLAINS },
+					{ 31.3, 70.6, OHNAHRAN_PLAINS },
+					{ 32.2, 68.1, OHNAHRAN_PLAINS },
+					{ 32.4, 39.0, OHNAHRAN_PLAINS },
+					{ 32.5, 38.9, OHNAHRAN_PLAINS },
+					{ 32.7, 37.0, OHNAHRAN_PLAINS },
+					{ 33.5, 42.4, OHNAHRAN_PLAINS },
+					{ 33.5, 42.5, OHNAHRAN_PLAINS },
+					{ 34.8, 37.0, OHNAHRAN_PLAINS },
+					{ 35.0, 41.9, OHNAHRAN_PLAINS },
+					{ 35.4, 65.8, OHNAHRAN_PLAINS },
+					{ 36.0, 41.0, OHNAHRAN_PLAINS },
 					{ 36.1, 41.7, OHNAHRAN_PLAINS },
+					{ 49.4, 67.3, OHNAHRAN_PLAINS },
+					{ 49.4, 67.7, OHNAHRAN_PLAINS },
+					{ 49.5, 67.3, OHNAHRAN_PLAINS },
+					{ 50.4, 66.4, OHNAHRAN_PLAINS },
+					{ 50.5, 66.3, OHNAHRAN_PLAINS },
+					{ 50.9, 66.5, OHNAHRAN_PLAINS },
+					{ 71.9, 56.7, OHNAHRAN_PLAINS },
+					{ 73.4, 56.1, OHNAHRAN_PLAINS },
+					{ 73.5, 56.2, OHNAHRAN_PLAINS },
+					{ 74.6, 39.2, OHNAHRAN_PLAINS },
+					{ 74.7, 40.4, OHNAHRAN_PLAINS },
+					{ 74.7, 40.5, OHNAHRAN_PLAINS },
+					{ 75.2, 41.6, OHNAHRAN_PLAINS },
+					{ 75.5, 40.4, OHNAHRAN_PLAINS },
+					{ 75.5, 40.5, OHNAHRAN_PLAINS },
+					{ 83.7, 53.4, OHNAHRAN_PLAINS },
+					{ 83.7, 53.6, OHNAHRAN_PLAINS },
+					{ 85.4, 54.7, OHNAHRAN_PLAINS },
+					{ 85.5, 54.7, OHNAHRAN_PLAINS },
+					{ 86.4, 50.7, OHNAHRAN_PLAINS },
+					{ 86.4, 53.3, OHNAHRAN_PLAINS },
+					{ 86.5, 50.7, OHNAHRAN_PLAINS },
+					{ 86.5, 53.3, OHNAHRAN_PLAINS },
 				},
 				-- ["questID"] = ,
 				["g"] = {
@@ -51,7 +82,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201024),	-- Nokhudon Mantle
 					i(201032),	-- Nokhudon Wraps
 					-- Weps
+					i(201382),	-- Centaur Warglaives
 					i(201384),	-- Centaur Tracker's Javelin
+					i(201381),	-- Nokhud Battle-Knife
+					i(201380),	-- Nokhud Hunter's Bow
 					i(201385),	-- Nokhud Centaur Warstaff
 					i(201383),	-- Nokhud Stalker's Spear
 				},
