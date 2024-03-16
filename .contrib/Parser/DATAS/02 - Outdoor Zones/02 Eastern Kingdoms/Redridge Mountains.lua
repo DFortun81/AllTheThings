@@ -424,7 +424,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 11,
+					["lvl"] = lvlsquish(14, 14, 11),
 					["g"] = {
 						i(60689, {	-- Belt of Unsolvable Problems
 							["timeline"] = { "added 4.0.3" },
