@@ -52,9 +52,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sym"] = {
 						{"select", "mapID",
 							DRAGON_ISLES,
-							THE_WAKING_SHORES,
-							OHNAHRAN_PLAINS,
-							THE_AZURE_SPAN,
+						--	THE_WAKING_SHORES,	-- Does not Reward Citadel Crusher/Obsidian Cosmetic Items 	March 2024
+						--	OHNAHRAN_PLAINS,	-- Does not Reward Nokhud Cosmetic Items					March 2024
+						--	THE_AZURE_SPAN,		-- Does not Reward Brackenhide Cosmetic Items				March 2024
 							THALDRASZUS,
 						},
 						{"find", "headerID", ZONE_REWARDS},
