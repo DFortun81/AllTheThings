@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4902, {	-- Redridge Mountain Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38367, {	-- The Gnoll Offensive
 							["sourceQuest"] = 26545,	-- Yowler Must Die!
@@ -32,6 +33,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26726,	-- Triumphant Return
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26545,	-- Yowler Must Die!
+						26607,	-- They Drew First Blood
+						26726,	-- Triumphant Return
+					},
+					-- #endif
 				}),
 			}),
 			battlepets({

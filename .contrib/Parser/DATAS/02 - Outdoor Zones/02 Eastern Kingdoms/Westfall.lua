@@ -38,6 +38,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26370,	-- Return to Sentinel Hill
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26270,	-- You Have Our Thanks
+						26297,	-- The Dawning of a New Day
+						26370,	-- Return to Sentinel Hill
+					},
 					-- #endif
 				}),
 			}),
