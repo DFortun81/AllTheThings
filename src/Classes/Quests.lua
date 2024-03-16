@@ -1199,6 +1199,7 @@ local function QuestWithReputationCollectibleAsCost(t)
 	-- and the Quest is not completed and not locked from being completed
 	if app.Settings.Collectibles.Reputations and not t.saved and not t.locked then
 		local faction = app.CreateFaction(t.maxReputation[1]);
+		if faction.collected then return end
 		faction.maxReputation = t.maxReputation;
 		return faction.maxstanding > faction.standing;
 	end
@@ -1670,7 +1671,7 @@ app.AddEventHandler("OnLoad", function()
 								text = RETRIEVING_DATA;
 								reference.working = true;
 							end
-							
+
 							tinsert(tooltipInfo, {
 								left = "  " .. text,
 								right = app.GetCompletionIcon(objective.finished),
