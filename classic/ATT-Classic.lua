@@ -4972,7 +4972,7 @@ local spellFields = {
 		end
 		return "Interface\\ICONS\\INV_Scroll_04";
 	end,
-	["description"] = function(t)
+	["description"] = app.GameBuildVersion >= 20000 and false or function(t)
 		return GetSpellDescription(t.spellID);
 	end,
 	["craftTypeID"] = function(t)
