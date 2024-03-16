@@ -2137,7 +2137,7 @@ local HandleCommands = app.Debugging and function(finalized, searchResults, o, o
 		if cmdFunc then
 			cmdFunc(finalized, searchResults, o, unpack(sym));
 			if debug and #searchResults == 0 and cmd ~= "finalize" and cmd ~= "achievement_criteria" and cmd ~= "sub" then
-				app.PrintDebug(Colorize("Symlink command with no results for: "..(o.link or o.hash), app.Colors.ChatLinkError),"@",_,unpack(sym))
+				app.PrintDebug(Colorize("Symlink command with no results for: "..app:SearchLink(o), app.Colors.ChatLinkError),"@",_,unpack(sym))
 				app.PrintTable(oSym)
 				debug = nil
 			end
@@ -2559,9 +2559,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 			local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-			local FilterUnobtainable, FilterCharacter, FirstParent
-				= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+			local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
+				= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 			local abbrevs = L.ABBREVIATIONS;
+			local sourcesToShow
 			for _,j in ipairs(group.g or group) do
 				parent = j.parent;
 				if parent and not FirstParent(j, "hideText") and parent.parent
@@ -2570,16 +2571,20 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				then
 					text = app.GenerateSourcePathForTooltip(parent);
 					if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-						-- doesn't meet current unobtainable filters
-						if not FilterUnobtainable(parent) then
+						-- doesn't meet current unobtainable filters from the Thing itself
+						if not FilterUnobtainable(j) then
 							tinsert(unfiltered, { text, UnobtainableTexture });
-						-- from obtainable, different character source
-						elseif not FilterCharacter(parent) then
-							tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
 						else
-							-- check if this needs an unobtainable icon even though it's being shown
-							right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
-							tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
+							-- something user would currently see in a list or not
+							sourcesToShow = FilterSettings(parent) and temp or unfiltered
+							-- from obtainable, different character source
+							if not FilterCharacter(parent) then
+								tinsert(sourcesToShow, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+							else
+								-- check if this needs an unobtainable icon even though it's being shown
+								right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+								tinsert(sourcesToShow, { text, right and ("|T" .. right .. ":0|t") });
+							end
 						end
 					end
 				end
