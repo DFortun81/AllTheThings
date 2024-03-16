@@ -549,6 +549,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(26728, {	-- Hero's Call: Duskwood!
+					["qg"] = 900,	-- Bailiff Conacher
+					["coord"] = { 28.7, 40.9, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "added 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(26669, {	-- In A Dark Corner
 					["qg"] = 267,	-- Clerk Daltry
 					["sourceQuest"] = 26667,	-- The Stolen Letters

@@ -401,12 +401,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26728, {	-- Hero's Call: Duskwood!
-					["qg"] = 900,	-- Bailiff Conacher
-					["coord"] = { 28.7, 40.9, REDRIDGE_MOUNTAINS },
+				q(26365, {	-- Hero's Call: Redridge Mountains!
+					["providers"] = {
+						-- #if AFTER 7.0.3
+						{ "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
+						-- #else
+						{ "n", 29611 },		-- King Varian Wrynn <King of Stormwind>
+						-- #endif
+						{ "n", 1750 },		-- Grand Admiral Jes-Tereth
+						{ "n", 821 },		-- Captain Danuvin
+					},
+					["coords"] = {
+						-- #if AFTER 7.0.3
+						{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
+						-- #else
+						{ 85.6, 31.8, STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
+						-- #endif
+						{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
+						{ 56.3, 47.6, WESTFALL },	-- Captain Danuvin
+					},
+					["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
+					["g"] = {
+						i(60689, {	-- Belt of Unsolvable Problems
+							["timeline"] = { "added 4.0.3" },
+						}),
+						i(60690, {	-- Doody Boots
+							["timeline"] = { "added 4.0.3" },
+						}),
+						i(131517, {	-- Doody Shoes
+							["timeline"] = { "added 7.0.3" },
+						}),
+						i(60688, {	-- Parker's Yardstick
+							["timeline"] = { "added 4.0.3" },
+						}),
+						i(60691, {	-- Unfortunate Treads
+							["timeline"] = { "added 4.0.3" },
+						}),
+					},
 				}),
 				q(3741, {	-- Hilary's Necklace
 					["qg"] = 8965,	-- Shawn
