@@ -47,6 +47,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			i(201367, {	-- Hollow Hunter's Sticker
 				["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
 			}),
+			i(201373, {	-- Imbu Net Cutter
+				["description"] = "Drops from Primal Mobs spawning around Tuskarr Chests or from Tuskarr Chests themselves.",
+			}),
+			i(201372, {	-- Imbu Tuskarr Axe
+				["description"] = "Drops from Primal Mobs spawning around Tuskarr Chests or from Tuskarr Chests themselves.",
+			}),
+			i(201376, {	-- Imbu Tuskarr Mace
+				["description"] = "Drops from Primal Mobs spawning around Tuskarr Chests or from Tuskarr Chests themselves.",
+			}),
+			i(201375, {	-- Imbu Warrior's Club
+				["description"] = "Drops from Primal Mobs spawning around Tuskarr Chests or from Tuskarr Chests themselves.",
+			}),
 			i(193882, {	-- Pattern: Acidic Hailstone Treads (RECIPE!)
 				["description"] = "Drops from Decayed Creatures around Bracken Hollow.",
 			}),
@@ -68,6 +80,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			i(198907),	-- Technique: Illusion Parchment: Chilling Wind (RECIPE!)
 			i(201735),	-- Technique: Highland Drake: Silver and Blue Armor (RECIPE!)
+			i(201378, {	-- Tuskarr Angler's Crossbow
+				["description"] = "Drops from Primal Mobs spawning around Tuskarr Chests or from Tuskarr Chests themselves.",
+			}),
+			i(201377, {	-- Tuskarr Elder's Staff
+				["description"] = "Drops from Primal Mobs spawning around Tuskarr Chests or from Tuskarr Chests themselves.",
+			}),
+			i(201374, {	-- Tuskarr Fishing Pike
+				["description"] = "Drops from Primal Mobs spawning around Tuskarr Chests or from Tuskarr Chests themselves.",
+			}),
 			i(201421, {	-- Tuskarr Jerky
 				["crs"] = {
 					195337,	-- Chief Dead Eye

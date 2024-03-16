@@ -19,21 +19,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{"select", "itemID",
 						201442,	-- Primal Revenant's Frostblade
 						201443,	-- Primal Revenant's Icewall
-						201028	-- Nokhudon Boots
-						201027	-- Nokhudon Breeches
-						201031	-- Nokhudon Cloak
-						201034	-- Nokhudon Girdle
-						201030	-- Nokhudon Grips
-						201025	-- Nokhudon Harness
-						201029	-- Nokhudon Hood
-						201024	-- Nokhudon Mantle
-						201032	-- Nokhudon Wraps
-						201382	-- Centaur Warglaives
-						201384	-- Centaur Tracker's Javelin
-						201381	-- Nokhud Battle-Knife
-						201380	-- Nokhud Hunter's Bow
-						201385	-- Nokhud Centaur Warstaff
-						201383	-- Nokhud Stalker's Spear
+						201028,	-- Nokhudon Boots
+						201027,	-- Nokhudon Breeches
+						201031,	-- Nokhudon Cloak
+						201034,	-- Nokhudon Girdle
+						201030,	-- Nokhudon Grips
+						201025,	-- Nokhudon Harness
+						201029,	-- Nokhudon Hood
+						201024,	-- Nokhudon Mantle
+						201032,	-- Nokhudon Wraps
+						201382,	-- Centaur Warglaives
+						201384,	-- Centaur Tracker's Javelin
+						201381,	-- Nokhud Battle-Knife
+						201380,	-- Nokhud Hunter's Bow
+						201385,	-- Nokhud Centaur Warstaff
+						201383,	-- Nokhud Stalker's Spear
 					},
 					{"select", "mapID",
 						DRAGON_ISLES,
