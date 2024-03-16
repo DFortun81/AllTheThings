@@ -2109,6 +2109,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									}),
 								},
 							}),
+							n(172788, {	-- Kegs
+								-- CRIEVE NOTE: There was a note on the Lager in Westfall.
+								-- That source was removed, it needed the removed tag on it.
+								-- https://www.wowhead.com/npc=172788/kegs
+								--["coord"] = { ,  },
+								["groups"] = {
+									i(1262, {	-- Keg of Thunderbrew Lager
+										["timeline"] = { "added 9.0.1" },
+									}),
+								},
+							}),
 							n(165453, {	-- Lady Ilinca <Court Concierge>
 								["coord"] = { 28.5, 41.1, REVENDRETH },
 								["g"] = {
