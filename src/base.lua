@@ -244,6 +244,40 @@ app.SortDefaults.Accessibility = function(a, b)
 	return calculateAccessibility(a) < calculateAccessibility(b);
 end
 
+-- Accessibility + Distance Sorting
+local function calculateAccessibilityAndDistance(source)
+	local score = source.AccessibilityScore or 0;
+	if score > 0 then return score; end
+	if GetRelativeValue(source, "nmr") then
+		score = score + 20;
+	end
+	if GetRelativeValue(source, "nmc") then
+		score = score + 10;
+	end
+	if GetRelativeValue(source, "rwp") then
+		score = score + 5;
+	end
+	if GetRelativeValue(source, "e") then
+		score = score + 1;
+	end
+	local u = GetRelativeValue(source, "u");
+	if u then
+		if u < 3 then
+			score = score + 100;
+		elseif u < 4 then
+			score = score + 10;
+		else
+			score = score + 1;
+		end
+	end
+	score = score + (source.distance or 99999);
+	source.AccessibilityScore = score;
+	return score;
+end
+app.SortDefaults.AccessibilityAndDistance = function(a, b)
+	return calculateAccessibilityAndDistance(a) < calculateAccessibilityAndDistance(b);
+end
+
 -- Whether ATT should ignore saving data experienced during the play session
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<

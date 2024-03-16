@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
-	= ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
+local ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
+	= ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
 
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
@@ -35,6 +35,15 @@ end
 local function distance( x1, y1, x2, y2 )
 	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
 end
+local function GetPlayerPosition()
+	local mapID = app.CurrentMapID;
+	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
+	if pos then
+		local px, py = pos:GetXY();
+		return mapID, px * 100, py * 100;
+	end
+	return mapID, 50, 50;
+end
 
 local GetBestObjectIDForName;
 if app.IsRetail then
@@ -43,42 +52,35 @@ if app.IsRetail then
 		-- then correlate those search results by closest distance to the player's current position
 		local o = objectNamesToIDs[name];
 		if o and #o > 0 then
-			local mapID = app.CurrentMapID;
-			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-			if pos then
-				local px, py = pos:GetXY();
-				px, py = px * 100, py * 100;
-				local closestDistance = 99999
-				local closestObjectID, dist, searchCoord
-				for i,objectID in ipairs(o) do
-					local searchResults = SearchForField("objectID", objectID);
-					if searchResults and #searchResults > 0 then
-						for j,searchResult in ipairs(searchResults) do
-							searchCoord = searchResult.coord;
-							if searchCoord and searchCoord[3] == mapID then
-								dist = distance(px, py, searchCoord[1], searchCoord[2]);
-								if dist and dist < closestDistance then
-									closestDistance = dist;
-									closestObjectID = objectID;
-								end
-							elseif searchResult.coords then
-								for k,coord in ipairs(searchResult.coords) do
-									if coord[3] == mapID then
-										dist = distance(px, py, coord[1], coord[2]);
-										if dist and dist < closestDistance then
-											closestDistance = dist;
-											closestObjectID = objectID;
-										end
+			local mapID, px, py = GetPlayerPosition();
+			local closestDistance = 99999
+			local closestObjectID, dist, searchCoord
+			for i,objectID in ipairs(o) do
+				local searchResults = SearchForField("objectID", objectID);
+				if searchResults and #searchResults > 0 then
+					for j,searchResult in ipairs(searchResults) do
+						searchCoord = searchResult.coord;
+						if searchCoord and searchCoord[3] == mapID then
+							dist = distance(px, py, searchCoord[1], searchCoord[2]);
+							if dist and dist < closestDistance then
+								closestDistance = dist;
+								closestObjectID = objectID;
+							end
+						elseif searchResult.coords then
+							for k,coord in ipairs(searchResult.coords) do
+								if coord[3] == mapID then
+									dist = distance(px, py, coord[1], coord[2]);
+									if dist and dist < closestDistance then
+										closestDistance = dist;
+										closestObjectID = objectID;
 									end
 								end
 							end
 						end
 					end
 				end
-				return closestObjectID;	-- When player has a valid position, only return valid objects
-			else
-				return o[1];	-- Some instances don't return a valid position, but can still contain objects.
 			end
+			return closestObjectID;	-- When player has a valid position, only return valid objects
 		end
 	end
 else
@@ -87,41 +89,45 @@ else
 		-- then correlate those search results by closest distance to the player's current position
 		local o = objectNamesToIDs[name];
 		if o and #o > 0 then
-			local mapID = app.CurrentMapID;
-			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-			if pos then
-				local px, py = pos:GetXY();
-				px, py = px * 100, py * 100;
-				local closestDistance = 99999
-				local closestObjectID, dist, searchCoord = o[1];
-				for i,objectID in ipairs(o) do
-					local searchResults = SearchForField("objectID", objectID);
-					if searchResults and #searchResults > 0 then
-						for j,searchResult in ipairs(searchResults) do
-							searchCoord = searchResult.coord;
-							if searchCoord and searchCoord[3] == mapID then
-								dist = distance(px, py, searchCoord[1], searchCoord[2]);
-								if dist and dist < closestDistance then
-									closestDistance = dist;
-									closestObjectID = objectID;
-								end
-							elseif searchResult.coords then
-								for k,coord in ipairs(searchResult.coords) do
-									if coord[3] == mapID then
-										dist = distance(px, py, coord[1], coord[2]);
-										if dist and dist < closestDistance then
-											closestDistance = dist;
-											closestObjectID = objectID;
-										end
+			local objects = {};
+			local mapID, px, py = GetPlayerPosition();
+			local closestDistance, closestInstance, dist, searchCoord, searchResults;
+			for i,objectID in ipairs(o) do
+				closestInstance = nil;
+				closestDistance = 999999;
+				searchResults = SearchForField("objectID", objectID);
+				if searchResults and #searchResults > 0 then
+					for j,searchResult in ipairs(searchResults) do
+						searchCoord = searchResult.coord;
+						if searchCoord and searchCoord[3] == mapID then
+							dist = distance(px, py, searchCoord[1], searchCoord[2]);
+							if dist and dist < closestDistance then
+								closestDistance = dist;
+								closestInstance = searchResult;
+							end
+						elseif searchResult.coords then
+							for k,coord in ipairs(searchResult.coords) do
+								if coord[3] == mapID then
+									dist = distance(px, py, coord[1], coord[2]);
+									if dist and dist < closestDistance then
+										closestDistance = dist;
+										closestInstance = searchResult;
 									end
 								end
 							end
 						end
 					end
 				end
-				return closestObjectID;	-- When player has a valid position, only return valid objects
+				tinsert(objects, {
+					objectID = objectID,
+					parent = closestInstance,
+					distance = closestDistance
+				});
 			end
-			return o[1];	-- Some instances don't return a valid position, but can still contain objects.
+			if #objects > 0 then
+				app.Sort(objects, app.SortDefaults.AccessibilityAndDistance);
+				return objects[1].objectID;
+			end
 		end
 	end
 end
