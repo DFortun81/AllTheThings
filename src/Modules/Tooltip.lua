@@ -54,17 +54,19 @@ if app.IsRetail then
 		if o and #o > 0 then
 			local mapID, px, py = GetPlayerPosition();
 			local closestDistance = 99999
-			local closestObjectID, dist, searchCoord
+			local closestObjectID, dist, searchCoord, unmappedObject
 			for i,objectID in ipairs(o) do
 				local searchResults = SearchForField("objectID", objectID);
 				if searchResults and #searchResults > 0 then
 					for j,searchResult in ipairs(searchResults) do
 						searchCoord = searchResult.coord;
-						if searchCoord and searchCoord[3] == mapID then
-							dist = distance(px, py, searchCoord[1], searchCoord[2]);
-							if dist and dist < closestDistance then
-								closestDistance = dist;
-								closestObjectID = objectID;
+						if searchCoord then
+							if searchCoord[3] == mapID then
+								dist = distance(px, py, searchCoord[1], searchCoord[2]);
+								if dist and dist < closestDistance then
+									closestDistance = dist;
+									closestObjectID = objectID;
+								end
 							end
 						elseif searchResult.coords then
 							for k,coord in ipairs(searchResult.coords) do
@@ -76,11 +78,15 @@ if app.IsRetail then
 									end
 								end
 							end
+						else
+							app.PrintDebug("unmapped object assumed",objectID,app:SearchLink(searchResult))
+							unmappedObject = objectID
 						end
 					end
 				end
 			end
-			return closestObjectID;	-- When player has a valid position, only return valid objects
+			-- When player has a valid position, only return valid objects or if there's an unmapped object which matches
+			return closestObjectID or unmappedObject;
 		end
 	end
 else
