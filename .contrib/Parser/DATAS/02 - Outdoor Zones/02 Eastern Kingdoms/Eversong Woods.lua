@@ -424,7 +424,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
-									["provider"] = { "i", 20470 },	-- Solanian's Scrying Orb
+									["providers"] = {
+										{ "i",  20470 },	-- Solanian's Scrying Orb
+										{ "o", 180510 },	-- Solanian's Scrying Orb
+									},
 									-- #if AFTER LEGION
 									["coord"] = { 52.1, 69.4, SUNSTRIDER_ISLE },
 									-- #else
@@ -432,7 +435,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 									-- #endif
 								}),
 								objective(2, {	-- Scroll of Scourge Magic
-									["provider"] = { "i", 20471 },	-- Scroll of Scourge Magic
+									["providers"] = {
+										{ "i",  20471 },	-- Scroll of Scourge Magic
+										{ "o", 180511 },	-- Scroll of Scourge Magic
+									},
 									-- #if AFTER LEGION
 									["coord"] = { 40.4, 50.2, SUNSTRIDER_ISLE },
 									-- #else
@@ -440,7 +446,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 									-- #endif
 								}),
 								objective(3, {	-- Solanian's Journal
-									["provider"] = { "i", 20472 },	-- Solanian's Journal
+									["providers"] = {
+										{ "i",  20472 },	-- Solanian's Journal
+										{ "o", 180512 },	-- Solanian's Journal
+									},
 									-- #if AFTER LEGION
 									["coord"] = { 59.9, 57.1, SUNSTRIDER_ISLE },
 									-- #else
@@ -469,7 +478,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
-									["provider"] = { "i", 20470 },	-- Solanian's Scrying Orb
+									["providers"] = {
+										{ "i",  20470 },	-- Solanian's Scrying Orb
+										{ "o", 180510 },	-- Solanian's Scrying Orb
+									},
 									-- #if AFTER LEGION
 									["coord"] = { 52.1, 69.4, SUNSTRIDER_ISLE },
 									-- #else
@@ -477,7 +489,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 									-- #endif
 								}),
 								objective(2, {	-- Scroll of Scourge Magic
-									["provider"] = { "i", 20471 },	-- Scroll of Scourge Magic
+									["providers"] = {
+										{ "i",  20471 },	-- Scroll of Scourge Magic
+										{ "o", 180511 },	-- Scroll of Scourge Magic
+									},
 									-- #if AFTER LEGION
 									["coord"] = { 40.4, 50.2, SUNSTRIDER_ISLE },
 									-- #else
@@ -485,7 +500,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 									-- #endif
 								}),
 								objective(3, {	-- Solanian's Journal
-									["provider"] = { "i", 20472 },	-- Solanian's Journal
+									["providers"] = {
+										{ "i",  20472 },	-- Solanian's Journal
+										{ "o", 180512 },	-- Solanian's Journal
+									},
 									-- #if AFTER LEGION
 									["coord"] = { 59.9, 57.1, SUNSTRIDER_ISLE },
 									-- #else
@@ -531,6 +549,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = { BLOODELF },
 							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
 							["lvl"] = lvlsquish(2, 2, 1),
+							["groups"] = {
+								objective(1, {	-- Shrine of Dath'Remar Read
+									["provider"] = { "o", 180516 },	-- Shrine of Dath'Remar
+									-- #if AFTER LEGION
+									["coord"] = { 35.3, 40.2, SUNSTRIDER_ISLE },
+									-- #else
+									["coord"] = { 29.7, 19.4, EVERSONG_WOODS },
+									-- #endif
+								}),
+							},
 						}),
 						q(37442, {	-- The Shrine of Dath'Remar
 							["qg"] = 15295,	-- Well Watcher Solanian
@@ -544,6 +572,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = { BLOODELF },
 							["timeline"] = { "added 6.0.2.18816" },
 							["lvl"] = lvlsquish(2, 2, 1),
+							["groups"] = {
+								objective(1, {	-- Shrine of Dath'Remar Read
+									["provider"] = { "o", 180516 },	-- Shrine of Dath'Remar
+									-- #if AFTER LEGION
+									["coord"] = { 35.3, 40.2, SUNSTRIDER_ISLE },
+									-- #else
+									["coord"] = { 29.7, 19.4, EVERSONG_WOODS },
+									-- #endif
+								}),
+							},
 						}),
 						q(8346, {	-- Thirst Unending
 							["qg"] = 15297,	-- Arcanist Helion
