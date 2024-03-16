@@ -126,11 +126,51 @@ if app.GameBuildVersion > 90000 then
 	local customCollects, ccCheckbox = L.CUSTOM_COLLECTS_REASONS
 	local previousCheckbox = textAutomatedContentExplain
 	local xInitalOffset, yInitialOffset, inital = -2, -2, true
-	for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN", "NPE", "SL_SKIP"}) do
+	-- Insane loop
+	for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
 		local filterID = "CC:" .. cc
 		local reason = customCollects[cc]
 		local text = reason.icon.." "..reason.text
 		ccCheckbox = child:CreateCheckBox(app.Modules.Color.Colorize(text, app.Colors.Insane),
+		function(self)
+			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
+			self:SetChecked(automatic or settings:Get(filterID))
+			if automatic then
+				self:SetAlpha(0.6)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
+		end,
+		function(self)
+			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
+			-- prevent toggling automatic filter without requiring it to be disabled (TODO add this logic as part of the checkbox itself somehow instead of manually?)
+			if automatic then
+				self:SetChecked(true)
+				return
+			end
+			settings:Set(filterID, self:GetChecked())
+			settings:UpdateMode(1)
+		end)
+		ccCheckbox:SetATTTooltip(L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT:format(text))
+		if inital then
+			ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0)
+			ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset)
+			inital = nil
+		else
+			ccCheckbox:AlignBelow(previousCheckbox)
+		end
+		previousCheckbox = ccCheckbox
+	end
+
+	-- Non-insane loop
+	for i,cc in ipairs({"NPE", "SL_SKIP"}) do
+		local filterID = "CC:" .. cc
+		local reason = customCollects[cc]
+		local text = reason.icon.." "..reason.text
+		ccCheckbox = child:CreateCheckBox(app.Modules.Color.Colorize(text, app.Colors.Default),
 		function(self)
 			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
 				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
