@@ -51,13 +51,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["questID"] = 72836,
 				["isDaily"] = IGNORED_VALUE,
 			}),
-			n(193157, bubbleDownSelf({ ["timeline"] = { "removed 10.2.5" } }, {	-- Dragonhunter Gorund
+			n(193157, bubbleDownSelf({ ["timeline"] = { REMOVED_10_2_5 } }, {	-- Dragonhunter Gorund
 				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
 				["questID"] = 73873,
 				["g"] = {
 					i(200302),	-- Magmaforged Scimitar
 				},
-			}),
+			})),
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
 				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 7 },
 				["description"] = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
