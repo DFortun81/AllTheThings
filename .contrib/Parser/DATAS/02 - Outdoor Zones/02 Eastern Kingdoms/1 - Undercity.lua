@@ -2083,6 +2083,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 			}),
+			o(207324, {	-- Warchief's Command Board
+				["coords"] = {
+					{ 44.0, 35.4, UNDERCITY },
+					{ 66.5, 49.8, UNDERCITY },
+					{ 61.8, 75.6, UNDERCITY },
+				},
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
+				["races"] = HORDE_ONLY,
+			}),
 		},
 	}),
 }));

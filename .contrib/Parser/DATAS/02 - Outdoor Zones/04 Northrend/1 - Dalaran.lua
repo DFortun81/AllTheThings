@@ -4804,6 +4804,15 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 				}),
+				o(208317, {	-- Warchief's Command Board
+					["coords"] = {
+						{ 48.7, 39.6, NORTHREND_DALARAN },
+						{ 59.2, 27.4, NORTHREND_DALARAN },
+					},
+					["timeline"] = { "added 4.0.1" },
+					["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
+					["races"] = HORDE_ONLY,
+				}),
 			},
 		}),
 	})),

@@ -845,6 +845,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					}},
 				}),
 			}),
+			o(207325, {	-- Warchief's Command Board
+				["coord"] = { 62.5, 60.5, SILVERMOON_CITY },
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
+				["races"] = HORDE_ONLY,
+			}),
 		},
 	})),
 })));

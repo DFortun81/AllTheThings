@@ -5139,6 +5139,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #ENDIF
 			}),
+			o(206109, {	-- Warchief's Command Board
+				["provider"] = { "o", 206116 },	-- Warchief's Command Board
+				["coords"] = {
+					-- Locations for 206109
+					{ 49.8, 76.4, ORGRIMMAR },
+					{ 58.3, 45.7, ORGRIMMAR },
+					{ 45.6, 5.9, ORGRIMMAR },
+					-- Locations for 206116
+					{ 23.4, 94.2, ORGRIMMAR },
+					{ 59.0, 44.4, ORGRIMMAR },
+					{ 66.7, 49.5, ORGRIMMAR },
+				},
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
+				["races"] = HORDE_ONLY,
+			}),
 		},
 	}),
 }));

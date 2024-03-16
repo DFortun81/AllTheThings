@@ -3202,6 +3202,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			o(207279, {	-- Warchief's Command Board
+				["coords"] = {
+					{ 56.6, 47.0, HILLSBRAD_FOOTHILLS },
+					{ 59.9, 63.5, HILLSBRAD_FOOTHILLS },
+				},
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
+				["races"] = HORDE_ONLY,
+			}),
 			n(ZONE_DROPS, {
 				-- #if AFTER CATA
 				i(3711, {	-- Belamoore's Research Journal

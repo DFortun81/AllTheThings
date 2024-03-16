@@ -1353,6 +1353,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			o(207323, {	-- Warchief's Command Board
+				["coord"] = { 42.6, 57.4, THUNDER_BLUFF },
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
+				["races"] = HORDE_ONLY,
+			}),
 		},
 	}),
 }));
