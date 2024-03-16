@@ -457,9 +457,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 									-- #endif
 								}),
 								i(20474),	-- Sunstrider Book Satchel
-								-- #if AFTER LEGION
-								i(131235),	-- Sunspire Cinch
-								-- #endif
+								i(131235, {	-- Sunspire Cinch
+									["timeline"] = { "added 7.0.3" },
+								}),
 								i(20996),	-- Sunspire Cord
 								i(20995),	-- Well Watcher Gloves
 							},
@@ -511,9 +511,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 									-- #endif
 								}),
 								i(20474),	-- Sunstrider Book Satchel
-								-- #if AFTER LEGION
-								i(131235),	-- Sunspire Cinch
-								-- #endif
+								i(131235, {	-- Sunspire Cinch
+									["timeline"] = { "added 7.0.3" },
+								}),
 								i(20996),	-- Sunspire Cord
 								i(20995),	-- Well Watcher Gloves
 							},
@@ -623,9 +623,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								i(20999),	-- Green Chain Gauntlets
-								-- #if AFTER LEGION
-								i(131236),	-- Gleaming Chain Bindings
-								-- #endif
+								i(131236, {	-- Gleaming Chain Bindings
+									["timeline"] = { "added 7.0.3" },
+								}),
 								i(21001),	-- Striding Pants
 								i(21000),	-- Vigorous Bracers
 							},
@@ -658,9 +658,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								i(20994),	-- Green Chain Vest
 								i(20993),	-- Lynxskin Gloves
 								i(20992),	-- Sunrise Bracers
-								-- #if AFTER LEGION
-								i(131818),	-- Verdant Chain Gloves
-								-- #endif
+								i(131818, {	-- Verdant Chain Gloves
+									["timeline"] = { "added 7.0.3" },
+								}),
 							},
 						}),
 						q(8563, {	-- Warlock Training
@@ -980,9 +980,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8891, {	-- Abandoned Investigations
-					["provider"] = { "o", 181011 },	-- Magister Duskwither's Journal
+					["providers"] = {
+						{ "o", 181011 },	-- Magister Duskwither's Journal
+						{ "i",  21783 },	-- Magister Duskwither's Journal
+					},
 					["coord"] = { 69.2, 52.1, EVERSONG_WOODS },
-					["cost"] = { { "i", 21783, 1 } },	-- Magister Duskwither's Journal
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
@@ -1079,12 +1081,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8350, {	-- Completing the Delivery
-					["qg"] = 15301,	-- Outrunner Alarion
+					["providers"] = {
+						{ "n", 15301 },	-- Outrunner Alarion
+						{ "i", 20804 },	-- Erona's Package
+					},
 					["sourceQuest"] = 9705,	-- Package Recovery
 					["coord"] = { 40.4, 32.2, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20804, 1 },	-- Erona's Package
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
@@ -1096,7 +1098,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Tainted Soil Sample
-							["provider"] = { "i", 20771 },	-- Tainted Soil Sample
+							["providers"] = {
+								{ "i",  20771 },	-- Tainted Soil Sample
+								{ "o", 180921 },	-- Tainted Soil Sample
+							},
 						}),
 					},
 				}),
@@ -1121,15 +1126,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 					["groups"] = {
 						objective(1, {	-- First Power Source Deactivated
-							["provider"] = { "i", 24337 },	-- Deactivating Jewel
+							["providers"] = {
+								{ "i",  24337 },	-- Deactivating Jewel
+								{ "o", 180916 },	-- Duskwither Spire Power Source
+							},
 							["coord"] = { 69.0, 52.0, EVERSONG_WOODS },
 						}),
 						objective(2, {	-- Second Power Source Deactivated
-							["provider"] = { "i", 24337 },	-- Deactivating Jewel
+							["providers"] = {
+								{ "i",  24337 },	-- Deactivating Jewel
+								{ "o", 180919 },	-- Duskwither Spire Power Source
+							},
 							["coord"] = { 69.0, 52.0, EVERSONG_WOODS },
 						}),
 						objective(3, {	-- Third Power Source Deactivated
-							["provider"] = { "i", 24337 },	-- Deactivating Jewel
+							["providers"] = {
+								{ "i",  24337 },	-- Deactivating Jewel
+								{ "o", 180920 },	-- Duskwither Spire Power Source
+							},
 							["coord"] = { 69.6, 53.4, EVERSONG_WOODS },
 						}),
 					},
@@ -1150,30 +1164,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8895, {	-- Delivery to the North Sanctum
-					["qg"] = 15418,	-- Magister Jaronis
+					["providers"] = {
+						{ "n", 15418 },	-- Magister Jaronis
+						{ "i", 21807 },	-- Unmarked Letter
+					},
 					["sourceQuest"] = 8472,	-- Major Malfunction
 					["coord"] = { 47.2, 46.3, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21807, 1 },	-- Unmarked Letter
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(9148, {	-- Delivery to Tranquillien
-					["qg"] = 16183,	-- Courier Dawnstrider
+					["providers"] = {
+						{ "n", 16183 },	-- Courier Dawnstrider
+						{ "i", 22717 },	-- Letter from Silvermoon
+					},
 					["sourceQuest"] = 9147,	-- The Fallen Courier
 					["coord"] = { 48.9, 88.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22717, 1 },	-- Letter from Silvermoon
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						i(28148),	-- Bronze Plate Bracers
 						i(28146),	-- Courier's Wraps
-						-- #if AFTER LEGION
-						i(131243),	-- Tranquillien Ranger's Cuffs
-						-- #endif
+						i(131243, {	-- Tranquillien Ranger's Cuffs
+							["timeline"] = { "added 7.0.3" },
+						}),
 						i(28147),	-- Tranquillien Scout's Bracers
 						i(22571),	-- Courier's Bag
 					},
@@ -1228,21 +1242,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if AFTER WRATH
 				-- Before Wrath, this quest was in the Ghostlands and has a higher level requirement.
 				q(9133, {	-- Fly to Silvermoon City
-					["qg"] = 44036,	-- Skymaster Brightdawn
+					["providers"] = {
+						{ "n", 44036 },	-- Skymaster Brightdawn
+						{ "i", 22549 },	-- Sathiel's Request
+					},
 					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["coord"] = { 43.9, 69.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22549, 1 },	-- Sathiel's Request
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(9130, {	-- Goods from Silvermoon City
-					["qg"] = 16261,	-- Sathiel
-					["coord"] = { 43.6, 71.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22549, 1 },	-- Sathiel's Request
+					["providers"] = {
+						{ "n", 16261 },	-- Sathiel
+						{ "i", 22549 },	-- Sathiel's Request
 					},
+					["coord"] = { 43.6, 71.5, EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
@@ -1308,12 +1322,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Sin'dorei Armaments
-							["provider"] = { "i", 22413 },	-- Sin'dorei Armaments
+							["providers"] = {
+								{ "i",  22413 },	-- Sin'dorei Armaments
+								{ "o", 181107 },	-- Weapon Container
+							},
+							["coord"] = { 33.2, 70.3, EVERSONG_WOODS },
 						}),
 						i(22956),	-- Rusty Mace
-						-- #if AFTER LEGION
-						i(133696),	-- Rusty Sin'dorei Stiletto
-						-- #endif
+						i(133696, {	-- Rusty Sin'dorei Stiletto
+							["timeline"] = { "added 7.0.3" },
+						}),
 						i(22957),	-- Rusty Sin'dorei Sword
 					},
 				}),
@@ -1352,12 +1370,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(9705, {	-- Package Recovery
-					["qg"] = 17849,	-- Slain Outrunner
+					["providers"] = {
+						{ "n", 17849 },	-- Slain Outrunner
+						{ "i", 20804 },	-- Erona's Package
+					},
 					["sourceQuest"] = 9704,	-- Slain by the Wretched
 					["coord"] = { 42.0, 35.6, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20804, 1 },	-- Erona's Package
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
@@ -1377,9 +1395,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22953),	-- Fur Lined Chain Shirt
 						i(22952),	-- Springpaw Hide Cloak
 						i(22951),	-- Springpaw Hide Leggings
-						-- #if AFTER LEGION
-						i(131239),	-- Springpaw Padded Greaves
-						-- #endif
+						i(131239, {	-- Springpaw Padded Greaves
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(8490, {	-- Powering our Defenses
@@ -1392,7 +1410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- Runestone Energized
 							["provider"] = { "i", 22693 },	-- Infused Crystal
 							["coord"] = { 55.2, 84.2, EVERSONG_WOODS },
-							["cr"] = 16364,	-- Runestone Energized
+							["cr"] = 16364,	-- Infused Crystal
 						}),
 					},
 				}),
@@ -1421,36 +1439,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9255, {	-- Research Notes
-					["qg"] = 15402,	-- Apprentice Mirveda
+					["providers"] = {
+						{ "n", 15402 },	-- Apprentice Mirveda
+						{ "i", 22735 },	-- Research Notes
+					},
 					["sourceQuest"] = 8488,	-- Unexpected Results
 					["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22735, 1 },	-- Research Notes
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				-- #if BEFORE WRATH
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9135, {	-- Return to Quartermaster Lymel
-					["qg"] = 16192,	-- Skymistress Gloaming
+					["providers"] = {
+						{ "n", 16192 },	-- Skymistress Gloaming
+						{ "i", 22550 },	-- Quartermaster Lymel's Goods
+					},
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
 					["maps"] = { GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22550, 1 },	-- Quartermaster Lymel's Goods
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #else
 				q(9135, {	-- Return to Sathiel
-					["qg"] = 16192,	-- Skymistress Gloaming
+					["providers"] = {
+						{ "n", 16192 },	-- Skymistress Gloaming
+						{ "i", 22550 },	-- Sathiel's Goods
+					},
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22550, 1 },	-- Sathiel's Goods
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
@@ -1521,7 +1539,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
 						objective(1, {	-- Antheol's Elemental Grimoire
-							["provider"] = { "i", 22414 },	-- Antheol's Elemental Grimoire
+							["providers"] = {
+								{ "i",  22414 },	-- Antheol's Elemental Grimoire
+								{ "o", 181110 },	-- Soaked Tome
+							},
 							["coord"] = { 44.3, 62.0, EVERSONG_WOODS },
 						}),
 					},
@@ -1556,10 +1577,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9064, {	-- Taking the Fall
-					["qg"] = 15945,	-- Apprentice Meledor
+					["providers"] = {
+						{ "n", 15945 },	-- Apprentice Meledor
+						{ "i", 22414 },	-- Antheol's Elemental Grimoire
+					},
 					["sourceQuest"] = 9062,	-- Soaked Pages
 					["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
-					["cost"] = { { "i", 22414, 1 } },	-- Antheol's Elemental Grimoire
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
@@ -1575,9 +1598,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23375),	-- Black Leather Vest
 						i(23376),	-- Gatewatcher's Chain Gloves
 						i(23377),	-- Guard's Leggings
-						-- #if AFTER LEGION
-						i(131238),	-- Sentry's Chain Shirt
-						-- #endif
+						i(131238, {	-- Sentry's Chain Shirt
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(8483, {	-- The Dwarven Spy
@@ -1594,9 +1617,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(23372),	-- Bloodhawk Claymore
 						i(23373),	-- Long Knife
-						-- #if AFTER LEGION
-						i(133695),	-- Short Knife
-						-- #endif
+						i(133695, {	-- Short Knife
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9147, {	-- The Fallen Courier
@@ -1627,17 +1650,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16144,	-- Lord Saltheril
 					["sourceQuest"] = 9395,	-- Saltheril's Haven
 					["coord"] = { 38.1, 73.5, EVERSONG_WOODS },
+					["maps"] = { SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Suntouched Special Reserve
 							["provider"] = { "i", 22775 },	-- Suntouched Special Reserve
+							["coord"] = { 79.6, 59.6, SILVERMOON_CITY },
+							["cr"] = 16442,	-- Vinemaster Suntouched <Wine & Spirits Merchant>
 						}),
 						objective(2, {	-- 0/1 Springpaw Appetizers
 							["provider"] = { "i", 22776 },	-- Springpaw Appetizers
+							["coord"] = { 60.4, 62.5, EVERSONG_WOODS },
+							["cr"] = 16443,	-- Zalene Firstlight <Food & Drink>
 						}),
 						objective(3, {	-- 0/1 Bundle of Fireworks
 							["provider"] = { "i", 22777 },	-- Bundle of Fireworks
+							["coord"] = { 44.0, 70.3, EVERSONG_WOODS },
+							["cr"] = 16444,	-- Halis Dawnstrider <General Goods>
 						}),
 						i(23500),	-- Saltheril's Haven Party Invitation
 					},
@@ -1651,8 +1681,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Azure Phial
-							["provider"] = { "i", 23552 },	-- Filled Azure Phial
-							["cost"] = { { "i", 23566, 1 } },	-- Azure Phial
+							["providers"] = {
+								{ "i", 23552 },	-- Filled Azure Phial
+								{ "i", 23566 },	-- Azure Phial
+							},
 							["coord"] = { 64, 72, EVERSONG_WOODS },
 						}),
 					},
@@ -1671,9 +1703,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(23398),	-- Worn Ranger's Bow
 						i(23395),	-- Farstrider's Buckler
-						-- #if AFTER LEGION
-						i(133694),	-- Ranger's Notched Dirk
-						-- #endif
+						i(133694, {	-- Ranger's Notched Dirk
+							["timeline"] = { "added 7.0.3" },
+						}),
 						i(23397),	-- Satin Lined Gloves
 						i(23396),	-- Slightly Used Ranger's Blade
 					},
@@ -1763,9 +1795,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23265),	-- Blackened Chain Girdle
 						i(23266),	-- Ranger's Vest
 						i(23267),	-- Satin Lined Boots
-						-- #if AFTER LEGION
-						i(131252),	-- Ranger's Chainmail
-						-- #endif
+						i(131252, {	-- Ranger's Chainmail
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9394, {	-- Where's Wyllithen?
@@ -1776,10 +1808,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(10166, {	-- Whitebark's Memory
-					["qg"] = 15398,	-- Larianna Riverwind
+					["providers"] = {
+						{ "n", 15398 },	-- Larianna Riverwind
+						{ "i", 28209 },	-- Old Whitebark's Pendant
+					},
 					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
 					["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
-					["cost"] = { { "i", 28209, 1 } },	-- Old Whitebark's Pendant
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
@@ -1806,9 +1840,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 16294,	--Aldaron the Reckless
 						}),
 						i(22965),	-- Longshoreman's Bindings
-						-- #if AFTER LEGION
-						i(131240),	-- Longshoreman's Bracers
-						-- #endif
+						i(131240, {	-- Longshoreman's Bracers
+							["timeline"] = { "added 7.0.3" },
+						}),
 						i(22966),	-- Silk Wristbands
 						i(22964),	-- Sunsail Bracers
 					},
@@ -1861,13 +1895,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["groups"] = ENCHANTING_VENDOR_GROUPS,
 				}),
-				n(16444, {	-- Halis Dawnstrider <General Goods>
-					["coord"] = { 44.0, 70.3, EVERSONG_WOODS },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(22777),	-- Bundle of Fireworks
-					},
-				}),
 				n(16860, {	-- Jilanne
 					["coord"] = { 44.8, 71.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
@@ -1907,13 +1934,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28936),	-- Swift Pink Hawkstrider (MOUNT!)
 						i(29223),	-- Swift Green Hawkstrider (MOUNT!)
 						i(29224),	-- Swift Purple Hawkstrider (MOUNT!)
-					},
-				}),
-				n(16443, {	-- Zalene Firstlight <Food & Drink>
-					["coord"] = { 60.4, 62.5, EVERSONG_WOODS },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(22776),	-- Springpaw Appetizers
 					},
 				}),
 			}),

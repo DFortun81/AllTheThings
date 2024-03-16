@@ -701,13 +701,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(8093),	-- Platemail Leggings
 					},
 				}),
-				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
-					["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(22775),	-- Suntouched Special Reserve
-					},
-				}),
 				n(16637, {	-- Welethelon
 					["coord"] = { 56.2, 60.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
