@@ -50,12 +50,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(REWARDS, {
 				i(200073, {	-- Valdrakken Treasures
 					["sym"] = {
+						{"select", "itemID",
+							201458,	-- Aegis of Tyrhold
+							201460,	-- Gavel of Tyrhold
+							201055,	-- Tyrhold Bindings
+							201455,	-- Tyrhold Broadsword
+							201456,	-- Tyrhold Carbine
+							201054,	-- Tyrhold Drape
+							201048,	-- Tyrhold Epaulets
+							201053,	-- Tyrhold Gloves
+							201050,	-- Tyrhold Leggings
+							201461,	-- Tyrhold Pinnacle
+							201457,	-- Tyrhold Relic
+							201049,	-- Tyrhold Robe
+							201056,	-- Tyrhold Sash
+							201459,	-- Tyrhold Shortsword
+							201051,	-- Tyrhold Slippers
+							201052,	-- Tyrhold Visage
+						},
 						{"select", "mapID",
 							DRAGON_ISLES,
 						--	THE_WAKING_SHORES,	-- Does not Reward Citadel Crusher/Obsidian Cosmetic Items 	March 2024
 						--	OHNAHRAN_PLAINS,	-- Does not Reward Nokhud Cosmetic Items					March 2024
 						--	THE_AZURE_SPAN,		-- Does not Reward Brackenhide Cosmetic Items				March 2024
-							THALDRASZUS,
+						--	THALDRASZUS,		-- Does Reward Tyrhold Cosmetic Items, manually added above.March 2024
 						},
 						{"find", "headerID", ZONE_REWARDS},
 						{"pop"},
