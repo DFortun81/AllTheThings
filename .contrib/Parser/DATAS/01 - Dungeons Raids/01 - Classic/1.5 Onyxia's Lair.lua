@@ -287,9 +287,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7497, {	-- The Journey Has Just Begun (A)
-					--#if BEFORE 8.0.1
+					-- #if BEFORE 8.0.1
 					["description"] = "This quest requires skill level 300 in Leatherworking.",
-					--#if AFTER 8.0.1
+					-- #elseif AFTER 8.0.1
 					["description"] = "This quest requires skill level 300 in Classic Leatherworking.",
 					-- #endif
 					["qg"] = 14394,	-- Major Mattingly
@@ -313,9 +313,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7493, {	-- The Journey Has Just Begun (H)
-					--#if BEFORE 8.0.1
+					-- #if BEFORE 8.0.1
 					["description"] = "This quest requires skill level 300 in Leatherworking.",
-					--#if AFTER 8.0.1
+					-- #elseif AFTER 8.0.1
 					["description"] = "This quest requires skill level 300 in Classic Leatherworking.",
 					-- #endif
 					["qg"] = 14392,		-- Overlord Runthak / Overlord Natoj
