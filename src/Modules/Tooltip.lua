@@ -79,7 +79,7 @@ if app.IsRetail then
 								end
 							end
 						else
-							app.PrintDebug("unmapped object assumed",objectID,app:SearchLink(searchResult))
+							-- app.PrintDebug("unmapped object assumed",objectID,app:SearchLink(searchResult))
 							unmappedObject = objectID
 						end
 					end
