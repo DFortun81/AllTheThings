@@ -68,6 +68,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						-- Citizens of Tranquillien
+						9315,	-- Anok'suten (verify)
+						9171,	-- Culinary Crunch
+						9169,	-- Deactivate An'owyn
+						9155,	-- Down the Dead Scar
+						9216,	-- Rotting Hearts
+						9150,	-- Salvaging the Past
+						9218,	-- Spinal Dust
+						9149,	-- The Plagued Coast
+						9152,	-- Tomber's Supplies
+						9173,	-- Retaking Windrunner Spire
+						9192,	-- Trouble at the Underlight Mines
+						9156,	-- WANTED: Knucklerot and Luzran (Is this really needed? WANTED quests are generally optional)
+						
+						-- Farstrider Enclave
+						9275,	-- A Little Dash of Seasoning
+						9277,	-- Assault on Zeb'Nowa
+						9215,	-- Bring Me Kel'gash's Head!
+						9159,	-- Curbing the Plague (verify. The pre-req quest is always available, so this one may not be required)
+						9193,	-- Investigate the Amani Catacombs
+						9214,	-- Shadowpine Weaponry
+						9274,	-- Spirits of the Drowned
+						9199,	-- Troll Juju
+						9174,	-- Vanquishing Aquantion
+						
+						-- Dar'Khan Drathir
+						9164,	-- Captives at Deatholme
+						9170,	-- Dar'Khan's Lieutenants
+						9167,	-- The Traitor's Destruction
+						9220,	-- War on Deatholme
+					},
 					-- #endif
 					-- #ENDIF
 				}),
@@ -133,15 +166,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- Poison the Raw Meat Rack
-							["provider"] = { "i", 22796 },	-- Apothecary's Poison
+							["providers"] = {
+								{ "o", 181250 },	-- Raw Meat Rack
+								{ "i",  22796 },	-- Apothecary's Poison
+							},
 							["coord"] = { 65.1, 66.8, GHOSTLANDS },
 						}),
 						objective(2, {	-- Poison the Smoked Meat Rack
-							["provider"] = { "i", 22796 },	-- Apothecary's Poison
+							["providers"] = {
+								{ "o", 181251 },	-- Smoked Meat Rack
+								{ "i",  22796 },	-- Apothecary's Poison
+							},
 							["coord"] = { 63.0, 75.0, GHOSTLANDS },
 						}),
 						objective(3, {	-- Poison the Fresh Fish Rack
-							["provider"] = { "i", 22796 },	-- Apothecary's Poison
+							["providers"] = {
+								{ "o", 181252 },	-- Fresh Fish Rack
+								{ "i",  22796 },	-- Apothecary's Poison
+							},
 							["coord"] = { 68.2, 57.8, GHOSTLANDS },
 						}),
 					},
@@ -161,9 +203,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(24339),	-- Stung
 						i(24340),	-- Vandril's Hand Me Down Pants
 						i(28149),	-- Tranquillien Breeches
-						-- #if AFTER LEGION
-						i(131251)	-- Mix-Match Linked Pants
-						-- #endif
+						i(131251, {	-- Mix-Match Linked Pants
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9487, {	-- Arcane Reavers
@@ -225,9 +267,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23406),	-- Sentry Bracers
 						i(23407),	-- Supple Cotton Bracers
 						i(23408),	-- Farstrider Bracers
-						-- #if AFTER LEGION
-						i(131249),	-- Farstrider Cuffs
-						-- #endif
+						i(131249, {	-- Farstrider Cuffs
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9276, {	-- Attack on Zeb'Tela
@@ -365,9 +407,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28141),	-- Ranger's Sash
 						i(28142),	-- Farstrider's Belt
 						i(28143),	-- Rusted Plate Girdle
-						-- #if AFTER LEGION
-						i(131244),	-- Farstrider's Chain
-						-- #endif
+						i(131244, {	-- Farstrider's Chain
+							["timeline"] = { "added 7.0.3" },
+						}),
 						i(23415)	-- Survival Knife
 					},
 				}),
@@ -403,12 +445,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22996),	-- Reforged Quel'dorei Crest
 						i(22997),	-- Ley-Keeper's Wand
 						i(22998),	-- Ghostclaw Leggings
-						-- #if AFTER LEGION
-						i(131245),	-- Scourge Lieutenant Breeches
-						i(156942, {	-- Spiky Legbone [This one was added in 7.3.5.]
+						i(131245, {	-- Scourge Lieutenant Breeches
+							["timeline"] = { "added 7.0.3" },
+						}),
+						i(156942, {	-- Spiky Legbone
 							["timeline"] = { "added 7.3.5" },
 						}),
-						-- #endif
 					},
 				}),
 				q(9169, {	-- Deactivate An'owyn
@@ -478,9 +520,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23412),	-- Troll Kickers (Plate)
 						i(23413),	-- Troll Kickers (Cloth)
 						i(23414),	-- Troll Kickers (Leather)
-						-- #if AFTER LEGION
-						i(131248),	-- Troll Kickers (Mail)
-						-- #endif
+						i(131248, {	-- Troll Kickers (Mail)
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9532, {	-- Find Keltus Darkleaf
@@ -512,12 +554,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Wavefront Medallion
-							["provider"] = { "i", 22674 },	-- Wavefront Medallion
+							["providers"] = {
+								{ "i", 22674 },	-- Wavefront Medallion
+								{ "o", 181151 },	-- Glistening Mud
+							},
+							["coord"] = { 71.6, 22.3, GHOSTLANDS },
 						}),
 					},
 				}),
 				q(9811, {	-- Friend of the Sin'dorei [Non-Blood Elf Only]
-					["qg"] = 16239,	-- Magister Kaendris
 					["providers"] = {
 						{ "n", 16239 },	-- Magister Kaendris
 						{ "i", 22653 },	-- Dar'Khan's Head
@@ -629,18 +674,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- Night Elf Plans: An'daroth
-							["provider"] = { "i", 22590 },	-- Night Elf Plans: An'daroth
+							["providers"] = {
+								{ "i",  22590 },	-- Night Elf Plans: An'daroth
+								{ "o", 181138 },	-- Night Elf Plans: An'daroth
+							},
 							["coords"] = {
 								{ 12.4, 26.4, GHOSTLANDS },
 								{ 13.8, 26.7, GHOSTLANDS },
 							},
 						}),
 						objective(2, {	-- Night Elf Plans: An'owyn
-							["provider"] = { "i", 22591 },	-- Night Elf Plans: An'owyn
+							["providers"] = {
+								{ "i",  22591 },	-- Night Elf Plans: An'owyn
+								{ "o", 181139 },	-- Night Elf Plans: An'owyn
+							},
 							["coord"] = { 12.4, 24.9, GHOSTLANDS },
 						}),
 						objective(3, {	-- Night Elf Plans: Scrying on the Sin'dorei
-							["provider"] = { "i", 22592 },	-- Night Elf Plans: Scrying on the Sin'dorei
+							["providers"] = {
+								{ "i",  22592 },	-- Night Elf Plans: Scrying on the Sin'dorei
+								{ "o", 181140 },	-- Night Elf Plans: Scrying on the Sin'dorei
+							},
 							["coord"] = { 10.4, 22.4, GHOSTLANDS },
 						}),
 					},
@@ -659,9 +713,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
-						objective(1, {	-- Investigate the Amani Catacombs [Burn Mummified Troll Remains]
-							["provider"] = { "i", 22755 },	-- Blazing Torch
+						objective(1, {	-- 0/10 Mummified Troll Remains Burned
+							["providers"] = {
+								{ "o", 181148 },	-- Mummified Troll Remains
+								{ "i",  22755 },	-- Blazing Torch
+							},
 							["coord"] = { 60.0, 27.6, GHOSTLANDS },
+						}),
+						objective(2, {	-- Investigate the Amani Catacombs
+							["provider"] = { "i",  22755 },	-- Blazing Torch
+							["coord"] = { 62.9, 31, GHOSTLANDS },
 						}),
 					},
 				}),
@@ -741,9 +802,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23405),	-- Farstrider's Tunic
 						i(28144),	-- Troll Handler Gloves
 						i(28153),	-- Farstrider's Shield
-						-- #if AFTER LEGION
-						i(131242),	-- Farstrider's Chainmail
-						-- #endif
+						i(131242, {	-- Farstrider's Chainmail
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9172, {	-- Report to Magister Kaendris
@@ -759,9 +820,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28154),	-- Red Silk Trousers
 						i(28157),	-- Black Leather Jerkin
 						i(28161),	-- Tranquillien	Plate Leggings
-						-- #if AFTER LEGION
-						i(131246),	-- Dark Chain Shirt
-						-- #endif
+						i(131246, {	-- Dark Chain Shirt
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9173, {	-- Retaking Windrunner Spire
@@ -773,9 +834,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Deatholme Acolyte slain
 							["provider"] = { "n", 16315 },	-- Deatholme Acolyte
+							["coord"] = { 13, 54.6, GHOSTLANDS },
 						}),
 						objective(2, {	-- 0/10 Fallen Ranger slain
 							["provider"] = { "n", 16314 },	-- Fallen Ranger
+							["coord"] = { 16.2, 57.4, GHOSTLANDS },
 						}),
 					},
 				}),
@@ -830,6 +893,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Crystallized Mana Essence
 							["provider"] = { "i", 22580 },	-- Crystallized Mana Essence
+							["coord"] = { 34.4, 31.6, GHOSTLANDS },
 							["crs"] = {
 								16304,	-- Arcane Devourer
 								16310,	-- Mana Shifter
@@ -899,6 +963,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Nerubis Guard slain
 							["provider"] = { "n", 16313 },	-- Nerubis Guard
+							["coord"] = { 60.6, 13.6, GHOSTLANDS },
 						}),
 					},
 				}),
@@ -945,6 +1010,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Plagued Murloc Spine
 							["provider"] = { "i", 22579 },	-- Plagued Murloc Spine
+							["coord"] = { 17.4, 33.2, GHOSTLANDS },
 							["crs"] = {
 								16403,	-- Withered Grimscale
 								16402,	-- Zombified Grimscale
@@ -1008,11 +1074,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22982),	-- Farstrider's Longbow
 						i(22984),	-- Dawnblade
 						i(22995),	-- Sindorei Warblade
-						-- #if AFTER LEGION
 						i(156941, {	-- Staff of Radiance
-							["timeline"] = { "added 7.3.5.25692" },	-- TODO: This might actually be BFA. Investigate this later.
+							["timeline"] = { "added 7.3.5.25692" },
 						}),
-						-- #endif
 					},
 				}),
 				q(9161, {	-- The Traitor's Shadow
@@ -1030,11 +1094,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- Stone of Flame
-							["provider"] = { "i", 22599 },	-- Stone of Flame
+							["providers"] = {
+								{ "i",  22599 },	-- Stone of Flame
+								{ "o", 181239 },	-- Worn Chest
+							},
 							["coord"] = { 40.4, 49.8, GHOSTLANDS },
 						}),
 						objective(2, {	-- Stone of Light
-							["provider"] = { "i", 22598 },	-- Stone of Light
+							["providers"] = {
+								{ "i",  22598 },	-- Stone of Light
+								{ "o", 181238 },	-- Dented Chest
+							},
 							["coord"] = { 34.3, 47.7, GHOSTLANDS },
 						}),
 						i(22783),	-- Sunwell Blade
@@ -1058,7 +1128,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- Rathis Tomber's Supplies
-							["provider"] = { "i", 22583 },	-- Rathis Tomber's Supplies
+							["providers"] = {
+								{ "i",  22583 },	-- Rathis Tomber's Supplies
+								{ "o", 181133 },	-- Rathis Tomber's Supplies
+							},
 							["coord"] = { 33.6, 26.6, GHOSTLANDS },
 						}),
 					},
@@ -1079,6 +1152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Troll Juju
 							["provider"] = { "i", 22633 },	-- Troll Juju
+							["coord"] = { 57.6, 26.2, GHOSTLANDS },
 							["crs"] = {
 								16342,	-- Mummified Headhunter
 								16343,	-- Shadowpine Oracle
@@ -1087,9 +1161,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28156),	-- Rotting Handwraps
 						i(28159),	-- Undertaker's Gloves
 						i(28163),	-- Maltendis' Handguards
-						-- #if AFTER LEGION
-						i(131247)	-- Gravedigger's Grips
-						-- #endif
+						i(131247, {	-- Gravedigger's Grips
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				q(9192, {	-- Trouble at the Underlight Mines
@@ -1135,7 +1209,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- Aquantion slain
-							["provider"] = { "i", 22675 },	-- Bundle of Medallions
+							["providers"] = {
+								{ "i",  22675 },	-- Bundle of Medallions
+								{ "o", 181157 },	-- Altar of Tidal Mastery
+							},
 							["coord"] = { 71.3, 14.9, GHOSTLANDS },
 							["cr"] = 16292,	-- Aquantion
 						}),
@@ -1208,9 +1285,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28151),	-- Arcanist's Wand
 						i(23403),	-- Salvaged Plate Leggings
 						i(23404),	-- Padded Running Shoes
-						-- #if AFTER LEGION
-						i(131241),	-- Relinked Chain Boots
-						-- #endif
+						i(131241, {	-- Relinked Chain Boots
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 			}),
@@ -1288,12 +1365,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22987, {	-- Deathstalker's Vest
 							["minReputation"] = { 922, REVERED },	-- Tranquillien, Revered.
 						}),
-						-- #if AFTER LEGION
 						i(132572, {	-- Deathstalker's Hauberk
 							["minReputation"] = { 922, REVERED },	-- Tranquillien, Revered.
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						-- #endif
 						i(22985, {	-- Suncrown Breastplate
 							["minReputation"] = { 922, REVERED },	-- Tranquillien, Revered.
 						}),
@@ -1306,12 +1381,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28162, {	-- Tranquillien Defender's Girdle
 							["minReputation"] = { 922, HONORED },	-- Tranquillien, Honored.
 						}),
-						-- #if AFTER LEGION
 						i(132573, {	-- Tranquillen Pathfinder's Cinch
 							["minReputation"] = { 922, HONORED },	-- Tranquillien, Honored.
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						-- #endif
 						i(28164, {	-- Tranquillien Flamberge
 							["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
 						}),
@@ -1324,12 +1397,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22993, {	-- Volunteer's Greaves
 							["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
 						}),
-						-- #if AFTER LEGION
 						i(132571, {	-- Woodrunner's Footpads
 							["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						-- #endif
 					},
 				}),
 				n(16224, {	-- Rathis Tomber <Trade Supplies>
