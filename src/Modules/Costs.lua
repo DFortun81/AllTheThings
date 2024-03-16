@@ -10,8 +10,8 @@ local rawget, ipairs, pairs, type
 	= rawget, ipairs, pairs, type
 
 -- App locals
-local SearchForFieldContainer, ArrayAppend, GetRawField, GetRelativeByFunc
-	= app.SearchForFieldContainer, app.ArrayAppend, app.GetRawField, app.GetRelativeByFunc
+local SearchForFieldContainer, ArrayAppend, GetRawField, GetRelativeByFunc, SearchForObject
+	= app.SearchForFieldContainer, app.ArrayAppend, app.GetRawField, app.GetRelativeByFunc, app.SearchForObject
 local OneTimeQuests = app.EmptyTable
 
 -- Module locals
@@ -129,7 +129,7 @@ local function SetCostTotals(costs, isCost, refresh)
 	end
 end
 local function UpdateCostsByItemID(itemID, refresh, refs)
-	local costs = GetRawField("itemID", itemID);
+	local costs = SearchForObject("itemID", itemID, "field", true);
 	if costs then
 		local isCost
 		refs = refs or GetRawField("itemIDAsCost", itemID)
@@ -149,7 +149,7 @@ local function UpdateCostsByItemID(itemID, refresh, refs)
 	return costs;
 end
 local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
-	local costs = GetRawField("currencyID", currencyID);
+	local costs = SearchForObject("currencyID", currencyID, "field", true);
 	if costs then
 		local isCost
 		refs = refs or GetRawField("currencyIDAsCost", currencyID)
