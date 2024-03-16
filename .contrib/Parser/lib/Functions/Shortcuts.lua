@@ -929,6 +929,33 @@ end
 mi = function(id, t)									-- Create a MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
+molemachine = function(questID, name, t)				-- Create a MOLE MACHINE Quest Object
+	if questID then
+		t = struct("questID", questID, t);
+		if not t.provider then
+			t.provider = { "n", 143925 };	-- Dark Iron Mole Machine
+		end
+	else
+		t = struct("npcID", 143925, t);	-- Dark Iron Mole Machine
+	end
+	if not t.icon then
+		t.icon = "Interface\\Icons\\ability_racial_molemachine";
+	end
+	if not t.timeline then
+		t.timeline = { "added 8.0.1.27326" };
+	end
+	-- TODO: Do we really need the location as a description if its in each zone?
+	-- CRIEVE NOTE: Perhaps make an areaID-based class that can do header things?
+	-- CRIEVE NOTE2: ... Hell yeah, when I get time I'm converting those names to areaID!
+	if name then
+		t.name = name;
+		t.description = name;
+	end
+	if not t.races then
+		t.races = { DARKIRON };
+	end
+	return t;
+end
 mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
 	return struct("mountID", id, t);
 end

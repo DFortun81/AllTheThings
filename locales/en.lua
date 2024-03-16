@@ -750,8 +750,6 @@ for key, value in pairs({
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Misc
 		[-493] = "Interface\\Icons\\Inv_icon_mission_complete_order",						-- Temporary Header WoD Mission Loot
-	-- Mole Machine
-		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
@@ -931,8 +929,6 @@ for key, value in pairs({
 		[-488] = "War Chest",													-- Daily War Chest
 	-- Misc
 		[-493] = "Garrison Mission Loot",										-- Header for WoD Mission Loot
-	-- Mole Machine
-		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-543] = "Legion Invasions",											-- Legion Invasions
