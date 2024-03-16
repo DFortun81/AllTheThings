@@ -1390,6 +1390,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 72.1, 45.7, NORTHREND_DALARAN },
 					}),
 				}),
+				o(208316, {	-- Hero's Call Board
+					["coords"] = {
+						{ 25.9, 43.1, NORTHREND_DALARAN },
+						{ 47.8, 41.2, NORTHREND_DALARAN },
+						{ 37.8, 63.8, NORTHREND_DALARAN },
+					},
+					["timeline"] = { "added 4.0.1" },
+					["sym"] = HEROS_CALL_BOARD_SYMLINK,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						n(28703, {	-- Linzy Blackbolt <Alchemy Trainer>

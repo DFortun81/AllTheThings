@@ -81,6 +81,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			o(207320, {	-- Hero's Call Board
+				["coords"] = {
+					{ 26.5, 70.2, IRONFORGE },
+					{ 62.4, 30.5, IRONFORGE },
+				},
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = HEROS_CALL_BOARD_SYMLINK,
+				["races"] = ALLIANCE_ONLY,
+			}),
 			n(PROFESSIONS, {
 				prof(BLACKSMITHING, {
 					n(4258, {	-- Bengus Deepforge <Artisan Blacksmith>

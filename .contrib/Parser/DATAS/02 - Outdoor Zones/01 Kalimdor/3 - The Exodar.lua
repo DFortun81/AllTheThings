@@ -45,6 +45,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			o(207322, {	-- Hero's Call Board
+				["coord"] = { 55.5, 47.9, THE_EXODAR },
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = HEROS_CALL_BOARD_SYMLINK,
+				["races"] = ALLIANCE_ONLY,
+			}),
 			n(QUESTS, {
 				q(10356, {	-- A Donation of Mageweave
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>

@@ -719,8 +719,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Livin' the Life!
 							["provider"] = { "i", 57761 },	-- Two-Shoed Lou's Old House
-							["coord"] = { 63.9, 26.2, 54 },	-- Jangolode Mine
-							--["coord"] = { 46.5, 19.3, WESTFALL },
+							--["coord"] = { 63.9, 26.2, 54 },	-- Jangolode Mine
+							["coord"] = { 46.5, 19.3, WESTFALL },
 						}),
 					},
 				}),
@@ -1430,7 +1430,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Okra
-							["provider"] = { "i", 57911 },	-- Okra
+							["providers"] = {
+								{ "i", 57911 },	-- Okra
+								{ "o", 203982 },	-- Okra
+							},
 							["coord"] = { 54.6, 33.6, WESTFALL },
 							["cr"] = 114,	-- Harvest Watcher
 						}),

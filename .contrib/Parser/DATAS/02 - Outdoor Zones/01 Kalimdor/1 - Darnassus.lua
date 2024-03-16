@@ -93,6 +93,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			o(207321, {	-- Hero's Call Board
+				["coords"] = {
+					{ 29.6, 48.4, DARNASSUS },
+					{ 39.6, 11.6, DARNASSUS },
+					{ 45.0, 50.5, DARNASSUS },
+				},
+				["timeline"] = { "added 4.0.1" },
+				["sym"] = HEROS_CALL_BOARD_SYMLINK,
+				["races"] = ALLIANCE_ONLY,
+			}),
 			n(QUESTS, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker

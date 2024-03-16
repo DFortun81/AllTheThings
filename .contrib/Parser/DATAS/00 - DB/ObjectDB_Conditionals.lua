@@ -165,3 +165,48 @@ ObjectDB[176213].text.es = "Sangre de Héroes";	-- Blood of Heroes
 ObjectDB[182947].icon = "Interface/Icons/inv_misc_book_06";	-- The Codex of Blood
 -- #endif
 -- #endif
+
+-- Hero's Call Board
+for i,objectID in pairs({
+	206111,
+	206294,
+	207320,
+	207321,
+	207322,
+	208316,
+	250720,
+	250804,
+	278574,
+	278575,
+	281339,
+}) do
+	-- #if AFTER 7.3.5
+	ObjectDB[objectID].icon = "Interface/Icons/tracking_warboard";
+	-- #elseif AFTER 5.4.2
+	ObjectDB[objectID].icon = "Interface/Icons/Achievement_general_allianceslayer";
+	-- #else
+	ObjectDB[objectID].icon = "Interface/Icons/Inv_misc_note_02";
+	-- #endif
+end
+
+-- Warchief's Command Board
+for i,objectID in pairs({
+	206109,
+	206116,
+	207279,
+	207323,
+	207324,
+	207325,
+	208317,
+	278347,
+	278457,
+	281340,
+}) do
+	-- #if AFTER 7.3.5
+	ObjectDB[objectID].icon = "Interface/Icons/tracking_warboard";
+	-- #elseif AFTER 5.4.2
+	ObjectDB[objectID].icon = "Interface/Icons/Achievement_General_HordeSlayer";
+	-- #else
+	ObjectDB[objectID].icon = "Interface/Icons/Inv_misc_note_02";
+	-- #endif
+end
