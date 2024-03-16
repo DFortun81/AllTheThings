@@ -771,31 +771,46 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["type"] = HEADERS.Object..":409012",
 						["provider"] = { "o", 409012 },	-- Auction House Bill of Sale
 						["coord"] = { 44.1, 60.3, VALDRAKKEN },
-						["lockCriteria"] = { 1, "questID", 77934 },	-- A Complete Inventory
+						["lockCriteria"] = { 1, 
+							"questID", 77934,	-- A Complete Inventory
+							"questID", 77953,	-- A Sphere in Danger
+						},	
 					}),
 					q(78054, {	-- Clicking on 'Void Storage Receipt' during day 12
 						["type"] = HEADERS.Object..":409016",
 						["provider"] = { "o", 409016 },	-- Void Storage Receipt
 						["coord"] = { 73.9, 57.4, VALDRAKKEN },
-						["lockCriteria"] = { 1, "questID", 77934 },	-- A Complete Inventory
+						["lockCriteria"] = { 1, 
+							"questID", 77934,	-- A Complete Inventory
+							"questID", 77953,	-- A Sphere in Danger
+						},	
 					}),
 					q(78055, {	-- Clicking on 'Garden Supply Receipt' during day 12
 						["type"] = HEADERS.Object..":409017",
 						["provider"] = { "o", 409017 },	-- Garden Supply Receipt
 						["coord"] = { 53.0, 28.4, VALDRAKKEN },
-						["lockCriteria"] = { 1, "questID", 77934 },	-- A Complete Inventory
+						["lockCriteria"] = { 1, 
+							"questID", 77934,	-- A Complete Inventory
+							"questID", 77953,	-- A Sphere in Danger
+						},	
 					}),
 					q(78056, {	-- Clicking on 'Researcher's Note' during day 12
 						["type"] = HEADERS.Object..":409018",
 						["provider"] = { "o", 409018 },	-- Researcher's Note
 						["coord"] = { 37.6, 37.1, VALDRAKKEN },
-						["lockCriteria"] = { 1, "questID", 77934 },	-- A Complete Inventory
+						["lockCriteria"] = { 1, 
+							"questID", 77934,	-- A Complete Inventory
+							"questID", 77953,	-- A Sphere in Danger
+						},	
 					}),
 					q(78057, {	-- Clicking on 'Hastily Scrawled Note' during day 12
 						["type"] = HEADERS.Object..":409019",
 						["provider"] = { "o", 409019 },	-- Hastily Scrawled Note
 						["coord"] = { 31.6, 70.2, VALDRAKKEN },
-						["lockCriteria"] = { 1, "questID", 77934 },	-- A Complete Inventory
+						["lockCriteria"] = { 1, 
+							"questID", 77934,	-- A Complete Inventory
+							"questID", 77953,	-- A Sphere in Danger
+						},	
 					}),
 					q(78058, {	-- Clicking on 'Note to Kritha' during day 12 (automatically accepted 'A Complete Inventory' (questID 77934)) / not for me!
 						["type"] = HEADERS.Object..":409020",
