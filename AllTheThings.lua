@@ -2570,9 +2570,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				then
 					text = app.GenerateSourcePathForTooltip(parent);
 					if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-						for source,replacement in pairs(abbrevs) do
-							text = text:gsub(source, replacement);
-						end
 						-- doesn't meet current unobtainable filters
 						if not FilterUnobtainable(parent) then
 							tinsert(unfiltered, { text, UnobtainableTexture });
@@ -2615,6 +2612,9 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
 				end
 				for _,text in ipairs(listing) do
+					for source,replacement in pairs(abbrevs) do
+						text = text:gsub(source, replacement);
+					end
 					if not working and IsRetrieving(text) then working = true; end
 					local left, right = DESCRIPTION_SEPARATOR:split(text);
 					tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
