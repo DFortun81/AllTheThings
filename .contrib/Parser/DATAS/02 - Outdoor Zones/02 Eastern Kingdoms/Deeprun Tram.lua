@@ -26,12 +26,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6662, {	-- Me Brother, Nipsy
-					["qg"] = 12997,	-- Monty
+					["providers"] = {
+						{ "n", 12997 },	-- Monty
+						{ "i", 17118 },	-- Carton of Mystery Meat
+					},
 					["sourceQuest"] = 6661, -- Deeprun Rat Roundup
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 17118, 1 },	-- Carton of Mystery Meat
-					},
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						i(17119),	-- Deeprun Rat Kabob
