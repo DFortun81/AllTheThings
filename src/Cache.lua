@@ -587,6 +587,15 @@ if app.IsRetail then
 	fieldConverters.r = nil
 	fieldConverters.races = nil
 
+	-- Retail doesn't need to double cache the object attached to currencies/items because it uses the cost
+	-- caches for the same information
+	providerTypeConverters.c = function(group, providerID)
+		CacheField(group, "currencyIDAsCost", providerID);
+	end
+	providerTypeConverters.i = function(group, providerID)
+		CacheField(group, "itemIDAsCost", providerID);
+	end
+
 	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
 	_CacheFields = function(group)
 		local mapKeys
