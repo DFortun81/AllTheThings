@@ -56,6 +56,73 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(198626),	-- Dislodged Dragoneye
 				},
 			}),
+			o(376580, {	-- Djaradin Cache
+				["coords"] = {
+					{ 24.2, 69.4, THE_WAKING_SHORES },
+					{ 24.3, 69.5, THE_WAKING_SHORES },
+					{ 24.6, 69.6, THE_WAKING_SHORES },
+					{ 25.2, 74.1, THE_WAKING_SHORES },
+					{ 25.8, 73.7, THE_WAKING_SHORES },
+					{ 27.2, 72.0, THE_WAKING_SHORES },
+					{ 27.6, 59.2, THE_WAKING_SHORES },
+					{ 28.3, 57.9, THE_WAKING_SHORES },
+					{ 28.3, 68.2, THE_WAKING_SHORES },
+					{ 28.9, 60.4, THE_WAKING_SHORES },
+					{ 29.4, 72.3, THE_WAKING_SHORES },
+					{ 29.5, 72.3, THE_WAKING_SHORES },
+					{ 30.1, 58.7, THE_WAKING_SHORES },
+					{ 30.8, 70.8, THE_WAKING_SHORES },
+					{ 32.3, 65.4, THE_WAKING_SHORES },
+					{ 32.3, 65.5, THE_WAKING_SHORES },
+					{ 34.3, 62.4, THE_WAKING_SHORES },
+					{ 34.4, 62.5, THE_WAKING_SHORES },
+					{ 34.4, 66.4, THE_WAKING_SHORES },
+					{ 34.4, 66.5, THE_WAKING_SHORES },
+					{ 34.5, 66.4, THE_WAKING_SHORES },
+					{ 34.5, 66.6, THE_WAKING_SHORES },
+					{ 35.4, 60.9, THE_WAKING_SHORES },
+					{ 35.5, 60.9, THE_WAKING_SHORES },
+					{ 39.2, 55.1, THE_WAKING_SHORES },
+					{ 40.7, 54.7, THE_WAKING_SHORES },
+					{ 42.8, 53.9, THE_WAKING_SHORES },
+					{ 45.0, 53.7, THE_WAKING_SHORES },
+					{ 45.4, 56.3, THE_WAKING_SHORES },
+					{ 45.4, 56.5, THE_WAKING_SHORES },
+					{ 45.5, 56.3, THE_WAKING_SHORES },
+					{ 45.8, 54.0, THE_WAKING_SHORES },
+					{ 63.2, 30.8, THE_WAKING_SHORES },
+					{ 63.2, 34.6, THE_WAKING_SHORES },
+					{ 64.4, 29.4, THE_WAKING_SHORES },
+					{ 64.4, 29.5, THE_WAKING_SHORES },
+					{ 64.5, 29.4, THE_WAKING_SHORES },
+					{ 64.5, 29.5, THE_WAKING_SHORES },
+					{ 64.6, 25.9, THE_WAKING_SHORES },
+					{ 65.6, 25.7, THE_WAKING_SHORES },
+					{ 65.8, 35.1, THE_WAKING_SHORES },
+					{ 66.1, 37.7, THE_WAKING_SHORES },
+					{ 70.0, 45.3, THE_WAKING_SHORES },
+					{ 70.3, 45.5, THE_WAKING_SHORES },
+					{ 71.2, 44.7, THE_WAKING_SHORES },
+					{ 71.3, 46.8, THE_WAKING_SHORES },
+				},
+				["g"] = {
+					i(201430),	-- Burning Mallet
+					i(201043),	-- Citadel Crusher's Belt
+					i(201042),	-- Citadel Crusher's Bracers
+					i(201036),	-- Citadel Crusher's Chestplate
+					i(201041),	-- Citadel Crusher's Cloak
+					i(201038),	-- Citadel Crusher's Footwraps
+					i(201040),	-- Citadel Crusher's Gauntlets
+					i(201039),	-- Citadel Crusher's Helm
+					i(201037),	-- Citadel Crusher's Legguards
+					i(201035),	-- Citadel Crusher's Pauldrons
+					i(201433),	-- Citadel Warden's Mace
+					i(201434),	-- Obsidian Barrier
+					i(201432),	-- Obsidian Dragontooth
+					i(201429),	-- Obsidian Fist
+					i(201431),	-- Obsidian Tyrant's Mace
+				},
+			}),
 			o(385022, {	-- Eroded Fossil
 				["description"] = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
 				["coords"] = {

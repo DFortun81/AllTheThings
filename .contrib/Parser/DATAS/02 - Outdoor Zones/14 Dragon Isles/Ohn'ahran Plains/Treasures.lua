@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						DRAGON_ISLES,
 					--	THE_WAKING_SHORES,	-- Does not Reward Citadel Crusher/Obsidian Cosmetic Items 	March 2024
 						OHNAHRAN_PLAINS,
-						THE_AZURE_SPAN,
+					--	THE_AZURE_SPAN,
 						THALDRASZUS,
 					},
 					{"pop"},

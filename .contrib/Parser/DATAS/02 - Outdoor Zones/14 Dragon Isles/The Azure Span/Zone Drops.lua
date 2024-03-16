@@ -16,12 +16,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			i(201370, {	-- Brackenhide Skullcracker
 				["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
 			}),
-			i(201369, {	-- Hollow Greatwood Pestilence
-				["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
-			}),
-			i(201367, {	-- Hollow Hunter's Sticker
-				["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
-			}),
 			i(201422, {	-- Flash Frozen Meat
 				["crs"] = {
 					189653,	-- Snowhide Brute
@@ -47,11 +41,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["coord"] = { 23.0, 43.6, THE_AZURE_SPAN },
 			}),
+			i(201369, {	-- Hollow Greatwood Pestilence
+				["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+			}),
+			i(201367, {	-- Hollow Hunter's Sticker
+				["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+			}),
 			i(193882, {	-- Pattern: Acidic Hailstone Treads (RECIPE!)
 				["description"] = "Drops from Decayed Creatures around Bracken Hollow.",
 			}),
 			i(194312, {	-- Pattern: Gnoll Tent (RECIPE!)
-				["description"] = "Drops from Gnolls or Decay Covered Chests.",
+				["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
 			}),
 			i(193868, {	-- Pattern: Slimy Expulsion Boots (RECIPE!)
 				["description"] = "Drops from Decayed Creatures around Bracken Hollow.",

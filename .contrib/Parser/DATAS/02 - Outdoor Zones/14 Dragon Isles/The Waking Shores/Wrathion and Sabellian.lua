@@ -916,6 +916,39 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(199915, {	-- Ancient Obsidian Charm
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
+				i(201430, {	-- Burning Mallet
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201043, {	-- Citadel Crusher's Belt
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201042, {	-- Citadel Crusher's Bracers
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201036, {	-- Citadel Crusher's Chestplate
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201041, {	-- Citadel Crusher's Cloak
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201038, {	-- Citadel Crusher's Footwraps
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201040, {	-- Citadel Crusher's Gauntlets
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201039, {	-- Citadel Crusher's Helm
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201037, {	-- Citadel Crusher's Legguards
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201035, {	-- Citadel Crusher's Pauldrons
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201433, {	-- Citadel Warden's Mace
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
 				i(200944, {	-- Djaradin's Trophy Mask
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
@@ -938,22 +971,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					-- ["cr"] = creature,	-- name
 				}),
 				i(200224, {	-- Mark of Sargha
-					["description"] = "Drops from mobs around the Obsidian Citadel.",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(202173, {	-- Magmote
 					["description"] = "Drops from mobs around the Obsidian Citadel after obtaining The Worldbreaker title.",
 				}),
+				i(201434, {	-- Obsidian Barrier
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201432, {	-- Obsidian Dragontooth
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201429, {	-- Obsidian Fist
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
+				i(201431, {	-- Obsidian Tyrant's Mace
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
+				}),
 				i(194481, {	-- Plans: Obsidian Seared Crusher (RECIPE!)
-					["description"] = "Drops Around Obsidian Citadel.",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(194476, {	-- Plans: Obsidian Seared Hexsword (RECIPE!)
-					["description"] = "Drops Around Obsidian Citadel.",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
-					["description"] = "Drops Around Obsidian Citadel.",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201991, {	-- Sargh's Signet
-					["description"] = "Drops from mobs around the Obsidian Citadel.",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(200857),	-- Talisman of Sargha (TOY!)
 				i(191211, {	-- Wurmling Bones

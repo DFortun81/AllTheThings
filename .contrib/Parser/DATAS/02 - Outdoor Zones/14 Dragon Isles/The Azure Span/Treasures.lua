@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
 					}),
 					i(194312, {	-- Pattern: Gnoll Tent (RECIPE!)
-						["description"] = "Drops from Gnolls or Decay Covered Chests.",
+						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
 					}),
 				},
 			}),
