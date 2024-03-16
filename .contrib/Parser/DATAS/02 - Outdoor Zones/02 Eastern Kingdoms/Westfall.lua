@@ -326,6 +326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 6181,	-- A Swift Message
 					["coord"] = { 56.4, 52.6, WESTFALL },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),

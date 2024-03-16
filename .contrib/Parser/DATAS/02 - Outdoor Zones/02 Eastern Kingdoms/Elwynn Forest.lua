@@ -2089,7 +2089,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(26393, {	-- A Swift Message
-					["qg"] = 514,	-- Smith Argus
+					["providers"] = {
+						{ "n", 514 },	-- Smith Argus
+						{ "i", 58364 },	-- Argus' Note
+					},
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = { HUMAN, KULTIRAN },
@@ -2152,7 +2155,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(59, {	-- Cloth and Leather Armor
 					-- #if AFTER CATA
-					["qg"] = 261,	-- Guard Thomas
+					["providers"] = {
+						{ "n", 261 },	-- Guard Thomas
+						{ "i", 748 },	-- Stormwind Armor Marker
+					},
 					["sourceQuest"] = 71,	-- Report to Thomas
 					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
 					-- #else
@@ -2193,10 +2199,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26394, {	-- Continue to Stormwind
-					["qg"] = 42983,	-- Bartlett the Brave
+					["providers"] = {
+						{ "n", 42983 },	-- Bartlett the Brave
+						{ "i", 58364 },	-- Argus' Note
+					},
 					["sourceQuest"] = 26393,	-- A Swift Message
 					["coord"] = { 41.7, 64.6, ELWYNN_FOREST },
 					["timeline"] = { "added 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = { KULTIRAN, HUMAN },
 				}),
 				q(1667, {	-- Dead-tooth Jack

@@ -1109,7 +1109,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(26395, {	-- Dungar Longdrink
-					["qg"] = 1323,	-- Osric Strang
+					["providers"] = {
+						{ "n", 1323 },	-- Osric Strang
+						{ "i", 16115 },	-- Osric's Crate
+					},
 					["sourceQuest"] = 26394,	-- Continue to Stormwind
 					["coord"] = { 77.0, 61.2, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3" },
@@ -2195,10 +2198,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26396, {	-- Return to Argus
-					["qg"] = 352,	-- Dungar Longdrink
+					["providers"] = {
+						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
+						{ "i", 16115 },	-- Osric's Crate
+					},
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3" },
+					["maps"] = { ELWYNN_FOREST },
 					["races"] = { HUMAN, KULTIRAN, VOIDELF },
 				}),
 				q(6285, {	-- Return to Lewis
@@ -2213,6 +2220,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.2, 62.4, STORMWIND_CITY },
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { WESTFALL },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
