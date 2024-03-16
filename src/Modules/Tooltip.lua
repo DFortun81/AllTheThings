@@ -13,7 +13,7 @@ local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 
 -- App locals
-local SearchForField = app.SearchForField;
+local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
 local SearchForLink, L
@@ -56,7 +56,8 @@ if app.IsRetail then
 			local closestDistance = 99999
 			local closestObjectID, dist, searchCoord, unmappedObject
 			for i,objectID in ipairs(o) do
-				local searchResults = SearchForField("objectID", objectID);
+				-- SFO includes baked-in accessibility filtering/prioritization of the results
+				local searchResults = SearchForObject("objectID", objectID, "any", true);
 				if searchResults and #searchResults > 0 then
 					for j,searchResult in ipairs(searchResults) do
 						searchCoord = searchResult.coord;
