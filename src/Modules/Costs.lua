@@ -26,10 +26,6 @@ local function CanBeAccountCollected(ref)
 	return not questID or not ref.saved or not OneTimeQuests[questID]
 end
 
-local function Linkify(group)
-	return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
-end
-
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
 local function SubCheckCollectible(ref)
@@ -41,12 +37,12 @@ local function SubCheckCollectible(ref)
 	-- app.PrintDebug("SubCheckCollectible",ref.hash)
 	-- Used as a cost for something which is collectible itself and not collected
 	if ref.collectible and not ref.collected then
-		-- app.PrintDebug("Cost via Collectible",ref.hash)
+		-- app.PrintDebug("Purchase via Collectible",app:SearchLink(ref))
 		return true;
 	end
 	-- Used as a cost for something which is collectible as a cost itself
 	if ref.collectibleAsCost then
-		-- app.PrintDebug("Cost via collectibleAsCost",ref.hash)
+		-- app.PrintDebug("Purchase via collectibleAsCost",app:SearchLink(ref))
 		return true;
 	end
 	-- If this group has a symlink, generate the symlink into a cached version of the ref for the following sub-group check
@@ -72,7 +68,7 @@ local function SubCheckCollectible(ref)
 		for i=1,#g do
 			o = g[i];
 			if GroupFilter(o) and SubCheckCollectible(o) then
-				-- app.PrintDebug("Cost via sub-group collectible",ref.hash)
+				-- app.PrintDebug("Purchase via sub-group Purchase",app:SearchLink(ref))
 				return true;
 			end
 		end
@@ -111,6 +107,7 @@ local function SetCostTotals(costs, isCost, refresh)
 			if not blockedBy then
 				c.isCost = isCost;
 				c._CheckCollectible = isCost;
+				-- app.PrintDebug("Unblocked Cost",app:SearchLink(c))
 			else
 				c.isCost = nil;
 				c._CheckCollectible = nil;
@@ -283,7 +280,7 @@ app.CollectibleAsCost = function(t)
 		-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible,settingsChange)
 		return t._CheckCollectible;
 	end
-	-- app.PrintDebug("CAC:Check",t.hash)
+	-- app.PrintDebug("CAC:Check",app:SearchLink(t))
 	t._SettingsRefresh = appSettings;
 	t._CheckCollectible = nil;
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
@@ -295,7 +292,7 @@ app.CollectibleAsCost = function(t)
 		if CheckCollectible(ref) then
 			t._CheckCollectible = true;
 			t.collectibleAsCost = nil;
-			-- app.PrintDebug("CAC:Set",t.hash,"from",ref.hash,"@",t._SettingsRefresh)
+			-- app.PrintDebug("CAC:Set",app:SearchLink(t),"from",app:SearchLink(ref),"@",t._SettingsRefresh)
 			return true;
 		end
 	end
