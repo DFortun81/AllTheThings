@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162326, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162342, {	-- Schematic: Deployable Attire Rearranger [Rank 3
+					i(162342, {	-- Schematic: Deployable Attire Rearranger [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162341, {	-- Schematic: Interdimensional Companion Repository [Rank 3] (RECIPE!)

@@ -407,6 +407,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 					i(166736, {	-- Schematic: Unstable Temporal Time Shifter [Rank 2] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
+						["timeline"] = { ADDED_8_1_0 },
 					}),
 					i(161500, {	-- Shadraspun Legwraps
 						["cost"] = 19000000,	-- 1,900g
@@ -665,7 +666,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
 						["sourceQuest"] = 53937,	-- The Ub3r-Spanner (H)
-						["f"] = MISC,
+						["filterID"] = MISC,
+						["g"] = {
+							r(282975),	-- The Ub3r-Spanner (RECIPE!)
+							r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots (RECIPE!)
+							r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy (RECIPE!)
+							r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 (RECIPE!)
+						},
 					}),
 				},
 			}),

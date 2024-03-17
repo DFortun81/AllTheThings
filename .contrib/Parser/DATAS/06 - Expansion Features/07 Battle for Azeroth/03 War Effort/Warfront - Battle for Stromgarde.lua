@@ -161,7 +161,7 @@ root(ROOTS.ExpansionFeatures,
 								["isWeekly"] = true,
 								["isRaid"] = true,
 								["g"] = {
-									i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
+									i(163195),	-- Schematic: Makeshift Azerite Detector (RECIPE!)
 									i(163828),	-- Toy Siege Tower (TOY!)
 									i(161464),	-- Alliance Bowman's Coif
 									i(161466),	-- Battlemage's Collar
@@ -184,7 +184,7 @@ root(ROOTS.ExpansionFeatures,
 								["isWeekly"] = true,
 								["isRaid"] = true,
 								["g"] = {
-									i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed Discord 2022-08-01)
+									i(163195),	-- Schematic: Makeshift Azerite Detector (RECIPE!)
 									i(163829),	-- Toy War Machine (TOY!)
 									i(161455),	-- Battlemage's Collar
 									i(161453),	-- Warscout's Horned Helm

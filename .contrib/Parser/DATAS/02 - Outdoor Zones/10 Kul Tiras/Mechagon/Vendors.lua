@@ -111,18 +111,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					i(168829, {	-- Rustbolt Resistor (MOUNT!)
 						["cost"] = 5242880000,	-- 524,288g
 					}),
-					i(168660, {	-- Schematic: Blingtron 7000
+					i(168660, {	-- Schematic: Blingtron 7000 (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
 					}),
-					i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O.
+					i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O. (RECIPE!)
 						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon
+					i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon (RECIPE!)
 						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil
+					i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil (RECIPE!)
 						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						["cost"] = 14000000,	-- 1,400g
 					}),

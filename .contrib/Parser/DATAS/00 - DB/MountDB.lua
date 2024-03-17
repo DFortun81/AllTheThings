@@ -1108,7 +1108,6 @@ i(163124, 270560);	-- Vicious War Clefthoof
 i(163123, 272481);	-- Vicious War Riverbeast
 i(161667, 275840);	-- Voldunai Dunescraper
 i(163706, 279868);	-- Witherbark Direwing
-i(153594, 256123);	-- Xiwyllag ATV
 i(157870, 263707);	-- Zandalari Direhorn
 --- NYI ---
 i(0, 237285);		-- Hyena Mount White (PH)
@@ -1196,6 +1195,7 @@ i(166776, 290132);	-- Sylverian Dreamer
 i(167170, 291538);	-- Unshackled Waveray
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat
+i(153594, 256123);	-- Xiwyllag ATV
 --- NYI ---
 i(0, 301841);		-- Kua'fon
 i(0, 302796);		-- Swift Spectral Armored Gryphon

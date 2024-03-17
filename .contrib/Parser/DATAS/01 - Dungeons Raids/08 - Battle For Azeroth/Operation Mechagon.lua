@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
 								i(169529),	-- Plans: Monelite Reinforced Chassis (RECIPE!)
-								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
+								i(169609),	-- Schematic: Super-Charged Engine (RECIPE!)
 							},
 						}),
 						e(2348, {	-- Machinist's Garden
@@ -350,7 +350,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
 								i(169529),	-- Plans: Monelite Reinforced Chassis (RECIPE!)
-								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
+								i(169609),	-- Schematic: Super-Charged Engine (RECIPE!)
 								n(MYTHIC_PLUS, {
 									-- This one I thoguht was confirmed, but all screenshots were removed once it was fixed...
 									i(199921, {	-- Trashmaster's Mantle

@@ -48,6 +48,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					}),
 				}),
 			}),
+			prof(ENGINEERING, {
+				n(131840, {	-- Shuga Blastcaps <Engineering Trainer>
+					["coord"] = { 45.0, 40.6, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["g"] = appendGroups(BFA_ENGINEERING, {
+						r(265807),	-- Zandalari Engineering
+					}),
+				}),
+			}),
 			prof(FISHING, {
 				n(122705, {	-- Silent Tali <Fishing Trainer>
 					["coord"] = { 50.6, 23.2, DAZARALOR },

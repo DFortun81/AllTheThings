@@ -49,6 +49,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 				}),
 			}),
 			prof(ENGINEERING, {
+				n(136059, {	-- Layla Evenkeel <Engineering Trainer>
+					["coord"] = { 73.6, 8.6, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_ENGINEERING, {
+						r(264492),	-- Kul Tiran Engineering
+					}),
+				}),
 			}),
 			prof(FISHING, {
 				n(136102, {	-- Alan Goyle <Fishing Trainer>

@@ -1,11 +1,10 @@
--------------------------------------------------------------------
---      E X P A N S I O N   F E A T U R E S    M O D U L E       --
--------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = { "added 4.0.6" } }, {
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	m(245, {	-- Tol Barad Peninsula
 		["description"] = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
 		["icon"] = 409548,	-- achievement_zone_tolbarad
-		["lvl"] = 80,
 		["groups"] = {
 			n(ACHIEVEMENTS, {	-- non-pvp map
 				achWithRep(5375, 1177, {	-- Baradin's Wardens
@@ -567,11 +566,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 							["lvl"] = 90,
 						}),
 					})),
-					n(PROFESSIONS, {
-						prof(MINING, {
-							i(67282),	-- Elementium Geode (PET!)
-						}),
-					}),
 					n(REWARDS, {
 						["groups"] = {
 							currency(391, {	-- Tol Barad Commendation

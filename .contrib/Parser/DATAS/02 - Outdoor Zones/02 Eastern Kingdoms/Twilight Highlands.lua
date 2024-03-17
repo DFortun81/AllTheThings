@@ -288,12 +288,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(PROFESSIONS, {
-				prof(MINING, {
-					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
-					["groups"] = {
-						i(67282),	-- Elementium Geode (PET!)
-					},
-				}),
 				prof(FISHING, {
 					o(208311, {	-- Deepsea Sagefish School
 						i(22739),	-- Tome of Polymorph: Turtle (CI!)
@@ -301,6 +295,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					o(202777, {	-- Highland Guppy School
 						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
+				}),
+				prof(MINING, {
+					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
+					["groups"] = {
+						i(67282),	-- Elementium Geode (PET!)
+					},
 				}),
 			}),
 			n(QUESTS, {

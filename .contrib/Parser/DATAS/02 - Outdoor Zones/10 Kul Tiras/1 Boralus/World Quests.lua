@@ -257,7 +257,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["isWorldQuest"] = true,
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162360),	-- Technique: Contract: Proudmoore Admiralty [Rank 3]
+					i(162360),	-- Technique: Contract: Proudmoore Admiralty [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52368, {	-- Work Order: Crow's Nest Scope
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
 				["g"] = {
-					i(162343),	-- Schematic: Crow's Nest Scope [Rank 3]
+					i(162343),	-- Schematic: Crow's Nest Scope [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52355, {	-- Work Order: Enchant Weapon - Coastal Surge
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
 				["g"] = {
-					i(162321),	-- Schematic: Incendiary Ammunition [Rank 3]
+					i(162321),	-- Schematic: Incendiary Ammunition [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52405, {	-- Work Order: Kubiline
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
 				["g"] = {
-					i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
+					i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3] (RECIPE!)
 				},
 			}),
 		}),

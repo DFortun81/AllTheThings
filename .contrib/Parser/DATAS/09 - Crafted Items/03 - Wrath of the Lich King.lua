@@ -104,6 +104,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(44324),	-- Mighty Alchemist Stone
 		}),
 	}),
+	-- #if AFTER CATA
+	prof(ARCHAEOLOGY, {
+		i(64396),	-- Nerubian Obelisk
+		i(64395),	-- Vrykul Rune Stick
+		currency(400, {	-- Nerubian
+			-- Solves
+			i(64481),	-- Blessing of the Old God (TOY!)
+			i(64482),	-- Puzzle Box of Yogg-Saron (TOY!)
+			i(64479),	-- Ewer of Jormungar Blood
+			i(64477),	-- Gruesome Heart Box
+			i(64476),	-- Infested Ruby Ring
+			i(64475),	-- Scepter of Nezar'Azret
+			i(64478),	-- Six-Clawed Cornice
+			i(64474),	-- Spidery Sundial
+			i(64480),	-- Vizier's Scrawled Streamer
+		}),
+		currency(399, {	-- Vrykul
+			-- Solves
+			i(64460),	-- Nifflevar Bearded Axe
+			i(69775, {["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
+			i(64464),	-- Fanged Cloak Pin
+			i(64462),	-- Flint Striker
+			i(64459),	-- Intricate Treasure Chest Key
+			i(64461),	-- Scramseax
+			i(64467),	-- Thorned Necklace
+		}),
+	}),
+	-- #endif
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
 		prof(9788, {	-- Armorsmith
@@ -439,6 +467,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	}),
 	prof(ENGINEERING, {
 		filter(MOUNTS, {
+			ach(2097, {	-- Get to the Choppa! (Engineering)
+				["providers"] = {
+					{ "i", 44413 },	-- Mekgineer's Chopper
+					{ "i", 41508 },	-- Mechano-hog
+				},
+				-- #if ANYCLASSIC
+				["f"] = 100,
+				-- #endif
+			}),
 			i(41508),	-- Mechano-Hog (MOUNT!)
 			i(44413),	-- Mekgineer's Chopper (MOUNT!)
 		}),

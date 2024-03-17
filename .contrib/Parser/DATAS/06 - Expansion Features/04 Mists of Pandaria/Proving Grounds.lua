@@ -1,8 +1,14 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
+PROVING_GROUNDS = createHeader({
+	readable = "Proving Grounds",
+	icon = "618859",
+	text = {
+		en = [[~TRACKER_HEADER_PROVINGGROUNDS]],
+	},
+});
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(PROVING_GROUNDS, {
 		["maps"] = { 480 },	-- Proving Grounds
 		["g"] = {
@@ -88,15 +94,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 				ach(8697, {		-- You're Doing it Wrong (Level 90)
 					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 				}),
+				ach(8812, {	-- You're Really Doing It Wrong (Level 90)
+					["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				}),
 				ach(9590),	-- You're Doing it Wrong (META)
 				ach(9597),	-- You're Really Doing It Wrong
 			}),
 		},
 	}),
-}));
-
-root(ROOTS.NeverImplemented, expansion(EXPANSION.MOP, {
-	n(PROVING_GROUNDS, {
-		ach(8812),	-- You're Really Doing It Wrong (Level 90)
-	}),
-}));
+})));

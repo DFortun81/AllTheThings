@@ -308,6 +308,9 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			}),
 		},
 	})),
+	ach(4496, {	-- It's Over Nine Thousand!
+		["timeline"] = { ADDED_3_0_2 },
+	}),
 	ach(6, {		-- Level 10
 		["lvl"] = 10,
 		-- #if BEFORE WRATH
@@ -734,6 +737,12 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	-- #endif
 	ach(1832, {	-- Tastes Like Chicken
 		["timeline"] = { "added 3.0.1" },
+	}),
+	ach(5753, {	-- Cataclysmically Delicious
+		["sym"] = {{ "achievement_criteria" }},
+	}),
+	ach(5754, {	-- Drown Your Sorrows
+		["sym"] = {{ "achievement_criteria" }},
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(892, {	-- The Right Stuff
 		["spellID"] = 34091,	-- Artisan Riding

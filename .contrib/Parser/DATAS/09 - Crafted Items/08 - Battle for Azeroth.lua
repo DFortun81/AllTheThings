@@ -17,6 +17,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 				{ "i", 158887, 1 },	-- Monelite Reinforced Chassis
 				{ "i", 158886, 1 },	-- Super-Charged Engine
 			},
+			["timeline"] = { ADDED_8_2_0 },
 		}),
 	}),
 	prof(ALCHEMY, {
@@ -299,7 +300,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(165748),	-- Platinum Whetstone
 		}),
 		filter(MOUNTS, {
-			i(158887),	-- Monelite Reinforced Chassis
+			i(158887, {["timeline"] = {ADDED_8_2_0}}),	-- Monelite Reinforced Chassis
 		}),
 		n(WEAPONS, {
 			i(161892),	-- Honorable Combatant's Aegis [A]
@@ -478,157 +479,207 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 	prof(ENGINEERING, {
-		filter(MOUNTS, {
-			i(161134),	-- Mecha-Mogul Mk2 (MOUNT!)
-			i(158886),	-- Super-Charged Engine
+		n(DISCOVERY, {
+			spell(305951, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Bionic Bifocals
+				i(170408),	-- Schematic: Superior Bionic Bifocals (RECIPE!)
+			})),
+			spell(305942, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Gearspun Goggles
+				i(170406),	-- Schematic: Superior Gearspun Goggles (RECIPE!)
+			})),
+			spell(305948, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Orthogonal Optics
+				i(170410),	-- Schematic: Superior Orthogonal Optics (RECIPE!)
+			})),
+			spell(305945, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- A-N0M-A-L0U5 Synthetic Specs
+				i(170404),	-- Schematic: Superior Synthetic Specs (RECIPE!)
+			})),
+			spell(299010, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Bionic Bifocals
+				i(168767),	-- Schematic: A5C-3N-D3D Bionic Bifocals (RECIPE!)
+			})),
+			spell(299007, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Gearspun Goggles
+				i(168765),	-- Schematic: A5C-3N-D3D Gearspun Goggles (RECIPE!)
+			})),
+			spell(299013, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Orthogonal Optics
+				i(168769),	-- Schematic: A5C-3N-D3D Orthogonal Optics (RECIPE!)
+			})),
+			spell(299004, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Synthetic Specs
+				i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs (RECIPE!)
+			})),
+			spell(299011, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Bionic Bifocals
+				i(168768),	-- Schematic: Charged A5C-3N-D3D Bionic Bifocals (RECIPE!)
+			})),
+			spell(299008, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Gearspun Goggles
+				i(168766),	-- Schematic: Charged A5C-3N-D3D Gearspun Goggles (RECIPE!)
+			})),
+			spell(299014, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Orthogonal Optics
+				i(168770),	-- Schematic: Charged A5C-3N-D3D Orthogonal Optics (RECIPE!)
+			})),
+			spell(299005, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- A5C-3N-D3D Synthetic Specs
+				i(168764),	-- Schematic: Charged A5C-3N-D3D Synthetic Specs (RECIPE!)
+			})),
+			spell(291093, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Bionic Bifocals
+				i(166989),	-- Schematic: Emblazoned Bionic Bifocals (RECIPE!)
+			})),
+			spell(291091, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Gearspun Goggles
+				i(166988),	-- Schematic: Emblazoned Gearspun Goggles (RECIPE!)
+			})),
+			spell(291095, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Orthogonal Optics
+				i(166990),	-- Schematic: Emblazoned Orthogonal Optics (RECIPE!)
+			})),
+			spell(291089, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Synthetic Specs
+				i(166987),	-- Schematic: Emblazoned Synthetic Specs (RECIPE!)
+			})),
+			spell(286865, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Bionic Bifocals
+				i(165912),	-- Schematic: Charged SP1-R1-73D Bionic Bifocals (RECIPE!)
+			})),
+			spell(286868, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Gearspun Goggles
+				i(165914),	-- Schematic: Charged SP1-R1-73D Gearspun Goggles (RECIPE!)
+			})),
+			spell(286871, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Orthogonal Optics
+				i(165916),	-- Schematic: Charged SP1-R1-73D Orthogonal Optics (RECIPE!)
+			})),
+			spell(286874, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- SP1-R1-73D Synthetic Specs
+				i(165918),	-- Schematic: Charged SP1-R1-73D Synthetic Specs (RECIPE!)
+			})),
+			spell(305950, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Bionic Bifocals
+				i(170409),	-- Schematic: Paramount Bionic Bifocals (RECIPE!)
+			})),
+			spell(305941, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Gearspun Goggles
+				i(170407),	-- Schematic: Paramount Gearspun Goggles (RECIPE!)
+			})),
+			spell(305947, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Orthogonal Optics
+				i(170411),	-- Schematic: Paramount Orthogonal Optics (RECIPE!)
+			})),
+			spell(305944, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Superior Synthetic Specs
+				i(170405),	-- Schematic: Paramount Synthetic Specs (RECIPE!)
+			})),
+			spell(286864, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Bionic Bifocals
+				i(165911),	-- Schematic: SP1-R1-73D Bionic Bifocals (RECIPE!)
+			})),
+			spell(286867, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Gearspun Goggles
+				i(165913),	-- Schematic: SP1-R1-73D Gearspun Goggles (RECIPE!)
+			})),
+			spell(286870, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Orthogonal Optics
+				i(165915),	-- Schematic: SP1-R1-73D Orthogonal Optics (RECIPE!)
+			})),
+			spell(286873, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Surging Synthetic Specs
+				i(165917),	-- Schematic: SP1-R1-73D Synthetic Specs (RECIPE!)
+			})),
+		}),
+		n(ARMOR, {
+			filter(CLOTH, {
+				i(171008, {["timeline"] = {ADDED_8_3_0}}),	-- A-N0M-A-L0U5 Synthetic Specs
+				i(168689, {["timeline"] = {ADDED_8_2_0}}),	-- Abyssal Synthetic Specs
+				i(168690, {["timeline"] = {ADDED_8_2_0}}),	-- A5C-3N-D3D Synthetic Specs
+				i(160488),	-- AZ3-R1-T3 Synthetic Specs
+				i(168691, {["timeline"] = {ADDED_8_2_0}}),	-- Charged A5C-3N-D3D Synthetic Specs
+				i(165895, {["timeline"] = {ADDED_8_1_0}}),	-- Charged SP1-R1-73D Synthetic Specs
+				i(166980, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Synthetic Specs
+				i(166979, {["timeline"] = {ADDED_8_1_0}}),	-- Imbued Synthetic Specs
+				i(171006, {["timeline"] = {ADDED_8_3_0}}),	-- Paramount Synthetic Specs
+				i(165890, {["timeline"] = {ADDED_8_1_0}}),	-- SP1-R1-73D Synthetic Specs
+				i(171007, {["timeline"] = {ADDED_8_3_0}}),	-- Superior Synthetic Specs
+				i(165885, {["timeline"] = {ADDED_8_1_0}}),	-- Surging Synthetic Specs
+			}),
+			filter(LEATHER, {
+				i(171005, {["timeline"] = {ADDED_8_3_0}}),	-- A-N0M-A-L0U5 Gearspun Goggles
+				i(168692, {["timeline"] = {ADDED_8_2_0}}),	-- Abyssal Gearspun Goggles
+				i(168693, {["timeline"] = {ADDED_8_2_0}}),	-- A5C-3N-D3D Gearspun Goggles
+				i(160489),	-- AZ3-R1-T3 Gearspun Goggles
+				i(168694, {["timeline"] = {ADDED_8_2_0}}),	-- Charged A5C-3N-D3D Gearspun Goggles
+				i(165896, {["timeline"] = {ADDED_8_1_0}}),	-- Charged SP1-R1-73D Gearspun Goggles
+				i(166982, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Gearspun Goggles
+				i(166981, {["timeline"] = {ADDED_8_1_0}}),	-- Imbued Gearspun Goggles
+				i(171003, {["timeline"] = {ADDED_8_3_0}}),	-- Paramount Gearspun Goggles
+				i(165891, {["timeline"] = {ADDED_8_1_0}}),	-- SP1-R1-73D Gearspun Goggles
+				i(171004, {["timeline"] = {ADDED_8_3_0}}),	-- Superior Gearspun Goggles
+				i(165886, {["timeline"] = {ADDED_8_1_0}}),	-- Surging Gearspun Goggles
+			}),
+			filter(MAIL, {
+				i(171014, {["timeline"] = {ADDED_8_3_0}}),	-- A-N0M-A-L0U5 Bionic Bifocals
+				i(168695, {["timeline"] = {ADDED_8_2_0}}),	-- Abyssal Bionic Bifocals
+				i(168696, {["timeline"] = {ADDED_8_2_0}}),	-- A5C-3N-D3D Bionic Bifocals
+				i(160490),	-- AZ3-R1-T3 Bionic Bifocals
+				i(168697, {["timeline"] = {ADDED_8_2_0}}),	-- Charged A5C-3N-D3D Bionic Bifocals
+				i(165897, {["timeline"] = {ADDED_8_1_0}}),	-- Charged SP1-R1-73D Bionic Bifocals
+				i(166984, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Bionic Bifocals
+				i(166983, {["timeline"] = {ADDED_8_1_0}}),	-- Imbued Bionic Bifocals
+				i(171012, {["timeline"] = {ADDED_8_3_0}}),	-- Paramount Bionic Bifocals
+				i(165892, {["timeline"] = {ADDED_8_1_0}}),	-- SP1-R1-73D Bionic Bifocals
+				i(171013, {["timeline"] = {ADDED_8_3_0}}),	-- Superior Bionic Bifocals
+				i(165887, {["timeline"] = {ADDED_8_1_0}}),	-- Surging Bionic Bifocals
+			}),
+			filter(PLATE, {
+				i(171011, {["timeline"] = {ADDED_8_3_0}}),	-- A-N0M-A-L0U5 Orthogonal Optics
+				i(168698, {["timeline"] = {ADDED_8_2_0}}),	-- Abyssal Orthogonal Optics
+				i(168699, {["timeline"] = {ADDED_8_2_0}}),	-- A5C-3N-D3D Orthogonal Optics
+				i(160491),	-- AZ3-R1-T3 Orthogonal Optics
+				i(168700, {["timeline"] = {ADDED_8_2_0}}),	-- Charged A5C-3N-D3D Orthogonal Optics
+				i(165898, {["timeline"] = {ADDED_8_1_0}}),	-- Charged SP1-R1-73D Orthogonal Optics
+				i(166986, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Orthogonal Optics
+				i(166985, {["timeline"] = {ADDED_8_1_0}}),	-- Imbued Orthogonal Optics
+				i(171009, {["timeline"] = {ADDED_8_3_0}}),	-- Paramount Orthogonal Optics
+				i(165893, {["timeline"] = {ADDED_8_1_0}}),	-- SP1-R1-73D Orthogonal Optics
+				i(171010, {["timeline"] = {ADDED_8_3_0}}),	-- Superior Orthogonal Optics
+				i(165888, {["timeline"] = {ADDED_8_1_0}}),	-- Surging Orthogonal Optics
+			}),
 		}),
 		filter(BATTLE_PETS, {
 			i(165849, {["timeline"] = {ADDED_8_1_0}}),	-- Mechantula (PET!)
 		}),
-		filter(CONSUMABLES, {
-			i(165738),	-- Makeshift Azerite Detector
+		filter(MISC, {
+			i(153597),	-- Deployable Attire Rearranger
+			i(153573),	-- Electroshock Mount Motivator
+			i(153490),	-- F.R.I.E.D.
+			i(153510),	-- Interdimensional Companion Repository
+			i(158380),	-- Magical Intrusion Dampener
+			i(162107, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),-- Makeshift Azerite Detector
+			i(165738, {["timeline"] = {ADDED_8_1_0}}),	-- Makeshift Azerite Detector
+			i(162111, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Monelite Fish Finder
+			i(165742, {["timeline"] = {ADDED_8_1_0}}),	-- Monelite Fish Finder
+			i(153487),	-- Organic Discombobulation Grena
+			i(153494),	-- Thermo-Accelerated Plague Spreader
+			i(164913, {["timeline"] = {ADDED_8_1_5}}),	-- Ub3r Module: Short-Fused Boom Bots
+			i(164914, {["timeline"] = {ADDED_8_1_5}}),	-- Ub3r Module: Ub3r-Improved Target Dummy
+			i(164915, {["timeline"] = {ADDED_8_1_5}}),	-- Ub3r Module: Ub3r S3ntry Mk. X8.0
+			i(168521, {["timeline"] = {ADDED_8_2_0}}),	-- Ub3r Module: P.O.G.O
+			i(168523, {["timeline"] = {ADDED_8_2_0}}),	-- Ub3r Module: Scrap Cannon
+			i(168522, {["timeline"] = {ADDED_8_2_0}}),	-- Ub3r Module: Ub3r-Coil
+			i(164740, {["timeline"] = {ADDED_8_1_5}}),	-- Ub3r-Spanner
+			i(158379, {["timeline"] = {ADDED_8_1_0}}),	-- Unstable Temporal Time Shifter
+			i(153512),	-- XA-1000 Surface Skimmer
+		}),
+		filter(MOUNTS, {
+			i(161134),	-- Mecha-Mogul Mk2 (MOUNT!)
+			i(158886, {["timeline"] = {ADDED_8_2_0}}),	-- Super-Charged Engine
 		}),
 		filter(TOYS, {
-			i(168667), -- Blingtron 7000 (TOY!)
-			i(168807),	-- Wormhole Generator: Kul Tiras (TOY!)
-			i(168808),	-- Wormhole Generator: Zandalar (TOY!)
+			i(168667, {["timeline"] = {ADDED_8_2_0}}),	-- Blingtron 7000 (TOY!)
+			i(168807, {["timeline"] = {ADDED_8_2_0}}),	-- Wormhole Generator: Kul Tiras (TOY!)
+			i(168808, {["timeline"] = {ADDED_8_2_0}}),	-- Wormhole Generator: Zandalar (TOY!)
 		}),
-		filter(ONE_HANDED_MACES, {
+		n(WEAPONS, {
+			i(161930),	-- Finely-Tuned Stormsteel Destroyer [A]
+			i(153506),	-- Finely-Tuned Stormsteel Destroyer [H]
 			i(159937),	-- Honorable Combatant's Discombobulator
+			i(161931),	-- Honorable Combatant's Stormsteel Destroyer [A]
+			i(159936),	-- Honorable Combatant's Stormsteel Destroyer [H]
 			i(152830),	-- Magnetic Discombobulator
-			i(167940),	-- Notorious Combatant's Discombobulator
+			i(167940, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Discombobulator
+			i(167997, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Stormsteel Destroyer [A]
+			i(167996, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Stormsteel Destroyer [H]
 			i(152837),	-- Precision Attitude Adjuster
-			i(164680),	-- Sinister Combatant's Discombobulator
-			i(170313),	-- Uncanny Combatant's Discombobulator
+			i(164680, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Discombobulator
+			i(164696, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Stormsteel Destroyer [A]
+			i(164679, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Stormsteel Destroyer [H]
+			i(170313, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Discombobulator
+			i(170314, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Stormsteel Destroyer [A]
+			i(170315, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Stormsteel Destroyer [H]
 		}),
-		filter(GUNS, {
-			i(161930),	-- Finely-Tuned Stormsteel Destroyer [Alliance]
-			i(153506),	-- Finely-Tuned Stormsteel Destroyer [Horde]
-			i(161931),	-- Honorable Combatant's Stormsteel Destroyer [Alliance]
-			i(159936),	-- Honorable Combatant's Stormsteel Destroyer [Horde]
-			i(167997),	-- Notorious Combatant's Stormsteel Destroyer [Alliance]
-			i(167996),	-- Notorious Combatant's Stormsteel Destroyer [Horde]
-			i(164696),	-- Sinister Combatant's Stormsteel Destroyer [Alliance]
-			i(164679),	-- Sinister Combatant's Stormsteel Destroyer [Horde]
-			i(170314),	-- Uncanny Combatant's Stormsteel Destroyer [Alliance]
-			i(170315),	-- Uncanny Combatant's Stormsteel Destroyer [Horde]
-		}),
-		n(HEAD, {
-			filter(CLOTH, {
-				i(168689, {	-- Abyssal Synthetic Specs
-					i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs
-				}),
-				i(168690, {	-- A5C-3N-D3D Synthetic Specs
-					i(168764),	-- Schematic: Charged A5C-3N-D3D Synthetic Specs
-				}),
-				i(171008, {	-- A-N0M-A-L0U5 Synthetic Specs
-					i(170404),	-- Schematic: Superior Synthetic Specs
-				}),
-				i(160488),	-- AZ3-R1-T3 Synthetic Specs
-				i(168691),	-- Charged A5C-3N-D3D Synthetic Specs
-				i(165895),	-- Charged SP1-R1-73D Synthetic Specs
-				i(166980),	-- Emblazoned Synthetic Specs
-				i(166979, {	-- Imbued Synthetic Specs
-					i(166987),	-- Schematic: Emblazoned Synthetic Specs
-				}),
-				i(171006),	-- Paramount Synthetic Specs
-				i(165890, {	-- SP1-R1-73D Synthetic Specs
-					i(165918),	-- Schematic: Charged SP1-R1-73D Synthetic Specs
-				}),
-				i(171007, {	-- Superior Synthetic Specs
-					i(170405),	-- Schematic: Paramount Synthetic Specs
-				}),
-				i(165885, {	-- Surging Synthetic Specs
-					i(165917),	-- Schematic: SP1-R1-73D Synthetic Specs
-				}),
-			}),
-			filter(LEATHER, {
-				i(168692, {	-- Abyssal Gearspun Goggles
-					i(168765),	-- Schematic: A5C-3N-D3D Gearspun Goggles
-				}),
-				i(168693, {	-- A5C-3N-D3D Gearspun Goggles
-					i(168766),	-- Schematic: Charged A5C-3N-D3D Gearspun Goggles
-				}),
-				i(171005, {	-- A-N0M-A-L0U5 Gearspun Goggles
-					i(170406),	-- Schematic: Superior Gearspun Goggles
-				}),
-				i(160489),	-- AZ3-R1-T3 Gearspun Goggles
-				i(168694),	-- Charged A5C-3N-D3D Gearspun Goggles
-				i(165896),	-- Charged SP1-R1-73D Gearspun Goggles
-				i(166982),	-- Emblazoned Gearspun Goggles
-				i(166981, {	-- Imbued Gearspun Goggles
-					i(166988),	-- Schematic: Emblazoned Gearspun Goggles
-				}),
-				i(171003),	-- Paramount Gearspun Goggles
-				i(165891, {	-- SP1-R1-73D Gearspun Goggles
-					i(165914),	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
-				}),
-				i(171004, {	-- Superior Gearspun Goggles
-					i(170407),	-- Schematic: Paramount Gearspun Goggles
-				}),
-				i(165886, {	-- Surging Gearspun Goggles
-					i(165913),	-- Schematic: SP1-R1-73D Gearspun Goggles
-				}),
-			}),
-			filter(MAIL, {
-				i(168695, {	-- Abyssal Bionic Bifocals
-					i(168767),	-- Schematic: A5C-3N-D3D Bionic Bifocals
-				}),
-				i(168696, {	-- A5C-3N-D3D Bionic Bifocals
-					i(168768),	-- Schematic: Charged A5C-3N-D3D Bionic Bifocals
-				}),
-				i(171014, {	-- A-N0M-A-L0U5 Bionic Bifocals
-					i(170408),	-- Schematic: Superior Bionic Bifocals
-				}),
-				i(160490),	-- AZ3-R1-T3 Bionic Bifocals
-				i(168697),	-- Charged A5C-3N-D3D Bionic Bifocals
-				i(165897),	-- Charged SP1-R1-73D Bionic Bifocals
-				i(166984),	-- Emblazoned Bionic Bifocals
-				i(166983, {	-- Imbued Bionic Bifocals
-					i(166989),	-- Schematic: Emblazoned Bionic Bifocals
-				}),
-				i(171012),	-- Paramount Bionic Bifocals
-				i(165892, {	-- SP1-R1-73D Bionic Bifocals
-					i(165912),	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
-				}),
-				i(171013, {	-- Superior Bionic Bifocals
-					i(170409),	-- Schematic: Paramount Bionic Bifocals
-				}),
-				i(165887, {	-- Surging Bionic Bifocals
-					i(165911),	-- Schematic: SP1-R1-73D Bionic Bifocals
-				}),
-			}),
-			filter(PLATE, {
-				i(168698, {	-- Abyssal Orthogonal Optics
-					i(168769),	-- Schematic: A5C-3N-D3D Orthogonal Optics
-				}),
-				i(168699, {	-- A5C-3N-D3D Orthogonal Optics
-					i(168770),	-- Schematic: Charged A5C-3N-D3D Orthogonal Optics
-				}),
-				i(171011, {	-- A-N0M-A-L0U5 Orthogonal Optics
-					i(170410),	-- Schematic: Superior Orthogonal Optics
-				}),
-				i(160491),	-- AZ3-R1-T3 Orthogonal Optics
-				i(168700),	-- Charged A5C-3N-D3D Orthogonal Optics
-				i(165898),	-- Charged SP1-R1-73D Orthogonal Optics
-				i(166986),	-- Emblazoned Orthogonal Optics
-				i(166985, {	-- Imbued Orthogonal Optics
-					i(166990),	-- Schematic: Emblazoned Orthogonal Optics
-				}),
-				i(171009),	-- Paramount Orthogonal Optics
-				i(165893, {	-- SP1-R1-73D Orthogonal Optics
-					i(165916),	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
-				}),
-				i(171010, {	-- Superior Orthogonal Optics
-					i(170411),	-- Schematic: Paramount Orthogonal Optics
-				}),
-				i(165888, {	-- Surging Orthogonal Optics
-					i(165915),	-- Schematic: SP1-R1-73D Orthogonal Optics
-				}),
-			}),
-		}),
-		filter(MISC, {
-			i(168522),	-- Ub3r Module: Ub3r-Coil
+		n(WEAPON_ENCHANTMENTS, {
+			i(158212),	-- Crow's Nest Scope
+			i(158377),	-- Frost-Laced Ammunition
+			i(158203),	-- Incendiary Ammunition
+			i(158327),	-- Monelite Scope of Alacrity
 		}),
 	}),
 	prof(FISHING, {

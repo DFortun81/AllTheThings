@@ -106,7 +106,226 @@ i("Large Red Rocket Cluster", 21735, 26428);
 i("Cluster Launcher", 21737, 26443);
 i("Firework Launcher", 21738, 26442);
 
+-----------------
+-- PATCH 8.0.1 --
+-----------------
+i(0, 264475);		-- Engineering
+i(0, 264479);		-- Outland Engineering
+i(0, 264481);		-- Northrend Engineering
+i(0, 264483);		-- Cataclysm Engineering
+i(0, 264485);		-- Pandaria Engineering
+i(0, 264487);		-- Draenor Engineering
+i(0, 264490);		-- Legion Engineering
+i(0, 264492);		-- Kul Tiran Engineering
+i(0, 265807);		-- Zandalari Engineering
+--- TRAINER ---
+i(0, 272062);		-- AZ3-R1-T3 Bionic Bifocals [Rank 1]
+i(0, 272059);		-- AZ3-R1-T3 Gearspun Goggles [Rank 1]
+i(0, 272065);		-- AZ3-R1-T3 Orthogonal Optics [Rank 1]
+i(0, 272056);		-- AZ3-R1-T3 Synthetic Specs [Rank 1]
+i(0, 255936);		-- Belt Enchant: Holographic Horror Projector
+i(0, 269123);		-- Belt Enchant: Miniaturized Plasma Shield
+i(0, 255940);		-- Belt Enchant: Personal Space Amplifier
+i(0, 264960);		-- Crow's Nest Scope [Rank 1]
+i(0, 264961);		-- Crow's Nest Scope [Rank 2]
+i(0, 256154);		-- Deployable Attire Rearranger [Rank 1]
+i(0, 256155);		-- Deployable Attire Rearranger [Rank 2]
+i(0, 256070);		-- Electroshock Mount Motivator [Rank 1]
+i(0, 256071);		-- Electroshock Mount Motivator [Rank 2]
+i(0, 255457);		-- Finely-Tuned Stormsteel Destroyer [Rank 1]
+i(0, 255458);		-- Finely-Tuned Stormsteel Destroyer [Rank 2]
+i(0, 265100);		-- Frost-Laced Ammunition [Rank 1]
+i(0, 265101);		-- Frost-Laced Ammunition [Rank 2]
+i(0, 255392);		-- F.R.I.E.D. [Rank 1]
+i(0, 255393);		-- F.R.I.E.D. [Rank 2]
+i(0, 269724);		-- Honorable Combatant's Discombobulator [Rank 1]
+i(0, 269727);		-- Honorable Combatant's Stormsteel Destroyer [Rank 1]
+i(0, 265097);		-- Incendiary Ammunition [Rank 1]
+i(0, 265098);		-- Incendiary Ammunition [Rank 2]
+i(0, 256080);		-- Interdimensional Companion Repository [Rank 1]
+i(0, 256082);		-- Interdimensional Companion Repository [Rank 2]
+i(0, 280732);		-- Magical Intrusion Dampener [Rank 1]
+i(0, 280733);		-- Magical Intrusion Dampener [Rank 2]
+i(0, 280734);		-- Magical Intrusion Dampener [Rank 3]
+i(0, 253122);		-- Magnetic Discombobulator
+i(0, 278413);		-- Monelite Fish Finder
+i(0, 264964);		-- Monelite Scope of Alacrity [Rank 1]
+i(0, 264966);		-- Monelite Scope of Alacrity [Rank 2]
+i(0, 255407);		-- Organic Discombobulation Grenade [Rank 1]
+i(0, 255408);		-- Organic Discombobulation Grenade [Rank 2]
+i(0, 253150);		-- Precision Attitude Adjuster [Rank 1]
+i(0, 253151);		-- Precision Attitude Adjuster [Rank 2]
+i(0, 255395);		-- Thermo-Accelerated Plague Spreader [Rank 1]
+i(0, 255396);		-- Thermo-Accelerated Plague Spreader [Rank 2]
+i(0, 256073);		-- XA-1000 Surface Skimmer [Rank 1]
+i(0, 256074);		-- XA-1000 Surface Skimmer [Rank 2]
+--- ITEM ---
+i(162327, 272063);	-- AZ3-R1-T3 Bionic Bifocals [Rank 2] [A]
+i(162732, 272063);	-- AZ3-R1-T3 Bionic Bifocals [Rank 2] [H]
+i(162328, 272064);	-- AZ3-R1-T3 Bionic Bifocals [Rank 3] [A]
+i(162733, 272064);	-- AZ3-R1-T3 Bionic Bifocals [Rank 3] [H]
+i(162325, 272060);	-- AZ3-R1-T3 Gearspun Goggles [Rank 2] [A]
+i(162730, 272060);	-- AZ3-R1-T3 Gearspun Goggles [Rank 2] [H]
+i(162326, 272061);	-- AZ3-R1-T3 Gearspun Goggles [Rank 3] [A]
+i(162731, 272061);	-- AZ3-R1-T3 Gearspun Goggles [Rank 3] [H]
+i(162329, 272066);	-- AZ3-R1-T3 Orthogonal Optics [Rank 2] [A]
+i(162734, 272066);	-- AZ3-R1-T3 Orthogonal Optics [Rank 2] [H]
+i(162330, 272067);	-- AZ3-R1-T3 Orthogonal Optics [Rank 3] [A]
+i(162735, 272067);	-- AZ3-R1-T3 Orthogonal Optics [Rank 3] [H]
+i(162323, 272057);	-- AZ3-R1-T3 Synthetic Specs [Rank 2] [A]
+i(162728, 272057);	-- AZ3-R1-T3 Synthetic Specs [Rank 2] [H]
+i(162324, 272058);	-- AZ3-R1-T3 Synthetic Specs [Rank 3] [A]
+i(162729, 272058);	-- AZ3-R1-T3 Synthetic Specs [Rank 3] [H]
+i(162343, 264962);	-- Crow's Nest Scope [Rank 3]
+i(162342, 256156);	-- Deployable Attire Rearranger [Rank 3] [A]
+i(162743, 256156);	-- Deployable Attire Rearranger [Rank 3] [H]
+i(162340, 256072);	-- Electroshock Mount Motivator [Rank 3]
+i(162346, 255459);	-- Finely-Tuned Stormsteel Destroyer [Rank 3] [A]
+i(162746, 255459);	-- Finely-Tuned Stormsteel Destroyer [Rank 3] [H]
+i(162322, 265102);	-- Frost-Laced Ammunition [Rank 3] [A]
+i(162727, 265102);	-- Frost-Laced Ammunition [Rank 3] [H]
+i(162331, 255394);	-- F.R.I.E.D. [Rank 3]
+i(163020, 269725);	-- Honorable Combatant's Discombobulator [Rank 2]
+i(163021, 269726);	-- Honorable Combatant's Discombobulator [Rank 3]
+i(163022, 269728);	-- Honorable Combatant's Stormsteel Destroyer [Rank 2]
+i(163023, 269729);	-- Honorable Combatant's Stormsteel Destroyer [Rank 3]
+i(162321, 265099);	-- Incendiary Ammunition [Rank 3]
+i(162341, 256084);	-- Interdimensional Companion Repository [Rank 3] [A]
+i(162742, 256084);	-- Interdimensional Companion Repository [Rank 3] [H]
+i(163195, 278411);	-- Makeshift Azerite Detector
+i(161135, 274621);	-- Mecha-Mogul Mk2
+i(162344, 264967);	-- Monelite Scope of Alacrity [Rank 3] [A]
+i(162744, 264967);	-- Monelite Scope of Alacrity [Rank 3] [H]
+i(162337, 255409);	-- Organic Discombobulation Grenade [Rank 3] [A]
+i(162741, 255409);	-- Organic Discombobulation Grenade [Rank 3] [H]
+i(162345, 253152);	-- Precision Attitude Adjuster [Rank 3] [A]
+i(162745, 253152);	-- Precision Attitude Adjuster [Rank 3] [H]
+i(162332, 255397);	-- Thermo-Accelerated Plague Spreader [Rank 3] [A]
+i(162736, 255397);	-- Thermo-Accelerated Plague Spreader [Rank 3] [H]
+i(162339, 256075);	-- XA-1000 Surface Skimmer [Rank 3]
+--- NYI ---
+i(0, 255398);	-- Charged Refrigeration Projectile
+i(0, 255399);	-- Charged Refrigeration Projectile
+i(0, 255400);	-- Charged Refrigeration Projectile
+i(0, 255401);	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+i(0, 255402);	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+i(0, 255403);	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+i(0, 255404);	-- Neurological Immobilization Bomb
+i(0, 255405);	-- Neurological Immobilization Bomb
+i(0, 255406);	-- Neurological Immobilization Bomb
+i(0, 255410);	-- Catchroot Seed Spreader
+i(0, 255411);	-- Catchroot Seed Spreader
+i(0, 255412);	-- Catchroot Seed Spreader
+i(0, 255413);	-- Electro-Induced Slumber Bomb
+i(0, 255414);	-- Electro-Induced Slumber Bomb
+i(0, 255415);	-- Electro-Induced Slumber Bomb
+i(0, 269126);	-- Belt Enchant: Miniaturized Plasma Shield
+i(0, 269205);	-- Belt Enchant: Holographic Horror Projector
+i(0, 269208);	-- Belt Enchant: Personal Space Amplifier
+i(0, 255454);	-- REUSE ME \\ Monelite Boomstick \\ Monalite Boomstick
 
+-----------------
+-- PATCH 8.1.0 --
+-----------------
+i(0, 287279);		-- Aqueous Thermo-Degradation
+i(0, 291093);		-- Imbued Bionic Bifocals
+i(0, 291091);		-- Imbued Gearspun Goggles
+i(0, 291095);		-- Imbued Orthogonal Optics
+i(0, 291089);		-- Imbued Synthetic Specs
+i(0, 286647);		-- Sanguinated Thermo-Degradation
+i(0, 282806);		-- Sinister Combatant's Discombobulator [Rank 1]
+i(0, 282809);		-- Sinister Combatant's Stormsteel Destroyer [Rank 1]
+i(0, 286864);		-- Surging Bionic Bifocals
+i(0, 286867);		-- Surging Gearspun Goggles
+i(0, 286870);		-- Surging Orthogonal Optics
+i(0, 286873);		-- Surging Synthetic Specs
+i(0, 283914);		-- Unstable Temporal Time Shifter [Rank 1]
+--- ITEM ---
+i(165912, 286866);	-- Charged SP1-R1-73D Bionic Bifocals
+i(165914, 286869);	-- Charged SP1-R1-73D Gearspun Goggles
+i(165916, 286872);	-- Charged SP1-R1-73D Orthogonal Optics
+i(165918, 286875);	-- Charged SP1-R1-73D Synthetic Specs
+i(166989, 291094);	-- Emblazoned Bionic Bifocals
+i(166988, 291092);	-- Emblazoned Gearspun Goggles
+i(166990, 291096);	-- Emblazoned Orthogonal Optics
+i(166987, 291090);	-- Emblazoned Synthetic Specs
+i(165844, 286478);	-- Mechantula
+i(165302, 282807);	-- Sinister Combatant's Discombobulator [Rank 2]
+i(165303, 282808);	-- Sinister Combatant's Discombobulator [Rank 3]
+i(165304, 282810);	-- Sinister Combatant's Stormsteel Destroyer [Rank 2]
+i(165305, 282811);	-- Sinister Combatant's Stormsteel Destroyer [Rank 3]
+i(165911, 286865);	-- SP1-R1-73D Bionic Bifocals
+i(165913, 286868);	-- SP1-R1-73D Gearspun Goggles
+i(165915, 286871);	-- SP1-R1-73D Orthogonal Optics
+i(165917, 286874);	-- SP1-R1-73D Synthetic Specs
+i(166277, 283915);	-- Unstable Temporal Time Shifter [Rank 2] [A]
+i(166736, 283915);	-- Unstable Temporal Time Shifter [Rank 2] [H]
+i(166276, 283916);	-- Unstable Temporal Time Shifter [Rank 3]
+
+-----------------
+-- PATCH 8.1.5 --
+-----------------
+--- QUEST ---
+i(0, 282975);		-- The Ub3r-Spanner
+i(0, 283399);		-- Ub3r-Module: Short-Fused Bomb Bots
+i(0, 283403);		-- Ub3r-Module: Ub3r-Improved Target Dummy
+i(0, 283401);		-- Ub3r-Module: Ub3r S3ntry Mk. X8.0
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+--- TRAINER ---
+i(0, 299010);		-- Abyssal Bionic Bifocals
+i(0, 299007);		-- Abyssal Gearspun Goggles
+i(0, 299013);		-- Abyssal Orthogonal Optics
+i(0, 299004);		-- Abyssal Synthetic Specs
+i(0, 294784);		-- Notorious Combatant's Discombobulator [Rank 1]
+i(0, 294787);		-- Notorious Combatant's Stormsteel Destroyer [Rank 1]
+i(0, 299105);		-- Wormhole Generator: Kul Tiras
+i(0, 299106);		-- Wormhole Generator: Zandalar
+--- ITEM ---
+i(168767, 299011);	-- A5C-3N-D3D Bionic Bifocals
+i(168765, 299008);	-- A5C-3N-D3D Gearspun Goggles
+i(168769, 299014);	-- A5C-3N-D3D Orthogonal Optics
+i(168763, 299005);	-- A5C-3N-D3D Synthetic Specs
+i(168660, 298930);	-- Blingtron 7000
+i(168768, 299012);	-- Charged A5C-3N-D3D Bionic Bifocals
+i(168766, 299009);	-- Charged A5C-3N-D3D Gearspun Goggles
+i(168770, 299015);	-- Charged A5C-3N-D3D Orthogonal Optics
+i(168764, 299006);	-- Charged A5C-3N-D3D Synthetic Specs
+i(169541, 294785);	-- Notorious Combatant's Discombobulator [Rank 2]
+i(169542, 294786);	-- Notorious Combatant's Discombobulator [Rank 3]
+i(169543, 294788);	-- Notorious Combatant's Stormsteel Destroyer [Rank 2]
+i(169544, 294789);	-- Notorious Combatant's Stormsteel Destroyer [Rank 3]
+i(169609, 256132);	-- Super-Charged Engine
+i(168533, 298255);	-- Ub3r-Module: P.O.G.O.
+i(168535, 298256);	-- Ub3r-Module: Scrap Cannon
+i(168534, 298257);	-- Ub3r-Module: Ub3r-Coil
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+--- TRAINER ---
+i(0, 305863);		-- Uncanny Combatant's Discombobulator [Rank 1]
+i(0, 305860);		-- Uncanny Combatant's Stormsteel Destroyer [Rank 1]
+i(0, 307220);		-- Void Focus
+--- ITEM ---
+i(174362, 305951);	-- A-N0M-A-L0U5 Bionic Bifocals
+i(171313, 305942);	-- A-N0M-A-L0U5 Gearspun Goggles
+i(174364, 305948);	-- A-N0M-A-L0U5 Orthogonal Optics
+i(171314, 305945);	-- A-N0M-A-L0U5 Synthetic Specs
+i(170409, 305949);	-- Paramount Bionic Bifocals
+i(170407, 305940);	-- Paramount Gearspun Goggles
+i(170411, 305946);	-- Paramount Orthogonal Optics
+i(170405, 305943);	-- Paramount Synthetic Specs
+i(170408, 305950);	-- Superior Bionic Bifocals
+i(170406, 305941);	-- Superior Gearspun Goggles
+i(170410, 305947);	-- Superior Orthogonal Optics
+i(170404, 305944);	-- Superior Synthetic Specs
+i(174273, 305862);	-- Uncanny Combatant's Discombobulator [Rank 2]
+i(174274, 305861);	-- Uncanny Combatant's Discombobulator [Rank 3]
+i(174271, 305859);	-- Uncanny Combatant's Stormsteel Destroyer [Rank 2]
+i(174272, 305858);	-- Uncanny Combatant's Stormsteel Destroyer [Rank 3]
 
 -----------------
 -- PATCH 9.0.1 --

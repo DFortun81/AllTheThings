@@ -287,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							i(165522),	-- Mech-Jockey Grips
 							i(165580),	-- Ramping Amplitude Gigavolt Engine
 							i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
-							i(166276),	-- Schematic: Unstable Temporal Time Shifter
+							i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
 						},
 					}),
 					e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
@@ -365,7 +365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
 						i(166518),	-- G.M.O.D. (MOUNT!)
-						i(166276),	-- Schematic: Unstable Temporal Time Shifter
+						i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
 					},
 				}),
 				e(2343, {	-- Lady Jaina Proudmoore

@@ -1,1 +1,3 @@
 110955@@@Release Spirit
+256133@@@Potion of Specter Swiftness
+256134@@@Potion of Soul Purity

@@ -88,7 +88,7 @@ end
 local VALIANT_DAILY_OnUpdate = function() end
 -- #ENDIF
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
 	n(ARGENT_TOURNAMENT, {
 		["maps"] = { ICECROWN, 170 },
 		["groups"] = {

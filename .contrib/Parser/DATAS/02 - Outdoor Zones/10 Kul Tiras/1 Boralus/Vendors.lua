@@ -304,7 +304,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
 						["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner (A)
-						["f"] = MISC,
+						["filterID"] = MISC,
+						["g"] = {
+							r(282975),	-- The Ub3r-Spanner (RECIPE!)
+							r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots (RECIPE!)
+							r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy (RECIPE!)
+							r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 (RECIPE!)
+						},
 					}),
 				},
 			}),
@@ -1264,8 +1270,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(166277, {	-- Schematic: Unstable Temporal Time Shift [Rank 2] (RECIPE!)
+					i(166277, {	-- Schematic: Unstable Temporal Time Shifter [Rank 2] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
+						["timeline"] = { ADDED_8_1_0 },
 					}),
 					i(161572, {	-- Yardarm Sharpshooter's Boots
 						["cost"] = 14000000,	-- 1,400g

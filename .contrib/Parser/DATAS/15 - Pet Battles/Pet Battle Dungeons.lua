@@ -178,7 +178,7 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 					i(165857, {	-- Alarm-O-Dog (PET!)
 						["cost"] = { { "i", 165835, 3 } },	-- 3x Pristine Gizmo
 					}),
-					i(165844, {	-- Schematic: Mechantula
+					i(165844, {	-- Schematic: Mechantula (RECIPE!)
 						["cost"] = { { "i", 165835, 1 } },	-- 1x Pristine Gizmo
 					}),
 					i(165839, {	-- Unopened Gnomeregan Supply Box

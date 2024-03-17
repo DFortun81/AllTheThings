@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
 				["g"] = {
-					i(162340),	-- Schematic: Electroshock Mount Motivator
+					i(162340),	-- Schematic: Electroshock Mount Motivator  [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52353, {	-- Work Order: Enchant Ring - Seal of Haste

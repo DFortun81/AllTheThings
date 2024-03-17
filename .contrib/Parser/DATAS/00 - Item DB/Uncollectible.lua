@@ -251,11 +251,9 @@ i(80513);	-- Vintage Bug Sprayer
 i(6352);	-- Waterlogged Crate
 i(160376);	-- Wilderbew Special
 -- Bfa Consumables
-i(162107);	-- [Makeshift Azerite Detector]
 i(162108);	-- [Rough-hooked Tidespray Linen]
 i(162109);	-- [Storm Silver Spurs]
 i(162110);	-- [Disenchanting Rod]
-i(162111);	-- [Monelite Fish Finder]
 i(162111);	-- [Kaleidoscopic Lens]
 i(163826);	-- Raider's Supply Cache
 -- Bfa Quest Items
