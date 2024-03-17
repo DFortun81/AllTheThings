@@ -1878,3 +1878,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
+-- #if AFTER LEGION
+root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, m(UNGORO_CRATER, {
+	-- Quests are under altquests but triggering warnings in retail
+	-- TODO: Add and Timeline these properly in WoTLK and CATA Classic if they are present
+	q(13914),	-- Searing Roc Feathers	 WOTLK:Searing Roc Feathers	 CATA:Searing Roc Feathers
+	q(13915),	-- Hungry, Hungry Hatchling	 WOTLK:Hungry, Hungry Hatchling	 CATA:Hungry, Hungry Hatchling
+	q(13916),	-- Poached, Scrambled, Or Raw?	 WOTLK:Poached, Scrambled, Or Raw?	 CATA:Poached, Scrambled, Or Raw?
+	q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub	 CATA:Gorishi Grub
+})));
+-- #endif
