@@ -1,6 +1,6 @@
 root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
-		ach(1516, {	-- Accomplished Angler
+	n(ACHIEVEMENTS, {
+		applyclassicphase(WRATH_PHASE_ONE, ach(1516, {	-- Accomplished Angler
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				1561,		-- 1000 Fish
@@ -19,18 +19,48 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				1257,		-- The Scavenger
 			}},
 			["timeline"] = { ADDED_3_0_3 },
+			["requireSkill"] = FISHING,
 			["groups"] = {
 				title(51),	-- Salty <Name> (TITLE!)
 			},
+		})),
+		ach(1556, {	-- 25 Fish
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
+			["rank"] = 25,
 		}),
-		ach(1561),	-- 1000 Fish
-		ach(1560),	-- 500 Fish
-		ach(1559),	-- 250 Fish
-		ach(1558),	-- 100 Fish
-		ach(1557),	-- 50 Fish
-		ach(1556),	-- 25 Fish
+		ach(1557, {	-- 50 Fish
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
+			["rank"] = 50,
+		}),
+		ach(1558, {	-- 100 Fish
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
+			["rank"] = 100,
+		}),
+		ach(1559, {	-- 250 Fish
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
+			["rank"] = 250,
+		}),
+		ach(1560, {	-- 500 Fish
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
+			["rank"] = 500,
+		}),
+		ach(1561, {	-- 1000 Fish
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
+			["rank"] = 1000,
+		}),
 		ach(1243, {	-- Fish Don't Leave Footprints
-			["provider"] = { "i", 34109 },	-- Weather-Beaten Journal
+			["timeline"] = { "added 2.3.0" },
+			-- #if BEFORE WRATH
+			["description"] = "Learn the ability to find fish.",
+			-- #endif
+			["spellID"] = 43308,	-- Find Fish
+			["requireSkill"] = FISHING,
 		}),
 		ach(878, {	-- One That Didn't Get Away
 			["providers"] = {
@@ -41,10 +71,17 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				{ "i", 13887 },	-- 52 Pound Redgill
 				{ "i", 13880 },	-- 68 Pound Grouper
 				{ "i", 13917 },	-- 103 Pound Mightfish
+				-- #if AFTER WRATH
 				{ "i", 44703 },	-- Dark Herring
+				-- #endif
 				{ "i", 19808 },	-- Rockhide Strongfish
 				{ "i", 6360 },	-- Steelscale Crushfish
 			},
+			-- #if BEFORE WRATH
+			["description"] = "Catch one of the rare fish in the list below.\n\nKeep one in your inventory somewhere to keep credit for this.",
+			-- #endif
+			["timeline"] = { "added 3.0.1" },	-- NOTE: Players didn't actually get credit for this... Sigh.
+			["requireSkill"] = FISHING,
 		}),
 		ach(5478, {	-- The Limnologist
 			["sym"] = {{ "achievement_criteria" }},
@@ -54,113 +91,156 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { "added 4.0.3" },
 		}),
-		ach(153),	-- The Old Gnome and the Sea
-		ach(1257, {	-- The Scavenger
-			crit(3873, {	-- Bloodsail Wreckage
-				["provider"] = { "o", 180901 },	-- Bloodsail Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					THE_CAPE_OF_STRANGLETHORN,
-					NORTHERN_STRANGLETHORN,
-					-- #else
-					STRANGLETHORN_VALE,
-					-- #endif
-				},
-			}),
-			crit(3876, {	-- Floating Wreckage
-				["provider"] = { "o", 180751 },	-- Floating Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					BLASTED_LANDS,
-					EASTERN_PLAGUELANDS,
-					SWAMP_OF_SORROWS,
-					TANARIS,
-					THOUSAND_NEEDLES,
-					-- #else
-					AZSHARA,
-					FERALAS,
-					TANARIS,
-					-- #endif
-				},
-			}),
-			crit(3874, {	-- Schooner Wreckage
-				["provider"] = { "o", 180662 },	-- Schooner Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
-					-- #endif
-					HILLSBRAD_FOOTHILLS,
-					STONETALON_MOUNTAINS,
-					WETLANDS,
-				},
-			}),
-			crit(3872, {	-- Steam Pump Flotsam
-				["provider"] = { "o", 182952 },	-- Steam Pump Flotsam
-				["requireSkill"] = FISHING,
-				["maps"] = { ZANGARMARSH },
-			}),
-			crit(3875, {	-- Waterlogged Wreckage
-				["provider"] = { "o", 180685 },	-- Waterlogged Wreckage
-				["requireSkill"] = FISHING,
-				["maps"] = {
-					-- #if AFTER CATA
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					WESTERN_PLAGUELANDS,
-					-- #else
-					ALTERAC_MOUNTAINS,
-					ARATHI_HIGHLANDS,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					STRANGLETHORN_VALE,
-					-- #endif
-				},
-			}),
+		ach(153, {	-- The Old Gnome and the Sea
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
 		}),
-		ach(3218, {	-- Turtles All the Way Down
+		ach(1257, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- The Scavenger
+			["requireSkill"] = FISHING,
+			["groups"] = {
+				crit(3873, {	-- Bloodsail Wreckage
+					["provider"] = { "o", 180901 },	-- Bloodsail Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						THE_CAPE_OF_STRANGLETHORN,
+						NORTHERN_STRANGLETHORN,
+						-- #else
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+				}),
+				crit(3876, {	-- Floating Wreckage
+					["provider"] = { "o", 180751 },	-- Floating Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						BLASTED_LANDS,
+						EASTERN_PLAGUELANDS,
+						SWAMP_OF_SORROWS,
+						TANARIS,
+						THOUSAND_NEEDLES,
+						-- #else
+						AZSHARA,
+						FERALAS,
+						TANARIS,
+						-- #endif
+					},
+				}),
+				crit(3874, {	-- Schooner Wreckage
+					["provider"] = { "o", 180662 },	-- Schooner Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						ARATHI_HIGHLANDS,
+						ASHENVALE,
+						-- #endif
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+					},
+				}),
+				crit(3872, {	-- Steam Pump Flotsam
+					["provider"] = { "o", 182952 },	-- Steam Pump Flotsam
+					["requireSkill"] = FISHING,
+					["maps"] = { ZANGARMARSH },
+				}),
+				crit(3875, {	-- Waterlogged Wreckage
+					["provider"] = { "o", 180685 },	-- Waterlogged Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						ARATHI_HIGHLANDS,
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+				}),
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(3218, {	-- Turtles All the Way Down
 			["provider"] = { "i", 46109 },	-- Sea Turtle
 			["timeline"] = { ADDED_3_0_3 },
-		}),
-	})),
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({
-		["timeline"] = {
+			["requireSkill"] = FISHING,
+		})),
+	}),
+	expansion(EXPANSION.CLASSIC, {
+		ach(126, {	-- Journeyman Fisherman
+			["spellID"] = 7731,	-- Fishing (Journeyman)
 			-- #if NOT ANYCLASSIC
-			ADDED_3_0_2,
+			["timeline"] = { ADDED_3_0_2 },
 			-- #endif
-	}}, {
-		ach(126),	-- Journeyman Fisherman
-		ach(127),	-- Expert Fisherman
-		ach(128),	-- Artisan Fisherman
-		ach(150, {	-- The Fishing Diplomat
-			crit(5274),	-- Ogrimmar
-			crit(5275),	-- Stormwind
+			["requireSkill"] = FISHING,
+			["rank"] = 2,
 		}),
-	})),
-	expansion(EXPANSION.TBC, bubbleDownSelf({
+		ach(127, {	-- Expert Fisherman
+			["spellID"] = 7732,	-- Fishing (Expert)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
+			["requireSkill"] = FISHING,
+			["rank"] = 3,
+		}),
+		ach(128, {	-- Artisan Fisherman
+			["spellID"] = 18248,	-- Fishing (Artisan)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
+			["requireSkill"] = FISHING,
+			["rank"] = 4,
+		}),
+		ach(150, {	-- The Fishing Diplomat
+			["timeline"] = { ADDED_3_0_2 },
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["requireSkill"] = FISHING,
+		}),
+	}),
+	expansion(EXPANSION.TBC, {
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
 			-- #else
 			ADDED_2_0_5,
 			-- #endif
-	}}, {
-		ach(129),	-- Outland Fisherman
-		ach(1225, {	-- Outland Angler
-			["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
-			["sym"] = {{ "achievement_criteria" }},
-		}),
-	})),
+		},
+		["groups"] = {
+			applyclassicphase(TBC_PHASE_ONE, ach(129, {	-- Master Fisherman / Outland Fisherman
+				-- #if ANYCLASSIC
+				["timeline"] = { ADDED_2_0_5 },
+				-- #else
+				["timeline"] = { ADDED_3_0_2 },
+				-- #endif
+				["spellID"] = 33095,	-- Fishing (Master)
+				["requireSkill"] = FISHING,
+				["rank"] = 5,
+			})),
+			ach(1225, {	-- Outland Angler
+				["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
+				["timeline"] = { ADDED_3_0_2 },
+				["sym"] = {{ "achievement_criteria" }},
+				["requireSkill"] = FISHING,
+			}),
+		},
+	}),
 	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
-		ach(130),	-- Northrend Fisherman
-		ach(1517, {	-- Northrend Angler
+		applyclassicphase(WRATH_PHASE_ONE, ach(130, {	-- Grand Master Fisherman
+			["spellID"] = 51294,	-- Fishing (Grand Master)
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = FISHING,
+			["rank"] = 6,
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1517, {	-- Northrend Angler
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
-			["sym"] = {{ "achievement_criteria" }},
-		}),
+			["requireSkill"] = FISHING,
+		})),
 	})),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(4917),	-- Cataclysmic Fisherman

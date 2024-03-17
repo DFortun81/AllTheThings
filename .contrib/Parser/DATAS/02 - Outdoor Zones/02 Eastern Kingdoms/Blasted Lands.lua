@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4909, {	-- Blasted Lands Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Razelikh
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(766, {	-- Explore Blasted Lands
 					-- #if BEFORE WRATH
