@@ -11,6 +11,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4896, {	-- Arathi Highlands Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #if AFTER MOP
 					["groups"] = {
 						crit(38274, {	-- Faldir's Cove
 							["sourceQuest"] = 26628,	-- Death From Below
@@ -56,6 +57,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26628,	-- Death From Below
+						38275,	-- Refuge Pointe (A)
+						26117,	-- For Southshore
+						38276,	-- Refuge Pointe (A)
+						26038,	-- Attack on the Tower
+						38277,	-- Myzrael's Tale (A)
+						26049,	-- The Princess Unleashed (A)
+						38270,	-- Galen's Fall (H)
+						26081,	-- Alina's Reward
+						38271,	-- Galen's Fall (H)
+						26029,	-- The Real Threat
+						38272,	-- Hammerfall (H)
+						26912,	-- The Princess Unleashed (H)
+						38273,	-- Hammerfall (H)
+						26108,	-- Guile of the Raptor
+					},
+					-- #endif
 				}),
 				explorationAch(761, {	-- Explore Arathi Highlands
 					-- #if BEFORE WRATH

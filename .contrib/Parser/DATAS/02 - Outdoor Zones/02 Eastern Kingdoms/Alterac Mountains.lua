@@ -137,6 +137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Crushridge Warmonger
 							["provider"] = { "n", 2287 },	-- Crushridge Warmonger
+							["coord"] = { 38, 54.6, ALTERAC_MOUNTAINS },
 						}),
 						i(5249, {	-- Burning Sliver
 							["timeline"] = { "removed 4.0.3" },
