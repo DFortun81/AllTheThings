@@ -713,6 +713,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(13903, {	-- Gorishi Grub
+					["providers"] = {
+						{ "n", 34320 },	-- Venomhide Hatchling
+						{ "i", 46362 },	-- Venomhide Hatchling
+					},
+					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["races"] = { UNDEAD, TROLL, TAUREN },
+					["isDaily"] = true,
+					["lvl"] = lvlsquish(48, 48, 15),
+					["groups"] = {
+						objective(1, {	-- 0/10 Silithid Meat fed to Venomhide Hatchling
+							["provider"] = { "i", 46380 },	-- Silithid Meat
+							["crs"] = {
+								6551,	-- Gorishi Wasp
+								6552,	-- Gorishi Worker
+								6553,	-- Gorishi Reaver
+								6554,	-- Gorishi Stinger
+								6555,	-- Gorishi Tunneler
+							},
+						}),
+						i(47196, {	-- Venomhide Baby Tooth
+							["timeline"] = { "added 3.2.0.10026" },
+						}),
+					},
+				}),
+				-- #endif
 				q(24699, {	-- Gormashh the Glutinous
 					["qg"] = 38276,	-- Tara
 					["sourceQuest"] = 24737,	-- Super Sticky
@@ -787,6 +814,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(13915, {	-- Hungry, Hungry Hatchling
+					["providers"] = {
+						{ "n", 34320 },	-- Venomhide Hatchling
+						{ "i", 46362 },	-- Venomhide Hatchling
+					},
+					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["races"] = { UNDEAD, TROLL, TAUREN },
+					["isDaily"] = true,
+					["lvl"] = lvlsquish(48, 48, 15),
+					["groups"] = {
+						objective(1, {	-- 0/10 Fresh Dinosaur Meat fed to Venomhide Hatchling
+							["provider"] = { "i", 46367 },	-- Fresh Dinosaur Meat
+							["crs"] = {
+								6501,	-- Stegodon
+								6502,	-- Plated Stegodon
+								6503,	-- Spiked Stegodon
+								6504,	-- Thunderstomp Stegodon
+								9163,	-- Diemetradon
+								9164,	-- Elder Diemetradon
+								9167,	-- Frenzied Pterrordax
+							},
+						}),
+						i(47196, {	-- Venomhide Baby Tooth
+							["timeline"] = { "added 3.2.0.10026" },
+						}),
+					},
+				}),
+				-- #endif
 				q(24865, {	-- Is This Stuff Still Good?
 					["provider"] = { "o", 161526 },	-- Crate of Foodstuffs
 					["coord"] = { 68.5, 36.5, UNGORO_CRATER },
@@ -1026,6 +1082,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(13916, {	-- Poached, Scrambled, Or Raw?
+					["providers"] = {
+						{ "n", 34320 },	-- Venomhide Hatchling
+						{ "i", 46362 },	-- Venomhide Hatchling
+					},
+					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["races"] = { UNDEAD, TROLL, TAUREN },
+					["isDaily"] = true,
+					["lvl"] = lvlsquish(48, 48, 15),
+					["groups"] = {
+						objective(1, {	-- 0/12 Silithid Egg fed to Venomhide Hatchling
+							["providers"] = {
+								{ "i",  46382 },	-- Silithid Egg
+								{ "o", 195037 },	-- Silithid Egg
+							},
+						}),
+						i(47196, {	-- Venomhide Baby Tooth
+							["timeline"] = { "added 3.2.0.10026" },
+						}),
+					},
+				}),
+				-- #endif
 				q(24715, {	-- Repairing A-Me 01
 					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 24714,	-- Chasing A-Me 01
@@ -1111,6 +1190,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(13914, {	-- Searing Roc Feathers
+					["providers"] = {
+						{ "n", 34320 },	-- Venomhide Hatchling
+						{ "i", 46362 },	-- Venomhide Hatchling
+					},
+					["timeline"] = { "added 3.2.0.10026", REMOVED_5_0_4 },
+					["maps"] = { TANARIS },
+					["races"] = { UNDEAD, TROLL, TAUREN },
+					["isDaily"] = true,
+					["lvl"] = lvlsquish(48, 48, 15),
+					["groups"] = {
+						objective(1, {	-- 0/5 Searing Roc Plumage
+							["provider"] = { "i", 46381 },	-- Searing Roc Plumage
+							["cr"] = 5430,	-- Searing Roc
+						}),
+						i(47196, {	-- Venomhide Baby Tooth
+							["timeline"] = { "added 3.2.0.10026" },
+						}),
+					},
+				}),
+				-- #endif
 				q(24926, {	-- Serving A-Me 01
 					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 24715,	-- Repairing A-Me 01
@@ -1878,13 +1979,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
--- #if AFTER LEGION
-root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, m(UNGORO_CRATER, {
-	-- Quests are under altquests but triggering warnings in retail
-	-- TODO: Add and Timeline these properly in WoTLK and CATA Classic if they are present
-	q(13914),	-- Searing Roc Feathers	 WOTLK:Searing Roc Feathers	 CATA:Searing Roc Feathers
-	q(13915),	-- Hungry, Hungry Hatchling	 WOTLK:Hungry, Hungry Hatchling	 CATA:Hungry, Hungry Hatchling
-	q(13916),	-- Poached, Scrambled, Or Raw?	 WOTLK:Poached, Scrambled, Or Raw?	 CATA:Poached, Scrambled, Or Raw?
-	q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub	 CATA:Gorishi Grub
-})));
--- #endif

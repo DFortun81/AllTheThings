@@ -533,10 +533,6 @@ q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 C
 q(13476),	-- For Great Honor	 WOTLK:For Great Honor	 CATA:For Great Honor
 q(13478),	-- Concerted Efforts	 WOTLK:Concerted Efforts	 CATA:Concerted Efforts
 q(13649),	-- Justin's Fun Test	 WOTLK:Justin's Fun Test	 CATA:Justin's Fun Test
-q(13914),	-- Searing Roc Feathers	 WOTLK:Searing Roc Feathers	 CATA:Searing Roc Feathers
-q(13915),	-- Hungry, Hungry Hatchling	 WOTLK:Hungry, Hungry Hatchling	 CATA:Hungry, Hungry Hatchling
-q(13916),	-- Poached, Scrambled, Or Raw?	 WOTLK:Poached, Scrambled, Or Raw?	 CATA:Poached, Scrambled, Or Raw?
-q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub	 CATA:Gorishi Grub
 q(13990),	-- Upper Deck Promo - Chicken Mount
 q(13997),	-- If You're Reading This While I'm In Combat...	 WOTLK:If You're Reading This While I'm In Combat...	 CATA:If You're Reading This While I'm In Combat...
 q(14032),	-- Kobold Camp Cleanup [Programming Test]	 WOTLK:Kobold Camp Cleanup	 CATA:Kobold Camp Cleanup
