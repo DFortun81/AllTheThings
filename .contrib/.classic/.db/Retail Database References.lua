@@ -23,9 +23,8 @@
 -- #IMPORT: 21 - Holidays\\
 
 -- Expansion Features
--- #IMPORT: 06 - Expansion Features\\02 Wrath of the Lich King\\Achievements.lua
--- #IMPORT: 06 - Expansion Features\\02 Wrath of the Lich King\\Argent Tournament.lua
--- #IMPORT: 06 - Expansion Features\\03 Cataclysm\\
+-- #IMPORT: 06 - Expansion Features\\03 - Wrath of the Lich King\\
+-- #IMPORT: 06 - Expansion Features\\04 - Cataclysm\\
 
 -- World Events
 -- #IMPORT: 07 - Events\\Elemental Unrest\\
