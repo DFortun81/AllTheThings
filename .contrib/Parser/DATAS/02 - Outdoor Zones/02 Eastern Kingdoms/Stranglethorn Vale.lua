@@ -2778,6 +2778,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 697,	-- Bloodscalp Shaman
 				}),
 				i(4611, {	-- Blue Pearl
+					["provider"] = { "o", 2744 },	-- Giant Clam
 					-- #if BEFORE CATA
 					["crs"] = {
 						877,	-- Saltscale Forager

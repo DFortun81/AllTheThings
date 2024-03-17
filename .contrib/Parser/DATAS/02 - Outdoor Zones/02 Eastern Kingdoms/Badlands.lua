@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4900, {	-- Badlands Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Rhea
@@ -37,8 +37,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27715,	-- The Day that Deathwing Came: What Really Happened
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27769,	-- Rhea Revealed
+						27930,	-- Devastation
+						27794,	-- Return to Blam (A)
+						27888,	-- Return to Blam (H)
+						27715,	-- The Day that Deathwing Came: What Really Happened
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(765, {	-- Explore Badlands
 					-- #if BEFORE WRATH
@@ -174,6 +182,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.4, 37.0, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Shadowstout
+							["provider"] = { "i", 62510 },	-- Shadowstout
+							["coord"] = { 49.2, 29.0, BADLANDS },
+							["crs"] = {
+								2740,	-- Shadowforge Darkweaver
+								2739,	-- Shadowforge Tunneler
+							},
+						}),
+					},
 				}),
 				q(720, {	-- A Sign of Hope (1/2)
 					["provider"] = { "o", 2868 },	-- Crumpled Map
@@ -191,7 +209,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 				}),
 				q(27764, {	-- A Strange Request
-					["qg"] = 46652,	-- Dolph Blastus
+					["providers"] = {
+						{ "n", 46652 },	-- Dolph Blastus
+						{ "i", 62387 },	-- Dolph's Package
+					},
 					["sourceQuest"] = 27774,	-- Easily Swayed
 					["coord"] = { 65.0, 38.3, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -220,6 +241,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Broken Chalice
+							["provider"] = { "i", 62485 },	-- Broken Chalice
+							["cr"] = 46772,	-- Reliquary Excavator <The Reliquary>
+						}),
+						objective(2, {	-- 0/1 Dusty Vase
+							["provider"] = { "i", 62486 },	-- Dusty Vase
+							["cr"] = 46772,	-- Reliquary Excavator <The Reliquary>
+						}),
+						objective(3, {	-- 0/1 Earthen Hieroglyph
+							["provider"] = { "i", 62487 },	-- Earthen Hieroglyph
+							["cr"] = 46772,	-- Reliquary Excavator <The Reliquary>
+						}),
+						objective(4, {	-- 0/1 Trogg Tool
+							["provider"] = { "i", 62488 },	-- Trogg Tool
+							["cr"] = 46772,	-- Reliquary Excavator <The Reliquary>
+						}),
 						i(63186, {	-- Upstart's Breastplate
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -284,6 +321,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.2, 36.9, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Thoroughly investigated The Warden
+							["provider"] = { "n", 46768 },	-- The Warden
+							["coord"] = { 50.2, 52.8, BADLANDS },
+						}),
+						objective(2, {	-- Thoroughly investigated The Sentinel
+							["provider"] = { "n", 46769 },	-- The Sentinel
+							["coord"] = { 50.6, 51.8, BADLANDS },
+						}),
+					},
 				}),
 				q(27887, {	-- Ancient Protectors (H)
 					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
@@ -294,6 +341,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 52.0, 51.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Thoroughly investigated The Warden
+							["provider"] = { "n", 46768 },	-- The Warden
+							["coord"] = { 50.2, 52.8, BADLANDS },
+						}),
+						objective(2, {	-- Thoroughly investigated The Sentinel
+							["provider"] = { "n", 46769 },	-- The Sentinel
+							["coord"] = { 50.6, 51.8, BADLANDS },
+						}),
+					},
 				}),
 				q(2258, {	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
@@ -450,6 +507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27930, {	-- Devastation
+					["provider"] = { "o", 206504 },	-- Rhea's Final Note
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["coord"] = { 15.9, 33.2, BADLANDS },
@@ -486,6 +544,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27763,	-- To Fuselight Proper
 					["coord"] = { 65.0, 38.3, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/9 Dustbelcher slain
+							["providers"] = {
+								{ "n", 46693 },	-- Dustbelcher Instructor
+								{ "n", 46694 },	-- Dustbelcher Initiate
+								{ "n", 46695 },	-- Dustbelcher Trainee
+							},
+							["coord"] = { 60.6, 26.8, BADLANDS },
+						}),
+					},
 				}),
 				q(27828, {	-- Eric, the Utility Dwarf
 					["qgs"] = { 46852, 46855 },	-- Eric "The Swift"
@@ -521,6 +589,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27764,	-- A Strange Request
 					["coord"] = { 66.3, 55.4, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/6 Wild Black Dragon Egg
+							["providers"] = {
+								{ "i",  62388 },	-- Wild Black Dragon Egg
+								{ "o", 206320 },	-- Wild Black Dragon Egg
+							},
+							["coord"] = { 69.0, 42.4, BADLANDS },
+						}),
+					},
 				}),
 				q(1559, {	-- Flash Bomb Recipe
 					["qg"] = 2817,	-- Rigglefuzz
@@ -564,6 +641,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Engraved Tablets of Golganneth
+							["providers"] = {
+								{ "i",  62509 },	-- Engraved Tablets of Golganneth
+								{ "o", 206388 },	-- Angor's Coffer
+							},
+						}),
 						i(63173, {	-- Ironhew Cloak
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -602,6 +685,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Dustbelcher slain
+							["providers"] = {
+								{ "n", 2717 },	-- Dustbelcher Mauler
+								{ "n", 2718 },	-- Dustbelcher Shaman
+							},
+							["coord"] = { 14.8, 65.4, BADLANDS },
+						}),
 						i(63199, {	-- Storm's Bow
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -625,6 +715,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Dustbelcher slain
+							["providers"] = {
+								{ "n", 2717 },	-- Dustbelcher Mauler
+								{ "n", 2718 },	-- Dustbelcher Shaman
+							},
+							["coord"] = { 14.8, 65.4, BADLANDS },
+						}),
 						i(63204, {	-- Bow of Kargath
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -661,7 +758,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27826, {	-- Into the Dragon's Mouth
-					["qg"] = 46664,	-- Dr. Hieronymus Blam
+					["providers"] = {
+						{ "n", 46664 },	-- Dr. Hieronymus Blam
+						{ "i", 62513 },	-- Purified Black Dragon Egg
+					},
 					["sourceQuest"] = 27794,	-- Return to Blam
 					["coord"] = { 46.8, 56.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -672,6 +772,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27775,	-- When the Going Gets Tough, Cheat
 					["coord"] = { 64.2, 38.1, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/12 Billy Goat nudged
+							["providers"] = {
+								{ "n", 46393 },	-- Billy Goat
+								{ "i", 62397 },	-- Billy Goat Blaster
+							},
+							["coord"] = { 63.4, 34.8, BADLANDS },
+						}),
+					},
 				}),
 				q(27882, {	-- It's Not About History, It's About Power
 					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
@@ -680,6 +789,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Broken Chalice
+							["provider"] = { "i", 62594 },	-- Broken Chalice
+							["cr"] = 46773,	-- Explorers' League Excavator <The Explorers' League>
+						}),
+						objective(2, {	-- 0/1 Dusty Vase
+							["provider"] = { "i", 62595 },	-- Dusty Vase
+							["cr"] = 46773,	-- Explorers' League Excavator <The Explorers' League>
+						}),
+						objective(3, {	-- 0/1 Earthen Hieroglyph
+							["provider"] = { "i", 62596 },	-- Earthen Hieroglyph
+							["cr"] = 46773,	-- Explorers' League Excavator <The Explorers' League>
+						}),
+						objective(4, {	-- 0/1 Trogg Tool
+							["provider"] = { "i", 62597 },	-- Trogg Tool
+							["cr"] = 46773,	-- Explorers' League Excavator <The Explorers' League>
+						}),
 						i(63190, {	-- Upstart's Breastplate
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -709,6 +834,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 66.3, 55.4, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Witness the final piece of Rhea's studies
+							["provider"] = { "n", 46658 },	-- Nyxondra
+						}),
+					},
 				}),
 				q(715, {	-- Liquid Stone
 					["qg"] = 2920,	-- Lucien Tosselwrench
@@ -740,6 +870,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/1 Supply Crate
+							["providers"] = {
+								{ "i", 4629 },	-- Supply Crate
+								{ "o", 2867 },	-- Excavation Supply Crate
+							},
+							["coord"] = { 66.5, 31.6, BADLANDS },
+						}),
+					},
 				}),
 				q(739, {	-- Murdaloc
 					["provider"] = { "o", 2875 },	-- Battered Dwarven Skeleton
@@ -761,7 +900,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27889, {	-- New Kargath
-					["qg"] = 46664,	-- Dr. Hieronymus Blam
+					["providers"] = {
+						{ "n", 46664 },	-- Dr. Hieronymus Blam
+						{ "i", 62513 },	-- Purified Black Dragon Egg
+					},
 					["sourceQuest"] = 27888,	-- Return to Blam
 					["coord"] = { 46.8, 56.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -905,7 +1047,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 33,
 					["groups"] = {
 						objective(1, {	-- 0/1 Krom Stoutarm's Treasure
-							["provider"] = { "i", 8027 },	-- Krom Stoutarm's Treasure
+							["providers"] = {
+								{ "i",   8027 },	-- Krom Stoutarm's Treasure
+								{ "o", 124389 },	-- Krom Stoutarm's Chest
+							},
 							["coord"] = { 35.2, 97.4, LOCH_MODAN },
 						}),
 					},
@@ -919,7 +1064,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 33,
 					["groups"] = {
 						objective(1, {	-- 0/1 Garrett Family Treasure
-							["provider"] = { "i", 8026 },	-- Garrett Family Treasure
+							["providers"] = {
+								{ "i",   8026 },	-- Garrett Family Treasure
+								{ "o", 124388 },	-- Garrett Family Chest
+							},
 							["coord"] = { 33.9, 93.0, LOCH_MODAN },
 						}),
 					},
@@ -937,7 +1085,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(27794, {	-- Return to Blam (A)
-					["provider"] = { "o", 206374 },	-- Trove of the Watchers
+					["providers"] = {
+						{ "o", 206374 },	-- Trove of the Watchers
+						{ "i",  62497 },	-- Eye of the Watchers
+					},
 					["sourceQuest"] = 27912,	-- The Titans' Trove
 					["coord"] = { 50.2, 53.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -958,7 +1109,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27888, {	-- Return to Blam (H)
-					["provider"] = { "o", 206374 },	-- Trove of the Watchers
+					["providers"] = {
+						{ "o", 206374 },	-- Trove of the Watchers
+						{ "i",  62497 },	-- Eye of the Watchers
+					},
 					["sourceQuest"] = 27913,	-- The Titans' Trove
 					["coord"] = { 50.2, 53.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1038,24 +1192,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					-- #if BEFORE 4.0.3
 					["description"] = "This quest is repeatable but can only be completed while \"Broken Alliances\" (H) or \"Tremors of the Earth\" (A) is in your quest log.",
-					["cost"] = {
-						{ "i", 4843, 1 },	-- Amethyst Runestone
-						{ "i", 4845, 1 },	-- Diamond Runestone
-						{ "i", 4844, 1 },	-- Opal Runestone
-					},
+					-- #endif
 					["groups"] = {
-						{
-							["itemID"] = 4843,	-- Amethyst Runestone
-							["coord"] = { 81.27, 64.29, BADLANDS },
-						},
-						{
-							["itemID"] = 4845,	-- Diamond Runestone
+						objective(1, {	-- 0/1 Diamond Runestone
+							["providers"] = {
+								{ "i", 4845 },	-- Diamond Runestone
+								{ "o", 2842 },	-- Pillar of Diamond
+							},
 							["coord"] = { 83.5, 32.9, BADLANDS },
-						},
-						{
-							["itemID"] = 4844,	-- Opal Runestone
+						}),
+						objective(2, {	-- 0/1 Opal Runestone
+							["providers"] = {
+								{ "i", 4844 },	-- Opal Runestone
+								{ "o", 2848 },	-- Pillar of Opal
+							},
 							["coord"] = { 72.38, 66.94, BADLANDS },
-						},
+						}),
+						objective(3, {	-- 0/1 Amethyst Runestone
+							["providers"] = {
+								{ "i", 4843 },	-- Amethyst Runestone
+								{ "o", 2858 },	-- Pillar of Amethyst
+							},
+							["coord"] = { 81.27, 64.29, BADLANDS },
+						}),
 						{
 							["itemID"] = 4615,	-- Blacklash's Bindings
 							["coord"] = { 82.6, 48.8, BADLANDS },
@@ -1067,13 +1226,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 2759,	-- Hematus
 						},
 					},
-					-- #endif
 				},
 				q(27766, {	-- Second Sample: Whelps
 					["qg"] = 46654,	-- Rhea
 					["sourceQuest"] = 27764,	-- A Strange Request
 					["coord"] = { 66.3, 55.4, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Scalding Whelp Corpse
+							["provider"] = { "i", 62390 },	-- Scalding Whelp Corpse
+							["coord"] = { 70.4, 47.8, BADLANDS },
+							["cr"] = 2725,	-- Scalding Whelp
+						}),
+					},
 				}),
 				q(709, {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost
@@ -1147,18 +1312,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(27825, {	-- Survival of the Fattest
-					["qg"] = 46930,	-- Victoria Delen
-					["coord"] = { 20.8, 55.7, BADLANDS },
+				{
+					["allianceQuestData"] = q(27825, {	-- Survival of the Fattest [A]
+						["qg"] = 46930,	-- Victoria Delen
+						["coord"] = { 20.8, 55.7, BADLANDS },
+					}),
+					["hordeQuestData"] = q(27879, {	-- Survival of the Fattest [H]
+						["qg"] = 46660,	-- Aidan Summerwind
+						["coord"] = { 18.4, 41.5, BADLANDS },
+					}),
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27879, {	-- Survival of the Fattest
-					["qg"] = 46660,	-- Aidan Summerwind
-					["coord"] = { 18.4, 41.5, BADLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = HORDE_ONLY,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/6 Dustbelcher Meat
+							["providers"] = {
+								{ "i",  62544 },	-- Dustbelcher Meat
+								{ "o", 206498 },	-- Dustbelcher Meat
+								{ "o", 206420 },	-- Dustbelcher Meat
+							},
+							["coord"] = { 12.6, 75.6, BADLANDS },
+							["cr"] = 46928,	-- Dustbelcher Butcher
+						}),
+						objective(1, {	-- 0/10 Dustbelcher Silk
+							["providers"] = {
+								{ "i",  62547 },	-- Dustbelcher Silk
+								{ "o", 206499 },	-- Dustbelcher Chest
+							},
+							["coord"] = { 13.7, 75.5, BADLANDS },
+						}),
+					},
+				},
 				q(27890, {	-- The Bad Dogs
 					["qg"] = 46654,	-- Rhea
 					["sourceQuest"] = 27889,	-- New Kargath
@@ -1171,12 +1353,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27927,	-- Down to the Scar
 					["coord"] = { 26.2, 62.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/5 Dang-Blasted Rock Elemental slain
+							["provider"] = { "n", 46467 },	-- Dang-Blasted Rock Elemental
+						}),
+						objective(2, {	-- Punch Deathwing in the Face
+							["provider"] = { "n", 46471 },	-- Deathwing <Aspect of Death>
+						}),
+					},
 				}),
 				q(27714, {	-- The Day that Deathwing Came: The Real Story
 					["qg"] = 2920,	-- Lucien Tosselwrench
 					["sourceQuest"] = 27713,	-- The Day that Deathwing Came
 					["coord"] = { 26.2, 62.5, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Grow large enough to reach the clouds
+							["provider"] = { "n", 47080 },	-- Lucien Tosselwrench
+						}),
+						objective(2, {	-- Find Deathwing
+							["provider"] = { "n", 47103 },	-- Cowardly Deathwing
+						}),
+					},
 				}),
 				q(27715, {	-- The Day that Deathwing Came: What Really Happened
 					["qg"] = 4618,	-- Martek the Exiled
@@ -1184,6 +1382,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.1, 62.4, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- Choose an admirer to save
+							["providers"] = {
+								{ "n", 47123 },	-- Night Elf Admirer
+								{ "n", 47124 },	-- Human Admirer
+								{ "n", 47125 },	-- Orc Admirer
+								{ "n", 47126 },	-- Blood Elf Admirer
+							},
+						}),
 						i(63193, {	-- Theldurin's Fist
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1219,6 +1425,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Engraved Tablets of Golganneth
+							["providers"] = {
+								{ "i",  62509 },	-- Engraved Tablets of Golganneth
+								{ "o", 206388 },	-- Angor's Coffer
+							},
+						}),
 						i(63168, {	-- Ironhew Cloak
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1276,6 +1488,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 52.2, 51.6, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Dark Iron Head
+							["provider"] = { "i", 62650 },	-- Dark Iron Head
+							["crs"] = {
+								2743,	-- Shadowforge Warrior
+								2742,	-- Shadowforge Chanter
+								2739,	-- Shadowforge Tunneler
+								2740,	-- Shadowforge Darkweaver
+							},
+						}),
+					},
 				}),
 				q(27709, {	-- The Sentinel's Game (A)
 					["provider"] = { "o", 206336 },	-- Marble Slab
@@ -1292,33 +1515,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27797, {	-- The Sentinel's Pawn (A)
-					["qg"] = 46760,	-- Lead Prospector Durdin
+					["providers"] = {
+						{ "n", 46760 },	-- Lead Prospector Durdin
+						{ "i", 62490 },	-- Sentinel's Pawn
+					},
 					["sourceQuest"] = 27792,	-- All's Fair in Love, War, and Archaeology
 					["coord"] = { 49.2, 36.9, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27884, {	-- The Sentinel's Pawn (H)
-					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+					["providers"] = {
+						{ "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
+						{ "i", 62490 },	-- Sentinel's Pawn
+					},
 					["sourceQuest"] = 27882,	-- It's Not About History, It's About Power
 					["coord"] = { 52.0, 51.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(27831, {	-- The Sorrow and the Fury (A)
+				{	-- The Sorrow and the Fury
 					["qg"] = 46654,	-- Rhea
-					["sourceQuest"] = 27830,	-- Their Hunt Continues
-					["coord"] = { 21.1, 57.7, BADLANDS },
+					["allianceQuestData"] = q(27831, {	-- The Sorrow and the Fury [A]
+						["sourceQuest"] = 27830,	-- Their Hunt Continues
+						["coord"] = { 21.1, 57.7, BADLANDS },
+					}),
+					["hordeQuestData"] = q(27896, {	-- The Sorrow and the Fury [H]
+						["sourceQuest"] = 27895,	-- Their Hunt Continues
+						["coord"] = { 18.1, 42.5, BADLANDS },
+					}),
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27896, {	-- The Sorrow and the Fury (H)
-					["qg"] = 46654,	-- Rhea
-					["sourceQuest"] = 27895,	-- Their Hunt Continues
-					["coord"] = { 18.1, 42.5, BADLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = HORDE_ONLY,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/1 Nyxondra slain
+							["provider"] = { "n", 46861 },	-- Nyxondra
+							["coord"] = { 10.0, 40.6, BADLANDS },
+						}),
+						objective(2, {	-- 0/12 Nyxondra's Broodling slain
+							["provider"] = { "n", 46916 },	-- Nyxondra's Broodling
+							["coord"] = { 11.0, 38.2, BADLANDS },
+						}),
+					},
+				},
 				{	-- The Star, the Hand and the Heart
 					["allianceQuestData"] = q(735, {	-- The Star, the Hand and the Heart [A]
 						["providers"] = {
@@ -1380,7 +1617,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27772, {	-- The Venerable Doctor Blam
-					["qg"] = 46655,	-- Rheastrasza
+					["providers"] = {
+						{ "n", 46655 },	-- Rheastrasza
+						{ "i", 62395 },	-- Black Dragon Samples
+					},
 					["sourceQuest"] = 27769,	-- Rhea Revealed
 					["coord"] = { 66.4, 55.5, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1400,24 +1640,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27796, {	-- The Warden's Pawn (A)
-					["qg"] = 46760,	-- Lead Prospector Durdin
+					["providers"] = {
+						{ "n", 46760 },	-- Lead Prospector Durdin
+						{ "i", 62489 },	-- Warden's Pawn
+					},
 					["sourceQuest"] = 27792,	-- All's Fair in Love, War, and Archaeology
 					["coord"] = { 49.2, 36.9, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27883, {	-- The Warden's Pawn (H)
-					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+					["providers"] = {
+						{ "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
+						{ "i", 62489 },	-- Warden's Pawn
+					},
 					["sourceQuest"] = 27882,	-- It's Not About History, It's About Power
 					["coord"] = { 52.0, 51.2, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27829, {	-- The Wrath of a Dragonflight (A)
-					["providers"] = {
-						{ "n", 46856 },	-- Baelog
-						{ "n", 46855 },	-- Eric "The Swift"
-						{ "n", 46857 },	-- Olaf
+					["qgs"] = {
+						46856,	-- Baelog
+						46855,	-- Eric "The Swift"
+						46857,	-- Olaf
 					},
 					["sourceQuests"] = {
 						27834,	-- Baelog, the Glass Cannon
@@ -1433,10 +1679,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27894, {	-- The Wrath of a Dragonflight (H)
-					["providers"] = {
-						{ "n", 47021 },	-- Amakkar
-						{ "n", 47022 },	-- Gargal
-						{ "n", 47024 },	-- Jurrix Whitemane
+					["qgs"] = {
+						47021,	-- Amakkar
+						47022,	-- Gargal
+						47024,	-- Jurrix Whitemane
 					},
 					["sourceQuests"] = {
 						27891,	-- Amakkar, Jack of All Trades
@@ -1451,26 +1697,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(27830, {	-- Their Hunt Continues (A)
+				{	-- Their Hunt Continues
 					["qg"] = 46654,	-- Rhea
-					["sourceQuest"] = 27829,	-- The Wrath of a Dragonflight
-					["coord"] = { 21.1, 57.7, BADLANDS },
+					["allianceQuestData"] = q(27830, {	-- Their Hunt Continues [A]
+						["sourceQuest"] = 27829,	-- The Wrath of a Dragonflight
+						["coord"] = { 21.1, 57.7, BADLANDS },
+					}),
+					["hordeQuestData"] = q(27895, {	-- Their Hunt Continues [H]
+						["sourceQuest"] = 27894,	-- The Wrath of a Dragonflight
+						["coord"] = { 18.1, 42.5, BADLANDS },
+					}),
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27895, {	-- Their Hunt Continues (H)
-					["qg"] = 46654,	-- Rhea
-					["sourceQuest"] = 27894,	-- The Wrath of a Dragonflight
-					["coord"] = { 18.1, 42.5, BADLANDS },
-					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = HORDE_ONLY,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/1 General Jirakka slain
+							["provider"] = { "n", 46860 },	-- General Jirakka
+							["coord"] = { 15.6, 42.8, BADLANDS },
+						}),
+						objective(2, {	-- 0/1 Moldarr slain
+							["provider"] = { "n", 46938 },	-- Moldarr
+							["coord"] = { 17.2, 47.6, BADLANDS },
+						}),
+						objective(3, {	-- 0/6 Darkflight slain
+							["providers"] = {
+								{ "n", 46917 },	-- Darkflight Flameblade
+								{ "n", 46918 },	-- Darkflight Shadowspeaker
+							},
+							["coord"] = { 19.2, 45.8, BADLANDS },
+						}),
+					},
+				},
 				q(27771, {	-- Third Sample: Implanted Eggs
 					["qg"] = 46654,	-- Rhea
 					["sourceQuest"] = 27770,	-- Lifting the Veil
 					["coord"] = { 66.3, 55.4, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/3 Nyxondra's Egg
+							["providers"] = {
+								{ "i",  62393 },	-- Nyxondra's Egg
+								{ "o", 206321 },	-- Nyxondra's Egg
+							},
+							["coord"] = { 66.0, 56.7, BADLANDS },
+						}),
 						i(63163, {	-- Strong Arm Mace
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1649,11 +1917,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 36,
 					["groups"] = {
 						objective(1, {	-- 0/1 Advisor's Pack
-							["provider"] = { "i", 23658 },	-- Advisor's Pack
+							["providers"] = {
+								{ "i",  23658 },	-- Advisor's Pack
+								{ "o", 181628 },	-- Empty Barrel
+							},
 							["coord"] = { 41.0, 29.2, BADLANDS },
 						}),
 						objective(2, {	-- 0/1 Advisor's Rapier
-							["provider"] = { "i", 23660 },	-- Advisor's Rapier
+							["providers"] = {
+								{ "i",  23660 },	-- Advisor's Rapier
+								{ "o", 181627 },	-- Weapon Rack
+							},
 							["coord"] = { 41.7, 26.8, BADLANDS },
 						}),
 					},
@@ -1663,6 +1937,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.2, 38.1, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Instructor's Rod
+							["provider"] = { "i", 62396 },	-- Instructor's Rod
+							["coord"] = { 57.6, 26.0, BADLANDS },
+							["cr"] = 46693,	-- Dustbelcher Instructor
+						}),
 						i(63155, {   -- Goat Horn Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
