@@ -36,6 +36,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26171,	-- You Are Rakh'likh, Demon (alliance)
+						25701,	-- You Are Rakh'likh, Demon (horde)
+						26187,	-- The Downfall of Marl Wormthorn (alliance)
+						25720,	-- The Downfall of Marl Wormthorn (horde)
+						25705,	-- False Idols
+						25706,	-- Neptool's Revenge
+					},
 					-- #endif
 					-- #endif
 				}),
@@ -119,13 +128,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(QUESTS, {
-				q(26172, {	-- A Bloodmage's Gotta Eat Too
+				q(26172, {	-- A Bloodmage's Gotta Eat Too (A)
 					["qg"] = 42298,	-- Kasim Sharim
-					["sourceQuest"] = 26158,	-- Attune the Bloodstone
+					["sourceQuest"] = 26158,	-- Attune the Bloodstone (A)
 					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Ashmane Steak
+							["provider"] = { "i", 55828 },	-- Ashmane Steak
+							["coord"] = { 51.6, 29.8, BLASTED_LANDS },
+							["cr"] = 5992,	-- Ashmane Boar
+						}),
 						i(59384, {	-- Ashmane Bracers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -137,13 +151,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(25690, {	-- A Bloodmage's Gotta Eat Too
+				q(25690, {	-- A Bloodmage's Gotta Eat Too (H)
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["sourceQuest"] = 25684,	-- Attune the Bloodstone
+					["sourceQuest"] = 25684,	-- Attune the Bloodstone (H)
 					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Ashmane Steak
+							["provider"] = { "i", 55828 },	-- Ashmane Steak
+							["coord"] = { 51.6, 29.8, BLASTED_LANDS },
+							["cr"] = 5992,	-- Ashmane Boar
+						}),
 						i(59422, {	-- Ashmane Bracers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -171,12 +190,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35745, {	-- Attack of the Iron Horde
-					["qg"] = 82851,	-- Thrall
-					["coord"] = { 71.8, 47.7, BLASTED_LANDS },
+				q(35460, {	-- Attack of the Iron Horde (A)
+					["qg"] = 82270,	-- Vindicator Maraad
+					["coord"] = { 66.6, 28.2, BLASTED_LANDS },
 					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Ironmarch Grunt slain
+							["providers"] = {
+								{ "n", 76189 },	-- Ironmarch Grunt
+								{ "n", 76556 },	-- Ironmarch Grunt
+								{ "n", 84228 },	-- Ironmarch Skirmisher <Iron Horde>
+							},
+						}),
 						i(118761, {	-- Invader's Scarlet Seal
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
@@ -194,12 +220,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35460, {	-- Attack of the Iron Horde
-					["qg"] = 82270,	-- Vindicator Maraad
-					["coord"] = { 66.6, 28.2, BLASTED_LANDS },
+				q(35745, {	-- Attack of the Iron Horde (H)
+					["qg"] = 82851,	-- Thrall
+					["coord"] = { 71.8, 47.7, BLASTED_LANDS },
 					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Ironmarch Grunt slain
+							["providers"] = {
+								{ "n", 76189 },	-- Ironmarch Grunt
+								{ "n", 76556 },	-- Ironmarch Grunt
+								{ "n", 84228 },	-- Ironmarch Skirmisher <Iron Horde>
+							},
+						}),
 						i(118761, {	-- Invader's Scarlet Seal
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
@@ -236,6 +269,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 25702,	-- Home... Gone... Naga...
 					["coord"] = { 71.0, 60.1, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Bloodwash Barbarian slain
+							["provider"] = { "n", 41386 },	-- Bloodwash Barbarian
+						}),
+						objective(2, {	-- 0/10 Bloodwash Enchantress slain
+							["provider"] = { "n", 41387 },	-- Bloodwash Enchantress
+						}),
+					},
 				}),
 				q(35751, {	-- Attack on Nethergarde
 					["qg"] = 84928,	-- Thrall
@@ -244,21 +285,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 6.0.1.18505" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(25684, {	-- Attune the Bloodstone
+				q(25684, {	-- Attune the Bloodstone (A)
 					["qg"] = 7506,	-- Bloodmage Lynnore
 					["sourceQuest"] = 25683,	-- The Dreadmaul Furnace
 					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(26158, {	-- Attune the Bloodstone
+				q(26158, {	-- Attune the Bloodstone (H)
 					["qg"] = 42298,	-- Kasim Sharim
 					["sourceQuest"] = 26157,	-- Kasim Sharim
 					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28857, {	-- Blasted Lands: The Other Side of the World
+				q(28857, {	-- Blasted Lands: The Other Side of the World (A)
 					["qg"] = 11118,	-- Innkeeper Vizzie
 					["altQuests"] = { 28673 },	-- Hero's Call: Blasted Lands!
 					["coord"] = { 59.8, 51.1, WINTERSPRING },
@@ -266,7 +307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(28858, {	-- Blasted Lands: The Other Side of the World
+				q(28858, {	-- Blasted Lands: The Other Side of the World (H)
 					["qg"] = 11118,	-- Innkeeper Vizzie
 					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
 					["coord"] = { 59.8, 51.1, WINTERSPRING },
@@ -274,16 +315,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(26160, {	-- Blood Ritual
+				q(26160, {	-- Blood Ritual (A)
 					["qg"] = 42298,	-- Kasim Sharim
-					["sourceQuest"] = 26159,	-- The First Step
+					["sourceQuest"] = 26159,	-- The First Step (A)
 					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(25686, {	-- Blood Ritual
+				q(25686, {	-- Blood Ritual (H)
 					["qg"] = 7506,	-- Bloodmage Lynnore
-					["sourceQuest"] = 25685,	-- The First Step
+					["sourceQuest"] = 25685,	-- The First Step (H)
 					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -302,6 +343,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Intact Shadowsworn Spell Focus
+							["provider"] = { "i", 57134 },	-- Intact Shadowsworn Spell Focus
+							["crs"] = {
+								42297,	-- Shadowsworn Occultist
+								42296,	-- Shadowsworn Spellblade
+							},
+						}),
 						i(59378, {	-- Belt of Occult Horrors
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -323,6 +371,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/20 Darktail Bonepicker slain
+							["providers"] = {
+								{ "n", 42235 },	-- Darktail Bonepicker
+								{ "i", 57119 },	-- Enohar's Explosive Arrows
+							},
+						}),
 						i(59371, {	-- Bonepicker Bracers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -337,41 +391,65 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35762, {	-- Death to the Dreadmaul
-					["qg"] = 84928,	-- Thrall
-					["sourceQuests"] = {
-						35751,	-- Attack on Nethergarde
-						35750,	-- Lunatic Lieutenants
-						35761,	-- Ransacking Nethergarde
-					},
-					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-				}),
-				q(35488, {	-- Death to the Dreadmaul
+				q(35488, {	-- Death to the Dreadmaul (A)
 					["qg"] = 84929,	-- Vindicator Maraad
 					["sourceQuests"] = {
 						35492,	-- For Nethergarde!
-						35486,	-- Lunatic Lieutenants
+						35486,	-- Lunatic Lieutenants (A)
 						35494,	-- Mementos of the Fallen
 					},
 					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
 					["timeline"] = { "added 6.0.1.18505" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Dreadmaul slain
+							["providers"] = {
+								{ "n", 78345 },	-- Dreadmaul Crusher
+								{ "n", 77771 },	-- Dreadmaul Destroyer
+								{ "n", 78348 },	-- Dreadmaul Flamebelcher
+								{ "n", 78349 },	-- Dreadmaul Magmaster <Iron Horde>
+								{ "n", 78488 },	-- Dreadmaul Packmaster
+								{ "n", 82451 },	-- Toothsmash the Annihilator
+							},
+						}),
+					},
 				}),
-				q(25719, {	-- Demoniac Vessel
-					["qg"] = 42348,	-- Elijah Dawnflight
-					["sourceQuest"] = 25718,	-- How Best to Proceed
-					["coord"] = { 47.1, 69.1, BLASTED_LANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+				q(35762, {	-- Death to the Dreadmaul (H)
+					["qg"] = 84928,	-- Thrall
+					["sourceQuests"] = {
+						35751,	-- Attack on Nethergarde
+						35750,	-- Lunatic Lieutenants (H)
+						35761,	-- Ransacking Nethergarde
+					},
+					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
+					["timeline"] = { "added 6.0.1.18505" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Dreadmaul slain
+							["providers"] = {
+								{ "n", 78345 },	-- Dreadmaul Crusher
+								{ "n", 77771 },	-- Dreadmaul Destroyer
+								{ "n", 78348 },	-- Dreadmaul Flamebelcher
+								{ "n", 78349 },	-- Dreadmaul Magmaster <Iron Horde>
+								{ "n", 78488 },	-- Dreadmaul Packmaster
+								{ "n", 82451 },	-- Toothsmash the Annihilator
+							},
+						}),
+					},
 				}),
-				q(26186, {	-- Demoniac Vessel
+				q(26186, {	-- Demoniac Vessel (A)
 					["qg"] = 42352,	-- Cenarion Observer Shayana
 					["sourceQuest"] = 26185,	-- Advice from the Cenarion Circle
 					["coord"] = { 46.3, 87.1, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(25719, {	-- Demoniac Vessel (H)
+					["qg"] = 42348,	-- Elijah Dawnflight
+					["sourceQuest"] = 25718,	-- How Best to Proceed
+					["coord"] = { 47.1, 69.1, BLASTED_LANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25711, {	-- Eliminate the Okril'lon
 					["qg"] = 5393,	-- Quartermaster Lungertz
