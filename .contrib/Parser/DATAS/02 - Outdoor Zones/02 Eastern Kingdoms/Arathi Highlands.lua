@@ -233,15 +233,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Trelane's Phylactery
-							["provider"] = { "i", 4530 },	-- Trelane's Phylactery
+							["providers"] = {
+								{ "i", 4530 },	-- Trelane's Phylactery
+								{ "o", 2717 },	-- Trelane's Footlocker
+							},
 							["coord"] = { 18.2, 68.2, ARATHI_HIGHLANDS },
 						}),
 						objective(2, {	-- 0/1 Trelane's Orb
-							["provider"] = { "i", 4531 },	-- Trelane's Orb
+							["providers"] = {
+								{ "i", 4531 },	-- Trelane's Orb
+								{ "o", 2716 },	-- Trelane's Chest
+							},
 							["coord"] = { 18.1, 69.1, ARATHI_HIGHLANDS },
 						}),
 						objective(3, {	-- 0/1 Trelane's Ember Agate
-							["provider"] = { "i", 4532 },	-- Trelane's Ember Agate
+							["providers"] = {
+								{ "i", 4532 },	-- Trelane's Ember Agate
+								{ "o", 2718 },	-- Trelane's Lockbox
+							},
 							["coord"] = { 18.0, 67.9, ARATHI_HIGHLANDS },
 						}),
 					},
@@ -253,6 +262,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Trelane's Phylactery
+							["providers"] = {
+								{ "i", 4530 },	-- Trelane's Phylactery
+								{ "o", 2717 },	-- Trelane's Footlocker
+							},
+							["coord"] = { 11.3, 70.3, ARATHI_HIGHLANDS },
+						}),
+						objective(2, {	-- 0/1 Trelane's Orb
+							["providers"] = {
+								{ "i", 4531 },	-- Trelane's Orb
+								{ "o", 2716 },	-- Trelane's Chest
+							},
+							["coord"] = { 11.3, 71.1, ARATHI_HIGHLANDS },
+						}),
+						objective(3, {	-- 0/1 Trelane's Ember Agate
+							["providers"] = {
+								{ "i", 4532 },	-- Trelane's Ember Agate
+								{ "o", 2718 },	-- Trelane's Lockbox
+							},
+							["coord"] = { 11.1, 70.0, ARATHI_HIGHLANDS },
+						}),
 						i(59159, {	-- Highland Mace
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -291,6 +321,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26041,	-- Stones of Binding
 					["coord"] = { 30.0, 59.0, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Rod of Order
+							["provider"] = { "i", 4469 },	-- Rod of Order
+							["coord"] = { 43.6, 66.6, ARATHI_HIGHLANDS },
+							["cr"] = 2611,	-- Fozruk
+						}),
+					},
 				}),
 				q(677, {	-- Call to Arms (1/3)
 					["qg"] = 2771,	-- Drum Fel
@@ -356,6 +393,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/15 Boulderfist Shaman slain
+							["provider"] = { "n", 2570 },	-- Boulderfist Shaman
+						}),
+						objective(2, {	-- 0/10 Boulderfist Lord slain
+							["provider"] = { "n", 2571 },	-- Boulderfist Lord
+						}),
 						i(59178, {	-- Ramshackle Bracers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -381,6 +424,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 13.3, 34.3, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Boulderfist Ogre slain
+							["provider"] = { "n", 2562 },	-- Boulderfist Ogre
+						}),
+						objective(2, {	-- 0/10 Boulderfist Enforcer slain
+							["provider"] = { "n", 2564 },	-- Boulderfist Enforcer
+						}),
+					},
 				}),
 				q(26429, {	-- Crush the Witherbark
 					["qg"] = 2771,	-- Drum Fel
@@ -388,6 +439,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Witherbark Axe Thrower slain
+							["provider"] = { "n", 2554 },	-- Witherbark Axe Thrower
+						}),
+						objective(2, {	-- 0/10 Witherbark Headhunter slain
+							["provider"] = { "n", 2556 },	-- Witherbark Headhunter
+						}),
+						objective(3, {	-- 0/8 Witherbark Witch Doctor slain
+							["providers"] = {
+								{ "n", 2555 },	-- Witherbark Witch Doctor
+								{ "n", 51633 },	-- Witherbark Witch Doctor
+							},
+						}),
+					},
 				}),
 				q(635, {	-- Crystal in the Mountains
 					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
@@ -444,19 +509,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/1 Maiden's Folly Charts
-							["provider"] = { "i", 4487 },	-- Maiden's Folly Charts
+							["providers"] = {
+								{ "i", 4487 },	-- Maiden's Folly Charts
+								{ "o", 2707 },	-- Maiden's Folly Charts
+							},
 							["coord"] = { 23.0, 84.5, ARATHI_HIGHLANDS },
 						}),
 						objective(2, {	-- 0/1 Maiden's Folly Log
-							["provider"] = { "i", 4489 },	-- Maiden's Folly Log
+							["providers"] = {
+								{ "i", 4489 },	-- Maiden's Folly Log
+								{ "o", 2709 },	-- Maiden's Folly Log
+							},
 							["coord"] = { 23.5, 85.1, ARATHI_HIGHLANDS },
 						}),
 						objective(3, {	-- 0/1 Spirit of Silverpine Charts
-							["provider"] = { "i", 4488 },	-- Spirit of Silverpine Charts
+							["providers"] = {
+								{ "i", 4488 },	-- Spirit of Silverpine Charts
+								{ "o", 2708 },	-- Spirit of Silverpine Charts
+							},
 							["coord"] = { 20.5, 85.5, ARATHI_HIGHLANDS },
 						}),
 						objective(4, {	-- 0/1 Spirit of Silverpine Log
-							["provider"] = { "i", 4490 },	-- Spirit of Silverpine Log
+							["providers"] = {
+								{ "i", 4490 },	-- Spirit of Silverpine Log
+								{ "o", 2710 },	-- Spirit of Silverpine Log
+							},
 							["coord"] = { 20.7, 85.1, ARATHI_HIGHLANDS },
 						}),
 						i(4511, {	-- Black Water Hammer
@@ -486,6 +563,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 27.7, 83.2, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/10 Daggerspine Raider
+							["provider"] = { "n", 2595 },	-- Daggerspine Raider
+						}),
+						objective(2, {	-- 0/3 Daggerspine Sorceress
+							["provider"] = { "n", 2596 },	-- Daggerspine Sorceress
+						}),
 						i(59205, {	-- Folly's Spar
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -506,6 +589,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Bloodstone Amulet
+							["provider"] = { "i", 4495 },	-- Bloodstone Amulet
+							["crs"] = {
+								2589,	-- Syndicate Mercenary
+								2587,	-- Syndicate Pathstalker
+								2586,	-- Syndicate Highwayman
+							},
+						}),
+					},
 				}),
 				q(26117, {	-- For Southshore
 					["qg"] = 2712,	-- Quae
@@ -616,6 +709,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Raptor Heart
+							["provider"] = { "i", 4513 },	-- Raptor Heart
+							["cr"] = 2561,	-- Highland Fleshstalker
+						}),
 						i(59203, {	-- Hammerfall Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -753,6 +850,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sealed Folder
+							["provider"] = { "i", 4482 },	-- Sealed Folder
+							["coord"] = { 53.6, 64.2, ARATHI_HIGHLANDS },
+							["cr"] = 2714,	-- Forsaken Courier
+						}),
+					},
 				}),
 				q(26116, {	-- Kinelory Strikes
 					["qg"] = 2713,	-- Kinelory
@@ -848,6 +952,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 39.9, 48.8, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Syndicate Mercenary slain
+							["providers"] = {
+								{ "n", 2586 },	-- Syndicate Highwayman
+								{ "n", 2589 },	-- Syndicate Mercenary
+								{ "n", 2587 },	-- Syndicate Pathstalker
+								-- #if AFTER 8.0.1
+								{ "n", 142703 },	-- Syndicate Highwayman
+								-- #endif
+							},
+						}),
+					},
 				}),
 				q(26113, {	-- Quae and Kinelory
 					["qg"] = 2608,	-- Commander Amaren
@@ -903,6 +1019,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.7, 34.7, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Highland Raptor Eye
+							["provider"] = { "i", 4512 },	-- Highland Raptor Eye
+							["crs"] = {
+								2559,	-- Highland Strider
+								2560,	-- Highland Thrasher
+							},
+						}),
+					},
 				}),
 				q(26430, {	-- Revantusk Village
 					["qg"] = 2771,	-- Drum Fel
@@ -937,6 +1062,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sigil of Arathor
+							["provider"] = { "i", 4458 },	-- Sigil of Arathor
+							["coord"] = { 36.4, 56.6, ARATHI_HIGHLANDS },
+							["cr"] = 2612,	-- Lieutenant Valorcall
+						}),
+					},
 				}),
 				q(639, {	-- Sigil of Strom
 					["qg"] = 2703,	-- Zengu
@@ -948,6 +1080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Sigil of Strom
 							["provider"] = { "i", 4440 },	-- Sigil of Strom
+							["coord"] = { 27.6, 63.4, ARATHI_HIGHLANDS },
 							["crs"] = {
 								2590,	-- Syndicate Conjuror
 								2591,	-- Syndicate Magus
@@ -962,6 +1095,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sigil of Strom
+							["provider"] = { "i", 4440 },	-- Sigil of Strom
+							["coord"] = { 20.8, 66.4, ARATHI_HIGHLANDS },
+							["crs"] = {
+								2590,	-- Syndicate Conjuror
+								2591,	-- Syndicate Magus
+								2588,	-- Syndicate Prowler
+							},
+						}),
+					},
 				}),
 				q(641, {	-- Sigil of Thoradin
 					["providers"] = {
@@ -980,6 +1124,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Sigil Fragment
+							["provider"] = { "i", 4450 },	-- Sigil Fragment
+							["coord"] = { 15.2, 65, ARATHI_HIGHLANDS },
+							["crs"] = {
+								2584,	-- Stromgarde Defender
+								2583,	-- Stromgarde Troll Hunter
+								2585,	-- Stromgarde Vindicator
+							},
+						}),
+					},
 				}),
 				q(644, {	-- Sigil of Trollbane
 					["qg"] = 2703,	-- Zengu
@@ -996,7 +1151,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26052, {	-- Speak to Shakes
-					["qg"] = 2774,	-- Doctor Draxlegauge
+					["providers"] = {
+						{ "n", 2774 },	-- Doctor Draxlegauge
+						{ "i", 4493 },	-- Elven Gems
+					},
 					["sourceQuest"] = 26051,	-- Sunken Treasure
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1036,6 +1194,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26039,	-- The Princess Trapped
 					["coord"] = { 79.8, 31.6, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Burning Key
+							["providers"] = {
+								{ "i", 4483 },	-- Burning Key
+								{ "o", 2689 },	-- Stone of West Binding
+							},
+							["coord"] = { 18.9, 30.9, ARATHI_HIGHLANDS },
+						}),
+						objective(2, {	-- 0/1 Cresting Key
+							["providers"] = {
+								{ "i", 4484 },	-- Cresting Key
+								{ "o", 2691 },	-- Stone of East Binding
+							},
+							["coord"] = { 61.4, 30.4, ARATHI_HIGHLANDS },
+						}),
+						objective(3, {	-- 0/1 Thundering Key
+							["providers"] = {
+								{ "i", 4485 },	-- Thundering Key
+								{ "o", 2690 },	-- Stone of Outer Binding
+							},
+							["coord"] = { 46.4, 52, ARATHI_HIGHLANDS },
+						}),
+					},
 				}),
 				q(682, {	-- Stromgarde Badges
 					["qg"] = 2700,	-- Captain Nials
@@ -1065,6 +1246,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Stromgarde Badge
+							["provider"] = { "i", 4506 },	-- Stromgarde Badge
+							["crs"] = {
+								2590,	-- Syndicate Conjuror
+								2591,	-- Syndicate Magus
+								2588,	-- Syndicate Prowler
+							},
+						}),
 						i(59190, {	-- Slippers of Sorrowful Tidings
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1104,9 +1293,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Eldritch Shackles
-							["provider"] = { "i", 4473 },	-- Eldritch Shackles
+							["providers"] = {
+								{ "i", 4473 },	-- Eldritch Shackles
+								{ "i", 4472 },	-- Scroll of Myzrael
+							},
 							["coord"] = { 62.6, 34.6, ARATHI_HIGHLANDS },
-							["cost"] = { { "i", 4472, 1 } },	-- Scroll of Myzrael
 							["cr"] = 2755,	-- Myzrael
 						}),
 						i(4743, {	-- Pulsating Crystalline Shard
@@ -1121,15 +1312,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 				}),
 				q(666, {	-- Sunken Treasure (2/5)
-					["qg"] = 2774,	-- Doctor Draxlegauge
+					["providers"] = {
+						{ "n", 2774 },	-- Doctor Draxlegauge
+						{ "i", 4491 },	-- Goggles of Gem Hunting
+					},
 					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 35,
 					["groups"] = {
 						objective(1, {	-- 0/10 Elven Gem
-							["provider"] = { "i", 4492 },	-- Elven Gem
-							["cost"] = { { "i", 4491, 1 } },	-- Goggles of Gem Hunting
+							["providers"] = {
+								{ "i", 4492 },	-- Elven Gem
+								{ "o", 2712 },	-- Calcified Elven Gem
+							},
+							["coord"] = { 23.6, 87.4, ARATHI_HIGHLANDS },
 						}),
 						i(4547, {	-- Gnomish Zapper
 							["timeline"] = { "removed 4.0.3" },
@@ -1171,11 +1368,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 				}),
 				q(26051, {	-- Sunken Treasure
-					["qg"] = 2774,	-- Doctor Draxlegauge
+					["providers"] = {
+						{ "n", 2774 },	-- Doctor Draxlegauge
+						{ "i", 4491 },	-- Goggles of Gem Hunting
+					},
 					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/10 Elven Gem
+							["providers"] = {
+								{ "i", 4492 },	-- Elven Gem
+								{ "o", 2712 },	-- Calcified Elven Gem
+							},
+							["coord"] = { 16.1, 91.5, ARATHI_HIGHLANDS },
+						}),
 						i(59199, {	-- Bottom Waders
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1239,6 +1446,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/12 Mote of Myzrael
 							["provider"] = { "i", 4435 },	-- Mote of Myzrael
+							["coord"] = { 83.6, 33.4, ARATHI_HIGHLANDS },
 							["crs"] = {
 								2574,	-- Drywhisker Digger
 								2572,	-- Drywhisker Kobold
@@ -1252,6 +1460,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 					["coord"] = { 57.2, 34.5, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/12 Mote of Myzrael
+							["provider"] = { "i", 4435 },	-- Mote of Myzrael
+							["coord"] = { 74.2, 36.6, ARATHI_HIGHLANDS },
+							["crs"] = {
+								2574,	-- Drywhisker Digger
+								2572,	-- Drywhisker Kobold
+								2573,	-- Drywhisker Surveyor
+							},
+						}),
+					},
 				}),
 				{	-- The Princess Unleashed [A & H]
 					["allianceQuestData"] = q(26049, {	-- The Princess Unleashed [A]
@@ -1266,6 +1485,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Eldritch Shackles
+							["providers"] = {
+								{ "i", 4473 },	-- Eldritch Shackles
+								{ "i", 4472 },	-- Scroll of Myzrael
+							},
+							["coord"] = { 57.6, 34.6, ARATHI_HIGHLANDS },
+							["cr"] = 2755,	-- Myzrael
+						}),
 						i(59208, {	-- Wrap of Open Menace
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1310,6 +1537,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Or'Kalar's Head
+							["provider"] = { "i", 4551 },	-- Or'Kalar's Head
+							["coord"] = { 14.4, 67.6, ARATHI_HIGHLANDS },
+							["cr"] = 2773,	-- Or'Kalar
+						}),
 						i(59186, {	-- Skullslasher
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1348,6 +1580,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Befouled Bloodstone Orb
+							["provider"] = { "i", 4510 },	-- Befouled Bloodstone Orb
+							["coord"] = { 23.4, 64.4, ARATHI_HIGHLANDS },
+							["cr"] = 2783,	-- Marez Cowl
+						}),
 						i(59171, {	-- Bloodstone-Studded Cloak
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1383,6 +1620,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Kenata's Head
+							["provider"] = { "i", 5830 },	-- Kenata's Head
+							["coord"] = { 50.6, 37.0, ARATHI_HIGHLANDS },
+							["cr"] = 4480,	-- Kenata Dabyrie
+						}),
+						objective(2, {	-- 0/1 Marcel's Head
+							["provider"] = { "i", 5832 },	-- Marcel's Head
+							["coord"] = { 48.6, 39.6, ARATHI_HIGHLANDS },
+							["cr"] = 4481,	-- Marcel Dabyrie
+						}),
+						objective(3, {	-- 0/1 Fardel's Head
+							["provider"] = { "i", 5831 },	-- Fardel's Head
+							["coord"] = { 50.8, 39.6, ARATHI_HIGHLANDS },
+							["cr"] = 4479,	-- Fardel Dabyrie
+						}),
 						i(59158, {	-- Craig's Steel
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1413,6 +1665,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Azure Agate
 							["provider"] = { "i", 4527 },	-- Azure Agate
+							["coord"] = { 19.8, 66.4, ARATHI_HIGHLANDS },
 							["cr"] = 2570,	-- Boulderfist Shaman
 						}),
 					},
@@ -1423,6 +1676,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Azure Agate
+							["provider"] = { "i", 4527 },	-- Azure Agate
+							["coord"] = { 11.8, 68.8, ARATHI_HIGHLANDS },
+							["cr"] = 2570,	-- Boulderfist Shaman
+						}),
+					},
 				}),
 				q(6622, {	-- Triage (H)
 					["qg"] = 12920,	-- Doctor Gregory Victor
@@ -1490,11 +1750,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26033, {	-- Trol'kalar
-					["qg"] = 41944,	-- Galen Trollbane
+					["providers"] = {
+						{ "n", 41944 },	-- Galen Trollbane
+						{ "i", 4466 },	-- Sigil of Trollbane
+					},
 					["sourceQuest"] = 26032,	-- Sigil of Arathor
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sheathed Trol'kalar
+							["providers"] = {
+								{ "i",  56804 },	-- Sheathed Trol'kalar
+								{ "o", 203450 },	-- Trollbane's Tomb
+							},
+							["coord"] = { 22.5, 61.5, ARATHI_HIGHLANDS },
+						}),
+					},
 				}),
 				q(638, {	-- Trollbane
 					["qg"] = 2497,	-- Nimboya
@@ -1525,6 +1797,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Trelane's Wand of Invocation
+							["provider"] = { "i", 4525 },	-- Trelane's Wand of Invocation
+							["coord"] = { 49.0, 84.0, ARATHI_HIGHLANDS },
+							["cr"] = 2793,	-- Kor'gresh Coldrage
+						}),
+					},
 				}),
 				q(684, {	-- Wanted! Marez Cowl
 					["provider"] = { "o", 2713 },	-- Wanted Board
@@ -1549,6 +1828,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Marez's Head
+							["provider"] = { "i", 4515 },	-- Marez's Head
+							["coord"] = { 23.3, 64.8, ARATHI_HIGHLANDS },
+							["cr"] = 2783,	-- Marez Cowl
+						}),
 						i(59182, {	-- Syndicate Dagger
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1597,6 +1881,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Otto's Head
+							["provider"] = { "i", 4516 },	-- Otto's Head
+							["coord"] = { 19.4, 67.6, ARATHI_HIGHLANDS },
+							["cr"] = 2599,	-- Otto <Bodyguard>
+						}),
+						objective(2, {	-- 0/1 Falconcrest's Head
+							["provider"] = { "i", 4517 },	-- Falconcrest's Head
+							["coord"] = { 19.4, 66.4, ARATHI_HIGHLANDS },
+							["cr"] = 2597,	-- Lord Falconcrest <Syndicate Leader>
+						}),
 						i(59174, {	-- Dustfall Bracers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1653,6 +1947,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Witherbark Tusk
+							["provider"] = { "i", 4503 },	-- Witherbark Tusk
+							["crs"] = {
+								2554,	-- Witherbark Axe Thrower
+								2558,	-- Witherbark Berserker
+								2556,	-- Witherbark Headhunter
+								2557,	-- Witherbark Shadow Hunter
+								2553,	-- Witherbark Shadowcaster
+								2552,	-- Witherbark Troll
+								2555,	-- Witherbark Witch Doctor
+								2605,	-- Zalas Witherbark <Warband Leader>
+							},
+						}),
+						objective(2, {	-- 0/4 Witherbark Medicine Pouch
+							["provider"] = { "i", 4522 },	-- Witherbark Medicine Pouch
+							["cr"] = 2555,	-- Witherbark Witch Doctor
+						}),
+					},
 				}),
 			}),
 			n(RARES, {
