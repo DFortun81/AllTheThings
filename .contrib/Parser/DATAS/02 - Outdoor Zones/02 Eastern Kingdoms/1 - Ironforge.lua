@@ -839,6 +839,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5633, {	-- Returning Home [Ironforge]
+					["qg"] = 5142,	-- Braenna Flintcrag <Priest Trainer>
+					["coord"] = { 24.6, 9.2, IRONFORGE },
+					["altQuests"] = {
+						5627,	-- Returning Home [Darnassus]
+						5628,	-- Returning Home [Elwynn Forest]
+						5629,	-- Returning Home [Teldrassil]
+						5630,	-- Returning Home [Dun Morogh]
+						5631,	-- Returning Home [Stormwind City]
+						5632,	-- Returning Home [Stormwind City]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 10797,	-- Starshards (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(683, {	-- Sara Balloo's Plea
 					["providers"] = {
 						{ "n", 2695 },	-- Sara Balloo

@@ -7,12 +7,6 @@ q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Eart
 q(2000),	-- Rokar Bladeshadow	 CLASSIC:Rokar Bladeshadow	 TBC:Rokar Bladeshadow	 WOTLK:Rokar Bladeshadow	 CATA:Rokar Bladeshadow
 q(2018),	-- Rokar's Test	 CLASSIC:Rokar's Test
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!	 CLASSIC:Lee's Ultimate Test Quest... of Doom!	 TBC:Lee's Ultimate Test Quest... of Doom!	 WOTLK:Lee's Ultimate Test Quest... of Doom!	 CATA:Lee's Ultimate Test Quest... of Doom!
-q(5628),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
-q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
-q(5630),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
-q(5631),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
-q(5632),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
-q(5633),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
 q(5635),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer
 q(5636),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer
 q(5637),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer
@@ -389,9 +383,7 @@ q(10383),	-- This is a Breadcrumb!	 TBC:This is a Breadcrumb!	 WOTLK:This is a B
 q(10529),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	 CATA:The Hunter's Path
 q(10530),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	 CATA:The Hunter's Path
 q(10532),	-- Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	 CATA:Cut Arathor Supply Lines
-q(10534),	-- Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
 q(10535),	-- Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	 CATA:Arathi Basin Resources!
-q(10539),	-- Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
 q(10605),	-- Carendin Summons	 TBC:Carendin Summons	 WOTLK:Carendin Summons	 CATA:Carendin Summons
 q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business	 CATA:Back In Business
 q(10779),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	 CATA:The Hunter's Path

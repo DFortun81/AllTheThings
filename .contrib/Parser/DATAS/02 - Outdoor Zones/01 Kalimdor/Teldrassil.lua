@@ -374,6 +374,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(2127),	-- Cracked Leather Vest
 							},
 						})),
+						-- #if NOT ANYCLASSIC
+						q(5629, {	-- Returning Home [Teldrassil]
+							["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
+							["coord"] = { 55.6, 56.8, TELDRASSIL },
+							["altQuests"] = {
+								5627,	-- Returning Home [Darnassus]
+								5628,	-- Returning Home [Elwynn Forest]
+								5630,	-- Returning Home [Dun Morogh]
+								5631,	-- Returning Home [Stormwind City]
+								5632,	-- Returning Home [Stormwind City]
+								5633,	-- Returning Home [Ironforge]
+							},
+							["timeline"] = { "removed 3.0.2" },
+							["classes"] = { PRIEST },
+							["races"] = { NIGHTELF },
+							["lvl"] = 10,
+							-- #if BEFORE 3.0.2
+							["groups"] = {
+								{
+									["recipeID"] = 10797,	-- Starshards (Rank 1)
+									["rank"] = 1,
+								},
+							},
+							-- #endif
+						}),
+						-- #endif
 						applyclassicphase(SOD_PHASE_ONE, q(77573, {	-- Second-Story Work
 							["qg"] = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
 							["coord"] = { 59.6, 38.6, TELDRASSIL },

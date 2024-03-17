@@ -640,6 +640,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
 				}),
+				-- #if ANYCLASSIC
 				q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
 					["qgs"] = {
 						11401,	-- Priestess Alathea <Priest Trainer>
@@ -666,7 +667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5633,	-- Returning Home [Ironforge]
 						5631,	-- Returning Home [Stormwind City]
 						5632,	-- Returning Home [Stormwind City]
-						-- NOTE: There is 10534 and 10549 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
+						-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
 					},
 					["timeline"] = { "removed 3.0.2" },
 					["classes"] = { PRIEST },
@@ -681,6 +682,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5627, {	-- Returning Home [Darnassus]
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.2, 81, DARNASSUS },
+					["altQuests"] = {
+						5628,	-- Returning Home [Elwynn Forest]
+						5629,	-- Returning Home [Teldrassil]
+						5630,	-- Returning Home [Dun Morogh]
+						5631,	-- Returning Home [Stormwind City]
+						5632,	-- Returning Home [Stormwind City]
+						5633,	-- Returning Home [Ironforge]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 10797,	-- Starshards (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(29323, {	-- Stocking Up
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },

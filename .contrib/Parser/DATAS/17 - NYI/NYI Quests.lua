@@ -451,6 +451,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(10398, { ["name"] = "Return to Honor Hold", }),
 			q(9947, { ["name"] = "Return to Rokag", }),
 			q(9943, { ["name"] = "Return to Thander", }),
+			q(10534, { ["name"] = "Returning Home", }), 
+			q(10539, { ["name"] = "Returning Home", }), 
 			q(11588, { ["name"] = "REUSE", }),
 			q(11589, { ["name"] = "REUSE", }),
 			q(10558, { ["name"] = "Revered Among Honor Hold", }),

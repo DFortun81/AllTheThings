@@ -2224,6 +2224,58 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5631, {	-- Returning Home [Stormwind City]
+					["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
+					["coord"] = { 38.6, 26.8, STORMWIND_CITY },
+					["altQuests"] = {
+						5627,	-- Returning Home [Darnassus]
+						5628,	-- Returning Home [Elwynn Forest]
+						5629,	-- Returning Home [Teldrassil]
+						5630,	-- Returning Home [Dun Morogh]
+						5632,	-- Returning Home [Stormwind City]
+						5633,	-- Returning Home [Ironforge]						
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 10797,	-- Starshards (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5632, {	-- Returning Home [Stormwind City]
+					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
+					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["altQuests"] = {
+						5627,	-- Returning Home [Darnassus]
+						5628,	-- Returning Home [Elwynn Forest]
+						5629,	-- Returning Home [Teldrassil]
+						5630,	-- Returning Home [Dun Morogh]
+						5631,	-- Returning Home [Stormwind City]
+						5633,	-- Returning Home [Ironforge]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 10797,	-- Starshards (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(26442, {	-- Rock Lobster
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },

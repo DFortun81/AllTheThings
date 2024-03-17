@@ -516,6 +516,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if NOT ANYCLASSIC
+						q(5630, {	-- Returning Home [Dun Morogh]
+							["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+							["coord"] = { 47.2, 52.2, DUN_MOROGH },
+							["altQuests"] = {
+								5627,	-- Returning Home [Darnassus]
+								5628,	-- Returning Home [Elwynn Forest]
+								5629,	-- Returning Home [Teldrassil]
+								5631,	-- Returning Home [Stormwind City]
+								5632,	-- Returning Home [Stormwind City]
+								5633,	-- Returning Home [Ironforge]
+							},
+							["timeline"] = { "removed 3.0.2" },
+							["classes"] = { PRIEST },
+							["races"] = { NIGHTELF },
+							["lvl"] = 10,
+							-- #if BEFORE 3.0.2
+							["groups"] = {
+								{
+									["recipeID"] = 10797,	-- Starshards (Rank 1)
+									["rank"] = 1,
+								},
+							},
+							-- #endif
+						}),
+						-- #endif
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77657, {	-- Relics of the Light
 							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>

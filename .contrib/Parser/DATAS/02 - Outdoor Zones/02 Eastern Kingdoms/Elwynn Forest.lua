@@ -2586,6 +2586,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5628, {	-- Returning Home [Elwynn Forest]
+					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
+					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
+					["altQuests"] = {
+						5627,	-- Returning Home [Darnassus]
+						5629,	-- Returning Home [Teldrassil]
+						5630,	-- Returning Home [Dun Morogh]
+						5631,	-- Returning Home [Stormwind City]
+						5632,	-- Returning Home [Stormwind City]
+						5633,	-- Returning Home [Ironforge]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 10797,	-- Starshards (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				q(83, {	-- Red Linen Goods / Fine Linen Goods [CATA]
 					["qg"] = 278,	-- Sara Timberlain
