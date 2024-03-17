@@ -1,0 +1,244 @@
+73979@@@Searching for Artifacts
+78670@@@Archaeology
+80451@@@Survey
+86857@@@Pewter Drinking Cup
+86864@@@Ceramic Funeral Urn
+86865@@@Worn Hunting Knife
+86866@@@Bone Gaming Dice
+88180@@@Stone Gryphon
+88181@@@Silver Neck Torc
+88262@@@Zandalari Voodoo Doll
+88907@@@Fetish of Hir'eek
+88908@@@Lizard Foot Charm
+88909@@@Wooden Whistle
+88910@@@Belt Buckle with Anvilmar Crest
+88929@@@Black Trilobite
+88930@@@Beautiful Preserved Fern
+88961@@@Archaeology
+89009@@@Highborne Pyxis
+89012@@@Inlaid Ivory Comb
+89014@@@Scandalous Silk Nightgown
+74268@@@Track Archaeology Chests
+89693@@@Fossilized Hatchling
+89696@@@Cloak Clasp with Antlers
+89701@@@Jade Asp with Ruby Eyes
+89711@@@Feathered Gold Earring
+89717@@@Moltenfist's Jeweled Goblet
+89718@@@Archaeology
+89719@@@Archaeology
+89720@@@Archaeology
+89721@@@Archaeology
+89722@@@Archaeology
+89890@@@Eerie Smolderthorn Idol
+89891@@@Cinnabar Bijou
+89893@@@Coin from Eldre'Thalas
+89894@@@Shattered Glaive
+89895@@@Twisted Ammonite Shell
+89896@@@Green Dragon Ring
+90410@@@Notched Sword of Tunadil the Redeemer
+90411@@@Bodacious Door Knocker
+90412@@@Boot Heel with Scrollwork
+90413@@@Golden Chamber Pot
+90415@@@Winged Helm of Corehammer
+90419@@@Ironstar's Petrified Shield
+90420@@@Skull-Shaped Planter
+90421@@@Bracelet of Jade and Coins
+90423@@@Gahz'rilla Figurine
+90429@@@Atal'ai Scepter
+90432@@@Devilsaur Tooth
+90433@@@Insect in Amber
+90451@@@Kaldorei Amphora
+90452@@@Ancient Shark Jaws
+90453@@@Hairpin of Silver and Malachite
+90458@@@Delicate Music Box
+90464@@@Highborne Soul Mirror
+90493@@@Druid and Priest Statue Set
+90504@@@Dented Shield of Horuz Killcrow
+90506@@@Scorched Staff of Shadow Priest Anund
+90509@@@Scepter of Charlga Razorflank
+90518@@@Mithril Chain of Angerforge
+90519@@@Skull Staff of Shadowforge
+90521@@@Clockwork Gnome
+90553@@@Chalice of the Mountain Kings
+90558@@@Tooth with Gold Filling
+90581@@@Drakkari Sacrificial Knife
+90608@@@Zin'rokh, Destroyer of Worlds
+90609@@@String of Small Pink Pearls
+90610@@@Chest of Tiny Glass Animals
+90611@@@Cracked Crystal Vial
+90612@@@Scepter of Xavius
+90614@@@Kaldorei Wind Chimes
+90616@@@Queen Azshara's Dressing Gown
+90617@@@Feathered Raptor Arm
+90618@@@Vicious Ancient Fish
+90619@@@Fossilized Raptor
+90622@@@Tiny Bronze Scorpion
+90720@@@Maul of Stone Guard Mur'og
+90728@@@Gray Candle Stub
+90730@@@Rusted Steak Knife
+90732@@@Scepter of Nekros Skullcrusher
+90734@@@Fierce Wolf Figurine
+90831@@@Fiendish Whip
+90832@@@Tile of Glazed Clay
+90833@@@Skull Drinking Cup
+90843@@@Headdress of the First Shaman
+90853@@@Anklet with Golden Bells
+90860@@@Carved Harp of Exotic Wood
+90861@@@Strange Silver Paperweight
+90864@@@Scepter of the Nathrezim
+90968@@@Baroque Sword Scabbard
+90974@@@Fine Crystal Candelabra
+90975@@@Dignified Portrait
+90983@@@Arrival of the Naaru
+90984@@@The Last Relic of Argus
+90987@@@Plated Elekk Goad
+90988@@@Intricate Treasure Chest Key
+90997@@@Nifflevar Bearded Axe
+91008@@@Scramseax
+91012@@@Flint Striker
+91014@@@Fanged Cloak Pin
+91084@@@Thorned Necklace
+91089@@@Proto-Drake Skeleton
+91132@@@Imprint of a Kraken Tentacle
+91133@@@Spidery Sundial
+91170@@@Scepter of Nezar'Azret
+91188@@@Infested Ruby Ring
+91191@@@Gruesome Heart Box
+91197@@@Six-Clawed Cornice
+91209@@@Ewer of Jormungar Blood
+91211@@@Vizier's Scrawled Streamer
+91214@@@Blessing of the Old God
+91215@@@Puzzle Box of Yogg-Saron
+91219@@@Silver Kris of Korl
+91221@@@Warmaul of Burningeye
+91223@@@Spiked Gauntlets of Anvilrage
+91224@@@Word of Empress Zoe
+91225@@@Scepter of Bronzebeard
+91226@@@The Innkeeper's Daughter
+91227@@@Staff of Sorcerer-Thane Thaurissan
+91757@@@Tyrande's Favorite Doll
+91761@@@Bones of Transformation
+91762@@@Carcanet of the Hundred Magi
+91766@@@Silver Scroll Case
+91769@@@Umbra Crescent
+91773@@@Wisp Amulet
+91775@@@Castle of Sand
+91779@@@Cat Statue with Emerald Eyes
+91780@@@Soapstone Scarab Necklace
+91782@@@Tiny Oasis Mosaic
+91785@@@Engraved Scimitar Hilt
+91790@@@Canopic Jar
+91792@@@Sketch of a Desert Palace
+91793@@@Pipe of Franclorn Forgewright
+92137@@@Crawling Claw
+92139@@@Staff of Ammunae
+92145@@@Pendant of the Scarab Storm
+92148@@@Scepter of Azj'Aqir
+92163@@@Scimitar of the Sirocco
+92168@@@Ring of the Boy Emperor
+92806@@@Survey Mastery
+92807@@@Survey Mastery
+92808@@@Survey Mastery
+92809@@@Survey Mastery
+92810@@@Survey Mastery
+92811@@@Survey Mastery
+92812@@@Survey Mastery
+93440@@@Dwarven Baby Socks
+93441@@@Necklace with Elune Pendant
+93442@@@Shard of Petrified Wood
+93443@@@Strange Velvet Worm
+93444@@@Fine Bloodscalp Dinnerware
+98533@@@Extinct Turtle Shell
+98556@@@Haunted War Drum
+98560@@@Ancient Amber
+98569@@@Vrykyl Drinking Horn
+98582@@@Pterrordax Hatchling
+98588@@@Voodoo Figurine
+110393@@@Archaeology
+113968@@@Pandaren Tea Set
+113971@@@Pandaren Game Board
+113972@@@Twin Stein Set of Brewfather Quan Tou Kuo
+113973@@@Walking Cane of Brewfather Ren Yun
+113974@@@Empty Keg of Brewfather Xin Wo Yin
+113975@@@Carved Bronze Mirror
+113976@@@Gold-Inlaid Porcelain Funerary Figurine
+113977@@@Apothecary Tins
+113978@@@Pearl of Yu'lon
+113979@@@Standard of Niuzao
+113980@@@Umbrella of Chi-Ji
+113981@@@Spear of Xuen
+113982@@@Manacles of Rebellion
+113983@@@Cracked Mogu Runestone
+113984@@@Terracotta Arm
+113985@@@Petrified Bone Whip
+113986@@@Thunder King Insignia
+113987@@@Edicts of the Thunder King
+113988@@@Iron Amulet
+113989@@@Warlord's Branding Iron
+113990@@@Mogu Coin
+113991@@@Worn Monument Ledger
+113992@@@Quilen Statuette
+113993@@@Anatomical Dummy
+158762@@@Archaeology
+168290@@@Fang-Scarred Frostwolf Axe
+168291@@@Frostwolf Ancestry Scrimshaw
+168292@@@Wolfskin Snowshoes
+168293@@@Warsinger's Drums
+168294@@@Screaming Bullroarer
+168295@@@Warsong Ceremonial Pike
+168296@@@Metalworker's Hammer
+168297@@@Elemental Bellows
+168298@@@Blackrock Razor
+168299@@@Weighted Chopping Axe
+168300@@@Hooked Dagger
+168301@@@Barbed Fishing Hook
+168302@@@Calcified Eye In a Jar
+168303@@@Ceremonial Tattoo Needles
+168304@@@Cracked Ivory Idol
+168305@@@Ancestral Talisman
+168306@@@Flask of Blazegrease
+168307@@@Gronn-Tooth Necklace
+168308@@@Doomsday Prophecy
+168309@@@Stonemaul Succession Stone
+168310@@@Stone Manacles
+168311@@@Ogre Figurine
+168312@@@Pictogram Carving
+168313@@@Gladiator's Shield
+168314@@@Mortar and Pestle
+168315@@@Eye of Har'gunn the Blind
+168316@@@Stone Dentures
+168317@@@Rylak Riding Harness
+168318@@@Imperial Decree Stele
+168319@@@Sorcerer-King Toe Ring
+168320@@@Warmaul of the Warmaul Chieftain
+168321@@@Dreamcatcher
+168322@@@Burial Urn
+168323@@@Decree Scrolls
+168324@@@Solar Orb
+168325@@@Sundial
+168326@@@Talonpriest Mask
+168327@@@Outcast Dreamcatcher
+168328@@@Apexis Crystal
+168329@@@Apexis Hieroglyph
+168330@@@Apexis Scroll
+168331@@@Beakbreaker of Terokk
+172459@@@Headdress of the First Shaman
+172460@@@Ancient Nest Guardian
+172466@@@Ancient Frostwolf Fang
+195127@@@Archaeology
+196470@@@Violetglass Vessel
+196471@@@Inert Leystone Charm
+196472@@@Quietwine Vial
+196473@@@Pre-War Highborne Tapestry
+196474@@@Nobleman's Letter Opener
+196475@@@Trailhead Drum
+196476@@@Moosebone Fish-Hook
+196477@@@Hand-Smoothed Pyrestone
+196478@@@Drogbar Gem-Roller
+196479@@@Stonewood Bow
+196480@@@Imp's Cup
+196481@@@Flayed-Skin Chronicle
+196482@@@Malformed Abyssal
+196483@@@Orb of Inner Chaos
+196484@@@Houndstooth Hauberk
+278910@@@Archaeology
