@@ -9921,9 +9921,6 @@ function app:GetDataCache()
 				return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total);
 			elseif key == "visible" then
 				return true;
-			else
-				-- Something that isn't dynamic.
-				return t[key];
 			end
 		end,
 		__newindex = function(t, key, val)
