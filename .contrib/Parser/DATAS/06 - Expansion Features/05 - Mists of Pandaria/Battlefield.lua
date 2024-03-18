@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 BATTLEFIELD_BARRENS = createHeader({
-	readable = "Scenarios",
+	readable = "Battlefield: Barrens",
 	icon = "Interface\\Icons\\ability_vehicle_oiljets",
 	text = {
 		en = "Battlefield: Barrens",
@@ -159,7 +159,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(REWARDS, {
-				header(HEADERS.item, LATENT_KORKRON_HELM, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_HELM, 1 } } }, {
+				header(HEADERS.Item, LATENT_KORKRON_HELM, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_HELM, 1 } } }, {
 					i(97725),	-- Insubordination Helm
 					i(97734),	-- Insubordination Helm
 					i(97660),	-- Malcontent's Cowl,
@@ -180,7 +180,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97654),	-- Insurrection Helm
 					i(97764),	-- Insurrection Helm
 				})),
-				header(HEADERS.item, LATENT_KORKRON_SPAULDERS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_SPAULDERS, 1 } } }, {
+				header(HEADERS.Item, LATENT_KORKRON_SPAULDERS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_SPAULDERS, 1 } } }, {
 					i(97727),	-- Insubordination Shoulderpads
 					i(97736),	-- Insubordination Shoulderpads
 					i(97742),	-- Malcontent's Spaulders
@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97672),	-- Insurrection Spaulders
 					i(97761),	-- Insurrection Spaulders
 				})),
-				header(HEADERS.item, LATENT_KORKRON_CHESTPIECE, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_CHESTPIECE, 1 } } }, {
+				header(HEADERS.Item, LATENT_KORKRON_CHESTPIECE, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_CHESTPIECE, 1 } } }, {
 					i(97722),	-- Insubordination Breastplate
 					i(97738),	-- Insubordination Breastplate
 					i(97746),	-- Malcontent's Vest
@@ -222,7 +222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97632),	-- Insurrection Breastplate
 					i(97766),	-- Insurrection Breastplate
 				})),
-				header(HEADERS.item, LATENT_KORKRON_GLOVES, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_GLOVES, 1 } } }, {
+				header(HEADERS.Item, LATENT_KORKRON_GLOVES, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_GLOVES, 1 } } }, {
 					i(97724),	-- Insubordination Gauntlets
 					i(97733),	-- Insubordination Gauntlets
 					i(97744),	-- Malcontent's Gloves
@@ -243,7 +243,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97645),	-- Insurrection Breastplate
 					i(97763),	-- Insurrection Gauntlets
 				})),
-				header(HEADERS.item, LATENT_KORKRON_BELT, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BELT, 1 } } }, {
+				header(HEADERS.Item, LATENT_KORKRON_BELT, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BELT, 1 } } }, {
 					i(97728),	-- Insubordination Belt
 					i(97737),	-- Insubordination Belt
 					i(97740),	-- Malcontent's Belt
@@ -264,7 +264,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97680),	-- Insurrection Belt
 					i(97762),	-- Insurrection Belt
 				})),
-				header(HEADERS.item, LATENT_KORKRON_LEGGINGS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_LEGGINGS, 1 } } }, {
+				header(HEADERS.Item, LATENT_KORKRON_LEGGINGS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_LEGGINGS, 1 } } }, {
 					i(97726),	-- Insubordination egplates
 					i(97735),	-- Insubordination egplates
 					i(97741),	-- Malcontent's Kilt
@@ -285,7 +285,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97661),	-- Insurrection Legplates
 					i(97765),	-- Insurrection Legplates
 				})),
-				header(HEADERS.item, LATENT_KORKRON_BOOTS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BOOTS, 1 } } }, {
+				header(HEADERS.Item, LATENT_KORKRON_BOOTS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BOOTS, 1 } } }, {
 					i(97723),	-- Insubordination Boots
 					i(97739),	-- Insubordination Boots
 					i(97743),	-- Malcontent's Boots
