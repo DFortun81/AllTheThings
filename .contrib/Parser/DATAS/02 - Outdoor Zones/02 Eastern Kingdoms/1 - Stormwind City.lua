@@ -296,6 +296,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["groups"] = CLASSIC_CATA_MINING,
 					}),
 				}),
+				prof(ENCHANTING, {
+					n(13283, {	-- Lord Tony Romano <Rogue Trainer>
+						["coord"] = { 79.6, 61.2, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_POISONS,
+							-- #if AFTER TBC
+							TBC_POISONS
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(7794, {	-- A Donation of Mageweave
@@ -2336,7 +2349,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5629,	-- Returning Home [Teldrassil]
 						5630,	-- Returning Home [Dun Morogh]
 						5632,	-- Returning Home [Stormwind City]
-						5633,	-- Returning Home [Ironforge]						
+						5633,	-- Returning Home [Ironforge]
 					},
 					["timeline"] = { "removed 3.0.2" },
 					["classes"] = { PRIEST },
@@ -6241,6 +6254,95 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					["groups"] = {
+						i(21835, {	-- Anesthetic Poison
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(43237, {	-- Anesthetic Poison II
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(3775, {	-- Crippling Poison
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(2892, {	-- Deadly Poison
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(2893, {	-- Deadly Poison II
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(8984, {	-- Deadly Poison III
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(8985, {	-- Deadly Poison IV
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(20844, {	-- Deadly Poison V
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(22053, {	-- Deadly Poison VI
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(22054, {	-- Deadly Poison VII
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(43232, {	-- Deadly Poison VIII
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(43233, {	-- Deadly Poison IX
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(6947, {	-- Instant Poison
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(6949, {	-- Instant Poison II
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(6950, {	-- Instant Poison III
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(8926, {	-- Instant Poison IV
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(8927, {	-- Instant Poison V
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(8928, {	-- Instant Poison VI
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(21927, {	-- Instant Poison VII
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(43230, {	-- Instant Poison VIII
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(43231, {	-- Instant Poison IX
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(5237, {	-- Mind-Numbing Poison
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(10918, {	-- Wound Poison
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(10920, {	-- Wound Poison II
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(10921, {	-- Wound Poison III
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(10922, {	-- Wound Poison IV
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(22055, {	-- Wound Poison V
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(43234, {	-- Wound Poison VI
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+						i(43235, {	-- Wound Poison VII
+							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						}),
+					},
 				}),
 				n(30730, {	-- Stanly McCormick
 					["coord"] = { 49.6, 74.8, STORMWIND_CITY },

@@ -3792,7 +3792,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["provider"] = { "o", 279647 }, -- Tome of Sacrifice
 				["coord"] = { 20.6, 44, DRUSTVAR },
 				["groups"] = {
-					r(259665), -- Blood Contract: Sacrifice
+					r(259665),	-- Blood Contract: Sacrifice
 				},
 			})),
 			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- By the Book
@@ -3801,7 +3801,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["coord"] = { 20.7, 44, DRUSTVAR },
 				["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
 				["groups"] = {
-					r(292012), -- Blood Contract: Bloodshed
+					r(292012),	-- Blood Contract: Bloodshed
 				},
 			})),
 			q(49876, {	-- Lines in the Sand [A]
@@ -3833,7 +3833,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["provider"] = { "o", 279645 }, -- Tome of Oblivion
 				["coord"] = { 27.6, 52.3, VOLDUN },
 				["groups"] = {
-					r(292322), -- Blood Contract: Oblivion
+					r(292322),	-- Blood Contract: Oblivion
 				},
 			})),
 			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	--Penning In Protection
@@ -3841,7 +3841,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
 				["coord"] = { 27.6, 52.2, VOLDUN },
 				["groups"] = {
-					r(292320), -- Blood Contract: Bloodguard
+					r(292320),	-- Blood Contract: Bloodguard
 				},
 			})),
 			q(49881, {	-- The Final Verse
@@ -3861,6 +3861,12 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					r(256301),	-- Sanguine Feather Quill of Lana'thel (RECIPE!)
 				},
 			})),
+		}),
+		n(SPECIAl, {
+			i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)
+				["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
+				["timeline"] = { ADDED_8_2_5 },
+			}),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
@@ -4687,10 +4693,6 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_UNENDING_BREATH,
 			}),
 		}),
-		i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)
-			["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
-			["timeline"] = { "added 8.2.5" },
-		}),
 	}),
 	-- Crieve NOTE: Inscription came out with Wrath and the other sections had like no content and a bunch of overlap.
 	-- So I merged them into Wrath for clarity.
@@ -5149,274 +5151,6 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(192895),	-- Vantus Rune: Xavius [Rank 3]
 		}),
 	}))),
-	applyclassicphase(BFA_PHASE_ONE, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
-		r(264508, {	-- Kul Tiran Inscription
-			["races"] = ALLIANCE_ONLY,
-			["collectible"] = false,	-- the profession itself is not a recipe
-		}),
-		r(265809, {	-- Zandalari Inscription
-			["races"] = HORDE_ONLY,
-			["collectible"] = false,	-- the profession itself is not a recipe
-		}),
-		cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
-			r(287271),	-- Aqueous Chromotography
-			r(286649),	-- Sanguinated Chromotography
-		})),
-		cat(1026, {	-- Inks
-			r(264777),	-- Crimson Ink
-			r(264776),	-- Ultramarine Ink
-			r(264778),	-- Viridescent Ink
-			r(298929, {["timeline"]={"added 8.2.0"}}),	-- Maroon Ink
-		}),
-		cat(771, {	-- Books & Scrolls
-			r(256233),	-- Codex of the Quiet Mind [Rank 2]
-			r(256234),	-- Codex of the Quiet Mind [Rank 3]
-			r(264767),	-- War-Scroll of Battle Shout
-			r(256232),	-- Codex of the Quiet Mind [Rank 1]
-			r(256236),	-- Tome of the Quiet Mind [Rank 2]
-			r(256237),	-- Tome of the Quiet Mind [Rank 3]
-			r(264769),	-- War-Scroll of Fortitude
-			r(264766),	-- War-Scroll of Intellect
-			r(269065),	-- Scroll of Unlocking
-			r(256235),	-- Tome of the Quiet Mind [Rank 1]
-		}),
-		cat(772, {	-- Contracts
-			r(284292, {	-- Contract: 7th Legion [Rank 1]
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.0" },
-			}),
-			r(284293, {	-- Contract: 7th Legion [Rank 2]
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.0" },
-			}),
-			r(284294, {	-- Contract: 7th Legion [Rank 3]
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.0" },
-			}),
-			r(299665, {	-- Contract: Ankoan
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.2.0" },
-			}),
-			r(256297),	-- Contract: Champions of Azeroth [Rank 1]
-			r(256298),	-- Contract: Champions of Azeroth [Rank 2]
-			r(256299),	-- Contract: Champions of Azeroth [Rank 3]
-			r(256278, {	-- Contract: Order of Embers [Rank 1]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256279, {	-- Contract: Order of Embers [Rank 2]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256280, {	-- Contract: Order of Embers [Rank 3]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256275, {	-- Contract: Proudmoore Admiralty [Rank 1]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256276, {	-- Contract: Proudmoore Admiralty [Rank 2]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256277, {	-- Contract: Proudmoore Admiralty [Rank 3]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(299672, {["timeline"]={"added 8.3.0"}}),	-- Contract: Rajani
-			r(299671, {["timeline"]={"added 8.2.0"}}),	-- Contract: Rustbolt Resistance
-			r(256281, {	-- Contract: Storm's Wake [Rank 1]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256282, {	-- Contract: Storm's Wake [Rank 2]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256283, {	-- Contract: Storm's Wake [Rank 3]
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256287, {	-- Contract: Talanji's Expedition [Rank 1]
-				["races"] = HORDE_ONLY,
-			}),
-			r(256288, {	-- Contract: Talanji's Expedition [Rank 2]
-				["races"] = HORDE_ONLY,
-			}),
-			r(256289, {	-- Contract: Talanji's Expedition [Rank 3]
-				["races"] = HORDE_ONLY,
-			}),
-			r(284295, {	-- Contract: The Honorbound [Rank 1]
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0" },
-			}),
-			r(284296, {	-- Contract: The Honorbound [Rank 2]
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0" },
-			}),
-			r(284297, {	-- Contract: The Honorbound [Rank 3]
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0" },
-			}),
-			r(256294),	-- Contract: Tortollan Seekers [Rank 1]
-			r(256295),	-- Contract: Tortollan Seekers [Rank 2]
-			r(256296),	-- Contract: Tortollan Seekers [Rank 3]
-			r(299673, {["timeline"]={"added 8.3.0"}}),	-- Contract: Uldum Accord
-			r(299668, {	-- Contract: Unshackled
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.2.0" },
-			}),
-			r(256290, {	-- Contract: Voldunai [Rank 1]
-				["races"] = HORDE_ONLY,
-			}),
-			r(256291, {	-- Contract: Voldunai [Rank 2]
-				["races"] = HORDE_ONLY,
-			}),
-			r(256293, {	-- Contract: Voldunai [Rank 3]
-				["races"] = HORDE_ONLY,
-			}),
-			r(256284, {	-- Contract: Zandalari Empire [Rank 1]
-				["races"] = HORDE_ONLY,
-			}),
-			r(256285, {	-- Contract: Zandalari Empire [Rank 2]
-				["races"] = HORDE_ONLY,
-			}),
-			r(256286, {	-- Contract: Zandalari Empire [Rank 3]
-				["races"] = HORDE_ONLY,
-			}),
-		}),
-		cat(773, {	-- Cards
-			r(278527),	-- Darkmoon Card of War [Rank 1]
-			r(256245),	-- Darkmoon Card of War [Rank 2]
-			r(256246),	-- Darkmoon Card of War [Rank 3]
-			r(302190, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Mystical Bulwark
-			r(302189, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Storms
-			r(302188, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Sundering
-			r(302187, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Swirling Tides
-		}),
-		cat(774, {	-- Off-Hands
-			r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]
-			pvp(r(269741)),	-- Honorable Combatant's Etched Vessel [Rank 2]
-			pvp(r(269742)),	-- Honorable Combatant's Etched Vessel [Rank 3]
-			r(256247),	-- Inscribed Vessel of Mysticism [Rank 1]
-			r(256248),	-- Inscribed Vessel of Mysticism [Rank 2]
-			r(256249),	-- Inscribed Vessel of Mysticism [Rank 3]
-			r(294790, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Etched Vessel [Rank 1]
-			pvp(r(294791, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 2]
-			pvp(r(294792, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 3]
-			r(282803, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Etched Vessel [Rank 1]
-			pvp(r(282804, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 2]
-			pvp(r(282805, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 3]
-			r(305952, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Etched Vessel [Rank 1]
-			pvp(r(305953, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Etched Vessel [Rank 2]
-			pvp(r(305954, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Etched Vessel [Rank 3]
-		}),
-		cat(775, {	-- Mass Milling
-			r(256219),	-- Mass Mill Akunda's Bite
-			r(256308),	-- Mass Mill Anchor Weed
-			r(256217),	-- Mass Mill Riverbud
-			r(256223),	-- Mass Mill Sea Stalk
-			r(256221),	-- Mass Mill Siren's Pollen
-			r(256218),	-- Mass Mill Star Moss
-			r(256220),	-- Mass Mill Winter's Kiss
-			r(298927, {["timeline"]={"added 8.2.0"}}),	-- Mass Mill Zin'anthid
-		}),
-		cat(776, {	-- Vantus Runes
-			r(285639, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 1]
-			r(285640, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 2]
-			r(285641, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 3]
-			r(285925, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 1]
-			r(285926, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 2]
-			r(285927, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 3]
-			r(306482, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 1]
-			r(306483, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 2]
-			r(306481, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 3]
-			r(298625, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 1]
-			r(298647, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 2]
-			r(298648, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 3]
-			r(256303),	-- Vantus Rune: Uldir [Rank 1]
-			r(256304),	-- Vantus Rune: Uldir [Rank 2]
-			r(256305),	-- Vantus Rune: Uldir [Rank 3]
-		}),
-		cat(1276, sharedDataSelf({ ["timeline"] = { ADDED_8_1_5} }, {	-- Blood Contracts
-			r(292320),	-- Blood Contract: Bloodguard
-			r(292012),	-- Blood Contract: Bloodshed
-			r(292322),	-- Blood Contract: Oblivion
-			r(259665),	-- Blood Contract: Sacrifice
-		})),
-		cat(1235, {	-- Follower Equipment
-			r(278422),	-- Crimson Ink Well
-		}),
-		cat(1262, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Tools of the Trade
-			r(256301),	-- Sanguine Feather Quill of Lana'thel
-		})),
-	}))),
-	--[[
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-		cat(1410, {	-- Contracts
-			r(354000, {["timeline"]={ADDED_9_1_0}}),	-- Contract: Death's Advance
-			r(311412),	-- Contract: Court of Harvesters
-			r(311409),	-- Contract: The Ascended
-			r(359786, {["timeline"]={"added 9.2.0"}}),	-- Contract: The Enlightened
-			r(311411),	-- Contract: The Undying Army
-			r(311410),	-- Contract: The Wild Hunt
-		}),
-		cat(786, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Glyphs
-			r(367389, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Lupine
-			r(367393, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Vulpine
-			r(362412),	-- Glyph of the Wild Mushroom
-			r(360542),	-- Mark of the Gloomstalker Dredbat
-			r(360885),	-- Mark of the Midnight Runestag
-			r(360880),	-- Mark of the Regal Dredbat
-			r(360899),	-- Mark of the Sable Ardenmoth
-			r(360545),	-- Mark of the Shimmering Ardenmoth
-			r(360539),	-- Mark of the Twilight Runestag
-		})),
-		cat(1519, {	-- Hats
-			r(334537),	-- Fae Revel Masque
-		}),
-		cat(1408, {	-- Ink
-			r(311406),	-- Luminous Ink
-			r(321029),	-- Tranquil Ink
-			r(311405),	-- Umbral Ink
-		}),
-		cat(1412, {	-- Mass Milling
-			r(311413),	-- Mass Mill Deathblossom
-			r(359490, {["timeline"]={"added 9.2.0"}}),	-- Mass Mill First Flower
-			r(311416),	-- Mass Mill Marrowroot
-			r(311418),	-- Mass Mill Nightshade
-			r(311417),	-- Mass Mill Rising Glory
-			r(311414),	-- Mass Mill Vigil's Torch
-			r(311415),	-- Mass Mill Widowbloom
-		}),
-		cat(1407, {	-- Off-Hands
-			r(311408),	-- Newly Departed Codex
-		}),
-		cat(1474, {	-- Optional Reagents
-			r(343691),	-- Crafter's Mark I
-			r(324197),	-- Missive of Critical Strike
-			r(324198),	-- Missive of Haste
-			r(324196),	-- Missive of Mastery
-			r(324195),	-- Missive of Versatility
-			r(343686),	-- Novice Crafter's Mark
-		}),
-		cat(1529, sharedDataSelf({ ["u"] = TRAINING }, {	-- Quest Recipes
-			r(338227),	-- Ardenberry Ink
-			r(338234),	-- Catalog of Sins
-			r(338225),	-- Hymnal of Respite
-			r(338228),	-- Invocation of Duty
-			r(338231),	-- Litany of Might
-			r(338233),	-- Necrotic Ink
-			r(338230),	-- Opalescent Ink
-			r(338229),	-- Poem on Duty
-			r(338236),	-- Prideful Ink
-			r(338226),	-- Scroll of Calming Lyrics
-			r(338235),	-- Scroll of Castigation
-			r(338232),	-- Scroll of Unyielding Strength
-		})),
-		cat(1415, {	-- Staves
-			r(311688),	-- Soul Keeper's Column
-			r(311689),	-- Soul Keeper's Spire
-		}),
-		cat(1416, {	-- Vantus Runes
-			r(311453),	-- Vantus Rune: Castle Nathria
-			r(354394, {["timeline"]={ADDED_9_1_0}}),	-- Vantus Rune: Sanctum of Domination
-			r(359890, {["timeline"]={"added 9.2.0"}}),	-- Vantus Rune: Sepulcher of the First Ones
-		}),
-	}))),
-	--]]
 })));
 applyclassicphase(WRATH_PHASE_ONE, root(ROOTS.Professions, prof(INSCRIPTION)));
 

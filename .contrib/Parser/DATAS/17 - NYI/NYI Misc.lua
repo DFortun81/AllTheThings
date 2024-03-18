@@ -740,7 +740,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(184686),	-- Grimoire of Knowledge
 			i(184687),	-- Grimoire of Knowledge
 			i(184688),	-- Grimoire of Knowledge
-			i(181485),	-- Jeweled Amber Leaf
 			i(184608),	-- Korrath's Grimoire: Aleketh
 			i(184609),	-- Korrath's Grimoire: Belidir
 			i(184610),	-- Korrath's Grimoire: Gyadrek
@@ -759,7 +758,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(184122),	-- Spare Foot
 			i(184119),	-- Spare Heart
 			i(184124),	-- Spare Stomach
-			i(181483),	-- Spool of Silkstrider Thread
 			i(184412),	-- Title Reward: Spirestalker
 			i(184611),	-- Tormentor's Notes
 			i(184607),	-- Words of the Warden

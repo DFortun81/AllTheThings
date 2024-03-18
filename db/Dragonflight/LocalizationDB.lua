@@ -51,11 +51,6 @@ _.CategoryNames = {
 	[755] = "Scopes",
 	[756] = "Mounts",
 	[757] = "Fireworks",
-	[771] = "Books & Scrolls",
-	[772] = "Contracts",
-	[773] = "Trinkets",
-	[774] = "Off-Hands",
-	[775] = "Mass Milling",
 	[866] = "Trinkets",
 	[867] = "Prisms & Statues",
 	[868] = "Reagents",
@@ -73,9 +68,6 @@ _.CategoryNames = {
 	[1010] = "Boots",
 	[1011] = "Cloaks",
 	[1012] = "Nets",
-	[1026] = "Inks",
-	[1235] = "Follower Equipment",
-	[1242] = "Conversions",
 }
 _.CategoryIcons = {
 	[3] = "Interface/Icons/Inv_misc_ticket_tarot_portal_01",
@@ -118,8 +110,6 @@ _.CategoryIcons = {
 	[755] = "Interface/Icons/INV_Misc_Spyglass_03",
 	[756] = "Interface/Icons/inv_jewelcrafting_blackpearlpanther",
 	[757] = "Interface/Icons/Spell_Fire_Flare",
-	[771] = "Interface/Icons/inv_scroll_03",
-	[773] = "Interface/Icons/inv_misc_ticket_tarot_twistingnether_01",
 	[866] = "Interface/Icons/INV_Trinket_Naxxramas05",
 	[867] = "Interface/Icons/inv_misc_gem_diamond_03",
 	[868] = "Interface/Icons/spell_arcane_arcanepotency",
@@ -134,7 +124,6 @@ _.CategoryIcons = {
 	[1009] = "Interface/Icons/inv_pants_06",
 	[1010] = "Interface/Icons/INV_Boots_01",
 	[1011] = "Interface/Icons/INV_Misc_Cape_18",
-	[1026] = "Interface/Icons/inv_inscription_inkpurple01",
 }
 
 -- Custom Header Database Module
@@ -24418,7 +24407,6 @@ localize(_.CategoryNames, {
 	[754] = "무기",
 	[755] = "조준경",
 	[757] = "폭죽",
-	[773] = "장비",
 	[866] = "장비",
 	[868] = "재료",
 	[869] = "머리",

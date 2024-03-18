@@ -204,29 +204,34 @@ i(162332, 255397);	-- Thermo-Accelerated Plague Spreader [Rank 3] [A]
 i(162736, 255397);	-- Thermo-Accelerated Plague Spreader [Rank 3] [H]
 i(162339, 256075);	-- XA-1000 Surface Skimmer [Rank 3]
 --- NYI ---
-i(0, 255398);	-- Charged Refrigeration Projectile
-i(0, 255399);	-- Charged Refrigeration Projectile
-i(0, 255400);	-- Charged Refrigeration Projectile
-i(0, 255401);	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
-i(0, 255402);	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
-i(0, 255403);	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
-i(0, 255404);	-- Neurological Immobilization Bomb
-i(0, 255405);	-- Neurological Immobilization Bomb
-i(0, 255406);	-- Neurological Immobilization Bomb
-i(0, 255410);	-- Catchroot Seed Spreader
-i(0, 255411);	-- Catchroot Seed Spreader
-i(0, 255412);	-- Catchroot Seed Spreader
-i(0, 255413);	-- Electro-Induced Slumber Bomb
-i(0, 255414);	-- Electro-Induced Slumber Bomb
-i(0, 255415);	-- Electro-Induced Slumber Bomb
-i(0, 269126);	-- Belt Enchant: Miniaturized Plasma Shield
 i(0, 269205);	-- Belt Enchant: Holographic Horror Projector
+i(0, 269126);	-- Belt Enchant: Miniaturized Plasma Shield
 i(0, 269208);	-- Belt Enchant: Personal Space Amplifier
-i(0, 255454);	-- REUSE ME \\ Monelite Boomstick \\ Monalite Boomstick
+i(0, 255410);	-- Catchroot Seed Spreader [Rank 1]
+i(0, 255411);	-- Catchroot Seed Spreader [Rank 2]
+i(0, 255398);	-- Charged Refrigeration Projectile [Rank 1]
+i(0, 255399);	-- Charged Refrigeration Projectile [Rank 2]
+i(0, 255413);	-- Electro-Induced Slumber Bomb [Rank 1]
+i(0, 255414);	-- Electro-Induced Slumber Bomb [Rank 2]
+i(0, 255401);	-- Fro-Grow Grenade [Rank 1]
+i(0, 255402);	-- Fro-Grow Grenade [Rank 2]
+i(0, 255454);	-- Monelite Boomstick
+i(0, 255404);	-- Neurological Immobilization Bomb [Rank 1]
+i(0, 255405);	-- Neurological Immobilization Bomb [Rank 2]
+i(162333, 255412);	-- Catchroot Seed Spreader [Rank 3] [A]
+i(162737, 255412);	-- Catchroot Seed Spreader [Rank 3] [H]
+i(162334, 255400);	-- Charged Refrigeration Projectile [Rank 3] [A]
+i(162738, 255400);	-- Charged Refrigeration Projectile [Rank 3] [H]
+i(162338, 255415);	-- Electro-Induced Slumber Bomb [Rank 3]
+i(162335, 255403);	-- Fro-Grow Grenade [Rank 3] [A]
+i(162739, 255403);	-- Fro-Grow Grenade [Rank 3] [H]
+i(162336, 255406);	-- Neurological Immobilization Bomb [Rank 3] [A]
+i(162740, 255406);	-- Neurological Immobilization Bomb [Rank 3] [H]
 
 -----------------
 -- PATCH 8.1.0 --
 -----------------
+--- TRAINER ---
 i(0, 287279);		-- Aqueous Thermo-Degradation
 i(0, 291093);		-- Imbued Bionic Bifocals
 i(0, 291091);		-- Imbued Gearspun Goggles
@@ -270,6 +275,8 @@ i(0, 282975);		-- The Ub3r-Spanner
 i(0, 283399);		-- Ub3r-Module: Short-Fused Bomb Bots
 i(0, 283403);		-- Ub3r-Module: Ub3r-Improved Target Dummy
 i(0, 283401);		-- Ub3r-Module: Ub3r S3ntry Mk. X8.0
+--- NYI ---
+i(165843, 0);		-- Schematic: Mechantula
 
 -----------------
 -- PATCH 8.2.0 --
@@ -344,6 +351,7 @@ i(0, 310491);		-- Torghast Reconfiguration Rig
 i(0, 310489);		-- Unknown
 i(0, 310494);		-- Unknown
 i(0, 310527);		-- Unknown
+i(183867, 0);		-- [DNT][REUSE ME] Schematic: Crafter's Mark III
 
 -----------------
 -- PATCH 9.0.2 --

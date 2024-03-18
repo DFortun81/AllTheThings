@@ -1430,7 +1430,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 					i(166278, {	-- Technique: Contract: 7th Legion [Rank 2] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
-						["timeline"] = { "added 8.1.0" },
+						["timeline"] = { ADDED_8_1_0 },
 					}),
 					i(162306, {	-- Formula: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g

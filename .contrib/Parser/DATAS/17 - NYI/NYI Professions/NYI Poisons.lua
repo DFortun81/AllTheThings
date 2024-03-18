@@ -3,8 +3,18 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(POISONS, {
-		expansion(EXPANSION.CLASSIC, {
-			i(5657),	-- Recipe: Instant Toxin
+		n(CRAFTABLES, {
+			expansion(EXPANSION.CLASSIC, {
+				i(5172),	-- Death Capsule
+				i(5654),	-- Instant Toxin
+			}),
+		}),
+		filter(RECIPES, {
+			expansion(EXPANSION.CLASSIC, {
+				r(5395),	-- Death Capsule
+				-- With SpellID attached
+				i(5657),	-- Recipe: Instant Toxin (RECIPE!)
+			}),
 		}),
 	}),
 }));

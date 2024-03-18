@@ -640,6 +640,7 @@ i(173039);	-- Iridescent Amberjack Bait
 i(180518);	-- Ironwood Needle
 i(179310);	-- Jar of Muck
 i(183064);	-- Jewel of Opantriss
+i(181485);	-- Jeweled Amber Leaf
 i(180221);	-- Joke Book
 i(180980);	-- Journeyman's Large Satchel
 i(180988);	-- Journeyman's Overflowing Satchel
@@ -868,6 +869,7 @@ i(178106);	-- Splintered Fang
 i(180334);	-- Splintering Stein
 i(183931);	-- Split Arrow Fletching
 i(176877);	-- Split Tooth
+i(181483);	-- Spool of Silkstrider Thread
 i(176882);	-- Spotless Skull
 i(180516);	-- Spriggan Pipes
 i(179295);	-- Squeaky Bat

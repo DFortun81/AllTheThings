@@ -199,6 +199,62 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		-- #endif
 	}),
 }));
+BFA_INSCRIPTION = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	r(382984, {["timeline"] = {ADDED_10_0_0}}),	-- Kul Tiras and Zandalar Milling
+	r(256219),	-- Mass Mill Akunda's Bite
+	r(256308),	-- Mass Mill Anchor Weed
+	r(256217),	-- Mass Mill Riverbud
+	r(256223),	-- Mass Mill Sea Stalk
+	r(256221),	-- Mass Mill Siren's Pollen
+	r(256218),	-- Mass Mill Star Moss
+	r(256220),	-- Mass Mill Winter's Kiss
+	r(287271, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Chromotography
+	r(286649, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Chromotography
+	filter(MISC, {
+		r(256232),	-- Codex of the Quiet Mind [Rank 1]
+		r(256233),	-- Codex of the Quiet Mind [Rank 2]
+		r(256297),	-- Contract: Champions of Azeroth [Rank 1]
+		r(256294),	-- Contract: Tortollan Seekers [Rank 1]
+		r(278422),	-- Crimson Ink Well
+		r(269065),	-- Scroll of Unlocking
+		r(256235),	-- Tome of the Quiet Mind [Rank 1]
+		r(256236),	-- Tome of the Quiet Mind [Rank 2]
+		r(264767),	-- War-Scroll of Battle Shout
+		r(264769),	-- War-Scroll of Fortitude
+		r(264766),	-- War-Scroll of Intellect
+	}),
+	filter(REAGENTS, {
+		r(264777),	-- Crimson Ink
+		r(264776),	-- Ultramarine Ink
+		r(264778),	-- Viridescent Ink
+	}),
+	filter(TRINKET_F, {
+		r(278527),	-- Darkmoon Card of War [Rank 1]
+		r(256245),	-- Darkmoon Card of War [Rank 2]
+	}),
+	n(WEAPONS, {
+		r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]
+		r(256247),	-- Inscribed Vessel of Mysticism [Rank 1]
+		r(256248),	-- Inscribed Vessel of Mysticism [Rank 2]
+		r(282803, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Etched Vessel [Rank 1]
+		r(305952, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Etched Vessel [Rank 1]
+	}),
+}));
+NAZJATAR_INSCRIPTION = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { ADDED_8_2_0 } }, {
+	r(298927),	-- Mass Mill Zin'anthid
+	filter(REAGENTS, {
+		r(298929),	-- Maroon Ink
+	}),
+	filter(TRINKET_F, {
+		r(302190),	-- Highborne Compendium of Mystical Bulwark
+		r(302189),	-- Highborne Compendium of Storms
+		r(302188),	-- Highborne Compendium of Sundering
+		r(302187),	-- Highborne Compendium of Swirling Tides
+	}),
+	n(WEAPONS, {
+		r(294790),	-- Notorious Combatant's Etched Vessel [Rank 1]
+	}),
+}));
 SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309805),	-- Shadowlands Inscription
 	r(382982, {["timeline"] = {ADDED_10_0_0}}),	-- Shadowlands Milling

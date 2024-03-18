@@ -4,6 +4,20 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ENGINEERING, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.BFA, {
+				-- 8.0.1
+				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+					i(153591),	-- Belt Enchant: Holographic Horror Projector
+					i(159829),	-- Belt Enchant: Miniaturized Plasma Shield
+					i(153592),	-- Belt Enchant: Personal Space Amplifier
+					i(153491),	-- Catchroot Seed Spreader
+					i(153492),	-- Charged Refrigeration Projectile
+					i(153498),	-- Electro-Induced Slumber Bomb
+					i(153497),	-- Fro-Grow Grenade
+					i(153488),	-- Neurological Immobilization Bomb
+					i(153505),	-- Monelite Boomstick
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -69,6 +83,41 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.BFA, {
+				-- 8.0.1
+				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+					r(269205),	-- Belt Enchant: Holographic Horror Projector
+					r(269126),	-- Belt Enchant: Miniaturized Plasma Shield
+					r(269208),	-- Belt Enchant: Personal Space Amplifier
+					r(255410),	-- Catchroot Seed Spreader [Rank 1]
+					r(255411),	-- Catchroot Seed Spreader [Rank 2]
+					r(255398),	-- Charged Refrigeration Projectile [Rank 1]
+					r(255399),	-- Charged Refrigeration Projectile [Rank 2]
+					r(255413),	-- Electro-Induced Slumber Bomb [Rank 1]
+					r(255414),	-- Electro-Induced Slumber Bomb [Rank 2]
+					r(255401),	-- Fro-Grow Grenade [Rank 1]
+					r(255402),	-- Fro-Grow Grenade [Rank 2]
+					r(255454),	-- Monelite Boomstick
+					r(255404),	-- Neurological Immobilization Bomb [Rank 1]
+					r(255405),	-- Neurological Immobilization Bomb [Rank 2]
+					-- With SpellID attached
+					i(162333),	-- Schematic: Catchroot Seed Spreader [Rank 3] [A]
+					i(162737),	-- Schematic: Catchroot Seed Spreader [Rank 3] [H]
+					i(162334),	-- Schematic: Charged Refrigeration Projectile [Rank 3] [A]
+					i(162738),	-- Schematic: Charged Refrigeration Projectile [Rank 3] [H]
+					i(162338),	-- Schematic: Electro-Induced Slumber Bomb [Rank 3]
+					i(162335),	-- Schematic: Fro-Grow Grenade [Rank 3] [A]
+					i(162739),	-- Schematic: Fro-Grow Grenade [Rank 3] [H]
+					i(162336),	-- Schematic: Neurological Immobilization Bomb [Rank 3] [A]
+					i(162740),	-- Schematic: Neurological Immobilization Bomb [Rank 3] [H]
+				})),
+
+				-- 8.1.5
+				expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
+					-- Without SpellID attached
+					i(165843),	-- Schematic: Mechantula
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -85,6 +134,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(310489),	-- Unknown
 					r(310494),	-- Unknown
 					r(310527),	-- Unknown
+					-- Without SpellID attached
+					i(183867),	-- [DNT][REUSE ME] Schematic: Crafter's Mark III
 				})),
 			}),
 			expansion(EXPANSION.DF, {
@@ -206,31 +257,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
 				i(151714),	-- Schematic: Gravitational Reduction Slippers
 				i(151717),	-- Schematic: Wormhole Generator: Argus
-			})),
-		}),
-		expansion(EXPANSION.BFA, {
-			-- 8.0.1
-			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
-				i(162333),	-- Schematic: Catchroot Seed Spreader
-				i(162737),	-- Schematic: Catchroot Seed Spreader
-				i(162334),	-- Schematic: Charged Refrigeration Projectile
-				i(162738),	-- Schematic: Charged Refrigeration Projectile
-				i(162338),	-- Schematic: Electro-Induced Slumber Bomb
-				i(162335),	-- Schematic: Fro-Grow Grenade
-				i(162739),	-- Schematic: Fro-Grow Grenade
-				i(162336),	-- Schematic: Neurological Immobilization Bomb
-				i(162740),	-- Schematic: Neurological Immobilization Bomb
-			})),
-
-			-- 8.1.5
-			expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = {"created 8.1.5"} }, {
-				i(165843),	-- Schematic: Mechantula
-			})),
-		}),
-		expansion(EXPANSION.SL, {
-			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-				i(183867),	-- [DNT][REUSE ME] Schematic: Crafter's Mark III
 			})),
 		}),
 	}),

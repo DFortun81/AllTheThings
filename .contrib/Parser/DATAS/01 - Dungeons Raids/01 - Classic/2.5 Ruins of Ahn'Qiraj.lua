@@ -596,11 +596,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							["spellID"] = 25300,	-- Backstab IX
 							["rank"] = 9,
 						}),
-						i(21302, {	-- Handbook of Deadly Poison V
-							-- #if BEFORE 3.0.2
-							["spellID"] = 25347,	-- Deadly Poison V
-							-- #endif
-						}),
+						i(21302),	-- Handbook of Deadly Poison V (RECIPE!)
 						i(21303, {	-- Handbook of Feint V
 							["spellID"] = 25302,	-- Feint V
 							["rank"] = 5,

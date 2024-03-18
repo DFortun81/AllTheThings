@@ -3382,7 +3382,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
-								["timeline"] = { "added 8.1.5.29701" },
+								["timeline"] = { ADDED_8_1_5 },
 								["isLimited"] = true,
 							}),
 							i(44714, {	-- Tome of Dalaran Brilliance (CI!)

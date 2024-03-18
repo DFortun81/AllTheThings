@@ -5,6 +5,17 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.BFA, {
+				-- 8.0.1
+				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+					i(161937),	-- Honorable Combatant's Inked Vessel [A]
+					i(159941),	-- Honorable Combatant's Inked Vessel [H]
+					i(161935),	-- Inked Vessel of Robust Regeneration [A]
+					i(153644),	-- Inked Vessel of Robust Regeneration [H]
+					i(161933),	-- Manual of Reverse Wounding [A]
+					i(153642),	-- Manual of Reverse Wounding [H]
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -31,6 +42,36 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.BFA, {
+				-- 8.0.1
+				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+					r(269744),	-- Honorable Combatant's Inked Vessel [Rank 1]
+					r(256251),	-- Inked Vessel of Robust Regeneration [Rank 1]
+					r(256252),	-- Inked Vessel of Robust Regeneration [Rank 2]
+					r(256238),	-- Manual of Elemental Enchancement
+					r(256241),	-- Manual of Reverse Wounding
+					-- With SpellID attached
+					i(162356),	-- Recipe: Honorable Combatant's Inked Vessel [Rank 2]
+					i(162357),	-- Recipe: Honorable Combatant's Inked Vessel [Rank 3]
+					i(162355),	-- Recipe: Inked Vessel of Robust Regeneration [Rank 3]
+				})),
+
+				-- 8.2.0
+				expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
+					r(299666),	-- Contract: Ankoan [Rank 2]
+					r(299667),	-- Contract: Ankoan [Rank 3]
+					r(299669),	-- Contract: Unshackled [Rank 2]
+					r(299670),	-- Contract: Unshackled [Rank 3]
+					r(301999),	-- Milling
+					r(302001),	-- Milling
+					r(302698),	-- Milling
+					r(302704),	-- Milling
+					r(302700),	-- Milling
+					r(302701),	-- Milling
+					r(302697),	-- Milling
+					r(302703),	-- Milling
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -39,6 +80,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(311407),	-- Deathbound Codex
 					r(311687),	-- Redeemer's Column
 					r(311690),	-- Redeemer's Spire
+					-- Without SpellID attached
+					i(183865),	-- [DNT][REUSE ME] Technique: Crafter's Mark III
 				})),
 			}),
 			expansion(EXPANSION.DF, {
@@ -185,12 +228,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			})),
 		}),
 		i(169550),	-- REUSE ME [MTMM]
-		expansion(EXPANSION.SL, {
-			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-				i(183865),	-- [DNT][REUSE ME] Technique: Crafter's Mark III
-			})),
-		}),
 	}),
 }));
 -- #endif

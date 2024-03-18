@@ -6,9 +6,24 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 			-- #endif
 			REMOVED_8_0_1,
 	}}, {
-		ach(131),	-- Journeyman Medic
-		ach(132),	-- Expert Medic
-		ach(133),	-- Artisan Medic
+		ach(131, {	-- Journeyman in First Aid
+			-- #if ANYCLASSIC
+			["spellID"] = 3274,	-- First Aid (Journeyman)
+			-- #endif
+			["rank"] = 2,
+		}),
+		ach(132, {	-- Expert in First Aid
+			-- #if ANYCLASSIC
+			["spellID"] = 7924,	-- First Aid (Expert)
+			-- #endif
+			["rank"] = 3,
+		}),
+		ach(133, {	-- Artisan in First Aid
+			-- #if ANYCLASSIC
+			["spellID"] = 10846,	-- First Aid (Artisan)
+			-- #endif
+			["rank"] = 4,
+		}),
 	})),
 	expansion(EXPANSION.TBC, bubbleDownSelf({
 		["timeline"] = {
@@ -19,10 +34,20 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 			-- #endif
 			REMOVED_8_0_1,
 	}}, {
-		ach(134),	-- Master Medic
+		applyclassicphase(TBC_PHASE_ONE, ach(134, {	-- Master in First Aid
+			-- #if ANYCLASSIC
+			["spellID"] = 27028,	-- First Aid (Master)
+			-- #endif
+			["rank"] = 5,
+		})),
 	})),
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 } }, {
-		ach(135),	-- Grand Master Medic
+	expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 } }, {
+		ach(135, {	-- Grand Master in First Aid
+			-- #if ANYCLASSIC
+			["spellID"] = 45542,	-- First Aid (Grand Master)
+			-- #endif
+			["rank"] = 6,
+		}),
 		-- #if BEFORE BFA
 		ach(137, {	-- Stocking Up
 			["provider"] = { "i", 34722 },	-- Heavy Frostweave Bandage
@@ -41,7 +66,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 			},
 		}),
 		-- #endif
-	})),
+	}))),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 } }, {
 		ach(4918),	-- Illustrious Grand Master Medic
 		-- #if BEFORE BFA

@@ -728,52 +728,115 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
+			i(170173, {["timeline"] = {ADDED_8_2_5}}),	-- Glyph of Dire Bees
+			i(172449, {["timeline"] = {ADDED_8_2_5}}),	-- Glyph of Lavish Servings
+			i(170165, {["timeline"] = {ADDED_8_2_0}}),	-- Glyph of Steaming Fury
+			i(166664, {["timeline"] = {ADDED_8_1_0}}),	-- Glyph of Storm's Wake
 			i(184100, {["timeline"] = {ADDED_9_0_1}}),	-- Glyph of the Aerial Chameleon
 			i(184097, {["timeline"] = {ADDED_9_0_1}}),	-- Glyph of the Aquatic Chameleon
+			i(170168, {["timeline"] = {ADDED_8_2_0}}),	-- Glyph of the Cold Waves
+			i(170164, {["timeline"] = {ADDED_8_2_0}}),	-- Glyph of the Dark Depths
 			i(184096, {["timeline"] = {ADDED_9_0_1}}),	-- Glyph of the Swift Chameleon
+			i(166583, {["timeline"] = {ADDED_8_1_0}}),	-- Glyph of the Tides
 			i(162022),	-- Mark of the Dolphin (CI!)
 			i(162029),	-- Mark of the Humble Flyer (CI!)
 			i(162027),	-- Mark of the Tideskipper (CI!)
 		}),
-		filter(HELD_IN_OFF_HAND, {
-			i(161936),	-- Honorable Combatant's Etched Vessel [Alliance]
-			i(159940),	-- Honorable Combatant's Etched Vessel [Horde]
-			i(161934),	-- Inscribed Vessel of Mysticism [Alliance]
-			i(153643),	-- Inscribed Vessel of Mysticism [Horde]
-			i(167942),	-- Notorious Combatant's Etched Vessel [Alliance]
-			i(167941),	-- Notorious Combatant's Etched Vessel [Horde]
-			i(164697),	-- Sinister Combatant's Etched Vessel [Alliance]
-			i(164682),	-- Sinister Combatant's Etched Vessel [Horde]
-			i(170316),	-- Uncanny Combatant's Etched Vessel [Alliance]
-			i(170317),	-- Uncanny Combatant's Etched Vessel [Horde]
+		n(WEAPONS, {
+			i(161936),	-- Honorable Combatant's Etched Vessel [A]
+			i(159940),	-- Honorable Combatant's Etched Vessel [H]
+			i(161934),	-- Inscribed Vessel of Mysticism [A]
+			i(153643),	-- Inscribed Vessel of Mysticism [H]
+			i(167942, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Etched Vessel [A]
+			i(167941, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Etched Vessel [H]
+			i(164697, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Etched Vessel [A]
+			i(164682, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Etched Vessel [H]
+			i(170316, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Etched Vessel [A]
+			i(170317, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Etched Vessel [H]
 		}),
-		sp(269065, {	-- Scroll of Unlocking
+		filter(MISC, {
+			i(156637, {["timeline"] = {ADDED_8_1_5}}),	-- Blood Contract: Bloodguard
+			i(156638, {["timeline"] = {ADDED_8_1_5}}),	-- Blood Contract: Bloodshed
+			i(156636, {["timeline"] = {ADDED_8_1_5}}),	-- Blood Contract: Oblivion
+			i(156563, {["timeline"] = {ADDED_8_1_5}}),	-- Blood Contract: Sacrifice
+			i(153646),	-- Codex of the Quiet Mind
+			i(165016, {["timeline"] = {ADDED_8_1_0}}),	-- Contract: 7th Legion
+			i(168956, {["timeline"] = {ADDED_8_2_0}}),	-- Contract: Ankoan
+			i(153668),	-- Contract: Champions of Azeroth
+			i(153662),	-- Contract: Order of Embers
+			i(153661),	-- Contract: Proudmoore Admiralty
+			i(172008, {["timeline"] = {ADDED_8_3_0}}),	-- Contract: Rajani
+			i(168960, {["timeline"] = {ADDED_8_2_0}}),	-- Contract: Rustbolt Resistance
+			i(153663),	-- Contract: Storm's Wake
+			i(153665),	-- Contract: Talanji's Expedition
+			i(165017, {["timeline"] = {ADDED_8_1_0}}),	-- Contract: The Honorbound
+			i(153667),	-- Contract: Tortollan Seekers
+			i(172010, {["timeline"] = {ADDED_8_3_0}}),	-- Contract: Uldum Accord
+			i(168959, {["timeline"] = {ADDED_8_2_0}}),	-- Contract: Unshackled
+			i(153666),	-- Contract: Voldunai
+			i(153664),	-- Contract: Zandalari Empire
+			i(162114),	-- Crimson Ink Well
+			i(165745, {["timeline"] = {ADDED_8_1_0}}),	-- Crimson Ink Well
+			i(153670, {["timeline"] = {ADDED_8_1_5}}),	-- Sanguine Feather Quill of Lana'thel
 			i(159825),	-- Scroll of Unlocking
-		}),
-		category(106, {	-- Tarot Cards
-			sp(278527, {	-- Darkmoon Card of War
-				sp(267087, {	-- Blockades Deck
-					i(159128),	-- Darkmoon Deck: Blockades
-				}),
-				sp(267085, {	-- Fathoms Deck
-					i(159125),	-- Darkmoon Deck: Fathoms
-				}),
-				sp(267083, {	-- Squalls Deck
-					i(159126),	-- Darkmoon Deck: Squalls
-				}),
-				sp(267081, {	-- Tides Deck
-					i(159127),	-- Darkmoon Deck: Tides
-				}),
-			}),
-		}),
-		sp(256236, {	-- Tome of the Quiet Mind
 			i(153647),	-- Tome of the Quiet Mind
+			i(165733, {["timeline"] = {ADDED_8_1_5}}),	-- Vantus Rune: Crucible of Storms
+			i(165692, {["timeline"] = {ADDED_8_1_0}}),	-- Vantus Rune: Battle of Dazar'alor
+			i(171203, {["timeline"] = {ADDED_8_3_0}}),	-- Vantus Rune: Ny'alotha, the Waking City
+			i(168624, {["timeline"] = {ADDED_8_2_0}}),	-- Vantus Rune: The Eternal Palace
+			i(153673),	-- Vantus Rune: Uldir
+			i(158201),	-- War-Scroll of Intellect
+			i(158204),	-- War-Scroll of Fortitude
+			i(158202),	-- War-Scroll of Battle Shout
+		}),
+		filter(REAGENTS, {
+			i(158188),	-- Crimson Ink
+			i(168663, {["timeline"] = {ADDED_8_2_0}}),	-- Maroon Ink
+			i(158187),	-- Ultramarine Ink
+			i(158189),	-- Viridescent Ink
+			i(153598),	-- Darkmoon Card of War
+			i(153606),	-- Ace of Blockades
+			i(153628),	-- Two of Blockades
+			i(153629),	-- Three of Blockades
+			i(153630),	-- Four of Blockades
+			i(153631),	-- Five of Blockades
+			i(153632),	-- Six of Blockades
+			i(153633),	-- Seven of Blockades
+			i(153634),	-- Eight of Blockades
+			i(153605),	-- Ace of Fathoms
+			i(153621),	-- Two of Fathoms
+			i(153622),	-- Three of Fathoms
+			i(153623),	-- Four of Fathoms
+			i(153624),	-- Five of Fathoms
+			i(153625),	-- Six of Fathoms
+			i(153626),	-- Seven of Fathoms
+			i(153627),	-- Eight of Fathoms
+			i(153604),	-- Ace of Squalls
+			i(153614),	-- Two of Squalls
+			i(153615),	-- Three of Squalls
+			i(153616),	-- Four of Squalls
+			i(153617),	-- Five of Squalls
+			i(153618),	-- Six of Squalls
+			i(153619),	-- Seven of Squalls
+			i(153620),	-- Eight of Squalls
+			i(153603),	-- Ace of the Tides
+			i(153607),	-- Two of the Tides
+			i(153608),	-- Three of the Tides
+			i(153609),	-- Four of the Tides
+			i(153610),	-- Five of the Tides
+			i(153611),	-- Six of the Tides
+			i(153612),	-- Seven of the Tides
+			i(153613),	-- Eight of the Tides
 		}),
 		filter(TRINKET_F, {
-			i(169302),	-- Highborne Compendium of Mystical Bulwark
-			i(169328),	-- Highborne Compendium of Storms
-			i(169321),	-- Highborne Compendium of Sundering
-			i(169301),	-- Highborne Compendium of Swirling Tides
+			i(159128),	-- Darkmoon Deck: Blockades
+			i(159125),	-- Darkmoon Deck: Fathoms
+			i(159126),	-- Darkmoon Deck: Squalls
+			i(159127),	-- Darkmoon Deck: Tides
+			i(169302, {["timeline"] = {ADDED_8_2_0}}),	-- Highborne Compendium of Mystical Bulwark
+			i(169328, {["timeline"] = {ADDED_8_2_0}}),	-- Highborne Compendium of Storms
+			i(169321, {["timeline"] = {ADDED_8_2_0}}),	-- Highborne Compendium of Sundering
+			i(169301, {["timeline"] = {ADDED_8_2_0}}),	-- Highborne Compendium of Swirling Tides
 		}),
 	}),
 	prof(JEWELCRAFTING, {
@@ -1332,11 +1395,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 }))));
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
-		prof(ENGINEERING, {
-			expansion(EXPANSION.BFA, {
-				i(153505),	-- Monelite Boomstick
-			}),
-		}),
 		prof(TAILORING, {
 			expansion(EXPANSION.BFA, {
 				i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)

@@ -1027,54 +1027,6 @@ root("Achievements", {
 				["requireSkill"] = COOKING,
 			}),
 		}),
-		achcat(172, {	-- First Aid
-			ach(131, {	-- Journeyman in First Aid
-				["requireSkill"] = FIRST_AID,
-				["spellID"] = 3274,	-- First Aid (Journeyman)
-				["rank"] = 2,
-			}),
-			ach(132, {	-- Expert in First Aid
-				["requireSkill"] = FIRST_AID,
-				["spellID"] = 7924,	-- First Aid (Expert)
-				["rank"] = 3,
-			}),
-			ach(133, {	-- Artisan in First Aid
-				["requireSkill"] = FIRST_AID,
-				["spellID"] = 10846,	-- First Aid (Artisan)
-				["rank"] = 4,
-			}),
-			applyclassicphase(TBC_PHASE_ONE, ach(134, {	-- Master in First Aid
-				["spellID"] = 27028,	-- First Aid (Master)
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = FIRST_AID,
-				["rank"] = 5,
-			})),
-			applyclassicphase(WRATH_PHASE_ONE, ach(135, {	-- Grand Master in First Aid
-				["spellID"] = 45542,	-- First Aid (Grand Master)
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = FIRST_AID,
-				["rank"] = 6,
-			})),
-			applyclassicphase(WRATH_PHASE_ONE, ach(137, {	-- Stocking Up
-				["provider"] = { "i", 34722 },	-- Heavy Frostweave Bandage
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = FIRST_AID,
-			})),
-			applyclassicphase(WRATH_PHASE_ONE, ach(141, {	-- Ultimate Triage
-				["providers"] = {
-					{ "i", 34722 },	-- Heavy Frostweave Bandage
-					-- #if AFTER CATA
-					{ "i", 53049 },	-- Embersilk Bandage
-					{ "i", 53051 },	-- Dense Embersilk Bandage
-					-- #endif
-					-- #if AFTER MOP
-					{ "i", 72985 },	-- Windwool Bandage
-					{ "i", 72986 },	-- Heavy Windwool Bandage
-					-- #endif
-				},
-				["timeline"] = { "added 3.0.1" },
-			})),
-		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(730, {	-- Skills to Pay the Bills
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

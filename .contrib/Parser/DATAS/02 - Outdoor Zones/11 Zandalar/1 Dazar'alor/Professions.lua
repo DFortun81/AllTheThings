@@ -76,76 +76,23 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					}),
 				}),
 			}),
-			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
+			prof(INSCRIPTION, {
 				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 					["coord"] = { 42.4, 39.6, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						r(265809, {	-- Zandalari Inscription
-							["races"] = HORDE_ONLY,
-						}),
-						cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
-							r(287271),	-- Aqueous Chromotography
-							r(286649),	-- Sanguinated Chromotography
-						})),
-						cat(1026, {	-- Inks
-							r(264777),	-- Crimson Ink
-							r(264776),	-- Ultramarine Ink
-							r(264778),	-- Viridescent Ink
-						}),
-						cat(771, {	-- Books & Scrolls
-							r(256232),	-- Codex of the Quiet Mind [Rank 1]
-							r(256233),	-- Codex of the Quiet Mind [Rank 2]
-							r(269065),	-- Scroll of Unlocking
-							r(256235),	-- Tome of the Quiet Mind [Rank 1]
-							r(256236),	-- Tome of the Quiet Mind [Rank 2]
-							r(264767),	-- War-Scroll of Battle Shout
-							r(264769),	-- War-Scroll of Fortitude
-							r(264766),	-- War-Scroll of Intellect
-						}),
-						cat(772, {	-- Contracts
-							r(256297),	-- Contract: Champions of Azeroth [Rank 1]
-							r(256287, {	-- Contract: Talanji's Expedition [Rank 1]
-								["races"] = HORDE_ONLY,
-							}),
+					["g"] = appendGroups(BFA_ENCHANTING, {
+						r(265809),	-- Zandalari Inscription
+						n(MISC, {
+							r(256287),	-- Contract: Talanji's Expedition [Rank 1]
 							r(284295, {	-- Contract: The Honorbound [Rank 1]
-								["races"] = HORDE_ONLY,
-								["timeline"] = { "added 8.1.0" },
+								["timeline"] = { ADDED_8_1_0 },
 							}),
-							r(256294),	-- Contract: Tortollan Seekers [Rank 1]
-							r(256290, {	-- Contract: Voldunai [Rank 1]
-								["races"] = HORDE_ONLY,
-							}),
-							r(256284, {	-- Contract: Zandalari Empire [Rank 1]
-								["races"] = HORDE_ONLY,
-							}),
+							r(256290),	-- Contract: Voldunai [Rank 1]
+							r(256284),	-- Contract: Zandalari Empire [Rank 1]
 						}),
-						cat(773, {	-- Cards
-							r(278527),	-- Darkmoon Card of War [Rank 1]
-							r(256245),	-- Darkmoon Card of War [Rank 2]
-						}),
-						cat(774, {	-- Off-Hands
-							r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]
-							r(256247),	-- Inscribed Vessel of Mysticism [Rank 1]
-							r(256248),	-- Inscribed Vessel of Mysticism [Rank 2]
-							r(282803, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Etched Vessel [Rank 1]
-							r(305952, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Etched Vessel [Rank 1]
-						}),
-						cat(775, {	-- Mass Milling
-							r(256219),	-- Mass Mill Akunda's Bite
-							r(256308),	-- Mass Mill Anchor Weed
-							r(256217),	-- Mass Mill Riverbud
-							r(256223),	-- Mass Mill Sea Stalk
-							r(256221),	-- Mass Mill Siren's Pollen
-							r(256218),	-- Mass Mill Star Moss
-							r(256220),	-- Mass Mill Winter's Kiss
-						}),
-						cat(1235, {	-- Follower Equipment
-							r(278422),	-- Crimson Ink Well
-						}),
-					},
+					}),
 				}),
-			})),
+			}),
 			prof(JEWELCRAFTING, {
 				q(54480, {	-- Jeweled Designs
 					["requireSkill"] = JEWELCRAFTING,

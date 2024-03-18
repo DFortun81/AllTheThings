@@ -706,9 +706,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 68.6, 72.2, WESTFALL },
 							["cr"] = 7051,	-- Malformed Defias Drone
 						}),
-						-- #if BEFORE 3.0.2
-						recipe(8681),	-- Instant Poison
-						-- #endif
+						recipe(8681, {	-- Instant Poison
+							["timeline"] = { REMOVED_3_0_2 },
+						}),
+						recipe(2842, {	-- Poisons
+							["timeline"] = { REMOVED_3_0_2 },
+						}),
 						i(9513, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { "removed 1.3.0" },
 						}),

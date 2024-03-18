@@ -916,8 +916,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		expansion(EXPANSION.BFA, {
 			n(SEASON_DREAD, {
-				i(159941),	-- Honorable Combatant's Inked Vessel
-				i(161937),	-- Honorable Combatant's Inked Vessel
 				i(159923),	-- Honorable Combatant's Salutary Scepter
 				i(161929),	-- Honorable Combatant's Salutary Scepter
 			}),

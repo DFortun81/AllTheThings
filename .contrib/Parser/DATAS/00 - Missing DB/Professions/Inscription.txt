@@ -634,41 +634,7 @@ r(238400),	--
 r(238402),	--
 r(238403),	--
 r(240254),	--
-8.0.1.25902
-r(256238),	-- Manual of Elemental Enchancement
-r(256241),	-- Manual of Reverse Wounding
-r(256250),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
-r(256251),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
-r(256252),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
-r(264494),	-- Inscription
-r(264496),	-- Outland Inscription
-r(264498),	-- Northrend Inscription
-r(264500),	-- Cataclysm Inscription
-r(264502),	-- Pandaria Inscription
-r(264504),	-- Draenor Inscription
-8.0.1.26231
-r(269744),	-- Honorable Combatant's Inked Vessel \\ Honorable Combatant's Robust Tome
-r(269745),	-- Honorable Combatant's Inked Vessel \\ Honorable Combatant's Robust Tome
-r(269746),	-- Honorable Combatant's Inked Vessel \\ Honorable Combatant's Robust Tome
-8.2.0.30080
-r(299666),	-- Contract: Ankoan
-r(299667),	-- Contract: Ankoan
-r(299669),	-- Contract: Unshackled
-r(299670),	-- Contract: Unshackled
-8.2.0.30168
-r(301999),	-- Milling
-r(302001),	-- Milling
-8.2.0.30329
-r(302697),	-- Milling
-r(302698),	-- Milling
-r(302700),	-- Milling
-r(302701),	-- Milling
-r(302703),	-- Milling
-r(302704),	-- Milling
-8.2.5.31401
-r(309443),	-- Glyph of Lavish Servings
 10.0.0.44649
-r(382984),	-- Kul Tiras and Zandalar Milling
 r(382986),	-- Legion Milling
 r(382987),	-- Draenor Milling
 r(382988),	-- Pandaria Milling

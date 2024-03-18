@@ -1,4 +1,5 @@
-applyclassicphase(WRATH_PHASE_ONE, profession(960, {	-- Runeforging
+-- #if ANYCLASSIC
+applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 	--["recipeID"] = 53428,  -- Runeforging spell
 	["timeline"] = { "added 3.0.2" },
 	["classes"] = { DEATHKNIGHT },
@@ -65,3 +66,4 @@ applyclassicphase(WRATH_PHASE_ONE, profession(960, {	-- Runeforging
 		},
 	},
 }));
+-- #endif

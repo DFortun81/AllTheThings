@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(160543, {	-- Tabard of the Tortollan Seekers
 						["cost"] = 6250000,	-- 625g
 					}),
-					i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3] (RECIPE!)
+					i(162023, {	-- Technique: Glyph of the Dolphin (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161544, {	-- Vambraces of a Thousand Year Toil

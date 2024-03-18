@@ -1047,6 +1047,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			}),
 		}),
 	}),
+	prof(POISONS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5, REMOVED_3_0_2 }, ["classes"] = { ROGUE }}, {
+		i(21835),	-- Anesthetic Poison
+		i(22053),	-- Deadly Poison VI
+		i(22054),	-- Deadly Poison VII
+		i(21927),	-- Instant Poison VII
+		i(22055),	-- Wound Poison V
+	})),
 	prof(SKINNING, {
 		["description"] = "The following items can be gathered by skinning creatures out in the world.",
 		["groups"] = {

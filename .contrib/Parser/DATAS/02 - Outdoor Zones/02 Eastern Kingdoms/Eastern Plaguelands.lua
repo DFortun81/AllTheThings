@@ -597,6 +597,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						},
 					}),
+					prof(RUNEFORGING, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, ["classes"] = { DEATHKNIGHT } }, {
+						r(53428),	-- Runeforging
+						r(53341, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}), -- Rune of Cinderglacier
+						r(326911, {["timeline"] = {ADDED_9_0_1}}), -- Rune of Hysteria
+						r(53331, {["timeline"] = {ADDED_3_0_2, REMOVED_7_0_3}}), -- Rune of Lichbane
+						r(53343), -- Rune of Razorice
+						r(326805, {["timeline"] = {ADDED_9_0_1}}), -- Rune of Sanguination
+						r(54447, {["timeline"] = {ADDED_3_0_2, REMOVED_7_0_3}}), -- Rune of Spellbreaking
+						r(53342, {["timeline"] = {ADDED_3_0_2, REMOVED_7_0_3}}), -- Rune of Spellshattering
+						r(326855, {["timeline"] = {ADDED_9_0_1}}), -- Rune of Spellwarding
+						r(54446, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}), -- Rune of Swordbreaking
+						r(53323, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}), -- Rune of Swordshattering
+						r(327082, {["timeline"] = {ADDED_9_0_1}}), -- Rune of the Apocalypse
+						r(53344), -- Rune of the Fallen Crusader
+						r(70164, {["timeline"] = {ADDED_3_3_0, REMOVED_6_0_2}}), -- Rune of the Nerubian Carapace
+						r(62158, {["timeline"] = {ADDED_3_0_8}}), -- Rune of the Stoneskin Gargoyle
+						r(326977, {["timeline"] = {ADDED_9_0_1}}), -- Rune of Unending Thirst
+					})),
 					n(VENDORS, {
 						n(29587, {	-- Dread Commander Thalanor
 							["coord"] = { 84.0, 49.8, EASTERN_PLAGUELANDS },
