@@ -4608,7 +4608,7 @@ app.AddEventHandler("OnReady", function()
 								if key == "objectiveID" then
 									if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
 								elseif key == "criteriaID" then
-									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(group.achievementID));
+									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(o.achievementID));
 								else
 									if key == "npcID" then key = "creatureID"; end
 									AttachTooltipSearchResults(tooltip, line, SearchForField, key, o[o.key]);
