@@ -13989,7 +13989,6 @@ app.LoadDebugger = function()
 				icon = 1,
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,
-				_CheckCollectible = 1,
 				_coord = 1,
 			};
 			local function CleanObject(obj)

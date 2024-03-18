@@ -106,11 +106,9 @@ local function SetCostTotals(costs, isCost, refresh)
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
 			if not blockedBy then
 				c.isCost = isCost;
-				c._CheckCollectible = isCost;
 				-- app.PrintDebug("Unblocked Cost",app:SearchLink(c))
 			else
 				c.isCost = nil;
-				c._CheckCollectible = nil;
 				-- app.PrintDebug("Skipped cost under locked/saved parent"
 				-- 	,Linkify(c)
 				-- 	,Linkify(blockedBy))
@@ -119,7 +117,6 @@ local function SetCostTotals(costs, isCost, refresh)
 			-- app.PrintDebug("Not a cost"
 			-- 	,app:Linkify(c.hash, app.Colors.ChatLink, "search:"..c.key..":"..c[c.key]))
 			c.isCost = nil;
-			c._CheckCollectible = nil;
 		end
 		-- regardless of the Cost state, make sure to update this specific cost group for visibility
 		DGU(c)
@@ -277,12 +274,12 @@ app.CollectibleAsCost = function(t)
 	local lastSettings, appSettings = t._SettingsRefresh, app._SettingsRefresh
 	-- previously checked without Settings changed
 	if lastSettings and lastSettings == appSettings then
-		-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible,settingsChange)
-		return t._CheckCollectible;
+		-- app.PrintDebug("CAC:Cached",t.hash,t.isCost,settingsChange)
+		return t.isCost;
 	end
 	-- app.PrintDebug("CAC:Check",app:SearchLink(t))
 	t._SettingsRefresh = appSettings;
-	t._CheckCollectible = nil;
+	t.isCost = nil;
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
@@ -290,7 +287,7 @@ app.CollectibleAsCost = function(t)
 	for _,ref in ipairs(collectibles) do
 		-- Use the common collectibility check logic
 		if CheckCollectible(ref) then
-			t._CheckCollectible = true;
+			t.isCost = true;
 			t.collectibleAsCost = nil;
 			-- app.PrintDebug("CAC:Set",app:SearchLink(t),"from",app:SearchLink(ref),"@",t._SettingsRefresh)
 			return true;

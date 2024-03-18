@@ -349,7 +349,7 @@ local function default_costCollectibles(t)
 	end
 	if results and #results > 0 then
 		-- not sure we need to copy these into another table
-		-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
+		-- app.PrintDebug("default_costCollectibles",id,#results,app:SearchLink(t))
 		return results;
 	end
 	return app.EmptyTable;

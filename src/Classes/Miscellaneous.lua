@@ -333,7 +333,6 @@ for _,field in ipairs({
 	"maxReputation",
 	"OnUpdate",
 	"OnTooltip",
-	"_CheckCollectible",
 	"_SettingsRefresh",
 	"_up",
 	"up",
