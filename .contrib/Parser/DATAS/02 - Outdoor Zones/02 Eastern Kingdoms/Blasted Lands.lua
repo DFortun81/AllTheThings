@@ -3,12 +3,12 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(BLASTED_LANDS, {
-		-- #if AFTER 6.0.1
-		["description"] = "If you are phased into the Invasion Blasted Lands and need to go to the pre-Invasion Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
-		-- #endif
 		["lore"] = "The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_blastedlands_01",
+		-- #endif
+		-- #if AFTER 6.0.1
+		["crs"] = { 88206 },	-- Zidormi
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -53,18 +53,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Blasted Lands, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				ach(9618, {		-- The Iron Invasion
-					["sourceQuests"] = {
-						36941,	-- Report to the King
-						36940,	-- Warning Orgrimmar
-					},
-					["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
-					["groups"] = {
-						title(289, {		-- <Name> of the Iron Vanguard
-							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
-						}),
-					},
-				}),
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -94,7 +82,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(604, {	-- Dreadmaul Hold, Blasted Lands
-					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["cr"] = 43121,	-- Preda <Wind Rider Master>
 					["coord"] = { 43.6, 14.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -103,36 +90,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(45, {	-- Nethergarde Keep, Blasted Lands
 					["cr"] = 8609,	-- Alexandra Constantine <Gryphon Master>
 					-- #if AFTER CATA
-					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["coord"] = { 61.2, 21.6, BLASTED_LANDS },
 					-- #else
 					["coord"] = { 65.6, 24.4, BLASTED_LANDS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
-				fp(1538, {	-- Shattered Beachhead
-					["description"] = "Must be in the current version of Blasted Lands to access this point.",
-					["cr"] = 85731,	-- Araazi <Flight Master>
-					["coord"] = { 67.6, 28.0, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18566" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				fp(1537, {	-- Shattered Landing
-					["description"] = "Must be in the current version of Blasted Lands to access this point.",
-					["cr"] = 85734,	-- Ameri Windblade <Flight Master>
-					["coord"] = { 72.8, 48.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18566" },
-					["races"] = HORDE_ONLY,
-				}),
 				fp(603, {	-- Sunveil Excursion, Blasted Lands
-					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["cr"] = 43114,	-- Salena <Dragonhawk Master>
 					["coord"] = { 50.8, 72.8, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(602, {	-- Surwich, Blasted Lands
-					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["cr"] = 43107,	-- Graham McAllister <Hippogryph Master>
 					["coord"] = { 47.0, 89.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -202,66 +172,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35460, {	-- Attack of the Iron Horde (A)
-					["qg"] = 82270,	-- Vindicator Maraad
-					["coord"] = { 66.6, 28.2, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Ironmarch Grunt slain
-							["providers"] = {
-								{ "n", 76189 },	-- Ironmarch Grunt
-								{ "n", 76556 },	-- Ironmarch Grunt
-								{ "n", 84228 },	-- Ironmarch Skirmisher <Iron Horde>
-							},
-						}),
-						i(118761, {	-- Invader's Scarlet Seal
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118762, {	-- Portal-Breaker's Band
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118763, {	-- Blackstone Signet
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118764, {	-- Ruby-Eye Seal
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118765, {	-- Sapphire Seal
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-					},
-				}),
-				q(35745, {	-- Attack of the Iron Horde (H)
-					["qg"] = 82851,	-- Thrall
-					["coord"] = { 71.8, 47.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Ironmarch Grunt slain
-							["providers"] = {
-								{ "n", 76189 },	-- Ironmarch Grunt
-								{ "n", 76556 },	-- Ironmarch Grunt
-								{ "n", 84228 },	-- Ironmarch Skirmisher <Iron Horde>
-							},
-						}),
-						i(118761, {	-- Invader's Scarlet Seal
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118762, {	-- Portal-Breaker's Band
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118763, {	-- Blackstone Signet
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118764, {	-- Ruby-Eye Seal
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118765, {	-- Sapphire Seal
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-					},
-				}),
 				q(25715, {	-- A Closer Look
 					["qg"] = 9540,	-- Enohar Thunderbrew
 					["sourceQuest"] = 27919,	-- Onward to the Blasted Lands
@@ -289,13 +199,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 41387 },	-- Bloodwash Enchantress
 						}),
 					},
-				}),
-				q(35751, {	-- Attack on Nethergarde
-					["qg"] = 84928,	-- Thrall
-					["sourceQuest"] = 36292,	-- Investigating the Invasion
-					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
 				}),
 				q(25684, {	-- Attune the Bloodstone (A)
 					["qg"] = 7506,	-- Bloodmage Lynnore
@@ -403,52 +306,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35488, {	-- Death to the Dreadmaul (A)
-					["qg"] = 84929,	-- Vindicator Maraad
-					["sourceQuests"] = {
-						35492,	-- For Nethergarde!
-						35486,	-- Lunatic Lieutenants (A)
-						35494,	-- Mementos of the Fallen
-					},
-					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Dreadmaul slain
-							["providers"] = {
-								{ "n", 78345 },	-- Dreadmaul Crusher
-								{ "n", 77771 },	-- Dreadmaul Destroyer
-								{ "n", 78348 },	-- Dreadmaul Flamebelcher
-								{ "n", 78349 },	-- Dreadmaul Magmaster <Iron Horde>
-								{ "n", 78488 },	-- Dreadmaul Packmaster
-								{ "n", 82451 },	-- Toothsmash the Annihilator
-							},
-						}),
-					},
-				}),
-				q(35762, {	-- Death to the Dreadmaul (H)
-					["qg"] = 84928,	-- Thrall
-					["sourceQuests"] = {
-						35751,	-- Attack on Nethergarde
-						35750,	-- Lunatic Lieutenants (H)
-						35761,	-- Ransacking Nethergarde
-					},
-					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Dreadmaul slain
-							["providers"] = {
-								{ "n", 78345 },	-- Dreadmaul Crusher
-								{ "n", 77771 },	-- Dreadmaul Destroyer
-								{ "n", 78348 },	-- Dreadmaul Flamebelcher
-								{ "n", 78349 },	-- Dreadmaul Magmaster <Iron Horde>
-								{ "n", 78488 },	-- Dreadmaul Packmaster
-								{ "n", 82451 },	-- Toothsmash the Annihilator
-							},
-						}),
-					},
-				}),
 				q(26186, {	-- Demoniac Vessel (A)
 					["qg"] = 42352,	-- Cenarion Observer Shayana
 					["sourceQuest"] = 26185,	-- Advice from the Cenarion Circle
@@ -506,59 +363,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35464, {	-- Ending Executions (A)
-					["qg"] = 85213,	-- Bodrick Grey
-					["sourceQuests"] = {
-						35460,	-- Attack of the Iron Horde (A)
-						35462,	-- Under Siege (A)
-					},
-					["coord"] = { 66.8, 28.0, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/3 Ironmarch Executioner slain
-							["provider"] = { "n", 82774 },	-- Ironmarch Executioner
-							["coord"] = { 58.6, 30.4, BLASTED_LANDS },
-						}),
-					},
-				}),
-				q(35744, {	-- Ending Executions (H)
-					["qg"] = 85247,	-- Rokhan
-					["sourceQuests"] = {
-						35745,	-- Attack of the Iron Horde (H)
-						35746,	-- Under Siege (H)
-					},
-					["coord"] = { 71.8, 48.9, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/3 Ironmarch Executioner slain
-							["provider"] = { "n", 82774 },	-- Ironmarch Executioner
-							["coord"] = { 58.6, 30.4, BLASTED_LANDS },
-						}),
-					},
-				}),
-				q(35496, {	-- Enohar's Revenge
-					["qg"] = 76111,	-- Enohar Thunderbrew
-					["sourceQuests"] = {
-						35492,	-- For Nethergarde!
-						35486,	-- Lunatic Lieutenants
-						35494,	-- Mementos of the Fallen
-					},
-					["coord"] = { 51.8, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/3 Poisoned cooking pot
-							["provider"] = { "o", 232625 },	-- Cooking Pot
-							["coords"] = {
-								{ 44.0, 31.1, BLASTED_LANDS },
-								{ 44.2, 35.6, BLASTED_LANDS },
-								{ 43.5, 37.1, BLASTED_LANDS },
-							},
-						}),
-					},
-				}),
 				q(3501, {	-- Everything Counts In Large Amounts
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
@@ -567,47 +371,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						i(12122),	-- Kum'isha's Junk
-					},
-				}),
-				q(35492, {	-- For Nethergarde!
-					["qg"] = 84929,	-- Vindicator Maraad
-					["sourceQuest"] = 36307,	-- Investigating the Invasion
-					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(35500, {	-- Gar'mak Bladetwist (A)
-					["qg"] = 84929,	-- Vindicator Maraad
-					["sourceQuests"] = {
-						35488,	-- Death to the Dreadmaul (A)
-						35496,	-- Enohar's Revenge (A)
-						35495,	-- Toothsmash the Annihilator (A)
-					},
-					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Gar'mak Bladetwist slain
-							["provider"] = { "n", 82458 },	-- Gar'mak Bladetwist
-							["coord"] = { 40.4, 11.6, BLASTED_LANDS },
-						}),
-					},
-				}),
-				q(35763, {	-- Gar'mak Bladetwist (H)
-					["qg"] = 84928,	-- Thrall
-					["sourceQuests"] = {
-						35762,	-- Death to the Dreadmaul (H)
-						35764,	-- Okrilla's Revenge (H)
-						35760,	-- Toothsmash the Annihilator (H)
-					},
-					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Gar'mak Bladetwist slain
-							["provider"] = { "n", 82458 },	-- Gar'mak Bladetwist
-							["coord"] = { 40.4, 11.6, BLASTED_LANDS },
-						}),
 					},
 				}),
 				q(26166, {	-- Enhancing the Stone (A)
@@ -789,101 +552,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(36307, {	-- Investigating the Invasion (A)
-					["qg"] = 82270,	-- Vindicator Maraad
-					["sourceQuests"] = {
-						35464,	-- Ending Executions (A)
-						35463,	-- Subversive Scouts (A)
-					},
-					["coord"] = { 66.6, 28.2, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(36292, {	-- Investigating the Invasion (H)
-					["qg"] = 82851,	-- Thrall
-					["sourceQuests"] = {
-						35744,	-- Ending Executions (H)
-						35748,	-- Subversive Scouts (H)
-					},
-					["coord"] = { 71.8, 47.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-				}),
-				{	-- Lunatic Lieutenants
-					["allianceQuestData"] = q(35486, {	-- Lunatic Lieutenants [A]
-						["qg"] = 84929,	-- Vindicator Maraad
-						["sourceQuest"] = 36307,	-- Investigating the Invasion (A)
-						["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					}),
-					["hordeQuestData"] = q(35750, {	-- Lunatic Lieutenants [H]
-						["qg"] = 84928,	-- Thrall
-						["sourceQuest"] = 36292,	-- Investigating the Invasion (H)
-						["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					}),
-					["timeline"] = { "added 6.0.1.18505" },
-					["groups"] = {
-						objective(1, {	-- 0/1 Mokrik's Battleplan
-							["provider"] = { "i", 113399 },	-- Mokrik's Battleplan
-							["coord"] = { 62.6, 13.2, BLASTED_LANDS },
-							["cr"] = 73459,	-- Mokrik Blackfingers
-						}),
-						objective(2, {	-- 0/1 Rukah's Battleplan
-							["provider"] = { "i", 113400 },	-- Rukah's Battleplan
-							["coord"] = { 57.2, 17.4, BLASTED_LANDS },
-							["cr"] = 73458,	-- Rukah the Machinist
-						}),
-						objective(3, {	-- 0/1 Gar's Battleplan
-							["provider"] = { "i", 113401 },	-- Gar's Battleplan
-							["coord"] = { 60.2, 14.0, BLASTED_LANDS },
-							["cr"] = 73446,	-- Gar Steelcrush
-						}),
-						i(118766, {	-- Skulltooth Collar
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118767, {	-- Necklace of Celerity
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118768, {	-- Gnawing Tooth
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118769, {	-- Emberfury Choker
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118770, {	-- Chain of Evasion
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-					},
-				},
-				q(35494, {	-- Mementos of the Fallen
-					["qg"] = 82447,	-- Commander Vines
-					["sourceQuest"] = 36307,	-- Investigating the Invasion
-					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Strumner's Sword
-							["providers"] = {
-								{ "i", 113395 },	-- Strumner's Sword
-								{ "o", 232573 },	-- Strumner's Sword
-							},
-							["coord"] = { 61.8, 15.0, BLASTED_LANDS },
-						}),
-						objective(2, {	-- 0/1 Krolan's Shield
-							["providers"] = {
-								{ "i", 113396 },	-- Krolan's Shield
-								{ "o", 232575 },	-- Krolan's Shield
-							},
-							["coord"] = { 60.6, 19.9, BLASTED_LANDS },
-						}),
-						objective(3, {	-- 0/1 Keri's Mug
-							["providers"] = {
-								{ "i", 113397 },	-- Keri's Mug
-								{ "o", 232576 },	-- Keri's Mug
-							},
-							["coord"] = { 59.5, 18.0, BLASTED_LANDS },
-						}),
-					},
-				}),
 				q(25682, {	-- Mission Complete
 					["providers"] = {
 						{ "n", 41134 },	-- Tak'arili
@@ -1020,27 +688,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35764, {	-- Okrilla's Revenge
-					["qg"] = 76609,	-- Okrilla
-					["sourceQuests"] = {
-						35751,	-- Attack on Nethergarde
-						35750,	-- Lunatic Lieutenants
-						35761,	-- Ransacking Nethergarde
-					},
-					["coord"] = { 48.7, 31.8, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/3 Poisoned cooking pot
-							["provider"] = { "o", 232625 },	-- Cooking Pot
-							["coords"] = {
-								{ 44.0, 31.1, BLASTED_LANDS },
-								{ 44.2, 35.6, BLASTED_LANDS },
-								{ 43.5, 37.1, BLASTED_LANDS },
-							},
-						}),
-					},
-				}),
 				q(3502, {	-- One Draenei's Junk...
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["sourceQuest"] = 3501,	-- Everything Counts In Large Amounts
@@ -1079,30 +726,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 42248 },	-- Drowned Gilnean Sailor
 								{ "n", 42249 },	-- Drowned Gilnean Settler
 							},
-						}),
-					},
-				}),
-				q(36379, {	-- Peeking into the Portal (A)
-					["qg"] = 85213,	-- Bodrick Grey
-					["coord"] = { 66.8, 28.0, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Use the telescope
-							["provider"] = { "o", 234576 },	-- Telescope
-							["coord"] = { 61.7, 36.5, BLASTED_LANDS },
-						}),
-					},
-				}),
-				q(36382, {	-- Peeking into the Portal (H)
-					["qg"] = 85247,	-- Rokhan
-					["coord"] = { 71.8, 48.9, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- Use the telescope
-							["provider"] = { "o", 234619 },	-- Telescope
-							["coord"] = { 61.7, 36.5, BLASTED_LANDS },
 						}),
 					},
 				}),
@@ -1193,36 +816,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(35761, {	-- Ransacking Nethergarde
-					["qg"] = 76609,	-- Okrilla
-					["sourceQuest"] = 36292,	-- Investigating the Invasion
-					["coord"] = { 48.7, 31.9, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Aitokk's Axe
-							["providers"] = {
-								{ "i", 113439 },	-- Aitokk's Axe
-								{ "o", 233228 },	-- Aitokk's Axe
-							},
-							["coord"] = { 61.8, 14.8, BLASTED_LANDS },
-						}),
-						objective(2, {	-- 0/1 Overseer Struk's Shield
-							["providers"] = {
-								{ "i", 113437 },	-- Overseer Struk's Shield
-								{ "o", 233227 },	-- Overseer Struk's Shield
-							},
-							["coord"] = { 60.6, 19.9, BLASTED_LANDS },
-						}),
-						objective(3, {	-- 0/1 Neka's Poison Flask
-							["providers"] = {
-								{ "i", 113436 },	-- Neka's Poison Flask
-								{ "o", 233224 },	-- Neka's Poison Flask
-							},
-							["coord"] = { 59.5, 18.0, BLASTED_LANDS },
-						}),
-					},
-				}),
 				q(25713, {	-- Remove Their Arms
 					["qg"] = 42264,	-- Buttonwillow McKittrick
 					["sourceQuest"] = 25710,	-- Minor Distractions
@@ -1236,33 +829,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 57117 },	-- Buttonwillow's Hand Grenade
 							},
 							["coord"] = { 53.66, 14.83, BLASTED_LANDS },
-						}),
-					},
-				}),
-				q(36941, {	-- Report to the King
-					["qg"] = 84929,	-- Vindicator Maraad
-					["sourceQuest"] = 35500,	-- Gar'mark Bladetwist
-					["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(118776, {	-- Talisman of the Invader
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118777, {	-- Bloodcaster's Charm
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118778, {	-- Ironmender's Totem
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118779, {	-- Bladespike Charm
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118780, {	-- Bloodburn Protector
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(111660, {	-- Iron Starlette (PET!)
-							["timeline"] = { "added 6.0.1.18505" },
 						}),
 					},
 				}),
@@ -1357,30 +923,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				{	-- Subversive Scouts
-					["allianceQuestData"] = q(35463, {	-- Subversive Scouts [A]
-						["qg"] = 82270,	-- Vindicator Maraad
-						["sourceQuests"] = {
-							35460,	-- Attack of the Iron Horde (A)
-							35462,	-- Under Siege (A)
-						},
-						["coord"] = { 66.6, 28.2, BLASTED_LANDS },
-					}),
-					["hordeQuestData"] = q(35748, {	-- Subversive Scouts [H]
-						["qg"] = 82851,	-- Thrall
-						["sourceQuests"] = {
-							35745,	-- Attack of the Iron Horde (H)
-							35746,	-- Under Siege (H)
-						},
-						["coord"] = { 71.8, 47.7, BLASTED_LANDS },
-					}),
-					["timeline"] = { "added 6.0.1.18505" },
-					["groups"] = {
-						objective(1, {	-- 0/1 Ironmarch Scout slain
-							["provider"] = { "n", 76886 },	-- Ironmarch Scout <Iron Horde>
-						}),
-					},
-				},
 				q(7583, {	-- Suppression
 					["qg"] = 14463,	-- Daio the Decrepit
 					["sourceQuests"] = {
@@ -1631,14 +1173,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 45,
 				}),
-				-- #if BEFORE 9.0.1
-				q(36881, {	-- The Dark Portal / Warlords of Draenor: The Dark Portal [9.0.1]
-					["qg"] = 78423,	-- Archmage Khadgar
-					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["lvl"] = 90,
-				}),
-				-- #endif
 				q(2585, {	-- The Decisive Striker
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
@@ -1883,64 +1417,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(10752),	-- Emerald Encrusted Chest
 					},
 				}),
-				{	-- Toothsmash the Annihilator
-					["allianceQuestData"] = q(35495, {	-- Toothsmash the Annihilator [A]
-						["qg"] = 84929,	-- Vindicator Maraad
-						["sourceQuests"] = {
-							35492,	-- For Nethergarde!
-							35486,	-- Lunatic Lieutenants (A)
-							35494,	-- Mementos of the Fallen
-						},
-						["coord"] = { 52.0, 28.6, BLASTED_LANDS },
-					}),
-					["hordeQuestData"] = q(35760, {	-- Toothsmash the Annihilator [H]
-						["qg"] = 84928,	-- Thrall
-						["sourceQuests"] = {
-							35751,	-- Attack on Nethergarde
-							35750,	-- Lunatic Lieutenants (H)
-							35761,	-- Ransacking Nethergarde
-						},
-						["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					}),
-					["timeline"] = { "added 6.0.1.18505" },
-					["groups"] = {
-						objective(1, {	-- 0/1 Toothsmash the Annihilator slain
-							["provider"] = { "n", 82451 },	-- Toothsmash the Annihilator
-							["coord"] = { 44, 35.4, BLASTED_LANDS },
-						}),
-						i(118771, {	-- Wildfire Windcloak
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118772, {	-- Frostshaper Cape
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118773, {	-- Butcher's Wrap
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118774, {	-- Armswake Greatcloak
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118775, {	-- Night Prowler's Cloak
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-					},
-				},
-				{	-- Under Siege
-					["allianceQuestData"] = q(35462, {	-- Under Siege [A]
-						["qg"] = 82270,	-- Vindicator Maraad
-						["coord"] = { 66.6, 28.2, BLASTED_LANDS },
-					}),
-					["hordeQuestData"] = q(35746, {	-- Under Siege [H]
-						["qg"] = 82851,	-- Thrall
-						["coord"] = { 71.8, 47.7, BLASTED_LANDS },
-					}),
-					["timeline"] = { "added 6.0.1.18505" },
-					["groups"] = {
-						objective(1, {	-- 0/3 Iron Demolisher destroyed
-							["provider"] = { "n", 82298 },	-- Iron Demolisher
-						}),
-					},
-				},
 				q(2603, {	-- Vulture's Vigor
 					["qg"] = 7506,	-- Bloodmage Lynnore
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
@@ -1953,41 +1429,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(8424, {	-- Gizzard Gum
 							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
-				-- #if AFTER 9.0.1
-				q(36881, {	-- Warlords of Draenor: The Dark Portal [9.0.1] / The Dark Portal
-					["qg"] = 78423,	-- Archmage Khadgar
-					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["lvl"] = 90,
-				}),
-				-- #endif
-				q(36940, {	-- Warning Orgrimmar
-					["qg"] = 84928,	-- Thrall
-					["sourceQuest"] = 35763,	-- Gar'mak Bladetwist
-					["coord"] = { 48.7, 31.7, BLASTED_LANDS },
-					["timeline"] = { "added 6.0.1.18505" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(118776, {	-- Talisman of the Invader
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118777, {	-- Bloodcaster's Charm
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118778, {	-- Ironmender's Totem
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118779, {	-- Bladespike Charm
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(118780, {	-- Bloodburn Protector
-							["timeline"] = { "added 6.0.1.18505" },
-						}),
-						i(111660, {	-- Iron Starlette (PET!)
-							["timeline"] = { "added 6.0.1.18505" },
 						}),
 					},
 				}),
@@ -2346,33 +1787,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(76117, bubbleDown({ ["timeline"] = { "added 6.0.1.18322" } }, {	-- Quartermaster Rindelle <Replacement Quest Rewards and General Goods>
-					["description"] = "Vendor only sells quest reward items as you progress through the invasion story.",
-					["coord"] = { 66.4, 27.6, BLASTED_LANDS },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(118774),	-- Armswake Greatcloak
-						i(118763),	-- Blackstone Signet
-						i(118779),	-- Bladespike Charm
-						i(118780),	-- Bloodburn Protector
-						i(118777),	-- Bloodcaster's Charm
-						i(118773),	-- Butcher's Wrap
-						i(118770),	-- Chain of Evasion
-						i(118769),	-- Emberfury Choker
-						i(118772),	-- Frostshaper Cape
-						i(118768),	-- Gnawing Tooth
-						i(118761),	-- Invader's Scarlet Seal
-						i(118778),	-- Ironmender's Totem
-						i(118767),	-- Necklace of Celerity
-						i(118775),	-- Night Prowler's Cloak
-						i(118762),	-- Portal-Breaker's Band
-						i(118764),	-- Ruby-Eye Seal
-						i(118765),	-- Sapphire Seal
-						i(118766),	-- Skulltooth Collar
-						i(118776),	-- Talisman of the Invader
-						i(118771),	-- Wildfire Windcloak
-					},
-				})),
 				n(44321, {	-- Sarah Lightbrew <Enchanting Supplies>
 					["coord"] = { 62.4, 16.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -2384,33 +1798,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(76522, bubbleDown({ ["timeline"] = { "added 6.0.1.18322" } }, {	-- Zerpy Clampshock <Replacement Quest Rewards and General Goods>
-					["description"] = "Vendor only sells quest reward items as you progress through the invasion story.",
-					["coord"] = { 71.5, 49.1, BLASTED_LANDS },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(118774),	-- Armswake Greatcloak
-						i(118763),	-- Blackstone Signet
-						i(118779),	-- Bladespike Charm
-						i(118780),	-- Bloodburn Protector
-						i(118777),	-- Bloodcaster's Charm
-						i(118773),	-- Butcher's Wrap
-						i(118770),	-- Chain of Evasion
-						i(118769),	-- Emberfury Choker
-						i(118772),	-- Frostshaper Cape
-						i(118768),	-- Gnawing Tooth
-						i(118761),	-- Invader's Scarlet Seal
-						i(118778),	-- Ironmender's Totem
-						i(118767),	-- Necklace of Celerity
-						i(118775),	-- Night Prowler's Cloak
-						i(118762),	-- Portal-Breaker's Band
-						i(118764),	-- Ruby-Eye Seal
-						i(118765),	-- Sapphire Seal
-						i(118766),	-- Skulltooth Collar
-						i(118776),	-- Talisman of the Invader
-						i(118771),	-- Wildfire Windcloak
-					},
-				})),
 			}),
 			n(ZONE_DROPS, {
 				i(8394, {	-- Basilisk Brain
@@ -2526,10 +1913,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						8718,	-- Manahound
 					},
 				}),
-				i(118675, {	-- Bronze Whelpling (PET!)
-					["description"] = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",
-					["timeline"] = { "added 6.0.2" },
-				}),
 				i(8396, {	-- Vulture Gizzard
 					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
@@ -2541,17 +1924,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
--- #if AFTER 6.0
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WOD, {
-		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
-		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
-	}),
-	m(BLASTED_LANDS, {
-		q(66560, {	-- Changing time of zone from Present to Past through Zidormi
-			["timeline"] = { ADDED_9_2_5 },
-		}),
-	}),
-});
--- #endif

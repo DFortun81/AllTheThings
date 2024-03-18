@@ -564,8 +564,9 @@ localize(L.HEADER_NAMES, {
 	[-1000863] = PVP_RATED_BATTLEGROUND,
 	[-1000865] = "Battlefield: Barrens",
 	[-1000866] = "Legendary: The Black Prince",
-	[-1000868] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1000869] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1000869] = "The Iron Invasion",
+	[-1000870] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1000871] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -648,6 +649,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000856] = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
 	[-1000858] = "Three hunters have surrounded Mara Swiftmane. Engage them in combat, and a Battered Chest will spawn near Mara Swiftmane. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
 	[-1000863] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
+	[-1000869] = "If you are phased into the Invasion Blasted Lands and need to go to the pre-Invasion Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -655,6 +657,7 @@ localize(L.HEADER_LORE, {
 	[-1000166] = "These can be farmed infinitely by resetting the boss.",
 	[-1000197] = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
 	[-1000308] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
+	[-1000869] = "The Iron Horde have activated their Dark Portal and have begun streaming through it in the Blasted Lands. They've made it all the way to Blackrock Spire and have designs on the rest of Azeroth. In the Blasted Lands, Nethergarde Keep has fallen, Okril'lon Hold (previously Dreadmaul Hold) has been taken over, and the Dreadmaul tribe have taken up with the Iron Horde as endless numbers of orcs stream from the Dark Portal.",
 });
 localize(L.HEADER_ICONS, {
 	[-1000000] = "Interface/Icons/misc_arrowright",
@@ -1012,6 +1015,7 @@ localize(L.HEADER_ICONS, {
 	[-1000863] = "1455894",
 	[-1000865] = "Interface/Icons/ability_vehicle_oiljets",
 	[-1000866] = "656543",
+	[-1000869] = "132396",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -10768,8 +10772,9 @@ localize(L.HEADER_NAMES, {
 	[-1000858] = "Amateurjäger",
 	[-1000862] = "Kataklysmischer Gladiator: Season 11",
 	[-1000865] = "Schlachtfeld: Brachland",
-	[-1000868] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1000869] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1000869] = "Die Eiserne Invasion",
+	[-1000870] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1000871] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -14275,8 +14280,9 @@ localize(L.HEADER_NAMES, {
 	[-1000858] = "Cazadores Aficionados",
 	[-1000862] = "Gladiador cataclísmico: Season 11",
 	[-1000865] = "Campo de batalla: Los Baldíos",
-	[-1000868] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1000869] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1000869] = "La invasión de Hierro",
+	[-1000870] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1000871] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -17741,8 +17747,9 @@ localize(L.HEADER_NAMES, {
 	[-1000861] = select(2, GetAchievementInfo(6124))..": Saison 10",
 	[-1000862] = "Gladiateur cataclysmique: Saison 11",
 	[-1000865] = "Champ de bataille : les Tarides",
-	[-1000868] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1000869] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1000869] = "L’invasion de Fer",
+	[-1000870] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1000871] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -21222,8 +21229,9 @@ localize(L.HEADER_NAMES, {
 	[-1000858] = "Cacciatori Dilettanti",
 	[-1000862] = "Gladiatore Cataclismico: Season 11",
 	[-1000865] = "Campo di battaglia: le Savane",
-	[-1000868] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1000869] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1000869] = "L'invasione di ferro",
+	[-1000870] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1000871] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -24476,8 +24484,9 @@ localize(L.HEADER_NAMES, {
 	[-1000858] = "아마추어 사냥꾼",
 	[-1000862] = "격변한 검투사: Season 11",
 	[-1000865] = "전쟁터: 불모의 땅",
-	[-1000868] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1000869] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1000869] = "강철의 침략",
+	[-1000870] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1000871] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -27660,8 +27669,9 @@ localize(L.HEADER_NAMES, {
 	[-1000858] = "Caçadores Amadores",
 	[-1000862] = "Gladiador Cataclísmico: Season 11",
 	[-1000865] = "Campo de Batalha: Sertões",
-	[-1000868] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1000869] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1000869] = "A invasão de ferro",
+	[-1000870] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1000871] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -31158,8 +31168,9 @@ localize(L.HEADER_NAMES, {
 	[-1000861] = select(2, GetAchievementInfo(6124))..": Сезон 10",
 	[-1000862] = "Гладиатор Катаклизма: Сезон 11",
 	[-1000865] = "Поле битвы: Степи",
-	[-1000868] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1000869] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1000869] = "Железное вторжение",
+	[-1000870] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1000871] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -34778,8 +34789,9 @@ localize(L.HEADER_NAMES, {
 	[-1000861] = select(2, GetAchievementInfo(6124)).."：第10赛季",
 	[-1000862] = "灾变角斗士：第11赛季",
 	[-1000865] = "战场：贫瘠之地",
-	[-1000868] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1000869] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1000869] = "钢铁入侵",
+	[-1000870] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1000871] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",

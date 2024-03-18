@@ -307,6 +307,7 @@ HeaderAssignments = {
 	["The Great Gnomeregan Run"] = -1000228,
 	["The Hinterlands Activated"] = -1000335,
 	["The Hinterlands Active"] = -1000332,
+	["The Iron Invasion"] = -1000869,
 	["The Keeper's Eye"] = -1000320,
 	["The Last Words of Asgrim the Dreadkiller"] = -1000324,
 	["The Lessons of the Blackfist"] = -1000327,
@@ -398,4 +399,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000868;
+NextHeaderID = -1000870;

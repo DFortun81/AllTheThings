@@ -13,16 +13,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				explorationAch(781),	-- Explore Northern Stranglethorn
 				ach(4906, {	-- Northern Stranglethorn Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- Ohgan'aka (A)
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26775,	-- Be Raptor
+							["sourceQuest"] = 26775,	-- Be Raptor (A)
 						}),
 						crit(1, {	-- Ohgan'aka (H)
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 26362,	-- Be Raptor
+							["sourceQuest"] = 26362,	-- Be Raptor (H)
 						}),
 						crit(2, {	-- Rebel Camp
 							["races"] = ALLIANCE_ONLY,
@@ -45,8 +45,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26775,	-- Be Raptor (A)
+						26362,	-- Be Raptor (H)
+						26765,	-- Return to Corporal Kaleb
+						26737,	-- Stopping Kurzen's Legacy
+						26731,	-- The Altar of Naias
+						26734,	-- The Source of the Madness
+						26305,	-- Saving Yenniku
+						208,	-- Big Game Hunter
+						26345,	-- Excelsior
+						26269,	-- The Green Hills of Stranglethorn
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
