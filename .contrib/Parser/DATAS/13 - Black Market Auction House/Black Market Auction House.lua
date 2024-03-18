@@ -133,7 +133,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(152790),	-- Vile Fiend (MOUNT!)
 		i(49286),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
 	}),
-	n(72057, {	-- Ordos
+	header(HEADERS.NPC, 72057, { -- Ordos
 		-- Head
 		i(105804),	-- Aladya's Spiritfire Greathelm
 		i(105810),	-- Buc-Zakai Burning Hood
