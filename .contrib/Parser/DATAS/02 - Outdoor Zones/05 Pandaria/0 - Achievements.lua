@@ -760,6 +760,27 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["maps"] = { TOWNLONG_STEPPES },
 			}),
 		}),
+		ach(6926, {	-- Tranquil Master
+			title(203),	-- the Tranquil Master
+			crit(19668, {	-- Sha of Doubt
+				["_encounter"] = { 335, HEROIC_DUNGEON },
+			}),
+			crit(18829, {	-- Sha of Despair
+				["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
+			}),
+			crit(22274, {	-- Sha of Violence
+				["_encounter"] = { 685, HEROIC_DUNGEON },
+			}),
+			crit(19374, {	-- Sha of Hatred
+				["sourceQuests"] = { 30968 },	-- The Sha of Hatred
+			}),
+			crit(19136, {	-- Sha of Anger
+				["_encounter"] = { 691 },
+			}),
+			crit(19913, {	-- Sha of Fear
+				["_encounter"] = { 709, NORMAL_DUNGEON },
+			}),
+		}),
 		ach(6858, {	-- What Is Worth Fighting For
 			crit(19801),	-- Pandaren Fighting Tactics (Valley of the Four Winds)
 			crit(19802),	-- Always Remember (Vale of Eternal Blossoms)

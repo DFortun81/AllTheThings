@@ -77,12 +77,12 @@ local L = app.L;
 	L.AUCTIONATOR_GROUPS = "Suchen durch Gruppen-basis sind nur durch Auctionator möglich.";
 	L.TSM4_ERROR = "TSM4 is noch nicht kompatibel mit ATT. Wenn Sie wissen wie mann Presets kreiert so wie wir es mit TSM3 gemacht haben, bitte nehmem Sie Kontakt auf mit Crieve durch Discord.";
 	L.QUEST_MAY_BE_REMOVED = "Information konnte nicht beschaffen werden. Die Quest wurde möglicherweise von dem Spiel entfernt.";
-	
+
 	L.FACTION_SPECIFIC_REP = "Nicht alle Fraktionen können mit einem Charakter angesehen werden. z.B. der Kriegshymnenklan kann nicht mit einem Allianz Charakter angesehen werden, und die Silberschwingen können nicht mit einem Horde Charakter angesehen werden.";
 	L.MINUMUM_STANDING_WITH_FACTION = "Erfordert mindestens einen Ruf von %s bei %s.";
 	L.MAXIMUM_STANDING_WITH_FACTION = "Erfordert einen niedrigeren Ruf als %s bei %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "Erfordert einen Ruf zwischen %s und %s bei %s.";
-	
+
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
 	--TODO: L.ALIVE = "Alive";
@@ -523,8 +523,6 @@ for key,value in pairs({
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- BFA Outposts
 		[-397] = "Außenposten",										-- Outposts
-	-- 5.3
-		[-398] = "Schlachtfeld: Brachland",							-- Battlefield: Barrens
 	-- Pets
 		[-795] = "Haustierkampf Instanzen",							-- Pet Battle Dungeons
 	-- Chests
@@ -620,14 +618,14 @@ for key,value in pairs({
 		--TODO: SHOW_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
 		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
 		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
-		
+
 		-- Collectible Things
 		--TODO: ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Accountübergreifend|R by default.";
 		--TODO: TRACK_ACC_WIDE = app.ccColors.Account .. "Track Accountübergreifend|R";
 		ACCOUNT_THINGS_LABEL = "Accountweite Dinge";
 		GENERAL_THINGS_LABEL = "Allgemeine Dinge";
 		STRANGER_THINGS_LABEL = "Fremde Dinge";
-		
+
 		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um Erfolge zu verfolgen.";
 		APPEARANCES_CHECKBOX = "Vorlagen";
@@ -660,7 +658,7 @@ for key,value in pairs({
 		--TODO: TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 		--TODO: TOYS_CHECKBOX = TOY_BOX;
 		--TODO: TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
-		
+
 		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Erweiterungs Dinge";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Herzensessenzen";
@@ -675,10 +673,10 @@ for key,value in pairs({
 		--TODO: RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Medien";
 		--TODO: SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Medien.";
-		
+
 		--TODO: CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
 		--TODO: CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
-		
+
 		-- Account-Wide Checkboxes
 		--TODO: ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
 		--TODO: ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
@@ -786,7 +784,7 @@ for key,value in pairs({
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
 		--TODO: WINDOWS_PAGE = "Windows";
-	
+
 	-- Profiles Page
 		PROFILES_PAGE = "Profile";
 		PROFILE = "Profil";

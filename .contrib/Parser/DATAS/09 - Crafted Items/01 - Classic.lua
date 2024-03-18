@@ -150,18 +150,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(ARCHAEOLOGY, {
 		i(52843),	-- Dwarf Rune Stone
 		i(63127),	-- Highborne Scroll
+		i(87399, {["timeline"] = {ADDED_5_0_4}}), -- Restored Artifact
 		i(63128),	-- Troll Tablet
 		currency(384, {	-- Dwarf
-			-- Solves
-			i(64373),	-- Chalice of the Mountain Kings (TOY!)
-			i(64372),	-- Clockwork Gnome (PET!)
-			i(64489),	-- Staff of Sorcerer-Thane Thaurissan
-			i(64488),	-- The Innkeeper's Daughter (TOY!)
 			i(63113),	-- Belt Buckle with Anvilmar Crest
 			i(64339),	-- Bodacious Door Knocker
 			i(63112),	-- Bone Gaming Dice
 			i(64340),	-- Boot Heel with Scrollwork
 			i(63409),	-- Ceramic Funeral Urn
+			i(64373),	-- Chalice of the Mountain Kings (TOY!)
+			i(64372),	-- Clockwork Gnome (PET!)
 			i(64362),	-- Dented Shield of Horuz Killcrow
 			i(66054),	-- Dwarven Baby Socks
 			i(64342),	-- Golden Chamber Pot
@@ -178,7 +176,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(63411),	-- Silver Neck Torc
 			i(64371),	-- Skull Staff of Shadowforge
 			i(64485),	-- Spiked Gauntlets of Anvilrage
+			i(64489),	-- Staff of Sorcerer-Thane Thaurissan
 			i(63410),	-- Stone Gryphon
+			i(64488),	-- The Innkeeper's Daughter (TOY!)
 			i(64484),	-- Warmaul of Burningeye
 			i(64343),	-- Winged Helm of Corehammer
 			i(63111),	-- Wooden Whistle
@@ -186,58 +186,52 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(63110),	-- Worn Hunting Knife
 		}),
 		currency(393, {	-- Fossil
-			-- Solves
 			i(69776, {["timeline"] = {ADDED_4_1_0}}),	-- Ancient Amber (TOY!)
-			i(69764, {["timeline"] = {ADDED_4_1_0}}),	-- Extinct Turtle Shell
-			i(60955),	-- Fossilized Hatchling (PET!)
-			i(60954),	-- Fossilized Raptor (MOUNT!)
-			i(69821, {["timeline"] = {ADDED_4_1_0}}),	-- Pterrordax Hatchling (PET!)
 			i(64355),	-- Ancient Shark Jaws
 			i(63121),	-- Beautiful Preserved Fern
 			i(63109),	-- Black Trilobite
 			i(64349),	-- Devilsaur Tooth
+			i(69764, {["timeline"] = {ADDED_4_1_0}}),	-- Extinct Turtle Shell
 			i(64385),	-- Feathered Raptor Arm
+			i(60955),	-- Fossilized Hatchling (PET!)
+			i(60954),	-- Fossilized Raptor (MOUNT!)
 			i(64473),	-- Imprint of a Kraken Tentacle
 			i(64350),	-- Insect in Amber
 			i(64468),	-- Proto-Drake Skeleton
+			i(69821, {["timeline"] = {ADDED_4_1_0}}),	-- Pterrordax Hatchling (PET!)
 			i(66056),	-- Shared of Petrified Wood
 			i(66057),	-- Strange Velvet Worm
 			i(63527),	-- Twisted Ammonite Shell
 			i(64387),	-- Vicious Ancient Fish
 		}),
 		currency(394, {	-- Night Elf
-			-- Solves
 			i(64646),	-- Bones of Transformation (TOY!)
-			i(64361),	-- Druid and Priest Statue Set (TOY!)
-			i(64358),	-- Highborne Soul Mirror (TOY!)
-			i(64383),	-- Kaldorei Wind Chimes (TOY!)
-			i(64645),	-- Tyrande's Favorite Doll
-			i(64643),	-- Queen Azshara's Dressing Gown
-			i(64651),	-- Wisp Amulet (TOY!)
 			i(64647),	-- Carcanet of the Hundred Magi
 			i(64379),	-- Chest of Tiny Glass Animals
 			i(63407),	-- Cloak Clasp with Antlers
 			i(63525),	-- Coin from Eldre'Thalas
 			i(64381),	-- Cracked Crystal Vial
 			i(64357),	-- Delicate Music Box
+			i(64361),	-- Druid and Priest Statue Set (TOY!)
 			i(63528),	-- Green Dragon Ring
 			i(64356),	-- Hairpin of Silver and Malachite
 			i(63129),	-- Highborne Pyxis
+			i(64358),	-- Highborne Soul Mirror (TOY!)
 			i(63130),	-- Inlaid Ivory Comb
 			i(64354),	-- Kaldorei Amphora
+			i(64383),	-- Kaldorei Wind Chimes (TOY!)
 			i(66055),	-- Necklace with Elune Pendant
+			i(64643),	-- Queen Azshara's Dressing Gown
 			i(63131),	-- Scandalous Silk Nightgown
 			i(64382),	-- Scepter of Xavius
 			i(63526),	-- Shattered Glaive
 			i(64648),	-- Silver Scroll Case
 			i(64378),	-- String of Small Pink Pearls
+			i(64645),	-- Tyrande's Favorite Doll
 			i(64650),	-- Umbra Crescent
+			i(64651),	-- Wisp Amulet (TOY!)
 		}),
 		currency(385, {	-- Troll
-			-- Solves
-			i(69777, {["timeline"] = {ADDED_4_1_0}}),	-- Haunted War Drum (TOY!)
-			i(69824, {["timeline"] = {ADDED_4_1_0}}),	-- Voodoo Figurine (PET!)
-			i(64377),	-- Zin'rokh, Destroyer of Worlds
 			i(64348),	-- Atal'ai Scepter
 			i(64346),	-- Bracelet of Jade and Coins
 			i(63524),	-- Cinnabar Bijou
@@ -247,11 +241,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(63120),	-- Fetish of Hireek
 			i(66058),	-- Fine Bloodscalp Dinnerware
 			i(64347),	-- Gahz'rilla Figurine
+			i(69777, {["timeline"] = {ADDED_4_1_0}}),	-- Haunted War Drum (TOY!)
 			i(63412),	-- Jade Asp with Ruby Eyes
 			i(63118),	-- Lizard Foot Charm
 			i(64345),	-- Skull-Shaped Planter
 			i(64374),	-- Tooth with Gold Filling
+			i(69824, {["timeline"] = {ADDED_4_1_0}}),	-- Voodoo Figurine (PET!)
 			i(63115),	-- Zandalari Voodoo Doll
+			i(64377),	-- Zin'rokh, Destroyer of Worlds
 		}),
 	}),
 	-- #endif

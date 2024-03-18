@@ -78,13 +78,13 @@ local L = app.L;
 	L.AUCTIONATOR_GROUPS = "Поиск по группам доступен только при использовании Auctionator.";
 	L.TSM4_ERROR = "TSM4 пока что не совместим с ATT. Если Вы знаете, как создавать Группы, как мы делали это в TSM3, пожалуйста, свяжитесь с Crieve в Дискорде!";
 	L.QUEST_MAY_BE_REMOVED = "Ошибка при получении информации. Это задание, возможно, удалено из игры. ";
-	
-	
+
+
 	L.FACTION_SPECIFIC_REP = "Не все репутации видны одному персонажу. Например, Всадники Песни Войны не видны Игрокам Альянса, а Среброкрылые Часовые - Игрокам Орды.";
 	L.MINUMUM_STANDING_WITH_FACTION = "Требуется отношение не менее, чем %s с %s.";
 	L.MAXIMUM_STANDING_WITH_FACTION = "Требуется отношение менее, чем %s с %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "Требуется отношение между %s и %s с %s.";
-	
+
 	L.ADDED_WITH_PATCH = "Добавлено в патче";
 	L.REMOVED_WITH_PATCH = "Убрано в патче";
 	--TODO: L.ALIVE = "Alive";
@@ -515,8 +515,6 @@ for key,value in pairs({
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "Аванпосты",										-- Outposts
-	-- 5.3
-		[-398] = "Поле битвы: Степи",								-- Battlefield: Barrens
 	-- BFA War Chest
 		[-488] = "Трофейный сундук",								-- Daily War Chest
 	-- Misc
@@ -640,14 +638,14 @@ for key,value in pairs({
 		SHOW_PVP_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите отслеживать весь контент, который 'может' требовать ПвП.";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "Недоступный Персональный Лут";	-- TODO: All Learnable Quest Rewards
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Выключите данную опцию, что спрятать вещи, которые являются \"Недоступными в Персональном Луте\" в заданиях.\n\nУдобно для отслеживания вещей, которые Ваш класс не может получить в Мировых Дропах, но в то же время помечая задания как выполненные.\n\nНекоторые вещи могут быть помечены неверно: данная настройка СПРЯЧЕТ часть вещей, которые вы можете получить!";
-		
+
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."Весь Аккаунт|R по умолчанию.";
 		TRACK_ACC_WIDE = app.ccColors.Account.."Отслеживать на весь аккаунт|R";
 		ACCOUNT_THINGS_LABEL = "Штучки для всего аккаунта";
 		GENERAL_THINGS_LABEL = "Общие Штучки";
 		STRANGER_THINGS_LABEL = "Очень Странные Штучки";
-		
+
 		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Включите для отслеживания достижений.";
 		APPEARANCES_CHECKBOX = "Внешний вид";
@@ -680,7 +678,7 @@ for key,value in pairs({
 		TITLES_CHECKBOX_TOOLTIP = "Включите для отслеживания званий.\n\nОни выделяют Вашего персонажа и показывают, как давно Вы играете. Обычно только у новых игроков нет выбранного звания.";
 		--TODO: TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "Включите для отслеживания игрушек.\n\nБольшинство из них имеют забавные эффекты. Другие же, как игрушечные Камни возвращения, могут быть использованы вместо обычного Камня возвращения и сохранить Вам место в сумке! Они также имеют интересные эффекты... Здорово!";
-		
+
 		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Штучки Дополнений";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Азеритовые сущности";
@@ -695,10 +693,10 @@ for key,value in pairs({
 		RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Включите для отслеживания Легендарных предметов Тёмных Земель.";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Проводники";
 		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Включите для отслеживания Проводников Медиумов.";
-		
+
 		CHARACTERUNLOCKS_CHECKBOX = "Разблокирования Персонажа";
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Включите для отслеживания Разблокирований Персонажа. Это различные разблокирования, которые не могут быть отнесены к другим типам (например, варианты Сглазов и Превращений, разблокирования питомцев для Охотников, кастомизации Покопока и прочее).\n\nПо умолчанию отслеживается на каждом персонаже отдельно.";
-		
+
 		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Достижения обычно отслеживаются на всю учётную запись, но есть некоторые эксклюзивные для определённых классов или рас достижения, которые Вы не сможете получить на основном персонаже.";
 		--TODO: ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
@@ -806,7 +804,7 @@ for key,value in pairs({
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
 		--TODO: WINDOWS_PAGE = "Windows";
-	
+
 	-- Profiles Page
 		PROFILES_PAGE = "Профили";
 		PROFILE = "Профиль";

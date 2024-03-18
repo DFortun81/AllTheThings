@@ -145,6 +145,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(122601, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of Wind
 		}),
 	}),
+	prof(ARCHAEOLOGY, {
+		i(117388, {	-- Crate of Mantid Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 754, }	-- Mantid Archaeology Fragment
+			},
+		}),
+		i(117387, {	-- Crate of Mogu Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 677, }	-- Mogu Archaeology Fragment
+			},
+		}),
+		i(117386, {	-- Crate of Pandaren Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 676, }	-- Pandaren Archaeology Fragment
+			},
+		}),
+	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
 			i(116426),	-- Smoldering Helm

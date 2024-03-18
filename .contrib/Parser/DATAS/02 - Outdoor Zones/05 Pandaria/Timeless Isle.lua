@@ -1257,7 +1257,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(1492),	-- Emperor Shaohao
-					faction(1359),	-- The Black Prince
+					faction(FACTION_THE_BLACK_PRINCE),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1294, {	-- Huojin Landing

@@ -84,6 +84,134 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(75274, {["timeline"] = {ADDED_5_2_0}}),	-- Zen Alchemist Stone
 		}),
 	}),
+	prof(ARCHAEOLOGY, {
+		i(95373, {["timeline"] = {ADDED_5_2_0}}),	-- Mantid Amber Sliver
+		i(79869),	-- Mogu Statue Piece
+		i(79868),	-- Pandaren Pottery Shard
+		i(87399),	-- Restored Artifact
+		currency(754, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Mantid
+			i(95376),	-- Ancient Sap Feeder
+			i(95375),	-- Banner of the Mantid Empire
+			i(95378),	-- Inert Sound Beacon
+			i(95382),	-- Kypari Sap Container
+			i(95380),	-- Mantid Lamp
+			i(95391),	-- Mantid Sky Reaver
+			i(95381),	-- Pollen Collector
+			i(95383),	-- Pristine Banner of the Mantid Empire
+			i(95384),	-- Pristine Ancient Sap Feeder
+			i(95385),	-- Pristine Praying Mantid
+			i(95386),	-- Pristine Sound Beacon
+			i(95387),	-- Pristine Remains of a Paragon
+			i(95388),	-- Pristine Mantid Lamp
+			i(95389),	-- Pristine Pollen Collector
+			i(95390),	-- Pristine Kypari Sap Container
+			i(95379),	-- Remains of a Paragon
+			i(95392),	-- Sonic Pulse Generator
+			i(95377),	-- The Praying Mantid
+		})),
+		currency(677, {	-- Mogu
+			i(89614),	-- Anatomical Dummy (TOY!)
+			i(79909),	-- Cracked Mogu Runestone
+			i(79913),	-- Edicts of the Thunder King
+			i(79914),	-- Iron Amulet
+			i(79908),	-- Manacles of Rebellion
+			i(79916),	-- Mogu Coin
+			i(79911),	-- Petrified Bone Whip
+			i(89176),	-- Pristine Branding Iron
+			i(89174),	-- Pristine Edicts of the Thunder King
+			i(89175),	-- Pristine Iron Amulet
+			i(89169),	-- Pristine Manacles of Rebellion
+			i(85477),	-- Pristine Mogu Coin
+			i(89170),	-- Pristine Mogu Runestone
+			i(89209),	-- Pristine Monument Ledger
+			i(89172),	-- Pristine Petrified Bone Whip
+			i(89171),	-- Pristine Terracotta Arm
+			i(89173),	-- Pristine Thunder King Insignia
+			i(89611),	-- Quilen Statuette
+			i(79910),	-- Terracotta Arm
+			i(79912),	-- Thunder King Insignia
+			i(79915),	-- Warlord's Branding Iron
+			i(79917),	-- Worn Monument Ledger
+		}),
+		currency(676, {	-- Pandaren
+			i(79903),	-- Apothecary Tins
+			i(79901),	-- Carved Bronze Mirror
+			i(79900),	-- Empty Keg
+			i(79902),	-- Gold-Inlaid Figurine
+			i(79897),	-- Pandaren Game Board
+			i(79896),	-- Pandaren Tea Set
+			i(79904),	-- Pearl of Yu'lon
+			i(89183),	-- Pristine Apothecary Tins
+			i(89181),	-- Pristine Carved Brone Mirror
+			i(89180),	-- Pristine Empty Keg
+			i(85558),	-- Pristine Game Board
+			i(89182),	-- Pristine Gold-Inlaid Figurine
+			i(85557),	-- Pristine Pandaren Tea Set
+			i(89184),	-- Pristine Pearl of Yu'lon
+			i(89185),	-- Pristine Standard of Niuzao
+			i(89178),	-- Pristine Twin Stein Set
+			i(89179),	-- Pristine Walking Cane
+			i(89685),	-- Spear of Xuen
+			i(79905),	-- Standard of Niuzao
+			i(79898),	-- Twin Stein Set
+			i(89684),	-- Umbrella of Chi-Ji
+			i(79899),	-- Walking Cane
+		}),
+		i(87534, {	-- Crate of Draenei Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(398),	-- Draenei Archaeology Fragment
+			},
+		}),
+		i(87533, {	-- Crate of Dwarven Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(384),	-- Dwarf Archaeology Fragment
+			},
+		}),
+		i(87535, {	-- Crate of Fossil Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(393),	-- Fossil Archaeology Fragment
+			},
+		}),
+		i(87536, {	-- Crate of Night Elf Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(394),	-- Night Elf Archaeology Fragment
+			},
+		}),
+		i(87537, {	-- Crate of Nerubian Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(400),	-- Nerubian Archaeology Fragment
+			},
+		}),
+		i(87538, {	-- Crate of Orc Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(397),	-- Orc Archaeology Fragment
+			},
+		}),
+		i(87539, {	-- Crate of Tol'vir Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(401),	-- Tol'vir Archaeology Fragment
+			},
+		}),
+		i(87540, {	-- Crate of Troll Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(385),	-- Troll Archaeology Fragment
+			},
+		}),
+		i(87541, {	-- Crate of Vrykul Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
+			["groups"] = {
+				currency(399),	-- Vrykul Archaeology Fragment
+			},
+		}),
+	}),
 	prof(BLACKSMITHING, {
 		n(DISCOVERY, {
 			spell(143255, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Balanced Trillium Ingot

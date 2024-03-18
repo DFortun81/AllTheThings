@@ -77,12 +77,12 @@ local L = app.L;
 	L.AUCTIONATOR_GROUPS = "基于群组的搜索只支持使用 Auctionator。";
 	L.TSM4_ERROR = "TSM4 尚未与 ATT 兼容。如果你知道如何像我们以前在 TSM3 中那样创建预设，请在 Discord 上告诉我！";
 	L.QUEST_MAY_BE_REMOVED = "获取信息失败。这个任务可能已从游戏中移除。";
-	
+
 	L.FACTION_SPECIFIC_REP = "并非所有声望都可以在单个角色上查看。例：联盟玩家无法看到战歌骑手，部落玩家无法查看银翼哨兵。";
 	L.MINUMUM_STANDING_WITH_FACTION = "需要至少 %s 和 %s.";
 	L.MAXIMUM_STANDING_WITH_FACTION = "需要站立低于 %s 和 %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "需要站在 %s 和 %s 和 %s.";
-	
+
 	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
 	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
 	--TODO: L.ALIVE = "Alive";
@@ -544,8 +544,6 @@ for key,value in pairs({
 		[-361] = GetSpellInfo(182108).." 塔",						-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "哨站",												-- Outposts
-	-- 5.3
-		[-398] = "战场：贫瘠之地",											-- Battlefield: Barrens
 	-- BFA War Chest
 		[-488] = "战争宝箱",											-- Daily War Chest
 	-- Misc
@@ -670,14 +668,14 @@ for key,value in pairs({
 		SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行 PvP 互动的内容，请启用此设置。";
 		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
 		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
-		
+
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. "账号通用|R 默认。";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 账号通用|R";
 		ACCOUNT_THINGS_LABEL = "帐号通用事物";
 		GENERAL_THINGS_LABEL = "通用事物";
 		STRANGER_THINGS_LABEL = "陌生事物";
-		
+
 		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
 		--TODO: APPEARANCES_CHECKBOX = "Appearances";
@@ -710,7 +708,7 @@ for key,value in pairs({
 		TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔。\n\n这些可以让你的角色脱颖而出，看起来你已经玩了一段时间。通常只有新玩家没有称号。";
 		--TODO: TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中的大多数玩具都有趣。其他的，如炉石玩具，可以用来代替你的初始炉石，并可以为你节省一个背包！他们也有有趣的效果…很好！";
-		
+
 		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "资料片事物";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 艾泽拉斯之心精华";
@@ -725,10 +723,10 @@ for key,value in pairs({
 		RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "启用此选项以追踪暗影国度的符文铭刻之力。";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 导灵器";
 		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "启用此选项来追踪暗影国度灵魂羁绊的导灵器。";
-		
+
 		--TODO: CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
 		--TODO: CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
-		
+
 		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
 		--TODO: ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
@@ -839,7 +837,7 @@ for key,value in pairs({
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
 		--TODO: WINDOWS_PAGE = "Windows";
-	
+
 	-- Profiles Page
 		PROFILES_PAGE = "配置文件";
 		PROFILE = "配置文件";

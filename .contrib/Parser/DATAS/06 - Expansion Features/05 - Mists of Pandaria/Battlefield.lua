@@ -1,6 +1,21 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+BATTLEFIELD_BARRENS = createHeader({
+	readable = "Scenarios",
+	icon = "Interface\\Icons\\ability_vehicle_oiljets",
+	text = {
+		en = "Battlefield: Barrens",
+		es = "Campo de batalla: Los Baldíos",
+		de = "Schlachtfeld: Brachland",
+		fr = "Champ de bataille : les Tarides",
+		it = "Campo di battaglia: le Savane",
+		pt = "Campo de Batalha: Sertões",
+		ru = "Поле битвы: Степи",
+		ko = "전쟁터: 불모의 땅",
+		cn = "战场：贫瘠之地",
+	},
+});
 local RADICAL_MOJO = 97849;
 local LATENT_KORKRON_HELM = 97829;
 local LATENT_KORKRON_SPAULDERS = 97831;
@@ -9,8 +24,8 @@ local LATENT_KORKRON_GLOVES = 97828;
 local LATENT_KORKRON_BELT = 97832;
 local LATENT_KORKRON_LEGGINGS = 97830;
 local LATENT_KORKRON_BOOTS = 97827;
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { "added 5.3.0", "removed 5.4.0" } }, {
-	n(-398, {	-- Battlefield: Barrens
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 } }, {
+	n(BATTLEFIELD_BARRENS, {
 		["description"] = "During 5.3 a big battle occured in Barrens.",
 		["maps"] = {
 			VALE_OF_ETERNAL_BLOSSOMS,
@@ -18,6 +33,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			NORTHERN_BARRENS,
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(8307, {	-- Darkspear Revolutionary
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(228, {	-- Darkspear Revolutionary <Name>
+							["races"] = HORDE_ONLY,
+						}),
+					}
+				}),
+				ach(8306, {	-- Hordebreaker
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(230, {	-- <Name> the Hordebreaker
+							["races"] = ALLIANCE_ONLY,
+						}),
+					}
+				}),
+			}),
 			n(QUESTS, {
 				q(32892, {	-- War is Coming
 					["isBreadcrumb"] = true,
@@ -126,7 +159,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(REWARDS, {
-				i(LATENT_KORKRON_HELM, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_HELM, 1 } } }, {
+				header(HEADERS.item, LATENT_KORKRON_HELM, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_HELM, 1 } } }, {
 					i(97725),	-- Insubordination Helm
 					i(97734),	-- Insubordination Helm
 					i(97660),	-- Malcontent's Cowl,
@@ -147,7 +180,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97654),	-- Insurrection Helm
 					i(97764),	-- Insurrection Helm
 				})),
-				i(LATENT_KORKRON_SPAULDERS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_SPAULDERS, 1 } } }, {
+				header(HEADERS.item, LATENT_KORKRON_SPAULDERS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_SPAULDERS, 1 } } }, {
 					i(97727),	-- Insubordination Shoulderpads
 					i(97736),	-- Insubordination Shoulderpads
 					i(97742),	-- Malcontent's Spaulders
@@ -168,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97672),	-- Insurrection Spaulders
 					i(97761),	-- Insurrection Spaulders
 				})),
-				i(LATENT_KORKRON_CHESTPIECE, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_CHESTPIECE, 1 } } }, {
+				header(HEADERS.item, LATENT_KORKRON_CHESTPIECE, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_CHESTPIECE, 1 } } }, {
 					i(97722),	-- Insubordination Breastplate
 					i(97738),	-- Insubordination Breastplate
 					i(97746),	-- Malcontent's Vest
@@ -189,7 +222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97632),	-- Insurrection Breastplate
 					i(97766),	-- Insurrection Breastplate
 				})),
-				i(LATENT_KORKRON_GLOVES, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_GLOVES, 1 } } }, {
+				header(HEADERS.item, LATENT_KORKRON_GLOVES, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_GLOVES, 1 } } }, {
 					i(97724),	-- Insubordination Gauntlets
 					i(97733),	-- Insubordination Gauntlets
 					i(97744),	-- Malcontent's Gloves
@@ -210,7 +243,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97645),	-- Insurrection Breastplate
 					i(97763),	-- Insurrection Gauntlets
 				})),
-				i(LATENT_KORKRON_BELT, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BELT, 1 } } }, {
+				header(HEADERS.item, LATENT_KORKRON_BELT, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BELT, 1 } } }, {
 					i(97728),	-- Insubordination Belt
 					i(97737),	-- Insubordination Belt
 					i(97740),	-- Malcontent's Belt
@@ -231,7 +264,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97680),	-- Insurrection Belt
 					i(97762),	-- Insurrection Belt
 				})),
-				i(LATENT_KORKRON_LEGGINGS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_LEGGINGS, 1 } } }, {
+				header(HEADERS.item, LATENT_KORKRON_LEGGINGS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_LEGGINGS, 1 } } }, {
 					i(97726),	-- Insubordination egplates
 					i(97735),	-- Insubordination egplates
 					i(97741),	-- Malcontent's Kilt
@@ -252,7 +285,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(97661),	-- Insurrection Legplates
 					i(97765),	-- Insurrection Legplates
 				})),
-				i(LATENT_KORKRON_BOOTS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BOOTS, 1 } } }, {
+				header(HEADERS.item, LATENT_KORKRON_BOOTS, sharedData({ ["cost"] = { { "i", RADICAL_MOJO, 1 }, { "i", LATENT_KORKRON_BOOTS, 1 } } }, {
 					i(97723),	-- Insubordination Boots
 					i(97739),	-- Insubordination Boots
 					i(97743),	-- Malcontent's Boots

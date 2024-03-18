@@ -75,12 +75,12 @@ for key, value in pairs({
 	["AUCTIONATOR_GROUPS"] = "Group-based searches are only supported using Auctionator.";
 	["TSM4_ERROR"] = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. ";
-	
+
 	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	["MINUMUM_STANDING_WITH_FACTION"] = "Requires a minimum standing of %s with %s.";
 	["MAXIMUM_STANDING_WITH_FACTION"] = "Requires a standing lower than %s with %s.";
 	["MIN_MAX_STANDING_WITH_FACTION"] = "Requires a standing between %s and %s with %s.";
-	
+
 	["ADDED_WITH_PATCH"] = "Added With Patch";
 	["REMOVED_WITH_PATCH"] = "Removed With Patch";
 	["ALIVE"] = "Alive";
@@ -744,8 +744,6 @@ for key, value in pairs({
 		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Hearthfire Tavern (horde)
 	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
-	-- 5.3
-		[-398] = "Interface\\Icons\\ability_vehicle_oiljets",								-- Battlefield: Barrens
 	-- BFA War Chest
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Misc
@@ -923,8 +921,6 @@ for key, value in pairs({
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
-	-- 5.3
-		[-398] = "Battlefield: Barrens",										-- Battlefield: Barrens
 	-- BFA War Chest
 		[-488] = "War Chest",													-- Daily War Chest
 	-- Misc

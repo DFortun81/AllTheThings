@@ -70,24 +70,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ARCHAEOLOGY, {
+		i(87399, {["timeline"] = {ADDED_5_0_4}}), -- Restored Artifact
 		i(64397),	-- Tol'vir Hieroglyphic
 		currency(401, {	-- Tol'vir
-			-- Solves
 			i(64657, {	-- Canopic Jar
 				i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 			}),
+			i(64652),	-- Castle of Sand
+			i(64653),	-- Cat Statue with Emerald Eyes
 			i(60847),	-- Crawling Claw (PET!)
+			i(64656),	-- Engraved Scimitar Hilt
 			i(64881),	-- Pendant of the Scarab Storm (TOY!)
 			i(64904),	-- Ring of the Boy Emperor
 			i(64885),	-- Scimitar of the Sirocco
-			i(64880),	-- Staff of Ammunae
-			i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
-			i(64652),	-- Castle of Sand
-			i(64653),	-- Cat Statue with Emerald Eyes
-			i(64656),	-- Engraved Scimitar Hilt
 			i(64658),	-- Sketch of a Desert Palace
 			i(64654),	-- Soapstone Scarab Necklace
+			i(64880),	-- Staff of Ammunae
 			i(64655),	-- Tiny Oasis Mosaic
+			i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
 		}),
 	}),
 	prof(BLACKSMITHING, {

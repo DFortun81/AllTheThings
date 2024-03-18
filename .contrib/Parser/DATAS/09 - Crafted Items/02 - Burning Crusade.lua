@@ -106,11 +106,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	prof(ARCHAEOLOGY, {
 		i(64394),	-- Draenei Tome
 		i(64392),	-- Orc Blood Text
+		i(87399, {["timeline"] = {ADDED_5_0_4}}), -- Restored Artifact
 		currency(398, {	-- Draenei
-			-- Solves
-			i(64456),	-- Arrival of the Naaru (TOY!)
-			i(64457),	-- The Last Relic of Argus
 			i(64440),	-- Anklet with Golden Bells
+			i(64456),	-- Arrival of the Naaru (TOY!)
 			i(64453),	-- Baroque Sword Scabbard
 			i(64442),	-- Carved Harp of Exotic Wood
 			i(64455),	-- Dignified Portrait
@@ -118,13 +117,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(64458),	-- Plated Elekk Goad
 			i(64444),	-- Scepter of the Nathrezim
 			i(64443),	-- Strange Silver Paperweight
+			i(64457),	-- The Last Relic of Argus
 		}),
 		currency(397, {	-- Orc
-			-- Solves
-			i(64644),	-- Headdress of the First Shaman
 			i(64436),	-- Fiendish Whip
 			i(64421),	-- Fierce Wolf Figurine
 			i(64418),	-- Gray Candle Stub
+			i(64644),	-- Headdress of the First Shaman
 			i(64417),	-- Maul of Stone Guard Mur'og
 			i(64419),	-- Rusted Steak Knife
 			i(64420),	-- Scepter of Nekros Skullcrusher
