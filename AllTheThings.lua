@@ -9923,7 +9923,7 @@ function app:GetDataCache()
 				return true;
 			else
 				-- Something that isn't dynamic.
-				return table[key];
+				return t[key];
 			end
 		end,
 		__newindex = function(t, key, val)
@@ -14612,10 +14612,11 @@ app.ProcessAuctionData = function()
 	end
 
 	-- Insert Buttons into the groups.
-	wipe(window.data.g);
-	for i,option in ipairs(window.data.options) do
-		tinsert(window.data.g, option);
-	end
+	-- not sure what this was but unreferenced globals currently
+	-- wipe(window.data.g);
+	-- for i,option in ipairs(window.data.options) do
+	-- 	tinsert(window.data.g, option);
+	-- end
 
 	local ObjectTypeMetas = {
 		["criteriaID"] = app.CreateFilter(105, {	-- Achievements
@@ -14674,15 +14675,17 @@ app.ProcessAuctionData = function()
 		for i,j in pairs(searchResults) do
 			tinsert(subdata.g, j);
 		end
-		tinsert(window.data.g, subdata);
+		-- not sure what this was but unreferenced globals currently
+		-- tinsert(window.data.g, subdata);
 	end
-	app.Sort(window.data.g, function(a, b)
-		return (b.priority or 0) > (a.priority or 0);
-	end);
-	AssignChildren(window.data);
-	app.TopLevelUpdateGroup(window.data);
-	window:Show();
-	window:Update();
+	-- not sure what this was but unreferenced globals currently
+	-- app.Sort(window.data.g, function(a, b)
+	-- 	return (b.priority or 0) > (a.priority or 0);
+	-- end);
+	-- AssignChildren(window.data);
+	-- app.TopLevelUpdateGroup(window.data);
+	-- window:Show();
+	-- window:Update();
 end
 
 app.OpenAuctionModule = function(self)
