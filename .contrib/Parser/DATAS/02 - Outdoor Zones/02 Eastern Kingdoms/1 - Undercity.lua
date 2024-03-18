@@ -335,6 +335,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
+				-- #if ANYCLASSIC
 				q(5679, {	-- Devouring Plague [Undercity]
 					["qgs"] = {
 						4606,	-- Aelthalyste
@@ -363,6 +364,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5679, {	-- Devouring Plague [Undercity]
+					["qg"] = 4606,	-- Aelthalyste
+					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["altQuests"] = {
+						5646,	-- Devouring Plague [Orgrimmar]
+						5644,	-- Devouring Plague [Thunder Bluff]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2944,	-- Devouring Plague (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(1846, {	-- Dragonmaw Shinbones
 					["qg"] = 6411,	-- Velora Nitely
 					["sourceQuest"] = 1841,	-- Velora Nitely and the Brutal Legguards
@@ -535,6 +559,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5657, {	-- Hex of Weakness [Undercity]
+					["qg"] = 4606,	-- Aelthalyste <Priest Trainer>
+					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["altQuests"] = {
+						5652,	-- Hex of Weakness [Orgrimmar]
+						5654,	-- Hex of Weakness [Durotar]
+						5655,	-- Hex of Weakness [Mulgore]
+						5656,	-- Hex of Weakness [Thunder Bluff]
+					},
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(243, {	-- Into the Field
 					["providers"] = {
 						{ "n", 5204 },	-- Apothecary Zinge
@@ -866,6 +914,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5643, {	-- Shadowguard [Undercity]
+					["qg"] = 4606,	-- Aelthalyste
+					["altQuests"] = {
+						5680,	-- Shadowguard [Orgrimmar]
+						5642,	-- Shadowguard [Thunder Bluff]
+					},
+					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 20,
+					-- #if BEFORE 2.4.1
+					["groups"] = {
+						{
+							["recipeID"] = 18137,	-- Shadowguard (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(79080, {	-- Sharing the Faith
 					["qg"] = 4607,	-- Father Lankester <Priest Trainer>
@@ -1210,6 +1280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if ANYCLASSIC
 				q(5658, {	-- Touch of Weakness [Undercity]
 					["qgs"] = {
 						4606,	-- Aelthalyste
@@ -1226,8 +1297,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.0, 15.8, THUNDER_BLUFF },
 					},
 					["altQuests"] = {
-						5658,	-- Touch of Weakness [Undercity]
-						5659,	-- Touch of Weakness (NYI)
 						5660,	-- Touch of Weakness [Durotar]
 						5661,	-- Touch of Weakness [Mulgore]
 						5662,	-- Touch of Weakness [Orgrimmar]
@@ -1246,6 +1315,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5658, {	-- Touch of Weakness [Undercity]
+					["qg"] = 4606,	-- Aelthalyste
+					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["altQuests"] = {
+						5660,	-- Touch of Weakness [Durotar]
+						5661,	-- Touch of Weakness [Mulgore]
+						5662,	-- Touch of Weakness [Orgrimmar]
+						5663,	-- Touch of Weakness [Thunder Bluff]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(1841, {	-- Velora Nitely and the Brutal Legguards
 					["qg"] = 5878,	-- Thun'grim Firegaze
 					["sourceQuest"] = 1838,	-- Brutal Armor

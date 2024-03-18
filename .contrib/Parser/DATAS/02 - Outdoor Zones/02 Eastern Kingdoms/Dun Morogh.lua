@@ -197,6 +197,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
 						}),
+						-- #if NOT ANYCLASSIC
+						q(5637, {	-- Desperate Prayer
+							["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+							["coord"] = { 47.2, 52.2, DUN_MOROGH },
+							["altQuests"] = {
+								5634,	-- Desperate Prayer [Stormwind City #1]
+								5635,	-- Desperate Prayer [Elwynn Forest]
+								5636,	-- Desperate Prayer [Teldrassil]
+								5638,	-- Desperate Prayer [Stormwind City #2]
+								5639,	-- Desperate Prayer [Ironforge]
+								5640,	-- Desperate Prayer [Darnassus]
+							},
+							["timeline"] = { "removed 3.0.2" },
+							["races"] = { HUMAN, DWARF },
+							["classes"] = { PRIEST },
+							["lvl"] = 10,
+							-- #if BEFORE 3.0.2
+							["groups"] = {
+								{
+									["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
+									["rank"] = 1,
+								},
+							},
+							-- #endif
+						}),
+						-- #endif
 						q(24493, {	-- Don't Forget About Us
 							["qg"] = 37087,	-- Jona Ironstock
 							["altQuests"] = { 24492 },	-- Pack Your Bags

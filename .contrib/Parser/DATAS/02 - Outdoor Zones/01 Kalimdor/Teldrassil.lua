@@ -893,6 +893,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5636, {	-- Desperate Prayer
+					["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
+					["coord"] = { 55.6, 56.8, TELDRASSIL },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer [Stormwind City #1]
+						5635,	-- Desperate Prayer [Elwynn Forest]
+						5637,	-- Desperate Prayer [Dun Morogh]
+						5638,	-- Desperate Prayer [Stormwind City #2]
+						5639,	-- Desperate Prayer [Ironforge]
+						5640,	-- Desperate Prayer [Darnassus]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(2561, {	-- Druid of the Claw
 					["qg"] = 7317,	-- Oben Rageclaw
 					["sourceQuest"] = 2541,	-- The Sleeping Druid

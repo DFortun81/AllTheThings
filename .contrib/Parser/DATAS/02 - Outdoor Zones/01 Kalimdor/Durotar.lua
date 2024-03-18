@@ -2513,6 +2513,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5654, {	-- Hex of Weakness [Durotar]
+					["qg"] = 3706,	-- Tai'jin <Priest Trainer>
+					["coord"] = { 54.2, 42.8, DUROTAR },
+					["altQuests"] = {
+						5652,	-- Hex of Weakness [Orgrimmar]
+						5655,	-- Hex of Weakness [Mulgore]
+						5656,	-- Hex of Weakness [Thunder Bluff]
+						5657,	-- Hex of Weakness [Undercity]
+					},
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(25206, {	-- Ignoring the Warnings
 					["qg"] = 39379,	-- Gor the Enforcer
 					["sourceQuest"] = 25205,	-- The Wolf and The Kodo
@@ -3466,6 +3490,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5660, {	-- Touch of Weakness [Durotar]
+					["qg"] = 3706,	-- Tai'jin <Priest Trainer>
+					["coord"] = { 54.2, 42.8, DUROTAR },
+					["altQuests"] = {
+						5658,	-- Touch of Weakness [Undercity]
+						5661,	-- Touch of Weakness [Mulgore]
+						5662,	-- Touch of Weakness [Orgrimmar]
+						5663,	-- Touch of Weakness [Thunder Bluff]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(47867, {	-- Two If By Sea
 					["qg"] = 122065,	-- Lady Liadrin
 					["sourceQuests"] = {

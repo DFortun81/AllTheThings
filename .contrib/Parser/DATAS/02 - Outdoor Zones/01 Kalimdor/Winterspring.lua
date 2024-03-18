@@ -1334,7 +1334,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = {
 						5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
 						5307,	-- Corruption [Master Swordsmith]
-						8869,	-- Sweet Serenity (Deprecated?)
 					},
 					-- #endif
 					-- #if BEFORE 4.0.3

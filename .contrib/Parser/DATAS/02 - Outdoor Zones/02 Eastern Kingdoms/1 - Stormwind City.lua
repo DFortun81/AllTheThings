@@ -644,18 +644,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if ANYCLASSIC
 				q(5676, {	-- Arcane Feedback [Stormwind City]
 					["qgs"] = {
 						11406,	-- High Priest Rohan <Priest Trainer>
 						376,	-- High Priestess Laurena <Priest Trainer>
+						11401,	-- Priestess Alathea <Priest Trainer>
 					},
 					["coords"] = {
 						{ 26.4, 7.6, IRONFORGE },
 						{ 38.8, 26.6, STORMWIND_CITY },
+						{ 40.0, 80.0, DARNASSUS },
 					},
 					["altQuests"] = {
-						5678,	-- Arcane Feedback [Darnassus, NYI?]
 						5677,	-- Arcane Feedback [Ironforge]
+						5678,	-- Arcane Feedback [Darnassus]
 					},
 					["timeline"] = { "removed 3.0.2" },
 					["races"] = { HUMAN },
@@ -670,6 +673,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5676, {	-- Arcane Feedback [Stormwind City]
+					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
+					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["altQuests"] = {
+						5677,	-- Arcane Feedback [Ironforge]
+						5678,	-- Arcane Feedback [Darnassus]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13896,	-- Feedback (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(1942, {	-- Astral Knot Garment
 					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
 					["sourceQuest"] = 1940,	-- Pristine Spider Silk
@@ -1044,6 +1070,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if ANYCLASSIC
 				q(5634, {	-- Desperate Prayer
 					["qgs"] = {
 						11401,	-- Priestess Alathea <Priest Trainer>
@@ -1084,6 +1111,59 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5634, {	-- Desperate Prayer
+					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
+					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["altQuests"] = {
+						5635,	-- Desperate Prayer [Elwynn Forest]
+						5636,	-- Desperate Prayer [Teldrassil]
+						5637,	-- Desperate Prayer [Dun Morogh]
+						5638,	-- Desperate Prayer [Stormwind City #2]
+						5639,	-- Desperate Prayer [Ironforge]
+						5640,	-- Desperate Prayer [Darnassus]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5638, {	-- Desperate Prayer
+					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
+					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer [Stormwind City #1]
+						5635,	-- Desperate Prayer [Elwynn Forest]
+						5636,	-- Desperate Prayer [Teldrassil]
+						5637,	-- Desperate Prayer [Dun Morogh]
+						5639,	-- Desperate Prayer [Ironforge]
+						5640,	-- Desperate Prayer [Darnassus]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(26420, {	-- Diggin' For Worms
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
@@ -1151,6 +1231,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5673, {	-- Elune's Grace [Stormwind City]
+					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
+					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["altQuests"] = {
+						5672,	-- Elune's Grace [Darnassus]
+						5675,	-- Elune's Grace [Ironforge]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2651,	-- Elune's Grace (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(7637, {	-- Emphasis on Sacrifice
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					["sourceQuests"] = {

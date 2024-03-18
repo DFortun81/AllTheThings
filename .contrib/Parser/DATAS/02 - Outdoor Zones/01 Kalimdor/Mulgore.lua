@@ -775,6 +775,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5655, {	-- Hex of Weakness [Mulgore]
+					["qg"] = 11407,	-- Var'jun
+					["coord"] = { 47.0, 58.8, MULGORE },
+					["altQuests"] = {
+						5652,	-- Hex of Weakness [Orgrimmar]
+						5654,	-- Hex of Weakness [Durotar]
+						5656,	-- Hex of Weakness [Thunder Bluff]
+						5657,	-- Hex of Weakness [Undercity]
+					},
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(24550, {	-- Journey into Thunder Bluff
 					["qg"] = 37024,	-- Una Wildmane
 					["sourceQuest"] = 24524,	-- Wildmane Cleansing
@@ -1486,6 +1510,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5661, {	-- Touch of Weakness [Mulgore]
+					["qg"] = 11407,	-- Var'jun
+					["coord"] = { 47.0, 58.8, MULGORE },
+					["altQuests"] = {
+						5658,	-- Touch of Weakness [Undercity]
+						5660,	-- Touch of Weakness [Durotar]
+						5662,	-- Touch of Weakness [Orgrimmar]
+						5663,	-- Touch of Weakness [Thunder Bluff]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(6089, {	-- Training the Beast
 					["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
 					["sourceQuest"] = 6088,	-- Taming the Beast (3/3)

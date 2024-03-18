@@ -390,6 +390,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5677, {	-- Arcane Feedback [Ironforge]
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["coord"] = { 26.4, 7.6, IRONFORGE },
+					["altQuests"] = {
+						5676,	-- Arcane Feedback [Stormwind City]
+						5678,	-- Arcane Feedback [Darnassus]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13896,	-- Feedback (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(3449, {	-- Arcane Runes
 					["qg"] = 8507,	-- Tymor
 					["sourceQuests"] = {
@@ -508,6 +530,54 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5675, {	-- Elune's Grace [Ironforge]
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["coord"] = { 25, 8.2, IRONFORGE },
+					["altQuests"] = {
+						5672,	-- Elune's Grace [Darnassus]
+						5673,	-- Elune's Grace [Stormwind City]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2651,	-- Elune's Grace (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5639, {	-- Desperate Prayer
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["coord"] = { 26.4, 7.6, IRONFORGE },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer [Stormwind City #1]
+						5635,	-- Desperate Prayer [Elwynn Forest]
+						5636,	-- Desperate Prayer [Teldrassil]
+						5637,	-- Desperate Prayer [Dun Morogh]
+						5638,	-- Desperate Prayer [Stormwind City #2]
+						5640,	-- Desperate Prayer [Darnassus]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(2039, {	-- Find Bingles
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.6, IRONFORGE },

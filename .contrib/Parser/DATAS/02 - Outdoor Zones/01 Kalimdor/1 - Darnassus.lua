@@ -206,6 +206,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { NIGHTELF },
 				}),
 				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5678, {	-- Arcane Feedback [Stormwind City]
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 40.0, 80.0, DARNASSUS },
+					["altQuests"] = {
+						5676,	-- Arcane Feedback [Stormwind City]
+						5677,	-- Arcane Feedback [Ironforge]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13896,	-- Feedback (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(3763, {	-- Assisting Arch Druid Staghelm [Darnassus]
 					["qg"] = 6735,	-- Innkeeper Saelienne
 					["coord"] = { 67.4, 15.7, DARNASSUS },
@@ -284,6 +306,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5640, {	-- Desperate Prayer
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.6, 80.8, DARNASSUS },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer [Stormwind City #1]
+						5635,	-- Desperate Prayer [Elwynn Forest]
+						5636,	-- Desperate Prayer [Teldrassil]
+						5637,	-- Desperate Prayer [Dun Morogh]
+						5638,	-- Desperate Prayer [Stormwind City #2]
+						5639,	-- Desperate Prayer [Ironforge]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(2242, {	-- Destiny Calls
 					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls
@@ -305,6 +353,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if ANYCLASSIC
 				q(5672, {	-- Elune's Grace [Darnassus]
 					["qgs"] = {
 						11401,	-- Priestess Alathea <Priest Trainer>
@@ -317,7 +366,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 38.8, 26.6, STORMWIND_CITY },
 					},
 					["altQuests"] = {
-						5674,	-- Elune's Grace [Teldrassil, NYI]
 						5675,	-- Elune's Grace [Ironforge]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
@@ -334,6 +382,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5672, {	-- Elune's Grace [Darnassus]
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.2, 81, DARNASSUS },
+					["altQuests"] = {
+						5675,	-- Elune's Grace [Ironforge]
+						5673,	-- Elune's Grace [Stormwind City]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2651,	-- Elune's Grace (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(2260, {	-- Erion's Behest
 					["qg"] = 4214,	-- Erion Shadewhisper
 					["sourceQuest"] = 2259,	-- Erion Shadewhisper

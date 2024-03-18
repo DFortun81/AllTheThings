@@ -282,6 +282,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5644, {	-- Devouring Plague [Thunder Bluff]
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
+					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
+					["altQuests"] = {
+						5646,	-- Devouring Plague [Orgrimmar]
+						5679,	-- Devouring Plague [Undercity]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2944,	-- Devouring Plague (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(1064, {	-- Forsaken Aid
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["sourceQuest"] = 1063,	-- The Elder Crone
@@ -346,6 +368,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5656, {	-- Hex of Weakness [Thunder Bluff]
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
+					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
+					["altQuests"] = {
+						5652,	-- Hex of Weakness [Orgrimmar]
+						5654,	-- Hex of Weakness [Durotar]
+						5655,	-- Hex of Weakness [Mulgore]
+						5657,	-- Hex of Weakness [Undercity]
+					},
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(769, {	-- Kodo Hide Bag
 					-- #if BEFORE 8.0.1
 					["description"] = "This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
@@ -513,6 +559,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5642, {	-- Shadowguard [Thunder Bluff]
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
+					["altQuests"] = {
+						5643,	-- Shadowguard [Undercity]
+						5680,	-- Shadowguard [Orgrimmar]
+					},
+					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 20,
+					-- #if BEFORE 2.4.1
+					["groups"] = {
+						{
+							["recipeID"] = 18137,	-- Shadowguard (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(29354, {	-- Shiny Baubles
 					["qg"] = 3028,	-- Kah Mistrunner
 					["coord"] = { 56.12, 46.34, THUNDER_BLUFF },
@@ -729,6 +797,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5663, {	-- Touch of Weakness [Thunder Bluff]
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
+					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
+					["altQuests"] = {
+						5658,	-- Touch of Weakness [Undercity]
+						5660,	-- Touch of Weakness [Durotar]
+						5661,	-- Touch of Weakness [Mulgore]
+						5662,	-- Touch of Weakness [Orgrimmar]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(3761, {	-- Un'Goro Soil
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["sourceQuests"] = {

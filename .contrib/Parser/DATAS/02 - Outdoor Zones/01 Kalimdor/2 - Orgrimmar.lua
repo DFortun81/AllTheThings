@@ -821,6 +821,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5646, {	-- Devouring Plague [Orgrimmar]
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
+					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["altQuests"] = {
+						5679,	-- Devouring Plague [Undercity]
+						5644,	-- Devouring Plague [Thunder Bluff]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2944,	-- Devouring Plague (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(49855, {	-- Disaster at Mount Hyjal
 					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28805,	-- The Eye of the Storm
@@ -912,6 +934,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.0.1.15589", "removed 7.0.3" },
 					["races"] = { PANDAREN_HORDE },
 				}),
+				-- #if ANYCLASSIC
 				q(5652, {	-- Hex of Weakness [Orgrimmar]
 					["qgs"] = {
 						6018,	-- Ur'kyo <Priest Trainer>
@@ -928,7 +951,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 49.01, 18.32, UNDERCITY },
 					},
 					["altQuests"] = {
-						5653,	-- Hex of Weakness (NYI)
 						5654,	-- Hex of Weakness [Durotar]
 						5655,	-- Hex of Weakness [Mulgore]
 						5656,	-- Hex of Weakness [Thunder Bluff]
@@ -947,6 +969,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5652, {	-- Hex of Weakness [Orgrimmar]
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
+					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["altQuests"] = {
+						5654,	-- Hex of Weakness [Durotar]
+						5655,	-- Hex of Weakness [Mulgore]
+						5656,	-- Hex of Weakness [Thunder Bluff]
+						5657,	-- Hex of Weakness [Undercity]
+					},
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(5726, {	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
@@ -1410,7 +1457,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
-				q(5680, {	-- Shadowguard [Undercity]
+				-- #if ANYCLASSIC
+				q(5680, {	-- Shadowguard [Orgrimmar]
 					["qgs"] = {
 						6018,	-- Ur'kyo <Priest Trainer>
 						4606,	-- Aelthalyste
@@ -1438,6 +1486,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #endif
+				-- #if NOT ANYCLASSIC
+				q(5680, {	-- Shadowguard [Orgrimmar]
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
+					["altQuests"] = {
+						5643,	-- Shadowguard [Undercity]
+						5642,	-- Shadowguard [Thunder Bluff]
+					},
+					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["timeline"] = { "removed 2.4.1" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 20,
+					-- #if BEFORE 2.4.1
+					["groups"] = {
+						{
+							["recipeID"] = 18137,	-- Shadowguard (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(79079, {	-- Sharing the Faith
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
@@ -1717,6 +1788,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5662, {	-- Touch of Weakness [Orgrimmar]
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
+					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["altQuests"] = {
+						5658,	-- Touch of Weakness [Undercity]
+						5660,	-- Touch of Weakness [Durotar]
+						5661,	-- Touch of Weakness [Mulgore]
+						5663,	-- Touch of Weakness [Thunder Bluff]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(26830, {	-- Traitor's Bait
 					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 26798,	-- Saurfang Will be Pleased
