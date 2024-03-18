@@ -145,9 +145,11 @@ end
 app.events.ZONE_CHANGED = UpdateLocation;
 app.events.ZONE_CHANGED_INDOORS = UpdateLocation;
 app.events.ZONE_CHANGED_NEW_AREA = UpdateLocation;
+app.events.PLAYER_INTERACTION_MANAGER_FRAME_HIDE = UpdateLocation;
 app:RegisterEvent("ZONE_CHANGED");
 app:RegisterEvent("ZONE_CHANGED_INDOORS");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+pcall(app.RegisterEvent, app, "PLAYER_INTERACTION_MANAGER_FRAME_HIDE");
 app.AddEventHandler("OnReady", UpdateLocation);
 app.GetMapName = GetMapName;
 UpdateLocation();
