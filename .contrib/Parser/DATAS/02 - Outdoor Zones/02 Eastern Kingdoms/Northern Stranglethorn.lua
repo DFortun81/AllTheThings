@@ -490,20 +490,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(29121, {	-- Bury Me With Me Boots... (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29121, {	-- Bury Me With Me Boots... (A)
 					["qg"] = 52371,	-- Grent Direhammer
 					["sourceQuest"] = 29213,	-- How's the Hunter Holding Up?
 					["coord"] = { 76.0, 66.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29232, {	-- Bury Me With Me Boots... (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29232, {	-- Bury Me With Me Boots... (H)
 					["qg"] = 52371,	-- Grent Direhammer
 					["sourceQuest"] = 29231,	-- How's the Hunter Holding Up?
 					["coord"] = { 76.0, 66.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29100, {	-- Bwemba's Spirit [A]
+					["qg"] = 52654,	-- Bwemba
+					["sourceQuest"] = 29156,	-- The Troll Incursion
+					["coord"] = { 25.9, 29.2, STORMWIND_CITY },
+					["timeline"] = { "added 4.1.0.13682" },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29219, {	-- Bwemba's Spirit (H)
+					["qg"] = 53081,	-- Bwemba
+					-- #if BEFORE 7.0.1
+					["sourceQuest"] = 29157,	-- The Zandalari Menace
+					-- #endif
+					["coord"] = { 32.6, 68.6, ORGRIMMAR },
+					["timeline"] = { "added 4.1.0.13726" },
+					["races"] = HORDE_ONLY,
+				})),
 				q(339, {	-- Chapter I
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
@@ -637,20 +653,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29235, {	-- Defend Grom'gol
+				applyclassicphase(CATA_PHASE_TWO, q(29235, {	-- Defend Grom'gol
 					["qg"] = 52996,	-- Commander Aggro'gosh
 					["sourceQuest"] = 29233,	-- Warn Grom'gol
 					["coord"] = { 38.3, 50.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
-				}),
-				q(29131, {	-- Defend the Rebel Camp
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29131, {	-- Defend the Rebel Camp
 					["qg"] = 52410,	-- Lieutenant Doren
 					["sourceQuest"] = 29124,	-- Warn the Rebel Camp
 					["coord"] = { 47.7, 12.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 				q(3625, {	-- Enchanted Azsharite Fel Weaponry
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3621,	-- The Formation of Felbane
@@ -720,36 +736,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(29116, {	-- Follow That Cat (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29116, {	-- Follow That Cat (A)
 					["sourceQuest"] = 29115,	-- The Hunter's Revenge
 					["description"] = "Automatically granted after turning in |cFFFFD700The Hunter's Revenge|r.",
 					["coord"] = { 64.1, 20.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29118, {	-- Follow That Cat (A)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29118, {	-- Follow That Cat (A)
 					["provider"] = { "o", 208365 },	-- Recently Disturbed Dirt Mound
 					["sourceQuest"] = 29115,	-- The Hunter's Revenge
 					["description"] = "This version is available if you abandon the quest that was granted automatically.",
 					["coord"] = { 64.6, 22.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29228, {	-- Follow That Cat (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29228, {	-- Follow That Cat (H)
 					["sourceQuest"] = 29227,	-- The Hunter's Revenge
 					["description"] = "Automatically granted after turning in |cFFFFD700The Hunter's Revenge|r.",
 					["coord"] = { 64.1, 20.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,	-- TODO:: Is this also available for the alliance?
-				}),
-				q(29229, {	-- Follow That Cat (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29229, {	-- Follow That Cat (H)
 					["provider"] = { "o", 208365 },	-- Recently Disturbed Dirt Mound
 					["sourceQuest"] = 29227,	-- The Hunter's Revenge
 					["description"] = "This version is available if you abandon the quest that was granted automatically.",
 					["coord"] = { 64.6, 22.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(2764, {	-- Galvan's Finest Pupil
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuests"] = {
@@ -893,20 +909,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29213, {	-- How's the Hunter Holding Up? (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29213, {	-- How's the Hunter Holding Up? (A)
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29120,	-- Mauti
 					["coord"] = { 77.1, 69.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13698" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29231, {	-- How's the Hunter Holding Up? (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29231, {	-- How's the Hunter Holding Up? (H)
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29230,	-- Mauti
 					["coord"] = { 77.1, 68.9, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13698" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(581, {	-- Hunt for Yenniku
 					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
@@ -1034,7 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29120, {	-- Mauti (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29120, {	-- Mauti (A)
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuests"] = {
 						29116,	-- Follow That Cat (automatically granted)
@@ -1043,8 +1059,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.9, 68.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13698" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29230, {	-- Mauti (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29230, {	-- Mauti (H)
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuests"] = {
 						29228,	-- Follow That Cat (automatically granted)
@@ -1053,7 +1069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.7, 68.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13698" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(26774, {	-- Mind Control (A)
 					["qg"] = 44017,	-- Priestess Thaalia
 					["sourceQuest"] = 26773,	-- See Raptor
@@ -1161,20 +1177,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				q(29105, {	-- Nesingwary Will Know (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29105, {	-- Nesingwary Will Know (A)
 					["qg"] = 52281,	-- Livingston Marshal
 					["sourceQuest"] = 29104,	-- Spirits Are With Us
 					["coord"] = { 52.5, 66.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29223, {	-- Nesingwary Will Know (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29223, {	-- Nesingwary Will Know (H)
 					["qg"] = 52980,	-- Kil'karil
 					["sourceQuest"] = 29222,	-- Spirits Are With Us
 					["coord"] = { 63.3, 39.9, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(26300, {	-- Nezzliok Will Know
 					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 26299,	-- Headhunting
@@ -1557,20 +1573,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(29103, {	-- Serpents and Poison (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29103, {	-- Serpents and Poison (A)
 					["qg"] = 52281,	-- Livingston Marshal
 					["sourceQuest"] = 29102,	-- To Fort Livingston
 					["coord"] = { 64.6, 40.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29221, {	-- Serpents and Poison (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29221, {	-- Serpents and Poison (H)
 					["qg"] = 52980,	-- Kil'karil
 					["sourceQuest"] = 29220,	-- To Bambala
 					["coord"] = { 63.3, 39.9, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(26332, {	-- Skullsplitter Mojo
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
@@ -1601,7 +1617,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.6, 23.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(29267, {	-- Some Good Will Come (The Zandalar Representative questline)
+				applyclassicphase(CATA_PHASE_TWO, q(29267, {	-- Some Good Will Come (The Zandalar Representative questline)
 					["qg"] = 52374,	-- Panther Cub
 					["sourceQuest"] = 29121,	-- Bury Me With Me Boots...
 					["coord"] = { 76.1, 66.7, NORTHERN_STRANGLETHORN },
@@ -1612,8 +1628,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.1.0.13682" },
 						}),
 					},
-				}),
-				q(29268, {	-- Some Good Will Come (The Zandalari Menace questline)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29268, {	-- Some Good Will Come (The Zandalari Menace questline)
 					["qg"] = 52374,	-- Panther Cub
 					["sourceQuest"] = 29232,	-- Bury Me With Me Boots...
 					["coord"] = { 76.1, 66.7, NORTHERN_STRANGLETHORN },
@@ -1624,7 +1640,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.1.0.13682" },
 						}),
 					},
-				}),
+				})),
 				q(26736, {	-- Spared from Madness
 					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 26735,	-- The Fate of Kurzen
@@ -1718,19 +1734,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29104, {	-- Spirits Are With Us (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29104, {	-- Spirits Are With Us (A)
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29103,	-- Serpents and Poison
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29222, {	-- Spirits Are With Us (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29222, {	-- Spirits Are With Us (H)
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29221,	-- Serpents and Poison
 					--["coord"] = {}	-- can be picked up anywhere on the map
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(598, {	-- Split Bone Necklace
 					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
@@ -2015,20 +2031,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(29115, {	-- The Hunter's Revenge (A)
+				applyclassicphase(CATA_PHASE_TWO, q(29115, {	-- The Hunter's Revenge (A)
 					["qg"] = 52346,	-- Grent Direhammer
 					["sourceQuest"] = 29114,	-- Track the Tracker
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29227, {	-- The Hunter's Revenge (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29227, {	-- The Hunter's Revenge (H)
 					["qg"] = 52294,	-- Grent Direhammer
 					["sourceQuest"] = 29226,	-- Track the Tracker
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(591, {	-- The Mind's Eye
 					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 589,	-- The Singing Crystals
@@ -2133,6 +2149,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				applyclassicphase(CATA_PHASE_TWO, q(29156, {	-- The Troll Incursion
+					["timeline"] = { "added 4.1.0", "removed 7.0.1" },
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+				})),
 				q(26400, {	-- The Universal Key
 					["qg"] = 42814,	-- Skeezy Whillzap
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
@@ -2156,6 +2177,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				applyclassicphase(CATA_PHASE_TWO, q(29157, {	-- The Zandalari Menace
+					["timeline"] = { "added 4.1.0", "removed 7.0.1" },
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+				})),
 				q(185, {	-- Tiger Hunting [CATA+] / Tiger Mastery (1/4)
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
@@ -2236,46 +2262,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29220, {	-- To Bambala
+				applyclassicphase(CATA_PHASE_TWO, q(29220, {	-- To Bambala
 					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 32.6, 68.2, ORGRIMMAR },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
-				}),
-				q(29236, {	-- To Hardwrench Hideaway
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29102, {	-- To Fort Livingston
+					["qg"] = 52654,	-- Bwemba
+					["sourceQuest"] = 29100,	-- Bwemba's Spirit [A]
+					["coord"] = { 25.9, 29.2, STORMWIND_CITY },
+					["timeline"] = { "added 4.1.0.13682" },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29236, {	-- To Hardwrench Hideaway
 					["qg"] = 53008,	-- Thysta
 					["sourceQuest"] = 29235,	-- Defend Grom'gol
 					["coord"] = { 39.0, 51.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(26805, {	-- To the Cape!
 					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.3, 66.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(29133, {	-- To the Digsite
+				applyclassicphase(CATA_PHASE_TWO, q(29133, {	-- To the Digsite
 					["qg"] = 52753,	-- James Stillair
 					["sourceQuest"] = 29131,	-- Defend the Rebel Camp
 					["coord"] = { 47.8, 11.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29114, {	-- Track the Tracker (A)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29114, {	-- Track the Tracker (A)
 					["qg"] = 52294,	-- Hemet Nesingwary Jr.
 					["sourceQuest"] = 29105,	-- Nesingwary Will Know
 					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29226, {	-- Track the Tracker (H)
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29226, {	-- Track the Tracker (H)
 					["qg"] = 52294,	-- Hemet Nesingwary Jr.
 					["sourceQuest"] = 29223,	-- Nesingwary Will Know
 					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
-				}),
+				})),
 				q(205, {	-- Troll Witchery
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207,	-- Kurzen's Mystery
@@ -2344,20 +2377,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29233, {	-- Warn Grom'gol
+				applyclassicphase(CATA_PHASE_TWO, q(29233, {	-- Warn Grom'gol
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29232,	-- Bury Me With Me Boots...
 					--["coord"] = {},	-- can be picked up anywhere since Bwemba follows you
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
-				}),
-				q(29124, {	-- Warn the Rebel Camp
+				})),
+				applyclassicphase(CATA_PHASE_TWO, q(29124, {	-- Warn the Rebel Camp
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29121,	-- Bury Me With Me Boots...
 					["coord"] = { 76.0, 66.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 				q(26729, {	-- Water Elementals
 					["qg"] = 43885,	-- Emerine Junis
 					["sourceQuest"] = 26736,	-- Spared from Madness

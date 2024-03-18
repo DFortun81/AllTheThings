@@ -723,15 +723,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
-				q(29219, {	-- Bwemba's Spirit
-					["qg"] = 53081,	-- Bwemba
-					-- #if BEFORE 7.0.1
-					["sourceQuest"] = 29157,	-- The Zandalari Menace
-					-- #endif
-					["coord"] = { 32.6, 68.6, ORGRIMMAR },
-					["timeline"] = { "added 4.1.0.13726" },
-					["races"] = HORDE_ONLY,
-				}),
 				q(4511, {	-- Calm Before the Storm (2/2)
 					["qg"] = 7010,	-- Zilzibin Drumlore
 					["sourceQuest"] = 4509,	-- Calm Before the Storm (1/2)

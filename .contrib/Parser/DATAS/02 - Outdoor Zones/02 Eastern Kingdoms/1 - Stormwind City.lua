@@ -978,13 +978,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(29100, {	-- Bwemba's Spirit [A]
-					["qg"] = 52654,	-- Bwemba
-					["sourceQuest"] = 29156,	-- The Troll Incursion
-					["coord"] = { 25.9, 29.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(14482, {	-- Call of Duty
 					["qg"] = 36799,	-- Recruiter Burns
 					["sourceQuests"] = {
@@ -3460,13 +3453,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3" },
 						}),
 					},
-				}),
-				q(29102, {	-- To Fort Livingston
-					["qg"] = 52654,	-- Bwemba
-					["sourceQuest"] = 29100,	-- Bwemba's Spirit [A]
-					["coord"] = { 25.9, 29.2, STORMWIND_CITY },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7639, {	-- To Show Due Judgment
 					["providers"] = {

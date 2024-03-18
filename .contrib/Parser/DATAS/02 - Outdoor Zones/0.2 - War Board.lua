@@ -62,7 +62,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			un(REMOVED_FROM_GAME, q(29157)),	-- The Zandalari Menace
 			q(49817, {	-- To Northrend! (Horde)
 				["isBreadcrumb"] = true,
 				["lvl"] = 60,
@@ -599,11 +598,6 @@ root(ROOTS.Zones, {
 			}),
 			q(36498, {	-- Iron Horde Invasion
 				["isBreadcrumb"] = true,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(29156, {	-- The Troll Incursion
-				["isBreadcrumb"] = true,
-				["lvl"] = 85,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			--
