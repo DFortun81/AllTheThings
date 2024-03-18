@@ -431,6 +431,13 @@ r(235753),	-- Tailored Skullblasters
 r(235754),	-- Rugged Skullblasters
 r(235755),	-- Chain Skullblasters
 r(235756),	-- Heavy Skullblasters
+8.0.1.25902
+r(264475),	-- Engineering
+r(264479),	-- Outland Engineering
+r(264481),	-- Northrend Engineering
+r(264483),	-- Cataclysm Engineering
+r(264485),	-- Pandaria Engineering
+r(264487),	-- Draenor Engineering
 
 
 

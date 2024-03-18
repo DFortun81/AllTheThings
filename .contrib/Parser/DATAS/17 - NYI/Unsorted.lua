@@ -726,6 +726,7 @@ root(ROOTS.Unsorted, {
 			i(180797),	-- Memorial Offering Key
 			i(174378),	-- Mortegore Scroll
 			i(181777),	-- Phaeton's Key
+			i(174331),	-- Goliath Gauntlet
 			n(PROFESSIONS, {
 				i(118492),	-- Schematic: Morden's Magnificent Contraption [Weird ItemID...]
 			}),

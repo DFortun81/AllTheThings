@@ -3,6 +3,7 @@ q(614),	-- The Captain's Chest	 CLASSIC:The Captain's Chest	 TBC:The Captain's C
 q(615),	-- The Captain's Cutlass	 CLASSIC:The Captain's Cutlass	 TBC:The Captain's Cutlass	 WOTLK:The Captain's Cutlass	 CATA:The Captain's Cutlass
 q(618),	-- Facing Negolash	 CLASSIC:Facing Negolash	 TBC:Facing Negolash	 WOTLK:Facing Negolash	 CATA:Facing Negolash
 q(620),	-- The Monogrammed Sash	 CLASSIC:The Monogrammed Sash	 TBC:The Monogrammed Sash	 WOTLK:The Monogrammed Sash	 CATA:The Monogrammed Sash
+q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
 q(7487),	-- Attunement to the Core	 CLASSIC:Attunement to the Core	 TBC:Attunement to the Core	 WOTLK:Attunement to the Core	 CATA:Attunement to the Core
 q(9378),	-- DND FLAG The Dread Citadel - Naxxramas
 1.13.2.30073
@@ -317,6 +318,8 @@ q(80241),	-- CLASSIC:The Origins of Smithing
 q(80324),	-- CLASSIC:The Mad King
 q(80325),	-- CLASSIC:The Mad King
 q(80393),	--
+1.15.1.53623
+q(81570),	-- CLASSIC:Jarl Needs a Blade
 2.5.1.38043
 q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source	 CATA:Windows to the Source
 q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild	 CATA:Voidwalkers Gone Wild
@@ -490,6 +493,7 @@ q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 C
 q(13476),	-- For Great Honor	 WOTLK:For Great Honor	 CATA:For Great Honor
 q(13478),	-- Concerted Efforts	 WOTLK:Concerted Efforts	 CATA:Concerted Efforts
 q(13649),	-- Justin's Fun Test	 WOTLK:Justin's Fun Test	 CATA:Justin's Fun Test
+q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub	 CATA:Gorishi Grub
 q(13990),	-- Upper Deck Promo - Chicken Mount
 q(13997),	-- If You're Reading This While I'm In Combat...	 WOTLK:If You're Reading This While I'm In Combat...	 CATA:If You're Reading This While I'm In Combat...
 q(14032),	-- Kobold Camp Cleanup [Programming Test]	 WOTLK:Kobold Camp Cleanup	 CATA:Kobold Camp Cleanup
@@ -810,7 +814,6 @@ q(26054),	-- Water They Up To?
 q(26104),	-- Our Aquatic Neigh-Bors
 q(26109),	-- Land Ho!
 q(26123),	-- When in Vashj'ir...
-q(26151),	-- Dark Letter
 q(26198),	-- The Arts of a Mage
 q(26200),	-- The Arts of a Priest
 q(26201),	-- The Power of a Warlock

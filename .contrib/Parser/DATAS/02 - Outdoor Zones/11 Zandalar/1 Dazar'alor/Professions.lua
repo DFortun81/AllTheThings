@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 					["coord"] = { 42.4, 39.6, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
-					["g"] = appendGroups(BFA_ENCHANTING, {
+					["g"] = appendGroups(BFA_INSCRIPTION, {
 						r(265809),	-- Zandalari Inscription
 						n(MISC, {
 							r(256287),	-- Contract: Talanji's Expedition [Rank 1]

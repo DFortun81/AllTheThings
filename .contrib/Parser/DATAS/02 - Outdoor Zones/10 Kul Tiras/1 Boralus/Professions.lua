@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 				n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 					["coord"] = { 73.4, 6.33, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = appendGroups(BFA_ENCHANTING, {
+					["g"] = appendGroups(BFA_INSCRIPTION, {
 						r(264508),	-- Kul Tiran Inscription
 						n(MISC, {
 							r(284292, {	-- Contract: 7th Legion [Rank 1]

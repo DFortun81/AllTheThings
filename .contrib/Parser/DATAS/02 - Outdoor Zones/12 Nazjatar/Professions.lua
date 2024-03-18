@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 38.0, 53.6, NAZJATAR },
 				{ 49.0, 61.6, NAZJATAR },
 			},
-			["g"] = NAZJATAR_ENGINERRING,
+			["g"] = NAZJATAR_ENGINEERING,
 		}),
 		prof(HERBALISM, {
 			["crs"] = {

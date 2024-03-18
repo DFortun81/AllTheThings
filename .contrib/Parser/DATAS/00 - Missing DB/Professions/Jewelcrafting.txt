@@ -1189,7 +1189,6 @@ r(300756),	-- Straddling Sage Agate
 r(301993),	-- Prospecting
 r(301994),	-- Prospecting
 8.2.0.30329
-r(302698),	-- Milling
 r(302706),	-- Prospecting
 r(302707),	-- Prospecting
 r(302708),	-- Prospecting

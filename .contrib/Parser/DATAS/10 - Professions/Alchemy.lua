@@ -1483,8 +1483,8 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["recipeID"] = 7179
 				},
 				{
-					["name"] = "Elixir of Waterwalking",
-					["timeline"] = { "added 2.4.0", "deleted 3.0.1" }, 
+					["name"] = "Elixir of Waterwalking",	-- See later in SoD TBC if this is true
+					["timeline"] = { "added 2.4.0", "deleted 3.0.1" },
 					["recipeID"] = 11447,
 				},
 				{

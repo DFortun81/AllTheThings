@@ -634,6 +634,13 @@ r(238400),	--
 r(238402),	--
 r(238403),	--
 r(240254),	--
+8.0.1.25902
+r(264494),	-- Inscription
+r(264496),	-- Outland Inscription
+r(264498),	-- Northrend Inscription
+r(264500),	-- Cataclysm Inscription
+r(264502),	-- Pandaria Inscription
+r(264504),	-- Draenor Inscription
 10.0.0.44649
 r(382986),	-- Legion Milling
 r(382987),	-- Draenor Milling

@@ -80,9 +80,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				-- #if BEFORE 2.4.0
 				r(11447),	-- Elixir of Waterwalking
-				-- #endif
 				r(22430),	-- Refined Scale of Onyxia
 				-- With SpellID attched
 				i(5641),	-- Recipe: Cowardly Flight Potion

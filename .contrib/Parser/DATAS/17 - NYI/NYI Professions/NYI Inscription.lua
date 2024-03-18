@@ -46,8 +46,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(269744),	-- Honorable Combatant's Inked Vessel [Rank 1]
-					r(256251),	-- Inked Vessel of Robust Regeneration [Rank 1]
-					r(256252),	-- Inked Vessel of Robust Regeneration [Rank 2]
+					r(256250),	-- Inked Vessel of Robust Regeneration [Rank 1]
+					r(256251),	-- Inked Vessel of Robust Regeneration [Rank 2]
 					r(256238),	-- Manual of Elemental Enchancement
 					r(256241),	-- Manual of Reverse Wounding
 					-- With SpellID attached
