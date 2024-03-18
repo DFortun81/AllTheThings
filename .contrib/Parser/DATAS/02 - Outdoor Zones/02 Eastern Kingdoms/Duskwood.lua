@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(12430, {	-- Duskwood Quests
 					["timeline"] = { "added 7.3.5.25727" },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Legend of Stalvan
@@ -45,8 +45,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26674,	-- Mistmantle's Revenge
+						26754,	-- Morbent's Bane
+						26727,	-- The Embalmer's Revenge
+						26797,	-- A Daughter's Love
+						26686,	-- Bones That Walk
+						26623,	-- Dusky Crab Cakes
+						26620,	-- Seasoned Wolf Kabobs
+						26691,	-- Worgen in the Woods
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			battlepets({
@@ -131,6 +142,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.3, 57.6, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Lurking Worgen captured
+							["providers"] = {
+								{ "n", 43814 },	-- Lurking Worgen
+								{ "i", 60206 },	-- Harris's Ampule
+							},
+							["coord"] = { 21.6, 73.2, DUSKWOOD },
+						}),
+					},
 				}),
 				q(231, {	-- A Daughter's Love
 					["providers"] = {
@@ -175,6 +195,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Corpseweed
+							["provider"] = { "i", 60204 },	-- Corpseweed
+							["crs"] = {
+								43732,	-- Corpseweed
+								45785,	-- Carved One
+							},
+						}),
 						i(60927, {	-- Cloak of Sanity
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -242,6 +269,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Black Bear Brain
+							["provider"] = { "i", 60334 },	-- Black Bear Brain
+							["cr"] = 44016,	-- Coalpelt Bear
+						}),
 						i(60936, {	-- Jittering Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -277,6 +308,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Skeletal Warrior slain
+							["provider"] = { "n", 48 },	-- Skeletal Warrior
+						}),
+						objective(2, {	-- 0/5 Skeletal Mage slain
+							["provider"] = { "n", 203 },	-- Skeletal Mage
+						}),
 						i(131581, {	-- Night Watcher's Mail
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -321,7 +358,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26722, {	-- Buried Below
-					["provider"] = { "o", 204824 },	-- Lightforged Arch
+					["providers"] = {
+						{ "o", 204824 },	-- Lightforged Arch
+						{ "o", 204825 },	-- Lightforged Crest
+					},
 					["sourceQuest"] = 26753,	-- The Halls of the Dead
 					["coord"] = { 20.3, 27.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -334,6 +374,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Ogre's Monocle
+							["provider"] = { "i", 1968 },	-- Ogre's Monocle
+							["coord"] = { 37.6, 84.2, DUSKWOOD },
+							["cr"] = 300,	-- Zzarc' Vul
+						}),
 						i(60909, {	-- Astronomer's Handwraps
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -349,7 +394,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26672, {	-- Clawing at the Truth
-					["qg"] = 43453,	-- Tobias Mistmantle
+					["providers"] = {
+						{ "n", 43453 },	-- Tobias Mistmantle
+						{ "i", 3629 },	-- Mistmantle Family Ring
+					},
 					["sourceQuest"] = 26671,	-- The Fate of Stalvan Mistmantle
 					["coord"] = { 79.0, 44.1, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -362,6 +410,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Worgen cured
+							["provider"] = { "n", 43950 },	-- Lurking Worgen
+							["coord"] = { 18.6, 57.6, DUSKWOOD },
+						}),
 						i(60928, {	-- Consecrated Scepter
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -388,7 +440,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26655, {	-- Deliver the Thread
-					["qg"] = 265,	-- Madame Eva
+					["providers"] = {
+						{ "n", 265 },	-- Madame Eva
+						{ "i", 1596 },	-- Ghost Hair Thread
+					},
 					["sourceQuest"] = 26654,	-- Return the Comb
 					["coord"] = { 75.7, 45.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -423,7 +478,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 17,
 				}),
 				q(26719, {	-- Delivery to Master Harris
-					["qg"] = 43738,	-- Apprentice Fess
+					["providers"] = {
+						{ "n", 43738 },	-- Apprentice Fess
+						{ "i", 60205 },	-- Bundle of Corpseweed
+					},
 					["sourceQuest"] = 26717,	-- The Yorgen Worgen
 					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -447,6 +505,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Dusky Lump
+							["provider"] = { "i", 60988 },	-- Dusky Lump
+							["cr"] = 217,	-- Venom Web Spider
+						}),
 						i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
 					},
 				}),
@@ -496,6 +558,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.7, 44.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Rot Blossom
+							["providers"] = {
+								{ "i",  59345 },	-- Rot Blossom
+								{ "o", 204457 },	-- Rot Blossom
+							},
+							["coord"] = { 79.6, 73.5, DUSKWOOD },
+						}),
+					},
 				}),
 				q(149, {	-- Ghost Hair Thread
 					["providers"] = {
@@ -509,7 +580,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26652, {	-- Ghost Hair Thread
-					["qg"] = 265,	-- Madame Eva
+					["providers"] = {
+						{ "n", 265 },	-- Madame Eva
+						{ "i", 1453 },	-- Spectral Comb
+					},
 					["sourceQuest"] = 26653,	-- Supplies from Darkshire
 					["coord"] = { 75.8, 45.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -541,6 +615,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Ghoul Rib
+							["provider"] = { "i", 884 },	-- Ghoul Rib
+							["cr"] = 1270,	-- Ghoul Rib
+						}),
+					},
 				}),
 				q(26725, {	-- Guided by the Light
 					["qg"] = 43731,	-- Sister Elsington
@@ -562,6 +642,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 A Torn Journal
+							["providers"] = {
+								{ "i",  59361 },	-- A Torn Journal
+								{ "o", 204464 },	-- Pile of Scraps
+							},
+							["coord"] = { 66.5, 76.5, DUSKWOOD },
+						}),
+					},
 				}),
 				q(266, {	-- Inquire at the Inn
 					["providers"] = {
@@ -593,7 +682,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26676, {	-- Juice Delivery
-					["qg"] = 273,	-- Tavernkeep Smitts
+					["providers"] = {
+						{ "n", 273 },	-- Tavernkeep Smitts
+						{ "i", 1451 },	-- Bottle of Zombie Juice
+					},
 					["sourceQuest"] = 26661,	-- Gather Rot Blossoms
 					["coord"] = { 73.7, 44.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -679,6 +771,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Stalvan Mistmantle slain
+							["providers"] = {
+								{ "n", 315 },	-- Stalvan Mistmantle
+								{ "i", 59363 },	-- Mistmantle Family Ring
+							},
+							["coord"] = { 77.4, 36.2, DUSKWOOD },
+						}),
 						i(60919, {	-- Bracers of Forlorn Spirits
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -717,6 +816,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mor'Ladim's Skull
+							["provider"] = { "i", 3514 },	-- Mor'Ladim's Skull
+							["coord"] = { 17.6, 36.8, DUSKWOOD },
+							["cr"] = 522,	-- Mor'Ladim
+						}),
+					},
 				}),
 				q(55, {	-- Morbent Fel
 					["qg"] = 311,	-- Sven Yorgen
@@ -752,6 +858,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Morbent Fel slain
+							["providers"] = {
+								{ "n", 43761 },	-- Morbent Fel
+								{ "n", 43762 },	-- Weakened Morbent Fel
+								{ "i", 60212 },	-- Morbent's Bane
+							},
+						}),
 						i(60939, {	-- Ashen Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -783,6 +896,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 72.6, 47.7, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2154),	-- The Story of Morgan Ladimore
+					},
 				}),
 				q(160, {	-- Note to the Mayor
 					["providers"] = {
@@ -796,7 +912,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26681, {	-- Note to the Mayor
-					["qg"] = 289,	-- Abercrombie
+					["providers"] = {
+						{ "n", 289 },	-- Abercrombie
+						{ "i", 1637 },	-- Letter to Ello
+					},
 					["sourceQuest"] = 26677,	-- Ghoulish Effigy
 					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -886,6 +1005,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Abercrombie's Crate
+							["providers"] = {
+								{ "i", 1349 },	-- Abercrombie's Crate
+								{ "o",  119 },	-- Abercrombie's Crate
+							},
+							["coord"] = { 33.4, 75.3, DUSKWOOD },
+						}),
+					},
 				}),
 				q(26785, {	-- Part of the Pack
 					["qg"] = 43453,	-- Tobias Mistmantle
@@ -934,7 +1062,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26654, {	-- Return the Comb
-					["qg"] = 302,	-- Blind Mary
+					["providers"] = {
+						{ "n", 302 },	-- Blind Mary
+						{ "i", 1518 },	-- Ghost Hair Comb
+					},
 					["sourceQuest"] = 26652,	-- Ghost Hair Thread
 					["coord"] = { 82.0, 59.3, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -969,6 +1100,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Muddy Journal Pages
+							["providers"] = {
+								{ "i",    938 },	-- Muddy Journal Pages
+								{ "n", 204591 },	-- Muddy Journal Page
+							},
+							["coord"] = { 73.7, 79.1, DUSKWOOD },
+						}),
 						i(60915, {	-- Daltry's Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1013,6 +1151,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Wolf Skirt Steak
+							["provider"] = { "i", 60989 },	-- Wolf Skirt Steak
+							["cr"] = 43704,	-- Dire Wolf
+						}),
 						i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
 					},
 				}),
@@ -1032,6 +1174,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 20.0, 57.8, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Forlorn Spirit cleansed
+							["providers"] = {
+								{ "n", 43923 },	-- Forlorn Spirit
+								{ "i", 60225 },	-- Holy Censer
+							},
+						}),
+					},
 				}),
 				q(1395, {	-- Supplies for Nethergarde
 					["providers"] = {
@@ -1093,6 +1243,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/20 Ghoul slain
+							["providers"] = {
+								{ "n",  3 },	-- Flesh Eater
+								{ "n", 210 },	-- Bone Chewer
+								{ "n", 570 },	-- Brain Eater
+								{ "n", 604 },	-- Plague Spreader
+								{ "n", 948 },	-- Rotted One
+							},
+						}),
 						i(60922, {	-- Aegis of Faith
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1137,6 +1296,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Stitches slain
+							["provider"] = { "n", 43862 },	-- Stitches <Gift from the Embalmer>
+						}),
 						i(60905, {	-- Ello's Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1157,16 +1319,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.3, 58.0, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Remains of Morbent Fel
+							["provider"] = { "o", 204816 },	-- Bloodsoaked Hat
+							["coord"] = { 17.0, 33.4, DUSKWOOD },
+						}),
+					},
 				}),
 				q(26671, {	-- The Fate of Stalvan Mistmantle
-					["qg"] = 267,	-- Clerk Daltry
+					["providers"] = {
+						{ "n", 267 },	-- Clerk Daltry
+						{ "i", 59362 },	-- The Legend of Stalvan
+					},
 					["sourceQuest"] = 26670,	-- Roland's Doom
 					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26753, {	-- The Halls of the Dead
-					["provider"] = { "o", 204817 },	-- Lightforged Rod
+					["providers"] = {
+						{ "o", 204817 },	-- Lightforged Rod
+						{ "o", 204824 },	-- Lightforged Arch
+					},
 					["sourceQuest"] = 26725,	-- Guided by the Light
 					["coord"] = { 23.4, 35.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1194,12 +1368,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.0, 59.3, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mary's Looking Glass
+							["provider"] = { "i", 1946 },	-- Mary's Looking Glass
+							["coord"] = { 80.4, 71.2, DUSKWOOD },
+							["cr"] = 511,	-- Insane Ghoul
+						}),
+					},
 				}),
 				q(26721, {	-- The Jitters-Bugs
 					["qg"] = 288,	-- Jitters
 					["coord"] = { 18.6, 58.3, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Widow Venom Sac
+							["provider"] = { "i", 60207 },	-- Widow Venom Sac
+							["crs"] = {
+								45582,	-- Black Widow
+								930,	-- Black Widow Hatchling
+							},
+						}),
+					},
 				}),
 				q(66, {	-- The Legend of Stalvan (1/13)
 					["qg"] = 265,	-- Madame Eva
@@ -1424,6 +1614,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Rotting Horror slain
+							["provider"] = { "n", 202 },	-- Rotting Horror
+						}),
+					},
 				}),
 				q(26689, {	-- The Rotting Orchard
 					["qg"] = 663,	-- Calor
@@ -1431,6 +1626,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Nightbane Shadow Weaver slain
+							["provider"] = { "n", 533 },	-- Nightbane Shadow Weaver
+						}),
+					},
 				}),
 				q(1043, {	-- The Scythe of Elune
 					["qg"] = 661,	-- Jonathan Carevin
@@ -1475,6 +1675,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 A Slashed Bundle of Letters
+							["providers"] = {
+								{ "i",  59357 },	-- A Slashed Bundle of Letters
+								{ "o", 204462 },	-- Pile of Scraps
+							},
+							["coord"] = { 61.2, 40.4, DUSKWOOD },
+						}),
 						i(60911, {	-- Archivist's Lighter
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1560,6 +1767,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Mound of Loose Dirt
+							["providers"] = {
+								{ "o", 204777 },	-- Mound of Loose Dirt
+								{ "n",  43799 },	-- Lurking Worgen
+							},
+							["coord"] = { 49.8, 77.7, DUSKWOOD },
+						}),
+					},
 				}),
 				q(251, {	-- Translate Abercrombie's Note
 					["providers"] = {
@@ -1599,6 +1815,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Nightbane Vile Fang slain
+							["provider"] = { "n", 206 },	-- Nightbane Vile Fang
+						}),
+						objective(2, {	-- 0/8 Nightbane Tainted One slain
+							["provider"] = { "n", 920 },	-- Nightbane Tainted One
+						}),
+					},
 				}),
 				q(1477,	{	-- Vital Supplies
 					["qg"] = 5694,	-- High Sorcerer Andromath
@@ -1613,6 +1837,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.1, 67.0, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Splinter Fist Ogre slain
+							["providers"] = {
+								{ "n", 212 },	-- Splinter Fist Warrior
+								{ "n", 891 },	-- Splinter Fist Fire Weaver
+								{ "n", 1251 },	-- Splinter Fist Firemonger
+								{ "n", 889 },	-- Splinter Fist Ogre
+								{ "n", 892 },	-- Splinter Fist Taskmaster
+							},
+						}),
+					},
 				}),
 				q(401, {	-- Wait for Sirra to Finish
 					["qg"] = 268,	-- Sirra Von'Indi
@@ -1644,6 +1879,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Dire Wolf slain
+							["provider"] = { "n", 43704 },	-- Dire Wolf
+						}),
 						i(60895, {	-- Ebonlocke Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1727,6 +1965,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Nightbane Worgen
+							["provider"] = { "n", 898 },	-- Nightbane Worgen
+						}),
+					},
 				}),
 				q(26691, {	-- Worgen in the Woods (2/2)
 					["providers"] = {
