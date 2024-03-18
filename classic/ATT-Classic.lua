@@ -768,8 +768,13 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
 				if GetAchievementNumCriteria then
 					local achievementID = o.achievementID;
+					local num = GetAchievementNumCriteria(achievementID);
+					if type(num) ~= "number" then
+						--print("Attempting to use 'achievement_criteria' with achievement", achievementID);
+						return;
+					end
 					local cache;
-					for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
+					for criteriaID=1,num,1 do
 						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 						if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
 						local criteriaObject = app.CreateAchievementCriteria(uniqueID);
