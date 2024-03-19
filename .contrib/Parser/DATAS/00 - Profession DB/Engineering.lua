@@ -657,10 +657,10 @@ i(210178, 424641);	-- Shredder Autosalvage Unit
 -- PATCH 1.15.1 --
 ------------------
 --- ITEM ---
-i(215432, 435967);	-- Ez-Thro Radiation Bomb
-i(215431, 435965);	-- High-Yield Radiation Bomb
-i(215156, 435961);	-- Hyperconductive Goldwrap
-i(215429, 435957);	-- Polished Truesilver Gears
-i(215153, 435959);	-- Schematic: Whirling Truesilver Gearwall
+i(215432, 435966);	-- Ez-Thro Radiation Bomb
+i(215431, 435964);	-- High-Yield Radiation Bomb
+i(215156, 435960);	-- Hyperconductive Goldwrap
+i(215429, 435956);	-- Polished Truesilver Gears
+i(215153, 435958);	-- Schematic: Whirling Truesilver Gearwall
 -- #endif
 -- #endif

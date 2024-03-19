@@ -179,8 +179,8 @@ i(211247, 428424);	-- Phoenix Bindings
 -- PATCH 1.15.1 --
 ------------------
 --- ITEM ---
-i(215149, 435611);	-- Gneuro-Linked Arcano-Filament Monocle
-i(215368, 435828);	-- Hyperconductive Arcano-Filament
+i(215149, 435610);	-- Gneuro-Linked Arcano-Filament Monocle
+i(215368, 435827);	-- Hyperconductive Arcano-Filament
 -- #endif
 
 -------------------
