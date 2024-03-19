@@ -350,8 +350,9 @@ settings.Initialize = function(self)
 	-- Somehow some forced Account-Wide Things were set to false in user Profiles, so using app.IsAccountTracked ALWAYS returned false
 	-- so let's erase that data, and assign those Things in the Base General class
 	for thing,_ in pairs(settings.ForceAccountWide) do
-		settings:Set("AccountWide:"..thing, nil)
-		GeneralSettingsBase[thing] = true
+		local accountWideThing = "AccountWide:"..thing;
+		settings:Set(accountWideThing, nil)
+		GeneralSettingsBase.__index[accountWideThing] = true
 		settings.AccountWide[thing] = true
 	end
 

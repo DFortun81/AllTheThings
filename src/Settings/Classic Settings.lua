@@ -300,6 +300,15 @@ settings.Initialize = function(self)
 		settings.RefreshActiveInformationTypes = nil
 	end
 
+	-- Somehow some forced Account-Wide Things were set to false in user Profiles, so using app.IsAccountTracked ALWAYS returned false
+	-- so let's erase that data, and assign those Things in the Base General class
+	for thing,_ in pairs(settings.ForceAccountWide) do
+		local accountWideThing = "AccountWide:"..thing;
+		settings:Set(accountWideThing, nil)
+		GeneralSettingsBase.__index[accountWideThing] = true
+		settings.AccountWide[thing] = true
+	end
+
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));

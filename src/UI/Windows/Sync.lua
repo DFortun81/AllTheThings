@@ -362,6 +362,14 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 				data[toyID] = 1;
 			end
 		end
+		for guid,character in pairs(CharacterData) do
+			local characterData = character.Toys;
+			if characterData then
+				for index,_ in pairs(characterData) do
+					data[index] = 1;
+				end
+			end
+		end
 	end
 end
 local function RecalculateAccountWideData()
