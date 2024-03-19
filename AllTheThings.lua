@@ -11024,6 +11024,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		self.openedOnLogin = false;
 		self.CurrentMaps = {};
 		self.mapID = -1;
+		local IsInInstance = IsInInstance
 		self.IsSameMapID = function(self)
 			return self.CurrentMaps[self.mapID];
 		end
@@ -11405,6 +11406,14 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			if not mapID then
 				AfterCombatCallback(RefreshLocation);
 				return;
+			end
+			-- don't auto-load minimap to anything higher than a 'Zone' if we are in an instance, unless it has no parent?
+			if IsInInstance() then
+				local mapInfo = app.CurrentMapInfo;
+				if mapInfo and mapInfo.parentMapID and (mapInfo.mapType or 0) < 3 then
+					-- app.PrintDebug("Don't load Large Maps in minilist")
+					return;
+				end
 			end
 			OpenMiniList(mapID, show);
 		end

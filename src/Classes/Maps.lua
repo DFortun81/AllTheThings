@@ -120,6 +120,7 @@ if app.GameBuildVersion < 30000 then
 		if CurrentMapID ~= mapID then
 			CurrentMapID = mapID;
 			app.CurrentMapID = mapID;
+			app.CurrentMapInfo = C_Map_GetMapInfo(mapID);
 			app.HandleEvent("OnCurrentMapIDChanged");
 		end
 	end
