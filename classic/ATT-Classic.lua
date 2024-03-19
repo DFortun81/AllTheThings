@@ -4038,7 +4038,7 @@ local collectedAsTransmog = function(t)
 				local searchResults = SearchForField("itemID", id);
 				if #searchResults > 0 then
 					for i,o in ipairs(searchResults) do
-						if ((o.key == "questID" and o.saved) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultCharacterRequirementsFilter(o) then
+						if ((o.key == "questID" and o.saved and o.itemID == id) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultCharacterRequirementsFilter(o) then
 							return app.SetCollected(t, "Transmog", sourceID, true);
 						end
 					end
