@@ -259,7 +259,6 @@ root(ROOTS.Zones, {
 					}),
 					q(29662, {	-- Stronger Than Reeds
 						["provider"] = { "n", 55585 },	-- Jojo Ironbrow
-						["sourceQuests"] = { 29521 },	-- The Singing Pools
 					}),
 					q(29783, {	-- Stronger Than Stone
 						["provider"] = { "n", 55585 },	-- Jojo Ironbrow

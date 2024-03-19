@@ -326,10 +326,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				q(29290, {	-- Fire in the Skies
 					["qg"] = 52491,	-- Morthis Whisperwing
 					["coord"] = { 34.6, 56.4, 338 },
-					["sourceQuests"] = {
-						29293,	-- Singed Wings
-						29296,	-- Territorial Birds
-					},
 					["isDaily"] = true,
 				}),
 				q(29264, {	-- Flamewakers of the Molten Flow

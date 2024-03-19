@@ -144,6 +144,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						q(54424, {	-- A Shady Character
 							["pvp"] = true,
 							["pb"] = true,
+							["g"] = {
+								i(165946),	-- Token of Shadiness (QI!)
+							},
 						}),
 					},
 				})),
@@ -152,3 +155,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.BFA, {
+		q(54423),	-- Completing A Shady Character
+	}),
+});

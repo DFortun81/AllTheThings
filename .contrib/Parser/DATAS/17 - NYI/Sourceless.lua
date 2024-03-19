@@ -490,11 +490,6 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		q(52934),	--
 		q(53650),	--
 		-- 8.1.0
-		q(54424, {
-			["description"] = "Area: |cFFf09f26Boralus Harbor|r",
-			["lvl"] = 50,
-			["races"] = ALLIANCE_ONLY,
-		}),
 		q(53723),	--
 		q(54215),	--
 		q(54216),	--
@@ -505,7 +500,6 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		q(54221),	--
 		q(54222),	--
 		q(54223),	--
-		q(54423),	--
 		q(54445),	--
 		q(54446),	--
 		q(54860),	--
@@ -537,6 +531,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		q(59038),	--
 		q(59040),	--
 		-- 9.0.1
+		q(62684),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
 		q(56067),	--
 		q(56068),	--
 		q(56069),	--
@@ -548,7 +543,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		q(62578),	--
 		-- 9.0.2
 		q(57537),	-- Covering our Tracks
-		q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30
+		q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30 // 52.5, 88.1 Orgrimmar 2023-07-03 Goblin Hunter L9
 		-- 9.1.0
 		q(64192),	--
 		q(64369),	--
@@ -562,5 +557,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				q(71054),	--
 			})),
 		}),
+		-- 10.0.5
+		q(74897),	-- L70 Human Hunter Achieved Duelist and Clock Mog 2023-03-15
 	}),
 }));

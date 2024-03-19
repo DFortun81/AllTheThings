@@ -2287,7 +2287,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		--q(62521),	-- unknown tracking
 		--q(62571),	-- Flying in Maldraxxus
 		--q(62397),	-- Unknown
-		--q(45775),	-- Discord: this week's archaeology quest. when I either turned it in at the blood elf in suramar, or when I took the follow up quest. dont remember which. 7 April 2022
+		--q(45775),	-- Discord: this week's archaeology quest. when I either turned it in at the blood elf in suramar, or when I took the follow up quest. dont remember which. 7 April 2022 // archaeology quest in Suramar 2023 April 4
 		q(54422),	-- After winning a PVP pet battle I received a clickable item that added a mission to the BFA mission table:[A Shady Character] has been added to your Mission Table.
 
 		--	PVP quests

@@ -466,8 +466,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(10398, { ["name"] = "Return to Honor Hold", }),
 			q(9947, { ["name"] = "Return to Rokag", }),
 			q(9943, { ["name"] = "Return to Thander", }),
-			q(10534, { ["name"] = "Returning Home", }), 
-			q(10539, { ["name"] = "Returning Home", }), 
+			q(10534, { ["name"] = "Returning Home", }),
+			q(10539, { ["name"] = "Returning Home", }),
 			q(11588, { ["name"] = "REUSE", }),
 			q(11589, { ["name"] = "REUSE", }),
 			q(10558, { ["name"] = "Revered Among Honor Hold", }),
@@ -5380,7 +5380,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 8.2.0.30634
 			-- 8.2.0.30669
 			-- 8.2.0.30774
-			q(57139),	--
 			q(57184),	--
 			q(57193),	--
 			q(57194),	--
@@ -6795,7 +6794,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62651),	--
 			q(62652),	--
 			q(62681),	--
-			q(62684),	--
 			q(62687),	--
 			q(62690),	--
 			-- 9.0.1.35707
@@ -8341,7 +8339,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(72829),	--
 			q(72830),	--
 			-- 10.0.5.47871
-			q(74897),	--
 			q(74898),	--
 		})),
 

@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25523, {	-- Flight in the Firelands
 					["qg"] = 40578,	-- Farden Talonshrike
-					["coord"] = { 44.1, 45.9, MOUNT_HYJAL },
+					["coord"] = { 37.2, 56.2, MOUNT_HYJAL },
 					["sourceQuest"] = 25810,	-- The Hatchery Must Burn
 					["groups"] = {
 						i(52716),	-- Twilight Firelance

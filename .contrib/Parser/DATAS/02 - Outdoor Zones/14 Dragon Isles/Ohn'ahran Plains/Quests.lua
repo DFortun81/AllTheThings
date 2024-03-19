@@ -677,9 +677,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.06, {	-- The Eternal Kurgans
 				q(66651, {	-- Up to No-khud
-					["sourceQuests"] = { 66201 },	-- Hooves of War
+					["sourceQuests"] = {
+						66201,	-- Hooves of War
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 188224 },	-- Elder Yuvari
 					["coord"] = { 40.9, 61.6, OHNAHRAN_PLAINS },
+					["sourceQuestNumRequired"] = 1,
 					["isBreadcrumb"] = true,
 				}),
 				q(66652, {	-- Return to Mender
@@ -1303,7 +1307,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(70985, {	-- The Lonely Scout
-				["sourceQuests"] = { 70220 },	-- Shady Sanctuary
 				["provider"] = { "n", 195489 },	-- Scout Santuun
 				["coord"] = { 34.2, 54.0, OHNAHRAN_PLAINS },
 			}),

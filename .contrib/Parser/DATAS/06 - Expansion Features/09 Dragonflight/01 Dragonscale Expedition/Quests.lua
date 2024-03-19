@@ -178,7 +178,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["g"] = {
 						i(198387),	-- Excavator's Mallet
 						i(198717),	-- Excavator's Punch
-						i(198718),	-- Excavator's Chisel
 						i(199746),	-- Excavator's Trowel
 					},
 				}),

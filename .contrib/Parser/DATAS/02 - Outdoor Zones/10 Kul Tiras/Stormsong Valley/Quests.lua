@@ -320,6 +320,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 130694 },	-- Mayor Roz
 				["coord"] = { 57.5, 66.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(52793, {	-- Circle the Wagons
 				["provider"] = { "n", 141769 },	-- Marilyn Hood

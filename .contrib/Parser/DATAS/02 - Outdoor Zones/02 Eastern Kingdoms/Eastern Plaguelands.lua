@@ -2698,6 +2698,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27459, {	-- The Brotherhood of Light
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered
+					["sourceQuests"] = { 27463 },	-- A Boyhood Dream
 					["coord"] = { 41.0, 87.9, LIGHTS_HOPE_CHAPEL },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),

@@ -388,7 +388,6 @@ root(ROOTS.WorldDrops, {
 					12011,  -- Forest Loop
 					11225,  -- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					11204,  -- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
-					2164,   -- Gut Ripper
 					11973,  -- Hematite Link
 					11987,  -- Iridium Circle
 					11999,  -- Lodestone  Hoop

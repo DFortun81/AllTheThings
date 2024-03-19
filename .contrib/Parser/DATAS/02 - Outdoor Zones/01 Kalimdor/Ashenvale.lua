@@ -1289,6 +1289,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13879,	-- Thunder Peak (H)
 					},
 					["coord"] = { 52.3, 56.5, ASHENVALE },
+					["sourceQuestNumRequired"] = 1,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(13982, {	-- In a Bind
@@ -1779,6 +1780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13879,	-- Thunder Peak
 					},
 					["coord"] = { 52.0, 56.7, ASHENVALE },
+					["sourceQuestNumRequired"] = 1,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(991, {	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
