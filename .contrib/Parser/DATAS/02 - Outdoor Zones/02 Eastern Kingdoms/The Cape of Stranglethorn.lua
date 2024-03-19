@@ -314,22 +314,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29151, {	-- Bad Supplies (A)
-					["qg"] = 52234,	-- Bwemba
-					["sourceQuest"] = 29150,	-- Voodoo Zombies
-					["coord"] = { 55.1, 42.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 85,
-				})),
-				applyclassicphase(CATA_PHASE_TWO, q(29238, {	-- Bad Supplies (H)
-					["qg"] = 52234,	-- Bwemba
-					["sourceQuest"] = 29237,	-- Voodoo Zombies
-					["coord"] = { 34.7, 29.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 85,
-				})),
 				q(26703, {	-- Bloodsail's End
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuests"] = {
@@ -363,18 +347,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 41.2, 61.3, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29153, {	-- Booty Bay's Interests (A)
-					["qg"] = 2496,	-- Baron Revilgaz
-					["coord"] = { 41.1, 73.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = ALLIANCE_ONLY,
-				})),
-				applyclassicphase(CATA_PHASE_TWO, q(29251, {	-- Booty Bay's Interests (H)
-					["qg"] = 2496,	-- Baron Revilgaz
-					["coord"] = { 41.1, 73.0, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = HORDE_ONLY,
-				})),
 				q(26665, {	-- Call of Booty
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 					["sourceQuests"] = {
@@ -865,21 +837,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29152, {	-- Making Contact (A)
-					["qg"] = 52646,	-- Colin Swifthammer
-					["sourceQuest"] = 29151,	-- Bad Supplies
-					["coord"] = { 55.3, 41.9, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 85,
-				})),
-				applyclassicphase(CATA_PHASE_TWO, q(29250, {	-- Making Contact (H)
-					["qg"] = 53078,	-- Zombie Survivor
-					["sourceQuest"] = 29238,	-- Bad Supplies
-					["coord"] = { 33.5, 30.3, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = HORDE_ONLY,
-				})),
 				q(26664, {	-- Making Mutiny
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 					["sourceQuest"] = 26650,	-- The Damsel's Luck
@@ -1808,22 +1765,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29150, {	-- Voodoo Zombies (A)
-					["qg"] = 52234,	-- Bwemba
-					["sourceQuest"] = 29133,	-- To the Digsite
-					["coord"] = { 55.1, 42.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 85,
-				})),
-				applyclassicphase(CATA_PHASE_TWO, q(29237, {	-- Voodoo Zombies (H)
-					["qg"] = 52234,	-- Bwemba
-					["sourceQuest"] = 29236,	-- To Hardwrench Hideaway
-					["coord"] = { 34.7, 29.4, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.1.0.13682" },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 85,
-				})),
 				q(26631, {	-- Your First Day as a Pirate
 					["qg"] = 43504,	-- Yancey Grillsen
 					["sourceQuests"] = {

@@ -693,7 +693,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		q(29672),	-- The Opening of the Dark Portal
 		q(29683),	-- The Scryer's Scryer
 		q(26243),	-- The World Pillar
-		q(29158),	-- The Zandalar Representative
 		q(24568),	-- To the Walls!
 		q(28468),	-- Toxic Horrors
 		q(28481),	-- Troubled Spirits of Kel'Theril

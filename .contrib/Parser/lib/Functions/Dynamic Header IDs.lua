@@ -320,6 +320,7 @@ HeaderAssignments = {
 	["The Scourge Invasion"] = -1000237,
 	["The Sealing of the Halls of Valor"] = -1000322,
 	["The Silithyst Must Flow"] = -1000238,
+	["The Troll Incursion"] = -1000870,
 	["The Upper Necropolis"] = -1000053,
 	["The Wanderer and the Serpent"] = -1000318,
 	["The War Within"] = -1000250,
@@ -399,4 +400,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000870;
+NextHeaderID = -1000871;

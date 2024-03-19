@@ -743,6 +743,7 @@ localize(L.HEADER_NAMES, {
 	[-1000861] = select(2, GetAchievementInfo(6124))..": Season 10",
 	[-1000862] = "Cataclysmic Gladiator: Season 11",
 	[-1000863] = PVP_RATED_BATTLEGROUND,
+	[-1000870] = "The Troll Incursion",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -786,6 +787,7 @@ localize(L.HEADER_LORE, {
 	[-1000165] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 	[-1000166] = "These can be farmed infinitely by resetting the boss.",
 	[-1000197] = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
+	[-1000870] = "Empowered by the Zandalari's offer the Gurubashi launched on all-out attack to claim Stranglethorn Vale for themselves. In Northern Stranglethorn Bambala, Fort Livingston, Nesingwary's Expedition, Grom'gol Base Camp, and the Rebel Camp came under attack by serpents sent by High Priest Venoxis. High Priestess Kilnara sent panthers to attack the Rebel Camp and Grom'gol while the panther Mauti attacked the hunters at Nesingwary's Expedition. Both Grom'gol and the Rebel Camp later came under attack by Gurubashi trolls led by Bloodlord Mandokir. After heroes of the Horde and Alliance beat back the Gurubashi attack, they were sent to the Cape of Stranglethorn which faced its own troubles.",
 });
 localize(L.HEADER_ICONS, {
 	[-1000004] = _.asset("Category_Achievements"),
@@ -950,6 +952,7 @@ localize(L.HEADER_ICONS, {
 	[-1000861] = "Interface/Icons/ability_mount_drake_twilight",
 	[-1000862] = "236235",
 	[-1000863] = "Interface/Icons/INV_BannerPVP_03",
+	[-1000870] = "135727",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -4521,6 +4524,7 @@ localize(L.HEADER_NAMES, {
 	[-1000373] = "Neuer Charakter",
 	[-1000380] = "Kopfgeld",
 	[-1000862] = "Kataklysmischer Gladiator: Season 11",
+	[-1000870] = "Trollinvasion",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -5602,6 +5606,7 @@ localize(L.HEADER_NAMES, {
 	[-1000373] = "Nueva personaje",
 	[-1000380] = "Prima",
 	[-1000862] = "Gladiador cataclísmico: Season 11",
+	[-1000870] = "La incursión trol",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -6707,6 +6712,7 @@ localize(L.HEADER_NAMES, {
 	[-1000860] = select(2, GetAchievementInfo(6002))..": Saison 9",
 	[-1000861] = select(2, GetAchievementInfo(6124))..": Saison 10",
 	[-1000862] = "Gladiateur cataclysmique: Saison 11",
+	[-1000870] = "L’incursion trolle",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -7792,6 +7798,7 @@ localize(L.HEADER_NAMES, {
 	[-1000373] = "Nuovo personaggio",
 	[-1000380] = "Premio",
 	[-1000862] = "Gladiatore Cataclismico: Season 11",
+	[-1000870] = "L'incursione dei Troll",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -8864,6 +8871,7 @@ localize(L.HEADER_NAMES, {
 	[-1000373] = "새로운 캐릭터",
 	[-1000380] = "하사품",
 	[-1000862] = "격변한 검투사: Season 11",
+	[-1000870] = "트롤의 난입",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -9908,6 +9916,7 @@ localize(L.HEADER_NAMES, {
 	[-1000373] = "Novo personagem",
 	[-1000380] = "Recompensa",
 	[-1000862] = "Gladiador Cataclísmico: Season 11",
+	[-1000870] = "A incursão troll",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -11002,6 +11011,7 @@ localize(L.HEADER_NAMES, {
 	[-1000860] = select(2, GetAchievementInfo(6002))..": Сезон 9",
 	[-1000861] = select(2, GetAchievementInfo(6124))..": Сезон 10",
 	[-1000862] = "Гладиатор Катаклизма: Сезон 11",
+	[-1000870] = "Вторжение троллей",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -12136,6 +12146,7 @@ localize(L.HEADER_NAMES, {
 	[-1000860] = select(2, GetAchievementInfo(6002)).."：第9赛季",
 	[-1000861] = select(2, GetAchievementInfo(6124)).."：第10赛季",
 	[-1000862] = "灾变角斗士：第11赛季",
+	[-1000870] = "巨魔来袭",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
