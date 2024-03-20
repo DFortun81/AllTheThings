@@ -1746,6 +1746,7 @@ i(212229, 431360);	-- Twilight Sky Prowler
 ------------------
 -- PATCH 10.2.6 --
 ------------------
+i(213438, 434462);	-- Infinite Armoredon
 i(217612, 440444);	-- Zovaal's Soul Eater
 --- NYI ---
 i(211486, 0);		-- Winding Slitherdrake

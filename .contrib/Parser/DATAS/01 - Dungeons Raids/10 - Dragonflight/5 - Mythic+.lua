@@ -167,6 +167,45 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(424167),	-- Path of Heart's Bane
 			}),
 		})),
+		header(HEADERS.Achievement, SEASON_DRACONIC, bubbleDownSelf({
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" },
+		},{
+			ach(19780),		-- Dragonflight Keystone Explorer: Season Four
+			ach(19781, {	-- Dragonflight Keystone Conqueror: Season Four
+				title(537),	-- <Name> the Draconic
+			}),
+			ach(19782, {	-- Dragonflight Keystone Master: Season Four
+				i(213438),	-- Infinite Armoredon (MOUNT!)
+			}),
+			ach(19783),		-- Dragonflight Keystone Hero: Season Four
+			ach(19785, {	-- Draconic Hero: Dragonflight Season 4
+				title(538),	-- <Name> the Draconic Hero
+			}),
+			ach(16643, {	-- Keystone Hero: Algeth'ar Academy
+				spell(393273),	-- Path of the Draconic Diploma
+			}),
+			ach(16642, {	-- Keystone Hero: Brackenhide Hollow
+				spell(393267),	-- Path of the Rotting Woods
+			}),
+			ach(16644, {	-- Keystone Hero: Neltharus
+				spell(393276),	-- Path of the Obsidian Hoard
+			}),
+			ach(16646, {	-- Keystone Hero: Halls of Infusion
+				spell(393283),	-- Path of the Titanic Reservoir
+			}),
+			ach(16640, {	-- Keystone Hero: Ruby Life Pools
+				spell(393256),	-- Path of the Clutch Defender
+			}),
+			ach(16645, {	-- Keystone Hero: The Azure Vault
+				spell(393279),	-- Path of Arcane Secrets
+			}),
+			ach(16641, {	-- Keystone Hero: The Nokhud Offensive
+				spell(393262),	-- Path of the Windswept Plains
+			}),
+			ach(16639, {	-- Keystone Hero: Uldaman: Legacy of Tyr
+				spell(393222),	-- Path of the Watcher's Legacy
+			}),
+		})),
 		m(2266),	-- Millenia's Threshold
 	}),
 })));
