@@ -159,7 +159,7 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between January 23, 10:00 a.m. & January 30, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.2.5", "removed 10.2.5.53040" },
 			}),
-			pet(4437, {	-- Fathom (PET)
+			pet(4437, {	-- Fathom (PET!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between March 22, 10:00 a.m. & April 5, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.2.6" },
 			}),

@@ -43,13 +43,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(19443, {	-- Battle Mender: Dragonflight Season 3
-					title(529),	-- Battle Mender <Name>
-				}),
+				ach(19443),		-- Battle Mender: Dragonflight Season 3
 				ach(19304, {	-- Legend: Dragonflight Season 3
 					i(210497),	-- Verdant Legend's Pennant (TOY!)
 				}),
-				ach(19131, {	-- (Verdant) Legend: Dragonflight Season 3
+				ach(19131, {	-- Verdant Legend: Dragonflight Season 3
 					title(525),	-- Verdant Legend %s
 				}),
 				-- Fashion

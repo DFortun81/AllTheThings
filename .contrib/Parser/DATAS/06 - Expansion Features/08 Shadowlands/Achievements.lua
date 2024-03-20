@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			},
 		})),
 		ach(20501, bubbleDownSelf({	-- Back from the Beyond
-			["timeline"] = { "added 10.2.6" },
+			["timeline"] = { ADDED_10_2_6 },
 		},{
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -56,7 +56,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				15648,	-- Walking in Maw-mphis
 			}},
 			["groups"] = {
-				i(217612),	-- Zovaal's Shadebeast Collar (MOUNT)
+				i(217612),	-- Zovaal's Shadebeast Collar (MOUNT!)
 			},
 		})),
 		achraw(14763, {	-- Crypt Couture

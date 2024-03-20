@@ -44,8 +44,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				-- Solo
 				ach(19513),		-- Battle Mender: Dragonflight Season 4
-				ach(19500, {	-- (Draconic) Legend: Dragonflight Season 4
-					i(211869),	-- Draconic Legend's Pennant
+				ach(19500, {	-- Legend: Dragonflight Season 4
+					i(211869),	-- Draconic Legend's Pennant (TOY!)
 				}),
 				ach(19453, {	-- Draconic Legend: Dragonflight Season 4
 					title(535),	-- Draconic Legend %s
