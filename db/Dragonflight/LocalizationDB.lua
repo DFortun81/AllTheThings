@@ -170,6 +170,7 @@ _.HeaderConstants = {
 	MARCH_OF_THE_TADPOLES_HEADER = -1000222,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -1000223,
 	NOBLEGARDEN_HEADER = -1000224,
+	NORTHREND_CUP_HEADER = -1000212,
 	OUTLAND_CUP_HEADER = -1000213,
 	PET_BATTLE = -1000029,
 	PILGRIMS_BOUNTY_HEADER = -1000225,
@@ -398,6 +399,7 @@ localize(L.HEADER_NAMES, {
 	[-1000208] = "Dragonriding Cup",
 	[-1000210] = "Eastern Kingdoms Cup",
 	[-1000211] = "Kalimdor Cup",
+	[-1000212] = "Northrend Cup",
 	[-1000213] = "Outland Cup",
 	[-1000215] = GetSpellInfo(21953),
 	[-1000216] = "Free T-Shirt Day",
@@ -566,8 +568,9 @@ localize(L.HEADER_NAMES, {
 	[-1000866] = "Legendary: The Black Prince",
 	[-1000869] = "The Iron Invasion",
 	[-1000870] = "The Troll Incursion",
-	[-1000871] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1000872] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1000872] = "Plunderstorm",
+	[-1000873] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1000874] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -853,6 +856,7 @@ localize(L.HEADER_ICONS, {
 	[-1000208] = _.asset("Holiday_RaceCup"),
 	[-1000210] = _.asset("Holiday_EastCup"),
 	[-1000211] = _.asset("Holiday_KalCup"),
+	[-1000212] = _.asset("Holiday_NorthCup"),
 	[-1000213] = _.asset("Holiday_OutCup"),
 	[-1000215] = _.asset("Holiday_winter_veil"),
 	[-1000216] = _.asset("Holiday_Tshirt"),
@@ -1028,6 +1032,7 @@ localize(L.HEADER_EVENTS, {
 	[-1000208] = 133701,
 	[-1000210] = 1400,
 	[-1000211] = 1395,
+	[-1000212] = 1429,
 	[-1000213] = 1407,
 	[-1000215] = 141,
 	[-1000216] = 1053,
@@ -1100,7 +1105,6 @@ _.Modules.Events.SetEventInformation(590, {
 
 -- Filter Database Module
 _.FilterConstants = {
-	AMMO = 37,
 	ARTIFACTS = 11,
 	BAGS = 113,
 	BATTLE_PETS = 101,
@@ -1117,7 +1121,6 @@ _.FilterConstants = {
 	GLYPHS = 111,
 	GUNS = 31,
 	HELD_IN_OFF_HAND = 1,
-	HOLIDAY = 106,
 	ILLUSIONS = 103,
 	LEATHER = 5,
 	MAIL = 6,
@@ -1178,7 +1181,6 @@ L.FILTER_ID_TYPES = {
 	[34] = GetItemSubClassInfo(2,13),
 	[35] = GetItemSubClassInfo(2,9),
 	[36] = INVTYPE_THROWN,
-	[37] = INVTYPE_AMMO,
 	[50] = AUCTION_CATEGORY_MISCELLANEOUS,
 	[51] = INVTYPE_NECK,
 	[52] = INVTYPE_FINGER,
@@ -1194,7 +1196,6 @@ L.FILTER_ID_TYPES = {
 	[102] = TOY,
 	[103] = "Illusions",
 	[104] = AUCTION_CATEGORY_QUEST_ITEMS,
-	[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,
 	[110] = PAPERDOLL_SIDEBAR_TITLES,
 	[111] = GetItemClassInfo(16),
 	[113] = INVTYPE_BAG,
@@ -1229,7 +1230,6 @@ L.FILTER_ID_ICONS = {
 	[34] = "Interface/Icons/inv_misc_monsterclaw_02",
 	[35] = "Interface/Icons/inv_weapon_glave_01",
 	[36] = "Interface/Icons/inv_throwingknife_02",
-	[37] = "Interface/Icons/inv_ammo_bullet_01",
 	[50] = "Interface/Icons/Spell_Misc_Drink",
 	[51] = "Interface/Icons/INV_Jewelry_Necklace_02",
 	[52] = "Interface/Icons/INV_Jewelry_Ring_04",
@@ -1245,7 +1245,6 @@ L.FILTER_ID_ICONS = {
 	[102] = _.asset("Category_ToyBox"),
 	[103] = "Interface/Icons/inv_inscription_weaponscroll03",
 	[104] = _.asset("Interface_Quest_header"),
-	[106] = "Interface/Icons/INV_Holiday_Christmas_Present_01",
 	[110] = _.asset("Category_Titles"),
 	[111] = "Interface/Icons/Inv_glyph_minorwarrior",
 	[113] = "Interface/Icons/INV_Misc_Bag_08",
@@ -10777,8 +10776,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "Schlachtfeld: Brachland",
 	[-1000869] = "Die Eiserne Invasion",
 	[-1000870] = "Trollinvasion",
-	[-1000871] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1000872] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1000873] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1000874] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -14286,8 +14285,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "Campo de batalla: Los Baldíos",
 	[-1000869] = "La invasión de Hierro",
 	[-1000870] = "La incursión trol",
-	[-1000871] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1000872] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1000873] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1000874] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -17754,8 +17753,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "Champ de bataille : les Tarides",
 	[-1000869] = "L’invasion de Fer",
 	[-1000870] = "L’incursion trolle",
-	[-1000871] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1000872] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1000873] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1000874] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -21237,8 +21236,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "Campo di battaglia: le Savane",
 	[-1000869] = "L'invasione di ferro",
 	[-1000870] = "L'incursione dei Troll",
-	[-1000871] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1000872] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1000873] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1000874] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -24493,8 +24492,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "전쟁터: 불모의 땅",
 	[-1000869] = "강철의 침략",
 	[-1000870] = "트롤의 난입",
-	[-1000871] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1000872] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1000873] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1000874] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -27679,8 +27678,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "Campo de Batalha: Sertões",
 	[-1000869] = "A invasão de ferro",
 	[-1000870] = "A incursão troll",
-	[-1000871] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1000872] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1000873] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1000874] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -31086,6 +31085,7 @@ localize(L.HEADER_NAMES, {
 	[-1000208] = "Кубок полётов на драконе",
 	[-1000210] = "Кубок Восточных королевств",
 	[-1000211] = "Кубок Калимдора",
+	[-1000212] = "Кубок Нордскола",
 	[-1000213] = "Кубок Запределья",
 	[-1000216] = "День бесплатных футболок",
 	[-1000218] = "Неделя урожая",
@@ -31179,8 +31179,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "Поле битвы: Степи",
 	[-1000869] = "Железное вторжение",
 	[-1000870] = "Вторжение троллей",
-	[-1000871] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1000872] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1000873] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1000874] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -34801,8 +34801,8 @@ localize(L.HEADER_NAMES, {
 	[-1000865] = "战场：贫瘠之地",
 	[-1000869] = "钢铁入侵",
 	[-1000870] = "巨魔来袭",
-	[-1000871] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1000872] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1000873] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1000874] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",

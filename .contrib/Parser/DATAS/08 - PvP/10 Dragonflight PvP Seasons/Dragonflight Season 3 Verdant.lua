@@ -49,9 +49,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19304, {	-- Legend: Dragonflight Season 3
 					i(210497),	-- Verdant Legend's Pennant (TOY!)
 				}),
-				ach(19131, {	-- Verdant Legend: Dragonflight Season 3
-					title(525),	-- Verdant Legend <Name>
-				}),
+				ach(19131),	-- Verdant Legend: Dragonflight Season 3
 				-- Fashion
 				ach(19276),	-- Verdant Vogue
 			})),
@@ -83,6 +81,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 				-- Solo
+				title(529),	-- Battle Mender <Name>
 				title(491),	-- Legend <Name>
 			})),
 			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {

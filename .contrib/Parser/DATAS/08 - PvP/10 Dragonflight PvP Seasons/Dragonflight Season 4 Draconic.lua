@@ -44,8 +44,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				-- Solo
 				ach(19513),		-- Battle Mender: Dragonflight Season 4
-					title(529),	-- Battle Mender <Name>
-				}),
 				ach(19500, {	-- (Draconic) Legend: Dragonflight Season 4
 				--	i(210497),	-- Verdant Legend's Pennant (TOY!)
 				}),
@@ -55,6 +53,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				-- Fashion
 				ach(19276),	-- Verdant Vogue
 			})),
+			--[[
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
@@ -83,6 +82,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 				-- Solo
+				title(529),	-- Battle Mender <Name>
 				title(491),	-- Legend <Name>
 			})),
 			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR } }, {
@@ -1705,6 +1705,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity (RECIPE!)
 				i(208310),	-- Technique: Verdant Combatant's Medallion (RECIPE!)
 			}),
+			--]]
 		},
 	}),
 }))));
