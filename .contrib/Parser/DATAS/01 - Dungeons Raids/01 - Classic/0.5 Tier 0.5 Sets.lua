@@ -426,6 +426,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 			}),
 			cl(PALADIN, {
+				-- #if AFTER TBC
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(8908, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
@@ -552,6 +553,97 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						i(22089),	-- Soulforge Breastplate
 					},
 				},
+				-- #else
+				q(8908, {	-- An Earnest Proposition [A]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16722, 1 },	-- Lightforge Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
+						i(22088),	-- Soulforge Bracers
+					},
+				}),
+				q(8954, {	-- Anthion's Parting Words [A]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16725, 1 },	-- Lightforge Boots
+						{ "i", 16728, 1 },	-- Lightforge Legplates
+						{ "i", 16729, 1 },	-- Lightforge Spaulders
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22087),	-- Soulforge Boots
+						i(22092),	-- Soulforge Legplates
+						i(22093),	-- Soulforge Spaulders
+					},
+				}),
+				q(8933, {	-- Just Compensation [A]
+					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16723, 1 },	-- Lightforge Belt
+						{ "i", 16724, 1 },	-- Lightforge Gauntlets
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22086),	-- Soulforge Belt
+						i(22090),	-- Soulforge Gauntlets
+					},
+				}),
+				q(9002, {	-- Saving the Best for Last [A]
+					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16727, 1 },	-- Lightforge Helm
+						{ "i", 16726, 1 },	-- Lightforge Breastplate
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22091),	-- Soulforge Helm
+						i(22089),	-- Soulforge Breastplate
+					},
+				}),
+				-- #endif
 			}),
 			cl(PRIEST, {
 				{	-- An Earnest Proposition
@@ -819,6 +911,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 			}),
 			cl(SHAMAN, {
+				-- #if AFTER TBC
 				{	-- An Earnest Proposition
 					["allianceQuestData"] = q(10492, {	-- An Earnest Proposition [A]
 						["qg"] = 16013,	-- Deliana
@@ -953,6 +1046,112 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						i(22102),	-- Vest of The Five Thunders
 					},
 				},
+				-- #else
+				q(8918, {	-- An Earnest Proposition [H]
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16671, 1 },	-- Bindings of Elements
+						{ "g", 200000 },	-- 20g
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							["crs"] = {
+								11739,	-- Rock Stalker
+								11738,	-- Sand Skitterer
+								11737,	-- Stonelash Flayer
+								11736,	-- Stonelash Pincer
+								11735,	-- Stonelash Scorpid
+							},
+						}),
+						i(22095),	-- Bindings of The Five Thunders
+					},
+				}),
+				q(8957, {	-- Anthion's Parting Words [H]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16670, 1 },	-- Boots of Elements
+						{ "i", 16668, 1 },	-- Kilt of Elements
+						{ "i", 16669, 1 },	-- Pauldrons of Elements
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22096),	-- Boots of The Five Thunders
+						i(22100),	-- Kilt of The Five Thunders
+						i(22101),	-- Pauldrons of The Five Thunders
+					},
+				}),
+				q(8942, {	-- Just Compensation [H]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = {
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16673, 1 },	-- Cord of Elements
+						{ "i", 16672, 1 },	-- Gauntlets of Elements
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22098),	-- Cord of The Five Thunders
+						i(22099),	-- Gauntlets of The Five Thunders
+					},
+				}),
+				q(9011, {	-- Saving the Best for Last [H]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16667, 1 },	-- Coif of Elements
+						{ "i", 16666, 1 },	-- Vest of Elements
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22097),	-- Coif of The Five Thunders
+						i(22102),	-- Vest of The Five Thunders
+					},
+				}),
+				-- #endif
 			}),
 			cl(WARLOCK, {
 				{	-- An Earnest Proposition
