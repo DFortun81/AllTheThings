@@ -371,6 +371,52 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
 					["timeline"] = { ADDED_10_0_5 },
 				}),
+
+				--
+				i(213518, {	-- Classic Sepia Tabard
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(212626, {	-- Dueler's Sepia Shoulder Cape
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213432, {	-- Duelist's Cedar Doublet
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213435, {	-- Duelist's Crimson Doublet
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213433, {	-- Duelist's Ivy Doublet
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213437, {	-- Duelist's Marble Doublet
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213430, {	-- Duelist's Midnight Doublet
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213431, {	-- Duelist's Navy Doublet
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213434, {	-- Duelist's Royal Doublet
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(213441, {	-- Earth Mother's Sepia Gloves
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
+				i(210850, {	-- Trader's Sepia Sarong
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
+					["timeline"] = { ADDED_10_2_6 },
+				}),
 			},
 		}),
 		n(QUESTS, bubbleDown({

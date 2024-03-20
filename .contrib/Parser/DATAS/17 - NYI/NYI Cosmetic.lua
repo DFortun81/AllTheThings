@@ -267,7 +267,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(210851),	-- Trader's Grassy Sarong
 				i(210848),	-- Trader's Midnight Sarong
 				i(210859),	-- Trader's Plum Sarong
-				i(210850),	-- Trader's Sepia Sarong
 				i(210862),	-- Trader's Snowy Sarong
 				i(210863),	-- Trader's Sunny Sarong
 				i(210860),	-- Trader's Violet Sarong

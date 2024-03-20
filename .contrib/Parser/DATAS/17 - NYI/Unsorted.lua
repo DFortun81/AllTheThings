@@ -142,17 +142,10 @@ root(ROOTS.Unsorted, {
 			i(213397),	-- Parrot Snacks
 			i(213400),	-- Strange Snowman
 			i(213428),	-- Loot-Stuffed Basket
-			i(213430),	-- Duelist's Midnight Doublet
-			i(213431),	-- Duelist's Navy Doublet
-			i(213432),	-- Duelist's Cedar Doublet
-			i(213433),	-- Duelist's Ivy Doublet
-			i(213434),	-- Duelist's Royal Doublet
-			i(213435),	-- Duelist's Crimson Doublet
+
 			i(213436),	-- Fine Crimson Doublet
-			i(213437),	-- Duelist's Marble Doublet
 			i(213438),	-- Infinite Armoredon
-			i(213441),	-- Earth Mother's Sepia Gloves
-			i(213518),	-- Classic Sepia Tabard
+
 			i(213577),	-- Star Bomb
 			i(213585),	-- Icy Drake Racer's Scarf
 			i(213586),	-- Icy Drake Racer's Boots
@@ -1156,7 +1149,6 @@ root(ROOTS.Unsorted, {
 				i(212621),	-- Dueler's Lively Shoulder Cape
 				i(212628),	-- Dueler's Midnight Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
-				i(212626),	-- Dueler's Sepia Shoulder Cape
 				i(212615),	-- Dueler's Snowy Shoulder Cape
 				i(212614),	-- Dueler's Sunny Shoulder Cape
 				i(212616),	-- Dueler's Violet Shoulder Cape
