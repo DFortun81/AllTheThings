@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 64010,
 				["isDaily"] = true,
 				["g"] = {
-					i(186183),	-- Lil'Abom Head
+					i(186183),	-- Lil' Abom Head
 				},
 			})),
 			o(368663, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Lil'Abom's Right Hand
@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 64008,
 				["isDaily"] = true,
 				["g"] = {
-					i(186186),	-- Lil'Abom Right Hand
+					i(186186),	-- Lil' Abom Right Hand
 				},
 			})),
 			o(368665, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Lil'Abom's Spare Arm
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 64009,
 				["isDaily"] = true,
 				["g"] = {
-					i(186187),	-- Lil'Abom Spare Arm
+					i(186187),	-- Lil' Abom Spare Arm
 				},
 			})),
 			o(368667, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Lil'Abom's Torso
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 64011,
 				["isDaily"] = true,
 				["g"] = {
-					i(186184),	-- Lil'Abom Torso
+					i(186184),	-- Lil' Abom Torso
 				},
 			})),
 			o(368668, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Lil'Abom's Trunk
@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 64013,
 				["isDaily"] = true,
 				["g"] = {
-					i(186185),	-- Lil'Abom Legs
+					i(186185),	-- Lil' Abom Legs
 				},
 			})),
 		}),

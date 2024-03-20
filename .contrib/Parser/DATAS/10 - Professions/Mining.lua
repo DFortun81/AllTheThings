@@ -920,8 +920,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					crit(61388, {	-- Iridescent Ore Recovered
 						["provider"] = {"i",201301},	-- Iridescent Ore
 					}),
-					crit(61389, {	-- Elementally-Charged Stone Recovered
-						["provider"] = {"i",202011},	-- Elementally-Charged Stone
+					crit(61389, {	-- Elementally Charged Stone Recovered
+						["provider"] = {"i",202011},	-- Elementally Charged Stone
 					}),
 				},
 			}),

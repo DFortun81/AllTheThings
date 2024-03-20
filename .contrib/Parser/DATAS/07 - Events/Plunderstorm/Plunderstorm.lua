@@ -18,7 +18,7 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		i(216775),	-- Deadly Dagger
 		-- RENOWN 2 --
 		i(216987),	-- Swabbie's Gloves
-		--title(542),	-- Swabbie %s
+		--title(542),	-- Swabbie <Name>
 		-- RENOWN 3 --
 		i(216991),	-- Surefooted Boots
 		-- RENOWN 4 --
@@ -36,18 +36,29 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		i(216994),	-- Warm Woolen Cap
 		-- RENOWN 10 --
 		mount(300154),	-- Silver Tidestallion
-		--title(544),	-- Swashbuckler %s
+		--title(544),	-- Swashbuckler <Name>
 		-- RENOWN 11 --
 		pet(4426),	-- Bubbles
 		-- RENOWN 12 --
+		i(216986),	-- Swindler's Cutouts
 		-- RENOWN 13 --
+		i(216777),	-- Blacksteel Saber
 		-- RENOWN 14 --
+		i(216992),	-- Silent Leathers
 		-- RENOWN 15 --
+		i(216990),	-- Handwoven Trousers
 		-- RENOWN 16 --
+		i(216780),	-- Marvelous Multi-Shot
+		i(170197),	-- Swarthy Warning Sign (TOY!)
 		-- RENOWN 17 --
+		i(213436),	-- Fine Crimson Doublet
 		-- RENOWN 18 --
+		i(216778),	-- Bloody Iron Cleaver
 		-- RENOWN 19 --
+		i(216985),	-- Weatherproven Drape
 		-- RENOWN 20 --
+		mount(254812),	-- Royal Seafeather
+		--title(545),	-- Buccaneer <Name>
 		-- RENOWN 21 --
 		-- RENOWN 22 --
 		-- RENOWN 23 --

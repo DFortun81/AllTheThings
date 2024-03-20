@@ -1112,7 +1112,6 @@ i(157870, 263707);	-- Zandalari Direhorn
 --- NYI ---
 i(0, 237285);		-- Hyena Mount White (PH)
 i(0, 261963);		-- Mounted
-i(0, 254812);		-- PH Giant Parrot (Blue)
 i(0, 256121);		-- PH Goblin Hovercraft (Blue)
 i(0, 256125);		-- PH Goblin Hovercraft (Green)
 i(0, 256124);		-- PH Goblin Hovercraft (Red)
@@ -1521,11 +1520,11 @@ i(0, 387948);		-- [PH] Wind Proto-Drake
 i(0, 351404);		-- PH Mammoth V2 Lava
 i(0, 385767);		-- PH White Slyvern
 i(0, 385771);		-- PH Yellow Slyvern
+i(192766, 349943);	-- Amber Skitterfly
 i(194722, 377849);	-- Carrier Yeti
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
 i(198823, 385253);	-- [PH] Brown Wind Eagle
-i(192766, 349943);	-- [PH] Dragonfly Orange
 i(192765, 374071);	-- [PH] Dragonfly Yellow
 i(192788, 374181);	-- [PH] Mammoth V2 Blue
 i(192787, 351403);	-- [PH] Mammoth V2 Dark
@@ -1545,7 +1544,6 @@ i(192803, 374259);	-- PH Primal Tallstrider Red
 i(192801, 374255);	-- PH Primal Tallstrider White
 i(192793, 374200);	-- PH Thunder Lizard Black
 i(192794, 374201);	-- PH Thunder Lizard Blue
-i(192792, 351408);	-- PH Thunder Lizard Green
 i(194106, 0);		-- Highland Drake
 i(192770, 0);		-- [PH] Moose Bull Black
 
@@ -1742,6 +1740,8 @@ i(212920, 433281);	-- Savage Blue Battle Turtle
 i(212228, 431359);	-- Soaring Sky Fox
 i(212632, 432564);	-- Starry Twilight Peafowl
 i(212229, 431360);	-- Twilight Sky Prowler
+--- NYI ---
+i(211486, 0);		-- Winding Slitherdrake
 
 ------------------
 -- PATCH 10.2.6 --
@@ -1751,5 +1751,8 @@ i(213438, 434462);	-- Infinite Armoredon
 i(213439, 434470);	-- Vicious Dreamtalon (A)
 i(213440, 434477);	-- Vicious Dreamtalon (H)
 i(217612, 440444);	-- Zovaal's Soul Eater
---- NYI ---
-i(211486, 0);		-- Winding Slitherdrake
+
+
+i(192792, 351408);	-- Bestowed Thunderspine Packleader
+
+i(0, 254812);		-- Royal Seafeather

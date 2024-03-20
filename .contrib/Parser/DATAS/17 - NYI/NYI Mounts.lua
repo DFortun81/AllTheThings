@@ -525,9 +525,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(261963, {		-- Mounted (MOUNT!)
 				-- ["displayID"] = ,
 			}),
-			mount(254812, {		-- PH Giant Parrot (Blue) (MOUNT!)
-				-- ["displayID"] = ,
-			}),
 			mount(256121, {		-- PH Goblin Hovercraft (Blue) (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -701,6 +698,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				-- ["displayID"] = ,
 			}),
 			-- With MountID Attached
+			i(192766, {	-- Amber Skitterfly (MOUNT!)
+				-- ["displayID"] = ,
+			}),
 			i(194722, {	-- Carrier Yeti (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -711,9 +711,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["displayID"] = 110505,
 			}),
 			i(198823, {	-- [PH] Brown Wind Eagle (MOUNT!)
-				-- ["displayID"] = ,
-			}),
-			i(192766, {	-- [PH] Dragonfly Orange (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 			i(192765, {	-- [PH] Dragonfly Yellow (MOUNT!)
@@ -771,9 +768,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				-- ["displayID"] = ,
 			}),
 			i(192794, {	-- PH Thunder Lizard Blue (MOUNT!)
-				-- ["displayID"] = ,
-			}),
-			i(192792, {	-- PH Thunder Lizard Green (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 			-- Without MountID Attached

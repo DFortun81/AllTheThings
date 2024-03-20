@@ -2858,7 +2858,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(189143),	-- Draconium Ore+
 			i(188658, {["_drop"] = {"requireSkill"}}),	-- Draconium Ore++
 			i(190311, {["_drop"] = {"requireSkill"}}),	-- Draconium Ore+++
-			i(202011),	-- Elementally-Charged Stone
+			i(202011),	-- Elementally Charged Stone
 			i(194039),	-- Heated Ore Sample
 			i(201301),	-- Iridescent Ore
 			i(201300),	-- Iridescent Ore Fragments

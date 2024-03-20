@@ -834,7 +834,7 @@ i(179291);	-- Silver Flask
 i(182756);	-- Silver Winged Bust
 i(180342);	-- Silvered Fang
 i(173040);	-- Silvergill Pike Bait
-i(180410);	-- Simmiring Draft of Shadows
+i(180410);	-- Simmering Draft of Shadows
 i(179290);	-- Simple Manacles
 i(178126);	-- Sinew-Wrapped Hilt
 i(184146);	-- Singed Soul Shackles

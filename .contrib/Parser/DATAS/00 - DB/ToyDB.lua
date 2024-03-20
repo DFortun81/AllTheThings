@@ -1293,3 +1293,4 @@ i(212518);	-- Vial of Endless Draconic Scales
 -- PATCH 10.2.6 --
 ------------------
 i(211869);	-- Draconic Legend's Pennant
+i(170197);	-- Swarthy Warning Sign

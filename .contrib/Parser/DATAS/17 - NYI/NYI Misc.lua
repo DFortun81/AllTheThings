@@ -380,7 +380,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(170487),	-- [DNT] Torn Journal Page #23
 			i(171372),	-- Alterac Valley Mark of Honor
 			i(169295),	-- Dormant Vision Stone
-			i(170197),	-- Shirakess Warning Sign
 		})),
 
 		-- 8.3.0

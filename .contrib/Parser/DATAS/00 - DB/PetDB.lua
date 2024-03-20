@@ -3620,7 +3620,7 @@ i(186191, 3099);	-- Infused Etherwyrm
 i(186547, 3116);	-- Invasive Buzzer
 i(186558, 3122);	-- Irongrasp
 i(186542, 3136);	-- Korthian Specimen
-i(186188, 3098);	-- Lil'Abom
+i(186188, 3098);	-- Lil' Abom
 i(186550, 3131);	-- Mawsworn Minion
 i(186551, 3132);	-- Mord'al Eveningstar
 i(186541, 3137);	-- Mosscoated Gromit

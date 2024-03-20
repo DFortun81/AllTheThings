@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(177805),	-- Redeemer's Mace
-			i(177812),	-- Redelv House Band
+			i(177812),	-- Redelev House Band
 			i(177808),	-- Reinforced Rapier
 			i(177804),	-- Ritualist Dagger
 			i(177787),	-- Savage Bonemauler Bracers

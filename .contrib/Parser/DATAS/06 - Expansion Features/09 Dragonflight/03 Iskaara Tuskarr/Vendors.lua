@@ -90,7 +90,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					199541,	-- Grey Tufted Shoulderpads
 					199545,	-- Grey Depths Shoulderguards
 					199540,	-- Green Tufted Shoulderpads
-					199549,	-- Depth Delver's Spaulders
+					199549,	-- Depth-Delver's Spaulders
 					199546,	-- Crimson Depths Shoulderguards
 					199539,	-- Blue Tufted Shoulderpads
 					199550,	-- Bloody Shorestalker's Spaulders
@@ -656,7 +656,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								{ "i", RESILIENT_LEATHER, 10 },
 							},
 						}),
-						i(199549, {	-- Depth Delver's Spaulders
+						i(199549, {	-- Depth-Delver's Spaulders
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 250 },
 								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },

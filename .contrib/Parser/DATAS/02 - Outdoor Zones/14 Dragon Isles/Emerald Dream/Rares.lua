@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208335),	-- Vibrant Fall Leggings
 				},
 			}),
-			n(209902, {	-- Talthonel Ashwhisper
+			n(209902, {	-- Talthonei Ashwhisper
 				["description"] = "Killing druids of flames can make her spawn in area where they are persist.",
 				["questID"] = 77994,
 				["coords"] = {
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208369),	-- Druid's Vengeful Gaze
 					i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
-					i(208374),	-- Talthornei's Wrath
+					i(208374),	-- Talthonei's Wrath
 				},
 			}),
 			n(209911, {	-- The Apostle

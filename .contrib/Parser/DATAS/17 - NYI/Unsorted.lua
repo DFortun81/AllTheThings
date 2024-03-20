@@ -5,21 +5,12 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.DF, {
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
-			i(170197),	-- Swarthy Warning Sign
-			i(177812),	-- Redelev House Band
-			i(180410),	-- Simmering Draft of Shadows
-			i(184215),	-- Depraved Houndmaster's Grips
-			i(186183),	-- Lil' Abom Head
-			i(186184),	-- Lil' Abom Torso
-			i(186185),	-- Lil' Abom Legs
-			i(186186),	-- Lil' Abom Right Hand
-			i(186187),	-- Lil' Abom Spare Arm
-			i(186188),	-- Lil' Abom
-			i(192766),	-- Amber Skitterfly
-			i(192792),	-- Bestowed Thunderspine Packleader
-			i(199549),	-- Depth-Delver's Spaulders
-			i(202011),	-- Elementally Charged Stone
-			i(208374),	-- Talthonei's Wrath
+
+
+
+
+
+
 			i(210142),	-- Good Boy's Leash
 			i(210326),	-- Cracked Medal of Conquest
 			i(210594),	-- Noblegarden Trinket
@@ -143,8 +134,8 @@ root(ROOTS.Unsorted, {
 			i(213400),	-- Strange Snowman
 			i(213428),	-- Loot-Stuffed Basket
 
-			i(213436),	-- Fine Crimson Doublet
-			i(213438),	-- Infinite Armoredon
+
+
 
 			i(213577),	-- Star Bomb
 			i(213585),	-- Icy Drake Racer's Scarf
@@ -561,10 +552,10 @@ root(ROOTS.Unsorted, {
 			i(216774),	-- Plunderlord's Hand Cannon
 
 
-			i(216777),	-- Blacksteel Saber
-			i(216778),	-- Bloody Iron Cleaver
 
-			i(216780),	-- Marvelous Multi-Shot
+
+
+
 			i(216874),	-- Loot-Filled Basket
 			i(216878),	-- Rigged Chest
 			i(216881),	-- Duck Disguiser
@@ -577,14 +568,14 @@ root(ROOTS.Unsorted, {
 			i(216907),	-- A Tiny Plumed Tricorne
 			i(216932),	-- Noblegarden Trinket
 
-			i(216985),	-- Weatherproven Drape
-			i(216986),	-- Swindler's Cutouts
 
 
 
-			i(216990),	-- Handwoven Trousers
 
-			i(216992),	-- Silent Leathers
+
+
+
+
 			i(216993),	-- Storm Captain's Hat
 
 			i(217018),	-- Draconic Equipment Chest
@@ -972,7 +963,7 @@ root(ROOTS.Unsorted, {
 			i(217602),	-- Crucible Raider's Shadowed Beacon
 			i(217603),	-- Crucible Raider's Molten Beacon
 			i(217604),	-- Crucible Raider's Corrupted Beacon
-			i(217612),	-- Zovaal's Shadebeast Collar
+
 			i(217615),	-- Dream Raider's Azure Greathammer
 			i(217616),	-- Dream Raider's Blazing Greathammer
 			i(217617),	-- Dream Raider's Emerald Greathammer

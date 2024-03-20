@@ -56,7 +56,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				15648,	-- Walking in Maw-mphis
 			}},
 			["groups"] = {
-				i(217612),	-- Zovaal's Shadebeast Collar (MOUNT!)
+				i(217612),	-- Zovaal's Soul Eater (MOUNT!)
 			},
 		})),
 		achraw(14763, {	-- Crypt Couture

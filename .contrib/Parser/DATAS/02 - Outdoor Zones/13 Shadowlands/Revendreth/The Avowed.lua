@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 									i(184211),	-- High Inquisitor's Banded Cincture
 									i(184212),	-- Intimidator Trainer's Cuffs
 									i(184214),	-- Chained Manacles
-									i(184215),	-- Depraved Houndmasster's Grips
+									i(184215),	-- Depraved Houndmaster's Grips
 									i(184216),	-- Stoneborn Bodyguard's Shoulderplate
 								},
 							}),
