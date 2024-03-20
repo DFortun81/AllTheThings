@@ -4,9 +4,11 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to SL)
-		ach(15654, bubbleDownSelf({	-- Back from the Beyond
+		ach(15654, bubbleDownSelf({	-- Back from the Beyond (Legacy)
 			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+			-- #if BEFORE 10.0.2
 			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+			-- #endif
 		},{
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -29,6 +31,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			}},
 			["groups"] = {
 				title(463),	-- Veilstrider <Name>
+			},
+		})),
+		ach(20501, bubbleDownSelf({	-- Back from the Beyond
+			["timeline"] = { "added 10.2.6" },
+		},{
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				14715,	-- Castle Nathria
+				14961,	-- Chains of Domination
+				15647,	-- Dead Men Tell Some Tales
+				15178,	-- Fake It 'Til You Make It
+				15336,	-- From A to Zereth
+				15079,	-- Many, Many Things
+				15651,	-- Myths of the Shadowlands Dungeons
+				15035,	-- On the Offensive
+				15646,	-- Re-Re-Re-Renowned
+				15025,	-- Sanctum Superior
+				15126,	-- Sanctum of Domination
+				15259,	-- Secrets of the First Ones
+				15417,	-- Sepulcher of the First Ones
+				15649,	-- Shadowlands Dilettante
+				15324,	-- Tower Ranger
+				15648,	-- Walking in Maw-mphis
+			}},
+			["groups"] = {
+				i(217612),	-- Zovaal's Shadebeast Collar (MOUNT)
 			},
 		})),
 		achraw(14763, {	-- Crypt Couture
