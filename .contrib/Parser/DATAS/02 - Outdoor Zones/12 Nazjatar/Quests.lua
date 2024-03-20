@@ -2710,6 +2710,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, { m(NAZJATAR, bubbleDow
 	q(56480),	-- Killed Zomera
 	q(56723),	-- Killed Zomera
 	q(56721),	-- Killed Osgen
+	q(56478),	-- Killed Osgen (first time)
 	q(56727),	-- Killed Ungormath
 
 
