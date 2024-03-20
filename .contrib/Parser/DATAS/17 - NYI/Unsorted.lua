@@ -130,7 +130,6 @@ root(ROOTS.Unsorted, {
 			i(211772),	-- Glorious Medal of Honor
 			i(211773),	-- Medal of Conquest
 			i(211862),	-- Bestowed Ottuk Vanguard
-			i(211869),	-- Draconic Legend's Pennant
 			i(211950),	-- Lively Clutch of Wyrm's Awakened Crests
 			i(211951),	-- Pouch of Whelpling's Awakened Crests
 			i(211952),	-- Satchel of Drake's Awakened Crests
@@ -593,10 +592,7 @@ root(ROOTS.Unsorted, {
 			i(216489),	-- Golden Egg Heirloom
 			i(216527),	-- Toxic Smackerel
 			i(216655),	-- Goblin Glue Rocket
-			i(216667),	-- Draconic Gladiator's Tabard
-			i(216668),	-- Draconic Gladiator's Prestigious Cloak
 			i(216672),	-- The Am-Bush
-			i(216710),	-- Highland Drake: Embodiment of the Draconic Gladiator
 			i(216719),	-- Keg Leg's Cannonade
 			i(216722),	-- Smoke Bomb
 			i(216723),	-- Chicken Coup

@@ -22,18 +22,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19498),		-- Rival II: Dragonflight Season 4
 				ach(19492, {	-- Duelist: Dragonflight Season 4
 					--ill(7032),	-- Verdant Crush (ILLUSION!)
-					--i(209609),	-- Verdant Gladiator's Prestigious Cloak
+					i(216668),	-- Draconic Gladiator's Prestigious Cloak
 				}),
 				ach(19509, {	-- Elite: Dragonflight Season 4
-					--i(209610),	-- Verdant Gladiator's Tabard
+					i(216667),	-- Draconic Gladiator's Tabard
 				}),
 				ach(19490, {	-- Gladiator: Dragonflight Season 4
 				--	i(210345),	-- Verdant Gladiator's Slitherdrake (MOUNT!)
-				--	i(210064),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
+					i(216710),	-- Highland Drake: Embodiment of the Draconic Gladiator (DM!)
 				}),
 				ach(19503),		-- Draconic Gladiator's Drake
 				ach(19454, {	-- Draconic Gladiator: Dragonflight Season 4
-				--	title(526),	-- Verdant Gladiator <Name>
+					title(534),	-- Draconic Gladiator %s
 				}),
 				-- RBG
 				ach(19455, {	-- Hero of the Alliance: Draconic
@@ -45,24 +45,23 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				-- Solo
 				ach(19513),		-- Battle Mender: Dragonflight Season 4
 				ach(19500, {	-- (Draconic) Legend: Dragonflight Season 4
-				--	i(210497),	-- Verdant Legend's Pennant (TOY!)
+					i(211869),	-- Draconic Legend's Pennant
 				}),
 				ach(19453, {	-- Draconic Legend: Dragonflight Season 4
-				--	title(525),	-- Verdant Legend <Name>
+					title(535),	-- Draconic Legend %s
 				}),
 				-- Fashion
 				ach(19276),	-- Verdant Vogue
 			})),
-			--[[
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR } }, {
-				i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
+				i(213440, {	-- Vicious Dreamtalon [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(210069, {	-- Vicious Moonbeast [H] (MOUNT!)
+				i(213439, {	-- Vicious Dreamtalon [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR }, ["collectible"] = false }, {
+			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
 				title(31),	-- Rival <Name>
@@ -85,7 +84,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(529),	-- Battle Mender <Name>
 				title(491),	-- Legend <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR } }, {
+			--[[
+			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
@@ -410,7 +410,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR } }, {
+			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
@@ -1298,7 +1298,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			})),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR }, ["bonusID"] = 7532 }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" }, ["bonusID"] = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak
