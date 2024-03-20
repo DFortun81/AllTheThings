@@ -10,6 +10,10 @@ PLUNDERSTORM = createHeader({
 });
 root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
 	n(PLUNDERSTORM, {
+		n(ACHIEVEMENTS, {
+			ach(20509),	-- Plunderking
+			ach(20508),	-- Plunder Wonder
+		}),
 		-- RENOWN 1 --
 		-- RENOWN 2 --
 		-- RENOWN 3 --
