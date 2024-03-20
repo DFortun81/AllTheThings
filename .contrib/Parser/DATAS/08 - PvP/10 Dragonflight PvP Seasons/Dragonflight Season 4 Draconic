@@ -6,55 +6,54 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		--["icon"] = "Interface\\Icons\\inv_serpentmountgladiator_green",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
-				ach(19140, {	-- Verdant Combatant [A]
+				ach(19501, {	-- Draconic Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
-				ach(19141, {	-- Verdant Combatant [H]
+				ach(19502, {	-- Draconic Combatant [H]
 					["races"] = HORDE_ONLY,
 					["collectible"] = false,
 				}),
-				ach(19157),		-- Combatant I: Dragonflight Season 3
-				ach(19158),		-- Combatant II: Dragonflight Season 3
-				ach(19159),		-- Challenger I: Dragonflight Season 3
-				ach(19160),		-- Challenger II: Dragonflight Season 3
-				ach(19133),		-- Rival I: Dragonflight Season 3
-				ach(19155),		-- Rival II: Dragonflight Season 3
-				ach(19156, {	-- Duelist: Dragonflight Season 3
-					ill(7032),	-- Verdant Crush (ILLUSION!)
-					i(209609),	-- Verdant Gladiator's Prestigious Cloak
+				ach(19494),		-- Combatant I: Dragonflight Season 4
+				ach(19495),		-- Combatant II: Dragonflight Season 4
+				ach(19497),		-- Challenger I: Dragonflight Season 4
+				ach(19499),		-- Challenger II: Dragonflight Season 4
+				ach(19493),		-- Rival I: Dragonflight Season 4
+				ach(19498),		-- Rival II: Dragonflight Season 4
+				ach(19492, {	-- Duelist: Dragonflight Season 4
+					--ill(7032),	-- Verdant Crush (ILLUSION!)
+					--i(209609),	-- Verdant Gladiator's Prestigious Cloak
 				}),
-				ach(19090, {	-- Elite: Dragonflight Season 3
-					i(209610),	-- Verdant Gladiator's Tabard
+				ach(19509, {	-- Elite: Dragonflight Season 4
+					--i(209610),	-- Verdant Gladiator's Tabard
 				}),
-				ach(19091, {	-- Gladiator: Dragonflight Season 3
-					i(210345),	-- Verdant Gladiator's Slitherdrake (MOUNT!)
-					i(210064),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
+				ach(19490, {	-- Gladiator: Dragonflight Season 4
+				--	i(210345),	-- Verdant Gladiator's Slitherdrake (MOUNT!)
+				--	i(210064),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
 				}),
-				ach(19295),		-- Verdant Gladiator's Drake
-				ach(19132, {	-- Verdant Gladiator: Dragonflight Season 3
-					title(526),	-- Verdant Gladiator <Name>
+				ach(19503),		-- Draconic Gladiator's Drake
+				ach(19454, {	-- Draconic Gladiator: Dragonflight Season 4
+				--	title(526),	-- Verdant Gladiator <Name>
 				}),
 				-- RBG
-				ach(19162, {	-- Hero of the Alliance: Verdant
+				ach(19455, {	-- Hero of the Alliance: Draconic
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(19161, {	-- Hero of the Horde: Verdant
+				ach(19456, {	-- Hero of the Horde: Draconic
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(19443, {	-- Battle Mender: Dragonflight Season 3
+				ach(19513),		-- Battle Mender: Dragonflight Season 4
 					title(529),	-- Battle Mender <Name>
 				}),
-				ach(19304, {	-- Legend: Dragonflight Season 3
-					i(210497),	-- Verdant Legend's Pennant (TOY!)
+				ach(19500, {	-- (Draconic) Legend: Dragonflight Season 4
+				--	i(210497),	-- Verdant Legend's Pennant (TOY!)
 				}),
-				ach(19131, {	-- Verdant Legend: Dragonflight Season 3
-					title(525),	-- Verdant Legend <Name>
+				ach(19453, {	-- Draconic Legend: Dragonflight Season 4
+				--	title(525),	-- Verdant Legend <Name>
 				}),
 				-- Fashion
 				ach(19276),	-- Verdant Vogue
-				-- ^ accurate for s4
 			})),
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)

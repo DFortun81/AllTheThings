@@ -1,10 +1,6 @@
 4.4.0.53627
 ach(6321),	-- Ruthless Gladiator's Twilight Drake
 10.2.6.53840
-ach(19453),	-- Draconic Legend: Dragonflight Season 4
-ach(19454),	-- Draconic Gladiator: Dragonflight Season 4
-ach(19455),	-- Hero of the Alliance: Draconic
-ach(19456),	-- Hero of the Horde: Draconic
 ach(19458),	-- A World Awoken
 ach(19463),	-- Dragon Quests
 ach(19466),	-- Oh My God, They Were Clutchmates
@@ -15,21 +11,7 @@ ach(19482),	-- Army of the Fed
 ach(19483),	-- Flight Club
 ach(19485),	-- Closing Time
 ach(19486),	-- Across the Isles
-ach(19490),	-- Gladiator: Dragonflight Season 4
-ach(19492),	-- Duelist: Dragonflight Season 4
-ach(19493),	-- Rival I: Dragonflight Season 4
-ach(19494),	-- Combatant I: Dragonflight Season 4
-ach(19495),	-- Combatant II: Dragonflight Season 4
-ach(19497),	-- Challenger I: Dragonflight Season 4
-ach(19498),	-- Rival II: Dragonflight Season 4
-ach(19499),	-- Challenger II: Dragonflight Season 4
-ach(19500),	-- Legend: Dragonflight Season 4
-ach(19501),	-- Draconic Combatant
-ach(19502),	-- Draconic Combatant
-ach(19503),	-- Draconic Gladiator's Drake
 ach(19507),	-- Fringe Benefits
-ach(19509),	-- Elite: Dragonflight Season 4
-ach(19513),	-- Battle Mender: Dragonflight Season 4
 ach(19538),	-- Whelpling's Awakened Crests earned
 ach(19539),	-- Drake's Awakened Crests earned
 ach(19540),	-- Wyrm's Awakened Crests earned
@@ -50,11 +32,6 @@ ach(19576),	-- Mythic: Awakening the Dragonflight Raids
 ach(19577),	-- The Awakened Drake
 ach(19578),	-- The Awakened Wyrm
 ach(19579),	-- The Awakened Aspects
-ach(19780),	-- Dragonflight Keystone Explorer: Season Four
-ach(19781),	-- Dragonflight Keystone Conqueror: Season Four
-ach(19782),	-- Dragonflight Keystone Master: Season Four
-ach(19783),	-- Dragonflight Keystone Hero: Season Four
-ach(19785),	-- Draconic Hero: Dragonflight Season 4
 ach(20087),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 001 - Complete
 ach(20088),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 002 - Complete
 ach(20089),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 003 - Complete
@@ -68,15 +45,10 @@ ach(20096),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 010 - Complete
 ach(20097),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 011 - Complete
 ach(20201),	-- <Hidden> 10.2.6 Void Zone - Tender - Level 1
 ach(20202),	-- <Hidden> 10.2.6 Void Zone - Tender - Level 2
-ach(20209),	-- Quacked Killer
 ach(20475),	-- <Hidden> 10.2.6 Void Zone - WOTLK Pet
 ach(20476),	-- <Hidden> 10.2.6 Void Zone - WOTLK Mount
 ach(20480),	-- [HIDDEN] Awakening the Dragonflight Raid Portals
-ach(20481),	-- Dragonflight Season 4 Master
-ach(20501),	-- Back from the Beyond
 ach(20507),	-- <Hidden> Achievement Title - Plunderlord - 10.2.6 Void Zone
-ach(20508),	-- Plunder Wonder
-ach(20509),	-- Plunderkind
 ach(20513),	-- <Hidden> 10.2.6 Void Zone - Glamrok <DNT>
 ach(20514),	-- <Hidden> 10.2.6 Void Zone - Pepe <DNT>
 ach(20515),	-- <Hidden> 10.2.6 Void Zone - Toy <DNT>
