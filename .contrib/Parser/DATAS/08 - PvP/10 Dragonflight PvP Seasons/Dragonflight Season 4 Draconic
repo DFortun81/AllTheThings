@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 	header(HEADERS.Achievement, SEASON_DRACONIC, {
-		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator_green",
+		--["icon"] = "Interface\\Icons\\inv_serpentmountgladiator_green",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
 				ach(19140, {	-- Verdant Combatant [A]
