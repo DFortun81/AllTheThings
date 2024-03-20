@@ -187,6 +187,11 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 			["coord"] = { 51.01, 63.31, TALADOR },
 			["timeline"] = { "added 6.2.0.19934" },
 		}),
+		i(216907, {	-- A Tiny Plumed Tricorne
+			["description"] = "Rewarded from Renown 24 from Plunderstorm Event.",
+			["questID"] = 80093,
+			["timeline"] = { ADDED_10_2_6 },
+		}),
 		i(186580, {	-- A Tiny Sinstone
 			["questID"] = 64132,
 			["description"] = "Requires Renown 56.",

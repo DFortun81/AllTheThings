@@ -536,20 +536,20 @@ root(ROOTS.Unsorted, {
 			i(216719),	-- Keg Leg's Cannonade
 			i(216722),	-- Smoke Bomb
 			i(216723),	-- Chicken Coup
-			i(216727),	-- Plunderlord's Tassled Spaulders
-			i(216728),	-- Plunderlord's Drapery
-			i(216729),	-- Plunderlord's Fancy Trousers
-			i(216730),	-- Plunderlord's Pilferers
-			i(216731),	-- Plunderlord's Cuffs
-			i(216732),	-- Plunderlord's Golden Cinch
-			i(216733),	-- Plunderlord's Muckscrapers
-			i(216734),	-- Plunderlord's Tricorne of Admiralty
-			i(216735),	-- Plunderlord's Waistcoat
-			i(216755),	-- Plunderlord's Gilded Sigil
-			i(216756),	-- Plunderlord's Fine Rapier
-			i(216763),	-- Plunderlord's Silver Cutlass
-			i(216765),	-- Plunderlord's Neck-Severer
-			i(216774),	-- Plunderlord's Hand Cannon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -565,7 +565,7 @@ root(ROOTS.Unsorted, {
 			i(216900),	-- Pink Duck Disguise
 			i(216901),	-- White Duck Disguise
 			i(216902),	-- Yellow Duck Disguise
-			i(216907),	-- A Tiny Plumed Tricorne
+
 			i(216932),	-- Noblegarden Trinket
 
 
@@ -576,7 +576,7 @@ root(ROOTS.Unsorted, {
 
 
 
-			i(216993),	-- Storm Captain's Hat
+
 
 			i(217018),	-- Draconic Equipment Chest
 			i(217021),	-- Gladiator's Ragged Chest
@@ -1052,8 +1052,8 @@ root(ROOTS.Unsorted, {
 			i(218269),	-- Draconic Tome of Awakening
 			i(218270),	-- Lightning Bulwark
 			i(219020),	-- Storm Archon
-			i(219348),	-- Plunderlord's Monocle
-			i(219349),	-- Plunderlord's Tabard
+
+
 			i(220203),	-- Clutch of Wyrm's Dreaming Crests
 			i(220204),	-- Pouch of Whelpling's Dreaming Crests
 			i(220205),	-- Satchel of Drake's Dreaming Crests

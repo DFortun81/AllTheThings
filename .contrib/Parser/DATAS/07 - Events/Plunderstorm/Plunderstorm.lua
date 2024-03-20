@@ -60,24 +60,48 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		mount(254812),	-- Royal Seafeather
 		--title(545),	-- Buccaneer <Name>
 		-- RENOWN 21 --
+		i(216993),	-- Storm Captain's Hat
 		-- RENOWN 22 --
+		i(216755),	-- Plunderlord's Gilded Sigil
 		-- RENOWN 23 --
+		i(216731),	-- Plunderlord's Cuffs
 		-- RENOWN 24 --
+		i(216907, {	-- A Tiny Plumed Tricorne
+			["questID"] = 80093,
+		}),
 		-- RENOWN 25 --
+		i(216732),	-- Plunderlord's Golden Cinch
 		-- RENOWN 26 --
+		i(216730),	-- Plunderlord's Pilferers
 		-- RENOWN 27 --
+		i(216765),	-- Plunderlord's Neck-Severer
 		-- RENOWN 28 --
+		i(216733),	-- Plunderlord's Muckscrapers
 		-- RENOWN 29 --
+		i(216729),	-- Plunderlord's Fancy Trousers
 		-- RENOWN 30 --
+		pet(4425),	-- Glamrok
+		title(546),	-- First Mate <Name>
 		-- RENOWN 31 --
+		i(216756),	-- Plunderlord's Fine Rapier
 		-- RENOWN 32 --
+		i(216774),	-- Plunderlord's Hand Cannon
 		-- RENOWN 33 --
 		-- RENOWN 34 --
+		i(216735),	-- Plunderlord's Waistcoat
 		-- RENOWN 35 --
+		i(216728),	-- Plunderlord's Drapery
 		-- RENOWN 36 --
+		i(216763),	-- Plunderlord's Silver Cutlass
 		-- RENOWN 37 --
+		i(216727),	-- Plunderlord's Tassled Spaulders
 		-- RENOWN 38 --
+		i(219348),	-- Plunderlord's Monocle
+		i(216734),	-- Plunderlord's Tricorne of Admiralty
 		-- RENOWN 39 --
+		mount(437162),	-- Polly Roger
 		-- RENOWN 40 --
+		title(541),	-- Plunderlord <Name>
+		i(219349),	-- Plunderlord's Tabard
 	}),
 }));
