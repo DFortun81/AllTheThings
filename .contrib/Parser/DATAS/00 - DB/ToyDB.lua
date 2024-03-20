@@ -1292,5 +1292,7 @@ i(212518);	-- Vial of Endless Draconic Scales
 ------------------
 -- PATCH 10.2.6 --
 ------------------
+i(218128);	-- Draconic Banner of the Aspects
 i(211869);	-- Draconic Legend's Pennant
+i(216881);	-- Duck Disguiser
 i(170197);	-- Swarthy Warning Sign

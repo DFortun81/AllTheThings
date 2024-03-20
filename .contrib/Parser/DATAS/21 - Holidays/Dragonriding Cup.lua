@@ -2562,6 +2562,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19681,	-- Northrend Advanced: Gold
 						19684,	-- Northrend Reverse: Gold
 					}},
+					["g"] = {
+						title(540),	-- Northrend Racer <Name>
+						i(213593),	-- Frosted Riders of Azeroth Tabard
+					},
 				}),
 			}),
 			n(QUESTS, {

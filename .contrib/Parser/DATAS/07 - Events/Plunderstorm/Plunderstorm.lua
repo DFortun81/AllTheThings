@@ -3,11 +3,12 @@
 -----------------------------------------------------
 PLUNDERSTORM = createHeader({
 	readable = "Plunderstorm",
-	--icon = ,
+	icon = 2055032,
 	text = {
 		en = "Plunderstorm",
 	},
 });
+-- #if NOT ANYCLASSIC
 root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
 	n(PLUNDERSTORM, {
 		n(ACHIEVEMENTS, {
@@ -18,7 +19,9 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		i(216775),	-- Deadly Dagger
 		-- RENOWN 2 --
 		i(216987),	-- Swabbie's Gloves
-		--title(542),	-- Swabbie <Name>
+		title(542, {	-- Swabbie <Name>
+			["collectible"] = false,
+		}),
 		-- RENOWN 3 --
 		i(216991),	-- Surefooted Boots
 		-- RENOWN 4 --
@@ -26,7 +29,7 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		-- RENOWN 5 --
 		i(216776),	-- Calcified Claymore
 		-- RENOWN 6 --
-		pet(4435),	-- Happy
+		pet(4435),	-- Happy (PET!)
 		i(216988),	-- Spun Cotton Shirt
 		-- RENOWN 7 --
 		i(216984),	-- Skulker's Cloak
@@ -35,10 +38,12 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		-- RENOWN 9 --
 		i(216994),	-- Warm Woolen Cap
 		-- RENOWN 10 --
-		mount(300154),	-- Silver Tidestallion
-		--title(544),	-- Swashbuckler <Name>
+		mount(300154),	-- Silver Tidestallion (MOUNT!)
+		title(544, {	-- Swashbuckler <Name>
+			["collectible"] = false,
+		}),
 		-- RENOWN 11 --
-		pet(4426),	-- Bubbles
+		pet(4426),	-- Bubbles (PET!)
 		-- RENOWN 12 --
 		i(216986),	-- Swindler's Cutouts
 		-- RENOWN 13 --
@@ -57,8 +62,10 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		-- RENOWN 19 --
 		i(216985),	-- Weatherproven Drape
 		-- RENOWN 20 --
-		mount(254812),	-- Royal Seafeather
-		--title(545),	-- Buccaneer <Name>
+		mount(254812),	-- Royal Seafeather (MOUNT!)
+		title(545, {	-- Buccaneer <Name>
+			["collectible"] = false,
+		}),
 		-- RENOWN 21 --
 		i(216993),	-- Storm Captain's Hat
 		-- RENOWN 22 --
@@ -80,8 +87,10 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		-- RENOWN 29 --
 		i(216729),	-- Plunderlord's Fancy Trousers
 		-- RENOWN 30 --
-		pet(4425),	-- Glamrok
-		title(546),	-- First Mate <Name>
+		pet(4425),	-- Glamrok (PET!)
+		title(546, {	-- First Mate <Name>
+			["collectible"] = false,
+		}),
 		-- RENOWN 31 --
 		i(216756),	-- Plunderlord's Fine Rapier
 		-- RENOWN 32 --
@@ -99,9 +108,17 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		i(219348),	-- Plunderlord's Monocle
 		i(216734),	-- Plunderlord's Tricorne of Admiralty
 		-- RENOWN 39 --
-		mount(437162),	-- Polly Roger
+		mount(437162),	-- Polly Roger (MOUNT!)
 		-- RENOWN 40 --
 		title(541),	-- Plunderlord <Name>
 		i(219349),	-- Plunderlord's Tabard
 	}),
 }));
+-- #else
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { "added 3.4.3.53622", "removed 3.4.3.99999" } }, {
+	n(PLUNDERSTORM, {
+		-- Pinchy (PET!)
+		-- Polly Roger (MOUNT!)
+	}),
+})));
+-- #endif

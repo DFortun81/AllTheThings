@@ -1639,7 +1639,6 @@ i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
 i(0, 397406);		-- Wonderous Wavewhisker
 --- NYI ---
-i(205206, 408648);	-- Shalewing, Fire [PH]
 i(206167, 0);		-- Way of the Wonderous Wavewhisker
 
 ------------------
@@ -1711,7 +1710,6 @@ i(210069, 424535);	-- Vicious Moonbeast
 i(210059, 424476);	-- Winter Night Dreamsaber
 --- NYI ---
 i(210141, 424601);	-- [PH] Brown-Furred Spiky Bakar
-i(210142, 424607);	-- [PH] Red-Furred Bakar
 i(210143, 424608);	-- [PH] White-Furred Bakar
 i(210144, 424610);	-- [PH] Yellow-Furred Spiky Bakar
 i(210145, 424611);	-- [PH] YellowBlack-Furred Bakar
@@ -1746,13 +1744,15 @@ i(211486, 0);		-- Winding Slitherdrake
 ------------------
 -- PATCH 10.2.6 --
 ------------------
+i(192792, 351408);	-- Bestowed Thunderspine Packleader
+i(205206, 408648);	-- Calescent Shalewing
 i(0, 424539);		-- Draconic Gladiator's Drake
 i(213438, 434462);	-- Infinite Armoredon
-i(213439, 434470);	-- Vicious Dreamtalon (A)
-i(213440, 434477);	-- Vicious Dreamtalon (H)
-i(217612, 440444);	-- Zovaal's Soul Eater
-
-
-i(192792, 351408);	-- Bestowed Thunderspine Packleader
-
+i(0, 437162);		-- Polly Roger
 i(0, 254812);		-- Royal Seafeather
+i(0, 300154);		-- Silver Tidestallion
+i(210142, 424607);	-- Taivan
+i(213439, 434470);	-- Vicious Dreamtalon [A]
+i(213440, 434477);	-- Vicious Dreamtalon [H]
+i(217340, 439138);	-- Voyaging Wilderling
+i(217612, 440444);	-- Zovaal's Soul Eater

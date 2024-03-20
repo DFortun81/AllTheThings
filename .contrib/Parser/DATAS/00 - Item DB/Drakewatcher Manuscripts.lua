@@ -437,3 +437,8 @@ i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
 ------------------
 i(211812, 79088);	-- Renewed Proto-Drake: Love Armor
 i(211868, 79112);	-- Winding Slitherdrake: Lunar Festival Armor
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+i(216710, 80014);	-- Highland Drake: Embodiment of the Draconic Gladiator

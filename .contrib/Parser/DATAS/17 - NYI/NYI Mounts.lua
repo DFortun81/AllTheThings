@@ -795,10 +795,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 
 		-- 10.1.0
 		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			-- With MountID Attached
-			i(205206, {	-- Shalewing, Fire (MOUNT!)
-				-- ["displayID"] =
-			}),
 			-- Without MountID Attached
 			i(206167),	-- Way of the Wonderous Wavewhisker (MOUNT!) [Item Never Available]
 		})),
@@ -819,9 +815,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			-- With MountID Attached
 			i(210141, {	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
-				-- ["displayID"] = ,
-			}),
-			i(210142, {	-- [PH] Red-Furred Bakar (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 			i(210143, {	-- [PH] White-Furred Bakar (MOUNT!)

@@ -2,11 +2,4 @@
 title(213),	-- %s the Camel-Hoarder
 title(217),	-- Warbringer %s
 10.2.6.53840
-title(533),	-- The Forbidden %s
-title(540),	-- Northrend Racer %s
-title(541),	-- Plunderlord %s
-title(542),	-- Swabbie %s
 title(543),	-- Deck Hand %s
-title(544),	-- Swashbuckler %s
-title(545),	-- Buccaneer %s
-title(546),	-- First Mate %s

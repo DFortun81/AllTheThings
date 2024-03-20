@@ -124,7 +124,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					17315,	-- While We Were Sleeping
 				}},
 				["g"] = {
-					title(495),	-- <Name> the Forbidden
+					--title(495),	-- <Name> the Forbidden [Unsure if this got deleted/removed?]
+					--title(533, {	-- The Forbidden <Name>
+					--	["timeline"] = { ADDED_10_2_6 },
+					--}),
 				}
 			}),
 		}),

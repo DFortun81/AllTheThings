@@ -2,10 +2,10 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
-	header(HEADERS.Achievement, SEASON_DRACONIC, {
-		--["icon"] = "Interface\\Icons\\inv_serpentmountgladiator_green",
+	header(HEADERS.Achievement, SEASON_DRACONIC_PVP, {
+		["icon"] = "Interface\\Icons\\inv_drake2mountgladiator_purple",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 				ach(19501, {	-- Draconic Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
@@ -21,14 +21,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19493),		-- Rival I: Dragonflight Season 4
 				ach(19498),		-- Rival II: Dragonflight Season 4
 				ach(19492, {	-- Duelist: Dragonflight Season 4
-					--ill(7032),	-- Verdant Crush (ILLUSION!)
+					ill(7100),	-- Bronze Infinite (ILLUSION!)
 					i(216668),	-- Draconic Gladiator's Prestigious Cloak
 				}),
 				ach(19509, {	-- Elite: Dragonflight Season 4
 					i(216667),	-- Draconic Gladiator's Tabard
 				}),
 				ach(19490, {	-- Gladiator: Dragonflight Season 4
-					mount(424539),	-- Draconic Gladiator's Drake
+					mount(424539),	-- Draconic Gladiator's Drake (MOUNT!)
 					i(216710),	-- Highland Drake: Embodiment of the Draconic Gladiator (DM!)
 				}),
 				ach(19503),		-- Draconic Gladiator's Drake
@@ -53,7 +53,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				-- Fashion
 				ach(19276),	-- Verdant Vogue
 			})),
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 				i(213439, {	-- Vicious Dreamtalon [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -61,7 +61,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" }, ["collectible"] = false }, {
+			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
 				title(31),	-- Rival <Name>
@@ -85,7 +85,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(491),	-- Legend <Name>
 			})),
 			--[[
-			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
+			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
@@ -410,7 +410,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
+			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
@@ -1298,7 +1298,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			})),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" }, ["bonusID"] = 7532 }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }, ["bonusID"] = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak

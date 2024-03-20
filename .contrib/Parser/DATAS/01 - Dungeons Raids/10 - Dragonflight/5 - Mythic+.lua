@@ -167,8 +167,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(424167),	-- Path of Heart's Bane
 			}),
 		})),
-		header(HEADERS.Achievement, SEASON_DRACONIC, bubbleDownSelf({
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" },
+		header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 		},{
 			ach(19780),		-- Dragonflight Keystone Explorer: Season Four
 			ach(19781, {	-- Dragonflight Keystone Conqueror: Season Four
