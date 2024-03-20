@@ -1247,3 +1247,11 @@ i(210172, 414988);	-- Enchanted Wyrm's Dreaming Crest
 i(210174, 414946);	-- Illusory Adornment: Dreams
 --- LEGENDARY ---
 i(0, 422338);		-- Shalasar's Sophic Vellum
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+--- ITEM ---
+i(0, 429947);		-- Enchanted Aspect's Awakened Crest [Shared Item]
+i(0, 429948);		-- Enchanted Whelpling's Awakened Crest [Shared Item]
+i(0, 429945);		-- Enchanted Wyrm's Awakened Crest [Shared Item]

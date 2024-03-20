@@ -1580,3 +1580,11 @@ i(208310, 419039);	-- Verdant Combatant's Medallion
 i(210491, 425958);	-- Winding Slitherdrake: Hairy Chin
 --- LEGENDARY ---
 i(0, 422337);		-- Lydiara's Binding Rune
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+--- ITEM ---
+i(211611, 430092);	-- Draconic Combatant's Emblem
+i(211610, 430091);	-- Draconic Combatant's Insignia of Alacrity
+i(211609, 430090);	-- Draconic Combatant's Medallion

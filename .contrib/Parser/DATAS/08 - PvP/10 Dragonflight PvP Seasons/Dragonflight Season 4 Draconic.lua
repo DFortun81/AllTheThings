@@ -1663,48 +1663,48 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			})),
 						--]]
 			filter(RECIPES, {
-				i(211588),	-- Design: Draconic Combatant's Jeweled Amulet
-				i(211589),	-- Design: Draconic Combatant's Jeweled Signet
-				i(211598),	-- Pattern: Draconic Combatant's Adamant Cowl
-				i(211599),	-- Pattern: Draconic Combatant's Adamant Chainmail
-				i(211600),	-- Pattern: Draconic Combatant's Adamant Leggings
-				i(211601),	-- Pattern: Draconic Combatant's Adamant Epaulets
-				i(211602),	-- Pattern: Draconic Combatant's Adamant Treads
-				i(211603),	-- Pattern: Draconic Combatant's Adamant Gauntlets
-				i(211604),	-- Pattern: Draconic Combatant's Adamant Cuffs
-				i(211605),	-- Pattern: Draconic Combatant's Adamant Girdle
-				i(211590),	-- Pattern: Draconic Combatant's Resilient Mask
-				i(211591),	-- Pattern: Draconic Combatant's Resilient Chestpiece
-				i(211592),	-- Pattern: Draconic Combatant's Resilient Trousers
-				i(211593),	-- Pattern: Draconic Combatant's Resilient Shoulderpads
-				i(211594),	-- Pattern: Draconic Combatant's Resilient Boots
-				i(211595),	-- Pattern: Draconic Combatant's Resilient Gloves
-				i(211596),	-- Pattern: Draconic Combatant's Resilient Wristwraps
-				i(211597),	-- Pattern: Draconic Combatant's Resilient Belt
-				i(211571),	-- Pattern: Draconic Combatant's Wildercloth Bands
-				i(211572),	-- Pattern: Draconic Combatant's Wildercloth Cloak
-				i(211573),	-- Pattern: Draconic Combatant's Wildercloth Gloves
-				i(211574),	-- Pattern: Draconic Combatant's Wildercloth Hood
-				i(211575),	-- Pattern: Draconic Combatant's Wildercloth Leggings
-				i(211576),	-- Pattern: Draconic Combatant's Wildercloth Sash
-				i(211577),	-- Pattern: Draconic Combatant's Wildercloth Shoulderpads
-				i(211578),	-- Pattern: Draconic Combatant's Wildercloth Treads
-				i(211579),	-- Pattern: Draconic Combatant's Wildercloth Tunic
-				i(211580),	-- Plans: Draconic Combatant's Draconium Helm
-				i(211581),	-- Plans: Draconic Combatant's Draconium Breastplate
-				i(211582),	-- Plans: Draconic Combatant's Draconium Greaves
-				i(211583),	-- Plans: Draconic Combatant's Draconium Pauldrons
-				i(211584),	-- Plans: Draconic Combatant's Draconium Gauntlets
-				i(211585),	-- Plans: Draconic Combatant's Draconium Sabatons
-				i(211586),	-- Plans: Draconic Combatant's Draconium Armguards
-				i(211587),	-- Plans: Draconic Combatant's Draconium Waistguard
-				i(211616),	-- Schematic: Draconic Combatant's Cloth Goggles
-				i(211617),	-- Schematic: Draconic Combatant's Leather Goggles
-				i(211618),	-- Schematic: Draconic Combatant's Mail Goggles
-				i(211619),	-- Schematic: Draconic Combatant's Plate Goggles
-				i(211609),	-- Technique: Draconic Combatant's Medallion
-				i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity
-				i(211611),	-- Technique: Draconic Combatant's Emblem
+				i(211588),	-- Design: Draconic Combatant's Jeweled Amulet (RECIPE!)
+				i(211589),	-- Design: Draconic Combatant's Jeweled Signet (RECIPE!)
+				i(211599),	-- Pattern: Draconic Combatant's Adamant Chainmail (RECIPE!)
+				i(211598),	-- Pattern: Draconic Combatant's Adamant Cowl (RECIPE!)
+				i(211604),	-- Pattern: Draconic Combatant's Adamant Cuffs (RECIPE!)
+				i(211601),	-- Pattern: Draconic Combatant's Adamant Epaulets (RECIPE!)
+				i(211603),	-- Pattern: Draconic Combatant's Adamant Gauntlets (RECIPE!)
+				i(211605),	-- Pattern: Draconic Combatant's Adamant Girdle (RECIPE!)
+				i(211600),	-- Pattern: Draconic Combatant's Adamant Leggings (RECIPE!)
+				i(211602),	-- Pattern: Draconic Combatant's Adamant Treads (RECIPE!)
+				i(211597),	-- Pattern: Draconic Combatant's Resilient Belt (RECIPE!)
+				i(211594),	-- Pattern: Draconic Combatant's Resilient Boots (RECIPE!)
+				i(211591),	-- Pattern: Draconic Combatant's Resilient Chestpiece (RECIPE!)
+				i(211595),	-- Pattern: Draconic Combatant's Resilient Gloves (RECIPE!)
+				i(211590),	-- Pattern: Draconic Combatant's Resilient Mask (RECIPE!)
+				i(211593),	-- Pattern: Draconic Combatant's Resilient Shoulderpads (RECIPE!)
+				i(211592),	-- Pattern: Draconic Combatant's Resilient Trousers (RECIPE!)
+				i(211596),	-- Pattern: Draconic Combatant's Resilient Wristwraps (RECIPE!)
+				i(211571),	-- Pattern: Draconic Combatant's Wildercloth Bands (RECIPE!)
+				i(211572),	-- Pattern: Draconic Combatant's Wildercloth Cloak (RECIPE!)
+				i(211573),	-- Pattern: Draconic Combatant's Wildercloth Gloves (RECIPE!)
+				i(211574),	-- Pattern: Draconic Combatant's Wildercloth Hood (RECIPE!)
+				i(211575),	-- Pattern: Draconic Combatant's Wildercloth Leggings (RECIPE!)
+				i(211576),	-- Pattern: Draconic Combatant's Wildercloth Sash (RECIPE!)
+				i(211577),	-- Pattern: Draconic Combatant's Wildercloth Shoulderpads (RECIPE!)
+				i(211578),	-- Pattern: Draconic Combatant's Wildercloth Treads (RECIPE!)
+				i(211579),	-- Pattern: Draconic Combatant's Wildercloth Tunic (RECIPE!)
+				i(211586),	-- Plans: Draconic Combatant's Draconium Armguards (RECIPE!)
+				i(211581),	-- Plans: Draconic Combatant's Draconium Breastplate (RECIPE!)
+				i(211584),	-- Plans: Draconic Combatant's Draconium Gauntlets (RECIPE!)
+				i(211582),	-- Plans: Draconic Combatant's Draconium Greaves (RECIPE!)
+				i(211580),	-- Plans: Draconic Combatant's Draconium Helm (RECIPE!)
+				i(211583),	-- Plans: Draconic Combatant's Draconium Pauldrons (RECIPE!)
+				i(211585),	-- Plans: Draconic Combatant's Draconium Sabatons (RECIPE!)
+				i(211587),	-- Plans: Draconic Combatant's Draconium Waistguard (RECIPE!)
+				i(211616),	-- Schematic: Draconic Combatant's Cloth Goggles (RECIPE!)
+				i(211617),	-- Schematic: Draconic Combatant's Leather Goggles (RECIPE!)
+				i(211618),	-- Schematic: Draconic Combatant's Mail Goggles (RECIPE!)
+				i(211619),	-- Schematic: Draconic Combatant's Plate Goggles (RECIPE!)
+				i(211611),	-- Technique: Draconic Combatant's Emblem (RECIPE!)
+				i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity (RECIPE!)
+				i(211609),	-- Technique: Draconic Combatant's Medallion (RECIPE!)
 			}),
 		},
 	}),

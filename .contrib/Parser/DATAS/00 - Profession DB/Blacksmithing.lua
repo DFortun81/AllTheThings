@@ -2177,3 +2177,16 @@ i(208281, 419035);	-- Verdant Combatant's Draconium Helm
 i(208284, 419036);	-- Verdant Combatant's Draconium Pauldrons
 i(208286, 419037);	-- Verdant Combatant's Draconium Sabatons
 i(208288, 419038);	-- Verdant Combatant's Draconium Waistguard
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+--- ITEM ---
+i(211586, 430082);	-- Draconic Combatant's Draconium Armguards
+i(211581, 430083);	-- Draconic Combatant's Draconium Breastplate
+i(211584, 430084);	-- Draconic Combatant's Draconium Gauntlets
+i(211582, 430085);	-- Draconic Combatant's Draconium Greaves
+i(211580, 430086);	-- Draconic Combatant's Draconium Helm
+i(211583, 430087);	-- Draconic Combatant's Draconium Pauldrons
+i(211585, 430088);	-- Draconic Combatant's Draconium Sabatons
+i(211587, 430089);	-- Draconic Combatant's Draconium Waistguard

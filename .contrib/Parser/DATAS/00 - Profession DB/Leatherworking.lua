@@ -2329,3 +2329,24 @@ i(208297, 419012);	-- Verdant Combatant's Resilient Wristwraps
 i(210169, 418579);	-- Verdant Conduit
 --- LEGENDARY ---
 i(0, 422330);		-- Erden's Glowspore Grip
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+--- ITEM ---
+i(211599, 430066);	-- Draconic Combatant's Adamant Chainmail
+i(211598, 430065);	-- Draconic Combatant's Adamant Cowl
+i(211604, 430071);	-- Draconic Combatant's Adamant Cuffs
+i(211601, 430068);	-- Draconic Combatant's Adamant Epaulets
+i(211603, 430069);	-- Draconic Combatant's Adamant Gauntlets
+i(211605, 430072);	-- Draconic Combatant's Adamant Girdle
+i(211600, 430067);	-- Draconic Combatant's Adamant Leggings
+i(211602, 430070);	-- Draconic Combatant's Adamant Treads
+i(211597, 430064);	-- Draconic Combatant's Resilient Belt
+i(211594, 430062);	-- Draconic Combatant's Resilient Boots
+i(211591, 430058);	-- Draconic Combatant's Resilient Chestpiece
+i(211595, 430061);	-- Draconic Combatant's Resilient Gloves
+i(211590, 430057);	-- Draconic Combatant's Resilient Mask
+i(211593, 430060);	-- Draconic Combatant's Resilient Shoulderpads
+i(211592, 430059);	-- Draconic Combatant's Resilient Trousers
+i(211596, 430063);	-- Draconic Combatant's Resilient Wristwraps

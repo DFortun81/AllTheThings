@@ -936,3 +936,17 @@ i(208278, 419028);	-- Verdant Combatant's Wildercloth Shoulderpads
 i(208279, 419024);	-- Verdant Combatant's Wildercloth Treads
 i(208280, 419023);	-- Verdant Combatant's Wildercloth Tunic
 i(210670, 426434);	-- Verdant Tether
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+--- ITEM ---
+i(211571, 430081);	-- Draconic Combatant's Wildercloth Bands
+i(211572, 430073);	-- Draconic Combatant's Wildercloth Cloak
+i(211573, 430076);	-- Draconic Combatant's Wildercloth Gloves
+i(211574, 430077);	-- Draconic Combatant's Wildercloth Hood
+i(211575, 430078);	-- Draconic Combatant's Wildercloth Leggings
+i(211576, 430080);	-- Draconic Combatant's Wildercloth Sash
+i(211577, 430079);	-- Draconic Combatant's Wildercloth Shoulderpads
+i(211578, 430075);	-- Draconic Combatant's Wildercloth Treads
+i(211579, 430074);	-- Draconic Combatant's Wildercloth Tunic

@@ -385,3 +385,10 @@ i(0, 412557);		-- TEST CRUSHING (DNT)
 i(210170, 420740);	-- Dreamtender's Charm
 i(208289, 419004);	-- Verdant Combatant's Jeweled Amulet
 i(208290, 419005);	-- Verdant Combatant's Jeweled Signet
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+--- ITEM ---
+i(211588, 430055);	-- Draconic Combatant's Jeweled Amulet
+i(211589, 430056);	-- Draconic Combatant's Jeweled Signet

@@ -1744,6 +1744,7 @@ i(211486, 0);		-- Winding Slitherdrake
 ------------------
 -- PATCH 10.2.6 --
 ------------------
+i(211862, 0);		-- Bestowed Ottuk Vanguard
 i(192792, 351408);	-- Bestowed Thunderspine Packleader
 i(205206, 408648);	-- Calescent Shalewing
 i(0, 424539);		-- Draconic Gladiator's Drake

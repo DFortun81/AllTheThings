@@ -13,6 +13,32 @@ end
 local GNOMISH_ENGINEER = 20219;
 local GOBLIN_ENGINEER = 20222;
 
+-- #if ANYCLASSIC
+------------------
+--  WOW CLASSIC --
+------------------
+
+-- #if SEASON_OF_DISCOVERY
+--------------------------
+-- Season of Discovery ---
+--------------------------
+------------------
+-- PATCH 1.15.0 --
+------------------
+i(210178, 424641);	-- Shredder Autosalvage Unit
+
+------------------
+-- PATCH 1.15.1 --
+------------------
+--- ITEM ---
+i(215432, 435966);	-- Ez-Thro Radiation Bomb
+i(215431, 435964);	-- High-Yield Radiation Bomb
+i(215156, 435960);	-- Hyperconductive Goldwrap
+i(215429, 435956);	-- Polished Truesilver Gears
+i(215153, 435958);	-- Schematic: Whirling Truesilver Gearwall
+-- #endif
+-- #endif
+
 -- Gnomish Engineering
 i(18654, 23096, nil, GNOMISH_ENGINEER);		-- Schematic: Gnomish Alarm-o-Bot
 i(18661, 23129, nil, GNOMISH_ENGINEER);		-- Schematic: World Enlarger
@@ -638,29 +664,11 @@ i(208318, 419043);	-- Verdant Combatant's Leather Goggles
 i(208319, 419044);	-- Verdant Combatant's Mail Goggles
 i(208320, 419045);	-- Verdant Combatant's Plate Goggles
 
-
--- #if ANYCLASSIC
 ------------------
---  WOW CLASSIC --
-------------------
-
--- #if SEASON_OF_DISCOVERY
---------------------------
--- Season of Discovery ---
---------------------------
-------------------
--- PATCH 1.15.0 --
-------------------
-i(210178, 424641);	-- Shredder Autosalvage Unit
-
-------------------
--- PATCH 1.15.1 --
+-- PATCH 10.2.6 --
 ------------------
 --- ITEM ---
-i(215432, 435966);	-- Ez-Thro Radiation Bomb
-i(215431, 435964);	-- High-Yield Radiation Bomb
-i(215156, 435960);	-- Hyperconductive Goldwrap
-i(215429, 435956);	-- Polished Truesilver Gears
-i(215153, 435958);	-- Schematic: Whirling Truesilver Gearwall
--- #endif
--- #endif
+i(211616, 430093);	-- Draconic Combatant's Cloth Goggles
+i(211617, 430094);	-- Draconic Combatant's Leather Goggles
+i(211618, 430095);	-- Draconic Combatant's Mail Goggles
+i(211619, 430096);	-- Draconic Combatant's Plate Goggles

@@ -438,11 +438,6 @@ r(264481),	-- Northrend Engineering
 r(264483),	-- Cataclysm Engineering
 r(264485),	-- Pandaria Engineering
 r(264487),	-- Draenor Engineering
-10.2.6.53840
-r(430093),	-- Draconic Combatant's Cloth Goggles
-r(430094),	-- Draconic Combatant's Leather Goggles
-r(430095),	-- Draconic Combatant's Mail Goggles
-r(430096),	-- Draconic Combatant's Plate Goggles
 
 
 
@@ -993,8 +988,3 @@ r(235756),	-- Heavy Skullblasters
 r(235775),	-- Rechargeable Reaves Battery
 r(247717),	-- Gravitational Reduction Slippers
 r(247744),	-- Wormhole Generator: Argus
-10.2.6.53840
-r(430093),	-- Draconic Combatant's Cloth Goggles
-r(430094),	-- Draconic Combatant's Leather Goggles
-r(430095),	-- Draconic Combatant's Mail Goggles
-r(430096),	-- Draconic Combatant's Plate Goggles

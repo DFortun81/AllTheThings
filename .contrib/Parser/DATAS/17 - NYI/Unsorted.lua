@@ -9,6 +9,7 @@ root(ROOTS.Unsorted, {
 				i(217043),	-- Pokee (PET!)
 			}),
 			filter(MOUNTS, {
+				i(211862),	-- Bestowed Ottuk Vanguard (MOUNT!)
 				i(192792),	-- Bestowed Thunderspine Packleader (MOUNT!)
 				i(205206),	-- Calescent Shalewing (MOUNT!)
 				i(210142),	-- Taivan (MOUNT!)
@@ -469,6 +470,18 @@ root(ROOTS.Unsorted, {
 				i(217369),	-- Draconic Gladiator's Pulverizer
 				i(217370),	-- Draconic Gladiator's Sword
 				i(217371),	-- Draconic Gladiator's Shotel
+				i(211684),	-- Lesser Draconic Trophy of Conquest
+				i(211685),	-- Draconic Trophy of Conquest
+				i(211686),	-- Greater Draconic Trophy of Conquest
+				i(211687),	-- Lesser Draconic Crest of Honor
+				i(211688),	-- Draconic Crest of Honor
+				i(211689),	-- Greater Draconic Crest of Honor
+				i(211690),	-- Artisan's Consortium Brochure
+				i(211770),	-- Medal of Honor
+				i(211771),	-- Medal of Honor
+				i(211772),	-- Glorious Medal of Honor
+				i(211773),	-- Medal of Conquest
+				i(210326),	-- Cracked Medal of Conquest
 			}),
 			n(SPECIAL, {	-- SEASON 4 PvE
 				i(217176),	-- Hauberk of the Awakened
@@ -818,73 +831,22 @@ root(ROOTS.Unsorted, {
 
 
 
-			i(210326),	-- Cracked Medal of Conquest
+
 			i(210594),	-- Noblegarden Trinket
 			i(211515),	-- Splintered Spark of Awakening
-			i(211516),	-- Spark of Awakening
-			i(211518),	-- Enchanted Wyrm's Awakened Crest
-			i(211519),	-- Enchanted Aspect's Awakened Crest
-			i(211520),	-- Enchanted Whelpling's Awakened Crest
-			i(211521),	-- Nascent Wyrm's Awakened Crest
-			i(211522),	-- Nascent Aspect's Awakened Crest
-			i(211523),	-- Nascent Whelpling's Awakened Crest
+
 			i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
 			i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
 			i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest
-			i(211536),	-- Draconic Combatant's Jeweled Signet
-			i(211537),	-- Draconic Combatant's Jeweled Amulet
-			i(211538),	-- Draconic Combatant's Resilient Boots
-			i(211539),	-- Draconic Combatant's Resilient Chestpiece
-			i(211540),	-- Draconic Combatant's Resilient Mask
-			i(211541),	-- Draconic Combatant's Resilient Shoulderpads
-			i(211542),	-- Draconic Combatant's Resilient Belt
-			i(211543),	-- Draconic Combatant's Resilient Trousers
-			i(211544),	-- Draconic Combatant's Resilient Gloves
-			i(211545),	-- Draconic Combatant's Resilient Wristwraps
-			i(211546),	-- Draconic Combatant's Adamant Treads
-			i(211547),	-- Draconic Combatant's Adamant Chainmail
-			i(211548),	-- Draconic Combatant's Adamant Cowl
-			i(211549),	-- Draconic Combatant's Adamant Epaulets
-			i(211550),	-- Draconic Combatant's Adamant Girdle
-			i(211551),	-- Draconic Combatant's Adamant Leggings
-			i(211552),	-- Draconic Combatant's Adamant Gauntlets
-			i(211553),	-- Draconic Combatant's Adamant Cuffs
-			i(211554),	-- Draconic Combatant's Wildercloth Leggings
-			i(211555),	-- Draconic Combatant's Wildercloth Shoulderpads
-			i(211556),	-- Draconic Combatant's Wildercloth Treads
-			i(211557),	-- Draconic Combatant's Wildercloth Bands
-			i(211558),	-- Draconic Combatant's Wildercloth Hood
-			i(211559),	-- Draconic Combatant's Wildercloth Gloves
-			i(211560),	-- Draconic Combatant's Wildercloth Tunic
-			i(211561),	-- Draconic Combatant's Wildercloth Sash
-			i(211562),	-- Draconic Combatant's Wildercloth Cloak
-			i(211563),	-- Draconic Combatant's Draconium Breastplate
-			i(211564),	-- Draconic Combatant's Draconium Sabatons
-			i(211565),	-- Draconic Combatant's Draconium Gauntlets
-			i(211566),	-- Draconic Combatant's Draconium Helm
-			i(211567),	-- Draconic Combatant's Draconium Greaves
-			i(211568),	-- Draconic Combatant's Draconium Pauldrons
-			i(211569),	-- Draconic Combatant's Draconium Waistguard
-			i(211570),	-- Draconic Combatant's Draconium Armguards
-			i(211606),	-- Draconic Combatant's Medallion
-			i(211607),	-- Draconic Combatant's Insignia of Alacrity
-			i(211608),	-- Draconic Combatant's Emblem
-			i(211612),	-- Draconic Combatant's Cloth Goggles
-			i(211613),	-- Draconic Combatant's Leather Goggles
-			i(211614),	-- Draconic Combatant's Mail Goggles
-			i(211615),	-- Draconic Combatant's Plate Goggles
-			i(211684),	-- Lesser Draconic Trophy of Conquest
-			i(211685),	-- Draconic Trophy of Conquest
-			i(211686),	-- Greater Draconic Trophy of Conquest
-			i(211687),	-- Lesser Draconic Crest of Honor
-			i(211688),	-- Draconic Crest of Honor
-			i(211689),	-- Greater Draconic Crest of Honor
-			i(211690),	-- Artisan's Consortium Brochure
-			i(211770),	-- Medal of Honor
-			i(211771),	-- Medal of Honor
-			i(211772),	-- Glorious Medal of Honor
-			i(211773),	-- Medal of Conquest
-			i(211862),	-- Bestowed Ottuk Vanguard
+
+
+
+
+
+
+
+
+
 			i(211950),	-- Lively Clutch of Wyrm's Awakened Crests
 			i(211951),	-- Pouch of Whelpling's Awakened Crests
 			i(211952),	-- Satchel of Drake's Awakened Crests
@@ -1078,7 +1040,7 @@ root(ROOTS.Unsorted, {
 			i(217729),	-- Cache of Awakened Treasures
 			i(218114),	-- Eye of Awakening
 
-			i(218269),	-- Draconic Tome of Awakening
+
 			i(218270),	-- Lightning Bulwark
 			i(219020),	-- Storm Archon
 

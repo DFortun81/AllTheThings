@@ -674,16 +674,6 @@ r(330258),	-- Relic of the Past II
 r(330259),	-- Relic of the Past III
 r(330260),	-- Relic of the Past IV
 r(330261),	-- Relic of the Past V
-10.2.6.53840
-r(430073),	-- Draconic Combatant's Wildercloth Cloak
-r(430074),	-- Draconic Combatant's Wildercloth Tunic
-r(430075),	-- Draconic Combatant's Wildercloth Treads
-r(430076),	-- Draconic Combatant's Wildercloth Gloves
-r(430077),	-- Draconic Combatant's Wildercloth Hood
-r(430078),	-- Draconic Combatant's Wildercloth Leggings
-r(430079),	-- Draconic Combatant's Wildercloth Shoulderpads
-r(430080),	-- Draconic Combatant's Wildercloth Sash
-r(430081),	-- Draconic Combatant's Wildercloth Bands
 
 
 
@@ -1387,13 +1377,3 @@ r(304580),	-- Uncanny Combatant's Satin Bracers
 r(304581),	-- Uncanny Combatant's Satin Bracers
 r(304582),	-- Uncanny Combatant's Satin Bracers
 r(307175),	-- Void Focus
-10.2.6.53840
-r(430073),	-- Draconic Combatant's Wildercloth Cloak
-r(430074),	-- Draconic Combatant's Wildercloth Tunic
-r(430075),	-- Draconic Combatant's Wildercloth Treads
-r(430076),	-- Draconic Combatant's Wildercloth Gloves
-r(430077),	-- Draconic Combatant's Wildercloth Hood
-r(430078),	-- Draconic Combatant's Wildercloth Leggings
-r(430079),	-- Draconic Combatant's Wildercloth Shoulderpads
-r(430080),	-- Draconic Combatant's Wildercloth Sash
-r(430081),	-- Draconic Combatant's Wildercloth Bands

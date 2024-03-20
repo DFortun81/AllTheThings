@@ -48,6 +48,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			})),
 			n(REWARDS, {
+				i(218269, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Draconic Tome of Awakening (RECIPE!)
+					r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+					r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+					r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+				})),
 				i(200073, {	-- Valdrakken Treasures
 					["sym"] = {
 						{"select", "itemID",
