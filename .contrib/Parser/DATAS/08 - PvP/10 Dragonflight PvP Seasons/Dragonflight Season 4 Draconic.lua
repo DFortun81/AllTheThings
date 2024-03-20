@@ -28,7 +28,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					i(216667),	-- Draconic Gladiator's Tabard
 				}),
 				ach(19490, {	-- Gladiator: Dragonflight Season 4
-				--	i(210345),	-- Verdant Gladiator's Slitherdrake (MOUNT!)
+					mount(424539),	-- Draconic Gladiator's Drake
 					i(216710),	-- Highland Drake: Embodiment of the Draconic Gladiator (DM!)
 				}),
 				ach(19503),		-- Draconic Gladiator's Drake
@@ -54,10 +54,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19276),	-- Verdant Vogue
 			})),
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 11.0.0" } }, {
-				i(213440, {	-- Vicious Dreamtalon [A] (MOUNT!)
+				i(213439, {	-- Vicious Dreamtalon [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(213439, {	-- Vicious Dreamtalon [H] (MOUNT!)
+				i(213440, {	-- Vicious Dreamtalon [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			})),
