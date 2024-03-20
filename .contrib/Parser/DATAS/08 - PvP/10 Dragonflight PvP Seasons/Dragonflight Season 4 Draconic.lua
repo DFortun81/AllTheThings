@@ -1661,51 +1661,51 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			})),
+						--]]
 			filter(RECIPES, {
-				i(208289),	-- Design: Verdant Combatant's Jeweled Amulet (RECIPE!)
-				i(208290),	-- Design: Verdant Combatant's Jeweled Signet (RECIPE!)
-				i(208300),	-- Pattern: Verdant Combatant's Adamant Chainmail (RECIPE!)
-				i(208299),	-- Pattern: Verdant Combatant's Adamant Cowl (RECIPE!)
-				i(208305),	-- Pattern: Verdant Combatant's Adamant Cuffs (RECIPE!)
-				i(208302),	-- Pattern: Verdant Combatant's Adamant Epaulets (RECIPE!)
-				i(208304),	-- Pattern: Verdant Combatant's Adamant Gauntlets (RECIPE!)
-				i(208306),	-- Pattern: Verdant Combatant's Adamant Girdle (RECIPE!)
-				i(208301),	-- Pattern: Verdant Combatant's Adamant Leggings (RECIPE!)
-				i(208303),	-- Pattern: Verdant Combatant's Adamant Treads (RECIPE!)
-				i(208298),	-- Pattern: Verdant Combatant's Resilient Belt (RECIPE!)
-				i(208295),	-- Pattern: Verdant Combatant's Resilient Boots (RECIPE!)
-				i(208292),	-- Pattern: Verdant Combatant's Resilient Chestpiece (RECIPE!)
-				i(208296),	-- Pattern: Verdant Combatant's Resilient Gloves (RECIPE!)
-				i(208291),	-- Pattern: Verdant Combatant's Resilient Mask (RECIPE!)
-				i(208294),	-- Pattern: Verdant Combatant's Resilient Shoulderpads (RECIPE!)
-				i(208293),	-- Pattern: Verdant Combatant's Resilient Trousers (RECIPE!)
-				i(208297),	-- Pattern: Verdant Combatant's Resilient Wristwraps (RECIPE!)
-				i(208272),	-- Pattern: Verdant Combatant's Wildercloth Bands (RECIPE!)
-				i(208273),	-- Pattern: Verdant Combatant's Wildercloth Cloak (RECIPE!)
-				i(208274),	-- Pattern: Verdant Combatant's Wildercloth Gloves (RECIPE!)
-				i(208275),	-- Pattern: Verdant Combatant's Wildercloth Hood (RECIPE!)
-				i(208276),	-- Pattern: Verdant Combatant's Wildercloth Leggings (RECIPE!)
-				i(208277),	-- Pattern: Verdant Combatant's Wildercloth Sash (RECIPE!)
-				i(208278),	-- Pattern: Verdant Combatant's Wildercloth Shoulderpads (RECIPE!)
-				i(208279),	-- Pattern: Verdant Combatant's Wildercloth Treads (RECIPE!)
-				i(208280),	-- Pattern: Verdant Combatant's Wildercloth Tunic (RECIPE!)
-				i(208287),	-- Plans: Verdant Combatant's Draconium Armguards (RECIPE!)
-				i(208282),	-- Plans: Verdant Combatant's Draconium Breastplate (RECIPE!)
-				i(208285),	-- Plans: Verdant Combatant's Draconium Gauntlets (RECIPE!)
-				i(208283),	-- Plans: Verdant Combatant's Draconium Greaves (RECIPE!)
-				i(208281),	-- Plans: Verdant Combatant's Draconium Helm (RECIPE!)
-				i(208284),	-- Plans: Verdant Combatant's Draconium Pauldrons (RECIPE!)
-				i(208286),	-- Plans: Verdant Combatant's Draconium Sabatons (RECIPE!)
-				i(208288),	-- Plans: Verdant Combatant's Draconium Waistguard (RECIPE!)
-				i(208317),	-- Schematic: Verdant Combatant's Cloth Goggles (RECIPE!)
-				i(208318),	-- Schematic: Verdant Combatant's Leather Goggles (RECIPE!)
-				i(208319),	-- Schematic: Verdant Combatant's Mail Goggles (RECIPE!)
-				i(208320),	-- Schematic: Verdant Combatant's Plate Goggles (RECIPE!)
-				i(208312),	-- Technique: Verdant Combatant's Emblem (RECIPE!)
-				i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity (RECIPE!)
-				i(208310),	-- Technique: Verdant Combatant's Medallion (RECIPE!)
+				i(211588),	-- Design: Draconic Combatant's Jeweled Amulet
+				i(211589),	-- Design: Draconic Combatant's Jeweled Signet
+				i(211598),	-- Pattern: Draconic Combatant's Adamant Cowl
+				i(211599),	-- Pattern: Draconic Combatant's Adamant Chainmail
+				i(211600),	-- Pattern: Draconic Combatant's Adamant Leggings
+				i(211601),	-- Pattern: Draconic Combatant's Adamant Epaulets
+				i(211602),	-- Pattern: Draconic Combatant's Adamant Treads
+				i(211603),	-- Pattern: Draconic Combatant's Adamant Gauntlets
+				i(211604),	-- Pattern: Draconic Combatant's Adamant Cuffs
+				i(211605),	-- Pattern: Draconic Combatant's Adamant Girdle
+				i(211590),	-- Pattern: Draconic Combatant's Resilient Mask
+				i(211591),	-- Pattern: Draconic Combatant's Resilient Chestpiece
+				i(211592),	-- Pattern: Draconic Combatant's Resilient Trousers
+				i(211593),	-- Pattern: Draconic Combatant's Resilient Shoulderpads
+				i(211594),	-- Pattern: Draconic Combatant's Resilient Boots
+				i(211595),	-- Pattern: Draconic Combatant's Resilient Gloves
+				i(211596),	-- Pattern: Draconic Combatant's Resilient Wristwraps
+				i(211597),	-- Pattern: Draconic Combatant's Resilient Belt
+				i(211571),	-- Pattern: Draconic Combatant's Wildercloth Bands
+				i(211572),	-- Pattern: Draconic Combatant's Wildercloth Cloak
+				i(211573),	-- Pattern: Draconic Combatant's Wildercloth Gloves
+				i(211574),	-- Pattern: Draconic Combatant's Wildercloth Hood
+				i(211575),	-- Pattern: Draconic Combatant's Wildercloth Leggings
+				i(211576),	-- Pattern: Draconic Combatant's Wildercloth Sash
+				i(211577),	-- Pattern: Draconic Combatant's Wildercloth Shoulderpads
+				i(211578),	-- Pattern: Draconic Combatant's Wildercloth Treads
+				i(211579),	-- Pattern: Draconic Combatant's Wildercloth Tunic
+				i(211580),	-- Plans: Draconic Combatant's Draconium Helm
+				i(211581),	-- Plans: Draconic Combatant's Draconium Breastplate
+				i(211582),	-- Plans: Draconic Combatant's Draconium Greaves
+				i(211583),	-- Plans: Draconic Combatant's Draconium Pauldrons
+				i(211584),	-- Plans: Draconic Combatant's Draconium Gauntlets
+				i(211585),	-- Plans: Draconic Combatant's Draconium Sabatons
+				i(211586),	-- Plans: Draconic Combatant's Draconium Armguards
+				i(211587),	-- Plans: Draconic Combatant's Draconium Waistguard
+				i(211616),	-- Schematic: Draconic Combatant's Cloth Goggles
+				i(211617),	-- Schematic: Draconic Combatant's Leather Goggles
+				i(211618),	-- Schematic: Draconic Combatant's Mail Goggles
+				i(211619),	-- Schematic: Draconic Combatant's Plate Goggles
+				i(211609),	-- Technique: Draconic Combatant's Medallion
+				i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity
+				i(211611),	-- Technique: Draconic Combatant's Emblem
 			}),
-			--]]
 		},
 	}),
 }))));

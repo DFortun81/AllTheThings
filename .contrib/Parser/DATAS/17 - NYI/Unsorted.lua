@@ -69,55 +69,13 @@ root(ROOTS.Unsorted, {
 			i(211568),	-- Draconic Combatant's Draconium Pauldrons
 			i(211569),	-- Draconic Combatant's Draconium Waistguard
 			i(211570),	-- Draconic Combatant's Draconium Armguards
-			i(211571),	-- Pattern: Draconic Combatant's Wildercloth Bands
-			i(211572),	-- Pattern: Draconic Combatant's Wildercloth Cloak
-			i(211573),	-- Pattern: Draconic Combatant's Wildercloth Gloves
-			i(211574),	-- Pattern: Draconic Combatant's Wildercloth Hood
-			i(211575),	-- Pattern: Draconic Combatant's Wildercloth Leggings
-			i(211576),	-- Pattern: Draconic Combatant's Wildercloth Sash
-			i(211577),	-- Pattern: Draconic Combatant's Wildercloth Shoulderpads
-			i(211578),	-- Pattern: Draconic Combatant's Wildercloth Treads
-			i(211579),	-- Pattern: Draconic Combatant's Wildercloth Tunic
-			i(211580),	-- Plans: Draconic Combatant's Draconium Helm
-			i(211581),	-- Plans: Draconic Combatant's Draconium Breastplate
-			i(211582),	-- Plans: Draconic Combatant's Draconium Greaves
-			i(211583),	-- Plans: Draconic Combatant's Draconium Pauldrons
-			i(211584),	-- Plans: Draconic Combatant's Draconium Gauntlets
-			i(211585),	-- Plans: Draconic Combatant's Draconium Sabatons
-			i(211586),	-- Plans: Draconic Combatant's Draconium Armguards
-			i(211587),	-- Plans: Draconic Combatant's Draconium Waistguard
-			i(211588),	-- Design: Draconic Combatant's Jeweled Amulet
-			i(211589),	-- Design: Draconic Combatant's Jeweled Signet
-			i(211590),	-- Pattern: Draconic Combatant's Resilient Mask
-			i(211591),	-- Pattern: Draconic Combatant's Resilient Chestpiece
-			i(211592),	-- Pattern: Draconic Combatant's Resilient Trousers
-			i(211593),	-- Pattern: Draconic Combatant's Resilient Shoulderpads
-			i(211594),	-- Pattern: Draconic Combatant's Resilient Boots
-			i(211595),	-- Pattern: Draconic Combatant's Resilient Gloves
-			i(211596),	-- Pattern: Draconic Combatant's Resilient Wristwraps
-			i(211597),	-- Pattern: Draconic Combatant's Resilient Belt
-			i(211598),	-- Pattern: Draconic Combatant's Adamant Cowl
-			i(211599),	-- Pattern: Draconic Combatant's Adamant Chainmail
-			i(211600),	-- Pattern: Draconic Combatant's Adamant Leggings
-			i(211601),	-- Pattern: Draconic Combatant's Adamant Epaulets
-			i(211602),	-- Pattern: Draconic Combatant's Adamant Treads
-			i(211603),	-- Pattern: Draconic Combatant's Adamant Gauntlets
-			i(211604),	-- Pattern: Draconic Combatant's Adamant Cuffs
-			i(211605),	-- Pattern: Draconic Combatant's Adamant Girdle
 			i(211606),	-- Draconic Combatant's Medallion
 			i(211607),	-- Draconic Combatant's Insignia of Alacrity
 			i(211608),	-- Draconic Combatant's Emblem
-			i(211609),	-- Technique: Draconic Combatant's Medallion
-			i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity
-			i(211611),	-- Technique: Draconic Combatant's Emblem
 			i(211612),	-- Draconic Combatant's Cloth Goggles
 			i(211613),	-- Draconic Combatant's Leather Goggles
 			i(211614),	-- Draconic Combatant's Mail Goggles
 			i(211615),	-- Draconic Combatant's Plate Goggles
-			i(211616),	-- Schematic: Draconic Combatant's Cloth Goggles
-			i(211617),	-- Schematic: Draconic Combatant's Leather Goggles
-			i(211618),	-- Schematic: Draconic Combatant's Mail Goggles
-			i(211619),	-- Schematic: Draconic Combatant's Plate Goggles
 			i(211684),	-- Lesser Draconic Trophy of Conquest
 			i(211685),	-- Draconic Trophy of Conquest
 			i(211686),	-- Greater Draconic Trophy of Conquest
