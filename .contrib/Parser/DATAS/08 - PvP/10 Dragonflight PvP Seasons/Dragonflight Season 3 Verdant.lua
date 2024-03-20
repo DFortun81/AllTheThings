@@ -52,9 +52,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19131, {	-- Verdant Legend: Dragonflight Season 3
 					title(525),	-- Verdant Legend <Name>
 				}),
-				--ach(00000, {	-- Verdant Soloist: Dragonflight Season 2
-				--	title(),	-- Verdant Soloist <Name>
-				--}),
 				-- Fashion
 				ach(19276),	-- Verdant Vogue
 			})),
