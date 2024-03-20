@@ -193,8 +193,6 @@ root(ROOTS.Unsorted, {
 			i(213436),	-- Fine Crimson Doublet
 			i(213437),	-- Duelist's Marble Doublet
 			i(213438),	-- Infinite Armoredon
-			i(213439),	-- Vicious Dreamtalon
-			i(213440),	-- Vicious Dreamtalon
 			i(213441),	-- Earth Mother's Sepia Gloves
 			i(213518),	-- Classic Sepia Tabard
 			i(213577),	-- Star Bomb
