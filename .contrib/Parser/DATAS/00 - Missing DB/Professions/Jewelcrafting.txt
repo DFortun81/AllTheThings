@@ -1211,6 +1211,9 @@ r(382978),	-- Cataclysm Prospecting
 r(382979),	-- Northrend Prospecting
 r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
+10.2.6.53840
+r(430055),	-- Draconic Combatant's Jeweled Amulet
+r(430056),	-- Draconic Combatant's Jeweled Signet
 
 
 
@@ -2445,3 +2448,6 @@ r(305980),	-- Peerless Leviathan's Eye Loop
 r(305981),	-- Awakened Leviathan's Eye Loop
 r(305982),	-- Unbound Leviathan's Eye Loop
 r(307219),	-- Void Focus
+10.2.6.53840
+r(430055),	-- Draconic Combatant's Jeweled Amulet
+r(430056),	-- Draconic Combatant's Jeweled Signet

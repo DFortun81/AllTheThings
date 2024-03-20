@@ -57,7 +57,7 @@ def get_quest_names() -> None:
         "TBC": "tbc",
         "WOTLK": "wotlk",
         "CATA": "cata",
-        "PTR": "ptr-2",
+        "PTR": "ptr",
     }
     raw_path_dict: dict[str, Path] = {
         expansion: Path("Raw", "QuestNames", f"{expansion}.txt")
@@ -136,16 +136,16 @@ def get_quest_names() -> None:
                         "Retail": "",
                     }
                     print("Cata-SL :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.2.5.99999"):
+                elif version.parse(missing_line) < version.parse("10.2.6.99999"):
                     expansion_dict = {
                         "Retail": "",
                         "PTR": "ptr",
                     }
-                    print("10.0.0-10.2.5 :", missing_line)
-                elif version.parse(missing_line) > version.parse("10.2.6.0"):
+                    print("10.0.0-10.2.6 :", missing_line)
+                elif version.parse(missing_line) > version.parse("10.2.7.0"):
                     expansion_dict = {
                         "PTR": "ptr",
                     }
-                    print("10.2.6 :", missing_line)
+                    print("10.2.7 :", missing_line)
     with open(missing_path, "w") as missing_file:
         missing_file.writelines(missing_lines)

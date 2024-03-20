@@ -1,0 +1,10 @@
+10.2.6.53840
+ill(7100),	-- Bronze Infinite
+
+
+
+
+Missing in IllusionDB.lua
+
+10.2.6.53840
+ill(7100),	-- Bronze Infinite

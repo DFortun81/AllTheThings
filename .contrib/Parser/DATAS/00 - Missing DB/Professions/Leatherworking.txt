@@ -1,0 +1,40 @@
+10.2.6.53840
+r(430057),	-- Draconic Combatant's Resilient Mask
+r(430058),	-- Draconic Combatant's Resilient Chestpiece
+r(430059),	-- Draconic Combatant's Resilient Trousers
+r(430060),	-- Draconic Combatant's Resilient Shoulderpads
+r(430061),	-- Draconic Combatant's Resilient Gloves
+r(430062),	-- Draconic Combatant's Resilient Boots
+r(430063),	-- Draconic Combatant's Resilient Wristwraps
+r(430064),	-- Draconic Combatant's Resilient Belt
+r(430065),	-- Draconic Combatant's Adamant Cowl
+r(430066),	-- Draconic Combatant's Adamant Chainmail
+r(430067),	-- Draconic Combatant's Adamant Leggings
+r(430068),	-- Draconic Combatant's Adamant Epaulets
+r(430069),	-- Draconic Combatant's Adamant Gauntlets
+r(430070),	-- Draconic Combatant's Adamant Treads
+r(430071),	-- Draconic Combatant's Adamant Cuffs
+r(430072),	-- Draconic Combatant's Adamant Girdle
+
+
+
+
+Missing in Leatherworking.lua
+
+10.2.6.53840
+r(430057),	-- Draconic Combatant's Resilient Mask
+r(430058),	-- Draconic Combatant's Resilient Chestpiece
+r(430059),	-- Draconic Combatant's Resilient Trousers
+r(430060),	-- Draconic Combatant's Resilient Shoulderpads
+r(430061),	-- Draconic Combatant's Resilient Gloves
+r(430062),	-- Draconic Combatant's Resilient Boots
+r(430063),	-- Draconic Combatant's Resilient Wristwraps
+r(430064),	-- Draconic Combatant's Resilient Belt
+r(430065),	-- Draconic Combatant's Adamant Cowl
+r(430066),	-- Draconic Combatant's Adamant Chainmail
+r(430067),	-- Draconic Combatant's Adamant Leggings
+r(430068),	-- Draconic Combatant's Adamant Epaulets
+r(430069),	-- Draconic Combatant's Adamant Gauntlets
+r(430070),	-- Draconic Combatant's Adamant Treads
+r(430071),	-- Draconic Combatant's Adamant Cuffs
+r(430072),	-- Draconic Combatant's Adamant Girdle

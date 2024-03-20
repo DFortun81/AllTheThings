@@ -1025,3 +1025,7 @@
 2575@@@Dream Wardens (Paragon)
 10.2.5.52206
 2615@@@Azerothian Archives
+10.2.6.53840
+2593@@@Keg Leg's Crew
+2604@@@Keg Leg's Crew (Paragon)
+2616@@@Keg Leg Thrasher

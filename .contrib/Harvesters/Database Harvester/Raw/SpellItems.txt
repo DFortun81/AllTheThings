@@ -11730,3 +11730,6 @@
 7084@@@+Mastery & +Speed
 7085@@@+Speed & +Critical Strike
 7086@@@+Speed & +Haste
+10.2.6.53840
+7100@@@Bronze Infinite
+7101@@@10.2.6 FX Testing - Enchant Visualt - Pirate

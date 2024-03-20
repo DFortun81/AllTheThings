@@ -1,0 +1,4 @@
+10.2.6.53840
+faction(2593),	-- Keg Leg's Crew
+faction(2604),	-- Keg Leg's Crew (Paragon)
+faction(2616),	-- Keg Leg Thrasher

@@ -13544,3 +13544,86 @@
 19720@@@Reclamation of Gilneas (Hidden Character Achievement)
 10.2.5.53104
 20206@@@Champion of the Dragonflights
+10.2.6.53840
+15654@@@Back from the Beyond (Legacy)
+15939@@@Dragon Racing Completionist: Bronze
+19453@@@Draconic Legend: Dragonflight Season 4
+19454@@@Draconic Gladiator: Dragonflight Season 4
+19455@@@Hero of the Alliance: Draconic
+19456@@@Hero of the Horde: Draconic
+19458@@@A World Awoken
+19463@@@Dragon Quests
+19466@@@Oh My God, They Were Clutchmates
+19478@@@Now THIS is Dragon Racing!
+19479@@@Wake Me Up
+19481@@@Centaur of Attention
+19482@@@Army of the Fed
+19483@@@Flight Club
+19485@@@Closing Time
+19486@@@Across the Isles
+19490@@@Gladiator: Dragonflight Season 4
+19492@@@Duelist: Dragonflight Season 4
+19493@@@Rival I: Dragonflight Season 4
+19494@@@Combatant I: Dragonflight Season 4
+19495@@@Combatant II: Dragonflight Season 4
+19497@@@Challenger I: Dragonflight Season 4
+19498@@@Rival II: Dragonflight Season 4
+19499@@@Challenger II: Dragonflight Season 4
+19500@@@Legend: Dragonflight Season 4
+19501@@@Draconic Combatant
+19502@@@Draconic Combatant
+19503@@@Draconic Gladiator's Drake
+19507@@@Fringe Benefits
+19509@@@Elite: Dragonflight Season 4
+19513@@@Battle Mender: Dragonflight Season 4
+19538@@@Whelpling's Awakened Crests earned
+19539@@@Drake's Awakened Crests earned
+19540@@@Wyrm's Awakened Crests earned
+19541@@@Aspect's's Awakened Crests earned
+19551@@@Vicious Saddle (39)
+19564@@@Awakened Storms
+19565@@@Heroic: Awakened Storms
+19566@@@Mythic: Awakened Storms
+19567@@@Awakened Shadows
+19568@@@Heroic: Awakened Shadows
+19569@@@Mythic: Awakened Shadows
+19570@@@Awakened Flames
+19571@@@Heroic: Awakened Flames
+19572@@@Mythic: Awakened Flames
+19574@@@Awakening the Dragonflight Raids
+19575@@@Heroic: Awakening the Dragonflight Raids
+19576@@@Mythic: Awakening the Dragonflight Raids
+19577@@@The Awakened Drake
+19578@@@The Awakened Wyrm
+19579@@@The Awakened Aspects
+19780@@@Dragonflight Keystone Explorer: Season Four
+19781@@@Dragonflight Keystone Conqueror: Season Four
+19782@@@Dragonflight Keystone Master: Season Four
+19783@@@Dragonflight Keystone Hero: Season Four
+19785@@@Draconic Hero: Dragonflight Season 4
+20087@@@<DNT> Plunderstorm Tutorial Tracker - Objective 001 - Complete
+20088@@@<DNT> Plunderstorm Tutorial Tracker - Objective 002 - Complete
+20089@@@<DNT> Plunderstorm Tutorial Tracker - Objective 003 - Complete
+20090@@@<DNT> Plunderstorm Tutorial Tracker - Objective 004 - Complete
+20091@@@<DNT> Plunderstorm Tutorial Tracker - Objective 005 - Complete
+20092@@@<DNT> Plunderstorm Tutorial Tracker - Objective 006 - Complete
+20093@@@<DNT> Plunderstorm Tutorial Tracker - Objective 007 - Complete
+20094@@@<DNT> Plunderstorm Tutorial Tracker - Objective 008 - Complete
+20095@@@<DNT> Plunderstorm Tutorial Tracker - Objective 009 - Complete
+20096@@@<DNT> Plunderstorm Tutorial Tracker - Objective 010 - Complete
+20097@@@<DNT> Plunderstorm Tutorial Tracker - Objective 011 - Complete
+20201@@@<Hidden> 10.2.6 Void Zone - Tender - Level 1
+20202@@@<Hidden> 10.2.6 Void Zone - Tender - Level 2
+20209@@@Quacked Killer
+20475@@@<Hidden> 10.2.6 Void Zone - WOTLK Pet
+20476@@@<Hidden> 10.2.6 Void Zone - WOTLK Mount
+20480@@@[HIDDEN] Awakening the Dragonflight Raid Portals
+20481@@@Dragonflight Season 4 Master
+20501@@@Back from the Beyond
+20507@@@<Hidden> Achievement Title - Plunderlord - 10.2.6 Void Zone
+20508@@@Plunder Wonder
+20509@@@Plunderkind
+20513@@@<Hidden> 10.2.6 Void Zone - Glamrok <DNT>
+20514@@@<Hidden> 10.2.6 Void Zone - Pepe <DNT>
+20515@@@<Hidden> 10.2.6 Void Zone - Toy <DNT>
+20516@@@<Hidden> 10.2.6 Void Zone - Quest <DNT>

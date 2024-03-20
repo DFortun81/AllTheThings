@@ -1,0 +1,17 @@
+10.2.6.53840
+pet(4425),	-- Glamrok
+pet(4426),	-- Bubbles
+pet(4435),	-- Happy
+pet(4436),	-- Pokee
+pet(4437),	-- Fathom
+
+
+
+
+Missing in PetDB.lua
+
+10.2.6.53840
+pet(4425),	-- Glamrok
+pet(4426),	-- Bubbles
+pet(4435),	-- Happy
+pet(4436),	-- Pokee

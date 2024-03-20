@@ -694,3 +694,16 @@
 536@@@%s, Isles Archivist
 10.2.5.53104
 547@@@%s, Champion of the Dragonflights
+10.2.6.53840
+533@@@The Forbidden %s
+534@@@Draconic Gladiator %s
+535@@@Draconic Legend %s
+537@@@%s the Draconic
+538@@@%s the Draconic Hero
+540@@@Northrend Racer %s
+541@@@Plunderlord %s
+542@@@Swabbie %s
+543@@@Deck Hand %s
+544@@@Swashbuckler %s
+545@@@Buccaneer %s
+546@@@First Mate %s

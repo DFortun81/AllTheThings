@@ -1,0 +1,24 @@
+10.2.6.53840
+r(430082),	-- Draconic Combatant's Draconium Armguards
+r(430083),	-- Draconic Combatant's Draconium Breastplate
+r(430084),	-- Draconic Combatant's Draconium Gauntlets
+r(430085),	-- Draconic Combatant's Draconium Greaves
+r(430086),	-- Draconic Combatant's Draconium Helm
+r(430087),	-- Draconic Combatant's Draconium Pauldrons
+r(430088),	-- Draconic Combatant's Draconium Sabatons
+r(430089),	-- Draconic Combatant's Draconium Waistguard
+
+
+
+
+Missing in Blacksmithing.lua
+
+10.2.6.53840
+r(430082),	-- Draconic Combatant's Draconium Armguards
+r(430083),	-- Draconic Combatant's Draconium Breastplate
+r(430084),	-- Draconic Combatant's Draconium Gauntlets
+r(430085),	-- Draconic Combatant's Draconium Greaves
+r(430086),	-- Draconic Combatant's Draconium Helm
+r(430087),	-- Draconic Combatant's Draconium Pauldrons
+r(430088),	-- Draconic Combatant's Draconium Sabatons
+r(430089),	-- Draconic Combatant's Draconium Waistguard

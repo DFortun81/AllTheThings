@@ -1776,8 +1776,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13884, {	-- Put Out The Fire
 					["qg"] = 34292,	-- Arctanus
 					["sourceQuests"] = {
-						13877,	-- Go With The Flow
-						13879,	-- Thunder Peak
+						13877,	-- Go With The Flow (A)
+						13879,	-- Thunder Peak (H)
 					},
 					["coord"] = { 52.0, 56.7, ASHENVALE },
 					["sourceQuestNumRequired"] = 1,

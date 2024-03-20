@@ -1776,3 +1776,15 @@
 10.2.5.52902
 10.2.5.52968
 430225@@@Gilnean Prowler
+10.2.6.53840
+254812@@@Royal Seafeather
+300154@@@Silver Tidestallion
+408648@@@Calescent Shalewing
+424539@@@Draconic Gladiator's Drake
+424607@@@Taivan
+434462@@@Infinite Armoredon
+434470@@@Vicious Dreamtalon
+434477@@@Vicious Dreamtalon
+437162@@@Polly Roger
+439138@@@Voyaging Wilderling
+440444@@@Zovaal's Soul Eater

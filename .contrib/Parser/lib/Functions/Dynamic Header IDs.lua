@@ -238,6 +238,7 @@ HeaderAssignments = {
 	["Pet Battle"] = -1000029,
 	["Pilgrim's Bounty"] = -1000225,
 	["Pirates' Day"] = -1000226,
+	["Plunderstorm"] = -1000872,
 	["Poor"] = -1000106,
 	["Professions"] = -1000030,
 	["Proving Grounds"] = -1000084,
@@ -400,4 +401,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000871;
+NextHeaderID = -1000873;

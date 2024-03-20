@@ -438,6 +438,11 @@ r(264481),	-- Northrend Engineering
 r(264483),	-- Cataclysm Engineering
 r(264485),	-- Pandaria Engineering
 r(264487),	-- Draenor Engineering
+10.2.6.53840
+r(430093),	-- Draconic Combatant's Cloth Goggles
+r(430094),	-- Draconic Combatant's Leather Goggles
+r(430095),	-- Draconic Combatant's Mail Goggles
+r(430096),	-- Draconic Combatant's Plate Goggles
 
 
 
@@ -627,11 +632,6 @@ r(26443),	-- Cluster Launcher \\ Firework Cluster Launcher
 r(28327),	-- Steam Tonk Controller
 1.15.1.53009
 r(431362),	-- Soul Vessel
-r(435956),	-- Polished Truesilver Gears
-r(435958),	-- Whirling Truesilver Gearwall
-r(435960),	-- Hyperconductive Goldwap
-r(435964),	-- High-Yield Radiation Bomb
-r(435966),	-- Ez-Thro Radiation Bomb
 2.0.0.6080
 r(30303),	-- Elemental Blasting Powder
 r(30304),	-- Fel Iron Casing
@@ -993,3 +993,8 @@ r(235756),	-- Heavy Skullblasters
 r(235775),	-- Rechargeable Reaves Battery
 r(247717),	-- Gravitational Reduction Slippers
 r(247744),	-- Wormhole Generator: Argus
+10.2.6.53840
+r(430093),	-- Draconic Combatant's Cloth Goggles
+r(430094),	-- Draconic Combatant's Leather Goggles
+r(430095),	-- Draconic Combatant's Mail Goggles
+r(430096),	-- Draconic Combatant's Plate Goggles

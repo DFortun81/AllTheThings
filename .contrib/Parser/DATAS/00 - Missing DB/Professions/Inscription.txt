@@ -635,6 +635,7 @@ r(238402),	--
 r(238403),	--
 r(240254),	--
 8.0.1.25902
+r(256250),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
 r(264494),	-- Inscription
 r(264496),	-- Outland Inscription
 r(264498),	-- Northrend Inscription
@@ -649,6 +650,10 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
+10.2.6.53840
+r(430090),	-- Draconic Combatant's Medallion
+r(430091),	-- Draconic Combatant's Insignia of Alacrity
+r(430092),	-- Draconic Combatant's Emblem
 
 
 
@@ -661,3 +666,7 @@ r(405005),	-- Glyph of Reckoning
 r(413897),	-- Glyph of Omen of Clarity
 3.4.2.49563
 r(414814),	-- Glyph of Shattering Throw
+10.2.6.53840
+r(430090),	-- Draconic Combatant's Medallion
+r(430091),	-- Draconic Combatant's Insignia of Alacrity
+r(430092),	-- Draconic Combatant's Emblem
