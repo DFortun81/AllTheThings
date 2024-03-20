@@ -566,11 +566,11 @@ root(ROOTS.Unsorted, {
 			i(216763),	-- Plunderlord's Silver Cutlass
 			i(216765),	-- Plunderlord's Neck-Severer
 			i(216774),	-- Plunderlord's Hand Cannon
-			i(216775),	-- Deadly Dagger
-			i(216776),	-- Calcified Claymore
+
+
 			i(216777),	-- Blacksteel Saber
 			i(216778),	-- Bloody Iron Cleaver
-			i(216779),	-- Copper Cannon
+
 			i(216780),	-- Marvelous Multi-Shot
 			i(216874),	-- Loot-Filled Basket
 			i(216878),	-- Rigged Chest
@@ -583,17 +583,17 @@ root(ROOTS.Unsorted, {
 			i(216902),	-- Yellow Duck Disguise
 			i(216907),	-- A Tiny Plumed Tricorne
 			i(216932),	-- Noblegarden Trinket
-			i(216984),	-- Skulker's Cloak
+
 			i(216985),	-- Weatherproven Drape
 			i(216986),	-- Swindler's Cutouts
-			i(216987),	-- Swabbie's Gloves
-			i(216988),	-- Spun Cotton Shirt
-			i(216989),	-- Quilted Breeches
+
+
+
 			i(216990),	-- Handwoven Trousers
-			i(216991),	-- Surefooted Boots
+
 			i(216992),	-- Silent Leathers
 			i(216993),	-- Storm Captain's Hat
-			i(216994),	-- Warm Woolen Cap
+
 			i(217018),	-- Draconic Equipment Chest
 			i(217021),	-- Gladiator's Ragged Chest
 			i(217022),	-- Gladiator's Ragged Treads

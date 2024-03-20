@@ -15,16 +15,30 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 			ach(20508),	-- Plunder Wonder
 		}),
 		-- RENOWN 1 --
+		i(216775),	-- Deadly Dagger
 		-- RENOWN 2 --
+		i(216987),	-- Swabbie's Gloves
+		--title(542),	-- Swabbie %s
 		-- RENOWN 3 --
+		i(216991),	-- Surefooted Boots
 		-- RENOWN 4 --
+		i(216989),	-- Quilted Breeches
 		-- RENOWN 5 --
+		i(216776),	-- Calcified Claymore
 		-- RENOWN 6 --
+		pet(4435),	-- Happy
+		i(216988),	-- Spun Cotton Shirt
 		-- RENOWN 7 --
+		i(216984),	-- Skulker's Cloak
 		-- RENOWN 8 --
+		i(216779),	-- Copper Cannon
 		-- RENOWN 9 --
+		i(216994),	-- Warm Woolen Cap
 		-- RENOWN 10 --
+		mount(300154),	-- Silver Tidestallion
+		--title(544),	-- Swashbuckler %s
 		-- RENOWN 11 --
+		pet(4426),	-- Bubbles
 		-- RENOWN 12 --
 		-- RENOWN 13 --
 		-- RENOWN 14 --
