@@ -331,7 +331,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["races"] = HORDE_ONLY,
 		}),
 		ach(20209, {	-- Quacked Killer
-			["timeline"] = { "added 10.2.6" },	-- maybe S4, not sure?
+			["timeline"] = { "added 10.2.6" },
 		}),		
 		ach(2422, {	-- Shake Your Bunny-Maker
 			["provider"] = { "i", 45073 },	-- Spring Flowers
