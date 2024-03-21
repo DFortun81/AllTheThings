@@ -3106,5 +3106,35 @@ root(ROOTS.HiddenAchievementTriggers, {
 			--10.2.5.52968
 			ach(19720),	-- Reclamation of Gilneas (Hidden Character Achievement)
 		})),
+
+		-- 10.2.6
+		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+			ach(19538),	-- Whelpling's Awakened Crests earned
+			ach(19539),	-- Drake's Awakened Crests earned
+			ach(19540),	-- Wyrm's Awakened Crests earned
+			ach(19541),	-- Aspect's's Awakened Crests earned
+			ach(19551),	-- Vicious Saddle (39)
+			ach(20087),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 001 - Complete
+			ach(20088),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 002 - Complete
+			ach(20089),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 003 - Complete
+			ach(20090),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 004 - Complete
+			ach(20091),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 005 - Complete
+			ach(20092),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 006 - Complete
+			ach(20093),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 007 - Complete
+			ach(20094),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 008 - Complete
+			ach(20095),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 009 - Complete
+			ach(20096),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 010 - Complete
+			ach(20097),	-- <DNT> Plunderstorm Tutorial Tracker - Objective 011 - Complete
+			ach(20201),	-- <Hidden> 10.2.6 Void Zone - Tender - Level 1
+			ach(20202),	-- <Hidden> 10.2.6 Void Zone - Tender - Level 2
+			ach(20475),	-- <Hidden> 10.2.6 Void Zone - WOTLK Pet
+			ach(20476),	-- <Hidden> 10.2.6 Void Zone - WOTLK Mount
+			ach(20480),	-- [HIDDEN] Awakening the Dragonflight Raid Portals
+			ach(20507),	-- <Hidden> Achievement Title - Plunderlord - 10.2.6 Void Zone
+			ach(20513),	-- <Hidden> 10.2.6 Void Zone - Glamrok <DNT>
+			ach(20514),	-- <Hidden> 10.2.6 Void Zone - Pepe <DNT>
+			ach(20515),	-- <Hidden> 10.2.6 Void Zone - Toy <DNT>
+			ach(20516),	-- <Hidden> 10.2.6 Void Zone - Quest <DNT>
+		})),
 	}),
 });
