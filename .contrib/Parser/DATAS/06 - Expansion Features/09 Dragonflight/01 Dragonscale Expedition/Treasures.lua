@@ -190,6 +190,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			o(376426, {	-- Magic-Bound Chest
 				["providers"] = {
+					{ "n", 192012 },	-- Icy Lock (vignette)
 					{ "n", 191861 },	-- Magic-Bound Chest (vignette)
 					{ "n", 192243 },	-- Molten Lock (vignette)
 				},
