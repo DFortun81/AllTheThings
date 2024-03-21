@@ -735,8 +735,9 @@ app.MergeSkipFields = {
 	modItemID = true,
 	rawlink = true,
 	sourceIgnored = true,
-	costTotal = true,
 	isCost = true,
+	costTotal = true,
+	isUpgrade = true,
 	upgradeTotal = true,
 	iconPath = true,
 	-- fields added to a group from GetSearchResults
@@ -828,6 +829,9 @@ app.SourceSpecificFields = {
 -- Additionally can specify that the object is being cloned so as to skip special merge restrictions
 local function MergeProperties(g, t, noReplace, clone)
 	if g and t then
+		if g ~= t then
+			g.__merge = t
+		end
 		local skips = app.MergeSkipFields;
 		if noReplace then
 			for k,v in pairs(t) do
@@ -5674,6 +5678,12 @@ local fields = {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
+	-- some calculated properties can let fall-through to the merge source of a group instead of needing to re-calculate in every copy
+	isCost = function(t)
+		local merge = t.__merge
+		if not merge then return end
+		return merge.isCost
+	end,
 	-- ["trackable"] = function(t)
 	-- 	return #t.costCollectibles > 0;
 	-- end,
@@ -7581,8 +7591,30 @@ local function DirectGroupUpdate(group, got)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.GetRelativeRawWithField(group, "window");
 	if window then
+		-- sometimes we may want to trigger a delayed fill operation on a group, but when attempting the fill originally,
+		-- the group may not yet be in a state for proper filling... so we can instead assign the group to trigger a fill
+		-- once it received a direct update within a window
+		if group.DGU_Fill then
+			group.DGU_Fill = nil
+			-- app.PrintDebug("DGU_Fill",app:SearchLink(group))
+			app.FillGroups(group)
+		end
 		-- app.PrintDebug("DGU:Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got);
+	elseif group.DGU_Fill then
+		-- group wants to fill, but isn't yet in a window... so do a delayed DGU again
+		if not tonumber(group.DGU_Fill) then
+			group.DGU_Fill = 3
+		else
+			group.DGU_Fill = group.DGU_Fill - 1
+		end
+		-- give up after a few tries if it doesn't get into a window...
+		if group.DGU_Fill <= 0 then
+			group.DGU_Fill = nil
+			return
+		end
+		-- app.PrintDebug("Delayed DGU_Fill",app:SearchLink(group))
+		DelayedCallback(DirectGroupUpdate, DGUDelay, group);
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;

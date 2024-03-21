@@ -1938,17 +1938,6 @@ if app.IsRetail then
 	-- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 	local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 
-
-	-- These are Items rewarded by WQs which are treated as currency
-	-- other Items which are 'costs' will not be excluded by the "WorldQuestsList:Currencies" setting
-	local WorldQuestCurrencyItems = {
-		[208067] = true,	-- Plump Dreamseed
-		[190189] = true,	-- Sandworn Relic
-		[163036] = true,	-- Polished Pet Charms
-		[151568] = true,	-- Primal Sargerite
-		[116415] = true,	-- Shiny Pet Charms
-	};
-
 	local GetNumQuestLogRewards,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData =
 		  GetNumQuestLogRewards,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData;
 	local function TryPopulateQuestRewards(questObject)
@@ -2018,9 +2007,8 @@ if app.IsRetail then
 							-- don't let cached groups pollute potentially inaccurate raw Data
 							item.link = nil;
 							-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
-							if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
+							if skipCollectibleCurrencies then
 								item.skipFill = true
-								item.isCost = false
 							end
 							app.NestObject(questObject, item, true);
 						end
@@ -2043,7 +2031,6 @@ if app.IsRetail then
 					-- block the group from being collectible as a cost if the option is not enabled
 					if skipCollectibleCurrencies then
 						item.skipFill = true
-						item.isCost = false
 					end
 					app.NestObject(questObject, item, true);
 				end
@@ -2109,9 +2096,6 @@ if app.IsRetail then
 				app.NestObjects(questObject, nonItemNested, true);
 			end
 
-			-- Resolve all symbolic links now that the quest contains items
-			app.FillSymLinks(questObject, true);
-
 			-- Special logic for Torn Invitation... maybe can clean up sometime
 			if questObject.g and #questObject.g > 0 then
 				for _,item in ipairs(questObject.g) do
@@ -2127,7 +2111,11 @@ if app.IsRetail then
 			end
 
 			AssignChildren(questObject);
-			-- Update the group directly
+			-- Update the group directly, and mark it for Filling if we allow filling in dynamic
+			if not skipCollectibleCurrencies then
+				-- app.PrintDebug("DGU_Fill Assigned",questObject.questID)
+				questObject.DGU_Fill = true
+			end
 			app.DirectGroupUpdate(questObject);
 		end
 	end
