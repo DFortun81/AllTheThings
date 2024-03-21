@@ -265,7 +265,7 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 		return title;
 	end,
 	reputationThreshold = function(t)
-		return { 1, t.reputation };
+		return { t.reputation, 0 };
 	end,
 	standing = function(t)
 		return C_GossipInfo_GetFriendshipReputationRanks(t.factionID).currentLevel;
