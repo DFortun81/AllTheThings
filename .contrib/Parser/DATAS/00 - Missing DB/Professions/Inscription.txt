@@ -635,7 +635,6 @@ r(238402),	--
 r(238403),	--
 r(240254),	--
 8.0.1.25902
-r(256250),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
 r(264494),	-- Inscription
 r(264496),	-- Outland Inscription
 r(264498),	-- Northrend Inscription
