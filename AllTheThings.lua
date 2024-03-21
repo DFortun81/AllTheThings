@@ -11041,9 +11041,11 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		local function CreateHeaderData(group, header)
 			-- copy an uncollectible version of the existing header
 			if header then
-				return CreateWrapVisualHeader(header, {group})
+				header = CreateWrapVisualHeader(header, {group})
+				header.SortType = "name"
+				return header
 			else
-				return { g = { group }, ["collectible"] = false, };
+				return { g = { group }, ["collectible"] = false, SortType = "name" };
 			end
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not confined to a direct top header
@@ -11139,7 +11141,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				groups = {};
 				wipe(rootGroups);
 				wipe(mapGroups);
-				header = app.CreateMap(mapID, { g = groups });
+				header = { mapID = mapID, g = groups }
 				currentMaps[mapID] = true;
 				isInInstance = IsInInstance();
 				headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
@@ -11261,14 +11263,16 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 
 				header.u = nil;
 				header.e = nil;
-				header.mapID = mapID;
-				header.visible = true;
 				if header.instanceID then
 					header = app.CreateInstance(header.instanceID, header);
-				elseif header.classID then
-					header = app.CreateCharacterClass(header.classID, header);
 				else
-					header = app.CreateMap(header.mapID, header);
+					if header.classID then
+						header = app.CreateCharacterClass(header.classID, header);
+					else
+						header = app.CreateMap(header.mapID, header);
+					end
+					-- sort top level by name if not in an instance
+					header.SortType = "Global";
 				end
 
 				-- Swap out the map data for the header.
@@ -11277,18 +11281,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				app.SetSkipLevel(2);
 				app.FillGroups(header);
 				app.SetSkipLevel(0);
-
-				-- sort top level by name if not in an instance
-				if not GetRelativeValue(header, "instanceID") then
-					header.SortType = "Global";
-					if header.g then
-						for i,o in ipairs(header.g) do
-							if o.key == "headerID" then
-								o.SortType = "name";
-							end
-						end
-					end
-				end
 
 				local expanded;
 				-- if enabled, minimize rows based on difficulty
