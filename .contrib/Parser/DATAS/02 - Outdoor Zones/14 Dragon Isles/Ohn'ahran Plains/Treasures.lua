@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(381981, {	-- Chest of the Flood
+				["provider"] = { "o", 381712 },	-- Water-Bound Chest
 				["questID"] = 71033,
 				["coord"] = { 56.0, 78.7, OHNAHRAN_PLAINS },
 				["isWeekly"] = true,

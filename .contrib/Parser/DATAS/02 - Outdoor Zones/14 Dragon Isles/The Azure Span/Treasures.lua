@@ -24,13 +24,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(199843),	-- Coldwashed Dragonclaw
 				},
 			}),
-			o(380587, {	-- Crate of Treated Hides
-				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
-				-- ["questID"] = 70286,
-				["g"] = {
-					i(198683),	-- Treated Hides
-				},
-			}),
 			o(376583, {	-- Decay Covered Chest
 				["coords"] = {
 					{ 9.7, 29.1, THE_AZURE_SPAN },

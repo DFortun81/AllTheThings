@@ -136,4 +136,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	n(PLUNDERSTORM, {
 		q(81677),	-- Dieing
 	}),
-}));
+});
