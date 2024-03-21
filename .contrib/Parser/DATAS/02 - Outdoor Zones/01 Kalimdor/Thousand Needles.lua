@@ -913,8 +913,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5852 },	-- Fuel Regulator Blueprints
 								{ "o", 20691 },	-- Cozzle's Footlocker
 							},
-							["cost"] = {{ "i", 5851, 1 }},	-- Cozzle's Key
 							["coord"] = { 43.33, 20.33, STRANGLETHORN_VALE },
+							["cost"] = {{ "i", 5851, 1 }},	-- Cozzle's Key
 						}),
 						-- #if BEFORE 4.0.3
 						i(5851, {	-- Cozzle's Key

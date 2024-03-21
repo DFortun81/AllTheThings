@@ -397,11 +397,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { THE_HINTERLANDS },
 					["lvl"] = 35,
 					["groups"] = {
-						{
-							["itemID"] = 11324,	-- Explorer's Knapsack
+						i(11324, {	-- Explorer's Knapsack
 							["coord"] = { 80.8, 46.8, THE_HINTERLANDS },
 							["timeline"] = { "removed 4.0.3" },
-						},
+						}),
 					},
 				}),
 				q(613, {	-- Cracking Maury's Foot
@@ -576,9 +575,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 35,
 					["groups"] = {
-						objective(1, {	-- 0/1 Smotts' Cutlass
-							["provider"] = { "i", 3935 },	-- Smotts' Cutlass
-						}),
 						q(619, {	-- Enticing Negolash
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 							["cost"] = {
@@ -589,11 +585,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 							["repeatable"] = true,
 							["groups"] = {
-								{
-									["itemID"] = 3935,	-- Smotts' Cutlass
+								objective(1, {	-- 0/1 Smotts' Cutlass
+									["questID"] = 8554,	-- Facing Negolash
+									["provider"] = { "i", 3935 },	-- Smotts' Cutlass
 									["coord"] = { 32.5, 81.9, STRANGLETHORN_VALE },
 									["cr"] = 1494,	-- Negolash
-								}
+								}),
 							},
 						}),
 					},
@@ -862,7 +859,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(594, {	-- Message in a Bottle (1/2)
-					["provider"] = { "i", 4098 },	-- Carefully Folded Note
+					["providers"] = {
+						{ "i", 4098 },	-- Carefully Folded Note
+						{ "o", 2560 },	-- Half-Buried Bottle
+					},
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 45,
 				}),
@@ -1224,9 +1224,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 40,
 					["groups"] = {
-						objective(1, {	-- 0/1 Heart of Mokk
-							["provider"] = { "i", 2797 },	-- Heart of Mokk
-						}),
 						q(349, {	-- Stranglethorn Fever
 							["qg"] = 1449,	-- Witch Doctor Unbagwa
 							["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
@@ -1234,11 +1231,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["repeatable"] = true,
 							["lvl"] = 32,
 							["groups"] = {
-								{
-									["itemID"] = 2797,	-- Heart of Mokk
+								objective(1, {	-- 0/1 Heart of Mokk
+									["questID"] = 348,	-- Stranglethorn Fever
+									["provider"] = { "i", 2797 },	-- Heart of Mokk
 									["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
 									["cr"] = 1514,	-- Mokk the Savage
-								},
+								}),
 							},
 						}),
 						i(4113, {	-- Medicine Blanket
@@ -1356,14 +1354,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1563 },	-- Bloodsail Swashbuckler
 						}),
 						objective(2, {	-- 0/1 Bloodsail Charts
-							["provider"] = { "i", 3920 },	-- Bloodsail Charts
+							["providers"] = {
+								{ "i", 3920 },	-- Bloodsail Charts
+								{ "o", 2086 },	-- Bloodsail Charts
+							},
 							["coords"] = {
 								{ 29.6, 80.8, STRANGLETHORN_VALE },
 								{ 27.2, 82.7, STRANGLETHORN_VALE },
 							},
 						}),
 						objective(3, {	-- 0/1 Bloodsail Orders
-							["provider"] = { "i", 3921 },	-- Bloodsail Orders
+							["providers"] = {
+								{ "i", 3921 },	-- Bloodsail Orders
+								{ "o", 2087 },	-- Bloodsail Orders
+							},
 							["coords"] = {
 								{ 29.6, 80.9, STRANGLETHORN_VALE },
 								{ 27.0, 82.4, STRANGLETHORN_VALE },
@@ -1477,9 +1481,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 32,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stone of the Tides
-							["provider"] = { "i", 4034 },	-- Stone of the Tides
+							["providers"] = {
+								{ "i", 4034 },	-- Stone of the Tides
+								{ "i", 4027 },	-- Catelyn's Blade
+							},
 							["coord"] = { 25, 23.6, STRANGLETHORN_VALE },
-							["cost"] = { { "i", 4027, 1 } },	-- Catelyn's Blade
 							["cr"] = 2624,	-- Gazban
 						}),
 						i(4120, {	-- Robe of Crystal Waters
@@ -1573,7 +1579,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(8552, {	-- The Monogrammed Sash
-					["provider"] = { "i", 3985, 1 },	-- Monogrammed Sash
+					["provider"] = { "i", 3985 },	-- Monogrammed Sash
 					["altQuests"] = { 620 },	-- The Monogrammed Sash
 					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
@@ -1595,8 +1601,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Oglethorpe's Signed Pledge
-							["provider"] = { "i", 11282 },	-- Oglethorpe's Signed Pledge
-							["cost"] = { { "i", 10794, 1 } },	-- Oglethorpe's Pledge of Secrecy
+							["providers"] = {
+								{ "i", 11282 },	-- Oglethorpe's Signed Pledge
+								{ "i", 10794 },	-- Oglethorpe's Pledge of Secrecy
+							},
 						}),
 					},
 				}),
@@ -1751,7 +1759,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- Maury's Clubbed Foot
 							["provider"] = { "i", 3924 },	-- Maury's Clubbed Foot
 							["coord"] = { 35.2, 51.0, STRANGLETHORN_VALE },
-							["questID"] = 609,	-- Voodoo Dues
+							["cr"] = 2535,	-- Maury "Club Foot" Wilkins
 						}),
 						objective(2, {	-- Jon-Jon's Golden Spyglass
 							["provider"] = { "i", 3925 },	-- Jon-Jon's Golden Spyglass
@@ -1796,7 +1804,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/12 Pupellyverbos Port
-							["provider"] = { "i", 3900 },	-- Pupellyverbos Port
+							["providers"] = {
+								{ "i", 3900 },	-- Pupellyverbos Port
+								{ "o", 2068 },	-- Pupellyverbos Port
+							},
 							["coords"] = {
 								{ 81.7, 49.3, THE_HINTERLANDS },
 								{ 80.0, 59.8, THE_HINTERLANDS },
