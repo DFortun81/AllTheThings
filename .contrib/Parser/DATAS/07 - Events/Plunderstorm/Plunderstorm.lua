@@ -6,6 +6,7 @@ PLUNDERSTORM = createHeader({
 	icon = 2055032,
 	text = {
 		en = "Plunderstorm",
+		ru = "Пиратская буря",
 	},
 });
 -- #if NOT ANYCLASSIC

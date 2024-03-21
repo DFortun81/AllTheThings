@@ -234,9 +234,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209898, {	-- Reefbreaker Moruud
-				--["providers"] = {
-				--	{ "n", xx },	-- 
-				--},
+				["providers"] = {
+					{ "n", 210155 },	-- Generic - Empty Bunny (vignette)
+				},
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 65.0, 84.2, EMERALD_DREAM },
 				["g"] = {
