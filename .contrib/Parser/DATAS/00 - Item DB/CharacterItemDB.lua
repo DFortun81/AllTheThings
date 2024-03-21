@@ -472,3 +472,8 @@ iq(212778, 79373, WARLOCK);			-- Grimoire of the Vile Tyrant
 iq(212995, 79450, WARLOCK);			-- Grimoire of the Whispering Observer
 iq(213014, 79455, WARLOCK);			-- Grimoire of the Xorothian Darkglare
 iq(212984, 79444, WARLOCK);			-- Grimoire of the Zealous Observer
+
+------------------
+-- PATCH 10.2.6 --
+------------------
+iq(216907, 80093);					-- A Tiny Plumed Tricorne
