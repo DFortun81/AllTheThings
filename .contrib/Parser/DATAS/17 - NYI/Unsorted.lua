@@ -1000,16 +1000,13 @@ root(ROOTS.Unsorted, {
 			i(217380),	-- Fearless Buccaneer's Boots
 			i(217381),	-- Ensemble: Fearless Buccaneer's Slops
 			i(217382),	-- Ruby Flightstone
-			i(217397),	-- Keg-Stamped Coin
 			i(217408),	-- Awakened Tempostone
 			i(217409),	-- Aspects' Token of Merit
 			i(217410),	-- Awakened Mark of Mastery
-			i(217411),	-- Blackened Flightstone
 			i(217412),	-- Blackened Flightstone
 			i(217413),	-- Depleted Blackened Flightstone
 			i(217415),	-- Depleted Ruby Flightstone
 			i(217416),	-- Depleted Emerald Flightstone
-			i(217419),	-- Large Satchel of Drake's Dreaming Crests
 			i(217420),	-- Large Pouch of Whelpling's Awakened Crests
 
 			i(217494),	-- Glyph of Faeline Stomp
@@ -1035,7 +1032,6 @@ root(ROOTS.Unsorted, {
 
 
 
-			i(217705),	-- Pirate's Booty
 			i(217728),	-- Cache of Awakened Treasures
 			i(217729),	-- Cache of Awakened Treasures
 			i(218114),	-- Eye of Awakening

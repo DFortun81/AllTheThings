@@ -21,6 +21,19 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		},{
 		--	q(81679),	-- Daily Doubloons
 		})),
+		n(VENDORS, {
+			n(219760, {	-- Da'kash Grimledger <Quartermaster>
+				["sourceQuests"] = { 80384 },	-- xx
+				["coord"] = { 46.5, 45.1, VALDRAKKEN },
+				["groups"] = {
+					i(217705),	-- Pirate's Booty
+					--
+					i(217411),	-- Blackened Flightstone
+					i(217419),	-- Large Satchel of Drake's Dreaming Crests
+					--i(210923),	-- Clutch of Wyrm's Dreaming Crests (unsure if need it here)
+				},
+			}),
+		}),
 	}),
 	-- Renown Rewards
 	n(PLUNDERSTORM, bubbleDownRep(2593, {
@@ -37,6 +50,12 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 			i(216989),	-- Quilted Breeches
 		},{ -- RENOWN 5 --
 			i(216776),	-- Calcified Claymore
+			q(80384, {	-- TODO: need english name (wowhead missing it) (account wide quest!)
+				-- pop asap as r5 is obtained with no providers
+				["g"] = {
+					i(217397),	-- Keg-Stamped Coin x15
+				},
+			}),	
 		},{ -- RENOWN 6 --
 			pet(4435),	-- Happy (PET!)
 			i(216988),	-- Spun Cotton Shirt
