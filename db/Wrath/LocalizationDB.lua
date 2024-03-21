@@ -602,6 +602,7 @@ localize(L.HEADER_NAMES, {
 	[-1000286] = select(2,GetAchievementInfo(4400)),
 	[-1000373] = "New Character",
 	[-1000380] = "Bounty",
+	[-1000872] = "Plunderstorm",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -786,6 +787,7 @@ localize(L.HEADER_ICONS, {
 	[-1000286] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000373] = "1530081",
 	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
+	[-1000872] = "2055032",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -9206,6 +9208,7 @@ localize(L.HEADER_NAMES, {
 	[-1000284] = "Годовщина WoW",
 	[-1000373] = "Новый персонаж",
 	[-1000380] = "Премия",
+	[-1000872] = "Пиратская буря",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",

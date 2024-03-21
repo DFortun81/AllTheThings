@@ -312,6 +312,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "Wild Polymorph",
 	[-1000378] = "Soul Brokers",
 	[-1000380] = "Bounty",
+	[-1000872] = "Plunderstorm",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -467,6 +468,7 @@ localize(L.HEADER_ICONS, {
 	[-1000377] = "Interface/ICONS/Spell_Nature_Polymorph",
 	[-1000378] = "Interface/ICONS/spell_shadow_lifedrain02",
 	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
+	[-1000872] = "2055032",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -5649,6 +5651,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "Дикий полиморф",
 	[-1000378] = "Душевные брокеры",
 	[-1000380] = "Премия",
+	[-1000872] = "Пиратская буря",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",

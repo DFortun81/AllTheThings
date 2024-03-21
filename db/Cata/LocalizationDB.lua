@@ -744,6 +744,7 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "Cataclysmic Gladiator: Season 11",
 	[-1000863] = PVP_RATED_BATTLEGROUND,
 	[-1000870] = "The Troll Incursion",
+	[-1000872] = "Plunderstorm",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -953,6 +954,7 @@ localize(L.HEADER_ICONS, {
 	[-1000862] = "236235",
 	[-1000863] = "Interface/Icons/INV_BannerPVP_03",
 	[-1000870] = "135727",
+	[-1000872] = "2055032",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -11144,6 +11146,7 @@ localize(L.HEADER_NAMES, {
 	[-1000861] = select(2, GetAchievementInfo(6124))..": Сезон 10",
 	[-1000862] = "Гладиатор Катаклизма: Сезон 11",
 	[-1000870] = "Вторжение троллей",
+	[-1000872] = "Пиратская буря",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",

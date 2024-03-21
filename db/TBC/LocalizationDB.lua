@@ -446,6 +446,7 @@ localize(L.HEADER_NAMES, {
 	[-1000283] = REFER_A_FRIEND,
 	[-1000373] = "New Character",
 	[-1000380] = "Bounty",
+	[-1000872] = "Plunderstorm",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -602,6 +603,7 @@ localize(L.HEADER_ICONS, {
 	[-1000283] = _.asset("achievement_reputation_08"),
 	[-1000373] = "1530081",
 	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
+	[-1000872] = "2055032",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -7265,6 +7267,7 @@ localize(L.HEADER_NAMES, {
 	[-1000272] = "Без Источника",
 	[-1000373] = "Новый персонаж",
 	[-1000380] = "Премия",
+	[-1000872] = "Пиратская буря",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",

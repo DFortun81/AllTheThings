@@ -29,6 +29,7 @@
 -- World Events
 -- #IMPORT: 07 - Events\\Elemental Unrest\\
 -- #IMPORT: 07 - Events\\Operation Gnomeregan\\
+-- #IMPORT: 07 - Events\\Plunderstorm\\
 -- #IMPORT: 07 - Events\\The Ahn'Qiraj War Effort\\
 -- #IMPORT: 07 - Events\\The Opening of the Dark Portal\\
 -- #IMPORT: 07 - Events\\The Scepter of the Shifting Sands\\
