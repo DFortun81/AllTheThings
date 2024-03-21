@@ -19,6 +19,11 @@ EON_FRINGE = createHeader({
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(EON_FRINGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
+				ach(19507, {	-- Fringe Benefits
+					["sym"] = {{ "achievement_criteria" }},
+				}),
+			})),
 			n(QUESTS, {
 				q(77437, {	-- Eon's Fringe
 					["provider"] = { "n", 209020 },	-- Slaszerathel

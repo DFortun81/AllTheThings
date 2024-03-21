@@ -1,17 +1,6 @@
 4.4.0.53627
 ach(6321),	-- Ruthless Gladiator's Twilight Drake
 10.2.6.53840
-ach(19458),	-- A World Awoken
-ach(19463),	-- Dragon Quests
-ach(19466),	-- Oh My God, They Were Clutchmates
-ach(19478),	-- Now THIS is Dragon Racing!
-ach(19479),	-- Wake Me Up
-ach(19481),	-- Centaur of Attention
-ach(19482),	-- Army of the Fed
-ach(19483),	-- Flight Club
-ach(19485),	-- Closing Time
-ach(19486),	-- Across the Isles
-ach(19507),	-- Fringe Benefits
 ach(19538),	-- Whelpling's Awakened Crests earned
 ach(19539),	-- Drake's Awakened Crests earned
 ach(19540),	-- Wyrm's Awakened Crests earned

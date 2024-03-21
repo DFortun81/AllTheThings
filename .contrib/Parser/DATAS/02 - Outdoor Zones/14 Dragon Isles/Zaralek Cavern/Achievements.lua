@@ -351,6 +351,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			})),
 			ach(17785, {	-- Que Zara(lek), Zara(lek)
+				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					17783,	-- Adventurer of Zaralek Cavern
 					17739,	-- Embers of Neltharion
@@ -361,6 +362,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					17786,	-- Treasures of Zaralek Cavern
 					17763,	-- There's No Place Like Loamm
 				}},
+				["g"] = {
+					i(205206, {	-- Calescent Shalewing (MOUNT!) (MOUNT!) [Not In Game Yet...]
+						["timeline"] = { ADDED_10_2_6 },
+					}),
+				},
 			}),
 			ach(17781),		-- The Smell of Money
 			ach(18361, {	-- To All the Squirrels Burrowed Beneath

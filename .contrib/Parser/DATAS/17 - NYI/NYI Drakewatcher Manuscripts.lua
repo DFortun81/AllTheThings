@@ -44,7 +44,6 @@ root(ROOTS.NeverImplemented, n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(210471),	-- Flourishing Whimsydrake: Body Armor (DM!)
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor (DM!)
 			i(207760),	-- Grotto Netherwing Drake: Armor (DM!)
-			i(207776),	-- Grotto Netherwing Drake: Black Scales (DM!)
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor (DM!)
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales (DM!)
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales (DM!)

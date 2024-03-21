@@ -127,6 +127,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						16461,	-- Stormed Off
 						16502,	-- Storming the Runway
 					}},
+					["g"] = {
+						i(192774, {	-- Coralscale Salamanther (MOUNT!) [Not In Game Yet...]
+							["timeline"] = { ADDED_10_2_6 },
+						}),
+					},
 				}),
 				ach(16490, {	-- Storm Chaser
 					-- Meta Achievement

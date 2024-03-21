@@ -463,6 +463,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					}),
 				}),
 			})),
+			ach(19478, bubbleDownSelf({ ["timeline"] = ADDED_10_2_6 }, {	-- Now THIS is Dragon Racing!
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					16577,	-- Azure Span Glyph Hunter
+					15939,	-- Dragon Racing Completionist: Bronze
+					19306,	-- Emerald Dream Glyph Hunter
+					19118,	-- Emerald Dream Racing Completionist
+					17411,	-- Forbidden Reach Glyph Hunter
+					17294,	-- Forbidden Reach Racing Completionist
+					16576,	-- Ohn'ahran Plains Glyph Hunter
+					16578,	-- Thaldraszus Glyph Hunter
+					16575,	-- Waking Shores Glyph Hunter
+					18150,	-- Zaralek Cavern Glyph Hunter
+					17492,	-- Zaralek Cavern Racing Completionist
+				}},
+				["g"] = {
+					i(207776),	-- Grotto Netherwing Drake: Black Scales (DM!)
+				},
+			})),
 		}),
 	}),
 })));

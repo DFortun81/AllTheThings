@@ -735,6 +735,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		})),
 		header(HEADERS.Item, 206156, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Grotto Netherwing Drake
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
+			i(207776, {["timeline"] = {ADDED_10_2_6}}),	-- Grotto Netherwing Drake: Black Scales (DM!)
 			i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)
 			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!)

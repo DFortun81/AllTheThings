@@ -87,6 +87,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}},
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		ach(19463, {	-- Dragon Quests
+			["timeline"] = { ADDED_10_2_6 },
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				17773,	-- A Blue Dawn
+				17546,	-- A New Beginning
+				17734,	-- Active Listening Skills
+				19507,	-- Fringe Benefits
+				16683,	-- In Tyr's Footsteps
+				18958,	-- Of the Tyr's Guard
+			}},
+		}),
 		ach(15939, {	-- Dragon Racing Completionist
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -248,47 +260,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 		ach(16729, {	-- To All the Squirrels Hidden Til Now
 			crit(56477, {	-- Kelp Nibbler
-				["crs"]	= { 189737 }, -- Kelp Nibbler
+				["crs"]	= { 189737 },	-- Kelp Nibbler
 				["coord"] = { 76.81, 44.12, THE_WAKING_SHORES },
 			}),
 			crit(56478, {	-- Phoenix Hatchling
-				["crs"]	= { 192135 }, -- Phoenix Hatchling
+				["crs"]	= { 192135 },	-- Phoenix Hatchling
 				["coord"] = { 65.13, 28.58, THE_WAKING_SHORES },
 			}),
 			crit(56479, {	-- Docile Kit
-				["crs"]	= { 193756 }, -- Docile Kit
+				["crs"]	= { 193756 },	-- Docile Kit
 				["coord"] = { 58.35, 72.55, THE_WAKING_SHORES },
 			}),
 			crit(56480, {	-- Frilled Hatchling
-				["crs"]	= { 186306 }, -- Frilled Hatchling
+				["crs"]	= { 186306 },	-- Frilled Hatchling
 				["coord"] = { 22.07, 63.78, OHNAHRAN_PLAINS },
 			}),
 			crit(56481, {	-- Thicket Glider
-				["crs"]	= { 192948 }, -- Thicket Glider
+				["crs"]	= { 192948 },	-- Thicket Glider
 				["coord"] = { 52.05, 50.54, OHNAHRAN_PLAINS },
 			}),
 			crit(56482, {	-- Thunderspine Calf
-				["crs"]	= { 192942 }, -- Thunderspine Calf
+				["crs"]	= { 192942 },	-- Thunderspine Calf
 				["coord"] = { 51.72, 51.79, OHNAHRAN_PLAINS },
 			}),
 			crit(56483, {	-- Timbertooth Kit
-				["crs"]	= { 193594 }, -- Timbertooth Kit
+				["crs"]	= { 193594 },	-- Timbertooth Kit
 				["coord"] = { 52.95, 58.41, THE_AZURE_SPAN },
 			}),
 			crit(56484, {	-- Frosty Spiderling
-				["crs"]	= { 186481 }, -- Frosty Spiderling
+				["crs"]	= { 186481 },	-- Frosty Spiderling
 				["coord"] = { 49.92, 57.61, THE_AZURE_SPAN },
 			}),
 			crit(56485, {	-- Crimson Knocker
-				["crs"]	= { 197718 }, -- Crimson Knocker
+				["crs"]	= { 197718 },	-- Crimson Knocker
 				["coord"] = { 28.89, 41.94, THE_AZURE_SPAN },
 			}),
 			crit(56486, {	-- Diminuitive Boghopper
-				["crs"]	= { 195869 }, -- Diminuitive Boghopper
+				["crs"]	= { 195869 },	-- Diminuitive Boghopper
 				["coord"] = { 56.09, 68.71, THALDRASZUS },
 			}),
 			crit(56488, {	-- Reservoir Filly
-				["crs"]	= { 196652 }, -- Reservoir Filly
+				["crs"]	= { 196652 },	-- Reservoir Filly
 				["coord"] =
 					-- #if BEFORE 10.1.5
 					{ 51.24, 56.82, THALDRASZUS },
@@ -298,7 +310,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					-- #endif
 			}),
 			crit(56489, {	-- Rocdrop Scarab
-				["crs"]	= { 185148 }, -- Rocdrop Scarab
+				["crs"]	= { 185148 },	-- Rocdrop Scarab
 				["coord"] = { 51.35, 72.61, THALDRASZUS },
 			}),
 		}),

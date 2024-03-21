@@ -9,10 +9,6 @@ root(ROOTS.Unsorted, {
 				i(217043),	-- Pokee (PET!)
 			}),
 			filter(MOUNTS, {
-				i(211862),	-- Bestowed Ottuk Vanguard (MOUNT!)
-				i(192792),	-- Bestowed Thunderspine Packleader (MOUNT!)
-				i(205206),	-- Calescent Shalewing (MOUNT!)
-				i(210142),	-- Taivan (MOUNT!)
 				i(217340),	-- Voyaging Wilderling (MOUNT!)
 			}),
 			n(PVP, {	-- SEASON 4 PvP

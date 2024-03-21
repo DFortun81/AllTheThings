@@ -51,6 +51,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["_npcs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
 						}),
 					}),
+					ach(19485, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Closing Time
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18637,	-- Chronograde Connoisseur
+							18639,	-- Collapsed Reality
+							18703,	-- Dawn of the Infinite: Galakrond's Fall
+							18704,	-- Dawn of the Infinite: Murozond's Rise
+							18636,	-- Just Following Chronological Orders
+							18640,	-- Lock and Load
+							18638,	-- Minute Menagerie
+							17342,	-- The Future We Make
+							18641,	-- To All The Squirrels I've BEEN Before
+							18635,	-- Verified Rifter
+						}},
+						["g"] = {
+							i(192765),	-- Bestowed Sandskimmer (MOUNT!) [Not In Game Yet...]
+						},
+					})),
 					ach(18639),	-- Collapsed Reality
 					ach(18636),	-- Just Following Chronological Orders
 					ach(18640, {	-- Lock and Load

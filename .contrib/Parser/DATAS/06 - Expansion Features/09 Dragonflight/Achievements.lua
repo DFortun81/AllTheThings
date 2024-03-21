@@ -3,6 +3,45 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(19458, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {	-- A World Awoken
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				18160,	-- Aberrus, the Shadowed Crucible
+				19486,	-- Across the Isles
+				19331,	-- Amirdrassil, the Dream's Hope
+				19307,	-- Dragon Isles Pathfinder
+				19463,	-- Dragon Quests
+				19318,	-- Dream On
+				16808,	-- Friend of the Dragon Isles
+				16585,	-- Loremaster of the Dragon Isles
+				16339,	-- Myths of the Dragonflight Dungeons
+				19478,	-- Now THIS is Dragon Racing!
+				19466,	-- Oh My God, They Were Clutchmates
+				17785,	-- Que Zara(lek), Zara(lek)
+				16343,	-- Vault of the Incarnates
+				17543,	-- You Know How to Reach Me
+			}},
+			["g"] = {
+				i(210142),	-- Taivan (MOUNT!)
+			},
+		})),
+		ach(19486, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Across the Isles
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19482,	-- Army of the Fed
+				19481,	-- Centaur of Attention
+				19485,	-- Closing Time
+				19008,	-- Dream Shaper
+				19483,	-- Flight Club
+				16492,	-- Into the Storm
+				18209,	-- Nothing Stops the Research
+				18867,	-- Through the Ashes and Flames
+				19479,	-- Wake Me Up
+			}},
+			["g"] = {
+				i(192751),	-- Stormtouched Bruffalon (MOUNT!) [Not In Game Yet...]
+			},
+		})),
 		ach(17119, {	-- Deep Cuts From the Vault
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -1003,6 +1042,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		})),
+		ach(20481, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Dragonflight Season 4 Master
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19499,	-- Challenger II: Dragonflight Season 4
+				19782,	-- Dragonflight Keystone Master: Season Four
+				19571,	-- Heroic: Awakened Flames
+				19568,	-- Heroic: Awakened Shadows
+				19565,	-- Heroic: Awakened Storms
+			}},
+			["g"] = {
+				i(217410),	-- Awakened Mark of Mastery
+			},
+		})),
 		ach(16808, {	-- Friend of the Dragon Isles
 			crit(57032, {	-- A Mystery, Sealed
 				["_quests"] = { 66128 },	-- Next Steps
@@ -1092,13 +1144,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		})),
+		ach(19466, {	-- Oh My God, They Were Clutchmates
+			["timeline"] = { ADDED_10_2_6 },
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				16522,	-- A True Explorer
+				16530,	-- Ally of the Flights
+				16539,	-- In High Esteem
+				16529,	-- Joining the Community
+				16528,	-- Joining the Khansguard
+				18615,	-- Legend of the Multiverse
+				16494,	-- Loyalty to the Prince
+				16537,	-- Maximum Power!
+				16760,	-- The Obsidian Bloodline
+				17763,	-- There's No Place Like Loamm
+				19235,	-- Warden of the Dream
+				17427,	-- Winterpelt Conversationalist
+			}},
+		}),
 		ach(16549, {	-- Popular Around the Isles
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				16522,	-- A True Explorer
-				16528,	-- Joining the Khansguard
-				16529,	-- Joining the Community
 				16530,	-- Ally of the Flights
+				16529,	-- Joining the Community
+				16528,	-- Joining the Khansguard
 			}},
 		}),
 		ach(17978),	-- Stones Can Fly!
