@@ -2553,6 +2553,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	if isTopLevelSearch then
 		-- Create a list of sources
+		-- app.PrintDebug("SourceLocations",paramA,SourceLocationSettingsKey[paramA])
 		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
 			local temp, text, parent = {};
 			local unfiltered, right = {};
@@ -2570,6 +2571,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					and not HasCost(j, paramA, paramB)
 				then
 					text = app.GenerateSourcePathForTooltip(parent);
+					-- app.PrintDebug("SourceLocation",text)
 					if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
 						-- doesn't meet current unobtainable filters from the Thing itself
 						if not FilterUnobtainable(j) then
@@ -3456,7 +3458,7 @@ app.FillGroups = function(group)
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
 
-	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",groupWindow)
+	-- app.PrintDebug("FillGroups",app:SearchLink(group),group.__type,"window?",groupWindow)
 
 	-- Fill the group with all nestable content
 	if groupWindow then
@@ -9401,6 +9403,7 @@ RowOnEnter = function (self)
 		-- "saved",
 		"collectibleAsCost",
 		"costTotal",
+		"isCost",
 		"filledCost",
 		"isUpgrade",
 		"collectibleAsUpgrade",
