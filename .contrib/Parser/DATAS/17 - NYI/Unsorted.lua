@@ -8,8 +8,130 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(217043),	-- Pokee (PET!)
 			}),
-			filter(MOUNTS, {
-				i(217340),	-- Voyaging Wilderling (MOUNT!)
+			filter(COSMETIC, {
+				------ Dragonriding Cup ------
+				i(212686),	-- Azure Riders of Azeroth Tabard
+				i(212874),	-- Drake Racer's Azure Jersey
+				i(212875),	-- Drake Racer's Azure Handwraps
+				i(212876),	-- Drake Racer's Azure Belt
+				i(212877),	-- Drake Racer's Azure Leggings
+				i(212878),	-- Drake Racer's Azure Boots
+				i(212879),	-- Drake Racer's Azure Scarf
+				i(212880),	-- Drake Racer's Azure Shoulderpads
+				i(212881),	-- Drake Racer's Azure Helmet
+				i(213585),	-- Icy Drake Racer's Scarf
+				i(213586),	-- Icy Drake Racer's Boots
+				i(213587),	-- Icy Drake Racer's Leggings
+				i(213588),	-- Icy Drake Racer's Belt
+				i(213589),	-- Icy Drake Racer's Handwraps
+				i(213590),	-- Icy Drake Racer's Jersey
+				i(213591),	-- Icy Drake Racer's Shoulderpads
+				i(213592),	-- Icy Drake Racer's Helmet
+
+				------ Fearless Buccaneer ------
+				i(217381),	-- Ensemble: Fearless Buccaneer's Slops
+				i(217380),	-- Fearless Buccaneer's Boots
+				i(217379),	-- Fearless Buccaneer's Breeches
+				i(217378),	-- Fearless Buccaneer's Sash
+				i(217377),	-- Fearless Buccaneer's Tunic
+
+				------ Gladiator's Battered ------
+				i(217038),	-- Ensemble: Gladiator's Battered Armor
+				i(217037),	-- Gladiator's Battered Belt
+				i(217030),	-- Gladiator's Battered Chest
+				i(217033),	-- Gladiator's Battered Grips
+				i(217034),	-- Gladiator's Battered Headband
+				i(217035),	-- Gladiator's Battered Leggings
+				i(217036),	-- Gladiator's Battered Shoulderpads
+				i(217031),	-- Gladiator's Battered Treads
+
+				------ Gladiator's Ragged ------
+				i(217029),	-- Ensemble: Gladiator's Ragged Armor
+				i(217028),	-- Gladiator's Ragged Belt
+				i(217021),	-- Gladiator's Ragged Chest
+				i(217023),	-- Gladiator's Ragged Grips
+				i(217024),	-- Gladiator's Ragged Headband
+				i(217026),	-- Gladiator's Ragged Leggings
+				i(217027),	-- Gladiator's Ragged Shoulderpads
+				i(217022),	-- Gladiator's Ragged Treads
+
+				------ Single Pieces ------
+				i(213635),	-- Checkered Pennant
+				i(213396),	-- Classic Midnight Tabard
+				i(213394),	-- Ebony Crown of the Red Rose
+				i(217375),	-- Frenzied Hat of the Crimson Seas
+				i(217373),	-- Frenzied Hat of the Dark Depths
+				i(217372),	-- Frenzied Hat of the Deep Blue
+				i(217376),	-- Frenzied Hat of the Murky Waters
+				i(217374),	-- Frenzied Hat of the Shallows
+				i(213395),	-- Gloves of the Midnight Soiree
+				i(213393),	-- Guise of the Golden Masquerade
+			}),
+			filter(MISC, {
+				filter(GLYPHS, {
+					------ Shadowlands Cov Glyphs ------
+					i(217596),	-- Glyph of Abomination Limb
+					i(217592),	-- Glyph of Adaptive Swarm
+					i(217588),	-- Glyph of Blessing of the Seasons
+					i(217585),	-- Glyph of Convoke the Spirits
+					i(217593),	-- Glyph of Death Chakram
+					i(217587),	-- Glyph of Divine Toll
+					i(217597),	-- Glyph of Echoing Reprimand
+					i(217591),	-- Glyph of Elysian Decree
+					i(217494),	-- Glyph of Faeline Stomp
+					i(217598),	-- Glyph of Flagellation
+					i(217589),	-- Glyph of Mindgames
+					i(217599),	-- Glyph of Primordial Wave
+					i(217586),	-- Glyph of Radiant Spark
+					i(217583),	-- Glyph of Sepsis
+					i(217594),	-- Glyph of Shifting Power
+					i(217600),	-- Glyph of Soul Rot
+					i(217584),	-- Glyph of Spear of Bastion
+					i(217590),	-- Glyph of the Hunt
+					i(217595),	-- Glyph of Weapons of Order
+				}),
+				------ Crests & Flightstones?? ------
+				i(212458),	-- Awakened Flightstone
+				i(217412),	-- Blackened Flightstone
+				i(212367),	-- Clutch of Wyrm's Awakened Crests
+				i(220203),	-- Clutch of Wyrm's Dreaming Crests
+				i(217413),	-- Depleted Blackened Flightstone
+				i(217416),	-- Depleted Emerald Flightstone
+				i(217415),	-- Depleted Ruby Flightstone
+				i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
+				i(217420),	-- Large Pouch of Whelpling's Awakened Crests
+				i(211950),	-- Lively Clutch of Wyrm's Awakened Crests
+				i(211951),	-- Pouch of Whelpling's Awakened Crests
+				i(220204),	-- Pouch of Whelpling's Dreaming Crests
+				i(212384),	-- Restless Satchel of Drake's Awakened Crests
+				i(217382),	-- Ruby Flightstone
+				i(211952),	-- Satchel of Drake's Awakened Crests
+				i(220205),	-- Satchel of Drake's Dreaming Crests
+				i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
+				i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
+				i(212383),	-- Yawning Basket of Aspect's Awakened Crests
+				------ Nobelgarden ------
+				i(216890),	-- Black Duck Disguise
+				i(216897),	-- Brown Duck Disguise
+				i(216488),	-- Duck Potion
+				i(216489),	-- Golden Egg Heirloom
+				i(216874),	-- Loot-Filled Basket
+				i(213428),	-- Loot-Stuffed Basket
+				i(216898),	-- Mallard Duck Disguise
+				i(210594),	-- Noblegarden Trinket
+				i(216932),	-- Noblegarden Trinket
+				i(216900),	-- Pink Duck Disguise
+				i(216901),	-- White Duck Disguise
+				i(216902),	-- Yellow Duck Disguise
+				------ Unknown ------
+				i(212175),	-- Draconic Commendation
+			}),
+			n(PROFESSIONS, {
+				i(211515),	-- Splintered Spark of Awakening
+				------ NYI?? ------
+				i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
+				i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest
+				i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
 			}),
 			n(PVP, {	-- SEASON 4 PvP
 				i(216026),	-- Draconic Gladiator's Silk Tunic
@@ -478,571 +600,365 @@ root(ROOTS.Unsorted, {
 				i(211772),	-- Glorious Medal of Honor
 				i(211773),	-- Medal of Conquest
 				i(210326),	-- Cracked Medal of Conquest
+				i(217018),	-- Draconic Equipment Chest
 			}),
 			n(SPECIAL, {	-- SEASON 4 PvE
-				i(217176),	-- Hauberk of the Awakened
-				i(217177),	-- Gauntlets of the Awakened
-				i(217178),	-- Crown of the Awakened
-				i(217179),	-- Legguards of the Awakened
-				i(217180),	-- Talons of the Awakened
-				i(217181),	-- Stormwing Harrier's Cuirass
-				i(217182),	-- Stormwing Harrier's Handguards
-				i(217183),	-- Stormwing Harrier's Skullmask
-				i(217184),	-- Stormwing Harrier's Greaves
-				i(217185),	-- Stormwing Harrier's Pinions
-				i(217186),	-- Chestwrap of the Waking Fist
-				i(217187),	-- Palms of the Waking Fist
-				i(217188),	-- Gaze of the Waking Fist
-				i(217189),	-- Legguards of the Waking Fist
-				i(217190),	-- Mantle of the Waking Fist
-				i(217191),	-- Chestroots of the Autumn Blaze
-				i(217192),	-- Handguards of the Autumn Blaze
-				i(217193),	-- Bough of the Autumn Blaze
-				i(217194),	-- Pants of the Autumn Blaze
-				i(217195),	-- Mantle of the Autumn Blaze
-				i(217196),	-- Heartfire Sentinel's Brigandine
-				i(217197),	-- Heartfire Sentinel's Protectors
-				i(217198),	-- Heartfire Sentinel's Forgehelm
-				i(217199),	-- Heartfire Sentinel's Faulds
-				i(217200),	-- Heartfire Sentinel's Steelwings
-				i(217201),	-- Grasp of the Furnace Seraph
-				i(217202),	-- Mask of the Furnace Seraph
-				i(217203),	-- Breeches of the Furnace Seraph
-				i(217204),	-- Devotion of the Furnace Seraph
-				i(217205),	-- Command of the Furnace Seraph
-				i(217206),	-- Lurking Specter's Brigandine
-				i(217207),	-- Lurking Specter's Handgrips
-				i(217208),	-- Lurking Specter's Visage
-				i(217209),	-- Lurking Specter's Tights
-				i(217210),	-- Lurking Specter's Shoulderblades
-				i(217211),	-- Grips of the Sinister Savant
-				i(217212),	-- Grimhorns of the Sinister Savant
-				i(217213),	-- Leggings of the Sinister Savant
-				i(217214),	-- Amice of the Sinister Savant
-				i(217215),	-- Cursed Robes of the Sinister Savant
-				i(217216),	-- Battlechest of the Onyx Crucible
-				i(217217),	-- Handguards of the Onyx Crucible
-				i(217218),	-- Thraexhelm of the Onyx Crucible
-				i(217219),	-- Legplates of the Onyx Crucible
-				i(217220),	-- Pauldrons of the Onyx Crucible
-				i(217221),	-- Casket of the Risen Nightmare
-				i(217222),	-- Thorns of the Risen Nightmare
-				i(217223),	-- Piercing Gaze of the Risen Nightmare
-				i(217224),	-- Greaves of the Risen Nightmare
-				i(217225),	-- Skewers of the Risen Nightmare
-				i(217226),	-- Screaming Torchfiend's Binding
-				i(217227),	-- Screaming Torchfiend's Grasp
-				i(217228),	-- Screaming Torchfiend's Burning Scowl
-				i(217229),	-- Screaming Torchfiend's Blazewraps
-				i(217230),	-- Screaming Torchfiend's Horned Memento
-				i(217231),	-- Wayward Chronomancer's Gloves
-				i(217232),	-- Wayward Chronomancer's Chronocap
-				i(217233),	-- Wayward Chronomancer's Pantaloons
-				i(217234),	-- Wayward Chronomancer's Metronomes
-				i(217235),	-- Wayward Chronomancer's Patchwork
-				i(217236),	-- Greatwolf Outcast's Harness
-				i(217237),	-- Greatwolf Outcast's Grips
-				i(217238),	-- Greatwolf Outcast's Jaws
-				i(217239),	-- Greatwolf Outcast's Fur-Lined Kilt
-				i(217240),	-- Greatwolf Outcast's Companions
-				i(217316),	-- Dreadful Fleeting Hourglass
-				i(217317),	-- Mystic Fleeting Hourglass
-				i(217318),	-- Venerated Fleeting Hourglass
-				i(217319),	-- Zenith Fleeting Hourglass
-				i(217320),	-- Dreadful Quickened Bronzestone
-				i(217321),	-- Mystic Quickened Bronzestone
-				i(217322),	-- Venerated Quickened Bronzestone
-				i(217323),	-- Zenith Quickened Bronzestone
-				i(217324),	-- Dreadful Decelerating Chronograph
-				i(217325),	-- Mystic Decelerating Chronograph
-				i(217326),	-- Venerated Decelerating Chronograph
-				i(217327),	-- Zenith Decelerating Chronograph
-				i(217328),	-- Dreadful Ephemeral Hypersphere
-				i(217329),	-- Mystic Ephemeral Hypersphere
-				i(217330),	-- Venerated Ephemeral Hypersphere
-				i(217331),	-- Zenith Ephemeral Hypersphere
-				i(217332),	-- Dreadful Synchronous Timestrand
-				i(217333),	-- Mystic Synchronous Timestrand
-				i(217334),	-- Venerated Synchronous Timestrand
-				i(217335),	-- Zenith Synchronous Timestrand
-				i(217421),	-- Vault Raider's Earthen Slicer
-				i(217422),	-- Vault Raider's Frozen Slicer
-				i(217423),	-- Vault Raider's Storming Slicer
-				i(217424),	-- Vault Raider's Crystal Slicer
-				i(217425),	-- Vault Raider's Earthen Thumper
-				i(217426),	-- Vault Raider's Frozen Thumper
-				i(217427),	-- Vault Raider's Storming Thumper
-				i(217428),	-- Vault Raider's Crystal Thumper
-				i(217429),	-- Vault Raider's Earthen Crossbow
-				i(217430),	-- Vault Raider's Frozen Crossbow
-				i(217431),	-- Vault Raider's Storming Crossbow
-				i(217432),	-- Vault Raider's Crystal Crossbow
-				i(217433),	-- Vault Raider's Earthen Bulwark
-				i(217434),	-- Vault Raider's Frozen Bulwark
-				i(217435),	-- Vault Raider's Storming Bulwark
-				i(217436),	-- Vault Raider's Crystal Bulwark
-				i(217437),	-- Vault Raider's Earthen Pavise
-				i(217438),	-- Vault Raider's Frozen Pavise
-				i(217439),	-- Vault Raider's Storming Pavise
-				i(217440),	-- Vault Raider's Crystal Pavise
-				i(217441),	-- Vault Raider's Earthen Conduit
-				i(217442),	-- Vault Raider's Frozen Conduit
-				i(217443),	-- Vault Raider's Storming Conduit
-				i(217444),	-- Vault Raider's Crystal Conduit
-				i(217445),	-- Vault Raider's Earthen Scriptures
-				i(217446),	-- Vault Raider's Frozen Scriptures
-				i(217447),	-- Vault Raider's Storming Scriptures
-				i(217448),	-- Vault Raider's Crystal Scriptures
-				i(217449),	-- Vault Raider's Earthen Crusher
-				i(217450),	-- Vault Raider's Frozen Crusher
-				i(217451),	-- Vault Raider's Storming Crusher
-				i(217452),	-- Vault Raider's Crystal Crusher
-				i(217453),	-- Vault Raider's Earthen Splitter
-				i(217454),	-- Vault Raider's Frozen Splitter
-				i(217455),	-- Vault Raider's Storming Splitter
-				i(217456),	-- Vault Raider's Crystal Splitter
-				i(217457),	-- Vault Raider's Earthen Halberd
-				i(217458),	-- Vault Raider's Frozen Halberd
-				i(217459),	-- Vault Raider's Storming Halberd
-				i(217460),	-- Vault Raider's Crystal Halberd
-				i(217461),	-- Vault Raider's Earthen Pillar
-				i(217462),	-- Vault Raider's Frozen Pillar
-				i(217463),	-- Vault Raider's Storming Pillar
-				i(217464),	-- Vault Raider's Crystal Pillar
-				i(217465),	-- Vault Raider's Earthen Staff
-				i(217466),	-- Vault Raider's Frozen Staff
-				i(217467),	-- Vault Raider's Storming Staff
-				i(217468),	-- Vault Raider's Crystal Staff
-				i(217469),	-- Vault Raider's Earthen Shard
-				i(217470),	-- Vault Raider's Frozen Shard
-				i(217471),	-- Vault Raider's Storming Shard
-				i(217472),	-- Vault Raider's Crystal Shard
-				i(217473),	-- Vault Raider's Earthen Knife
-				i(217474),	-- Vault Raider's Frozen Knife
-				i(217475),	-- Vault Raider's Storming Knife
-				i(217476),	-- Vault Raider's Crystal Knife
-				i(217477),	-- Vault Raider's Earthen Glaives
-				i(217478),	-- Vault Raider's Frozen Glaives
-				i(217479),	-- Vault Raider's Storming Glaives
-				i(217480),	-- Vault Raider's Crystal Glaives
-				i(217481),	-- Vault Raider's Earthen Fists
-				i(217482),	-- Vault Raider's Frozen Fists
-				i(217483),	-- Vault Raider's Storming Fists
-				i(217484),	-- Vault Raider's Crystal Fists
-				i(217485),	-- Vault Raider's Earthen Greatbow
-				i(217486),	-- Vault Raider's Frozen Greatbow
-				i(217487),	-- Vault Raider's Storming Greatbow
-				i(217488),	-- Vault Raider's Crystal Greatbow
-				i(217489),	-- Vault Raider's Earthen Scepter
-				i(217490),	-- Vault Raider's Frozen Scepter
-				i(217491),	-- Vault Raider's Storming Scepter
-				i(217492),	-- Vault Raider's Crystal Scepter
-				i(217493),	-- Vault Raider's Primal Greatstaff
-				i(217507),	-- Crucible Raider's Bronzed Mutilator
-				i(217508),	-- Crucible Raider's Shadowed Mutilator
-				i(217509),	-- Crucible Raider's Molten Mutilator
-				i(217510),	-- Crucible Raider's Corrupted Mutilator
-				i(217511),	-- Crucible Raider's Bronzed Lance
-				i(217512),	-- Crucible Raider's Shadowed Lance
-				i(217513),	-- Crucible Raider's Molten Lance
-				i(217514),	-- Crucible Raider's Corrupted Lance
-				i(217515),	-- Crucible Raider's Bronzed Cudgel
-				i(217516),	-- Crucible Raider's Shadowed Cudgel
-				i(217517),	-- Crucible Raider's Molten Cudgel
-				i(217518),	-- Crucible Raider's Corrupted Cudgel
-				i(217519),	-- Crucible Raider's Bronzed Rod
-				i(217520),	-- Crucible Raider's Shadowed Rod
-				i(217521),	-- Crucible Raider's Molten Rod
-				i(217522),	-- Crucible Raider's Corrupted Rod
-				i(217523),	-- Crucible Raider's Bronzed Focus
-				i(217524),	-- Crucible Raider's Shadowed Focus
-				i(217525),	-- Crucible Raider's Molten Focus
-				i(217526),	-- Crucible Raider's Corrupted Focus
-				i(217527),	-- Crucible Raider's Bronzed Kiteshield
-				i(217528),	-- Crucible Raider's Shadowed Kiteshield
-				i(217529),	-- Crucible Raider's Molten Kiteshield
-				i(217530),	-- Crucible Raider's Corrupted Kiteshield
-				i(217531),	-- Crucible Raider's Bronzed Wingblades
-				i(217532),	-- Crucible Raider's Shadowed Wingblades
-				i(217533),	-- Crucible Raider's Molten Wingblades
-				i(217534),	-- Crucible Raider's Corrupted Wingblades
-				i(217535),	-- Crucible Raider's Bronzed Hatchet
-				i(217536),	-- Crucible Raider's Shadowed Hatchet
-				i(217537),	-- Crucible Raider's Molten Hatchet
-				i(217538),	-- Crucible Raider's Corrupted Hatchet
-				i(217539),	-- Crucible Raider's Bronzed Longbow
-				i(217540),	-- Crucible Raider's Shadowed Longbow
-				i(217541),	-- Crucible Raider's Molten Longbow
-				i(217542),	-- Crucible Raider's Corrupted Longbow
-				i(217543),	-- Crucible Raider's Bronzed Mace
-				i(217544),	-- Crucible Raider's Shadowed Mace
-				i(217545),	-- Crucible Raider's Molten Mace
-				i(217546),	-- Crucible Raider's Corrupted Mace
-				i(217547),	-- Crucible Raider's Bronzed Elderstaff
-				i(217548),	-- Crucible Raider's Shadowed Elderstaff
-				i(217549),	-- Crucible Raider's Molten Elderstaff
-				i(217550),	-- Crucible Raider's Corrupted Elderstaff
-				i(217551),	-- Crucible Raider's Bronzed Cleaver
-				i(217552),	-- Crucible Raider's Shadowed Cleaver
-				i(217553),	-- Crucible Raider's Molten Cleaver
-				i(217554),	-- Crucible Raider's Corrupted Cleaver
-				i(217555),	-- Crucible Raider's Bronzed Cannon
-				i(217556),	-- Crucible Raider's Shadowed Cannon
-				i(217557),	-- Crucible Raider's Molten Cannon
-				i(217558),	-- Crucible Raider's Corrupted Cannon
-				i(217559),	-- Crucible Raider's Bronzed Claws
-				i(217560),	-- Crucible Raider's Shadowed Claws
-				i(217561),	-- Crucible Raider's Molten Claws
-				i(217562),	-- Crucible Raider's Corrupted Claws
-				i(217563),	-- Crucible Raider's Bronzed Control Rod
-				i(217564),	-- Crucible Raider's Shadowed Control Rod
-				i(217565),	-- Crucible Raider's Molten Control Rod
-				i(217566),	-- Crucible Raider's Shadowed Control Rod
-				i(217567),	-- Crucible Raider's Bronzed Tome
-				i(217568),	-- Crucible Raider's Shadowed Tome
-				i(217569),	-- Crucible Raider's Molten Tome
-				i(217570),	-- Crucible Raider's Corrupted Tome
-				i(217571),	-- Crucible Raider's Bronzed Ultra Greatsword
-				i(217572),	-- Crucible Raider's Shadowed Ultra Greatsword
-				i(217573),	-- Crucible Raider's Molten Ultra Greatsword
-				i(217574),	-- Crucible Raider's Corrupted Ultra Greatsword
-				i(217575),	-- Crucible Raider's Bronzed Greatshield
-				i(217576),	-- Crucible Raider's Shadowed Greatshield
-				i(217577),	-- Crucible Raider's Molten Greatshield
-				i(217578),	-- Crucible Raider's Corrupted Greatshield
-				i(217579),	-- Crucible Raider's Bronzed Shiv
-				i(217580),	-- Crucible Raider's Shadowed Shiv
-				i(217581),	-- Crucible Raider's Molten Shiv
-				i(217582),	-- Crucible Raider's Corrupted Shiv
-				i(217615),	-- Dream Raider's Azure Greathammer
-				i(217616),	-- Dream Raider's Blazing Greathammer
-				i(217617),	-- Dream Raider's Emerald Greathammer
-				i(217618),	-- Dream Raider's Shadowflame Greathammer
-				i(217619),	-- Dream Raider's Azure Torch
-				i(217620),	-- Dream Raider's Blazing Torch
-				i(217621),	-- Dream Raider's Emerald Torch
-				i(217622),	-- Dream Raider's Shadowflame Torch
-				i(217623),	-- Dream Raider's Azure Flayer
-				i(217624),	-- Dream Raider's Blazing Flayer
-				i(217625),	-- Dream Raider's Emerald Flayer
-				i(217626),	-- Dream Raider's Shadowflame Flayer
-				i(217627),	-- Dream Raider's Azure Defender
-				i(217628),	-- Dream Raider's Blazing Defender
-				i(217629),	-- Dream Raider's Emerald Defender
-				i(217630),	-- Dream Raider's Shadowflame Defender
-				i(217631),	-- Dream Raider's Azure Dreamcarver
-				i(217632),	-- Dream Raider's Blazing Dreamcarver
-				i(217633),	-- Dream Raider's Emerald Dreamcarver
-				i(217634),	-- Dream Raider's Shadowflame Dreamcarver
-				i(217635),	-- Dream Raider's Azure Razor
-				i(217636),	-- Dream Raider's Azure Saber
-				i(217637),	-- Dream Raider's Blazing Saber
-				i(217638),	-- Dream Raider's Emerald Saber
-				i(217639),	-- Dream Raider's Shadowflame Saber
-				i(217640),	-- Dream Raider's Azure Rifle
-				i(217641),	-- Dream Raider's Blazing Rifle
-				i(217642),	-- Dream Raider's Emerald Rifle
-				i(217643),	-- Dream Raider's Shadowflame Rifle
-				i(217644),	-- Dream Raider's Azure Paws
-				i(217645),	-- Dream Raider's Blazing Paws
-				i(217646),	-- Dream Raider's Emerald Paws
-				i(217647),	-- Dream Raider's Shadowflame Paws
-				i(217648),	-- Dream Raider's Azure Chime
-				i(217649),	-- Dream Raider's Blazing Chime
-				i(217650),	-- Dream Raider's Emerald Chime
-				i(217651),	-- Dream Raider's Shadowflame Chime
-				i(217652),	-- Dream Raider's Azure Scythe
-				i(217653),	-- Dream Raider's Blazing Scythe
-				i(217654),	-- Dream Raider's Emerald Scythe
-				i(217655),	-- Dream Raider's Shadowflame Scythe
-				i(217656),	-- Dream Raider's Azure Sickle
-				i(217657),	-- Dream Raider's Blazing Sickle
-				i(217658),	-- Dream Raider's Emerald Sickle
-				i(217659),	-- Dream Raider's Shadowflame Sickle
-				i(217660),	-- Dream Raider's Replica Dreambinder
-				i(217661),	-- Dream Raider's Azure Barrier
-				i(217662),	-- Dream Raider's Blazing Barrier
-				i(217663),	-- Dream Raider's Emerald Barrier
-				i(217664),	-- Dream Raider's Shadowflame Barrier
-				i(217665),	-- Dream Raider's Azure Cleaver
-				i(217666),	-- Dream Raider's Blazing Cleaver
-				i(217667),	-- Dream Raider's Emerald Cleaver
-				i(217668),	-- Dream Raider's Shadowflame Cleaver
-				i(217669),	-- Dream Raider's Azure Charglaive
-				i(217670),	-- Dream Raider's Blazing Charglaive
-				i(217671),	-- Dream Raider's Emerald Charglaive
-				i(217672),	-- Dream Raider's Shadowflame Charglaive
-				i(217673),	-- Dream Raider's Azure Blade
-				i(217674),	-- Dream Raider's Blazing Blade
-				i(217675),	-- Dream Raider's Emerald Blade
-				i(217676),	-- Dream Raider's Shadowflame Blade
-				i(217677),	-- Dream Raider's Azure Trident
-				i(217678),	-- Dream Raider's Blazing Trident
-				i(217679),	-- Dream Raider's Emerald Trident
-				i(217680),	-- Dream Raider's Shadowflame Trident
-				i(217681),	-- Dream Raider's Azure Recurve
-				i(217682),	-- Dream Raider's Blazing Recurve
-				i(217683),	-- Dream Raider's Emerald Recurve
-				i(217684),	-- Dream Raider's Shadowflame Recurve
-				i(217685),	-- Dream Raider's Azure Poleax
-				i(217686),	-- Dream Raider's Blazing Poleax
-				i(217687),	-- Dream Raider's Emerald Poleax
-				i(217688),	-- Dream Raider's Shadowflame Poleax
-				i(217689),	-- Dream Raider's Azure Flare
-				i(217690),	-- Dream Raider's Blazing Flare
-				i(217691),	-- Dream Raider's Emerald Flare
-				i(217692),	-- Dream Raider's Shadowflame Flare
-				i(217698),	-- Scale of Awakening
-				i(217700),	-- Scale of Awakening
-				i(217601),	-- Crucible Raider's Bronzed Beacon
-				i(217602),	-- Crucible Raider's Shadowed Beacon
-				i(217603),	-- Crucible Raider's Molten Beacon
-				i(217604),	-- Crucible Raider's Corrupted Beacon
+				n(SETS, {	-- Tier Sets
+					i(217316),	-- Dreadful Fleeting Hourglass
+					i(217317),	-- Mystic Fleeting Hourglass
+					i(217318),	-- Venerated Fleeting Hourglass
+					i(217319),	-- Zenith Fleeting Hourglass
+					i(217320),	-- Dreadful Quickened Bronzestone
+					i(217321),	-- Mystic Quickened Bronzestone
+					i(217322),	-- Venerated Quickened Bronzestone
+					i(217323),	-- Zenith Quickened Bronzestone
+					i(217324),	-- Dreadful Decelerating Chronograph
+					i(217325),	-- Mystic Decelerating Chronograph
+					i(217326),	-- Venerated Decelerating Chronograph
+					i(217327),	-- Zenith Decelerating Chronograph
+					i(217328),	-- Dreadful Ephemeral Hypersphere
+					i(217329),	-- Mystic Ephemeral Hypersphere
+					i(217330),	-- Venerated Ephemeral Hypersphere
+					i(217331),	-- Zenith Ephemeral Hypersphere
+					i(217332),	-- Dreadful Synchronous Timestrand
+					i(217333),	-- Mystic Synchronous Timestrand
+					i(217334),	-- Venerated Synchronous Timestrand
+					i(217335),	-- Zenith Synchronous Timestrand
+					i(217176),	-- Hauberk of the Awakened
+					i(217177),	-- Gauntlets of the Awakened
+					i(217178),	-- Crown of the Awakened
+					i(217179),	-- Legguards of the Awakened
+					i(217180),	-- Talons of the Awakened
+					i(217181),	-- Stormwing Harrier's Cuirass
+					i(217182),	-- Stormwing Harrier's Handguards
+					i(217183),	-- Stormwing Harrier's Skullmask
+					i(217184),	-- Stormwing Harrier's Greaves
+					i(217185),	-- Stormwing Harrier's Pinions
+					i(217186),	-- Chestwrap of the Waking Fist
+					i(217187),	-- Palms of the Waking Fist
+					i(217188),	-- Gaze of the Waking Fist
+					i(217189),	-- Legguards of the Waking Fist
+					i(217190),	-- Mantle of the Waking Fist
+					i(217191),	-- Chestroots of the Autumn Blaze
+					i(217192),	-- Handguards of the Autumn Blaze
+					i(217193),	-- Bough of the Autumn Blaze
+					i(217194),	-- Pants of the Autumn Blaze
+					i(217195),	-- Mantle of the Autumn Blaze
+					i(217196),	-- Heartfire Sentinel's Brigandine
+					i(217197),	-- Heartfire Sentinel's Protectors
+					i(217198),	-- Heartfire Sentinel's Forgehelm
+					i(217199),	-- Heartfire Sentinel's Faulds
+					i(217200),	-- Heartfire Sentinel's Steelwings
+					i(217201),	-- Grasp of the Furnace Seraph
+					i(217202),	-- Mask of the Furnace Seraph
+					i(217203),	-- Breeches of the Furnace Seraph
+					i(217204),	-- Devotion of the Furnace Seraph
+					i(217205),	-- Command of the Furnace Seraph
+					i(217206),	-- Lurking Specter's Brigandine
+					i(217207),	-- Lurking Specter's Handgrips
+					i(217208),	-- Lurking Specter's Visage
+					i(217209),	-- Lurking Specter's Tights
+					i(217210),	-- Lurking Specter's Shoulderblades
+					i(217211),	-- Grips of the Sinister Savant
+					i(217212),	-- Grimhorns of the Sinister Savant
+					i(217213),	-- Leggings of the Sinister Savant
+					i(217214),	-- Amice of the Sinister Savant
+					i(217215),	-- Cursed Robes of the Sinister Savant
+					i(217216),	-- Battlechest of the Onyx Crucible
+					i(217217),	-- Handguards of the Onyx Crucible
+					i(217218),	-- Thraexhelm of the Onyx Crucible
+					i(217219),	-- Legplates of the Onyx Crucible
+					i(217220),	-- Pauldrons of the Onyx Crucible
+					i(217221),	-- Casket of the Risen Nightmare
+					i(217222),	-- Thorns of the Risen Nightmare
+					i(217223),	-- Piercing Gaze of the Risen Nightmare
+					i(217224),	-- Greaves of the Risen Nightmare
+					i(217225),	-- Skewers of the Risen Nightmare
+					i(217226),	-- Screaming Torchfiend's Binding
+					i(217227),	-- Screaming Torchfiend's Grasp
+					i(217228),	-- Screaming Torchfiend's Burning Scowl
+					i(217229),	-- Screaming Torchfiend's Blazewraps
+					i(217230),	-- Screaming Torchfiend's Horned Memento
+					i(217231),	-- Wayward Chronomancer's Gloves
+					i(217232),	-- Wayward Chronomancer's Chronocap
+					i(217233),	-- Wayward Chronomancer's Pantaloons
+					i(217234),	-- Wayward Chronomancer's Metronomes
+					i(217235),	-- Wayward Chronomancer's Patchwork
+					i(217236),	-- Greatwolf Outcast's Harness
+					i(217237),	-- Greatwolf Outcast's Grips
+					i(217238),	-- Greatwolf Outcast's Jaws
+					i(217239),	-- Greatwolf Outcast's Fur-Lined Kilt
+					i(217240),	-- Greatwolf Outcast's Companions
+				}),
+				n(SPECIAL, {	-- Weird Sets
+					i(217421),	-- Vault Raider's Earthen Slicer
+					i(217422),	-- Vault Raider's Frozen Slicer
+					i(217423),	-- Vault Raider's Storming Slicer
+					i(217424),	-- Vault Raider's Crystal Slicer
+					i(217425),	-- Vault Raider's Earthen Thumper
+					i(217426),	-- Vault Raider's Frozen Thumper
+					i(217427),	-- Vault Raider's Storming Thumper
+					i(217428),	-- Vault Raider's Crystal Thumper
+					i(217429),	-- Vault Raider's Earthen Crossbow
+					i(217430),	-- Vault Raider's Frozen Crossbow
+					i(217431),	-- Vault Raider's Storming Crossbow
+					i(217432),	-- Vault Raider's Crystal Crossbow
+					i(217433),	-- Vault Raider's Earthen Bulwark
+					i(217434),	-- Vault Raider's Frozen Bulwark
+					i(217435),	-- Vault Raider's Storming Bulwark
+					i(217436),	-- Vault Raider's Crystal Bulwark
+					i(217437),	-- Vault Raider's Earthen Pavise
+					i(217438),	-- Vault Raider's Frozen Pavise
+					i(217439),	-- Vault Raider's Storming Pavise
+					i(217440),	-- Vault Raider's Crystal Pavise
+					i(217441),	-- Vault Raider's Earthen Conduit
+					i(217442),	-- Vault Raider's Frozen Conduit
+					i(217443),	-- Vault Raider's Storming Conduit
+					i(217444),	-- Vault Raider's Crystal Conduit
+					i(217445),	-- Vault Raider's Earthen Scriptures
+					i(217446),	-- Vault Raider's Frozen Scriptures
+					i(217447),	-- Vault Raider's Storming Scriptures
+					i(217448),	-- Vault Raider's Crystal Scriptures
+					i(217449),	-- Vault Raider's Earthen Crusher
+					i(217450),	-- Vault Raider's Frozen Crusher
+					i(217451),	-- Vault Raider's Storming Crusher
+					i(217452),	-- Vault Raider's Crystal Crusher
+					i(217453),	-- Vault Raider's Earthen Splitter
+					i(217454),	-- Vault Raider's Frozen Splitter
+					i(217455),	-- Vault Raider's Storming Splitter
+					i(217456),	-- Vault Raider's Crystal Splitter
+					i(217457),	-- Vault Raider's Earthen Halberd
+					i(217458),	-- Vault Raider's Frozen Halberd
+					i(217459),	-- Vault Raider's Storming Halberd
+					i(217460),	-- Vault Raider's Crystal Halberd
+					i(217461),	-- Vault Raider's Earthen Pillar
+					i(217462),	-- Vault Raider's Frozen Pillar
+					i(217463),	-- Vault Raider's Storming Pillar
+					i(217464),	-- Vault Raider's Crystal Pillar
+					i(217465),	-- Vault Raider's Earthen Staff
+					i(217466),	-- Vault Raider's Frozen Staff
+					i(217467),	-- Vault Raider's Storming Staff
+					i(217468),	-- Vault Raider's Crystal Staff
+					i(217469),	-- Vault Raider's Earthen Shard
+					i(217470),	-- Vault Raider's Frozen Shard
+					i(217471),	-- Vault Raider's Storming Shard
+					i(217472),	-- Vault Raider's Crystal Shard
+					i(217473),	-- Vault Raider's Earthen Knife
+					i(217474),	-- Vault Raider's Frozen Knife
+					i(217475),	-- Vault Raider's Storming Knife
+					i(217476),	-- Vault Raider's Crystal Knife
+					i(217477),	-- Vault Raider's Earthen Glaives
+					i(217478),	-- Vault Raider's Frozen Glaives
+					i(217479),	-- Vault Raider's Storming Glaives
+					i(217480),	-- Vault Raider's Crystal Glaives
+					i(217481),	-- Vault Raider's Earthen Fists
+					i(217482),	-- Vault Raider's Frozen Fists
+					i(217483),	-- Vault Raider's Storming Fists
+					i(217484),	-- Vault Raider's Crystal Fists
+					i(217485),	-- Vault Raider's Earthen Greatbow
+					i(217486),	-- Vault Raider's Frozen Greatbow
+					i(217487),	-- Vault Raider's Storming Greatbow
+					i(217488),	-- Vault Raider's Crystal Greatbow
+					i(217489),	-- Vault Raider's Earthen Scepter
+					i(217490),	-- Vault Raider's Frozen Scepter
+					i(217491),	-- Vault Raider's Storming Scepter
+					i(217492),	-- Vault Raider's Crystal Scepter
+					i(217493),	-- Vault Raider's Primal Greatstaff
+					i(217507),	-- Crucible Raider's Bronzed Mutilator
+					i(217508),	-- Crucible Raider's Shadowed Mutilator
+					i(217509),	-- Crucible Raider's Molten Mutilator
+					i(217510),	-- Crucible Raider's Corrupted Mutilator
+					i(217511),	-- Crucible Raider's Bronzed Lance
+					i(217512),	-- Crucible Raider's Shadowed Lance
+					i(217513),	-- Crucible Raider's Molten Lance
+					i(217514),	-- Crucible Raider's Corrupted Lance
+					i(217515),	-- Crucible Raider's Bronzed Cudgel
+					i(217516),	-- Crucible Raider's Shadowed Cudgel
+					i(217517),	-- Crucible Raider's Molten Cudgel
+					i(217518),	-- Crucible Raider's Corrupted Cudgel
+					i(217519),	-- Crucible Raider's Bronzed Rod
+					i(217520),	-- Crucible Raider's Shadowed Rod
+					i(217521),	-- Crucible Raider's Molten Rod
+					i(217522),	-- Crucible Raider's Corrupted Rod
+					i(217523),	-- Crucible Raider's Bronzed Focus
+					i(217524),	-- Crucible Raider's Shadowed Focus
+					i(217525),	-- Crucible Raider's Molten Focus
+					i(217526),	-- Crucible Raider's Corrupted Focus
+					i(217527),	-- Crucible Raider's Bronzed Kiteshield
+					i(217528),	-- Crucible Raider's Shadowed Kiteshield
+					i(217529),	-- Crucible Raider's Molten Kiteshield
+					i(217530),	-- Crucible Raider's Corrupted Kiteshield
+					i(217531),	-- Crucible Raider's Bronzed Wingblades
+					i(217532),	-- Crucible Raider's Shadowed Wingblades
+					i(217533),	-- Crucible Raider's Molten Wingblades
+					i(217534),	-- Crucible Raider's Corrupted Wingblades
+					i(217535),	-- Crucible Raider's Bronzed Hatchet
+					i(217536),	-- Crucible Raider's Shadowed Hatchet
+					i(217537),	-- Crucible Raider's Molten Hatchet
+					i(217538),	-- Crucible Raider's Corrupted Hatchet
+					i(217539),	-- Crucible Raider's Bronzed Longbow
+					i(217540),	-- Crucible Raider's Shadowed Longbow
+					i(217541),	-- Crucible Raider's Molten Longbow
+					i(217542),	-- Crucible Raider's Corrupted Longbow
+					i(217543),	-- Crucible Raider's Bronzed Mace
+					i(217544),	-- Crucible Raider's Shadowed Mace
+					i(217545),	-- Crucible Raider's Molten Mace
+					i(217546),	-- Crucible Raider's Corrupted Mace
+					i(217547),	-- Crucible Raider's Bronzed Elderstaff
+					i(217548),	-- Crucible Raider's Shadowed Elderstaff
+					i(217549),	-- Crucible Raider's Molten Elderstaff
+					i(217550),	-- Crucible Raider's Corrupted Elderstaff
+					i(217551),	-- Crucible Raider's Bronzed Cleaver
+					i(217552),	-- Crucible Raider's Shadowed Cleaver
+					i(217553),	-- Crucible Raider's Molten Cleaver
+					i(217554),	-- Crucible Raider's Corrupted Cleaver
+					i(217555),	-- Crucible Raider's Bronzed Cannon
+					i(217556),	-- Crucible Raider's Shadowed Cannon
+					i(217557),	-- Crucible Raider's Molten Cannon
+					i(217558),	-- Crucible Raider's Corrupted Cannon
+					i(217559),	-- Crucible Raider's Bronzed Claws
+					i(217560),	-- Crucible Raider's Shadowed Claws
+					i(217561),	-- Crucible Raider's Molten Claws
+					i(217562),	-- Crucible Raider's Corrupted Claws
+					i(217563),	-- Crucible Raider's Bronzed Control Rod
+					i(217564),	-- Crucible Raider's Shadowed Control Rod
+					i(217565),	-- Crucible Raider's Molten Control Rod
+					i(217566),	-- Crucible Raider's Shadowed Control Rod
+					i(217567),	-- Crucible Raider's Bronzed Tome
+					i(217568),	-- Crucible Raider's Shadowed Tome
+					i(217569),	-- Crucible Raider's Molten Tome
+					i(217570),	-- Crucible Raider's Corrupted Tome
+					i(217571),	-- Crucible Raider's Bronzed Ultra Greatsword
+					i(217572),	-- Crucible Raider's Shadowed Ultra Greatsword
+					i(217573),	-- Crucible Raider's Molten Ultra Greatsword
+					i(217574),	-- Crucible Raider's Corrupted Ultra Greatsword
+					i(217575),	-- Crucible Raider's Bronzed Greatshield
+					i(217576),	-- Crucible Raider's Shadowed Greatshield
+					i(217577),	-- Crucible Raider's Molten Greatshield
+					i(217578),	-- Crucible Raider's Corrupted Greatshield
+					i(217579),	-- Crucible Raider's Bronzed Shiv
+					i(217580),	-- Crucible Raider's Shadowed Shiv
+					i(217581),	-- Crucible Raider's Molten Shiv
+					i(217582),	-- Crucible Raider's Corrupted Shiv
+					i(217615),	-- Dream Raider's Azure Greathammer
+					i(217616),	-- Dream Raider's Blazing Greathammer
+					i(217617),	-- Dream Raider's Emerald Greathammer
+					i(217618),	-- Dream Raider's Shadowflame Greathammer
+					i(217619),	-- Dream Raider's Azure Torch
+					i(217620),	-- Dream Raider's Blazing Torch
+					i(217621),	-- Dream Raider's Emerald Torch
+					i(217622),	-- Dream Raider's Shadowflame Torch
+					i(217623),	-- Dream Raider's Azure Flayer
+					i(217624),	-- Dream Raider's Blazing Flayer
+					i(217625),	-- Dream Raider's Emerald Flayer
+					i(217626),	-- Dream Raider's Shadowflame Flayer
+					i(217627),	-- Dream Raider's Azure Defender
+					i(217628),	-- Dream Raider's Blazing Defender
+					i(217629),	-- Dream Raider's Emerald Defender
+					i(217630),	-- Dream Raider's Shadowflame Defender
+					i(217631),	-- Dream Raider's Azure Dreamcarver
+					i(217632),	-- Dream Raider's Blazing Dreamcarver
+					i(217633),	-- Dream Raider's Emerald Dreamcarver
+					i(217634),	-- Dream Raider's Shadowflame Dreamcarver
+					i(217635),	-- Dream Raider's Azure Razor
+					i(217636),	-- Dream Raider's Azure Saber
+					i(217637),	-- Dream Raider's Blazing Saber
+					i(217638),	-- Dream Raider's Emerald Saber
+					i(217639),	-- Dream Raider's Shadowflame Saber
+					i(217640),	-- Dream Raider's Azure Rifle
+					i(217641),	-- Dream Raider's Blazing Rifle
+					i(217642),	-- Dream Raider's Emerald Rifle
+					i(217643),	-- Dream Raider's Shadowflame Rifle
+					i(217644),	-- Dream Raider's Azure Paws
+					i(217645),	-- Dream Raider's Blazing Paws
+					i(217646),	-- Dream Raider's Emerald Paws
+					i(217647),	-- Dream Raider's Shadowflame Paws
+					i(217648),	-- Dream Raider's Azure Chime
+					i(217649),	-- Dream Raider's Blazing Chime
+					i(217650),	-- Dream Raider's Emerald Chime
+					i(217651),	-- Dream Raider's Shadowflame Chime
+					i(217652),	-- Dream Raider's Azure Scythe
+					i(217653),	-- Dream Raider's Blazing Scythe
+					i(217654),	-- Dream Raider's Emerald Scythe
+					i(217655),	-- Dream Raider's Shadowflame Scythe
+					i(217656),	-- Dream Raider's Azure Sickle
+					i(217657),	-- Dream Raider's Blazing Sickle
+					i(217658),	-- Dream Raider's Emerald Sickle
+					i(217659),	-- Dream Raider's Shadowflame Sickle
+					i(217660),	-- Dream Raider's Replica Dreambinder
+					i(217661),	-- Dream Raider's Azure Barrier
+					i(217662),	-- Dream Raider's Blazing Barrier
+					i(217663),	-- Dream Raider's Emerald Barrier
+					i(217664),	-- Dream Raider's Shadowflame Barrier
+					i(217665),	-- Dream Raider's Azure Cleaver
+					i(217666),	-- Dream Raider's Blazing Cleaver
+					i(217667),	-- Dream Raider's Emerald Cleaver
+					i(217668),	-- Dream Raider's Shadowflame Cleaver
+					i(217669),	-- Dream Raider's Azure Charglaive
+					i(217670),	-- Dream Raider's Blazing Charglaive
+					i(217671),	-- Dream Raider's Emerald Charglaive
+					i(217672),	-- Dream Raider's Shadowflame Charglaive
+					i(217673),	-- Dream Raider's Azure Blade
+					i(217674),	-- Dream Raider's Blazing Blade
+					i(217675),	-- Dream Raider's Emerald Blade
+					i(217676),	-- Dream Raider's Shadowflame Blade
+					i(217677),	-- Dream Raider's Azure Trident
+					i(217678),	-- Dream Raider's Blazing Trident
+					i(217679),	-- Dream Raider's Emerald Trident
+					i(217680),	-- Dream Raider's Shadowflame Trident
+					i(217681),	-- Dream Raider's Azure Recurve
+					i(217682),	-- Dream Raider's Blazing Recurve
+					i(217683),	-- Dream Raider's Emerald Recurve
+					i(217684),	-- Dream Raider's Shadowflame Recurve
+					i(217685),	-- Dream Raider's Azure Poleax
+					i(217686),	-- Dream Raider's Blazing Poleax
+					i(217687),	-- Dream Raider's Emerald Poleax
+					i(217688),	-- Dream Raider's Shadowflame Poleax
+					i(217689),	-- Dream Raider's Azure Flare
+					i(217690),	-- Dream Raider's Blazing Flare
+					i(217691),	-- Dream Raider's Emerald Flare
+					i(217692),	-- Dream Raider's Shadowflame Flare
+					i(217601),	-- Crucible Raider's Bronzed Beacon
+					i(217602),	-- Crucible Raider's Shadowed Beacon
+					i(217603),	-- Crucible Raider's Molten Beacon
+					i(217604),	-- Crucible Raider's Corrupted Beacon
+				}),
+				filter(MISC, {
+					-- Dinar
+					i(213089),	-- Antique Bronze Bullion
+					-- Legendary
+					i(217698),	-- Scale of Awakening
+					i(217700),	-- Scale of Awakening
+					-- Vault
+					i(217409),	-- Aspects' Token of Merit
+					i(218114),	-- Eye of Awakening
+					-- Unknown
+					i(217241),	-- Awakened Equipment Chest
+					i(217408),	-- Awakened Tempostone
+					i(217243),	-- Awakening Ruby Wing
+					i(217242),	-- Awakening Stone Wing
+					i(217111),	-- Cache of Awakened Dreams
+					i(217110),	-- Cache of Awakened Embers
+					i(217109),	-- Cache of Awakened Storms
+					i(217728),	-- Cache of Awakened Treasures
+					i(217729),	-- Cache of Awakened Treasures
+					i(215364),	-- Cache of Dreams
+					i(215363),	-- Cache of Embers
+					i(215362),	-- Cache of Storms
+				}),
+				filter(TRINKET_F, {	-- S4 Trinket Reworks
+					i(212683),	-- Globe of Jagged Ice
+					i(212757),	-- Granyth's Enduring Scale
+					i(212756),	-- Inexorable Resonator
+					i(212685),	-- Tome of Unstable Power
+					i(212684),	-- Umbrelskul's Fractured Heart
+					i(212682),	-- Water's Beating Heart
+				})
 			}),
 			filter(TOYS, {
 				i(218128),	-- Draconic Banner of the Aspects (TOY!)
 				i(216881),	-- Duck Disguiser (TOY!) [Nobelgarden]
 			}),
-			--- Dragonriding Cup
-			i(212874),	-- Drake Racer's Azure Jersey
-			i(212875),	-- Drake Racer's Azure Handwraps
-			i(212876),	-- Drake Racer's Azure Belt
-			i(212877),	-- Drake Racer's Azure Leggings
-			i(212878),	-- Drake Racer's Azure Boots
-			i(212879),	-- Drake Racer's Azure Scarf
-			i(212880),	-- Drake Racer's Azure Shoulderpads
-			i(212881),	-- Drake Racer's Azure Helmet
-			i(213585),	-- Icy Drake Racer's Scarf
-			i(213586),	-- Icy Drake Racer's Boots
-			i(213587),	-- Icy Drake Racer's Leggings
-			i(213588),	-- Icy Drake Racer's Belt
-			i(213589),	-- Icy Drake Racer's Handwraps
-			i(213590),	-- Icy Drake Racer's Jersey
-			i(213591),	-- Icy Drake Racer's Shoulderpads
-			i(213592),	-- Icy Drake Racer's Helmet
-			--
-
-
-
-
-
-
-
-			i(210594),	-- Noblegarden Trinket
-			i(211515),	-- Splintered Spark of Awakening
-
-			i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
-			i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
-			i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest
-
-
-
-
-
-
-
-
-
-			i(211950),	-- Lively Clutch of Wyrm's Awakened Crests
-			i(211951),	-- Pouch of Whelpling's Awakened Crests
-			i(211952),	-- Satchel of Drake's Awakened Crests
-			i(212096),	-- [DNT] Starter Pirate Gear
-			i(212097),	-- [DNT] Starter Pirate Gear - Health Potion
-			i(212175),	-- Draconic Commendation
-			i(212180),	-- Dreadlord's Shadowsbane Wings
-			i(212189),	-- Dreadlord's Venombane Wings
-			i(212367),	-- Clutch of Wyrm's Awakened Crests
-			i(212383),	-- Yawning Basket of Aspect's Awakened Crests
-			i(212384),	-- Restless Satchel of Drake's Awakened Crests
-			i(212458),	-- Awakened Flightstone
-			i(212517),	-- Barrel
-			i(212655),	-- Mana Sphere
-			i(212656),	-- Searing Axe
-			i(212657),	-- Rime Arrow
-			i(212658),	-- Fire Whirl
-			i(212659),	-- Fade to Shadow
-			i(212660),	-- Steel Traps
-			i(212661),	-- Faeform
-			i(212662),	-- Explosive Caltrops
-			i(212663),	-- Quaking Leap
-			i(212682),	-- Water's Beating Heart
-			i(212683),	-- Globe of Jagged Ice
-			i(212684),	-- Umbrelskul's Fractured Heart
-			i(212685),	-- Tome of Unstable Power
-			i(212686),	-- Azure Riders of Azeroth Tabard
-			i(212756),	-- Inexorable Resonator
-			i(212757),	-- Granyth's Enduring Scale
-			i(212869),	-- Slicing Winds
-			i(212873),	-- Earthbreaker
-
-			i(212917),	-- Windstorm
-			i(212975),	-- Snowdrift
-			i(212998),	-- Holy Shield
-			i(213089),	-- Antique Bronze Bullion
-			i(213160),	-- Kaldorei Moon Bow
-			i(213164),	-- Gnomish Gravity Launcher
-			i(213217),	-- Mechano-Hog
-			i(213232),	-- Bottled Time
-			i(213393),	-- Guise of the Golden Masquerade
-			i(213394),	-- Ebony Crown of the Red Rose
-			i(213395),	-- Gloves of the Midnight Soiree
-			i(213396),	-- Classic Midnight Tabard
-			i(213397),	-- Parrot Snacks
-			i(213400),	-- Strange Snowman
-			i(213428),	-- Loot-Stuffed Basket
-
-
-
-
-			i(213577),	-- Star Bomb
-
-
-			i(213635),	-- Checkered Pennant
-			i(214242),	-- Repel
-			i(215361),	-- Quaking Leap
-			i(215362),	-- Cache of Storms
-			i(215363),	-- Cache of Embers
-			i(215364),	-- Cache of Dreams
-			i(215455),	-- Hunter's Chains
-
-			i(216488),	-- Duck Potion
-			i(216489),	-- Golden Egg Heirloom
-			i(216527),	-- Toxic Smackerel
-			i(216655),	-- Goblin Glue Rocket
-			i(216672),	-- The Am-Bush
-			i(216719),	-- Keg Leg's Cannonade
-			i(216722),	-- Smoke Bomb
-			i(216723),	-- Chicken Coup
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			i(216874),	-- Loot-Filled Basket
-			i(216878),	-- Rigged Chest
-
-			i(216890),	-- Black Duck Disguise
-			i(216897),	-- Brown Duck Disguise
-			i(216898),	-- Mallard Duck Disguise
-			i(216900),	-- Pink Duck Disguise
-			i(216901),	-- White Duck Disguise
-			i(216902),	-- Yellow Duck Disguise
-
-			i(216932),	-- Noblegarden Trinket
-
-
-
-
-
-
-
-
-
-
-
-			i(217018),	-- Draconic Equipment Chest
-			i(217021),	-- Gladiator's Ragged Chest
-			i(217022),	-- Gladiator's Ragged Treads
-			i(217023),	-- Gladiator's Ragged Grips
-			i(217024),	-- Gladiator's Ragged Headband
-			i(217026),	-- Gladiator's Ragged Leggings
-			i(217027),	-- Gladiator's Ragged Shoulderpads
-			i(217028),	-- Gladiator's Ragged Belt
-			i(217029),	-- Ensemble: Gladiator's Ragged Armor
-			i(217030),	-- Gladiator's Battered Chest
-			i(217031),	-- Gladiator's Battered Treads
-			i(217033),	-- Gladiator's Battered Grips
-			i(217034),	-- Gladiator's Battered Headband
-			i(217035),	-- Gladiator's Battered Leggings
-			i(217036),	-- Gladiator's Battered Shoulderpads
-			i(217037),	-- Gladiator's Battered Belt
-			i(217038),	-- Ensemble: Gladiator's Battered Armor
-
-
-			i(217109),	-- Cache of Awakened Storms
-			i(217110),	-- Cache of Awakened Embers
-			i(217111),	-- Cache of Awakened Dreams
-
-			i(217241),	-- Awakened Equipment Chest
-			i(217242),	-- Awakening Stone Wing
-			i(217243),	-- Awakening Ruby Wing
-			i(217272),	-- Stormproof Sloop
-
-
-
-			i(217372),	-- Frenzied Hat of the Deep Blue
-			i(217373),	-- Frenzied Hat of the Dark Depths
-			i(217374),	-- Frenzied Hat of the Shallows
-			i(217375),	-- Frenzied Hat of the Crimson Seas
-			i(217376),	-- Frenzied Hat of the Murky Waters
-			i(217377),	-- Fearless Buccaneer's Tunic
-			i(217378),	-- Fearless Buccaneer's Sash
-			i(217379),	-- Fearless Buccaneer's Breeches
-			i(217380),	-- Fearless Buccaneer's Boots
-			i(217381),	-- Ensemble: Fearless Buccaneer's Slops
-			i(217382),	-- Ruby Flightstone
-			i(217408),	-- Awakened Tempostone
-			i(217409),	-- Aspects' Token of Merit
-			i(217410),	-- Awakened Mark of Mastery
-			i(217412),	-- Blackened Flightstone
-			i(217413),	-- Depleted Blackened Flightstone
-			i(217415),	-- Depleted Ruby Flightstone
-			i(217416),	-- Depleted Emerald Flightstone
-			i(217420),	-- Large Pouch of Whelpling's Awakened Crests
-
-			i(217494),	-- Glyph of Faeline Stomp
-
-			i(217583),	-- Glyph of Sepsis
-			i(217584),	-- Glyph of Spear of Bastion
-			i(217585),	-- Glyph of Convoke the Spirits
-			i(217586),	-- Glyph of Radiant Spark
-			i(217587),	-- Glyph of Divine Toll
-			i(217588),	-- Glyph of Blessing of the Seasons
-			i(217589),	-- Glyph of Mindgames
-			i(217590),	-- Glyph of the Hunt
-			i(217591),	-- Glyph of Elysian Decree
-			i(217592),	-- Glyph of Adaptive Swarm
-			i(217593),	-- Glyph of Death Chakram
-			i(217594),	-- Glyph of Shifting Power
-			i(217595),	-- Glyph of Weapons of Order
-			i(217596),	-- Glyph of Abomination Limb
-			i(217597),	-- Glyph of Echoing Reprimand
-			i(217598),	-- Glyph of Flagellation
-			i(217599),	-- Glyph of Primordial Wave
-			i(217600),	-- Glyph of Soul Rot
-
-
-
-			i(217728),	-- Cache of Awakened Treasures
-			i(217729),	-- Cache of Awakened Treasures
-			i(218114),	-- Eye of Awakening
-
-
-			i(218270),	-- Lightning Bulwark
-			i(219020),	-- Storm Archon
-
-
-			i(220203),	-- Clutch of Wyrm's Dreaming Crests
-			i(220204),	-- Pouch of Whelpling's Dreaming Crests
-			i(220205),	-- Satchel of Drake's Dreaming Crests
-			i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
-			i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
-			i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
 		})),
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			------ Next Check In Start of April ------

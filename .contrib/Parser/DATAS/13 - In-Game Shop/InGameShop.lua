@@ -498,7 +498,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(212219,	-- Ensemble: Dreadlord's Venombane Regalia
 			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
 			i(212193),	-- Dreadlord's Venombane Breeches
-			i(212189),	-- Dreadlord's Venombane Cloak
+			i(212189),	-- Dreadlord's Venombane Wings
 			i(212191),	-- Dreadlord's Venombane Grips
 			i(212192),	-- Dreadlord's Venombane Helm
 			i(212190),	-- Dreadlord's Venombane Sabatons
@@ -510,7 +510,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(212218,	-- Ensemble: Dreadlord's Shadowsbane Regalia
 			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53441" } }, {
 			i(212184),	-- Dreadlord's Shadowsbane Breeches
-			i(212180),	-- Dreadlord's Shadowsbane Cloak
+			i(212180),	-- Dreadlord's Shadowsbane Wings
 			i(212182),	-- Dreadlord's Shadowsbane Grips
 			i(212183),	-- Dreadlord's Shadowsbane Helm
 			i(212181),	-- Dreadlord's Shadowsbane Sabatons

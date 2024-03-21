@@ -1443,5 +1443,46 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(210419),	-- Dream Wardens Insignia [Uncommon]
 			i(210420),	-- Dream Wardens Insignia [Rare]
 		})),
+
+		-- 10.2.6
+		expansion(EXPANSION.DF, 2.6, bubbleDown({ ["timeline"] = { CREATED_10_2_6 } }, {
+			------ Plunderstorm ------
+			i(212096),	-- [DNT] Starter Pirate Gear
+			i(212097),	-- [DNT] Starter Pirate Gear - Health Potion
+			i(212517),	-- Barrel
+			i(213232),	-- Bottled Time
+			i(216723),	-- Chicken Coup
+			i(212873),	-- Earthbreaker
+			i(212662),	-- Explosive Caltrops
+			i(212659),	-- Fade to Shadow
+			i(212661),	-- Faeform
+			i(212658),	-- Fire Whirl
+			i(213164),	-- Gnomish Gravity Launcher
+			i(216655),	-- Goblin Glue Rocket
+			i(212998),	-- Holy Shield
+			i(215455),	-- Hunter's Chains
+			i(216719),	-- Keg Leg's Cannonade
+			i(218270),	-- Lightning Bulwark
+			i(212655),	-- Mana Sphere
+			i(213217),	-- Mechano-Hog
+			i(213397),	-- Parrot Snacks
+			i(212663),	-- Quaking Leap
+			i(215361),	-- Quaking Leap
+			i(214242),	-- Repel
+			i(216878),	-- Rigged Chest
+			i(212657),	-- Rime Arrow
+			i(212656),	-- Searing Axe
+			i(212869),	-- Slicing Winds
+			i(216722),	-- Smoke Bomb
+			i(212975),	-- Snowdrift
+			i(213577),	-- Star Bomb
+			i(212660),	-- Steel Traps
+			i(219020),	-- Storm Archon
+			i(217272),	-- Stormproof Sloop
+			i(213400),	-- Strange Snowman
+			i(216672),	-- The Am-Bush
+			i(216527),	-- Toxic Smackerel
+			i(212917),	-- Windstorm
+		})),
 	}),
 }));

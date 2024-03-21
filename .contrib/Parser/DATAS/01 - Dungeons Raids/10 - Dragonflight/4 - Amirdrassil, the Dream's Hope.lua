@@ -631,6 +631,94 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(210060),	-- Shadow Dusk Dreamsaber (MOUNT!)
 					},
 				}),
+				-- Awakened
+				ach(19570, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Flames
+					crit(64986, {	-- Gnarlroot
+						["_encounter"] = { GNARLROOT, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64987, {	-- Igira the Cruel
+						["_encounter"] = { IGIRA, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64988, {	-- Volcoross
+						["_encounter"] = { VOLCOROSS, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64989, {	-- Council of Dreams
+						["_encounter"] = { COUNCIL_OF_DREAMS, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64990, {	-- Larodar, Keeper of the Flame
+						["_encounter"] = { LARODAR, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64991, {	-- Nymue, Weaver of the Cycle
+						["_encounter"] = { NYMUE, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64992, {	-- Smolderon
+						["_encounter"] = { SMOLDERON, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64993, {	-- Tindral Sageswift, Seer of the Flame
+						["_encounter"] = { TINDRAL, ANY_DIFFICULTY_ID_RAID },
+					}),
+					crit(64994, {	-- Fyrakk the Blazing
+						["_encounter"] = { FYRAKK, ANY_DIFFICULTY_ID_RAID },
+					}),
+				})),
+				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Flames
+					crit(64995, {	-- Gnarlroot
+						["_encounter"] = { GNARLROOT, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(64996, {	-- Igira the Cruel
+						["_encounter"] = { IGIRA, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(64997, {	-- Volcoross
+						["_encounter"] = { VOLCOROSS, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(64998, {	-- Council of Dreams
+						["_encounter"] = { COUNCIL_OF_DREAMS, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(64999, {	-- Larodar, Keeper of the Flame
+						["_encounter"] = { LARODAR, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(65000, {	-- Nymue, Weaver of the Cycle
+						["_encounter"] = { NYMUE, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(65001, {	-- Smolderon
+						["_encounter"] = { SMOLDERON, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(65002, {	-- Tindral Sageswift, Seer of the Flame
+						["_encounter"] = { TINDRAL, HEROIC_PLUS_ID_RAID },
+					}),
+					crit(65003, {	-- Fyrakk the Blazing
+						["_encounter"] = { FYRAKK, HEROIC_PLUS_ID_RAID },
+					}),
+				})),
+				ach(19572, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakened Flames
+					crit(65004, {	-- Gnarlroot
+						["_encounter"] = { GNARLROOT, MYTHIC_RAID },
+					}),
+					crit(65005, {	-- Igira the Cruel
+						["_encounter"] = { IGIRA, MYTHIC_RAID },
+					}),
+					crit(65006, {	-- Volcoross
+						["_encounter"] = { VOLCOROSS, MYTHIC_RAID },
+					}),
+					crit(65007, {	-- Council of Dreams
+						["_encounter"] = { COUNCIL_OF_DREAMS, MYTHIC_RAID },
+					}),
+					crit(65008, {	-- Larodar, Keeper of the Flame
+						["_encounter"] = { LARODAR, MYTHIC_RAID },
+					}),
+					crit(65009, {	-- Nymue, Weaver of the Cycle
+						["_encounter"] = { NYMUE, MYTHIC_RAID },
+					}),
+					crit(65010, {	-- Smolderon
+						["_encounter"] = { SMOLDERON, MYTHIC_RAID },
+					}),
+					crit(65011, {	-- Tindral Sageswift, Seer of the Flame
+						["_encounter"] = { TINDRAL, MYTHIC_RAID },
+					}),
+					crit(65012, {	-- Fyrakk the Blazing
+						["_encounter"] = { FYRAKK, MYTHIC_RAID },
+					}),
+				})),
 				ach(19442),	-- Fire Catwalk With Me
 				-- Guild Achievements
 				ach(19387),	-- Amirdrassil, the Dream's Hope Guild Run

@@ -1,15 +1,3 @@
 4.4.0.53627
 ach(6321),	-- Ruthless Gladiator's Twilight Drake
 10.2.6.53840
-ach(19564),	-- Awakened Storms
-ach(19565),	-- Heroic: Awakened Storms
-ach(19566),	-- Mythic: Awakened Storms
-ach(19567),	-- Awakened Shadows
-ach(19568),	-- Heroic: Awakened Shadows
-ach(19569),	-- Mythic: Awakened Shadows
-ach(19570),	-- Awakened Flames
-ach(19571),	-- Heroic: Awakened Flames
-ach(19572),	-- Mythic: Awakened Flames
-ach(19574),	-- Awakening the Dragonflight Raids
-ach(19575),	-- Heroic: Awakening the Dragonflight Raids
-ach(19576),	-- Mythic: Awakening the Dragonflight Raids

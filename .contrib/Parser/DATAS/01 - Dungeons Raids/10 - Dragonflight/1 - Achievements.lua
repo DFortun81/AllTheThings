@@ -3,6 +3,41 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(19574, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakening the Dragonflight Raids
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19570,	-- Awakened Flames
+				19567,	-- Awakened Shadows
+				19564,	-- Awakened Storms
+			}},
+			["g"] = {
+				i(217340),	-- Voyaging Wilderling (MOUNT!)
+			},
+		})),
+		ach(19575, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakening the Dragonflight Raids
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19571,	-- Heroic: Awakened Flames
+				19568,	-- Heroic: Awakened Shadows
+				19565,	-- Heroic: Awakened Storms
+			}},
+			["g"] = {
+				-- title(),	-- Awakened Hero
+			},
+		})),
+		ach(19576, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mythic: Awakening the Dragonflight Raids
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19572,	-- Mythic: Awakened Flames
+				19569,	-- Mythic: Awakened Shadows
+				19566,	-- Mythic: Awakened Storms
+			}},
+			["g"] = {
+				spell(432254),	-- Path of the Primal Prison
+				spell(432257),	-- Path of the Bitter Legacy
+				spell(432258),	-- Path of the Scorching Dream
+			},
+		})),
 		ach(16294, {	-- Dragonflight Dungeon Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

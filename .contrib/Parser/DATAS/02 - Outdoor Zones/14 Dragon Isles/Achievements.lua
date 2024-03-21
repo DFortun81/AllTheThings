@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				18958,	-- Of the Tyr's Guard
 			}},
 		}),
-		ach(15939, {	-- Dragon Racing Completionist
+		ach(15939, {	-- Dragon Racing Completionist: Bronze
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				15915,	-- Waking Shores: Bronze

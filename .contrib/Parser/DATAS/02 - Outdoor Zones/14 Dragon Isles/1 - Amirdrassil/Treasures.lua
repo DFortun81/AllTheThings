@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 				["coord"] = { 29.0, 28.9, AMIRDRASSIL },
 				["questID"] = 79520,
 				["g"] = {
-					i(213160),	-- Night Elven Bow
+					i(213160),	-- Kaldorei Moon Bow
 				},
 			}),
 			o(421184, {	-- Kaldorei Shield
