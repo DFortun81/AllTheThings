@@ -1305,6 +1305,11 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 16.0, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										objective(1, {	-- 0/8 Horde Supply Crates Destroyed
+											["provider"] = { "o", 216150 },	-- Horde Supply Crate
+										}),
+									},
 								}),
 								q(32418, {	-- Unfair Trade
 									["sourceQuests"] = { 32416 },	-- Jaina's Resolution
