@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				}),
 			}),
-			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
 				n(ACHIEVEMENTS, {
 					ach(18779, {	--  Forbidden Reach Challenge: Bronze
 						-- Meta Achievement
@@ -463,7 +463,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					}),
 				}),
 			})),
-			ach(19478, bubbleDownSelf({ ["timeline"] = ADDED_10_2_6 }, {	-- Now THIS is Dragon Racing!
+			ach(19478, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Now THIS is Dragon Racing!
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					16577,	-- Azure Span Glyph Hunter

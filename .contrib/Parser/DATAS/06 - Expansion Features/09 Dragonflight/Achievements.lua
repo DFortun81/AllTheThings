@@ -1055,6 +1055,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				i(217410),	-- Awakened Mark of Mastery
 			},
 		})),
+		ach(19326, {	-- Dreaming of Drakes
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+		}),
+		ach(19397, {	-- Dreaming of Wyrms
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+		}),
+		ach(19398, {	-- Dreaming of the Aspects
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+		}),
 		ach(16808, {	-- Friend of the Dragon Isles
 			crit(57032, {	-- A Mystery, Sealed
 				["_quests"] = { 66128 },	-- Next Steps
@@ -1174,13 +1183,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		ach(17978),	-- Stones Can Fly!
 		ach(17977),	-- Stones Can Try To Fly!
 		ach(17830),	-- Stones Can't Fly!
+		ach(19579, {	-- The Awakened Aspects
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+		}),
+		ach(19577, {	-- The Awakened Drake
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+		}),
+		ach(19578, {	-- The Awakened Wyrm
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+		}),
 	}),
-	-- 10.2
-	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-		ach(19326),	-- Dreaming of Drakes
-		ach(19397),	-- Dreaming of Wyrms
-		ach(19398),	-- Dreaming of the Aspects
-	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
