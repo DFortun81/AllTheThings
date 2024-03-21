@@ -153,9 +153,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(RARES, {
 				n(209915, {	-- Amalgamation of Dreams
+					--["providers"] = {
+					--	{ "n", xx },	-- in case there should be vignette
+					--},
+					["description"] = "Can randomly spawn near any planting spot.",
 					["questID"] = 77856,
-					--["coords"] = {}, -- any plant spot
-					--also unclear is it daily or weekly
 				}),
 			}),
 			n(REWARDS, {

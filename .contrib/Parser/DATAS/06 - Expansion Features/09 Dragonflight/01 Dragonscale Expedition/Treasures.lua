@@ -82,6 +82,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			}),
 			o_repeated({	-- Disturbed Dirt (all 5 of them)
+				["providers"] = {
+					{ "o", 383735 },	-- Disturbed Dirt (vignette)
+					{ "o", 376386 },	-- Disturbed Dirt (vignette)
+					{ "o", 383734 },	-- Disturbed Dirt (vignette)
+					{ "o", 383733 },	-- Disturbed Dirt (vignette)
+					{ "o", 382029 },	-- Disturbed Dirt (vignette)
+				},
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["sym"] = {{"select","itemID",
 					199061, -- A Guide to Rare Fish
@@ -182,6 +189,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			o(376426, {	-- Magic-Bound Chest
+				["providers"] = {
+					{ "n", 191861 },	-- Magic-Bound Chest (vignette)
+					{ "n", 192243 },	-- Molten Lock (vignette)
+				},
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["sym"] = {{"select","itemID",
 					199061, -- A Guide to Rare Fish

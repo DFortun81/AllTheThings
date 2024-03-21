@@ -2176,7 +2176,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
 				}),
 				q(67173, {	-- Thieving Gnolls
-					["provider"] = { "n", 192749 },	-- Sharpfang
+					["providers"] = { 
+						{"n", 192747 },	-- Larivi (vignette)
+						{"n", 192749 },	-- Sharpfang
+					},
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr

@@ -209,10 +209,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}
 			}),
 			---
-			n(191861, {	-- Lever Locked Chest
-				-- Gave nothing.. Had to do a puzzle
-				["coord"] = { 31.5, 71.6, OHNAHRAN_PLAINS },	-- Cave
-			}),
+			--TODO: Alex - commented this out since it is seems like outdated data from beta?
+			--n(191861, {	-- Lever Locked Chest
+			--	-- Gave nothing.. Had to do a puzzle
+			--	["coord"] = { 31.5, 71.6, OHNAHRAN_PLAINS },	-- Cave
+			--}),
 		}),
 	}),
 })));

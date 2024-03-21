@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 				},
 			}),
-			n(210559, {	-- Balboan (have vignette as Isaqa)
+			n(210559, {	-- Balboan
 				["questID"] = 78039,
 				["coord"] = { 22.8, 32.3, EMERALD_DREAM },
 				["g"] = {
@@ -61,6 +61,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209929, {	-- Envoy of Winter
+				["providers"] = {
+					{ "n", 210132 },	-- The Envoy Tribute (vignette)
+					{ "n", 214131 },	-- Envoy of Winter (vignette)
+				},
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 34.5, 63.2, EMERALD_DREAM },
 				["g"] = {
@@ -75,6 +79,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209893, {	-- Firebrand Fystia
+				["providers"] = {
+					{ "n", 210516 },	-- Primalist Punishment [DNT] (vignette)
+				},
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 30.0, 20.7, EMERALD_DREAM },
 				["g"] = {
@@ -105,6 +112,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209936, {	-- Greedy Gessie
+				["providers"] = {
+					{ "n", 210300 },	-- Controller Bunny (vignette)
+				},
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 53.8, 40.7, EMERALD_DREAM },
 				["g"] = {
@@ -197,6 +207,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209113, {	-- Nouberon
+				["providers"] = {
+					{ "n", 209264 },	-- Nuo Bunny (vignette)
+				},
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 61.0, 70.3, EMERALD_DREAM },
 				["g"] = {
@@ -205,7 +218,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209912, {	-- Raszageth's Last Breath
-				["description"] = "Finish bonus objective in marked area to make him spawn.",
+				--["providers"] = {
+				--	{ "n", xx },	-- 
+				--},
+				["description"] = "Can randomly spawn in zone.",
 				["coords"] = {
 					{ 26.3, 28.5, EMERALD_DREAM },
 					--{ 65.4, 43.5, EMERALD_DREAM },
@@ -218,6 +234,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209898, {	-- Reefbreaker Moruud
+				--["providers"] = {
+				--	{ "n", xx },	-- 
+				--},
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 65.0, 84.2, EMERALD_DREAM },
 				["g"] = {
@@ -260,6 +279,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(210111, {	-- Surging Lasher
+				["providers"] = {
+					{ "n", 210663 },	-- Surge Widget (vignette)
+				},
 				["description"] = "Can spawn during Emerald Frenzy event.",
 				["questID"] = 78263,
 				["coords"] = {

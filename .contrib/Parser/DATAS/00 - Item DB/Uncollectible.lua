@@ -1296,7 +1296,6 @@ i(192613);	-- Dragon Tooth
 i(201193);	-- Dragon Tooth Shank
 i(201197);	-- Dream Journal
 i(200850);	-- Dream-Infused Seed
-i(200554);	-- Dropcap Head
 i(195359);	-- Dry Snapper Meat
 i(200820);	-- Dry Wood Log
 i(192687);	-- Duck Bill

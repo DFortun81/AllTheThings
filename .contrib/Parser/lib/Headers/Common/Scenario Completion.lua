@@ -4,6 +4,7 @@ SCENARIO_COMPLETION = createHeader({
 	icon = [[~_.asset("Interface_Rewards")]],
 	text = {
 		en = "Scenario Completion",
+		ru = "Награда сценария",
 	},
 	description = {
 		en = "Contains Things which are rewarded that upon completing that scenario.",
