@@ -2494,6 +2494,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55426, {	-- What Will It Grow?
 			["description"] = "Germinating Seed can drop from any rare in Nazjatar.",
 			["provider"] = { "i", 167786 },	-- Germinating Seed
+			["_drop"] = { "g" },	-- Drops Zin'anthid
 			["g"] = {
 				currency(1721),	-- Prismatic Manapearl
 			},

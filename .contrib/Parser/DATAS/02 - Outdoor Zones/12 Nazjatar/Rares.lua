@@ -3,6 +3,13 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(RARES, {
+		n(COMMON_BOSS_DROPS, {
+			pvp(i(168802, {	-- Nazjatar Battle Commendation
+				["description"] = "Drops from Rares while in Warmode and from the zone Battle.",
+			})),
+			i(168081),	-- Brinestone Pickaxe
+			i(167077),	-- Scrying Stone
+		}),
 		n(152415, {	-- Alga the Eyeless
 			["questID"] = 56279,
 			["isDaily"] = true,
@@ -499,11 +506,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				currency(1721),	-- Prismatic Manapearl
 			},
 		}),
-		pvp(i(168802, {	-- Nazjatar Battle Commendation
-			["description"] = "Drops from Rares while in Warmode and from the zone Battle.",
-		})),
-		i(168081),	-- Brinestone Pickaxe
-		i(167077),	-- Scrying Stone
 	}),
 })));
 
