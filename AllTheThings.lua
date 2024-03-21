@@ -9261,10 +9261,9 @@ RowOnEnter = function (self)
 			left = L.UNAVAILABLE_WARNING_FORMAT:format(lockCriteria[1]),
 			color = app.Colors.LockedWarning,
 		});
-		for i=2,#lockCriteria,1 do
+		for i=2,#lockCriteria,2 do
 			critKey = lockCriteria[i];
-			i = i + 1;
-			critValue = lockCriteria[i];
+			critValue = lockCriteria[i + 1];
 			critFunc = critFuncs[critKey];
 			if critFunc then
 				local label = critFuncs["label_"..critKey];

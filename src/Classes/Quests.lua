@@ -1071,7 +1071,7 @@ local criteriaFuncs = {
         return app.CurrentCharacter.Spells[spellID] or app.CurrentCharacter.ActiveSkills[spellID];
     end,
 	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL,
-    text_spellID = app.GetSpellName,
+    -- text_spellID = app.GetSpellName,	-- defined in OnLoad event
 
     factionID = function(v)
 		-- v = factionID.standingRequiredToLock
@@ -1099,6 +1099,9 @@ local criteriaFuncs = {
         return group.link or group.text or RETRIEVING_DATA;
     end,
 };
+app.AddEventHandler("OnLoad", function()
+	criteriaFuncs.text_spellID = app.GetSpellName
+end)
 local function IsGroupLocked(t)
 	local lockCriteria = t.lc;
 	if lockCriteria then
