@@ -15,6 +15,11 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 			ach(20509),	-- Plunderking
 			ach(20508),	-- Plunder Wonder
 		}),
+		n(QUESTS, sharedData({
+			["repeatable"] = true,
+		},{
+		--	q(81679),	-- Daily Doubloons
+		})),
 	}),
 	-- Renown Rewards
 	n(PLUNDERSTORM, bubbleDownRep(2593, {
@@ -126,3 +131,9 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDo
 	}),
 })));
 -- #endif
+
+root(ROOTS.HiddenQuestTriggers, {
+	n(PLUNDERSTORM, {
+		q(81677),	-- Dieing
+	}),
+}));
