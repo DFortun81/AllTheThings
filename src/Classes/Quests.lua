@@ -1933,7 +1933,18 @@ if app.IsRetail then
 		end
 	end
 
+	-- These are Items/Currencies rewarded by WQs which are treated as currency but have a 'huge' amount of purchases
+	-- and are often readily available
+	local SuperSpammyWorldQuestDrops = {
+		-- Items
+		[151568] = true,	-- Primal Sargerite
+		[190189] = true,	-- Sandworn Relic
 
+		-- Currencies
+		[1533] = true,	-- Wakening Essence
+		[1508] = true,	-- Veiled Argunite
+		[2003] = true,	-- Dragon Isles Supplies
+	};
 
 	-- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 	local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
@@ -2007,7 +2018,7 @@ if app.IsRetail then
 							-- don't let cached groups pollute potentially inaccurate raw Data
 							item.link = nil;
 							-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
-							if skipCollectibleCurrencies then
+							if skipCollectibleCurrencies or SuperSpammyWorldQuestDrops[itemID] then
 								item.skipFill = true
 							end
 							app.NestObject(questObject, item, true);
@@ -2029,7 +2040,7 @@ if app.IsRetail then
 					cachedCurrency = Search("currencyID", currencyID, "key");
 					app.MergeProperties(item, cachedCurrency, true);
 					-- block the group from being collectible as a cost if the option is not enabled
-					if skipCollectibleCurrencies then
+					if skipCollectibleCurrencies or SuperSpammyWorldQuestDrops[currencyID] then
 						item.skipFill = true
 					end
 					app.NestObject(questObject, item, true);
