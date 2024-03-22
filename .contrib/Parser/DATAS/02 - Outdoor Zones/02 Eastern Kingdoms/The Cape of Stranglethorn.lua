@@ -863,6 +863,96 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				{	-- High Priestess Jeklik
+					["allianceQuestData"] = q(26812, {	-- High Priestess Jeklik (A)
+						["providers"] = {
+							{ "i", 60374 },	-- Maywiki's Fetish
+							{ "n", 44084 },	-- Maywiki
+						},
+						["sourceQuest"] = 26811,	-- Through the Troll Hole (A)
+					}),
+					["hordeQuestData"] = q(26553, {	-- High Priestess Jeklik (H)
+						["providers"] = {
+							{ "i", 58964 },	-- Chabal's Fetish
+							{ "n", 43098 },	-- Chabal
+						},
+						["sourceQuest"] = 26552,	-- Through the Troll Hole (H)
+					}),
+					["coord"] = { 78.5, 35.6, NORTHERN_STRANGLETHORN },
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Destroy High Priestess Jeklik's body
+							["providers"] = {
+								{ "n", 43257 },	-- High Priestess Jeklik
+								{ "n", 43255 },	-- Zanzil the Outcast
+							},
+							["coord"] = { 78.0, 43.8, NORTHERN_STRANGLETHORN },
+							["description"] = "Attack Zanzil first to interupt the cast.",
+						}),
+					},
+				},
+				q(26814, {	-- High Priest Venoxis (A)
+					["providers"] = {
+						{ "i", 60374 },	-- Maywiki's Fetish
+						{ "n", 44084 },	-- Maywiki
+					},
+					["sourceQuest"] = 26813,	-- Plunging Into Zul'Gurub
+					["coord"] = { 82.1, 35.3, NORTHERN_STRANGLETHORN },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Deal with High Priest Venoxis
+							["providers"] = {
+								{ "n", 43323 },	-- High Priest Venoxis
+								{ "n", 43322 },	-- Zanzil the Outcast
+							},
+							["coord"] = { 84.0, 36.8, NORTHERN_STRANGLETHORN },
+						}),
+						i(61549, {	-- Maywiki's Favorite Ring
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(61550, {	-- Boots of the Foolhardy
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(61551, {	-- Cloak of Great Endeavors
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131607, {	-- Treads of the Foolhardy
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				q(26555, {	-- High Priest Venoxis (H)
+					["providers"] = {
+						{ "i", 58964 },	-- Chabal's Fetish
+						{ "n", 43098 },	-- Chabal
+					},
+					["sourceQuest"] = 26554,	-- Plunging Into Zul'Gurub
+					["coord"] = { 82.1, 35.3, NORTHERN_STRANGLETHORN },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Deal with High Priest Venoxis
+							["providers"] = {
+								{ "n", 43323 },	-- High Priest Venoxis
+								{ "n", 43322 },	-- Zanzil the Outcast
+							},
+							["coord"] = { 84.0, 36.8, NORTHERN_STRANGLETHORN },
+						}),
+						i(61552, {	-- Chabal's Favorite Ring
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(61553, {	-- Boots of the Foolhardy
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(61554, {	-- Cloak of Great Endeavors
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131555, {	-- Treads of the Foolhardy
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
 				q(213, {	-- Hostile Takeover
 					["qg"] = 737,	-- Kebok
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
@@ -1282,6 +1372,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 43, 48, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
+				}),
+				q(26813, {	-- Plunging Into Zul'Gurub (A)
+					["providers"] = {
+						{ "i", 60374 },	-- Maywiki's Fetish
+						{ "n", 44084 },	-- Maywiki
+					},
+					["sourceQuest"] = 26812,	-- High Priestess Jeklik
+					["coord"] = { 77.9, 44.1, NORTHERN_STRANGLETHORN },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26554, {	-- Plunging Into Zul'Gurub (H)
+					["providers"] = {
+						{ "i", 58964 },	-- Chabal's Fetish
+						{ "n", 43098 },	-- Chabal
+					},
+					["sourceQuest"] = 26553,	-- High Priestess Jeklik
+					["coord"] = { 78.0, 44.2, NORTHERN_STRANGLETHORN },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26818, {	-- Plush Pelts
 					["qg"] = 44083,	-- Linzi Hewstrike
