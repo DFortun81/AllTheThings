@@ -129,6 +129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}},
 					["g"] = {
 						i(192774, {	-- Coralscale Salamanther (MOUNT!) [Not In Game Yet...]
+						-- Wait until Blizzard fixes it. Gold 22nd March 2024
 							["timeline"] = { ADDED_10_2_6 },
 						}),
 					},
