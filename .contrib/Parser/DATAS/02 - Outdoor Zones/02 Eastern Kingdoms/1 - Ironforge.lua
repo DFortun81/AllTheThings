@@ -8,12 +8,6 @@ local COOKING_AWARD_GROUPS = {
 	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
 	-- #endif
 };
-local FISHING_AWARD_GROUPS = {
-	i(67414, {	-- Bag of Shiny Things
-		["timeline"] = { "added 4.0.1.12984" },
-		["sym"] = {{"fill"}},
-	}),
-};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(IRONFORGE, {
 		-- #if AFTER CATA
@@ -115,9 +109,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 2.4.0.7897" },
 					}),
 					i(67414, {	-- Bag of Shiny Things
+						["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 						["description"] = "Fishing Daily Quest Reward",
 						["timeline"] = { "added 4.0.1.12984" },
-						["cr"] = 5161,	-- Grimnur Stonebrand
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { "added 3.1.0.9658" },
@@ -512,7 +506,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(38394, {	-- Completionism
 					["qg"] = 6294,	-- Krom Stoutarm
@@ -593,7 +589,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(1618, {	-- Gearing Redridge
 					["qg"] = 6031,	-- Tormus Deepforge
@@ -785,7 +783,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(1880,	{	-- Mage-tastic Gizmonitor
 					["qg"] = 5144,	-- Bink <Mage Trainer>
@@ -834,7 +834,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(3448, {	-- Passing the Burden
 					["qg"] = 2916,	-- Historian Karnik
@@ -1059,7 +1061,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(3640, {	-- The Pledge of Secrecy
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>

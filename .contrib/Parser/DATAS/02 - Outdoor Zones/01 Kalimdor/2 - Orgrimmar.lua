@@ -8,12 +8,6 @@ local COOKING_AWARD_GROUPS = {
 	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
 	-- #endif
 };
-local FISHING_AWARD_GROUPS = {
-	i(67414, {	-- Bag of Shiny Things
-		["timeline"] = { "added 4.0.1.12984" },
-		["sym"] = {{"fill"}},
-	}),
-};
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -251,9 +245,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { "added 2.4.0.7897" },
 					}),
 					i(67414, {	-- Bag of Shiny Things
+						["provider"] = { "n", 43239 },	-- Razgar
 						["description"] = "Fishing Daily Quest Reward",
+						["sourceQuests"] = {
+							26588,	-- A Furious Catch
+							26572,	-- A Golden Opportunity
+							26557,	-- A Staggering Effort
+							26543,	-- Clammy Hands
+							26556,	-- No Dumping Allowed
+						},
 						["timeline"] = { "added 4.0.1.12984" },
-						["cr"] = 43239,	-- Razgar
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { "added 3.1.0.9658" },
@@ -456,7 +457,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(26572, {	-- A Golden Opportunity
 					["qg"] = 43239,	-- Razgar
@@ -466,7 +469,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(62265, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
@@ -501,9 +506,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = appendAllGroups({
-							i(58949),	-- Stag Eye
-						},FISHING_AWARD_GROUPS),
+					["groups"] = {
+						i(58949),	-- Stag Eye
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
@@ -767,7 +773,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(26226, {	-- Crawfish Creole
 					["qg"] = 42506,	-- Marogg
@@ -1343,7 +1351,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(25161, {	-- Ogrezonians in the Mood
 					["qg"] = 50482,	-- Marith Lazuria

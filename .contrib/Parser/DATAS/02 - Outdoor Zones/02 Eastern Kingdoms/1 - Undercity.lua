@@ -67,9 +67,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(67414, {	-- Bag of Shiny Things
+						["provider"] = { "n", 4573 },	-- Armand Cromwell
 						["description"] = "Fishing Daily Quest Reward",
+						["sourceQuests"] = {
+							29317,	-- Fish Head
+							29320,	-- Like Pike?
+							29361,	-- Moat Monster!
+							29319,	-- Tadpole Terror
+							29322,	-- Time for Slime
+						},
 						["timeline"] = { "added 4.0.1.12984" },
-						["cr"] = 4573,	-- Armand Cromwell
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { "added 3.1.0.9658" },
@@ -465,6 +472,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(29315, {	-- Fungus Among Us
 					["qg"] = 4552,	-- Eunice Burch
@@ -632,6 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = {
 						i(69907),	-- Corpse Worm
+						i(67414),	-- Bag of Shiny Things
 					},
 				}),
 				q(29332, {	-- Lily, Oh Lily
@@ -722,6 +733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(69995),	-- Bloated Frog
 							i(69998),	-- Alliance Decoy Kit
 						}),
+						i(67414),	-- Bag of Shiny Things
 					},
 				}),
 				q(38346, {	-- Numismatics
@@ -984,6 +996,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(1882, {	-- The Balnir Farmstead
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
@@ -1232,6 +1247,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(1164, {	-- To Steal From Thieves
 					["qg"] = 4486,	-- Genavie Callow

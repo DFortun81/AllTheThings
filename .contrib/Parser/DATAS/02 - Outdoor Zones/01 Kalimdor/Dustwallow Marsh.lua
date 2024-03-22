@@ -1490,7 +1490,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["coord"] = { 58.6, 60.0, DUSTWALLOW_MARSH },
 					["description"] = "Requires 225 Fishing to start this quest.",
-					["maps"] = { FERALAS, SWAMP_OF_SORROWS, DESOLACE, STRANGLETHORN_VALE },
+					["maps"] = {
+						FERALAS,
+						SWAMP_OF_SORROWS,
+						DESOLACE,
+						STRANGLETHORN_VALE,
+						-- #if AFTER CATA
+						THE_CAPE_OF_STRANGLETHORN,
+						-- #endif
+					},
 					["requireSkill"] = FISHING,
 					["lvl"] = 35,
 					["groups"] = {

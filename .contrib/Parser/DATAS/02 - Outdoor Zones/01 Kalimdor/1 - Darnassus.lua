@@ -103,6 +103,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
+			-- #if AFTER 4.0.1.12984
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					i(67414, {	-- Bag of Shiny Things
+						["provider"] = { "n", 4156 },	-- Astaia
+						["sourceQuests"] = {
+							29325,	-- A Slippery Snack
+							29359,	-- An Old Favorite
+							29321,	-- Happy as a Clam Digger
+							29323,	-- Stocking Up
+							29324,	-- The Sister's Pendant
+						},
+						["description"] = "Fishing Daily Quest Reward",
+						["timeline"] = { "added 4.0.1.12984" },
+						["groups"] = {
+							i(44983),	-- Strand Crawler (PET!)
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(45991),	-- Bone Fishing Pole
+							i(45992),	-- Jeweled Fishing Pole
+							i(67410),	-- Very Unlucky Rock
+							i(67388),	-- String of Alligator Teeth
+						},
+					}),
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -174,6 +200,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(7801, {	-- Additional Runecloth [Darnassus]
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -194,6 +223,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				-- #if AFTER CATA
 				q(6342, {	-- An Unexpected Gift [CATA+] / Flight to Auberdine
@@ -453,6 +485,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
@@ -788,6 +823,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(1710, {	-- Sunscorched Shells
 					["qg"] = 6142,	-- Mathiel
@@ -884,6 +922,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(2519, {	-- The Temple of the Moon
 					["qg"] = 7316,	-- Sister Aquinne
@@ -997,31 +1038,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER 4.0.1.12984
-			n(REWARDS, {
-				i(67414, {	-- Bag of Shiny Things
-					["provider"] = { "n", 4156 },	-- Astaia
-					["sourceQuests"] = {
-						29325,	-- A Slippery Snack
-						29359,	-- An Old Favorite
-						29321,	-- Happy as a Clam Digger
-						29323,	-- Stocking Up
-						29324,	-- The Sister's Pendant
-					},
-					["description"] = "Fishing Daily Quest Reward",
-					["timeline"] = { "added 4.0.1.12984" },
-					["requireSkill"] = FISHING,
-					["groups"] = {
-						i(44983),	-- Strand Crawler (PET!)
-						i(33820),	-- Weather-Beaten Fishing Hat
-						i(45991),	-- Bone Fishing Pole
-						i(45992),	-- Jeweled Fishing Pole
-						i(67410),	-- Very Unlucky Rock
-						i(67388),	-- String of Alligator Teeth
-					},
-				}),
-			}),
-			-- #endif
 			-- #if BEFORE TBC
 			n(RIDING_TRAINER, {
 				n(4753, {	-- Jartsam <Nightsaber Riding Instructor>

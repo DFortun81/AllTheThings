@@ -8,12 +8,6 @@ local COOKING_AWARD_GROUPS = {
 	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
 	-- #endif
 };
-local FISHING_AWARD_GROUPS = {
-	i(67414, {	-- Bag of Shiny Things
-		["timeline"] = { "added 4.0.1.12984" },
-		["sym"] = {{"fill"}},
-	}),
-};
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -200,9 +194,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 2.4.0.7897" },
 					}),
 					i(67414, {	-- Bag of Shiny Things
+						["provider"] = { "n", 5494 },	-- Catherine Leland
 						["description"] = "Fishing Daily Quest Reward",
+						["sourceQuests"] = {
+							26488,	-- Big Gulp
+							26420,	-- Diggin' For Worms
+							26414,	-- Hitting a Walleye
+							26442,	-- Rock Lobster
+							26536,	-- Thunder Falls
+						},
 						["timeline"] = { "added 4.0.1.12984" },
-						["cr"] = 5494,	-- Catherine Leland
 						["groups"] = {
 							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { "added 3.1.0.9658" },
@@ -851,7 +852,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(7644, {	-- Blessed Arcanite Barding
 					["providers"] = {
@@ -1177,7 +1180,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(6261, {	-- Dungar Longdrink
 					["providers"] = {
@@ -1606,7 +1611,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(6183, {	-- Honor the Dead
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
@@ -2391,7 +2398,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(44471, {	-- Second Sight
 					["qg"] = 102585,	-- Jace Darkweaver
@@ -3429,7 +3438,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = {
+						i(67414),	-- Bag of Shiny Things
+					},
 				}),
 				q(46727, {	-- Tides of War
 					["qgs"] = {

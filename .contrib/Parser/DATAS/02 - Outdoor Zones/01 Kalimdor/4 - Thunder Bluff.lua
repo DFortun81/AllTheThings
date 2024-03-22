@@ -83,16 +83,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if AFTER 6.1.0.19480
-			prof(FISHING, {
-				i(122214, {	-- Music Roll: Mulgore Plains
-					["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
-					["coord"] = { 28.61, 24.61, THUNDER_BLUFF },
-					["timeline"] = { ADDED_6_1_0 },
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(22, {	-- Thunder Bluff, Mulgore
 					["cr"] = 2995,	-- Tal <Wind Rider Master>
@@ -100,6 +90,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if AFTER 4.0.1.12984
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					i(67414, {	-- Bag of Shiny Things
+						["provider"] = { "n", 3028 },	-- Kah Mistrunner
+						["description"] = "Fishing Daily Quest Reward",
+						["sourceQuests"] = {
+							29349,	-- Craving Crayfish
+							29345,	-- Pond Predators
+							29354,	-- Shiny Baubles
+							29348,	-- The Race to Restock
+							29346,	-- The Ring's the Thing
+						},
+						["timeline"] = { "added 4.0.1.12984" },
+						["groups"] = {
+							i(44983),	-- Strand Crawler (PET!)
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(45991),	-- Bone Fishing Pole
+							i(45992),	-- Jeweled Fishing Pole
+							i(67410),	-- Very Unlucky Rock
+							i(67388),	-- String of Alligator Teeth
+						},
+					}),
+					i(122214, {	-- Music Roll: Mulgore Plains
+						["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
+						["coord"] = { 28.61, 24.61, THUNDER_BLUFF },
+						["timeline"] = { ADDED_6_1_0 },
+						["races"] = HORDE_ONLY,
+					}),
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(29362, {	-- "Magic" Mushrooms
 					["qg"] = 3026,	-- Aska Mistrunner
@@ -878,30 +900,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER 4.0.1.12984
-			n(REWARDS, {
-				i(67414, {	-- Bag of Shiny Things
-					["provider"] = { "n", 3028 },	-- Kah Mistrunner
-					["description"] = "Fishing Daily Quest Reward",
-					["sourceQuests"] = {
-						29349,	-- Craving Crayfish
-						29345,	-- Pond Predators
-						29354,	-- Shiny Baubles
-						29348,	-- The Race to Restock
-						29346,	-- The Ring's the Thing
-					},
-					["timeline"] = { "added 4.0.1.12984" },
-					["groups"] = {
-						i(44983),	-- Strand Crawler (PET!)
-						i(33820),	-- Weather-Beaten Fishing Hat
-						i(45991),	-- Bone Fishing Pole
-						i(45992),	-- Jeweled Fishing Pole
-						i(67410),	-- Very Unlucky Rock
-						i(67388),	-- String of Alligator Teeth
-					},
-				}),
-			}),
-			-- #endif
 			n(VENDORS, {
 				n(8359, {	-- Ahanu <Leather Armor Merchant>
 					["coord"] = { 45.6, 55.8, THUNDER_BLUFF },
