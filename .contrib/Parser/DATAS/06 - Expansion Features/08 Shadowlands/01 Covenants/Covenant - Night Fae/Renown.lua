@@ -7,7 +7,7 @@ local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
-		n(RENOWN, {
+		n(RENOWN_REWARDS, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 			["sym"] = {
 				{"select","itemID",186473}	-- A Tiny Winter Staff (PEPE!)

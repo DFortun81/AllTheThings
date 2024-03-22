@@ -6,7 +6,7 @@ local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
-		n(RENOWN, {
+		n(RENOWN_REWARDS, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 			["sym"] = {
 				{"select","itemID",186593}	-- A Tiny Pair of Wings (PEPE!)
@@ -71,7 +71,7 @@ WISPS_OF_MEMORY.customCollect = nil;
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.SL, {
 		n(KYRIAN, {
-			n(RENOWN, {
+			n(RENOWN_REWARDS, {
 				q(64138),	-- hitting Renown 45
 				q(64378),	-- hitting Renown 48 [Death Knight] (received Memory of the Final Sentence)
 				q(64379),	-- hitting Renown 48 [Demon Hunter] (received Memory of Blind Faith)

@@ -37,7 +37,7 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 	}),
 	-- Renown Rewards
 	n(PLUNDERSTORM, {
-		n(REWARDS, bubbleDownRep(2593, {
+		n(RENOWN_REWARDS, bubbleDownRep(2593, {
 			{	-- RENOWN 1 --
 				i(216775),	-- Deadly Dagger
 			},{ -- RENOWN 2 --
