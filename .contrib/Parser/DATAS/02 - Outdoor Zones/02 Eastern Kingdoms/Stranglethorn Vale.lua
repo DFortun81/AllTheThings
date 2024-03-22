@@ -1064,9 +1064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2547,	-- Ironpatch
 							},
 						}),
-						-- #if BEFORE 4.0.3
-						i(4114),	-- Darktide Cape [Awarded from new version of quest 26614]
-						-- #endif
+						i(4114),	-- Darktide Cape
 					},
 				}),
 				q(210, {	-- Krazek's Cookery

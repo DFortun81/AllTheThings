@@ -1028,7 +1028,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Holy Spring Water
-							["provider"] = { "i", 737 },	-- Holy Spring Water
+							["providers"] = {
+								{ "i", 737 },	-- Holy Spring Water
+								{ "o", 759 },	-- The Holy Spring
+							},
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
 						}),
 					},
@@ -1043,15 +1046,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sack of Barley
-							["provider"] = { "i", 738 },	-- Sack of Barley
+							["providers"] = {
+								{ "i", 738 },	-- Sack of Barley
+								{ "o", 50936 },	-- Sack of Barley
+							},
 							["coord"] = { 62.5, 23.3, SWAMP_OF_SORROWS },
 						}),
 						objective(2, {	-- 0/1 Sack of Corn
-							["provider"] = { "i", 739 },	-- Sack of Corn
+							["providers"] = {
+								{ "i", 739 },	-- Sack of Corn
+								{ "o", 50935 },	-- Sack of Corn
+							},
 							["coord"] = { 65.8, 36.7, TANARIS },
 						}),
 						objective(3, {	-- 0/1 Sack of Rye
-							["provider"] = { "i", 740 },	-- Sack of Rye
+							["providers"] = {
+								{ "i", 740 },	-- Sack of Rye
+								{ "o", 50937 },	-- Sack of Rye
+							},
 							["coord"] = { 39.9, 66.2, THE_HINTERLANDS },
 						}),
 					},
@@ -1091,7 +1103,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bundle of Charred Oak
-							["provider"] = { "i", 743 },	-- Bundle of Charred Oak
+							["providers"] = {
+								{ "i", 743 },	-- Bundle of Charred Oak
+								{ "o", 50982 },	-- The Charred Oak
+							},
 							["coord"] = { 54.6, 50.7, SEARING_GORGE },
 						}),
 						i(744, {	-- Thunderbrew's Boot Flask

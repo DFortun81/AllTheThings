@@ -24,6 +24,9 @@ root(ROOTS.Craftables, {
 						}},
 						["g"] = {
 							i(103670),	-- Lil' Bling (PET!)
+							i(90561, {	-- Eternium Rose
+								["description"] = "Can be turned in in Booty Bay for a bag of gold!",
+							}),
 						},
 					}),
 				},
