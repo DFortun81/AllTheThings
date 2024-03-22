@@ -759,7 +759,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 64033 },	-- Master Angler Karu
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = { 86.5, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-						--["u"] = REMOVED_FROM_GAME,	-- tried: fresh character, capped character, character with no general fishing, character with fishing, characters with/without fishing who had and had not approached anglers area, character with/without fishing who had and had not spoken to the fishing trainer in valley of the four winds, and all the same stuff but with characters who did/did not have mop fishing specifically.  if these are available i can't think of any other circumstances under which to test! // Discord Report 2023 Dec 22 Shows this is available
+						["u"] = REMOVED_FROM_GAME,	-- Either bugged or removed from the game
 					}),
 					q(31370, {	-- The Anglers
 						["isBreadcrumb"] = true,
