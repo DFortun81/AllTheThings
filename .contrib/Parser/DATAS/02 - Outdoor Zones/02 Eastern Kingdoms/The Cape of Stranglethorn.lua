@@ -1121,20 +1121,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.0, 73.4, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						objective(1, {	-- Maury's Clubbed Foot
+						objective(1, {	-- 0/1 Maury's Clubbed Foot
 							["provider"] = { "i", 3924 },	-- Maury's Clubbed Foot
-							["coord"] = { 35.2, 51.0, STRANGLETHORN_VALE },
+							["coord"] = { 59.6, 49.0, THE_CAPE_OF_STRANGLETHORN },
 							["cr"] = 2535,	-- Maury "Club Foot" Wilkins
 						}),
-						objective(2, {	-- Jon-Jon's Golden Spyglass
-							["provider"] = { "i", 3925 },	-- Jon-Jon's Golden Spyglass
-							["coord"] = { 34.8, 51.8, STRANGLETHORN_VALE },
-							["cr"] = 2536,	-- Jon-Jon the Crow
+						objective(2, {	-- 0/1 Fitztittle's Ratcheting Torque Wrench
+							["provider"] = { "i", 59034 },	-- Fitztittle's Ratcheting Torque Wrench
+							["coord"] = { 56.6, 57.8, THE_CAPE_OF_STRANGLETHORN },
+							["cr"] = 43376,	-- Freewheelin' Juntz Fitztittle
 						}),
-						objective(3, {	-- Chucky's Huge Ring
-							["provider"] = { "i", 3926 },	-- Chucky's Huge Ring
-							["coord"] = { 40.2, 58.6, STRANGLETHORN_VALE },
-							["cr"] = 2537,	-- Chucky "Ten Thumbs"
+						objective(3, {	-- 0/1 Ephram's Jeweled Mirror
+							["provider"] = { "i", 59035 },	-- Ephram's Jeweled Mirror
+							["coord"] = { 56.8, 52.4, THE_CAPE_OF_STRANGLETHORN },
+							["cr"] = 43377,	-- Ephram "Midriff" Moonfall
 						}),
 						i(61538, {	-- Nice Shorts
 							["timeline"] = { "added 4.0.3.13287" },
