@@ -7611,10 +7611,11 @@ local function DirectGroupUpdate(group, got)
 		-- give up after a few tries if it doesn't get into a window...
 		if group.DGU_Fill <= 0 then
 			group.DGU_Fill = nil
+			-- app.PrintDebug("DGU_Fill ignored",app:SearchLink(group))
 			return
 		end
 		-- app.PrintDebug("Delayed DGU_Fill",app:SearchLink(group))
-		DelayedCallback(DirectGroupUpdate, DGUDelay, group);
+		app.FillRunner.Run(DirectGroupUpdate, group)
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
@@ -13664,8 +13665,16 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 			-- Blizz likes to list the same quest on multiple maps
 			local AddedQuestIDs = {}
 			self.Clear = function(self)
-				wipe(self.data.g);
-				tinsert(self.data.g, UpdateButton);
+				self:GetRunner().Reset()
+				local g = self.data.g
+				-- wipe parent references from current top-level groups so any delayed
+				-- updates on sub-groups no longer chain to the window
+				for _,o in ipairs(g) do
+					o.parent = nil
+				end
+				wipe(g);
+				tinsert(g, UpdateButton);
+				self:BuildData();
 				self:Update(true);
 			end
 			-- World Quests (Tasks)
@@ -13791,6 +13800,8 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 					Callback(self.Update, self, true);
 					return;
 				end
+				-- Reset the world quests Runner before building new data
+				self:GetRunner().Reset()
 				wipe(self.data.g);
 				-- Rebuild all World Quest data
 				wipe(AddedQuestIDs)
