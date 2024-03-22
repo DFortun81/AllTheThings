@@ -12,6 +12,14 @@ researchEquipment.icon = [[~_.asset("Icon_PetFamily_Mechanical")]];
 -- Spirit of the Wolf
 ObjectDB[226469].text.en = [[~GetSpellInfo(154259)]];
 
+-- Altar of Naias (not in WoWHead's DB)
+ObjectDB[181636] = {
+	readable = "Altar of Naias",
+	text = {
+		en = "Altar of Naias",
+	},
+};
+
 -- #if BEFORE CATA
 ObjectDB[256] = {
 	readable = "WANTED",

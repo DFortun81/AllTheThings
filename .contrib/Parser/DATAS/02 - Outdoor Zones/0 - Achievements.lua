@@ -275,6 +275,7 @@ root(ROOTS.Zones, {
 				12561,	-- Explore Nazmir
 				12560,	-- Explore Vol'dun
 			}},
+			["timeline"] = { ADDED_8_0_1 },
 		})),
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
 			["timeline"] = { ADDED_8_0_1 },
@@ -318,8 +319,9 @@ root(ROOTS.Zones, {
 				4865,	-- Explore Uldum
 				4825,	-- Explore Vashj'ir
 			}},
+			["timeline"] = { ADDED_4_0_3 },
 		})),
-		ach(9924, {	-- Field Photographer
+		ach(9924, bubbleDownSelf({ ["timeline"] = { "added 6.1.0" }, }, {	-- Field Photographer
 			title(307),	-- Field Photographer <Name>
 			crit(27865),	-- Onyxia's Lair
 			crit(27863),	-- The Frozen Throne
@@ -365,7 +367,7 @@ root(ROOTS.Zones, {
 			crit(27978),	-- Halls of Origination
 			crit(27869, { ["races"] = HORDE_ONLY }),	-- Orgrimmar
 			crit(27864, { ["races"] = ALLIANCE_ONLY }),	-- Stormwind City
-		}),
+		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
 			-- #if BEFORE WRATH
 			["description"] = "Complete the Green Hills of Stranglethorn, Hills Like White Elekk and Snows of Northrend achievements.",
@@ -389,11 +391,13 @@ root(ROOTS.Zones, {
 			}},
 			-- #endif
 		})),
-		ach(1833),	-- It's Happy Hour Somewhere
-		ach(5752, {		-- Justly Rewarded
+		ach(1833, {	-- It's Happy Hour Somewhere
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(5752, {	-- Justly Rewarded
 			["timeline"] = { ADDED_4_1_0 },
 		}),
-		ach(4875, {	-- Loremaster of Cataclysm
+		applyclassicphase(CATA_PHASE_ONE, ach(4875, {	-- Loremaster of Cataclysm
 			["sym"] = {{"meta_achievement",
 				4870,	-- Coming Down the Mountain
 				4871,	-- Deep into Deepholm
@@ -403,8 +407,9 @@ root(ROOTS.Zones, {
 				4982,	-- Sinking into Vashj'ir [H]
 				4872,	-- Unearthing Uldum
 			}},
-		}),
-		ach(13512, {	-- Master Calligrapher
+			["timeline"] = { ADDED_4_0_3 },
+		})),
+		ach(13512, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" }, }, {	-- Master Calligrapher
 			crit(44853, {	-- Master of Calligraphy - Circle
 				["_quests"] = {
 					55340,	-- Calligraphy [A]
@@ -435,8 +440,8 @@ root(ROOTS.Zones, {
 					55344,	-- Calligraphy [H]
 				},
 			}),
-		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1576, {	-- Of Blood and Anguish
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1576, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- Of Blood and Anguish
 			["maps"] = { NAGRAND, ZULDRAK },
 			["groups"] = {
 				crit(5799, {	-- The Champion of Anguish
@@ -446,8 +451,8 @@ root(ROOTS.Zones, {
 					["_quests"] = { 9977 },	-- The Ring of Blood: The Final Challenge
 				}),
 			},
-		})),
-		ach(2556, {	-- Pest Control
+		}))),
+		ach(2556, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- Pest Control
 			crit(9364),	-- Larva (Naxxramas, Ghostlands)
 			crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
 			crit(9372),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
@@ -466,7 +471,7 @@ root(ROOTS.Zones, {
 			crit(9361),	-- Fire Beetle (Mount Hyjal, Searing Gorge, Blackrock Mountain, Blasted Lands, Un'Goro Crater)
 			crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
 			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
-		}),
+		})),
 		petbattle(ach(6607,  {	-- Taming Azeroth
 			["sym"] = {{"meta_achievement",
 				6604,	-- Taming Outland
@@ -514,7 +519,7 @@ root(ROOTS.Zones, {
 				i(169349),	-- Kelpfin (PET!)
 			},
 		}))),
-		ach(1182, {		-- The Bread Winner
+		ach(1182, {	-- The Bread Winner
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { 978, 970, 576 }, {	-- The Diplomat
@@ -537,12 +542,14 @@ root(ROOTS.Zones, {
 				title(48),	-- % the Diplomat
 			}),
 		})),
-		ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+		ach(4958, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
 			crit(5798),		-- Ring of Blood in Nagrand
 			crit(5799),		-- Amphitheater of Anguish in Zul'Drak
 			crit(13918),	-- Crucible of Carnage in Twilight Highlands
+		})),
+		ach(5794, {	-- Time Flies When You're Having Fun
+			["timeline"] = { "added 4.2.0" },
 		}),
-		ach(5794),		-- Time Flies When You're Having Fun
 		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
 			["sym"] = {{"meta_achievement",
 				1678,	-- Loremaster of Kalimdor (A)

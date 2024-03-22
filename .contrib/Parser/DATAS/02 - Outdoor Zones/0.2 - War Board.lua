@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER CATA
 root(ROOTS.Zones, {
 	header(HEADERS.Object, 207303, {	-- Adventure Board
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
@@ -675,3 +675,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(72751),	-- Triggers whenever you collect one of the Coin quests from your Adventurer's Journal.
 	})),
 }));
+-- #endif

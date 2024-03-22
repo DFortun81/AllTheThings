@@ -4619,6 +4619,7 @@ local HeaderTypeAbbreviations = {
 	["m"] = "mapID",
 	["n"] = "npcID",
 	["i"] = "itemID",
+	["o"] = "objectID",
 	["q"] = "questID",
 	["s"] = "spellID",
 };
@@ -4662,6 +4663,12 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 		if typ then
 			local cache = SearchForField(typ, t.autoID);
 			if #cache > 0 then
+				for i,o in ipairs(cache) do
+					if o.key == typ then
+						t.result = o;
+						return o;
+					end
+				end
 				t.result = cache[1];
 				return cache[1];
 			else

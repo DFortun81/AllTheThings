@@ -8,6 +8,8 @@
 -- #IMPORT: 01 - Dungeons Raids\\04 - Cataclysm\\
 
 -- Outdoor Zones
+-- #IMPORT: 02 - Outdoor Zones\\0 - Achievements.lua
+-- #IMPORT: 02 - Outdoor Zones\\0.2 - War Board.lua
 -- #IMPORT: 02 - Outdoor Zones\\01 Kalimdor\\
 -- #IMPORT: 02 - Outdoor Zones\\02 Eastern Kingdoms\\
 -- #IMPORT: 02 - Outdoor Zones\\03 Outland\\

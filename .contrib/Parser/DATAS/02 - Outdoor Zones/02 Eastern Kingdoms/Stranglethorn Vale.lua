@@ -364,8 +364,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Heart of Naias
 							["providers"] = {
-								{ "i", 23681 },	-- Heart of Naias
-								{ "i", 23680 },	-- Gift of Naias
+								{ "i",  23681 },	-- Heart of Naias
+								{ "i",  23680 },	-- Gift of Naias
+								{ "o", 181636 },	-- Altar of Naias
 							},
 							["coord"] = { 19.8, 22.6, STRANGLETHORN_VALE },
 							["cr"] = 17207,	-- Naias

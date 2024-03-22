@@ -2241,6 +2241,7 @@ _.ObjectNames = {
 	[181627] = "Weapon Rack",
 	[181628] = "Empty Barrel",
 	[181629] = "Holy Coffer",
+	[181636] = "Altar of Naias",
 	[181637] = "Sha'naar Relic",
 	[181638] = "Wanted Poster",
 	[181643] = "Featherbeard's Remains",
