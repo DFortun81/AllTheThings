@@ -1375,8 +1375,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26813, {	-- Plunging Into Zul'Gurub (A)
 					["providers"] = {
-						{ "i", 60374 },	-- Maywiki's Fetish
-						{ "n", 44084 },	-- Maywiki
+						{ "i",  60374 },	-- Maywiki's Fetish
+						{ "n",  44084 },	-- Maywiki
+						{ "o", 204386 },	-- Zanzil's Portal
 					},
 					["sourceQuest"] = 26812,	-- High Priestess Jeklik
 					["coord"] = { 77.9, 44.1, NORTHERN_STRANGLETHORN },
@@ -1385,8 +1386,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26554, {	-- Plunging Into Zul'Gurub (H)
 					["providers"] = {
-						{ "i", 58964 },	-- Chabal's Fetish
-						{ "n", 43098 },	-- Chabal
+						{ "i",  58964 },	-- Chabal's Fetish
+						{ "n",  43098 },	-- Chabal
+						{ "o", 204386 },	-- Zanzil's Portal
 					},
 					["sourceQuest"] = 26553,	-- High Priestess Jeklik
 					["coord"] = { 78.0, 44.2, NORTHERN_STRANGLETHORN },
@@ -2225,8 +2227,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26811, {	-- Through the Troll Hole (A)
 					["providers"] = {
-						{ "i", 60374 },	-- Maywiki's Fetish
-						{ "n", 44084 },	-- Maywiki
+						{ "i",  60374 },	-- Maywiki's Fetish
+						{ "n",  44084 },	-- Maywiki
+						{ "o", 204372 },	-- Zanzil's Portal
 					},
 					["sourceQuest"] = 26810,	-- Eliminate the Outcast
 					["coord"] = { 61.2, 44.3, THE_CAPE_OF_STRANGLETHORN },
@@ -2235,8 +2238,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26552, {	-- Through the Troll Hole (H)
 					["providers"] = {
-						{ "i", 58964 },	-- Chabal's Fetish
-						{ "n", 43098 },	-- Chabal
+						{ "i",  58964 },	-- Chabal's Fetish
+						{ "n",  43098 },	-- Chabal
+						{ "o", 204372 },	-- Zanzil's Portal
 					},
 					["sourceQuest"] = 26551,	-- Eliminate the Outcast
 					["description"] = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
