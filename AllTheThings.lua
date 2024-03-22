@@ -13550,22 +13550,23 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
+			local UpdateButton = app.CreateRawText(L.UPDATE_WORLD_QUESTS, {
+				["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
+				["description"] = L.UPDATE_WORLD_QUESTS_DESC,
+				["hash"] = "funUpdateWorldQuests",
+				["OnClick"] = function(data, button)
+					Push(self, "WorldQuests-Rebuild", self.Rebuild);
+					return true;
+				end,
+				["OnUpdate"] = app.AlwaysShowUpdate,
+			})
 			local data = app.CreateRawText(L.WORLD_QUESTS, {
 				["icon"] = "Interface\\Icons\\INV_Misc_Map08.blp",
 				["description"] = L.WORLD_QUESTS_DESC,
 				["indent"] = 0,
 				["back"] = 1,
 				["g"] = {
-					app.CreateRawText(L.UPDATE_WORLD_QUESTS, {
-						["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
-						["description"] = L.UPDATE_WORLD_QUESTS_DESC,
-						["hash"] = "funUpdateWorldQuests",
-						["OnClick"] = function(data, button)
-							Push(self, "WorldQuests-Rebuild", self.Rebuild);
-							return true;
-						end,
-						["OnUpdate"] = app.AlwaysShowUpdate,
-					}),
+					UpdateButton,
 				},
 			})
 			self:SetData(data);
@@ -13663,9 +13664,8 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 			-- Blizz likes to list the same quest on multiple maps
 			local AddedQuestIDs = {}
 			self.Clear = function(self)
-				local temp = self.data.g[1];
 				wipe(self.data.g);
-				tinsert(self.data.g, temp);
+				tinsert(self.data.g, UpdateButton);
 				self:Update(true);
 			end
 			-- World Quests (Tasks)
@@ -13791,6 +13791,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 					Callback(self.Update, self, true);
 					return;
 				end
+				wipe(self.data.g);
 				-- Rebuild all World Quest data
 				wipe(AddedQuestIDs)
 				-- app.PrintDebug("Rebuild WQ Data")
