@@ -45,6 +45,13 @@ ObjectDB[57] = {
 		cn = "月亮照耀着山谷",
 	},
 };
+-- CRIEVE NOTE: Couldn't find any information about this object or locales for other languages, RIP.
+ObjectDB[201964] = {
+	readable = "Aderic's Tomb",
+	text = {
+		en = "Aderic's Tomb",
+	},
+};
 -- #endif
 
 -- TODO: Change the headers for this stuff to a custom header and allow the object localizer to translate the object so it appears on the tooltip.

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+-- CRIEVE NOTE: Going to do a playthrough on the Cataclysm Beta to make sure the map coordinate stuff works correctly.
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(179, {	-- Gilneas
 		["lore"] = "Gilneas, once a human kingdom, was isolated from the rest of the world ever since the Second War. It is now home of Genn Graymane's worgen who have re-joined the Alliance once again since the Forsaken invasion and the Cataclysm wrecked their kingdom. Gilneas is a worgen-only leveling zone that relies heavily upon phasing. The starting zone covers how the player transforms into a Worgen, later aiding Graymane in trying to protect his kingdom from Sylvanas.",
@@ -26,6 +27,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 59.81, 22.17, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
+								objective(1, {	-- 0/6 Rampaging Worgen slain
+									["providers"] = {
+										{ "n", 34884 },	-- Rampaging Worgen
+										{ "n", 35660 },	-- Rampaging Worgen
+									},
+								}),
 								i(55004),	-- Wolf Fur Coat
 							},
 						}),
@@ -48,6 +55,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 40.46, 39.37, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
+								objective(1, {	-- 0/80 Rampaging Worgen slain
+									["providers"] = {
+										{ "n", 35229 },	-- Bloodfang Stalker
+										{ "n", 51277 },	-- Bloodfang Stalker
+									},
+								}),
 								i(55010),	-- Cannoneer's Leggings
 								i(55009),	-- Steadfast Boots
 								i(131866, {	-- Steadfast Greaves
@@ -76,6 +89,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
 							["classes"] = { WARRIOR },
+							["groups"] = {
+								objective(2, {	-- Practice Charge
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
+							},
 						}),
 						q(14274, {	-- Corruption
 							["qg"] = 35869,	-- Vitus Darkwalker
@@ -84,12 +102,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
 							["classes"] = { WARLOCK },
+							["groups"] = {
+								objective(2, {	-- Practice Corruption
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
+							},
 						}),
 						q(14098, {	-- Evacuate the Merchant Square
 							["qg"] = 34913,	-- Prince Liam Greymane
 							["sourceQuest"] = 14091,	-- Something's Amiss
 							["coord"] = { 59.81, 22.17, 202 },
 							["races"] = { WORGEN },
+							["groups"] = {
+								objective(1, {	-- 0/3 Market Homes Evacuated
+									["provider"] = { "o", 195327 },	-- Merchant Square Door
+									["coord"] = { 59.81, 22.17, 202 },
+								}),
+							},
 						}),
 						q(14272, {	-- Eviscerate
 							["qg"] = 35871,	-- Loren the Fence
@@ -98,13 +127,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
 							["classes"] = { ROGUE },
+							["groups"] = {
+								objective(2, {	-- Practice Eviscerate
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
+							},
 						}),
 						q(14204, {	-- From the Shadows
-							["qg"] = 35378,	-- Lorna Crowley
+							["providers"] = {
+								{ "n", 35378 },	-- Lorna Crowley
+								{ "i", 48707 },	-- Gilnean Mastiff Collar
+							},
 							["sourceQuest"] = 14159,	-- The Rebel Lord's Arsenal
 							["coord"] = { 56.87, 81.41, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
+								objective(1, {	-- 0/6 Bloodfang Lurker slain
+									["provider"] = { "n", 35463 },	-- Bloodfang Lurker
+								}),
 								i(54985),	-- Alarmbringer's Mace
 								i(54986),	-- Houndmaster's Crossbow
 								i(58217),	-- Mastiff Trainer's Wand
@@ -118,9 +158,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
 							["classes"] = { MAGE },
+							["groups"] = {
+								objective(2, {	-- Practice Frost Nova
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
+							},
 						}),
 						q(24678, {	-- Knee-Deep
-							["qg"] = 38539,	-- King Genn Greymane
+							["providers"] = {
+								{ "n", 38539 },	-- King Genn Greymane
+								{ "i", 50220 },	-- Half-Burnt Torch
+							},
 							["sourceQuest"] = 24920,	-- Slowing the Inevitable
 							["coord"] = { 32.37, 57.01, 202 },
 							["races"] = { WORGEN },
@@ -130,6 +178,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 14221,	-- Never Surrender, Sometimes Retreat
 							["coord"] = { 48.93, 52.79, 202 },
 							["races"] = { WORGEN },
+							["groups"] = {
+								objective(1, {	-- 0/8 Frenzied Stalker slain
+									["provider"] = { "n", 35627 },	-- Frenzied Stalker
+								}),
+							},
 						}),
 						q(14279, {	-- Learning the Word
 							["qg"] = 35870,	-- Sister Almyra
@@ -138,6 +191,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
 							["classes"] = { PRIEST },
+							["groups"] = {
+								objective(2, {	-- 	Practice Shadow Word: Pain (2)
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
+							},
 						}),
 						q(14078, {	-- Lockdown!
 							["qg"] = 34850,	-- Prince Liam Greymane
@@ -157,6 +215,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
 							["classes"] = { DRUID },
+							["groups"] = {
+								objective(2, {	-- Practice Moonfire
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
+							},
 						}),
 						q(14221, {	-- Never Surrender, Sometimes Retreat
 							["qg"] = 35552,	-- Tobias Mistmantle
@@ -202,6 +265,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 14294,	-- Time to Regroup
 							["coord"] = { 31.05, 72.33, 202 },
 							["races"] = { WORGEN },
+							["groups"] = {
+								objective(1, {	-- 0/30 Bloodfang Stalker rounded up
+									["provider"] = { "n", 35229 },	-- Bloodfang Stalker
+								}),
+							},
 						}),
 						q(14285, {	-- Safety in Numbers (Rogue)
 							["qg"] = 35871,	-- Loren the Fence
@@ -301,6 +369,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 59.57, 26.77, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
+								objective(1, {	-- 0/4 Salvaged Supplies
+									["providers"] = {
+										{ "i",  46896 },	-- Salvaged Supplies
+										{ "o", 195306 },	-- Supply Crate
+									},
+									["coord"] = { 59.5, 35.6, 202 },
+								}),
 								i(52040),	-- Salvager's Bag
 							},
 						}),
@@ -309,6 +384,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 14214,	-- Messsage to Greymane
 							["coord"] = { 59.27, 83.80, 202 },
 							["races"] = { WORGEN },
+							["groups"] = {
+								objective(1, {	-- Krennan Aranas rescued
+									["provider"] = { "n", 35753 },	-- Krennan Aranas <Journeyman Chemist>
+									["coord"] = { 66, 62.2, 202 },
+								}),
+							},
 						}),
 						q(14278, {	-- Seek the Siter
 							["qg"] = 35840,	-- Gwen Armstead
@@ -329,6 +410,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 24903,	-- Vengeance or Survival
 							["coord"] = { 32.37, 57.01, 202 },
 							["races"] = { WORGEN },
+							["groups"] = {
+								objective(1, {	-- 0/6 Forsaken Catapult slain
+									["provider"] = { "n", 38287 },	-- Forsaken Catapult
+								}),
+								objective(2, {	-- 0/40 Invading Forsaken slain
+									["providers"] = {
+										{ "n", 38363 },	-- Forsaken Invader
+										{ "n", 38364 },	-- Forsaken Plaguesmith
+									},
+								}),
+							},
 						}),
 						q(14275, {	-- Someone's Keeping Track of You
 							["qg"] = 35840,	-- Gwen Armstead
@@ -357,6 +449,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
 							["classes"] = { HUNTER },
+							["groups"] = {
+								objective(2, {	-- Practice Steady Shot (2)
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
+							},
 						}),
 						q(24902, {	-- The Hunt For Sylvanas
 							["qg"] = 38611,	-- Lorna Crowley
@@ -370,7 +467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 57.96, 75.56, 202 },
 							["races"] = { WORGEN },
 						}),
-						q(14159, {	-- The Rebl Lord's Arsenal
+						q(14159, {	-- The Rebel Lord's Arsenal
 							["qg"] = 35112,	-- King Geen Greymane
 							["sourceQuests"] = {
 								26129,	-- Brothers in Arms
@@ -412,6 +509,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 65.41, 77.62, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
+								objective(1, {	-- 0/5 Bloodfang Worgen slain
+									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
+								}),
 								i(131864, {	-- Armstead Bindings
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -457,13 +557,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 24617,	-- Tal'doren, the Wild Home
 					["coord"] = { 68.69, 73.26, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/6 Howling Banshee slain
+							["provider"] = { "n", 37757 },	-- Howling Banshee
+						}),
+					},
 				}),
 				q(24592, {	-- Betrayal at Tempest's Reach
-					["qg"] = 37874,	-- Krennan Aranas
+					["providers"] = {
+						{ "n", 37874 },	-- Krennan Aranas
+						{ "i", 50218 },	-- Krennan's Potion of Stealth
+					},
 					["sourceQuest"] = 24672,	-- Onwards and Upwards
 					["coord"] = { 72.73, 80.04, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Baron Ashbury slain
+							["provider"] = { "n", 37735 },	-- Baron Ashbury
+						}),
+						objective(1, {	-- 0/1 Lord Walden slain
+							["provider"] = { "n", 37733 },	-- Lord Walden
+						}),
 						i(55003),	-- Greymane Cloak
 						i(55002),	-- Blue-Bloodied Boots
 						i(131378, {	-- Blue-Bloodied Treads
@@ -499,6 +613,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 14467,	-- Alas, Gilneas!
 					["coord"] = { 41.91, 20.10, 182 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- Carriage boarded
+							["provider"] = { "n", 44928 },	-- Stagecoach Carriage
+						}),
+					},
 				}),
 				q(24677, {	-- Flank the Forsaken
 					["qg"] = 37876,	-- King Genn Greymane
@@ -511,6 +630,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 14396,	-- As the Land Shatters
 					["coord"] = { 29.03, 65.06, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/4 Drowning Watchman rescued
+							["provider"] = { "n", 36440 },	-- Drowning Watchman
+						}),
+					},
 				}),
 				q(14398, {	-- Grandma Wahl
 					["qg"] = 36452,	-- Gwen Armstead
@@ -524,6 +648,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Chance the Cat
+							["provider"] = { "i", 49281 },	-- Chance the Cat
+							["coord"] = { 35, 74.8, 179 },
+							["cr"] = 36461,	-- Lucius the Cruel
+						}),
 						i(55016),	-- Granny's Mallet
 						i(55017),	-- Orange Blanket
 					},
@@ -533,6 +662,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 14398,	-- Grandma Wahl
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/1 Linen-Wrapped Book
+							["providers"] = {
+								{ "i",  49280 },	-- Linen-Wrapped Book
+								{ "o", 196473 },	-- Linen-Wrapped Book
+							},
+							["coord"] = { 33.9, 77.3, 179 },
+						}),
+					},
 				}),
 				q(14347, {	-- Hold the Line
 					["qg"] = 36140,	-- Prince Liam Greymane
@@ -540,6 +678,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.75, 66.29, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/10 Forsaken Invader slain
+							["provider"] = { "n", 34511 },	-- Forsaken Invader
+						}),
 						i(54984),	-- Gilnean Soldier's Waistband
 						i(54983),	-- Repeller's Bracers
 					},
@@ -565,11 +706,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 14399,	-- Grandma's Lost It Alright
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/1 Grandma's Good Clothes
+							["providers"] = {
+								{ "i",  49279 },	-- Grandma's Good Clothes
+								{ "o", 196472 },	-- Grandma's Good Clothes
+							},
+							["coord"] = { 32.1, 75.6, 179 },
+						}),
+					},
 				}),
 				q(14320, {	-- In Need of Ingredients
-					["qg"] = 36132,	-- Krennan Aranas
+					["providers"] = {
+						{ "n",  36132 },	-- Krennan Aranas
+						{ "o", 196394 },	-- Crate of Mandrake Essence
+					},
 					["sourceQuest"] = 14313,	-- Among Humans Again
-					["coord"] = { 37.42, 63.23, 179 },
+					["coords"] = {
+						{ 37.42, 63.23, 179 },
+						{ 32.9, 66.4, 179 },
+					},
 					["races"] = { WORGEN },
 				}),
 				q(24472, {	-- Introductions Are In Order
@@ -577,6 +733,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 24468,	-- Stranded at the Marsh
 					["coord"] = { 51.81, 80.48, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/4 Ogre Minion slain
+							["provider"] = { "n", 36293 },	-- Ogre Minion <Servant of Koroth>
+						}),
+						objective(2, {	-- 0/1 Koroth's Banner
+							["providers"] = {
+								{ "i",  49742 },	-- Koroth's Banner
+								{ "o", 201594 },	-- Koroth's Banner
+							},
+							["coord"] = { 46.8, 83.5, 179 },
+						}),
+					},
 				}),
 				q(14321, {	-- Invasion
 					["qg"] = 36205,	-- Slain Watchman
@@ -601,6 +769,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 24678,	-- Knee-Deep
 					["coord"] = { 49.83, 56.93, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/5 Unearthed Memento
+							["provider"] = { "i", 49921 },	-- Unearthed Memento
+							["cr"] = 37884,	-- Disturbed Spirit
+						}),
+					},
 				}),
 				q(14375, {	-- Last Chance at Humanity
 					["qg"] = 36332,	-- King Genn Greymane
@@ -613,9 +787,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 14466,	-- The King's Observatory (TODO: need to verify if this truly is the start. Could be level-based at 15? Saw the quest offered this source but could be available earlier)
 					["coord"] = { 70.66, 39.71, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/10 Side of Stag Meat
+							["provider"] = { "i", 50219 },	-- Side of Stag Meat
+							["cr"] = 37786,	-- Brown Stag
+						}),
+					},
 				}),
 				q(14386, {	-- Leader of the Pack
-					["qg"] = 36290,	-- Lord Godfrey
+					["providers"] = {
+						{ "n", 36290 },	-- Lord Godfrey
+						{ "i", 49240 },	-- Mastiff Whistle
+					},
 					["sourceQuests"] = {
 						14368,	-- Save the Children!
 						14382,	-- Two By Sea
@@ -624,6 +807,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.97, 63.93, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Dark Ranger Thyala slain
+							["provider"] = { "n", 36312 },	-- Dark Ranger Thyala
+							["coord"] = { 23.2, 67.2, 179 },
+						}),
 						i(131355, {	-- Dark Ranger's Hauberk
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -636,6 +823,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 24677,	-- Flank the Forsaken
 					["coord"] = { 70.87, 39.83, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/5 Enslaved Gilnean freed
+							["providers"] = {
+								{ "i",  49881 },	-- Slaver's Key
+								{ "o", 201775 },	-- Ball and Chain
+							},
+							["coord"] = { 79.8, 28.4, 179 },
+							["cr"] = 37701,	-- Forsaken Slavedriver
+						}),
+					},
 				}),
 				q(24616, {	-- Losing Your Tail
 					["qg"] = 37822,	-- Belysra Starbreeze
@@ -643,9 +840,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.35, 82.92, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Dark Scout slain
+							["providers"] = {
+								{ "n", 37953 },	-- Dark Scout
+								{ "i", 49944 },	-- Belysra's Talisman
+							},
+							["coord"] = { 63.8, 81.2, 179 },
+						}),
 						i(54999),	-- Seryl's Robes
 						i(55000),	-- Hightailing Leggings
-						i(131380),	-- Hightailing Greaves
+						i(131380, {	-- Hightailing Greaves
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(55001),	-- Hotfoot Boots
 					},
 				}),
@@ -655,11 +861,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 68.69, 73.26, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- Well of Fury
+							["provider"] = { "o", 201950 },	-- Well of Fury
+							["coord"] = { 68.9, 72.9, 179 },
+						}),
+						objective(2, {	-- Well of Tranquility
+							["provider"] = { "o", 201951 },	-- Well of Tranquility
+							["coord"] = { 69.2, 73.1, 179 },
+						}),
+						objective(3, {	-- Well of Balance
+							["provider"] = { "o", 201952 },	-- Well of Balance
+							["coord"] = { 69.1, 73.5, 179 },
+						}),
 						i(66439),	-- Cry of the Wolf
 						i(66660),	-- Hammer of Controlled Fury
 						i(66876),	-- Sharp Edge of Balance
-						i(133697),	-- Sharpened Wolf's Tooth
-						i(156985),	-- Staff of Deserved Tranquility
+						i(133697, {	-- Sharpened Wolf's Tooth
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(156985, {	-- Staff of Deserved Tranquility
+							["timeline"] = { "added 7.3.5" },
+						}),
 						i(52942),	-- Staff of Earned Tranquility
 					},
 				}),
@@ -669,6 +891,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.88, 84.18, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Shipwright's Tools
+							["providers"] = {
+								{ "i",  49337 },	-- Shipwright's Tools
+								{ "o", 196810 },	-- Shipwright's Tools
+							},
+							["coord"] = { 37.5, 87.2, 179 },
+						}),
+						objective(2, {	-- 0/1 Planks of Wood
+							["providers"] = {
+								{ "i",  49338 },	-- Planks of Wood
+								{ "o", 196809 },	-- Planks of Wood
+							},
+							["coord"] = { 36.2, 86.5, 179 },
+						}),
+						objective(3, {	-- 0/1 Coal Tar
+							["providers"] = {
+								{ "i",  49339 },	-- Coal Tar
+								{ "o", 196808 },	-- Barrel of Coal Tar
+							},
+							["coord"] = { 37.5, 85.9, 179 },
+						}),
 						i(52039),	-- Shipwright's Bag
 					},
 				}),
@@ -683,24 +926,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 24602,	-- Laid to Rest
 					["coord"] = { 49.83, 56.93, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- Offering placed
+							["providers"] = {
+								{ "i",  51956 },	-- Blessed Offerings
+								{ "o", 201964 },	-- Aderic's Tomb
+							},
+							["coord"] = { 48.9, 53.1, 179 },
+						}),
+					},
 				}),
 				q(24484, {	-- Pest Control
 					["qg"] = 37102,	-- Gwen Armstead
 					["sourceQuest"] = 24483,	-- Stormglen
 					["coord"] = { 59.86, 91.70, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/6 Vilebrood Skitterer slain
+							["provider"] = { "n", 36813 },	-- Vilebrood Skitterer
+						}),
+					},
 				}),
 				q(24495, {	-- Pieces of the Past
 					["qg"] = 37815,	-- Lorna Crowley
 					["sourceQuest"] = 24483,	-- Stormglen
 					["coord"] = { 60.27, 91.85, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/6 Old Journal Page
+							["providers"] = {
+								{ "i",  49760 },	-- Old Journal Page
+								{ "o", 201607 },	-- Old Journal Page
+							},
+							["coord"] = { 65.0, 90.8, 179 },
+						}),
+					},
 				}),
 				q(24628, {	-- Preparations
 					["qg"] = 37873,	-- Vassandra Stormclaw
 					["sourceQuest"] = 24617,	-- Tal'doren, the Wild Home
 					["coord"] = { 69.28, 72.98, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/6 Moonleaf
+							["provider"] = { "i",  50017 },	-- Moonleaf
+							["cr"] = 37757,	-- Howling Banshee
+						}),
+					},
 				}),
 				q(24676, {	-- Push Them Out
 					["qg"] = 37783,	-- Lorna Crowley
@@ -711,6 +983,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 70.87, 39.83, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/4 Forsaken Infantry slain
+							["provider"] = { "n", 37692 },	-- Forsaken Infantry
+						}),
+						objective(2, {	-- 0/1 Executor Cornell slain
+							["provider"] = { "n", 37686 },	-- Executor Cornell
+						}),
+						objective(3, {	-- 0/1 Valnov the Mad slain
+							["provider"] = { "n", 37685 },	-- Valnov the Mad
+						}),
+					},
 				}),
 				q(24501, {	-- Queen-Sized Troubles
 					["qg"] = 37102,	-- Gwen Armstead
@@ -718,9 +1001,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 59.86, 91.70, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Rygna slain
+							["provider"] = { "n", 37045 },	-- Rygna <Vilebrood Matriarch>
+							["coord"] = { 68, 81.8, 179 },
+						}),
 						i(54996),	-- Rygna-Silk Leggings
 						i(54997),	-- Arachnophobe's Breastplate
-						i(131369),	-- Arachnophobe's Chain Shirt
+						i(131369, {	-- Arachnophobe's Chain Shirt
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(54998),	-- Braided Gossamer Armbands
 					},
 				}),
@@ -749,6 +1038,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.93, 64.04, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- Cynthia rescued
+							["provider"] = { "n", 36287 },	-- Cynthia
+							["coord"] = { 29.6, 69.2, 179 },
+						}),
+						objective(2, {	-- Ashley rescued
+							["provider"] = { "n", 36288 },	-- Ashley
+							["coord"] = { 27.8, 66.6, 179 },
+						}),
+						objective(3, {	-- James rescued
+							["provider"] = { "n", 36289 },	-- James
+							["coord"] = { 28.6, 66.6, 179 },
+						}),
 						i(54981),	-- Caregiver's Leggings
 						i(54982),	-- Gloves of Protection
 						i(131351, {	-- Protector's Legguards
@@ -769,6 +1070,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- Brothogg the Slavemaster slain
+							["provider"] = { "n", 37802 },	-- Brothogg the Slavemaster
+							["coord"] = { 80.6, 31.8, 179 },
+						}),
 						i(54991),	-- Marcus' Pickaxe
 						i(54992),	-- Laborer's Belt
 						i(54993),	-- Emberstone Plate
@@ -786,8 +1091,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.81, 80.48, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/5 Crash Survivor saved
+							["provider"] = { "n", 37067 },	-- Crash Survivor
+						}),
 						i(54994),	-- Paramedic Bracers
-						i(131368),	-- First Responder's Bindings
+						i(131368, {	-- First Responder's Bindings
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(54995),	-- Hailwood Chestpiece
 					},
 				}),
@@ -798,10 +1108,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { WORGEN },
 				}),
 				q(24646, {	-- Take Back What's Ours
-					["qg"] = 37195,	-- Lord Darius Crowley
+					["providers"] = {
+						{ "n", 37195 },	-- Lord Darius Crowley
+						{ "i", 50134 },	-- Horn of Tal'doren
+					},
 					["sourceQuest"] = 24627,	-- At Our Doorstep
 					["coord"] = { 68.69, 73.26, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/1 Mysterious Artifact
+							["providers"] = {
+								{ "i",  50086 },	-- Mysterious Artifact
+								{ "o", 201939 },	-- Worn Coffer
+							},
+							["coord"] = { 57.6, 75.7, 179 },
+						}),
+					},
 				}),
 				q(14367, {	-- The Allen's Storm Caller
 					["qg"] = 34571,	-- Gwen Armstead
@@ -815,6 +1137,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 70.87, 39.83, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Gorerot slain
+							["provider"] = { "n", 38331 },	-- Gorerot
+						}),
+						objective(2, {	-- Battle for Gilneas City Complete
+							["provider"] = { "i", 50334 },	-- Rapier of the Gilnean Patriots
+						}),
 						i(54990),	-- Gilnean Shield
 						i(55011),	-- Mace of the Blood Price
 						i(54987),	-- Marshalling Point
@@ -849,6 +1177,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 37.68, 72.75, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/5 Mountain Horse rescued
+							["provider"] = { "n", 36540 },	-- Mountain Horse
+						}),
 						i(55021),	-- Crowley's Belt
 						i(55020),	-- Lorna's Gloves
 					},
@@ -868,6 +1199,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 41.94, 37.62, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/40 Orc Raider slain
+							["provider"] = { "n", 37916 },	-- Orc Raider
+						}),
+						objective(2, {	-- 0/8 Wolfmaw Outrider slain
+							["provider"] = { "n", 37938 },	-- Wolfmaw Outrider
+						}),
+						objective(3, {	-- 0/4 Orcish War Machine slain
+							["provider"] = { "n", 37921 },	-- Orcish War Machine
+						}),
 						i(55012),	-- Night Elven Bow
 						i(55013),	-- Seryl's Promise
 					},
@@ -889,6 +1229,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.97, 63.93, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Captain Anson slain
+							["provider"] = { "n", 36397 },	-- Captain Anson
+							["coord"] = { 24.0, 75.0, 179 },
+						}),
+						objective(2, {	-- 0/1 Captain Morris slain
+							["provider"] = { "n", 36399 },	-- Captain Morris
+							["coord"] = { 27.6, 80.6, 179 },
+						}),
 						i(58216),	-- "Flying" Worgen Robes
 						i(55015),	-- Gloves of the Two Birds
 						i(131354, {	-- The Stone's Gauntlets
@@ -902,6 +1250,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.97, 63.93, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/8 Forsaken Combatant slain
+							["providers"] = {
+								{ "n", 36396 },	-- Forsaken Sailor
+								{ "n", 37805 },	-- Forsaken Sailor
+								{ "n", 36236 },	-- Forsaken Footsoldier
+								{ "n", 36810 },	-- Forsaken Footsoldier
+							},
+						}),
 						i(54979),	-- Godfrey's Dagger
 						i(54980),	-- Gilded Leggings
 					},
@@ -912,6 +1268,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.88, 84.18, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
+						objective(1, {	-- 0/6 Forsaken Castaway slain
+							["provider"] = { "n", 36488 },	-- Forsaken Castaway
+						}),
 						i(55018),	-- Boatwork Boots
 						i(55019),	-- Repair Belt
 						i(131356, {	-- Repairman's Cinch
@@ -924,6 +1283,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 14336,	-- Kill or Be Killed
 					["coord"] = { 35.75, 66.29, 179 },
 					["races"] = { WORGEN },
+					["groups"] = {
+						objective(1, {	-- 0/4 Gunpowder thrown at abomination
+							["providers"] = {
+								{ "n",  36231 },	-- Horrid Abomination
+								{ "i",  49202 },	-- Black Gunpowder Keg
+								{ "o", 196403 },	-- Black Gunpowder Keg
+							},
+							["coord"] = { 35.5, 67.4, 179 },
+						}),
+					},
 				}),
 			}),
 		},
