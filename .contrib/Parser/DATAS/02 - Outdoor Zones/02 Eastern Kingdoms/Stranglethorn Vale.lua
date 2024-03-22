@@ -1381,8 +1381,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
-						objective(1, {	-- 0/10 Lashtail Raptor slain
-							["provider"] = { "n", 686 },	-- Lashtail Raptor
+						objective(1, {	-- 0/10 Jungle Stalker slain
+							["provider"] = { "n", 687 },	-- Jungle Stalker
 						}),
 					},
 				}),
@@ -1396,8 +1396,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
-						objective(1, {	-- 0/10 Jungle Stalker slain
-							["provider"] = { "n", 687 },	-- Jungle Stalker
+						objective(1, {	-- 0/10 Lashtail Raptor slain
+							["provider"] = { "n", 686 },	-- Lashtail Raptor
 						}),
 					},
 				}),
