@@ -2491,6 +2491,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2534,	-- Zanzil the Outcast
 								1490,	-- Zanzil Witch Doctor
 								1488,	-- Zanzil Zombie
+								43223,	-- Zanzil Mindslave
 							},
 						}),
 					},
