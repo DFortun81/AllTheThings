@@ -12,6 +12,8 @@ root(ROOTS.PetBattles, petbattle({
 		i(116418),	-- Critter Battle Training Stone
 		i(116419),	-- Dragonkin Battle Training Stone
 		i(116420),	-- Elemental Battle Training Stone
+		i(127755),	-- Fel-Touched Battle Training Stone
+		i(116429),	-- Flawless Battle-Training Stone
 		i(116421),	-- Flying Battle Training Stone
 		i(116416),	-- Humanoid Battle Training Stone
 		i(116422),	-- Magic Battle Training Stone
