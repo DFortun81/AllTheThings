@@ -1089,6 +1089,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.SkillLevel()
 	end
+	self.Collectibles.Loot = self:Get("Thing:Loot");
 	
 	app:UnregisterEvent("GOSSIP_SHOW");
 	app:UnregisterEvent("TAXIMAP_OPENED");

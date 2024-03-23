@@ -89,7 +89,6 @@ local Things = {
 	"Heirlooms",
 	"HeirloomUpgrades",
 	"Illusions",
-	"Loot",
 	"Mounts",
 	"MusicRollsAndSelfieFilters",
 	"Quests",
@@ -1441,6 +1440,7 @@ settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
 		app:RegisterEvent("TAXIMAP_OPENED")
 	end
+	self.Collectibles.Loot = self:Get("Thing:Loot");
 
 	-- refresh forced from toggle
 	if self.ToggleRefresh then
