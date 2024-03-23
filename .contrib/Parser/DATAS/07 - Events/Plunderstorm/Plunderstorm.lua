@@ -24,8 +24,12 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		n(QUESTS, sharedData({
 			["isWorldquest"] = true,
 		},{
-			q(79381),	-- Captain's Orders: X Marks the Spot'
-		--	q(81681),	-- Captain's Orders: Kill 10 Creatures'
+			q(79246),	-- Captain's Orders: Coffer Collector
+			q(80081),	-- Captain's Orders: Flood and Plunder
+			q(79249),	-- Captain's Orders: Kill Haul
+			q(79379),	-- Captain's Orders: No Prey, No Pay
+			q(79382),	-- Captain's Orders: Plunderstudy
+			q(79381),	-- Captain's Orders: X Marks the Spot
 		})),
 		n(VENDORS, {
 			n(219760, {	-- Da'kash Grimledger <Quartermaster>
