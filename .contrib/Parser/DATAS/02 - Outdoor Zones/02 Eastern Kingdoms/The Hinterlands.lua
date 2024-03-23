@@ -1585,7 +1585,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7843, {	-- The Final Message to the Wildhammer
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
-					["sourceQuest"] = 7843,	-- The Final Message to the Wildhammer
+					["sourceQuest"] = 7842,	-- Another Message to the Wildhammer
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,

@@ -1106,8 +1106,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 					["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
 					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-					["maps"] = { STRATHOLME },
 					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STRATHOLME },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Annals of the Silver Hand
