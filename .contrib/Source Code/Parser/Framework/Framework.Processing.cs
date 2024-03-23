@@ -2662,6 +2662,13 @@ namespace ATT
                                     // Not implemented yet and doesn't exist in the database.
                                     return false;    // Invalid
                                 }
+                                else if (CURRENT_RELEASE_VERSION < longVersion)
+                                {
+                                    //Console.Write("NOT CREATED: ");
+                                    //Console.WriteLine(ToJSON(data));
+                                    // Not implemented yet and doesn't exist in the database.
+                                    return false;    // Invalid
+                                }
 
                                 // Mark this as Never Implemented
                                 if (!ProcessingUnsortedCategory)
@@ -2681,8 +2688,19 @@ namespace ATT
                                         return false;    // Invalid
                                     }
                                 }
-                                else
+                                else if (CURRENT_RELEASE_VERSION < longVersion)
                                 {
+                                    //Console.Write("NOT ADDED: ");
+                                    //Console.WriteLine(ToJSON(data));
+                                    // If this is the first patch the thing was added...
+                                    if (index == 0)
+                                    {
+                                        // Not implemented yet and likely doesn't exist in the database.
+                                        // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
+                                        return false;    // Invalid
+                                    }
+                                }
+                                else {
                                     // Cancel the Removed tag.
                                     removed = 0;
                                 }
