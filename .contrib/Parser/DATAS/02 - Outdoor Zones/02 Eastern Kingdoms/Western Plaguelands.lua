@@ -1267,20 +1267,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				},
-				q(27683, {	-- Into the Woods
-					["providers"] = {
-						{ "n", 10840 },	-- Argent Office Pureheart
-						{ "n", 44462 },	-- Jearl Donald
-						{ "n", 44456 },	-- Adrine Towhide
-					},
-					["coords"] = {
-						{ 42.9, 83.5, WESTERN_PLAGUELANDS },	-- Argent Officer Pureheart (A)
-						{ 48.8, 54.7, WESTERN_PLAGUELANDS },	-- Adrine Towhide
-						{ 47.3, 64.4, WESTERN_PLAGUELANDS },	-- Jearl Donald (H)
-					},
-					["timeline"] = { "added 4.0.3.13277" },
-					["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
-				}),
 				q(27156, {	-- It's About Time!
 					["qg"] = 45157,	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
