@@ -3394,6 +3394,9 @@ local function FillGroupDirect(group, FillData, doDGU)
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 
 	if groups and #groups > 0 then
+		-- if FillData.Debug then
+		-- 	app.print("FG-MergeResults",#groups,app:SearchLink(group))
+		-- end
 		-- app.PrintDebug("FillGroups-MergeResults",group.hash,#groups)
 		AssignChildren(group);
 		if doDGU then app.DirectGroupUpdate(group); end
@@ -3410,7 +3413,10 @@ end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, FillData)
 	if SkipFillingGroup(group, FillData) then
-		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),group.hash)
+		-- if FillData.Debug then
+		-- 	app.print(Colorize("FGR-SKIP",app.Colors.ChatLinkError),app:SearchLink(group))
+		-- end
+		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),app:SearchLink(group))
 		return;
 	end
 	-- app.PrintDebug("FGR",group.hash)
@@ -3430,16 +3436,25 @@ end
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	if SkipFillingGroup(group, FillData) then
-		-- app.PrintDebug(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.hash)
+		-- if FillData.Debug then
+		-- 	app.print(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.skipFill,FillData.Included[group.hash],app:SearchLink(group))
+		-- end
+		-- app.PrintDebug(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.skipFill,FillData.Included[group.hash],app:SearchLink(group))
 		return;
 	end
-	-- app.PrintDebug("FGRA",group.hash)
+
+	-- if group.questID == 78663 then
+	-- 	FillData.Debug = true
+	-- 	app.print("FGRA",app:SearchLink(group))
+	-- end
 
 	FillGroupDirect(group, FillData, true)
 
 	local g = group.g;
 	if g then
-		-- app.PrintDebug(".g",group.hash,#g)
+		-- if FillData.Debug then
+		-- 	app.print(".g",#g,app:SearchLink(group))
+		-- end
 		local Run = FillData.Runner.Run;
 		-- Then nest anything further
 		for _,o in ipairs(g) do
@@ -4659,6 +4674,12 @@ local function GetPopulatedQuestObject(questID)
 	if not questID then return; end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
 	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
+	-- if questID == 78663 then
+	-- 	local debug = app.Debugging
+	-- 	app.Debugging = true
+	-- 	app.PrintTable(questObject)
+	-- 	app.Debugging = debug
+	-- end
 	-- Try populating quest rewards
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;
@@ -13697,8 +13718,8 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 								-- or if it has time remaining
 								(questObject.timeRemaining or 0 > 0)
 							then
-								-- if mapID == 1355 then
-									-- app.PrintDebug("WQ",questObject.questID);
+								-- if poi.questId == 78663 then
+								-- 	app.print("WQ",questObject.questID,questObject.g and #questObject.g);
 								-- end
 								-- add the map POI coords to our new quest object
 								if poi.x and poi.y then

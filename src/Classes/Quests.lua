@@ -2052,6 +2052,14 @@ if app.IsRetail then
 		-- BFA emissaries
 		-- BFA Azerite armor caches
 		-- Argus Rare WQ's + Rare Alt quest
+		-- WQ with raw items nested
+
+		-- local debug
+		-- if questID == 78663 then
+		-- 	debug = true
+		-- 	app.Debugging = true
+		-- 	app.PrintDebug("CachedCheck",questID)
+		-- end
 
 		-- Finally ensure that any cached entries for the quest are copied into this version of the object
 		-- Needs to be SearchForField as non-quests can be pulled too
@@ -2062,6 +2070,7 @@ if app.IsRetail then
 			if questObject.g then
 				for _,item in ipairs(questObject.g) do
 					if item.itemID then
+						-- app.PrintDebug("apiItem",app:SearchLink(item))
 						apiItems[item.itemID] = item;
 					end
 				end
@@ -2069,8 +2078,9 @@ if app.IsRetail then
 			local nonItemNested = {};
 			-- merge in any DB data without replacing existing data
 			for _,data in ipairs(cachedQuests) do
+				-- app.PrintDebug("Q=>WQ",data.g and #data.g,app:SearchLink(data))
 				-- only merge into the quest object properties from an object in cache with this questID
-				if data.questID and data.questID == questID then
+				if data.questID == questID then
 					app.MergeProperties(questObject, data, true);
 					-- need to exclusively copy cached values for certain fields since normal merge logic will not copy them
 					-- ref: quest 49675/58703
@@ -2081,16 +2091,19 @@ if app.IsRetail then
 						for _,o in ipairs(data.g) do
 							-- nest cached non-items
 							if not o.itemID then
-								-- app.PrintDebug("nested-nonItem",o.hash)
+								-- app.PrintDebug("nested-nonItem",app:SearchLink(o))
 								nonItemNested[#nonItemNested + 1] = o
 							-- cached items need to merge with corresponding API item based on simple itemID
 							elseif apiItems[o.itemID] then
-								-- app.PrintDebug("nested-merged",o.hash)
+								-- app.PrintDebug("nested-merged",app:SearchLink(o))
 								app.MergeProperties(apiItems[o.itemID], o, true);
 							--  if it is not a WQ or is a 'raid' (world boss)
 							elseif questObject.isRaid or not questObject.isWorldQuest then
 								-- otherwise just get nested
-								-- app.PrintDebug("nested-item",o.hash)
+								-- app.PrintDebug("nested-item",app:SearchLink(o))
+								nonItemNested[#nonItemNested + 1] = o
+							else
+								-- app.PrintDebug("basic-nested",app:SearchLink(o))
 								nonItemNested[#nonItemNested + 1] = o
 							end
 						end
@@ -2126,6 +2139,10 @@ if app.IsRetail then
 		-- Update the group directly, and mark it for Filling if we allow filling in dynamic
 		questObject.DGU_Fill = true
 		app.DirectGroupUpdate(questObject);
+
+		-- if debug then
+		-- 	app.Debugging = nil
+		-- end
 	end
 	app.TryPopulateQuestRewards = TryPopulateQuestRewards;
 end
