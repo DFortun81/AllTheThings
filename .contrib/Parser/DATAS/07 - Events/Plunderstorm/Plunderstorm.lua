@@ -22,7 +22,7 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		--	q(81679),	-- Daily Doubloons
 		})),
 		n(QUESTS, sharedData({
-			["isWorldquest"] = true,
+			["isWorldQuest"] = true,
 		},{
 			q(79246),	-- Captain's Orders: Coffer Collector
 			q(80081),	-- Captain's Orders: Flood and Plunder
