@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The Trolls of Zul'gurub
@@ -38,8 +38,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26703,	-- Bloodsail's End
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						26814, 26555,	-- High Priest Venoxis (A, H)
+						26612,	-- Details of the Attack
+						26613,	-- Up to Snuff
+						26665,	-- Call of Booty
+						26703,	-- Bloodsail's End
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 				explorationAch(4995, {	-- Explore the Cape of Stranglethorn
 					["timeline"] = { "added 4.0.3" },
@@ -234,7 +242,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26617, {	-- An Old Sea Dog
-					["provider"] = { "i", 59143 },	-- Weather-Beaten Coin
+					["providers"] = {
+						{ "i", 59143 },	-- Weather-Beaten Coin
+						{ "i", 59142 },	-- Weather-Beaten Coin
+					},
 					["coord"] = { 41.2, 61.3, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["cr"] = 43454,	-- "Good-Boy" Bruce
@@ -1343,6 +1354,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(61600, {	-- Mortal Naginata
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
+						i(61602, {	-- Ninja Star
+							["timeline"] = { "added 4.0.3.13287", "deleted 5.0.4" },
+						}),
 						i(61604, {	-- Other-Eye Patch
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
@@ -1820,7 +1834,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
 						objective(1, {	-- Swab the decks
-							["provider"] = { "n", 43511 },	-- Deck Stain
+							["providers"] = {
+								{ "n",  43511 },	-- Deck Stain
+								{ "o", 204422 },	-- Swabbie's Mop
+							},
+							["description"] = "You can pay \"Pretty Boy\" Duncan (just outside the door from the lower decks) 1g to swab the decks for you if you don't want to do the minigame.",
 						}),
 						i(61578, {	-- Cleaning Britches
 							["timeline"] = { "added 4.0.3.13287" },

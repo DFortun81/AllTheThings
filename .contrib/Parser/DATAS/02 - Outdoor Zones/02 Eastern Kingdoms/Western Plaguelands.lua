@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4893, {	-- Western Plaguelands Quests
 					["timeline"] = { "added 4.0.3" },
-					-- #IF ANYCLASSIC
+					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(1, {	-- The First Battle for Andorhal
@@ -49,8 +49,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #else
+					["sourceQuests"] = {
+						27165,	-- Victory, For Now (A)
+						26926,	-- Victory, For Now (H)
+						27174,	-- Combat Training (A)
+						26938,	-- Combat Training (H)
+						27206,	-- Alas, Andorhal (A)
+						27144,	-- The Reckoning (H)
+						--27055,	-- Students of Krastinov (TODO: verify if needed)
+						27155,	-- Turning Yourself In
+						26955,	-- Zen'Kiki and the Cultists
+					},
 					-- #endif
-					-- #ENDIF
+					-- #endif
 				}),
 			}),
 			-- #if AFTER 7.0.3.21570
