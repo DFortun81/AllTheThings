@@ -36,7 +36,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159412),	-- Auric Puddle Stompers
 						i(159304),	-- Goldfeather Boots
 						i(159617),	-- Lustrous Golden Plumage
-						i(168168),	-- Gilded Plume
+						i(168168, {	-- Gilded Plume
+							["sourceQuest"] = 49882,	-- A Test of Quills (might require actually learning Recipe 256301)
+						}),
 					},
 				}),
 				e(2171, {	-- Mchimba the Embalmer
@@ -114,7 +116,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(159412),	-- Auric Puddle Stompers
 							i(159304),	-- Goldfeather Boots
 							i(159617),	-- Lustrous Golden Plumage
-							i(168168),	-- Gilded Plume
+							i(168168, {	-- Gilded Plume
+								["sourceQuest"] = 49882,	-- A Test of Quills (might require actually learning Recipe 256301)
+							}),
 						},
 					}),
 					e(2171, {	-- Mchimba the Embalmer

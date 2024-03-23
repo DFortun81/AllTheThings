@@ -31,6 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				n(ZONE_DROPS, {
 					i(168142, {	-- Coagulated Miasma
 						["description"] = "Drops from Trolls before the first Boss.\n2-3 Runs is enough for 50 Miasma.",
+						["sourceQuest"] = 49882,	-- A Test of Quills (might require actually learning Recipe 256301)
 					}),
 				}),
 			}),
