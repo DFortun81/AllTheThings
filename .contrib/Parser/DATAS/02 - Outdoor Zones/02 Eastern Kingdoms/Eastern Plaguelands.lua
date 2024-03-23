@@ -926,6 +926,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 12617,	-- Khaelyn Steelwing <Gryphon Master>
 					-- #if AFTER CATA
 					["coord"] = { 75.8, 53.4, EASTERN_PLAGUELANDS },
+					-- #elseif AFTER WRATH
+					["coord"] = { 75.8, 53.4, EASTERN_PLAGUELANDS },
 					-- #else
 					["coord"] = { 81.6, 59.2, EASTERN_PLAGUELANDS },
 					-- #endif
@@ -935,6 +937,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 12636,	-- Georgia <Bat Handler>
 					-- #if AFTER CATA
 					["coord"] = { 75.6, 53.2, EASTERN_PLAGUELANDS },
+					-- #elseif AFTER WRATH
+					["coord"] = { 74.6, 51.4, EASTERN_PLAGUELANDS },
 					-- #else
 					["coord"] = { 80.2, 57.0, EASTERN_PLAGUELANDS },
 					-- #endif
@@ -1070,7 +1074,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27421, {	-- Amidst Death, Life
-					["qg"] = 16135,	-- Rayne
+					["qg"] = 16135,	-- Rayne <Cenarion Circle>
 					["coord"] = { 30.2, 56.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
@@ -1170,7 +1174,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6164, {	-- Augustus' Receipt Book
 					["qg"] = 12384,	-- Augustus the Touched
+					-- #if AFTER WRATH
+					["coord"] = { 11.4, 28.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 14.4, 33.6, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1179,7 +1187,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  15884 },	-- Augustus' Receipt Book
 								{ "o", 177789 },	-- Augustus' Receipt Book
 							},
+							-- #if AFTER WRATH
+							["coord"] = { 14.2, 26.4, EASTERN_PLAGUELANDS },
+							-- #else
 							["coord"] = { 17.5, 31.2, EASTERN_PLAGUELANDS },
+							-- #endif
 						}),
 					},
 				}),
@@ -1200,7 +1212,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5152, {	-- Auntie Marlene
 					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
+					-- #if AFTER WRATH
+					["coord"] = { 32.6, 83.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 				}),
@@ -1231,7 +1247,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(PHASE_SIX, q(9131, {	-- Binding the Dreadnaught
 					["qg"] = 16112,	-- Korfax, Champion of the Light
+					-- #if AFTER WRATH
+					["coord"] = { 75.8, 52.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 					-- #endif
@@ -1253,7 +1273,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5543, {	-- Blood Tinged Skies
 					["qg"] = 1855,	-- Tirion Fordring
+					-- #if AFTER WRATH
+					["coord"] = { 4.6, 38.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 52,
 					["groups"] = {
@@ -1264,7 +1288,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(PHASE_SIX, q(9665, {	-- Bolstering Our Defenses
 					["qg"] = 17072,	-- Emmisary Gormok
+					-- #if AFTER WRATH
+					["coord"] = { 74.4, 51.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 80.0, 57.4, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
@@ -1286,7 +1314,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, q(9127, {	-- Bone Fragments
 					["qg"] = 16131,	-- Rohan the Assassin
 					["sourceQuest"] = 9126,	-- Bonescythe Digs
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 52.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22526, 30 } },	-- Bone Fragments
 					-- #endif
@@ -1303,7 +1335,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9126, {	-- Bonescythe Digs
 					["qg"] = 16131,	-- Rohan the Assassin
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 52.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22526, 30 } },	-- Bone Fragments
 					-- #endif
@@ -1342,7 +1378,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5544, {	-- Carrion Grubbage
 					["qg"] = 1855,	-- Tirion Fordring
+					-- #if AFTER WRATH
+					["coord"] = { 4.6, 38.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 52,
 					["groups"] = {
@@ -1433,11 +1473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(76268, {	-- Corruptor's Scourgestones
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
-					-- #if AFTER WRATH
 					["coord"] = { 75.6, 53.8, EASTERN_PLAGUELANDS },
-					-- #else
-					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
-					-- #endif
 					["timeline"] = { ADDED_10_1_5 },
 					["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
 					["repeatable"] = true,
@@ -1468,7 +1504,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, q(9142, {	-- Craftsman's Writ
 					["qg"] = 16212,	-- Dispatch Commander Metz <The Argent Dawn>
 					["sourceQuest"] = 9141,	-- They Call Me "The Rooster"
+					-- #if AFTER WRATH
+					["coord"] = { 75.2, 51.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.1, 57.5, EASTERN_PLAGUELANDS },
+					-- #endif
 					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
 					["timeline"] = { "removed 4.0.3" },
 					["repeatable"] = true,
@@ -1480,9 +1520,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(PHASE_SIX, q(9125, {	-- Crypt Fiend Parts
-					["qg"] = 16132,	-- Huntsman Leopold
+					["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 					["sourceQuest"] = 9124,	-- Cryptstalker Armor Doesn't Make Itself...
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 52.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22525, 30 } },	-- Crypt Fiend Parts
 					-- #endif
@@ -1498,8 +1542,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				applyclassicphase(PHASE_SIX, q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
-					["qg"] = 16132,	-- Huntsman Leopold
+					["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 52.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22525, 30 } },	-- Crypt Fiend Parts
 					-- #endif
@@ -1521,7 +1569,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, q(9132, {	-- Dark Iron Scraps
 					["qg"] = 16112,	-- Korfax, Champion of the Light
 					["sourceQuest"] = 9131,	-- Binding the Dreadnaught
+					-- #if AFTER WRATH
+					["coord"] = { 75.8, 52.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 					-- #endif
@@ -1539,7 +1591,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5211, {	-- Defenders of Darrowshire
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5241,	-- Uncle Carlin
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
@@ -1570,7 +1626,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5542, {	-- Demon Dogs
 					["qg"] = 1855,	-- Tirion Fordring
+					-- #if AFTER WRATH
+					["coord"] = { 4.6, 38.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 52,
 					["groups"] = {
@@ -1588,7 +1648,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6135, {	-- Duskwing, Oh How I Hate Thee...
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["sourceQuest"] = 6133,	-- The Ranger Lord's Behest
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -1788,7 +1852,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9664, {	-- Establishing New Outposts
 					["qg"] = 17069,	-- Emissary Whitebeard
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.3, 59.4, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
@@ -1827,7 +1895,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5246, {	-- Fragments of the Past (1/2)
 					["qg"] = 10304,	-- Aurora Skycaller
 					["sourceQuest"] = 5245,	-- Troubled Spirits of Kel'Theril
+					-- #if AFTER WRATH
+					["coord"] = { 48.8, 17.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { AZSHARA },
 					["races"] = ALLIANCE_ONLY,
@@ -1845,7 +1917,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5247, {	-- Fragments of the Past (2/2)
 					["qg"] = 10304,	-- Aurora Skycaller
 					["sourceQuest"] = 5246,	-- Fragments of the Past (1/2)
+					-- #if AFTER WRATH
+					["coord"] = { 48.8, 17.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },
+					-- #endif
 					["maps"] = { DIRE_MAUL, FERALAS, UNGORO_CRATER },
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
@@ -1982,15 +2058,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 177675 },	-- Mound of Dirt
 					},
 					["coords"] = {
+						-- #if AFTER WRATH
+						{ 23.7, 78.4, EASTERN_PLAGUELANDS },
+						{ 24.5, 79.1, EASTERN_PLAGUELANDS },
+						-- #else
 						{ 27.3, 85.3, EASTERN_PLAGUELANDS },
 						{ 28.1, 86.1, EASTERN_PLAGUELANDS },
+						-- #endif
 					},
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hameya's Key
 							["provider"] = { "i", 15767 },	-- Hameya's Key
+							-- #if AFTER WRATH
+							["coord"] = { 65.4, 11.4, EASTERN_PLAGUELANDS },
+							-- #else
 							["coord"] = { 70.6, 18.8, EASTERN_PLAGUELANDS },
+							-- #endif
 							["cr"] = 12248,	-- Infiltrator Hameya
 						}),
 						i(15814, {	-- Hameya's Slayer
@@ -2004,7 +2089,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5168, {	-- Heroes of Darrowshire
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5210,	-- Brother Carlin
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["lvl"] = 50,
@@ -2059,7 +2148,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i",  15328 },	-- Joseph's Key
 					},
 					["sourceQuest"] = 5721,	-- The Battle of Darrowshire
+					-- #if AFTER WRATH
+					["coord"] = { 32.6, 83.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2333,6 +2426,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5168,	-- Heroes of Darrowshire
 						5154,	-- The Annals of Darrowshire
 					},
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.8, EASTERN_PLAGUELANDS },
+					-- #else
+					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2380,13 +2478,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6146, {	-- Nathanos' Ruse
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					-- #if AFTER 3.3.0
 					["sourceQuest"] = 14350,	-- The Crimson Courier
 					-- #else
 					["sourceQuest"] = 6145,	-- The Crimson Courier
 					-- #endif
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -2430,7 +2532,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5142,	-- Little Pamela
 						5601,	-- Sister Pamela
 					},
+					-- #if AFTER WRATH
+					["coord"] = { 32.6, 83.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2449,6 +2555,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27383,	-- "Little Pamela"
 					["coord"] = { 32.4, 83.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Pamela's Doll
+							["provider"] = { "i", 12885 },	-- Pamela's Doll
+							["cost"] = {
+								{ "i", 12886, 1 },	-- Pamela's Doll's Head
+								{ "i", 12887, 1 },	-- Pamela's Doll's Left Side
+								{ "i", 12888, 1 },	-- Pamela's Doll's Right Side
+							},
+						}),
+					},
 				}),
 				q(27558, {	-- Pamela's Doll
 					["qg"] = 45400,	-- Fiona's Caravan
@@ -2464,7 +2580,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 				}),
 				q(27420, {	-- Postponing the Inevitable
-					["qg"] = 16135,	-- Rayne
+					["qg"] = 16135,	-- Rayne <Cenarion Circle>
 					["sourceQuest"] = 27544,	-- Cenarion Tenacity
 					["coord"] = { 30.2, 56.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -2475,14 +2591,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 15314 },	-- Bundle of Relics
 					},
 					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 				}),
 				q(6147, {	-- Return to Nathanos
 					["qg"] = 11898,	-- Crusader Lord Valdelmar
 					["sourceQuest"] = 6146,	-- Nathanos' Ruse
+					-- #if AFTER WRATH
+					["coord"] = { 81.0, 78.4, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 88.2, 86.2, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -2520,8 +2644,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9136, {	-- Savage Flora
-					["qg"] = 16135,	-- Rayne
+					["qg"] = 16135,	-- Rayne <Cenarion Circle>
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22529, 30 } },	-- Savage Frond
 					-- #endif
@@ -2539,9 +2667,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				applyclassicphase(PHASE_SIX, q(9137, {	-- Savage Fronds
-					["qg"] = 16135,	-- Rayne
+					["qg"] = 16135,	-- Rayne <Cenarion Circle>
 					["sourceQuest"] = 9136,	-- Savage Flora
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+					-- #endif
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22529, 30 } },	-- Savage Frond
 					-- #endif
@@ -2877,16 +3009,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(6144, {	-- The Call to Command
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 3.3.0" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 				}),
 				q(14349, {	-- The Call to Command
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -2938,8 +3078,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6136, {	-- The Corpulent One
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -3029,8 +3173,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				applyclassicphase(PHASE_SIX, q(9211, {	-- The Ice Guard
-					["qg"] = 16133,	-- Mataus the Wrathcaster
+					["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 22524, 10 },	-- Insignia of the Crusade
@@ -3052,8 +3200,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(6133, {	-- The Ranger Lord's Behest
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -3077,9 +3229,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6148, {	-- The Scarlet Oracle, Demetria
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["sourceQuest"] = 6147,	-- Return to Nathanos
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -3099,8 +3255,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9213, {	-- The Shadow Guard
-					["qg"] = 16133,	-- Mataus the Wrathcaster
+					["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 22524, 10 },	-- Insignia of the Crusade
@@ -3131,7 +3291,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(PHASE_SIX, q(9141, {	-- They Call Me "The Rooster"
 					["qg"] = 16212,	-- Dispatch Commander Metz <The Argent Dawn>
+					-- #if AFTER WRATH
+					["coord"] = { 75.2, 51.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.1, 57.5, EASTERN_PLAGUELANDS },
+					-- #endif
 					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 55,
@@ -3142,8 +3306,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(6022, {	-- To Kill With Purpose
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -3208,7 +3376,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 13347 },	-- Crystal of Zin-Malor
 					},
 					["sourceQuest"] = 5247,	-- Fragments of the Past
+					-- #if AFTER WRATH
+					["coord"] = { 48.8, 17.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -3220,8 +3392,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(6042, {	-- Un-Life's Little Annoyances
-					["qg"] = 11878,	-- Nathanos Blightcaller
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					-- #if AFTER WRATH
+					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
@@ -3237,7 +3413,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5241, {	-- Uncle Carlin
 					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
+					-- #if AFTER WRATH
+					["coord"] = { 32.6, 83.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 				}),
@@ -3270,7 +3450,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5181, {	-- Villains of Darrowshire
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5210,	-- Brother Carlin
+					-- #if AFTER WRATH
+					["coord"] = { 75.6, 53.8, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
@@ -3339,7 +3523,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6041, {	-- When Smokey Sings, I Get Violent
 					["qg"] = 11033,	-- Smokey LaRue
 					["sourceQuest"] = 6026,	-- That's Asking A Lot
+					-- #if AFTER WRATH
+					["coord"] = { 74.8, 52.2, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 80.6, 58.0, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 54,
 					["groups"] = {
@@ -3369,6 +3557,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, q(9165, {	-- Writ of Safe Passage
 					["qg"] = 16226,	-- Guard Didier <Brotherhood of the Light>
 					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
+					-- #if AFTER WRATH
+					["coord"] = { 74.4, 52.2, EASTERN_PLAGUELANDS },
+					-- #else
+					["coord"] = { 80.0, 58.0, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["repeatable"] = true,
 					["lvl"] = 55,
@@ -3387,8 +3580,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(6021, {	-- Zaeldarr the Outcast
-					["qg"] = 11038,	-- Caretaker Alen
+					["qg"] = 11038,	-- Caretaker Alen <The Argent Dawn>
+					-- #if AFTER WRATH
+					["coord"] = { 73.8, 57.6, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 79.4, 63.8, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
@@ -3555,8 +3752,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				n(10828, {  -- High General Abbendis / Lynnia Abbendis <The Fallen Hope> [CATA+]
 					["coords"] = {
+						-- #if AFTER WRATH
+						{ 74.8, 78.4, EASTERN_PLAGUELANDS },
+						{ 82.2, 79.6, EASTERN_PLAGUELANDS },
+						-- #else
 						{ 80.6, 85.6, EASTERN_PLAGUELANDS },
 						{ 88.4, 86.6, EASTERN_PLAGUELANDS },
+						-- #endif
 					},
 				}),
 				-- #endif
@@ -3569,8 +3771,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(10826, {  -- Lord Darkscythe
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 33.4, 49.6, EASTERN_PLAGUELANDS },
 						{ 33.2, 47.4, EASTERN_PLAGUELANDS },
 						{ 33.6, 46.8, EASTERN_PLAGUELANDS },
@@ -3582,16 +3784,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 36.2, 48.0, EASTERN_PLAGUELANDS },
 						{ 35.4, 48.2, EASTERN_PLAGUELANDS },
 						{ 35.2, 47.2, EASTERN_PLAGUELANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #elseif AFTER WRATH
+						{ 22.6, 28.6, EASTERN_PLAGUELANDS },
+						{ 31.4, 20.6, EASTERN_PLAGUELANDS },
+						{ 34.4, 21.0, EASTERN_PLAGUELANDS },
+						{ 39.4, 24.0, EASTERN_PLAGUELANDS },
+						-- #else
 						{ 26.0, 33.4, EASTERN_PLAGUELANDS },
 						{ 35.0, 24.8, EASTERN_PLAGUELANDS },
 						{ 39.2, 27.0, EASTERN_PLAGUELANDS },
 						{ 43.6, 28.8, EASTERN_PLAGUELANDS },
 						{ 40.0, 36.4, EASTERN_PLAGUELANDS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(16039, {	-- Ta'Kierthan Songblade
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3608,10 +3813,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 4.20, 36.0, EASTERN_PLAGUELANDS },
 					-- #else
 					["coords"] = {
+						-- #if AFTER WRATH
+						{ 5.2, 34.4, EASTERN_PLAGUELANDS },
+						{ 8.4, 29.4, EASTERN_PLAGUELANDS },
+						{ 12.6, 25.8, EASTERN_PLAGUELANDS },
+						{ 16.2, 26.2, EASTERN_PLAGUELANDS },
+						-- #else
 						{ 7.4, 43.6, EASTERN_PLAGUELANDS },
 						{ 9.6, 37.8, EASTERN_PLAGUELANDS },
 						{ 15.2, 32.6, EASTERN_PLAGUELANDS },
 						{ 20.2, 31.6, EASTERN_PLAGUELANDS },
+						-- #endif
 					},
 					-- #endif
 				}),
@@ -3621,7 +3833,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				n(10824, {  -- Ranger Lord Hawkspear / Death-Hunter Hawkspear [CATA+]
+					-- #if AFTER WRATH
+					["coord"] = { 49.0, 14.4, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 53.4, 16.0, EASTERN_PLAGUELANDS },
+					-- #endif
 				}),
 				-- #endif
 				n(50856, {	-- Snark
@@ -3650,10 +3866,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				n(10822, {  -- Warlord Thresh'jin
 					["coords"] = {
+						-- #if AFTER WRATH
+						{ 60.4, 17.4, EASTERN_PLAGUELANDS },
+						{ 63.6, 16.2, EASTERN_PLAGUELANDS },
+						{ 67.2, 9.2, EASTERN_PLAGUELANDS },
+						-- #else
 						{ 65.6, 21.8, EASTERN_PLAGUELANDS },
 						{ 68.8, 20.8, EASTERN_PLAGUELANDS },
 						{ 70.8, 19.8, EASTERN_PLAGUELANDS },
 						{ 72.4, 13.0, EASTERN_PLAGUELANDS },
+						-- #endif
 					},
 				}),
 				-- #endif
@@ -3662,10 +3884,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.0, 12.4, EASTERN_PLAGUELANDS },
 					-- #else
 					["coords"] = {
+						-- #if AFTER WRATH
+						{ 54.8, 10.6, EASTERN_PLAGUELANDS },
+						{ 66.4, 12.6, EASTERN_PLAGUELANDS },
+						{ 64.8, 10.6, EASTERN_PLAGUELANDS },
+						{ 67.0, 9.4, EASTERN_PLAGUELANDS },
+						-- #else
 						{ 68.2, 21.2, EASTERN_PLAGUELANDS },
 						{ 69.4, 16.4, EASTERN_PLAGUELANDS },
 						{ 72.6, 18.8, EASTERN_PLAGUELANDS },
 						{ 72.6, 13.4, EASTERN_PLAGUELANDS },
+						-- #endif
 					},
 					-- #endif
 				}),
