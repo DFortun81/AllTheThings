@@ -19,6 +19,24 @@ ObjectDB[181636] = {
 		en = "Altar of Naias",
 	},
 };
+ObjectDB[176210] = {
+	readable = "Command Tent",
+	text = {
+		en = "Command Tent",
+	},
+};
+ObjectDB[204966] = {
+	readable = "Scourge Bone Animus",
+	text = {
+		en = "Scourge Bone Animus",
+	},
+};
+ObjectDB[205158] = {
+	readable = "Cultist Cage",
+	text = {
+		en = "Cultist Cage",
+	},
+};
 
 -- #if BEFORE CATA
 ObjectDB[256] = {

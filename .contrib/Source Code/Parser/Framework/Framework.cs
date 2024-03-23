@@ -665,7 +665,11 @@ namespace ATT
             CURRENT_SHORT_RELEASE_VERSION = CURRENT_RELEASE_VERSION.ConvertToGameVersion();
             if (CURRENT_RELEASE_VERSION < FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
             {
-                if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
+                if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["CATA"].ConvertVersion())
+                {
+                    ObjectHarvester.GameFlavors.Insert(0, "cata");
+                }
+                else if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
                 {
                     ObjectHarvester.GameFlavors.Insert(0, "wotlk");
                 }
