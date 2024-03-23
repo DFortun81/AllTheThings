@@ -21,6 +21,12 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 		},{
 		--	q(81679),	-- Daily Doubloons
 		})),
+		n(QUESTS, sharedData({
+			["isWorldquest"] = true,
+		},{
+			q(79381),	-- Captain's Orders: X Marks the Spot'
+		--	q(81681),	-- Captain's Orders: Kill 10 Creatures'
+		})),
 		n(VENDORS, {
 			n(219760, {	-- Da'kash Grimledger <Quartermaster>
 				["sourceQuests"] = { 80384 },	-- xx
@@ -156,6 +162,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDo
 
 root(ROOTS.HiddenQuestTriggers, {
 	n(PLUNDERSTORM, {
+		q(80110),	-- First WQ of the Day
 		q(81677),	-- Dieing
 	}),
 });
