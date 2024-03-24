@@ -195,11 +195,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(231, {	-- Gnomeregan
 		-- #if BEFORE MOP
 		["lore"] = "Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",
+		["coord"] = { 18.38, 38.62, DUN_MOROGH },	-- Gnomeregan [Dun Morogh]
+		-- #else
+		["coord"] = { 30.11, 74.64, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
 		-- #endif
 		-- #if BEFORE 4.0.3
 		["zone-text-areaID"] = 133,	-- Gnomeregan
 		-- #endif
-		["coord"] = { 30.11, 74.64, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
 		["mapID"] = GNOMEREGAN,
 		["maps"] = { 227, 228, 229 },
 		-- #if SEASON_OF_DISCOVERY

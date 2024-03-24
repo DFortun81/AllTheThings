@@ -1314,12 +1314,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
+					133,	-- New Tinkertown
 					137,	-- Brewnall Village
 					801,	-- Chill Breeze Valley
 					135,	-- Frostmane Hold
 					5495,	-- Gnomeregan
 					211,	-- Iceflow Lake
-					133,	-- New Tinkertown
 					5178,	-- The Toxic Airfield
 				},
 				-- #endif
