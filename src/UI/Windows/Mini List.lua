@@ -260,7 +260,7 @@ app:CreateWindow("MiniList", {
 	end,
 	OnLoad = function(self, settings)
 		pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
-		self:SetMapID(settings.mapID or app.CurrentMapID);
+		self:SetMapID(app.CurrentMapID or settings.mapID);
 		app.AddEventHandler("OnCurrentMapIDChanged", function()
 			self:SetMapID(app.CurrentMapID);
 		end);
