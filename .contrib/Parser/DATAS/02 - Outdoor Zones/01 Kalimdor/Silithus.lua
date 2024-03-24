@@ -31,9 +31,12 @@ local TACTICAL_ASSIGNMENT = i(20809, {	-- Tactical Assignment
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(SILITHUS, {
 		["lore"] = "Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",
-		["maps"] = { 82 },		-- Twilight's Run
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_silithus_01",
+		-- #endif
+		["maps"] = { 82 },		-- Twilight's Run
+		-- #if AFTER 7.3.5
+		["crs"] = { 128607 },	-- Zidormi
 		-- #endif
 		["groups"] = {
 			-- #if AFTER 5.2.0.16634

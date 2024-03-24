@@ -11,11 +11,11 @@ SILITHUS_THE_WOUND = createHeader({
 root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 	n(SILITHUS_THE_WOUND, {
 		["description"] = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
-		["zone-quest"] = 50659,	-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is currently active
+		-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
+		["zone-artIDs"] = { 962 },
+		--["zone-quest"] = 50659,
 		["maps"] = { SILITHUS },
-		["crs"] = {
-			128607,	-- Zidormi
-		},
+		["crs"] = { 128607 },	-- Zidormi
 		["groups"] = {
 			m(CHAMBER_OF_HEART, {
 				["provider"] = { "o", 289521 },	-- Titan Translocator
