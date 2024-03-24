@@ -569,6 +569,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(74371),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite Wire'
 		q(74372),	-- First weekly completion of 'Contribute Supplies: Strong Seavine'
 		q(74367),	-- First weekly completion of 'Contribute Supplies: Irontree Branch'
+		q(74373),	-- First weekly completion of 'Contribute Supplies: Draconium Nugget'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)

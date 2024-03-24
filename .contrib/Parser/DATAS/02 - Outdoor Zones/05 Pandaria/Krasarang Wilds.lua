@@ -921,6 +921,9 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 16.3, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										i(93187),	-- Unstable Explosive (QI!)
+									}
 								}),
 								q(32420, {	-- Cashing Out
 									["sourceQuests"] = { 32416 },	-- Jaina's Resolution
@@ -941,6 +944,15 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 16.3, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										objective(1, {	-- 0/6 Scrap Metal
+											["providers"] = {
+												{ "i", 93180 },	-- Re-Configured Remote (QI!)
+												{ "i", 93179 },	-- Scrap Metal (QI!)
+											},
+											["cr"] = 67285,	-- Jungle Shredder
+										}),
+									},
 								}),
 								q(32145, {	-- Don't Lose Your Head
 									["sourceQuests"] = { 32143 },	-- A Kind of Magic
@@ -1009,6 +1021,12 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 16.1, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["groups"] = {
+										objective(1, {	-- 0/7 Shieldwall Soldier Dog Tag
+											["provider"] = { "i", 93009 },	-- Shieldwall Soldier Dog Tag (QI!)
+											["cr"] = 68700,	-- Fallen Shieldwall Soldier
+										}),
+									},
 								}),
 								q(32416, {	-- Jaina's Resolution
 									["sourceQuests"] = { 32460 },	-- Tracking the Thieves

@@ -222,6 +222,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.3, 16.4, DREAD_WASTES },
 						["provider"] = { "n", 155582 },	-- Taoshi
 						["sourceQuest"] = 56616,	-- Old Faces, New Problems
+						["groups"] = {
+							objective(1, {	-- 0/5 Corrupted Amber Destroyed
+								["provider"] = { "o", 330624 },	-- Corrupted Amber
+							}),
+						},
 					}),
 					q(31008, {	-- Amber Arms
 						["coord"] = { 55.0, 35.5, DREAD_WASTES },
@@ -251,6 +256,16 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							56577,	-- Crippling the Hive
 							56575,	-- Once More Into Kor'vess
+						},
+						["groups"] = {
+							objective(1, {	-- 0/8 Corrupted Amber Chunk
+								["provider"] = { "i", 169866 },	-- Corrupted Amber Chunk (QI!)
+								["crs"] = {
+									155542,	-- Zara'thik Ambersinger
+									155544,	-- Zara'thik Rootguard
+									155545,	-- Zara'thik Havoc
+								},
+							}),
 						},
 					}),
 					q(31232, {	-- An Ancient Empire
