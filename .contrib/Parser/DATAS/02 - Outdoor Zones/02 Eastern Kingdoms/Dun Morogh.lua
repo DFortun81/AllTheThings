@@ -33,6 +33,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					428,	-- Frostmane Hovel (Coldridge Valley)
 				},
 				["groups"] = {
+					-- #if AFTER 10.1.7
 					spell(921, {	-- Pickpocketing
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					}),
+					-- #endif
 					n(QUESTS, {
 						q(170, {	-- A New Threat
 							["qg"] = 713,	-- Balir Frosthammer
@@ -72,7 +74,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 8416,	-- Felix Whindlebolt
 							-- #if AFTER CATA
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
+							-- #if AFTER MOP
 							["coord"] = { 41.8, 63.7, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 24.9, 75.9, DUN_MOROGH },
+							-- #endif
 							-- #else
 							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #endif
@@ -84,48 +90,82 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "i",  10438 },	-- Felix's Box
 										{ "o", 148499 },	-- Felix's Box
 									},
+									-- #if AFTER MOP
+									["coord"] = { 21.5, 64.5, COLDRIDGE_VALLEY },
+									-- #elseif AFTER CATA
+									["coord"] = { 21.5, 64.5, DUN_MOROGH },
+									-- #else
 									["coord"] = { 20.9, 76.1, DUN_MOROGH },
+									-- #endif
 								}),
 								objective(2, {	-- 0/1 Felix's Chest
 									["providers"] = {
 										{ "i",  16313 },	-- Felix's Chest
 										{ "o", 178084 },	-- Felix's Chest
 									},
+									-- #if AFTER MOP
+									["coord"] = { 31.1, 83.8, COLDRIDGE_VALLEY },
+									-- #elseif AFTER CATA
+									["coord"] = { 29.8, 78.5, DUN_MOROGH },
+									-- #else
 									["coord"] = { 22.8, 79.9, DUN_MOROGH },
+									-- #endif
 								}),
 								objective(3, {	-- 0/1 Felix's Bucket of Bolts
 									["providers"] = {
 										{ "i",  16314 },	-- Felix's Bucket of Bolts
 										{ "o", 178085 },	-- Felix's Bucket of Bolts
 									},
+									-- #if AFTER MOP
+									["coord"] = { 49.5, 80.5, COLDRIDGE_VALLEY },
+									-- #elseif AFTER CATA
+									["coord"] = { 33.3, 77.7, DUN_MOROGH },
+									-- #else
 									["coord"] = { 26.3, 79.2, DUN_MOROGH },
+									-- #endif
 								}),
 							},
 						}),
 						q(24490, {	-- A Trip to Ironforge
 							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuest"] = 218,	-- Ice and Fire
-							["coord"] = { 42.7, 62.1, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 42.7, 62.2, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 25.0, 75.7, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24471, {	-- Aid for the Wounded
 							["qg"] = 658,	-- Sten Stoutarm
 							["sourceQuest"] = 24469,	-- Hold the Line!
+							-- #if AFTER MOP
 							["coord"] = { 65.5, 41.9, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 36.6, 70.2, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24475, {	-- All the Other Stuff
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24474,	-- First Things First: We're Gonna Need Some Beer
-							["coord"] = { 60.6, 21.0, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24496, {	-- Arcane Rune
 							["qg"] = 37087,	-- Jona Ironstock
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
@@ -188,8 +228,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9563 },	-- Consecrated Rune
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -228,14 +270,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["altQuests"] = { 24492 },	-- Pack Your Bags
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
 							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
-							["coord"] = { 61.0, 19.7, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24477, {	-- Dwarven Artifacts
 							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
-							["coord"] = { 61.6, 22.0, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 61.7, 22.0, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.7, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -268,7 +318,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 37087 },	-- Jona Ironstock
 								{ "i", 85174 },	-- Elegant Rune
 							},
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
@@ -283,8 +337,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9558 },	-- Encrypted Memorandum
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -302,8 +358,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9550 },	-- Encrypted Rune
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -321,8 +379,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9566 },	-- Etched Rune
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -333,7 +393,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24532, {	-- Evisceratin' the Enemy
 							["qg"] = 916,	-- Solm Hargin
 							["sourceQuest"] = 3109,	-- Encrypted Rune
+							-- #if AFTER MOP
 							["coord"] = { 59.5, 20.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.3, 67.5, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
@@ -341,21 +405,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24474, {	-- First Things First: We're Gonna Need Some Beer
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
-							["coord"] = { 62.7, 21.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24491, {	-- Follow that Gyro-Copter!
 							["qg"] = 6782,	-- Hands Springsprocket
 							["sourceQuest"] = 24490,	-- A Trip to Ironforge
+							-- #if AFTER MOP
 							["coord"] = { 87.5, 44.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 33.8, 72.2, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24470, {	-- Give 'em What-For
 							["qg"] = 37081,	-- Joren Ironstock
 							["sourceQuest"] = 24469,	-- Hold the Line!
-							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 67.1, 41.3, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.6, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -383,8 +459,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9573 },	-- Glyphic Memorandum
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -402,8 +480,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9556 },	-- Hallowed Rune
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -413,7 +493,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(24469, {	-- Hold the Line!
 							["qg"] = 37081,	-- Joren Ironstock
-							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 67.1, 41.3, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.6, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -438,7 +522,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								182,	-- The Troll Menace
 								24489,	-- Trolling for Information
 							},
+							-- #if AFTER MOP
 							["coord"] = { 42.7, 62.2, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 25.0, 75.7, DUN_MOROGH },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57534, {	-- Grik'nir's Chilly Belt
@@ -475,14 +563,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								24471,	-- Aid for the Wounded
 								24470,	-- Give 'em What-For
 							},
+							-- #if AFTER MOP
 							["coord"] = { 67.1, 41.3, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.6, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24486, {	-- Make Hay While the Sun Shines
 							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24477,	-- Dwarven Artifacts
+							-- #if AFTER MOP
 							["coord"] = { 61.7, 22.0, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.7, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -525,7 +621,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24492, {	-- Pack Your Bags
 							["qg"] = 37113,	-- Milo Geartwinge
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
+							-- #if AFTER MOP
 							["coord"] = { 69.8, 43.9, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 37.4, 70.6, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -628,8 +728,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9544 },	-- Simple Memorandum
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -647,8 +749,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9543 },	-- Simple Rune
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -722,8 +826,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9577 },	-- Tainted Memorandum
 							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
-							-- #if AFTER CATA
-							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #if AFTER MOP
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #elseif AFTER CATA
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
 							-- #else
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
@@ -785,9 +891,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(24528, {	-- The Power of the Light
-							["qg"] = 926,	-- Bromos Grummner
+							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
 							["sourceQuest"] = 3107,	-- Consecrated Rune
+							-- #if AFTER MOP
 							["coord"] = { 61.8, 24.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.8, 68.3, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
@@ -817,7 +927,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 786,	-- Grelin Whitebeard
 							-- #if AFTER CATA
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
+							-- #if AFTER MOP
 							["coord"] = { 42.7, 62.2, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 25.0, 75.7, DUN_MOROGH },
+							-- #endif
 							-- #else
 							["coord"] = { 25, 75.8, DUN_MOROGH },
 							-- #endif
@@ -897,7 +1011,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24489, {	-- Trolling for Information
 							["qg"] = 1354,	-- Apprentice Soren
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
+							-- #if AFTER MOP
 							["coord"] = { 43.2, 63.1, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 25.1, 75.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -907,13 +1025,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								24475,	-- All the Other Stuff
 								24486,	-- Make Hay While the Sun Shines
 							},
+							-- #if AFTER MOP
 							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24533, {	-- Words of Power
-							["qg"] = 837,	-- Branstock Khalder
+							["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
+							-- #if AFTER MOP
 							["coord"] = { 60.7, 14.6, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.6, 66.4, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
@@ -952,7 +1078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
-								-- #if AFTER LEGION
+								-- #if AFTER MOP
 								{ 21.2, 66.2, COLDRIDGE_VALLEY },
 								{ 30.6, 84.8, COLDRIDGE_VALLEY },
 								{ 49.2, 80.2, COLDRIDGE_VALLEY },
@@ -968,7 +1094,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 706,	-- Frostmane Troll Whelp
 							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["coords"] = {
-								-- #if AFTER LEGION
+								-- #if AFTER MOP
 								{ 21.2, 66.2, COLDRIDGE_VALLEY },
 								{ 30.6, 84.8, COLDRIDGE_VALLEY },
 								{ 49.2, 80.2, COLDRIDGE_VALLEY },
@@ -1019,10 +1145,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								37105,	-- Rockjaw Scavenger
 							},
 							["coords"] = {
+								-- #if AFTER MOP
 								{ 55.0, 44.6, COLDRIDGE_VALLEY },
 								{ 61.6, 59.2, COLDRIDGE_VALLEY },
 								{ 73.0, 56.6, COLDRIDGE_VALLEY },
 								{ 47.0, 43.4, COLDRIDGE_VALLEY },
+								-- #else
+								{ 34.4, 71.0, DUN_MOROGH },
+								{ 34.8, 74.0, DUN_MOROGH },
+								{ 35.8, 73.8, DUN_MOROGH },
+								{ 38.2, 72.8, DUN_MOROGH },
+								-- #endif
 							},
 							-- #else
 							["cr"] = 724,	-- Burly Rockjaw Trogg
@@ -2058,6 +2191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
 					["coord"] = { 28.6, 66.4, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { COLDRIDGE_VALLEY },
 					["races"] = { DWARF },
 					["classes"] = { PRIEST },
 					["isBreadcrumb"] = true,
