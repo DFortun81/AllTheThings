@@ -44,59 +44,65 @@ for mapID,area in pairs({	-- MapID to AreaID List
 end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
-	local substitutions = L.ART_ID_TO_MAP_ID[originalMapID];
+	local remap = app.MapRemapping[originalMapID];
+	local info = C_Map_GetMapInfo(originalMapID);
+	--print("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
+	if not remap then return originalMapID; end
+	
+	local substitutions = remap.artIDs;
 	if substitutions then
 		local artID = C_Map_GetMapArtID(originalMapID);
 		if artID then
 			local mapID = substitutions[artID];
-			if mapID then return mapID; end
+			if mapID then
+				--print(" SUBBED (artID): ", artID, mapID);
+				return mapID;
+			end
 		end
 	end
-	substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
+	
+	local zoneTexts = {};
+	local name = GetRealZoneText();
+	if name and name:len() > 0 then
+		zoneTexts[name] = 1;
+	end
+	name = GetSubZoneText();
+	if name and name:len() > 0 then
+		zoneTexts[name] = 1;
+	end
+	name = GetZoneText();
+	if name and name:len() > 0 then
+		zoneTexts[name] = 1;
+	end
+	
+	substitutions = remap.areaIDs;
 	if substitutions then
-		for questID,mapID in pairs(substitutions) do
-			if not IsQuestFlaggedCompleted(questID) and app.CurrentCharacter.Quests[questID] then
+		for areaID,mapID in pairs(substitutions) do
+			local info = C_Map_GetAreaInfo(areaID);
+			if info and zoneTexts[info] then
+				--print(" SUBBED (areaID): ", areaID, info, mapID);
 				return mapID;
 			end
 		end
 	end
-	local mapName = MapIDToMapName[originalMapID];
-	if mapName then
-		local zone = GetSubZoneText();
-		if zone and zone ~= "" then
-			if mapName == zone then return originalMapID; end
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
-		end
-		zone = GetZoneText();
-		if zone and zone ~= "" then
-			if mapName == zone then return originalMapID; end
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
-		end
-		zone = GetRealZoneText();
-		if zone then
-			if mapName == zone then return originalMapID; end
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then
-				return mapID;
+	substitutions = remap.names;
+	if remap.isContinent then
+		remap.isContinent = nil;
+		local childMaps = C_Map_GetMapChildrenInfo(originalMapID);
+		if childMaps then
+			if not substitutions then
+				substitutions = {};
+				remap.names = substitutions;
+			end
+			for j,childMapInfo in ipairs(childMaps) do
+				substitutions[childMapInfo.name] = childMapInfo.mapID;
 			end
 		end
-	else
-		local zone = GetSubZoneText();
-		if zone and zone ~= "" then
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
-		end
-		zone = GetZoneText();
-		if zone and zone ~= "" then
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
-		end
-		zone = GetRealZoneText();
-		if zone then
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then
+	end
+	if substitutions then
+		for name,mapID in pairs(substitutions) do
+			if zoneTexts[name] then
+				--print(" SUBBED (name): ", name, info, mapID);
 				return mapID;
 			end
 		end

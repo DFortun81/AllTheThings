@@ -21,9 +21,7 @@ local L = setmetatable({
 	
 	-- These are alternative map names that we don't want to display, but used for mapID calculations.
 	-- If there is a name provided in the table above, it will prefer that name association.
-	ART_ID_TO_MAP_ID = {};
 	MAP_ID_TO_ZONE_TEXT = {};
-	QUEST_ID_TO_MAP_ID = {};
 	ZONE_TEXT_TO_MAP_ID = {};
 	ALT_ZONE_TEXT_TO_MAP_ID = {
 		["Gates of Ahn'Qiraj"] = 1451,

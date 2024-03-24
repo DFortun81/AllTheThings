@@ -4,7 +4,7 @@ local _, app = ...;
 -- Global locals
 local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget, math_floor
 	= ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget, math.floor
-local C_Map_GetAreaInfo = C_Map.GetAreaInfo;
+local C_Map_GetAreaInfo, C_Map_GetMapInfo = C_Map.GetAreaInfo, C_Map.GetMapInfo;
 
 -- App locals
 local contains, classIndex, raceIndex, factionID =
@@ -190,7 +190,6 @@ local cacheProviderOrCost = function(group, provider)
 	providerTypeConverters[provider[1]](group, provider[2]);
 end
 
-local nextCustomMapID = -2;
 local uncacheMap = function(group, mapID)
 	-- remove this group's mapID if it is the current map group for this mapID
 	if currentMapGroup[mapID] == group then
@@ -214,6 +213,170 @@ local mapKeyUncachers = {
 		end
 	end,
 };
+
+-- Map Remapping
+-- This feature takes the original mapID and allows modifications on it to
+-- change the displayed name and the content of the mini list.
+local MapRemapping = {};
+app.MapRemapping = MapRemapping;
+local nextCustomMapID = -2;
+local function zoneArtIDRunner(group, value)
+	-- If this group uses a normal map, we want to rip out the cache for it.
+	-- Doing it after the cache is finished allows us to still prevent the coordinates
+	-- on relative objects and npcs from getting cached to the parent mapID.
+	local originalMaps = group.maps;
+	local originalMapID = group.mapID or (originalMaps and originalMaps[1]);
+	if originalMapID then
+		-- Generate a new unique mapID (negative)
+		local mapID = nextCustomMapID;
+		nextCustomMapID = nextCustomMapID - 1;
+		if originalMaps then
+			if group.mapID then
+				tinsert(originalMaps, mapID);
+			else
+				group.mapID = nil;
+			end
+		else
+			group.maps = {mapID};
+		end
+		
+		-- Manually assign the name of this map since it is not a real mapID.
+		CacheField(group, "mapID", mapID);
+		app.L.MAP_ID_TO_ZONE_TEXT[mapID] = group.text;
+		
+		-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
+		local remap = MapRemapping[originalMapID];
+		if not remap then
+			remap = {};
+			MapRemapping[originalMapID] = remap;
+		end
+		local artIDs = remap.artIDs;
+		if not artIDs then
+			artIDs = {};
+			remap.artIDs = artIDs;
+		end
+		for j,artID in ipairs(value) do
+			artIDs[artID] = mapID;
+		end
+		
+		--local info = C_Map_GetMapInfo(originalMapID);
+		--print("MapRemapping (artIDs): ", originalMapID, info and info.name, mapID, group.text);
+	--else
+		--print("Invalid MapRemapping (artIDs):", group.hash);
+	end
+end
+local function zoneTextAreasRunner(group, value)
+	local mapID = group.mapID;
+	if not mapID then
+		-- Generate a new unique mapID (negative)
+		mapID = nextCustomMapID;
+		nextCustomMapID = nextCustomMapID - 1;
+		if group.maps then
+			tinsert(group.maps, mapID)
+		else
+			group.maps = {mapID};
+		end
+		
+		-- Manually assign the name of this map since it is not a real mapID.
+		CacheField(group, "mapID", mapID);
+	end
+	
+	-- Use the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
+	local name = C_Map_GetAreaInfo(value[1]);
+	if name then app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name; end
+	
+	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
+	local originalMapID = (group.coords and group.coords[1][3]) or app.GetRelativeValue(group.parent, "mapID");
+	if originalMapID then
+		local remap = MapRemapping[originalMapID];
+		if not remap then
+			remap = {};
+			MapRemapping[originalMapID] = remap;
+		end
+		local areaIDs = remap.areaIDs;
+		if not areaIDs then
+			areaIDs = {};
+			remap.areaIDs = areaIDs;
+		end
+		for j,areaID in ipairs(value) do
+			areaIDs[areaID] = mapID;
+		end
+		
+		-- Also assign it to the parent map. (fix for Onyxia's Lair)
+		local info = C_Map_GetMapInfo(originalMapID);
+		--print("MapRemapping (areaID): ", originalMapID, info and info.name, mapID, name);
+		if info and info.parentMapID then
+			originalMapID = info.parentMapID;
+			local remap = MapRemapping[originalMapID];
+			if not remap then
+				remap = {};
+				MapRemapping[originalMapID] = remap;
+			end
+			local areaIDs = remap.areaIDs;
+			if not areaIDs then
+				areaIDs = {};
+				remap.areaIDs = areaIDs;
+			end
+			for j,areaID in ipairs(value) do
+				areaIDs[areaID] = mapID;
+			end
+		end
+	end
+end
+local function zoneTextContinentRunner(group, value)
+	local mapID = group.mapID;
+	if mapID then
+		local remap = MapRemapping[mapID];
+		if not remap then
+			remap = {};
+			MapRemapping[mapID] = remap;
+		end
+		remap.isContinent = true;
+		
+		--local info = C_Map_GetMapInfo(mapID);
+		--print("MapRemapping (continent): ", mapID, info and info.name);
+	end
+end
+local function zoneTextNamesRunner(group, value)
+	--if true then return; end
+	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
+	local originalMapID = (group.coords and group.coords[1][3]) or app.GetRelativeValue(group.parent, "mapID");
+	if originalMapID then
+		local mapID = group.mapID;
+		if not mapID then
+			-- Generate a new unique mapID (negative)
+			mapID = nextCustomMapID;
+			nextCustomMapID = nextCustomMapID - 1;
+			if group.maps then
+				tinsert(group.maps, mapID)
+			else
+				group.maps = {mapID};
+			end
+			
+			-- Manually assign the name of this map since it is not a real mapID.
+			CacheField(group, "mapID", mapID);
+		end
+		
+		local remap = MapRemapping[originalMapID];
+		if not remap then
+			remap = {};
+			MapRemapping[originalMapID] = remap;
+		end
+		local names = remap.names;
+		if not names then
+			names = {};
+			remap.names = names;
+		end
+		for j,name in ipairs(value) do
+			names[name] = mapID;
+		end
+		
+		--local info = C_Map_GetMapInfo(originalMapID);
+		--print("MapRemapping (name): ", originalMapID, info and info.name, mapID);
+	--else
+		--print("Invalid MapRemapping (name):", group.hash);
+	end
+end
 local fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = cacheAchievementID,
@@ -390,147 +553,29 @@ local fieldConverters = {
 
 	-- Localization Helpers
 	["zone-artIDs"] = function(group, value)
-		-- If this group uses a normal map, we want to rip out the cache for it.
-		-- Doing it after the cache is finished allows us to still prevent the coordinates
-		-- on relative objects and npcs from getting cached to the parent mapID.
-		local originalMaps = group.maps;
-		local originalMapID = group.mapID or (originalMaps and originalMaps[1]);
-		if originalMapID then
-			-- Generate a unique NEGATIVE mapID and cache the object to it.
-			local mapID = nextCustomMapID;
-			nextCustomMapID = nextCustomMapID - 1;
-			tinsert(runners, function()
-				if originalMaps then
-					if group.mapID then
-						tinsert(originalMaps, mapID);
-					else
-						group.mapID = nil;
-					end
-				else
-					group.maps = {mapID};
-				end
-			end);
-			-- Is there a situation where we would actually want the associated quest to show the data for the group since NOT being flagged is the trigger for it being available...?
-			CacheField(group, "mapID", mapID);
-
-			local mapIDCache = currentCache.mapID;
-			tinsert(runners, function()
-				mapIDCache = mapIDCache[originalMapID];
-				for i,o in ipairs(mapIDCache) do
-					if o == group then
-						table.remove(mapIDCache, i);
-
-						local artIDs = app.L.ART_ID_TO_MAP_ID[originalMapID];
-						if not artIDs then
-							artIDs = {};
-							app.L.ART_ID_TO_MAP_ID[originalMapID] = artIDs;
-						end
-						for j,artID in ipairs(value) do
-							artIDs[artID] = mapID;
-						end
-						app.L.MAP_ID_TO_ZONE_TEXT[mapID] = group.text;
-						break;
-					end
-				end
-			end);
-		end
-	end,
-	["zone-quest"] = function(group, value)
-		-- If this group uses a normal map, we want to rip out the cache for it.
-		-- Doing it after the cache is finished allows us to still prevent the coordinates
-		-- on relative objects and npcs from getting cached to the parent mapID.
-		local originalMaps = group.maps;
-		local originalMapID = group.mapID or (originalMaps and originalMaps[1]);
-		if originalMapID then
-			-- Generate a unique NEGATIVE mapID and cache the object to it.
-			local mapID = nextCustomMapID;
-			nextCustomMapID = nextCustomMapID - 1;
-			tinsert(runners, function()
-				group.questID = value;
-				if originalMaps then
-					if group.mapID then
-						tinsert(originalMaps, mapID);
-					else
-						group.mapID = nil;
-					end
-				else
-					group.maps = {mapID};
-				end
-			end);
-			-- Is there a situation where we would actually want the associated quest to show the data for the group since NOT being flagged is the trigger for it being available...?
-			CacheField(group, "questID", value);
-			CacheField(group, "mapID", mapID);
-
-			local mapIDCache = currentCache.mapID;
-			tinsert(runners, function()
-				mapIDCache = mapIDCache[originalMapID];
-				for i,o in ipairs(mapIDCache) do
-					if o == group then
-						table.remove(mapIDCache, i);
-
-						local questIDs = app.L.QUEST_ID_TO_MAP_ID[originalMapID];
-						if not questIDs then
-							questIDs = {};
-							app.L.QUEST_ID_TO_MAP_ID[originalMapID] = questIDs;
-						end
-						questIDs[value] = mapID;
-						app.L.MAP_ID_TO_ZONE_TEXT[mapID] = group.text;
-						break;
-					end
-				end
-			end);
-			-- This questID needs to be used to automatically trigger minilist rebuilds when state-changed
-			tinsert(QuestTriggers, value)
-		end
+		tinsert(runners, function()
+			zoneArtIDRunner(group, value);
+		end);
 	end,
 	["zone-text-areaID"] = function(group, value)
-		local mapID = group.mapID;
-		if not mapID then
-			-- Generate a unique NEGATIVE mapID and cache the object to it.
-			mapID = nextCustomMapID;
-			nextCustomMapID = nextCustomMapID - 1;
-			tinsert(runners, function()
-				if group.maps then
-					tinsert(group.maps, mapID)
-				else
-					group.maps = {mapID};
-				end
-			end);
-			CacheField(group, "mapID", mapID);
-		end
-
-		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
-		local name = C_Map_GetAreaInfo(value);
-		if name then
-			app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name;
-			app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID;
-		end
+		tinsert(runners, function()
+			zoneTextAreasRunner(group, { value });
+		end);
 	end,
 	["zone-text-areas"] = function(group, value)
-		local mapID = group.mapID;
-		if not mapID then
-			-- Generate a unique NEGATIVE mapID and cache the object to it.
-			mapID = nextCustomMapID;
-			nextCustomMapID = nextCustomMapID - 1;
-			tinsert(runners, function()
-				if group.maps then
-					tinsert(group.maps, mapID)
-				else
-					group.maps = {mapID};
-				end
-			end);
-			CacheField(group, "mapID", mapID);
-		end
-		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
-		local name = C_Map_GetAreaInfo(value[1]);
-		if name then
-			app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name;
-			app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID;
-		end
-		for i=2,#value,1 do
-			name = C_Map_GetAreaInfo(value[i]);
-			if name then app.L.ALT_ZONE_TEXT_TO_MAP_ID[name] = mapID; end
-		end
+		tinsert(runners, function()
+			zoneTextAreasRunner(group, value);
+		end);
+	end,
+	["zone-text-continent"] = function(group, value)
+		tinsert(runners, function()
+			zoneTextContinentRunner(group, value);
+		end);
+	end,
+	["zone-text-names"] = function(group, value)
+		tinsert(runners, function()
+			zoneTextNamesRunner(group, value);
+		end);
 	end,
 
 	-- Patch Helpers
@@ -665,7 +710,7 @@ if app.IsRetail then
 	fieldConverters.up = function(group, up)
 		CacheField(group, "up", up);
 	end
-elseif tonumber(app.GameBuildVersion) < 30000 then
+elseif app.GameBuildVersion < 30000 then
 	fieldConverters.sins = function(group, value)
 		local mapID = group.mapID;
 		if not mapID then

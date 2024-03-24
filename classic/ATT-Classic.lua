@@ -1939,9 +1939,6 @@ function app:GetDataCache()
 				isEventCategory = true,
 			});
 		end
-
-		-- Now that we have all of the root data, cache it.
-		app.CacheFields(rootData);
 		
 		-- Dynamic Categories
 		if app.Windows then
@@ -1983,6 +1980,9 @@ function app:GetDataCache()
 
 		-- Now assign the parent hierarchy for this cache.
 		AssignChildren(rootData);
+
+		-- Now that we have all of the root data, cache it.
+		app.CacheFields(rootData);
 
 		-- Determine how many expansionID instances could be found
 		local expansionCounter = 0;
