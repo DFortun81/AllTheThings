@@ -20,12 +20,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
 				-- #endif
-				-- #if BEFORE 6.0.0
-				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					132,	-- Coldridge Valley
 					800,	-- Coldridge Pass
 					77,		-- Anvilmar
+					-- #if AFTER CATA
+					4837,	-- Whitebeard's Encampment
+					-- #endif
 				},
 				-- #endif
 				["maps"] = {
