@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					16571,	-- Well Supplied
 				}},
 				["g"] = {
-					i(198822),	-- Bestowed Ohuna Spotter (MOUNT!) [Not In Game Yet...]
+					i(198822),	-- Bestowed Ohuna Spotter (MOUNT!)
 				},
 			}),
 		})),

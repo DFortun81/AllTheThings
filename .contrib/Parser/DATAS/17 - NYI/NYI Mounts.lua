@@ -676,9 +676,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(371571, {	-- Dragon Isles Drake Model Test (MOUNT!)
 				-- ["displayID"] = ,
 			}),
-			mount(376898, {	-- [PH] Black Armored River Otter (MOUNT!)
-				-- ["displayID"] = ,
-			}),
 			mount(376909, {	-- [PH] Blue Armored River Otter (MOUNT!)
 				-- ["displayID"] = ,
 			}),
@@ -713,19 +710,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(198823, {	-- [PH] Brown Wind Eagle (MOUNT!)
 				-- ["displayID"] = ,
 			}),
-			i(192765, {	-- [PH] Dragonfly Yellow (MOUNT!)
-				-- ["displayID"] = ,
-			}),
-			i(192788, {	-- [PH] Mammoth V2 Blue (MOUNT!)
-				-- ["displayID"] = ,
-			}),
 			i(192787, {	-- [PH] Mammoth V2 Dark (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 			i(192789, {	-- [PH] Mammoth V2 Gray (MOUNT!)
-				-- ["displayID"] = ,
-			}),
-			i(198822, {	-- [PH] Sepia Wind Eagle (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 			i(192771, {	-- [PH] Water Salamander Blue (MOUNT!)

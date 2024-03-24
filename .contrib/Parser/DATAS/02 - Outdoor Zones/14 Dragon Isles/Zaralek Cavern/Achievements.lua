@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					17763,	-- There's No Place Like Loamm
 				}},
 				["g"] = {
-					i(205206, {	-- Calescent Shalewing (MOUNT!) (MOUNT!) [Not In Game Yet...]
+					i(205206, {	-- Calescent Shalewing (MOUNT!) [Not In Game Yet...]
 						["timeline"] = { ADDED_10_2_6 },
 					}),
 				},

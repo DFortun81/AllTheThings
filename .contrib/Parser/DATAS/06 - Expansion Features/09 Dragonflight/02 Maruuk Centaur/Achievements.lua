@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					16424,	-- Who's a Good Bakar?
 				}},
 				["g"] = {
-					i(192792),	-- Bestowed Thunderspine Packleader (MOUNT!) [Not In Game Yet...]
+					i(192792),	-- Bestowed Thunderspine Packleader (MOUNT!)
 				},
 			}),
 		})),

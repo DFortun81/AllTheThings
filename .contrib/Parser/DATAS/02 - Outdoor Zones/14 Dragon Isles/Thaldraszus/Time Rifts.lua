@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							18635,	-- Verified Rifter
 						}},
 						["g"] = {
-							i(192765),	-- Bestowed Sandskimmer (MOUNT!) [Not In Game Yet...]
+							i(192765),	-- Bestowed Sandskimmer (MOUNT!)
 						},
 					})),
 					ach(18639),	-- Collapsed Reality

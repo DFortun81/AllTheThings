@@ -1514,7 +1514,6 @@ i(0, 381529);		-- Telix the Stormhorn
 --- NYI ---
 i(0, 371571);		-- Dragon Isles Drake Model Test
 i(0, 372995);		-- Swift Spectral Drake
-i(0, 376898);		-- [PH] Black Armored River Otter
 i(0, 376909);		-- [PH] Blue Armored River Otter
 i(0, 387948);		-- [PH] Wind Proto-Drake
 i(0, 351404);		-- PH Mammoth V2 Lava
@@ -1525,11 +1524,8 @@ i(194722, 377849);	-- Carrier Yeti
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
 i(198823, 385253);	-- [PH] Brown Wind Eagle
-i(192765, 374071);	-- [PH] Dragonfly Yellow
-i(192788, 374181);	-- [PH] Mammoth V2 Blue
 i(192787, 351403);	-- [PH] Mammoth V2 Dark
 i(192789, 374172);	-- [PH] Mammoth V2 Gray
-i(198822, 385260);	-- [PH] Sepia Wind Eagle
 i(192771, 352927);	-- [PH] Water Salamander Blue
 i(192773, 374093);	-- [PH] Water Salamander Orange
 i(192774, 374097);	-- [PH] Water Salamander Pink
@@ -1744,8 +1740,11 @@ i(211486, 0);		-- Winding Slitherdrake
 ------------------
 -- PATCH 10.2.6 --
 ------------------
-i(211862, 0);		-- Bestowed Ottuk Vanguard
+i(198822, 385260);	-- Bestowed Ohuna Spotter
+i(211862, 376898);	-- Bestowed Ottuk Vanguard
+i(192765, 374071);	-- Bestowed Sandskimmer
 i(192792, 351408);	-- Bestowed Thunderspine Packleader
+i(192788, 374181);	-- Bestowed Trawling Mammoth
 i(205206, 408648);	-- Calescent Shalewing
 i(0, 424539);		-- Draconic Gladiator's Drake
 i(213438, 434462);	-- Infinite Armoredon
