@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
-		n(RENOWN_REWARDS, {
+		n(RENOWN, {
 			n(QUESTS, bubbleDownRep(FACTION_LOAMM_NIFFEN, {
 				{		-- RENOWN 1 --
 					q(75665, {	-- A Worthy Ally: Loamm Niffen

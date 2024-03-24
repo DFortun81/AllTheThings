@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	n(DREAM_WARDENS, {
-		n(RENOWN_REWARDS, {
+		n(RENOWN, {
 			n(QUESTS, bubbleDownRep(FACTION_DREAM_WARDENS, {
 				{		-- RENOWN 1 --
 					q(78444, {	-- A Worthy Ally: Dream Wardens

@@ -7,7 +7,7 @@ local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
-		n(RENOWN_REWARDS, {
+		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 			["sym"] = {
 				{"select","itemID",186580}	-- A Tiny Sinstone (PEPE!)
@@ -76,7 +76,7 @@ WISPS_OF_MEMORY.customCollect = nil;
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(VENTHYR, {
-		n(RENOWN_REWARDS, {
+		n(RENOWN, {
 			q(62750),	-- hitting Renown 19
 			q(62751),	-- hitting Renown 35
 			q(62925),	-- hitting Renown 39

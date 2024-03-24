@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		n(RENOWN_REWARDS, {
+		n(RENOWN, {
 			n(QUESTS, bubbleDownRep(FACTION_DRAGONSCALE_EXPEDITION, {
 				{		-- RENOWN 1 --
 					q(72397, {	-- Orientation: Dragonscale Basecamp

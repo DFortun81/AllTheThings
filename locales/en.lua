@@ -963,8 +963,8 @@ for key, value in pairs({
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
-	--	[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
-		[-902] = "Renown Rewards",												-- Renown Rewards
+		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
+	--	[-902] = "Renown Rewards",												-- Renown Rewards
 		[-905] = GetSpellInfo(280630),											-- Command Table
 		[-916] = sformat(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
 		[-917] = sformat(COVENANT_SANCTUM_TIER, 2),						-- Tier 2

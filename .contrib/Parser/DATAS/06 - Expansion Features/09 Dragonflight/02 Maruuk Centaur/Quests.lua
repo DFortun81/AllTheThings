@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
-		n(RENOWN_REWARDS, {
+		n(RENOWN, {
 			n(QUESTS, bubbleDownRep(FACTION_MARUUK_CENTAUR, {
 				{		-- RENOWN 1 --
 					q(72429, {	-- Orientation: Maruukai
