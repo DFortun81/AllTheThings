@@ -4,7 +4,9 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(CAVERNS_OF_TIME, {
 		["lore"] = "Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",
+		-- #if BEFORE MOP
 		["zone-text-areaID"] = 1941,	-- Caverns of Time
+		-- #endif
 		["maps"] = { 74 },	-- Caverns of Time Entrance
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
