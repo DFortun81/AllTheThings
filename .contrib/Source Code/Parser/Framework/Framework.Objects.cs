@@ -1515,7 +1515,6 @@ end");
                         case "isRaid":
                         case "mapID":
                         case "races":
-                        case "zone-quest":
                         case "zone-artIDs":
                         case "zone-text-areaID":
                         case "zone-text-areas":
@@ -1894,7 +1893,6 @@ end");
                     case "questIDA":
                     case "questIDH":
                     case "sqreq":
-                    case "zone-quest":
                     case "zone-text-areaID":
                     case "rwp":
                     case "awp":

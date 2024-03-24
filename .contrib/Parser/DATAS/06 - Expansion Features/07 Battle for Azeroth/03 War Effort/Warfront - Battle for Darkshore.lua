@@ -11,7 +11,6 @@ root(ROOTS.ExpansionFeatures,
 					1176	-- Alliance during a Horde Controlled day
 				},
 				["icon"] = "Interface\\Icons\\Achievement_zone_darkshore_01",
-				--["zone-quest"] = 54411,
 				["timeline"] = { ADDED_8_1_0 },
 				["crs"] = {
 					141489,	-- Zidormi

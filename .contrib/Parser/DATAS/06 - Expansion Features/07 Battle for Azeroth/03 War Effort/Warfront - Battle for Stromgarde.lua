@@ -144,7 +144,6 @@ root(ROOTS.ExpansionFeatures,
 					1137,	-- Alliance and during an Alliance Controlled day
 				},
 				["icon"] = "Interface\\Icons\\achievement_zone_arathihighlands_01",
-				--["zone-quest"] = 52781,
 				["timeline"] = { ADDED_8_0_1_LAUNCH },
 				["crs"] = {
 					141649,	-- Zidormi

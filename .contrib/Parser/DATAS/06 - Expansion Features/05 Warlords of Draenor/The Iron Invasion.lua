@@ -25,7 +25,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	}), {
 		-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
 		["zone-artIDs"] = { 628 },
-		--["zone-quest"] = 66560,
 		["timeline"] = { "added 6.0.1.18566" },
 		["maps"] = { BLASTED_LANDS },
 		["crs"] = { 88206 },	-- Zidormi
