@@ -359,9 +359,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(94295),	-- Primal Egg
 						i(95965),	-- Home-Warding Slippers
 						i(95978),	-- Locksmasher Greaves [Yunim - 2021-12-04]
-						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(95958),	-- Necklace of the Terra-Cotta Archer
+						i(95964),	-- Necklace of the Terra-Cotta Invoker
 						i(95969),	-- Necklace of the Terra-Cotta Mender
+						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(95960),	-- Scalehide Spurs [Yunim - 2023-02-xx]
 						i(95963),	-- Silentflame Sandals
 						i(95959),	-- Spiderweb Tabi
