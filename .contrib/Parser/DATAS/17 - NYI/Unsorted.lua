@@ -959,6 +959,8 @@ root(ROOTS.Unsorted, {
 				i(218128),	-- Draconic Banner of the Aspects (TOY!)
 				i(216881),	-- Duck Disguiser (TOY!) [Nobelgarden]
 			}),
+			i(216672),	-- The Ambush
+			i(221779),	-- Bent Card
 		})),
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			------ Next Check In Start of April ------

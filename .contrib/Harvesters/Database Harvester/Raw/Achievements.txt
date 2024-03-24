@@ -13627,3 +13627,21 @@
 20514@@@<Hidden> 10.2.6 Void Zone - Pepe <DNT>
 20515@@@<Hidden> 10.2.6 Void Zone - Toy <DNT>
 20516@@@<Hidden> 10.2.6 Void Zone - Quest <DNT>
+10.2.6.53877
+40065@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 6 [DNT]
+40066@@@<Hidden> 10.2.6 Void Zone - Keg Leg  Renown 2 [DNT]
+40067@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 5 [DNT]
+40068@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 8 [DNT]
+40069@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 10 [DNT]
+40070@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 11 [DNT]
+40071@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 13 [DNT]
+40072@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 16 [DNT]
+40073@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 18 [DNT]
+40074@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 20 [DNT]
+40075@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 22 [DNT]
+40076@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 27 [DNT]
+40077@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 30 [DNT]
+40078@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 31 [DNT]
+40079@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 32 [DNT]
+40080@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 36 [DNT]
+40081@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 40 [DNT]
