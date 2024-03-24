@@ -199,8 +199,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #else
 		["coord"] = { 30.11, 74.64, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
 		-- #endif
-		-- #if BEFORE 4.0.3
+		-- #if BEFORE CATA
 		["zone-text-areaID"] = 133,	-- Gnomeregan
+		-- #elseif BEFORE MOP
+		["zone-text-areaID"] = 5495,	-- Gnomeregan
+		["zone-text-names"] = {
+			"Workshop Entrance",
+		},
 		-- #endif
 		["mapID"] = GNOMEREGAN,
 		["maps"] = { 227, 228, 229 },

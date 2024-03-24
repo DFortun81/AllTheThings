@@ -109,13 +109,6 @@ local L = setmetatable({
 });
 app.L = L;
 
-if app.GameBuildVersion < 60000 then
-	-- New Tinkertown
-	L.ALT_ZONE_TEXT_TO_MAP_ID["The Old Dormitory"] = 469;
-	L.ALT_ZONE_TEXT_TO_MAP_ID["Train Depot"] = 469;
-	L.ALT_ZONE_TEXT_TO_MAP_ID["Loading Room"] = 469;
-end
-
 -- All of the locales related to the settings menu.
 L.SETTINGS_MENU = {
 	-- Common Header

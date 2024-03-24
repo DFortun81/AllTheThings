@@ -7,6 +7,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["maps"] = {
 			29,		-- The Grizzled Den
 			31,		-- Gol'Balar Quarry
+			-- #if BEFORE CATA
+			469,	-- ???
+			470,	-- Frostmane Hold
+			-- #endif
 		},
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_dunmorogh",
@@ -1318,9 +1322,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					137,	-- Brewnall Village
 					801,	-- Chill Breeze Valley
 					135,	-- Frostmane Hold
-					5495,	-- Gnomeregan
+					--5495,	-- Gnomeregan
 					211,	-- Iceflow Lake
 					5178,	-- The Toxic Airfield
+				},
+				["zone-text-names"] = {
+					"The Old Dormitory",
+					"Train Depot",
+					"Loading Room",
 				},
 				-- #endif
 				["maps"] = {
