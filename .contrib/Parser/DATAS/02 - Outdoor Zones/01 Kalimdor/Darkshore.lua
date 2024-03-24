@@ -11,6 +11,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Achievement_zone_darkshore_01",
 		-- #endif
+		-- #if AFTER 8.1.0
+		["crs"] = { 141489 },	-- Zidormi
+		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4928, {	-- Darkshore Quests

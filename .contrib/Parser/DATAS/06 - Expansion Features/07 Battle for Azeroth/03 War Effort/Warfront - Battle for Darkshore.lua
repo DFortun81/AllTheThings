@@ -7,14 +7,10 @@ root(ROOTS.ExpansionFeatures,
 		n(WAR_EFFORT, {
 			m(DARKSHORE, {	-- Outdoor Warfront-Phased Content
 				-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is currently active
-				["zone-artIDs"] = {
-					1176	-- Alliance during a Horde Controlled day
-				},
+				["zone-artIDs"] = { 1176 },	-- Alliance during a Horde Controlled day
 				["icon"] = "Interface\\Icons\\Achievement_zone_darkshore_01",
 				["timeline"] = { ADDED_8_1_0 },
-				["crs"] = {
-					141489,	-- Zidormi
-				},
+				["crs"] = { 141489 },	-- Zidormi
 				["groups"] = {
 					n(WORLD_BOSSES, {
 						["isRaid"] = true,
