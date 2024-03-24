@@ -1317,6 +1317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
 				["zone-text-areas"] = {
 					133,	-- New Tinkertown
+					5495,	-- Gnomeregan
 				},
 				-- #endif
 				["maps"] = { NEW_TINKERTOWN_LOWER },
@@ -1335,28 +1336,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26205, {	-- A Job for the Multi-Bot
 							["qg"] = 42553,	-- Engineer Grindspark
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
+							-- #if AFTER MOP
 							["coord"] = { 40.5, 28.0, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 27.34, 36.42, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26566, {	-- A Triumph of Gnomish Ingenuity
 							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26208,	-- The Fight Continues
+							-- #if AFTER MOP
 							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.67, 38.18, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26331, {	-- Crushcog's Minions
 							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26329,	-- One More Thing
+							-- #if AFTER MOP
 							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.67, 38.18, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26265, {	-- Dealing with the Fallout
 							["qg"] = 42630,	-- Corporal Fizzwhistle
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
+							-- #if AFTER MOP
 							["coord"] = { 38.2, 40.2, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
@@ -1371,14 +1388,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(27635, {	-- Decontamination
 							["qg"] = 46274,	-- Gaffer Coilspring
 							["sourceQuest"] = 28169,	-- Withdraw to the Loading Room!
+							-- #if AFTER MOP
 							["coord"] = { 53.0, 82.3, NEW_TINKERTOWN_LOWER },
+							-- #else
+							["coord"] = { 21.01, 39.54, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- Decontamination Process started
+									["provider"] = { "n", 46185 },	-- Sanitron 500 <With Dunk-o-Matic Action>
+								}),
+							},
 						}),
 						q(26364, {	-- Down with Crushcog!
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26342,	-- Paint it Black
+							-- #if AFTER MOP
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
@@ -1402,7 +1432,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								26285,	-- Get Me Explosives Back!
 								26284,	-- Missing in Action
 							},
+							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
@@ -1423,14 +1457,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26285, {	-- Get Me Explosives Back!
 							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
+							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26423, {	-- Meet the High Tinker
 							["qg"] = 42366,	-- Kelsey Steelspark
 							["sourceQuest"] = 26206,	-- The Future of Gnomeregan
+							-- #if AFTER MOP
 							["coord"] = { 38.0, 33.6, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { ROGUE },
@@ -1446,7 +1488,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26422, {	-- Meet the High Tinker
 							["qg"] = 42323,	-- "Doc" Cogspin
 							["sourceQuest"] = 26199,	-- The Future of Gnomeregan
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 28.4, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { PRIEST },
@@ -1454,7 +1500,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26421, {	-- Meet the High Tinker
 							["qg"] = 42331,	-- Bipsi Frostflinger
 							["sourceQuest"] = 26197,	-- The Future of Gnomeregan
+							-- #if AFTER MOP
 							["coord"] = { 41.1, 29.1, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 27.53, 36.83, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MAGE },
@@ -1462,7 +1512,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26425, {	-- Meet the High Tinker
 							["qg"] = 42324,	-- Drill Sergeant Steamcrank
 							["sourceQuest"] = 26203,	-- The Future of Gnomeregan
+							-- #if AFTER MOP
 							["coord"] = { 40.6, 36.1, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARRIOR },
@@ -1470,7 +1524,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26424, {	-- Meet the High Tinker
 							["qg"] = 460,	-- Alamar Grimm
 							["sourceQuest"] = 26202,	-- The Future of Gnomeregan
+							-- #if AFTER MOP
 							["coord"] = { 37.7, 38.0, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARLOCK },
@@ -1478,7 +1536,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(41218, {	-- Meet the High Tinker
 							["qg"] = 103614,	-- Muffinus Chromebrew
 							["sourceQuest"] = 41217,	-- The Future of Gnomeregan
+							-- #if AFTER MOP
 							["coord"] = { 41.9, 31.6, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 7.0.1.20773" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
@@ -1486,14 +1548,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26284, {	-- Missing in Action
 							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
+							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26333, {	-- No Tanks!
 							["qg"] = 42491,	-- Hinkles Fastblast
 							["sourceQuest"] = 26329,	-- One More Thing
+							-- #if AFTER MOP
 							["coord"] = { 38.1, 33.6, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
@@ -1514,7 +1584,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26373, {	-- On to Kharanos
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26364,	-- Down with Crushcog!
+							-- #if AFTER MOP
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["isBreadcrumb"] = true,
@@ -1522,43 +1596,108 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26329, {	-- One More Thing
 							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26318,	-- Finishin' the Job
+							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26342, {	-- Paint it Black
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26339,	-- Staging in Brewnall
+							-- #if AFTER MOP
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/5 Crushcog's Sentry Bot blinded
+									["providers"] = {
+										--{ "n",  },	-- 
+										{ "i", 58203 },	-- Paintinator
+									},
+								}),
+							},
 						}),
 						q(27670, {	-- Pinned Down
 							["qg"] = 45966,	-- Nevin Twistwrench
+							-- #if AFTER MOP
 							["coord"] = { 34.1, 32.2, NEW_TINKERTOWN_LOWER },
+							-- #else
+							["coord"] = { 18.81, 33.74, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/6 Crazed Leper Gnome slain
+									["providers"] = {
+										{ "n", 46363 },	-- Crazed Leper Gnome
+										{ "n", 46391 },	-- Crazed Leper Gnome
+									},
+								}),
+							},
 						}),
 						q(28167, {	-- Report to Carvo Blastbolt
 							["qg"] = 45966,	-- Nevin Twistwrench
 							["sourceQuest"] = 27670,	-- Pinned Down
+							-- #if AFTER MOP
 							["coord"] = { 34.0, 32.2, NEW_TINKERTOWN_LOWER },
+							-- #else
+							["coord"] = { 18.81, 33.74, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26222, {	-- Scrounging for Parts
 							["qg"] = 42553,	-- Engineer Grindspark
 							["sourceQuest"] = 26566,	-- A Triumph of Gnomish Ingenuity
+							-- #if AFTER MOP
 							["coord"] = { 40.5, 28.0, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 27.34, 36.42, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/7 Spare Part
+									["providers"] = {
+										{ "i",  57764 },	-- Spare Part
+										{ "o", 203964 },	-- Spare Part
+										{ "o", 203965 },	-- Spare Part
+										{ "o", 203966 },	-- Spare Part
+										{ "o", 203967 },	-- Spare Part
+										{ "o", 203968 },	-- Spare Part
+									},
+									-- #if AFTER MOP
+									["coord"] = { 39.9, 30.8, NEW_TINKERTOWN },
+									-- #else
+									["coord"] = { 27.31, 36.26, DUN_MOROGH },
+									-- #endif
+								}),
+							},
 						}),
 						q(27671, {	-- See to the Survivors
 							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 28167,	-- Report to Carvo Blastbolt
+							-- #if AFTER MOP
 							["coord"] = { 50.9, 31.9, NEW_TINKERTOWN_LOWER },
+							-- #else
+							["coord"] = { 20.76, 33.71, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/6 Survivors Rescued
+									["providers"] = {
+										{ "n", 46268 },	-- Survivor
+										{ "i", 62057 },	-- Teleport Beacon
+									},
+								}),
+							},
 						}),
 						q(26339, {	-- Staging in Brewnall
 							["qg"] = 42366,	-- Kelsey Steelspark
@@ -1566,7 +1705,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								26331,	-- Crushcog's Minions
 								26333,	-- No Tanks!
 							},
+							-- #if AFTER MOP
 							["coord"] = { 38.0, 33.5, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
@@ -1587,7 +1730,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(26207, {	-- The Arts of a Rogue
 							["qg"] = 42366,	-- Kelsey Steelspark
+							-- #if AFTER MOP
 							["coord"] = { 38.0, 33.5, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
@@ -1611,69 +1758,102 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								26424,	-- Meet the High Tinker (Warlock)
 								41218,	-- Meet the High Tinker (Hunter)
 							},
+							-- #if AFTER MOP
 							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.67, 38.18, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26197, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.94, 40.32, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13287" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MAGE },
+							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59042, {	-- Electro-Staff
 									["timeline"] = { "added 4.0.3.13287" },
 								}),
 							},
+							-- #endif
 						}),
 						q(26199, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.94, 40.32, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { PRIEST },
+							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59040, {	-- Staff of the Force
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
+							-- #endif
 						}),
 						q(26202, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.94, 40.32, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARLOCK },
+							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59041, {	-- Vibro Knife
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
+							-- #endif
 						}),
 						q(26203, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.94, 40.32, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARRIOR },
+							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59039, {	-- Very Light Sabre
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
+							-- #endif
 						}),
 						q(26206, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.94, 40.32, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { ROGUE },
+							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(59043, {	-- Death Star
 									["timeline"] = { "added 4.0.3.13287" },
@@ -1682,11 +1862,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
+							-- #endif
 						}),
 						q(31135, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.94, 40.32, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
@@ -1694,20 +1879,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(41217, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							-- #if AFTER MOP
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.94, 40.32, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 7.0.1.20773" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
+							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(134123, {	-- "Reliable" Boom-O-Tronic
 									["timeline"] = { "added 7.0.1.20773" },
 								}),
 							},
+							-- #endif
 						}),
 						q(27674, {	-- To the Surface
 							["qg"] = 46255,	-- Technician Braggle
 							["sourceQuest"] = 27635,	-- Decontamination
+							-- #if AFTER MOP
 							["coord"] = { 66.3, 81.6, NEW_TINKERTOWN_LOWER },
+							-- #else
+							["coord"] = { 22.55, 39.46, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
@@ -1718,21 +1913,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								26265,	-- Dealing with the Fallout
 								26264,	-- What's Left Behind
 							},
+							-- #if AFTER MOP
 							["coord"] = { 38.3, 33.4, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26264, {	-- What's Left Behind
 							["qg"] = 42611,	-- Tock Sprysprocket
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
+							-- #if AFTER MOP
 							["coord"] = { 39.2, 26.5, NEW_TINKERTOWN },
+							-- #else
+							--["coord"] = { , DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(28169, {	-- Withdraw to the Loading Room!
 							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 27671,	-- See to the Survivors
+							-- #if AFTER MOP
 							["coord"] = { 50.9, 31.9, NEW_TINKERTOWN_LOWER },
+							-- #else
+							["coord"] = { 20.76, 33.71, DUN_MOROGH },
+							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),

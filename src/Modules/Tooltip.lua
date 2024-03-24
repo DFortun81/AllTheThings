@@ -94,7 +94,8 @@ else
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
-		local o = objectNamesToIDs[name];
+		--print("GetBestObjectIDForName:", "'" .. (name or RETRIEVING_DATA) .. "'");
+		local o = objectNamesToIDs[name and name:trim()];
 		if o and #o > 0 then
 			local objects = {};
 			local mapID, px, py = GetPlayerPosition();
