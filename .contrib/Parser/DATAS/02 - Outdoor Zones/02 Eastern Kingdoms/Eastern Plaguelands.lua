@@ -994,6 +994,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 11.3, 28.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/9 Plagued Swine slain
+							["provider"] = { "n", 16117 },	-- Plagued Swine
+						}),
 						i(63006, {	-- Augustus' Legguards
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1014,6 +1017,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 8.9, 66.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/10 Plaguehound Blood
+							["provider"] = { "i", 60986 },	-- Plaguehound Blood
+							["crs"] = {
+								8596,	-- Plaguehound Runt
+								8598,	-- Frenzied Plaguehound
+							},
+						}),
 						i(62943, {	-- Helm of Thoughtful Gifts
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1038,7 +1048,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27386, {	-- A Strange Historian
-					["qg"] = 11063,	-- Carlin Redpath
+					["providers"] = {
+						{ "n", 11063 },	-- Carlin Redpath
+						{ "i", 60987 },	-- Joseph's Hunting Blade
+					},
 					["sourceQuest"] = 27385,	-- "Little Pamela"
 					["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1059,6 +1072,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 27.6, 20.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/16 Stinking Skull
+							["provider"] = { "i", 61372 },	-- Stinking Skull
+							["crs"] = {
+								8524,	-- Cursed Mage
+								8523,	-- Scourge Soldier
+							},
+						}),
 						i(63014, {	-- Cloak of Hoarding
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1078,6 +1098,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30.2, 56.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- Seed planted in southeastern ziggurat
+							["provider"] = { "i", 61036 },	-- Rayne's Seeds
+							["coord"] = { 37, 48, EASTERN_PLAGUELANDS },
+						}),
+						objective(2, {	-- Seed planted in western ziggurat
+							["provider"] = { "i", 61036 },	-- Rayne's Seeds
+							["coord"] = { 33, 44, EASTERN_PLAGUELANDS },
+						}),
+						objective(3, {	-- Seed planted in northeastern ziggurat
+							["provider"] = { "i", 61036 },	-- Rayne's Seeds
+							["coord"] = { 37, 42, EASTERN_PLAGUELANDS },
+						}),
 						i(62965, {	-- Ring of New Life
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1111,7 +1143,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Annals of the Silver Hand
-							["provider"] = { "i", 65615 },	-- Annals of the Silver Hand
+							["providers"] = {
+								{ "i",  65615 },	-- Annals of the Silver Hand
+								{ "o", 207389 },	-- Annals of the Silver Hand
+							},
 						}),
 					},
 				}),
@@ -1126,12 +1161,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 					["coord"] = { 43.3, 87.2, LIGHTS_HOPE_CHAPEL },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/16 Noxious Glade Scourge slain
+							["providers"] = {
+								{ "n", 8528 },	-- Dread Weaver
+								{ "n", 8532 },	-- Diseased Flayer
+								{ "n", 8542 },	-- Death Singer
+								{ "n", 8545 },	-- Stitched Golem
+							},
+						}),
+						objective(2, {	-- 0/8 Noxious Glade Cultists slain
+							["providers"] = {
+								{ "n", 45691 },	-- Skullmage <Cult of the Damned>
+								{ "n", 45692 },	-- Noxious Assassin <Cult of the Damned>
+							},
+						}),
+					},
 				}),
 				q(27464, {	-- Argent Call: The Trial of the Crypt
 					["qg"] = 11034,	-- Lord Maxwell Tyrosus
 					["sourceQuest"] = 27463,	-- A Boyhood Dream
 					["coord"] = { 43.3, 87.2, LIGHTS_HOPE_CHAPEL },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Trial of the Crypt completed
+							["providers"] = {
+								{ "n", 45707 },	-- Lord Raymond George <Argent Dawn>
+								{ "i", 61309 },	-- Argent Scroll
+							},
+						}),
+					},
 				}),
 				q(5503, {	-- Argent Dawn Commission
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
@@ -1225,6 +1284,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27489,	-- Nobody to Blame but Myself
 					["coord"] = { 50.4, 20.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/6 Scourge Siege Engineer beaten
+							["provider"] = { "n", 17878 },	-- Scourge Siege Engineer
+						}),
+						objective(2, {	-- Discover Gidwin's location
+							["provider"] = { "n", 17878 },	-- Scourge Siege Engineer
+						}),
+						objective(3, {	-- Discover Gidwin's captor
+							["provider"] = { "n", 17878 },	-- Scourge Siege Engineer
+						}),
+					},
 				}),
 				q(27562, {	-- Beezil's Cog
 					["qg"] = 45400,	-- Fiona's Caravan
@@ -1365,6 +1435,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/10 Blades buried
+							["providers"] = {
+								{ "n", 45695 },	-- Slain Scourge Trooper
+								{ "i", 61302 },	-- Light-Touched Blades
+							},
+						}),
 						i(62984, {	-- Omarion's Gift
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1403,6 +1479,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 53.2, 54.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/8 Active Liquid Plague Agent
+							["providers"] = {
+								{ "i", 61285 },	-- Active Liquid Plague Agent
+								{ "i", 61284 },	-- Betina's Flasks
+							},
+							["crs"] = {
+								8520,	-- Plague Ravager
+								8519,	-- Blighted Surge
+							},
+						}),
+					},
 				}),
 				q(27544, {	-- Cenarion Tenacity
 					["qg"] = 45500,	-- Urk Gagbaz
@@ -1487,6 +1575,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 17.5, 27.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/20 Rotberry
+							["providers"] = {
+								{ "i",  61364 },	-- Rotberry
+								{ "o", 205559 },	-- Rotberry Bush
+							},
+							["coord"] = { 19.3, 19.3, EASTERN_PLAGUELANDS },
+						}),
+						objective(2, {	-- 0/5 Disembodied Arm
+							["providers"] = {
+								{ "i",  61365 },	-- Disembodied Arm
+								{ "o", 205560 },	-- Disembodied Arm
+							},
+							["coord"] = { 21.5, 26.2, EASTERN_PLAGUELANDS },
+						}),
+						objective(3, {	-- 0/1 Flesh Giant Foot Scrapings
+							["providers"] = {
+								{ "i",  61366 },	-- Flesh Giant Foot Scrapings
+								{ "o", 205558 },	-- Flesh Giant Foot
+							},
+							["coord"] = { 25.0, 34.5, EASTERN_PLAGUELANDS },
+						}),
 						i(63010, {	-- Flesh Giant Toe-Ring
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1565,6 +1674,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 11035,	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Death Cultist Headwear
+							["provider"] = { "i", 61280 },	-- Death Cultist Headwear
+							["crs"] = {
+								8551,	-- Dark Summoner <Cult of the Damned>
+								8548,	-- Vile Tutor <Cult of the Damned>
+							},
+						}),
+						objective(2, {	-- 0/1 Death Cultist Robes
+							["provider"] = { "i", 61281 },	-- Death Cultist Robes
+							["crs"] = {
+								8551,	-- Dark Summoner <Cult of the Damned>
+								8548,	-- Vile Tutor <Cult of the Damned>
+							},
+						}),
+					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9132, {	-- Dark Iron Scraps
 					["qg"] = 16112,	-- Korfax, Champion of the Light
@@ -1946,6 +2071,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.7, 53.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/8 Plague Puffer
+							["providers"] = {
+								{ "i", 61292 },	-- Plague Puffer
+								{ "n", 45650 },	-- Plague Puffer
+							},
+						}),
+						objective(2, {	-- 0/8 Infectis Incher
+							["providers"] = {
+								{ "i", 61293 },	-- Infectis Incher
+								{ "n", 45655 },	-- Infectis Incher
+							},
+						}),
+						objective(3, {	-- 0/8 Infectis Scuttler
+							["providers"] = {
+								{ "i", 61294 },	-- Infectis Scuttler
+								{ "n", 45657 },	-- Infectis Scuttler
+							},
+						}),
 						i(62974, {	-- Infectis Scuttler Helm
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1957,21 +2100,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(27762, {	-- Fuselight, Ho!
-					["qg"] = 48704,	-- Gek Nozzlerocket
-					["sourceQuests"] = {
-						28579,	-- Hero's Call: Badlands!
-						28580,	-- Warchief's Command: Badlands!
-					},
-					["coord"] = { 73.7, 53.0, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
-					["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
-				}),
 				q(27456, {	-- Gathering Some Grub(s)
 					["qg"] = 16134,	-- Rimblat Earthshatter
 					["coord"] = { 73.7, 51.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/15 Slab of Carrion Worm Meat
+							["provider"] = { "i", 13853 },	-- Slab of Carrion Worm Meat
+							["crs"] = {
+								8605,	-- Carrion Devourer
+								8603,	-- Carrion Grub
+							},
+						}),
 						i(62981, {	-- Grubby Gun
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2005,6 +2145,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 27.6, 21.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Find Gidwin Goldbraids
+							["provider"] = { "n", 45730 },	-- Gidwin Goldbraids
+							["coord"] = { 28.4, 25.8, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				q(27556, {	-- Gidwin's Weapon Oil
 					["qg"] = 45400,	-- Fiona's Caravan
@@ -2029,6 +2175,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 4.1, 36.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/10 Banshee's Bells
+							["providers"] = {
+								{ "i",  60984 },	-- Banshee's Bells
+								{ "o", 205423 },	-- Banshee's Bells
+							},
+							["coord"] = { 4.8, 48.0, EASTERN_PLAGUELANDS },
+						}),
 						i(62938, {	-- Giddy's Old Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2051,6 +2204,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27524,	-- Blind Fury
 					["coord"] = { 27.6, 21.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Omasum Blighthoof slain
+							["provider"] = { "n", 45867 },	-- Omasum Blighthoof
+							["coord"] = { 25.2, 20.0, EASTERN_PLAGUELANDS },
+						}),
+						objective(2, {	-- 0/1 Karthis Darkrune slain
+							["provider"] = { "n", 45868 },	-- Karthis Darkrune
+							["coord"] = { 29.6, 19.8, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				q(6024, {	-- Hameya's Plea
 					["providers"] = {
@@ -2199,6 +2362,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27432,	-- Zaeldarr the Outcast
 					["coord"] = { 52.7, 51.3, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/3 Mossflayer Rogue slain
+							["provider"] = { "n", 45579 },	-- Mossflayer Rogue
+						}),
+					},
 				}),
 				q(27392, {	-- I'm Not Supposed to Tell You This
 					["qg"] = 10926,	-- Pamela Redpath
@@ -2206,6 +2374,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 32.4, 83.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Joseph's Hunting Blade
+							["provider"] = { "i", 60987 },	-- Joseph's Hunting Blade
+							["coord"] = { 40.0, 83.6, EASTERN_PLAGUELANDS },
+							["cr"] = 45450,	-- The Lone Hunter
+						}),
 						i(62950, {	-- Joseph's Spare Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2222,6 +2395,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27487,	-- Ix'lar the Underlord
 					["coord"] = { 61.5, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Gidwin's Prayer Book
+							["providers"] = {
+								{ "i",  61318 },	-- Gidwin's Prayer Book
+								{ "o", 205537 },	-- Open Prayer Book
+							},
+							["coord"] = { 65.5, 24.5, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				q(27482, {	-- Into the Flames
 					["qg"] = 45574,	-- Vex'tul
@@ -2229,6 +2411,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.6, 43.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- Warlord Thresh'jin's Body burned
+							["provider"] = { "i", 61316 },	-- Body of Warlord Thresh'jin
+							["coord"] = { 67, 9, EASTERN_PLAGUELANDS },
+						}),
 						i(62991, {	-- Strength's Supremacy
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2284,6 +2470,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.5, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Ix'lar the Underlord slain
+							["provider"] = { "n", 45744 },	-- Ix'lar the Underlord
+						}),
+						objective(2, {	-- 0/1 Ix'lar's minion slain
+							["providers"] = {
+								{ "n", 8527 },	-- Scourge Guard
+								{ "n", 8544 },	-- Gangled Golem
+								{ "n", 45743 },	-- Nerubian Sycophant
+							},
+						}),
 						i(62995, {	-- Underlord's Mandible
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2299,7 +2495,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27527, {	-- Journey's End
-					["qg"] = 45730,	-- Tarenar Sunstrike
+					["providers"] = {
+						{ "n", 45730 },	-- Gidwin Goldbraids
+						{ "i", 61379 },	-- Gidwin's Hearthstone
+					},
 					["sourceQuest"] = 27526,	-- Gidwin's Fate Revealed
 					["coord"] = { 28.4, 25.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -2327,6 +2526,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.2, 54.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- Disturb Mereldar Plague Cauldron
+							["providers"] = {
+								{ "i",  61283 },	-- Death Cultist Disguise
+								{ "o", 205485 },	-- Mereldar Plague Cauldron
+							},
+							["coord"] = { 62.5, 76.6, EASTERN_PLAGUELANDS },
+						}),
 						i(62977, {	-- Light's Shield
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2355,6 +2561,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27367,	-- Gidwin Goldbraids
 					["coord"] = { 4.1, 36.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/8 Crypt Bile
+							["provider"] = { "i", 60983 },	-- Crypt Bile
+							["crs"] = {
+								8557,	-- Crypt Horror
+								8558,	-- Crypt Slayer
+								8555,	-- Crypt Stalker
+								8556,	-- Crypt Walker
+							},
+						}),
+					},
 				}),
 				q(27620, {	-- Like Rats
 					["qg"] = 16116,	-- Archmage Angela Dosantos
@@ -2365,6 +2582,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 76.0, 75.3, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Crusader Lord Valdelmar slain
+							["provider"] = { "n", 46096 },	-- Crusader Lord Valdelmar
+							["coord"] = { 82.0, 79.2, EASTERN_PLAGUELANDS },
+						}),
 						i(62998, {	-- Barthalomew's Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2507,6 +2728,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27488,	-- Impatience
 					["coord"] = { 61.5, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Ride Fiona's Caravan to Northpass Tower
+							["provider"] = { "n", 45400 },	-- Fiona's Caravan
+						}),
+					},
 				}),
 				q(27373, {	-- Onward, to Light's Hope Chapel
 					["qg"] = 45417,	-- Fiona
@@ -2516,6 +2742,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 9.0, 66.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Ride Fiona's Caravan
+							["provider"] = { "n", 45400 },	-- Fiona's Caravan
+						}),
+					},
 				}),
 				q(27481, {	-- Out of the Ziggurat
 					["qg"] = 45574,	-- Vex'tul
@@ -2525,6 +2756,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 60.6, 43.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1  Body of Warlord Thresh'jin
+							["provider"] = { "i", 61315 },	-- Body of Warlord Thresh'jin
+							["coord"] = { 66.6, 10.0, EASTERN_PLAGUELANDS },
+							["cr"] = 10822,	-- Warlord Thresh'jin
+						}),
+					},
 				}),
 				q(5149, {	-- Pamela's Doll
 					["qg"] = 10926,	-- Pamela Redpath
@@ -2584,6 +2822,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27544,	-- Cenarion Tenacity
 					["coord"] = { 30.2, 56.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/3 Plague Disseminator destroyed
+							["providers"] = {
+								{ "n", 45475 },	-- Plague Disseminator
+								{ "i", 61038 },	-- Overcharged Mote
+								{ "i", 61037 },	-- Plague Disseminator Control Rune
+							},
+							["crs"] = {
+								8550,	-- Shadowmage <Cult of the Damned>
+								8546,	-- Dark Adept <Cult of the Damned>
+							},
+						}),
+					},
 				}),
 				q(5941, {	-- Return to Chromie
 					["providers"] = {
@@ -2615,6 +2866,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45736,	-- Deacon Andaal
 					["coord"] = { 61.0, 44.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/30 Mossflayer Eye
+							["provider"] = { "i", 61313 },	-- Mossflayer Eye
+							["crs"] = {
+								12261,	-- Infected Mossflayer
+								8562,	-- Mossflayer Cannibal
+								8560,	-- Mossflayer Scout
+								8561,	-- Mossflayer Shadowhunter
+								10822,	-- Warlord Thresh'jin
+							},
+						}),
+					},
 				}),
 				q(27561, {	-- Rimblat's Stone
 					["qg"] = 45400,	-- Fiona's Caravan
@@ -2629,6 +2892,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/13 Plaguebat slain
+							["providers"] = {
+								{ "n", 8600 },	-- Plaguebat
+								{ "n", 8601 },	-- Noxious Plaguebat
+								{ "n", 8602 },	-- Monstrous Plaguebat
+							},
+						}),
 						i(62947, {	-- Treads of Youth
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2696,22 +2966,79 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27462,	-- To Take the Barracks
 					["coord"] = { 75.3, 76.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Crimson Boar
+							["providers"] = {
+								{ "i",  61959 },	-- Crimson Boar
+								{ "o", 205878 },	-- Battered Chest
+							},
+							["coord"] = { 74.7, 76.8, EASTERN_PLAGUELANDS },
+						}),
+						objective(2, {	-- 0/1 Lihanna's Strand
+							["providers"] = {
+								{ "i",  61960 },	-- Lihanna's Strand
+								{ "o", 205879 },	-- Battered Chest
+							},
+							["coord"] = { 74.3, 78.2, EASTERN_PLAGUELANDS },
+						}),
+						objective(3, {	-- 0/1 Shroud of Uther
+							["providers"] = {
+								{ "i",  61961 },	-- Shroud of Uther
+								{ "o", 205880 },	-- Battered Chest
+							},
+							["coord"] = { 75.2, 79.0, EASTERN_PLAGUELANDS },
+						}),
+						objective(4, {	-- 0/1 Gavinrad's Sigil
+							["providers"] = {
+								{ "i",  61962 },	-- Gavinrad's Sigil
+								{ "o", 205881 },	-- Battered Chest
+							},
+							["coord"] = { 75.8, 77.5, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				q(27528, {	-- Scourged Mass
 					["qg"] = 45831,	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/8 Overstuffed Golem corpse burned
+							["providers"] = {
+								{ "n", 45851 },	-- Overstuffed Golem
+								{ "i", 61369 },	-- Crusader's Torch
+							},
+						}),
+					},
 				}),
 				q(27458, {	-- Smokey and the Bandage
 					["qg"] = 11033,	-- Smokey LaRue
 					["coord"] = { 74.9, 53.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Browman's Wrappings
+							["provider"] = { "i", 62028 },	-- Browman's Wrappings
+							["coord"] = { 71.8, 45.6, EASTERN_PLAGUELANDS },
+							["cr"] = 46167,	-- Stephen Browman
+						}),
+					},
 				}),
 				q(27460, {	-- Soft Landing
 					["qg"] = 16116,	-- Archmage Angela Dosantos
 					["sourceQuest"] = 27459,	-- The Brotherhood of Light
 					["coord"] = { 72.6, 74.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Tyr's Hand Scarlet Crusader slain
+							["providers"] = {
+								{ "n", 9451 },	-- Scarlet Archmage
+								{ "n", 9449 },	-- Scarlet Cleric
+								{ "n", 9450 },	-- Scarlet Curate
+								{ "n", 9452 },	-- Scarlet Enchanter
+								{ "n", 9448 },	-- Scarlet Praetorian
+								{ "n", 9447 },	-- Scarlet Warder
+							},
+						}),
+					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
@@ -2904,6 +3231,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 76.7, 73.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Rohan the Assassin slain
+							["provider"] = { "n", 46095 },	-- Rohan the Assassin <The Scarlet Crusade>
+							["coord"] = { 77.6, 72.8, EASTERN_PLAGUELANDS },
+						}),
 						i(62968, {	-- Dawnbringer Legguards
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2947,7 +3278,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27551, {	-- The Baroness' Missive
-					["provider"] = { "i", 61378 },	-- The Baroness' Missive
+					["providers"] = {
+						{ "i", 61378 },	-- The Baroness' Missive
+						{ "i", 61377 },	-- The Baroness' Missive
+					},
 					["sourceQuest"] = 27525,	-- Guardians of Stratholme
 					["coord"] = { 29.4, 19.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -3004,7 +3338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27459, {	-- The Brotherhood of Light
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered
-					["sourceQuests"] = { 27463 },	-- A Boyhood Dream
+					["sourceQuest"] = 27463,	-- A Boyhood Dream
 					["coord"] = { 41.0, 87.9, LIGHTS_HOPE_CHAPEL },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
@@ -3045,6 +3379,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.3, 76.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Scarlet Commander Marjhan slain
+							["provider"] = { "n", 46092 },	-- Scarlet Commander Marjhan <The Scarlet Crusade>
+							["coord"] = { 75.0, 78.0, EASTERN_PLAGUELANDS },
+						}),
 						i(62971, {	-- Marjhan's Stand
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -3066,6 +3404,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 27.6, 20.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/3 Corpsebeast destroyed
+							["providers"] = {
+								{ "n", 45886 },	-- Corpsebeast (Giant)
+								{ "i", 61375 },	-- Argent Lightwell Charm
+							},
+						}),
 						i(63017, {	-- Legwraps of the Slain
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -3107,6 +3451,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.5, 43.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
+						objective(1, {	-- 0/1 Borelgore slain
+							["provider"] = { "n", 11896 },	-- Borelgore
+							["coord"] = { 58, 29, EASTERN_PLAGUELANDS },
+						}),
 						i(62987, {	-- Eastwall Gauntlets
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -3171,6 +3519,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27462,	-- To Take the Barracks
 					["coord"] = { 75.3, 76.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Huntsman Leopold slain
+							["provider"] = { "n", 46094 },	-- Huntsman Leopold <The Scarlet Crusade>
+							["coord"] = { 74.6, 77.6, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9211, {	-- The Ice Guard
 					["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
@@ -3193,7 +3547,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27532, {	-- The Plaguewood Tower
-					["qg"] = 45451,	-- Argus Highbeacon
+					["providers"] = {
+						{ "n", 45451 },	-- Argus Highbeacon
+						{ "i", 61362 },	-- Highbeacon's Parcel
+					},
 					["sourceQuest"] = 27522,	-- Beat it Out of Them [Discord, 2023-8-2]
 					["coord"] = { 28.3, 25.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -3282,12 +3639,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 34.8, 69.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Ride Fiona's Caravan
+							["provider"] = { "n", 45400 },	-- Fiona's Caravan
+						}),
+					},
 				}),
 				q(27615, {	-- The Wrathcaster
 					["qg"] = 16112,	-- Crusade Commander Korfax
 					["sourceQuest"] = 27462,	-- To Take the Barracks
 					["coord"] = { 75.3, 76.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/1 Mataus the Wrathcaster slain
+							["provider"] = { "n", 46093 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
+							["coord"] = { 74.8, 78.4, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9141, {	-- They Call Me "The Rooster"
 					["qg"] = 16212,	-- Dispatch Commander Metz <The Argent Dawn>
@@ -3390,6 +3758,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27373,	-- Onward, to Light's Hope Chapel
 					["coord"] = { 35.2, 68.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Find a traveling companion
+							["provider"] = { "n", 45451 },	-- Argus Highbeacon <The Argent Crusade>
+							["coord"] = { 35.6, 69.2, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				q(6042, {	-- Un-Life's Little Annoyances
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
@@ -3422,7 +3796,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(27385, {	-- Uncle Carlin
-					["qg"] = 10926,	-- Pamela Redpath
+					["providers"] = {
+						{ "n", 10926 },	-- Pamela Redpath
+						{ "i", 60987 },	-- Joseph's Hunting Blade
+					},
 					["sourceQuests"] = {
 						27392,	-- I'm Not Supposed to Tell You This
 						27384,	-- Pamela's Doll
@@ -3446,6 +3823,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27461,	-- To Take the Abbey
 					["coord"] = { 76.7, 73.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- Open portal within Hall of Arms
+							["provider"] = { "o", 205876 },	-- Argent Portal
+							["coord"] = { 78.6, 72.9, EASTERN_PLAGUELANDS },
+						}),
+						objective(2, {	-- Open portal wi thin Library Wing
+							["provider"] = { "o", 205877 },	-- Argent Portal
+							["coord"] = { 77, 71, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				q(5181, {	-- Villains of Darrowshire
 					["qg"] = 11063,	-- Carlin Redpath
@@ -3519,6 +3906,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27370,	-- Tarenar Sunstrike
 					["coord"] = { 18.3, 74.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/5 Death's Step Miscreation slain
+							["provider"] = { "n", 45444 },	-- Death's Step Miscreation
+							["coord"] = { 17.2, 79.4, EASTERN_PLAGUELANDS },
+						}),
+					},
 				}),
 				q(6041, {	-- When Smokey Sings, I Get Violent
 					["qg"] = 11033,	-- Smokey LaRue
@@ -3553,6 +3946,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 45826,	-- Kirkian Dawnshield
 					["coord"] = { 49.9, 19.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						objective(1, {	-- 0/9 Quel'lithien Wretched slain
+							["providers"] = {
+								{ "n", 8565 },	-- Wretched Pathstrider
+								{ "n", 8564 },	-- Wretched Ranger
+								{ "n", 8563 },	-- Wretched Woodsman
+							},
+						}),
+					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9165, {	-- Writ of Safe Passage
 					["qg"] = 16226,	-- Guard Didier <Brotherhood of the Light>
@@ -4020,7 +4422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				o(403536, {	-- The Road Ahead
 					["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
-					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["sourceQuests"] = 76250,	-- Spectral Essence
 					["coord"] = { 55.0, 64.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_10_2_5 },
 					["groups"] = {
@@ -4029,7 +4431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				o(403534, {	-- Trampled Doll
 					["description"] = "Located by a meat wagon in Darrowshire.",
-					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["sourceQuests"] = 76250,	-- Spectral Essence
 					["coord"] = { 35.7, 83.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_10_2_5 },
 					["groups"] = {

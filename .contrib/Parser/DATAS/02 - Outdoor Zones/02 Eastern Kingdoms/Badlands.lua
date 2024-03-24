@@ -664,6 +664,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(27762, {	-- Fuselight, Ho!
+					["qg"] = 48704,	-- Gek Nozzlerocket
+					["sourceQuests"] = {
+						28579,	-- Hero's Call: Badlands!
+						28580,	-- Warchief's Command: Badlands!
+					},
+					["coord"] = { 73.7, 53.0, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
+				}),
 				q(27893, {	-- Gargal, the Behemoth
 					["qgs"] = { 47013, 47022 },	-- Gargal
 					["sourceQuest"] = 27890,	-- The Bad Dogs
