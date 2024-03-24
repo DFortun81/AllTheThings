@@ -149,6 +149,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/4 Wounded Coldridge Mountaineers Aided
+									["providers"] = {
+										{ "n", 37080 },	-- Wounded Coldridge Mountaineer
+										{ "i", 49743 },	-- Sten's First Aid Kit
+									},
+								}),
+							},
 						}),
 						q(24475, {	-- All the Other Stuff
 							["qg"] = 37087,	-- Jona Ironstock
@@ -160,9 +168,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/3 Boar Haunch
+									["provider"] = { "i", 49747 },	-- Boar Haunch
+									["cr"] = 708,	-- Small Crag Boar
+								}),
+								objective(2, {	-- 0/4 Ragged Wolf Hide
+									["provider"] = { "i", 49748 },	-- Ragged Wolf Hide
+									["crs"] = {
+										704,	-- Ragged Timber Wolf
+										705,	-- Ragged Young Wolf
+									},
+								}),
+							},
 						}),
 						q(24496, {	-- Arcane Rune
-							["qg"] = 37087,	-- Jona Ironstock
+							["providers"] = {
+								{ "n", 37087 },	-- Jona Ironstock
+								{ "i", 49759 },	-- Arcane Rune
+							},
 							-- #if AFTER MOP
 							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
 							-- #else
@@ -241,32 +265,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
 						}),
-						-- #if NOT ANYCLASSIC
-						q(5637, {	-- Desperate Prayer
-							["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-							["coord"] = { 47.2, 52.2, DUN_MOROGH },
-							["altQuests"] = {
-								5634,	-- Desperate Prayer [Stormwind City #1]
-								5635,	-- Desperate Prayer [Elwynn Forest]
-								5636,	-- Desperate Prayer [Teldrassil]
-								5638,	-- Desperate Prayer [Stormwind City #2]
-								5639,	-- Desperate Prayer [Ironforge]
-								5640,	-- Desperate Prayer [Darnassus]
-							},
-							["timeline"] = { "removed 3.0.2" },
-							["races"] = { HUMAN, DWARF },
-							["classes"] = { PRIEST },
-							["lvl"] = 10,
-							-- #if BEFORE 3.0.2
-							["groups"] = {
-								{
-									["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
-									["rank"] = 1,
-								},
-							},
-							-- #endif
-						}),
-						-- #endif
 						q(24493, {	-- Don't Forget About Us
 							["qg"] = 37087,	-- Jona Ironstock
 							["altQuests"] = { 24492 },	-- Pack Your Bags
@@ -290,6 +288,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/5 Forgotten Dwarven Artifact
+									["providers"] = {
+										{ "i", 49749 },	-- Forgotten Dwarven Artifact
+										{ "o", 201608 },	-- Forgotten Dwarven Artifact
+									},
+									-- #if AFTER MOP
+									["coord"] = { 53.8, 27.4, COLDRIDGE_VALLEY },
+									-- #else
+									["coord"] = { 34.4, 66.4, DUN_MOROGH },
+									-- #endif
+								}),
+							},
 						}),
 						q(179, {	-- Dwarven Outfitters
 							["qg"] = 658,	-- Sten Stoutarm
@@ -403,6 +414,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
+							["groups"] = {
+								objective(2, {	-- 0/3 Practice Eviscerate
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+							},
 						}),
 						q(24474, {	-- First Things First: We're Gonna Need Some Beer
 							["qg"] = 37087,	-- Jona Ironstock
@@ -414,6 +430,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/1 Cask of Stormhammer Stout
+									["providers"] = {
+										{ "i",  49744 },	-- Cask of Stormhammer Stout
+										{ "o", 201610 },	-- Keg of Stormhammer Stout
+									},
+									-- #if AFTER MOP
+									["coord"] = { 56.3, 27.4, COLDRIDGE_VALLEY },
+									-- #else
+									["coord"] = { 34.9, 67.5, DUN_MOROGH },
+									-- #endif
+								}),
+								objective(2, {	-- 0/1 Cask of Theramore Pale Ale
+									["providers"] = {
+										{ "i",  49745 },	-- Cask of Theramore Pale Ale
+										{ "o", 201609 },	-- Keg of Theramore Pale Ale
+									},
+									-- #if AFTER MOP
+									["coord"] = { 40.0, 28.2, COLDRIDGE_VALLEY },
+									-- #else
+									["coord"] = { 31.5, 67.7, DUN_MOROGH },
+									-- #endif
+								}),
+								objective(3, {	-- 0/1 Cask of Gnomenbrau
+									["providers"] = {
+										{ "i",  49746 },	-- Cask of Gnomenbrau
+										{ "o", 201611 },	-- Keg of Gnomenbrau
+									},
+									-- #if AFTER MOP
+									["coord"] = { 68.5, 28.2, COLDRIDGE_VALLEY },
+									-- #else
+									["coord"] = { 37.0, 67.5, DUN_MOROGH },
+									-- #endif
+								}),
+							},
 						}),
 						q(24491, {	-- Follow that Gyro-Copter!
 							["qg"] = 6782,	-- Hands Springsprocket
@@ -437,6 +488,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/3 Rockjaw Goon slain
+									["provider"] = { "n", 37073 },	-- Rockjaw Goon
+								}),
 								i(66930, {	-- Boots of the Blameless
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -503,6 +557,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/6 Rockjaw Invader slain
+									["provider"] = { "n", 37070 },	-- Rockjaw Invader
+								}),
 								i(66922, {	-- Perimeter Britches
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -531,6 +588,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/1 Grik'nir the Cold slain
+									["provider"] = { "n", 808 },	-- Grik'nir the Cold
+								}),
+								objective(2, {	-- 0/1 Wayward Fire Elemental slain
+									["provider"] = { "n", 37112 },	-- Wayward Fire Elemental
+								}),
+								objective(3, {	-- 0/3 Frostmane Novice slain
+									["provider"] = { "n", 946 },	-- Frostmane Novice <Grik'nir's Servant>
+								}),
+								objective(4, {	-- 0/6 Frostmane Blade slain
+									["provider"] = { "n", 37507 },	-- Frostmane Blade <Grik'nir's Servant>
+								}),
 								i(57534, {	-- Grik'nir's Chilly Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -558,6 +627,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
+							["groups"] = {
+								objective(2, {	-- Practice Tiger Palm
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+							},
 						}),
 						q(24473, {	-- Lockdown in Anvilmar
 							["qg"] = 37081,	-- Joren Ironstock
@@ -584,6 +658,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/5 Priceless Rockjaw Artifact
+									["provider"] = { "i", 49751 },	-- Priceless Rockjaw Artifact
+									["cr"] = 37105,	-- Rockjaw Scavenger
+								}),
 								i(57530, {	-- Explorer's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -631,6 +709,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/1 Coldridge Beer Flagon
+									["providers"] = {
+										{ "i",  49754 },	-- Coldridge Beer Flagon
+										{ "o", 201706 },	-- Beer Barrel
+									},
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 62.5, 23.8, COLDRIDGE_VALLEY },
+										{ 60.5, 16.5, COLDRIDGE_VALLEY },
+										-- #else
+										{ 35.5, 65.1, DUN_MOROGH },
+										-- #endif
+									},
+								}),
+								objective(2, {	-- 0/1 Ragged Wolf-Hide Cloak
+									["providers"] = {
+										{ "i",  49755 },	-- Ragged Wolf-Hide Cloak
+										{ "o", 201705 },	-- Wolf-Hide Cloaks
+									},
+									-- #if AFTER MOP
+									["coord"] = { 62.5, 23.8, COLDRIDGE_VALLEY },
+									-- #else
+									["coord"] = { 35.8, 64.6, DUN_MOROGH },
+									-- #endif
+								}),
+								objective(3, {	-- 0/1 Leftover Boar Meat
+									["providers"] = {
+										{ "i",  49756 },	-- Leftover Boar Meat
+										{ "o", 201704 },	-- Leftover Boar Meat
+									},
+									-- #if AFTER MOP
+									["coord"] = { 62.5, 23.8, COLDRIDGE_VALLEY },
+									-- #else
+									["coord"] = { 35.5, 66.1, DUN_MOROGH },
+									-- #endif
+								}),
 								i(57540, {	-- Coldridge Mountaineer's Pouch
 									["timeline"] = { "added 4.0.3.13277" },
 									["groups"] = {
@@ -644,32 +758,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						-- #if NOT ANYCLASSIC
-						q(5630, {	-- Returning Home [Dun Morogh]
-							["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-							["coord"] = { 47.2, 52.2, DUN_MOROGH },
-							["altQuests"] = {
-								5627,	-- Returning Home [Darnassus]
-								5628,	-- Returning Home [Elwynn Forest]
-								5629,	-- Returning Home [Teldrassil]
-								5631,	-- Returning Home [Stormwind City]
-								5632,	-- Returning Home [Stormwind City]
-								5633,	-- Returning Home [Ironforge]
-							},
-							["timeline"] = { "removed 3.0.2" },
-							["classes"] = { PRIEST },
-							["races"] = { NIGHTELF },
-							["lvl"] = 10,
-							-- #if BEFORE 3.0.2
-							["groups"] = {
-								{
-									["recipeID"] = 10797,	-- Starshards (Rank 1)
-									["rank"] = 1,
-								},
-							},
-							-- #endif
-						}),
-						-- #endif
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77657, {	-- Relics of the Light
 							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
@@ -903,6 +991,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
+							["groups"] = {
+								objective(2, {	-- Use Seal of Command and Hit a Training Dummy
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+							},
 						}),
 						-- #if BEFORE CATA
 						q(218, {	-- The Stolen Journal
@@ -939,7 +1032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								objective(1, {	-- 0/14 Frostmane Troll Whelp
+								objective(1, {	-- 0/14 (CATA+: 10) Frostmane Troll Whelp
 									["provider"] = { "n", 706 },	-- Frostmane Troll Whelp
 								}),
 								i(2047),	-- Anvilmar Hand Axe
@@ -1020,6 +1113,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- Soothsayer Shi'kala Scouted
+									["provider"] = { "n", 37108 },	-- Soothsayer Shi'kala
+								}),
+								objective(2, {	-- Soothsayer Rikkari Scouted
+									["provider"] = { "n", 37173 },	-- Soothsayer Rikkari
+								}),
+								objective(3, {	-- Soothsayer Mirim'koa Scouted
+									["provider"] = { "n", 37174 },	-- Soothsayer Mirim'koa
+								}),
+							},
 						}),
 						q(24487, {	-- Whitebeard Needs Ye
 							["qg"] = 37087,	-- Jona Ironstock
@@ -1045,6 +1149,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
+							["groups"] = {
+								objective(2, {	-- 0/5 Practice Shadow Word: Pain
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+							},
 						}),
 					}),
 					-- #if SEASON_OF_DISCOVERY
@@ -1997,7 +2106,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-
+				-- #if NOT ANYCLASSIC
+				q(5637, {	-- Desperate Prayer
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer [Stormwind City #1]
+						5635,	-- Desperate Prayer [Elwynn Forest]
+						5636,	-- Desperate Prayer [Teldrassil]
+						5638,	-- Desperate Prayer [Stormwind City #2]
+						5639,	-- Desperate Prayer [Ironforge]
+						5640,	-- Desperate Prayer [Darnassus]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				q(25840, {	-- Eliminate the Resistance
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
@@ -2506,6 +2640,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(10547),	-- Camping Knife
 					},
 				}),
+				-- #if NOT ANYCLASSIC
+				q(5630, {	-- Returning Home [Dun Morogh]
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["altQuests"] = {
+						5627,	-- Returning Home [Darnassus]
+						5628,	-- Returning Home [Elwynn Forest]
+						5629,	-- Returning Home [Teldrassil]
+						5631,	-- Returning Home [Stormwind City]
+						5632,	-- Returning Home [Stormwind City]
+						5633,	-- Returning Home [Ironforge]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 10797,	-- Starshards (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
+				-- #endif
 				-- #if AFTER 4.0.3
 				q(6391, {	-- Ride to Ironforge
 					["providers"] = {
