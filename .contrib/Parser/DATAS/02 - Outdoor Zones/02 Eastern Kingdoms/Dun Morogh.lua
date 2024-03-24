@@ -588,6 +588,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								-- #if AFTER LEGION
+								-- CRIEVE NOTE: Not sure when this changed.
 								objective(1, {	-- 0/1 Grik'nir the Cold slain
 									["provider"] = { "n", 808 },	-- Grik'nir the Cold
 								}),
@@ -600,6 +602,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(4, {	-- 0/6 Frostmane Blade slain
 									["provider"] = { "n", 37507 },	-- Frostmane Blade <Grik'nir's Servant>
 								}),
+								-- #else
+								objective(1, {	-- 0/1 Grik'nir the Cold slain
+									["provider"] = { "n", 808 },	-- Grik'nir the Cold
+								}),
+								objective(2, {	-- 0/10 Grik'nir's Servant slain
+									["providers"] = {
+										{ "n", 946 },	-- Frostmane Novice <Grik'nir's Servant>
+										{ "n", 37507 },	-- Frostmane Blade <Grik'nir's Servant>
+									},
+								}),
+								objective(3, {	-- 0/1 Wayward Fire Elemental slain
+									["provider"] = { "n", 37112 },	-- Wayward Fire Elemental
+								}),
+								-- #endif
 								i(57534, {	-- Grik'nir's Chilly Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -704,7 +720,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 69.8, 43.9, COLDRIDGE_VALLEY },
 							-- #else
-							["coord"] = { 37.4, 70.6, DUN_MOROGH },
+							["coord"] = { 30.39, 72.14, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
@@ -719,7 +735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ 62.5, 23.8, COLDRIDGE_VALLEY },
 										{ 60.5, 16.5, COLDRIDGE_VALLEY },
 										-- #else
-										{ 35.5, 65.1, DUN_MOROGH },
+										{ 28.47, 66.75, DUN_MOROGH },
 										-- #endif
 									},
 								}),
@@ -731,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									-- #if AFTER MOP
 									["coord"] = { 62.5, 23.8, COLDRIDGE_VALLEY },
 									-- #else
-									["coord"] = { 35.8, 64.6, DUN_MOROGH },
+									["coord"] = { 28.78, 66.10, DUN_MOROGH },
 									-- #endif
 								}),
 								objective(3, {	-- 0/1 Leftover Boar Meat
@@ -742,7 +758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									-- #if AFTER MOP
 									["coord"] = { 62.5, 23.8, COLDRIDGE_VALLEY },
 									-- #else
-									["coord"] = { 35.5, 66.1, DUN_MOROGH },
+									["coord"] = { 28.38, 67.62, DUN_MOROGH },
 									-- #endif
 								}),
 								i(57540, {	-- Coldridge Mountaineer's Pouch
