@@ -2347,11 +2347,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									}),
 									i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going
 										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
-										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+										["description"] = "This is intended to be purchased on a 'Main' Venthyr character for personal use, or to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 									}),
 									i(181443, {	-- The Party Herald's Party hat
 										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
 										["questID"] = 61459,
+										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 									}),
 								},
 							}),
