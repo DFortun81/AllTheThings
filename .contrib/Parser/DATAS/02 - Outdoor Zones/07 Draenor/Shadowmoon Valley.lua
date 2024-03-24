@@ -1431,13 +1431,6 @@ root(ROOTS.Zones, {
 							i(118734),	-- Sneevel's Loincloth
 						},
 					}),
-					n(82366, {	-- Swamplighter Hive
-						["questID"] = 35580,
-						["coord"] = { 55.3, 74.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
-							i(117550),	-- Angry Beehive Toy (TOY!)
-						},
-					}),
 					n(75482, {	-- Veloss
 						["questID"] = 33640,
 						["coord"] = { 21.6, 20.8, DRAENOR_SHADOWMOON_VALLEY },
@@ -1751,6 +1744,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.8, 7.2, DRAENOR_SHADOWMOON_VALLEY },
 						["g"] = {
 							currency(824),	-- Garrison Resources
+						},
+					}),
+					o(232592, {	-- Swamplighter Hive
+						["questID"] = 35580,
+						["coord"] = { 55.3, 74.8, DRAENOR_SHADOWMOON_VALLEY },
+						["g"] = {
+							i(117550),	-- Angry Beehive Toy (TOY!)
 						},
 					}),
 					o(230664, {	-- The Crystal Blade of Torvath

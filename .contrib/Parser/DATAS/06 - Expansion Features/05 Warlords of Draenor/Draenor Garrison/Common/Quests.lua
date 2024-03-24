@@ -2999,6 +2999,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["coord"] = { 41.1, 49.4, LUNARFALL },
 				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					objective(1, {	-- 0/15 Drudgeboat Salvage
+						["providers"] = {
+							{ "i", 112696 },	-- Drudgeboat Salvage (QI!)
+							{ "o", 231851 },	-- Drudgeboat Salvage
+							{ "o", 231826 },	-- Drudgeboat Salvage
+						},
+						["crs"] = {
+							79205,	-- Pale Devourer
+							81408,	-- Shadowmoon Darter
+						},
+					}),
+				},
 			}),
 			q(36522, {	-- Solidarity in Death
 				["provider"] = { "n", 85777 },	-- Ahm
