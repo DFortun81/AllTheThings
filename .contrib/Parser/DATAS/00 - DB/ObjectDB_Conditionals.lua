@@ -25,6 +25,12 @@ ObjectDB[176210] = {
 		en = "Command Tent",
 	},
 };
+ObjectDB[204019] = {
+	readable = "Makeshift Cage",
+	text = {
+		en = "Makeshift Cage",
+	},
+};
 ObjectDB[204966] = {
 	readable = "Scourge Bone Animus",
 	text = {

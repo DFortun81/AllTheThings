@@ -7,7 +7,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["maps"] = {
 			29,		-- The Grizzled Den
 			31,		-- Gol'Balar Quarry
-			470,	-- Frostmane Hold
 		},
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_dunmorogh",
@@ -1315,12 +1314,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
-					133,	-- New Tinkertown
+					137,	-- Brewnall Village
+					801,	-- Chill Breeze Valley
+					135,	-- Frostmane Hold
 					5495,	-- Gnomeregan
+					211,	-- Iceflow Lake
+					133,	-- New Tinkertown
 					5178,	-- The Toxic Airfield
 				},
 				-- #endif
-				["maps"] = { NEW_TINKERTOWN_LOWER },
+				["maps"] = {
+					NEW_TINKERTOWN_LOWER,
+					470,	-- Frostmane Hold
+				},
 				["groups"] = {
 					battlepets({
 						pet(1162, {	-- Fluxfire Feline (PET!)
@@ -1370,6 +1376,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/8 Crushcog's Minions killed
+									["providers"] = {
+										{ "n", 42223 },	-- Irradiated Technician
+										{ "n", 42226 },	-- Crushcog Battle Suit
+									},
+								}),
+							},
 						}),
 						q(26265, {	-- Dealing with the Fallout
 							["qg"] = 42630,	-- Corporal Fizzwhistle
@@ -1423,6 +1437,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
+								objective(1, {	-- Razlo Crushcog defeated
+									["providers"] = {
+										{ "n", 42839 },	-- Razlo Crushcog
+										{ "i", 58253 },	-- Orbital Targeting Device
+									},
+								}),
 								i(59052, {	-- Belt of Static Equilibrium
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -1446,11 +1466,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
+								objective(1, {	-- Detonate trogg tunnel
+									["provider"] = { "o", 204042 },	-- Detonator
+									-- #if AFTER MOP
+									["coord"] = { 36.2, 43.0, 470 },
+									-- #else
+									["coord"] = { 22.2, 50.13, DUN_MOROGH },
+									-- #endif
+								}),
+								objective(2, {	-- 0/1 Boss Bruggor slain
+									["provider"] = { "n", 42773 },	-- Boss Bruggor
+									-- #if AFTER MOP
+									["coord"] = { 28.6, 62.4, 470 },
+									-- #else
+									["coord"] = { 22.09, 51.28, DUN_MOROGH },
+									-- #endif
+								}),
 								i(59046, {	-- Friction Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -1471,10 +1507,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/7 Stolen Powder Keg
+									["provider"] = { "i", 58202 },	-- Stolen Powder Keg
+									["crs"] = {
+										42221,	-- Rockjaw Bonepicker
+										42222,	-- Rockjaw Marauder
+									},
+								}),
+							},
 						}),
 						q(26423, {	-- Meet the High Tinker
 							["qg"] = 42366,	-- Kelsey Steelspark
@@ -1482,7 +1527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 38.0, 33.6, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.38, 38.50, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
@@ -1502,7 +1547,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 39.4, 28.4, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.90, 36.55, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
@@ -1521,24 +1566,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(26425, {	-- Meet the High Tinker
-							["qg"] = 42324,	-- Drill Sergeant Steamcrank
+							["qg"] = 42324,	-- Drill Sergeant Steamcrank <Warrior Trainer>
 							["sourceQuest"] = 26203,	-- The Future of Gnomeregan
 							-- #if AFTER MOP
 							["coord"] = { 40.6, 36.1, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 27.27, 39.27, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARRIOR },
 						}),
 						q(26424, {	-- Meet the High Tinker
-							["qg"] = 460,	-- Alamar Grimm
+							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["sourceQuest"] = 26202,	-- The Future of Gnomeregan
 							-- #if AFTER MOP
 							["coord"] = { 37.7, 38.0, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.25, 40.14, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
@@ -1547,11 +1592,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(41218, {	-- Meet the High Tinker
 							["qg"] = 103614,	-- Muffinus Chromebrew
 							["sourceQuest"] = 41217,	-- The Future of Gnomeregan
-							-- #if AFTER MOP
 							["coord"] = { 41.9, 31.6, NEW_TINKERTOWN },
-							-- #else
-							--["coord"] = { , DUN_MOROGH },
-							-- #endif
 							["timeline"] = { "added 7.0.1.20773" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
@@ -1562,10 +1603,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/6 Captured Demolitionist rescued
+									["providers"] = {
+										{ "n",  42645 },	-- Captured Demolitionist
+										{ "o", 204019 },	-- Makeshift Cage
+									},
+									-- #if AFTER MOP
+									["coord"] = { 26.6, 68.2, NEW_TINKERTOWN },
+									-- #else
+									["coord"] = { 25.85, 51.56, DUN_MOROGH },
+									-- #endif
+								}),
+							},
 						}),
 						q(26333, {	-- No Tanks!
 							["qg"] = 42491,	-- Hinkles Fastblast
@@ -1573,11 +1627,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 38.1, 33.6, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.45, 38.53, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
+								objective(1, {	-- 0/5 Repaired Mechano-Tanks destroyed
+									["providers"] = {
+										{ "n", 42224 },	-- Repaired Mechano-Tank
+										{ "i", 58200 },	-- Techno-Grenade
+									},
+								}),
 								i(59049, {	-- Inertial Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -1598,19 +1658,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 30.41, 45.75, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["isBreadcrumb"] = true,
 						}),
 						q(26329, {	-- One More Thing
-							["qg"] = 42708,	-- Jessup McCree
+							["providers"] = {
+								{ "n", 42708 },	-- Jessup McCree
+								{ "i", 58178 },	-- Jessup's Report
+							},
 							["sourceQuest"] = 26318,	-- Finishin' the Job
 							-- #if AFTER MOP
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.1, 50.38, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
@@ -1621,14 +1684,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 30.41, 45.75, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
-								objective(1, {	-- 0/5 Crushcog's Sentry Bot blinded
+								objective(1, {	-- 0/5 Crushcog Sentry-Bot blinded
 									["providers"] = {
-										--{ "n",  },	-- 
+										{ "n", 42291 },	-- Crushcog Sentry-Bot
 										{ "i", 58203 },	-- Paintinator
 									},
 								}),
@@ -1719,7 +1782,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 38.0, 33.5, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.38, 38.50, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
@@ -1754,8 +1817,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MONK },
 							-- #if BEFORE 7.0.3
 							["groups"] = {
+								objective(1, {	-- 0/2 Practice Tiger Palm
+									["provider"] = { "n", 44171 },	-- Training Dummy
+								}),
 								i(59042, {	-- Electro-Staff
 									-- NOTE: Item is still obtainable via quest 26197 for Mages (do not flag as unobtainable)
+									["timeline"] = { "added 4.0.3.13287" },
+								}),
+							},
+							-- #endif
+						}),
+						q(26200, {	-- The Arts of a Priest
+							["qg"] = 42323,	-- "Doc" Cogspin
+							-- #if AFTER MOP
+							["coord"] = { 39.4, 28.4, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.90, 36.55, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["races"] = { GNOME },
+							["classes"] = { PRIEST },
+							-- #if BEFORE 7.0.3
+							["groups"] = {
+								objective(1, {	-- Practice using Flash Heal
+									["provider"] = { "n", 42501 },	-- Wounded Infantry
+								}),
+								i(59040, {	-- Staff of the Force
+									-- NOTE: Item is still obtainable via quest 26199 for Priests (do not flag as unobtainable)
 									["timeline"] = { "added 4.0.3.13287" },
 								}),
 							},
@@ -1766,14 +1854,61 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 38.0, 33.5, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.38, 38.50, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
 							-- #if BEFORE 7.0.3
 							["groups"] = {
+								objective(1, {	-- 0/3 Practice using Eviscerate
+									["provider"] = { "n", 44171 },	-- Training Dummy
+								}),
 								i(59043, {	-- Death Star
+									-- NOTE: Item is still obtainable via quest 26206 for Rogues (do not flag as unobtainable)
+									["timeline"] = { "added 4.0.3.13287" },
+								}),
+							},
+							-- #endif
+						}),
+						q(26204, {	-- The Arts of a Warrior
+							["qg"] = 42324,	-- Drill Sergeant Steamcrank <Warrior Trainer>
+							-- #if AFTER MOP
+							["coord"] = { 40.6, 36.1, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 27.27, 39.27, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["races"] = { GNOME },
+							["classes"] = { WARRIOR },
+							-- #if BEFORE 7.0.3
+							["groups"] = {
+								objective(1, {	-- Practice using Charge
+									["provider"] = { "n", 44171 },	-- Training Dummy
+								}),
+								i(59039, {	-- Very Light Sabre
+									-- NOTE: Item is still obtainable via quest 26203 for Warriors (do not flag as unobtainable)
+									["timeline"] = { "added 4.0.3.13287" },
+								}),
+							},
+							-- #endif
+						}),
+						q(26201, {	-- The Power of a Warlock
+							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
+							-- #if AFTER MOP
+							["coord"] = { 37.7, 38.0, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 26.25, 40.14, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["races"] = { GNOME },
+							["classes"] = { WARLOCK },
+							-- #if BEFORE 7.0.3
+							["groups"] = {
+								objective(1, {	-- 0/5 Practice using Immolate
+									["provider"] = { "n", 44171 },	-- Training Dummy
+								}),
+								i(59041, {	-- Vibro Knife
 									-- NOTE: Item is still obtainable via quest 26206 for Rogues (do not flag as unobtainable)
 									["timeline"] = { "added 4.0.3.13287" },
 								}),
@@ -1920,13 +2055,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.1.20773" },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
-							-- #if AFTER 7.0.3
 							["groups"] = {
 								i(134123, {	-- "Reliable" Boom-O-Tronic
 									["timeline"] = { "added 7.0.1.20773" },
 								}),
 							},
-							-- #endif
 						}),
 						q(27674, {	-- To the Surface
 							["qg"] = 46255,	-- Technician Braggle
@@ -1949,7 +2082,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 38.3, 33.4, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.52, 38.46, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
