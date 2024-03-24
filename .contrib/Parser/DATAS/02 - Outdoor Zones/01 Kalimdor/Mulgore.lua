@@ -19,6 +19,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
 				-- #endif
+				-- #if BEFORE MOP
+				["zone-text-areas"] = {
+					221,	-- Camp Narache
+				},
+				-- #endif
 				["groups"] = {
 					battlepets({
 						["sym"] = {{"select","speciesID",

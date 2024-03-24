@@ -24,6 +24,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Undead_Female")]],
 				-- #endif
+				-- #if BEFORE MOP
+				["zone-text-areas"] = {
+					154,	-- Deathknell
+				},
+				-- #endif
 				-- #if AFTER CATA
 				["maps"] = { 466 },	-- Night Web's Hollow
 				-- #endif

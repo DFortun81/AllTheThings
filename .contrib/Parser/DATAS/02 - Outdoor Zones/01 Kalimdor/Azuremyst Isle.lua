@@ -17,6 +17,18 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			m(AMMEN_VALE, {
 				["lore"] = "Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",
 				["icon"] = "Interface\\Icons\\Spell_Arcane_TeleportExodar",
+				-- #if BEFORE MOP
+				["zone-text-areas"] = {
+					3526,	-- Ammen Vale
+					3560,	-- Ammen Fields
+					3527,	-- Crash Site
+					3559,	-- Nestlewood Hills
+					3529,	-- Nestlewood Thicket
+					3530,	-- Shadow Ridge
+					3528,	-- Silverline Lake
+					3561,	-- The Sacred Grove
+				},
+				-- #endif
 				["groups"] = {
 					n(QUESTS, {
 						q(9798, {	-- Blood Elf Plans

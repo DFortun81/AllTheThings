@@ -16,6 +16,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			m(SUNSTRIDER_ISLE, {
 				["lore"] = "Sunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving.",
 				["icon"] = "Interface\\Icons\\Spell_Arcane_TeleportSilvermoon",
+				-- #if BEFORE MOP
+				["zone-text-areas"] = {
+					3431,	-- Sunstrider Isle
+				},
+				-- #endif
 				["groups"] = {
 					n(QUESTS, {
 						q(8336, {	-- A Fistful of Slivers

@@ -22,26 +22,6 @@ local CurrentMapID;
 local MapIDToMapName = setmetatable({}, {
 	__index = L.MAP_ID_TO_ZONE_TEXT,
 });
--- TODO: Move these to the zones themselves.
-for mapID,area in pairs({	-- MapID to AreaID List
-	[465] = { 154 },	-- Deathknell
-	[425] = { 9, 59, 24, 34 },	-- Northshire Valley, Northshire Vineyards, Northshire Abbey, Echo Ridge Mine
-	[462] = { 221 },	-- Camp Narache
-	[467] = { 3431 },	-- Sunstrider Isle
-	[468] = { 3526, 3527, 3560, 3528, 3559, 3529, 3530, 3561 },	-- Ammen Vale, Crash Site, Ammen Fields, Silverline Lake, Nestlewood Hills, Nestlewood Thicket, Shadow Ridge, The Sacred Grove
-	[348] = { 4095 },	-- Magisters' Terrace
-}) do
-	local info = C_Map_GetAreaInfo(area[1]);
-	if info then
-		MapIDToMapName[mapID] = info;
-		if #area > 1 then
-			for i=2,#area,1 do
-				local info = C_Map_GetAreaInfo(area[i]);
-				if info then L.ALT_ZONE_TEXT_TO_MAP_ID[info] = mapID; end
-			end
-		end
-	end
-end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
 	local remap = app.MapRemapping[originalMapID];

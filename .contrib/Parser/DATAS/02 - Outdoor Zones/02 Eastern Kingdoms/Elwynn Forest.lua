@@ -22,6 +22,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
 				-- #endif
+				-- #if BEFORE MOP
+				["zone-text-areas"] = {
+					9,	-- Northshire Valley
+					59,	-- Northshire Vineyards
+					24,	-- Northshire Abbey
+					34,	-- Echo Ridge Mine
+				},
+				-- #endif
 				["groups"] = {
 					n(QUESTS, {
 						q(783, {	-- A Threat Within
