@@ -43,7 +43,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(19513),		-- Battle Mender: Dragonflight Season 4
+				ach(19513, {	-- Battle Mender: Dragonflight Season 4
+					["classes"] = HEALERS,
+				}),
 				ach(19500, {	-- Legend: Dragonflight Season 4
 					i(211869),	-- Draconic Legend's Pennant (TOY!)
 				}),
