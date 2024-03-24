@@ -22,6 +22,7 @@ local CurrentMapID;
 local MapIDToMapName = setmetatable({}, {
 	__index = L.MAP_ID_TO_ZONE_TEXT,
 });
+-- TODO: Move these to the zones themselves.
 for mapID,area in pairs({	-- MapID to AreaID List
 	[465] = { 154 },	-- Deathknell
 	[425] = { 9, 59, 24, 34 },	-- Northshire Valley, Northshire Vineyards, Northshire Abbey, Echo Ridge Mine
@@ -33,7 +34,6 @@ for mapID,area in pairs({	-- MapID to AreaID List
 	local info = C_Map_GetAreaInfo(area[1]);
 	if info then
 		MapIDToMapName[mapID] = info;
-		L.ZONE_TEXT_TO_MAP_ID[info] = mapID;
 		if #area > 1 then
 			for i=2,#area,1 do
 				local info = C_Map_GetAreaInfo(area[i]);

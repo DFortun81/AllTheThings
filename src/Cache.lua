@@ -281,7 +281,7 @@ local function zoneTextAreasRunner(group, value)
 		CacheField(group, "mapID", mapID);
 	end
 	
-	-- Use the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
+	-- Use the localizer to force the minilist to display this as if it was a map file.
 	local name = C_Map_GetAreaInfo(value[1]);
 	if name then app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name; end
 	
