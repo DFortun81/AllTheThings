@@ -8,7 +8,9 @@ local THOMAS_YANCE_GROUPS = {
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(251, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
+		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2367,	-- Old Hillsbrad Foothills
+		-- #endif
 		["sins"] = {
 			"Caverns of Time: Old Hillsbrad Foothills",
 			"The Escape from Durnholde",
