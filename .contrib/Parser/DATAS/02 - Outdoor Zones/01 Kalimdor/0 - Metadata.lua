@@ -7,6 +7,7 @@ root(ROOTS.Zones, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_kalimdor_01",
 		-- #endif
+		["zone-text-continent"] = true,
 		-- #if ANYCLASSIC
 		["maps"] = { 1464 },
 		-- #endif

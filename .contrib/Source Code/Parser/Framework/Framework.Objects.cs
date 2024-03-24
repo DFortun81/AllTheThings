@@ -1789,6 +1789,7 @@ end");
                     case "sort":
                     case "sourceIgnored":
                     case "nomerge":
+                    case "zone-text-continent":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -2016,6 +2017,7 @@ end");
                     case "customCollect":
                     case "sins":
                     case "timeline":
+                    case "zone-text-names":
                         {
                             MergeStringArrayData(item, field, value);
                             break;

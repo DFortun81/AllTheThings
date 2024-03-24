@@ -1388,6 +1388,8 @@ namespace ATT
                 case "zone-artIDs":
                 case "zone-text-areaID":
                 case "zone-text-areas":
+                case "zone-text-continent":
+                case "zone-text-names":
 
                 // metadata parser tags
                 case "_area":

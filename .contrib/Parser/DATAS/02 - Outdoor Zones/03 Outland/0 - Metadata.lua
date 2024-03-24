@@ -7,6 +7,7 @@ root(ROOTS.Zones, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Outland_01",
 		-- #endif
+		["zone-text-continent"] = true,
 		["timeline"] = { "added 2.0.1" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
