@@ -167,6 +167,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDo
 root(ROOTS.HiddenQuestTriggers, {
 	n(PLUNDERSTORM, {
 		q(80110),	-- First WQ of the Day
+		q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
 		q(81677),	-- Dieing
 	}),
 });
