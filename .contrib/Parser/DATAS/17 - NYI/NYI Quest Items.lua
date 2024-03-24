@@ -256,7 +256,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(192454),	-- Elemental Essence
 			i(192478),	-- Elemental Focus
 			i(194428),	-- Elemental Soul Cage NYI
-			i(192558),	-- Emerald Tear
 			i(191117),	-- Enchanted Claws
 			i(193858),	-- Enchanted Tools
 			i(191551),	-- Encrusted Key [DNT]

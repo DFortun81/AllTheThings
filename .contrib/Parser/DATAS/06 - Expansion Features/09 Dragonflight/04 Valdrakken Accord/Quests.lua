@@ -643,6 +643,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66182 },	-- Gerithus's Reseach
 						["provider"] = { "n", 189849 },	-- Gerithus
 						["coord"] = { 28.4, 48.6, OHNAHRAN_PLAINS },
+						["groups"] = {
+							objective(1, {	-- 0/8 Emerald Tear's
+								["provider"] = { "i", 192558 },	-- Emerald Tear (QI!)
+							}),
+						},
 					}),
 					q(66181, {	-- A Frenzied Defender
 						["sourceQuests"] = { 66182 },	-- Gerithus's Reseach
