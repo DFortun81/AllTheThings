@@ -62,32 +62,43 @@ local function GetCurrentMapID()
 	end
 	local mapName = MapIDToMapName[originalMapID];
 	if mapName then
-		local zone = GetRealZoneText();
+		local zone = GetSubZoneText();
+		if zone and zone ~= "" then
+			if mapName == zone then return originalMapID; end
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then return mapID; end
+		end
+		zone = GetZoneText();
+		if zone and zone ~= "" then
+			if mapName == zone then return originalMapID; end
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then return mapID; end
+		end
+		zone = GetRealZoneText();
 		if zone then
 			if mapName == zone then return originalMapID; end
 			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
 			if mapID then
 				return mapID;
 			end
-		end
-		zone = GetSubZoneText();
-		if zone and zone ~= "" then
-			if mapName == zone then return originalMapID; end
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
 		end
 	else
-		local zone = GetRealZoneText();
+		local zone = GetSubZoneText();
+		if zone and zone ~= "" then
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then return mapID; end
+		end
+		zone = GetZoneText();
+		if zone and zone ~= "" then
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then return mapID; end
+		end
+		zone = GetRealZoneText();
 		if zone then
 			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
 			if mapID then
 				return mapID;
 			end
-		end
-		zone = GetSubZoneText();
-		if zone and zone ~= "" then
-			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if mapID then return mapID; end
 		end
 	end
 	return originalMapID;
