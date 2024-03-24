@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { WARRIOR },
 							["groups"] = {
-								objective(2, {	-- Practice Charge
+								objective(1, {	-- Practice Charge
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 							},
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { WARLOCK },
 							["groups"] = {
-								objective(2, {	-- Practice Corruption
+								objective(1, {	-- Practice Corruption
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 							},
@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { ROGUE },
 							["groups"] = {
-								objective(2, {	-- Practice Eviscerate
+								objective(1, {	-- Practice Eviscerate
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 							},
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { MAGE },
 							["groups"] = {
-								objective(2, {	-- Practice Frost Nova
+								objective(1, {	-- Practice Frost Nova
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 							},
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { PRIEST },
 							["groups"] = {
-								objective(2, {	-- 	Practice Shadow Word: Pain (2)
+								objective(1, {	-- Practice Shadow Word: Pain (2)
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 							},
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { DRUID },
 							["groups"] = {
-								objective(2, {	-- Practice Moonfire
+								objective(1, {	-- Practice Moonfire
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 							},
@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { HUNTER },
 							["groups"] = {
-								objective(2, {	-- Practice Steady Shot (2)
+								objective(1, {	-- Practice Steady Shot (2)
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 							},

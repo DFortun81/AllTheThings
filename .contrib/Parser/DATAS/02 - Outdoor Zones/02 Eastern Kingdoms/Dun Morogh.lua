@@ -415,7 +415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 							["groups"] = {
-								objective(2, {	-- 0/3 Practice Eviscerate
+								objective(1, {	-- 0/3 Practice Eviscerate
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
 							},
@@ -644,7 +644,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 							["groups"] = {
-								objective(2, {	-- Practice Tiger Palm
+								objective(1, {	-- Practice Tiger Palm
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
 							},
@@ -1166,7 +1166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 							["groups"] = {
-								objective(2, {	-- 0/5 Practice Shadow Word: Pain
+								objective(1, {	-- 0/5 Practice Shadow Word: Pain
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
 							},
@@ -1313,11 +1313,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Gnome_Female")]],
 				-- #endif
-				-- #if BEFORE 6.0.0
-				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					133,	-- New Tinkertown
 					5495,	-- Gnomeregan
+					5178,	-- The Toxic Airfield
 				},
 				-- #endif
 				["maps"] = { NEW_TINKERTOWN_LOWER },
@@ -1343,6 +1343,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/5 Clean up Toxic Geysers
+									["provider"] = { "n", 42598 },	-- GS-9x Multi-Bot
+								}),
+							},
 						}),
 						q(26566, {	-- A Triumph of Gnomish Ingenuity
 							["qg"] = 42317,	-- High Tinker Mekkatorque
@@ -1372,11 +1377,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 38.2, 40.2, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.45, 40.99, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
+								objective(1, {	-- 0/6 Living Contamination slain
+									["providers"] = {
+										{ "n", 42185 },	-- Living Contamination
+										{ "n", 43089 },	-- Living Contamination
+									},
+								}),
 								i(59038, {	-- Fallout Cover
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -1713,6 +1724,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
 						}),
+						q(26198, {	-- The Arts of a Mage
+							["qg"] = 42331,	-- Bipsi Frostflinger
+							-- #if AFTER MOP
+							["coord"] = { 41.1, 29.1, NEW_TINKERTOWN },
+							-- #else
+							["coord"] = { 27.53, 36.83, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "added 4.0.3.13287", "removed 7.0.3" },
+							["races"] = { GNOME },
+							["classes"] = { MAGE },
+							-- #if BEFORE 7.0.3
+							["groups"] = {
+								objective(1, {	-- 0/2 Practice Arcane Missiles
+									["provider"] = { "n", 44171 },	-- Training Dummy
+								}),
+								i(59042, {	-- Electro-Staff
+									-- NOTE: Item is still obtainable via quest 26197 for Mages (do not flag as unobtainable)
+									["timeline"] = { "added 4.0.3.13287" },
+								}),
+							},
+							-- #endif
+						}),
 						q(31138, {	-- The Arts of a Monk
 							["qg"] = 63238,	-- Xi, Friend to the Small
 							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
@@ -1927,10 +1960,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 39.2, 26.5, NEW_TINKERTOWN },
 							-- #else
-							--["coord"] = { , DUN_MOROGH },
+							["coord"] = { 26.84, 35.87, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/6 Recovered Possession
+									["provider"] = { "i", 57987 },	-- Recovered Possession
+									["cr"] = 42184,	-- Toxic Sludge
+								}),
+							},
 						}),
 						q(28169, {	-- Withdraw to the Loading Room!
 							["qg"] = 47250,	-- Carvo Blastbolt
