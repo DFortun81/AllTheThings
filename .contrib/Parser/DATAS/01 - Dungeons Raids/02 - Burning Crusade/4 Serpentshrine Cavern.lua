@@ -8,11 +8,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 3607,	-- Serpentshrine Cavern
 		-- #endif
-		["sins"] = {
-			"Coilfang: Serpentshrine Cavern",
-			"Echsenkessel: Höhle des Schlangenschreins",
-			"Glissecroc : caverne du sanctuaire du Serpent",
-		},
 		["coords"] = {
 			{ 50.2, 41.0, ZANGARMARSH },	-- underwater entrance
 			{ 51.9, 32.9, ZANGARMARSH },	-- pipe entrance

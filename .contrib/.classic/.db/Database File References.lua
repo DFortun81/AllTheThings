@@ -5,6 +5,7 @@
 -- #IMPORT: 00 - DB\\FlightPathDB.lua
 -- #IMPORT: 00 - DB\\FlightPathDB_Conditionals.lua
 -- #IMPORT: 00 - DB\\IllusionDB.lua
+-- #IMPORT: 00 - DB\\InstanceDB.lua
 -- #IMPORT: 00 - DB\\ItemDB.lua
 -- #IMPORT: 00 - DB\\MountDB.lua
 -- #IMPORT: 00 - DB\\ObjectDB.lua

@@ -9,7 +9,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 717,	-- The Stockade
 		-- #endif
-		["sins"] = { [[~DUNGEON_FLOOR_THESTOCKADE1]] },
 		-- #if AFTER CATA
 		["coord"] = { 50.48, 66.46, STORMWIND_CITY },
 		-- #elseif AFTER WRATH

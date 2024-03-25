@@ -7,11 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3790,	-- Auchenai Crypts
 		-- #endif
-		["sins"] = {
-			"Auchindoun: Auchenai Crypts",
-			"Auchindoun: Auchenaikrypta",
-			"Auchindoun: Crypts",
-		},
 		["coord"] = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
 		["maps"] = {
 			AUCHINDOUN_AUCHENAI_CRYPTS,	-- Halls of Hereafter

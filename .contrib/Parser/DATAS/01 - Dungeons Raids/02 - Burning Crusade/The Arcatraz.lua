@@ -7,10 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3846,	-- The Arcatraz
 		-- #endif
-		["sins"] = {
-			"Tempest Keep: The Arcatraz",
-			"Festung der Stürme: Die Arkatraz",
-		},
 		["coord"] = { 74.42, 57.72, NETHERSTORM },	-- The Arcatraz, Netherstorm
 		["maps"] = {
 			TEMPEST_KEEP_ARCATRAZ,	-- Stasis Block: Trion

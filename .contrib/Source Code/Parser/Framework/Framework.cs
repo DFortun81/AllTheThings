@@ -1329,6 +1329,7 @@ namespace ATT
                 case "ignoreBonus":
                 case "ignoreSource":
                 case "instanceID":
+                case "savedInstanceID":
                 case "inventoryType":
                 case "isAquatic":
                 case "isBreadcrumb":
@@ -1372,7 +1373,6 @@ namespace ATT
                 case "setSubHeaderID":
                 case "setID":
                 case "skipFill":
-                case "sins":
                 case "sort":
                 case "sourceQuest":
                 case "sourceText":

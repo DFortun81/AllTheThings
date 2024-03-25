@@ -7,11 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 4075,	-- Sunwell Plateau
 		-- #endif
-		["sins"] = {
-			"The Sunwell",
-			"Der Sonnenbrunnen",
-			"Le Puits de soleil",
-		},
 		["coord"] = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
 		["maps"] = {
 			SUNWELL_PLATEAU,

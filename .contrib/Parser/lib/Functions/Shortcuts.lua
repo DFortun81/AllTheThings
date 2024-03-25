@@ -884,34 +884,28 @@ iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (s
 	return i;
 end
 inst = function(id, t)									-- Create an INSTANCE Object
-	if t then
-		t = struct("instanceID", id, t);
-		-- #if BEFORE WRATH
-		-- Not yet supported in classic.
-		if t.groups or t.g then
-			-- Convert to a MAP ID.
-			if t.mapID then
-				return t;
-			else
-				if t.maps then
-					t.mapID = t.maps[1];
-					table.remove(t.maps, 1);
-					if #t.maps < 1 then
-						t.maps = nil;
-					end
-				else
-					--error("Instance Missing a MapID: " .. id);
+	t = struct("instanceID", id, t);
+	
+	-- #if BEFORE WRATH
+	-- Not yet supported in classic.
+	if t.groups or t.g then
+		-- Convert to a MAP ID.
+		if not t.mapID then
+			if t.maps then
+				t.mapID = t.maps[1];
+				table.remove(t.maps, 1);
+				if #t.maps < 1 then
+					t.maps = nil;
 				end
-				return t;
+			else
+				--error("Instance Missing a MapID: " .. id);
 			end
-		else
-			return { ["npcID"] = -1, ["groups"] = t };
 		end
-		-- #endif
-		return t;
 	else
-		return struct("instanceID", id, t);
+		t = { ["npcID"] = -1, ["groups"] = t };
 	end
+	-- #endif
+	return t;
 end
 map = function(id, t)									-- Create a MAP Object
 	if t then

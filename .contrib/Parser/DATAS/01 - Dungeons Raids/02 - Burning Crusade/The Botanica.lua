@@ -7,10 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3847,	-- The Botanica
 		-- #endif
-		["sins"] = {
-			"Tempest Keep: The Botanica",
-			"Festung der Stürme: Die Botanika",
-		},
 		["coord"] = { 71.74, 54.95, NETHERSTORM },	-- The Botanica, Netherstorm
 		["mapID"] = TEMPEST_KEEP_BOTANICA,
 		["lvl"] = lvlsquish(65, 65, 20),

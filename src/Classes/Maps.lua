@@ -729,31 +729,13 @@ local instanceFields = {
 		return mapID and C_Map_GetMapLevels(mapID);
 	end,
 	["locks"] = function(t)
-		local lockouts = app.CurrentCharacter.Lockouts;
-		local locks = lockouts[t.name];
-		if locks then
-			t.locks = locks;
-			return locks;
-		end
-		local sins = t.sins;
-		if sins then
-			for i=1,#sins,1 do
-				locks = lockouts[sins[i]];
-				if locks then
-					t.locks = locks;
-					return locks;
-				end
-			end
-		end
-		local areaID = t["zone-text-areaID"];
-		if areaID then
-			local name = C_Map_GetAreaInfo(areaID);
-			if name then
-				locks = lockouts[name];
-				if locks then
-					t.locks = locks;
-					return locks;
-				end
+		local savedInstanceID = t.savedInstanceID;
+		if savedInstanceID then
+			local lockouts = app.CurrentCharacter.Lockouts;
+			local locks = lockouts[savedInstanceID];
+			if locks then
+				t.locks = locks;
+				return locks;
 			end
 		end
 	end,

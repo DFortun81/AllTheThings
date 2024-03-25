@@ -5,7 +5,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 	inst(761, {	-- The Ruby Sanctum
 		["mapID"] = THE_RUBY_SANCTUM,
 		["coord"] = { 61.2, 52.7, DRAGONBLIGHT },
-		["sins"] = { "Rubinsanktum" },
 		-- #if AFTER CATA
 		["sharedLockout"] = 1,
 		-- #endif

@@ -11,11 +11,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2367,	-- Old Hillsbrad Foothills
 		-- #endif
-		["sins"] = {
-			"Caverns of Time: Old Hillsbrad Foothills",
-			"The Escape from Durnholde",
-			"Flucht aus Durnholde",
-		},
 		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
 		["lvl"] = lvlsquish(63, 63, 15),

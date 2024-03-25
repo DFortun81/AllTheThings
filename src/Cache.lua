@@ -733,29 +733,6 @@ if app.IsRetail then
 	fieldConverters.up = function(group, up)
 		CacheField(group, "up", up);
 	end
-elseif app.GameBuildVersion < 30000 then
-	fieldConverters.sins = function(group, value)
-		local mapID = group.mapID;
-		if not mapID then
-			-- Generate a unique NEGATIVE mapID and cache the object to it.
-			mapID = nextCustomMapID;
-			nextCustomMapID = nextCustomMapID - 1;
-			tinsert(runners, function()
-				if group.maps then
-					tinsert(group.maps, mapID)
-				else
-					group.maps = {mapID};
-				end
-			end);
-			CacheField(group, "mapID", mapID);
-		end
-		local name = value[1];
-		if name then app.L.ALT_ZONE_TEXT_TO_MAP_ID[name] = mapID; end
-		for i=2,#value,1 do
-			name = value[i];
-			if name then app.L.ALT_ZONE_TEXT_TO_MAP_ID[name] = mapID; end
-		end
-	end
 end
 
 CacheFields = function(group, skipMapCaching)

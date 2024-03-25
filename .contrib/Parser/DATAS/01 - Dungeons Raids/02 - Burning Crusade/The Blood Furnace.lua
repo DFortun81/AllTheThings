@@ -7,11 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3713,	-- The Blood Furnace
 		-- #endif
-		["sins"] = {
-			"Hellfire Citadel: Blood Furnace",
-			"Hellfire Citadel: The Blood Furnace",
-			"Höllenfeuerzitadelle: Blutkessel",
-		},
 		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_BLOOD_FURNACE,
 		["lvl"] = lvlsquish(58, 58, 10),

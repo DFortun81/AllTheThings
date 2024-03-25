@@ -1894,6 +1894,7 @@ end");
                     case "questIDH":
                     case "sqreq":
                     case "zone-text-areaID":
+                    case "savedInstanceID":
                     case "rwp":
                     case "awp":
                     case "id":
@@ -2013,7 +2014,6 @@ end");
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "customCollect":
-                    case "sins":
                     case "timeline":
                     case "zone-text-names":
                         {

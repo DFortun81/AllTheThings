@@ -7,11 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2366,	-- The Black Morass
 		-- #endif
-		["sins"] = {
-			"Caverns of Time: The Black Morass",
-			"Opening of the Dark Portal",
-			"Öffnung des Dunklen Portals",
-		},
 		["coord"] = { 37.2, 83.3, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_BLACK_MORASS,
 		["lvl"] = lvlsquish(65, 65, 25),

@@ -7,12 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-names"] = { [[~DUNGEON_FLOOR_MANATOMBS1]] },	-- Mana Tombs
 		-- #endif
-		["sins"] = {
-			[[~DUNGEON_FLOOR_MANATOMBS1]],
-			"Auchindoun: Mana-Tombs",
-			"Auchindoun: The Mana Tombs",
-			"Auchindoun: Managruft",
-		},
 		["coord"] = { 39.63, 57.67, TEROKKAR_FOREST },	-- Mana-Tombs, Terokkar Forest
 		["mapID"] = AUCHINDOUN_MANA_TOMBS,
 		["lvl"] = lvlsquish(61, 61, 15),

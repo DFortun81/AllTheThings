@@ -12,10 +12,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 3428,	-- Ahn'Qiraj
 		-- #endif
-		["sins"] = {
-			"Temple of Ahn'Qiraj",	-- In Classic the map name is actually just "Ahn'Qiraj", not sure which expansion this changes.
-			"Ahn'Qiraj Temple",	-- In Retail the full name is actually Temple of Ahn'Qiraj, but the saved instance data is wrong.
-		},
 		["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },
 		["maps"] = {
 			TEMPLE_OF_AHNQIRAJ,	-- The Temple Gates

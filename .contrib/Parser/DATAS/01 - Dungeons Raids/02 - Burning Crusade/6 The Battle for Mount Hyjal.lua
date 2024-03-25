@@ -7,7 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3606,	-- Hyjal Summit
 		-- #endif
-		["sins"] = { "The Battle for Mount Hyjal" },
 		["coords"] = {
 			{ 36.0, 16.1, CAVERNS_OF_TIME },	-- raid entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT, Tanaris

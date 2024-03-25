@@ -7,10 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3849,	-- The Mechanar
 		-- #endif
-		["sins"] = {
-			"Tempest Keep: The Mechanar",
-			"Festung der Stürme: Die Mechanar",
-		},
 		["coord"] = { 70.61, 69.75, NETHERSTORM },	-- The Mechanar, Netherstorm
 		["maps"] = {
 			TEMPEST_KEEP_MECHANAR,

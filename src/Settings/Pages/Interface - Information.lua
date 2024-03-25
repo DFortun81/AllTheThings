@@ -749,6 +749,7 @@ local InformationTypes = {
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
 	CreateInformationType("runeforgePowerID", { text = L.RUNEFORGE_POWER_ID }),
+	CreateInformationType("savedInstanceID", { text = L.SAVED_INSTANCE_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
 	CreateInformationType("spellID", { text = L.SPELL_ID }),

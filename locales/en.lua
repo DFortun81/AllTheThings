@@ -558,6 +558,7 @@ for key, value in pairs({
 	["HEADER_ID"] = "Header ID";
 	["ILLUSION_ID"] = "Illusion ID";
 	["INSTANCE_ID"] = "Instance ID";
+	["SAVED_INSTANCE_ID"] = "Saved Instance ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
 	["FLIGHT_PATH_ID"] = "Flight Path ID";

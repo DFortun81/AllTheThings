@@ -7,10 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3562,	-- Hellfire Ramparts
 		-- #endif
-		["sins"] = {
-			"Hellfire Citadel: Ramparts",
-			"Höllenfeuerzitadelle: Bollwerk",
-		},
 		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_RAMPARTS,
 		["lvl"] = lvlsquish(57, 57, 10),

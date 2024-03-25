@@ -9,7 +9,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			474,	-- Oratorium of the Voice
 			475,	-- Heart of Fear
 		},
-		["sins"] = { "Herz der Angst" },
 		["sharedLockout"] = 1,
 		["g"] = {
 			n(ACHIEVEMENTS, {

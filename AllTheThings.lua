@@ -4718,7 +4718,7 @@ local function RefreshSavesCallback()
 	for guid,character in pairs(ATTCharacterData) do
 		local locks = character.Lockouts;
 		if locks then
-			for name,instance in pairs(locks) do
+			for instanceID,instance in pairs(locks) do
 				local count = 0;
 				for difficulty,lock in pairs(instance) do
 					if serverTime >= lock.reset then
@@ -4730,7 +4730,7 @@ local function RefreshSavesCallback()
 				end
 				if count == 0 then
 					-- Clean this up.
-					locks[name] = nil;
+					locks[instanceID] = nil;
 				end
 			end
 		end
@@ -4738,15 +4738,16 @@ local function RefreshSavesCallback()
 
 	-- Update Saved Instances
 	local myLockouts = app.CurrentCharacter.Lockouts;
+	wipe(myLockouts);
 	for instanceIter=1,saves do
-		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
-		if locked then
+		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters, encounterProgress, extendDisabled, savedInstanceID = GetSavedInstanceInfo(instanceIter);
+		if locked and savedInstanceID then
 			-- Cache the locks for this instance
 			reset = serverTime + reset;
-			local locks = myLockouts[name];
+			local locks = myLockouts[savedInstanceID];
 			if not locks then
 				locks = {};
-				myLockouts[name] = locks;
+				myLockouts[savedInstanceID] = locks;
 			end
 
 			-- Create the lock for this difficulty

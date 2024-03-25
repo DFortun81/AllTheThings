@@ -7,7 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 4095,	-- Magisters' Terrace
 		-- #endif
-		["sins"] = { "Magister's Terrace" },
 		["coord"] = { 61.23, 30.94, ISLE_OF_QUELDANAS },	-- Magister's Terrace, Isle of Quel'Danas
 		["maps"] = {
 			MAGISTERS_TERRACE,	-- Grand Magister's Asylum

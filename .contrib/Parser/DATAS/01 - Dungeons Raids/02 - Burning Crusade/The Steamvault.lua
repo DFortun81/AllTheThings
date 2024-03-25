@@ -7,10 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3715,	-- The Steamvault
 		-- #endif
-		["sins"] = {
-			"Coilfang: The Steamvault",
-			"Echsenkessel: Dampfkammer",
-		},
 		["coord"] = { 50.35, 33.39, ZANGARMARSH },	-- The Steamvault, Zangarmarsh
 		["maps"] = {
 			COILFANG_RESERVOIR_STEAMVAULT,

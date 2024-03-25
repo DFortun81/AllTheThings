@@ -7,10 +7,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3791,	-- Sethekk Halls
 		-- #endif
-		["sins"] = {
-			"Auchindoun: Sethekk Halls",
-			"Auchindoun: Sethekkhallen",
-		},
 		["coord"] = { 44.93, 65.61, TEROKKAR_FOREST },	-- Sethekk Halls, Terokkar Forest
 		["maps"] = {
 			AUCHINDOUN_SETHEKK_HALLS,	-- Veil Sethekk

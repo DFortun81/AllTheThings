@@ -68,7 +68,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			-- #endif
 		},
 		["coord"] = { 53.7, 87.0, ICECROWN },
-		["sins"] = { "Eiskronenzitadelle" },
 		-- #if AFTER CATA
 		["sharedLockout"] = 1,
 		-- #endif

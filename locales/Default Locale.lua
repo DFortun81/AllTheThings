@@ -19,15 +19,8 @@ local L = setmetatable({
 	HEADER_NAMES = {};
 	QUEST_NAMES = {};
 	
-	-- These are alternative map names that we don't want to display, but used for mapID calculations.
 	-- If there is a name provided in the table above, it will prefer that name association.
 	MAP_ID_TO_ZONE_TEXT = {};
-	ALT_ZONE_TEXT_TO_MAP_ID = {
-		["Gates of Ahn'Qiraj"] = 1451,
-		["The Temple of Atal'Hakkar"] = 220,
-		["The Battle for Mount Hyjal"] = 329,
-		["The Eye"] = 334,
-	};
 	
 	-- Binding Localizations
 	TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";

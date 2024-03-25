@@ -5,11 +5,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	inst(283, {	-- The Violet Hold (Wrath)
 		["mapID"] = THE_VIOLET_HOLD_WRATH,
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
-		["sins"] = {
-			"Violet Hold",	-- This one is all sorts of messed up.
-			"The Violet Hold",
-			"Violette Festung",
-		},
 		["lvl"] = lvlsquish(75, 75, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
