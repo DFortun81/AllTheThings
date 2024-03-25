@@ -787,7 +787,7 @@ localize(L.HEADER_ICONS, {
 	[-1000286] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000373] = "1530081",
 	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
-	[-1000872] = "2055032",
+	[-1000872] = "133168",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,

@@ -996,6 +996,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[4236] = 407786,	-- Glub
 	[4233] = 359755,	-- Flurky
 	[4329] = 428053,	-- Arfus
+	[4273] = 423843,	-- Cypress
 	[4274] = 423868,	-- Lil' Wrathion
 };
 for key,value in pairs(CompanionPetSpeciesIDToSpellID) do
@@ -1033,7 +1034,7 @@ end
 -- At the end the comment should contain the pet name not npc or item name.
 -- To acquire itemID, npcID and speciesID one can use wowhead. If you want speciesID from wowhead it can be found in "Summoned by" tab.
 -- To manually collect the speciesID in-game (live or PTR):
-	-- /run print(select(1, C_PetJournal.FindPetIDByName("")))
+	-- /dump C_PetJournal.FindPetIDByName("Cypress")
 -- The speciesID can also be found via various addons
 	-- In the Rematch options, make sure "Show Species ID & Ability ID" is checked.
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
@@ -1047,7 +1048,9 @@ i(200060, 4235);	-- Hoplet (Classic)
 i(204982, 4236);	-- Glub
 i(187794, 4233);	-- Flurky
 i(211082, 4329);	-- Arfus (WOTLK)
+i(209877, 4273);	-- Cypress (WOTLK)
 i(209945, 4274);	-- Lil' Wrathion (WOTLK)
+
 
 -----------------
 --   CLASSIC   --

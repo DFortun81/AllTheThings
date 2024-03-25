@@ -271,6 +271,9 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(207097, {	-- Nightmarish Emerald Drake
 				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 27th October 2023.",
 			}),
+			i(209877, {	-- Cypress
+				["description"] = "Obtained if you set up a 6 Month WoW Subscription after 10th January 2024.",
+			}),
 		},
 	}),
 	-- #endif

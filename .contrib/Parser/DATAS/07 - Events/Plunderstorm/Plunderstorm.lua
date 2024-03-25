@@ -3,7 +3,11 @@
 -----------------------------------------------------
 PLUNDERSTORM = createHeader({
 	readable = "Plunderstorm",
+	-- #if AFTER 8.0.1
 	icon = 2055032,
+	-- #else
+	icon = 133168,
+	-- #endif
 	text = {
 		en = "Plunderstorm",
 		ru = "Пиратская буря",
