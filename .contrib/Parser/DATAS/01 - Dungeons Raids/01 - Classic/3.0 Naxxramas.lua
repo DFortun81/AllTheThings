@@ -1981,6 +1981,7 @@ applyclassicphase(PHASE_SIX,
 									16063,	-- Sir Zeliek
 									16064,	-- Thane Korth'azz
 								},
+								["provider"] = { "o", 181366 },	-- Four Horseman Chest
 								["modelScale"] = 2,
 								["groups"] = {
 									i(22349),	-- Desecrated Breastplate

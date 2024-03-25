@@ -1650,6 +1650,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								16063,	-- Sir Zeliek
 							},
 							["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+							["provider"] = { "o", 193426 },	-- Four Horsemen Chest
 							["groups"] = {
 								ach(2176),	-- And They Would All Go Down Together (10 player)
 								ach(568, {	-- The Military Quarter (10 player)
@@ -2407,6 +2408,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								16063,	-- Sir Zeliek
 							},
 							["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+							["provider"] = { "o", 193426 },	-- Four Horsemen Chest
 							["groups"] = {
 								ach(2177),	-- And They Would All Go Down Together (25 player)
 								ach(569, {	-- The Military Quarter (25 player)
