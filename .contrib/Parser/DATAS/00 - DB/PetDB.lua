@@ -998,6 +998,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[4329] = 428053,	-- Arfus
 	[4273] = 423843,	-- Cypress
 	[4274] = 423868,	-- Lil' Wrathion
+	[4532] = 446916,	-- Pinchy the Plunderer
 };
 for key,value in pairs(CompanionPetSpeciesIDToSpellID) do
 	if CompanionPetSpellIDToSpeciesID[value] then
@@ -1050,6 +1051,7 @@ i(187794, 4233);	-- Flurky
 i(211082, 4329);	-- Arfus (WOTLK)
 i(209877, 4273);	-- Cypress (WOTLK)
 i(209945, 4274);	-- Lil' Wrathion (WOTLK)
+--i(0, 4532);	-- Pinchy the Plunderer (WOTLK)
 
 
 -----------------

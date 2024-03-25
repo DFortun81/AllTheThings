@@ -173,7 +173,7 @@ app:CreateWindow("ItemFinder", {
 				progress = 0,
 				total = 0,
 				back = 1,
-				currentItemID = 210765,
+				currentItemID = 230000,
 				minimumItemID = 0,
 				g = { },
 				OnUpdate = function(header)
@@ -187,7 +187,7 @@ app:CreateWindow("ItemFinder", {
 								end
 							end
 						end
-						for count=#g,200 do
+						for count=#g,5000 do
 							local i = header.currentItemID - 1;
 							if i > header.minimumItemID then
 								header.currentItemID = i;
@@ -250,7 +250,7 @@ app:CreateWindow("SpellFinder", {
 				progress = 0,
 				total = 0,
 				back = 1,
-				currentID = 436524,
+				currentID = 450000,
 				minimumID = 0,
 				g = { },
 				OnUpdate = function(header)

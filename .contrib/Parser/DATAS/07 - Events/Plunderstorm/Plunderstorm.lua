@@ -160,10 +160,10 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 	}),
 }));
 -- #else
-root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { "added 3.4.3.53622", "removed 3.4.3.99999" } }, {
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { "added 3.4.3.53622", "removed 4.0.1" } }, {
 	n(PLUNDERSTORM, {
-		-- Pinchy (PET!)
-		-- Polly Roger (MOUNT!)
+		pet(4532);		-- Pinchy the Plunderer (PET!)
+		mount(446902);	-- Polly Roger (MOUNT!)
 	}),
 })));
 -- #endif

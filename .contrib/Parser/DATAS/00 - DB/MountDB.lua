@@ -23,6 +23,7 @@ i(192455, 372677);	-- Kalu'ak Whalebone Glider
 i(201699, 394209);	-- Festering Emerald Drake
 i(207097, 416158);	-- Nightmarish Emerald Drake
 i(0, 423869);	-- Avatar of Flame
+i(0, 446902);	-- Polly Roger
 --- NYI ---
 i(0, 388516);		-- Hao-Yue, River Foreseer
 i(198632, 387319);	-- Big Battle Bear
