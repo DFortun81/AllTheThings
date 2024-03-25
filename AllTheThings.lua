@@ -9588,99 +9588,97 @@ local function OnScrollBarValueChanged(self, value)
 	end
 end
 local function ProcessGroup(data, object)
-	if app.VisibilityFilter(object) then
-		tinsert(data, object);
-		if object.g and object.expanded then
-			-- Delayed sort operation for this group prior to being shown
-			local sortType = object.SortType;
-			if sortType then app.SortGroup(object, sortType); end
-			for _,group in ipairs(object.g) do
-				ProcessGroup(data, group);
-			end
+	if not app.VisibilityFilter(object) then return end
+	data[#data + 1] = object
+	local g = object.g
+	if g and object.expanded then
+		-- Delayed sort operation for this group prior to being shown
+		local sortType = object.SortType;
+		if sortType then app.SortGroup(object, sortType); end
+		for _,group in ipairs(g) do
+			ProcessGroup(data, group);
 		end
 	end
 end
 local function UpdateWindow(self, force, got)
 	local data = self.data;
-	if data and app.IsReady then
-		local visible = self:IsVisible();
-		-- either by Setting or by special windows apply ad-hoc logic
-		local adhoc = app.Settings:GetTooltipSetting("Updates:AdHoc") or self.AdHoc;
-		force = force or self.HasPendingUpdate;
-		-- hidden adhoc window is set for pending update instead of forced
-		if adhoc and force and not visible then
-			self.HasPendingUpdate = true;
-			force = nil;
+	if not data or not app.IsReady then return end
+	local visible = self:IsVisible();
+	-- either by Setting or by special windows apply ad-hoc logic
+	local adhoc = app.Settings:GetTooltipSetting("Updates:AdHoc") or self.AdHoc;
+	force = force or self.HasPendingUpdate;
+	-- hidden adhoc window is set for pending update instead of forced
+	if adhoc and force and not visible then
+		self.HasPendingUpdate = true;
+		force = nil;
+	end
+	-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN",got and "COLLECTED" or "PASSIVE");
+	if force or visible then
+		-- clear existing row data for the update
+		if self.rowData then wipe(self.rowData);
+		else self.rowData = {}; end
+
+		data.expanded = true;
+		if not self.doesOwnUpdate and force then
+			-- app.PrintDebug("TLUG",self.Suffix)
+			app.TopLevelUpdateGroup(data);
+			self.HasPendingUpdate = nil;
+			-- app.PrintDebugPrior("Done")
 		end
-		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN",got and "COLLECTED" or "PASSIVE");
-		if force or visible then
-			-- clear existing row data for the update
-			if self.rowData then wipe(self.rowData);
-			else self.rowData = {}; end
 
-			data.expanded = true;
-			if not self.doesOwnUpdate and
-				(force or (self.shouldFullRefresh and visible)) then
-				-- app.PrintDebug("TLUG",self.Suffix)
-				app.TopLevelUpdateGroup(data);
-				self.HasPendingUpdate = nil;
-				-- app.PrintDebugPrior("Done")
-			end
+		-- Should the groups in this window be expanded prior to processing the rows for display
+		if self.ExpandInfo then
+			-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
+			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
+			self.ExpandInfo = nil;
+		end
 
-			-- Should the groups in this window be expanded prior to processing the rows for display
-			if self.ExpandInfo then
-				-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
-				ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
-				self.ExpandInfo = nil;
-			end
+		ProcessGroup(self.rowData, data);
+		-- app.PrintDebug("Update:RowData",#self.rowData)
 
-			ProcessGroup(self.rowData, data);
-			-- app.PrintDebug("Update:RowData",#self.rowData)
-
-			-- Does this user have everything?
-			if data.total then
-				if data.total <= data.progress then
-					if #self.rowData < 1 then
-						data.back = 1;
-						tinsert(self.rowData, data);
-					end
-					if self.missingData then
-						if got and visible then app.Audio:PlayCompleteSound(); end
-						self.missingData = nil;
-					end
-					-- only add this info row if there is actually nothing visible in the list
-					-- always a header row
-					-- print("any data",#self.Container,#self.rowData,#data)
-					if #self.rowData < 2 then
-						tinsert(self.rowData, {
-							["text"] = L.NO_ENTRIES,
-							["description"] = L.NO_ENTRIES_DESC,
-							["collectible"] = 1,
-							["collected"] = 1,
-							["back"] = 0.7
-						});
-					end
-				else
-					self.missingData = true;
+		-- Does this user have everything?
+		if data.total then
+			if data.total <= data.progress then
+				if #self.rowData < 1 then
+					data.back = 1;
+					tinsert(self.rowData, data);
+				end
+				if self.missingData then
+					if got and visible then app.Audio:PlayCompleteSound(); end
+					self.missingData = nil;
+				end
+				-- only add this info row if there is actually nothing visible in the list
+				-- always a header row
+				-- print("any data",#self.Container,#self.rowData,#data)
+				if #self.rowData < 2 then
+					tinsert(self.rowData, {
+						["text"] = L.NO_ENTRIES,
+						["description"] = L.NO_ENTRIES_DESC,
+						["collectible"] = 1,
+						["collected"] = 1,
+						["back"] = 0.7
+					});
 				end
 			else
-				self.missingData = nil;
+				self.missingData = true;
 			end
-
-			self:Refresh();
-			-- app.PrintDebugPrior("Update:Done")
-			return true;
 		else
-			local expireTime = self.ExpireTime;
-			-- print("check ExpireTime",self.Suffix,expireTime)
-			if expireTime and expireTime > 0 and expireTime < time() then
-				-- app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
-				self:RemoveEventHandlers()
-				app.Windows[self.Suffix] = nil;
-			end
+			self.missingData = nil;
 		end
-		-- app.PrintDebugPrior("Update:None")
+
+		self:Refresh();
+		-- app.PrintDebugPrior("Update:Done")
+		return true;
+	else
+		local expireTime = self.ExpireTime;
+		-- print("check ExpireTime",self.Suffix,expireTime)
+		if expireTime and expireTime > 0 and expireTime < time() then
+			-- app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
+			self:RemoveEventHandlers()
+			app.Windows[self.Suffix] = nil;
+		end
 	end
+	-- app.PrintDebugPrior("Update:None")
 end
 -- Allows a Window to set the root data object to itself and link the Window to the root data, if data exists
 local function SetData(self, data)
@@ -10720,7 +10718,6 @@ end;
 customWindowUpdates.AuctionData = function(self)
 	if not self.initialized then
 		local C_AuctionHouse_ReplicateItems = C_AuctionHouse.ReplicateItems;
-		self.shouldFullRefresh = false;
 		self.initialized = true;
 		self:SetData({
 			["text"] = "Auction Module",
