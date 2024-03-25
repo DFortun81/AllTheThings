@@ -642,9 +642,7 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	return t;
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
-	t = struct("speciesID", id, t);
-	if not t.itemID then t.u = MOP_PHASE_ONE; end
-	return t;
+	return struct("speciesID", id, t);
 end
 pet = battlepet;										-- Create a BATTLE PET Object (alternative shortcut)
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
