@@ -33,24 +33,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 				}),
 			}),
-			n(DROPS, {
-				i(167051, {	-- Azure Windseeker (PET!)
-					["crs"] = { 62442 },	-- Tsulong
-					["timeline"] = { ADDED_8_1_5 },
-				}),
-				i(167052, {	-- Spirit of the Spring (PET!)
-					["crs"] = { 62983 },	-- Lei Shi
-					["timeline"] = { ADDED_8_1_5 },
-				}),
-				i(138805, {	-- Illusion: Jade Spirit (ILLUSION!)
-					["crs"] = { 60999 },	-- Sha of Fear
-					["timeline"] = { ADDED_7_0_3 },
-				}),
-				i(122199, {	-- Music Roll: Heart of Pandaria
-					["crs"] = { 60999 },	-- Sha of Fear
-					["timeline"] = { ADDED_6_1_0 },
-				}),
-			}),
 			d(RAID_FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
@@ -117,6 +99,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								i(86881),	-- Stuff of Nightmares
 								i(86882),	-- Sunwrought Mail Hauberk
 								i(86898),	-- Weaver's Cord of Eternal Autumn
+								i(167051, {	-- Azure Windseeker (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 							},
 						}),
 						e(729, {	-- Lei Shi
@@ -144,6 +129,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								i(86889),	-- Taoren, the Soul Burner
 								i(86890),	-- Terror in the Mists
 								i(86898),	-- Weaver's Cord of Eternal Autumn
+								i(167052, {	-- Spirit of the Spring (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 							},
 						}),
 						e(709, {	-- Sha of Fear
@@ -162,10 +150,60 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								i(89986),	-- Shadowgrip Girdle
 								i(86905),	-- Shin'ka, Execution of Dominion
 								i(89985),	-- Wrap of Instant Petrification
+								i(138805, {	-- Illusion: Jade Spirit (ILLUSION!)
+									["timeline"] = { ADDED_7_0_3 },
+								}),
+								i(122199, {	-- Music Roll: Heart of Pandaria
+									["timeline"] = { ADDED_6_1_0 },
+								}),
 							},
 						}),
 					}),
 				},
+			}),
+			d(NORMAL_HEROIC_RAID, {
+				e(683, {	-- Protectors of the Endless
+					["crs"] = {
+						60586,	-- Elder Asani
+						60585,	-- Elder Regail
+						60583,	-- Protector Kaolan
+					},
+					["g"] = {
+					},
+				}),
+				e(742, {	-- Tsulong
+					["crs"] = { 62442 },	-- Tsulong
+					["g"] = {
+						ach(6933),	-- Who's Got Two Green Thumbs?
+						i(167051, {	-- Azure Windseeker (PET!)
+							["timeline"] = { ADDED_8_1_5 },
+						}),
+					},
+				}),
+				e(729, {	-- Lei Shi
+					["crs"] = { 62983 },	-- Lei Shi
+					["g"] = {
+						ach(6824),	-- Face Clutchers
+						i(167052, {	-- Spirit of the Spring (PET!)
+							["timeline"] = { ADDED_8_1_5 },
+						}),
+					},
+				}),	
+				e(709, {	-- Sha of Fear
+					["crs"] = { 60999 },	-- Sha of Fear
+					["g"] = {
+						ach(6825),	-- The Mind-Killer
+						ach(8248, {	-- Ahead of the Curve: Sha of Fear
+							["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						}),
+						i(138805, {	-- Illusion: Jade Spirit (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(122199, {	-- Music Roll: Heart of Pandaria
+							["timeline"] = { ADDED_6_1_0 },
+						}),
+					},
+				}),
 			}),
 			d(NORMAL_DUNGEON, {
 				["ignoreBonus"] = true,
@@ -257,7 +295,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(742, {	-- Tsulong
 						["crs"] = { 62442 },	-- Tsulong
 						["g"] = {
-							ach(6933),	-- Who's Got Two Green Thumbs?
 							i(86326),	-- Belt of Embodied Terror
 							i(86342),	-- Binder's Chain of Unending Summer
 							i(86325),	-- Daybreak Drape
@@ -287,7 +324,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(729, {	-- Lei Shi
 						["crs"] = { 62983 },	-- Lei Shi
 						["g"] = {
-							ach(6824),	-- Face Clutchers
 							i(89246, {	-- Shoulders of the Shadowy Conqueror
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 							}),
@@ -315,10 +351,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(709, {	-- Sha of Fear
 						["crs"] = { 60999 },	-- Sha of Fear
 						["g"] = {
-							ach(6825),	-- The Mind-Killer
-							ach(8248, {	-- Ahead of the Curve: Sha of Fear
-								["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
-							}),
 							i(89235, {	-- Helm of the Shadowy Conqueror
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 							}),
