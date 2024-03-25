@@ -171,6 +171,26 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
+			d(ALL_DIFFICULTIES_RAID, {
+				cr(114263, e(1819, {	-- Odyn
+					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
+				})),
+				e(1830, {	-- Guarm
+					["crs"] = {
+						114344,	-- Guarm
+						114323,	-- Guarm
+					},
+					["g"] = {
+						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
+					},
+				}),
+				cr(114537, e(1829, {	-- Helya
+					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
+				})),
+			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
@@ -242,8 +262,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				cr(114263, e(1819, {	-- Odyn
 					ach(11337),	-- You Runed Everything!
-					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
-					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
 					i(142431),	-- Gleaming Val'kyr Cuirass
 					i(142410),	-- Robes of Celestial Adornment
@@ -268,8 +286,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						ach(11386, {	-- Boneafide Tri Tip
 							["crs"] = { 116404 },	-- Guarm's Chew Toy
 						}),
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
 						i(142432),	-- Helbeast Skin Tunic
 						i(142423),	-- Bite-Resistant Wristclamps
@@ -287,8 +303,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				cr(114537, e(1829, {	-- Helya
 					ach(11377),	-- Patient Zero
-					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
-					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 					i(142428),	-- Sea Fan Pendant
 					i(142521),	-- Drape of the Unworthy
 					i(142433),	-- Corroded Val'kyr Chainmail
@@ -377,8 +391,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
-					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
 					i(142431),	-- Gleaming Val'kyr Cuirass
 					i(142410),	-- Robes of Celestial Adornment
@@ -400,8 +412,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
 						i(142432),	-- Helbeast Skin Tunic
 						i(142423),	-- Bite-Resistant Wristclamps
@@ -421,8 +431,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					ach(11581, {	-- Ahead of the Curve: Helya
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
-					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 					i(142428),	-- Sea Fan Pendant
 					i(142521),	-- Drape of the Unworthy
 					i(142433),	-- Corroded Val'kyr Chainmail
@@ -445,8 +453,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				cr(114263, e(1819, {	-- Odyn
 					ach(11396),	-- Mythic: Odyn
-					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
-					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
 					i(142431),	-- Gleaming Val'kyr Cuirass
 					i(142410),	-- Robes of Celestial Adornment
@@ -469,8 +475,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 					["g"] = {
 						ach(11397),	-- Mythic: Guarm
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
 						i(142432),	-- Helbeast Skin Tunic
 						i(142423),	-- Bite-Resistant Wristclamps
@@ -567,8 +571,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							}),
 						},
 					}),
-					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
-					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 					i(142428),	-- Sea Fan Pendant
 					i(142521),	-- Drape of the Unworthy
 					i(142433),	-- Corroded Val'kyr Chainmail
