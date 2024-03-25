@@ -145,7 +145,6 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { "added 8.2.5
 			}),
 			cl(SHAMAN,  {
 				i(203370),	-- Blue Winglord's Bracers
-				-- Maybe all Blue Wings are available? 28.02.2023
 				i(173576),	-- Earthmender's Shield
 				i(173560),	-- Earthmender's Talons
 				i(173575),	-- Stormshaper's Bulwark
@@ -154,7 +153,6 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { "added 8.2.5
 				i(173648),	-- Streamtalker Belt
 				i(173643),	-- Streamtalker Boots
 				i(173645),	-- Streamtalker Coif
-				i(173644),	-- Streamtalker Gloves
 				i(173646),	-- Streamtalker Legwraps
 				i(173647),	-- Streamtalker Pauldrons
 				i(173642),	-- Streamtalker Tunic

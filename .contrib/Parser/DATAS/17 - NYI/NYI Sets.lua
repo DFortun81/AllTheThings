@@ -3116,6 +3116,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				}),
 			}),
+			n(PARTY_SYNC, {
+				cl(SHAMAN, {
+					i(173644)	-- Streamtalker Gloves
+				}),
+			}),
 		})),
 
 		-- 8.3.0
