@@ -712,7 +712,7 @@ for key,value in pairs({
 		[33] = {2, "|CFFAAFFAAThis was not available until Phase 4 of Wrath Classic.|r", "Phase 4", 30400, 30403, "\n \n|CFFFFAAAAIncluded Icecrown Citadel.|r" },
 		[3301] = {2, "|CFFAAFFAAThe wielder of Shadowmournes for all the people that don't have it.|r", "Shadowmourne Prio", 30400, 40001, "\n \n|CFFFFAAAADue to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on.|r" },
 		[3302] = {2, "|CFFAAFFAAThis became available with the release of Ruby Sanctum during Wrath Classic.|r", "Ruby Sanctum", 30400, 30403, "\n \n|CFFFFAAAAIncluded The Ruby Sanctum.|r" },
-		[3303] = {2, "|CFFAAFFAAThis became available with the release of Operation Gnomeregen and Zalazane's Fall during Wrath Classic.|r", "Operation Zalazane", 30400, 30403, "\n \n|CFFFFAAAAIncluded Operation Gnomeregen and Zalazane's Fall|r" },
+		[3303] = {2, "|CFFAAFFAAThis became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.|r", "Operation Zalazane", 30400, 30403, "\n \n|CFFFFAAAAIncluded Operation Gnomeregan and Zalazane's Fall|r" },
 		[3304] = {2, "|CFFAAFFAAThis became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.|r", "Elemental Unrest", 30400, 30404, "\n \n|CFFFFAAAAThe Elemental Unrest Pre-Expansion Event?|r" },
 		
 		-- Cataclysm Classic Phases

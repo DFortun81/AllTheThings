@@ -29,7 +29,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 	}, {
 		["maps"] = { DUROTAR },
 		["groups"] = {
-			-- #if AFTER 4.0.1
+			-- #if AFTER 3.3.0
 			q(25444, {	-- Da Perfect Spies
 				["qg"] = 38437,	-- Vanira
 				["coord"] = { 57.5, 72.5, DUROTAR },

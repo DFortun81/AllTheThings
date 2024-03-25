@@ -29,7 +29,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 	}, {
 		["maps"] = { IRONFORGE, DUN_MOROGH },
 		["groups"] = {
-			-- #if AFTER 4.0.1
+			-- #if AFTER 3.3.0
 			q(25229, {	-- A Few Good Gnomes
 				["qg"] = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
 				["coord"] = { 69.2, 49.2, IRONFORGE },
