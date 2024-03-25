@@ -79,6 +79,12 @@ local function GetCurrentMapID()
 				end
 				for j,childMapInfo in ipairs(childMaps) do
 					substitutions[childMapInfo.name] = childMapInfo.mapID;
+					local subChildMaps = C_Map_GetMapChildrenInfo(childMapInfo.mapID);
+					if subChildMaps then
+						for k,subChildMapInfo in ipairs(subChildMaps) do
+							substitutions[subChildMapInfo.name] = subChildMapInfo.mapID;
+						end
+					end
 				end
 			end
 		end
