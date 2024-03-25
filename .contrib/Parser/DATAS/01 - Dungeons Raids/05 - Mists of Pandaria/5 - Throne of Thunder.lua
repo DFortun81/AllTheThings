@@ -632,6 +632,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				e(819, {	-- Horridon
 					["crs"] = { 68476 },	-- Horridon
 					["g"] = {
+						ach(8038),	-- Cretaceous Collector
 						i(93666),	-- Spawn of Horridon (MOUNT!)
 						i(94574, {	-- Pygmy Direhorn (PET!)
 							["timeline"] = { ADDED_5_3_0 },
@@ -824,12 +825,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						ach(8090, {	-- A Complete Circuit
 							crit(22797, {	-- Static Shock Conduit Disabled First
+								["_encounter"] = { 832, LFR_RAID },
 							}),
 							crit(22996, {	-- Diffusion Chain Conduit Disabled First
+								["_encounter"] = { 832, LFR_RAID },
 							}),
 							crit(22997, {	-- Overcharge Conduit Disabled First
+								["_encounter"] = { 832, LFR_RAID },
 							}),
 							crit(22998, {	-- Bouncing Bolt Conduit Disabled First
+								["_encounter"] = { 832, LFR_RAID },
 							}),
 						}),
 					},
@@ -965,7 +970,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(819, {	-- Horridon
 						["crs"] = { 68476 },	-- Horridon
 						["g"] = {
-							ach(8038),	-- Cretaceous Collector
 							i(94751),	-- Armplates of the Vanquished Abomination
 							i(94743),	-- Bindings of Multiplicative Strikes
 							i(94747),	-- Bloodlord's Bloodsoaked Legplates
