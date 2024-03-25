@@ -333,7 +333,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				},
 			}),
 			e(1536,  {	-- Nefarian
-				["creatureID"] = 11583,	-- Nefarian
+				["crs"] = {
+					11583,	-- Nefarian
+					10162,	-- Lord Victor Nefarius
+				},
 				["groups"] = {
 					ach(685, {	-- Blackwing Lair
 						-- #if BEFORE WRATH
