@@ -2052,9 +2052,6 @@ root(ROOTS.NeverImplemented, {
 			i(190844, { -- Valarjar Champion's Greatsword
 				["cost"] = {{"c", TRADERS_TENDER, 200}},
 			}),
-			i(192766, { -- Amber Skitterfly
-				["cost"] = {{"c", TRADERS_TENDER, 600}},
-			}),
 			i(206325, { -- Ensemble: Vagabond's Brick Threads
 				["cost"] = {{"c", TRADERS_TENDER, 100}},
 			}),

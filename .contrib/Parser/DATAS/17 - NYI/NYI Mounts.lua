@@ -814,6 +814,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(210145, {	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
 				-- ["displayID"] = ,
 			}),
+			i(192766),	-- Amber Skitterfly
 			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!) [Trading Post?]
 				["displayID"] = 114788,
 			}),
