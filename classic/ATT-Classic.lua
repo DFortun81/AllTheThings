@@ -5111,7 +5111,6 @@ local function RefreshSaves()
 
 	-- Update Saved Instances
 	local myLockouts = app.CurrentCharacter.Lockouts;
-	wipe(myLockouts);
 	for instanceIter=1,GetNumSavedInstances() do
 		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters, encounterProgress, extendDisabled, savedInstanceID = GetSavedInstanceInfo(instanceIter);
 		if locked and savedInstanceID then
