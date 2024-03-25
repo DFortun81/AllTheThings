@@ -633,6 +633,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000272] = "This Category contains Things that probably exist in the game but no known source.",
 	[-1000284] = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
+	[-1000872] = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -807,6 +808,7 @@ localize(L.HEADER_EVENTS, {
 	[-1000243] = 1181,
 	[-1000282] = 372,
 	[-1000284] = 590,
+	[-1000872] = 446916,
 });
 localize(L.EVENT_REMAPPING, {
 	[376] = 479,
@@ -815,6 +817,9 @@ localize(L.EVENT_REMAPPING, {
 });
 
 -- Programmatic Event Scheduling
+_.Modules.Events.SetEventInformation(446916, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=14,["weekday"]=3,["year"]=2024})
+});
 _.Modules.Events.SetEventInformation(590, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=5,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=5,["year"]=2023}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),

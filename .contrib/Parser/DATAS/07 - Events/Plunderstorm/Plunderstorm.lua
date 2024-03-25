@@ -8,13 +8,22 @@ PLUNDERSTORM = createHeader({
 	-- #else
 	icon = 133168,
 	-- #endif
+	eventID = EVENTS.PLUNDERSTORM,
+	eventSchedule = {
+		0, -- March 16th to May 14th 2024
+		2024, 03, 16,	-- 03/16/2024
+		2024, 05, 14,	-- 05/14/2024
+	},
 	text = {
 		en = "Plunderstorm",
 		ru = "Пиратская буря",
 	},
+	description = {
+		en = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
+	},
 });
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
 	n(PLUNDERSTORM, {
 		n(ACHIEVEMENTS, {
 			ach(20509),	-- Plunderking
@@ -158,9 +167,9 @@ root(ROOTS.WorldEvents, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2
 			},
 		})),
 	}),
-}));
+})));
 -- #else
-root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { "added 3.4.3.53622", "removed 4.0.1" } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { "added 3.4.3.53622", "removed 4.0.1" } }, {
 	n(PLUNDERSTORM, {
 		pet(4532, {		-- Pinchy the Plunderer (PET!)
 			["spellID"] = 446916,	-- Pinchy the Plunderer
@@ -168,7 +177,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDo
 		}),
 		mount(446902),	-- Polly Roger (MOUNT!)
 	}),
-})));
+}))));
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {

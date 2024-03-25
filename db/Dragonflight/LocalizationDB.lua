@@ -654,6 +654,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000858] = "Three hunters have surrounded Mara Swiftmane. Engage them in combat, and a Battered Chest will spawn near Mara Swiftmane. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
 	[-1000863] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
 	[-1000869] = "If you are phased into the Invasion Blasted Lands and need to go to the pre-Invasion Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
+	[-1000872] = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1066,8 +1067,12 @@ localize(L.HEADER_EVENTS, {
 	[-1000300] = 1397,
 	[-1000366] = 1382,
 	[-1000368] = 1271,
+	[-1000872] = 446916,
 });
 -- Programmatic Event Scheduling
+_.Modules.Events.SetEventInformation(446916, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=14,["weekday"]=3,["year"]=2024})
+});
 _.Modules.Events.SetEventInformation(1397, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=4,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=4,["year"]=2022})
 });

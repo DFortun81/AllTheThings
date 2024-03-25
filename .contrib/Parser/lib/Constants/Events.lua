@@ -26,6 +26,9 @@ EVENTS = {
 	THE_GREAT_GNOMEREGAN_RUN = 696,
 	THOUSAND_BOAT_BASH = 642,
 	TRIAL_OF_STYLE = 691,
+	
+	-- FOMO
+	PLUNDERSTORM = 446916,	-- This is a fake eventID. (Crieve made this up!) ((Pinchy the Plunderer spellID!))
 
 	-- Dragonriding Cups
 	-- Note: These need to all be referenced in src\Modules\Events.lua
