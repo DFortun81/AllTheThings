@@ -1944,6 +1944,7 @@ if app.IsRetail then
 		[1220] = true,	-- Order Resources
 		[1533] = true,	-- Wakening Essence
 		[1508] = true,	-- Veiled Argunite
+		[1885] = true, 	-- Grateful Offering
 		[2003] = true,	-- Dragon Isles Supplies
 	};
 
