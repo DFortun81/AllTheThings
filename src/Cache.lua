@@ -220,6 +220,23 @@ local mapKeyUncachers = {
 local MapRemapping = {};
 app.MapRemapping = MapRemapping;
 local nextCustomMapID = -2;
+local function assignZoneAreaIDs(originalMapID, mapID, ids)
+	if originalMapID then
+		local remap = MapRemapping[originalMapID];
+		if not remap then
+			remap = {};
+			MapRemapping[originalMapID] = remap;
+		end
+		local areaIDs = remap.areaIDs;
+		if not areaIDs then
+			areaIDs = {};
+			remap.areaIDs = areaIDs;
+		end
+		for j,areaID in ipairs(ids) do
+			areaIDs[areaID] = mapID;
+		end
+	end
+end
 local function zoneArtIDRunner(group, value)
 	-- If this group uses a normal map, we want to rip out the cache for it.
 	-- Doing it after the cache is finished allows us to still prevent the coordinates
@@ -296,41 +313,37 @@ local function zoneTextAreasRunner(group, value)
 	if name then app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name; end
 	
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
-	local originalMapID = (group.coords and group.coords[1][3]) or app.GetRelativeValue(group.parent, "mapID");
-	if originalMapID then
-		local remap = MapRemapping[originalMapID];
-		if not remap then
-			remap = {};
-			MapRemapping[originalMapID] = remap;
-		end
-		local areaIDs = remap.areaIDs;
-		if not areaIDs then
-			areaIDs = {};
-			remap.areaIDs = areaIDs;
-		end
-		for j,areaID in ipairs(value) do
-			areaIDs[areaID] = mapID;
-		end
-		
-		-- Also assign it to the parent map. (fix for Onyxia's Lair)
-		local info = C_Map_GetMapInfo(originalMapID);
-		--print("MapRemapping (areaID): ", originalMapID, info and info.name, mapID, name);
-		if info and info.parentMapID then
-			originalMapID = info.parentMapID;
-			local remap = MapRemapping[originalMapID];
-			if not remap then
-				remap = {};
-				MapRemapping[originalMapID] = remap;
-			end
-			local areaIDs = remap.areaIDs;
-			if not areaIDs then
-				areaIDs = {};
-				remap.areaIDs = areaIDs;
-			end
-			for j,areaID in ipairs(value) do
-				areaIDs[areaID] = mapID;
+	local mapIDs, parentMapID, info = {};
+	if group.coords then
+		parentMapID = group.coords[1][3];
+		if parentMapID then
+			mapIDs[parentMapID] = 1;
+			info = C_Map_GetMapInfo(parentMapID);
+			if info and info.parentMapID then
+				mapIDs[info.parentMapID] = 1;
 			end
 		end
+	else
+		parentMapID = app.GetRelativeValue(group.parent, "mapID");
+		if parentMapID then
+			mapIDs[parentMapID] = 1;
+			info = C_Map_GetMapInfo(parentMapID);
+			if info and info.parentMapID then
+				mapIDs[info.parentMapID] = 1;
+			end
+		end
+	end
+	if group.maps then
+		for i,parentMapID in ipairs(group.maps) do
+			mapIDs[parentMapID] = 1;
+			info = C_Map_GetMapInfo(parentMapID);
+			if info and info.parentMapID then
+				mapIDs[info.parentMapID] = 1;
+			end
+		end
+	end
+	for parentMapID,_ in pairs(mapIDs) do
+		assignZoneAreaIDs(parentMapID, mapID, value);
 	end
 end
 local function zoneTextContinentRunner(group, value)
