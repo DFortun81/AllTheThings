@@ -314,22 +314,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		}),
 	})),
-	-- #if AFTER 5.4.0.17153
-	filter(CONSUMABLES, {
-		["description"] = "Only available in the Asian In-Game Shop.",
-		["groups"] = {
-			i(103557, {	-- Enduring Elixir of Wisdom
-				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
-			}),
-			i(105911, {	-- Pouch of Enduring Wisdom
-				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
-			}),
-			i(105912, {	-- Pouch of Enduring Wisdom (5)
-				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
-			}),
-		},
-	}),
-	-- #endif
 	-- #if AFTER 5.4.0.17227
 	filter(COSMETIC, {
 		i(95475, {	-- Crown of Eternal Winter
@@ -546,6 +530,22 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(166779, {	-- Transmorpher Beacon (TOY!)
 			["timeline"] = { "added 8.1.5.29737" },
 		}),
+	}),
+	-- #endif
+	-- #if AFTER 5.4.0.17153
+	filter(CONSUMABLES, {
+		["description"] = "Only available in the Asian In-Game Shop.",
+		["groups"] = {
+			i(103557, {	-- Enduring Elixir of Wisdom
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
+			}),
+			i(105911, {	-- Pouch of Enduring Wisdom
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
+			}),
+			i(105912, {	-- Pouch of Enduring Wisdom (5)
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
+			}),
+		},
 	}),
 	-- #endif
 }));
