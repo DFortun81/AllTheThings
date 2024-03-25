@@ -119,7 +119,10 @@ local function GetCurrentMapID()
 							end
 						end
 					end
-					if closestMapID then return closestMapID; end
+					if closestMapID then
+						--print(" SUBBED (closest): ", closestMapID);
+						return closestMapID;
+					end
 				end
 			end
 		end
