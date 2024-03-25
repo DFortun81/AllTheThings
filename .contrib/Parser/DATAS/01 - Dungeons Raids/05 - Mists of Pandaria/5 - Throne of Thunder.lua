@@ -148,25 +148,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["provider"] = { "n", 69843 },	-- Zao'cho <The Emperor's Shield>
 				}),
 			})),
-			n(DROPS, {
-				i(94574, {	-- Pygmy Direhorn (PET!)
-					["crs"] = { 68476 },	-- Horridon
-					["timeline"] = { ADDED_5_3_0 },
-				}),
-				i(94835, {	-- Ji-Kun Hatchling (PET!)
-					["crs"] = { 69712 },	-- Ji-Kun
-				}),
-				i(97960, {	-- Viscous Horror (PET!)
-					["crs"] = { 69017 },	-- Primordius
-					["timeline"] = { ADDED_5_3_0 },
-				}),
-				i(94152, {	-- Son of Animus (PET!)
-					["crs"] = {
-						69756,	-- Anima Orb
-						69427,	-- Dark Animus
-					},
-				}),
-			}),
 			n(SPECIAL, {
 				i(98136, {	-- Gastropod Shell (TOY!)
 					["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
@@ -367,6 +348,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95656),	-- Vaccinator's Armwraps
 							i(95660),	-- Venomlord's Totemic Wand
 							i(95645),	-- Wastewalker's Sandblasted Drape
+							i(94574, {	-- Pygmy Direhorn (PET!)
+								["timeline"] = { ADDED_5_3_0 },
+							}),
 						},
 					}),
 					e(816, {	-- Council of Elders
@@ -468,6 +452,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95717),	-- Pinionfeather Greatcloak
 							i(95719),	-- Robe of Midnight Dawn
 							i(95724),	-- Talonrender Chestplate
+							i(94835, {	-- Ji-Kun Hatchling (PET!)
+							}),
 						},
 					}),
 				}),
@@ -531,6 +517,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95763),	-- Stolen Relic of Zuldazar
 							i(95751),	-- Synapse-String Handguards
 							i(95748),	-- Talisman of Bloodlust
+							i(97960, {	-- Viscous Horror (PET!)
+								["timeline"] = { ADDED_5_3_0 },
+							}),
 						},
 					}),
 					e(824, {	-- Dark Animus
@@ -553,6 +542,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95771),	-- Hood of the Crimson Wake
 							i(95777),	-- Matter-Swapped Legplates
 							i(95775),	-- Worldbinder Leggings
+							i(94152, {	-- Son of Animus (PET!)
+							}),
 						},
 					}),
 				}),
@@ -629,6 +620,219 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95809),	-- Uroe, Harbinger of Terror
 						},
 					}),
+				}),
+			}),
+			d(NORMAL_HEROIC_RAID, {
+				e(827, {	-- Jin'rokh the Breaker
+					["crs"] = { 69465 },	-- Jin'rokh the Breaker
+					["g"] = {
+						ach(8094),	-- Lightning Overload
+					},
+				}),
+				e(819, {	-- Horridon
+					["crs"] = { 68476 },	-- Horridon
+					["g"] = {
+						i(93666),	-- Spawn of Horridon (MOUNT!)
+						i(94574, {	-- Pygmy Direhorn (PET!)
+							["timeline"] = { ADDED_5_3_0 },
+						}),
+					},
+				}),
+				e(816, {	-- Council of Elders
+					["crs"] = {
+						69131,	-- Frost King Malakk
+						69132,	-- High Priestess Mar'li
+						69134,	-- Kazra'jin
+						69078,	-- Sul the Sandrawler
+					},
+					["g"] = {
+						ach(8073),	-- Cage Match
+					},
+				}),
+				e(825, {	-- Tortos
+					["crs"] = { 67977 },	-- Tortos
+					["g"] = {
+						ach(8077),	-- One-Up
+					},
+				}),
+				e(821, {	-- Megaera
+					["crs"] = {
+						70248,	-- Arcane Head <Head of Megaera>
+						70212,	-- Flaming Head <Head of Megaera>
+						70235,	-- Frozen Head <Head of Megaera>
+						68065,	-- Megaera <Terror of the Depths>
+						70247,	-- Venomous Head <Head of Megaera>
+					},
+					["g"] = {
+						ach(8082, {	-- Head Case
+							crit(22744, {	-- Flaming
+								["crs"] = { 70212 },
+							}),
+							crit(22746, {	-- Frozen
+								["crs"] = { 70235 },
+							}),
+							crit(22747, {	-- Venomous
+								["crs"] = { 70247 },
+							}),
+						}),
+					},
+				}),			
+				e(828, {	-- Ji-Kun
+					["crs"] = { 69712 },	-- Ji-Kun
+					["g"] = {
+						ach(8097),	-- Soft Hands
+						i(95059),	-- Clutch of Ji-Kun (MOUNT!)
+						i(94835, {	-- Ji-Kun Hatchling (PET!)
+						}),
+					},
+				}),
+				e(818, {	-- Durumu the Forgotten
+					["crs"] = { 68036 },	-- Durumu the Forgotten
+					["g"] = {
+						ach(8098),	-- You Said Crossing the Streams Was Bad
+					},
+				}),
+				e(820, {	-- Primordius
+					["crs"] = { 69017 },	-- Primordius
+					["g"] = {
+						ach(8037),	-- Genectically Unmodified Organism
+						i(97960, {	-- Viscous Horror (PET!)
+							["timeline"] = { ADDED_5_3_0 },
+						}),
+					},
+				}),
+				e(824, {	-- Animus
+					["crs"] = {
+						69756,	-- Anima Orb
+						69427,	-- Dark Animus
+					},
+					["g"] = {
+						ach(8081, {	-- Ritualist Who?
+								crit(22765, {	-- Aridian
+									["cr"] = 69726,
+								}),
+								crit(22766, {	-- Auton
+									["cr"] = 69718,
+								}),
+								crit(22767, {	-- Bandril
+									["cr"] = 69728,
+								}),
+								crit(22768, {	-- Drahvin
+									["cr"] = 69727,
+								}),
+								crit(22769, {	-- Drashig
+									["cr"] = 69731,
+								}),
+								crit(22770, {	-- Fendahl
+									["cr"] = 69734,
+								}),
+								crit(22771, {	-- Gond
+									["cr"] = 69729,
+								}),
+								crit(22772, {	-- Jagaroth
+									["cr"] = 69721,
+								}),
+								crit(22773, {	-- Kroll
+									["cr"] = 69710,
+								}),
+								crit(22774, {	-- Kitling
+									["cr"] = 69716,
+								}),
+								crit(22775, {	-- Malus
+									["cr"] = 69733,
+								}),
+								crit(22776, {	-- Mandrel
+									["cr"] = 69737,
+								}),
+								crit(22777, {	-- Megara
+									["cr"] = 69719,
+								}),
+								crit(22778, {	-- Morok
+									["cr"] = 69722,
+								}),
+								crit(22779, {	-- Ogri
+									["cr"] = 69735,
+								}),
+								crit(22780, {	-- Ogron
+									["cr"] = 69730,
+								}),
+								crit(22781, {	-- Rill
+									["cr"] = 69725,
+								}),
+								crit(22782, {	-- Rutan
+									["cr"] = 69736,
+								}),
+								crit(22783, {	-- Sirian
+									["cr"] = 69720,
+								}),
+								crit(22784, {	-- Tetrap
+									["cr"] = 69738,
+								}),
+								crit(22785, {	-- Thal
+									["cr"] = 69709,
+								}),
+								crit(22786, {	-- Voord
+									["cr"] = 69723,
+								}),
+								crit(22787, {	-- Wirrn
+									["cr"] = 69732,
+								}),
+								crit(22789, {	-- Xeron
+									["cr"] = 69724,
+								}),
+							}),
+						i(94152, {	-- Son of Animus (PET!)
+						}),
+					},
+				}),
+				e(817, {	-- Iron Qon
+					["crs"] = {
+						68081,	-- Dam'ren <The Frozen Sage>
+						68078,	-- Iron Qon <Mastern of Quilen>
+						68080,	-- Quet'zal <The Stormcaller>
+						68079,	-- Ro'shak <The Molten Flare>
+					},
+					["g"] = {
+						ach(8087, {	-- Can't Touch This
+							crit(22791, {	-- Burning Cinders
+							}),
+							crit(22792, {	-- Frozen Blood
+							}),
+							crit(22793, {	-- Storm Cloud
+							}),
+							crit(22794, {	-- Frozen Solid!
+							}),
+							crit(22795, {	-- Rushing Winds
+							}),
+						}),
+					},
+				}),
+				e(829, {	-- Twin Empyreans
+					["crs"] = {
+						68904,	-- Suen <Mistress of Anger>
+						68905,	-- Lu'lin <Mistress of Solitude>
+					},
+					["g"] = {
+						ach(8086),	-- From Dusk 'til Dawn
+					},
+				}),
+				e(832, {	-- Lei Shen
+					["crs"] = { 68397 },	-- Lei Shen
+					["g"] = {
+						ach(8249, {	-- Ahead of the Curve: Lei Shen
+							["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+						}),
+						ach(8090, {	-- A Complete Circuit
+							crit(22797, {	-- Static Shock Conduit Disabled First
+							}),
+							crit(22996, {	-- Diffusion Chain Conduit Disabled First
+							}),
+							crit(22997, {	-- Overcharge Conduit Disabled First
+							}),
+							crit(22998, {	-- Bouncing Bolt Conduit Disabled First
+							}),
+						}),
+					},
 				}),
 			}),
 			d(NORMAL_DUNGEON, {
@@ -714,7 +918,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
 						["g"] = {
-							ach(8094),	-- Lightning Overload
 							i(94739),	-- Al'set's Tormented Leggings
 							i(94727),	-- Bracers of Constant Implosion
 							i(94723),	-- Chestplate of Violent Detonation
@@ -763,7 +966,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = { 68476 },	-- Horridon
 						["g"] = {
 							ach(8038),	-- Cretaceous Collector
-							i(93666),	-- Spawn of Horridon (MOUNT!)
 							i(94751),	-- Armplates of the Vanquished Abomination
 							i(94743),	-- Bindings of Multiplicative Strikes
 							i(94747),	-- Bloodlord's Bloodsoaked Legplates
@@ -818,7 +1020,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							69078,	-- Sul the Sandrawler
 						},
 						["g"] = {
-							ach(8073),	-- Cage Match
 							i(95575),	-- Gauntlets of the Crackling Conqueror
 							i(95580),	-- Gauntlets of the Crackling Protector
 							i(95570),	-- Gauntlets of the Crackling Vanquisher
@@ -855,7 +1056,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(825, {	-- Tortos
 						["crs"] = { 67977 },	-- Tortos
 						["g"] = {
-							ach(8077),	-- One-Up
 							i(94776),	-- Amulet of the Primal Turtle
 							i(94781),	-- Azure Shell Bracers
 							i(94775),	-- Beady-Eye Bracers
@@ -909,17 +1109,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							70247,	-- Venomous Head <Head of Megaera>
 						},
 						["g"] = {
-							ach(8082, {	-- Head Case
-								crit(22744, {	-- Flaming
-									["crs"] = { 70212 },
-								}),
-								crit(22746, {	-- Frozen
-									["crs"] = { 70235 },
-								}),
-								crit(22747, {	-- Venomous
-									["crs"] = { 70247 },
-								}),
-							}),
 							i(94521),	-- Breath of the Hydra
 							i(94797),	-- Chain of Consuming Magic
 							i(94796),	-- Fetish of the Hydra
@@ -965,8 +1154,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(828, {	-- Ji-Kun
 						["crs"] = { 69712 },	-- Ji-Kun
 						["g"] = {
-							ach(8097),	-- Soft Hands
-							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 							i(95576),	-- Leggings of the Crackling Conqueror
 							i(95581),	-- Leggings of the Crackling Protector
 							i(95572),	-- Leggings of the Crackling Vanquisher
@@ -1054,7 +1241,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(820, {	-- Primordius
 						["crs"] = { 69017 },	-- Primordius
 						["g"] = {
-							ach(8037),	-- Genectically Unmodified Organism
 							i(94937),	-- Acid-Spine Bonemace
 							i(95513),	-- Band of the Scaled Tyrant
 							i(94944),	-- Black Blood Legplates
@@ -1101,86 +1287,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							}),
 						},
 					}),
-					e(824, {
+					e(824, {	-- Animus
 						["crs"] = {
 							69756,	-- Anima Orb
 							69427,	-- Dark Animus
 						},
 						["g"] = {
-							ach(8081, {	-- Ritualist Who?
-								crit(22765, {	-- Aridian
-									["cr"] = 69726,
-								}),
-								crit(22766, {	-- Auton
-									["cr"] = 69718,
-								}),
-								crit(22767, {	-- Bandril
-									["cr"] = 69728,
-								}),
-								crit(22768, {	-- Drahvin
-									["cr"] = 69727,
-								}),
-								crit(22769, {	-- Drashig
-									["cr"] = 69731,
-								}),
-								crit(22770, {	-- Fendahl
-									["cr"] = 69734,
-								}),
-								crit(22771, {	-- Gond
-									["cr"] = 69729,
-								}),
-								crit(22772, {	-- Jagaroth
-									["cr"] = 69721,
-								}),
-								crit(22773, {	-- Kroll
-									["cr"] = 69710,
-								}),
-								crit(22774, {	-- Kitling
-									["cr"] = 69716,
-								}),
-								crit(22775, {	-- Malus
-									["cr"] = 69733,
-								}),
-								crit(22776, {	-- Mandrel
-									["cr"] = 69737,
-								}),
-								crit(22777, {	-- Megara
-									["cr"] = 69719,
-								}),
-								crit(22778, {	-- Morok
-									["cr"] = 69722,
-								}),
-								crit(22779, {	-- Ogri
-									["cr"] = 69735,
-								}),
-								crit(22780, {	-- Ogron
-									["cr"] = 69730,
-								}),
-								crit(22781, {	-- Rill
-									["cr"] = 69725,
-								}),
-								crit(22782, {	-- Rutan
-									["cr"] = 69736,
-								}),
-								crit(22783, {	-- Sirian
-									["cr"] = 69720,
-								}),
-								crit(22784, {	-- Tetrap
-									["cr"] = 69738,
-								}),
-								crit(22785, {	-- Thal
-									["cr"] = 69709,
-								}),
-								crit(22786, {	-- Voord
-									["cr"] = 69723,
-								}),
-								crit(22787, {	-- Wirrn
-									["cr"] = 69732,
-								}),
-								crit(22789, {	-- Xeron
-									["cr"] = 69724,
-								}),
-							}),
 							i(95574),	-- Chest of the Crackling Conqueror
 							i(95579),	-- Chest of the Crackling Protector
 							i(95569),	-- Chest of the Crackling Vanquisher
@@ -1218,18 +1330,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68079,	-- Ro'shak <The Molten Flare>
 						},
 						["g"] = {
-							ach(8087, {	-- Can't Touch This
-								crit(22791, {	-- Burning Cinders
-								}),
-								crit(22792, {	-- Frozen Blood
-								}),
-								crit(22793, {	-- Storm Cloud
-								}),
-								crit(22794, {	-- Frozen Solid!
-								}),
-								crit(22795, {	-- Rushing Winds
-								}),
-							}),
 							i(95578),	-- Shoulders of the Crackling Conqueror
 							i(95583),	-- Shoulders of the Crackling Protector
 							i(95573),	-- Shoulders of the Crackling Vanquisher
@@ -1265,7 +1365,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["g"] = {
-							ach(8086),	-- From Dusk 'til Dawn
 							i(95577),	-- Helm of the Crackling Conqueror
 							i(95582),	-- Helm of the Crackling Protector
 							i(95571),	-- Helm of the Crackling Vanquisher
@@ -1298,19 +1397,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(832, {	-- Lei Shen
 						["crs"] = { 68397 },	-- Lei Shen
 						["g"] = {
-							ach(8090, {	-- A Complete Circuit
-								crit(22797, {	-- Static Shock Conduit Disabled First
-								}),
-								crit(22996, {	-- Diffusion Chain Conduit Disabled First
-								}),
-								crit(22997, {	-- Overcharge Conduit Disabled First
-								}),
-								crit(22998, {	-- Bouncing Bolt Conduit Disabled First
-								}),
-							}),
-							ach(8249, {	-- Ahead of the Curve: Lei Shen
-								["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
-							}),
 							i(94986),	-- Conduit-Breaker Chain Leggings
 							i(94984),	-- Doomed Crown of Lei Shen
 							i(94987),	-- Fusion Slasher Chestguard
@@ -1490,7 +1576,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = { 68476 },	-- Horridon
 						["g"] = {
 							ach(8057),	-- Heroic: Horridon
-							i(93666),	-- Spawn of Horridon (MOUNT!)
 							i(96408),	-- Armplates of the Vanquished Abomination
 							i(96392),	-- Bindings of Multiplicative Strikes
 							i(96395),	-- Bloodlord's Bloodsoaked Legplates
@@ -1682,7 +1767,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = { 69712 },	-- Ji-Kun
 						["g"] = {
 							ach(8061),	-- Heroic: Ji-Kun
-							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 							i(96632),	-- Leggings of the Crackling Conqueror
 							i(96633),	-- Leggings of the Crackling Protector
 							i(96631),	-- Leggings of the Crackling Vanquisher
