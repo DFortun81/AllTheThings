@@ -500,8 +500,12 @@ local deserializers = {
 		for i=1,count,1 do
 			-- Build the instance container.
 			local instance, instanceData = {}, SplitString("@", data[i]);
-			local instanceName = instanceData[1]:gsub("%%3A", ":"):gsub("%%2C", ",");
-			currentValue[instanceName] = instance;
+			local savedInstanceID = instanceData[1]:gsub("%%3A", ":"):gsub("%%2C", ",");
+			local id = tonumber(savedInstanceID);
+			if tostring(id) == savedInstanceID then
+				savedInstanceID = id;
+			end
+			currentValue[savedInstanceID] = instance;
 			
 			-- Now iterate over the different difficulties
 			local dataCount = #instanceData;
@@ -569,9 +573,9 @@ local serializers = {
 	guid = ignoreField,
 	Lockouts = function(field, value, timeStamp, lastUpdated)
 		local any, str = false, field;
-		for instanceName,difficulties in pairs(value) do
+		for savedInstanceID,difficulties in pairs(value) do
 			-- Escape commas and colons from isntance names.
-			str = str .. ";" .. instanceName:gsub(":", "%%3A"):gsub(",", "%%2C");
+			str = str .. ";" .. tostring(savedInstanceID):gsub(":", "%%3A"):gsub(",", "%%2C");
 			any = true;
 			for difficultyID,difficulty in pairs(difficulties) do
 				str = str .. 
