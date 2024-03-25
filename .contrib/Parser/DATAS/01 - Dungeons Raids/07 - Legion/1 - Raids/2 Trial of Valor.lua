@@ -171,26 +171,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
-				cr(114263, e(1819, {	-- Odyn
-					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
-					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
-				})),
-				e(1830, {	-- Guarm
-					["crs"] = {
-						114344,	-- Guarm
-						114323,	-- Guarm
-					},
-					["g"] = {
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
-					},
-				}),
-				cr(114537, e(1829, {	-- Helya
-					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
-					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
-				})),
-			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
@@ -255,6 +235,26 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(142513),	-- Token of the Lightning Keeper
 					})),
 				}),
+			}),
+			d(NORMAL_PLUS_RAID, {
+				cr(114263, e(1819, {	-- Odyn
+					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
+				})),
+				e(1830, {	-- Guarm
+					["crs"] = {
+						114344,	-- Guarm
+						114323,	-- Guarm
+					},
+					["g"] = {
+						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
+					},
+				}),
+				cr(114537, e(1829, {	-- Helya
+					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
+				})),
 			}),
 			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {

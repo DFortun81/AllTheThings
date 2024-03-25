@@ -104,72 +104,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
-				cr(102263, e(1706, {	-- Skorpyron
-					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
-					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
-				}),
-				cr(104415, e(1725, {	-- Chronomatic Anomaly
-					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
-					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-					i(138828),	-- Illusion: Chronos (ILLUSION!)
-				}),
-				cr(104288, e(1731, {	-- Trilliax
-					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
-					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
-				}),
-				cr(104881, e(1751, {	-- Spellblade Aluriel
-					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
-					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
-				}),
-				cr(103685, e(1762, {	-- Tichondrius
-					i(137687),	-- Plans: Fel Core Hound Harness (RECIPE!)
-					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
-					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
-				}),
-				cr(101002, e(1713, {	-- Krosus
-					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
-					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
-				}),
-				e(1761, {	-- High Botanist Tel'arn
-					["crs"] = {
-						109040,	-- Arcanist Tel'arn
-						104528,	-- High Botanist Tel'arn
-						109041,	-- Naturalist Tel'arn
-						109038,	-- Solarist Tel'arn
-					},
-					["g"] = {
-						i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
-						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
-						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
-					},
-				}),
-				cr(103758, e(1732, {	-- Star Augur Etraeus
-					i(142078),	-- Pattern: Imbued Silkweave Bag
-					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
-					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
-				}),
-				cr(106643, e(1743, {	-- Elisande
-					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
-					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
-				}),
-				e(1737, {	-- Gul'dan
-					["crs"] = {
-						104154,	-- Gul'dan
-						111022,	-- The Demon Within
-					},
-					["g"] = {
-						i(137574),	-- Felblaze Infernal (MOUNT!)
-						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
-						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
-						i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
-						i(143544),	-- Skull of Corruption (TOY!)
-						i(141061, {	-- Technique: Grimoire of the Abyssal
-							["timeline"] = { ADDED_10_1_5 },
-						}),
-					},
-				}),
-			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
@@ -437,6 +371,72 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(140820),	-- Phial of Fel Blood
 						i(140823),	-- Warchief's Shattered Tusk
 					}))
+				}),
+			}),
+			d(NORMAL_PLUS_RAID, {
+				cr(102263, e(1706, {	-- Skorpyron
+					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
+					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
+				}),
+				cr(104415, e(1725, {	-- Chronomatic Anomaly
+					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
+					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
+					i(138828),	-- Illusion: Chronos (ILLUSION!)
+				}),
+				cr(104288, e(1731, {	-- Trilliax
+					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
+					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
+				}),
+				cr(104881, e(1751, {	-- Spellblade Aluriel
+					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
+					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
+				}),
+				cr(103685, e(1762, {	-- Tichondrius
+					i(137687),	-- Plans: Fel Core Hound Harness (RECIPE!)
+					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
+					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
+				}),
+				cr(101002, e(1713, {	-- Krosus
+					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
+					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
+				}),
+				e(1761, {	-- High Botanist Tel'arn
+					["crs"] = {
+						109040,	-- Arcanist Tel'arn
+						104528,	-- High Botanist Tel'arn
+						109041,	-- Naturalist Tel'arn
+						109038,	-- Solarist Tel'arn
+					},
+					["g"] = {
+						i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
+						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
+						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
+					},
+				}),
+				cr(103758, e(1732, {	-- Star Augur Etraeus
+					i(142078),	-- Pattern: Imbued Silkweave Bag
+					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
+					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
+				}),
+				cr(106643, e(1743, {	-- Elisande
+					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
+					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
+				}),
+				e(1737, {	-- Gul'dan
+					["crs"] = {
+						104154,	-- Gul'dan
+						111022,	-- The Demon Within
+					},
+					["g"] = {
+						i(137574),	-- Felblaze Infernal (MOUNT!)
+						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
+						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
+						i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
+						i(143544),	-- Skull of Corruption (TOY!)
+						i(141061, {	-- Technique: Grimoire of the Abyssal
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					},
 				}),
 			}),
 			d(NORMAL_RAID, {
