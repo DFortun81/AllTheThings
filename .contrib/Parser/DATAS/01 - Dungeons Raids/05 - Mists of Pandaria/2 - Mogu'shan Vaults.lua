@@ -45,37 +45,93 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 				}),
 			}),
-			n(DROPS, {
-				i(167050, {	-- Baoh-Xi (PET!)
-					["crs"] = {
-						60400,	-- Jan-xi <Emperor's Open Hand>
-						60399,	-- Qin-xi <Emperor's Closed Fist>
-					},
-					["timeline"] = { ADDED_8_1_5 },
+			d(NORMAL_HEROIC_RAID, {
+				n(ZONE_DROPS, {
+					i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+					i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+					i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+					i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+					i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+					i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+					i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+					i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+					i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+					i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+					i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+					i(86382),	-- Pattern: Touch of the Light (RECIPE!)
+					i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
+					i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+					i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+					i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+					i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+					i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
 				}),
-				i(167049, {	-- Comet (PET!)
-					["crs"] = { 60410 },	-- Elegon
-					["timeline"] = { ADDED_8_1_5 },
-				}),
-				i(167047, {	-- Stoneclaw (PET!)
+				e(679, {	-- The Stone Guard
 					["crs"] = {
 						60047,	-- Amethyst Guardian
 						60051,	-- Cobalt Guardian
 						60043,	-- Jade Guardian
 						59915,	-- Jasper Guardian
 					},
-					["timeline"] = { ADDED_8_1_5 },
+					["g"] = {
+						ach(6823),	-- Must Love Dogs
+						i(167047, {	-- Stoneclaw (PET!)
+							["timeline"] = { ADDED_8_1_5 },
+						}),
+					},
 				}),
-				i(167048, {	-- Wayward Spirit (PET!)
+				e(689, {	-- Feng the Accursed
+					["crs"] = { 60009 },	-- Feng the Accursed
+					["g"] = {
+					},
+				}),
+				e(682, {	-- Gara'jal the Spiritbinder
 					["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
-					["timeline"] = { ADDED_8_1_5 },
+					["g"] = {
+						ach(7056),	-- Sorry, Were You Looking for This?
+						i(167048, {	-- Wayward Spirit (PET!)
+							["timeline"] = { ADDED_8_1_5 },
+						}),
+					},
 				}),
-				i(138804, {	-- Illusion: Colossus (ILLUSION!)
+				e(687, {	-- The Spirit Kings
+					["crs"] = {
+						60708,	-- Meng the Demented
+						60709,	-- Qiang the Merciless
+						60710,	-- Subetai the Swift
+						60701,	-- Zian of the Endless Shadow
+					},
+					["g"] = {
+						ach(6687),	-- Getting Hot In Here
+					},
+				}),
+				e(726, {	-- Elegon
+					["crs"] = { 60410 },	-- Elegon
+					["g"] = {
+						ach(6686),	-- Straight Six
+						i(87777),	-- Astral Cloud Serpent (MOUNT!)
+						i(167049, {	-- Comet (PET!)
+							["timeline"] = { ADDED_8_1_5 },
+						}),
+					},
+				}),
+				e(677, {	-- Will of the Emperor
 					["crs"] = {
 						60400,	-- Jan-xi <Emperor's Open Hand>
 						60399,	-- Qin-xi <Emperor's Closed Fist>
 					},
-					["timeline"] = { ADDED_7_0_3 },
+					["g"] = {
+						ach(6455),	-- Show Me Your Moves!
+						ach(6954, {	-- Ahead of the Curve: Will of the Emperor
+							["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						}),
+						i(167050, {	-- Baoh-Xi (PET!)
+							["timeline"] = { ADDED_8_1_5 },
+						}),
+						i(138804, {	-- Illusion: Colossus (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+					},
 				}),
 			}),
 			d(RAID_FINDER, {	-- Queue NPC
@@ -137,6 +193,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								i(89964),	-- Stonefang Chestguard
 								i(86743),	-- Stoneflesh Leggings
 								i(86740),	-- Stonemaw Armguards
+								i(167047, {	-- Stoneclaw (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 							},
 						}),
 						e(689, {	-- Feng the Accursed
@@ -174,6 +233,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								i(86760),	-- Sollerets of Spirit Splitting
 								i(86759),	-- Soulgrasp Choker
 								i(86768),	-- Spaulders of the Divided Mind
+								i(167048, {	-- Wayward Spirit (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 							},
 						}),
 					}),
@@ -219,6 +281,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								i(86799),	-- Starshatter
 								i(86796),	-- Torch of the Celestial Spark
 								i(86790),	-- Vial of Dragon's Blood
+								i(167049, {	-- Comet (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 							},
 						}),
 						e(677, {	-- Will of the Emperor
@@ -241,6 +306,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								i(86807),	-- Spaulders of the Emperor's Rage
 								i(86806),	-- Tihan, Scepter of the Sleeping Emperor
 								i(86810),	-- Worldwaker Cabochon
+								i(167050, {	-- Baoh-Xi (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 							},
 						}),
 					}),
@@ -259,24 +327,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(86044),	-- Jade Magistrate Figurine
 						i(86045),	-- Jade Courtesan Figurine
 						i(86046),	-- Jade Warlord Figurine
-						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
-						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
-						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
-						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
-						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
-						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
-						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
-						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
-						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
-						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
-						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
-						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
-						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
-						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
-						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
-						i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
-						i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
-						i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
 					}),
 					e(679, {	-- The Stone Guard
 						["crs"] = {
@@ -286,7 +336,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							59915,	-- Jasper Guardian
 						},
 						["g"] = {
-							ach(6823),	-- Must Love Dogs
 							i(85922),	-- Beads of the Mogu'shi
 							i(85979),	-- Cape of Three Lanterns
 							i(89768),	-- Claws of Amethyst
@@ -332,7 +381,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(682, {	-- Gara'jal the Spiritbinder
 						["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 						["g"] = {
-							ach(7056),	-- Sorry, Were You Looking for This?
 							i(86027),	-- Bindings of Ancient Spirits
 							i(89817),	-- Bonded Soul Bracers
 							i(86038),	-- Circuit of the Frail Soul
@@ -356,7 +404,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							60701,	-- Zian of the Endless Shadow
 						},
 						["g"] = {
-							ach(6687),	-- Getting Hot In Here
 							i(86047),	-- Amulet of the Hidden Kings
 							i(86127),	-- Bracers of Dark Thoughts
 							i(89818),	-- Bracers of Violent Meditation
@@ -376,8 +423,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(726, {	-- Elegon
 						["crs"] = { 60410 },	-- Elegon
 						["g"] = {
-							ach(6686),	-- Straight Six
-							i(87777),	-- Astral Cloud Serpent (MOUNT!)
 							i(89824),	-- Band of Bursting Novas
 							i(86132),	-- Bottle of Infinite Stars
 							i(86136),	-- Chestguard of Total Annihilation
@@ -400,10 +445,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							60399,	-- Qin-xi <Emperor's Closed Fist>
 						},
 						["g"] = {
-							ach(6455),	-- Show Me Your Moves!
-							ach(6954, {	-- Ahead of the Curve: Will of the Emperor
-								["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
-							}),
 							i(89823),	-- Chestguard of Eternal Vigilance
 							i(86146),	-- Crown of Opportunistic Strikes
 							i(89820),	-- Dreadeye Gaze
@@ -426,26 +467,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["g"] = {
-					n(ZONE_DROPS, {
-						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
-						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
-						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
-						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
-						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
-						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
-						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
-						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
-						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
-						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
-						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
-						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
-						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
-						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
-						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
-						i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
-						i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
-						i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
-					}),
 					e(679, {	-- The Stone Guard
 						["crs"] = {
 							60047,	-- Amethyst Guardian

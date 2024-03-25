@@ -193,6 +193,26 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			d(NORMAL_HEROIC_RAID, {
+				n(ZONE_DROPS, {
+					i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+					i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+					i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+					i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+					i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+					i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+					i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+					i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+					i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+					i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+					i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+					i(86382),	-- Pattern: Touch of the Light (RECIPE!)
+					i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
+					i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+					i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+					i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+					i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+					i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+				}),
 				e(745, {	-- Imperial Vizier Zor'lok
 					["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
 					["g"] = {
@@ -201,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
-				})
+				}),
 				e(744, {	-- Blade Lord Ta'yak
 					["crs"] = { 62543 },	-- Blade Lord Ta'yak
 					["g"] = {
@@ -262,25 +282,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(86046),	-- Jade Warlord Figurine
 						i(86189),	-- Jagged Hornet Bracers
 						i(86184),	-- Luminescent Firefly Wristguards
-						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
-						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
-						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
-						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
-						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
-						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
-						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
-						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
-						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
-						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
-						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
-						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 						i(86187),	-- Pearlescent Butterfly Wristbands
-						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
-						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
-						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
-						i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
-						i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
-						i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
 						i(86191),	-- Plated Locust Bracers
 						i(86190),	-- Serrated Wasp Bracers
 						i(86183),	-- Shining Cicada Bracers
@@ -418,25 +420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(86046),	-- Jade Warlord Figurine
 						i(86189),	-- Jagged Hornet Bracers
 						i(86184),	-- Luminescent Firefly Wristguards
-						i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
-						i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
-						i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
-						i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
-						i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
-						i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
-						i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
-						i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
-						i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
-						i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
-						i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
-						i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 						i(86187),	-- Pearlescent Butterfly Wristbands
-						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
-						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
-						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
-						i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
-						i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
-						i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
 						i(86191),	-- Plated Locust Bracers
 						i(86190),	-- Serrated Wasp Bracers
 						i(86183),	-- Shining Cicada Bracers
