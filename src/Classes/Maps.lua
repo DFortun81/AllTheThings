@@ -5,8 +5,8 @@ local L = app.L;
 local contains, IsQuestFlaggedCompleted = app.contains, app.IsQuestFlaggedCompleted;
 
 -- Global locals
-local coroutine, ipairs, pairs, rawset, tinsert, tonumber, math_floor
-	= coroutine, ipairs, pairs, rawset, tinsert, tonumber, math.floor;
+local coroutine, ipairs, pairs, rawset, tinsert, tonumber, math_floor, math_sqrt
+	= coroutine, ipairs, pairs, rawset, tinsert, tonumber, math.floor, math.sqrt;
 local CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown
 	= CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown;
 local C_Map_GetMapArtID = C_Map.GetMapArtID;
@@ -15,6 +15,7 @@ local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
 local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
+local C_Map_GetWorldPosFromMapPos = C_Map.GetWorldPosFromMapPos;
 local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures;
 local C_MapExplorationInfo_GetExploredAreaIDsAtPosition = C_MapExplorationInfo.GetExploredAreaIDsAtPosition;
 
@@ -23,6 +24,9 @@ local CurrentMapID;
 local MapIDToMapName = setmetatable({}, {
 	__index = L.MAP_ID_TO_ZONE_TEXT,
 });
+local function distance( x1, y1, x2, y2 )
+	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
+end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
 	if originalMapID then
@@ -69,8 +73,8 @@ local function GetCurrentMapID()
 			end
 		end
 		substitutions = remap.names;
-		if remap.isContinent then
-			remap.isContinent = nil;
+		if remap.isContinent and not remap.compiledList then
+			remap.compiledList = true;
 			local childMaps = C_Map_GetMapChildrenInfo(originalMapID);
 			if childMaps then
 				if not substitutions then
@@ -93,6 +97,29 @@ local function GetCurrentMapID()
 				if zoneTexts[name] then
 					--print(" SUBBED (name): ", name, info, mapID);
 					return mapID;
+				end
+			end
+			if remap.isContinent then
+				-- Attempt to find the closest map.
+				local position = C_Map_GetPlayerMapPosition(originalMapID, "player");
+				if position then
+					local continentID, worldPosition = C_Map_GetWorldPosFromMapPos(originalMapID, position);
+					local closestDistance, closestMapID = 99999999;
+					local px, py = worldPosition:GetXY();
+					for _,mapID in pairs(substitutions) do
+						position = C_Map_GetPlayerMapPosition(mapID, "player")
+						if position then
+							continentID, worldPosition = C_Map_GetWorldPosFromMapPos(mapID, position);
+							if worldPosition then
+								local dist = distance(px, py, worldPosition:GetXY());
+								if dist < closestDistance then
+									closestDistance = dist;
+									closestMapID = mapID;
+								end
+							end
+						end
+					end
+					if closestMapID then return closestMapID; end
 				end
 			end
 		end
