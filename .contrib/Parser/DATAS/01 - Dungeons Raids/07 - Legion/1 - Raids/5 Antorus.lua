@@ -135,19 +135,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3] (RECIPE!)
 				},
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
-				e(1987, {	-- Felhounds of Sargeras
-					["crs"] = {
-						122477,	-- F'harg
-						122135,	-- Shatug
-					},
-					["g"] = {
-						i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
-							["timeline"] = { ADDED_10_1_5 },
-						}),
-					},
-				}),
-			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
@@ -215,6 +202,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(152056),	-- Corrupting Dewclaw
 							i(152291),	-- Fraternal Fervor
 							i(152027),	-- Gravitational Condensate
+							i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
+								["timeline"] = { ADDED_10_1_5 },
+							}),
 						},
 					}),
 					e(1997, {	-- Antoran High Command
@@ -485,6 +475,59 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 				}),
 			}),
+			d(NORMAL_PLUS_RAID, {
+				e(1992, {	-- Garothi Worldbreaker
+					["crs"] = { 122450 },	-- Garothi Worldbreaker
+					["g"] = {
+						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
+					},
+				}),
+				e(1987, {	-- Felhounds of Sargeras
+					["crs"] = {
+						122477,	-- F'harg
+						122135,	-- Shatug
+					},
+					["g"] = {
+						i(152816),	-- Antoran Charhound (MOUNT!)
+						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
+						i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					},
+				}),
+				e(1997, {	-- Antoran High Command
+					["crs"] = {
+						122367,	-- Admiral Svirax
+						122369,	-- Chief Engineer Ishkar
+						122333,	-- General Erodus
+					},
+					["g"] = {
+						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
+					},
+				}),
+				e(1985, {	-- Portal Keeper Hasabel
+					["crs"] = { 122104 },	-- Portal Keeper Hasabel
+					["g"] = {
+						i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
+						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
+					},
+				}),
+				e(1984, {	-- Aggramar
+					["crs"] = { 121975 },	-- Aggramar
+					["g"] = {
+						i(152094),	-- Taeshalach
+					},
+				}),
+				cr(124828, e(2031, {	-- Argus the Unmaker
+					i(153115),	-- Scythe of the Unmaker [BLUE]
+				})),
+			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(49032, {	-- Antorus, the Burning Throne: Dark Passage (Normal)
@@ -525,7 +568,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						ach(11930, {	-- Worm-monger
 							["crs"] = { 124436 },	-- Blightscale Worm
 						}),
-						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -550,11 +592,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 					["g"] = {
 						ach(12065),	-- Hounds Good To Me
-						i(152816),	-- Antoran Charhound (MOUNT!)
-						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
-						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
-						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
-						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 						i(152000),	-- Shadowfused Chain Coif
 						i(151973),	-- Collar of Null-Flame
 						i(152004),	-- Pauldrons of the Soulburner
@@ -581,8 +618,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 					["g"] = {
 						ach(12129),	-- This is the War Room!
-						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
-						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -648,10 +683,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11928),	-- Portal Combat
-						i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
-						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -791,7 +822,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						ach(11915, {	-- Don't Sweat the Technique
 							["crs"] = { 123531 },	-- Manifestation of Taeshalach
 						}),
-						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 						i(152145),	-- Douli of Chi'Ji
@@ -822,7 +852,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
 					ach(12257),	-- Stardust Crusaders
-					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
 					i(152005),	-- Pauldrons of Colossal Burden
@@ -883,7 +912,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
-						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -907,11 +935,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						122135,	-- Shatug
 					},
 					["g"] = {
-						i(152816),	-- Antoran Charhound (MOUNT!)
-						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
-						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
-						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
-						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 						i(152000),	-- Shadowfused Chain Coif
 						i(151973),	-- Collar of Null-Flame
 						i(152004),	-- Pauldrons of the Soulburner
@@ -938,8 +961,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						122333,	-- General Erodus
 					},
 					["g"] = {
-						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
-						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1003,10 +1024,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1985, {	-- Portal Keeper Hasabel
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
-						i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
-						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -1139,7 +1156,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
-						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 						i(152145),	-- Douli of Chi'Ji
@@ -1175,7 +1191,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(152900, {	-- Blood of the Unmaker
 						["timeline"] = { "added 7.3", "removed 8.0" },
 					}),
-					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
 					i(152005),	-- Pauldrons of Colossal Burden
@@ -1259,11 +1274,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 					["g"] = {
 						ach(11993),	-- Mythic: Hounds of Sargeras
-						i(152816),	-- Antoran Charhound (MOUNT!)
-						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
-						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
-						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
-						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 						i(152000),	-- Shadowfused Chain Coif
 						i(151973),	-- Collar of Null-Flame
 						i(152004),	-- Pauldrons of the Soulburner
@@ -1290,8 +1300,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 					["g"] = {
 						ach(11994),	-- Mythic: Antoran High Command
-						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
-						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1357,10 +1365,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11995),	-- Mythic: Portal Keeper Hasabel
-						i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
-						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -1540,7 +1544,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					ach(12113),	-- Mythic: Argus the Unmaker Guild Run
 					i(152789),	-- Shackled Ur'zul (MOUNT!)
 					i(155880),	-- Scythe of the Unmaker [RED]
-					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
 					i(152005),	-- Pauldrons of Colossal Burden
