@@ -375,28 +375,38 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(NORMAL_PLUS_RAID, {
 				cr(102263, e(1706, {	-- Skorpyron
+					ach(10678),	-- Cage Rematch
 					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
 					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
+					ach(10697),	-- Grand Opening
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
 					i(138828),	-- Illusion: Chronos (ILLUSION!)
 				})),
 				cr(104288, e(1731, {	-- Trilliax
+					ach(10742),	-- Gluten Free
 					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
 					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
 				})),
 				cr(104881, e(1751, {	-- Spellblade Aluriel
+					ach(10817, {	-- A Change In Scenery
+						crit(31807),	-- The Shal'dorei Terrace
+						crit(31806),	-- The Shattered Walkway
+						crit(31808),	-- Astromancer's Rise
+					}),
 					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
 					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
+					ach(10704),	-- Not For You
 					i(137687),	-- Plans: Fel Core Hound Harness (RECIPE!)
 					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
 					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 				})),
 				cr(101002, e(1713, {	-- Krosus
+					ach(10575),	-- Burning Bridges
 					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
 					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
 				})),
@@ -408,17 +418,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						109038,	-- Solarist Tel'arn
 					},
 					["g"] = {
+						ach(10754),	-- Fruit of All Evil
 						i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
 						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
 						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
 					},
 				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
+					ach(10851, {	-- Elementalry!
+						["crs"] = { 111595 },	-- Well-Traveled Nether Elemental
+					}),
 					i(142078),	-- Pattern: Imbued Silkweave Bag
 					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
 				})),
 				cr(106643, e(1743, {	-- Elisande
+					ach(10699, {	-- Infinitesimal
+						["crs"] = { 108802 },	-- Infinite Drakeling
+					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
 				})),
@@ -428,6 +445,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						111022,	-- The Demon Within
 					},
 					["g"] = {
+						ach(10696, {	-- I've Got My Eyes On You
+							["crs"] = { 105630 },	-- Eye of Gul'dan <Gul'dan's Minion>
+						}),
 						i(137574),	-- Felblaze Infernal (MOUNT!)
 						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
 						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
@@ -470,7 +490,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(144405),	-- Waistclasp of Unethical Power
 				}),
 				cr(102263, e(1706, {	-- Skorpyron
-					ach(10678),	-- Cage Rematch
 					i(140901),	-- Vintage Suramar Nobility Hat
 					i(140898),	-- Radiant String of Scorpid Eyes
 					i(140875),	-- Arcanochitin Hauberk
@@ -487,7 +506,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140827),	-- Manatoxin Gland
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
-					ach(10697),	-- Grand Opening
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
 					i(140853),	-- Chaos-Scarred Mantle
@@ -504,7 +522,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140831),	-- Suspended Nightwell Droplet
 				})),
 				cr(104288, e(1731, {	-- Trilliax
-					ach(10742),	-- Gluten Free
 					i(143577, {	-- Cloak of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138375),	-- Cape of Second Sight
 						i(138373),	-- Cloak of Azj'Aqir
@@ -538,11 +555,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140812),	-- Soggy Manascrubber Brush
 				})),
 				cr(104881, e(1751, {	-- Spellblade Aluriel
-					ach(10817, {	-- A Change In Scenery
-						crit(31807),	-- The Shal'dorei Terrace
-						crit(31806),	-- The Shattered Walkway
-						crit(31808),	-- Astromancer's Rise
-					}),
 					i(140866),	-- Nightborne Battle-Magus Hood
 					i(140877),	-- Captain's Parade Breastplate
 					i(140850),	-- Bracers of Harnessed Flame
@@ -559,7 +571,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140834),	-- Soul of Flame
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
-					ach(10704),	-- Not For You
 					i(143566, {	-- Shoulders of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138323),	-- Pauldrons of Azj'Aqir
 						i(138362),	-- Pauldrons of the Highlord
@@ -589,7 +600,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140824),	-- Writ of Subjugation
 				})),
 				cr(101002, e(1713, {	-- Krosus
-					ach(10575),	-- Burning Bridges
 					i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138350),	-- Breastplate of the Highlord
 						i(138320),	-- Finery of Azj'Aqir
@@ -627,7 +637,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						109038,	-- Solarist Tel'arn
 					},
 					["g"] = {
-						ach(10754),	-- Fruit of All Evil
 						i(140881),	-- Eventide Casque
 						i(140883),	-- Shoulderguard of the Eclipse
 						i(140874),	-- Thistle-Proof Thorngrabbers
@@ -644,9 +653,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
-					ach(10851, {	-- Elementalry!
-						["crs"] = { 111595 },	-- Well-Traveled Nether Elemental
-					}),
 					i(143563, {	-- Gauntlets of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138311),	-- Clutch of Azj'Aqir
 						i(138377),	-- Gloves of Second Sight
@@ -677,9 +683,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140841),	-- Tempest of the Heavens
 				})),
 				cr(106643, e(1743, {	-- Elisande
-					ach(10699, {	-- Infinitesimal
-						["crs"] = { 108802 },	-- Infinite Drakeling
-					}),
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138314),	-- Eyes of Azj'Aqir
 						i(138356),	-- Helmet of the Highlord
@@ -711,9 +714,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140810),	-- Farsight Spiritjewel
 				})),
 				cr(104154, e(1737, {	-- Gul'dan
-					ach(10696, {	-- I've Got My Eyes On You
-						["crs"] = { 105630 },	-- Eye of Gul'dan <Gul'dan's Minion>
-					}),
 					i(143564, {	-- Leggings of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138317),	-- Leggings of Azj'Aqir
 						i(138359),	-- Legplates of the Highlord
