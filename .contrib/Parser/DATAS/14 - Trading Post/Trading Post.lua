@@ -1674,6 +1674,19 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 10.2.6"} }, {
+			n(MONTHLY_REWARD, {
+				i(210409),	-- Aura (PET!)
+			}),
+			filter(BATTLE_PETS, {
+			}),
+			filter(MOUNTS, {
+			}),
+			filter(TOYS, {
+			}),
+			filter(COSMETIC, {
+			}),
+		})),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
@@ -2027,5 +2040,132 @@ root(ROOTS.NeverImplemented, {
 			i(190539),	-- Coral-Stalker Waveray (MOUNT!)
 			i(137615),	-- Molten Flarecore (MOUNT!)
 		}),
+			i(160589, { -- The Dreadwake
+				["cost"] = {{"c", TRADERS_TENDER, 750}},
+			}),
+			i(190164, { -- Arsenal: Blades of Elune
+				["cost"] = {{"c", TRADERS_TENDER, 600}},
+			}),
+			i(190674, { -- Leaky Bucket
+				["cost"] = {{"c", TRADERS_TENDER, 75}},
+			}),
+			i(190844, { -- Valarjar Champion's Greatsword
+				["cost"] = {{"c", TRADERS_TENDER, 200}},
+			}),
+			i(192766, { -- Amber Skitterfly
+				["cost"] = {{"c", TRADERS_TENDER, 600}},
+			}),
+			i(206325, { -- Ensemble: Vagabond's Brick Threads
+				["cost"] = {{"c", TRADERS_TENDER, 100}},
+			}),
+			i(206336, { -- Ensemble: Wanderer's Brick Trappings
+				["cost"] = {{"c", TRADERS_TENDER, 100}},
+			}),
+			i(213062, { -- Paradise's Golden Axe
+				["cost"] = {{"c", TRADERS_TENDER, 300}},
+			}),
+			i(213065, { -- Lavish Floral Edge
+				["cost"] = {{"c", TRADERS_TENDER, 300}},
+			}),
+			i(213068, { -- Lavish Floral Stalk
+				["cost"] = {{"c", TRADERS_TENDER, 300}},
+			}),
+			i(213071, { -- Sunny Floral Staff
+				["cost"] = {{"c", TRADERS_TENDER, 300}},
+			}),
+			i(213075, { -- Sunny Bow-quet
+				["cost"] = {{"c", TRADERS_TENDER, 300}},
+			}),
+			i(213084, { -- Ensemble: Spring Reveler's Lavender Apparel
+				["cost"] = {{"c", TRADERS_TENDER, 300}},
+			}),
+			i(213106, { -- Gladiator's Serrated Greatsword
+				["cost"] = {{"c", TRADERS_TENDER, 275}},
+			}),
+			i(213107, { -- Gladiator's Ragged Greatsword
+				["cost"] = {{"c", TRADERS_TENDER, 275}},
+			}),
+			i(213393, { -- Guise of the Golden Masquerade
+				["cost"] = {{"c", TRADERS_TENDER, 200}},
+			}),
+			i(213394, { -- Ebony Crown of the Red Rose
+				["cost"] = {{"c", TRADERS_TENDER, 250}},
+			}),
+			i(213395, { -- Gloves of the Midnight Soiree
+				["cost"] = {{"c", TRADERS_TENDER, 100}},
+			}),
+			i(213396, { -- Classic Midnight Tabard
+				["cost"] = {{"c", TRADERS_TENDER, 100}},
+			}),
+			i(217043, { -- Pokee
+				["cost"] = {{"c", TRADERS_TENDER, 350}},
+			}),
+			i(217372, { -- Frenzied Hat of the Deep Blue
+				["cost"] = {{"c", TRADERS_TENDER, 175}},
+			}),
+			i(217381, { -- Ensemble: Fearless Buccaneer's Slops
+				["cost"] = {{"c", TRADERS_TENDER, 650}},
+			}),
+			i(54069, { -- Blazing Hippogryph
+				["cost"] = {{"c", TRADERS_TENDER, 600}},
+			}),
+			i(190613, { -- Savage Green Battle Turtle
+				["cost"] = {{"c", TRADERS_TENDER, 500}},
+			}),
+			i(206326, { -- Ensemble: Vagabond's Camo Threads
+				["cost"] = {{"c", TRADERS_TENDER, 0}},
+			}),
+			i(206337, { -- Ensemble: Wanderer's Camo Trappings
+				["cost"] = {{"c", TRADERS_TENDER, 0}},
+			}),
+			i(210860, { -- Trader's Violet Sarong
+				["cost"] = {{"c", TRADERS_TENDER, 100}},
+			}),
+			i(212577, { -- Arsenal: Skyborn Blades
+				["cost"] = {{"c", TRADERS_TENDER, 0}},
+			}),
+			i(212616, { -- Dueler's Violet Shoulder Cape
+				["cost"] = {{"c", TRADERS_TENDER, 75}},
+			}),
+			i(212621, { -- Dueler's Lively Shoulder Cape
+				["cost"] = {{"c", TRADERS_TENDER, 75}},
+			}),
+			i(212708, { -- Spring Reveler's Dandelion Attire
+				["cost"] = {{"c", TRADERS_TENDER, 150}},
+			}),
+			i(212709, { -- Spring Reveler's Dandelion Belt
+				["cost"] = {{"c", TRADERS_TENDER, 50}},
+			}),
+			i(212710, { -- Spring Reveler's Dandelion Boots
+				["cost"] = {{"c", TRADERS_TENDER, 50}},
+			}),
+			i(212714, { -- Spring Reveler's Dandelion Dress
+				["cost"] = {{"c", TRADERS_TENDER, 200}},
+			}),
+			i(212718, { -- Spring Reveler's Dandelion Sun Hat
+				["cost"] = {{"c", TRADERS_TENDER, 300}},
+			}),
+			i(212785, { -- Helm of the Stout
+				["cost"] = {{"c", TRADERS_TENDER, 225}},
+			}),
+			i(212787, { -- Gloves of the Violet Gala
+				["cost"] = {{"c", TRADERS_TENDER, 100}},
+			}),
+			i(212788, { -- Gossamer Emerald Gown
+				["cost"] = {{"c", TRADERS_TENDER, 150}},
+			}),
+			i(212790, { -- Codex of Classic Conjurations
+				["cost"] = {{"c", TRADERS_TENDER, 175}},
+			}),
+			i(212920, { -- Savage Blue Battle Turtle
+				["cost"] = {{"c", TRADERS_TENDER, 500}},
+			}),
+			i(212988, { -- Spring Reveler's Dandelion Pants
+				["cost"] = {{"c", TRADERS_TENDER, 50}},
+			}),
+			i(212990, { -- Classic Violet Tabard
+				["cost"] = {{"c", TRADERS_TENDER, 100}},
+			}),
+			
 	})),
 });
