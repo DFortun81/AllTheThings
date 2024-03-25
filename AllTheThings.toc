@@ -75,6 +75,7 @@ db\ReagentsDB.lua
 
 # Load object class templates
 src\Classes\base.lua
+src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
