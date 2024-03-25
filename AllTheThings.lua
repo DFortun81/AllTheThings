@@ -2570,7 +2570,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			local sourcesToShow
 			for _,j in ipairs(group.g or group) do
 				parent = j.parent;
-				if parent and not FirstParent(j, "hideText") and parent.parent
+				if parent and parent.parent
 					and (showCompleted or not app.IsComplete(j))
 					and not HasCost(j, paramA, paramB)
 				then
@@ -7797,7 +7797,6 @@ local function UpdateWindowsOnEnd()
 end
 local function UpdateWindows(force, got)
 	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
-	app._LastUpdateTime = GetTimePreciseSec();
 	-- After handling all Updates, perform some logic
 	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
 	local Run = app.UpdateRunner.Run;
@@ -8481,7 +8480,6 @@ function app:CreateMiniListForGroup(group)
 										and app.RecursiveGroupRequirementsFilter(found) then
 										sourceQuest = CreateObject(found);
 										sourceQuest.visible = true;
-										sourceQuest.hideText = true;
 										if found.sourceQuests and #found.sourceQuests > 0 and
 											(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 											-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
@@ -8494,10 +8492,10 @@ function app:CreateMiniListForGroup(group)
 									end
 								elseif sourceQuestID > 0 then
 									-- Create a Quest Object.
-									sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
+									sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true });
 								else
 									-- Create a NPC Object.
-									sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
+									sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true });
 								end
 
 								-- If the quest was valid, attach it.
@@ -8521,7 +8519,6 @@ function app:CreateMiniListForGroup(group)
 								["visible"] = true,
 								["expanded"] = true,
 								["g"] = g,
-								["hideText"] = true
 							});
 							g = prereqs;
 						end
@@ -8605,8 +8602,6 @@ function app:CreateMiniListForGroup(group)
 		-- sum up all the sub-group costs into a Total Costs group
 		app.BuildTotalCost(popout.data)
 
-		popout.data.hideText = true;
-		popout.data.visible = true;
 		popout:BuildData();
 		-- always expand all groups on initial creation
 		ExpandGroupsRecursively(popout.data, true, true);
