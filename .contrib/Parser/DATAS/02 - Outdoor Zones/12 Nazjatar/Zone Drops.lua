@@ -3,12 +3,6 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(ZONE_DROPS, {
-		--[[ TODO:: where are lockboxes going?
-		i(169475, {	-- Barnacled Lockbox (also drops all zone drops
-			i(170118),	-- Centurion's Shortsword
-			i(170120),	-- Handmaiden's Longstaff
-		}),
-		]]--
 	-- Benthic Items
 		i(169478, {	-- Benthic Bracers
 			i(170121),	-- Azsh'iri Stormsurger Armwraps
@@ -147,7 +141,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		i(170184, {	-- Ancient Reefwalker Bark
 			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
 		}),
+		i(169475),	-- Barnacled Lockbox
 		i(170188, {	-- Barnacled Bag of Goods
+			["description"] = "Drops very rarely from Kil'karrok Mobs.",
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 				145346,	-- Kil'karrok Commander
 				152413,	-- Kil'karrok Hammerclaw

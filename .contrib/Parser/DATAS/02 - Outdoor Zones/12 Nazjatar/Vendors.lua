@@ -429,10 +429,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["description"] = "Contains a piece of Benthic gear.",
 				}),
 				i(168091, {	-- Severly Rusted Lockbox
+					["sym"] = { { "select", "itemID",
+						169475,	-- Barnacled Lockbox
+					}},
 					["description"] = "Contains a Barnacled Lockbox.",	-- Description added so you dont need debug mode to see contained items.
-					["g"] = {
-						i(169475),	-- Barnacled Lockbox
-					},
 				}),
 				i(170152, {	-- Shadow-Cloaked Shell
 					["description"] = "Grants 150 reputation with your Nazjatar faction.",
