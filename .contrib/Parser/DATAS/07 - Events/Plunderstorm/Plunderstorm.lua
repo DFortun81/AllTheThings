@@ -10,9 +10,9 @@ PLUNDERSTORM = createHeader({
 	-- #endif
 	eventID = EVENTS.PLUNDERSTORM,
 	eventSchedule = {
-		0, -- March 16th to May 14th 2024
-		2024, 03, 16,	-- 03/16/2024
-		2024, 05, 14,	-- 05/14/2024
+		0, -- March 19th to supposedly April 30th 2024
+		2024, 03, 19,	-- 19/03/2024
+		2024, 04, 30,	-- 30/04/2024
 	},
 	text = {
 		en = "Plunderstorm",
