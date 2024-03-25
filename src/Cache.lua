@@ -258,6 +258,16 @@ local function zoneArtIDRunner(group, value)
 		for j,artID in ipairs(value) do
 			artIDs[artID] = mapID;
 		end
+			
+		-- Uncache the original mapID
+		local mapIDCache = currentCache.mapID;
+		mapIDCache = mapIDCache[originalMapID];
+		for i,o in ipairs(mapIDCache) do
+			if o == group then
+				table.remove(mapIDCache, i);
+				break;
+			end
+		end
 		
 		--local info = C_Map_GetMapInfo(originalMapID);
 		--print("MapRemapping (artIDs): ", originalMapID, info and info.name, mapID, group.text);
