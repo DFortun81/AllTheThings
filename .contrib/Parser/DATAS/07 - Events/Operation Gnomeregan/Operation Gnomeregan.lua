@@ -11,7 +11,7 @@ OPERATION_GNOMEREGAN = createHeader({
 		en = "Operation: Gnomeregan was the name of Gelbin Mekkatorque's plan for the retaking of the surface of Gnomeregan. Only Alliance players between level 75 and 80 were able to serve during the operation, but lower level players helped by motivating other gnomes or by turning in items.",
 	},
 });
-root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n(OPERATION_GNOMEREGAN,
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n(OPERATION_GNOMEREGAN,
 	bubbleDown({
 		["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 		["races"] = ALLIANCE_ONLY,
@@ -21,7 +21,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 				t.u = ]] .. REMOVED_FROM_GAME .. [[;
 				t.rwp = nil;
 			else
-				t.u = ]] .. WRATH_PHASE_FOUR_ELEMENTAL_INVASION .. [[;
+				t.u = ]] .. WRATH_PHASE_FOUR_OPERATION_ZALAZANE .. [[;
 				t.rwp = 40003;
 			end
 		end]],
