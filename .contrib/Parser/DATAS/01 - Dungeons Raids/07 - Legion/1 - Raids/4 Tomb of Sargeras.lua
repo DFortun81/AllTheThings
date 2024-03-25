@@ -440,6 +440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1861, {	-- Mistress Sassz'ine
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
+						i(143643),	-- Abyss Worm (MOUNT!)
 						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
 							["timeline"] = { ADDED_10_2_5 },
 						}),
@@ -602,7 +603,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11676),	-- Five Course Seafood Buffet
-						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
 						i(146985),	-- Shroud of the Drowned Adherent
@@ -891,7 +891,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1861, {	-- Mistress Sassz'ine
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
-						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
 						i(146985),	-- Shroud of the Drowned Adherent
@@ -1182,7 +1181,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11776),	-- Mythic: Mistress Sassz'ine
-						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
 						i(146985),	-- Shroud of the Drowned Adherent
