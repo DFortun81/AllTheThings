@@ -675,6 +675,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(1527, {	-- Majordomo Executus
 				["creatureID"] = 12018,
+				["provider"] = { "o", 179703 },	-- Cache of the Firelord
 				["groups"] = {
 					i(18703, {	-- Ancient Petrified Leaf
 						["classes"] = { HUNTER },
