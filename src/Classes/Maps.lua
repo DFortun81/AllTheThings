@@ -25,66 +25,104 @@ local MapIDToMapName = setmetatable({}, {
 });
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
-	local remap = app.MapRemapping[originalMapID];
-	local info = C_Map_GetMapInfo(originalMapID);
-	--print("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
-	if not remap then return originalMapID; end
-	
-	local substitutions = remap.artIDs;
-	if substitutions then
-		local artID = C_Map_GetMapArtID(originalMapID);
-		if artID then
-			local mapID = substitutions[artID];
-			if mapID then
-				--print(" SUBBED (artID): ", artID, mapID);
-				return mapID;
+	if originalMapID then
+		local remap = app.MapRemapping[originalMapID];
+		if not remap then return originalMapID; end
+		
+		local info = C_Map_GetMapInfo(originalMapID);
+		--print("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
+		
+		local substitutions = remap.artIDs;
+		if substitutions then
+			local artID = C_Map_GetMapArtID(originalMapID);
+			if artID then
+				local mapID = substitutions[artID];
+				if mapID then
+					--print(" SUBBED (artID): ", artID, mapID);
+					return mapID;
+				end
 			end
 		end
-	end
-	
-	local zoneTexts = {};
-	local name = GetRealZoneText();
-	if name and name:len() > 0 then
-		zoneTexts[name] = 1;
-	end
-	name = GetSubZoneText();
-	if name and name:len() > 0 then
-		zoneTexts[name] = 1;
-	end
-	name = GetZoneText();
-	if name and name:len() > 0 then
-		zoneTexts[name] = 1;
-	end
-	
-	substitutions = remap.areaIDs;
-	if substitutions then
-		for areaID,mapID in pairs(substitutions) do
-			local info = C_Map_GetAreaInfo(areaID);
-			if info and zoneTexts[info] then
-				--print(" SUBBED (areaID): ", areaID, info, mapID);
-				return mapID;
+		
+		local zoneTexts = {};
+		local name = GetRealZoneText();
+		if name and name:len() > 0 then
+			zoneTexts[name] = 1;
+		end
+		name = GetSubZoneText();
+		if name and name:len() > 0 then
+			zoneTexts[name] = 1;
+		end
+		name = GetZoneText();
+		if name and name:len() > 0 then
+			zoneTexts[name] = 1;
+		end
+		
+		substitutions = remap.areaIDs;
+		if substitutions then
+			for areaID,mapID in pairs(substitutions) do
+				local info = C_Map_GetAreaInfo(areaID);
+				if info and zoneTexts[info] then
+					--print(" SUBBED (areaID): ", areaID, info, mapID);
+					return mapID;
+				end
 			end
 		end
-	end
-	substitutions = remap.names;
-	if remap.isContinent then
-		remap.isContinent = nil;
-		local childMaps = C_Map_GetMapChildrenInfo(originalMapID);
-		if childMaps then
-			if not substitutions then
-				substitutions = {};
-				remap.names = substitutions;
-			end
-			for j,childMapInfo in ipairs(childMaps) do
-				substitutions[childMapInfo.name] = childMapInfo.mapID;
+		substitutions = remap.names;
+		if remap.isContinent then
+			remap.isContinent = nil;
+			local childMaps = C_Map_GetMapChildrenInfo(originalMapID);
+			if childMaps then
+				if not substitutions then
+					substitutions = {};
+					remap.names = substitutions;
+				end
+				for j,childMapInfo in ipairs(childMaps) do
+					substitutions[childMapInfo.name] = childMapInfo.mapID;
+				end
 			end
 		end
-	end
-	if substitutions then
-		for name,mapID in pairs(substitutions) do
-			if zoneTexts[name] then
-				--print(" SUBBED (name): ", name, info, mapID);
-				return mapID;
+		if substitutions then
+			for name,mapID in pairs(substitutions) do
+				if zoneTexts[name] then
+					--print(" SUBBED (name): ", name, info, mapID);
+					return mapID;
+				end
+			end
+		end
+	else
+		local zoneTexts,substitutions = {};
+		local name = GetRealZoneText();
+		if name and name:len() > 0 then
+			zoneTexts[name] = 1;
+		end
+		name = GetSubZoneText();
+		if name and name:len() > 0 then
+			zoneTexts[name] = 1;
+		end
+		name = GetZoneText();
+		if name and name:len() > 0 then
+			zoneTexts[name] = 1;
+		end
+		for mapID,remap in pairs(app.MapRemapping) do
+			substitutions = remap.areaIDs;
+			if substitutions then
+				for areaID,mapID in pairs(substitutions) do
+					local info = C_Map_GetAreaInfo(areaID);
+					if info and zoneTexts[info] then
+						--print(" SUBBED (areaID): ", areaID, info, mapID);
+						return mapID;
+					end
+				end
+			end
+			substitutions = remap.names;
+			if substitutions then
+				for name,mapID in pairs(substitutions) do
+					if zoneTexts[name] then
+						--print(" SUBBED (name): ", name, info, mapID);
+						return mapID;
+					end
+				end
 			end
 		end
 	end
