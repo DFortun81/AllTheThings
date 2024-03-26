@@ -1048,7 +1048,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 			}),
-			d(MYTHIC_RAID, {
+			Difficulty(MYTHIC_RAID).AddGroups({
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack

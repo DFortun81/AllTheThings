@@ -677,7 +677,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							}),
 						}),
 					},
-				}),			
+				}),
 				e(828, {	-- Ji-Kun
 					["crs"] = { 69712 },	-- Ji-Kun
 					["g"] = {
@@ -795,16 +795,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					},
 					["g"] = {
 						ach(8087, {	-- Can't Touch This
-							crit(22791, {	-- Burning Cinders
-							}),
-							crit(22792, {	-- Frozen Blood
-							}),
-							crit(22793, {	-- Storm Cloud
-							}),
-							crit(22794, {	-- Frozen Solid!
-							}),
-							crit(22795, {	-- Rushing Winds
-							}),
+							crit(22791),	-- Burning Cinders
+							crit(22792),	-- Frozen Blood
+							crit(22793),	-- Storm Cloud
+							crit(22794),	-- Frozen Solid!
+							crit(22795),	-- Rushing Winds
 						}),
 					},
 				}),
@@ -824,18 +819,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 						}),
 						ach(8090, {	-- A Complete Circuit
-							crit(22797, {	-- Static Shock Conduit Disabled First
-								["_encounter"] = { 832, LFR_RAID },
-							}),
-							crit(22996, {	-- Diffusion Chain Conduit Disabled First
-								["_encounter"] = { 832, LFR_RAID },
-							}),
-							crit(22997, {	-- Overcharge Conduit Disabled First
-								["_encounter"] = { 832, LFR_RAID },
-							}),
-							crit(22998, {	-- Bouncing Bolt Conduit Disabled First
-								["_encounter"] = { 832, LFR_RAID },
-							}),
+							crit(22797),	-- Static Shock Conduit Disabled First
+							crit(22996),	-- Diffusion Chain Conduit Disabled First
+							crit(22997),	-- Overcharge Conduit Disabled First
+							crit(22998),	-- Bouncing Bolt Conduit Disabled First
 						}),
 					},
 				}),
