@@ -51,11 +51,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(7065, {	-- Corruption of Earth and Seed [Alliance]
-					["qg"] = 13698,	-- Keeper Marandis
-					["coord"] = { 63.8, 10.6, DESOLACE },
+				{	-- Corruption of Earth and Seed
+					["allianceQuestData"] = q(7065, {	-- Corruption of Earth and Seed (A)
+						["qg"] = 13698,	-- Keeper Marandis
+						["coord"] = { 63.8, 10.6, DESOLACE },
+					}),
+					["hordeQuestData"] = q(7064, {	-- Corruption of Earth and Seed (H)
+						["qg"] = 13699,	-- Selendra
+						["coord"] = { 26.9, 77.7, DESOLACE },
+					}),
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Princess Theradras slain
@@ -71,28 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
-				}),
-				q(7064, {	-- Corruption of Earth and Seed [Horde]
-					["qg"] = 13699,	-- Selendra
-					["coord"] = { 26.9, 77.7, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 45,
-					["groups"] = {
-						objective(1, {	-- 0/1 Princess Theradras slain
-							["provider"] = { "n", 12201 },	-- Princess Theradras
-						}),
-						i(17705, {	-- Thrash Blade
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(17743, {	-- Resurgence Rod
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(17753, {	-- Verdant Keeper's Aim
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
+				},
 				q(7044, {	-- Legends of Maraudon
 					["qg"] = 13697,	-- Cavindra
 					["coord"] = { 32.1, 64.0, DESOLACE },
@@ -152,15 +136,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(7070, {	-- Shadowshard Fragments [Alliance]
-					["qg"] = 4967,	-- Archmage Tervosh
-					["coord"] = { 66.4, 49.3, DUSTWALLOW_MARSH },
+				{	-- Shadowshard Fragments
+					["allianceQuestData"] = q(7070, {	-- Shadowshard Fragments (A)
+						["qg"] = 4967,	-- Archmage Tervosh
+						["coord"] = { 66.4, 49.3, DUSTWALLOW_MARSH },
+					}),
+					["hordeQuestData"] = q(7068, {	-- Shadowshard Fragments (H)
+						["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
+						["coord"] = { 39.2, 86.3, ORGRIMMAR },
+					}),
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
 						objective(1, {	-- 0/10 Shadowshard Fragment
 							["provider"] = { "i", 17756 },	-- Shadowshard Fragment
+							["crs"] = {
+								11777,	-- Shadowshard Rumbler
+								11778,	-- Shadowshard Smasher
+							},
 						}),
 						i(17773, {	-- Prodigious Shadowshard Pendant
 							["timeline"] = { "removed 4.0.3" },
@@ -169,25 +162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
-				}),
-				q(7068, {	-- Shadowshard Fragments [Horde]
-					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
-					["coord"] = { 39.2, 86.3, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 39,
-					["groups"] = {
-						objective(1, {	-- 0/10 Shadowshard Fragment
-							["provider"] = { "i", 17756 },	-- Shadowshard Fragment
-						}),
-						i(17773, {	-- Prodigious Shadowshard Pendant
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(17772, {	-- Zealous Shadowshard Pendant
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
+				},
 				q(7067, {	-- The Pariah's Instructions
 					["providers"] = {
 						{ "n", 13717 },	-- Centaur Pariah
@@ -292,11 +267,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(7041, {	-- Vyletongue Corruption [Alliance]
-					["qg"] = 11715,	-- Talendria
-					["coord"] = { 68.4, 8.8, DESOLACE },
+				{	-- Vyletongue Corruption
+					["allianceQuestData"] = q(7041, {	-- Vyletongue Corruption (A)
+						["qg"] = 11715,	-- Talendria
+						["coord"] = { 68.4, 8.8, DESOLACE },
+					}),
+					["hordeQuestData"] = q(7029, {	-- Vyletongue Corruption (H)
+						["qg"] = 11823,	-- Vark Battlescar
+						["coord"] = { 23.2, 70.3, DESOLACE },
+					}),
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 41,
 					["groups"] = {
 						-- #if BEFORE 4.0.3
@@ -321,45 +301,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
-				}),
-				q(7029, {	-- Vyletongue Corruption [Horde]
-					["qg"] = 11823,	-- Vark Battlescar
-					["coord"] = { 23.2, 70.3, DESOLACE },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 41,
-					["groups"] = {
-						-- #if BEFORE 4.0.3
-						objective(1, {	-- 0/8 Vylestem Vines healed
-							["provider"] = { "n", 13696 },	-- Noxxious Scion
-							["cost"] = { { "i", 17696, 1 } },	-- Filled Cerulean Vial
-							["description"] = "Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",
-						}),
-						i(17696, {	-- Filled Cerulean Vial
-							["description"] = "Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",
-							["coord"] = { 38, 58, DESOLACE },
-							["cost"] = { { "i", 17693, 1 } },	-- Coated Cerulean Vial
-						}),
-						-- #endif
-						i(17770, {	-- Branchclaw Gauntlets
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(17778, {	-- Sagebrush Girdle
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(17768, {	-- Woodseed Hoop
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
+				},
 			}),
 			n(ZONE_DROPS, {
-				i(17756, {	-- Shadowshard Fragment
-					["crs"] = {
-						11777,	-- Shadowshard Rumbler
-						11778,	-- Shadowshard Smasher
-					},
-				}),
 				i(17684),	-- Theradric Crystal Carving
 			}),
 			n(FOULSPORE_CAVERN, {
