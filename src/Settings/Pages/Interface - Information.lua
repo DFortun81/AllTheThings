@@ -138,7 +138,10 @@ end
 local function ProcessInformationType(t, reference, tooltipInfo)
 	local val = t.GetValue(t, reference);
 	if val then
-		tinsert(tooltipInfo, { left = t.text, right = ConversionMethods[t.informationTypeID](val, reference)});
+		local text = ConversionMethods[t.informationTypeID](val, reference)
+		if text then
+			tinsert(tooltipInfo, { left = t.text, right = text});
+		end
 	end
 end
 local CreateInformationType = app.CreateClass("InformationType", "informationTypeID", {
