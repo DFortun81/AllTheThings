@@ -636,7 +636,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				["coord"] = { 41.3, 71.0, ORIBOS },
 			}),
 			-- #endif
-			Difficulty(LFR_RAID).AddGroups(bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			Difficulty(LFR_RAID).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15122, {	-- The Jailer's Vanguard
 					Boss(TARRAGRUE),

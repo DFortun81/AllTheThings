@@ -657,7 +657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				["coord"] = { 41.3, 71.0, ORIBOS },
 			}),
 			-- #endif
-			Difficulty(LFR_RAID).AddGroups(bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			Difficulty(LFR_RAID).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				ZoneDrops(),
 				Boss(SHRIEKWING),
 				Boss(HUNTSMAN, {

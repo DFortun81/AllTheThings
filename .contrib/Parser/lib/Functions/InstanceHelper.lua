@@ -65,11 +65,19 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		__index = function(t, key)
 			if key == "AddGroups" then
 				return function(groups)
+					if not groups or not isarray(groups) or groups.g then
+						print("Expecting array type for AddGroups for InstanceHelper")
+						return t
+					end
 					t.groups = appendAllGroups(t.groups, groups)
 					return t
 				end
 			elseif key == "AddGroupsWithUpgrades" then
 				return function(groups)
+					if not groups or not isarray(groups) or groups.g then
+						print("Expecting array type for AddGroups for InstanceHelper")
+						return t
+					end
 					t.groups = appendAllGroups(t.groups, groups)
 					WithUpgrades(t.groups)
 					return t
