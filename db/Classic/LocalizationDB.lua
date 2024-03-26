@@ -342,6 +342,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000376] = "Only the person who gets the final hit on the drunk will get credit, regardless of who tapped the target first. There is no group credit for this.",
 	[-1000377] = "Cast Polymorph on critters afflicted by Wild Polymorph to turn them back into apprentices. Each one will give you a note. Collect 6 notes to learn the rune.",
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
+	[-1000872] = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -468,7 +469,7 @@ localize(L.HEADER_ICONS, {
 	[-1000377] = "Interface/ICONS/Spell_Nature_Polymorph",
 	[-1000378] = "Interface/ICONS/spell_shadow_lifedrain02",
 	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
-	[-1000872] = "2055032",
+	[-1000872] = "133168",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -482,6 +483,7 @@ localize(L.HEADER_EVENTS, {
 	[-1000224] = 181,
 	[-1000227] = 301,
 	[-1000243] = 1181,
+	[-1000872] = 446916,
 });
 localize(L.EVENT_REMAPPING, {
 	[374] = 479,
@@ -489,6 +491,9 @@ localize(L.EVENT_REMAPPING, {
 });
 
 -- Programmatic Event Scheduling
+_.Modules.Events.SetEventInformation(446916, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=30,["weekday"]=3,["year"]=2024})
+});
 _.Modules.Events.SetEventInformation(181, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=2,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=3,["year"]=2023}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=4,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=5,["year"]=2024}),

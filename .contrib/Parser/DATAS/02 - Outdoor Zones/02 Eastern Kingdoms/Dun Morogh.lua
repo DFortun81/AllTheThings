@@ -2384,10 +2384,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
 					["coord"] = { 53.9, 50.6, DUN_MOROGH },
-					["cost"] = {
-						{ "i", 2894, 1 },	-- Rhapsody Malt
-						{ "i", 60496, 4 },	-- Tender Boar Ribs
-					},
+					["cost"] = { { "i", 2894, 1 } },	-- Rhapsody Malt
 					-- #else
 					["requireSkill"] = COOKING,
 					["coord"] = { 46.8, 52.4, DUN_MOROGH },
@@ -2396,8 +2393,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2886, 6 },	-- Crag Boar Rib
 					},
 					-- #endif
-					["lvl"] = 5,
+					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
+						-- #if AFTER CATA
+						objective(1, {	-- 0/4 Tender Boar Ribs
+							["provider"] = { "i", 60496 },	-- Tender Boar Ribs
+							["cr"] = 1125,	-- Crag Boar
+						}),
+						-- #endif
 						i(2888),	-- Beer Basted Boar Ribs
 						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 					},
@@ -2472,6 +2475,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Wendigo slain
+							["providers"] = {
+								{ "n", 40940 },	-- Young Wendigo
+								{ "n", 40941 },	-- Wendigo
+							},
+						}),
+					},
 				}),
 				q(25997, {	-- Dark Iron Scheming
 					["qg"] = 41786,	-- Sergeant Bahrum
@@ -2483,6 +2494,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Dark Iron Spy slain
+							["provider"] = { "n", 6123 },	-- Dark Iron Spy
+						}),
+						objective(2, {	-- 0/1 Dark Iron Attack Plans
+							["provider"] = { "i", 56264 },	-- Dark Iron Attack Plans
+							["coord"] = { 85.2, 61.0, DUN_MOROGH },
+							["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
+						}),
 						i(57575, {	-- Belt of Dark Schemes
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2502,9 +2521,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.6, 48.3, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Helm's Bed Surger slain
+							["provider"] = { "n", 41762 },	-- Helm's Bed Surger
+						}),
+					},
 				}),
 				q(26112, {	-- Demanding Answers
-					["qg"] = 41853,	-- Commander Stonebreaker
+					["providers"] = {
+						{ "n", 41853 },	-- Commander Stonebreaker
+						{ "i", 56823 },	-- Stonebreaker's Report
+					},
 					["sourceQuest"] = 26102,	-- Grimaxe's Demise
 					["coord"] = { 78.2, 20.4, IRONFORGE },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -2543,6 +2570,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Battok the Berserker slain
+							["provider"] = { "n", 41284 },	-- Battok the Berserker
+						}),
+						objective(2, {	-- 0/5 Frostmane Warrior slain
+							["provider"] = { "n", 41258 },	-- Frostmane Warrior
+						}),
 						i(57554, {	-- Frostmane Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2560,6 +2593,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Frozen Mountaineers freed
+							["providers"] = {
+								{ "n", 41768 },	-- Icy Tomb
+								{ "n", 41763 },	-- Frozen Mountaineer
+							},
+						}),
+					},
 				}),
 				q(318, {	-- Evershine
 					["qg"] = 1378,	-- Pilot Bellowfiz
@@ -2575,13 +2616,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Fires extinguished
+							["provider"] = { "i", 56803 },	-- Firefighting Gear
+						}),
+					},
 				}),
 				-- #if AFTER CATA
-				q(313, {	-- Forced to Watch from Afar
+				q(313, {	-- Forced to Watch from Afar [CATA+] / The Grizzled Den
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Convey Orders to Mountaineer Dunstan
+							["provider"] = { "n", 40991 },	-- Mountaineer Dunstan
+							["coord"] = { 48.2, 47.0, DUN_MOROGH },
+						}),
+						objective(2, {	-- Convey Orders to Mountaineer Lewin
+							["provider"] = { "n", 40994 },	-- Mountaineer Lewin
+							["coord"] = { 49.2, 47.8, DUN_MOROGH },
+						}),
+						objective(3, {	-- Convey Orders to Mountaineer Valgrum
+							["provider"] = { "n", 41056 },	-- Mountaineer Valgrum
+							["coord"] = { 49.2, 44.4, DUN_MOROGH },
+						}),
+					},
 				}),
 				-- #endif
 				q(7673, {	-- Frost Ram Exchange
@@ -2606,6 +2666,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Frostmane Seer slain
+							["provider"] = { "n", 41121 },	-- Frostmane Seer
+						}),
+						objective(2, {	-- 0/7 Frostmane Snowstrider slain
+							["provider"] = { "n", 41122 },	-- Frostmane Snowstrider
+						}),
 						i(2900),	-- Stone Buckler
 					},
 				}),
@@ -2643,6 +2709,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
 					["groups"] = {
+						objective(1, {	-- Heal and fortify Mountaineer Dolf
+							["provider"] = { "n", 12427 },	-- Mountaineer Dolf
+							["coord"] = { 45.8, 54.4, DUN_MOROGH },
+						}),
 						i(16605, {	-- Friar's Robes of the Light
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -2662,6 +2732,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 General Grimaxe slain
+							["provider"] = { "n", 42010 },	-- General Grimaxe
+							["coord"] = { 78.4, 34.6, DUN_MOROGH },
+						}),
 						i(57579, {	-- Airfield Defender's Garb
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2912,6 +2986,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Pilfered Supplies
+							["providers"] = {
+								{ "i",  55151 },	-- Pilfered Supplies
+								{ "o", 203130 },	-- Pilfered Supplies
+							},
+							["coord"] = { 48.9, 46.8, DUN_MOROGH },
+						}),
 						i(57550, {	-- Grizzled Den Boots
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2929,6 +3010,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Frozen Artifact
+							["providers"] = {
+								{ "i",  56225 },	-- Frozen Artifact
+								{ "o", 203385 },	-- Frozen Artifact
+								{ "i",  56226 },	-- Excavator's Pick
+							},
+							["coord"] = { 76.5, 58.0, DUN_MOROGH },
+						}),
 						i(57571, {	-- Archaeologist's Pants
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2986,6 +3075,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/4 Constriction Totems burned
+							["providers"] = {
+								{ "n", 41202 },	-- Constriction Totems
+								{ "i", 56009 },	-- Rune of Fire
+							},
+						}),
 						i(10547),	-- Camping Knife
 						i(1010),	-- Gnarled Short Staff
 						i(1011),	-- Sharp Axe
@@ -3000,6 +3095,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Ironforge Banners planted
+							["provider"] = { "i", 56809 },	-- Ironforge Banner
+						}),
+					},
 				}),
 				q(25905, {	-- Rams on the Lam
 					["qg"] = 1261,	-- Veron Amberstill
@@ -3007,6 +3107,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 70.6, 48.9, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Stolen Rams recovered
+							["provider"] = { "n", 41539 },	-- Stolen Ram
+						}),
+					},
 				}),
 				q(415, {	-- Rejold's New Brew
 					["qgs"] = {
@@ -3113,14 +3218,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1374 },	-- Rejold Barleybrew
 						{ "i", 3085 },	-- Barrel of Shimmer Stout
 					},
-					-- #if AFTER CATA
-					["sourceQuest"] = 315,	-- The Perfect Stout
-					-- #else
 					["sourceQuests"] = {
 						415,	-- Rejold's New Brew
 						315,	-- The Perfect Stout
 					},
-					-- #endif
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -3184,6 +3285,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Attack on Northern Frostmane Retreat
+							["providers"] = {
+								{ "n", 41372 },	-- Frostmane Retreat North
+								{ "i", 56048 },	-- Signal Flare
+							},
+							["coord"] = { 64, 54, DUN_MOROGH },
+						}),
+						objective(2, {	-- Attack on Southern Frostmane Retreat
+							["providers"] = {
+								{ "n", 41373 },	-- Frostmane Retreat South
+								{ "i", 56048 },	-- Signal Flare
+							},
+							["coord"] = { 63, 57, DUN_MOROGH },
+						}),
+					},
 				}),
 				q(26094, {	-- Striking Back
 					["qg"] = 41853,	-- Commander Stonebreaker
@@ -3191,6 +3308,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/30 Dark Iron attackers slain
+							["providers"] = {
+								{ "n", 42003 },	-- Dark Iron Golem
+								{ "n", 41924 },	-- Dark Iron Invader
+								{ "n", 42012 },	-- Dark Iron Invader
+								{ "n", 41902 },	-- Dark Iron Pyromancer
+								{ "i", 56814 },	-- Iron Hammer Bomb
+							},
+						}),
+					},
 				}),
 				q(6064, {	-- Taming the Beast (1/3)
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
@@ -3206,8 +3334,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tame a Large Crag Boar
-							["provider"] = { "i", 15911 },	-- Taming Rod
-							["cr"] = 1126,	-- Large Crag Boar
+							["providers"] = {
+								{ "n", 1126 },	-- Large Crag Boar
+								{ "i", 15911 },	-- Taming Rod
+							},
 						}),
 					},
 				}),
@@ -3221,8 +3351,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tame a Snow Leopard
-							["provider"] = { "i", 15913 },	-- Taming Rod
-							["cr"] = 1201,	-- Snow Leopard
+							["providers"] = {
+								{ "n", 1201 },	-- Snow Leopard
+								{ "i", 15913 },	-- Taming Rod
+							},
 						}),
 					},
 				}),
@@ -3235,14 +3367,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
 					["groups"] = {
-						objective(1, {	-- 0/1
-							["provider"] = { "i", 15908 },	-- Taming Rod
-							["cr"] = 1196,	-- Ice Claw Bear
+						objective(1, {	-- 0/1 Tame a Ice Claw Bear
+							["providers"] = {
+								{ "n", 1196 },	-- Ice Claw Bear
+								{ "i", 15908 },	-- Taming Rod
+							},
 						}),
 					},
 				}),
 				-- #if BEFORE CATA
-				q(313, {	-- The Grizzled Den
+				q(313, {	-- The Grizzled Den / Forced to Watch from Afar [CATA+]
 					["qg"] = 1377,	-- Pilot Stonegear
 					["coord"] = { 49.6, 48.4, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
@@ -3342,6 +3476,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isYearly"] = true,
 					["lvl"] = 6,
 					["groups"] = {
+						-- #if AFTER CATA
+						objective(1, {	-- 0/7 Trapped Miner
+							["providers"] = {
+								{ "n", 41671 },	-- Trapped Miner
+								{ "i", 56222 },	-- Runes of Return
+							},
+						}),
+						-- #else
+						objective(1, {	-- 0/10 Rockjaw Bonesnapper slain
+							["provider"] = { "n", 1117 },	-- Rockjaw Bonesnapper
+						}),
+						-- #endif
 						i(57570, {	-- Gol'Bolar Miner's Belt
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
@@ -3479,6 +3625,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.5, 53.8, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Frostmane Builder shrunk
+							["providers"] = {
+								{ "n", 41251 },	-- Frostmane Builder
+								{ "i", 67249 },	-- Viewpoint Equalizer
+							},
+						}),
+					},
 				}),
 				q(432, {	-- Those Blasted Troggs!
 					["qg"] = 1254,	-- Foreman Stonebrow
@@ -3488,14 +3642,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 69, 56.2, DUN_MOROGH },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 5,
-					-- #if BEFORE CATA
+					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
-						objective(1, {	-- 0/6 Rockjaw Skullthumper
+						-- #if AFTER CATA
+						objective(1, {	-- 0/8 Rockjaw Skullthumper slain
 							["provider"] = { "n", 1115 },	-- Rockjaw Skullthumper
 						}),
+						objective(2, {	-- 0/8 Rockjaw Bonesnapper slain
+							["provider"] = { "n", 1117 },	-- Rockjaw Bonesnapper
+						}),
+						-- #else
+						objective(1, {	-- 0/6 Rockjaw Skullthumper slain
+							["provider"] = { "n", 1115 },	-- Rockjaw Skullthumper
+						}),
+						-- #endif
 					},
-					-- #endif
 				}),
 				q(2299, {	-- To Hulfdan!
 					["qg"] = 1234,	-- Hogral Bakkan
