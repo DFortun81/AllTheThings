@@ -40,12 +40,18 @@ local function IsRetrievingConversionMethod(text, reference)
 	end
 	return text
 end
+local BindTypes = {
+	ITEM_BIND_ON_PICKUP,
+	ITEM_BIND_ON_EQUIP,
+	ITEM_BIND_ON_USE,
+	ITEM_BIND_QUEST,
+}
 local ConversionMethods = setmetatable({
 	filterID = function(val)
 		return L.FILTER_ID_TYPES[val]
 	end,
 	b = function(val)
-		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
+		return BindTypes[val]
 	end,
 	questID = function(questID, reference)
 		-- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
