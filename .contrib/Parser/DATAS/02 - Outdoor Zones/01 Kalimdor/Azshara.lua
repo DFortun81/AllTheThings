@@ -445,7 +445,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 44,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Magus Rimtori
-							["provider"] = { "i", 10597 },	-- Head of Magus Rimtori
+							["providers"] = {
+								{ "i",  10597 },	-- Head of Magus Rimtori
+								{ "o", 150140 },	-- Arcane Focusing Crystal
+							},
 							["coord"] = { 59.6, 31.4, AZSHARA },
 							["cr"] = 8578,	-- Magus Rimtori
 						}),
