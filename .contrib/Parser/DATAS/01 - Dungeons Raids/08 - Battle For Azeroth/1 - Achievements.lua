@@ -50,14 +50,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
             },
 		}),
 		ach(12489),	-- Losing My Profession
-		-- #IF AFTER BFA
 		-- #IF BEFORE SHADOWLANDS
-		ach(11162, {	-- Keystone Master
-			ach(11185),	-- Keystone Conqueror
-			ach(11184),	-- Keystone Challenger
-			ach(11183),	-- Keystone Initiate
-		}),
-		-- #ENDIF
+		ach(11162),	-- Keystone Master
+		ach(11185),	-- Keystone Conqueror
+		ach(11184),	-- Keystone Challenger
+		ach(11183),	-- Keystone Initiate
 		-- #ENDIF
 	}),
 })));

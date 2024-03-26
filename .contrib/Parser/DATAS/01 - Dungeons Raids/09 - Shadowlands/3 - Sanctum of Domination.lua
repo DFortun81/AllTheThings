@@ -60,129 +60,122 @@ end
 ------ EnconterToLoot ------
 local EncounterToLoot = {
 	[TARRAGRUE] = {
+		i(186311),	-- Cavalier Oathbreaker's Grasps
+		i(186318),	-- Champion's Gruesome Greaves
+		i(186297),	-- Clasps of the Unfortunate Troubadour
+		i(186303),	-- Colossus Slayer's Hauberk
 		i(186381),	-- Elethium-Bladed Glaive
+		i(186302),	-- Mistwrap Manacles
 		i(186415),	-- Moriaz's Spare Targe
 		i(186291),	-- Periapt of Pristine Preservation
-		i(186298),	-- Smuggler's Plundered Pauldrons
-		i(186303),	-- Colossus Slayer's Hauberk
-		i(186297),	-- Clasps of the Unfortunate Troubadour
-		i(186302),	-- Mistwrap Manacles
-		i(186311),	-- Cavalier Oathbreaker's Grasps
-		i(186285),	-- Sorcerer's Headlong Legwraps
-		i(186318),	-- Champion's Gruesome Greaves
 		i(186281),	-- Phantasma-Forged Striders
+		i(186298),	-- Smuggler's Plundered Pauldrons
+		i(186285),	-- Sorcerer's Headlong Legwraps
 		i(186422),	-- Tome of Monstrous Constructions
 	},
 	[EYE] = {
-		i(186403),	-- Stygian Lance of Passage
-		i(186383),	-- Gazepiercer
-		i(186418),	-- Guarm's Lost Chew Toy
-		i(186296),	-- Mawsworn Eviscerator's Cuirass
 		i(186316),	-- Airborne Abductor's Vambraces
-		i(186288),	-- Grasps of the Clairvoyant Sage
-		i(186295),	-- Loyal Kvaldir's Handwraps
 		i(186301),	-- Coiled Stygian Grapnel
+		i(186383),	-- Gazepiercer
+		i(186288),	-- Grasps of the Clairvoyant Sage
 		i(186306),	-- Greaves of Extermination
+		i(186418),	-- Guarm's Lost Chew Toy
+		i(186295),	-- Loyal Kvaldir's Handwraps
+		i(186296),	-- Mawsworn Eviscerator's Cuirass
+		i(186403),	-- Stygian Lance of Passage
 		i(186423),	-- Titanic Ocular Gland
 	 },
 	[NINE] = {
-		i(186404),	-- Jotungeirr, Destiny's Call
-		i(186385),	-- Signe's Sonorous Scramaseax
-		i(186384),	-- Skyja's Revenant Fury
-		i(186286),	-- Mantle of Arthura's Chosen
-		i(186339),	-- Brynja's Mournful Wristwraps
-		i(186346),	-- Kyra's Unending Protectors
 		i(186313),	-- Agatha's Gothic Greaves
 		i(186307),	-- Aradne's Lancer Legguards
+		i(186339),	-- Brynja's Mournful Wristwraps
 		i(186299),	-- Daschla's Defiant Treads
-		i(186290),	-- Sworn Oath of the Nine
+		i(186404),	-- Jotungeirr, Destiny's Call
+		i(186346),	-- Kyra's Unending Protectors
+		i(186286),	-- Mantle of Arthura's Chosen
 		i(186425),	-- Scrawled Word of Recall
 		i(186424),	-- Shard of Annhylde's Aegis
+		i(186385),	-- Signe's Sonorous Scramaseax
+		i(186384),	-- Skyja's Revenant Fury
+		i(186290),	-- Sworn Oath of the Nine
 	 },
 	[NERZHUL] = {
-		i(186405),	-- Gnarled Staff of the Elder Shaman
 		i(186386),	-- Betrayer's Shadowspike
 		i(186292),	-- Cap of Writhing Malevolence
 		i(186304),	-- Crest of the Fallen
-		i(186315),	-- Dark Tormentor's Gaze
-		i(186287),	-- Hood of Vengeful Possession
-		i(186378),	-- Weathered Talisman of the Shadowmoon
 		i(186312),	-- Cuirass of the Lonely Citadel
+		i(186315),	-- Dark Tormentor's Gaze
+		i(186405),	-- Gnarled Staff of the Elder Shaman
 		i(186308),	-- Grasps of Ancestral Whispers
+		i(186287),	-- Hood of Vengeful Possession
 		i(186428),	-- Shadowed Orb of Torment
+		i(186378),	-- Weathered Talisman of the Shadowmoon
 		i(186427),	-- Whispering Shard of Power
 	 },
 	[DORMAZAIN] = {
-		i(186407),	-- Hellscream's Requiem
-		i(186387),	-- Dormazain's Tenderizer
-		i(186411),	-- Soulrent Outrider's Recurve
-		i(186305),	-- Pauldrons of Tyrannical Defiance
-		i(186314),	-- Ruinous Warchief's Shoulderguards
+		i(186294),	-- Agonizing Spiked Belt
 		i(186289),	-- Cloak of Scarred Honor
 		i(186283),	-- Cruel Overlord's Shackles
-		i(186294),	-- Agonizing Spiked Belt
+		i(186429),	-- Decanter of Endless Howling
+		i(186387),	-- Dormazain's Tenderizer
+		i(186407),	-- Hellscream's Requiem
+		i(186305),	-- Pauldrons of Tyrannical Defiance
 		i(186343),	-- Ragebound Leg Irons
+		i(186314),	-- Ruinous Warchief's Shoulderguards
+		i(186411),	-- Soulrent Outrider's Recurve
 		i(186319),	-- Tormented Shadowcleft Boots
 		i(186337),	-- Trenchant Warmonger Treads
-		i(186429),	-- Decanter of Endless Howling
 	},
 	[PAINSMITH] = {
 		i(186388),	-- Cruciform Veinripper
+		i(186431),	-- Ebonsoul Vise
 		i(186392),	-- Exacting Mindslicer
-		i(186391),	-- Shadowsteel Demoralizer
-		i(186341),	-- Shadowsteel Facecage
-		i(186282),	-- Sacrificer's Sacramental Cassock
+		i(186293),	-- Flameclasp-Scorched Legguards
 		i(186369),	-- Guillotine Gauntlets
 		i(186333),	-- Hangman's Knotbinders
-		i(186293),	-- Flameclasp-Scorched Legguards
 		i(186323),	-- Leggings of the Screaming Flames
 		i(186375),	-- Miniature Breaking Wheel
-		i(186431),	-- Ebonsoul Vise
+		i(186282),	-- Sacrificer's Sacramental Cassock
+		i(186391),	-- Shadowsteel Demoralizer
+		i(186341),	-- Shadowsteel Facecage
 		i(186430),	-- Tormented Rack Fragment
 	 },
 	[GUARDIAN] = {
-		i(186409),	-- Pylon of the Great Purge
-		i(186393),	-- Torch of Eternal Knowledge
-		i(186413),	-- Directional Meltdown Projector
-		i(186416),	-- Infinity's Last Bulwark
-		i(186374),	-- Self-Replicating Tissue
 		i(186347),	-- Ancient Colossus Chassis
+		i(186413),	-- Directional Meltdown Projector
 		i(186317),	-- Disintegration-Proof Waistband
 		i(186284),	-- Enigmatic Energy Circuit
 		i(186344),	-- Hyperdense Greaves
-		i(186354),	-- Sandals of Sacred Symmetry
-		i(186363),	-- Unstable Energizer Boots
+		i(186416),	-- Infinity's Last Bulwark
+		i(186409),	-- Pylon of the Great Purge
 		i(186433),	-- Reactive Defense Matrix
 		i(186432),	-- Salvaged Fusion Amplifier
+		i(186354),	-- Sandals of Sacred Symmetry
+		i(186374),	-- Self-Replicating Tissue
+		i(186393),	-- Torch of Eternal Knowledge
+		i(186363),	-- Unstable Energizer Boots
 	 },
 	[FATESCRIBE] = {
-		i(186419),	-- Record of Collapsing Realities
-		i(186330),	-- Cowl of Haunting Precognition
-		i(186340),	-- Conjunction-Forged Chainmail
-		i(186320),	-- Diviner's Draped Finery
-		i(186335),	-- Fate-Threaded Bindings
-		i(186345),	-- Demigaunts of Predestination
-		i(186326),	-- Gloves of Forsaken Purpose
 		i(186352),	-- Binding of Dark Destinies
-		i(186348),	-- Fateforged Legplates
-		i(186376),	-- Oscillating Ouroboros
 		i(186435),	-- Carved Ivory Keepsake
+		i(186340),	-- Conjunction-Forged Chainmail
+		i(186330),	-- Cowl of Haunting Precognition
+		i(186345),	-- Demigaunts of Predestination
+		i(186320),	-- Diviner's Draped Finery
+		i(186348),	-- Fateforged Legplates
+		i(186335),	-- Fate-Threaded Bindings
+		i(186326),	-- Gloves of Forsaken Purpose
+		i(186376),	-- Oscillating Ouroboros
+		i(186419),	-- Record of Collapsing Realities
 		i(186434),	-- Weave of Warped Fates
 	 },
 	[KELTHUZAD] = {
-		i(186350),	-- Valorous Visage of Krexus
-		i(186379),	-- Interplanar Keystone
-		i(186324),	-- Frame of the False Margrave
-		i(186336),	-- Spaulders of the Crooked Confidant
 		i(186365),	-- Bands of the Fallen House
-		i(186351),	-- Vyraz's Parade Cuffs
 		i(186338),	-- Ceremonial Construct Clasp
-		i(186322),	-- Sash of Duplicitous Magics
 		i(186331),	-- Elite Aranakk Breeches
 		i(186421),	-- Forbidden Necromantic Tome
-		i(186437),	-- Relic of the Frozen Wastes
-		i(186436),	-- Resonant Silver Bell
-		i(186406),	-- Maledict Opus
+		i(186324),	-- Frame of the False Margrave
+		i(186379),	-- Interplanar Keystone
 		i(187542, {	-- Jaithys, the Prison Blade
 			["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },	-- This Item Doesnt Seem to Drop Anymore -- 13th March 2024 by Cromation
 		}),
@@ -191,21 +184,28 @@ local EncounterToLoot = {
 			["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
 			-- #endif
 		}),
+		i(186406),	-- Maledict Opus
+		i(186437),	-- Relic of the Frozen Wastes
+		i(186436),	-- Resonant Silver Bell
+		i(186322),	-- Sash of Duplicitous Magics
+		i(186336),	-- Spaulders of the Crooked Confidant
+		i(186350),	-- Valorous Visage of Krexus
+		i(186351),	-- Vyraz's Parade Cuffs
 		-- Custom per difficulty
 		-- 187056 The Devouring Cold
 	},
 	[SYLVANAS] = {
-		i(186417),	-- Guard of the Sundered Defender
-		i(186325),	-- Veil of the Banshee Queen
-		i(186342),	-- Epaulets of the Master Ranger
-		i(186349),	-- Spires of Broken Hope
 		i(186439),	-- Dark Ranger's Quiver
-		i(186334),	-- Witherheart Studded Breastplate
 		i(186321),	-- Desecrator's Keening Wristwraps
-		i(186332),	-- Windrunner's Baldric
+		i(186342),	-- Epaulets of the Master Ranger
 		i(186353),	-- Greaves of Haunting Ruination
-		i(186377),	-- Tarnished Insignia of Quel'Thalas
+		i(186417),	-- Guard of the Sundered Defender
 		i(186438),	-- Old Warrior's Soul
+		i(186349),	-- Spires of Broken Hope
+		i(186377),	-- Tarnished Insignia of Quel'Thalas
+		i(186325),	-- Veil of the Banshee Queen
+		i(186332),	-- Windrunner's Baldric
+		i(186334),	-- Witherheart Studded Breastplate
 	 },
 }
 
@@ -630,11 +630,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(181383),	-- Unrelenting Cold
 				}),
 			}),
+			-- #if AFTER 10.1.5
 			Difficulty(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
 				["coord"] = { 41.3, 71.0, ORIBOS },
 			}),
-			Difficulty(LFR_RAID).AddGroups(bubbleDown({ ["timeline"] = { REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			-- #endif
+			Difficulty(LFR_RAID).AddGroups(bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15122, {	-- The Jailer's Vanguard
 					Boss(TARRAGRUE),
@@ -737,7 +739,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(FATESCRIBE),
 				BossOnly(KELTHUZAD),
 				BossOnly(SYLVANAS, {
-					i(182177),	-- Owlcat Soul (SS!)
+					ach(15134, {["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Ahead of the Curve: Sylvanas Windrunner
+					ig(182177),	-- Owlcat Soul (SS!)
 				}),
 			}),
 			Difficulty(HEROIC_RAID).AddGroups({
@@ -831,9 +834,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							title(448),	-- <Name>, Famed Bane of the Banshee Queen
 						},
 					})),
-					ach(15134, {["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Ahead of the Curve: Sylvanas Windrunner
 					ach(15135, {["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Cutting Edge: Sylvanas Windrunner
-					i(186642),	-- Vengeance (MOUNT!)
+					ig(186642),	-- Vengeance (MOUNT!)
 					i(187593),	-- Ethereal Fletching (Upgrade Legendary)
 					i(199183, {	-- Condemned Queen's Grip (Upgrade Legendary)(fated)
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },

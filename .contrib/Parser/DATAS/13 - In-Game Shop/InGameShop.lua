@@ -55,7 +55,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	}),
 	-- #endif
 	filter(MOUNTS, {	-- AVAILABLE --
-		mount(367875, {	-- Armored Siege Kodo (MOUNT!)
+		i(190636, {	-- Armored Siege Kodo (MOUNT!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
@@ -99,7 +99,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(122469, {	-- Mystic Runesaber (MOUNT!)
 			["timeline"] = { ADDED_6_1_0 },
 		}),
-		mount(367676, {	-- Nether-Gorged Greatwyrm (MOUNT!)
+		i(190581, {	-- Nether-Gorged Greatwyrm (MOUNT!)
 			["timeline"] = { "added 9.2.5.44730" },
 		}),
 		mount(347812, {	-- Sapphire Skyblazer (MOUNT!)
@@ -136,7 +136,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
 		}),
-		mount(397406, {	-- Wonderous Wavewhisker (MOUNT!)
+		i(206167, {	-- Wonderous Wavewhisker (MOUNT!)
 			["timeline"] = { "added 10.1.0.50000" },
 		}),
 	}),
@@ -202,7 +202,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(118516, {	-- Argi (PET!)
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
-		pet(3153, {	-- Blinky
+		i(188837, {	-- Blinky (PET!)
 			["timeline"] = { "added 9.1.5.41488" },
 		}),
 		i(98550, {	-- Blossoming Ancient (PET!)

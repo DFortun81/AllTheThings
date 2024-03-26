@@ -8,6 +8,7 @@ end
 -- To acquire itemID and mountID one can use wowhead. If you want mountID from wowhead it can be found in "teaches" tab as spellID
 -- MissingIDs also host mountIDs that are still missing in our database. For a full list of mountID see Database Harvester > Raw > Mounts.txt
 
+-- #if ANYCLASSIC
 -----------------
 -- CLASSIC WOW --
 -----------------
@@ -22,8 +23,8 @@ i(184865, 348459);	-- Reawakened Phase-Hunter
 i(192455, 372677);	-- Kalu'ak Whalebone Glider
 i(201699, 394209);	-- Festering Emerald Drake
 i(207097, 416158);	-- Nightmarish Emerald Drake
-i(0, 423869);	-- Avatar of Flame
-i(0, 446902);	-- Polly Roger
+i(0, 423869);		-- Avatar of Flame
+i(0, 446902);		-- Polly Roger
 --- NYI ---
 i(0, 388516);		-- Hao-Yue, River Foreseer
 i(198632, 387319);	-- Big Battle Bear
@@ -32,9 +33,10 @@ i(198631, 387308);	-- Magic Rooster
 i(198633, 387321);	-- Wooly White Rhino
 i(198629, 387323);	-- X-51 Nether-Rocket
 i(198628, 387311);	-- X-51 Nether-Rocket X-TREME
+-- #endif
 
 -----------------
--- PATCH 1.0.0 --
+--   CLASSIC   --
 -----------------
 i(12302, 16056);	-- Ancient Frostsaber
 i(12351, 16081);	-- Arctic Wolf
@@ -1494,12 +1496,11 @@ i(191566, 370620);	-- Elusive Emerald Hawkstrider
 i(191290, 370346);	-- Eternal Gladiator's Soul Eater
 i(191123, 369666);	-- Grimhowl
 i(190170, 366791);	-- Jigglesworth Sr.
-i(0, 367676);		-- Nether-Gorged Greatwyrm
+i(190581, 367676);	-- Nether-Gorged Greatwyrm
 i(192557, 334482);	-- Restoration Deathwalker
 i(0, 359843);		-- Tangled Dreamweaver
 --- NYI ---
 i(0, 367190);		-- [DND] Test Mount JZB
-i(190581, 0);		-- Nether-Gorged Greatwyrm
 
 -----------------
 -- PATCH 9.2.7 --
@@ -1634,15 +1635,13 @@ i(206162, 407555);	-- Tarecgosa's Visage
 i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
-i(0, 397406);		-- Wonderous Wavewhisker
---- NYI ---
-i(206167, 0);		-- Way of the Wonderous Wavewhisker
+i(206167, 397406);	-- Wonderous Wavewhisker
 
 ------------------
 -- PATCH 10.1.5 --
 ------------------
 i(207821, 417245);	-- Ancestral Clefthoof
-i(0, 367875);		-- Armored Siege Kodo
+i(190636, 367875);	-- Armored Siege Kodo
 i(206676, 414326);	-- Felstorm Dragon
 i(206675, 414324);	-- Gold-Toed Albatross
 i(206567, 413827);	-- Harbor Gryphon
@@ -1655,8 +1654,6 @@ i(206680, 414334);	-- Scourgebound Vanquisher
 i(206678, 414327);	-- Sulfur Hound
 i(206585, 413922);	-- Valiance
 i(206673, 414316);	-- White War Wolf
---- NYI ---
-i(190636, 0);		-- Armored Siege Kodo
 
 ------------------
 -- PATCH 10.1.7 --
@@ -1668,12 +1665,10 @@ i(137576, 171840);	-- Coldflame Infernal
 i(198824, 385262);	-- Duskwing Ohuna
 i(208598, 419345);	-- Eve's Ghastly Rider
 i(0, 419567);		-- Ginormous Grrloc
-i(0, 400976);		-- Gleaming Moonbeast
+i(203727, 400976);	-- Gleaming Moonbeast
 i(192807, 374278);	-- Renewed Magmammoth
-i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
+i(205208, 408654);	-- Sandy Shalewing
 i(210022, 424082);	-- Mimiron's Jumpjets
---- NYI ---
-i(203727, 0);		-- Gleaming Moonbeast's Reins
 
 ------------------
 -- PATCH 10.2.0 --

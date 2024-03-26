@@ -617,7 +617,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			Difficulty(HEROIC_PLUS_RAID).AddGroups({
 				CommonBossDrops({
-					i(201740, {	-- Elemental Codex of Ultimate Power
+					ig(201740, {	-- Elemental Codex of Ultimate Power
 						["collectible"] = false,
 						["g"] = {
 							r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
@@ -638,7 +638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			Difficulty(HEROIC_RAID).AddGroups({
 				CommonBossDrops({
-					i(200686),	-- Primal Focus
+					ig(200686),	-- Primal Focus
 				}),
 				n(QUESTS, {
 					q(71019, {	-- Vault of the Incarnates: Break a Few Eggs (H)
@@ -660,7 +660,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			Difficulty(MYTHIC_RAID).AddGroups({
 				CommonBossDrops({
-					i(190455),	-- Concentrated Primal Focus
+					ig(190455),	-- Concentrated Primal Focus
 				}),
 				n(QUESTS, {
 					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)

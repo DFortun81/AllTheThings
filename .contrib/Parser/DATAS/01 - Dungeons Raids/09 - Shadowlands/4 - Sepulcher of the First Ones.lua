@@ -284,7 +284,7 @@ local EncounterToLoot = {
 };
 
 ------ Zone Drops ------
-local ZONE_DROPS_GROUP = {
+local ZoneDropLoot = {
 	i(190629),	-- Cartel's Larcenous Toecaps
 	i(190630),	-- Devouring Pellicle Shoulderpads
 	i(190624),	-- Gauntlets of the End
@@ -295,19 +295,6 @@ local ZONE_DROPS_GROUP = {
 	i(190627),	-- Subversive Lord's Leggings
 	i(190631),	-- Vandalized Ephemera Mitts
 };
-
------- Boss Functions ------
-local function bossNoLoot(id, t)
-	local encounter = e(id, t);
-	encounter.crs = EncounterToCRS[id];
-	return encounter
-end
-local function boss(id, t)
-	local encounter = {}
-	encounter = bossNoLoot(id, t);
-	encounter.groups = appendGroups(EncounterToLoot[id], encounter.groups or {});
-	return encounter
-end
 
 ------ Catalyst Functions ------
 local TierList, SymLink, SymLinKPvP;
@@ -353,6 +340,10 @@ local SymRaid = function(ClassID, ModID)
 	}
 	return SymLink
 end
+
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	inst(1195, {	-- Sepulcher of the First Ones
@@ -447,37 +438,37 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(15478, {	-- Heroic: Sepulcher of the First Ones
 					crit(53162, {	-- Vigilant Guardian
-						["_encounter"] = { VIGILANT_GUARDIAN, HEROIC_RAID },
+						["_encounter"] = { VIGILANT_GUARDIAN, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53166, {	-- Skolex, the Insatiable Ravener
-						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, HEROIC_RAID },
+						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53170, {	-- Artificer Xy'mox
-						["_encounter"] = { ARTIFICER_XYMOX, HEROIC_RAID },
+						["_encounter"] = { ARTIFICER_XYMOX, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53174, {	-- Dausegne, the Fallen Oracle
-						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, HEROIC_RAID },
+						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53178, {	-- Prototype Pantheon
-						["_encounter"] = { PROTOTYPE_PANTHEON, HEROIC_RAID },
+						["_encounter"] = { PROTOTYPE_PANTHEON, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53182, {	-- Lihuvim, Principal Architect
-						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, HEROIC_RAID },
+						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53186, {	-- Halondrus the Reclaimer
-						["_encounter"] = { HALONDRUS_THE_RECLAIMER, HEROIC_RAID },
+						["_encounter"] = { HALONDRUS_THE_RECLAIMER, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53190, {	-- Anduin Wrynn
-						["_encounter"] = { ANDUIN_WRYNN, HEROIC_RAID },
+						["_encounter"] = { ANDUIN_WRYNN, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53194, {	-- Lords of Dread
-						["_encounter"] = { LORDS_OF_DREAD, HEROIC_RAID },
+						["_encounter"] = { LORDS_OF_DREAD, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53198, {	-- Rygelon
-						["_encounter"] = { RYGELON, HEROIC_RAID },
+						["_encounter"] = { RYGELON, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(53202, {	-- The Jailer
-						["_encounter"] = { THE_JAILER, HEROIC_RAID },
+						["_encounter"] = { THE_JAILER, HEROIC_PLUS_ID_RAID },
 					}),
 				}),
 				ach(15490, {	-- Mythic: Sepulcher of the First Ones
@@ -626,11 +617,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				ach(15472),		-- Sepulcher of the First Ones Guild Run
 				ach(15473),		-- Heroic Sepulcher of the First Ones Guild Run
 			}),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = ALL_BOSSES,
-				["g"] = {
-					i(187806),	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
-				},
+			CommonBossDrops({
+				i(187806),	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
 			}),
 			n(FLIGHT_PATHS, sharedData({ ["collectible"] = false }, {
 				fp(2715, {	-- Ephemeral Plains Alpha
@@ -694,14 +682,14 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			n(WORLD_QUESTS, {
-				q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
-					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+				n(WORLD_QUESTS, {
+					q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
+						["isWorldQuest"] = true,
+						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					}),
 				}),
-			}),
-			d(ALL_DIFFICULTIES_RAID, {
-				bossNoLoot(VIGILANT_GUARDIAN, {
+				BossOnly(VIGILANT_GUARDIAN, {
 					i(183402),	-- Bloodletting (CONDUIT!)
 					i(182126),	-- High Voltage (CONDUIT!)
 					i(181734),	-- Magi's Brand (CONDUIT!)
@@ -713,7 +701,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183479),	-- Umbral Intensity (CONDUIT!)
 					i(181742),	-- Walk with the Ox (CONDUIT!)
 				}),
-				bossNoLoot(SKOLEX_THE_INSATIABLE_RAVENER, {
+				BossOnly(SKOLEX_THE_INSATIABLE_RAVENER, {
 					i(181838),	-- Charitable Soul (CONDUIT!)
 					i(182110),	-- Crippling Hex (CONDUIT!)
 					i(182383),	-- Dancing with Fate (CONDUIT!)
@@ -726,7 +714,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183167),	-- Strength of the Pack (CONDUIT!)
 					i(183484),	-- Unchecked Aggression (CONDUIT!)
 				}),
-				bossNoLoot(ARTIFICER_XYMOX, {
+				BossOnly(ARTIFICER_XYMOX, {
 					i(182128),	-- Call of Flame (CONDUIT!)
 					i(180935),	-- Crash the Ramparts (CONDUIT!)
 					i(182667),	-- Focused Light (CONDUIT!)
@@ -738,7 +726,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(181836),	-- Spirit Drain (CONDUIT!)
 					i(183488),	-- Unstoppable Growth (CONDUIT!)
 				}),
-				bossNoLoot(DAUSEGNE_THE_FALLEN_ORACLE, {
+				BossOnly(DAUSEGNE_THE_FALLEN_ORACLE, {
 					i(183510),	-- Count the Odds (CONDUIT!)
 					i(181942),	-- Focused Mending (CONDUIT!)
 					i(181504),	-- Infernal Cascade (CONDUIT!)
@@ -751,7 +739,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(181776),	-- Vicious Contempt (CONDUIT!)
 					i(181866),	-- Withering Plague (CONDUIT!)
 				}),
-				bossNoLoot(PROTOTYPE_PANTHEON, {
+				BossOnly(PROTOTYPE_PANTHEON, {
 					i(181770),	-- Bone Marrow Hops (CONDUIT!)
 					i(182706),	-- Brooding Pool (CONDUIT!)
 					i(182292),	-- Brutal Grasp (CONDUIT!)
@@ -801,7 +789,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(181775),	-- Way of the Fae (CONDUIT!)
 					i(183199),	-- Withering Ground (CONDUIT!)
 				}),
-				bossNoLoot(LIHUVIM_PRINCIPAL_ARCHITECT, {
+				BossOnly(LIHUVIM_PRINCIPAL_ARCHITECT, {
 					i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 					i(189178),	-- Tools of Incomprehensible Experimentation (PS!)
 					i(182755),	-- Ashen Remains (CONDUIT!)
@@ -815,7 +803,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(182143),	-- Swirling Currents (CONDUIT!)
 					i(182608),	-- Virtuous Command (CONDUIT!)
 				}),
-				bossNoLoot(HALONDRUS_THE_RECLAIMER, {
+				BossOnly(HALONDRUS_THE_RECLAIMER, {
 					i(182748),	-- Borne of Blood (CONDUIT!)
 					i(181712),	-- Depths of Insanity (CONDUIT!)
 					i(183478),	-- Fury of the Skies (CONDUIT!)
@@ -828,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(181700),	-- Scalding Brew (CONDUIT!)
 					i(183507),	-- Triple Threat (CONDUIT!)
 				}),
-				bossNoLoot(ANDUIN_WRYNN, {
+				BossOnly(ANDUIN_WRYNN, {
 					i(181848),	-- Accelerated Cold (CONDUIT!)
 					i(182769),	-- Combusting Engine (CONDUIT!)
 					i(183197),	-- Controlled Destruction (CONDUIT!)
@@ -840,7 +828,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183480),	-- Taste for Blood (CONDUIT!)
 					i(182681),	-- Vengeful Shock (CONDUIT!)
 				}),
-				bossNoLoot(LORDS_OF_DREAD, {
+				BossOnly(LORDS_OF_DREAD, {
 					i(181462),	-- Coordinated Offensive (CONDUIT!)
 					i(182598),	-- Demon Muzzle (CONDUIT!)
 					i(181786),	-- Eternal Hunger (CONDUIT!)
@@ -851,7 +839,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(182109),	-- Totemic Surge (CONDUIT!)
 					i(182465),	-- Truth's Wake (CONDUIT!)
 				}),
-				bossNoLoot(RYGELON, {
+				BossOnly(RYGELON, {
 					i(183468),	-- Born Anew (CONDUIT!)
 					i(180943),	-- Cacophonous Roar (CONDUIT!)
 					i(182461),	-- Echoing Blessings (CONDUIT!)
@@ -859,7 +847,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183497),	-- Recuperator (CONDUIT!)
 					i(182368),	-- Relentless Onslaught (CONDUIT!)
 				}),
-				bossNoLoot(THE_JAILER, {
+				BossOnly(THE_JAILER, {
 					i(181975),	-- Hardened Bones (CONDUIT!)
 					i(182131),	-- Haunting Apparitions (CONDUIT!)
 					i(181510),	-- Lingering Numbness (CONDUIT!)
@@ -869,234 +857,70 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(182318),	-- Viscous Ink (CONDUIT!)
 				}),
 			}),
-			-- #IF AFTER 10.1.5
-			d(LFR_RAID, {	-- Queue NPC
+			-- #if AFTER 10.1.5
+			Difficulty(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
 				["coord"] = { 41.3, 71.0, ORIBOS },
 			}),
-			-- #ENDIF
-			d(LFR_RAID, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
-				n(ZONE_DROPS, ZONE_DROPS_GROUP),
+			-- #endif
+			Difficulty(LFR_RAID).AddGroups(bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+				ZoneDrops(),
 				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
-					boss(VIGILANT_GUARDIAN),
-					boss(SKOLEX_THE_INSATIABLE_RAVENER),
-					boss(ARTIFICER_XYMOX),
-					boss(HALONDRUS_THE_RECLAIMER),
+					Boss(VIGILANT_GUARDIAN),
+					Boss(SKOLEX_THE_INSATIABLE_RAVENER),
+					Boss(ARTIFICER_XYMOX),
+					Boss(HALONDRUS_THE_RECLAIMER),
 				}),
 				header(HEADERS.Achievement, 15492, {	-- Cornerstone of Creation
-					boss(DAUSEGNE_THE_FALLEN_ORACLE),
-					boss(PROTOTYPE_PANTHEON),
-					boss(LIHUVIM_PRINCIPAL_ARCHITECT),
+					Boss(DAUSEGNE_THE_FALLEN_ORACLE),
+					Boss(PROTOTYPE_PANTHEON),
+					Boss(LIHUVIM_PRINCIPAL_ARCHITECT),
 				}),
 				header(HEADERS.Achievement, 15416, {	-- Domination's Grasp
-					boss(ANDUIN_WRYNN),
-					boss(LORDS_OF_DREAD),
-					boss(RYGELON),
+					Boss(ANDUIN_WRYNN),
+					Boss(LORDS_OF_DREAD),
+					Boss(RYGELON),
 				}),
 				header(HEADERS.Achievement, 15418, {	-- The Grand Design
-					boss(THE_JAILER),
+					Boss(THE_JAILER),
 				}),
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert LFR Mode Non-set items from the Sepulcher of the First Ones Raid into your class' LFR Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 4 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
 			})),
-			d(NORMAL_PLUS_RAID, {
-				bossNoLoot(VIGILANT_GUARDIAN, {
+			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+				BossOnly(VIGILANT_GUARDIAN, {
 					ach(15381),	-- Power ON
 				}),
-				bossNoLoot(SKOLEX_THE_INSATIABLE_RAVENER, {
+				BossOnly(SKOLEX_THE_INSATIABLE_RAVENER, {
 					ach(15401),	-- Wisdom Comes From the Desert
 				}),
-				bossNoLoot(ARTIFICER_XYMOX, {
+				BossOnly(ARTIFICER_XYMOX, {
 					ach(15398),	-- Xy Never, Ever Marks the Spot.
 				}),
-				bossNoLoot(DAUSEGNE_THE_FALLEN_ORACLE, {
+				BossOnly(DAUSEGNE_THE_FALLEN_ORACLE, {
 					ach(15397),	-- Four Ring Circus
 				}),
-				bossNoLoot(PROTOTYPE_PANTHEON, {
+				BossOnly(PROTOTYPE_PANTHEON, {
 					ach(15400),	-- Where the Wild Beasts Are
 				}),
-				bossNoLoot(LIHUVIM_PRINCIPAL_ARCHITECT, {
+				BossOnly(LIHUVIM_PRINCIPAL_ARCHITECT, {
 					ach(15419),	-- The Protoform Matrix
 				}),
-				bossNoLoot(HALONDRUS_THE_RECLAIMER, {
+				BossOnly(HALONDRUS_THE_RECLAIMER, {
 					ach(15386),	-- Shimmering Secrets
 				}),
-				bossNoLoot(ANDUIN_WRYNN, {
+				BossOnly(ANDUIN_WRYNN, {
 					ach(15399),	-- Coming to Terms
 				}),
-				bossNoLoot(LORDS_OF_DREAD, {
+				BossOnly(LORDS_OF_DREAD, {
 					ach(15315),	-- Amidst Ourselves
 				}),
-				bossNoLoot(RYGELON, {
+				BossOnly(RYGELON, {
 					ach(15396),	-- We Are All Made of Stars
 				}),
-				bossNoLoot(THE_JAILER, {
+				BossOnly(THE_JAILER, {
 					ach(15494),	-- Damnation Aviation
 				}),
 			}),
-			d(NORMAL_RAID, {
+			Difficulty(NORMAL_RAID).AddGroups({
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown [N]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -1105,184 +929,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				n(ZONE_DROPS, ZONE_DROPS_GROUP),
-				boss(VIGILANT_GUARDIAN),
-				boss(SKOLEX_THE_INSATIABLE_RAVENER),
-				boss(ARTIFICER_XYMOX),
-				boss(DAUSEGNE_THE_FALLEN_ORACLE),
-				boss(PROTOTYPE_PANTHEON),
-				boss(LIHUVIM_PRINCIPAL_ARCHITECT),
-				boss(HALONDRUS_THE_RECLAIMER),
-				boss(ANDUIN_WRYNN),
-				boss(LORDS_OF_DREAD),
-				boss(RYGELON),
-				boss(THE_JAILER),
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Normal Mode Non-set items from the Sepulcher of the First Ones Raid or from the World Boss into your class' Normal Mode Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 3 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
+				ZoneDrops(),
+				Boss(VIGILANT_GUARDIAN),
+				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
+				Boss(ARTIFICER_XYMOX),
+				Boss(DAUSEGNE_THE_FALLEN_ORACLE),
+				Boss(PROTOTYPE_PANTHEON),
+				Boss(LIHUVIM_PRINCIPAL_ARCHITECT),
+				Boss(HALONDRUS_THE_RECLAIMER),
+				Boss(ANDUIN_WRYNN),
+				Boss(LORDS_OF_DREAD),
+				Boss(RYGELON),
+				Boss(THE_JAILER),
 			}),
-			d(HEROIC_PLUS_RAID, {
+			Difficulty(HEROIC_PLUS_RAID).AddGroups({
 				n(QUESTS, {
 					q(65717, bubbleDownSelf({	-- Final Shape
 						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
@@ -1293,27 +953,27 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						},
 					})),
 				}),
-				bossNoLoot(VIGILANT_GUARDIAN),
-				bossNoLoot(SKOLEX_THE_INSATIABLE_RAVENER),
-				bossNoLoot(ARTIFICER_XYMOX),
-				bossNoLoot(DAUSEGNE_THE_FALLEN_ORACLE),
-				bossNoLoot(PROTOTYPE_PANTHEON, {
-					i(190337),	-- Cervid Soul (SS!)
+				BossOnly(VIGILANT_GUARDIAN),
+				BossOnly(SKOLEX_THE_INSATIABLE_RAVENER),
+				BossOnly(ARTIFICER_XYMOX),
+				BossOnly(DAUSEGNE_THE_FALLEN_ORACLE),
+				BossOnly(PROTOTYPE_PANTHEON, {
+					ig(190337),	-- Cervid Soul (SS!)
 				}),
-				bossNoLoot(LIHUVIM_PRINCIPAL_ARCHITECT),
-				bossNoLoot(HALONDRUS_THE_RECLAIMER),
-				bossNoLoot(ANDUIN_WRYNN),
-				bossNoLoot(LORDS_OF_DREAD),
-				bossNoLoot(RYGELON, {
+				BossOnly(LIHUVIM_PRINCIPAL_ARCHITECT),
+				BossOnly(HALONDRUS_THE_RECLAIMER),
+				BossOnly(ANDUIN_WRYNN),
+				BossOnly(LORDS_OF_DREAD),
+				BossOnly(RYGELON, {
 					ach(15468, {["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Heroic]
 				}),
-				bossNoLoot(THE_JAILER, {
+				BossOnly(THE_JAILER, {
 					ach(15470, {["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 }}),	-- Ahead of the Curve: The Jailer
-					i(190773, {["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }}),	-- Carcinized Protoform (MOUNT! - QUEST)
-					i(189982),	-- Silithid Soul (SS!)
+					ig(190773, {["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }}),	-- Carcinized Protoform (MOUNT! - QUEST)
+					ig(189982),	-- Silithid Soul (SS!)
 				}),
 			}),
-			d(HEROIC_RAID, {
+			Difficulty(HEROIC_RAID).AddGroups({
 				n(QUESTS, {
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown [H]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -1322,184 +982,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				n(ZONE_DROPS, ZONE_DROPS_GROUP),
-				boss(VIGILANT_GUARDIAN),
-				boss(SKOLEX_THE_INSATIABLE_RAVENER),
-				boss(ARTIFICER_XYMOX),
-				boss(DAUSEGNE_THE_FALLEN_ORACLE),
-				boss(PROTOTYPE_PANTHEON),
-				boss(LIHUVIM_PRINCIPAL_ARCHITECT),
-				boss(HALONDRUS_THE_RECLAIMER),
-				boss(ANDUIN_WRYNN),
-				boss(LORDS_OF_DREAD),
-				boss(RYGELON),
-				boss(THE_JAILER),
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Heroic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Heroic Mode Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 5 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
+				ZoneDrops(),
+				Boss(VIGILANT_GUARDIAN),
+				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
+				Boss(ARTIFICER_XYMOX),
+				Boss(DAUSEGNE_THE_FALLEN_ORACLE),
+				Boss(PROTOTYPE_PANTHEON),
+				Boss(LIHUVIM_PRINCIPAL_ARCHITECT),
+				Boss(HALONDRUS_THE_RECLAIMER),
+				Boss(ANDUIN_WRYNN),
+				Boss(LORDS_OF_DREAD),
+				Boss(RYGELON),
+				Boss(THE_JAILER),
 			}),
-			d(MYTHIC_RAID, {
+			Difficulty(MYTHIC_RAID).AddGroups({
 				n(QUESTS, {
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown [M]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -1508,46 +1004,46 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				n(ZONE_DROPS, ZONE_DROPS_GROUP),
-				boss(VIGILANT_GUARDIAN, {
+				ZoneDrops(),
+				Boss(VIGILANT_GUARDIAN, {
 					ach(15479),	-- Mythic: Vigilant Guardian
 				}),
-				boss(SKOLEX_THE_INSATIABLE_RAVENER, {
+				Boss(SKOLEX_THE_INSATIABLE_RAVENER, {
 					ach(15480),	-- Mythic: Skolex
 				}),
-				boss(ARTIFICER_XYMOX, {
+				Boss(ARTIFICER_XYMOX, {
 					ach(15481),	-- Mythic: Artificer Xy'mox
 				}),
-				boss(DAUSEGNE_THE_FALLEN_ORACLE, {
+				Boss(DAUSEGNE_THE_FALLEN_ORACLE, {
 					ach(15482),	-- Mythic: Dausegne
 				}),
-				boss(PROTOTYPE_PANTHEON, {
+				Boss(PROTOTYPE_PANTHEON, {
 					ach(15483),	-- Mythic: Prototype Pantheon
 				}),
-				boss(LIHUVIM_PRINCIPAL_ARCHITECT, {
+				Boss(LIHUVIM_PRINCIPAL_ARCHITECT, {
 					ach(15484),	-- Mythic: Lihuvim
 				}),
-				boss(HALONDRUS_THE_RECLAIMER, {
+				Boss(HALONDRUS_THE_RECLAIMER, {
 					ach(15485),	-- Mythic: Halondrus
 				}),
-				boss(ANDUIN_WRYNN, {
+				Boss(ANDUIN_WRYNN, {
 					ach(15486),	-- Mythic: Anduin Wrynn
 				}),
-				boss(LORDS_OF_DREAD, {
+				Boss(LORDS_OF_DREAD, {
 					ach(15487),	-- Mythic: Lords of Dread
 				}),
-				boss(RYGELON, {
+				Boss(RYGELON, {
 					ach(15488),	-- Mythic: Rygelon
 					ach(15469, {["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Mythic]
 				}),
-				boss(THE_JAILER, {
+				Boss(THE_JAILER, {
 					ach(15489, {	-- Mythic: The Jailer
-							title(455),	-- <Name>, Guardian of the Pattern
+						title(455),	-- <Name>, Guardian of the Pattern
 					}),
 					ach(15474),		-- Mythic The Jailer Guild Run
-					i(190768),	-- Zereth Overseer (MOUNT!)
+					ig(190768),	-- Zereth Overseer (MOUNT!)
 				}),
-				boss(THE_JAILER, bubbleDown({["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+				Boss(THE_JAILER, bubbleDown({["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					ach(15476, {	-- Hall of Fame: The Jailer (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -1562,170 +1058,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					ach(15471),	-- Cutting Edge: The Jailer
 				})),
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Mythic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Mythic Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 6 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
 			}),
 		},
 	}),

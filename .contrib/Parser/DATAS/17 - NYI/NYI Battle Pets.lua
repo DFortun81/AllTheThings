@@ -50,15 +50,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 		})),
 
-		-- 2.4.0
-		-- #if BEFORE 7.0.3
-		expansion(EXPANSION.TBC, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
-			-- With SpeciesID Attached
-			i(23712, {	-- White Tiger Cub (PET!),  Comment: Later reused for Ash'ana.
-				["displayID"] = 16942,
-			}),
-		})),
-		-- #endif
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.2
@@ -1165,8 +1156,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3188, {	-- Trub'ul (PET!)
 				["displayID"] = 103091,
 			}),
-			-- Without SpeciesID Attached
-			i(188837),	-- Blinky Egg (PET!) [Item Never Available]
 		})),
 
 		-- 9.2.0

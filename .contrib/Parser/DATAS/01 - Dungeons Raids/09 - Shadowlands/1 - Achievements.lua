@@ -97,14 +97,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				i(184183),	-- Voracious Gorger (MOUNT!)
 			},
 		}),
-		-- #IF AFTER SHADOWLANDS
 		-- #IF BEFORE DF
-		ach(11162, {	-- Keystone Master
-			ach(11185),	-- Keystone Conqueror
-			ach(11184),	-- Keystone Challenger
-			ach(11183),	-- Keystone Initiate
-		}),
-		-- #ENDIF
+		ach(11162),	-- Keystone Master
+		ach(11185),	-- Keystone Conqueror
+		ach(11184),	-- Keystone Challenger
+		ach(11183),	-- Keystone Initiate
 		-- #ENDIF
 	}),
 })));

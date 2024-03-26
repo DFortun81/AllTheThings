@@ -666,8 +666,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(367190, {	-- [DND] Test Mount JZB (MOUNT!)
 				["displayID"] = 88719,
 			}),
-			-- Without MountID Attached
-			i(190581),	-- Nether-Gorged Greatwyrm (MOUNT!) [Item Never Available]
 		})),
 	}),
 	expansion(EXPANSION.DF, {
@@ -781,24 +779,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 		})),
 
-		-- 10.1.0
-		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			-- Without MountID Attached
-			i(206167),	-- Way of the Wonderous Wavewhisker (MOUNT!) [Item Never Available]
-		})),
-
-		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-			-- Without MountID Attached
-			i(190636),	-- Armored Siege Kodo (MOUNT!) [Item Never Available]
-		})),
-
-		-- 10.1.7
-		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-			-- Without MountID Attached
-			i(203727),	-- Gleaming Moonbeast's Reins (MOUNT!) [Item Never Available]
-		})),
-
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			-- With MountID Attached
@@ -814,7 +794,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(210145, {	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
 				-- ["displayID"] = ,
 			}),
-			i(192766),	-- Amber Skitterfly
 			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!) [Trading Post?]
 				["displayID"] = 114788,
 			}),

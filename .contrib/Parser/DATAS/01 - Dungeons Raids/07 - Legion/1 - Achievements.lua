@@ -76,14 +76,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				i(141216),	-- Grove Defiler (MOUNT!)
 			},
 		}),
-		-- #IF AFTER LEGION
 		-- #IF BEFORE BFA
-		ach(11162, {	-- Keystone Master
-			ach(11185),	-- Keystone Conqueror
-			ach(11184),	-- Keystone Challenger
-			ach(11183),	-- Keystone Initiate
-		}),
-		-- #ENDIF
+		ach(11162),	-- Keystone Master
+		ach(11185),	-- Keystone Conqueror
+		ach(11184),	-- Keystone Challenger
+		ach(11183),	-- Keystone Initiate
 		-- #ENDIF
 	}),
 })));

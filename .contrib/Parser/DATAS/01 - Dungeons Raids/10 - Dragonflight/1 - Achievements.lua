@@ -98,11 +98,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}},
 		}),
 		-- #IF AFTER DF
-		ach(11162, {	-- Keystone Master
-			ach(11185),	-- Keystone Conqueror
-			ach(11184),	-- Keystone Challenger
-			ach(11183),	-- Keystone Initiate
-		}),
+		ach(11162),	-- Keystone Master
+		ach(11185),	-- Keystone Conqueror
+		ach(11184),	-- Keystone Challenger
+		ach(11183),	-- Keystone Initiate
 		-- #ENDIF
 	}),
 })));

@@ -20,7 +20,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					18384,	-- Whelp, There It Is
 				}},
 				["g"] = {
-					i(211862),	-- Bestowed Ottuk Vanguard (MOUNT!) [Not In Game Yet...]
+					i(211862),	-- Bestowed Ottuk Vanguard (MOUNT!)
 				},
 			}),
 		})),
