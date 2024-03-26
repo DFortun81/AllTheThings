@@ -29,7 +29,6 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 	}, {
 		["maps"] = { IRONFORGE, DUN_MOROGH },
 		["groups"] = {
-			-- #if AFTER 3.3.0
 			q(25229, {	-- A Few Good Gnomes
 				["qg"] = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
 				["coord"] = { 69.2, 49.2, IRONFORGE },
@@ -52,7 +51,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 			q(25199, {	-- Basic Orders
 				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25229,	-- A Few Good Gnomes
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
+				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- Salute the Drill Sergeant
 						["provider"] = { "n", 39368 },	-- Drill Sergeant Steamcrank
@@ -71,7 +70,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 			q(25285, {	-- In and Out
 				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25199,	-- Basic Orders
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
+				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- Ejection System Tested
 						["provider"] = { "n", 39715 },	-- Ejector Mechano-Tank
@@ -81,7 +80,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 			q(25289, {	-- One Step Forward...
 				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25285,	-- In and Out
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
+				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- 0/3 Left Leg Servos Tested
 						["provider"] = { "n", 39716 },	-- Scuttling Mechano-Tank
@@ -95,11 +94,18 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25393, {	-- Operation: Gnomeregan
-				["qg"] = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
+				["providers"] = {
+					{ "n", 39271 },	-- High Tinker Mekkatorque <King of Gnomes> (At the operation start location)
+					{ "n", 7937 },	-- High Tinker Mekkatorque <King of Gnomes> (after the quest is done, back in IF)
+				},
 				["sourceQuest"] = 25287,	-- Words for Delivery (2)
 				["coord"] = { 69.2, 49.2, IRONFORGE },
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation. Pretty sure it's a different npcID.
 				["groups"] = {
+					objective(1, {	-- Regain the Surface of Gnomeregan
+						["provider"] = { "n", 39901 },	-- Mekgineer Thermaplugg's Brag-Bot
+						["provider"] = { "n", 39799 },	-- Gasherikk
+						["provider"] = { "n", 39837 },	-- Commander Boltcog
+					}),
 					ach(4786),	-- Operation: Gnomeregan
 					i(53097),	-- Gnomeregan Drape
 				},
@@ -110,82 +116,78 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 					25295,	-- Press Fire
 					25212,	-- Vent Horizon
 				},
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
+				["coord"] = { 49.32, 48.27, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- Perform Speech to Ozzie Togglevolt
 						["providers"] = {
 							{ "n", 1268 },	-- Ozzie Togglevolt
 							{ "i", 52709 },	-- Gnomish Playback Device
 						},
-						["coord"] = { 53.0, 47.6, DUN_MOROGH },
+						["coord"] = { 45.89, 49.38, DUN_MOROGH },
 					}),
 					objective(2, {	-- Perform Speech to Milli Featherwhistle
 						["providers"] = {
 							{ "n", 7955 },	-- Milli Featherwhistle
 							{ "i", 52709 },	-- Gnomish Playback Device
 						},
-						["coord"] = { 56.2, 46.2, DUN_MOROGH },
+						["coord"] = { 49.12, 47.95, DUN_MOROGH },
 					}),
 					objective(3, {	-- Perform Speech to Tog Rustsprocket
 						["providers"] = {
 							{ "n", 6119 },	-- Tog Rustsprocket
 							{ "i", 52709 },	-- Gnomish Playback Device
 						},
-						["coord"] = { 54.4, 52.0, DUN_MOROGH },
+						["coord"] = { 47.34, 53.78, DUN_MOROGH },
 					}),
 				},
 			}),
 			q(25295, {	-- Press Fire
 				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25289,	-- One Step Forward...
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
+				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- 0/3 Weapon System Tested
-						["provider"] = { "n", 39717 },	-- Shooting Mechano-Tank
+						["providers"] = {
+							{ "n", 39711 },	-- Mechano-Tank Attack Target
+							{ "n", 39717 },	-- Shooting Mechano-Tank
+						},
 					}),
 				},
 			}),
 			q(25212, {	-- Vent Horizon
 				["qg"] = 39386,	-- Pilot Muzzlesprock
-				["sourceQuest"] = 25295,	-- Press Fire
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
+				["sourceQuest"] = 25199,	-- Basic Orders
+				["coord"] = { 50.1, 47.74, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- 0/3 Deploy Radiageigatron at Gnomeregan Vents
-						["provider"] = { "i", 52541 },	-- Radiageigatron
+						["providers"] = {
+							{ "i", 52541 },	-- Radiageigatron
+							{ "n", 39396 },	-- 'Thunderflash'
+						},
 					}),
 				},
 			}),
-			q(25500, {	-- Words for Delivery (1)
+			q(25500, {	-- Words for Delivery (1/2)
 				["providers"] = {
 					{ "n", 39678 },	-- Toby Zeigear
 					{ "i", 52731 },	-- Mekkatorque's Speech
 				},
 				["sourceQuest"] = 25283,	-- Prepping the Speech
 				["altQuests"] = { 25286 },	-- Words for Delivery (for level 75 and below)
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
+				["coord"] = { 49.32, 48.27, DUN_MOROGH },
 				["groups"] = {
 					i(54651),	-- Gnomeregan Pride (TOY!)
 				},
 			}),
-			q(25287, {	-- Words for Delivery (2)
+			q(25287, {	-- Words for Delivery (2/2)
 				["providers"] = {
 					{ "n", 39675 },	-- Captain Tread Sparknozzle
 					{ "i", 52731 },	-- Mekkatorque's Speech
+					{ "n", 39396 },	-- 'Thunderflash'
 				},
-				["sourceQuest"] = 25500,	-- Words for Delivery (1)
-				-- TODO: Add coordinate, not sure what map this guy is on there is no documentation.
-				["isBreadcrumb"] = true,
+				["sourceQuest"] = 25500,	-- Words for Delivery (1/2)
+				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 			}),
-			-- #else
-			n(REWARDS, {
-				["description"] = "The following things exist in the game, but are placeholders until the actual event is made available to players.",
-				["groups"] = {
-					ach(4786),	-- Operation: Gnomeregan
-					i(53097),	-- Gnomeregan Drape
-					i(54651),	-- Gnomeregan Pride (TOY!)
-				},
-			}),
-			-- #endif
 		},
 	}))
 ));
