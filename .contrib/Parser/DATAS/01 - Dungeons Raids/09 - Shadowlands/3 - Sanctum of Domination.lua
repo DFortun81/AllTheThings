@@ -195,7 +195,6 @@ local EncounterToLoot = {
 		-- 187056 The Devouring Cold
 	},
 	[SYLVANAS] = {
-		i(186398),	-- Edge of Night
 		i(186417),	-- Guard of the Sundered Defender
 		i(186325),	-- Veil of the Banshee Queen
 		i(186342),	-- Epaulets of the Master Ranger
@@ -619,6 +618,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(180933),	-- Ashen Juggernaut
 					i(183483),	-- Carnivorous Instinct
 					i(183511),	-- Deeper Daggers
+					i(186398),	-- Edge of Night
 					i(181740),	-- Evasive Stride
 					i(182385),	-- Growing Inferno
 					i(182772),	-- Infernal Brand
