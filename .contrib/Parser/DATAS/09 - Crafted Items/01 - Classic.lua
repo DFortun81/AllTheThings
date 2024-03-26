@@ -2367,23 +2367,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(MINING, {
 		spell(2575, {	-- Mining
 			i(2836),	-- Coarse Stone
-			i(2770),	-- Copper Ore
+			i(2770, {["_drop"]={"requireSkill"}}),	-- Copper Ore
 			i(11370),	-- Dark Iron Ore
 			i(12365),	-- Dense Stone
 			i(2776),	-- Gold Ore
 			i(108296, {["timeline"] = {ADDED_6_0_2}}),	-- Gold Ore Nugget
 			i(2838),	-- Heavy Stone
-			i(2772),	-- Iron Ore
+			i(2772, {["_drop"]={"requireSkill"}}),	-- Iron Ore
 			i(108297, {["timeline"] = {ADDED_6_0_2}}),	-- Iron Ore Nugget
 			applyclassicphase(PHASE_FIVE, i(22203)),	-- Large Obsidian Shard
-			i(3858),	-- Mithril Ore
+			i(3858, {["_drop"]={"requireSkill"}}),	-- Mithril Ore
 			i(108300, {["timeline"] = {ADDED_6_0_2}}),	-- Mithril Ore Nugget
 			i(2835),	-- Rough Stone
 			i(2775),	-- Silver Ore
 			i(108294, {["timeline"] = {ADDED_6_0_2}}),	-- Silver Ore Nugget
 			applyclassicphase(PHASE_FIVE, i(22202)),	-- Small Obsidian Shard
 			i(7912),	-- Solid Stone
-			i(10620),	-- Thorium Ore
+			i(10620, {["_drop"]={"requireSkill"}}),	-- Thorium Ore
 			i(108298, {["timeline"] = {ADDED_6_0_2}}),	-- Thorium Ore Nugget
 			i(2771),	-- Tin Ore
 			i(108295, {["timeline"] = {ADDED_6_0_2}}),	-- Tin Ore Nugget
