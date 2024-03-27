@@ -28,13 +28,6 @@ root(ROOTS.Unsorted, {
 				i(213591),	-- Icy Drake Racer's Shoulderpads
 				i(213592),	-- Icy Drake Racer's Helmet
 
-				------ Fearless Buccaneer ------
-				i(217381),	-- Ensemble: Fearless Buccaneer's Slops
-				i(217380),	-- Fearless Buccaneer's Boots
-				i(217379),	-- Fearless Buccaneer's Breeches
-				i(217378),	-- Fearless Buccaneer's Sash
-				i(217377),	-- Fearless Buccaneer's Tunic
-
 				------ Gladiator's Battered ------
 				i(217038),	-- Ensemble: Gladiator's Battered Armor
 				i(217037),	-- Gladiator's Battered Belt
@@ -605,7 +598,6 @@ root(ROOTS.Unsorted, {
 				------ Single Pieces ------
 				i(190859),	-- Apprentice's Twisted Crook
 				i(190807),	-- Artisan's Work Shirt
-				i(213078),	-- Assassin's Bandolier
 				i(213162),	-- Blessed Bow of the Windseeker
 				i(190669),	-- Burnished Helm of Righteousness
 				i(190692),	-- Champion's Battle Standard
@@ -624,17 +616,14 @@ root(ROOTS.Unsorted, {
 				i(212624),	-- Dueler's Deep Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
-				i(212621),	-- Dueler's Lively Shoulder Cape
 				i(212628),	-- Dueler's Midnight Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
 				i(212615),	-- Dueler's Snowy Shoulder Cape
 				i(212614),	-- Dueler's Sunny Shoulder Cape
-				i(212616),	-- Dueler's Violet Shoulder Cape
 				i(190819),	-- Emerald Guardian's Longbow
 				i(213073),	-- Faded Floral Staff
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
 				i(190849),	-- Forgemaster's Gavel
-				i(190857),	-- Gilded Emerald Longcloak
 				i(213107),	-- Gladiator's Ragged Greatsword
 				i(213106),	-- Gladiator's Serrated Greatsword
 				i(212787),	-- Gloves of the Violet Gala
@@ -947,7 +936,6 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(212524),	-- Delicate Crimson Parasol (TOY!) [Trading Post]
 				i(212525),	-- Delicate Ebony Parasol (TOY!) [Trading Post]
-				i(212500),	-- Delicate Silk Parasol (TOY!) [Trading Post]
 			}),
 			------ Azerothian Archives ------
 			-- Misc
