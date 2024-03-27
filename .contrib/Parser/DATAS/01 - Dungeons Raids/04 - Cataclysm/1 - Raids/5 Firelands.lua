@@ -429,6 +429,84 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(68915),	-- Scales of Life
 				i(71367),	-- Theck's Emberseal
 			}),
+			d(NORMAL_HEROIC_DUNGEON, {
+				e(192, {	-- Beth'tilac
+					["creatureID"] = 52498,
+					["groups"] = {
+						ach(5821),	-- Death from Above
+						i(152976, {	-- Cinderweb Recluse (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+					},
+				}),
+				e(193, {	-- Lord Rhyolith
+					["creatureID"] = 52558,
+					["groups"] = {
+						ach(5810),	-- Not an Ambi-Turner
+					},
+				}),
+				e(194, {	-- Alysrazor
+					["creatureID"] = 52530,
+					["groups"] = {
+						ach(5813, {	-- Do a Barrel Roll!
+							crit(17533),	-- Brushfire
+							crit(17535),	-- Lava Spew
+							crit(17536),	-- Incendiary Cloud
+							crit(17538),	-- Fiery Tornado
+						}),
+						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+					},
+				}),
+				e(195, {	-- Shannox
+					["creatureID"] = 53691,
+					["groups"] = {
+						ach(5829, {	-- Bucket List
+							crit(17576),	-- Shannox
+							crit(17775),	-- Beth'tilac's Lair
+							crit(17776),	-- Flamebreach
+							crit(17777),	-- Path of Corruption
+							crit(17778),	-- The Ridge of Ancient Flame
+							crit(17779),	-- Shatterstone
+						}),
+						i(152975, {	-- Blazehound (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+					},
+				}),
+				e(196, {	-- Baleroc, the Gatekeeper
+					["creatureID"] = 53494,
+					["groups"] = {
+						ach(5830),	-- Share the Pain
+						i(152977, {	-- Surger (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+					},
+				}),
+				e(197, {	-- Majordomo Staghelm
+					["creatureID"] = 52571,
+					["groups"] = {
+						ach(5799, {	-- Only the Penitent...
+							["description"] = "This achievement requires a group of 2.",
+						}),
+						i(152978, {	-- Infernal Pyreclaw (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+						i(122304, {	-- Fandral's Seed Pouch (TOY!)
+							["timeline"] = { ADDED_6_1_0 },
+						}),
+					},
+				}),
+				e(198, {	-- Ragnaros
+					["creatureID"] = 52409,
+					["groups"] = {
+						ach(5855),	-- Ragnar-O's
+						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
+						ig(175158, {	-- Flames of Fury (RI!)
+							["timeline"] = { ADDED_8_3_0 },
+						}),
+					},
+				}),
+			}),
 			d(NORMAL_RAID, {
 				["difficulties"] = { 1, 3, 4 },
 				["groups"] = {
@@ -456,10 +534,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
 						["groups"] = {
-							ach(5821),	-- Death from Above
-							i(152976, {	-- Cinderweb Recluse (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(71039),	-- Funeral Pyre
 							i(70922),	-- Mandible of Beth'tilac
 							i(71038),	-- Ward of the Red Widow
@@ -479,7 +553,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
 						["groups"] = {
-							ach(5810),	-- Not an Ambi-Turner
 							i(71006),	-- Volcanospike
 							i(70991),	-- Arbalest of Erupting Fury
 							i(71011),	-- Flickering Cowl
@@ -498,13 +571,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
 						["groups"] = {
-							ach(5813, {	-- Do a Barrel Roll!
-								crit(17533),	-- Brushfire
-								crit(17535),	-- Lava Spew
-								crit(17536),	-- Incendiary Cloud
-								crit(17538),	-- Fiery Tornado
-							}),
-							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 							i(70733),	-- Alysra's Razor
 							i(70734),	-- Greathelm of the Voracious Maw
 							i(70985),	-- Craterflame Spaulders
@@ -524,17 +590,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
 						["groups"] = {
-							ach(5829, {	-- Bucket List
-								crit(17576),	-- Shannox
-								crit(17775),	-- Beth'tilac's Lair
-								crit(17776),	-- Flamebreach
-								crit(17777),	-- Path of Corruption
-								crit(17778),	-- The Ridge of Ancient Flame
-								crit(17779),	-- Shatterstone
-							}),
-							i(152975, {	-- Blazehound (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(71014),	-- Skullstealer Greataxe
 							i(71013),	-- Feeding Frenzy
 							i(71022),	-- Goblet of Anger
@@ -554,10 +609,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
 						["groups"] = {
-							ach(5830),	-- Share the Pain
-							i(152977, {	-- Surger (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(71312),	-- Gatecrasher
 							i(70915),	-- Shard of Torment
 							i(71323),	-- Molten Scream
@@ -576,15 +627,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
 						["groups"] = {
-							ach(5799, {	-- Only the Penitent...
-								["description"] = "This achievement requires a group of 2.",
-							}),
-							i(152978, {	-- Infernal Pyreclaw (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
-							i(122304, {	-- Fandral's Seed Pouch (TOY!)
-								["timeline"] = { ADDED_6_1_0 },
-							}),
 							SHOULDER_CONQ,	-- Shoulders of the Fiery Conqueror
 							SHOULDER_PROT,	-- Shoulders of the Fiery Protector
 							SHOULDER_VANQ,	-- Shoulders of the Fiery Vanquisher
@@ -605,14 +647,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["groups"] = {
-							ach(5855),	-- Ragnar-O's
 							HELM_CONQ,	-- Crown of the Fiery Conqueror
 							HELM_PROT,	-- Crown of the Fiery Protector
 							HELM_VANQ,	-- Crown of the Fiery Vanquisher
-							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
-							ig(175158, {	-- Flames of Fury (RI!)
-								["timeline"] = { ADDED_8_3_0 },
-							}),
 							i(71798),	-- Sho'ravon, Greatstaff of Annihilation
 							i(71352),	-- Sulfuras, the Extinguished Hand
 							i(71355),	-- Ko'gun, Hammer of the Firelord
@@ -745,9 +782,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["creatureID"] = 52498,
 						["groups"] = {
 							ach(5807),	-- Heroic: Beth'tilac
-							i(152976, {	-- Cinderweb Recluse (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(71409),	-- Funeral Pyre
 							i(71406),	-- Mandible of Beth'tilac
 							i(71408),	-- Ward of the Red Widow
@@ -790,7 +824,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71679),	-- Chest of the Fiery Conqueror
 							i(71686),	-- Chest of the Fiery Protector
 							i(71672),	-- Chest of the Fiery Vanquisher
-							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 							i(71427),	-- Alysra's Razor
 							i(71430),	-- Greathelm of the Voracious Maw
 							i(71438),	-- Craterflame Spaulders
@@ -814,9 +847,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71678),	-- Leggings of the Fiery Conqueror
 							i(71685),	-- Leggings of the Fiery Protector
 							i(71671),	-- Leggings of the Fiery Vanquisher
-							i(152975, {	-- Blazehound (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(71445),	-- Skullstealer Greataxe
 							i(71441),	-- Feeding Frenzy
 							i(71448),	-- Goblet of Anger
@@ -840,9 +870,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71676),	-- Gauntlets of the Fiery Conqueror
 							i(71683),	-- Gauntlets of the Fiery Protector
 							i(71669),	-- Gauntlets of the Fiery Vanquisher
-							i(152977, {	-- Surger (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
 							i(71454),	-- Gatecrasher
 							i(71460),	-- Shard of Torment
 							i(71462),	-- Molten Scream
@@ -862,12 +889,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["creatureID"] = 52571,
 						["groups"] = {
 							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
-							i(152978, {	-- Infernal Pyreclaw (PET!)
-								["timeline"] = { ADDED_7_3_0 },
-							}),
-							i(122304, {	-- Fandral's Seed Pouch (TOY!)
-								["timeline"] = { ADDED_6_1_0 },
-							}),
 							i(71680),	-- Shoulders of the Fiery Conqueror
 							i(71687),	-- Shoulders of the Fiery Protector
 							i(71673),	-- Shoulders of the Fiery Vanquisher
@@ -896,10 +917,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71677),	-- Crown of the Fiery Conqueror
 							i(71684),	-- Crown of the Fiery Protector
 							i(71670),	-- Crown of the Fiery Vanquisher
-							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
-							ig(175158, {	-- Flames of Fury (RI!)
-								["timeline"] = { ADDED_8_3_0 },
-							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 							i(70723),	-- Sulfuras, the Extinguished Hand
 							i(71615),	-- Ko'gun, Hammer of the Firelord
