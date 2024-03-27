@@ -42,7 +42,7 @@ local function RecursiveParentMapper(group, field, value)
 end
 
 
--- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
+-- Common function set as the OnClick for a group which will build itself a 'nested' version of the
 -- content which matches the specified .dynamic 'field' and .dynamic_value of the group
 local DynamicCategory_Nested = function(self)
 	-- app.PrintDebug("DC:N",self.dynamic,self.dynamic_value,self.dynamic_withsubgroups)
@@ -59,7 +59,7 @@ local DynamicCategory_Nested = function(self)
 	app.DirectGroupUpdate(self);
 end
 
--- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
+-- Common function set as the OnClick for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
 local DynamicCategory_Simple = function(self)
@@ -145,7 +145,7 @@ end
 
 local Filler
 local function RecalculateFiller()
-	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
+	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 1;
 	Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
 			(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
 	-- app.PrintDebug("RecalculateFiller",dynamicSetting)
@@ -156,8 +156,6 @@ end
 local function FillDynamicCategory(group, field, value)
 	-- app.PrintDebug("FDC:",group.dynamic,group.dynamic_value)
 	group.OnClick = false
-	group.OnUpdate = false
-	--group.title = false
 	-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 	group.dynamic = group.dynamicID or field;
 	group.dynamic_value = group.dynamic_value or value;
@@ -170,8 +168,6 @@ end
 -- Can indicate to keep sub-group Things if desired.
 local function NestDynamicValueCategories(group)
 	group.OnClick = false
-	group.OnUpdate = false
-	--group.title = false
 	local cat;
 	local field = group.dynamicValueID
 	local cache = SearchForFieldContainer(field);
@@ -198,12 +194,8 @@ local function NestDynamicValueCategories(group)
 end
 
 local function dynamic_title(t)
-	local title = app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L.DYNAMIC_CATEGORY_LABEL)
-	t.title = title
-	return title
-end
-local function dynamic_visible()
-	return 0 < app.Settings:Get("Dynamic:Style") or nil
+	if t.__filled then return end
+	return app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L.DYNAMIC_CATEGORY_LABEL)
 end
 local function dynamic_back()
 	return 0.3
@@ -213,6 +205,7 @@ local function dynamic_onclick(row, button)
 	-- fill the dynamic category group
 	FillDynamicCategory(row.ref)
 	-- don't handle further onclick logic (i.e. expanding)
+	row.ref.__filled = true
 	return true
 end
 local function dynamicvalues_onclick(row, button)
@@ -220,6 +213,7 @@ local function dynamicvalues_onclick(row, button)
 	-- fill the dynamic category group
 	NestDynamicValueCategories(row.ref)
 	-- allow further onclick logic (i.e. expanding)
+	row.ref.__filled = true
 end
 
 -- Allows creating an ATT object which can be toggled true/false, and when clicked captures the toggleID state into the parent and passes it into an optional handler
@@ -268,14 +262,12 @@ app.CreateDynamicHeader = app.CreateClass("Dynamic", "dynamicID", {
 	end,
 	-- Until clicked, show a description that click/expand will cause populating
 	["title"] = dynamic_title,
-	-- Dynamic categories only show if the setting is enabled
-	["visible"] = dynamic_visible,
+	["visible"] = app.ReturnTrue,
 	-- Tint the row backgrounds for separation from other data
 	["back"] = dynamic_back,
 	-- Always ignore dynamic categories for progress propagation
 	["sourceIgnored"] = app.ReturnTrue,
 });
-
 
 -- Allows creating an ATT object which can be expanded to trigger an async population of the dynamic data it should contain, based on provided data in 't'
 -- Expected t-data:
@@ -287,8 +279,7 @@ app.CreateDynamicHeaderByValue = app.CreateClass("DynamicValues", "dynamicValueI
 	end,
 	-- Until clicked, show a description that click/expand will cause populating
 	["title"] = dynamic_title,
-	-- Dynamic categories only show if the setting is enabled
-	["visible"] = dynamic_visible,
+	["visible"] = app.ReturnTrue,
 	-- Tint the row backgrounds for separation from other data
 	["back"] = dynamic_back,
 	-- Always ignore dynamic categories for progress propagation
