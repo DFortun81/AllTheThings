@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
+			--[[d(ALL_DIFFICULTIES_RAID, {
 				cr(55265, e(311, {	-- Morchok
 					-- Placeholder for criteria
 				})),
@@ -240,9 +240,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- Placeholder for criteria
 				})),
 				cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-					i(152979, {	-- Faceless Mindlasher (PET!)
-						["timeline"] = { ADDED_7_3_0 },
-					}),
+				--	i(152979, {	-- Faceless Mindlasher (PET!)
+				--		["timeline"] = { ADDED_7_3_0 },
+				--	}),
 				})),
 				cr(55689, e(317, {	-- Hagara the Stormbinder
 					-- Placeholder for criteria
@@ -254,23 +254,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- Placeholder for criteria
 				})),
 				cr(53879, e(318, {	-- Spine of Deathwing
-					i(152980, {	-- Corrupted Blood (PET!)
-						["timeline"] = { ADDED_7_3_0 },
-					}),
-					i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
-						["timeline"] = { ADDED_6_1_0 },
-					}),
+				--	i(152980, {	-- Corrupted Blood (PET!)
+				--		["timeline"] = { ADDED_7_3_0 },
+				--	}),
+				--	i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
+				--		["timeline"] = { ADDED_6_1_0 },
+				--	}),
 				})),
 				cr(56173, e(333, {	-- Madness of Deathwing
-					i(152981, {	-- Unstable Tendril (PET!)
-						["timeline"] = { ADDED_7_3_0 },
-					}),
-					i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
-						["timeline"] = { ADDED_6_1_0 },
-					}),
-					currency(615),	-- Essence of Corrupted Deathwing
+				--	i(152981, {	-- Unstable Tendril (PET!)
+				--		["timeline"] = { ADDED_7_3_0 },
+				--	}),
+				--	i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
+				--		["timeline"] = { ADDED_6_1_0 },
+				--	}),
+				--	currency(615),	-- Essence of Corrupted Deathwing
 				})),
-			}),
+			}),--]]
 			d(RAID_FINDER, {
 				-- #if AFTER 6.0.1.18322
 				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
@@ -351,6 +351,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78411),	-- Mindstrainer Treads
 							i(77971),	-- Insignia of the Corrupted Mind
 							i(77970),	-- Soulshifter Vortex
+							i(152979, {	-- Faceless Mindlasher (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 						})),
 						cr(55689, e(317, {	-- Hagara the Stormbinder
 							i(78426),	-- Lightning Rod
@@ -397,6 +400,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(77978),	-- Resolve of Undying
 							i(77975),	-- Will of Unbinding
 							i(77974),	-- Wrath of Unchaining
+							i(152980, {	-- Corrupted Blood (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+							i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
+								["timeline"] = { ADDED_6_1_0 },
+							}),
 						})),
 						cr(56173, e(333, {	-- Madness of Deathwing
 							i(78482),	-- Kiril, Fury of Beasts
@@ -411,11 +420,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(89810, {	-- Bounty of a Sundered Land
 								["timeline"] = { "added 5.0.3" },
 							}),
+							i(152981, {	-- Unstable Tendril (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
+							i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
+								["timeline"] = { ADDED_6_1_0 },
+							}),
+							currency(615),	-- Essence of Corrupted Deathwing
 						})),
 					}),
 				},
 			}),
-			d(NORMAL_PLUS_RAID, {
+			d(NORMAL_PLUS_DUNGEON, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["ignoreBonus"] = true,
 				["groups"] = {
@@ -434,6 +450,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								i(77951),	-- Shadowy Gem
 							}),
 						},
+					}),
+					n(ZONE_DROPS, {
+						i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
+						i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
+						i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
+						i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
+						i(72004),	-- Pattern: Bracers of Unconquered Power
+						i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
+						i(72003),	-- Pattern: Dreamwraps of the Light
+						i(72002),	-- Pattern: Lavaquake Legwraps
+						i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
+						i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
+						i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
+						i(72000),	-- Pattern: World Mender's Pants
+						i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
+						i(72013),	-- Plans: Foundations of Courage (RECIPE!)
+						i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
+						i(72014),	-- Plans: Soul Redeemer Bracers (RECIPE!)
+						i(72016),	-- Plans: Titanguard Wristplates (RECIPE!)
+						i(72012),	-- Plans: Unstoppable Destroyer's Legplates (RECIPE!)
 					}),
 					cr(55265, e(311, {	-- Morchok
 						ach(6174),	-- Don't Stand So Close to Me
@@ -468,6 +504,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								},
 							}),
 						}),
+						i(152979, {	-- Faceless Mindlasher (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 					})),
 					cr(55689, e(317, {	-- Hagara the Stormbinder
 						ach(6175),	-- Holding Hands
@@ -478,12 +517,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 					cr(55294, e(331, {	-- Ultraxion
 						ach(6084),	-- Minutes to Midnight
+						i(78919),	-- Experiment 12-B (MOUNT!)
 					})),
 					cr(56427, e(332, {	-- Warmaster Blackthorn
 						ach(6105),	-- Deck Defender
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
 						ach(6133),	-- Maybe He'll Get Dizzy...
+						i(152980, {	-- Corrupted Blood (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+						i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
+							["timeline"] = { ADDED_6_1_0 },
+						}),
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
@@ -505,6 +551,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						}),
 						i(77067),	-- Blazing Drake (MOUNT!)
 						i(78352),	-- Fragment of Deathwing's Jaw
+						i(152981, {	-- Unstable Tendril (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+						i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
+							["timeline"] = { ADDED_6_1_0 },
+						}),
+						currency(615),	-- Essence of Corrupted Deathwing
 					})),
 				},
 			}),
@@ -541,24 +594,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78884),	-- Girdle of Fungal Dreams
 						i(78887),	-- Girdle of Soulful Mending
 						i(78882),	-- Nightblind Cinch
-						i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
-						i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
-						i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
-						i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
 						i(72004),	-- Pattern: Bracers of Unconquered Power
-						i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
 						i(72003),	-- Pattern: Dreamwraps of the Light
 						i(72002),	-- Pattern: Lavaquake Legwraps
-						i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
-						i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
-						i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
 						i(72000),	-- Pattern: World Mender's Pants
-						i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
-						i(72013),	-- Plans: Foundations of Courage (RECIPE!)
-						i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
-						i(72014),	-- Plans: Soul Redeemer Bracers (RECIPE!)
-						i(72016),	-- Plans: Titanguard Wristplates (RECIPE!)
-						i(72012),	-- Plans: Unstoppable Destroyer's Legplates (RECIPE!)
 						i(77192),	-- Ruinblaster Shotgun
 						i(78879),	-- Sash of Relentless Truth
 						i(78878),	-- Spine of the Thousand Cuts
@@ -622,7 +661,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78184),	-- Chest of the Corrupted Conqueror
 						i(78179),	-- Chest of the Corrupted Protector
 						i(78174),	-- Chest of the Corrupted Vanquisher
-						i(78919),	-- Experiment 12-B (MOUNT!)
 						i(77223),	-- Morningstar of Heroic Will
 						i(77245),	-- Ledger of Revolting Rituals
 						i(77242),	-- Imperfect Specimens 27 and 28
@@ -706,24 +744,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78884),	-- Girdle of Fungal Dreams
 							i(78887),	-- Girdle of Soulful Mending
 							i(78882),	-- Nightblind Cinch
-							i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
-							i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
-							i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
-							i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
-							i(72004),	-- Pattern: Bracers of Unconquered Power
-							i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
-							i(72003),	-- Pattern: Dreamwraps of the Light
-							i(72002),	-- Pattern: Lavaquake Legwraps
-							i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
-							i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
-							i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
-							i(72000),	-- Pattern: World Mender's Pants
-							i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
-							i(72013),	-- Plans: Foundations of Courage (RECIPE!)
-							i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
-							i(72014),	-- Plans: Soul Redeemer Bracers (RECIPE!)
-							i(72016),	-- Plans: Titanguard Wristplates (RECIPE!)
-							i(72012),	-- Plans: Unstoppable Destroyer's Legplates (RECIPE!)
 							i(77192),	-- Ruinblaster Shotgun
 							i(78879),	-- Sash of Relentless Truth
 							i(78878),	-- Spine of the Thousand Cuts
@@ -793,7 +813,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78847),	-- Chest of the Corrupted Conqueror
 						i(78848),	-- Chest of the Corrupted Protector
 						i(78849),	-- Chest of the Corrupted Vanquisher
-						i(78919),	-- Experiment 12-B (MOUNT!)
 						i(78429),	-- Morningstar of Heroic Will
 						i(78433),	-- Ledger of Revolting Rituals
 						i(78435),	-- Imperfect Specimens 27 and 28
