@@ -365,8 +365,10 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
 			end
-			Callback(app.Audio.PlayFanfare);
-			Callback(app.TakeScreenShot, "Transmog");
+			if newCollected then
+				Callback(app.Audio.PlayFanfare);
+				Callback(app.TakeScreenShot, "Transmog");
+			end
 		end
 
 		-- Update the groups for the sourceIDs
