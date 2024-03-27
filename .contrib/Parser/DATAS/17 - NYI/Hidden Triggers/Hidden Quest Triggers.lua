@@ -2070,6 +2070,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- SORTED BY ID
 	n(SPECIAL, {
 		q(3366),	-- The Glowing Shard - completed with quest 6981
+		q(3911),	-- The Last Element - completed with quest 4641
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
 		q(9989),	-- Alien Spirits - completed with quest 10917
 		q(10061),	-- The Unyielding - completed with quest 10050

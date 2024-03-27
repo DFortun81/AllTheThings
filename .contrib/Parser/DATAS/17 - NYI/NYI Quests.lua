@@ -226,7 +226,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(8896, { ["name"] = "The Dwarven Spy", }),
 			q(8618, { ["name"] = "The Horde Needs More Singed Corestones!", }),
 			q(8617, { ["name"] = "The Horde Needs Singed Corestones!", }),
-			q(3911, { ["name"] = "The Last Element", }),
 			q(787, { ["name"] = "The New Horde", }),
 			q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
 			q(7790, { ["name"] = "The Written Word", }),
