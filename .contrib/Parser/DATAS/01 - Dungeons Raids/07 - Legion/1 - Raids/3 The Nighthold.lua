@@ -346,6 +346,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
 						i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
 						i(143544),	-- Skull of Corruption (TOY!)
+						i(141061, {	-- Technique: Grimoire of the Abyssal
+							["timeline"] = { ADDED_10_1_5 },
+						}),
 						i(140917),	-- Netherbranded Shoulderpads
 						i(140913),	-- Breastplate of the Remembered King
 						i(138335),	-- Doomblade Pants
