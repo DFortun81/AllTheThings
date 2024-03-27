@@ -410,889 +410,888 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			})),
-			--[[
 			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
 						n(CLASSES, {
 							cl(DEATHKNIGHT, {
-								i(209275, {	-- Verdant Gladiator's Cloak
+								i(216232, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209276, {	-- Verdant Gladiator's Drape
+								i(216233, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209277, {	-- Verdant Gladiator's Shawl
+								i(216234, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209259, {	-- Verdant Gladiator's Plate Chestguard
+								i(216216, {	-- Draconic Gladiator's Plate Chestguard
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209260, {	-- Verdant Gladiator's Plate Chestplate
+								i(216217, {	-- Draconic Gladiator's Plate Chestplate
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209263, {	-- Verdant Gladiator's Plate Gauntlets
+								i(216220, {	-- Draconic Gladiator's Plate Gauntlets
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209271, {	-- Verdant Gladiator's Plate Girdle
+								i(216228, {	-- Draconic Gladiator's Plate Girdle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209272, {	-- Verdant Gladiator's Plate Greatbelt
+								i(216229, {	-- Draconic Gladiator's Plate Greatbelt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209264, {	-- Verdant Gladiator's Plate Handguards
+								i(216221, {	-- Draconic Gladiator's Plate Handguards
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209265, {	-- Verdant Gladiator's Plate Helm
+								i(216222, {	-- Draconic Gladiator's Plate Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209266, {	-- Verdant Gladiator's Plate Helmet
+								i(216223, {	-- Draconic Gladiator's Plate Helmet
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209267, {	-- Verdant Gladiator's Plate Legguards
+								i(216224, {	-- Draconic Gladiator's Plate Legguards
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209270, {	-- Verdant Gladiator's Plate Pauldrons
+								i(216227, {	-- Draconic Gladiator's Plate Pauldrons
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209269, {	-- Verdant Gladiator's Plate Shoulders
+								i(216226, {	-- Draconic Gladiator's Plate Shoulders
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209262, {	-- Verdant Gladiator's Plate Stompers
+								i(216219, {	-- Draconic Gladiator's Plate Stompers
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209274, {	-- Verdant Gladiator's Plate Vambraces
+								i(216231, {	-- Draconic Gladiator's Plate Vambraces
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209261, {	-- Verdant Gladiator's Plate Warboots
+								i(216218, {	-- Draconic Gladiator's Plate Warboots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209268, {	-- Verdant Gladiator's Plate Wargreaves
+								i(216225, {	-- Draconic Gladiator's Plate Wargreaves
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209273, {	-- Verdant Gladiator's Plate Wristguards
+								i(216230, {	-- Draconic Gladiator's Plate Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(DEMONHUNTER, {
-								i(209161, {	-- Verdant Gladiator's Cloak
+								i(216118, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209162, {	-- Verdant Gladiator's Drape
+								i(216119, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209163, {	-- Verdant Gladiator's Shawl
+								i(216120, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209157, {	-- Verdant Gladiator's Leather Belt
+								i(216114, {	-- Draconic Gladiator's Leather Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209147, {	-- Verdant Gladiator's Leather Boots
+								i(216104, {	-- Draconic Gladiator's Leather Boots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209153, {	-- Verdant Gladiator's Leather Breeches
+								i(216110, {	-- Draconic Gladiator's Leather Breeches
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209149, {	-- Verdant Gladiator's Leather Gloves
+								i(216106, {	-- Draconic Gladiator's Leather Gloves
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209150, {	-- Verdant Gladiator's Leather Grips
+								i(216107, {	-- Draconic Gladiator's Leather Grips
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209151, {	-- Verdant Gladiator's Leather Helm
+								i(216108, {	-- Draconic Gladiator's Leather Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209146, {	-- Verdant Gladiator's Leather Jerkin
+								i(216103, {	-- Draconic Gladiator's Leather Jerkin
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209154, {	-- Verdant Gladiator's Leather Legwraps
+								i(216111, {	-- Draconic Gladiator's Leather Legwraps
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209152, {	-- Verdant Gladiator's Leather Mask
+								i(216109, {	-- Draconic Gladiator's Leather Mask
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209156, {	-- Verdant Gladiator's Leather Shoulderpads
+								i(216113, {	-- Draconic Gladiator's Leather Shoulderpads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209155, {	-- Verdant Gladiator's Leather Spaulders
+								i(216112, {	-- Draconic Gladiator's Leather Spaulders
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209158, {	-- Verdant Gladiator's Leather Strap
+								i(216115, {	-- Draconic Gladiator's Leather Strap
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209148, {	-- Verdant Gladiator's Leather Treads
+								i(216105, {	-- Draconic Gladiator's Leather Treads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209145, {	-- Verdant Gladiator's Leather Vest
+								i(216102, {	-- Draconic Gladiator's Leather Vest
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209160, {	-- Verdant Gladiator's Leather Wristguards
+								i(216117, {	-- Draconic Gladiator's Leather Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209159, {	-- Verdant Gladiator's Leather Wristwraps
+								i(216116, {	-- Draconic Gladiator's Leather Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(DRUID, {
-								i(209142, {	-- Verdant Gladiator's Cloak
+								i(216099, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209143, {	-- Verdant Gladiator's Drape
+								i(216100, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209144, {	-- Verdant Gladiator's Shawl
+								i(216101, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209138, {	-- Verdant Gladiator's Leather Belt
+								i(216095, {	-- Draconic Gladiator's Leather Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209128, {	-- Verdant Gladiator's Leather Boots
+								i(216085, {	-- Draconic Gladiator's Leather Boots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209134, {	-- Verdant Gladiator's Leather Breeches
+								i(216091, {	-- Draconic Gladiator's Leather Breeches
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209130, {	-- Verdant Gladiator's Leather Gloves
+								i(216087, {	-- Draconic Gladiator's Leather Gloves
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209131, {	-- Verdant Gladiator's Leather Grips
+								i(216088, {	-- Draconic Gladiator's Leather Grips
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209132, {	-- Verdant Gladiator's Leather Helm
+								i(216089, {	-- Draconic Gladiator's Leather Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209127, {	-- Verdant Gladiator's Leather Jerkin
+								i(216084, {	-- Draconic Gladiator's Leather Vestments
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209135, {	-- Verdant Gladiator's Leather Legwraps
+								i(216092, {	-- Draconic Gladiator's Leather Legwraps
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209133, {	-- Verdant Gladiator's Leather Mask
+								i(216090, {	-- Draconic Gladiator's Leather Mask
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209137, {	-- Verdant Gladiator's Leather Shoulderpads
+								i(216094, {	-- Draconic Gladiator's Leather Shoulderpads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209136, {	-- Verdant Gladiator's Leather Spaulders
+								i(216093, {	-- Draconic Gladiator's Leather Spaulders
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209139, {	-- Verdant Gladiator's Leather Strap
+								i(216096, {	-- Draconic Gladiator's Leather Strap
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209129, {	-- Verdant Gladiator's Leather Treads
+								i(216086, {	-- Draconic Gladiator's Leather Treads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209126, {	-- Verdant Gladiator's Leather Vest
+								i(216083, {	-- Draconic Gladiator's Leather Robe
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209141, {	-- Verdant Gladiator's Leather Wristguards
+								i(216098, {	-- Draconic Gladiator's Leather Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209140, {	-- Verdant Gladiator's Leather Wristwraps
+								i(216097, {	-- Draconic Gladiator's Leather Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(EVOKER, {
-								i(209218, {	-- Verdant Gladiator's Cloak
+								i(216175, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209219, {	-- Verdant Gladiator's Drape
+								i(216176, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209220, {	-- Verdant Gladiator's Shawl
+								i(216177, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209214, {	-- Verdant Gladiator's Chain Belt
+								i(216171, {	-- Draconic Gladiator's Chain Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209205, {	-- Verdant Gladiator's Chain Boots
+								i(216162, {	-- Draconic Gladiator's Chain Boots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209217, {	-- Verdant Gladiator's Chain Bracers
+								i(216174, {	-- Draconic Gladiator's Chain Bracers
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209211, {	-- Verdant Gladiator's Chain Breeches
+								i(216168, {	-- Draconic Gladiator's Chain Breeches
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209209, {	-- Verdant Gladiator's Chain Faceguard
+								i(216166, {	-- Draconic Gladiator's Chain Faceguard
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209206, {	-- Verdant Gladiator's Chain Gauntlets
+								i(216163, {	-- Draconic Gladiator's Chain Gauntlets
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209215, {	-- Verdant Gladiator's Chain Girdle
+								i(216172, {	-- Draconic Gladiator's Chain Girdle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209207, {	-- Verdant Gladiator's Chain Handguards
+								i(216164, {	-- Draconic Gladiator's Chain Handguards
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209208, {	-- Verdant Gladiator's Chain Helm
+								i(216165, {	-- Draconic Gladiator's Chain Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209210, {	-- Verdant Gladiator's Chain Leggings
+								i(216167, {	-- Draconic Gladiator's Chain Leggings
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209212, {	-- Verdant Gladiator's Chain Monnion
+								i(216169, {	-- Draconic Gladiator's Chain Monnion
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209202, {	-- Verdant Gladiator's Chain Robe
+								i(216159, {	-- Draconic Gladiator's Chain Robe
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209204, {	-- Verdant Gladiator's Chain Sabatons
+								i(216161, {	-- Draconic Gladiator's Chain Sabatons
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209213, {	-- Verdant Gladiator's Chain Shoulderguard
+								i(216170, {	-- Draconic Gladiator's Chain Shoulderguard
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209203, {	-- Verdant Gladiator's Chain Vestments
+								i(216160, {	-- Draconic Gladiator's Chain Vestments
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209216, {	-- Verdant Gladiator's Chain Wristguards
+								i(216173, {	-- Draconic Gladiator's Chain Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(HUNTER, {
-								i(209237, {	-- Verdant Gladiator's Cloak
+								i(216194, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209238, {	-- Verdant Gladiator's Drape
+								i(216195, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209239, {	-- Verdant Gladiator's Shawl
+								i(216196, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209233, {	-- Verdant Gladiator's Chain Belt
+								i(216190, {	-- Draconic Gladiator's Chain Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209224, {	-- Verdant Gladiator's Chain Boots
+								i(216181, {	-- Draconic Gladiator's Chain Boots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209236, {	-- Verdant Gladiator's Chain Bracers
+								i(216193, {	-- Draconic Gladiator's Chain Bracers
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209230, {	-- Verdant Gladiator's Chain Breeches
+								i(216187, {	-- Draconic Gladiator's Chain Breeches
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209228, {	-- Verdant Gladiator's Chain Faceguard
+								i(216185, {	-- Draconic Gladiator's Chain Faceguard
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209225, {	-- Verdant Gladiator's Chain Gauntlets
+								i(216182, {	-- Draconic Gladiator's Chain Gauntlets
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209234, {	-- Verdant Gladiator's Chain Girdle
+								i(216191, {	-- Draconic Gladiator's Chain Girdle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209226, {	-- Verdant Gladiator's Chain Handguards
+								i(216183, {	-- Draconic Gladiator's Chain Handguards
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209227, {	-- Verdant Gladiator's Chain Helm
+								i(216184, {	-- Draconic Gladiator's Chain Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209229, {	-- Verdant Gladiator's Chain Leggings
+								i(216186, {	-- Draconic Gladiator's Chain Leggings
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209231, {	-- Verdant Gladiator's Chain Monnion
+								i(216188, {	-- Draconic Gladiator's Chain Monnion
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209223, {	-- Verdant Gladiator's Chain Sabatons
+								i(216180, {	-- Draconic Gladiator's Chain Sabatons
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209232, {	-- Verdant Gladiator's Chain Shoulderguard
+								i(216189, {	-- Draconic Gladiator's Chain Shoulderguard
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209222, {	-- Verdant Gladiator's Chain Tunic
+								i(216179, {	-- Draconic Gladiator's Chain Tunic
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209221, {	-- Verdant Gladiator's Chain Vest
+								i(216178, {	-- Draconic Gladiator's Chain Vest
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209235, {	-- Verdant Gladiator's Chain Wristguards
+								i(216192, {	-- Draconic Gladiator's Chain Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(MAGE, {
-								i(209085, {	-- Verdant Gladiator's Cloak
+								i(216042, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209086, {	-- Verdant Gladiator's Drape
+								i(216043, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209087, {	-- Verdant Gladiator's Shawl
+								i(216044, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209080, {	-- Verdant Gladiator's Silk Amice
+								i(216037, {	-- Draconic Gladiator's Silk Amice
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209084, {	-- Verdant Gladiator's Silk Armbands
+								i(216041, {	-- Draconic Gladiator's Silk Armbands
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209082, {	-- Verdant Gladiator's Silk Belt
+								i(216039, {	-- Draconic Gladiator's Silk Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209070, {	-- Verdant Gladiator's Silk Blouse
+								i(216027, {	-- Draconic Gladiator's Silk Blouse
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209076, {	-- Verdant Gladiator's Silk Cap
+								i(216033, {	-- Draconic Gladiator's Silk Cap
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209081, {	-- Verdant Gladiator's Silk Cord
+								i(216038, {	-- Draconic Gladiator's Silk Cord
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209073, {	-- Verdant Gladiator's Silk Gloves
+								i(216030, {	-- Draconic Gladiator's Silk Gloves
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209074, {	-- Verdant Gladiator's Silk Handwraps
+								i(216031, {	-- Draconic Gladiator's Silk Handwraps
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209075, {	-- Verdant Gladiator's Silk Hat
+								i(216032, {	-- Draconic Gladiator's Silk Hat
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209077, {	-- Verdant Gladiator's Silk Leggings
+								i(216034, {	-- Draconic Gladiator's Silk Leggings
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209079, {	-- Verdant Gladiator's Silk Mantle
+								i(216036, {	-- Draconic Gladiator's Silk Mantle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209071, {	-- Verdant Gladiator's Silk Slippers
+								i(216028, {	-- Draconic Gladiator's Silk Slippers
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209072, {	-- Verdant Gladiator's Silk Treads
+								i(216029, {	-- Draconic Gladiator's Silk Treads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209078, {	-- Verdant Gladiator's Silk Trousers
+								i(216035, {	-- Draconic Gladiator's Silk Trousers
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209069, {	-- Verdant Gladiator's Silk Tunic
+								i(216026, {	-- Draconic Gladiator's Silk Tunic
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209083, {	-- Verdant Gladiator's Silk Wristwraps
+								i(216040, {	-- Draconic Gladiator's Silk Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(MONK, {
-								i(209180, {	-- Verdant Gladiator's Cloak
+								i(216137, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209181, {	-- Verdant Gladiator's Drape
+								i(216138, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209182, {	-- Verdant Gladiator's Shawl
+								i(216139, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209176, {	-- Verdant Gladiator's Leather Belt
+								i(216133, {	-- Draconic Gladiator's Leather Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209166, {	-- Verdant Gladiator's Leather Boots
+								i(216123, {	-- Draconic Gladiator's Leather Boots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209172, {	-- Verdant Gladiator's Leather Breeches
+								i(216129, {	-- Draconic Gladiator's Leather Breeches
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209168, {	-- Verdant Gladiator's Leather Gloves
+								i(216125, {	-- Draconic Gladiator's Leather Gloves
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209169, {	-- Verdant Gladiator's Leather Grips
+								i(216126, {	-- Draconic Gladiator's Leather Grips
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209170, {	-- Verdant Gladiator's Leather Helm
+								i(216127, {	-- Draconic Gladiator's Leather Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209165, {	-- Verdant Gladiator's Leather Jerkin
+								i(216122, {	-- Draconic Gladiator's Leather Jerkin
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209173, {	-- Verdant Gladiator's Leather Legwraps
+								i(216130, {	-- Draconic Gladiator's Leather Legwraps
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209171, {	-- Verdant Gladiator's Leather Mask
+								i(216128, {	-- Draconic Gladiator's Leather Mask
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209175, {	-- Verdant Gladiator's Leather Shoulderpads
+								i(216132, {	-- Draconic Gladiator's Leather Shoulderpads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209174, {	-- Verdant Gladiator's Leather Spaulders
+								i(216131, {	-- Draconic Gladiator's Leather Spaulders
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209177, {	-- Verdant Gladiator's Leather Strap
+								i(216134, {	-- Draconic Gladiator's Leather Strap
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209167, {	-- Verdant Gladiator's Leather Treads
+								i(216124, {	-- Draconic Gladiator's Leather Treads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209164, {	-- Verdant Gladiator's Leather Vest
+								i(216121, {	-- Draconic Gladiator's Leather Vest
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209179, {	-- Verdant Gladiator's Leather Wristguards
+								i(216136, {	-- Draconic Gladiator's Leather Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209178, {	-- Verdant Gladiator's Leather Wristwraps
+								i(216135, {	-- Draconic Gladiator's Leather Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(PALADIN, {
-								i(209294, {	-- Verdant Gladiator's Cloak
+								i(216251, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209295, {	-- Verdant Gladiator's Drape
+								i(216252, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209296, {	-- Verdant Gladiator's Shawl
+								i(216253, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209278, {	-- Verdant Gladiator's Plate Chestguard
+								i(216235, {	-- Draconic Gladiator's Plate Chestguard
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209279, {	-- Verdant Gladiator's Plate Chestplate
+								i(216236, {	-- Draconic Gladiator's Plate Chestplate
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209282, {	-- Verdant Gladiator's Plate Gauntlets
+								i(216239, {	-- Draconic Gladiator's Plate Gauntlets
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209290, {	-- Verdant Gladiator's Plate Girdle
+								i(216247, {	-- Draconic Gladiator's Plate Girdle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209291, {	-- Verdant Gladiator's Plate Greatbelt
+								i(216248, {	-- Draconic Gladiator's Plate Greatbelt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209283, {	-- Verdant Gladiator's Plate Handguards
+								i(216240, {	-- Draconic Gladiator's Plate Handguards
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209284, {	-- Verdant Gladiator's Plate Helm
+								i(216241, {	-- Draconic Gladiator's Plate Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209285, {	-- Verdant Gladiator's Plate Helmet
+								i(216242, {	-- Draconic Gladiator's Plate Helmet
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209286, {	-- Verdant Gladiator's Plate Legguards
+								i(216243, {	-- Draconic Gladiator's Plate Legguards
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209289, {	-- Verdant Gladiator's Plate Pauldrons
+								i(216246, {	-- Draconic Gladiator's Plate Pauldrons
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209288, {	-- Verdant Gladiator's Plate Shoulders
+								i(216245, {	-- Draconic Gladiator's Plate Shoulders
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209281, {	-- Verdant Gladiator's Plate Stompers
+								i(216238, {	-- Draconic Gladiator's Plate Stompers
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209287, {	-- Verdant Gladiator's Plate Tasses
+								i(216244, {	-- Draconic Gladiator's Plate Tasses
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209293, {	-- Verdant Gladiator's Plate Vambraces
+								i(216250, {	-- Draconic Gladiator's Plate Vambraces
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209280, {	-- Verdant Gladiator's Plate Warboots
+								i(216237, {	-- Draconic Gladiator's Plate Warboots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209292, {	-- Verdant Gladiator's Plate Wristguards
+								i(216249, {	-- Draconic Gladiator's Plate Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(PRIEST, {
-								i(209104, {	-- Verdant Gladiator's Cloak
+								i(216061, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209105, {	-- Verdant Gladiator's Drape
+								i(216062, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209106, {	-- Verdant Gladiator's Shawl
+								i(216063, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209099, {	-- Verdant Gladiator's Silk Amice
+								i(216056, {	-- Draconic Gladiator's Silk Amice
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209103, {	-- Verdant Gladiator's Silk Armbands
+								i(216060, {	-- Draconic Gladiator's Silk Armbands
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209101, {	-- Verdant Gladiator's Silk Belt
+								i(216058, {	-- Draconic Gladiator's Silk Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209089, {	-- Verdant Gladiator's Silk Blouse
+								i(216046, {	-- Draconic Gladiator's Silk Blouse
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209100, {	-- Verdant Gladiator's Silk Cord
+								i(216057, {	-- Draconic Gladiator's Silk Cord
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209092, {	-- Verdant Gladiator's Silk Gloves
+								i(216049, {	-- Draconic Gladiator's Silk Gloves
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209095, {	-- Verdant Gladiator's Silk Guise
+								i(216052, {	-- Draconic Gladiator's Silk Guise
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209093, {	-- Verdant Gladiator's Silk Handwraps
+								i(216050, {	-- Draconic Gladiator's Silk Handwraps
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209094, {	-- Verdant Gladiator's Silk Hood
+								i(216051, {	-- Draconic Gladiator's Silk Hood
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209096, {	-- Verdant Gladiator's Silk Leggings
+								i(216053, {	-- Draconic Gladiator's Silk Leggings
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209098, {	-- Verdant Gladiator's Silk Mantle
+								i(216055, {	-- Draconic Gladiator's Silk Mantle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209090, {	-- Verdant Gladiator's Silk Slippers
+								i(216047, {	-- Draconic Gladiator's Silk Slippers
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209091, {	-- Verdant Gladiator's Silk Treads
+								i(216048, {	-- Draconic Gladiator's Silk Treads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209097, {	-- Verdant Gladiator's Silk Trousers
+								i(216054, {	-- Draconic Gladiator's Silk Trousers
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209088, {	-- Verdant Gladiator's Silk Tunic
+								i(216045, {	-- Draconic Gladiator's Silk Tunic
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209102, {	-- Verdant Gladiator's Silk Wristwraps
+								i(216059, {	-- Draconic Gladiator's Silk Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(ROGUE, {
-								i(209199, {	-- Verdant Gladiator's Cloak
+								i(216156, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209200, {	-- Verdant Gladiator's Drape
+								i(216157, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209201, {	-- Verdant Gladiator's Shawl
+								i(216158, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209195, {	-- Verdant Gladiator's Leather Belt
+								i(216152, {	-- Draconic Gladiator's Leather Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209185, {	-- Verdant Gladiator's Leather Boots
+								i(216142, {	-- Draconic Gladiator's Leather Boots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209191, {	-- Verdant Gladiator's Leather Breeches
+								i(216148, {	-- Draconic Gladiator's Leather Breeches
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209187, {	-- Verdant Gladiator's Leather Gloves
+								i(216144, {	-- Draconic Gladiator's Leather Gloves
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209188, {	-- Verdant Gladiator's Leather Grips
+								i(216145, {	-- Draconic Gladiator's Leather Grips
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209189, {	-- Verdant Gladiator's Leather Helm
+								i(216146, {	-- Draconic Gladiator's Leather Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209184, {	-- Verdant Gladiator's Leather Jerkin
+								i(216141, {	-- Draconic Gladiator's Leather Jerkin
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209192, {	-- Verdant Gladiator's Leather Legwraps
+								i(216149, {	-- Draconic Gladiator's Leather Legwraps
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209190, {	-- Verdant Gladiator's Leather Mask
+								i(216147, {	-- Draconic Gladiator's Leather Mask
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209194, {	-- Verdant Gladiator's Leather Shoulderpads
+								i(216151, {	-- Draconic Gladiator's Leather Shoulderpads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209193, {	-- Verdant Gladiator's Leather Spaulders
+								i(216150, {	-- Draconic Gladiator's Leather Spaulders
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209196, {	-- Verdant Gladiator's Leather Strap
+								i(216153, {	-- Draconic Gladiator's Leather Strap
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209186, {	-- Verdant Gladiator's Leather Treads
+								i(216143, {	-- Draconic Gladiator's Leather Treads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209183, {	-- Verdant Gladiator's Leather Vest
+								i(216140, {	-- Draconic Gladiator's Leather Vest
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209198, {	-- Verdant Gladiator's Leather Wristguards
+								i(216155, {	-- Draconic Gladiator's Leather Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209197, {	-- Verdant Gladiator's Leather Wristwraps
+								i(216154, {	-- Draconic Gladiator's Leather Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(SHAMAN, {
-								i(209256, {	-- Verdant Gladiator's Cloak
+								i(216213, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209257, {	-- Verdant Gladiator's Drape
+								i(216214, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209258, {	-- Verdant Gladiator's Shawl
+								i(216215, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209252, {	-- Verdant Gladiator's Chain Belt
+								i(216209, {	-- Draconic Gladiator's Chain Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209243, {	-- Verdant Gladiator's Chain Boots
+								i(216200, {	-- Draconic Gladiator's Chain Boots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209255, {	-- Verdant Gladiator's Chain Bracers
+								i(216212, {	-- Draconic Gladiator's Chain Bracers
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209249, {	-- Verdant Gladiator's Chain Breeches
+								i(216206, {	-- Draconic Gladiator's Chain Breeches
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209247, {	-- Verdant Gladiator's Chain Faceguard
+								i(216204, {	-- Draconic Gladiator's Chain Faceguard
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209244, {	-- Verdant Gladiator's Chain Gauntlets
+								i(216201, {	-- Draconic Gladiator's Chain Gauntlets
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209253, {	-- Verdant Gladiator's Chain Girdle
+								i(216210, {	-- Draconic Gladiator's Chain Girdle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209245, {	-- Verdant Gladiator's Chain Handguards
+								i(216202, {	-- Draconic Gladiator's Chain Handguards
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209246, {	-- Verdant Gladiator's Chain Helm
+								i(216203, {	-- Draconic Gladiator's Chain Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209248, {	-- Verdant Gladiator's Chain Leggings
+								i(216205, {	-- Draconic Gladiator's Chain Leggings
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209250, {	-- Verdant Gladiator's Chain Monnion
+								i(216207, {	-- Draconic Gladiator's Chain Monnion
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209242, {	-- Verdant Gladiator's Chain Sabatons
+								i(216199, {	-- Draconic Gladiator's Chain Sabatons
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209251, {	-- Verdant Gladiator's Chain Shoulderguard
+								i(216208, {	-- Draconic Gladiator's Chain Shoulderguard
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209241, {	-- Verdant Gladiator's Chain Tunic
+								i(216198, {	-- Draconic Gladiator's Chain Tunic
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209240, {	-- Verdant Gladiator's Chain Vest
+								i(216197, {	-- Draconic Gladiator's Chain Vest
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209254, {	-- Verdant Gladiator's Chain Wristguards
+								i(216211, {	-- Draconic Gladiator's Chain Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(WARLOCK, {
-								i(209123, {	-- Verdant Gladiator's Cloak
+								i(216080, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209124, {	-- Verdant Gladiator's Drape
+								i(216081, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209125, {	-- Verdant Gladiator's Shawl
+								i(216082, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209118, {	-- Verdant Gladiator's Silk Amice
+								i(216075, {	-- Draconic Gladiator's Silk Amice
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209122, {	-- Verdant Gladiator's Silk Armbands
+								i(216079, {	-- Draconic Gladiator's Silk Armbands
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209120, {	-- Verdant Gladiator's Silk Belt
+								i(216077, {	-- Draconic Gladiator's Silk Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209119, {	-- Verdant Gladiator's Silk Cord
+								i(216076, {	-- Draconic Gladiator's Silk Cord
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209111, {	-- Verdant Gladiator's Silk Gloves
+								i(216068, {	-- Draconic Gladiator's Silk Gloves
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209114, {	-- Verdant Gladiator's Silk Guise
+								i(216071, {	-- Draconic Gladiator's Silk Guise
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209112, {	-- Verdant Gladiator's Silk Handwraps
+								i(216069, {	-- Draconic Gladiator's Silk Handwraps
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209113, {	-- Verdant Gladiator's Silk Hood
+								i(216070, {	-- Draconic Gladiator's Silk Hood
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209115, {	-- Verdant Gladiator's Silk Leggings
+								i(216072, {	-- Draconic Gladiator's Silk Leggings
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209117, {	-- Verdant Gladiator's Silk Mantle
+								i(216074, {	-- Draconic Gladiator's Silk Mantle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209107, {	-- Verdant Gladiator's Silk Robe
+								i(216064, {	-- Draconic Gladiator's Silk Robe
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209109, {	-- Verdant Gladiator's Silk Slippers
+								i(216066, {	-- Draconic Gladiator's Silk Slippers
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209110, {	-- Verdant Gladiator's Silk Treads
+								i(216067, {	-- Draconic Gladiator's Silk Treads
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209116, {	-- Verdant Gladiator's Silk Trousers
+								i(216073, {	-- Draconic Gladiator's Silk Trousers
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209108, {	-- Verdant Gladiator's Silk Vestments
+								i(216065, {	-- Draconic Gladiator's Silk Vestments
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209121, {	-- Verdant Gladiator's Silk Wristwraps
+								i(216078, {	-- Draconic Gladiator's Silk Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 							cl(WARRIOR, {
-								i(209313, {	-- Verdant Gladiator's Cloak
+								i(216270, {	-- Draconic Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209314, {	-- Verdant Gladiator's Drape
+								i(216271, {	-- Draconic Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209315, {	-- Verdant Gladiator's Shawl
+								i(216272, {	-- Draconic Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209297, {	-- Verdant Gladiator's Plate Chestguard
+								i(216254, {	-- Draconic Gladiator's Plate Chestguard
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209298, {	-- Verdant Gladiator's Plate Chestplate
+								i(216255, {	-- Draconic Gladiator's Plate Chestplate
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209301, {	-- Verdant Gladiator's Plate Gauntlets
+								i(216258, {	-- Draconic Gladiator's Plate Gauntlets
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209309, {	-- Verdant Gladiator's Plate Girdle
+								i(216266, {	-- Draconic Gladiator's Plate Girdle
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209310, {	-- Verdant Gladiator's Plate Greatbelt
+								i(216267, {	-- Draconic Gladiator's Plate Greatbelt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209302, {	-- Verdant Gladiator's Plate Handguards
+								i(216259, {	-- Draconic Gladiator's Plate Handguards
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209303, {	-- Verdant Gladiator's Plate Helm
+								i(216260, {	-- Draconic Gladiator's Plate Helm
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209304, {	-- Verdant Gladiator's Plate Helmet
+								i(216261, {	-- Draconic Gladiator's Plate Helmet
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209305, {	-- Verdant Gladiator's Plate Legguards
+								i(216262, {	-- Draconic Gladiator's Plate Legguards
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209308, {	-- Verdant Gladiator's Plate Pauldrons
+								i(216265, {	-- Draconic Gladiator's Plate Pauldrons
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209307, {	-- Verdant Gladiator's Plate Shoulders
+								i(216264, {	-- Draconic Gladiator's Plate Shoulders
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209300, {	-- Verdant Gladiator's Plate Stompers
+								i(216257, {	-- Draconic Gladiator's Plate Stompers
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209312, {	-- Verdant Gladiator's Plate Vambraces
+								i(216269, {	-- Draconic Gladiator's Plate Vambraces
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(209299, {	-- Verdant Gladiator's Plate Warboots
+								i(216256, {	-- Draconic Gladiator's Plate Warboots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209306, {	-- Verdant Gladiator's Plate Wargreaves
+								i(216263, {	-- Draconic Gladiator's Plate Wargreaves
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209311, {	-- Verdant Gladiator's Plate Wristguards
+								i(216268, {	-- Draconic Gladiator's Plate Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
 						}),
 						filter(FINGER_F, {
-							i(209338, {	-- Verdant Gladiator's Band
+							i(216274, {	-- Draconic Gladiator's Band
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(209337, {	-- Verdant Gladiator's Ring
+							i(216273, {	-- Draconic Gladiator's Ring
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(209339, {	-- Verdant Gladiator's Signet
+							i(216275, {	-- Draconic Gladiator's Signet
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						filter(NECK_F, {
-							i(209342, {	-- Verdant Gladiator's Amulet
+							i(216278, {	-- Draconic Gladiator's Amulet
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(209340, {	-- Verdant Gladiator's Necklace
+							i(216276, {	-- Draconic Gladiator's Necklace
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(209341, {	-- Verdant Gladiator's Pendant
+							i(216277, {	-- Draconic Gladiator's Pendant
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						filter(REAGENTS, {
-							i(212538, {	-- Greater Verdant Trophy of Conquest
+							i(211686, {	-- Greater Draconic Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 875 } },
 							}),
-							i(212537, {	-- Verdant Trophy of Conquest
+							i(211685, {	-- Draconic Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
-							i(212536, {	-- Lesser Verdant Trophy of Conquest
+							i(211684, {	-- Lesser Draconic Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						filter(TRINKET_F, {
-							i(209343, {	-- Verdant Gladiator's Badge of Ferocity
+							i(216279, {	-- Draconic Gladiator's Badge of Ferocity
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
-							i(209345, {	-- Verdant Gladiator's Emblem
+							i(216281, {	-- Draconic Gladiator's Emblem
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
-							i(209344, {	-- Verdant Gladiator's Insignia of Alacrity
+							i(216280, {	-- Draconic Gladiator's Insignia of Alacrity
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
-							i(209346, {	-- Verdant Gladiator's Medallion
+							i(216282, {	-- Draconic Gladiator's Medallion
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(209347, {	-- Verdant Gladiator's Sigil of Adaptation
+							i(216283, {	-- Draconic Gladiator's Sigil of Adaptation
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						n(WEAPONS, {
-							i(209544, {	-- Verdant Gladiator's Axe
+							i(216293, {	-- Draconic Gladiator's Axe
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(209554, {	-- Verdant Gladiator's Axestaff
+							i(216303, {	-- Draconic Gladiator's Axestaff
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209547, {	-- Verdant Gladiator's Bow
+							i(216296, {	-- Draconic Gladiator's Bow
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209549, {	-- Verdant Gladiator's Bulwark
+							i(216298, {	-- Draconic Gladiator's Bulwark
 								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
-							i(209542, {	-- Verdant Gladiator's Censer
+							i(216291, {	-- Draconic Gladiator's Censer
 								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
-							i(209546, {	-- Verdant Gladiator's Claws
+							i(216295, {	-- Draconic Gladiator's Claws
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(209536, {	-- Verdant Gladiator's Dagger
+							i(216285, {	-- Draconic Gladiator's Dagger
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(209548, {	-- Verdant Gladiator's Greatstaff
+							i(216297, {	-- Draconic Gladiator's Greatstaff
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209550, {	-- Verdant Gladiator's Greatsword
+							i(216299, {	-- Draconic Gladiator's Greatsword
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209551, {	-- Verdant Gladiator's Pulverizer
+							i(216300, {	-- Draconic Gladiator's Pulverizer
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209540, {	-- Verdant Gladiator's Rifle
+							i(216289, {	-- Draconic Gladiator's Rifle
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209541, {	-- Verdant Gladiator's Scepter
+							i(216290, {	-- Draconic Gladiator's Scepter
 								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
-							i(209538, {	-- Verdant Gladiator's Scythe
+							i(216287, {	-- Draconic Gladiator's Scythe
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209543, {	-- Verdant Gladiator's Shield
+							i(216292, {	-- Draconic Gladiator's Shield
 								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
-							i(209553, {	-- Verdant Gladiator's Shotel
+							i(216302, {	-- Draconic Gladiator's Shotel
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(209545, {	-- Verdant Gladiator's Sickle
+							i(216294, {	-- Draconic Gladiator's Sickle
 								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
-							i(209535, {	-- Verdant Gladiator's Splitter
+							i(216284, {	-- Draconic Gladiator's Splitter
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(209539, {	-- Verdant Gladiator's Staff
+							i(216288, {	-- Draconic Gladiator's Staff
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(209552, {	-- Verdant Gladiator's Sword
+							i(216301, {	-- Draconic Gladiator's Sword
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(209537, {	-- Verdant Gladiator's Warglaive
+							i(216286, {	-- Draconic Gladiator's Warglaive
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
 						}),
@@ -1302,367 +1301,366 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }, ["bonusID"] = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
-						i(209275),	-- Verdant Gladiator's Cloak
-						i(209276),	-- Verdant Gladiator's Drape
-						i(209277),	-- Verdant Gladiator's Shawl
-						i(209259),	-- Verdant Gladiator's Plate Chestguard
-						i(209260),	-- Verdant Gladiator's Plate Chestplate
-						i(209263),	-- Verdant Gladiator's Plate Gauntlets
-						i(209271),	-- Verdant Gladiator's Plate Girdle
-						i(209272),	-- Verdant Gladiator's Plate Greatbelt
-						i(209264),	-- Verdant Gladiator's Plate Handguards
-						i(209265),	-- Verdant Gladiator's Plate Helm
-						i(209266),	-- Verdant Gladiator's Plate Helmet
-						i(209267),	-- Verdant Gladiator's Plate Legguards
-						i(209270),	-- Verdant Gladiator's Plate Pauldrons
-						i(209269),	-- Verdant Gladiator's Plate Shoulders
-						i(209262),	-- Verdant Gladiator's Plate Stompers
-						i(209274),	-- Verdant Gladiator's Plate Vambraces
-						i(209261),	-- Verdant Gladiator's Plate Warboots
-						i(209268),	-- Verdant Gladiator's Plate Wargreaves
-						i(209273),	-- Verdant Gladiator's Plate Wristguards
+						i(216232),	-- Draconic Gladiator's Cloak
+						i(216233),	-- Draconic Gladiator's Drape
+						i(216234),	-- Draconic Gladiator's Shawl
+						i(216216),	-- Draconic Gladiator's Plate Chestguard
+						i(216217),	-- Draconic Gladiator's Plate Chestplate
+						i(216220),	-- Draconic Gladiator's Plate Gauntlets
+						i(216228),	-- Draconic Gladiator's Plate Girdle
+						i(216229),	-- Draconic Gladiator's Plate Greatbelt
+						i(216221),	-- Draconic Gladiator's Plate Handguards
+						i(216222),	-- Draconic Gladiator's Plate Helm
+						i(216223),	-- Draconic Gladiator's Plate Helmet
+						i(216224),	-- Draconic Gladiator's Plate Legguards
+						i(216227),	-- Draconic Gladiator's Plate Pauldrons
+						i(216226),	-- Draconic Gladiator's Plate Shoulders
+						i(216219),	-- Draconic Gladiator's Plate Stompers
+						i(216231),	-- Draconic Gladiator's Plate Vambraces
+						i(216218),	-- Draconic Gladiator's Plate Warboots
+						i(216225),	-- Draconic Gladiator's Plate Wargreaves
+						i(216230),	-- Draconic Gladiator's Plate Wristguards
 					}),
 					cl(DEMONHUNTER, {
-						i(209161),	-- Verdant Gladiator's Cloak
-						i(209162),	-- Verdant Gladiator's Drape
-						i(209157),	-- Verdant Gladiator's Leather Belt
-						i(209147),	-- Verdant Gladiator's Leather Boots
-						i(209153),	-- Verdant Gladiator's Leather Breeches
-						i(209149),	-- Verdant Gladiator's Leather Gloves
-						i(209150),	-- Verdant Gladiator's Leather Grips
-						i(209151),	-- Verdant Gladiator's Leather Helm
-						i(209146),	-- Verdant Gladiator's Leather Jerkin
-						i(209154),	-- Verdant Gladiator's Leather Legwraps
-						i(209152),	-- Verdant Gladiator's Leather Mask
-						i(209156),	-- Verdant Gladiator's Leather Shoulderpads
-						i(209155),	-- Verdant Gladiator's Leather Spaulders
-						i(209158),	-- Verdant Gladiator's Leather Strap
-						i(209148),	-- Verdant Gladiator's Leather Treads
-						i(209145),	-- Verdant Gladiator's Leather Vest
-						i(209160),	-- Verdant Gladiator's Leather Wristguards
-						i(209159),	-- Verdant Gladiator's Leather Wristwraps
-						i(209163),	-- Verdant Gladiator's Shawl
+						i(216118),	-- Draconic Gladiator's Cloak
+						i(216119),	-- Draconic Gladiator's Drape
+						i(216120),	-- Draconic Gladiator's Shawl
+						i(216114),	-- Draconic Gladiator's Leather Belt
+						i(216104),	-- Draconic Gladiator's Leather Boots
+						i(216110),	-- Draconic Gladiator's Leather Breeches
+						i(216106),	-- Draconic Gladiator's Leather Gloves
+						i(216107),	-- Draconic Gladiator's Leather Grips
+						i(216108),	-- Draconic Gladiator's Leather Helm
+						i(216103),	-- Draconic Gladiator's Leather Jerkin
+						i(216111),	-- Draconic Gladiator's Leather Legwraps
+						i(216109),	-- Draconic Gladiator's Leather Mask
+						i(216113),	-- Draconic Gladiator's Leather Shoulderpads
+						i(216112),	-- Draconic Gladiator's Leather Spaulders
+						i(216115),	-- Draconic Gladiator's Leather Strap
+						i(216105),	-- Draconic Gladiator's Leather Treads
+						i(216102),	-- Draconic Gladiator's Leather Vest
+						i(216117),	-- Draconic Gladiator's Leather Wristguards
+						i(216116),	-- Draconic Gladiator's Leather Wristwraps
 					}),
 					cl(DRUID, {
-						i(209142),	-- Verdant Gladiator's Cloak
-						i(209143),	-- Verdant Gladiator's Drape
-						i(209138),	-- Verdant Gladiator's Leather Belt
-						i(209128),	-- Verdant Gladiator's Leather Boots
-						i(209134),	-- Verdant Gladiator's Leather Breeches
-						i(209130),	-- Verdant Gladiator's Leather Gloves
-						i(209131),	-- Verdant Gladiator's Leather Grips
-						i(209132),	-- Verdant Gladiator's Leather Helm
-						i(209127),	-- Verdant Gladiator's Leather Jerkin
-						i(209135),	-- Verdant Gladiator's Leather Legwraps
-						i(209133),	-- Verdant Gladiator's Leather Mask
-						i(209137),	-- Verdant Gladiator's Leather Shoulderpads
-						i(209136),	-- Verdant Gladiator's Leather Spaulders
-						i(209139),	-- Verdant Gladiator's Leather Strap
-						i(209129),	-- Verdant Gladiator's Leather Treads
-						i(209126),	-- Verdant Gladiator's Leather Vest
-						i(209141),	-- Verdant Gladiator's Leather Wristguards
-						i(209140),	-- Verdant Gladiator's Leather Wristwraps
-						i(209144),	-- Verdant Gladiator's Shawl
+						i(216099),	-- Draconic Gladiator's Cloak
+						i(216100),	-- Draconic Gladiator's Drape
+						i(216101),	-- Draconic Gladiator's Shawl
+						i(216095),	-- Draconic Gladiator's Leather Belt
+						i(216085),	-- Draconic Gladiator's Leather Boots
+						i(216091),	-- Draconic Gladiator's Leather Breeches
+						i(216087),	-- Draconic Gladiator's Leather Gloves
+						i(216088),	-- Draconic Gladiator's Leather Grips
+						i(216089),	-- Draconic Gladiator's Leather Helm
+						i(216084),	-- Draconic Gladiator's Leather Vestments
+						i(216092),	-- Draconic Gladiator's Leather Legwraps
+						i(216090),	-- Draconic Gladiator's Leather Mask
+						i(216094),	-- Draconic Gladiator's Leather Shoulderpads
+						i(216093),	-- Draconic Gladiator's Leather Spaulders
+						i(216096),	-- Draconic Gladiator's Leather Strap
+						i(216086),	-- Draconic Gladiator's Leather Treads
+						i(216083),	-- Draconic Gladiator's Leather Robe
+						i(216098),	-- Draconic Gladiator's Leather Wristguards
+						i(216097),	-- Draconic Gladiator's Leather Wristwraps
 					}),
 					cl(EVOKER, {
-						i(209218),	-- Verdant Gladiator's Cloak
-						i(209219),	-- Verdant Gladiator's Drape
-						i(209220),	-- Verdant Gladiator's Shawl
-						i(209214),	-- Verdant Gladiator's Chain Belt
-						i(209205),	-- Verdant Gladiator's Chain Boots
-						i(209217),	-- Verdant Gladiator's Chain Bracers
-						i(209211),	-- Verdant Gladiator's Chain Breeches
-						i(209209),	-- Verdant Gladiator's Chain Faceguard
-						i(209206),	-- Verdant Gladiator's Chain Gauntlets
-						i(209215),	-- Verdant Gladiator's Chain Girdle
-						i(209207),	-- Verdant Gladiator's Chain Handguards
-						i(209208),	-- Verdant Gladiator's Chain Helm
-						i(209210),	-- Verdant Gladiator's Chain Leggings
-						i(209212),	-- Verdant Gladiator's Chain Monnion
-						i(209202),	-- Verdant Gladiator's Chain Robe
-						i(209204),	-- Verdant Gladiator's Chain Sabatons
-						i(209213),	-- Verdant Gladiator's Chain Shoulderguard
-						i(209203),	-- Verdant Gladiator's Chain Vestments
-						i(209216),	-- Verdant Gladiator's Chain Wristguards
+						i(216175),	-- Draconic Gladiator's Cloak
+						i(216176),	-- Draconic Gladiator's Drape
+						i(216177),	-- Draconic Gladiator's Shawl
+						i(216171),	-- Draconic Gladiator's Chain Belt
+						i(216162),	-- Draconic Gladiator's Chain Boots
+						i(216174),	-- Draconic Gladiator's Chain Bracers
+						i(216168),	-- Draconic Gladiator's Chain Breeches
+						i(216166),	-- Draconic Gladiator's Chain Faceguard
+						i(216163),	-- Draconic Gladiator's Chain Gauntlets
+						i(216172),	-- Draconic Gladiator's Chain Girdle
+						i(216164),	-- Draconic Gladiator's Chain Handguards
+						i(216165),	-- Draconic Gladiator's Chain Helm
+						i(216167),	-- Draconic Gladiator's Chain Leggings
+						i(216169),	-- Draconic Gladiator's Chain Monnion
+						i(216159),	-- Draconic Gladiator's Chain Robe
+						i(216161),	-- Draconic Gladiator's Chain Sabatons
+						i(216170),	-- Draconic Gladiator's Chain Shoulderguard
+						i(216160),	-- Draconic Gladiator's Chain Vestments
+						i(216173),	-- Draconic Gladiator's Chain Wristguards
 					}),
 					cl(HUNTER, {
-						i(209233),	-- Verdant Gladiator's Chain Belt
-						i(209224),	-- Verdant Gladiator's Chain Boots
-						i(209236),	-- Verdant Gladiator's Chain Bracers
-						i(209230),	-- Verdant Gladiator's Chain Breeches
-						i(209228),	-- Verdant Gladiator's Chain Faceguard
-						i(209225),	-- Verdant Gladiator's Chain Gauntlets
-						i(209234),	-- Verdant Gladiator's Chain Girdle
-						i(209226),	-- Verdant Gladiator's Chain Handguards
-						i(209227),	-- Verdant Gladiator's Chain Helm
-						i(209229),	-- Verdant Gladiator's Chain Leggings
-						i(209231),	-- Verdant Gladiator's Chain Monnion
-						i(209223),	-- Verdant Gladiator's Chain Sabatons
-						i(209232),	-- Verdant Gladiator's Chain Shoulderguard
-						i(209222),	-- Verdant Gladiator's Chain Tunic
-						i(209221),	-- Verdant Gladiator's Chain Vest
-						i(209235),	-- Verdant Gladiator's Chain Wristguards
-						i(209237),	-- Verdant Gladiator's Cloak
-						i(209238),	-- Verdant Gladiator's Drape
-						i(209239),	-- Verdant Gladiator's Shawl
+						i(216194),	-- Draconic Gladiator's Cloak
+						i(216195),	-- Draconic Gladiator's Drape
+						i(216196),	-- Draconic Gladiator's Shawl
+						i(216190),	-- Draconic Gladiator's Chain Belt
+						i(216181),	-- Draconic Gladiator's Chain Boots
+						i(216193),	-- Draconic Gladiator's Chain Bracers
+						i(216187),	-- Draconic Gladiator's Chain Breeches
+						i(216185),	-- Draconic Gladiator's Chain Faceguard
+						i(216182),	-- Draconic Gladiator's Chain Gauntlets
+						i(216191),	-- Draconic Gladiator's Chain Girdle
+						i(216183),	-- Draconic Gladiator's Chain Handguards
+						i(216184),	-- Draconic Gladiator's Chain Helm
+						i(216186),	-- Draconic Gladiator's Chain Leggings
+						i(216188),	-- Draconic Gladiator's Chain Monnion
+						i(216180),	-- Draconic Gladiator's Chain Sabatons
+						i(216189),	-- Draconic Gladiator's Chain Shoulderguard
+						i(216179),	-- Draconic Gladiator's Chain Tunic
+						i(216178),	-- Draconic Gladiator's Chain Vest
+						i(216192),	-- Draconic Gladiator's Chain Wristguards
 					}),
 					cl(MAGE, {
-						i(209085),	-- Verdant Gladiator's Cloak
-						i(209086),	-- Verdant Gladiator's Drape
-						i(209087),	-- Verdant Gladiator's Shawl
-						i(209080),	-- Verdant Gladiator's Silk Amice
-						i(209084),	-- Verdant Gladiator's Silk Armbands
-						i(209082),	-- Verdant Gladiator's Silk Belt
-						i(209070),	-- Verdant Gladiator's Silk Blouse
-						i(209076),	-- Verdant Gladiator's Silk Cap
-						i(209081),	-- Verdant Gladiator's Silk Cord
-						i(209073),	-- Verdant Gladiator's Silk Gloves
-						i(209074),	-- Verdant Gladiator's Silk Handwraps
-						i(209075),	-- Verdant Gladiator's Silk Hat
-						i(209077),	-- Verdant Gladiator's Silk Leggings
-						i(209079),	-- Verdant Gladiator's Silk Mantle
-						i(209071),	-- Verdant Gladiator's Silk Slippers
-						i(209072),	-- Verdant Gladiator's Silk Treads
-						i(209078),	-- Verdant Gladiator's Silk Trousers
-						i(209069),	-- Verdant Gladiator's Silk Tunic
-						i(209083),	-- Verdant Gladiator's Silk Wristwraps
+						i(216042),	-- Draconic Gladiator's Cloak
+						i(216043),	-- Draconic Gladiator's Drape
+						i(216044),	-- Draconic Gladiator's Shawl
+						i(216037),	-- Draconic Gladiator's Silk Amice
+						i(216041),	-- Draconic Gladiator's Silk Armbands
+						i(216039),	-- Draconic Gladiator's Silk Belt
+						i(216027),	-- Draconic Gladiator's Silk Blouse
+						i(216033),	-- Draconic Gladiator's Silk Cap
+						i(216038),	-- Draconic Gladiator's Silk Cord
+						i(216030),	-- Draconic Gladiator's Silk Gloves
+						i(216031),	-- Draconic Gladiator's Silk Handwraps
+						i(216032),	-- Draconic Gladiator's Silk Hat
+						i(216034),	-- Draconic Gladiator's Silk Leggings
+						i(216036),	-- Draconic Gladiator's Silk Mantle
+						i(216028),	-- Draconic Gladiator's Silk Slippers
+						i(216029),	-- Draconic Gladiator's Silk Treads
+						i(216035),	-- Draconic Gladiator's Silk Trousers
+						i(216026),	-- Draconic Gladiator's Silk Tunic
+						i(216040),	-- Draconic Gladiator's Silk Wristwraps
 					}),
 					cl(MONK, {
-						i(209180),	-- Verdant Gladiator's Cloak
-						i(209181),	-- Verdant Gladiator's Drape
-						i(209176),	-- Verdant Gladiator's Leather Belt
-						i(209166),	-- Verdant Gladiator's Leather Boots
-						i(209172),	-- Verdant Gladiator's Leather Breeches
-						i(209168),	-- Verdant Gladiator's Leather Gloves
-						i(209169),	-- Verdant Gladiator's Leather Grips
-						i(209170),	-- Verdant Gladiator's Leather Helm
-						i(209165),	-- Verdant Gladiator's Leather Jerkin
-						i(209173),	-- Verdant Gladiator's Leather Legwraps
-						i(209171),	-- Verdant Gladiator's Leather Mask
-						i(209175),	-- Verdant Gladiator's Leather Shoulderpads
-						i(209174),	-- Verdant Gladiator's Leather Spaulders
-						i(209177),	-- Verdant Gladiator's Leather Strap
-						i(209167),	-- Verdant Gladiator's Leather Treads
-						i(209164),	-- Verdant Gladiator's Leather Vest
-						i(209179),	-- Verdant Gladiator's Leather Wristguards
-						i(209178),	-- Verdant Gladiator's Leather Wristwraps
-						i(209182),	-- Verdant Gladiator's Shawl
+						i(216137),	-- Draconic Gladiator's Cloak
+						i(216138),	-- Draconic Gladiator's Drape
+						i(216139),	-- Draconic Gladiator's Shawl
+						i(216133),	-- Draconic Gladiator's Leather Belt
+						i(216123),	-- Draconic Gladiator's Leather Boots
+						i(216129),	-- Draconic Gladiator's Leather Breeches
+						i(216125),	-- Draconic Gladiator's Leather Gloves
+						i(216126),	-- Draconic Gladiator's Leather Grips
+						i(216127),	-- Draconic Gladiator's Leather Helm
+						i(216122),	-- Draconic Gladiator's Leather Jerkin
+						i(216130),	-- Draconic Gladiator's Leather Legwraps
+						i(216128),	-- Draconic Gladiator's Leather Mask
+						i(216132),	-- Draconic Gladiator's Leather Shoulderpads
+						i(216131),	-- Draconic Gladiator's Leather Spaulders
+						i(216134),	-- Draconic Gladiator's Leather Strap
+						i(216124),	-- Draconic Gladiator's Leather Treads
+						i(216121),	-- Draconic Gladiator's Leather Vest
+						i(216136),	-- Draconic Gladiator's Leather Wristguards
+						i(216135),	-- Draconic Gladiator's Leather Wristwraps
 					}),
 					cl(PALADIN, {
-						i(209294),	-- Verdant Gladiator's Cloak
-						i(209295),	-- Verdant Gladiator's Drape
-						i(209278),	-- Verdant Gladiator's Plate Chestguard
-						i(209279),	-- Verdant Gladiator's Plate Chestplate
-						i(209282),	-- Verdant Gladiator's Plate Gauntlets
-						i(209290),	-- Verdant Gladiator's Plate Girdle
-						i(209291),	-- Verdant Gladiator's Plate Greatbelt
-						i(209283),	-- Verdant Gladiator's Plate Handguards
-						i(209284),	-- Verdant Gladiator's Plate Helm
-						i(209285),	-- Verdant Gladiator's Plate Helmet
-						i(209286),	-- Verdant Gladiator's Plate Legguards
-						i(209289),	-- Verdant Gladiator's Plate Pauldrons
-						i(209288),	-- Verdant Gladiator's Plate Shoulders
-						i(209281),	-- Verdant Gladiator's Plate Stompers
-						i(209287),	-- Verdant Gladiator's Plate Tasses
-						i(209293),	-- Verdant Gladiator's Plate Vambraces
-						i(209280),	-- Verdant Gladiator's Plate Warboots
-						i(209292),	-- Verdant Gladiator's Plate Wristguards
-						i(209296),	-- Verdant Gladiator's Shawl
+						i(216251),	-- Draconic Gladiator's Cloak
+						i(216252),	-- Draconic Gladiator's Drape
+						i(216253),	-- Draconic Gladiator's Shawl
+						i(216235),	-- Draconic Gladiator's Plate Chestguard
+						i(216236),	-- Draconic Gladiator's Plate Chestplate
+						i(216239),	-- Draconic Gladiator's Plate Gauntlets
+						i(216247),	-- Draconic Gladiator's Plate Girdle
+						i(216248),	-- Draconic Gladiator's Plate Greatbelt
+						i(216240),	-- Draconic Gladiator's Plate Handguards
+						i(216241),	-- Draconic Gladiator's Plate Helm
+						i(216242),	-- Draconic Gladiator's Plate Helmet
+						i(216243),	-- Draconic Gladiator's Plate Legguards
+						i(216246),	-- Draconic Gladiator's Plate Pauldrons
+						i(216245),	-- Draconic Gladiator's Plate Shoulders
+						i(216238),	-- Draconic Gladiator's Plate Stompers
+						i(216244),	-- Draconic Gladiator's Plate Tasses
+						i(216250),	-- Draconic Gladiator's Plate Vambraces
+						i(216237),	-- Draconic Gladiator's Plate Warboots
+						i(216249),	-- Draconic Gladiator's Plate Wristguards
 					}),
 					cl(PRIEST, {
-						i(209104),	-- Verdant Gladiator's Cloak
-						i(209105),	-- Verdant Gladiator's Drape
-						i(209106),	-- Verdant Gladiator's Shawl
-						i(209099),	-- Verdant Gladiator's Silk Amice
-						i(209103),	-- Verdant Gladiator's Silk Armbands
-						i(209101),	-- Verdant Gladiator's Silk Belt
-						i(209089),	-- Verdant Gladiator's Silk Blouse
-						i(209100),	-- Verdant Gladiator's Silk Cord
-						i(209092),	-- Verdant Gladiator's Silk Gloves
-						i(209095),	-- Verdant Gladiator's Silk Guise
-						i(209093),	-- Verdant Gladiator's Silk Handwraps
-						i(209094),	-- Verdant Gladiator's Silk Hood
-						i(209096),	-- Verdant Gladiator's Silk Leggings
-						i(209098),	-- Verdant Gladiator's Silk Mantle
-						i(209090),	-- Verdant Gladiator's Silk Slippers
-						i(209091),	-- Verdant Gladiator's Silk Treads
-						i(209097),	-- Verdant Gladiator's Silk Trousers
-						i(209088),	-- Verdant Gladiator's Silk Tunic
-						i(209102),	-- Verdant Gladiator's Silk Wristwraps
+						i(216061),	-- Draconic Gladiator's Cloak
+						i(216062),	-- Draconic Gladiator's Drape
+						i(216063),	-- Draconic Gladiator's Shawl
+						i(216056),	-- Draconic Gladiator's Silk Amice
+						i(216060),	-- Draconic Gladiator's Silk Armbands
+						i(216058),	-- Draconic Gladiator's Silk Belt
+						i(216046),	-- Draconic Gladiator's Silk Blouse
+						i(216057),	-- Draconic Gladiator's Silk Cord
+						i(216049),	-- Draconic Gladiator's Silk Gloves
+						i(216052),	-- Draconic Gladiator's Silk Guise
+						i(216050),	-- Draconic Gladiator's Silk Handwraps
+						i(216051),	-- Draconic Gladiator's Silk Hood
+						i(216053),	-- Draconic Gladiator's Silk Leggings
+						i(216055),	-- Draconic Gladiator's Silk Mantle
+						i(216047),	-- Draconic Gladiator's Silk Slippers
+						i(216048),	-- Draconic Gladiator's Silk Treads
+						i(216054),	-- Draconic Gladiator's Silk Trousers
+						i(216045),	-- Draconic Gladiator's Silk Tunic
+						i(216059),	-- Draconic Gladiator's Silk Wristwraps
 					}),
 					cl(ROGUE, {
-						i(209199),	-- Verdant Gladiator's Cloak
-						i(209200),	-- Verdant Gladiator's Drape
-						i(209195),	-- Verdant Gladiator's Leather Belt
-						i(209185),	-- Verdant Gladiator's Leather Boots
-						i(209191),	-- Verdant Gladiator's Leather Breeches
-						i(209187),	-- Verdant Gladiator's Leather Gloves
-						i(209188),	-- Verdant Gladiator's Leather Grips
-						i(209189),	-- Verdant Gladiator's Leather Helm
-						i(209184),	-- Verdant Gladiator's Leather Jerkin
-						i(209192),	-- Verdant Gladiator's Leather Legwraps
-						i(209190),	-- Verdant Gladiator's Leather Mask
-						i(209194),	-- Verdant Gladiator's Leather Shoulderpads
-						i(209193),	-- Verdant Gladiator's Leather Spaulders
-						i(209196),	-- Verdant Gladiator's Leather Strap
-						i(209186),	-- Verdant Gladiator's Leather Treads
-						i(209183),	-- Verdant Gladiator's Leather Vest
-						i(209198),	-- Verdant Gladiator's Leather Wristguards
-						i(209197),	-- Verdant Gladiator's Leather Wristwraps
-						i(209201),	-- Verdant Gladiator's Shawl
+						i(216156),	-- Draconic Gladiator's Cloak
+						i(216157),	-- Draconic Gladiator's Drape
+						i(216158),	-- Draconic Gladiator's Shawl
+						i(216152),	-- Draconic Gladiator's Leather Belt
+						i(216142),	-- Draconic Gladiator's Leather Boots
+						i(216148),	-- Draconic Gladiator's Leather Breeches
+						i(216144),	-- Draconic Gladiator's Leather Gloves
+						i(216145),	-- Draconic Gladiator's Leather Grips
+						i(216146),	-- Draconic Gladiator's Leather Helm
+						i(216141),	-- Draconic Gladiator's Leather Jerkin
+						i(216149),	-- Draconic Gladiator's Leather Legwraps
+						i(216147),	-- Draconic Gladiator's Leather Mask
+						i(216151),	-- Draconic Gladiator's Leather Shoulderpads
+						i(216150),	-- Draconic Gladiator's Leather Spaulders
+						i(216153),	-- Draconic Gladiator's Leather Strap
+						i(216143),	-- Draconic Gladiator's Leather Treads
+						i(216140),	-- Draconic Gladiator's Leather Vest
+						i(216155),	-- Draconic Gladiator's Leather Wristguards
+						i(216154),	-- Draconic Gladiator's Leather Wristwraps
 					}),
 					cl(SHAMAN, {
-						i(209252),	-- Verdant Gladiator's Chain Belt
-						i(209243),	-- Verdant Gladiator's Chain Boots
-						i(209255),	-- Verdant Gladiator's Chain Bracers
-						i(209249),	-- Verdant Gladiator's Chain Breeches
-						i(209247),	-- Verdant Gladiator's Chain Faceguard
-						i(209244),	-- Verdant Gladiator's Chain Gauntlets
-						i(209253),	-- Verdant Gladiator's Chain Girdle
-						i(209245),	-- Verdant Gladiator's Chain Handguards
-						i(209246),	-- Verdant Gladiator's Chain Helm
-						i(209248),	-- Verdant Gladiator's Chain Leggings
-						i(209250),	-- Verdant Gladiator's Chain Monnion
-						i(209242),	-- Verdant Gladiator's Chain Sabatons
-						i(209251),	-- Verdant Gladiator's Chain Shoulderguard
-						i(209241),	-- Verdant Gladiator's Chain Tunic
-						i(209240),	-- Verdant Gladiator's Chain Vest
-						i(209254),	-- Verdant Gladiator's Chain Wristguards
-						i(209256),	-- Verdant Gladiator's Cloak
-						i(209257),	-- Verdant Gladiator's Drape
-						i(209258),	-- Verdant Gladiator's Shawl
+						i(216213), -- Draconic Gladiator's Cloak
+						i(216214), -- Draconic Gladiator's Drape
+						i(216215), -- Draconic Gladiator's Shawl
+						i(216209), -- Draconic Gladiator's Chain Belt
+						i(216200), -- Draconic Gladiator's Chain Boots
+						i(216212), -- Draconic Gladiator's Chain Bracers
+						i(216206), -- Draconic Gladiator's Chain Breeches
+						i(216204), -- Draconic Gladiator's Chain Faceguard
+						i(216201), -- Draconic Gladiator's Chain Gauntlets
+						i(216210), -- Draconic Gladiator's Chain Girdle
+						i(216202), -- Draconic Gladiator's Chain Handguards
+						i(216203), -- Draconic Gladiator's Chain Helm
+						i(216205), -- Draconic Gladiator's Chain Leggings
+						i(216207), -- Draconic Gladiator's Chain Monnion
+						i(216199), -- Draconic Gladiator's Chain Sabatons
+						i(216208), -- Draconic Gladiator's Chain Shoulderguard
+						i(216198), -- Draconic Gladiator's Chain Tunic
+						i(216197), -- Draconic Gladiator's Chain Vest
+						i(216211), -- Draconic Gladiator's Chain Wristguards
 					}),
 					cl(WARLOCK, {
-						i(209123),	-- Verdant Gladiator's Cloak
-						i(209124),	-- Verdant Gladiator's Drape
-						i(209125),	-- Verdant Gladiator's Shawl
-						i(209118),	-- Verdant Gladiator's Silk Amice
-						i(209122),	-- Verdant Gladiator's Silk Armbands
-						i(209120),	-- Verdant Gladiator's Silk Belt
-						i(209119),	-- Verdant Gladiator's Silk Cord
-						i(209111),	-- Verdant Gladiator's Silk Gloves
-						i(209114),	-- Verdant Gladiator's Silk Guise
-						i(209112),	-- Verdant Gladiator's Silk Handwraps
-						i(209113),	-- Verdant Gladiator's Silk Hood
-						i(209115),	-- Verdant Gladiator's Silk Leggings
-						i(209117),	-- Verdant Gladiator's Silk Mantle
-						i(209107),	-- Verdant Gladiator's Silk Robe
-						i(209109),	-- Verdant Gladiator's Silk Slippers
-						i(209110),	-- Verdant Gladiator's Silk Treads
-						i(209116),	-- Verdant Gladiator's Silk Trousers
-						i(209108),	-- Verdant Gladiator's Silk Vestments
-						i(209121),	-- Verdant Gladiator's Silk Wristwraps
+						i(216080),	-- Draconic Gladiator's Cloak
+						i(216081),	-- Draconic Gladiator's Drape
+						i(216082),	-- Draconic Gladiator's Shawl
+						i(216075),	-- Draconic Gladiator's Silk Amice
+						i(216079),	-- Draconic Gladiator's Silk Armbands
+						i(216077),	-- Draconic Gladiator's Silk Belt
+						i(216076),	-- Draconic Gladiator's Silk Cord
+						i(216068),	-- Draconic Gladiator's Silk Gloves
+						i(216071),	-- Draconic Gladiator's Silk Guise
+						i(216069),	-- Draconic Gladiator's Silk Handwraps
+						i(216070),	-- Draconic Gladiator's Silk Hood
+						i(216072),	-- Draconic Gladiator's Silk Leggings
+						i(216074),	-- Draconic Gladiator's Silk Mantle
+						i(216064),	-- Draconic Gladiator's Silk Robe
+						i(216066),	-- Draconic Gladiator's Silk Slippers
+						i(216067),	-- Draconic Gladiator's Silk Treads
+						i(216073),	-- Draconic Gladiator's Silk Trousers
+						i(216065),	-- Draconic Gladiator's Silk Vestments
+						i(216078),	-- Draconic Gladiator's Silk Wristwraps
 					}),
 					cl(WARRIOR, {
-						i(209313),	-- Verdant Gladiator's Cloak
-						i(209314),	-- Verdant Gladiator's Drape
-						i(209297),	-- Verdant Gladiator's Plate Chestguard
-						i(209298),	-- Verdant Gladiator's Plate Chestplate
-						i(209301),	-- Verdant Gladiator's Plate Gauntlets
-						i(209309),	-- Verdant Gladiator's Plate Girdle
-						i(209310),	-- Verdant Gladiator's Plate Greatbelt
-						i(209302),	-- Verdant Gladiator's Plate Handguards
-						i(209303),	-- Verdant Gladiator's Plate Helm
-						i(209304),	-- Verdant Gladiator's Plate Helmet
-						i(209305),	-- Verdant Gladiator's Plate Legguards
-						i(209308),	-- Verdant Gladiator's Plate Pauldrons
-						i(209307),	-- Verdant Gladiator's Plate Shoulders
-						i(209300),	-- Verdant Gladiator's Plate Stompers
-						i(209312),	-- Verdant Gladiator's Plate Vambraces
-						i(209299),	-- Verdant Gladiator's Plate Warboots
-						i(209306),	-- Verdant Gladiator's Plate Wargreaves
-						i(209311),	-- Verdant Gladiator's Plate Wristguards
-						i(209315),	-- Verdant Gladiator's Shawl
+						i(216270),	-- Draconic Gladiator's Cloak
+						i(216271),	-- Draconic Gladiator's Drape
+						i(216272),	-- Draconic Gladiator's Shawl
+						i(216254),	-- Draconic Gladiator's Plate Chestguard
+						i(216255),	-- Draconic Gladiator's Plate Chestplate
+						i(216258),	-- Draconic Gladiator's Plate Gauntlets
+						i(216266),	-- Draconic Gladiator's Plate Girdle
+						i(216267),	-- Draconic Gladiator's Plate Greatbelt
+						i(216259),	-- Draconic Gladiator's Plate Handguards
+						i(216260),	-- Draconic Gladiator's Plate Helm
+						i(216261),	-- Draconic Gladiator's Plate Helmet
+						i(216262),	-- Draconic Gladiator's Plate Legguards
+						i(216265),	-- Draconic Gladiator's Plate Pauldrons
+						i(216264),	-- Draconic Gladiator's Plate Shoulders
+						i(216257),	-- Draconic Gladiator's Plate Stompers
+						i(216269),	-- Draconic Gladiator's Plate Vambraces
+						i(216256),	-- Draconic Gladiator's Plate Warboots
+						i(216263),	-- Draconic Gladiator's Plate Wargreaves
+						i(216268),	-- Draconic Gladiator's Plate Wristguards
 					}),
 				}),
 				filter(FINGER_F, {
-					i(209338),	-- Verdant Gladiator's Band
-					i(209337),	-- Verdant Gladiator's Ring
-					i(209339),	-- Verdant Gladiator's Signet
+					i(216274),	-- Draconic Gladiator's Band
+					i(216273),	-- Draconic Gladiator's Ring
+					i(216275),	-- Draconic Gladiator's Signet
 				}),
 				filter(NECK_F, {
-					i(209342),	-- Verdant Gladiator's Amulet
-					i(209340),	-- Verdant Gladiator's Necklace
-					i(209341),	-- Verdant Gladiator's Pendant
+					i(216278),	-- Draconic Gladiator's Amulet
+					i(216276),	-- Draconic Gladiator's Necklace
+					i(216277),	-- Draconic Gladiator's Pendant
 				}),
 				filter(TRINKET_F, {
-					i(209343),	-- Verdant Gladiator's Badge of Ferocity
-					i(209345),	-- Verdant Gladiator's Emblem
-					i(209344),	-- Verdant Gladiator's Insignia of Alacrity
-					i(209346),	-- Verdant Gladiator's Medallion
-					i(209347),	-- Verdant Gladiator's Sigil of Adaptation
+					i(216279),	-- Draconic Gladiator's Badge of Ferocity
+					i(216281),	-- Draconic Gladiator's Emblem
+					i(216280),	-- Draconic Gladiator's Insignia of Alacrity
+					i(216282),	-- Draconic Gladiator's Medallion
+					i(216283),	-- Draconic Gladiator's Sigil of Adaptation
 				}),
 				n(199720, {	-- Glamora
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(205362, {	-- Obsidian Gladiator's Tabard
+						un(ELITE_PVP_REQUIREMENT, i(209610, {	-- Verdant Gladiator's Tabard
 							["cost"] = { { "c", HONOR, 100 }, },
-						--	["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
-						--	Will be put later on vendor prolly
+						--	["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+						--	TODO: replace s3 tabard when it will be up
 						})),
 						n(WEAPONS, {
-							un(ELITE_PVP_REQUIREMENT, i(210502, {	-- Verdant Gladiator's Axe
+							un(ELITE_PVP_REQUIREMENT, i(217353, {	-- Draconic Gladiator's Axe
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210510, {	-- Verdant Gladiator's Axestaff
-								-- ["cost"] = { { "i", MOH,  } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210517, {	-- Verdant Gladiator's Bow
+							un(ELITE_PVP_REQUIREMENT, i(217360, {	-- Draconic Gladiator's Axestaff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210515, {	-- Verdant Gladiator's Bulwark
-								["cost"] = { { "i", MOH, 5 } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210513, {	-- Verdant Gladiator's Censer
-								-- ["cost"] = { { "i", MOH,  } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210516, {	-- Verdant Gladiator's Claws
-								["cost"] = { { "i", MOH, 5 } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210503, {	-- Verdant Gladiator's Dagger
-								["cost"] = { { "i", MOH, 5 } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210509, {	-- Verdant Gladiator's Greatstaff
+							un(ELITE_PVP_REQUIREMENT, i(217367, {	-- Draconic Gladiator's Bow
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210518, {	-- Verdant Gladiator's Greatsword
-								-- ["cost"] = { { "i", MOH,  } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210519, {	-- Verdant Gladiator's Pulverizer
-								-- ["cost"] = { { "i", MOH,  } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210511, {	-- Verdant Gladiator's Rifle
-								["cost"] = { { "i", MOH, 10 } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210512, {	-- Verdant Gladiator's Scepter
-								-- ["cost"] = { { "i", MOH,  } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210507, {	-- Verdant Gladiator's Scythe
-								-- ["cost"] = { { "i", MOH,  } },
-							})),
-							un(ELITE_PVP_REQUIREMENT, i(210514, {	-- Verdant Gladiator's Shield
+							un(ELITE_PVP_REQUIREMENT, i(217365, {	-- Draconic Gladiator's Bulwark
 								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210521, {	-- Verdant Gladiator's Shotel
-								-- ["cost"] = { { "i", MOH,  } },
+							un(ELITE_PVP_REQUIREMENT, i(217363, {	-- Draconic Gladiator's Censer
+								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210504, {	-- Verdant Gladiator's Sickle
-								-- ["cost"] = { { "i", MOH,  } },
+							un(ELITE_PVP_REQUIREMENT, i(217366, {	-- Draconic Gladiator's Claws
+								["cost"] = { { "i", MOH, 5 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210508, {	-- Verdant Gladiator's Staff
+							un(ELITE_PVP_REQUIREMENT, i(217354, {	-- Draconic Gladiator's Dagger
+								["cost"] = { { "i", MOH, 5 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217359, {	-- Draconic Gladiator's Greatstaff
 								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210520, {	-- Verdant Gladiator's Sword
-								-- ["cost"] = { { "i", MOH,  } },
+							un(ELITE_PVP_REQUIREMENT, i(217368, {	-- Draconic Gladiator's Greatsword
+								["cost"] = { { "i", MOH, 10 } },
 							})),
-							un(ELITE_PVP_REQUIREMENT, i(210506, {	-- Verdant Gladiator's Warglaive
+							un(ELITE_PVP_REQUIREMENT, i(217369, {	-- Draconic Gladiator's Pulverizer
+								["cost"] = { { "i", MOH, 10 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217361, {	-- Draconic Gladiator's Rifle
+								["cost"] = { { "i", MOH, 10 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217362, {	-- Draconic Gladiator's Scepter
+								["cost"] = { { "i", MOH, 5 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217357, {	-- Draconic Gladiator's Scythe
+								["cost"] = { { "i", MOH, 10 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217364, {	-- Draconic Gladiator's Shield
+								["cost"] = { { "i", MOH, 5 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217371, {	-- Draconic Gladiator's Shotel
+								["cost"] = { { "i", MOH, 5 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217355, {	-- Draconic Gladiator's Sickle
+								["cost"] = { { "i", MOH, 5 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217358, {	-- Draconic Gladiator's Staff
+								["cost"] = { { "i", MOH, 10 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217370, {	-- Draconic Gladiator's Sword
+								["cost"] = { { "i", MOH, 5 } },
+							})),
+							un(ELITE_PVP_REQUIREMENT, i(217356, {	-- Draconic Gladiator's Warglaive
 								["cost"] = { { "i", MOH, 5 } },
 							})),
 						}),
 					},
 				}),
 			})),
-						--]]
 			filter(RECIPES, {
 				i(211588),	-- Design: Draconic Combatant's Jeweled Amulet (RECIPE!)
 				i(211589),	-- Design: Draconic Combatant's Jeweled Signet (RECIPE!)
