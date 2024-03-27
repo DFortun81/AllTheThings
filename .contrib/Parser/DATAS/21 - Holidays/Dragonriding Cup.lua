@@ -2925,7 +2925,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				n(206744, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
-						--TODO: Add inventory
+						i(213585, {	-- Icy Drake Racer's Scarf
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
+						i(213586, {	-- Icy Drake Racer's Boots
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
+						i(213587, {	-- Icy Drake Racer's Leggings
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
+						i(213588, {	-- Icy Drake Racer's Belt
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
+						i(213589, {	-- Icy Drake Racer's Handwraps
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
+						i(213590, {	-- Icy Drake Racer's Jersey
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
+						i(213591, {	-- Icy Drake Racer's Shoulderpads
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
+						i(213592, {	-- Icy Drake Racer's Helmet
+							--["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, xx } },
+						}),
 					},
 				})),
 			}),

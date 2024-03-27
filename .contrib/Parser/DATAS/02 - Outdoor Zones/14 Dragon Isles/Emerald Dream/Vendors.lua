@@ -35,6 +35,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(211328, {	-- Vaskarn <Dreaming Crest Exchange>
 				["coord"] = { 49.8, 62.9, EMERALD_DREAM },
+				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				["g"] = {
 					-- Trade Up
 					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests

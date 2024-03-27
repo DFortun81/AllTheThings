@@ -205,6 +205,246 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
+
+			n(216236, {	-- Mirioszin <Infinite Importer>>
+				["coord"] = { 73.8, 45.6, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+				["g"] = {
+					i(190170),	-- Jigglesworth, Sr. (MOUNT!)
+					--
+					i(217421),	-- Vault Raider's Earthen Slicer
+					i(217422),	-- Vault Raider's Frozen Slicer
+					i(217423),	-- Vault Raider's Storming Slicer
+					i(217424),	-- Vault Raider's Crystal Slicer
+					i(217425),	-- Vault Raider's Earthen Thumper
+					i(217426),	-- Vault Raider's Frozen Thumper
+					i(217427),	-- Vault Raider's Storming Thumper
+					i(217428),	-- Vault Raider's Crystal Thumper
+					i(217429),	-- Vault Raider's Earthen Crossbow
+					i(217430),	-- Vault Raider's Frozen Crossbow
+					i(217431),	-- Vault Raider's Storming Crossbow
+					i(217432),	-- Vault Raider's Crystal Crossbow
+					i(217433),	-- Vault Raider's Earthen Bulwark
+					i(217434),	-- Vault Raider's Frozen Bulwark
+					i(217435),	-- Vault Raider's Storming Bulwark
+					i(217436),	-- Vault Raider's Crystal Bulwark
+					i(217437),	-- Vault Raider's Earthen Pavise
+					i(217438),	-- Vault Raider's Frozen Pavise
+					i(217439),	-- Vault Raider's Storming Pavise
+					i(217440),	-- Vault Raider's Crystal Pavise
+					i(217441),	-- Vault Raider's Earthen Conduit
+					i(217442),	-- Vault Raider's Frozen Conduit
+					i(217443),	-- Vault Raider's Storming Conduit
+					i(217444),	-- Vault Raider's Crystal Conduit
+					i(217445),	-- Vault Raider's Earthen Scriptures
+					i(217446),	-- Vault Raider's Frozen Scriptures
+					i(217447),	-- Vault Raider's Storming Scriptures
+					i(217448),	-- Vault Raider's Crystal Scriptures
+					i(217449),	-- Vault Raider's Earthen Crusher
+					i(217450),	-- Vault Raider's Frozen Crusher
+					i(217451),	-- Vault Raider's Storming Crusher
+					i(217452),	-- Vault Raider's Crystal Crusher
+					i(217453),	-- Vault Raider's Earthen Splitter
+					i(217454),	-- Vault Raider's Frozen Splitter
+					i(217455),	-- Vault Raider's Storming Splitter
+					i(217456),	-- Vault Raider's Crystal Splitter
+					i(217457),	-- Vault Raider's Earthen Halberd
+					i(217458),	-- Vault Raider's Frozen Halberd
+					i(217459),	-- Vault Raider's Storming Halberd
+					i(217460),	-- Vault Raider's Crystal Halberd
+					i(217461),	-- Vault Raider's Earthen Pillar
+					i(217462),	-- Vault Raider's Frozen Pillar
+					i(217463),	-- Vault Raider's Storming Pillar
+					i(217464),	-- Vault Raider's Crystal Pillar
+					i(217465),	-- Vault Raider's Earthen Staff
+					i(217466),	-- Vault Raider's Frozen Staff
+					i(217467),	-- Vault Raider's Storming Staff
+					i(217468),	-- Vault Raider's Crystal Staff
+					i(217469),	-- Vault Raider's Earthen Shard
+					i(217470),	-- Vault Raider's Frozen Shard
+					i(217471),	-- Vault Raider's Storming Shard
+					i(217472),	-- Vault Raider's Crystal Shard
+					i(217473),	-- Vault Raider's Earthen Knife
+					i(217474),	-- Vault Raider's Frozen Knife
+					i(217475),	-- Vault Raider's Storming Knife
+					i(217476),	-- Vault Raider's Crystal Knife
+					i(217477),	-- Vault Raider's Earthen Glaives
+					i(217478),	-- Vault Raider's Frozen Glaives
+					i(217479),	-- Vault Raider's Storming Glaives
+					i(217480),	-- Vault Raider's Crystal Glaives
+					i(217481),	-- Vault Raider's Earthen Fists
+					i(217482),	-- Vault Raider's Frozen Fists
+					i(217483),	-- Vault Raider's Storming Fists
+					i(217484),	-- Vault Raider's Crystal Fists
+					i(217485),	-- Vault Raider's Earthen Greatbow
+					i(217486),	-- Vault Raider's Frozen Greatbow
+					i(217487),	-- Vault Raider's Storming Greatbow
+					i(217488),	-- Vault Raider's Crystal Greatbow
+					i(217489),	-- Vault Raider's Earthen Scepter
+					i(217490),	-- Vault Raider's Frozen Scepter
+					i(217491),	-- Vault Raider's Storming Scepter
+					i(217492),	-- Vault Raider's Crystal Scepter
+					i(217493),	-- Vault Raider's Primal Greatstaff
+					i(217507),	-- Crucible Raider's Bronzed Mutilator
+					i(217508),	-- Crucible Raider's Shadowed Mutilator
+					i(217509),	-- Crucible Raider's Molten Mutilator
+					i(217510),	-- Crucible Raider's Corrupted Mutilator
+					i(217511),	-- Crucible Raider's Bronzed Lance
+					i(217512),	-- Crucible Raider's Shadowed Lance
+					i(217513),	-- Crucible Raider's Molten Lance
+					i(217514),	-- Crucible Raider's Corrupted Lance
+					i(217515),	-- Crucible Raider's Bronzed Cudgel
+					i(217516),	-- Crucible Raider's Shadowed Cudgel
+					i(217517),	-- Crucible Raider's Molten Cudgel
+					i(217518),	-- Crucible Raider's Corrupted Cudgel
+					i(217519),	-- Crucible Raider's Bronzed Rod
+					i(217520),	-- Crucible Raider's Shadowed Rod
+					i(217521),	-- Crucible Raider's Molten Rod
+					i(217522),	-- Crucible Raider's Corrupted Rod
+					i(217523),	-- Crucible Raider's Bronzed Focus
+					i(217524),	-- Crucible Raider's Shadowed Focus
+					i(217525),	-- Crucible Raider's Molten Focus
+					i(217526),	-- Crucible Raider's Corrupted Focus
+					i(217527),	-- Crucible Raider's Bronzed Kiteshield
+					i(217528),	-- Crucible Raider's Shadowed Kiteshield
+					i(217529),	-- Crucible Raider's Molten Kiteshield
+					i(217530),	-- Crucible Raider's Corrupted Kiteshield
+					i(217531),	-- Crucible Raider's Bronzed Wingblades
+					i(217532),	-- Crucible Raider's Shadowed Wingblades
+					i(217533),	-- Crucible Raider's Molten Wingblades
+					i(217534),	-- Crucible Raider's Corrupted Wingblades
+					i(217535),	-- Crucible Raider's Bronzed Hatchet
+					i(217536),	-- Crucible Raider's Shadowed Hatchet
+					i(217537),	-- Crucible Raider's Molten Hatchet
+					i(217538),	-- Crucible Raider's Corrupted Hatchet
+					i(217539),	-- Crucible Raider's Bronzed Longbow
+					i(217540),	-- Crucible Raider's Shadowed Longbow
+					i(217541),	-- Crucible Raider's Molten Longbow
+					i(217542),	-- Crucible Raider's Corrupted Longbow
+					i(217543),	-- Crucible Raider's Bronzed Mace
+					i(217544),	-- Crucible Raider's Shadowed Mace
+					i(217545),	-- Crucible Raider's Molten Mace
+					i(217546),	-- Crucible Raider's Corrupted Mace
+					i(217547),	-- Crucible Raider's Bronzed Elderstaff
+					i(217548),	-- Crucible Raider's Shadowed Elderstaff
+					i(217549),	-- Crucible Raider's Molten Elderstaff
+					i(217550),	-- Crucible Raider's Corrupted Elderstaff
+					i(217551),	-- Crucible Raider's Bronzed Cleaver
+					i(217552),	-- Crucible Raider's Shadowed Cleaver
+					i(217553),	-- Crucible Raider's Molten Cleaver
+					i(217554),	-- Crucible Raider's Corrupted Cleaver
+					i(217555),	-- Crucible Raider's Bronzed Cannon
+					i(217556),	-- Crucible Raider's Shadowed Cannon
+					i(217557),	-- Crucible Raider's Molten Cannon
+					i(217558),	-- Crucible Raider's Corrupted Cannon
+					i(217559),	-- Crucible Raider's Bronzed Claws
+					i(217560),	-- Crucible Raider's Shadowed Claws
+					i(217561),	-- Crucible Raider's Molten Claws
+					i(217562),	-- Crucible Raider's Corrupted Claws
+					i(217563),	-- Crucible Raider's Bronzed Control Rod
+					i(217564),	-- Crucible Raider's Shadowed Control Rod
+					i(217565),	-- Crucible Raider's Molten Control Rod
+					i(217566),	-- Crucible Raider's Shadowed Control Rod
+					i(217567),	-- Crucible Raider's Bronzed Tome
+					i(217568),	-- Crucible Raider's Shadowed Tome
+					i(217569),	-- Crucible Raider's Molten Tome
+					i(217570),	-- Crucible Raider's Corrupted Tome
+					i(217571),	-- Crucible Raider's Bronzed Ultra Greatsword
+					i(217572),	-- Crucible Raider's Shadowed Ultra Greatsword
+					i(217573),	-- Crucible Raider's Molten Ultra Greatsword
+					i(217574),	-- Crucible Raider's Corrupted Ultra Greatsword
+					i(217575),	-- Crucible Raider's Bronzed Greatshield
+					i(217576),	-- Crucible Raider's Shadowed Greatshield
+					i(217577),	-- Crucible Raider's Molten Greatshield
+					i(217578),	-- Crucible Raider's Corrupted Greatshield
+					i(217579),	-- Crucible Raider's Bronzed Shiv
+					i(217580),	-- Crucible Raider's Shadowed Shiv
+					i(217581),	-- Crucible Raider's Molten Shiv
+					i(217582),	-- Crucible Raider's Corrupted Shiv
+					i(217615),	-- Dream Raider's Azure Greathammer
+					i(217616),	-- Dream Raider's Blazing Greathammer
+					i(217617),	-- Dream Raider's Emerald Greathammer
+					i(217618),	-- Dream Raider's Shadowflame Greathammer
+					i(217619),	-- Dream Raider's Azure Torch
+					i(217620),	-- Dream Raider's Blazing Torch
+					i(217621),	-- Dream Raider's Emerald Torch
+					i(217622),	-- Dream Raider's Shadowflame Torch
+					i(217623),	-- Dream Raider's Azure Flayer
+					i(217624),	-- Dream Raider's Blazing Flayer
+					i(217625),	-- Dream Raider's Emerald Flayer
+					i(217626),	-- Dream Raider's Shadowflame Flayer
+					i(217627),	-- Dream Raider's Azure Defender
+					i(217628),	-- Dream Raider's Blazing Defender
+					i(217629),	-- Dream Raider's Emerald Defender
+					i(217630),	-- Dream Raider's Shadowflame Defender
+					i(217631),	-- Dream Raider's Azure Dreamcarver
+					i(217632),	-- Dream Raider's Blazing Dreamcarver
+					i(217633),	-- Dream Raider's Emerald Dreamcarver
+					i(217634),	-- Dream Raider's Shadowflame Dreamcarver
+					i(217635),	-- Dream Raider's Azure Razor
+					i(217636),	-- Dream Raider's Azure Saber
+					i(217637),	-- Dream Raider's Blazing Saber
+					i(217638),	-- Dream Raider's Emerald Saber
+					i(217639),	-- Dream Raider's Shadowflame Saber
+					i(217640),	-- Dream Raider's Azure Rifle
+					i(217641),	-- Dream Raider's Blazing Rifle
+					i(217642),	-- Dream Raider's Emerald Rifle
+					i(217643),	-- Dream Raider's Shadowflame Rifle
+					i(217644),	-- Dream Raider's Azure Paws
+					i(217645),	-- Dream Raider's Blazing Paws
+					i(217646),	-- Dream Raider's Emerald Paws
+					i(217647),	-- Dream Raider's Shadowflame Paws
+					i(217648),	-- Dream Raider's Azure Chime
+					i(217649),	-- Dream Raider's Blazing Chime
+					i(217650),	-- Dream Raider's Emerald Chime
+					i(217651),	-- Dream Raider's Shadowflame Chime
+					i(217652),	-- Dream Raider's Azure Scythe
+					i(217653),	-- Dream Raider's Blazing Scythe
+					i(217654),	-- Dream Raider's Emerald Scythe
+					i(217655),	-- Dream Raider's Shadowflame Scythe
+					i(217656),	-- Dream Raider's Azure Sickle
+					i(217657),	-- Dream Raider's Blazing Sickle
+					i(217658),	-- Dream Raider's Emerald Sickle
+					i(217659),	-- Dream Raider's Shadowflame Sickle
+					i(217660),	-- Dream Raider's Replica Dreambinder
+					i(217661),	-- Dream Raider's Azure Barrier
+					i(217662),	-- Dream Raider's Blazing Barrier
+					i(217663),	-- Dream Raider's Emerald Barrier
+					i(217664),	-- Dream Raider's Shadowflame Barrier
+					i(217665),	-- Dream Raider's Azure Cleaver
+					i(217666),	-- Dream Raider's Blazing Cleaver
+					i(217667),	-- Dream Raider's Emerald Cleaver
+					i(217668),	-- Dream Raider's Shadowflame Cleaver
+					i(217669),	-- Dream Raider's Azure Charglaive
+					i(217670),	-- Dream Raider's Blazing Charglaive
+					i(217671),	-- Dream Raider's Emerald Charglaive
+					i(217672),	-- Dream Raider's Shadowflame Charglaive
+					i(217673),	-- Dream Raider's Azure Blade
+					i(217674),	-- Dream Raider's Blazing Blade
+					i(217675),	-- Dream Raider's Emerald Blade
+					i(217676),	-- Dream Raider's Shadowflame Blade
+					i(217677),	-- Dream Raider's Azure Trident
+					i(217678),	-- Dream Raider's Blazing Trident
+					i(217679),	-- Dream Raider's Emerald Trident
+					i(217680),	-- Dream Raider's Shadowflame Trident
+					i(217681),	-- Dream Raider's Azure Recurve
+					i(217682),	-- Dream Raider's Blazing Recurve
+					i(217683),	-- Dream Raider's Emerald Recurve
+					i(217684),	-- Dream Raider's Shadowflame Recurve
+					i(217685),	-- Dream Raider's Azure Poleax
+					i(217686),	-- Dream Raider's Blazing Poleax
+					i(217687),	-- Dream Raider's Emerald Poleax
+					i(217688),	-- Dream Raider's Shadowflame Poleax
+					i(217689),	-- Dream Raider's Azure Flare
+					i(217690),	-- Dream Raider's Blazing Flare
+					i(217691),	-- Dream Raider's Emerald Flare
+					i(217692),	-- Dream Raider's Shadowflame Flare
+					i(217601),	-- Crucible Raider's Bronzed Beacon
+					i(217602),	-- Crucible Raider's Shadowed Beacon
+					i(217603),	-- Crucible Raider's Molten Beacon
+					i(217604),	-- Crucible Raider's Corrupted Beacon
+				},
+			}),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				["coord"] = { 19.0, 50.2, VALDRAKKEN },
 				["g"] = bubbleDown({ ["timeline"] = { "added 10.2.0.52649" } }, {
@@ -270,6 +510,50 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 22.6, 30.8, VALDRAKKEN },
 				["g"] = {
 					i(200099),	-- M.R.E.
+				},
+			}),
+			n(216449, {	-- Vaskarn
+				["coord"] = { 45.5, 55.9, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+				["g"] = {
+					-- Trade Up
+					--i(xx, {	-- xx
+					--	["cost"] = {{ "c", xx, 90 }},
+					--	["g"] = {
+					--		currency(xx),
+					--	},
+					--}),
+					--i(xx, {	-- xx
+					--	["cost"] = {{ "c", xx, 50 }},
+					--	["g"] = {
+					--		currency(xx),
+					--	},
+					--}),
+					--i(xx, {	-- xx
+					--	["cost"] = {{ "c", xx, 30 }},
+					--	["g"] = {
+					--		currency(xx),
+					--	},
+					--}),
+					-- Trade Down
+					i(212367, {	-- Clutch of Wyrm's Dreaming Crests
+						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2811/2812
+						["g"] = {
+							currency(2810),	-- Wyrm's Awakened Crest (or bugged and should be 2809)
+						},
+					}),
+					i(211951, {	-- Pouch of Whelpling's Dreaming Crests
+						["cost"] = {{ "c", DRAKES_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2808/2807
+						["g"] = {
+							currency(2805),	-- Whelpling's Awakened Crest (or bugged and should be 2806)
+						},
+					}),
+					i(211952, {	-- Satchel of Drake's Dreaming Crests
+						["cost"] = {{ "c", WYRMS_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2810/2809
+						["g"] = {
+							currency(2808),	-- Drake's Awakened Crest (or bugged and should be 2807)
+						},
+					}),
 				},
 			}),
 			n(196975, {	-- Zinfandormu <Sommelier>

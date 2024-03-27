@@ -327,6 +327,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201793),	-- Resplendent Gemstone
 				},
 			}),
+			q(79448, {	-- Leave No Flightstone Unturned
+				["provider"] = { "n", 216449 },	-- Vaskarn
+				["coord"] = { 45.5, 55.9, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+			}),
+			q(79453, {	-- Awakened Crests, Unlimited Possibilities
+				["sourceQuests"] = { 79448 },	-- Leave No Flightstone Unturned
+				["provider"] = { "n", 216449 },	-- Vaskarn
+				["coord"] = { 45.5, 55.9, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+				["g"] = {
+					i(211951),	-- Pouch of Whelpling's Awakened Crests
+				},
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 194026 },	-- Azley
